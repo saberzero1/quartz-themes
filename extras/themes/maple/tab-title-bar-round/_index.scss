@@ -1,5 +1,5 @@
 body.tab-title-bar-round
-  .workspace-leaf-content:not([data-type='excalidraw'])
+  .workspace-leaf-content:not([data-type="excalidraw"])
   .view-header {
   margin: var(--size-4-1);
   margin-bottom: 0;
@@ -12,7 +12,7 @@ body.tab-title-bar-round
 }
 
 body.tab-title-bar-round
-  .workspace-leaf-content:not([data-type='excalidraw'])
+  .workspace-leaf-content:not([data-type="excalidraw"])
   .view-header
   .view-header-title-container:after {
   content: none;
@@ -20,14 +20,14 @@ body.tab-title-bar-round
 
 body.tab-title-bar-round
   .workspace-leaf.mod-active
-  .workspace-leaf-content:not([data-type='excalidraw'])
+  .workspace-leaf-content:not([data-type="excalidraw"])
   .view-header {
   background-color: var(--md-container-bg);
 }
 
 body.tab-title-bar-shadow
   .workspace-leaf.mod-active
-  .workspace-leaf-content:not([data-type='excalidraw'])
+  .workspace-leaf-content:not([data-type="excalidraw"])
   .view-header {
   box-shadow: 0 0 var(--size-2-1) var(--background-modifier-box-shadow);
 }

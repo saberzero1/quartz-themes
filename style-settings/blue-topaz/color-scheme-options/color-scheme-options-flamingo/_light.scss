@@ -208,16 +208,16 @@ body.theme-light .admonition {
 }
 body.theme-light {
   --font-family-vault:
-    Arlrdbd, 'Source Han Sans', 'Noto Sans CJK', 'Source Sans Pro' !important;
+    Arlrdbd, "Source Han Sans", "Noto Sans CJK", "Source Sans Pro" !important;
   /*左侧库名字体*/
 }
-body.theme-light .tag[href^='#DailyNote'] {
+body.theme-light .tag[href^="#DailyNote"] {
   background-color: var(--tag1);
   font-weight: 600;
   font-family: var(--font-family-special-tag) !important;
 }
-body.theme-light .tag[href^='#DailyNote']::after {
-  content: '❀';
+body.theme-light .tag[href^="#DailyNote"]::after {
+  content: "❀";
   font-size: var(--font-size-emoji-after-tag);
 }
 body.theme-light .search-result-file-match {

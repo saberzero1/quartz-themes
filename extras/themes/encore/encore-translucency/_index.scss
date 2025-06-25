@@ -6,7 +6,7 @@ body.encore-bg-image .app-container {
 body.encore-bg-image .app-container::before {
   position: fixed;
   inset: 0;
-  content: '';
+  content: "";
   background: transparent;
   backdrop-filter: blur(
     calc(1px * pow(var(--encore-translucency-blur-amount, 10), 2))
@@ -18,7 +18,6 @@ body.encore-bg-frosty {
 }
 
 body.encore-bg-frosty .app-container {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1920 3240' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3C/defs%3E%3Cellipse style='filter: blur(200px); fill: rgb(38, 214, 255);' cx='465.54' cy='549.634' rx='559.232' ry='230.137'%3E%3C/ellipse%3E%3Cellipse style='filter: blur(200px); fill: rgb(59, 55, 212);' cx='1461.894' cy='749.77' rx='559.232' ry='338.301'%3E%3C/ellipse%3E%3Cellipse style='filter: blur(200px); fill: rgb(123, 130, 208);' cx='398.22' cy='1237.125' rx='559.232' ry='338.301'%3E%3C/ellipse%3E%3Cellipse style='filter: blur(200px); fill: rgb(17, 197, 255);' cx='1546.62' cy='1737.081' rx='603.713' ry='357.778'%3E%3C/ellipse%3E%3Cellipse style='filter: blur(200px); fill: rgb(185, 185, 185);' cx='981.906' cy='1520.478' rx='371.639' ry='230.137'%3E%3C/ellipse%3E%3Cellipse style='filter: blur(200px); fill: rgb(35, 30, 204);' cx='549.068' cy='2325.941' rx='721.684' ry='405.989'%3E%3C/ellipse%3E%3Cellipse style='filter: blur(200px); fill: rgb(148, 19, 172);' cx='1338.121' cy='2790.09' rx='721.684' ry='405.989'%3E%3C/ellipse%3E%3Cellipse style='filter: blur(200px); fill: rgb(148, 19, 172);' cx='1297.975' cy='-434.34' rx='721.684' ry='405.989'%3E%3C/ellipse%3E%3C/svg%3E");
   background-size: cover;
   background-repeat: mirror;
   animation: scroll-up infinite 120s linear;
@@ -49,7 +48,7 @@ body.encore-bg-chromatic {
 body.encore-bg-chromatic::before {
   position: fixed;
   inset: 0;
-  content: '';
+  content: "";
   background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.9411764706));
 }
 
@@ -76,7 +75,7 @@ body.encore-bg-prismatic {
 body.encore-bg-prismatic::before {
   position: fixed;
   inset: 0;
-  content: '';
+  content: "";
   background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.9411764706));
 }
 
@@ -90,7 +89,7 @@ body.encore-bg-dawn {
 body.encore-bg-dawn::before {
   position: fixed;
   inset: 0;
-  content: '';
+  content: "";
   animation: fade-in 60s linear infinite alternate;
   background-image:
     radial-gradient(transparent, rgba(1, 2, 36, 0.5764705882)),
@@ -108,7 +107,7 @@ body.encore-bg-lava {
 body.encore-bg-lava::before {
   position: fixed;
   inset: 0;
-  content: '';
+  content: "";
   animation: fade-in 60s linear infinite alternate;
   background-image:
     radial-gradient(transparent, #360700),

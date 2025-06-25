@@ -1,6 +1,6 @@
 body.alt-folder-icons
   .is-mobile
-  [data-type='bookmarks']
+  [data-type="bookmarks"]
   .tree-item-icon
   svg.right-triangle {
   width: var(--mobile-folder-icon-size);
@@ -8,7 +8,7 @@ body.alt-folder-icons
 }
 
 body.alt-folder-icons
-  [data-type='bookmarks']
+  [data-type="bookmarks"]
   .tree-item-icon
   svg.right-triangle {
   width: var(--icon-size);
@@ -18,7 +18,7 @@ body.alt-folder-icons
 }
 
 body.alt-folder-icons
-  [data-type='bookmarks']
+  [data-type="bookmarks"]
   .tree-item-icon.is-collapsed
   svg.right-triangle {
   transform: unset;
@@ -26,7 +26,7 @@ body.alt-folder-icons
 }
 
 body.alt-folder-icons
-  [data-type='bookmarks']
+  [data-type="bookmarks"]
   .tree-item-icon:not(.is-collapsed)
   svg.right-triangle {
   transform: unset;

@@ -14,7 +14,7 @@ body.theme-setting-codeBlockLineNumbers {
     .cm-line.HyperMD-codeblock-begin + .cm-line.HyperMD-codeblock:before,
     .cm-line.HyperMD-codeblock
       + .cm-line.HyperMD-codeblock:not(.HyperMD-codeblock-end):before {
-      content: counter(codeLineCount, decimal) ' ';
+      content: counter(codeLineCount, decimal) " ";
       text-align: right;
       width: 3em;
       margin-right: 1em;

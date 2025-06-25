@@ -13,7 +13,7 @@ body:not(.default-icons):not(
   .nav-folder-collapse-indicator::before {
   display: none;
 }
-body:not(.default-icons) :not([class*='mk-tree']).nav-folder-title-content {
+body:not(.default-icons) :not([class*="mk-tree"]).nav-folder-title-content {
   margin-left: -18px;
 }
 body:not(.default-icons)

@@ -15,7 +15,7 @@
 .frontmatter-blockquote
   .frontmatter-container
   .frontmatter-section-label:after {
-  content: ':';
+  content: ":";
 }
 .frontmatter-blockquote .frontmatter-container .frontmatter-section > * {
   font-size: var(--font-ui-medium) !important;

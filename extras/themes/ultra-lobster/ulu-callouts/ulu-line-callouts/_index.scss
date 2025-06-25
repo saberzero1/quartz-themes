@@ -1,5 +1,5 @@
 .ulu-line-callouts .callout::after {
-  content: '';
+  content: "";
   background: rgba(var(--callout-color), 0.3) !important;
   position: absolute;
   left: -3px;
@@ -21,7 +21,7 @@
 }
 
 .ulu-line-callouts .callout::before {
-  content: '';
+  content: "";
   background: rgba(var(--callout-color), 0.3) !important;
   position: absolute;
   left: 0px;
@@ -40,5 +40,5 @@
 .ulu-line-callouts .callout-title-inner {
   font-weight: bold;
   /* font-family: var(--font-title); */
-  font-variation-settings: 'WGHT' 900;
+  font-variation-settings: "WGHT" 900;
 }

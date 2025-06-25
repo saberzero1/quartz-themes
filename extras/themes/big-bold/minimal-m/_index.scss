@@ -44,8 +44,8 @@
   .frontmatter-container:not(.is-collapsed)
   .frontmatter-container-header::before {
   color: var(--text-faint);
-  content: '❌';
-  font-family: 'Noto Emoji';
+  content: "❌";
+  font-family: "Noto Emoji";
   font-size: 0.5em;
   opacity: 0;
 }
@@ -54,7 +54,7 @@
   .frontmatter-container:not(.is-collapsed)
   .frontmatter-container-header:hover::before {
   color: var(--color-red);
-  content: '❌';
+  content: "❌";
   opacity: 1;
 }
 

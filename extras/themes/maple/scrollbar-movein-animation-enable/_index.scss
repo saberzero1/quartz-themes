@@ -3,7 +3,7 @@ body:not(.is-mobile):not(.mod-macos).scrollbar-movein-animation-enable
     .vertical-tab-header,
     .vertical-tab-content,
     .nav-files-container,
-    .workspace-leaf-content:not([data-type*='graph'], [data-type*='pdf'])
+    .workspace-leaf-content:not([data-type*="graph"], [data-type*="pdf"])
       .view-content,
     .search-result-container,
     .git-view-body,
@@ -19,7 +19,7 @@ body:not(.is-mobile):not(.mod-macos).scrollbar-movein-animation-enable
     .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container,
     .markdown-embed-content .markdown-rendered,
     pre code,
-    .workspace-leaf-content[data-type='calendar'] .view-content,
+    .workspace-leaf-content[data-type="calendar"] .view-content,
     .janitor-scan-results,
     .excalidraw-wrapper
       :is(.App-menu .Stack .Island.App-menu__left, .scrollbar),
@@ -36,7 +36,7 @@ body:not(.is-mobile):not(.mod-macos).scrollbar-movein-animation-enable
     .vertical-tab-header,
     .vertical-tab-content,
     .nav-files-container,
-    .workspace-leaf-content:not([data-type*='graph'], [data-type*='pdf'])
+    .workspace-leaf-content:not([data-type*="graph"], [data-type*="pdf"])
       .view-content,
     .search-result-container,
     .git-view-body,
@@ -52,7 +52,7 @@ body:not(.is-mobile):not(.mod-macos).scrollbar-movein-animation-enable
     .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container,
     .markdown-embed-content .markdown-rendered,
     pre code,
-    .workspace-leaf-content[data-type='calendar'] .view-content,
+    .workspace-leaf-content[data-type="calendar"] .view-content,
     .janitor-scan-results,
     .excalidraw-wrapper
       :is(.App-menu .Stack .Island.App-menu__left, .scrollbar),

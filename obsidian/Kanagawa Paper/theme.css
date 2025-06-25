@@ -179,7 +179,7 @@ body {
     -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif,
     Apple Color Emoji, Segoe UI Emoji;
   --font-monospace-theme:
-    'Hack', 'Hack Nerd Font', 'Source Code Pro', ui-monospace, SFMono-Regular,
+    "Hack", "Hack Nerd Font", "Source Code Pro", ui-monospace, SFMono-Regular,
     SF Mono, Menlo, Consolas, Liberation Mono, monospace;
 }
 
@@ -193,10 +193,10 @@ body.theme-light {
   color: var(--text-normal);
 }
 
-.theme-dark code[class*='language-'],
-.theme-dark pre[class*='language-'],
-.theme-light code[class*='language-'],
-.theme-light pre[class*='language-'] {
+.theme-dark code[class*="language-"],
+.theme-dark pre[class*="language-"],
+.theme-light code[class*="language-"],
+.theme-light pre[class*="language-"] {
   text-shadow: none !important;
   background-color: var(--pre-code) !important;
 }

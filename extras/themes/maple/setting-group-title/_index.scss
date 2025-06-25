@@ -21,7 +21,7 @@ body.setting-group-title
   .mod-settings
   .modal-content
   .vertical-tab-header-group-title::before {
-  content: '';
+  content: "";
   position: absolute;
   height: calc(100% - var(--size-4-4));
   width: var(--size-4-1);

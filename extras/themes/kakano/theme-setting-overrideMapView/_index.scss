@@ -1,5 +1,5 @@
 body.theme-setting-overrideMapView {
-  .mod-sidedock .workspace-leaf-content[data-type='map'] {
+  .mod-sidedock .workspace-leaf-content[data-type="map"] {
     margin: 0.5rem 0;
   }
   .view-header {
@@ -15,7 +15,7 @@ body.theme-setting-overrideMapView {
     /* Match graph view */
     background: transparent;
     box-shadow: var(--theme-shadow-indent);
-    content: '';
+    content: "";
     display: block;
     height: 1rem;
     left: 0;
@@ -117,14 +117,14 @@ body.theme-setting-overrideMapView {
     position: absolute;
     top: 50%;
     left: 0.5em;
-    content: '';
+    content: "";
     background-color: var(--theme-color-control);
     display: block;
     width: 10px;
     height: 10px;
     margin-top: -5px;
     -webkit-mask-size: 100% 100%;
-    -webkit-mask-image: url('data:image/svg+xml; utf8, <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8L12 17L21 8"></path></svg>');
+    -webkit-mask-image: url("data:image/svg+xml, utf8, <svg width='24px' height='24px' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='currentColor' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'><path d='M3 8L12 17L21 8'></path></svg>");
     transition: transform 100ms ease-in-out;
     transform: rotate(-90deg);
   }

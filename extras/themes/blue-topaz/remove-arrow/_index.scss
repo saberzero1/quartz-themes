@@ -18,7 +18,7 @@ body.remove-arrow:not(.default-icons):not(
 }
 
 body.remove-arrow:not(.default-icons)
-  :not([class*='mk-tree']).nav-folder-title-content {
+  :not([class*="mk-tree"]).nav-folder-title-content {
   margin-left: -18px;
 }
 

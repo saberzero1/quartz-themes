@@ -23,7 +23,7 @@ body.full-width-dvtable
   .cm-contentContainer
   > div
   > div.cm-preview-code-block
-  > div[class^='block-language']:not([class^='block-language-dataview']) {
+  > div[class^="block-language"]:not([class^="block-language-dataview"]) {
   max-width: var(--file-line-width);
   margin-inline: auto;
 }
@@ -31,11 +31,11 @@ body.full-width-dvtable
 body.full-width-dvtable
   .markdown-preview-view
   .markdown-preview-sizer.markdown-preview-sizer
-  > div[data-block-language='dataview'],
+  > div[data-block-language="dataview"],
 body.full-width-dvtable
   .markdown-preview-view
   .markdown-preview-sizer.markdown-preview-sizer
-  > div[data-block-language='dataviewjs'],
+  > div[data-block-language="dataviewjs"],
 body.full-width-dvtable
   .markdown-preview-view
   .markdown-preview-sizer.markdown-preview-sizer

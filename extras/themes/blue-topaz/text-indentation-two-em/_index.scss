@@ -1,5 +1,5 @@
 body.text-indentation-two-em
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .markdown-source-view.mod-cm6
   div.cm-line:not(
     :is(
@@ -14,7 +14,7 @@ body.text-indentation-two-em
 }
 
 body.text-indentation-two-em
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .markdown-source-view.mod-cm6
   div.cm-line:not(
     :is(
@@ -42,29 +42,29 @@ body.text-indentation-two-em
 }
 
 body.text-indentation-two-em
-  [data-type='markdown']
-  div[class='el-p']:not(blockquote)
+  [data-type="markdown"]
+  div[class="el-p"]:not(blockquote)
   > p {
   text-indent: 2em;
 }
 
 body.text-indentation-two-em
-  [data-type='markdown']
-  div[class='el-p']:not(blockquote)
+  [data-type="markdown"]
+  div[class="el-p"]:not(blockquote)
   > p
   > br {
-  content: ' ';
+  content: " ";
   white-space: pre;
   line-height: calc((var(--paragraph-spacing) + 0.3) * 1em);
   display: unset;
 }
 
 body.text-indentation-two-em
-  [data-type='markdown']
-  div[class='el-p']:not(blockquote)
+  [data-type="markdown"]
+  div[class="el-p"]:not(blockquote)
   > p
   > br::after {
-  content: '\\A\\9\\9';
+  content: "\\A\\9\\9";
 }
 
 body.text-indentation-two-em .print *:not(blockquote) > p {
@@ -72,12 +72,12 @@ body.text-indentation-two-em .print *:not(blockquote) > p {
 }
 
 body.text-indentation-two-em .print *:not(blockquote) > p > br {
-  content: ' ';
+  content: " ";
   white-space: pre;
   line-height: calc((var(--paragraph-spacing) + 0.3) * 1em);
   display: unset;
 }
 
 body.text-indentation-two-em .print *:not(blockquote) > p > br::after {
-  content: '\\A\\9\\9';
+  content: "\\A\\9\\9";
 }

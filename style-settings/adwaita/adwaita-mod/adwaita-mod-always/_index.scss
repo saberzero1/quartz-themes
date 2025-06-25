@@ -71,7 +71,7 @@ body-always
   display: none;
 }
 body-always .titlebar-button-container.mod-right .titlebar-button::after {
-  content: '';
+  content: "";
   background-color: currentColor;
   width: 16px;
   height: 16px;
@@ -126,7 +126,7 @@ body-always .modal-close-button {
   transform-origin: right;
 }
 body-always .modal-close-button:before {
-  content: '';
+  content: "";
   display: block;
   width: 16px;
   height: 16px;

@@ -7,7 +7,7 @@ body.header-hovering-underline-fade
 body.header-hovering-underline-fade
   .markdown-source-view.is-live-preview
   .cm-line.HyperMD-header::after {
-  content: '';
+  content: "";
   display: block;
   height: calc(0.125 * var(--font-text-size));
   width: 0;

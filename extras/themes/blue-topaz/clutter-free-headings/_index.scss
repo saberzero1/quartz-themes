@@ -26,42 +26,42 @@ body.clutter-free-headings
 body.clutter-free-headings
   div:not(.cm-active).cm-line
   span:not(.cm-formatting-header).cm-header-1::before {
-  content: 'H1';
+  content: "H1";
   margin-top: calc(var(--h1-size) - 0.1em);
 }
 
 body.clutter-free-headings
   div:not(.cm-active).cm-line
   span:not(.cm-formatting-header).cm-header-2::before {
-  content: 'H2';
+  content: "H2";
   margin-top: calc(var(--h2-size) - 0.2em);
 }
 
 body.clutter-free-headings
   div:not(.cm-active).cm-line
   span:not(.cm-formatting-header).cm-header-3::before {
-  content: 'H3';
+  content: "H3";
   margin-top: calc(var(--h3-size) - 0.2em);
 }
 
 body.clutter-free-headings
   div:not(.cm-active).cm-line
   span:not(.cm-formatting-header).cm-header-4::before {
-  content: 'H4';
+  content: "H4";
   margin-top: calc(var(--h4-size) - 0.3em);
 }
 
 body.clutter-free-headings
   div:not(.cm-active).cm-line
   span:not(.cm-formatting-header).cm-header-5::before {
-  content: 'H5';
+  content: "H5";
   margin-top: calc(var(--h5-size) - 0.4em);
 }
 
 body.clutter-free-headings
   div:not(.cm-active).cm-line
   span:not(.cm-formatting-header).cm-header-6::before {
-  content: 'H6';
+  content: "H6";
   margin-top: calc(var(--h6-size) - 0.4em);
 }
 
@@ -125,42 +125,42 @@ body.clutter-free-headings
   div:not(.CodeMirror-activeline)
   > .CodeMirror-line
   span.cm-formatting-header-1::before {
-  content: 'H1';
+  content: "H1";
 }
 
 body.clutter-free-headings
   div:not(.CodeMirror-activeline)
   > .CodeMirror-line
   span.cm-formatting-header-2::before {
-  content: 'H2';
+  content: "H2";
 }
 
 body.clutter-free-headings
   div:not(.CodeMirror-activeline)
   > .CodeMirror-line
   span.cm-formatting-header-3::before {
-  content: 'H3';
+  content: "H3";
 }
 
 body.clutter-free-headings
   div:not(.CodeMirror-activeline)
   > .CodeMirror-line
   span.cm-formatting-header-4::before {
-  content: 'H4';
+  content: "H4";
 }
 
 body.clutter-free-headings
   div:not(.CodeMirror-activeline)
   > .CodeMirror-line
   span.cm-formatting-header-5::before {
-  content: 'H5';
+  content: "H5";
 }
 
 body.clutter-free-headings
   div:not(.CodeMirror-activeline)
   > .CodeMirror-line
   span.cm-formatting-header-6::before {
-  content: 'H6';
+  content: "H6";
 }
 
 body.funny-header-anim.clutter-free-headings

@@ -1,10 +1,10 @@
 .workspace
   .mod-root
-  .workspace-tab-header[data-type='markdown']:has(.mod-pinned)
+  .workspace-tab-header[data-type="markdown"]:has(.mod-pinned)
   .workspace-tab-header-inner-icon,
 .workspace
   .mod-root
-  .workspace-tab-header[data-type='empty']:has(.mod-pinned)
+  .workspace-tab-header[data-type="empty"]:has(.mod-pinned)
   .workspace-tab-header-inner-icon {
   display: flex;
 }

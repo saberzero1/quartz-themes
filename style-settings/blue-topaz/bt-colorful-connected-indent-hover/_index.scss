@@ -160,7 +160,7 @@ body.bt-connected-indent-hover
 }
 body.bt-connected-indent-hover
   .markdown-preview-view:not(.kanban)
-  *:not([data-callout='kanban'])
+  *:not([data-callout="kanban"])
   > div
   > :is(ul, ol)
   li
@@ -170,7 +170,7 @@ body.bt-connected-indent-hover
   > li:has(~ li:hover)::before,
 body.bt-connected-indent-hover
   .markdown-preview-view:not(.kanban)
-  *:not([data-callout='kanban'])
+  *:not([data-callout="kanban"])
   > div
   > :is(ul, ol)
   li
@@ -180,7 +180,7 @@ body.bt-connected-indent-hover
   > li:hover::before,
 body.bt-connected-indent-hover
   .markdown-preview-view:not(.kanban)
-  *:not([data-callout='kanban'])
+  *:not([data-callout="kanban"])
   > div
   > :is(ul, ol)
   li:hover
@@ -190,7 +190,7 @@ body.bt-connected-indent-hover
   > li::before,
 body.bt-connected-indent-hover
   .markdown-preview-view:not(.kanban)
-  *:not([data-callout='kanban'])
+  *:not([data-callout="kanban"])
   > div
   > :is(ul, ol)
   li:hover
@@ -202,7 +202,7 @@ body.bt-connected-indent-hover
 }
 body.bt-connected-indent-hover
   .markdown-preview-view:not(.kanban)
-  *:not([data-callout='kanban'])
+  *:not([data-callout="kanban"])
   > div
   > :is(ul, ol)
   li
@@ -214,7 +214,7 @@ body.bt-connected-indent-hover
   > li:has(~ li:hover)::before,
 body.bt-connected-indent-hover
   .markdown-preview-view:not(.kanban)
-  *:not([data-callout='kanban'])
+  *:not([data-callout="kanban"])
   > div
   > :is(ul, ol)
   li
@@ -226,7 +226,7 @@ body.bt-connected-indent-hover
   > li:hover::before,
 body.bt-connected-indent-hover
   .markdown-preview-view:not(.kanban)
-  *:not([data-callout='kanban'])
+  *:not([data-callout="kanban"])
   > div
   > :is(ul, ol)
   li:hover
@@ -238,7 +238,7 @@ body.bt-connected-indent-hover
   > li::before,
 body.bt-connected-indent-hover
   .markdown-preview-view:not(.kanban)
-  *:not([data-callout='kanban'])
+  *:not([data-callout="kanban"])
   > div
   > :is(ul, ol)
   li:hover
@@ -252,7 +252,7 @@ body.bt-connected-indent-hover
 }
 body.bt-connected-indent-hover
   .markdown-preview-view:not(.kanban)
-  *:not([data-callout='kanban'])
+  *:not([data-callout="kanban"])
   > div
   > :is(ul, ol)
   li
@@ -266,7 +266,7 @@ body.bt-connected-indent-hover
   > li:has(~ li:hover)::before,
 body.bt-connected-indent-hover
   .markdown-preview-view:not(.kanban)
-  *:not([data-callout='kanban'])
+  *:not([data-callout="kanban"])
   > div
   > :is(ul, ol)
   li
@@ -280,7 +280,7 @@ body.bt-connected-indent-hover
   > li:hover::before,
 body.bt-connected-indent-hover
   .markdown-preview-view:not(.kanban)
-  *:not([data-callout='kanban'])
+  *:not([data-callout="kanban"])
   > div
   > :is(ul, ol)
   li:hover
@@ -294,7 +294,7 @@ body.bt-connected-indent-hover
   > li::before,
 body.bt-connected-indent-hover
   .markdown-preview-view:not(.kanban)
-  *:not([data-callout='kanban'])
+  *:not([data-callout="kanban"])
   > div
   > :is(ul, ol)
   li:hover
@@ -310,7 +310,7 @@ body.bt-connected-indent-hover
 }
 body.bt-connected-indent-hover
   .markdown-preview-view:not(.kanban)
-  *:not([data-callout='kanban'])
+  *:not([data-callout="kanban"])
   > div
   > :is(ul, ol)
   li
@@ -326,7 +326,7 @@ body.bt-connected-indent-hover
   > li:has(~ li:hover)::before,
 body.bt-connected-indent-hover
   .markdown-preview-view:not(.kanban)
-  *:not([data-callout='kanban'])
+  *:not([data-callout="kanban"])
   > div
   > :is(ul, ol)
   li
@@ -342,7 +342,7 @@ body.bt-connected-indent-hover
   > li:hover::before,
 body.bt-connected-indent-hover
   .markdown-preview-view:not(.kanban)
-  *:not([data-callout='kanban'])
+  *:not([data-callout="kanban"])
   > div
   > :is(ul, ol)
   li:hover
@@ -358,7 +358,7 @@ body.bt-connected-indent-hover
   > li::before,
 body.bt-connected-indent-hover
   .markdown-preview-view:not(.kanban)
-  *:not([data-callout='kanban'])
+  *:not([data-callout="kanban"])
   > div
   > :is(ul, ol)
   li:hover
@@ -376,7 +376,7 @@ body.bt-connected-indent-hover
 }
 body.bt-connected-indent-hover
   .markdown-preview-view:not(.kanban)
-  *:not([data-callout='kanban'])
+  *:not([data-callout="kanban"])
   > div
   > :is(ul, ol)
   li
@@ -394,7 +394,7 @@ body.bt-connected-indent-hover
   > li:has(~ li:hover)::before,
 body.bt-connected-indent-hover
   .markdown-preview-view:not(.kanban)
-  *:not([data-callout='kanban'])
+  *:not([data-callout="kanban"])
   > div
   > :is(ul, ol)
   li
@@ -412,7 +412,7 @@ body.bt-connected-indent-hover
   > li:hover::before,
 body.bt-connected-indent-hover
   .markdown-preview-view:not(.kanban)
-  *:not([data-callout='kanban'])
+  *:not([data-callout="kanban"])
   > div
   > :is(ul, ol)
   li:hover
@@ -430,7 +430,7 @@ body.bt-connected-indent-hover
   > li::before,
 body.bt-connected-indent-hover
   .markdown-preview-view:not(.kanban)
-  *:not([data-callout='kanban'])
+  *:not([data-callout="kanban"])
   > div
   > :is(ul, ol)
   li:hover

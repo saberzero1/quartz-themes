@@ -2,7 +2,7 @@
   :is(.markdown-preview-section, .markdown-rendered)
   > div
   > p
-  > .image-embed[alt*='.']:last-child {
+  > .image-embed[alt*="."]:last-child {
   padding-right: 0;
 }
 
@@ -10,7 +10,7 @@
   :is(.markdown-preview-section, .markdown-rendered)
   > div
   > p
-  > .image-embed[alt*='.']:first-child {
+  > .image-embed[alt*="."]:first-child {
   padding-left: 0;
 }
 
@@ -18,11 +18,11 @@
   width: 100%;
 }
 
-.img-grid span.image-embed[alt*='.'] {
+.img-grid span.image-embed[alt*="."] {
   display: table-cell;
 }
 
-.img-grid img[alt*='.'] {
+.img-grid img[alt*="."] {
   max-height: 100vh;
   object-fit: cover;
 }

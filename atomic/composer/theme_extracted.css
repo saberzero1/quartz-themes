@@ -1,17 +1,248 @@
 :root {
+  --accent-h: light-dark(30, 12);
+  --accent-l: light-dark(65%, 60%);
+  --accent-s: light-dark(40%, 31%);
+  --background-gradient: light-dark(
+    linear-gradient(
+      155deg,
+      var(--background-primary) 0%,
+      hsl(215, 18%, 18%),
+      hsl(255, 12%, 28%)
+    ),
+    linear-gradient(rgb(217, 224, 227), rgb(235, 215, 210))
+  );
+  --background-modifier-border: light-dark(
+    rgb(69, 74, 84),
+    hsla(25, 20%, 70%, 0.4)
+  );
+  --background-modifier-box-shadow: light-dark(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.1)
+  );
+  --background-modifier-cover: light-dark(
+    rgba(10, 10, 10, 0.4),
+    rgba(220, 220, 220, 0.4)
+  );
+  --background-primary: light-dark(hsl(215, 22%, 15%), rgb(243, 237, 233));
+  --background-primary-alt: light-dark(hsl(215, 18%, 19%), rgb(238, 230, 225));
+  --background-secondary: light-dark(hsl(225, 15%, 20%), rgb(232, 223, 217));
+  --background-secondary-alt: light-dark(
+    light-dark(hsl(235, 15%, 28%), var(--color-base-05)),
+    rgb(225, 215, 208)
+  );
+  --blockquote-background-color: light-dark(
+    rgba(42, 49, 60, 0.6),
+    rgba(237, 228, 222, 0.811)
+  );
+  --blockquote-border-color: light-dark(#67594c, hsl(25, 20%, 70%));
+  --blockquote-color: light-dark(rgb(207, 197, 175), hsl(25, 20%, 30%));
+  --bold-color: light-dark(#f0f4f8, #2d3748);
+  --bold-modifier: light-dark(200, 200);
+  --callout-error: light-dark(255, 100, 92, 158, 48, 57);
+  --callout-quote: light-dark(158, 158, 158, 158, 158, 158);
+  --callout-warning: light-dark(255, 170, 92, 191, 127, 63);
+  --code-border-color: light-dark(transparent, transparent);
+  --code-normal: light-dark(#ff7b72, #eb5757);
+  --codeblock-background: light-dark(
+    rgba(37, 44, 55, 0.85),
+    rgba(234, 223, 215, 0.749)
+  );
+  --codeblock-border-radius: light-dark(8px, 8px);
+  --codeblock-caret-color: light-dark(rgb(201, 166, 130), hsl(25, 20%, 30%));
+  --color-accent: light-dark(
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l))
+  );
+  --color-accent-1: light-dark(
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 1),
+      calc(var(--accent-s) * 1.01),
+      calc(var(--accent-l) * 1.075)
+    )
+  );
+  --color-accent-2: light-dark(
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    )
+  );
+  --color-accent-hsl: light-dark(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l)
+  );
+  --color-base-00: light-dark(light-dark(#181c22, #ffffff), #f8f4f0);
+  --color-base-05: light-dark(light-dark(#1d2128, #fcfcfc), #f3ece6);
+  --color-base-10: light-dark(light-dark(#22262e, #fafafa), #eee6df);
+  --color-base-100: light-dark(light-dark(#e3e7eb, #222222), #3a3330);
+  --color-base-20: light-dark(light-dark(#282d35, #f6f6f6), #e6dcd3);
+  --color-base-25: light-dark(light-dark(#2f343d, #e3e3e3), #d8ccc2);
+  --color-base-30: light-dark(light-dark(#373c46, #e0e0e0), #c8b9af);
+  --color-base-35: light-dark(light-dark(#404650, #d4d4d4), #b6a79d);
+  --color-base-40: light-dark(light-dark(#4a5059, #bdbdbd), #a3958c);
+  --color-base-50: light-dark(light-dark(#5a616a, #ababab), #8a7e76);
+  --color-base-60: light-dark(light-dark(#6c737b, #707070), #6b625b);
+  --color-base-70: light-dark(light-dark(#8d949d, #5c5c5c), #554d47);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-blue-rgb: light-dark(
+    light-dark(light-dark(123, 175, 222, 8, 109, 221), 74, 85, 107),
+    95,
+    164,
+    218
+  );
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-cyan-rgb: light-dark(
+    light-dark(123, 204, 214, 0, 191, 188),
+    52,
+    136,
+    152
+  );
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-green-rgb: light-dark(
+    light-dark(123, 204, 148, 8, 185, 78),
+    62,
+    132,
+    98
+  );
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-orange-rgb: light-dark(
+    light-dark(255, 182, 104, 236, 117, 0),
+    184,
+    110,
+    51
+  );
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-pink-rgb: light-dark(
+    light-dark(255, 157, 194, 213, 57, 132),
+    184,
+    92,
+    132
+  );
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-purple-rgb: light-dark(
+    light-dark(182, 155, 255, 120, 82, 238),
+    94,
+    72,
+    146
+  );
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-red-rgb: light-dark(
+    light-dark(255, 123, 114, 233, 49, 71),
+    174,
+    62,
+    76
+  );
+  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-yellow-rgb: light-dark(
+    light-dark(255, 203, 107, 224, 172, 0),
+    191,
+    143,
+    63
+  );
+  --h1-color: light-dark(#e2e6eb, #2d3748);
+  --h1-indicator-color: light-dark(var(--h1-color), var(--h1-color));
+  --h2-color: light-dark(#c5cad4, #4a556b);
+  --h2-indicator-color: light-dark(var(--h2-color), var(--h2-color));
+  --h3-color: light-dark(#a8aeb9, #66788d);
+  --h3-indicator-color: light-dark(var(--h3-color), var(--h3-color));
+  --h4-color: light-dark(#8f96a1, #7f8a9b);
+  --h4-indicator-color: light-dark(var(--h4-color), var(--h4-color));
+  --h5-color: light-dark(#787f8a, #9aa5b5);
+  --h5-indicator-color: light-dark(var(--h5-color), var(--h5-color));
+  --h6-color: light-dark(#666d78, #808080);
+  --h6-indicator-color: light-dark(var(--h6-color), var(--h6-color));
+  --header-active-bg: light-dark(
+    rgba(255, 255, 255, 0.05),
+    rgba(31, 34, 37, 0.03)
+  );
+  --highlight-mix-blend-mode: light-dark(darken, darken);
+  --inline-code-background: light-dark(
+    hsla(204, 15%, 25%, 0.4),
+    hsla(31, 41%, 90%, 0.6)
+  );
+  --inline-code-normal: light-dark(#ff7b72, #eb5757);
+  --input-shadow: light-dark(
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2),
+    0 0 0 0 transparent,
+    inset 0 0 0 1px rgba(0, 0, 0, 0.12),
+    0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
+    0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent
+  );
+  --input-shadow-hover: light-dark(
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4),
+    0 0 0 0 transparent,
+    inset 0 0 0 1px rgba(0, 0, 0, 0.17),
+    0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
+    0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent
+  );
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
-  --page-border: 1px solid CanvasText;
-  --page-margin: 8px auto -1px;
-  --pdfViewer-padding-bottom: 9px;
+  --mono-rgb-0: light-dark(0, 0, 0, 255, 255, 255);
+  --mono-rgb-100: light-dark(255, 255, 255, 0, 0, 0);
+  --nav-button-container-bg: light-dark(
+    rgba(255, 255, 255, 0.03),
+    rgba(31, 34, 37, 0.03)
+  );
+  --page-border: 9px solid transparent;
+  --page-margin: 1px auto -8px;
+  --pdfViewer-padding-bottom: 0;
   --safe-area-inset-bottom: env(safe-area-inset-bottom);
   --safe-area-inset-left: env(safe-area-inset-left);
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
-  --spreadHorizontalWrapped-margin-LR: 3.5px;
+  --shadow-l: light-dark(
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
+    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2),
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
+    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2)
+  );
+  --shadow-s: light-dark(
+    0px 1px 2px rgba(0, 0, 0, 0.121),
+    0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3),
+    0px 1px 2px rgba(0, 0, 0, 0.028),
+    0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07)
+  );
+  --spreadHorizontalWrapped-margin-LR: -3.5px;
+  --text-highlight-background: light-dark(
+    hsla(38, 27%, 54%, 0.5),
+    rgba(248, 227, 217, 0.9)
+  );
+  --text-highlight-border-color: light-dark(
+    hsl(31, 48%, 66%),
+    rgb(167, 98, 64)
+  );
+  --text-highlight-color: light-dark(hsl(40, 20%, 90%), rgb(102, 80, 63));
   --viewer-container-height: 0;
-  --xfa-focus-outline: 2px solid CanvasText;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
+  --xfa-focus-outline: auto;
+  --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
 }
 
 body {
@@ -201,16 +432,16 @@ body {
   --font-black: 900;
   --font-bold: 700;
   --font-default:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, 'Segoe UI',
-    Roboto, 'Inter', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-interface:
     var(--font-interface-override), var(--font-interface-theme),
-    var(--default-font, '??'), var(--font-default);
-  --font-interface-override: '??';
-  --font-interface-theme: '??';
+    var(--default-font, "??"), var(--font-default);
+  --font-interface-override: "??";
+  --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid: var(--font-text);
@@ -218,24 +449,24 @@ body {
     var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default);
   --font-monospace-default:
-    ui-monospace, SFMono-Regular, 'Cascadia Mono', 'Roboto Mono',
-    'DejaVu Sans Mono', 'Liberation Mono', Menlo, Monaco, 'Consolas',
-    'Source Code Pro', monospace;
-  --font-monospace-override: '??';
-  --font-monospace-theme: '??';
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace;
+  --font-monospace-override: "??";
+  --font-monospace-theme: "??";
   --font-normal: 400;
   --font-print:
     var(--font-print-override), var(--font-text-override),
-    var(--font-text-theme), 'Arial';
-  --font-print-override: '??';
+    var(--font-text-theme), "Arial";
+  --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
   --font-text: var(--font-print);
-  --font-text-override: '??';
+  --font-text-override: "??";
   --font-text-size: 16px;
-  --font-text-theme: '??';
+  --font-text-theme: "??";
   --font-thin: 100;
   --font-ui-large: 20px;
   --font-ui-medium: 15px;
@@ -248,7 +479,7 @@ body {
   --footnote-gap: var(--size-4-1);
   --footnote-id-color: var(--text-muted);
   --footnote-id-color-no-occurrences: var(--text-faint);
-  --footnote-id-delimiter: '.';
+  --footnote-id-delimiter: ".";
   --footnote-input-background: var(--metadata-input-background);
   --footnote-input-background-active: var(--metadata-input-background-active);
   --footnote-line-height: var(--line-height-normal);
@@ -955,132 +1186,132 @@ h6 {
   padding: var(--callout-content-padding);
 }
 
-.callout[data-callout='tip'] {
+.callout[data-callout="tip"] {
   --callout-color: var(--callout-tip);
   --callout-icon: lucide-flame;
 }
 
-.callout[data-callout='warning'] {
+.callout[data-callout="warning"] {
   --callout-color: var(--callout-warning);
   --callout-icon: lucide-alert-triangle;
 }
 
-.callout[data-callout='danger'] {
+.callout[data-callout="danger"] {
   --callout-color: var(--callout-error);
   --callout-icon: lucide-zap;
 }
 
-.callout[data-callout='abstract'] {
+.callout[data-callout="abstract"] {
   --callout-color: var(--callout-summary);
   --callout-icon: lucide-clipboard-list;
 }
 
-.callout[data-callout='todo'] {
+.callout[data-callout="todo"] {
   --callout-color: var(--callout-todo);
   --callout-icon: lucide-check-circle-2;
 }
 
-.callout[data-callout='question'] {
+.callout[data-callout="question"] {
   --callout-color: var(--callout-question);
   --callout-icon: help-circle;
 }
 
-.callout[data-callout='info'] {
+.callout[data-callout="info"] {
   --callout-color: var(--callout-info);
   --callout-icon: lucide-info;
 }
 
-.callout[data-callout='success'] {
+.callout[data-callout="success"] {
   --callout-color: var(--callout-success);
   --callout-icon: lucide-check;
 }
 
-.callout[data-callout='quote'] {
+.callout[data-callout="quote"] {
   --callout-color: var(--callout-quote);
   --callout-icon: quote-glyph;
 }
 
-.callout[data-callout='example'] {
+.callout[data-callout="example"] {
   --callout-color: var(--callout-example);
   --callout-icon: lucide-list;
 }
 
-.callout[data-callout='bug'] {
+.callout[data-callout="bug"] {
   --callout-color: var(--callout-bug);
   --callout-icon: lucide-bug;
 }
 
-.callout[data-callout='summary'] {
+.callout[data-callout="summary"] {
   --callout-color: var(--callout-summary);
   --callout-icon: lucide-clipboard-list;
 }
 
-.callout[data-callout='tldr'] {
+.callout[data-callout="tldr"] {
   --callout-color: var(--callout-summary);
   --callout-icon: lucide-clipboard-list;
 }
 
-.callout[data-callout='important'] {
+.callout[data-callout="important"] {
   --callout-color: var(--callout-important);
   --callout-icon: lucide-flame;
 }
 
-.callout[data-callout='hint'] {
+.callout[data-callout="hint"] {
   --callout-color: var(--callout-tip);
   --callout-icon: lucide-flame;
 }
 
-.callout[data-callout='check'] {
+.callout[data-callout="check"] {
   --callout-color: var(--callout-success);
   --callout-icon: lucide-check;
 }
 
-.callout[data-callout='done'] {
+.callout[data-callout="done"] {
   --callout-color: var(--callout-success);
   --callout-icon: lucide-check;
 }
 
-.callout[data-callout='help'] {
+.callout[data-callout="help"] {
   --callout-color: var(--callout-question);
   --callout-icon: help-circle;
 }
 
-.callout[data-callout='faq'] {
+.callout[data-callout="faq"] {
   --callout-color: var(--callout-question);
   --callout-icon: help-circle;
 }
 
-.callout[data-callout='caution'] {
+.callout[data-callout="caution"] {
   --callout-color: var(--callout-warning);
   --callout-icon: lucide-alert-triangle;
 }
 
-.callout[data-callout='attention'] {
+.callout[data-callout="attention"] {
   --callout-color: var(--callout-warning);
   --callout-icon: lucide-alert-triangle;
 }
 
-.callout[data-callout='failure'] {
+.callout[data-callout="failure"] {
   --callout-color: var(--callout-fail);
   --callout-icon: lucide-x;
 }
 
-.callout[data-callout='error'] {
+.callout[data-callout="error"] {
   --callout-color: var(--callout-error);
   --callout-icon: lucide-zap;
 }
 
-.callout[data-callout='fail'] {
+.callout[data-callout="fail"] {
   --callout-color: var(--callout-fail);
   --callout-icon: lucide-x;
 }
 
-.callout[data-callout='missing'] {
+.callout[data-callout="missing"] {
   --callout-color: var(--callout-fail);
   --callout-icon: lucide-x;
 }
 
-.callout[data-callout='cite'] {
+.callout[data-callout="cite"] {
   --callout-color: var(--callout-quote);
   --callout-icon: quote-glyph;
 }
@@ -1100,7 +1331,7 @@ h6 {
 }
 
 .callout-icon::after {
-  content: '\200B';
+  content: "\200B";
 }
 
 .callout-fold {
@@ -1110,7 +1341,7 @@ h6 {
 }
 
 .callout-fold::after {
-  content: '\200B';
+  content: "\200B";
 }
 
 .callout-fold .svg-icon {
@@ -1197,7 +1428,7 @@ a.tag {
   text-decoration: var(--tag-decoration);
 }
 
-input[type='search'] {
+input[type="search"] {
   -webkit-app-region: no-drag;
   background: var(--background-modifier-form-field);
   border: var(--input-border-width) solid var(--background-modifier-border);
@@ -1316,7 +1547,7 @@ input[type='search'] {
 }
 
 .tree-item-self:before {
-  content: '\200B';
+  content: "\200B";
 }
 
 .tree-item-self.mod-collapsible {
@@ -1368,7 +1599,7 @@ input[type='search'] {
 }
 
 .tree-item-self .tree-item-icon:before {
-  content: '\200b';
+  content: "\200b";
 }
 
 .tree-item-self .tree-item-icon .svg-icon:not(.right-triangle) {
@@ -1394,7 +1625,7 @@ input[type='search'] {
 .tree-item-inner {
   border: 2px solid var(--color-accent);
   border-radius: 50%;
-  content: '';
+  content: "";
   height: var(--size-4-1);
   left: 0;
   line-height: calc(var(--nav-item-size) * 1.8);
@@ -1461,7 +1692,7 @@ svg.svg-icon {
   padding: var(--size-2-2);
 }
 
-.clickable-icon[aria-disabled='true'] {
+.clickable-icon[aria-disabled="true"] {
   background-color: unset;
   color: var(--text-muted);
   opacity: 0.4;

@@ -4,7 +4,7 @@ body div.setting-item-control div.checkbox-container {
   font-weight: bolder;
 }
 body div.setting-item-control div.checkbox-container::after {
-  content: ':(';
+  content: ":(";
   transform: translateY(-0.5px);
   width: fit-content;
   height: fit-content;
@@ -14,7 +14,7 @@ body div.setting-item-control div.checkbox-container::after {
   border-radius: 25%;
 }
 body div.setting-item-control div.checkbox-container.is-enabled::after {
-  content: ':)';
+  content: ":)";
   color: var(--color-green);
 }
 body div.setting-item-control input.slider {

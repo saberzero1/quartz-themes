@@ -1,5 +1,5 @@
 .pure-serenity-dark.serenity-mode.serenity-src:has(
-    [data-mode='source'] .markdown-source-view:not(.is-live-preview)
+    [data-mode="source"] .markdown-source-view:not(.is-live-preview)
   ) {
   --color-base-00: #000000;
   --color-base-05: #000000;
@@ -16,7 +16,7 @@
 }
 
 .pure-serenity-dark.pure-serenity-invert-dark.serenity-mode.serenity-src:has(
-    [data-mode='source'] .markdown-source-view:not(.is-live-preview)
+    [data-mode="source"] .markdown-source-view:not(.is-live-preview)
   ) {
   --color-base-00: #ffffff !important;
   --color-base-05: #ffffff !important;

@@ -2,7 +2,7 @@ body .kanban ul:first-child > li:nth-of-type(n) {
   border-top: none !important;
 }
 body
-  .callout.callout[data-callout*='kanban']
+  .callout.callout[data-callout*="kanban"]
   ul:first-child
   > li:nth-of-type(n) {
   border-top: none !important;

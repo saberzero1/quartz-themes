@@ -3,8 +3,8 @@
   /*Note and Settings Text*/
   /*kr : 노트 기본 폰트와 코드 폰트, 변경하지 않는게 좋습니다.*/
 
-  --default-font: 'Inter', sans-serif; /*Note*/
-  --font-monospace: 'Source Code Pro', monospace; /*Code*/
+  --default-font: "Inter", sans-serif; /*Note*/
+  --font-monospace: "Source Code Pro", monospace; /*Code*/
 
   /* Size Related Values */
   /* kr: 노트 내 사이즈 값들로 사용될 변수들 입니다. */
@@ -1253,7 +1253,7 @@ li {
 }
 
 /*Checkbox List*/
-input[type='checkbox' i] {
+input[type="checkbox" i] {
   cursor: var(--cursor-action);
 } /*Reading Mode*/
 
@@ -1269,170 +1269,170 @@ blockquote {
   padding: var(--size-4-3) 0 var(--size-4-3) 0;
 }
 
-.callout[data-callout='bug'] .callout-title {
+.callout[data-callout="bug"] .callout-title {
   margin-top: var(--size-4-3);
   margin-bottom: var(--size-4-3);
   gap: var(--size-4-2);
   padding: var(--callout-title-padding);
 }
 
-.callout[data-callout='bug'] .callout-title .callout-icon {
+.callout[data-callout="bug"] .callout-title .callout-icon {
   align-self: center;
   padding-top: 0px;
 }
 
-.callout[data-callout='default'] .callout-title {
+.callout[data-callout="default"] .callout-title {
   margin-top: var(--size-4-3);
   margin-bottom: var(--size-4-3);
   gap: var(--size-4-2);
   padding: var(--callout-title-padding);
 }
 
-.callout[data-callout='default'] .callout-title .callout-icon {
+.callout[data-callout="default"] .callout-title .callout-icon {
   align-self: center;
   padding-top: 0px;
 }
 
-.callout[data-callout='error'] .callout-title .callout-icon {
+.callout[data-callout="error"] .callout-title .callout-icon {
   align-self: center;
   padding-top: 0px;
 }
 
-.callout[data-callout='error'] .callout-title {
+.callout[data-callout="error"] .callout-title {
   margin-top: var(--size-4-3);
   margin-bottom: var(--size-4-3);
   gap: var(--size-4-2);
   padding: var(--callout-title-padding);
 }
 
-.callout[data-callout='example'] .callout-title {
+.callout[data-callout="example"] .callout-title {
   margin-top: var(--size-4-3);
   margin-bottom: var(--size-4-3);
   gap: var(--size-4-2);
   padding: var(--callout-title-padding);
 }
 
-.callout[data-callout='example'] .callout-title .callout-icon {
+.callout[data-callout="example"] .callout-title .callout-icon {
   align-self: center;
   padding-top: 0px;
 }
 
-.callout[data-callout='fail'] .callout-title {
+.callout[data-callout="fail"] .callout-title {
   margin-top: var(--size-4-3);
   margin-bottom: var(--size-4-3);
   gap: var(--size-4-2);
   padding: var(--callout-title-padding);
 }
 
-.callout[data-callout='fail'] .callout-title .callout-icon {
+.callout[data-callout="fail"] .callout-title .callout-icon {
   align-self: center;
   padding-top: 0px;
 }
 
-.callout[data-callout='important'] .callout-title {
+.callout[data-callout="important"] .callout-title {
   margin-top: var(--size-4-3);
   margin-bottom: var(--size-4-3);
   gap: var(--size-4-2);
   padding: var(--callout-title-padding);
 }
 
-.callout[data-callout='important'] .callout-title .callout-icon {
+.callout[data-callout="important"] .callout-title .callout-icon {
   align-self: center;
   padding-top: 0px;
 }
 
-.callout[data-callout='info'] .callout-title {
+.callout[data-callout="info"] .callout-title {
   margin-top: var(--size-4-3);
   margin-bottom: var(--size-4-3);
   gap: var(--size-4-2);
   padding: var(--callout-title-padding);
 }
 
-.callout[data-callout='info'] .callout-title .callout-icon {
+.callout[data-callout="info"] .callout-title .callout-icon {
   align-self: center;
   padding-top: 0px;
 }
 
-.callout[data-callout='question'] .callout-title {
+.callout[data-callout="question"] .callout-title {
   margin-top: var(--size-4-3);
   margin-bottom: var(--size-4-3);
   gap: var(--size-4-2);
   padding: var(--callout-title-padding);
 }
 
-.callout[data-callout='question'] .callout-title .callout-icon {
+.callout[data-callout="question"] .callout-title .callout-icon {
   align-self: center;
   padding-top: 0px;
 }
 
-.callout[data-callout='success'] .callout-title {
+.callout[data-callout="success"] .callout-title {
   margin-top: var(--size-4-3);
   margin-bottom: var(--size-4-3);
   gap: var(--size-4-2);
   padding: var(--callout-title-padding);
 }
 
-.callout[data-callout='success'] .callout-title .callout-icon {
+.callout[data-callout="success"] .callout-title .callout-icon {
   align-self: center;
   padding-top: 0px;
 }
 
-.callout[data-callout='summary'] .callout-title {
+.callout[data-callout="summary"] .callout-title {
   margin-top: var(--size-4-3);
   margin-bottom: var(--size-4-3);
   gap: var(--size-4-2);
   padding: var(--callout-title-padding);
 }
 
-.callout[data-callout='summary'] .callout-title .callout-icon {
+.callout[data-callout="summary"] .callout-title .callout-icon {
   align-self: center;
   padding-top: 0px;
 }
 
-.callout[data-callout='tip'] .callout-title {
+.callout[data-callout="tip"] .callout-title {
   margin-top: var(--size-4-3);
   margin-bottom: var(--size-4-3);
   gap: var(--size-4-2);
   padding: var(--callout-title-padding);
 }
 
-.callout[data-callout='tip'] .callout-title .callout-icon {
+.callout[data-callout="tip"] .callout-title .callout-icon {
   align-self: center;
   padding-top: 0px;
 }
 
-.callout[data-callout='todo'] .callout-title {
+.callout[data-callout="todo"] .callout-title {
   margin-top: var(--size-4-3);
   margin-bottom: var(--size-4-3);
   gap: var(--size-4-2);
   padding: var(--callout-title-padding);
 }
 
-.callout[data-callout='todo'] .callout-title .callout-icon {
+.callout[data-callout="todo"] .callout-title .callout-icon {
   align-self: center;
   padding-top: 0px;
 }
 
-.callout[data-callout='warning'] .callout-title {
+.callout[data-callout="warning"] .callout-title {
   margin-top: var(--size-4-3);
   margin-bottom: var(--size-4-3);
   gap: var(--size-4-2);
   padding: var(--callout-title-padding);
 }
 
-.callout[data-callout='warning'] .callout-title .callout-icon {
+.callout[data-callout="warning"] .callout-title .callout-icon {
   align-self: center;
   padding-top: 0px;
 }
 
-.callout[data-callout='quote'] .callout-title {
+.callout[data-callout="quote"] .callout-title {
   margin-top: var(--size-4-3);
   margin-bottom: var(--size-4-3);
   gap: var(--size-4-2);
   padding: var(--callout-title-padding);
 }
 
-.callout[data-callout='quote'] .callout-title .callout-icon {
+.callout[data-callout="quote"] .callout-title .callout-icon {
   align-self: center;
   padding-top: 0px;
 }
@@ -1469,7 +1469,7 @@ blockquote {
 /*--Tables--*/
 
 .block-language-dataview,
-.markdown-source-view.mod-cm6 .cm-content > [contenteditable='false'] {
+.markdown-source-view.mod-cm6 .cm-content > [contenteditable="false"] {
   border-radius: var(--radius-s);
 }
 
@@ -1686,7 +1686,7 @@ div.mermaid {
 }
 
 div.mermaid::after {
-  content: '';
+  content: "";
   display: block;
   width: 10px;
   height: 10px;

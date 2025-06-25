@@ -62,10 +62,10 @@ body {
     --accent: var(--lily);
   }
 }
-.shib-callout-color-toggle .callout[data-callout='note'] {
+.shib-callout-color-toggle .callout[data-callout="note"] {
   --callout-color: var(--accent);
 }
-.style-settings-heading[data-id='shiba-theme-settings-extended'],
-.style-settings-heading[data-id='shiba-theme-settings'] {
+.style-settings-heading[data-id="shiba-theme-settings-extended"],
+.style-settings-heading[data-id="shiba-theme-settings"] {
   border-color: rgba(var(--color-accent), 0.2);
 }

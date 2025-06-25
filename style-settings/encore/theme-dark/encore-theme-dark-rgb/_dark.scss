@@ -38,7 +38,7 @@ body .modal {
   animation: rgb-shadow 12s linear infinite forwards;
 }
 body .prompt::before {
-  content: '';
+  content: "";
   position: fixed;
   top: 0;
   left: 0;
@@ -50,7 +50,7 @@ body .prompt::before {
   filter: blur(60px);
 }
 body .prompt::after {
-  content: '';
+  content: "";
   position: fixed;
   top: 0;
   left: 0;

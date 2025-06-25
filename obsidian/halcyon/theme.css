@@ -456,7 +456,7 @@ body:not(.native-scrollbars) ::-webkit-scrollbar {
 body:is(.theme-dark)
   :is(
     textarea,
-    input:not([type='checkbox']),
+    input:not([type="checkbox"]),
     input.metadata-input-text,
     select
   ):is(:focus, :active, :focus-visible),
@@ -480,7 +480,7 @@ body:where(.theme-dark) .checkbox-container.is-enabled {
   background-color: var(--halcyon-palette-lime);
 }
 
-body:is(.theme-dark) h3[data-heading*='find section #'] a.tag {
+body:is(.theme-dark) h3[data-heading*="find section #"] a.tag {
   all: unset;
 }
 
@@ -724,7 +724,7 @@ body.theme-dark.highlightr-lowlight
 }
 
 body.theme-dark.highlightr-floating
-  mark[class*='hltr']:last-of-type:not(mark[class*='hltr']:only-of-type) {
+  mark[class*="hltr"]:last-of-type:not(mark[class*="hltr"]:only-of-type) {
   --floating-background: var(--background-primary);
   --floating-size: 20%;
   padding-bottom: 0.1em;

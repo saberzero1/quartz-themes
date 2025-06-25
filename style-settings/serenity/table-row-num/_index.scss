@@ -3,7 +3,7 @@ table {
 }
 table tr::before {
   counter-increment: rowNumber + 1;
-  content: counter(rowNumber) '.';
+  content: counter(rowNumber) ".";
   text-align: left;
   font-size: calc(var(--font-text-size) - 2px);
   margin-right: 5px;
@@ -12,6 +12,6 @@ table tr::before {
 }
 table .table-view-tr-header::before,
 table thead tr::before {
-  content: '#' !important;
+  content: "#" !important;
   color: var(--text-normal);
 }

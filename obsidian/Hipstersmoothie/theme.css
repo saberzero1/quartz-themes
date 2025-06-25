@@ -214,16 +214,16 @@ body:not(.is-grabbing) .nav-folder-title:hover {
   );
 }
 
-.tag[href^='#obsidian'] {
+.tag[href^="#obsidian"] {
   background-color: #4d3ca6;
 }
-.tag[href^='#important'] {
+.tag[href^="#important"] {
   background-color: red;
 }
-.tag[href^='#complete'] {
+.tag[href^="#complete"] {
   background-color: green;
 }
-.tag[href^='#inprogress'] {
+.tag[href^="#inprogress"] {
   background-color: orange;
 }
 

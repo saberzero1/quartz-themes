@@ -15,7 +15,7 @@
     :is(.newspaper, .movie-script, .minimalist, .h2-display)
   )
   h2::before {
-  content: '';
+  content: "";
   display: block;
   flex-grow: 1;
   background-color: var(--h2-border-color);
@@ -27,7 +27,7 @@
     :is(.newspaper, .movie-script, .minimalist, .h2-display)
   )
   h2::after {
-  content: '';
+  content: "";
   display: block;
   flex-grow: 1;
   background-color: var(--h2-border-color);

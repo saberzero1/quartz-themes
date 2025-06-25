@@ -26,7 +26,7 @@ body.ordered-list-style-1
   left: -11px;
 }
 body.ordered-list-style-1 ol > li::before {
-  content: counters(niceBT, '.') '. ';
+  content: counters(niceBT, ".") ". ";
   font-weight: bold;
   font-family: Inter;
   color: var(--list-ol-number-color);

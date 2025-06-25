@@ -44,7 +44,7 @@
     -apple-system, blinkmacsystemfont, Segoe UI, roboto, oxygen, ubuntu,
     cantarell, Open Sans, Helvetica Neue, sans-serif;
   --font-monospace:
-    'SF Mono', SFMono-Regular, consolas, Liberation Mono, menlo, courier,
+    "SF Mono", SFMono-Regular, consolas, Liberation Mono, menlo, courier,
     monospace;
 }
 
@@ -83,8 +83,8 @@
 
 .checklist-plugin-main .classic {
   font-family:
-    -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen, ubuntu,
-    cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -114,8 +114,8 @@
 .checklist-plugin-main .group .group-header .title .tag-base,
 .checklist-plugin-main .group .group-header .title .tag-sub {
   font-family:
-    -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen, ubuntu,
-    cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -144,8 +144,8 @@ body {
 h1,
 .cm-header-1 {
   font-family:
-    -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen, ubuntu,
-    cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -158,8 +158,8 @@ h1,
 h2,
 .cm-header-2 {
   font-family:
-    -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen, ubuntu,
-    cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -172,8 +172,8 @@ h2,
 h3,
 .cm-header-3 {
   font-family:
-    -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen, ubuntu,
-    cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -186,8 +186,8 @@ h3,
 h4,
 .cm-header-4 {
   font-family:
-    -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen, ubuntu,
-    cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -200,8 +200,8 @@ h4,
 h5,
 .cm-header-5 {
   font-family:
-    -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen, ubuntu,
-    cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -214,8 +214,8 @@ h5,
 h6,
 .cm-header-6 {
   font-family:
-    -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen, ubuntu,
-    cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -263,8 +263,8 @@ h6,
   padding: 4px 8px;
   cursor: pointer;
   font-family:
-    -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen, ubuntu,
-    cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -299,8 +299,8 @@ h6,
   padding: 4px 8px;
   cursor: pointer;
   font-family:
-    -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen, ubuntu,
-    cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -346,11 +346,11 @@ h6,
   background-color: var(--dark4) !important;
 }
 
-input[type='text'],
-input[type='email'],
-input[type='password'],
-input[type='number'],
-input[type='search'] {
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="search"] {
   color: rgba(255, 255, 255, 0.87);
   font-size: 16px;
   line-height: 18px;
@@ -364,29 +364,29 @@ input[type='search'] {
   background-color: #282828;
   border: 2px solid #323232;
 }
-input[type='text']:hover,
-input[type='email']:hover,
-input[type='password']:hover,
-input[type='number']:hover,
-input[type='search']:hover {
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+input[type="number"]:hover,
+input[type="search"]:hover {
   background-color: #2d2d2d;
   transition: all 0.2s;
 }
-input[type='text']:focus,
-input[type='email']:focus,
-input[type='password']:focus,
-input[type='number']:focus,
-input[type='search']:focus {
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus {
   border: 2px solid #2edb6e;
 }
-input[type='text']::placeholder,
-input[type='email']::placeholder,
-input[type='password']::placeholder,
-input[type='number']::placeholder,
-input[type='search']::placeholder {
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder,
+input[type="number"]::placeholder,
+input[type="search"]::placeholder {
   font-family:
-    -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen, ubuntu,
-    cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -401,7 +401,7 @@ input[type='search']::placeholder {
   border-radius: 6px;
   background-color: var(--dark2);
   border: 0;
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='20' width='20' viewBox='0 0 20 20' focusable='false' stroke-width='px' fill='%23B9BBBE' class='dropdown-svg'%3E%3Cpath d='M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z'%3E%3C/path%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='20' width='20' viewBox='0 0 20 20' focusable='false' stroke-width='px' fill='%23B9BBBE' class='dropdown-svg'%3E%3Cpath d='M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z'%3E%3C/path%3E%3C/svg%3E");
   background-position:
     right 0.7em top 50%,
     0 0;
@@ -413,8 +413,8 @@ input[type='search']::placeholder {
 
 button {
   font-family:
-    -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen, ubuntu,
-    cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -437,8 +437,8 @@ button:hover {
 
 button:not(.mod-cta):not(.mod-warning) {
   font-family:
-    -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen, ubuntu,
-    cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -469,8 +469,8 @@ button:not(.mod-cta):not(.mod-warning):hover {
 
 button.mod-warning {
   font-family:
-    -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen, ubuntu,
-    cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -499,8 +499,8 @@ button.mod-warning:hover {
 
 .mod-cta {
   font-family:
-    -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen, ubuntu,
-    cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -538,8 +538,8 @@ button.mod-warning:hover {
   padding: 4px 8px;
   cursor: pointer;
   font-family:
-    -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen, ubuntu,
-    cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -860,15 +860,14 @@ input.task-list-item-checkbox:checked {
 }
 
 .markdown-preview-view .task-list-item-checkbox:checked::before {
-  content: ' ';
+  content: " ";
   position: absolute;
   background-color: white;
   left: 2px;
   top: 2px;
   right: 2px;
   bottom: 2px;
-  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Cpolygon points='5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039'%3E%3C/polygon%3E%3C/svg%3E");
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Cpolygon points='5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039'%3E%3C/polygon%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Cpolygon points='5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039'%3E%3C/polygon%3E%3C/svg%3E),  -webkit-mask-image: url(data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Cpolygon points='5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039'%3E%3C/polygon%3E%3C/svg%3E");
 }
 
 .tooltip {
@@ -910,8 +909,8 @@ input.task-list-item-checkbox:checked {
 
 .flair {
   font-family:
-    -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen, ubuntu,
-    cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu,
+    cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(255, 255, 255, 0.87);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;

@@ -196,7 +196,7 @@ body {
 }
 
 body:not(.is-mobile)
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .view-actions
   .view-action
   svg {
@@ -382,7 +382,7 @@ body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
 }
 
 .nav-file-tag::before {
-  content: '● ';
+  content: "● ";
   color: #caca00;
 }
 
@@ -413,7 +413,7 @@ body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
 }
 
 .is-flashing.nav-file-title::after {
-  content: ' ';
+  content: " ";
   display: block;
   position: absolute;
   width: 200%;
@@ -458,23 +458,23 @@ body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
 /* change note header to match h1 */
 
 body:not(.plugin-sliding-panes):not(.is-mobile)
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .view-header {
   height: 56px;
 }
 
 body:not(.plugin-sliding-panes):not(.is-mobile)
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .view-header
   .view-header-title {
   font-size: 38px;
   line-height: 56px;
   font-family:
-    'Futura Md BT',
+    "Futura Md BT",
     Inter,
     -apple-system,
     BlinkMacSystemFont,
-    'Segoe UI',
+    "Segoe UI",
     Roboto,
     Helvetica,
     Arial,
@@ -482,7 +482,7 @@ body:not(.plugin-sliding-panes):not(.is-mobile)
 }
 
 body:not(.plugin-sliding-panes):not(.is-mobile)
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .view-header
   .view-header-icon {
   padding-top: 17px;
@@ -492,7 +492,7 @@ body:not(.plugin-sliding-panes):not(.is-mobile)
 
 /* sliding panes fix */
 
-.plugin-sliding-panes .workspace-leaf-content[data-type='markdown'] {
+.plugin-sliding-panes .workspace-leaf-content[data-type="markdown"] {
   background: linear-gradient(
     135deg,
     var(--mica-content-bg-start),
@@ -507,11 +507,11 @@ body:not(.plugin-sliding-panes):not(.is-mobile)
   font-size: 22px;
   padding-bottom: 10px;
   font-family:
-    'Futura Md BT',
+    "Futura Md BT",
     Inter,
     -apple-system,
     BlinkMacSystemFont,
-    'Segoe UI',
+    "Segoe UI",
     Roboto,
     Helvetica,
     Arial,
@@ -543,7 +543,7 @@ body:not(.plugin-sliding-panes):not(.is-mobile)
 .titlebar .titlebar-text::after {
   z-index: 5;
   opacity: 0.5;
-  content: ' - https://tmz.io/sodalite v0.8.4';
+  content: " - https://tmz.io/sodalite v0.8.4";
 }
 
 /* status bar */
@@ -615,11 +615,11 @@ body:not(.is-mobile) .modal-container .modal-bg {
 
 .modal-container .modal .modal-title {
   font-family:
-    'Futura Md BT',
+    "Futura Md BT",
     Inter,
     -apple-system,
     BlinkMacSystemFont,
-    'Segoe UI',
+    "Segoe UI",
     Roboto,
     Helvetica,
     Arial,
@@ -755,47 +755,47 @@ body:not(.is-mobile)
 }
 
 body:not(.is-mobile)
-  .workspace-leaf-content[data-type='bookmarks']
+  .workspace-leaf-content[data-type="bookmarks"]
   .view-content,
-body:not(.is-mobile) .workspace-leaf-content[data-type='outline'] .view-content,
+body:not(.is-mobile) .workspace-leaf-content[data-type="outline"] .view-content,
 body:not(.is-mobile)
-  .workspace-leaf-content[data-type='all-properties']
+  .workspace-leaf-content[data-type="all-properties"]
   .view-content {
   padding-top: 56px;
 }
 
 body:not(.plugin-sliding-panes):not(.is-mobile)
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .markdown-preview-sizer {
   padding-top: 56px;
 }
 
 body:not(.plugin-sliding-panes):not(.is-mobile)
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .markdown-preview-view::-webkit-scrollbar-track {
   margin-top: 56px;
 }
 
 body:not(.plugin-sliding-panes):not(.is-mobile)
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .CodeMirror-scroll {
   padding-top: 56px;
 }
 
 body:not(.plugin-sliding-panes):not(.is-mobile)
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .CodeMirror-vscrollbar::-webkit-scrollbar-track {
   margin-top: 56px;
 }
 
 body:not(.plugin-sliding-panes):not(.is-mobile)
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .cm-scroller {
   padding-top: 56px;
 }
 
 body:not(.plugin-sliding-panes):not(.is-mobile)
-  .workspace-leaf-content[data-type='markdown']
+  .workspace-leaf-content[data-type="markdown"]
   .cm-scroller::-webkit-scrollbar-track {
   margin-top: 56px;
 }
@@ -907,7 +907,7 @@ body.is-mobile .graph-controls {
   width: 100%;
   height: 26px;
   position: fixed;
-  content: ' ';
+  content: " ";
   left: 0;
   top: 0;
   z-index: -1;
@@ -991,32 +991,32 @@ body.is-mobile .graph-controls {
 /* add icons to tree */
 
 .nav-folder .nav-folder-title-content::before {
-  content: '📂 ';
+  content: "📂 ";
 }
 
 .nav-folder.is-collapsed .nav-folder-title-content::before {
-  content: '📁 ';
+  content: "📁 ";
 }
 
-.workspace-leaf-content[data-type='file-explorer']
+.workspace-leaf-content[data-type="file-explorer"]
   .nav-folder.mod-root
   > .nav-folder-title
   .nav-folder-title-content::before {
-  content: '🏠 ';
+  content: "🏠 ";
 }
 
-.workspace-leaf-content[data-type='file-explorer']
+.workspace-leaf-content[data-type="file-explorer"]
   .nav-file
   .nav-file-title-content::before {
-  content: '📝 ';
+  content: "📝 ";
 }
 
 /* special icon example */
 
-.workspace-leaf-content[data-type='file-explorer']
-  .nav-file-title[data-path^='samplepaththatdoesntexist']
+.workspace-leaf-content[data-type="file-explorer"]
+  .nav-file-title[data-path^="samplepaththatdoesntexist"]
   .nav-file-title-content::before {
-  content: '⚡ ';
+  content: "⚡ ";
 }
 
 /* callouts */

@@ -1,7 +1,7 @@
 body.bt-bubble-layout.bt-bubble-not-file-tree
   .workspace-leaf-content:is(
-    [data-type='file-explorer'],
-    [data-type='mk-file-view']
+    [data-type="file-explorer"],
+    [data-type="mk-file-view"]
   ) {
   border-radius: var(--bt-bubble-radius, var(--radius-l));
   background-color: var(--background-primary);

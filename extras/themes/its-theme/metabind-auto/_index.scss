@@ -1,7 +1,7 @@
 .metabind-auto .mb-input select,
 .metabind-auto
   .mb-input
-  input:is([type='text'], [type='number'], [type='date']) {
+  input:is([type="text"], [type="number"], [type="date"]) {
   min-width: 5ch;
   width: 100%;
   max-width: 100%;

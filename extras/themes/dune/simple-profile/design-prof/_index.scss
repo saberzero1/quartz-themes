@@ -1,7 +1,7 @@
 .design-prof:is(.is-mobile)
   .workspace-drawer.mod-left
   .workspace-drawer-header-name::before {
-  content: '\1F3A8';
+  content: "\1F3A8";
   transform: scale(1.4) translate(2px, 4px);
   margin-right: 8px;
 }

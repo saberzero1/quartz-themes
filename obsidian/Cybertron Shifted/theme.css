@@ -412,7 +412,7 @@ img {
 }
 
 .markdown-preview-view .task-list-item-checkbox:checked::before {
-  content: '✓';
+  content: "✓";
   position: absolute;
   color: #999999;
   font-size: 1em;
@@ -1149,16 +1149,16 @@ br + .internal-embed {
 }
 
 .markdown-embed-title ~ .markdown-embed-link,
-.internal-embed[src*='#'] .markdown-embed-link {
+.internal-embed[src*="#"] .markdown-embed-link {
   right: 0 !important;
   width: 3%;
 }
 
-.internal-embed:not([src*='#^']) .markdown-embed-link {
+.internal-embed:not([src*="#^"]) .markdown-embed-link {
   left: auto;
 }
 
-.internal-embed[src*='^'] .markdown-preview-sizer {
+.internal-embed[src*="^"] .markdown-preview-sizer {
   padding-left: 0.25em !important;
   padding-top: 0 !important;
 }
@@ -1201,12 +1201,12 @@ li .internal-embed .markdown-embed {
   max-height: none !important;
 }
 
-.popover.hover-popover .internal-embed[src*='^'] .markdown-embed {
+.popover.hover-popover .internal-embed[src*="^"] .markdown-embed {
   height: 100%;
   max-height: none;
 }
 
-.popover.hover-popover .internal-embed[src*='^'] {
+.popover.hover-popover .internal-embed[src*="^"] {
   height: 3.25em;
 }
 
@@ -1222,7 +1222,7 @@ ul ul {
   position: relative;
 }
 ul ul::before {
-  content: '';
+  content: "";
   border-left: 0px solid #2c8ba0;
   position: absolute;
 }

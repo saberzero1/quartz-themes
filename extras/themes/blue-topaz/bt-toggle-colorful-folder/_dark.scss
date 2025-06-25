@@ -216,12 +216,12 @@ body.folder-style-change-options-colorful-title:not(.folder-colorful-six)
 body.bt-toggle-colorful-folder:is(
     .folder-style-change-options-colorful-border
   ).folder-colorful-custom:not(.is-grabbing)
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .nav-folder-title,
 body.bt-toggle-colorful-folder:is(
     .folder-style-change-options-colorful-border
   ).folder-colorful-custom:not(.is-grabbing)
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .tree-item-self.is-clickable.nav-folder-title {
   color: color-mix(in hsl, var(--folder-colorful-custom-color), white 38%);
   filter: var(--tab-color);
@@ -232,7 +232,7 @@ body.bt-toggle-colorful-folder:is(
     .folder-style-change-options-colorful-order
   )
   .theme-dark
-  .workspace-leaf-content[data-type='file-explorer'] {
+  .workspace-leaf-content[data-type="file-explorer"] {
   background-color: var(--background-secondary-alt);
 }
 
@@ -255,12 +255,12 @@ body.folder-style-change-options-colorful-tab-liked
 body.bt-toggle-colorful-folder:is(
     .folder-style-change-options-colorful-border
   ):not(.is-grabbing)
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .nav-folder-title,
 body.bt-toggle-colorful-folder:is(
     .folder-style-change-options-colorful-border
   ):not(.is-grabbing)
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .tree-item-self.is-clickable.nav-folder-title {
   color: color-mix(in hsl, var(--tab-color), white 38%);
 }

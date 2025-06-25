@@ -9,7 +9,7 @@ body .kanban-plugin__search-wrapper {
   top: var(--size-2-3);
   right: var(--size-2-3);
 }
-body .kanban-plugin__search-wrapper a[aria-label='Cancel'] {
+body .kanban-plugin__search-wrapper a[aria-label="Cancel"] {
   padding: var(--size-4-1);
   margin-left: var(--size-2-2);
 }
@@ -63,8 +63,8 @@ body
 body
   .document-search-container
   :is(
-    .document-search-buttons [aria-label='Shift + F3'],
-    .document-replace-buttons [aria-label='Ctrl + Alt + Enter']
+    .document-search-buttons [aria-label="Shift + F3"],
+    .document-replace-buttons [aria-label="Ctrl + Alt + Enter"]
   ) {
   display: none;
 }

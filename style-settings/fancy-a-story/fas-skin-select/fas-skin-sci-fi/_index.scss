@@ -5,14 +5,14 @@
   --hr-color: rgb(var(--sci-fi-color-rgb));
 }
 .fas-skin-sci-fi :is(.markdown-source-view, .markdown-preview-view) {
-  --inline-title-font: 'Orbitron', Arial, serif;
-  --h1-font: 'Orbitron', Arial, serif;
-  --h2-font: 'Orbitron', Arial, serif;
-  --h2-font: 'Orbitron', Arial, serif;
-  --h4-font: 'Orbitron', Arial, serif;
-  --h5-font: 'Orbitron', Arial, serif;
-  --h6-font: 'Orbitron', Arial, serif;
-  --font-text: 'Chakra Petch', ProFont, Arial, serif;
+  --inline-title-font: "Orbitron", Arial, serif;
+  --h1-font: "Orbitron", Arial, serif;
+  --h2-font: "Orbitron", Arial, serif;
+  --h2-font: "Orbitron", Arial, serif;
+  --h4-font: "Orbitron", Arial, serif;
+  --h5-font: "Orbitron", Arial, serif;
+  --h6-font: "Orbitron", Arial, serif;
+  --font-text: "Chakra Petch", ProFont, Arial, serif;
   font-family: var(--font-text);
 }
 .fas-skin-sci-fi
@@ -22,7 +22,7 @@
 }
 .fas-skin-sci-fi .markdown-reading-view::before,
 .fas-skin-sci-fi .markdown-source-view::before {
-  content: '';
+  content: "";
   position: fixed;
   top: var(--header-height);
   bottom: 0;
@@ -61,7 +61,7 @@
   h1:not(.callout h1, ul h1, ol h1) {
   --h1-color: inherit;
   --h1-background: transparent;
-  --h1-font: 'Orbitron', Arial, serif;
+  --h1-font: "Orbitron", Arial, serif;
   padding: unset;
   clip-path: unset;
   text-align: left;
@@ -95,7 +95,7 @@
   h2:not(.callout h2, ul h2, ol h2) {
   --h2-color: inherit;
   --h2-background: transparent;
-  --h2-font: 'Orbitron', Arial, serif;
+  --h2-font: "Orbitron", Arial, serif;
   padding: unset;
   clip-path: unset;
   text-align: left;
@@ -129,7 +129,7 @@
   h3:not(.callout h3, ul h3, ol h3) {
   --h3-color: inherit;
   --h3-background: transparent;
-  --h3-font: 'Orbitron', Arial, serif;
+  --h3-font: "Orbitron", Arial, serif;
   padding: unset;
   clip-path: unset;
   text-align: left;
@@ -163,7 +163,7 @@
   h4:not(.callout h4, ul h4, ol h4) {
   --h4-color: inherit;
   --h4-background: transparent;
-  --h4-font: 'Orbitron', Arial, serif;
+  --h4-font: "Orbitron", Arial, serif;
   padding: unset;
   clip-path: unset;
   text-align: left;
@@ -197,7 +197,7 @@
   h5:not(.callout h5, ul h5, ol h5) {
   --h5-color: inherit;
   --h5-background: transparent;
-  --h5-font: 'Orbitron', Arial, serif;
+  --h5-font: "Orbitron", Arial, serif;
   padding: unset;
   clip-path: unset;
   text-align: left;
@@ -231,7 +231,7 @@
   h6:not(.callout h6, ul h6, ol h6) {
   --h6-color: inherit;
   --h6-background: transparent;
-  --h6-font: 'Orbitron', Arial, serif;
+  --h6-font: "Orbitron", Arial, serif;
   padding: unset;
   clip-path: unset;
   text-align: left;
@@ -261,43 +261,43 @@
 }
 .fas-skin-sci-fi
   .callout:is(
-    [data-callout='note'],
-    [data-callout='abstract'],
-    [data-callout='summary'],
-    [data-callout='tldr'],
-    [data-callout='info'],
-    [data-callout='todo'],
-    [data-callout='tip'],
-    [data-callout='hint'],
-    [data-callout='important'],
-    [data-callout='success'],
-    [data-callout='check'],
-    [data-callout='done'],
-    [data-callout='question'],
-    [data-callout='help'],
-    [data-callout='faq'],
-    [data-callout='warning'],
-    [data-callout='caution'],
-    [data-callout='attention'],
-    [data-callout='failure'],
-    [data-callout='fail'],
-    [data-callout='missing'],
-    [data-callout='danger'],
-    [data-callout='error'],
-    [data-callout='bug'],
-    [data-callout='example'],
-    [data-callout='quote'],
-    [data-callout='cite']
-  ):not(:is([data-callout='email'], [data-callout='timeline']) .callout),
+    [data-callout="note"],
+    [data-callout="abstract"],
+    [data-callout="summary"],
+    [data-callout="tldr"],
+    [data-callout="info"],
+    [data-callout="todo"],
+    [data-callout="tip"],
+    [data-callout="hint"],
+    [data-callout="important"],
+    [data-callout="success"],
+    [data-callout="check"],
+    [data-callout="done"],
+    [data-callout="question"],
+    [data-callout="help"],
+    [data-callout="faq"],
+    [data-callout="warning"],
+    [data-callout="caution"],
+    [data-callout="attention"],
+    [data-callout="failure"],
+    [data-callout="fail"],
+    [data-callout="missing"],
+    [data-callout="danger"],
+    [data-callout="error"],
+    [data-callout="bug"],
+    [data-callout="example"],
+    [data-callout="quote"],
+    [data-callout="cite"]
+  ):not(:is([data-callout="email"], [data-callout="timeline"]) .callout),
 .fas-skin-sci-fi
   .callout:is(
-    [data-callout='cards-deck'],
-    [data-callout='email'],
-    [data-callout='profile'],
-    [data-callout='autopsy'],
-    [data-callout='screen'],
-    [data-callout='profile']
-  ):not(:is([data-callout='email'], [data-callout='timeline']) .callout) {
+    [data-callout="cards-deck"],
+    [data-callout="email"],
+    [data-callout="profile"],
+    [data-callout="autopsy"],
+    [data-callout="screen"],
+    [data-callout="profile"]
+  ):not(:is([data-callout="email"], [data-callout="timeline"]) .callout) {
   clip-path: polygon(
     20px 0,
     100% 0,
@@ -315,134 +315,134 @@
 }
 .fas-skin-sci-fi
   .callout:is(
-    [data-callout='note'],
-    [data-callout='abstract'],
-    [data-callout='summary'],
-    [data-callout='tldr'],
-    [data-callout='info'],
-    [data-callout='todo'],
-    [data-callout='tip'],
-    [data-callout='hint'],
-    [data-callout='important'],
-    [data-callout='success'],
-    [data-callout='check'],
-    [data-callout='done'],
-    [data-callout='question'],
-    [data-callout='help'],
-    [data-callout='faq'],
-    [data-callout='warning'],
-    [data-callout='caution'],
-    [data-callout='attention'],
-    [data-callout='failure'],
-    [data-callout='fail'],
-    [data-callout='missing'],
-    [data-callout='danger'],
-    [data-callout='error'],
-    [data-callout='bug'],
-    [data-callout='example'],
-    [data-callout='quote'],
-    [data-callout='cite']
-  ):not(:is([data-callout='email'], [data-callout='timeline']) .callout)
+    [data-callout="note"],
+    [data-callout="abstract"],
+    [data-callout="summary"],
+    [data-callout="tldr"],
+    [data-callout="info"],
+    [data-callout="todo"],
+    [data-callout="tip"],
+    [data-callout="hint"],
+    [data-callout="important"],
+    [data-callout="success"],
+    [data-callout="check"],
+    [data-callout="done"],
+    [data-callout="question"],
+    [data-callout="help"],
+    [data-callout="faq"],
+    [data-callout="warning"],
+    [data-callout="caution"],
+    [data-callout="attention"],
+    [data-callout="failure"],
+    [data-callout="fail"],
+    [data-callout="missing"],
+    [data-callout="danger"],
+    [data-callout="error"],
+    [data-callout="bug"],
+    [data-callout="example"],
+    [data-callout="quote"],
+    [data-callout="cite"]
+  ):not(:is([data-callout="email"], [data-callout="timeline"]) .callout)
   .callout-title,
 .fas-skin-sci-fi
   .callout:is(
-    [data-callout='cards-deck'],
-    [data-callout='email'],
-    [data-callout='profile'],
-    [data-callout='autopsy'],
-    [data-callout='screen'],
-    [data-callout='profile']
-  ):not(:is([data-callout='email'], [data-callout='timeline']) .callout)
+    [data-callout="cards-deck"],
+    [data-callout="email"],
+    [data-callout="profile"],
+    [data-callout="autopsy"],
+    [data-callout="screen"],
+    [data-callout="profile"]
+  ):not(:is([data-callout="email"], [data-callout="timeline"]) .callout)
   .callout-title {
   background: none;
 }
 .fas-skin-sci-fi
   .callout:is(
-    [data-callout='note'],
-    [data-callout='abstract'],
-    [data-callout='summary'],
-    [data-callout='tldr'],
-    [data-callout='info'],
-    [data-callout='todo'],
-    [data-callout='tip'],
-    [data-callout='hint'],
-    [data-callout='important'],
-    [data-callout='success'],
-    [data-callout='check'],
-    [data-callout='done'],
-    [data-callout='question'],
-    [data-callout='help'],
-    [data-callout='faq'],
-    [data-callout='warning'],
-    [data-callout='caution'],
-    [data-callout='attention'],
-    [data-callout='failure'],
-    [data-callout='fail'],
-    [data-callout='missing'],
-    [data-callout='danger'],
-    [data-callout='error'],
-    [data-callout='bug'],
-    [data-callout='example'],
-    [data-callout='quote'],
-    [data-callout='cite']
-  ):not(:is([data-callout='email'], [data-callout='timeline']) .callout)
+    [data-callout="note"],
+    [data-callout="abstract"],
+    [data-callout="summary"],
+    [data-callout="tldr"],
+    [data-callout="info"],
+    [data-callout="todo"],
+    [data-callout="tip"],
+    [data-callout="hint"],
+    [data-callout="important"],
+    [data-callout="success"],
+    [data-callout="check"],
+    [data-callout="done"],
+    [data-callout="question"],
+    [data-callout="help"],
+    [data-callout="faq"],
+    [data-callout="warning"],
+    [data-callout="caution"],
+    [data-callout="attention"],
+    [data-callout="failure"],
+    [data-callout="fail"],
+    [data-callout="missing"],
+    [data-callout="danger"],
+    [data-callout="error"],
+    [data-callout="bug"],
+    [data-callout="example"],
+    [data-callout="quote"],
+    [data-callout="cite"]
+  ):not(:is([data-callout="email"], [data-callout="timeline"]) .callout)
   .callout-content,
 .fas-skin-sci-fi
   .callout:is(
-    [data-callout='cards-deck'],
-    [data-callout='email'],
-    [data-callout='profile'],
-    [data-callout='autopsy'],
-    [data-callout='screen'],
-    [data-callout='profile']
-  ):not(:is([data-callout='email'], [data-callout='timeline']) .callout)
+    [data-callout="cards-deck"],
+    [data-callout="email"],
+    [data-callout="profile"],
+    [data-callout="autopsy"],
+    [data-callout="screen"],
+    [data-callout="profile"]
+  ):not(:is([data-callout="email"], [data-callout="timeline"]) .callout)
   .callout-content {
   border-top-style: solid;
 }
 .fas-skin-sci-fi
   .callout:is(
-    [data-callout='note'],
-    [data-callout='abstract'],
-    [data-callout='summary'],
-    [data-callout='tldr'],
-    [data-callout='info'],
-    [data-callout='todo'],
-    [data-callout='tip'],
-    [data-callout='hint'],
-    [data-callout='important'],
-    [data-callout='success'],
-    [data-callout='check'],
-    [data-callout='done'],
-    [data-callout='question'],
-    [data-callout='help'],
-    [data-callout='faq'],
-    [data-callout='warning'],
-    [data-callout='caution'],
-    [data-callout='attention'],
-    [data-callout='failure'],
-    [data-callout='fail'],
-    [data-callout='missing'],
-    [data-callout='danger'],
-    [data-callout='error'],
-    [data-callout='bug'],
-    [data-callout='example'],
-    [data-callout='quote'],
-    [data-callout='cite']
+    [data-callout="note"],
+    [data-callout="abstract"],
+    [data-callout="summary"],
+    [data-callout="tldr"],
+    [data-callout="info"],
+    [data-callout="todo"],
+    [data-callout="tip"],
+    [data-callout="hint"],
+    [data-callout="important"],
+    [data-callout="success"],
+    [data-callout="check"],
+    [data-callout="done"],
+    [data-callout="question"],
+    [data-callout="help"],
+    [data-callout="faq"],
+    [data-callout="warning"],
+    [data-callout="caution"],
+    [data-callout="attention"],
+    [data-callout="failure"],
+    [data-callout="fail"],
+    [data-callout="missing"],
+    [data-callout="danger"],
+    [data-callout="error"],
+    [data-callout="bug"],
+    [data-callout="example"],
+    [data-callout="quote"],
+    [data-callout="cite"]
   ):not(
-    :is([data-callout='email'], [data-callout='timeline']) .callout
+    :is([data-callout="email"], [data-callout="timeline"]) .callout
   )::before,
 .fas-skin-sci-fi
   .callout:is(
-    [data-callout='cards-deck'],
-    [data-callout='email'],
-    [data-callout='profile'],
-    [data-callout='autopsy'],
-    [data-callout='screen'],
-    [data-callout='profile']
+    [data-callout="cards-deck"],
+    [data-callout="email"],
+    [data-callout="profile"],
+    [data-callout="autopsy"],
+    [data-callout="screen"],
+    [data-callout="profile"]
   ):not(
-    :is([data-callout='email'], [data-callout='timeline']) .callout
+    :is([data-callout="email"], [data-callout="timeline"]) .callout
   )::before {
-  content: '';
+  content: "";
   position: absolute;
   background: rgba(var(--callout-color), var(--callout-border-opacity));
   inset: 0;
@@ -467,46 +467,46 @@
 }
 .fas-skin-sci-fi
   .callout:is(
-    [data-callout='note'],
-    [data-callout='abstract'],
-    [data-callout='summary'],
-    [data-callout='tldr'],
-    [data-callout='info'],
-    [data-callout='todo'],
-    [data-callout='tip'],
-    [data-callout='hint'],
-    [data-callout='important'],
-    [data-callout='success'],
-    [data-callout='check'],
-    [data-callout='done'],
-    [data-callout='question'],
-    [data-callout='help'],
-    [data-callout='faq'],
-    [data-callout='warning'],
-    [data-callout='caution'],
-    [data-callout='attention'],
-    [data-callout='failure'],
-    [data-callout='fail'],
-    [data-callout='missing'],
-    [data-callout='danger'],
-    [data-callout='error'],
-    [data-callout='bug'],
-    [data-callout='example'],
-    [data-callout='quote'],
-    [data-callout='cite']
-  ):not(:is([data-callout='email'], [data-callout='timeline']) .callout):is(
-    [data-callout-metadata~='accent']
+    [data-callout="note"],
+    [data-callout="abstract"],
+    [data-callout="summary"],
+    [data-callout="tldr"],
+    [data-callout="info"],
+    [data-callout="todo"],
+    [data-callout="tip"],
+    [data-callout="hint"],
+    [data-callout="important"],
+    [data-callout="success"],
+    [data-callout="check"],
+    [data-callout="done"],
+    [data-callout="question"],
+    [data-callout="help"],
+    [data-callout="faq"],
+    [data-callout="warning"],
+    [data-callout="caution"],
+    [data-callout="attention"],
+    [data-callout="failure"],
+    [data-callout="fail"],
+    [data-callout="missing"],
+    [data-callout="danger"],
+    [data-callout="error"],
+    [data-callout="bug"],
+    [data-callout="example"],
+    [data-callout="quote"],
+    [data-callout="cite"]
+  ):not(:is([data-callout="email"], [data-callout="timeline"]) .callout):is(
+    [data-callout-metadata~="accent"]
   )::before,
 .fas-skin-sci-fi
   .callout:is(
-    [data-callout='cards-deck'],
-    [data-callout='email'],
-    [data-callout='profile'],
-    [data-callout='autopsy'],
-    [data-callout='screen'],
-    [data-callout='profile']
-  ):not(:is([data-callout='email'], [data-callout='timeline']) .callout):is(
-    [data-callout-metadata~='accent']
+    [data-callout="cards-deck"],
+    [data-callout="email"],
+    [data-callout="profile"],
+    [data-callout="autopsy"],
+    [data-callout="screen"],
+    [data-callout="profile"]
+  ):not(:is([data-callout="email"], [data-callout="timeline"]) .callout):is(
+    [data-callout-metadata~="accent"]
   )::before {
   background: rgb(from var(--color-accent) r g b/var(--callout-border-opacity));
 }

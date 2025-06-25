@@ -86,16 +86,16 @@ body.flexcyon-vim-mode-text-enable.flexcyon-status-text-enable-color
 }
 
 body.flexcyon-status-text-enable-color
-  .plugin-editor-status[aria-label='Reading']::before {
+  .plugin-editor-status[aria-label="Reading"]::before {
   color: var(--text-accent);
 }
 
 body.flexcyon-status-text-enable-color
-  .plugin-editor-status[aria-label='Source mode']::before {
+  .plugin-editor-status[aria-label="Source mode"]::before {
   color: var(--color-purple);
 }
 
 body.flexcyon-status-text-enable-color
-  .plugin-editor-status[aria-label='Live Preview']::before {
+  .plugin-editor-status[aria-label="Live Preview"]::before {
   color: var(--color-blue);
 }

@@ -1,6 +1,6 @@
 body:not(.default-loading-page).loading-animation-cat
   .progress-bar-message::before {
-  content: 'GIF creator: Jake Fleming';
+  content: "GIF creator: Jake Fleming";
   display: block;
   background: no-repeat center/cover;
   width: 800px;

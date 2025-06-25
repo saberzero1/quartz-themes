@@ -29,7 +29,7 @@ body.line-indicator-enable
         .HyperMD-list-line-1:has(.collapse-indicator)
       )
   ):hover::after {
-  content: '';
+  content: "";
   width: var(--size-4-1);
   position: absolute;
   inset-block: var(--size-4-1);

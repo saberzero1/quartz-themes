@@ -5,7 +5,7 @@
   counter-reset: decimal;
 }
 -1 ol > li::before {
-  content: counters(decimal, '.') '. ';
+  content: counters(decimal, ".") ". ";
   counter-increment: decimal;
   color: var(--text-faint);
   margin-left: -1.1em;

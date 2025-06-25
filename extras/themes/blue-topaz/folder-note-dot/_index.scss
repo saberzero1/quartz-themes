@@ -3,7 +3,7 @@
 }
 
 .folder-note-dot
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .nav-folder-title {
   padding: var(--nav-item-parent-padding);
 }
@@ -15,7 +15,7 @@
   > .tree-item.nav-folder
   .nav-folder-title:after {
   color: var(--tab-color);
-  content: '⬤';
+  content: "⬤";
   position: relative;
   margin-left: 10px;
   top: 0px;

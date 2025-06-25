@@ -12,62 +12,62 @@
 .use-relative-line-numbers:not(.is-mobile)
   .cm-lineNumbers
   :has(+ .cm-active):before {
-  content: '1';
+  content: "1";
 }
 
 .use-relative-line-numbers:not(.is-mobile)
   .cm-lineNumbers
   :has(+ * + .cm-active):before {
-  content: '2';
+  content: "2";
 }
 
 .use-relative-line-numbers:not(.is-mobile)
   .cm-lineNumbers
   :has(+ * + * + .cm-active):before {
-  content: '3';
+  content: "3";
 }
 
 .use-relative-line-numbers:not(.is-mobile)
   .cm-lineNumbers
   :has(+ * + * + * + .cm-active):before {
-  content: '4';
+  content: "4";
 }
 
 .use-relative-line-numbers:not(.is-mobile)
   .cm-lineNumbers
   :has(+ * + * + * + * + .cm-active):before {
-  content: '5';
+  content: "5";
 }
 
 .use-relative-line-numbers:not(.is-mobile)
   .cm-lineNumbers
   :has(+ * + * + * + * + * + .cm-active):before {
-  content: '6';
+  content: "6";
 }
 
 .use-relative-line-numbers:not(.is-mobile)
   .cm-lineNumbers
   :has(+ * + * + * + * + * + * + .cm-active):before {
-  content: '7';
+  content: "7";
 }
 
 .use-relative-line-numbers:not(.is-mobile)
   .cm-lineNumbers
   :has(+ * + * + * + * + * + * + * + .cm-active):before {
-  content: '8';
+  content: "8";
 }
 
 .use-relative-line-numbers:not(.is-mobile)
   .cm-lineNumbers
   :has(+ * + * + * + * + * + * + * + * + .cm-active):before {
-  content: '9';
+  content: "9";
 }
 
 .use-relative-line-numbers:not(.is-mobile)
   .cm-lineNumbers
   .cm-active
   + :before {
-  content: '1';
+  content: "1";
 }
 
 .use-relative-line-numbers:not(.is-mobile)
@@ -75,16 +75,7 @@
   .cm-active
   + *
   + :before {
-  content: '2';
-}
-
-.use-relative-line-numbers:not(.is-mobile)
-  .cm-lineNumbers
-  .cm-active
-  + *
-  + *
-  + :before {
-  content: '3';
+  content: "2";
 }
 
 .use-relative-line-numbers:not(.is-mobile)
@@ -92,9 +83,8 @@
   .cm-active
   + *
   + *
-  + *
   + :before {
-  content: '4';
+  content: "3";
 }
 
 .use-relative-line-numbers:not(.is-mobile)
@@ -103,9 +93,8 @@
   + *
   + *
   + *
-  + *
   + :before {
-  content: '5';
+  content: "4";
 }
 
 .use-relative-line-numbers:not(.is-mobile)
@@ -115,9 +104,8 @@
   + *
   + *
   + *
-  + *
   + :before {
-  content: '6';
+  content: "5";
 }
 
 .use-relative-line-numbers:not(.is-mobile)
@@ -128,9 +116,8 @@
   + *
   + *
   + *
-  + *
   + :before {
-  content: '7';
+  content: "6";
 }
 
 .use-relative-line-numbers:not(.is-mobile)
@@ -142,9 +129,8 @@
   + *
   + *
   + *
-  + *
   + :before {
-  content: '8';
+  content: "7";
 }
 
 .use-relative-line-numbers:not(.is-mobile)
@@ -157,7 +143,21 @@
   + *
   + *
   + *
+  + :before {
+  content: "8";
+}
+
+.use-relative-line-numbers:not(.is-mobile)
+  .cm-lineNumbers
+  .cm-active
+  + *
+  + *
+  + *
+  + *
+  + *
+  + *
+  + *
   + *
   + :before {
-  content: '9';
+  content: "9";
 }

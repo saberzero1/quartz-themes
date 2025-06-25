@@ -4,7 +4,7 @@
   > .nav-folder
   .nav-folder-title,
 .anp-simple-rainbow-title-toggle
-  [data-type='bookmarks']
+  [data-type="bookmarks"]
   .tree-item
   .tree-item-inner {
   transition: color 0.4s;
@@ -24,7 +24,7 @@
   > .nav-folder
   .nav-folder-title:after,
 .anp-simple-rainbow-icon-toggle
-  [data-type='bookmarks']
+  [data-type="bookmarks"]
   .tree-item
   .tree-item-inner:after {
   transition: color 0.4s;
@@ -32,7 +32,7 @@
     var(--rainbow-folder-color),
     var(--anp-simple-rainbow-opacity, 1)
   );
-  content: '⬤';
+  content: "⬤";
   font-size: 10px;
   position: relative;
   margin-left: 4px;
@@ -40,7 +40,7 @@
   top: -0.5px;
 }
 .anp-simple-rainbow-icon-toggle
-  [data-type='bookmarks']
+  [data-type="bookmarks"]
   .tree-item
   .tree-item-inner {
   align-items: center;
@@ -53,7 +53,7 @@
   .nav-folder
   > .nav-folder-children,
 .anp-simple-rainbow-indentation-toggle
-  [data-type='bookmarks']
+  [data-type="bookmarks"]
   .tree-item
   .tree-item-children {
   transition: color 0.4s;

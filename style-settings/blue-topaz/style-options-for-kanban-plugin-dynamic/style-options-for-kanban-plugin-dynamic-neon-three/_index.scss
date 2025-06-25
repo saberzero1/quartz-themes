@@ -18,7 +18,7 @@ body-neon-three .kanban-plugin__lane-wrapper:nth-child(n) {
   filter: hue-rotate(360deg);
 }
 body-neon-three .kanban-plugin__lane-wrapper:nth-child(n)::before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -2;
   left: 50%;
@@ -34,7 +34,7 @@ body-neon-three .kanban-plugin__lane-wrapper:nth-child(n)::before {
   animation: rotate 2s linear infinite;
 }
 body-neon-three .kanban-plugin__lane-wrapper:nth-child(n)::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   left: 2px;

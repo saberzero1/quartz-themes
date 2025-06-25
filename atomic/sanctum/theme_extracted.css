@@ -1,4 +1,130 @@
 :root {
+  --background: light-dark(rgb(var(--gray-100)), rgb(var(--gray-10)));
+  --background-active: light-dark(
+    rgba(var(--gray-50), 0.4),
+    rgba(var(--gray-50), 0.32)
+  );
+  --background-hover: light-dark(
+    rgba(var(--gray-50), 0.16),
+    rgba(var(--gray-50), 0.12)
+  );
+  --background-inverse: light-dark(rgb(var(--gray-10)), rgb(var(--gray-80)));
+  --background-inverse-hover: light-dark(
+    rgba(var(--gray-20), 0.5),
+    rgba(var(--gray-70), 0.5)
+  );
+  --background-modifier-box-shadow: light-dark(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.1)
+  );
+  --background-modifier-cover: light-dark(
+    rgba(10, 10, 10, 0.4),
+    rgba(220, 220, 220, 0.4)
+  );
+  --background-secondary-alt: light-dark(
+    var(--color-base-30),
+    var(--color-base-05)
+  );
+  --background-selected: light-dark(
+    rgba(var(--gray-50), 0.24),
+    rgba(var(--gray-50), 0.2)
+  );
+  --background-selected-hover: light-dark(
+    rgba(var(--gray-50), 0.32),
+    rgba(var(--gray-50), 0.32)
+  );
+  --border-inverse: light-dark(rgb(var(--gray-10)), rgb(var(--gray-100)));
+  --border-strong-1: light-dark(rgb(var(--gray-60)), rgb(var(--gray-50)));
+  --border-strong-2: light-dark(rgb(var(--gray-50)), rgb(var(--gray-50)));
+  --border-subtle-0: light-dark(rgb(var(--gray-80)), rgb(var(--gray-20)));
+  --border-subtle-1: light-dark(rgb(var(--gray-80)), rgb(var(--gray-20)));
+  --border-subtle-2: light-dark(rgb(var(--gray-70)), rgb(var(--gray-20)));
+  --border-subtle-selected-1: light-dark(
+    rgb(var(--gray-70)),
+    rgb(var(--gray-30))
+  );
+  --border-subtle-selected-2: light-dark(
+    rgb(var(--gray-60)),
+    rgb(var(--gray-30))
+  );
+  --code-comment: light-dark(var(--text-faint), var(--text-faint));
+  --code-function: light-dark(var(--orange-30), var(--orange));
+  --code-important: light-dark(var(--lavender), var(--lavender));
+  --code-keyword: light-dark(var(--pink), var(--pink));
+  --code-normal: light-dark(var(--text-muted), var(--text-muted));
+  --code-property: light-dark(var(--cyan), var(--cyan));
+  --code-punctuation: light-dark(var(--text-muted), var(--text-muted));
+  --code-string: light-dark(var(--green-40), var(--green));
+  --code-tag: light-dark(var(--red-50), var(--red));
+  --code-value: light-dark(var(--lavender), var(--lavender));
+  --color-accent: light-dark(
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l))
+  );
+  --color-accent-1: light-dark(
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 1),
+      calc(var(--accent-s) * 1.01),
+      calc(var(--accent-l) * 1.075)
+    )
+  );
+  --color-accent-2: light-dark(
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    )
+  );
+  --color-accent-hsl: light-dark(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l)
+  );
+  --color-accent-rgb: light-dark(
+    var(--color-accent-rgb-d),
+    var(--color-accent-rgb-l)
+  );
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-blue-rgb: light-dark(2, 122, 255, 8, 109, 221);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-cyan-rgb: light-dark(83, 223, 221, 0, 191, 188);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-green-rgb: light-dark(68, 207, 110, 8, 185, 78);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-orange-rgb: light-dark(233, 151, 63, 236, 117, 0);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-pink-rgb: light-dark(250, 153, 205, 213, 57, 132);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-purple-rgb: light-dark(168, 130, 255, 120, 82, 238);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-red-rgb: light-dark(251, 70, 76, 233, 49, 71);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-yellow-rgb: light-dark(224, 222, 113, 224, 172, 0);
   --duration-fast-1: 70ms;
   --duration-fast-2: 110ms;
   --duration-moderate-1: 150ms;
@@ -7,6 +133,11 @@
   --duration-slow-2: 700ms;
   --elevation-1: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
   --elevation-2: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
+  --field-1: light-dark(rgb(var(--gray-90)), rgb(var(--white)));
+  --field-hover-1: light-dark(rgb(var(--gray-80)), rgb(var(--gray-20)));
+  --focus: light-dark(var(--cyan-60), var(--cyan-60));
+  --focus-inset: light-dark(rgb(var(--gray-100)), rgb(var(--white)));
+  --focus-inverse: light-dark(rgb(var(--white)), rgb(var(--white)));
   --font-scale-0: 1rem;
   --font-scale-00: 0.875rem;
   --font-scale-000: 0.75rem;
@@ -20,7 +151,81 @@
   --font-scale-7: 2.625rem;
   --font-scale-8: 3rem;
   --font-scale-9: 3.375rem;
+  --highlight: light-dark(
+    rgba(var(--color-accent-rgb), 0.7),
+    rgba(var(--color-accent-rgb), 0.7)
+  );
+  --highlight-mix-blend-mode: light-dark(darken, darken);
+  --icon-inverse: light-dark(rgb(var(--gray-100)), rgb(var(--white)));
+  --icon-on-color: light-dark(rgb(var(--white)), rgb(var(--white)));
+  --icon-primary: light-dark(rgb(var(--gray-10)), rgb(var(--gray-100)));
+  --icon-secondary: light-dark(rgb(var(--gray-30)), rgb(var(--gray-70)));
+  --input-shadow: light-dark(
+    light-dark(
+      inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+      0px 0.5px 0.4px hsl(var(--shadow-color) / 0.47),
+      0px 0.8px 0.7px -1px hsl(var(--shadow-color) / 0.4),
+      0px 1.9px 1.7px -2px hsl(var(--shadow-color) / 0.32),
+      0px 4.5px 4px -3px hsl(var(--shadow-color) / 0.25),
+      0.1px 9.4px 8.4px -4.1px hsl(var(--shadow-color) / 0.18),
+      inset 0 0 0 1px rgba(0, 0, 0, 0.12),
+      0 2px 3px 0 rgba(0, 0, 0, 0.05),
+      0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
+      0 1px 2px 0 rgba(0, 0, 0, 0.04),
+      0 0 0 0 transparent
+    ),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.12),
+    0px 0.5px 0.4px hsl(var(--shadow-color) / 0.47),
+    0px 0.8px 0.7px -1px hsl(var(--shadow-color) / 0.4),
+    0px 1.9px 1.7px -2px hsl(var(--shadow-color) / 0.32),
+    0px 4.5px 4px -3px hsl(var(--shadow-color) / 0.25),
+    0.1px 9.4px 8.4px -4.1px hsl(var(--shadow-color) / 0.18)
+  );
+  --input-shadow-hover: light-dark(
+    light-dark(
+      inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+      0px 0.5px 0.5px hsl(var(--shadow-color) / 0.47),
+      0px 0.9px 0.8px -1px hsl(var(--shadow-color) / 0.4),
+      0px 1.9px 1.7px -2px hsl(var(--shadow-color) / 0.33),
+      0px 4.5px 4.1px -3px hsl(var(--shadow-color) / 0.26),
+      0.1px 9.4px 8.5px -4px hsl(var(--shadow-color) / 0.19),
+      inset 0 0 0 1px rgba(0, 0, 0, 0.17),
+      0 2px 3px 0 rgba(0, 0, 0, 0.1),
+      0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
+      0 1px 2px 0 rgba(0, 0, 0, 0.04),
+      0 0 0 0 transparent
+    ),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.17),
+    0px 0.5px 0.5px hsl(var(--shadow-color) / 0.47),
+    0px 0.9px 0.8px -1px hsl(var(--shadow-color) / 0.4),
+    0px 1.9px 1.7px -2px hsl(var(--shadow-color) / 0.33),
+    0px 4.5px 4.1px -3px hsl(var(--shadow-color) / 0.26),
+    0.1px 9.4px 8.5px -4px hsl(var(--shadow-color) / 0.19)
+  );
+  --interactive: light-dark(
+    rgb(var(--color-accent-rgb)),
+    rgb(var(--color-accent-rgb))
+  );
   --keyboard-height: 0px;
+  --layer-1: light-dark(rgb(var(--gray-90)), rgb(var(--white)));
+  --layer-2: light-dark(rgb(var(--gray-80)), rgb(var(--gray-10)));
+  --layer-active-1: light-dark(rgb(var(--gray-70)), rgb(var(--gray-30)));
+  --layer-active-2: light-dark(rgb(var(--gray-60)), rgb(var(--gray-30)));
+  --layer-hover-1: light-dark(rgba(var(--gray-80), 0.5), rgb(var(--gray-10)));
+  --layer-hover-2: light-dark(
+    rgba(var(--gray-70), 0.5),
+    rgba(var(--gray-20), 0.5)
+  );
+  --layer-selected-1: light-dark(rgb(var(--gray-80)), rgb(var(--gray-20)));
+  --layer-selected-2: light-dark(rgb(var(--gray-70)), rgb(var(--gray-20)));
+  --layer-selected-hover-1: light-dark(
+    rgba(var(--gray-70), 0.5),
+    rgba(var(--gray-30), 0.5)
+  );
+  --layer-selected-hover-2: light-dark(
+    rgba(var(--gray-60), 0.5),
+    rgba(var(--gray-30), 0.5)
+  );
   --leading-0: 1em;
   --leading-1: 1.125em;
   --leading-10: 2.75em;
@@ -33,19 +238,39 @@
   --leading-8: 2.25em;
   --leading-9: 2.5em;
   --loading-icon-delay: 400ms;
+  --mono-rgb-0: light-dark(0, 0, 0, 255, 255, 255);
+  --mono-rgb-100: light-dark(255, 255, 255, 0, 0, 0);
   --motion-entrance-expressive: cubic-bezier(0, 0, 0.3, 1);
   --motion-entrance-productive: cubic-bezier(0, 0, 0.38, 0.9);
   --motion-exit-expressive: cubic-bezier(0.4, 0.14, 1, 1);
   --motion-exit-productive: cubic-bezier(0.2, 0, 1, 0.9);
   --motion-standard-expressive: cubic-bezier(0.4, 0.14, 0.3, 1);
   --motion-standard-productive: cubic-bezier(0.2, 0, 0.38, 0.9);
-  --page-border: 1px solid CanvasText;
-  --page-margin: 8px auto -1px;
-  --pdfViewer-padding-bottom: 9px;
+  --overlay: light-dark(rgba(var(--gray-100), 0.7), rgba(var(--gray-100), 0.5));
+  --page-border: 9px solid transparent;
+  --page-margin: 1px auto -8px;
+  --pdfViewer-padding-bottom: 0;
   --safe-area-inset-bottom: env(safe-area-inset-bottom);
   --safe-area-inset-left: env(safe-area-inset-left);
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
+  --shadow-color: light-dark(0deg 0% 1%, 0deg 5% 59%);
+  --shadow-l: light-dark(
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
+    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2),
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
+    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2)
+  );
+  --shadow-s: light-dark(
+    0px 1px 2px rgba(0, 0, 0, 0.121),
+    0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3),
+    0px 1px 2px rgba(0, 0, 0, 0.028),
+    0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07)
+  );
   --size-0: 0px;
   --size-1: 2px;
   --size-10: 64px;
@@ -60,15 +285,19 @@
   --size-7: 32px;
   --size-8: 40px;
   --size-9: 48px;
-  --spreadHorizontalWrapped-margin-LR: 3.5px;
+  --spreadHorizontalWrapped-margin-LR: -3.5px;
+  --text-code: light-dark(var(--pink-50), var(--pink-60));
+  --text-placeholder: light-dark(rgb(var(--gray-60)), rgb(var(--gray-40)));
+  --text-primary: light-dark(rgb(var(--gray-10)), rgb(var(--gray-100)));
+  --text-secondary: light-dark(rgb(var(--gray-30)), rgb(var(--gray-70)));
   --tracking-0: 0px;
   --tracking-1: 0.16px;
   --tracking-2: 0.32px;
   --tracking-3: 0.64px;
   --tracking-4: 0.96px;
   --viewer-container-height: 0;
-  --xfa-focus-outline: 2px solid CanvasText;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
+  --xfa-focus-outline: auto;
+  --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
 }
 
 body {
@@ -302,8 +531,8 @@ body {
   --font-black: 900;
   --font-bold: 700;
   --font-default:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, 'Segoe UI',
-    Roboto, 'Inter', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
   --font-editor: var(--font-editor-theme), var(--font-text);
   --font-editor-theme: Inter, sans-serif;
@@ -311,8 +540,8 @@ body {
   --font-extralight: 200;
   --font-interface:
     var(--font-interface-override), var(--font-interface-theme),
-    var(--default-font, '??'), var(--font-default);
-  --font-interface-override: '??';
+    var(--default-font, "??"), var(--font-default);
+  --font-interface-override: "??";
   --font-interface-theme: Inter, sans-serif;
   --font-light: 300;
   --font-medium: 500;
@@ -321,23 +550,23 @@ body {
     var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default);
   --font-monospace-default:
-    ui-monospace, SFMono-Regular, 'Cascadia Mono', 'Roboto Mono',
-    'DejaVu Sans Mono', 'Liberation Mono', Menlo, Monaco, 'Consolas',
-    'Source Code Pro', monospace;
-  --font-monospace-override: '??';
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace;
+  --font-monospace-override: "??";
   --font-monospace-theme:
-    'SF Mono', Menlo, SFMono-Regular, Consolas, 'Roboto Mono', monospace;
+    "SF Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", monospace;
   --font-normal: 400;
   --font-print:
     var(--font-print-override), var(--font-text-override),
-    var(--font-text-theme), 'Arial';
-  --font-print-override: '??';
+    var(--font-text-theme), "Arial";
+  --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
   --font-text: var(--font-print);
-  --font-text-override: '??';
+  --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: Inter, sans-serif;
   --font-thin: 100;
@@ -352,7 +581,7 @@ body {
   --footnote-gap: var(--size-4-1);
   --footnote-id-color: var(--text-muted);
   --footnote-id-color-no-occurrences: var(--text-faint);
-  --footnote-id-delimiter: '.';
+  --footnote-id-delimiter: ".";
   --footnote-input-background: var(--metadata-input-background);
   --footnote-input-background-active: var(--metadata-input-background-active);
   --footnote-line-height: var(--line-height-normal);
@@ -432,7 +661,7 @@ body {
   --h6-variant: normal;
   --h6-weight: 600;
   --header-height: 40px;
-  --heading-counter: ' ';
+  --heading-counter: " ";
   --heading-formatting: var(--text-faint);
   --heading-spacing: calc(var(--p-spacing) * 2.5);
   --hr-color: var(--background-modifier-border);
@@ -948,8 +1177,8 @@ body {
   contain: initial;
   font-family: var(--font-interface);
   font-feature-settings:
-    'ss05',
-    'ss02' on;
+    "ss05",
+    "ss02" on;
   font-size: var(--font-ui-medium);
   height: 100%;
   line-height: var(--line-height-tight);
@@ -1164,132 +1393,132 @@ h6 {
   padding: var(--callout-content-padding);
 }
 
-.callout[data-callout='tip'] {
+.callout[data-callout="tip"] {
   --callout-color: 92, 153, 124;
   --callout-icon: lucide-flame;
 }
 
-.callout[data-callout='warning'] {
+.callout[data-callout="warning"] {
   --callout-color: 184, 131, 0;
   --callout-icon: lucide-alert-triangle;
 }
 
-.callout[data-callout='danger'] {
+.callout[data-callout="danger"] {
   --callout-color: 243, 90, 55;
   --callout-icon: lucide-zap;
 }
 
-.callout[data-callout='abstract'] {
+.callout[data-callout="abstract"] {
   --callout-color: 104, 145, 181;
   --callout-icon: lucide-clipboard-list;
 }
 
-.callout[data-callout='todo'] {
+.callout[data-callout="todo"] {
   --callout-color: 99, 149, 156;
   --callout-icon: lucide-check-circle-2;
 }
 
-.callout[data-callout='question'] {
+.callout[data-callout="question"] {
   --callout-color: 141, 147, 25;
   --callout-icon: help-circle;
 }
 
-.callout[data-callout='info'] {
+.callout[data-callout="info"] {
   --callout-color: 99, 149, 156;
   --callout-icon: lucide-info;
 }
 
-.callout[data-callout='success'] {
+.callout[data-callout="success"] {
   --callout-color: 102, 153, 97;
   --callout-icon: lucide-check;
 }
 
-.callout[data-callout='quote'] {
+.callout[data-callout="quote"] {
   --callout-color: var(--gray-50);
   --callout-icon: quote-glyph;
 }
 
-.callout[data-callout='example'] {
+.callout[data-callout="example"] {
   --callout-color: 165, 119, 218;
   --callout-icon: lucide-list;
 }
 
-.callout[data-callout='bug'] {
+.callout[data-callout="bug"] {
   --callout-color: 236, 90, 118;
   --callout-icon: lucide-bug;
 }
 
-.callout[data-callout='summary'] {
+.callout[data-callout="summary"] {
   --callout-color: 104, 145, 181;
   --callout-icon: lucide-clipboard-list;
 }
 
-.callout[data-callout='tldr'] {
+.callout[data-callout="tldr"] {
   --callout-color: 104, 145, 181;
   --callout-icon: lucide-clipboard-list;
 }
 
-.callout[data-callout='important'] {
+.callout[data-callout="important"] {
   --callout-color: 92, 153, 124;
   --callout-icon: lucide-flame;
 }
 
-.callout[data-callout='hint'] {
+.callout[data-callout="hint"] {
   --callout-color: 92, 153, 124;
   --callout-icon: lucide-flame;
 }
 
-.callout[data-callout='check'] {
+.callout[data-callout="check"] {
   --callout-color: 102, 153, 97;
   --callout-icon: lucide-check;
 }
 
-.callout[data-callout='done'] {
+.callout[data-callout="done"] {
   --callout-color: 102, 153, 97;
   --callout-icon: lucide-check;
 }
 
-.callout[data-callout='help'] {
+.callout[data-callout="help"] {
   --callout-color: 141, 147, 25;
   --callout-icon: help-circle;
 }
 
-.callout[data-callout='faq'] {
+.callout[data-callout="faq"] {
   --callout-color: 141, 147, 25;
   --callout-icon: help-circle;
 }
 
-.callout[data-callout='caution'] {
+.callout[data-callout="caution"] {
   --callout-color: 184, 131, 0;
   --callout-icon: lucide-alert-triangle;
 }
 
-.callout[data-callout='attention'] {
+.callout[data-callout="attention"] {
   --callout-color: 184, 131, 0;
   --callout-icon: lucide-alert-triangle;
 }
 
-.callout[data-callout='failure'] {
+.callout[data-callout="failure"] {
   --callout-color: 226, 105, 52;
   --callout-icon: lucide-x;
 }
 
-.callout[data-callout='error'] {
+.callout[data-callout="error"] {
   --callout-color: 243, 90, 55;
   --callout-icon: lucide-zap;
 }
 
-.callout[data-callout='fail'] {
+.callout[data-callout="fail"] {
   --callout-color: 226, 105, 52;
   --callout-icon: lucide-x;
 }
 
-.callout[data-callout='missing'] {
+.callout[data-callout="missing"] {
   --callout-color: 226, 105, 52;
   --callout-icon: lucide-x;
 }
 
-.callout[data-callout='cite'] {
+.callout[data-callout="cite"] {
   --callout-color: var(--gray-50);
   --callout-icon: quote-glyph;
 }
@@ -1309,7 +1538,7 @@ h6 {
 }
 
 .callout-icon::after {
-  content: '\200B';
+  content: "\200B";
 }
 
 .callout-fold {
@@ -1319,7 +1548,7 @@ h6 {
 }
 
 .callout-fold::after {
-  content: '\200B';
+  content: "\200B";
 }
 
 .callout-fold .svg-icon {
@@ -1413,7 +1642,7 @@ a.tag {
   text-decoration: var(--tag-decoration);
 }
 
-input[type='search'] {
+input[type="search"] {
   -webkit-app-region: no-drag;
   background: var(--background-modifier-form-field);
   border: var(--input-border-width) solid var(--background-modifier-border);
@@ -1520,7 +1749,7 @@ input[type='search'] {
 }
 
 .tree-item-self:before {
-  content: '\200B';
+  content: "\200B";
 }
 
 .tree-item-self.mod-collapsible {
@@ -1572,7 +1801,7 @@ input[type='search'] {
 }
 
 .tree-item-self .tree-item-icon:before {
-  content: '\200b';
+  content: "\200b";
 }
 
 .tree-item-self .tree-item-icon .svg-icon:not(.right-triangle) {
@@ -1653,7 +1882,7 @@ svg.svg-icon {
   padding: var(--size-2-2);
 }
 
-.clickable-icon[aria-disabled='true'] {
+.clickable-icon[aria-disabled="true"] {
   background-color: unset;
   color: var(--text-muted);
   opacity: 0.4;

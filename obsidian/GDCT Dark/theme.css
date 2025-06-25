@@ -578,16 +578,16 @@ code {
 }
 
 /* remove the shadow that typically affect light mode */
-.theme-dark code[class*='language-'],
-.theme-dark pre[class*='language-'],
-.theme-light code[class*='language-'],
-.theme-light pre[class*='language-'] {
+.theme-dark code[class*="language-"],
+.theme-dark pre[class*="language-"],
+.theme-light code[class*="language-"],
+.theme-light pre[class*="language-"] {
   text-shadow: none !important;
   color: var(--text-faint) !important;
 }
 
-.theme-light code[class*='language-'],
-.theme-light pre[class*='language-'] {
+.theme-light code[class*="language-"],
+.theme-light pre[class*="language-"] {
   background-color: var(--background-primary-alt);
 }
 .theme-light .token.operator,
@@ -744,7 +744,7 @@ background-color: var(--text-selection) !important;
   max-width: 80%;
   left: 5%;
   font-style: normal;
-  quotes: '\201C' '\201D' '\2018' '\2019';
+  quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
 .markdown-preview-view blockquote:before {
@@ -765,7 +765,7 @@ background-color: var(--text-selection) !important;
 }
 
 .markdown-preview-view blockquote::before {
-  content: '\201C';
+  content: "\201C";
 }
 
 /***************************************/
@@ -808,7 +808,7 @@ thead {
 }
 
 /* Round checkbxes in preview and editor */
-input[type='checkbox'],
+input[type="checkbox"],
 .markdown-preview-view .cm-formatting-task {
   -webkit-appearance: none;
   appearance: none;
@@ -825,27 +825,27 @@ input[type='checkbox'],
   display: inline-block;
 }
 
-input[type='checkbox']:focus {
+input[type="checkbox"]:focus {
   outline: 0;
 }
-input[type='checkbox']:checked,
+input[type="checkbox"]:checked,
 .cm-formatting-task.cm-property {
   background-color: var(--text-accent-hover);
   border: 1px solid var(--text-accent-hover);
   background-position: center;
   background-size: 70%;
   background-repeat: no-repeat;
-  background-image: url('data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23ffffff"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+  background-image: url("data:image/svg+xml, utf8, <svg width='12px' height='10px' viewBox='0 0 12 8' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g transform='translate(-4.000000, -6.000000)' fill='%23ffffff'><path d='M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999'></path></g></g></svg>");
 }
 
-input[type='range'] {
+input[type="range"] {
   width: 100px;
   -webkit-appearance: none;
   background: var(--interactive-accent);
   border-radius: 3px;
 }
 
-input[type='range']::-webkit-slider-thumb {
+input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   border-radius: 6px;
   width: 12px;
@@ -1017,7 +1017,7 @@ background-color: var(--checkbox-color);
 }
 
 /*backlink pane*/
-.workspace-leaf-content[data-type='backlink'] .view-content {
+.workspace-leaf-content[data-type="backlink"] .view-content {
   background-color: var(--background-secondary);
 }
 
@@ -1027,8 +1027,8 @@ background-color: var(--checkbox-color);
   right: 10px;
 }
 
-.workspace-leaf-content[data-type='tag'] .tag-pane-tag-count,
-.workspace-leaf-content[data-type='tag'] .tag-pane-tag-text {
+.workspace-leaf-content[data-type="tag"] .tag-pane-tag-count,
+.workspace-leaf-content[data-type="tag"] .tag-pane-tag-text {
   font-size: var(--font-medium) !important;
   line-height: 1em;
   padding-bottom: 2px;
@@ -1057,7 +1057,7 @@ background-color: var(--checkbox-color);
   background: inherit !important;
 }
 
-.workspace-leaf-content[data-type='backlink'] .search-result-file-matches {
+.workspace-leaf-content[data-type="backlink"] .search-result-file-matches {
   font-size: var(--font-size-side-dock);
 }
 
@@ -1084,7 +1084,7 @@ background-color: var(--checkbox-color);
   color: var(--graph-node-color) !important; /* node color */
 }
 
-.workspace-leaf-content[data-type='graph'] .view-content {
+.workspace-leaf-content[data-type="graph"] .view-content {
   background-color: var(--background-primary); /* background */
 }
 
@@ -1324,7 +1324,7 @@ ul ul {
   position: relative;
 }
 ul ul::before {
-  content: '';
+  content: "";
   border-left: var(--ul-line-specs) var(--ul-line-color);
   position: absolute;
 }
@@ -1341,7 +1341,7 @@ ul .task-list-item ul::before {
 
 /* ul line in source mode */
 .cm-hmd-list-indent .cm-tab::before {
-  content: ' ';
+  content: " ";
   border-left: var(--ul-line-specs) var(--ul-line-color);
   position: absolute;
   height: 100%;
@@ -1374,7 +1374,7 @@ height: 100%;
 /* Hide scrollbar in preview, search, file, tag, back links */
 /* .markdown-preview-view::-webkit-scrollbar, */
 .workspace-leaf-content::-webkit-scrollbar,
-.workspace-leaf-content[data-type='backlink'] .view-content::-webkit-scrollbar {
+.workspace-leaf-content[data-type="backlink"] .view-content::-webkit-scrollbar {
   display: none;
 }
 Hide scrollbar for editor.CodeMirror-vscrollbar {
@@ -1419,14 +1419,14 @@ disable
   margin: 0px 8px 0px 0px;
   order: 3;
 }
-.view-action[aria-label='Pin'] {
+.view-action[aria-label="Pin"] {
   padding-top: 3px;
   order: 2;
 }
-.view-action[aria-label='Close'] {
+.view-action[aria-label="Close"] {
   order: 4;
 }
-.view-action[aria-label='Unlink pane'] {
+.view-action[aria-label="Unlink pane"] {
   padding-top: 3px;
   order: 1;
 }
@@ -1479,14 +1479,14 @@ disable
     width,
     height 0.2s;
 }
-.view-action[aria-label='Pin']:hover > svg.filled-pin {
+.view-action[aria-label="Pin"]:hover > svg.filled-pin {
   width: 23px;
   height: 23px;
   transition:
     width,
     height 0.2s;
 }
-.view-action[aria-label='Unlink pane']:hover > svg.broken-link {
+.view-action[aria-label="Unlink pane"]:hover > svg.broken-link {
   width: 23px;
   height: 23px;
   transition:
@@ -1690,36 +1690,36 @@ disable
 /* hashtags before headers */
 
 h1:before {
-  content: 'H1 ';
+  content: "H1 ";
   font-size: var(--header-before-size-h1);
   color: var(--header-before-color);
 }
 h2:before {
-  content: 'H2 ';
+  content: "H2 ";
   padding-left: 0.3em;
   font-size: var(--header-before-size-h2);
   color: var(--header-before-color);
 }
 h3:before {
-  content: 'H3 ';
+  content: "H3 ";
   padding-left: 0.72em;
   font-size: var(--header-before-size-h3);
   color: var(--header-before-color);
 }
 h4:before {
-  content: 'H4 ';
+  content: "H4 ";
   padding-left: 0.92em;
   font-size: var(--header-before-size-h4);
   color: var(--header-before-color);
 }
 h5:before {
-  content: 'H5 ';
+  content: "H5 ";
   padding-left: 1.15em;
   font-size: var(--header-before-size-h5);
   color: var(--header-before-color);
 }
 h6:before {
-  content: 'H6 ';
+  content: "H6 ";
   padding-left: 1.42em;
   font-size: var(--header-before-size-h6);
   color: var(--header-before-color);
@@ -1740,11 +1740,11 @@ h6:before {
 }
 
 .CodeMirror-foldgutter-folded:after {
-  content: '\25BA';
+  content: "\25BA";
 }
 
 .CodeMirror-foldgutter-open:after {
-  content: '\25BC';
+  content: "\25BC";
 }
 
 /* search box color */
@@ -1839,11 +1839,11 @@ background: white!important;
 /* the link on the top right corner*/
 .markdown-embed-link::before,
 .markdown-embed-link::after {
-  content: ' ';
+  content: " ";
   padding: 7px;
 }
 .markdown-embed-link::before {
-  content: ' Edit original ';
+  content: " Edit original ";
   padding-right: 0px;
   font-family: var(--font-family-code);
   font-size: var(--font-small);

@@ -8,7 +8,7 @@
   display: none;
 }
 .modal-container + .tooltip,
-.app-container:has(.mod-active .workspace-leaf-content[data-type=' '])
+.app-container:has(.mod-active .workspace-leaf-content[data-type=" "])
   ~ .tooltip {
   display: unset;
 }

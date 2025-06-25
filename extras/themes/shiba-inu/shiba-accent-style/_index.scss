@@ -74,12 +74,12 @@
   --icon-color-focused: rgb(var(--accent));
 }
 
-.shib-callout-color-toggle.shiba-accent-style .callout[data-callout='note'] {
+.shib-callout-color-toggle.shiba-accent-style .callout[data-callout="note"] {
   --callout-color: var(--accent);
 }
 
 .shiba-accent-style
-  .style-settings-heading[data-id='shiba-theme-settings-extended'],
-.shiba-accent-style .style-settings-heading[data-id='shiba-theme-settings'] {
+  .style-settings-heading[data-id="shiba-theme-settings-extended"],
+.shiba-accent-style .style-settings-heading[data-id="shiba-theme-settings"] {
   border-color: rgba(var(--color-accent), 0.2);
 }

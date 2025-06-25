@@ -1,20 +1,20 @@
 body.flexcyon-oz-dimmed-file-exts-enabled
-  div.oz-nav-file-title[data-path$='.md']
+  div.oz-nav-file-title[data-path$=".md"]
   div
   svg {
   display: none;
 }
 
 body.flexcyon-oz-dimmed-file-exts-enabled
-  div.oz-nav-file-title[data-path$='.md']
+  div.oz-nav-file-title[data-path$=".md"]
   span.oz-nav-file-tag {
   display: none;
 }
 
 body.flexcyon-oz-dimmed-file-exts-enabled
-  div.oz-nav-file-title[data-path$='.md']
+  div.oz-nav-file-title[data-path$=".md"]
   div::after {
-  content: '.md';
+  content: ".md";
   opacity: var(--dimmed);
 }
 
@@ -41,5 +41,5 @@ body.flexcyon-oz-dimmed-file-exts-enabled
 body.flexcyon-oz-dimmed-file-exts-enabled
   div.oz-nav-file-title
   span.oz-nav-file-tag::before {
-  content: '.';
+  content: ".";
 }

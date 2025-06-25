@@ -404,11 +404,11 @@ body.theme-light.vintage-theme .nav-file-tag {
   color: #7e7e7e86;
 }
 
-body.theme-light.vintage-theme input[type='checkbox'] {
+body.theme-light.vintage-theme input[type="checkbox"] {
   border: var(--background-modifier-border);
 }
 
-body.theme-light.vintage-theme input[type='checkbox']:checked {
+body.theme-light.vintage-theme input[type="checkbox"]:checked {
   background-color: #529dbb;
 }
 
@@ -748,8 +748,8 @@ body {
   --ribbon-box-style-margin: 11%;
   --box-style-sidebar-toggle-button-height: 58px;
   --font-style:
-    system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   --h1-font-style: : inherit;
   --table-border-width: 0.6px;
 }
@@ -1282,9 +1282,9 @@ body.hide-file-icons .nav-file .nav-file-title .nav-file-title-content::before {
   border-radius: var(--border-radius);
 }
 
-.workspace-leaf-content[data-type='file-explorer'],
-[data-type='search'],
-[data-type='bookmarks'] {
+.workspace-leaf-content[data-type="file-explorer"],
+[data-type="search"],
+[data-type="bookmarks"] {
   margin-bottom: 29px;
 }
 
@@ -1468,7 +1468,7 @@ body.hide-file-icons .nav-file .nav-file-title .nav-file-title-content::before {
 /* closed folder Icon */
 
 .nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before {
-  mask-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%22 0%200%20256%20256%22%3E%3Cpath%20d%3D%22M216%2C72H131.31L104%2C44.69A15.86%2C15.86%2C0%2C0%2C0%2C92.69%2C40H40A16%2C16%2C0%2C0%2C0%2C24%2C56V200.62A15.4%2C15.4%2C0%2C0%2C0%2C39.38%2C216H216.89A15.13%2C15.13%2C0%2C0%2C0%2C232%2C200.89V88A16%2C16%2C0%2C0%2C0%2C216%2C72ZM40%2C56H92.69l16%2C16H40ZM216%2C200H40V88H216Z%22%2F%3E%3C%2Fsvg%3E');
+  mask-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%22 0%200%20256%20256%22%3E%3Cpath%20d%3D%22M216%2C72H131.31L104%2C44.69A15.86%2C15.86%2C0%2C0%2C0%2C92.69%2C40H40A16%2C16%2C0%2C0%2C0%2C24%2C56V200.62A15.4%2C15.4%2C0%2C0%2C0%2C39.38%2C216H216.89A15.13%2C15.13%2C0%2C0%2C0%2C232%2C200.89V88A16%2C16%2C0%2C0%2C0%2C216%2C72ZM40%2C56H92.69l16%2C16H40ZM216%2C200H40V88H216Z%22%2F%3E%3C%2Fsvg%3E");
   mask-repeat: no-repeat;
   mask-position: center;
 }
@@ -1491,7 +1491,7 @@ body.hide-file-icons .nav-file .nav-file-title .nav-file-title-content::before {
   width: 20px;
   height: 20px;
   background-size: 10px;
-  content: '';
+  content: "";
   font-size: 1rem;
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 256 256'%3E%3Cpath d='M245,110.64A16,16,0,0,0,232,104H216V88a16,16,0,0,0-16-16H130.67L102.94,51.2a16.14,16.14,0,0,0-9.6-3.2H40A16,16,0,0,0,24,64V208h0a8,8,0,0,0,8,8H211.1a8,8,0,0,0,7.59-5.47l28.49-85.47A16.05,16.05,0,0,0,245,110.64ZM93.34,64,123.2,86.4A8,8,0,0,0,128,88h72v16H69.77a16,16,0,0,0-15.18,10.94L40,158.7V64Zm112,136H43.1l26.67-80H232Z'/%3E%3C/svg%3E");
   mask-repeat: no-repeat;
@@ -1511,7 +1511,7 @@ body.hide-file-icons .nav-file .nav-file-title .nav-file-title-content::before {
 /* File Icon */
 
 .nav-file .nav-file-title-content:before {
-  content: '';
+  content: "";
   position: relative;
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 256 256'%3E%3Cpath d='M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM160,51.31,188.69,80H160ZM200,216H56V40h88V88a8,8,0,0,0,8,8h48V216Z'/%3E%3C/svg%3E");
   mask-repeat: no-repeat;
@@ -1770,11 +1770,11 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
   cursor: pointer;
 }
 
-input[type='text'],
-input[type='search'],
-input[type='email'],
-input[type='password'],
-input[type='number'] {
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
   border: var(--background-modifier-border);
   background-color: var(--background-primary);
 }

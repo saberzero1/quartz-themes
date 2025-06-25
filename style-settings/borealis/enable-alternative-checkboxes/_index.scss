@@ -7,67 +7,67 @@ body {
   --checklist-done-decoration: none;
   --checklist-done-color: none;
   /* Canceled */
-  [data-task]:is(c) > input[type='checkbox']:checked,
-  [data-task]:is(c) > p > input[type='checkbox']:checked,
-  [data-task]:is(c)[type='checkbox']:checked {
+  [data-task]:is(c) > input[type="checkbox"]:checked,
+  [data-task]:is(c) > p > input[type="checkbox"]:checked,
+  [data-task]:is(c)[type="checkbox"]:checked {
     pointer-events: auto;
     border: none;
     background: none;
   }
-  [data-task]:is(c) > input[type='checkbox']:checked:after,
-  [data-task]:is(c) > p > input[type='checkbox']:checked:after,
-  [data-task]:is(c)[type='checkbox']:checked:after {
+  [data-task]:is(c) > input[type="checkbox"]:checked:after,
+  [data-task]:is(c) > p > input[type="checkbox"]:checked:after,
+  [data-task]:is(c)[type="checkbox"]:checked:after {
     background-color: var(--checkbox-icon-color, transparent);
     -webkit-mask-image: var(--checkbox-icon-mask-image, none);
     -webkit-mask-size: var(--checkbox-icon-mask-size, 100%);
   }
-  [data-task='c'] {
+  [data-task="c"] {
     --checkbox-icon-color: var(--background-primary);
     --checkbox-icon-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z' clip-rule='evenodd' /%3E%3C/svg%3E");
   }
-  [data-task='c'] > input[type='checkbox']:checked,
-  [data-task='c'] > p > input[type='checkbox']:checked,
-  [data-task='c'][type='checkbox']:checked {
+  [data-task="c"] > input[type="checkbox"]:checked,
+  [data-task="c"] > p > input[type="checkbox"]:checked,
+  [data-task="c"][type="checkbox"]:checked {
     pointer-events: auto;
     background-color: var(--red);
     border-color: var(--red);
   }
-  [data-task='c'] > input[type='checkbox']:checked:after,
-  [data-task='c'] > p > input[type='checkbox']:checked:after,
-  [data-task='c'][type='checkbox']:checked:after {
+  [data-task="c"] > input[type="checkbox"]:checked:after,
+  [data-task="c"] > p > input[type="checkbox"]:checked:after,
+  [data-task="c"][type="checkbox"]:checked:after {
     background-color: var(--checkbox-icon-color, transparent);
     -webkit-mask-image: var(--checkbox-icon-mask-image, none);
     -webkit-mask-size: var(--checkbox-icon-mask-size, 100%);
   }
   /* Postponed */
-  [data-task]:is(p) > input[type='checkbox']:checked,
-  [data-task]:is(p) > p > input[type='checkbox']:checked,
-  [data-task]:is(p)[type='checkbox']:checked {
+  [data-task]:is(p) > input[type="checkbox"]:checked,
+  [data-task]:is(p) > p > input[type="checkbox"]:checked,
+  [data-task]:is(p)[type="checkbox"]:checked {
     pointer-events: auto;
     border: none;
     background: none;
   }
-  [data-task]:is(p) > input[type='checkbox']:checked:after,
-  [data-task]:is(p) > p > input[type='checkbox']:checked:after,
-  [data-task]:is(p)[type='checkbox']:checked:after {
+  [data-task]:is(p) > input[type="checkbox"]:checked:after,
+  [data-task]:is(p) > p > input[type="checkbox"]:checked:after,
+  [data-task]:is(p)[type="checkbox"]:checked:after {
     background-color: var(--checkbox-icon-color, transparent);
     -webkit-mask-image: var(--checkbox-icon-mask-image, none);
     -webkit-mask-size: var(--checkbox-icon-mask-size, 100%);
   }
-  [data-task='p'] {
+  [data-task="p"] {
     --checkbox-icon-color: var(--background-primary);
     --checkbox-icon-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor'%3E%3Crect x='4' y='9' width='12' height='2' /%3E%3C/svg%3E");
   }
-  [data-task='p'] > input[type='checkbox']:checked,
-  [data-task='p'] > p > input[type='checkbox']:checked,
-  [data-task='p'][type='checkbox']:checked {
+  [data-task="p"] > input[type="checkbox"]:checked,
+  [data-task="p"] > p > input[type="checkbox"]:checked,
+  [data-task="p"][type="checkbox"]:checked {
     pointer-events: auto;
     background-color: var(--yellow);
     border-color: var(--yellow);
   }
-  [data-task='p'] > input[type='checkbox']:checked:after,
-  [data-task='p'] > p > input[type='checkbox']:checked:after,
-  [data-task='p'][type='checkbox']:checked:after {
+  [data-task="p"] > input[type="checkbox"]:checked:after,
+  [data-task="p"] > p > input[type="checkbox"]:checked:after,
+  [data-task="p"][type="checkbox"]:checked:after {
     background-color: var(--checkbox-icon-color, transparent);
     -webkit-mask-image: var(--checkbox-icon-mask-image, none);
     -webkit-mask-size: var(--checkbox-icon-mask-size, 100%);

@@ -22,14 +22,14 @@
   .nav-buttons-container,
 .pt-nav-header-left-sidebar-position-bottom
   .workspace-drawer.mod-left
-  .workspace-leaf-content[data-type='dangling-links']
+  .workspace-leaf-content[data-type="dangling-links"]
   .nav-header,
 .pt-nav-header-left-sidebar-position-bottom
   .workspace-split.mod-left-split
   .nav-buttons-container,
 .pt-nav-header-left-sidebar-position-bottom
   .workspace-split.mod-left-split
-  .workspace-leaf-content[data-type='dangling-links']
+  .workspace-leaf-content[data-type="dangling-links"]
   .nav-header {
   padding: var(--size-4-1);
   pointer-events: auto;
@@ -43,22 +43,22 @@
 
 .pt-nav-header-left-sidebar-position-bottom
   .workspace-drawer.mod-left
-  .workspace-leaf-content[data-type='dangling-links']
+  .workspace-leaf-content[data-type="dangling-links"]
   .nav-header,
 .pt-nav-header-left-sidebar-position-bottom
   .workspace-split.mod-left-split
-  .workspace-leaf-content[data-type='dangling-links']
+  .workspace-leaf-content[data-type="dangling-links"]
   .nav-header {
   width: fit-content;
 }
 
 .pt-nav-header-left-sidebar-position-bottom
   .workspace-drawer.mod-left
-  .workspace-leaf-content[data-type='dictionary-view']
+  .workspace-leaf-content[data-type="dictionary-view"]
   .nav-buttons-container,
 .pt-nav-header-left-sidebar-position-bottom
   .workspace-split.mod-left-split
-  .workspace-leaf-content[data-type='dictionary-view']
+  .workspace-leaf-content[data-type="dictionary-view"]
   .nav-buttons-container {
   position: fixed;
   bottom: calc(var(--size-2-3) + var(--scroll-bar-size));
@@ -70,33 +70,33 @@
   .workspace-drawer.mod-left
   :is(
     .nav-files-container,
-    .workspace-leaf-content[data-type='tag'] .tag-container,
-    .workspace-leaf-content[data-type='backlink'] .backlink-pane,
-    .workspace-leaf-content[data-type='starred'] .item-list,
-    .workspace-leaf-content[data-type='dictionary-view'] .contents,
-    .workspace-leaf-content[data-type='dangling-links']
+    .workspace-leaf-content[data-type="tag"] .tag-container,
+    .workspace-leaf-content[data-type="backlink"] .backlink-pane,
+    .workspace-leaf-content[data-type="starred"] .item-list,
+    .workspace-leaf-content[data-type="dictionary-view"] .contents,
+    .workspace-leaf-content[data-type="dangling-links"]
       .view-content
       .container,
-    .workspace-leaf-content[data-type='bookmarks'] .view-content > div,
-    .workspace-leaf-content[data-type='all-properties'] .view-content,
-    .workspace-leaf-content[data-type='properties'] .view-content,
-    .workspace-leaf-content[data-type='outline'] .view-content
+    .workspace-leaf-content[data-type="bookmarks"] .view-content > div,
+    .workspace-leaf-content[data-type="all-properties"] .view-content,
+    .workspace-leaf-content[data-type="properties"] .view-content,
+    .workspace-leaf-content[data-type="outline"] .view-content
   ),
 .pt-nav-header-left-sidebar-position-bottom
   .workspace-split.mod-left-split
   :is(
     .nav-files-container,
-    .workspace-leaf-content[data-type='tag'] .tag-container,
-    .workspace-leaf-content[data-type='backlink'] .backlink-pane,
-    .workspace-leaf-content[data-type='starred'] .item-list,
-    .workspace-leaf-content[data-type='dictionary-view'] .contents,
-    .workspace-leaf-content[data-type='dangling-links']
+    .workspace-leaf-content[data-type="tag"] .tag-container,
+    .workspace-leaf-content[data-type="backlink"] .backlink-pane,
+    .workspace-leaf-content[data-type="starred"] .item-list,
+    .workspace-leaf-content[data-type="dictionary-view"] .contents,
+    .workspace-leaf-content[data-type="dangling-links"]
       .view-content
       .container,
-    .workspace-leaf-content[data-type='bookmarks'] .view-content > div,
-    .workspace-leaf-content[data-type='all-properties'] .view-content,
-    .workspace-leaf-content[data-type='properties'] .view-content,
-    .workspace-leaf-content[data-type='outline'] .view-content
+    .workspace-leaf-content[data-type="bookmarks"] .view-content > div,
+    .workspace-leaf-content[data-type="all-properties"] .view-content,
+    .workspace-leaf-content[data-type="properties"] .view-content,
+    .workspace-leaf-content[data-type="outline"] .view-content
   ) {
   padding-bottom: calc(38px + 2 * var(--scroll-bar-size));
 }
@@ -104,7 +104,7 @@
 .is-mobile .workspace-drawer.mod-left .nav-buttons-container,
 .is-mobile
   .workspace-drawer.mod-left
-  .workspace-leaf-content[data-type='dangling-links']
+  .workspace-leaf-content[data-type="dangling-links"]
   .nav-header {
   padding: var(--size-4-2);
 }

@@ -8,7 +8,7 @@ body-neon-two .kanban-plugin {
   background-color: var(--background-secondary-alt) !important;
 }
 body-neon-two .kanban-plugin__lane-wrapper:nth-child(n)::before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -2;
   left: 50%;
@@ -24,7 +24,7 @@ body-neon-two .kanban-plugin__lane-wrapper:nth-child(n)::before {
   animation: rotate 2s linear infinite;
 }
 body-neon-two .kanban-plugin__lane-wrapper:nth-child(n)::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   left: 2px;

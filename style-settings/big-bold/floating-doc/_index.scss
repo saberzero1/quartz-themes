@@ -16,7 +16,7 @@ body {
     background-color: transparent !important;
     margin: 0px 0.5em;
   }
-  .workspace-leaf-content[data-type='markdown'] {
+  .workspace-leaf-content[data-type="markdown"] {
     max-width: var(--file-line-width) !important;
     margin: auto !important;
   }

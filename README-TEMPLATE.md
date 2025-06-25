@@ -67,7 +67,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: 'pages'
+  group: "pages"
   cancel-in-progress: false
 
 jobs:
@@ -152,7 +152,7 @@ Manually download the `_index.scss` file from the [themes directory of your choi
 Then, add the following line to your `src/styles/custom.scss` file **after** the `@use "base";` line:
 
 ```scss
-@use 'themes';
+@use "themes";
 ```
 
 > [!IMPORTANT]

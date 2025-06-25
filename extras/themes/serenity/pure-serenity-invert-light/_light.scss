@@ -1,11 +1,11 @@
 .pure-serenity-light.serenity-mode:not(.serenity-src):not(.serenity-lp):has(
-    [data-mode='source']
+    [data-mode="source"]
   ),
 .pure-serenity-light.serenity-mode.serenity-lp:has(
-    [data-mode='source'] .is-live-preview
+    [data-mode="source"] .is-live-preview
   ),
 .pure-serenity-light.serenity-mode.serenity-src:has(
-    [data-mode='source'] .markdown-source-view:not(.is-live-preview)
+    [data-mode="source"] .markdown-source-view:not(.is-live-preview)
   ) {
   --color-base-00: #000000 !important;
   --color-base-05: #000000 !important;

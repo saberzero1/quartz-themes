@@ -1,7 +1,7 @@
 body.dataview-list-style-pacman
   ul.dataview.list-view-ul
   > li:not(.task-list-item):first-of-type::before {
-  content: '\\edcf';
+  content: "\\edcf";
   color: var(--list-ol-number-color);
 }
 body.dataview-list-style-pacman
@@ -9,19 +9,19 @@ body.dataview-list-style-pacman
   > li:not(.task-list-item):not(:first-of-type):nth-of-type(2n):not(
     :nth-of-type(10n)
   )::before {
-  content: '\\eaee';
+  content: "\\eaee";
   color: var(--list-ul-disc-color);
 }
 body.dataview-list-style-pacman
   ul.dataview.list-view-ul
   > li:not(.task-list-item):not(:first-of-type):nth-of-type(2n + 1)::before {
-  content: '\\edd1';
+  content: "\\edd1";
   color: var(--list-ul-disc-color);
 }
 body.dataview-list-style-pacman
   ul.dataview.list-view-ul
   > li:not(.task-list-item):nth-of-type(10n)::before {
-  content: '\\ef29';
+  content: "\\ef29";
   color: var(--list-ol-number-color);
 }
 body.dataview-list-style-pacman ul.dataview.list-view-ul {

@@ -1,11 +1,165 @@
 :root {
+  --accent-strong: light-dark(light-dark(#efe9d9, #000000), #37291a);
+  --allow-1: light-dark(light-dark(#f93759, #ec9a3c), #fd355a);
+  --aqua: light-dark(light-dark(#30daff, #0084bc), #4dd8ef);
+  --background-accent: light-dark(light-dark(#e4ba6c, #fff), #fefcf9);
+  --background-blue: light-dark(#2f5264, #ddebf1);
+  --background-brown: light-dark(#493a3a, #e9e5e3);
+  --background-gray: light-dark(#535353, #ebeced);
+  --background-green: light-dark(#32503e, #ddedea);
+  --background-modifier-border: light-dark(
+    light-dark(#191919, #e1dfdf),
+    rgba(0, 0, 0, 0.1)
+  );
+  --background-modifier-box-shadow: light-dark(
+    light-dark(light-dark(#292929, rgba(0, 0, 0, 0.1)), rgba(0, 0, 0, 0.1)),
+    rgba(0, 0, 0, 0.1)
+  );
+  --background-modifier-cover: light-dark(
+    light-dark(
+      light-dark(rgba(0, 0, 0, 0.3), rgba(220, 220, 220, 0.4)),
+      rgba(0, 0, 0, 0.8)
+    ),
+    rgba(0, 0, 0, 0.2)
+  );
+  --background-modifier-error: light-dark(
+    light-dark(#f93759, #e68787),
+    #f5a7a2
+  );
+  --background-modifier-error-hover: light-dark(
+    light-dark(#f93758, #ff9494),
+    #fefcf9
+  );
+  --background-modifier-error-rgb: light-dark(
+    light-dark(#f93759, 230, 135, 135),
+    230,
+    135,
+    135
+  );
+  --background-modifier-form-field: light-dark(
+    light-dark(#f39ba0, #fff),
+    #ffdece
+  );
+  --background-modifier-form-field-highlighted: light-dark(
+    light-dark(#e5c7a9, #fff),
+    #f5a7a2
+  );
+  --background-modifier-success: light-dark(
+    light-dark(#f93759, #a4e7c3),
+    #ffdece
+  );
+  --background-orange: light-dark(#53422f, #faebdd);
+  --background-pink: light-dark(#533b4a, #f4dfeb);
+  --background-primary: light-dark(light-dark(#212121, #ffffff), #efe9d9);
+  --background-primary-alt: light-dark(light-dark(#f937590d, #f5f5f5), #ffdece);
+  --background-purple: light-dark(#443f57, #eae4f2);
+  --background-red: light-dark(#683c3c, #ffe3e3);
+  --background-search-result: light-dark(light-dark(#292929, #fdfdfd), #ffdece);
+  --background-secondary: light-dark(light-dark(#242424, #f0f0f0), #efe9d9);
+  --background-secondary-alt: light-dark(
+    light-dark(light-dark(#191919, var(--color-base-05)), #dddddd),
+    #efe9d9
+  );
+  --background-yellow: light-dark(#585536, #fbf3db);
+  --blue: light-dark(light-dark(#00a3b9, #2f90eb), #69a2ee);
+  --blue-green: light-dark(#3bd4da, #16bcc0);
+  --calendar-week-background-color: light-dark(
+    light-dark(transparent, #d6e6bf),
+    #ffdece
+  );
+  --calendar-week-color: light-dark(light-dark(#ffccbc, #48b432), #f5a7a2);
+  --calendar-week-hover: light-dark(light-dark(#f39ba0, #e9ffe3), #ffdece);
+  --color-accent: light-dark(
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l))
+  );
+  --color-accent-1: light-dark(
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 1),
+      calc(var(--accent-s) * 1.01),
+      calc(var(--accent-l) * 1.075)
+    )
+  );
+  --color-accent-2: light-dark(
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    )
+  );
+  --color-accent-hsl: light-dark(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l)
+  );
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-blue-rgb: light-dark(2, 122, 255, 8, 109, 221);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-cyan-rgb: light-dark(83, 223, 221, 0, 191, 188);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-green-rgb: light-dark(68, 207, 110, 8, 185, 78);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-orange-rgb: light-dark(233, 151, 63, 236, 117, 0);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-pink-rgb: light-dark(250, 153, 205, 213, 57, 132);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-purple-rgb: light-dark(168, 130, 255, 120, 82, 238);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-red-rgb: light-dark(251, 70, 76, 233, 49, 71);
+  --color-specification: light-dark(light-dark(#f93759, #0084ff), #fd355a);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-yellow-rgb: light-dark(224, 222, 113, 224, 172, 0);
+  --darkblue: light-dark(light-dark(#0040ff, #3b84e4), #5981f0);
+  --darkgreen: light-dark(light-dark(#1bbc9b, #acb5b2), #004f2d);
+  --day-planner-dot: light-dark(light-dark(#ffebec, #ffd900), #ffdece);
+  --day-planner-item-hover: light-dark(light-dark(#f39ba0, #8fccff), #f5a7a2);
+  --day-planner-line: light-dark(light-dark(#f39ba0, #ffd900), #fd355a);
+  --day-planner-pie: light-dark(light-dark(#ffccbc, #eca95c), #f5a7a2);
+  --day-planner-timeline: light-dark(light-dark(#ff9b7c, #d62f2f), #ffdece);
+  --embed-color: light-dark(light-dark(#2929297d, #468eeb27), #fd355a1a);
+  --event-item-color1: light-dark(light-dark(#ffe4bc, #65ace6), #f39ba063);
+  --event-item-color10: light-dark(light-dark(#ffccbc, #072f6b), #f39ba091);
+  --event-item-color2: light-dark(light-dark(#ffdcbc, #52a4e7), #f39ba091);
+  --event-item-color3: light-dark(light-dark(#ffd4bc, #2e96eb), #f39ba0c4);
+  --event-item-color4: light-dark(light-dark(#ffccbc, #2786da), #f39ba0);
+  --event-item-color5: light-dark(light-dark(#ffc3bc, #1275cc), #d08489);
+  --event-item-color6: light-dark(light-dark(#ffbcbc, #2664c0), #b27175);
+  --event-item-color7: light-dark(light-dark(#ffbcc4, #1652ac), #d08489);
+  --event-item-color8: light-dark(light-dark(#ffbcbc, #0c469c), #f39ba0);
+  --event-item-color9: light-dark(light-dark(#ffc3bc, #0a3c86), #f39ba0c4);
+  --folder-title: light-dark(light-dark(#fff, #000000), #37291a);
   --font-default:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Inter', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-    'Microsoft YaHei Light', sans-serif;
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Microsoft YaHei Light", sans-serif;
   --font-family-folder-file-title:
-    var(--font-text-override), Arlrdbd, 'Source Han Sans', 'Noto Sans CJK',
-    'Source Sans Pro', 'Segoe UI Emoji', sans-serif;
+    var(--font-text-override), Arlrdbd, "Source Han Sans", "Noto Sans CJK",
+    "Source Sans Pro", "Segoe UI Emoji", sans-serif;
   --font-family-h1: var(--font-text), var(--font-default);
   --font-family-h2: var(--font-text), var(--font-default);
   --font-family-h3: var(--font-text), var(--font-default);
@@ -14,20 +168,20 @@
   --font-family-h6: var(--font-text), var(--font-default);
   --font-family-list: var(--font-default);
   --font-family-major:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Inter', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-    'Microsoft YaHei Light', sans-serif;
-  --font-family-preview-edit-code: 'Consolas', 'Monaco', monospace;
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Microsoft YaHei Light", sans-serif;
+  --font-family-preview-edit-code: "Consolas", "Monaco", monospace;
   --font-family-special-tag:
-    'Lucida Handwriting', 'Dancing Script', 'Hand of Sean', 'Angelina', cursive;
+    "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina", cursive;
   --font-family-tag:
-    Bookerly, 'Inter', 'Segoe UI', 'Microsoft YaHei', STzhongsong, STSong,
-    'Segoe UI Emoji', Serif;
+    Bookerly, "Inter", "Segoe UI", "Microsoft YaHei", STzhongsong, STSong,
+    "Segoe UI Emoji", Serif;
   --font-family-title: var(--font-text, var(--font-default));
-  --font-family-vault: 'Lucida Handwriting', 'Segoe UI Emoji';
+  --font-family-vault: "Lucida Handwriting", "Segoe UI Emoji";
   --font-family-YAML:
-    'Lucida Handwriting', 'Dancing Script', 'Hand of Sean', 'Angelina', cursive;
-  --font-monospace: 'Consolas', 'Monaco', 'Source Code Pro', monospace;
+    "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina", cursive;
+  --font-monospace: "Consolas", "Monaco", "Source Code Pro", monospace;
   --font-size-code: 0.9375em;
   --font-size-edit-blockquote: 1em;
   --font-size-edit-code: 1em;
@@ -50,22 +204,173 @@
   --font-size-preview-normal: 1em;
   --font-size-tag: 1em;
   --font-size-vault-name: 0.875em;
+  --graph-arrow: light-dark(light-dark(#ffc3bc, #e25300), #980000);
+  --graph-attach: light-dark(light-dark(#ffebec, #afcfe0cc), #f5a7a2);
+  --graph-circle: light-dark(light-dark(#f39ba0, #1f78b4cc), #fd355c);
+  --graph-line: light-dark(light-dark(#ffc3bc, #dadada), #fea2c2);
+  --graph-text-color: light-dark(light-dark(#efe9d9, #696969), #37291a);
+  --graph-unresolved: light-dark(light-dark(#ffccbc, #db4e4ecc), #e87659);
+  --graphtag: light-dark(light-dark(#f39ba0, #77d425cc), #ffdece);
+  --gray-1: light-dark(light-dark(#c9b0b0, #383a42), #c4c4c4);
+  --gray-2: light-dark(light-dark(#b4b1c6, #383a42), #7c8595);
+  --green: light-dark(light-dark(#00ffc7, #4ae125), #40916c);
+  --h1-color: light-dark(light-dark(#ffccbc, #08367c), #f39ba0);
+  --h2-color: light-dark(light-dark(#ffccbc, #004faa), #f39ba0);
+  --h3-color: light-dark(light-dark(#ffccbc, #0e64bb), #f39ba0);
+  --h4-color: light-dark(light-dark(#ffccbc, #3481c5), #f39ba0);
+  --h5-color: light-dark(light-dark(#ffccbc, #59a0e2), #f39ba0);
+  --h6-color: light-dark(light-dark(#ffccbc, #88b8e6), #f39ba0);
+  --header-color: light-dark(light-dark(#f39ba0, #0e64bb), #f5a7a2);
+  --highlight-mix-blend-mode: light-dark(darken, darken);
+  --input-shadow: light-dark(
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2),
+    0 0 0 0 transparent,
+    inset 0 0 0 1px rgba(0, 0, 0, 0.12),
+    0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
+    0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent
+  );
+  --input-shadow-hover: light-dark(
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4),
+    0 0 0 0 transparent,
+    inset 0 0 0 1px rgba(0, 0, 0, 0.17),
+    0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
+    0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent
+  );
+  --interactive-accent: light-dark(light-dark(#f39ba0, #2f92e4), #f5a7a2);
+  --interactive-accent-hover: light-dark(light-dark(#f93759, #4ba8ff), #fd355a);
+  --interactive-accent-rgb: light-dark(
+    light-dark(45, 135, 211, 70, 142, 235),
+    #fd355a
+  );
+  --interactive-hover: light-dark(light-dark(#ffccbc, #dbdbdc), #ffdece);
+  --interactive-normal: light-dark(light-dark(#f39ba0, #eaeaeb), #f39ba0);
   --keyboard-height: 0px;
+  --light-purple: light-dark(#b74ff3, #d3d6fe);
+  --light-yellow: light-dark(light-dark(#ffd26c, #ab9a02), #e5e79c);
+  --list-ol-block-color: light-dark(light-dark(#f39ba0, #3573a5), #f5a7a2);
+  --list-ol-hover: light-dark(light-dark(#ffebec, #5c95e0), #980000);
+  --list-ol-number-color: light-dark(light-dark(#ffccbc, #a3bee0), #f5a7a2);
+  --list-ul-block-color: light-dark(light-dark(#f39ba0, #b9751b), #f5a7a2);
+  --list-ul-disc-color: light-dark(light-dark(#f93759, #ff7300), #fd355a);
+  --list-ul-hover: light-dark(light-dark(#ffebec, #dd922f), #980000);
   --loading-icon-delay: 400ms;
-  --mermaid-font-family: 'Comic Sans MS', 'Comic Sans', cursive;
-  --page-border: 1px solid CanvasText;
-  --page-margin: 8px auto -1px;
-  --pdfViewer-padding-bottom: 9px;
+  --mark-highlight: light-dark(light-dark(#f93759, #ffd298d8), #fd355a);
+  --mermaid-active-task-color: light-dark(
+    light-dark(#f39ba4, #44bbff),
+    #f5a7a2
+  );
+  --mermaid-font-family: "Comic Sans MS", "Comic Sans", cursive;
+  --mermaid-seq-dia-color: light-dark(light-dark(#ffebec, #76c8ff), #ffdece);
+  --mono-rgb-0: light-dark(0, 0, 0, 255, 255, 255);
+  --mono-rgb-100: light-dark(255, 255, 255, 0, 0, 0);
+  --note-cloze: light-dark(light-dark(#f93759, #000000), #fd355a);
+  --note-important: light-dark(light-dark(#f93759, #fd4141), #fd355a);
+  --orange: light-dark(light-dark(#f28d61, #db9600), #f19c79);
+  --page-border: 9px solid transparent;
+  --page-margin: 1px auto -8px;
+  --panel-border-color: light-dark(light-dark(#f93759, #dbdbdc), #fd355a);
+  --pdfViewer-padding-bottom: 0;
+  --purple: light-dark(light-dark(#b073ff, #a625a4), #8673b4);
+  --red: light-dark(light-dark(#ff9090, #f13d64), #fd355a);
+  --red-1: light-dark(light-dark(#f93759, #f16464f5), #980000);
   --safe-area-inset-bottom: env(safe-area-inset-bottom);
   --safe-area-inset-left: env(safe-area-inset-left);
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
-  --spreadHorizontalWrapped-margin-LR: 3.5px;
-  --text-family-inline-code: 'Consolas', 'Monaco', monospace;
+  --search-result-file-title-color: light-dark(
+    light-dark(#f39ba0, #2f92e4),
+    #980000
+  );
+  --search-text: light-dark(light-dark(#fff, #000000), #37291a);
+  --shadow-l: light-dark(
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
+    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2),
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
+    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2)
+  );
+  --shadow-s: light-dark(
+    0px 1px 2px rgba(0, 0, 0, 0.121),
+    0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3),
+    0px 1px 2px rgba(0, 0, 0, 0.028),
+    0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07)
+  );
+  --spreadHorizontalWrapped-margin-LR: -3.5px;
+  --stag1: light-dark(light-dark(#f39ba0, #ff0000), #fd355a);
+  --stag2: light-dark(light-dark(#ffccbc, #ff9900), #fd355a);
+  --stag3: light-dark(light-dark(#ffebec, #00a030), #fd355a);
+  --stickies-color-1: light-dark(light-dark(#f39ba0, #b3e2b3), #fd355a);
+  --stickies-color-2: light-dark(light-dark(#ffebec, #e9c6f1), #f5a7a2);
+  --table-background-color: light-dark(light-dark(#212121, #ebebeb), #ffdece);
+  --table-background-color-odd: light-dark(
+    light-dark(transparent, #ffffff),
+    #ffdece
+  );
+  --table-border-color: light-dark(light-dark(#ffebec, #555555), #fd355a);
+  --table-hover-color: light-dark(light-dark(#ffccbc0a, #2f93e47c), #f5a7a2);
+  --table-hover-raw-color: light-dark(light-dark(#292929, #2f93e42f), #ffdece);
+  --table-hover-thead-color: light-dark(light-dark(#f39ba0, #cde8ff), #f5a7a2);
+  --table-thead-background-color: light-dark(
+    light-dark(#f39ba0ad, #bfddf5),
+    #f5a7a2
+  );
+  --tag1: light-dark(light-dark(#028588, #e77e7e), #e5c7a9);
+  --tag2: light-dark(light-dark(#40916c, #dbb671), #fea2c2);
+  --tag3: light-dark(light-dark(#69a2ee, #cacc41), #69a2ee);
+  --tag4: light-dark(light-dark(#c47a5e, #5dcf53), #40916c);
+  --tag5: light-dark(light-dark(#004f2d, #49c9ce), #c47a5e);
+  --tag6: light-dark(light-dark(#f5a7a2, #6da1dd), #f5a7a2);
+  --tag7: light-dark(light-dark(#f19c79, #9270db), #ab4967);
+  --tag8: light-dark(light-dark(#02a588, #e277d9), #dbb671);
+  --tag9: light-dark(light-dark(#ab4967, #6b6b6b), #f19c79);
+  --tape-color: light-dark(light-dark(#ffccbc47, #acacac65), #acacac65);
+  --text-accent: light-dark(light-dark(#ffccbc, #007de4), #980000);
+  --text-accent-hover: light-dark(light-dark(#f93759, #4ba8ff), #37291a);
+  --text-blue: light-dark(#8ca1ff, #0083bb);
+  --text-brown: light-dark(#be9684, #855a46);
+  --text-error: light-dark(light-dark(#f93759, #e75545), #f5a7a2);
+  --text-error-hover: light-dark(light-dark(#f93759, #f86959), #fefcf9);
+  --text-faint: light-dark(light-dark(#efe9d9, #7f7f7f), #37291a);
+  --text-family-inline-code: "Consolas", "Monaco", monospace;
+  --text-gray: light-dark(#acacac, #37352f99);
+  --text-green: light-dark(#52c7b2, #00927f);
+  --text-highlight-bg: light-dark(light-dark(#f39ba0, #ffc16fd8), #f5a7a2);
+  --text-muted: light-dark(light-dark(#efe9d9, #7f7f7f), #37291a);
+  --text-normal: light-dark(light-dark(#efe9d9, #000000), #37291a);
+  --text-on-accent: light-dark(light-dark(#ffffff, #f2f2f2), #37291a);
+  --text-orange: light-dark(#ffa344, #d9730d);
+  --text-pink: light-dark(#ff6bba, #c40075);
+  --text-purple: light-dark(#b386f1, #5d1fb9);
+  --text-red: light-dark(#ff4f4f, #ff4343);
+  --text-selection: light-dark(light-dark(#e5c7a94a, #66bbaa59), #ffebec);
   --text-size-cloze: 0.9375em;
+  --text-yellow: light-dark(#ffdc51, #d4a300);
+  --theme-color: light-dark(light-dark(#ffccbc, #2f92e4), #f5a7a2);
+  --theme-color-translucent: light-dark(
+    light-dark(#f39ba0, #2f92e4a2),
+    #f5a7a2
+  );
+  --theme-color-translucent-1: light-dark(
+    light-dark(#f39ba0, #2f93e426),
+    #ffdece
+  );
   --viewer-container-height: 0;
-  --xfa-focus-outline: 2px solid CanvasText;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
+  --xfa-focus-outline: auto;
+  --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
+  --yellow: light-dark(light-dark(#fcdc00, #e48100), #ffc727);
 }
 
 body {
@@ -249,16 +554,16 @@ body {
   --font-black: 900;
   --font-bold: 700;
   --font-default:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, 'Segoe UI',
-    Roboto, 'Inter', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-interface:
     var(--font-interface-override), var(--font-interface-theme),
-    var(--default-font, '??'), var(--font-default);
-  --font-interface-override: '??';
-  --font-interface-theme: '??';
+    var(--default-font, "??"), var(--font-default);
+  --font-interface-override: "??";
+  --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid: var(--font-text);
@@ -266,24 +571,24 @@ body {
     var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default);
   --font-monospace-default:
-    ui-monospace, SFMono-Regular, 'Cascadia Mono', 'Roboto Mono',
-    'DejaVu Sans Mono', 'Liberation Mono', Menlo, Monaco, 'Consolas',
-    'Source Code Pro', monospace;
-  --font-monospace-override: '??';
-  --font-monospace-theme: '??';
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace;
+  --font-monospace-override: "??";
+  --font-monospace-theme: "??";
   --font-normal: 400;
   --font-print:
     var(--font-print-override), var(--font-text-override),
-    var(--font-text-theme), 'Arial';
-  --font-print-override: '??';
+    var(--font-text-theme), "Arial";
+  --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
   --font-text: var(--font-print);
-  --font-text-override: '??';
+  --font-text-override: "??";
   --font-text-size: 16px;
-  --font-text-theme: '??';
+  --font-text-theme: "??";
   --font-thin: 100;
   --font-ui-large: 20px;
   --font-ui-medium: 15px;
@@ -296,7 +601,7 @@ body {
   --footnote-gap: var(--size-4-1);
   --footnote-id-color: var(--text-muted);
   --footnote-id-color-no-occurrences: var(--text-faint);
-  --footnote-id-delimiter: '.';
+  --footnote-id-delimiter: ".";
   --footnote-input-background: var(--metadata-input-background);
   --footnote-input-background-active: var(--metadata-input-background-active);
   --footnote-line-height: var(--line-height-normal);
@@ -978,132 +1283,132 @@ h6 {
   padding: var(--callout-content-padding);
 }
 
-.callout[data-callout='tip'] {
+.callout[data-callout="tip"] {
   --callout-color: var(--callout-tip);
   --callout-icon: lucide-flame;
 }
 
-.callout[data-callout='warning'] {
+.callout[data-callout="warning"] {
   --callout-color: var(--callout-warning);
   --callout-icon: lucide-alert-triangle;
 }
 
-.callout[data-callout='danger'] {
+.callout[data-callout="danger"] {
   --callout-color: var(--callout-error);
   --callout-icon: lucide-zap;
 }
 
-.callout[data-callout='abstract'] {
+.callout[data-callout="abstract"] {
   --callout-color: var(--callout-summary);
   --callout-icon: lucide-clipboard-list;
 }
 
-.callout[data-callout='todo'] {
+.callout[data-callout="todo"] {
   --callout-color: var(--callout-todo);
   --callout-icon: lucide-check-circle-2;
 }
 
-.callout[data-callout='question'] {
+.callout[data-callout="question"] {
   --callout-color: var(--callout-question);
   --callout-icon: help-circle;
 }
 
-.callout[data-callout='info'] {
+.callout[data-callout="info"] {
   --callout-color: var(--callout-info);
   --callout-icon: lucide-info;
 }
 
-.callout[data-callout='success'] {
+.callout[data-callout="success"] {
   --callout-color: var(--callout-success);
   --callout-icon: lucide-check;
 }
 
-.callout[data-callout='quote'] {
+.callout[data-callout="quote"] {
   --callout-color: var(--callout-quote);
   --callout-icon: quote-glyph;
 }
 
-.callout[data-callout='example'] {
+.callout[data-callout="example"] {
   --callout-color: var(--callout-example);
   --callout-icon: lucide-list;
 }
 
-.callout[data-callout='bug'] {
+.callout[data-callout="bug"] {
   --callout-color: var(--callout-bug);
   --callout-icon: lucide-bug;
 }
 
-.callout[data-callout='summary'] {
+.callout[data-callout="summary"] {
   --callout-color: var(--callout-summary);
   --callout-icon: lucide-clipboard-list;
 }
 
-.callout[data-callout='tldr'] {
+.callout[data-callout="tldr"] {
   --callout-color: var(--callout-summary);
   --callout-icon: lucide-clipboard-list;
 }
 
-.callout[data-callout='important'] {
+.callout[data-callout="important"] {
   --callout-color: var(--callout-important);
   --callout-icon: lucide-flame;
 }
 
-.callout[data-callout='hint'] {
+.callout[data-callout="hint"] {
   --callout-color: var(--callout-tip);
   --callout-icon: lucide-flame;
 }
 
-.callout[data-callout='check'] {
+.callout[data-callout="check"] {
   --callout-color: var(--callout-success);
   --callout-icon: lucide-check;
 }
 
-.callout[data-callout='done'] {
+.callout[data-callout="done"] {
   --callout-color: var(--callout-success);
   --callout-icon: lucide-check;
 }
 
-.callout[data-callout='help'] {
+.callout[data-callout="help"] {
   --callout-color: var(--callout-question);
   --callout-icon: help-circle;
 }
 
-.callout[data-callout='faq'] {
+.callout[data-callout="faq"] {
   --callout-color: var(--callout-question);
   --callout-icon: help-circle;
 }
 
-.callout[data-callout='caution'] {
+.callout[data-callout="caution"] {
   --callout-color: var(--callout-warning);
   --callout-icon: lucide-alert-triangle;
 }
 
-.callout[data-callout='attention'] {
+.callout[data-callout="attention"] {
   --callout-color: var(--callout-warning);
   --callout-icon: lucide-alert-triangle;
 }
 
-.callout[data-callout='failure'] {
+.callout[data-callout="failure"] {
   --callout-color: var(--callout-fail);
   --callout-icon: lucide-x;
 }
 
-.callout[data-callout='error'] {
+.callout[data-callout="error"] {
   --callout-color: var(--callout-error);
   --callout-icon: lucide-zap;
 }
 
-.callout[data-callout='fail'] {
+.callout[data-callout="fail"] {
   --callout-color: var(--callout-fail);
   --callout-icon: lucide-x;
 }
 
-.callout[data-callout='missing'] {
+.callout[data-callout="missing"] {
   --callout-color: var(--callout-fail);
   --callout-icon: lucide-x;
 }
 
-.callout[data-callout='cite'] {
+.callout[data-callout="cite"] {
   --callout-color: var(--callout-quote);
   --callout-icon: quote-glyph;
 }
@@ -1123,7 +1428,7 @@ h6 {
 }
 
 .callout-icon::after {
-  content: '\200B';
+  content: "\200B";
 }
 
 .callout-fold {
@@ -1133,7 +1438,7 @@ h6 {
 }
 
 .callout-fold::after {
-  content: '\200B';
+  content: "\200B";
 }
 
 .callout-fold .svg-icon {
@@ -1220,7 +1525,7 @@ a.tag {
   text-decoration: var(--tag-decoration);
 }
 
-input[type='search'] {
+input[type="search"] {
   -webkit-app-region: no-drag;
   background: var(--background-modifier-form-field);
   border: var(--input-border-width) solid var(--background-modifier-border);
@@ -1348,7 +1653,7 @@ input[type='search'] {
 }
 
 .tree-item-self:before {
-  content: '\200B';
+  content: "\200B";
 }
 
 .tree-item-self.mod-collapsible {
@@ -1400,7 +1705,7 @@ input[type='search'] {
 }
 
 .tree-item-self .tree-item-icon:before {
-  content: '\200b';
+  content: "\200b";
 }
 
 .tree-item-self .tree-item-icon .svg-icon:not(.right-triangle) {
@@ -1480,7 +1785,7 @@ svg.svg-icon {
   padding: var(--size-2-2);
 }
 
-.clickable-icon[aria-disabled='true'] {
+.clickable-icon[aria-disabled="true"] {
   background-color: unset;
   color: var(--text-muted);
   opacity: 0.4;

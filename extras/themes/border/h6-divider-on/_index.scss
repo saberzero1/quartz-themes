@@ -4,7 +4,7 @@ body.h6-divider-on
     .markdown-preview-sizer > div > h6,
     .HyperMD-header-6
   )::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 1px;
   width: 100%;
@@ -19,7 +19,7 @@ body.h6-divider-on
 }
 
 body.h6-divider-on h6::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 1px;
   width: 100%;

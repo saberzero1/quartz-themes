@@ -113,7 +113,7 @@ body {
   --code-value: var(--color-orange);
   --canvas-color-6: var(--color-accent-rgb);
   --text-highlight-bg-rgb: var(--highlight-color);
-  --metadata-icon: '📜';
+  --metadata-icon: "📜";
 }
 
 .theme-dark {
@@ -169,7 +169,7 @@ body {
   --code-value: var(--color-orange-alt);
   --canvas-color-6: var(--color-accent-rgb);
   --text-highlight-bg-rgb: var(--highlight-color);
-  --metadata-icon: '📄';
+  --metadata-icon: "📄";
 }
 
 /* live preview text wraps in the same way and occupies the same space than read mode.
@@ -296,9 +296,9 @@ body.is-focused .workspace-tabs.mod-top-left-space {
 /* reduce other panels padding  */
 .backlink-pane,
 .tag-container,
-.workspace-leaf-content[data-type='outline'] .view-content,
-.workspace-leaf-content[data-type='bookmarks'] .view-content,
-.workspace-leaf-content[data-type='all-properties'] .view-content {
+.workspace-leaf-content[data-type="outline"] .view-content,
+.workspace-leaf-content[data-type="bookmarks"] .view-content,
+.workspace-leaf-content[data-type="all-properties"] .view-content {
   padding: var(--size-4-1) var(--size-4-3) var(--size-4-8);
 }
 
@@ -339,7 +339,7 @@ div:has(> .cm-hmd-frontmatter),
 }
 
 /* change tag padding y inside properties */
-.metadata-property[data-property-key='tags'] {
+.metadata-property[data-property-key="tags"] {
   --tag-padding-y: 0.25em;
 }
 
@@ -556,7 +556,7 @@ ul > li.task-list-item .task-list-item-checkbox {
 }
 .markdown-source-view .callout ul > li:not(.task-list-item)::before {
   position: absolute;
-  content: '​';
+  content: "​";
   pointer-events: none;
   color: var(--list-marker-color);
   border-radius: var(--list-bullet-radius);
@@ -636,7 +636,7 @@ pre.language-jsx {
 }
 
 /* move mathjax to left and remove extra space in both modes */
-.math-block mjx-container[jax='CHTML'][display='true'] {
+.math-block mjx-container[jax="CHTML"][display="true"] {
   display: inline-block;
   line-height: normal;
   overflow-x: initial;
@@ -703,8 +703,8 @@ pre.language-jsx {
 }
 
 /* center embed images in both modes, needs to be !important for external images in live preview */
-.markdown-source-view.mod-cm6 img[alt*='center'],
-.markdown-reading-view img[alt*='center'] {
+.markdown-source-view.mod-cm6 img[alt*="center"],
+.markdown-reading-view img[alt*="center"] {
   margin-right: auto !important;
   margin-left: auto !important;
   display: block;
@@ -724,7 +724,7 @@ pre.language-jsx {
 .block-language-dataview ul > li:not(.task-list-item)::before,
 .block-language-dataviewjs ul > li:not(.task-list-item)::before {
   position: absolute;
-  content: '​';
+  content: "​";
   pointer-events: none;
   color: var(--list-marker-color);
   border-radius: var(--list-bullet-radius);

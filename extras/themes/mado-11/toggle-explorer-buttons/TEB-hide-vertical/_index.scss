@@ -1,12 +1,12 @@
 body:not(.is-mobile):is(:not(.css-settings-manager), .TEB-hide-vertical)
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .nav-buttons-container {
   opacity: 0;
   transition: opacity 0.1s;
 }
 
 body:not(.is-mobile):is(:not(.css-settings-manager), .TEB-hide-vertical)
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .nav-buttons-container {
   flex-direction: column;
   position: absolute;
@@ -26,7 +26,7 @@ body:not(.is-mobile):is(:not(.css-settings-manager), .TEB-hide-vertical)
 body:not(.is-mobile).css-settings-manager.TEB-hide-vertical:not(
     .toggle-sidebar-buttons
   )
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .nav-buttons-container {
   left: 13px;
   right: unset;
@@ -37,13 +37,13 @@ body:not(.is-mobile).css-settings-manager.TEB-hide-vertical:not(
 body.mod-macos:not(.is-mobile).css-settings-manager.TEB-hide-vertical:not(
     .toggle-sidebar-buttons
   )
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .nav-buttons-container {
   left: var(--frame-left-space);
 }
 
 body:not(.is-mobile):is(:not(.css-settings-manager), .TEB-hide-vertical)
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .nav-buttons-container
   .nav-action-button {
   padding: 11px;

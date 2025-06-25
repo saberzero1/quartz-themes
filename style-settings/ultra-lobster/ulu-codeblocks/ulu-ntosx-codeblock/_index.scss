@@ -3,16 +3,16 @@
   .cm-line {
   max-width: 100vh;
 }
-.ulu-ntosx-codeblock pre[class*='language-']::before {
+.ulu-ntosx-codeblock pre[class*="language-"]::before {
   display: block;
-  content: '';
+  content: "";
   height: 32px;
   background: var(--text-normal);
   box-shadow: 0 calc(-1 * var(--size-4-4)) 0 var(--size-4-4) var(--text-normal);
 }
-.ulu-ntosx-codeblock pre[class*='language-']::after {
+.ulu-ntosx-codeblock pre[class*="language-"]::after {
   display: block;
-  content: '';
+  content: "";
   height: 18px;
   width: 18px;
   background: var(--color-red);
@@ -47,7 +47,7 @@
 }
 .ulu-ntosx-codeblock .cm-s-obsidian div.HyperMD-codeblock-begin-bg::after {
   display: block;
-  content: '';
+  content: "";
   height: 18px;
   width: 18px;
   background: var(--color-red);

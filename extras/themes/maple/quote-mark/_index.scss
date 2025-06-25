@@ -7,7 +7,7 @@ body.quote-theme.quote-theme blockquote::before {
   font-size: 3rem;
   font-family: Source Code Pro;
   line-height: 1;
-  content: '“' !important;
+  content: "“" !important;
   background-color: transparent;
   color: var(--text-muted);
   top: calc(

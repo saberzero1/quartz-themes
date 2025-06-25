@@ -109,7 +109,7 @@ body.background-image-settings-command-palette-switch
   border-bottom-left-radius: 20px;
 }
 
-body.color-scheme-options-simplicity-topaz [class='menu'] {
+body.color-scheme-options-simplicity-topaz [class="menu"] {
   animation: 0.2s popup forwards;
   border-radius: 10px;
   box-shadow: var(--window-shadow2);
@@ -149,7 +149,7 @@ body.color-scheme-options-simplicity-topaz:not(.disable-auto-hide-header)
   .workspace-tab-header-container
   + .workspace-tab-container
   .workspace-leaf
-  .workspace-leaf-content[data-type='file-tree-view']
+  .workspace-leaf-content[data-type="file-tree-view"]
   .view-content
   .file-tree-header-fixed {
   position: relative;
@@ -161,7 +161,7 @@ body.color-scheme-options-simplicity-topaz:not(.disable-auto-hide-header)
   .workspace-tab-header-container:hover
   + .workspace-tab-container
   .workspace-leaf
-  .workspace-leaf-content[data-type='file-tree-view']
+  .workspace-leaf-content[data-type="file-tree-view"]
   .view-content
   .file-tree-header-fixed {
   margin-top: 0;
@@ -172,7 +172,7 @@ body.color-scheme-options-simplicity-topaz:not(.disable-auto-hide-header)
   .workspace-tab-header-container
   + .workspace-tab-container
   .workspace-leaf
-  .workspace-leaf-content[data-type='file-tree-view']
+  .workspace-leaf-content[data-type="file-tree-view"]
   .view-content
   .file-tree-header-fixed:hover {
   margin-top: 0;

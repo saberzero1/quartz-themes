@@ -15,7 +15,7 @@ body.theme-light {
 .anp-colorful-frame.anp-card-layout:not(
     .anp-card-layout-filebrowser
   ).theme-light
-  .workspace-leaf-content[data-type='file-explorer'] {
+  .workspace-leaf-content[data-type="file-explorer"] {
   --tab-text-color: var(--text-normal);
   --tab-text-color-focused: var(--text-normal);
   --tab-text-color-focused-active: var(--text-normal);

@@ -4,7 +4,7 @@ Last Update:
 2021-03-11 12:06
 
 :root {
-  --font-monospace: 'Source Code Pro', monospace;
+  --font-monospace: "Source Code Pro", monospace;
 }
 
 .theme-dark {
@@ -115,10 +115,10 @@ Last Update:
 
 /* ------------ other basic theme configurations ------------*/
 
-.theme-dark code[class*='language-'],
-.theme-dark pre[class*='language-'],
-.theme-light code[class*='language-'],
-.theme-light pre[class*='language-'] {
+.theme-dark code[class*="language-"],
+.theme-dark pre[class*="language-"],
+.theme-light code[class*="language-"],
+.theme-light pre[class*="language-"] {
   text-shadow: none !important;
   background-color: var(--pre-code) !important;
 }

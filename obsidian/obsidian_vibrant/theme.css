@@ -221,23 +221,23 @@ ul > li::marker,
 
 /* Checkbox Colors */
 
-input[type='checkbox'] {
+input[type="checkbox"] {
   background-color: var(--text-bold);
   border-radius: 3px;
   border: 0px solid !important;
   transition: 0.3s;
 }
 
-input[type='checkbox']:checked {
+input[type="checkbox"]:checked {
   border-color: transparent;
   background-color: var(--text-link);
 }
 
-input[type='checkbox']:checked::after {
+input[type="checkbox"]:checked::after {
   padding: 1px;
 }
 
-input[type='checkbox']:checked:hover {
+input[type="checkbox"]:checked:hover {
   border-color: transparent;
   background-color: var(--text-link);
 }
@@ -308,7 +308,7 @@ input[type='checkbox']:checked:hover {
   opacity: 1;
 }
 
-.clickable-icon[aria-disabled='true'] {
+.clickable-icon[aria-disabled="true"] {
   opacity: 0;
 }
 
@@ -467,17 +467,17 @@ hr.workspace-leaf-resize-handle {
   font-size: larger;
 }
 
-input[type='text'],
-input[type='text']:focus,
-input[type='search']:focus {
+input[type="text"],
+input[type="text"]:focus,
+input[type="search"]:focus {
   background-color: var(--background-primary);
   border: 2px solid var(--accent-color-borders);
 }
 
-input[type='text']:hover,
-input[type='search']:hover,
-input[type='text']:focus,
-input[type='search']:focus {
+input[type="text"]:hover,
+input[type="search"]:hover,
+input[type="text"]:focus,
+input[type="search"]:focus {
   color: var(--text-normal);
   background-color: var(--background-primary);
   border: 2px solid var(--accent-color-text) !important;
@@ -659,17 +659,17 @@ body:not(.is-phone) .community-item.is-selected .community-item-author {
   background-color: var(--background-primary);
 }
 
-.canvas-node-resizer[data-resize='left'],
-.canvas-node-resizer[data-resize='right'],
-.canvas-node-resizer[data-resize='top'],
-.canvas-node-resizer[data-resize='bottom'] {
+.canvas-node-resizer[data-resize="left"],
+.canvas-node-resizer[data-resize="right"],
+.canvas-node-resizer[data-resize="top"],
+.canvas-node-resizer[data-resize="bottom"] {
   color: var(--accent-color-text);
   opacity: 1;
   stroke-width: 3px;
   stroke: #00ddff;
 }
 
-.theme-dark .workspace-leaf-content[data-type='canvas'] .view-content {
+.theme-dark .workspace-leaf-content[data-type="canvas"] .view-content {
   --theme: 255, 255, 255;
 }
 
@@ -746,86 +746,86 @@ body:not(.is-phone) .community-item.is-selected .community-item-author {
   background-color: var(--background-secondary);
 }
 
-.callout:is([data-callout='note']) {
+.callout:is([data-callout="note"]) {
   border-color: #4187ff;
 }
 .callout:is(
-    [data-callout='abstract'],
-    [data-callout='summary'],
-    [data-callout='tldr']
+    [data-callout="abstract"],
+    [data-callout="summary"],
+    [data-callout="tldr"]
   ) {
   border-color: #9de1ff;
 }
-.callout:is([data-callout='info'], [data-callout='todo']) {
+.callout:is([data-callout="info"], [data-callout="todo"]) {
   border-color: #00ddff;
 }
 .callout:is(
-    [data-callout='tip'],
-    [data-callout='hint'],
-    [data-callout='important']
+    [data-callout="tip"],
+    [data-callout="hint"],
+    [data-callout="important"]
   ) {
   border-color: #00ffe5;
 }
 .callout:is(
-    [data-callout='success'],
-    [data-callout='check'],
-    [data-callout='done']
+    [data-callout="success"],
+    [data-callout="check"],
+    [data-callout="done"]
   ) {
   border-color: #00ff62;
 }
 .callout:is(
-    [data-callout='question'],
-    [data-callout='help'],
-    [data-callout='faq']
+    [data-callout="question"],
+    [data-callout="help"],
+    [data-callout="faq"]
   ) {
   border-color: #62ff00;
 }
 .callout:is(
-    [data-callout='warning'],
-    [data-callout='caution'],
-    [data-callout='attention']
+    [data-callout="warning"],
+    [data-callout="caution"],
+    [data-callout="attention"]
   ) {
   border-color: #ff9500;
 }
 .callout:is(
-    [data-callout='failure'],
-    [data-callout='fail'],
-    [data-callout='missing']
+    [data-callout="failure"],
+    [data-callout="fail"],
+    [data-callout="missing"]
   ) {
   border-color: #ff0000;
 }
-.callout:is([data-callout='danger'], [data-callout='error']) {
+.callout:is([data-callout="danger"], [data-callout="error"]) {
   border-color: #ff0033;
 }
-.callout[data-callout='bug'] {
+.callout[data-callout="bug"] {
   border-color: #ff005d;
 }
-.callout[data-callout='example'] {
+.callout[data-callout="example"] {
   border-color: #9e77ff;
 }
-.callout:is([data-callout='quote'], [data-callout='cite']) {
+.callout:is([data-callout="quote"], [data-callout="cite"]) {
   border-color: var(--text-normal);
 }
 
-.callout:is([data-callout='note']) > .callout-title {
+.callout:is([data-callout="note"]) > .callout-title {
   color: #4187ff;
 }
-.callout:is([data-callout='note']) > .callout-title .callout-icon .svg-icon {
+.callout:is([data-callout="note"]) > .callout-title .callout-icon .svg-icon {
   stroke: #4187ff;
 }
 
 .callout:is(
-    [data-callout='abstract'],
-    [data-callout='summary'],
-    [data-callout='tldr']
+    [data-callout="abstract"],
+    [data-callout="summary"],
+    [data-callout="tldr"]
   )
   > .callout-title {
   color: #9de1ff;
 }
 .callout:is(
-    [data-callout='abstract'],
-    [data-callout='summary'],
-    [data-callout='tldr']
+    [data-callout="abstract"],
+    [data-callout="summary"],
+    [data-callout="tldr"]
   )
   > .callout-title
   .callout-icon
@@ -834,10 +834,10 @@ body:not(.is-phone) .community-item.is-selected .community-item-author {
   stroke: #9de1ff;
 }
 
-.callout:is([data-callout='info'], [data-callout='todo']) > .callout-title {
+.callout:is([data-callout="info"], [data-callout="todo"]) > .callout-title {
   color: #00ddff;
 }
-.callout:is([data-callout='info'], [data-callout='todo'])
+.callout:is([data-callout="info"], [data-callout="todo"])
   > .callout-title
   .callout-icon
   .svg-icon
@@ -846,17 +846,17 @@ body:not(.is-phone) .community-item.is-selected .community-item-author {
 }
 
 .callout:is(
-    [data-callout='tip'],
-    [data-callout='hint'],
-    [data-callout='important']
+    [data-callout="tip"],
+    [data-callout="hint"],
+    [data-callout="important"]
   )
   > .callout-title {
   color: #00ffe5;
 }
 .callout:is(
-    [data-callout='tip'],
-    [data-callout='hint'],
-    [data-callout='important']
+    [data-callout="tip"],
+    [data-callout="hint"],
+    [data-callout="important"]
   )
   > .callout-title
   .callout-icon
@@ -866,17 +866,17 @@ body:not(.is-phone) .community-item.is-selected .community-item-author {
 }
 
 .callout:is(
-    [data-callout='success'],
-    [data-callout='check'],
-    [data-callout='done']
+    [data-callout="success"],
+    [data-callout="check"],
+    [data-callout="done"]
   )
   > .callout-title {
   color: #00ff62;
 }
 .callout:is(
-    [data-callout='success'],
-    [data-callout='check'],
-    [data-callout='done']
+    [data-callout="success"],
+    [data-callout="check"],
+    [data-callout="done"]
   )
   > .callout-title
   .callout-icon
@@ -886,17 +886,17 @@ body:not(.is-phone) .community-item.is-selected .community-item-author {
 }
 
 .callout:is(
-    [data-callout='question'],
-    [data-callout='help'],
-    [data-callout='faq']
+    [data-callout="question"],
+    [data-callout="help"],
+    [data-callout="faq"]
   )
   > .callout-title {
   color: #62ff00;
 }
 .callout:is(
-    [data-callout='question'],
-    [data-callout='help'],
-    [data-callout='faq']
+    [data-callout="question"],
+    [data-callout="help"],
+    [data-callout="faq"]
   )
   > .callout-title
   .callout-icon
@@ -906,17 +906,17 @@ body:not(.is-phone) .community-item.is-selected .community-item-author {
 }
 
 .callout:is(
-    [data-callout='warning'],
-    [data-callout='caution'],
-    [data-callout='attention']
+    [data-callout="warning"],
+    [data-callout="caution"],
+    [data-callout="attention"]
   )
   > .callout-title {
   color: #ff9500;
 }
 .callout:is(
-    [data-callout='warning'],
-    [data-callout='caution'],
-    [data-callout='attention']
+    [data-callout="warning"],
+    [data-callout="caution"],
+    [data-callout="attention"]
   )
   > .callout-title
   .callout-icon
@@ -926,17 +926,17 @@ body:not(.is-phone) .community-item.is-selected .community-item-author {
 }
 
 .callout:is(
-    [data-callout='failure'],
-    [data-callout='fail'],
-    [data-callout='missing']
+    [data-callout="failure"],
+    [data-callout="fail"],
+    [data-callout="missing"]
   )
   > .callout-title {
   color: #ff0000;
 }
 .callout:is(
-    [data-callout='failure'],
-    [data-callout='fail'],
-    [data-callout='missing']
+    [data-callout="failure"],
+    [data-callout="fail"],
+    [data-callout="missing"]
   )
   > .callout-title
   .callout-icon
@@ -945,10 +945,10 @@ body:not(.is-phone) .community-item.is-selected .community-item-author {
   stroke: #ff0000;
 }
 
-.callout:is([data-callout='danger'], [data-callout='error']) > .callout-title {
+.callout:is([data-callout="danger"], [data-callout="error"]) > .callout-title {
   color: #ff0033;
 }
-.callout:is([data-callout='danger'], [data-callout='error'])
+.callout:is([data-callout="danger"], [data-callout="error"])
   > .callout-title
   .callout-icon
   .svg-icon
@@ -956,21 +956,21 @@ body:not(.is-phone) .community-item.is-selected .community-item-author {
   stroke: #ff0033;
 }
 
-.callout[data-callout='bug'] > .callout-title {
+.callout[data-callout="bug"] > .callout-title {
   color: #ff005d;
 }
-.callout[data-callout='bug'] > .callout-title .callout-icon .svg-icon * {
+.callout[data-callout="bug"] > .callout-title .callout-icon .svg-icon * {
   stroke: #ff005d;
 }
 
-.callout[data-callout='example'] > .callout-title {
+.callout[data-callout="example"] > .callout-title {
   color: #9e77ff;
 }
-.callout[data-callout='example'] > .callout-title .callout-icon .svg-icon * {
+.callout[data-callout="example"] > .callout-title .callout-icon .svg-icon * {
   stroke: #9e77ff;
 }
 
-.callout:is([data-callout='quote'], [data-callout='cite']) > .callout-title {
+.callout:is([data-callout="quote"], [data-callout="cite"]) > .callout-title {
   color: var(--text-normal);
 }
 
@@ -1137,154 +1137,154 @@ body:not(.is-phone) .community-item.is-selected .community-item-author {
   }
 
   .callout:is(
-      [data-callout='note'],
-      [data-callout='abstract'],
-      [data-callout='summary'],
-      [data-callout='tldr'],
-      [data-callout='info'],
-      [data-callout='todo'],
-      [data-callout='tip'],
-      [data-callout='hint'],
-      [data-callout='important'],
-      [data-callout='success'],
-      [data-callout='check'],
-      [data-callout='done'],
-      [data-callout='question'],
-      [data-callout='help'],
-      [data-callout='faq'],
-      [data-callout='warning'],
-      [data-callout='caution'],
-      [data-callout='attention'],
-      [data-callout='failure'],
-      [data-callout='fail'],
-      [data-callout='missing'],
-      [data-callout='danger'],
-      [data-callout='error'],
-      [data-callout='bug'],
-      [data-callout='example'],
-      [data-callout='quote'],
-      [data-callout='cite']
+      [data-callout="note"],
+      [data-callout="abstract"],
+      [data-callout="summary"],
+      [data-callout="tldr"],
+      [data-callout="info"],
+      [data-callout="todo"],
+      [data-callout="tip"],
+      [data-callout="hint"],
+      [data-callout="important"],
+      [data-callout="success"],
+      [data-callout="check"],
+      [data-callout="done"],
+      [data-callout="question"],
+      [data-callout="help"],
+      [data-callout="faq"],
+      [data-callout="warning"],
+      [data-callout="caution"],
+      [data-callout="attention"],
+      [data-callout="failure"],
+      [data-callout="fail"],
+      [data-callout="missing"],
+      [data-callout="danger"],
+      [data-callout="error"],
+      [data-callout="bug"],
+      [data-callout="example"],
+      [data-callout="quote"],
+      [data-callout="cite"]
     ) {
     border: 2px solid var(--pdf-text) !important;
   }
 
-  .callout:is([data-callout='note']) > .callout-title .callout-icon .svg-icon,
+  .callout:is([data-callout="note"]) > .callout-title .callout-icon .svg-icon,
   .callout:is(
-      [data-callout='abstract'],
-      [data-callout='summary'],
-      [data-callout='tldr']
+      [data-callout="abstract"],
+      [data-callout="summary"],
+      [data-callout="tldr"]
     )
     > .callout-title
     .callout-icon
     .svg-icon
     *,
-  .callout:is([data-callout='info'], [data-callout='todo'])
+  .callout:is([data-callout="info"], [data-callout="todo"])
     > .callout-title
     .callout-icon
     .svg-icon
     *,
   .callout:is(
-      [data-callout='tip'],
-      [data-callout='hint'],
-      [data-callout='important']
-    )
-    > .callout-title
-    .callout-icon
-    .svg-icon
-    *,
-  .callout:is(
-      [data-callout='success'],
-      [data-callout='check'],
-      [data-callout='done']
+      [data-callout="tip"],
+      [data-callout="hint"],
+      [data-callout="important"]
     )
     > .callout-title
     .callout-icon
     .svg-icon
     *,
   .callout:is(
-      [data-callout='question'],
-      [data-callout='help'],
-      [data-callout='faq']
+      [data-callout="success"],
+      [data-callout="check"],
+      [data-callout="done"]
     )
     > .callout-title
     .callout-icon
     .svg-icon
     *,
   .callout:is(
-      [data-callout='warning'],
-      [data-callout='caution'],
-      [data-callout='attention']
+      [data-callout="question"],
+      [data-callout="help"],
+      [data-callout="faq"]
     )
     > .callout-title
     .callout-icon
     .svg-icon
     *,
   .callout:is(
-      [data-callout='failure'],
-      [data-callout='fail'],
-      [data-callout='missing']
+      [data-callout="warning"],
+      [data-callout="caution"],
+      [data-callout="attention"]
     )
     > .callout-title
     .callout-icon
     .svg-icon
     *,
-  .callout:is([data-callout='danger'], [data-callout='error'])
+  .callout:is(
+      [data-callout="failure"],
+      [data-callout="fail"],
+      [data-callout="missing"]
+    )
     > .callout-title
     .callout-icon
     .svg-icon
     *,
-  .callout[data-callout='bug'] > .callout-title .callout-icon .svg-icon *,
-  .callout[data-callout='example'] > .callout-title .callout-icon .svg-icon * {
+  .callout:is([data-callout="danger"], [data-callout="error"])
+    > .callout-title
+    .callout-icon
+    .svg-icon
+    *,
+  .callout[data-callout="bug"] > .callout-title .callout-icon .svg-icon *,
+  .callout[data-callout="example"] > .callout-title .callout-icon .svg-icon * {
     stroke: var(--pdf-text);
   }
 
   .callout:is(
-      [data-callout='quote'],
-      [data-callout='cite'],
-      [data-callout='note']
+      [data-callout="quote"],
+      [data-callout="cite"],
+      [data-callout="note"]
     )
     > .callout-title,
-  .callout[data-callout='example'] > .callout-title,
-  .callout[data-callout='bug'] > .callout-title,
-  .callout:is([data-callout='danger'], [data-callout='error']) > .callout-title,
+  .callout[data-callout="example"] > .callout-title,
+  .callout[data-callout="bug"] > .callout-title,
+  .callout:is([data-callout="danger"], [data-callout="error"]) > .callout-title,
   .callout:is(
-      [data-callout='failure'],
-      [data-callout='fail'],
-      [data-callout='missing']
-    )
-    > .callout-title,
-  .callout:is(
-      [data-callout='warning'],
-      [data-callout='caution'],
-      [data-callout='attention']
+      [data-callout="failure"],
+      [data-callout="fail"],
+      [data-callout="missing"]
     )
     > .callout-title,
   .callout:is(
-      [data-callout='question'],
-      [data-callout='help'],
-      [data-callout='faq']
+      [data-callout="warning"],
+      [data-callout="caution"],
+      [data-callout="attention"]
     )
     > .callout-title,
   .callout:is(
-      [data-callout='success'],
-      [data-callout='check'],
-      [data-callout='done']
+      [data-callout="question"],
+      [data-callout="help"],
+      [data-callout="faq"]
     )
     > .callout-title,
   .callout:is(
-      [data-callout='tip'],
-      [data-callout='hint'],
-      [data-callout='important']
+      [data-callout="success"],
+      [data-callout="check"],
+      [data-callout="done"]
     )
     > .callout-title,
-  .callout:is([data-callout='info'], [data-callout='todo']) > .callout-title,
   .callout:is(
-      [data-callout='abstract'],
-      [data-callout='summary'],
-      [data-callout='tldr']
+      [data-callout="tip"],
+      [data-callout="hint"],
+      [data-callout="important"]
     )
     > .callout-title,
-  callout:is([data-callout='note']) > .callout-title {
+  .callout:is([data-callout="info"], [data-callout="todo"]) > .callout-title,
+  .callout:is(
+      [data-callout="abstract"],
+      [data-callout="summary"],
+      [data-callout="tldr"]
+    )
+    > .callout-title,
+  callout:is([data-callout="note"]) > .callout-title {
     color: var(--pdf-text);
   }
 

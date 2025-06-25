@@ -1,7 +1,7 @@
 .nav-files-container {
   margin-bottom: 40px;
 }
-.clickable-icon[aria-label='New note'] {
+.clickable-icon[aria-label="New note"] {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -14,15 +14,15 @@
   text-overflow: ellipsis;
   display: inline-block;
 }
-.clickable-icon[aria-label='New note']:hover,
-.clickable-icon[aria-label='New note']::after {
+.clickable-icon[aria-label="New note"]:hover,
+.clickable-icon[aria-label="New note"]::after {
   background-color: var(--nav-item-background-hover);
   color: var(--nav-item-color-hover);
 }
-.clickable-icon[aria-label='New note'] svg {
+.clickable-icon[aria-label="New note"] svg {
   display: none;
 }
-.clickable-icon[aria-label='New note']::after {
+.clickable-icon[aria-label="New note"]::after {
   content: attr(aria-label);
   text-overflow: ellipsis;
   font-weight: 600;

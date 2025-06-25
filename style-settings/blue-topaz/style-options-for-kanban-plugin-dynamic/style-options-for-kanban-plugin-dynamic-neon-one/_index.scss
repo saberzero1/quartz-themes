@@ -18,7 +18,7 @@ body-neon-one .kanban-plugin__lane-wrapper:nth-child(n) {
     linear-gradient(transparent, rgba(0, 0, 0, 0.4));
 }
 body-neon-one .kanban-plugin__lane-wrapper:nth-child(n)::before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -2;
   left: 50%;
@@ -34,7 +34,7 @@ body-neon-one .kanban-plugin__lane-wrapper:nth-child(n)::before {
   animation: rotate 2s linear infinite;
 }
 body-neon-one .kanban-plugin__lane-wrapper:nth-child(n)::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   left: 2px;

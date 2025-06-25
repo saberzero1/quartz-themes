@@ -11,7 +11,7 @@
 }
 
 .table-numbers table:not(.calendar) > thead > tr > th:first-child::before {
-  content: ' ';
+  content: " ";
   padding-right: var(--table-numbers-padding-right);
   display: inline-block;
   min-width: 2em;
@@ -59,7 +59,7 @@
   > tr
   > td:first-child::before {
   counter-increment: section;
-  content: counter(section) ' ';
+  content: counter(section) " ";
   text-align: center;
   padding-right: var(--table-numbers-padding-right);
   display: inline-block;
@@ -107,7 +107,7 @@
 }
 
 .table-numbers .bases-table .bases-tr > .bases-td:first-child::before {
-  content: ' ';
+  content: " ";
   padding-right: var(--table-numbers-padding-right);
   display: inline-block;
   min-width: 2em;
@@ -119,7 +119,7 @@
   .bases-tr
   > .bases-td:first-child::before {
   counter-increment: section;
-  content: counter(section) ' ';
+  content: counter(section) " ";
   text-align: center;
   color: var(--text-faint);
   font-variant-numeric: tabular-nums;

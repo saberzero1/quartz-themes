@@ -1,7 +1,7 @@
 body {
-  --font-monospace-theme: 'Roboto Mono *', monospace;
-  --font-text-theme: 'Roboto Mono *', monospace;
-  --font-interface-theme: 'Roboto Mono *', monospace;
+  --font-monospace-theme: "Roboto Mono *", monospace;
+  --font-text-theme: "Roboto Mono *", monospace;
+  --font-interface-theme: "Roboto Mono *", monospace;
   --radius-s: 0px;
   --radius-m: 0px;
   --radius-l: 0px;

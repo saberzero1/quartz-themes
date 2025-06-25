@@ -932,46 +932,46 @@ button.button-default {
 }
 
 /* CONTEXTUAL TYPOGRAPHY */
-.markdown-preview-view div[data-tag-name='h1']:first-child {
+.markdown-preview-view div[data-tag-name="h1"]:first-child {
   margin-top: 0;
 }
 
-.markdown-preview-view div[data-tag-name='h1'] + div > h1,
-.markdown-preview-view div[data-tag-name='h1'] + div > h2,
-.markdown-preview-view div[data-tag-name='h1'] + div > h3,
-.markdown-preview-view div[data-tag-name='h1'] + div > h4,
-.markdown-preview-view div[data-tag-name='h1'] + div > h5,
-.markdown-preview-view div[data-tag-name='h1'] + div > h6,
-.markdown-preview-view div[data-tag-name='h2'] + div > h1,
-.markdown-preview-view div[data-tag-name='h2'] + div > h2,
-.markdown-preview-view div[data-tag-name='h2'] + div > h3,
-.markdown-preview-view div[data-tag-name='h2'] + div > h4,
-.markdown-preview-view div[data-tag-name='h2'] + div > h5,
-.markdown-preview-view div[data-tag-name='h2'] + div > h6,
-.markdown-preview-view div[data-tag-name='h3'] + div > h1,
-.markdown-preview-view div[data-tag-name='h3'] + div > h2,
-.markdown-preview-view div[data-tag-name='h3'] + div > h3,
-.markdown-preview-view div[data-tag-name='h3'] + div > h4,
-.markdown-preview-view div[data-tag-name='h3'] + div > h5,
-.markdown-preview-view div[data-tag-name='h3'] + div > h6,
-.markdown-preview-view div[data-tag-name='h4'] + div > h1,
-.markdown-preview-view div[data-tag-name='h4'] + div > h2,
-.markdown-preview-view div[data-tag-name='h4'] + div > h3,
-.markdown-preview-view div[data-tag-name='h4'] + div > h4,
-.markdown-preview-view div[data-tag-name='h4'] + div > h5,
-.markdown-preview-view div[data-tag-name='h4'] + div > h6,
-.markdown-preview-view div[data-tag-name='h5'] + div > h1,
-.markdown-preview-view div[data-tag-name='h5'] + div > h2,
-.markdown-preview-view div[data-tag-name='h5'] + div > h3,
-.markdown-preview-view div[data-tag-name='h5'] + div > h4,
-.markdown-preview-view div[data-tag-name='h5'] + div > h5,
-.markdown-preview-view div[data-tag-name='h5'] + div > h6,
-.markdown-preview-view div[data-tag-name='h6'] + div > h1,
-.markdown-preview-view div[data-tag-name='h6'] + div > h2,
-.markdown-preview-view div[data-tag-name='h6'] + div > h3,
-.markdown-preview-view div[data-tag-name='h6'] + div > h4,
-.markdown-preview-view div[data-tag-name='h6'] + div > h5,
-.markdown-preview-view div[data-tag-name='h6'] + div > h6 {
+.markdown-preview-view div[data-tag-name="h1"] + div > h1,
+.markdown-preview-view div[data-tag-name="h1"] + div > h2,
+.markdown-preview-view div[data-tag-name="h1"] + div > h3,
+.markdown-preview-view div[data-tag-name="h1"] + div > h4,
+.markdown-preview-view div[data-tag-name="h1"] + div > h5,
+.markdown-preview-view div[data-tag-name="h1"] + div > h6,
+.markdown-preview-view div[data-tag-name="h2"] + div > h1,
+.markdown-preview-view div[data-tag-name="h2"] + div > h2,
+.markdown-preview-view div[data-tag-name="h2"] + div > h3,
+.markdown-preview-view div[data-tag-name="h2"] + div > h4,
+.markdown-preview-view div[data-tag-name="h2"] + div > h5,
+.markdown-preview-view div[data-tag-name="h2"] + div > h6,
+.markdown-preview-view div[data-tag-name="h3"] + div > h1,
+.markdown-preview-view div[data-tag-name="h3"] + div > h2,
+.markdown-preview-view div[data-tag-name="h3"] + div > h3,
+.markdown-preview-view div[data-tag-name="h3"] + div > h4,
+.markdown-preview-view div[data-tag-name="h3"] + div > h5,
+.markdown-preview-view div[data-tag-name="h3"] + div > h6,
+.markdown-preview-view div[data-tag-name="h4"] + div > h1,
+.markdown-preview-view div[data-tag-name="h4"] + div > h2,
+.markdown-preview-view div[data-tag-name="h4"] + div > h3,
+.markdown-preview-view div[data-tag-name="h4"] + div > h4,
+.markdown-preview-view div[data-tag-name="h4"] + div > h5,
+.markdown-preview-view div[data-tag-name="h4"] + div > h6,
+.markdown-preview-view div[data-tag-name="h5"] + div > h1,
+.markdown-preview-view div[data-tag-name="h5"] + div > h2,
+.markdown-preview-view div[data-tag-name="h5"] + div > h3,
+.markdown-preview-view div[data-tag-name="h5"] + div > h4,
+.markdown-preview-view div[data-tag-name="h5"] + div > h5,
+.markdown-preview-view div[data-tag-name="h5"] + div > h6,
+.markdown-preview-view div[data-tag-name="h6"] + div > h1,
+.markdown-preview-view div[data-tag-name="h6"] + div > h2,
+.markdown-preview-view div[data-tag-name="h6"] + div > h3,
+.markdown-preview-view div[data-tag-name="h6"] + div > h4,
+.markdown-preview-view div[data-tag-name="h6"] + div > h5,
+.markdown-preview-view div[data-tag-name="h6"] + div > h6 {
   margin-top: 1em;
 }
 
@@ -1087,8 +1087,8 @@ hr {
 }
 
 .markdown-preview-view ul > li.task-list-item.is-checked,
-.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='x'],
-.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='X'] {
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"],
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"] {
   text-decoration: none;
   color: var(--text-completed-checkboxes);
 }
@@ -1097,8 +1097,8 @@ hr {
   .markdown-embed-content
   ul
   > li.task-list-item.is-checked,
-.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='x'],
-.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='X'] {
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"],
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"] {
   color: var(--text-completed-checkboxes-embed);
 }
 

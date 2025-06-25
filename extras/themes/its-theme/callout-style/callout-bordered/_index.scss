@@ -1,25 +1,25 @@
 .callout-bordered
   .callout:not(
-    [data-callout-metadata~='callout-block'],
-    [data-callout-metadata~='co-block'],
-    [data-callout-metadata~='callout-original'],
-    [data-callout-metadata~='co-o'],
-    [data-callout-metadata~='alt-line']
+    [data-callout-metadata~="callout-block"],
+    [data-callout-metadata~="co-block"],
+    [data-callout-metadata~="callout-original"],
+    [data-callout-metadata~="co-o"],
+    [data-callout-metadata~="alt-line"]
   ):not(
-    [data-callout='aside'],
-    [data-callout='blank'],
-    [data-callout='captions'],
-    [data-callout='cards'],
-    [data-callout='checks'],
-    [data-callout='column'],
-    [data-callout='grid'],
-    [data-callout='infobox'],
-    [data-callout='kanban'],
-    [data-callout='metadata'],
-    [data-callout='quotes'],
-    [data-callout='recite'],
-    [data-callout='statblocks'],
-    [data-callout='timeline']
+    [data-callout="aside"],
+    [data-callout="blank"],
+    [data-callout="captions"],
+    [data-callout="cards"],
+    [data-callout="checks"],
+    [data-callout="column"],
+    [data-callout="grid"],
+    [data-callout="infobox"],
+    [data-callout="kanban"],
+    [data-callout="metadata"],
+    [data-callout="quotes"],
+    [data-callout="recite"],
+    [data-callout="statblocks"],
+    [data-callout="timeline"]
   ) {
   --callout-border-width: 2px;
   --callout-title-padding: 5px;
@@ -29,27 +29,27 @@
 
 .callout-bordered
   .callout:not(
-    [data-callout-metadata~='callout-block'],
-    [data-callout-metadata~='co-block'],
-    [data-callout-metadata~='callout-original'],
-    [data-callout-metadata~='co-o'],
-    [data-callout-metadata~='alt-line']
+    [data-callout-metadata~="callout-block"],
+    [data-callout-metadata~="co-block"],
+    [data-callout-metadata~="callout-original"],
+    [data-callout-metadata~="co-o"],
+    [data-callout-metadata~="alt-line"]
   ):not(
-    [data-callout='aside'],
-    [data-callout='blank'],
-    [data-callout='captions'],
-    [data-callout='cards'],
-    [data-callout='checks'],
-    [data-callout='column'],
-    [data-callout='grid'],
-    [data-callout='infobox'],
-    [data-callout='kanban'],
-    [data-callout='metadata'],
-    [data-callout='quotes'],
-    [data-callout='recite'],
-    [data-callout='statblocks'],
-    [data-callout='timeline']
-  )[data-callout-metadata*='bg-'] {
+    [data-callout="aside"],
+    [data-callout="blank"],
+    [data-callout="captions"],
+    [data-callout="cards"],
+    [data-callout="checks"],
+    [data-callout="column"],
+    [data-callout="grid"],
+    [data-callout="infobox"],
+    [data-callout="kanban"],
+    [data-callout="metadata"],
+    [data-callout="quotes"],
+    [data-callout="recite"],
+    [data-callout="statblocks"],
+    [data-callout="timeline"]
+  )[data-callout-metadata*="bg-"] {
   --callout-border-color: var(--callout-background);
   border-color: var(--callout-border-color);
 }

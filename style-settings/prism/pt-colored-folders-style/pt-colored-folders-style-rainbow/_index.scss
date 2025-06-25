@@ -1,5 +1,5 @@
 .pt-colored-folders.pt-colored-folders-files-match
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .nav-files-container
   > div
   > .nav-folder
@@ -7,14 +7,14 @@
   color: var(--rainbow-text-color);
 }
 .pt-colored-folders-rainbow
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .nav-files-container
   > div
   > .nav-folder {
   --nav-indentation-guide-color: var(--rainbow-indent-color);
 }
 .pt-colored-folders-rainbow
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .nav-files-container
   > div
   > .nav-folder
@@ -22,13 +22,13 @@
   color: var(--rainbow-text-color);
 }
 .pt-colored-folders-rainbow
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .nav-files-container
   > div
   > .nav-folder
   .nav-file-title:hover,
 .pt-colored-folders-rainbow
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .nav-files-container
   > div
   > .nav-folder
@@ -37,7 +37,7 @@
   background-color: var(--rainbow-background-color);
 }
 .pt-colored-folders-rainbow
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .nav-files-container
   > div
   > .nav-folder:nth-child(10n + 2) {
@@ -46,7 +46,7 @@
   --rainbow-indent-color: var(--color-red-tint);
 }
 .pt-colored-folders-rainbow
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .nav-files-container
   > div
   > .nav-folder:nth-child(10n + 3) {
@@ -55,7 +55,7 @@
   --rainbow-indent-color: var(--color-orange-tint);
 }
 .pt-colored-folders-rainbow
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .nav-files-container
   > div
   > .nav-folder:nth-child(10n + 4) {
@@ -64,7 +64,7 @@
   --rainbow-indent-color: var(--color-yellow-tint);
 }
 .pt-colored-folders-rainbow
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .nav-files-container
   > div
   > .nav-folder:nth-child(10n + 5) {
@@ -73,7 +73,7 @@
   --rainbow-indent-color: var(--color-green-tint);
 }
 .pt-colored-folders-rainbow
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .nav-files-container
   > div
   > .nav-folder:nth-child(10n + 6) {
@@ -82,7 +82,7 @@
   --rainbow-indent-color: var(--color-mint-tint);
 }
 .pt-colored-folders-rainbow
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .nav-files-container
   > div
   > .nav-folder:nth-child(10n + 7) {
@@ -91,7 +91,7 @@
   --rainbow-indent-color: var(--color-cyan-tint);
 }
 .pt-colored-folders-rainbow
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .nav-files-container
   > div
   > .nav-folder:nth-child(10n + 8) {
@@ -100,7 +100,7 @@
   --rainbow-indent-color: var(--color-blue-tint);
 }
 .pt-colored-folders-rainbow
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .nav-files-container
   > div
   > .nav-folder:nth-child(10n + 9) {
@@ -109,7 +109,7 @@
   --rainbow-indent-color: var(--color-purple-tint);
 }
 .pt-colored-folders-rainbow
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .nav-files-container
   > div
   > .nav-folder:nth-child(10n + 10) {
@@ -118,7 +118,7 @@
   --rainbow-indent-color: var(--color-pink-tint);
 }
 .pt-colored-folders-rainbow
-  .workspace-leaf-content[data-type='file-explorer']
+  .workspace-leaf-content[data-type="file-explorer"]
   .nav-files-container
   > div
   > .nav-folder:nth-child(10n + 11) {

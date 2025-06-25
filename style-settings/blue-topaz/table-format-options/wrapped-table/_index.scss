@@ -1,11 +1,11 @@
 body.wrapped-table:not(.no-wrapped-table-cell):not(.no-wrapped-table)
   :is(.markdown-preview-view, .markdown-rendered)
-  table:not([class*='table-view-table'])
+  table:not([class*="table-view-table"])
   > thead
   > tr,
 body.wrapped-table:not(.no-wrapped-table-cell):not(.no-wrapped-table)
   :is(.markdown-preview-view, .markdown-rendered)
-  table:not([class*='table-view-table'])
+  table:not([class*="table-view-table"])
   > tbody
   > tr {
   white-space: pre-wrap;

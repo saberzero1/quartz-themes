@@ -7,11 +7,11 @@
 }
 .print
   :is(.markdown-preview-view, .markdown-rendered)
-  img:is([class=''], .image-ready-resize, .image-ready-click-view),
+  img:is([class=""], .image-ready-resize, .image-ready-click-view),
 .markdown-preview-view
-  img:is([class=''], .image-ready-resize, .image-ready-click-view),
+  img:is([class=""], .image-ready-resize, .image-ready-click-view),
 .markdown-source-view
-  img:is([class=''], .image-ready-resize, .image-ready-click-view) {
+  img:is([class=""], .image-ready-resize, .image-ready-click-view) {
   display: block;
   margin-left: auto !important;
   margin-right: auto !important;

@@ -1,10 +1,10 @@
 body.toggle-checked-decoration
   .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='x'],
+  .HyperMD-task-line[data-task="x"],
 body.toggle-checked-decoration
   .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task='X'],
-body.toggle-checked-decoration ul > li.task-list-item[data-task='x'],
-body.toggle-checked-decoration ul > li.task-list-item[data-task='X'] {
+  .HyperMD-task-line[data-task="X"],
+body.toggle-checked-decoration ul > li.task-list-item[data-task="x"],
+body.toggle-checked-decoration ul > li.task-list-item[data-task="X"] {
   text-decoration: var(--checklist-done-decoration);
 }

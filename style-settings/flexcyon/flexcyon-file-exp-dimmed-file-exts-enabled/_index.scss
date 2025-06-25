@@ -1,8 +1,8 @@
-body div[data-path$='.md'] div.nav-file-tag {
+body div[data-path$=".md"] div.nav-file-tag {
   display: none;
 }
-body div[data-path$='.md'] div.nav-file-title-content::after {
-  content: '.md';
+body div[data-path$=".md"] div.nav-file-title-content::after {
+  content: ".md";
   opacity: var(--dimmed);
 }
 body div div.nav-file-tag {
@@ -15,5 +15,5 @@ body div div.nav-file-tag {
   font-weight: unset;
 }
 body div div.nav-file-tag::before {
-  content: '.';
+  content: ".";
 }

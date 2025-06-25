@@ -9,14 +9,14 @@
 .code-mac-style-header:not(:has(.print))
   .markdown-rendered
   pre:not(.dataview)
-  code[class*='language-']::before {
+  code[class*="language-"]::before {
   color: var(--setting-code-language-color, var(--accent-active));
 }
 
 .code-mac-style-header:not(:has(.print))
   .markdown-rendered
   pre:not(.dataview)::after {
-  content: '';
+  content: "";
   width: 100%;
   height: calc(var(--code-size) * var(--line-height-normal) * 1.1);
   background-color: var(--code-mac-style-header-bg);
@@ -28,7 +28,7 @@
 .code-mac-style-header:not(:has(.print))
   .markdown-rendered
   pre:not(.dataview)::before {
-  content: '';
+  content: "";
   width: calc(var(--code-size) - var(--size-2-1));
   height: calc(var(--code-size) - var(--size-2-1));
   position: absolute;

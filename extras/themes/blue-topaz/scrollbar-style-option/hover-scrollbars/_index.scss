@@ -14,7 +14,7 @@ body.body:not(.is-mobile).hover-scrollbars
     .workspace-leaf-content .view-content,
     .search-result-container,
     .git-view-body,
-    .workspace-leaf-content[data-type='markdown'] .cm-scroller,
+    .workspace-leaf-content[data-type="markdown"] .cm-scroller,
     .markdown-preview-view,
     .suggestion-container .suggestion,
     .prompt-results,
@@ -29,7 +29,7 @@ body.body:not(.is-mobile).hover-scrollbars
 
 body.body:not(.is-mobile).hover-scrollbars
   .community-modal-info
-  div[class^='community-modal-info-'] {
+  div[class^="community-modal-info-"] {
   color: var(--text-normal);
 }
 
@@ -47,7 +47,7 @@ body.body:not(.is-mobile).hover-scrollbars
     .view-content,
     .search-result-container,
     .git-view-body,
-    .workspace-leaf-content[data-type='markdown'] .cm-scroller,
+    .workspace-leaf-content[data-type="markdown"] .cm-scroller,
     .markdown-preview-view,
     .suggestion-container .suggestion,
     .prompt-results,
@@ -69,7 +69,7 @@ body.body:not(.is-mobile).hover-scrollbars
     .view-content,
     .search-result-container,
     .git-view-body,
-    .workspace-leaf-content[data-type='markdown'] .cm-scroller,
+    .workspace-leaf-content[data-type="markdown"] .cm-scroller,
     .markdown-preview-view,
     .suggestion-container .suggestion,
     .prompt-results,
@@ -89,7 +89,7 @@ body.body:not(.is-mobile).hover-scrollbars
     .view-content,
     .search-result-container,
     .git-view-body,
-    .workspace-leaf-content[data-type='markdown'] .cm-scroller,
+    .workspace-leaf-content[data-type="markdown"] .cm-scroller,
     .markdown-preview-view,
     .suggestion-container .suggestion,
     .prompt-results,
@@ -108,7 +108,7 @@ body.body:not(.is-mobile).hover-scrollbars
     .view-content,
     .search-result-container,
     .git-view-body,
-    .workspace-leaf-content[data-type='markdown'] .cm-scroller,
+    .workspace-leaf-content[data-type="markdown"] .cm-scroller,
     .markdown-preview-view,
     .suggestion-container .suggestion,
     .prompt-results,

@@ -47,10 +47,7 @@
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
       "variations": [
-        {
-          "name": "colorful-headings",
-          "injects": ["at-colorful-headings"]
-        }
+        { "name": "colorful-headings", "injects": ["at-colorful-headings"] }
       ],
       "extras": [],
       "fonts": []

@@ -122,7 +122,7 @@ body.eis-sidebar-dark:not(body.theme-dark).is-hidden-frameless:not(
 }
 
 body.eis-sidebar-dark:not(body.theme-dark)
-  [data-path='/'].tree-item-self.nav-folder-title {
+  [data-path="/"].tree-item-self.nav-folder-title {
   border-top-color: rgba(255, 255, 255, 0.1);
   border-bottom-color: rgba(255, 255, 255, 0.1);
 }

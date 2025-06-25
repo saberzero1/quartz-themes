@@ -1,6 +1,6 @@
 body.active-line .cm-active:not(.HyperMD-header, .HyperMD-codeblock)::before,
 body.active-line .cm-active.HyperMD-quote::before {
-  content: '';
+  content: "";
   height: 100%;
   position: absolute;
   left: -1.125em;

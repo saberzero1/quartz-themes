@@ -28,7 +28,7 @@
 .test-style-headers .markdown-rendered h5::before,
 .test-style-headers .is-live-preview .HyperMD-header-6::before,
 .test-style-headers .markdown-rendered h6::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -49,7 +49,7 @@
 .test-style-headers .markdown-rendered h5::after,
 .test-style-headers .is-live-preview .HyperMD-header-6::after,
 .test-style-headers .markdown-rendered h6::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   transform: translateY(-50%);

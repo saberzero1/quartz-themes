@@ -1,49 +1,49 @@
 :not(.serenity-src):not(.serenity-lp) .markdown-source-view,
-.serenity-lp:has([data-mode='source'] .is-live-preview) .markdown-source-view,
+.serenity-lp:has([data-mode="source"] .is-live-preview) .markdown-source-view,
 .serenity-src:has(
-    [data-mode='source'] .markdown-source-view:not(.is-live-preview)
+    [data-mode="source"] .markdown-source-view:not(.is-live-preview)
   ) {
   --font-text-size: var(--font-size) !important;
 }
-:not(.serenity-src):not(.serenity-lp):has([data-mode='source'])
+:not(.serenity-src):not(.serenity-lp):has([data-mode="source"])
   .workspace-tab-header-container,
-:not(.serenity-src):not(.serenity-lp):has([data-mode='source'])
+:not(.serenity-src):not(.serenity-lp):has([data-mode="source"])
   .workspace-ribbon,
-:not(.serenity-src):not(.serenity-lp):has([data-mode='source']) .view-header,
-:not(.serenity-src):not(.serenity-lp):has([data-mode='source'])
+:not(.serenity-src):not(.serenity-lp):has([data-mode="source"]) .view-header,
+:not(.serenity-src):not(.serenity-lp):has([data-mode="source"])
   .embedded-backlinks,
-:not(.serenity-src):not(.serenity-lp):has([data-mode='source']) .inline-title,
-:not(.serenity-src):not(.serenity-lp):has([data-mode='source'])
+:not(.serenity-src):not(.serenity-lp):has([data-mode="source"]) .inline-title,
+:not(.serenity-src):not(.serenity-lp):has([data-mode="source"])
   .mk-header.cm-line,
-.serenity-lp:has([data-mode='source'] .is-live-preview)
+.serenity-lp:has([data-mode="source"] .is-live-preview)
   .workspace-tab-header-container,
-.serenity-lp:has([data-mode='source'] .is-live-preview) .workspace-ribbon,
-.serenity-lp:has([data-mode='source'] .is-live-preview) .view-header,
-.serenity-lp:has([data-mode='source'] .is-live-preview) .embedded-backlinks,
-.serenity-lp:has([data-mode='source'] .is-live-preview) .inline-title,
-.serenity-lp:has([data-mode='source'] .is-live-preview) .mk-header.cm-line,
+.serenity-lp:has([data-mode="source"] .is-live-preview) .workspace-ribbon,
+.serenity-lp:has([data-mode="source"] .is-live-preview) .view-header,
+.serenity-lp:has([data-mode="source"] .is-live-preview) .embedded-backlinks,
+.serenity-lp:has([data-mode="source"] .is-live-preview) .inline-title,
+.serenity-lp:has([data-mode="source"] .is-live-preview) .mk-header.cm-line,
 .serenity-src:has(
-    [data-mode='source'] .markdown-source-view:not(.is-live-preview)
+    [data-mode="source"] .markdown-source-view:not(.is-live-preview)
   )
   .workspace-tab-header-container,
 .serenity-src:has(
-    [data-mode='source'] .markdown-source-view:not(.is-live-preview)
+    [data-mode="source"] .markdown-source-view:not(.is-live-preview)
   )
   .workspace-ribbon,
 .serenity-src:has(
-    [data-mode='source'] .markdown-source-view:not(.is-live-preview)
+    [data-mode="source"] .markdown-source-view:not(.is-live-preview)
   )
   .view-header,
 .serenity-src:has(
-    [data-mode='source'] .markdown-source-view:not(.is-live-preview)
+    [data-mode="source"] .markdown-source-view:not(.is-live-preview)
   )
   .embedded-backlinks,
 .serenity-src:has(
-    [data-mode='source'] .markdown-source-view:not(.is-live-preview)
+    [data-mode="source"] .markdown-source-view:not(.is-live-preview)
   )
   .inline-title,
 .serenity-src:has(
-    [data-mode='source'] .markdown-source-view:not(.is-live-preview)
+    [data-mode="source"] .markdown-source-view:not(.is-live-preview)
   )
   .mk-header.cm-line {
   display: none !important;

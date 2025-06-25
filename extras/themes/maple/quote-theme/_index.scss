@@ -106,7 +106,7 @@ body.quote-theme .markdown-rendered blockquote :is(p, h1, h2, h3, h4, h5, h6) {
 }
 
 body.quote-theme .markdown-rendered blockquote::after {
-  content: '';
+  content: "";
   position: absolute;
   left: calc(var(--blockquote-radius) * 4 / 5);
   top: var(--blockquote-radius);
@@ -148,7 +148,7 @@ body.quote-mark.quote-theme blockquote::before {
   font-size: 3rem;
   font-family: Source Code Pro;
   line-height: 1;
-  content: '“' !important;
+  content: "“" !important;
   background-color: transparent;
   color: var(--text-muted);
   top: calc(

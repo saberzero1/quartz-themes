@@ -51,7 +51,7 @@ body.adwaita-icons-always .sidebar-toggle-button.mod-left .clickable-icon svg {
 body.adwaita-icons-always
   .sidebar-toggle-button.mod-left
   .clickable-icon::after {
-  content: '';
+  content: "";
   background-color: currentColor !important;
   -webkit-mask-image: var(--adwaita-icon-sidebar-show-symbolic);
   mask-image: var(--adwaita-icon-sidebar-show-symbolic);
@@ -67,7 +67,7 @@ body.adwaita-icons-always .sidebar-toggle-button.mod-right .clickable-icon svg {
 body.adwaita-icons-always
   .sidebar-toggle-button.mod-right
   .clickable-icon::after {
-  content: '';
+  content: "";
   background-color: currentColor !important;
   -webkit-mask-image: var(--adwaita-icon-sidebar-show-right-symbolic);
   mask-image: var(--adwaita-icon-sidebar-show-right-symbolic);
@@ -81,7 +81,7 @@ body.adwaita-icons-always .workspace-tab-header-new-tab .clickable-icon svg {
 }
 
 body.adwaita-icons-always .workspace-tab-header-new-tab .clickable-icon::after {
-  content: '';
+  content: "";
   background-color: currentColor !important;
   -webkit-mask-image: var(--adwaita-icon-tab-new-symbolic);
   mask-image: var(--adwaita-icon-tab-new-symbolic);
@@ -97,7 +97,7 @@ body.adwaita-icons-always .workspace-tab-header-tab-list .clickable-icon svg {
 body.adwaita-icons-always
   .workspace-tab-header-tab-list
   .clickable-icon::after {
-  content: '';
+  content: "";
   background-color: currentColor !important;
   -webkit-mask-image: var(--adwaita-icon-go-down-symbolic);
   mask-image: var(--adwaita-icon-go-down-symbolic);
@@ -111,7 +111,7 @@ body.adwaita-icons-always .workspace-tab-header-inner-close-button svg {
 }
 
 body.adwaita-icons-always .workspace-tab-header-inner-close-button::after {
-  content: '';
+  content: "";
   background-color: currentColor !important;
   -webkit-mask-image: var(--adwaita-icon-window-close-symbolic);
   mask-image: var(--adwaita-icon-window-close-symbolic);
@@ -121,16 +121,16 @@ body.adwaita-icons-always .workspace-tab-header-inner-close-button::after {
 }
 
 body.adwaita-icons-always
-  .workspace-tab-header[data-type='file-explorer']
+  .workspace-tab-header[data-type="file-explorer"]
   .workspace-tab-header-inner-icon
   svg {
   display: none;
 }
 
 body.adwaita-icons-always
-  .workspace-tab-header[data-type='file-explorer']
+  .workspace-tab-header[data-type="file-explorer"]
   .workspace-tab-header-inner-icon::after {
-  content: '';
+  content: "";
   background-color: currentColor !important;
   -webkit-mask-image: var(--adwaita-icon-folder-visiting-symbolic);
   mask-image: var(--adwaita-icon-folder-visiting-symbolic);
@@ -140,16 +140,16 @@ body.adwaita-icons-always
 }
 
 body.adwaita-icons-always
-  .workspace-tab-header[data-type='search']
+  .workspace-tab-header[data-type="search"]
   .workspace-tab-header-inner-icon
   svg {
   display: none;
 }
 
 body.adwaita-icons-always
-  .workspace-tab-header[data-type='search']
+  .workspace-tab-header[data-type="search"]
   .workspace-tab-header-inner-icon::after {
-  content: '';
+  content: "";
   background-color: currentColor !important;
   -webkit-mask-image: var(--adwaita-icon-folder-saved-search-symbolic);
   mask-image: var(--adwaita-icon-folder-saved-search-symbolic);

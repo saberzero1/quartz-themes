@@ -77,7 +77,7 @@ body {
 .drag-ghost-hidden:before {
   background-color: rgba(var(--ctp-accent), 0.3);
 }
-.anp-callout-color-toggle .callout[data-callout='note'] {
+.anp-callout-color-toggle .callout[data-callout="note"] {
   --callout-color: var(--ctp-accent);
 }
 body.anp-button-metadata-toggle
@@ -136,14 +136,14 @@ body
   background-color: var(--tab-container-background);
 }
 .style-settings-heading:is(
-    [data-id='anuppuccin-theme-settings'],
-    [data-id='anuppuccin-theme-settings-extended']
+    [data-id="anuppuccin-theme-settings"],
+    [data-id="anuppuccin-theme-settings-extended"]
   ) {
   border-color: rgba(var(--ctp-accent), 0.2);
 }
 .style-settings-heading:is(
-    [data-id='anuppuccin-theme-settings'],
-    [data-id='anuppuccin-theme-settings-extended']
+    [data-id="anuppuccin-theme-settings"],
+    [data-id="anuppuccin-theme-settings-extended"]
   ):not(.is-collapsed)
   + .style-settings-container {
   border-color: rgba(var(--ctp-accent), 0.2);

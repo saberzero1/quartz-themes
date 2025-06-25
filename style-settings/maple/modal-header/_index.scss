@@ -10,7 +10,7 @@ body:is(:not(.css-settings-manager), ):not(.is-mobile)
 body:is(:not(.css-settings-manager), ):not(.is-mobile)
   .modal-container
   .mod-settings::before {
-  content: var(--setting-header-title, 'maple 0.8.30');
+  content: var(--setting-header-title, "maple 0.8.30");
   position: absolute;
   left: 50%;
   top: var(--size-4-6);
@@ -184,7 +184,7 @@ body:is(:not(.css-settings-manager), ):not(.is-mobile)
   .mod-settings
   .modal-content
   .vertical-tab-content
-  > :nth-child(5):not(.style-settings-container):has(input[type='search']) {
+  > :nth-child(5):not(.style-settings-container):has(input[type="search"]) {
   position: absolute;
   top: calc(var(--size-2-1) * -1);
   transform: translateY(
@@ -197,7 +197,7 @@ body:is(:not(.css-settings-manager), ):not(.is-mobile)
   .mod-settings
   .modal-content
   .vertical-tab-content
-  > :nth-child(5):not(.style-settings-container):has(input[type='search'])
+  > :nth-child(5):not(.style-settings-container):has(input[type="search"])
   .setting-item-info {
   display: none;
 }

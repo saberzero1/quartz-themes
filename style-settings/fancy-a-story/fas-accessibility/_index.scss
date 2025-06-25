@@ -1,8 +1,8 @@
 :root,
 body {
   --icon-opacity-inactive: 0.5;
-  --font-typewriter: 'TT2020Base', 'Courier', monospace;
-  --font-text-theme: 'Noto';
+  --font-typewriter: "TT2020Base", "Courier", monospace;
+  --font-text-theme: "Noto";
   --font-weight: var(--font-normal);
   --font-text-size: 18px !important;
   --font-ui-smaller: 14px;
@@ -11,8 +11,8 @@ body {
   --font-ui-large: 22px;
 }
 
-body .style-settings-container [data-id='fas-sans-serif'],
-body .style-settings-container [data-id='fas-bigger-font'] {
+body .style-settings-container [data-id="fas-sans-serif"],
+body .style-settings-container [data-id="fas-bigger-font"] {
   opacity: 0.5;
   pointer-events: none;
 }

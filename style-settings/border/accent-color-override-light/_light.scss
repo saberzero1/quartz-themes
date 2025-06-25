@@ -1,5 +1,5 @@
-:root[saved-theme='light'],
-html[saved-theme='light'] {
+:root[saved-theme="light"],
+html[saved-theme="light"] {
   --accent-h: var(--accent-light-h) !important;
   --accent-s: var(--accent-light-s) !important;
   --accent-l: var(--accent-light-l) !important;
@@ -8,7 +8,7 @@ html[saved-theme='light'] {
     .vertical-tab-content-container
     > .vertical-tab-content
     > .setting-item:nth-child(2)
-    > .setting-item-control:has(> input[type='color']) {
+    > .setting-item-control:has(> input[type="color"]) {
     position: relative;
     visibility: hidden;
   }
@@ -17,8 +17,8 @@ html[saved-theme='light'] {
     .vertical-tab-content-container
     > .vertical-tab-content
     > .setting-item:nth-child(2)
-    > .setting-item-control:has(> input[type='color'])::before {
-    content: 'Overridden by Style Settings';
+    > .setting-item-control:has(> input[type="color"])::before {
+    content: "Overridden by Style Settings";
     font-family: var(--font-interface);
     font-size: var(--font-ui-smaller);
     position: absolute;
@@ -34,7 +34,7 @@ html[saved-theme='light'] {
     .vertical-tab-content-container
     > .vertical-tab-content
     > .setting-item:nth-child(2)
-    > .setting-item-control:has(> input[type='color'])::before {
+    > .setting-item-control:has(> input[type="color"])::before {
     width: auto;
   }
 }

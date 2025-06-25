@@ -333,7 +333,7 @@ table {
 
 /* ----------- Checkboxes ----------- */
 
-input[type='checkbox']çchecked:hover {
+input[type="checkbox"]çchecked:hover {
   background-color: var(--checklist-done-color);
   border-color: var(--checklist-done-color);
 }
@@ -384,8 +384,8 @@ pre code {
   background-color: var(--codeblock-background);
 }
 
-pre[class*='language-'],
-code[class*='language-'] {
+pre[class*="language-"],
+code[class*="language-"] {
   font-size: var(--code-text-size) !important;
   background: var(--codeblock-background) !important;
   color: var(--codeblock-color) !important;
@@ -460,12 +460,12 @@ code[class*='language-'] {
 /* ----------- File Explorer ----------- */
 
 .nav-folder-children .nav-file-title-content:first-child::before {
-  content: '📄 ';
+  content: "📄 ";
 }
 
 .nav-folder-children .nav-folder-title-content::before {
   font-size: 0.9em;
-  content: '📗 '; /*FCD53F*/
+  content: "📗 "; /*FCD53F*/
   margin-right: 0px !important;
 }
 
@@ -481,7 +481,7 @@ code[class*='language-'] {
 
 .nav-folder-title-content::before {
   font-size: 1.3em;
-  content: '📚 ';
+  content: "📚 ";
 
   margin-right: 7px !important;
 }

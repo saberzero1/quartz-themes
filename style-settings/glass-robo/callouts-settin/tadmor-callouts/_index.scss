@@ -21,7 +21,7 @@
   z-index: 15;
 }
 .tadmor-callouts .callout .callout-title::after {
-  content: '';
+  content: "";
   position: absolute;
   background-color: transparent;
   bottom: -50px;
@@ -32,7 +32,7 @@
   box-shadow: 0 -25px 0 0 rgba(var(--callout-color), 1);
 }
 .tadmor-callouts .callout .callout-title::before {
-  content: '';
+  content: "";
   position: absolute;
   background-color: transparent;
   bottom: -50px;

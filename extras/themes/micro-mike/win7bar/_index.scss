@@ -22,7 +22,7 @@ body.is-frameless.is-hidden-frameless .titlebar {
 }
 
 html:has(> .win7bar)::before {
-  content: '';
+  content: "";
   position: absolute;
   background-color: #f0f0f0;
   height: 1px;
@@ -209,7 +209,7 @@ html:has(> .win7bar)
   .titlebar
   .titlebar-button-container.mod-right
   .titlebar-button::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -266,7 +266,7 @@ html:has(> .win7bar)
 }
 
 html:has(> .win7bar) body.obsidian-app::before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -100;
   top: 0;
@@ -307,7 +307,7 @@ body.obsidian-app.is-focused
 body.obsidian-app.is-focused
   .titlebar
   .titlebar-button-container.mod-right
-  .titlebar-button[aria-label='Minimize'],
+  .titlebar-button[aria-label="Minimize"],
 body.obsidian-app.is-focused
   .titlebar
   .titlebar-button-container.mod-right
@@ -320,12 +320,12 @@ body.obsidian-app.is-focused
 body.obsidian-app.is-focused
   .titlebar
   .titlebar-button-container.mod-right
-  .titlebar-button[aria-label='Minimize']::before,
+  .titlebar-button[aria-label="Minimize"]::before,
 body.obsidian-app.is-focused
   .titlebar
   .titlebar-button-container.mod-right
   .titlebar-button.mod-minimize::before {
-  content: '';
+  content: "";
   box-shadow:
     0 0 7px 3px #5dc4f0,
     var(--control-inset-shadow);
@@ -340,11 +340,11 @@ body.obsidian-app.is-focused
 body.obsidian-app.is-focused
   .titlebar
   .titlebar-button-container.mod-right
-  .titlebar-button[aria-label='Minimize']:hover::before,
+  .titlebar-button[aria-label="Minimize"]:hover::before,
 body.obsidian-app.is-focused
   .titlebar
   .titlebar-button-container.mod-right
-  .titlebar-button[aria-label='Minimize']:focus-visible::before,
+  .titlebar-button[aria-label="Minimize"]:focus-visible::before,
 body.obsidian-app.is-focused
   .titlebar
   .titlebar-button-container.mod-right
@@ -360,7 +360,7 @@ body.obsidian-app.is-focused
 body.obsidian-app.is-focused
   .titlebar
   .titlebar-button-container.mod-right
-  .titlebar-button[aria-label='Minimize']:active::before,
+  .titlebar-button[aria-label="Minimize"]:active::before,
 body.obsidian-app.is-focused
   .titlebar
   .titlebar-button-container.mod-right
@@ -373,7 +373,7 @@ body.obsidian-app.is-focused
 body.obsidian-app.is-focused
   .titlebar
   .titlebar-button-container.mod-right
-  .titlebar-button[aria-label='Maximize'],
+  .titlebar-button[aria-label="Maximize"],
 body.obsidian-app.is-focused
   .titlebar
   .titlebar-button-container.mod-right
@@ -386,12 +386,12 @@ body.obsidian-app.is-focused
 body.obsidian-app.is-focused
   .titlebar
   .titlebar-button-container.mod-right
-  .titlebar-button[aria-label='Maximize']::before,
+  .titlebar-button[aria-label="Maximize"]::before,
 body.obsidian-app.is-focused
   .titlebar
   .titlebar-button-container.mod-right
   .titlebar-button.mod-maximize::before {
-  content: '';
+  content: "";
   box-shadow:
     0 0 7px 3px #5dc4f0,
     var(--control-inset-shadow);
@@ -405,11 +405,11 @@ body.obsidian-app.is-focused
 body.obsidian-app.is-focused
   .titlebar
   .titlebar-button-container.mod-right
-  .titlebar-button[aria-label='Maximize']:hover::before,
+  .titlebar-button[aria-label="Maximize"]:hover::before,
 body.obsidian-app.is-focused
   .titlebar
   .titlebar-button-container.mod-right
-  .titlebar-button[aria-label='Maximize']:focus-visible::before,
+  .titlebar-button[aria-label="Maximize"]:focus-visible::before,
 body.obsidian-app.is-focused
   .titlebar
   .titlebar-button-container.mod-right
@@ -425,7 +425,7 @@ body.obsidian-app.is-focused
 body.obsidian-app.is-focused
   .titlebar
   .titlebar-button-container.mod-right
-  .titlebar-button[aria-label='Maximize']:active::before,
+  .titlebar-button[aria-label="Maximize"]:active::before,
 body.obsidian-app.is-focused
   .titlebar
   .titlebar-button-container.mod-right
@@ -438,7 +438,7 @@ body.obsidian-app.is-focused
 body.obsidian-app.is-focused
   .titlebar
   .titlebar-button-container.mod-right
-  .titlebar-button[aria-label='Close'],
+  .titlebar-button[aria-label="Close"],
 body.obsidian-app.is-focused
   .titlebar
   .titlebar-button-container.mod-right
@@ -453,12 +453,12 @@ body.obsidian-app.is-focused
 body.obsidian-app.is-focused
   .titlebar
   .titlebar-button-container.mod-right
-  .titlebar-button[aria-label='Close']::before,
+  .titlebar-button[aria-label="Close"]::before,
 body.obsidian-app.is-focused
   .titlebar
   .titlebar-button-container.mod-right
   .titlebar-button.mod-close::before {
-  content: '';
+  content: "";
   background:
     var(--icon-close) no-repeat center,
     var(--control-background),
@@ -474,11 +474,11 @@ body.obsidian-app.is-focused
 body.obsidian-app.is-focused
   .titlebar
   .titlebar-button-container.mod-right
-  .titlebar-button[aria-label='Close']:hover::before,
+  .titlebar-button[aria-label="Close"]:hover::before,
 body.obsidian-app.is-focused
   .titlebar
   .titlebar-button-container.mod-right
-  .titlebar-button[aria-label='Close']:focus-visible::before,
+  .titlebar-button[aria-label="Close"]:focus-visible::before,
 body.obsidian-app.is-focused
   .titlebar
   .titlebar-button-container.mod-right
@@ -494,7 +494,7 @@ body.obsidian-app.is-focused
 body.obsidian-app.is-focused
   .titlebar
   .titlebar-button-container.mod-right
-  .titlebar-button[aria-label='Close']:active::before,
+  .titlebar-button[aria-label="Close"]:active::before,
 body.obsidian-app.is-focused
   .titlebar
   .titlebar-button-container.mod-right
@@ -515,7 +515,7 @@ body.obsidian-app.is-maximized
 body.obsidian-app.is-focused.is-maximized
   .titlebar
   .titlebar-button-container.mod-right
-  .titlebar-button[aria-label='Maximize'],
+  .titlebar-button[aria-label="Maximize"],
 body.obsidian-app.is-focused.is-maximized
   .titlebar
   .titlebar-button-container.mod-right
@@ -528,12 +528,12 @@ body.obsidian-app.is-focused.is-maximized
 body.obsidian-app.is-focused.is-maximized
   .titlebar
   .titlebar-button-container.mod-right
-  .titlebar-button[aria-label='Maximize']::before,
+  .titlebar-button[aria-label="Maximize"]::before,
 body.obsidian-app.is-focused.is-maximized
   .titlebar
   .titlebar-button-container.mod-right
   .titlebar-button.mod-maximize::before {
-  content: '';
+  content: "";
   box-shadow:
     0 0 7px 3px #5dc4f0,
     var(--control-inset-shadow);
@@ -547,11 +547,11 @@ body.obsidian-app.is-focused.is-maximized
 body.obsidian-app.is-focused.is-maximized
   .titlebar
   .titlebar-button-container.mod-right
-  .titlebar-button[aria-label='Maximize']:hover::before,
+  .titlebar-button[aria-label="Maximize"]:hover::before,
 body.obsidian-app.is-focused.is-maximized
   .titlebar
   .titlebar-button-container.mod-right
-  .titlebar-button[aria-label='Maximize']:focus-visible::before,
+  .titlebar-button[aria-label="Maximize"]:focus-visible::before,
 body.obsidian-app.is-focused.is-maximized
   .titlebar
   .titlebar-button-container.mod-right
@@ -567,7 +567,7 @@ body.obsidian-app.is-focused.is-maximized
 body.obsidian-app.is-focused.is-maximized
   .titlebar
   .titlebar-button-container.mod-right
-  .titlebar-button[aria-label='Maximize']:active::before,
+  .titlebar-button[aria-label="Maximize"]:active::before,
 body.obsidian-app.is-focused.is-maximized
   .titlebar
   .titlebar-button-container.mod-right

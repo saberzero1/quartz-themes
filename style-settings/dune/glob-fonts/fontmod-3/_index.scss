@@ -36,11 +36,11 @@ body.fontmod-3
   font-family: var(--custom-font-c);
   font-size: var(--custom-fsz-3);
 }
-.fontmod-3 .callout[data-callout~='schrift-g'] .callout-content p,
-.fontmod-3 .callout[data-callout~='font-l'] .callout-content p {
+.fontmod-3 .callout[data-callout~="schrift-g"] .callout-content p,
+.fontmod-3 .callout[data-callout~="font-l"] .callout-content p {
   font-size: var(--fraction-lg);
 }
-.fontmod-3 .callout[data-callout~='schrift-k'] .callout-content p,
-.fontmod-3 .callout[data-callout~='font-s'] .callout-content p {
+.fontmod-3 .callout[data-callout~="schrift-k"] .callout-content p,
+.fontmod-3 .callout[data-callout~="font-s"] .callout-content p {
   font-size: var(--fraction-sm);
 }

@@ -90,7 +90,7 @@ body:not(body.theme-dark).is-hidden-frameless:not(.is-popout-window)
   background-color: var(--tab-container-background);
   border-bottom-color: var(--divider-color);
 }
-body:not(body.theme-dark) [data-path='/'].tree-item-self.nav-folder-title {
+body:not(body.theme-dark) [data-path="/"].tree-item-self.nav-folder-title {
   border-top-color: rgba(255, 255, 255, 0.1);
   border-bottom-color: rgba(255, 255, 255, 0.1);
 }

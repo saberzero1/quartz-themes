@@ -13,7 +13,7 @@ body.theme-dark {
   background-color: rgba(var(--ctp-text), 0.3);
 }
 .anp-colorful-frame.anp-card-layout:not(.anp-card-layout-filebrowser).theme-dark
-  .workspace-leaf-content[data-type='file-explorer'] {
+  .workspace-leaf-content[data-type="file-explorer"] {
   --tab-text-color: var(--text-normal);
   --tab-text-color-focused: var(--text-normal);
   --tab-text-color-focused-active: var(--text-normal);

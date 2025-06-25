@@ -117,7 +117,7 @@ body.dialogue-style-wechat
 body.dialogue-style-wechat
   .dialogue-plugin-message
   .dialogue-plugin-message-content:after {
-  content: '';
+  content: "";
   background: #fff;
   width: 12px;
   height: 12px;
@@ -179,7 +179,7 @@ body.dialogue-style-wechat div.chat-view-align-center .chat-view-message {
 }
 
 body.dialogue-style-wechat div.chat-view-align-center .chat-view-message:after {
-  content: '';
+  content: "";
   background: #e4effc;
   width: 12px;
   height: 12px;
@@ -222,7 +222,7 @@ body.dialogue-style-wechat
 body.dialogue-style-wechat
   .chat-view-bubble
   > :not(:is(h1, h2, h3, h4, h5, h6, sub)):after {
-  content: '';
+  content: "";
   background: #fff;
   width: 12px;
   height: 12px;

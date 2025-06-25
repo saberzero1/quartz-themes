@@ -20,7 +20,7 @@ body.blockquote-style-speech-bubble-two
     .kanban-plugin__markdown-preview-view
   )
   blockquote:before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 10;
   bottom: -35px;
@@ -41,7 +41,7 @@ body.blockquote-style-speech-bubble-two
     .kanban-plugin__markdown-preview-view
   )
   blockquote:after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 10;
   bottom: -35px;
@@ -63,7 +63,7 @@ body.blockquote-style-speech-bubble-two
   )
   blockquote
   > :first-child:before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -35px;
   left: 47px;
@@ -80,7 +80,7 @@ body.blockquote-style-speech-bubble-two
   )
   blockquote
   > :first-child:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -10px;
   left: 76px;

@@ -258,12 +258,12 @@ body {
 
   /* Font Defaults */
   --font-default:
-    'Franklin Gothic Book', 'Rubik', 'Helvetica Neue', ui-sans-serif,
-    -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-interface-theme: var(--font-default);
   --font-monospace-default:
-    'iA Writer Mono S', 'IBM Plex Mono', 'Roboto Mono', Menlo, SFMono-Regular,
-    Consolas, 'Source Code Pro', monospace;
+    "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo, SFMono-Regular,
+    Consolas, "Source Code Pro", monospace;
   --inline-title-size: 1.625em;
   --h1-size: 1.5em;
   --h2-size: 1.375em;
@@ -412,7 +412,7 @@ hr,
 
 /* Text Block Spacing */
 .cm-formatting-list,
-input[type='checkbox'] {
+input[type="checkbox"] {
   margin-right: 0.25em;
 }
 
@@ -477,37 +477,37 @@ table {
   margin-bottom: 0;
 }
 
-.callout[data-callout='note'] {
+.callout[data-callout="note"] {
   --callout-icon: lucide-info;
 }
 
-.callout[data-callout='important'] {
+.callout[data-callout="important"] {
   --callout-icon: lucide-flag;
 }
 
-.callout[data-callout='error'] {
+.callout[data-callout="error"] {
   --callout-icon: lucide-x;
 }
 
-.callout[data-callout='missing'] {
+.callout[data-callout="missing"] {
   --callout-icon: lucide-help-circle;
 }
 
-.callout[data-callout='hint'],
-.callout[data-callout='tip'] {
+.callout[data-callout="hint"],
+.callout[data-callout="tip"] {
   --callout-icon: lucide-lightbulb;
 }
 
-.callout[data-callout='cite'] {
+.callout[data-callout="cite"] {
   --callout-icon: lucide-bookmark;
 }
 
-.callout[data-callout='check'],
-.callout[data-callout='done'] {
+.callout[data-callout="check"],
+.callout[data-callout="done"] {
   --callout-icon: lucide-check-square;
 }
 
-.callout[data-callout='todo'] {
+.callout[data-callout="todo"] {
   --callout-icon: lucide-clipboard-check;
 }
 
@@ -624,23 +624,23 @@ select:focus,
 }
 
 textarea:active,
-input[type='text']:active,
-input[type='search']:active,
-input[type='email']:active,
-input[type='password']:active,
-input[type='number']:active,
+input[type="text"]:active,
+input[type="search"]:active,
+input[type="email"]:active,
+input[type="password"]:active,
+input[type="number"]:active,
 textarea:focus,
-input[type='text']:focus,
-input[type='search']:focus,
-input[type='email']:focus,
-input[type='password']:focus,
-input[type='number']:focus,
+input[type="text"]:focus,
+input[type="search"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
 textarea:focus-visible,
-input[type='text']:focus-visible,
-input[type='search']:focus-visible,
-input[type='email']:focus-visible,
-input[type='password']:focus-visible,
-input[type='number']:focus-visible {
+input[type="text"]:focus-visible,
+input[type="search"]:focus-visible,
+input[type="email"]:focus-visible,
+input[type="password"]:focus-visible,
+input[type="number"]:focus-visible {
   box-shadow: 0 0 0 0.75px var(--background-modifier-border-focus);
 }
 
@@ -865,7 +865,7 @@ button:not(.clickable-icon):hover {
   transition: 0s;
 }
 
-.kanban-plugin__lane input[type='checkbox']:checked:after {
+.kanban-plugin__lane input[type="checkbox"]:checked:after {
   top: -2px;
   left: -2px;
 }

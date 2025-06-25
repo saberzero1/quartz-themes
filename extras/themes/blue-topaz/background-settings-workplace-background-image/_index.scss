@@ -24,10 +24,10 @@ body.color-scheme-options-simplicity-topaz.background-settings-workplace-backgro
 }
 
 body.background-settings-workplace-background-image
-  div[data-type='thino_view']
+  div[data-type="thino_view"]
   .menu-btns-popup,
 body.background-settings-workplace-background-image
-  div[data-type='thino_view']
+  div[data-type="thino_view"]
   .selector-wrapper
   > .items-wrapper {
   background-color: var(--bg-color-settings-3);
@@ -38,19 +38,19 @@ body.background-settings-workplace-background-image:is(
     .custom-thino-background,
     .thino-background-color
   )
-  div[data-type='thino_view']
+  div[data-type="thino_view"]
   .view-content,
 body.background-settings-workplace-background-image:is(
     .custom-thino-background,
     .thino-background-color
   )
-  div[data-type='thino_view']
+  div[data-type="thino_view"]
   .view-header {
   background: var(--bg-color-settings-0-1);
 }
 
 body.background-settings-workplace-background-image .webpage-container::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: -37px;
@@ -131,7 +131,7 @@ body.is-mobile.background-settings-workplace-background-image:not(
 }
 
 body.background-settings-workplace-background-image .workspace::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: -37px;

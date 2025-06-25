@@ -72,7 +72,7 @@ settings:
 
 :root {
   /* Fonts */
-  --font-monospace: 'JetBrains Mono', 'Consolas', monospace;
+  --font-monospace: "JetBrains Mono", "Consolas", monospace;
 
   /* Colours */
   --color-black: #010409;
@@ -359,7 +359,7 @@ hr {
   ---------------------------------------*/
 
 /* Math */
-mjx-container[jax='CHTML'] {
+mjx-container[jax="CHTML"] {
   text-align: left;
   outline: none;
 }
@@ -377,7 +377,7 @@ mjx-container[jax='CHTML'] {
 .cm-s-obsidian span.hmd-fold-math-placeholder {
   /* fix tag size */
   font-style: normal;
-  font-family: 'JetBrains Mono' !important;
+  font-family: "JetBrains Mono" !important;
 }
 
 .markdown-preview-view code {
@@ -391,12 +391,12 @@ mjx-container[jax='CHTML'] {
 
 /* Code blocks */
 code {
-  font-family: 'JetBrains Mono' !important;
+  font-family: "JetBrains Mono" !important;
 }
 
 /* Source: https://github.com/AGMStudio/prism-theme-one-dark */
-code[class*='language-'],
-pre[class*='language-'] {
+code[class*="language-"],
+pre[class*="language-"] {
   text-align: left !important;
   white-space: pre !important;
   word-spacing: normal !important;
@@ -412,7 +412,7 @@ pre[class*='language-'] {
   hyphens: none !important;
 }
 
-pre[class*='language-'] {
+pre[class*="language-"] {
   padding: 1em !important;
   margin: 0.5em 0 !important;
   overflow: auto !important;
@@ -428,7 +428,7 @@ pre[class*='language-'] {
   color: var(--inline-code-color, var(--color-green-3)) !important;
 }
 
-:not(pre) > code[class*='language-'] {
+:not(pre) > code[class*="language-"] {
   padding: 0.1em !important;
   border-radius: 0.3em !important;
   white-space: normal !important;

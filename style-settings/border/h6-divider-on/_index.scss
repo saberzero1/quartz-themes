@@ -4,7 +4,7 @@ body
     .markdown-preview-sizer > div > h6,
     .HyperMD-header-6
   )::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 1px;
   width: 100%;
@@ -18,7 +18,7 @@ body
   );
 }
 body h6::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 1px;
   width: 100%;

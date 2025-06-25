@@ -4,22 +4,22 @@
 
 .composer--ParagraphIndent
   .markdown-reading-view
-  :is([class='cm-line'], [class='cm-active cm-line'], p),
+  :is([class="cm-line"], [class="cm-active cm-line"], p),
 .composer--ParagraphIndent
   .is-live-preview
-  :is([class='cm-line'], [class='cm-active cm-line'], p) {
+  :is([class="cm-line"], [class="cm-active cm-line"], p) {
   text-indent: var(--paragraph-indent);
 }
 
 .composer--ParagraphIndent .markdown-reading-view p > br,
 .composer--ParagraphIndent .is-live-preview p > br {
-  content: '';
+  content: "";
   white-space: pre;
 }
 
 .composer--ParagraphIndent .markdown-reading-view p > br::after,
 .composer--ParagraphIndent .is-live-preview p > br::after {
-  content: '\000A\200B';
+  content: "\000A\200B";
   margin-inline-end: var(--paragraph-indent);
 }
 
@@ -31,11 +31,11 @@
 .composer--ParagraphIndent
   .table-cell-wrapper
   .markdown-reading-view
-  :is([class='cm-line'], [class='cm-active cm-line'], p),
+  :is([class="cm-line"], [class="cm-active cm-line"], p),
 .composer--ParagraphIndent
   .table-cell-wrapper
   .is-live-preview
-  :is([class='cm-line'], [class='cm-active cm-line'], p) {
+  :is([class="cm-line"], [class="cm-active cm-line"], p) {
   text-indent: initial;
 }
 

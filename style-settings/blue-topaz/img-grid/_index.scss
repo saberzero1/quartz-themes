@@ -1,22 +1,22 @@
 :is(.markdown-preview-section, .markdown-rendered)
   > div
   > p
-  > .image-embed[alt*='.']:last-child {
+  > .image-embed[alt*="."]:last-child {
   padding-right: 0;
 }
 :is(.markdown-preview-section, .markdown-rendered)
   > div
   > p
-  > .image-embed[alt*='.']:first-child {
+  > .image-embed[alt*="."]:first-child {
   padding-left: 0;
 }
 :is(.markdown-preview-section, .markdown-rendered) > div hr {
   width: 100%;
 }
-span.image-embed[alt*='.'] {
+span.image-embed[alt*="."] {
   display: table-cell;
 }
-img[alt*='.'] {
+img[alt*="."] {
   max-height: 100vh;
   object-fit: cover;
 }

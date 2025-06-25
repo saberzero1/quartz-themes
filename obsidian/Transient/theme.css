@@ -14,6 +14,6 @@
   background-color: var(--color-base-00);
 }
 
-input[type='checkbox']:checked:after {
+input[type="checkbox"]:checked:after {
   background-color: #000000;
 }

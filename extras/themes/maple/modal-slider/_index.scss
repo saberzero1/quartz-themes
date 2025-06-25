@@ -1,4 +1,4 @@
-body.modal-slider input[type='range']::-webkit-slider-thumb {
+body.modal-slider input[type="range"]::-webkit-slider-thumb {
   height: 1.6em;
   width: var(--size-4-1);
   background-color: var(--text-muted);
@@ -8,6 +8,6 @@ body.modal-slider input[type='range']::-webkit-slider-thumb {
   border-radius: var(--radius-m);
 }
 
-body.modal-slider input[type='range']::-webkit-slider-thumb:hover {
+body.modal-slider input[type="range"]::-webkit-slider-thumb:hover {
   box-shadow: none;
 }

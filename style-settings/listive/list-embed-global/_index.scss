@@ -1,5 +1,5 @@
 :is(.HyperMD-list-line, li)
-  .internal-embed.is-loaded.markdown-embed:not([alt*='.excalidraw']):has(
+  .internal-embed.is-loaded.markdown-embed:not([alt*=".excalidraw"]):has(
     .markdown-preview-section > div > ul
   ) {
   margin: 0 0 0 calc(var(--list-embed-margin) + var(--list-embed-adj));
@@ -18,14 +18,14 @@
   display: none;
 }
 :is(.HyperMD-list-line, li)
-  .internal-embed.is-loaded.markdown-embed:not([alt*='.excalidraw']) {
+  .internal-embed.is-loaded.markdown-embed:not([alt*=".excalidraw"]) {
   width: calc(100% - 1px);
 }
 .HyperMD-list-line .markdown-embed .markdown-preview-view {
   padding-bottom: 0;
 }
 :is(.HyperMD-list-line, li):has(.snw-reference)
-  .internal-embed.is-loaded.markdown-embed:not([alt*='.excalidraw']):not(
+  .internal-embed.is-loaded.markdown-embed:not([alt*=".excalidraw"]):not(
     :has(.markdown-preview-section > div > ul)
   ) {
   width: calc(100% - 25px);

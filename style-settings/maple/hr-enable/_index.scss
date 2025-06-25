@@ -16,7 +16,7 @@ body :is(.markdown-source-view.mod-cm6, .markdown-rendered) hr {
   );
 }
 body :is(.markdown-source-view.mod-cm6, .markdown-rendered) hr::after {
-  content: var(--setting-hr-icon, '⭐');
+  content: var(--setting-hr-icon, "⭐");
   display: inline-block;
   font-family: var(--font-monospace);
   font-size: var(--font-ui-small);

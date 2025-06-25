@@ -19,7 +19,7 @@ body {
 -title {
   /* added the class so that it can only work when the editor is using the variable line length setting */
 }
--title .workspace-leaf-content[data-type='markdown'] {
+-title .workspace-leaf-content[data-type="markdown"] {
   /*
 max-width: var(--width-vll);
 margin: auto;
@@ -27,7 +27,7 @@ margin: auto;
   /* does not work */
   /* does this work? */
 }
--title .workspace-leaf-content[data-type='markdown'] div.view-header {
+-title .workspace-leaf-content[data-type="markdown"] div.view-header {
   box-sizing: border-box;
   max-width: 100%;
   --padding-math-vll: max(50% - 0.5 * var(--width-vll), var(--file-margins));

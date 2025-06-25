@@ -85,7 +85,7 @@ body.adwaita-mod-always
 body.adwaita-mod-always
   .titlebar-button-container.mod-right
   .titlebar-button::after {
-  content: '';
+  content: "";
   background-color: currentColor;
   width: 16px;
   height: 16px;
@@ -155,7 +155,7 @@ body.adwaita-mod-always .modal-close-button {
 }
 
 body.adwaita-mod-always .modal-close-button:before {
-  content: '';
+  content: "";
   display: block;
   width: 16px;
   height: 16px;

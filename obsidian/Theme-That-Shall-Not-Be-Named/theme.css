@@ -380,7 +380,7 @@ em {
 
 /* Color of the check itself */
 .markdown-preview-view .task-list-item-checkbox:checked::before {
-  content: ' ';
+  content: " ";
   position: absolute;
   background-color: var(--silver-bright);
   left: 2px;

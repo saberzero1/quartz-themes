@@ -515,13 +515,13 @@ div.callout-icon {
   }
 }
 
-.callout[data-callout='note'] {
+.callout[data-callout="note"] {
   background-color: var(--bg-hard-accent);
 
   /* --callout-icon: code-xml; */
   /* .callout-icon {
         display: none;
-        background-image: url('data:image/svg+xml;utf8,<svg fill="none" stroke="%23a7ab93" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 20h9"></path><path d="M12 4h9"></path><path d="M4 9h16"></path><path d="M4 15h16"></path></svg>');
+        background-image: url("data:image/svg+xml,utf8,<svg fill='none' stroke='%23a7ab93' stroke-width='2' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M12 20h9'></path><path d='M12 4h9'></path><path d='M4 9h16'></path><path d='M4 15h16'></path></svg>");
     } */
 }
 
@@ -532,13 +532,13 @@ div.callout-icon {
     width: 16px;
     height: 16px;
     margin-right: 8px;
-    background-image: url('data:image/svg+xml;utf8,<svg fill="none" stroke="%23a7ab93" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 20h9"></path><path d="M12 4h9"></path><path d="M4 9h16"></path><path d="M4 15h16"></path></svg>');
+    background-image: url("data:image/svg+xml,utf8,<svg fill='none' stroke='%23a7ab93' stroke-width='2' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M12 20h9'></path><path d='M12 4h9'></path><path d='M4 9h16'></path><path d='M4 15h16'></path></svg>");
     background-size: contain;
     background-repeat: no-repeat;
     vertical-align: middle;
 } */
 
-[data-callout='info'] {
+[data-callout="info"] {
   color: var(--text);
   background-color: var(--orange-rgba);
 }
@@ -547,15 +547,15 @@ div.callout-icon {
     background-color: var(--red-rgba);
 } */
 
-[data-callout='success'] {
+[data-callout="success"] {
   background-color: var(--green-rgba);
 }
 
-[data-callout='warning'] {
+[data-callout="warning"] {
   background-color: var(--yellow-rgba);
 }
 
-[data-callout='tip'] {
+[data-callout="tip"] {
   background-color: var(--blue-rgba);
 }
 

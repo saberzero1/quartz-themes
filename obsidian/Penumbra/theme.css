@@ -235,7 +235,7 @@
   right: -0.5px;
   width: 1px;
   background-color: var(--tab-divider-color);
-  content: '';
+  content: "";
   height: 20px;
 }
 
@@ -347,8 +347,8 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged,
 }
 
 /* Code syntax highlighting */
-code[class*='language-'],
-pre[class*='language-'] {
+code[class*="language-"],
+pre[class*="language-"] {
   text-align: left !important;
   white-space: pre !important;
   word-spacing: normal !important;
@@ -360,14 +360,14 @@ pre[class*='language-'] {
 }
 
 /* Code blocks */
-pre[class*='language-'] {
+pre[class*="language-"] {
   padding: 1em !important;
   margin: 0.5em 0 !important;
   overflow: auto !important;
   background: var(--barckground-secondary);
 }
 /* Inline code */
-:not(pre) > code[class*='language-'] {
+:not(pre) > code[class*="language-"] {
   padding: 0.1em !important;
   border-radius: 0.3em !important;
   white-space: normal !important;

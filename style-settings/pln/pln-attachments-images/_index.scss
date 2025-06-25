@@ -1,5 +1,5 @@
-& .nav-file:has([data-path$='.jpg']),
-& .nav-file:has([data-path$='.jpeg']),
-& .nav-file:has([data-path$='.png']) {
+& .nav-file:has([data-path$=".jpg"]),
+& .nav-file:has([data-path$=".jpeg"]),
+& .nav-file:has([data-path$=".png"]) {
   display: contents !important;
 }

@@ -103,7 +103,7 @@ body {
   .vertical-tab-content
   > .setting-item:nth-child(2)
   > .setting-item-control
-  > input[type='color'] {
+  > input[type="color"] {
   visibility: hidden;
   width: 12rem;
 }
@@ -118,9 +118,9 @@ body {
   .vertical-tab-content
   > .setting-item:nth-child(2)
   > .setting-item-control
-  > input[type='color']::before {
+  > input[type="color"]::before {
   visibility: visible;
-  content: 'Open the Style Settings plugin to pick your accent colors.';
+  content: "Open the Style Settings plugin to pick your accent colors.";
   color: var(--text-error);
   font-size: var(--font-ui-smaller);
 }

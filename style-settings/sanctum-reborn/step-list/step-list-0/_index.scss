@@ -5,7 +5,7 @@
   counter-reset: decimal;
 }
 -0 ol > li::before {
-  content: 'Step ' counters(decimal, '.') ': ';
+  content: "Step " counters(decimal, ".") ": ";
   counter-increment: decimal;
   color: var(--text-faint);
   margin-left: -1.1em;

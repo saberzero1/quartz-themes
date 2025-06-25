@@ -11,7 +11,7 @@ body.enable-icon-anima div.nav-header:hover {
 body.enable-icon-anima
   :is(.workspace-ribbon, .nav-header)
   .clickable-icon:before {
-  content: '';
+  content: "";
   background-color: var(--theme-color-translucent-01);
   position: absolute;
   width: 20px;
@@ -29,7 +29,7 @@ body.enable-icon-anima
 body.enable-icon-anima
   :is(.workspace-ribbon, .nav-header)
   .clickable-icon:after {
-  content: '';
+  content: "";
   background-color: var(--theme-color-translucent-01);
   position: absolute;
   width: 20px;

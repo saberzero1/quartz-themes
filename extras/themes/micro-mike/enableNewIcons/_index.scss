@@ -40,17 +40,17 @@
   background-size: calc(var(--editorTabHeightStack) * 0.8);
 }
 
-.enableNewIcons .clickable-icon[aria-label='Settings'] {
+.enableNewIcons .clickable-icon[aria-label="Settings"] {
   color: green;
   background-image: var(--iconSettings);
 }
 
-.enableNewIcons .clickable-icon[aria-label='Help'] {
+.enableNewIcons .clickable-icon[aria-label="Help"] {
   color: green;
   background-image: var(--iconHelp);
 }
 
-.enableNewIcons .clickable-icon[aria-label='Open another vault'] {
+.enableNewIcons .clickable-icon[aria-label="Open another vault"] {
   color: green;
   background-image: var(--iconAnotherVault);
 }
@@ -60,82 +60,82 @@
   background-image: var(--iconSidebarToggle);
 }
 
-.enableNewIcons .clickable-icon[aria-label*='Toggle Focus Mode'] {
+.enableNewIcons .clickable-icon[aria-label*="Toggle Focus Mode"] {
   color: green;
   background-image: var(--iconFocus);
 }
 
-.enableNewIcons .clickable-icon[aria-label='Open homepage'] {
+.enableNewIcons .clickable-icon[aria-label="Open homepage"] {
   color: green;
   background-image: var(--iconHome);
 }
 
-.enableNewIcons .clickable-icon[aria-label='Open graph view'] {
+.enableNewIcons .clickable-icon[aria-label="Open graph view"] {
   color: green;
   background-image: var(--iconGraph);
 }
 
-.enableNewIcons .clickable-icon[aria-label='Insert template'] {
+.enableNewIcons .clickable-icon[aria-label="Insert template"] {
   color: green;
   background-image: var(--iconTemplate);
 }
 
-.enableNewIcons .clickable-icon[aria-label='Open command palette'] {
+.enableNewIcons .clickable-icon[aria-label="Open command palette"] {
   color: green;
   background-image: var(--iconCommandPalette);
 }
 
-.enableNewIcons .clickable-icon[aria-label='Open today'] {
+.enableNewIcons .clickable-icon[aria-label="Open today"] {
   color: green;
   background-image: var(--iconToday);
 }
 
-.enableNewIcons .workspace-tab-header[aria-label='Files'] {
+.enableNewIcons .workspace-tab-header[aria-label="Files"] {
   color: green;
   background-image: var(--iconFileExplorer);
 }
 
-.enableNewIcons .workspace-tab-header[aria-label='Recent Files'] {
+.enableNewIcons .workspace-tab-header[aria-label="Recent Files"] {
   color: green;
   background-image: var(--iconRecentFiles);
 }
 
-.enableNewIcons .workspace-tab-header[aria-label='Bookmarks'] {
+.enableNewIcons .workspace-tab-header[aria-label="Bookmarks"] {
   color: green;
   background-image: var(--iconStarred);
 }
 
-.enableNewIcons .workspace-tab-header[aria-label='Tags'] {
+.enableNewIcons .workspace-tab-header[aria-label="Tags"] {
   color: green;
   background-image: var(--iconTags);
 }
 
-.enableNewIcons .workspace-tab-header[aria-label='Search'] {
+.enableNewIcons .workspace-tab-header[aria-label="Search"] {
   color: green;
   background-image: var(--iconSearch);
 }
 
-.enableNewIcons .clickable-icon[aria-label='New note'] {
+.enableNewIcons .clickable-icon[aria-label="New note"] {
   color: green;
   background-image: var(--iconNote);
 }
 
-.enableNewIcons .clickable-icon[aria-label='New folder'] {
+.enableNewIcons .clickable-icon[aria-label="New folder"] {
   color: green;
   background-image: var(--iconNewFolder);
 }
 
-.enableNewIcons .clickable-icon[aria-label='Change sort order'] {
+.enableNewIcons .clickable-icon[aria-label="Change sort order"] {
   color: green;
   background-image: var(--iconSortOrder);
 }
 
-.enableNewIcons .clickable-icon[aria-label='Collapse all'] {
+.enableNewIcons .clickable-icon[aria-label="Collapse all"] {
   color: green;
   background-image: var(--iconExpand);
 }
 
-.enableNewIcons .clickable-icon[aria-label='Expand all'] {
+.enableNewIcons .clickable-icon[aria-label="Expand all"] {
   color: green;
   background-image: var(--iconCollapse);
 }
@@ -145,77 +145,77 @@
   background-image: var(--iconActiveFile);
 }
 
-.enableNewIcons .clickable-icon[aria-label='Match case'] {
+.enableNewIcons .clickable-icon[aria-label="Match case"] {
   color: green;
   background-image: var(--iconCase);
 }
 
-.enableNewIcons .clickable-icon[aria-label='Explain search term'] {
+.enableNewIcons .clickable-icon[aria-label="Explain search term"] {
   color: green;
   background-image: var(--iconHelp);
 }
 
-.enableNewIcons .clickable-icon[aria-label='Collapse results'] {
+.enableNewIcons .clickable-icon[aria-label="Collapse results"] {
   color: green;
   background-image: var(--iconExpand);
 }
 
-.enableNewIcons .clickable-icon[aria-label='Show more context'] {
+.enableNewIcons .clickable-icon[aria-label="Show more context"] {
   color: green;
   background-image: var(--iconPlus);
 }
 
-.enableNewIcons .clickable-icon[aria-label='Copy search results'] {
+.enableNewIcons .clickable-icon[aria-label="Copy search results"] {
   color: green;
   background-image: var(--iconCopy);
 }
 
-.enableNewIcons .clickable-icon[aria-label='Change sort order'] {
+.enableNewIcons .clickable-icon[aria-label="Change sort order"] {
   color: green;
   background-image: var(--iconSortOrder);
 }
 
-.enableNewIcons .clickable-icon[aria-label='Show nested tags'] {
+.enableNewIcons .clickable-icon[aria-label="Show nested tags"] {
   color: green;
   background-image: var(--iconNested);
 }
 
-.enableNewIcons .clickable-icon[aria-label='Navigate back'] {
+.enableNewIcons .clickable-icon[aria-label="Navigate back"] {
   color: green;
   background-image: var(--iconBack);
 }
 
-.enableNewIcons .clickable-icon[aria-label='Navigate forward'] {
+.enableNewIcons .clickable-icon[aria-label="Navigate forward"] {
   color: green;
   background-image: var(--iconForward);
 }
 
-.enableNewIcons .clickable-icon[aria-label*='Current view: reading'] {
+.enableNewIcons .clickable-icon[aria-label*="Current view: reading"] {
   color: green;
   background-image: var(--iconPreview);
 }
 
-.enableNewIcons .clickable-icon[aria-label*='Current view: editing'] {
+.enableNewIcons .clickable-icon[aria-label*="Current view: editing"] {
   color: green;
   background-image: var(--iconEditor);
 }
 
-.enableNewIcons .clickable-icon[aria-label='More options'] {
+.enableNewIcons .clickable-icon[aria-label="More options"] {
   color: green;
   background-image: var(--iconSettings);
 }
 
-.enableNewIcons .clickable-icon[aria-label='Star/unstar current file'] {
+.enableNewIcons .clickable-icon[aria-label="Star/unstar current file"] {
   color: green;
   background-image: var(--iconNote);
 }
 
-.enableNewIcons .clickable-icon[aria-label='Star/unstar current search'] {
+.enableNewIcons .clickable-icon[aria-label="Star/unstar current search"] {
   color: green;
   background-image: var(--iconFocus);
 }
 
-.enableNewIcons .clickable-icon[aria-label='New tab'] {
+.enableNewIcons .clickable-icon[aria-label="New tab"] {
   color: green;
   background-image: var(--iconPlus);
 }
@@ -225,33 +225,33 @@
   background-image: var(--iconStack);
 }
 
-.enableNewIcons .workspace-tab-header[aria-label='Outline'],
-.enableNewIcons .workspace-tab-header[aria-label*='Outline'] {
+.enableNewIcons .workspace-tab-header[aria-label="Outline"],
+.enableNewIcons .workspace-tab-header[aria-label*="Outline"] {
   color: green;
   background-image: var(--iconOutline);
 }
 
-.enableNewIcons .clickable-icon[aria-label='Manage workspace layouts'] {
+.enableNewIcons .clickable-icon[aria-label="Manage workspace layouts"] {
   color: green;
   background-image: var(--iconLayout);
 }
 
-.enableNewIcons .clickable-icon[aria-label='Create new unique note'] {
+.enableNewIcons .clickable-icon[aria-label="Create new unique note"] {
   color: green;
   background-image: var(--iconUniqueNote);
 }
 
-.enableNewIcons .clickable-icon[aria-label='Open random note'] {
+.enableNewIcons .clickable-icon[aria-label="Open random note"] {
   color: green;
   background-image: var(--iconRandomNote);
 }
 
-.enableNewIcons .clickable-icon[aria-label='Publish changes'] {
+.enableNewIcons .clickable-icon[aria-label="Publish changes"] {
   color: green;
   background-image: var(--iconPublish);
 }
 
-.enableNewIcons .clickable-icon[aria-label='Open format converter'] {
+.enableNewIcons .clickable-icon[aria-label="Open format converter"] {
   color: green;
   background-image: var(--iconConvert);
 }
@@ -261,128 +261,128 @@
   background-image: var(--iconToday);
 }
 
-.enableNewIcons .clickable-icon[aria-label='Start/stop recording'] {
+.enableNewIcons .clickable-icon[aria-label="Start/stop recording"] {
   color: green;
   background-image: var(--iconRecord);
 }
 
-.enableNewIcons .workspace-tab-header[aria-label*='Backlinks'] {
+.enableNewIcons .workspace-tab-header[aria-label*="Backlinks"] {
   color: green;
   background-image: var(--iconBacklinks);
 }
 
-.enableNewIcons .workspace-tab-header[aria-label*='Outgoing'] {
+.enableNewIcons .workspace-tab-header[aria-label*="Outgoing"] {
   color: green;
   background-image: var(--iconOutgoing);
 }
 
-.enableNewIcons .workspace-tab-header[aria-label='Graph view'] {
+.enableNewIcons .workspace-tab-header[aria-label="Graph view"] {
   color: green;
   background-image: var(--iconGraph);
 }
 
-.enableNewIcons .clickable-icon[aria-label='Show search filter'] {
+.enableNewIcons .clickable-icon[aria-label="Show search filter"] {
   color: green;
   background-image: var(--iconSearch);
 }
 
 .enableNewIcons
-  .workspace-tab-header[data-type='markdown']:not(
-    .mod-root .workspace-tab-header[data-type='markdown']
+  .workspace-tab-header[data-type="markdown"]:not(
+    .mod-root .workspace-tab-header[data-type="markdown"]
   ) {
   color: green;
   background-image: var(--iconNote);
 }
 
-.enableNewIcons .clickable-icon[aria-label='Open quick switcher'] {
+.enableNewIcons .clickable-icon[aria-label="Open quick switcher"] {
   color: green;
   background-image: var(--iconQuickSwitcher);
 }
 
-.enableNewIcons .clickable-icon[aria-label='New group'] {
+.enableNewIcons .clickable-icon[aria-label="New group"] {
   background-image: var(--iconNewFolder);
 }
 
-.enableNewIcons .clickable-icon[aria-label='Bookmark the active tab...'] {
+.enableNewIcons .clickable-icon[aria-label="Bookmark the active tab..."] {
   background-image: var(--iconPlus);
 }
 
-.enableNewIcons .clickable-icon[aria-label='Create new canvas'] {
+.enableNewIcons .clickable-icon[aria-label="Create new canvas"] {
   background-image: var(--iconPreview);
 }
 
-.enableNewIcons .clickable-icon[aria-label='Publish changes...'] {
+.enableNewIcons .clickable-icon[aria-label="Publish changes..."] {
   background-image: var(--iconGlobe);
 }
 
-.enableNewIcons .clickable-icon[aria-label='All properties'] {
+.enableNewIcons .clickable-icon[aria-label="All properties"] {
   background-image: var(--iconDrawCanvas);
 }
 
-All properties .enableNewIcons .clickable-icon[aria-label='Settings'] svg,
-.enableNewIcons .clickable-icon[aria-label='Help'] svg,
-.enableNewIcons .clickable-icon[aria-label='Open another vault'] svg,
+All properties .enableNewIcons .clickable-icon[aria-label="Settings"] svg,
+.enableNewIcons .clickable-icon[aria-label="Help"] svg,
+.enableNewIcons .clickable-icon[aria-label="Open another vault"] svg,
 .enableNewIcons .sidebar-toggle-button .clickable-icon svg,
-.enableNewIcons .clickable-icon[aria-label*='Toggle Focus Mode'] svg,
-.enableNewIcons .clickable-icon[aria-label='Open homepage'] svg,
-.enableNewIcons .clickable-icon[aria-label='Open graph view'] svg,
-.enableNewIcons .clickable-icon[aria-label='Insert template'] svg,
-.enableNewIcons .clickable-icon[aria-label='Open command palette'] svg,
-.enableNewIcons .clickable-icon[aria-label='Open today'] svg,
-.enableNewIcons .workspace-tab-header[aria-label='Files'] svg,
-.enableNewIcons .workspace-tab-header[aria-label='Recent Files'] svg,
-.enableNewIcons .workspace-tab-header[aria-label='Bookmarks'] svg,
-.enableNewIcons .workspace-tab-header[aria-label='Tags'] svg,
-.enableNewIcons .workspace-tab-header[aria-label='Search'] svg,
-.enableNewIcons .clickable-icon[aria-label='New note'] svg,
-.enableNewIcons .clickable-icon[aria-label='New folder'] svg,
-.enableNewIcons .clickable-icon[aria-label='Change sort order'] svg,
-.enableNewIcons .clickable-icon[aria-label='Collapse all'] svg,
-.enableNewIcons .clickable-icon[aria-label='Expand all'] svg,
+.enableNewIcons .clickable-icon[aria-label*="Toggle Focus Mode"] svg,
+.enableNewIcons .clickable-icon[aria-label="Open homepage"] svg,
+.enableNewIcons .clickable-icon[aria-label="Open graph view"] svg,
+.enableNewIcons .clickable-icon[aria-label="Insert template"] svg,
+.enableNewIcons .clickable-icon[aria-label="Open command palette"] svg,
+.enableNewIcons .clickable-icon[aria-label="Open today"] svg,
+.enableNewIcons .workspace-tab-header[aria-label="Files"] svg,
+.enableNewIcons .workspace-tab-header[aria-label="Recent Files"] svg,
+.enableNewIcons .workspace-tab-header[aria-label="Bookmarks"] svg,
+.enableNewIcons .workspace-tab-header[aria-label="Tags"] svg,
+.enableNewIcons .workspace-tab-header[aria-label="Search"] svg,
+.enableNewIcons .clickable-icon[aria-label="New note"] svg,
+.enableNewIcons .clickable-icon[aria-label="New folder"] svg,
+.enableNewIcons .clickable-icon[aria-label="Change sort order"] svg,
+.enableNewIcons .clickable-icon[aria-label="Collapse all"] svg,
+.enableNewIcons .clickable-icon[aria-label="Expand all"] svg,
 .enableNewIcons .nav-action-button.reveal-active-file-button svg,
-.enableNewIcons .clickable-icon[aria-label='Match case'] svg,
-.enableNewIcons .clickable-icon[aria-label='Explain search term'] svg,
-.enableNewIcons .clickable-icon[aria-label='Collapse results'] svg,
-.enableNewIcons .clickable-icon[aria-label='Show more context'] svg,
-.enableNewIcons .clickable-icon[aria-label='Copy search results'] svg,
-.enableNewIcons .clickable-icon[aria-label='Change sort order'] svg,
-.enableNewIcons .clickable-icon[aria-label='Show nested tags'] svg,
-.enableNewIcons .clickable-icon[aria-label='Navigate back'] svg,
-.enableNewIcons .clickable-icon[aria-label='Navigate forward'] svg,
-.enableNewIcons .clickable-icon[aria-label*='Current view: reading'] svg,
-.enableNewIcons .clickable-icon[aria-label*='Current view: editing'] svg,
-.enableNewIcons .clickable-icon[aria-label='More options'] svg,
-.enableNewIcons .clickable-icon[aria-label='Star/unstar current file'] svg,
-.enableNewIcons .clickable-icon[aria-label='Star/unstar current search'] svg,
-.enableNewIcons .clickable-icon[aria-label='New tab'] svg,
+.enableNewIcons .clickable-icon[aria-label="Match case"] svg,
+.enableNewIcons .clickable-icon[aria-label="Explain search term"] svg,
+.enableNewIcons .clickable-icon[aria-label="Collapse results"] svg,
+.enableNewIcons .clickable-icon[aria-label="Show more context"] svg,
+.enableNewIcons .clickable-icon[aria-label="Copy search results"] svg,
+.enableNewIcons .clickable-icon[aria-label="Change sort order"] svg,
+.enableNewIcons .clickable-icon[aria-label="Show nested tags"] svg,
+.enableNewIcons .clickable-icon[aria-label="Navigate back"] svg,
+.enableNewIcons .clickable-icon[aria-label="Navigate forward"] svg,
+.enableNewIcons .clickable-icon[aria-label*="Current view: reading"] svg,
+.enableNewIcons .clickable-icon[aria-label*="Current view: editing"] svg,
+.enableNewIcons .clickable-icon[aria-label="More options"] svg,
+.enableNewIcons .clickable-icon[aria-label="Star/unstar current file"] svg,
+.enableNewIcons .clickable-icon[aria-label="Star/unstar current search"] svg,
+.enableNewIcons .clickable-icon[aria-label="New tab"] svg,
 .enableNewIcons .workspace-tab-header-tab-list .clickable-icon svg,
-.enableNewIcons .workspace-tab-header[aria-label='Outline'] svg,
-.enableNewIcons .workspace-tab-header[aria-label*='Outline'] svg,
-.enableNewIcons .clickable-icon[aria-label='Manage workspace layouts'] svg,
-.enableNewIcons .clickable-icon[aria-label='Create new unique note'] svg,
-.enableNewIcons .clickable-icon[aria-label='Open random note'] svg,
-.enableNewIcons .clickable-icon[aria-label='Publish changes'] svg,
-.enableNewIcons .clickable-icon[aria-label='Open format converter'] svg,
+.enableNewIcons .workspace-tab-header[aria-label="Outline"] svg,
+.enableNewIcons .workspace-tab-header[aria-label*="Outline"] svg,
+.enableNewIcons .clickable-icon[aria-label="Manage workspace layouts"] svg,
+.enableNewIcons .clickable-icon[aria-label="Create new unique note"] svg,
+.enableNewIcons .clickable-icon[aria-label="Open random note"] svg,
+.enableNewIcons .clickable-icon[aria-label="Publish changes"] svg,
+.enableNewIcons .clickable-icon[aria-label="Open format converter"] svg,
 .enableNewIcons .clickable-icon[aria-label="Open today's daily note"] svg,
-.enableNewIcons .clickable-icon[aria-label='Start/stop recording'] svg,
-.enableNewIcons .workspace-tab-header[aria-label*='Backlinks'] svg,
-.enableNewIcons .workspace-tab-header[aria-label*='Outgoing'] svg,
-.enableNewIcons .workspace-tab-header[aria-label='Graph view'] svg,
-.enableNewIcons .clickable-icon[aria-label='Show search filter'] svg,
+.enableNewIcons .clickable-icon[aria-label="Start/stop recording"] svg,
+.enableNewIcons .workspace-tab-header[aria-label*="Backlinks"] svg,
+.enableNewIcons .workspace-tab-header[aria-label*="Outgoing"] svg,
+.enableNewIcons .workspace-tab-header[aria-label="Graph view"] svg,
+.enableNewIcons .clickable-icon[aria-label="Show search filter"] svg,
 .enableNewIcons
-  .workspace-tab-header[data-type='markdown']:not(
-    .mod-root .workspace-tab-header[data-type='markdown']
+  .workspace-tab-header[data-type="markdown"]:not(
+    .mod-root .workspace-tab-header[data-type="markdown"]
   )
   svg,
-.enableNewIcons .clickable-icon[aria-label='Open quick switcher'] svg,
-.enableNewIcons .clickable-icon[aria-label='New group'] svg,
-.enableNewIcons .clickable-icon[aria-label='Bookmark the active tab...'] svg,
-.enableNewIcons .clickable-icon[aria-label='Create new canvas'] svg,
-.enableNewIcons .clickable-icon[aria-label='Publish changes...'] svg,
-.enableNewIcons .clickable-icon[aria-label='All properties'] svg {
+.enableNewIcons .clickable-icon[aria-label="Open quick switcher"] svg,
+.enableNewIcons .clickable-icon[aria-label="New group"] svg,
+.enableNewIcons .clickable-icon[aria-label="Bookmark the active tab..."] svg,
+.enableNewIcons .clickable-icon[aria-label="Create new canvas"] svg,
+.enableNewIcons .clickable-icon[aria-label="Publish changes..."] svg,
+.enableNewIcons .clickable-icon[aria-label="All properties"] svg {
   display: none;
 }
 
-.enableNewIcons .clickable-icon[aria-label='Settings'] svg {
+.enableNewIcons .clickable-icon[aria-label="Settings"] svg {
   display: none;
 }

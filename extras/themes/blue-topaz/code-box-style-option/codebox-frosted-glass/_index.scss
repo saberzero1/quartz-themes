@@ -1,9 +1,9 @@
-body.codebox-frosted-glass .canvas-node-container pre[class*='language-'] {
+body.codebox-frosted-glass .canvas-node-container pre[class*="language-"] {
   backdrop-filter: none;
 }
 
 body.codebox-frosted-glass .cm-s-obsidian div.HyperMD-codeblock-bg,
-body.codebox-frosted-glass :not(pre) > code[class*='language-'],
-body.codebox-frosted-glass pre[class*='language-'] {
+body.codebox-frosted-glass :not(pre) > code[class*="language-"],
+body.codebox-frosted-glass pre[class*="language-"] {
   backdrop-filter: blur(calc(var(--blur-codebox-frosted-glass) * 2px));
 }

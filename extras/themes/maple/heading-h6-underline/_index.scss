@@ -9,7 +9,7 @@ body.heading-h6-underline :is(h6, .HyperMD-header-6) {
 }
 
 body.heading-h6-underline :is(h6, .HyperMD-header-6)::after {
-  content: '';
+  content: "";
   position: absolute;
   height: var(--size-4-1);
   width: 100%;

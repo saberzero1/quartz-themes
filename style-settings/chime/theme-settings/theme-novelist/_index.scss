@@ -1,17 +1,17 @@
 .theme-novelist {
   --font-default:
-    Merriweather, Georgia, 'Libre Baskerville', 'Baskerville Old Face',
-    'Book Antiqua', sans-serif;
+    Merriweather, Georgia, "Libre Baskerville", "Baskerville Old Face",
+    "Book Antiqua", sans-serif;
 }
 .theme-novelist .markdown-preview-view br {
-  content: '';
+  content: "";
   display: block;
   margin-top: 10px;
 }
 .theme-novelist:not(.is-mobile) .markdown-rendered hr::before,
 .theme-novelist .markdown-source-view hr::before {
   font-size: 1.5em;
-  content: '🕮';
+  content: "🕮";
   font-weight: 500;
   display: inline-block;
   position: absolute;

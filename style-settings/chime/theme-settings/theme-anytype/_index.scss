@@ -12,7 +12,7 @@
 .h6-bottom-border.colorful-headings.theme-anytype .HyperMD-header-6 {
   border-bottom: none;
 }
-.checkbox-anytype input[type='checkbox']:checked:after {
+.checkbox-anytype input[type="checkbox"]:checked:after {
   background-color: #1eabeb;
 }
 .colored-bold-and-italic {
@@ -72,7 +72,7 @@
   --callout-title-color: var(--text-normal);
   --callout-quote: 216, 216, 216;
   --callout-radius: 5px;
-  --font-default: 'Inter', 'Aevnir Next', sans-serif;
+  --font-default: "Inter", "Aevnir Next", sans-serif;
   --color-red-rgb: 220, 83, 40;
   --color-red: #dc5328;
   --color-green-rgb: 139, 208, 49;

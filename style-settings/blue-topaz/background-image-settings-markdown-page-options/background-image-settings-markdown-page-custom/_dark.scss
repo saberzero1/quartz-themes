@@ -1,6 +1,6 @@
 body.background-image-settings-switch.theme-dark
   .workspace-split.mod-root
   .workspace-leaf
-  .workspace-leaf-content[data-type='markdown']::before {
+  .workspace-leaf-content[data-type="markdown"]::before {
   background-image: var(--background-markdown-page-theme-dark-custom);
 }

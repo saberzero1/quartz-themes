@@ -62,7 +62,7 @@ body {
   --toggle-radius: 5px;
   --toggle-thumb-radius: 5px;
 
-  .workspace-leaf-content[data-type='markdown'] .view-content {
+  .workspace-leaf-content[data-type="markdown"] .view-content {
     background-image: radial-gradient(
       circle at 1px 1px,
       #dddddd 1px,

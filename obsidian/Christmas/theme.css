@@ -70,12 +70,12 @@ body:before,
 body:after,
 html:before,
 html:after {
-  content: '';
+  content: "";
   position: fixed;
   bottom: 0;
   right: 0;
   left: 0;
-  background-image: url(https://freepngimg.com/download/winter_snow/6-2-clear-snow-png.png);
+  background-image: url("https://freepngimg.com/download/winter_snow/6-2-clear-snow-png.png");
   opacity: 0.5;
   animation: MOVE-BG 500s linear infinite;
   z-index: 100;

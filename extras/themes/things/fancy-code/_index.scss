@@ -54,16 +54,16 @@ body.fancy-code .cm-line.HyperMD-codeblock .code-block-flair {
   top: 0;
 }
 
-body.fancy-code .markdown-reading-view pre[class*='language-']::before {
+body.fancy-code .markdown-reading-view pre[class*="language-"]::before {
   display: block;
-  content: ' ';
+  content: " ";
   line-height: 1.5em;
   background-color: var(--code-block-alt-bg);
   border-top-right-radius: calc(var(--codeblock-roundness) * 0.8);
   border-top-left-radius: calc(var(--codeblock-roundness) * 0.8);
 }
 
-body.fancy-code pre[class*='language-']::after {
+body.fancy-code pre[class*="language-"]::after {
   content: attr(class);
   font-size: 0.9rem;
   text-shadow: none;

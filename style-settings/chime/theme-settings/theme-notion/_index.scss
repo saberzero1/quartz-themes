@@ -36,8 +36,8 @@
   --accent-l: 51% !important;
   --callout-quote: 120, 119, 116;
   --font-default:
-    -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
-    'Apple Color Emoji', Arial, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 }
 .colorful-headings-alt h2,
 .colorful-headings-alt .HyperMD-header-2,
@@ -63,12 +63,12 @@
 .theme-notion .markdown-rendered blockquote {
   border-color: var(--text-normal);
 }
-.theme-notion input[type='checkbox']:not(:checked) {
+.theme-notion input[type="checkbox"]:not(:checked) {
   border: 1.7px solid var(--text-normal);
 }
 .theme-notion {
   --list-marker-color: var(--text-normal);
 }
-.theme-notion input[type='checkbox'] {
+.theme-notion input[type="checkbox"] {
   border-radius: 0px;
 }

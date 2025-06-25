@@ -1,5 +1,5 @@
 :root {
-  --default-font: 'Segoe UI', 'Arial', 'Tahoma', 'Helvetica', sans-serif;
+  --default-font: "Segoe UI", "Arial", "Tahoma", "Helvetica", sans-serif;
 }
 
 body .modal {
@@ -82,15 +82,15 @@ body .modal {
 
   --font-weight-title: 600px;
   --font-monospace:
-    'Consolas', 'Fira Code', 'Source Code Pro', 'Droid Sans Mono', 'Monoid',
-    'Arial', sans-serif;
+    "Consolas", "Fira Code", "Source Code Pro", "Droid Sans Mono", "Monoid",
+    "Arial", sans-serif;
   --line-height-headers: 1;
   --file-line-width: 1200px;
 
   --search-match-color: #ffff00;
   --search-other-match-color: #ff9632;
 
-  --link_venom_bg_1: url(https://imgur.com/9OXj9sV.jpg);
+  --link_venom_bg_1: url("https://imgur.com/9OXj9sV.jpg");
 }
 
 /* Addition */
@@ -102,12 +102,12 @@ hr {
 }
 
 /* background image - graph */
-.workspace-leaf-content[data-type='graph'] .view-content {
+.workspace-leaf-content[data-type="graph"] .view-content {
   z-index: 0;
 }
-.workspace-leaf-content[data-type='graph'] .view-content::after {
+.workspace-leaf-content[data-type="graph"] .view-content::after {
   z-index: -1;
-  content: '';
+  content: "";
   position: absolute;
   background-image: var(--link_venom_bg_1);
   background-position: center;
@@ -163,7 +163,7 @@ ul > li::marker {
 
 .progress-bar {
   /* background-color: var(--venom_dark_navy) !important; */
-  content: '';
+  content: "";
   position: absolute;
   background-image: var(--link_venom_bg_1);
   background-position: center;
@@ -504,11 +504,11 @@ a:hover,
 }
 
 /* Code blocks */
-pre[class*='language-'] {
+pre[class*="language-"] {
   overflow: hidden;
 }
 
-code[class*='language-'] {
+code[class*="language-"] {
   display: block;
   padding: 0em;
   overflow: auto;
@@ -759,8 +759,8 @@ body:not(.is-grabbing) .nav-file-title.is-selected:hover {
   background-color: var(--nav-item-background-active);
 }
 
-div[data-path='0attachments'],
-div[data-path='0attachments'] + div.nav-folder-children {
+div[data-path="0attachments"],
+div[data-path="0attachments"] + div.nav-folder-children {
   display: none;
 }
 

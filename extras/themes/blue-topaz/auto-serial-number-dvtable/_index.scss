@@ -11,7 +11,7 @@ body.auto-serial-number-dvtable
   > tr
   > td:first-child::before {
   counter-increment: sec;
-  content: counter(sec) '. ';
+  content: counter(sec) ". ";
 }
 
 body.auto-serial-number-dvtable
@@ -27,5 +27,5 @@ body.auto-serial-number-dvtable
   > tr
   > td:first-child::before {
   counter-increment: section;
-  content: counter(section) '. ';
+  content: counter(section) ". ";
 }

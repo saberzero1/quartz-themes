@@ -28,7 +28,7 @@
 }
 .markdown-rendered pre.frontmatter::before,
 .is-mobile .markdown-rendered pre.frontmatter::before {
-  content: '✧';
+  content: "✧";
   font-size: 20px;
   color: var(--primary-accent-3);
   float: right;
@@ -97,7 +97,7 @@
 .markdown-rendered .frontmatter-container::before,
 .is-mobile .markdown-rendered .metadata-container::before,
 .is-mobile .markdown-rendered .frontmatter-container::before {
-  content: '✧';
+  content: "✧";
   font-size: 20px;
   color: var(--primary-accent-3);
   float: right;
@@ -184,11 +184,11 @@
 .markdown-rendered .metadata-container:hover .metadata-property,
 .markdown-rendered
   .metadata-container:hover
-  .metadata-property[data-property-key='tags'],
+  .metadata-property[data-property-key="tags"],
 .is-mobile .markdown-rendered .metadata-container:hover .metadata-property,
 .is-mobile
   .markdown-rendered
   .metadata-container:hover
-  .metadata-property[data-property-key='tags'] {
+  .metadata-property[data-property-key="tags"] {
   --pill-background: var(--background-primary);
 }

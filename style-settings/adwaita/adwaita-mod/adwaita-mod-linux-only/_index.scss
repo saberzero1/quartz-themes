@@ -71,7 +71,7 @@ body.mod-linux
   display: none;
 }
 body.mod-linux .titlebar-button-container.mod-right .titlebar-button::after {
-  content: '';
+  content: "";
   background-color: currentColor;
   width: 16px;
   height: 16px;
@@ -130,7 +130,7 @@ body.mod-linux .modal-close-button {
   transform-origin: right;
 }
 body.mod-linux .modal-close-button:before {
-  content: '';
+  content: "";
   display: block;
   width: 16px;
   height: 16px;

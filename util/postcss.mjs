@@ -313,3 +313,64 @@ export function getAllLightThemeRules(cssString) {
 
   return lightThemeRules
 }
+
+/**
+ * Combine all color variables from the dark and light themes into a single object.
+ * This function then combines the two sets of varaibles if they overlap using the `light-dark()` function.
+ *
+ * @param {string} cssString - The CSS string to process.
+ * @param {string} [darkThemeSelector=".theme-dark"] - The selector for the dark theme.
+ * @param {string} [lightThemeSelector=".theme-light"] - The selector for the light theme.
+ * @returns {Record<string, string>} An object where keys are variable names and values are their static values.
+ */
+export function getCombinedThemeVariables(cssString, darkThemeSelector = ".theme-dark", lightThemeSelector = ".theme-light") {
+  const root = postcss.parse(cssString)
+  const combinedVariables = {}
+
+  // Helper function to create tuples of light and dark variables
+  const createLightDarkTuple = (lightVar, darkVar) => {
+    return `light-dark(${lightVar}, ${darkVar})`
+  }
+
+  // Process dark theme variables
+  root.walkRules(darkThemeSelector, (rule) => {
+    rule.walkDecls((decl) => {
+      if (decl.prop.startsWith("--")) {
+        combinedVariables[decl.prop] = decl.value
+      }
+    })
+  })
+
+  // Process light theme variables
+  // We will combine the light and dark theme variables into a single object
+  // and use the `light-dark()` function for overlapping variables.
+  // This will ensure that if a variable exists in both themes, it will be combined.
+  root.walkRules(lightThemeSelector, (rule) => {
+    rule.walkDecls((decl) => {
+      if (decl.prop.startsWith("--")) {
+        // If the variable already exists in the combinedVariables,
+        // we combine them using the light-dark() function.
+        if (combinedVariables[decl.prop]) {
+          combinedVariables[decl.prop] = createLightDarkTuple(combinedVariables[decl.prop], decl.value)
+        } else {
+          combinedVariables[decl.prop] = decl.value
+        }
+      }
+    })
+  })
+
+  // Remove any variable that is not a `litgt-dark()` function
+  for (const key in combinedVariables) {
+    if (!combinedVariables[key].startsWith("light-dark(")) {
+      // If the variable is not a light-dark function, we remove it
+      delete combinedVariables[key]
+    }
+  }
+
+  // Map to a string newline separated string
+  const combinedVariablesString = Object.entries(combinedVariables)
+    .map(([key, value]) => `${key}: ${value};`)
+    .join("\n")
+
+  return combinedVariablesString
+}

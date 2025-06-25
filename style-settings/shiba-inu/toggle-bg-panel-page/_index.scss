@@ -2,11 +2,11 @@ body
   :is(
     .nav-files-container,
     .file-tree-plugin-view,
-    [data-type='search'],
-    [data-type='starred'],
-    [data-type='recent-files']
+    [data-type="search"],
+    [data-type="starred"],
+    [data-type="recent-files"]
   )::before {
-  content: '';
+  content: "";
   display: block;
   position: fixed;
   top: 0;

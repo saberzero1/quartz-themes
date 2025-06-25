@@ -38,11 +38,11 @@ body.anp-colorful-frame-icon-toggle-dark.theme-dark {
 .anp-card-layout:not(
     .anp-card-layout-filebrowser
   ).anp-colorful-frame-icon-toggle-light.theme-light
-  .workspace-leaf-content[data-type='file-explorer'],
+  .workspace-leaf-content[data-type="file-explorer"],
 .anp-card-layout:not(
     .anp-card-layout-filebrowser
   ).anp-colorful-frame-icon-toggle-dark.theme-dark
-  .workspace-leaf-content[data-type='file-explorer'] {
+  .workspace-leaf-content[data-type="file-explorer"] {
   --tab-text-color: var(--text-normal);
   --tab-text-color-focused: var(--text-normal);
   --tab-text-color-focused-active: var(--text-normal);

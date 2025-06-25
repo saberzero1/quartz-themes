@@ -106,10 +106,10 @@ body {
 }
 
 @media (hover: hover) {
-  input[type='checkbox']:checked:hover {
+  input[type="checkbox"]:checked:hover {
     background-color: transparent;
   }
-  input[type='checkbox']:checked:hover:after {
+  input[type="checkbox"]:checked:hover:after {
     background-color: var(--checkbox-color-hover);
   }
 }

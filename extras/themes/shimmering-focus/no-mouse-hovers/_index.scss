@@ -13,7 +13,7 @@
 .no-mouse-hovers .modal-container + .tooltip,
 .no-mouse-hovers
   .app-container:has(
-    .mod-active .workspace-leaf-content[data-type='.no-mouse-hovers ']
+    .mod-active .workspace-leaf-content[data-type=".no-mouse-hovers "]
   )
   ~ .tooltip {
   display: unset;

@@ -4,7 +4,7 @@ body.h3-divider-on
     .markdown-rendered > h3,
     .HyperMD-header-3
   )::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 1px;
   width: 100%;
@@ -19,7 +19,7 @@ body.h3-divider-on
 }
 
 body.h3-divider-on h3::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 1px;
   width: 100%;

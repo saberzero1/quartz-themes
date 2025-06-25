@@ -68,33 +68,33 @@ body.encore-fancy-headers
 
 body.encore-fancy-headers
   .workspace-tab-container
-  .workspace-leaf-content[data-type='image']
+  .workspace-leaf-content[data-type="image"]
   > .view-content {
   padding-top: var(--header-height);
 }
 
 body.encore-fancy-headers
   .workspace-tab-container
-  .workspace-leaf-content[data-type='style-settings']
+  .workspace-leaf-content[data-type="style-settings"]
   > .view-content {
   padding-top: var(--header-height);
 }
 
 body.encore-fancy-headers
   .workspace-tab-container
-  .workspace-leaf-content[data-type='kanban']
+  .workspace-leaf-content[data-type="kanban"]
   > .view-header {
   position: relative !important;
 }
 
 body.encore-fancy-headers
-  .workspace-leaf-content[data-type='excalidraw']
+  .workspace-leaf-content[data-type="excalidraw"]
   .layer-ui__wrapper,
 body.encore-fancy-headers
-  .workspace-leaf-content[data-type='excalidraw']
+  .workspace-leaf-content[data-type="excalidraw"]
   .App-top-bar,
 body.encore-fancy-headers
-  .workspace-leaf-content[data-type='excalidraw']
+  .workspace-leaf-content[data-type="excalidraw"]
   .layer-ui__sidebar {
   margin-top: var(--header-height);
 }

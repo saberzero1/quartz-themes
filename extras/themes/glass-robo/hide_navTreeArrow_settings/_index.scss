@@ -3,16 +3,16 @@ body.hide_navTreeArrow_settings .tree-item-icon.collapse-icon {
 }
 
 body.hide_navTreeArrow_settings
-  .tree-item.nav-folder:not(:has(.tree-item-self[data-path^='CLUSTERS']))
+  .tree-item.nav-folder:not(:has(.tree-item-self[data-path^="CLUSTERS"]))
   .tree-item-children.nav-folder-children {
   border-color: transparent;
   position: relative;
 }
 
 body.hide_navTreeArrow_settings
-  .tree-item.nav-folder:not(:has(.tree-item-self[data-path^='CLUSTERS']))
+  .tree-item.nav-folder:not(:has(.tree-item-self[data-path^="CLUSTERS"]))
   .tree-item-children.nav-folder-children::before {
-  content: ' ';
+  content: " ";
   display: block;
   width: 1px;
   height: 100%;

@@ -5,7 +5,7 @@
   border-radius: 0px;
 }
 .halab-callouts .callout::after {
-  content: '';
+  content: "";
   background: rgba(var(--callout-color), 0) !important;
   position: absolute;
   left: -3px;
@@ -16,7 +16,7 @@
   z-index: -1;
 }
 .halab-callouts .callout::before {
-  content: '';
+  content: "";
   background: rgba(var(--callout-color), 0.3) !important;
   position: absolute;
   left: 0px;

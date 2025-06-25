@@ -175,10 +175,10 @@ body {
   font-size: 20px !important;
   color: var(--text-normal);
   --font-headings:
-    'Source Serif Pro', 'Source Serif 4', 'Source Serif', 'Rockwell',
-    'New York', serif;
-  --font-text: 'DM Sans', 'Avenir Next', 'Avenir', sans-serif;
-  --font-monospace: MonoLisa, 'Source Code Pro', monospace;
+    "Source Serif Pro", "Source Serif 4", "Source Serif", "Rockwell",
+    "New York", serif;
+  --font-text: "DM Sans", "Avenir Next", "Avenir", sans-serif;
+  --font-monospace: MonoLisa, "Source Code Pro", monospace;
 
   --inline-title-size: 0.8rem;
   --inline-title-color: var(--text-muted);
@@ -220,7 +220,7 @@ body {
   position: relative;
   width: 20px;
   display: inline-block;
-  content: '>';
+  content: ">";
   color: var(--red);
 }
 
@@ -317,7 +317,7 @@ body {
 .is-focused
   .workspace-leaf.mod-active
   .view-header
-  .clickable-icon:hover[aria-disabled='false'] {
+  .clickable-icon:hover[aria-disabled="false"] {
   background: var(--beige);
   cursor: pointer;
 }
@@ -325,7 +325,7 @@ body {
 .is-focused
   .workspace-leaf.mod-active
   .view-header
-  .clickable-icon[aria-disabled='true'] {
+  .clickable-icon[aria-disabled="true"] {
   color: var(--text-muted);
   cursor: not-allowed;
 }
@@ -480,11 +480,11 @@ blockquote {
 }
 
 .CodeMirror-foldgutter-open::after {
-  content: '\25BC';
+  content: "\25BC";
 }
 
 .CodeMirror-foldgutter-folded::after {
-  content: '\25BA';
+  content: "\25BA";
 }
 
 .markdown-preview-view .internal-link.is-unresolved {
@@ -517,7 +517,7 @@ blockquote {
   padding-inline-start: 25px;
 }
 
-.graph-control-section input[type='range'] {
+.graph-control-section input[type="range"] {
   background: var(--background-primary);
 }
 

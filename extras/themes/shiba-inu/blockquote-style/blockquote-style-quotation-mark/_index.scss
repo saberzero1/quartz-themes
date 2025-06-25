@@ -33,7 +33,7 @@ body.blockquote-style-quotation-mark
   :is(.markdown-preview-view, .markdown-rendered)
   blockquote
   p:first-of-type::before {
-  content: '“';
+  content: "“";
   font-size: 3em;
   font-family: boxicons;
   color: var(--color-accent);

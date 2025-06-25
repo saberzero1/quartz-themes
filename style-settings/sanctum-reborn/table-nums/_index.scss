@@ -3,14 +3,14 @@ table {
 }
 table thead > tr > th:first-child::before {
   display: inline-block;
-  content: ' ';
+  content: " ";
   padding-right: 8px;
   min-width: 3ch;
 }
 table tbody > tr > td:first-child::before {
   display: inline-block;
   counter-increment: section;
-  content: counter(section) ' ';
+  content: counter(section) " ";
   text-align: center;
   padding-right: 8px;
   color: var(--text-faint);

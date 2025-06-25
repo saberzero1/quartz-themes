@@ -71,12 +71,12 @@ body.flexcyon-vim-mode-text-enable div.cm-vim-message {
   color: var(--color-red) !important;
   font-weight: bold;
 }
-body .plugin-editor-status[aria-label='Reading']::before {
+body .plugin-editor-status[aria-label="Reading"]::before {
   color: var(--text-accent);
 }
-body .plugin-editor-status[aria-label='Source mode']::before {
+body .plugin-editor-status[aria-label="Source mode"]::before {
   color: var(--color-purple);
 }
-body .plugin-editor-status[aria-label='Live Preview']::before {
+body .plugin-editor-status[aria-label="Live Preview"]::before {
   color: var(--color-blue);
 }

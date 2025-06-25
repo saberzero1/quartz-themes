@@ -320,14 +320,14 @@ to get a right-side note block
 
   /*font family*/
   --font-default:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Inter', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-    'Microsoft YaHei Light', sans-serif;
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Microsoft YaHei Light", sans-serif;
   --font-family-list: var(--font-default); /*列表字体*/
   --font-family-major:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Inter', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-    'Microsoft YaHei Light', sans-serif;
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Microsoft YaHei Light", sans-serif;
   --font-family-h1: var(--font-text), var(--font-default);
   --font-family-h2: var(--font-text), var(--font-default);
   --font-family-h3: var(--font-text), var(--font-default);
@@ -336,19 +336,19 @@ to get a right-side note block
   --font-family-h6: var(--font-text), var(--font-default);
   --font-family-title: var(--font-text, var(--font-default)); /*文件抬头标题*/
   --font-family-folder-file-title:
-    var(--font-text-override), Arlrdbd, 'Source Han Sans', 'Noto Sans CJK',
-    'Source Sans Pro', 'Segoe UI Emoji', sans-serif; /*左侧边栏文件、文件夹字体*/
-  --font-family-preview-edit-code: 'Consolas', 'Monaco', monospace;
-  --text-family-inline-code: 'Consolas', 'Monaco', monospace;
+    var(--font-text-override), Arlrdbd, "Source Han Sans", "Noto Sans CJK",
+    "Source Sans Pro", "Segoe UI Emoji", sans-serif; /*左侧边栏文件、文件夹字体*/
+  --font-family-preview-edit-code: "Consolas", "Monaco", monospace;
+  --text-family-inline-code: "Consolas", "Monaco", monospace;
   --font-family-tag:
-    Bookerly, 'Inter', 'Segoe UI', 'Microsoft YaHei', STzhongsong, STSong,
-    'Segoe UI Emoji', Serif;
-  --font-family-vault: 'Lucida Handwriting', 'Segoe UI Emoji'; /*左侧库名字体*/
+    Bookerly, "Inter", "Segoe UI", "Microsoft YaHei", STzhongsong, STSong,
+    "Segoe UI Emoji", Serif;
+  --font-family-vault: "Lucida Handwriting", "Segoe UI Emoji"; /*左侧库名字体*/
   --font-family-special-tag:
-    'Lucida Handwriting', 'Dancing Script', 'Hand of Sean', 'Angelina', cursive;
+    "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina", cursive;
   --font-family-YAML:
-    'Lucida Handwriting', 'Dancing Script', 'Hand of Sean', 'Angelina', cursive;
-  --font-monospace: 'Consolas', 'Monaco', 'Source Code Pro', monospace;
+    "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina", cursive;
+  --font-monospace: "Consolas", "Monaco", "Source Code Pro", monospace;
 }
 
 .theme-dark {
@@ -707,7 +707,7 @@ to get a right-side note block
 /*==========tags===========*/
 /*=========================*/
 /*special tags*/
-.tag[href^='#important'] {
+.tag[href^="#important"] {
   background-color: var(--stag1) !important;
   font-weight: 600;
   font-family: var(--font-family-special-tag);
@@ -719,14 +719,14 @@ to get a right-side note block
   font-family: var(--font-family-special-tag);
   font-weight: 600;
 }
-.tag[href^='#重要'] {
+.tag[href^="#重要"] {
   background-color: var(--stag1) !important;
   font-weight: 600;
   font-family:
     Webdings,
     Microsoft YaHei;
 }
-.tag[href^='#complete'] {
+.tag[href^="#complete"] {
   background-color: var(--stag3) !important;
   font-weight: 600;
   font-family: var(--font-family-special-tag);
@@ -738,14 +738,14 @@ to get a right-side note block
   font-family: var(--font-family-special-tag);
   font-weight: 600;
 }
-.tag[href^='#完成'] {
+.tag[href^="#完成"] {
   background-color: var(--stag3) !important;
   font-family:
     Origin,
     Microsoft YaHei;
   font-weight: 600;
 }
-.tag[href^='#inprogress'] {
+.tag[href^="#inprogress"] {
   background-color: var(--stag2) !important;
   font-weight: 600;
   font-family: var(--font-family-special-tag);
@@ -757,20 +757,20 @@ to get a right-side note block
   font-family: var(--font-family-special-tag);
   font-weight: 600;
 }
-.tag[href^='#进行中'] {
+.tag[href^="#进行中"] {
   background-color: var(--stag2) !important;
   font-weight: 600;
   font-family:
     Wingdings,
     Microsoft YaHei;
 }
-.tag[href^='#dailynote'] {
+.tag[href^="#dailynote"] {
   background-color: #277cdd !important;
   font-weight: 600;
   font-family: var(--font-family-special-tag);
 }
-.tag[href^='#dailynote']::after {
-  content: ' 🐈';
+.tag[href^="#dailynote"]::after {
+  content: " 🐈";
   font-size: 25px;
 }
 .cm-s-obsidian
@@ -780,13 +780,13 @@ to get a right-side note block
   font-family: var(--font-family-special-tag);
   font-weight: 600;
 }
-.tag[href^='#weeklynote'] {
+.tag[href^="#weeklynote"] {
   background-color: #419aff !important;
   font-weight: 600;
   font-family: var(--font-family-special-tag);
 }
-.tag[href^='#weeklynote']::after {
-  content: ' 🥑';
+.tag[href^="#weeklynote"]::after {
+  content: " 🥑";
   font-size: 25px;
 }
 .cm-s-obsidian
@@ -796,13 +796,13 @@ to get a right-side note block
   font-family: var(--font-family-special-tag);
   font-weight: 600;
 }
-.tag[href^='#questions'] {
+.tag[href^="#questions"] {
   background-color: #8555df !important;
   font-weight: 600;
   font-family: var(--font-family-special-tag);
 }
-.tag[href^='#questions']::after {
-  content: ' ❓';
+.tag[href^="#questions"]::after {
+  content: " ❓";
   font-size: 25px;
 }
 .cm-s-obsidian
@@ -812,13 +812,13 @@ to get a right-side note block
   font-family: var(--font-family-special-tag);
   font-weight: 600;
 }
-.tag[href^='#ideas'] {
+.tag[href^="#ideas"] {
   background-color: #28ac00 !important;
   font-weight: 600;
   font-family: var(--font-family-special-tag);
 }
-.tag[href^='#ideas']::after {
-  content: ' 💡';
+.tag[href^="#ideas"]::after {
+  content: " 💡";
   font-size: 25px;
 }
 .cm-s-obsidian .CodeMirror-line span.cm-tag-ideas:not(.cm-formatting-hashtag) {
@@ -1070,8 +1070,8 @@ input.search-input {
 .nav-action-button {
   margin: 0px 2px 0px 2px !important;
 }
-.workspace-leaf-content[data-type='search'] .nav-action-button,
-.workspace-leaf-content[data-type='backlink'] .nav-action-button {
+.workspace-leaf-content[data-type="search"] .nav-action-button,
+.workspace-leaf-content[data-type="backlink"] .nav-action-button {
   padding: 3px 3px 3px 3px;
 }
 
@@ -1295,7 +1295,7 @@ span.search-result-file-matched-text {
 
 /* the SVG check mark */
 .markdown-preview-view .task-list-item-checkbox:checked::before {
-  content: ' ';
+  content: " ";
   position: absolute;
   background-color: white;
   left: 3px;
@@ -1315,7 +1315,7 @@ span.search-result-file-matched-text {
 /*thanks to Piotr and ishgunacar from forum*/
 span.cm-formatting-task {
   display: inline !important;
-  font-family: 'Andale Mono';
+  font-family: "Andale Mono";
 }
 
 span.cm-formatting-task.cm-property {
@@ -1338,7 +1338,7 @@ div:not(.CodeMirror-activeline)
 div:not(.CodeMirror-activeline)
   > .CodeMirror-line
   span.cm-formatting-task.cm-property:after {
-  content: '☐';
+  content: "☐";
   position: absolute;
   top: 2px;
   left: -1px;
@@ -1349,7 +1349,7 @@ div:not(.CodeMirror-activeline)
 div:not(.CodeMirror-activeline)
   > .CodeMirror-line
   span.cm-formatting-task.cm-property:after {
-  content: '☑';
+  content: "☑";
   color: var(--text-accent) !important;
 }
 
@@ -1533,7 +1533,7 @@ blockquote {
   margin: 20px 0;
 }*/
 
-mjx-container[jax='CHTML'] {
+mjx-container[jax="CHTML"] {
   text-align: left;
   outline: none;
   font-size: var(--font-size-latex);
@@ -1564,7 +1564,7 @@ mjx-container[jax='CHTML'] {
 }
 
 /*bold code text except code language*/
-code:not([class*='language-']) {
+code:not([class*="language-"]) {
   font-weight: 600;
   font-family: var(--font-family-preview-edit-code) !important;
 }
@@ -1591,7 +1591,7 @@ ul ul::before,
 ol ul::before,
 ul ol::before,
 ol ol::before*/ {
-  content: '';
+  content: "";
   border-left: 2px solid var(--background-modifier-border);
   position: absolute;
   height: 100%;
@@ -2038,30 +2038,30 @@ a.external-link {
   opacity: 1;
 }
 
-.theme-dark :not(pre) > code[class*='language-'],
-.theme-dark pre[class*='language-'] {
+.theme-dark :not(pre) > code[class*="language-"],
+.theme-dark pre[class*="language-"] {
   background: var(--background-secondary);
   border-radius: 7px;
 }
 
-.theme-light :not(pre) > code[class*='language-'],
-.theme-light pre[class*='language-'] {
+.theme-light :not(pre) > code[class*="language-"],
+.theme-light pre[class*="language-"] {
   background: var(--background-primary-alt);
   border-radius: 7px;
 }
 
-.theme-light code[class*='language-'],
-.theme-light pre[class*='language-'] {
+.theme-light code[class*="language-"],
+.theme-light pre[class*="language-"] {
   text-shadow: none;
 }
 
-.theme-light code[class*='language-'],
-.theme-light pre[class*='language-'] {
+.theme-light code[class*="language-"],
+.theme-light pre[class*="language-"] {
   color: #000000;
 }
 
-.theme-dark code[class*='language-'],
-.theme-dark pre[class*='language-'] {
+.theme-dark code[class*="language-"],
+.theme-dark pre[class*="language-"] {
   color: #e7e7e7;
 }
 
@@ -2138,8 +2138,8 @@ cursor: pointer !important;
 }
 
 /* Source: https://github.com/AGMStudio/prism-theme-one-dark */
-code[class*='language-'],
-pre[class*='language-'] {
+code[class*="language-"],
+pre[class*="language-"] {
   text-align: left !important;
   word-spacing: normal !important;
   word-break: normal !important;
@@ -2156,7 +2156,7 @@ pre[class*='language-'] {
 }
 
 /* Inline code */
-:not(pre) > code[class*='language-'] {
+:not(pre) > code[class*="language-"] {
   padding: 0.1em !important;
   border-radius: 0.3em !important;
   white-space: normal !important;
@@ -2339,84 +2339,84 @@ pre {
   position: relative;
 }
 
-pre[class~='language-c']:before {
-  content: 'C';
+pre[class~="language-c"]:before {
+  content: "C";
 }
 
-pre[class~='language-python']:before {
-  content: 'PYTHON';
+pre[class~="language-python"]:before {
+  content: "PYTHON";
 }
 
-pre[class~='language-nginx']:before {
-  content: 'NGINX';
+pre[class~="language-nginx"]:before {
+  content: "NGINX";
 }
 
-pre[class~='language-css']:before {
-  content: 'CSS';
+pre[class~="language-css"]:before {
+  content: "CSS";
 }
 
-pre[class~='language-javascript']:before {
-  content: 'JS';
+pre[class~="language-javascript"]:before {
+  content: "JS";
 }
 
-pre[class~='language-js']:before {
-  content: 'JS';
+pre[class~="language-js"]:before {
+  content: "JS";
 }
 
-pre[class~='language-php']:before {
-  content: 'PHP';
+pre[class~="language-php"]:before {
+  content: "PHP";
 }
 
-pre[class~='language-shell']:before {
-  content: 'SHELL';
+pre[class~="language-shell"]:before {
+  content: "SHELL";
 }
 
-pre[class~='language-flow']:before {
-  content: 'FLOW';
+pre[class~="language-flow"]:before {
+  content: "FLOW";
 }
 
-pre[class~='language-sequence']:before {
-  content: 'SEQUENCE';
+pre[class~="language-sequence"]:before {
+  content: "SEQUENCE";
 }
 
-pre[class~='language-sql']:before {
-  content: 'SQL';
+pre[class~="language-sql"]:before {
+  content: "SQL";
 }
 
-pre[class~='language-yaml']:before {
-  content: 'YAML';
+pre[class~="language-yaml"]:before {
+  content: "YAML";
 }
 
-pre[class~='language-ini']:before {
-  content: 'INI';
+pre[class~="language-ini"]:before {
+  content: "INI";
 }
 
-pre[class~='language-xml']:before {
-  content: 'XML';
+pre[class~="language-xml"]:before {
+  content: "XML";
 }
 
-pre[class~='language-git']:before {
-  content: 'GIT';
+pre[class~="language-git"]:before {
+  content: "GIT";
 }
 
-pre[class~='language-cs']:before {
-  content: 'C#';
+pre[class~="language-cs"]:before {
+  content: "C#";
 }
 
-pre[class~='language-cpp']:before {
-  content: 'C++';
+pre[class~="language-cpp"]:before {
+  content: "C++";
 }
 
-pre[class~='language-java']:before {
-  content: 'JAVA';
+pre[class~="language-java"]:before {
+  content: "JAVA";
 }
 
-pre[class~='language-html']:before {
-  content: 'HTML';
+pre[class~="language-html"]:before {
+  content: "HTML";
 }
 
-pre[class~='language-txt']:before {
-  content: 'TXT';
+pre[class~="language-txt"]:before {
+  content: "TXT";
 }
 
 /* ==== fold icons ==== */
@@ -2681,12 +2681,12 @@ span.cm-formatting-task {
 */
 
 /* Image zoom  */
-.view-content img:not([class='emoji']) {
+.view-content img:not([class="emoji"]) {
   cursor: zoom-in;
   display: block;
 }
 
-.view-content img:not([class='emoji']):active {
+.view-content img:not([class="emoji"]):active {
   cursor: zoom-out;
   position: fixed;
   object-fit: contain;
@@ -2699,7 +2699,7 @@ span.cm-formatting-task {
   bottom: 0;
   transform: translateY(-50%);
   z-index: 200;
-  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgdmlld0JveD0iMCAwIDgwIDgwIj4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHJlY3Qgd2lkdGg9IjgwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjRjJGNEY2Ii8+CiAgICA8ZyBmaWxsPSIjRkZGIj4KICAgICAgPHJlY3Qgd2lkdGg9IjIiIGhlaWdodD0iNzkiIHg9Ijc4Ii8+CiAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjE5IiB4PSIxOSIvPgogICAgICA8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxOSIgeD0iMzkiLz4KICAgICAgPHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMTkiIHg9IjU5Ii8+CiAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjE5IiB4PSIxOSIgeT0iMjAiLz4KICAgICAgPHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMTkiIHg9IjM5IiB5PSIyMCIvPgogICAgICA8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxOSIgeD0iNTkiIHk9IjIwIi8+CiAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjE5IiB4PSIxOSIgeT0iNDAiLz4KICAgICAgPHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMTkiIHg9IjM5IiB5PSI0MCIvPgogICAgICA8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxOSIgeD0iNTkiIHk9IjQwIi8+CiAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjE5IiB4PSIxOSIgeT0iNjAiLz4KICAgICAgPHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMTkiIHg9IjM5IiB5PSI2MCIvPgogICAgICA8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxOSIgeD0iNTkiIHk9IjYwIi8+CiAgICAgIDxyZWN0IHdpZHRoPSI3OSIgaGVpZ2h0PSIxIiB5PSIxOSIvPgogICAgICA8cmVjdCB3aWR0aD0iNzkiIGhlaWdodD0iMSIgeT0iMzkiLz4KICAgICAgPHJlY3Qgd2lkdGg9Ijc5IiBoZWlnaHQ9IjEiIHk9IjU5Ii8+CiAgICA8L2c+CiAgICA8cmVjdCB3aWR0aD0iODAiIGhlaWdodD0iMiIgeT0iNzgiIGZpbGw9IiNGRkYiLz4KICA8L2c+Cjwvc3ZnPgo=');
+  background-image: url("data:image/svg+xml,base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgdmlld0JveD0iMCAwIDgwIDgwIj4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHJlY3Qgd2lkdGg9IjgwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjRjJGNEY2Ii8+CiAgICA8ZyBmaWxsPSIjRkZGIj4KICAgICAgPHJlY3Qgd2lkdGg9IjIiIGhlaWdodD0iNzkiIHg9Ijc4Ii8+CiAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjE5IiB4PSIxOSIvPgogICAgICA8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxOSIgeD0iMzkiLz4KICAgICAgPHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMTkiIHg9IjU5Ii8+CiAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjE5IiB4PSIxOSIgeT0iMjAiLz4KICAgICAgPHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMTkiIHg9IjM5IiB5PSIyMCIvPgogICAgICA8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxOSIgeD0iNTkiIHk9IjIwIi8+CiAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjE5IiB4PSIxOSIgeT0iNDAiLz4KICAgICAgPHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMTkiIHg9IjM5IiB5PSI0MCIvPgogICAgICA8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxOSIgeD0iNTkiIHk9IjQwIi8+CiAgICAgIDxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjE5IiB4PSIxOSIgeT0iNjAiLz4KICAgICAgPHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMTkiIHg9IjM5IiB5PSI2MCIvPgogICAgICA8cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxOSIgeD0iNTkiIHk9IjYwIi8+CiAgICAgIDxyZWN0IHdpZHRoPSI3OSIgaGVpZ2h0PSIxIiB5PSIxOSIvPgogICAgICA8cmVjdCB3aWR0aD0iNzkiIGhlaWdodD0iMSIgeT0iMzkiLz4KICAgICAgPHJlY3Qgd2lkdGg9Ijc5IiBoZWlnaHQ9IjEiIHk9IjU5Ii8+CiAgICA8L2c+CiAgICA8cmVjdCB3aWR0aD0iODAiIGhlaWdodD0iMiIgeT0iNzgiIGZpbGw9IiNGRkYiLz4KICA8L2c+Cjwvc3ZnPgo=");
 }
 
 /*file explorer columns view : slightly buggy ----*/
@@ -2798,7 +2798,7 @@ span.cm-formatting-task {
 
 .nav-folder-collapse-indicator::after {
   position: absolute;
-  content: '↓';
+  content: "↓";
   left: -3px;
   top: 0px;
   font-size: 15px;
@@ -2828,7 +2828,7 @@ span.cm-formatting-task {
 }
 
 .backlink-pane .search-result-container .collapse-icon::before {
-  content: '↓';
+  content: "↓";
   font-size: 14px;
   margin-left: -2px;
   font-weight: bold;
@@ -2866,7 +2866,7 @@ span.cm-formatting-task {
   .search-result-container.mod-global-search
   .tree-item-self.search-result-file-title.is-clickable
   .collapse-icon::before {
-  content: '↓';
+  content: "↓";
   font-size: 14px;
   margin-left: -2px;
   font-weight: bold;
@@ -2910,7 +2910,7 @@ h2 div.heading-collapse-indicator.collapse-indicator {
 
 h1 div.heading-collapse-indicator.collapse-indicator::before,
 h2 div.heading-collapse-indicator.collapse-indicator::before {
-  content: '↓';
+  content: "↓";
   position: absolute;
   font-size: 17px;
   font-weight: bold;
@@ -2925,7 +2925,7 @@ h2 div.heading-collapse-indicator.collapse-indicator::before {
 }
 
 div.heading-collapse-indicator.collapse-indicator::before {
-  content: '↓';
+  content: "↓";
   position: absolute;
   font-size: 17px;
   font-weight: bold;
@@ -2954,7 +2954,7 @@ div.CodeMirror-foldgutter-open.CodeMirror-guttermarker-subtle {
 }
 
 div.CodeMirror-foldgutter-open.CodeMirror-guttermarker-subtle::after {
-  content: '↓';
+  content: "↓";
   position: absolute;
   font-size: 14px;
   font-weight: bold;
@@ -2970,7 +2970,7 @@ div.CodeMirror-foldgutter-folded.CodeMirror-guttermarker-subtle {
 }
 
 div.CodeMirror-foldgutter-folded.CodeMirror-guttermarker-subtle::after {
-  content: '→';
+  content: "→";
   position: absolute;
   font-size: 14px;
   font-weight: bold;
@@ -2988,7 +2988,7 @@ span.collapse-icon {
 }
 
 span.collapse-icon::before {
-  content: '↓';
+  content: "↓";
   margin-left: -3px;
   font-size: 16px;
   font-weight: bold;
@@ -3019,7 +3019,7 @@ div.tree-item-self.is-clickable.is-collapsed span.collapse-icon {
 }
 
 .outline .tree-item .collapse-icon::before {
-  content: '↓';
+  content: "↓";
   margin-left: -7px;
   margin-top: 1px;
   font-size: 16px;
@@ -3060,7 +3060,7 @@ div.tree-item-self.is-clickable.is-collapsed span.collapse-icon {
 
 .markdown-preview-view
   .list-collapse-indicator.collapse-indicator.collapse-icon::before {
-  content: '↓';
+  content: "↓";
   font-size: 14px;
   margin-left: -11px;
   font-weight: bold;
@@ -3146,7 +3146,7 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hr {
 }
 
 div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hr:after {
-  content: '';
+  content: "";
   position: absolute;
   height: 1px;
   width: 100%;
@@ -3178,7 +3178,7 @@ div > .HyperMD-quote:active {
   background-color: transparent;
 }*/
 
-.cm-quote:not([class*='link']):not([class*='string']) {
+.cm-quote:not([class*="link"]):not([class*="string"]) {
   color: var(--text-normal);
 }
 
@@ -3212,8 +3212,8 @@ div > .HyperMD-quote:active {
 /* but also with simpler classes so you can use `<span class='colour'>` as well */
 .app-container
   .markdown-preview-view
-  pre[class*='language-note-']
-  code[class*='language-note-'] {
+  pre[class*="language-note-"]
+  code[class*="language-note-"] {
   white-space: pre-wrap !important;
 }
 
@@ -3288,7 +3288,7 @@ div > .HyperMD-quote:active {
 
 pre.language-note-important:before,
 pre.language-note-imp::before {
-  content: 'Important';
+  content: "Important";
   color: var(--note-important);
   font-weight: 800;
   top: -1px;
@@ -3407,7 +3407,7 @@ code.language-note-cloze.is-loaded:active {
 }
 
 pre.language-note-cloze::before {
-  content: 'TO RECALL';
+  content: "TO RECALL";
   color: var(--note-cloze);
   font-weight: 800;
   left: 22px;
@@ -3426,7 +3426,7 @@ pre.language-note-cloze::before {
 .label {
   font-family:
     Segoe UI,
-    'trebuchet ms',
+    "trebuchet ms",
     verdana,
     arial,
     Fira Code,
@@ -3439,11 +3439,11 @@ pre.language-note-cloze::before {
   fill: var(--background-primary-alt) !important;
 }
 
-.node rect:not([style*='fill']):not([style*='stroke']),
-.node circle:not([style*='fill']):not([style*='stroke']),
-.node ellipse:not([style*='fill']):not([style*='stroke']),
-.node polygon:not([style*='fill']):not([style*='stroke']),
-.node path:not([style*='fill']):not([style*='stroke']) {
+.node rect:not([style*="fill"]):not([style*="stroke"]),
+.node circle:not([style*="fill"]):not([style*="stroke"]),
+.node ellipse:not([style*="fill"]):not([style*="stroke"]),
+.node polygon:not([style*="fill"]):not([style*="stroke"]),
+.node path:not([style*="fill"]):not([style*="stroke"]) {
   fill: var(--background-modifier-border) !important;
   /*stroke: var(--text-normal) !important;
   stroke-width: 0.5px !important; */
@@ -3496,7 +3496,7 @@ div.mermaidTooltip {
   padding: 2px !important;
   font-family:
     Segoe UI,
-    'trebuchet ms',
+    "trebuchet ms",
     verdana,
     arial !important;
   font-size: 10px !important;
@@ -3615,7 +3615,7 @@ text.actor > tspan {
 .mermaid-main-font {
   font-family:
     Segoe UI,
-    'trebuchet ms',
+    "trebuchet ms",
     verdana,
     arial !important;
 }
@@ -3662,7 +3662,7 @@ text.actor > tspan {
   line-height: 14px !important;
   font-family:
     Segoe UI,
-    'trebuchet ms',
+    "trebuchet ms",
     verdana,
     arial !important;
 }
@@ -3678,7 +3678,7 @@ text.actor > tspan {
 .grid .tick text {
   font-family:
     Segoe UI,
-    'trebuchet ms',
+    "trebuchet ms",
     verdana,
     arial !important;
   font-size: 13px;
@@ -3719,7 +3719,7 @@ text.actor > tspan {
   font-size: 9px !important;
   font-family:
     Segoe UI,
-    'trebuchet ms',
+    "trebuchet ms",
     verdana,
     arial !important;
 }
@@ -3872,7 +3872,7 @@ text.actor > tspan {
   fill: var(--text-normal) !important;
   font-family:
     Segoe UI,
-    'trebuchet ms',
+    "trebuchet ms",
     verdana,
     arial !important;
 }
@@ -3978,7 +3978,7 @@ g.classGroup line {
   color: var(--text-muted) !important;
   font-family:
     Segoe UI,
-    'trebuchet ms',
+    "trebuchet ms",
     verdana,
     arial !important;
 }
@@ -3989,7 +3989,7 @@ g.classGroup line {
   fill: var(--text-normal) !important;
   font-family:
     Segoe UI,
-    'trebuchet ms',
+    "trebuchet ms",
     verdana,
     arial !important;
 }
@@ -3997,7 +3997,7 @@ g.classGroup line {
 .slice {
   font-family:
     Segoe UI,
-    'trebuchet ms',
+    "trebuchet ms",
     verdana,
     arial !important;
 }
@@ -4008,7 +4008,7 @@ g.stateGroup text {
   font-size: 10px !important;
   font-family:
     Segoe UI,
-    'trebuchet ms',
+    "trebuchet ms",
     verdana,
     arial !important;
 }
@@ -4074,7 +4074,7 @@ g.stateGroup line {
   font-weight: bold !important;
   font-family:
     Segoe UI,
-    'trebuchet ms',
+    "trebuchet ms",
     verdana,
     arial !important;
 }
@@ -4151,7 +4151,7 @@ g.stateGroup line {
 
 :root {
   --mermaid-font-family: '"trebuchet ms", verdana, arial' !important;
-  --mermaid-font-family: 'Comic Sans MS', 'Comic Sans', cursive !important;
+  --mermaid-font-family: "Comic Sans MS", "Comic Sans", cursive !important;
 }
 
 /* Classes common for multiple diagrams */
@@ -4446,7 +4446,7 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root .view-header {
 /*frontmatter specification 同义词等声明*/
 /*=====================================*/
 pre.frontmatter.language-yaml:before {
-  content: 'Specification';
+  content: "Specification";
   font-family: var(--font-family-YAML);
   top: 1px;
   right: 32px;
@@ -4741,7 +4741,7 @@ div[alt="-sbq"] .markdown-preview-view p {
 }
 
 .stickies::after {
-  content: '';
+  content: "";
   left: -5%;
   top: -10px;
   height: 40px;
@@ -4761,7 +4761,7 @@ div[alt="-sbq"] .markdown-preview-view p {
 .stickies::before {
   width: 11px;
   height: 20px;
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   left: -3.5%;
@@ -4798,7 +4798,7 @@ div[alt="-sbq"] .markdown-preview-view p {
 }
 
 .stickies2::after {
-  content: '';
+  content: "";
   display: block;
   height: 32px;
   width: 2px;
@@ -4849,7 +4849,7 @@ div[alt="-sbq"] .markdown-preview-view p {
 }
 
 .to-recall::after {
-  content: 'Click';
+  content: "Click";
   position: absolute;
   font-size: 12px;
   top: 1px;
@@ -4860,7 +4860,7 @@ div[alt="-sbq"] .markdown-preview-view p {
 }
 
 .to-recall::before {
-  content: ' To Recall';
+  content: " To Recall";
   display: inline-block;
   position: absolute;
   top: -20px;
@@ -5134,32 +5134,32 @@ aside > h2 {
 }
 
 /* image position*/
-img[alt$='left'],
-img[alt$='Left'],
-img[alt$='LEFT'],
-img[alt$='L'] {
+img[alt$="left"],
+img[alt$="Left"],
+img[alt$="LEFT"],
+img[alt$="L"] {
   margin-left: 0;
 }
 
-img[alt$='right'],
-img[alt$='Right'],
-img[alt$='RIGHT'],
-img[alt$='R'] {
+img[alt$="right"],
+img[alt$="Right"],
+img[alt$="RIGHT"],
+img[alt$="R"] {
   margin-right: 0;
 }
 
-img[alt$='inlineL'],
-img[alt$='InlineL'],
-img[alt$='INLINEL'],
-img[alt$='inlL'] {
+img[alt$="inlineL"],
+img[alt$="InlineL"],
+img[alt$="INLINEL"],
+img[alt$="inlL"] {
   float: left;
   padding: 8px 8px 8px 0px;
 }
 
-img[alt$='inlineR'],
-img[alt$='InlineR'],
-img[alt$='INLINER'],
-img[alt$='inlR'] {
+img[alt$="inlineR"],
+img[alt$="InlineR"],
+img[alt$="INLINER"],
+img[alt$="inlR"] {
   float: right;
   padding: 8px 0px 8px 8px;
 }
@@ -5548,93 +5548,93 @@ pre {
 }
 
 /* 每个语言单独写 C语言 要写在前面 否则出现覆盖C# C++的问题 */
-pre[class*='language-c']:before {
-  content: 'C';
+pre[class*="language-c"]:before {
+  content: "C";
 }
 
-pre[class*='language-py']:before {
-  content: 'Python';
+pre[class*="language-py"]:before {
+  content: "Python";
 }
 
-pre[class*='language-python']:before {
-  content: 'Python';
+pre[class*="language-python"]:before {
+  content: "Python";
 }
 
-pre[class*='language-nginx']:before {
-  content: 'Nginx';
+pre[class*="language-nginx"]:before {
+  content: "Nginx";
 }
 
-pre[class*='language-css']:before {
-  content: 'Css';
+pre[class*="language-css"]:before {
+  content: "Css";
 }
 
-pre[class*='language-javascript']:before {
-  content: 'Js';
+pre[class*="language-javascript"]:before {
+  content: "Js";
 }
 
-pre[class*='language-js']:before {
-  content: 'Js';
+pre[class*="language-js"]:before {
+  content: "Js";
 }
 
-pre[class*='language-php']:before {
-  content: 'Php';
+pre[class*="language-php"]:before {
+  content: "Php";
 }
 
-pre[class*='language-shell']:before {
-  content: 'Shell';
+pre[class*="language-shell"]:before {
+  content: "Shell";
 }
 
-pre[class*='language-flow']:before {
-  content: 'Flow';
+pre[class*="language-flow"]:before {
+  content: "Flow";
 }
 
-pre[class*='language-sequence']:before {
-  content: 'Sequence';
+pre[class*="language-sequence"]:before {
+  content: "Sequence";
 }
 
-pre[class*='language-sql']:before {
-  content: 'Sql';
+pre[class*="language-sql"]:before {
+  content: "Sql";
 }
 
-pre[class*='language-yaml']:before {
-  content: 'Yaml';
+pre[class*="language-yaml"]:before {
+  content: "Yaml";
 }
 
-pre[class*='language-ini']:before {
-  content: 'ini';
+pre[class*="language-ini"]:before {
+  content: "ini";
 }
 
-pre[class*='language-xml']:before {
-  content: 'Xml';
+pre[class*="language-xml"]:before {
+  content: "Xml";
 }
 
-pre[class*='language-git']:before {
-  content: 'Git';
+pre[class*="language-git"]:before {
+  content: "Git";
 }
 
-pre[class*='language-cs']:before {
-  content: 'C#';
+pre[class*="language-cs"]:before {
+  content: "C#";
 }
 
-pre[class*='language-cpp']:before {
-  content: 'C++';
+pre[class*="language-cpp"]:before {
+  content: "C++";
 }
 
-pre[class*='language-java']:before {
-  content: 'Java';
+pre[class*="language-java"]:before {
+  content: "Java";
 }
 
-pre[class*='language-html']:before {
-  content: 'Html';
+pre[class*="language-html"]:before {
+  content: "Html";
 }
 
-pre[class*='language-txt']:before {
-  content: 'txt';
+pre[class*="language-txt"]:before {
+  content: "txt";
 }
 
 /* Code */
-.theme-light :not(pre) > code[class*='language-'],
-.theme-light pre[class*='language-'] {
+.theme-light :not(pre) > code[class*="language-"],
+.theme-light pre[class*="language-"] {
   background-color: var(--background-primary-alt);
   /* 代码块 圆角 阴影 */
   border-radius: 6px;
@@ -5643,14 +5643,14 @@ pre[class*='language-txt']:before {
   box-shadow: rgb(0 0 0/15%) 0px 2px 10px;
 }
 
-.theme-light code[class*='language-'],
-.theme-light pre[class*='language-'] {
+.theme-light code[class*="language-"],
+.theme-light pre[class*="language-"] {
   color: #4c5064 !important;
   text-shadow: none;
   font-family: var(--mono-font), var(--cjk-font);
 }
-.theme-dark code[class*='language-'],
-.theme-dark pre[class*='language-'] {
+.theme-dark code[class*="language-"],
+.theme-dark pre[class*="language-"] {
   color: #d1ccbd !important;
   text-shadow: none;
   font-family: var(--mono-font), var(--cjk-font);

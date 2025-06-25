@@ -1,11 +1,11 @@
 body
-  :is(.markdown-preview-view, .workspace-leaf-content[data-type='image'])
-  img:not([class*='emoji'], .banner-image) {
+  :is(.markdown-preview-view, .workspace-leaf-content[data-type="image"])
+  img:not([class*="emoji"], .banner-image) {
   cursor: zoom-in;
 }
 body
-  :is(.markdown-preview-view, .workspace-leaf-content[data-type='image'])
-  img:not([class*='emoji'], .banner-image):active {
+  :is(.markdown-preview-view, .workspace-leaf-content[data-type="image"])
+  img:not([class*="emoji"], .banner-image):active {
   overflow: hidden;
   position: relative;
   object-fit: contain;
@@ -23,7 +23,7 @@ body
   );
 }
 body-out
-  :is(.markdown-preview-view, .workspace-leaf-content[data-type='image'])
-  img:not([class*='emoji'], .banner-image):active {
+  :is(.markdown-preview-view, .workspace-leaf-content[data-type="image"])
+  img:not([class*="emoji"], .banner-image):active {
   position: fixed;
 }

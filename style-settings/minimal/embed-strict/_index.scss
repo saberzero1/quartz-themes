@@ -17,7 +17,7 @@ body {
 .markdown-embed-title {
   display: none;
 }
-.internal-embed:not([src*='#^']) .markdown-embed-link {
+.internal-embed:not([src*="#^"]) .markdown-embed-link {
   width: 24px;
   opacity: 0;
 }

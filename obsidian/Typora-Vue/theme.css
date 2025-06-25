@@ -121,7 +121,7 @@ thead {
 
 .markdown-preview-view h1:hover::before,
 .HyperMD-header .cm-header-1:hover::before {
-  content: 'h1';
+  content: "h1";
   position: absolute;
   font-size: 10px;
   color: rgb(221 221 221);
@@ -136,7 +136,7 @@ thead {
 
 .markdown-preview-view h2:hover::before,
 .HyperMD-header .cm-header-2:hover::before {
-  content: 'h2';
+  content: "h2";
   position: absolute;
   font-size: 10px;
   color: rgb(221 221 221);
@@ -152,7 +152,7 @@ thead {
 
 .markdown-preview-view h3:hover::before,
 .HyperMD-header .cm-header-3:hover::before {
-  content: 'h3';
+  content: "h3";
   position: absolute;
   font-size: 10px;
   color: rgb(221 221 221);
@@ -168,7 +168,7 @@ thead {
 
 .markdown-preview-view h4:hover::before,
 .HyperMD-header .cm-header-4:hover::before {
-  content: 'h4';
+  content: "h4";
   position: absolute;
   font-size: 10px;
   color: rgb(221 221 221);
@@ -184,7 +184,7 @@ thead {
 
 .markdown-preview-view h5:hover::before,
 .HyperMD-header .cm-header-5:hover::before {
-  content: 'h5';
+  content: "h5";
   position: absolute;
   font-size: 10px;
   color: rgb(221 221 221);
@@ -200,7 +200,7 @@ thead {
 
 .markdown-preview-view h6:hover::before,
 .HyperMD-header .cm-header-6:hover::before {
-  content: 'h6';
+  content: "h6";
   position: absolute;
   font-size: 10px;
   color: rgb(221 221 221);
@@ -231,7 +231,7 @@ thead {
 /*Navigator File BEGIN*/
 .nav-file-title.is-active::before {
   border-left: 4px solid hsl(var(--interactive-accent-hsl));
-  content: '';
+  content: "";
   position: absolute;
   left: 0px;
   top: 0;

@@ -1,24 +1,24 @@
-@use 'sass:color';
-@use 'sass:list';
-@use 'sass:map';
-@use 'sass:meta';
-@use 'sass:string';
+@use "sass:color";
+@use "sass:list";
+@use "sass:map";
+@use "sass:meta";
+@use "sass:string";
 /* Quartz imports */
-@use '../variables.scss' as *;
+@use "../variables.scss" as *;
 /* quartz themes */
 
-:root[saved-theme='dark'],
-html[saved-theme='dark'] {
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
   .callout {
     --callout-blend-mode: lighten;
   }
 
-  code[data-theme*=' '] {
+  code[data-theme*=" "] {
     color: var(--shiki-dark);
     background-color: var(--shiki-dark-bg);
   }
 
-  code[data-theme*=' '] span {
+  code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
 
@@ -146,18 +146,18 @@ html[saved-theme='dark'] {
   color-scheme: dark;
 }
 
-:root[saved-theme='light'],
-html[saved-theme='light'] {
+:root[saved-theme="light"],
+html[saved-theme="light"] {
   .callout {
     --callout-blend-mode: darken;
   }
 
-  code[data-theme*=' '] {
+  code[data-theme*=" "] {
     color: var(--shiki-light);
     background-color: var(--shiki-light-bg);
   }
 
-  code[data-theme*=' '] span {
+  code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
 
@@ -284,110 +284,215 @@ html[saved-theme='light'] {
 }
 
 @font-face {
-  font-family: 'SF Mono';
+  font-family: "SF Mono";
   font-style: normal;
   font-weight: 400;
   src:
-    local('SF Mono'),
-    url('https://fonts.cdnfonts.com/s/22256/SFMonoRegular.woff') format('woff');
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoRegular.woff") format("woff");
 }
 @font-face {
-  font-family: 'SF Mono';
+  font-family: "SF Mono";
   font-style: italic;
   font-weight: 400;
   src:
-    local('SF Mono'),
-    url('https://fonts.cdnfonts.com/s/22256/SFMonoRegularItalic.woff')
-      format('woff');
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoRegularItalic.woff")
+      format("woff");
 }
 @font-face {
-  font-family: 'SF Mono';
+  font-family: "SF Mono";
   font-style: normal;
   font-weight: 300;
   src:
-    local('SF Mono'),
-    url('https://fonts.cdnfonts.com/s/22256/SFMonoLight.woff') format('woff');
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoLight.woff") format("woff");
 }
 @font-face {
-  font-family: 'SF Mono';
+  font-family: "SF Mono";
   font-style: italic;
   font-weight: 300;
   src:
-    local('SF Mono'),
-    url('https://fonts.cdnfonts.com/s/22256/SFMonoLightItalic.woff')
-      format('woff');
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoLightItalic.woff")
+      format("woff");
 }
 @font-face {
-  font-family: 'SF Mono';
+  font-family: "SF Mono";
   font-style: normal;
   font-weight: 500;
   src:
-    local('SF Mono'),
-    url('https://fonts.cdnfonts.com/s/22256/SFMonoMedium.woff') format('woff');
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoMedium.woff") format("woff");
 }
 @font-face {
-  font-family: 'SF Mono';
+  font-family: "SF Mono";
   font-style: italic;
   font-weight: 500;
   src:
-    local('SF Mono'),
-    url('https://fonts.cdnfonts.com/s/22256/SFMonoMediumItalic.woff')
-      format('woff');
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoMediumItalic.woff")
+      format("woff");
 }
 @font-face {
-  font-family: 'SF Mono';
+  font-family: "SF Mono";
   font-style: normal;
   font-weight: 600;
   src:
-    local('SF Mono'),
-    url('https://fonts.cdnfonts.com/s/22256/SFMonoSemibold.woff') format('woff');
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoSemibold.woff") format("woff");
 }
 @font-face {
-  font-family: 'SF Mono';
+  font-family: "SF Mono";
   font-style: italic;
   font-weight: 600;
   src:
-    local('SF Mono'),
-    url('https://fonts.cdnfonts.com/s/22256/SFMonoSemiboldItalic.woff')
-      format('woff');
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoSemiboldItalic.woff")
+      format("woff");
 }
 @font-face {
-  font-family: 'SF Mono';
+  font-family: "SF Mono";
   font-style: normal;
   font-weight: 700;
   src:
-    local('SF Mono'),
-    url('https://fonts.cdnfonts.com/s/22256/SFMonoBold.woff') format('woff');
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoBold.woff") format("woff");
 }
 @font-face {
-  font-family: 'SF Mono';
+  font-family: "SF Mono";
   font-style: italic;
   font-weight: 700;
   src:
-    local('SF Mono'),
-    url('https://fonts.cdnfonts.com/s/22256/SFMonoBoldItalic.woff')
-      format('woff');
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoBoldItalic.woff")
+      format("woff");
 }
 @font-face {
-  font-family: 'SF Mono';
+  font-family: "SF Mono";
   font-style: normal;
   font-weight: 900;
   src:
-    local('SF Mono'),
-    url('https://fonts.cdnfonts.com/s/22256/SFMonoHeavy.woff') format('woff');
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoHeavy.woff") format("woff");
 }
 @font-face {
-  font-family: 'SF Mono';
+  font-family: "SF Mono";
   font-style: italic;
   font-weight: 900;
   src:
-    local('SF Mono'),
-    url('https://fonts.cdnfonts.com/s/22256/SFMonoHeavyItalic.woff')
-      format('woff');
+    local("SF Mono"),
+    url("https://fonts.cdnfonts.com/s/22256/SFMonoHeavyItalic.woff")
+      format("woff");
 }
 
 :root {
+  --background: light-dark(rgb(var(--gray-100)), rgb(var(--gray-10)));
+  --background-hover: light-dark(
+    rgba(var(--gray-50), 0.16),
+    rgba(var(--gray-50), 0.12)
+  );
+  --background-selected: light-dark(
+    rgba(var(--gray-50), 0.24),
+    rgba(var(--gray-50), 0.2)
+  );
+  --border-strong-1: light-dark(rgb(var(--gray-60)), rgb(var(--gray-50)));
+  --border-subtle-0: light-dark(rgb(var(--gray-80)), rgb(var(--gray-20)));
+  --border-subtle-1: light-dark(rgb(var(--gray-80)), rgb(var(--gray-20)));
+  --code-comment: light-dark(var(--text-faint), var(--text-faint));
+  --code-function: light-dark(var(--orange-30), var(--orange));
+  --code-important: light-dark(var(--lavender), var(--lavender));
+  --code-keyword: light-dark(var(--pink), var(--pink));
+  --code-normal: light-dark(var(--text-muted), var(--text-muted));
+  --code-property: light-dark(var(--cyan), var(--cyan));
+  --code-punctuation: light-dark(var(--text-muted), var(--text-muted));
+  --code-string: light-dark(var(--green-40), var(--green));
+  --code-tag: light-dark(var(--red-50), var(--red));
+  --code-value: light-dark(var(--lavender), var(--lavender));
+  --color-accent: light-dark(
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l))
+  );
+  --color-accent-1: light-dark(
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 1),
+      calc(var(--accent-s) * 1.01),
+      calc(var(--accent-l) * 1.075)
+    )
+  );
+  --color-accent-2: light-dark(
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    )
+  );
+  --color-accent-hsl: light-dark(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l)
+  );
+  --color-accent-rgb: light-dark(
+    var(--custom-accent-color),
+    var(--custom-accent-color)
+  );
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-blue-rgb: light-dark(2, 122, 255, 8, 109, 221);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --duration-moderate-2: 240ms;
+  --field-1: light-dark(rgb(var(--gray-90)), rgb(var(--white)));
+  --focus: light-dark(var(--cyan-60), var(--cyan-60));
+  --highlight: light-dark(
+    rgba(var(--color-accent-rgb), 0.7),
+    rgba(var(--color-accent-rgb), 0.7)
+  );
+  --highlight-mix-blend-mode: light-dark(darken, darken);
+  --interactive: light-dark(
+    rgb(var(--color-accent-rgb)),
+    rgb(var(--color-accent-rgb))
+  );
+  --layer-1: light-dark(rgb(var(--gray-90)), rgb(var(--white)));
+  --layer-hover-2: light-dark(
+    rgba(var(--gray-70), 0.5),
+    rgba(var(--gray-20), 0.5)
+  );
+  --mono-rgb-100: light-dark(255, 255, 255, 0, 0, 0);
+  --shadow-color: light-dark(0deg 0% 1%, 0deg 5% 59%);
+  --shadow-l: light-dark(
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
+    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2),
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
+    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2)
+  );
+  --text-placeholder: light-dark(rgb(var(--gray-60)), rgb(var(--gray-40)));
+  --text-primary: light-dark(rgb(var(--gray-10)), rgb(var(--gray-100)));
+  --text-secondary: light-dark(rgb(var(--gray-30)), rgb(var(--gray-70)));
 }
 body {
   --accent-h: 24.4;
@@ -453,33 +558,33 @@ body {
   --cyan-50: hsl(187.4deg, 22.4%, 50%);
   --cyan-60: hsl(199.5deg, 38.8%, 40.4%);
   --font-default:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, 'Segoe UI',
-    Roboto, 'Inter', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
   --font-interface:
     var(--font-interface-override), var(--font-interface-theme),
-    var(--default-font, '??'), var(--font-default);
-  --font-interface-override: '??';
+    var(--default-font, "??"), var(--font-default);
+  --font-interface-override: "??";
   --font-interface-theme: inter, sans-serif;
   --font-medium: 500;
   --font-monospace:
     var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default);
   --font-monospace-default:
-    ui-monospace, SFMono-Regular, 'Cascadia Mono', 'Roboto Mono',
-    'DejaVu Sans Mono', 'Liberation Mono', Menlo, Monaco, 'Consolas',
-    'Source Code Pro', monospace;
-  --font-monospace-override: '??';
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace;
+  --font-monospace-override: "??";
   --font-monospace-theme:
-    menlo, sfmono-regular, consolas, 'Roboto Mono', monospace;
+    menlo, sfmono-regular, consolas, "Roboto Mono", monospace;
   --font-normal: 400;
   --font-print:
     var(--font-print-override), var(--font-text-override),
-    var(--font-text-theme), 'Arial';
-  --font-print-override: '??';
+    var(--font-text-theme), "Arial";
+  --font-print-override: "??";
   --font-smaller: 0.875em;
   --font-text: var(--font-print);
-  --font-text-override: '??';
+  --font-text-override: "??";
   --font-text-theme: inter, sans-serif;
   --font-ui-medium: 14px;
   --font-ui-small: 12px;
@@ -633,8 +738,8 @@ body {
   contain: initial;
   font-family: var(--font-interface);
   font-feature-settings:
-    'ss05',
-    'ss02' on;
+    "ss05",
+    "ss02" on;
   font-size: var(--font-ui-medium);
   height: 100%;
   line-height: var(--line-height-tight);
@@ -648,18 +753,18 @@ body {
   width: 100%;
 }
 /* START DARK */
-:root[saved-theme='dark'],
-html[saved-theme='dark'] {
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
   .callout {
     --callout-blend-mode: lighten;
   }
 
-  code[data-theme*=' '] {
+  code[data-theme*=" "] {
     color: var(--shiki-dark);
     background-color: var(--shiki-dark-bg);
   }
 
-  code[data-theme*=' '] span {
+  code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
 
@@ -788,18 +893,18 @@ html[saved-theme='dark'] {
 }
 /* END DARK */
 /* START LIGHT */
-:root[saved-theme='light'],
-html[saved-theme='light'] {
+:root[saved-theme="light"],
+html[saved-theme="light"] {
   .callout {
     --callout-blend-mode: darken;
   }
 
-  code[data-theme*=' '] {
+  code[data-theme*=" "] {
     color: var(--shiki-light);
     background-color: var(--shiki-light-bg);
   }
 
-  code[data-theme*=' '] span {
+  code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
 
@@ -948,107 +1053,107 @@ html {
       --callout-color: var(--callout-default);
       background-color: rgba(var(--callout-color), 0.2);
     }
-    &[data-callout='abstract'] {
+    &[data-callout="abstract"] {
       --callout-color: 104, 145, 181;
       background-color: rgba(var(--callout-color), 0.2);
     }
-    &[data-callout='summary'] {
+    &[data-callout="summary"] {
       --callout-color: 104, 145, 181;
       background-color: rgba(var(--callout-color), 0.2);
     }
-    &[data-callout='tldr'] {
+    &[data-callout="tldr"] {
       --callout-color: 104, 145, 181;
       background-color: rgba(var(--callout-color), 0.2);
     }
-    &[data-callout='info'] {
+    &[data-callout="info"] {
       --callout-color: 99, 149, 156;
       background-color: rgba(var(--callout-color), 0.2);
     }
-    &[data-callout='todo'] {
+    &[data-callout="todo"] {
       --callout-color: 99, 149, 156;
       background-color: rgba(var(--callout-color), 0.2);
     }
-    &[data-callout='important'] {
+    &[data-callout="important"] {
       --callout-color: 92, 153, 124;
       background-color: rgba(var(--callout-color), 0.2);
     }
-    &[data-callout='tip'] {
+    &[data-callout="tip"] {
       --callout-color: 92, 153, 124;
       background-color: rgba(var(--callout-color), 0.2);
     }
-    &[data-callout='hint'] {
+    &[data-callout="hint"] {
       --callout-color: 92, 153, 124;
       background-color: rgba(var(--callout-color), 0.2);
     }
-    &[data-callout='success'] {
+    &[data-callout="success"] {
       --callout-color: 102, 153, 97;
       background-color: rgba(var(--callout-color), 0.2);
     }
-    &[data-callout='check'] {
+    &[data-callout="check"] {
       --callout-color: 102, 153, 97;
       background-color: rgba(var(--callout-color), 0.2);
     }
-    &[data-callout='done'] {
+    &[data-callout="done"] {
       --callout-color: 102, 153, 97;
       background-color: rgba(var(--callout-color), 0.2);
     }
-    &[data-callout='question'] {
+    &[data-callout="question"] {
       --callout-color: 141, 147, 25;
       background-color: rgba(var(--callout-color), 0.2);
     }
-    &[data-callout='help'] {
+    &[data-callout="help"] {
       --callout-color: 141, 147, 25;
       background-color: rgba(var(--callout-color), 0.2);
     }
-    &[data-callout='faq'] {
+    &[data-callout="faq"] {
       --callout-color: 141, 147, 25;
       background-color: rgba(var(--callout-color), 0.2);
     }
-    &[data-callout='warning'] {
+    &[data-callout="warning"] {
       --callout-color: 184, 131, 0;
       background-color: rgba(var(--callout-color), 0.2);
     }
-    &[data-callout='caution'] {
+    &[data-callout="caution"] {
       --callout-color: 184, 131, 0;
       background-color: rgba(var(--callout-color), 0.2);
     }
-    &[data-callout='attention'] {
+    &[data-callout="attention"] {
       --callout-color: 184, 131, 0;
       background-color: rgba(var(--callout-color), 0.2);
     }
-    &[data-callout='failure'] {
+    &[data-callout="failure"] {
       --callout-color: 226, 105, 52;
       background-color: rgba(var(--callout-color), 0.2);
     }
-    &[data-callout='fail'] {
+    &[data-callout="fail"] {
       --callout-color: 226, 105, 52;
       background-color: rgba(var(--callout-color), 0.2);
     }
-    &[data-callout='missing'] {
+    &[data-callout="missing"] {
       --callout-color: 226, 105, 52;
       background-color: rgba(var(--callout-color), 0.2);
     }
-    &[data-callout='danger'] {
+    &[data-callout="danger"] {
       --callout-color: 243, 90, 55;
       background-color: rgba(var(--callout-color), 0.2);
     }
-    &[data-callout='error'] {
+    &[data-callout="error"] {
       --callout-color: 243, 90, 55;
       background-color: rgba(var(--callout-color), 0.2);
     }
-    &[data-callout='bug'] {
+    &[data-callout="bug"] {
       --callout-color: 236, 90, 118;
       background-color: rgba(var(--callout-color), 0.2);
     }
-    &[data-callout='example'] {
+    &[data-callout="example"] {
       --callout-color: 165, 119, 218;
       background-color: rgba(var(--callout-color), 0.2);
     }
-    &[data-callout='quote'] {
+    &[data-callout="quote"] {
       --callout-color: var(--gray-50);
       background-color: rgba(var(--callout-color), 0.2);
     }
-    &[data-callout='cite'] {
+    &[data-callout="cite"] {
       --callout-color: var(--gray-50);
       background-color: rgba(var(--callout-color), 0.2);
     }
@@ -1182,7 +1287,7 @@ body {
       text-decoration: var(--tag-decoration-hover);
     }
   }
-  input[type='checkbox'] {
+  input[type="checkbox"] {
     appearance: none;
     appearance: none;
     border-radius: var(--checkbox-radius);
@@ -1196,17 +1301,17 @@ body {
     position: relative;
     transition: box-shadow 0.15s ease-in-out;
   }
-  input[type='checkbox']:hover,
-  input[type='checkbox']:active,
-  input[type='checkbox']:focus {
+  input[type="checkbox"]:hover,
+  input[type="checkbox"]:active,
+  input[type="checkbox"]:focus {
     outline: 0;
     border-color: var(--checkbox-border-color-hover);
   }
-  input[type='checkbox']:focus-visible {
+  input[type="checkbox"]:focus-visible {
     box-shadow: 0 0 0 2px var(--background-modifier-border-focus);
   }
-  input[type='checkbox']:checked:after {
-    content: '';
+  input[type="checkbox"]:checked:after {
+    content: "";
     top: -1px;
     inset-inline-start: -1px;
     position: absolute;
@@ -1219,18 +1324,18 @@ body {
     mask-repeat: no-repeat;
     mask-image: url('data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
   }
-  input[type='checkbox']:checked {
+  input[type="checkbox"]:checked {
     background-color: var(--checkbox-color);
     border-color: var(--checkbox-color);
   }
   @media (hover: hover) {
-    input[type='checkbox']:checked:hover {
+    input[type="checkbox"]:checked:hover {
       background-color: var(--checkbox-color-hover);
       border-color: var(--checkbox-color-hover);
     }
   }
-  input[type='checkbox'][data-indeterminate='true']:not(:checked):after {
-    content: '';
+  input[type="checkbox"][data-indeterminate="true"]:not(:checked):after {
+    content: "";
     position: absolute;
     top: calc(var(--checkbox-size) / 2 - 2px);
     width: calc(var(--checkbox-size) - 6px);
@@ -1368,51 +1473,51 @@ body {
     padding: 0.15em 0.3em;
     background-color: var(--code-background);
     //color: var(--code-color);
-    span[style='--shiki-light:#6F42C1;--shiki-dark:#B392F0;'] {
+    span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
       //color: var(--code-value) !important;
       color: var(--color-purple) !important;
     }
-    span[style='--shiki-light:#005CC5;--shiki-dark:#79B8FF;'] {
+    span[style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"] {
       //color: var(--code-function) !important;
       color: var(--color-blue) !important;
     }
-    span[style='--shiki-light:#032F62;--shiki-dark:#9ECBFF;'] {
+    span[style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"] {
       //color: var(--code-string) !important;
       color: var(--color-cyan) !important;
     }
-    span[style='--shiki-light:#032F62;--shiki-dark:#DBEDFF;'] {
+    span[style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;"] {
       //color: var(--code-property) !important;
       color: var(--code-yellow) !important;
     }
-    span[style='--shiki-light:#24292E;--shiki-dark:#E1E4E8;'] {
+    span[style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"] {
       //color: var(--code-normal) !important;
       color: var(--code-normal) !important;
     }
-    span[style='--shiki-light:#586069;--shiki-dark:#D1D5DA;'] {
+    span[style="--shiki-light:#586069;--shiki-dark:#D1D5DA;"] {
       //color: var(--code-punctuation) !important;
       color: var(--text-muted) !important;
     }
-    span[style='--shiki-light:#F6F8FA;--shiki-dark:#2F363D;'] {
+    span[style="--shiki-light:#F6F8FA;--shiki-dark:#2F363D;"] {
       //color: var(--code-comment) !important;
       color: var(--text-faint) !important;
     }
-    span[style='--shiki-light:#6A737D;--shiki-dark:#6A737D;'] {
+    span[style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"] {
       //color: var(--code-comment) !important;
       color: var(--code-comment) !important;
     }
-    span[style='--shiki-light:#22863A;--shiki-dark:#85E89D;'] {
+    span[style="--shiki-light:#22863A;--shiki-dark:#85E89D;"] {
       //color: var(--code-tag) !important;
       color: var(--color-green) !important;
     }
-    span[style='--shiki-light:#E36209;--shiki-dark:#FFAB70;'] {
+    span[style="--shiki-light:#E36209;--shiki-dark:#FFAB70;"] {
       //color: var(--code-important) !important;
       color: var(--color-orange) !important;
     }
-    span[style='--shiki-light:#B31D28;--shiki-dark:#FDAEB7;'] {
+    span[style="--shiki-light:#B31D28;--shiki-dark:#FDAEB7;"] {
       //color: var(--text-operator) !important;
       color: var(--color-pink) !important;
     }
-    span[style='--shiki-light:#D73A49;--shiki-dark:#F97583;'] {
+    span[style="--shiki-light:#D73A49;--shiki-dark:#F97583;"] {
       //color: var(--code-keyword) !important;
       color: var(--color-red) !important;
     }
@@ -1506,7 +1611,7 @@ body {
           display: flex;
           align-self: center;
           background: var(--icon-color);
-          content: '';
+          content: "";
         }
         & > div {
           width: 100%;
@@ -1554,7 +1659,7 @@ body {
             color: var(--nav-item-color-active);
             font-weight: var(--nav-item-weight-active);
           }
-          &[data-for$='/index'] {
+          &[data-for$="/index"] {
             padding-inline-start: 8px;
           }
           padding-inline-start: 0;
@@ -1565,7 +1670,7 @@ body {
           height: 16px;
           min-width: 16px;
           min-height: 16px;
-          content: '';
+          content: "";
           display: flex;
           align-self: center;
           background: var(--icon-color);
@@ -1630,7 +1735,7 @@ body {
       display: none;
     }
     /* lucide book-open icon */
-    --readermode-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJvb2stb3Blbi1pY29uIGx1Y2lkZS1ib29rLW9wZW4iPjxwYXRoIGQ9Ik0xMiA3djE0Ii8+PHBhdGggZD0iTTMgMThhMSAxIDAgMCAxLTEtMVY0YTEgMSAwIDAgMSAxLTFoNWE0IDQgMCAwIDEgNCA0IDQgNCAwIDAgMSA0LTRoNWExIDEgMCAwIDEgMSAxdjEzYTEgMSAwIDAgMS0xIDFoLTZhMyAzIDAgMCAwLTMgMyAzIDMgMCAwIDAtMy0zeiIvPjwvc3ZnPg==');
+    --readermode-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJvb2stb3Blbi1pY29uIGx1Y2lkZS1ib29rLW9wZW4iPjxwYXRoIGQ9Ik0xMiA3djE0Ii8+PHBhdGggZD0iTTMgMThhMSAxIDAgMCAxLTEtMVY0YTEgMSAwIDAgMSAxLTFoNWE0IDQgMCAwIDEgNCA0IDQgNCAwIDAgMSA0LTRoNWExIDEgMCAwIDEgMSAxdjEzYTEgMSAwIDAgMS0xIDFoLTZhMyAzIDAgMCAwLTMgMyAzIDMgMCAwIDAtMy0zeiIvPjwvc3ZnPg==");
     background: var(--icon-color) !important;
     mask-image: var(--readermode-icon);
     -webkit-mask-image: var(--readermode-icon);
@@ -1642,7 +1747,7 @@ body {
       display: none;
     }
     /* lucide git-fork icon */
-    --graph-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWdpdC1mb3JrLWljb24gbHVjaWRlLWdpdC1mb3JrIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjE4IiByPSIzIi8+PGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjMiLz48Y2lyY2xlIGN4PSIxOCIgY3k9IjYiIHI9IjMiLz48cGF0aCBkPSJNMTggOXYyYzAgLjYtLjQgMS0xIDFIN2MtLjYgMC0xLS40LTEtMVY5Ii8+PHBhdGggZD0iTTEyIDEydjMiLz48L3N2Zz4=');
+    --graph-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWdpdC1mb3JrLWljb24gbHVjaWRlLWdpdC1mb3JrIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjE4IiByPSIzIi8+PGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjMiLz48Y2lyY2xlIGN4PSIxOCIgY3k9IjYiIHI9IjMiLz48cGF0aCBkPSJNMTggOXYyYzAgLjYtLjQgMS0xIDFIN2MtLjYgMC0xLS40LTEtMVY5Ii8+PHBhdGggZD0iTTEyIDEydjMiLz48L3N2Zz4=");
     background: var(--icon-color) !important;
     mask-image: var(--graph-icon);
     -webkit-mask-image: var(--graph-icon);
@@ -1654,9 +1759,9 @@ body {
       display: none !important;
     }
     /* lucide moon icon */
-    --moon-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLW1vb24taWNvbiBsdWNpZGUtbW9vbiI+PHBhdGggZD0iTTEyIDNhNiA2IDAgMCAwIDkgOSA5IDkgMCAxIDEtOS05WiIvPjwvc3ZnPg==');
+    --moon-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLW1vb24taWNvbiBsdWNpZGUtbW9vbiI+PHBhdGggZD0iTTEyIDNhNiA2IDAgMCAwIDkgOSA5IDkgMCAxIDEtOS05WiIvPjwvc3ZnPg==");
     /* lucide sun icon */
-    --sun-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXN1bi1pY29uIGx1Y2lkZS1zdW4iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjQiLz48cGF0aCBkPSJNMTIgMnYyIi8+PHBhdGggZD0iTTEyIDIwdjIiLz48cGF0aCBkPSJtNC45MyA0LjkzIDEuNDEgMS40MSIvPjxwYXRoIGQ9Im0xNy42NiAxNy42NiAxLjQxIDEuNDEiLz48cGF0aCBkPSJNMiAxMmgyIi8+PHBhdGggZD0iTTIwIDEyaDIiLz48cGF0aCBkPSJtNi4zNCAxNy42Ni0xLjQxIDEuNDEiLz48cGF0aCBkPSJtMTkuMDcgNC45My0xLjQxIDEuNDEiLz48L3N2Zz4=');
+    --sun-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXN1bi1pY29uIGx1Y2lkZS1zdW4iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjQiLz48cGF0aCBkPSJNMTIgMnYyIi8+PHBhdGggZD0iTTEyIDIwdjIiLz48cGF0aCBkPSJtNC45MyA0LjkzIDEuNDEgMS40MSIvPjxwYXRoIGQ9Im0xNy42NiAxNy42NiAxLjQxIDEuNDEiLz48cGF0aCBkPSJNMiAxMmgyIi8+PHBhdGggZD0iTTIwIDEyaDIiLz48cGF0aCBkPSJtNi4zNCAxNy42Ni0xLjQxIDEuNDEiLz48cGF0aCBkPSJtMTkuMDcgNC45My0xLjQxIDEuNDEiLz48L3N2Zz4=");
     background: var(--icon-color) !important;
     width: 24px;
     height: 24px;
@@ -1905,13 +2010,13 @@ body {
   user-select: text;
   -webkit-user-select: text;
 }
-:root[saved-theme='light'] {
+:root[saved-theme="light"] {
   button.darkmode {
     mask-image: var(--sun-icon);
     -webkit-mask-image: var(--sun-icon);
   }
 }
-:root[saved-theme='dark'] {
+:root[saved-theme="dark"] {
   button.darkmode {
     mask-image: var(--moon-icon);
     -webkit-mask-image: var(--moon-icon);
@@ -1922,7 +2027,7 @@ body {
 }
 /* START CANVAS GRAPH WORKAROUND */
 /* START LIGHT GRAPH */
-:root:root[saved-theme='light'] {
+:root:root[saved-theme="light"] {
   --highlight-fallback: 258, 88%, 66%;
   --lightgray: var(
     --graph-line,
@@ -1961,7 +2066,7 @@ body {
 }
 /* END LIGHT GRAPH */
 /* START DARK GRAPH */
-:root:root[saved-theme='dark'] {
+:root:root[saved-theme="dark"] {
   --highlight-fallback: 258, 88%, 66%;
   --lightgray: var(
     --graph-line,

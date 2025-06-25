@@ -39,7 +39,7 @@ body.blockquote-style-quotation-mark
   :is(.markdown-preview-view, .markdown-rendered)
   blockquote
   p:first-of-type::before {
-  content: '\\ee81';
+  content: "\\ee81";
   font-size: 2em;
   font-family: boxicons;
   color: var(--text-folder-file-icon);
@@ -52,7 +52,7 @@ body.blockquote-style-quotation-mark
   .markdown-source-view.mod-cm6.is-live-preview
   .HyperMD-quote:not(.cm-active)
   > .cm-formatting.cm-formatting-quote.cm-quote::before {
-  content: '\\ee81';
+  content: "\\ee81";
   font-size: 1.5em;
   font-family: boxicons;
   color: var(--text-folder-file-icon);

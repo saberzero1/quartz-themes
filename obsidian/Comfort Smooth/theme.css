@@ -56,7 +56,7 @@ mark {
 /*background of graph view pane*/
 /**********************/
 
-.workspace-leaf-content[data-type='graph'] .view-content {
+.workspace-leaf-content[data-type="graph"] .view-content {
   background-color: var(--background-primary);
 }
 
@@ -290,7 +290,7 @@ img {
   box-shadow: 0 0 0.12em #fff900;
 }
 .markdown-preview-view .task-list-item-checkbox:checked::before {
-  content: '✓';
+  content: "✓";
   position: absolute;
   color: #c1a601;
   font-size: 1em;
@@ -727,10 +727,10 @@ but font weight does. */
 .workspace-ribbon.is-collapsed:not(:hover) {
   width: 0;
 }
-.workspace-split.mod-left-split[style*='width: 0px;'] {
+.workspace-split.mod-left-split[style*="width: 0px;"] {
   margin-left: 0;
 }
-.workspace-split.mod-right-split[style*='width: 0px;'] {
+.workspace-split.mod-right-split[style*="width: 0px;"] {
   margin-right: 0;
 }
 .workspace-ribbon {
@@ -746,7 +746,7 @@ ul ul {
 }
 .cm-hmd-list-indent .cm-tab::before,
 ul ul::before {
-  content: '';
+  content: "";
   border-left: 1px solid rgba(100, 100, 120, 0.6); /*最后一个数为透明度*/
   position: absolute;
 }
@@ -768,7 +768,7 @@ ol ol {
 }
 .cm-hmd-list-indent .cm-tab::before,
 ol ol::before {
-  content: '';
+  content: "";
   border-left: 1px solid rgba(100, 100, 120, 0.6); /*最后一个数为透明度*/
   position: absolute;
 }
@@ -790,7 +790,7 @@ ol ul {
 }
 .cm-hmd-list-indent .cm-tab::before,
 ol ul::before {
-  content: '';
+  content: "";
   border-left: 1px solid rgba(100, 100, 120, 0.6); /*最后一个数为透明度*/
   position: absolute;
 }
@@ -812,7 +812,7 @@ ul ol {
 }
 .cm-hmd-list-indent .cm-tab::before,
 ul ol::before {
-  content: '';
+  content: "";
   border-left: 1px solid rgba(100, 100, 120, 0.6); /*最后一个数为透明度*/
   position: absolute;
 }
@@ -836,7 +836,7 @@ span.cm-formatting-list-ul {
 }
 /*hieu: no idea if this would affect preview bullet color, but some useful css to play with? */
 span.cm-formatting-list-ul:before {
-  content: '• ';
+  content: "• ";
   color: var(--text-normal); /*change to your color pref */
   visibility: visible !important;
   margin-left: 0.1rem; /* 调节点的右缩进 */
@@ -873,7 +873,7 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hr {
 }
 
 div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hr:after {
-  content: '';
+  content: "";
   position: absolute;
   height: 1px;
   width: 100%;
@@ -936,9 +936,9 @@ div:not(.CodeMirror-activeline)
 }
 
 .CodeMirror-foldgutter-folded:after {
-  content: '\25BA';
+  content: "\25BA";
 }
 
 .CodeMirror-foldgutter-open:after {
-  content: '\25BC';
+  content: "\25BC";
 }

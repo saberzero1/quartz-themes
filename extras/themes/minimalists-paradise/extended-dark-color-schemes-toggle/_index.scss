@@ -1,9 +1,9 @@
 .extended-dark-color-schemes-toggle {
   :root {
     padding-bottom: 24px;
-    --default-font: 'Times New Roman', Times, serif;
+    --default-font: "Times New Roman", Times, serif;
     --default-font-size: 16px;
-    --code-font: 'Fira Code', 'JetBrains Mono', monospace;
+    --code-font: "Fira Code", "JetBrains Mono", monospace;
     --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     --card-max-width: 10000px;
     --card-width: 100%;
@@ -20,7 +20,7 @@
     .cm-s-obsidian {
       font-family: var(
         --default-font,
-        'Times New Roman',
+        "Times New Roman",
         Times,
         serif
       ) !important;
@@ -30,7 +30,7 @@
     .markdown-preview-view {
       font-family: var(
         --default-font,
-        'Times New Roman',
+        "Times New Roman",
         Times,
         serif
       ) !important;
@@ -203,19 +203,19 @@
 
     .markdown-preview-view pre code,
     .cm-s-obsidian pre,
-    .cm-s-obsidian code[class*='language-'] {
+    .cm-s-obsidian code[class*="language-"] {
       font-family: var(--code-font) !important;
     }
 
     .cm-s-obsidian span.cm-inline-code,
     .markdown-preview-view code {
-      font-family: var(--code-font, 'Fira Code', monospace) !important;
+      font-family: var(--code-font, "Fira Code", monospace) !important;
     }
 
     .markdown-preview-view pre code,
     .cm-s-obsidian pre,
-    .cm-s-obsidian code[class*='language-'] {
-      font-family: var(--code-font, 'Fira Code', monospace) !important;
+    .cm-s-obsidian code[class*="language-"] {
+      font-family: var(--code-font, "Fira Code", monospace) !important;
       font-size: 0.95rem;
     }
 
@@ -442,8 +442,8 @@
       width: fit-content;
     }
 
-    .workspace-tab-header[data-type='markdown'],
-    .workspace-tab-header[data-type='empty'] {
+    .workspace-tab-header[data-type="markdown"],
+    .workspace-tab-header[data-type="empty"] {
       max-width: 100%;
       display: flex;
       flex-grow: 1;
@@ -458,8 +458,8 @@
       box-sizing: border-box;
     }
 
-    .workspace-tab-header[data-type='markdown'].is-active.mod-active,
-    .workspace-tab-header[data-type='empty'].is-active.mod-active {
+    .workspace-tab-header[data-type="markdown"].is-active.mod-active,
+    .workspace-tab-header[data-type="empty"].is-active.mod-active {
       flex-grow: 2;
       max-width: 250px;
       background-color: var(--color-accent);

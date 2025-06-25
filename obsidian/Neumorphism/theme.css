@@ -229,7 +229,7 @@ body:not(.show-ribbon)
   overflow: var(--overflow) !important;
 }
 
-div[class^='div-scrollTo'] {
+div[class^="div-scrollTo"] {
   right: var(--gap) !important;
 }
 
@@ -305,7 +305,7 @@ div[class^='div-scrollTo'] {
   .workspace-tab-header.tappable.is-active
   .workspace-tab-header-inner:before {
   position: absolute;
-  content: '';
+  content: "";
   background: var(--background);
   width: calc(100% + 16px);
   height: 4px;

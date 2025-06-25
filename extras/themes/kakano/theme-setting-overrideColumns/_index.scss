@@ -4,7 +4,7 @@ body.theme-setting-overrideColumns {
   --obsidian-columns-padding: 0 0;
   --obsidian-columns-min-width: 10em;
   --obsidian-columns-def-span: 1;
-  div[data-callout|='col'].callout {
+  div[data-callout|="col"].callout {
     background-color: var(--background-primary); /* Override callout bg */
     padding: 0;
     border-style: none;
@@ -14,7 +14,7 @@ body.theme-setting-overrideColumns {
     }
 
     > div.callout-content {
-      > div[data-callout^='col-md'].callout {
+      > div[data-callout^="col-md"].callout {
         flex-grow: var(--obsidian-columns-custom-span);
         flex-basis: calc(
           var(--obsidian-columns-min-width) *
@@ -29,75 +29,75 @@ body.theme-setting-overrideColumns {
         padding: 0;
         border-style: none;
       }
-      > div[data-callout|='col-md'].callout {
+      > div[data-callout|="col-md"].callout {
         margin-block-start: 0;
       }
 
-      > div[data-callout='-0.5'].callout {
+      > div[data-callout="-0.5"].callout {
         --obsidian-columns-custom-span: 0.5;
       }
-      > div[data-callout$='-1'].callout,
-      > div[data-callout='col-md'].callout {
+      > div[data-callout$="-1"].callout,
+      > div[data-callout="col-md"].callout {
         --obsidian-columns-custom-span: 1;
       }
-      > div[data-callout$='-1.5'].callout {
+      > div[data-callout$="-1.5"].callout {
         --obsidian-columns-custom-span: 1.5;
       }
-      > div[data-callout$='-2'].callout {
+      > div[data-callout$="-2"].callout {
         --obsidian-columns-custom-span: 2;
       }
-      > div[data-callout$='-2.5'].callout {
+      > div[data-callout$="-2.5"].callout {
         --obsidian-columns-custom-span: 2.5;
       }
-      > div[data-callout$='-3'].callout {
+      > div[data-callout$="-3"].callout {
         --obsidian-columns-custom-span: 3;
       }
-      > div[data-callout$='-3.5'].callout {
+      > div[data-callout$="-3.5"].callout {
         --obsidian-columns-custom-span: 3.5;
       }
-      > div[data-callout$='-4'].callout {
+      > div[data-callout$="-4"].callout {
         --obsidian-columns-custom-span: 4;
       }
-      > div[data-callout$='-4.5'].callout {
+      > div[data-callout$="-4.5"].callout {
         --obsidian-columns-custom-span: 4.5;
       }
-      > div[data-callout$='-5'].callout {
+      > div[data-callout$="-5"].callout {
         --obsidian-columns-custom-span: 5;
       }
-      > div[data-callout$='-5.5'].callout {
+      > div[data-callout$="-5.5"].callout {
         --obsidian-columns-custom-span: 5.5;
       }
-      > div[data-callout$='-6'].callout {
+      > div[data-callout$="-6"].callout {
         --obsidian-columns-custom-span: 6;
       }
-      > div[data-callout$='-6.5'].callout {
+      > div[data-callout$="-6.5"].callout {
         --obsidian-columns-custom-span: 6.5;
       }
-      > div[data-callout$='-7'].callout {
+      > div[data-callout$="-7"].callout {
         --obsidian-columns-custom-span: 7;
       }
-      > div[data-callout$='-7.5'].callout {
+      > div[data-callout$="-7.5"].callout {
         --obsidian-columns-custom-span: 7.5;
       }
-      > div[data-callout$='-8'].callout {
+      > div[data-callout$="-8"].callout {
         --obsidian-columns-custom-span: 8;
       }
-      > div[data-callout$='-8.5'].callout {
+      > div[data-callout$="-8.5"].callout {
         --obsidian-columns-custom-span: 8.5;
       }
-      > div[data-callout$='-9'].callout {
+      > div[data-callout$="-9"].callout {
         --obsidian-columns-custom-span: 9;
       }
-      > div[data-callout$='-9.5'].callout {
+      > div[data-callout$="-9.5"].callout {
         --obsidian-columns-custom-span: 9.5;
       }
-      > div[data-callout$='-10'].callout {
+      > div[data-callout$="-10"].callout {
         --obsidian-columns-custom-span: 10;
       }
     }
   }
   .columnParent,
-  div[data-callout='col'].callout > div.callout-content {
+  div[data-callout="col"].callout > div.callout-content {
     display: flex !important;
     padding: var(--obsidian-columns-padding);
     flex-wrap: wrap;
@@ -105,7 +105,7 @@ body.theme-setting-overrideColumns {
     white-space: normal;
   }
   .columnChild,
-  div[data-callout='col'].callout > div.callout-content > * {
+  div[data-callout="col"].callout > div.callout-content > * {
     flex-grow: var(--obsidian-columns-def-span);
     flex-basis: calc(
       var(--obsidian-columns-min-width) * var(--obsidian-columns-def-span)

@@ -171,13 +171,13 @@ body.bt-bubble-layout.bt-bubble-not-file-tree:not(
     .background-settings-workplace-background-image
   )
   .workspace-leaf-content:is(
-    [data-type='file-explorer'],
-    [data-type='mk-file-view']
+    [data-type="file-explorer"],
+    [data-type="mk-file-view"]
   ),
 body.bt-bubble-layout:not(.background-settings-workplace-background-image)
   .workspace-split
   .workspace-leaf-content:not(
-    :is([data-type='file-explorer'], [data-type='mk-file-view'])
+    :is([data-type="file-explorer"], [data-type="mk-file-view"])
   ) {
   background-color: var(--background-primary-alt);
 }

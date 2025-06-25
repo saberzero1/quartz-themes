@@ -1,21 +1,21 @@
-@use './overrides.scss';
+@use "./overrides.scss";
 
 /* Callouts */
 $callout-types:
-  'note', 'abstract', 'info', 'todo', 'tip', 'success', 'question', 'warning',
-  'failure', 'danger', 'bug', 'example', 'quote';
+  "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
+  "failure", "danger", "bug", "example", "quote";
 
-:root[saved-theme='dark'],
-html[saved-theme='dark'],
-:root[saved-theme='light'],
-html[saved-theme='light'] {
+:root[saved-theme="dark"],
+html[saved-theme="dark"],
+:root[saved-theme="light"],
+html[saved-theme="light"] {
   .callout {
     @each $type in $callout-types {
-      &[data-callout='#{$type}'] {
-        --color-rgb: var(#{'--callout-#{$type}'});
-        --color: rgb(var(#{'--callout-#{$type}'}));
-        --border: rgba(var(#{'--callout-#{$type}'}), 0.267);
-        --bg: rgba(var(#{'--callout-#{$type}'}), 0.063);
+      &[data-callout="#{$type}"] {
+        --color-rgb: var(#{"--callout-#{$type}"});
+        --color: rgb(var(#{"--callout-#{$type}"}));
+        --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
+        --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
       }
     }
   }

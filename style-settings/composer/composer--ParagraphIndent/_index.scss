@@ -2,18 +2,18 @@
 body {
   --paragraph-indent: calc(var(--font-text-size) * 2);
 }
-.markdown-reading-view :is([class='cm-line'], [class='cm-active cm-line'], p),
-.is-live-preview :is([class='cm-line'], [class='cm-active cm-line'], p) {
+.markdown-reading-view :is([class="cm-line"], [class="cm-active cm-line"], p),
+.is-live-preview :is([class="cm-line"], [class="cm-active cm-line"], p) {
   text-indent: var(--paragraph-indent);
 }
 .markdown-reading-view p > br,
 .is-live-preview p > br {
-  content: '';
+  content: "";
   white-space: pre;
 }
 .markdown-reading-view p > br::after,
 .is-live-preview p > br::after {
-  content: '\000A\200B';
+  content: "\000A\200B";
   margin-inline-end: var(--paragraph-indent);
 }
 .markdown-reading-view .cm-preview-code-block p,
@@ -22,10 +22,10 @@ body {
 }
 .table-cell-wrapper
   .markdown-reading-view
-  :is([class='cm-line'], [class='cm-active cm-line'], p),
+  :is([class="cm-line"], [class="cm-active cm-line"], p),
 .table-cell-wrapper
   .is-live-preview
-  :is([class='cm-line'], [class='cm-active cm-line'], p) {
+  :is([class="cm-line"], [class="cm-active cm-line"], p) {
   text-indent: initial;
 }
 body div.markdown-reading-view div.mermaid {

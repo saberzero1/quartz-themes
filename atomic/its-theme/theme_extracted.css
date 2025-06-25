@@ -1,17 +1,318 @@
 :root {
+  --accent: light-dark(#863737, #912e2e);
+  --accent-h: light-dark(0, 0);
+  --accent-l: light-dark(49%, 49%);
+  --accent-s: light-dark(49%, 49%);
+  --accent-text: light-dark(#dcddde, #dcddde);
+  --accent2: light-dark(#42536e, #aac1d3);
+  --accent2-lite: light-dark(#61afef, #5599d0);
+  --aside-bg: light-dark(#11151d, var(--dark-sidebar));
+  --background-modifier-active-hover: light-dark(
+    var(--dark-accent),
+    var(--dark-accent)
+  );
+  --background-modifier-border: light-dark(var(--lines), var(--lines));
+  --background-modifier-border-focus: light-dark(var(--accent), var(--accent));
+  --background-modifier-border-hover: light-dark(var(--bg), var(--bg));
+  --background-modifier-box-shadow: light-dark(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.1)
+  );
+  --background-modifier-cover: light-dark(
+    light-dark(var(--td), rgba(220, 220, 220, 0.4)),
+    var(--td)
+  );
+  --background-modifier-error: light-dark(var(--failure-bg), var(--failure-bg));
+  --background-modifier-form-field: light-dark(
+    var(--input-bg),
+    var(--input-bg)
+  );
+  --background-modifier-hover: light-dark(var(--hvr-active), var(--hvr-active));
+  --background-modifier-message: light-dark(
+    var(--dark-accent),
+    var(--dark-accent)
+  );
+  --background-modifier-success: light-dark(
+    var(--success-bg),
+    var(--success-bg)
+  );
+  --background-primary: light-dark(var(--note), var(--note));
+  --background-primary-alt: light-dark(var(--outer-bar), var(--outer-bar));
+  --background-secondary: light-dark(var(--side-bar), var(--side-bar));
+  --background-secondary-alt: light-dark(
+    light-dark(var(--outer-bar), var(--color-base-05)),
+    var(--outer-bar)
+  );
+  --bg: light-dark(#252c36, #e1e9f6);
+  --bold-color: light-dark(inherit, inherit);
+  --bttn: light-dark(var(--dark-accent), var(--headers));
+  --chbx-a: light-dark(248, 114, 181, 248, 114, 181);
+  --chbx-b: light-dark(230, 129, 63, 251, 146, 76);
+  --chbx-B: light-dark(136, 94, 233, 182, 118, 255);
+  --chbx-c: light-dark(149, 233, 238, 149, 217, 238);
+  --chbx-C: light-dark(207, 67, 67, 214, 108, 108);
+  --chbx-d: light-dark(62, 69, 82, 203, 212, 235);
+  --chbx-h: light-dark(92, 118, 153, 168, 177, 189);
+  --chbx-i: light-dark(194, 42, 42, 219, 1, 1);
+  --chbx-I: light-dark(82, 139, 212, 82, 139, 212);
+  --chbx-id: light-dark(231, 231, 171, 202, 199, 0);
+  --chbx-N: light-dark(133, 91, 65, 161, 106, 73);
+  --chbx-P: light-dark(79, 165, 79, 79, 165, 79);
+  --chbx-q: light-dark(253, 175, 0, 253, 175, 0);
+  --chbx-r: light-dark(249, 190, 123, 249, 190, 123);
+  --chbx-R: light-dark(170, 179, 202, 159, 186, 223);
+  --code-bg: light-dark(#232831, var(--embed-bg));
+  --code-text: light-dark(#fa4545, #ea4262);
+  --color-accent: light-dark(
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l))
+  );
+  --color-accent-1: light-dark(
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 1),
+      calc(var(--accent-s) * 1.01),
+      calc(var(--accent-l) * 1.075)
+    )
+  );
+  --color-accent-2: light-dark(
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    )
+  );
+  --color-accent-hsl: light-dark(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l)
+  );
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-blue-rgb: light-dark(2, 122, 255, 8, 109, 221);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-cyan-rgb: light-dark(83, 223, 221, 0, 191, 188);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-green-rgb: light-dark(68, 207, 110, 8, 185, 78);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-orange-rgb: light-dark(233, 151, 63, 236, 117, 0);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-pink-rgb: light-dark(250, 153, 205, 213, 57, 132);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-purple-rgb: light-dark(168, 130, 255, 120, 82, 238);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-red-rgb: light-dark(251, 70, 76, 233, 49, 71);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-yellow-rgb: light-dark(224, 222, 113, 224, 172, 0);
+  --dark-accent: light-dark(#652121, #c35c5c);
+  --dark-sidebar: light-dark(#0d1014, #f1f5ff);
+  --deep-dark-accent: light-dark(#3f1010, #2f1010);
+  --divider-color: light-dark(var(--outer-bar), var(--outer-bar));
+  --divider-color-hover: light-dark(var(--accent), var(--accent));
+  --drag-ghost-background: light-dark(var(--dark-accent), var(--dark-accent));
+  --drag-ghost-text-color: light-dark(var(--text-dl), var(--text-dl));
+  --drop-shadow: light-dark(#06080c60, #d0ddef62);
+  --embed-bg: light-dark(var(--dark-sidebar), var(--dark-sidebar));
+  --failure-bg: light-dark(#772d2d, #772d2d);
+  --faint-text: light-dark(#4e5b6f, #4e5b6f);
+  --fg: light-dark(#cfd7dd, var(--accent));
+  --file-icon-color: light-dark(
+    light-dark(var(--inactive), #7e8ea3),
+    var(--inactive)
+  );
+  --folder: light-dark(var(--accent), var(--accent));
+  --folder-open: light-dark(#e05858, #ce6d6d);
+  --footnote: light-dark(#63778f, #8996a0);
+  --graph-404: light-dark(#727e93, #727e93);
+  --graph-bg: light-dark(var(--outer-bar), var(--note));
+  --graph-fill: light-dark(var(--headers), var(--folder));
+  --graph-focused: light-dark(
+    var(--accent2-lite),
+    var(--text-highlight-bg-active)
+  );
+  --graph-img: light-dark(#4c78cc, #4c78cc);
+  --graph-lines: light-dark(var(--dark-accent), #e4e7f8);
+  --graph-node: light-dark(var(--text), var(--headers));
+  --graph-tag: light-dark(var(--headers), #000000);
+  --headers: light-dark(#c14343, #c14343);
+  --highlight: light-dark(#7a141466, rgba(229, 149, 149, 0.37));
+  --highlight-mix-blend-mode: light-dark(darken, darken);
+  --hr: light-dark(#2f3b4d, #d6deea);
+  --hvr: light-dark(rgba(168, 60, 60, 0.4), rgba(255, 0, 0, 0.212));
+  --hvr-active: light-dark(rgba(212, 47, 47, 0.4), rgba(253, 115, 115, 0.4));
+  --hvr2: light-dark(var(--highlight), var(--highlight));
+  --i-at: light-dark(#bf5e5e, var(--folder));
+  --icon-color: light-dark(var(--soft-text), var(--soft-text));
+  --icon-color-active: light-dark(var(--text-dl), var(--text-dl));
+  --icon-color-focused: light-dark(var(--text), var(--text));
+  --icon-color-hover: light-dark(var(--text), var(--text));
+  --icon-opacity: light-dark(1, 1);
+  --inactive: light-dark(#586477, #a6bbde);
+  --input-bg: light-dark(rgba(0, 0, 0, 0.3), var(--td));
+  --input-shadow: light-dark(
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2),
+    0 0 0 0 transparent,
+    inset 0 0 0 1px rgba(0, 0, 0, 0.12),
+    0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
+    0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent
+  );
+  --input-shadow-hover: light-dark(
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4),
+    0 0 0 0 transparent,
+    inset 0 0 0 1px rgba(0, 0, 0, 0.17),
+    0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
+    0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent
+  );
+  --interactive-accent: light-dark(var(--bttn), var(--bttn));
+  --interactive-accent-hover: light-dark(var(--bg), var(--bg));
+  --interactive-accent-hsl: light-dark(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l)
+  );
+  --interactive-hover: light-dark(var(--embed-bg), var(--embed-bg));
+  --interactive-normal: light-dark(var(--code-bg), var(--code-bg));
+  --italic-color: light-dark(inherit, inherit);
   --keyboard-height: 0px;
+  --lines: light-dark(var(--hr), #b5c2d8);
+  --link-background: light-dark(transparent, transparent);
+  --link-background-hover: light-dark(
+    var(--link-background),
+    var(--link-background)
+  );
+  --link-border: light-dark(none, none);
+  --link-color-hover: light-dark(var(--lite-accent), var(--lite-accent));
+  --link-decoration: light-dark(none, none);
+  --link-decoration-hover: light-dark(none, none);
+  --link-external-color-hover: light-dark(
+    var(--text-accent-hover),
+    var(--text-accent-hover)
+  );
+  --link-external-decoration: light-dark(none, none);
+  --link-external-font: light-dark(var(--link-font), var(--link-font));
+  --link-font: light-dark(inherit, inherit);
+  --link-transform: light-dark(none, none);
+  --link-unresolved-color: light-dark(var(--inactive), var(--inactive));
+  --link-unresolved-opacity: light-dark(1, 1);
+  --list-color-1: light-dark(var(--rainbow-1), var(--rainbow-1));
+  --list-color-2: light-dark(var(--rainbow-2), var(--rainbow-2));
+  --list-color-3: light-dark(var(--rainbow-3), var(--rainbow-3));
+  --list-color-4: light-dark(var(--rainbow-4), var(--rainbow-4));
+  --list-color-5: light-dark(var(--rainbow-5), var(--rainbow-5));
+  --list-color-6: light-dark(var(--rainbow-6), var(--rainbow-6));
+  --lite-accent: light-dark(#c94d4d, #cd2626);
   --loading-icon-delay: 400ms;
-  --page-border: 1px solid CanvasText;
-  --page-margin: 8px auto -1px;
-  --pdfViewer-padding-bottom: 9px;
+  --mono-rgb-0: light-dark(0, 0, 0, 255, 255, 255);
+  --mono-rgb-100: light-dark(255, 255, 255, 0, 0, 0);
+  --note: light-dark(#1a1e24, #f8fbff);
+  --note-rgb: light-dark(26, 30, 36, 248, 251, 255);
+  --outer-bar: light-dark(#0b0f13, #eef3fd);
+  --outline: light-dark(var(--outer-bar), var(--bg));
+  --page-border: 9px solid transparent;
+  --page-margin: 1px auto -8px;
+  --pdfViewer-padding-bottom: 0;
+  --popover-background: light-dark(
+    var(--background-primary),
+    var(--background-primary)
+  );
+  --progress: light-dark(var(--accent), var(--accent));
+  --progress-bg: light-dark(var(--bg), var(--bg));
+  --prompt-border-color: light-dark(var(--outline), var(--outline));
+  --rainbow-1: light-dark(#b03a3a, #dd3c3c);
+  --rainbow-2: light-dark(#d59929, #f1ab27);
+  --rainbow-3: light-dark(#207a20, #118811);
+  --rainbow-4: light-dark(#3232c5, #3333cc);
+  --rainbow-5: light-dark(#7f307f, #a824a8);
+  --rainbow-6: light-dark(#dd4794, #e83b94);
   --safe-area-inset-bottom: env(safe-area-inset-bottom);
   --safe-area-inset-left: env(safe-area-inset-left);
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
-  --spreadHorizontalWrapped-margin-LR: 3.5px;
+  --shadow-l: light-dark(
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
+    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2),
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
+    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2)
+  );
+  --shadow-s: light-dark(
+    0px 1px 2px rgba(0, 0, 0, 0.121),
+    0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3),
+    0px 1px 2px rgba(0, 0, 0, 0.028),
+    0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07)
+  );
+  --side-bar: light-dark(var(--note), var(--note));
+  --side-bar-bg: light-dark(var(--outer-bar), var(--outer-bar));
+  --soft-text: light-dark(#97a1b9, #697580);
+  --spreadHorizontalWrapped-margin-LR: -3.5px;
+  --success-bg: light-dark(#32603e, #599049);
+  --table: light-dark(#283345, #ccd6eb);
+  --tag: light-dark(var(--dark-accent), #c65656);
+  --tag-text: light-dark(#d04e4e, var(--lite-accent));
+  --td: light-dark(#06080c60, #d0ddef62);
+  --text: light-dark(#bccad8, #30353a);
+  --text-accent: light-dark(var(--accent2-lite), var(--accent2-lite));
+  --text-accent-hover: light-dark(var(--lite-accent), var(--lite-accent));
+  --text-dl: light-dark(#e5ebee, #e5ebee);
+  --text-faint: light-dark(var(--faint-text), var(--faint-text));
+  --text-highlight-bg: light-dark(var(--hvr), var(--hvr));
+  --text-highlight-bg-active: light-dark(var(--hvr-active), var(--hvr-active));
+  --text-muted: light-dark(var(--soft-text), var(--soft-text));
+  --text-normal: light-dark(var(--text), var(--text));
+  --text-on-accent: light-dark(var(--text-dl), var(--text-dl));
+  --text-selection: light-dark(var(--highlight), var(--highlight));
+  --th: light-dark(var(--dark-accent), var(--headers));
+  --th-text: light-dark(var(--text-dl), var(--text-dl));
+  --theme-rainbow-1: light-dark(#7c2929, #bb5555);
+  --theme-rainbow-2: light-dark(#652121, #a53f3f);
+  --theme-rainbow-3: light-dark(#471d1d, #862c2c);
+  --theme-rainbow-4: light-dark(#381919, #662828);
+  --theme-rainbow-5: light-dark(#424c61, #697795);
+  --theme-rainbow-6: light-dark(#2e333d, #a4aec2);
+  --toggle-thumb-color: light-dark(transparent, transparent);
+  --tooltip-color: light-dark(var(--text-dl), var(--text-dl));
   --viewer-container-height: 0;
-  --xfa-focus-outline: 2px solid CanvasText;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
+  --xfa-focus-outline: auto;
+  --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
 }
 
 body {
@@ -91,7 +392,7 @@ body {
   --box-border: 2px solid var(--outline);
   --box-border-m: 3px solid var(--outline);
   --box-border-s: 1px solid var(--outline);
-  --bullet: '';
+  --bullet: "";
   --bullet-font: var(--its);
   --button-background: var(--bttn);
   --button-background-hover: var(--interactive-accent-hover);
@@ -233,8 +534,8 @@ body {
   --embed-title-white-space: wrap;
   --explorer-item-padding: 2px 8px;
   --explorer-padding: 4px 4px 4px 3px;
-  --fa5: 'Font Awesome 5 Free Solid';
-  --fa6: 'Font Awesome 6 Free Solid';
+  --fa5: "Font Awesome 5 Free Solid";
+  --fa6: "Font Awesome 6 Free Solid";
   --file-folding-offset: 24px;
   --file-font: var(--its);
   --file-header-background: var(--note);
@@ -250,7 +551,7 @@ body {
   --file-header-left-color: var(--dark-accent);
   --file-header-parent-font-weight: 600;
   --file-header-right-color: var(--outer-bar);
-  --file-icon: '';
+  --file-icon: "";
   --file-icon-margin: 6px;
   --file-line-width: 700px;
   --file-margins: var(--size-4-8);
@@ -258,7 +559,7 @@ body {
   --flair-background: var(--interactive-normal);
   --flair-color: var(--text-normal);
   --folder-font: var(--its);
-  --folder-icon: '';
+  --folder-icon: "";
   --folder-icon-color: var(--folder);
   --folder-icon-open-color: var(--folder-open);
   --folder-open-text-color: var(--text);
@@ -266,42 +567,42 @@ body {
   --folder-weight: 700;
   --folder-weight-hover: var(--folder-weight);
   --font:
-    'Calisto MT', 'Palatino Black', 'Book Antiqua', 'Georgia', 'Suez One', serif;
+    "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif;
   --font-black: 900;
   --font-bold: 700;
   --font-default:
-    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-    'Microsoft YaHei Light', sans-serif;
+    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Microsoft YaHei Light", sans-serif;
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-frontmatter: var(--font-small);
   --font-interface: var(--font-interface-override), var(--font-default);
-  --font-interface-override: '??';
-  --font-interface-theme: '??';
+  --font-interface-override: "??";
+  --font-interface-theme: "??";
   --font-ligatures: none;
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid: var(--font-text);
   --font-monospace:
-    'Fira Code', 'Fira Code Medium', 'Source Code Pro', monospace;
+    "Fira Code", "Fira Code Medium", "Source Code Pro", monospace;
   --font-monospace-default:
     var(--font-monospace-default-override), var(--font-monospace);
-  --font-monospace-override: '??';
-  --font-monospace-theme: '??';
+  --font-monospace-override: "??";
+  --font-monospace-theme: "??";
   --font-normal: 400;
   --font-print:
     var(--font-print-override), var(--font-text-override),
-    var(--font-text-theme), 'Arial';
-  --font-print-override: '??';
+    var(--font-text-theme), "Arial";
+  --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.95em;
   --font-smaller: 0.9em;
   --font-smallest: 0.85em;
   --font-text: var(--font-text-override), var(--font-default);
-  --font-text-override: '??';
+  --font-text-override: "??";
   --font-text-size: 16px;
-  --font-text-theme: '??';
+  --font-text-theme: "??";
   --font-thin: 100;
   --font-ui-large: 20px;
   --font-ui-medium: 15px;
@@ -314,7 +615,7 @@ body {
   --footnote-gap: var(--size-4-1);
   --footnote-id-color: var(--text-muted);
   --footnote-id-color-no-occurrences: var(--text-faint);
-  --footnote-id-delimiter: '.';
+  --footnote-id-delimiter: ".";
   --footnote-input-background: var(--metadata-input-background);
   --footnote-input-background-active: var(--metadata-input-background-active);
   --footnote-line-height: var(--line-height-normal);
@@ -467,7 +768,7 @@ body {
   --hr-icon-color: var(--headers);
   --hr-icon-font: var(--its);
   --hr-icon-padding-x: 4px;
-  --hr-icon-symbol: '';
+  --hr-icon-symbol: "";
   --hr-text-offset: 12px;
   --hr-thickness: 2px;
   --hr-width: auto;
@@ -544,7 +845,7 @@ body {
   --interactive-normal: var(--code-bg);
   --italic-color: inherit;
   --italic-weight: inherit;
-  --its: 'its';
+  --its: "its";
   --kanban-button-background: var(--code-bg);
   --kanban-button-shadow: var(--input-shadow);
   --kanban-card-border: var(--box-border);
@@ -559,7 +860,7 @@ body {
   --kanban-lane-padding: 0 4px;
   --kanban-link-color: var(--accent2-lite);
   --kanban-link-font-weight: inherit;
-  --kanban-link-symbol: '';
+  --kanban-link-symbol: "";
   --kanban-tag-background: var(--tag-background);
   --latex-color: var(--lite-accent);
   --latex-format-color: var(--inactive);
@@ -621,7 +922,7 @@ body {
   --list-numbered-color: var(--headers);
   --list-numbered-style: decimal;
   --list-spacing: 1px;
-  --mdi: 'Material Icons Sharp';
+  --mdi: "Material Icons Sharp";
   --med-small: 250px;
   --med-tall: 450px;
   --medium: 300px;
@@ -685,7 +986,7 @@ body {
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --metadata-title-align: center;
   --metadata-title-color: var(--text-muted);
-  --metadata-title-icon: '';
+  --metadata-title-icon: "";
   --metadata-title-icon-font: var(--its);
   --metadata-title-icon-padding: 5px;
   --metadata-title-size: var(--font-text-size);
@@ -740,7 +1041,7 @@ body {
   --outline-arrow-display: none;
   --outline-arrow-margin: -16px;
   --outline-arrow-visibility: hidden;
-  --outline-symbol: 'H';
+  --outline-symbol: "H";
   --outline-symbol-padding-right: 4px;
   --p-spacing: 1rem;
   --p-spacing-empty: 0rem;
@@ -804,10 +1105,10 @@ body {
   --ribbon-icon-stroke: var(--icon-l-stroke-width);
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
   --ribbon-width: 40px;
-  --rmx: 'remixicon';
+  --rmx: "remixicon";
   --root-list-bullet-spacing: 0;
   --root-list-spacing: 10px;
-  --rpg: 'rpg-awesome';
+  --rpg: "rpg-awesome";
   --scroll-size: 7px;
   --scrollbar-active-thumb-bg: var(--lite-accent);
   --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05);
@@ -1333,132 +1634,132 @@ h6 {
   padding: var(--callout-content-padding);
 }
 
-.callout[data-callout='tip'] {
+.callout[data-callout="tip"] {
   --callout-color: var(--callout-tip);
   --callout-icon: lucide-flame;
 }
 
-.callout[data-callout='warning'] {
+.callout[data-callout="warning"] {
   --callout-color: var(--callout-warning);
   --callout-icon: lucide-alert-triangle;
 }
 
-.callout[data-callout='danger'] {
+.callout[data-callout="danger"] {
   --callout-color: var(--callout-error);
   --callout-icon: lucide-zap;
 }
 
-.callout[data-callout='abstract'] {
+.callout[data-callout="abstract"] {
   --callout-color: var(--callout-summary);
   --callout-icon: lucide-clipboard-list;
 }
 
-.callout[data-callout='todo'] {
+.callout[data-callout="todo"] {
   --callout-color: var(--callout-todo);
   --callout-icon: lucide-check-circle-2;
 }
 
-.callout[data-callout='question'] {
+.callout[data-callout="question"] {
   --callout-color: var(--callout-question);
   --callout-icon: help-circle;
 }
 
-.callout[data-callout='info'] {
+.callout[data-callout="info"] {
   --callout-color: var(--callout-info);
   --callout-icon: lucide-info;
 }
 
-.callout[data-callout='success'] {
+.callout[data-callout="success"] {
   --callout-color: var(--callout-success);
   --callout-icon: lucide-check;
 }
 
-.callout[data-callout='quote'] {
+.callout[data-callout="quote"] {
   --callout-color: var(--callout-quote);
   --callout-icon: quote-glyph;
 }
 
-.callout[data-callout='example'] {
+.callout[data-callout="example"] {
   --callout-color: var(--callout-example);
   --callout-icon: lucide-list;
 }
 
-.callout[data-callout='bug'] {
+.callout[data-callout="bug"] {
   --callout-color: var(--callout-bug);
   --callout-icon: lucide-bug;
 }
 
-.callout[data-callout='summary'] {
+.callout[data-callout="summary"] {
   --callout-color: var(--callout-summary);
   --callout-icon: lucide-clipboard-list;
 }
 
-.callout[data-callout='tldr'] {
+.callout[data-callout="tldr"] {
   --callout-color: var(--callout-summary);
   --callout-icon: lucide-clipboard-list;
 }
 
-.callout[data-callout='important'] {
+.callout[data-callout="important"] {
   --callout-color: var(--callout-important);
   --callout-icon: lucide-flame;
 }
 
-.callout[data-callout='hint'] {
+.callout[data-callout="hint"] {
   --callout-color: var(--callout-tip);
   --callout-icon: lucide-flame;
 }
 
-.callout[data-callout='check'] {
+.callout[data-callout="check"] {
   --callout-color: var(--callout-success);
   --callout-icon: lucide-check;
 }
 
-.callout[data-callout='done'] {
+.callout[data-callout="done"] {
   --callout-color: var(--callout-success);
   --callout-icon: lucide-check;
 }
 
-.callout[data-callout='help'] {
+.callout[data-callout="help"] {
   --callout-color: var(--callout-question);
   --callout-icon: help-circle;
 }
 
-.callout[data-callout='faq'] {
+.callout[data-callout="faq"] {
   --callout-color: var(--callout-question);
   --callout-icon: help-circle;
 }
 
-.callout[data-callout='caution'] {
+.callout[data-callout="caution"] {
   --callout-color: var(--callout-warning);
   --callout-icon: lucide-alert-triangle;
 }
 
-.callout[data-callout='attention'] {
+.callout[data-callout="attention"] {
   --callout-color: var(--callout-warning);
   --callout-icon: lucide-alert-triangle;
 }
 
-.callout[data-callout='failure'] {
+.callout[data-callout="failure"] {
   --callout-color: var(--callout-fail);
   --callout-icon: lucide-x;
 }
 
-.callout[data-callout='error'] {
+.callout[data-callout="error"] {
   --callout-color: var(--callout-error);
   --callout-icon: lucide-zap;
 }
 
-.callout[data-callout='fail'] {
+.callout[data-callout="fail"] {
   --callout-color: var(--callout-fail);
   --callout-icon: lucide-x;
 }
 
-.callout[data-callout='missing'] {
+.callout[data-callout="missing"] {
   --callout-color: var(--callout-fail);
   --callout-icon: lucide-x;
 }
 
-.callout[data-callout='cite'] {
+.callout[data-callout="cite"] {
   --callout-color: var(--callout-quote);
   --callout-icon: quote-glyph;
 }
@@ -1479,7 +1780,7 @@ h6 {
 }
 
 .callout-icon::after {
-  content: '\200B';
+  content: "\200B";
 }
 
 .callout-fold {
@@ -1489,7 +1790,7 @@ h6 {
 }
 
 .callout-fold::after {
-  content: '\200B';
+  content: "\200B";
 }
 
 .callout-fold .svg-icon {
@@ -1576,7 +1877,7 @@ a.tag {
   text-decoration: var(--tag-decoration);
 }
 
-input[type='search'] {
+input[type="search"] {
   -webkit-app-region: no-drag;
   background: var(--background-modifier-form-field);
   border: var(--input-border-width) solid var(--background-modifier-border);
@@ -1683,7 +1984,7 @@ input[type='search'] {
 }
 
 .tree-item-self:before {
-  content: '\200B';
+  content: "\200B";
 }
 
 .tree-item-self.mod-collapsible {
@@ -1735,7 +2036,7 @@ input[type='search'] {
 }
 
 .tree-item-self .tree-item-icon:before {
-  content: '\200b';
+  content: "\200b";
 }
 
 .tree-item-self .tree-item-icon .svg-icon:not(.right-triangle) {
@@ -1815,7 +2116,7 @@ svg.svg-icon {
   padding: var(--size-2-2);
 }
 
-.clickable-icon[aria-disabled='true'] {
+.clickable-icon[aria-disabled="true"] {
   background-color: unset;
   color: var(--text-muted);
   opacity: 0.4;

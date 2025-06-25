@@ -33,7 +33,7 @@
 body:not(.list-default-bullet) .dataview.dataview.table-view-table ul {
   padding-inline-start: 0;
 }
-.callout[data-callout~='cards'][data-callout-metadata~='flex']
+.callout[data-callout~="cards"][data-callout-metadata~="flex"]
   .dataview.table-view-table
   tbody {
   gap: unset;
@@ -42,49 +42,49 @@ body:not(.list-default-bullet) .dataview.dataview.table-view-table ul {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.callout[data-callout~='cards'][data-callout-metadata~='flex']
+.callout[data-callout~="cards"][data-callout-metadata~="flex"]
   .dataview.table-view-table
   tbody
   .callout {
   flex: 1 1 250px;
   margin: var(--callout-cards-gap);
 }
-.callout[data-callout~='cards'][data-callout-metadata~='dataview']
+.callout[data-callout~="cards"][data-callout-metadata~="dataview"]
   .dataview.table-view-table {
   display: grid;
   margin-block-start: 0;
 }
-.callout[data-callout~='cards'][data-callout-metadata~='dataview']
+.callout[data-callout~="cards"][data-callout-metadata~="dataview"]
   .dataview.table-view-table
   :is(td, tr) {
   border: 0;
   background: transparent;
   padding: 0;
 }
-.callout[data-callout~='cards'][data-callout-metadata~='dataview']
+.callout[data-callout~="cards"][data-callout-metadata~="dataview"]
   .dataview.table-view-table
   strong {
   background: transparent;
 }
-.callout[data-callout~='cards'][data-callout-metadata~='dataview']
+.callout[data-callout~="cards"][data-callout-metadata~="dataview"]
   .table-view-thead
   th {
   border: 0;
   background-color: transparent;
 }
-.callout[data-callout~='cards'][data-callout-metadata~='dataview']
+.callout[data-callout~="cards"][data-callout-metadata~="dataview"]
   .table-view-thead
   tr {
   display: none;
 }
-.callout[data-callout~='cards'][data-callout-metadata~='dataview']
+.callout[data-callout~="cards"][data-callout-metadata~="dataview"]
   .dataview.table-view-table
   tbody {
   display: grid;
   grid-template-columns: repeat(var(--callout-cards-columns), 1fr);
   grid-gap: calc(var(--callout-cards-gap) * 2);
 }
-.callout[data-callout~='cards'][data-callout-metadata~='dataview']
+.callout[data-callout~="cards"][data-callout-metadata~="dataview"]
   .dataview.table-view-table
   tbody
   tr {
@@ -95,7 +95,7 @@ body:not(.list-default-bullet) .dataview.dataview.table-view-table ul {
   border: 2px solid var(--outline, var(--background-modifier-box-shadow));
   box-shadow: var(--shadow-ml, var(--input-shadow));
 }
-.callout[data-callout~='cards'][data-callout-metadata~='notion']
+.callout[data-callout~="cards"][data-callout-metadata~="notion"]
   .dataview.table-view-table
   tbody
   tr {
@@ -104,7 +104,7 @@ body:not(.list-default-bullet) .dataview.dataview.table-view-table ul {
   border: 0;
   border-radius: var(--callout-cards-notion-radius);
 }
-.callout[data-callout~='cards'][data-callout-metadata~='notion']
+.callout[data-callout~="cards"][data-callout-metadata~="notion"]
   .dataview.table-view-table
   tbody
   tr
@@ -112,7 +112,7 @@ body:not(.list-default-bullet) .dataview.dataview.table-view-table ul {
   > :last-of-type {
   padding-bottom: 5px;
 }
-.callout[data-callout~='cards'][data-callout-metadata~='notion']
+.callout[data-callout~="cards"][data-callout-metadata~="notion"]
   .dataview.table-view-table
   tbody
   tr
@@ -120,13 +120,13 @@ body:not(.list-default-bullet) .dataview.dataview.table-view-table ul {
   > :first-child {
   padding-top: 5px;
 }
-.callout[data-callout~='cards'][data-callout-metadata~='notion']
+.callout[data-callout~="cards"][data-callout-metadata~="notion"]
   .dataview.table-view-table
   tbody
   tr
   td
   > ul,
-.callout[data-callout~='cards'][data-callout-metadata~='notion']
+.callout[data-callout~="cards"][data-callout-metadata~="notion"]
   .dataview.table-view-table
   tbody
   tr
@@ -136,19 +136,19 @@ body:not(.list-default-bullet) .dataview.dataview.table-view-table ul {
   margin-right: var(--callout-cards-notion-padding);
   display: inline-block;
 }
-.callout[data-callout~='cards'][data-callout-metadata~='notion']
+.callout[data-callout~="cards"][data-callout-metadata~="notion"]
   .dataview.table-view-table
   tbody
   tr
   td:first-of-type
   strong::after {
-  content: '';
+  content: "";
   display: block;
   height: 1px;
   background-color: var(--outline);
   margin-top: 5px;
 }
-.callout[data-callout~='cards'][data-callout-metadata~='notion']
+.callout[data-callout~="cards"][data-callout-metadata~="notion"]
   .dataview.table-view-table
   tbody
   strong {
@@ -157,7 +157,7 @@ body:not(.list-default-bullet) .dataview.dataview.table-view-table ul {
 }
 .dataview-cards .table-view-table > thead::before,
 .dvl-c .table-view-table > thead::before {
-  content: '\e805';
+  content: "\e805";
   font-family: var(--its);
   float: left;
   padding: 5px 10px 5px 10px;

@@ -23,102 +23,107 @@ SO CONTAINS MINI MINI SEGMENTS OF LEARNING.
 **********************************************************************/
 
 @font-face {
-  font-family: 'Avenir Next';
-  src: url(public/fonts/94f2f163d4b698242fef.otf);
+  font-family: "Avenir Next";
+  src: url("public/fonts/94f2f163d4b698242fef.otf");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 200;
   font-display: swap;
-  src: url(public/fonts/367685b2ca6303dc3853.woff2) format('woff2');
+  src: url(public/fonts/367685b2ca6303dc3853.woff2)
+    format(
+      "woff2);
 }
 @font-face {
-  font-family: 'Inter';
+  font-family: " Inter
+        ";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url(public/fonts/746a677fc34469759ede.woff2) format('woff2');
+  src: url(public/fonts/746a677fc34469759ede.woff2) format("
+        woff2
+    );
 }
 @font-face {
-  font-family: 'Inter';
-  src: url(public/fonts/450beda71fb8564202a0.woff2);
+  font-family: "Inter";
+  src: url("public/fonts/450beda71fb8564202a0.woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 400;
-  src: url(public/fonts/c39581384bcfe728af02.woff2);
+  src: url("public/fonts/c39581384bcfe728af02.woff2");
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Inter';
-  src: url(public/fonts/b0b9c035692f884e8635.woff2);
+  font-family: "Inter";
+  src: url("public/fonts/b0b9c035692f884e8635.woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Inter';
-  src: url(public/fonts/856e8f46fd911d2040c3.woff2);
+  font-family: "Inter";
+  src: url("public/fonts/856e8f46fd911d2040c3.woff2");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Inter';
-  src: url(public/fonts/bdbbdeddfdfff17b0879.woff2);
+  font-family: "Inter";
+  src: url("public/fonts/bdbbdeddfdfff17b0879.woff2");
   font-weight: 800;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Source Code Pro';
-  src: url(public/fonts/70cc7ff27245e82ad414.ttf);
+  font-family: "Source Code Pro";
+  src: url("public/fonts/70cc7ff27245e82ad414.ttf");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Source Code Pro';
-  src: url(public/fonts/454577c22304619db035.ttf);
+  font-family: "Source Code Pro";
+  src: url("public/fonts/454577c22304619db035.ttf");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Source Code Pro';
-  src: url(public/fonts/52ac8f3034507f1d9e53.ttf);
+  font-family: "Source Code Pro";
+  src: url("public/fonts/52ac8f3034507f1d9e53.ttf");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Source Code Pro';
-  src: url(public/fonts/05b618077343fbbd92b7.ttf);
+  font-family: "Source Code Pro";
+  src: url("public/fonts/05b618077343fbbd92b7.ttf");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Flow Circular';
-  src: url(public/fonts/853ff76f08786ae44ca0.woff);
+  font-family: "Flow Circular";
+  src: url("public/fonts/853ff76f08786ae44ca0.woff");
   font-display: swap;
 }
 :root {
   --default-font:
-    'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol', 'Microsoft YaHei Light', sans-serif;
+    "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   --mermaid-font: var(--default-font);
   --reveal-font: var(--default-font);
-  --font-monospace: 'Source Code Pro', monospace;
+  --font-monospace: "Source Code Pro", monospace;
 }
 .theme-dark {
   --background-primary: #202020;
@@ -359,7 +364,7 @@ SO CONTAINS MINI MINI SEGMENTS OF LEARNING.
   background-repeat: no-repeat;
   background-image:
     linear-gradient(transparent, transparent),
-    url(https://i.imgur.com/As68C4R.png);
+    url("https://i.imgur.com/As68C4R.png");
   background-size: 30px;
   padding: 10px 2px 10px 35px;
   background-position-y: 6px;
@@ -374,7 +379,7 @@ SO CONTAINS MINI MINI SEGMENTS OF LEARNING.
   background-repeat: no-repeat;
   background-image:
     linear-gradient(transparent, transparent),
-    url(https://i.imgur.com/As68C4R.png);
+    url("https://i.imgur.com/As68C4R.png");
   background-size: 30px;
   padding: 10px 2px 10px 35px;
   background-position-y: 7px;
@@ -396,7 +401,7 @@ SO CONTAINS MINI MINI SEGMENTS OF LEARNING.
   background-repeat: no-repeat;
   background-image:
     linear-gradient(transparent, transparent),
-    url(https://i.imgur.com/fiGt6Vn.png);
+    url("https://i.imgur.com/fiGt6Vn.png");
   background-size: 20px;
   padding: 10px 2px 10px 21px;
   background-position-y: 11px;
@@ -411,7 +416,7 @@ SO CONTAINS MINI MINI SEGMENTS OF LEARNING.
   background-repeat: no-repeat;
   background-image:
     linear-gradient(transparent, transparent),
-    url(https://i.imgur.com/GjcGnQJ.png);
+    url("https://i.imgur.com/GjcGnQJ.png");
   background-size: 20px;
   padding: 10px 2px 10px 21px;
   background-position-y: 11px;
@@ -477,7 +482,7 @@ SO CONTAINS MINI MINI SEGMENTS OF LEARNING.
     serif;
   color: #cc9933;
   font-weight: 600;
-  content: '“';
+  content: "“";
   font-size: 60px;
   line-height: 0.1em;
   vertical-align: -0.4em;
@@ -492,7 +497,7 @@ blockquote p {
     serif;
   color: lightseagreen;
   font-weight: 600;
-  content: '“';
+  content: "“";
   font-size: 60px;
   line-height: 0.1em;
   vertical-align: -0.4em;
@@ -543,7 +548,7 @@ blockquote p {
   background: darkred;
   width: 10px;
   height: 10px;
-  content: '';
+  content: "";
   display: inline-block;
   border-radius: 20px;
   box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.2);
@@ -555,7 +560,7 @@ blockquote p {
   background: darkred;
   width: 10px;
   height: 10px;
-  content: '';
+  content: "";
   display: none;
   border-radius: 20px;
   box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.2);
@@ -593,7 +598,7 @@ blockquote p {
   background: #000;
   width: 10px;
   height: 10px;
-  content: '';
+  content: "";
   display: inline-block;
   border-radius: 20px;
   box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.2);
@@ -605,7 +610,7 @@ blockquote p {
   background: #000;
   width: 10px;
   height: 10px;
-  content: '';
+  content: "";
   display: none;
   border-radius: 20px;
   box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.2);
@@ -657,7 +662,7 @@ blockquote p {
 }
 
 .markdown-preview-view.markdown-preview-view hr::after {
-  content: '🔰 ';
+  content: "🔰 ";
   display: inline-block;
   font-size: 18px;
   position: absolute;
@@ -676,34 +681,34 @@ blockquote p {
 .theme-light .nav-folder-children .nav-file-title-content:first-child::before {
   background-image:
     linear-gradient(transparent, transparent),
-    url(https://i.imgur.com/GjcGnQJ.png);
+    url("https://i.imgur.com/GjcGnQJ.png");
   background-size: 25px;
   background-repeat: no-repeat;
   padding: 10px 2px 10px 28px;
   background-position-y: 7px;
-  content: '';
+  content: "";
 }
 
 .theme-dark .nav-folder-children .nav-file-title-content:first-child::before {
   background-image:
     linear-gradient(transparent, transparent),
-    url(https://i.imgur.com/fiGt6Vn.png);
+    url("https://i.imgur.com/fiGt6Vn.png");
   background-size: 25px;
   background-repeat: no-repeat;
   padding: 10px 2px 10px 28px;
   background-position-y: 7px;
-  content: '';
+  content: "";
 }
 
 .nav-folder-children .nav-folder-title-content::before {
   background-image:
     linear-gradient(transparent, transparent),
-    url(https://i.imgur.com/43eblf9.png);
+    url("https://i.imgur.com/43eblf9.png");
   background-size: 20px;
   background-repeat: no-repeat;
   padding: 10px 0px 10px 28px;
   background-position-y: 7px;
-  content: '';
+  content: "";
 }
 
 .theme-dark .nav-folder-children .nav-folder-title-content {
@@ -845,7 +850,7 @@ ol {
 }
 
 .theme-dark .nav-header {
-  background: url(https://i.imgur.com/YwbxeYD.gif);
+  background: url("https://i.imgur.com/YwbxeYD.gif");
   background-size: cover;
 }
 
@@ -858,7 +863,7 @@ ol {
 }
 
 .theme-light .nav-header {
-  background: url(https://i.imgur.com/lD8EOg4.gif);
+  background: url("https://i.imgur.com/lD8EOg4.gif");
   background-size: cover;
 }
 

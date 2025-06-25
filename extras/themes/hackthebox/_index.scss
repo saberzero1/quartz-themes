@@ -1,6 +1,6 @@
 :root:root:root {
   body {
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
 
     .highlight,
     ::selection,
@@ -30,7 +30,7 @@
           border-top-right-radius: 4px;
           position: relative;
           &::before {
-            content: '';
+            content: "";
             position: absolute;
             left: -5px;
             width: 5px;

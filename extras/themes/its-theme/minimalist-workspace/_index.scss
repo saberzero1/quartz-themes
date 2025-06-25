@@ -80,7 +80,7 @@
 }
 
 .minimalist-workspace .nav-folder .nav-folder-title {
-  --folder-icon: '';
+  --folder-icon: "";
   --file-icon-margin: 0;
 }
 
@@ -88,12 +88,12 @@
   .nav-folder
   .nav-folder-title
   .nav-folder-title-content::before {
-  content: '';
+  content: "";
   width: 0;
 }
 
 .minimalist-workspace .nav-file .nav-file-title {
-  --file-icon: '';
+  --file-icon: "";
   --file-icon-margin: 0;
 }
 
@@ -101,6 +101,6 @@
   .nav-file
   .nav-file-title
   .nav-file-title-content::before {
-  content: '';
+  content: "";
   width: 0;
 }

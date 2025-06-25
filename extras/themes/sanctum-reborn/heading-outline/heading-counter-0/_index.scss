@@ -5,7 +5,7 @@
 }
 
 .heading-counter-0 .el-h1 h1::before {
-  content: var(--heading-counter) counter(h1-counter) '';
+  content: var(--heading-counter) counter(h1-counter) "";
   padding-right: 0.5em;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .heading-counter-0 .el-h2 h2::before {
-  content: var(--heading-counter) counter(h1-counter) '.' counter(h2-counter) '';
+  content: var(--heading-counter) counter(h1-counter) "." counter(h2-counter) "";
   padding-right: 0.5em;
 }
 
@@ -27,8 +27,8 @@
 }
 
 .heading-counter-0 .el-h3 h3::before {
-  content: var(--heading-counter) counter(h1-counter) '.' counter(h2-counter)
-    '.' counter(h3-counter) '';
+  content: var(--heading-counter) counter(h1-counter) "." counter(h2-counter)
+    "." counter(h3-counter) "";
   padding-right: 0.5em;
 }
 
@@ -39,8 +39,8 @@
 }
 
 .heading-counter-0 .el-h4 h4::before {
-  content: var(--heading-counter) counter(h1-counter) '.' counter(h2-counter)
-    '.' counter(h3-counter) '.' counter(h4-counter) '';
+  content: var(--heading-counter) counter(h1-counter) "." counter(h2-counter)
+    "." counter(h3-counter) "." counter(h4-counter) "";
   padding-right: 0.5em;
 }
 
@@ -51,8 +51,8 @@
 }
 
 .heading-counter-0 .el-h5 h5::before {
-  content: var(--heading-counter) counter(h1-counter) '.' counter(h2-counter)
-    '.' counter(h3-counter) '.' counter(h4-counter) '.' counter(h5-counter) '';
+  content: var(--heading-counter) counter(h1-counter) "." counter(h2-counter)
+    "." counter(h3-counter) "." counter(h4-counter) "." counter(h5-counter) "";
   padding-right: 0.5em;
 }
 
@@ -62,8 +62,8 @@
 }
 
 .heading-counter-0 .el-h6 h6::before {
-  content: var(--heading-counter) counter(h1-counter) '.' counter(h2-counter)
-    '.' counter(h3-counter) '.' counter(h4-counter) '.' counter(h5-counter) '.'
-    counter(h6-counter) '';
+  content: var(--heading-counter) counter(h1-counter) "." counter(h2-counter)
+    "." counter(h3-counter) "." counter(h4-counter) "." counter(h5-counter) "."
+    counter(h6-counter) "";
   padding-right: 0.5em;
 }
