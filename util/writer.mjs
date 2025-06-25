@@ -103,6 +103,7 @@ export function cleanCSS(base, inject) {
   result = result.replace(/^@container.*?^\}$/gms, "") // Remove container media queries
   result = result.replace(/^@scope.*?^\}$/gms, "") // Remove scope media queries
   result = result.replace(/^\.pdf-.*?\{.*?^\}/gms, "") // Remove PDF specific rules
+  result = result.replace(/^\s*?color-scheme:\s*?(light|dark|normal);\s*?$/gms, "") // Remove color scheme rules
   const colorVariables = `:root {\n${getCombinedThemeVariables(result)}\n}`;
   result = `${result}\n${colorVariables}` // Add combined theme variables
   // Remove newline characters from multiline `url()`
