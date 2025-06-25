@@ -1,0 +1,12 @@
+body
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs.mod-stacked
+  .workspace-tab-header {
+  border-bottom-left-radius: var(--window-radius);
+}
+body:not(.is-mobile) .workspace-split.mod-vertical.mod-root {
+  padding-bottom: 23px;
+}
+body:not(.is-mobile) .workspace-split.mod-vertical.mod-root .workspace-leaf {
+  border-radius: var(--window-radius);
+}

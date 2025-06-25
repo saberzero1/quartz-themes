@@ -1,0 +1,5 @@
+.seamless-dataview .dataview.table-view-table th,
+.seamless-dataview .dataview.table-view-table :is(td, th) {
+  border: 1px solid var(--table-border-color);
+  font-size: var(--font-text-size);
+}

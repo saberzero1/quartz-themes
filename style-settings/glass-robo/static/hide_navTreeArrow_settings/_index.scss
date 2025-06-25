@@ -1,0 +1,21 @@
+body .tree-item-icon.collapse-icon {
+  display: none;
+}
+body
+  .tree-item.nav-folder:not(:has(.tree-item-self[data-path^="CLUSTERS"]))
+  .tree-item-children.nav-folder-children {
+  border-color: transparent;
+  position: relative;
+}
+body
+  .tree-item.nav-folder:not(:has(.tree-item-self[data-path^="CLUSTERS"]))
+  .tree-item-children.nav-folder-children::before {
+  content: " ";
+  display: block;
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 18px;
+  border-left: 1px dashed rgba(89, 166, 134, 0.4196078431);
+}

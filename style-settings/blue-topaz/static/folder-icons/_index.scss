@@ -1,0 +1,53 @@
+body .nav-files-container .nav-folder-title-content::before {
+  position: relative;
+  content: "";
+  display: inline-block;
+  opacity: 0.9;
+  top: 2px;
+  margin-left: -1px;
+  width: 0.95rem;
+  height: 0.95rem;
+  margin-right: 5px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: var(--text-folder-file-icon);
+  filter: hue-rotate(160deg);
+  -webkit-mask-image: url("data:image/svg+xml,utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='002424'><path d='M2.16519.551c.186.28.499.449.835.449h15c.400.762-.238.919-.606l3-7A.998.9980002111h-1V8c0-1.103-0.897-2-2-2h-6.655L8.7894H4c-1.1030-20.897-22v13h.007a110000.158.551zM188v3H6c-0.40-0.762.238-.919.606L414.129V8h14z'></path></svg>");
+}
+body
+  .nav-folder-children
+  .nav-folder.is-collapsed
+  .nav-folder-title-content::before {
+  position: relative;
+  content: "";
+  display: inline-block;
+  width: 0.95rem;
+  height: 0.95rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: var(--text-folder-file-icon);
+  filter: hue-rotate(160deg);
+  -webkit-mask-image: url("data:image/svg+xml,utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='002424'><path d='M205h-8.586L9.7073.293A.997.99700093H4c-1.1030-20.897-22v14c01.103.897222h16c1.10302-0.8972-2V7c0-1.103-0.897-2-2-2zM419V7h16l.00212H4z'></path></svg>");
+}
+body.bt-toggle-colorful-folder:is(
+    .folder-style-change-options-colorful-title,
+    .folder-style-change-options-colorful-tab-liked,
+    .folder-style-change-options-colorful-border
+  )
+  .nav-folder-children
+  .nav-folder-title-content::before {
+  background-color: var(--tab-color);
+  filter: none;
+  opacity: 0.5;
+}
+body.folder-colorful-custom.bt-toggle-colorful-folder:is(
+    .folder-style-change-options-colorful-title,
+    .folder-style-change-options-colorful-tab-liked,
+    .folder-style-change-options-colorful-border
+  )
+  .nav-folder-children
+  .nav-folder-title-content::before {
+  background-color: var(--folder-colorful-custom-color);
+}

@@ -1,0 +1,45 @@
+body {
+  --tab-radius: var(--size-2-3);
+}
+body .workspace-tab-header-container {
+  --tab-outline-width: 0 !important;
+  padding-left: 0;
+}
+body .mod-root .workspace-tab-header-container-inner {
+  margin-top: var(--size-4-1);
+  padding-bottom: var(--size-4-1);
+  padding-left: var(--size-4-1);
+}
+body .mod-root .workspace-tab-header {
+  padding-block: 0 !important;
+  transition:
+    color var(--animation),
+    width var(--animation);
+}
+body .mod-root .workspace-tab-header.is-active {
+  --tab-radius-active: var(--size-2-3);
+  box-shadow: var(--shadow-s);
+}
+body .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button {
+  padding: var(--size-2-1);
+}
+body
+  .mod-root
+  .workspace-tab-header
+  .workspace-tab-header-inner-close-button:hover {
+  background-color: var(--frame-background-color);
+}
+body
+  .mod-root
+  .workspace-tabs:not(.mod-stacked):not(.mod-active)
+  .workspace-tab-header.is-active {
+  --tab-background-active: hsla(var(--background-primary-hsl), 0.5);
+}
+body .workspace-split.mod-root .workspace-tab-header.is-active::before,
+body .workspace-split.mod-root .workspace-tab-header.is-active::after {
+  box-shadow: none;
+}
+body .workspace-tab-header-new-tab {
+  padding-top: var(--size-4-1);
+  margin-left: calc(var(--size-4-3) * -1);
+}

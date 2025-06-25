@@ -1,0 +1,94 @@
+.background-image {
+  --background-image-url: url();
+  --background-image-height: 50%;
+  --background-image-width: 50%;
+  --background-image-blur: 11px;
+  --background-image-shadow: var(--outline);
+  --background-image-opacity: 90%;
+  --background-image-sidebar-opacity: var(--background-image-opacity);
+  --background-image-note-padding: 20px;
+  --background-image-note-width: calc(
+    var(--file-line-width) + var(--background-image-note-padding)
+  );
+  --file-margins: 0 0;
+  --scrollbar-bg: rgba(var(--note-rgb));
+}
+
+body.background-image .workspace-tab-header-container,
+body.background-image .workspace > .workspace-leaf,
+body.background-image .workspace-split.mod-root .view-content,
+body.background-image .workspace-tabs .workspace-leaf {
+  backdrop-filter: blur(var(--background-image-blur));
+}
+
+body.background-image .workspace-leaf-content[data-type="style-settings"],
+body.background-image .kanban-plugin.kanban-plugin,
+body.background-image
+  .markdown-preview-section.markdown-preview-section:not(
+    .kanban-plugin__markdown-preview-view
+  ),
+body.background-image .cm-editor .cm-contentContainer,
+body.background-image .cm-editor .inline-title {
+  background: rgba(var(--note-rgb), var(--background-image-opacity));
+}
+
+body.background-image
+  .markdown-preview-section.markdown-preview-section:not(
+    .kanban-plugin__markdown-preview-view
+  ),
+body.background-image .cm-editor .cm-contentContainer {
+  height: auto;
+}
+
+body.is-focused .workspace-leaf.mod-active .view-header,
+body.background-image .view-header,
+body.background-image .view-header-title-parent,
+body.background-image .view-header-title,
+body.background-image
+  :is(.view-header-nav-buttons, .view-actions)
+  > .clickable-icon,
+body.background-image
+  .workspace-split:is(.mod-left-split, .mod-right-split)
+  .workspace-tab-container,
+body.background-image .workspace-tabs {
+  background: rgba(var(--note-rgb), var(--background-image-sidebar-opacity));
+}
+
+body.background-image .kanban-plugin.kanban-plugin,
+body.background-image .workspace > .workspace-split,
+body.background-image .workspace-split.mod-root .view-content,
+body.background-image .workspace-tabs .workspace-leaf,
+body.is-focused .workspace-tabs.mod-top,
+body.background-image .workspace-tabs.mod-top,
+body.background-image :is(.markdown-preview-view, .markdown-source-view) {
+  background: transparent;
+}
+
+body.background-image
+  :is(.markdown-preview-view, .markdown-source-view.mod-cm6 .cm-scroller) {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+body.background-image .cm-editor .inline-title,
+body.background-image .markdown-preview-section,
+body.background-image
+  .view-content
+  .cm-s-obsidian
+  > .cm-editor
+  .cm-contentContainer {
+  height: auto;
+  padding: 0 var(--background-image-note-padding);
+  box-shadow: 0 0 20px var(--background-image-shadow);
+}
+
+body.background-image .cm-contentContainer .cm-gutter {
+  margin-left: calc(var(--background-image-note-padding) * -1);
+}
+
+body.background-image
+  .markdown-embed-content
+  .markdown-preview-section:not(.kanban-plugin__markdown-preview-view),
+body.background-image .popover.popover .markdown-preview-section {
+  box-shadow: unset;
+}

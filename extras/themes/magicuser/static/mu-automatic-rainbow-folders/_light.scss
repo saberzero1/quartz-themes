@@ -1,0 +1,19 @@
+body:not(.mu-cards-interface).mu-sidebar-dark .workspace-leaf-content,
+body.mu-automatic-rainbow-folders {
+  --mu-folder-icon-color: #000 !important;
+  --mu-file-icon-color: #000 !important;
+  --mu-folder-text-color: #000 !important;
+  --nav-item-color: #000 !important;
+  --nav-item-color-hover: #000;
+  --nav-item-color-active: #000;
+  --nav-item-color-selected: #000;
+  --nav-item-color-highlighted: #000;
+  --nav-item-background-selected: #000;
+  --mu-indent-color-level-1: #000;
+  --mu-indent-color-level-2: #000;
+  --mu-indent-color-level-3: #000;
+  --mu-indent-color-level-4: #000;
+  --mu-indent-color-level-5: #000;
+  --mu-indent-color-level-6: #000;
+  --nav-collapse-icon-color: #000;
+}

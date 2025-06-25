@@ -1,0 +1,30 @@
+:not(:has(.mod-stacked)) {
+  & .workspace-tab-header:has(.mod-pinned) {
+    --tab-max-width: 30px;
+    & .workspace-tab-header-inner-title {
+      display: none;
+    }
+    & .workspace-tab-header-inner-icon {
+      display: flex;
+    }
+    & .mod-pinned {
+      display: none;
+    }
+  }
+  &.pln-tab-rows
+    .mod-root
+    .workspace-tabs
+    .workspace-tab-header-container:hover
+    .workspace-tab-header:has(.mod-pinned) {
+    --tab-max-width: unset;
+    & .workspace-tab-header-inner-title {
+      display: contents;
+    }
+    & .workspace-tab-header-inner-icon {
+      display: none;
+    }
+    & .mod-pinned {
+      display: contents;
+    }
+  }
+}

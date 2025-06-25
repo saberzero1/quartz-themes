@@ -1,0 +1,22 @@
+body div.setting-item-control div.checkbox-container {
+  background-color: var(--color-base-05);
+  box-shadow: unset;
+  font-weight: bolder;
+}
+body div.setting-item-control div.checkbox-container::after {
+  content: ":(";
+  transform: translateY(-0.5px);
+  width: fit-content;
+  height: fit-content;
+  background-color: inherit;
+  color: var(--color-red);
+  box-shadow: unset;
+  border-radius: 25%;
+}
+body div.setting-item-control div.checkbox-container.is-enabled::after {
+  content: ":)";
+  color: var(--color-green);
+}
+body div.setting-item-control input.slider {
+  border-radius: unset;
+}

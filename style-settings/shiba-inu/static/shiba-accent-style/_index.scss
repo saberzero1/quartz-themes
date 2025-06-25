@@ -1,0 +1,71 @@
+:root,
+body {
+  --color-accent: rgb(var(--accent));
+  --color-accent-1: rgb(var(--accent));
+  --color-accent-2: rgba(var(--accent), 0.9);
+  --text-selection: rgba(var(--blue), 0.15);
+  --interactive-accent: rgb(var(--accent));
+  --interactive-accent-hover: rgba(var(--accent), 0.9);
+  --text-accent: rgb(var(--accent));
+  --text-accent-hover: rgb(var(--accent));
+  --text-highlight-bg: rgba(var(--yellow), 0.2);
+  --text-highlight-bg-active: rgba(var(--yellow), 0.3);
+  --interactive-accent: rgb(var(--accent));
+  --interactive-accent-rgb: var(--accent);
+  --interactive-accent-hover: rgb(var(--accent));
+  --blockquote-border-color: rgb(var(--accent));
+  --background-modifier-active-hover: rgba(var(--accent), 0.15);
+  --internal-link-color: rgba(var(--accent), 0.9);
+  --external-link-color: rgba(var(--accent), 0.8);
+  --unresolved-link-color: rgba(var(--accent), 0.8);
+  --tag-background: rgba(var(--accent), 0.1);
+  --tag-background-hover: rgba(var(--accent), 0.2);
+  --tag-border-color: rgba(var(--accent), 0.15);
+  --tag-border-color-hover: rgba(var(--accent), 0.15);
+  --nav-item-background-selected: rgba(var(--accent), 0.2);
+  --heading-formatting: rgb(var(--accent));
+  --icon-color-focused: rgb(var(--accent));
+  .accent-orange {
+    --accent: var(--orange);
+  }
+  .accent-lemon {
+    --accent: var(--lemon);
+  }
+  .accent-rose {
+    --accent: var(--rose);
+  }
+  .accent-violet {
+    --accent: var(--violet);
+  }
+  .accent-red {
+    --accent: var(--red);
+  }
+  .accent-yellow {
+    --accent: var(--yellow);
+  }
+  .accent-green {
+    --accent: var(--green);
+  }
+  .accent-sea {
+    --accent: var(--sea);
+  }
+  .accent-cyan {
+    --accent: var(--cyan);
+  }
+  .accent-turquoise {
+    --accent: var(--turquoise);
+  }
+  .accent-blue {
+    --accent: var(--blue);
+  }
+  .accent-lily {
+    --accent: var(--lily);
+  }
+}
+.shib-callout-color-toggle .callout[data-callout="note"] {
+  --callout-color: var(--accent);
+}
+.style-settings-heading[data-id="shiba-theme-settings-extended"],
+.style-settings-heading[data-id="shiba-theme-settings"] {
+  border-color: rgba(var(--color-accent), 0.2);
+}

@@ -1,0 +1,45 @@
+body.enable-icon-anima div.nav-header:hover {
+  background: linear-gradient(
+    135deg,
+    var(--colorA),
+    var(--colorB),
+    var(--colorC)
+  );
+  animation: rainbow-change 8s infinite linear;
+}
+
+body.enable-icon-anima
+  :is(.workspace-ribbon, .nav-header)
+  .clickable-icon:before {
+  content: "";
+  background-color: var(--theme-color-translucent-01);
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  visibility: hidden;
+}
+
+body.enable-icon-anima
+  :is(.workspace-ribbon, .nav-header)
+  .clickable-icon:hover:before {
+  animation: bead-1 1s;
+}
+
+body.enable-icon-anima
+  :is(.workspace-ribbon, .nav-header)
+  .clickable-icon:after {
+  content: "";
+  background-color: var(--theme-color-translucent-01);
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  visibility: hidden;
+}
+
+body.enable-icon-anima
+  :is(.workspace-ribbon, .nav-header)
+  .clickable-icon:hover:after {
+  animation: bead-2 1s;
+}

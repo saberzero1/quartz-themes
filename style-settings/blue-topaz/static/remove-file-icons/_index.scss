@@ -1,0 +1,12 @@
+body .workspace-leaf-content[data-type="recent-files"] .view-content {
+  padding: unset;
+}
+body:not(.remove-arrow)
+  .nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-file {
+  padding-left: 16px;
+}
+body.remove-arrow .nav-folder.mod-root {
+  padding-left: 4px;
+}

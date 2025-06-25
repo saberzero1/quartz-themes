@@ -1,0 +1,16 @@
+.aside-counter .callout[data-callout~="aside"] .callout-content::before {
+  content: counter(sidenote-counter) ".";
+  position: relative;
+  float: left;
+  padding-right: 4px;
+  vertical-align: baseline;
+  font-size: 100%;
+  font-weight: bold;
+}
+
+.aside-counter .el-div[data-callout~="aside"]::after {
+  content: counter(sidenote-counter);
+  vertical-align: super;
+  font-size: 80%;
+  font-weight: bold;
+}

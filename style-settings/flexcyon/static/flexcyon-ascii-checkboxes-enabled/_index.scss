@@ -1,0 +1,346 @@
+body input[data-task="!"]:checked,
+body li[data-task="!"] > input:checked,
+body li[data-task="!"] > p > input:checked {
+  background-color: transparent;
+  border: none;
+  font-weight: 900;
+}
+body input[data-task="!"]:checked:hover,
+body li[data-task="!"] > input:checked:hover,
+body li[data-task="!"] > p > input:checked:hover {
+  filter: brightness(1.25);
+}
+body input[data-task="!"]:checked::after,
+body li[data-task="!"] > input:checked::after,
+body li[data-task="!"] > p > input:checked::after {
+  background-color: transparent;
+  content: "!";
+  color: var(--color-red);
+  font-size: var(--flexcyon-ascii-checkboxes-font-size);
+  text-align: center;
+  -webkit-mask-image: none;
+  mask-image: none;
+  top: -0.325em;
+}
+body input[data-task=">"]:checked,
+body li[data-task=">"] > input:checked,
+body li[data-task=">"] > p > input:checked {
+  background-color: transparent;
+  border: none;
+  font-weight: 900;
+}
+body input[data-task=">"]:checked:hover,
+body li[data-task=">"] > input:checked:hover,
+body li[data-task=">"] > p > input:checked:hover {
+  filter: brightness(1.25);
+}
+body input[data-task=">"]:checked::after,
+body li[data-task=">"] > input:checked::after,
+body li[data-task=">"] > p > input:checked::after {
+  background-color: transparent;
+  content: ">";
+  color: var(--color-purple);
+  font-size: var(--flexcyon-ascii-checkboxes-font-size);
+  text-align: center;
+  -webkit-mask-image: none;
+  mask-image: none;
+  top: -0.325em;
+}
+body input[data-task="i"]:checked,
+body li[data-task="i"] > input:checked,
+body li[data-task="i"] > p > input:checked {
+  background-color: transparent;
+  border: none;
+  font-weight: 900;
+}
+body input[data-task="i"]:checked:hover,
+body li[data-task="i"] > input:checked:hover,
+body li[data-task="i"] > p > input:checked:hover {
+  filter: brightness(1.25);
+}
+body input[data-task="i"]:checked::after,
+body li[data-task="i"] > input:checked::after,
+body li[data-task="i"] > p > input:checked::after {
+  background-color: transparent;
+  content: "i";
+  color: var(--color-blue);
+  font-size: var(--flexcyon-ascii-checkboxes-font-size);
+  text-align: center;
+  -webkit-mask-image: none;
+  mask-image: none;
+  top: -0.325em;
+}
+body input[data-task="?"]:checked,
+body li[data-task="?"] > input:checked,
+body li[data-task="?"] > p > input:checked {
+  background-color: transparent;
+  border: none;
+  font-weight: 900;
+}
+body input[data-task="?"]:checked:hover,
+body li[data-task="?"] > input:checked:hover,
+body li[data-task="?"] > p > input:checked:hover {
+  filter: brightness(1.25);
+}
+body input[data-task="?"]:checked::after,
+body li[data-task="?"] > input:checked::after,
+body li[data-task="?"] > p > input:checked::after {
+  background-color: transparent;
+  content: "?";
+  color: var(--color-green);
+  font-size: var(--flexcyon-ascii-checkboxes-font-size);
+  text-align: center;
+  -webkit-mask-image: none;
+  mask-image: none;
+  top: -0.325em;
+}
+body input[data-task="#"]:checked,
+body li[data-task="#"] > input:checked,
+body li[data-task="#"] > p > input:checked {
+  background-color: transparent;
+  border: none;
+  font-weight: 900;
+}
+body input[data-task="#"]:checked:hover,
+body li[data-task="#"] > input:checked:hover,
+body li[data-task="#"] > p > input:checked:hover {
+  filter: brightness(1.25);
+}
+body input[data-task="#"]:checked::after,
+body li[data-task="#"] > input:checked::after,
+body li[data-task="#"] > p > input:checked::after {
+  background-color: transparent;
+  content: "#";
+  color: var(--color-cyan);
+  font-size: var(--flexcyon-ascii-checkboxes-font-size);
+  text-align: center;
+  -webkit-mask-image: none;
+  mask-image: none;
+  top: -0.325em;
+}
+body input[data-task="."]:checked,
+body li[data-task="."] > input:checked,
+body li[data-task="."] > p > input:checked {
+  background-color: transparent;
+  border: none;
+  font-weight: 900;
+}
+body input[data-task="."]:checked:hover,
+body li[data-task="."] > input:checked:hover,
+body li[data-task="."] > p > input:checked:hover {
+  filter: brightness(1.25);
+}
+body input[data-task="."]:checked::after,
+body li[data-task="."] > input:checked::after,
+body li[data-task="."] > p > input:checked::after {
+  background-color: transparent;
+  content: ".";
+  color: var(--color-orange);
+  font-size: var(--flexcyon-ascii-checkboxes-font-size);
+  text-align: center;
+  -webkit-mask-image: none;
+  mask-image: none;
+  top: -0.325em;
+}
+body input[data-task="<"]:checked,
+body li[data-task="<"] > input:checked,
+body li[data-task="<"] > p > input:checked {
+  background-color: transparent;
+  border: none;
+  font-weight: 900;
+}
+body input[data-task="<"]:checked:hover,
+body li[data-task="<"] > input:checked:hover,
+body li[data-task="<"] > p > input:checked:hover {
+  filter: brightness(1.25);
+}
+body input[data-task="<"]:checked::after,
+body li[data-task="<"] > input:checked::after,
+body li[data-task="<"] > p > input:checked::after {
+  background-color: transparent;
+  content: "<";
+  color: var(--color-yellow);
+  font-size: var(--flexcyon-ascii-checkboxes-font-size);
+  text-align: center;
+  -webkit-mask-image: none;
+  mask-image: none;
+  top: -0.325em;
+}
+body input[data-task="$"]:checked,
+body li[data-task="$"] > input:checked,
+body li[data-task="$"] > p > input:checked {
+  background-color: transparent;
+  border: none;
+  font-weight: 900;
+}
+body input[data-task="$"]:checked:hover,
+body li[data-task="$"] > input:checked:hover,
+body li[data-task="$"] > p > input:checked:hover {
+  filter: brightness(1.25);
+}
+body input[data-task="$"]:checked::after,
+body li[data-task="$"] > input:checked::after,
+body li[data-task="$"] > p > input:checked::after {
+  background-color: transparent;
+  content: "$";
+  color: var(--text-accent);
+  font-size: var(--flexcyon-ascii-checkboxes-font-size);
+  text-align: center;
+  -webkit-mask-image: none;
+  mask-image: none;
+  top: -0.325em;
+}
+body input[data-task="*"]:checked,
+body li[data-task="*"] > input:checked,
+body li[data-task="*"] > p > input:checked {
+  background-color: transparent;
+  border: none;
+  font-weight: 900;
+}
+body input[data-task="*"]:checked:hover,
+body li[data-task="*"] > input:checked:hover,
+body li[data-task="*"] > p > input:checked:hover {
+  filter: brightness(1.25);
+}
+body input[data-task="*"]:checked::after,
+body li[data-task="*"] > input:checked::after,
+body li[data-task="*"] > p > input:checked::after {
+  background-color: transparent;
+  content: "*";
+  color: var(--color-red);
+  font-size: var(--flexcyon-ascii-checkboxes-font-size);
+  text-align: center;
+  -webkit-mask-image: none;
+  mask-image: none;
+  top: -0.325em;
+}
+body input[data-task="'"]:checked,
+body li[data-task="'"] > input:checked,
+body li[data-task="'"] > p > input:checked {
+  background-color: transparent;
+  border: none;
+  font-weight: 900;
+}
+body input[data-task="'"]:checked:hover,
+body li[data-task="'"] > input:checked:hover,
+body li[data-task="'"] > p > input:checked:hover {
+  filter: brightness(1.25);
+}
+body input[data-task="'"]:checked::after,
+body li[data-task="'"] > input:checked::after,
+body li[data-task="'"] > p > input:checked::after {
+  background-color: transparent;
+  content: "'";
+  color: var(--color-green);
+  font-size: var(--flexcyon-ascii-checkboxes-font-size);
+  text-align: center;
+  -webkit-mask-image: none;
+  mask-image: none;
+  top: -0.325em;
+}
+body input[data-task="@"]:checked,
+body li[data-task="@"] > input:checked,
+body li[data-task="@"] > p > input:checked {
+  background-color: transparent;
+  border: none;
+  font-weight: 900;
+}
+body input[data-task="@"]:checked:hover,
+body li[data-task="@"] > input:checked:hover,
+body li[data-task="@"] > p > input:checked:hover {
+  filter: brightness(1.25);
+}
+body input[data-task="@"]:checked::after,
+body li[data-task="@"] > input:checked::after,
+body li[data-task="@"] > p > input:checked::after {
+  background-color: transparent;
+  content: "@";
+  color: var(--color-blue);
+  font-size: var(--flexcyon-ascii-checkboxes-font-size);
+  text-align: center;
+  -webkit-mask-image: none;
+  mask-image: none;
+  top: -0.325em;
+}
+body input[data-task='"']:checked,
+body li[data-task='"'] > input:checked,
+body li[data-task='"'] > p > input:checked {
+  background-color: transparent;
+  border: none;
+  font-weight: 900;
+}
+body input[data-task='"']:checked:hover,
+body li[data-task='"'] > input:checked:hover,
+body li[data-task='"'] > p > input:checked:hover {
+  filter: brightness(1.25);
+}
+body input[data-task='"']:checked::after,
+body li[data-task='"'] > input:checked::after,
+body li[data-task='"'] > p > input:checked::after {
+  content: "“";
+  color: var(--color-green);
+  font-size: calc(var(--flexcyon-ascii-checkboxes-font-size) + 0.3rem);
+  text-align: center;
+  -webkit-mask-image: none;
+  mask-image: none;
+  top: -0.325em;
+}
+body input[data-task="'"]:checked::after,
+body li[data-task="'"] > input:checked::after,
+body li[data-task="'"] > p > input:checked::after {
+  content: "‘";
+  font-size: calc(var(--flexcyon-ascii-checkboxes-font-size) + 0.3rem);
+}
+body input[data-task="i"]:checked::after,
+body li[data-task="i"] > input:checked::after,
+body li[data-task="i"] > p > input:checked::after {
+  border: 1.5px solid var(--color-blue);
+  font-size: calc(var(--flexcyon-ascii-checkboxes-font-size) - 0.5rem);
+  border-radius: 50%;
+  scale: 115%;
+  margin-inline-start: -1.5px;
+  top: -0.1rem;
+}
+body input[data-task="<"]:checked::after,
+body li[data-task="<"] > input:checked::after,
+body li[data-task="<"] > p > input:checked::after,
+body input[data-task=">"]:checked::after,
+body li[data-task=">"] > input:checked::after,
+body li[data-task=">"] > p > input:checked::after {
+  transform: scaleY(1.1);
+  top: -0.4rem;
+}
+body input[data-task="."]:checked::after,
+body li[data-task="."] > input:checked::after,
+body li[data-task="."] > p > input:checked::after {
+  content: "...";
+  font-size: calc(var(--flexcyon-ascii-checkboxes-font-size) - 0.2rem);
+  letter-spacing: -0.5px;
+}
+body input[data-task="*"]:checked::after,
+body li[data-task="*"] > input:checked::after,
+body li[data-task="*"] > p > input:checked::after {
+  font-size: calc(var(--flexcyon-ascii-checkboxes-font-size) + 0.75rem);
+}
+body input[data-task="$"]:checked::after,
+body li[data-task="$"] > input:checked::after,
+body li[data-task="$"] > p > input:checked::after {
+  font-size: calc(var(--flexcyon-ascii-checkboxes-font-size) - 0.05rem);
+}
+body input[data-task="@"]:checked::after,
+body li[data-task="@"] > input:checked::after,
+body li[data-task="@"] > p > input:checked::after {
+  font-size: calc(var(--flexcyon-ascii-checkboxes-font-size) - 0.05rem);
+  top: -0.45rem;
+}
+body input[data-task="l"]:checked,
+body li[data-task="l"] > input:checked,
+body li[data-task="l"] > p > input:checked {
+  background-color: transparent;
+  font-weight: 900;
+}
+body input[data-task="l"]:checked:hover,
+body li[data-task="l"] > input:checked:hover,
+body li[data-task="l"] > p > input:checked:hover {
+  filter: brightness(1.25);
+}

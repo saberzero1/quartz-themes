@@ -1,0 +1,20 @@
+:root,
+body {
+  --accent-default-h: 237.45 !important;
+  --accent-default-s: 90% !important;
+  --accent-default-l: 80% !important;
+  --link-color: var(--color-purple) !important;
+  --link-external-color: var(--color-purple) !important;
+  --link-color-hover: hsla(
+    var(--accent-default-h),
+    var(--accent-default-s),
+    var(--accent-default-l),
+    0.9
+  );
+  --link-external-color-hover: hsla(
+    var(--accent-default-h),
+    var(--accent-default-s),
+    var(--accent-default-l),
+    0.9
+  );
+}

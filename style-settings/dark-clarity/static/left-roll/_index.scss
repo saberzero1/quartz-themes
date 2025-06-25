@@ -1,0 +1,8 @@
+body .nav-files-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+body .nav-files-container > * {
+  min-width: var(--min-width);
+}

@@ -1,0 +1,56 @@
+body {
+  --header-height: 35px;
+}
+body-stacked {
+  --tab-stacked-header-width: 33px;
+}
+body .workspace-split.mod-vertical.mod-root .workspace-tab-header-container {
+  margin: 0 0 5px 0;
+}
+body.is-frameless:not(.is-hidden-frameless):not(.is-fullscreen)
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs.mod-top
+  .workspace-tab-header-inner,
+body
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs:not(.mod-top)
+  .workspace-tab-header-inner,
+body.toggle-tab-design
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-inner {
+  padding: 1px 11px;
+}
+body.is-frameless:not(.is-hidden-frameless):not(.is-fullscreen)
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs.mod-top
+  .workspace-tab-header-inner,
+body
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs:not(.mod-top)
+  .workspace-tab-header-inner,
+body.toggle-tab-design
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-inner {
+  padding: 1px 11px;
+}
+body
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-inner {
+  padding: 23px 11px 17px;
+}
+body .workspace-split svg.svg-icon {
+  --icon-size: var(--icon-s);
+}
+body .workspace-split.mod-vertical.mod-root .workspace-tab-header svg.svg-icon {
+  --icon-size: var(--icon-xs);
+}
+body
+  .workspace-split.workspace-horizontal:is(.mod-left-split, .mod-right-split)
+  .sidebar-toggle-button,
+body .workspace-ribbon .sidebar-toggle-button {
+  height: var(--header-height);
+  --icon-size: var(--icon-s);
+}

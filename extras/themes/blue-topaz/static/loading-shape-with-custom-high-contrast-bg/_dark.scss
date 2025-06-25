@@ -1,0 +1,12 @@
+body:not(.default-loading-page).loading-shape-with-custom-gif.theme-dark
+  .progress-bar {
+  background-color: white;
+}
+
+body:not(.default-loading-page).loading-shape-with-custom-gif.theme-dark
+  .progress-bar-message::before {
+  animation: shape-gif-dark 2.5s infinite alternate;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  will-change: transform;
+}

@@ -1,0 +1,289 @@
+body:not(.is-mobile) .workspace-tabs {
+  gap: 0px;
+  transition: gap var(--anim-out);
+}
+body:not(.is-mobile)
+  :has(.workspace-tab-header-container:hover)
+  .workspace-tabs:hover {
+  gap: 4px;
+  transition: gap var(--anim-in);
+}
+body:not(.is-mobile) .workspace-tab-header-container {
+  height: 16px;
+  opacity: 0;
+  transition:
+    height var(--anim-out),
+    opacity var(--anim-out);
+}
+body:not(.is-mobile) .workspace-tab-header-container:hover {
+  height: 40px;
+  opacity: 1;
+  transition:
+    height var(--anim-in),
+    opacity var(--anim-in);
+}
+body:not(.is-mobile) .workspace-tab-header-container-inner {
+  transform: translateY(-22px);
+  opacity: 0;
+  transition:
+    transform var(--anim-out),
+    opacity var(--anim-out);
+}
+body:not(.is-mobile)
+  .workspace-tab-header-container:hover
+  .workspace-tab-header-container-inner,
+body:not(.is-mobile):has(
+    .mod-top > .workspace-tab-header-container:hover,
+    .titlebar-button-container:hover
+  )
+  .mod-top
+  .workspace-tab-header-container-inner {
+  transform: translateY(0px);
+  opacity: 1;
+  transition:
+    transform var(--anim-in),
+    opacity var(--anim-in);
+}
+body:not(.is-mobile).is-hidden-frameless .titlebar-button {
+  height: 100%;
+}
+body:not(.is-mobile):has(
+    .mod-top > .workspace-tab-header-container:hover,
+    .titlebar-button-container:hover
+  )
+  .titlebar-button {
+  height: 44px;
+}
+body:not(.is-mobile)
+  .workspace-split.mod-vertical
+  > *
+  > .workspace-leaf-resize-handle,
+body:not(.is-mobile)
+  .workspace-split.mod-left-split
+  > .workspace-leaf-resize-handle,
+body:not(.is-mobile)
+  .workspace-split.mod-right-split
+  > .workspace-leaf-resize-handle {
+  height: calc(var(--divider-vertical-height) + 24px);
+  transition:
+    height var(--anim-out),
+    background-color 200ms ease-in-out,
+    border-color 200ms ease-in-out,
+    opacity 200ms ease-in-out;
+}
+body:not(.is-mobile).status-bar-autohide:has(.status-bar:hover)
+  .workspace-split.mod-vertical
+  > *
+  > .workspace-leaf-resize-handle,
+body:not(.is-mobile).status-bar-autohide:has(.status-bar:hover)
+  .workspace-split.mod-left-split
+  > .workspace-leaf-resize-handle,
+body:not(.is-mobile).status-bar-autohide:has(.status-bar:hover)
+  .workspace-split.mod-right-split
+  > .workspace-leaf-resize-handle {
+  transition:
+    height var(--anim-in),
+    background-color 200ms ease-in-out,
+    border-color 200ms ease-in-out,
+    opacity 200ms ease-in-out;
+}
+body:not(.is-mobile):has(
+    .mod-top > .workspace-tab-header-container:hover,
+    .titlebar-button-container:hover
+  )
+  .workspace-split.mod-vertical
+  > *
+  > .workspace-leaf-resize-handle,
+body:not(.is-mobile):has(
+    .mod-top > .workspace-tab-header-container:hover,
+    .titlebar-button-container:hover
+  )
+  .workspace-split.mod-left-split
+  > .workspace-leaf-resize-handle,
+body:not(.is-mobile):has(
+    .mod-top > .workspace-tab-header-container:hover,
+    .titlebar-button-container:hover
+  )
+  .workspace-split.mod-right-split
+  > .workspace-leaf-resize-handle {
+  height: calc(var(--divider-vertical-height) - 4px);
+  transition:
+    height var(--anim-in),
+    background-color 200ms ease-in-out,
+    border-color 200ms ease-in-out,
+    opacity 200ms ease-in-out;
+}
+body:not(.is-mobile).is-hidden-frameless
+  .workspace-split.mod-vertical
+  > *
+  > .workspace-leaf-resize-handle,
+body:not(.is-mobile).is-hidden-frameless
+  .workspace-split.mod-left-split
+  > .workspace-leaf-resize-handle,
+body:not(.is-mobile).is-hidden-frameless
+  .workspace-split.mod-right-split
+  > .workspace-leaf-resize-handle {
+  height: calc(var(--divider-vertical-height) - 16px);
+  transition:
+    height var(--anim-out),
+    background-color 200ms ease-in-out,
+    border-color 200ms ease-in-out,
+    opacity 200ms ease-in-out;
+}
+body:not(.is-mobile).status-bar-autohide:has(
+    .status-bar:hover
+  ).is-hidden-frameless
+  .workspace-split.mod-vertical
+  > *
+  > .workspace-leaf-resize-handle,
+body:not(.is-mobile).status-bar-autohide:has(
+    .status-bar:hover
+  ).is-hidden-frameless
+  .workspace-split.mod-left-split
+  > .workspace-leaf-resize-handle,
+body:not(.is-mobile).status-bar-autohide:has(
+    .status-bar:hover
+  ).is-hidden-frameless
+  .workspace-split.mod-right-split
+  > .workspace-leaf-resize-handle {
+  transition:
+    height var(--anim-in),
+    background-color 200ms ease-in-out,
+    border-color 200ms ease-in-out,
+    opacity 200ms ease-in-out;
+}
+body:not(.is-mobile).is-hidden-frameless:has(
+    .mod-top > .workspace-tab-header-container:hover,
+    .titlebar-button-container:hover
+  )
+  .workspace-split.mod-vertical
+  > *
+  > .workspace-leaf-resize-handle,
+body:not(.is-mobile).is-hidden-frameless:has(
+    .mod-top > .workspace-tab-header-container:hover,
+    .titlebar-button-container:hover
+  )
+  .workspace-split.mod-left-split
+  > .workspace-leaf-resize-handle,
+body:not(.is-mobile).is-hidden-frameless:has(
+    .mod-top > .workspace-tab-header-container:hover,
+    .titlebar-button-container:hover
+  )
+  .workspace-split.mod-right-split
+  > .workspace-leaf-resize-handle {
+  height: calc(var(--divider-vertical-height) - var(--header-height) - 4px);
+  transition:
+    height var(--anim-in),
+    background-color 200ms ease-in-out,
+    border-color 200ms ease-in-out,
+    opacity 200ms ease-in-out;
+}
+body:not(.is-mobile) .workspace-tabs.mod-top {
+  gap: 0px;
+  transition: gap var(--anim-out);
+}
+body:not(.is-mobile).status-bar-autohide:has(.status-bar:hover)
+  .workspace-tabs.mod-top {
+  transition: gap var(--anim-in);
+}
+body:not(.is-mobile):has(
+    .mod-top > .workspace-tab-header-container:hover,
+    .titlebar-button-container:hover
+  )
+  .workspace-tabs.mod-top {
+  gap: 4px;
+  transition: gap var(--anim-in);
+}
+body:not(.is-mobile) .workspace::before {
+  height: calc(100% - 16px);
+}
+body:not(.is-mobile):has(
+    .mod-top > .workspace-tab-header-container:hover,
+    .titlebar-button-container:hover
+  )
+  .workspace::before {
+  height: calc(100% - 44px);
+}
+body:not(.is-mobile).is-hidden-frameless .titlebar-button-container,
+body:not(.is-mobile) .mod-top .workspace-tab-header-container {
+  height: 16px;
+  opacity: 0;
+  transition:
+    height var(--anim-out),
+    opacity var(--anim-out);
+}
+body:not(.is-mobile):has(
+    .mod-top > .workspace-tab-header-container:hover,
+    .titlebar-button-container:hover
+  )
+  .mod-top
+  .workspace-tab-header-container {
+  height: 40px;
+  opacity: 1;
+  transition:
+    height var(--anim-in),
+    opacity var(--anim-in);
+}
+body:not(.is-mobile):has(
+    .mod-top > .workspace-tab-header-container:hover,
+    .titlebar-button-container:hover
+  ).is-hidden-frameless
+  .titlebar-button-container {
+  height: 44px;
+  opacity: 1;
+  transition:
+    height var(--anim-in),
+    opacity var(--anim-in);
+}
+body:not(.is-mobile).status-bar-autohide:has(
+    .status-bar:hover
+  ).is-hidden-frameless
+  .titlebar-button-container,
+body:not(.is-mobile).status-bar-autohide:has(.status-bar:hover)
+  .mod-top
+  .workspace-tab-header-container {
+  transition:
+    height var(--anim-in),
+    opacity var(--anim-in);
+}
+body:not(.is-mobile):not(.is-popout-window).mod-macos.is-hidden-frameless:not(
+    .is-fullscreen
+  )
+  .mod-left-split
+  .mod-top-left-space
+  .workspace-tab-header-container,
+body:not(.is-mobile):not(.is-popout-window).mod-macos.is-hidden-frameless:not(
+    .is-fullscreen
+  )
+  .workspace:not(.is-left-sidedock-open)
+  .sidebar-toggle-button.mod-left {
+  transition:
+    height var(--anim-out),
+    opacity var(--anim-out),
+    margin-left var(--anim-out);
+}
+body:not(.is-mobile):not(.is-popout-window).mod-macos.is-hidden-frameless:not(
+    .is-fullscreen
+  ):has(
+    .mod-top > .workspace-tab-header-container:hover,
+    .titlebar-button-container:hover
+  )
+  .mod-left-split
+  .mod-top-left-space
+  .workspace-tab-header-container,
+body:not(.is-mobile):not(.is-popout-window).mod-macos.is-hidden-frameless:not(
+    .is-fullscreen
+  ):has(
+    .mod-top > .workspace-tab-header-container:hover,
+    .titlebar-button-container:hover
+  )
+  .workspace:not(.is-left-sidedock-open)
+  .sidebar-toggle-button.mod-left {
+  transition:
+    height var(--anim-in),
+    opacity var(--anim-in),
+    margin-left var(--anim-out);
+}
+.notice-container {
+  top: 6px;
+}

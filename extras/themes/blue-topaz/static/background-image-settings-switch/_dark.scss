@@ -1,0 +1,12 @@
+body.background-image-settings-markdown-page-transparent.theme-dark
+  .workspace-split.mod-root
+  .workspace-tab-header.is-active {
+  background-color: transparent;
+}
+
+body.background-image-settings-markdown-page-custom.theme-dark
+  .workspace-split.mod-root
+  .workspace-leaf
+  .workspace-leaf-content[data-type="markdown"]::before {
+  background-image: var(--background-markdown-page-theme-dark-custom);
+}

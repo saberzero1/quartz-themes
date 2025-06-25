@@ -1,0 +1,39 @@
+.floating-doc .workspace,
+.floating-doc .workspace > .workspace-split,
+.floating-doc .workspace-ribbon::before {
+  background: var(--doc-background);
+}
+
+.enable-bg-img .workspace,
+.enable-bg-img .workspace > .workspace-split,
+.enable-bg-img .workspace-ribbon::before {
+  background: transparent;
+}
+
+.floating-doc .workspace-leaf {
+  background-color: transparent !important;
+  margin: 0px 0.5em;
+}
+
+.floating-doc .workspace-leaf-content[data-type="markdown"] {
+  max-width: var(--file-line-width) !important;
+  margin: auto !important;
+}
+
+.floating-doc .workspace-leaf-content {
+  border-radius: var(--radius-s) var(--radius-s) 0px 0px;
+  box-shadow: var(--shadow-s);
+}
+
+.enable-bg-img .workspace-leaf-content {
+  background-color: var(--background-primary) !important;
+}
+
+.floating-doc {
+  --ribbon-background-collapsed: transparent;
+  --ribbon-background: transparent;
+}
+
+.page-shadow.floating-doc .view-content {
+  box-shadow: 0 0 70px var(--shadow-color) inset;
+}

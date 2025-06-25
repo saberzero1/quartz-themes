@@ -1,0 +1,25 @@
+.background-settings-workplace-theme-light-cute-town-l.theme-light {
+  --cute-town-l: url("https://github.com/faroukx/aesthetic-wallpapers/blob/main/shibainu/cute-town.png?raw=true");
+  --shib-background-image: var(--cute-town-l);
+}
+
+.background-settings-workplace-theme-light-japan.theme-light {
+  --japan: url("https://i.redd.it/7lnk3bmktpv81.jpg");
+  --shib-background-image: var(--japan);
+}
+
+.background-settings-workplace-theme-light-robot.theme-light {
+  --robot: url("https://github.com/faroukx/aesthetic-wallpapers/blob/main/shibainu/robot.jpg?raw=true");
+  --shib-background-image: var(--robot);
+}
+
+.background-settings-workplace-theme-light-neocity.theme-light {
+  --neocity: url("https://github.com/faroukx/aesthetic-wallpapers/blob/main/shibainu/neocity.png?raw=true");
+  --shib-background-image: var(--neocity);
+}
+
+.background-settings-workplace-theme-light-custom-option.theme-light {
+  --shib-background-image: var(
+    --background-settings-workplace-theme-light-custom
+  );
+}

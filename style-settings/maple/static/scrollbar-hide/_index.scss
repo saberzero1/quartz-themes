@@ -1,0 +1,20 @@
+body
+  .setting-item:is(
+    [data-id*="scrollbar-hover"],
+    [data-id="scrollbar-movein-animation"],
+    [data-id="scrollbar-gutter"]
+  ) {
+  display: none;
+}
+body
+  .setting-item:is(
+    [data-id*="scrollbar-hover"],
+    [data-id="scrollbar-movein-animation"],
+    [data-id="scrollbar-gutter"]
+  )
+  + .style-settings-container {
+  display: none;
+}
+body :not([style="overflow-x: auto;"])::-webkit-scrollbar {
+  display: none !important;
+}

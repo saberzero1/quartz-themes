@@ -1,0 +1,30 @@
+body.font-highlight-cover-mode .markdown-rendered mark,
+body.font-highlight-cover-mode .style-settings-container mark,
+body.font-highlight-cover-mode .markdown-source-view.is-live-preview mark,
+body.font-highlight-cover-mode
+  .markdown-source-view.is-live-preview
+  :not(.cm-formatting-highlight)
+  + .cm-highlight {
+  transition: color 0.2s;
+  color: var(--font-highlight-bg-color);
+}
+
+body.font-highlight-cover-mode .markdown-rendered mark:hover,
+body.font-highlight-cover-mode .style-settings-container mark:hover,
+body.font-highlight-cover-mode .markdown-source-view.is-live-preview mark:hover,
+body.font-highlight-cover-mode
+  .markdown-source-view.is-live-preview
+  :not(.cm-formatting-highlight)
+  + .cm-highlight:hover {
+  color: var(--font-highlight-color);
+}
+
+body.font-highlight-cover-mode
+  .markdown-source-view.is-live-preview
+  .cm-highlight.cm-formatting-highlight,
+body.font-highlight-cover-mode
+  .markdown-source-view.is-live-preview
+  .cm-active.cm-line
+  .cm-highlight {
+  color: var(--font-highlight-color);
+}

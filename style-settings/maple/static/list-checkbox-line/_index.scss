@@ -1,0 +1,3 @@
+body:is(:not(.css-settings-manager), .list-enable) {
+  --checklist-done-decoration: none;
+}

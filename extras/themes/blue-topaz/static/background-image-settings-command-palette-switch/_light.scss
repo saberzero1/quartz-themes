@@ -1,0 +1,21 @@
+body.background-image-settings-command-palette-same-as-workplace.background-settings-workplace-waves-light
+  .modal-container
+  .prompt::before,
+body.background-image-settings-command-palette-same-as-workplace.background-settings-workplace-background-image.background-settings-workplace-waves.theme-dark
+  .prompt:before {
+  transform: rotate(180deg);
+  top: 75%;
+  background-image: unset;
+  -webkit-mask-image: var(--theme-background);
+  background-size: 100% 100%;
+  opacity: 0.5;
+  background-color: var(--wave-background-color);
+}
+
+body.background-image-settings-command-palette-custom.background-image-settings-command-palette-switch:not(
+    .background-image-settings-command-palette-same-as-workplace
+  ).theme-light
+  .modal-container
+  .prompt::before {
+  background-image: var(--background-command-palette-theme-light-custom);
+}

@@ -1,0 +1,74 @@
+body.mod-windows .workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed,
+body.mod-linux .workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed {
+  max-width: 0px;
+  margin: 0;
+  padding: 0;
+  margin-top: calc(var(--header-height) * 2 + 3px);
+  padding-top: 4px;
+  padding-bottom: 12px;
+  overflow: hidden;
+  border: none;
+}
+body.mod-windows
+  .workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed::before,
+body.mod-linux
+  .workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed::before {
+  display: none;
+}
+body.mod-windows .workspace-ribbon.side-dock-ribbon.mod-left,
+body.mod-linux .workspace-ribbon.side-dock-ribbon.mod-left {
+  transition-duration: 0s;
+}
+body.mod-windows
+  .workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed:hover::after,
+body.mod-linux
+  .workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed:hover::after {
+  opacity: 0.4;
+}
+body.mod-windows
+  .workspace-tabs.mod-top-left-space
+  .workspace-tab-header-container,
+body.mod-linux
+  .workspace-tabs.mod-top-left-space
+  .workspace-tab-header-container {
+  margin-left: var(--ribbon-width);
+}
+body.mod-windows
+  .mod-left-split
+  .workspace-tabs.mod-top-left-space
+  .workspace-tab-header-container,
+body.mod-linux
+  .mod-left-split
+  .workspace-tabs.mod-top-left-space
+  .workspace-tab-header-container {
+  padding-left: 0;
+  margin-left: 0;
+}
+body.mod-windows
+  .workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed
+  .side-dock-actions,
+body.mod-windows
+  .workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed
+  .side-dock-settings,
+body.mod-linux
+  .workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed
+  .side-dock-actions,
+body.mod-linux
+  .workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed
+  .side-dock-settings {
+  padding-left: 7px;
+  opacity: 0;
+}
+body
+  .mod-root
+  .workspace-tabs:not(.mod-top-left-space)
+  .workspace-tab-header.is-active:first-of-type {
+  margin-bottom: -9px;
+  padding-bottom: 13px;
+}
+body
+  .mod-root
+  .workspace-tabs:not(.mod-top-left-space)
+  .workspace-tab-header.is-active:first-of-type::after {
+  bottom: 9px;
+}

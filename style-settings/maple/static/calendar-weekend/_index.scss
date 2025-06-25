@@ -1,0 +1,4 @@
+body #calendar-container tbody tr td:nth-last-child(2),
+body #calendar-container tbody tr td:nth-last-child(1) {
+  background-color: var(--bg);
+}

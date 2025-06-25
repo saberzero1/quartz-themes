@@ -1,0 +1,24 @@
+.background-image {
+  --workspace-background: var(--custom-image);
+  --tab-container-background: transparent;
+  --ribbon-background-collapsed: transparent !important;
+  --ribbon-background: transparent !important;
+  --border-width: 0px !important;
+}
+
+.background-image .side-dock-actions,
+.background-image .side-dock-settings {
+  margin-right: -4px;
+  margin-left: -4px;
+}
+
+.background-image .side-dock-actions {
+  margin-top: -8px;
+}
+
+.background-image .side-dock-settings {
+  margin-bottom: -11px;
+  margin-top: -4px;
+  padding-top: 505px;
+  padding-bottom: 4px;
+}

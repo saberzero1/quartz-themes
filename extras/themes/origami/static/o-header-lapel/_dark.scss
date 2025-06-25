@@ -1,0 +1,13 @@
+.o-shark-d.o-header-lapel
+  .markdown-reading-view
+  h1:not(.embedded-note-title)::before,
+.o-shark-d.o-header-lapel :nth-child(1 of .cm-header-1)::before {
+  background: #70b4f9 !important;
+}
+
+.o-shark-d.o-header-lapel
+  .markdown-reading-view
+  h2:not(.embedded-note-title)::before,
+.o-shark-d.o-header-lapel :nth-child(1 of .cm-header-2)::before {
+  background: #ffc8dd;
+}

@@ -1,0 +1,24 @@
+.markdown-preview-view .dataview-ul,
+.markdown-source-view .dataview-ul {
+  --list-spacing: 0;
+}
+.markdown-preview-view .dataview-ol li:not(:last-child):after,
+.markdown-preview-view .dataview-ul li:not(:last-child):after,
+.markdown-source-view .dataview-ol li:not(:last-child):after,
+.markdown-source-view .dataview-ul li:not(:last-child):after {
+  content: ", ";
+}
+.markdown-preview-view ul.dataview-ol > li::before,
+.markdown-preview-view ul.dataview-ul > li::before,
+.markdown-source-view ul.dataview-ol > li::before,
+.markdown-source-view ul.dataview-ul > li::before {
+  display: none;
+}
+.markdown-preview-view .dataview-ol li,
+.markdown-preview-view .dataview-ul li,
+.markdown-source-view .dataview-ol li,
+.markdown-source-view .dataview-ul li {
+  display: inline-block;
+  padding-inline-end: 0.25em;
+  margin-inline-start: 0;
+}

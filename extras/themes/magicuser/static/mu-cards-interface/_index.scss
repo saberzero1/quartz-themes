@@ -1,0 +1,75 @@
+body:not(.is-mobile).mu-cards-interface {
+  --mu-titlebar-background: var(--mu-background-color-2) !important;
+  --divider-color: transparent !important;
+  --ribbon-background: var(--mu-background-color-2) !important;
+  --mu-sidebar-top-buttons-container-bg-color: transparent;
+}
+
+body:not(.is-mobile).mu-cards-interface .workspace-tab-header::before,
+body:not(.is-mobile).mu-cards-interface .workspace-tab-header::after {
+  display: none;
+}
+
+body:not(.is-mobile).mu-cards-interface .workspace-split,
+body:not(.is-mobile).mu-cards-interface .workspace-tab-header-container {
+  background-color: var(--mu-background-color-2) !important;
+}
+
+body:not(.is-mobile).mu-cards-interface .mod-fade:not(.mod-at-end):after {
+  background: none;
+}
+
+body:not(.is-mobile).mu-cards-interface .workspace-tab-container {
+  border-radius: 8px;
+  margin-left: 0;
+  margin-right: 16px;
+  margin-top: 0;
+  border: 1px solid var(--mu-cards-border);
+}
+
+body:not(
+    .is-mobile,
+    .mu-distraction-free-mode,
+    .mu-total-concentration-mode
+  ).mu-cards-interface
+  .workspace-tab-container {
+  margin-bottom: 16px;
+}
+
+body:not(.is-mobile).mu-distraction-free-mode .workspace-tab-container {
+  border-radius: 8px;
+  margin-left: 8px;
+  margin-right: 16px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border: 1px solid var(--mu-cards-border);
+}
+
+body:not(.is-mobile).mu-total-concentration-mode .workspace-tab-container {
+  border-radius: 8px;
+  margin: 8px;
+  border: 1px solid var(--mu-cards-border);
+}
+
+body:not(.is-mobile).mu-cards-interface .titlebar-button-container,
+body:not(.is-mobile).mu-cards-interface .workspace {
+  background-color: var(--mu-background-color-2) !important;
+}
+
+body:not(.is-mobile).mu-cards-interface .workspace-tabs .workspace-leaf,
+body:not(.is-mobile).mu-cards-interface
+  .workspace-tabs
+  .workspace-leaf
+  .view-header,
+body:not(.is-mobile).mu-cards-interface
+  .workspace-tabs
+  .workspace-leaf
+  .view-content {
+  background-color: var(--mu-background-color-1);
+}
+
+body.mu-o-ui-sidebars.mu-cards-interface
+  .workspace-split:is(.mod-left-split, .mod-right-split)
+  .workspace-leaf {
+  border-radius: var(--size-4-2);
+}

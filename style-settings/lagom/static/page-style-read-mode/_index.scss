@@ -1,0 +1,15 @@
+.markdown-preview-view:not(.markdown-embed):not(.obsidian-metatable):not(
+    .markdown-embed-title
+  ) {
+  /* Style page for read mode */
+  height: fit-content;
+  min-width: auto;
+  width: auto;
+  margin: 10px 15px 0px 15px !important;
+  padding-left: 19px;
+  padding-right: 19px;
+  box-shadow: var(--mac-terminal-shadow);
+  border-top-left-radius: var(--radius-s);
+  border-top-right-radius: var(--radius-s);
+  border: 0.5px solid var(--background-modifier-border);
+}

@@ -1,0 +1,27 @@
+body {
+  .markdown-source-view.mod-cm6 {
+    .cm-line.HyperMD-codeblock-begin
+      + .cm-line.HyperMD-codeblock:not(.HyperMD-codeblock-end) {
+      counter-reset: codeLineCount 0;
+    }
+    .cm-line.HyperMD-codeblock-begin + .cm-line.HyperMD-codeblock,
+    .cm-line.HyperMD-codeblock
+      + .cm-line.HyperMD-codeblock:not(.HyperMD-codeblock-end) {
+      counter-increment: codeLineCount 1;
+      position: relative;
+      padding-left: 1em;
+    }
+    .cm-line.HyperMD-codeblock-begin + .cm-line.HyperMD-codeblock:before,
+    .cm-line.HyperMD-codeblock
+      + .cm-line.HyperMD-codeblock:not(.HyperMD-codeblock-end):before {
+      content: counter(codeLineCount, decimal) " ";
+      text-align: right;
+      width: 3em;
+      margin-right: 1em;
+      align-items: flex-end;
+      justify-content: flex-end;
+      opacity: 0.25;
+      font-size: 0.8em;
+    }
+  }
+}

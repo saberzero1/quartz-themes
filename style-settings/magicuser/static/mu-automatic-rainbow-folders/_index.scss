@@ -1,0 +1,72 @@
+body .nav-files-container.node-insert-event > div > .nav-file {
+  --mu-file-icon-color: var(--text-normal) !important;
+  --mu-folder-text-color: var(--text-normal) !important;
+  --nav-item-color: var(--text-normal) !important;
+  --nav-item-color-hover: var(--text-normal);
+  --nav-item-color-active: var(--text-normal);
+  --nav-item-color-selected: var(--text-normal);
+  --nav-item-color-highlighted: var(--text-normal);
+  --nav-item-background-selected: var(--text-normal);
+}
+body .tree-item.nav-folder:nth-child(10n + 1) {
+  background-color: #cfcfcf;
+  --mu-folder-area-border: #cfcfcf;
+  --mu-folder-area-background: #cfcfcf;
+  --mu-vault-title: #000;
+}
+body .tree-item.nav-folder:nth-child(10n + 2) {
+  background-color: hsl(var(--mu-rainbow-hue-1), 70%, 82%);
+  --mu-folder-area-border: hsl(var(--mu-rainbow-hue-1), 70%, 82%);
+  --mu-folder-area-background: hsl(var(--mu-rainbow-hue-1), 70%, 82%);
+}
+body .tree-item.nav-folder:nth-child(10n + 3) {
+  background-color: hsl(var(--mu-rainbow-hue-2), 70%, 82%);
+  --mu-folder-area-border: hsl(var(--mu-rainbow-hue-2), 70%, 82%);
+  --mu-folder-area-background: hsl(var(--mu-rainbow-hue-2), 70%, 82%);
+}
+body .tree-item.nav-folder:nth-child(10n + 4) {
+  background-color: hsl(var(--mu-rainbow-hue-3), 70%, 82%);
+  --mu-folder-area-border: hsl(var(--mu-rainbow-hue-3), 70%, 82%);
+  --mu-folder-area-background: hsl(var(--mu-rainbow-hue-3), 70%, 82%);
+}
+body .tree-item.nav-folder:nth-child(10n + 5) {
+  background-color: hsl(var(--mu-rainbow-hue-4), 70%, 82%);
+  --mu-folder-area-border: hsl(var(--mu-rainbow-hue-4), 70%, 82%);
+  --mu-folder-area-background: hsl(var(--mu-rainbow-hue-4), 70%, 82%);
+}
+body .tree-item.nav-folder:nth-child(10n + 6) {
+  background-color: hsl(var(--mu-rainbow-hue-5), 70%, 82%);
+  --mu-folder-area-border: hsl(var(--mu-rainbow-hue-5), 70%, 82%);
+  --mu-folder-area-background: hsl(var(--mu-rainbow-hue-5), 70%, 82%);
+}
+body .tree-item.nav-folder:nth-child(10n + 7) {
+  background-color: hsl(var(--mu-rainbow-hue-6), 70%, 82%);
+  --mu-folder-area-border: hsl(var(--mu-rainbow-hue-6), 70%, 82%);
+  --mu-folder-area-background: hsl(var(--mu-rainbow-hue-6), 70%, 82%);
+}
+body .tree-item.nav-folder:nth-child(10n + 8) {
+  background-color: hsl(var(--mu-rainbow-hue-7), 70%, 82%);
+  --mu-folder-area-border: hsl(var(--mu-rainbow-hue-7), 70%, 82%);
+  --mu-folder-area-background: hsl(var(--mu-rainbow-hue-7), 70%, 82%);
+}
+body .tree-item.nav-folder:nth-child(10n + 9) {
+  background-color: hsl(var(--mu-rainbow-hue-8), 70%, 86%);
+  --mu-folder-area-border: hsl(var(--mu-rainbow-hue-8), 70%, 86%);
+  --mu-folder-area-background: hsl(var(--mu-rainbow-hue-8), 70%, 86%);
+}
+body .tree-item.nav-folder:nth-child(10n + 10) {
+  background-color: hsl(var(--mu-rainbow-hue-9), 70%, 86%);
+  --mu-folder-area-border: hsl(var(--mu-rainbow-hue-9), 70%, 86%);
+  --mu-folder-area-background: hsl(var(--mu-rainbow-hue-9), 70%, 86%);
+}
+body .tree-item.nav-folder:nth-child(10n + 11) {
+  background-color: hsl(var(--mu-rainbow-hue-10), 70%, 86%);
+  --mu-folder-area-border: hsl(var(--mu-rainbow-hue-10), 70%, 86%);
+  --mu-folder-area-background: hsl(var(--mu-rainbow-hue-10), 70%, 86%);
+}
+body .view-header-breadcrumb {
+  color: var(--text-muted);
+}
+body .view-header-breadcrumb:hover {
+  color: var(--text-accent) !important;
+}

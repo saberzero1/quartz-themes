@@ -1,0 +1,6 @@
+body.modal-blur .modal-bg {
+  opacity: 1 !important;
+  background-color: hsla(var(--background-secondary-hsl), 0.5) !important;
+  backdrop-filter: blur(var(--size-4-1));
+  will-change: backdrop-filter;
+}

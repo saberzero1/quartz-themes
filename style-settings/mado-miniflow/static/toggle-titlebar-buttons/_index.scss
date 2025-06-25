@@ -1,0 +1,4 @@
+body:not(.is-mobile):is(:not(.css-settings-manager), ) .titlebar {
+  opacity: 0;
+  transition: opacity 0.15s;
+}

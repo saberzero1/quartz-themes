@@ -1,0 +1,6 @@
+.theme-dark .workspace-leaf-content[data-type="file-explorer"]::before {
+  mix-blend-mode: var(--file-explorer-decoration-blend-dark);
+}
+.theme-dark .mod-sidedock .workspace-leaf {
+  background-blend-mode: normal, var(--sidebar-texture-blend-dark);
+}

@@ -1,0 +1,6 @@
+body.tab-title-bar-round.tab-title-bar-shadow
+  .workspace-leaf.mod-active
+  .workspace-leaf-content:not([data-type="excalidraw"])
+  .view-header {
+  box-shadow: 0 0 var(--size-2-1) var(--background-modifier-box-shadow);
+}

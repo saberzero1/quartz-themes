@@ -1,0 +1,21 @@
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
+  --mu-neon-h1-color: 0, 225, 255;
+  --mu-neon-h2-color: 211, 114, 255;
+  --mu-neon-h3-color: 255, 191, 72;
+  --mu-neon-h4-color: 114, 255, 114;
+  --mu-neon-h5-color: 255, 114, 114;
+  --mu-neon-h6-color: 241, 241, 56;
+  --mu-neon-h1: rgb(var(--mu-neon-h1-color));
+  --mu-neon-h1-glow: rgba(var(--mu-neon-h1-color), 0.7);
+  --mu-neon-h2: rgb(var(--mu-neon-h2-color));
+  --mu-neon-h2-glow: rgba(var(--mu-neon-h2-color), 0.7);
+  --mu-neon-h3: rgb(var(--mu-neon-h3-color));
+  --mu-neon-h3-glow: rgba(var(--mu-neon-h3-color), 0.7);
+  --mu-neon-h4: rgb(var(--mu-neon-h4-color));
+  --mu-neon-h4-glow: rgba(var(--mu-neon-h4-color), 0.7);
+  --mu-neon-h5: rgb(var(--mu-neon-h5-color));
+  --mu-neon-h5-glow: rgba(var(--mu-neon-h5-color), 0.7);
+  --mu-neon-h6: rgb(var(--mu-neon-h6-color));
+  --mu-neon-h6-glow: rgba(var(--mu-neon-h6-color), 0.7);
+}

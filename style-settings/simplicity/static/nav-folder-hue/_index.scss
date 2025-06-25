@@ -1,0 +1,6 @@
+.nav-folder .nav-folder-collapse-indicator {
+  filter: hue-rotate(var(--hue-bold-italic));
+}
+.tree-item:not(.is-collapsed) .nav-folder-title .nav-folder-title-content {
+  filter: hue-rotate(var(--hue-bold-italic)) !important;
+}

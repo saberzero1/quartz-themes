@@ -1,0 +1,37 @@
+body.toggle-divider-lines {
+  --divider-color: transparent;
+  --tab-outline-color: transparent;
+  --tab-divider-color: transparent;
+  --bt-bubble-border-color: transparent;
+}
+
+body.toggle-divider-lines .workspace-ribbon,
+body.toggle-divider-lines .workspace-split > .workspace-leaf-resize-handle,
+body.toggle-divider-lines .view-header {
+  border: none;
+}
+
+body.toggle-divider-lines .workspace-split .workspace-leaf-content {
+  border: none !important;
+}
+
+body.toggle-divider-lines
+  .workspace-split.mod-horizontal
+  > *
+  > .workspace-leaf-resize-handle:not(:hover) {
+  border-bottom-color: transparent;
+}
+
+body.toggle-divider-lines .workspace-ribbon.mod-left:before {
+  border-bottom: var(--tab-outline-width) transparent;
+}
+
+body.toggle-divider-lines .workspace-tab-header-container {
+  border-bottom: var(--tab-outline-width) transparent;
+}
+
+body.toggle-divider-lines
+  .workspace-split.mod-root
+  .workspace-tab-header.is-active {
+  box-shadow: var(--window-shadow);
+}

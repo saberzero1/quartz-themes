@@ -1,0 +1,40 @@
+:root,
+body {
+  --h1-color: rgb(var(--cpt-red));
+  --h2-color: rgb(var(--cpt-orange));
+  --h3-color: rgb(var(--cpt-yellow));
+  --h4-color: rgb(var(--cpt-green));
+  --h5-color: rgb(var(--cpt-blue));
+  --h6-color: rgb(var(--cpt-purple));
+}
+.aura-neon-headings .cm-header-1:not(.cm-formatting),
+.aura-neon-headings .HyperMD-header-1,
+.aura-neon-headings .inline-title,
+.aura-neon-headings h1 {
+  text-shadow: 0 0 0.5em var(--h1-color);
+}
+.aura-neon-headings .cm-header-2:not(.cm-formatting),
+.aura-neon-headings .HyperMD-header-2,
+.aura-neon-headings h2 {
+  text-shadow: 0 0 0.5em var(--h2-color);
+}
+.aura-neon-headings .cm-header-3:not(.cm-formatting),
+.aura-neon-headings .HyperMD-header-3,
+.aura-neon-headings h3 {
+  text-shadow: 0 0 0.5em var(--h3-color);
+}
+.aura-neon-headings .cm-header-4:not(.cm-formatting),
+.aura-neon-headings .HyperMD-header-4,
+.aura-neon-headings h4 {
+  text-shadow: 0 0 0.5em var(--h4-color);
+}
+.aura-neon-headings .cm-header-5:not(.cm-formatting),
+.aura-neon-headings .HyperMD-header-5,
+.aura-neon-headings h5 {
+  text-shadow: 0 0 0.5em var(--h5-color);
+}
+.aura-neon-headings .cm-header-6:not(.cm-formatting),
+.aura-neon-headings .HyperMD-header-6,
+.aura-neon-headings h6 {
+  text-shadow: 0 0 0.5em var(--h6-color);
+}

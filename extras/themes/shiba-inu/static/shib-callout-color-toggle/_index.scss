@@ -1,0 +1,49 @@
+.shib-callout-color-toggle .callout[data-callout="abstract"],
+.shib-callout-color-toggle .callout[data-callout="note"],
+.shib-callout-color-toggle .callout[data-callout="seealso"],
+.shib-callout-color-toggle .callout[data-callout="summary"],
+.shib-callout-color-toggle .callout[data-callout="tldr"] {
+  --callout-color: var(--blue);
+}
+
+.shib-callout-color-toggle .callout[data-callout="hint"],
+.shib-callout-color-toggle .callout[data-callout="important"],
+.shib-callout-color-toggle .callout[data-callout="info"],
+.shib-callout-color-toggle .callout[data-callout="tip"],
+.shib-callout-color-toggle .callout[data-callout="todo"] {
+  --callout-color: var(--sea);
+}
+
+.shib-callout-color-toggle .callout[data-callout="check"],
+.shib-callout-color-toggle .callout[data-callout="done"],
+.shib-callout-color-toggle .callout[data-callout="faq"],
+.shib-callout-color-toggle .callout[data-callout="help"],
+.shib-callout-color-toggle .callout[data-callout="question"],
+.shib-callout-color-toggle .callout[data-callout="success"] {
+  --callout-color: var(--green);
+}
+
+.shib-callout-color-toggle .callout[data-callout="attention"],
+.shib-callout-color-toggle .callout[data-callout="caution"],
+.shib-callout-color-toggle .callout[data-callout="warning"] {
+  --callout-color: var(--yellow);
+}
+
+.shib-callout-color-toggle .callout[data-callout="bug"],
+.shib-callout-color-toggle .callout[data-callout="danger"],
+.shib-callout-color-toggle .callout[data-callout="error"] {
+  --callout-color: var(--red);
+}
+
+.shib-callout-color-toggle .callout[data-callout="example"] {
+  --callout-color: var(--violet);
+}
+
+.shib-callout-color-toggle .callout[data-callout="cite"],
+.shib-callout-color-toggle .callout[data-callout="quote"] {
+  --callout-color: var(--surface1);
+}
+
+.shiba-accent-style .callout[data-callout="note"] {
+  --callout-color: var(--accent);
+}

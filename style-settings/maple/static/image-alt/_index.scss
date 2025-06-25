@@ -1,0 +1,25 @@
+body .image-embed[alt] {
+  padding: var(--size-4-1) 0;
+}
+body .image-embed[alt]::after {
+  display: block;
+  text-align: center;
+}
+body
+  .image-embed[alt]:not(
+    [alt$=".png"],
+    [alt$=".jpg"],
+    [alt$=".jpeg"],
+    [alt$=".tiff"],
+    [alt$=".webp"],
+    [alt$=".bmp"]
+  )::after {
+  content: attr(alt);
+  font-size: var(--font-smaller);
+  color: var(--text-faint);
+}
+body .view-content img:not(.emoji) {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}

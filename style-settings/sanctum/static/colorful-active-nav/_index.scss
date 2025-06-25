@@ -1,0 +1,9 @@
+.horizontal-tab-nav-item.is-active,
+.vertical-tab-nav-item.is-active {
+  background-color: var(--background-selected);
+  color: var(--text-normal);
+}
+.horizontal-tab-nav-item.is-active:hover,
+.vertical-tab-nav-item.is-active:hover {
+  background-color: var(--background-selected-hover);
+}

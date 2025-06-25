@@ -1,0 +1,44 @@
+.shib-floating-header .nav-folder.mod-root > .nav-folder-title {
+  background-color: var(--background-secondary);
+  position: fixed;
+  z-index: 1;
+  margin-left: calc(-0.5 * var(--size-4-3));
+  width: calc(100% - 1.22 * var(--size-4-3));
+  border: 1px solid rgba(100, 100, 100, 0.3);
+  box-shadow:
+    1px -1px 0 0 rgba(100, 100, 100, 0.1) inset,
+    0 2px 4px 0 rgba(100, 100, 100, 0.1);
+  border-radius: var(--radius-s);
+}
+
+.shib-floating-header .nav-folder.mod-root > .nav-folder-title:hover {
+  background-color: var(--background-secondary);
+  width: calc(100% - 1.2 * var(--size-4-3));
+  margin-left: calc(-0.5 * var(--size-4-3));
+}
+
+.shib-floating-header .nav-folder.mod-root > .nav-folder-children {
+  padding-top: 32px;
+}
+
+.shib-custom-vault-folder-toggle .nav-folder.mod-root > .nav-folder-title {
+  padding-top: 6px;
+}
+
+.shib-custom-vault-folder-toggle .nav-folder.mod-root > .nav-folder-children {
+  padding-top: 45px;
+}
+
+.shib-custom-vault-shiba-toggle .nav-folder.mod-root > .nav-folder-title {
+  padding-top: 10px;
+}
+
+.shib-custom-vault-shiba-toggle .nav-folder.mod-root > .nav-folder-children {
+  padding-top: 50px;
+}
+
+.shib-workspace-background-image-toggle.shib-floating-header
+  .nav-folder.mod-root
+  > .nav-folder-title {
+  background-color: var(--tab-inactive-color);
+}

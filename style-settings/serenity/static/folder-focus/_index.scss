@@ -1,0 +1,22 @@
+.nav-folder .nav-folder {
+  opacity: var(--inactive-pane-opacity);
+  /* set all folders and files to low opacity */
+  border: none;
+}
+.nav-folder .nav-folder:has(.is-active) {
+  padding: 8px;
+  margin-left: -17px !important;
+  /* decrease the 'nested' appearance of folder that has the active note*/
+}
+.nav-folder .nav-folder:has(.is-active) .nav-folder-children {
+  border-left: 1.5px solid var(--color-accent-2) !important;
+}
+.nav-folder .nav-folder:has(.is-active) > .nav-folder-title {
+  font-size: var(--font-ui-medium) !important;
+}
+.nav-folder .nav-folder {
+  transition: all 0.5s;
+  transition-delay: all 2s;
+  animation-delay: all 2s;
+  animation-duration: all 0.27s;
+}

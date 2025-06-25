@@ -1,0 +1,310 @@
+body:is(:not(.css-settings-manager), .explorer-icon)
+  .workspace-leaf-content:is([data-type="file-explorer"])
+  .nav-files-container
+  svg.right-triangle {
+  -webkit-mask-image: url('    data:image/svg+xml,utf8,    <svgxmlns="http://www.w3.org/2000/svg"viewBox="0 0 42 42"><pathd="M24.833 12.5H40.25a3.75 3.75 0 0 1 3.745 3.55l.005.2v19a3.75 3.75 0 0 1-3.55 3.745l-.2.005H7.75a3.75 3.75 0 0 1-3.745-3.55L4 35.25V18.999L17.804 19l.226-.007a3.75 3.75 0 0 0 2.547-1.219l.147-.172 4.109-5.102zM17.061 9c.832 0 1.639.277 2.294.784l.175.144 2.444 2.138-3.197 3.968-.094.105c-.2.197-.46.322-.739.353l-.14.008L4 16.499V12.75a3.75 3.75 0 0 1 3.55-3.745L7.75 9h9.31z"fill="currentColor"/></svg> ');
+}
+
+:is(
+  :is(
+      body.titlebar-button-style .mod-maximize,
+      body.titlebar-button-style.is-maximized .mod-maximize,
+      body:is(:not(.css-settings-manager), .explorer-icon)
+        .workspace-leaf-content:is([data-type="file-explorer"])
+        .nav-files-container
+    )
+    svg,
+  svg:is(
+      .excalidraw-icon,
+      .spreadsheet,
+      [class*="lucide-folder"],
+      .lucide-sticky-note,
+      .lucide-image,
+      .lucide-file,
+      .lucide-copy,
+      .database-folder-icon
+    )
+) {
+  background-color: currentColor;
+  -webkit-mask-size: 100% 100%;
+}
+
+:is(
+    :is(
+        body.titlebar-button-style .mod-maximize,
+        body.titlebar-button-style.is-maximized .mod-maximize,
+        body:is(:not(.css-settings-manager), .explorer-icon)
+          .workspace-leaf-content:is([data-type="file-explorer"])
+          .nav-files-container
+      )
+      svg,
+    svg:is(
+        .excalidraw-icon,
+        .spreadsheet,
+        [class*="lucide-folder"],
+        .lucide-sticky-note,
+        .lucide-image,
+        .lucide-file,
+        .lucide-copy,
+        .database-folder-icon
+      )
+  )
+  path {
+  display: none;
+}
+
+:where(
+    body:is(:not(.css-settings-manager), .explorer-icon) .nav-file-title,
+    body.link-icon
+      :is(
+        :is(.markdown-source-view, .markdown-preview-view)
+          a.internal-link:not(.is-unresolved),
+        .cm-hmd-internal-link .cm-underline
+      )
+  )::before {
+  -webkit-mask-image: url('    data:image/svg+xml,utf8,    <svgxmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"><gfill="none"stroke="currentColor"stroke-linecap="round"stroke-linejoin="round"stroke-width="2"><pathd="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><pathd="M14 2v6h6m-4 5H8m8 4H8m2-8H8"/></g></svg> ');
+}
+
+body:is(:not(.css-settings-manager), .explorer-icon)
+  .nav-file-title:is(.is-unsupported)::before {
+  -webkit-mask-image: url('    data:image/svg+xml,utf8,    <svgxmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"><gfill="none"stroke="currentColor"stroke-linecap="round"stroke-linejoin="round"stroke-width="2"><pathd="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><pathd="M10 10.3c.2-.4.5-.8.9-1a2.1 2.1 0 0 1 2.6.4c.3.4.5.8.5 1.3c0 1.3-2 2-2 2m0 4h.01"/></g></svg> ');
+}
+
+body:is(:not(.css-settings-manager), .explorer-icon)
+  .nav-file-title:is(
+    [data-path$="png"],
+    [data-path$="svg"],
+    [data-path$="jpeg"],
+    [data-path$="jpg"],
+    [data-path$="bmp"],
+    [data-path$="gif"],
+    [data-path$="webp"],
+    [data-path$="tiff"]
+  )::before {
+  -webkit-mask-image: url('    data:image/svg+xml,utf8,    <svgxmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"><gfill="none"stroke="currentColor"stroke-linecap="round"stroke-linejoin="round"stroke-width="2"><pathd="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><pathd="M14 2v6h6"/><circlecx="10"cy="13"r="2"/><pathd="m20 17l-1.09-1.09a2 2 0 0 0-2.82 0L10 22"/></g></svg> ');
+}
+
+body:is(:not(.css-settings-manager), .explorer-icon)
+  .nav-file-title:is([data-path$="pdf"])::before {
+  -webkit-mask-image: url('    data:image/svg+xml,utf8,    <svgxmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"><gfill="none"stroke="currentColor"stroke-linecap="round"stroke-linejoin="round"stroke-width="2"><pathd="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><pathd="M14 2v6h6m-4"/></g><pathd="M16.714 14.869c-.6-.642-2.31-.466-3.165-.348-.844-.562-1.41-1.34-1.808-2.48.192-.862.497-2.174.266-3-.207-1.403-1.857-1.264-2.093-.316-.217.862-.02 2.062.344 3.594-.492 1.28-1.224 3-1.74 3.986-.983.552-2.31 1.403-2.506 2.474-.162.847 1.278 2.957 3.74-1.67 1.1-.397 2.3-.885 3.36-1.078.929.547 2.015.912 2.742.912 1.254 0 1.376-1.512.86-2.074zM6.98 19.037c.251-.734 1.204-1.58 1.494-1.875-.933 1.623-1.494 1.912-1.494 1.875zm4.01-10.21c.363 0 .33 1.72.087 2.185-.215-.744-.21-2.185-.088-2.185zM9.79 16.144c.477-.905.885-1.981 1.214-2.93.408.809.929 1.457 1.479 1.901-1.022.23-1.911.703-2.693 1.03zm6.467-.268q-.246.322-1.834-.417c1.726-.14 2.01.29 1.834.417z"fill="currentColor"/></svg> ');
+}
+
+body:is(:not(.css-settings-manager), .explorer-icon)
+  .nav-file-title:is(
+    [data-path$="mp3"],
+    [data-path$="flac"],
+    [data-path$="wav"],
+    [data-path$="ape"],
+    [data-path$="alac"],
+    [data-path$="aac"]
+  )::before {
+  -webkit-mask-image: url('    data:image/svg+xml,utf8,    <svgxmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"><gfill="none"stroke="currentColor"stroke-linecap="round"stroke-linejoin="round"stroke-width="2"><pathd="M17.5 22h.5c.5 0 1-.2 1.4-.6c.4-.4.6-.9.6-1.4V7.5L14.5 2H6c-.5 0-1 .2-1.4.6C4.2 3 4 3.5 4 4v3"/><pathd="M14 2v6h6M10 20v-1a2 2 0 1 1 4 0v1a2 2 0 1 1-4 0Zm-4 0v-1a2 2 0 1 0-4 0v1a2 2 0 1 0 4 0Z"/><pathd="M2 19v-3a6 6 0 0 1 12 0v3"/></g></svg> ');
+}
+
+body:is(:not(.css-settings-manager), .explorer-icon)
+  .nav-file-title:is(
+    [data-path$="mkv"],
+    [data-path$="mp4"],
+    [data-path$="flv"],
+    [data-path$="webm"],
+    [data-path$="avi"]
+  )::before {
+  -webkit-mask-image: url('    data:image/svg+xml,utf8,    <svgxmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"><gfill="none"stroke="currentColor"stroke-linecap="round"stroke-linejoin="round"stroke-width="2"><pathd="M4 8V4a2 2 0 0 1 2-2h8.5L20 7.5V20a2 2 0 0 1-2 2H4"/><pathd="M14 2v6h6m-10 7.5l4 2.5v-6l-4 2.5"/><rectwidth="8"height="6"x="2"y="12"rx="1"/></g></svg> ');
+}
+
+body:is(:not(.css-settings-manager), .explorer-icon)
+  .nav-file-title:is(
+    [data-path$="ttf"],
+    [data-path$="otf"],
+    [data-path$="ttc"],
+    [data-path$="otc"]
+  )::before {
+  -webkit-mask-image: url('    data:image/svg+xml,utf8,    <svgxmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"><gfill="none"stroke="currentColor"stroke-linecap="round"stroke-linejoin="round"stroke-width="2"><pathd="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><pathd="M14 2v6h6M9 13v-1h6v1m-4 5h2m-1-6v6"/></g></svg> ');
+}
+
+body:is(:not(.css-settings-manager), .explorer-icon)
+  .nav-file-title:is(
+    [data-path$="zip"],
+    [data-path$="7z"],
+    [data-path$="tar"]
+  )::before {
+  -webkit-mask-image: url('    data:image/svg+xml,utf8,    <svgxmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"><gfill="none"stroke="currentColor"stroke-linecap="round"stroke-linejoin="round"stroke-width="2"><pathd="M4 22V4c0-.5.2-1 .6-1.4C5 2.2 5.5 2 6 2h8.5L20 7.5V20c0 .5-.2 1-.6 1.4c-.4.4-.9.6-1.4.6h-2"/><pathd="M14 2v6h6"/><circlecx="10"cy="20"r="2"/><pathd="M10 7V6m0 6v-1m0 7v-2"/></g></svg> ');
+}
+
+body:is(:not(.css-settings-manager), .explorer-icon)
+  .nav-file-title:is(
+    [data-path$="js"],
+    [data-path$="css"],
+    [data-path$="html"],
+    [data-path$="py"],
+    [data-path$="c"],
+    [data-path$="cpp"],
+    [data-path$="java"],
+    [data-path$="rs"],
+    [data-path$="ts"],
+    [data-path$="tsx"],
+    [data-path$="jsx"],
+    [data-path$="json"],
+    [data-path$="bash"],
+    [data-path$="sh"]
+  )::before {
+  -webkit-mask-image: url('    data:image/svg+xml,utf8,    <svgxmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"><gfill="none"stroke="currentColor"stroke-linecap="round"stroke-linejoin="round"stroke-width="2"><pathd="M4 22h14a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v4"/><pathd="M14 2v6h6M9 18l3-3l-3-3m-4 0l-3 3l3 3"/></g></svg> ');
+}
+
+body:is(:not(.css-settings-manager), .explorer-icon)
+  .nav-file-title:is([data-path$="canvas"])::before {
+  -webkit-mask-image: url('    data:image/svg+xml,utf8,    <svgxmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"class="lucide-layout-dashboard svg-icon"><rectx="3"y="3"rx="1.8"width="7"height="9"></rect><rectx="14"y="3"rx="1.8"width="7"height="5"></rect><rectx="14"y="12"rx="1.8"width="7"height="9"></rect><rectx="3"y="16"rx="1.8"width="7"height="5"></rect></svg> ');
+}
+
+body:is(:not(.css-settings-manager), .explorer-icon)
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-files-container
+  .nav-folder-title {
+  cursor: pointer;
+}
+
+body:is(:not(.css-settings-manager), .explorer-icon)
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-files-container
+  .nav-folder-title:hover {
+  background-color: var(--folder-hover-color);
+}
+
+body:is(:not(.css-settings-manager), .explorer-icon)
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-files-container
+  .nav-folder-title-content {
+  padding-left: var(--size-2-1);
+}
+
+body:is(:not(.css-settings-manager), .explorer-icon)
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-files-container
+  .nav-folder
+  .nav-folder-children {
+  transition: var(--animation);
+}
+
+body:is(:not(.css-settings-manager), .explorer-icon)
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-files-container
+  .nav-folder
+  .nav-folder-children:hover {
+  border-color: var(--accent-inactive);
+}
+
+body:is(:not(.css-settings-manager), .explorer-icon)
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-files-container
+  .nav-folder
+  .collapse-icon
+  svg.svg-icon {
+  line-height: var(--line-height-tight);
+  width: var(--size-4-4);
+  height: var(--size-4-4);
+  background-color: var(--folder-color);
+  display: inline-block;
+  translate: 0 calc(-1 * var(--size-2-1));
+}
+
+body:is(:not(.css-settings-manager), .explorer-icon)
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-files-container
+  .nav-folder.is-collapsed
+  .collapse-icon
+  svg.svg-icon {
+  transform: none;
+  filter: brightness(var(--folder-inactive));
+  transition: var(--animation);
+}
+
+body:is(:not(.css-settings-manager), .explorer-icon)
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-files-container
+  .nav-file-title-content {
+  padding-left: var(--size-2-1);
+}
+
+body:is(:not(.css-settings-manager), .explorer-icon)
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-files-container
+  .nav-file-title:not([data-path$="excalidraw.md"]):not(
+    [data-path$="excalidraw"]
+  )::before {
+  content: "";
+  position: absolute;
+  width: var(--size-4-4);
+  height: var(--size-4-4);
+  opacity: 0.8;
+  flex-shrink: 0;
+  translate: calc(2px - var(--size-4-5)) 25%;
+  background-color: var(--accent-active);
+}
+
+body:is(:not(.css-settings-manager), .explorer-icon)
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-files-container
+  .nav-file-title:is([data-path$="excalidraw.md"], [data-path$="excalidraw"])
+  .nav-file-tag {
+  position: absolute;
+  translate: calc(-1 * var(--size-4-5));
+  top: var(--size-2-3);
+}
+
+body:is(:not(.css-settings-manager), .explorer-icon)
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-files-container
+  .nav-file-title.is-active:not(.is-selected) {
+  color: var(--text-on-accent);
+}
+
+body:is(:not(.css-settings-manager), .explorer-icon)
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-files-container
+  .nav-file-title.is-active:not(.is-selected):first-child::before {
+  background-color: var(--text-on-accent);
+}
+
+body:is(:not(.css-settings-manager), .explorer-icon)
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-files-container
+  .nav-file-title.is-active:not(.is-selected)
+  .nav-file-title-content {
+  color: var(--text-on-accent);
+}
+
+body:is(:not(.css-settings-manager), .explorer-icon)
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-files-container
+  .nav-file-tag {
+  font-size: var(--size-4-2);
+  margin-left: 0;
+  margin-right: var(--size-4-2);
+  line-height: 2;
+}
+
+body:is(:not(.css-settings-manager), .explorer-icon)
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-files-container
+  .nav-file-title
+  .nav-file-tag {
+  background-color: var(--accent-active);
+  color: var(--text-on-accent);
+}
+
+body:is(:not(.css-settings-manager), .explorer-icon)
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-files-container
+  .nav-file-title.is-active
+  .nav-file-tag {
+  background-color: hsl(var(--background-secondary-hsl), 0.9);
+  color: var(--nav-item-background-active);
+}
+
+body:is(:not(.css-settings-manager), .explorer-icon)
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-files-container
+  .nav-file-title-content
+  + .nav-file-tag {
+  margin-left: var(--size-2-3);
+}
