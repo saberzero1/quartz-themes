@@ -1,0 +1,47 @@
+[data-callout="quote"].callout.callout {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 0;
+}
+[data-callout="quote"].callout.callout .callout-icon {
+  display: none;
+}
+[data-callout="quote"]::after {
+  font-family: "Times New Roman", "Playfair Display";
+  font-size: 3em;
+  text-align: center;
+  line-height: 1;
+  content: "“";
+  font-weight: 900;
+}
+[data-callout="quote"] .callout-content.callout-content {
+  padding: 0;
+  font-size: 1.35em;
+  text-align: center;
+  font-weight: 300;
+  font-variant-ligatures: discretionary-ligatures;
+  font-feature-settings: "liga";
+}
+[data-callout="quote"] .callout-title.callout-title {
+  padding-top: 0;
+  justify-content: center;
+  color: var(--text-normal);
+}
+[data-callout="quote"] .callout-title.callout-title .callout-title-inner {
+  font-weight: 400;
+}
+[data-callout="quote"] .callout-title.callout-title::before {
+  content: "―";
+}
+[data-callout="quote"].is-collapsible .callout-title:hover {
+  cursor: pointer;
+}
+[data-callout="quote"] .callout-fold {
+  margin-top: 0;
+  transform: scale(0.75);
+}
+[data-callout="quote"] .callout-fold svg {
+  stroke: var(--text-accent);
+}

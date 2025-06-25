@@ -1,0 +1,112 @@
+body.hide-left-ribbon-retention-drawer
+  .file-tree-plugin-view
+  .oz-nav-action-button {
+  margin-left: 20px !important;
+}
+body.view-button-front.hide-left-ribbon-retention-drawer.color-scheme-options-simplicity-topaz
+  .workspace-leaf-content
+  .view-header
+  .view-header-nav-buttons {
+  margin-left: 5px;
+}
+body.hide-left-ribbon-retention-drawer.view-button-front
+  .workspace-leaf-content[data-mode="source"]
+  .view-content
+  .markdown-source-view:not(.is-live-preview)::before {
+  left: 38px;
+}
+body.hide-left-ribbon-retention-drawer.is-hidden-frameless
+  .titlebar-button.mod-logo {
+  display: none;
+}
+body.hide-left-ribbon-retention-drawer.is-hidden-frameless
+  .workspace-ribbon.mod-left
+  .sidebar-toggle-button {
+  padding-top: var(--size-4-2);
+}
+body.hide-left-ribbon-retention-drawer
+  .workspace-ribbon.side-dock-ribbon.mod-left
+  .sidebar-toggle-button.mod-left {
+  background: unset;
+}
+body.mod-windows.is-hidden-frameless .titlebar-button.mod-logo {
+  display: block;
+  margin-left: 5px;
+  margin-top: 6px;
+}
+body.mod-windows.is-hidden-frameless:not(.show-ribbon)
+  .titlebar-button.mod-logo {
+  display: none;
+}
+body.hide-left-ribbon-retention-drawer .view-header {
+  padding-left: 24px;
+}
+body.hide-left-ribbon-retention-drawer.view-button-front
+  .workspace-leaf-content:is([data-mode="preview"], [data-mode="source"])
+  .view-header
+  .view-actions
+  > :is(
+    [aria-label^="该面板处于编辑视图中"],
+    [aria-label^="Current view: editing"]
+  ) {
+  left: 30px;
+}
+body.hide-left-ribbon-retention-drawer.view-button-front
+  .workspace-leaf-content[data-mode="preview"]
+  .view-header
+  .view-actions
+  > :is(
+    [aria-label^="该面板处于阅读视图中"],
+    [aria-label^="Current view: reading"]
+  ) {
+  left: 30px;
+}
+body.hide-left-ribbon.is-hidden-frameless .titlebar-button.mod-logo {
+  display: none;
+}
+body.mod-windows.is-hidden-frameless
+  .workspace-ribbon.side-dock-ribbon.mod-left {
+  padding-top: 26px;
+}
+body.mod-windows.is-hidden-frameless
+  .workspace-ribbon.mod-left
+  .sidebar-toggle-button {
+  padding-top: 56px;
+}
+body.mod-windows.is-hidden-frameless
+  .workspace-ribbon.mod-left.is-collapsed
+  .sidebar-toggle-button {
+  padding-top: 54px;
+}
+body.mod-windows.is-hidden-frameless
+  .workspace-ribbon.mod-left
+  .side-dock-actions {
+  padding-top: 12px;
+}
+body.is-hidden-frameless .titlebar-button-container.mod-right:not(:hover) {
+  transform: translateY(calc(-1 * var(--header-height) + 6px));
+  transition: all 0.6s linear;
+}
+body.is-hidden-frameless:not(.is-fullscreen)
+  .workspace-tabs.mod-top-right-space
+  .workspace-tab-header-container:after {
+  top: -20px;
+}
+body.is-hidden-frameless:not(.is-fullscreen)
+  .workspace-tabs.mod-top-right-space
+  .workspace-tab-header-container {
+  padding-right: unset;
+}
+body.is-hidden-frameless
+  .titlebar-inner:hover
+  .titlebar-button-container.mod-right {
+  transition: all 0.1s linear;
+  transform: translateY(-15px);
+  background: var(--titlebar-background-focused);
+  opacity: 0.8;
+}
+body.is-hidden-frameless.mod-linux .titlebar-button,
+body.is-hidden-frameless.mod-windows .titlebar-button {
+  padding-bottom: 6px;
+  align-items: flex-end;
+}

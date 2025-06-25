@@ -1,0 +1,30 @@
+.tokei-plugin {
+  .time {
+    padding: 20px;
+    font-size: 3.2em;
+    text-shadow: none;
+    color: var(--pine);
+  }
+  .date {
+    font-size: 1.5em;
+    color: var(--rose);
+  }
+  .timezone-container {
+    padding: 15px;
+    gap: 15px;
+  }
+  .timezone-pair {
+    flex-direction: row;
+    border: 2px dotted var(--highlight-high);
+    background-color: transparent;
+    border-radius: 5px;
+  }
+  .timezone-name {
+    color: var(--subtle);
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+  }
+  .timezone-time {
+    color: var(--text-normal);
+  }
+}

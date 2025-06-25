@@ -315,7 +315,7 @@ manifestCollection.forEach((manifest) => {
     const obsidianCSS = fs.readFileSync("./converted_app.css", "utf8");
 
     let result = cleanCSS(obsidianCSS, splitCombinedRules(cssString));
-    const staticResult = result;
+    let staticResult = generateStatic(result);
 
     // Theme variations (for style settings)
     const styleSettings = extractStyleSettings(cssString);
@@ -329,6 +329,7 @@ manifestCollection.forEach((manifest) => {
         const styleSets = styleSettingsSet["settings"];
         styleSets.forEach((style) => {
           let styleRulesCSS = ["", "", ""];
+          let staticStyleRulesCSS = ["", "", ""];
           const ignoreStyleTypes = ["heading", "info-text"];
 
           if (ignoreStyleTypes.includes(style["type"])) {
@@ -354,11 +355,23 @@ manifestCollection.forEach((manifest) => {
                 ? `'${style["default"]}'`
                 : style["default"],
             );
+            staticResult = replaceVariableValue(
+              staticResult,
+              style["id"],
+              (style["quotes"] ?? false)
+                ? `'${style["default"]}'`
+                : style["default"],
+            );
           } else if (style["type"] === "variable-number") {
             // Use the default number
             // Replace all lines with variable in the CSS string
             result = replaceVariableValue(
               result,
+              style["id"],
+              style["default"] + (style["format"] ?? ""),
+            );
+            staticResult = replaceVariableValue(
+              staticResult,
               style["id"],
               style["default"] + (style["format"] ?? ""),
             );
@@ -370,6 +383,11 @@ manifestCollection.forEach((manifest) => {
               style["id"],
               style["default"] + (style["format"] ?? ""),
             );
+            staticResult = replaceVariableValue(
+              staticResult,
+              style["id"],
+              style["default"] + (style["format"] ?? ""),
+            );
           } else if (style["type"] === "variable-select") {
             // Use the default select value
             // Replace all lines with variable in the CSS string
@@ -378,11 +396,21 @@ manifestCollection.forEach((manifest) => {
               style["id"],
               style["default"] + (style["format"] ?? ""),
             );
+            staticResult = replaceVariableValue(
+              staticResult,
+              style["id"],
+              style["default"] + (style["format"] ?? ""),
+            );
           } else if (style["type"] === "variable-color") {
             // Use the default color
             // Replace all lines with variable in the CSS string
             result = replaceVariableValue(
               result,
+              style["id"],
+              style["default"] + (style["format"] ?? ""),
+            );
+            staticResult = replaceVariableValue(
+              staticResult,
               style["id"],
               style["default"] + (style["format"] ?? ""),
             );
@@ -395,10 +423,22 @@ manifestCollection.forEach((manifest) => {
               style["id"],
               `light-dark(${style["default-light"]}, ${style["default-dark"]})`,
             );
+            staticResult = replaceVariableValue(
+              staticResult,
+              style["id"],
+              `light-dark(${style["default-light"]}, ${style["default-dark"]})`,
+            );
           } else if (style["type"] === "class-toggle") {
             // Extract the class toggle CSS
             styleRulesCSS = extractClassToggleCss(cssString, style["id"]);
             writeStyleSettings(styleRulesCSS, getTheme(manifest), style["id"]);
+            staticStyleRulesCSS = extractClassToggleCss(cssString, style["id"]);
+            writeStyleSettings(
+              staticStyleRulesCSS,
+              getTheme(manifest),
+              style["id"],
+              "static",
+            );
           } else if (style["type"] === "class-select") {
             // Extract the class for every option in the select
             const classSelectOptions = style["options"];
@@ -411,6 +451,17 @@ manifestCollection.forEach((manifest) => {
                   getTheme(manifest),
                   style["id"],
                   className,
+                );
+                staticStyleRulesCSS = extractClassToggleCss(
+                  cssString,
+                  className,
+                );
+                writeStyleSettings(
+                  staticStyleRulesCSS,
+                  getTheme(manifest),
+                  style["id"],
+                  className,
+                  "static",
                 );
               } else {
                 console.warn(

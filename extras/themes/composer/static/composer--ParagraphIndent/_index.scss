@@ -1,0 +1,49 @@
+.composer--ParagraphIndent {
+  --paragraph-indent: calc(var(--font-text-size) * 2);
+}
+
+.composer--ParagraphIndent
+  .markdown-reading-view
+  :is([class="cm-line"], [class="cm-active cm-line"], p),
+.composer--ParagraphIndent
+  .is-live-preview
+  :is([class="cm-line"], [class="cm-active cm-line"], p) {
+  text-indent: var(--paragraph-indent);
+}
+
+.composer--ParagraphIndent .markdown-reading-view p > br,
+.composer--ParagraphIndent .is-live-preview p > br {
+  content: "";
+  white-space: pre;
+}
+
+.composer--ParagraphIndent .markdown-reading-view p > br::after,
+.composer--ParagraphIndent .is-live-preview p > br::after {
+  content: "\000A\200B";
+  margin-inline-end: var(--paragraph-indent);
+}
+
+.composer--ParagraphIndent .markdown-reading-view .cm-preview-code-block p,
+.composer--ParagraphIndent .is-live-preview .cm-preview-code-block p {
+  text-indent: initial;
+}
+
+.composer--ParagraphIndent
+  .table-cell-wrapper
+  .markdown-reading-view
+  :is([class="cm-line"], [class="cm-active cm-line"], p),
+.composer--ParagraphIndent
+  .table-cell-wrapper
+  .is-live-preview
+  :is([class="cm-line"], [class="cm-active cm-line"], p) {
+  text-indent: initial;
+}
+
+body.composer--ParagraphIndent div.markdown-reading-view div.mermaid {
+  --paragraph-indent: 0px;
+}
+
+body.composer--ParagraphIndent .components--ComponentEl {
+  --paragraph-indent: 0px;
+  text-indent: initial;
+}

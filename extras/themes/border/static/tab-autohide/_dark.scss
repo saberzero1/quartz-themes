@@ -1,0 +1,60 @@
+body.theme-light.mod-left-split-background-transparent-light.card-layout-open-light.tab-autohide
+  .mod-left-split
+  .workspace-tabs:not(.mod-top)
+  .workspace-tab-container
+  > .workspace-leaf,
+body.mod-left-split-background-transparent-dark.card-layout-open-dark.tab-autohide
+  .mod-left-split
+  .workspace-tabs:not(.mod-top)
+  .workspace-tab-container
+  > .workspace-leaf,
+body.theme-light.mod-right-split-background-transparent-light.card-layout-open-light.tab-autohide
+  .mod-right-split
+  .workspace-tabs:not(.mod-top)
+  .workspace-tab-container
+  > .workspace-leaf,
+body.mod-right-split-background-transparent-dark.card-layout-open-dark.tab-autohide
+  .mod-right-split
+  .workspace-tabs:not(.mod-top)
+  .workspace-tab-container
+  > .workspace-leaf,
+body.theme-light.mod-root-split-background-transparent-light.card-layout-open-light.tab-autohide
+  .mod-root
+  .workspace-tabs:not(.mod-top)
+  .workspace-tab-container
+  > .workspace-leaf,
+body.mod-root-split-background-transparent-dark.card-layout-open-dark.tab-autohide
+  .mod-root
+  .workspace-tabs:not(.mod-top)
+  .workspace-tab-container
+  > .workspace-leaf {
+  box-shadow: inset 0px 1px 0px var(--divider-color);
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+}
+
+body:not(.is-mobile).tab-autohide:not(.card-layout-open-light).theme-light
+  .workspace-tabs:not(.mod-top)
+  .workspace-tab-container
+  > .workspace-leaf,
+body:not(.is-mobile).tab-autohide:not(.card-layout-open-dark).theme-dark
+  .workspace-tabs:not(.mod-top)
+  .workspace-tab-container
+  > .workspace-leaf {
+  box-shadow: inset 0px 1px 0px transparent;
+  transition: box-shadow var(--anim-out);
+}
+
+body:not(.is-mobile).tab-autohide:not(.card-layout-open-light).theme-light
+  :has(.workspace-tab-header-container:hover)
+  .workspace-tabs:not(.mod-top):hover
+  .workspace-tab-container
+  > .workspace-leaf,
+body:not(.is-mobile).tab-autohide:not(.card-layout-open-dark).theme-dark
+  :has(.workspace-tab-header-container:hover)
+  .workspace-tabs:not(.mod-top):hover
+  .workspace-tab-container
+  > .workspace-leaf {
+  box-shadow: inset 0px 1px 0px var(--workspace-divider-color);
+  transition: box-shadow var(--anim-in);
+}

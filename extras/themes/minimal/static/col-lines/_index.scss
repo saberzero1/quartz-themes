@@ -1,0 +1,10 @@
+.col-lines {
+  --bases-table-column-border-width: var(--table-border-width);
+}
+
+.col-lines .table-view-table thead > tr > th:not(:last-child),
+.col-lines .table-view-table > tbody > tr > td:not(:last-child),
+.col-lines table:not(.calendar) tbody > tr > td:not(:last-child) {
+  border-right: var(--table-border-width) solid
+    var(--background-modifier-border);
+}

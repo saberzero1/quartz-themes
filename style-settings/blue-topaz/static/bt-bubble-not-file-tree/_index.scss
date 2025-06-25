@@ -1,0 +1,10 @@
+body.bt-bubble-layout
+  .workspace-leaf-content:is(
+    [data-type="file-explorer"],
+    [data-type="mk-file-view"]
+  ) {
+  border-radius: var(--bt-bubble-radius, var(--radius-l));
+  background-color: var(--background-primary);
+  border: 1px solid var(--bt-bubble-border-color);
+  margin-bottom: var(--bt-bubble-layout-padding);
+}

@@ -1,0 +1,33 @@
+body.theme-setting-overrideAdvancedTables {
+  .workspace-leaf-content[data-type="advanced-tables-toolbar"] .view-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  [data-type="advanced-tables-toolbar"]
+    .nav-buttons-container
+    .nav-action-button
+    > svg {
+    fill: currentColor;
+    --text-muted: currentColor; /* For some reason the CSV button specifies text-muted as stroke color */
+  }
+  .advanced-tables-buttons > div > .title {
+    font-weight: var(--font-semibold);
+    font-size: var(--font-ui-small);
+    color: var(--text-normal);
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding-top: 0.5em;
+  }
+  .advanced-tables-row-label {
+    font-weight: var(--font-semibold);
+    font-size: var(--font-ui-small);
+    color: var(--text-normal);
+  }
+  [data-type="advanced-tables-toolbar"]
+    .nav-buttons-container
+    .nav-action-button {
+    margin-right: 0.25em;
+  }
+}

@@ -1,0 +1,83 @@
+body.theme-setting-overrideStyleSettings {
+  /* Settings modal */
+  .style-settings-heading {
+    border-bottom: none;
+    margin-top: 1.5em;
+  }
+  .style-settings-heading[data-level="0"] {
+    margin-bottom: 0;
+  }
+  .setting-item + div > .style-settings-heading[data-level="0"],
+  .setting-item + .style-settings-heading[data-level="0"] {
+    margin-top: 1.5em;
+  }
+  /* Import/export modals */
+  .modal-style-settings {
+    /* Show shadow below buttons */
+    overflow: visible;
+
+    & .modal-content {
+      padding: 1em 1em 1em 1em;
+      margin-bottom: 0;
+    }
+    & .setting-item {
+      margin-bottom: 1em;
+      align-items: baseline;
+    }
+    & .setting-item:first-child {
+      margin-left: 1.5em;
+    }
+    & textarea {
+      margin-top: var(--input-border-width);
+      margin-bottom: var(--input-border-width);
+    }
+  }
+  .setting-item-heading {
+    padding: 0 0.5em;
+
+    .style-settings-collapse-indicator,
+    .setting-item-name,
+    .extra-setting-button {
+      color: inherit;
+    }
+  }
+  .style-settings-collapse-indicator > svg {
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-left: 0.5rem;
+  }
+  .style-settings-heading[data-level="0"] + .style-settings-container,
+  .style-settings-heading[data-level="1"] + .style-settings-container,
+  .style-settings-heading[data-level="2"] + .style-settings-container,
+  .style-settings-heading[data-level="3"] + .style-settings-container,
+  .style-settings-heading[data-level="4"] + .style-settings-container,
+  .style-settings-heading[data-level="5"] + .style-settings-container,
+  .style-settings-heading[data-level="6"] + .style-settings-container {
+    padding-left: calc(0.5em + 10px + 0.5em);
+  }
+  .style-settings-heading[data-level="0"]
+    + .style-settings-container
+    .style-settings-collapse-indicator {
+    margin-left: 0;
+  }
+  .setting-item.setting-item-heading.style-settings-heading[data-id="kakano-style"]
+    + .style-settings-container {
+    .setting-item.setting-item-heading.style-settings-heading
+      .style-settings-collapse-indicator:after {
+      margin-left: 0.5em;
+      vertical-align: top;
+      display: inline-block;
+      width: 1rem;
+      height: 1rem;
+      margin: 0.125em 0 0 0.5em;
+      opacity: 75%;
+    }
+
+    .setting-item.setting-item-heading.style-settings-heading[data-id="heading-baseColor"]
+      .style-settings-collapse-indicator:after {
+      filter: hue-rotate(0deg);
+
+      opacity: 100%;
+    }
+  }
+}

@@ -1,0 +1,5 @@
+body:is(:not(.css-settings-manager), ) .nav-folder > .nav-folder-children {
+  border-inline-start: none;
+  padding-left: 33px;
+  margin-left: 0;
+}

@@ -1,0 +1,17 @@
+:root,
+body {
+  --file-explorer-decoration: var(--file-explorer-decoration-custom);
+  --file-explorer-decoration-size: var(--file-explorer-decoration-size-custom);
+  --file-explorer-decoration-blend: var(
+    --file-explorer-decoration-blend-custom
+  );
+  --file-explorer-decoration-blend-dark: var(
+    --file-explorer-decoration-blend-custom-dark
+  );
+  --file-explorer-decoration-position: var(
+    --file-explorer-decoration-position-custom
+  );
+  --file-explorer-decoration-opacity: var(
+    --file-explorer-decoration-opacity-custom
+  );
+}

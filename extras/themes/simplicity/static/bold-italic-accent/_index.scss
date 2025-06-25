@@ -1,0 +1,11 @@
+.bold-italic-accent .mod-left-split .nav-action-button {
+  filter: hue-rotate(var(--hue-bold-italic));
+}
+
+.bold-italic-accent .cm-em,
+.bold-italic-accent .cm-strong,
+.bold-italic-accent em,
+.bold-italic-accent strong {
+  color: var(--color-accent) !important;
+  filter: hue-rotate(var(--hue-bold-italic));
+}

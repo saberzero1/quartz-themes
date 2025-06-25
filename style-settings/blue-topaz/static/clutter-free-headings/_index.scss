@@ -1,0 +1,199 @@
+body
+  div:not(.cm-active).cm-line
+  span:not(.cm-formatting-header).cm-header::before {
+  font-size: 0.6rem;
+  width: auto;
+  margin-right: 1px;
+  border-radius: var(--radius-xs);
+  color: var(--text-muted);
+  overflow: visible;
+  font-family: var(--font-interface);
+  font-weight: normal !important;
+}
+body
+  div.mod-cm6.is-live-preview
+  div:not(.cm-active).cm-line
+  .cm-header
+  ~ span.cm-header::before,
+body
+  div.mod-cm6.is-live-preview
+  div:not(.cm-active).cm-line
+  .cm-header.cm-hmd-internal-link::before {
+  display: none;
+}
+body
+  div:not(.cm-active).cm-line
+  span:not(.cm-formatting-header).cm-header-1::before {
+  content: "H1";
+  margin-top: calc(var(--h1-size) - 0.1em);
+}
+body
+  div:not(.cm-active).cm-line
+  span:not(.cm-formatting-header).cm-header-2::before {
+  content: "H2";
+  margin-top: calc(var(--h2-size) - 0.2em);
+}
+body
+  div:not(.cm-active).cm-line
+  span:not(.cm-formatting-header).cm-header-3::before {
+  content: "H3";
+  margin-top: calc(var(--h3-size) - 0.2em);
+}
+body
+  div:not(.cm-active).cm-line
+  span:not(.cm-formatting-header).cm-header-4::before {
+  content: "H4";
+  margin-top: calc(var(--h4-size) - 0.3em);
+}
+body
+  div:not(.cm-active).cm-line
+  span:not(.cm-formatting-header).cm-header-5::before {
+  content: "H5";
+  margin-top: calc(var(--h5-size) - 0.4em);
+}
+body
+  div:not(.cm-active).cm-line
+  span:not(.cm-formatting-header).cm-header-6::before {
+  content: "H6";
+  margin-top: calc(var(--h6-size) - 0.4em);
+}
+body
+  div.mod-cm6:not(.is-live-preview)
+  div:not(.cm-active).cm-line
+  span:not(.cm-formatting-header).cm-header
+  ~ span.cm-header::before {
+  display: none;
+}
+body
+  div.mod-cm6:not(.is-live-preview)
+  div:not(.cm-active).cm-line
+  span.cm-formatting-header {
+  display: none;
+}
+body
+  div:not(.CodeMirror-activeline)
+  > .CodeMirror-line.hmd-inactive-line
+  span.cm-formatting-header::before {
+  position: absolute;
+  margin-top: 10px;
+  font-size: 0.7rem;
+  width: auto;
+  margin-left: -18px;
+  padding: 0px 2px;
+  border-radius: var(--radius-xs);
+  color: var(--text-muted);
+  overflow: visible;
+  font-family: var(--font-default);
+  font-weight: normal !important;
+}
+body
+  div:not(.CodeMirror-activeline)
+  > .CodeMirror-line:not(.hmd-inactive-line)
+  span.cm-formatting-header::before {
+  position: absolute;
+  margin-top: 10px;
+  font-size: 0.7rem;
+  width: auto;
+  margin-left: -6px;
+  border-radius: var(--radius-xs);
+  color: var(--text-muted);
+  overflow: visible;
+  font-family: var(--font-default);
+  font-weight: normal !important;
+}
+body
+  div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-formatting-header {
+  color: transparent !important;
+  background: none;
+}
+body
+  div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-formatting-header-1::before {
+  content: "H1";
+}
+body
+  div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-formatting-header-2::before {
+  content: "H2";
+}
+body
+  div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-formatting-header-3::before {
+  content: "H3";
+}
+body
+  div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-formatting-header-4::before {
+  content: "H4";
+}
+body
+  div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-formatting-header-5::before {
+  content: "H5";
+}
+body
+  div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-formatting-header-6::before {
+  content: "H6";
+}
+body.funny-header-anim
+  .cm-line
+  > :is(.cm-header, .cm-widgetBuffer)
+  + .cm-header {
+  display: inline-block;
+}
+body.funny-header-anim
+  .cm-line:not(.cm-active)
+  :is(.cm-header, .cm-widgetBuffer)
+  + .cm-header,
+body.funny-header-anim
+  .cm-line:not(.cm-active)
+  :is(.cm-header, .cm-widgetBuffer)
+  + .cm-header
+  ~ * {
+  transform: translateX(0ch);
+  transition: transform 333ms;
+}
+body.funny-header-anim :is(.cm-header, .cm-widgetBuffer) + .cm-header,
+body.funny-header-anim :is(.cm-header, .cm-widgetBuffer) + .cm-header ~ * {
+  transition: transform 333ms;
+  transform: translateX(30px);
+}
+body.funny-header-anim
+  .cm-active
+  :is(.cm-header)
+  + .cm-widgetBuffer
+  + .cm-html-embed {
+  transition: margin-left 500ms;
+  margin-left: 30px;
+}
+body.funny-header-anim
+  .cm-active
+  :is(.cm-header, .cm-widgetBuffer)
+  + .cm-bracket {
+  transition: margin-left 333ms;
+  margin-left: 30px;
+}
+body.funny-header-anim .cm-line:not(.cm-active) .cm-header:first-of-type {
+  display: none;
+  opacity: 0;
+}
+body.funny-header-anim .cm-active .cm-formatting-header + .cm-header {
+  margin-left: -30px;
+}
+body.funny-header-anim .cm-active .cm-formatting-header ~ .cm-foldPlaceholderr {
+  transition: margin-left 333ms;
+  margin-left: 30px;
+}
+body.funny-header-anim .cm-active .cm-header:first-of-type {
+  transform: translateX(0ch);
+  animation: opac 333ms;
+}

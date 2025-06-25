@@ -1,0 +1,17 @@
+.anp-kanban-hide-lane-border .kanban-plugin__lane,
+.anp-kanban-hide-lane-border .kanban-plugin__lane-header-wrapper,
+.anp-kanban-hide-lane-border .kanban-plugin__item-button-wrapper,
+.anp-kanban-hide-lane-border .kanban-plugin__item-form {
+  border-width: 0;
+  box-shadow: none;
+}
+
+.anp-kanban-hide-lane-border .kanban-plugin__lane-items {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.anp-kanban-hide-lane-border .kanban-plugin__lane-setting-wrapper {
+  border-bottom-width: 0;
+  padding-top: 6px;
+}

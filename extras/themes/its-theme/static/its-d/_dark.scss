@@ -1,0 +1,39 @@
+.its-d,
+.theme-dark .its-d {
+  --hvr: rgba(60, 8, 8, 0.46);
+  --highlight: rgba(139, 6, 6, 0.4);
+  --outer-bar: black;
+  --dark-sidebar: #000000;
+  --side-bar: var(--outer-bar);
+  --note: #070b11;
+  --accent: #803232;
+  --dark-accent: var(--aside-bg);
+  --deep-dark-accent: #270f0f;
+  --accent2: var(--text);
+  --accent2-lite: #c5575b;
+  --headers: #aa3333;
+  --text: #475569;
+  --soft-text: var(--accent);
+  --code-text: var(--accent);
+  --footnote: #577093;
+  --inactive: #1b262f;
+  --file-icon-color: var(--text);
+  --fg: var(--headers);
+  --bg: var(--inactive);
+  --code-bg: var(--aside-bg);
+  --embed-bg: black;
+  --aside-bg: #04070c;
+  --tag: var(--table);
+  --th: var(--hr);
+  --td: #03000054;
+  --table: #380b13;
+  --hr: #571a1a;
+  --graph-bg: rgba(13, 20, 29, 0.51);
+  --graph-lines: var(--hr);
+  --theme-rainbow-1: var(--headers);
+  --theme-rainbow-2: var(--accent);
+  --theme-rainbow-3: var(--hr);
+  --theme-rainbow-4: var(--table);
+  --theme-rainbow-5: var(--file-icon-color);
+  --theme-rainbow-6: var(--code-bg);
+}

@@ -1,0 +1,35 @@
+body.bt-bubble-layout.bt-bubble-buttons
+  .mod-left-split
+  .workspace-tab-header-container-inner,
+body.bt-bubble-layout.bt-bubble-buttons
+  .mod-right-split
+  .workspace-tab-header-container-inner {
+  padding: 4px;
+  margin: 4px 0 4px var(--bt-bubble-layout-padding);
+  border-radius: var(--radius-m);
+  background-color: color-mix(
+    in srgb,
+    var(--background-primary) 80%,
+    transparent
+  );
+}
+
+body.bt-bubble-layout.bt-bubble-buttons
+  .mod-left-split
+  .workspace-tab-header.has-active-menu,
+body.bt-bubble-layout.bt-bubble-buttons
+  .mod-right-split
+  .workspace-tab-header.has-active-menu,
+body.bt-bubble-layout.bt-bubble-buttons
+  .mod-left-split
+  .workspace-tab-header.is-active,
+body.bt-bubble-layout.bt-bubble-buttons
+  .mod-right-split
+  .workspace-tab-header.is-active {
+  background-color: color-mix(
+    in srgb,
+    lightgray,
+    var(--background-secondary-alt) 75%
+  );
+  border: 1px solid transparent;
+}

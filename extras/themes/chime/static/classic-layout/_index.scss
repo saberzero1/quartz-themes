@@ -1,0 +1,76 @@
+body.classic-layout {
+  --divider-width: var(--border-width);
+}
+
+body.classic-layout {
+  --radius-s: 4px;
+  --radius-m: 8px;
+  --radius-l: 10px;
+  --radius-xl: 16px;
+}
+
+.classic-layout .workspace-leaf-content {
+  border-radius: 0px;
+  margin-bottom: 0px;
+  border: none;
+}
+
+.classic-layout .workspace-leaf {
+  border-radius: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  background-color: var(--background-primary);
+}
+
+body.theme-crystal.classic-layout,
+body.theme-ash-old.classic-layout {
+  --ribbon-background-collapsed: transparent;
+}
+
+body.classic-layout {
+  --ribbon-background-collapsed: var(--background-primary);
+}
+
+.cards-layout.classic-layout
+  .workspace-split.mod-horizontal.mod-left-split
+  .workspace-leaf-content {
+  border: none;
+  box-shadow: none;
+  background-color: var(--background-secondary);
+}
+
+.classic-layout .workspace-ribbon::before {
+  border-bottom: var(--border-width) var(--line-style)
+    var(--background-modifier-border) !important;
+}
+
+.classic-layout {
+  --tab-radius-active: 6px 6px 0px 0px;
+  --tab-curve: 6px;
+}
+
+.classic-layout .workspace .mod-root .workspace-tab-header {
+  margin: 0px;
+  height: inherit;
+  border-bottom: none;
+}
+
+.classic-layout .workspace-tab-header-container {
+  border-bottom: var(--border-width) var(--line-style)
+    var(--background-modifier-border);
+  margin-bottom: 0px;
+}
+
+.hide-buttons.classic-layout {
+  --border-width: 0px;
+}
+
+.ultra-focus.classic-layout {
+  --workspace-background: var(--background-primary);
+  --divider-width: 0px;
+}
+
+.ultra-focus.classic-layout .workspace-ribbon::before {
+  background-color: var(--background-secondary) !important;
+  border-bottom: 2px solid var(--background-secondary) !important;
+}

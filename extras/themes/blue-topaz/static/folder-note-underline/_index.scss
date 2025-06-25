@@ -1,0 +1,9 @@
+.folder-note-underline .nav-folder.is-collapsed .nav-folder-title-content {
+  text-decoration-line: underline;
+  /* text-decoration-color: var(--text-faint); */
+  text-decoration-color: var(--tab-color);
+  color: var(--tab-color);
+  text-decoration-thickness: 2px;
+  line-height: 1.6;
+  text-underline-offset: 4px;
+}

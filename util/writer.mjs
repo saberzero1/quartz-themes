@@ -599,12 +599,12 @@ export function writeStyleSettings(styleRulesCSS, themeName, settingName, subPat
   subPath = subPath.endsWith("/") ? subPath.slice(0, -1) : subPath
   subPath = subPath.startsWith("/") ? subPath.slice(1) : subPath
 
-  ensureDirectoryExists(`./extras/themes/${themeName}/${settingName}/${subPath}`)
-  ensureDirectoryExists(`./style-settings/${themeName}/${settingName}/${subPath}`)
-
   if (subPath !== "") {
     subPath += "/"
   }
+
+  ensureDirectoryExists(`./extras/themes/${themeName}/${subPath}${settingName}/`)
+  ensureDirectoryExists(`./style-settings/${themeName}/${subPath}${settingName}/`)
 
   const base = styleRulesCSS[0].replace(new RegExp(`\.${settingName}(?=\.|\s)`, "g"), "").trim()
   const dark = styleRulesCSS[1].replace(new RegExp(`\.${settingName}(?=\.|\s)`, "g"), "").trim()
@@ -612,33 +612,33 @@ export function writeStyleSettings(styleRulesCSS, themeName, settingName, subPat
 
   // Write the style setting to the extras file
   writePrettier(
-    `./extras/themes/${themeName}/${settingName}/${subPath}_index.scss`,
+    `./extras/themes/${themeName}/${subPath}${settingName}/_index.scss`,
     styleRulesCSS[0],
     "utf8",
   )
   writePrettier(
-    `./extras/themes/${themeName}/${settingName}/${subPath}_dark.scss`,
+    `./extras/themes/${themeName}/${subPath}${settingName}/_dark.scss`,
     styleRulesCSS[1], 
     "utf8",
   )
   writePrettier(
-    `./extras/themes/${themeName}/${settingName}/${subPath}_light.scss`,
+    `./extras/themes/${themeName}/${subPath}${settingName}/_light.scss`,
     styleRulesCSS[2],
     "utf8",
   )
 
   writePrettier(
-    `./style-settings/${themeName}/${settingName}/${subPath}_index.scss`,
+    `./style-settings/${themeName}/${subPath}${settingName}/_index.scss`,
     parseStyleSettingToString(base),
   "utf8",
   )
   writePrettier(
-    `./style-settings/${themeName}/${settingName}/${subPath}_dark.scss`,
+    `./style-settings/${themeName}/${subPath}${settingName}/_dark.scss`,
     parseStyleSettingToString(dark, "dark"),
     "utf8",
   )
   writePrettier(
-    `./style-settings/${themeName}/${settingName}/${subPath}_light.scss`,
+    `./style-settings/${themeName}/${subPath}${settingName}/_light.scss`,
     parseStyleSettingToString(light, "light"),
     "utf8",
   )

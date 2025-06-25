@@ -1,0 +1,301 @@
+.ebullientworks-floating-frontmatter .markdown-rendered pre.frontmatter,
+.is-mobile .markdown-rendered pre.frontmatter {
+  float: right;
+  position: absolute;
+  right: 0.15em;
+  top: 0.65rem;
+  width: 2rem;
+  height: 2rem;
+  overflow: hidden;
+  border: none !important;
+  background-color: transparent;
+}
+
+.ebullientworks-floating-frontmatter .markdown-rendered pre.frontmatter code,
+.is-mobile .markdown-rendered pre.frontmatter code {
+  visibility: hidden;
+}
+
+.ebullientworks-floating-frontmatter
+  .markdown-rendered
+  pre.frontmatter
+  .mod-failed,
+.is-mobile .markdown-rendered pre.frontmatter .mod-failed {
+  position: absolute;
+}
+
+.ebullientworks-floating-frontmatter
+  .markdown-rendered
+  pre.frontmatter
+  .mod-failed
+  .mod-error,
+.is-mobile .markdown-rendered pre.frontmatter .mod-failed .mod-error {
+  visibility: hidden;
+}
+
+.ebullientworks-floating-frontmatter
+  .markdown-rendered
+  pre.frontmatter
+  .mod-failed:hover
+  .mod-error,
+.is-mobile .markdown-rendered pre.frontmatter .mod-failed:hover .mod-error {
+  visibility: visible;
+}
+
+.ebullientworks-floating-frontmatter .markdown-rendered pre.frontmatter::before,
+.is-mobile .markdown-rendered pre.frontmatter::before {
+  content: "✧";
+  font-size: 20px;
+  color: var(--primary-accent-3);
+  float: right;
+}
+
+.ebullientworks-floating-frontmatter
+  .markdown-rendered
+  pre.frontmatter:not(:hover)
+  > button.copy-code-button,
+.is-mobile
+  .markdown-rendered
+  pre.frontmatter:not(:hover)
+  > button.copy-code-button {
+  display: none;
+}
+
+.ebullientworks-floating-frontmatter .markdown-rendered pre.frontmatter:hover,
+.is-mobile .markdown-rendered pre.frontmatter:hover {
+  border: 1px solid var(--background-modifier-border);
+  background-color: var(--background-secondary);
+  filter: drop-shadow(-0.1rem 0.1rem 0.1rem var(--background-secondary-alt));
+  width: 60%;
+  min-width: 200px;
+  height: unset;
+  z-index: 3;
+}
+
+.ebullientworks-floating-frontmatter
+  .markdown-rendered
+  pre.frontmatter:hover
+  code,
+.is-mobile .markdown-rendered pre.frontmatter:hover code {
+  visibility: visible;
+  background-color: var(---background-secondary);
+}
+
+.ebullientworks-floating-frontmatter .markdown-rendered .metadata-container,
+.ebullientworks-floating-frontmatter .markdown-rendered .frontmatter-container,
+.is-mobile .markdown-rendered .metadata-container,
+.is-mobile .markdown-rendered .frontmatter-container {
+  float: right;
+  position: absolute;
+  right: 0.6rem;
+  top: 0;
+  width: 2rem;
+  height: 2rem;
+  overflow: hidden;
+  border: none;
+  background-color: transparent;
+}
+
+.ebullientworks-floating-frontmatter
+  .markdown-rendered
+  .metadata-container
+  .metadata-properties-heading,
+.ebullientworks-floating-frontmatter
+  .markdown-rendered
+  .metadata-container
+  .metadata-content,
+.ebullientworks-floating-frontmatter
+  .markdown-rendered
+  .metadata-container
+  .frontmatter-container-header,
+.ebullientworks-floating-frontmatter
+  .markdown-rendered
+  .metadata-container
+  .frontmatter-section,
+.ebullientworks-floating-frontmatter
+  .markdown-rendered
+  .frontmatter-container
+  .metadata-properties-heading,
+.ebullientworks-floating-frontmatter
+  .markdown-rendered
+  .frontmatter-container
+  .metadata-content,
+.ebullientworks-floating-frontmatter
+  .markdown-rendered
+  .frontmatter-container
+  .frontmatter-container-header,
+.ebullientworks-floating-frontmatter
+  .markdown-rendered
+  .frontmatter-container
+  .frontmatter-section,
+.is-mobile .markdown-rendered .metadata-container .metadata-properties-heading,
+.is-mobile .markdown-rendered .metadata-container .metadata-content,
+.is-mobile .markdown-rendered .metadata-container .frontmatter-container-header,
+.is-mobile .markdown-rendered .metadata-container .frontmatter-section,
+.is-mobile
+  .markdown-rendered
+  .frontmatter-container
+  .metadata-properties-heading,
+.is-mobile .markdown-rendered .frontmatter-container .metadata-content,
+.is-mobile
+  .markdown-rendered
+  .frontmatter-container
+  .frontmatter-container-header,
+.is-mobile .markdown-rendered .frontmatter-container .frontmatter-section {
+  visibility: hidden;
+}
+
+.ebullientworks-floating-frontmatter
+  .markdown-rendered
+  .metadata-container::before,
+.ebullientworks-floating-frontmatter
+  .markdown-rendered
+  .frontmatter-container::before,
+.is-mobile .markdown-rendered .metadata-container::before,
+.is-mobile .markdown-rendered .frontmatter-container::before {
+  content: "✧";
+  font-size: 20px;
+  color: var(--primary-accent-3);
+  float: right;
+}
+
+.ebullientworks-floating-frontmatter
+  .markdown-rendered
+  .metadata-container:hover
+  .metadata-properties-heading,
+.ebullientworks-floating-frontmatter
+  .markdown-rendered
+  .metadata-container:hover
+  .frontmatter-container-header,
+.ebullientworks-floating-frontmatter
+  .markdown-rendered
+  .metadata-container:hover
+  .metadata-content,
+.ebullientworks-floating-frontmatter
+  .markdown-rendered
+  .metadata-container:hover
+  .frontmatter-section,
+.ebullientworks-floating-frontmatter
+  .markdown-rendered
+  .frontmatter-container:hover
+  .metadata-properties-heading,
+.ebullientworks-floating-frontmatter
+  .markdown-rendered
+  .frontmatter-container:hover
+  .frontmatter-container-header,
+.ebullientworks-floating-frontmatter
+  .markdown-rendered
+  .frontmatter-container:hover
+  .metadata-content,
+.ebullientworks-floating-frontmatter
+  .markdown-rendered
+  .frontmatter-container:hover
+  .frontmatter-section,
+.is-mobile
+  .markdown-rendered
+  .metadata-container:hover
+  .metadata-properties-heading,
+.is-mobile
+  .markdown-rendered
+  .metadata-container:hover
+  .frontmatter-container-header,
+.is-mobile .markdown-rendered .metadata-container:hover .metadata-content,
+.is-mobile .markdown-rendered .metadata-container:hover .frontmatter-section,
+.is-mobile
+  .markdown-rendered
+  .frontmatter-container:hover
+  .metadata-properties-heading,
+.is-mobile
+  .markdown-rendered
+  .frontmatter-container:hover
+  .frontmatter-container-header,
+.is-mobile .markdown-rendered .frontmatter-container:hover .metadata-content,
+.is-mobile
+  .markdown-rendered
+  .frontmatter-container:hover
+  .frontmatter-section {
+  visibility: visible;
+}
+
+.ebullientworks-floating-frontmatter
+  .markdown-rendered
+  .metadata-container:hover
+  .frontmatter-collapse-indicator,
+.ebullientworks-floating-frontmatter
+  .markdown-rendered
+  .frontmatter-container:hover
+  .frontmatter-collapse-indicator,
+.is-mobile
+  .markdown-rendered
+  .metadata-container:hover
+  .frontmatter-collapse-indicator,
+.is-mobile
+  .markdown-rendered
+  .frontmatter-container:hover
+  .frontmatter-collapse-indicator {
+  display: none;
+}
+
+.ebullientworks-floating-frontmatter
+  .markdown-rendered
+  .frontmatter-container:hover,
+.is-mobile .markdown-rendered .frontmatter-container:hover {
+  border: 1px solid var(--background-modifier-border);
+  background-color: var(--background-primary-alt);
+  filter: drop-shadow(-0.1rem 0.1rem 0.1rem var(--background-modifier-border));
+  width: 50%;
+  min-width: 200px;
+  height: unset;
+  z-index: 3;
+}
+
+.ebullientworks-floating-frontmatter
+  .markdown-rendered
+  .frontmatter-container:hover
+  .frontmatter-container-header,
+.is-mobile
+  .markdown-rendered
+  .frontmatter-container:hover
+  .frontmatter-container-header {
+  padding: var(--size-4-2) var(--size-4-2) 0 var(--size-4-2);
+}
+
+.ebullientworks-floating-frontmatter
+  .markdown-rendered
+  .frontmatter-container:hover
+  .frontmatter-section,
+.is-mobile
+  .markdown-rendered
+  .frontmatter-container:hover
+  .frontmatter-section {
+  padding: 0 var(--size-4-2) var(--size-2-1) var(--size-4-2);
+}
+
+.ebullientworks-floating-frontmatter
+  .markdown-rendered
+  .metadata-container:hover,
+.is-mobile .markdown-rendered .metadata-container:hover {
+  border: 1px solid var(--background-modifier-border);
+  background-color: var(--background-primary-alt);
+  filter: drop-shadow(-0.1rem 0.1rem 0.1rem var(--background-modifier-border));
+  width: 80%;
+  min-width: 200px;
+  height: unset;
+  z-index: 3;
+}
+
+.ebullientworks-floating-frontmatter
+  .markdown-rendered
+  .metadata-container:hover
+  .metadata-property,
+.ebullientworks-floating-frontmatter
+  .markdown-rendered
+  .metadata-container:hover
+  .metadata-property[data-property-key="tags"],
+.is-mobile .markdown-rendered .metadata-container:hover .metadata-property,
+.is-mobile
+  .markdown-rendered
+  .metadata-container:hover
+  .metadata-property[data-property-key="tags"] {
+  --pill-background: var(--background-primary);
+}

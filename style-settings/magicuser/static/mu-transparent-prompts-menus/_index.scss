@@ -1,0 +1,4 @@
+body:not(.is-mobile)
+  div:is(.modal .vertical-tab-header, .modal .vertical-tab-content) {
+  background: transparent;
+}

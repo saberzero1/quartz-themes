@@ -1,0 +1,30 @@
+body.flexcyon-oz-alternate-folder-count div.oz-folder-line {
+  transition: all 0.35s ease-in-out;
+}
+
+body.flexcyon-oz-alternate-folder-count div.oz-folder-line div.oz-folder-count {
+  transform: translateY(1000px);
+}
+
+body.flexcyon-oz-alternate-folder-count div.oz-folder-line:hover {
+  max-width: max-content;
+}
+
+body.flexcyon-oz-alternate-folder-count
+  div.oz-folder-line:hover
+  div.oz-folder-count
+  span.oz-nav-file-tag {
+  margin-top: 0.5px;
+  font-weight: inherit;
+  transform: translateY(-1000px);
+  text-transform: none;
+  display: inline;
+  text-align: left;
+}
+
+body.flexcyon-oz-alternate-folder-count
+  div.oz-folder-line:hover
+  div.oz-folder-count
+  span.oz-nav-file-tag::before {
+  content: "Count: ";
+}

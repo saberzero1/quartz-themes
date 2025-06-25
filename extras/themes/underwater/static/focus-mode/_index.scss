@@ -1,0 +1,15 @@
+.focus-mode .titlebar-button-container {
+  display: none;
+}
+
+.focus-mode .workspace-tab-header-container,
+.focus-mode .view-header,
+.focus-mode .status-bar,
+.focus-mode .metadata-properties-heading,
+.focus-mode ::-webkit-scrollbar {
+  display: none;
+}
+
+.focus-mode .workspace-tab-container {
+  margin-top: 14px;
+}

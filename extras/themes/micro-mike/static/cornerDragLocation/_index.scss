@@ -1,0 +1,15 @@
+body:not(.leftAlignedLeftSidebarButtonDisable).cornerDragLocation
+  .mod-left-split
+  .workspace-tab-header-container-inner {
+  margin-left: 0px;
+}
+
+body:not(.leftAlignedLeftSidebarButtonDisable).cornerDragLocation
+  .sidebar-toggle-button.mod-left {
+  order: -1;
+  margin-left: 40px;
+}
+
+.cornerDragLocation .mod-left-split .workspace-tab-header-container-inner {
+  margin-left: 40px;
+}

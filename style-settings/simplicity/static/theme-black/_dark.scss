@@ -1,0 +1,49 @@
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
+  --nav-item-background-hover: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.03
+  ) !important;
+  body {
+    --background-primary: #111 !important;
+    --background-secondary: #111 !important;
+  }
+  .theme-rounded .workspace-ribbon.mod-left:before {
+    background-color: transparent !important;
+    background-color: hsla(
+      var(--accent-h),
+      var(--accent-s),
+      var(--accent-l),
+      0.05
+    ) !important;
+  }
+  .theme-rounded .workspace-tab-header.is-active,
+  .theme-rounded .workspace-tab-header {
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+  .theme-rounded .workspace-split {
+    background-color: hsla(
+      var(--accent-h),
+      var(--accent-s),
+      var(--accent-l),
+      0.05
+    ) !important;
+  }
+  .theme-rounded
+    .workspace-tabs:not(.mod-stacked)
+    .workspace-tab-header-container {
+    background-color: hsla(
+      var(--accent-h),
+      var(--accent-s),
+      var(--accent-l),
+      0.005
+    ) !important;
+    background-color: transparent !important;
+  }
+  :not(.theme-rounded) .workspace-ribbon.mod-left {
+    background-color: #111 !important;
+  }
+}

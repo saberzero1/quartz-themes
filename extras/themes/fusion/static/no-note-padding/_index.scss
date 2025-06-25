@@ -1,0 +1,3 @@
+body.no-note-padding :is(.cm-content, .markdown-preview-sizer) {
+  padding-bottom: 0 !important;
+}

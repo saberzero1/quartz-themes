@@ -1,0 +1,21 @@
+body
+  .markdown-reading-view
+  .markdown-preview-sizer
+  *:not(.mod-header, .inline-title):hover,
+body .markdown-source-view.mod-cm6.is-readable-line-width .cm-content *:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--color) !important;
+  text-decoration-skip-ink: none;
+  text-decoration-style: var(--style) !important;
+  text-decoration-thickness: var(--thickness) !important;
+  text-underline-offset: var(--offset) !important;
+}
+-style-dashed {
+  --style: dashed;
+}
+-style-dotted {
+  --style: dotted;
+}
+-style-double {
+  --style: double;
+}

@@ -1,0 +1,9 @@
+body.background-image-settings-command-palette-switch
+  .modal-container
+  .prompt::before {
+  background-size: auto;
+  filter: blur(var(--blur-depth-cp)) brightness(var(--brightness-4-bg-cp))
+    saturate(var(--saturate-4-bg-cp));
+  opacity: var(--opacity-cp);
+  z-index: -1;
+}

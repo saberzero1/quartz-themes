@@ -1,0 +1,10 @@
+body
+  :is(
+    .workspace-split
+      .workspace-tabs:not(.mod-stacked)
+      .workspace-leaf-content:not([data-type="pdf"])
+      .view-content,
+    .workspace-leaf-content:not(:has(.view-content))
+  ) {
+  animation: slide-up var(--animation) forwards;
+}

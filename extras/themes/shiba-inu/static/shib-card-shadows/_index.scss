@@ -1,0 +1,7 @@
+.shib-card-layout.shib-card-shadows .side-dock-actions,
+.shib-card-layout.shib-card-shadows .workspace-split .workspace-leaf-content,
+.shib-card-layout.shib-card-layout-fileexplorer
+  .workspace-split
+  .workspace-leaf-content[data-type="file-explorer"] {
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.05);
+}

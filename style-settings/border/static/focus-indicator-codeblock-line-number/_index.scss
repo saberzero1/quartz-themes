@@ -1,0 +1,55 @@
+.line-hover-indicator
+  .workspace-leaf-content[data-type="markdown"]
+  .cm-contentContainer
+  .cm-line.HyperMD-codeblock:not(.HyperMD-codeblock-begin):not(
+    .HyperMD-codeblock-end
+  )::after {
+  background: unset !important;
+  opacity: 0 !important;
+  position: absolute !important;
+  left: -12px !important;
+  top: 0px !important;
+  height: 100% !important;
+  width: 3px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  color: var(--hover-indicator-color);
+}
+.line-hover-indicator
+  .workspace-leaf-content[data-type="markdown"]
+  .cm-contentContainer
+  .cm-line.HyperMD-codeblock:not(.HyperMD-codeblock-begin):not(
+    .HyperMD-codeblock-end
+  ):hover:after {
+  opacity: 1 !important;
+  --hover-indicator-color: var(--text-faint);
+}
+.line-hover-indicator
+  .workspace-leaf-content[data-type="markdown"]
+  .cm-contentContainer,
+.line-hover-indicator
+  .workspace-leaf-content[data-type="markdown"]
+  .cm-contentContainer
+  .cm-line.HyperMD-codeblock-end {
+  counter-reset: code-line;
+}
+.line-hover-indicator
+  .workspace-leaf-content[data-type="markdown"]
+  .cm-contentContainer
+  .cm-line.HyperMD-codeblock:not(.HyperMD-codeblock-begin):not(
+    .HyperMD-codeblock-end
+  )::after {
+  counter-increment: code-line;
+  content: counter(code-line) !important;
+}
+.line-hover-indicator
+  .workspace-leaf-content[data-type="markdown"]
+  .cm-contentContainer
+  .cm-active.HyperMD-codeblock:not(.HyperMD-codeblock-begin):not(
+    .HyperMD-codeblock-end
+  ):after {
+  opacity: 1 !important;
+  --hover-indicator-color: var(--color-accent) !important;
+}

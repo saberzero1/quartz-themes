@@ -1,0 +1,46 @@
+.border-focus-mode
+  .cm-lineWrapping
+  > .cm-line.cm-active:not(:has(.mk-note-footer, .mk-floweditor-container)) {
+  background-color: var(--line-active-bg);
+  border-radius: var(--radius-s);
+  opacity: 1;
+}
+
+.border-focus-mode .cm-lineWrapping > .cm-line {
+  padding-left: var(--size-4-1);
+  padding-right: var(--size-4-1);
+  opacity: var(--line-normal-opacity);
+}
+
+.border-focus-mode .cm-lineWrapping > .cm-table-widget .cm-line {
+  background-color: unset !important;
+  border-radius: unset !important;
+  padding-left: unset !important;
+  padding-right: unset !important;
+}
+
+.border-focus-mode
+  .markdown-source-view
+  .cm-scroller
+  .cm-line.cm-active.HyperMD-codeblock-bg:not(
+    .HyperMD-codeblock-begin-bg,
+    .HyperMD-codeblock-end-bg
+  ) {
+  border-radius: 0px;
+}
+
+.border-focus-mode
+  .markdown-source-view
+  .cm-scroller
+  .cm-line.cm-active.HyperMD-codeblock-begin-bg {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.border-focus-mode
+  .markdown-source-view
+  .cm-scroller
+  .cm-line.cm-active.HyperMD-codeblock-end-bg {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}

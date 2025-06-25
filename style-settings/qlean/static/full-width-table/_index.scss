@@ -1,0 +1,17 @@
+body
+  .markdown-source-view.is-live-preview
+  .cm-table-widget
+  .table-wrapper:has(> table),
+body .markdown-rendered div:has(> table),
+body .style-settings-container div:has(> table) {
+  width: 100%;
+}
+body
+  .markdown-source-view.is-live-preview
+  .cm-table-widget
+  .table-wrapper:has(> table)
+  > table,
+body .markdown-rendered div:has(> table) > table,
+body .style-settings-container div:has(> table) > table {
+  width: 100%;
+}

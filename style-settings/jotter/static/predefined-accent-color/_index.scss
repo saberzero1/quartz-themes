@@ -1,0 +1,126 @@
+:root,
+body {
+  --text-accent: rgb(var(--accent));
+  --color-accent: rgb(var(--accent));
+  --interactive-accent: rgb(var(--accent));
+  --tag-background: rgb(var(--accent), 0.2);
+  --tag-background-hover: rgb(var(--accent), 0.3);
+  --text-accent-hover: rgb(var(--accent), 0.8);
+  --interactive-accent-hover: rgb(var(--accent), 0.8);
+  --rust: 188, 74, 60;
+  --vermilion: 243, 90, 55;
+  --pumpkin: 246, 141, 69;
+  --mustard: 255, 208, 113;
+  --jade: 0, 168, 107;
+  --forest: 77, 116, 53;
+  --turquoise: 120, 230, 232;
+  --ultramarine: 92, 124, 255;
+  --denim: 76, 80, 120;
+  --mauve: 122, 73, 136;
+  --bubblegum: 255, 179, 189;
+  --wine: 114, 47, 55;
+  --slate: 131, 142, 154;
+}
+.accent-rust {
+  --accent: var(--rust);
+  --accent-h: 7;
+  --accent-s: 52%;
+  --accent-l: 49%;
+}
+.accent-vermilion {
+  --accent: var(--vermilion);
+  --accent-h: 11;
+  --accent-s: 89%;
+  --accent-l: 58%;
+}
+.accent-pumpkin {
+  --accent: var(--pumpkin);
+  --accent-h: 24;
+  --accent-s: 91%;
+  --accent-l: 62%;
+}
+.accent-mustard {
+  --accent: var(--mustard);
+  --accent-h: 40;
+  --accent-s: 100%;
+  --accent-l: 72%;
+}
+.accent-jade {
+  --accent: var(--jade);
+  --accent-h: 158;
+  --accent-s: 100%;
+  --accent-l: 33%;
+}
+.accent-forest {
+  --accent: var(--forest);
+  --accent-h: 97;
+  --accent-s: 37%;
+  --accent-l: 33%;
+}
+.accent-turquoise {
+  --accent: var(--turquoise);
+  --accent-h: 181;
+  --accent-s: 71%;
+  --accent-l: 69%;
+}
+.accent-ultramarine {
+  --accent: var(--ultramarine);
+  --accent-h: 228;
+  --accent-s: 100%;
+  --accent-l: 68%;
+}
+.accent-denim {
+  --accent: var(--denim);
+  --accent-h: 235;
+  --accent-s: 22%;
+  --accent-l: 38%;
+}
+.accent-mauve {
+  --accent: var(--mauve);
+  --accent-h: 287;
+  --accent-s: 30%;
+  --accent-l: 41%;
+}
+.accent-bubblegum {
+  --accent: var(--bubblegum);
+  --accent-h: 352;
+  --accent-s: 100%;
+  --accent-l: 85%;
+}
+.accent-wine {
+  --accent: var(--wine);
+  --accent-h: 353;
+  --accent-s: 42%;
+  --accent-l: 32%;
+}
+.accent-slate {
+  --accent: var(--slate);
+  --accent-h: 211;
+  --accent-s: 10%;
+  --accent-l: 56%;
+}
+.mod-settings
+  .vertical-tab-content
+  > .setting-item:nth-child(2)
+  > .setting-item-control
+  > input[type="color"] {
+  visibility: hidden;
+  width: 12rem;
+}
+.mod-settings
+  .vertical-tab-content
+  > .setting-item:nth-child(2)
+  > .setting-item-control
+  .lucide-rotate-ccw {
+  display: none;
+}
+.mod-settings
+  .vertical-tab-content
+  > .setting-item:nth-child(2)
+  > .setting-item-control
+  > input[type="color"]::before {
+  visibility: visible;
+  content: "Open the Style Settings plugin to pick your accent colors.";
+  color: var(--text-error);
+  font-size: var(--font-ui-smaller);
+}

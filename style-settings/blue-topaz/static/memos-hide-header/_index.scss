@@ -1,0 +1,21 @@
+body
+  div[data-type="thino_view"]
+  .view-header
+  :is(.view-header-nav-buttons, .view-header-title-container) {
+  display: none;
+}
+body div[data-type="thino_view"] .view-header {
+  position: absolute;
+  right: 0;
+  background-color: transparent !important;
+  top: 12px;
+  transition: all 0.1s linear;
+  transform: translateY(-15px);
+}
+body div[data-type="thino_view"] .view-actions {
+  position: relative;
+}
+body div[data-type="thino_view"] .view-header:not(:hover) {
+  transform: translateY(calc(-1 * var(--header-height)));
+  transition: all 0.6s linear;
+}

@@ -1,0 +1,10 @@
+.markdown-rendered:not(.cards):not(.table-disable) table,
+.markdown-rendered.cards:not(.table-disable) table:not(.dataview) {
+  margin: 0 auto;
+}
+.anp-table-toggle .markdown-rendered:not(.cards):not(.table-disable) table,
+.anp-table-toggle
+  .markdown-rendered.cards:not(.table-disable)
+  table:not(.dataview) {
+  margin: 0 auto;
+}

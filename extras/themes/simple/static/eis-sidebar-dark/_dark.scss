@@ -1,0 +1,128 @@
+body.eis-sidebar-dark:not(body.theme-dark) {
+  --ribbon-bg: #262626;
+  --text-icon-color: #bababa;
+  --nav-item: #bababa;
+}
+
+body.eis-sidebar-dark:not(body.theme-dark) .setting-item-description {
+  color: var(--color-base-70);
+}
+
+body.eis-sidebar-dark:not(body.theme-dark).is-focused
+  .workspace-tab-header
+  .workspace-tab-header-inner
+  .workspace-tab-header-inner-title {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+body.eis-sidebar-dark:not(body.theme-dark)
+  .workspace
+  .mod-root
+  .workspace-tab-header-inner::after {
+  background-color: var(--color-base-30);
+}
+
+body.eis-sidebar-dark:not(body.theme-dark)
+  .nav-folder.mod-root
+  > .nav-folder-title {
+  color: var(--text-icon-color);
+}
+
+body.eis-sidebar-dark:not(body.theme-dark).is-focused
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner
+  .workspace-tab-header-inner-title {
+  color: #000;
+}
+
+body.eis-sidebar-dark:not(body.theme-dark) .nav-file-title.is-active,
+body.eis-sidebar-dark:not(body.theme-dark)
+  .mod-left-split
+  .workspace-tab-header.is-active,
+body.eis-sidebar-dark:not(body.theme-dark)
+  .is-active
+  .workspace-tab-header-inner-icon
+  svg,
+body.eis-sidebar-dark:not(body.theme-dark):not(.is-grabbing)
+  .tree-item-self.is-clickable:hover {
+  color: #bababa;
+  background-color: rgba(255, 255, 255, 0.075);
+}
+
+body.eis-sidebar-dark:not(body.theme-dark)
+  .mod-left-split
+  .workspace-tabs
+  .workspace-leaf
+  .nav-file-title,
+body.eis-sidebar-dark:not(body.theme-dark)
+  .mod-left-split
+  .workspace-tabs
+  .workspace-leaf
+  .nav-folder-title,
+body.eis-sidebar-dark:not(body.theme-dark)
+  .mod-top-left-space
+  .tree-item
+  .tree-item-icon,
+body.eis-sidebar-dark:not(body.theme-dark)
+  .mod-top-left-space
+  .tree-item-inner-text,
+body.eis-sidebar-dark:not(body.theme-dark)
+  .mod-top-left-space
+  .search-result-file-title,
+body.eis-sidebar-dark:not(body.theme-dark) .side-dock-settings .clickable-icon,
+body.eis-sidebar-dark:not(body.theme-dark) .side-dock-actions .clickable-icon,
+body.eis-sidebar-dark:not(body.theme-dark) .workspace-tab-header-inner svg,
+body.eis-sidebar-dark:not(body.theme-dark) .clickable-icon {
+  color: var(--nav-item);
+}
+
+body.eis-sidebar-dark:not(body.theme-dark)
+  .nav-folder.mod-root
+  .nav-folder
+  > .nav-folder-children {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.eis-sidebar-dark:not(body.theme-dark) .workspace-tab-header-container {
+}
+
+body.eis-sidebar-dark:not(body.theme-dark)
+  .is-left-sidedock-open
+  .workspace-split.mod-horizontal.mod-left-split
+  .workspace-tab-header-container,
+body.eis-sidebar-dark:not(body.theme-dark)
+  .is-left-sidedock-open
+  .workspace-ribbon.side-dock-ribbon.mod-left,
+body.eis-sidebar-dark:not(body.theme-dark)
+  .is-left-sidedock-open
+  .workspace-ribbon.mod-left:not(.is-collapsed):before,
+body.eis-sidebar-dark:not(body.theme-dark)
+  .is-left-sidedock-open
+  .mod-left-split
+  .workspace-tabs
+  .workspace-leaf {
+  background-color: var(--ribbon-bg);
+  border-color: rgba(255, 255, 255, 0.1);
+  transition: all linear 0.1s;
+}
+
+body.eis-sidebar-dark:not(body.theme-dark)
+  .workspace-ribbon.mod-left.is-collapsed {
+  transition: none;
+}
+
+body.eis-sidebar-dark:not(body.theme-dark).is-hidden-frameless:not(
+    .is-popout-window
+  )
+  .workspace
+  .workspace-tabs.mod-top-right-space
+  .workspace-tab-header-container {
+  background-color: var(--tab-container-background);
+  border-bottom-color: var(--divider-color);
+}
+
+body.eis-sidebar-dark:not(body.theme-dark)
+  [data-path="/"].tree-item-self.nav-folder-title {
+  border-top-color: rgba(255, 255, 255, 0.1);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}

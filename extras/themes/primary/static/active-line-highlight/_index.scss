@@ -1,0 +1,6 @@
+body.active-line-highlight .cm-active {
+  background: var(--active-line-bg);
+  box-shadow:
+    -25vw 0 var(--active-line-bg),
+    25vw 0 var(--active-line-bg);
+}

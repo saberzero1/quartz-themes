@@ -1,0 +1,11 @@
+h6,
+.HyperMD-header-6 {
+  padding-bottom: 2px;
+  border-bottom: 1.4px var(--line-style) var(--hr-color);
+}
+.colorful-headings.theme-notion h6,
+.colorful-headings.theme-notion .HyperMD-header-6,
+.colorful-headings.theme-anytype h6,
+.colorful-headings.theme-anytype .HyperMD-header-6 {
+  border-bottom: none;
+}

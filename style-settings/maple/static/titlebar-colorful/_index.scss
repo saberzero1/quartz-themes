@@ -1,0 +1,16 @@
+body .modal-container .mod-settings::before {
+  --setting-color-logo: var(--text-on-accent);
+}
+body
+  .workspace.is-left-sidedock-open
+  .sidebar-toggle-button.mod-left
+  .clickable-icon,
+body
+  .workspace.is-right-sidedock-open
+  .sidebar-toggle-button.mod-right
+  .clickable-icon {
+  color: var(--text-on-accent);
+}
+body :is(.document-search-close-button, .modal-close-button)::before {
+  background-color: var(--text-normal);
+}

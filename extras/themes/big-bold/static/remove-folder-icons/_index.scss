@@ -1,0 +1,7 @@
+.remove-folder-icons
+  .nav-folder
+  .nav-folder-title-content:not(
+    .nav-folder.mod-root > .nav-folder-title .nav-folder-title-content
+  ):before {
+  display: none;
+}

@@ -1,0 +1,36 @@
+.pure-md:has([data-mode="source"] .markdown-source-view:not(.is-live-preview))
+  .cm-editor
+  *:not(.inline-title) {
+  font-size: var(--font-text-size) !important;
+  /* uniform font size */
+}
+
+.pure-md:has([data-mode="source"] .markdown-source-view:not(.is-live-preview))
+  .cm-editor
+  .cm-formatting {
+  opacity: 1 !important;
+  /* consistent color for formatting elements */
+}
+
+.pure-md:has([data-mode="source"] .markdown-source-view:not(.is-live-preview))
+  .HyperMD-header::before {
+  display: none !important;
+  /* remove heading level indicators, if active (leaving only #s)  */
+}
+
+.pure-md:has([data-mode="source"] .markdown-source-view:not(.is-live-preview))
+  .cm-line:not(.cm-active)
+  .cm-formatting.cm-formatting-header {
+  /* make heading formatting #s float in source mode, iA-Writer-syle. */
+  position: absolute;
+  margin-left: -100px;
+  width: 100px;
+  text-align: right !important;
+}
+
+.pure-md:has([data-mode="source"] .markdown-source-view:not(.is-live-preview))
+  .HyperMD-header:hover
+  .cm-formatting {
+  /* make #s on headings disappear when they are hovered (to make room for collapse indicators */
+  display: none;
+}

@@ -1,0 +1,128 @@
+body .nav-folder-title[data-path*="/01"],
+body .nav-folder-title[data-path*="/001"],
+body .nav-folder-title[data-path*="/01"],
+body .nav-folder-title[data-path^="001"],
+body .nav-folder-title[data-path^="01"] {
+  background-color: hsl(0, 70%, 82%);
+  --mu-folder-text-color: #000;
+  --mu-folder-icon-color: #000;
+}
+body .nav-folder-title[data-path*="/01"]:hover,
+body .nav-folder-title[data-path*="/001"]:hover,
+body .nav-folder-title[data-path*="/01"]:hover,
+body .nav-folder-title[data-path^="001"]:hover,
+body .nav-folder-title[data-path^="01"]:hover {
+  background-color: hsl(0, 100%, 72%) !important;
+}
+body .nav-folder-title[data-path*="/02"],
+body .nav-folder-title[data-path*="/002"],
+body .nav-folder-title[data-path*="/02"],
+body .nav-folder-title[data-path^="002"],
+body .nav-folder-title[data-path^="02"] {
+  background-color: hsl(20, 70%, 82%);
+  --mu-folder-text-color: #000;
+  --mu-folder-icon-color: #000;
+}
+body .nav-folder-title[data-path*="/02"]:hover,
+body .nav-folder-title[data-path*="/002"]:hover,
+body .nav-folder-title[data-path*="/02"]:hover,
+body .nav-folder-title[data-path^="002"]:hover,
+body .nav-folder-title[data-path^="02"]:hover {
+  background-color: hsl(20, 100%, 72%) !important;
+}
+body .nav-folder-title[data-path*="/03"],
+body .nav-folder-title[data-path*="/003"],
+body .nav-folder-title[data-path*="/03"],
+body .nav-folder-title[data-path^="003"],
+body .nav-folder-title[data-path^="03"] {
+  background-color: hsl(55, 70%, 82%);
+  --mu-folder-text-color: #000;
+  --mu-folder-icon-color: #000;
+}
+body .nav-folder-title[data-path*="/03"]:hover,
+body .nav-folder-title[data-path*="/003"]:hover,
+body .nav-folder-title[data-path*="/03"]:hover,
+body .nav-folder-title[data-path^="003"]:hover,
+body .nav-folder-title[data-path^="03"]:hover {
+  background-color: hsl(60, 100%, 72%) !important;
+}
+body .nav-folder-title[data-path*="/04"],
+body .nav-folder-title[data-path*="/004"],
+body .nav-folder-title[data-path*="/04"],
+body .nav-folder-title[data-path^="004"],
+body .nav-folder-title[data-path^="04"] {
+  background-color: hsl(120, 70%, 82%);
+  --mu-folder-text-color: #000;
+  --mu-folder-icon-color: #000;
+}
+body .nav-folder-title[data-path*="/04"]:hover,
+body .nav-folder-title[data-path*="/004"]:hover,
+body .nav-folder-title[data-path*="/04"]:hover,
+body .nav-folder-title[data-path^="004"]:hover,
+body .nav-folder-title[data-path^="04"]:hover {
+  background-color: hsl(120, 100%, 82%) !important;
+}
+body .nav-folder-title[data-path*="/05"],
+body .nav-folder-title[data-path*="/005"],
+body .nav-folder-title[data-path*="/05"],
+body .nav-folder-title[data-path^="005"],
+body .nav-folder-title[data-path^="05"] {
+  background-color: hsl(200, 70%, 82%);
+  --mu-folder-text-color: #000;
+  --mu-folder-icon-color: #000;
+}
+body .nav-folder-title[data-path*="/05"]:hover,
+body .nav-folder-title[data-path*="/005"]:hover,
+body .nav-folder-title[data-path*="/05"]:hover,
+body .nav-folder-title[data-path^="005"]:hover,
+body .nav-folder-title[data-path^="05"]:hover {
+  background-color: hsl(200, 100%, 82%) !important;
+}
+body .nav-folder-title[data-path*="/06"],
+body .nav-folder-title[data-path*="/006"],
+body .nav-folder-title[data-path*="/06"],
+body .nav-folder-title[data-path^="006"],
+body .nav-folder-title[data-path^="06"] {
+  background-color: hsl(230, 89%, 82%);
+  --mu-folder-text-color: #000;
+  --mu-folder-icon-color: #000;
+}
+body .nav-folder-title[data-path*="/06"]:hover,
+body .nav-folder-title[data-path*="/006"]:hover,
+body .nav-folder-title[data-path*="/06"]:hover,
+body .nav-folder-title[data-path^="006"]:hover,
+body .nav-folder-title[data-path^="06"]:hover {
+  background-color: hsl(230, 100%, 87%) !important;
+}
+body .nav-folder-title[data-path*="/07"],
+body .nav-folder-title[data-path*="/007"],
+body .nav-folder-title[data-path*="/07"],
+body .nav-folder-title[data-path^="007"],
+body .nav-folder-title[data-path^="07"] {
+  background-color: hsl(280, 90%, 80%);
+  --mu-folder-text-color: #000;
+  --mu-folder-icon-color: #000;
+}
+body .nav-folder-title[data-path*="/07"]:hover,
+body .nav-folder-title[data-path*="/007"]:hover,
+body .nav-folder-title[data-path*="/07"]:hover,
+body .nav-folder-title[data-path^="007"]:hover,
+body .nav-folder-title[data-path^="07"]:hover {
+  background-color: hsl(280, 100%, 87%) !important;
+}
+body .nav-folder-title[data-path*="/08"],
+body .nav-folder-title[data-path*="/008"],
+body .nav-folder-title[data-path*="/08"],
+body .nav-folder-title[data-path^="008"],
+body .nav-folder-title[data-path^="08"] {
+  background-color: hsl(0, 0%, 72%);
+  --mu-folder-text-color: #000;
+  --mu-folder-icon-color: #000;
+}
+body .nav-folder-title[data-path*="/08"]:hover,
+body .nav-folder-title[data-path*="/008"]:hover,
+body .nav-folder-title[data-path*="/08"]:hover,
+body .nav-folder-title[data-path^="008"]:hover,
+body .nav-folder-title[data-path^="08"]:hover {
+  background-color: hsl(0, 0%, 82%) !important;
+}

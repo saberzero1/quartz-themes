@@ -1,0 +1,38 @@
+body.theme-dark button.btn_pink {
+  color: #f3b4bb;
+  background: 0 0;
+  border: 1px solid !important;
+}
+body.theme-dark button.btn_green {
+  color: #19bc8b;
+  background: 0 0;
+  border: 1px solid !important;
+}
+body.theme-dark button.btn_lightgreen {
+  color: #8fc866;
+  background: 0 0;
+  border: 1px solid !important;
+}
+body.theme-dark button.btn_cyan {
+  color: #7fd0ff;
+  background: 0 0;
+  border: 1px solid !important;
+}
+body.theme-dark button.btn_red {
+  color: #f77;
+  background: 0 0;
+  border: 1px solid !important;
+}
+body.theme-dark button.btn_purple {
+  color: #ba60ff;
+  background: 0 0;
+  border: 1px solid !important;
+}
+body.theme-dark button.btn_blue {
+  color: #739df9;
+  background: 0 0;
+  border: 1px solid !important;
+}
+body.theme-dark .grad_button:hover {
+  color: var(--text-accent);
+}

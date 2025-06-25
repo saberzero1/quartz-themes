@@ -1,0 +1,114 @@
+body.mod-windows div.menu {
+  background-color: rgba(248, 248, 248, 0.6274509804) !important;
+  border: 1px solid rgba(54, 54, 54, 0.0705882353);
+  padding: 1px 5px;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  --menu-text-color: black;
+  --win-blue: #0078d4;
+  box-shadow:
+    0px 8px 8px 3px rgba(0, 0, 0, 0.05),
+    0px 7px 9px -7px rgba(0, 0, 0, 0.13);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body.mod-windows div.menu .menu-item {
+  border-radius: 4px !important;
+  margin: 4px 0;
+  padding: 5px 8px;
+  font-size: 14px;
+  transition: 0.09s;
+  font-weight: 400;
+  border-radius: 4px;
+}
+body.mod-windows div.menu .menu-item .menu-item-icon {
+  color: var(--menu-text-color);
+}
+body.mod-windows div.menu .menu-item .menu-item-icon svg {
+  fill: white;
+  stroke-width: 1px;
+  transform: scale(1.2);
+}
+body.mod-windows
+  div.menu
+  .menu-item
+  .menu-item-icon
+  svg
+  path[d="m9 14 2 2 4-4"],
+body.mod-windows div.menu .menu-item .menu-item-icon svg path[d="M9 12v-1h6v1"],
+body.mod-windows div.menu .menu-item .menu-item-icon svg path[d="M11 17h2"],
+body.mod-windows div.menu .menu-item .menu-item-icon svg path[d="M12 11v6"],
+body.mod-windows
+  div.menu
+  .menu-item
+  .menu-item-icon
+  svg
+  path[d="M18 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"],
+body.mod-windows
+  div.menu
+  .menu-item
+  .menu-item-icon
+  svg
+  path[d="M6 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"],
+body.mod-windows div.menu .menu-item .menu-item-icon svg path[d="M21 14H11"],
+body.mod-windows
+  div.menu
+  .menu-item
+  .menu-item-icon
+  svg
+  path[d="m15 10-4 4 4 4"],
+body.mod-windows
+  div.menu
+  .menu-item
+  .menu-item-icon
+  svg
+  path[d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"] {
+  color: var(--win-blue);
+}
+body.mod-windows div.menu .menu-item .menu-item-icon svg rect,
+body.mod-windows div.menu .menu-item .menu-item-icon svg circle {
+  color: var(--win-blue);
+}
+body.mod-windows div.menu .menu-item .menu-item-icon svg rect[y="2"],
+body.mod-windows div.menu .menu-item .menu-item-icon svg rect[y="3"] {
+  color: var(--menu-text-color);
+}
+body.mod-windows
+  div.menu
+  .menu-item
+  .menu-item-icon
+  svg
+  path[d="M15 6a9 9 0 0 0-9 9"],
+body.mod-windows
+  div.menu
+  .menu-item
+  .menu-item-icon
+  svg
+  path[d="m15 10-4 4 4 4"],
+body.mod-windows div.menu .menu-item .menu-item-icon svg polyline {
+  fill: none;
+}
+body.mod-windows div.menu .menu-item .menu-item-title {
+  color: var(--menu-text-color);
+}
+body.mod-windows div.menu .menu-item .cmdr-menu-more-options {
+  color: var(--menu-text-color);
+  opacity: 0.5;
+}
+body.mod-windows div.menu .menu-item .cmdr-menu-more-options:hover {
+  opacity: 1;
+}
+body.mod-windows div.menu .menu-item.is-disabled {
+  opacity: 0.5;
+}
+body.mod-windows div.menu .menu-item.selected:not(.is-disabled):not(.is-label) {
+  background-color: rgba(54, 54, 54, 0.0431372549);
+}
+body.mod-windows div.menu .menu-separator {
+  border-color: rgba(54, 54, 54, 0.0705882353);
+  margin: 6px 0 !important;
+}
+body.mod-windows.enable-mica div.menu {
+  background-color: rgba(250, 250, 250, 0.9411764706) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  backdrop-filter: blur(8px) !important;
+}

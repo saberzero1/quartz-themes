@@ -1,0 +1,84 @@
+body.style-options-for-buttons-plugin button.circle_btn {
+  box-shadow: none;
+  font-size: 12px;
+  word-break: keep-all;
+  margin: 4px;
+  padding: 0px;
+  height: 50px;
+  /* border-radius:50%; */
+  position: relative;
+  border: 0;
+  display: inline-grid;
+  text-align: center;
+  justify-items: center;
+}
+
+body.style-options-for-buttons-plugin button.blank {
+  box-shadow: none;
+  background: #fff0f000;
+  padding: 0;
+}
+
+body.style-options-for-buttons-plugin button.blank:hover {
+  animation: swing_image 0.8s linear 0s 1 normal;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+body.style-options-for-buttons-plugin
+  .admonition-content
+  span
+  > button.grad_button {
+  margin: 3px;
+}
+
+body.style-options-for-buttons-plugin button.grad_button {
+  margin: 5px;
+  line-height: inherit;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 90px;
+  padding: 0 18px;
+  height: 38px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 30px;
+  transition:
+    box-shadow 0.5s ease,
+    transform 0.2s ease;
+  will-change: transform;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transform: translateY(var(--ty, 0)) rotateX(var(--rx, 0))
+    rotateY(var(--ry, 0)) translateZ(var(--tz, -12px));
+}
+
+body.style-options-for-buttons-plugin button.grad_button:hover {
+  animation: swing_image 0.8s linear 0s 1 normal;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+body.style-options-for-buttons-plugin button.g_purple {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+}
+
+body.style-options-for-buttons-plugin button.g_blue {
+  background: linear-gradient(135deg, #3370ff, #9fb9f6);
+}
+
+body.style-options-for-buttons-plugin button.g_green {
+  background: linear-gradient(135deg, #0eb347, #5be08a);
+}
+
+body.style-options-for-buttons-plugin button.g_lightgreen {
+  color: #17695e;
+  background: linear-gradient(135deg, #adfdad, #dafdda);
+}
+
+body.style-options-for-buttons-plugin button.g_yellow {
+  color: #836f20;
+  background: linear-gradient(135deg, #fcd539, #ffeb9b);
+}

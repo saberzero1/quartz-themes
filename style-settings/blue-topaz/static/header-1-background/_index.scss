@@ -1,0 +1,4 @@
+body .cm-header-1,
+body :is(.markdown-preview-view, .markdown-rendered) h1 {
+  background-color: var(--h1-bg-color);
+}

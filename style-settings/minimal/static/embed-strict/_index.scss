@@ -1,0 +1,36 @@
+:root,
+body {
+  --embed-background: transparent;
+  --embed-border-start: 0;
+  --embed-border-left: 0;
+  --embed-padding: 0;
+}
+.markdown-embed-content {
+  --folding-offset: 0px;
+}
+.internal-embed .markdown-embed,
+.markdown-preview-view .markdown-embed,
+.markdown-preview-view .markdown-embed {
+  padding: 0;
+}
+.internal-embed .markdown-embed .markdown-embed-title,
+.markdown-embed-title {
+  display: none;
+}
+.internal-embed:not([src*="#^"]) .markdown-embed-link {
+  width: 24px;
+  opacity: 0;
+}
+.contextual-typography
+  .internal-embed
+  .markdown-preview-view
+  .markdown-preview-sizer
+  > div,
+.contextual-typography
+  .internal-embed
+  .markdown-preview-view
+  .markdown-preview-sizer
+  > div {
+  margin: 0;
+  width: 100%;
+}

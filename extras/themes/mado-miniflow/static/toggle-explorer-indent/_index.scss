@@ -1,0 +1,7 @@
+body:is(:not(.css-settings-manager), .toggle-explorer-indent)
+  .nav-folder
+  > .nav-folder-children {
+  border-inline-start: none;
+  padding-left: 33px;
+  margin-left: 0;
+}
