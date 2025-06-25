@@ -1,11 +1,14 @@
 export default function generateStaticCSS(cssString) {
   cssString = cssString.replace(/\/\*.*?\*\//gms, "")
-    return resolveCssVariables(cssString)
-/*        .replace(/var\(--[^\)]+\)\s*?\)/gms, "")
-        .replace(
-          /(--[\w-]+:\s*?[^;]*?)((?:rgba?\([^\(\)]+\)\s*?\)\s*?)+)/gms,
-          "$1",
-        );*/
+  let compareString = cssString
+  cssString = resolveCssVariables(cssString)
+
+  while (cssString !== compareString) {
+    compareString = cssString
+    cssString = resolveCssVariables(cssString)
+  }
+
+  return cssString;
 }
 
 /**
