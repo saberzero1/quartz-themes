@@ -22,33 +22,9 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --color-accent-2: hsl(208, 63%, 86.43%);
-  --color-accent-hsl: 193, 46%, 75%;
-  --color-base-100: #dadada;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-blue: #027aff;
-  --color-cyan: #53dfdd;
-  --color-green: #44cf6e;
-  --color-orange: #e9973f;
-  --color-pink: #fa99cd;
-  --color-purple: #a882ff;
-  --color-red: #fb464c;
+
   --text-accent: hsl(210, 61.2%, 77.05%);
-  --color-accent-2: hsl(208, 63%, 86.43%);
-  --color-accent-hsl: 193, 46%, 75%;
-  --color-base-100: #dadada;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-blue: #027aff;
-  --color-cyan: #53dfdd;
-  --color-green: #44cf6e;
-  --color-orange: #e9973f;
-  --color-pink: #fa99cd;
-  --color-purple: #a882ff;
-  --color-red: #fb464c;
+
   --text-accent: hsl(210, 61.2%, 77.05%);
 }
 
@@ -67,32 +43,6 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --color-accent-2: hsl(210, 61.2%, 77.05%);
-  --color-accent-hsl: 187, 30%, 45%;
-  --color-base-100: #222222;
-  --color-base-30: #e0e0e0;
-  --color-base-35: #d4d4d4;
-  --color-base-40: #bdbdbd;
-  --color-blue: #086ddd;
-  --color-cyan: #00bfbc;
-  --color-green: #08b94e;
-  --color-orange: #ec7500;
-  --color-pink: #d53984;
-  --color-purple: #7852ee;
-  --color-red: #e93147;
-  --color-accent-2: hsl(210, 61.2%, 77.05%);
-  --color-accent-hsl: 187, 30%, 45%;
-  --color-base-100: #222222;
-  --color-base-30: #e0e0e0;
-  --color-base-35: #d4d4d4;
-  --color-base-40: #bdbdbd;
-  --color-blue: #086ddd;
-  --color-cyan: #00bfbc;
-  --color-green: #08b94e;
-  --color-orange: #ec7500;
-  --color-pink: #d53984;
-  --color-purple: #7852ee;
-  --color-red: #e93147;
 }
 
 /* vietnamese */
@@ -134,7 +84,7 @@ html[saved-theme="light"] {
 
 :root {
   --color-accent-2: light-dark(hsl(208, 63%, 86.43%), hsl(210, 61.2%, 77.05%));
-  --color-accent-hsl: light-dark(213, 60%, 67%, 213, 60%, 67%);
+  --color-accent-hsl: light-dark(hsl(213, 60%, 67%), hsl(213, 60%, 67%));
   --color-base-100: light-dark(#dadada, #222222);
   --color-base-30: light-dark(#363636, #e0e0e0);
   --color-base-35: light-dark(#3f3f3f, #d4d4d4);
@@ -154,14 +104,14 @@ body {
   --background-modifier-hover: rgba(255, 255, 255, 0.067);
   --background-primary: rgb(25, 25, 46);
   --bold-color: rgb(232, 157, 149);
-  --bold-weight: 750;
+  --bold-weight: 800;
   --checkbox-border-color: rgb(187, 163, 121);
   --checkbox-border-color-hover: rgb(232, 157, 149);
   --checkbox-color: rgb(121, 166, 222);
   --checkbox-color-hover: rgb(195, 230, 148);
   --checkbox-marker-color: white;
   --checkbox-radius: 5px;
-  --checkbox-size: 0.9em;
+  --checkbox-size: 16px;
   --code-background: #151527;
   --code-comment: #a09a79;
   --code-function: #53dfdd;
@@ -175,28 +125,31 @@ body {
   --code-value: #a882ff;
   --collapse-icon-color: #a09a79;
   --collapse-icon-color-collapsed: hsl(210, 61.2%, 77.05%);
-  --color-accent-2: rgb(195, 230, 148);
-  --color-base-100: #ced9bf;
-  --color-base-30: #37465f;
-  --color-base-35: transparent;
-  --color-base-40: rgb(48, 62, 85);
-  --color-blue: rgb(121, 166, 222);
-  --color-cyan: rgb(195, 230, 148);
-  --color-green: rgb(195, 230, 148);
-  --color-orange: rgb(246, 173, 119);
-  --color-pink: rgb(232, 157, 149);
-  --color-purple: rgb(145, 145, 188);
-  --color-red: rgb(187, 163, 121);
+  --color-accent-2: light-dark(hsl(208, 63%, 86.43%), hsl(210, 61.2%, 77.05%));
+  --color-accent-hsl: light-dark(hsl(213, 60%, 67%), hsl(213, 60%, 67%));
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
   --font-text:
-    "??", "??", "??", "Lexend", "Inter", ui-sans-serif, -apple-system,
+    "??", "??", "Lexend", "Inter", ui-sans-serif, -apple-system,
     BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif,
-    sans-serif, "Arial";
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --graph-line: rgb(48, 62, 85);
   --graph-node-tag: rgb(195, 230, 148);
   --graph-node-unresolved: #a09a79;
@@ -242,12 +195,12 @@ body {
   --text-faint: #a09a79;
   --text-highlight-bg: rgba(246, 173, 119, 0.2);
   --text-muted: #a09a79;
-  --text-normal: black;
+  --text-normal: #ced9bf;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-user-select: none;
   background-color: rgba(25, 25, 46, 0.8);
   caret-color: hsl(210, 61.2%, 77.05%);
-  color: black;
+  color: #ced9bf;
   contain: initial;
   font-family:
     "??",
@@ -277,7 +230,7 @@ body {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-size: 0.9em;
+  font-size: 16px;
   height: 100%;
   line-height: 1.2em;
   margin: 0;
@@ -290,96 +243,6 @@ body {
   user-select: none;
   width: 100%;
 }
-/* START DARK */
-:root[saved-theme="dark"],
-html[saved-theme="dark"] {
-  color-scheme: dark;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
-  --color-accent-2: hsl(208, 63%, 86.43%);
-  --color-accent-hsl: 193, 46%, 75%;
-  --color-base-100: #dadada;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-blue: #027aff;
-  --color-cyan: #53dfdd;
-  --color-green: #44cf6e;
-  --color-orange: #e9973f;
-  --color-pink: #fa99cd;
-  --color-purple: #a882ff;
-  --color-red: #fb464c;
-  --text-accent: hsl(210, 61.2%, 77.05%);
-  --color-accent-2: hsl(208, 63%, 86.43%);
-  --color-accent-hsl: 193, 46%, 75%;
-  --color-base-100: #dadada;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-blue: #027aff;
-  --color-cyan: #53dfdd;
-  --color-green: #44cf6e;
-  --color-orange: #e9973f;
-  --color-pink: #fa99cd;
-  --color-purple: #a882ff;
-  --color-red: #fb464c;
-  --text-accent: hsl(210, 61.2%, 77.05%);
-}
-/* END DARK */
-/* START LIGHT */
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  color-scheme: light;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
-  --color-accent-2: hsl(210, 61.2%, 77.05%);
-  --color-accent-hsl: 187, 30%, 45%;
-  --color-base-100: #222222;
-  --color-base-30: #e0e0e0;
-  --color-base-35: #d4d4d4;
-  --color-base-40: #bdbdbd;
-  --color-blue: #086ddd;
-  --color-cyan: #00bfbc;
-  --color-green: #08b94e;
-  --color-orange: #ec7500;
-  --color-pink: #d53984;
-  --color-purple: #7852ee;
-  --color-red: #e93147;
-  --color-accent-2: hsl(210, 61.2%, 77.05%);
-  --color-accent-hsl: 187, 30%, 45%;
-  --color-base-100: #222222;
-  --color-base-30: #e0e0e0;
-  --color-base-35: #d4d4d4;
-  --color-base-40: #bdbdbd;
-  --color-blue: #086ddd;
-  --color-cyan: #00bfbc;
-  --color-green: #08b94e;
-  --color-orange: #ec7500;
-  --color-pink: #d53984;
-  --color-purple: #7852ee;
-  --color-red: #e93147;
-}
-/* END LIGHT */
 /* CALLOUTS */
 :root,
 html {
@@ -846,7 +709,7 @@ body {
     --link-weight: 600;
   }
   h6 {
-    color: black;
+    color: #ced9bf;
     font-family:
       "??",
       "??",
@@ -990,7 +853,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-size: 0.72em;
+    font-size: 12.8px;
     height: auto;
     inset-inline-end: 0;
     margin: 6px;
@@ -1006,7 +869,7 @@ body {
   }
   /* METADATA */
   .content-meta {
-    color: black;
+    color: #ced9bf;
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {
@@ -1112,10 +975,10 @@ body {
         position: relative;
         a {
           border-radius: 4px;
-          color: black;
+          color: #ced9bf;
           cursor: pointer;
           display: flex;
-          font-size: 0.72em;
+          font-size: 12.8px;
           font-weight: inherit;
           line-height: 1.2em;
           margin-bottom: 2px;
@@ -1190,9 +1053,9 @@ body {
     ul.toc-content.overflow {
       li,
       li > a {
-        color: black;
+        color: #ced9bf;
         font-weight: inherit;
-        font-size: 0.72em;
+        font-size: 12.8px;
       }
     }
   }
@@ -1286,9 +1149,9 @@ body {
       background: transparent;
       border: 1px solid transparent;
       border-radius: 30px;
-      color: black;
+      color: #ced9bf;
       font-family: inherit;
-      font-size: 0.8433em;
+      font-size: 14.992px;
       height: 40px;
       outline: none;
       padding: 4px 8px;
@@ -1312,7 +1175,7 @@ body {
           border: none;
           border-bottom: 1px solid rgba(25, 25, 46, 0.8);
           border-radius: 0;
-          font-size: 0.9em;
+          font-size: 16px;
           height: 48px;
           padding: 24px;
           padding-inline-end: 48px;
@@ -1322,7 +1185,7 @@ body {
           background: transparent;
         }
         & > * {
-          color: black;
+          color: #ced9bf;
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1336,7 +1199,7 @@ body {
             color: rgb(232, 157, 149);
             font-weight: bold;
             background-color: rgba(246, 173, 119, 0.2);
-            color: black;
+            color: #ced9bf;
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1356,7 +1219,7 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: black;
+                color: #ced9bf;
                 &.match-tag {
                   color: #e9973f;
                 }

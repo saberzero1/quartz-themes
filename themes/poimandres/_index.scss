@@ -45,19 +45,6 @@ html[saved-theme="dark"] {
   --code-string: #7bbfb0;
   --code-tag: #7bbfb0;
   --code-value: #7bbfb0;
-  --color-accent-2: #7eabca;
-  --color-accent-hsl: 210, 40%, 50%;
-  --color-base-100: #dadada;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-blue: #027aff;
-  --color-cyan: #53dfdd;
-  --color-green: #44cf6e;
-  --color-orange: #e9973f;
-  --color-pink: #fa99cd;
-  --color-purple: #a882ff;
-  --color-red: #fb464c;
   --graph-line: #7da0b3;
   --graph-node-tag: #f2a070;
   --h1-color: #84bfcf;
@@ -99,19 +86,6 @@ html[saved-theme="dark"] {
   --code-string: #7bbfb0;
   --code-tag: #7bbfb0;
   --code-value: #7bbfb0;
-  --color-accent-2: #7eabca;
-  --color-accent-hsl: 210, 40%, 50%;
-  --color-base-100: #dadada;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-blue: #027aff;
-  --color-cyan: #53dfdd;
-  --color-green: #44cf6e;
-  --color-orange: #e9973f;
-  --color-pink: #fa99cd;
-  --color-purple: #a882ff;
-  --color-red: #fb464c;
   --graph-line: #7da0b3;
   --graph-node-tag: #f2a070;
   --h1-color: #84bfcf;
@@ -298,7 +272,7 @@ html[saved-theme="dark"] {
 
 :root {
   --color-accent-2: light-dark(#7eabca, #6697bf);
-  --color-accent-hsl: light-dark(210, 40%, 50%, 210, 40%, 50%);
+  --color-accent-hsl: light-dark(#4d80b3, #4d80b3);
   --color-base-100: light-dark(#dadada, #222222);
   --color-base-30: light-dark(#363636, #e0e0e0);
   --color-base-35: light-dark(#3f3f3f, #d4d4d4);
@@ -339,12 +313,28 @@ body {
   --code-value: #a882ff;
   --collapse-icon-color: #7da0b3;
   --collapse-icon-color-collapsed: #d2a5c4;
+  --color-accent-2: light-dark(#7eabca, #6697bf);
+  --color-accent-hsl: light-dark(#4d80b3, #4d80b3);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
-  --font-text: "??", "??", "??", "Arial";
+  --font-text:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --graph-line: #3f3f3f;
   --graph-node-tag: #44cf6e;
   --graph-node-unresolved: #7da0b3;
@@ -416,132 +406,6 @@ body {
   user-select: none;
   width: 100%;
 }
-/* START DARK */
-:root,
-html {
-  color-scheme: dark;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
-  --background-modifier-border: #25272e;
-  --background-modifier-border-focus: #25272e;
-  --background-modifier-border-hover: #25272e;
-  --background-modifier-hover: 40%;
-  --background-primary: #1b1d23;
-  --bold-color: #84bfcf;
-  --checkbox-border-color: #7da0b3;
-  --checkbox-border-color-hover: #7da0b3;
-  --checkbox-color: #7da0b3;
-  --checkbox-color-hover: #7da0b3;
-  --checkbox-marker-color: #6f9fad;
-  --checkbox-radius: 4px;
-  --code-background: #20232a;
-  --code-comment: #b8bfc9;
-  --code-function: #84bfcf;
-  --code-important: #c06075;
-  --code-keyword: #6a998f;
-  --code-normal: #e4e7ea;
-  --code-property: #e4e7ea;
-  --code-punctuation: #6a998f;
-  --code-string: #7bbfb0;
-  --code-tag: #7bbfb0;
-  --code-value: #7bbfb0;
-  --color-accent-2: #7eabca;
-  --color-accent-hsl: 210, 40%, 50%;
-  --color-base-100: #dadada;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-blue: #027aff;
-  --color-cyan: #53dfdd;
-  --color-green: #44cf6e;
-  --color-orange: #e9973f;
-  --color-pink: #fa99cd;
-  --color-purple: #a882ff;
-  --color-red: #fb464c;
-  --graph-line: #7da0b3;
-  --graph-node-tag: #f2a070;
-  --h1-color: #84bfcf;
-  --italic-color: #84bfcf;
-  --link-color: #b8bfc9;
-  --link-color-hover: #84bfcf;
-  --link-external-color: #b8bfc9;
-  --link-external-color-hover: #84bfcf;
-  --tag-background: #d2a5c4;
-  --tag-background-hover: #84bfcf;
-  --tag-color: #d2a5c4;
-  --tag-color-hover: #84bfcf;
-  --text-accent: #d2a5c4;
-  --text-accent-hover: #84bfcf;
-  --text-faint: #7da0b3;
-  --text-highlight-bg: #f2a070;
-  --text-muted: #b8bfc9;
-  --text-normal: #e4e7ea;
-  --background-modifier-border: #25272e;
-  --background-modifier-border-focus: #25272e;
-  --background-modifier-border-hover: #25272e;
-  --background-modifier-hover: 40%;
-  --background-primary: #1b1d23;
-  --bold-color: #84bfcf;
-  --checkbox-border-color: #7da0b3;
-  --checkbox-border-color-hover: #7da0b3;
-  --checkbox-color: #7da0b3;
-  --checkbox-color-hover: #7da0b3;
-  --checkbox-marker-color: #6f9fad;
-  --checkbox-radius: 4px;
-  --code-background: #20232a;
-  --code-comment: #b8bfc9;
-  --code-function: #84bfcf;
-  --code-important: #c06075;
-  --code-keyword: #6a998f;
-  --code-normal: #e4e7ea;
-  --code-property: #e4e7ea;
-  --code-punctuation: #6a998f;
-  --code-string: #7bbfb0;
-  --code-tag: #7bbfb0;
-  --code-value: #7bbfb0;
-  --color-accent-2: #7eabca;
-  --color-accent-hsl: 210, 40%, 50%;
-  --color-base-100: #dadada;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-blue: #027aff;
-  --color-cyan: #53dfdd;
-  --color-green: #44cf6e;
-  --color-orange: #e9973f;
-  --color-pink: #fa99cd;
-  --color-purple: #a882ff;
-  --color-red: #fb464c;
-  --graph-line: #7da0b3;
-  --graph-node-tag: #f2a070;
-  --h1-color: #84bfcf;
-  --italic-color: #84bfcf;
-  --link-color: #b8bfc9;
-  --link-color-hover: #84bfcf;
-  --link-external-color: #b8bfc9;
-  --link-external-color-hover: #84bfcf;
-  --tag-background: #d2a5c4;
-  --tag-background-hover: #84bfcf;
-  --tag-color: #d2a5c4;
-  --tag-color-hover: #84bfcf;
-  --text-accent: #d2a5c4;
-  --text-accent-hover: #84bfcf;
-  --text-faint: #7da0b3;
-  --text-highlight-bg: #f2a070;
-  --text-muted: #b8bfc9;
-  --text-normal: #e4e7ea;
-}
-/* END DARK */
 /* CALLOUTS */
 :root,
 html {

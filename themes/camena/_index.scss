@@ -22,33 +22,7 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --color-accent-2: hsl(253, 92.4%, 85.14%);
-  --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: hsl(258, 29.33333%, 80%);
-  --color-base-30: hsl(258, 29.33333%, 25%);
-  --color-base-35: hsl(258, 29.33333%, 30%);
-  --color-base-40: hsl(258, 29.33333%, 35%);
-  --color-blue: hsl(210, 88%, 66%);
-  --color-cyan: hsl(185, 88%, 66%);
-  --color-green: hsl(100, 88%, 66%);
-  --color-orange: hsl(25, 88%, 66%);
-  --color-pink: hsl(320, 88%, 66%);
-  --color-purple: hsl(270, 88%, 66%);
-  --color-red: hsl(5, 88%, 66%);
   --text-accent: hsl(255, 89.76%, 75.9%);
-  --color-accent-2: hsl(253, 92.4%, 85.14%);
-  --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: hsl(258, 29.33333%, 80%);
-  --color-base-30: hsl(258, 29.33333%, 25%);
-  --color-base-35: hsl(258, 29.33333%, 30%);
-  --color-base-40: hsl(258, 29.33333%, 35%);
-  --color-blue: hsl(210, 88%, 66%);
-  --color-cyan: hsl(185, 88%, 66%);
-  --color-green: hsl(100, 88%, 66%);
-  --color-orange: hsl(25, 88%, 66%);
-  --color-pink: hsl(320, 88%, 66%);
-  --color-purple: hsl(270, 88%, 66%);
-  --color-red: hsl(5, 88%, 66%);
   --text-accent: hsl(255, 89.76%, 75.9%);
 }
 
@@ -67,32 +41,6 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --color-accent-2: hsl(255, 89.76%, 75.9%);
-  --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: hsl(258, 29.33333%, 20%);
-  --color-base-30: hsl(258, 29.33333%, 75%);
-  --color-base-35: hsl(258, 29.33333%, 70%);
-  --color-base-40: hsl(258, 29.33333%, 65%);
-  --color-blue: hsl(210, 88%, 66%);
-  --color-cyan: hsl(185, 88%, 66%);
-  --color-green: hsl(100, 88%, 66%);
-  --color-orange: hsl(25, 88%, 66%);
-  --color-pink: hsl(320, 88%, 66%);
-  --color-purple: hsl(270, 88%, 66%);
-  --color-red: hsl(5, 88%, 66%);
-  --color-accent-2: hsl(255, 89.76%, 75.9%);
-  --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: hsl(258, 29.33333%, 20%);
-  --color-base-30: hsl(258, 29.33333%, 75%);
-  --color-base-35: hsl(258, 29.33333%, 70%);
-  --color-base-40: hsl(258, 29.33333%, 65%);
-  --color-blue: hsl(210, 88%, 66%);
-  --color-cyan: hsl(185, 88%, 66%);
-  --color-green: hsl(100, 88%, 66%);
-  --color-orange: hsl(25, 88%, 66%);
-  --color-pink: hsl(320, 88%, 66%);
-  --color-purple: hsl(270, 88%, 66%);
-  --color-red: hsl(5, 88%, 66%);
 }
 
 @font-face {
@@ -119,7 +67,7 @@ html[saved-theme="light"] {
     hsl(253, 92.4%, 85.14%),
     hsl(255, 89.76%, 75.9%)
   );
-  --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-base-100: light-dark(#dadada, #222222);
   --color-base-30: light-dark(#363636, #e0e0e0);
   --color-base-35: light-dark(#3f3f3f, #d4d4d4);
@@ -136,7 +84,7 @@ body {
   --background-modifier-border: hsl(258, 29.33333%, 25%);
   --background-modifier-border-focus: hsl(258, 29.33333%, 35%);
   --background-modifier-border-hover: hsl(258, 29.33333%, 30%);
-  --background-modifier-hover: rgba(from hsl(258, 88%, 66%) r g b / 0.2);
+  --background-modifier-hover: rgba(138, 92, 245, 0.2);
   --background-primary: #000;
   --bold-color: inherit;
   --bold-weight: 800;
@@ -147,7 +95,7 @@ body {
   --checkbox-marker-color: #000;
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --code-background: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+  --code-background: rgba(138, 92, 245, 0.1);
   --code-comment: hsl(258, 29.33333%, 35%);
   --code-function: hsl(50, 88%, 66%);
   --code-important: hsl(25, 88%, 66%);
@@ -160,17 +108,35 @@ body {
   --code-value: hsl(270, 88%, 66%);
   --collapse-icon-color: hsl(258, 29.33333%, 25%);
   --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+  --color-accent-2: light-dark(
+    hsl(253, 92.4%, 85.14%),
+    hsl(255, 89.76%, 75.9%)
+  );
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
   --font-text:
-    "??", "??", Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif, "Arial";
+    "??", Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif,
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
   --graph-line: hsl(258, 29.33333%, 30%);
   --graph-node-tag: hsl(50, 88%, 66%);
-  --graph-node-unresolved: rgba(from hsl(5, 88%, 66%) r g b / 0.8);
+  --graph-node-unresolved: rgba(245, 105, 92, 0.8);
   --h1-color: hsl(258, 88%, 66%);
   --h1-font: inherit;
   --h3-line-height: 1.3;
@@ -184,7 +150,7 @@ body {
   --link-color: hsl(258, 88%, 66%);
   --link-color-hover: hsl(258, 88%, 66%);
   --link-external-color: hsl(258, 88%, 66%);
-  --link-external-color-hover: rgb(from hsl(258, 88%, 66%) r g b);
+  --link-external-color-hover: rgb(138, 92, 245);
   --link-external-filter: none;
   --link-weight: 600;
   --p-spacing: 1.5rem;
@@ -203,7 +169,7 @@ body {
   --text-accent: hsl(258, 88%, 66%);
   --text-accent-hover: hsl(253, 92.4%, 85.14%);
   --text-faint: hsl(258, 29.33333%, 25%);
-  --text-highlight-bg: rgba(from hsl(258, 88%, 66%) r g b / 0.25);
+  --text-highlight-bg: rgba(138, 92, 245, 0.25);
   --text-muted: hsl(258, 29.33333%, 40%);
   --text-normal: hsl(258, 29.33333%, 80%);
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
@@ -244,102 +210,12 @@ body {
   user-select: none;
   width: 100%;
 }
-/* START DARK */
-:root[saved-theme="dark"],
-html[saved-theme="dark"] {
-  color-scheme: dark;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
-  --color-accent-2: hsl(253, 92.4%, 85.14%);
-  --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: hsl(258, 29.33333%, 80%);
-  --color-base-30: hsl(258, 29.33333%, 25%);
-  --color-base-35: hsl(258, 29.33333%, 30%);
-  --color-base-40: hsl(258, 29.33333%, 35%);
-  --color-blue: hsl(210, 88%, 66%);
-  --color-cyan: hsl(185, 88%, 66%);
-  --color-green: hsl(100, 88%, 66%);
-  --color-orange: hsl(25, 88%, 66%);
-  --color-pink: hsl(320, 88%, 66%);
-  --color-purple: hsl(270, 88%, 66%);
-  --color-red: hsl(5, 88%, 66%);
-  --text-accent: hsl(255, 89.76%, 75.9%);
-  --color-accent-2: hsl(253, 92.4%, 85.14%);
-  --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: hsl(258, 29.33333%, 80%);
-  --color-base-30: hsl(258, 29.33333%, 25%);
-  --color-base-35: hsl(258, 29.33333%, 30%);
-  --color-base-40: hsl(258, 29.33333%, 35%);
-  --color-blue: hsl(210, 88%, 66%);
-  --color-cyan: hsl(185, 88%, 66%);
-  --color-green: hsl(100, 88%, 66%);
-  --color-orange: hsl(25, 88%, 66%);
-  --color-pink: hsl(320, 88%, 66%);
-  --color-purple: hsl(270, 88%, 66%);
-  --color-red: hsl(5, 88%, 66%);
-  --text-accent: hsl(255, 89.76%, 75.9%);
-}
-/* END DARK */
-/* START LIGHT */
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  color-scheme: light;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
-  --color-accent-2: hsl(255, 89.76%, 75.9%);
-  --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: hsl(258, 29.33333%, 20%);
-  --color-base-30: hsl(258, 29.33333%, 75%);
-  --color-base-35: hsl(258, 29.33333%, 70%);
-  --color-base-40: hsl(258, 29.33333%, 65%);
-  --color-blue: hsl(210, 88%, 66%);
-  --color-cyan: hsl(185, 88%, 66%);
-  --color-green: hsl(100, 88%, 66%);
-  --color-orange: hsl(25, 88%, 66%);
-  --color-pink: hsl(320, 88%, 66%);
-  --color-purple: hsl(270, 88%, 66%);
-  --color-red: hsl(5, 88%, 66%);
-  --color-accent-2: hsl(255, 89.76%, 75.9%);
-  --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: hsl(258, 29.33333%, 20%);
-  --color-base-30: hsl(258, 29.33333%, 75%);
-  --color-base-35: hsl(258, 29.33333%, 70%);
-  --color-base-40: hsl(258, 29.33333%, 65%);
-  --color-blue: hsl(210, 88%, 66%);
-  --color-cyan: hsl(185, 88%, 66%);
-  --color-green: hsl(100, 88%, 66%);
-  --color-orange: hsl(25, 88%, 66%);
-  --color-pink: hsl(320, 88%, 66%);
-  --color-purple: hsl(270, 88%, 66%);
-  --color-red: hsl(5, 88%, 66%);
-}
-/* END LIGHT */
 /* CALLOUTS */
 :root,
 html {
   .callout {
-    background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
-    border-color: rgba(from hsl(258, 88%, 66%) r g b / 0.25);
+    background-color: rgba(138, 92, 245, 0.1);
+    border-color: rgba(138, 92, 245, 0.25);
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
@@ -347,94 +223,94 @@ html {
     mix-blend-mode: normal;
     overflow: hidden;
     padding: 12px 24px 12px 12px;
-    background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+    background-color: rgba(138, 92, 245, 0.1);
     overflow-x: auto;
     overflow-y: hidden;
     &[data-callout] {
-      background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+      background-color: rgba(138, 92, 245, 0.1);
     }
     &[data-callout="abstract"] {
-      background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+      background-color: rgba(138, 92, 245, 0.1);
     }
     &[data-callout="summary"] {
-      background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+      background-color: rgba(138, 92, 245, 0.1);
     }
     &[data-callout="tldr"] {
-      background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+      background-color: rgba(138, 92, 245, 0.1);
     }
     &[data-callout="info"] {
-      background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+      background-color: rgba(138, 92, 245, 0.1);
     }
     &[data-callout="todo"] {
-      background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+      background-color: rgba(138, 92, 245, 0.1);
     }
     &[data-callout="important"] {
-      background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+      background-color: rgba(138, 92, 245, 0.1);
     }
     &[data-callout="tip"] {
-      background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+      background-color: rgba(138, 92, 245, 0.1);
     }
     &[data-callout="hint"] {
-      background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+      background-color: rgba(138, 92, 245, 0.1);
     }
     &[data-callout="success"] {
-      background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+      background-color: rgba(138, 92, 245, 0.1);
     }
     &[data-callout="check"] {
-      background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+      background-color: rgba(138, 92, 245, 0.1);
     }
     &[data-callout="done"] {
-      background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+      background-color: rgba(138, 92, 245, 0.1);
     }
     &[data-callout="question"] {
-      background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+      background-color: rgba(138, 92, 245, 0.1);
     }
     &[data-callout="help"] {
-      background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+      background-color: rgba(138, 92, 245, 0.1);
     }
     &[data-callout="faq"] {
-      background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+      background-color: rgba(138, 92, 245, 0.1);
     }
     &[data-callout="warning"] {
-      background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+      background-color: rgba(138, 92, 245, 0.1);
     }
     &[data-callout="caution"] {
-      background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+      background-color: rgba(138, 92, 245, 0.1);
     }
     &[data-callout="attention"] {
-      background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+      background-color: rgba(138, 92, 245, 0.1);
     }
     &[data-callout="failure"] {
-      background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+      background-color: rgba(138, 92, 245, 0.1);
     }
     &[data-callout="fail"] {
-      background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+      background-color: rgba(138, 92, 245, 0.1);
     }
     &[data-callout="missing"] {
-      background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+      background-color: rgba(138, 92, 245, 0.1);
     }
     &[data-callout="danger"] {
-      background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+      background-color: rgba(138, 92, 245, 0.1);
     }
     &[data-callout="error"] {
-      background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+      background-color: rgba(138, 92, 245, 0.1);
     }
     &[data-callout="bug"] {
-      background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+      background-color: rgba(138, 92, 245, 0.1);
     }
     &[data-callout="example"] {
-      background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+      background-color: rgba(138, 92, 245, 0.1);
     }
     &[data-callout="quote"] {
-      background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+      background-color: rgba(138, 92, 245, 0.1);
     }
     &[data-callout="cite"] {
-      background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+      background-color: rgba(138, 92, 245, 0.1);
     }
   }
   .callout-title {
     align-items: flex-start;
-    color: rgb(from hsl(258, 88%, 66%) r g b);
+    color: rgb(138, 92, 245);
     display: flex;
     font-size: inherit;
     gap: 4px;
@@ -639,7 +515,7 @@ body {
     --link-weight: 700;
   }
   h2 {
-    background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+    background-color: rgba(138, 92, 245, 0.1);
     border-radius: 0.5rem;
     color: hsl(258, 88%, 66%);
     font-family:
@@ -726,7 +602,7 @@ body {
   }
   /* CODE */
   pre {
-    background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+    background-color: rgba(138, 92, 245, 0.1);
     border: 0px solid transparent;
     border-radius: 4px;
     min-height: 38px;
@@ -743,10 +619,10 @@ body {
   }
   code {
     -webkit-box-decoration-break: clone;
-    background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+    background-color: rgba(138, 92, 245, 0.1);
     border: 0px solid transparent;
     border-radius: 4px;
-    color: rgb(from hsl(258, 88%, 66%) r g b);
+    color: rgb(138, 92, 245);
     font-family:
       "??", ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
       "DejaVu Sans Mono", monospace, ui-monospace, SFMono-Regular,
@@ -1119,7 +995,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.15);
+            background-color: rgba(138, 92, 245, 0.15);
             border-radius: 0.2rem;
             color: hsl(258, 29.33333%, 80%);
             padding: 0.1rem 0.05rem;

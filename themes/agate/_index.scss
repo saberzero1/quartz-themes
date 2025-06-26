@@ -23,33 +23,7 @@ html[saved-theme="light"] {
     color: var(--shiki-light);
   }
   --background-primary: linear-gradient(to left, #ffffff00 93%, #14141433);
-  --color-accent-2: #a68af9;
-  --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: #141414;
-  --color-base-30: #1413132c;
-  --color-base-35: #d5d0d034;
-  --color-base-40: #d5d0d034;
-  --color-blue: #086ddd;
-  --color-cyan: #00bfbc;
-  --color-green: #08b94e;
-  --color-orange: #ec7500;
-  --color-pink: #d53984;
-  --color-purple: #7852ee;
-  --color-red: #e93147;
   --background-primary: linear-gradient(to left, #ffffff00 93%, #14141433);
-  --color-accent-2: #a68af9;
-  --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: #141414;
-  --color-base-30: #1413132c;
-  --color-base-35: #d5d0d034;
-  --color-base-40: #d5d0d034;
-  --color-blue: #086ddd;
-  --color-cyan: #00bfbc;
-  --color-green: #08b94e;
-  --color-orange: #ec7500;
-  --color-pink: #d53984;
-  --color-purple: #7852ee;
-  --color-red: #e93147;
 }
 
 .darkmode {
@@ -344,7 +318,7 @@ html[saved-theme="light"] {
 
 :root {
   --color-accent-2: light-dark(#c5b6fc, #a68af9);
-  --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
+  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
   --color-base-100: light-dark(#dadada, #222222);
   --color-base-30: light-dark(#363636, #e0e0e0);
   --color-base-35: light-dark(#3f3f3f, #d4d4d4);
@@ -385,12 +359,28 @@ body {
   --code-value: #3700ff;
   --collapse-icon-color: #666666;
   --collapse-icon-color-collapsed: #a68af9;
+  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
-  --font-text: "??", "??", "Noto Serif KR", serif, "Arial";
+  --font-text:
+    "??", "Noto Serif KR", serif, ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --graph-line: #14141433;
   --graph-node-tag: #44cf6e;
   --graph-node-unresolved: #666666;
@@ -463,52 +453,6 @@ body {
   user-select: none;
   width: 100%;
 }
-/* START LIGHT */
-:root,
-html {
-  color-scheme: light;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
-  --background-primary: linear-gradient(to left, #ffffff00 93%, #14141433);
-  --color-accent-2: #a68af9;
-  --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: #141414;
-  --color-base-30: #1413132c;
-  --color-base-35: #d5d0d034;
-  --color-base-40: #d5d0d034;
-  --color-blue: #086ddd;
-  --color-cyan: #00bfbc;
-  --color-green: #08b94e;
-  --color-orange: #ec7500;
-  --color-pink: #d53984;
-  --color-purple: #7852ee;
-  --color-red: #e93147;
-  --background-primary: linear-gradient(to left, #ffffff00 93%, #14141433);
-  --color-accent-2: #a68af9;
-  --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: #141414;
-  --color-base-30: #1413132c;
-  --color-base-35: #d5d0d034;
-  --color-base-40: #d5d0d034;
-  --color-blue: #086ddd;
-  --color-cyan: #00bfbc;
-  --color-green: #08b94e;
-  --color-orange: #ec7500;
-  --color-pink: #d53984;
-  --color-purple: #7852ee;
-  --color-red: #e93147;
-}
-/* END LIGHT */
 /* CALLOUTS */
 :root,
 html {

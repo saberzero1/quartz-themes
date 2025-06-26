@@ -25,35 +25,11 @@ html[saved-theme="dark"] {
 
   --background-modifier-border: #323130;
   --background-modifier-hover: #ffffff0a;
-  --color-accent-2: #61b4ee;
-  --color-accent-hsl: 210, 77%, 51%;
-  --color-base-100: #dadada;
-  --color-base-30: #21201e;
-  --color-base-35: #363636;
-  --color-base-40: #535353;
-  --color-blue: #337ea9;
-  --color-cyan: #337ea9;
-  --color-green: #529e90;
-  --color-orange: #c77d48;
-  --color-pink: #d15796;
-  --color-purple: #9d68d3;
-  --color-red: #df5452;
+
   --text-accent: #439ee8;
   --background-modifier-border: #323130;
   --background-modifier-hover: #ffffff0a;
-  --color-accent-2: #61b4ee;
-  --color-accent-hsl: 210, 77%, 51%;
-  --color-base-100: #dadada;
-  --color-base-30: #21201e;
-  --color-base-35: #363636;
-  --color-base-40: #535353;
-  --color-blue: #337ea9;
-  --color-cyan: #337ea9;
-  --color-green: #529e90;
-  --color-orange: #c77d48;
-  --color-pink: #d15796;
-  --color-purple: #9d68d3;
-  --color-red: #df5452;
+
   --text-accent: #439ee8;
 }
 
@@ -73,33 +49,7 @@ html[saved-theme="light"] {
     color: var(--shiki-light);
   }
   --background-modifier-hover: #0000000a;
-  --color-accent-2: #439ee8;
-  --color-accent-hsl: 210, 77%, 51%;
-  --color-base-100: #37352f;
-  --color-base-30: #dfdfdf;
-  --color-base-35: #f1f1f0;
-  --color-base-40: #afafaf;
-  --color-blue: #337ea9;
-  --color-cyan: #337ea9;
-  --color-green: #448361;
-  --color-orange: #d9730d;
-  --color-pink: #c14c8a;
-  --color-purple: #9065b0;
-  --color-red: #d44c47;
   --background-modifier-hover: #0000000a;
-  --color-accent-2: #439ee8;
-  --color-accent-hsl: 210, 77%, 51%;
-  --color-base-100: #37352f;
-  --color-base-30: #dfdfdf;
-  --color-base-35: #f1f1f0;
-  --color-base-40: #afafaf;
-  --color-blue: #337ea9;
-  --color-cyan: #337ea9;
-  --color-green: #448361;
-  --color-orange: #d9730d;
-  --color-pink: #c14c8a;
-  --color-purple: #9065b0;
-  --color-red: #d44c47;
 }
 
 @font-face {
@@ -177,7 +127,7 @@ html[saved-theme="light"] {
 
 :root {
   --color-accent-2: light-dark(#61b4ee, #439ee8);
-  --color-accent-hsl: light-dark(210, 77%, 51%, 210, 77%, 51%);
+  --color-accent-hsl: light-dark(#2282e2, #2282e2);
   --color-base-100: light-dark(#dadada, #222222);
   --color-base-30: light-dark(#363636, #e0e0e0);
   --color-base-35: light-dark(#3f3f3f, #d4d4d4);
@@ -218,6 +168,19 @@ body {
   --code-value: #9a6dd7;
   --collapse-icon-color: #ffffff8c;
   --collapse-icon-color-collapsed: #ffffff73;
+  --color-accent-2: light-dark(#61b4ee, #439ee8);
+  --color-accent-hsl: light-dark(#2282e2, #2282e2);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
   --cursor-link: pointer;
   --font-default:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
@@ -294,103 +257,6 @@ body {
   user-select: none;
   width: 100%;
 }
-/* START DARK */
-:root[saved-theme="dark"],
-html[saved-theme="dark"] {
-  color-scheme: dark;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
-
-  --background-modifier-border: #323130;
-  --background-modifier-hover: #ffffff0a;
-  --color-accent-2: #61b4ee;
-  --color-accent-hsl: 210, 77%, 51%;
-  --color-base-100: #dadada;
-  --color-base-30: #21201e;
-  --color-base-35: #363636;
-  --color-base-40: #535353;
-  --color-blue: #337ea9;
-  --color-cyan: #337ea9;
-  --color-green: #529e90;
-  --color-orange: #c77d48;
-  --color-pink: #d15796;
-  --color-purple: #9d68d3;
-  --color-red: #df5452;
-  --text-accent: #439ee8;
-  --background-modifier-border: #323130;
-  --background-modifier-hover: #ffffff0a;
-  --color-accent-2: #61b4ee;
-  --color-accent-hsl: 210, 77%, 51%;
-  --color-base-100: #dadada;
-  --color-base-30: #21201e;
-  --color-base-35: #363636;
-  --color-base-40: #535353;
-  --color-blue: #337ea9;
-  --color-cyan: #337ea9;
-  --color-green: #529e90;
-  --color-orange: #c77d48;
-  --color-pink: #d15796;
-  --color-purple: #9d68d3;
-  --color-red: #df5452;
-  --text-accent: #439ee8;
-}
-/* END DARK */
-/* START LIGHT */
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  color-scheme: light;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
-  --background-modifier-hover: #0000000a;
-  --color-accent-2: #439ee8;
-  --color-accent-hsl: 210, 77%, 51%;
-  --color-base-100: #37352f;
-  --color-base-30: #dfdfdf;
-  --color-base-35: #f1f1f0;
-  --color-base-40: #afafaf;
-  --color-blue: #337ea9;
-  --color-cyan: #337ea9;
-  --color-green: #448361;
-  --color-orange: #d9730d;
-  --color-pink: #c14c8a;
-  --color-purple: #9065b0;
-  --color-red: #d44c47;
-  --background-modifier-hover: #0000000a;
-  --color-accent-2: #439ee8;
-  --color-accent-hsl: 210, 77%, 51%;
-  --color-base-100: #37352f;
-  --color-base-30: #dfdfdf;
-  --color-base-35: #f1f1f0;
-  --color-base-40: #afafaf;
-  --color-blue: #337ea9;
-  --color-cyan: #337ea9;
-  --color-green: #448361;
-  --color-orange: #d9730d;
-  --color-pink: #c14c8a;
-  --color-purple: #9065b0;
-  --color-red: #d44c47;
-}
-/* END LIGHT */
 /* CALLOUTS */
 :root,
 html {

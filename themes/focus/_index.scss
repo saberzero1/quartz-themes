@@ -22,34 +22,8 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --color-accent-2: hsl(106.9879518072deg, 62.4060150376%, 83.92157%);
-  --color-accent-hsl: 106.9879518072deg, 62.4060150376%, 73.9215686275%;
-  --color-base-100: #ffffff;
-  --color-base-30: #222222;
-  --color-base-35: #303030;
-  --color-base-40: #505050;
-  --color-blue: #97c0f3;
-  --color-cyan: #8bf0db;
-  --color-green: #a5e693;
-  --color-orange: #ffc8a3;
-  --color-pink: #eaa9ff;
-  --color-purple: #ac9df2;
-  --color-red: #f5988f;
   --text-accent: hsl(106.9879518072deg, 62.4060150376%, 73.9215686275%);
   --text-accent-hover: hsl(106.9879518072deg, 62.4060150376%, 83.92157%);
-  --color-accent-2: hsl(106.9879518072deg, 62.4060150376%, 83.92157%);
-  --color-accent-hsl: 106.9879518072deg, 62.4060150376%, 73.9215686275%;
-  --color-base-100: #ffffff;
-  --color-base-30: #222222;
-  --color-base-35: #303030;
-  --color-base-40: #505050;
-  --color-blue: #97c0f3;
-  --color-cyan: #8bf0db;
-  --color-green: #a5e693;
-  --color-orange: #ffc8a3;
-  --color-pink: #eaa9ff;
-  --color-purple: #ac9df2;
-  --color-red: #f5988f;
   --text-accent: hsl(106.9879518072deg, 62.4060150376%, 73.9215686275%);
   --text-accent-hover: hsl(106.9879518072deg, 62.4060150376%, 83.92157%);
 }
@@ -181,11 +155,36 @@ body {
     62.4060150376%,
     73.9215686275%
   );
+  --color-accent-2: light-dark(
+    hsl(106.9879518072deg, 62.4060150376%, 83.92157%),
+    hsl(calc(106.98795deg - 3), 63.65414%, 85.0098%)
+  );
+  --color-accent-hsl: light-dark(
+    106.9879518072deg,
+    62.4060150376%,
+    73.9215686275%,
+    106.9879518072deg,
+    62.4060150376%,
+    73.9215686275%
+  );
+  --color-base-100: light-dark(#ffffff, #222222);
+  --color-base-30: light-dark(#222222, #e0e0e0);
+  --color-base-35: light-dark(#303030, #d4d4d4);
+  --color-base-40: light-dark(#505050, #bdbdbd);
+  --color-blue: light-dark(#97c0f3, #086ddd);
+  --color-cyan: light-dark(#8bf0db, #00bfbc);
+  --color-green: light-dark(#a5e693, #08b94e);
+  --color-orange: light-dark(#ffc8a3, #ec7500);
+  --color-pink: light-dark(#eaa9ff, #d53984);
+  --color-purple: light-dark(#ac9df2, #7852ee);
+  --color-red: light-dark(#f5988f, #e93147);
   --cursor-link: pointer;
   --font-default:
     JetBrains Mono, Menlo, SFMono-Regular, Consolas, "Roboto Mono",
     "Source Code Pro", monospace;
-  --font-text: "??", "??", "??", "Arial";
+  --font-text:
+    "??", "??", JetBrains Mono, Menlo, SFMono-Regular, Consolas, "Roboto Mono",
+    "Source Code Pro", monospace;
   --graph-line: #303030;
   --graph-node-tag: #a5e693;
   --graph-node-unresolved: #505050;
@@ -273,54 +272,6 @@ body {
   user-select: none;
   width: 100%;
 }
-/* START DARK */
-:root,
-html {
-  color-scheme: dark;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
-  --color-accent-2: hsl(106.9879518072deg, 62.4060150376%, 83.92157%);
-  --color-accent-hsl: 106.9879518072deg, 62.4060150376%, 73.9215686275%;
-  --color-base-100: #ffffff;
-  --color-base-30: #222222;
-  --color-base-35: #303030;
-  --color-base-40: #505050;
-  --color-blue: #97c0f3;
-  --color-cyan: #8bf0db;
-  --color-green: #a5e693;
-  --color-orange: #ffc8a3;
-  --color-pink: #eaa9ff;
-  --color-purple: #ac9df2;
-  --color-red: #f5988f;
-  --text-accent: hsl(106.9879518072deg, 62.4060150376%, 73.9215686275%);
-  --text-accent-hover: hsl(106.9879518072deg, 62.4060150376%, 83.92157%);
-  --color-accent-2: hsl(106.9879518072deg, 62.4060150376%, 83.92157%);
-  --color-accent-hsl: 106.9879518072deg, 62.4060150376%, 73.9215686275%;
-  --color-base-100: #ffffff;
-  --color-base-30: #222222;
-  --color-base-35: #303030;
-  --color-base-40: #505050;
-  --color-blue: #97c0f3;
-  --color-cyan: #8bf0db;
-  --color-green: #a5e693;
-  --color-orange: #ffc8a3;
-  --color-pink: #eaa9ff;
-  --color-purple: #ac9df2;
-  --color-red: #f5988f;
-  --text-accent: hsl(106.9879518072deg, 62.4060150376%, 73.9215686275%);
-  --text-accent-hover: hsl(106.9879518072deg, 62.4060150376%, 83.92157%);
-}
-/* END DARK */
 /* CALLOUTS */
 :root,
 html {

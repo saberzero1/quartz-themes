@@ -22,68 +22,28 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
+
   --background-modifier-hover: hsla(
     211.3636363636deg,
     100%,
     91.3725490196%,
     0.5
   );
+
   --checkbox-radius: 30%;
-  --color-accent-2: hsl(211.3636363636deg, 100%, 95.17255%);
-  --color-accent-hsl: 211.3636363636deg, 100%, 91.3725490196%;
-  --color-base-100: hsl(249.2307692308deg, 33.3333333333%, 97.6470588235%);
-  --color-base-30: #0b0a10;
-  --color-base-35: hsl(249.2307692308deg, 33.3333333333%, 22.6470588235%);
-  --color-base-40: #0b0a10;
-  --color-blue: #027aff;
-  --color-cyan: #53dfdd;
-  --color-green: #44cf6e;
-  --color-orange: #e9973f;
-  --color-pink: #fa99cd;
-  --color-purple: #a882ff;
-  --color-red: #fb464c;
-  --graph-line: hsl(249.2307692308deg, 33.3333333333%, 22.6470588235%);
-  --graph-node-tag: #f1a7e2;
-  --graph-node-unresolved: hsl(249.2307692308deg, 33.3333333333%, 50%);
-  --h1-color: #f5c2e7;
-  --tag-background: #2c2537;
-  --tag-color: #eeeeee;
-  --text-accent: hsl(211.3636363636deg, 100%, 80%);
-  --text-accent-hover: hsl(211.3636363636deg, 100%, 92%);
-  --text-faint: hsl(249.2307692308deg, 33.3333333333%, 50%);
+
   --text-highlight-bg: #ffd00066;
-  --text-muted: hsl(249.2307692308deg, 33.3333333333%, 85%);
+
   --background-modifier-hover: hsla(
     211.3636363636deg,
     100%,
     91.3725490196%,
     0.5
   );
+
   --checkbox-radius: 30%;
-  --color-accent-2: hsl(211.3636363636deg, 100%, 95.17255%);
-  --color-accent-hsl: 211.3636363636deg, 100%, 91.3725490196%;
-  --color-base-100: hsl(249.2307692308deg, 33.3333333333%, 97.6470588235%);
-  --color-base-30: #0b0a10;
-  --color-base-35: hsl(249.2307692308deg, 33.3333333333%, 22.6470588235%);
-  --color-base-40: #0b0a10;
-  --color-blue: #027aff;
-  --color-cyan: #53dfdd;
-  --color-green: #44cf6e;
-  --color-orange: #e9973f;
-  --color-pink: #fa99cd;
-  --color-purple: #a882ff;
-  --color-red: #fb464c;
-  --graph-line: hsl(249.2307692308deg, 33.3333333333%, 22.6470588235%);
-  --graph-node-tag: #f1a7e2;
-  --graph-node-unresolved: hsl(249.2307692308deg, 33.3333333333%, 50%);
-  --h1-color: #f5c2e7;
-  --tag-background: #2c2537;
-  --tag-color: #eeeeee;
-  --text-accent: hsl(211.3636363636deg, 100%, 80%);
-  --text-accent-hover: hsl(211.3636363636deg, 100%, 92%);
-  --text-faint: hsl(249.2307692308deg, 33.3333333333%, 50%);
+
   --text-highlight-bg: #ffd00066;
-  --text-muted: hsl(249.2307692308deg, 33.3333333333%, 85%);
 }
 
 .darkmode {
@@ -312,18 +272,49 @@ body {
   --code-value: #a882ff;
   --collapse-icon-color: hsl(249.2307692308deg, 33.3333333333%, 50%);
   --collapse-icon-color-collapsed: hsl(211.3636363636deg, 100%, 80%);
+  --color-accent-2: light-dark(
+    hsl(calc(211.36364deg - 5), 105%, 117.87059%),
+    hsl(calc(211.36364deg - 3), 102%, 105.07843%)
+  );
+  --color-accent-hsl: light-dark(
+    211.3636363636deg,
+    100%,
+    91.3725490196%,
+    211.3636363636deg,
+    100%,
+    91.3725490196%
+  );
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
   --font-text:
-    "??", "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter,
-    Ubuntu, sans-serif, "Arial";
-  --graph-line: hsl(249.2307692308deg, 33.3333333333%, 22.6470588235%);
-  --graph-node-tag: #44cf6e;
-  --graph-node-unresolved: hsl(249.2307692308deg, 33.3333333333%, 50%);
-  --h1-color: inherit;
+    "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu,
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --graph-line: light-dark(
+    hsl(249.2307692308deg, 33.3333333333%, 22.6470588235%),
+    hsl(249.2307692308deg, 33.3333333333%, 22.6470588235%)
+  );
+  --graph-node-tag: light-dark(#f1a7e2, #f1a7e2);
+  --graph-node-unresolved: light-dark(
+    hsl(249.2307692308deg, 33.3333333333%, 50%),
+    hsl(249.2307692308deg, 33.3333333333%, 50%)
+  );
+  --h1-color: light-dark(#f5c2e7, #f5c2e7);
   --h1-font: inherit;
   --h3-line-height: 1.3;
   --hr-color: transparent;
@@ -341,22 +332,34 @@ body {
   --link-weight: 600;
   --p-spacing: 1rem;
   --search-icon-color: hsl(249.2307692308deg, 33.3333333333%, 85%);
-  --tag-background: hsla(211.3636363636deg, 100%, 91.3725490196%, 0.1);
+  --tag-background: light-dark(#2c2537, #2c2537);
   --tag-background-hover: hsla(211.3636363636deg, 100%, 91.3725490196%, 0.2);
   --tag-border-color: hsla(211.3636363636deg, 100%, 91.3725490196%, 0.15);
   --tag-border-color-hover: hsla(211.3636363636deg, 100%, 91.3725490196%, 0.15);
   --tag-border-width: 0px;
-  --tag-color: hsl(211.3636363636deg, 100%, 80%);
+  --tag-color: light-dark(#eeeeee, #eeeeee);
   --tag-color-hover: hsl(211.3636363636deg, 100%, 80%);
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-radius: 2em;
   --tag-weight: inherit;
-  --text-accent: hsl(211.3636363636deg, 100%, 91.3725490196%);
-  --text-accent-hover: hsl(211.3636363636deg, 100%, 95.17255%);
-  --text-faint: hsl(249.2307692308deg, 33.3333333333%, 57.6470588235%);
+  --text-accent: light-dark(
+    hsl(211.3636363636deg, 100%, 80%),
+    hsl(211.3636363636deg, 100%, 80%)
+  );
+  --text-accent-hover: light-dark(
+    hsl(211.3636363636deg, 100%, 92%),
+    hsl(211.3636363636deg, 100%, 92%)
+  );
+  --text-faint: light-dark(
+    hsl(249.2307692308deg, 33.3333333333%, 50%),
+    hsl(249.2307692308deg, 33.3333333333%, 50%)
+  );
   --text-highlight-bg: #ffd00066;
-  --text-muted: hsl(249.2307692308deg, 33.3333333333%, 92.6470588235%);
+  --text-muted: light-dark(
+    hsl(249.2307692308deg, 33.3333333333%, 85%),
+    hsl(249.2307692308deg, 33.3333333333%, 85%)
+  );
   --text-normal: hsl(249.2307692308deg, 33.3333333333%, 97.6470588235%);
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
@@ -397,86 +400,6 @@ body {
   user-select: none;
   width: 100%;
 }
-/* START DARK */
-:root,
-html {
-  color-scheme: dark;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
-  --background-modifier-hover: hsla(
-    211.3636363636deg,
-    100%,
-    91.3725490196%,
-    0.5
-  );
-  --checkbox-radius: 30%;
-  --color-accent-2: hsl(211.3636363636deg, 100%, 95.17255%);
-  --color-accent-hsl: 211.3636363636deg, 100%, 91.3725490196%;
-  --color-base-100: hsl(249.2307692308deg, 33.3333333333%, 97.6470588235%);
-  --color-base-30: #0b0a10;
-  --color-base-35: hsl(249.2307692308deg, 33.3333333333%, 22.6470588235%);
-  --color-base-40: #0b0a10;
-  --color-blue: #027aff;
-  --color-cyan: #53dfdd;
-  --color-green: #44cf6e;
-  --color-orange: #e9973f;
-  --color-pink: #fa99cd;
-  --color-purple: #a882ff;
-  --color-red: #fb464c;
-  --graph-line: hsl(249.2307692308deg, 33.3333333333%, 22.6470588235%);
-  --graph-node-tag: #f1a7e2;
-  --graph-node-unresolved: hsl(249.2307692308deg, 33.3333333333%, 50%);
-  --h1-color: #f5c2e7;
-  --tag-background: #2c2537;
-  --tag-color: #eeeeee;
-  --text-accent: hsl(211.3636363636deg, 100%, 80%);
-  --text-accent-hover: hsl(211.3636363636deg, 100%, 92%);
-  --text-faint: hsl(249.2307692308deg, 33.3333333333%, 50%);
-  --text-highlight-bg: #ffd00066;
-  --text-muted: hsl(249.2307692308deg, 33.3333333333%, 85%);
-  --background-modifier-hover: hsla(
-    211.3636363636deg,
-    100%,
-    91.3725490196%,
-    0.5
-  );
-  --checkbox-radius: 30%;
-  --color-accent-2: hsl(211.3636363636deg, 100%, 95.17255%);
-  --color-accent-hsl: 211.3636363636deg, 100%, 91.3725490196%;
-  --color-base-100: hsl(249.2307692308deg, 33.3333333333%, 97.6470588235%);
-  --color-base-30: #0b0a10;
-  --color-base-35: hsl(249.2307692308deg, 33.3333333333%, 22.6470588235%);
-  --color-base-40: #0b0a10;
-  --color-blue: #027aff;
-  --color-cyan: #53dfdd;
-  --color-green: #44cf6e;
-  --color-orange: #e9973f;
-  --color-pink: #fa99cd;
-  --color-purple: #a882ff;
-  --color-red: #fb464c;
-  --graph-line: hsl(249.2307692308deg, 33.3333333333%, 22.6470588235%);
-  --graph-node-tag: #f1a7e2;
-  --graph-node-unresolved: hsl(249.2307692308deg, 33.3333333333%, 50%);
-  --h1-color: #f5c2e7;
-  --tag-background: #2c2537;
-  --tag-color: #eeeeee;
-  --text-accent: hsl(211.3636363636deg, 100%, 80%);
-  --text-accent-hover: hsl(211.3636363636deg, 100%, 92%);
-  --text-faint: hsl(249.2307692308deg, 33.3333333333%, 50%);
-  --text-highlight-bg: #ffd00066;
-  --text-muted: hsl(249.2307692308deg, 33.3333333333%, 85%);
-}
-/* END DARK */
 /* CALLOUTS */
 :root,
 html {

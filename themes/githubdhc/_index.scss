@@ -22,34 +22,8 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --color-accent-2: #84c1ff;
-  --color-accent-hsl: 210, 100%, 72%;
-  --color-base-100: #c9d1d9;
-  --color-base-30: #30363d;
-  --color-base-35: #21262d;
-  --color-base-40: #30363d;
-  --color-blue: #6cb6ff;
-  --color-cyan: #a5d6ff;
-  --color-green: #7ee787;
-  --color-orange: #ffa657;
-  --color-pink: #f778ba;
-  --color-purple: #d2a8ff;
-  --color-red: #f47067;
   --text-accent: #5daeff;
   --text-highlight-bg: #ffd00066;
-  --color-accent-2: #84c1ff;
-  --color-accent-hsl: 210, 100%, 72%;
-  --color-base-100: #c9d1d9;
-  --color-base-30: #30363d;
-  --color-base-35: #21262d;
-  --color-base-40: #30363d;
-  --color-blue: #6cb6ff;
-  --color-cyan: #a5d6ff;
-  --color-green: #7ee787;
-  --color-orange: #ffa657;
-  --color-pink: #f778ba;
-  --color-purple: #d2a8ff;
-  --color-red: #f47067;
   --text-accent: #5daeff;
   --text-highlight-bg: #ffd00066;
 }
@@ -217,7 +191,7 @@ html[saved-theme="dark"] {
 
 :root {
   --color-accent-2: light-dark(hsl(205, 105%, 92.88%), hsl(207, 102%, 82.8%));
-  --color-accent-hsl: light-dark(210, 100%, 72%, 210, 100%, 72%);
+  --color-accent-hsl: light-dark(#70b8ff, #70b8ff);
   --color-base-100: light-dark(#dadada, #222222);
   --color-base-30: light-dark(#363636, #e0e0e0);
   --color-base-35: light-dark(#3f3f3f, #d4d4d4);
@@ -258,14 +232,29 @@ body {
   --code-value: #d2a8ff;
   --collapse-icon-color: #6e7681;
   --collapse-icon-color-collapsed: #5daeff;
+  --color-accent-2: light-dark(hsl(205, 105%, 92.88%), hsl(207, 102%, 82.8%));
+  --color-accent-hsl: light-dark(#70b8ff, #70b8ff);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
   --font-text:
-    "??", "??", -apple-system BlinkMacSystemFont, "Segoe UI", "Noto Sans",
-    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Arial";
+    "??", -apple-system BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --graph-line: #21262d;
   --graph-node-tag: #218bff;
   --graph-node-unresolved: #6e7681;
@@ -344,54 +333,6 @@ body {
   user-select: none;
   width: 100%;
 }
-/* START DARK */
-:root,
-html {
-  color-scheme: dark;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
-  --color-accent-2: #84c1ff;
-  --color-accent-hsl: 210, 100%, 72%;
-  --color-base-100: #c9d1d9;
-  --color-base-30: #30363d;
-  --color-base-35: #21262d;
-  --color-base-40: #30363d;
-  --color-blue: #6cb6ff;
-  --color-cyan: #a5d6ff;
-  --color-green: #7ee787;
-  --color-orange: #ffa657;
-  --color-pink: #f778ba;
-  --color-purple: #d2a8ff;
-  --color-red: #f47067;
-  --text-accent: #5daeff;
-  --text-highlight-bg: #ffd00066;
-  --color-accent-2: #84c1ff;
-  --color-accent-hsl: 210, 100%, 72%;
-  --color-base-100: #c9d1d9;
-  --color-base-30: #30363d;
-  --color-base-35: #21262d;
-  --color-base-40: #30363d;
-  --color-blue: #6cb6ff;
-  --color-cyan: #a5d6ff;
-  --color-green: #7ee787;
-  --color-orange: #ffa657;
-  --color-pink: #f778ba;
-  --color-purple: #d2a8ff;
-  --color-red: #f47067;
-  --text-accent: #5daeff;
-  --text-highlight-bg: #ffd00066;
-}
-/* END DARK */
 /* CALLOUTS */
 :root,
 html {

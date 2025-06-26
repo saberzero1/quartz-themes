@@ -35,19 +35,6 @@ html[saved-theme="dark"] {
   --checkbox-marker-color: #1d2833;
   --code-comment: #74859a;
   --code-normal: #c4d1d1;
-  --color-accent-2: hsl(135, 58.8%, 89.01%);
-  --color-accent-hsl: 140, 56%, 69%;
-  --color-base-100: #dadada;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-blue: #2c4f64;
-  --color-cyan: #5dcbc3;
-  --color-green: #b9e678;
-  --color-orange: #ffa161;
-  --color-pink: #ffa161;
-  --color-purple: #d689e3;
-  --color-red: #ff695d;
   --graph-line: #303f51;
   --graph-node-tag: #5dcbc3;
   --graph-node-unresolved: #74859a;
@@ -85,19 +72,6 @@ html[saved-theme="dark"] {
   --checkbox-marker-color: #1d2833;
   --code-comment: #74859a;
   --code-normal: #c4d1d1;
-  --color-accent-2: hsl(135, 58.8%, 89.01%);
-  --color-accent-hsl: 140, 56%, 69%;
-  --color-base-100: #dadada;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-blue: #2c4f64;
-  --color-cyan: #5dcbc3;
-  --color-green: #b9e678;
-  --color-orange: #ffa161;
-  --color-pink: #ffa161;
-  --color-purple: #d689e3;
-  --color-red: #ff695d;
   --graph-line: #303f51;
   --graph-node-tag: #5dcbc3;
   --graph-node-unresolved: #74859a;
@@ -293,7 +267,7 @@ html[saved-theme="dark"] {
     hsl(135, 58.8%, 89.01%),
     hsl(137, 57.12%, 79.35%)
   );
-  --color-accent-hsl: light-dark(140, 56%, 69%, 140, 56%, 69%);
+  --color-accent-hsl: light-dark(hsl(140, 56%, 69%), hsl(140, 56%, 69%));
   --color-base-100: light-dark(#dadada, #222222);
   --color-base-30: light-dark(#363636, #e0e0e0);
   --color-base-35: light-dark(#3f3f3f, #d4d4d4);
@@ -334,12 +308,31 @@ body {
   --code-value: #d689e3;
   --collapse-icon-color: #5dcbc3;
   --collapse-icon-color-collapsed: hsl(137, 57.12%, 79.35%);
+  --color-accent-2: light-dark(
+    hsl(135, 58.8%, 89.01%),
+    hsl(137, 57.12%, 79.35%)
+  );
+  --color-accent-hsl: light-dark(hsl(140, 56%, 69%), hsl(140, 56%, 69%));
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-blue: light-dark(#2c4f64, #086ddd);
+  --color-cyan: light-dark(#5dcbc3, #00bfbc);
+  --color-green: light-dark(#b9e678, #08b94e);
+  --color-orange: light-dark(#ffa161, #ec7500);
+  --color-pink: light-dark(#ffa161, #d53984);
+  --color-purple: light-dark(#d689e3, #7852ee);
+  --color-red: light-dark(#ff695d, #e93147);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
-  --font-text: "??", "??", "??", "Arial";
+  --font-text:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --graph-line: #3f3f3f;
   --graph-node-tag: #b9e678;
   --graph-node-unresolved: #5dcbc3;
@@ -411,124 +404,6 @@ body {
   user-select: none;
   width: 100%;
 }
-/* START DARK */
-:root,
-html {
-  color-scheme: dark;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
-  --background-modifier-border: none;
-  --background-modifier-border-focus: none;
-  --background-modifier-border-hover: none;
-  --background-modifier-hover: #273341;
-  --background-primary: #1d2833;
-  --bold-color: #b9e678;
-  --checkbox-border-color: rgba(255, 213, 128, 0.8);
-  --checkbox-border-color-hover: rgba(255, 213, 128, 0.6);
-  --checkbox-color: #ffd580;
-  --checkbox-color-hover: rgba(255, 213, 128, 0.8);
-  --checkbox-marker-color: #1d2833;
-  --code-comment: #74859a;
-  --code-normal: #c4d1d1;
-  --color-accent-2: hsl(135, 58.8%, 89.01%);
-  --color-accent-hsl: 140, 56%, 69%;
-  --color-base-100: #dadada;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-blue: #2c4f64;
-  --color-cyan: #5dcbc3;
-  --color-green: #b9e678;
-  --color-orange: #ffa161;
-  --color-pink: #ffa161;
-  --color-purple: #d689e3;
-  --color-red: #ff695d;
-  --graph-line: #303f51;
-  --graph-node-tag: #5dcbc3;
-  --graph-node-unresolved: #74859a;
-  --h1-color: #ff695d;
-  --hr-color: #84dca1;
-  --interactive-accent-hsl: hsl(202.5, 38.89%, 28.24%);
-  --italic-color: #f8c260;
-  --link-color: #ffa161;
-  --link-color-hover: rgba(255, 161, 97, 0.8);
-  --link-external-color: #5dcbc3;
-  --link-external-color-hover: rgba(95, 203, 195, 0.8);
-  --tag-background: #2c4f64;
-  --tag-background-hover: #303f51;
-  --tag-border-color: none;
-  --tag-border-width: 0px;
-  --tag-color: #b9e678;
-  --tag-color-hover: #84dca1;
-  --tag-radius: 15px;
-  --tag-weight: 600;
-  --text-accent: hsl(137, 57.12%, 79.35%);
-  --text-faint: #5dcbc3;
-  --text-highlight-bg: rgba(133, 221, 162, 0.5);
-  --text-muted: #cfd1d1;
-  --text-normal: #eeead1;
-  --background-modifier-border: none;
-  --background-modifier-border-focus: none;
-  --background-modifier-border-hover: none;
-  --background-modifier-hover: #273341;
-  --background-primary: #1d2833;
-  --bold-color: #b9e678;
-  --checkbox-border-color: rgba(255, 213, 128, 0.8);
-  --checkbox-border-color-hover: rgba(255, 213, 128, 0.6);
-  --checkbox-color: #ffd580;
-  --checkbox-color-hover: rgba(255, 213, 128, 0.8);
-  --checkbox-marker-color: #1d2833;
-  --code-comment: #74859a;
-  --code-normal: #c4d1d1;
-  --color-accent-2: hsl(135, 58.8%, 89.01%);
-  --color-accent-hsl: 140, 56%, 69%;
-  --color-base-100: #dadada;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-blue: #2c4f64;
-  --color-cyan: #5dcbc3;
-  --color-green: #b9e678;
-  --color-orange: #ffa161;
-  --color-pink: #ffa161;
-  --color-purple: #d689e3;
-  --color-red: #ff695d;
-  --graph-line: #303f51;
-  --graph-node-tag: #5dcbc3;
-  --graph-node-unresolved: #74859a;
-  --h1-color: #ff695d;
-  --hr-color: #84dca1;
-  --interactive-accent-hsl: hsl(202.5, 38.89%, 28.24%);
-  --italic-color: #f8c260;
-  --link-color: #ffa161;
-  --link-color-hover: rgba(255, 161, 97, 0.8);
-  --link-external-color: #5dcbc3;
-  --link-external-color-hover: rgba(95, 203, 195, 0.8);
-  --tag-background: #2c4f64;
-  --tag-background-hover: #303f51;
-  --tag-border-color: none;
-  --tag-border-width: 0px;
-  --tag-color: #b9e678;
-  --tag-color-hover: #84dca1;
-  --tag-radius: 15px;
-  --tag-weight: 600;
-  --text-accent: hsl(137, 57.12%, 79.35%);
-  --text-faint: #5dcbc3;
-  --text-highlight-bg: rgba(133, 221, 162, 0.5);
-  --text-muted: #cfd1d1;
-  --text-normal: #eeead1;
-}
-/* END DARK */
 /* CALLOUTS */
 :root,
 html {

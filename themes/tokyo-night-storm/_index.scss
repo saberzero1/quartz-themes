@@ -22,6 +22,7 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
+
   --background-modifier-border: rgb(65, 72, 104);
   --background-modifier-border-focus: rgb(65, 72, 104);
   --background-modifier-border-hover: rgb(65, 72, 104);
@@ -34,19 +35,6 @@ html[saved-theme="dark"] {
   --checkbox-color-hover: rgb(86, 95, 137);
   --code-background: rgb(35, 35, 55);
   --code-normal: rgb(192, 202, 245);
-  --color-accent-2: hsl(197, 105%, 96.75%);
-  --color-accent-hsl: 202, 100%, 75%;
-  --color-base-100: #dadada;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-blue: rgb(122, 162, 247);
-  --color-cyan: rgb(125, 207, 255);
-  --color-green: rgb(158, 206, 106);
-  --color-orange: rgb(255, 158, 100);
-  --color-pink: rgb(187, 154, 247);
-  --color-purple: rgb(157, 124, 21);
-  --color-red: rgb(255, 117, 127);
   --graph-line: rgb(86, 95, 137);
   --graph-node-tag: rgb(255, 158, 100);
   --h1-color: rgb(255, 117, 127);
@@ -59,6 +47,7 @@ html[saved-theme="dark"] {
   --text-highlight-bg: rgba(255, 158, 100, 0.4);
   --text-muted: rgb(169, 177, 214);
   --text-normal: rgb(192, 202, 245);
+
   --background-modifier-border: rgb(65, 72, 104);
   --background-modifier-border-focus: rgb(65, 72, 104);
   --background-modifier-border-hover: rgb(65, 72, 104);
@@ -71,19 +60,6 @@ html[saved-theme="dark"] {
   --checkbox-color-hover: rgb(86, 95, 137);
   --code-background: rgb(35, 35, 55);
   --code-normal: rgb(192, 202, 245);
-  --color-accent-2: hsl(197, 105%, 96.75%);
-  --color-accent-hsl: 202, 100%, 75%;
-  --color-base-100: #dadada;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-blue: rgb(122, 162, 247);
-  --color-cyan: rgb(125, 207, 255);
-  --color-green: rgb(158, 206, 106);
-  --color-orange: rgb(255, 158, 100);
-  --color-pink: rgb(187, 154, 247);
-  --color-purple: rgb(157, 124, 21);
-  --color-red: rgb(255, 117, 127);
   --graph-line: rgb(86, 95, 137);
   --graph-node-tag: rgb(255, 158, 100);
   --h1-color: rgb(255, 117, 127);
@@ -214,7 +190,7 @@ html[saved-theme="dark"] {
 
 :root {
   --color-accent-2: light-dark(hsl(197, 105%, 96.75%), hsl(199, 102%, 86.25%));
-  --color-accent-hsl: light-dark(202, 100%, 75%, 202, 100%, 75%);
+  --color-accent-hsl: light-dark(hsl(202, 100%, 75%), hsl(202, 100%, 75%));
   --color-base-100: light-dark(#dadada, #222222);
   --color-base-30: light-dark(#363636, #e0e0e0);
   --color-base-35: light-dark(#3f3f3f, #d4d4d4);
@@ -255,12 +231,28 @@ body {
   --code-value: rgb(157, 124, 21);
   --collapse-icon-color: rgb(86, 95, 137);
   --collapse-icon-color-collapsed: hsl(199, 102%, 86.25%);
+  --color-accent-2: light-dark(hsl(197, 105%, 96.75%), hsl(199, 102%, 86.25%));
+  --color-accent-hsl: light-dark(hsl(202, 100%, 75%), hsl(202, 100%, 75%));
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-blue: light-dark(rgb(122, 162, 247), #086ddd);
+  --color-cyan: light-dark(rgb(125, 207, 255), #00bfbc);
+  --color-green: light-dark(rgb(158, 206, 106), #08b94e);
+  --color-orange: light-dark(rgb(255, 158, 100), #ec7500);
+  --color-pink: light-dark(rgb(187, 154, 247), #d53984);
+  --color-purple: light-dark(rgb(157, 124, 21), #7852ee);
+  --color-red: light-dark(rgb(255, 117, 127), #e93147);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
-  --font-text: "??", "??", "??", "Arial";
+  --font-text:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --graph-line: #3f3f3f;
   --graph-node-tag: rgb(158, 206, 106);
   --graph-node-unresolved: rgb(86, 95, 137);
@@ -333,98 +325,6 @@ body {
   user-select: none;
   width: 100%;
 }
-/* START DARK */
-:root,
-html {
-  color-scheme: dark;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
-  --background-modifier-border: rgb(65, 72, 104);
-  --background-modifier-border-focus: rgb(65, 72, 104);
-  --background-modifier-border-hover: rgb(65, 72, 104);
-  --background-modifier-hover: rgb(65, 72, 104);
-  --background-primary: rgb(36, 40, 59);
-  --bold-color: hsl(202, 100%, 75%);
-  --checkbox-border-color: rgb(86, 95, 137);
-  --checkbox-border-color-hover: rgb(86, 95, 137);
-  --checkbox-color: rgb(86, 95, 137);
-  --checkbox-color-hover: rgb(86, 95, 137);
-  --code-background: rgb(35, 35, 55);
-  --code-normal: rgb(192, 202, 245);
-  --color-accent-2: hsl(197, 105%, 96.75%);
-  --color-accent-hsl: 202, 100%, 75%;
-  --color-base-100: #dadada;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-blue: rgb(122, 162, 247);
-  --color-cyan: rgb(125, 207, 255);
-  --color-green: rgb(158, 206, 106);
-  --color-orange: rgb(255, 158, 100);
-  --color-pink: rgb(187, 154, 247);
-  --color-purple: rgb(157, 124, 21);
-  --color-red: rgb(255, 117, 127);
-  --graph-line: rgb(86, 95, 137);
-  --graph-node-tag: rgb(255, 158, 100);
-  --h1-color: rgb(255, 117, 127);
-  --inline-title-color: rgb(187, 154, 247);
-  --italic-color: hsl(202, 100%, 75%);
-  --tag-background: rgba(187, 154, 247, 0.15);
-  --tag-color: rgb(187, 154, 247);
-  --text-accent: hsl(199, 102%, 86.25%);
-  --text-faint: rgb(86, 95, 137);
-  --text-highlight-bg: rgba(255, 158, 100, 0.4);
-  --text-muted: rgb(169, 177, 214);
-  --text-normal: rgb(192, 202, 245);
-  --background-modifier-border: rgb(65, 72, 104);
-  --background-modifier-border-focus: rgb(65, 72, 104);
-  --background-modifier-border-hover: rgb(65, 72, 104);
-  --background-modifier-hover: rgb(65, 72, 104);
-  --background-primary: rgb(36, 40, 59);
-  --bold-color: hsl(202, 100%, 75%);
-  --checkbox-border-color: rgb(86, 95, 137);
-  --checkbox-border-color-hover: rgb(86, 95, 137);
-  --checkbox-color: rgb(86, 95, 137);
-  --checkbox-color-hover: rgb(86, 95, 137);
-  --code-background: rgb(35, 35, 55);
-  --code-normal: rgb(192, 202, 245);
-  --color-accent-2: hsl(197, 105%, 96.75%);
-  --color-accent-hsl: 202, 100%, 75%;
-  --color-base-100: #dadada;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-blue: rgb(122, 162, 247);
-  --color-cyan: rgb(125, 207, 255);
-  --color-green: rgb(158, 206, 106);
-  --color-orange: rgb(255, 158, 100);
-  --color-pink: rgb(187, 154, 247);
-  --color-purple: rgb(157, 124, 21);
-  --color-red: rgb(255, 117, 127);
-  --graph-line: rgb(86, 95, 137);
-  --graph-node-tag: rgb(255, 158, 100);
-  --h1-color: rgb(255, 117, 127);
-  --inline-title-color: rgb(187, 154, 247);
-  --italic-color: hsl(202, 100%, 75%);
-  --tag-background: rgba(187, 154, 247, 0.15);
-  --tag-color: rgb(187, 154, 247);
-  --text-accent: hsl(199, 102%, 86.25%);
-  --text-faint: rgb(86, 95, 137);
-  --text-highlight-bg: rgba(255, 158, 100, 0.4);
-  --text-muted: rgb(169, 177, 214);
-  --text-normal: rgb(192, 202, 245);
-}
-/* END DARK */
 /* CALLOUTS */
 :root,
 html {

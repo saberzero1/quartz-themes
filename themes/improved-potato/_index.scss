@@ -22,33 +22,7 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --color-accent-2: #8ed6fd;
-  --color-accent-hsl: 206, 92%, 60%;
-  --color-base-100: #ccd2db;
-  --color-base-30: #455063;
-  --color-base-35: #546178;
-  --color-base-40: #647590;
-  --color-blue: #027aff;
-  --color-cyan: #339694;
-  --color-green: #33a555;
-  --color-orange: #a86f32;
-  --color-pink: #af608a;
-  --color-purple: #876ec4;
-  --color-red: #c03c40;
   --text-accent: #66c1fa;
-  --color-accent-2: #8ed6fd;
-  --color-accent-hsl: 206, 92%, 60%;
-  --color-base-100: #ccd2db;
-  --color-base-30: #455063;
-  --color-base-35: #546178;
-  --color-base-40: #647590;
-  --color-blue: #027aff;
-  --color-cyan: #339694;
-  --color-green: #33a555;
-  --color-orange: #a86f32;
-  --color-pink: #af608a;
-  --color-purple: #876ec4;
-  --color-red: #c03c40;
   --text-accent: #66c1fa;
 }
 
@@ -67,32 +41,6 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --color-accent-2: #66c1fa;
-  --color-accent-hsl: 206, 92%, 60%;
-  --color-base-100: #485465;
-  --color-base-30: #b7bfcd;
-  --color-base-35: #a2acbe;
-  --color-base-40: #8d9ab0;
-  --color-blue: #086ddd;
-  --color-cyan: #00bfbc;
-  --color-green: #08b94e;
-  --color-orange: #ec7500;
-  --color-pink: #d53984;
-  --color-purple: #7852ee;
-  --color-red: #e93147;
-  --color-accent-2: #66c1fa;
-  --color-accent-hsl: 206, 92%, 60%;
-  --color-base-100: #485465;
-  --color-base-30: #b7bfcd;
-  --color-base-35: #a2acbe;
-  --color-base-40: #8d9ab0;
-  --color-blue: #086ddd;
-  --color-cyan: #00bfbc;
-  --color-green: #08b94e;
-  --color-orange: #ec7500;
-  --color-pink: #d53984;
-  --color-purple: #7852ee;
-  --color-red: #e93147;
 }
 
 @font-face {
@@ -257,7 +205,7 @@ html[saved-theme="light"] {
 
 :root {
   --color-accent-2: light-dark(#8ed6fd, #66c1fa);
-  --color-accent-hsl: light-dark(206, 92%, 60%, 206, 92%, 60%);
+  --color-accent-hsl: light-dark(#3ba6f7, #3ba6f7);
   --color-base-100: light-dark(#dadada, #222222);
   --color-base-30: light-dark(#363636, #e0e0e0);
   --color-base-35: light-dark(#3f3f3f, #d4d4d4);
@@ -298,12 +246,28 @@ body {
   --code-value: #52d8d8;
   --collapse-icon-color: #7b89a3;
   --collapse-icon-color-collapsed: #66c1fa;
+  --color-accent-2: light-dark(#8ed6fd, #66c1fa);
+  --color-accent-hsl: light-dark(#3ba6f7, #3ba6f7);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#339694, #00bfbc);
+  --color-green: light-dark(#33a555, #08b94e);
+  --color-orange: light-dark(#a86f32, #ec7500);
+  --color-pink: light-dark(#af608a, #d53984);
+  --color-purple: light-dark(#876ec4, #7852ee);
+  --color-red: light-dark(#c03c40, #e93147);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
-  --font-text: "??", "??", "??", "Arial";
+  --font-text:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --graph-line: #546178;
   --graph-node-tag: #33a555;
   --graph-node-unresolved: #7b89a3;
@@ -375,96 +339,6 @@ body {
   user-select: none;
   width: 100%;
 }
-/* START DARK */
-:root[saved-theme="dark"],
-html[saved-theme="dark"] {
-  color-scheme: dark;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
-  --color-accent-2: #8ed6fd;
-  --color-accent-hsl: 206, 92%, 60%;
-  --color-base-100: #ccd2db;
-  --color-base-30: #455063;
-  --color-base-35: #546178;
-  --color-base-40: #647590;
-  --color-blue: #027aff;
-  --color-cyan: #339694;
-  --color-green: #33a555;
-  --color-orange: #a86f32;
-  --color-pink: #af608a;
-  --color-purple: #876ec4;
-  --color-red: #c03c40;
-  --text-accent: #66c1fa;
-  --color-accent-2: #8ed6fd;
-  --color-accent-hsl: 206, 92%, 60%;
-  --color-base-100: #ccd2db;
-  --color-base-30: #455063;
-  --color-base-35: #546178;
-  --color-base-40: #647590;
-  --color-blue: #027aff;
-  --color-cyan: #339694;
-  --color-green: #33a555;
-  --color-orange: #a86f32;
-  --color-pink: #af608a;
-  --color-purple: #876ec4;
-  --color-red: #c03c40;
-  --text-accent: #66c1fa;
-}
-/* END DARK */
-/* START LIGHT */
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  color-scheme: light;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
-  --color-accent-2: #66c1fa;
-  --color-accent-hsl: 206, 92%, 60%;
-  --color-base-100: #485465;
-  --color-base-30: #b7bfcd;
-  --color-base-35: #a2acbe;
-  --color-base-40: #8d9ab0;
-  --color-blue: #086ddd;
-  --color-cyan: #00bfbc;
-  --color-green: #08b94e;
-  --color-orange: #ec7500;
-  --color-pink: #d53984;
-  --color-purple: #7852ee;
-  --color-red: #e93147;
-  --color-accent-2: #66c1fa;
-  --color-accent-hsl: 206, 92%, 60%;
-  --color-base-100: #485465;
-  --color-base-30: #b7bfcd;
-  --color-base-35: #a2acbe;
-  --color-base-40: #8d9ab0;
-  --color-blue: #086ddd;
-  --color-cyan: #00bfbc;
-  --color-green: #08b94e;
-  --color-orange: #ec7500;
-  --color-pink: #d53984;
-  --color-purple: #7852ee;
-  --color-red: #e93147;
-}
-/* END LIGHT */
 /* CALLOUTS */
 :root,
 html {
