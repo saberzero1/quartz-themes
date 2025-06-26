@@ -94,10 +94,10 @@ body {
   --background-modifier-message: #000000e6;
   --background-modifier-success: #44cf6e;
   --background-modifier-success-rgb: 68, 207, 110;
-  --background-primary: #000;
-  --background-primary-alt: #111;
+  --background-primary: light-dark(#002b36, #fdf6e3);
+  --background-primary-alt: light-dark(#073642, #eee8d5);
   --background-secondary: #002b36;
-  --background-secondary-alt: #073642;
+  --background-secondary-alt: light-dark(#073642, #212121);
   --base0: #839496;
   --base00: #657b83;
   --base01: #586e75;
@@ -231,21 +231,53 @@ body {
     82.05333%,
     50.73529%
   );
-  --color-blue: #268bd2;
+  --color-accent: light-dark(
+    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%),
+    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%)
+  );
+  --color-accent-1: light-dark(
+    hsl(calc(17.56906deg - 3), 82.05333%, 50.73529%),
+    hsl(calc(17.56906deg - 1), 81.24889%, 47.42647%)
+  );
+  --color-accent-2: light-dark(
+    hsl(calc(17.56906deg - 5), 84.46667%, 56.91176%),
+    hsl(calc(17.56906deg - 3), 82.05333%, 50.73529%)
+  );
+  --color-accent-hsl: light-dark(
+    17.5690607735deg,
+    80.4444444444%,
+    44.1176470588%,
+    17.5690607735deg,
+    80.4444444444%,
+    44.1176470588%
+  );
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
   --color-blue-rgb: 38, 139, 210;
-  --color-cyan: #2aa198;
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
   --color-cyan-rgb: 42, 161, 152;
-  --color-green: #859900;
+  --color-green: light-dark(#44cf6e, #08b94e);
   --color-green-rgb: 133, 153, 0;
-  --color-orange: #cb4b16;
+  --color-orange: light-dark(#e9973f, #ec7500);
   --color-orange-rgb: 203, 75, 22;
-  --color-pink: #d33682;
+  --color-pink: light-dark(#fa99cd, #d53984);
   --color-pink-rgb: 211, 54, 130;
-  --color-purple: #6c71c4;
+  --color-purple: light-dark(#a882ff, #7852ee);
   --color-purple-rgb: 108, 113, 196;
-  --color-red: #dc322f;
+  --color-red: light-dark(#fb464c, #e93147);
   --color-red-rgb: 220, 50, 47;
-  --color-yellow: #b58900;
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --color-yellow-rgb: 181, 137, 0;
   --cursor: default;
   --cursor-link: pointer;
@@ -307,7 +339,10 @@ body {
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "??", "??", "??", "Arial";
+  --font-mermaid:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-monospace:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -325,7 +360,10 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "??", "??", "??", "Arial";
+  --font-text:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -820,7 +858,7 @@ body {
   --text-accent: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%);
   --text-accent-hover: hsl(calc(17.56906deg - 5), 84.46667%, 56.91176%);
   --text-error: #fb464c;
-  --text-faint: #666;
+  --text-faint: light-dark(#586e75, #93a1a1);
   --text-highlight-bg: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%);
   --text-highlight-bg-active: hsl(
     17.5690607735deg,
@@ -828,8 +866,8 @@ body {
     44.1176470588%
   );
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: #bababa;
-  --text-normal: #dadada;
+  --text-muted: light-dark(#657b83, #839496);
+  --text-normal: light-dark(#839496, #657b83);
   --text-on-accent: #002b36;
   --text-on-accent-inverted: #000000;
   --text-selection: hsla(17.5690607735deg, 80.4444444444%, 44.1176470588%, 0.2);

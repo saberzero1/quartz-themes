@@ -1907,9 +1907,26 @@ body {
   --background-modifier-message: rgba(0, 0, 0, 0.9);
   --background-modifier-success: var(--color-green);
   --background-modifier-success-rgb: var(--color-green-rgb);
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
+  --background-primary: light-dark(
+    var(--custom-black-600),
+    var(--custom-white-2-100)
+  );
+  --background-primary-active: light-dark(
+    var(--custom-black-500),
+    var(--white)
+  );
+  --background-primary-alt: light-dark(
+    var(--custom-black-800),
+    var(--custom-white-2-200)
+  );
+  --background-secondary: light-dark(
+    var(--custom-black-800),
+    var(--custom-white-2-200)
+  );
+  --background-secondary-alt: light-dark(
+    var(--color-base-30),
+    var(--color-base-05)
+  );
   --bases-embed-border: 1px solid var(--background-modifier-border);
   --bases-embed-border-radius: var(--radius-s);
   --bases-filter-menu-width: 520px;
@@ -1943,8 +1960,11 @@ body {
   --bases-table-text-size: var(--font-smaller);
   --bases-table-white-space: nowrap;
   --black: #000000;
-  --blockquote-background-color: transparent;
-  --blockquote-border-color: var(--interactive-accent);
+  --blockquote-background-color: light-dark(
+    var(--custom-black-700),
+    var(--custom-black-700)
+  );
+  --blockquote-border-color: light-dark(var(--black), var(--black));
   --blockquote-border-thickness: 2px;
   --blockquote-color: inherit;
   --blockquote-font-style: normal;
@@ -2008,15 +2028,24 @@ body {
   --canvas-color-6: var(--color-purple-rgb);
   --canvas-dot-pattern: var(--color-base-30);
   --caret-color: var(--text-normal);
-  --checkbox-border-color: var(--text-faint);
-  --checkbox-border-color-hover: var(--text-muted);
-  --checkbox-color: var(--interactive-accent);
+  --checkbox-border-color: light-dark(var(--text-faint), var(--text-faint));
+  --checkbox-border-color-hover: light-dark(
+    var(--text-muted),
+    var(--text-muted)
+  );
+  --checkbox-color: light-dark(
+    var(--interactive-accent),
+    var(--interactive-accent)
+  );
   --checkbox-color-hover: var(--transparent);
   --checkbox-margin-inline-start: 0.85em;
-  --checkbox-marker-color: var(--transparent);
-  --checkbox-radius: var(--radius-s);
+  --checkbox-marker-color: light-dark(
+    var(--custom-gold-950),
+    var(--custom-gold-950)
+  );
+  --checkbox-radius: light-dark(var(--radius-s), var(--radius-s));
   --checkbox-size: 15px;
-  --checklist-done-color: var(--text-muted);
+  --checklist-done-color: light-dark(var(--text-faint), var(--text-faint));
   --checklist-done-decoration: none;
   --clickable-icon-radius: var(--radius-s);
   --code-background: var(--background-primary-alt);
@@ -2040,8 +2069,72 @@ body {
   --col-rule-width: 1px;
   --collapse-icon-color: var(--text-normal);
   --collapse-icon-color-collapsed: var(--white);
+  --color-accent: light-dark(
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l))
+  );
+  --color-accent-1: light-dark(
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 1),
+      calc(var(--accent-s) * 1.01),
+      calc(var(--accent-l) * 1.075)
+    )
+  );
+  --color-accent-2: light-dark(
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    )
+  );
+  --color-accent-hsl: light-dark(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l)
+  );
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
   --cursor-link: pointer;
+  --custom-admonition-border-color: light-dark(
+    var(--custom-black-950),
+    var(--custom-black-950)
+  );
+  --custom-background-tertiary: light-dark(
+    var(--custom-black-850),
+    var(--custom-white-2-300)
+  );
   --custom-black-100: #58606d;
   --custom-black-200: #4a525f;
   --custom-black-300: #2f3641;
@@ -2053,6 +2146,52 @@ body {
   --custom-black-850: #0c0f11;
   --custom-black-900: #090c0f;
   --custom-black-950: #050708;
+  --custom-blockquote-border-accent-color: light-dark(
+    var(--custom-red-600),
+    var(--custom-red-600)
+  );
+  --custom-callout-background-color: light-dark(
+    var(--custom-black-700),
+    var(--custom-black-700)
+  );
+  --custom-checkbox-background-gradient-color-1-checked: light-dark(
+    var(--white),
+    var(--white)
+  );
+  --custom-checkbox-background-gradient-color-2-checked: light-dark(
+    var(--custom-gold-950),
+    var(--custom-gold-950)
+  );
+  --custom-checkbox-border-image-gradient-color-1-checked: light-dark(
+    var(--transparent),
+    var(--transparent)
+  );
+  --custom-checkbox-border-image-gradient-color-1-unchecked: light-dark(
+    var(--transparent),
+    var(--transparent)
+  );
+  --custom-code-border-color: light-dark(var(--black), var(--black));
+  --custom-file-icon: light-dark(
+    var(--custom-white-200),
+    var(--custom-white-200)
+  );
+  --custom-file-icon-hover: light-dark(
+    var(--custom-white-100),
+    var(--custom-white-100)
+  );
+  --custom-folder-file-icon-rename: light-dark(var(--white), var(--white));
+  --custom-folder-icon-closed: light-dark(
+    var(--custom-red-600),
+    var(--custom-red-600)
+  );
+  --custom-folder-icon-hover: light-dark(
+    var(--custom-red-300),
+    var(--custom-red-300)
+  );
+  --custom-folder-icon-open: light-dark(
+    var(--Red-Accent-1),
+    var(--Red-Accent-1)
+  );
   --custom-font-size: 0.95em;
   --custom-gold-2-500: #d6ba7c;
   --custom-gold-2-750: #f3d28c;
@@ -2067,12 +2206,88 @@ body {
   --custom-grey-500: #414344;
   --custom-grey-750: #2a2c2d;
   --custom-grey-950: #121415;
+  --custom-h1-gradiant-1: light-dark(
+    var(--custom-gold-2-950),
+    var(--custom-gold-2-950)
+  );
+  --custom-h1-gradiant-2: light-dark(var(--red-400), var(--red-400));
+  --custom-h2-gradiant-1: light-dark(var(--red-300), var(--red-300));
+  --custom-h2-gradiant-2: light-dark(var(--pink-500), var(--pink-500));
+  --custom-h3-gradiant-1: light-dark(var(--pink-400), var(--pink-400));
+  --custom-h3-gradiant-2: light-dark(var(--fuchsia-500), var(--fuchsia-500));
+  --custom-h4-gradiant-1: light-dark(var(--fuchsia-400), var(--fuchsia-400));
+  --custom-h4-gradiant-2: light-dark(var(--blue-500), var(--blue-500));
+  --custom-h5-gradiant-1: light-dark(var(--blue-400), var(--blue-400));
+  --custom-h5-gradiant-2: light-dark(var(--cyan-300), var(--cyan-300));
+  --custom-h6-gradiant-1: light-dark(var(--cyan-200), var(--cyan-200));
+  --custom-h6-gradiant-2: light-dark(var(--green-400), var(--green-400));
+  --custom-highlight-bg-color: light-dark(
+    var(--custom-red-900),
+    var(--custom-red-900)
+  );
+  --custom-inline-heading-border-color: light-dark(
+    var(--custom-black-950),
+    var(--custom-black-950)
+  );
+  --custom-inline-heading-box-shadow-inset-color: light-dark(
+    var(--custom-white-200),
+    var(--custom-white-200)
+  );
+  --custom-inline-heading-box-shadow-outer-color: light-dark(
+    var(--custom-black-950),
+    var(--custom-black-950)
+  );
+  --custom-inline-heading-color: light-dark(
+    var(--custom-black-800),
+    var(--custom-black-800)
+  );
+  --custom-interactive-accent-active: light-dark(
+    var(--custom-gold-2-950),
+    var(--custom-gold-2-950)
+  );
   --custom-link-radius: 4px;
+  --custom-list-bullet-color: light-dark(
+    var(--custom-red-600),
+    var(--custom-red-600)
+  );
+  --custom-list-bullet-color-even: light-dark(
+    var(--custom-grey-250),
+    var(--custom-grey-250)
+  );
   --custom-list-bullet-content: "\e802";
   --custom-list-bullet-family: var(--its);
   --custom-list-bullet-font-size: 16px;
+  --custom-list-line-color-even: light-dark(
+    var(--custom-grey-250),
+    var(--custom-grey-250)
+  );
+  --custom-list-line-color-odd: light-dark(
+    var(--custom-red-600),
+    var(--custom-red-600)
+  );
   --custom-list-line-width: 2px;
+  --custom-match-found-indicator-color: light-dark(var(--white), var(--white));
+  --custom-no-match-found-input-color: light-dark(
+    var(--custom-red-600),
+    var(--custom-red-600)
+  );
+  --custom-no-match-found-input-color-hover: light-dark(
+    var(--custom-red-800),
+    var(--custom-red-800)
+  );
   --custom-ol-list-font-weight: 500;
+  --custom-ordered-list-bullet-color: light-dark(
+    var(--custom-gold-950),
+    var(--custom-gold-950)
+  );
+  --custom-outliner-indent-lines-color: light-dark(
+    var(--custom-red-500),
+    var(--custom-red-500)
+  );
+  --custom-outliner-indent-lines-color-hover: light-dark(
+    var(--custom-gold-950),
+    var(--custom-gold-950)
+  );
   --custom-outliner-indent-lines-width: 1px;
   --custom-red-2-500: #aa3c5d;
   --custom-red-300: #b94a4a;
@@ -2089,6 +2304,26 @@ body {
   --custom-red-800-hsl: 0, 49%, 22%;
   --custom-red-900: #461818;
   --custom-red-900-hsl: 0, 49%, 18%;
+  --custom-scrollbar-acive-track: light-dark(
+    var(--custom-grey-950),
+    var(--custom-grey-950)
+  );
+  --custom-scrollbar-thumb-bg-hover: light-dark(
+    var(--custom-gold-950),
+    var(--custom-gold-950)
+  );
+  --custom-scrollbar-thumb-bg-window-inactive: light-dark(
+    var(--custom-grey-500),
+    var(--custom-grey-500)
+  );
+  --custom-scrollbar-track-bg-hover: light-dark(
+    var(--custom-grey-950),
+    var(--custom-grey-950)
+  );
+  --custom-scrollbar-track-bg-window-inactive: light-dark(
+    var(--custom-grey-950),
+    var(--custom-grey-950)
+  );
   --custom-text-highlight-bg: rgba(168, 60, 60, 0.4);
   --custom-text-highlight-bg-active: rgba(253, 115, 115, 0.4);
   --custom-text-highlight-box-shadow-active: var(--custom-gold-2-950);
@@ -2201,7 +2436,8 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: var(--font-print);
+  --font-text:
+    var(--font-text-override), var(--font-text-theme), var(--font-default);
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -2380,9 +2616,18 @@ body {
   --input-height: 30px;
   --input-placeholder-color: var(--text-faint);
   --input-radius: 5px;
-  --interactive-accent: var(--color-accent-1);
-  --interactive-accent-hover: var(--color-accent-2);
-  --interactive-accent-hsl: var(--color-accent-hsl);
+  --interactive-accent: light-dark(
+    var(--custom-gold-950),
+    var(--custom-gold-950)
+  );
+  --interactive-accent-hover: light-dark(
+    var(--custom-gold-500),
+    var(--custom-gold-500)
+  );
+  --interactive-accent-hsl: light-dark(
+    var(--color-accent-hsl),
+    var(--color-accent-hsl)
+  );
   --interactive-hover: var(--color-base-10);
   --interactive-normal: var(--color-base-00);
   --italic-color: inherit;
@@ -2435,8 +2680,11 @@ body {
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
   --list-marker-color: transparent;
-  --list-marker-color-collapsed: var(--text-accent);
-  --list-marker-color-hover: var(--text-muted);
+  --list-marker-color-collapsed: light-dark(
+    var(--text-accent),
+    var(--text-accent)
+  );
+  --list-marker-color-hover: light-dark(var(--text-muted), var(--text-muted));
   --list-min-width: 200px;
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
@@ -2644,7 +2892,10 @@ body {
   --Red-Accent-1-Lighten: #b34141;
   --Red-Accent-1-Lite: #b94a4a;
   --Red-Accent-2: #aa3c5d;
-  --ribbon-background: var(--background-secondary);
+  --ribbon-background: light-dark(
+    var(--custom-background-tertiary),
+    var(--custom-background-tertiary)
+  );
   --ribbon-background-collapsed: var(--background-primary);
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
   --ribbon-width: 44px;
@@ -2658,9 +2909,15 @@ body {
   --rose-700: #be123c;
   --rose-800: #9f1239;
   --rose-900: #881337;
-  --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2);
-  --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05);
-  --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1);
+  --scrollbar-active-thumb-bg: light-dark(
+    var(--custom-gold-950),
+    var(--custom-gold-950)
+  );
+  --scrollbar-bg: light-dark(var(--custom-grey-950), var(--custom-grey-950));
+  --scrollbar-thumb-bg: light-dark(
+    var(--custom-grey-500),
+    var(--custom-grey-500)
+  );
   --search-clear-button-color: var(--text-muted);
   --search-clear-button-size: 13px;
   --search-icon-color: var(--text-muted);
@@ -2713,7 +2970,10 @@ body {
   --slider-thumb-y: -6px;
   --slider-track-background: var(--background-modifier-border);
   --slider-track-height: 3px;
-  --status-bar-background: var(--background-secondary);
+  --status-bar-background: light-dark(
+    var(--custom-background-tertiary),
+    var(--custom-background-tertiary)
+  );
   --status-bar-border-color: var(--divider-color);
   --status-bar-border-width: 1px 0 1px 0px;
   --status-bar-font-size: var(--font-ui-smaller);
@@ -2768,11 +3028,14 @@ body {
   --tab-switcher-preview-radius: var(--radius-xl);
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05);
   --tab-switcher-preview-shadow-active: 0 0 0 2px var(--color-accent);
-  --tab-text-color: var(--text-faint);
+  --tab-text-color: light-dark(var(--text-muted), var(--text-muted));
   --tab-text-color-active: var(--text-muted);
-  --tab-text-color-focused: var(--text-muted);
+  --tab-text-color-focused: light-dark(var(--text-muted), var(--text-muted));
   --tab-text-color-focused-active: var(--text-normal);
-  --tab-text-color-focused-active-current: var(--text-normal);
+  --tab-text-color-focused-active-current: light-dark(
+    var(--text-normal),
+    var(--text-normal)
+  );
   --tab-text-color-focused-highlighted: var(--text-accent);
   --tab-width: 200px;
   --table-add-button-background: transparent;
@@ -2844,12 +3107,18 @@ body {
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: var(--color-base-70);
   --text-normal: var(--color-base-100);
-  --text-on-accent: white;
+  --text-on-accent: light-dark(
+    var(--background-primary-active),
+    var(--background-primary-active)
+  );
   --text-on-accent-inverted: black;
   --text-selection: hsla(var(--color-accent-hsl), 0.2);
   --text-success: var(--color-green);
   --text-warning: var(--color-orange);
-  --titlebar-background: var(--background-secondary);
+  --titlebar-background: light-dark(
+    var(--custom-background-tertiary),
+    var(--custom-background-tertiary)
+  );
   --titlebar-background-focused: var(--background-secondary-alt);
   --titlebar-border-color: var(--background-modifier-border);
   --titlebar-border-width: 0px;

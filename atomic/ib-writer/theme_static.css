@@ -931,12 +931,15 @@
 }
 
 :root {
+  --accent-h: light-dark(196, 201);
+  --accent-l: light-dark(20.4%, 66%);
+  --accent-s: light-dark(61.5%, 93%);
   --background-primary: light-dark(#1b1a1b, #f7f7f7);
   --background-secondary-alt: light-dark(#363636, #212121);
   --color-accent: light-dark(#144354, #144354);
   --color-accent-1: light-dark(#165161, #15495b);
   --color-accent-2: light-dark(#185f6e, #165161);
-  --color-accent-hsl: light-dark(196, 61.5%, 20.4%, 196, 61.5%, 20.4%);
+  --color-accent-hsl: light-dark(#144354, #144354);
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
@@ -1581,9 +1584,9 @@
 }
 
 body {
-  --accent-h: 258;
-  --accent-l: 66%;
-  --accent-s: 88%;
+  --accent-h: light-dark(196, 201);
+  --accent-l: light-dark(20.4%, 66%);
+  --accent-s: light-dark(61.5%, 93%);
   --anim-duration-fast: 140ms;
   --anim-duration-moderate: 300ms;
   --anim-duration-none: 0;
@@ -1605,9 +1608,10 @@ body {
   --background-modifier-message: #000000e6;
   --background-modifier-success: #44cf6e;
   --background-modifier-success-rgb: 68, 207, 110;
-  --background-primary: #000;
+  --background-primary: light-dark(#1b1a1b, #f7f7f7);
   --background-primary-alt: #111;
   --background-secondary: #1e1e1e;
+  --background-secondary-alt: light-dark(#363636, #212121);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -1716,6 +1720,30 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: #666666;
   --collapse-icon-color-collapsed: #fb464c;
+  --color-accent: light-dark(#144354, #144354);
+  --color-accent-1: light-dark(#165161, #15495b);
+  --color-accent-2: light-dark(#185f6e, #165161);
+  --color-accent-hsl: light-dark(#144354, #144354);
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -1774,7 +1802,10 @@ body {
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "??", "??", "iA Writer Duo V", "Arial";
+  --font-mermaid:
+    "??", "iA Writer Duo V", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace:
     "??", "iA Writer Mono V", ui-monospace, SFMono-Regular, "Cascadia Mono",
     "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
@@ -1792,7 +1823,10 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "??", "??", "iA Writer Duo V", "Arial";
+  --font-text:
+    "??", "iA Writer Duo V", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 1.125rem;
   --font-text-theme: "iA Writer Duo V";
@@ -2153,7 +2187,7 @@ body {
   --sync-avatar-color-7: #a882ff;
   --sync-avatar-color-8: #fa99cd;
   --sync-avatar-color-current-user: transparent;
-  --tab-background-active: #1b1a1b;
+  --tab-background-active: light-dark(#1b1a1b, #f7f7f7);
   --tab-container-background: #1e1e1e;
   --tab-curve: 6px;
   --tab-divider-color: #3f3f3f;
@@ -2246,7 +2280,7 @@ body {
   --text-normal: #cccccc;
   --text-on-accent: #ffffff;
   --text-on-accent-inverted: #000000;
-  --text-selection: #14435433;
+  --text-selection: light-dark(#144454, #b9e9f9);
   --text-success: #44cf6e;
   --text-warning: #e9973f;
   --titlebar-background: #1e1e1e;
@@ -2931,7 +2965,20 @@ body:not(.is-mobile) .app-container {
 .markdown-source-view {
   --list-marker-space: 0;
   --list-padding-inline-start: 0;
-  font-family: "??", "??", "iA Writer Duo V", "Arial";
+  font-family:
+    "??",
+    "iA Writer Duo V",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 1.125rem;
 }
 
@@ -3081,7 +3128,20 @@ body:not(.is-mobile) .app-container {
 }
 
 .markdown-source-view.mod-cm6 .cm-scroller {
-  font-family: "??", "??", "iA Writer Duo V", "Arial";
+  font-family:
+    "??",
+    "iA Writer Duo V",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   line-height: 1.6;
   scrollbar-gutter: stable;
 }
@@ -4336,7 +4396,20 @@ body:not(.show-inline-title) .inline-title:not([data-level]) {
 .markdown-preview-view {
   -webkit-user-select: text;
   color: #cccccc;
-  font-family: "??", "??", "iA Writer Duo V", "Arial";
+  font-family:
+    "??",
+    "iA Writer Duo V",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 1.125rem;
   height: 100%;
   line-height: 1.6;
@@ -5786,7 +5859,20 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
 .community-modal-readme {
   -webkit-user-select: text;
   color: #cccccc;
-  font-family: "??", "??", "iA Writer Duo V", "Arial";
+  font-family:
+    "??",
+    "iA Writer Duo V",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 1.125rem;
   line-height: 1.6;
   overflow-wrap: break-word;
@@ -9738,7 +9824,10 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .modal .modal-nav-action.mod-cta {
-  color: #cccccc;
+  color: light-dark(
+    hsl(light-dark(196, 201), light-dark(61.5%, 93%), light-dark(20.4%, 66%)),
+    hsl(light-dark(196, 201), light-dark(61.5%, 93%), light-dark(20.4%, 66%))
+  );
   font-weight: 600;
   inset-inline-end: 0;
 }
@@ -11949,7 +12038,20 @@ kbd {
 .markdown-source-view.mod-cm6
   .cm-line.HyperMD-codeblock
   .cm-formatting.cm-formatting-list {
-  font-family: "??", "??", "iA Writer Duo V", "Arial";
+  font-family:
+    "??",
+    "iA Writer Duo V",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 1.125rem;
 }
 
@@ -17402,7 +17504,20 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .file-recovery-text[data-ext="md"] {
-  font-family: "??", "??", "iA Writer Duo V", "Arial";
+  font-family:
+    "??",
+    "iA Writer Duo V",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 1.125rem;
 }
 
@@ -19010,7 +19125,20 @@ body:not(.is-phone)
   --cursor-link: default;
   background-color: #1b1a1b;
   flex: 1 0 0;
-  font-family: "??", "??", "iA Writer Duo V", "Arial";
+  font-family:
+    "??",
+    "iA Writer Duo V",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 1.125rem;
   overflow: auto;
   padding: 10px;
@@ -19376,16 +19504,50 @@ body.theme-dark {
 }
 
 .canvas-selection {
-  background-color: #1443541a;
-  border: 2px solid #cccccc;
+  background-color: hsla(
+    light-dark(
+      light-dark(196, 201),
+      light-dark(61.5%, 93%),
+      light-dark(20.4%, 66%),
+      light-dark(196, 201),
+      light-dark(61.5%, 93%),
+      light-dark(20.4%, 66%)
+    ),
+    0.1
+  );
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(196, 201), light-dark(61.5%, 93%), light-dark(20.4%, 66%)),
+      hsl(light-dark(196, 201), light-dark(61.5%, 93%), light-dark(20.4%, 66%))
+    );
   pointer-events: none;
   position: absolute;
   z-index: -1;
 }
 
 .canvas-selection.mod-group-selection {
-  background-color: #14435408;
-  border-color: #1443544d;
+  background-color: hsla(
+    light-dark(
+      light-dark(196, 201),
+      light-dark(61.5%, 93%),
+      light-dark(20.4%, 66%),
+      light-dark(196, 201),
+      light-dark(61.5%, 93%),
+      light-dark(20.4%, 66%)
+    ),
+    0.03
+  );
+  border-color: hsla(
+    light-dark(
+      light-dark(196, 201),
+      light-dark(61.5%, 93%),
+      light-dark(20.4%, 66%),
+      light-dark(196, 201),
+      light-dark(61.5%, 93%),
+      light-dark(20.4%, 66%)
+    ),
+    0.3
+  );
   border-radius: 3px;
   border-width: 3px;
   pointer-events: initial;
@@ -19460,7 +19622,10 @@ body.theme-dark {
 
 @media (hover: hover) {
   .canvas-card-menu .canvas-card-menu-button:hover {
-    color: #cccccc;
+    color: light-dark(
+      hsl(light-dark(196, 201), light-dark(61.5%, 93%), light-dark(20.4%, 66%)),
+      hsl(light-dark(196, 201), light-dark(61.5%, 93%), light-dark(20.4%, 66%))
+    );
   }
 }
 
@@ -19531,7 +19696,10 @@ body.theme-dark {
 }
 
 .canvas-control-item.is-active {
-  color: #cccccc;
+  color: light-dark(
+    hsl(light-dark(196, 201), light-dark(61.5%, 93%), light-dark(20.4%, 66%)),
+    hsl(light-dark(196, 201), light-dark(61.5%, 93%), light-dark(20.4%, 66%))
+  );
 }
 
 .canvas-control-item.is-disabled svg {
@@ -19700,14 +19868,20 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 }
 
 .canvas-node.is-selected .canvas-node-container {
-  border-color: #cccccc;
+  border-color: light-dark(
+    hsl(light-dark(196, 201), light-dark(61.5%, 93%), light-dark(20.4%, 66%)),
+    hsl(light-dark(196, 201), light-dark(61.5%, 93%), light-dark(20.4%, 66%))
+  );
   box-shadow:
     0px 0.5px 1px 0.5px #0000001a,
     0 0 0 2px #cccccc;
 }
 
 .canvas-node.is-focused .canvas-node-container {
-  border-color: #cccccc;
+  border-color: light-dark(
+    hsl(light-dark(196, 201), light-dark(61.5%, 93%), light-dark(20.4%, 66%)),
+    hsl(light-dark(196, 201), light-dark(61.5%, 93%), light-dark(20.4%, 66%))
+  );
   box-shadow:
     0px 0.5px 1px 0.5px #0000001a,
     0 0 0 2px #cccccc;
@@ -19763,8 +19937,22 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 }
 
 .canvas-node.is-dummy .canvas-node-container {
-  background-color: #14435433;
-  border: 4px solid #cccccc;
+  background-color: hsla(
+    light-dark(
+      light-dark(196, 201),
+      light-dark(61.5%, 93%),
+      light-dark(20.4%, 66%),
+      light-dark(196, 201),
+      light-dark(61.5%, 93%),
+      light-dark(20.4%, 66%)
+    ),
+    0.2
+  );
+  border: 4px solid
+    light-dark(
+      hsl(light-dark(196, 201), light-dark(61.5%, 93%), light-dark(20.4%, 66%)),
+      hsl(light-dark(196, 201), light-dark(61.5%, 93%), light-dark(20.4%, 66%))
+    );
   box-shadow: 0px 2px 10px #00000026;
 }
 
@@ -20037,7 +20225,11 @@ body.is-mobile .canvas-node-resizer {
   .canvas-node-interaction-layer
   .canvas-node-resizer[data-resize="topright"] {
   background-color: #1b1a1b;
-  border: 2px solid #cccccc;
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(196, 201), light-dark(61.5%, 93%), light-dark(20.4%, 66%)),
+      hsl(light-dark(196, 201), light-dark(61.5%, 93%), light-dark(20.4%, 66%))
+    );
   border-radius: 3px;
   display: block;
   height: 20px;
@@ -20050,7 +20242,11 @@ body.is-mobile .canvas-node-resizer {
   .canvas-node-interaction-layer
   .canvas-node-resizer[data-resize="bottomright"] {
   background-color: #1b1a1b;
-  border: 2px solid #cccccc;
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(196, 201), light-dark(61.5%, 93%), light-dark(20.4%, 66%)),
+      hsl(light-dark(196, 201), light-dark(61.5%, 93%), light-dark(20.4%, 66%))
+    );
   border-radius: 3px;
   display: block;
   height: 20px;
@@ -20063,7 +20259,11 @@ body.is-mobile .canvas-node-resizer {
   .canvas-node-interaction-layer
   .canvas-node-resizer[data-resize="topleft"] {
   background-color: #1b1a1b;
-  border: 2px solid #cccccc;
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(196, 201), light-dark(61.5%, 93%), light-dark(20.4%, 66%)),
+      hsl(light-dark(196, 201), light-dark(61.5%, 93%), light-dark(20.4%, 66%))
+    );
   border-radius: 3px;
   display: block;
   height: 20px;
@@ -20076,7 +20276,11 @@ body.is-mobile .canvas-node-resizer {
   .canvas-node-interaction-layer
   .canvas-node-resizer[data-resize="bottomleft"] {
   background-color: #1b1a1b;
-  border: 2px solid #cccccc;
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(196, 201), light-dark(61.5%, 93%), light-dark(20.4%, 66%)),
+      hsl(light-dark(196, 201), light-dark(61.5%, 93%), light-dark(20.4%, 66%))
+    );
   border-radius: 3px;
   display: block;
   height: 20px;
@@ -20113,7 +20317,10 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-node-connection-point::after {
-  background-color: #cccccc;
+  background-color: light-dark(
+    hsl(light-dark(196, 201), light-dark(61.5%, 93%), light-dark(20.4%, 66%)),
+    hsl(light-dark(196, 201), light-dark(61.5%, 93%), light-dark(20.4%, 66%))
+  );
   border: 3px solid transparent;
   border-radius: 50%;
   box-sizing: border-box;
@@ -20147,12 +20354,18 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-snaps line {
-  stroke: rgb(204, 204, 204);
+  stroke: light-dark(
+    hsl(light-dark(196, 201), light-dark(61.5%, 93%), light-dark(20.4%, 66%)),
+    hsl(light-dark(196, 201), light-dark(61.5%, 93%), light-dark(20.4%, 66%))
+  );
   stroke-width: 1px;
 }
 
 .canvas-snaps circle {
-  fill: #cccccc;
+  fill: light-dark(
+    hsl(light-dark(196, 201), light-dark(61.5%, 93%), light-dark(20.4%, 66%)),
+    hsl(light-dark(196, 201), light-dark(61.5%, 93%), light-dark(20.4%, 66%))
+  );
 }
 
 .canvas-edges {
@@ -20385,9 +20598,22 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-placeholder-message {
-  background: #1443541a;
+  background: hsla(
+    light-dark(
+      light-dark(196, 201),
+      light-dark(61.5%, 93%),
+      light-dark(20.4%, 66%),
+      light-dark(196, 201),
+      light-dark(61.5%, 93%),
+      light-dark(20.4%, 66%)
+    ),
+    0.1
+  );
   border-radius: 8px;
-  color: #cccccc;
+  color: light-dark(
+    hsl(light-dark(196, 201), light-dark(61.5%, 93%), light-dark(20.4%, 66%)),
+    hsl(light-dark(196, 201), light-dark(61.5%, 93%), light-dark(20.4%, 66%))
+  );
   font-size: 1.35rem;
   line-height: 1.6;
   max-width: 70vw;
@@ -20431,7 +20657,11 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-cursor {
-  border: 5px solid #cccccc;
+  border: 5px solid
+    light-dark(
+      hsl(light-dark(196, 201), light-dark(61.5%, 93%), light-dark(20.4%, 66%)),
+      hsl(light-dark(196, 201), light-dark(61.5%, 93%), light-dark(20.4%, 66%))
+    );
   border-radius: 5px;
   height: 1px;
   pointer-events: none;

@@ -932,6 +932,9 @@
 
 :root {
   --accent-em: light-dark(#a4ca8e, #099d4e);
+  --accent-h: light-dark(208, 207);
+  --accent-l: light-dark(49%, 54%);
+  --accent-s: light-dark(64%, 77%);
   --accent-strong: light-dark(#e7e7e7, #000000);
   --activeline-background: light-dark(#478fd10d, #478fd10d);
   --admonition-bg-color: light-dark(#11111100, #ffffff00);
@@ -1002,7 +1005,7 @@
   --calendar-week-background-color: light-dark(#4a5842, #d6e6bf);
   --calendar-week-color: light-dark(#a2df94, #48b432);
   --calendar-week-hover: light-dark(#61815c, #e9ffe3);
-  --cards-width: 87.04px;
+  --cards-width: 138px;
   --checkbox-color-0: light-dark(#3187d3, #2f92e4);
   --checkbox-color-1: light-dark(#a9a608, #c4c116);
   --checkbox-color-2: light-dark(#1dac10, #4bbf40);
@@ -1051,7 +1054,7 @@
   --color-accent: light-dark(#478fd1, #478fd1);
   --color-accent-1: light-dark(#68a9db, #589bd6);
   --color-accent-2: light-dark(#86bee4, #68a9db);
-  --color-accent-hsl: light-dark(209, 60%, 55%, 209, 60%, 55%);
+  --color-accent-hsl: light-dark(#478fd1, #478fd1);
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
@@ -1895,9 +1898,13 @@
 }
 
 body {
-  --accent-h: 258;
-  --accent-l: 66%;
-  --accent-s: 88%;
+  --accent-em: light-dark(#a4ca8e, #099d4e);
+  --accent-h: light-dark(208, 207);
+  --accent-l: light-dark(49%, 54%);
+  --accent-s: light-dark(64%, 77%);
+  --accent-strong: light-dark(#e7e7e7, #000000);
+  --activeline-background: light-dark(#478fd10d, #478fd10d);
+  --admonition-bg-color: light-dark(#11111100, #ffffff00);
   --anim-duration-fast: 140ms;
   --anim-duration-moderate: 300ms;
   --anim-duration-none: 0;
@@ -1907,29 +1914,66 @@ body {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
+  --aqua: light-dark(#35bed0, #88c0d0);
+  --background-4-sliding-pane: light-dark(#252525ed, #ffffffef);
+  --background-asymm-split-left: light-dark(#1d252f, #1d252f);
+  --background-black-or-white-1: light-dark(#353535, #e4e4e4);
+  --background-blockquote: light-dark(#9191911c, #d5d5d52c);
+  --background-blue: light-dark(#2f5264, #ddebf1);
+  --background-brown: light-dark(#493a3a, #e9e5e3);
+  --background-code: light-dark(#1111118c, #e6e6e671);
+  --background-code-2: light-dark(#4c4c4cb0, #cccccc62);
   --background-command-palette-theme-dark-custom: url("https://");
   --background-command-palette-theme-light-custom: url("https://");
+  --background-gray: light-dark(#535353, #ebeced);
+  --background-green: light-dark(#32503e, #ddedea);
+  --background-leaf-resize-handle: light-dark(#16161680, #16161680);
   --background-markdown-page-theme-dark-custom: url("https://");
   --background-markdown-page-theme-light-custom: url("https://");
+  --background-mobile-drawer-1: light-dark(#1b1b1b, #ffffff);
+  --background-mobile-drawer-2: light-dark(#1b1b1b69, #ffffffa1);
   --background-modifier-active-hover: #478fd126;
-  --background-modifier-border: #363636;
+  --background-modifier-border: light-dark(#343434, #dddddd);
+  --background-modifier-border-1: light-dark(#000000, #e1dfdf);
+  --background-modifier-border-asymm: light-dark(#343434, #d8d8d8);
+  --background-modifier-border-checkbox: light-dark(#7b7b7b, #9c9c9c);
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;
-  --background-modifier-error: #fb464c;
+  --background-modifier-border-hr: light-dark(#3f3f3f, #bfbfbf);
+  --background-modifier-error: light-dark(#9b4343, #e68787);
   --background-modifier-error-hover: #fb464c;
   --background-modifier-error-rgb: 251, 70, 76;
-  --background-modifier-form-field: #000;
+  --background-modifier-form-field: light-dark(#2a2a2a, #fff);
   --background-modifier-hover: #ffffff11;
   --background-modifier-message: #000000e6;
-  --background-modifier-success: #44cf6e;
+  --background-modifier-success: light-dark(#539126, #a4e7c3);
   --background-modifier-success-rgb: 68, 207, 110;
+  --background-nonoverlapping-note: light-dark(#000000, #ffffff);
+  --background-orange: light-dark(#53422f, #faebdd);
   --background-panel-page-theme-dark-custom: url("https://");
   --background-panel-page-theme-light-custom: url("https://");
-  --background-primary: #000;
-  --background-primary-alt: #111;
-  --background-secondary: #1e1e1e;
+  --background-pink: light-dark(#533b4a, #f4dfeb);
+  --background-popover: light-dark(#111, #111);
+  --background-primary: light-dark(#1f1f1fbf, #1f1f1fbf);
+  --background-primary-alt: light-dark(#00000082, #00000082);
+  --background-purple: light-dark(#443f57, #eae4f2);
+  --background-red: light-dark(#683c3c, #ffe3e3);
+  --background-search-result: light-dark(#00000069, #00000069);
+  --background-secondary: light-dark(#00000069, #00000069);
+  --background-secondary-alt: light-dark(#363636, #212121);
+  --background-secondary-translucent: light-dark(#2c2c2c26, #ffffff3d);
+  --background-secondary-translucent-1: light-dark(#2c2c2c26, #ffffff5d);
   --background-settings-workplace-theme-dark-custom: url("https://");
   --background-settings-workplace-theme-light-custom: url("https://");
+  --background-transparent-black-or-white-1: light-dark(#1b1b1b9a, #ffffffb0);
+  --background-transparent-black-or-white-2: light-dark(#1e1e1ebd, #ffffffca);
+  --background-transparent-black-or-white-3: light-dark(#2f2f2f6c, #eeeeee91);
+  --background-transparent-black-or-white-3-1: light-dark(#00000064, #fafafac3);
+  --background-transparent-black-or-white-4: light-dark(#7e7e7e1d, #a7a7a765);
+  --background-transparent-black-or-white-5: light-dark(#0f0f0f6c, #f0f0f091);
+  --background-transparent-blue: light-dark(#003e759a, #c6e5ffde);
+  --background-waves-color: light-dark(#4a75db8c, #4a75db8c);
+  --background-yellow: light-dark(#585536, #fbf3db);
   --bases-embed-border: 1px solid #bfbfbf;
   --bases-embed-border-radius: 5px;
   --bases-filter-menu-width: 520px;
@@ -1962,12 +2006,27 @@ body {
   --bases-table-row-height: 30px;
   --bases-table-text-size: 0.875em;
   --bases-table-white-space: nowrap;
+  --bg-color-highlight-1: light-dark(#c865656f, #ff000034);
+  --bg-color-highlight-2: light-dark(#54b9476f, #0fc41835);
+  --bg-color-highlight-3: light-dark(#1e83d086, #4ca6ff51);
+  --bg-color-notebook: light-dark(#ffffff00, #ffffff00);
+  --bg-color-settings-0: light-dark(#07070747, #7d7d7d6b);
+  --bg-color-settings-0-1: light-dark(#ffffff00, #ffffff77);
+  --bg-color-settings-1: light-dark(#7c7c7c6d, #ffffff17);
+  --bg-color-settings-2: light-dark(#1f1f1f52, #ffffff5a);
+  --bg-color-settings-3: light-dark(#141414be, #ffffffda);
+  --bg-color-settings-4: light-dark(#2e2e2e9d, #ffffffd2);
+  --bg-color-settings-5: light-dark(#424242aa, #d4d4d464);
+  --bg-color-settings-6: light-dark(#191919c7, #ffffff85);
   --bg-panel-page-opacity-cp: 0.25;
+  --bg-sliding-pane-header: light-dark(#00000043, #ffffff97);
+  --bg-sliding-pane-leaf: light-dark(#0f0f0f36, #ffffff88);
   --blockquote-background-color: transparent;
   --blockquote-border-color: #95a503;
   --blockquote-border-thickness: 2px;
   --blockquote-color: inherit;
   --blockquote-font-style: normal;
+  --blue: light-dark(#a0c7e9, #5e81ac);
   --blur-codebox-frosted-glass: 2;
   --blur-depth: 10px;
   --blur-depth-cp: 10px;
@@ -1983,6 +2042,7 @@ body {
   --bt-bubble-border-color: #bfbfbf;
   --bt-bubble-layout-padding: 8px;
   --bt-colorful-indentation-width: 1px;
+  --bt-connected-indent-line-color: light-dark(#926a6a, #ffa8a8);
   --bt-indentation-gradient-color-1: #95a503;
   --bt-indentation-gradient-color-2: transparent;
   --bt-indentation-width-hover: 3px;
@@ -1990,6 +2050,12 @@ body {
   --c-1: #da2400;
   --c-2: #ffb623;
   --c-3: #8c6e22;
+  --calendar-active-color: light-dark(#478fd166, #478fd133);
+  --calendar-hover-color: light-dark(#478fd133, #8b6cef1a);
+  --calendar-today-background-color: light-dark(#8c4545, #aaeec6);
+  --calendar-week-background-color: light-dark(#4a5842, #d6e6bf);
+  --calendar-week-color: light-dark(#a2df94, #48b432);
+  --calendar-week-hover: light-dark(#61815c, #e9ffe3);
   --callout-blend-mode: darken;
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
@@ -2030,11 +2096,27 @@ body {
   --checkbox-border-color: #dee4ede6;
   --checkbox-border-color-hover: #525252;
   --checkbox-color: #95a503;
+  --checkbox-color-0: light-dark(#3187d3, #2f92e4);
+  --checkbox-color-1: light-dark(#a9a608, #c4c116);
+  --checkbox-color-2: light-dark(#1dac10, #4bbf40);
+  --checkbox-color-3: light-dark(#ffd1d1, #ffe9e9);
+  --checkbox-color-4: light-dark(#625d4c, #fff8b7);
+  --checkbox-color-5: light-dark(#9a67ae, #ad7fbf);
+  --checkbox-color-6: light-dark(#5f5f5f, #5f5f5f);
   --checkbox-color-hover: #86bee4;
   --checkbox-margin-inline-start: 0.85em;
   --checkbox-marker-color: #000;
   --checkbox-radius: 5px;
   --checkbox-size: 0.9rem;
+  --checklist-bg: light-dark(#1d1d1d96, #dfdfdf8e);
+  --checklist-bg-hover: light-dark(#08080896, #ffffffcc);
+  --checklist-color-1: light-dark(#005aa486, #bbdefbab);
+  --checklist-color-2: light-dark(#00798986, #b2ebf2ab);
+  --checklist-color-3: light-dark(#12781586, #c8e6c9ab);
+  --checklist-color-4: light-dark(#897b0086, #f8ef99ab);
+  --checklist-color-5: light-dark(#a4620086, #ffe0b2ab);
+  --checklist-color-6: light-dark(#ab100586, #ffcdd2ab);
+  --checklist-color-7: light-dark(#7f1f9086, #e1bee7ab);
   --checklist-done-color: #525252;
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: 5px;
@@ -2058,7 +2140,7 @@ body {
   --code-important: #e9973f;
   --code-keyword: #fa99cd;
   --code-language: #525252;
-  --code-normal: #d4d4d4;
+  --code-normal: light-dark(#d0d0d0, #000000);
   --code-operator: #66d9ef;
   --code-property: #00a3b9;
   --code-punctuation: #525252;
@@ -2075,20 +2157,62 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: #dee4ede6;
   --collapse-icon-color-collapsed: #42a1fa;
+  --color-accent: light-dark(#478fd1, #478fd1);
+  --color-accent-1: light-dark(#68a9db, #589bd6);
+  --color-accent-2: light-dark(#86bee4, #68a9db);
+  --color-accent-hsl: light-dark(#478fd1, #478fd1);
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-highlight-1: light-dark(#d4d4d4, #d4d4d4);
+  --color-highlight-2: light-dark(#d4d4d4, #d4d4d4);
+  --color-highlight-3: light-dark(#d4d4d4, #d4d4d4);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-view-header-gradient-1: light-dark(#060813de, #ffffffce);
+  --color-view-header-gradient-2: light-dark(#00285dc0, #ffffffce);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
+  --cursor-blue: light-dark(#8ac7ff, #1791e2);
   --cursor-color: #d4d4d4;
   --cursor-color-temp: #d4d4d4;
+  --cursor-green: light-dark(#7dff7d, #008000);
   --cursor-link: pointer;
+  --cursor-red: light-dark(#ff3939, #ff0000);
+  --cursor-violet: light-dark(#bf76ff, #ee82ee);
+  --cursor-yellow: light-dark(#fff955, #d5ca00);
   --custom-titlebar-bg: #1d252f;
+  --darkblue: light-dark(#478fee, #3b84e4);
+  --darkgreen: light-dark(#568060, #068a5e);
+  --day-planner-dot: light-dark(#dfcf77, #ffd900);
+  --day-planner-item-hover: light-dark(#053c85, #8fccff);
+  --day-planner-line: light-dark(#dfcf77, #ffd900);
+  --day-planner-pie: light-dark(#f19c1c, #eca95c);
+  --day-planner-timeline: light-dark(#000000, #d62f2f);
   --dialog-max-height: 85vh;
   --dialog-max-width: 80vw;
   --dialog-width: 560px;
   --direction: 1;
-  --divider-color: #bfbfbf;
+  --divider-color: light-dark(#000000, #e3e3e3);
   --divider-color-hover: #95a503;
   --divider-vertical-height: calc(100% - 40px);
   --divider-width: 1px;
   --divider-width-hover: 3px;
+  --dotted-notebook-dot-color: light-dark(#c7c7c71f, #c7c7c780);
   --drag-ghost-background: #000000d9;
   --drag-ghost-text-color: #fff;
   --dropdown-background: #1d252f;
@@ -2108,6 +2232,17 @@ body {
   --embed-font-style: inherit;
   --embed-max-height: 4000px;
   --embed-padding: 0 0 0 24px;
+  --event-item-color1: light-dark(#283493bb, #65ace6);
+  --event-item-color10: light-dark(#6a1b9abb, #072f6b);
+  --event-item-color2: light-dark(#1565c0bb, #52a4e7);
+  --event-item-color3: light-dark(#00838fbb, #2e96eb);
+  --event-item-color4: light-dark(#2e7d32bb, #2786da);
+  --event-item-color5: light-dark(#9e9d24bb, #1275cc);
+  --event-item-color6: light-dark(#ff8f00bb, #2664c0);
+  --event-item-color7: light-dark(#d84315bb, #1652ac);
+  --event-item-color8: light-dark(#c62828bb, #0c469c);
+  --event-item-color9: light-dark(#ad1457bb, #0a3c86);
+  --external-link-color: light-dark(#a360da, #a360da);
   --fancy-cursor-width: 2px;
   --fancy-hr-icon: "😀";
   --fancy-hr-rotate: 0deg;
@@ -2124,6 +2259,7 @@ body {
   --file-margins: 32px;
   --flair-background: #1d252f;
   --flair-color: #d4d4d4;
+  --folder-title: light-dark(#ffffff, #000000);
   --font-black: 900;
   --font-bold: 700;
   --font-default:
@@ -2161,8 +2297,10 @@ body {
     Bookerly, "Inter", "Segoe UI", "Microsoft YaHei", STzhongsong, STSong,
     "Segoe UI Emoji", Serif;
   --font-family-title:
-    "??", "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", "Arial";
+    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
+    "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   --font-family-vault: "Lucida Handwriting", "Segoe UI Emoji";
   --font-interface:
     "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
@@ -2177,8 +2315,10 @@ body {
     "Source Code Pro", monospace;
   --font-medium: 500;
   --font-mermaid:
-    "??", "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", "Arial";
+    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
+    "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   --font-monospace:
     "??", "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC",
     "Source Han Mono", "Microsoft Yahei Mono", "Segoe UI Emoji",
@@ -2228,8 +2368,10 @@ body {
   --font-smallest: 0.8em;
   --font-style-em: italic;
   --font-text:
-    "??", "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", "Arial";
+    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
+    "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme:
@@ -2260,64 +2402,92 @@ body {
   --footnote-padding-inline: 6px;
   --footnote-radius: 5px;
   --footnote-size: 0.875em;
+  --graph-arrow: light-dark(#c23917, #e25300);
+  --graph-attach: light-dark(#b2cfe0bb, #afcfe0cc);
+  --graph-canvas-bg: light-dark(#000, #000);
+  --graph-circle: light-dark(#55a2d6bb, #1f78b4cc);
+  --graph-circle-fill-highlight: light-dark(#95a503, #95a503);
+  --graph-control-bg: light-dark(#00000080, #ffffff9a);
   --graph-controls-width: 240px;
-  --graph-line: #3f3f3f;
+  --graph-line: light-dark(#8c8c8c, #b1b1b1);
+  --graph-line-fill-highlight: light-dark(#468eeb, #468eeb);
   --graph-node: #525252;
   --graph-node-attachment: #e0de71;
   --graph-node-focused: #42a1fa;
   --graph-node-tag: #44cf6e;
   --graph-node-unresolved: #dee4ede6;
+  --graph-tag: light-dark(#88d842bb, #77d425cc);
   --graph-text: #d4d4d4;
+  --graph-text-color: light-dark(#b5b5b5, #696969);
+  --graph-unresolved: light-dark(#f08080de, #db4e4ecc);
+  --gray-1: light-dark(#5c6370, #383a42);
+  --gray-2: light-dark(#abb2bf, #383a42);
+  --green: light-dark(#abd58e, #a3be8c);
+  --green-1: light-dark(#79c142, #3dc730);
+  --grid-notebook-line-color-1: light-dark(#c7c7c71f, #c7c7c740);
+  --grid-notebook-line-color-2: light-dark(#74747440, #afafaf40);
   --h1-bg-color: color-mix(in srgb, #d4d4d4 15%, transparent);
-  --h1-color: inherit;
+  --h1-color: light-dark(#96c22e, #08377d);
   --h1-font:
-    "??", "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", "Arial", ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
+    "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Microsoft YaHei Light", sans-serif;
   --h1-line-height: 1.2;
   --h1-size: 1.5625em;
   --h1-style: normal;
   --h1-variant: normal;
   --h1-weight: 700;
   --h2-bg-color: color-mix(in srgb, #d4d4d4 15%, transparent);
-  --h2-color: inherit;
+  --h2-color: light-dark(#4cb148, #004fa8);
   --h2-font:
-    "??", "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", "Arial", ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
+    "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Microsoft YaHei Light", sans-serif;
   --h2-line-height: 1.2;
   --h2-size: 1.4375em;
   --h2-style: normal;
   --h2-variant: normal;
   --h2-weight: 600;
   --h3-bg-color: color-mix(in srgb, #d4d4d4 15%, transparent);
-  --h3-color: inherit;
+  --h3-color: light-dark(#3abbbb, #0e63b9);
   --h3-font:
-    "??", "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", "Arial", ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
+    "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Microsoft YaHei Light", sans-serif;
   --h3-line-height: 1.3;
   --h3-size: 1.3125em;
   --h3-style: normal;
   --h3-variant: normal;
   --h3-weight: 600;
   --h4-bg-color: color-mix(in srgb, #d4d4d4 15%, transparent);
-  --h4-color: inherit;
+  --h4-color: light-dark(#75a2e6, #3482c5);
   --h4-font:
-    "??", "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", "Arial", ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
+    "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Microsoft YaHei Light", sans-serif;
   --h4-line-height: 1.4;
   --h4-size: 1.1875em;
   --h4-style: normal;
   --h4-variant: normal;
   --h4-weight: 600;
   --h5-bg-color: color-mix(in srgb, #d4d4d4 15%, transparent);
-  --h5-color: inherit;
+  --h5-color: light-dark(#b296f3, #5aa0e2);
   --h5-font: inherit;
   --h5-line-height: 1.5;
   --h5-size: 1.0625em;
@@ -2325,7 +2495,7 @@ body {
   --h5-variant: normal;
   --h5-weight: 600;
   --h6-bg-color: color-mix(in srgb, #d4d4d4 15%, transparent);
-  --h6-color: inherit;
+  --h6-color: light-dark(#eaa5f8, #89b9e6);
   --h6-font: inherit;
   --h6-line-height: 1.5;
   --h6-size: 1em;
@@ -2393,10 +2563,13 @@ body {
   --inline-title-bg-color: color-mix(in srgb, #d4d4d4 15%, transparent);
   --inline-title-color: #d4d4d4;
   --inline-title-font:
-    "??", "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", "Arial", ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+    "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
+    "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Microsoft YaHei Light", sans-serif;
   --inline-title-line-height: 1.2;
   --inline-title-margin-bottom: 0.5em;
   --inline-title-size: 1.5625em;
@@ -2410,10 +2583,11 @@ body {
   --input-placeholder-color: #dee4ede6;
   --input-radius: 5px;
   --interactive-accent: #68a9db;
-  --interactive-accent-hover: #86bee4;
+  --interactive-accent-hover: light-dark(#86bee4, #86bee4);
   --interactive-accent-hsl: 209, 60%, 55%;
-  --interactive-hover: #111;
-  --interactive-normal: #000;
+  --interactive-hover: light-dark(#373737, #e6e6e6);
+  --interactive-normal: light-dark(#2b2b2b, #efefef);
+  --internal-link-color: light-dark(#42a1fa, #42a1fa);
   --italic-color: inherit;
   --italic-weight: inherit;
   --layer-cover: 5;
@@ -2428,6 +2602,7 @@ body {
   --layer-tooltip: 70;
   --letter-space-code: 0;
   --letter-space-main: 0;
+  --light-yellow: light-dark(#cac685, #ab9a02);
   --line-height-list: 2;
   --line-height-main: 1.5;
   --line-height-normal: 1.5;
@@ -2444,7 +2619,7 @@ body {
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
   --link-unresolved-color: #42a1fa;
-  --link-unresolved-decoration-color: #478fd14d;
+  --link-unresolved-decoration-color: light-dark(#c3afdade, #c3afdade);
   --link-unresolved-decoration-style: solid;
   --link-unresolved-filter: none;
   --link-unresolved-opacity: 0.7;
@@ -2454,20 +2629,27 @@ body {
   --list-bullet-radius: 50%;
   --list-bullet-size: 0.3em;
   --list-bullet-transform: none;
+  --list-colorful-marker: light-dark(#ff8686, #fd4949);
   --list-indent: 2.25em;
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
   --list-marker-color: #dee4ede6;
-  --list-marker-color-collapsed: #95a503;
+  --list-marker-color-collapsed: light-dark(#95a503, #95a503);
   --list-marker-color-hover: #525252;
   --list-numbered-style: decimal;
+  --list-ol-block-color: light-dark(#2685bbb4, #3573a5);
+  --list-ol-hover: light-dark(#2c7bd6, #2c7bd6);
   --list-ol-marker-1: decimal;
   --list-ol-marker-2: lower-latin;
   --list-ol-marker-3: lower-roman;
   --list-ol-marker-4: decimal;
+  --list-ol-number-color: light-dark(#dee4ede6, #dee4ede6);
   --list-spacing: 0.075em;
   --list-spacing-bt: 1;
+  --list-ul-block-color: light-dark(#e19742a9, #b9751b);
   --list-ul-colorful-marker-content: "\\2022";
+  --list-ul-disc-color: light-dark(#eb9563, #f39c55);
+  --list-ul-hover: light-dark(#e28915de, #dd922f);
   --list-ul-marker-1: "\\2022";
   --list-ul-marker-2: "\\25E6";
   --list-ul-marker-3: "\\25AA";
@@ -2482,6 +2664,11 @@ body {
   --loading-page-custom-gif-url: url("https://");
   --loading-text-after: "✿❀";
   --loading-text-before: "❀✿";
+  --mark-highlight-strong-em: light-dark(#fff7603a, #ff880049);
+  --matrix-1: light-dark(#2ec4c452, #2ec4c452);
+  --matrix-2: light-dark(#38ce2a52, #38ce2a52);
+  --matrix-4: light-dark(#eb973752, #eb973752);
+  --matrix-5: light-dark(#f3424252, #f3424252);
   --menu-backdrop-filter: none;
   --menu-background: #141414be;
   --menu-border-color: #3f3f3f;
@@ -2490,9 +2677,11 @@ body {
   --menu-radius: 7px;
   --menu-shadow:
     0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+  --mermaid-active-task-color: light-dark(#187ef1, #44bbff);
   --mermaid-font-family:
     Segoe UI, "Microsoft YaHei", "Segoe UI Emoji", "trebuchet ms", verdana,
     Arial, cursive;
+  --mermaid-seq-dia-color: light-dark(#1371be, #76c8ff);
   --metadata-background: transparent;
   --metadata-border-color: #bfbfbf;
   --metadata-border-radius: 0;
@@ -2541,6 +2730,8 @@ body {
   --metadata-property-radius-hover: 6px;
   --metadata-sidebar-input-font-size: 14.992px;
   --metadata-sidebar-label-font-size: 14.992px;
+  --mjx-inline-math-color: light-dark(#d4d4d4, #d4d4d4);
+  --mjx-math-color: light-dark(#d4d4d4, #d4d4d4);
   --modal-background: #000;
   --modal-border-color: #555555;
   --modal-border-width: 0.5pt;
@@ -2608,9 +2799,28 @@ body {
   --nord9: #81a1c1;
   --nord9-1: #81a1c16c;
   --nord9-2: #81a1c13c;
+  --note-cloze: light-dark(#ffffff, #000000);
+  --note-important: light-dark(#d64545, #fd4141);
   --opacity-cp: 0.25;
+  --orange: light-dark(#d1945b, #db9600);
+  --orange-1: light-dark(#da904b, #cc7523);
+  --p-kanban-bg-color: light-dark(#6c6c6c42, #d3d3d32d);
+  --p-kanban-card-color-1: light-dark(#0000003f, #ffffff80);
+  --p-kanban-card-color-2: light-dark(#41414136, #ffffff);
+  --p-kanban-color-1: light-dark(#3496e652, #52aaf365);
+  --p-kanban-color-2: light-dark(#2ec4c452, #7cdddd65);
+  --p-kanban-color-3: light-dark(#38ce2a52, #8ce38465);
+  --p-kanban-color-4: light-dark(#d2dd3852, #d1d77f65);
+  --p-kanban-color-5: light-dark(#eb973752, #eeb36f65);
+  --p-kanban-color-6: light-dark(#f3424252, #f18e8e65);
+  --p-kanban-color-7: light-dark(#e45bdd52, #e677e065);
+  --p-kanban-color-8: light-dark(#b962ff52, #ba8be165);
+  --p-kanban-color-shadow: light-dark(#0000004d, #cfcfcf4d);
+  --p-kanban-color-simple: light-dark(#8e8e8e41, #cdcdcd2c);
   --p-spacing: 1rem;
   --p-spacing-empty: 0rem;
+  --page-border-bottom: light-dark(#1d252f, #1d252f);
+  --panel-border-color: light-dark(#18191e, #dbdbdc);
   --paragraph-spacing: 1;
   --pdf-background: #000;
   --pdf-page-background: #000;
@@ -2648,29 +2858,36 @@ body {
   --print-strong-color: #88a3c3;
   --prompt-border-color: #555555;
   --prompt-border-width: 0.5pt;
+  --prompt-box-shadow: light-dark(#555555, #bebebe);
   --prompt-input-height: 40px;
   --prompt-max-height: 70vh;
   --prompt-max-width: 80vw;
   --prompt-width: 700px;
+  --purple: light-dark(#c594d4, #c74df7);
   --radius-l: 15px;
   --radius-m: 7px;
   --radius-s: 5px;
   --radius-xl: 16px;
   --radius-xs: 3px;
+  --red: light-dark(#db7c84, #bf616a);
+  --red-1: light-dark(#d05a63, #f16464f5);
   --ribbon-background: #1d252f;
   --ribbon-background-collapsed: #1d252f;
   --ribbon-padding: 8px 4px 12px;
   --ribbon-width: 44px;
   --saturate-4-bg: 1;
   --saturate-4-bg-cp: 1;
-  --scrollbar-active-thumb-bg: #ffffff33;
+  --scrollbar-active-thumb-bg: light-dark(#4d4d4d88, #ddddddd9);
   --scrollbar-bg: #ffffff0d;
-  --scrollbar-thumb-bg: #ffffff1a;
+  --scrollbar-thumb-bg: light-dark(#3f3f3f7e, #dcdcdcbe);
   --search-clear-button-color: #525252;
   --search-clear-button-size: 13px;
   --search-icon-color: #525252;
   --search-icon-size: 18px;
   --search-result-background: #000;
+  --search-result-file-matched-bg: light-dark(#023774, #ffd9d9e5);
+  --search-result-file-title-color: light-dark(#d4d4d4, #d4d4d4);
+  --search-text: light-dark(#e0e0e0, #000000);
   --share-card-background-opacity-cp: 0.6;
   --share-thino-background-dark-custom: url("https://");
   --share-thino-background-light-custom: url("https://");
@@ -2701,7 +2918,14 @@ body {
   --slider-thumb-y: -6px;
   --slider-track-background: #bfbfbf;
   --slider-track-height: 3px;
+  --sliding-panes-header-color: light-dark(#f1a634d0, #0e64bb);
   --stack-tabs-background-blur-depth: 40px;
+  --stag1: light-dark(#f08383, #fa8787);
+  --stag1-bg: light-dark(#bd1919, #eb2727);
+  --stag2: light-dark(#e7b263, #fdbd5c);
+  --stag2-bg: light-dark(#ac6700, #ee9002);
+  --stag3: light-dark(#77df89, #50ce3a);
+  --stag3-bg: light-dark(#058c1c, #22ac09);
   --status-bar-background: #141414be;
   --status-bar-bg: #1d252f;
   --status-bar-border-color: transparent;
@@ -2710,6 +2934,12 @@ body {
   --status-bar-position: fixed;
   --status-bar-radius: 7px 0 0 0;
   --status-bar-text-color: #525252;
+  --stickies-color-1: light-dark(#84c584, #b3e2b3);
+  --stickies-color-2: light-dark(#c7a3cf, #e9c6f1);
+  --stripe-notebook-stripe-color: light-dark(#162419, #f5f2e6);
+  --strong-em-color-1: light-dark(#43d3ff, #1048ff);
+  --strong-em-color-2: light-dark(#baaaff, #14c8ff);
+  --strong-em-highlight-color: light-dark(#a7b4ff, #237add);
   --swatch-height: 24px;
   --swatch-radius: 14px;
   --swatch-shadow: inset 0 0 0 1px #ffffff26;
@@ -2730,7 +2960,7 @@ body {
   --tab-font-size: 14.992px;
   --tab-font-weight: inherit;
   --tab-max-width: 320px;
-  --tab-outline-color: transparent;
+  --tab-outline-color: light-dark(#151515, #e3e3e3);
   --tab-outline-width: 1px;
   --tab-radius: 5px;
   --tab-radius-active: 6px 6px 0 0;
@@ -2738,7 +2968,7 @@ body {
   --tab-stacked-font-weight: 400;
   --tab-stacked-header-width: 40px;
   --tab-stacked-pane-width: 700px;
-  --tab-stacked-shadow: -8px 0 8px 0 #0000000d;
+  --tab-stacked-shadow: light-dark(#0e0e0e, #d6d6d6);
   --tab-stacked-text-align: start;
   --tab-stacked-text-transform: rotate(0deg);
   --tab-stacked-text-writing-mode: vertical-lr;
@@ -2759,9 +2989,12 @@ body {
   --table-add-button-border-color: #bfbfbf;
   --table-add-button-border-width: 1px;
   --table-background: transparent;
-  --table-border-color: #bfbfbf;
+  --table-background-color: light-dark(#2f2f2f32, #f1f1f176);
+  --table-background-color-odd: light-dark(#00000033, #ffffff70);
+  --table-border-color: light-dark(#4a4a4a, #7d7d7d);
   --table-border-width: 1px;
   --table-cell-vertical-alignment: top;
+  --table-color-calendar-2: light-dark(#005b90, #a7dffb);
   --table-column-alt-background: transparent;
   --table-column-first-border-width: 1px;
   --table-column-last-border-width: 1px;
@@ -2775,10 +3008,13 @@ body {
   --table-header-background-hover: inherit;
   --table-header-border-color: #ac9494;
   --table-header-border-width: 1px;
-  --table-header-color: #d4d4d4;
+  --table-header-color: light-dark(#d4d4d4, #d4d4d4);
   --table-header-font: inherit;
   --table-header-size: inherit;
   --table-header-weight: 800;
+  --table-hover-color: light-dark(#1f65a221, #5dacec34);
+  --table-hover-raw-color: light-dark(#08569a21, #85bfee2f);
+  --table-hover-thead-color: light-dark(#21395bc7, #ddefff);
   --table-line-height: 1.3;
   --table-row-alt-background: transparent;
   --table-row-alt-background-hover: transparent;
@@ -2791,6 +3027,7 @@ body {
   --table-selection-border-width: 2px;
   --table-text-color: inherit;
   --table-text-size: 15px;
+  --table-thead-background-color: light-dark(#8b6cef1a, #8b6cef1a);
   --table-white-space: break-spaces;
   --tag-background: #478fd11a;
   --tag-background-hover: #478fd133;
@@ -2799,17 +3036,42 @@ body {
   --tag-border-width: 1px;
   --tag-color: #42a1fa;
   --tag-color-hover: #42a1fa;
+  --tag-dailynote: light-dark(#98c8ff, #0077ff);
+  --tag-dailynote-bg: light-dark(#0f60bd, #277cdd);
   --tag-decoration: none;
   --tag-decoration-hover: none;
+  --tag-ideas: light-dark(#fcfcc0, #ceb900);
+  --tag-ideas-bg: light-dark(#565656d8, #444444d8);
   --tag-padding-x: 0.65em;
   --tag-padding-y: 0.25em;
+  --tag-questions: light-dark(#d4bdff, #b68fff);
+  --tag-questions-bg: light-dark(#6640ae, #b085ff);
   --tag-radius: 2em;
   --tag-size: 0.875em;
+  --tag-text: light-dark(#e4e4e4, #f8f8f8);
+  --tag-weeklynote: light-dark(#d1e6ff, #4b9fff);
+  --tag-weeklynote-bg: light-dark(#3971b1, #6aafff);
   --tag-weight: inherit;
-  --text-accent: #42a1fa;
-  --text-accent-hover: #86bee4;
-  --text-error: #fb464c;
-  --text-faint: #666666;
+  --tag1: light-dark(#3674bb, #2573f0);
+  --tag2: light-dark(#3685ad, #2193f0);
+  --tag3: light-dark(#2a8f91, #17a5e7);
+  --tag4: light-dark(#43804f, #14acc7);
+  --tag5: light-dark(#5f932e, #10bdbd);
+  --tape-color: light-dark(#99999967, #acacac65);
+  --text-accent: light-dark(#42a1fa, #42a1fa);
+  --text-accent-hover: light-dark(#86bee4, #86bee4);
+  --text-blue: light-dark(#7c94ff, #0083bb);
+  --text-brown: light-dark(#be9684, #855a46);
+  --text-checked-checkbox: light-dark(#8e8e8e, #9b9b9b);
+  --text-color-code: light-dark(#d58000, #e95d00);
+  --text-error: light-dark(#e16d76, #e75545);
+  --text-error-hover: light-dark(#c9626a, #f86959);
+  --text-faint: light-dark(#797979, #7f7f7f);
+  --text-folder-file: light-dark(#b3b3b3, #272727);
+  --text-folder-file-icon: light-dark(#95a503, #95a503);
+  --text-gray: light-dark(#acacac, #37352f99);
+  --text-green: light-dark(#52c7b2, #00927f);
+  --text-highlight: light-dark(#d4d4d4, #d4d4d4);
   --text-highlight-bg: #ffd00066;
   --text-highlight-bg-a-dark: 0.541;
   --text-highlight-bg-a-light: 0.847;
@@ -2820,13 +3082,21 @@ body {
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-highlight-bg-s-dark: 40%;
   --text-highlight-bg-s-light: 100%;
-  --text-muted: #b3b3b3;
-  --text-normal: #dadada;
-  --text-on-accent: #ffffff;
+  --text-muted: light-dark(#8a8a8a, #7f7f7f);
+  --text-normal: light-dark(#c6c6c6, #0e0e0e);
+  --text-on-accent: light-dark(#e4e4e4, #ffffff);
   --text-on-accent-inverted: #000000;
-  --text-selection: #478fd133;
+  --text-orange: light-dark(#ffa344, #d9730d);
+  --text-pink: light-dark(#ff6bba, #c40075);
+  --text-purple: light-dark(#b386f1, #5d1fb9);
+  --text-red: light-dark(#ff4f4f, #ff4343);
+  --text-search-highlight-bg: light-dark(#bb4361, #ffd1dd);
+  --text-selection: light-dark(#3b767160, #a9d1c859);
   --text-success: #44cf6e;
   --text-warning: #e9973f;
+  --text-yellow: light-dark(#ffdc51, #d4a300);
+  --text-yellow-2: light-dark(#cca217, #a78000);
+  --theme-color: light-dark(#95a503, #95a503);
   --thino-background-dark-custom: url("https://");
   --thino-background-light-custom: url("https://");
   --titlebar-background: #141414be;
@@ -2850,13 +3120,18 @@ body {
   --toggle-thumb-radius: 18px;
   --toggle-thumb-width: 18px;
   --toggle-width: 40px;
+  --unresolved-link: light-dark(#c3afdade, #c3afdade);
+  --variable-2: light-dark(#0072d0, #0072d0);
+  --variable-3: light-dark(#5a96f7, #5a96f7);
   --vault-profile-actions-display: flex;
   --vault-profile-color: #d4d4d4;
   --vault-profile-color-hover: #d4d4d4;
   --vault-profile-display: flex;
   --vault-profile-font-size: 14.992px;
   --vault-profile-font-weight: 500;
+  --white: light-dark(#ffffff, #ffffff);
   --workspace-background-translucent: #00000099;
+  --yellow: light-dark(#d6b87f, #e48100);
   --zoom-factor: 1;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
@@ -4581,8 +4856,24 @@ body:not(.is-mobile) .app-container {
   --list-padding-inline-start: 0;
   background-color: transparent;
   font-family:
-    "??", "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", "Arial";
+    "??",
+    Bookerly,
+    "Inter",
+    "Segoe UI",
+    "霞鹜文楷 GB",
+    "LXGW WenKai",
+    "Microsoft YaHei",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif;
   font-size: 16px;
 }
 
@@ -4734,8 +5025,24 @@ body:not(.is-mobile) .app-container {
 .markdown-source-view.mod-cm6 .cm-scroller {
   -webkit-font-smoothing: subpixel-antialiased;
   font-family:
-    "??", "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", "Arial";
+    "??",
+    Bookerly,
+    "Inter",
+    "Segoe UI",
+    "霞鹜文楷 GB",
+    "LXGW WenKai",
+    "Microsoft YaHei",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif;
   letter-spacing: 0em;
   line-height: 1.5;
   scrollbar-gutter: stable;
@@ -5351,19 +5658,78 @@ body:not(.is-mobile) .app-container {
 }
 
 .empty-state-action {
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   cursor: pointer;
   line-height: 36px;
 }
 
 @media (hover: hover) {
   .empty-state-action:hover {
-    color: #86bee4;
+    color: light-dark(
+      light-dark(
+        hsl(
+          calc(light-dark(208, 207) - 5),
+          calc(light-dark(64%, 77%) * 1.05),
+          calc(light-dark(49%, 54%) * 1.29)
+        ),
+        hsl(
+          calc(light-dark(208, 207) - 3),
+          calc(light-dark(64%, 77%) * 1.02),
+          calc(light-dark(49%, 54%) * 1.15)
+        )
+      ),
+      light-dark(
+        hsl(
+          calc(light-dark(208, 207) - 5),
+          calc(light-dark(64%, 77%) * 1.05),
+          calc(light-dark(49%, 54%) * 1.29)
+        ),
+        hsl(
+          calc(light-dark(208, 207) - 3),
+          calc(light-dark(64%, 77%) * 1.02),
+          calc(light-dark(49%, 54%) * 1.15)
+        )
+      )
+    );
   }
 }
 
 .empty-state-action.mobile-tap {
-  color: #86bee4;
+  color: light-dark(
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    ),
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    )
+  );
 }
 
 .feedback-banner-container {
@@ -5895,14 +6261,23 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 .inline-title:not([data-level]) {
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -5927,14 +6302,23 @@ body:not(.show-view-header):not(.is-phone) .view-header {
   color: light-dark(#96c22e, #08377d);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -5961,14 +6345,23 @@ body:not(.show-view-header):not(.is-phone) .view-header {
   color: light-dark(#4cb148, #004fa8);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -5995,14 +6388,23 @@ body:not(.show-view-header):not(.is-phone) .view-header {
   color: light-dark(#3abbbb, #0e63b9);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -6029,14 +6431,23 @@ body:not(.show-view-header):not(.is-phone) .view-header {
   color: light-dark(#75a2e6, #3482c5);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -6113,8 +6524,24 @@ body:not(.show-inline-title) .inline-title:not([data-level]) {
   -webkit-user-select: text;
   color: light-dark(#c6c6c6, #0e0e0e);
   font-family:
-    "??", "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", "Arial";
+    "??",
+    Bookerly,
+    "Inter",
+    "Segoe UI",
+    "霞鹜文楷 GB",
+    "LXGW WenKai",
+    "Microsoft YaHei",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif;
   font-size: 16px;
   height: 100%;
   line-height: 1.5;
@@ -7081,11 +7508,29 @@ input {
 }
 
 .setting-add-hotkey-button.mod-active {
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 .setting-restore-hotkey-button.mod-active {
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 @media (hover: hover) {
@@ -7578,8 +8023,24 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
   -webkit-user-select: text;
   color: light-dark(#c6c6c6, #0e0e0e);
   font-family:
-    "??", "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", "Arial";
+    "??",
+    Bookerly,
+    "Inter",
+    "Segoe UI",
+    "霞鹜文楷 GB",
+    "LXGW WenKai",
+    "Microsoft YaHei",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif;
   font-size: 16px;
   line-height: 1.5;
   overflow-wrap: break-word;
@@ -8809,7 +9270,16 @@ body > .workspace-split {
 .mod-root .workspace-tab-header-status-icon {
   --icon-size: 14px;
   --icon-stroke: 2px;
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 .mod-root .workspace-tab-header-inner-icon {
@@ -9370,12 +9840,62 @@ button.mod-cta {
 }
 
 button.mod-cta.mobile-tap {
-  background-color: #86bee4;
+  background-color: light-dark(
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    ),
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    )
+  );
 }
 
 @media (hover: hover) {
   button.mod-cta:hover {
-    background-color: #86bee4;
+    background-color: light-dark(
+      light-dark(
+        hsl(
+          calc(light-dark(208, 207) - 5),
+          calc(light-dark(64%, 77%) * 1.05),
+          calc(light-dark(49%, 54%) * 1.29)
+        ),
+        hsl(
+          calc(light-dark(208, 207) - 3),
+          calc(light-dark(64%, 77%) * 1.02),
+          calc(light-dark(49%, 54%) * 1.15)
+        )
+      ),
+      light-dark(
+        hsl(
+          calc(light-dark(208, 207) - 5),
+          calc(light-dark(64%, 77%) * 1.05),
+          calc(light-dark(49%, 54%) * 1.29)
+        ),
+        hsl(
+          calc(light-dark(208, 207) - 3),
+          calc(light-dark(64%, 77%) * 1.02),
+          calc(light-dark(49%, 54%) * 1.15)
+        )
+      )
+    );
   }
 }
 
@@ -9607,7 +10127,16 @@ button.mod-destructive {
 }
 
 .u-pop {
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   font-weight: 600;
 }
 
@@ -9659,7 +10188,16 @@ button.mod-destructive {
 
 @media (hover: hover) {
   .diff-collapsed:hover {
-    color: #42a1fa;
+    color: light-dark(
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      ),
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      )
+    );
   }
 }
 
@@ -9772,7 +10310,17 @@ button.mod-destructive {
 }
 
 .markdown-rendered .search-highlight > div.is-active {
-  box-shadow: 0 0 0px 3px #42a1fa;
+  box-shadow: 0 0 0px 3px
+    light-dark(
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      ),
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      )
+    );
   opacity: 1;
 }
 
@@ -11113,17 +11661,76 @@ select.mod-hidden {
 
 .notice-cta {
   align-items: center;
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   display: flex;
   white-space: nowrap;
 }
 
 .notice-cta:hover {
-  color: #86bee4;
+  color: light-dark(
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    ),
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    )
+  );
 }
 
 .notice-cta.mobile-tap {
-  color: #86bee4;
+  color: light-dark(
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    ),
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    )
+  );
 }
 
 .menu {
@@ -11558,7 +12165,10 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .modal .modal-nav-action.mod-cta {
-  color: #42a1fa;
+  color: light-dark(
+    hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+    hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+  );
   font-weight: 600;
   inset-inline-end: 0;
 }
@@ -13095,7 +13705,16 @@ kbd {
 
 .is-phone .pdf-findbar .pdf-toolbar-button {
   background-color: transparent;
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   flex-grow: 0;
   flex-shrink: 0;
   height: auto;
@@ -13808,8 +14427,24 @@ kbd {
   .cm-line.HyperMD-codeblock
   .cm-formatting.cm-formatting-list {
   font-family:
-    "??", "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", "Arial";
+    "??",
+    Bookerly,
+    "Inter",
+    "Segoe UI",
+    "霞鹜文楷 GB",
+    "LXGW WenKai",
+    "Microsoft YaHei",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif;
   font-size: 16px;
 }
 
@@ -14475,7 +15110,16 @@ iframe.external-embed {
 
 @media (hover: hover) {
   .footnote-backref:hover {
-    color: #42a1fa;
+    color: light-dark(
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      ),
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      )
+    );
     text-decoration: none;
   }
 }
@@ -14713,7 +15357,16 @@ iframe.external-embed {
 }
 
 .metadata-error-cta {
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   cursor: pointer;
   font-size: 14.992px;
   font-weight: 500;
@@ -14721,11 +15374,61 @@ iframe.external-embed {
 }
 
 .metadata-error-cta.mobile-tap {
-  color: #86bee4;
+  color: light-dark(
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    ),
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    )
+  );
 }
 
 .metadata-error-cta:hover {
-  color: #86bee4;
+  color: light-dark(
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    ),
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    )
+  );
 }
 
 .metadata-input-text {
@@ -15421,14 +16124,23 @@ h1 {
   color: light-dark(#96c22e, #08377d);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -15455,14 +16167,23 @@ h2 {
   color: light-dark(#4cb148, #004fa8);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -15490,14 +16211,23 @@ h3 {
   color: light-dark(#3abbbb, #0e63b9);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -15525,14 +16255,23 @@ h4 {
   color: light-dark(#75a2e6, #3482c5);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -15590,14 +16329,23 @@ h6 {
   color: light-dark(#96c22e, #08377d);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -15630,14 +16378,23 @@ h1 a {
   color: light-dark(#4cb148, #004fa8);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -15670,14 +16427,23 @@ h2 a {
   color: light-dark(#3abbbb, #0e63b9);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -15710,14 +16476,23 @@ h3 a {
   color: light-dark(#75a2e6, #3482c5);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -15812,14 +16587,23 @@ h6 a {
   color: light-dark(#96c22e, #08377d);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -15844,14 +16628,23 @@ h6 a {
   color: light-dark(#96c22e, #08377d);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -15900,14 +16693,23 @@ h6 a {
   color: light-dark(#4cb148, #004fa8);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -15932,14 +16734,23 @@ h6 a {
   color: light-dark(#4cb148, #004fa8);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -15988,14 +16799,23 @@ h6 a {
   color: light-dark(#3abbbb, #0e63b9);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -16020,14 +16840,23 @@ h6 a {
   color: light-dark(#3abbbb, #0e63b9);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -16076,14 +16905,23 @@ h6 a {
   color: light-dark(#75a2e6, #3482c5);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -16107,14 +16945,23 @@ h6 a {
   color: light-dark(#75a2e6, #3482c5);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -16903,7 +17750,28 @@ a.mobile-tap {
 }
 
 .markdown-rendered .internal-link {
-  color: light-dark(#42a1fa, #42a1fa);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      ),
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      ),
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      )
+    )
+  );
   cursor: default;
   text-decoration-line: underline;
   transition: opacity 0.15s ease-in-out;
@@ -16915,7 +17783,28 @@ a.mobile-tap {
     text-decoration-line: underline;
   }
   .markdown-rendered .internal-link:hover {
-    color: light-dark(#42a1fa, #42a1fa);
+    color: light-dark(
+      light-dark(
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        ),
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        )
+      ),
+      light-dark(
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        ),
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        )
+      )
+    );
     opacity: 0.8;
     text-decoration-line: underline;
   }
@@ -16968,31 +17857,269 @@ a.mobile-tap {
 
 .cm-s-obsidian span.cm-hmd-internal-link {
   --font-weight: 600;
-  color: light-dark(#42a1fa, #42a1fa);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      ),
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      ),
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      )
+    )
+  );
   font-weight: 600;
 }
 
 @media (hover: hover) {
   .cm-s-obsidian span.cm-hmd-internal-link:hover {
-    color: light-dark(#42a1fa, #42a1fa);
+    color: light-dark(
+      light-dark(
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        ),
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        )
+      ),
+      light-dark(
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        ),
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        )
+      )
+    );
     text-decoration-line: underline;
   }
 }
 
 .cm-s-obsidian span.cm-link {
-  color: light-dark(light-dark(#42a1fa, #42a1fa), light-dark(#42a1fa, #42a1fa));
+  color: light-dark(
+    light-dark(
+      light-dark(
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        ),
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        )
+      ),
+      light-dark(
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        ),
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        )
+      )
+    ),
+    light-dark(
+      light-dark(
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        ),
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        )
+      ),
+      light-dark(
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        ),
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        )
+      )
+    )
+  );
   word-break: break-word;
 }
 
 .cm-s-obsidian span.cm-link a {
-  color: light-dark(light-dark(#42a1fa, #42a1fa), light-dark(#42a1fa, #42a1fa));
+  color: light-dark(
+    light-dark(
+      light-dark(
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        ),
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        )
+      ),
+      light-dark(
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        ),
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        )
+      )
+    ),
+    light-dark(
+      light-dark(
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        ),
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        )
+      ),
+      light-dark(
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        ),
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        )
+      )
+    )
+  );
 }
 
 @media (hover: hover) {
   .cm-s-obsidian span.cm-link:hover {
     color: light-dark(
-      light-dark(#42a1fa, #42a1fa),
-      light-dark(#42a1fa, #42a1fa)
+      light-dark(
+        light-dark(
+          light-dark(
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            ),
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            )
+          ),
+          light-dark(
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            ),
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            )
+          )
+        ),
+        light-dark(
+          light-dark(
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            ),
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            )
+          ),
+          light-dark(
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            ),
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            )
+          )
+        )
+      ),
+      light-dark(
+        light-dark(
+          light-dark(
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            ),
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            )
+          ),
+          light-dark(
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            ),
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            )
+          )
+        ),
+        light-dark(
+          light-dark(
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            ),
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            )
+          ),
+          light-dark(
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            ),
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            )
+          )
+        )
+      )
     );
     text-decoration-line: underline;
   }
@@ -17007,7 +18134,52 @@ a.mobile-tap {
 }
 
 .cm-s-obsidian span.cm-url {
-  color: light-dark(light-dark(#42a1fa, #42a1fa), light-dark(#42a1fa, #42a1fa));
+  color: light-dark(
+    light-dark(
+      light-dark(
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        ),
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        )
+      ),
+      light-dark(
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        ),
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        )
+      )
+    ),
+    light-dark(
+      light-dark(
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        ),
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        )
+      ),
+      light-dark(
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        ),
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        )
+      )
+    )
+  );
   filter: none;
   font-weight: 600;
   text-decoration-line: underline;
@@ -17021,8 +18193,114 @@ a.mobile-tap {
   }
   .cm-s-obsidian span.cm-url:hover {
     color: light-dark(
-      light-dark(#42a1fa, #42a1fa),
-      light-dark(#42a1fa, #42a1fa)
+      light-dark(
+        light-dark(
+          light-dark(
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            ),
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            )
+          ),
+          light-dark(
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            ),
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            )
+          )
+        ),
+        light-dark(
+          light-dark(
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            ),
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            )
+          ),
+          light-dark(
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            ),
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            )
+          )
+        )
+      ),
+      light-dark(
+        light-dark(
+          light-dark(
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            ),
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            )
+          ),
+          light-dark(
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            ),
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            )
+          )
+        ),
+        light-dark(
+          light-dark(
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            ),
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            )
+          ),
+          light-dark(
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            ),
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            )
+          )
+        )
+      )
     );
     text-decoration-line: underline;
   }
@@ -17129,15 +18407,227 @@ body.is-mobile .markdown-source-view.mod-cm6 .cm-underline {
 @media (hover: hover) {
   .markdown-source-view.mod-cm6 .cm-link .cm-underline:hover {
     color: light-dark(
-      light-dark(#42a1fa, #42a1fa),
-      light-dark(#42a1fa, #42a1fa)
+      light-dark(
+        light-dark(
+          light-dark(
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            ),
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            )
+          ),
+          light-dark(
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            ),
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            )
+          )
+        ),
+        light-dark(
+          light-dark(
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            ),
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            )
+          ),
+          light-dark(
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            ),
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            )
+          )
+        )
+      ),
+      light-dark(
+        light-dark(
+          light-dark(
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            ),
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            )
+          ),
+          light-dark(
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            ),
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            )
+          )
+        ),
+        light-dark(
+          light-dark(
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            ),
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            )
+          ),
+          light-dark(
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            ),
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            )
+          )
+        )
+      )
     );
     text-decoration-line: underline;
   }
   .markdown-source-view.mod-cm6 .cm-url .cm-underline:hover {
     color: light-dark(
-      light-dark(#42a1fa, #42a1fa),
-      light-dark(#42a1fa, #42a1fa)
+      light-dark(
+        light-dark(
+          light-dark(
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            ),
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            )
+          ),
+          light-dark(
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            ),
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            )
+          )
+        ),
+        light-dark(
+          light-dark(
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            ),
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            )
+          ),
+          light-dark(
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            ),
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            )
+          )
+        )
+      ),
+      light-dark(
+        light-dark(
+          light-dark(
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            ),
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            )
+          ),
+          light-dark(
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            ),
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            )
+          )
+        ),
+        light-dark(
+          light-dark(
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            ),
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            )
+          ),
+          light-dark(
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            ),
+            hsl(
+              light-dark(208, 207),
+              light-dark(64%, 77%),
+              light-dark(49%, 54%)
+            )
+          )
+        )
+      )
     );
     text-decoration-line: underline;
   }
@@ -17340,7 +18830,16 @@ body.is-mobile .markdown-source-view.mod-cm6 .cm-underline {
 }
 
 .cm-s-obsidian span.cm-footref {
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   font-size: 0.8em;
   position: relative;
   top: -0.2em;
@@ -17432,7 +18931,16 @@ mjx-container {
 }
 
 .cm-s-obsidian span.cm-formatting-math {
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   font-weight: inherit;
 }
 
@@ -19552,7 +21060,32 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .file-tree .mod-changed .tree-item-flair {
-  color: #86bee4;
+  color: light-dark(
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    ),
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    )
+  );
 }
 
 .file-tree .mod-new.is-selected {
@@ -19683,8 +21216,24 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .file-recovery-text[data-ext="md"] {
   font-family:
-    "??", "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", "Arial";
+    "??",
+    Bookerly,
+    "Inter",
+    "Segoe UI",
+    "霞鹜文楷 GB",
+    "LXGW WenKai",
+    "Microsoft YaHei",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif;
   font-size: 16px;
 }
 
@@ -20167,13 +21716,88 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 @media (hover: hover) {
   .publish-section-header-text:hover {
-    color: #86bee4;
+    color: light-dark(
+      light-dark(
+        hsl(
+          calc(light-dark(208, 207) - 5),
+          calc(light-dark(64%, 77%) * 1.05),
+          calc(light-dark(49%, 54%) * 1.29)
+        ),
+        hsl(
+          calc(light-dark(208, 207) - 3),
+          calc(light-dark(64%, 77%) * 1.02),
+          calc(light-dark(49%, 54%) * 1.15)
+        )
+      ),
+      light-dark(
+        hsl(
+          calc(light-dark(208, 207) - 5),
+          calc(light-dark(64%, 77%) * 1.05),
+          calc(light-dark(49%, 54%) * 1.29)
+        ),
+        hsl(
+          calc(light-dark(208, 207) - 3),
+          calc(light-dark(64%, 77%) * 1.02),
+          calc(light-dark(49%, 54%) * 1.15)
+        )
+      )
+    );
   }
   .publish-section-header-toggle-collapsed-button:hover {
-    color: #86bee4;
+    color: light-dark(
+      light-dark(
+        hsl(
+          calc(light-dark(208, 207) - 5),
+          calc(light-dark(64%, 77%) * 1.05),
+          calc(light-dark(49%, 54%) * 1.29)
+        ),
+        hsl(
+          calc(light-dark(208, 207) - 3),
+          calc(light-dark(64%, 77%) * 1.02),
+          calc(light-dark(49%, 54%) * 1.15)
+        )
+      ),
+      light-dark(
+        hsl(
+          calc(light-dark(208, 207) - 5),
+          calc(light-dark(64%, 77%) * 1.05),
+          calc(light-dark(49%, 54%) * 1.29)
+        ),
+        hsl(
+          calc(light-dark(208, 207) - 3),
+          calc(light-dark(64%, 77%) * 1.02),
+          calc(light-dark(49%, 54%) * 1.15)
+        )
+      )
+    );
   }
   .publish-section-header-action:hover {
-    color: #86bee4;
+    color: light-dark(
+      light-dark(
+        hsl(
+          calc(light-dark(208, 207) - 5),
+          calc(light-dark(64%, 77%) * 1.05),
+          calc(light-dark(49%, 54%) * 1.29)
+        ),
+        hsl(
+          calc(light-dark(208, 207) - 3),
+          calc(light-dark(64%, 77%) * 1.02),
+          calc(light-dark(49%, 54%) * 1.15)
+        )
+      ),
+      light-dark(
+        hsl(
+          calc(light-dark(208, 207) - 5),
+          calc(light-dark(64%, 77%) * 1.05),
+          calc(light-dark(49%, 54%) * 1.29)
+        ),
+        hsl(
+          calc(light-dark(208, 207) - 3),
+          calc(light-dark(64%, 77%) * 1.02),
+          calc(light-dark(49%, 54%) * 1.15)
+        )
+      )
+    );
   }
 }
 
@@ -21300,8 +22924,24 @@ body:not(.is-phone)
   background-color: light-dark(#202020, #ffffff);
   flex: 1 0 0;
   font-family:
-    "??", "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", "Arial";
+    "??",
+    Bookerly,
+    "Inter",
+    "Segoe UI",
+    "霞鹜文楷 GB",
+    "LXGW WenKai",
+    "Microsoft YaHei",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif;
   font-size: 16px;
   overflow: auto;
   padding: 24px;
@@ -21670,16 +23310,50 @@ body.theme-dark {
 }
 
 .canvas-selection {
-  background-color: #478fd11a;
-  border: 2px solid #42a1fa;
+  background-color: hsla(
+    light-dark(
+      light-dark(208, 207),
+      light-dark(64%, 77%),
+      light-dark(49%, 54%),
+      light-dark(208, 207),
+      light-dark(64%, 77%),
+      light-dark(49%, 54%)
+    ),
+    0.1
+  );
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    );
   pointer-events: none;
   position: absolute;
   z-index: -1;
 }
 
 .canvas-selection.mod-group-selection {
-  background-color: #478fd108;
-  border-color: #478fd14d;
+  background-color: hsla(
+    light-dark(
+      light-dark(208, 207),
+      light-dark(64%, 77%),
+      light-dark(49%, 54%),
+      light-dark(208, 207),
+      light-dark(64%, 77%),
+      light-dark(49%, 54%)
+    ),
+    0.03
+  );
+  border-color: hsla(
+    light-dark(
+      light-dark(208, 207),
+      light-dark(64%, 77%),
+      light-dark(49%, 54%),
+      light-dark(208, 207),
+      light-dark(64%, 77%),
+      light-dark(49%, 54%)
+    ),
+    0.3
+  );
   border-radius: 3px;
   border-width: 3px;
   pointer-events: initial;
@@ -21754,7 +23428,10 @@ body.theme-dark {
 
 @media (hover: hover) {
   .canvas-card-menu .canvas-card-menu-button:hover {
-    color: #42a1fa;
+    color: light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    );
   }
 }
 
@@ -21825,7 +23502,10 @@ body.theme-dark {
 }
 
 .canvas-control-item.is-active {
-  color: #42a1fa;
+  color: light-dark(
+    hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+    hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+  );
 }
 
 .canvas-control-item.is-disabled svg {
@@ -21994,14 +23674,20 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 }
 
 .canvas-node.is-selected .canvas-node-container {
-  border-color: #42a1fa;
+  border-color: light-dark(
+    hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+    hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+  );
   box-shadow:
     0px 0.5px 1px 0.5px #0000001a,
     0 0 0 2px #42a1fa;
 }
 
 .canvas-node.is-focused .canvas-node-container {
-  border-color: #42a1fa;
+  border-color: light-dark(
+    hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+    hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+  );
   box-shadow:
     0px 0.5px 1px 0.5px #0000001a,
     0 0 0 2px #42a1fa;
@@ -22057,8 +23743,22 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 }
 
 .canvas-node.is-dummy .canvas-node-container {
-  background-color: #478fd133;
-  border: 4px solid #42a1fa;
+  background-color: hsla(
+    light-dark(
+      light-dark(208, 207),
+      light-dark(64%, 77%),
+      light-dark(49%, 54%),
+      light-dark(208, 207),
+      light-dark(64%, 77%),
+      light-dark(49%, 54%)
+    ),
+    0.2
+  );
+  border: 4px solid
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    );
   box-shadow: 0px 2px 10px #00000026;
 }
 
@@ -22331,7 +24031,11 @@ body.is-mobile .canvas-node-resizer {
   .canvas-node-interaction-layer
   .canvas-node-resizer[data-resize="topright"] {
   background-color: light-dark(#202020, #ffffff);
-  border: 2px solid #42a1fa;
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    );
   border-radius: 3px;
   display: block;
   height: 20px;
@@ -22344,7 +24048,11 @@ body.is-mobile .canvas-node-resizer {
   .canvas-node-interaction-layer
   .canvas-node-resizer[data-resize="bottomright"] {
   background-color: light-dark(#202020, #ffffff);
-  border: 2px solid #42a1fa;
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    );
   border-radius: 3px;
   display: block;
   height: 20px;
@@ -22357,7 +24065,11 @@ body.is-mobile .canvas-node-resizer {
   .canvas-node-interaction-layer
   .canvas-node-resizer[data-resize="topleft"] {
   background-color: light-dark(#202020, #ffffff);
-  border: 2px solid #42a1fa;
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    );
   border-radius: 3px;
   display: block;
   height: 20px;
@@ -22370,7 +24082,11 @@ body.is-mobile .canvas-node-resizer {
   .canvas-node-interaction-layer
   .canvas-node-resizer[data-resize="bottomleft"] {
   background-color: light-dark(#202020, #ffffff);
-  border: 2px solid #42a1fa;
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    );
   border-radius: 3px;
   display: block;
   height: 20px;
@@ -22407,7 +24123,10 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-node-connection-point::after {
-  background-color: #42a1fa;
+  background-color: light-dark(
+    hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+    hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+  );
   border: 3px solid light-dark(#343434, #dddddd);
   border-radius: 50%;
   box-sizing: border-box;
@@ -22441,12 +24160,18 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-snaps line {
-  stroke: hsla(209, 95%, 62%, 1);
+  stroke: light-dark(
+    hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+    hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+  );
   stroke-width: 1px;
 }
 
 .canvas-snaps circle {
-  fill: #42a1fa;
+  fill: light-dark(
+    hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+    hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+  );
 }
 
 .canvas-edges {
@@ -22679,9 +24404,22 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-placeholder-message {
-  background: #478fd11a;
+  background: hsla(
+    light-dark(
+      light-dark(208, 207),
+      light-dark(64%, 77%),
+      light-dark(49%, 54%),
+      light-dark(208, 207),
+      light-dark(64%, 77%),
+      light-dark(49%, 54%)
+    ),
+    0.1
+  );
   border-radius: 7px;
-  color: #42a1fa;
+  color: light-dark(
+    hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+    hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+  );
   font-size: 19.2px;
   line-height: 1.5;
   max-width: 70vw;
@@ -22725,7 +24463,11 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-cursor {
-  border: 5px solid #42a1fa;
+  border: 5px solid
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    );
   border-radius: 5px;
   height: 1px;
   pointer-events: none;
@@ -25426,7 +27168,16 @@ body.is-tablet .mobile-navbar {
 }
 
 .mobile-toolbar-floating-options .mobile-toolbar-option {
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   min-width: 50px;
 }
 
@@ -30280,7 +32031,32 @@ body.color-scheme-options-simplicity-topaz .nav-action-button.is-active {
 }
 
 body.color-scheme-options-simplicity-topaz .checkbox-container.is-enabled {
-  background-color: #86bee4;
+  background-color: light-dark(
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    ),
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    )
+  );
 }
 
 body.theme-light.color-scheme-options-simplicity-topaz
@@ -31543,7 +33319,16 @@ input[type="text"].metadata-property-key-input {
 }
 
 .kanban ul .list-collapse-indicator.collapse-indicator.collapse-icon::before {
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   transition: transform 10ms linear 0s;
 }
 
@@ -31914,50 +33699,90 @@ body.rainbow-tag-no-filter .tag:not(.token):nth-child(5n + 1) {
 
 body.rainbow-tag-no-filter .tag:not(.token):nth-child(5n + 2) {
   --tag-border-color: #a147d133;
-  background-color: #a147d11a;
-  color: #a753d4;
+  background-color: hsla(
+    calc(light-dark(208, 207) + 70),
+    light-dark(64%, 77%),
+    light-dark(49%, 54%),
+    10%
+  );
+  color: hsl(calc(light-dark(208, 207) + 70), light-dark(64%, 77%), 57.75%);
 }
 
 body.rainbow-tag-no-filter .tag:not(.token):nth-child(5n + 3) {
   --tag-border-color: #d1476133;
-  background-color: #d147611a;
-  color: #d4536a;
+  background-color: hsla(
+    calc(light-dark(208, 207) + 140),
+    light-dark(64%, 77%),
+    light-dark(49%, 54%),
+    10%
+  );
+  color: hsl(calc(light-dark(208, 207) + 140), light-dark(64%, 77%), 57.75%);
 }
 
 body.rainbow-tag-no-filter .tag:not(.token):nth-child(5n + 4) {
   --tag-border-color: hsla(419, 60%, 55%, 20%);
-  background-color: hsla(419, 60%, 55%, 10%);
-  color: hsl(419, 60%, 57.75%);
+  background-color: hsla(
+    calc(light-dark(208, 207) + 210),
+    light-dark(64%, 77%),
+    light-dark(49%, 54%),
+    10%
+  );
+  color: hsl(calc(light-dark(208, 207) + 210), light-dark(64%, 77%), 57.75%);
 }
 
 body.rainbow-tag-no-filter .tag:not(.token):nth-child(5n) {
   --tag-border-color: hsla(489, 60%, 55%, 20%);
-  background-color: hsla(489, 60%, 55%, 10%);
-  color: hsl(489, 60%, 57.75%);
+  background-color: hsla(
+    calc(light-dark(208, 207) + 280),
+    light-dark(64%, 77%),
+    light-dark(49%, 54%),
+    10%
+  );
+  color: hsl(calc(light-dark(208, 207) + 280), light-dark(64%, 77%), 57.75%);
 }
 
 body.rainbow-tag-no-filter .tag:not(.token):nth-child(5n):hover {
-  background-color: hsl(489, 60%, 55%);
+  background-color: hsl(
+    calc(light-dark(208, 207) + 280),
+    light-dark(64%, 77%),
+    light-dark(49%, 54%)
+  );
   color: #ffffff;
 }
 
 body.rainbow-tag-no-filter .tag:not(.token):nth-child(5n + 1):hover {
-  background-color: #478fd1;
+  background-color: hsl(
+    light-dark(208, 207),
+    light-dark(64%, 77%),
+    light-dark(49%, 54%)
+  );
   color: #ffffff;
 }
 
 body.rainbow-tag-no-filter .tag:not(.token):nth-child(5n + 2):hover {
-  background-color: #a147d1;
+  background-color: hsl(
+    calc(light-dark(208, 207) + 70),
+    light-dark(64%, 77%),
+    light-dark(49%, 54%)
+  );
   color: #ffffff;
 }
 
 body.rainbow-tag-no-filter .tag:not(.token):nth-child(5n + 3):hover {
-  background-color: #d14761;
+  background-color: hsl(
+    calc(light-dark(208, 207) + 140),
+    light-dark(64%, 77%),
+    light-dark(49%, 54%)
+  );
   color: #ffffff;
 }
 
 body.rainbow-tag-no-filter .tag:not(.token):nth-child(5n + 4):hover {
-  background-color: hsl(419, 60%, 55%);
+  background-color: hsl(
+    calc(light-dark(208, 207) + 210),
+    light-dark(64%, 77%),
+    light-dark(49%, 54%)
+  );
   color: #ffffff;
 }
 
@@ -32001,8 +33826,13 @@ body.rainbow-tag-no-filter
   .cm-s-obsidian
   span.cm-hashtag-begin:nth-child(5n + 2) {
   --tag-border-color: hsla(419, 60%, 55%, 20%);
-  background-color: hsla(419, 60%, 55%, 10%);
-  color: hsl(419, 60%, 57.75%);
+  background-color: hsla(
+    calc(light-dark(208, 207) + 210),
+    light-dark(64%, 77%),
+    light-dark(49%, 54%),
+    10%
+  );
+  color: hsl(calc(light-dark(208, 207) + 210), light-dark(64%, 77%), 57.75%);
 }
 
 body.rainbow-tag-no-filter
@@ -32010,8 +33840,13 @@ body.rainbow-tag-no-filter
   span.cm-hashtag-begin:nth-child(5n + 2)
   + span.cm-hashtag {
   --tag-border-color: hsla(419, 60%, 55%, 20%);
-  background-color: hsla(419, 60%, 55%, 10%);
-  color: hsl(419, 60%, 57.75%);
+  background-color: hsla(
+    calc(light-dark(208, 207) + 210),
+    light-dark(64%, 77%),
+    light-dark(49%, 54%),
+    10%
+  );
+  color: hsl(calc(light-dark(208, 207) + 210), light-dark(64%, 77%), 57.75%);
 }
 
 body.rainbow-tag-no-filter
@@ -32019,8 +33854,13 @@ body.rainbow-tag-no-filter
   span.cm-hashtag-begin:nth-child(5n + 2)
   + .cm-hashtag.cm-meta {
   --tag-border-color: hsla(419, 60%, 55%, 20%);
-  background-color: hsla(419, 60%, 55%, 10%);
-  color: hsl(419, 60%, 57.75%);
+  background-color: hsla(
+    calc(light-dark(208, 207) + 210),
+    light-dark(64%, 77%),
+    light-dark(49%, 54%),
+    10%
+  );
+  color: hsl(calc(light-dark(208, 207) + 210), light-dark(64%, 77%), 57.75%);
 }
 
 body.rainbow-tag-no-filter
@@ -32029,16 +33869,26 @@ body.rainbow-tag-no-filter
   + span.cm-hashtag.cm-meta
   + span.cm-hashtag.cm-hashtag-end {
   --tag-border-color: hsla(419, 60%, 55%, 20%);
-  background-color: hsla(419, 60%, 55%, 10%);
-  color: hsl(419, 60%, 57.75%);
+  background-color: hsla(
+    calc(light-dark(208, 207) + 210),
+    light-dark(64%, 77%),
+    light-dark(49%, 54%),
+    10%
+  );
+  color: hsl(calc(light-dark(208, 207) + 210), light-dark(64%, 77%), 57.75%);
 }
 
 body.rainbow-tag-no-filter
   .cm-s-obsidian
   span.cm-hashtag-begin:nth-child(5n + 3) {
   --tag-border-color: #a147d133;
-  background-color: #a147d11a;
-  color: #a753d4;
+  background-color: hsla(
+    calc(light-dark(208, 207) + 70),
+    light-dark(64%, 77%),
+    light-dark(49%, 54%),
+    10%
+  );
+  color: hsl(calc(light-dark(208, 207) + 70), light-dark(64%, 77%), 57.75%);
 }
 
 body.rainbow-tag-no-filter
@@ -32046,8 +33896,13 @@ body.rainbow-tag-no-filter
   span.cm-hashtag-begin:nth-child(5n + 3)
   + span.cm-hashtag {
   --tag-border-color: #a147d133;
-  background-color: #a147d11a;
-  color: #a753d4;
+  background-color: hsla(
+    calc(light-dark(208, 207) + 70),
+    light-dark(64%, 77%),
+    light-dark(49%, 54%),
+    10%
+  );
+  color: hsl(calc(light-dark(208, 207) + 70), light-dark(64%, 77%), 57.75%);
 }
 
 body.rainbow-tag-no-filter
@@ -32055,8 +33910,13 @@ body.rainbow-tag-no-filter
   span.cm-hashtag-begin:nth-child(5n + 3)
   + .cm-hashtag.cm-meta {
   --tag-border-color: #a147d133;
-  background-color: #a147d11a;
-  color: #a753d4;
+  background-color: hsla(
+    calc(light-dark(208, 207) + 70),
+    light-dark(64%, 77%),
+    light-dark(49%, 54%),
+    10%
+  );
+  color: hsl(calc(light-dark(208, 207) + 70), light-dark(64%, 77%), 57.75%);
 }
 
 body.rainbow-tag-no-filter
@@ -32065,16 +33925,26 @@ body.rainbow-tag-no-filter
   + span.cm-hashtag.cm-meta
   + span.cm-hashtag.cm-hashtag-end {
   --tag-border-color: #a147d133;
-  background-color: #a147d11a;
-  color: #a753d4;
+  background-color: hsla(
+    calc(light-dark(208, 207) + 70),
+    light-dark(64%, 77%),
+    light-dark(49%, 54%),
+    10%
+  );
+  color: hsl(calc(light-dark(208, 207) + 70), light-dark(64%, 77%), 57.75%);
 }
 
 body.rainbow-tag-no-filter
   .cm-s-obsidian
   span.cm-hashtag-begin:nth-child(5n + 4) {
   --tag-border-color: hsla(489, 60%, 55%, 20%);
-  background-color: hsla(489, 60%, 55%, 10%);
-  color: hsl(489, 60%, 57.75%);
+  background-color: hsla(
+    calc(light-dark(208, 207) + 280),
+    light-dark(64%, 77%),
+    light-dark(49%, 54%),
+    10%
+  );
+  color: hsl(calc(light-dark(208, 207) + 280), light-dark(64%, 77%), 57.75%);
 }
 
 body.rainbow-tag-no-filter
@@ -32082,8 +33952,13 @@ body.rainbow-tag-no-filter
   span.cm-hashtag-begin:nth-child(5n + 4)
   + span.cm-hashtag {
   --tag-border-color: hsla(489, 60%, 55%, 20%);
-  background-color: hsla(489, 60%, 55%, 10%);
-  color: hsl(489, 60%, 57.75%);
+  background-color: hsla(
+    calc(light-dark(208, 207) + 280),
+    light-dark(64%, 77%),
+    light-dark(49%, 54%),
+    10%
+  );
+  color: hsl(calc(light-dark(208, 207) + 280), light-dark(64%, 77%), 57.75%);
 }
 
 body.rainbow-tag-no-filter
@@ -32091,8 +33966,13 @@ body.rainbow-tag-no-filter
   span.cm-hashtag-begin:nth-child(5n + 4)
   + .cm-hashtag.cm-meta {
   --tag-border-color: hsla(489, 60%, 55%, 20%);
-  background-color: hsla(489, 60%, 55%, 10%);
-  color: hsl(489, 60%, 57.75%);
+  background-color: hsla(
+    calc(light-dark(208, 207) + 280),
+    light-dark(64%, 77%),
+    light-dark(49%, 54%),
+    10%
+  );
+  color: hsl(calc(light-dark(208, 207) + 280), light-dark(64%, 77%), 57.75%);
 }
 
 body.rainbow-tag-no-filter
@@ -32101,14 +33981,24 @@ body.rainbow-tag-no-filter
   + span.cm-hashtag.cm-meta
   + span.cm-hashtag.cm-hashtag-end {
   --tag-border-color: hsla(489, 60%, 55%, 20%);
-  background-color: hsla(489, 60%, 55%, 10%);
-  color: hsl(489, 60%, 57.75%);
+  background-color: hsla(
+    calc(light-dark(208, 207) + 280),
+    light-dark(64%, 77%),
+    light-dark(49%, 54%),
+    10%
+  );
+  color: hsl(calc(light-dark(208, 207) + 280), light-dark(64%, 77%), 57.75%);
 }
 
 body.rainbow-tag-no-filter .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n) {
   --tag-border-color: #d1476133;
-  background-color: #d147611a;
-  color: #d4536a;
+  background-color: hsla(
+    calc(light-dark(208, 207) + 140),
+    light-dark(64%, 77%),
+    light-dark(49%, 54%),
+    10%
+  );
+  color: hsl(calc(light-dark(208, 207) + 140), light-dark(64%, 77%), 57.75%);
 }
 
 body.rainbow-tag-no-filter
@@ -32116,8 +34006,13 @@ body.rainbow-tag-no-filter
   span.cm-hashtag-begin:nth-child(5n)
   + span.cm-hashtag {
   --tag-border-color: #d1476133;
-  background-color: #d147611a;
-  color: #d4536a;
+  background-color: hsla(
+    calc(light-dark(208, 207) + 140),
+    light-dark(64%, 77%),
+    light-dark(49%, 54%),
+    10%
+  );
+  color: hsl(calc(light-dark(208, 207) + 140), light-dark(64%, 77%), 57.75%);
 }
 
 body.rainbow-tag-no-filter
@@ -32125,8 +34020,13 @@ body.rainbow-tag-no-filter
   span.cm-hashtag-begin:nth-child(5n)
   + .cm-hashtag.cm-meta {
   --tag-border-color: #d1476133;
-  background-color: #d147611a;
-  color: #d4536a;
+  background-color: hsla(
+    calc(light-dark(208, 207) + 140),
+    light-dark(64%, 77%),
+    light-dark(49%, 54%),
+    10%
+  );
+  color: hsl(calc(light-dark(208, 207) + 140), light-dark(64%, 77%), 57.75%);
 }
 
 body.rainbow-tag-no-filter
@@ -32135,8 +34035,13 @@ body.rainbow-tag-no-filter
   + span.cm-hashtag.cm-meta
   + span.cm-hashtag.cm-hashtag-end {
   --tag-border-color: #d1476133;
-  background-color: #d147611a;
-  color: #d4536a;
+  background-color: hsla(
+    calc(light-dark(208, 207) + 140),
+    light-dark(64%, 77%),
+    light-dark(49%, 54%),
+    10%
+  );
+  color: hsl(calc(light-dark(208, 207) + 140), light-dark(64%, 77%), 57.75%);
 }
 
 body.rainbow-tag .tag:not(.token):nth-child(5n + 1) {
@@ -32676,7 +34581,16 @@ body.tag-pill-outlined
 body.tag-clear-style .tag:not(.token):nth-child(n) {
   background-color: transparent;
   border: none;
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   padding: 0 2px;
   text-decoration: underline;
 }
@@ -32688,7 +34602,16 @@ body.tag-clear-style .tag:not(.token):nth-child(n):hover {
 body.tag-clear-style .cm-s-obsidian span.cm-hashtag-begin {
   background-color: transparent;
   border: none;
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   padding: 0;
   text-decoration: underline;
 }
@@ -32699,7 +34622,16 @@ body.tag-clear-style
   + .cm-hashtag.cm-meta {
   background-color: transparent;
   border: none;
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   padding: 0;
   text-decoration: underline;
 }
@@ -32707,7 +34639,16 @@ body.tag-clear-style
 body.tag-clear-style .cm-s-obsidian span.cm-hashtag-end {
   background-color: transparent;
   border: none;
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   padding: 0;
   text-decoration: underline;
 }
@@ -32718,7 +34659,16 @@ body.tag-clear-style
   + span.cm-hashtag.cm-meta.cm-hashtag-end {
   background-color: transparent;
   border: none;
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   padding: 0;
   text-decoration: underline;
 }
@@ -32729,7 +34679,16 @@ body.tag-clear-style
   + .cm-hashtag.cm-meta {
   background-color: transparent;
   border: none;
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   padding: 0;
   text-decoration: underline;
 }
@@ -34117,7 +36076,16 @@ span.obsidian-search-match-highlight {
 }
 
 .CodeMirror-foldgutter-open.CodeMirror-guttermarker-subtle::after {
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 .CodeMirror-gutter.CodeMirror-linenumbers {
@@ -34129,7 +36097,16 @@ span.obsidian-search-match-highlight {
 }
 
 span.cm-formatting-task.cm-property {
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 :is(.markdown-preview-view, .markdown-rendered, .markdown-reading-view)
@@ -35170,14 +37147,23 @@ body.retain-header-color :is(.markdown-preview-view, .markdown-rendered) h1 em {
   color: light-dark(#96c22e, #08377d);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -35198,14 +37184,23 @@ body.retain-header-color
   color: light-dark(#96c22e, #08377d);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -35227,14 +37222,23 @@ body.retain-header-color
   color: light-dark(#96c22e, #08377d);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -35252,14 +37256,23 @@ body.retain-header-color .cm-s-obsidian .cm-header.cm-header-1[class*="cm-em"] {
   color: light-dark(#96c22e, #08377d);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -35279,14 +37292,23 @@ body.retain-header-color
   color: light-dark(#96c22e, #08377d);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -35304,14 +37326,23 @@ body.retain-header-color :is(.markdown-preview-view, .markdown-rendered) h2 em {
   color: light-dark(#4cb148, #004fa8);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -35332,14 +37363,23 @@ body.retain-header-color
   color: light-dark(#4cb148, #004fa8);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -35361,14 +37401,23 @@ body.retain-header-color
   color: light-dark(#4cb148, #004fa8);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -35386,14 +37435,23 @@ body.retain-header-color .cm-s-obsidian .cm-header.cm-header-2[class*="cm-em"] {
   color: light-dark(#4cb148, #004fa8);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -35413,14 +37471,23 @@ body.retain-header-color
   color: light-dark(#4cb148, #004fa8);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -35438,14 +37505,23 @@ body.retain-header-color :is(.markdown-preview-view, .markdown-rendered) h3 em {
   color: light-dark(#3abbbb, #0e63b9);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -35466,14 +37542,23 @@ body.retain-header-color
   color: light-dark(#3abbbb, #0e63b9);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -35495,14 +37580,23 @@ body.retain-header-color
   color: light-dark(#3abbbb, #0e63b9);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -35520,14 +37614,23 @@ body.retain-header-color .cm-s-obsidian .cm-header.cm-header-3[class*="cm-em"] {
   color: light-dark(#3abbbb, #0e63b9);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -35547,14 +37650,23 @@ body.retain-header-color
   color: light-dark(#3abbbb, #0e63b9);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -35572,14 +37684,23 @@ body.retain-header-color :is(.markdown-preview-view, .markdown-rendered) h4 em {
   color: light-dark(#75a2e6, #3482c5);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -35600,14 +37721,23 @@ body.retain-header-color
   color: light-dark(#75a2e6, #3482c5);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -35629,14 +37759,23 @@ body.retain-header-color
   color: light-dark(#75a2e6, #3482c5);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -35654,14 +37793,23 @@ body.retain-header-color .cm-s-obsidian .cm-header.cm-header-4[class*="cm-em"] {
   color: light-dark(#75a2e6, #3482c5);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -35681,14 +37829,23 @@ body.retain-header-color
   color: light-dark(#75a2e6, #3482c5);
   font-family:
     "??",
-    "??",
     Bookerly,
     "Inter",
     "Segoe UI",
     "霞鹜文楷 GB",
     "LXGW WenKai",
     "Microsoft YaHei",
-    "Arial",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -36248,22 +38405,70 @@ body.fancy-hr-number .markdown-source-view.mod-cm6 .hr::after {
 body:not(.font-family-change-to-default)
   :is(.markdown-preview-view, .markdown-rendered) {
   font-family:
-    "??", "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", "Arial";
+    "??",
+    Bookerly,
+    "Inter",
+    "Segoe UI",
+    "霞鹜文楷 GB",
+    "LXGW WenKai",
+    "Microsoft YaHei",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif;
 }
 
 body:not(.font-family-change-to-default)
   .markdown-source-view.mod-cm6
   .cm-scroller {
   font-family:
-    "??", "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", "Arial";
+    "??",
+    Bookerly,
+    "Inter",
+    "Segoe UI",
+    "霞鹜文楷 GB",
+    "LXGW WenKai",
+    "Microsoft YaHei",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif;
 }
 
 body:not(.font-family-change-to-default) .markdown-source-view {
   font-family:
-    "??", "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", "Arial";
+    "??",
+    Bookerly,
+    "Inter",
+    "Segoe UI",
+    "霞鹜文楷 GB",
+    "LXGW WenKai",
+    "Microsoft YaHei",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif;
 }
 
 :is(.markdown-preview-view, .markdown-rendered).is-readable-line-width
@@ -37043,7 +39248,10 @@ code[class*="language-"] ::selection {
   .HyperMD-codeblock.cm-line.cm-active:not(.HyperMD-codeblock-begin):not(
     .HyperMD-codeblock-end
   )::after {
-  color: #42a1fa;
+  color: light-dark(
+    hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+    hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+  );
 }
 
 .code-line-number .HyperMD-codeblock .cm-foldPlaceholder::before {
@@ -39293,19 +41501,55 @@ strong > em > .internal-link {
 }
 
 a:not([class*="is-unresolved"]).internal-link > strong {
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 a.external-link > strong {
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 a:not([class*="is-unresolved"]).internal-link > em {
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 a.external-link > em {
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 body.remove-external-link-icon a.external-link {
@@ -39331,7 +41575,16 @@ div.CodeMirror-activeline
   div.CodeMirror-activeline
   .CodeMirror-line
   span.cm-formatting.cm-formatting-strong.cm-strong {
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   opacity: 1;
 }
 
@@ -41146,35 +43399,218 @@ body:not(.default-unresolved-link)
 }
 
 .metadata-container .internal-link:hover {
-  color: light-dark(#42a1fa, #42a1fa);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      ),
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      ),
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      )
+    )
+  );
   opacity: 0.8;
 }
 
 .metadata-container .internal-link {
-  color: light-dark(#42a1fa, #42a1fa);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      ),
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      ),
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      )
+    )
+  );
 }
 
 a.internal-link {
-  color: light-dark(#42a1fa, #42a1fa);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      ),
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      ),
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      )
+    )
+  );
 }
 
 .cm-s-obsidian span.cm-hmd-internal-link a {
-  color: light-dark(#42a1fa, #42a1fa);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      ),
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      ),
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      )
+    )
+  );
 }
 
 .metadata-container a.external-link:hover {
-  color: light-dark(light-dark(#42a1fa, #42a1fa), light-dark(#42a1fa, #42a1fa));
+  color: light-dark(
+    light-dark(
+      light-dark(
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        ),
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        )
+      ),
+      light-dark(
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        ),
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        )
+      )
+    ),
+    light-dark(
+      light-dark(
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        ),
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        )
+      ),
+      light-dark(
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        ),
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        )
+      )
+    )
+  );
   opacity: 0.8;
 }
 
 .markdown-rendered a.external-link:hover {
-  color: light-dark(light-dark(#42a1fa, #42a1fa), light-dark(#42a1fa, #42a1fa));
+  color: light-dark(
+    light-dark(
+      light-dark(
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        ),
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        )
+      ),
+      light-dark(
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        ),
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        )
+      )
+    ),
+    light-dark(
+      light-dark(
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        ),
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        )
+      ),
+      light-dark(
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        ),
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        )
+      )
+    )
+  );
   opacity: 0.8;
 }
 
 :is(.markdown-preview-view, .markdown-rendered) a:hover {
   border-radius: 3px;
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   text-decoration: none;
   text-shadow: 0 3px 5px #0000004d;
   transition: all 0.4s ease-in-out;
@@ -41187,7 +43623,52 @@ body.colorful-link-animation
 }
 
 a.external-link {
-  color: light-dark(light-dark(#42a1fa, #42a1fa), light-dark(#42a1fa, #42a1fa));
+  color: light-dark(
+    light-dark(
+      light-dark(
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        ),
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        )
+      ),
+      light-dark(
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        ),
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        )
+      )
+    ),
+    light-dark(
+      light-dark(
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        ),
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        )
+      ),
+      light-dark(
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        ),
+        light-dark(
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+          hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+        )
+      )
+    )
+  );
   text-decoration: underline;
 }
 
@@ -41870,7 +44351,16 @@ body.file-name-wrapped
 }
 
 .cm-lineNumbers .cm-active.cm-gutterElement {
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 .workspace-leaf-content[data-type="file-explorer"] .nav-file-title {
@@ -41908,7 +44398,16 @@ body:not(.default-icons) .nav-folder-collapse-indicator {
 
 body:not(.default-icons):not(.remove-arrow)
   .nav-folder-collapse-indicator::before {
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   content: "↓";
   font-family: "Inter";
   font-weight: bold;
@@ -41942,7 +44441,16 @@ body:not(.default-icons)
   .backlink-pane
   .search-result-container
   .collapse-icon::before {
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   content: "↓";
   font-family: "Inter";
   font-size: 14px;
@@ -41983,7 +44491,16 @@ body:not(.default-icons)
   .search-result-container.mod-global-search
   .tree-item-self.search-result-file-title.is-clickable
   .collapse-icon::before {
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   content: "↓";
   font-family: "Inter";
   font-size: 14px;
@@ -42042,7 +44559,16 @@ body:not(.default-icons)
 
 body:not(.default-icons)
   .heading-collapse-indicator.collapse-indicator::before {
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   content: "↓";
   font-family: "Inter";
   font-size: 15px;
@@ -42090,7 +44616,16 @@ body:not(.default-icons)
   .workspace-leaf-content[data-type="outline"]
   .tree-item
   .collapse-icon::before {
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   content: "↓";
   font-family: "Inter";
   font-size: 1em;
@@ -42188,7 +44723,18 @@ body.logseq-outline-style
   .view-content
   .tree-item-self
   .tree-item-inner::before {
-  border: 2px solid #478fd1e6;
+  border: 2px solid
+    hsla(
+      light-dark(
+        light-dark(208, 207),
+        light-dark(64%, 77%),
+        light-dark(49%, 54%),
+        light-dark(208, 207),
+        light-dark(64%, 77%),
+        light-dark(49%, 54%)
+      ),
+      0.9
+    );
   border-radius: 50%;
   content: "";
   height: 4px;
@@ -42249,7 +44795,17 @@ body.logseq-outline-style
   .workspace-leaf-content[data-type="outline"]
   .view-content
   .tree-item-icon::before {
-  background-color: #478fd1e6;
+  background-color: hsla(
+    light-dark(
+      light-dark(208, 207),
+      light-dark(64%, 77%),
+      light-dark(49%, 54%),
+      light-dark(208, 207),
+      light-dark(64%, 77%),
+      light-dark(49%, 54%)
+    ),
+    0.9
+  );
   border-radius: 50%;
   height: 8px;
   left: 4px;
@@ -42282,7 +44838,17 @@ body.logseq-outline-style
   .tree-item:hover
   > .tree-item-children
   > .tree-item::after {
-  background-color: #478fd1e6;
+  background-color: hsla(
+    light-dark(
+      light-dark(208, 207),
+      light-dark(64%, 77%),
+      light-dark(49%, 54%),
+      light-dark(208, 207),
+      light-dark(64%, 77%),
+      light-dark(49%, 54%)
+    ),
+    0.9
+  );
 }
 
 body.logseq-outline-style
@@ -42320,9 +44886,31 @@ body.logseq-outline-style
   .tree-item:hover
   > .tree-item-children
   > .tree-item:hover::before {
-  border-bottom: 1.5px solid #478fd1e6;
+  border-bottom: 1.5px solid
+    hsla(
+      light-dark(
+        light-dark(208, 207),
+        light-dark(64%, 77%),
+        light-dark(49%, 54%),
+        light-dark(208, 207),
+        light-dark(64%, 77%),
+        light-dark(49%, 54%)
+      ),
+      0.9
+    );
   border-bottom-left-radius: 7px;
-  border-left: 2px solid #478fd1e6;
+  border-left: 2px solid
+    hsla(
+      light-dark(
+        light-dark(208, 207),
+        light-dark(64%, 77%),
+        light-dark(49%, 54%),
+        light-dark(208, 207),
+        light-dark(64%, 77%),
+        light-dark(49%, 54%)
+      ),
+      0.9
+    );
   bottom: calc(100% - 17px);
   content: "";
   left: -10px;
@@ -42357,7 +44945,16 @@ body.logseq-outline-style
 }
 
 .tag-container .tree-item-self .tree-item-icon::before {
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   content: "#";
   font-family: "Inter";
   font-size: 1em;
@@ -42405,7 +45002,32 @@ body.logseq-outline-style
 }
 
 .modal button:not(.mod-cta):not(.mod-warning):hover {
-  background-color: #86bee4;
+  background-color: light-dark(
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    ),
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    )
+  );
   color: #fdfdfd;
 }
 
@@ -43618,7 +46240,16 @@ body.resizable-mermaid .mermaid {
 }
 
 .mermaid .actor {
-  stroke: hsla(209, 95%, 62%, 1);
+  stroke: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 .mermaid .actor-line {
@@ -43655,7 +46286,16 @@ body.resizable-mermaid .mermaid {
 
 .mermaid .labelBox {
   fill: light-dark(light-dark(#363636, #e0e0e0), light-dark(#212121, #fcfcfc));
-  stroke: hsla(209, 95%, 62%, 1);
+  stroke: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 .mermaid .labelText {
@@ -43679,8 +46319,26 @@ body.resizable-mermaid .mermaid {
 }
 
 .mermaid .loopLine {
-  fill: #42a1fa;
-  stroke: hsla(209, 95%, 62%, 1);
+  fill: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
+  stroke: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   stroke-dasharray: 2, 2;
 }
 
@@ -43698,17 +46356,44 @@ body.resizable-mermaid .mermaid {
 
 .mermaid .activation0 {
   fill: light-dark(#151515, #fcfcfc);
-  stroke: hsla(209, 95%, 62%, 1);
+  stroke: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 .mermaid .activation1 {
   fill: light-dark(#151515, #fcfcfc);
-  stroke: hsla(209, 95%, 62%, 1);
+  stroke: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 .mermaid .activation2 {
   fill: light-dark(#151515, #fcfcfc);
-  stroke: hsla(209, 95%, 62%, 1);
+  stroke: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 .mermaid .mermaid-main-font {
@@ -43728,7 +46413,16 @@ body.resizable-mermaid .mermaid {
 }
 
 .mermaid .section2 {
-  fill: #42a1fa;
+  fill: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 .mermaid .section1 {
@@ -43945,22 +46639,58 @@ body.resizable-mermaid .mermaid {
 }
 
 .activeCrit0 {
-  fill: #42a1fa;
+  fill: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   stroke: light-dark(#e7e7e7, #000000);
 }
 
 .activeCrit1 {
-  fill: #42a1fa;
+  fill: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   stroke: light-dark(#e7e7e7, #000000);
 }
 
 .activeCrit2 {
-  fill: #42a1fa;
+  fill: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   stroke: light-dark(#e7e7e7, #000000);
 }
 
 .activeCrit3 {
-  fill: #42a1fa;
+  fill: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   stroke: light-dark(#e7e7e7, #000000);
 }
 
@@ -44044,13 +46774,31 @@ g.classGroup line {
 }
 
 .classLabel .label {
-  fill: #42a1fa;
+  fill: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   font-size: 10px;
 }
 
 .relation {
   fill: none;
-  stroke: hsla(209, 95%, 62%, 1);
+  stroke: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 .dashed-line {
@@ -44058,43 +46806,169 @@ g.classGroup line {
 }
 
 #compositionStart {
-  fill: #42a1fa;
-  stroke: hsla(209, 95%, 62%, 1);
+  fill: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
+  stroke: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 #compositionEnd {
-  fill: #42a1fa;
-  stroke: hsla(209, 95%, 62%, 1);
+  fill: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
+  stroke: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 #dependencyStart {
-  fill: #42a1fa;
-  stroke: hsla(209, 95%, 62%, 1);
+  fill: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
+  stroke: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 #dependencyEnd {
-  fill: #42a1fa;
-  stroke: hsla(209, 95%, 62%, 1);
+  fill: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
+  stroke: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 #extensionStart {
-  fill: #42a1fa;
-  stroke: hsla(209, 95%, 62%, 1);
+  fill: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
+  stroke: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 #extensionEnd {
-  fill: #42a1fa;
-  stroke: hsla(209, 95%, 62%, 1);
+  fill: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
+  stroke: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 #aggregationStart {
   fill: light-dark(light-dark(#363636, #e0e0e0), light-dark(#212121, #fcfcfc));
-  stroke: hsla(209, 95%, 62%, 1);
+  stroke: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 #aggregationEnd {
   fill: light-dark(light-dark(#363636, #e0e0e0), light-dark(#212121, #fcfcfc));
-  stroke: hsla(209, 95%, 62%, 1);
+  stroke: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 .commit-id {
@@ -44161,7 +47035,16 @@ g.classGroup line {
 }
 
 g.stateGroup text {
-  fill: #42a1fa;
+  fill: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   font-family:
     Segoe UI,
     "Microsoft YaHei",
@@ -44187,11 +47070,29 @@ g.stateGroup rect {
 }
 
 g.stateGroup line {
-  stroke: hsla(209, 95%, 62%, 1);
+  stroke: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 .transition {
-  stroke: hsla(209, 95%, 62%, 1);
+  stroke: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 .stateGroup .composit {
@@ -44204,7 +47105,16 @@ g.stateGroup line {
 }
 
 .state-note {
-  fill: #42a1fa;
+  fill: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 .state-note text {
@@ -44244,7 +47154,16 @@ g.stateGroup line {
 }
 
 #statediagram-barbEnd {
-  fill: #42a1fa;
+  fill: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 .statediagram-cluster rect.outer {
@@ -44263,31 +47182,94 @@ g.stateGroup line {
 }
 
 .statediagram-state .divider {
-  stroke: hsla(209, 95%, 62%, 1);
+  stroke: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 .statediagram-cluster rect {
-  stroke: hsla(209, 95%, 62%, 1);
+  stroke: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 .node rect {
-  stroke: hsla(209, 95%, 62%, 1);
+  stroke: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 .node path {
-  stroke: hsla(209, 95%, 62%, 1);
+  stroke: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 .node ellipse {
-  stroke: hsla(209, 95%, 62%, 1);
+  stroke: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 .node circle {
-  stroke: hsla(209, 95%, 62%, 1);
+  stroke: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 .node polygon {
-  stroke: hsla(209, 95%, 62%, 1);
+  stroke: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 .statediagram-cluster.statediagram-cluster .inner {
@@ -44313,7 +47295,16 @@ g.stateGroup line {
 }
 
 .statediagram-note rect {
-  fill: #42a1fa;
+  fill: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   rx: 0;
   ry: 0;
   stroke: light-dark(#8a8a8a, #7f7f7f);
@@ -44691,7 +47682,17 @@ body.plugin-sliding-panes.plugin-sliding-panes.transparent-panes.theme-light
 }
 
 #calendar-container th {
-  border-bottom: 2px solid #42a1fa;
+  border-bottom: 2px solid
+    light-dark(
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      ),
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      )
+    );
   border-radius: 0;
   padding: 8px 0;
 }
@@ -44733,21 +47734,59 @@ body.plugin-sliding-panes.plugin-sliding-panes.transparent-panes.theme-light
 
 #calendar-container .active.today {
   background-color: #478fd166;
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   font-weight: 700;
 }
 
 #calendar-container .day.has-note.active {
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   font-weight: 700;
 }
 
 body.toggle-calendar-shadow #calendar-container .active.today {
-  box-shadow: 0 0 1px 2px #42a1fa;
+  box-shadow: 0 0 1px 2px
+    light-dark(
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      ),
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      )
+    );
 }
 
 body.toggle-calendar-shadow #calendar-container .today {
-  box-shadow: 0 0 5px #42a1fa;
+  box-shadow: 0 0 5px
+    light-dark(
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      ),
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      )
+    );
 }
 
 #calendar-container .today {
@@ -44871,7 +47910,16 @@ body.style-options-for-calendar-plugin-style-one #calendar-container .day {
 
 body.style-options-for-calendar-plugin-style-one #calendar-container .today {
   background-image: unset;
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   font-weight: 700;
 }
 
@@ -44960,7 +48008,16 @@ button.copy-code-button:hover {
 }
 
 .day-planner-status-bar-text {
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   font-weight: 600;
 }
 
@@ -45056,8 +48113,24 @@ button.copy-code-button:hover {
 
 .kanban-plugin__markdown-preview-view {
   font-family:
-    "??", "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", "Arial";
+    "??",
+    Bookerly,
+    "Inter",
+    "Segoe UI",
+    "霞鹜文楷 GB",
+    "LXGW WenKai",
+    "Microsoft YaHei",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif;
 }
 
 .workspace-leaf .kanban-plugin__lane {
@@ -46125,7 +49198,16 @@ body.style-options-for-admonition-plugin
   .admonition-kanban
   ul
   .list-collapse-indicator.collapse-indicator.collapse-icon::before {
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   transition: transform 10ms linear 0s;
 }
 
@@ -47030,8 +50112,25 @@ body.style-options-for-admonition-plugin
   *.admonition-title-content {
   color: #ffffff;
   font-family:
-    "方正书宋_GBK", "??", "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB",
-    "LXGW WenKai", "Microsoft YaHei", "Arial";
+    "方正书宋_GBK",
+    "??",
+    Bookerly,
+    "Inter",
+    "Segoe UI",
+    "霞鹜文楷 GB",
+    "LXGW WenKai",
+    "Microsoft YaHei",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif;
   font-size: 1.1em;
 }
 
@@ -47072,8 +50171,25 @@ body.style-options-for-admonition-plugin
   )
   p {
   font-family:
-    "方正楷体_GBK", "??", "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB",
-    "LXGW WenKai", "Microsoft YaHei", "Arial";
+    "方正楷体_GBK",
+    "??",
+    Bookerly,
+    "Inter",
+    "Segoe UI",
+    "霞鹜文楷 GB",
+    "LXGW WenKai",
+    "Microsoft YaHei",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif;
   font-size: 1.1em;
   text-indent: 0;
 }
@@ -47303,7 +50419,16 @@ h5.breadcrumbs-matrix-header {
 
 span.dataview.small-text {
   border-radius: 3px;
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   font-size: 70%;
   font-variant-numeric: ordinal;
   line-height: 0;
@@ -47779,12 +50904,62 @@ div.style-settings-container[data-level] {
 
 .setting-item.setting-item-heading.style-settings-heading:hover
   .style-settings-collapse-indicator {
-  color: #86bee4;
+  color: light-dark(
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    ),
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    )
+  );
 }
 
 .setting-item.setting-item-heading.style-settings-heading:hover
   .setting-item-name {
-  color: #86bee4;
+  color: light-dark(
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    ),
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    )
+  );
 }
 
 div.workspace-leaf-content[data-type="style-settings"]
@@ -47915,7 +51090,16 @@ div.workspace-leaf-content[data-type="style-settings"]
 .style-settings-container
   .setting-item:is([data-id^="text-accent"])
   .setting-item-control::before {
-  background-color: #42a1fa;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 body:not(.color-scheme-options-lillimon-topaz)
@@ -48475,8 +51659,24 @@ div.code-block-wrap > pre pre:not([closed]) + code[class*="language-"] {
 
 .obsidian-embedded-code-title__code-block-title > .title {
   font-family:
-    "??", "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", "Arial";
+    "??",
+    Bookerly,
+    "Inter",
+    "Segoe UI",
+    "霞鹜文楷 GB",
+    "LXGW WenKai",
+    "Microsoft YaHei",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif;
   font-size: inherit;
   font-weight: bold;
   line-height: 29px;
@@ -50391,7 +53591,32 @@ body.quiet-outline-optimize
   .n-tree.n-tree--block-line
   .n-tree-node:not(.n-tree-node--disabled):hover
   p {
-  color: #86bee4;
+  color: light-dark(
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    ),
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    )
+  );
 }
 
 body.quiet-outline-optimize
@@ -50399,7 +53624,32 @@ body.quiet-outline-optimize
   .quiet-outline
   .n-tree-node--selectable.located
   p {
-  color: #86bee4;
+  color: light-dark(
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    ),
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    )
+  );
 }
 
 body.quiet-outline-optimize
@@ -50408,7 +53658,32 @@ body.quiet-outline-optimize
   .n-tree-node--selected
   p {
   background-color: #478fd133;
-  color: #86bee4;
+  color: light-dark(
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    ),
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    )
+  );
   font-weight: 600;
 }
 
@@ -51818,7 +55093,16 @@ body.style-options-for-buttons-plugin.theme-dark button.g_blue {
 }
 
 body.style-options-for-buttons-plugin.theme-dark .grad_button:hover {
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 button.tiny {
@@ -51846,7 +55130,32 @@ button.tiny:hover {
 }
 
 button.tiny::before {
-  background-color: #86bee4;
+  background-color: light-dark(
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    ),
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    )
+  );
   border-radius: 50%;
   content: "";
   height: 1rem;
@@ -51932,8 +55241,24 @@ body:not(.font-family-change-to-default).is-mobile
   .markdown-source-view.mod-cm6
   .cm-scroller {
   font-family:
-    "??", "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", "Arial";
+    "??",
+    Bookerly,
+    "Inter",
+    "Segoe UI",
+    "霞鹜文楷 GB",
+    "LXGW WenKai",
+    "Microsoft YaHei",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif;
 }
 
 .is-mobile #calendar-container {
@@ -51975,7 +55300,16 @@ body:not(.font-family-change-to-default).is-mobile
 }
 
 .is-mobile .workspace-drawer-header-name-text {
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   font-weight: 600;
 }
 
@@ -52019,7 +55353,16 @@ body:not(.font-family-change-to-default).is-mobile
 }
 
 .is-mobile .cm-line .cm-link.cm-strong {
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
 }
 
 .is-mobile .cm-line .cm-formatting.cm-formatting-link {
@@ -52093,7 +55436,17 @@ body.is-mobile .menu-item-title {
 }
 
 .projects-container [role="row"]:hover {
-  background-color: #478fd11a;
+  background-color: hsla(
+    light-dark(
+      light-dark(208, 207),
+      light-dark(64%, 77%),
+      light-dark(49%, 54%),
+      light-dark(208, 207),
+      light-dark(64%, 77%),
+      light-dark(49%, 54%)
+    ),
+    0.1
+  );
 }
 
 .projects-container [role="row"] {
@@ -52113,7 +55466,17 @@ body.is-mobile .menu-item-title {
 .projects-container
   [role="row"]
   [role="gridcell"][aria-selected="true"]::before {
-  background-color: #478fd133;
+  background-color: hsla(
+    light-dark(
+      light-dark(208, 207),
+      light-dark(64%, 77%),
+      light-dark(49%, 54%),
+      light-dark(208, 207),
+      light-dark(64%, 77%),
+      light-dark(49%, 54%)
+    ),
+    0.2
+  );
   content: " ";
   left: 0;
   min-height: 30px;
@@ -59831,7 +63194,16 @@ body.is-popout-window {
 }
 
 a.tasks-edit {
-  background-color: #42a1fa;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   background-size: 25px 20px;
   cursor: pointer;
   display: inline-block;
@@ -60405,11 +63777,11 @@ body.admonition-bg-color-same .callout-title {
 .callout.callout[data-callout*="cards"] progress {
   background: #f0ec05;
   height: 3px;
-  margin-left: -43.52px;
+  margin-left: -69px;
   margin-top: -10px;
   overflow: hidden;
   position: absolute;
-  width: 87.04px;
+  width: 138px;
 }
 
 .callout.callout[data-callout*="cards"] progress.yellow::-moz-progress-bar {
@@ -60446,7 +63818,7 @@ body.admonition-bg-color-same .callout-title {
   height: auto;
   margin-bottom: 20px;
   margin-left: 20px;
-  width: 87.04px;
+  width: 138px;
 }
 
 .callout.callout[data-callout*="cards"]
@@ -60476,7 +63848,7 @@ body.admonition-bg-color-same .callout-title {
 .callout.callout[data-callout*="cards"] table.dataview tbody > tr > td img {
   -o-object-fit: cover;
   background-color: light-dark(#151515, #fcfcfc);
-  height: 124.34286px;
+  height: 197.14286px;
   object-fit: cover;
   vertical-align: top;
   width: 100%;
@@ -61067,7 +64439,16 @@ body.admonition-bg-color-same .callout-title {
 .callout.callout[data-callout*="kanban"]
   ul
   .list-collapse-indicator.collapse-indicator.collapse-icon::before {
-  color: #42a1fa;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   transition: transform 10ms linear 0s;
 }
 
@@ -62180,7 +65561,32 @@ body.funny-header-anim.clutter-free-headings
 }
 
 body.head-tag-style :is(.cm-header) + .cm-widgetBuffer + .cm-html-embed > sup {
-  background-color: #86bee4;
+  background-color: light-dark(
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    ),
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    )
+  );
   border-radius: 3px;
   color: #fff;
   font-family:
@@ -62231,7 +65637,32 @@ body.head-tag-style
   :is(.markdown-preview-view, .markdown-rendered)
   :is(h1, h2, h3, h4, h5, h6)
   sup {
-  background-color: #86bee4;
+  background-color: light-dark(
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    ),
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    )
+  );
   border-radius: 3px;
   color: #fff;
   font-size: 12px;
@@ -62315,8 +65746,24 @@ body.head-tag-style
   background-color: unset;
   border-radius: 0px;
   font-family:
-    "??", "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", "Arial";
+    "??",
+    Bookerly,
+    "Inter",
+    "Segoe UI",
+    "霞鹜文楷 GB",
+    "LXGW WenKai",
+    "Microsoft YaHei",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif;
   padding: 0;
 }
 
@@ -62660,15 +66107,27 @@ body.colorful-unordered-list ul > li::marker {
 }
 
 body.colorful-unordered-list :is(ul, ol) ul li::marker {
-  color: #8a47d1;
+  color: hsl(
+    calc(light-dark(208, 207) + 60),
+    light-dark(64%, 77%),
+    light-dark(49%, 54%)
+  );
 }
 
 body.colorful-ordered-list :is(ul, ol) :is(ul, ol) ul li::marker {
-  color: #ce3c88;
+  color: hsl(
+    calc(light-dark(208, 207) + 120),
+    light-dark(64%, 77%),
+    calc(light-dark(49%, 54%) * 0.95)
+  );
 }
 
 body.colorful-ordered-list :is(ul, ol) :is(ul, ol) :is(ul, ol) ul li::marker {
-  color: hsl(389, 60%, 52.25%);
+  color: hsl(
+    calc(light-dark(208, 207) + 180),
+    light-dark(64%, 77%),
+    calc(light-dark(49%, 54%) * 0.95)
+  );
 }
 
 body.colorful-ordered-list
@@ -62678,7 +66137,11 @@ body.colorful-ordered-list
   :is(ul, ol)
   ul
   li::marker {
-  color: hsl(449, 60%, 52.25%);
+  color: hsl(
+    calc(light-dark(208, 207) + 240),
+    light-dark(64%, 77%),
+    calc(light-dark(49%, 54%) * 0.95)
+  );
 }
 
 body.colorful-ordered-list
@@ -62689,7 +66152,11 @@ body.colorful-ordered-list
   :is(ul, ol)
   ul
   li::marker {
-  color: hsl(509, 60%, 52.25%);
+  color: hsl(
+    calc(light-dark(208, 207) + 300),
+    light-dark(64%, 77%),
+    calc(light-dark(49%, 54%) * 0.95)
+  );
 }
 
 body.colorful-ordered-list
@@ -62701,7 +66168,11 @@ body.colorful-ordered-list
   :is(ul, ol)
   ul
   li::marker {
-  color: #3c88ce;
+  color: hsl(
+    calc(light-dark(208, 207)),
+    light-dark(64%, 77%),
+    calc(light-dark(49%, 54%) * 0.95)
+  );
 }
 
 body.colorful-unordered-list .markdown-source-view.mod-cm6 .list-bullet::after {
@@ -63365,7 +66836,11 @@ body.colorful-ordered-list
 }
 
 body.colorful-ordered-list :is(ul, ol) ol li::marker {
-  color: #8a47d1;
+  color: hsl(
+    calc(light-dark(208, 207) + 60),
+    light-dark(64%, 77%),
+    light-dark(49%, 54%)
+  );
 }
 
 body.colorful-ordered-list :is(ul, ol) ol li::before {
@@ -63392,7 +66867,11 @@ body.colorful-ordered-list
 }
 
 body.colorful-ordered-list :is(ul, ol) :is(ul, ol) ol li::marker {
-  color: #ce3c88;
+  color: hsl(
+    calc(light-dark(208, 207) + 120),
+    light-dark(64%, 77%),
+    calc(light-dark(49%, 54%) * 0.95)
+  );
 }
 
 body.colorful-ordered-list :is(ul, ol) :is(ul, ol) ol li::before {
@@ -63419,7 +66898,11 @@ body.colorful-ordered-list
 }
 
 body.colorful-ordered-list :is(ul, ol) :is(ul, ol) :is(ul, ol) ol li::marker {
-  color: hsl(389, 60%, 52.25%);
+  color: hsl(
+    calc(light-dark(208, 207) + 180),
+    light-dark(64%, 77%),
+    calc(light-dark(49%, 54%) * 0.95)
+  );
 }
 
 body.colorful-ordered-list :is(ul, ol) :is(ul, ol) :is(ul, ol) ol li::before {
@@ -63452,7 +66935,11 @@ body.colorful-ordered-list
   :is(ul, ol)
   ol
   li::marker {
-  color: hsl(449, 60%, 52.25%);
+  color: hsl(
+    calc(light-dark(208, 207) + 240),
+    light-dark(64%, 77%),
+    calc(light-dark(49%, 54%) * 0.95)
+  );
 }
 
 body.colorful-ordered-list
@@ -63492,7 +66979,11 @@ body.colorful-ordered-list
   :is(ul, ol)
   ol
   li::marker {
-  color: hsl(509, 60%, 52.25%);
+  color: hsl(
+    calc(light-dark(208, 207) + 300),
+    light-dark(64%, 77%),
+    calc(light-dark(49%, 54%) * 0.95)
+  );
 }
 
 body.colorful-ordered-list
@@ -63534,7 +67025,11 @@ body.colorful-ordered-list
   :is(ul, ol)
   ol
   li::marker {
-  color: #3c88ce;
+  color: hsl(
+    calc(light-dark(208, 207)),
+    light-dark(64%, 77%),
+    calc(light-dark(49%, 54%) * 0.95)
+  );
 }
 
 body.colorful-ordered-list
@@ -64122,7 +67617,32 @@ body.hide-titlebar-close-btn.is-hidden-frameless.mod-windows .titlebar-button {
 .view-header-title-container.web-browser-header-bar:hover {
   border: 1px solid;
   border-radius: 6px;
-  color: #86bee4;
+  color: light-dark(
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    ),
+    light-dark(
+      hsl(
+        calc(light-dark(208, 207) - 5),
+        calc(light-dark(64%, 77%) * 1.05),
+        calc(light-dark(49%, 54%) * 1.29)
+      ),
+      hsl(
+        calc(light-dark(208, 207) - 3),
+        calc(light-dark(64%, 77%) * 1.02),
+        calc(light-dark(49%, 54%) * 1.15)
+      )
+    )
+  );
 }
 
 body.background-settings-workplace-background-image.workspace
@@ -64250,7 +67770,17 @@ body.underline-tab-style
   .workspace-split:not(.mod-left-split):not(.mod-right-split)
   .workspace-tab-header-container-inner
   .workspace-tab-header.is-active {
-  border-bottom: 2px solid #42a1fa;
+  border-bottom: 2px solid
+    light-dark(
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      ),
+      light-dark(
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+        hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+      )
+    );
   border-radius: 0;
   margin-bottom: 0px;
   padding-bottom: 0px;
@@ -66102,7 +69632,16 @@ body.enable-alternative-checkboxes li[data-task="M"] > p > input:checked {
 }
 
 body.enable-alternative-checkboxes input[data-task="t"]:checked {
-  background-color: #42a1fa;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='002424' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12612121614'%3E%3C/polyline%3E%3C/svg%3E");
   background-position: center center;
   background-size: 90%;
@@ -66110,7 +69649,16 @@ body.enable-alternative-checkboxes input[data-task="t"]:checked {
 }
 
 body.enable-alternative-checkboxes li[data-task="t"] > input:checked {
-  background-color: #42a1fa;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='002424' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12612121614'%3E%3C/polyline%3E%3C/svg%3E");
   background-position: center center;
   background-size: 90%;
@@ -66118,7 +69666,16 @@ body.enable-alternative-checkboxes li[data-task="t"] > input:checked {
 }
 
 body.enable-alternative-checkboxes li[data-task="t"] > p > input:checked {
-  background-color: #42a1fa;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    ),
+    light-dark(
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%)),
+      hsl(light-dark(208, 207), light-dark(64%, 77%), light-dark(49%, 54%))
+    )
+  );
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='002424' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12612121614'%3E%3C/polyline%3E%3C/svg%3E");
   background-position: center center;
   background-size: 90%;

@@ -1,5 +1,8 @@
 :root {
   --accent-color: light-dark(#67acff, #0062c1);
+  --accent-h: light-dark(213, 210);
+  --accent-l: light-dark(70%, 38%);
+  --accent-s: light-dark(100%, 100%);
   --background-primary: light-dark(#000000, #ffffff);
   --background-secondary: light-dark(#000000, #f9fafb);
   --background-secondary-alt: light-dark(#2b3138, #212121);
@@ -7,7 +10,7 @@
   --color-accent: light-dark(#66abff, #66abff);
   --color-accent-1: light-dark(hsl(210, 102%, 80.5%), hsl(212, 101%, 75.25%));
   --color-accent-2: light-dark(hsl(208, 105%, 90.3%), hsl(210, 102%, 80.5%));
-  --color-accent-hsl: light-dark(213, 100%, 70%, 213, 100%, 70%);
+  --color-accent-hsl: light-dark(#66abff, #66abff);
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
@@ -49,9 +52,10 @@
 }
 
 body {
-  --accent-h: 258;
-  --accent-l: 66%;
-  --accent-s: 88%;
+  --accent-color: light-dark(#67acff, #0062c1);
+  --accent-h: light-dark(213, 210);
+  --accent-l: light-dark(70%, 38%);
+  --accent-s: light-dark(100%, 100%);
   --anim-duration-fast: 140ms;
   --anim-duration-moderate: 300ms;
   --anim-duration-none: 0;
@@ -73,9 +77,10 @@ body {
   --background-modifier-message: #000000e6;
   --background-modifier-success: #44cf6e;
   --background-modifier-success-rgb: 68, 207, 110;
-  --background-primary: #000;
+  --background-primary: light-dark(#000000, #ffffff);
   --background-primary-alt: #111;
-  --background-secondary: #1e1e1e;
+  --background-secondary: light-dark(#000000, #f9fafb);
+  --background-secondary-alt: light-dark(#2b3138, #212121);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -162,7 +167,7 @@ body {
   --checkbox-marker-color: #000000;
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --checklist-done-color: #595959;
+  --checklist-done-color: light-dark(#8a919b, #82868a);
   --checklist-done-decoration: none;
   --clickable-icon-radius: 4px;
   --code-background: #2f2f2f;
@@ -184,13 +189,33 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: #666666;
   --collapse-icon-color-collapsed: hsl(210, 102%, 80.5%);
-  --color-blue: #23abf2;
-  --color-cyan: #54ada4;
+  --color-accent: light-dark(#66abff, #66abff);
+  --color-accent-1: light-dark(hsl(210, 102%, 80.5%), hsl(212, 101%, 75.25%));
+  --color-accent-2: light-dark(hsl(208, 105%, 90.3%), hsl(210, 102%, 80.5%));
+  --color-accent-hsl: light-dark(#66abff, #66abff);
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
   --color-cyan-rgb: #54ada4;
+  --color-green: light-dark(#44cf6e, #08b94e);
   --color-grey: #6a6a6a;
-  --color-red: #ff5383;
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
   --color-red-trans: #ff53834d;
-  --color-yellow: #fdd31b;
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --color-yellow-rgb: #fdd31b;
   --cursor: default;
   --cursor-link: pointer;
@@ -251,7 +276,10 @@ body {
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "??", "??", "??", "Arial";
+  --font-mermaid:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-monospace:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -269,7 +297,10 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "??", "??", "??", "Arial";
+  --font-text:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -704,7 +735,7 @@ body {
   --tag-border-color: #66abff26;
   --tag-border-color-hover: #66abff26;
   --tag-border-width: 0px;
-  --tag-color: hsl(210, 102%, 80.5%);
+  --tag-color: light-dark(#f1f1f1, #1e7d58);
   --tag-color-hover: hsl(210, 102%, 80.5%);
   --tag-decoration: none;
   --tag-decoration-hover: none;
@@ -716,18 +747,19 @@ body {
   --text-accent: #67acff;
   --text-accent-hover: #458fea;
   --text-error: #fb464c;
+  --text-extreme: light-dark(#ffffff, #000000);
   --text-faint: #666666;
   --text-highlight-bg: #ffd00066;
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: #b3b3b3;
   --text-normal: #dadada;
-  --text-on-accent: #ffffff;
+  --text-on-accent: light-dark(#1f1f1f, #ffffff);
   --text-on-accent-inverted: #000000;
   --text-selection: #66abff33;
   --text-success: #44cf6e;
   --text-warning: #e9973f;
-  --titlebar-background: #000000;
-  --titlebar-background-focused: #2b3138;
+  --titlebar-background: light-dark(#212121, #f9fafb);
+  --titlebar-background-focused: light-dark(#000000, #f9fafb);
   --titlebar-border-color: transparent;
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;

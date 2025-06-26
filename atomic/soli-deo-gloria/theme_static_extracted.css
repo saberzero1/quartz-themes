@@ -5,7 +5,7 @@
   --color-accent: light-dark(#000000, #000000);
   --color-accent-1: light-dark(hsl(-3, 0%, 0%), hsl(-1, 0%, 0%));
   --color-accent-2: light-dark(hsl(-5, 0%, 0%), hsl(-3, 0%, 0%));
-  --color-accent-hsl: light-dark(0, 0%, 0%, 0, 0%, 0%);
+  --color-accent-hsl: light-dark(#000000, #000000);
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
@@ -67,9 +67,10 @@ body {
   --background-modifier-message: #000000e6;
   --background-modifier-success: #44cf6e;
   --background-modifier-success-rgb: 68, 207, 110;
-  --background-primary: #000;
+  --background-primary: light-dark(#252523, #f9f0d6);
   --background-primary-alt: #111;
-  --background-secondary: #1e1e1e;
+  --background-secondary: light-dark(#000000, #ffffff);
+  --background-secondary-alt: light-dark(#363636, #212121);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -178,6 +179,30 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: #666666;
   --collapse-icon-color-collapsed: hsl(-3, 0%, 0%);
+  --color-accent: light-dark(#000000, #000000);
+  --color-accent-1: light-dark(hsl(-3, 0%, 0%), hsl(-1, 0%, 0%));
+  --color-accent-2: light-dark(hsl(-5, 0%, 0%), hsl(-3, 0%, 0%));
+  --color-accent-hsl: light-dark(#000000, #000000);
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -237,7 +262,10 @@ body {
   --font-interface-theme: "Germania One", Germania-One, serif;
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "??", "??", "Comorant", Comorant-Garamond, serif, "Arial";
+  --font-mermaid:
+    "??", "Comorant", Comorant-Garamond, serif, ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace:
     "??", Courier, monospace, ui-monospace, SFMono-Regular, "Cascadia Mono",
     "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
@@ -255,7 +283,10 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "??", "??", "Comorant", Comorant-Garamond, serif, "Arial";
+  --font-text:
+    "??", "Comorant", Comorant-Garamond, serif, ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 18px;
   --font-text-theme: "Comorant", Comorant-Garamond, serif;
@@ -557,7 +588,7 @@ body {
   --radius-m: 8px;
   --radius-s: 4px;
   --radius-xl: 16px;
-  --ribbon-background: #000000;
+  --ribbon-background: light-dark(#000000, #ffffff);
   --ribbon-background-collapsed: #000000;
   --ribbon-padding: 8px 4px 12px;
   --ribbon-width: 44px;

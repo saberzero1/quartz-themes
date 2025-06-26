@@ -931,11 +931,14 @@
 }
 
 :root {
+  --accent-h: light-dark(79, 79);
+  --accent-l: light-dark(40%, 67%);
+  --accent-s: light-dark(25%, 25%);
   --background-secondary-alt: light-dark(#57543f, #302a1d);
   --color-accent: light-dark(#6f804d, #6f804d);
   --color-accent-1: light-dark(#839357, #798952);
   --color-accent-2: light-dark(#95a463, #839357);
-  --color-accent-hsl: light-dark(79, 25%, 40%, 79, 25%, 40%);
+  --color-accent-hsl: light-dark(#6f804d, #6f804d);
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
@@ -1582,9 +1585,9 @@
 }
 
 body {
-  --accent-h: 258;
-  --accent-l: 66%;
-  --accent-s: 88%;
+  --accent-h: light-dark(79, 79);
+  --accent-l: light-dark(40%, 67%);
+  --accent-s: light-dark(25%, 25%);
   --anim-duration-fast: 140ms;
   --anim-duration-moderate: 300ms;
   --anim-duration-none: 0;
@@ -1609,6 +1612,7 @@ body {
   --background-primary: #000;
   --background-primary-alt: #111;
   --background-secondary: #1e1e1e;
+  --background-secondary-alt: light-dark(#57543f, #302a1d);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -1717,6 +1721,30 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: #777357;
   --collapse-icon-color-collapsed: #616d41;
+  --color-accent: light-dark(#6f804d, #6f804d);
+  --color-accent-1: light-dark(#839357, #798952);
+  --color-accent-2: light-dark(#95a463, #839357);
+  --color-accent-hsl: light-dark(#6f804d, #6f804d);
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -1776,7 +1804,10 @@ body {
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "??", "??", "??", "Arial";
+  --font-mermaid:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-monospace:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1794,7 +1825,10 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "??", "??", "??", "Arial";
+  --font-text:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -1915,8 +1949,8 @@ body {
   --input-height: 30px;
   --input-placeholder-color: #777357;
   --input-radius: 5px;
-  --interactive-accent: #616d41;
-  --interactive-accent-hover: #95a463;
+  --interactive-accent: light-dark(#6f804d, #6f804d);
+  --interactive-accent-hover: light-dark(#616d41, #616d41);
   --interactive-accent-hsl: 79, 25%, 40%;
   --interactive-hover: #111;
   --interactive-normal: #000;
@@ -2246,8 +2280,8 @@ body {
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: #fcfbf1;
   --text-normal: #fcfbf1;
-  --text-on-accent: #ffffff;
-  --text-on-accent-inverted: #000000;
+  --text-on-accent: light-dark(#fcfbf1, #fcfbf1);
+  --text-on-accent-inverted: light-dark(#111, #111);
   --text-selection: #6f804d33;
   --text-success: #44cf6e;
   --text-warning: #e9973f;
@@ -2856,7 +2890,16 @@ body:not(.is-mobile) .app-container {
   -moz-animation: blink 1.06s steps(1) infinite;
   -webkit-animation: blink 1.06s steps(1) infinite;
   animation: blink 1.06s steps(1) infinite;
-  background: #6f804d;
+  background: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   border: 0;
   color: light-dark(light-dark(#dadada, #222222), light-dark(#dadada, #222222));
   width: auto;
@@ -2907,7 +2950,20 @@ body:not(.is-mobile) .app-container {
 .markdown-source-view {
   --list-marker-space: 0;
   --list-padding-inline-start: 0;
-  font-family: "??", "??", "??", "Arial";
+  font-family:
+    "??",
+    "??",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
 }
 
@@ -3057,7 +3113,20 @@ body:not(.is-mobile) .app-container {
 }
 
 .markdown-source-view.mod-cm6 .cm-scroller {
-  font-family: "??", "??", "??", "Arial";
+  font-family:
+    "??",
+    "??",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   line-height: 1.5;
   scrollbar-gutter: stable;
 }
@@ -3717,7 +3786,16 @@ body.is-phone .feedback-banner-container {
 }
 
 .feedback-banner-dismiss-button {
-  color: #6f804d;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   font-size: 12.8px;
   font-weight: 600;
   padding: 8px 4px;
@@ -3918,7 +3996,16 @@ body.is-frameless .modal {
 .loader-spinner {
   --icon-size: 32px;
   --icon-stroke: 1.75px;
-  color: #6f804d;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   height: 32px;
   margin: 100px auto;
   width: 32px;
@@ -3937,7 +4024,16 @@ body.is-frameless .modal {
 .loader-cube .sk-cube {
   -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
   animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
-  background-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   float: inline-start;
   height: 33%;
   width: 33%;
@@ -4019,7 +4115,16 @@ body.is-frameless .modal {
 
 .is-loading:before {
   animation: 1000ms ease-in-out 300ms infinite progress-bar;
-  background-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   content: " ";
   height: 3px;
   position: absolute;
@@ -4312,7 +4417,20 @@ body:not(.show-inline-title) .inline-title:not([data-level]) {
 .markdown-preview-view {
   -webkit-user-select: text;
   color: #fcfbf1;
-  font-family: "??", "??", "??", "Arial";
+  font-family:
+    "??",
+    "??",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
   height: 100%;
   line-height: 1.5;
@@ -5169,7 +5287,16 @@ input {
 }
 
 .setting-item-control.mod-hotkey input:focus {
-  background-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   color: light-dark(light-dark(#dadada, #222222), light-dark(#dadada, #222222));
 }
 
@@ -5212,7 +5339,16 @@ input {
 }
 
 .setting-hotkey.mod-active {
-  background-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   color: light-dark(light-dark(#dadada, #222222), light-dark(#dadada, #222222));
 }
 
@@ -5446,7 +5582,16 @@ input {
 }
 
 .setting-progress-bar-inner {
-  background-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   border-radius: 4px;
   height: 100%;
   width: 0;
@@ -5516,14 +5661,50 @@ input {
 }
 
 body:not(.is-phone) .community-item.is-selected {
-  background-color: #6f804d;
-  border-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
+  border-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   color: light-dark(light-dark(#dadada, #222222), light-dark(#dadada, #222222));
 }
 
 body:not(.is-phone) .community-item.is-selected:hover {
-  background-color: #6f804d;
-  border-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
+  border-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   color: light-dark(light-dark(#dadada, #222222), light-dark(#dadada, #222222));
 }
 
@@ -5654,7 +5835,16 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
 .community-item-badge.mod-update {
   --icon-size: 14px;
   --icon-stroke: 2px;
-  color: #6f804d;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   inset-inline-end: 12px;
   position: absolute;
   top: 12px;
@@ -5765,7 +5955,20 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
 .community-modal-readme {
   -webkit-user-select: text;
   color: #fcfbf1;
-  font-family: "??", "??", "??", "Arial";
+  font-family:
+    "??",
+    "??",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
   line-height: 1.5;
   overflow-wrap: break-word;
@@ -6487,7 +6690,16 @@ body.is-phone .view-header-nav-buttons {
 }
 
 .workspace-drop-overlay:before {
-  background-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   border-radius: 8px;
   bottom: 0;
   content: " ";
@@ -7530,16 +7742,75 @@ button.mod-loading::after {
 
 button.mod-cta {
   --text-color: #fcfbf1;
-  background-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
 }
 
 button.mod-cta.mobile-tap {
-  background-color: #616d41;
+  background-color: light-dark(
+    light-dark(
+      hsl(
+        calc(light-dark(79, 79) - 3),
+        calc(light-dark(25%, 25%) * 1.02),
+        calc(light-dark(40%, 67%) * 1.15)
+      ),
+      hsl(
+        calc(light-dark(79, 79) - 1),
+        calc(light-dark(25%, 25%) * 1.01),
+        calc(light-dark(40%, 67%) * 1.075)
+      )
+    ),
+    light-dark(
+      hsl(
+        calc(light-dark(79, 79) - 3),
+        calc(light-dark(25%, 25%) * 1.02),
+        calc(light-dark(40%, 67%) * 1.15)
+      ),
+      hsl(
+        calc(light-dark(79, 79) - 1),
+        calc(light-dark(25%, 25%) * 1.01),
+        calc(light-dark(40%, 67%) * 1.075)
+      )
+    )
+  );
 }
 
 @media (hover: hover) {
   button.mod-cta:hover {
-    background-color: #616d41;
+    background-color: light-dark(
+      light-dark(
+        hsl(
+          calc(light-dark(79, 79) - 3),
+          calc(light-dark(25%, 25%) * 1.02),
+          calc(light-dark(40%, 67%) * 1.15)
+        ),
+        hsl(
+          calc(light-dark(79, 79) - 1),
+          calc(light-dark(25%, 25%) * 1.01),
+          calc(light-dark(40%, 67%) * 1.075)
+        )
+      ),
+      light-dark(
+        hsl(
+          calc(light-dark(79, 79) - 3),
+          calc(light-dark(25%, 25%) * 1.02),
+          calc(light-dark(40%, 67%) * 1.15)
+        ),
+        hsl(
+          calc(light-dark(79, 79) - 1),
+          calc(light-dark(25%, 25%) * 1.01),
+          calc(light-dark(40%, 67%) * 1.075)
+        )
+      )
+    );
   }
 }
 
@@ -7623,13 +7894,33 @@ button.mod-destructive {
 @media (hover: hover) {
   .card.u-clickable:hover {
     background-color: #6f804d1a;
-    border: 1px solid #6f804d;
+    border: 1px solid
+      light-dark(
+        light-dark(
+          hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+          hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+        ),
+        light-dark(
+          hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+          hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+        )
+      );
   }
 }
 
 .card.is-selected {
   background-color: #6f804d33;
-  border: 1px solid #6f804d;
+  border: 1px solid
+    light-dark(
+      light-dark(
+        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+      ),
+      light-dark(
+        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+      )
+    );
 }
 
 .card-title {
@@ -7671,7 +7962,16 @@ button.mod-destructive {
 }
 
 .changelog-item.mod-highlighted:before {
-  background-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
 }
 
 [contenteditable] {
@@ -9717,7 +10017,10 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .modal .modal-nav-action.mod-cta {
-  color: #6f804d;
+  color: light-dark(
+    hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+    hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+  );
   font-weight: 600;
   inset-inline-end: 0;
 }
@@ -10158,22 +10461,58 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .notice progress[value]::-webkit-progress-value {
-  background-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   overflow: hidden;
 }
 
 .markdown-preview-view progress[value]::-webkit-progress-value {
-  background-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   overflow: hidden;
 }
 
 .markdown-rendered progress[value]::-webkit-progress-value {
-  background-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   overflow: hidden;
 }
 
 .markdown-source-view.is-live-preview progress[value]::-webkit-progress-value {
-  background-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   overflow: hidden;
 }
 
@@ -10223,7 +10562,16 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .progress-bar-line {
-  background-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   height: 8px;
   opacity: 0.4;
   position: absolute;
@@ -10231,7 +10579,16 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .progress-bar-subline {
-  background-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   height: 8px;
   position: absolute;
 }
@@ -10510,7 +10867,16 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 }
 
 .suggestion-item.mod-complex .suggestion-action {
-  color: #6f804d;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   font-family:
     "??",
     "??",
@@ -10594,14 +10960,32 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 body:not(.is-phone) .horizontal-tab-nav-item.is-active {
   --background-modifier-hover: #6f804d;
   --icon-color: #fcfbf1;
-  background-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   color: light-dark(light-dark(#dadada, #222222), light-dark(#dadada, #222222));
 }
 
 body:not(.is-phone) .vertical-tab-nav-item.is-active {
   --background-modifier-hover: #6f804d;
   --icon-color: #fcfbf1;
-  background-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   color: light-dark(light-dark(#dadada, #222222), light-dark(#dadada, #222222));
 }
 
@@ -10729,7 +11113,16 @@ body:not(.is-phone) .vertical-tab-header-group-items {
 }
 
 .checkbox-container.is-enabled {
-  background-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
 }
 
 .checkbox-container.is-enabled:after {
@@ -10935,7 +11328,17 @@ body:not(.is-phone) .vertical-tab-header-group-items {
 }
 
 .tree-item-self.is-being-renamed:focus-within {
-  box-shadow: 0 0 0 2px #6f804d;
+  box-shadow: 0 0 0 2px
+    light-dark(
+      light-dark(
+        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+      ),
+      light-dark(
+        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+      )
+    );
   color: #fcfbf1;
 }
 
@@ -10986,12 +11389,30 @@ body:not(.is-grabbing) .tree-item-self.is-selected:hover {
 }
 
 body:not(.is-grabbing) .tree-item-self.is-being-dragged:hover {
-  background-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   color: light-dark(light-dark(#dadada, #222222), light-dark(#dadada, #222222));
 }
 
 .tree-item-self.is-being-dragged {
-  background-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   color: light-dark(light-dark(#dadada, #222222), light-dark(#dadada, #222222));
 }
 
@@ -11010,7 +11431,17 @@ body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
 body:not(.is-phone)
   .workspace-leaf.mod-active
   .tree-item-self.has-focus:focus-within {
-  box-shadow: 0 0 0 2px #6f804d;
+  box-shadow: 0 0 0 2px
+    light-dark(
+      light-dark(
+        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+      ),
+      light-dark(
+        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+      )
+    );
 }
 
 .tree-item-self .tree-item-icon {
@@ -11073,7 +11504,17 @@ body:not(.is-phone)
 }
 
 .drop-indicator {
-  border: 2px solid #6f804d;
+  border: 2px solid
+    light-dark(
+      light-dark(
+        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+      ),
+      light-dark(
+        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+      )
+    );
   height: 0;
   left: 0;
   pointer-events: none;
@@ -11926,7 +12367,20 @@ kbd {
 .markdown-source-view.mod-cm6
   .cm-line.HyperMD-codeblock
   .cm-formatting.cm-formatting-list {
-  font-family: "??", "??", "??", "Arial";
+  font-family:
+    "??",
+    "??",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
 }
 
@@ -15524,7 +15978,16 @@ mjx-container {
   margin-top: 0;
 }
 .table-drag-target {
-  background-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   border-radius: 2px;
   position: absolute;
   z-index: 2;
@@ -17137,22 +17600,58 @@ body:not(.is-grabbing) .nav-folder-title.is-selected:hover {
 }
 
 body:not(.is-grabbing) .nav-file-title.is-being-dragged {
-  background-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   color: light-dark(light-dark(#dadada, #222222), light-dark(#dadada, #222222));
 }
 
 body:not(.is-grabbing) .nav-folder-title.is-being-dragged {
-  background-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   color: light-dark(light-dark(#dadada, #222222), light-dark(#dadada, #222222));
 }
 
 .nav-file-title.is-being-dragged {
-  background-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   color: light-dark(light-dark(#dadada, #222222), light-dark(#dadada, #222222));
 }
 
 .nav-folder-title.is-being-dragged {
-  background-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   color: light-dark(light-dark(#dadada, #222222), light-dark(#dadada, #222222));
 }
 
@@ -17310,12 +17809,30 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .file-recovery-list-item-header.is-active {
-  background-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   color: light-dark(light-dark(#dadada, #222222), light-dark(#dadada, #222222));
 }
 
 .file-recovery-list-item-header.is-active:hover {
-  background-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   color: light-dark(light-dark(#dadada, #222222), light-dark(#dadada, #222222));
 }
 
@@ -17361,7 +17878,20 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .file-recovery-text[data-ext="md"] {
-  font-family: "??", "??", "??", "Arial";
+  font-family:
+    "??",
+    "??",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
 }
 
@@ -17428,11 +17958,29 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .graph-view.color-fill-highlight {
-  color: #6f804d;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
 }
 
 .graph-view.color-line-highlight {
-  color: #6f804d;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
 }
 
 .graph-controls {
@@ -17641,7 +18189,16 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .setting-item.mod-search-setting.is-loading .setting-item-control:before {
   animation: 1000ms ease-in-out 300ms infinite progress-bar;
-  background-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
 }
 
 .graph-control-section-header {
@@ -18143,7 +18700,16 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .search-result-container.is-loading:before {
   animation: 1000ms ease-in-out 300ms infinite progress-bar;
-  background-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
 }
 
 .search-suggest-info-text {
@@ -18438,7 +19004,16 @@ body:not(.is-phone)
 
 @media (hover: hover) {
   .search-results-info .dropdown:hover {
-    color: #6f804d;
+    color: light-dark(
+      light-dark(
+        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+      ),
+      light-dark(
+        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+      )
+    );
   }
 }
 
@@ -18661,7 +19236,16 @@ body:not(.is-phone)
 }
 
 .sync-status-icon.mod-working {
-  color: #6f804d;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
 }
 
 .sync-status-icon.mod-error {
@@ -18716,13 +19300,31 @@ body:not(.is-phone)
 
 .sync-history-list-item-header.is-active {
   --nav-collapse-icon-color: #fcfbf1;
-  background-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   color: light-dark(light-dark(#dadada, #222222), light-dark(#dadada, #222222));
 }
 
 .sync-history-list-item-header.is-active:hover {
   --nav-collapse-icon-color: #fcfbf1;
-  background-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   color: light-dark(light-dark(#dadada, #222222), light-dark(#dadada, #222222));
 }
 
@@ -18969,7 +19571,20 @@ body:not(.is-phone)
   --cursor-link: default;
   background-color: #000;
   flex: 1 0 0;
-  font-family: "??", "??", "??", "Arial";
+  font-family:
+    "??",
+    "??",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
   overflow: auto;
   padding: 24px;
@@ -19180,7 +19795,16 @@ button.sync-history-button {
 }
 
 .tag-pane-tag.is-active {
-  background-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   color: light-dark(light-dark(#dadada, #222222), light-dark(#dadada, #222222));
 }
 
@@ -19191,7 +19815,16 @@ button.sync-history-button {
 
 @media (hover: hover) {
   .tag-pane-tag.is-active:hover {
-    background-color: #6f804d;
+    background-color: light-dark(
+      light-dark(
+        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+      ),
+      light-dark(
+        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+      )
+    );
     color: light-dark(
       light-dark(#dadada, #222222),
       light-dark(#dadada, #222222)
@@ -19338,16 +19971,50 @@ body.theme-dark {
 }
 
 .canvas-selection {
-  background-color: #6f804d1a;
-  border: 2px solid #6f804d;
+  background-color: hsla(
+    light-dark(
+      light-dark(79, 79),
+      light-dark(25%, 25%),
+      light-dark(40%, 67%),
+      light-dark(79, 79),
+      light-dark(25%, 25%),
+      light-dark(40%, 67%)
+    ),
+    0.1
+  );
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    );
   pointer-events: none;
   position: absolute;
   z-index: -1;
 }
 
 .canvas-selection.mod-group-selection {
-  background-color: #6f804d08;
-  border-color: #6f804d4d;
+  background-color: hsla(
+    light-dark(
+      light-dark(79, 79),
+      light-dark(25%, 25%),
+      light-dark(40%, 67%),
+      light-dark(79, 79),
+      light-dark(25%, 25%),
+      light-dark(40%, 67%)
+    ),
+    0.03
+  );
+  border-color: hsla(
+    light-dark(
+      light-dark(79, 79),
+      light-dark(25%, 25%),
+      light-dark(40%, 67%),
+      light-dark(79, 79),
+      light-dark(25%, 25%),
+      light-dark(40%, 67%)
+    ),
+    0.3
+  );
   border-radius: 3px;
   border-width: 3px;
   pointer-events: initial;
@@ -19422,7 +20089,10 @@ body.theme-dark {
 
 @media (hover: hover) {
   .canvas-card-menu .canvas-card-menu-button:hover {
-    color: #6f804d;
+    color: light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    );
   }
 }
 
@@ -19493,7 +20163,10 @@ body.theme-dark {
 }
 
 .canvas-control-item.is-active {
-  color: #6f804d;
+  color: light-dark(
+    hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+    hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+  );
 }
 
 .canvas-control-item.is-disabled svg {
@@ -19662,14 +20335,20 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 }
 
 .canvas-node.is-selected .canvas-node-container {
-  border-color: #6f804d;
+  border-color: light-dark(
+    hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+    hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+  );
   box-shadow:
     0px 0.5px 1px 0.5px #0000001a,
     0 0 0 2px #6f804d;
 }
 
 .canvas-node.is-focused .canvas-node-container {
-  border-color: #6f804d;
+  border-color: light-dark(
+    hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+    hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+  );
   box-shadow:
     0px 0.5px 1px 0.5px #0000001a,
     0 0 0 2px #6f804d;
@@ -19725,8 +20404,22 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 }
 
 .canvas-node.is-dummy .canvas-node-container {
-  background-color: #6f804d33;
-  border: 4px solid #6f804d;
+  background-color: hsla(
+    light-dark(
+      light-dark(79, 79),
+      light-dark(25%, 25%),
+      light-dark(40%, 67%),
+      light-dark(79, 79),
+      light-dark(25%, 25%),
+      light-dark(40%, 67%)
+    ),
+    0.2
+  );
+  border: 4px solid
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    );
   box-shadow: 0px 2px 10px #00000026;
 }
 
@@ -19999,7 +20692,11 @@ body.is-mobile .canvas-node-resizer {
   .canvas-node-interaction-layer
   .canvas-node-resizer[data-resize="topright"] {
   background-color: #000;
-  border: 2px solid #6f804d;
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    );
   border-radius: 3px;
   display: block;
   height: 20px;
@@ -20012,7 +20709,11 @@ body.is-mobile .canvas-node-resizer {
   .canvas-node-interaction-layer
   .canvas-node-resizer[data-resize="bottomright"] {
   background-color: #000;
-  border: 2px solid #6f804d;
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    );
   border-radius: 3px;
   display: block;
   height: 20px;
@@ -20025,7 +20726,11 @@ body.is-mobile .canvas-node-resizer {
   .canvas-node-interaction-layer
   .canvas-node-resizer[data-resize="topleft"] {
   background-color: #000;
-  border: 2px solid #6f804d;
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    );
   border-radius: 3px;
   display: block;
   height: 20px;
@@ -20038,7 +20743,11 @@ body.is-mobile .canvas-node-resizer {
   .canvas-node-interaction-layer
   .canvas-node-resizer[data-resize="bottomleft"] {
   background-color: #000;
-  border: 2px solid #6f804d;
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    );
   border-radius: 3px;
   display: block;
   height: 20px;
@@ -20075,7 +20784,10 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-node-connection-point::after {
-  background-color: #6f804d;
+  background-color: light-dark(
+    hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+    hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+  );
   border: 3px solid transparent;
   border-radius: 50%;
   box-sizing: border-box;
@@ -20109,12 +20821,18 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-snaps line {
-  stroke: hsl(79, 25%, 40%);
+  stroke: light-dark(
+    hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+    hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+  );
   stroke-width: 1px;
 }
 
 .canvas-snaps circle {
-  fill: #6f804d;
+  fill: light-dark(
+    hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+    hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+  );
 }
 
 .canvas-edges {
@@ -20347,9 +21065,22 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-placeholder-message {
-  background: #6f804d1a;
+  background: hsla(
+    light-dark(
+      light-dark(79, 79),
+      light-dark(25%, 25%),
+      light-dark(40%, 67%),
+      light-dark(79, 79),
+      light-dark(25%, 25%),
+      light-dark(40%, 67%)
+    ),
+    0.1
+  );
   border-radius: 8px;
-  color: #6f804d;
+  color: light-dark(
+    hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+    hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+  );
   font-size: 19.2px;
   line-height: 1.5;
   max-width: 70vw;
@@ -20393,7 +21124,11 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-cursor {
-  border: 5px solid #6f804d;
+  border: 5px solid
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    );
   border-radius: 5px;
   height: 1px;
   pointer-events: none;
@@ -20955,7 +21690,16 @@ textarea.webviewer-adblock-lists {
 
 .recent-vaults-list-item-name[contenteditable] {
   background-color: #ffffff26;
-  border-color: #6f804d;
+  border-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   cursor: text;
   font-size: 0.9em;
   padding: 0 4px;
@@ -21422,7 +22166,16 @@ body.is-phone .suggestion-bg {
 }
 
 .mobile-onboarding .logo {
-  color: #6f804d;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
 }
 
 .mobile-onboarding h1 {
@@ -21551,7 +22304,16 @@ body.is-phone .suggestion-bg {
 }
 
 .mobile-onboarding-radio-option.is-selected {
-  border-color: #6f804d;
+  border-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
 }
 
 .mobile-onboarding-radio-option-title {
@@ -21596,7 +22358,16 @@ body.is-phone .suggestion-bg {
 }
 
 .mobile-onboarding-radio-option.is-selected .mobile-onboarding-radio-button {
-  background-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
 }
 
 .mobile-onboarding-radio-option.is-selected
@@ -22381,7 +23152,16 @@ body.is-tablet .workspace-drawer.mod-left .workspace-drawer-inner {
 .workspace-drawer-header-icon {
   --icon-size: 24px;
   --icon-stroke: 1.75px;
-  color: #6f804d;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   margin-inline-start: 12px;
   padding-top: 4px;
 }
@@ -22443,7 +23223,16 @@ body.is-tablet .workspace-drawer.mod-left .workspace-drawer-inner {
 }
 
 .workspace-drawer-active-tab-icon:last-child {
-  color: #6f804d;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
 }
 
 .workspace-drawer-active-tab-chevron {
@@ -22902,7 +23691,16 @@ body.is-tablet .mobile-navbar {
   --icon-size: 12px;
   --icon-stroke: 3px;
   align-items: center;
-  color: #6f804d;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   display: flex;
   height: 100%;
   left: 0;
@@ -23012,7 +23810,16 @@ body.is-tablet .mobile-navbar {
 }
 
 .pull-action.mod-activated {
-  background-color: #6f804d;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   color: light-dark(light-dark(#dadada, #222222), light-dark(#dadada, #222222));
 }
 
@@ -23228,7 +24035,16 @@ body.is-ios .mobile-tab-switcher-inner-scroll {
   align-items: center;
   background-color: #111;
   border-radius: 16px;
-  color: #6f804d;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    ),
+    light-dark(
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%)),
+      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(40%, 67%))
+    )
+  );
   display: flex;
   height: 24px;
   inset-inline-end: 8px;

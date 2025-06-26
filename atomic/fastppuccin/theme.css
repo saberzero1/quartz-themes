@@ -1792,12 +1792,22 @@ body {
   --anp-rainbow-folder-bg-opacity: 1;
   --anp-rainbow-folder-border-opacity: 1;
   --anp-rainbow-folder-collapse-border-custom: #00000044;
+  --anp-speech-bubble-opacity: light-dark(
+    var(--anp-sp-op-dark, 0.9),
+    var(--anp-sp-op-light, 0.5)
+  );
   --anp-table-width-pct: 100%;
   --background-modifier-active: hsla(var(--color-accent-hsl), 0.1);
   --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
   --background-modifier-border: rgb(var(--ctp-surface0));
-  --background-modifier-border-focus: var(--color-base-40);
-  --background-modifier-border-hover: var(--color-base-35);
+  --background-modifier-border-focus: light-dark(
+    rgb(var(--ctp-surface2)),
+    rgb(var(--ctp-overlay0))
+  );
+  --background-modifier-border-hover: light-dark(
+    rgb(var(--ctp-surface1)),
+    rgb(var(--ctp-surface2))
+  );
   --background-modifier-error: rgba(var(--ctp-red), 1);
   --background-modifier-error-hover: rgba(var(--ctp-red), 0.9);
   --background-modifier-error-rgb: var(--ctp-red);
@@ -1807,10 +1817,16 @@ body {
   --background-modifier-success: rgba(var(--ctp-green), 1);
   --background-modifier-success-hover: rgba(var(--ctp-green), 0.9);
   --background-modifier-success-rgb: var(--ctp-green);
-  --background-primary: rgb(var(--ctp-base));
+  --background-primary: light-dark(rgb(var(--ctp-base)), rgb(var(--ctp-base)));
   --background-primary-alt: rgb(var(--ctp-mantle));
-  --background-secondary: rgb(var(--ctp-mantle));
-  --background-secondary-alt: rgb(var(--ctp-crust));
+  --background-secondary: light-dark(
+    rgb(var(--ctp-mantle)),
+    rgb(var(--ctp-mantle))
+  );
+  --background-secondary-alt: light-dark(
+    var(--color-base-30),
+    var(--color-base-05)
+  );
   --bases-embed-border: 1px solid var(--background-modifier-border);
   --bases-embed-border-radius: var(--radius-s);
   --bases-filter-menu-width: 520px;
@@ -1924,34 +1940,147 @@ body {
   --color-accent: rgb(var(--ctp-accent));
   --color-accent-1: rgb(var(--ctp-accent) !important);
   --color-accent-2: rgb(var(--ctp-accent) !important);
-  --color-base-00: rgb(var(--ctp-crust));
-  --color-base-10: rgb(var(--ctp-mantle));
-  --color-base-100: rgb(var(--ctp-text));
-  --color-base-20: rgb(var(--ctp-base));
-  --color-base-25: rgb(var(--ctp-surface0));
-  --color-base-30: rgb(var(--ctp-surface1));
-  --color-base-35: rgb(var(--ctp-surface2));
-  --color-base-40: rgb(var(--ctp-overlay0));
-  --color-base-50: rgb(var(--ctp-overlay1));
-  --color-base-60: rgb(var(--ctp-overlay2));
-  --color-base-70: rgb(var(--ctp-subtext0));
-  --color-blue: rgb(var(--ctp-blue));
+  --color-accent-hsl: light-dark(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l)
+  );
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
   --color-blue-rgb: var(--ctp-blue);
-  --color-cyan: rgb(var(--ctp-sky));
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
   --color-cyan-rgb: var(--ctp-sky);
-  --color-green: rgb(var(--ctp-green));
+  --color-green: light-dark(#44cf6e, #08b94e);
   --color-green-rgb: var(--ctp-green);
-  --color-orange: rgb(var(--ctp-peach));
+  --color-orange: light-dark(#e9973f, #ec7500);
   --color-orange-rgb: var(--ctp-peach);
-  --color-pink: rgb(var(--ctp-pink));
+  --color-pink: light-dark(#fa99cd, #d53984);
   --color-pink-rgb: var(--ctp-pink);
-  --color-purple: rgb(var(--ctp-lavender));
+  --color-purple: light-dark(#a882ff, #7852ee);
   --color-purple-rgb: var(--ctp-lavender);
-  --color-red: rgb(var(--ctp-red));
+  --color-red: light-dark(#fb464c, #e93147);
   --color-red-rgb: var(--ctp-red);
-  --color-yellow: rgb(var(--ctp-yellow));
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --color-yellow-rgb: var(--ctp-yellow);
-  --ctp-accent: var(--ctp-rosewater);
+  --ctp-accent: light-dark(var(--ctp-rosewater), var(--ctp-rosewater));
+  --ctp-base: light-dark(
+    var(--ctp-ext-base, 30, 30, 46),
+    var(--ctp-ext-base, 239, 241, 245)
+  );
+  --ctp-blue: light-dark(
+    var(--ctp-ext-blue, 135, 176, 249),
+    var(--ctp-ext-blue, 42, 110, 245)
+  );
+  --ctp-crust: light-dark(
+    var(--ctp-ext-crust, 17, 17, 27),
+    var(--ctp-ext-crust, 220, 224, 232)
+  );
+  --ctp-flamingo: light-dark(
+    var(--ctp-ext-flamingo, 242, 205, 205),
+    var(--ctp-ext-flamingo, 221, 120, 120)
+  );
+  --ctp-green: light-dark(
+    var(--ctp-ext-green, 166, 227, 161),
+    var(--ctp-ext-green, 64, 160, 43)
+  );
+  --ctp-lavender: light-dark(
+    var(--ctp-ext-lavender, 180, 190, 254),
+    var(--ctp-ext-lavender, 114, 135, 253)
+  );
+  --ctp-mantle: light-dark(
+    var(--ctp-ext-mantle, 24, 24, 37),
+    var(--ctp-ext-mantle, 230, 233, 239)
+  );
+  --ctp-maroon: light-dark(
+    var(--ctp-ext-maroon, 235, 160, 172),
+    var(--ctp-ext-maroon, 230, 69, 83)
+  );
+  --ctp-mauve: light-dark(
+    var(--ctp-ext-mauve, 203, 166, 247),
+    var(--ctp-ext-mauve, 136, 57, 239)
+  );
+  --ctp-overlay0: light-dark(
+    var(--ctp-ext-overlay0, 105, 109, 134),
+    var(--ctp-ext-overlay0, 156, 160, 176)
+  );
+  --ctp-overlay1: light-dark(
+    var(--ctp-ext-overlay1, 123, 129, 157),
+    var(--ctp-ext-overlay1, 140, 143, 161)
+  );
+  --ctp-overlay2: light-dark(
+    var(--ctp-ext-overlay2, 142, 149, 179),
+    var(--ctp-ext-overlay2, 124, 127, 147)
+  );
+  --ctp-peach: light-dark(
+    var(--ctp-ext-peach, 250, 179, 135),
+    var(--ctp-ext-peach, 254, 100, 11)
+  );
+  --ctp-pink: light-dark(
+    var(--ctp-ext-pink, 245, 194, 231),
+    var(--ctp-ext-pink, 236, 131, 208)
+  );
+  --ctp-red: light-dark(
+    var(--ctp-ext-red, 243, 139, 168),
+    var(--ctp-ext-red, 210, 15, 57)
+  );
+  --ctp-rosewater: light-dark(
+    var(--ctp-ext-rosewater, 245, 224, 220),
+    var(--ctp-ext-rosewater, 222, 149, 132)
+  );
+  --ctp-sapphire: light-dark(
+    var(--ctp-ext-sapphire, 116, 199, 236),
+    var(--ctp-ext-sapphire, 32, 159, 181)
+  );
+  --ctp-sky: light-dark(
+    var(--ctp-ext-sky, 137, 220, 235),
+    var(--ctp-ext-sky, 4, 165, 229)
+  );
+  --ctp-subtext0: light-dark(
+    var(--ctp-ext-subtext0, 161, 168, 201),
+    var(--ctp-ext-subtext0, 108, 111, 133)
+  );
+  --ctp-subtext1: light-dark(
+    var(--ctp-ext-subtext1, 179, 188, 223),
+    var(--ctp-ext-subtext1, 92, 95, 119)
+  );
+  --ctp-surface0: light-dark(
+    var(--ctp-ext-surface0, 49, 50, 68),
+    var(--ctp-ext-surface0, 204, 208, 218)
+  );
+  --ctp-surface1: light-dark(
+    var(--ctp-ext-surface1, 67, 70, 90),
+    var(--ctp-ext-surface1, 188, 192, 204)
+  );
+  --ctp-surface2: light-dark(
+    var(--ctp-ext-surface2, 86, 89, 112),
+    var(--ctp-ext-surface2, 172, 176, 190)
+  );
+  --ctp-teal: light-dark(
+    var(--ctp-ext-teal, 148, 226, 213),
+    var(--ctp-ext-teal, 23, 146, 153)
+  );
+  --ctp-text: light-dark(
+    var(--ctp-ext-text, 198, 208, 245),
+    var(--ctp-ext-text, 76, 79, 105)
+  );
+  --ctp-yellow: light-dark(
+    var(--ctp-ext-yellow, 249, 226, 175),
+    var(--ctp-ext-yellow, 228, 147, 32)
+  );
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -1965,7 +2094,10 @@ body {
   --divider-width-hover: 3px;
   --drag-ghost-background: rgb(var(--ctp-text));
   --drag-ghost-text-color: rgb(var(--ctp-crust));
-  --dropdown-background: var(--interactive-normal);
+  --dropdown-background: light-dark(
+    var(--interactive-normal),
+    var(--interactive-normal)
+  );
   --dropdown-background-blend-mode: hard-light;
   --dropdown-background-hover: var(--interactive-hover);
   --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -2025,7 +2157,8 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: var(--font-print);
+  --font-text:
+    var(--font-text-override), var(--font-text-theme), var(--font-default);
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -2156,7 +2289,7 @@ body {
     0 2px 3px 0 rgba(var(--ctp-crust), 0.3),
     0 1px 1.5px 0 rgba(var(--ctp-crust), 0.2),
     0 1px 2px 0 rgba(var(--ctp-crust), 0.4), 0 0 0 0 transparent;
-  --interactive-accent: var(--color-accent);
+  --interactive-accent: light-dark(var(--color-accent), var(--color-accent));
   --interactive-accent-hover: var(--color-accent-2);
   --interactive-accent-hsl: var(--color-accent-hsl);
   --interactive-hover: rgb(var(--ctp-surface1));
@@ -2277,7 +2410,10 @@ body {
   --nav-heading-color-hover: var(--text-normal);
   --nav-heading-weight: var(--font-medium);
   --nav-heading-weight-hover: var(--font-medium);
-  --nav-indentation-guide-color: var(--background-primary);
+  --nav-indentation-guide-color: light-dark(
+    var(--background-primary),
+    var(--background-primary)
+  );
   --nav-indentation-guide-width: var(--indentation-guide-width);
   --nav-item-background-active: var(--background-modifier-hover);
   --nav-item-background-hover: var(--background-modifier-hover);
@@ -2495,17 +2631,20 @@ body {
   --tag-radius: 2em;
   --tag-size: var(--font-smaller);
   --tag-weight: inherit;
-  --text-accent: rgb(var(--ctp-accent));
-  --text-accent-hover: rgb(var(--ctp-accent));
+  --text-accent: light-dark(rgb(var(--ctp-accent)), rgb(var(--ctp-accent)));
+  --text-accent-hover: light-dark(
+    rgb(var(--ctp-accent)),
+    rgb(var(--ctp-accent))
+  );
   --text-error: rgb(var(--ctp-red));
   --text-error-hover: rgba(var(--ctp-red), 0.8);
   --text-faint: rgb(var(--ctp-subtext0));
   --text-highlight-bg: rgba(var(--ctp-yellow), 0.2);
   --text-highlight-bg-active: rgba(var(--ctp-yellow), 0.4);
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: rgb(var(--ctp-overlay2));
+  --text-muted: light-dark(rgb(var(--ctp-overlay2)), rgb(var(--ctp-overlay2)));
   --text-muted-rgb: var(--ctp-overlay2);
-  --text-normal: rgb(var(--ctp-text));
+  --text-normal: light-dark(rgb(var(--ctp-text)), rgb(var(--ctp-text)));
   --text-on-accent: rgb(var(--ctp-base));
   --text-on-accent-inverted: black;
   --text-selection: hsla(var(--color-accent-hsl), 0.2);

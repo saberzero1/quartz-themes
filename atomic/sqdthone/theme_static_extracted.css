@@ -17,92 +17,93 @@
     hsl(253, 92.4%, 85.14%),
     hsl(255, 89.76%, 75.9%)
   );
-  --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
-  --color-alternate: light-dark(331, 64%, 52%, 331, 64%, 52%);
-  --color-base-0: light-dark(300, 6%, 10%, 15, 20%, 96%);
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
+  --color-alternate: light-dark(hsl(331, 64%, 52%), hsl(331, 64%, 52%));
+  --color-base-0: light-dark(hsl(300, 6%, 10%), hsl(15, 20%, 96%));
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-1: light-dark(300, 6%, 14%, 15, 20%, 92%);
+  --color-base-1: light-dark(hsl(300, 6%, 14%), hsl(15, 20%, 92%));
   --color-base-10: light-dark(#242424, #fafafa);
   --color-base-100: light-dark(#dadada, #222222);
-  --color-base-2: light-dark(300, 6%, 18%, 15, 20%, 88%);
+  --color-base-2: light-dark(hsl(300, 6%, 18%), hsl(15, 20%, 88%));
   --color-base-20: light-dark(#262626, #f6f6f6);
   --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-3: light-dark(300, 6%, 22%, 15, 20%, 84%);
+  --color-base-3: light-dark(hsl(300, 6%, 22%), hsl(15, 20%, 84%));
   --color-base-30: light-dark(#363636, #e0e0e0);
   --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-4: light-dark(300, 6%, 26%, 15, 20%, 80%);
+  --color-base-4: light-dark(hsl(300, 6%, 26%), hsl(15, 20%, 80%));
   --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-5: light-dark(300, 6%, 30%, 15, 20%, 76%);
+  --color-base-5: light-dark(hsl(300, 6%, 30%), hsl(15, 20%, 76%));
   --color-base-50: light-dark(#666666, #ababab);
   --color-base-60: light-dark(#999999, #707070);
   --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-black: light-dark(300, 6%, 22%, 300, 6%, 18%);
+  --color-black: light-dark(hsl(300, 6%, 22%), hsl(300, 6%, 18%));
   --color-blue: light-dark(#027aff, #086ddd);
-  --color-caution: light-dark(45, 100%, 35%, 45, 100%, 35%);
-  --color-checklist-empty: light-dark(1, 71%, 52%, 1, 71%, 52%);
-  --color-checklist-empty-border: light-dark(1, 71%, 52%, 1, 71%, 52%);
-  --color-checklist-full: light-dark(68, 100%, 30%, 68, 100%, 30%);
-  --color-checklist-full-border: light-dark(68, 100%, 30%, 68, 100%, 30%);
-  --color-code-comment: light-dark(180, 7%, 60%, 180, 7%, 60%);
-  --color-code-function: light-dark(45, 100%, 35%, 45, 100%, 35%);
-  --color-code-important: light-dark(18, 80%, 44%, 18, 80%, 44%);
-  --color-code-keyword: light-dark(331, 64%, 52%, 331, 64%, 52%);
-  --color-code-normal: light-dark(196, 13%, 45%, 196, 13%, 45%);
-  --color-code-property: light-dark(205, 69%, 49%, 205, 69%, 49%);
-  --color-code-punctuation: light-dark(196, 13%, 45%, 196, 13%, 45%);
-  --color-code-string: light-dark(68, 100%, 30%, 68, 100%, 30%);
-  --color-code-tag: light-dark(1, 71%, 52%, 1, 71%, 52%);
-  --color-code-value: light-dark(237, 43%, 60%, 237, 43%, 60%);
-  --color-confirmed: light-dark(68, 100%, 30%, 68, 100%, 30%);
-  --color-content: light-dark(175, 59%, 40%, 175, 59%, 40%);
+  --color-caution: light-dark(hsl(45, 100%, 35%), hsl(45, 100%, 35%));
+  --color-checklist-empty: light-dark(hsl(1, 71%, 52%), hsl(1, 71%, 52%));
+  --color-checklist-empty-border: light-dark(
+    hsl(1, 71%, 52%),
+    hsl(1, 71%, 52%)
+  );
+  --color-checklist-full: light-dark(hsl(68, 100%, 30%), hsl(68, 100%, 30%));
+  --color-checklist-full-border: light-dark(
+    hsl(68, 100%, 30%),
+    hsl(68, 100%, 30%)
+  );
+  --color-code-comment: light-dark(hsl(180, 7%, 60%), hsl(180, 7%, 60%));
+  --color-code-function: light-dark(hsl(45, 100%, 35%), hsl(45, 100%, 35%));
+  --color-code-important: light-dark(hsl(18, 80%, 44%), hsl(18, 80%, 44%));
+  --color-code-keyword: light-dark(hsl(331, 64%, 52%), hsl(331, 64%, 52%));
+  --color-code-normal: light-dark(hsl(196, 13%, 45%), hsl(196, 13%, 45%));
+  --color-code-property: light-dark(hsl(205, 69%, 49%), hsl(205, 69%, 49%));
+  --color-code-punctuation: light-dark(hsl(196, 13%, 45%), hsl(196, 13%, 45%));
+  --color-code-string: light-dark(hsl(68, 100%, 30%), hsl(68, 100%, 30%));
+  --color-code-tag: light-dark(hsl(1, 71%, 52%), hsl(1, 71%, 52%));
+  --color-code-value: light-dark(hsl(237, 43%, 60%), hsl(237, 43%, 60%));
+  --color-confirmed: light-dark(hsl(68, 100%, 30%), hsl(68, 100%, 30%));
+  --color-content: light-dark(hsl(175, 59%, 40%), hsl(175, 59%, 40%));
   --color-cyan: light-dark(#53dfdd, #00bfbc);
   --color-green: light-dark(#44cf6e, #08b94e);
-  --color-horizontal-rule: light-dark(331, 64%, 52%, 331, 64%, 52%);
-  --color-hovered: light-dark(237, 43%, 60%, 237, 43%, 60%);
-  --color-interactable: light-dark(205, 69%, 49%, 205, 69%, 49%);
-  --color-list-bullets: light-dark(331, 64%, 52%, 331, 64%, 52%);
+  --color-horizontal-rule: light-dark(hsl(331, 64%, 52%), hsl(331, 64%, 52%));
+  --color-hovered: light-dark(hsl(237, 43%, 60%), hsl(237, 43%, 60%));
+  --color-interactable: light-dark(hsl(205, 69%, 49%), hsl(205, 69%, 49%));
+  --color-list-bullets: light-dark(hsl(331, 64%, 52%), hsl(331, 64%, 52%));
   --color-list-indentation-indicator-hover: light-dark(
-    331,
-    64%,
-    52%,
-    331,
-    64%,
-    52%
+    hsl(331, 64%, 52%),
+    hsl(331, 64%, 52%)
   );
   --color-orange: light-dark(#e9973f, #ec7500);
   --color-pink: light-dark(#fa99cd, #d53984);
   --color-purple: light-dark(#a882ff, #7852ee);
   --color-red: light-dark(#fb464c, #e93147);
-  --color-selected: light-dark(18, 80%, 44%, 18, 80%, 44%);
-  --color-stop: light-dark(1, 71%, 52%, 1, 71%, 52%);
-  --color-tag: light-dark(45, 100%, 35%, 45, 100%, 35%);
-  --color-tag-hover: light-dark(45, 50%, 44%, 45, 50%, 44%);
-  --color-teal: light-dark(160, 50%, 46%, 160, 50%, 38%);
-  --color-text-bold: light-dark(183, 40%, 60%, 183, 40%, 60%);
-  --color-text-faint: light-dark(168, 50%, 54%, 300, 6%, 30%);
-  --color-text-h1: light-dark(1, 71%, 52%, 226, 40%, 44%);
-  --color-text-h2: light-dark(18, 80%, 44%, 226, 40%, 48%);
-  --color-text-h3: light-dark(226, 40%, 44%, 226, 40%, 52%);
-  --color-text-h4: light-dark(226, 40%, 48%, 226, 40%, 56%);
-  --color-text-h5: light-dark(226, 40%, 52%, 226, 40%, 60%);
-  --color-text-h6: light-dark(226, 40%, 56%, 226, 40%, 64%);
-  --color-text-highlight: light-dark(60, 20%, 95%, 60, 20%, 95%);
+  --color-selected: light-dark(hsl(18, 80%, 44%), hsl(18, 80%, 44%));
+  --color-stop: light-dark(hsl(1, 71%, 52%), hsl(1, 71%, 52%));
+  --color-tag: light-dark(hsl(45, 100%, 35%), hsl(45, 100%, 35%));
+  --color-tag-hover: light-dark(hsl(45, 50%, 44%), hsl(45, 50%, 44%));
+  --color-teal: light-dark(hsl(160, 50%, 46%), hsl(160, 50%, 38%));
+  --color-text-bold: light-dark(hsl(183, 40%, 60%), hsl(183, 40%, 60%));
+  --color-text-faint: light-dark(hsl(168, 50%, 54%), hsl(300, 6%, 30%));
+  --color-text-h1: light-dark(hsl(1, 71%, 52%), hsl(226, 40%, 44%));
+  --color-text-h2: light-dark(hsl(18, 80%, 44%), hsl(226, 40%, 48%));
+  --color-text-h3: light-dark(hsl(226, 40%, 44%), hsl(226, 40%, 52%));
+  --color-text-h4: light-dark(hsl(226, 40%, 48%), hsl(226, 40%, 56%));
+  --color-text-h5: light-dark(hsl(226, 40%, 52%), hsl(226, 40%, 60%));
+  --color-text-h6: light-dark(hsl(226, 40%, 56%), hsl(226, 40%, 64%));
+  --color-text-highlight: light-dark(hsl(60, 20%, 95%), hsl(60, 20%, 95%));
   --color-text-highlight-active-background: light-dark(
-    18,
-    80%,
-    44%,
-    18,
-    80%,
-    44%
+    hsl(18, 80%, 44%),
+    hsl(18, 80%, 44%)
   );
-  --color-text-highlight-background: light-dark(45, 100%, 35%, 45, 100%, 35%);
-  --color-text-italic: light-dark(68, 100%, 30%, 68, 100%, 30%);
-  --color-text-muted: light-dark(160, 50%, 46%, 300, 6%, 22%);
-  --color-text-normal: light-dark(160, 50%, 38%, 300, 6%, 14%);
-  --color-text-strikethrough: light-dark(1, 71%, 52%, 1, 71%, 52%);
-  --color-text-title: light-dark(331, 64%, 52%, 183, 40%, 60%);
-  --color-white: light-dark(15, 20%, 84%, 15, 20%, 88%);
+  --color-text-highlight-background: light-dark(
+    hsl(45, 100%, 35%),
+    hsl(45, 100%, 35%)
+  );
+  --color-text-italic: light-dark(hsl(68, 100%, 30%), hsl(68, 100%, 30%));
+  --color-text-muted: light-dark(hsl(160, 50%, 46%), hsl(300, 6%, 22%));
+  --color-text-normal: light-dark(hsl(160, 50%, 38%), hsl(300, 6%, 14%));
+  --color-text-strikethrough: light-dark(hsl(1, 71%, 52%), hsl(1, 71%, 52%));
+  --color-text-title: light-dark(hsl(331, 64%, 52%), hsl(183, 40%, 60%));
+  --color-white: light-dark(hsl(15, 20%, 84%), hsl(15, 20%, 88%));
   --color-yellow: light-dark(#e0de71, #e0ac00);
   --crimson0: 346, 50%, 40%;
   --crimson1: 346, 50%, 36%;
@@ -257,9 +258,9 @@ body {
   --background-modifier-message: rgba(0, 0, 0, 0.9);
   --background-modifier-success: 68, 100%, 30%;
   --background-modifier-success-rgb: 68, 207, 110;
-  --background-primary: hsl(46, 56%, 91%);
-  --background-primary-alt: hsl(44, 87%, 94%);
-  --background-secondary: hsl(46, 42%, 88%);
+  --background-primary: light-dark(hsl(46, 56%, 91%), hsl(46, 56%, 91%));
+  --background-primary-alt: light-dark(hsl(46, 42%, 88%), hsl(46, 42%, 88%));
+  --background-secondary: light-dark(hsl(46, 42%, 88%), hsl(46, 42%, 88%));
   --background-secondary-alt: hsl(46, 56%, 91%);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
@@ -369,6 +370,103 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: hsl(180, 7%, 60%);
   --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+  --color-accent: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
+  --color-accent-1: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(257, 88.88%, 70.95%)
+  );
+  --color-accent-2: light-dark(
+    hsl(253, 92.4%, 85.14%),
+    hsl(255, 89.76%, 75.9%)
+  );
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
+  --color-alternate: light-dark(hsl(331, 64%, 52%), hsl(331, 64%, 52%));
+  --color-base-0: light-dark(hsl(300, 6%, 10%), hsl(15, 20%, 96%));
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-1: light-dark(hsl(300, 6%, 14%), hsl(15, 20%, 92%));
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-2: light-dark(hsl(300, 6%, 18%), hsl(15, 20%, 88%));
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-3: light-dark(hsl(300, 6%, 22%), hsl(15, 20%, 84%));
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-4: light-dark(hsl(300, 6%, 26%), hsl(15, 20%, 80%));
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-5: light-dark(hsl(300, 6%, 30%), hsl(15, 20%, 76%));
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-black: light-dark(hsl(300, 6%, 22%), hsl(300, 6%, 18%));
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-caution: light-dark(hsl(45, 100%, 35%), hsl(45, 100%, 35%));
+  --color-checklist-empty: light-dark(hsl(1, 71%, 52%), hsl(1, 71%, 52%));
+  --color-checklist-empty-border: light-dark(
+    hsl(1, 71%, 52%),
+    hsl(1, 71%, 52%)
+  );
+  --color-checklist-full: light-dark(hsl(68, 100%, 30%), hsl(68, 100%, 30%));
+  --color-checklist-full-border: light-dark(
+    hsl(68, 100%, 30%),
+    hsl(68, 100%, 30%)
+  );
+  --color-code-comment: light-dark(hsl(180, 7%, 60%), hsl(180, 7%, 60%));
+  --color-code-function: light-dark(hsl(45, 100%, 35%), hsl(45, 100%, 35%));
+  --color-code-important: light-dark(hsl(18, 80%, 44%), hsl(18, 80%, 44%));
+  --color-code-keyword: light-dark(hsl(331, 64%, 52%), hsl(331, 64%, 52%));
+  --color-code-normal: light-dark(hsl(196, 13%, 45%), hsl(196, 13%, 45%));
+  --color-code-property: light-dark(hsl(205, 69%, 49%), hsl(205, 69%, 49%));
+  --color-code-punctuation: light-dark(hsl(196, 13%, 45%), hsl(196, 13%, 45%));
+  --color-code-string: light-dark(hsl(68, 100%, 30%), hsl(68, 100%, 30%));
+  --color-code-tag: light-dark(hsl(1, 71%, 52%), hsl(1, 71%, 52%));
+  --color-code-value: light-dark(hsl(237, 43%, 60%), hsl(237, 43%, 60%));
+  --color-confirmed: light-dark(hsl(68, 100%, 30%), hsl(68, 100%, 30%));
+  --color-content: light-dark(hsl(175, 59%, 40%), hsl(175, 59%, 40%));
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-horizontal-rule: light-dark(hsl(331, 64%, 52%), hsl(331, 64%, 52%));
+  --color-hovered: light-dark(hsl(237, 43%, 60%), hsl(237, 43%, 60%));
+  --color-interactable: light-dark(hsl(205, 69%, 49%), hsl(205, 69%, 49%));
+  --color-list-bullets: light-dark(hsl(331, 64%, 52%), hsl(331, 64%, 52%));
+  --color-list-indentation-indicator-hover: light-dark(
+    hsl(331, 64%, 52%),
+    hsl(331, 64%, 52%)
+  );
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-selected: light-dark(hsl(18, 80%, 44%), hsl(18, 80%, 44%));
+  --color-stop: light-dark(hsl(1, 71%, 52%), hsl(1, 71%, 52%));
+  --color-tag: light-dark(hsl(45, 100%, 35%), hsl(45, 100%, 35%));
+  --color-tag-hover: light-dark(hsl(45, 50%, 44%), hsl(45, 50%, 44%));
+  --color-teal: light-dark(hsl(160, 50%, 46%), hsl(160, 50%, 38%));
+  --color-text-bold: light-dark(hsl(183, 40%, 60%), hsl(183, 40%, 60%));
+  --color-text-faint: light-dark(hsl(168, 50%, 54%), hsl(300, 6%, 30%));
+  --color-text-h1: light-dark(hsl(1, 71%, 52%), hsl(226, 40%, 44%));
+  --color-text-h2: light-dark(hsl(18, 80%, 44%), hsl(226, 40%, 48%));
+  --color-text-h3: light-dark(hsl(226, 40%, 44%), hsl(226, 40%, 52%));
+  --color-text-h4: light-dark(hsl(226, 40%, 48%), hsl(226, 40%, 56%));
+  --color-text-h5: light-dark(hsl(226, 40%, 52%), hsl(226, 40%, 60%));
+  --color-text-h6: light-dark(hsl(226, 40%, 56%), hsl(226, 40%, 64%));
+  --color-text-highlight: light-dark(hsl(60, 20%, 95%), hsl(60, 20%, 95%));
+  --color-text-highlight-active-background: light-dark(
+    hsl(18, 80%, 44%),
+    hsl(18, 80%, 44%)
+  );
+  --color-text-highlight-background: light-dark(
+    hsl(45, 100%, 35%),
+    hsl(45, 100%, 35%)
+  );
+  --color-text-italic: light-dark(hsl(68, 100%, 30%), hsl(68, 100%, 30%));
+  --color-text-muted: light-dark(hsl(160, 50%, 46%), hsl(300, 6%, 22%));
+  --color-text-normal: light-dark(hsl(160, 50%, 38%), hsl(300, 6%, 14%));
+  --color-text-strikethrough: light-dark(hsl(1, 71%, 52%), hsl(1, 71%, 52%));
+  --color-text-title: light-dark(hsl(331, 64%, 52%), hsl(183, 40%, 60%));
+  --color-white: light-dark(hsl(15, 20%, 84%), hsl(15, 20%, 88%));
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -432,7 +530,10 @@ body {
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "??", "??", "??", "Arial";
+  --font-mermaid:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-monospace:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -450,7 +551,10 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "??", "??", "??", "Arial";
+  --font-text:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -843,10 +947,13 @@ body {
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
   --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
   --tab-text-color: hsl(180, 7%, 60%);
-  --tab-text-color-active: hsl(196, 13%, 45%);
+  --tab-text-color-active: light-dark(hsl(237, 43%, 60%), hsl(237, 43%, 60%));
   --tab-text-color-focused: hsl(196, 13%, 45%);
   --tab-text-color-focused-active: hsl(196, 13%, 45%);
-  --tab-text-color-focused-active-current: hsl(194, 14%, 40%);
+  --tab-text-color-focused-active-current: light-dark(
+    hsl(18, 80%, 44%),
+    hsl(18, 80%, 44%)
+  );
   --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
   --tab-width: 200px;
   --table-add-button-background: transparent;
@@ -911,11 +1018,14 @@ body {
   --text-normal: hsl(194, 14%, 40%);
   --text-on-accent: white;
   --text-on-accent-inverted: black;
-  --text-selection: hsla(258, 88%, 66%, 0.2);
+  --text-selection: light-dark(hsl(60, 20%, 95%), hsl(45, 100%, 35%));
   --text-success: 68, 100%, 30%;
   --text-warning: 18, 80%, 44%;
-  --titlebar-background: hsl(46, 56%, 91%);
-  --titlebar-background-focused: hsl(46, 42%, 88%);
+  --titlebar-background: light-dark(hsl(180, 7%, 60%), hsl(180, 7%, 60%));
+  --titlebar-background-focused: light-dark(
+    hsl(46, 42%, 88%),
+    hsl(46, 42%, 88%)
+  );
   --titlebar-border-color: transparent;
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;

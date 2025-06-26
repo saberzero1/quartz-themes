@@ -1721,9 +1721,14 @@ body {
   --background-modifier-message: rgba(0, 0, 0, 0.9);
   --background-modifier-success: var(--color-green);
   --background-modifier-success-rgb: var(--color-green-rgb);
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
+  --background-primary: light-dark(var(--black), var(--grey-light));
+  --background-primary-alt: light-dark(var(--black-mid), var(--grey-mid));
+  --background-secondary: light-dark(var(--black-mid), var(--grey-mid));
+  --background-secondary-alt: light-dark(
+    var(--color-base-30),
+    var(--color-base-05)
+  );
+  --bar-color: light-dark(var(--green-darker), var(--green-mid-mid));
   --bases-embed-border: 1px solid var(--background-modifier-border);
   --bases-embed-border-radius: var(--radius-s);
   --bases-filter-menu-width: 520px;
@@ -1761,7 +1766,7 @@ body {
   --blockquote-border-thickness: 2px;
   --blockquote-color: inherit;
   --blockquote-font-style: normal;
-  --bold-color: inherit;
+  --bold-color: light-dark(var(--green-forest), var(--green-forest));
   --bold-modifier: 200;
   --bold-weight: calc(var(--font-weight) + var(--bold-modifier));
   --border-width: 1px;
@@ -1811,35 +1816,99 @@ body {
   --checkbox-marker-color: var(--background-primary);
   --checkbox-radius: var(--radius-s);
   --checkbox-size: var(--font-text-size);
-  --checklist-done-color: var(--text-muted);
+  --checklist-done-color: light-dark(var(--grey-dark), var(--grey-dark));
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: var(--radius-s);
   --code-background: var(--background-primary-alt);
   --code-border-color: var(--background-modifier-border);
   --code-border-width: 0px;
+  --code-builtin-color: light-dark(var(--green-bright), var(--green-forest));
   --code-comment: var(--text-faint);
+  --code-comment-color: light-dark(var(--green-dark), var(--grey-dark));
   --code-function: var(--color-yellow);
+  --code-function-color: light-dark(var(--green-forest), var(--green-forest));
   --code-important: var(--color-orange);
   --code-keyword: var(--color-pink);
   --code-normal: var(--text-normal);
   --code-operator: var(--color-red);
+  --code-operator-color: light-dark(var(--green-bright), var(--green-forest));
   --code-property: var(--color-cyan);
   --code-punctuation: var(--text-muted);
   --code-radius: var(--radius-s);
   --code-size: var(--font-smaller);
   --code-string: var(--color-green);
+  --code-string-color: light-dark(var(--green-forest), var(--grey-dark));
   --code-tag: var(--color-red);
   --code-value: var(--color-purple);
+  --code-variable-color: light-dark(var(--white), var(--black-light-light));
   --code-white-space: pre-wrap;
+  --codeblock-background: light-dark(var(--black-light), var(--grey));
+  --codeblock-color: light-dark(var(--grey-mid), var(--black-light));
   --collapse-icon-color: var(--text-faint);
   --collapse-icon-color-collapsed: var(--text-accent);
+  --color-accent: light-dark(
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l))
+  );
+  --color-accent-1: light-dark(
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 1),
+      calc(var(--accent-s) * 1.01),
+      calc(var(--accent-l) * 1.075)
+    )
+  );
+  --color-accent-2: light-dark(
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    )
+  );
+  --color-accent-hsl: light-dark(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l)
+  );
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
   --dialog-max-width: 80vw;
   --dialog-width: 560px;
   --direction: 1;
-  --divider-color: var(--background-modifier-border);
+  --divider-color: light-dark(var(--green-darker), var(--green-mid-mid));
   --divider-color-hover: var(--interactive-accent);
   --divider-vertical-height: calc(100% - var(--header-height));
   --divider-width: 1px;
@@ -1870,10 +1939,12 @@ body {
   --file-header-font-size: var(--font-ui-small);
   --file-header-font-weight: 400;
   --file-header-justify: center;
-  --file-line-width: 700px;
+  --file-line-width: light-dark(var(--line-width), var(--line-width));
   --file-margins: var(--size-4-8);
+  --file-title-color: light-dark(var(--grey), var(--black-light-light));
   --flair-background: var(--interactive-normal);
   --flair-color: var(--text-normal);
+  --folder-title-color: light-dark(var(--grey), var(--black-light-light));
   --font-black: 900;
   --font-bold: 700;
   --font-default:
@@ -1908,7 +1979,8 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: var(--font-print);
+  --font-text:
+    var(--font-text-override), var(--font-text-theme), var(--font-default);
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -1940,53 +2012,56 @@ body {
   --graph-node-tag: var(--color-green);
   --graph-node-unresolved: var(--text-faint);
   --graph-text: var(--text-normal);
-  --h1-color: inherit;
+  --h1-color: light-dark(var(--green-forest), var(--green-forest));
   --h1-font: inherit;
   --h1-line-height: 1.2;
   --h1-size: 1.802em;
   --h1-style: normal;
   --h1-variant: normal;
   --h1-weight: 700;
-  --h2-color: inherit;
+  --h2-color: light-dark(var(--green-forest), var(--green-forest));
   --h2-font: inherit;
   --h2-line-height: 1.2;
   --h2-size: 1.602em;
   --h2-style: normal;
   --h2-variant: normal;
   --h2-weight: 600;
-  --h3-color: inherit;
+  --h3-color: light-dark(var(--green-forest), var(--green-forest));
   --h3-font: inherit;
   --h3-line-height: 1.3;
   --h3-size: 1.424em;
   --h3-style: normal;
   --h3-variant: normal;
   --h3-weight: 600;
-  --h4-color: inherit;
+  --h4-color: light-dark(var(--green-forest), var(--green-forest));
   --h4-font: inherit;
   --h4-line-height: 1.4;
   --h4-size: 1.266em;
   --h4-style: normal;
   --h4-variant: normal;
   --h4-weight: 600;
-  --h5-color: inherit;
+  --h5-color: light-dark(var(--green-forest), var(--green-forest));
   --h5-font: inherit;
   --h5-line-height: var(--line-height-normal);
   --h5-size: 1.125em;
   --h5-style: normal;
   --h5-variant: normal;
   --h5-weight: 600;
-  --h6-color: inherit;
+  --h6-color: light-dark(var(--green-forest), var(--green-forest));
   --h6-font: inherit;
   --h6-line-height: var(--line-height-normal);
   --h6-size: 1em;
   --h6-style: normal;
   --h6-variant: normal;
   --h6-weight: 600;
+  --hashtag-background: light-dark(var(--green-darker), var(--grey));
+  --hashtag-color: light-dark(var(--green-bright), var(--green-forest));
   --header-height: 40px;
   --heading-formatting: var(--text-faint);
   --heading-spacing: calc(var(--p-spacing) * 2.5);
+  --highlight-color: light-dark(var(--green-forest), var(--green-mid));
   --hr-color: var(--background-modifier-border);
-  --hr-thickness: 2px;
+  --hr-thickness: light-dark(var(--hr-height), var(--hr-height));
   --icon-color: var(--text-muted);
   --icon-color-active: var(--text-accent);
   --icon-color-focused: var(--text-normal);
@@ -2015,6 +2090,8 @@ body {
   --indentation-guide-source-indent: 0.25em;
   --indentation-guide-width: 1px;
   --indentation-guide-width-active: 1px;
+  --inline-code-background: light-dark(#131a16, var(--grey));
+  --inline-code-color: light-dark(var(--green-bright), var(--green-forest));
   --inline-title-color: var(--h1-color);
   --inline-title-font: var(--h1-font);
   --inline-title-line-height: var(--h1-line-height);
@@ -2029,7 +2106,7 @@ body {
   --input-height: 30px;
   --input-placeholder-color: var(--text-faint);
   --input-radius: 5px;
-  --interactive-accent: var(--color-accent-1);
+  --interactive-accent: light-dark(var(--green-bright), var(--green-bright));
   --interactive-accent-hover: var(--color-accent-2);
   --interactive-accent-hsl: var(--color-accent-hsl);
   --interactive-hover: var(--color-base-10);
@@ -2048,7 +2125,7 @@ body {
   --layer-tooltip: 70;
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;
-  --link-color: var(--text-accent);
+  --link-color: light-dark(var(--green-bright), var(--green-forest));
   --link-color-hover: var(--text-accent-hover);
   --link-decoration: underline;
   --link-decoration-hover: underline;
@@ -2064,6 +2141,7 @@ body {
   --link-unresolved-filter: none;
   --link-unresolved-opacity: 0.7;
   --link-weight: var(--font-weight);
+  --links-color: light-dark(var(--green-bright), var(--green-forest));
   --list-bullet-border: none;
   --list-bullet-end-padding: 1.3rem;
   --list-bullet-radius: 50%;
@@ -2209,6 +2287,7 @@ body {
   --prompt-max-height: 70vh;
   --prompt-max-width: 80vw;
   --prompt-width: 700px;
+  --quote-background: light-dark(var(--black-light), var(--grey));
   --radius-l: 12px;
   --radius-m: 8px;
   --radius-s: 4px;
@@ -2275,11 +2354,11 @@ body {
   --tab-background-active: var(--background-primary);
   --tab-container-background: var(--background-secondary);
   --tab-curve: 6px;
-  --tab-divider-color: var(--background-modifier-border-hover);
+  --tab-divider-color: light-dark(var(--green-darker), var(--green-mid-mid));
   --tab-font-size: var(--font-ui-small);
   --tab-font-weight: inherit;
   --tab-max-width: 320px;
-  --tab-outline-color: var(--divider-color);
+  --tab-outline-color: light-dark(var(--green-darker), var(--green-mid-mid));
   --tab-outline-width: 1px;
   --tab-radius: var(--radius-s);
   --tab-radius-active: 6px 6px 0 0;
@@ -2355,14 +2434,14 @@ body {
   --tag-radius: 2em;
   --tag-size: var(--font-smaller);
   --tag-weight: inherit;
-  --text-accent: var(--color-accent);
+  --text-accent: light-dark(var(--green-bright), var(--green-bright));
   --text-accent-hover: var(--color-accent-2);
   --text-error: var(--color-red);
   --text-faint: var(--color-base-50);
   --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: var(--color-base-70);
-  --text-normal: var(--color-base-100);
+  --text-normal: light-dark(var(--white), var(--black-light-light));
   --text-on-accent: white;
   --text-on-accent-inverted: black;
   --text-selection: hsla(var(--color-accent-hsl), 0.2);
@@ -2387,6 +2466,7 @@ body {
   --toggle-thumb-radius: 18px;
   --toggle-thumb-width: 18px;
   --toggle-width: 40px;
+  --underline-line-color: light-dark(var(--green-bright), var(--green-bright));
   --vault-profile-actions-display: flex;
   --vault-profile-color: var(--text-normal);
   --vault-profile-color-hover: var(--vault-profile-color);

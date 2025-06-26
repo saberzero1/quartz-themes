@@ -27,6 +27,7 @@ import {
   replaceInFile,
   applyRuleToString,
   generateFundingLinks,
+  cleanRulesAfterRun,
 } from "./util/util.mjs";
 import {
   extractStyleSettings,
@@ -35,6 +36,7 @@ import {
 } from "./util/postcss-style-settings.mjs";
 import { themes, staticMode, themeToTest, testMode } from "./config.mjs";
 import { prune } from "./util/prune-unused.mjs";
+import colors from "./util/color-convert.mjs";
 import {
   writeIndex,
   cleanCSS,
@@ -503,7 +505,7 @@ manifestCollection.forEach((manifest) => {
     const staticExtractResult = extractCSS(cssStaticString);
     writePrettier(staticExctractedFile, staticExtractResult, "utf8");
   }
-  // TODO: Generate extracted version of the static theme CSS
+
   const useExtendedSyntax = staticMode
     ? getValueFromDictionary(manifest, "use_extended_syntax")
       ? "theme_static"
@@ -517,41 +519,51 @@ manifestCollection.forEach((manifest) => {
     "utf8",
   );
   writeIndex(themeName, themeCSS);
+  const partialIndex = fs.readFileSync(
+    `./themes/${getTheme(manifest)}/_index.scss`,
+    "utf8",
+  );
+  const partialRoot = partialIndex.match(/^:root\s*{.*?^}$/gms);
+  const variableInRoot = [];
+  if (partialRoot) {
+    const customPropertyRegex = /(--[\w-]+)\s*:\s*([^;}]+)/g;
+    // Push all custom properties in the :root to the variableInRoot array
+    let match;
+    while ((match = customPropertyRegex.exec(partialRoot[0]))) {
+      variableInRoot.push({ name: match[1], value: match[2].trim() });
+    }
+  }
   // _dark.scss and _light.scss
   const darkValue = getRuleDeclarations(themeCSS, ".theme-dark");
   const darkRules = getAllDarkThemeRules(themeCSS).join("\n");
   const lightValue = getRuleDeclarations(themeCSS, ".theme-light");
   const lightRules = getAllLightThemeRules(themeCSS).join("\n");
   if (isDarkTheme(getValueFromDictionary(manifest, "name"))) {
-    replaceInFile(
-      `./themes/${themeName}/_dark.scss`,
-      `//%%DARK%%`,
-      `${darkValue}\n${darkRules}`,
-    );
-    const darkInject = fs.readFileSync(
-      `./themes/${themeName}/_dark.scss`,
-      "utf8",
-    );
-    replaceInFile(
-      `./themes/${themeName}/_index.scss`,
-      `//%%DARK%%`,
-      darkInject,
-    );
+    let darkString = `${darkValue}\n${darkRules}`;
+    // Remove all dark theme variable declarations if they exist in the `:root`
+    variableInRoot.forEach((variable) => {
+      darkString = darkString.replaceAll(
+        new RegExp(`\s*${variable.name}\s*:\s*[^;]+;`, "gms"),
+        "",
+      );
+    });
+    darkString.replaceAll(/^\s*$/g, ""); // Remove empty lines
+    replaceInFile(`./themes/${themeName}/_dark.scss`, `//%%DARK%%`, darkString);
   }
   if (isLightTheme(getValueFromDictionary(manifest, "name"))) {
+    let lightString = `${lightValue}\n${lightRules}`;
+    // Remove all light theme variable declarations if they exist in the `:root`
+    variableInRoot.forEach((variable) => {
+      lightString = lightString.replaceAll(
+        new RegExp(`\s*${variable.name}\s*:\s*[^;]+;`, "gms"),
+        "",
+      );
+    });
+    lightString.replaceAll(/^\s*$/g, ""); // Remove empty lines
     replaceInFile(
       `./themes/${themeName}/_light.scss`,
       `//%%LIGHT%%`,
-      `${lightValue}\n${lightRules}`,
-    );
-    const lightInject = fs.readFileSync(
-      `./themes/${themeName}/_light.scss`,
-      "utf8",
-    );
-    replaceInFile(
-      `./themes/${themeName}/_index.scss`,
-      `//%%LIGHT%%`,
-      lightInject,
+      lightString,
     );
   }
 

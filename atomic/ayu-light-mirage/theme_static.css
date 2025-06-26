@@ -931,6 +931,9 @@
 }
 
 :root {
+  --accent-h: light-dark(40, 35);
+  --accent-l: light-dark(70%, 60%);
+  --accent-s: light-dark(100%, 100%);
   --background-secondary-alt: light-dark(
     color-mix(in srgb, #1f2430, #707a8c 30%),
     color-mix(in srgb, #1f2430, #707a8c 5%)
@@ -938,7 +941,7 @@
   --color-accent: light-dark(#ffcc66, #ffcc66);
   --color-accent-1: light-dark(hsl(37, 102%, 80.5%), hsl(39, 101%, 75.25%));
   --color-accent-2: light-dark(hsl(35, 105%, 90.3%), hsl(37, 102%, 80.5%));
-  --color-accent-hsl: light-dark(40, 100%, 70%, 40, 100%, 70%);
+  --color-accent-hsl: light-dark(#ffcc66, #ffcc66);
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
@@ -1581,9 +1584,9 @@
 }
 
 body {
-  --accent-h: 258;
-  --accent-l: 66%;
-  --accent-s: 88%;
+  --accent-h: light-dark(40, 35);
+  --accent-l: light-dark(70%, 60%);
+  --accent-s: light-dark(100%, 100%);
   --anim-duration-fast: 140ms;
   --anim-duration-moderate: 300ms;
   --anim-duration-none: 0;
@@ -1608,6 +1611,10 @@ body {
   --background-primary: color-mix(in srgb, #1f2430, #707a8c 0%);
   --background-primary-alt: color-mix(in srgb, #1f2430, #707a8c 10%);
   --background-secondary: color-mix(in srgb, #1f2430, #707a8c 20%);
+  --background-secondary-alt: light-dark(
+    color-mix(in srgb, #1f2430, #707a8c 30%),
+    color-mix(in srgb, #1f2430, #707a8c 5%)
+  );
   --bases-embed-border: 1px solid #8a919966;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -1716,6 +1723,30 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: #8a919966;
   --collapse-icon-color-collapsed: #ffcc66;
+  --color-accent: light-dark(#ffcc66, #ffcc66);
+  --color-accent-1: light-dark(hsl(37, 102%, 80.5%), hsl(39, 101%, 75.25%));
+  --color-accent-2: light-dark(hsl(35, 105%, 90.3%), hsl(37, 102%, 80.5%));
+  --color-accent-hsl: light-dark(#ffcc66, #ffcc66);
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -1792,7 +1823,10 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "??", "??", Lora, Songti, Batang, "Arial";
+  --font-text:
+    "??", Lora, Songti, Batang, ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: Lora, Songti, Batang;
@@ -2972,7 +3006,22 @@ body:not(.is-mobile) .app-container {
 .markdown-source-view {
   --list-marker-space: 0;
   --list-padding-inline-start: 0;
-  font-family: "??", "??", Lora, Songti, Batang, "Arial";
+  font-family:
+    "??",
+    Lora,
+    Songti,
+    Batang,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
 }
 
@@ -3122,7 +3171,22 @@ body:not(.is-mobile) .app-container {
 }
 
 .markdown-source-view.mod-cm6 .cm-scroller {
-  font-family: "??", "??", Lora, Songti, Batang, "Arial";
+  font-family:
+    "??",
+    Lora,
+    Songti,
+    Batang,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   line-height: 1.5;
   scrollbar-gutter: stable;
 }
@@ -4379,7 +4443,22 @@ body:not(.show-inline-title) .inline-title:not([data-level]) {
 .markdown-preview-view {
   -webkit-user-select: text;
   color: #cccac2;
-  font-family: "??", "??", Lora, Songti, Batang, "Arial";
+  font-family:
+    "??",
+    Lora,
+    Songti,
+    Batang,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
   height: 100%;
   line-height: 1.5;
@@ -5861,7 +5940,22 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
 .community-modal-readme {
   -webkit-user-select: text;
   color: #cccac2;
-  font-family: "??", "??", Lora, Songti, Batang, "Arial";
+  font-family:
+    "??",
+    Lora,
+    Songti,
+    Batang,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
   line-height: 1.5;
   overflow-wrap: break-word;
@@ -9822,7 +9916,10 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .modal .modal-nav-action.mod-cta {
-  color: #ffcc66;
+  color: light-dark(
+    hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%)),
+    hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%))
+  );
   font-weight: 600;
   inset-inline-end: 0;
 }
@@ -12075,7 +12172,22 @@ kbd {
 .markdown-source-view.mod-cm6
   .cm-line.HyperMD-codeblock
   .cm-formatting.cm-formatting-list {
-  font-family: "??", "??", Lora, Songti, Batang, "Arial";
+  font-family:
+    "??",
+    Lora,
+    Songti,
+    Batang,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
 }
 
@@ -17667,7 +17779,22 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .file-recovery-text[data-ext="md"] {
-  font-family: "??", "??", Lora, Songti, Batang, "Arial";
+  font-family:
+    "??",
+    Lora,
+    Songti,
+    Batang,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
 }
 
@@ -19275,7 +19402,22 @@ body:not(.is-phone)
   --cursor-link: default;
   background-color: #242936;
   flex: 1 0 0;
-  font-family: "??", "??", Lora, Songti, Batang, "Arial";
+  font-family:
+    "??",
+    Lora,
+    Songti,
+    Batang,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
   overflow: auto;
   padding: 24px;
@@ -19651,16 +19793,50 @@ body.theme-dark {
 }
 
 .canvas-selection {
-  background-color: #ffcc661a;
-  border: 2px solid #ffcc66;
+  background-color: hsla(
+    light-dark(
+      light-dark(40, 35),
+      light-dark(100%, 100%),
+      light-dark(70%, 60%),
+      light-dark(40, 35),
+      light-dark(100%, 100%),
+      light-dark(70%, 60%)
+    ),
+    0.1
+  );
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%)),
+      hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%))
+    );
   pointer-events: none;
   position: absolute;
   z-index: -1;
 }
 
 .canvas-selection.mod-group-selection {
-  background-color: #ffcc6608;
-  border-color: #ffcc664d;
+  background-color: hsla(
+    light-dark(
+      light-dark(40, 35),
+      light-dark(100%, 100%),
+      light-dark(70%, 60%),
+      light-dark(40, 35),
+      light-dark(100%, 100%),
+      light-dark(70%, 60%)
+    ),
+    0.03
+  );
+  border-color: hsla(
+    light-dark(
+      light-dark(40, 35),
+      light-dark(100%, 100%),
+      light-dark(70%, 60%),
+      light-dark(40, 35),
+      light-dark(100%, 100%),
+      light-dark(70%, 60%)
+    ),
+    0.3
+  );
   border-radius: 3px;
   border-width: 3px;
   pointer-events: initial;
@@ -19735,7 +19911,10 @@ body.theme-dark {
 
 @media (hover: hover) {
   .canvas-card-menu .canvas-card-menu-button:hover {
-    color: #ffcc66;
+    color: light-dark(
+      hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%)),
+      hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%))
+    );
   }
 }
 
@@ -19806,7 +19985,10 @@ body.theme-dark {
 }
 
 .canvas-control-item.is-active {
-  color: #ffcc66;
+  color: light-dark(
+    hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%)),
+    hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%))
+  );
 }
 
 .canvas-control-item.is-disabled svg {
@@ -19975,14 +20157,20 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 }
 
 .canvas-node.is-selected .canvas-node-container {
-  border-color: #ffcc66;
+  border-color: light-dark(
+    hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%)),
+    hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%))
+  );
   box-shadow:
     0px 0.5px 1px 0.5px #0000001a,
     0 0 0 2px #ffcc66;
 }
 
 .canvas-node.is-focused .canvas-node-container {
-  border-color: #ffcc66;
+  border-color: light-dark(
+    hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%)),
+    hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%))
+  );
   box-shadow:
     0px 0.5px 1px 0.5px #0000001a,
     0 0 0 2px #ffcc66;
@@ -20038,8 +20226,22 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 }
 
 .canvas-node.is-dummy .canvas-node-container {
-  background-color: #ffcc6633;
-  border: 4px solid #ffcc66;
+  background-color: hsla(
+    light-dark(
+      light-dark(40, 35),
+      light-dark(100%, 100%),
+      light-dark(70%, 60%),
+      light-dark(40, 35),
+      light-dark(100%, 100%),
+      light-dark(70%, 60%)
+    ),
+    0.2
+  );
+  border: 4px solid
+    light-dark(
+      hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%)),
+      hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%))
+    );
   box-shadow: 0px 2px 10px #00000026;
 }
 
@@ -20312,7 +20514,11 @@ body.is-mobile .canvas-node-resizer {
   .canvas-node-interaction-layer
   .canvas-node-resizer[data-resize="topright"] {
   background-color: #242936;
-  border: 2px solid #ffcc66;
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%)),
+      hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%))
+    );
   border-radius: 3px;
   display: block;
   height: 20px;
@@ -20325,7 +20531,11 @@ body.is-mobile .canvas-node-resizer {
   .canvas-node-interaction-layer
   .canvas-node-resizer[data-resize="bottomright"] {
   background-color: #242936;
-  border: 2px solid #ffcc66;
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%)),
+      hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%))
+    );
   border-radius: 3px;
   display: block;
   height: 20px;
@@ -20338,7 +20548,11 @@ body.is-mobile .canvas-node-resizer {
   .canvas-node-interaction-layer
   .canvas-node-resizer[data-resize="topleft"] {
   background-color: #242936;
-  border: 2px solid #ffcc66;
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%)),
+      hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%))
+    );
   border-radius: 3px;
   display: block;
   height: 20px;
@@ -20351,7 +20565,11 @@ body.is-mobile .canvas-node-resizer {
   .canvas-node-interaction-layer
   .canvas-node-resizer[data-resize="bottomleft"] {
   background-color: #242936;
-  border: 2px solid #ffcc66;
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%)),
+      hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%))
+    );
   border-radius: 3px;
   display: block;
   height: 20px;
@@ -20388,7 +20606,10 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-node-connection-point::after {
-  background-color: #ffcc66;
+  background-color: light-dark(
+    hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%)),
+    hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%))
+  );
   border: 3px solid #8a919966;
   border-radius: 50%;
   box-sizing: border-box;
@@ -20422,12 +20643,18 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-snaps line {
-  stroke: hsl(40, 100%, 70%);
+  stroke: light-dark(
+    hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%)),
+    hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%))
+  );
   stroke-width: 1px;
 }
 
 .canvas-snaps circle {
-  fill: #ffcc66;
+  fill: light-dark(
+    hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%)),
+    hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%))
+  );
 }
 
 .canvas-edges {
@@ -20660,9 +20887,22 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-placeholder-message {
-  background: #ffcc661a;
+  background: hsla(
+    light-dark(
+      light-dark(40, 35),
+      light-dark(100%, 100%),
+      light-dark(70%, 60%),
+      light-dark(40, 35),
+      light-dark(100%, 100%),
+      light-dark(70%, 60%)
+    ),
+    0.1
+  );
   border-radius: 8px;
-  color: #ffcc66;
+  color: light-dark(
+    hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%)),
+    hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%))
+  );
   font-size: 19.2px;
   line-height: 1.5;
   max-width: 70vw;
@@ -20706,7 +20946,11 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-cursor {
-  border: 5px solid #ffcc66;
+  border: 5px solid
+    light-dark(
+      hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%)),
+      hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%))
+    );
   border-radius: 5px;
   height: 1px;
   pointer-events: none;

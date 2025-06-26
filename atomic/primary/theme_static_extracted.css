@@ -1,4 +1,7 @@
 :root {
+  --accent-h: light-dark(31, 31);
+  --accent-l: light-dark(24%, 50%);
+  --accent-s: light-dark(27%, 23%);
   --active-line-bg: light-dark(#342c23, #1c1712);
   --alternating-color-1: light-dark(#da9a1b, #d79719);
   --alternating-color-1-hover-active: light-dark(#bc811a, #b67a02);
@@ -10,11 +13,11 @@
   --background-modifier-border: light-dark(#3b3026, #e4d8c3);
   --background-modifier-error: light-dark(#e02f29, #bf3f36);
   --background-modifier-error-hover: light-dark(#f35044, #df453a);
-  --background-modifier-error-rgb: light-dark(228, 87, 78, 228, 87, 78);
+  --background-modifier-error-rgb: light-dark(#e4574e, #e4574e);
   --background-modifier-form-field: light-dark(#211b17, #f2ece3);
   --background-modifier-message: light-dark(#51402f, #836b49);
   --background-modifier-success: light-dark(#108454, #329562);
-  --background-modifier-success-rgb: light-dark(100, 194, 113, 100, 194, 113);
+  --background-modifier-success-rgb: light-dark(#64c271, #64c271);
   --background-modifier-warning: light-dark(#bd4914, #d75c28);
   --background-modifier-warning-hover: light-dark(#da5e16, #eb7d42);
   --background-primary: light-dark(#2e261f, #f8f5f1);
@@ -302,12 +305,12 @@
     var(--editor-bg-color),
     var(--editor-bg-color)
   );
-  --canvas-color-1: light-dark(228, 87, 78, 228, 87, 78);
-  --canvas-color-2: light-dark(238, 163, 89, 238, 163, 89);
-  --canvas-color-3: light-dark(249, 207, 81, 249, 207, 81);
-  --canvas-color-4: light-dark(100, 194, 113, 100, 194, 113);
-  --canvas-color-5: light-dark(99, 156, 192, 99, 156, 192);
-  --canvas-color-6: light-dark(139, 113, 185, 139, 113, 185);
+  --canvas-color-1: light-dark(#e4574e, #e4574e);
+  --canvas-color-2: light-dark(#eea359, #eea359);
+  --canvas-color-3: light-dark(#f9cf51, #f9cf51);
+  --canvas-color-4: light-dark(#64c271, #64c271);
+  --canvas-color-5: light-dark(#639cc0, #639cc0);
+  --canvas-color-6: light-dark(#8b71b9, #8b71b9);
   --canvas-icon-color: light-dark(#917959, #b79d7b);
   --canvas-icon-color-disabled: light-dark(#51402f, #e4d8c3);
   --canvas-icon-color-hover: light-dark(#c7b194, #655134);
@@ -323,7 +326,7 @@
   --color-accent: light-dark(#4e3e2d, #4e3e2d);
   --color-accent-1: light-dark(#5a4533, #544230);
   --color-accent-2: light-dark(#654c39, #5a4533);
-  --color-accent-hsl: light-dark(31, 27%, 24%, 31, 27%, 24%);
+  --color-accent-hsl: light-dark(#4e3e2d, #4e3e2d);
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
@@ -429,7 +432,7 @@
   --inline-title-color: light-dark(#ebdac6, #432e14);
   --interactive-accent: light-dark(#5a4533, #5a4533);
   --interactive-accent-hover: light-dark(#6c4f38, #6c4f38);
-  --interactive-accent-hsl: light-dark(31, 27%, 24%, 31, 27%, 24%);
+  --interactive-accent-hsl: light-dark(#4e3e2d, #4e3e2d);
   --interactive-normal: light-dark(#26211c, #f2ece3);
   --italic-color: light-dark(#4db2d1, #22729b);
   --italic-highlight-bg: light-dark(#2ab1c033, #2ab1c033);
@@ -606,7 +609,7 @@
   --text-error: light-dark(#f35044, #bf3f36);
   --text-faint: light-dark(#917959, #b79d7b);
   --text-highlight-bg: light-dark(#ffbb0033, #ffbb0033);
-  --text-highlight-bg-rgb: light-dark(249, 207, 81, 249, 207, 81);
+  --text-highlight-bg-rgb: light-dark(#f9cf51, #f9cf51);
   --text-input-border-color: light-dark(#1c1712, #e4d8c3);
   --text-input-color: light-dark(#d7c0a3, #593e22);
   --text-input-color-focused: light-dark(#d7c0a3, #593e22);
@@ -640,9 +643,16 @@
 }
 
 body {
-  --accent-h: 258;
-  --accent-l: 66%;
-  --accent-s: 88%;
+  --accent-h: light-dark(31, 31);
+  --accent-l: light-dark(24%, 50%);
+  --accent-s: light-dark(27%, 23%);
+  --active-line-bg: light-dark(#342c23, #1c1712);
+  --alternating-color-1: light-dark(#da9a1b, #d79719);
+  --alternating-color-1-hover-active: light-dark(#bc811a, #b67a02);
+  --alternating-color-2: light-dark(#f35044, #bf3f36);
+  --alternating-color-2-hover-active: light-dark(#e02f29, #9a2219);
+  --alternating-color-3: light-dark(#4197b9, #22729b);
+  --alternating-color-3-hover-active: light-dark(#387494, #0a4976);
   --anim-duration-fast: 140ms;
   --anim-duration-moderate: 300ms;
   --anim-duration-none: 0;
@@ -656,21 +666,24 @@ body {
   --anim-popup: 0.3s slideUp forwards;
   --anim-popup-alt: 0.335s slideUpAlt forwards;
   --background-anim: background 140ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
-  --background-modifier-active-hover: #4e3e2d26;
-  --background-modifier-border: #51402f;
+  --background-modifier-active-hover: light-dark(#51402f, #e4d8c3);
+  --background-modifier-border: light-dark(#3b3026, #e4d8c3);
   --background-modifier-border-focus: #917959;
   --background-modifier-border-hover: #6b563d;
-  --background-modifier-error: #c04e4e;
-  --background-modifier-error-hover: #c04e4e;
-  --background-modifier-error-rgb: 228, 87, 78;
-  --background-modifier-form-field: #1c1712;
+  --background-modifier-error: light-dark(#e02f29, #bf3f36);
+  --background-modifier-error-hover: light-dark(#f35044, #df453a);
+  --background-modifier-error-rgb: light-dark(#e4574e, #e4574e);
+  --background-modifier-form-field: light-dark(#211b17, #f2ece3);
   --background-modifier-hover: #ffffff11;
-  --background-modifier-message: #000000e6;
-  --background-modifier-success: #50c465;
-  --background-modifier-success-rgb: 100, 194, 113;
-  --background-primary: #1c1712;
-  --background-primary-alt: #2e261f;
-  --background-secondary: #342c23;
+  --background-modifier-message: light-dark(#51402f, #836b49);
+  --background-modifier-success: light-dark(#108454, #329562);
+  --background-modifier-success-rgb: light-dark(#64c271, #64c271);
+  --background-modifier-warning: light-dark(#bd4914, #d75c28);
+  --background-modifier-warning-hover: light-dark(#da5e16, #eb7d42);
+  --background-primary: light-dark(#2e261f, #f8f5f1);
+  --background-primary-alt: light-dark(#2a241e, #f2ece3);
+  --background-secondary: light-dark(#26211c, #eee7dd);
+  --background-secondary-alt: light-dark(#51402f, #26211c);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -703,16 +716,276 @@ body {
   --bases-table-row-height: 30px;
   --bases-table-text-size: 0.875em;
   --bases-table-white-space: nowrap;
-  --blockquote-background-color: transparent;
-  --blockquote-border-color: #5a4533;
+  --blockquote-background-color: light-dark(#26211c, #fcfaf8);
+  --blockquote-border-color: light-dark(transparent, transparent);
   --blockquote-border-thickness: 2px;
   --blockquote-color: inherit;
   --blockquote-font-style: normal;
-  --bold-color: inherit;
+  --bold-color: light-dark(#f35044, #bf3f36);
+  --bold-highlight-bg: light-dark(#f0516c33, #f0516c33);
+  --bold-highlight-color: light-dark(#d7c0a3, #d7c0a3);
+  --bold-italic-color: light-dark(#ebdac6, #432e14);
+  --bold-italic-highlight-bg: light-dark(#99be2333, #99be2333);
+  --bold-italic-highlight-color: light-dark(#ebdac6, #ebdac6);
+  --bold-italic-strikethrough-color: light-dark(#ab916d, #9d8062);
   --bold-italic-weight: 750;
   --bold-modifier: 200;
   --bold-weight: 750;
+  --bookmark-folder-1-bg-color: light-dark(
+    var(--nav-folder-1-bg-color),
+    var(--nav-folder-1-bg-color)
+  );
+  --bookmark-folder-1-bg-color-hover: light-dark(
+    var(--nav-folder-1-bg-color-hover),
+    var(--nav-folder-1-bg-color-hover)
+  );
+  --bookmark-folder-1-collapse-color: light-dark(
+    var(--nav-folder-1-collapse-color),
+    var(--nav-folder-1-collapse-color)
+  );
+  --bookmark-folder-1-color: light-dark(
+    var(--nav-folder-1-color),
+    var(--nav-folder-1-color)
+  );
+  --bookmark-folder-1-indent-color: light-dark(
+    var(--nav-folder-1-indent-color),
+    var(--nav-folder-1-indent-color)
+  );
+  --bookmark-folder-10-bg-color: light-dark(
+    var(--nav-folder-10-bg-color),
+    var(--nav-folder-10-bg-color)
+  );
+  --bookmark-folder-10-bg-color-hover: light-dark(
+    var(--nav-folder-10-bg-color-hover),
+    var(--nav-folder-10-bg-color-hover)
+  );
+  --bookmark-folder-10-collapse-color: light-dark(
+    var(--nav-folder-10-collapse-color),
+    var(--nav-folder-10-collapse-color)
+  );
+  --bookmark-folder-10-color: light-dark(
+    var(--nav-folder-10-color),
+    var(--nav-folder-10-color)
+  );
+  --bookmark-folder-10-indent-color: light-dark(
+    var(--nav-folder-10-indent-color),
+    var(--nav-folder-10-indent-color)
+  );
+  --bookmark-folder-11-bg-color: light-dark(
+    var(--nav-folder-11-bg-color),
+    var(--nav-folder-11-bg-color)
+  );
+  --bookmark-folder-11-bg-color-hover: light-dark(
+    var(--nav-folder-11-bg-color-hover),
+    var(--nav-folder-11-bg-color-hover)
+  );
+  --bookmark-folder-11-collapse-color: light-dark(
+    var(--nav-folder-11-collapse-color),
+    var(--nav-folder-11-collapse-color)
+  );
+  --bookmark-folder-11-color: light-dark(
+    var(--nav-folder-11-color),
+    var(--nav-folder-11-color)
+  );
+  --bookmark-folder-11-indent-color: light-dark(
+    var(--nav-folder-11-indent-color),
+    var(--nav-folder-11-indent-color)
+  );
+  --bookmark-folder-12-bg-color: light-dark(
+    var(--nav-folder-12-bg-color),
+    var(--nav-folder-12-bg-color)
+  );
+  --bookmark-folder-12-bg-color-hover: light-dark(
+    var(--nav-folder-12-bg-color-hover),
+    var(--nav-folder-12-bg-color-hover)
+  );
+  --bookmark-folder-12-collapse-color: light-dark(
+    var(--nav-folder-12-collapse-color),
+    var(--nav-folder-12-collapse-color)
+  );
+  --bookmark-folder-12-color: light-dark(
+    var(--nav-folder-12-color),
+    var(--nav-folder-12-color)
+  );
+  --bookmark-folder-12-indent-color: light-dark(
+    var(--nav-folder-12-indent-color),
+    var(--nav-folder-12-indent-color)
+  );
+  --bookmark-folder-2-bg-color: light-dark(
+    var(--nav-folder-2-bg-color),
+    var(--nav-folder-2-bg-color)
+  );
+  --bookmark-folder-2-bg-color-hover: light-dark(
+    var(--nav-folder-2-bg-color-hover),
+    var(--nav-folder-2-bg-color-hover)
+  );
+  --bookmark-folder-2-collapse-color: light-dark(
+    var(--nav-folder-2-collapse-color),
+    var(--nav-folder-2-collapse-color)
+  );
+  --bookmark-folder-2-color: light-dark(
+    var(--nav-folder-2-color),
+    var(--nav-folder-2-color)
+  );
+  --bookmark-folder-2-indent-color: light-dark(
+    var(--nav-folder-2-indent-color),
+    var(--nav-folder-2-indent-color)
+  );
+  --bookmark-folder-3-bg-color: light-dark(
+    var(--nav-folder-3-bg-color),
+    var(--nav-folder-3-bg-color)
+  );
+  --bookmark-folder-3-bg-color-hover: light-dark(
+    var(--nav-folder-3-bg-color-hover),
+    var(--nav-folder-3-bg-color-hover)
+  );
+  --bookmark-folder-3-collapse-color: light-dark(
+    var(--nav-folder-3-collapse-color),
+    var(--nav-folder-3-collapse-color)
+  );
+  --bookmark-folder-3-color: light-dark(
+    var(--nav-folder-3-color),
+    var(--nav-folder-3-color)
+  );
+  --bookmark-folder-3-indent-color: light-dark(
+    var(--nav-folder-3-indent-color),
+    var(--nav-folder-3-indent-color)
+  );
+  --bookmark-folder-4-bg-color: light-dark(
+    var(--nav-folder-4-bg-color),
+    var(--nav-folder-4-bg-color)
+  );
+  --bookmark-folder-4-bg-color-hover: light-dark(
+    var(--nav-folder-4-bg-color-hover),
+    var(--nav-folder-4-bg-color-hover)
+  );
+  --bookmark-folder-4-collapse-color: light-dark(
+    var(--nav-folder-4-collapse-color),
+    var(--nav-folder-4-collapse-color)
+  );
+  --bookmark-folder-4-color: light-dark(
+    var(--nav-folder-4-color),
+    var(--nav-folder-4-color)
+  );
+  --bookmark-folder-4-indent-color: light-dark(
+    var(--nav-folder-4-indent-color),
+    var(--nav-folder-4-indent-color)
+  );
+  --bookmark-folder-5-bg-color: light-dark(
+    var(--nav-folder-5-bg-color),
+    var(--nav-folder-5-bg-color)
+  );
+  --bookmark-folder-5-bg-color-hover: light-dark(
+    var(--nav-folder-5-bg-color-hover),
+    var(--nav-folder-5-bg-color-hover)
+  );
+  --bookmark-folder-5-collapse-color: light-dark(
+    var(--nav-folder-5-collapse-color),
+    var(--nav-folder-5-collapse-color)
+  );
+  --bookmark-folder-5-color: light-dark(
+    var(--nav-folder-5-color),
+    var(--nav-folder-5-color)
+  );
+  --bookmark-folder-5-indent-color: light-dark(
+    var(--nav-folder-5-indent-color),
+    var(--nav-folder-5-indent-color)
+  );
+  --bookmark-folder-6-bg-color: light-dark(
+    var(--nav-folder-6-bg-color),
+    var(--nav-folder-6-bg-color)
+  );
+  --bookmark-folder-6-bg-color-hover: light-dark(
+    var(--nav-folder-6-bg-color-hover),
+    var(--nav-folder-6-bg-color-hover)
+  );
+  --bookmark-folder-6-collapse-color: light-dark(
+    var(--nav-folder-6-collapse-color),
+    var(--nav-folder-6-collapse-color)
+  );
+  --bookmark-folder-6-color: light-dark(
+    var(--nav-folder-6-color),
+    var(--nav-folder-6-color)
+  );
+  --bookmark-folder-6-indent-color: light-dark(
+    var(--nav-folder-6-indent-color),
+    var(--nav-folder-6-indent-color)
+  );
+  --bookmark-folder-7-bg-color: light-dark(
+    var(--nav-folder-7-bg-color),
+    var(--nav-folder-7-bg-color)
+  );
+  --bookmark-folder-7-bg-color-hover: light-dark(
+    var(--nav-folder-7-bg-color-hover),
+    var(--nav-folder-7-bg-color-hover)
+  );
+  --bookmark-folder-7-collapse-color: light-dark(
+    var(--nav-folder-7-collapse-color),
+    var(--nav-folder-7-collapse-color)
+  );
+  --bookmark-folder-7-color: light-dark(
+    var(--nav-folder-7-color),
+    var(--nav-folder-7-color)
+  );
+  --bookmark-folder-7-indent-color: light-dark(
+    var(--nav-folder-7-indent-color),
+    var(--nav-folder-7-indent-color)
+  );
+  --bookmark-folder-8-bg-color: light-dark(
+    var(--nav-folder-8-bg-color),
+    var(--nav-folder-8-bg-color)
+  );
+  --bookmark-folder-8-bg-color-hover: light-dark(
+    var(--nav-folder-8-bg-color-hover),
+    var(--nav-folder-8-bg-color-hover)
+  );
+  --bookmark-folder-8-collapse-color: light-dark(
+    var(--nav-folder-8-collapse-color),
+    var(--nav-folder-8-collapse-color)
+  );
+  --bookmark-folder-8-color: light-dark(
+    var(--nav-folder-8-color),
+    var(--nav-folder-8-color)
+  );
+  --bookmark-folder-8-indent-color: light-dark(
+    var(--nav-folder-8-indent-color),
+    var(--nav-folder-8-indent-color)
+  );
+  --bookmark-folder-9-bg-color: light-dark(
+    var(--nav-folder-9-bg-color),
+    var(--nav-folder-9-bg-color)
+  );
+  --bookmark-folder-9-bg-color-hover: light-dark(
+    var(--nav-folder-9-bg-color-hover),
+    var(--nav-folder-9-bg-color-hover)
+  );
+  --bookmark-folder-9-collapse-color: light-dark(
+    var(--nav-folder-9-collapse-color),
+    var(--nav-folder-9-collapse-color)
+  );
+  --bookmark-folder-9-color: light-dark(
+    var(--nav-folder-9-color),
+    var(--nav-folder-9-color)
+  );
+  --bookmark-folder-9-indent-color: light-dark(
+    var(--nav-folder-9-indent-color),
+    var(--nav-folder-9-indent-color)
+  );
   --border-width: 1px;
+  --breadcrumb-bg-hover: light-dark(#3b3026, #eee7dd);
+  --breadcrumb-color: light-dark(#917959, #9d8062);
+  --breadcrumb-color-hover: light-dark(#917959, #9d8062);
+  --breadcrumb-separator-color: light-dark(transparent, transparent);
+  --button-accent-shadow-active: light-dark(
+    inset 0px 0px 0px 1px #00000073,
+    inset 0px 0px 0px 3px #00000026,
+    inset 0px 2px 8px 0px #00000091,
+    0px 0px 0px 1px #ffffff05,
+    inset 0px 0px 0px 1px #00000073,
+    inset 0px 0px 0px 3px #00000026,
+    inset 0px 2px 8px 0px #00000091,
+    0px 0px 0px 1px #ffffff05
+  );
   --button-anim: 140ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --button-axis-offset: 2px;
   --button-inset-shadow-size: 2px;
@@ -724,6 +997,18 @@ body {
   --button-radius: 8px;
   --button-s-padding: 4px 8px 4px 8px;
   --button-s-radius: 8px;
+  --button-shadow: light-dark(none, none);
+  --button-shadow-active: light-dark(
+    inset 0px 0px 0px 1px #00000073,
+    inset 0px 0px 0px 3px #00000026,
+    inset 0px 2px 8px 0px #00000091,
+    0px 0px 0px 1px #ffffff05,
+    inset 0px 0px 0px 1px #00000073,
+    inset 0px 0px 0px 3px #00000026,
+    inset 0px 2px 8px 0px #00000091,
+    0px 0px 0px 1px #ffffff05
+  );
+  --button-shadow-hover: light-dark(none, none);
   --callout-blend-mode: unset;
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
@@ -799,32 +1084,40 @@ body {
   --callout-success: 100, 194, 113;
   --callout-summary: 91, 175, 183;
   --callout-tip: 91, 175, 183;
-  --callout-title-color: inherit;
+  --callout-title-color: light-dark(#d7c0a3, #d7c0a3);
   --callout-title-padding: 12px 16px;
   --callout-title-size: inherit;
   --callout-title-weight: 850;
   --callout-todo: 99, 156, 192;
   --callout-warning: 238, 163, 89;
-  --canvas-background: var(--background-primary);
+  --cancelled-chbx-text-color: light-dark(#917959, #917959);
+  --canvas-background: light-dark(
+    var(--editor-bg-color),
+    var(--editor-bg-color)
+  );
   --canvas-card-label-color: #917959;
   --canvas-color: 192, 192, 192;
-  --canvas-color-1: 228, 87, 78;
-  --canvas-color-2: 238, 163, 89;
-  --canvas-color-3: 249, 207, 81;
-  --canvas-color-4: 100, 194, 113;
-  --canvas-color-5: 91, 175, 183;
-  --canvas-color-6: 139, 113, 185;
+  --canvas-color-1: light-dark(#e4574e, #e4574e);
+  --canvas-color-2: light-dark(#eea359, #eea359);
+  --canvas-color-3: light-dark(#f9cf51, #f9cf51);
+  --canvas-color-4: light-dark(#64c271, #64c271);
+  --canvas-color-5: light-dark(#639cc0, #639cc0);
+  --canvas-color-6: light-dark(#8b71b9, #8b71b9);
   --canvas-dot-pattern: #51402f;
-  --caret-color: #d7c0a3;
-  --checkbox-border-color: #917959;
-  --checkbox-border-color-hover: #ab916d;
-  --checkbox-color: #5a4533;
-  --checkbox-color-hover: #6c4f38;
+  --canvas-icon-color: light-dark(#917959, #b79d7b);
+  --canvas-icon-color-disabled: light-dark(#51402f, #e4d8c3);
+  --canvas-icon-color-hover: light-dark(#c7b194, #655134);
+  --caret-color: light-dark(#917959, #b79d7b);
+  --checkbox-border-color: light-dark(#51402f, #e4d8c3);
+  --checkbox-border-color-hover: light-dark(#6b563d, #cfb696);
+  --checkbox-color: light-dark(#117449, #329562);
+  --checkbox-color-hover: light-dark(#108454, #3eb174);
   --checkbox-margin-inline-start: 0.85em;
   --checkbox-marker-color: var(--background-primary);
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --checklist-done-color: #ab916d;
+  --checklist-bg: light-dark(#2a241e, #fcfaf8);
+  --checklist-done-color: light-dark(#917959, #b79d7b);
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: 5px;
   --close-button-radius: 12px;
@@ -845,8 +1138,32 @@ body {
   --code-tag: #c04e4e;
   --code-value: #7161c2;
   --code-white-space: pre-wrap;
-  --collapse-icon-color: #917959;
-  --collapse-icon-color-collapsed: #4e3e2d;
+  --collapse-icon-color: light-dark(#6b563d, #cfb696);
+  --collapse-icon-color-collapsed: light-dark(#6b563d, #cfb696);
+  --color-accent: light-dark(#4e3e2d, #4e3e2d);
+  --color-accent-1: light-dark(#5a4533, #544230);
+  --color-accent-2: light-dark(#654c39, #5a4533);
+  --color-accent-hsl: light-dark(#4e3e2d, #4e3e2d);
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --component-font-weight: 550;
   --copy-code-button-radius: 4px;
   --cursor: pointer;
@@ -855,14 +1172,17 @@ body {
   --dialog-max-width: 80vw;
   --dialog-width: 560px;
   --direction: 1;
-  --divider-color: transparent;
-  --divider-color-hover: #5a4533;
+  --divider-color: light-dark(transparent, transparent);
+  --divider-color-hover: light-dark(
+    color-mix(in srgb, #51402f 40%, #3b3026),
+    color-mix(in srgb, #51402f 40%, #3b3026)
+  );
   --divider-radius: 8px;
   --divider-vertical-height: calc(100% - 38px);
   --divider-width: 1px;
   --divider-width-hover: 4px;
-  --drag-ghost-background: #000000d9;
-  --drag-ghost-text-color: #fff;
+  --drag-ghost-background: light-dark(#5a4533, #5a4533);
+  --drag-ghost-text-color: light-dark(#ebdac6, #ebdac6);
   --dropdown-background: #26211c;
   --dropdown-background-blend-mode: hard-light;
   --dropdown-background-hover: color-mix(in hsl, #2e261f 50%, #26211c);
@@ -870,26 +1190,39 @@ body {
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-height: 32.992px;
   --dropdown-padding: 0 1.9em 0 0.8em;
+  --editor-bg-color: light-dark(
+    var(--background-primary),
+    var(--background-primary)
+  );
+  --editor-bgpattern-color: light-dark(#51402f, #e4d8c3);
   --editor-bgpattern-size: 50px 50px;
+  --editor-border-color: light-dark(transparent, transparent);
   --editor-border-radius: 12px;
   --editor-border-width: 1px;
   --editor-header-icon: 18px;
   --editor-pane-margin: 10px;
   --editor-tab-icon: 18px;
-  --embed-background: inherit;
+  --embed-background: light-dark(
+    var(--embed-bg-color-mix),
+    var(--embed-bg-color-mix)
+  );
   --embed-block-shadow-hover:
     0 0 0 1px transparent, inset 0 0 0 1px transparent;
   --embed-border-bottom: 1px solid transparent;
+  --embed-border-bottom-color: light-dark(transparent, transparent);
   --embed-border-bottom-style: solid;
   --embed-border-bottom-width: 1px;
   --embed-border-end: 1px solid transparent;
+  --embed-border-end-color: light-dark(transparent, transparent);
   --embed-border-end-style: solid;
   --embed-border-end-width: 1px;
   --embed-border-radius: 12px;
   --embed-border-start: 1px solid transparent;
+  --embed-border-start-color: light-dark(transparent, transparent);
   --embed-border-start-style: solid;
   --embed-border-start-width: 1px;
   --embed-border-top: 1px solid transparent;
+  --embed-border-top-color: light-dark(transparent, transparent);
   --embed-border-top-style: solid;
   --embed-border-top-width: 1px;
   --embed-canvas-max-height: 400px;
@@ -899,15 +1232,21 @@ body {
   --embed-media-border-radius: 8px;
   --embed-padding: 6px 16px 0px;
   --embed-title-border: 1px solid transparent;
+  --embed-title-border-color: light-dark(transparent, transparent);
   --embed-title-border-style: solid;
   --embed-title-border-width: 1px;
+  --embed-title-color: light-dark(#917959, #9d8062);
   --embed-title-font-size: 16px;
   --embed-title-font-weight: 550;
   --embed-title-letter-spacing: normal;
   --embed-title-margin-bottom: 8px;
   --embed-title-text-transform: none;
   --file-folding-offset: 24px;
-  --file-header-border: 0.5pt solid transparent;
+  --file-header-border: light-dark(
+    1px solid transparent,
+    1px solid transparent
+  );
+  --file-header-border-color: light-dark(transparent, transparent);
   --file-header-border-width: 1px;
   --file-header-font:
     "??", "Inter", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
@@ -916,12 +1255,15 @@ body {
   --file-header-font-size: 14.992px;
   --file-header-font-weight: 400;
   --file-header-justify: center;
+  --file-header-title-color: light-dark(#ab916d, #655134);
   --file-line-width: 40rem;
   --file-margins: 32px;
   --file-max-line-width: 88%;
   --file-tab-gap: 0px;
   --flair-background: #26211c;
   --flair-color: #d7c0a3;
+  --flair-count-bg-color: light-dark(#26211c, #eee7dd);
+  --flair-count-color: light-dark(#6b563d, #b79d7b);
   --flair-count-padding: 2px 4px;
   --flair-count-radius: 5px;
   --font-black: 900;
@@ -940,7 +1282,10 @@ body {
   --font-interface-theme: "Inter";
   --font-light: 350;
   --font-medium: 550;
-  --font-mermaid: "??", "??", "Inter", "Arial";
+  --font-mermaid:
+    "??", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-monospace:
     "??", "Cascadia Code", ui-monospace, SFMono-Regular, "Cascadia Mono",
     "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
@@ -958,7 +1303,10 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "??", "??", "Inter", "Arial";
+  --font-text:
+    "??", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "Inter";
@@ -983,18 +1331,26 @@ body {
   --footnote-padding-inline: 6px;
   --footnote-radius: 4px;
   --footnote-size: 0.875em;
+  --graph-arrow: light-dark(#917959, #9d8062);
   --graph-controls-width: 240px;
-  --graph-line: #6b563d;
-  --graph-node: #ab916d;
-  --graph-node-attachment: #e1b243;
-  --graph-node-focused: #4e3e2d;
-  --graph-node-tag: #50c465;
-  --graph-node-unresolved: #917959;
-  --graph-text: #d7c0a3;
+  --graph-line: light-dark(transparent, transparent);
+  --graph-node: light-dark(#4197b9, #2a90cb);
+  --graph-node-attachment: light-dark(#108454, #8bc1a4);
+  --graph-node-focused: light-dark(#d7c0a3, #593e22);
+  --graph-node-highlight-fill: light-dark(#c7b194, #9d8062);
+  --graph-node-highlight-line: light-dark(#6b563d, #cfb696);
+  --graph-node-tag: light-dark(#f35044, #df453a);
+  --graph-node-unresolved: light-dark(#e5aa1f, #ecb936);
+  --graph-text: light-dark(#917959, #b79d7b);
+  --gutter-color-active: light-dark(#917959, #9d8062);
+  --h1-border-bottom-color: light-dark(transparent, transparent);
+  --h1-border-left-color: light-dark(transparent, transparent);
   --h1-border-radius: 0px;
+  --h1-border-right-color: light-dark(transparent, transparent);
   --h1-border-style: solid;
+  --h1-border-top-color: light-dark(transparent, transparent);
   --h1-border-width: 0px;
-  --h1-color: inherit;
+  --h1-color: light-dark(#ebdac6, #432e14);
   --h1-font: inherit;
   --h1-letter-spacing: unset;
   --h1-line-height: 1.2;
@@ -1004,10 +1360,14 @@ body {
   --h1-text-transform: normal;
   --h1-variant: normal;
   --h1-weight: 650;
+  --h2-border-bottom-color: light-dark(transparent, transparent);
+  --h2-border-left-color: light-dark(transparent, transparent);
   --h2-border-radius: 0px;
+  --h2-border-right-color: light-dark(transparent, transparent);
   --h2-border-style: solid;
+  --h2-border-top-color: light-dark(transparent, transparent);
   --h2-border-width: 0px;
-  --h2-color: inherit;
+  --h2-color: light-dark(#ebdac6, #432e14);
   --h2-font: inherit;
   --h2-letter-spacing: unset;
   --h2-line-height: 1.2;
@@ -1017,10 +1377,14 @@ body {
   --h2-text-transform: normal;
   --h2-variant: normal;
   --h2-weight: 650;
+  --h3-border-bottom-color: light-dark(transparent, transparent);
+  --h3-border-left-color: light-dark(transparent, transparent);
   --h3-border-radius: 0px;
+  --h3-border-right-color: light-dark(transparent, transparent);
   --h3-border-style: solid;
+  --h3-border-top-color: light-dark(transparent, transparent);
   --h3-border-width: 0px;
-  --h3-color: inherit;
+  --h3-color: light-dark(#ebdac6, #432e14);
   --h3-font: inherit;
   --h3-letter-spacing: unset;
   --h3-line-height: 1.3;
@@ -1030,10 +1394,14 @@ body {
   --h3-text-transform: normal;
   --h3-variant: normal;
   --h3-weight: 650;
+  --h4-border-bottom-color: light-dark(transparent, transparent);
+  --h4-border-left-color: light-dark(transparent, transparent);
   --h4-border-radius: 0px;
+  --h4-border-right-color: light-dark(transparent, transparent);
   --h4-border-style: solid;
+  --h4-border-top-color: light-dark(transparent, transparent);
   --h4-border-width: 0px;
-  --h4-color: inherit;
+  --h4-color: light-dark(#ebdac6, #432e14);
   --h4-font: inherit;
   --h4-letter-spacing: unset;
   --h4-line-height: 1.4;
@@ -1043,10 +1411,14 @@ body {
   --h4-text-transform: normal;
   --h4-variant: normal;
   --h4-weight: 650;
+  --h5-border-bottom-color: light-dark(transparent, transparent);
+  --h5-border-left-color: light-dark(transparent, transparent);
   --h5-border-radius: 0px;
+  --h5-border-right-color: light-dark(transparent, transparent);
   --h5-border-style: solid;
+  --h5-border-top-color: light-dark(transparent, transparent);
   --h5-border-width: 0px;
-  --h5-color: inherit;
+  --h5-color: light-dark(#ebdac6, #432e14);
   --h5-font: inherit;
   --h5-letter-spacing: unset;
   --h5-line-height: 1.5;
@@ -1056,10 +1428,14 @@ body {
   --h5-text-transform: normal;
   --h5-variant: normal;
   --h5-weight: 650;
+  --h6-border-bottom-color: light-dark(transparent, transparent);
+  --h6-border-left-color: light-dark(transparent, transparent);
   --h6-border-radius: 0px;
+  --h6-border-right-color: light-dark(transparent, transparent);
   --h6-border-style: solid;
+  --h6-border-top-color: light-dark(transparent, transparent);
   --h6-border-width: 0px;
-  --h6-color: inherit;
+  --h6-color: light-dark(#ebdac6, #432e14);
   --h6-font: inherit;
   --h6-letter-spacing: unset;
   --h6-line-height: 1.5;
@@ -1074,9 +1450,10 @@ body {
   --heading-spacing: 0rem;
   --hr-color: transparent;
   --hr-thickness: 1px;
+  --icon-bg-active: light-dark(#3b3026, #e4d8c3);
   --icon-color: #ab916d;
-  --icon-color-active: #4e3e2d;
-  --icon-color-focused: #d7c0a3;
+  --icon-color-active: light-dark(#ab916d, #836b49);
+  --icon-color-focused: light-dark(#917959, #9d8062);
   --icon-color-hover: #ab916d;
   --icon-container-radius: 0px;
   --icon-l: 18px;
@@ -1096,15 +1473,20 @@ body {
   --icon-xs-stroke-width: 2px;
   --indent-size: 4;
   --indent-unit: 0.5625em;
-  --indentation-guide-color: #ffffff1f;
-  --indentation-guide-color-active: #ffffff4d;
+  --indentation-guide-color: light-dark(transparent, transparent);
+  --indentation-guide-color-active: light-dark(
+    color-mix(in srgb, #51402f 40%, #3b3026),
+    color-mix(in srgb, #51402f 40%, #3b3026)
+  );
   --indentation-guide-editing-indent: 0.85em;
   --indentation-guide-reading-indent: -1em;
   --indentation-guide-source-indent: 0.25em;
   --indentation-guide-width: 1px;
   --indentation-guide-width-active: 1px;
+  --inline-code-bg: light-dark(#211b17, #fcfaf8);
+  --inline-code-color: light-dark(#f7685e, #d9746d);
   --inline-code-radius: 4px;
-  --inline-title-color: #ebdac6;
+  --inline-title-color: light-dark(#ebdac6, #432e14);
   --inline-title-font: inherit;
   --inline-title-line-height: 1.2;
   --inline-title-margin-bottom: 0.5em;
@@ -1118,17 +1500,28 @@ body {
   --input-height: 32px;
   --input-placeholder-color: #917959;
   --input-radius: 10px;
-  --interactive-accent: #5a4533;
-  --interactive-accent-hover: #6c4f38;
-  --interactive-accent-hsl: 31, 27%, 24%;
+  --interactive-accent: light-dark(#5a4533, #5a4533);
+  --interactive-accent-hover: light-dark(#6c4f38, #6c4f38);
+  --interactive-accent-hsl: light-dark(#4e3e2d, #4e3e2d);
   --interactive-hover: #2e261f;
-  --interactive-normal: #1c1712;
+  --interactive-normal: light-dark(#26211c, #f2ece3);
   --interface-font-feature:
     "calt" 1, "case" 0, "ccmp" 1, "ss03" 1, "cv01" 1, "cv05" 1, "cv06" 1,
     "cv08" 0, "cv11" 1, "cv12" 0, "cv13" 0;
-  --italic-color: inherit;
+  --italic-color: light-dark(#4db2d1, #22729b);
+  --italic-highlight-bg: light-dark(#2ab1c033, #2ab1c033);
+  --italic-highlight-color: light-dark(#d7c0a3, #d7c0a3);
   --italic-weight: inherit;
+  --kanban-item-bg: light-dark(#342c23, #fcfaf8);
+  --kanban-new-item-bg-hover: light-dark(#2e261f, var(--background-primary));
+  --kanban-new-item-color: light-dark(#917959, #917959);
+  --kanban-new-item-color-hover: light-dark(#ab916d, #ab916d);
+  --kanban-title-count-bg: light-dark(#3b3026, #e4d8c3);
+  --kanban-title-count-color: light-dark(#ab916d, #655134);
   --kanban-title-count-radius: 12px;
+  --kanban-title-text-input-color: light-dark(#d7c0a3, #d7c0a3);
+  --kbd-background: light-dark(#2a241e, #eee7dd);
+  --kbd-color: light-dark(#f7685e, #d9746d);
   --layer-cover: 5;
   --layer-dragged-item: 80;
   --layer-menu: 65;
@@ -1141,20 +1534,23 @@ body {
   --layer-tooltip: 70;
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;
-  --link-color: #4e3e2d;
-  --link-color-hover: #6c4f38;
+  --link-ahref-color: light-dark(#f7685e, #df453a);
+  --link-ahref-color-hover: light-dark(#fb8479, #d9746d);
+  --link-color: light-dark(#e5aa1f, #d79719);
+  --link-color-hover: light-dark(#e2bd60, #ecb936);
   --link-decoration: underline;
   --link-decoration-hover: underline;
   --link-decoration-opacity: 22%;
   --link-decoration-thickness: 1.5px;
-  --link-external-color: #4e3e2d;
-  --link-external-color-hover: #6c4f38;
+  --link-external-color: light-dark(#2ea873, #329562);
+  --link-external-color-hover: light-dark(#4ec68e, #3eb174);
   --link-external-decoration: underline;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
   --link-opacity-active: 0.5;
   --link-underline-offset: 2px;
-  --link-unresolved-color: #4e3e2d;
+  --link-unresolved-color: light-dark(#917959, #b79d7b);
+  --link-unresolved-color-hover: light-dark(#ab916d, #cfb696);
   --link-unresolved-decoration-color: #4e3e2d4d;
   --link-unresolved-decoration-style: solid;
   --link-unresolved-filter: none;
@@ -1169,15 +1565,21 @@ body {
   --list-indent: 2.25em;
   --list-indent-editing: 0.6em;
   --list-indent-source: 0;
-  --list-marker-color: #917959;
-  --list-marker-color-collapsed: #4e3e2d;
-  --list-marker-color-hover: #ab916d;
+  --list-marker-color: light-dark(#917959, #b79d7b);
+  --list-marker-color-collapsed: light-dark(#ab916d, #9d8062);
+  --list-marker-color-hover: light-dark(#c7b194, #836b49);
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
+  --loading-line-bg-color: light-dark(#26211c, #26211c);
+  --loading-line-color: light-dark(#6abfd2, #63a2bb);
   --menu-backdrop-filter: none;
   --menu-background: #26211c;
   --menu-border-color: color-mix(in srgb, #51402f 40%, #3b3026);
   --menu-border-width: 1px;
+  --menu-item-bg-active: light-dark(#211b17, #ebe3d6);
+  --menu-item-color-active: light-dark(#6b563d, #cfb696);
+  --menu-item-icon-color: light-dark(#917959, #b79d7b);
+  --menu-item-icon-color-active: light-dark(#6b563d, #cfb696);
   --menu-item-radius: 7px;
   --menu-padding: 6px;
   --menu-radius: 8px;
@@ -1190,7 +1592,7 @@ body {
   --metadata-container-padding: 12px 12px;
   --metadata-display-editing: block;
   --metadata-display-reading: block;
-  --metadata-divider-color: transparent;
+  --metadata-divider-color: light-dark(transparent, transparent);
   --metadata-divider-color-focus: transparent;
   --metadata-divider-color-hover: transparent;
   --metadata-divider-width: 0px;
@@ -1205,9 +1607,11 @@ body {
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: 28px;
   --metadata-input-longtext-lines: 3;
-  --metadata-input-text-color: #d7c0a3;
+  --metadata-input-text-color: light-dark(#ab916d, #655134);
+  --metadata-key-input-color: light-dark(#917959, #836b49);
+  --metadata-key-input-color-active: light-dark(#c7b194, #655134);
   --metadata-label-background: transparent;
-  --metadata-label-background-active: #0000004d;
+  --metadata-label-background-active: light-dark(transparent, transparent);
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
     "??", "Inter", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
@@ -1220,6 +1624,9 @@ body {
   --metadata-label-width: 9em;
   --metadata-max-width: none;
   --metadata-padding: 8px 0;
+  --metadata-properties-title-color: light-dark(#6b563d, #cfb696);
+  --metadata-properties-title-color-collapsed: light-dark(#6b563d, #cfb696);
+  --metadata-properties-title-color-hover: light-dark(#917959, #b79d7b);
   --metadata-property-background: transparent;
   --metadata-property-background-active: #0000004d;
   --metadata-property-background-hover: transparent;
@@ -1233,8 +1640,12 @@ body {
   --metadata-property-radius-hover: 6px;
   --metadata-sidebar-input-font-size: 14.992px;
   --metadata-sidebar-label-font-size: 14.992px;
+  --metadata-tab-background: light-dark(#26211c, #26211c);
   --modal-background: var(--background-primary);
-  --modal-border-color: #917959;
+  --modal-border-color: light-dark(
+    color-mix(in srgb, #51402f 40%, #3b3026),
+    color-mix(in srgb, #51402f 40%, #3b3026)
+  );
   --modal-border-width: 0.5pt;
   --modal-close-button-size: 20px;
   --modal-community-sidebar-width: 280px;
@@ -1246,31 +1657,44 @@ body {
   --modal-width: 90vw;
   --monospace-font-feature:
     "calt" 1, "ss01" 1, "ss02" 1, "ss03" 1, "ss05" 1, "ss19" 1, "zero" 1;
-  --nav-collapse-icon-color: #6b563d;
-  --nav-collapse-icon-color-collapsed: #917959;
+  --nav-collapse-icon-color: light-dark(#6b563d, #6b563d);
+  --nav-collapse-icon-color-collapsed: light-dark(#917959, #917959);
   --nav-file-padding-active: 4px 8px 6px 24px;
+  --nav-file-tag-color: light-dark(#6b563d, #9d8062);
+  --nav-folder-1-color: light-dark(#f35044, #bf3f36);
+  --nav-folder-10-color: light-dark(#2ea873, #1a7a4f);
+  --nav-folder-11-color: light-dark(#4db2d1, #22729b);
+  --nav-folder-12-color: light-dark(#8a87d9, #744596);
+  --nav-folder-2-color: light-dark(#eb6a14, #d75c28);
+  --nav-folder-3-color: light-dark(#e5aa1f, #b67a02);
+  --nav-folder-4-color: light-dark(#2ea873, #1a7a4f);
+  --nav-folder-5-color: light-dark(#4db2d1, #22729b);
+  --nav-folder-6-color: light-dark(#8a87d9, #744596);
+  --nav-folder-7-color: light-dark(#f35044, #bf3f36);
+  --nav-folder-8-color: light-dark(#eb6a14, #d75c28);
+  --nav-folder-9-color: light-dark(#e5aa1f, #b67a02);
   --nav-folder-bg-color: transparent;
   --nav-folder-bg-color-hover: #00000020;
   --nav-folder-collapse-color: #d7c0a3;
   --nav-folder-color: #ab916d;
-  --nav-heading-color: #d7c0a3;
-  --nav-heading-color-collapsed: #917959;
-  --nav-heading-color-collapsed-hover: #ab916d;
-  --nav-heading-color-hover: #d7c0a3;
+  --nav-heading-color: light-dark(#917959, #836b49);
+  --nav-heading-color-collapsed: light-dark(#917959, #836b49);
+  --nav-heading-color-collapsed-hover: light-dark(#917959, #836b49);
+  --nav-heading-color-hover: light-dark(#917959, #836b49);
   --nav-heading-weight: 550;
   --nav-heading-weight-hover: 550;
-  --nav-indentation-guide-color: transparent;
+  --nav-indentation-guide-color: light-dark(transparent, transparent);
   --nav-indentation-guide-width: 1px;
   --nav-item-background-active: #0000004d;
   --nav-item-background-hover: #0000004d;
   --nav-item-background-selected: #4e3e2d26;
   --nav-item-children-margin-start: 12px;
   --nav-item-children-padding-start: 4px;
-  --nav-item-color: #ab916d;
-  --nav-item-color-active: #d7c0a3;
-  --nav-item-color-highlighted: #4e3e2d;
-  --nav-item-color-hover: #d7c0a3;
-  --nav-item-color-selected: #d7c0a3;
+  --nav-item-color: light-dark(#ab916d, #7b6242);
+  --nav-item-color-active: light-dark(#ab916d, #7b6242);
+  --nav-item-color-highlighted: light-dark(#6c4f38, #6c4f38);
+  --nav-item-color-hover: light-dark(#ab916d, #7b6242);
+  --nav-item-color-selected: light-dark(#d7c0a3, #f8f5f1);
   --nav-item-padding: 5px 8px 5px 24px;
   --nav-item-parent-padding: 6px 8px 6px 24px;
   --nav-item-radius: 6px;
@@ -1280,6 +1704,11 @@ body {
   --nav-item-weight-hover: inherit;
   --nav-item-white-space: nowrap;
   --new-tab-btn-radius: 2em;
+  --non-alternating-color: light-dark(#6b563d, #cfb696);
+  --non-alternating-color-hover-active: light-dark(#51402f, #e4d8c3);
+  --normal-highlight-bg: light-dark(#ffbb0033, #ffbb0033);
+  --normal-highlight-color: light-dark(#d7c0a3, #d7c0a3);
+  --notice-color: light-dark(#d7c0a3, #ebdac6);
   --p-spacing: 1rem;
   --p-spacing-empty: 0rem;
   --pdf-background: var(--background-primary);
@@ -1289,14 +1718,14 @@ body {
   --pdf-spread-shadow: 0 0 0 1px #0000000d;
   --pdf-thumbnail-shadow: 0 0 0 1px #00000026, 0 2px 8px #00000033;
   --pill-background: transparent;
-  --pill-background-hover: transparent;
+  --pill-background-hover: light-dark(transparent, transparent);
   --pill-border-color: transparent;
   --pill-border-color-hover: color-mix(in srgb, #51402f 40%, #3b3026);
   --pill-border-width: 0.5pt;
-  --pill-color: #ab916d;
-  --pill-color-hover: #d7c0a3;
-  --pill-color-remove: #917959;
-  --pill-color-remove-hover: #4e3e2d;
+  --pill-color: light-dark(#c7b194, #655134);
+  --pill-color-hover: light-dark(#d7c0a3, #432e14);
+  --pill-color-remove: light-dark(#6b563d, #cfb696);
+  --pill-color-remove-hover: light-dark(#6b563d, #cfb696);
   --pill-decoration: none;
   --pill-decoration-hover: none;
   --pill-focus-left-adjust: -4px;
@@ -1304,6 +1733,12 @@ body {
   --pill-padding-x: 0.65em;
   --pill-padding-y: 0.25em;
   --pill-radius: 2em;
+  --pill-tag-bg-1: light-dark(#ffbb0033, #ffbb0033);
+  --pill-tag-bg-2: light-dark(#f0516c33, #f0516c33);
+  --pill-tag-bg-3: light-dark(#2ab1c033, #2ab1c033);
+  --pill-tag-color-1: light-dark(#e5aa1f, #b67a02);
+  --pill-tag-color-2: light-dark(#f7685e, #9a2219);
+  --pill-tag-color-3: light-dark(#4db2d1, #0a4976);
   --pill-tag-weight: 550;
   --pill-weight: inherit;
   --pmr-cal-td-padding: 4px 4px 6px 4px;
@@ -1315,15 +1750,34 @@ body {
   --popover-pdf-width: 450px;
   --popover-width: 450px;
   --popup-bg-blur: 3px;
+  --progress-background: light-dark(#26211c, #eee7dd);
   --progress-border-width: 1px;
+  --progress-color-1: light-dark(#f35044, #df453a);
+  --progress-color-2: light-dark(#da5e16, #eb7d42);
+  --progress-color-3: light-dark(#da9a1b, #ecb936);
+  --progress-color-4: light-dark(#117449, #329562);
+  --progress-gradient-1: light-dark(#f35044, #d9746d);
+  --progress-gradient-2: light-dark(#e5aa1f, #e7c56f);
+  --progress-gradient-3: light-dark(#4db2d1, #63a2bb);
   --progress-height: 8px;
   --progress-value-radius: 8px;
   --progress-width: 220px;
   --prompt-border-color: #917959;
   --prompt-border-width: 0.5pt;
+  --prompt-input-background: light-dark(
+    var(--background-primary),
+    var(--background-primary)
+  );
   --prompt-input-height: 40px;
   --prompt-max-height: 70vh;
   --prompt-max-width: 80vw;
+  --prompt-results-background: light-dark(
+    var(--background-primary),
+    var(--background-primary)
+  );
+  --prompt-suggestion-color: light-dark(#ab916d, #9d8062);
+  --prompt-suggestion-color-selected: light-dark(#d7c0a3, #593e22);
+  --prompt-suggestion-highlight-color-selected: light-dark(#d7c0a3, #593e22);
   --prompt-width: 700px;
   --radius-l: 12px;
   --radius-m: 8px;
@@ -1338,19 +1792,32 @@ body {
   --ribbon-margin-bottom: 10px;
   --ribbon-padding: 8px 4px 12px;
   --ribbon-radius: 12px;
+  --ribbon-slideout-background: light-dark(#2a241e, #f2ece3);
   --ribbon-width: 44px;
-  --scrollbar-active-thumb-bg: #ffffff33;
+  --scrollbar-active-thumb-bg: light-dark(
+    color-mix(in srgb, #51402f 40%, #3b3026),
+    color-mix(in srgb, #51402f 40%, #3b3026)
+  );
   --scrollbar-bg: #ffffff0d;
-  --scrollbar-thumb-bg: #ffffff1a;
-  --search-clear-button-color: #ab916d;
+  --scrollbar-thumb-bg: light-dark(transparent, transparent);
+  --search-clear-button-color: light-dark(#d7c0a3, #d7c0a3);
+  --search-clear-button-color-hover: light-dark(#f35044, #f35044);
   --search-clear-button-size: 12px;
-  --search-icon-color: #ab916d;
+  --search-icon-color: light-dark(#d7c0a3, #b79d7b);
   --search-icon-size: 14px;
-  --search-result-background: var(--background-primary);
+  --search-result-background: light-dark(#2a241e, #2a241e);
+  --search-result-dest-file-bg: light-dark(#26211c, #f8f5f1);
+  --search-result-dest-file-color: light-dark(#917959, #836b49);
+  --search-result-dest-file-icon-color: light-dark(#51402f, #cfb696);
+  --settings-nav-group-title-color: light-dark(#6b563d, #cfb696);
+  --settings-nav-item-active-color: light-dark(#2e261f, #fcfaf8);
   --settings-nav-item-padding: 7px 12px 7px 12px;
   --settings-nav-item-padding-active: 6px 12px 8px 20px;
   --settings-nav-item-padding-hover: 7px 12px 7px 20px;
   --settings-nav-item-radius: 7px;
+  --settings-nav-item-text-color: light-dark(#ab916d, #7b6242);
+  --settings-nav-item-text-color-active: light-dark(#51402f, #b79d7b);
+  --settings-nav-item-text-color-hover: light-dark(#d7c0a3, #593e22);
   --sidebar-markdown-font-size: 14.4px;
   --sidebar-nav-icon: 18px;
   --sidebar-tab-icon: 18px;
@@ -1372,24 +1839,32 @@ body {
   --size-4-9: 36px;
   --slider-s-thumb-position: -5px;
   --slider-s-thumb-size: 15px;
+  --slider-thumb-bg: light-dark(#d7c0a3, #fcfaf8);
   --slider-thumb-border-color: color-mix(in srgb, #51402f 40%, #3b3026);
   --slider-thumb-border-width: 1px;
   --slider-thumb-height: 18px;
   --slider-thumb-radius: 50%;
   --slider-thumb-width: 18px;
   --slider-thumb-y: -6px;
-  --slider-track-background: transparent;
+  --slider-track-background: light-dark(#26211c, #e4d8c3);
   --slider-track-height: 5px;
   --status-bar-background: #26211c;
   --status-bar-border-color: transparent;
   --status-bar-border-width: 1px 0 0 1px;
+  --status-bar-floating-bg: light-dark(#2a241e, #f2ece3);
   --status-bar-floating-offset: 4px;
   --status-bar-floating-opacity: 0.5;
   --status-bar-floating-opacity-hover: 1;
   --status-bar-font-size: 12.8px;
+  --status-bar-item-clickable-color-active: light-dark(#6b563d, #cfb696);
+  --status-bar-item-color: light-dark(#917959, #b79d7b);
+  --status-bar-item-color-hover: light-dark(#c7b194, #836b49);
   --status-bar-position: fixed;
   --status-bar-radius: 8px 0 0 0;
   --status-bar-text-color: #ab916d;
+  --strikethrough-color: light-dark(#917959, #b79d7b);
+  --strikethrough-highlight-bg: light-dark(#ffbb0033, #ffbb0033);
+  --strikethrough-highlight-color: light-dark(#917959, #917959);
   --swatch-height: 24px;
   --swatch-radius: 14px;
   --swatch-shadow: inset 0 0 0 1px #ffffff26;
@@ -1403,11 +1878,27 @@ body {
   --sync-avatar-color-7: #7161c2;
   --sync-avatar-color-8: #b46464;
   --sync-avatar-color-current-user: transparent;
-  --tab-background-active: var(--background-primary);
-  --tab-container-background: #26211c;
+  --sync-icon-success: light-dark(#117449, #329562);
+  --sync-icon-success-active: light-dark(#6b563d, #6b563d);
+  --sync-icon-success-hover: light-dark(#108454, #3eb174);
+  --sync-icon-working: light-dark(#bd4914, #e3985f);
+  --sync-icon-working-active: light-dark(#6b563d, #6b563d);
+  --sync-icon-working-hover: light-dark(#da5e16, #eb7d42);
+  --tab-active-bg: light-dark(
+    var(--background-primary),
+    var(--background-primary)
+  );
+  --tab-background-active: light-dark(
+    var(--background-primary),
+    var(--background-primary)
+  );
+  --tab-container-background: light-dark(#26211c, #26211c);
   --tab-curve: 6px;
   --tab-curves-display: none;
-  --tab-divider-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  --tab-divider-color: light-dark(
+    color-mix(in srgb, #51402f 40%, #3b3026),
+    color-mix(in srgb, #51402f 40%, #3b3026)
+  );
   --tab-font-size: 14.992px;
   --tab-font-weight: inherit;
   --tab-header-container-border-bottom: none;
@@ -1435,22 +1926,22 @@ body {
   --tab-switcher-preview-radius: 16px;
   --tab-switcher-preview-shadow: 0 0 0 1px #ffffff0d;
   --tab-switcher-preview-shadow-active: 0 0 0 2px #4e3e2d;
-  --tab-text-color: #917959;
-  --tab-text-color-active: #ab916d;
-  --tab-text-color-focused: #ab916d;
-  --tab-text-color-focused-active: #ab916d;
-  --tab-text-color-focused-active-current: #d7c0a3;
-  --tab-text-color-focused-highlighted: #4e3e2d;
+  --tab-text-color: light-dark(#917959, #917959);
+  --tab-text-color-active: light-dark(#ab916d, #ab916d);
+  --tab-text-color-focused: light-dark(#ab916d, #ab916d);
+  --tab-text-color-focused-active: light-dark(#ab916d, #ab916d);
+  --tab-text-color-focused-active-current: light-dark(#d7c0a3, #d7c0a3);
+  --tab-text-color-focused-highlighted: light-dark(#4e3e2d, #4e3e2d);
   --tab-width: 200px;
   --tab-z-index: 1;
   --table-add-button-background: transparent;
   --table-add-button-border-color: transparent;
   --table-add-button-border-width: 1px;
-  --table-background: transparent;
+  --table-background: light-dark(#26211c, #fcfaf8);
   --table-border-color: transparent;
   --table-border-width: 1px;
   --table-cell-vertical-alignment: top;
-  --table-column-alt-background: #26211c;
+  --table-column-alt-background: light-dark(#211b17, #f2ece3);
   --table-column-first-border-width: 1px;
   --table-column-last-border-width: 1px;
   --table-column-max-width: none;
@@ -1459,8 +1950,8 @@ body {
   --table-drag-handle-background-active: #5a4533;
   --table-drag-handle-color: #917959;
   --table-drag-handle-color-active: #ebdac6;
-  --table-header-background: #26211c;
-  --table-header-background-hover: inherit;
+  --table-header-background: light-dark(#211b17, #f2ece3);
+  --table-header-background-hover: light-dark(#211b17, #211b17);
   --table-header-border-color: transparent;
   --table-header-border-width: 1px;
   --table-header-color: #d7c0a3;
@@ -1485,8 +1976,8 @@ body {
   --tag-border-color: #4e3e2d26;
   --tag-border-color-hover: #4e3e2d26;
   --tag-border-width: 0px;
-  --tag-color: #4e3e2d;
-  --tag-color-hover: #4e3e2d;
+  --tag-color: light-dark(#4197b9, #22729b);
+  --tag-color-hover: light-dark(#4db2d1, #2a90cb);
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-padding-x: 0.6em;
@@ -1494,50 +1985,64 @@ body {
   --tag-radius: 1em;
   --tag-size: 0.875em;
   --tag-weight: inherit;
-  --text-accent: #4e3e2d;
-  --text-accent-hover: #6c4f38;
-  --text-error: #c04e4e;
-  --text-faint: #ab916d;
+  --text-accent: light-dark(#4e3e2d, #4e3e2d);
+  --text-accent-hover: light-dark(#6c4f38, #6c4f38);
+  --text-error: light-dark(#f35044, #bf3f36);
+  --text-faint: light-dark(#917959, #b79d7b);
   --text-font-feature:
     "calt" 1, "case" 0, "ccmp" 1, "ss03" 1, "cv01" 1, "cv05" 1, "cv06" 1,
     "cv08" 0, "cv11" 1, "cv12" 0, "cv13" 0;
-  --text-highlight-bg: #f9cf5166;
-  --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: #d7c0a3;
-  --text-normal: #ebdac6;
-  --text-on-accent: #ffffff;
-  --text-on-accent-inverted: #000000;
-  --text-selection: #4e3e2d33;
-  --text-success: #50c465;
-  --text-warning: #cb8035;
-  --titlebar-background: #26211c;
-  --titlebar-background-focused: #26211c;
+  --text-highlight-bg: light-dark(#ffbb0033, #ffbb0033);
+  --text-highlight-bg-rgb: light-dark(#f9cf51, #f9cf51);
+  --text-input-border-color: light-dark(#1c1712, #e4d8c3);
+  --text-input-color: light-dark(#d7c0a3, #593e22);
+  --text-input-color-focused: light-dark(#d7c0a3, #593e22);
+  --text-muted: light-dark(#ab916d, #836b49);
+  --text-normal: light-dark(#d7c0a3, #593e22);
+  --text-on-accent: light-dark(#ebdac6, #fcfaf8);
+  --text-on-accent-inverted: light-dark(#1c1712, #432e14);
+  --text-selection: light-dark(#7e694e33, #cfb69626);
+  --text-success: light-dark(#108454, #329562);
+  --text-warning: light-dark(#da5e16, #d75c28);
+  --titlebar-background: light-dark(#26211c, #26211c);
+  --titlebar-background-focused: light-dark(#26211c, #26211c);
   --titlebar-border-color: transparent;
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;
-  --titlebar-text-color: #ab916d;
-  --titlebar-text-color-focused: #d7c0a3;
+  --titlebar-text-color: light-dark(#51402f, #e4d8c3);
+  --titlebar-text-color-focused: light-dark(#6b563d, #cfb696);
   --titlebar-text-weight: 450;
+  --toggle-bg-enabled: light-dark(#117449, #329562);
   --toggle-border-width: 2px;
   --toggle-radius: 18px;
   --toggle-s-border-width: 2px;
   --toggle-s-thumb-height: 15px;
   --toggle-s-thumb-width: 15px;
   --toggle-s-width: 34px;
-  --toggle-thumb-color: #ffffff;
+  --toggle-thumb-color: light-dark(#ebdac6, #fcfaf8);
   --toggle-thumb-height: 18px;
   --toggle-thumb-radius: 18px;
   --toggle-thumb-width: 18px;
   --toggle-width: 40px;
+  --underline-color: light-dark(#d7c0a3, #d7c0a3);
   --underline-decoration-opacity: 22%;
+  --vault-name-background: light-dark(#2a241e, #f2ece3);
   --vault-name-border-width: 1px;
+  --vault-name-color: light-dark(#ab916d, #836b49);
+  --vault-name-color-hover: light-dark(#c7b194, #655134);
   --vault-profile-actions-display: flex;
-  --vault-profile-color: #d7c0a3;
+  --vault-profile-color: light-dark(#ab916d, #ab916d);
   --vault-profile-color-hover: #ab916d;
   --vault-profile-display: flex;
   --vault-profile-font-size: 14.992px;
   --vault-profile-font-weight: 650;
   --workspace-background-translucent: #00000099;
+  --yaml-atom-color: light-dark(#6abfd2, #63a2bb);
+  --yaml-base-color: light-dark(#f7685e, #d9746d);
+  --yaml-def-meta-color: light-dark(#917959, #cfb696);
+  --yaml-keyword-color: light-dark(#da9a1b, #d79719);
+  --yaml-number-color: light-dark(#f7685e, #d9746d);
+  --yaml-string-color: light-dark(#da9a1b, #d79719);
   --zoom-factor: 1;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
@@ -2296,7 +2801,32 @@ input[type="search"] {
 }
 
 .tree-item-self.is-being-dragged {
-  background-color: #5a4533;
+  background-color: light-dark(
+    light-dark(
+      hsl(
+        calc(light-dark(31, 31) - 3),
+        calc(light-dark(27%, 23%) * 1.02),
+        calc(light-dark(24%, 50%) * 1.15)
+      ),
+      hsl(
+        calc(light-dark(31, 31) - 1),
+        calc(light-dark(27%, 23%) * 1.01),
+        calc(light-dark(24%, 50%) * 1.075)
+      )
+    ),
+    light-dark(
+      hsl(
+        calc(light-dark(31, 31) - 3),
+        calc(light-dark(27%, 23%) * 1.02),
+        calc(light-dark(24%, 50%) * 1.15)
+      ),
+      hsl(
+        calc(light-dark(31, 31) - 1),
+        calc(light-dark(27%, 23%) * 1.01),
+        calc(light-dark(24%, 50%) * 1.075)
+      )
+    )
+  );
   color: #ebdac6;
 }
 

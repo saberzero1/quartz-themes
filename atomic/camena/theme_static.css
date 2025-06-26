@@ -946,7 +946,7 @@
     hsl(253, 92.4%, 85.14%),
     hsl(255, 89.76%, 75.9%)
   );
-  --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
@@ -1597,6 +1597,7 @@
 }
 
 body {
+  --accent-color: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --accent-h: 258;
   --accent-l: 66%;
   --accent-s: 88%;
@@ -1617,13 +1618,17 @@ body {
   --background-modifier-error-hover: hsl(5, 88%, 66%);
   --background-modifier-error-rgb: from hsl(5, 88%, 66%) r g b;
   --background-modifier-form-field: #000;
-  --background-modifier-hover: rgba(from hsl(258, 88%, 66%) r g b / 0.2);
+  --background-modifier-hover: rgba(138, 92, 245, 0.2);
   --background-modifier-message: hsl(258, 88%, 66%);
   --background-modifier-success: hsl(100, 88%, 66%);
   --background-modifier-success-rgb: from hsl(100, 88%, 66%) r g b;
   --background-primary: #000;
   --background-primary-alt: #111;
   --background-secondary: hsl(258, 29.33333%, 5%);
+  --background-secondary-alt: light-dark(
+    hsl(258, 29.33333%, 5%),
+    hsl(258, 29.33333%, 5%)
+  );
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -1631,7 +1636,7 @@ body {
   --bases-header-height: 40px;
   --bases-header-padding-end: 2px;
   --bases-header-padding-start: 2px;
-  --bases-table-border-color: rgb(from hsl(258, 88%, 66%) r g b);
+  --bases-table-border-color: rgb(138, 92, 245);
   --bases-table-cell-background-active: #000;
   --bases-table-cell-background-disabled: rgba(0, 0, 0, 0.5);
   --bases-table-cell-radius-active: 2px;
@@ -1651,7 +1656,7 @@ body {
     black 24px
   );
   --bases-table-header-weight: 600;
-  --bases-table-row-background-hover: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+  --bases-table-row-background-hover: rgba(138, 92, 245, 0.1);
   --bases-table-row-border-width: 1px;
   --bases-table-row-height: 30px;
   --bases-table-text-size: 0.875em;
@@ -1659,7 +1664,7 @@ body {
   --blockquote-background-color: transparent;
   --blockquote-border-color: hsl(258, 88%, 66%);
   --blockquote-border-thickness: 2px;
-  --blockquote-color: rgba(from hsl(258, 88%, 66%) r g b / 0.2);
+  --blockquote-color: rgba(138, 92, 245, 0.2);
   --blockquote-font-style: normal;
   --bold-color: inherit;
   --bold-modifier: 200;
@@ -1714,7 +1719,7 @@ body {
   --checklist-done-color: hsl(258, 29.33333%, 40%);
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: 4px;
-  --code-background: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+  --code-background: rgba(138, 92, 245, 0.1);
   --code-border-color: transparent;
   --code-border-width: 0px;
   --code-comment: hsl(258, 29.33333%, 35%);
@@ -1733,6 +1738,37 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: hsl(258, 29.33333%, 25%);
   --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+  --color-accent: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
+  --color-accent-1: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(257, 88.88%, 70.95%)
+  );
+  --color-accent-2: light-dark(
+    hsl(253, 92.4%, 85.14%),
+    hsl(255, 89.76%, 75.9%)
+  );
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-grey: light-dark(hsl(0, 0, 66%), hsl(0, 0, 66%));
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -1798,8 +1834,10 @@ body {
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid:
-    "??", "??", Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif, "Arial";
+    "??", Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif,
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
   --font-monospace:
     "??", ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
     "DejaVu Sans Mono", monospace, ui-monospace, SFMono-Regular,
@@ -1823,8 +1861,10 @@ body {
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
   --font-text:
-    "??", "??", Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif, "Arial";
+    "??", Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif,
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme:
@@ -1855,7 +1895,7 @@ body {
   --graph-node-attachment: hsl(210, 88%, 66%);
   --graph-node-focused: hsl(255, 89.76%, 75.9%);
   --graph-node-tag: hsl(50, 88%, 66%);
-  --graph-node-unresolved: rgba(from hsl(5, 88%, 66%) r g b / 0.8);
+  --graph-node-unresolved: rgba(245, 105, 92, 0.8);
   --graph-text: hsl(258, 29.33333%, 80%);
   --h1-color: hsl(258, 88%, 66%);
   --h1-font: inherit;
@@ -1971,12 +2011,12 @@ body {
   --link-decoration-hover: wavy;
   --link-decoration-thickness: auto;
   --link-external-color: hsl(258, 88%, 66%);
-  --link-external-color-hover: rgb(from hsl(258, 88%, 66%) r g b);
+  --link-external-color-hover: rgb(138, 92, 245);
   --link-external-decoration: none;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
-  --link-unresolved-color: rgb(from hsl(258, 88%, 66%) r g b);
-  --link-unresolved-decoration-color: rgba(from hsl(258, 88%, 66%) r g b / 0.3);
+  --link-unresolved-color: rgb(138, 92, 245);
+  --link-unresolved-decoration-color: rgba(138, 92, 245, 0.3);
   --link-unresolved-decoration-style: solid;
   --link-unresolved-filter: none;
   --link-unresolved-opacity: 0.7;
@@ -2240,16 +2280,16 @@ body {
   --table-drag-handle-color-active: white;
   --table-header-background: hsl(258, 88%, 66%);
   --table-header-background-hover: hsl(258, 88%, 66%);
-  --table-header-border-color: rgb(from hsl(258, 88%, 66%) r g b);
+  --table-header-border-color: rgb(138, 92, 245);
   --table-header-border-width: 0.1rem;
   --table-header-color: #000;
   --table-header-font: inherit;
   --table-header-size: 16px;
   --table-header-weight: 800;
   --table-line-height: 1.3;
-  --table-row-alt-background: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
-  --table-row-alt-background-hover: rgba(from hsl(258, 88%, 66%) r g b / 0.2);
-  --table-row-background-hover: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+  --table-row-alt-background: rgba(138, 92, 245, 0.1);
+  --table-row-alt-background-hover: rgba(138, 92, 245, 0.2);
+  --table-row-background-hover: rgba(138, 92, 245, 0.1);
   --table-row-last-border-width: 0.1rem;
   --table-selection: hsla(258, 88%, 66%, 0.1);
   --table-selection-blend-mode: darken;
@@ -2277,7 +2317,7 @@ body {
   --text-accent-hover: hsl(253, 92.4%, 85.14%);
   --text-error: hsl(5, 88%, 66%);
   --text-faint: hsl(258, 29.33333%, 25%);
-  --text-highlight-bg: rgba(from hsl(258, 88%, 66%) r g b / 0.25);
+  --text-highlight-bg: rgba(138, 92, 245, 0.25);
   --text-highlight-bg-rgb: from hsl(258, 88%, 66%) r g b;
   --text-muted: hsl(258, 29.33333%, 40%);
   --text-normal: hsl(258, 29.33333%, 80%);
@@ -2750,7 +2790,7 @@ body.is-translucent {
 }
 
 .is-flashing {
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.15);
+  background-color: rgba(138, 92, 245, 0.15);
   border-radius: 4px;
   color: hsl(258, 29.33333%, 80%);
   mix-blend-mode: darken;
@@ -2949,8 +2989,24 @@ body:not(.is-mobile) .app-container {
   --list-marker-space: 0;
   --list-padding-inline-start: 0;
   font-family:
-    "??", "??", Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif, "Arial";
+    "??",
+    Avenir,
+    Montserrat,
+    Corbel,
+    "URW Gothic",
+    source-sans-pro,
+    sans-serif,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
 }
 
@@ -3101,8 +3157,24 @@ body:not(.is-mobile) .app-container {
 
 .markdown-source-view.mod-cm6 .cm-scroller {
   font-family:
-    "??", "??", Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif, "Arial";
+    "??",
+    Avenir,
+    Montserrat,
+    Corbel,
+    "URW Gothic",
+    source-sans-pro,
+    sans-serif,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   line-height: 1.5;
   scrollbar-gutter: stable;
 }
@@ -4364,8 +4436,24 @@ body:not(.show-inline-title) .inline-title:not([data-level]) {
   -webkit-user-select: text;
   color: hsl(258, 29.33333%, 80%);
   font-family:
-    "??", "??", Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif, "Arial";
+    "??",
+    Avenir,
+    Montserrat,
+    Corbel,
+    "URW Gothic",
+    source-sans-pro,
+    sans-serif,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
   height: 100%;
   line-height: 1.5;
@@ -5650,7 +5738,7 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
 }
 
 .community-item .suggestion-highlight {
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.15);
+  background-color: rgba(138, 92, 245, 0.15);
 }
 
 @media (hover: hover) {
@@ -5820,8 +5908,24 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
   -webkit-user-select: text;
   color: hsl(258, 29.33333%, 80%);
   font-family:
-    "??", "??", Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif, "Arial";
+    "??",
+    Avenir,
+    Montserrat,
+    Corbel,
+    "URW Gothic",
+    source-sans-pro,
+    sans-serif,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
   line-height: 1.5;
   overflow-wrap: break-word;
@@ -7854,19 +7958,19 @@ button.mod-destructive {
 }
 
 .diff-line.mod-left {
-  background-color: rgba(from hsl(5, 88%, 66%) r g b / 0.2);
+  background-color: rgba(245, 105, 92, 0.2);
 }
 
 .diff-line.mod-left .diff-changed {
-  background-color: rgba(from hsl(5, 88%, 66%) r g b / 0.4);
+  background-color: rgba(245, 105, 92, 0.4);
 }
 
 .diff-line.mod-right {
-  background-color: rgba(from hsl(100, 88%, 66%) r g b / 0.2);
+  background-color: rgba(143, 245, 92, 0.2);
 }
 
 .diff-line.mod-right .diff-changed {
-  background-color: rgba(from hsl(100, 88%, 66%) r g b / 0.4);
+  background-color: rgba(143, 245, 92, 0.4);
 }
 
 .diff-collapsed {
@@ -7939,19 +8043,19 @@ button.mod-destructive {
 }
 
 .document-search-input.mod-no-match {
-  background-color: rgba(from hsl(5, 88%, 66%) r g b / 0.2);
+  background-color: rgba(245, 105, 92, 0.2);
 }
 
 .document-replace-input.mod-no-match {
-  background-color: rgba(from hsl(5, 88%, 66%) r g b / 0.2);
+  background-color: rgba(245, 105, 92, 0.2);
 }
 
 @media (hover: hover) {
   .document-search-input.mod-no-match:hover {
-    background-color: rgba(from hsl(5, 88%, 66%) r g b / 0.2);
+    background-color: rgba(245, 105, 92, 0.2);
   }
   .document-replace-input.mod-no-match:hover {
-    background-color: rgba(from hsl(5, 88%, 66%) r g b / 0.2);
+    background-color: rgba(245, 105, 92, 0.2);
   }
 }
 
@@ -7997,7 +8101,7 @@ button.mod-destructive {
 }
 
 .cm-s-obsidian span.obsidian-search-match-highlight {
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.15);
+  background-color: rgba(138, 92, 245, 0.15);
   border-radius: 0.2rem;
   box-shadow: none;
   mix-blend-mode: darken;
@@ -11221,9 +11325,9 @@ audio::-webkit-media-controls-time-remaining-display {
 }
 
 kbd {
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+  background-color: rgba(138, 92, 245, 0.1);
   border-radius: 4px;
-  color: rgb(from hsl(258, 88%, 66%) r g b);
+  color: rgb(138, 92, 245);
   font-family:
     "??", ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
     "DejaVu Sans Mono", monospace, ui-monospace, SFMono-Regular,
@@ -11348,7 +11452,7 @@ kbd {
 }
 
 .textLayer .mod-focused {
-  background-color: rgb(from hsl(258, 88%, 66%) r g b);
+  background-color: rgb(138, 92, 245);
   border-radius: 4px;
   box-sizing: content-box;
   margin: -4px;
@@ -11360,8 +11464,8 @@ kbd {
 }
 
 .annotationLayer .mod-focused {
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
-  border: 4px solid rgba(from hsl(258, 88%, 66%) r g b / 0.8);
+  background-color: rgba(138, 92, 245, 0.1);
+  border: 4px solid rgba(138, 92, 245, 0.8);
   border-radius: 4px;
   box-shadow:
     0px 1px 2px rgba(0, 0, 0, 0.121),
@@ -11531,12 +11635,12 @@ kbd {
 
 .markdown-rendered blockquote {
   --color: from hsl(258, 88%, 66%) r g b;
-  --hr-color: rgb(from hsl(258, 88%, 66%) r g b);
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+  --hr-color: rgb(138, 92, 245);
+  background-color: rgba(138, 92, 245, 0.1);
   border-inline-start: 2px solid hsl(258, 88%, 66%);
-  border-left: 0.5rem solid rgb(from hsl(258, 88%, 66%) r g b);
+  border-left: 0.5rem solid rgb(138, 92, 245);
   border-radius: 0.5rem;
-  color: rgba(from hsl(258, 88%, 66%) r g b / 0.2);
+  color: rgba(138, 92, 245, 0.2);
   font-style: normal;
   margin-inline-end: 0;
   margin-inline-start: 0;
@@ -11556,11 +11660,11 @@ kbd {
 }
 
 .cm-s-obsidian span.cm-quote {
-  color: rgba(from hsl(258, 88%, 66%) r g b / 0.2);
+  color: rgba(138, 92, 245, 0.2);
 }
 
 .cm-s-obsidian span.cm-formatting-quote {
-  color: rgba(from hsl(258, 88%, 66%) r g b / 0.6);
+  color: rgba(138, 92, 245, 0.6);
 }
 
 .cm-s-obsidian .hmd-inactive-line span.cm-formatting-quote {
@@ -11596,9 +11700,9 @@ kbd {
 
 .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
   --color: from hsl(258, 88%, 66%) r g b;
-  --hr-color: rgb(from hsl(258, 88%, 66%) r g b);
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
-  border-left: 0.5rem solid rgb(from hsl(258, 88%, 66%) r g b);
+  --hr-color: rgb(138, 92, 245);
+  background-color: rgba(138, 92, 245, 0.1);
+  border-left: 0.5rem solid rgb(138, 92, 245);
   font-style: var(--blockquote-style);
   padding-inline-end: 0.5rem;
 }
@@ -11610,8 +11714,8 @@ kbd {
 .callout {
   --callout-color: from hsl(210, 88%, 66%) r g b;
   --callout-icon: lucide-pencil;
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
-  border-color: rgba(from hsl(258, 88%, 66%) r g b / 0.25);
+  background-color: rgba(138, 92, 245, 0.1);
+  border-color: rgba(138, 92, 245, 0.25);
   border-radius: 4px;
   border-style: solid;
   border-width: 0px;
@@ -11757,7 +11861,7 @@ kbd {
 
 .callout-title {
   align-items: flex-start;
-  color: rgb(from hsl(258, 88%, 66%) r g b);
+  color: rgb(138, 92, 245);
   display: flex;
   font-size: inherit;
   gap: 4px;
@@ -11783,7 +11887,7 @@ kbd {
 }
 
 .callout-icon .svg-icon {
-  color: rgb(from hsl(258, 88%, 66%) r g b);
+  color: rgb(138, 92, 245);
 }
 
 .callout-icon::after {
@@ -11824,10 +11928,10 @@ kbd {
 
 .markdown-rendered code {
   -webkit-box-decoration-break: clone;
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+  background-color: rgba(138, 92, 245, 0.1);
   border: 0px solid transparent;
   border-radius: 4px;
-  color: rgb(from hsl(258, 88%, 66%) r g b);
+  color: rgb(138, 92, 245);
   font-family:
     "??", ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
     "DejaVu Sans Mono", monospace, ui-monospace, SFMono-Regular,
@@ -11839,8 +11943,8 @@ kbd {
 
 .cm-s-obsidian span.cm-inline-code {
   -webkit-box-decoration-break: clone;
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
-  color: rgb(from hsl(258, 88%, 66%) r g b);
+  background-color: rgba(138, 92, 245, 0.1);
+  color: rgb(138, 92, 245);
   font-size: 1em;
   vertical-align: baseline;
 }
@@ -11854,7 +11958,7 @@ kbd {
   span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(
     .obsidian-search-match-highlight
   ) {
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+  background-color: rgba(138, 92, 245, 0.1);
   vertical-align: baseline;
 }
 
@@ -11908,7 +12012,7 @@ kbd {
 }
 
 .markdown-rendered pre {
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+  background-color: rgba(138, 92, 245, 0.1);
   border: 0px solid transparent;
   border-radius: 4px;
   min-height: 38px;
@@ -12023,7 +12127,7 @@ kbd {
 }
 
 .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
-  color: rgb(from hsl(258, 88%, 66%) r g b);
+  color: rgb(138, 92, 245);
 }
 
 .markdown-source-view.mod-cm6
@@ -12035,8 +12139,24 @@ kbd {
   .cm-line.HyperMD-codeblock
   .cm-formatting.cm-formatting-list {
   font-family:
-    "??", "??", Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif, "Arial";
+    "??",
+    Avenir,
+    Montserrat,
+    Corbel,
+    "URW Gothic",
+    source-sans-pro,
+    sans-serif,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
 }
 
@@ -12052,11 +12172,11 @@ kbd {
 }
 
 .cm-s-obsidian .HyperMD-codeblock-begin {
-  color: rgb(from hsl(258, 88%, 66%) r g b);
+  color: rgb(138, 92, 245);
 }
 
 .cm-s-obsidian .HyperMD-codeblock-end {
-  color: rgb(from hsl(258, 88%, 66%) r g b);
+  color: rgb(138, 92, 245);
 }
 
 .cm-s-obsidian .HyperMD-codeblock span.cm-inline-code {
@@ -12067,7 +12187,7 @@ kbd {
 }
 
 .cm-s-obsidian div.HyperMD-codeblock-bg {
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+  background-color: rgba(138, 92, 245, 0.1);
   border-color: transparent;
   border-style: solid;
   border-width: 0px 0px 0px 0px;
@@ -12076,7 +12196,7 @@ kbd {
 }
 
 .cm-s-obsidian div.HyperMD-codeblock-begin-bg {
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+  background-color: rgba(138, 92, 245, 0.1);
   border-color: transparent;
   border-style: solid;
   border-top-left-radius: 4px;
@@ -12085,7 +12205,7 @@ kbd {
 }
 
 .cm-s-obsidian div.HyperMD-codeblock-end-bg {
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+  background-color: rgba(138, 92, 245, 0.1);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   border-color: transparent;
@@ -12098,7 +12218,7 @@ code[class*="language-"] {
   -ms-hyphens: none;
   -webkit-hyphens: none;
   background: none;
-  color: rgb(from hsl(258, 88%, 66%) r g b);
+  color: rgb(138, 92, 245);
   direction: ltr;
   font-family:
     "??", ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
@@ -12262,11 +12382,11 @@ code[class*="language-"] {
 }
 
 .cm-inline-code {
-  color: rgb(from hsl(258, 88%, 66%) r g b);
+  color: rgb(138, 92, 245);
 }
 
 .cm-math {
-  color: rgb(from hsl(258, 88%, 66%) r g b);
+  color: rgb(138, 92, 245);
 }
 
 .cm-comment {
@@ -12929,7 +13049,7 @@ iframe.external-embed {
 }
 
 .metadata-error-container {
-  background-color: rgba(from hsl(5, 88%, 66%) r g b / 0.1);
+  background-color: rgba(245, 105, 92, 0.1);
   border-radius: 4px;
   padding: 4px 8px;
 }
@@ -13232,7 +13352,7 @@ input.metadata-property-key-input:focus {
 
 @media (hover: hover) {
   .metadata-property-warning-icon:hover {
-    background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.15);
+    background-color: rgba(138, 92, 245, 0.15);
     color: hsl(25, 88%, 66%);
   }
 }
@@ -13571,7 +13691,7 @@ input.metadata-property-key-input:focus {
 
 @media (hover: hover) {
   .metadata-link-inner:hover {
-    color: rgb(from hsl(258, 88%, 66%) r g b);
+    color: rgb(138, 92, 245);
     text-decoration-line: wavy;
   }
   .metadata-link-inner:hover ~ .metadata-link-flair {
@@ -13673,7 +13793,7 @@ h1 {
 
 h2 {
   --font-weight: 600;
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+  background-color: rgba(138, 92, 245, 0.1);
   border-radius: 0.5rem;
   color: hsl(258, 88%, 66%);
   font-family:
@@ -13778,7 +13898,7 @@ h1 a {
 
 .markdown-rendered h2 {
   --font-weight: 600;
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+  background-color: rgba(138, 92, 245, 0.1);
   color: hsl(258, 88%, 66%);
   font-family:
     Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif;
@@ -13961,7 +14081,7 @@ h6 a {
 
 .HyperMD-header-2 {
   --font-weight: 600;
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+  background-color: rgba(138, 92, 245, 0.1);
   border-radius: 0.5rem;
   color: hsl(258, 88%, 66%);
   font-family:
@@ -14254,7 +14374,7 @@ h6 a {
 
 hr {
   border: none;
-  border-color: rgb(from hsl(258, 88%, 66%) r g b);
+  border-color: rgb(138, 92, 245);
   border-top: 0.1rem solid;
   margin: 2rem 0;
   margin-block: 3em;
@@ -14264,7 +14384,7 @@ hr {
 
 .markdown-rendered hr {
   border: none;
-  border-color: rgb(from hsl(258, 88%, 66%) r g b);
+  border-color: rgb(138, 92, 245);
   border-top: 0.1rem solid;
   margin-block: 3em;
   margin-inline: auto;
@@ -14827,7 +14947,7 @@ a {
 
 @media (hover: hover) {
   a:hover {
-    color: rgb(from hsl(258, 88%, 66%) r g b);
+    color: rgb(138, 92, 245);
     text-decoration-line: wavy;
   }
 }
@@ -14842,7 +14962,7 @@ a.mobile-tap {
   background-position-y: 0.25em;
   background-repeat: no-repeat;
   background-size: 0.825em;
-  color: rgb(from hsl(258, 88%, 66%) r g b);
+  color: rgb(138, 92, 245);
   cursor: default;
   filter: none;
   padding-inline-end: 0;
@@ -14852,7 +14972,7 @@ a.mobile-tap {
 
 @media (hover: hover) {
   .external-link:hover {
-    color: rgb(from hsl(258, 88%, 66%) r g b);
+    color: rgb(138, 92, 245);
     text-decoration: 0.1em wavy underline currentColor;
     text-decoration-line: underline;
   }
@@ -14888,11 +15008,11 @@ a.mobile-tap {
 
 @media (hover: hover) {
   .metadata-property-value .internal-link:hover {
-    color: rgb(from hsl(258, 88%, 66%) r g b);
+    color: rgb(138, 92, 245);
     text-decoration-line: wavy;
   }
   .markdown-rendered .internal-link:hover {
-    color: rgb(from hsl(258, 88%, 66%) r g b);
+    color: rgb(138, 92, 245);
     text-decoration: 0.1em wavy underline currentColor;
     text-decoration-line: wavy;
   }
@@ -14910,7 +15030,7 @@ a.mobile-tap {
   color: hsl(258, 88%, 66%);
   filter: none;
   opacity: 0.7;
-  text-decoration-color: rgba(from hsl(258, 88%, 66%) r g b / 0.3);
+  text-decoration-color: rgba(138, 92, 245, 0.3);
   text-decoration-style: solid;
 }
 
@@ -14918,22 +15038,22 @@ a.mobile-tap {
   color: hsl(258, 88%, 66%);
   filter: none;
   opacity: 0.7;
-  text-decoration-color: rgba(from hsl(258, 88%, 66%) r g b / 0.3);
+  text-decoration-color: rgba(138, 92, 245, 0.3);
   text-decoration-style: solid;
 }
 
 @media (hover: hover) {
   .metadata-property-value .internal-link.is-unresolved:hover {
-    color: rgb(from hsl(258, 88%, 66%) r g b);
+    color: rgb(138, 92, 245);
     opacity: 1;
-    text-decoration-color: rgb(from hsl(258, 88%, 66%) r g b);
+    text-decoration-color: rgb(138, 92, 245);
     text-decoration-line: wavy;
   }
   .markdown-rendered .internal-link.is-unresolved:hover {
-    color: rgb(from hsl(258, 88%, 66%) r g b);
+    color: rgb(138, 92, 245);
     opacity: 1;
     text-decoration: 0.1em wavy underline currentColor;
-    text-decoration-color: rgb(from hsl(258, 88%, 66%) r g b);
+    text-decoration-color: rgb(138, 92, 245);
     text-decoration-line: wavy;
   }
 }
@@ -14946,29 +15066,29 @@ a.mobile-tap {
 
 @media (hover: hover) {
   .cm-s-obsidian span.cm-hmd-internal-link:hover {
-    color: rgb(from hsl(258, 88%, 66%) r g b);
+    color: rgb(138, 92, 245);
     text-decoration-line: wavy;
   }
 }
 
 .cm-s-obsidian span.cm-link {
-  color: rgb(from hsl(258, 88%, 66%) r g b);
+  color: rgb(138, 92, 245);
   word-break: break-word;
 }
 
 .cm-s-obsidian span.cm-link a {
-  color: rgb(from hsl(258, 88%, 66%) r g b);
+  color: rgb(138, 92, 245);
 }
 
 @media (hover: hover) {
   .cm-s-obsidian span.cm-link:hover {
-    color: rgb(from hsl(258, 88%, 66%) r g b);
+    color: rgb(138, 92, 245);
     text-decoration-line: underline;
   }
 }
 
 .cm-s-obsidian span.cm-formatting-link.cm-url {
-  color: rgb(from hsl(258, 88%, 66%) r g b);
+  color: rgb(138, 92, 245);
   filter: none;
   font-weight: 600;
   text-decoration-line: none;
@@ -14976,7 +15096,7 @@ a.mobile-tap {
 }
 
 .cm-s-obsidian span.cm-url {
-  color: rgb(from hsl(258, 88%, 66%) r g b);
+  color: rgb(138, 92, 245);
   filter: none;
   font-weight: 600;
   text-decoration-line: none;
@@ -14985,11 +15105,11 @@ a.mobile-tap {
 
 @media (hover: hover) {
   .cm-s-obsidian span.cm-formatting-link.cm-url:hover {
-    color: rgb(from hsl(258, 88%, 66%) r g b);
+    color: rgb(138, 92, 245);
     text-decoration-line: underline;
   }
   .cm-s-obsidian span.cm-url:hover {
-    color: rgb(from hsl(258, 88%, 66%) r g b);
+    color: rgb(138, 92, 245);
     text-decoration-line: underline;
   }
 }
@@ -15041,15 +15161,15 @@ a.mobile-tap {
 
 @media (hover: hover) {
   .markdown-source-view.mod-cm6 .is-unresolved:hover {
-    color: rgb(from hsl(258, 88%, 66%) r g b);
+    color: rgb(138, 92, 245);
     opacity: 1;
-    text-decoration-color: rgb(from hsl(258, 88%, 66%) r g b);
+    text-decoration-color: rgb(138, 92, 245);
   }
 }
 
 .markdown-source-view.mod-cm6 .is-unresolved .cm-underline {
   color: hsl(258, 88%, 66%);
-  text-decoration-color: rgba(from hsl(258, 88%, 66%) r g b / 0.3);
+  text-decoration-color: rgba(138, 92, 245, 0.3);
   text-decoration-line: none;
   text-decoration-style: solid;
 }
@@ -15072,13 +15192,13 @@ body.is-mobile .markdown-source-view.mod-cm6 .cm-underline {
 }
 
 .markdown-source-view.mod-cm6 .cm-link .cm-underline {
-  color: rgb(from hsl(258, 88%, 66%) r g b);
+  color: rgb(138, 92, 245);
   cursor: default;
   text-decoration-line: none;
 }
 
 .markdown-source-view.mod-cm6 .cm-url .cm-underline {
-  color: rgb(from hsl(258, 88%, 66%) r g b);
+  color: rgb(138, 92, 245);
   cursor: default;
   text-decoration-line: none;
 }
@@ -15091,11 +15211,11 @@ body.is-mobile .markdown-source-view.mod-cm6 .cm-underline {
 
 @media (hover: hover) {
   .markdown-source-view.mod-cm6 .cm-link .cm-underline:hover {
-    color: rgb(from hsl(258, 88%, 66%) r g b);
+    color: rgb(138, 92, 245);
     text-decoration-line: underline;
   }
   .markdown-source-view.mod-cm6 .cm-url .cm-underline:hover {
-    color: rgb(from hsl(258, 88%, 66%) r g b);
+    color: rgb(138, 92, 245);
     text-decoration-line: underline;
   }
 }
@@ -15409,7 +15529,7 @@ mjx-container {
 }
 
 .cm-html-embed td {
-  border: 0.1rem solid rgb(from hsl(258, 88%, 66%) r g b);
+  border: 0.1rem solid rgb(138, 92, 245);
   color: inherit;
   font-size: 16px;
   max-width: none;
@@ -15420,7 +15540,7 @@ mjx-container {
 }
 
 .markdown-rendered td {
-  border: 0.1rem solid rgb(from hsl(258, 88%, 66%) r g b);
+  border: 0.1rem solid rgb(138, 92, 245);
   color: inherit;
   font-size: 16px;
   max-width: none;
@@ -15431,7 +15551,7 @@ mjx-container {
 }
 
 .cm-html-embed th {
-  border: 0.1rem solid rgb(from hsl(258, 88%, 66%) r g b);
+  border: 0.1rem solid rgb(138, 92, 245);
   color: #000;
   font-family: inherit;
   font-size: 16px;
@@ -15445,7 +15565,7 @@ mjx-container {
 }
 
 .markdown-rendered th {
-  border: 0.1rem solid rgb(from hsl(258, 88%, 66%) r g b);
+  border: 0.1rem solid rgb(138, 92, 245);
   color: #000;
   font-family: inherit;
   font-size: 16px;
@@ -15556,27 +15676,27 @@ mjx-container {
 
 @media (hover: hover) {
   .cm-html-embed tbody tr:hover {
-    background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+    background-color: rgba(138, 92, 245, 0.1);
   }
   .markdown-rendered tbody tr:hover {
-    background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+    background-color: rgba(138, 92, 245, 0.1);
   }
 }
 
 .cm-html-embed tbody tr:nth-child(odd) {
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+  background-color: rgba(138, 92, 245, 0.1);
 }
 
 .markdown-rendered tbody tr:nth-child(odd) {
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+  background-color: rgba(138, 92, 245, 0.1);
 }
 
 @media (hover: hover) {
   .cm-html-embed tbody tr:nth-child(odd):hover {
-    background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.2);
+    background-color: rgba(138, 92, 245, 0.2);
   }
   .markdown-rendered tbody tr:nth-child(odd):hover {
-    background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.2);
+    background-color: rgba(138, 92, 245, 0.2);
   }
 }
 
@@ -15613,29 +15733,29 @@ mjx-container {
 }
 
 .cm-html-embed thead tr {
-  background-color: rgb(from hsl(258, 88%, 66%) r g b);
+  background-color: rgb(138, 92, 245);
 }
 
 .markdown-rendered thead tr {
-  background-color: rgb(from hsl(258, 88%, 66%) r g b);
+  background-color: rgb(138, 92, 245);
 }
 
 @media (hover: hover) {
   .cm-html-embed thead tr:hover {
-    background-color: rgb(from hsl(258, 88%, 66%) r g b);
+    background-color: rgb(138, 92, 245);
   }
   .markdown-rendered thead tr:hover {
-    background-color: rgb(from hsl(258, 88%, 66%) r g b);
+    background-color: rgb(138, 92, 245);
   }
 }
 
 .cm-html-embed thead tr > th {
-  border-color: rgb(from hsl(258, 88%, 66%) r g b);
+  border-color: rgb(138, 92, 245);
   border-top-width: 0.1rem;
 }
 
 .markdown-rendered thead tr > th {
-  border-color: rgb(from hsl(258, 88%, 66%) r g b);
+  border-color: rgb(138, 92, 245);
   border-top-width: 0.1rem;
 }
 
@@ -15871,14 +15991,14 @@ input[type="checkbox"]:checked:after {
 }
 
 input[type="checkbox"]:checked {
-  background-color: rgb(from hsl(258, 88%, 66%) r g b);
-  border-color: rgb(from hsl(258, 88%, 66%) r g b);
+  background-color: rgb(138, 92, 245);
+  border-color: rgb(138, 92, 245);
 }
 
 @media (hover: hover) {
   input[type="checkbox"]:checked:hover {
-    background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.9);
-    border-color: rgba(from hsl(258, 88%, 66%) r g b / 0.9);
+    background-color: rgba(138, 92, 245, 0.9);
+    border-color: rgba(138, 92, 245, 0.9);
   }
 }
 
@@ -16012,7 +16132,7 @@ em {
 }
 
 .markdown-rendered mark {
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.15);
+  background-color: rgba(138, 92, 245, 0.15);
   border-radius: 0.2rem;
   color: hsl(258, 29.33333%, 80%);
   padding: 0.1rem 0.05rem;
@@ -16023,12 +16143,12 @@ em {
 }
 
 .cm-s-obsidian span.cm-formatting-highlight {
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.15);
+  background-color: rgba(138, 92, 245, 0.15);
   color: hsl(258, 29.33333%, 80%);
 }
 
 .cm-s-obsidian span.cm-highlight {
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.15);
+  background-color: rgba(138, 92, 245, 0.15);
   color: hsl(258, 29.33333%, 80%);
 }
 
@@ -16210,7 +16330,7 @@ em {
 
 .bases-header {
   align-items: center;
-  border-color: rgb(from hsl(258, 88%, 66%) r g b);
+  border-color: rgb(138, 92, 245);
   border-style: solid;
   border-width: 0 0 1px 0;
   container-name: bases-header;
@@ -16600,7 +16720,7 @@ em {
 
 .bases-query-container .filter-group .filter-group {
   background-color: #111;
-  border: 0.1rem solid rgb(from hsl(258, 88%, 66%) r g b);
+  border: 0.1rem solid rgb(138, 92, 245);
   border-radius: 8px;
   padding: 6px;
 }
@@ -16853,7 +16973,7 @@ em {
 
 .bases-thead {
   background-color: hsl(258, 29.33333%, 5%);
-  box-shadow: inset 0 -1px 0 rgb(from hsl(258, 88%, 66%) r g b);
+  box-shadow: inset 0 -1px 0 rgb(138, 92, 245);
   height: 30px;
   justify-content: space-between;
   position: sticky;
@@ -16895,7 +17015,7 @@ em {
 .bases-thead-actions {
   align-items: stretch;
   background-color: hsl(258, 29.33333%, 5%);
-  box-shadow: inset 0 -1px 0 rgb(from hsl(258, 88%, 66%) r g b);
+  box-shadow: inset 0 -1px 0 rgb(138, 92, 245);
   display: none;
   height: 30px;
   inset-inline-end: 0;
@@ -16945,18 +17065,18 @@ em {
 }
 
 .bases-tbody {
-  box-shadow: 0 1px 0 rgb(from hsl(258, 88%, 66%) r g b);
+  box-shadow: 0 1px 0 rgb(138, 92, 245);
   position: relative;
   width: 100%;
 }
 
 .bases-tbody .bases-tr:hover {
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+  background-color: rgba(138, 92, 245, 0.1);
 }
 
 .bases-tr {
   --input-height: 30px;
-  box-shadow: 0 -1px 0 rgb(from hsl(258, 88%, 66%) r g b);
+  box-shadow: 0 -1px 0 rgb(138, 92, 245);
   display: flex;
   flex-direction: row;
   height: 30px;
@@ -16970,7 +17090,7 @@ em {
 
 .bases-td {
   align-items: center;
-  box-shadow: -1px 0 0 rgb(from hsl(258, 88%, 66%) r g b);
+  box-shadow: -1px 0 0 rgb(138, 92, 245);
   display: flex;
   flex: 1 0 auto;
   height: 30px;
@@ -17468,7 +17588,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .file-tree .mod-new.is-selected {
-  background-color: rgba(from hsl(100, 88%, 66%) r g b / 0.2);
+  background-color: rgba(143, 245, 92, 0.2);
 }
 
 .file-tree .mod-new .tree-item-flair {
@@ -17476,11 +17596,11 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .file-tree .mod-deleted.is-selected {
-  background-color: rgba(from hsl(5, 88%, 66%) r g b / 0.2);
+  background-color: rgba(245, 105, 92, 0.2);
 }
 
 .file-tree .mod-to-delete.is-selected {
-  background-color: rgba(from hsl(5, 88%, 66%) r g b / 0.2);
+  background-color: rgba(245, 105, 92, 0.2);
 }
 
 .file-tree .mod-deleted .tree-item-flair {
@@ -17594,8 +17714,24 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .file-recovery-text[data-ext="md"] {
   font-family:
-    "??", "??", Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif, "Arial";
+    "??",
+    Avenir,
+    Montserrat,
+    Corbel,
+    "URW Gothic",
+    source-sans-pro,
+    sans-serif,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
 }
 
@@ -17616,7 +17752,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .graph-view.color-fill-unresolved {
-  color: rgba(from hsl(5, 88%, 66%) r g b / 0.8);
+  color: rgba(245, 105, 92, 0.8);
   opacity: 0.5;
 }
 
@@ -18177,7 +18313,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .publish-upload-item:before {
-  background-color: rgba(from hsl(100, 88%, 66%) r g b / 0.2);
+  background-color: rgba(143, 245, 92, 0.2);
   border-radius: 4px;
   content: " ";
   height: 100%;
@@ -18194,7 +18330,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .publish-upload-item.mod-failed:before {
-  background-color: rgba(from hsl(5, 88%, 66%) r g b / 0.2);
+  background-color: rgba(245, 105, 92, 0.2);
 }
 
 .publish-upload-item.mod-completed {
@@ -18555,7 +18691,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .search-result-file-matched-text {
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.15);
+  background-color: rgba(138, 92, 245, 0.15);
   color: hsl(258, 29.33333%, 80%);
 }
 
@@ -19204,8 +19340,24 @@ body:not(.is-phone)
   background-color: #000;
   flex: 1 0 0;
   font-family:
-    "??", "??", Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
-    sans-serif, "Arial";
+    "??",
+    Avenir,
+    Montserrat,
+    Corbel,
+    "URW Gothic",
+    source-sans-pro,
+    sans-serif,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
   overflow: auto;
   padding: 24px;
@@ -23935,24 +24087,24 @@ br {
 
 .HyperMD-quote {
   --color: from hsl(258, 88%, 66%) r g b;
-  --hr-color: rgb(from hsl(258, 88%, 66%) r g b);
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
-  border-left: 0.5rem solid rgb(from hsl(258, 88%, 66%) r g b);
+  --hr-color: rgb(138, 92, 245);
+  background-color: rgba(138, 92, 245, 0.1);
+  border-left: 0.5rem solid rgb(138, 92, 245);
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   padding-inline-end: 0.5rem;
 }
 
 .theme-dark .markdown-rendered blockquote {
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.15);
+  background-color: rgba(138, 92, 245, 0.15);
 }
 
 .theme-dark .HyperMD-quote {
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.15);
+  background-color: rgba(138, 92, 245, 0.15);
 }
 
 .theme-dark .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.15);
+  background-color: rgba(138, 92, 245, 0.15);
 }
 
 .HyperMD-quote + .HyperMD-quote {
@@ -23965,144 +24117,144 @@ br {
 }
 
 .cm-s-obsidian span.cm-formatting-quote.cm-hmd-callout {
-  color: rgba(from hsl(258, 88%, 66%) r g b / 0.6);
+  color: rgba(138, 92, 245, 0.6);
 }
 
 span.cm-quote.cm-hashtag {
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
-  color: rgb(from hsl(258, 88%, 66%) r g b);
+  background-color: rgba(138, 92, 245, 0.1);
+  color: rgb(138, 92, 245);
 }
 
 blockquote a.tag {
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
-  color: rgb(from hsl(258, 88%, 66%) r g b);
+  background-color: rgba(138, 92, 245, 0.1);
+  color: rgb(138, 92, 245);
 }
 
 .callout-content a.tag {
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
-  color: rgb(from hsl(258, 88%, 66%) r g b);
+  background-color: rgba(138, 92, 245, 0.1);
+  color: rgb(138, 92, 245);
 }
 
 blockquote a.tag:hover {
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.2);
+  background-color: rgba(138, 92, 245, 0.2);
 }
 
 .callout-content a.tag:hover {
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.2);
+  background-color: rgba(138, 92, 245, 0.2);
 }
 
 blockquote a {
-  --link-color: rgb(from hsl(258, 88%, 66%) r g b);
-  --link-external-color: rgb(from hsl(258, 88%, 66%) r g b);
+  --link-color: rgb(138, 92, 245);
+  --link-external-color: rgb(138, 92, 245);
 }
 
 .callout-content a {
-  --link-color: rgb(from hsl(258, 88%, 66%) r g b);
-  --link-external-color: rgb(from hsl(258, 88%, 66%) r g b);
+  --link-color: rgb(138, 92, 245);
+  --link-external-color: rgb(138, 92, 245);
 }
 
 blockquote a:hover {
-  --link-color: rgb(from hsl(258, 88%, 66%) r g b);
-  --link-external-color: rgb(from hsl(258, 88%, 66%) r g b);
+  --link-color: rgb(138, 92, 245);
+  --link-external-color: rgb(138, 92, 245);
 }
 
 .callout-content a:hover {
-  --link-color: rgb(from hsl(258, 88%, 66%) r g b);
-  --link-external-color: rgb(from hsl(258, 88%, 66%) r g b);
+  --link-color: rgb(138, 92, 245);
+  --link-external-color: rgb(138, 92, 245);
 }
 
 .markdown-rendered .callout {
   --color: from hsl(258, 88%, 66%) r g b;
-  --hr-color: rgb(from hsl(258, 88%, 66%) r g b);
-  --text-highlight-bg: rgba(from hsl(258, 88%, 66%) r g b / 0.3);
+  --hr-color: rgb(138, 92, 245);
+  --text-highlight-bg: rgba(138, 92, 245, 0.3);
 }
 
 .theme-dark .callout {
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.15);
+  background-color: rgba(138, 92, 245, 0.15);
 }
 
 @media (hover: hover) {
   .metadata-container .callout .internal-link:hover {
-    color: rgb(from hsl(258, 88%, 66%) r g b);
+    color: rgb(138, 92, 245);
   }
   .markdown-rendered .callout .internal-link:hover {
-    color: rgb(from hsl(258, 88%, 66%) r g b);
+    color: rgb(138, 92, 245);
   }
 }
 
 .metadata-container .callout .internal-link.is-unresolved {
-  --checkbox-color: rgb(from hsl(258, 88%, 66%) r g b);
-  --checkbox-color-hover: rgba(from hsl(258, 88%, 66%) r g b / 0.9);
-  --code-background: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
-  --code-normal: rgb(from hsl(258, 88%, 66%) r g b);
-  --link-color: rgb(from hsl(258, 88%, 66%) r g b);
-  --link-color-hover: rgb(from hsl(258, 88%, 66%) r g b);
-  --link-unresolved-color: rgb(from hsl(258, 88%, 66%) r g b);
-  --link-unresolved-decoration-color: rgba(from hsl(258, 88%, 66%) r g b / 0.3);
+  --checkbox-color: rgb(138, 92, 245);
+  --checkbox-color-hover: rgba(138, 92, 245, 0.9);
+  --code-background: rgba(138, 92, 245, 0.1);
+  --code-normal: rgb(138, 92, 245);
+  --link-color: rgb(138, 92, 245);
+  --link-color-hover: rgb(138, 92, 245);
+  --link-unresolved-color: rgb(138, 92, 245);
+  --link-unresolved-decoration-color: rgba(138, 92, 245, 0.3);
   --list-marker-color: from hsl(258, 88%, 66%) r g b;
-  --table-border-color: rgb(from hsl(258, 88%, 66%) r g b);
-  --table-header-background: rgb(from hsl(258, 88%, 66%) r g b);
-  --table-header-background-hover: rgb(from hsl(258, 88%, 66%) r g b);
-  --table-row-alt-background: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
-  --table-row-alt-background-hover: rgba(from hsl(258, 88%, 66%) r g b / 0.2);
-  --table-row-background-hover: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+  --table-border-color: rgb(138, 92, 245);
+  --table-header-background: rgb(138, 92, 245);
+  --table-header-background-hover: rgb(138, 92, 245);
+  --table-row-alt-background: rgba(138, 92, 245, 0.1);
+  --table-row-alt-background-hover: rgba(138, 92, 245, 0.2);
+  --table-row-background-hover: rgba(138, 92, 245, 0.1);
   --text-highlight-bg-rgb: from hsl(258, 88%, 66%) r g b;
 }
 
 .markdown-rendered .callout .internal-link.is-unresolved {
-  --checkbox-color: rgb(from hsl(258, 88%, 66%) r g b);
-  --checkbox-color-hover: rgba(from hsl(258, 88%, 66%) r g b / 0.9);
-  --code-background: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
-  --code-normal: rgb(from hsl(258, 88%, 66%) r g b);
-  --link-color: rgb(from hsl(258, 88%, 66%) r g b);
-  --link-color-hover: rgb(from hsl(258, 88%, 66%) r g b);
-  --link-unresolved-color: rgb(from hsl(258, 88%, 66%) r g b);
-  --link-unresolved-decoration-color: rgba(from hsl(258, 88%, 66%) r g b / 0.3);
+  --checkbox-color: rgb(138, 92, 245);
+  --checkbox-color-hover: rgba(138, 92, 245, 0.9);
+  --code-background: rgba(138, 92, 245, 0.1);
+  --code-normal: rgb(138, 92, 245);
+  --link-color: rgb(138, 92, 245);
+  --link-color-hover: rgb(138, 92, 245);
+  --link-unresolved-color: rgb(138, 92, 245);
+  --link-unresolved-decoration-color: rgba(138, 92, 245, 0.3);
   --list-marker-color: from hsl(258, 88%, 66%) r g b;
-  --table-border-color: rgb(from hsl(258, 88%, 66%) r g b);
-  --table-header-background: rgb(from hsl(258, 88%, 66%) r g b);
-  --table-header-background-hover: rgb(from hsl(258, 88%, 66%) r g b);
-  --table-row-alt-background: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
-  --table-row-alt-background-hover: rgba(from hsl(258, 88%, 66%) r g b / 0.2);
-  --table-row-background-hover: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+  --table-border-color: rgb(138, 92, 245);
+  --table-header-background: rgb(138, 92, 245);
+  --table-header-background-hover: rgb(138, 92, 245);
+  --table-row-alt-background: rgba(138, 92, 245, 0.1);
+  --table-row-alt-background-hover: rgba(138, 92, 245, 0.2);
+  --table-row-background-hover: rgba(138, 92, 245, 0.1);
   --text-highlight-bg-rgb: from hsl(258, 88%, 66%) r g b;
 }
 
 .metadata-container .el-blockquote .internal-link.is-unresolved {
-  --checkbox-color: rgb(from hsl(258, 88%, 66%) r g b);
-  --checkbox-color-hover: rgba(from hsl(258, 88%, 66%) r g b / 0.9);
-  --code-background: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
-  --code-normal: rgb(from hsl(258, 88%, 66%) r g b);
-  --link-color: rgb(from hsl(258, 88%, 66%) r g b);
-  --link-color-hover: rgb(from hsl(258, 88%, 66%) r g b);
-  --link-unresolved-color: rgb(from hsl(258, 88%, 66%) r g b);
-  --link-unresolved-decoration-color: rgba(from hsl(258, 88%, 66%) r g b / 0.3);
+  --checkbox-color: rgb(138, 92, 245);
+  --checkbox-color-hover: rgba(138, 92, 245, 0.9);
+  --code-background: rgba(138, 92, 245, 0.1);
+  --code-normal: rgb(138, 92, 245);
+  --link-color: rgb(138, 92, 245);
+  --link-color-hover: rgb(138, 92, 245);
+  --link-unresolved-color: rgb(138, 92, 245);
+  --link-unresolved-decoration-color: rgba(138, 92, 245, 0.3);
   --list-marker-color: from hsl(258, 88%, 66%) r g b;
-  --table-border-color: rgb(from hsl(258, 88%, 66%) r g b);
-  --table-header-background: rgb(from hsl(258, 88%, 66%) r g b);
-  --table-header-background-hover: rgb(from hsl(258, 88%, 66%) r g b);
-  --table-row-alt-background: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
-  --table-row-alt-background-hover: rgba(from hsl(258, 88%, 66%) r g b / 0.2);
-  --table-row-background-hover: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+  --table-border-color: rgb(138, 92, 245);
+  --table-header-background: rgb(138, 92, 245);
+  --table-header-background-hover: rgb(138, 92, 245);
+  --table-row-alt-background: rgba(138, 92, 245, 0.1);
+  --table-row-alt-background-hover: rgba(138, 92, 245, 0.2);
+  --table-row-background-hover: rgba(138, 92, 245, 0.1);
   --text-highlight-bg-rgb: from hsl(258, 88%, 66%) r g b;
 }
 
 .markdown-rendered .el-blockquote .internal-link.is-unresolved {
-  --checkbox-color: rgb(from hsl(258, 88%, 66%) r g b);
-  --checkbox-color-hover: rgba(from hsl(258, 88%, 66%) r g b / 0.9);
-  --code-background: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
-  --code-normal: rgb(from hsl(258, 88%, 66%) r g b);
-  --link-color: rgb(from hsl(258, 88%, 66%) r g b);
-  --link-color-hover: rgb(from hsl(258, 88%, 66%) r g b);
-  --link-unresolved-color: rgb(from hsl(258, 88%, 66%) r g b);
-  --link-unresolved-decoration-color: rgba(from hsl(258, 88%, 66%) r g b / 0.3);
+  --checkbox-color: rgb(138, 92, 245);
+  --checkbox-color-hover: rgba(138, 92, 245, 0.9);
+  --code-background: rgba(138, 92, 245, 0.1);
+  --code-normal: rgb(138, 92, 245);
+  --link-color: rgb(138, 92, 245);
+  --link-color-hover: rgb(138, 92, 245);
+  --link-unresolved-color: rgb(138, 92, 245);
+  --link-unresolved-decoration-color: rgba(138, 92, 245, 0.3);
   --list-marker-color: from hsl(258, 88%, 66%) r g b;
-  --table-border-color: rgb(from hsl(258, 88%, 66%) r g b);
-  --table-header-background: rgb(from hsl(258, 88%, 66%) r g b);
-  --table-header-background-hover: rgb(from hsl(258, 88%, 66%) r g b);
-  --table-row-alt-background: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
-  --table-row-alt-background-hover: rgba(from hsl(258, 88%, 66%) r g b / 0.2);
-  --table-row-background-hover: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+  --table-border-color: rgb(138, 92, 245);
+  --table-header-background: rgb(138, 92, 245);
+  --table-header-background-hover: rgb(138, 92, 245);
+  --table-row-alt-background: rgba(138, 92, 245, 0.1);
+  --table-row-alt-background-hover: rgba(138, 92, 245, 0.2);
+  --table-row-background-hover: rgba(138, 92, 245, 0.1);
   --text-highlight-bg-rgb: from hsl(258, 88%, 66%) r g b;
 }
 
@@ -24121,7 +24273,7 @@ blockquote a:hover {
 }
 
 details {
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.1);
+  background-color: rgba(138, 92, 245, 0.1);
   border-radius: 0.5rem;
   padding: 0.5rem 0.5rem 0.5rem 3ch;
 }
@@ -24171,53 +24323,53 @@ figcaption {
 }
 
 mark {
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.15);
+  background-color: rgba(138, 92, 245, 0.15);
   border-radius: 0.2rem;
   color: hsl(258, 29.33333%, 80%);
   padding: 0.1rem 0.05rem;
 }
 
 .cm-highlight {
-  background-color: rgba(from hsl(258, 88%, 66%) r g b / 0.15);
+  background-color: rgba(138, 92, 245, 0.15);
   border-radius: 0.2rem;
   color: hsl(258, 29.33333%, 80%);
   padding: 0.1rem 0.05rem;
 }
 
 mark.red {
-  background-color: rgba(from hsl(5, 88%, 66%) r g b / 0.25);
+  background-color: rgba(245, 105, 92, 0.25);
 }
 
 mark.orange {
-  background-color: rgba(from hsl(25, 88%, 66%) r g b / 0.25);
+  background-color: rgba(245, 156, 92, 0.25);
 }
 
 mark.yellow {
-  background-color: rgba(from hsl(50, 88%, 66%) r g b / 0.25);
+  background-color: rgba(245, 219, 92, 0.25);
 }
 
 mark.green {
-  background-color: rgba(from hsl(100, 88%, 66%) r g b / 0.25);
+  background-color: rgba(143, 245, 92, 0.25);
 }
 
 mark.cyan {
-  background-color: rgba(from hsl(185, 88%, 66%) r g b / 0.25);
+  background-color: rgba(92, 232, 245, 0.25);
 }
 
 mark.blue {
-  background-color: rgba(from hsl(210, 88%, 66%) r g b / 0.25);
+  background-color: rgba(92, 168, 245, 0.25);
 }
 
 mark.purple {
-  background-color: rgba(from hsl(270, 88%, 66%) r g b / 0.25);
+  background-color: rgba(168, 92, 245, 0.25);
 }
 
 mark.pink {
-  background-color: rgba(from hsl(320, 88%, 66%) r g b / 0.25);
+  background-color: rgba(245, 92, 194, 0.25);
 }
 
 mark.grey {
-  background-color: rgba(from hsl(258, 29.33333%, 80%) r g b / 0.15);
+  background-color: rgba(198, 189, 219, 0.15);
 }
 
 mark.line {
@@ -24239,7 +24391,7 @@ sub {
 table {
   --link-color: hsl(258, 88%, 66%);
   --link-unresolved-color: hsl(258, 88%, 66%);
-  --text-highlight-bg: rgba(from hsl(258, 88%, 66%) r g b / 0.15);
+  --text-highlight-bg: rgba(138, 92, 245, 0.15);
   margin-inline: auto;
 }
 

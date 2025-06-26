@@ -931,7 +931,10 @@
 }
 
 :root {
-  --accent-soft-hsl: light-dark(221, 16.65%, 85%, 221, 16.65%, 15%);
+  --accent-h: light-dark(189, 0);
+  --accent-l: light-dark(49%, 52%);
+  --accent-s: light-dark(100%, 75%);
+  --accent-soft-hsl: light-dark(hsl(221, 16.65%, 85%), hsl(221, 16.65%, 15%));
   --background-dark: light-dark(rgb(10, 18, 30), rgb(23, 35, 62));
   --background-extra-dark: light-dark(#000, #000);
   --background-h: light-dark(221, 0);
@@ -991,7 +994,7 @@
   --color-accent: light-dark(hsl(189, 100%, 49%), hsl(189, 100%, 49%));
   --color-accent-1: light-dark(hsl(186, 102%, 56.35%), hsl(188, 101%, 52.675%));
   --color-accent-2: light-dark(hsl(184, 105%, 63.21%), hsl(186, 102%, 56.35%));
-  --color-accent-hsl: light-dark(189, 100%, 49%, 189, 100%, 49%);
+  --color-accent-hsl: light-dark(hsl(189, 100%, 49%), hsl(189, 100%, 49%));
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
@@ -1698,9 +1701,10 @@
 }
 
 body {
-  --accent-h: 258;
-  --accent-l: 66%;
-  --accent-s: 88%;
+  --accent-h: light-dark(189, 0);
+  --accent-l: light-dark(49%, 52%);
+  --accent-s: light-dark(100%, 75%);
+  --accent-soft-hsl: light-dark(hsl(221, 16.65%, 85%), hsl(221, 16.65%, 15%));
   --anim-duration-fast: 140ms;
   --anim-duration-moderate: 300ms;
   --anim-duration-none: 0;
@@ -1710,21 +1714,52 @@ body {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
-  --background-modifier-active-hover: hsla(189, 100%, 49%, 0.15);
-  --background-modifier-border: #363636;
-  --background-modifier-border-focus: #555555;
-  --background-modifier-border-hover: #3f3f3f;
-  --background-modifier-error: #dc322f;
-  --background-modifier-error-hover: #dc322f;
+  --background-dark: light-dark(rgb(10, 18, 30), rgb(23, 35, 62));
+  --background-extra-dark: light-dark(#000, #000);
+  --background-h: light-dark(221, 0);
+  --background-modifier-active-hover: light-dark(
+    hsla(221, 16.65%, 85%, 0.05),
+    hsla(221, 16.65%, 85%, 0.05)
+  );
+  --background-modifier-border: light-dark(
+    hsla(221, 16.65%, 85%, 0.1),
+    hsla(221, 16.65%, 85%, 0.1)
+  );
+  --background-modifier-border-focus: light-dark(
+    hsl(221, 33.3%, 8.9%),
+    hsla(221, 16.65%, 85%, 0.1)
+  );
+  --background-modifier-border-hover: light-dark(
+    hsla(221, 16.65%, 85%, 0.1),
+    hsla(221, 16.65%, 85%, 0.1)
+  );
+  --background-modifier-error: light-dark(rgb(250, 30, 0), rgb(250, 30, 0));
+  --background-modifier-error-hover: light-dark(
+    rgb(250, 30, 0),
+    rgb(250, 30, 0)
+  );
   --background-modifier-error-rgb: 251, 70, 76;
-  --background-modifier-form-field: #000;
-  --background-modifier-hover: rgba(255, 255, 255, 0.067);
+  --background-modifier-form-field: light-dark(
+    rgb(10, 18, 30),
+    hsla(221, 16.65%, 85%, 0.05)
+  );
+  --background-modifier-hover: light-dark(
+    hsla(221, 16.65%, 85%, 0.05),
+    hsla(221, 16.65%, 85%, 0.05)
+  );
   --background-modifier-message: rgba(0, 0, 0, 0.9);
   --background-modifier-success: #859900;
   --background-modifier-success-rgb: 68, 207, 110;
-  --background-primary: #000;
-  --background-primary-alt: #111;
-  --background-secondary: #1e1e1e;
+  --background-primary: light-dark(
+    hsl(221, 33.3%, 12.9%),
+    hsl(221, 33.3%, 12.9%)
+  );
+  --background-primary-alt: light-dark(rgb(10, 18, 30), hsl(221, 33.3%, 12.9%));
+  --background-secondary: light-dark(
+    hsl(221, 29.1375%, 18.404%),
+    hsl(221, 29.1375%, 18.404%)
+  );
+  --background-secondary-alt: light-dark(#363636, #212121);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 2px;
   --bases-filter-menu-width: 520px;
@@ -1771,28 +1806,28 @@ body {
   --callout-blend-mode: darken;
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
-  --callout-bug: 251, 70, 76;
+  --callout-bug: light-dark(rgb(245, 0, 170), rgb(245, 0, 165));
   --callout-content-background: transparent;
   --callout-content-padding: 0;
-  --callout-default: 2, 122, 255;
-  --callout-error: 251, 70, 76;
-  --callout-example: 168, 130, 255;
-  --callout-fail: 251, 70, 76;
-  --callout-important: 83, 223, 221;
-  --callout-info: 2, 122, 255;
+  --callout-default: light-dark(rgb(250, 247, 245), rgb(250, 247, 245));
+  --callout-error: light-dark(rgb(250, 30, 0), rgb(235, 0, 0));
+  --callout-example: light-dark(rgb(250, 247, 245), rgb(250, 247, 245));
+  --callout-fail: light-dark(rgb(250, 30, 0), rgb(235, 0, 0));
+  --callout-important: light-dark(hsl(189, 100%, 49%), hsl(189, 100%, 49%));
+  --callout-info: light-dark(rgb(250, 247, 245), rgb(250, 247, 245));
   --callout-padding: 12px 12px 12px 24px;
-  --callout-question: 233, 151, 63;
-  --callout-quote: 158, 158, 158;
+  --callout-question: light-dark(rgb(250, 247, 245), rgb(250, 247, 245));
+  --callout-quote: light-dark(rgb(250, 247, 245), rgb(250, 247, 245));
   --callout-radius: 2px;
-  --callout-success: 68, 207, 110;
-  --callout-summary: 83, 223, 221;
-  --callout-tip: 83, 223, 221;
+  --callout-success: light-dark(rgb(0, 190, 0), rgb(0, 180, 0));
+  --callout-summary: light-dark(rgb(250, 247, 245), rgb(250, 247, 245));
+  --callout-tip: light-dark(rgb(255, 220, 120), rgb(240, 195, 0));
   --callout-title-color: inherit;
   --callout-title-padding: 0;
   --callout-title-size: inherit;
   --callout-title-weight: 800;
-  --callout-todo: 2, 122, 255;
-  --callout-warning: 233, 151, 63;
+  --callout-todo: light-dark(rgb(0, 130, 255), rgb(0, 130, 235));
+  --callout-warning: light-dark(rgb(220, 210, 0), rgb(240, 150, 0));
   --canvas-background: hsl(221, 33.3%, 12.9%);
   --canvas-card-label-color: rgb(250, 247, 245);
   --canvas-color: 192, 192, 192;
@@ -1834,18 +1869,43 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: hsl(189, 100%, 49%);
   --collapse-icon-color-collapsed: hsl(189, 100%, 49%);
-  --color-cyan: rgb(0, 202, 235);
-  --color-green: rgb(30, 169, 67);
-  --color-orange: rgb(220, 95, 0);
-  --color-pink: rgb(220, 100, 210);
-  --color-purple: rgb(140, 110, 240);
-  --color-red: rgb(220, 65, 65);
-  --color-yellow: rgb(230, 205, 90);
+  --color-accent: light-dark(hsl(189, 100%, 49%), hsl(189, 100%, 49%));
+  --color-accent-1: light-dark(hsl(186, 102%, 56.35%), hsl(188, 101%, 52.675%));
+  --color-accent-2: light-dark(hsl(184, 105%, 63.21%), hsl(186, 102%, 56.35%));
+  --color-accent-hsl: light-dark(hsl(189, 100%, 49%), hsl(189, 100%, 49%));
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
   --dialog-max-width: 80vw;
   --dialog-width: 560px;
+  --dictionary-background-primary: light-dark(
+    hsl(221, 33.3%, 12.9%),
+    hsla(221, 16.65%, 85%, 0.05)
+  );
+  --dictionary-background-secondary: light-dark(
+    hsl(221, 33.3%, 12.9%),
+    hsl(221, 33.3%, 12.9%)
+  );
   --direction: 1;
   --divider-color: transparent;
   --divider-color-hover: hsl(189, 100%, 49%);
@@ -1904,7 +1964,9 @@ body {
     -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "??", "??", "??", "Arial";
+  --font-mermaid:
+    "??", "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue",
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-monospace:
     "??", "??", "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo,
     SFMono-Regular, Consolas, "Source Code Pro", monospace;
@@ -1920,7 +1982,9 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "??", "??", "??", "Arial";
+  --font-text:
+    "??", "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue",
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -2043,12 +2107,24 @@ body {
   --input-placeholder-color: rgb(250, 247, 245);
   --input-radius: 4px;
   --interactive-accent: hsl(189, 100%, 49%);
-  --interactive-accent-hover: hsl(184, 105%, 63.21%);
+  --interactive-accent-hover: light-dark(
+    hsl(189, 100%, 49%),
+    hsl(189, 100%, 49%)
+  );
   --interactive-accent-hsl: 189, 100%, 49%;
-  --interactive-hover: #111;
-  --interactive-normal: #000;
+  --interactive-hover: light-dark(rgb(10, 18, 30), hsla(221, 16.65%, 85%, 0.1));
+  --interactive-normal: light-dark(
+    rgb(10, 18, 30),
+    hsla(221, 16.65%, 85%, 0.05)
+  );
   --italic-color: inherit;
   --italic-weight: inherit;
+  --kanban-button-text: light-dark(rgb(250, 247, 245), rgb(250, 247, 245));
+  --kanban-button-text-hover: light-dark(#000, rgb(250, 247, 245));
+  --kanban-checkbox-border: light-dark(
+    hsl(221, 33.3%, 12.9%),
+    hsla(221, 16.65%, 85%, 0.1)
+  );
   --layer-cover: 5;
   --layer-dragged-item: 80;
   --layer-menu: 65;
@@ -2150,7 +2226,10 @@ body {
   --metadata-sidebar-input-font-size: 14.992px;
   --metadata-sidebar-label-font-size: 14.992px;
   --modal-background: hsl(221, 33.3%, 12.9%);
-  --modal-border-color: #555555;
+  --modal-border-color: light-dark(
+    hsla(221, 16.65%, 85%, 0.1),
+    hsla(221, 16.65%, 85%, 0.1)
+  );
   --modal-border-width: 0.5pt;
   --modal-community-sidebar-width: 280px;
   --modal-height: 85vh;
@@ -2223,7 +2302,10 @@ body {
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
   --popover-width: 450px;
-  --prompt-border-color: #555555;
+  --prompt-border-color: light-dark(
+    hsla(221, 16.65%, 85%, 0.1),
+    hsla(221, 16.65%, 85%, 0.1)
+  );
   --prompt-border-width: 0.5pt;
   --prompt-input-height: 40px;
   --prompt-max-height: 70vh;
@@ -2246,6 +2328,10 @@ body {
   --search-icon-color: rgb(250, 247, 245);
   --search-icon-size: 18px;
   --search-result-background: hsl(221, 33.3%, 12.9%);
+  --search-result-bg-hover: light-dark(
+    transparent,
+    hsla(221, 16.65%, 85%, 0.1)
+  );
   --sidebar-markdown-font-size: 14.4px;
   --sidebar-tab-text-display: none;
   --size-2-1: 2px;
@@ -2331,7 +2417,9 @@ body {
   --table-add-button-border-color: transparent;
   --table-add-button-border-width: 1px;
   --table-background: transparent;
-  --table-body-font: "??", "??", "??", "Arial";
+  --table-body-font:
+    "??", "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue",
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --table-body-font-size: 1em;
   --table-border-color: rgb(250, 247, 245);
   --table-border-width: 1px;
@@ -2350,7 +2438,9 @@ body {
   --table-header-border-color: rgb(250, 247, 245);
   --table-header-border-width: 1px;
   --table-header-color: rgb(250, 247, 245);
-  --table-header-font: "??", "??", "??", "Arial";
+  --table-header-font:
+    "??", "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue",
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --table-header-size: 16px;
   --table-header-weight: 800;
   --table-line-height: 1.3;
@@ -2366,8 +2456,14 @@ body {
   --table-text-color: inherit;
   --table-text-size: 16px;
   --table-white-space: break-spaces;
-  --tag-background: hsla(189, 100%, 49%, 0.1);
-  --tag-background-hover: hsla(189, 100%, 49%, 0.2);
+  --tag-background: light-dark(
+    hsla(189, 100%, 49%, 0.1),
+    hsla(189, 100%, 49%, 0.1)
+  );
+  --tag-background-hover: light-dark(
+    hsla(189, 100%, 49%, 0.2),
+    hsla(189, 100%, 49%, 0.2)
+  );
   --tag-border-color: hsla(189, 100%, 49%, 0.15);
   --tag-border-color-hover: hsla(189, 100%, 49%, 0.15);
   --tag-border-width: 0px;
@@ -2381,20 +2477,31 @@ body {
   --tag-size: 0.875em;
   --tag-weight: inherit;
   --text-accent: hsl(189, 100%, 49%);
-  --text-accent-hover: hsl(184, 105%, 63.21%);
-  --text-error: #dc322f;
-  --text-faint: #666666;
-  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-accent-hover: light-dark(rgb(250, 247, 245), #000);
+  --text-error: light-dark(rgb(250, 30, 0), rgb(250, 30, 0));
+  --text-faint: light-dark(rgb(250, 247, 245), rgb(250, 247, 245));
+  --text-highlight-bg: light-dark(rgb(220, 193, 45), rgb(250, 231, 75));
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: #b3b3b3;
-  --text-normal: #dadada;
-  --text-on-accent: white;
+  --text-highlight-fg: light-dark(#000, #000);
+  --text-muted: light-dark(rgb(250, 247, 245), rgb(250, 247, 245));
+  --text-normal: light-dark(rgb(250, 247, 245), rgb(0, 0, 0));
+  --text-on-accent: light-dark(#000, rgb(250, 247, 245));
   --text-on-accent-inverted: black;
-  --text-selection: hsla(189, 100%, 49%, 0.2);
+  --text-selection: light-dark(
+    hsla(189, 100%, 49%, 0.4),
+    hsla(189, 100%, 49%, 0.4)
+  );
   --text-success: #859900;
   --text-warning: #cb4b16;
-  --titlebar-background: hsl(221, 33.3%, 12.9%);
-  --titlebar-background-focused: hsl(221, 33.3%, 12.9%);
+  --text-white: light-dark(rgb(250, 247, 245), rgb(254, 252, 252));
+  --titlebar-background: light-dark(
+    hsl(221, 33.3%, 12.9%),
+    hsl(221, 33.3%, 12.9%)
+  );
+  --titlebar-background-focused: light-dark(
+    hsl(221, 33.3%, 12.9%),
+    hsl(221, 33.3%, 12.9%)
+  );
   --titlebar-border-color: transparent;
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;
@@ -3199,7 +3306,17 @@ body:not(.is-mobile) .app-container {
 .markdown-source-view {
   --list-marker-space: 0;
   --list-padding-inline-start: 0;
-  font-family: "??", "??", "??", "Arial";
+  font-family:
+    "??",
+    "??",
+    "Franklin Gothic Book",
+    "Rubik",
+    "Helvetica Neue",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 16px;
 }
 
@@ -3349,7 +3466,17 @@ body:not(.is-mobile) .app-container {
 }
 
 .markdown-source-view.mod-cm6 .cm-scroller {
-  font-family: "??", "??", "??", "Arial";
+  font-family:
+    "??",
+    "??",
+    "Franklin Gothic Book",
+    "Rubik",
+    "Helvetica Neue",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   line-height: 1.25em;
   scrollbar-gutter: stable;
 }
@@ -4612,7 +4739,17 @@ body:not(.show-inline-title) .inline-title:not([data-level]) {
 .markdown-preview-view {
   -webkit-user-select: text;
   color: rgb(250, 247, 245);
-  font-family: "??", "??", "??", "Arial";
+  font-family:
+    "??",
+    "??",
+    "Franklin Gothic Book",
+    "Rubik",
+    "Helvetica Neue",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 16px;
   height: 100%;
   line-height: 1.25em;
@@ -6076,7 +6213,17 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
 .community-modal-readme {
   -webkit-user-select: text;
   color: rgb(250, 247, 245);
-  font-family: "??", "??", "??", "Arial";
+  font-family:
+    "??",
+    "??",
+    "Franklin Gothic Book",
+    "Rubik",
+    "Helvetica Neue",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 16px;
   line-height: 1.25em;
   overflow-wrap: break-word;
@@ -6623,12 +6770,24 @@ body:not(.is-mobile)
 
 @media (hover: hover) {
   .workspace-leaf-resize-handle:hover {
-    background-color: hsl(189, 100%, 49%);
-    border-color: hsl(189, 100%, 49%);
+    background-color: light-dark(
+      hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%)),
+      hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%))
+    );
+    border-color: light-dark(
+      hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%)),
+      hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%))
+    );
   }
   .is-translucent .workspace-leaf-resize-handle:hover {
-    background-color: hsl(189, 100%, 49%);
-    border-color: hsl(189, 100%, 49%);
+    background-color: light-dark(
+      hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%)),
+      hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%))
+    );
+    border-color: light-dark(
+      hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%)),
+      hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%))
+    );
   }
 }
 
@@ -7859,12 +8018,30 @@ button.mod-cta {
 }
 
 button.mod-cta.mobile-tap {
-  background-color: hsl(189, 100%, 49%);
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%)),
+      hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%))
+    ),
+    light-dark(
+      hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%)),
+      hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%))
+    )
+  );
 }
 
 @media (hover: hover) {
   button.mod-cta:hover {
-    background-color: hsl(189, 100%, 49%);
+    background-color: light-dark(
+      light-dark(
+        hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%)),
+        hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%))
+      ),
+      light-dark(
+        hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%)),
+        hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%))
+      )
+    );
   }
 }
 
@@ -10049,7 +10226,10 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .modal .modal-nav-action.mod-cta {
-  color: hsl(189, 100%, 49%);
+  color: light-dark(
+    hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%)),
+    hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%))
+  );
   font-weight: 600;
   inset-inline-end: 0;
 }
@@ -12306,7 +12486,17 @@ kbd {
 .markdown-source-view.mod-cm6
   .cm-line.HyperMD-codeblock
   .cm-formatting.cm-formatting-list {
-  font-family: "??", "??", "??", "Arial";
+  font-family:
+    "??",
+    "??",
+    "Franklin Gothic Book",
+    "Rubik",
+    "Helvetica Neue",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 16px;
 }
 
@@ -15607,7 +15797,17 @@ mjx-container {
 .cm-html-embed th {
   border: 1px solid rgb(250, 247, 245);
   color: rgb(250, 247, 245);
-  font-family: "??", "??", "??", "Arial";
+  font-family:
+    "??",
+    "??",
+    "Franklin Gothic Book",
+    "Rubik",
+    "Helvetica Neue",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 1.3;
@@ -15621,7 +15821,17 @@ mjx-container {
 .markdown-rendered th {
   border: 1px solid rgb(250, 247, 245);
   color: rgb(250, 247, 245);
-  font-family: "??", "??", "??", "Arial";
+  font-family:
+    "??",
+    "??",
+    "Franklin Gothic Book",
+    "Rubik",
+    "Helvetica Neue",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 1.3;
@@ -17776,7 +17986,17 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .file-recovery-text[data-ext="md"] {
-  font-family: "??", "??", "??", "Arial";
+  font-family:
+    "??",
+    "??",
+    "Franklin Gothic Book",
+    "Rubik",
+    "Helvetica Neue",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 16px;
 }
 
@@ -19385,7 +19605,17 @@ body:not(.is-phone)
   --cursor-link: default;
   background-color: hsl(221, 33.3%, 12.9%);
   flex: 1 0 0;
-  font-family: "??", "??", "??", "Arial";
+  font-family:
+    "??",
+    "??",
+    "Franklin Gothic Book",
+    "Rubik",
+    "Helvetica Neue",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 16px;
   overflow: auto;
   padding: 24px;
@@ -19750,16 +19980,50 @@ body.theme-dark {
 }
 
 .canvas-selection {
-  background-color: hsla(189, 100%, 49%, 0.1);
-  border: 2px solid hsl(189, 100%, 49%);
+  background-color: hsla(
+    light-dark(
+      light-dark(189, 0),
+      light-dark(100%, 75%),
+      light-dark(49%, 52%),
+      light-dark(189, 0),
+      light-dark(100%, 75%),
+      light-dark(49%, 52%)
+    ),
+    0.1
+  );
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%)),
+      hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%))
+    );
   pointer-events: none;
   position: absolute;
   z-index: -1;
 }
 
 .canvas-selection.mod-group-selection {
-  background-color: hsla(189, 100%, 49%, 0.03);
-  border-color: hsla(189, 100%, 49%, 0.3);
+  background-color: hsla(
+    light-dark(
+      light-dark(189, 0),
+      light-dark(100%, 75%),
+      light-dark(49%, 52%),
+      light-dark(189, 0),
+      light-dark(100%, 75%),
+      light-dark(49%, 52%)
+    ),
+    0.03
+  );
+  border-color: hsla(
+    light-dark(
+      light-dark(189, 0),
+      light-dark(100%, 75%),
+      light-dark(49%, 52%),
+      light-dark(189, 0),
+      light-dark(100%, 75%),
+      light-dark(49%, 52%)
+    ),
+    0.3
+  );
   border-radius: 3px;
   border-width: 3px;
   pointer-events: initial;
@@ -19834,7 +20098,10 @@ body.theme-dark {
 
 @media (hover: hover) {
   .canvas-card-menu .canvas-card-menu-button:hover {
-    color: hsl(189, 100%, 49%);
+    color: light-dark(
+      hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%)),
+      hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%))
+    );
   }
 }
 
@@ -19905,7 +20172,10 @@ body.theme-dark {
 }
 
 .canvas-control-item.is-active {
-  color: hsl(189, 100%, 49%);
+  color: light-dark(
+    hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%)),
+    hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%))
+  );
 }
 
 .canvas-control-item.is-disabled svg {
@@ -20074,14 +20344,20 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 }
 
 .canvas-node.is-selected .canvas-node-container {
-  border-color: hsl(189, 100%, 49%);
+  border-color: light-dark(
+    hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%)),
+    hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%))
+  );
   box-shadow:
     0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1),
     0 0 0 2px hsl(189, 100%, 49%);
 }
 
 .canvas-node.is-focused .canvas-node-container {
-  border-color: hsl(189, 100%, 49%);
+  border-color: light-dark(
+    hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%)),
+    hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%))
+  );
   box-shadow:
     0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1),
     0 0 0 2px hsl(189, 100%, 49%);
@@ -20137,8 +20413,22 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 }
 
 .canvas-node.is-dummy .canvas-node-container {
-  background-color: hsla(189, 100%, 49%, 0.2);
-  border: 4px solid hsl(189, 100%, 49%);
+  background-color: hsla(
+    light-dark(
+      light-dark(189, 0),
+      light-dark(100%, 75%),
+      light-dark(49%, 52%),
+      light-dark(189, 0),
+      light-dark(100%, 75%),
+      light-dark(49%, 52%)
+    ),
+    0.2
+  );
+  border: 4px solid
+    light-dark(
+      hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%)),
+      hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%))
+    );
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -20411,7 +20701,11 @@ body.is-mobile .canvas-node-resizer {
   .canvas-node-interaction-layer
   .canvas-node-resizer[data-resize="topright"] {
   background-color: hsl(221, 33.3%, 12.9%);
-  border: 2px solid hsl(189, 100%, 49%);
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%)),
+      hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%))
+    );
   border-radius: 3px;
   display: block;
   height: 20px;
@@ -20424,7 +20718,11 @@ body.is-mobile .canvas-node-resizer {
   .canvas-node-interaction-layer
   .canvas-node-resizer[data-resize="bottomright"] {
   background-color: hsl(221, 33.3%, 12.9%);
-  border: 2px solid hsl(189, 100%, 49%);
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%)),
+      hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%))
+    );
   border-radius: 3px;
   display: block;
   height: 20px;
@@ -20437,7 +20735,11 @@ body.is-mobile .canvas-node-resizer {
   .canvas-node-interaction-layer
   .canvas-node-resizer[data-resize="topleft"] {
   background-color: hsl(221, 33.3%, 12.9%);
-  border: 2px solid hsl(189, 100%, 49%);
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%)),
+      hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%))
+    );
   border-radius: 3px;
   display: block;
   height: 20px;
@@ -20450,7 +20752,11 @@ body.is-mobile .canvas-node-resizer {
   .canvas-node-interaction-layer
   .canvas-node-resizer[data-resize="bottomleft"] {
   background-color: hsl(221, 33.3%, 12.9%);
-  border: 2px solid hsl(189, 100%, 49%);
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%)),
+      hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%))
+    );
   border-radius: 3px;
   display: block;
   height: 20px;
@@ -20487,7 +20793,10 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-node-connection-point::after {
-  background-color: hsl(189, 100%, 49%);
+  background-color: light-dark(
+    hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%)),
+    hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%))
+  );
   border: 3px solid transparent;
   border-radius: 50%;
   box-sizing: border-box;
@@ -20521,12 +20830,18 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-snaps line {
-  stroke: hsl(189, 100%, 49%);
+  stroke: light-dark(
+    hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%)),
+    hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%))
+  );
   stroke-width: 1px;
 }
 
 .canvas-snaps circle {
-  fill: hsl(189, 100%, 49%);
+  fill: light-dark(
+    hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%)),
+    hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%))
+  );
 }
 
 .canvas-edges {
@@ -20759,9 +21074,22 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-placeholder-message {
-  background: hsla(189, 100%, 49%, 0.1);
+  background: hsla(
+    light-dark(
+      light-dark(189, 0),
+      light-dark(100%, 75%),
+      light-dark(49%, 52%),
+      light-dark(189, 0),
+      light-dark(100%, 75%),
+      light-dark(49%, 52%)
+    ),
+    0.1
+  );
   border-radius: 4px;
-  color: hsl(189, 100%, 49%);
+  color: light-dark(
+    hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%)),
+    hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%))
+  );
   font-size: 19.2px;
   line-height: 1.25em;
   max-width: 70vw;
@@ -20805,7 +21133,11 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-cursor {
-  border: 5px solid hsl(189, 100%, 49%);
+  border: 5px solid
+    light-dark(
+      hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%)),
+      hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%))
+    );
   border-radius: 5px;
   height: 1px;
   pointer-events: none;
@@ -24135,7 +24467,10 @@ table {
 }
 
 .reveal .controls button {
-  color: hsl(189, 100%, 49%);
+  color: light-dark(
+    hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%)),
+    hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%))
+  );
 }
 
 input.document-search-input.mod-no-match {
@@ -24160,14 +24495,34 @@ input.document-replace-input.mod-no-match {
 }
 
 #calendar-container .week-num {
-  font-family: "??", "??", "??", "Arial";
+  font-family:
+    "??",
+    "??",
+    "Franklin Gothic Book",
+    "Rubik",
+    "Helvetica Neue",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 9px;
 }
 
 #calendar-container .day {
   border: 1px solid hsla(221, 16.65%, 85%, 0.1);
   border-radius: 0;
-  font-family: "??", "??", "??", "Arial";
+  font-family:
+    "??",
+    "??",
+    "Franklin Gothic Book",
+    "Rubik",
+    "Helvetica Neue",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 11px;
 }
 
@@ -24176,7 +24531,17 @@ input.document-replace-input.mod-no-match {
 }
 
 #calendar-container th {
-  font-family: "??", "??", "??", "Arial";
+  font-family:
+    "??",
+    "??",
+    "Franklin Gothic Book",
+    "Rubik",
+    "Helvetica Neue",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 9px;
 }
 
@@ -24311,7 +24676,11 @@ code.language-output {
 }
 
 .oz-folder-contents {
-  border-left: 1px solid hsl(189, 100%, 49%);
+  border-left: 1px solid
+    light-dark(
+      hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%)),
+      hsl(light-dark(189, 0), light-dark(100%, 75%), light-dark(49%, 52%))
+    );
 }
 
 .kanban-plugin__lane {
@@ -24332,7 +24701,18 @@ code.language-output {
 
 .kanban-plugin__lane .task-list-item-checkbox:hover {
   border: 1px solid transparent;
-  box-shadow: 0px 0px 0px 2px hsla(189, 100%, 49%, 0.5);
+  box-shadow: 0px 0px 0px 2px
+    hsla(
+      light-dark(
+        light-dark(189, 0),
+        light-dark(100%, 75%),
+        light-dark(49%, 52%),
+        light-dark(189, 0),
+        light-dark(100%, 75%),
+        light-dark(49%, 52%)
+      ),
+      0.5
+    );
   transition: 0.05s;
 }
 
@@ -24355,7 +24735,17 @@ code.language-output {
 }
 
 button:not(.clickable-icon):hover {
-  background: hsla(189, 100%, 49%, 0.9);
+  background: hsla(
+    light-dark(
+      light-dark(189, 0),
+      light-dark(100%, 75%),
+      light-dark(49%, 52%),
+      light-dark(189, 0),
+      light-dark(100%, 75%),
+      light-dark(49%, 52%)
+    ),
+    0.9
+  );
   border-radius: 2px;
   box-shadow: 0px 0px 1px 0px rgba(255, 255, 255, 0.67);
   color: light-dark(

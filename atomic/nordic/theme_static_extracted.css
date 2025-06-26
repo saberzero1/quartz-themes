@@ -1,10 +1,13 @@
 :root {
   --accent-color: light-dark(#81a1c1, #81a1c1);
+  --accent-h: light-dark(210, 210);
+  --accent-l: light-dark(63%, 63%);
+  --accent-s: light-dark(34%, 34%);
   --background-secondary-alt: light-dark(#d8dee9, #ffffff);
   --color-accent: light-dark(#81a1c1, #81a1c1);
   --color-accent-1: light-dark(#a0bbd1, #90aec9);
   --color-accent-2: light-dark(#bed2e0, #a0bbd1);
-  --color-accent-hsl: light-dark(210, 34%, 63%, 210, 34%, 63%);
+  --color-accent-hsl: light-dark(#81a1c1, #81a1c1);
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
@@ -100,9 +103,10 @@
 }
 
 body {
-  --accent-h: 210;
-  --accent-l: 63%;
-  --accent-s: 34%;
+  --accent-color: light-dark(#81a1c1, #81a1c1);
+  --accent-h: light-dark(210, 210);
+  --accent-l: light-dark(63%, 63%);
+  --accent-s: light-dark(34%, 34%);
   --anim-duration-fast: 140ms;
   --anim-duration-moderate: 300ms;
   --anim-duration-none: 0;
@@ -127,6 +131,7 @@ body {
   --background-primary: #ffffff;
   --background-primary-alt: #eceff4;
   --background-secondary: #ffffff;
+  --background-secondary-alt: light-dark(#d8dee9, #ffffff);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -235,12 +240,30 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: #4c566a;
   --collapse-icon-color-collapsed: #a0bbd1;
+  --color-accent: light-dark(#81a1c1, #81a1c1);
+  --color-accent-1: light-dark(#a0bbd1, #90aec9);
+  --color-accent-2: light-dark(#bed2e0, #a0bbd1);
+  --color-accent-hsl: light-dark(#81a1c1, #81a1c1);
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
   --color-blue: #6199bf;
   --color-blue-rgb: 97, 153, 191;
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
   --color-green: #a3be8c;
   --color-green-rgb: 163, 190, 140;
   --color-orange: #d08770;
   --color-orange-rgb: 208, 135, 112;
+  --color-pink: light-dark(#fa99cd, #d53984);
   --color-purple: #b48ead;
   --color-purple-rgb: 180, 142, 173;
   --color-red: #bf616a;
@@ -306,7 +329,10 @@ body {
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "??", "??", "Avenir", "Arial";
+  --font-mermaid:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-monospace:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -324,7 +350,10 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "??", "??", "Avenir", "Arial";
+  --font-text:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -356,48 +385,49 @@ body {
   --graph-node-tag: #a3be8c;
   --graph-node-unresolved: #4c566a;
   --graph-text: color-mix(in srgb, #81a1c1, #000 45%);
-  --h1-color: inherit;
+  --h1-color: light-dark(#81a1c1, #81a1c1);
   --h1-font: inherit;
   --h1-line-height: 1.2;
   --h1-size: 1.802em;
   --h1-style: normal;
   --h1-variant: normal;
   --h1-weight: 700;
-  --h2-color: inherit;
+  --h2-color: light-dark(#81a1c1, #81a1c1);
   --h2-font: inherit;
   --h2-line-height: 1.2;
   --h2-size: 1.602em;
   --h2-style: normal;
   --h2-variant: normal;
   --h2-weight: 600;
-  --h3-color: inherit;
+  --h3-color: light-dark(#81a1c1, #81a1c1);
   --h3-font: inherit;
   --h3-line-height: 1.3;
   --h3-size: 1.424em;
   --h3-style: normal;
   --h3-variant: normal;
   --h3-weight: 600;
-  --h4-color: inherit;
+  --h4-color: light-dark(#81a1c1, #81a1c1);
   --h4-font: inherit;
   --h4-line-height: 1.4;
   --h4-size: 1.266em;
   --h4-style: normal;
   --h4-variant: normal;
   --h4-weight: 600;
-  --h5-color: inherit;
+  --h5-color: light-dark(#81a1c1, #81a1c1);
   --h5-font: inherit;
   --h5-line-height: 1.5;
   --h5-size: 1.125em;
   --h5-style: normal;
   --h5-variant: normal;
   --h5-weight: 600;
-  --h6-color: inherit;
+  --h6-color: light-dark(#81a1c1, #81a1c1);
   --h6-font: inherit;
   --h6-line-height: 1.5;
   --h6-size: 1em;
   --h6-style: normal;
   --h6-variant: normal;
   --h6-weight: 600;
+  --header-color: light-dark(#81a1c1, #81a1c1);
   --header-height: 40px;
   --heading-formatting: #4c566a;
   --heading-spacing: 0rem;
@@ -431,11 +461,14 @@ body {
   --indentation-guide-source-indent: 0.25em;
   --indentation-guide-width: 1px;
   --indentation-guide-width-active: 1px;
-  --inline-title-color: #bf616a;
-  --inline-title-font: "Norwester";
+  --inline-title-color: light-dark(#81a1c1, #81a1c1);
+  --inline-title-font: light-dark("Norwester", "Norwester");
   --inline-title-line-height: 1.2;
   --inline-title-margin-bottom: 0.5em;
-  --inline-title-size: "??", "??", "Avenir", "Arial";
+  --inline-title-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --inline-title-style: normal;
   --inline-title-variant: normal;
   --inline-title-weight: 700;
@@ -488,7 +521,7 @@ body {
   --list-indent: 2.25em;
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
-  --list-marker-color: #4c566a;
+  --list-marker-color: light-dark(#81a1c1, #81a1c1);
   --list-marker-color-collapsed: #a0bbd1;
   --list-marker-color-hover: color-mix(in srgb, #81a1c1, #000 20%);
   --list-numbered-style: decimal;
@@ -585,6 +618,16 @@ body {
   --nav-item-weight-active: inherit;
   --nav-item-weight-hover: inherit;
   --nav-item-white-space: pre;
+  --nord-color-base-10: light-dark(#3b4252, #eceff4);
+  --nord-color-base-100: light-dark(#eceff4, #2e3440);
+  --nord-color-base-20: light-dark(#3b4252, #eceff4);
+  --nord-color-base-25: light-dark(#434c5e, #e5e9f0);
+  --nord-color-base-30: light-dark(#434c5e, #e5e9f0);
+  --nord-color-base-35: light-dark(#4c566a, #d8dee9);
+  --nord-color-base-40: light-dark(#4c566a, #d8dee9);
+  --nord-color-base-50: light-dark(#d8dee9, #4c566a);
+  --nord-color-base-60: light-dark(#d8dee9, #434c5e);
+  --nord-color-base-70: light-dark(#e5e9f0, #3b4252);
   --p-spacing: 1rem;
   --p-spacing-empty: 0rem;
   --pdf-background: #ffffff;
@@ -665,6 +708,16 @@ body {
   --slider-thumb-y: -6px;
   --slider-track-background: transparent;
   --slider-track-height: 3px;
+  --statblock-bar-color: light-dark(#5e81ac, #5e81ac);
+  --statblock-border-color: light-dark(#3b4252, #eceff4);
+  --statblock-font-color: light-dark(#e5e9f0, #e5e9f0);
+  --statblock-image-border-color: light-dark(#e5e9f0, #e5e9f0);
+  --statblock-primary-color: light-dark(#e5e9f0, #81a1c1);
+  --statblock-property-font-color: light-dark(#e5e9f0, #e5e9f0);
+  --statblock-property-name-font-color: light-dark(#5e81ac, #5e81ac);
+  --statblock-rule-color: light-dark(#5e81ac, #5e81ac);
+  --statblock-section-heading-border-color: light-dark(#e5e9f0, #e5e9f0);
+  --statblock-section-heading-font-color: light-dark(#5e81ac, #5e81ac);
   --status-bar-background: #ffffff;
   --status-bar-border-color: #00000026;
   --status-bar-border-width: 1px 0 0 1px;
@@ -692,7 +745,7 @@ body {
   --tab-font-size: 14.992px;
   --tab-font-weight: inherit;
   --tab-max-width: 320px;
-  --tab-outline-color: #00000026;
+  --tab-outline-color: light-dark(#81a1c1, #81a1c1);
   --tab-outline-width: 1px;
   --tab-radius: 4px;
   --tab-radius-active: 6px 6px 0 0;
@@ -714,11 +767,7 @@ body {
   --tab-text-color-active: color-mix(in srgb, #81a1c1, #000 20%);
   --tab-text-color-focused: color-mix(in srgb, #81a1c1, #000 20%);
   --tab-text-color-focused-active: color-mix(in srgb, #81a1c1, #000 20%);
-  --tab-text-color-focused-active-current: color-mix(
-    in srgb,
-    #81a1c1,
-    #000 45%
-  );
+  --tab-text-color-focused-active-current: light-dark(#81a1c1, #81a1c1);
   --tab-text-color-focused-highlighted: #a0bbd1;
   --tab-width: 200px;
   --table-add-button-background: transparent;
@@ -742,7 +791,7 @@ body {
   --table-header-border-color: #00000080;
   --table-header-border-width: 1px;
   --table-header-color: color-mix(in srgb, #81a1c1, #000 45%);
-  --table-header-font: inherit;
+  --table-header-font: light-dark("Norwester", "Norwester");
   --table-header-size: 16px;
   --table-header-weight: 800;
   --table-line-height: 1.3;
@@ -776,7 +825,7 @@ body {
   --text-accent-hover: #bed2e0;
   --text-error: #bf616a;
   --text-faint: #4c566a;
-  --text-highlight-bg: #ffd00066;
+  --text-highlight-bg: light-dark(#81a1c1, #81a1c1);
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: #3b4252;
   --text-normal: #2e3440;
@@ -872,9 +921,43 @@ h6 a {
 
 h1 {
   --font-weight: 700;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -886,9 +969,43 @@ h1 {
 
 h2 {
   --font-weight: 600;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -900,9 +1017,43 @@ h2 {
 
 h3 {
   --font-weight: 600;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -914,9 +1065,43 @@ h3 {
 
 h4 {
   --font-weight: 600;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -928,9 +1113,43 @@ h4 {
 
 h5 {
   --font-weight: 600;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -942,9 +1161,43 @@ h5 {
 
 h6 {
   --font-weight: 600;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -1295,7 +1548,16 @@ input.prompt-input {
 }
 
 .markdown-rendered mark {
-  background-color: #81a1c1;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    ),
+    light-dark(
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    )
+  );
   color: color-mix(in srgb, #81a1c1, #000 45%);
 }
 

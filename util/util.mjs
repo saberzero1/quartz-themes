@@ -560,3 +560,23 @@ export function generateFundingLinks(manifest) {
 
   return "";
 }
+
+/**
+ * Cleans up CSS rules after running the PostCSS processor.
+ *
+  * @param {string} cssString - The CSS string to clean up.
+  * @returns {string} The cleaned CSS string with specific fixes applied.
+  */
+export function cleanRulesAfterRun(cssString) {
+  // Small fixes for `light-dark()` functions
+  const lightDarkHSL = /light-dark\((\s*?(?:\d+,\s*[\d.]+%,\s*[\d.]+%)),(\s*?(?:\d+,\s*[\d.]+%,\s*[\d.]+%))\);/gms
+  const lightDarkRGB = /light-dark\((\s*?(?:\d{1,3}\s*?,\s*?){2}(?:\d{1,3}\s*?\s*?)),(\s*?(?:\d{1,3}\s*?,\s*?){2}(?:\d{1,3}\s*?\s*?))\);/gms
+  const lightDarkRGBA = /light-dark\((\s*?(?:\d{1,3}\s*?,\s*?){2}(?:\d{1,3}\s*?\s*?),\s*?[\d.]+%?),(\s*?(?:\d{1,3}\s*?,\s*?){2}(?:\d{1,3}\s*?\s*?),\s*?[\d.]+%?)\);/gms
+  const lightDarkInherit = /light-dark\(((?:\s*?\w+\()?inherit(?:\))?,?){2}\);/gms
+  cssString = cssString.replaceAll(lightDarkHSL, "light-dark(hsl($1), hsl($2));")
+  cssString = cssString.replaceAll(lightDarkRGB, "light-dark(rgb($1), rgb($2));")
+  cssString = cssString.replaceAll(lightDarkRGBA, "light-dark(rgba($1), rgba($2));")
+  cssString = cssString.replaceAll(lightDarkInherit, "inherit;")
+
+  return cssString
+}

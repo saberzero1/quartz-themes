@@ -940,7 +940,7 @@
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
   --color-accent-1: light-dark(#a68af9, #9873f7);
   --color-accent-2: light-dark(#c5b6fc, #a68af9);
-  --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
+  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
@@ -1610,20 +1610,22 @@ body {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   --background-modifier-active-hover: #8a5cf526;
-  --background-modifier-border: #363636;
+  --background-modifier-border: light-dark(#306850, #071821);
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;
   --background-modifier-error: #fb464c;
   --background-modifier-error-hover: #fb464c;
   --background-modifier-error-rgb: 251, 70, 76;
-  --background-modifier-form-field: #000;
+  --background-modifier-form-field: light-dark(#071821, #e0f8cf);
+  --background-modifier-form-field-highlighted: light-dark(#44cf6e, #44cf6e);
   --background-modifier-hover: #ffffff11;
   --background-modifier-message: #000000e6;
-  --background-modifier-success: #44cf6e;
+  --background-modifier-success: light-dark(#a4e7c3, #a4e7c3);
   --background-modifier-success-rgb: 68, 207, 110;
   --background-primary: #000;
-  --background-primary-alt: #111;
+  --background-primary-alt: light-dark(#071821, #cfe6be);
   --background-secondary: #1e1e1e;
+  --background-secondary-alt: light-dark(#363636, #212121);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -1732,11 +1734,34 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: #306850;
   --collapse-icon-color-collapsed: #44cf6e;
+  --color-accent: light-dark(#8a5cf5, #8a5cf5);
+  --color-accent-1: light-dark(#a68af9, #9873f7);
+  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
   --color-darkgreen: #306850;
-  --color-green: #86c06c;
+  --color-green: light-dark(#44cf6e, #08b94e);
   --color-light: #e0f8cf;
   --color-nearblack: #071821;
   --color-off-light: #cfe6be;
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -1787,7 +1812,7 @@ body {
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "??", "??", "??", "Arial";
+  --font-mermaid: "??", "??", Courier, monospace;
   --font-monospace: "??", "??", "Lucida Console", monospace;
   --font-monospace-default: "Lucida Console", monospace;
   --font-monospace-override: "??";
@@ -1799,7 +1824,7 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "??", "??", "??", "Arial";
+  --font-text: "??", "??", Courier, monospace;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -1920,11 +1945,12 @@ body {
   --input-height: 30px;
   --input-placeholder-color: #306850;
   --input-radius: 5px;
-  --interactive-accent: #a68af9;
-  --interactive-accent-hover: #c5b6fc;
+  --interactive-accent: light-dark(#44cf6e, #44cf6e);
+  --interactive-accent-hover: light-dark(#e0f8cf, #071821);
   --interactive-accent-hsl: 258, 88%, 66%;
-  --interactive-hover: #111;
-  --interactive-normal: #000;
+  --interactive-hover: light-dark(#071821, #306850);
+  --interactive-normal: light-dark(#306850, #e0f8cf);
+  --interactive-success: light-dark(#44cf6e, #197300);
   --italic-color: inherit;
   --italic-weight: inherit;
   --layer-cover: 5;
@@ -2099,9 +2125,9 @@ body {
   --ribbon-background-collapsed: #000000;
   --ribbon-padding: 8px 4px 12px;
   --ribbon-width: 44px;
-  --scrollbar-active-thumb-bg: #ffffff33;
+  --scrollbar-active-thumb-bg: light-dark(#44cf6e, #44cf6e);
   --scrollbar-bg: #ffffff0d;
-  --scrollbar-thumb-bg: #ffffff1a;
+  --scrollbar-thumb-bg: light-dark(#306850, #306850);
   --search-clear-button-color: #44cf6e;
   --search-clear-button-size: 13px;
   --search-icon-color: #44cf6e;
@@ -2237,17 +2263,17 @@ body {
   --tag-radius: 2em;
   --tag-size: 0.875em;
   --tag-weight: inherit;
-  --text-accent: #8a5cf5;
-  --text-accent-hover: #c5b6fc;
+  --text-accent: light-dark(#44cf6e, #44cf6e);
+  --text-accent-hover: light-dark(#e0f8cf, #071821);
   --text-error: #fb464c;
-  --text-faint: #666666;
+  --text-faint: light-dark(#306850, #306850);
   --text-highlight-bg: #ffd00066;
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: #b3b3b3;
-  --text-normal: #dadada;
-  --text-on-accent: #ffffff;
+  --text-muted: light-dark(#44cf6e, #44cf6e);
+  --text-normal: light-dark(#44cf6e, #071821);
+  --text-on-accent: light-dark(#306850, #306850);
   --text-on-accent-inverted: #000000;
-  --text-selection: #8a5cf533;
+  --text-selection: light-dark(#306850, #44cf6e);
   --text-success: #44cf6e;
   --text-warning: #e9973f;
   --titlebar-background: #000000;
@@ -2931,7 +2957,7 @@ body:not(.is-mobile) .app-container {
 .markdown-source-view {
   --list-marker-space: 0;
   --list-padding-inline-start: 0;
-  font-family: "??", "??", "??", "Arial";
+  font-family: "??", "??", Courier, monospace;
   font-size: 16px;
 }
 
@@ -3081,7 +3107,7 @@ body:not(.is-mobile) .app-container {
 }
 
 .markdown-source-view.mod-cm6 .cm-scroller {
-  font-family: "??", "??", "??", "Arial";
+  font-family: "??", "??", Courier, monospace;
   line-height: 1.5;
   scrollbar-gutter: stable;
 }
@@ -4328,7 +4354,7 @@ body:not(.show-inline-title) .inline-title:not([data-level]) {
 .markdown-preview-view {
   -webkit-user-select: text;
   color: #44cf6e;
-  font-family: "??", "??", "??", "Arial";
+  font-family: "??", "??", Courier, monospace;
   font-size: 16px;
   height: 100%;
   line-height: 1.5;
@@ -5791,7 +5817,7 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
 .community-modal-readme {
   -webkit-user-select: text;
   color: #44cf6e;
-  font-family: "??", "??", "??", "Arial";
+  font-family: "??", "??", Courier, monospace;
   font-size: 16px;
   line-height: 1.5;
   overflow-wrap: break-word;
@@ -11905,7 +11931,7 @@ kbd {
 .markdown-source-view.mod-cm6
   .cm-line.HyperMD-codeblock
   .cm-formatting.cm-formatting-list {
-  font-family: "??", "??", "??", "Arial";
+  font-family: "??", "??", Courier, monospace;
   font-size: 16px;
 }
 
@@ -17255,7 +17281,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .file-recovery-text[data-ext="md"] {
-  font-family: "??", "??", "??", "Arial";
+  font-family: "??", "??", Courier, monospace;
   font-size: 16px;
 }
 
@@ -18884,7 +18910,7 @@ body:not(.is-phone)
   --cursor-link: default;
   background-color: #000000;
   flex: 1 0 0;
-  font-family: "??", "??", "??", "Arial";
+  font-family: "??", "??", Courier, monospace;
   font-size: 16px;
   overflow: auto;
   padding: 24px;

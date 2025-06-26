@@ -950,7 +950,7 @@
   --color-accent: light-dark(#9d8cf2, #9d8cf2);
   --color-accent-1: light-dark(#c6bff9, #b2a6f6);
   --color-accent-2: light-dark(#f1f0fe, #c6bff9);
-  --color-accent-hsl: light-dark(250, 80%, 75%, 250, 80%, 75%);
+  --color-accent-hsl: light-dark(#9d8cf2, #9d8cf2);
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
@@ -1616,9 +1616,9 @@ body {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   --background-modifier-active-hover: #8a75f026;
-  --background-modifier-border: #363636;
-  --background-modifier-border-focus: #555555;
-  --background-modifier-border-hover: #3f3f3f;
+  --background-modifier-border: light-dark(#262626, #262626);
+  --background-modifier-border-focus: light-dark(#424242, #424242);
+  --background-modifier-border-hover: light-dark(#303030, #303030);
   --background-modifier-error: #db4b4b;
   --background-modifier-error-hover: #db4b4b;
   --background-modifier-error-rgb: 219, 75, 75;
@@ -1630,7 +1630,19 @@ body {
   --background-primary: #0d0d0d;
   --background-primary-alt: #141414;
   --background-secondary: #141414;
-  --background-secondary-alt: #141414;
+  --background-secondary-alt: light-dark(#363636, #212121);
+  --base-05: light-dark(#ededed, #141414);
+  --base-10: light-dark(#d1d1d1, #1f1f1f);
+  --base-15: light-dark(#bfbfbf, #262626);
+  --base-20: light-dark(#a6a6a6, #303030);
+  --base-25: light-dark(#8f8f8f, #404040);
+  --base-30: light-dark(#757575, #595959);
+  --base-35: light-dark(#595959, #9e9e9e);
+  --base-40: light-dark(#404040, #c7c7c7);
+  --base-45: light-dark(#303030, #dbdbdb);
+  --base-50: light-dark(#262626, #ebebeb);
+  --base-55: light-dark(#1f1f1f, #f5f5f5);
+  --base-60: light-dark(#171717, #fafafa);
   --base-hue: 230;
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
@@ -1712,11 +1724,11 @@ body {
   --cards-aspect-ratio: auto;
   --cards-background: transparent;
   --cards-border-width: 1px;
-  --cards-columns: repeat(auto-fit, minmax(120px, 1fr));
+  --cards-columns: repeat(auto-fit, minmax(150px, 1fr));
   --cards-image-fit: contain;
   --cards-image-height: 400px;
   --cards-max-width: 1fr;
-  --cards-min-width: 120px;
+  --cards-min-width: 150px;
   --cards-mobile-width: 120px;
   --cards-padding: 1.2em;
   --caret-color: #b3b3b3;
@@ -1751,6 +1763,34 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: #424242;
   --collapse-icon-color-collapsed: #9f8fef;
+  --color-accent: light-dark(#9d8cf2, #9d8cf2);
+  --color-accent-1: light-dark(#c6bff9, #b2a6f6);
+  --color-accent-2: light-dark(#f1f0fe, #c6bff9);
+  --color-accent-hsl: light-dark(#9d8cf2, #9d8cf2);
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-black: light-dark(#0e1319, #0f141a);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-muted: light-dark(#8b949e, #8a939e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-teal: light-dark(#3eb4bf, #2caeba);
+  --color-white: light-dark(#e6e6e6, #dedede);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: pointer;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -1819,8 +1859,10 @@ body {
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid:
-    "??", "??", Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    sans-serif, "Arial";
+    "??", Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-monospace:
     "??", "JetBrains Mono", "FiraCode", Menlo, SFMono-Regular, Consolas,
     "Roboto Mono", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono",
@@ -1844,8 +1886,10 @@ body {
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
   --font-text:
-    "??", "??", Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    sans-serif, "Arial";
+    "??", Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme:
@@ -1970,8 +2014,8 @@ body {
   --interactive-accent: #8a75f0;
   --interactive-accent-hover: #9d8cf2;
   --interactive-accent-hsl: 250, 80%, 70%;
-  --interactive-hover: #111;
-  --interactive-normal: #000;
+  --interactive-hover: light-dark(#303030, #1f1f1f);
+  --interactive-normal: light-dark(#262626, #141414);
   --italic-color: inherit;
   --italic-weight: inherit;
   --layer-cover: 5;
@@ -2296,17 +2340,17 @@ body {
   --tag-radius: 6px;
   --tag-size: 0.875em;
   --tag-weight: inherit;
-  --text-accent: #8a75f0;
-  --text-accent-hover: #9d8cf2;
+  --text-accent: light-dark(#9b89f5, #735af2);
+  --text-accent-hover: light-dark(#beb1fb, #452eb8);
   --text-error: #db4b4b;
   --text-faint: #424242;
-  --text-highlight-bg: #ffd00066;
+  --text-highlight-bg: light-dark(#303030, #262626);
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: #999999;
   --text-normal: #b3b3b3;
   --text-on-accent: #ffffff;
   --text-on-accent-inverted: #000000;
-  --text-selection: #8a75f033;
+  --text-selection: light-dark(#1f1f1f, #1f1f1f);
   --text-success: #22d0a2;
   --text-warning: #ed8b4f;
   --titlebar-background: #141414;
@@ -3020,14 +3064,23 @@ body:not(.is-mobile) .app-container {
   --list-padding-inline-start: 0;
   font-family:
     "??",
-    "??",
     Inter,
     Roboto,
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
     sans-serif,
-    "Arial";
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
 }
 
@@ -3180,14 +3233,23 @@ body:not(.is-mobile) .app-container {
 .markdown-source-view.mod-cm6 .cm-scroller {
   font-family:
     "??",
-    "??",
     Inter,
     Roboto,
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
     sans-serif,
-    "Arial";
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   line-height: 1.6;
   scrollbar-gutter: stable;
 }
@@ -4450,14 +4512,23 @@ body:not(.show-inline-title) .inline-title:not([data-level]) {
   color: #b3b3b3;
   font-family:
     "??",
-    "??",
     Inter,
     Roboto,
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
     sans-serif,
-    "Arial";
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
   height: 100%;
   line-height: 1.6;
@@ -5913,14 +5984,23 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
   color: #b3b3b3;
   font-family:
     "??",
-    "??",
     Inter,
     Roboto,
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
     sans-serif,
-    "Arial";
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
   line-height: 1.6;
   overflow-wrap: break-word;
@@ -12143,14 +12223,23 @@ kbd {
   .cm-formatting.cm-formatting-list {
   font-family:
     "??",
-    "??",
     Inter,
     Roboto,
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
     sans-serif,
-    "Arial";
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
 }
 
@@ -17637,14 +17726,23 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 .file-recovery-text[data-ext="md"] {
   font-family:
     "??",
-    "??",
     Inter,
     Roboto,
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
     sans-serif,
-    "Arial";
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
 }
 
@@ -19257,14 +19355,23 @@ body:not(.is-phone)
   flex: 1 0 0;
   font-family:
     "??",
-    "??",
     Inter,
     Roboto,
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
     sans-serif,
-    "Arial";
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
   overflow: auto;
   padding: 24px;

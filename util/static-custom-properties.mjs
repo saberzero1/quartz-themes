@@ -2,23 +2,47 @@ import colors from "./color-convert.mjs"
 import calc from "postcss-calc"
 import postcssCustomProperties from "postcss-custom-properties"
 import postcss from "postcss"
+import postcssRelativeColorSyntax from "@csstools/postcss-relative-color-syntax"
+import { cleanRulesAfterRun } from "./util.mjs"
 
 export default function generateStaticCSS(cssString, themeName) {
+  // TODO: investigate why Shiba Inu theme is not working with colors
   const skipColors = ["Shiba Inu"]
 
   cssString = cssString.replace(/\/\*.*?\*\//gms, "")
+  let compareString = cssString
 
   cssString = postcss()
   .use(postcssCustomProperties({ preserve: false }))
   .process(cssString)
   .css
 
+  while (cssString !== compareString) {
+    compareString = cssString
+
+    cssString = postcss()
+    .use(postcssCustomProperties({ preserve: false }))
+    .process(cssString)
+    .css
+  }
+
   cssString = postcss()
   .use(calc({ preserve: false }))
   .process(cssString)
   .css
 
-  let compareString = cssString
+  while (cssString !== compareString) {
+    compareString = cssString
+
+    cssString = postcss()
+    .use(calc({ preserve: false }))
+    .process(cssString)
+    .css
+  }
+
+  //cssString = cleanRulesAfterRun(cssString)
+
+  compareString = cssString
   cssString = resolveCssVariables(cssString)
 
   while (cssString !== compareString) {
@@ -26,15 +50,31 @@ export default function generateStaticCSS(cssString, themeName) {
     cssString = resolveCssVariables(cssString)
   }
 
-  const result = cssString
+  compareString = cssString
+  cssString = postcss()
+  .use(postcssRelativeColorSyntax())
+  .process(cssString)
+  .css
+
+  while (cssString !== compareString) {
+    compareString = cssString
+    cssString = postcss()
+    .use(postcssRelativeColorSyntax())
+    .process(cssString)
+    .css
+  }
+
+  const result = cleanRulesAfterRun(cssString)
 
   if (skipColors.includes(themeName)) return result
 
   try {
-    return colors(cssString)
+    cssString = colors(cssString)
   } catch(_e) {
     return result
   }
+
+  return cleanRulesAfterRun(cssString)
 }
 
 /**

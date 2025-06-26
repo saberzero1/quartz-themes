@@ -10,7 +10,7 @@
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
   --color-accent-1: light-dark(#a68af9, #9873f7);
   --color-accent-2: light-dark(#c5b6fc, #a68af9);
-  --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
+  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
@@ -65,22 +65,26 @@ body {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
+  --background-accent: light-dark(#4f3b4f, #afbfcf);
+  --background-accent-alt: light-dark(#292929, #e0e0e0);
   --background-active-line: #333333;
   --background-modifier-active-hover: #8a5cf526;
-  --background-modifier-border: #363636;
+  --background-modifier-backlinks: light-dark(#2e2e2e, #e6e6e6);
+  --background-modifier-border: light-dark(#585350, #ada7a4);
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;
   --background-modifier-error: #fb464c;
   --background-modifier-error-hover: #fb464c;
   --background-modifier-error-rgb: 251, 70, 76;
-  --background-modifier-form-field: #000;
+  --background-modifier-form-field: light-dark(#2a2a2a, #e6e6e6);
   --background-modifier-hover: #ffffff11;
   --background-modifier-message: #000000e6;
   --background-modifier-success: #44cf6e;
   --background-modifier-success-rgb: 68, 207, 110;
-  --background-primary: #000;
+  --background-primary: light-dark(#333333, #ebebeb);
   --background-primary-alt: #111;
-  --background-secondary: #1e1e1e;
+  --background-secondary: light-dark(#433d43, #cfc9cf);
+  --background-secondary-alt: light-dark(#363636, #212121);
   --bases-embed-border: 1px solid #585350;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -190,6 +194,30 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: #808080;
   --collapse-icon-color-collapsed: #a68af9;
+  --color-accent: light-dark(#8a5cf5, #8a5cf5);
+  --color-accent-1: light-dark(#a68af9, #9873f7);
+  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
   --cursor-link: pointer;
   --default-font: "Inter";
@@ -249,7 +277,10 @@ body {
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "??", "??", "Inter", "Arial";
+  --font-mermaid:
+    "??", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-monospace:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -267,7 +298,10 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "??", "??", "Inter", "Arial";
+  --font-text:
+    "??", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "Inter";
@@ -349,6 +383,10 @@ body {
   --h6-style: normal;
   --h6-variant: normal;
   --h6-weight: 600;
+  --he-title-bar-active-bg: light-dark(#3d373a, #eaa4a4);
+  --he-title-bar-active-pinned-bg: light-dark(#735050, #a7b3a1);
+  --he-title-bar-inactive-bg: light-dark(#3d373a, #eaa4a4);
+  --he-title-bar-inactive-pinned-bg: light-dark(#735050, #a7b3a1);
   --header-height: 38px;
   --heading-formatting: #808080;
   --heading-spacing: 0.4rem;
@@ -401,7 +439,7 @@ body {
   --input-placeholder-color: #808080;
   --input-radius: 5px;
   --interactive-accent: #a68af9;
-  --interactive-accent-hover: #c5b6fc;
+  --interactive-accent-hover: light-dark(#a68af9, #708ca9);
   --interactive-accent-hsl: 258, 88%, 66%;
   --interactive-hover: #111;
   --interactive-normal: #000;

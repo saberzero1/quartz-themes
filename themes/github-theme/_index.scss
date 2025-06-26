@@ -22,34 +22,8 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --color-accent-2: #6ab0ff;
-  --color-accent-hsl: 212, 100%, 67%;
-  --color-base-100: #c9d1d9;
-  --color-base-30: #30363d;
-  --color-base-35: #21262d;
-  --color-base-40: #30363d;
-  --color-blue: #6cb6ff;
-  --color-cyan: #a5d6ff;
-  --color-green: #7ee787;
-  --color-orange: #ffa657;
-  --color-pink: #f778ba;
-  --color-purple: #d2a8ff;
-  --color-red: #f47067;
   --text-accent: #439bff;
   --text-highlight-bg: #ffd00066;
-  --color-accent-2: #6ab0ff;
-  --color-accent-hsl: 212, 100%, 67%;
-  --color-base-100: #c9d1d9;
-  --color-base-30: #30363d;
-  --color-base-35: #21262d;
-  --color-base-40: #30363d;
-  --color-blue: #6cb6ff;
-  --color-cyan: #a5d6ff;
-  --color-green: #7ee787;
-  --color-orange: #ffa657;
-  --color-pink: #f778ba;
-  --color-purple: #d2a8ff;
-  --color-red: #f47067;
   --text-accent: #439bff;
   --text-highlight-bg: #ffd00066;
 }
@@ -69,33 +43,7 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --color-accent-2: #70b3ff;
-  --color-accent-hsl: 212, 100%, 67%;
-  --color-base-100: #24292f;
-  --color-base-30: #d0d7de;
-  --color-base-35: #d4d4d4;
-  --color-base-40: #bdbdbd;
-  --color-blue: #086ddd;
-  --color-cyan: #2db7b5;
-  --color-green: #0cb54f;
-  --color-orange: #d96c00;
-  --color-pink: #c32b74;
-  --color-purple: #876be0;
-  --color-red: #cf222e;
   --text-highlight-bg: #ffd00066;
-  --color-accent-2: #70b3ff;
-  --color-accent-hsl: 212, 100%, 67%;
-  --color-base-100: #24292f;
-  --color-base-30: #d0d7de;
-  --color-base-35: #d4d4d4;
-  --color-base-40: #bdbdbd;
-  --color-blue: #086ddd;
-  --color-cyan: #2db7b5;
-  --color-green: #0cb54f;
-  --color-orange: #d96c00;
-  --color-pink: #c32b74;
-  --color-purple: #876be0;
-  --color-red: #cf222e;
   --text-highlight-bg: #ffd00066;
 }
 
@@ -261,7 +209,7 @@ html[saved-theme="light"] {
 
 :root {
   --color-accent-2: light-dark(hsl(207, 105%, 86.43%), hsl(209, 102%, 77.05%));
-  --color-accent-hsl: light-dark(212, 100%, 67%, 212, 100%, 67%);
+  --color-accent-hsl: light-dark(#57a5ff, #57a5ff);
   --color-base-100: light-dark(#dadada, #222222);
   --color-base-30: light-dark(#363636, #e0e0e0);
   --color-base-35: light-dark(#3f3f3f, #d4d4d4);
@@ -302,12 +250,28 @@ body {
   --code-value: #d2a8ff;
   --collapse-icon-color: #6e7681;
   --collapse-icon-color-collapsed: #439bff;
+  --color-accent-2: light-dark(hsl(207, 105%, 86.43%), hsl(209, 102%, 77.05%));
+  --color-accent-hsl: light-dark(#57a5ff, #57a5ff);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
-  --font-text: "??", "??", "??", "Arial";
+  --font-text:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --graph-line: #21262d;
   --graph-node-tag: #218bff;
   --graph-node-unresolved: #6e7681;
@@ -379,100 +343,6 @@ body {
   user-select: none;
   width: 100%;
 }
-/* START DARK */
-:root[saved-theme="dark"],
-html[saved-theme="dark"] {
-  color-scheme: dark;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
-  --color-accent-2: #6ab0ff;
-  --color-accent-hsl: 212, 100%, 67%;
-  --color-base-100: #c9d1d9;
-  --color-base-30: #30363d;
-  --color-base-35: #21262d;
-  --color-base-40: #30363d;
-  --color-blue: #6cb6ff;
-  --color-cyan: #a5d6ff;
-  --color-green: #7ee787;
-  --color-orange: #ffa657;
-  --color-pink: #f778ba;
-  --color-purple: #d2a8ff;
-  --color-red: #f47067;
-  --text-accent: #439bff;
-  --text-highlight-bg: #ffd00066;
-  --color-accent-2: #6ab0ff;
-  --color-accent-hsl: 212, 100%, 67%;
-  --color-base-100: #c9d1d9;
-  --color-base-30: #30363d;
-  --color-base-35: #21262d;
-  --color-base-40: #30363d;
-  --color-blue: #6cb6ff;
-  --color-cyan: #a5d6ff;
-  --color-green: #7ee787;
-  --color-orange: #ffa657;
-  --color-pink: #f778ba;
-  --color-purple: #d2a8ff;
-  --color-red: #f47067;
-  --text-accent: #439bff;
-  --text-highlight-bg: #ffd00066;
-}
-/* END DARK */
-/* START LIGHT */
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  color-scheme: light;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
-  --color-accent-2: #70b3ff;
-  --color-accent-hsl: 212, 100%, 67%;
-  --color-base-100: #24292f;
-  --color-base-30: #d0d7de;
-  --color-base-35: #d4d4d4;
-  --color-base-40: #bdbdbd;
-  --color-blue: #086ddd;
-  --color-cyan: #2db7b5;
-  --color-green: #0cb54f;
-  --color-orange: #d96c00;
-  --color-pink: #c32b74;
-  --color-purple: #876be0;
-  --color-red: #cf222e;
-  --text-highlight-bg: #ffd00066;
-  --color-accent-2: #70b3ff;
-  --color-accent-hsl: 212, 100%, 67%;
-  --color-base-100: #24292f;
-  --color-base-30: #d0d7de;
-  --color-base-35: #d4d4d4;
-  --color-base-40: #bdbdbd;
-  --color-blue: #086ddd;
-  --color-cyan: #2db7b5;
-  --color-green: #0cb54f;
-  --color-orange: #d96c00;
-  --color-pink: #c32b74;
-  --color-purple: #876be0;
-  --color-red: #cf222e;
-  --text-highlight-bg: #ffd00066;
-}
-/* END LIGHT */
 /* CALLOUTS */
 :root,
 html {

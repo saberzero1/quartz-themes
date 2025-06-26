@@ -215,8 +215,9 @@ body {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
+  --background-accent: light-dark(var(--dark0-soft), var(--light0-soft));
   --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
-  --background-modifier-border: var(--color-base-30);
+  --background-modifier-border: light-dark(var(--dark1), var(--light2));
   --background-modifier-border-focus: var(--color-base-40);
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-error: var(--color-red);
@@ -227,9 +228,13 @@ body {
   --background-modifier-message: rgba(0, 0, 0, 0.9);
   --background-modifier-success: var(--color-green);
   --background-modifier-success-rgb: var(--color-green-rgb);
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
+  --background-primary: light-dark(var(--dark0), var(--light0-hard));
+  --background-primary-alt: light-dark(var(--dark0-soft), var(--light0-hard));
+  --background-secondary: light-dark(var(--dark0-hard), var(--light1));
+  --background-secondary-alt: light-dark(
+    var(--color-base-30),
+    var(--color-base-05)
+  );
   --bases-embed-border: 1px solid var(--background-modifier-border);
   --bases-embed-border-radius: var(--radius-s);
   --bases-filter-menu-width: 520px;
@@ -267,11 +272,15 @@ body {
   --blockquote-border-thickness: 2px;
   --blockquote-color: inherit;
   --blockquote-font-style: normal;
-  --bold-color: inherit;
+  --bold-color: light-dark(var(--neutral-yellow), var(--faded-yellow));
   --bold-modifier: 200;
   --bold-weight: 600;
   --border-width: 1px;
   --button-radius: var(--input-radius);
+  --calendar-background-hover: light-dark(var(--dark1), var(--light1));
+  --calendar-hover: light-dark(var(--neutral-red), var(--neutral-red));
+  --calendar-today: light-dark(var(--neutral-orange), var(--neutral-red));
+  --calendar-week: light-dark(var(--neutral-orange), var(--neutral-red));
   --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
@@ -309,10 +318,10 @@ body {
   --canvas-color-6: var(--color-purple-rgb);
   --canvas-dot-pattern: var(--color-base-30);
   --caret-color: var(--text-normal);
-  --checkbox-border-color: var(--text-faint);
-  --checkbox-border-color-hover: var(--text-muted);
-  --checkbox-color: var(--interactive-accent);
-  --checkbox-color-hover: var(--interactive-accent-hover);
+  --checkbox-border-color: light-dark(var(--light4), var(--light4));
+  --checkbox-border-color-hover: light-dark(var(--light4), var(--light4));
+  --checkbox-color: light-dark(var(--light4), var(--light4));
+  --checkbox-color-hover: light-dark(var(--light4), var(--light4));
   --checkbox-margin-inline-start: 0.85em;
   --checkbox-marker-color: var(--background-primary);
   --checkbox-radius: 0;
@@ -320,14 +329,14 @@ body {
   --checklist-done-color: var(--text-muted);
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: var(--radius-s);
-  --code-background: var(--background-primary-alt);
+  --code-background: light-dark(var(--dark1), var(--light1));
   --code-border-color: var(--background-modifier-border);
   --code-border-width: 0px;
   --code-comment: var(--text-faint);
   --code-function: var(--color-yellow);
   --code-important: var(--color-orange);
   --code-keyword: var(--color-pink);
-  --code-normal: var(--text-normal);
+  --code-normal: light-dark(var(--neutral-blue), var(--neutral-blue));
   --code-operator: var(--color-red);
   --code-property: var(--color-cyan);
   --code-punctuation: var(--text-muted);
@@ -339,8 +348,66 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: var(--text-faint);
   --collapse-icon-color-collapsed: var(--text-accent);
+  --color-accent: light-dark(
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l))
+  );
+  --color-accent-1: light-dark(
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 1),
+      calc(var(--accent-s) * 1.01),
+      calc(var(--accent-l) * 1.075)
+    )
+  );
+  --color-accent-2: light-dark(
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    )
+  );
+  --color-accent-hsl: light-dark(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l)
+  );
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
   --cursor-link: pointer;
+  --dataview-key: light-dark(var(--text-faint), var(--text-faint));
+  --dataview-value: light-dark(var(--text-faint), var(--text-faint));
   --dialog-max-height: 85vh;
   --dialog-max-width: 80vw;
   --dialog-width: 560px;
@@ -415,7 +482,8 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: var(--font-print);
+  --font-text:
+    var(--font-text-override), var(--font-text-theme), var(--font-default);
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -440,49 +508,52 @@ body {
   --footnote-radius: var(--radius-s);
   --footnote-size: var(--font-smaller);
   --graph-controls-width: 240px;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus));
-  --graph-node: var(--text-muted);
-  --graph-node-attachment: var(--color-yellow);
+  --graph-line: light-dark(var(--dark2), var(--light3));
+  --graph-node: light-dark(var(--light3), var(--gray));
+  --graph-node-attachment: light-dark(
+    var(--neutral-green),
+    var(--neutral-green)
+  );
   --graph-node-focused: var(--text-accent);
-  --graph-node-tag: var(--color-green);
+  --graph-node-tag: light-dark(var(--neutral-red), var(--faded-red));
   --graph-node-unresolved: var(--text-faint);
   --graph-text: var(--text-normal);
-  --h1-color: inherit;
+  --h1-color: light-dark(var(--neutral-red), var(--faded-red));
   --h1-font: inherit;
   --h1-line-height: 1.2;
   --h1-size: 1.802em;
   --h1-style: normal;
   --h1-variant: normal;
   --h1-weight: 700;
-  --h2-color: inherit;
+  --h2-color: light-dark(var(--neutral-yellow), var(--faded-yellow));
   --h2-font: inherit;
   --h2-line-height: 1.2;
   --h2-size: 1.602em;
   --h2-style: normal;
   --h2-variant: normal;
   --h2-weight: 600;
-  --h3-color: inherit;
+  --h3-color: light-dark(var(--neutral-green), var(--faded-green));
   --h3-font: inherit;
   --h3-line-height: 1.3;
   --h3-size: 1.424em;
   --h3-style: normal;
   --h3-variant: normal;
   --h3-weight: 600;
-  --h4-color: inherit;
+  --h4-color: light-dark(var(--neutral-aqua), var(--faded-aqua));
   --h4-font: inherit;
   --h4-line-height: 1.4;
   --h4-size: 1.266em;
   --h4-style: normal;
   --h4-variant: normal;
   --h4-weight: 600;
-  --h5-color: inherit;
+  --h5-color: light-dark(var(--neutral-blue), var(--faded-blue));
   --h5-font: inherit;
   --h5-line-height: var(--line-height-normal);
   --h5-size: 1.125em;
   --h5-style: normal;
   --h5-variant: normal;
   --h5-weight: 600;
-  --h6-color: inherit;
+  --h6-color: light-dark(var(--neutral-purple), var(--faded-purple));
   --h6-font: inherit;
   --h6-line-height: var(--line-height-normal);
   --h6-size: 1em;
@@ -496,8 +567,8 @@ body {
   --hr-thickness: 2px;
   --icon-color: var(--text-muted);
   --icon-color-active: var(--text-accent);
-  --icon-color-focused: var(--text-normal);
-  --icon-color-hover: var(--text-muted);
+  --icon-color-focused: light-dark(var(--neutral-blue), var(--neutral-blue));
+  --icon-color-hover: light-dark(var(--neutral-red), var(--neutral-red));
   --icon-l: 18px;
   --icon-l-stroke-width: 1.75px;
   --icon-m: 18px;
@@ -522,7 +593,10 @@ body {
   --indentation-guide-source-indent: 0.25em;
   --indentation-guide-width: 1px;
   --indentation-guide-width-active: 1px;
-  --inline-title-color: var(--h1-color);
+  --inline-title-color: light-dark(
+    var(--neutral-yellow),
+    var(--neutral-yellow)
+  );
   --inline-title-font: var(--h1-font);
   --inline-title-line-height: var(--h1-line-height);
   --inline-title-margin-bottom: 0.5em;
@@ -541,7 +615,7 @@ body {
   --interactive-accent-hsl: var(--color-accent-hsl);
   --interactive-hover: var(--color-base-10);
   --interactive-normal: var(--color-base-00);
-  --italic-color: inherit;
+  --italic-color: light-dark(var(--neutral-yellow), var(--faded-yellow));
   --italic-weight: inherit;
   --layer-cover: 5;
   --layer-dragged-item: 80;
@@ -591,6 +665,9 @@ body {
   --menu-padding: var(--size-2-3);
   --menu-radius: var(--radius-m);
   --menu-shadow: var(--shadow-s);
+  --mermaid-actor: light-dark(var(--dark2), var(--light3));
+  --mermaid-loopline: light-dark(var(--neutral-blue), var(--faded-blue));
+  --mermaid-note: light-dark(var(--neutral-blue), var(--neutral-blue));
   --metadata-background: transparent;
   --metadata-border-color: var(--background-modifier-border);
   --metadata-border-radius: 0;
@@ -663,9 +740,9 @@ body {
   --nav-item-children-margin-start: var(--size-4-3);
   --nav-item-children-padding-start: var(--size-2-2);
   --nav-item-color: var(--text-muted);
-  --nav-item-color-active: var(--text-normal);
+  --nav-item-color-active: light-dark(var(--neutral-aqua), var(--faded-blue));
   --nav-item-color-highlighted: var(--text-accent);
-  --nav-item-color-hover: var(--text-normal);
+  --nav-item-color-hover: light-dark(var(--neutral-red), var(--neutral-red));
   --nav-item-color-selected: var(--text-normal);
   --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
     var(--size-4-6);
@@ -807,8 +884,14 @@ body {
   --tab-text-color: var(--text-faint);
   --tab-text-color-active: var(--text-muted);
   --tab-text-color-focused: var(--text-muted);
-  --tab-text-color-focused-active: var(--text-muted);
-  --tab-text-color-focused-active-current: var(--text-normal);
+  --tab-text-color-focused-active: light-dark(
+    var(--neutral-yellow),
+    var(--neutral-yellow)
+  );
+  --tab-text-color-focused-active-current: light-dark(
+    var(--neutral-red),
+    var(--neutral-red)
+  );
   --tab-text-color-focused-highlighted: var(--text-accent);
   --tab-width: 200px;
   --table-add-button-background: transparent;
@@ -828,7 +911,7 @@ body {
   --table-drag-handle-color: var(--text-faint);
   --table-drag-handle-color-active: var(--text-on-accent);
   --table-header-background: var(--table-background);
-  --table-header-background-hover: inherit;
+  --table-header-background-hover: light-dark(var(--dark2), var(--light2));
   --table-header-border-color: var(--table-border-color);
   --table-header-border-width: var(--table-border-width);
   --table-header-color: var(--text-normal);
@@ -838,7 +921,7 @@ body {
   --table-line-height: var(--line-height-tight);
   --table-row-alt-background: var(--table-background);
   --table-row-alt-background-hover: var(--table-background);
-  --table-row-background-hover: var(--table-background);
+  --table-row-background-hover: light-dark(var(--dark2), var(--light2));
   --table-row-last-border-width: var(--table-border-width);
   --table-selection: hsla(var(--color-accent-hsl), 0.1);
   --table-selection-blend-mode: var(--highlight-mix-blend-mode);
@@ -848,12 +931,12 @@ body {
   --table-text-color: inherit;
   --table-text-size: var(--font-text-size);
   --table-white-space: break-spaces;
-  --tag-background: hsla(var(--interactive-accent-hsl), 0.1);
+  --tag-background: light-dark(var(--dark2), var(--light1));
   --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
   --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);
   --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);
   --tag-border-width: 0px;
-  --tag-color: var(--text-accent);
+  --tag-color: light-dark(var(--neutral-aqua), var(--faded-aqua));
   --tag-color-hover: var(--text-accent);
   --tag-decoration: none;
   --tag-decoration-hover: underline;
@@ -862,14 +945,15 @@ body {
   --tag-radius: 0.5em;
   --tag-size: var(--font-smaller);
   --tag-weight: inherit;
-  --text-accent: var(--color-accent);
-  --text-accent-hover: var(--color-accent-2);
+  --text-accent: light-dark(var(--neutral-yellow), var(--neutral-yellow));
+  --text-accent-hover: light-dark(var(--faded-yellow), var(--faded-yellow));
   --text-error: var(--color-red);
-  --text-faint: var(--color-base-50);
-  --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
+  --text-faint: light-dark(var(--light1), var(--dark-text-faint));
+  --text-highlight-bg: light-dark(var(--neutral-yellow), var(--faded-yellow));
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: var(--color-base-70);
-  --text-normal: var(--color-base-100);
+  --text-highlight-fg: light-dark(var(--dark0-hard), var(--light0-hard));
+  --text-muted: light-dark(var(--light2), var(--dark-text-muted));
+  --text-normal: light-dark(var(--light-text), var(--dark-text));
   --text-on-accent: white;
   --text-on-accent-inverted: black;
   --text-selection: hsla(var(--color-accent-hsl), 0.2);
@@ -881,7 +965,10 @@ body {
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;
   --titlebar-text-color: var(--text-muted);
-  --titlebar-text-color-focused: var(--text-normal);
+  --titlebar-text-color-focused: light-dark(
+    var(--neutral-red),
+    var(--bright-red)
+  );
   --titlebar-text-weight: var(--font-bold);
   --toggle-border-width: 2px;
   --toggle-radius: 18px;

@@ -1,10 +1,13 @@
 :root {
+  --accent-h: light-dark(238, 228);
+  --accent-l: light-dark(70%, 66%);
+  --accent-s: light-dark(100%, 70%);
   --background-modifier-message: light-dark(#dfbfff, #dfbfff);
   --background-secondary-alt: light-dark(#e6cc99, #ffffff);
   --color-accent: light-dark(#ffcc66, #ffcc66);
   --color-accent-1: light-dark(hsl(44, 104%, 76%), hsl(39, 101%, 75.25%));
   --color-accent-2: light-dark(hsl(36, 104%, 75%), hsl(37, 102%, 80.5%));
-  --color-accent-hsl: light-dark(40, 100%, 70%, 40, 100%, 70%);
+  --color-accent-hsl: light-dark(#ffcc66, #ffcc66);
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
@@ -42,9 +45,9 @@
 }
 
 body {
-  --accent-h: 258;
-  --accent-l: 66%;
-  --accent-s: 88%;
+  --accent-h: light-dark(238, 228);
+  --accent-l: light-dark(70%, 66%);
+  --accent-s: light-dark(100%, 70%);
   --active-line-size: inherit;
   --anim-duration-fast: 140ms;
   --anim-duration-moderate: 300ms;
@@ -64,12 +67,13 @@ body {
   --background-modifier-error-rgb: 242, 135, 121;
   --background-modifier-form-field: #ffffff;
   --background-modifier-hover: #ffffff11;
-  --background-modifier-message: #000000e6;
+  --background-modifier-message: light-dark(#dfbfff, #dfbfff);
   --background-modifier-success: #d5ff80;
   --background-modifier-success-rgb: 213, 255, 128;
   --background-primary: #ffffff;
   --background-primary-alt: #302b22;
   --background-secondary: #10141e;
+  --background-secondary-alt: light-dark(#e6cc99, #ffffff);
   --bases-embed-border: 1px solid #1f1919;
   --bases-embed-border-radius: 5px;
   --bases-filter-menu-width: 520px;
@@ -180,6 +184,31 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: #498595;
   --collapse-icon-color-collapsed: #d5ff80;
+  --color-accent: light-dark(#ffcc66, #ffcc66);
+  --color-accent-1: light-dark(hsl(44, 104%, 76%), hsl(39, 101%, 75.25%));
+  --color-accent-2: light-dark(hsl(36, 104%, 75%), hsl(37, 102%, 80.5%));
+  --color-accent-hsl: light-dark(#ffcc66, #ffcc66);
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-muted: light-dark(#908caa, #797593);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
   --cursor-color: #f4dbd6;
   --cursor-link: pointer;
@@ -268,7 +297,10 @@ body {
   --font-interface-theme: "iA Writer Quattro S";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "??", "??", "iA Writer Quattro S", "Arial";
+  --font-mermaid:
+    "??", "iA Writer Quattro S", ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace: "iA Writer Mono", "iA Writer Mono S";
   --font-monospace-custom: "iA Writer Mono S";
   --font-monospace-default:
@@ -287,7 +319,10 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "??", "??", "iA Writer Quattro S", "Arial";
+  --font-text:
+    "??", "iA Writer Quattro S", ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme:
@@ -1396,7 +1431,11 @@ input[type="search"] {
 
 .nav-file-title.is-selected {
   background-color: transparent;
-  color: #ff9f80;
+  color: hsl(
+    calc(light-dark(238, 228) - 25),
+    light-dark(100%, 70%),
+    calc(light-dark(70%, 66%) + 5%)
+  );
   text-decoration-color: light-dark(#44cf6e, #08b94e);
 }
 

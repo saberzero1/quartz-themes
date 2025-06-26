@@ -931,6 +931,9 @@
 }
 
 :root {
+  --accent-h: light-dark(0, 240);
+  --accent-l: light-dark(100%, 12%);
+  --accent-s: light-dark(0%, 2%);
   --background-modifier-border: light-dark(#0a0a0a, #f5f5f5);
   --background-modifier-hover: light-dark(#0a0a0a, #f5f5f5);
   --background-primary: light-dark(#0a0a0a, #f5f5f5);
@@ -942,7 +945,7 @@
   --color-accent: light-dark(#ffffff, #ffffff);
   --color-accent-1: light-dark(hsl(-3, 0%, 115%), hsl(-1, 0%, 107.5%));
   --color-accent-2: light-dark(hsl(-5, 0%, 129%), hsl(-3, 0%, 115%));
-  --color-accent-hsl: light-dark(0, 0%, 100%, 0, 0%, 100%);
+  --color-accent-hsl: light-dark(#ffffff, #ffffff);
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
@@ -1590,9 +1593,9 @@
 }
 
 body {
-  --accent-h: 258;
-  --accent-l: 66%;
-  --accent-s: 88%;
+  --accent-h: light-dark(0, 240);
+  --accent-l: light-dark(100%, 12%);
+  --accent-s: light-dark(0%, 2%);
   --anim-duration-fast: 140ms;
   --anim-duration-moderate: 300ms;
   --anim-duration-none: 0;
@@ -1603,20 +1606,21 @@ body {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   --background-modifier-active-hover: #ffffff26;
-  --background-modifier-border: #363636;
+  --background-modifier-border: light-dark(#0a0a0a, #f5f5f5);
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;
   --background-modifier-error: #fb464c;
   --background-modifier-error-hover: #fb464c;
   --background-modifier-error-rgb: 251, 70, 76;
   --background-modifier-form-field: #000;
-  --background-modifier-hover: #ffffff11;
+  --background-modifier-hover: light-dark(#0a0a0a, #f5f5f5);
   --background-modifier-message: #000000e6;
   --background-modifier-success: #44cf6e;
   --background-modifier-success-rgb: 68, 207, 110;
-  --background-primary: #000;
-  --background-primary-alt: #111;
-  --background-secondary: #1e1e1e;
+  --background-primary: light-dark(#0a0a0a, #f5f5f5);
+  --background-primary-alt: light-dark(#0a0a0a, #f5f5f5);
+  --background-secondary: light-dark(#0a0a0a, #f5f5f5);
+  --background-secondary-alt: light-dark(#363636, #212121);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -1706,14 +1710,14 @@ body {
   --checklist-done-color: #a3a3a3;
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: 4px;
-  --code-background: #0a0a0a;
+  --code-background: light-dark(#101010, #ffffff);
   --code-border-color: transparent;
   --code-border-width: 0px;
   --code-comment: #666666;
   --code-function: #e0de71;
   --code-important: #e9973f;
   --code-keyword: #fa99cd;
-  --code-normal: #d4d4d4;
+  --code-normal: light-dark(#ffffff, #000000);
   --code-operator: #fb464c;
   --code-property: #53dfdd;
   --code-punctuation: #a3a3a3;
@@ -1725,6 +1729,30 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: #666666;
   --collapse-icon-color-collapsed: hsl(-3, 0%, 115%);
+  --color-accent: light-dark(#ffffff, #ffffff);
+  --color-accent-1: light-dark(hsl(-3, 0%, 115%), hsl(-1, 0%, 107.5%));
+  --color-accent-2: light-dark(hsl(-5, 0%, 129%), hsl(-3, 0%, 115%));
+  --color-accent-hsl: light-dark(#ffffff, #ffffff);
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -1784,7 +1812,10 @@ body {
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "??", "??", Geist, "Arial";
+  --font-mermaid:
+    "??", Geist, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-monospace:
     "??", Geist Mono, ui-monospace, SFMono-Regular, "Cascadia Mono",
     "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
@@ -1802,7 +1833,10 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "??", "??", Geist, "Arial";
+  --font-text:
+    "??", Geist, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -1879,7 +1913,7 @@ body {
   --header-height: 40px;
   --heading-formatting: #666666;
   --heading-spacing: 0rem;
-  --hr-color: transparent;
+  --hr-color: light-dark(#353533, #353533);
   --hr-thickness: 2px;
   --icon-color: #a3a3a3;
   --icon-color-active: hsl(-3, 0%, 115%);
@@ -1966,7 +2000,7 @@ body {
   --list-indent: 2.25em;
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
-  --list-marker-color: #666666;
+  --list-marker-color: light-dark(#d4d4d4, #d4d4d4);
   --list-marker-color-collapsed: hsl(-3, 0%, 115%);
   --list-marker-color-hover: #a3a3a3;
   --list-numbered-style: decimal;
@@ -2252,11 +2286,11 @@ body {
   --text-faint: #666666;
   --text-highlight-bg: #ffd00066;
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: #b3b3b3;
-  --text-normal: #dadada;
+  --text-muted: light-dark(#a3a3a3, #a3a3a3);
+  --text-normal: light-dark(#d4d4d4, #000000);
   --text-on-accent: #ffffff;
   --text-on-accent-inverted: #000000;
-  --text-selection: #ffffff33;
+  --text-selection: light-dark(#007bcf, #007bcf);
   --text-success: #44cf6e;
   --text-warning: #e9973f;
   --titlebar-background: #0a0a0a;
@@ -2974,7 +3008,20 @@ body:not(.is-mobile) .app-container {
 .markdown-source-view {
   --list-marker-space: 0;
   --list-padding-inline-start: 0;
-  font-family: "??", "??", Geist, "Arial";
+  font-family:
+    "??",
+    Geist,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
 }
 
@@ -3124,7 +3171,20 @@ body:not(.is-mobile) .app-container {
 }
 
 .markdown-source-view.mod-cm6 .cm-scroller {
-  font-family: "??", "??", Geist, "Arial";
+  font-family:
+    "??",
+    Geist,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   line-height: 1.75;
   scrollbar-gutter: stable;
 }
@@ -4379,7 +4439,20 @@ body:not(.show-inline-title) .inline-title:not([data-level]) {
 .markdown-preview-view {
   -webkit-user-select: text;
   color: light-dark(#d4d4d4, #000000);
-  font-family: "??", "??", Geist, "Arial";
+  font-family:
+    "??",
+    Geist,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
   height: 100%;
   line-height: 1.75;
@@ -5861,7 +5934,20 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
 .community-modal-readme {
   -webkit-user-select: text;
   color: light-dark(#d4d4d4, #000000);
-  font-family: "??", "??", Geist, "Arial";
+  font-family:
+    "??",
+    Geist,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
   line-height: 1.75;
   overflow-wrap: break-word;
@@ -9822,7 +9908,10 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .modal .modal-nav-action.mod-cta {
-  color: #ffffff;
+  color: light-dark(
+    hsl(light-dark(0, 240), light-dark(0%, 2%), light-dark(100%, 12%)),
+    hsl(light-dark(0, 240), light-dark(0%, 2%), light-dark(100%, 12%))
+  );
   font-weight: 600;
   inset-inline-end: 0;
 }
@@ -12061,7 +12150,20 @@ kbd {
 .markdown-source-view.mod-cm6
   .cm-line.HyperMD-codeblock
   .cm-formatting.cm-formatting-list {
-  font-family: "??", "??", Geist, "Arial";
+  font-family:
+    "??",
+    Geist,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
 }
 
@@ -17636,7 +17738,20 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .file-recovery-text[data-ext="md"] {
-  font-family: "??", "??", Geist, "Arial";
+  font-family:
+    "??",
+    Geist,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
 }
 
@@ -19244,7 +19359,20 @@ body:not(.is-phone)
   --cursor-link: default;
   background-color: light-dark(#0a0a0a, #f5f5f5);
   flex: 1 0 0;
-  font-family: "??", "??", Geist, "Arial";
+  font-family:
+    "??",
+    Geist,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
   overflow: auto;
   padding: 24px;
@@ -19620,16 +19748,50 @@ body.theme-dark {
 }
 
 .canvas-selection {
-  background-color: #ffffff1a;
-  border: 2px solid #ffffff;
+  background-color: hsla(
+    light-dark(
+      light-dark(0, 240),
+      light-dark(0%, 2%),
+      light-dark(100%, 12%),
+      light-dark(0, 240),
+      light-dark(0%, 2%),
+      light-dark(100%, 12%)
+    ),
+    0.1
+  );
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(0, 240), light-dark(0%, 2%), light-dark(100%, 12%)),
+      hsl(light-dark(0, 240), light-dark(0%, 2%), light-dark(100%, 12%))
+    );
   pointer-events: none;
   position: absolute;
   z-index: -1;
 }
 
 .canvas-selection.mod-group-selection {
-  background-color: #ffffff08;
-  border-color: #ffffff4d;
+  background-color: hsla(
+    light-dark(
+      light-dark(0, 240),
+      light-dark(0%, 2%),
+      light-dark(100%, 12%),
+      light-dark(0, 240),
+      light-dark(0%, 2%),
+      light-dark(100%, 12%)
+    ),
+    0.03
+  );
+  border-color: hsla(
+    light-dark(
+      light-dark(0, 240),
+      light-dark(0%, 2%),
+      light-dark(100%, 12%),
+      light-dark(0, 240),
+      light-dark(0%, 2%),
+      light-dark(100%, 12%)
+    ),
+    0.3
+  );
   border-radius: 3px;
   border-width: 3px;
   pointer-events: initial;
@@ -19704,7 +19866,10 @@ body.theme-dark {
 
 @media (hover: hover) {
   .canvas-card-menu .canvas-card-menu-button:hover {
-    color: #ffffff;
+    color: light-dark(
+      hsl(light-dark(0, 240), light-dark(0%, 2%), light-dark(100%, 12%)),
+      hsl(light-dark(0, 240), light-dark(0%, 2%), light-dark(100%, 12%))
+    );
   }
 }
 
@@ -19775,7 +19940,10 @@ body.theme-dark {
 }
 
 .canvas-control-item.is-active {
-  color: #ffffff;
+  color: light-dark(
+    hsl(light-dark(0, 240), light-dark(0%, 2%), light-dark(100%, 12%)),
+    hsl(light-dark(0, 240), light-dark(0%, 2%), light-dark(100%, 12%))
+  );
 }
 
 .canvas-control-item.is-disabled svg {
@@ -19944,14 +20112,20 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 }
 
 .canvas-node.is-selected .canvas-node-container {
-  border-color: #ffffff;
+  border-color: light-dark(
+    hsl(light-dark(0, 240), light-dark(0%, 2%), light-dark(100%, 12%)),
+    hsl(light-dark(0, 240), light-dark(0%, 2%), light-dark(100%, 12%))
+  );
   box-shadow:
     0px 0.5px 1px 0.5px #0000001a,
     0 0 0 2px #ffffff;
 }
 
 .canvas-node.is-focused .canvas-node-container {
-  border-color: #ffffff;
+  border-color: light-dark(
+    hsl(light-dark(0, 240), light-dark(0%, 2%), light-dark(100%, 12%)),
+    hsl(light-dark(0, 240), light-dark(0%, 2%), light-dark(100%, 12%))
+  );
   box-shadow:
     0px 0.5px 1px 0.5px #0000001a,
     0 0 0 2px #ffffff;
@@ -20007,8 +20181,22 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 }
 
 .canvas-node.is-dummy .canvas-node-container {
-  background-color: #ffffff33;
-  border: 4px solid #ffffff;
+  background-color: hsla(
+    light-dark(
+      light-dark(0, 240),
+      light-dark(0%, 2%),
+      light-dark(100%, 12%),
+      light-dark(0, 240),
+      light-dark(0%, 2%),
+      light-dark(100%, 12%)
+    ),
+    0.2
+  );
+  border: 4px solid
+    light-dark(
+      hsl(light-dark(0, 240), light-dark(0%, 2%), light-dark(100%, 12%)),
+      hsl(light-dark(0, 240), light-dark(0%, 2%), light-dark(100%, 12%))
+    );
   box-shadow: 0px 2px 10px #00000026;
 }
 
@@ -20281,7 +20469,11 @@ body.is-mobile .canvas-node-resizer {
   .canvas-node-interaction-layer
   .canvas-node-resizer[data-resize="topright"] {
   background-color: light-dark(#0a0a0a, #f5f5f5);
-  border: 2px solid #ffffff;
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(0, 240), light-dark(0%, 2%), light-dark(100%, 12%)),
+      hsl(light-dark(0, 240), light-dark(0%, 2%), light-dark(100%, 12%))
+    );
   border-radius: 3px;
   display: block;
   height: 20px;
@@ -20294,7 +20486,11 @@ body.is-mobile .canvas-node-resizer {
   .canvas-node-interaction-layer
   .canvas-node-resizer[data-resize="bottomright"] {
   background-color: light-dark(#0a0a0a, #f5f5f5);
-  border: 2px solid #ffffff;
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(0, 240), light-dark(0%, 2%), light-dark(100%, 12%)),
+      hsl(light-dark(0, 240), light-dark(0%, 2%), light-dark(100%, 12%))
+    );
   border-radius: 3px;
   display: block;
   height: 20px;
@@ -20307,7 +20503,11 @@ body.is-mobile .canvas-node-resizer {
   .canvas-node-interaction-layer
   .canvas-node-resizer[data-resize="topleft"] {
   background-color: light-dark(#0a0a0a, #f5f5f5);
-  border: 2px solid #ffffff;
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(0, 240), light-dark(0%, 2%), light-dark(100%, 12%)),
+      hsl(light-dark(0, 240), light-dark(0%, 2%), light-dark(100%, 12%))
+    );
   border-radius: 3px;
   display: block;
   height: 20px;
@@ -20320,7 +20520,11 @@ body.is-mobile .canvas-node-resizer {
   .canvas-node-interaction-layer
   .canvas-node-resizer[data-resize="bottomleft"] {
   background-color: light-dark(#0a0a0a, #f5f5f5);
-  border: 2px solid #ffffff;
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(0, 240), light-dark(0%, 2%), light-dark(100%, 12%)),
+      hsl(light-dark(0, 240), light-dark(0%, 2%), light-dark(100%, 12%))
+    );
   border-radius: 3px;
   display: block;
   height: 20px;
@@ -20357,7 +20561,10 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-node-connection-point::after {
-  background-color: #ffffff;
+  background-color: light-dark(
+    hsl(light-dark(0, 240), light-dark(0%, 2%), light-dark(100%, 12%)),
+    hsl(light-dark(0, 240), light-dark(0%, 2%), light-dark(100%, 12%))
+  );
   border: 3px solid light-dark(#0a0a0a, #f5f5f5);
   border-radius: 50%;
   box-sizing: border-box;
@@ -20391,12 +20598,18 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-snaps line {
-  stroke: hsl(0, 0%, 100%);
+  stroke: light-dark(
+    hsl(light-dark(0, 240), light-dark(0%, 2%), light-dark(100%, 12%)),
+    hsl(light-dark(0, 240), light-dark(0%, 2%), light-dark(100%, 12%))
+  );
   stroke-width: 1px;
 }
 
 .canvas-snaps circle {
-  fill: #ffffff;
+  fill: light-dark(
+    hsl(light-dark(0, 240), light-dark(0%, 2%), light-dark(100%, 12%)),
+    hsl(light-dark(0, 240), light-dark(0%, 2%), light-dark(100%, 12%))
+  );
 }
 
 .canvas-edges {
@@ -20629,9 +20842,22 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-placeholder-message {
-  background: #ffffff1a;
+  background: hsla(
+    light-dark(
+      light-dark(0, 240),
+      light-dark(0%, 2%),
+      light-dark(100%, 12%),
+      light-dark(0, 240),
+      light-dark(0%, 2%),
+      light-dark(100%, 12%)
+    ),
+    0.1
+  );
   border-radius: 8px;
-  color: #ffffff;
+  color: light-dark(
+    hsl(light-dark(0, 240), light-dark(0%, 2%), light-dark(100%, 12%)),
+    hsl(light-dark(0, 240), light-dark(0%, 2%), light-dark(100%, 12%))
+  );
   font-size: 19.2px;
   line-height: 1.75;
   max-width: 70vw;
@@ -20675,7 +20901,11 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-cursor {
-  border: 5px solid #ffffff;
+  border: 5px solid
+    light-dark(
+      hsl(light-dark(0, 240), light-dark(0%, 2%), light-dark(100%, 12%)),
+      hsl(light-dark(0, 240), light-dark(0%, 2%), light-dark(100%, 12%))
+    );
   border-radius: 5px;
   height: 1px;
   pointer-events: none;

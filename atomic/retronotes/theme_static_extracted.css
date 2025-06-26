@@ -1,4 +1,7 @@
 :root {
+  --accent-h: light-dark(0, 43.5);
+  --accent-l: light-dark(78.8%, 49.4%);
+  --accent-s: light-dark(0%, 47.6%);
   --background-secondary-alt: light-dark(#6a5884, #443955);
   --black-ink: #03080e;
   --black-ink-fainted: #03080ea6;
@@ -91,9 +94,9 @@
 }
 
 body {
-  --accent-h: 258;
-  --accent-l: 66%;
-  --accent-s: 88%;
+  --accent-h: light-dark(0, 43.5);
+  --accent-l: light-dark(78.8%, 49.4%);
+  --accent-s: light-dark(0%, 47.6%);
   --anim-duration-fast: 140ms;
   --anim-duration-moderate: 300ms;
   --anim-duration-none: 0;
@@ -118,7 +121,7 @@ body {
   --background-primary: #3b3149;
   --background-primary-alt: #4d4161;
   --background-secondary: #e6e6fa;
-  --background-secondary-alt: #dcc5f3;
+  --background-secondary-alt: light-dark(#6a5884, #443955);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -156,6 +159,7 @@ body {
   --blockquote-border-thickness: 2px;
   --blockquote-color: #fffefb;
   --blockquote-font-style: normal;
+  --bold-accent-ink: light-dark(#14b858, #004d20);
   --bold-color: #a3b28c;
   --bold-modifier: 200;
   --bold-weight: 800;
@@ -227,6 +231,30 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: #9181aa;
   --collapse-icon-color-collapsed: #b89bbc;
+  --color-accent: light-dark(#a681aa, #a681aa);
+  --color-accent-1: light-dark(#b89bbc, #af8eb3);
+  --color-accent-2: light-dark(#c9b4cd, #b89bbc);
+  --color-accent-hsl: light-dark(294.4, 19.4%, 58.6%, 294.4, 19.4%, 58.6%);
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -290,8 +318,10 @@ body {
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid:
-    "??", "IBM Plex Mono", "Consolas", monospace, "IBM Plex Mono", "Consolas",
-    monospace, "Arial";
+    "IBM Plex Mono", "Consolas", monospace, "IBM Plex Mono", "Consolas",
+    monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-monospace:
     "??", "IBM Plex Mono", "Consolas", monospace, ui-monospace, SFMono-Regular,
     "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono",
@@ -312,8 +342,10 @@ body {
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
   --font-text:
-    "??", "IBM Plex Mono", "Consolas", monospace, "IBM Plex Mono", "Consolas",
-    monospace, "Arial";
+    "IBM Plex Mono", "Consolas", monospace, "IBM Plex Mono", "Consolas",
+    monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-text-override: "IBM Plex Mono", "Consolas", monospace;
   --font-text-size: 12px;
   --font-text-theme: "IBM Plex Mono", "Consolas", monospace;
@@ -439,6 +471,7 @@ body {
   --interactive-accent-hsl: 294.4, 19.4%, 58.6%;
   --interactive-hover: #a598ba;
   --interactive-normal: #9181aa;
+  --italic-accent-ink: light-dark(#008acf, #9c1a21);
   --italic-color: #e6e6fa;
   --italic-weight: inherit;
   --layer-cover: 5;
@@ -451,6 +484,10 @@ body {
   --layer-slides: 45;
   --layer-status-bar: 15;
   --layer-tooltip: 70;
+  --leather-color: light-dark(#310000, #632335);
+  --leather-color-alt: light-dark(#6c0012, #802d44);
+  --leather-contrast-color: light-dark(#fffefb, #fffefb);
+  --leather-contrast-color-muted: light-dark(#fffefbd9, #fffefbd9);
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;
   --link-color: #e6e6fa;
@@ -483,6 +520,9 @@ body {
   --list-marker-color-hover: #a598ba;
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
+  --main-ink: light-dark(#fffefb, #163259);
+  --main-ink-fainted: light-dark(#fffefba6, #163259a6);
+  --main-ink-muted: light-dark(#fffefbd9, #163259d9);
   --menu-backdrop-filter: none;
   --menu-background: #e6e6fa;
   --menu-border-color: #a598ba;
@@ -629,6 +669,9 @@ body {
   --search-icon-color: #03080ed9;
   --search-icon-size: 18px;
   --search-result-background: #3b3149;
+  --secondary-ink: light-dark(#e8733d, #9c1a21);
+  --secondary-ink-fainted: light-dark(#e8733da6, #9c1a21a6);
+  --secondary-ink-muted: light-dark(#e8733dd9, #9c1a21d9);
   --sidebar-markdown-font-size: 10.8px;
   --sidebar-tab-text-display: none;
   --size-2-1: 2px;
@@ -759,7 +802,7 @@ body {
   --tag-radius: 8px;
   --tag-size: 0.875em;
   --tag-weight: inherit;
-  --text-accent: #a681aa;
+  --text-accent: light-dark(#b89bbc, #dcc5f3);
   --text-accent-hover: #c9b4cd;
   --text-error: #e35e66;
   --text-faint: #9181aa;
@@ -793,7 +836,7 @@ body {
   --toggle-thumb-width: 18px;
   --toggle-width: 40px;
   --vault-profile-actions-display: flex;
-  --vault-profile-color: #03080e;
+  --vault-profile-color: light-dark(#03080e, #03080e);
   --vault-profile-color-hover: #03080e;
   --vault-profile-display: flex;
   --vault-profile-font-size: 11.244px;

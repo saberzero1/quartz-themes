@@ -7,7 +7,7 @@
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
   --color-accent-1: light-dark(#a68af9, #9873f7);
   --color-accent-2: light-dark(#c5b6fc, #a68af9);
-  --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
+  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
@@ -77,7 +77,7 @@ body {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   --background-modifier-active-hover: #8a5cf526;
-  --background-modifier-border: #363636;
+  --background-modifier-border: light-dark(#ff058d, #26b3d2);
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;
   --background-modifier-error: #fb464c;
@@ -88,9 +88,10 @@ body {
   --background-modifier-message: #000000e6;
   --background-modifier-success: #44cf6e;
   --background-modifier-success-rgb: 68, 207, 110;
-  --background-primary: #000;
-  --background-primary-alt: #111;
-  --background-secondary: #1e1e1e;
+  --background-primary: light-dark(#10111b, #ededed);
+  --background-primary-alt: light-dark(#10111b, #);
+  --background-secondary: light-dark(#090a0f, #c4c4c4);
+  --background-secondary-alt: light-dark(#363636, #212121);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -199,6 +200,30 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: #eeeeee;
   --collapse-icon-color-collapsed: #ff058d;
+  --color-accent: light-dark(#8a5cf5, #8a5cf5);
+  --color-accent-1: light-dark(#a68af9, #9873f7);
+  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -258,7 +283,10 @@ body {
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "??", "??", "??", "Arial";
+  --font-mermaid:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-monospace:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -276,7 +304,10 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "??", "??", "??", "Arial";
+  --font-text:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -383,6 +414,7 @@ body {
   --indentation-guide-source-indent: 0.25em;
   --indentation-guide-width: 1px;
   --indentation-guide-width-active: 1px;
+  --inline-code: light-dark(#00ff7d, #f46e00);
   --inline-title-color: inherit;
   --inline-title-font: inherit;
   --inline-title-line-height: 1.2;
@@ -397,9 +429,11 @@ body {
   --input-height: 30px;
   --input-placeholder-color: #eeeeee;
   --input-radius: 5px;
-  --interactive-accent: #a68af9;
+  --interactive-accent: light-dark(#ff058d, #ff058d);
   --interactive-accent-hover: #c5b6fc;
   --interactive-accent-hsl: 258, 88%, 66%;
+  --interactive-accent-rgb: light-dark(#ff058d, #961327);
+  --interactive-before: light-dark(#ea748f, #a89984);
   --interactive-hover: #111;
   --interactive-normal: #000;
   --italic-color: inherit;
@@ -568,6 +602,7 @@ body {
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
   --popover-width: 450px;
+  --pre-code: light-dark(#, #bebebe);
   --prompt-border-color: #555555;
   --prompt-border-width: 0.5pt;
   --prompt-input-height: 40px;
@@ -720,18 +755,26 @@ body {
   --tag-radius: 2em;
   --tag-size: 0.875em;
   --tag-weight: inherit;
-  --text-accent: #8a5cf5;
-  --text-accent-hover: #c5b6fc;
+  --text-a: light-dark(#ff058d, #961327);
+  --text-a-hover: light-dark(#00ff7d, #26b3d2);
+  --text-accent: light-dark(#ff058d, #961327);
+  --text-accent-hover: light-dark(#26b3d2, #26b3d2);
   --text-error: #fb464c;
-  --text-faint: #666666;
+  --text-faint: light-dark(#eeeeee, #dedede);
   --text-highlight-bg: #ffd00066;
   --text-highlight-bg-rgb: 255, 208, 0;
+  --text-link: light-dark(#00ff7d, #26b3d2);
   --text-muted: #b3b3b3;
-  --text-normal: #dadada;
+  --text-normal: light-dark(#f9f7f2, #1a2023);
   --text-on-accent: #ffffff;
   --text-on-accent-inverted: #000000;
-  --text-selection: #8a5cf533;
+  --text-selection: light-dark(#b80034, #edc180);
   --text-success: #44cf6e;
+  --text-title-h1: light-dark(#9200ff, #26b3d2);
+  --text-title-h2: light-dark(#9200ff, #26b3d2);
+  --text-title-h3: light-dark(#9200ff, #26b3d2);
+  --text-title-h4: light-dark(#9200ff, #26b3d2);
+  --text-title-h5: light-dark(#9200ff, #26b3d2);
   --text-warning: #e9973f;
   --titlebar-background: #090a0f;
   --titlebar-background-focused: #090a0f;
@@ -758,6 +801,7 @@ body {
   --vault-profile-display: flex;
   --vault-profile-font-size: 14.992px;
   --vault-profile-font-weight: 500;
+  --vim-cursor: light-dark(#ff058d, #961327);
   --workspace-background-translucent: #00000099;
   --zoom-factor: 1;
   -webkit-tap-highlight-color: #ffffff00;

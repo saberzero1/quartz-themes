@@ -1800,7 +1800,10 @@ body {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
-  --background-modifier-border: var(--color-base-30);
+  --background-modifier-border: light-dark(
+    var(--dragonBlue),
+    var(--lotusBlue3)
+  );
   --background-modifier-border-focus: var(--color-base-40);
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-error: var(--color-red);
@@ -1811,9 +1814,13 @@ body {
   --background-modifier-message: rgba(0, 0, 0, 0.9);
   --background-modifier-success: var(--color-green);
   --background-modifier-success-rgb: var(--color-green-rgb);
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
+  --background-primary: light-dark(var(--sumiInk1), var(--paper-like));
+  --background-primary-alt: light-dark(var(--sumiInk1), var(--lotusWhite4));
+  --background-secondary: light-dark(var(--sumiInk1b), var(--soft-white));
+  --background-secondary-alt: light-dark(
+    var(--color-base-30),
+    var(--color-base-05)
+  );
   --bases-embed-border: 1px solid var(--background-modifier-border);
   --bases-embed-border-radius: var(--radius-s);
   --bases-filter-menu-width: 520px;
@@ -1851,7 +1858,7 @@ body {
   --blockquote-border-thickness: 2px;
   --blockquote-color: inherit;
   --blockquote-font-style: normal;
-  --bold-color: inherit;
+  --bold-color: light-dark(var(--light1), var(--lotusInk1));
   --bold-modifier: 200;
   --bold-weight: calc(var(--font-weight) + var(--bold-modifier));
   --border-width: 1px;
@@ -1905,6 +1912,7 @@ body {
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: var(--radius-s);
   --code-background: var(--background-primary-alt);
+  --code-block: light-dark(var(--fujiGray), var(--lotusGray3));
   --code-border-color: var(--background-modifier-border);
   --code-border-width: 0px;
   --code-comment: var(--text-faint);
@@ -1923,6 +1931,62 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: var(--text-faint);
   --collapse-icon-color-collapsed: var(--text-accent);
+  --color-accent: light-dark(
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l))
+  );
+  --color-accent-1: light-dark(
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 1),
+      calc(var(--accent-s) * 1.01),
+      calc(var(--accent-l) * 1.075)
+    )
+  );
+  --color-accent-2: light-dark(
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    )
+  );
+  --color-accent-hsl: light-dark(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l)
+  );
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -2000,7 +2064,8 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: var(--font-print);
+  --font-text:
+    var(--font-text-override), var(--font-text-theme), var(--font-default);
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme:
@@ -2109,6 +2174,7 @@ body {
   --indentation-guide-source-indent: 0.25em;
   --indentation-guide-width: 1px;
   --indentation-guide-width-active: 1px;
+  --inline-code: light-dark(var(--springGreen), var(--lotusGreen));
   --inline-title-color: var(--h1-color);
   --inline-title-font: var(--h1-font);
   --inline-title-line-height: var(--h1-line-height);
@@ -2126,6 +2192,8 @@ body {
   --interactive-accent: var(--color-accent-1);
   --interactive-accent-hover: var(--color-accent-2);
   --interactive-accent-hsl: var(--color-accent-hsl);
+  --interactive-accent-rgb: light-dark(var(--springGreen), var(--lotusGreen));
+  --interactive-before: light-dark(var(--sumiInk4), var(--lotusGray2));
   --interactive-hover: var(--color-base-10);
   --interactive-normal: var(--color-base-00);
   --italic-color: inherit;
@@ -2294,6 +2362,7 @@ body {
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
   --popover-width: 450px;
+  --pre-code: light-dark(var(--sumiInk0), var(--lotusGray));
   --prompt-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
@@ -2414,6 +2483,7 @@ body {
   --table-drag-handle-background-active: var(--table-selection-border-color);
   --table-drag-handle-color: var(--text-faint);
   --table-drag-handle-color-active: var(--text-on-accent);
+  --table-header: light-dark(hsl(0, 0%, 14%), hsl(42, 33%, 91%));
   --table-header-background: var(--table-background);
   --table-header-background-hover: inherit;
   --table-header-border-color: var(--table-border-color);
@@ -2422,11 +2492,14 @@ body {
   --table-header-font: inherit;
   --table-header-size: var(--table-text-size);
   --table-header-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --table-hover: light-dark(var(--sumiInk2), var(--lotusWhite1));
   --table-line-height: var(--line-height-tight);
   --table-row-alt-background: var(--table-background);
   --table-row-alt-background-hover: var(--table-background);
   --table-row-background-hover: var(--table-background);
+  --table-row-even: light-dark(hsl(0, 0%, 17%), hsl(42, 35%, 94%));
   --table-row-last-border-width: var(--table-border-width);
+  --table-row-odd: light-dark(hsl(0, 0%, 20%), hsl(42, 37%, 97%));
   --table-selection: hsla(var(--color-accent-hsl), 0.1);
   --table-selection-blend-mode: var(--highlight-mix-blend-mode);
   --table-selection-border-color: var(--interactive-accent);
@@ -2449,18 +2522,29 @@ body {
   --tag-radius: 2em;
   --tag-size: var(--font-smaller);
   --tag-weight: inherit;
-  --text-accent: var(--color-accent);
+  --task-checkbox: light-dark(var(--sumiInk4), var(--lotusGray2));
+  --text-a: light-dark(var(--dragonBlue), var(--lotusTeal1));
+  --text-a-hover: light-dark(var(--peachRed), var(--lotusRed));
+  --text-accent: light-dark(var(--autumnGreen), var(--lotusGreen));
   --text-accent-hover: var(--color-accent-2);
   --text-error: var(--color-red);
-  --text-faint: var(--color-base-50);
-  --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
+  --text-faint: light-dark(var(--fujiGray), var(--lotusGray3));
+  --text-highlight-bg: light-dark(var(--waveBlue1), var(--lotusBlue2));
   --text-highlight-bg-rgb: 255, 208, 0;
+  --text-link: light-dark(var(--springBlue), var(--lotusBlue5));
   --text-muted: var(--color-base-70);
-  --text-normal: var(--color-base-100);
+  --text-normal: light-dark(var(--fujiWhite), var(--lotusInk1));
   --text-on-accent: white;
   --text-on-accent-inverted: black;
   --text-selection: hsla(var(--color-accent-hsl), 0.2);
   --text-success: var(--color-green);
+  --text-tag: light-dark(var(--springViolet1), var(--lotusAqua));
+  --text-title-h1: light-dark(var(--neutral-red), var(--lotusRed));
+  --text-title-h2: light-dark(var(--neutral-orange), var(--lotusOrange));
+  --text-title-h3: light-dark(var(--neutral-yellow), var(--lotusYellow));
+  --text-title-h4: light-dark(var(--neutral-green), var(--lotusGreen));
+  --text-title-h5: light-dark(var(--neutral-aqua), var(--lotusAqua));
+  --text-title-h6: light-dark(var(--neutral-blue), var(--lotusBlue4));
   --text-warning: var(--color-orange);
   --titlebar-background: var(--background-secondary);
   --titlebar-background-focused: var(--background-secondary-alt);
@@ -2487,6 +2571,8 @@ body {
   --vault-profile-display: flex;
   --vault-profile-font-size: var(--font-ui-small);
   --vault-profile-font-weight: var(--font-medium);
+  --vim-cursor-backgroung: light-dark(var(--fujiWhite), var(--lotusGray));
+  --vim-cursor-color: light-dark(var(--sumiInk1), var(--lotusInk1));
   --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
   --zoom-factor: 1;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
@@ -15932,6 +16018,96 @@ b {
 }
 
 strong {
+  --background-modifier-border: light-dark(
+    var(--dragonBlue),
+    var(--lotusBlue3)
+  );
+  --background-primary: light-dark(var(--sumiInk1), var(--paper-like));
+  --background-primary-alt: light-dark(var(--sumiInk1), var(--lotusWhite4));
+  --background-secondary: light-dark(var(--sumiInk1b), var(--soft-white));
+  --bold-color: light-dark(var(--light1), var(--lotusInk1));
+  --code-block: light-dark(var(--fujiGray), var(--lotusGray3));
+  --color-accent: light-dark(
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l))
+  );
+  --color-accent-1: light-dark(
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 1),
+      calc(var(--accent-s) * 1.01),
+      calc(var(--accent-l) * 1.075)
+    )
+  );
+  --color-accent-2: light-dark(
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    )
+  );
+  --color-accent-hsl: light-dark(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l)
+  );
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --inline-code: light-dark(var(--springGreen), var(--lotusGreen));
+  --interactive-accent-rgb: light-dark(var(--springGreen), var(--lotusGreen));
+  --interactive-before: light-dark(var(--sumiInk4), var(--lotusGray2));
+  --pre-code: light-dark(var(--sumiInk0), var(--lotusGray));
+  --table-header: light-dark(hsl(0, 0%, 14%), hsl(42, 33%, 91%));
+  --table-hover: light-dark(var(--sumiInk2), var(--lotusWhite1));
+  --table-row-even: light-dark(hsl(0, 0%, 17%), hsl(42, 35%, 94%));
+  --table-row-odd: light-dark(hsl(0, 0%, 20%), hsl(42, 37%, 97%));
+  --task-checkbox: light-dark(var(--sumiInk4), var(--lotusGray2));
+  --text-a: light-dark(var(--dragonBlue), var(--lotusTeal1));
+  --text-a-hover: light-dark(var(--peachRed), var(--lotusRed));
+  --text-accent: light-dark(var(--autumnGreen), var(--lotusGreen));
+  --text-faint: light-dark(var(--fujiGray), var(--lotusGray3));
+  --text-highlight-bg: light-dark(var(--waveBlue1), var(--lotusBlue2));
+  --text-link: light-dark(var(--springBlue), var(--lotusBlue5));
+  --text-normal: light-dark(var(--fujiWhite), var(--lotusInk1));
+  --text-tag: light-dark(var(--springViolet1), var(--lotusAqua));
+  --text-title-h1: light-dark(var(--neutral-red), var(--lotusRed));
+  --text-title-h2: light-dark(var(--neutral-orange), var(--lotusOrange));
+  --text-title-h3: light-dark(var(--neutral-yellow), var(--lotusYellow));
+  --text-title-h4: light-dark(var(--neutral-green), var(--lotusGreen));
+  --text-title-h5: light-dark(var(--neutral-aqua), var(--lotusAqua));
+  --text-title-h6: light-dark(var(--neutral-blue), var(--lotusBlue4));
+  --vim-cursor-backgroung: light-dark(var(--fujiWhite), var(--lotusGray));
+  --vim-cursor-color: light-dark(var(--sumiInk1), var(--lotusInk1));
   color: var(--bold-color);
   font-weight: 600;
 }

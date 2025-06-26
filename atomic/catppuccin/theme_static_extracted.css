@@ -3,7 +3,7 @@
   --color-accent: light-dark(hsl(254, 80%, 68%), hsl(254, 80%, 68%));
   --color-accent-1: light-dark(hsl(251, 81.6%, 78.2%), hsl(253, 80.8%, 73.1%));
   --color-accent-2: light-dark(hsl(249, 84%, 87.72%), hsl(251, 81.6%, 78.2%));
-  --color-accent-hsl: light-dark(254, 80%, 68%, 254, 80%, 68%);
+  --color-accent-hsl: light-dark(hsl(254, 80%, 68%), hsl(254, 80%, 68%));
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
@@ -82,7 +82,7 @@ body {
   --background-primary-alt: rgb(24, 24, 37);
   --background-primary-rgb: 30, 30, 46;
   --background-secondary: rgb(24, 24, 37);
-  --background-secondary-alt: rgb(17, 17, 27);
+  --background-secondary-alt: light-dark(#363636, #212121);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -191,35 +191,37 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: rgb(69, 71, 90);
   --collapse-icon-color-collapsed: rgb(166, 173, 200);
-  --color-accent: rgb(180, 190, 254);
-  --color-accent-1: rgb(180, 190, 254);
-  --color-accent-2: rgb(180, 190, 254, 90%);
-  --color-base-00: rgb(17, 17, 27);
-  --color-base-10: rgb(24, 24, 37);
-  --color-base-100: rgb(205, 214, 244);
-  --color-base-20: rgb(30, 30, 46);
-  --color-base-25: rgb(49, 50, 68);
-  --color-base-30: rgb(69, 71, 90);
-  --color-base-35: rgb(88, 91, 112);
-  --color-base-40: rgb(108, 112, 134);
-  --color-base-50: rgb(127, 132, 156);
-  --color-base-60: rgb(147, 153, 178);
-  --color-base-70: rgb(166, 173, 200);
-  --color-blue: rgb(137, 180, 250);
+  --color-accent: light-dark(hsl(254, 80%, 68%), hsl(254, 80%, 68%));
+  --color-accent-1: light-dark(hsl(251, 81.6%, 78.2%), hsl(253, 80.8%, 73.1%));
+  --color-accent-2: light-dark(hsl(249, 84%, 87.72%), hsl(251, 81.6%, 78.2%));
+  --color-accent-hsl: light-dark(hsl(254, 80%, 68%), hsl(254, 80%, 68%));
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
   --color-blue-rgb: 137, 180, 250;
-  --color-cyan: rgb(137, 220, 235);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
   --color-cyan-rgb: 116, 199, 236;
-  --color-green: rgb(166, 227, 161);
+  --color-green: light-dark(#44cf6e, #08b94e);
   --color-green-rgb: 166, 227, 161;
-  --color-orange: rgb(250, 179, 135);
+  --color-orange: light-dark(#e9973f, #ec7500);
   --color-orange-rgb: 250, 179, 135;
-  --color-pink: rgb(245, 194, 231);
+  --color-pink: light-dark(#fa99cd, #d53984);
   --color-pink-rgb: 245, 194, 231;
-  --color-purple: rgb(180, 190, 254);
+  --color-purple: light-dark(#a882ff, #7852ee);
   --color-purple-rgb: 203, 166, 247;
-  --color-red: rgb(243, 139, 168);
+  --color-red: light-dark(#fb464c, #e93147);
   --color-red-rgb: 243, 139, 168;
-  --color-yellow: rgb(249, 226, 175);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --color-yellow-rgb: 249, 226, 175;
   --cursor: default;
   --cursor-link: pointer;
@@ -287,8 +289,10 @@ body {
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid:
-    "??", "??", "Vollkorn", -apple-system, blinkmacsystemfont, "Segoe UI",
-    "Microsoft YaHei Light", roboto, inter, sans-serif, "Arial";
+    "??", "Vollkorn", -apple-system, blinkmacsystemfont, "Segoe UI",
+    "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -309,8 +313,10 @@ body {
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
   --font-text:
-    "??", "??", "Vollkorn", -apple-system, blinkmacsystemfont, "Segoe UI",
-    "Microsoft YaHei Light", roboto, inter, sans-serif, "Arial";
+    "??", "Vollkorn", -apple-system, blinkmacsystemfont, "Segoe UI",
+    "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme:
@@ -389,6 +395,17 @@ body {
   --header-height: 40px;
   --heading-formatting: rgb(69, 71, 90);
   --heading-spacing: 0rem;
+  --hex-blue: light-dark(#89b4fa, #1e66f5);
+  --hex-green: light-dark(#a6e3a1, #40a02b);
+  --hex-lavender: light-dark(#b4befe, #7287fd);
+  --hex-mauve: light-dark(#cba6f7, #8839ef);
+  --hex-peach: light-dark(#fab387, #fe640b);
+  --hex-pink: light-dark(#f5c2e7, #ea76cb);
+  --hex-red: light-dark(#f38ba8, #d20f39);
+  --hex-sapphire: light-dark(#74c7ec, #209fb5);
+  --hex-sky: light-dark(#89dceb, #04a5e5);
+  --hex-teal: light-dark(#94e2d5, #179299);
+  --hex-yellow: light-dark(#f9e2af, #df8e1d);
   --hr-color: transparent;
   --hr-thickness: 2px;
   --icon-color: rgb(166, 173, 200);

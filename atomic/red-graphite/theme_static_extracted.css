@@ -19,7 +19,7 @@
   --color-accent: light-dark(#f6cd74, #f6cd74);
   --color-accent-1: light-dark(#fadba6, #f8d58d);
   --color-accent-2: light-dark(#fdeed6, #fadba6);
-  --color-accent-hsl: light-dark(41, 88%, 71%, 41, 88%, 71%);
+  --color-accent-hsl: light-dark(#f6cd74, #f6cd74);
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
@@ -125,9 +125,9 @@
 }
 
 body {
-  --accent-h: 258;
-  --accent-l: 66%;
-  --accent-s: 88%;
+  --accent-h: light-dark(41, 41);
+  --accent-l: light-dark(71%, 71%);
+  --accent-s: light-dark(88%, 88%);
   --anim-duration-fast: 140ms;
   --anim-duration-moderate: 300ms;
   --anim-duration-none: 0;
@@ -138,9 +138,12 @@ body {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   --background-modifier-active-hover: #f6cd7426;
-  --background-modifier-border: hsl(222, 22%, -55%);
-  --background-modifier-border-focus: hsl(222, 22%, -45%);
-  --background-modifier-border-hover: hsl(222, 22%, -50%);
+  --background-modifier-border: light-dark(#1e232f, hsl(222, 22%, -55%));
+  --background-modifier-border-focus: light-dark(#323a4e, hsl(222, 22%, -60%));
+  --background-modifier-border-hover: light-dark(
+    hsl(222, 22%, -50%),
+    hsl(222, 22%, -50%)
+  );
   --background-modifier-error: #fb464c;
   --background-modifier-error-hover: #fb464c;
   --background-modifier-error-rgb: 251, 70, 76;
@@ -149,9 +152,13 @@ body {
   --background-modifier-message: #000000e6;
   --background-modifier-success: #44cf6e;
   --background-modifier-success-rgb: 68, 207, 110;
-  --background-primary: #000;
-  --background-primary-alt: #111;
-  --background-secondary: #1e1e1e;
+  --background-primary: light-dark(#282f3e, #1e1e1e);
+  --background-primary-alt: light-dark(#1e232f, #000);
+  --background-secondary: light-dark(#1e232f, #1e232f);
+  --background-secondary-alt: light-dark(
+    hsl(222, 22%, -55%),
+    hsl(222, 22%, -80%)
+  );
   --bases-embed-border: 1px solid #f6cd74;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -242,6 +249,7 @@ body {
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: 4px;
   --code-background: #1e232f;
+  --code-block-border-color: light-dark(#14171f, hsl(222, 22%, -45%));
   --code-border-color: #f6cd74;
   --code-border-width: 0px;
   --code-comment: #b1bacd;
@@ -260,6 +268,59 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: #b1bacd;
   --collapse-icon-color-collapsed: #f6cd74;
+  --color-accent: light-dark(#f6cd74, #f6cd74);
+  --color-accent-1: light-dark(#fadba6, #f8d58d);
+  --color-accent-2: light-dark(#fdeed6, #fadba6);
+  --color-accent-hsl: light-dark(#f6cd74, #f6cd74);
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-105: light-dark(#282f3e, #14171f);
+  --color-base-110: light-dark(#323a4e, #0a0c10);
+  --color-base-115: light-dark(#3c465d, #000000);
+  --color-base-120: light-dark(#46516d, hsl(222, 22%, -5%));
+  --color-base-125: light-dark(#505d7c, hsl(222, 22%, -10%));
+  --color-base-130: light-dark(#5a698c, hsl(222, 22%, -15%));
+  --color-base-135: light-dark(#63749c, hsl(222, 22%, -20%));
+  --color-base-140: light-dark(#7382a5, hsl(222, 22%, -25%));
+  --color-base-145: light-dark(#8390af, hsl(222, 22%, -30%));
+  --color-base-15: light-dark(hsl(222, 22%, -70%), #ffffff);
+  --color-base-150: light-dark(#929eb9, hsl(222, 22%, -35%));
+  --color-base-155: light-dark(#a2acc3, hsl(222, 22%, -40%));
+  --color-base-160: light-dark(#b1bacd, hsl(222, 22%, -45%));
+  --color-base-165: light-dark(#c1c8d7, hsl(222, 22%, -50%));
+  --color-base-170: light-dark(#d0d5e1, hsl(222, 22%, -55%));
+  --color-base-175: light-dark(#e0e3eb, hsl(222, 22%, -60%));
+  --color-base-180: light-dark(#eff1f5, hsl(222, 22%, -65%));
+  --color-base-185: light-dark(#ffffff, hsl(222, 22%, -70%));
+  --color-base-190: light-dark(hsl(222, 22%, 105%), hsl(222, 22%, -75%));
+  --color-base-195: light-dark(hsl(222, 22%, 110%), hsl(222, 22%, -80%));
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-200: light-dark(hsl(222, 22%, 115%), hsl(222, 22%, -85%));
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-45: light-dark(hsl(222, 22%, -40%), #a2acc3);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-55: light-dark(hsl(222, 22%, -30%), #8390af);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-65: light-dark(hsl(222, 22%, -20%), #63749c);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-base-75: light-dark(hsl(222, 22%, -10%), #505d7c);
+  --color-base-80: light-dark(hsl(222, 22%, -5%), #46516d);
+  --color-base-85: light-dark(#000000, #3c465d);
+  --color-base-90: light-dark(#0a0c10, #323a4e);
+  --color-base-95: light-dark(#14171f, #282f3e);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -318,7 +379,10 @@ body {
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "??", "Avenir", "??", "Arial";
+  --font-mermaid:
+    "Avenir", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-monospace:
     "", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -336,7 +400,10 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "??", "Avenir", "??", "Arial";
+  --font-text:
+    "Avenir", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-text-override: "Avenir";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -415,10 +482,10 @@ body {
   --heading-spacing: 0rem;
   --hr-color: #f6cd74;
   --hr-thickness: 2px;
-  --icon-color: #d0d5e1;
-  --icon-color-active: #f6cd74;
-  --icon-color-focused: #eff1f5;
-  --icon-color-hover: #d0d5e1;
+  --icon-color: light-dark(#7382a5, hsl(222, 22%, -25%));
+  --icon-color-active: light-dark(#f6cd74, #f6cd74);
+  --icon-color-focused: light-dark(#f6cd74, #f6cd74);
+  --icon-color-hover: light-dark(#f6cd74, #f6cd74);
   --icon-l: 18px;
   --icon-l-stroke-width: 1.75px;
   --icon-m: 18px;
@@ -460,8 +527,8 @@ body {
   --interactive-accent: #fadba6;
   --interactive-accent-hover: #fdeed6;
   --interactive-accent-hsl: 41, 88%, 71%;
-  --interactive-hover: #111;
-  --interactive-normal: #000;
+  --interactive-hover: light-dark(#0a0c10, #000);
+  --interactive-normal: light-dark(#14171f, #000);
   --italic-color: inherit;
   --italic-weight: inherit;
   --layer-cover: 5;
@@ -500,7 +567,7 @@ body {
   --list-indent: 2.25em;
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
-  --list-marker-color: #b1bacd;
+  --list-marker-color: light-dark(#f6cd74, #f6cd74);
   --list-marker-color-collapsed: #f6cd74;
   --list-marker-color-hover: #d0d5e1;
   --list-numbered-style: decimal;
@@ -570,29 +637,29 @@ body {
   --modal-max-width-narrow: 800px;
   --modal-radius: 12px;
   --modal-width: 90vw;
-  --nav-collapse-icon-color: #b1bacd;
-  --nav-collapse-icon-color-collapsed: #b1bacd;
+  --nav-collapse-icon-color: light-dark(#f6cd74, #f6cd74);
+  --nav-collapse-icon-color-collapsed: light-dark(#f6cd74, #f6cd74);
   --nav-heading-color: #eff1f5;
   --nav-heading-color-collapsed: #b1bacd;
   --nav-heading-color-collapsed-hover: #d0d5e1;
   --nav-heading-color-hover: #eff1f5;
   --nav-heading-weight: 500;
   --nav-heading-weight-hover: 500;
-  --nav-indentation-guide-color: #ffffff1f;
+  --nav-indentation-guide-color: light-dark(#323a4e, #0a0c10);
   --nav-indentation-guide-width: 1px;
-  --nav-item-background-active: #ffffff26;
-  --nav-item-background-hover: #ffffff26;
+  --nav-item-background-active: light-dark(#f6cd74, #f6cd74);
+  --nav-item-background-hover: light-dark(#f6cd74, #f6cd74);
   --nav-item-background-selected: #f6cd7426;
   --nav-item-children-margin-start: 12px;
   --nav-item-children-padding-start: 4px;
-  --nav-item-color: #d0d5e1;
-  --nav-item-color-active: #eff1f5;
+  --nav-item-color: light-dark(#b1bacd, hsl(222, 22%, -45%));
+  --nav-item-color-active: light-dark(#000, #000);
   --nav-item-color-highlighted: #f6cd74;
-  --nav-item-color-hover: #eff1f5;
-  --nav-item-color-selected: #eff1f5;
+  --nav-item-color-hover: light-dark(#000, #000);
+  --nav-item-color-selected: light-dark(#000, #000);
   --nav-item-padding: 4px 8px 4px 24px;
   --nav-item-parent-padding: 6px 8px 6px 24px;
-  --nav-item-size: 14.992px;
+  --nav-item-size: light-dark(16px, 0.933em);
   --nav-item-weight: inherit;
   --nav-item-weight-active: inherit;
   --nav-item-weight-hover: inherit;
@@ -641,8 +708,8 @@ body {
   --red-graphite-interface-font: "Avenir";
   --red-graphite-monospace-font: "";
   --red-graphite-text-font: "Avenir";
-  --ribbon-background: #1e232f;
-  --ribbon-background-collapsed: #282f3e;
+  --ribbon-background: light-dark(#14171f, #14171f);
+  --ribbon-background-collapsed: light-dark(#14171f, #14171f);
   --ribbon-padding: 8px 4px 12px;
   --ribbon-width: 44px;
   --scrollbar-active-thumb-bg: #ffffff33;
@@ -707,7 +774,7 @@ body {
   --tab-font-size: 14.992px;
   --tab-font-weight: inherit;
   --tab-max-width: 320px;
-  --tab-outline-color: #00000026;
+  --tab-outline-color: light-dark(#14171f, hsl(222, 22%, -25%));
   --tab-outline-width: 0px;
   --tab-radius: 4px;
   --tab-radius-active: 6px 6px 0 0;
@@ -736,7 +803,7 @@ body {
   --table-add-button-border-color: #f6cd74;
   --table-add-button-border-width: 1px;
   --table-background: transparent;
-  --table-border-color: #f6cd74;
+  --table-border-color: light-dark(#505d7c, hsl(222, 22%, -35%));
   --table-border-width: 1px;
   --table-cell-vertical-alignment: top;
   --table-column-alt-background: transparent;
@@ -748,11 +815,11 @@ body {
   --table-drag-handle-background-active: #f6cd74;
   --table-drag-handle-color: #b1bacd;
   --table-drag-handle-color-active: #1e232f;
-  --table-header-background: transparent;
-  --table-header-background-hover: inherit;
-  --table-header-border-color: #505d7c;
+  --table-header-background: light-dark(#46516d, hsl(222, 22%, -55%));
+  --table-header-background-hover: light-dark(#46516d, hsl(222, 22%, -55%));
+  --table-header-border-color: light-dark(#505d7c, hsl(222, 22%, -35%));
   --table-header-border-width: 1px;
-  --table-header-color: #eff1f5;
+  --table-header-color: light-dark(hsl(222, 22%, 115%), #1e232f);
   --table-header-font: inherit;
   --table-header-size: 16px;
   --table-header-weight: 800;
@@ -783,19 +850,22 @@ body {
   --tag-radius: 2em;
   --tag-size: 0.875em;
   --tag-weight: inherit;
-  --text-accent: #f6cd74;
-  --text-accent-hover: #fdeed6;
-  --text-error: #fb464c;
-  --text-faint: hsl(222, 22%, -35%);
+  --text-accent: light-dark(#f6cd74, #f6cd74);
+  --text-accent-hover: light-dark(#fdeed6, #fdeed6);
+  --text-error: light-dark(#fb464c, #fb464c);
+  --text-faint: light-dark(#b1bacd, hsl(222, 22%, -25%));
   --text-highlight-bg: #ffd00066;
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: hsl(222, 22%, -15%);
-  --text-normal: #1e232f;
-  --text-on-accent: #ffffff;
+  --text-muted: light-dark(#d0d5e1, hsl(222, 22%, -15%));
+  --text-normal: light-dark(#eff1f5, #1e232f);
+  --text-on-accent: light-dark(#1e232f, #000);
   --text-on-accent-inverted: #000000;
   --text-selection: #f6cd7433;
-  --text-success: #44cf6e;
+  --text-success: light-dark(#44cf6e, #44cf6e);
   --text-warning: #e9973f;
+  --theme-base-color-h: light-dark(222, 222);
+  --theme-base-color-l: light-dark(15%, 15%);
+  --theme-base-color-s: light-dark(22%, 22%);
   --titlebar-background: #14171f;
   --titlebar-background-focused: #14171f;
   --titlebar-border-color: #f6cd74;
@@ -815,8 +885,11 @@ body {
   --toggle-thumb-radius: 18px;
   --toggle-thumb-width: 18px;
   --toggle-width: 40px;
+  --vault-name-color: light-dark(#f6cd74, #f6cd74);
+  --vault-name-font-size: light-dark(16px, 16px);
+  --vault-name-font-weight: light-dark(500, 500);
   --vault-profile-actions-display: flex;
-  --vault-profile-color: #eff1f5;
+  --vault-profile-color: light-dark(#eff1f5, #eff1f5);
   --vault-profile-color-hover: #eff1f5;
   --vault-profile-display: flex;
   --vault-profile-font-size: 14.992px;

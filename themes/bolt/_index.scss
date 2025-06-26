@@ -22,35 +22,9 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --color-accent-2: #bdf5ff;
-  --color-accent-hsl: 233, 100%, 87%;
-  --color-base-100: #e0e0ff;
-  --color-base-30: #46464f;
-  --color-base-35: #46464f;
-  --color-base-40: #46464f;
-  --color-blue: #027aff;
-  --color-cyan: #53dfdd;
-  --color-green: #44cf6e;
-  --color-orange: #e9973f;
-  --color-pink: #fa99cd;
-  --color-purple: #a882ff;
-  --color-red: #fb464c;
-  --tertiary: #b4c8e9;
+
   --text-accent: hsl(230, 102%, 100.05%);
-  --color-accent-2: #bdf5ff;
-  --color-accent-hsl: 233, 100%, 87%;
-  --color-base-100: #e0e0ff;
-  --color-base-30: #46464f;
-  --color-base-35: #46464f;
-  --color-base-40: #46464f;
-  --color-blue: #027aff;
-  --color-cyan: #53dfdd;
-  --color-green: #44cf6e;
-  --color-orange: #e9973f;
-  --color-pink: #fa99cd;
-  --color-purple: #a882ff;
-  --color-red: #fb464c;
-  --tertiary: #b4c8e9;
+
   --text-accent: hsl(230, 102%, 100.05%);
 }
 
@@ -69,34 +43,6 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --color-accent-2: #bdf5ff;
-  --color-accent-hsl: 233, 100%, 87%;
-  --color-base-100: #e0e0ff;
-  --color-base-30: #46464f;
-  --color-base-35: #46464f;
-  --color-base-40: #46464f;
-  --color-blue: #086ddd;
-  --color-cyan: #00bfbc;
-  --color-green: #08b94e;
-  --color-orange: #ec7500;
-  --color-pink: #d53984;
-  --color-purple: #7852ee;
-  --color-red: #e93147;
-  --tertiary: #4c5f7c;
-  --color-accent-2: #bdf5ff;
-  --color-accent-hsl: 233, 100%, 87%;
-  --color-base-100: #e0e0ff;
-  --color-base-30: #46464f;
-  --color-base-35: #46464f;
-  --color-base-40: #46464f;
-  --color-blue: #086ddd;
-  --color-cyan: #00bfbc;
-  --color-green: #08b94e;
-  --color-orange: #ec7500;
-  --color-pink: #d53984;
-  --color-purple: #7852ee;
-  --color-red: #e93147;
-  --tertiary: #4c5f7c;
 }
 
 /* === import special font that doesn't render hashtags (#) */
@@ -114,7 +60,7 @@ html[saved-theme="light"] {
     hsl(228, 105%, 112.23%),
     hsl(230, 102%, 100.05%)
   );
-  --color-accent-hsl: light-dark(233, 100%, 87%, 233, 100%, 87%);
+  --color-accent-hsl: light-dark(#bdc4ff, #bdc4ff);
   --color-base-100: light-dark(#dadada, #222222);
   --color-base-30: light-dark(#363636, #e0e0e0);
   --color-base-35: light-dark(#3f3f3f, #d4d4d4);
@@ -156,12 +102,31 @@ body {
   --code-value: #a882ff;
   --collapse-icon-color: #d8e2ee;
   --collapse-icon-color-collapsed: hsl(230, 102%, 100.05%);
+  --color-accent-2: light-dark(
+    hsl(228, 105%, 112.23%),
+    hsl(230, 102%, 100.05%)
+  );
+  --color-accent-hsl: light-dark(#bdc4ff, #bdc4ff);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
-  --font-text: "??", "??", "??", "Arial";
+  --font-text:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --graph-line: vaR(--surface-variant);
   --graph-node-tag: #53dfdd;
   --graph-node-unresolved: #7dffd6;
@@ -194,6 +159,7 @@ body {
   --tag-decoration-hover: none;
   --tag-radius: 5px;
   --tag-weight: inherit;
+  --tertiary: light-dark(#b4c8e9, #4c5f7c);
   --text-accent: #bdc4ff;
   --text-accent-hover: #bdf5ff;
   --text-faint: #90909a;
@@ -237,100 +203,6 @@ body {
   user-select: none;
   width: 100%;
 }
-/* START DARK */
-:root[saved-theme="dark"],
-html[saved-theme="dark"] {
-  color-scheme: dark;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
-  --color-accent-2: #bdf5ff;
-  --color-accent-hsl: 233, 100%, 87%;
-  --color-base-100: #e0e0ff;
-  --color-base-30: #46464f;
-  --color-base-35: #46464f;
-  --color-base-40: #46464f;
-  --color-blue: #027aff;
-  --color-cyan: #53dfdd;
-  --color-green: #44cf6e;
-  --color-orange: #e9973f;
-  --color-pink: #fa99cd;
-  --color-purple: #a882ff;
-  --color-red: #fb464c;
-  --tertiary: #b4c8e9;
-  --text-accent: hsl(230, 102%, 100.05%);
-  --color-accent-2: #bdf5ff;
-  --color-accent-hsl: 233, 100%, 87%;
-  --color-base-100: #e0e0ff;
-  --color-base-30: #46464f;
-  --color-base-35: #46464f;
-  --color-base-40: #46464f;
-  --color-blue: #027aff;
-  --color-cyan: #53dfdd;
-  --color-green: #44cf6e;
-  --color-orange: #e9973f;
-  --color-pink: #fa99cd;
-  --color-purple: #a882ff;
-  --color-red: #fb464c;
-  --tertiary: #b4c8e9;
-  --text-accent: hsl(230, 102%, 100.05%);
-}
-/* END DARK */
-/* START LIGHT */
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  color-scheme: light;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
-  --color-accent-2: #bdf5ff;
-  --color-accent-hsl: 233, 100%, 87%;
-  --color-base-100: #e0e0ff;
-  --color-base-30: #46464f;
-  --color-base-35: #46464f;
-  --color-base-40: #46464f;
-  --color-blue: #086ddd;
-  --color-cyan: #00bfbc;
-  --color-green: #08b94e;
-  --color-orange: #ec7500;
-  --color-pink: #d53984;
-  --color-purple: #7852ee;
-  --color-red: #e93147;
-  --tertiary: #4c5f7c;
-  --color-accent-2: #bdf5ff;
-  --color-accent-hsl: 233, 100%, 87%;
-  --color-base-100: #e0e0ff;
-  --color-base-30: #46464f;
-  --color-base-35: #46464f;
-  --color-base-40: #46464f;
-  --color-blue: #086ddd;
-  --color-cyan: #00bfbc;
-  --color-green: #08b94e;
-  --color-orange: #ec7500;
-  --color-pink: #d53984;
-  --color-purple: #7852ee;
-  --color-red: #e93147;
-  --tertiary: #4c5f7c;
-}
-/* END LIGHT */
 /* CALLOUTS */
 :root,
 html {

@@ -5,7 +5,7 @@
   --color-accent: light-dark(#7eae82, #7eae82);
   --color-accent-1: light-dark(#9ac09b, #8cb78f);
   --color-accent-2: light-dark(#b3d1b3, #9ac09b);
-  --color-accent-hsl: light-dark(125, 23%, 59%, 125, 23%, 59%);
+  --color-accent-hsl: light-dark(#7eae82, #7eae82);
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
@@ -74,6 +74,7 @@ body {
   --background-primary: #000;
   --background-primary-alt: #111;
   --background-secondary: #1e1e1e;
+  --background-secondary-alt: light-dark(#252525, #212121);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 3px;
   --bases-filter-menu-width: 520px;
@@ -107,7 +108,7 @@ body {
   --bases-table-text-size: 0.875em;
   --bases-table-white-space: nowrap;
   --blockquote-background-color: transparent;
-  --blockquote-border-color: #7eae82;
+  --blockquote-border-color: light-dark(#505050, #e0e0e0);
   --blockquote-border-thickness: 3px;
   --blockquote-color: inherit;
   --blockquote-font-style: normal;
@@ -163,7 +164,7 @@ body {
   --checklist-done-color: #b3b3b3;
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: 3px;
-  --code-background: #111;
+  --code-background: light-dark(#1c1b1a, #f5f5f5);
   --code-border-color: transparent;
   --code-border-width: 0px;
   --code-comment: #666666;
@@ -182,6 +183,30 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: #666666;
   --collapse-icon-color-collapsed: #9ac09b;
+  --color-accent: light-dark(#7eae82, #7eae82);
+  --color-accent-1: light-dark(#9ac09b, #8cb78f);
+  --color-accent-2: light-dark(#b3d1b3, #9ac09b);
+  --color-accent-hsl: light-dark(#7eae82, #7eae82);
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#252525, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
   --cursor-link: default;
   --dialog-max-height: 85vh;
@@ -241,7 +266,10 @@ body {
   --font-interface-theme: sans-serif;
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "??", "??", "Charter", Georgia, serif, "Arial";
+  --font-mermaid:
+    "??", "Charter", Georgia, serif, ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -259,7 +287,10 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "??", "??", "Charter", Georgia, serif, "Arial";
+  --font-text:
+    "??", "Charter", Georgia, serif, ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 18px;
   --font-text-theme: "Charter", Georgia, serif;
@@ -400,12 +431,12 @@ body {
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;
   --link-color: #69886e;
-  --link-color-hover: #b3d1b3;
+  --link-color-hover: light-dark(#344437, #b3c3b5);
   --link-decoration: none;
   --link-decoration-hover: none;
   --link-decoration-thickness: auto;
   --link-external-color: #2b7801;
-  --link-external-color-hover: #b3d1b3;
+  --link-external-color-hover: light-dark(#193f04, #97bd83);
   --link-external-decoration: none;
   --link-external-decoration-hover: none;
   --link-external-filter: none;
@@ -423,8 +454,8 @@ body {
   --list-indent: 2.25em;
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
-  --list-marker-color: #666666;
-  --list-marker-color-collapsed: #9ac09b;
+  --list-marker-color: light-dark(#dedede, #212121);
+  --list-marker-color-collapsed: light-dark(#dedede, #212121);
   --list-marker-color-hover: #b3b3b3;
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
@@ -710,7 +741,7 @@ body {
   --text-highlight-bg: #ffd00066;
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: #b3b3b3;
-  --text-normal: #dadada;
+  --text-normal: light-dark(#dedede, #212121);
   --text-on-accent: #ffffff;
   --text-on-accent-inverted: #000000;
   --text-selection: #7eae8233;

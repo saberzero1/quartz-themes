@@ -25,6 +25,7 @@ html[saved-theme="dark"] {
 
   --background-modifier-border: #393939;
   --background-primary: #242424;
+
   --bold-color: #ffffff;
   --checkbox-border-color: #ffffff;
   --checkbox-border-color-hover: #8fbcbb;
@@ -32,19 +33,6 @@ html[saved-theme="dark"] {
   --checkbox-color-hover: #ffffff;
   --code-background: #202020;
   --code-normal: #88c0d0;
-  --color-accent-2: hsl(175, 105%, 38.7%);
-  --color-accent-hsl: 180, 100%, 30%;
-  --color-base-100: #dadada;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-blue: #63c8da;
-  --color-cyan: #88c0d0;
-  --color-green: #37c991;
-  --color-orange: #ff9035;
-  --color-pink: #eb95db;
-  --color-purple: #d469c1;
-  --color-red: #ff5c5c;
   --graph-line: #393939;
   --graph-node-tag: #007991;
   --h1-color: #009999;
@@ -61,6 +49,7 @@ html[saved-theme="dark"] {
   --text-normal: #eceff4;
   --background-modifier-border: #393939;
   --background-primary: #242424;
+
   --bold-color: #ffffff;
   --checkbox-border-color: #ffffff;
   --checkbox-border-color-hover: #8fbcbb;
@@ -68,19 +57,6 @@ html[saved-theme="dark"] {
   --checkbox-color-hover: #ffffff;
   --code-background: #202020;
   --code-normal: #88c0d0;
-  --color-accent-2: hsl(175, 105%, 38.7%);
-  --color-accent-hsl: 180, 100%, 30%;
-  --color-base-100: #dadada;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-blue: #63c8da;
-  --color-cyan: #88c0d0;
-  --color-green: #37c991;
-  --color-orange: #ff9035;
-  --color-pink: #eb95db;
-  --color-purple: #d469c1;
-  --color-red: #ff5c5c;
   --graph-line: #393939;
   --graph-node-tag: #007991;
   --h1-color: #009999;
@@ -263,7 +239,7 @@ html[saved-theme="dark"] {
 
 :root {
   --color-accent-2: light-dark(hsl(175, 105%, 38.7%), hsl(177, 102%, 34.5%));
-  --color-accent-hsl: light-dark(180, 100%, 30%, 180, 100%, 30%);
+  --color-accent-hsl: light-dark(#009999, #009999);
   --color-base-100: light-dark(#dadada, #222222);
   --color-base-30: light-dark(#363636, #e0e0e0);
   --color-base-35: light-dark(#3f3f3f, #d4d4d4);
@@ -304,12 +280,28 @@ body {
   --code-value: #d469c1;
   --collapse-icon-color: #d8dee9;
   --collapse-icon-color-collapsed: #009999;
+  --color-accent-2: light-dark(hsl(175, 105%, 38.7%), hsl(177, 102%, 34.5%));
+  --color-accent-hsl: light-dark(#009999, #009999);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-blue: light-dark(#63c8da, #086ddd);
+  --color-cyan: light-dark(#88c0d0, #00bfbc);
+  --color-green: light-dark(#37c991, #08b94e);
+  --color-orange: light-dark(#ff9035, #ec7500);
+  --color-pink: light-dark(#eb95db, #d53984);
+  --color-purple: light-dark(#d469c1, #7852ee);
+  --color-red: light-dark(#ff5c5c, #e93147);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
-  --font-text: "??", "??", "??", "Arial";
+  --font-text:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --graph-line: #3f3f3f;
   --graph-node-tag: #37c991;
   --graph-node-unresolved: #d8dee9;
@@ -381,97 +373,6 @@ body {
   user-select: none;
   width: 100%;
 }
-/* START DARK */
-:root,
-html {
-  color-scheme: dark;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
-
-  --background-modifier-border: #393939;
-  --background-primary: #242424;
-  --bold-color: #ffffff;
-  --checkbox-border-color: #ffffff;
-  --checkbox-border-color-hover: #8fbcbb;
-  --checkbox-color: #8fbcbb;
-  --checkbox-color-hover: #ffffff;
-  --code-background: #202020;
-  --code-normal: #88c0d0;
-  --color-accent-2: hsl(175, 105%, 38.7%);
-  --color-accent-hsl: 180, 100%, 30%;
-  --color-base-100: #dadada;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-blue: #63c8da;
-  --color-cyan: #88c0d0;
-  --color-green: #37c991;
-  --color-orange: #ff9035;
-  --color-pink: #eb95db;
-  --color-purple: #d469c1;
-  --color-red: #ff5c5c;
-  --graph-line: #393939;
-  --graph-node-tag: #007991;
-  --h1-color: #009999;
-  --inline-title-color: #8fbcbb;
-  --italic-color: #ffffff;
-  --tag-background: #242424;
-  --tag-background-hover: #242424;
-  --tag-color: #8fbcbb;
-  --text-accent: #009999;
-  --text-accent-hover: #ffffff;
-  --text-faint: #d8dee9;
-  --text-highlight-bg: #8fbcbb;
-  --text-muted: #e5e9f0;
-  --text-normal: #eceff4;
-  --background-modifier-border: #393939;
-  --background-primary: #242424;
-  --bold-color: #ffffff;
-  --checkbox-border-color: #ffffff;
-  --checkbox-border-color-hover: #8fbcbb;
-  --checkbox-color: #8fbcbb;
-  --checkbox-color-hover: #ffffff;
-  --code-background: #202020;
-  --code-normal: #88c0d0;
-  --color-accent-2: hsl(175, 105%, 38.7%);
-  --color-accent-hsl: 180, 100%, 30%;
-  --color-base-100: #dadada;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-blue: #63c8da;
-  --color-cyan: #88c0d0;
-  --color-green: #37c991;
-  --color-orange: #ff9035;
-  --color-pink: #eb95db;
-  --color-purple: #d469c1;
-  --color-red: #ff5c5c;
-  --graph-line: #393939;
-  --graph-node-tag: #007991;
-  --h1-color: #009999;
-  --inline-title-color: #8fbcbb;
-  --italic-color: #ffffff;
-  --tag-background: #242424;
-  --tag-background-hover: #242424;
-  --tag-color: #8fbcbb;
-  --text-accent: #009999;
-  --text-accent-hover: #ffffff;
-  --text-faint: #d8dee9;
-  --text-highlight-bg: #8fbcbb;
-  --text-muted: #e5e9f0;
-  --text-normal: #eceff4;
-}
-/* END DARK */
 /* CALLOUTS */
 :root,
 html {

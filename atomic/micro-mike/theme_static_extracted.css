@@ -54,7 +54,7 @@
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
   --color-accent-1: light-dark(#a68af9, #9873f7);
   --color-accent-2: light-dark(#c5b6fc, #a68af9);
-  --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
+  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
@@ -517,6 +517,7 @@ body {
   --background-primary: #080809;
   --background-primary-alt: #14161a;
   --background-secondary: #202329;
+  --background-secondary-alt: light-dark(#373b42, #101215);
   --bases-embed-border: 1px solid #555555;
   --bases-embed-border-radius: 0px;
   --bases-filter-menu-width: 520px;
@@ -577,11 +578,62 @@ body {
   --blockquote-border-thickness: 2px;
   --blockquote-color: inherit;
   --blockquote-font-style: normal;
+  --blurple: light-dark(#7289da, #7289da);
+  --blurple-active: light-dark(#5b6eae, #5b6eae);
+  --blurple-hover: light-dark(#677bc4, #677bc4);
+  --blurple-inverted: light-dark(#f8f9fd, #f8f9fd);
+  --blurple-inverted-active: light-dark(#e3e7f8, #e3e7f8);
+  --blurple-st: light-dark(#7289da80, #7289da80);
   --bold-color: inherit;
   --bold-modifier: 200;
   --bold-weight: 800;
   --border-width: 1px;
   --brand-500: #7289da;
+  --brand-experiment: light-dark(#7289da, #7289da);
+  --brand-experiment-05a: light-dark(#7289da0d, #7289da0d);
+  --brand-experiment-100: light-dark(#f8f9fd, #f8f9fd);
+  --brand-experiment-10a: light-dark(#7289da1a, #7289da1a);
+  --brand-experiment-130: light-dark(#f2f4fc, #f2f4fc);
+  --brand-experiment-15a: light-dark(#7289da26, #7289da26);
+  --brand-experiment-160: light-dark(#ebeefa, #ebeefa);
+  --brand-experiment-200: light-dark(#e3e7f8, #e3e7f8);
+  --brand-experiment-20a: light-dark(#7289da33, #7289da33);
+  --brand-experiment-230: light-dark(#dae0f5, #dae0f5);
+  --brand-experiment-25a: light-dark(#7289da40, #7289da40);
+  --brand-experiment-260: light-dark(#d1d9f3, #d1d9f3);
+  --brand-experiment-300: light-dark(#c7d0f0, #c7d0f0);
+  --brand-experiment-30a: light-dark(#7289da4d, #7289da4d);
+  --brand-experiment-330: light-dark(#b5c1ec, #b5c1ec);
+  --brand-experiment-35a: light-dark(#7289da59, #7289da59);
+  --brand-experiment-360: light-dark(#a5b3e7, #a5b3e7);
+  --brand-experiment-400: light-dark(#8ea1e1, #8ea1e1);
+  --brand-experiment-40a: light-dark(#7289da66, #7289da66);
+  --brand-experiment-430: light-dark(#869adf, #869adf);
+  --brand-experiment-45a: light-dark(#7289da73, #7289da73);
+  --brand-experiment-460: light-dark(#7d92dd, #7d92dd);
+  --brand-experiment-500: light-dark(#7289da, #7289da);
+  --brand-experiment-50a: light-dark(#7289da80, #7289da80);
+  --brand-experiment-530: light-dark(#687dc6, #687dc6);
+  --brand-experiment-55a: light-dark(#7289da8c, #7289da8c);
+  --brand-experiment-560: light-dark(#5c6fb1, #5c6fb1);
+  --brand-experiment-600: light-dark(#4e5d94, #4e5d94);
+  --brand-experiment-60a: light-dark(#7289da99, #7289da99);
+  --brand-experiment-630: light-dark(#435180, #435180);
+  --brand-experiment-65a: light-dark(#7289daa6, #7289daa6);
+  --brand-experiment-660: light-dark(#3b4770, #3b4770);
+  --brand-experiment-700: light-dark(#2e3757, #2e3757);
+  --brand-experiment-70a: light-dark(#7289dab3, #7289dab3);
+  --brand-experiment-730: light-dark(#2b3352, #2b3352);
+  --brand-experiment-75a: light-dark(#7289dabf, #7289dabf);
+  --brand-experiment-760: light-dark(#272f4b, #272f4b);
+  --brand-experiment-800: light-dark(#222941, #222941);
+  --brand-experiment-80a: light-dark(#7289dacc, #7289dacc);
+  --brand-experiment-830: light-dark(#1a2032, #1a2032);
+  --brand-experiment-85a: light-dark(#7289dad9, #7289dad9);
+  --brand-experiment-860: light-dark(#111521, #111521);
+  --brand-experiment-900: light-dark(#06070b, #06070b);
+  --brand-experiment-90a: light-dark(#7289dae6, #7289dae6);
+  --brand-experiment-95a: light-dark(#7289daf2, #7289daf2);
   --button-radius: 0px;
   --callout-blend-mode: darken;
   --callout-border-opacity: 0.25;
@@ -649,6 +701,30 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: #753ff3;
   --collapse-icon-color-collapsed: #a68af9;
+  --color-accent: light-dark(#8a5cf5, #8a5cf5);
+  --color-accent-1: light-dark(#a68af9, #9873f7);
+  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -670,6 +746,7 @@ body {
   --dropdown-background-position: right 0.5em top 50%, 0 0;
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
+  --dtm-08-dm-list-tab-icon-background: light-dark(#0004, #0008);
   --editorDashboardButtonsWidth: 20%;
   --editorDashboardHeight: 40px;
   --editorStackWidth: 200px;
@@ -715,7 +792,10 @@ body {
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "??", "??", "??", "Arial";
+  --font-mermaid:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-monospace:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -733,7 +813,10 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "??", "??", "??", "Arial";
+  --font-text:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -765,7 +848,12 @@ body {
   --graph-node-tag: #44cf6e;
   --graph-node-unresolved: #753ff3;
   --graph-text: #a3a5aa;
+  --green: light-dark(#43b581, #43b581);
   --green-360: #43b581;
+  --green-active: light-dark(#369167, #369167);
+  --green-hover: light-dark(#3ca374, #3ca374);
+  --green-inverted: light-dark(#f6fbf9, #f6fbf9);
+  --green-inverted-active: light-dark(#d9f0e6, #d9f0e6);
   --h1-color: inherit;
   --h1-font: inherit;
   --h1-line-height: 1.2;
@@ -1105,7 +1193,12 @@ body {
   --radius-m: 0px;
   --radius-s: 0px;
   --radius-xl: 0px;
+  --red: light-dark(#f04747, #f04747);
   --red-400: #f04747;
+  --red-active: light-dark(#c03939, #c03939);
+  --red-hover: light-dark(#d84040, #d84040);
+  --red-inverted: light-dark(#fef6f6, #fef6f6);
+  --red-inverted-active: light-dark(#fcdada, #fcdada);
   --ribbon-background: #333333;
   --ribbon-background-collapsed: #444444;
   --ribbon-padding: 8px 4px 12px;
@@ -1309,8 +1402,12 @@ body {
   --vault-profile-font-size: 14.992px;
   --vault-profile-font-weight: 500;
   --workspace-background-translucent: #00000099;
+  --yellow: light-dark(#faa61a, #faa61a);
   --yellow-300: #faa61a;
   --yellow-360: #faa61a;
+  --yellow-hover: light-dark(#e19517, #e19517);
+  --yellow-inverted: light-dark(#fffbf4, #fffbf4);
+  --yellow-inverted-active: light-dark(#feedd1, #feedd1);
   --zoom-factor: 1;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;

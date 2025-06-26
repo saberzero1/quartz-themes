@@ -1626,7 +1626,7 @@ body {
   --background-primary: #000;
   --background-primary-alt: #111;
   --background-secondary: #1e1e1e;
-  --background-secondary-alt: #121212;
+  --background-secondary-alt: light-dark(#121212, #1a1a1a);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 0px;
   --bases-filter-menu-width: 520px;
@@ -1740,6 +1740,46 @@ body {
     62.4060150376%,
     73.9215686275%
   );
+  --color-accent: light-dark(
+    hsl(106.9879518072deg, 62.4060150376%, 73.9215686275%),
+    hsl(106.9879518072deg, 62.4060150376%, 73.9215686275%)
+  );
+  --color-accent-1: light-dark(
+    hsl(106.9879518072deg, 62.4060150376%, 63.92157%),
+    hsl(calc(106.98795deg - 1), 63.03008%, 79.46569%)
+  );
+  --color-accent-2: light-dark(
+    hsl(106.9879518072deg, 62.4060150376%, 83.92157%),
+    hsl(calc(106.98795deg - 3), 63.65414%, 85.0098%)
+  );
+  --color-accent-hsl: light-dark(
+    106.9879518072deg,
+    62.4060150376%,
+    73.9215686275%,
+    106.9879518072deg,
+    62.4060150376%,
+    73.9215686275%
+  );
+  --color-base-00: light-dark(#1a1a1a, #ffffff);
+  --color-base-05: light-dark(#1a1a1a, #fcfcfc);
+  --color-base-10: light-dark(#1a1a1a, #fafafa);
+  --color-base-100: light-dark(#ffffff, #222222);
+  --color-base-20: light-dark(#121212, #f6f6f6);
+  --color-base-25: light-dark(#121212, #e3e3e3);
+  --color-base-30: light-dark(#222222, #e0e0e0);
+  --color-base-35: light-dark(#303030, #d4d4d4);
+  --color-base-40: light-dark(#505050, #bdbdbd);
+  --color-base-50: light-dark(#707070, #ababab);
+  --color-base-60: light-dark(#909090, #707070);
+  --color-base-70: light-dark(#a0a0a0, #5c5c5c);
+  --color-blue: light-dark(#97c0f3, #086ddd);
+  --color-cyan: light-dark(#8bf0db, #00bfbc);
+  --color-green: light-dark(#a5e693, #08b94e);
+  --color-orange: light-dark(#ffc8a3, #ec7500);
+  --color-pink: light-dark(#eaa9ff, #d53984);
+  --color-purple: light-dark(#ac9df2, #7852ee);
+  --color-red: light-dark(#f5988f, #e93147);
+  --color-yellow: light-dark(#f0e395, #e0ac00);
   --complement-h: 285.3488372093deg;
   --complement-l: 83.137254902%;
   --complement-s: 100%;
@@ -1803,7 +1843,9 @@ body {
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "??", "??", "??", "Arial";
+  --font-mermaid:
+    "??", "??", JetBrains Mono, Menlo, SFMono-Regular, Consolas, "Roboto Mono",
+    "Source Code Pro", monospace;
   --font-monospace:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1821,7 +1863,9 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "??", "??", "??", "Arial";
+  --font-text:
+    "??", "??", JetBrains Mono, Menlo, SFMono-Regular, Consolas, "Roboto Mono",
+    "Source Code Pro", monospace;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -3008,7 +3052,16 @@ body:not(.is-mobile) .app-container {
 .markdown-source-view {
   --list-marker-space: 0;
   --list-padding-inline-start: 0;
-  font-family: "??", "??", "??", "Arial";
+  font-family:
+    "??",
+    "??",
+    JetBrains Mono,
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace;
   font-size: 16px;
 }
 
@@ -3163,7 +3216,16 @@ body:not(.is-mobile) .app-container {
 }
 
 .markdown-source-view.mod-cm6 .cm-scroller {
-  font-family: "??", "??", "??", "Arial";
+  font-family:
+    "??",
+    "??",
+    JetBrains Mono,
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace;
   line-height: 1.5;
   scrollbar-gutter: stable;
 }
@@ -4434,7 +4496,16 @@ body:not(.show-inline-title) .inline-title:not([data-level]) {
 .markdown-preview-view {
   -webkit-user-select: text;
   color: #909090;
-  font-family: "??", "??", "??", "Arial";
+  font-family:
+    "??",
+    "??",
+    JetBrains Mono,
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace;
   font-size: 16px;
   height: 100%;
   line-height: 1.5;
@@ -5897,7 +5968,16 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
 .community-modal-readme {
   -webkit-user-select: text;
   color: #909090;
-  font-family: "??", "??", "??", "Arial";
+  font-family:
+    "??",
+    "??",
+    JetBrains Mono,
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace;
   font-size: 16px;
   line-height: 1.5;
   overflow-wrap: break-word;
@@ -12103,7 +12183,16 @@ kbd {
 .markdown-source-view.mod-cm6
   .cm-line.HyperMD-codeblock
   .cm-formatting.cm-formatting-list {
-  font-family: "??", "??", "??", "Arial";
+  font-family:
+    "??",
+    "??",
+    JetBrains Mono,
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace;
   font-size: 16px;
 }
 
@@ -17624,7 +17713,16 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .file-recovery-text[data-ext="md"] {
-  font-family: "??", "??", "??", "Arial";
+  font-family:
+    "??",
+    "??",
+    JetBrains Mono,
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace;
   font-size: 16px;
 }
 
@@ -19233,7 +19331,16 @@ body:not(.is-phone)
   --cursor-link: default;
   background-color: #000;
   flex: 1 0 0;
-  font-family: "??", "??", "??", "Arial";
+  font-family:
+    "??",
+    "??",
+    JetBrains Mono,
+    Menlo,
+    SFMono-Regular,
+    Consolas,
+    "Roboto Mono",
+    "Source Code Pro",
+    monospace;
   font-size: 16px;
   overflow: auto;
   padding: 24px;

@@ -1,4 +1,7 @@
 :root {
+  --accent-h: light-dark(181, 185);
+  --accent-l: light-dark(51%, 43%);
+  --accent-s: light-dark(37%, 34%);
   --background-secondary-alt: light-dark(
     var(--color-base-30),
     var(--color-base-05)
@@ -94,9 +97,9 @@
 }
 
 body {
-  --accent-h: 258;
-  --accent-l: 66%;
-  --accent-s: 88%;
+  --accent-h: light-dark(181, 185);
+  --accent-l: light-dark(51%, 43%);
+  --accent-s: light-dark(37%, 34%);
   --anim-duration-fast: 140ms;
   --anim-duration-moderate: 300ms;
   --anim-duration-none: 0;
@@ -121,6 +124,10 @@ body {
   --background-primary: var(--color-base-10);
   --background-primary-alt: var(--color-base-05);
   --background-secondary: var(--color-base-05);
+  --background-secondary-alt: light-dark(
+    var(--color-base-30),
+    var(--color-base-05)
+  );
   --bases-embed-border: 1px solid var(--background-modifier-border);
   --bases-embed-border-radius: var(--radius-s);
   --bases-filter-menu-width: 520px;
@@ -214,7 +221,7 @@ body {
   --code-background: var(--color-base-05);
   --code-border-color: var(--background-modifier-border);
   --code-border-width: 0px;
-  --code-comment: var(--text-faint);
+  --code-comment: light-dark(#738091, #837a72);
   --code-function: var(--color-yellow);
   --code-important: var(--color-orange);
   --code-inline-background: var(--code-background);
@@ -231,6 +238,79 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: var(--text-faint);
   --collapse-icon-color-collapsed: var(--text-accent);
+  --color-accent: light-dark(
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l))
+  );
+  --color-accent-1: light-dark(
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 1),
+      calc(var(--accent-s) * 1.01),
+      calc(var(--accent-l) * 1.075)
+    )
+  );
+  --color-accent-2: light-dark(
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    )
+  );
+  --color-accent-hsl: light-dark(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l)
+  );
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-110: light-dark(#d6d6d7, #302b5d);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-blue-bright: light-dark(#86abdc, #4863b6);
+  --color-blue-dim: light-dark(#6085b6, #223d90);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-cyan-bright: light-dark(#7ad5d6, #488d93);
+  --color-cyan-dim: light-dark(#54aeb0, #22676d);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-green-bright: light-dark(#8ebaa4, #577f63);
+  --color-green-dim: light-dark(#6e9783, #30583c);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-orange-bright: light-dark(#f6b079, #a57779);
+  --color-orange-dim: light-dark(#cf8a52, #7f5152);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-pink-bright: light-dark(#dc8ed9, #b25dc0);
+  --color-pink-dim: light-dark(#b668b3, #8b369a);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-purple-bright: light-dark(#baa1e2, #8452d5);
+  --color-purple-dim: light-dark(#8567b6, #5e2baf);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-red-bright: light-dark(#d16983, #b3434e);
+  --color-red-dim: light-dark(#ab435d, #8c1d28);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-yellow-bright: light-dark(#e0c989, #b86e28);
+  --color-yellow-dim: light-dark(#baa363, #924702);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -306,7 +386,8 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: var(--font-print);
+  --font-text:
+    var(--font-text-override), var(--font-text-theme), var(--font-default);
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -335,7 +416,7 @@ body {
   --graph-node: var(--text-muted);
   --graph-node-attachment: var(--color-yellow);
   --graph-node-focused: var(--text-accent);
-  --graph-node-tag: var(--color-green);
+  --graph-node-tag: light-dark(#4f9c77, #19ae5b);
   --graph-node-unresolved: var(--text-faint);
   --graph-text: var(--text-normal);
   --h1-color: var(--heading-color);

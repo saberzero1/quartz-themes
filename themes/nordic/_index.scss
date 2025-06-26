@@ -22,46 +22,16 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
+
   --bold-weight: 700;
-  --color-accent-2: #bed2e0;
-  --color-accent-hsl: 210, 34%, 63%;
-  --color-base-100: #2e3440;
-  --color-base-30: color-mix(in srgb, #d8dee9, #000 0%);
-  --color-base-35: color-mix(in srgb, #d8dee9, #000 0%);
-  --color-base-40: color-mix(in srgb, #d8dee9, #000 0%);
-  --color-blue: #6199bf;
-  --color-cyan: #61b1bf;
-  --color-green: #a3be8c;
-  --color-orange: #d08770;
-  --color-pink: #b48ead;
-  --color-purple: #958eb4;
-  --color-red: #bf616a;
-  --h1-color: #81a1c1;
-  --inline-title-color: #81a1c1;
-  --inline-title-font: "Norwester";
   --text-accent: #a0bbd1;
-  --text-highlight-bg: #81a1c1;
+
   --text-muted: color-mix(in srgb, #81a1c1, #fff 40%);
   --text-normal: color-mix(in srgb, #81a1c1, #fff 65%);
+
   --bold-weight: 700;
-  --color-accent-2: #bed2e0;
-  --color-accent-hsl: 210, 34%, 63%;
-  --color-base-100: #2e3440;
-  --color-base-30: color-mix(in srgb, #d8dee9, #000 0%);
-  --color-base-35: color-mix(in srgb, #d8dee9, #000 0%);
-  --color-base-40: color-mix(in srgb, #d8dee9, #000 0%);
-  --color-blue: #6199bf;
-  --color-cyan: #61b1bf;
-  --color-green: #a3be8c;
-  --color-orange: #d08770;
-  --color-pink: #b48ead;
-  --color-purple: #958eb4;
-  --color-red: #bf616a;
-  --h1-color: #81a1c1;
-  --inline-title-color: #81a1c1;
-  --inline-title-font: "Norwester";
   --text-accent: #a0bbd1;
-  --text-highlight-bg: #81a1c1;
+
   --text-muted: color-mix(in srgb, #81a1c1, #fff 40%);
   --text-normal: color-mix(in srgb, #81a1c1, #fff 65%);
 }
@@ -81,44 +51,14 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
+
   --bold-weight: 700;
-  --color-accent-2: #a0bbd1;
-  --color-accent-hsl: 210, 34%, 63%;
-  --color-base-100: #2e3440;
-  --color-base-30: #d8dee9;
-  --color-base-35: #d8dee9;
-  --color-base-40: #d8dee9;
-  --color-blue: #6199bf;
-  --color-cyan: #61b1bf;
-  --color-green: #a3be8c;
-  --color-orange: #d08770;
-  --color-pink: #b48ead;
-  --color-purple: #958eb4;
-  --color-red: #bf616a;
-  --h1-color: #81a1c1;
-  --inline-title-color: #81a1c1;
-  --inline-title-font: "Norwester";
-  --text-highlight-bg: #81a1c1;
+
   --text-muted: color-mix(in srgb, #81a1c1, #000 20%);
   --text-normal: color-mix(in srgb, #81a1c1, #000 45%);
+
   --bold-weight: 700;
-  --color-accent-2: #a0bbd1;
-  --color-accent-hsl: 210, 34%, 63%;
-  --color-base-100: #2e3440;
-  --color-base-30: #d8dee9;
-  --color-base-35: #d8dee9;
-  --color-base-40: #d8dee9;
-  --color-blue: #6199bf;
-  --color-cyan: #61b1bf;
-  --color-green: #a3be8c;
-  --color-orange: #d08770;
-  --color-pink: #b48ead;
-  --color-purple: #958eb4;
-  --color-red: #bf616a;
-  --h1-color: #81a1c1;
-  --inline-title-color: #81a1c1;
-  --inline-title-font: "Norwester";
-  --text-highlight-bg: #81a1c1;
+
   --text-muted: color-mix(in srgb, #81a1c1, #000 20%);
   --text-normal: color-mix(in srgb, #81a1c1, #000 45%);
 }
@@ -196,7 +136,7 @@ html[saved-theme="light"] {
 
 :root {
   --color-accent-2: light-dark(#bed2e0, #a0bbd1);
-  --color-accent-hsl: light-dark(210, 34%, 63%, 210, 34%, 63%);
+  --color-accent-hsl: light-dark(#81a1c1, #81a1c1);
   --color-base-100: light-dark(#dadada, #222222);
   --color-base-30: light-dark(#363636, #e0e0e0);
   --color-base-35: light-dark(#3f3f3f, #d4d4d4);
@@ -241,9 +181,17 @@ body {
   --code-value: #958eb4;
   --collapse-icon-color: #4c566a;
   --collapse-icon-color-collapsed: #a0bbd1;
+  --color-accent-2: light-dark(#bed2e0, #a0bbd1);
+  --color-accent-hsl: light-dark(#81a1c1, #81a1c1);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
   --color-blue: #6199bf;
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
   --color-green: #a3be8c;
   --color-orange: #d08770;
+  --color-pink: light-dark(#fa99cd, #d53984);
   --color-purple: #b48ead;
   --color-red: #bf616a;
   --cursor-link: pointer;
@@ -251,18 +199,21 @@ body {
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
-  --font-text: "??", "??", "Avenir", "Arial";
+  --font-text:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --graph-line: #d8dee9;
   --graph-node-tag: #a3be8c;
   --graph-node-unresolved: #4c566a;
-  --h1-color: inherit;
+  --h1-color: light-dark(#81a1c1, #81a1c1);
   --h1-font: inherit;
   --h3-line-height: 1.3;
   --hr-color: transparent;
   --hr-thickness: 2px;
   --icon-color: color-mix(in srgb, #81a1c1, #000 20%);
-  --inline-title-color: #bf616a;
-  --inline-title-font: "Norwester";
+  --inline-title-color: light-dark(#81a1c1, #81a1c1);
+  --inline-title-font: light-dark("Norwester", "Norwester");
   --interactive-accent-hsl: 210, 34%, 63%;
   --italic-color: inherit;
   --link-color: #a0bbd1;
@@ -287,7 +238,7 @@ body {
   --text-accent: #81a1c1;
   --text-accent-hover: #bed2e0;
   --text-faint: #4c566a;
-  --text-highlight-bg: #ffd00066;
+  --text-highlight-bg: light-dark(#81a1c1, #81a1c1);
   --text-muted: #3b4252;
   --text-normal: #2e3440;
   -webkit-tap-highlight-color: #ffffff00;
@@ -323,124 +274,6 @@ body {
   user-select: none;
   width: 100%;
 }
-/* START DARK */
-:root[saved-theme="dark"],
-html[saved-theme="dark"] {
-  color-scheme: dark;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
-  --bold-weight: 700;
-  --color-accent-2: #bed2e0;
-  --color-accent-hsl: 210, 34%, 63%;
-  --color-base-100: #2e3440;
-  --color-base-30: color-mix(in srgb, #d8dee9, #000 0%);
-  --color-base-35: color-mix(in srgb, #d8dee9, #000 0%);
-  --color-base-40: color-mix(in srgb, #d8dee9, #000 0%);
-  --color-blue: #6199bf;
-  --color-cyan: #61b1bf;
-  --color-green: #a3be8c;
-  --color-orange: #d08770;
-  --color-pink: #b48ead;
-  --color-purple: #958eb4;
-  --color-red: #bf616a;
-  --h1-color: #81a1c1;
-  --inline-title-color: #81a1c1;
-  --inline-title-font: "Norwester";
-  --text-accent: #a0bbd1;
-  --text-highlight-bg: #81a1c1;
-  --text-muted: color-mix(in srgb, #81a1c1, #fff 40%);
-  --text-normal: color-mix(in srgb, #81a1c1, #fff 65%);
-  --bold-weight: 700;
-  --color-accent-2: #bed2e0;
-  --color-accent-hsl: 210, 34%, 63%;
-  --color-base-100: #2e3440;
-  --color-base-30: color-mix(in srgb, #d8dee9, #000 0%);
-  --color-base-35: color-mix(in srgb, #d8dee9, #000 0%);
-  --color-base-40: color-mix(in srgb, #d8dee9, #000 0%);
-  --color-blue: #6199bf;
-  --color-cyan: #61b1bf;
-  --color-green: #a3be8c;
-  --color-orange: #d08770;
-  --color-pink: #b48ead;
-  --color-purple: #958eb4;
-  --color-red: #bf616a;
-  --h1-color: #81a1c1;
-  --inline-title-color: #81a1c1;
-  --inline-title-font: "Norwester";
-  --text-accent: #a0bbd1;
-  --text-highlight-bg: #81a1c1;
-  --text-muted: color-mix(in srgb, #81a1c1, #fff 40%);
-  --text-normal: color-mix(in srgb, #81a1c1, #fff 65%);
-}
-/* END DARK */
-/* START LIGHT */
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  color-scheme: light;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
-  --bold-weight: 700;
-  --color-accent-2: #a0bbd1;
-  --color-accent-hsl: 210, 34%, 63%;
-  --color-base-100: #2e3440;
-  --color-base-30: #d8dee9;
-  --color-base-35: #d8dee9;
-  --color-base-40: #d8dee9;
-  --color-blue: #6199bf;
-  --color-cyan: #61b1bf;
-  --color-green: #a3be8c;
-  --color-orange: #d08770;
-  --color-pink: #b48ead;
-  --color-purple: #958eb4;
-  --color-red: #bf616a;
-  --h1-color: #81a1c1;
-  --inline-title-color: #81a1c1;
-  --inline-title-font: "Norwester";
-  --text-highlight-bg: #81a1c1;
-  --text-muted: color-mix(in srgb, #81a1c1, #000 20%);
-  --text-normal: color-mix(in srgb, #81a1c1, #000 45%);
-  --bold-weight: 700;
-  --color-accent-2: #a0bbd1;
-  --color-accent-hsl: 210, 34%, 63%;
-  --color-base-100: #2e3440;
-  --color-base-30: #d8dee9;
-  --color-base-35: #d8dee9;
-  --color-base-40: #d8dee9;
-  --color-blue: #6199bf;
-  --color-cyan: #61b1bf;
-  --color-green: #a3be8c;
-  --color-orange: #d08770;
-  --color-pink: #b48ead;
-  --color-purple: #958eb4;
-  --color-red: #bf616a;
-  --h1-color: #81a1c1;
-  --inline-title-color: #81a1c1;
-  --inline-title-font: "Norwester";
-  --text-highlight-bg: #81a1c1;
-  --text-muted: color-mix(in srgb, #81a1c1, #000 20%);
-  --text-normal: color-mix(in srgb, #81a1c1, #000 45%);
-}
-/* END LIGHT */
 /* CALLOUTS */
 :root,
 html {
@@ -731,9 +564,43 @@ body {
   }
   /* HEADINGS */
   h1 {
-    color: light-dark(#81a1c1, #81a1c1);
+    color: light-dark(
+      light-dark(
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        ),
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        )
+      ),
+      light-dark(
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        ),
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        )
+      )
+    );
     font-family: "Norwester";
-    font-size: "??", "??", "Avenir", "Arial";
+    font-size:
+      "??",
+      "Avenir",
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      "Inter",
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -746,9 +613,43 @@ body {
     --link-weight: 700;
   }
   h2 {
-    color: light-dark(#81a1c1, #81a1c1);
+    color: light-dark(
+      light-dark(
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        ),
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        )
+      ),
+      light-dark(
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        ),
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        )
+      )
+    );
     font-family: "Norwester";
-    font-size: "??", "??", "Avenir", "Arial";
+    font-size:
+      "??",
+      "Avenir",
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      "Inter",
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -761,9 +662,43 @@ body {
     --link-weight: 600;
   }
   h3 {
-    color: light-dark(#81a1c1, #81a1c1);
+    color: light-dark(
+      light-dark(
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        ),
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        )
+      ),
+      light-dark(
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        ),
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        )
+      )
+    );
     font-family: "Norwester";
-    font-size: "??", "??", "Avenir", "Arial";
+    font-size:
+      "??",
+      "Avenir",
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      "Inter",
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -776,9 +711,43 @@ body {
     --link-weight: 600;
   }
   h4 {
-    color: light-dark(#81a1c1, #81a1c1);
+    color: light-dark(
+      light-dark(
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        ),
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        )
+      ),
+      light-dark(
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        ),
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        )
+      )
+    );
     font-family: "Norwester";
-    font-size: "??", "??", "Avenir", "Arial";
+    font-size:
+      "??",
+      "Avenir",
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      "Inter",
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -791,9 +760,43 @@ body {
     --link-weight: 600;
   }
   h5 {
-    color: light-dark(#81a1c1, #81a1c1);
+    color: light-dark(
+      light-dark(
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        ),
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        )
+      ),
+      light-dark(
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        ),
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        )
+      )
+    );
     font-family: "Norwester";
-    font-size: "??", "??", "Avenir", "Arial";
+    font-size:
+      "??",
+      "Avenir",
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      "Inter",
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -806,9 +809,43 @@ body {
     --link-weight: 600;
   }
   h6 {
-    color: light-dark(#81a1c1, #81a1c1);
+    color: light-dark(
+      light-dark(
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        ),
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        )
+      ),
+      light-dark(
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        ),
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        )
+      )
+    );
     font-family: "Norwester";
-    font-size: "??", "??", "Avenir", "Arial";
+    font-size:
+      "??",
+      "Avenir",
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      "Inter",
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -944,9 +981,75 @@ body {
   /* BACKLINKS */
   .backlinks {
     h3 {
-      color: light-dark(#81a1c1, #81a1c1);
+      color: light-dark(
+        light-dark(
+          light-dark(
+            hsl(
+              light-dark(210, 210),
+              light-dark(34%, 34%),
+              light-dark(63%, 63%)
+            ),
+            hsl(
+              light-dark(210, 210),
+              light-dark(34%, 34%),
+              light-dark(63%, 63%)
+            )
+          ),
+          light-dark(
+            hsl(
+              light-dark(210, 210),
+              light-dark(34%, 34%),
+              light-dark(63%, 63%)
+            ),
+            hsl(
+              light-dark(210, 210),
+              light-dark(34%, 34%),
+              light-dark(63%, 63%)
+            )
+          )
+        ),
+        light-dark(
+          light-dark(
+            hsl(
+              light-dark(210, 210),
+              light-dark(34%, 34%),
+              light-dark(63%, 63%)
+            ),
+            hsl(
+              light-dark(210, 210),
+              light-dark(34%, 34%),
+              light-dark(63%, 63%)
+            )
+          ),
+          light-dark(
+            hsl(
+              light-dark(210, 210),
+              light-dark(34%, 34%),
+              light-dark(63%, 63%)
+            ),
+            hsl(
+              light-dark(210, 210),
+              light-dark(34%, 34%),
+              light-dark(63%, 63%)
+            )
+          )
+        )
+      );
       font-family: "Norwester";
-      font-size: "??", "??", "Avenir", "Arial";
+      font-size:
+        "??",
+        "Avenir",
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        Roboto,
+        "Inter",
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
       font-style: normal;
       font-variant: normal;
       font-weight: 600;
@@ -970,7 +1073,60 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: light-dark(#81a1c1, #81a1c1);
+      color: light-dark(
+        light-dark(
+          light-dark(
+            hsl(
+              light-dark(210, 210),
+              light-dark(34%, 34%),
+              light-dark(63%, 63%)
+            ),
+            hsl(
+              light-dark(210, 210),
+              light-dark(34%, 34%),
+              light-dark(63%, 63%)
+            )
+          ),
+          light-dark(
+            hsl(
+              light-dark(210, 210),
+              light-dark(34%, 34%),
+              light-dark(63%, 63%)
+            ),
+            hsl(
+              light-dark(210, 210),
+              light-dark(34%, 34%),
+              light-dark(63%, 63%)
+            )
+          )
+        ),
+        light-dark(
+          light-dark(
+            hsl(
+              light-dark(210, 210),
+              light-dark(34%, 34%),
+              light-dark(63%, 63%)
+            ),
+            hsl(
+              light-dark(210, 210),
+              light-dark(34%, 34%),
+              light-dark(63%, 63%)
+            )
+          ),
+          light-dark(
+            hsl(
+              light-dark(210, 210),
+              light-dark(34%, 34%),
+              light-dark(63%, 63%)
+            ),
+            hsl(
+              light-dark(210, 210),
+              light-dark(34%, 34%),
+              light-dark(63%, 63%)
+            )
+          )
+        )
+      );
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1059,12 +1215,99 @@ body {
   }
   /* TOC */
   .toc {
-    color: light-dark(#81a1c1, #81a1c1);
+    color: light-dark(
+      light-dark(
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        ),
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        )
+      ),
+      light-dark(
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        ),
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        )
+      )
+    );
     button.toc-header {
       h3 {
-        color: light-dark(#81a1c1, #81a1c1);
+        color: light-dark(
+          light-dark(
+            light-dark(
+              hsl(
+                light-dark(210, 210),
+                light-dark(34%, 34%),
+                light-dark(63%, 63%)
+              ),
+              hsl(
+                light-dark(210, 210),
+                light-dark(34%, 34%),
+                light-dark(63%, 63%)
+              )
+            ),
+            light-dark(
+              hsl(
+                light-dark(210, 210),
+                light-dark(34%, 34%),
+                light-dark(63%, 63%)
+              ),
+              hsl(
+                light-dark(210, 210),
+                light-dark(34%, 34%),
+                light-dark(63%, 63%)
+              )
+            )
+          ),
+          light-dark(
+            light-dark(
+              hsl(
+                light-dark(210, 210),
+                light-dark(34%, 34%),
+                light-dark(63%, 63%)
+              ),
+              hsl(
+                light-dark(210, 210),
+                light-dark(34%, 34%),
+                light-dark(63%, 63%)
+              )
+            ),
+            light-dark(
+              hsl(
+                light-dark(210, 210),
+                light-dark(34%, 34%),
+                light-dark(63%, 63%)
+              ),
+              hsl(
+                light-dark(210, 210),
+                light-dark(34%, 34%),
+                light-dark(63%, 63%)
+              )
+            )
+          )
+        );
         font-family: "Norwester";
-        font-size: "??", "??", "Avenir", "Arial";
+        font-size:
+          "??",
+          "Avenir",
+          ui-sans-serif,
+          -apple-system,
+          BlinkMacSystemFont,
+          system-ui,
+          "Segoe UI",
+          Roboto,
+          "Inter",
+          "Apple Color Emoji",
+          "Segoe UI Emoji",
+          "Segoe UI Symbol",
+          sans-serif;
         font-style: normal;
         font-variant: normal;
         font-weight: 600;
@@ -1073,7 +1316,60 @@ body {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
       }
-      color: light-dark(#81a1c1, #81a1c1);
+      color: light-dark(
+        light-dark(
+          light-dark(
+            hsl(
+              light-dark(210, 210),
+              light-dark(34%, 34%),
+              light-dark(63%, 63%)
+            ),
+            hsl(
+              light-dark(210, 210),
+              light-dark(34%, 34%),
+              light-dark(63%, 63%)
+            )
+          ),
+          light-dark(
+            hsl(
+              light-dark(210, 210),
+              light-dark(34%, 34%),
+              light-dark(63%, 63%)
+            ),
+            hsl(
+              light-dark(210, 210),
+              light-dark(34%, 34%),
+              light-dark(63%, 63%)
+            )
+          )
+        ),
+        light-dark(
+          light-dark(
+            hsl(
+              light-dark(210, 210),
+              light-dark(34%, 34%),
+              light-dark(63%, 63%)
+            ),
+            hsl(
+              light-dark(210, 210),
+              light-dark(34%, 34%),
+              light-dark(63%, 63%)
+            )
+          ),
+          light-dark(
+            hsl(
+              light-dark(210, 210),
+              light-dark(34%, 34%),
+              light-dark(63%, 63%)
+            ),
+            hsl(
+              light-dark(210, 210),
+              light-dark(34%, 34%),
+              light-dark(63%, 63%)
+            )
+          )
+        )
+      );
       color: inherit;
     }
     ul.toc-content.overflow {
@@ -1090,9 +1386,75 @@ body {
   .graph,
   .toc {
     h3 {
-      color: light-dark(#81a1c1, #81a1c1);
+      color: light-dark(
+        light-dark(
+          light-dark(
+            hsl(
+              light-dark(210, 210),
+              light-dark(34%, 34%),
+              light-dark(63%, 63%)
+            ),
+            hsl(
+              light-dark(210, 210),
+              light-dark(34%, 34%),
+              light-dark(63%, 63%)
+            )
+          ),
+          light-dark(
+            hsl(
+              light-dark(210, 210),
+              light-dark(34%, 34%),
+              light-dark(63%, 63%)
+            ),
+            hsl(
+              light-dark(210, 210),
+              light-dark(34%, 34%),
+              light-dark(63%, 63%)
+            )
+          )
+        ),
+        light-dark(
+          light-dark(
+            hsl(
+              light-dark(210, 210),
+              light-dark(34%, 34%),
+              light-dark(63%, 63%)
+            ),
+            hsl(
+              light-dark(210, 210),
+              light-dark(34%, 34%),
+              light-dark(63%, 63%)
+            )
+          ),
+          light-dark(
+            hsl(
+              light-dark(210, 210),
+              light-dark(34%, 34%),
+              light-dark(63%, 63%)
+            ),
+            hsl(
+              light-dark(210, 210),
+              light-dark(34%, 34%),
+              light-dark(63%, 63%)
+            )
+          )
+        )
+      );
       font-family: "Norwester";
-      font-size: "??", "??", "Avenir", "Arial";
+      font-size:
+        "??",
+        "Avenir",
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        Roboto,
+        "Inter",
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
       font-style: normal;
       font-variant: normal;
       font-weight: 600;
@@ -1203,7 +1565,32 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: #81a1c1;
+            background-color: light-dark(
+              light-dark(
+                hsl(
+                  light-dark(210, 210),
+                  light-dark(34%, 34%),
+                  light-dark(63%, 63%)
+                ),
+                hsl(
+                  light-dark(210, 210),
+                  light-dark(34%, 34%),
+                  light-dark(63%, 63%)
+                )
+              ),
+              light-dark(
+                hsl(
+                  light-dark(210, 210),
+                  light-dark(34%, 34%),
+                  light-dark(63%, 63%)
+                ),
+                hsl(
+                  light-dark(210, 210),
+                  light-dark(34%, 34%),
+                  light-dark(63%, 63%)
+                )
+              )
+            );
             color: color-mix(in srgb, #81a1c1, #000 45%);
           }
           & > .preview-container {

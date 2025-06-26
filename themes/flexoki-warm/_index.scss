@@ -22,34 +22,8 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --color-accent-2: hsl(from #24847c calc(h - 5) calc(s * 1.05) calc(l * 1.29));
-  --color-accent-hsl: 175, 57%, 33%;
-  --color-base-100: #cecdc3;
-  --color-base-30: #282726;
-  --color-base-35: #343331;
-  --color-base-40: #403e3c;
-  --color-blue: #4385be;
-  --color-cyan: #3aa99f;
-  --color-green: #879a39;
-  --color-orange: #da702c;
-  --color-pink: #ce5d97;
-  --color-purple: #8b7ec8;
-  --color-red: #d14d41;
-  --text-accent: hsl(from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15));
-  --color-accent-2: hsl(from #24847c calc(h - 5) calc(s * 1.05) calc(l * 1.29));
-  --color-accent-hsl: 175, 57%, 33%;
-  --color-base-100: #cecdc3;
-  --color-base-30: #282726;
-  --color-base-35: #343331;
-  --color-base-40: #403e3c;
-  --color-blue: #4385be;
-  --color-cyan: #3aa99f;
-  --color-green: #879a39;
-  --color-orange: #da702c;
-  --color-pink: #ce5d97;
-  --color-purple: #8b7ec8;
-  --color-red: #d14d41;
-  --text-accent: hsl(from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15));
+  --text-accent: #29998a;
+  --text-accent: #29998a;
 }
 
 :root[saved-theme="light"],
@@ -67,32 +41,6 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --color-accent-2: hsl(from #24847c calc(h - 5) calc(s * 1.05) calc(l * 1.29));
-  --color-accent-hsl: 175, 57%, 33%;
-  --color-base-100: #100f0f;
-  --color-base-30: #e6e4d9;
-  --color-base-35: #dad8ce;
-  --color-base-40: #cecdc3;
-  --color-blue: #205ea6;
-  --color-cyan: #24837b;
-  --color-green: #66800b;
-  --color-orange: #bc5215;
-  --color-pink: #a02f6f;
-  --color-purple: #5e409d;
-  --color-red: #af3029;
-  --color-accent-2: hsl(from #24847c calc(h - 5) calc(s * 1.05) calc(l * 1.29));
-  --color-accent-hsl: 175, 57%, 33%;
-  --color-base-100: #100f0f;
-  --color-base-30: #e6e4d9;
-  --color-base-35: #dad8ce;
-  --color-base-40: #cecdc3;
-  --color-blue: #205ea6;
-  --color-cyan: #24837b;
-  --color-green: #66800b;
-  --color-orange: #bc5215;
-  --color-pink: #a02f6f;
-  --color-purple: #5e409d;
-  --color-red: #af3029;
 }
 
 @font-face {
@@ -257,7 +205,7 @@ html[saved-theme="light"] {
 
 :root {
   --color-accent-2: light-dark(#2cae98, #29998a);
-  --color-accent-hsl: light-dark(175, 57%, 33%, 175, 57%, 33%);
+  --color-accent-hsl: light-dark(#24847c, #24847c);
   --color-base-100: light-dark(#dadada, #222222);
   --color-base-30: light-dark(#363636, #e0e0e0);
   --color-base-35: light-dark(#3f3f3f, #d4d4d4);
@@ -281,9 +229,7 @@ body {
   --checkbox-border-color: #575653;
   --checkbox-border-color-hover: #878580;
   --checkbox-color: #24847c;
-  --checkbox-color-hover: hsl(
-    from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15)
-  );
+  --checkbox-color-hover: #29998a;
   --checkbox-marker-color: #000;
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
@@ -299,15 +245,29 @@ body {
   --code-tag: #d14d41;
   --code-value: #8b7ec8;
   --collapse-icon-color: #575653;
-  --collapse-icon-color-collapsed: hsl(
-    from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15)
-  );
+  --collapse-icon-color-collapsed: #29998a;
+  --color-accent-2: light-dark(#2cae98, #29998a);
+  --color-accent-hsl: light-dark(#24847c, #24847c);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
-  --font-text: "??", "??", "??", "Arial";
+  --font-text:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --graph-line: #343331;
   --graph-node-tag: #879a39;
   --graph-node-unresolved: #575653;
@@ -321,16 +281,10 @@ body {
   --inline-title-font: inherit;
   --interactive-accent-hsl: 175, 57%, 33%;
   --italic-color: inherit;
-  --link-color: hsl(from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15));
-  --link-color-hover: hsl(
-    from #24847c calc(h - 5) calc(s * 1.05) calc(l * 1.29)
-  );
-  --link-external-color: hsl(
-    from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15)
-  );
-  --link-external-color-hover: hsl(
-    from #24847c calc(h - 5) calc(s * 1.05) calc(l * 1.29)
-  );
+  --link-color: #29998a;
+  --link-color-hover: #2cae98;
+  --link-external-color: #29998a;
+  --link-external-color-hover: #2cae98;
   --link-external-filter: none;
   --link-weight: 600;
   --p-spacing: 1rem;
@@ -340,18 +294,14 @@ body {
   --tag-border-color: #24847c26;
   --tag-border-color-hover: #24847c26;
   --tag-border-width: 0px;
-  --tag-color: hsl(from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15));
-  --tag-color-hover: hsl(
-    from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15)
-  );
+  --tag-color: #29998a;
+  --tag-color-hover: #29998a;
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-radius: 2em;
   --tag-weight: inherit;
   --text-accent: #24847c;
-  --text-accent-hover: hsl(
-    from #24847c calc(h - 5) calc(s * 1.05) calc(l * 1.29)
-  );
+  --text-accent-hover: #2cae98;
   --text-faint: #575653;
   --text-highlight-bg: #ffd00066;
   --text-muted: #878580;
@@ -359,7 +309,7 @@ body {
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: #000;
-  caret-color: hsl(from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15));
+  caret-color: #29998a;
   color: #cecdc3;
   contain: initial;
   font-family:
@@ -389,96 +339,6 @@ body {
   user-select: none;
   width: 100%;
 }
-/* START DARK */
-:root[saved-theme="dark"],
-html[saved-theme="dark"] {
-  color-scheme: dark;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
-  --color-accent-2: hsl(from #24847c calc(h - 5) calc(s * 1.05) calc(l * 1.29));
-  --color-accent-hsl: 175, 57%, 33%;
-  --color-base-100: #cecdc3;
-  --color-base-30: #282726;
-  --color-base-35: #343331;
-  --color-base-40: #403e3c;
-  --color-blue: #4385be;
-  --color-cyan: #3aa99f;
-  --color-green: #879a39;
-  --color-orange: #da702c;
-  --color-pink: #ce5d97;
-  --color-purple: #8b7ec8;
-  --color-red: #d14d41;
-  --text-accent: hsl(from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15));
-  --color-accent-2: hsl(from #24847c calc(h - 5) calc(s * 1.05) calc(l * 1.29));
-  --color-accent-hsl: 175, 57%, 33%;
-  --color-base-100: #cecdc3;
-  --color-base-30: #282726;
-  --color-base-35: #343331;
-  --color-base-40: #403e3c;
-  --color-blue: #4385be;
-  --color-cyan: #3aa99f;
-  --color-green: #879a39;
-  --color-orange: #da702c;
-  --color-pink: #ce5d97;
-  --color-purple: #8b7ec8;
-  --color-red: #d14d41;
-  --text-accent: hsl(from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15));
-}
-/* END DARK */
-/* START LIGHT */
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  color-scheme: light;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
-  --color-accent-2: hsl(from #24847c calc(h - 5) calc(s * 1.05) calc(l * 1.29));
-  --color-accent-hsl: 175, 57%, 33%;
-  --color-base-100: #100f0f;
-  --color-base-30: #e6e4d9;
-  --color-base-35: #dad8ce;
-  --color-base-40: #cecdc3;
-  --color-blue: #205ea6;
-  --color-cyan: #24837b;
-  --color-green: #66800b;
-  --color-orange: #bc5215;
-  --color-pink: #a02f6f;
-  --color-purple: #5e409d;
-  --color-red: #af3029;
-  --color-accent-2: hsl(from #24847c calc(h - 5) calc(s * 1.05) calc(l * 1.29));
-  --color-accent-hsl: 175, 57%, 33%;
-  --color-base-100: #100f0f;
-  --color-base-30: #e6e4d9;
-  --color-base-35: #dad8ce;
-  --color-base-40: #cecdc3;
-  --color-blue: #205ea6;
-  --color-cyan: #24837b;
-  --color-green: #66800b;
-  --color-orange: #bc5215;
-  --color-pink: #a02f6f;
-  --color-purple: #5e409d;
-  --color-red: #af3029;
-}
-/* END LIGHT */
 /* CALLOUTS */
 :root,
 html {
@@ -1260,9 +1120,7 @@ body {
                 background-color: transparent;
                 color: #cecdc3;
                 &.match-tag {
-                  color: hsl(
-                    from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15)
-                  );
+                  color: #29998a;
                 }
               }
             }

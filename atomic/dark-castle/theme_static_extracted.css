@@ -6,7 +6,7 @@
   --color-accent: light-dark(#ffcc66, #ffcc66);
   --color-accent-1: light-dark(hsl(37, 102%, 80.5%), hsl(39, 101%, 75.25%));
   --color-accent-2: light-dark(hsl(35, 105%, 90.3%), hsl(37, 102%, 80.5%));
-  --color-accent-hsl: light-dark(40, 100%, 70%, 40, 100%, 70%);
+  --color-accent-hsl: light-dark(#ffcc66, #ffcc66);
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
@@ -70,6 +70,10 @@ body {
   --background-primary: #000000;
   --background-primary-alt: #000000;
   --background-secondary: color-mix(in hsl, #000000, #292929);
+  --background-secondary-alt: light-dark(
+    color-mix(in hsl, #292929, #9c9c9c),
+    color-mix(in hsl, #000000, #000000)
+  );
   --bases-embed-border: 1px solid #292929;
   --bases-embed-border-radius: 2px;
   --bases-filter-menu-width: 520px;
@@ -182,6 +186,30 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: #ff8040;
   --collapse-icon-color-collapsed: #ff8040;
+  --color-accent: light-dark(#ffcc66, #ffcc66);
+  --color-accent-1: light-dark(hsl(37, 102%, 80.5%), hsl(39, 101%, 75.25%));
+  --color-accent-2: light-dark(hsl(35, 105%, 90.3%), hsl(37, 102%, 80.5%));
+  --color-accent-hsl: light-dark(#ffcc66, #ffcc66);
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -244,7 +272,10 @@ body {
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "??", "??", "??", "Arial";
+  --font-mermaid:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-monospace:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -262,7 +293,10 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "??", "??", "??", "Arial";
+  --font-text:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";

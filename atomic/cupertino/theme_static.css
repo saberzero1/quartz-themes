@@ -941,7 +941,7 @@
     hsl(253, 92.4%, 85.14%),
     hsl(255, 89.76%, 75.9%)
   );
-  --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
@@ -1613,6 +1613,7 @@ body {
   --background-primary: #000;
   --background-primary-alt: #111;
   --background-secondary: #1e1e1e;
+  --background-secondary-alt: light-dark(#363636, #212121);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 5px;
   --bases-filter-menu-width: 520px;
@@ -1727,6 +1728,36 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: #666666;
   --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+  --color-accent: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
+  --color-accent-1: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(257, 88.88%, 70.95%)
+  );
+  --color-accent-2: light-dark(
+    hsl(253, 92.4%, 85.14%),
+    hsl(255, 89.76%, 75.9%)
+  );
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -1790,8 +1821,10 @@ body {
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid:
-    "??", "??", "Segoe UI Variable", "Segoe UI Variable Text", "Segoe UI",
-    sans-serif, "Arial";
+    "??", "Segoe UI Variable", "Segoe UI Variable Text", "Segoe UI", sans-serif,
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
   --font-monospace:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1812,8 +1845,10 @@ body {
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
   --font-text:
-    "??", "??", "Segoe UI Variable", "Segoe UI Variable Text", "Segoe UI",
-    sans-serif, "Arial";
+    "??", "Segoe UI Variable", "Segoe UI Variable Text", "Segoe UI", sans-serif,
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme:
@@ -1850,42 +1885,42 @@ body {
   --h1-color: inherit;
   --h1-font: inherit;
   --h1-line-height: 1.2;
-  --h1-size: 1.5em;
+  --h1-size: 1.802em;
   --h1-style: normal;
   --h1-variant: normal;
   --h1-weight: 700;
   --h2-color: inherit;
   --h2-font: inherit;
   --h2-line-height: 1.2;
-  --h2-size: 1.25em;
+  --h2-size: 1.602em;
   --h2-style: normal;
   --h2-variant: normal;
   --h2-weight: 600;
   --h3-color: inherit;
   --h3-font: inherit;
   --h3-line-height: 1.3;
-  --h3-size: 1.125em;
+  --h3-size: 1.424em;
   --h3-style: normal;
   --h3-variant: normal;
   --h3-weight: 600;
   --h4-color: inherit;
   --h4-font: inherit;
   --h4-line-height: 1.4;
-  --h4-size: 1em;
+  --h4-size: 1.266em;
   --h4-style: normal;
   --h4-variant: normal;
   --h4-weight: 600;
   --h5-color: inherit;
   --h5-font: inherit;
   --h5-line-height: 1.6;
-  --h5-size: 1em;
+  --h5-size: 1.125em;
   --h5-style: normal;
   --h5-variant: normal;
   --h5-weight: 600;
   --h6-color: inherit;
   --h6-font: inherit;
   --h6-line-height: 1.6;
-  --h6-size: 0.875em;
+  --h6-size: 1em;
   --h6-style: normal;
   --h6-variant: normal;
   --h6-weight: 600;
@@ -1929,7 +1964,7 @@ body {
   --inline-title-font: inherit;
   --inline-title-line-height: 1.2;
   --inline-title-margin-bottom: 0.5em;
-  --inline-title-size: 1.5em;
+  --inline-title-size: 1.802em;
   --inline-title-style: normal;
   --inline-title-variant: normal;
   --inline-title-weight: 700;
@@ -2124,7 +2159,7 @@ body {
   --radius-m: 6px;
   --radius-s: 6px;
   --radius-xl: 12px;
-  --reader-mobile-nav-bg: rgb(from #1e1e1e r g b/50%);
+  --reader-mobile-nav-bg: rgba(30, 30, 30, 0.5);
   --ribbon-background: transparent;
   --ribbon-background-collapsed: transparent;
   --ribbon-padding: 4px 8px;
@@ -2306,7 +2341,7 @@ body {
   --vault-profile-font-size: 15.992px;
   --vault-profile-font-weight: 500;
   --view-header-height: 40px;
-  --workspace-background-translucent: rgb(from #000 r g b / 75%);
+  --workspace-background-translucent: rgba(0, 0, 0, 0.75);
   --zoom-factor: 1;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-user-select: none;
@@ -2632,7 +2667,7 @@ iframe {
     -webkit-backdrop-filter: blur(16px);
     animation: 140ms fadeInScale;
     backdrop-filter: blur(16px);
-    background-color: rgb(from #000 r g b / 75%);
+    background-color: rgba(0, 0, 0, 0.75);
     border: 1px solid transparent;
     border-radius: 10px;
     box-shadow:
@@ -2942,8 +2977,22 @@ body:not(.is-mobile) .app-container {
   --list-marker-space: 0;
   --list-padding-inline-start: 0;
   font-family:
-    "??", "??", "Segoe UI Variable", "Segoe UI Variable Text", "Segoe UI",
-    sans-serif, "Arial";
+    "??",
+    "Segoe UI Variable",
+    "Segoe UI Variable Text",
+    "Segoe UI",
+    sans-serif,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
   transition: 140ms ease-in-out;
 }
@@ -3095,8 +3144,22 @@ body:not(.is-mobile) .app-container {
 
 .markdown-source-view.mod-cm6 .cm-scroller {
   font-family:
-    "??", "??", "Segoe UI Variable", "Segoe UI Variable Text", "Segoe UI",
-    sans-serif, "Arial";
+    "??",
+    "Segoe UI Variable",
+    "Segoe UI Variable Text",
+    "Segoe UI",
+    sans-serif,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   line-height: 1.6;
   scrollbar-gutter: stable;
 }
@@ -3696,7 +3759,7 @@ body:not(.is-mobile) .app-container {
 }
 
 .empty-state-title {
-  font-size: 1.25em;
+  font-size: 1.602em;
   font-weight: 600;
   line-height: 1.3;
   margin: 20px 0;
@@ -4244,7 +4307,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title:not([data-level]) {
   font-family: inherit;
-  font-size: 1.5em;
+  font-size: 1.802em;
   font-style: normal;
   font-variant: normal;
   font-weight: 700;
@@ -4256,7 +4319,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
   --font-weight: 700;
   color: inherit;
   font-family: inherit;
-  font-size: 1.5em;
+  font-size: 1.802em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -4270,7 +4333,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
   --font-weight: 600;
   color: inherit;
   font-family: inherit;
-  font-size: 1.25em;
+  font-size: 1.602em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -4284,7 +4347,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
   --font-weight: 600;
   color: inherit;
   font-family: inherit;
-  font-size: 1.125em;
+  font-size: 1.424em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -4298,7 +4361,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
   --font-weight: 600;
   color: inherit;
   font-family: inherit;
-  font-size: 1em;
+  font-size: 1.266em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -4311,7 +4374,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
   --font-weight: 600;
   color: inherit;
   font-family: inherit;
-  font-size: 1em;
+  font-size: 1.125em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -4324,7 +4387,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
   --font-weight: 600;
   color: inherit;
   font-family: inherit;
-  font-size: 0.875em;
+  font-size: 1em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -4364,8 +4427,22 @@ body:not(.show-inline-title) .inline-title:not([data-level]) {
   -webkit-user-select: text;
   color: #dadada;
   font-family:
-    "??", "??", "Segoe UI Variable", "Segoe UI Variable Text", "Segoe UI",
-    sans-serif, "Arial";
+    "??",
+    "Segoe UI Variable",
+    "Segoe UI Variable Text",
+    "Segoe UI",
+    sans-serif,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
   height: 100%;
   line-height: 1.6;
@@ -5738,7 +5815,7 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
 }
 
 .community-modal-info-name {
-  font-size: 1.25em;
+  font-size: 1.602em;
   font-weight: 600;
   line-height: 1.3;
   margin-bottom: 24px;
@@ -5816,8 +5893,22 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
   -webkit-user-select: text;
   color: #dadada;
   font-family:
-    "??", "??", "Segoe UI Variable", "Segoe UI Variable Text", "Segoe UI",
-    sans-serif, "Arial";
+    "??",
+    "Segoe UI Variable",
+    "Segoe UI Variable Text",
+    "Segoe UI",
+    sans-serif,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
   line-height: 1.6;
   overflow-wrap: break-word;
@@ -6118,11 +6209,11 @@ body.is-frameless.is-hidden-frameless:not(.in-progress) {
 }
 
 .is-translucent:not(.is-fullscreen) .titlebar {
-  background-color: rgb(from #000 r g b / 75%);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .is-translucent:not(.is-fullscreen) .app-container {
-  background-color: rgb(from #000 r g b / 75%);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .is-translucent:not(.is-fullscreen) .workspace-ribbon.mod-left {
@@ -9295,7 +9386,7 @@ select.mod-hidden {
 .notice {
   -webkit-backdrop-filter: blur(32px);
   backdrop-filter: blur(32px);
-  background-color: rgb(from #000 r g b / 90%);
+  background-color: rgba(0, 0, 0, 0.9);
   border: 0.3px solid unset;
   border-radius: 10px;
   box-shadow:
@@ -9538,7 +9629,7 @@ select.mod-hidden {
 
 .modal {
   --checkbox-size: 17px;
-  background-color: rgb(from #000 r g b / 90%);
+  background-color: rgba(0, 0, 0, 0.9);
   border: 0.3px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   display: flex;
@@ -12019,8 +12110,22 @@ kbd {
   .cm-line.HyperMD-codeblock
   .cm-formatting.cm-formatting-list {
   font-family:
-    "??", "??", "Segoe UI Variable", "Segoe UI Variable Text", "Segoe UI",
-    sans-serif, "Arial";
+    "??",
+    "Segoe UI Variable",
+    "Segoe UI Variable Text",
+    "Segoe UI",
+    sans-serif,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
 }
 
@@ -13637,7 +13742,7 @@ h1 {
   --font-weight: 700;
   color: inherit;
   font-family: inherit;
-  font-size: 1.5em;
+  font-size: 1.802em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -13651,7 +13756,7 @@ h2 {
   --font-weight: 600;
   color: inherit;
   font-family: inherit;
-  font-size: 1.25em;
+  font-size: 1.602em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -13665,7 +13770,7 @@ h3 {
   --font-weight: 600;
   color: inherit;
   font-family: inherit;
-  font-size: 1.125em;
+  font-size: 1.424em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -13679,7 +13784,7 @@ h4 {
   --font-weight: 600;
   color: inherit;
   font-family: inherit;
-  font-size: 1em;
+  font-size: 1.266em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -13693,7 +13798,7 @@ h5 {
   --font-weight: 600;
   color: inherit;
   font-family: inherit;
-  font-size: 1em;
+  font-size: 1.125em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -13707,7 +13812,7 @@ h6 {
   --font-weight: 600;
   color: inherit;
   font-family: inherit;
-  font-size: 0.875em;
+  font-size: 1em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -13721,7 +13826,7 @@ h6 {
   --font-weight: 700;
   color: inherit;
   font-family: inherit;
-  font-size: 1.5em;
+  font-size: 1.802em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -13741,7 +13846,7 @@ h1 a {
   --font-weight: 600;
   color: inherit;
   font-family: inherit;
-  font-size: 1.25em;
+  font-size: 1.602em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -13761,7 +13866,7 @@ h2 a {
   --font-weight: 600;
   color: inherit;
   font-family: inherit;
-  font-size: 1.125em;
+  font-size: 1.424em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -13781,7 +13886,7 @@ h3 a {
   --font-weight: 600;
   color: inherit;
   font-family: inherit;
-  font-size: 1em;
+  font-size: 1.266em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -13801,7 +13906,7 @@ h4 a {
   --font-weight: 600;
   color: inherit;
   font-family: inherit;
-  font-size: 1em;
+  font-size: 1.125em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -13821,7 +13926,7 @@ h5 a {
   --font-weight: 600;
   color: inherit;
   font-family: inherit;
-  font-size: 0.875em;
+  font-size: 1em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -13862,7 +13967,7 @@ h6 a {
   --font-weight: 700;
   color: inherit;
   font-family: inherit;
-  font-size: 1.5em;
+  font-size: 1.802em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -13874,7 +13979,7 @@ h6 a {
   --font-weight: 700;
   color: inherit;
   font-family: inherit;
-  font-size: 1.5em;
+  font-size: 1.802em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -13910,7 +14015,7 @@ h6 a {
   --font-weight: 600;
   color: inherit;
   font-family: inherit;
-  font-size: 1.25em;
+  font-size: 1.602em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -13922,7 +14027,7 @@ h6 a {
   --font-weight: 600;
   color: inherit;
   font-family: inherit;
-  font-size: 1.25em;
+  font-size: 1.602em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -13958,7 +14063,7 @@ h6 a {
   --font-weight: 600;
   color: inherit;
   font-family: inherit;
-  font-size: 1.125em;
+  font-size: 1.424em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -13970,7 +14075,7 @@ h6 a {
   --font-weight: 600;
   color: inherit;
   font-family: inherit;
-  font-size: 1.125em;
+  font-size: 1.424em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -14006,7 +14111,7 @@ h6 a {
   --font-weight: 600;
   color: inherit;
   font-family: inherit;
-  font-size: 1em;
+  font-size: 1.266em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -14017,7 +14122,7 @@ h6 a {
   --font-weight: 600;
   color: inherit;
   font-family: inherit;
-  font-size: 1em;
+  font-size: 1.266em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -14052,7 +14157,7 @@ h6 a {
   --font-weight: 600;
   color: inherit;
   font-family: inherit;
-  font-size: 1em;
+  font-size: 1.125em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -14063,7 +14168,7 @@ h6 a {
   --font-weight: 600;
   color: inherit;
   font-family: inherit;
-  font-size: 1em;
+  font-size: 1.125em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -14098,7 +14203,7 @@ h6 a {
   --font-weight: 600;
   color: inherit;
   font-family: inherit;
-  font-size: 0.875em;
+  font-size: 1em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -14110,7 +14215,7 @@ h6 a {
   --font-weight: 600;
   color: inherit;
   font-family: inherit;
-  font-size: 0.875em;
+  font-size: 1em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -16122,7 +16227,7 @@ em {
 
 .bases-header .title {
   color: inherit;
-  font-size: 1.25em;
+  font-size: 1.602em;
 }
 
 .is-phone .bases-header .query-toolbar-item:not(.mod-views) .text-button-label {
@@ -17489,8 +17594,22 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .file-recovery-text[data-ext="md"] {
   font-family:
-    "??", "??", "Segoe UI Variable", "Segoe UI Variable Text", "Segoe UI",
-    sans-serif, "Arial";
+    "??",
+    "Segoe UI Variable",
+    "Segoe UI Variable Text",
+    "Segoe UI",
+    sans-serif,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
 }
 
@@ -17587,7 +17706,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 .graph-controls.is-close {
   -webkit-backdrop-filter: blur(32px);
   backdrop-filter: blur(32px);
-  background-color: rgb(from #1e1e1e r g b/50%);
+  background-color: rgba(30, 30, 30, 0.5);
   border: 0.3px solid transparent;
   min-width: inherit;
   padding: 0;
@@ -19108,8 +19227,22 @@ body:not(.is-phone)
   background-color: #000;
   flex: 1 0 0;
   font-family:
-    "??", "??", "Segoe UI Variable", "Segoe UI Variable Text", "Segoe UI",
-    sans-serif, "Arial";
+    "??",
+    "Segoe UI Variable",
+    "Segoe UI Variable Text",
+    "Segoe UI",
+    sans-serif,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
   overflow: auto;
   padding: 24px;
@@ -19419,7 +19552,7 @@ body.theme-dark {
     0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.1),
     0 1px 1px 0 rgba(0, 0, 0, 0.1);
   --interactive-normal: #555555;
-  --modal-background: rgb(from #2a2a2a r g b / 90%);
+  --modal-background: rgba(42, 42, 42, 0.9);
   --workspace-background-translucent: #1e1e1e;
 }
 
@@ -19555,7 +19688,7 @@ body.theme-dark {
   -webkit-backdrop-filter: blur(32px);
   align-items: stretch;
   backdrop-filter: blur(32px);
-  background-color: rgb(from #1e1e1e r g b/50%);
+  background-color: rgba(30, 30, 30, 0.5);
   border: 0.3px solid transparent;
   border-radius: 5px;
   bottom: 16px;
@@ -19635,7 +19768,7 @@ body.theme-dark {
 .canvas-control-group {
   -webkit-backdrop-filter: blur(32px);
   backdrop-filter: blur(32px);
-  background-color: rgb(from #1e1e1e r g b/50%);
+  background-color: rgba(30, 30, 30, 0.5);
   border: 1px solid transparent;
   border-radius: 5px;
   box-shadow: none;
@@ -21312,7 +21445,7 @@ body.is-mobile {
   --input-radius: 10px;
   --mobile-sidebar-width: 100%;
   --mobile-toolbar-height: 32px;
-  --modal-background: rgb(from #1e1e1e r g b / 75%);
+  --modal-background: rgba(30, 30, 30, 0.75);
   --nav-item-background-active: hsl(258, 88%, 66%);
   --nav-item-background-selected: hsl(258, 88%, 66%);
   --nav-item-color-active: white;
@@ -21655,7 +21788,7 @@ body.is-phone .suggestion-bg {
 }
 
 .mobile-onboarding h1 {
-  font-size: 1.5em;
+  font-size: 1.802em;
 }
 
 .mobile-onboarding .list-heading {
@@ -23235,7 +23368,7 @@ body.is-tablet .mobile-navbar {
   -webkit-backdrop-filter: blur(32px);
   animation: fadeInDown 140ms;
   backdrop-filter: blur(32px);
-  background-color: rgb(from #000 r g b / 90%);
+  background-color: rgba(0, 0, 0, 0.9);
   border: 0.3px solid transparent;
   box-shadow:
     0px 1px 2px rgba(0, 0, 0, 0.028),
@@ -23591,7 +23724,7 @@ body.is-ios .mobile-tab-switcher-inner-scroll {
 }
 
 .is-phone .modal.mod-publish .modal-button-container {
-  background-color: rgb(from #000 r g b / 90%);
+  background-color: rgba(0, 0, 0, 0.9);
   position: fixed;
 }
 
@@ -23909,7 +24042,7 @@ body.theme-light {
   --input-shadow:
     inset 0 -0.15px 0 0.5px rgba(0, 0, 0, 0.2),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 0.3px 0.5px 0 rgba(0, 0, 0, 0.1);
-  --modal-background: rgb(from #1e1e1e r g b / 90%);
+  --modal-background: rgba(30, 30, 30, 0.9);
   --workspace-background-translucent: #1e1e1e;
 }
 
@@ -24108,7 +24241,7 @@ body.is-mobile .mobile-tab-switcher {
   body.is-phone .menu {
     -webkit-backdrop-filter: blur(32px);
     backdrop-filter: blur(32px);
-    background-color: rgb(from #000 r g b / 90%);
+    background-color: rgba(0, 0, 0, 0.9);
     box-shadow: none;
     overflow: hidden;
     padding: 0;
@@ -25769,7 +25902,7 @@ body.is-tablet .workspace-tab-header-container-inner {
     border-radius: 5px;
   }
   .workspace-leaf-content[data-type="markdown"] .markdown-embed-title {
-    font-size: 1.5em;
+    font-size: 1.802em;
   }
   .workspace-leaf-content[data-type="markdown"] iframe.external-embed {
     aspect-ratio: 16/9;
@@ -26205,7 +26338,7 @@ body.is-mobile .modal {
   --interactive-normal: unset;
   -webkit-backdrop-filter: blur(32px);
   backdrop-filter: blur(32px);
-  background-color: rgb(from #000 r g b / 90%);
+  background-color: rgba(0, 0, 0, 0.9);
   border-radius: 10px;
   box-shadow: none;
 }
@@ -27557,7 +27690,7 @@ body.is-phone:not(.quick-mode-switch-off)
   button:nth-last-child(2) {
   -webkit-backdrop-filter: blur(32px);
   backdrop-filter: blur(32px);
-  background-color: rgb(from #1e1e1e r g b/50%);
+  background-color: rgba(30, 30, 30, 0.5);
   border: 0.3px solid transparent;
   border-radius: 100%;
   bottom: 16px;
@@ -27596,7 +27729,7 @@ body.is-phone:not(.transparent-nav-off)
   .view-header::before {
   -webkit-backdrop-filter: blur(16px) saturate(1.5);
   backdrop-filter: blur(16px) saturate(1.5);
-  background-color: rgb(from #000 r g b/75%);
+  background-color: rgba(0, 0, 0, 0.75);
   content: "";
   height: 100%;
   left: 0;
@@ -27824,21 +27957,21 @@ body.is-mobile:not(.transparent-nav-off) .mobile-navbar::before {
 body.is-phone:not(.transparent-nav-off).theme-light
   .workspace-drawer
   .nav-header {
-  background-color: rgb(from #1e1e1e r g b/50%);
+  background-color: rgba(30, 30, 30, 0.5);
 }
 
 body.is-phone:not(.transparent-nav-off).theme-dark
   .workspace-drawer
   .nav-header {
-  background-color: rgb(from #000 r g b/75%);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 body.is-tablet.theme-dark .workspace-drawer .nav-header {
-  background-color: rgb(from #111 r g b/75%);
+  background-color: rgba(17, 17, 17, 0.75);
 }
 
 body.is-tablet.theme-dark .workspace-drawer.is-pinned .nav-header {
-  background-color: rgb(from #000 r g b/75%);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 body.is-tablet .nav-buttons-container {
@@ -27849,7 +27982,7 @@ body.is-mobile .mobile-image-viewer {
   -webkit-backdrop-filter: blur(32px);
   animation: 140ms fadeInScale;
   backdrop-filter: blur(32px);
-  background-color: rgb(from #000 r g b / 75%);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 body.is-mobile .mobile-image-viewer img {
@@ -27872,7 +28005,7 @@ body.is-phone .mobile-tab-switcher-scroll {
 body.is-phone .mobile-tab-switcher-scroll::before {
   -webkit-backdrop-filter: blur(32px);
   backdrop-filter: blur(32px);
-  background-color: rgb(from #000 r g b / 90%);
+  background-color: rgba(0, 0, 0, 0.9);
   border-radius: 32px 32px 0 0;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   content: "";
@@ -28031,7 +28164,7 @@ body.is-phone.is-ios.ios-style-header
 .workspace-leaf-content[data-type="empty"]
   .empty-state
   .empty-state-action:first-child {
-  font-size: 1.5em;
+  font-size: 1.802em;
   font-weight: 700;
   height: 100%;
   letter-spacing: -0.015em;
@@ -28147,7 +28280,7 @@ body:not(.is-mobile).blur-effect-off .suggestion-container {
 body:not(.is-mobile) .menu {
   -webkit-backdrop-filter: blur(32px);
   backdrop-filter: blur(32px);
-  background-color: rgb(from #000 r g b / 90%);
+  background-color: rgba(0, 0, 0, 0.9);
   border: 0.3px solid rgba(255, 255, 255, 0.1);
   border-radius: 5px;
   padding: 0;
@@ -28156,7 +28289,7 @@ body:not(.is-mobile) .menu {
 body:not(.is-mobile) .suggestion-container {
   -webkit-backdrop-filter: blur(32px);
   backdrop-filter: blur(32px);
-  background-color: rgb(from #000 r g b / 90%);
+  background-color: rgba(0, 0, 0, 0.9);
   border: 0.3px solid rgba(255, 255, 255, 0.1);
   border-radius: 5px;
   padding: 0;
@@ -28317,7 +28450,7 @@ body:not(.is-mobile)
 body.is-tablet:not(.tablet-menu-off) .menu {
   -webkit-backdrop-filter: blur(32px);
   backdrop-filter: blur(32px);
-  background-color: rgb(from #1e1e1e r g b/90%);
+  background-color: rgba(30, 30, 30, 0.9);
   box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.2);
   min-width: 240px;
   overflow: hidden;
@@ -28520,7 +28653,7 @@ body.is-phone .menu-item + .menu-item:last-child {
 
 body.is-tablet:not(.tablet-menu-off).theme-light
   .menu-item:not(.is-label[data-section="title"]) {
-  background-color: rgb(from #000 r g b/50%);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 body.is-tablet:not(.tablet-menu-off).theme-dark
@@ -28548,7 +28681,7 @@ body:not(.is-phone) .modal-container:has(.prompt):not(:last-child) {
 body:not(.is-phone) .prompt {
   -webkit-backdrop-filter: blur(32px);
   backdrop-filter: blur(32px);
-  background-color: rgb(from #000 r g b / 75%);
+  background-color: rgba(0, 0, 0, 0.75);
   border: 0.3px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -28576,7 +28709,7 @@ body.is-phone .prompt {
   -webkit-backdrop-filter: blur(32px);
   animation: 560ms blurInScale;
   backdrop-filter: blur(32px);
-  background-color: rgb(from #000 r g b / 90%);
+  background-color: rgba(0, 0, 0, 0.9);
   border: 0.3px solid unset;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
@@ -28602,7 +28735,7 @@ body.is-phone .prompt .suggestion-item {
 body.is-tablet .prompt {
   --prompt-bottom: 0;
   animation: 560ms blurInScale;
-  background-color: rgb(from #000 r g b / 90%);
+  background-color: rgba(0, 0, 0, 0.9);
   outline: 0.3px solid unset;
 }
 
@@ -29066,7 +29199,7 @@ body.is-tablet .better-search-views-file-match {
 body.mod-windows:not(.windows-mode-off) .model-select-content {
   -webkit-backdrop-filter: blur(32px);
   backdrop-filter: blur(32px);
-  background-color: rgb(from #1e1e1e r g b/75%);
+  background-color: rgba(30, 30, 30, 0.75);
   border: 0.3px solid #2a2a2a;
   border-radius: 11px;
   outline: none;
@@ -29076,7 +29209,7 @@ body.mod-windows:not(.windows-mode-off) .model-select-content {
 body.mod-windows:not(.windows-mode-off) .chain-select-content {
   -webkit-backdrop-filter: blur(32px);
   backdrop-filter: blur(32px);
-  background-color: rgb(from #1e1e1e r g b/75%);
+  background-color: rgba(30, 30, 30, 0.75);
   border: 0.3px solid #2a2a2a;
   border-radius: 11px;
   outline: none;
@@ -29200,7 +29333,7 @@ body.mod-windows:not(.windows-mode-off)
 #cMenuToolbarModalBar {
   -webkit-backdrop-filter: blur(32px);
   backdrop-filter: blur(32px);
-  background-color: rgb(from #000 r g b / 90%);
+  background-color: rgba(0, 0, 0, 0.9);
   height: fit-content;
   padding: 4px;
 }
@@ -29208,7 +29341,7 @@ body.mod-windows:not(.windows-mode-off)
 #cMenuToolbarPopoverBar {
   -webkit-backdrop-filter: blur(32px);
   backdrop-filter: blur(32px);
-  background-color: rgb(from #000 r g b / 90%);
+  background-color: rgba(0, 0, 0, 0.9);
   height: fit-content;
   padding: 4px;
 }
@@ -29771,7 +29904,7 @@ body.obsidian-app.fn-whitespace-stop-collapsing.is-mobile
 .map-view-main .leaflet-bar {
   -webkit-backdrop-filter: blur(32px);
   backdrop-filter: blur(32px);
-  background-color: rgb(from #1e1e1e r g b/50%);
+  background-color: rgba(30, 30, 30, 0.5);
   border: 0.3px solid transparent;
   border-radius: 5px;
 }
@@ -29806,7 +29939,7 @@ body.obsidian-app.fn-whitespace-stop-collapsing.is-mobile
 .map-view-main .map-view-graph-controls {
   -webkit-backdrop-filter: blur(32px);
   backdrop-filter: blur(32px);
-  background-color: rgb(from #1e1e1e r g b/50%);
+  background-color: rgba(30, 30, 30, 0.5);
   border: 0.3px solid transparent;
   border-radius: 5px;
   padding: 8px;
@@ -31283,14 +31416,14 @@ body.mod-windows:not(.windows-mode-off):not(.is-mobile) {
   --toggle-thumb-height: 12px;
   --toggle-thumb-width: 12px;
   --toggle-width: 40px;
-  --workspace-background-translucent: rgb(from #000 r g b / 75%);
+  --workspace-background-translucent: rgba(0, 0, 0, 0.75);
 }
 
 body.mod-windows:not(.windows-mode-off):not(.is-mobile).theme-light {
   --input-shadow:
     0px 0px 0px 1px transparent, 0 -0.5px 0 0 rgba(0, 0, 0, 0.25) inset;
   --interactive-normal: #000;
-  --modal-background: rgb(from #1e1e1e r g b / 90%);
+  --modal-background: rgba(30, 30, 30, 0.9);
   --modal-border-color: rgba(0, 0, 0, 0.1);
   --shadow-l: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   --shadow-s:
@@ -31304,7 +31437,7 @@ body.mod-windows:not(.windows-mode-off):not(.is-mobile).theme-dark {
     0px 0px 0px 1px rgba(0, 0, 0, 0.1),
     0 0.5px 0 0 rgba(255, 255, 255, 0.1) inset;
   --interactive-normal: #3f3f3f;
-  --modal-background: rgb(from #000 r g b / 90%);
+  --modal-background: rgba(0, 0, 0, 0.9);
   --modal-border-color: rgba(255, 255, 255, 0.1);
   --shadow-l: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   --shadow-s:
@@ -31348,7 +31481,7 @@ body.mod-windows:not(.windows-mode-off):not(.is-mobile) .suggestion-container {
 }
 
 body.mod-windows:not(.windows-mode-off):not(.is-mobile) .prompt {
-  background-color: rgb(from #000 r g b / 90%);
+  background-color: rgba(0, 0, 0, 0.9);
   outline: none;
 }
 
@@ -31931,13 +32064,13 @@ body.mod-windows:not(.windows-mode-off):not(.is-mobile)
 
 .cards table.dataview tbody > tr > td:first-child a {
   display: block;
-  font-size: 1.5em;
+  font-size: 1.802em;
   font-weight: bold;
 }
 
 .cards table.dataview tbody > tr > td:has(span > img) ~ td a {
   display: block;
-  font-size: 1.5em;
+  font-size: 1.802em;
   font-weight: bold;
 }
 
@@ -32027,7 +32160,7 @@ body.mod-windows:not(.windows-mode-off):not(.is-mobile)
 .cards table.dataview thead > tr {
   -webkit-backdrop-filter: blur(32px);
   backdrop-filter: blur(32px);
-  background-color: rgb(from #000 r g b / 90%);
+  background-color: rgba(0, 0, 0, 0.9);
   border: 0.3px solid rgba(255, 255, 255, 0.1);
   border-radius: 5px;
   box-shadow:

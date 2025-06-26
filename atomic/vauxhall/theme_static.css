@@ -955,7 +955,7 @@
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
   --color-accent-1: light-dark(#a68af9, #9873f7);
   --color-accent-2: light-dark(#c5b6fc, #a68af9);
-  --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
+  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
@@ -1649,14 +1649,24 @@ body {
   --background-modifier-error: #e3365e;
   --background-modifier-error-hover: #e3365e;
   --background-modifier-error-rgb: 251, 70, 76;
-  --background-modifier-form-field: #000;
-  --background-modifier-hover: #ffffff11;
+  --background-modifier-form-field: light-dark(#1e1e1e, #1e1e1e);
+  --background-modifier-hover: light-dark(
+    color-mix(in srgb, #000000 95%, #cccccc),
+    color-mix(in srgb, #000000 95%, #cccccc)
+  );
   --background-modifier-message: #000000e6;
   --background-modifier-success: #52eea3;
   --background-modifier-success-rgb: 68, 207, 110;
-  --background-primary: #000;
+  --background-primary: light-dark(#000, color-mix(in srgb, #000000 40%, #000));
   --background-primary-alt: #111;
-  --background-secondary: #1e1e1e;
+  --background-secondary: light-dark(
+    color-mix(in srgb, #000000 40%, #000),
+    color-mix(in srgb, #000000 40%, #000)
+  );
+  --background-secondary-alt: light-dark(
+    color-mix(in srgb, #000000 90%, #cccccc),
+    color-mix(in srgb, #000000 40%, #000)
+  );
   --bases-embed-border: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -1689,11 +1699,14 @@ body {
   --bases-table-row-height: 30px;
   --bases-table-text-size: 0.875em;
   --bases-table-white-space: nowrap;
+  --black: light-dark(#000, #000);
   --blockquote-background-color: transparent;
   --blockquote-border-color: #8a5cf5;
   --blockquote-border-thickness: 2px;
   --blockquote-color: inherit;
   --blockquote-font-style: normal;
+  --blue: light-dark(#437cf3, #437cf3);
+  --blue-violet: light-dark(#6f51f4, #6f51f4);
   --bold-color: inherit;
   --bold-modifier: 200;
   --bold-weight: 800;
@@ -1746,7 +1759,10 @@ body {
   --checklist-done-color: color-mix(in srgb, #000000 30%, #cccccc);
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: 4px;
-  --code-background: #111;
+  --code-background: light-dark(
+    color-mix(in srgb, #000000 80%, #000),
+    color-mix(in srgb, #000000 90%, #cccccc)
+  );
   --code-border-color: color-mix(in srgb, #000000 80%, #cccccc);
   --code-border-width: 0px;
   --code-comment: color-mix(in srgb, #000000 60%, #cccccc);
@@ -1765,8 +1781,35 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: color-mix(in srgb, #000000 60%, #cccccc);
   --collapse-icon-color-collapsed: #a68af9;
+  --color-accent: light-dark(#8a5cf5, #8a5cf5);
+  --color-accent-1: light-dark(#a68af9, #9873f7);
+  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --cool-cyan: light-dark(#43cfea, #3bb2ce);
+  --cool-gray: light-dark(#515768, #515768);
   --cursor: default;
   --cursor-link: pointer;
+  --cyan: light-dark(#51e1e9, #47c1cd);
   --dialog-max-height: 85vh;
   --dialog-max-width: 80vw;
   --dialog-width: 560px;
@@ -1825,7 +1868,10 @@ body {
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "??", "??", "??", "Arial";
+  --font-mermaid:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-monospace:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1843,7 +1889,10 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "??", "??", "??", "Arial";
+  --font-text:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -1875,42 +1924,42 @@ body {
   --graph-node-tag: #52eea3;
   --graph-node-unresolved: color-mix(in srgb, #000000 60%, #cccccc);
   --graph-text: color-mix(in srgb, #cccccc 30%, #fff);
-  --h1-color: inherit;
+  --h1-color: light-dark(#43cfea, #43cfea);
   --h1-font: inherit;
   --h1-line-height: 1.2;
   --h1-size: 1.802em;
   --h1-style: normal;
   --h1-variant: normal;
   --h1-weight: 700;
-  --h2-color: inherit;
+  --h2-color: light-dark(#54b6f8, #54b6f8);
   --h2-font: inherit;
   --h2-line-height: 1.2;
   --h2-size: 1.602em;
   --h2-style: normal;
   --h2-variant: normal;
   --h2-weight: 600;
-  --h3-color: inherit;
+  --h3-color: light-dark(#437cf3, #437cf3);
   --h3-font: inherit;
   --h3-line-height: 1.3;
   --h3-size: 1.424em;
   --h3-style: normal;
   --h3-variant: normal;
   --h3-weight: 600;
-  --h4-color: inherit;
+  --h4-color: light-dark(#6f51f4, #6f51f4);
   --h4-font: inherit;
   --h4-line-height: 1.4;
   --h4-size: 1.266em;
   --h4-style: normal;
   --h4-variant: normal;
   --h4-weight: 600;
-  --h5-color: inherit;
+  --h5-color: light-dark(#9446f8, #9446f8);
   --h5-font: inherit;
   --h5-line-height: 1.5;
   --h5-size: 1.125em;
   --h5-style: normal;
   --h5-variant: normal;
   --h5-weight: 600;
-  --h6-color: inherit;
+  --h6-color: light-dark(#c952ed, #c952ed);
   --h6-font: inherit;
   --h6-line-height: 1.5;
   --h6-size: 1em;
@@ -1920,6 +1969,7 @@ body {
   --header-height: 40px;
   --heading-formatting: color-mix(in srgb, #000000 60%, #cccccc);
   --heading-spacing: 0rem;
+  --hot-red: light-dark(#e3365e, #e3365e);
   --hr-color: color-mix(in srgb, #000000 80%, #cccccc);
   --hr-thickness: 2px;
   --icon-color: color-mix(in srgb, #000000 30%, #cccccc);
@@ -1943,8 +1993,14 @@ body {
   --icon-xs-stroke-width: 2px;
   --indent-size: 4;
   --indent-unit: 0.5625em;
-  --indentation-guide-color: #ffffff1f;
-  --indentation-guide-color-active: #ffffff4d;
+  --indentation-guide-color: light-dark(
+    color-mix(in srgb, #000000 90%, #cccccc),
+    color-mix(in srgb, #000000 90%, #cccccc)
+  );
+  --indentation-guide-color-active: light-dark(
+    color-mix(in srgb, #000000 95%, #cccccc),
+    color-mix(in srgb, #000000 95%, #cccccc)
+  );
   --indentation-guide-editing-indent: 0.85em;
   --indentation-guide-reading-indent: -0.85em;
   --indentation-guide-source-indent: 0.25em;
@@ -1981,6 +2037,7 @@ body {
   --layer-slides: 45;
   --layer-status-bar: 15;
   --layer-tooltip: 70;
+  --light-blue: light-dark(#54b6f8, #54b6f8);
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;
   --link-color: #a68af9;
@@ -2012,6 +2069,7 @@ body {
   --list-marker-color-hover: color-mix(in srgb, #000000 30%, #cccccc);
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
+  --magenta: light-dark(#e54f9b, #e54f9b);
   --menu-backdrop-filter: none;
   --menu-background: #000;
   --menu-border-color: color-mix(in srgb, #000000 95%, #cccccc);
@@ -2069,6 +2127,7 @@ body {
   --metadata-property-radius-hover: 6px;
   --metadata-sidebar-input-font-size: 14.992px;
   --metadata-sidebar-label-font-size: 14.992px;
+  --mint: light-dark(#52eea3, #47cc91);
   --modal-background: #000;
   --modal-border-color: color-mix(in srgb, #000000 80%, #cccccc);
   --modal-border-width: 0.5pt;
@@ -2087,7 +2146,10 @@ body {
   --nav-heading-color-hover: color-mix(in srgb, #cccccc 30%, #fff);
   --nav-heading-weight: 500;
   --nav-heading-weight-hover: 500;
-  --nav-indentation-guide-color: color-mix(in srgb, #000000 90%, #cccccc);
+  --nav-indentation-guide-color: light-dark(
+    color-mix(in srgb, #000000 90%, #cccccc),
+    color-mix(in srgb, #000000 90%, #cccccc)
+  );
   --nav-indentation-guide-width: 1px;
   --nav-item-background-active: #ffffff26;
   --nav-item-background-hover: #ffffff26;
@@ -2143,6 +2205,7 @@ body {
   --prompt-max-height: 70vh;
   --prompt-max-width: 80vw;
   --prompt-width: 700px;
+  --purple: light-dark(#c952ed, #c952ed);
   --radius-l: 12px;
   --radius-m: 8px;
   --radius-s: 4px;
@@ -2306,8 +2369,8 @@ body {
   --text-selection: #8a5cf533;
   --text-success: #52eea3;
   --text-warning: #fa9f50;
-  --titlebar-background: #000;
-  --titlebar-background-focused: color-mix(in srgb, #000000 90%, #cccccc);
+  --titlebar-background: light-dark(#000, #000);
+  --titlebar-background-focused: light-dark(#111, #111);
   --titlebar-border-color: color-mix(in srgb, #000000 80%, #cccccc);
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;
@@ -2331,6 +2394,10 @@ body {
   --vault-profile-display: flex;
   --vault-profile-font-size: 14.992px;
   --vault-profile-font-weight: 500;
+  --vauxhall-bg: light-dark(#000000, #bdc3db);
+  --vauxhall-fg: light-dark(#cccccc, #000000);
+  --violet: light-dark(#9446f8, #9446f8);
+  --white: light-dark(#fff, #fff);
   --workspace-background-translucent: #00000099;
   --zoom-factor: 1;
   -webkit-tap-highlight-color: #ffffff00;
@@ -3048,7 +3115,20 @@ body:not(.is-mobile) .app-container {
 .markdown-source-view {
   --list-marker-space: 0;
   --list-padding-inline-start: 0;
-  font-family: "??", "??", "??", "Arial";
+  font-family:
+    "??",
+    "??",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
 }
 
@@ -3201,7 +3281,20 @@ body:not(.is-mobile) .app-container {
 }
 
 .markdown-source-view.mod-cm6 .cm-scroller {
-  font-family: "??", "??", "??", "Arial";
+  font-family:
+    "??",
+    "??",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   line-height: 1.5;
   scrollbar-gutter: stable;
 }
@@ -4478,7 +4571,20 @@ body:not(.show-inline-title) .inline-title:not([data-level]) {
   -webkit-user-select: text;
   border-radius: 6px;
   color: color-mix(in srgb, #cccccc 30%, #fff);
-  font-family: "??", "??", "??", "Arial";
+  font-family:
+    "??",
+    "??",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
   height: 100%;
   line-height: 1.5;
@@ -5958,7 +6064,20 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
 .community-modal-readme {
   -webkit-user-select: text;
   color: color-mix(in srgb, #cccccc 30%, #fff);
-  font-family: "??", "??", "??", "Arial";
+  font-family:
+    "??",
+    "??",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
   line-height: 1.5;
   overflow-wrap: break-word;
@@ -12377,7 +12496,20 @@ kbd {
 .markdown-source-view.mod-cm6
   .cm-line.HyperMD-codeblock
   .cm-formatting.cm-formatting-list {
-  font-family: "??", "??", "??", "Arial";
+  font-family:
+    "??",
+    "??",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
 }
 
@@ -17876,7 +18008,20 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .file-recovery-text[data-ext="md"] {
-  font-family: "??", "??", "??", "Arial";
+  font-family:
+    "??",
+    "??",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
 }
 
@@ -19532,7 +19677,20 @@ body:not(.is-phone)
     light-dark(#212121, #fcfcfc)
   );
   flex: 1 0 0;
-  font-family: "??", "??", "??", "Arial";
+  font-family:
+    "??",
+    "??",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
   overflow: auto;
   padding: 24px;

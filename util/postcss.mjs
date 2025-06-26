@@ -327,14 +327,16 @@ export function getCombinedThemeVariables(cssString, darkThemeSelector = ".theme
   const root = postcss.parse(cssString)
   const combinedVariables = {}
 
+  const skippableProps = ["--accent-h", "--accent-s", "--accent-l", "--accent-a"]
+
   const isColorVariable = (value) => {
     // Check if the value is a color variable
     return value.startsWith("var(--") || value.startsWith("#") || value.startsWith("rgb(") || value.startsWith("hsl(") || value.startsWith("oklch(") || value.startsWith("oklab(")
   }
 
   // Helper function to create tuples of light and dark variables
-  const createLightDarkTuple = (lightVar, darkVar) => {
-    if (!isColorVariable(lightVar) || !isColorVariable(darkVar)) {
+  const createLightDarkTuple = (lightVar, darkVar, propName) => {
+    if ((!isColorVariable(lightVar) || !isColorVariable(darkVar)) && !skippableProps.includes(propName)) {
       return "none";
     }
     return `light-dark(${lightVar}, ${darkVar})`
@@ -359,7 +361,7 @@ export function getCombinedThemeVariables(cssString, darkThemeSelector = ".theme
         // If the variable already exists in the combinedVariables,
         // we combine them using the light-dark() function.
         if (combinedVariables[decl.prop]) {
-          combinedVariables[decl.prop] = createLightDarkTuple(combinedVariables[decl.prop], decl.value)
+          combinedVariables[decl.prop] = createLightDarkTuple(combinedVariables[decl.prop], decl.value, decl.prop)
         } else {
           combinedVariables[decl.prop] = decl.value
         }
@@ -369,7 +371,7 @@ export function getCombinedThemeVariables(cssString, darkThemeSelector = ".theme
 
   // Remove any variable that is not a `litgt-dark()` function
   for (const key in combinedVariables) {
-    if (!combinedVariables[key].startsWith("light-dark(")) {
+    if (!combinedVariables[key].startsWith("light-dark(") && skippableProps.indexOf(key) === -1) {
       // If the variable is not a light-dark function, we remove it
       delete combinedVariables[key]
     }

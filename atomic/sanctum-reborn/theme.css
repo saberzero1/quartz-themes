@@ -1762,6 +1762,8 @@ body {
   --aside-background-hover: var(--background-modifier-hover);
   --aside-border-color: var(--background-modifier-border);
   --aside-text-color: var(--text-muted);
+  --background: light-dark(rgb(var(--gray-100)), rgb(var(--gray-10)));
+  --background-inverse: light-dark(rgb(var(--gray-10)), rgb(var(--gray-80)));
   --background-modifier-active-hover: rgba(var(--color-accent-rgb), 0.15);
   --background-modifier-border: var(--border-subtle-0);
   --background-modifier-border-focus: var(--focus);
@@ -1778,7 +1780,10 @@ body {
   --background-primary: var(--background);
   --background-primary-alt: var(--layer-1);
   --background-secondary: var(--background);
-  --background-secondary-alt: var(--background);
+  --background-secondary-alt: light-dark(
+    var(--color-base-30),
+    var(--color-base-05)
+  );
   --bases-embed-border: 1px solid var(--background-modifier-border);
   --bases-embed-border-radius: var(--radius-s);
   --bases-filter-menu-width: 520px;
@@ -1832,6 +1837,20 @@ body {
   --bold-color: inherit;
   --bold-modifier: 200;
   --bold-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --border-inverse: light-dark(rgb(var(--gray-10)), rgb(var(--gray-100)));
+  --border-strong-1: light-dark(rgb(var(--gray-60)), rgb(var(--gray-50)));
+  --border-strong-2: light-dark(rgb(var(--gray-50)), rgb(var(--gray-50)));
+  --border-subtle-0: light-dark(rgb(var(--gray-80)), rgb(var(--gray-20)));
+  --border-subtle-1: light-dark(rgb(var(--gray-80)), rgb(var(--gray-20)));
+  --border-subtle-2: light-dark(rgb(var(--gray-70)), rgb(var(--gray-20)));
+  --border-subtle-selected-1: light-dark(
+    rgb(var(--gray-70)),
+    rgb(var(--gray-30))
+  );
+  --border-subtle-selected-2: light-dark(
+    rgb(var(--gray-60)),
+    rgb(var(--gray-30))
+  );
   --border-width: 1px;
   --button-radius: var(--input-radius);
   --calendar-dot: var(--orange);
@@ -1891,30 +1910,87 @@ body {
   --code-background: var(--background-primary-alt);
   --code-border-color: var(--background-modifier-border);
   --code-border-width: 0px;
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-normal: var(--text-normal);
+  --code-comment: light-dark(var(--text-faint), var(--text-faint));
+  --code-function: light-dark(var(--orange-30), var(--orange));
+  --code-important: light-dark(var(--lavender), var(--lavender));
+  --code-keyword: light-dark(var(--pink), var(--pink));
+  --code-normal: light-dark(var(--text-muted), var(--text-muted));
   --code-normal-inline: var(--pink);
   --code-operator: var(--color-red);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
+  --code-property: light-dark(var(--cyan), var(--cyan));
+  --code-punctuation: light-dark(var(--text-muted), var(--text-muted));
   --code-radius: var(--radius-s);
   --code-size: var(--font-smaller);
-  --code-string: var(--color-green);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
+  --code-string: light-dark(var(--green-40), var(--green));
+  --code-tag: light-dark(var(--red-50), var(--red));
+  --code-value: light-dark(var(--lavender), var(--lavender));
   --code-white-space: pre-wrap;
   --collapse-icon-color: var(--text-faint);
   --collapse-icon-color-collapsed: var(--text-accent);
-  --color-accent: var(--interactive);
-  --color-accent-1: var(--interactive);
-  --color-accent-2: var(--interactive);
+  --color-accent: light-dark(
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l))
+  );
+  --color-accent-1: light-dark(
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 1),
+      calc(var(--accent-s) * 1.01),
+      calc(var(--accent-l) * 1.075)
+    )
+  );
+  --color-accent-2: light-dark(
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    )
+  );
+  --color-accent-hsl: light-dark(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l)
+  );
+  --color-accent-rgb: light-dark(
+    var(--custom-accent-color),
+    var(--custom-accent-color)
+  );
   --color-accent-rgb-d: 102, 153, 97;
   --color-accent-rgb-l: 246, 141, 69;
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
   --color-green-rgb: 102, 153, 97;
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
   --color-red-rgb: 197, 65, 40;
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --color-yellow-rgb: 243, 189, 79;
   --cursor: default;
   --cursor-link: pointer;
@@ -1963,6 +2039,8 @@ body {
   --embed-font-style: inherit;
   --embed-max-height: 4000px;
   --embed-padding: 0 0 0 24px;
+  --field-1: light-dark(rgb(var(--gray-90)), rgb(var(--white)));
+  --field-hover-1: light-dark(rgb(var(--gray-80)), rgb(var(--gray-20)));
   --file-folding-offset: 24px;
   --file-header-border: var(--border-width) solid transparent;
   --file-header-font: var(--font-interface);
@@ -1973,6 +2051,9 @@ body {
   --file-margins: var(--size-4-8);
   --flair-background: var(--interactive-normal);
   --flair-color: var(--text-normal);
+  --focus: light-dark(var(--cyan-60), var(--cyan-60));
+  --focus-inset: light-dark(rgb(var(--gray-100)), rgb(var(--white)));
+  --focus-inverse: light-dark(rgb(var(--white)), rgb(var(--white)));
   --font-black: 900;
   --font-bold: 700;
   --font-default:
@@ -2010,7 +2091,8 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: var(--font-print);
+  --font-text:
+    var(--font-text-override), var(--font-text-theme), var(--font-default);
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: inter, sans-serif;
@@ -2115,15 +2197,19 @@ body {
   --icon-color-active: var(--interactive);
   --icon-color-focused: var(--text-normal);
   --icon-color-hover: var(--text-muted);
+  --icon-inverse: light-dark(rgb(var(--gray-100)), rgb(var(--white)));
   --icon-l: 18px;
   --icon-l-stroke-width: 1.25px;
   --icon-m: 18px;
   --icon-m-stroke-width: 1.25px;
+  --icon-on-color: light-dark(rgb(var(--white)), rgb(var(--white)));
   --icon-opacity: 1;
   --icon-opacity-active: 1;
   --icon-opacity-hover: 1;
+  --icon-primary: light-dark(rgb(var(--gray-10)), rgb(var(--gray-100)));
   --icon-s: 16px;
   --icon-s-stroke-width: 1px;
+  --icon-secondary: light-dark(rgb(var(--gray-30)), rgb(var(--gray-70)));
   --icon-size: var(--icon-s);
   --icon-stroke: var(--icon-m-stroke-width);
   --icon-xl: 32px;
@@ -2155,6 +2241,10 @@ body {
   --input-height: 32px;
   --input-placeholder-color: var(--text-faint);
   --input-radius: 4px;
+  --interactive: light-dark(
+    rgb(var(--color-accent-rgb)),
+    rgb(var(--color-accent-rgb))
+  );
   --interactive-accent: var(--color-accent-1);
   --interactive-accent-hover: var(--color-accent-2);
   --interactive-accent-hsl: var(--color-accent-hsl);
@@ -2173,12 +2263,18 @@ body {
   --lavender-70: hsl(271deg, 57%, 43%);
   --lavender-80: hsl(275deg, 89%, 29%);
   --lavender-90: hsl(273deg, 100%, 21%);
+  --layer-1: light-dark(rgb(var(--gray-90)), rgb(var(--white)));
+  --layer-2: light-dark(rgb(var(--gray-80)), rgb(var(--gray-10)));
+  --layer-active-1: light-dark(rgb(var(--gray-70)), rgb(var(--gray-30)));
+  --layer-active-2: light-dark(rgb(var(--gray-60)), rgb(var(--gray-30)));
   --layer-cover: 5;
   --layer-dragged-item: 80;
   --layer-menu: 65;
   --layer-modal: 50;
   --layer-notice: 60;
   --layer-popover: 30;
+  --layer-selected-1: light-dark(rgb(var(--gray-80)), rgb(var(--gray-20)));
+  --layer-selected-2: light-dark(rgb(var(--gray-70)), rgb(var(--gray-20)));
   --layer-sidedock: 10;
   --layer-slides: 45;
   --layer-status-bar: 15;
@@ -2547,6 +2643,7 @@ body {
   --tag-weight: inherit;
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-2);
+  --text-code: light-dark(var(--pink-50), var(--pink-60));
   --text-error: var(--red);
   --text-faint: var(--text-placeholder);
   --text-highlight-bg: var(--highlight);
@@ -2556,6 +2653,9 @@ body {
   --text-normal: var(--text-primary);
   --text-on-accent: rgb(var(--white));
   --text-on-accent-inverted: black;
+  --text-placeholder: light-dark(rgb(var(--gray-60)), rgb(var(--gray-40)));
+  --text-primary: light-dark(rgb(var(--gray-10)), rgb(var(--gray-100)));
+  --text-secondary: light-dark(rgb(var(--gray-30)), rgb(var(--gray-70)));
   --text-selection: rgba(var(--color-accent-rgb), 0.5);
   --text-success: var(--green);
   --text-warning: var(--color-orange);

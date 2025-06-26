@@ -1,4 +1,7 @@
 :root {
+  --accent-h: light-dark(0, 3);
+  --accent-l: light-dark(50, 54);
+  --accent-s: light-dark(77, 70);
   --background-modifier-border: light-dark(#0003, #33323118);
   --background-primary: light-dark(#1f2122, #fdfcfc);
   --background-primary-alt: light-dark(#1f2122, #fdfcfc);
@@ -7,7 +10,7 @@
   --color-accent: light-dark(#e21d1d, #e21d1d);
   --color-accent-1: light-dark(hsl(-3, 78.54, 57.5), hsl(-1, 77.77, 53.75));
   --color-accent-2: light-dark(hsl(-5, 80.85, 64.5), hsl(-3, 78.54, 57.5));
-  --color-accent-hsl: light-dark(0, 77, 50, 0, 77, 50);
+  --color-accent-hsl: light-dark(#004d32, #004d32);
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
@@ -60,9 +63,9 @@
 }
 
 body {
-  --accent-h: 258;
-  --accent-l: 66%;
-  --accent-s: 88%;
+  --accent-h: light-dark(0, 3);
+  --accent-l: light-dark(50, 54);
+  --accent-s: light-dark(77, 70);
   --anim-duration-fast: 140ms;
   --anim-duration-moderate: 300ms;
   --anim-duration-none: 0;
@@ -73,7 +76,7 @@ body {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   --background-modifier-active-hover: #e21d1d26;
-  --background-modifier-border: #363636;
+  --background-modifier-border: light-dark(#0003, #33323118);
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;
   --background-modifier-error: #ad514c;
@@ -84,9 +87,10 @@ body {
   --background-modifier-message: #000000e6;
   --background-modifier-success: #f5a571;
   --background-modifier-success-rgb: 173, 131, 1;
-  --background-primary: #000;
-  --background-primary-alt: #111;
-  --background-secondary: #1e1e1e;
+  --background-primary: light-dark(#1f2122, #fdfcfc);
+  --background-primary-alt: light-dark(#1f2122, #fdfcfc);
+  --background-secondary: light-dark(#1b1d1e, #f7f3f0);
+  --background-secondary-alt: light-dark(#363636, #212121);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -195,6 +199,30 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: #938a8099;
   --collapse-icon-color-collapsed: #ad514c;
+  --color-accent: light-dark(#e21d1d, #e21d1d);
+  --color-accent-1: light-dark(hsl(-3, 78.54, 57.5), hsl(-1, 77.77, 53.75));
+  --color-accent-2: light-dark(hsl(-5, 80.85, 64.5), hsl(-3, 78.54, 57.5));
+  --color-accent-hsl: light-dark(#004d32, #004d32);
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -254,7 +282,10 @@ body {
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "??", "??", "??", "Arial";
+  --font-mermaid:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-monospace:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -272,7 +303,10 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "??", "??", "??", "Arial";
+  --font-text:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -393,11 +427,11 @@ body {
   --input-height: 30px;
   --input-placeholder-color: #938a8099;
   --input-radius: 5px;
-  --interactive-accent: hsl(-3, 78.54, 57.5);
-  --interactive-accent-hover: hsl(-5, 80.85, 64.5);
+  --interactive-accent: light-dark(#314f52, #538a8a);
+  --interactive-accent-hover: light-dark(#39595c, #5c9e9e);
   --interactive-accent-hsl: 0, 77, 50;
-  --interactive-hover: #111;
-  --interactive-normal: #000;
+  --interactive-hover: light-dark(#3f444d, #ede9e1);
+  --interactive-normal: light-dark(#353a42, #f7f3f0);
   --italic-color: inherit;
   --italic-weight: inherit;
   --layer-cover: 5;
@@ -716,19 +750,19 @@ body {
   --tag-radius: 2em;
   --tag-size: 0.875em;
   --tag-weight: inherit;
-  --text-accent: #e21d1d;
-  --text-accent-hover: hsl(-5, 80.85, 64.5);
-  --text-error: #ad514c;
-  --text-faint: #666666;
-  --text-highlight-bg: #ffd00066;
+  --text-accent: light-dark(#ad514c, #ad514c);
+  --text-accent-hover: light-dark(#e07575, #cc645e);
+  --text-error: light-dark(#f5a571, #ad514c);
+  --text-faint: light-dark(#938a8099, #80797499);
+  --text-highlight-bg: light-dark(#ad514c44, #fab48588);
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: #b3b3b3;
-  --text-normal: #dadada;
-  --text-on-accent: #ffffff;
-  --text-on-accent-inverted: #000000;
-  --text-selection: #e21d1d33;
-  --text-success: #f5a571;
-  --text-warning: #f5a571;
+  --text-muted: light-dark(#938a80, #807974);
+  --text-normal: light-dark(#dbd3ca, #333231);
+  --text-on-accent: light-dark(#dbd3ca, #fdfcfc);
+  --text-on-accent-inverted: light-dark(#1f2122, #333231);
+  --text-selection: light-dark(#353a42, #dae5e2);
+  --text-success: light-dark(#aac2ae, #538a8a);
+  --text-warning: light-dark(#f5a571, #ad514c);
   --titlebar-background: #1b1d1e;
   --titlebar-background-focused: #1b1d1e;
   --titlebar-border-color: transparent;

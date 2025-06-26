@@ -8,7 +8,7 @@
   --color-accent: light-dark(#848e9a, #848e9a);
   --color-accent-1: light-dark(#9ba5ad, #8f9aa4);
   --color-accent-2: light-dark(#b1b9c0, #9ba5ad);
-  --color-accent-hsl: light-dark(211, 10%, 56%, 211, 10%, 56%);
+  --color-accent-hsl: light-dark(#848e9a, #848e9a);
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
@@ -64,9 +64,9 @@ body {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   --background-modifier-active-hover: #848e9a26;
-  --background-modifier-border: #363636;
+  --background-modifier-border: light-dark(#4a4546, #d6d6d6);
   --background-modifier-border-focus: #363636;
-  --background-modifier-border-hover: #3f3f3f;
+  --background-modifier-border-hover: light-dark(#4f4a4b, #d6d6d6);
   --background-modifier-error: #bf616a;
   --background-modifier-error-hover: #bf616a;
   --background-modifier-error-rgb: 191, 97, 106;
@@ -75,10 +75,10 @@ body {
   --background-modifier-message: #000000e6;
   --background-modifier-success: #8fbcbb;
   --background-modifier-success-rgb: 143, 188, 187;
-  --background-primary: #000;
-  --background-primary-alt: #111;
-  --background-secondary: #1e1e1e;
-  --background-secondary-alt: #1e1e1e;
+  --background-primary: light-dark(#322f30, #f2f2f2);
+  --background-primary-alt: light-dark(#413e3e, #e6e6e6);
+  --background-secondary: light-dark(#322f30, #f2f2f2);
+  --background-secondary-alt: light-dark(#363636, #212121);
   --bases-embed-border: 1px solid #363636;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -188,6 +188,30 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: #666666;
   --collapse-icon-color-collapsed: #838e9a;
+  --color-accent: light-dark(#848e9a, #848e9a);
+  --color-accent-1: light-dark(#9ba5ad, #8f9aa4);
+  --color-accent-2: light-dark(#b1b9c0, #9ba5ad);
+  --color-accent-hsl: light-dark(#848e9a, #848e9a);
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -247,7 +271,10 @@ body {
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "??", "??", "??", "Arial";
+  --font-mermaid:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-monospace:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -265,7 +292,10 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "??", "??", "??", "Arial";
+  --font-text:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -366,7 +396,7 @@ body {
   --indent-size: 4;
   --indent-unit: 0.5625em;
   --indentation-guide-color: #363636;
-  --indentation-guide-color-active: #ffffff4d;
+  --indentation-guide-color-active: light-dark(#766f71, #b3b3b3);
   --indentation-guide-editing-indent: 0.85em;
   --indentation-guide-reading-indent: -0.85em;
   --indentation-guide-source-indent: 0.25em;
@@ -391,8 +421,8 @@ body {
   --interactive-accent: #9ba5ad;
   --interactive-accent-hover: #b1b9c0;
   --interactive-accent-hsl: 211, 10%, 56%;
-  --interactive-hover: #111;
-  --interactive-normal: #000;
+  --interactive-hover: light-dark(#4a4546, #efefef);
+  --interactive-normal: light-dark(#433f40, #e6e6e6);
   --italic-color: inherit;
   --italic-underline-color: #fcd86c;
   --italic-weight: inherit;
@@ -718,11 +748,11 @@ body {
   --text-accent: #838e9a;
   --text-accent-hover: #b1b9c0;
   --text-error: #bf616a;
-  --text-faint: #666666;
+  --text-faint: light-dark(#807b7b, #ababab);
   --text-highlight-bg: #ffd00066;
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: #b3b3b3;
-  --text-normal: #dadada;
+  --text-muted: light-dark(#b7b2b2, #878586);
+  --text-normal: light-dark(#e1e1e1, #353132);
   --text-on-accent: #ffffff;
   --text-on-accent-inverted: #000000;
   --text-selection: #848e9a33;

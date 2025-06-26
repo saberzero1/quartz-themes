@@ -1,28 +1,31 @@
 :root {
+  --accent-h: 9;
+  --accent-l: 66%;
+  --accent-s: 89%;
   --background-modifier-active-hover: light-dark(#ff8671, #ffa99a);
   --background-primary: light-dark(#282828, #fffcf4);
   --background-secondary: light-dark(#282828, #fffcf4);
   --background-secondary-alt: light-dark(#363636, #212121);
   --blockquote-color: light-dark(#53dfdd, #027aff);
-  --callout-bug: light-dark(251, 70, 76, 251, 70, 76);
-  --callout-default: light-dark(2, 122, 255, 2, 122, 255);
-  --callout-error: light-dark(251, 70, 76, 251, 70, 76);
-  --callout-example: light-dark(197, 133, 204, 197, 133, 204);
-  --callout-fail: light-dark(251, 70, 76, 251, 70, 76);
-  --callout-important: light-dark(197, 133, 204, 197, 133, 204);
-  --callout-info: light-dark(224, 222, 113, 224, 222, 113);
-  --callout-note: light-dark(2, 122, 255, 2, 122, 255);
-  --callout-question: light-dark(250, 153, 205, 250, 153, 205);
-  --callout-quote: light-dark(68, 207, 110, 68, 207, 110);
-  --callout-success: light-dark(251, 70, 76, 251, 70, 76);
-  --callout-summary: light-dark(83, 223, 221, 83, 223, 221);
-  --callout-tip: light-dark(255, 169, 154, 255, 169, 154);
-  --callout-todo: light-dark(68, 207, 110, 68, 207, 110);
-  --callout-warning: light-dark(233, 151, 63, 233, 151, 63);
+  --callout-bug: light-dark(#fb464c, #fb464c);
+  --callout-default: light-dark(#027aff, #027aff);
+  --callout-error: light-dark(#fb464c, #fb464c);
+  --callout-example: light-dark(#c585cc, #c585cc);
+  --callout-fail: light-dark(#fb464c, #fb464c);
+  --callout-important: light-dark(#c585cc, #c585cc);
+  --callout-info: light-dark(#e0de71, #e0de71);
+  --callout-note: light-dark(#027aff, #027aff);
+  --callout-question: light-dark(#fa99cd, #fa99cd);
+  --callout-quote: light-dark(#44cf6e, #44cf6e);
+  --callout-success: light-dark(#fb464c, #fb464c);
+  --callout-summary: light-dark(#53dfdd, #53dfdd);
+  --callout-tip: light-dark(#ffa99a, #ffa99a);
+  --callout-todo: light-dark(#44cf6e, #44cf6e);
+  --callout-warning: light-dark(#e9973f, #e9973f);
   --color-accent: light-dark(#f5725b, #f5725b);
   --color-accent-1: light-dark(#f9958a, #f88472);
   --color-accent-2: light-dark(#fdbab6, #f9958a);
-  --color-accent-hsl: light-dark(9, 89%, 66%, 9, 89%, 66%);
+  --color-accent-hsl: light-dark(#f5725b, #f5725b);
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
@@ -110,7 +113,7 @@ body {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
-  --background-modifier-active-hover: #f5725b26;
+  --background-modifier-active-hover: light-dark(#ff8671, #ffa99a);
   --background-modifier-border: #363636;
   --background-modifier-border-focus: #f5725b;
   --background-modifier-border-hover: #3f3f3f;
@@ -122,9 +125,10 @@ body {
   --background-modifier-message: #000000e6;
   --background-modifier-success: #44cf6e;
   --background-modifier-success-rgb: 68, 207, 110;
-  --background-primary: #000000;
+  --background-primary: light-dark(#282828, #fffcf4);
   --background-primary-alt: #111;
-  --background-secondary: #1e1e1e;
+  --background-secondary: light-dark(#282828, #fffcf4);
+  --background-secondary-alt: light-dark(#363636, #212121);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 0px;
   --bases-filter-menu-width: 520px;
@@ -160,7 +164,7 @@ body {
   --blockquote-background-color: transparent;
   --blockquote-border-color: #f5725b;
   --blockquote-border-thickness: 2px;
-  --blockquote-color: inherit;
+  --blockquote-color: light-dark(#53dfdd, #027aff);
   --blockquote-font-style: normal;
   --bold-color: inherit;
   --bold-modifier: 200;
@@ -171,28 +175,29 @@ body {
   --callout-blend-mode: darken;
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
-  --callout-bug: 251, 70, 76;
+  --callout-bug: light-dark(#fb464c, #fb464c);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
-  --callout-default: 2, 122, 255;
-  --callout-error: 251, 70, 76;
-  --callout-example: 168, 130, 255;
-  --callout-fail: 251, 70, 76;
-  --callout-important: 83, 223, 221;
-  --callout-info: 2, 122, 255;
+  --callout-default: light-dark(#027aff, #027aff);
+  --callout-error: light-dark(#fb464c, #fb464c);
+  --callout-example: light-dark(#c585cc, #c585cc);
+  --callout-fail: light-dark(#fb464c, #fb464c);
+  --callout-important: light-dark(#c585cc, #c585cc);
+  --callout-info: light-dark(#e0de71, #e0de71);
+  --callout-note: light-dark(#027aff, #027aff);
   --callout-padding: 12px 12px 12px 24px;
-  --callout-question: 233, 151, 63;
-  --callout-quote: 158, 158, 158;
+  --callout-question: light-dark(#fa99cd, #fa99cd);
+  --callout-quote: light-dark(#44cf6e, #44cf6e);
   --callout-radius: 0px;
-  --callout-success: 68, 207, 110;
-  --callout-summary: 83, 223, 221;
-  --callout-tip: 83, 223, 221;
+  --callout-success: light-dark(#fb464c, #fb464c);
+  --callout-summary: light-dark(#53dfdd, #53dfdd);
+  --callout-tip: light-dark(#ffa99a, #ffa99a);
   --callout-title-color: inherit;
   --callout-title-padding: 0;
   --callout-title-size: inherit;
   --callout-title-weight: 600;
-  --callout-todo: 2, 122, 255;
-  --callout-warning: 233, 151, 63;
+  --callout-todo: light-dark(#44cf6e, #44cf6e);
+  --callout-warning: light-dark(#e9973f, #e9973f);
   --canvas-background: #282828;
   --canvas-card-label-color: rgba(#fffcf4, 0.5);
   --canvas-color: 192, 192, 192;
@@ -234,6 +239,30 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: rgba(#fffcf4, 0.5);
   --collapse-icon-color-collapsed: #ff8671;
+  --color-accent: light-dark(#f5725b, #f5725b);
+  --color-accent-1: light-dark(#f9958a, #f88472);
+  --color-accent-2: light-dark(#fdbab6, #f9958a);
+  --color-accent-hsl: light-dark(#f5725b, #f5725b);
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -294,7 +323,10 @@ body {
   --font-interface-theme: "Special Elite", "TT2020 Base";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "??", "??", "Special Elite", "TT2020 Base", "??", "Arial";
+  --font-mermaid:
+    "??", "Special Elite", "TT2020 Base", "??", ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace:
     "??", "Special Elite", "TT2020 Base", ui-monospace, SFMono-Regular,
     "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono",
@@ -312,7 +344,10 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "??", "??", "Special Elite", "TT2020 Base", "??", "Arial";
+  --font-text:
+    "??", "Special Elite", "TT2020 Base", "??", ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "Special Elite", "TT2020 Base", "??";
@@ -344,7 +379,7 @@ body {
   --graph-node-tag: #44cf6e;
   --graph-node-unresolved: rgba(#fffcf4, 0.5);
   --graph-text: #fffcf4;
-  --h1-color: inherit;
+  --h1-color: light-dark(#c585cc, #c585cc);
   --h1-font: inherit;
   --h1-line-height: 1.2;
   --h1-size: 1.5em;
@@ -391,9 +426,10 @@ body {
   --heading-spacing: 0rem;
   --hr-color: transparent;
   --hr-thickness: 2px;
-  --icon-color: rgba(#fffcf4, 0.8);
-  --icon-color-active: #ff8671;
-  --icon-color-focused: #fffcf4;
+  --icon-color: light-dark(#fffcf4, #141300);
+  --icon-color-active: light-dark(#c585cc, #fffcf4);
+  --icon-color-focused: light-dark(#fffcf4, #fffcf4);
+  --icon-color-focused-active: light-dark(197, 133, 204, #fffcf4);
   --icon-color-hover: rgba(#fffcf4, 0.8);
   --icon-l: 18px;
   --icon-l-stroke-width: 1.75px;
@@ -413,8 +449,8 @@ body {
   --icon-xs-stroke-width: 2px;
   --indent-size: 4;
   --indent-unit: 0.5625em;
-  --indentation-guide-color: #ffffff1f;
-  --indentation-guide-color-active: #ffffff4d;
+  --indentation-guide-color: light-dark(#2a2a2a, #2a2a2a);
+  --indentation-guide-color-active: light-dark(#c585cc, #c585cc);
   --indentation-guide-editing-indent: 0.85em;
   --indentation-guide-reading-indent: -0.85em;
   --indentation-guide-source-indent: 0.25em;
@@ -434,8 +470,8 @@ body {
   --input-height: 30px;
   --input-placeholder-color: rgba(#fffcf4, 0.5);
   --input-radius: 0px;
-  --interactive-accent: #f9958a;
-  --interactive-accent-hover: #fdbab6;
+  --interactive-accent: light-dark(#f5725b, #f5725b);
+  --interactive-accent-hover: light-dark(#f9958a, #ff8671);
   --interactive-accent-hsl: 9, 89%, 66%;
   --interactive-hover: #111;
   --interactive-normal: #000000;
@@ -455,7 +491,7 @@ body {
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;
   --line-width: 40rem;
-  --link-color: #ff8671;
+  --link-color: light-dark(#ff8671, #ff8671);
   --link-color-hover: #fdbab6;
   --link-decoration: none;
   --link-decoration-hover: underline;
@@ -479,7 +515,7 @@ body {
   --list-indent: 2.25em;
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
-  --list-marker-color: rgba(#fffcf4, 0.5);
+  --list-marker-color: light-dark(#fffcf4, #000000);
   --list-marker-color-collapsed: #ff8671;
   --list-marker-color-hover: rgba(#fffcf4, 0.8);
   --list-numbered-style: decimal;
@@ -571,7 +607,7 @@ body {
   --nav-item-color: rgba(#fffcf4, 0.8);
   --nav-item-color-active: #fffcf4;
   --nav-item-color-highlighted: #ff8671;
-  --nav-item-color-hover: #fffcf4;
+  --nav-item-color-hover: light-dark(#ff8671, #000000);
   --nav-item-color-selected: #fffcf4;
   --nav-item-padding: 4px 8px 4px 24px;
   --nav-item-parent-padding: 6px 8px 6px 24px;
@@ -662,7 +698,7 @@ body {
   --slider-track-background: transparent;
   --slider-track-height: 3px;
   --status-bar-background: #282828;
-  --status-bar-border-color: #00000026;
+  --status-bar-border-color: light-dark(#141300, #141300);
   --status-bar-border-width: 1px 0 0 1px;
   --status-bar-font-size: 12.8px;
   --status-bar-position: fixed;
@@ -755,7 +791,7 @@ body {
   --tag-border-color: #f5725b26;
   --tag-border-color-hover: #f5725b26;
   --tag-border-width: 0px;
-  --tag-color: #ff8671;
+  --tag-color: light-dark(#ff8671, #ff8671);
   --tag-color-hover: #ff8671;
   --tag-decoration: none;
   --tag-decoration-hover: underline;
@@ -764,25 +800,25 @@ body {
   --tag-radius: 0.3em;
   --tag-size: 0.875em;
   --tag-weight: inherit;
-  --text-accent: #f5725b;
+  --text-accent: light-dark(#ff8671, #ff8671);
   --text-accent-hover: #fdbab6;
   --text-error: #fb464c;
   --text-faint: #666666;
   --text-highlight-bg: #ffd00066;
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: #b3b3b3;
-  --text-normal: #dadada;
+  --text-normal: light-dark(#fffcf4, #000000);
   --text-on-accent: #ffffff;
   --text-on-accent-inverted: #000000;
   --text-selection: #f5725b33;
   --text-success: #44cf6e;
   --text-warning: #e9973f;
-  --titlebar-background: #282828;
-  --titlebar-background-focused: #363636;
+  --titlebar-background: light-dark(#ff8671, #ffa99a);
+  --titlebar-background-focused: light-dark(#ff8671, #ffa99a);
   --titlebar-border-color: transparent;
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;
-  --titlebar-text-color: rgba(#fffcf4, 0.8);
+  --titlebar-text-color: light-dark(#000000, #fffcf4);
   --titlebar-text-color-focused: #fffcf4;
   --titlebar-text-weight: 700;
   --toggle-border-width: 2px;
@@ -1434,7 +1470,10 @@ input[type="search"] {
 }
 
 .tree-item-self.is-being-dragged {
-  background-color: #f5725b;
+  background-color: light-dark(
+    light-dark(#f5725b, #f5725b),
+    light-dark(#f5725b, #f5725b)
+  );
   color: #ffffff;
 }
 

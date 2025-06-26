@@ -9,7 +9,7 @@
     hsl(253, 92.4%, 85.14%),
     hsl(255, 89.76%, 75.9%)
   );
-  --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
@@ -75,6 +75,7 @@ body {
   --background-primary: #000;
   --background-primary-alt: #111;
   --background-secondary: #1e1e1e;
+  --background-secondary-alt: light-dark(#363636, #212121);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 5px;
   --bases-filter-menu-width: 520px;
@@ -189,6 +190,36 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: #666666;
   --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
+  --color-accent: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
+  --color-accent-1: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(257, 88.88%, 70.95%)
+  );
+  --color-accent-2: light-dark(
+    hsl(253, 92.4%, 85.14%),
+    hsl(255, 89.76%, 75.9%)
+  );
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -252,8 +283,10 @@ body {
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid:
-    "??", "??", "Segoe UI Variable", "Segoe UI Variable Text", "Segoe UI",
-    sans-serif, "Arial";
+    "??", "Segoe UI Variable", "Segoe UI Variable Text", "Segoe UI", sans-serif,
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
   --font-monospace:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -274,8 +307,10 @@ body {
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
   --font-text:
-    "??", "??", "Segoe UI Variable", "Segoe UI Variable Text", "Segoe UI",
-    sans-serif, "Arial";
+    "??", "Segoe UI Variable", "Segoe UI Variable Text", "Segoe UI", sans-serif,
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme:
@@ -312,42 +347,42 @@ body {
   --h1-color: inherit;
   --h1-font: inherit;
   --h1-line-height: 1.2;
-  --h1-size: 1.5em;
+  --h1-size: 1.802em;
   --h1-style: normal;
   --h1-variant: normal;
   --h1-weight: 700;
   --h2-color: inherit;
   --h2-font: inherit;
   --h2-line-height: 1.2;
-  --h2-size: 1.25em;
+  --h2-size: 1.602em;
   --h2-style: normal;
   --h2-variant: normal;
   --h2-weight: 600;
   --h3-color: inherit;
   --h3-font: inherit;
   --h3-line-height: 1.3;
-  --h3-size: 1.125em;
+  --h3-size: 1.424em;
   --h3-style: normal;
   --h3-variant: normal;
   --h3-weight: 600;
   --h4-color: inherit;
   --h4-font: inherit;
   --h4-line-height: 1.4;
-  --h4-size: 1em;
+  --h4-size: 1.266em;
   --h4-style: normal;
   --h4-variant: normal;
   --h4-weight: 600;
   --h5-color: inherit;
   --h5-font: inherit;
   --h5-line-height: 1.6;
-  --h5-size: 1em;
+  --h5-size: 1.125em;
   --h5-style: normal;
   --h5-variant: normal;
   --h5-weight: 600;
   --h6-color: inherit;
   --h6-font: inherit;
   --h6-line-height: 1.6;
-  --h6-size: 0.875em;
+  --h6-size: 1em;
   --h6-style: normal;
   --h6-variant: normal;
   --h6-weight: 600;
@@ -391,7 +426,7 @@ body {
   --inline-title-font: inherit;
   --inline-title-line-height: 1.2;
   --inline-title-margin-bottom: 0.5em;
-  --inline-title-size: 1.5em;
+  --inline-title-size: 1.802em;
   --inline-title-style: normal;
   --inline-title-variant: normal;
   --inline-title-weight: 700;
@@ -586,7 +621,7 @@ body {
   --radius-m: 6px;
   --radius-s: 6px;
   --radius-xl: 12px;
-  --reader-mobile-nav-bg: rgb(from #1e1e1e r g b/50%);
+  --reader-mobile-nav-bg: rgba(30, 30, 30, 0.5);
   --ribbon-background: transparent;
   --ribbon-background-collapsed: transparent;
   --ribbon-padding: 4px 8px;
@@ -768,7 +803,7 @@ body {
   --vault-profile-font-size: 15.992px;
   --vault-profile-font-weight: 500;
   --view-header-height: 40px;
-  --workspace-background-translucent: rgb(from #000 r g b / 75%);
+  --workspace-background-translucent: rgba(0, 0, 0, 0.75);
   --zoom-factor: 1;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-user-select: none;
@@ -835,7 +870,7 @@ h1 {
   --font-weight: 700;
   color: inherit;
   font-family: inherit;
-  font-size: 1.5em;
+  font-size: 1.802em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -849,7 +884,7 @@ h2 {
   --font-weight: 600;
   color: inherit;
   font-family: inherit;
-  font-size: 1.25em;
+  font-size: 1.602em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -863,7 +898,7 @@ h3 {
   --font-weight: 600;
   color: inherit;
   font-family: inherit;
-  font-size: 1.125em;
+  font-size: 1.424em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -877,7 +912,7 @@ h4 {
   --font-weight: 600;
   color: inherit;
   font-family: inherit;
-  font-size: 1em;
+  font-size: 1.266em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -891,7 +926,7 @@ h5 {
   --font-weight: 600;
   color: inherit;
   font-family: inherit;
-  font-size: 1em;
+  font-size: 1.125em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -905,7 +940,7 @@ h6 {
   --font-weight: 600;
   color: inherit;
   font-family: inherit;
-  font-size: 0.875em;
+  font-size: 1em;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -1202,7 +1237,7 @@ h6 {
   -webkit-backdrop-filter: blur(16px);
   animation: 140ms fadeInScale;
   backdrop-filter: blur(16px);
-  background-color: rgb(from #000 r g b / 75%);
+  background-color: rgba(0, 0, 0, 0.75);
   border: 1px solid transparent;
   border-radius: 10px;
   box-shadow:

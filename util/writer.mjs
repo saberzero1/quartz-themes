@@ -104,8 +104,15 @@ export function cleanCSS(base, inject) {
   result = result.replace(/^@scope.*?^\}$/gms, "") // Remove scope media queries
   result = result.replace(/^\.pdf-.*?\{.*?^\}/gms, "") // Remove PDF specific rules
   result = result.replace(/^\s*?color-scheme:\s*?(light|dark|normal);\s*?$/gms, "") // Remove color scheme rules
-  const colorVariables = `:root {\n${getCombinedThemeVariables(result)}\n}`;
-  result = `${result}\n${colorVariables}` // Add combined theme variables
+  const colorVariables = getCombinedThemeVariables(result);
+  // Append colorVariables to the end of `:root`
+  const colorRootVariable = result.matchAll(/(^:root\s*?\{.*?^\}$)/gms);
+  const colorRootVariableInject = combineIdenticalSelectors([...colorRootVariable].map(match => match[0]).join("\n").replace(/(^:root\s*?\{.*?)^\}$/gms, `$1\n${colorVariables}\n\}\n`))
+  // Append colorVarialbes to the end of `body`
+  const colorBodyVariable = result.matchAll(/(^body\s*?\{.*?^\}$)/gms);
+  const colorBodyVariableInject = combineIdenticalSelectors([...colorBodyVariable].map(match => match[0]).join("\n").replace(/(^body\s*?\{.*?)^\}$/gms, `$1\n${colorVariables}\n\}\n`))
+  //result = result.replace(/(^body\s*?\{.*?)^\}$/gms, `$1\n${colorVariables}\n\}\n`)
+  result = `${result}\n${colorRootVariableInject}\n${colorBodyVariableInject}` // Add combined theme variables
   // Remove newline characters from multiline `url()`
   result = result.replace(/url\(\s*?(.+?)\s*?\);$/gms, (match, p1) => `url(${p1.replace(/\n/g, "")});`);
   // Remove all mask-image rules

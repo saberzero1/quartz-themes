@@ -24,35 +24,9 @@ html[saved-theme="dark"] {
   }
 
   --background-modifier-border: #d9dde8;
-  --color-accent-2: #8892f2;
-  --color-accent-hsl: 232, 75%, 70%;
-  --color-base-100: #c8d4e6;
-  --color-base-30: #1f242d;
-  --color-base-35: #384152;
-  --color-base-40: #404b5e;
-  --color-blue: #009be3;
-  --color-cyan: #00cecb;
-  --color-green: #7dcf2b;
-  --color-orange: #f69c00;
-  --color-pink: #e66ab4;
-  --color-purple: #b45af5;
-  --color-red: #ff4d3a;
   --text-accent: #7089eb;
   --text-highlight-bg: #7988ec79;
   --background-modifier-border: #d9dde8;
-  --color-accent-2: #8892f2;
-  --color-accent-hsl: 232, 75%, 70%;
-  --color-base-100: #c8d4e6;
-  --color-base-30: #1f242d;
-  --color-base-35: #384152;
-  --color-base-40: #404b5e;
-  --color-blue: #009be3;
-  --color-cyan: #00cecb;
-  --color-green: #7dcf2b;
-  --color-orange: #f69c00;
-  --color-pink: #e66ab4;
-  --color-purple: #b45af5;
-  --color-red: #ff4d3a;
   --text-accent: #7089eb;
   --text-highlight-bg: #7988ec79;
 }
@@ -72,33 +46,7 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --color-accent-2: #8892f2;
-  --color-accent-hsl: 232, 75%, 70%;
-  --color-base-100: #252525;
-  --color-base-30: #9f9f9f66;
-  --color-base-35: #dedede;
-  --color-base-40: #d7d7d7;
-  --color-blue: #4e8aa6;
-  --color-cyan: #49a7ba;
-  --color-green: #8fb26b;
-  --color-orange: #d08344;
-  --color-pink: #ac7aaa;
-  --color-purple: #8076ad;
-  --color-red: #c75f54;
   --text-highlight-bg: #ffc80075;
-  --color-accent-2: #8892f2;
-  --color-accent-hsl: 232, 75%, 70%;
-  --color-base-100: #252525;
-  --color-base-30: #9f9f9f66;
-  --color-base-35: #dedede;
-  --color-base-40: #d7d7d7;
-  --color-blue: #4e8aa6;
-  --color-cyan: #49a7ba;
-  --color-green: #8fb26b;
-  --color-orange: #d08344;
-  --color-pink: #ac7aaa;
-  --color-purple: #8076ad;
-  --color-red: #c75f54;
   --text-highlight-bg: #ffc80075;
 }
 
@@ -816,7 +764,7 @@ body {
 
 :root {
   --color-accent-2: light-dark(#d3dbfa, #a7b5f3);
-  --color-accent-hsl: light-dark(232, 75%, 70%, 232, 75%, 70%);
+  --color-accent-hsl: light-dark(#7988ec, #7988ec);
   --color-base-100: light-dark(#dadada, #222222);
   --color-base-30: light-dark(#363636, #e0e0e0);
   --color-base-35: light-dark(#3f3f3f, #d4d4d4);
@@ -857,9 +805,22 @@ body {
   --code-value: #b78cda;
   --collapse-icon-color: #787689;
   --collapse-icon-color-collapsed: #7089eb;
+  --color-accent-2: light-dark(#d3dbfa, #a7b5f3);
+  --color-accent-hsl: light-dark(#7988ec, #7988ec);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
   --cursor-link: pointer;
   --font-default: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-  --font-text: "??", "??", "??", "Arial";
+  --font-text: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   --graph-line: #c4c6ca;
   --graph-node-tag: #84cc7c;
   --graph-node-unresolved: #787689;
@@ -922,103 +883,6 @@ body {
   user-select: none;
   width: 100%;
 }
-/* START DARK */
-:root[saved-theme="dark"],
-html[saved-theme="dark"] {
-  color-scheme: dark;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
-
-  --background-modifier-border: #d9dde8;
-  --color-accent-2: #8892f2;
-  --color-accent-hsl: 232, 75%, 70%;
-  --color-base-100: #c8d4e6;
-  --color-base-30: #1f242d;
-  --color-base-35: #384152;
-  --color-base-40: #404b5e;
-  --color-blue: #009be3;
-  --color-cyan: #00cecb;
-  --color-green: #7dcf2b;
-  --color-orange: #f69c00;
-  --color-pink: #e66ab4;
-  --color-purple: #b45af5;
-  --color-red: #ff4d3a;
-  --text-accent: #7089eb;
-  --text-highlight-bg: #7988ec79;
-  --background-modifier-border: #d9dde8;
-  --color-accent-2: #8892f2;
-  --color-accent-hsl: 232, 75%, 70%;
-  --color-base-100: #c8d4e6;
-  --color-base-30: #1f242d;
-  --color-base-35: #384152;
-  --color-base-40: #404b5e;
-  --color-blue: #009be3;
-  --color-cyan: #00cecb;
-  --color-green: #7dcf2b;
-  --color-orange: #f69c00;
-  --color-pink: #e66ab4;
-  --color-purple: #b45af5;
-  --color-red: #ff4d3a;
-  --text-accent: #7089eb;
-  --text-highlight-bg: #7988ec79;
-}
-/* END DARK */
-/* START LIGHT */
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  color-scheme: light;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
-  --color-accent-2: #8892f2;
-  --color-accent-hsl: 232, 75%, 70%;
-  --color-base-100: #252525;
-  --color-base-30: #9f9f9f66;
-  --color-base-35: #dedede;
-  --color-base-40: #d7d7d7;
-  --color-blue: #4e8aa6;
-  --color-cyan: #49a7ba;
-  --color-green: #8fb26b;
-  --color-orange: #d08344;
-  --color-pink: #ac7aaa;
-  --color-purple: #8076ad;
-  --color-red: #c75f54;
-  --text-highlight-bg: #ffc80075;
-  --color-accent-2: #8892f2;
-  --color-accent-hsl: 232, 75%, 70%;
-  --color-base-100: #252525;
-  --color-base-30: #9f9f9f66;
-  --color-base-35: #dedede;
-  --color-base-40: #d7d7d7;
-  --color-blue: #4e8aa6;
-  --color-cyan: #49a7ba;
-  --color-green: #8fb26b;
-  --color-orange: #d08344;
-  --color-pink: #ac7aaa;
-  --color-purple: #8076ad;
-  --color-red: #c75f54;
-  --text-highlight-bg: #ffc80075;
-}
-/* END LIGHT */
 /* CALLOUTS */
 :root,
 html {

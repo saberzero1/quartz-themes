@@ -94,10 +94,12 @@
 }
 
 body {
+  --a-row: light-dark(#0003, #00000008);
   --accent-h: 258;
   --accent-l: 66%;
   --accent-s: 88%;
   --active-line-color: var(--color-accent);
+  --alt-heading-color: light-dark(#8c96d9, #5460ab);
   --anim-duration-fast: 140ms;
   --anim-duration-moderate: 300ms;
   --anim-duration-none: 0;
@@ -107,6 +109,7 @@ body {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
+  --b-row: light-dark(#00000059, #00000014);
   --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-focus: var(--color-base-40);
@@ -122,6 +125,10 @@ body {
   --background-primary: var(--bg1);
   --background-primary-alt: var(--bg2);
   --background-secondary: var(--bg3);
+  --background-secondary-alt: light-dark(
+    var(--color-base-30),
+    var(--color-base-05)
+  );
   --bases-embed-border: 1px solid var(--background-modifier-border);
   --bases-embed-border-radius: var(--radius-s);
   --bases-filter-menu-width: 520px;
@@ -156,6 +163,7 @@ body {
   --bases-table-white-space: nowrap;
   --basic-border: 2px solid var(--basic-border-color);
   --basic-border-color: var(--color-base-50);
+  --bg-hue: light-dark(var(--bg-hue-dark), var(--bg-hue-light));
   --bg-hue-dark: 230;
   --bg-hue-light: 230;
   --bg1: var(--color-base-00);
@@ -240,6 +248,66 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: var(--text-faint);
   --collapse-icon-color-collapsed: var(--text-accent);
+  --color-accent: light-dark(
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l))
+  );
+  --color-accent-1: light-dark(
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 1),
+      calc(var(--accent-s) * 1.01),
+      calc(var(--accent-l) * 1.075)
+    )
+  );
+  --color-accent-2: light-dark(
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    )
+  );
+  --color-accent-hsl: light-dark(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l)
+  );
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-base-85s: light-dark(
+    hsl(var(--bg-hue) calc(var(--bg-sat) * 2) 82%),
+    hsl(var(--bg-hue) calc(var(--bg-sat) * 2) 24%)
+  );
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -317,7 +385,8 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: var(--font-print);
+  --font-text:
+    var(--font-text-override), var(--font-text-theme), var(--font-default);
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "iA Writer Quattro S";
@@ -397,6 +466,7 @@ body {
   --heading-scaling: 1;
   --heading-spacing: calc(var(--p-spacing) * 2.5);
   --hotkey-color: var(--secondary-accent);
+  --hover-accent: light-dark(#ed5aa8, #dc388f);
   --hr-color: var(--text-faint);
   --hr-thickness: 2px;
   --icon-color: var(--text-muted);
@@ -445,7 +515,7 @@ body {
   --input-height: 30px;
   --input-placeholder-color: var(--text-faint);
   --input-radius: 5px;
-  --interactive-accent: var(--color-accent-1);
+  --interactive-accent: light-dark(#108189, #108189);
   --interactive-accent-hover: var(--hover-accent);
   --interactive-accent-hsl: var(--color-accent-hsl);
   --interactive-hover: var(--color-base-20);
@@ -474,7 +544,7 @@ body {
   --link-external-decoration: underline;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
-  --link-unresolved-color: var(--text-accent);
+  --link-unresolved-color: light-dark(#6fb74e, #6fb74e);
   --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3);
   --link-unresolved-decoration-style: solid;
   --link-unresolved-filter: none;
@@ -647,7 +717,9 @@ body {
   --search-clear-button-size: 13px;
   --search-icon-color: var(--text-muted);
   --search-icon-size: 18px;
+  --search-match-color: light-dark(var(--color-yellow), var(--color-orange));
   --search-result-background: var(--background-primary);
+  --secondary-accent: light-dark(#da975d, #c67e3f);
   --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9);
   --sidebar-tab-text-display: none;
   --signature: "⟡";
@@ -795,8 +867,8 @@ body {
   --text-warning: var(--color-orange);
   --thin-border: 1px solid var(--basic-border-color);
   --thin-muted-border: 1px solid var(--muted-border-color);
-  --titlebar-background: var(--background-secondary);
-  --titlebar-background-focused: var(--background-secondary-alt);
+  --titlebar-background: light-dark(var(--bg6), var(--bg5));
+  --titlebar-background-focused: light-dark(var(--bg5), var(--bg4));
   --titlebar-border-color: var(--background-modifier-border);
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;
@@ -821,6 +893,9 @@ body {
   --vault-profile-display: flex;
   --vault-profile-font-size: var(--font-ui-small);
   --vault-profile-font-weight: var(--font-medium);
+  --vim-cursor-bg: light-dark(#000, #404040);
+  --vim-cursor-color: light-dark(#b3b3b3, #e6e6e6);
+  --vim-cursor-outline: light-dark(#e6e6e6, #b0b5bf);
   --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
   --zoom-factor: 1;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);

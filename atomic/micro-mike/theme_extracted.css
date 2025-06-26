@@ -745,6 +745,10 @@ body {
   --background-primary: var(--color-base-00);
   --background-primary-alt: var(--color-base-10);
   --background-secondary: var(--color-base-20);
+  --background-secondary-alt: light-dark(
+    var(--color-base-30),
+    var(--color-base-05)
+  );
   --bases-embed-border: 1px solid var(--background-modifier-border);
   --bases-embed-border-radius: var(--radius-s);
   --bases-filter-menu-width: 520px;
@@ -806,11 +810,212 @@ body {
   --blockquote-border-thickness: 2px;
   --blockquote-color: inherit;
   --blockquote-font-style: normal;
+  --blurple: light-dark(
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%),
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%)
+  );
+  --blurple-active: light-dark(
+    hsl(226.3, calc(var(--saturation-factor, 1) * 33.9%), 52%),
+    hsl(226.3, calc(var(--saturation-factor, 1) * 33.9%), 52%)
+  );
+  --blurple-hover: light-dark(
+    hsl(227.1, calc(var(--saturation-factor, 1) * 44.1%), 58.6%),
+    hsl(227.1, calc(var(--saturation-factor, 1) * 44.1%), 58.6%)
+  );
+  --blurple-inverted: light-dark(
+    hsl(228, calc(var(--saturation-factor, 1) * 55.6%), 98.2%),
+    hsl(228, calc(var(--saturation-factor, 1) * 55.6%), 98.2%)
+  );
+  --blurple-inverted-active: light-dark(
+    hsl(228.6, calc(var(--saturation-factor, 1) * 60%), 93.1%),
+    hsl(228.6, calc(var(--saturation-factor, 1) * 60%), 93.1%)
+  );
+  --blurple-st: light-dark(
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.5),
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.5)
+  );
   --bold-color: inherit;
   --bold-modifier: 200;
   --bold-weight: calc(var(--font-weight) + var(--bold-modifier));
   --border-width: 1px;
   --brand-500: var(--blurple);
+  --brand-experiment: light-dark(var(--blurple), var(--blurple));
+  --brand-experiment-05a: light-dark(
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.05),
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.05)
+  );
+  --brand-experiment-100: light-dark(
+    hsl(228, calc(var(--saturation-factor, 1) * 55.6%), 98.2%),
+    hsl(228, calc(var(--saturation-factor, 1) * 55.6%), 98.2%)
+  );
+  --brand-experiment-10a: light-dark(
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.1),
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.1)
+  );
+  --brand-experiment-130: light-dark(
+    hsl(228, calc(var(--saturation-factor, 1) * 62.5%), 96.9%),
+    hsl(228, calc(var(--saturation-factor, 1) * 62.5%), 96.9%)
+  );
+  --brand-experiment-15a: light-dark(
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.15),
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.15)
+  );
+  --brand-experiment-160: light-dark(
+    hsl(228, calc(var(--saturation-factor, 1) * 60%), 95.1%),
+    hsl(228, calc(var(--saturation-factor, 1) * 60%), 95.1%)
+  );
+  --brand-experiment-200: light-dark(
+    hsl(228.6, calc(var(--saturation-factor, 1) * 60%), 93.1%),
+    hsl(228.6, calc(var(--saturation-factor, 1) * 60%), 93.1%)
+  );
+  --brand-experiment-20a: light-dark(
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.2),
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.2)
+  );
+  --brand-experiment-230: light-dark(
+    hsl(226.7, calc(var(--saturation-factor, 1) * 57.4%), 90.8%),
+    hsl(226.7, calc(var(--saturation-factor, 1) * 57.4%), 90.8%)
+  );
+  --brand-experiment-25a: light-dark(
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.25),
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.25)
+  );
+  --brand-experiment-260: light-dark(
+    hsl(225.9, calc(var(--saturation-factor, 1) * 58.6%), 88.6%),
+    hsl(225.9, calc(var(--saturation-factor, 1) * 58.6%), 88.6%)
+  );
+  --brand-experiment-300: light-dark(
+    hsl(226.8, calc(var(--saturation-factor, 1) * 57.7%), 86.1%),
+    hsl(226.8, calc(var(--saturation-factor, 1) * 57.7%), 86.1%)
+  );
+  --brand-experiment-30a: light-dark(
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.3),
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.3)
+  );
+  --brand-experiment-330: light-dark(
+    hsl(226.9, calc(var(--saturation-factor, 1) * 59.1%), 81.8%),
+    hsl(226.9, calc(var(--saturation-factor, 1) * 59.1%), 81.8%)
+  );
+  --brand-experiment-35a: light-dark(
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.35),
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.35)
+  );
+  --brand-experiment-360: light-dark(
+    hsl(227.3, calc(var(--saturation-factor, 1) * 57.9%), 77.6%),
+    hsl(227.3, calc(var(--saturation-factor, 1) * 57.9%), 77.6%)
+  );
+  --brand-experiment-400: light-dark(
+    hsl(226.3, calc(var(--saturation-factor, 1) * 58%), 72%),
+    hsl(226.3, calc(var(--saturation-factor, 1) * 58%), 72%)
+  );
+  --brand-experiment-40a: light-dark(
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.4),
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.4)
+  );
+  --brand-experiment-430: light-dark(
+    hsl(226.5, calc(var(--saturation-factor, 1) * 58.2%), 70%),
+    hsl(226.5, calc(var(--saturation-factor, 1) * 58.2%), 70%)
+  );
+  --brand-experiment-45a: light-dark(
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.45),
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.45)
+  );
+  --brand-experiment-460: light-dark(
+    hsl(226.9, calc(var(--saturation-factor, 1) * 58.5%), 67.8%),
+    hsl(226.9, calc(var(--saturation-factor, 1) * 58.5%), 67.8%)
+  );
+  --brand-experiment-500: light-dark(
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%),
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%)
+  );
+  --brand-experiment-50a: light-dark(
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.5),
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.5)
+  );
+  --brand-experiment-530: light-dark(
+    hsl(226.6, calc(var(--saturation-factor, 1) * 45.2%), 59.2%),
+    hsl(226.6, calc(var(--saturation-factor, 1) * 45.2%), 59.2%)
+  );
+  --brand-experiment-55a: light-dark(
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.55),
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.55)
+  );
+  --brand-experiment-560: light-dark(
+    hsl(226.6, calc(var(--saturation-factor, 1) * 35.3%), 52.7%),
+    hsl(226.6, calc(var(--saturation-factor, 1) * 35.3%), 52.7%)
+  );
+  --brand-experiment-600: light-dark(
+    hsl(227.1, calc(var(--saturation-factor, 1) * 31%), 44.3%),
+    hsl(227.1, calc(var(--saturation-factor, 1) * 31%), 44.3%)
+  );
+  --brand-experiment-60a: light-dark(
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.6),
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.6)
+  );
+  --brand-experiment-630: light-dark(
+    hsl(226.2, calc(var(--saturation-factor, 1) * 31.3%), 38.2%),
+    hsl(226.2, calc(var(--saturation-factor, 1) * 31.3%), 38.2%)
+  );
+  --brand-experiment-65a: light-dark(
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.65),
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.65)
+  );
+  --brand-experiment-660: light-dark(
+    hsl(226.4, calc(var(--saturation-factor, 1) * 31%), 33.5%),
+    hsl(226.4, calc(var(--saturation-factor, 1) * 31%), 33.5%)
+  );
+  --brand-experiment-700: light-dark(
+    hsl(226.8, calc(var(--saturation-factor, 1) * 30.8%), 26.1%),
+    hsl(226.8, calc(var(--saturation-factor, 1) * 30.8%), 26.1%)
+  );
+  --brand-experiment-70a: light-dark(
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.7),
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.7)
+  );
+  --brand-experiment-730: light-dark(
+    hsl(227.7, calc(var(--saturation-factor, 1) * 31.2%), 24.5%),
+    hsl(227.7, calc(var(--saturation-factor, 1) * 31.2%), 24.5%)
+  );
+  --brand-experiment-75a: light-dark(
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.75),
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.75)
+  );
+  --brand-experiment-760: light-dark(
+    hsl(226.7, calc(var(--saturation-factor, 1) * 31.6%), 22.4%),
+    hsl(226.7, calc(var(--saturation-factor, 1) * 31.6%), 22.4%)
+  );
+  --brand-experiment-800: light-dark(
+    hsl(226.5, calc(var(--saturation-factor, 1) * 31.3%), 19.4%),
+    hsl(226.5, calc(var(--saturation-factor, 1) * 31.3%), 19.4%)
+  );
+  --brand-experiment-80a: light-dark(
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.8),
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.8)
+  );
+  --brand-experiment-830: light-dark(
+    hsl(225, calc(var(--saturation-factor, 1) * 31.6%), 14.9%),
+    hsl(225, calc(var(--saturation-factor, 1) * 31.6%), 14.9%)
+  );
+  --brand-experiment-85a: light-dark(
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.85),
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.85)
+  );
+  --brand-experiment-860: light-dark(
+    hsl(225, calc(var(--saturation-factor, 1) * 32%), 9.8%),
+    hsl(225, calc(var(--saturation-factor, 1) * 32%), 9.8%)
+  );
+  --brand-experiment-900: light-dark(
+    hsl(228, calc(var(--saturation-factor, 1) * 29.4%), 3.3%),
+    hsl(228, calc(var(--saturation-factor, 1) * 29.4%), 3.3%)
+  );
+  --brand-experiment-90a: light-dark(
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.9),
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.9)
+  );
+  --brand-experiment-95a: light-dark(
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.95),
+    hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.95)
+  );
   --button-radius: 0px;
   --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
@@ -879,6 +1084,62 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: var(--icon-color);
   --collapse-icon-color-collapsed: var(--text-accent);
+  --color-accent: light-dark(
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l))
+  );
+  --color-accent-1: light-dark(
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 1),
+      calc(var(--accent-s) * 1.01),
+      calc(var(--accent-l) * 1.075)
+    )
+  );
+  --color-accent-2: light-dark(
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    )
+  );
+  --color-accent-hsl: light-dark(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l)
+  );
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -904,6 +1165,7 @@ body {
   --dropdown-background-position: right 0.5em top 50%, 0 0;
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
+  --dtm-08-dm-list-tab-icon-background: light-dark(#0004, #0008);
   --editorDashboardButtonsWidth: 20%;
   --editorDashboardHeight: 40px;
   --editorStackWidth: 200px;
@@ -970,7 +1232,8 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: var(--font-print);
+  --font-text:
+    var(--font-text-override), var(--font-text-theme), var(--font-default);
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -1002,7 +1265,27 @@ body {
   --graph-node-tag: var(--color-green);
   --graph-node-unresolved: var(--text-faint);
   --graph-text: var(--text-normal);
+  --green: light-dark(
+    hsl(152.6, calc(var(--saturation-factor, 1) * 46%), 48.6%),
+    hsl(152.6, calc(var(--saturation-factor, 1) * 46%), 48.6%)
+  );
   --green-360: var(--green);
+  --green-active: light-dark(
+    hsl(152.3, calc(var(--saturation-factor, 1) * 45.7%), 39%),
+    hsl(152.3, calc(var(--saturation-factor, 1) * 45.7%), 39%)
+  );
+  --green-hover: light-dark(
+    hsl(152.6, calc(var(--saturation-factor, 1) * 46.2%), 43.7%),
+    hsl(152.6, calc(var(--saturation-factor, 1) * 46.2%), 43.7%)
+  );
+  --green-inverted: light-dark(
+    hsl(156, calc(var(--saturation-factor, 1) * 38.5%), 97.5%),
+    hsl(156, calc(var(--saturation-factor, 1) * 38.5%), 97.5%)
+  );
+  --green-inverted-active: light-dark(
+    hsl(153.9, calc(var(--saturation-factor, 1) * 43.4%), 89.6%),
+    hsl(153.9, calc(var(--saturation-factor, 1) * 43.4%), 89.6%)
+  );
   --h1-color: inherit;
   --h1-font: inherit;
   --h1-line-height: 1.2;
@@ -1364,7 +1647,27 @@ body {
   --radius-m: 0px;
   --radius-s: 0px;
   --radius-xl: 0px;
+  --red: light-dark(
+    hsl(0, calc(var(--saturation-factor, 1) * 84.9%), 61%),
+    hsl(0, calc(var(--saturation-factor, 1) * 84.9%), 61%)
+  );
   --red-400: var(--red);
+  --red-active: light-dark(
+    hsl(0, calc(var(--saturation-factor, 1) * 54.2%), 48.8%),
+    hsl(0, calc(var(--saturation-factor, 1) * 54.2%), 48.8%)
+  );
+  --red-hover: light-dark(
+    hsl(0, calc(var(--saturation-factor, 1) * 66.1%), 54.9%),
+    hsl(0, calc(var(--saturation-factor, 1) * 66.1%), 54.9%)
+  );
+  --red-inverted: light-dark(
+    hsl(0, calc(var(--saturation-factor, 1) * 80%), 98%),
+    hsl(0, calc(var(--saturation-factor, 1) * 80%), 98%)
+  );
+  --red-inverted-active: light-dark(
+    hsl(0, calc(var(--saturation-factor, 1) * 85%), 92.2%),
+    hsl(0, calc(var(--saturation-factor, 1) * 85%), 92.2%)
+  );
   --ribbon-background: var(--background-secondary);
   --ribbon-background-collapsed: var(--background-primary);
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
@@ -1572,8 +1875,24 @@ body {
   --vault-profile-font-size: var(--font-ui-small);
   --vault-profile-font-weight: var(--font-medium);
   --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
+  --yellow: light-dark(
+    hsl(37.5, calc(var(--saturation-factor, 1) * 95.7%), 54.1%),
+    hsl(37.5, calc(var(--saturation-factor, 1) * 95.7%), 54.1%)
+  );
   --yellow-300: var(--yellow);
   --yellow-360: var(--yellow);
+  --yellow-hover: light-dark(
+    hsl(37.4, calc(var(--saturation-factor, 1) * 81.5%), 48.6%),
+    hsl(37.4, calc(var(--saturation-factor, 1) * 81.5%), 48.6%)
+  );
+  --yellow-inverted: light-dark(
+    hsl(38.2, calc(var(--saturation-factor, 1) * 100%), 97.8%),
+    hsl(38.2, calc(var(--saturation-factor, 1) * 100%), 97.8%)
+  );
+  --yellow-inverted-active: light-dark(
+    hsl(37.3, calc(var(--saturation-factor, 1) * 95.7%), 90.8%),
+    hsl(37.3, calc(var(--saturation-factor, 1) * 95.7%), 90.8%)
+  );
   --zoom-factor: 1;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-user-select: none;

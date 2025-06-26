@@ -1,10 +1,13 @@
 :root {
+  --accent-h: light-dark(175, 175);
+  --accent-l: light-dark(33%, 33%);
+  --accent-s: light-dark(57%, 57%);
   --background-secondary-alt: light-dark(#282726, #100f0f);
   --color-accent: light-dark(#24847c, #24847c);
   --color-accent-1: light-dark(#29998a, #268f84);
   --color-accent-2: light-dark(#2cae98, #29998a);
-  --color-accent-hsl: light-dark(175, 57%, 33%, 175, 57%, 33%);
-  --color-accent-hsl-default: light-dark(175, 57%, 33%, 175, 57%, 33%);
+  --color-accent-hsl: light-dark(#24847c, #24847c);
+  --color-accent-hsl-default: light-dark(#24847c, #24847c);
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
@@ -41,9 +44,9 @@
 }
 
 body {
-  --accent-h: 258;
-  --accent-l: 66%;
-  --accent-s: 88%;
+  --accent-h: light-dark(175, 175);
+  --accent-l: light-dark(33%, 33%);
+  --accent-s: light-dark(57%, 57%);
   --anim-duration-fast: 140ms;
   --anim-duration-moderate: 300ms;
   --anim-duration-none: 0;
@@ -68,6 +71,7 @@ body {
   --background-primary: #000;
   --background-primary-alt: #111;
   --background-secondary: #1e1e1e;
+  --background-secondary-alt: light-dark(#282726, #100f0f);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -149,9 +153,7 @@ body {
   --checkbox-border-color: #575653;
   --checkbox-border-color-hover: #878580;
   --checkbox-color: #24847c;
-  --checkbox-color-hover: hsl(
-    from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15)
-  );
+  --checkbox-color-hover: #29998a;
   --checkbox-margin-inline-start: 0.85em;
   --checkbox-marker-color: #000;
   --checkbox-radius: 4px;
@@ -177,9 +179,32 @@ body {
   --code-value: #8b7ec8;
   --code-white-space: pre-wrap;
   --collapse-icon-color: #575653;
-  --collapse-icon-color-collapsed: hsl(
-    from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15)
-  );
+  --collapse-icon-color-collapsed: #29998a;
+  --color-accent: light-dark(#24847c, #24847c);
+  --color-accent-1: light-dark(#29998a, #268f84);
+  --color-accent-2: light-dark(#2cae98, #29998a);
+  --color-accent-hsl: light-dark(#24847c, #24847c);
+  --color-accent-hsl-default: light-dark(#24847c, #24847c);
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -239,7 +264,10 @@ body {
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "??", "??", "??", "Arial";
+  --font-mermaid:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-monospace:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -257,7 +285,10 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "??", "??", "??", "Arial";
+  --font-text:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -285,9 +316,7 @@ body {
   --graph-line: #343331;
   --graph-node: #878580;
   --graph-node-attachment: #d0a215;
-  --graph-node-focused: hsl(
-    from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15)
-  );
+  --graph-node-focused: #29998a;
   --graph-node-tag: #879a39;
   --graph-node-unresolved: #575653;
   --graph-text: #cecdc3;
@@ -339,9 +368,7 @@ body {
   --hr-color: transparent;
   --hr-thickness: 2px;
   --icon-color: #878580;
-  --icon-color-active: hsl(
-    from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15)
-  );
+  --icon-color-active: #29998a;
   --icon-color-focused: #cecdc3;
   --icon-color-hover: #878580;
   --icon-l: 18px;
@@ -382,12 +409,8 @@ body {
   --input-height: 30px;
   --input-placeholder-color: #575653;
   --input-radius: 5px;
-  --interactive-accent: hsl(
-    from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15)
-  );
-  --interactive-accent-hover: hsl(
-    from #24847c calc(h - 5) calc(s * 1.05) calc(l * 1.29)
-  );
+  --interactive-accent: #29998a;
+  --interactive-accent-hover: #2cae98;
   --interactive-accent-hsl: 175, 57%, 33%;
   --interactive-hover: #111;
   --interactive-normal: #000;
@@ -405,25 +428,17 @@ body {
   --layer-tooltip: 70;
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;
-  --link-color: hsl(from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15));
-  --link-color-hover: hsl(
-    from #24847c calc(h - 5) calc(s * 1.05) calc(l * 1.29)
-  );
+  --link-color: #29998a;
+  --link-color-hover: #2cae98;
   --link-decoration: underline;
   --link-decoration-hover: underline;
   --link-decoration-thickness: auto;
-  --link-external-color: hsl(
-    from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15)
-  );
-  --link-external-color-hover: hsl(
-    from #24847c calc(h - 5) calc(s * 1.05) calc(l * 1.29)
-  );
+  --link-external-color: #29998a;
+  --link-external-color-hover: #2cae98;
   --link-external-decoration: underline;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
-  --link-unresolved-color: hsl(
-    from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15)
-  );
+  --link-unresolved-color: #29998a;
   --link-unresolved-decoration-color: #24847c4d;
   --link-unresolved-decoration-style: solid;
   --link-unresolved-filter: none;
@@ -438,9 +453,7 @@ body {
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
   --list-marker-color: #575653;
-  --list-marker-color-collapsed: hsl(
-    from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15)
-  );
+  --list-marker-color-collapsed: #29998a;
   --list-marker-color-hover: #878580;
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
@@ -526,9 +539,7 @@ body {
   --nav-item-children-padding-start: 4px;
   --nav-item-color: #878580;
   --nav-item-color-active: #cecdc3;
-  --nav-item-color-highlighted: hsl(
-    from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15)
-  );
+  --nav-item-color-highlighted: #29998a;
   --nav-item-color-hover: #cecdc3;
   --nav-item-color-selected: #cecdc3;
   --nav-item-padding: 4px 8px 4px 24px;
@@ -554,9 +565,7 @@ body {
   --pill-color: #878580;
   --pill-color-hover: #cecdc3;
   --pill-color-remove: #575653;
-  --pill-color-remove-hover: hsl(
-    from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15)
-  );
+  --pill-color-remove-hover: #29998a;
   --pill-decoration: none;
   --pill-decoration-hover: none;
   --pill-focus-left-adjust: -4px;
@@ -670,9 +679,7 @@ body {
   --tab-text-color-focused: #878580;
   --tab-text-color-focused-active: #878580;
   --tab-text-color-focused-active-current: #cecdc3;
-  --tab-text-color-focused-highlighted: hsl(
-    from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15)
-  );
+  --tab-text-color-focused-highlighted: #29998a;
   --tab-width: 200px;
   --table-add-button-background: transparent;
   --table-add-button-border-color: transparent;
@@ -716,10 +723,8 @@ body {
   --tag-border-color: #24847c26;
   --tag-border-color-hover: #24847c26;
   --tag-border-width: 0px;
-  --tag-color: hsl(from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15));
-  --tag-color-hover: hsl(
-    from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15)
-  );
+  --tag-color: #29998a;
+  --tag-color-hover: #29998a;
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-padding-x: 0.65em;
@@ -728,9 +733,7 @@ body {
   --tag-size: 0.875em;
   --tag-weight: inherit;
   --text-accent: #24847c;
-  --text-accent-hover: hsl(
-    from #24847c calc(h - 5) calc(s * 1.05) calc(l * 1.29)
-  );
+  --text-accent-hover: #2cae98;
   --text-error: #d14d41;
   --text-faint: #575653;
   --text-highlight-bg: #ffd00066;
@@ -772,7 +775,7 @@ body {
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: #000;
-  caret-color: hsl(from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15));
+  caret-color: #29998a;
   color: #cecdc3;
   contain: initial;
   font-family:
@@ -1249,7 +1252,7 @@ a.tag {
   background-color: #24847c33;
   border: 0px solid #24847c26;
   border-radius: 2em;
-  color: hsl(from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15));
+  color: #29998a;
   font-size: 0.875em;
   font-weight: inherit;
   line-height: 1;
@@ -1505,7 +1508,7 @@ svg.svg-icon {
 
 .clickable-icon.is-active {
   background-color: #24847c26;
-  color: hsl(from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15));
+  color: #29998a;
   opacity: 0.65;
 }
 
@@ -1560,7 +1563,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-focused {
-  color: hsl(from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15));
+  color: #29998a;
 }
 
 .graph-view.color-fill-tag {
@@ -1606,7 +1609,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-circle {
-  color: hsl(from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15));
+  color: #29998a;
 }
 
 .graph-view.color-line {
@@ -1645,8 +1648,8 @@ svg.svg-icon {
   --background-modifier-form-field: #282726;
   --background-secondary-alt: #282726;
   --color-accent: #24847c;
-  --color-accent-1: hsl(from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15));
-  --color-accent-2: hsl(from #24847c calc(h - 5) calc(s * 1.05) calc(l * 1.29));
+  --color-accent-1: #29998a;
+  --color-accent-2: #2cae98;
   --color-accent-hsl: 175, 57%, 33%;
   --color-accent-hsl-default: 175, 57%, 33%;
   --color-base-00: #100f0f;
@@ -1685,9 +1688,7 @@ svg.svg-icon {
     inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
     0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
   --interactive-accent: #24847c;
-  --interactive-accent-hover: hsl(
-    from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15)
-  );
+  --interactive-accent-hover: #29998a;
   --interactive-hover: #343331;
   --interactive-normal: #282726;
   --mono-rgb-0: 0, 0, 0;
@@ -1699,7 +1700,7 @@ svg.svg-icon {
     0px 30px 90px #00000033;
   --shadow-s:
     0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
-  --text-accent: hsl(from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15));
+  --text-accent: #29998a;
   --text-selection: #24847c54;
 }
 
@@ -1711,8 +1712,8 @@ svg.svg-icon {
   --background-modifier-cover: #dcdcdc66;
   --background-secondary-alt: #100f0f;
   --color-accent: #24847c;
-  --color-accent-1: hsl(from #24847c calc(h - 3) calc(s * 1.02) calc(l * 1.15));
-  --color-accent-2: hsl(from #24847c calc(h - 5) calc(s * 1.05) calc(l * 1.29));
+  --color-accent-1: #29998a;
+  --color-accent-2: #2cae98;
   --color-accent-hsl: 175, 57%, 33%;
   --color-accent-hsl-default: 175, 57%, 33%;
   --color-base-00: #ffffff;

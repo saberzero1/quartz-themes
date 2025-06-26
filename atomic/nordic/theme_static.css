@@ -932,11 +932,14 @@
 
 :root {
   --accent-color: light-dark(#81a1c1, #81a1c1);
+  --accent-h: light-dark(210, 210);
+  --accent-l: light-dark(63%, 63%);
+  --accent-s: light-dark(34%, 34%);
   --background-secondary-alt: light-dark(#d8dee9, #ffffff);
   --color-accent: light-dark(#81a1c1, #81a1c1);
   --color-accent-1: light-dark(#a0bbd1, #90aec9);
   --color-accent-2: light-dark(#bed2e0, #a0bbd1);
-  --color-accent-hsl: light-dark(210, 34%, 63%, 210, 34%, 63%);
+  --color-accent-hsl: light-dark(#81a1c1, #81a1c1);
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
@@ -1638,9 +1641,10 @@
 }
 
 body {
-  --accent-h: 210;
-  --accent-l: 63%;
-  --accent-s: 34%;
+  --accent-color: light-dark(#81a1c1, #81a1c1);
+  --accent-h: light-dark(210, 210);
+  --accent-l: light-dark(63%, 63%);
+  --accent-s: light-dark(34%, 34%);
   --anim-duration-fast: 140ms;
   --anim-duration-moderate: 300ms;
   --anim-duration-none: 0;
@@ -1665,6 +1669,7 @@ body {
   --background-primary: #ffffff;
   --background-primary-alt: #eceff4;
   --background-secondary: #ffffff;
+  --background-secondary-alt: light-dark(#d8dee9, #ffffff);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -1773,12 +1778,30 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: #4c566a;
   --collapse-icon-color-collapsed: #a0bbd1;
+  --color-accent: light-dark(#81a1c1, #81a1c1);
+  --color-accent-1: light-dark(#a0bbd1, #90aec9);
+  --color-accent-2: light-dark(#bed2e0, #a0bbd1);
+  --color-accent-hsl: light-dark(#81a1c1, #81a1c1);
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
   --color-blue: #6199bf;
   --color-blue-rgb: 97, 153, 191;
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
   --color-green: #a3be8c;
   --color-green-rgb: 163, 190, 140;
   --color-orange: #d08770;
   --color-orange-rgb: 208, 135, 112;
+  --color-pink: light-dark(#fa99cd, #d53984);
   --color-purple: #b48ead;
   --color-purple-rgb: 180, 142, 173;
   --color-red: #bf616a;
@@ -1844,7 +1867,10 @@ body {
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "??", "??", "Avenir", "Arial";
+  --font-mermaid:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-monospace:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1862,7 +1888,10 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "??", "??", "Avenir", "Arial";
+  --font-text:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -1894,48 +1923,49 @@ body {
   --graph-node-tag: #a3be8c;
   --graph-node-unresolved: #4c566a;
   --graph-text: color-mix(in srgb, #81a1c1, #000 45%);
-  --h1-color: inherit;
+  --h1-color: light-dark(#81a1c1, #81a1c1);
   --h1-font: inherit;
   --h1-line-height: 1.2;
   --h1-size: 1.802em;
   --h1-style: normal;
   --h1-variant: normal;
   --h1-weight: 700;
-  --h2-color: inherit;
+  --h2-color: light-dark(#81a1c1, #81a1c1);
   --h2-font: inherit;
   --h2-line-height: 1.2;
   --h2-size: 1.602em;
   --h2-style: normal;
   --h2-variant: normal;
   --h2-weight: 600;
-  --h3-color: inherit;
+  --h3-color: light-dark(#81a1c1, #81a1c1);
   --h3-font: inherit;
   --h3-line-height: 1.3;
   --h3-size: 1.424em;
   --h3-style: normal;
   --h3-variant: normal;
   --h3-weight: 600;
-  --h4-color: inherit;
+  --h4-color: light-dark(#81a1c1, #81a1c1);
   --h4-font: inherit;
   --h4-line-height: 1.4;
   --h4-size: 1.266em;
   --h4-style: normal;
   --h4-variant: normal;
   --h4-weight: 600;
-  --h5-color: inherit;
+  --h5-color: light-dark(#81a1c1, #81a1c1);
   --h5-font: inherit;
   --h5-line-height: 1.5;
   --h5-size: 1.125em;
   --h5-style: normal;
   --h5-variant: normal;
   --h5-weight: 600;
-  --h6-color: inherit;
+  --h6-color: light-dark(#81a1c1, #81a1c1);
   --h6-font: inherit;
   --h6-line-height: 1.5;
   --h6-size: 1em;
   --h6-style: normal;
   --h6-variant: normal;
   --h6-weight: 600;
+  --header-color: light-dark(#81a1c1, #81a1c1);
   --header-height: 40px;
   --heading-formatting: #4c566a;
   --heading-spacing: 0rem;
@@ -1969,11 +1999,14 @@ body {
   --indentation-guide-source-indent: 0.25em;
   --indentation-guide-width: 1px;
   --indentation-guide-width-active: 1px;
-  --inline-title-color: #bf616a;
-  --inline-title-font: "Norwester";
+  --inline-title-color: light-dark(#81a1c1, #81a1c1);
+  --inline-title-font: light-dark("Norwester", "Norwester");
   --inline-title-line-height: 1.2;
   --inline-title-margin-bottom: 0.5em;
-  --inline-title-size: "??", "??", "Avenir", "Arial";
+  --inline-title-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --inline-title-style: normal;
   --inline-title-variant: normal;
   --inline-title-weight: 700;
@@ -2026,7 +2059,7 @@ body {
   --list-indent: 2.25em;
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
-  --list-marker-color: #4c566a;
+  --list-marker-color: light-dark(#81a1c1, #81a1c1);
   --list-marker-color-collapsed: #a0bbd1;
   --list-marker-color-hover: color-mix(in srgb, #81a1c1, #000 20%);
   --list-numbered-style: decimal;
@@ -2123,6 +2156,16 @@ body {
   --nav-item-weight-active: inherit;
   --nav-item-weight-hover: inherit;
   --nav-item-white-space: pre;
+  --nord-color-base-10: light-dark(#3b4252, #eceff4);
+  --nord-color-base-100: light-dark(#eceff4, #2e3440);
+  --nord-color-base-20: light-dark(#3b4252, #eceff4);
+  --nord-color-base-25: light-dark(#434c5e, #e5e9f0);
+  --nord-color-base-30: light-dark(#434c5e, #e5e9f0);
+  --nord-color-base-35: light-dark(#4c566a, #d8dee9);
+  --nord-color-base-40: light-dark(#4c566a, #d8dee9);
+  --nord-color-base-50: light-dark(#d8dee9, #4c566a);
+  --nord-color-base-60: light-dark(#d8dee9, #434c5e);
+  --nord-color-base-70: light-dark(#e5e9f0, #3b4252);
   --p-spacing: 1rem;
   --p-spacing-empty: 0rem;
   --pdf-background: #ffffff;
@@ -2203,6 +2246,16 @@ body {
   --slider-thumb-y: -6px;
   --slider-track-background: transparent;
   --slider-track-height: 3px;
+  --statblock-bar-color: light-dark(#5e81ac, #5e81ac);
+  --statblock-border-color: light-dark(#3b4252, #eceff4);
+  --statblock-font-color: light-dark(#e5e9f0, #e5e9f0);
+  --statblock-image-border-color: light-dark(#e5e9f0, #e5e9f0);
+  --statblock-primary-color: light-dark(#e5e9f0, #81a1c1);
+  --statblock-property-font-color: light-dark(#e5e9f0, #e5e9f0);
+  --statblock-property-name-font-color: light-dark(#5e81ac, #5e81ac);
+  --statblock-rule-color: light-dark(#5e81ac, #5e81ac);
+  --statblock-section-heading-border-color: light-dark(#e5e9f0, #e5e9f0);
+  --statblock-section-heading-font-color: light-dark(#5e81ac, #5e81ac);
   --status-bar-background: #ffffff;
   --status-bar-border-color: #00000026;
   --status-bar-border-width: 1px 0 0 1px;
@@ -2230,7 +2283,7 @@ body {
   --tab-font-size: 14.992px;
   --tab-font-weight: inherit;
   --tab-max-width: 320px;
-  --tab-outline-color: #00000026;
+  --tab-outline-color: light-dark(#81a1c1, #81a1c1);
   --tab-outline-width: 1px;
   --tab-radius: 4px;
   --tab-radius-active: 6px 6px 0 0;
@@ -2252,11 +2305,7 @@ body {
   --tab-text-color-active: color-mix(in srgb, #81a1c1, #000 20%);
   --tab-text-color-focused: color-mix(in srgb, #81a1c1, #000 20%);
   --tab-text-color-focused-active: color-mix(in srgb, #81a1c1, #000 20%);
-  --tab-text-color-focused-active-current: color-mix(
-    in srgb,
-    #81a1c1,
-    #000 45%
-  );
+  --tab-text-color-focused-active-current: light-dark(#81a1c1, #81a1c1);
   --tab-text-color-focused-highlighted: #a0bbd1;
   --tab-width: 200px;
   --table-add-button-background: transparent;
@@ -2280,7 +2329,7 @@ body {
   --table-header-border-color: #00000080;
   --table-header-border-width: 1px;
   --table-header-color: color-mix(in srgb, #81a1c1, #000 45%);
-  --table-header-font: inherit;
+  --table-header-font: light-dark("Norwester", "Norwester");
   --table-header-size: 16px;
   --table-header-weight: 800;
   --table-line-height: 1.3;
@@ -2314,7 +2363,7 @@ body {
   --text-accent-hover: #bed2e0;
   --text-error: #bf616a;
   --text-faint: #4c566a;
-  --text-highlight-bg: #ffd00066;
+  --text-highlight-bg: light-dark(#81a1c1, #81a1c1);
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: #3b4252;
   --text-normal: #2e3440;
@@ -2892,7 +2941,16 @@ body.is-translucent {
 }
 
 .is-flashing {
-  background-color: #81a1c1;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    ),
+    light-dark(
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    )
+  );
   border-radius: 4px;
   color: color-mix(in srgb, #81a1c1, #000 45%);
   mix-blend-mode: darken;
@@ -3090,7 +3148,20 @@ body:not(.is-mobile) .app-container {
 .markdown-source-view {
   --list-marker-space: 0;
   --list-padding-inline-start: 0;
-  font-family: "??", "??", "Avenir", "Arial";
+  font-family:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
 }
 
@@ -3240,7 +3311,20 @@ body:not(.is-mobile) .app-container {
 }
 
 .markdown-source-view.mod-cm6 .cm-scroller {
-  font-family: "??", "??", "Avenir", "Arial";
+  font-family:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   line-height: 1.5;
   scrollbar-gutter: stable;
 }
@@ -3838,7 +3922,20 @@ body:not(.is-mobile) .app-container {
 }
 
 .empty-state-title {
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 600;
   line-height: 1.3;
   margin: 20px 0;
@@ -4369,7 +4466,16 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 }
 
 .inline-title {
-  color: #81a1c1;
+  color: light-dark(
+    light-dark(
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    ),
+    light-dark(
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    )
+  );
   margin-block-end: 0.5em;
   unicode-bidi: plaintext;
   white-space: pre-wrap;
@@ -4377,7 +4483,20 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title:not([data-level]) {
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 700;
@@ -4387,9 +4506,43 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h1 {
   --font-weight: 700;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -4401,9 +4554,43 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h2 {
   --font-weight: 600;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -4415,9 +4602,43 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h3 {
   --font-weight: 600;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -4429,9 +4650,43 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h4 {
   --font-weight: 600;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -4442,9 +4697,43 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h5 {
   --font-weight: 600;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -4455,9 +4744,43 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h6 {
   --font-weight: 600;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -4495,7 +4818,20 @@ body:not(.show-inline-title) .inline-title:not([data-level]) {
 .markdown-preview-view {
   -webkit-user-select: text;
   color: color-mix(in srgb, #81a1c1, #000 45%);
-  font-family: "??", "??", "Avenir", "Arial";
+  font-family:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
   height: 100%;
   line-height: 1.5;
@@ -4555,7 +4891,17 @@ body:not(.show-inline-title) .inline-title:not([data-level]) {
 .workspace-ribbon.mod-left:before {
   -webkit-app-region: drag;
   background-color: #ffffff;
-  border-bottom: 2px solid #81a1c1;
+  border-bottom: 2px solid
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    );
   box-sizing: border-box;
   content: " ";
   height: 40px;
@@ -5776,7 +6122,16 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
 }
 
 .community-item .suggestion-highlight {
-  background-color: #81a1c1;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    ),
+    light-dark(
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    )
+  );
 }
 
 @media (hover: hover) {
@@ -5868,7 +6223,20 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
 }
 
 .community-modal-info-name {
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-weight: 600;
   line-height: 1.3;
   margin-bottom: 24px;
@@ -5945,7 +6313,20 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
 .community-modal-readme {
   -webkit-user-select: text;
   color: color-mix(in srgb, #81a1c1, #000 45%);
-  font-family: "??", "??", "Avenir", "Arial";
+  font-family:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
   line-height: 1.5;
   overflow-wrap: break-word;
@@ -6300,7 +6681,17 @@ body:not(.is-mobile)
   .workspace-sidedock-vault-profile {
   align-items: center;
   background-color: #ffffff;
-  border-top: 2px solid #81a1c1;
+  border-top: 2px solid
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    );
   display: flex;
   flex: 0 0 auto;
   gap: 4px;
@@ -6734,7 +7125,17 @@ body.is-phone .view-header-nav-buttons {
 
 .workspace-tab-header-container {
   background-color: #ffffff;
-  border-bottom: 2px solid #81a1c1;
+  border-bottom: 2px solid
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    );
   display: flex;
   flex: 0 0 auto;
   height: 40px;
@@ -6893,19 +7294,49 @@ body.is-phone .view-header-nav-buttons {
 
 .workspace-tab-header.is-active {
   background-color: #ffffff;
-  box-shadow: 0 0 0 2px #81a1c1;
+  box-shadow: 0 0 0 2px
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    );
   color: color-mix(in srgb, #81a1c1, #000 20%);
 }
 
 .workspace-split.mod-root .workspace-tab-header.is-active::before {
   box-shadow:
-    inset 0 0 0 2px #81a1c1,
+    inset 0 0 0 2px
+      light-dark(
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        ),
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        )
+      ),
     0 0 0 0 #ffffff;
 }
 
 .workspace-split.mod-root .workspace-tab-header.is-active::after {
   box-shadow:
-    inset 0 0 0 2px #81a1c1,
+    inset 0 0 0 2px
+      light-dark(
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        ),
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        )
+      ),
     0 0 0 0 #ffffff;
 }
 
@@ -7451,7 +7882,17 @@ body > .workspace-split {
   background-color: #ffffff;
   border-radius: 0;
   box-shadow:
-    -1px 0 0 0 #81a1c1,
+    -1px 0 0 0
+      light-dark(
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        ),
+        light-dark(
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        )
+      ),
     -8px 0 8px 0 #0000000d;
   padding: 0;
   text-orientation: sideways;
@@ -9896,7 +10337,10 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .modal .modal-nav-action.mod-cta {
-  color: #81a1c1;
+  color: light-dark(
+    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+  );
   font-weight: 600;
   inset-inline-end: 0;
 }
@@ -12118,7 +12562,20 @@ kbd {
 .markdown-source-view.mod-cm6
   .cm-line.HyperMD-codeblock
   .cm-formatting.cm-formatting-list {
-  font-family: "??", "??", "Avenir", "Arial";
+  font-family:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
 }
 
@@ -13708,9 +14165,43 @@ input.metadata-property-key-input:focus {
 
 h1 {
   --font-weight: 700;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -13722,9 +14213,43 @@ h1 {
 
 h2 {
   --font-weight: 600;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -13736,9 +14261,43 @@ h2 {
 
 h3 {
   --font-weight: 600;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -13750,9 +14309,43 @@ h3 {
 
 h4 {
   --font-weight: 600;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -13764,9 +14357,43 @@ h4 {
 
 h5 {
   --font-weight: 600;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -13778,9 +14405,43 @@ h5 {
 
 h6 {
   --font-weight: 600;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -13792,9 +14453,43 @@ h6 {
 
 .markdown-rendered h1 {
   --font-weight: 700;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -13812,9 +14507,43 @@ h1 a {
 
 .markdown-rendered h2 {
   --font-weight: 600;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -13832,9 +14561,43 @@ h2 a {
 
 .markdown-rendered h3 {
   --font-weight: 600;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -13852,9 +14615,43 @@ h3 a {
 
 .markdown-rendered h4 {
   --font-weight: 600;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -13872,9 +14669,43 @@ h4 a {
 
 .markdown-rendered h5 {
   --font-weight: 600;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -13892,9 +14723,43 @@ h5 a {
 
 .markdown-rendered h6 {
   --font-weight: 600;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -13933,9 +14798,43 @@ h6 a {
 
 .HyperMD-header-1 {
   --font-weight: 700;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -13945,9 +14844,43 @@ h6 a {
 
 .HyperMD-list-line .cm-header-1 {
   --font-weight: 700;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -13981,9 +14914,43 @@ h6 a {
 
 .HyperMD-header-2 {
   --font-weight: 600;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -13993,9 +14960,43 @@ h6 a {
 
 .HyperMD-list-line .cm-header-2 {
   --font-weight: 600;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -14029,9 +15030,43 @@ h6 a {
 
 .HyperMD-header-3 {
   --font-weight: 600;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -14041,9 +15076,43 @@ h6 a {
 
 .HyperMD-list-line .cm-header-3 {
   --font-weight: 600;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -14077,9 +15146,43 @@ h6 a {
 
 .HyperMD-header-4 {
   --font-weight: 600;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -14088,9 +15191,43 @@ h6 a {
 
 .HyperMD-list-line .cm-header-4 {
   --font-weight: 600;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -14123,9 +15260,43 @@ h6 a {
 
 .HyperMD-header-5 {
   --font-weight: 600;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -14134,9 +15305,43 @@ h6 a {
 
 .HyperMD-list-line .cm-header-5 {
   --font-weight: 600;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -14169,9 +15374,43 @@ h6 a {
 
 .HyperMD-header-6 {
   --font-weight: 600;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -14181,9 +15420,43 @@ h6 a {
 
 .HyperMD-list-line .cm-header-6 {
   --font-weight: 600;
-  color: light-dark(#81a1c1, #81a1c1);
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
   font-family: "Norwester";
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 600;
@@ -14485,11 +15758,17 @@ ol > li {
 }
 
 ol > li::marker {
-  color: #81a1c1;
+  color: light-dark(
+    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+  );
 }
 
 ul > li::marker {
-  color: #81a1c1;
+  color: light-dark(
+    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+  );
 }
 
 ol > li.is-collapsed::marker {
@@ -14590,7 +15869,10 @@ ul > li.is-collapsed::marker {
 }
 
 .cm-s-obsidian .cm-formatting-list {
-  color: #81a1c1;
+  color: light-dark(
+    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+  );
 }
 
 .cm-s-obsidian .is-collapsed ~ .cm-formatting-list {
@@ -14661,10 +15943,16 @@ ul > li.is-collapsed::marker {
 }
 
 .list-bullet:after {
-  background-color: #81a1c1;
+  background-color: light-dark(
+    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+  );
   border: none;
   border-radius: 50%;
-  color: #81a1c1;
+  color: light-dark(
+    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+  );
   content: "\200B";
   height: 0.3em;
   pointer-events: none;
@@ -15975,7 +17263,16 @@ em {
 }
 
 .markdown-rendered mark {
-  background-color: #81a1c1;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    ),
+    light-dark(
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    )
+  );
   color: color-mix(in srgb, #81a1c1, #000 45%);
 }
 
@@ -15984,12 +17281,30 @@ em {
 }
 
 .cm-s-obsidian span.cm-formatting-highlight {
-  background-color: #81a1c1;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    ),
+    light-dark(
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    )
+  );
   color: color-mix(in srgb, #81a1c1, #000 45%);
 }
 
 .cm-s-obsidian span.cm-highlight {
-  background-color: #81a1c1;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    ),
+    light-dark(
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    )
+  );
   color: color-mix(in srgb, #81a1c1, #000 45%);
 }
 
@@ -16186,8 +17501,42 @@ em {
 }
 
 .bases-header .title {
-  color: light-dark(#81a1c1, #81a1c1);
-  font-size: "??", "??", "Avenir", "Arial";
+  color: light-dark(
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    ),
+    light-dark(
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      ),
+      light-dark(
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      )
+    )
+  );
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
 }
 
 .is-phone .bases-header .query-toolbar-item:not(.mod-views) .text-button-label {
@@ -17553,7 +18902,20 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .file-recovery-text[data-ext="md"] {
-  font-family: "??", "??", "Avenir", "Arial";
+  font-family:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
 }
 
@@ -18513,7 +19875,16 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .search-result-file-matched-text {
-  background-color: #81a1c1;
+  background-color: light-dark(
+    light-dark(
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    ),
+    light-dark(
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    )
+  );
   color: color-mix(in srgb, #81a1c1, #000 45%);
 }
 
@@ -19161,7 +20532,20 @@ body:not(.is-phone)
   --cursor-link: default;
   background-color: #ffffff;
   flex: 1 0 0;
-  font-family: "??", "??", "Avenir", "Arial";
+  font-family:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
   overflow: auto;
   padding: 24px;
@@ -19527,16 +20911,50 @@ body.theme-dark {
 }
 
 .canvas-selection {
-  background-color: #81a1c11a;
-  border: 2px solid #81a1c1;
+  background-color: hsla(
+    light-dark(
+      light-dark(210, 210),
+      light-dark(34%, 34%),
+      light-dark(63%, 63%),
+      light-dark(210, 210),
+      light-dark(34%, 34%),
+      light-dark(63%, 63%)
+    ),
+    0.1
+  );
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    );
   pointer-events: none;
   position: absolute;
   z-index: -1;
 }
 
 .canvas-selection.mod-group-selection {
-  background-color: #81a1c108;
-  border-color: #81a1c14d;
+  background-color: hsla(
+    light-dark(
+      light-dark(210, 210),
+      light-dark(34%, 34%),
+      light-dark(63%, 63%),
+      light-dark(210, 210),
+      light-dark(34%, 34%),
+      light-dark(63%, 63%)
+    ),
+    0.03
+  );
+  border-color: hsla(
+    light-dark(
+      light-dark(210, 210),
+      light-dark(34%, 34%),
+      light-dark(63%, 63%),
+      light-dark(210, 210),
+      light-dark(34%, 34%),
+      light-dark(63%, 63%)
+    ),
+    0.3
+  );
   border-radius: 3px;
   border-width: 3px;
   pointer-events: initial;
@@ -19611,7 +21029,10 @@ body.theme-dark {
 
 @media (hover: hover) {
   .canvas-card-menu .canvas-card-menu-button:hover {
-    color: #81a1c1;
+    color: light-dark(
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    );
   }
 }
 
@@ -19682,7 +21103,10 @@ body.theme-dark {
 }
 
 .canvas-control-item.is-active {
-  color: #81a1c1;
+  color: light-dark(
+    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+  );
 }
 
 .canvas-control-item.is-disabled svg {
@@ -19851,14 +21275,20 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 }
 
 .canvas-node.is-selected .canvas-node-container {
-  border-color: #81a1c1;
+  border-color: light-dark(
+    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+  );
   box-shadow:
     0px 0.5px 1px 0.5px #0000001a,
     0 0 0 2px #81a1c1;
 }
 
 .canvas-node.is-focused .canvas-node-container {
-  border-color: #81a1c1;
+  border-color: light-dark(
+    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+  );
   box-shadow:
     0px 0.5px 1px 0.5px #0000001a,
     0 0 0 2px #81a1c1;
@@ -19914,8 +21344,22 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 }
 
 .canvas-node.is-dummy .canvas-node-container {
-  background-color: #81a1c133;
-  border: 4px solid #81a1c1;
+  background-color: hsla(
+    light-dark(
+      light-dark(210, 210),
+      light-dark(34%, 34%),
+      light-dark(63%, 63%),
+      light-dark(210, 210),
+      light-dark(34%, 34%),
+      light-dark(63%, 63%)
+    ),
+    0.2
+  );
+  border: 4px solid
+    light-dark(
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    );
   box-shadow: 0px 2px 10px #00000026;
 }
 
@@ -20188,7 +21632,11 @@ body.is-mobile .canvas-node-resizer {
   .canvas-node-interaction-layer
   .canvas-node-resizer[data-resize="topright"] {
   background-color: #ffffff;
-  border: 2px solid #81a1c1;
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    );
   border-radius: 3px;
   display: block;
   height: 20px;
@@ -20201,7 +21649,11 @@ body.is-mobile .canvas-node-resizer {
   .canvas-node-interaction-layer
   .canvas-node-resizer[data-resize="bottomright"] {
   background-color: #ffffff;
-  border: 2px solid #81a1c1;
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    );
   border-radius: 3px;
   display: block;
   height: 20px;
@@ -20214,7 +21666,11 @@ body.is-mobile .canvas-node-resizer {
   .canvas-node-interaction-layer
   .canvas-node-resizer[data-resize="topleft"] {
   background-color: #ffffff;
-  border: 2px solid #81a1c1;
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    );
   border-radius: 3px;
   display: block;
   height: 20px;
@@ -20227,7 +21683,11 @@ body.is-mobile .canvas-node-resizer {
   .canvas-node-interaction-layer
   .canvas-node-resizer[data-resize="bottomleft"] {
   background-color: #ffffff;
-  border: 2px solid #81a1c1;
+  border: 2px solid
+    light-dark(
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    );
   border-radius: 3px;
   display: block;
   height: 20px;
@@ -20264,7 +21724,10 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-node-connection-point::after {
-  background-color: #81a1c1;
+  background-color: light-dark(
+    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+  );
   border: 3px solid transparent;
   border-radius: 50%;
   box-sizing: border-box;
@@ -20298,12 +21761,18 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-snaps line {
-  stroke: hsl(210, 34%, 63%);
+  stroke: light-dark(
+    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+  );
   stroke-width: 1px;
 }
 
 .canvas-snaps circle {
-  fill: #81a1c1;
+  fill: light-dark(
+    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+  );
 }
 
 .canvas-edges {
@@ -20536,9 +22005,22 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-placeholder-message {
-  background: #81a1c11a;
+  background: hsla(
+    light-dark(
+      light-dark(210, 210),
+      light-dark(34%, 34%),
+      light-dark(63%, 63%),
+      light-dark(210, 210),
+      light-dark(34%, 34%),
+      light-dark(63%, 63%)
+    ),
+    0.1
+  );
   border-radius: 8px;
-  color: #81a1c1;
+  color: light-dark(
+    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+  );
   font-size: 19.2px;
   line-height: 1.5;
   max-width: 70vw;
@@ -20582,7 +22064,11 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-cursor {
-  border: 5px solid #81a1c1;
+  border: 5px solid
+    light-dark(
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
+      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    );
   border-radius: 5px;
   height: 1px;
   pointer-events: none;
@@ -21675,7 +23161,20 @@ body.is-phone .suggestion-bg {
 }
 
 .mobile-onboarding h1 {
-  font-size: "??", "??", "Avenir", "Arial";
+  font-size:
+    "??",
+    "Avenir",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
 }
 
 .mobile-onboarding .list-heading {
@@ -24144,57 +25643,165 @@ input.mobile-vault-chooser-field-input {
 }
 
 .theme-dark .markdown-source-view:not(.is-live-preview) {
-  --h1-size: "??", "??", "Avenir", "Arial";
-  --h2-size: "??", "??", "Avenir", "Arial";
-  --h3-size: "??", "??", "Avenir", "Arial";
-  --h4-size: "??", "??", "Avenir", "Arial";
-  --h5-size: "??", "??", "Avenir", "Arial";
-  --h6-size: "??", "??", "Avenir", "Arial";
+  --h1-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --h2-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --h3-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --h4-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --h5-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --h6-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
 }
 
 .theme-light .markdown-source-view:not(.is-live-preview) {
-  --h1-size: "??", "??", "Avenir", "Arial";
-  --h2-size: "??", "??", "Avenir", "Arial";
-  --h3-size: "??", "??", "Avenir", "Arial";
-  --h4-size: "??", "??", "Avenir", "Arial";
-  --h5-size: "??", "??", "Avenir", "Arial";
-  --h6-size: "??", "??", "Avenir", "Arial";
+  --h1-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --h2-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --h3-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --h4-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --h5-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --h6-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
 }
 
 .theme-dark.nordic-base .markdown-source-view:not(.is-live-preview) {
-  --h1-size: "??", "??", "Avenir", "Arial";
-  --h2-size: "??", "??", "Avenir", "Arial";
-  --h3-size: "??", "??", "Avenir", "Arial";
-  --h4-size: "??", "??", "Avenir", "Arial";
-  --h5-size: "??", "??", "Avenir", "Arial";
-  --h6-size: "??", "??", "Avenir", "Arial";
+  --h1-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --h2-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --h3-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --h4-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --h5-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --h6-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
 }
 
 .theme-light.nordic-base .markdown-source-view:not(.is-live-preview) {
-  --h1-size: "??", "??", "Avenir", "Arial";
-  --h2-size: "??", "??", "Avenir", "Arial";
-  --h3-size: "??", "??", "Avenir", "Arial";
-  --h4-size: "??", "??", "Avenir", "Arial";
-  --h5-size: "??", "??", "Avenir", "Arial";
-  --h6-size: "??", "??", "Avenir", "Arial";
+  --h1-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --h2-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --h3-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --h4-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --h5-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --h6-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
 }
 
 .is-mobile.theme-dark .markdown-source-view:not(.is-live-preview) {
-  --h1-size: "??", "??", "Avenir", "Arial";
-  --h2-size: "??", "??", "Avenir", "Arial";
-  --h3-size: "??", "??", "Avenir", "Arial";
-  --h4-size: "??", "??", "Avenir", "Arial";
-  --h5-size: "??", "??", "Avenir", "Arial";
-  --h6-size: "??", "??", "Avenir", "Arial";
+  --h1-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --h2-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --h3-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --h4-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --h5-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --h6-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
 }
 
 .is-mobile.theme-light .markdown-source-view:not(.is-live-preview) {
-  --h1-size: "??", "??", "Avenir", "Arial";
-  --h2-size: "??", "??", "Avenir", "Arial";
-  --h3-size: "??", "??", "Avenir", "Arial";
-  --h4-size: "??", "??", "Avenir", "Arial";
-  --h5-size: "??", "??", "Avenir", "Arial";
-  --h6-size: "??", "??", "Avenir", "Arial";
+  --h1-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --h2-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --h3-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --h4-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --h5-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  --h6-size:
+    "??", "Avenir", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
 }
 
 .theme-dark .markdown-rendered {

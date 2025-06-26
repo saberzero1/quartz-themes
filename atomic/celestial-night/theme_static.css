@@ -935,7 +935,7 @@
   --color-accent: light-dark(#ffffff, #ffffff);
   --color-accent-1: light-dark(hsl(38, 102%, 115%), hsl(40, 101%, 107.5%));
   --color-accent-2: light-dark(hsl(36, 105%, 129%), hsl(38, 102%, 115%));
-  --color-accent-hsl: light-dark(41, 100%, 100%, 41, 100%, 100%);
+  --color-accent-hsl: light-dark(#ffffff, #ffffff);
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
@@ -1605,6 +1605,7 @@ body {
   --background-primary: #14141e;
   --background-primary-alt: #1d1f2e;
   --background-secondary: #161721;
+  --background-secondary-alt: light-dark(#0d0d15, #1a242d);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 20px;
   --bases-filter-menu-width: 520px;
@@ -1713,33 +1714,37 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: #4f5971;
   --collapse-icon-color-collapsed: hsl(38, 102%, 115%);
-  --color-base-00: #2a3141;
-  --color-base-05: #252b3a;
-  --color-base-10: #222a38;
-  --color-base-100: #cdd1df;
-  --color-base-20: #262b3b;
-  --color-base-25: #313952;
-  --color-base-30: #1d232f;
-  --color-base-35: #3b445d;
-  --color-base-40: #515b71;
-  --color-base-50: #5f6980;
-  --color-base-60: #080b17;
-  --color-base-70: #8890a6;
-  --color-blue: #56aed6;
+  --color-accent: light-dark(#ffffff, #ffffff);
+  --color-accent-1: light-dark(hsl(38, 102%, 115%), hsl(40, 101%, 107.5%));
+  --color-accent-2: light-dark(hsl(36, 105%, 129%), hsl(38, 102%, 115%));
+  --color-accent-hsl: light-dark(#ffffff, #ffffff);
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
   --color-blue-rgb: 86, 174, 214;
-  --color-cyan: #6fd2c2;
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
   --color-cyan-rgb: 111, 210, 194;
-  --color-green: #a5d18c;
+  --color-green: light-dark(#44cf6e, #08b94e);
   --color-green-rgb: 165, 209, 140;
-  --color-orange: #fbb36c;
+  --color-orange: light-dark(#e9973f, #ec7500);
   --color-orange-rgb: 251, 179, 108;
-  --color-pink: #ff94c8;
+  --color-pink: light-dark(#fa99cd, #d53984);
   --color-pink-rgb: 255, 148, 200;
-  --color-purple: #b584c7;
+  --color-purple: light-dark(#a882ff, #7852ee);
   --color-purple-rgb: 181, 132, 199;
-  --color-red: #e46f7d;
+  --color-red: light-dark(#fb464c, #e93147);
   --color-red-rgb: 228, 111, 125;
-  --color-yellow: #ffde73;
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --color-yellow-rgb: 255, 222, 115;
   --cursor: default;
   --cursor-link: pointer;
@@ -1803,7 +1808,9 @@ body {
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid:
-    "??", "??", "Bookerly", "Source Han Serif", "Noto Serif JP", "Arial";
+    "??", "Bookerly", "Source Han Serif", "Noto Serif JP", ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-monospace:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1825,7 +1832,9 @@ body {
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
   --font-text:
-    "??", "??", "Bookerly", "Source Han Serif", "Noto Serif JP", "Arial";
+    "??", "Bookerly", "Source Han Serif", "Noto Serif JP", ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "Bookerly", "Source Han Serif", "Noto Serif JP";
@@ -1939,8 +1948,10 @@ body {
   --indentation-guide-width-active: 1px;
   --inline-title-color: inherit;
   --inline-title-font:
-    "Hatolie", "??", "??", "Bookerly", "Source Han Serif", "Noto Serif JP",
-    "Arial";
+    "Hatolie", "??", "Bookerly", "Source Han Serif", "Noto Serif JP",
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
   --inline-title-line-height: 1.2;
   --inline-title-margin-bottom: 0.5em;
   --inline-title-size: 4em;
@@ -2937,7 +2948,21 @@ body:not(.is-mobile) .app-container {
   --list-marker-space: 0;
   --list-padding-inline-start: 0;
   font-family:
-    "??", "??", "Bookerly", "Source Han Serif", "Noto Serif JP", "Arial";
+    "??",
+    "Bookerly",
+    "Source Han Serif",
+    "Noto Serif JP",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
 }
 
@@ -3088,7 +3113,21 @@ body:not(.is-mobile) .app-container {
 
 .markdown-source-view.mod-cm6 .cm-scroller {
   font-family:
-    "??", "??", "Bookerly", "Source Han Serif", "Noto Serif JP", "Arial";
+    "??",
+    "Bookerly",
+    "Source Han Serif",
+    "Noto Serif JP",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   line-height: 1.5;
   scrollbar-gutter: stable;
 }
@@ -4230,8 +4269,22 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title:not([data-level]) {
   font-family:
-    "Hatolie", "??", "??", "Bookerly", "Source Han Serif", "Noto Serif JP",
-    "Arial";
+    "Hatolie",
+    "??",
+    "Bookerly",
+    "Source Han Serif",
+    "Noto Serif JP",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 4em;
   font-style: normal;
   font-variant: normal;
@@ -4351,7 +4404,21 @@ body:not(.show-inline-title) .inline-title:not([data-level]) {
   -webkit-user-select: text;
   color: #b1b7cc;
   font-family:
-    "??", "??", "Bookerly", "Source Han Serif", "Noto Serif JP", "Arial";
+    "??",
+    "Bookerly",
+    "Source Han Serif",
+    "Noto Serif JP",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
   height: 100%;
   line-height: 1.5;
@@ -5802,7 +5869,21 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
   -webkit-user-select: text;
   color: #b1b7cc;
   font-family:
-    "??", "??", "Bookerly", "Source Han Serif", "Noto Serif JP", "Arial";
+    "??",
+    "Bookerly",
+    "Source Han Serif",
+    "Noto Serif JP",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
   line-height: 1.5;
   overflow-wrap: break-word;
@@ -11977,7 +12058,21 @@ kbd {
   .cm-line.HyperMD-codeblock
   .cm-formatting.cm-formatting-list {
   font-family:
-    "??", "??", "Bookerly", "Source Han Serif", "Noto Serif JP", "Arial";
+    "??",
+    "Bookerly",
+    "Source Han Serif",
+    "Noto Serif JP",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
 }
 
@@ -17434,7 +17529,21 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .file-recovery-text[data-ext="md"] {
   font-family:
-    "??", "??", "Bookerly", "Source Han Serif", "Noto Serif JP", "Arial";
+    "??",
+    "Bookerly",
+    "Source Han Serif",
+    "Noto Serif JP",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
 }
 
@@ -19043,7 +19152,21 @@ body:not(.is-phone)
   background-color: #14141e;
   flex: 1 0 0;
   font-family:
-    "??", "??", "Bookerly", "Source Han Serif", "Noto Serif JP", "Arial";
+    "??",
+    "Bookerly",
+    "Source Han Serif",
+    "Noto Serif JP",
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 16px;
   overflow: auto;
   padding: 24px;

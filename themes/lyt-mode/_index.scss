@@ -22,34 +22,8 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --color-accent-2: #9c7ccf;
-  --color-accent-hsl: 263, 46%, 61%;
-  --color-base-100: #b9c3df;
-  --color-base-30: #343a4b;
-  --color-base-35: #525766;
-  --color-base-40: #7c849c;
-  --color-blue: #027aff;
-  --color-cyan: #53dfdd;
-  --color-green: #44cf6e;
-  --color-orange: #e9973f;
-  --color-pink: #fa99cd;
-  --color-purple: #a882ff;
-  --color-red: #fb464c;
   --text-accent: #8660c4;
   --text-highlight-bg: #fffc3b14;
-  --color-accent-2: #9c7ccf;
-  --color-accent-hsl: 263, 46%, 61%;
-  --color-base-100: #b9c3df;
-  --color-base-30: #343a4b;
-  --color-base-35: #525766;
-  --color-base-40: #7c849c;
-  --color-blue: #027aff;
-  --color-cyan: #53dfdd;
-  --color-green: #44cf6e;
-  --color-orange: #e9973f;
-  --color-pink: #fa99cd;
-  --color-purple: #a882ff;
-  --color-red: #fb464c;
   --text-accent: #8660c4;
   --text-highlight-bg: #fffc3b14;
 }
@@ -173,7 +147,7 @@ html[saved-theme="dark"] {
 
 :root {
   --color-accent-2: light-dark(#9c7ccf, #a78fd7);
-  --color-accent-hsl: light-dark(263, 46%, 61%, 263, 46%, 61%);
+  --color-accent-hsl: light-dark(#916ec9, #916ec9);
   --color-base-100: light-dark(#b9c3df, #222222);
   --color-base-30: light-dark(#343a4b, #e0e0e0);
   --color-base-35: light-dark(#525766, #d4d4d4);
@@ -214,14 +188,29 @@ body {
   --code-value: #a882ff;
   --collapse-icon-color: #7c849c;
   --collapse-icon-color-collapsed: #b9c3df;
+  --color-accent-2: light-dark(#9c7ccf, #a78fd7);
+  --color-accent-hsl: light-dark(#916ec9, #916ec9);
+  --color-base-100: light-dark(#b9c3df, #222222);
+  --color-base-30: light-dark(#343a4b, #e0e0e0);
+  --color-base-35: light-dark(#525766, #d4d4d4);
+  --color-base-40: light-dark(#7c849c, #bdbdbd);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
   --font-text:
-    "??", "??", "DM Sans", "Inter", -apple-system BlinkMacSystemFont,
-    "Segoe UI", "Ubuntu", Helvetica, Arial, sans-serif, "Arial";
+    "??", "DM Sans", "Inter", -apple-system BlinkMacSystemFont, "Segoe UI",
+    "Ubuntu", Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --graph-line: #525766;
   --graph-node-tag: #44cf6e;
   --graph-node-unresolved: #7c849c;
@@ -305,54 +294,6 @@ body {
   user-select: none;
   width: 100%;
 }
-/* START DARK */
-:root,
-html {
-  color-scheme: dark;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
-  --color-accent-2: #9c7ccf;
-  --color-accent-hsl: 263, 46%, 61%;
-  --color-base-100: #b9c3df;
-  --color-base-30: #343a4b;
-  --color-base-35: #525766;
-  --color-base-40: #7c849c;
-  --color-blue: #027aff;
-  --color-cyan: #53dfdd;
-  --color-green: #44cf6e;
-  --color-orange: #e9973f;
-  --color-pink: #fa99cd;
-  --color-purple: #a882ff;
-  --color-red: #fb464c;
-  --text-accent: #8660c4;
-  --text-highlight-bg: #fffc3b14;
-  --color-accent-2: #9c7ccf;
-  --color-accent-hsl: 263, 46%, 61%;
-  --color-base-100: #b9c3df;
-  --color-base-30: #343a4b;
-  --color-base-35: #525766;
-  --color-base-40: #7c849c;
-  --color-blue: #027aff;
-  --color-cyan: #53dfdd;
-  --color-green: #44cf6e;
-  --color-orange: #e9973f;
-  --color-pink: #fa99cd;
-  --color-purple: #a882ff;
-  --color-red: #fb464c;
-  --text-accent: #8660c4;
-  --text-highlight-bg: #fffc3b14;
-}
-/* END DARK */
 /* CALLOUTS */
 :root,
 html {

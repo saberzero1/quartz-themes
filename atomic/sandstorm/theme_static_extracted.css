@@ -4,7 +4,7 @@
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
   --color-accent-1: light-dark(#a68af9, #9873f7);
   --color-accent-2: light-dark(#c5b6fc, #a68af9);
-  --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
+  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
@@ -78,25 +78,26 @@ body {
   --background-primary: #000;
   --background-primary-alt: #111;
   --background-secondary: #1e1e1e;
-  --bases-embed-border: 1px solid transparent;
+  --background-secondary-alt: light-dark(#212121, #212121);
+  --bases-embed-border: 1px solid #212121;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
   --bases-header-border-width: 0 0 1px 0;
   --bases-header-height: 40px;
   --bases-header-padding-end: 2px;
   --bases-header-padding-start: 2px;
-  --bases-table-border-color: transparent;
+  --bases-table-border-color: #212121;
   --bases-table-cell-background-active: #000;
   --bases-table-cell-background-disabled: #00000080;
   --bases-table-cell-radius-active: 2px;
-  --bases-table-cell-shadow-active: 0 0 0 2px #782a1d;
+  --bases-table-cell-shadow-active: 0 0 0 2px #a27f47;
   --bases-table-column-border-width: 1px;
   --bases-table-column-max-width: 300;
   --bases-table-column-min-width: 40;
   --bases-table-container-border-radius: 4px;
   --bases-table-container-border-width: 1px;
   --bases-table-header-background: #000;
-  --bases-table-header-background-hover: #ffffff26;
+  --bases-table-header-background-hover: #ffffff13;
   --bases-table-header-color: #a27f47;
   --bases-table-header-icon-display: flex;
   --bases-table-header-sort-mask: linear-gradient(
@@ -111,7 +112,7 @@ body {
   --bases-table-text-size: 0.875em;
   --bases-table-white-space: nowrap;
   --blockquote-background-color: transparent;
-  --blockquote-border-color: #782a1d;
+  --blockquote-border-color: #a27f47;
   --blockquote-border-thickness: 2px;
   --blockquote-color: inherit;
   --blockquote-font-style: normal;
@@ -158,8 +159,8 @@ body {
   --caret-color: #ebca97;
   --checkbox-border-color: #782a1d;
   --checkbox-border-color-hover: #a27f47;
-  --checkbox-color: #782a1d;
-  --checkbox-color-hover: #a27f47;
+  --checkbox-color: #a27f47;
+  --checkbox-color-hover: #ebca97;
   --checkbox-margin-inline-start: 0.85em;
   --checkbox-marker-color: #000;
   --checkbox-radius: 4px;
@@ -168,7 +169,7 @@ body {
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: 4px;
   --code-background: #111;
-  --code-border-color: transparent;
+  --code-border-color: #212121;
   --code-border-width: 0px;
   --code-comment: #782a1d;
   --code-function: #e0de71;
@@ -185,51 +186,74 @@ body {
   --code-value: #a882ff;
   --code-white-space: pre-wrap;
   --collapse-icon-color: #782a1d;
-  --collapse-icon-color-collapsed: #a27f47;
+  --collapse-icon-color-collapsed: #8a5cf5;
+  --color-accent: light-dark(#8a5cf5, #8a5cf5);
+  --color-accent-1: light-dark(#a68af9, #9873f7);
+  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
   --dialog-max-width: 80vw;
   --dialog-width: 560px;
   --direction: 1;
-  --divider-color: transparent;
-  --divider-color-hover: #782a1d;
+  --divider-color: #212121;
+  --divider-color-hover: #a27f47;
   --divider-vertical-height: calc(100% - 40px);
   --divider-width: 1px;
   --divider-width-hover: 3px;
   --drag-ghost-background: #000000d9;
   --drag-ghost-text-color: #fff;
-  --dropdown-background: #ffffff26;
+  --dropdown-background: #000;
   --dropdown-background-blend-mode: hard-light;
-  --dropdown-background-hover: #3f3f3f;
+  --dropdown-background-hover: #111;
   --dropdown-background-position: right 0.5em top 50%, 0 0;
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
   --embed-background: inherit;
-  --embed-block-shadow-hover:
-    0 0 0 1px transparent, inset 0 0 0 1px transparent;
+  --embed-block-shadow-hover: 0 0 0 1px #212121, inset 0 0 0 1px #212121;
   --embed-border-bottom: none;
   --embed-border-end: none;
-  --embed-border-left: 2px solid #782a1d;
+  --embed-border-left: 2px solid #a27f47;
   --embed-border-right: none;
-  --embed-border-start: 2px solid #782a1d;
+  --embed-border-start: 2px solid #a27f47;
   --embed-border-top: none;
   --embed-canvas-max-height: 400px;
   --embed-font-style: inherit;
   --embed-max-height: 4000px;
   --embed-padding: 0 0 0 24px;
   --file-folding-offset: 24px;
-  --file-header-border: 0.5pt solid transparent;
+  --file-header-border: 1px solid transparent;
   --file-header-font:
     "??", "??", "Source Code Pro", ui-monospace, ui-sans-serif, -apple-system,
     BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
-  --file-header-font-size: 14.992px;
+  --file-header-font-size: 13px;
   --file-header-font-weight: 400;
   --file-header-justify: center;
   --file-line-width: 700px;
   --file-margins: 32px;
-  --flair-background: #ffffff26;
+  --flair-background: #000;
   --flair-color: #ebca97;
   --font-black: 900;
   --font-bold: 700;
@@ -247,7 +271,11 @@ body {
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "??", "??", "??", "Arial";
+  --font-mermaid:
+    "??", "??", "??", "??", "Source Code Pro", ui-monospace, ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Microsoft YaHei Light", sans-serif;
   --font-monospace:
     "??", "??", ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Code",
     "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
@@ -265,7 +293,11 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "??", "??", "??", "Arial";
+  --font-text:
+    "??", "??", "??", "??", "Source Code Pro", ui-monospace, ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Microsoft YaHei Light", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -275,7 +307,7 @@ body {
   --font-ui-small: 13px;
   --font-ui-smaller: 12px;
   --font-weight: 400;
-  --footnote-divider-color: transparent;
+  --footnote-divider-color: #212121;
   --footnote-divider-color-active: transparent;
   --footnote-divider-width: 1px;
   --footnote-gap: 4px;
@@ -283,7 +315,7 @@ body {
   --footnote-id-color-no-occurrences: #782a1d;
   --footnote-id-delimiter: ".";
   --footnote-input-background: transparent;
-  --footnote-input-background-active: transparent;
+  --footnote-input-background-active: #ffffff13;
   --footnote-line-height: 1.5;
   --footnote-padding-block: 6px;
   --footnote-padding-inline: 6px;
@@ -293,7 +325,7 @@ body {
   --graph-line: #3f3f3f;
   --graph-node: #a27f47;
   --graph-node-attachment: #e0de71;
-  --graph-node-focused: #a27f47;
+  --graph-node-focused: #8a5cf5;
   --graph-node-tag: #44cf6e;
   --graph-node-unresolved: #782a1d;
   --graph-text: #ebca97;
@@ -341,11 +373,11 @@ body {
   --h6-weight: 600;
   --header-height: 40px;
   --heading-formatting: #782a1d;
-  --heading-spacing: 0rem;
-  --hr-color: transparent;
+  --heading-spacing: 2.5rem;
+  --hr-color: light-dark(#782a1d, #b53f2a);
   --hr-thickness: 2px;
   --icon-color: #a27f47;
-  --icon-color-active: #a27f47;
+  --icon-color-active: #8a5cf5;
   --icon-color-focused: #ebca97;
   --icon-color-hover: #a27f47;
   --icon-l: 18px;
@@ -357,7 +389,7 @@ body {
   --icon-opacity-hover: 1;
   --icon-s: 16px;
   --icon-s-stroke-width: 2px;
-  --icon-size: 20px;
+  --icon-size: 18px;
   --icon-stroke: 1.75px;
   --icon-xl: 32px;
   --icon-xl-stroke-width: 1.25px;
@@ -405,17 +437,17 @@ body {
   --layer-tooltip: 70;
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;
-  --link-color: #a27f47;
+  --link-color: #8a5cf5;
   --link-color-hover: #ebca97;
   --link-decoration: underline;
   --link-decoration-hover: underline;
   --link-decoration-thickness: auto;
-  --link-external-color: #a27f47;
+  --link-external-color: #8a5cf5;
   --link-external-color-hover: #ebca97;
   --link-external-decoration: underline;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
-  --link-unresolved-color: #a27f47;
+  --link-unresolved-color: #8a5cf5;
   --link-unresolved-decoration-color: #8a5cf54d;
   --link-unresolved-decoration-style: solid;
   --link-unresolved-filter: none;
@@ -430,7 +462,7 @@ body {
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
   --list-marker-color: #782a1d;
-  --list-marker-color-collapsed: #a27f47;
+  --list-marker-color-collapsed: #8a5cf5;
   --list-marker-color-hover: #a27f47;
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
@@ -443,18 +475,18 @@ body {
   --menu-shadow:
     0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
   --metadata-background: transparent;
-  --metadata-border-color: transparent;
+  --metadata-border-color: #212121;
   --metadata-border-radius: 0;
   --metadata-border-width: 0;
   --metadata-display-editing: block;
   --metadata-display-reading: block;
-  --metadata-divider-color: transparent;
+  --metadata-divider-color: #212121;
   --metadata-divider-color-focus: transparent;
   --metadata-divider-color-hover: transparent;
   --metadata-divider-width: 0;
   --metadata-gap: 3px;
   --metadata-input-background: transparent;
-  --metadata-input-background-active: #ffffff26;
+  --metadata-input-background-active: #ffffff13;
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
     "??", "??", "Source Code Pro", ui-monospace, ui-sans-serif, -apple-system,
@@ -465,7 +497,7 @@ body {
   --metadata-input-longtext-lines: 3;
   --metadata-input-text-color: #ebca97;
   --metadata-label-background: transparent;
-  --metadata-label-background-active: #ffffff26;
+  --metadata-label-background-active: #ffffff13;
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
     "??", "??", "Source Code Pro", ui-monospace, ui-sans-serif, -apple-system,
@@ -479,7 +511,7 @@ body {
   --metadata-max-width: none;
   --metadata-padding: 8px 0;
   --metadata-property-background: transparent;
-  --metadata-property-background-active: #ffffff26;
+  --metadata-property-background-active: #ffffff13;
   --metadata-property-background-hover: transparent;
   --metadata-property-box-shadow-focus: 0 0 0 2px #555555;
   --metadata-property-box-shadow-hover: 0 0 0 1px #3f3f3f;
@@ -487,11 +519,11 @@ body {
   --metadata-property-radius: 6px;
   --metadata-property-radius-focus: 6px;
   --metadata-property-radius-hover: 6px;
-  --metadata-sidebar-input-font-size: 14.992px;
-  --metadata-sidebar-label-font-size: 14.992px;
+  --metadata-sidebar-input-font-size: 13px;
+  --metadata-sidebar-label-font-size: 13px;
   --modal-background: #000;
   --modal-border-color: #555555;
-  --modal-border-width: 0.5pt;
+  --modal-border-width: 1px;
   --modal-community-sidebar-width: 280px;
   --modal-height: 85vh;
   --modal-max-height: 1000px;
@@ -509,8 +541,8 @@ body {
   --nav-heading-weight-hover: 500;
   --nav-indentation-guide-color: #ffffff1f;
   --nav-indentation-guide-width: 1px;
-  --nav-item-background-active: #ffffff26;
-  --nav-item-background-hover: #ffffff26;
+  --nav-item-background-active: #ffffff13;
+  --nav-item-background-hover: #ffffff13;
   --nav-item-background-selected: #8a5cf526;
   --nav-item-children-margin-left: 12px;
   --nav-item-children-margin-start: 12px;
@@ -522,8 +554,8 @@ body {
   --nav-item-color-hover: #ebca97;
   --nav-item-color-selected: #ebca97;
   --nav-item-padding: 4px 8px 4px 24px;
-  --nav-item-parent-padding: 6px 8px 6px 24px;
-  --nav-item-size: 14.992px;
+  --nav-item-parent-padding: 4px 8px 4px 24px;
+  --nav-item-size: 13px;
   --nav-item-weight: inherit;
   --nav-item-weight-active: inherit;
   --nav-item-weight-hover: inherit;
@@ -538,13 +570,13 @@ body {
   --pdf-thumbnail-shadow: 0 0 0 1px #00000026, 0 2px 8px #00000033;
   --pill-background: transparent;
   --pill-background-hover: transparent;
-  --pill-border-color: transparent;
+  --pill-border-color: #212121;
   --pill-border-color-hover: #3f3f3f;
-  --pill-border-width: 0.5pt;
+  --pill-border-width: 1px;
   --pill-color: #a27f47;
   --pill-color-hover: #ebca97;
   --pill-color-remove: #782a1d;
-  --pill-color-remove-hover: #a27f47;
+  --pill-color-remove-hover: #8a5cf5;
   --pill-decoration: none;
   --pill-decoration-hover: none;
   --pill-focus-left-adjust: -4px;
@@ -560,7 +592,7 @@ body {
   --popover-pdf-width: 600px;
   --popover-width: 450px;
   --prompt-border-color: #555555;
-  --prompt-border-width: 0.5pt;
+  --prompt-border-width: 1px;
   --prompt-input-height: 40px;
   --prompt-max-height: 70vh;
   --prompt-max-width: 80vw;
@@ -606,15 +638,15 @@ body {
   --slider-thumb-radius: 50%;
   --slider-thumb-width: 18px;
   --slider-thumb-y: -6px;
-  --slider-track-background: transparent;
+  --slider-track-background: #212121;
   --slider-track-height: 3px;
   --status-bar-background: #1e1e1e;
-  --status-bar-border-color: #00000026;
+  --status-bar-border-color: #212121;
   --status-bar-border-width: 1px 0 0 1px;
-  --status-bar-font-size: 12.8px;
+  --status-bar-font-size: 12px;
   --status-bar-position: fixed;
   --status-bar-radius: 8px 0 0 0;
-  --status-bar-scroll-padding: 30.8px;
+  --status-bar-scroll-padding: 30px;
   --status-bar-text-color: #a27f47;
   --swatch-height: 24px;
   --swatch-radius: 14px;
@@ -633,14 +665,14 @@ body {
   --tab-container-background: #1e1e1e;
   --tab-curve: 6px;
   --tab-divider-color: #3f3f3f;
-  --tab-font-size: 14.992px;
+  --tab-font-size: 13px;
   --tab-font-weight: inherit;
   --tab-max-width: 320px;
-  --tab-outline-color: #00000026;
+  --tab-outline-color: #212121;
   --tab-outline-width: 1px;
   --tab-radius: 4px;
   --tab-radius-active: 6px 6px 0 0;
-  --tab-stacked-font-size: 14.992px;
+  --tab-stacked-font-size: 13px;
   --tab-stacked-font-weight: 400;
   --tab-stacked-header-width: 40px;
   --tab-stacked-pane-width: 700px;
@@ -659,13 +691,13 @@ body {
   --tab-text-color-focused: #a27f47;
   --tab-text-color-focused-active: #a27f47;
   --tab-text-color-focused-active-current: #ebca97;
-  --tab-text-color-focused-highlighted: #a27f47;
+  --tab-text-color-focused-highlighted: #8a5cf5;
   --tab-width: 200px;
   --table-add-button-background: transparent;
-  --table-add-button-border-color: transparent;
+  --table-add-button-border-color: #212121;
   --table-add-button-border-width: 1px;
   --table-background: transparent;
-  --table-border-color: transparent;
+  --table-border-color: #212121;
   --table-border-width: 1px;
   --table-cell-vertical-alignment: top;
   --table-column-alt-background: transparent;
@@ -674,12 +706,12 @@ body {
   --table-column-max-width: none;
   --table-column-min-width: 6ch;
   --table-drag-handle-background: transparent;
-  --table-drag-handle-background-active: #782a1d;
+  --table-drag-handle-background-active: #a27f47;
   --table-drag-handle-color: #782a1d;
   --table-drag-handle-color-active: #ffffff;
   --table-header-background: transparent;
   --table-header-background-hover: inherit;
-  --table-header-border-color: transparent;
+  --table-header-border-color: #212121;
   --table-header-border-width: 1px;
   --table-header-color: #ebca97;
   --table-header-font: inherit;
@@ -692,7 +724,7 @@ body {
   --table-row-last-border-width: 1px;
   --table-selection: #8a5cf51a;
   --table-selection-blend-mode: darken;
-  --table-selection-border-color: #782a1d;
+  --table-selection-border-color: #a27f47;
   --table-selection-border-radius: 4px;
   --table-selection-border-width: 2px;
   --table-text-color: inherit;
@@ -703,8 +735,8 @@ body {
   --tag-border-color: #8a5cf526;
   --tag-border-color-hover: #8a5cf526;
   --tag-border-width: 0px;
-  --tag-color: #a27f47;
-  --tag-color-hover: #a27f47;
+  --tag-color: #8a5cf5;
+  --tag-color-hover: #8a5cf5;
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-padding-x: 0.65em;
@@ -727,7 +759,7 @@ body {
   --text-warning: #e9973f;
   --titlebar-background: #1e1e1e;
   --titlebar-background-focused: #212121;
-  --titlebar-border-color: transparent;
+  --titlebar-border-color: #212121;
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;
   --titlebar-text-color: #a27f47;
@@ -745,20 +777,20 @@ body {
   --toggle-thumb-width: 18px;
   --toggle-width: 40px;
   --vault-name-color: #ebca97;
-  --vault-name-font-size: 14.992px;
+  --vault-name-font-size: 13px;
   --vault-name-font-weight: 500;
   --vault-profile-actions-display: flex;
   --vault-profile-color: #ebca97;
   --vault-profile-color-hover: #ebca97;
   --vault-profile-display: flex;
-  --vault-profile-font-size: 14.992px;
+  --vault-profile-font-size: 13px;
   --vault-profile-font-weight: 500;
   --workspace-background-translucent: #00000099;
   --zoom-factor: 1;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: #000;
-  caret-color: #a27f47;
+  caret-color: #8a5cf5;
   color: #ebca97;
   contain: initial;
   font-family:
@@ -777,7 +809,7 @@ body {
     "Segoe UI Symbol",
     "Microsoft YaHei Light",
     sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   height: 100%;
   line-height: 1.3;
   margin: 0;
@@ -830,8 +862,8 @@ h1 {
   font-weight: 700;
   letter-spacing: -0.015em;
   line-height: 1.2;
-  margin-block-end: 0rem;
-  margin-block-start: 0rem;
+  margin-block-end: 1rem;
+  margin-block-start: 1rem;
 }
 
 h2 {
@@ -844,8 +876,8 @@ h2 {
   font-weight: 600;
   letter-spacing: -0.015em;
   line-height: 1.2;
-  margin-block-end: 0rem;
-  margin-block-start: 0rem;
+  margin-block-end: 1rem;
+  margin-block-start: 1rem;
 }
 
 h3 {
@@ -858,8 +890,8 @@ h3 {
   font-weight: 600;
   letter-spacing: -0.015em;
   line-height: 1.3;
-  margin-block-end: 0rem;
-  margin-block-start: 0rem;
+  margin-block-end: 1rem;
+  margin-block-start: 1rem;
 }
 
 h4 {
@@ -872,8 +904,8 @@ h4 {
   font-weight: 600;
   letter-spacing: 0.015em;
   line-height: 1.4;
-  margin-block-end: 0rem;
-  margin-block-start: 0rem;
+  margin-block-end: 1rem;
+  margin-block-start: 1rem;
 }
 
 h5 {
@@ -886,8 +918,8 @@ h5 {
   font-weight: 600;
   letter-spacing: 0.015em;
   line-height: 1.5;
-  margin-block-end: 0rem;
-  margin-block-start: 0rem;
+  margin-block-end: 1rem;
+  margin-block-start: 1rem;
 }
 
 h6 {
@@ -900,13 +932,13 @@ h6 {
   font-weight: 600;
   letter-spacing: 0.015em;
   line-height: 1.5;
-  margin-block-end: 0rem;
-  margin-block-start: 0rem;
+  margin-block-end: 1rem;
+  margin-block-start: 1rem;
 }
 
 .markdown-rendered pre {
   background-color: #111;
-  border: 0px solid transparent;
+  border: 0px solid #212121;
   border-radius: 4px;
   min-height: 38px;
   overflow-x: auto;
@@ -918,14 +950,14 @@ h6 {
 .markdown-rendered code {
   -webkit-box-decoration-break: clone;
   background-color: #111;
-  border: 0px solid transparent;
+  border: 0px solid #212121;
   border-radius: 4px;
   color: #a27f47;
   font-family:
     "??", "??", ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Code",
     "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
     "Consolas", "Source Code Pro", monospace;
-  font-size: 1em;
+  font-size: 0.875em;
   padding: 0.1em 0.25em;
 }
 
@@ -955,7 +987,7 @@ h6 {
     "Segoe UI Symbol",
     "Microsoft YaHei Light",
     sans-serif;
-  font-size: 12.8px;
+  font-size: 12px;
   height: auto;
   inset-inline-end: 0;
   margin: 6px;
@@ -966,7 +998,7 @@ h6 {
 }
 
 .markdown-rendered button.copy-code-button:hover {
-  background-color: #ffffff26;
+  background-color: #ffffff13;
 }
 
 .callout {
@@ -978,9 +1010,9 @@ h6 {
   border-style: solid;
   border-width: 0px;
   margin: 1em 0;
-  mix-blend-mode: normal;
+  mix-blend-mode: darken;
   overflow: hidden;
-  padding: 12px 24px 12px 12px;
+  padding: 12px 12px 12px 24px;
 }
 
 .callout-title {
@@ -1178,7 +1210,7 @@ h6 {
   color: #ebca97;
   cursor: text;
   flex-grow: 1;
-  font-size: 14.992px;
+  font-size: 0.875em;
   max-height: 300px;
   overflow-y: auto;
   padding: 4px 8px;
@@ -1189,7 +1221,7 @@ h6 {
 
 .popover {
   background-color: #000;
-  border: 1px solid transparent;
+  border: 1px solid #212121;
   border-radius: 8px;
   box-shadow:
     0px 1px 2px #0000001f,
@@ -1204,7 +1236,7 @@ h6 {
 
 .prompt {
   background-color: #000;
-  border: 0.5pt solid #555555;
+  border: 1px solid #555555;
   border-radius: 12px;
   box-shadow:
     0px 1.8px 7.3px #00000012,
@@ -1226,15 +1258,15 @@ input.prompt-input {
   border: none;
   border-bottom: 1px solid #1e1e1e;
   border-radius: 0;
-  font-size: 16px;
-  height: 48px;
+  font-size: 15px;
+  height: 40px;
   padding: 24px;
   padding-inline-end: 48px;
   width: 100%;
 }
 
 .suggestion-item.is-selected {
-  background-color: #ffffff26;
+  background-color: #ffffff13;
 }
 
 .suggestion-highlight {
@@ -1247,10 +1279,10 @@ input.prompt-input {
 }
 
 a.tag {
-  background-color: #8a5cf533;
+  background-color: #782b1d52;
   border: 0px solid #8a5cf526;
   border-radius: 2em;
-  color: #a27f47;
+  color: #8a5cf5;
   font-size: 0.875em;
   font-weight: inherit;
   line-height: 1;
@@ -1260,13 +1292,13 @@ a.tag {
 
 input[type="search"] {
   -webkit-app-region: no-drag;
-  background: transparent;
-  border: 1px solid transparent;
+  background: #000;
+  border: 1px solid #212121;
   border-radius: 5px;
   color: #ebca97;
   font-family: inherit;
-  font-size: 14.992px;
-  height: 40px;
+  font-size: 13px;
+  height: 30px;
   outline: none;
   padding: 4px 8px;
 }
@@ -1282,7 +1314,7 @@ input[type="search"] {
 
 .nav-file-tag {
   align-self: center;
-  background-color: #ffffff26;
+  background-color: #ffffff13;
   border-radius: 4px;
   font-size: 9px;
   font-weight: 600;
@@ -1296,46 +1328,46 @@ input[type="search"] {
 
 .nav-file-icon {
   align-items: center;
-  color: #782a1d;
+  color: #a27f47;
   display: inline-flex;
   margin-inline-end: 6px;
   margin-right: 6px;
-  opacity: 1;
+  opacity: 0.85;
   position: relative;
 }
 
 .nav-folder-title {
   border-radius: 4px;
-  color: #ebca97;
-  cursor: pointer;
+  color: #a27f47;
+  cursor: default;
   display: flex;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: inherit;
   line-height: 1.3;
   margin-bottom: 2px;
-  padding: 6px 8px 6px 24px;
+  padding: 4px 8px 4px 24px;
 }
 
 .nav-file-title {
   border-radius: 4px;
-  color: #ebca97;
-  cursor: pointer;
+  color: #a27f47;
+  cursor: default;
   display: flex;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: inherit;
   line-height: 1.3;
   margin-bottom: 2px;
-  padding: 6px 8px 6px 24px;
+  padding: 4px 8px 4px 24px;
 }
 
 .nav-file-title.is-active {
-  background-color: #ffffff26;
+  background-color: #ffffff13;
   color: #ebca97;
   font-weight: inherit;
 }
 
 .nav-folder-title.is-active {
-  background-color: #ffffff26;
+  background-color: #ffffff13;
   color: #ebca97;
   font-weight: inherit;
 }
@@ -1353,13 +1385,13 @@ input[type="search"] {
 .tree-item-self {
   align-items: baseline;
   border-radius: 4px;
-  color: #ebca97;
+  color: #a27f47;
   display: flex;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: inherit;
   line-height: 1.3;
   margin-bottom: 2px;
-  padding: 6px 8px 6px 24px;
+  padding: 4px 8px 4px 24px;
   position: relative;
 }
 
@@ -1368,11 +1400,11 @@ input[type="search"] {
 }
 
 .tree-item-self.mod-collapsible {
-  padding: 6px 8px 6px 24px;
+  padding: 4px 8px 4px 24px;
 }
 
 .tree-item-self.is-clickable {
-  cursor: pointer;
+  cursor: default;
 }
 
 .is-mobile .tree-item-self.is-clickable {
@@ -1382,13 +1414,13 @@ input[type="search"] {
 }
 
 .tree-item-self.is-clickable.mobile-tap {
-  background-color: #ffffff26;
+  background-color: #ffffff13;
   color: #ebca97;
   font-weight: inherit;
 }
 
 .tree-item-self.is-active {
-  background-color: #ffffff26;
+  background-color: #ffffff13;
   color: #ebca97;
   font-weight: inherit;
 }
@@ -1399,19 +1431,19 @@ input[type="search"] {
 }
 
 .tree-item-self.is-being-dragged {
-  background-color: #782a1d;
+  background-color: #a27f47;
   color: #ffffff;
 }
 
 .tree-item-self .tree-item-icon {
   align-items: center;
-  color: #782a1d;
+  color: #a27f47;
   display: flex;
   flex: 0 0 auto;
   justify-content: center;
   margin-inline-start: -20px;
   margin-left: -20px;
-  opacity: 1;
+  opacity: 0.85;
   position: absolute;
   width: 16px;
 }
@@ -1438,7 +1470,7 @@ input[type="search"] {
 .tree-item-flair {
   border-radius: 4px;
   color: #782a1d;
-  font-size: 12.8px;
+  font-size: 12px;
   line-height: 1;
 }
 
@@ -1476,14 +1508,14 @@ kbd {
     "??", "??", ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Code",
     "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
     "Consolas", "Source Code Pro", monospace;
-  font-size: 1em;
+  font-size: 0.875em;
   padding: 0.1em 0.25em;
 }
 
 svg.svg-icon {
-  height: 24px;
-  stroke-width: 1.8px;
-  width: 24px;
+  height: 18px;
+  stroke-width: 1.75px;
+  width: 18px;
 }
 
 .clickable-icon.mod-warning {
@@ -1491,7 +1523,7 @@ svg.svg-icon {
 }
 
 .clickable-icon.mod-filled svg {
-  fill: #782a1d;
+  fill: #a27f47;
 }
 
 .setting-item-control .clickable-icon {
@@ -1505,7 +1537,7 @@ svg.svg-icon {
 }
 
 .clickable-icon.mobile-tap {
-  opacity: 0.65;
+  opacity: 1;
 }
 
 .is-mobile .clickable-icon {
@@ -1514,8 +1546,8 @@ svg.svg-icon {
 
 .clickable-icon.is-active {
   background-color: #8a5cf526;
-  color: #a27f47;
-  opacity: 0.65;
+  color: #8a5cf5;
+  opacity: 1;
 }
 
 .clickable-icon {
@@ -1523,12 +1555,12 @@ svg.svg-icon {
   align-items: center;
   background-color: transparent;
   border-radius: 4px;
-  color: #782a1d;
-  cursor: pointer;
+  color: #a27f47;
+  cursor: default;
   display: flex;
   height: auto;
   justify-content: center;
-  opacity: 1;
+  opacity: 0.85;
   padding: 4px 6px;
   transition: opacity 0.15s ease-in-out;
 }
@@ -1571,7 +1603,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-focused {
-  color: #a27f47;
+  color: #8a5cf5;
 }
 
 .graph-view.color-fill-tag {
@@ -1617,7 +1649,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-circle {
-  color: #a27f47;
+  color: #8a5cf5;
 }
 
 .graph-view.color-line {
@@ -1629,11 +1661,11 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-highlight {
-  color: #782a1d;
+  color: #a27f47;
 }
 
 .graph-view.color-line-highlight {
-  color: #782a1d;
+  color: #a27f47;
 }
 
 .graph-controls {
@@ -1699,8 +1731,8 @@ svg.svg-icon {
   --interactive-normal: #212121;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  --pdf-shadow: 0 0 0 1px transparent;
-  --pdf-thumbnail-shadow: 0 0 0 1px transparent;
+  --pdf-shadow: 0 0 0 1px #212121;
+  --pdf-thumbnail-shadow: 0 0 0 1px #212121;
   --shadow-l:
     0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
     0px 30px 90px #00000033;
@@ -1769,13 +1801,13 @@ svg.svg-icon {
 }
 
 .workspace-split {
-  background-color: #000;
+  background-color: #1e1e1e;
   display: flex;
   position: relative;
 }
 
 .workspace-tabs.mod-top {
-  --tab-container-background: #000;
+  --tab-container-background: #1e1e1e;
 }
 
 .workspace-tabs .workspace-leaf {
@@ -1794,9 +1826,9 @@ svg.svg-icon {
 .workspace-leaf-resize-handle {
   -webkit-app-region: no-drag;
   background-color: transparent;
-  border-color: #00000026;
+  border-color: #212121;
   border-top: 0;
-  border-width: 0.5pt;
+  border-width: 1px;
   margin: 0;
   position: absolute;
   transition:

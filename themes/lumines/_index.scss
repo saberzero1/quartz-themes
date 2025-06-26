@@ -22,36 +22,8 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --background-primary: #0a0a0a;
-  --color-accent-2: #c5b6fc;
-  --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: #dcdcdc;
-  --color-base-30: #161616;
-  --color-base-35: #191919;
-  --color-base-40: #1c1c1c;
-  --color-blue: #027aff;
-  --color-cyan: #53dfdd;
-  --color-green: #44cf6e;
-  --color-orange: #e9973f;
-  --color-pink: #fa99cd;
-  --color-purple: #a882ff;
-  --color-red: #fb464c;
   --h1-color: color-mix(in srgb, #8a5cf5 100%, #ffffff 0%);
   --text-accent: #a68af9;
-  --background-primary: #0a0a0a;
-  --color-accent-2: #c5b6fc;
-  --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: #dcdcdc;
-  --color-base-30: #161616;
-  --color-base-35: #191919;
-  --color-base-40: #1c1c1c;
-  --color-blue: #027aff;
-  --color-cyan: #53dfdd;
-  --color-green: #44cf6e;
-  --color-orange: #e9973f;
-  --color-pink: #fa99cd;
-  --color-purple: #a882ff;
-  --color-red: #fb464c;
   --h1-color: color-mix(in srgb, #8a5cf5 100%, #ffffff 0%);
   --text-accent: #a68af9;
 }
@@ -71,35 +43,7 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --background-primary: #f9f9f9;
-  --color-accent-2: #a68af9;
-  --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: #464646;
-  --color-base-30: #e9e9e9;
-  --color-base-35: #e5e5e5;
-  --color-base-40: #e1e1e1;
-  --color-blue: #086ddd;
-  --color-cyan: #00bfbc;
-  --color-green: #08b94e;
-  --color-orange: #ec7500;
-  --color-pink: #d53984;
-  --color-purple: #7852ee;
-  --color-red: #e93147;
   --h1-color: color-mix(in srgb, #8a5cf5 100%, #8a5cf5 0%);
-  --background-primary: #f9f9f9;
-  --color-accent-2: #a68af9;
-  --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: #464646;
-  --color-base-30: #e9e9e9;
-  --color-base-35: #e5e5e5;
-  --color-base-40: #e1e1e1;
-  --color-blue: #086ddd;
-  --color-cyan: #00bfbc;
-  --color-green: #08b94e;
-  --color-orange: #ec7500;
-  --color-pink: #d53984;
-  --color-purple: #7852ee;
-  --color-red: #e93147;
   --h1-color: color-mix(in srgb, #8a5cf5 100%, #8a5cf5 0%);
 }
 
@@ -266,7 +210,7 @@ html[saved-theme="light"] {
 :root {
   --background-primary: light-dark(#0a0a0a, #f9f9f9);
   --color-accent-2: light-dark(#c5b6fc, #a68af9);
-  --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
+  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
   --color-base-100: light-dark(#dadada, #222222);
   --color-base-30: light-dark(#363636, #e0e0e0);
   --color-base-35: light-dark(#3f3f3f, #d4d4d4);
@@ -284,7 +228,7 @@ body {
   --background-modifier-border-focus: #1c1c1c;
   --background-modifier-border-hover: #191919;
   --background-modifier-hover: #ffffff11;
-  --background-primary: #000;
+  --background-primary: light-dark(#0a0a0a, #f9f9f9);
   --bold-color: #8a5cf5;
   --bold-weight: 800;
   --checkbox-border-color: #404040;
@@ -307,12 +251,28 @@ body {
   --code-value: #a882ff;
   --collapse-icon-color: #404040;
   --collapse-icon-color-collapsed: #a68af9;
+  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
-  --font-text: "??", "??", "??", "Arial";
+  --font-text:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --graph-line: #3d3d3d;
   --graph-node-tag: #8a5cf5;
   --graph-node-unresolved: #404040;
@@ -384,104 +344,6 @@ body {
   user-select: none;
   width: 100%;
 }
-/* START DARK */
-:root[saved-theme="dark"],
-html[saved-theme="dark"] {
-  color-scheme: dark;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
-  --background-primary: #0a0a0a;
-  --color-accent-2: #c5b6fc;
-  --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: #dcdcdc;
-  --color-base-30: #161616;
-  --color-base-35: #191919;
-  --color-base-40: #1c1c1c;
-  --color-blue: #027aff;
-  --color-cyan: #53dfdd;
-  --color-green: #44cf6e;
-  --color-orange: #e9973f;
-  --color-pink: #fa99cd;
-  --color-purple: #a882ff;
-  --color-red: #fb464c;
-  --h1-color: color-mix(in srgb, #8a5cf5 100%, #ffffff 0%);
-  --text-accent: #a68af9;
-  --background-primary: #0a0a0a;
-  --color-accent-2: #c5b6fc;
-  --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: #dcdcdc;
-  --color-base-30: #161616;
-  --color-base-35: #191919;
-  --color-base-40: #1c1c1c;
-  --color-blue: #027aff;
-  --color-cyan: #53dfdd;
-  --color-green: #44cf6e;
-  --color-orange: #e9973f;
-  --color-pink: #fa99cd;
-  --color-purple: #a882ff;
-  --color-red: #fb464c;
-  --h1-color: color-mix(in srgb, #8a5cf5 100%, #ffffff 0%);
-  --text-accent: #a68af9;
-}
-/* END DARK */
-/* START LIGHT */
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  color-scheme: light;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
-  --background-primary: #f9f9f9;
-  --color-accent-2: #a68af9;
-  --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: #464646;
-  --color-base-30: #e9e9e9;
-  --color-base-35: #e5e5e5;
-  --color-base-40: #e1e1e1;
-  --color-blue: #086ddd;
-  --color-cyan: #00bfbc;
-  --color-green: #08b94e;
-  --color-orange: #ec7500;
-  --color-pink: #d53984;
-  --color-purple: #7852ee;
-  --color-red: #e93147;
-  --h1-color: color-mix(in srgb, #8a5cf5 100%, #8a5cf5 0%);
-  --background-primary: #f9f9f9;
-  --color-accent-2: #a68af9;
-  --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: #464646;
-  --color-base-30: #e9e9e9;
-  --color-base-35: #e5e5e5;
-  --color-base-40: #e1e1e1;
-  --color-blue: #086ddd;
-  --color-cyan: #00bfbc;
-  --color-green: #08b94e;
-  --color-orange: #ec7500;
-  --color-pink: #d53984;
-  --color-purple: #7852ee;
-  --color-red: #e93147;
-  --h1-color: color-mix(in srgb, #8a5cf5 100%, #8a5cf5 0%);
-}
-/* END LIGHT */
 /* CALLOUTS */
 :root,
 html {

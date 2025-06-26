@@ -24,7 +24,7 @@
     hsl(349, 44.1%, 72.24%),
     hsl(351, 42.84%, 64.4%)
   );
-  --color-accent-hsl: light-dark(354, 42%, 56%, 354, 42%, 56%);
+  --color-accent-hsl: light-dark(hsl(354, 42%, 56%), hsl(354, 42%, 56%));
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
@@ -151,7 +151,7 @@ body {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   --background-modifier-active-hover: hsla(354, 42%, 56%, 0.15);
-  --background-modifier-border: #363636;
+  --background-modifier-border: light-dark(rgb(45, 45, 46), rgb(97, 96, 96));
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;
   --background-modifier-error: rgb(97, 96, 96);
@@ -162,9 +162,10 @@ body {
   --background-modifier-message: rgba(0, 0, 0, 0.9);
   --background-modifier-success: rgb(163, 190, 140);
   --background-modifier-success-rgb: 163, 190, 140;
-  --background-primary: #000;
-  --background-primary-alt: #111;
-  --background-secondary: #1e1e1e;
+  --background-primary: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
+  --background-primary-alt: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
+  --background-secondary: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
+  --background-secondary-alt: light-dark(#363636, #212121);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -202,11 +203,15 @@ body {
   --blockquote-border-thickness: 2px;
   --blockquote-color: inherit;
   --blockquote-font-style: normal;
-  --bold-color: inherit;
+  --bold-color: light-dark(rgb(235, 203, 139), rgb(163, 190, 140));
   --bold-modifier: 200;
   --bold-weight: 600;
   --border-width: 1px;
   --button-radius: 5px;
+  --calendar-background-hover: light-dark(rgb(76, 86, 106), rgb(97, 96, 96));
+  --calendar-hover: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
+  --calendar-today: light-dark(rgb(235, 203, 139), rgb(208, 135, 112));
+  --calendar-week: light-dark(rgb(235, 203, 139), rgb(208, 135, 112));
   --callout-blend-mode: darken;
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
@@ -243,10 +248,10 @@ body {
   --canvas-color-6: 180, 142, 173;
   --canvas-dot-pattern: #363636;
   --caret-color: rgb(97, 96, 96);
-  --checkbox-border-color: rgb(97, 96, 96);
-  --checkbox-border-color-hover: rgb(97, 96, 96);
-  --checkbox-color: hsl(354, 42%, 56%);
-  --checkbox-color-hover: hsl(351, 42.84%, 64.4%);
+  --checkbox-border-color: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
+  --checkbox-border-color-hover: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
+  --checkbox-color: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
+  --checkbox-color-hover: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
   --checkbox-margin-inline-start: 0.85em;
   --checkbox-marker-color: rgb(33, 34, 36);
   --checkbox-radius: 0;
@@ -254,14 +259,14 @@ body {
   --checklist-done-color: rgb(97, 96, 96);
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: 4px;
-  --code-background: rgb(33, 34, 36);
+  --code-background: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
   --code-border-color: transparent;
   --code-border-width: 0px;
   --code-comment: rgb(97, 96, 96);
   --code-function: rgb(235, 203, 139);
   --code-important: rgb(208, 135, 112);
   --code-keyword: #fa99cd;
-  --code-normal: rgb(97, 96, 96);
+  --code-normal: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
   --code-operator: rgb(97, 96, 96);
   --code-property: rgb(97, 96, 96);
   --code-punctuation: rgb(97, 96, 96);
@@ -273,8 +278,40 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: rgb(97, 96, 96);
   --collapse-icon-color-collapsed: rgb(208, 135, 112);
+  --color-accent: light-dark(hsl(354, 42%, 56%), hsl(354, 42%, 56%));
+  --color-accent-1: light-dark(
+    hsl(351, 42.84%, 64.4%),
+    hsl(353, 42.42%, 60.2%)
+  );
+  --color-accent-2: light-dark(
+    hsl(349, 44.1%, 72.24%),
+    hsl(351, 42.84%, 64.4%)
+  );
+  --color-accent-hsl: light-dark(hsl(354, 42%, 56%), hsl(354, 42%, 56%));
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
   --cursor-link: pointer;
+  --dataview-key: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
+  --dataview-value: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
   --dialog-max-height: 85vh;
   --dialog-max-width: 80vw;
   --dialog-width: 560px;
@@ -333,7 +370,10 @@ body {
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "??", "??", "??", "Arial";
+  --font-mermaid:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-monospace:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -351,7 +391,10 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "??", "??", "??", "Arial";
+  --font-text:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -376,49 +419,49 @@ body {
   --footnote-radius: 4px;
   --footnote-size: 0.875em;
   --graph-controls-width: 240px;
-  --graph-line: #3f3f3f;
-  --graph-node: rgb(97, 96, 96);
-  --graph-node-attachment: rgb(235, 203, 139);
+  --graph-line: light-dark(rgb(76, 86, 106), rgb(97, 96, 96));
+  --graph-node: light-dark(rgb(97, 96, 96), rgb(76, 86, 106));
+  --graph-node-attachment: light-dark(rgb(163, 190, 140), rgb(163, 190, 140));
   --graph-node-focused: rgb(208, 135, 112);
-  --graph-node-tag: rgb(163, 190, 140);
+  --graph-node-tag: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
   --graph-node-unresolved: rgb(97, 96, 96);
   --graph-text: rgb(97, 96, 96);
-  --h1-color: inherit;
+  --h1-color: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
   --h1-font: inherit;
   --h1-line-height: 1.2;
   --h1-size: 1.802em;
   --h1-style: normal;
   --h1-variant: normal;
   --h1-weight: 700;
-  --h2-color: inherit;
+  --h2-color: light-dark(rgb(235, 203, 139), rgb(235, 203, 139));
   --h2-font: inherit;
   --h2-line-height: 1.2;
   --h2-size: 1.602em;
   --h2-style: normal;
   --h2-variant: normal;
   --h2-weight: 600;
-  --h3-color: inherit;
+  --h3-color: light-dark(rgb(163, 190, 140), rgb(163, 190, 140));
   --h3-font: inherit;
   --h3-line-height: 1.3;
   --h3-size: 1.424em;
   --h3-style: normal;
   --h3-variant: normal;
   --h3-weight: 600;
-  --h4-color: inherit;
+  --h4-color: light-dark(rgb(180, 142, 173), rgb(180, 142, 173));
   --h4-font: inherit;
   --h4-line-height: 1.4;
   --h4-size: 1.266em;
   --h4-style: normal;
   --h4-variant: normal;
   --h4-weight: 600;
-  --h5-color: inherit;
+  --h5-color: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
   --h5-font: inherit;
   --h5-line-height: 1.5;
   --h5-size: 1.125em;
   --h5-style: normal;
   --h5-variant: normal;
   --h5-weight: 600;
-  --h6-color: inherit;
+  --h6-color: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
   --h6-font: inherit;
   --h6-line-height: 1.5;
   --h6-size: 1em;
@@ -432,8 +475,8 @@ body {
   --hr-thickness: 2px;
   --icon-color: rgb(97, 96, 96);
   --icon-color-active: rgb(208, 135, 112);
-  --icon-color-focused: rgb(97, 96, 96);
-  --icon-color-hover: rgb(97, 96, 96);
+  --icon-color-focused: light-dark(rgb(97, 96, 96), rgb(94, 129, 172));
+  --icon-color-hover: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
   --icon-l: 18px;
   --icon-l-stroke-width: 1.75px;
   --icon-m: 18px;
@@ -458,7 +501,7 @@ body {
   --indentation-guide-source-indent: 0.25em;
   --indentation-guide-width: 1px;
   --indentation-guide-width-active: 1px;
-  --inline-title-color: rgb(97, 96, 96);
+  --inline-title-color: light-dark(rgb(235, 203, 139), rgb(235, 203, 139));
   --inline-title-font: inherit;
   --inline-title-line-height: 1.2;
   --inline-title-margin-bottom: 0.5em;
@@ -477,7 +520,7 @@ body {
   --interactive-accent-hsl: 354, 42%, 56%;
   --interactive-hover: #111;
   --interactive-normal: #000;
-  --italic-color: inherit;
+  --italic-color: light-dark(rgb(235, 203, 139), rgb(163, 190, 140));
   --italic-weight: inherit;
   --layer-cover: 5;
   --layer-dragged-item: 80;
@@ -529,6 +572,8 @@ body {
   --menu-shadow:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
+  --mermaid-loopline: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
+  --mermaid-note: light-dark(rgb(94, 129, 172), rgb(97, 96, 96));
   --metadata-background: transparent;
   --metadata-border-color: transparent;
   --metadata-border-radius: 0;
@@ -602,9 +647,9 @@ body {
   --nav-item-children-margin-start: 12px;
   --nav-item-children-padding-start: 4px;
   --nav-item-color: rgb(97, 96, 96);
-  --nav-item-color-active: rgb(97, 96, 96);
+  --nav-item-color-active: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
   --nav-item-color-highlighted: rgb(208, 135, 112);
-  --nav-item-color-hover: rgb(97, 96, 96);
+  --nav-item-color-hover: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
   --nav-item-color-selected: rgb(97, 96, 96);
   --nav-item-padding: 4px 8px 4px 24px;
   --nav-item-parent-padding: 6px 8px 6px 24px;
@@ -742,8 +787,11 @@ body {
   --tab-text-color: rgb(97, 96, 96);
   --tab-text-color-active: rgb(97, 96, 96);
   --tab-text-color-focused: rgb(97, 96, 96);
-  --tab-text-color-focused-active: rgb(97, 96, 96);
-  --tab-text-color-focused-active-current: rgb(97, 96, 96);
+  --tab-text-color-focused-active: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
+  --tab-text-color-focused-active-current: light-dark(
+    rgb(97, 96, 96),
+    rgb(97, 96, 96)
+  );
   --tab-text-color-focused-highlighted: rgb(208, 135, 112);
   --tab-width: 200px;
   --table-add-button-background: transparent;
@@ -763,7 +811,10 @@ body {
   --table-drag-handle-color: rgb(97, 96, 96);
   --table-drag-handle-color-active: white;
   --table-header-background: transparent;
-  --table-header-background-hover: inherit;
+  --table-header-background-hover: light-dark(
+    hsl(240, 1%, 21%),
+    rgb(97, 96, 96)
+  );
   --table-header-border-color: transparent;
   --table-header-border-width: 1px;
   --table-header-color: rgb(97, 96, 96);
@@ -773,7 +824,7 @@ body {
   --table-line-height: 1.3;
   --table-row-alt-background: transparent;
   --table-row-alt-background-hover: transparent;
-  --table-row-background-hover: transparent;
+  --table-row-background-hover: light-dark(rgb(76, 86, 106), rgb(97, 96, 96));
   --table-row-last-border-width: 1px;
   --table-selection: hsla(354, 42%, 56%, 0.1);
   --table-selection-blend-mode: darken;
@@ -783,12 +834,12 @@ body {
   --table-text-color: inherit;
   --table-text-size: 16px;
   --table-white-space: break-spaces;
-  --tag-background: hsla(354, 42%, 56%, 0.1);
-  --tag-background-hover: hsla(354, 42%, 56%, 0.2);
+  --tag-background: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
+  --tag-background-hover: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
   --tag-border-color: hsla(354, 42%, 56%, 0.15);
   --tag-border-color-hover: hsla(354, 42%, 56%, 0.15);
   --tag-border-width: 0px;
-  --tag-color: rgb(208, 135, 112);
+  --tag-color: light-dark(rgb(76, 86, 106), rgb(76, 86, 106));
   --tag-color-hover: rgb(208, 135, 112);
   --tag-decoration: none;
   --tag-decoration-hover: underline;
@@ -797,14 +848,15 @@ body {
   --tag-radius: 0.5em;
   --tag-size: 0.875em;
   --tag-weight: inherit;
-  --text-accent: hsl(354, 42%, 56%);
-  --text-accent-hover: hsl(349, 44.1%, 72.24%);
+  --text-accent: light-dark(rgb(208, 135, 112), rgb(208, 135, 112));
+  --text-accent-hover: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
   --text-error: rgb(97, 96, 96);
-  --text-faint: #666666;
-  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-faint: light-dark(rgb(97, 96, 96), rgb(33, 34, 36));
+  --text-highlight-bg: light-dark(rgb(97, 96, 96), rgb(235, 203, 139));
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: #b3b3b3;
-  --text-normal: #dadada;
+  --text-highlight-fg: light-dark(rgb(33, 34, 36), rgb(33, 34, 36));
+  --text-muted: light-dark(rgb(97, 96, 96), rgb(33, 34, 36));
+  --text-normal: light-dark(rgb(97, 96, 96), rgb(45, 45, 46));
   --text-on-accent: white;
   --text-on-accent-inverted: black;
   --text-selection: hsla(354, 42%, 56%, 0.2);
@@ -816,7 +868,7 @@ body {
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;
   --titlebar-text-color: rgb(97, 96, 96);
-  --titlebar-text-color-focused: rgb(97, 96, 96);
+  --titlebar-text-color-focused: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
   --titlebar-text-weight: 700;
   --toggle-border-width: 2px;
   --toggle-radius: 18px;

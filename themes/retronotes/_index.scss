@@ -22,42 +22,16 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --color-accent-2: #c9b4cd;
-  --color-accent-hsl: 294.4, 19.4%, 58.6%;
-  --color-base-100: #d0d0d0;
-  --color-base-30: #474747;
-  --color-base-35: #515151;
-  --color-base-40: #5a5a5a;
-  --color-blue: #42c0ff;
-  --color-cyan: #dadfe1;
-  --color-green: #14b858;
-  --color-orange: #eb8556;
-  --color-pink: #ec7bb1;
-  --color-purple: #c695f4;
-  --color-red: #e35e66;
   --hr-color: #a598ba;
   --inline-title-color: #e6e6fa;
+
   --link-color-hover: #e3dfe9;
   --link-external-color-hover: #e3dfe9;
-  --text-accent: #b89bbc;
-  --color-accent-2: #c9b4cd;
-  --color-accent-hsl: 294.4, 19.4%, 58.6%;
-  --color-base-100: #d0d0d0;
-  --color-base-30: #474747;
-  --color-base-35: #515151;
-  --color-base-40: #5a5a5a;
-  --color-blue: #42c0ff;
-  --color-cyan: #dadfe1;
-  --color-green: #14b858;
-  --color-orange: #eb8556;
-  --color-pink: #ec7bb1;
-  --color-purple: #c695f4;
-  --color-red: #e35e66;
   --hr-color: #a598ba;
   --inline-title-color: #e6e6fa;
+
   --link-color-hover: #e3dfe9;
   --link-external-color-hover: #e3dfe9;
-  --text-accent: #b89bbc;
 }
 
 :root[saved-theme="light"],
@@ -75,34 +49,6 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --color-accent-2: #b89bbc;
-  --color-accent-hsl: 294.4, 19.4%, 58.6%;
-  --color-base-100: #29220e;
-  --color-base-30: #dac897;
-  --color-base-35: #d5c089;
-  --color-base-40: #c6a95d;
-  --color-blue: #163259;
-  --color-cyan: #008acf;
-  --color-green: #004d20;
-  --color-orange: #e8733d;
-  --color-pink: #d53984;
-  --color-purple: #6c00cf;
-  --color-red: #9c1a21;
-  --text-accent: #dcc5f3;
-  --color-accent-2: #b89bbc;
-  --color-accent-hsl: 294.4, 19.4%, 58.6%;
-  --color-base-100: #29220e;
-  --color-base-30: #dac897;
-  --color-base-35: #d5c089;
-  --color-base-40: #c6a95d;
-  --color-blue: #163259;
-  --color-cyan: #008acf;
-  --color-green: #004d20;
-  --color-orange: #e8733d;
-  --color-pink: #d53984;
-  --color-purple: #6c00cf;
-  --color-red: #9c1a21;
-  --text-accent: #dcc5f3;
 }
 
 /* cyrillic-ext */
@@ -205,14 +151,29 @@ body {
   --code-value: #c695f4;
   --collapse-icon-color: #9181aa;
   --collapse-icon-color-collapsed: #b89bbc;
+  --color-accent-2: light-dark(#c9b4cd, #b89bbc);
+  --color-accent-hsl: light-dark(294.4, 19.4%, 58.6%, 294.4, 19.4%, 58.6%);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
   --font-text:
-    "??", "IBM Plex Mono", "Consolas", monospace, "IBM Plex Mono", "Consolas",
-    monospace, "Arial";
+    "IBM Plex Mono", "Consolas", monospace, "IBM Plex Mono", "Consolas",
+    monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
   --graph-line: #736090;
   --graph-node-tag: #14b858;
   --graph-node-unresolved: #9181aa;
@@ -245,7 +206,7 @@ body {
   --tag-decoration-hover: none;
   --tag-radius: 8px;
   --tag-weight: inherit;
-  --text-accent: #a681aa;
+  --text-accent: light-dark(#b89bbc, #dcc5f3);
   --text-accent-hover: #c9b4cd;
   --text-faint: #9181aa;
   --text-highlight-bg: #6a5884;
@@ -286,106 +247,6 @@ body {
   user-select: none;
   width: 100%;
 }
-/* START DARK */
-:root[saved-theme="dark"],
-html[saved-theme="dark"] {
-  color-scheme: dark;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
-  --color-accent-2: #c9b4cd;
-  --color-accent-hsl: 294.4, 19.4%, 58.6%;
-  --color-base-100: #d0d0d0;
-  --color-base-30: #474747;
-  --color-base-35: #515151;
-  --color-base-40: #5a5a5a;
-  --color-blue: #42c0ff;
-  --color-cyan: #dadfe1;
-  --color-green: #14b858;
-  --color-orange: #eb8556;
-  --color-pink: #ec7bb1;
-  --color-purple: #c695f4;
-  --color-red: #e35e66;
-  --hr-color: #a598ba;
-  --inline-title-color: #e6e6fa;
-  --link-color-hover: #e3dfe9;
-  --link-external-color-hover: #e3dfe9;
-  --text-accent: #b89bbc;
-  --color-accent-2: #c9b4cd;
-  --color-accent-hsl: 294.4, 19.4%, 58.6%;
-  --color-base-100: #d0d0d0;
-  --color-base-30: #474747;
-  --color-base-35: #515151;
-  --color-base-40: #5a5a5a;
-  --color-blue: #42c0ff;
-  --color-cyan: #dadfe1;
-  --color-green: #14b858;
-  --color-orange: #eb8556;
-  --color-pink: #ec7bb1;
-  --color-purple: #c695f4;
-  --color-red: #e35e66;
-  --hr-color: #a598ba;
-  --inline-title-color: #e6e6fa;
-  --link-color-hover: #e3dfe9;
-  --link-external-color-hover: #e3dfe9;
-  --text-accent: #b89bbc;
-}
-/* END DARK */
-/* START LIGHT */
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  color-scheme: light;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
-  --color-accent-2: #b89bbc;
-  --color-accent-hsl: 294.4, 19.4%, 58.6%;
-  --color-base-100: #29220e;
-  --color-base-30: #dac897;
-  --color-base-35: #d5c089;
-  --color-base-40: #c6a95d;
-  --color-blue: #163259;
-  --color-cyan: #008acf;
-  --color-green: #004d20;
-  --color-orange: #e8733d;
-  --color-pink: #d53984;
-  --color-purple: #6c00cf;
-  --color-red: #9c1a21;
-  --text-accent: #dcc5f3;
-  --color-accent-2: #b89bbc;
-  --color-accent-hsl: 294.4, 19.4%, 58.6%;
-  --color-base-100: #29220e;
-  --color-base-30: #dac897;
-  --color-base-35: #d5c089;
-  --color-base-40: #c6a95d;
-  --color-blue: #163259;
-  --color-cyan: #008acf;
-  --color-green: #004d20;
-  --color-orange: #e8733d;
-  --color-pink: #d53984;
-  --color-purple: #6c00cf;
-  --color-red: #9c1a21;
-  --text-accent: #dcc5f3;
-}
-/* END LIGHT */
 /* CALLOUTS */
 :root,
 html {

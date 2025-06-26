@@ -1673,7 +1673,10 @@ body {
   --background-primary: var(--color-creme-1);
   --background-primary-alt: var(--color-creme-2);
   --background-secondary: var(--color-creme-2);
-  --background-secondary-alt: var(--color-creme-3);
+  --background-secondary-alt: light-dark(
+    var(--color-base-30),
+    var(--color-base-05)
+  );
   --bases-embed-border: 1px solid var(--background-modifier-border);
   --bases-embed-border-radius: var(--radius-s);
   --bases-filter-menu-width: 520px;
@@ -1799,6 +1802,72 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: var(--text-faint);
   --collapse-icon-color-collapsed: var(--text-faint);
+  --color-accent: light-dark(
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l))
+  );
+  --color-accent-1: light-dark(
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 1),
+      calc(var(--accent-s) * 1.01),
+      calc(var(--accent-l) * 1.075)
+    )
+  );
+  --color-accent-2: light-dark(
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    )
+  );
+  --color-accent-hsl: light-dark(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l)
+  );
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-creme-1: light-dark(hsl(31, 20%, 10%), hsl(34, 33%, 98%));
+  --color-creme-2: light-dark(hsl(27, 17%, 12%), hsl(35, 36%, 95%));
+  --color-creme-3: light-dark(hsl(27, 20%, 17%), hsl(35, 35%, 90%));
+  --color-creme-4: light-dark(hsl(34, 24%, 30%), hsl(34, 37%, 70%));
+  --color-creme-5: light-dark(hsl(34, 36%, 30%), hsl(34, 25%, 70%));
+  --color-creme-6: light-dark(hsl(31, 30%, 50%), hsl(31, 30%, 50%));
+  --color-creme-7: light-dark(hsl(35, 27%, 55%), hsl(31, 35%, 40%));
+  --color-creme-8: light-dark(hsl(34, 50%, 70%), hsl(31, 45%, 20%));
+  --color-creme-gray-1: light-dark(hsl(35, 20%, 13%), hsl(35, 20%, 94%));
+  --color-creme-gray-2: light-dark(hsl(35, 20%, 17%), hsl(35, 20%, 90%));
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -1837,12 +1906,12 @@ body {
   --file-header-font-weight: 400;
   --file-header-justify: left;
   --file-left-margin: calc(var(--file-right-margin) + var(--scrollbar-width));
-  --file-left-margin-mobile: 30px;
+  --file-left-margin-mobile: 20px;
   --file-line-width: 700px;
   --file-margins: var(--file-top-margin) var(--file-right-margin)
     var(--file-bottom-margin) var(--file-left-margin);
   --file-right-margin: var(--size-4-16);
-  --file-right-margin-mobile: 30px;
+  --file-right-margin-mobile: 10px;
   --file-top-margin: var(--size-4-4);
   --file-top-margin-mobile: 0px;
   --flair-background: var(--interactive-normal);
@@ -1881,7 +1950,8 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: var(--font-print);
+  --font-text:
+    var(--font-text-override), var(--font-text-theme), var(--font-default);
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";

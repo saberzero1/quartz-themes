@@ -937,7 +937,7 @@
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
   --color-accent-1: light-dark(#a68af9, #9873f7);
   --color-accent-2: light-dark(#c5b6fc, #a68af9);
-  --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
+  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
   --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
@@ -1596,6 +1596,7 @@ body {
   --accent-h: 258;
   --accent-l: 66%;
   --accent-s: 88%;
+  --activeline: light-dark(#51454140, #d4b4946a);
   --anim-duration-fast: 140ms;
   --anim-duration-moderate: 300ms;
   --anim-duration-none: 0;
@@ -1614,12 +1615,13 @@ body {
   --background-modifier-error-rgb: 207, 30, 51;
   --background-modifier-form-field: #e1c4a6;
   --background-modifier-hover: #ffffff11;
-  --background-modifier-message: #000000e6;
+  --background-modifier-message: light-dark(#281f1b, #d7b38d);
   --background-modifier-success: #01903b;
   --background-modifier-success-rgb: 1, 144, 59;
   --background-primary: #e1c4a6;
   --background-primary-alt: #daba97;
   --background-secondary: #dabb9a;
+  --background-secondary-alt: light-dark(#c6a57f, #cbaa87);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -1728,7 +1730,32 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: #ff4059;
   --collapse-icon-color-collapsed: #800000;
-  --color-accent-1: #800000;
+  --color-accent: light-dark(#8a5cf5, #8a5cf5);
+  --color-accent-1: light-dark(#a68af9, #9873f7);
+  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-bold: light-dark(#800000, #bd5757);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-italic: light-dark(#e77a59, #ae612b);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -1779,7 +1806,7 @@ body {
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
-  --font-mermaid: "??", "??", "??", "Arial";
+  --font-mermaid: "??", "??", "CMU Typewriter Text";
   --font-monospace: "??", "??", "JetBrains Mono";
   --font-monospace-default: "JetBrains Mono";
   --font-monospace-override: "??";
@@ -1791,7 +1818,7 @@ body {
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: "??", "??", "??", "Arial";
+  --font-text: "??", "??", "CMU Typewriter Text";
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -1867,6 +1894,7 @@ body {
   --h6-weight: 600;
   --header-height: 30px;
   --heading-formatting: #ff4059;
+  --heading-formatting-color: light-dark(#c72626, #d34747);
   --heading-spacing: 0rem;
   --hr-color: transparent;
   --hr-thickness: 2px;
@@ -1889,6 +1917,7 @@ body {
   --icon-xl-stroke-width: 1.25px;
   --icon-xs: 14px;
   --icon-xs-stroke-width: 2px;
+  --in-between-background: light-dark(#2e2420, #d4af88);
   --indent-size: 4;
   --indent-unit: 0.5625em;
   --indentation-guide-color: #ffffff1f;
@@ -2233,13 +2262,13 @@ body {
   --text-accent-hover: #a00000;
   --text-error: #cf1e33;
   --text-faint: #7a6d68;
-  --text-highlight-bg: #ffd00066;
+  --text-highlight-bg: light-dark(#926b22e6, #eac357);
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: #5b4f4a;
   --text-normal: #5f4f49;
   --text-on-accent: #ffffff;
   --text-on-accent-inverted: #000000;
-  --text-selection: #8a5cf533;
+  --text-selection: light-dark(#6154508f, #c7a78683);
   --text-success: #01903b;
   --text-warning: #c16d18;
   --titlebar-background: #e4cdba;
@@ -2892,7 +2921,7 @@ body:not(.is-mobile) .app-container {
 .markdown-source-view {
   --list-marker-space: 0;
   --list-padding-inline-start: 0;
-  font-family: "??", "??", "??", "Arial";
+  font-family: "??", "??", "CMU Typewriter Text";
   font-size: 16px;
 }
 
@@ -3042,7 +3071,7 @@ body:not(.is-mobile) .app-container {
 }
 
 .markdown-source-view.mod-cm6 .cm-scroller {
-  font-family: "??", "??", "??", "Arial";
+  font-family: "??", "??", "CMU Typewriter Text";
   line-height: 1.5;
   scrollbar-gutter: stable;
 }
@@ -4290,7 +4319,7 @@ body:not(.show-inline-title) .inline-title:not([data-level]) {
 .markdown-preview-view {
   -webkit-user-select: text;
   color: #554441;
-  font-family: "??", "??", "??", "Arial";
+  font-family: "??", "??", "CMU Typewriter Text";
   font-size: 16px;
   height: 100%;
   line-height: 1.5;
@@ -5732,7 +5761,7 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
 .community-modal-readme {
   -webkit-user-select: text;
   color: #554441;
-  font-family: "??", "??", "??", "Arial";
+  font-family: "??", "??", "CMU Typewriter Text";
   font-size: 16px;
   line-height: 1.5;
   overflow-wrap: break-word;
@@ -11802,7 +11831,7 @@ kbd {
 .markdown-source-view.mod-cm6
   .cm-line.HyperMD-codeblock
   .cm-formatting.cm-formatting-list {
-  font-family: "??", "??", "??", "Arial";
+  font-family: "??", "??", "CMU Typewriter Text";
   font-size: 16px;
 }
 
@@ -17130,7 +17159,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .file-recovery-text[data-ext="md"] {
-  font-family: "??", "??", "??", "Arial";
+  font-family: "??", "??", "CMU Typewriter Text";
   font-size: 16px;
 }
 
@@ -18745,7 +18774,7 @@ body:not(.is-phone)
   --cursor-link: default;
   background-color: #e1c4a6;
   flex: 1 0 0;
-  font-family: "??", "??", "??", "Arial";
+  font-family: "??", "??", "CMU Typewriter Text";
   font-size: 16px;
   overflow: auto;
   padding: 24px;

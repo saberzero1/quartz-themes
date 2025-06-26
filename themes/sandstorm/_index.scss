@@ -22,35 +22,7 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --color-accent-2: #ebca97;
-  --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: #ebca97;
-  --color-base-30: #212121;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-blue: #027aff;
-  --color-cyan: #53dfdd;
-  --color-green: #44cf6e;
-  --color-orange: #e9973f;
-  --color-pink: #fa99cd;
-  --color-purple: #a882ff;
-  --color-red: #fb464c;
-  --hr-color: #782a1d;
   --text-accent: #a27f47;
-  --color-accent-2: #ebca97;
-  --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: #ebca97;
-  --color-base-30: #212121;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-blue: #027aff;
-  --color-cyan: #53dfdd;
-  --color-green: #44cf6e;
-  --color-orange: #e9973f;
-  --color-pink: #fa99cd;
-  --color-purple: #a882ff;
-  --color-red: #fb464c;
-  --hr-color: #782a1d;
   --text-accent: #a27f47;
 }
 
@@ -69,35 +41,7 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --color-accent-2: #937340;
-  --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: #111111;
-  --color-base-30: #e0e0e0;
-  --color-base-35: #d4d4d4;
-  --color-base-40: #bdbdbd;
-  --color-blue: #086ddd;
-  --color-cyan: #00bfbc;
-  --color-green: #08b94e;
-  --color-orange: #ec7500;
-  --color-pink: #d53984;
-  --color-purple: #7852ee;
-  --color-red: #e93147;
-  --hr-color: #b53f2a;
   --tag-background: #ebca97;
-  --color-accent-2: #937340;
-  --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: #111111;
-  --color-base-30: #e0e0e0;
-  --color-base-35: #d4d4d4;
-  --color-base-40: #bdbdbd;
-  --color-blue: #086ddd;
-  --color-cyan: #00bfbc;
-  --color-green: #08b94e;
-  --color-orange: #ec7500;
-  --color-pink: #d53984;
-  --color-purple: #7852ee;
-  --color-red: #e93147;
-  --hr-color: #b53f2a;
   --tag-background: #ebca97;
 }
 
@@ -159,7 +103,7 @@ html[saved-theme="light"] {
 
 :root {
   --color-accent-2: light-dark(#c5b6fc, #a68af9);
-  --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
+  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
   --color-base-100: light-dark(#dadada, #222222);
   --color-base-30: light-dark(#363636, #e0e0e0);
   --color-base-35: light-dark(#3f3f3f, #d4d4d4);
@@ -183,8 +127,8 @@ body {
   --bold-weight: 600;
   --checkbox-border-color: #782a1d;
   --checkbox-border-color-hover: #a27f47;
-  --checkbox-color: #782a1d;
-  --checkbox-color-hover: #a27f47;
+  --checkbox-color: #a27f47;
+  --checkbox-color-hover: #ebca97;
   --checkbox-marker-color: #000;
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
@@ -200,29 +144,46 @@ body {
   --code-tag: #fb464c;
   --code-value: #a882ff;
   --collapse-icon-color: #782a1d;
-  --collapse-icon-color-collapsed: #a27f47;
+  --collapse-icon-color-collapsed: #8a5cf5;
+  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
   --cursor-link: pointer;
   --font-default:
     ui-monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Microsoft YaHei Light", sans-serif;
-  --font-text: "??", "??", "??", "Arial";
+  --font-text:
+    "??", "??", "??", "??", "Source Code Pro", ui-monospace, ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Microsoft YaHei Light", sans-serif;
   --graph-line: #3f3f3f;
   --graph-node-tag: #44cf6e;
   --graph-node-unresolved: #782a1d;
   --h1-color: #a27f47;
   --h1-font: inherit;
   --h3-line-height: 1.3;
-  --hr-color: transparent;
+  --hr-color: light-dark(#782a1d, #b53f2a);
   --hr-thickness: 2px;
   --icon-color: #a27f47;
   --inline-title-color: #a27f47;
   --inline-title-font: inherit;
   --interactive-accent-hsl: 258, 88%, 66%;
   --italic-color: inherit;
-  --link-color: #a27f47;
+  --link-color: #8a5cf5;
   --link-color-hover: #ebca97;
-  --link-external-color: #a27f47;
+  --link-external-color: #8a5cf5;
   --link-external-color-hover: #ebca97;
   --link-external-filter: none;
   --link-weight: 600;
@@ -233,8 +194,8 @@ body {
   --tag-border-color: #8a5cf526;
   --tag-border-color-hover: #8a5cf526;
   --tag-border-width: 0px;
-  --tag-color: #a27f47;
-  --tag-color-hover: #a27f47;
+  --tag-color: #8a5cf5;
+  --tag-color-hover: #8a5cf5;
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-radius: 2em;
@@ -248,7 +209,7 @@ body {
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: #000;
-  caret-color: #a27f47;
+  caret-color: #8a5cf5;
   color: #ebca97;
   contain: initial;
   font-family:
@@ -267,7 +228,7 @@ body {
     "Segoe UI Symbol",
     "Microsoft YaHei Light",
     sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   height: 100%;
   line-height: 1.3;
   margin: 0;
@@ -279,102 +240,6 @@ body {
   user-select: none;
   width: 100%;
 }
-/* START DARK */
-:root[saved-theme="dark"],
-html[saved-theme="dark"] {
-  color-scheme: dark;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-dark);
-  }
-  --color-accent-2: #ebca97;
-  --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: #ebca97;
-  --color-base-30: #212121;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-blue: #027aff;
-  --color-cyan: #53dfdd;
-  --color-green: #44cf6e;
-  --color-orange: #e9973f;
-  --color-pink: #fa99cd;
-  --color-purple: #a882ff;
-  --color-red: #fb464c;
-  --hr-color: #782a1d;
-  --text-accent: #a27f47;
-  --color-accent-2: #ebca97;
-  --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: #ebca97;
-  --color-base-30: #212121;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-blue: #027aff;
-  --color-cyan: #53dfdd;
-  --color-green: #44cf6e;
-  --color-orange: #e9973f;
-  --color-pink: #fa99cd;
-  --color-purple: #a882ff;
-  --color-red: #fb464c;
-  --hr-color: #782a1d;
-  --text-accent: #a27f47;
-}
-/* END DARK */
-/* START LIGHT */
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  color-scheme: light;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
-  --color-accent-2: #937340;
-  --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: #111111;
-  --color-base-30: #e0e0e0;
-  --color-base-35: #d4d4d4;
-  --color-base-40: #bdbdbd;
-  --color-blue: #086ddd;
-  --color-cyan: #00bfbc;
-  --color-green: #08b94e;
-  --color-orange: #ec7500;
-  --color-pink: #d53984;
-  --color-purple: #7852ee;
-  --color-red: #e93147;
-  --hr-color: #b53f2a;
-  --tag-background: #ebca97;
-  --color-accent-2: #937340;
-  --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: #111111;
-  --color-base-30: #e0e0e0;
-  --color-base-35: #d4d4d4;
-  --color-base-40: #bdbdbd;
-  --color-blue: #086ddd;
-  --color-cyan: #00bfbc;
-  --color-green: #08b94e;
-  --color-orange: #ec7500;
-  --color-pink: #d53984;
-  --color-purple: #7852ee;
-  --color-red: #e93147;
-  --hr-color: #b53f2a;
-  --tag-background: #ebca97;
-}
-/* END LIGHT */
 /* CALLOUTS */
 :root,
 html {
@@ -385,9 +250,9 @@ html {
     border-style: solid;
     border-width: 0px;
     margin: 1em 0;
-    mix-blend-mode: normal;
+    mix-blend-mode: darken;
     overflow: hidden;
-    padding: 12px 24px 12px 12px;
+    padding: 12px 12px 12px 24px;
     background-color: #9e9e9e1a;
     overflow-x: auto;
     overflow-y: hidden;
@@ -669,8 +534,8 @@ body {
     font-weight: 700;
     letter-spacing: -0.015em;
     line-height: 1.2;
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
+    margin-block-end: 1rem;
+    margin-block-start: 1rem;
   }
   h1 a {
     --link-weight: 700;
@@ -685,8 +550,8 @@ body {
     font-weight: 600;
     letter-spacing: -0.015em;
     line-height: 1.2;
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
+    margin-block-end: 1rem;
+    margin-block-start: 1rem;
   }
   h2 a {
     --link-weight: 600;
@@ -701,8 +566,8 @@ body {
     font-weight: 600;
     letter-spacing: -0.015em;
     line-height: 1.3;
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
+    margin-block-end: 1rem;
+    margin-block-start: 1rem;
   }
   h3 a {
     --link-weight: 600;
@@ -717,8 +582,8 @@ body {
     font-weight: 600;
     letter-spacing: 0.015em;
     line-height: 1.4;
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
+    margin-block-end: 1rem;
+    margin-block-start: 1rem;
   }
   h4 a {
     --link-weight: 600;
@@ -733,8 +598,8 @@ body {
     font-weight: 600;
     letter-spacing: 0.015em;
     line-height: 1.5;
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
+    margin-block-end: 1rem;
+    margin-block-start: 1rem;
   }
   h5 a {
     --link-weight: 600;
@@ -749,8 +614,8 @@ body {
     font-weight: 600;
     letter-spacing: 0.015em;
     line-height: 1.5;
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
+    margin-block-end: 1rem;
+    margin-block-start: 1rem;
   }
   h6 a {
     --link-weight: 600;
@@ -759,7 +624,7 @@ body {
   /* CODE */
   pre {
     background-color: #111;
-    border: 0px solid transparent;
+    border: 0px solid #212121;
     border-radius: 4px;
     min-height: 38px;
     overflow-x: auto;
@@ -776,14 +641,14 @@ body {
   code {
     -webkit-box-decoration-break: clone;
     background-color: #111;
-    border: 0px solid transparent;
+    border: 0px solid #212121;
     border-radius: 4px;
     color: #a27f47;
     font-family:
       "??", "??", ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Code",
       "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
       "Consolas", "Source Code Pro", monospace;
-    font-size: 1em;
+    font-size: 0.875em;
     padding: 0.1em 0.25em;
     background-color: var(--code-background);
     //color: var(--code-color);
@@ -856,7 +721,7 @@ body {
       "Segoe UI Symbol",
       "Microsoft YaHei Light",
       sans-serif;
-    font-size: 12.8px;
+    font-size: 12px;
     height: auto;
     inset-inline-end: 0;
     margin: 6px;
@@ -865,7 +730,7 @@ body {
     right: 0;
     top: 0;
     &:hover {
-      background-color: #ffffff26;
+      background-color: #ffffff13;
     }
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -890,8 +755,8 @@ body {
       font-weight: 600;
       letter-spacing: -0.015em;
       line-height: 1.3;
-      margin-block-end: 0rem;
-      margin-block-start: 0rem;
+      margin-block-end: 1rem;
+      margin-block-start: 1rem;
     }
     ul li {
       color: #ebca97;
@@ -917,7 +782,7 @@ body {
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
-        color: #782a1d;
+        color: #a27f47;
         text-overflow: ellipsis;
         position: relative;
         & > svg {
@@ -962,17 +827,17 @@ body {
         position: relative;
         a {
           border-radius: 4px;
-          color: #ebca97;
-          cursor: pointer;
+          color: #a27f47;
+          cursor: default;
           display: flex;
-          font-size: 16px;
+          font-size: 13px;
           font-weight: inherit;
           line-height: 1.3;
           margin-bottom: 2px;
-          padding: 6px 8px 6px 24px;
+          padding: 4px 8px 4px 24px;
           &.active,
           &:hover {
-            background-color: #ffffff26;
+            background-color: #ffffff13;
             color: #ebca97;
             font-weight: inherit;
           }
@@ -1011,8 +876,8 @@ body {
         font-weight: 600;
         letter-spacing: -0.015em;
         line-height: 1.3;
-        margin-block-end: 0rem;
-        margin-block-start: 0rem;
+        margin-block-end: 1rem;
+        margin-block-start: 1rem;
       }
       color: #a27f47;
       color: inherit;
@@ -1020,9 +885,9 @@ body {
     ul.toc-content.overflow {
       li,
       li > a {
-        color: #ebca97;
+        color: #a27f47;
         font-weight: inherit;
-        font-size: 16px;
+        font-size: 13px;
       }
     }
   }
@@ -1039,8 +904,8 @@ body {
       font-weight: 600;
       letter-spacing: -0.015em;
       line-height: 1.3;
-      margin-block-end: 0rem;
-      margin-block-start: 0rem;
+      margin-block-end: 1rem;
+      margin-block-start: 1rem;
       min-height: calc(2 * var(--p-spacing) + var(--h3-line-height));
     }
   }
@@ -1093,13 +958,13 @@ body {
   .search {
     & > .search-button {
       -webkit-app-region: no-drag;
-      background: transparent;
-      border: 1px solid transparent;
+      background: #000;
+      border: 1px solid #212121;
       border-radius: 5px;
       color: #ebca97;
       font-family: inherit;
-      font-size: 14.992px;
-      height: 40px;
+      font-size: 13px;
+      height: 30px;
       outline: none;
       padding: 4px 8px;
       svg {
@@ -1110,7 +975,7 @@ body {
     & > .search-container {
       & > .search-space {
         background-color: #000;
-        border: 0.5pt solid #555555;
+        border: 1px solid #555555;
         border-radius: 12px;
         box-shadow:
           0px 1.8px 7.3px #00000012,
@@ -1122,8 +987,8 @@ body {
           border: none;
           border-bottom: 1px solid #1e1e1e;
           border-radius: 0;
-          font-size: 16px;
-          height: 48px;
+          font-size: 15px;
+          height: 40px;
           padding: 24px;
           padding-inline-end: 48px;
           width: 100%;
@@ -1161,13 +1026,13 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: #ffffff26;
+                background-color: #ffffff13;
               }
               & > ul > li > p {
                 background-color: transparent;
                 color: #ebca97;
                 &.match-tag {
-                  color: #a27f47;
+                  color: #8a5cf5;
                 }
               }
             }
@@ -1229,7 +1094,7 @@ body {
   /* POPOVER */
   .popover {
     background-color: #000;
-    border: 1px solid transparent;
+    border: 1px solid #212121;
     border-radius: 8px;
     box-shadow:
       0px 1px 2px #0000001f,
@@ -1246,7 +1111,7 @@ body {
     background-color: unset;
     border: unset;
     & .popover-inner {
-      border: 1px solid transparent;
+      border: 1px solid #212121;
       background-color: #000;
 
       border-radius: 8px;
