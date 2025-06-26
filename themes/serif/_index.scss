@@ -1220,13 +1220,13 @@ body {
   }
   /* BACKGROUNDS */
   section {
-    background-color: var(--background-primary);
+    //background-color: var(--background-primary);
   }
   .page > #quartz-body {
     .sidebar {
-      background-color: var(--background-primary);
+      //background-color: var(--background-primary);
       &.left:has(.explorer) {
-        background-color: var(--background-primary);
+        //background-color: var(--background-primary);
       }
     }
   }
