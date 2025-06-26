@@ -12225,7 +12225,7 @@ kbd {
 
 .callout-title {
   align-items: flex-start;
-  color: rgb(#a882ff);
+  color: #a882ff;
   display: flex;
   font-size: 1.2em;
   gap: 4px;
@@ -12250,7 +12250,7 @@ kbd {
 }
 
 .callout-icon .svg-icon {
-  color: rgb(#a882ff);
+  color: #a882ff;
 }
 
 .callout-icon::after {

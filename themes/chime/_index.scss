@@ -22,7 +22,9 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
+  --mono-rgb-100: 255, 255, 255;
   --text-accent: #439ee8;
+  --mono-rgb-100: 255, 255, 255;
   --text-accent: #439ee8;
 }
 
@@ -41,6 +43,8 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
+  --mono-rgb-100: 0, 0, 0;
+  --mono-rgb-100: 0, 0, 0;
   --text-highlight-bg: #2282e233;
 }
 
@@ -335,12 +339,43 @@ html[saved-theme="light"] {
 }
 
 :root {
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-50);
+
+  --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
+  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
+  --background-modifier-border: var(--color-base-30);
+  --background-modifier-border-hover: var(--color-base-35);
+  --background-modifier-border-focus: var(--color-base-40);
+  --code-background: var(--background-primary-alt);
+  --code-normal: var(--text-normal);
+  --code-comment: var(--text-faint);
+  --code-function: var(--color-yellow);
+  --code-important: var(--color-orange);
+  --code-keyword: var(--color-pink);
+  --code-property: var(--color-cyan);
+  --code-punctuation: var(--text-muted);
+  --code-string: var(--color-green);
+  --code-tag: var(--color-red);
+  --code-value: var(--color-purple);
+  --icon-color: var(--text-muted);
+  --link-color: var(--text-accent);
+  --link-color-hover: var(--text-accent-hover);
+  --link-weight: var(--font-weight);
+  --link-external-color: var(--text-accent);
+  --link-external-color-hover: var(--text-accent-hover);
   --color-accent-2: light-dark(#439ee8, #61b4ee);
   --color-accent-hsl: light-dark(#2282e2, #2282e2);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
   --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
   --color-blue: light-dark(#086ddd, #027aff);
   --color-cyan: light-dark(#00bfbc, #53dfdd);
   --color-green: light-dark(#08b94e, #44cf6e);
@@ -348,14 +383,42 @@ html[saved-theme="light"] {
   --color-pink: light-dark(#d53984, #fa99cd);
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --text-highlight-bg: light-dark(#2282e233, #2282e24d);
 }
 body {
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-50);
+  --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
+  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
+  --background-modifier-border: var(--color-base-30);
+  --background-modifier-border-hover: var(--color-base-35);
+  --background-modifier-border-focus: var(--color-base-40);
+  --code-background: var(--background-primary-alt);
+  --code-normal: var(--text-normal);
+  --code-comment: var(--text-faint);
+  --code-function: var(--color-yellow);
+  --code-important: var(--color-orange);
+  --code-keyword: var(--color-pink);
+  --code-property: var(--color-cyan);
+  --code-punctuation: var(--text-muted);
+  --code-string: var(--color-green);
+  --code-tag: var(--color-red);
+  --code-value: var(--color-purple);
+  --icon-color: var(--text-muted);
+  --link-color: var(--text-accent);
+  --link-color-hover: var(--text-accent-hover);
+  --link-weight: var(--font-weight);
+  --link-external-color: var(--text-accent);
+  --link-external-color-hover: var(--text-accent-hover);
   --background-modifier-border: #21201e;
   --background-modifier-border-focus: #535353;
   --background-modifier-border-hover: #363636;
   --background-modifier-hover: #00000011;
   --background-primary: #191919;
+  --background-primary-alt: #2d2d2d;
   --bold-color: inherit;
   --bold-weight: 800;
   --checkbox-border-color: #707070;
@@ -380,10 +443,14 @@ body {
   --collapse-icon-color-collapsed: #439ee8;
   --color-accent-2: light-dark(#439ee8, #61b4ee);
   --color-accent-hsl: light-dark(#2282e2, #2282e2);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
   --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
   --color-blue: light-dark(#086ddd, #027aff);
   --color-cyan: light-dark(#00bfbc, #53dfdd);
   --color-green: light-dark(#08b94e, #44cf6e);
@@ -391,11 +458,13 @@ body {
   --color-pink: light-dark(#d53984, #fa99cd);
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor-link: pointer;
   --font-default: "Arima", cursive;
   --font-text:
     "??", "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
     "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-weight: 400;
   --graph-line: #363636;
   --graph-node-tag: #4f8344;
   --graph-node-unresolved: #707070;
@@ -575,10 +644,12 @@ html {
     line-height: 1.6;
     padding: 5px;
     & > .callout-title-inner > p {
+      --font-weight: 800;
       color: #ffffffcf;
       font-weight: 600;
     }
     .callout-title-inner {
+      --font-weight: 800;
       color: #ffffffcf;
       font-weight: 600;
     }
@@ -611,6 +682,7 @@ body {
   /* LINKS */
   a,
   footer a {
+    --font-weight: var(--link-weight);
     color: var(--text-a, var(--link-color));
     font-weight: var(--link-weight);
     outline: none;
@@ -754,6 +826,7 @@ body {
   }
   /* HEADINGS */
   h1 {
+    --font-weight: 600;
     color: #ffffffcf;
     font-family: "Linux Libertine", "Georgia", "Times", serif;
     font-size: 1.4em;
@@ -769,6 +842,7 @@ body {
     --link-weight: 600;
   }
   h2 {
+    --font-weight: 600;
     color: #ffffffcf;
     font-family: inherit;
     font-size: 1.3em;
@@ -784,6 +858,7 @@ body {
     --link-weight: 600;
   }
   h3 {
+    --font-weight: 600;
     color: #ffffffcf;
     font-family: inherit;
     font-size: 1.15em;
@@ -799,6 +874,7 @@ body {
     --link-weight: 600;
   }
   h4 {
+    --font-weight: 600;
     color: #ffffffcf;
     font-family: inherit;
     font-size: 1.1em;
@@ -814,6 +890,7 @@ body {
     --link-weight: 600;
   }
   h5 {
+    --font-weight: 600;
     color: #ffffffcf;
     font-family: inherit;
     font-size: 1.05em;
@@ -829,6 +906,7 @@ body {
     --link-weight: 600;
   }
   h6 {
+    --font-weight: 600;
     color: #ffffffcf;
     font-family: inherit;
     font-size: 1em;
@@ -965,6 +1043,7 @@ body {
   /* BACKLINKS */
   .backlinks {
     h3 {
+      --font-weight: 600;
       color: #ffffffcf;
       font-family: inherit;
       font-size: 1.15em;
@@ -1083,6 +1162,7 @@ body {
     color: #ffffffcf;
     button.toc-header {
       h3 {
+        --font-weight: 600;
         color: #ffffffcf;
         font-family: inherit;
         font-size: 1.15em;
@@ -1111,6 +1191,7 @@ body {
   .graph,
   .toc {
     h3 {
+      --font-weight: 600;
       color: #ffffffcf;
       font-family: inherit;
       font-size: 1.15em;
@@ -1337,13 +1418,13 @@ body {
   }
   /* BACKGROUNDS */
   section {
-    //background-color: var(--background-primary);
+    background-color: var(--background-primary);
   }
   .page > #quartz-body {
     .sidebar {
-      //background-color: var(--background-primary);
+      background-color: var(--background-primary);
       &.left:has(.explorer) {
-        //background-color: var(--background-primary);
+        background-color: var(--background-primary);
       }
     }
   }
@@ -1380,7 +1461,7 @@ body {
   ul,
   .katex,
   .math {
-    color: var(--color-base-100, var(--text-normal));
+    color: var(--text-normal);
     font-family: var(--font-text, var(--font-default));
     hyphens: none;
   }

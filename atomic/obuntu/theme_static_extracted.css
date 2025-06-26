@@ -1644,7 +1644,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-line-highlight {
-  color: rgb(light-dark(#df7a16, #df7a16));
+  color: light-dark(#df7a16, #df7a16);
 }
 
 .graph-controls {

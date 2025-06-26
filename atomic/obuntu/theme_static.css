@@ -17604,7 +17604,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .graph-view.color-line-highlight {
-  color: rgb(light-dark(#df7a16, #df7a16));
+  color: light-dark(#df7a16, #df7a16);
 }
 
 .graph-controls {

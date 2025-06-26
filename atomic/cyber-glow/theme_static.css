@@ -17240,7 +17240,7 @@ b {
 }
 
 strong {
-  color: rgb(#dadada);
+  color: #dadada;
   font-weight: 800;
   text-shadow:
     0 0 5px #4cadd6,
@@ -17294,7 +17294,7 @@ em {
 }
 
 .cm-strong {
-  color: rgb(#dadada);
+  color: #dadada;
   font-weight: 800;
   text-shadow:
     0 0 5px #4cadd6,

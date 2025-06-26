@@ -987,7 +987,7 @@
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
-  background-color: rgb(light-dark(239, 241, 245, 30, 30, 46));
+  background-color: light-dark(rgb(239, 241, 245), rgb(30, 30, 46));
 }
 
 .xfaLayer {
@@ -9614,7 +9614,7 @@ select.mod-hidden {
   background-color: rgb(inherit);
   border-radius: 8px;
   box-shadow: 0 2px 8px #0000004d;
-  color: rgb(light-dark(76, 79, 105, 198, 208, 245));
+  color: light-dark(rgb(76, 79, 105), rgb(198, 208, 245));
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -12217,7 +12217,7 @@ kbd {
 }
 
 .markdown-rendered button.copy-code-button {
-  background-color: rgb(light-dark(220, 224, 232, 17, 17, 27));
+  background-color: light-dark(rgb(220, 224, 232), rgb(17, 17, 27));
   box-shadow: none;
   color: rgb(inherit);
   font-family:
@@ -18273,7 +18273,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .workspace-split:not(.mod-root) .graph-controls.is-close {
-  background-color: rgb(light-dark(220, 224, 232, 17, 17, 27));
+  background-color: light-dark(rgb(220, 224, 232), rgb(17, 17, 27));
 }
 
 .graph-controls input[type="text"] {
@@ -25157,7 +25157,7 @@ body.theme-light {
 }
 
 .ͼ2 .cm-specialChar {
-  color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
 }
 
 .markdown-source-view.mod-cm6 .cm-embed-block:hover .edit-block-button:hover {
@@ -25251,51 +25251,51 @@ input.slider {
 }
 
 .workspace-split:not(.mod-root) .graph-controls {
-  background-color: rgb(light-dark(220, 224, 232, 17, 17, 27));
+  background-color: light-dark(rgb(220, 224, 232), rgb(17, 17, 27));
 }
 
 .workspace-split:not(.mod-root) .graph-controls:not(.is-close) {
-  background-color: rgb(light-dark(220, 224, 232, 17, 17, 27));
+  background-color: light-dark(rgb(220, 224, 232), rgb(17, 17, 27));
 }
 
 .anp-card-layout .workspace-split:not(.mod-root) .graph-controls.is-close {
-  background-color: rgb(light-dark(230, 233, 239, 24, 24, 37));
+  background-color: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
 }
 
 .anp-card-layout .workspace-split:not(.mod-root) .graph-controls {
-  background-color: rgb(light-dark(230, 233, 239, 24, 24, 37));
+  background-color: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
 }
 
 .anp-card-layout
   .workspace-split:not(.mod-root)
   .graph-controls:not(.is-close) {
-  background-color: rgb(light-dark(230, 233, 239, 24, 24, 37));
+  background-color: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
 }
 
 .anp-border-layout .workspace-split:not(.mod-root) .graph-controls.is-close {
-  background-color: rgb(light-dark(230, 233, 239, 24, 24, 37));
+  background-color: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
 }
 
 .anp-border-layout .workspace-split:not(.mod-root) .graph-controls {
-  background-color: rgb(light-dark(230, 233, 239, 24, 24, 37));
+  background-color: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
 }
 
 .anp-border-layout
   .workspace-split:not(.mod-root)
   .graph-controls:not(.is-close) {
-  background-color: rgb(light-dark(230, 233, 239, 24, 24, 37));
+  background-color: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
 }
 
 .workspace-leaf .graph-controls.is-close {
-  background-color: rgb(light-dark(230, 233, 239, 24, 24, 37));
+  background-color: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
 }
 
 .workspace-leaf .graph-controls {
-  background-color: rgb(light-dark(230, 233, 239, 24, 24, 37));
+  background-color: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
 }
 
 .workspace-leaf .graph-controls:not(.is-close) {
-  background-color: rgb(light-dark(230, 233, 239, 24, 24, 37));
+  background-color: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
 }
 
 .markdown-rendered.rtl .list-bullet {
@@ -25416,19 +25416,19 @@ input.slider {
     --ctp-teal: inherit;
     --ctp-text: inherit;
     --ctp-yellow: inherit;
-    background-color: rgb(light-dark(239, 241, 245, 30, 30, 46));
+    background-color: light-dark(rgb(239, 241, 245), rgb(30, 30, 46));
   }
   body.anp-print {
-    background-color: rgb(light-dark(239, 241, 245, 30, 30, 46));
+    background-color: light-dark(rgb(239, 241, 245), rgb(30, 30, 46));
   }
   .anp-print .markdown-rendered {
-    background-color: rgb(light-dark(239, 241, 245, 30, 30, 46));
+    background-color: light-dark(rgb(239, 241, 245), rgb(30, 30, 46));
   }
   :root:has(.anp-print) {
-    background-color: rgb(light-dark(239, 241, 245, 30, 30, 46));
+    background-color: light-dark(rgb(239, 241, 245), rgb(30, 30, 46));
   }
   .anp-print .print .markdown-preview-view {
-    color: rgb(light-dark(76, 79, 105, 198, 208, 245));
+    color: light-dark(rgb(76, 79, 105), rgb(198, 208, 245));
   }
 }
 
@@ -27275,7 +27275,7 @@ body.anp-border-layout.is-popout-window .workspace {
     [data-callout="multi-column"]
   )
   > .callout-content {
-  background-color: rgb(light-dark(230, 233, 239, 24, 24, 37));
+  background-color: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
   border-left: 6px solid rgb(inherit);
 }
 
@@ -27285,7 +27285,7 @@ body.anp-border-layout.is-popout-window .workspace {
     [data-callout="multi-column"]
   )
   > .callout-content {
-  background-color: rgb(light-dark(230, 233, 239, 24, 24, 37));
+  background-color: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
   border-left: 6px solid rgb(inherit);
 }
 
@@ -27346,7 +27346,7 @@ body.anp-border-layout.is-popout-window .workspace {
     [data-callout="multi-column"]
   )
   > .callout-content {
-  background-color: rgb(light-dark(230, 233, 239, 24, 24, 37));
+  background-color: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
 }
 
 .callout[data-callout-metadata*="anp-vanilla-plus"]:not(
@@ -27355,7 +27355,7 @@ body.anp-border-layout.is-popout-window .workspace {
     [data-callout="multi-column"]
   )
   > .callout-content {
-  background-color: rgb(light-dark(230, 233, 239, 24, 24, 37));
+  background-color: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
 }
 
 .anp-callout-color-toggle .callout[data-callout="note"] {
@@ -29280,9 +29280,9 @@ table.dataview.table-view-table > tbody > tr:hover {
   > .nav-folder-title
   > .nav-folder-title-content:before {
   -webkit-mask-repeat: no-repeat;
-  background-color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  background-color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   background-size: contain;
-  color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   content: " ";
   height: 26px;
   margin-left: -30px;
@@ -31510,7 +31510,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 
 .anp-custom-checkboxes [data-task="?"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(254, 100, 11, 250, 179, 135));
+  background-color: light-dark(rgb(254, 100, 11), rgb(250, 179, 135));
   left: 0px;
 }
 
@@ -31519,18 +31519,18 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(254, 100, 11, 250, 179, 135));
+  background-color: light-dark(rgb(254, 100, 11), rgb(250, 179, 135));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="?"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(254, 100, 11, 250, 179, 135));
+  background-color: light-dark(rgb(254, 100, 11), rgb(250, 179, 135));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="?"] > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(254, 100, 11, 250, 179, 135));
+  color: light-dark(rgb(254, 100, 11), rgb(250, 179, 135));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -31541,7 +31541,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   [data-task="?"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(254, 100, 11, 250, 179, 135));
+  color: light-dark(rgb(254, 100, 11), rgb(250, 179, 135));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -31549,7 +31549,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 }
 
 .anp-custom-checkboxes [data-task="?"][type="checkbox"]:checked:before {
-  color: rgb(light-dark(254, 100, 11, 250, 179, 135));
+  color: light-dark(rgb(254, 100, 11), rgb(250, 179, 135));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -31638,7 +31638,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 
 .anp-custom-checkboxes [data-task="b"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   left: 0px;
 }
 
@@ -31647,18 +31647,18 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="b"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="b"] > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -31669,7 +31669,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   [data-task="b"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -31677,7 +31677,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 }
 
 .anp-custom-checkboxes [data-task="b"][type="checkbox"]:checked:before {
-  color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -31704,7 +31704,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 
 .anp-custom-checkboxes [data-task="I"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  background-color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   left: 0px;
 }
 
@@ -31713,18 +31713,18 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  background-color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="I"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  background-color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="I"] > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -31735,7 +31735,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   [data-task="I"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -31743,7 +31743,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 }
 
 .anp-custom-checkboxes [data-task="I"][type="checkbox"]:checked:before {
-  color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -31770,7 +31770,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 
 .anp-custom-checkboxes [data-task="p"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  background-color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   left: 0px;
 }
 
@@ -31779,18 +31779,18 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  background-color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="p"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  background-color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="p"] > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -31801,7 +31801,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   [data-task="p"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -31809,7 +31809,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 }
 
 .anp-custom-checkboxes [data-task="p"][type="checkbox"]:checked:before {
-  color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -31836,7 +31836,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 
 .anp-custom-checkboxes [data-task="c"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: 100%;
-  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   left: 0px;
 }
 
@@ -31845,13 +31845,13 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: 100%;
-  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="c"][type="checkbox"]:checked:after {
   -webkit-mask-size: 100%;
-  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   left: 0px;
 }
 
@@ -31902,7 +31902,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 
 .anp-custom-checkboxes [data-task="i"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(42, 110, 245, 135, 176, 249));
+  background-color: light-dark(rgb(42, 110, 245), rgb(135, 176, 249));
   left: 0px;
 }
 
@@ -31911,18 +31911,18 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(42, 110, 245, 135, 176, 249));
+  background-color: light-dark(rgb(42, 110, 245), rgb(135, 176, 249));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="i"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(42, 110, 245, 135, 176, 249));
+  background-color: light-dark(rgb(42, 110, 245), rgb(135, 176, 249));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="i"] > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(42, 110, 245, 135, 176, 249));
+  color: light-dark(rgb(42, 110, 245), rgb(135, 176, 249));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -31933,7 +31933,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   [data-task="i"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(42, 110, 245, 135, 176, 249));
+  color: light-dark(rgb(42, 110, 245), rgb(135, 176, 249));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -31941,7 +31941,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 }
 
 .anp-custom-checkboxes [data-task="i"][type="checkbox"]:checked:before {
-  color: rgb(light-dark(42, 110, 245, 135, 176, 249));
+  color: light-dark(rgb(42, 110, 245), rgb(135, 176, 249));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -31968,7 +31968,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 
 .anp-custom-checkboxes [data-task="l"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(136, 57, 239, 203, 166, 247));
+  background-color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
   left: 0px;
 }
 
@@ -31977,18 +31977,18 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(136, 57, 239, 203, 166, 247));
+  background-color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="l"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(136, 57, 239, 203, 166, 247));
+  background-color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="l"] > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(136, 57, 239, 203, 166, 247));
+  color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -31999,7 +31999,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   [data-task="l"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(136, 57, 239, 203, 166, 247));
+  color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -32007,7 +32007,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 }
 
 .anp-custom-checkboxes [data-task="l"][type="checkbox"]:checked:before {
-  color: rgb(light-dark(136, 57, 239, 203, 166, 247));
+  color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -32034,7 +32034,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 
 .anp-custom-checkboxes [data-task="*"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  background-color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   left: 0px;
 }
 
@@ -32043,18 +32043,18 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  background-color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="*"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  background-color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="*"] > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -32065,7 +32065,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   [data-task="*"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -32073,7 +32073,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 }
 
 .anp-custom-checkboxes [data-task="*"][type="checkbox"]:checked:before {
-  color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -32100,7 +32100,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 
 .anp-custom-checkboxes [data-task="n"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(230, 69, 83, 235, 160, 172));
+  background-color: light-dark(rgb(230, 69, 83), rgb(235, 160, 172));
   left: 0px;
 }
 
@@ -32109,18 +32109,18 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(230, 69, 83, 235, 160, 172));
+  background-color: light-dark(rgb(230, 69, 83), rgb(235, 160, 172));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="n"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(230, 69, 83, 235, 160, 172));
+  background-color: light-dark(rgb(230, 69, 83), rgb(235, 160, 172));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="n"] > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(230, 69, 83, 235, 160, 172));
+  color: light-dark(rgb(230, 69, 83), rgb(235, 160, 172));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -32131,7 +32131,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   [data-task="n"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(230, 69, 83, 235, 160, 172));
+  color: light-dark(rgb(230, 69, 83), rgb(235, 160, 172));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -32139,7 +32139,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 }
 
 .anp-custom-checkboxes [data-task="n"][type="checkbox"]:checked:before {
-  color: rgb(light-dark(230, 69, 83, 235, 160, 172));
+  color: light-dark(rgb(230, 69, 83), rgb(235, 160, 172));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -32166,7 +32166,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 
 .anp-custom-checkboxes [data-task="S"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  background-color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   left: 0px;
 }
 
@@ -32175,18 +32175,18 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  background-color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="S"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  background-color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="S"] > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -32197,7 +32197,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   [data-task="S"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -32205,7 +32205,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 }
 
 .anp-custom-checkboxes [data-task="S"][type="checkbox"]:checked:before {
-  color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -32292,7 +32292,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 
 .anp-custom-checkboxes [data-task="<"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(23, 146, 153, 148, 226, 213));
+  background-color: light-dark(rgb(23, 146, 153), rgb(148, 226, 213));
   left: 0px;
 }
 
@@ -32301,18 +32301,18 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(23, 146, 153, 148, 226, 213));
+  background-color: light-dark(rgb(23, 146, 153), rgb(148, 226, 213));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="<"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(23, 146, 153, 148, 226, 213));
+  background-color: light-dark(rgb(23, 146, 153), rgb(148, 226, 213));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="<"] > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(23, 146, 153, 148, 226, 213));
+  color: light-dark(rgb(23, 146, 153), rgb(148, 226, 213));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -32323,7 +32323,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   [data-task="<"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(23, 146, 153, 148, 226, 213));
+  color: light-dark(rgb(23, 146, 153), rgb(148, 226, 213));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -32331,7 +32331,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 }
 
 .anp-custom-checkboxes [data-task="<"][type="checkbox"]:checked:before {
-  color: rgb(light-dark(23, 146, 153, 148, 226, 213));
+  color: light-dark(rgb(23, 146, 153), rgb(148, 226, 213));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -32492,7 +32492,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 
 .anp-custom-checkboxes [data-task="u"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  background-color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   left: 0px;
 }
 
@@ -32501,18 +32501,18 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  background-color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="u"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  background-color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="u"] > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -32523,7 +32523,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   [data-task="u"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -32531,7 +32531,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 }
 
 .anp-custom-checkboxes [data-task="u"][type="checkbox"]:checked:before {
-  color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -32558,7 +32558,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 
 .anp-custom-checkboxes [data-task="d"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   left: 0px;
 }
 
@@ -32567,18 +32567,18 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="d"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="d"] > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -32589,7 +32589,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   [data-task="d"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -32597,7 +32597,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 }
 
 .anp-custom-checkboxes [data-task="d"][type="checkbox"]:checked:before {
-  color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -32624,7 +32624,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 
 .anp-custom-checkboxes [data-task="f"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   left: 0px;
 }
 
@@ -32633,18 +32633,18 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="f"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="f"] > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -32655,7 +32655,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   [data-task="f"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -32663,7 +32663,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 }
 
 .anp-custom-checkboxes [data-task="f"][type="checkbox"]:checked:before {
-  color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -32690,7 +32690,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 
 .anp-custom-checkboxes [data-task="k"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  background-color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   left: 0px;
 }
 
@@ -32699,18 +32699,18 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  background-color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="k"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  background-color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="k"] > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -32721,7 +32721,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   [data-task="k"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -32729,7 +32729,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 }
 
 .anp-custom-checkboxes [data-task="k"][type="checkbox"]:checked:before {
-  color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -32756,7 +32756,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 
 .anp-custom-checkboxes [data-task="w"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(136, 57, 239, 203, 166, 247));
+  background-color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
   left: 0px;
 }
 
@@ -32765,18 +32765,18 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(136, 57, 239, 203, 166, 247));
+  background-color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="w"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(136, 57, 239, 203, 166, 247));
+  background-color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="w"] > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(136, 57, 239, 203, 166, 247));
+  color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -32787,7 +32787,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   [data-task="w"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(136, 57, 239, 203, 166, 247));
+  color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -32795,7 +32795,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 }
 
 .anp-custom-checkboxes [data-task="w"][type="checkbox"]:checked:before {
-  color: rgb(light-dark(136, 57, 239, 203, 166, 247));
+  color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
   font-weight: bold;
   left: 16px;
   margin: 0 3px;
@@ -34980,18 +34980,18 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 }
 
 .excalidraw-dirty {
-  color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
 }
 
 .excalibrain-button.on {
   --input-shadow: inset 0 0 0 2px rgb(inherit);
   --input-shadow-hover: inset 0 0 0 2px rgb(inherit);
-  background-color: rgb(light-dark(239, 241, 245, 30, 30, 46));
+  background-color: light-dark(rgb(239, 241, 245), rgb(30, 30, 46));
   border-color: rgb(inherit);
 }
 
 .excalibrain-button.off {
-  background-color: rgb(light-dark(220, 224, 232, 17, 17, 27));
+  background-color: light-dark(rgb(220, 224, 232), rgb(17, 17, 27));
 }
 
 .table-view-table > thead > tr > th {
@@ -35161,7 +35161,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 }
 
 .calendar .day.svelte-q3wqg9:hover {
-  background-color: rgb(light-dark(220, 224, 232, 17, 17, 27));
+  background-color: light-dark(rgb(220, 224, 232), rgb(17, 17, 27));
 }
 
 .cMenuToolbarDefaultAesthetic {
@@ -35189,7 +35189,7 @@ div[class*="recent-files-"] {
 .gemmy-tooltip.tooltip {
   --background-modifier-message: rgb(inherit);
   border-radius: 4px;
-  color: rgb(light-dark(239, 241, 245, 30, 30, 46));
+  color: light-dark(rgb(239, 241, 245), rgb(30, 30, 46));
   display: block;
   font-size: 16px;
   padding: 8px 12px;

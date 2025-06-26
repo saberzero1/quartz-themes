@@ -1135,7 +1135,7 @@
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
     Cantarell, "Helvetica Neue", "m1+ 1p";
   --text-faint: light-dark(
-    hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 3s5%)),
+    hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 35%)),
     hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 20%))
   );
   --text-muted: light-dark(
@@ -2562,7 +2562,7 @@ body {
   );
   --text-error: var(--color-red);
   --text-faint: light-dark(
-    hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 3s5%)),
+    hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 35%)),
     hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 20%))
   );
   --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
@@ -2809,7 +2809,7 @@ body {
     var(--accent-s),
     calc(var(--accent-l) - 10%)
   );
-  --text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 3s5%));
+  --text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 35%));
   --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 55%));
   --text-normal: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 100%));
   --text-selection: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 6%));

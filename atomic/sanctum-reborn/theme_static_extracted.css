@@ -1431,7 +1431,7 @@ h6 {
 .callout {
   --callout-color: 2, 122, 255;
   --callout-icon: lucide-pencil;
-  background-color: rgba(0, 0, 0, 0, 0.2);
+  background-color: #00000033;
   border: 0px solid rgba(0, 0, 0, 0, 30%);
   border-color: rgba(0, 0, 0, 0, 30%);
   border-radius: 4px;

@@ -24,10 +24,12 @@ html[saved-theme="dark"] {
   }
   --link-external-filter: invert(35%) sepia(28%) saturate(681%)
     hue-rotate(192deg) brightness(94%) contrast(85%);
+  --mono-rgb-100: 255, 255, 255;
   --text-accent: hsl(199, 102%, 86.25%);
   background: #12121840;
   --link-external-filter: invert(35%) sepia(28%) saturate(681%)
     hue-rotate(192deg) brightness(94%) contrast(85%);
+  --mono-rgb-100: 255, 255, 255;
   --text-accent: hsl(199, 102%, 86.25%);
   background: #12121840;
 }
@@ -47,12 +49,12 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --code-background: #24283b40;
   --link-external-filter: invert(62%) sepia(9%) saturate(266%)
     hue-rotate(189deg) brightness(97%) contrast(88%);
-  --code-background: #24283b40;
+  --mono-rgb-100: 0, 0, 0;
   --link-external-filter: invert(62%) sepia(9%) saturate(266%)
     hue-rotate(189deg) brightness(97%) contrast(88%);
+  --mono-rgb-100: 0, 0, 0;
 }
 
 /* cyrillic-ext */
@@ -122,12 +124,43 @@ html[saved-theme="light"] {
 }
 
 :root {
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-50);
+
+  --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
+  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
+  --background-modifier-border: var(--color-base-30);
+  --background-modifier-border-hover: var(--color-base-35);
+  --background-modifier-border-focus: var(--color-base-40);
+  --code-background: var(--background-primary-alt);
+  --code-normal: var(--text-normal);
+  --code-comment: var(--text-faint);
+  --code-function: var(--color-yellow);
+  --code-important: var(--color-orange);
+  --code-keyword: var(--color-pink);
+  --code-property: var(--color-cyan);
+  --code-punctuation: var(--text-muted);
+  --code-string: var(--color-green);
+  --code-tag: var(--color-red);
+  --code-value: var(--color-purple);
+  --icon-color: var(--text-muted);
+  --link-color: var(--text-accent);
+  --link-color-hover: var(--text-accent-hover);
+  --link-weight: var(--font-weight);
+  --link-external-color: var(--text-accent);
+  --link-external-color-hover: var(--text-accent-hover);
   --color-accent-2: light-dark(hsl(199, 102%, 86.25%), hsl(197, 105%, 96.75%));
   --color-accent-hsl: light-dark(#80d0ff, #80d0ff);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
   --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
   --color-blue: light-dark(#086ddd, #027aff);
   --color-cyan: light-dark(#00bfbc, #53dfdd);
   --color-green: light-dark(#08b94e, #44cf6e);
@@ -135,13 +168,41 @@ html[saved-theme="light"] {
   --color-pink: light-dark(#d53984, #fa99cd);
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
 }
 body {
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-50);
+  --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
+  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
+  --background-modifier-border: var(--color-base-30);
+  --background-modifier-border-hover: var(--color-base-35);
+  --background-modifier-border-focus: var(--color-base-40);
+  --code-background: var(--background-primary-alt);
+  --code-normal: var(--text-normal);
+  --code-comment: var(--text-faint);
+  --code-function: var(--color-yellow);
+  --code-important: var(--color-orange);
+  --code-keyword: var(--color-pink);
+  --code-property: var(--color-cyan);
+  --code-punctuation: var(--text-muted);
+  --code-string: var(--color-green);
+  --code-tag: var(--color-red);
+  --code-value: var(--color-purple);
+  --icon-color: var(--text-muted);
+  --link-color: var(--text-accent);
+  --link-color-hover: var(--text-accent-hover);
+  --link-weight: var(--font-weight);
+  --link-external-color: var(--text-accent);
+  --link-external-color-hover: var(--text-accent-hover);
   --background-modifier-border: #292e42;
   --background-modifier-border-focus: #292e42;
   --background-modifier-border-hover: #292e42;
   --background-modifier-hover: #292e42;
   --background-primary: #1a1b26;
+  --background-primary-alt: #1a1b26;
   --bold-color: #7dcfff;
   --bold-weight: 800;
   --checkbox-border-color: #565f89;
@@ -166,10 +227,14 @@ body {
   --collapse-icon-color-collapsed: hsl(199, 102%, 86.25%);
   --color-accent-2: light-dark(hsl(199, 102%, 86.25%), hsl(197, 105%, 96.75%));
   --color-accent-hsl: light-dark(#80d0ff, #80d0ff);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
   --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
   --color-blue: light-dark(#086ddd, #027aff);
   --color-cyan: light-dark(#00bfbc, #53dfdd);
   --color-green: light-dark(#08b94e, #44cf6e);
@@ -177,6 +242,7 @@ body {
   --color-pink: light-dark(#d53984, #fa99cd);
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -186,6 +252,7 @@ body {
     "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif;
+  --font-weight: 400;
   --graph-line: #565f89;
   --graph-node-tag: #ff9e64;
   --graph-node-unresolved: #565f89;
@@ -364,10 +431,12 @@ html {
     line-height: 1.3;
     padding: 8px 16px;
     & > .callout-title-inner > p {
+      --font-weight: 800;
       color: inherit;
       font-weight: 600;
     }
     .callout-title-inner {
+      --font-weight: 800;
       color: inherit;
       font-weight: 600;
     }
@@ -400,6 +469,7 @@ body {
   /* LINKS */
   a,
   footer a {
+    --font-weight: var(--link-weight);
     color: var(--text-a, var(--link-color));
     font-weight: var(--link-weight);
     outline: none;
@@ -543,6 +613,7 @@ body {
   }
   /* HEADINGS */
   h1 {
+    --font-weight: 700;
     color: #ff757f;
     font-family: inherit;
     font-size: 1.802em;
@@ -558,6 +629,7 @@ body {
     --link-weight: 700;
   }
   h2 {
+    --font-weight: 600;
     color: #e0af68;
     font-family: inherit;
     font-size: 1.602em;
@@ -573,6 +645,7 @@ body {
     --link-weight: 600;
   }
   h3 {
+    --font-weight: 600;
     color: #9ece6a;
     font-family: inherit;
     font-size: 1.424em;
@@ -588,6 +661,7 @@ body {
     --link-weight: 600;
   }
   h4 {
+    --font-weight: 600;
     color: #7dcfff;
     font-family: inherit;
     font-size: 1.266em;
@@ -603,6 +677,7 @@ body {
     --link-weight: 600;
   }
   h5 {
+    --font-weight: 600;
     color: #7aa2f7;
     font-family: inherit;
     font-size: 1.125em;
@@ -618,6 +693,7 @@ body {
     --link-weight: 600;
   }
   h6 {
+    --font-weight: 600;
     color: #bb9af7;
     font-family: inherit;
     font-size: 1em;
@@ -753,6 +829,7 @@ body {
   /* BACKLINKS */
   .backlinks {
     h3 {
+      --font-weight: 600;
       color: #9ece6a;
       font-family: inherit;
       font-size: 1.424em;
@@ -871,6 +948,7 @@ body {
     color: #9ece6a;
     button.toc-header {
       h3 {
+        --font-weight: 600;
         color: #9ece6a;
         font-family: inherit;
         font-size: 1.424em;
@@ -899,6 +977,7 @@ body {
   .graph,
   .toc {
     h3 {
+      --font-weight: 600;
       color: #9ece6a;
       font-family: inherit;
       font-size: 1.424em;
@@ -1121,13 +1200,13 @@ body {
   }
   /* BACKGROUNDS */
   section {
-    //background-color: var(--background-primary);
+    background-color: var(--background-primary);
   }
   .page > #quartz-body {
     .sidebar {
-      //background-color: var(--background-primary);
+      background-color: var(--background-primary);
       &.left:has(.explorer) {
-        //background-color: var(--background-primary);
+        background-color: var(--background-primary);
       }
     }
   }
@@ -1164,7 +1243,7 @@ body {
   ul,
   .katex,
   .math {
-    color: var(--color-base-100, var(--text-normal));
+    color: var(--text-normal);
     font-family: var(--font-text, var(--font-default));
     hyphens: none;
   }

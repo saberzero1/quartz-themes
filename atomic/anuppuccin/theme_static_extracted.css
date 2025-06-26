@@ -55,7 +55,7 @@
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
-  background-color: rgb(light-dark(239, 241, 245, 30, 30, 46));
+  background-color: light-dark(rgb(239, 241, 245), rgb(30, 30, 46));
 }
 
 body {
@@ -1121,7 +1121,7 @@ h6 {
 }
 
 .markdown-rendered button.copy-code-button {
-  background-color: rgb(light-dark(220, 224, 232, 17, 17, 27));
+  background-color: light-dark(rgb(220, 224, 232), rgb(17, 17, 27));
   box-shadow: none;
   color: rgb(inherit);
   font-family:

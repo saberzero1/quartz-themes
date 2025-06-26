@@ -1019,10 +1019,7 @@
   --text-editor:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
     Cantarell, "Helvetica Neue", "m1+ 1p";
-  --text-faint: light-dark(
-    hsl(0, 0%, calc(95% - 3s5%)),
-    hsl(0, 0%, calc(10% + 20%))
-  );
+  --text-faint: light-dark(#999999, #4d4d4d);
   --text-muted: light-dark(#666666, #8c8c8c);
   --text-normal: light-dark(hsl(0, 0%, -5%), #cccccc);
   --text-shadow: light-dark(#e6e6e6, #212121);
@@ -2339,10 +2336,7 @@ body {
   --text-accent: light-dark(#8a5cf5, #cbb7fa);
   --text-accent-hover: light-dark(#672cf2, #eee7fd);
   --text-error: #fb464c;
-  --text-faint: light-dark(
-    hsl(0, 0%, calc(95% - 3s5%)),
-    hsl(0, 0%, calc(10% + 20%))
-  );
+  --text-faint: light-dark(#999999, #4d4d4d);
   --text-highlight-bg: #ffd00066;
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: light-dark(#666666, #8c8c8c);
@@ -2485,7 +2479,7 @@ body {
     0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
   --text-accent: #8a5cf5;
   --text-accent-hover: #672cf2;
-  --text-faint: hsl(0, 0%, calc(95% - 3s5%));
+  --text-faint: #999999;
   --text-muted: #666666;
   --text-normal: hsl(0, 0%, -5%);
   --text-selection: #e3e3e3;
@@ -3278,7 +3272,7 @@ body:not(.is-mobile) .app-container {
 .markdown-source-view.mod-cm6 .cm-gutters {
   background-color: transparent;
   border-right: none;
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   flex: 0 0 auto;
   font-size: 12.8px;
   font-variant: tabular-nums;
@@ -3565,7 +3559,7 @@ body:not(.is-mobile) .app-container {
   background-color: transparent;
   border: 1px solid transparent;
   border-top: none;
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   cursor: s-resize;
   display: flex;
   height: 24px;
@@ -3587,7 +3581,7 @@ body:not(.is-mobile) .app-container {
   background-color: transparent;
   border: 1px solid transparent;
   border-inline-start: none;
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   cursor: e-resize;
   display: flex;
   height: 100%;
@@ -4211,7 +4205,7 @@ body.is-frameless .modal {
 }
 
 .pane-empty {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   font-size: 14.992px;
   margin: 8px auto;
   padding: 24px 16px;
@@ -4330,7 +4324,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 }
 
 .view-header-title-parent .view-header-breadcrumb-separator {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   padding: 2px 1px;
 }
 
@@ -5294,7 +5288,7 @@ input {
 }
 
 .modal.mod-plugin-debug .startup-desc {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   font-size: 12.8px;
   margin-inline: 8px;
 }
@@ -5521,7 +5515,7 @@ input {
 
 .setting-add-hotkey-button {
   border-radius: 4px;
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   cursor: pointer;
   height: 32px;
   padding: 4px;
@@ -5529,7 +5523,7 @@ input {
 
 .setting-restore-hotkey-button {
   border-radius: 4px;
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   cursor: pointer;
   height: 32px;
   padding: 4px;
@@ -5949,7 +5943,7 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
 }
 
 .community-item-screenshot .placeholder-icon .svg-icon {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   height: 32px;
   width: 32px;
 }
@@ -6494,7 +6488,7 @@ body:not(.is-mobile)
   --icon-size: 18px;
   --icon-stroke: 2px;
   align-items: center;
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   display: flex;
 }
 
@@ -8055,7 +8049,7 @@ button.mod-destructive {
 }
 
 .list-item.mod-empty {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   font-size: 14.992px;
   margin: 0 auto;
   padding: 16px;
@@ -8098,7 +8092,7 @@ button.mod-destructive {
 }
 
 .list-item-desc {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   display: flex;
   flex-wrap: wrap;
   font-size: 12.8px;
@@ -8593,7 +8587,7 @@ h6:hover .collapse-indicator {
 .markdown-source-view.mod-cm6 .cm-foldPlaceholder {
   background-color: transparent;
   border: none;
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   margin-inline-start: 8px;
   user-select: none;
 }
@@ -9768,7 +9762,7 @@ select.mod-hidden {
 }
 
 .menu-item-desc {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   font-size: 0.8em;
   padding-top: 4px;
 }
@@ -9805,7 +9799,7 @@ select.mod-hidden {
 }
 
 .menu-item.is-disabled {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   cursor: default;
 }
 
@@ -9827,11 +9821,11 @@ select.mod-hidden {
 }
 
 .menu-item.is-disabled .menu-item-icon {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
 }
 
 .menu-item-icon .mod-submenu {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
 }
 
 .menu-item-title {
@@ -10876,7 +10870,7 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 }
 
 .suggestion-empty-suggestion {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
 }
 
 .suggestion-item.is-selected {
@@ -11520,7 +11514,7 @@ body:not(.is-phone)
     light-dark(#e0e0e0, #363636)
   );
   border-radius: 3px;
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   font-size: 8px;
   line-height: 12px;
   padding: 2px 4px;
@@ -11538,7 +11532,7 @@ body:not(.is-phone)
 }
 
 .tree-item-inner-subtext {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   font-size: 85%;
 }
 
@@ -11951,7 +11945,7 @@ kbd {
 }
 
 .cm-s-obsidian span.cm-formatting-quote {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
 }
 
 .cm-s-obsidian .hmd-inactive-line span.cm-formatting-quote {
@@ -13062,7 +13056,7 @@ iframe.external-embed {
 }
 
 .footnote-backref {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   display: inline-block;
   margin-inline-start: 4px;
   text-decoration: none;
@@ -13089,7 +13083,7 @@ iframe.external-embed {
 }
 
 .cm-s-obsidian .cm-line.HyperMD-footnote span.cm-hmd-footnote.cm-formatting {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
 }
 
 .cm-s-obsidian .cm-line.HyperMD-footnote span.cm-hmd-footnote:hover {
@@ -13342,12 +13336,12 @@ iframe.external-embed {
 }
 
 .is-mobile.is-ios .metadata-input-text.mod-datetime.is-empty::before {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   content: attr(placeholder);
 }
 
 .is-mobile.is-ios .metadata-input-text.mod-date.is-empty::before {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   content: attr(placeholder);
 }
 
@@ -13798,10 +13792,7 @@ input.metadata-property-key-input:focus {
 }
 
 .metadata-property-value.mod-external-link:not(:placeholder-shown) {
-  text-decoration-color: light-dark(
-    hsl(0, 0%, calc(95% - 3s5%)),
-    hsl(0, 0%, calc(10% + 20%))
-  );
+  text-decoration-color: light-dark(#999999, #4d4d4d);
   text-decoration-line: underline;
   text-decoration-thickness: auto;
 }
@@ -14219,7 +14210,7 @@ h6 a {
 }
 
 .cm-formatting-header {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   font-weight: 300;
 }
 
@@ -14734,7 +14725,7 @@ hr {
 }
 
 .internal-query .internal-query-header-icon {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   display: flex;
   margin-inline-end: 4px;
 }
@@ -15280,23 +15271,23 @@ a.mobile-tap {
 
 .cm-s-obsidian
   span.cm-footref.cm-inline-footnote.cm-formatting-inline-footnote {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
 }
 
 .cm-s-obsidian span.cm-footref.cm-hmd-barelink.cm-formatting {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
 }
 
 .cm-s-obsidian span.cm-formatting-image {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
 }
 
 .cm-s-obsidian span.cm-formatting-link-string {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
 }
 
 .cm-s-obsidian span.cm-formatting-link {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
 }
 
 .cm-s-obsidian span.hmd-link-icon {
@@ -15549,7 +15540,7 @@ body.is-mobile .markdown-source-view.mod-cm6 .cm-underline {
 }
 
 .cm-s-obsidian span.cm-hmd-escape-backslash {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
 }
 
 .cm-s-obsidian span.cm-footref {
@@ -15968,11 +15959,11 @@ mjx-container {
 }
 
 .cm-s-obsidian .HyperMD-table-row span.cm-hmd-table-sep {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
 }
 
 .cm-s-obsidian .HyperMD-table-row-1 {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
 }
 
 .cm-s-obsidian .HyperMD-table-row-0 {
@@ -16702,7 +16693,7 @@ em {
 
 .bases-toolbar-menu-item.mod-hidden {
   --icon-color: #4d4d4d;
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
 }
 
 .bases-toolbar-menu-item.mod-hidden .bases-property-visibility-button {
@@ -18378,7 +18369,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .publish-section-header-toggle-collapsed-button {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   cursor: pointer;
   height: 9px;
   margin-inline-end: 4px;
@@ -18386,7 +18377,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .publish-section-header-action {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   cursor: pointer;
   margin-inline-start: 12px;
 }
@@ -18558,7 +18549,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .tree-item.mod-custom-nav.hidden .tree-item-self {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
 }
 
 .tree-item.mod-custom-nav .tree-item-inner {
@@ -18656,7 +18647,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .search-input-suggest-button {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   cursor: pointer;
   left: 0;
   opacity: 0;
@@ -18780,7 +18771,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .search-empty-state {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   font-size: 12px;
   font-weight: 100;
   margin: 0;
@@ -18874,7 +18865,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .search-result-hover-button {
   border-radius: 4px;
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   display: flex;
   inset-inline-end: 2px;
   padding: 1px 3px;
@@ -18966,7 +18957,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 .search-result-file-match-destination-file-icon {
   --icon-size: 14px;
   --icon-stroke: 2px;
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   display: flex;
   margin-inline-end: 4px;
 }
@@ -19147,7 +19138,7 @@ body:not(.is-phone)
 }
 
 .slides-close-btn {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   cursor: pointer;
   display: inline-block;
   inset-inline-end: 8px;
@@ -19208,7 +19199,7 @@ body:not(.is-phone)
 }
 
 .vault-list-item-desc {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
 }
 
 .vault-list-item-icon {
@@ -19758,7 +19749,7 @@ button.sync-history-button {
 }
 
 .recent-changes-container .more-button {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   justify-content: center;
 }
 
@@ -20087,7 +20078,7 @@ body.theme-dark {
 }
 
 .canvas-control-item.is-disabled svg {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
 }
 
 .canvas-control-item svg {
@@ -21344,7 +21335,7 @@ textarea.webviewer-adblock-lists {
 
 .help-options-container .setting-icon .svg-icon {
   --icon-size: 48px;
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   stroke-width: 1px;
 }
 
@@ -21467,7 +21458,7 @@ textarea.webviewer-adblock-lists {
 }
 
 .setting-item.mod-change-language .setting-item-name {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   cursor: pointer;
   position: relative;
   top: 3px;
@@ -21550,7 +21541,7 @@ textarea.webviewer-adblock-lists {
 }
 
 .recent-vaults-list-item-option-button {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   height: 30px;
   line-height: 36px;
   position: absolute;
@@ -22044,7 +22035,7 @@ body.is-phone .suggestion-bg {
 }
 
 .mobile-onboarding .form-field-help {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   font-size: 14.992px;
   margin: 6px 0;
 }
@@ -22663,13 +22654,13 @@ body.is-phone .suggestion-bg {
 }
 
 .is-phone .mod-community-plugin .community-item .community-item-updated {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   display: none;
   grid-column: 1 / 2;
 }
 
 .is-phone .mod-community-plugin .community-item .community-item-downloads {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   grid-column: 2 / 2;
   text-align: end;
 }
@@ -22956,7 +22947,7 @@ body.is-tablet .workspace-drawer.mod-left .workspace-drawer-inner {
   --icon-size: 20px;
   --icon-stroke: 2.25px;
   align-items: center;
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   display: flex;
   margin-inline-start: 2px;
 }
@@ -22997,7 +22988,7 @@ body.is-tablet .workspace-drawer.mod-left .workspace-drawer-inner {
 }
 
 .workspace-drawer-action-icon {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
 }
 
 .workspace-drawer-action-short-name {
@@ -23045,7 +23036,7 @@ body.is-tablet .workspace-drawer.mod-left .workspace-drawer-inner {
 .workspace-drawer-active-tab-chevron {
   --icon-size: 18px;
   --icon-stroke: 2px;
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   margin-inline-start: auto;
 }
 
@@ -23186,10 +23177,7 @@ body.is-tablet .sidebar-toggle-button.mod-left {
 }
 
 .is-phone .menu-grabber {
-  background: light-dark(
-    hsl(0, 0%, calc(95% - 3s5%)),
-    hsl(0, 0%, calc(10% + 20%))
-  );
+  background: light-dark(#999999, #4d4d4d);
   border-radius: 16px;
   display: flex;
   height: 4px;
@@ -23765,7 +23753,7 @@ body.is-ios .mobile-tab-switcher-inner-scroll {
   --icon-size: 18px;
   --icon-stroke: 2px;
   align-items: center;
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   display: flex;
 }
 
@@ -23890,7 +23878,7 @@ body.is-ios .mobile-tab-switcher-inner-scroll {
   background-color: light-dark(#e6e6e6, #0f0f0f);
   border-radius: 16px;
   box-shadow: 0 0 0 1px #ffffff0d;
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   display: flex;
   height: 100%;
   justify-content: center;
@@ -24136,7 +24124,7 @@ body.is-ios .mobile-tab-switcher-inner-scroll {
 }
 
 .mobile-vault-chooser-version {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   font-size: 14.992px;
 }
 
@@ -24233,7 +24221,7 @@ input.mobile-vault-chooser-field-input {
 }
 
 .side-dock-ribbon-action[aria-label="Help"] {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   margin: -25px;
   visibility: hidden;
 }
@@ -24375,7 +24363,7 @@ mjx-c {
 }
 
 .markdown-preview-view ul > li.task-list-item.is-checked {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   margin: -1px 1px;
   text-decoration: line-through;
 }
@@ -24782,7 +24770,7 @@ mjx-c {
 }
 
 .side-dock-ribbon-action[aria-label="Settings"] {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
 }
 
 .cm-s-obsidian span.cm-hashtag {
@@ -25032,7 +25020,7 @@ mjx-c {
 }
 
 .cm-formatting-quote {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
@@ -25226,13 +25214,13 @@ input.document-replace-input:focus {
 }
 
 .theme-dark .markdown-preview-view .internal-link.is-unresolved {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   filter: brightness(1.2);
   opacity: 0.5;
 }
 
 .theme-light .markdown-preview-view .internal-link.is-unresolved {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   filter: opacity(0.3);
   opacity: 0.5;
 }
@@ -25548,7 +25536,7 @@ input.document-replace-input:focus {
 }
 
 .tag-pane-tag-count {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   padding: 0;
 }
 
@@ -25675,7 +25663,7 @@ input.document-replace-input:focus {
 }
 
 .outline .pane-empty {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   font-size: 12px;
   margin: 0 0 0 15px;
 }
@@ -25693,7 +25681,7 @@ input.document-replace-input:focus {
 
 .search-result-count {
   background: transparent;
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   font-size: 90%;
   opacity: 1;
   padding: -5px 0;
@@ -25799,7 +25787,7 @@ input.search-input:focus {
 
 .list-item:hover .list-item-ending-flair {
   background: transparent;
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
 }
 
 .workspace-leaf-content .search-input {
@@ -25838,7 +25826,7 @@ input.search-input:focus {
 }
 
 .workspace-leaf-content .search-input::placeholder {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   font-size: 12px;
 }
 

@@ -22,56 +22,38 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-
-  --background-modifier-border: rgb(65, 72, 104);
-  --background-modifier-border-focus: rgb(65, 72, 104);
-  --background-modifier-border-hover: rgb(65, 72, 104);
-  --background-modifier-hover: rgb(65, 72, 104);
-  --background-primary: rgb(36, 40, 59);
   --bold-color: hsl(202, 100%, 75%);
   --checkbox-border-color: rgb(86, 95, 137);
   --checkbox-border-color-hover: rgb(86, 95, 137);
   --checkbox-color: rgb(86, 95, 137);
   --checkbox-color-hover: rgb(86, 95, 137);
-  --code-background: rgb(35, 35, 55);
-  --code-normal: rgb(192, 202, 245);
   --graph-line: rgb(86, 95, 137);
   --graph-node-tag: rgb(255, 158, 100);
   --h1-color: rgb(255, 117, 127);
   --inline-title-color: rgb(187, 154, 247);
   --italic-color: hsl(202, 100%, 75%);
+  --mono-rgb-100: 255, 255, 255;
   --tag-background: rgba(187, 154, 247, 0.15);
   --tag-color: rgb(187, 154, 247);
   --text-accent: hsl(199, 102%, 86.25%);
-  --text-faint: rgb(86, 95, 137);
-  --text-highlight-bg: rgba(255, 158, 100, 0.4);
-  --text-muted: rgb(169, 177, 214);
-  --text-normal: rgb(192, 202, 245);
 
-  --background-modifier-border: rgb(65, 72, 104);
-  --background-modifier-border-focus: rgb(65, 72, 104);
-  --background-modifier-border-hover: rgb(65, 72, 104);
-  --background-modifier-hover: rgb(65, 72, 104);
-  --background-primary: rgb(36, 40, 59);
+  --text-highlight-bg: rgba(255, 158, 100, 0.4);
   --bold-color: hsl(202, 100%, 75%);
   --checkbox-border-color: rgb(86, 95, 137);
   --checkbox-border-color-hover: rgb(86, 95, 137);
   --checkbox-color: rgb(86, 95, 137);
   --checkbox-color-hover: rgb(86, 95, 137);
-  --code-background: rgb(35, 35, 55);
-  --code-normal: rgb(192, 202, 245);
   --graph-line: rgb(86, 95, 137);
   --graph-node-tag: rgb(255, 158, 100);
   --h1-color: rgb(255, 117, 127);
   --inline-title-color: rgb(187, 154, 247);
   --italic-color: hsl(202, 100%, 75%);
+  --mono-rgb-100: 255, 255, 255;
   --tag-background: rgba(187, 154, 247, 0.15);
   --tag-color: rgb(187, 154, 247);
   --text-accent: hsl(199, 102%, 86.25%);
-  --text-faint: rgb(86, 95, 137);
+
   --text-highlight-bg: rgba(255, 158, 100, 0.4);
-  --text-muted: rgb(169, 177, 214);
-  --text-normal: rgb(192, 202, 245);
 }
 
 .darkmode {
@@ -189,12 +171,43 @@ html[saved-theme="dark"] {
 }
 
 :root {
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-50);
+
+  --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
+  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
+  --background-modifier-border: var(--color-base-30);
+  --background-modifier-border-hover: var(--color-base-35);
+  --background-modifier-border-focus: var(--color-base-40);
+  --code-background: var(--background-primary-alt);
+  --code-normal: var(--text-normal);
+  --code-comment: var(--text-faint);
+  --code-function: var(--color-yellow);
+  --code-important: var(--color-orange);
+  --code-keyword: var(--color-pink);
+  --code-property: var(--color-cyan);
+  --code-punctuation: var(--text-muted);
+  --code-string: var(--color-green);
+  --code-tag: var(--color-red);
+  --code-value: var(--color-purple);
+  --icon-color: var(--text-muted);
+  --link-color: var(--text-accent);
+  --link-color-hover: var(--text-accent-hover);
+  --link-weight: var(--font-weight);
+  --link-external-color: var(--text-accent);
+  --link-external-color-hover: var(--text-accent-hover);
   --color-accent-2: light-dark(hsl(199, 102%, 86.25%), hsl(197, 105%, 96.75%));
   --color-accent-hsl: light-dark(hsl(202, 100%, 75%), hsl(202, 100%, 75%));
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
   --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
   --color-blue: light-dark(#086ddd, rgb(122, 162, 247));
   --color-cyan: light-dark(#00bfbc, rgb(125, 207, 255));
   --color-green: light-dark(#08b94e, rgb(158, 206, 106));
@@ -202,13 +215,41 @@ html[saved-theme="dark"] {
   --color-pink: light-dark(#d53984, rgb(187, 154, 247));
   --color-purple: light-dark(#7852ee, rgb(157, 124, 21));
   --color-red: light-dark(#e93147, rgb(255, 117, 127));
+  --color-yellow: light-dark(#e0ac00, rgb(224, 175, 104));
 }
 body {
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-50);
+  --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
+  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
+  --background-modifier-border: var(--color-base-30);
+  --background-modifier-border-hover: var(--color-base-35);
+  --background-modifier-border-focus: var(--color-base-40);
+  --code-background: var(--background-primary-alt);
+  --code-normal: var(--text-normal);
+  --code-comment: var(--text-faint);
+  --code-function: var(--color-yellow);
+  --code-important: var(--color-orange);
+  --code-keyword: var(--color-pink);
+  --code-property: var(--color-cyan);
+  --code-punctuation: var(--text-muted);
+  --code-string: var(--color-green);
+  --code-tag: var(--color-red);
+  --code-value: var(--color-purple);
+  --icon-color: var(--text-muted);
+  --link-color: var(--text-accent);
+  --link-color-hover: var(--text-accent-hover);
+  --link-weight: var(--font-weight);
+  --link-external-color: var(--text-accent);
+  --link-external-color-hover: var(--text-accent-hover);
   --background-modifier-border: #363636;
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;
   --background-modifier-hover: rgba(255, 255, 255, 0.067);
   --background-primary: #000;
+  --background-primary-alt: #111;
   --bold-color: inherit;
   --bold-weight: 800;
   --checkbox-border-color: rgb(86, 95, 137);
@@ -233,10 +274,14 @@ body {
   --collapse-icon-color-collapsed: hsl(199, 102%, 86.25%);
   --color-accent-2: light-dark(hsl(199, 102%, 86.25%), hsl(197, 105%, 96.75%));
   --color-accent-hsl: light-dark(hsl(202, 100%, 75%), hsl(202, 100%, 75%));
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
   --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
   --color-blue: light-dark(#086ddd, rgb(122, 162, 247));
   --color-cyan: light-dark(#00bfbc, rgb(125, 207, 255));
   --color-green: light-dark(#08b94e, rgb(158, 206, 106));
@@ -244,6 +289,7 @@ body {
   --color-pink: light-dark(#d53984, rgb(187, 154, 247));
   --color-purple: light-dark(#7852ee, rgb(157, 124, 21));
   --color-red: light-dark(#e93147, rgb(255, 117, 127));
+  --color-yellow: light-dark(#e0ac00, rgb(224, 175, 104));
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -253,6 +299,7 @@ body {
     "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif;
+  --font-weight: 400;
   --graph-line: #3f3f3f;
   --graph-node-tag: rgb(158, 206, 106);
   --graph-node-unresolved: rgb(86, 95, 137);
@@ -432,10 +479,12 @@ html {
     line-height: 1.3;
     padding: 0;
     & > .callout-title-inner > p {
+      --font-weight: 800;
       color: inherit;
       font-weight: 600;
     }
     .callout-title-inner {
+      --font-weight: 800;
       color: inherit;
       font-weight: 600;
     }
@@ -468,6 +517,7 @@ body {
   /* LINKS */
   a,
   footer a {
+    --font-weight: var(--link-weight);
     color: var(--text-a, var(--link-color));
     font-weight: var(--link-weight);
     outline: none;
@@ -611,6 +661,7 @@ body {
   }
   /* HEADINGS */
   h1 {
+    --font-weight: 700;
     color: rgb(255, 117, 127);
     font-family: inherit;
     font-size: 1.802em;
@@ -626,6 +677,7 @@ body {
     --link-weight: 700;
   }
   h2 {
+    --font-weight: 600;
     color: rgb(224, 175, 104);
     font-family: inherit;
     font-size: 1.602em;
@@ -641,6 +693,7 @@ body {
     --link-weight: 600;
   }
   h3 {
+    --font-weight: 600;
     color: rgb(158, 206, 106);
     font-family: inherit;
     font-size: 1.424em;
@@ -656,6 +709,7 @@ body {
     --link-weight: 600;
   }
   h4 {
+    --font-weight: 600;
     color: rgb(125, 207, 255);
     font-family: inherit;
     font-size: 1.266em;
@@ -671,6 +725,7 @@ body {
     --link-weight: 600;
   }
   h5 {
+    --font-weight: 600;
     color: rgb(122, 162, 247);
     font-family: inherit;
     font-size: 1.125em;
@@ -686,6 +741,7 @@ body {
     --link-weight: 600;
   }
   h6 {
+    --font-weight: 600;
     color: rgb(187, 154, 247);
     font-family: inherit;
     font-size: 1em;
@@ -822,6 +878,7 @@ body {
   /* BACKLINKS */
   .backlinks {
     h3 {
+      --font-weight: 600;
       color: rgb(158, 206, 106);
       font-family: inherit;
       font-size: 1.424em;
@@ -940,6 +997,7 @@ body {
     color: rgb(158, 206, 106);
     button.toc-header {
       h3 {
+        --font-weight: 600;
         color: rgb(158, 206, 106);
         font-family: inherit;
         font-size: 1.424em;
@@ -968,6 +1026,7 @@ body {
   .graph,
   .toc {
     h3 {
+      --font-weight: 600;
       color: rgb(158, 206, 106);
       font-family: inherit;
       font-size: 1.424em;
@@ -1190,13 +1249,13 @@ body {
   }
   /* BACKGROUNDS */
   section {
-    //background-color: var(--background-primary);
+    background-color: var(--background-primary);
   }
   .page > #quartz-body {
     .sidebar {
-      //background-color: var(--background-primary);
+      background-color: var(--background-primary);
       &.left:has(.explorer) {
-        //background-color: var(--background-primary);
+        background-color: var(--background-primary);
       }
     }
   }
@@ -1233,7 +1292,7 @@ body {
   ul,
   .katex,
   .math {
-    color: var(--color-base-100, var(--text-normal));
+    color: var(--text-normal);
     font-family: var(--font-text, var(--font-default));
     hyphens: none;
   }

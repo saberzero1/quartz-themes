@@ -87,10 +87,7 @@
   --text-editor:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
     Cantarell, "Helvetica Neue", "m1+ 1p";
-  --text-faint: light-dark(
-    hsl(0, 0%, calc(95% - 3s5%)),
-    hsl(0, 0%, calc(10% + 20%))
-  );
+  --text-faint: light-dark(#999999, #4d4d4d);
   --text-muted: light-dark(#666666, #8c8c8c);
   --text-normal: light-dark(hsl(0, 0%, -5%), #cccccc);
   --text-shadow: light-dark(#e6e6e6, #212121);
@@ -801,10 +798,7 @@ body {
   --text-accent: light-dark(#8a5cf5, #cbb7fa);
   --text-accent-hover: light-dark(#672cf2, #eee7fd);
   --text-error: #fb464c;
-  --text-faint: light-dark(
-    hsl(0, 0%, calc(95% - 3s5%)),
-    hsl(0, 0%, calc(10% + 20%))
-  );
+  --text-faint: light-dark(#999999, #4d4d4d);
   --text-highlight-bg: #ffd00066;
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: light-dark(#666666, #8c8c8c);
@@ -1518,7 +1512,7 @@ input[type="search"] {
     light-dark(#e0e0e0, #363636)
   );
   border-radius: 3px;
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   font-size: 8px;
   line-height: 12px;
   padding: 2px 4px;
@@ -1540,7 +1534,7 @@ input[type="search"] {
 }
 
 .tree-item-inner-subtext {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   font-size: 85%;
 }
 
@@ -1614,7 +1608,7 @@ svg.svg-icon {
 }
 
 .view-header-title-parent .view-header-breadcrumb-separator {
-  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
+  color: light-dark(#999999, #4d4d4d);
   padding: 2px 1px;
 }
 
@@ -1906,7 +1900,7 @@ svg.svg-icon {
     0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
   --text-accent: #8a5cf5;
   --text-accent-hover: #672cf2;
-  --text-faint: hsl(0, 0%, calc(95% - 3s5%));
+  --text-faint: #999999;
   --text-muted: #666666;
   --text-normal: hsl(0, 0%, -5%);
   --text-selection: #e3e3e3;
