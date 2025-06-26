@@ -22,8 +22,10 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
+  --mono-rgb-100: 255, 255, 255;
 
   --text-accent: #ab9af5;
+  --mono-rgb-100: 255, 255, 255;
 
   --text-accent: #ab9af5;
 }
@@ -43,35 +45,9 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
+  --mono-rgb-100: 0, 0, 0;
+  --mono-rgb-100: 0, 0, 0;
 
-  --code-background: #f1f1ff;
-  --code-comment: #a3a3a3;
-  --code-function: #00a300;
-  --code-important: #ff7f00;
-  --code-keyword: #c300f1;
-  --code-normal: #f1f1f1;
-  --code-property: #0048a3;
-  --code-punctuation: #c300f1;
-  --code-string: #0000f1;
-  --code-tag: #c300f1;
-  --code-value: #f18f00;
-
-  --text-muted: #353535;
-  --text-normal: #000;
-
-  --code-background: #f1f1ff;
-  --code-comment: #a3a3a3;
-  --code-function: #00a300;
-  --code-important: #ff7f00;
-  --code-keyword: #c300f1;
-  --code-normal: #f1f1f1;
-  --code-property: #0048a3;
-  --code-punctuation: #c300f1;
-  --code-string: #0000f1;
-  --code-tag: #c300f1;
-  --code-value: #f18f00;
-
-  --text-muted: #353535;
   --text-normal: #000;
 }
 
@@ -142,12 +118,44 @@ html[saved-theme="light"] {
 }
 
 :root {
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-50);
+
+  --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
+  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
+  --background-modifier-border: var(--color-base-30);
+  --background-modifier-border-hover: var(--color-base-35);
+  --background-modifier-border-focus: var(--color-base-40);
+  --code-background: var(--background-primary-alt);
+  --code-normal: var(--text-normal);
+  --code-comment: var(--text-faint);
+  --code-function: var(--color-yellow);
+  --code-important: var(--color-orange);
+  --code-keyword: var(--color-pink);
+  --code-property: var(--color-cyan);
+  --code-punctuation: var(--text-muted);
+  --code-string: var(--color-green);
+  --code-tag: var(--color-red);
+  --code-value: var(--color-purple);
+  --icon-color: var(--text-muted);
+  --link-color: var(--text-accent);
+  --link-color-hover: var(--text-accent-hover);
+  --link-weight: var(--font-weight);
+  --link-external-color: var(--text-accent);
+  --link-external-color-hover: var(--text-accent-hover);
+  --background-primary-alt: light-dark(#e1e1e1, #212121);
   --color-accent-2: light-dark(#ab9af5, #cdc5fa);
   --color-accent-hsl: light-dark(#8b6cef, #8b6cef);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
   --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
   --color-blue: light-dark(#086ddd, #027aff);
   --color-cyan: light-dark(#00bfbc, #53dfdd);
   --color-green: light-dark(#08b94e, #44cf6e);
@@ -155,13 +163,41 @@ html[saved-theme="light"] {
   --color-pink: light-dark(#d53984, #fa99cd);
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
 }
 body {
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-50);
+  --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
+  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
+  --background-modifier-border: var(--color-base-30);
+  --background-modifier-border-hover: var(--color-base-35);
+  --background-modifier-border-focus: var(--color-base-40);
+  --code-background: var(--background-primary-alt);
+  --code-normal: var(--text-normal);
+  --code-comment: var(--text-faint);
+  --code-function: var(--color-yellow);
+  --code-important: var(--color-orange);
+  --code-keyword: var(--color-pink);
+  --code-property: var(--color-cyan);
+  --code-punctuation: var(--text-muted);
+  --code-string: var(--color-green);
+  --code-tag: var(--color-red);
+  --code-value: var(--color-purple);
+  --icon-color: var(--text-muted);
+  --link-color: var(--text-accent);
+  --link-color-hover: var(--text-accent-hover);
+  --link-weight: var(--font-weight);
+  --link-external-color: var(--text-accent);
+  --link-external-color-hover: var(--text-accent-hover);
   --background-modifier-border: #007fff38;
   --background-modifier-border-focus: #8b6cef;
   --background-modifier-border-hover: #007fff48;
   --background-modifier-hover: #007fff28;
   --background-primary: #000;
+  --background-primary-alt: light-dark(#e1e1e1, #212121);
   --bold-color: inherit;
   --bold-weight: 700;
   --checkbox-border-color: #0072d3;
@@ -186,10 +222,14 @@ body {
   --collapse-icon-color-collapsed: #0072d3;
   --color-accent-2: light-dark(#ab9af5, #cdc5fa);
   --color-accent-hsl: light-dark(#8b6cef, #8b6cef);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
   --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
   --color-blue: light-dark(#086ddd, #027aff);
   --color-cyan: light-dark(#00bfbc, #53dfdd);
   --color-green: light-dark(#08b94e, #44cf6e);
@@ -197,6 +237,7 @@ body {
   --color-pink: light-dark(#d53984, #fa99cd);
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -204,6 +245,7 @@ body {
     sans-serif;
   --font-text:
     "??", "??", "JetBrains Mono", Consolas, "Roboto Mono", Menlo, monospace;
+  --font-weight: 400;
   --graph-line: #007fff;
   --graph-node-tag: #20f120;
   --graph-node-unresolved: #a3a3a3;
@@ -372,10 +414,12 @@ html {
     line-height: 1.3;
     padding: 0;
     & > .callout-title-inner > p {
+      --font-weight: 1000;
       color: inherit;
       font-weight: 800;
     }
     .callout-title-inner {
+      --font-weight: 1000;
       color: inherit;
       font-weight: 800;
     }
@@ -408,6 +452,7 @@ body {
   /* LINKS */
   a,
   footer a {
+    --font-weight: var(--link-weight);
     color: var(--text-a, var(--link-color));
     font-weight: var(--link-weight);
     outline: none;
@@ -551,6 +596,7 @@ body {
   }
   /* HEADINGS */
   h1 {
+    --font-weight: 800;
     color: #f1f100;
     font-family: "JetBrains Mono", Consolas, "Roboto Mono", Menlo, monospace;
     font-size: 2em;
@@ -566,6 +612,7 @@ body {
     --link-weight: 800;
   }
   h2 {
+    --font-weight: 800;
     color: #f1f100;
     font-family: "JetBrains Mono", Consolas, "Roboto Mono", Menlo, monospace;
     font-size: 1.5em;
@@ -581,6 +628,7 @@ body {
     --link-weight: 800;
   }
   h3 {
+    --font-weight: 800;
     color: #f1f100;
     font-family: "JetBrains Mono", Consolas, "Roboto Mono", Menlo, monospace;
     font-size: 1.17em;
@@ -596,6 +644,7 @@ body {
     --link-weight: 800;
   }
   h4 {
+    --font-weight: 800;
     color: #f1f100;
     font-family: "JetBrains Mono", Consolas, "Roboto Mono", Menlo, monospace;
     font-size: 1em;
@@ -611,6 +660,7 @@ body {
     --link-weight: 800;
   }
   h5 {
+    --font-weight: 800;
     color: #f1f100;
     font-family: "JetBrains Mono", Consolas, "Roboto Mono", Menlo, monospace;
     font-size: 0.83em;
@@ -626,6 +676,7 @@ body {
     --link-weight: 800;
   }
   h6 {
+    --font-weight: 800;
     color: #f1f100;
     font-family: "JetBrains Mono", Consolas, "Roboto Mono", Menlo, monospace;
     font-size: 0.67em;
@@ -748,6 +799,7 @@ body {
   /* BACKLINKS */
   .backlinks {
     h3 {
+      --font-weight: 800;
       color: #f1f100;
       font-family: "JetBrains Mono", Consolas, "Roboto Mono", Menlo, monospace;
       font-size: 1.17em;
@@ -866,6 +918,7 @@ body {
     color: #f1f100;
     button.toc-header {
       h3 {
+        --font-weight: 800;
         color: #f1f100;
         font-family:
           "JetBrains Mono", Consolas, "Roboto Mono", Menlo, monospace;
@@ -895,6 +948,7 @@ body {
   .graph,
   .toc {
     h3 {
+      --font-weight: 800;
       color: #f1f100;
       font-family: "JetBrains Mono", Consolas, "Roboto Mono", Menlo, monospace;
       font-size: 1.17em;
@@ -1122,13 +1176,13 @@ body {
   }
   /* BACKGROUNDS */
   section {
-    //background-color: var(--background-primary);
+    background-color: var(--background-primary);
   }
   .page > #quartz-body {
     .sidebar {
-      //background-color: var(--background-primary);
+      background-color: var(--background-primary);
       &.left:has(.explorer) {
-        //background-color: var(--background-primary);
+        background-color: var(--background-primary);
       }
     }
   }
@@ -1165,7 +1219,7 @@ body {
   ul,
   .katex,
   .math {
-    color: var(--color-base-100, var(--text-normal));
+    color: var(--text-normal);
     font-family: var(--font-text, var(--font-default));
     hyphens: none;
   }

@@ -22,7 +22,9 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
+  --mono-rgb-100: 255, 255, 255;
   --text-accent: #ddd3fd;
+  --mono-rgb-100: 255, 255, 255;
   --text-accent: #ddd3fd;
 }
 
@@ -41,14 +43,12 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-
-  --code-normal: #4db95a;
+  --mono-rgb-100: 0, 0, 0;
   --tag-background: #eeb662;
   --tag-background-hover: #f7d865;
   --tag-color: #3a527e;
   --tag-color-hover: #3a527e;
-
-  --code-normal: #4db95a;
+  --mono-rgb-100: 0, 0, 0;
   --tag-background: #eeb662;
   --tag-background-hover: #f7d865;
   --tag-color: #3a527e;
@@ -332,12 +332,43 @@ html[saved-theme="light"] {
 }
 
 :root {
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-50);
+
+  --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
+  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
+  --background-modifier-border: var(--color-base-30);
+  --background-modifier-border-hover: var(--color-base-35);
+  --background-modifier-border-focus: var(--color-base-40);
+  --code-background: var(--background-primary-alt);
+  --code-normal: var(--text-normal);
+  --code-comment: var(--text-faint);
+  --code-function: var(--color-yellow);
+  --code-important: var(--color-orange);
+  --code-keyword: var(--color-pink);
+  --code-property: var(--color-cyan);
+  --code-punctuation: var(--text-muted);
+  --code-string: var(--color-green);
+  --code-tag: var(--color-red);
+  --code-value: var(--color-purple);
+  --icon-color: var(--text-muted);
+  --link-color: var(--text-accent);
+  --link-color-hover: var(--text-accent-hover);
+  --link-weight: var(--font-weight);
+  --link-external-color: var(--text-accent);
+  --link-external-color-hover: var(--text-accent-hover);
   --color-accent-2: light-dark(#ddd3fd, hsl(253, 92.4%, 101.91%));
   --color-accent-hsl: light-dark(#b79af9, #b79af9);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
   --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
   --color-blue: light-dark(#086ddd, #027aff);
   --color-cyan: light-dark(#00bfbc, #53dfdd);
   --color-green: light-dark(#08b94e, #44cf6e);
@@ -345,15 +376,43 @@ html[saved-theme="light"] {
   --color-pink: light-dark(#d53984, #fa99cd);
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --link-external-color: light-dark(#2f9bb7, #7fcae6);
   --link-external-color-hover: light-dark(#48bfe0, #89ebe5);
 }
 body {
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-50);
+  --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
+  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
+  --background-modifier-border: var(--color-base-30);
+  --background-modifier-border-hover: var(--color-base-35);
+  --background-modifier-border-focus: var(--color-base-40);
+  --code-background: var(--background-primary-alt);
+  --code-normal: var(--text-normal);
+  --code-comment: var(--text-faint);
+  --code-function: var(--color-yellow);
+  --code-important: var(--color-orange);
+  --code-keyword: var(--color-pink);
+  --code-property: var(--color-cyan);
+  --code-punctuation: var(--text-muted);
+  --code-string: var(--color-green);
+  --code-tag: var(--color-red);
+  --code-value: var(--color-purple);
+  --icon-color: var(--text-muted);
+  --link-color: var(--text-accent);
+  --link-color-hover: var(--text-accent-hover);
+  --link-weight: var(--font-weight);
+  --link-external-color: var(--text-accent);
+  --link-external-color-hover: var(--text-accent-hover);
   --background-modifier-border: #473b5e;
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;
   --background-modifier-hover: #ffffff11;
   --background-primary: #000;
+  --background-primary-alt: #111;
   --bold-color: inherit;
   --bold-weight: 600;
   --checkbox-border-color: #ccc;
@@ -378,10 +437,14 @@ body {
   --collapse-icon-color-collapsed: #ddd3fd;
   --color-accent-2: light-dark(#ddd3fd, hsl(253, 92.4%, 101.91%));
   --color-accent-hsl: light-dark(#b79af9, #b79af9);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
   --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
   --color-blue: light-dark(#086ddd, #027aff);
   --color-cyan: light-dark(#00bfbc, #53dfdd);
   --color-green: light-dark(#08b94e, #44cf6e);
@@ -389,6 +452,7 @@ body {
   --color-pink: light-dark(#d53984, #fa99cd);
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor-link: pointer;
   --font-default:
     "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -398,6 +462,7 @@ body {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, "Spectral",
     -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", serif;
+  --font-weight: 400;
   --graph-line: #3f3f3f;
   --graph-node-tag: #44cf6e;
   --graph-node-unresolved: #ccc;
@@ -575,10 +640,12 @@ html {
     line-height: 1.3;
     padding: 0;
     & > .callout-title-inner > p {
+      --font-weight: 800;
       color: inherit;
       font-weight: 600;
     }
     .callout-title-inner {
+      --font-weight: 800;
       color: inherit;
       font-weight: 600;
     }
@@ -611,6 +678,7 @@ body {
   /* LINKS */
   a,
   footer a {
+    --font-weight: var(--link-weight);
     color: var(--text-a, var(--link-color));
     font-weight: var(--link-weight);
     outline: none;
@@ -754,6 +822,7 @@ body {
   }
   /* HEADINGS */
   h1 {
+    --font-weight: 700;
     color: #d46876;
     font-family: "Playfair Display";
     font-size: clamp(2.027em, calc(0.4rem + 5.1vw), 2.986em);
@@ -770,6 +839,7 @@ body {
     --link-weight: 700;
   }
   h2 {
+    --font-weight: 600;
     color: inherit;
     font-family: inherit;
     font-size: clamp(1.802em, calc(0.6rem + 3.7vw), 2.488em);
@@ -785,6 +855,7 @@ body {
     --link-weight: 600;
   }
   h3 {
+    --font-weight: 600;
     color: inherit;
     font-family: inherit;
     font-size: clamp(1.602em, calc(0.8rem + 2.5vw), 2.074em);
@@ -800,6 +871,7 @@ body {
     --link-weight: 600;
   }
   h4 {
+    --font-weight: 600;
     color: inherit;
     font-family: inherit;
     font-size: clamp(1.424em, calc(1rem + 3vw), 1.728em);
@@ -815,6 +887,7 @@ body {
     --link-weight: 600;
   }
   h5 {
+    --font-weight: 600;
     color: inherit;
     font-family: inherit;
     font-size: clamp(1.266em, calc(1rem + 3vw), 1.44em);
@@ -830,6 +903,7 @@ body {
     --link-weight: 600;
   }
   h6 {
+    --font-weight: 600;
     color: inherit;
     font-family: inherit;
     font-size: clamp(1.125em, calc(1rem + 3vw), 1.2em);
@@ -965,6 +1039,7 @@ body {
   /* BACKLINKS */
   .backlinks {
     h3 {
+      --font-weight: 600;
       color: inherit;
       font-family: inherit;
       font-size: clamp(1.602em, calc(0.8rem + 2.5vw), 2.074em);
@@ -1085,6 +1160,7 @@ body {
     color: inherit;
     button.toc-header {
       h3 {
+        --font-weight: 600;
         color: inherit;
         font-family: inherit;
         font-size: clamp(1.602em, calc(0.8rem + 2.5vw), 2.074em);
@@ -1113,6 +1189,7 @@ body {
   .graph,
   .toc {
     h3 {
+      --font-weight: 600;
       color: inherit;
       font-family: inherit;
       font-size: clamp(1.602em, calc(0.8rem + 2.5vw), 2.074em);
@@ -1335,13 +1412,13 @@ body {
   }
   /* BACKGROUNDS */
   section {
-    //background-color: var(--background-primary);
+    background-color: var(--background-primary);
   }
   .page > #quartz-body {
     .sidebar {
-      //background-color: var(--background-primary);
+      background-color: var(--background-primary);
       &.left:has(.explorer) {
-        //background-color: var(--background-primary);
+        background-color: var(--background-primary);
       }
     }
   }
@@ -1378,7 +1455,7 @@ body {
   ul,
   .katex,
   .math {
-    color: var(--color-base-100, var(--text-normal));
+    color: var(--text-normal);
     font-family: var(--font-text, var(--font-default));
     hyphens: none;
   }

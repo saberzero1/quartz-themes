@@ -22,11 +22,10 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-
-  --background-modifier-border: #d9dde8;
+  --mono-rgb-100: 255, 255, 255;
   --text-accent: #7089eb;
   --text-highlight-bg: #7988ec79;
-  --background-modifier-border: #d9dde8;
+  --mono-rgb-100: 255, 255, 255;
   --text-accent: #7089eb;
   --text-highlight-bg: #7988ec79;
 }
@@ -46,7 +45,9 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
+  --mono-rgb-100: 0, 0, 0;
   --text-highlight-bg: #ffc80075;
+  --mono-rgb-100: 0, 0, 0;
   --text-highlight-bg: #ffc80075;
 }
 
@@ -763,12 +764,43 @@ body {
 }
 
 :root {
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-50);
+
+  --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
+  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
+  --background-modifier-border: var(--color-base-30);
+  --background-modifier-border-hover: var(--color-base-35);
+  --background-modifier-border-focus: var(--color-base-40);
+  --code-background: var(--background-primary-alt);
+  --code-normal: var(--text-normal);
+  --code-comment: var(--text-faint);
+  --code-function: var(--color-yellow);
+  --code-important: var(--color-orange);
+  --code-keyword: var(--color-pink);
+  --code-property: var(--color-cyan);
+  --code-punctuation: var(--text-muted);
+  --code-string: var(--color-green);
+  --code-tag: var(--color-red);
+  --code-value: var(--color-purple);
+  --icon-color: var(--text-muted);
+  --link-color: var(--text-accent);
+  --link-color-hover: var(--text-accent-hover);
+  --link-weight: var(--font-weight);
+  --link-external-color: var(--text-accent);
+  --link-external-color-hover: var(--text-accent-hover);
   --color-accent-2: light-dark(#a7b5f3, #d3dbfa);
   --color-accent-hsl: light-dark(#7988ec, #7988ec);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
   --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
   --color-blue: light-dark(#086ddd, #027aff);
   --color-cyan: light-dark(#00bfbc, #53dfdd);
   --color-green: light-dark(#08b94e, #44cf6e);
@@ -776,13 +808,41 @@ body {
   --color-pink: light-dark(#d53984, #fa99cd);
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
 }
 body {
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-50);
+  --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
+  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
+  --background-modifier-border: var(--color-base-30);
+  --background-modifier-border-hover: var(--color-base-35);
+  --background-modifier-border-focus: var(--color-base-40);
+  --code-background: var(--background-primary-alt);
+  --code-normal: var(--text-normal);
+  --code-comment: var(--text-faint);
+  --code-function: var(--color-yellow);
+  --code-important: var(--color-orange);
+  --code-keyword: var(--color-pink);
+  --code-property: var(--color-cyan);
+  --code-punctuation: var(--text-muted);
+  --code-string: var(--color-green);
+  --code-tag: var(--color-red);
+  --code-value: var(--color-purple);
+  --icon-color: var(--text-muted);
+  --link-color: var(--text-accent);
+  --link-color-hover: var(--text-accent-hover);
+  --link-weight: var(--font-weight);
+  --link-external-color: var(--text-accent);
+  --link-external-color-hover: var(--text-accent-hover);
   --background-modifier-border: #9496ac66;
   --background-modifier-border-focus: #abaac5;
   --background-modifier-border-hover: #c4c6ca;
   --background-modifier-hover: #ffffff11;
   --background-primary: #f7f7f8bf;
+  --background-primary-alt: #f1f2f3;
   --bold-color: inherit;
   --bold-weight: 900;
   --checkbox-border-color: #ff7272;
@@ -807,10 +867,14 @@ body {
   --collapse-icon-color-collapsed: #7089eb;
   --color-accent-2: light-dark(#a7b5f3, #d3dbfa);
   --color-accent-hsl: light-dark(#7988ec, #7988ec);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
   --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
   --color-blue: light-dark(#086ddd, #027aff);
   --color-cyan: light-dark(#00bfbc, #53dfdd);
   --color-green: light-dark(#08b94e, #44cf6e);
@@ -818,9 +882,11 @@ body {
   --color-pink: light-dark(#d53984, #fa99cd);
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor-link: pointer;
   --font-default: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   --font-text: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --font-weight: 400;
   --graph-line: #c4c6ca;
   --graph-node-tag: #84cc7c;
   --graph-node-unresolved: #787689;
@@ -1083,6 +1149,7 @@ html {
     padding: 12px;
     width: 100%;
     & > .callout-title-inner > p {
+      --font-weight: 900;
       color: inherit;
       display: block;
       font-size: 1.25em;
@@ -1091,6 +1158,7 @@ html {
       width: fit-content;
     }
     .callout-title-inner {
+      --font-weight: 900;
       color: inherit;
       display: block;
       font-size: 1.25em;
@@ -1127,6 +1195,7 @@ body {
   /* LINKS */
   a,
   footer a {
+    --font-weight: var(--link-weight);
     color: var(--text-a, var(--link-color));
     font-weight: var(--link-weight);
     outline: none;
@@ -1270,6 +1339,7 @@ body {
   }
   /* HEADINGS */
   h1 {
+    --font-weight: 700;
     color: #54bab6;
     font-family:
       "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
@@ -1287,6 +1357,7 @@ body {
     --link-weight: 700;
   }
   h2 {
+    --font-weight: 700;
     color: #8391ed;
     font-family:
       "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
@@ -1304,6 +1375,7 @@ body {
     --link-weight: 700;
   }
   h3 {
+    --font-weight: 700;
     color: #b78cda;
     font-family:
       "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
@@ -1321,6 +1393,7 @@ body {
     --link-weight: 700;
   }
   h4 {
+    --font-weight: 700;
     color: #e991c4;
     font-family:
       "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
@@ -1338,6 +1411,7 @@ body {
     --link-weight: 700;
   }
   h5 {
+    --font-weight: 700;
     color: #ff7272;
     font-family:
       "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
@@ -1355,6 +1429,7 @@ body {
     --link-weight: 700;
   }
   h6 {
+    --font-weight: 700;
     color: #ffa058;
     font-family:
       "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
@@ -1481,6 +1556,7 @@ body {
   /* BACKLINKS */
   .backlinks {
     h3 {
+      --font-weight: 700;
       color: #b78cda;
       font-family:
         "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
@@ -1605,6 +1681,7 @@ body {
     color: #b78cda;
     button.toc-header {
       h3 {
+        --font-weight: 700;
         color: #b78cda;
         font-family:
           "Merriweather Sans", "Book Antiqua", "Nunito Sans",
@@ -1636,6 +1713,7 @@ body {
   .graph,
   .toc {
     h3 {
+      --font-weight: 700;
       color: #b78cda;
       font-family:
         "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
@@ -1862,13 +1940,13 @@ body {
   }
   /* BACKGROUNDS */
   section {
-    //background-color: var(--background-primary);
+    background-color: var(--background-primary);
   }
   .page > #quartz-body {
     .sidebar {
-      //background-color: var(--background-primary);
+      background-color: var(--background-primary);
       &.left:has(.explorer) {
-        //background-color: var(--background-primary);
+        background-color: var(--background-primary);
       }
     }
   }
@@ -1905,7 +1983,7 @@ body {
   ul,
   .katex,
   .math {
-    color: var(--color-base-100, var(--text-normal));
+    color: var(--text-normal);
     font-family: var(--font-text, var(--font-default));
     hyphens: none;
   }

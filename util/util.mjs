@@ -578,5 +578,15 @@ export function cleanRulesAfterRun(cssString) {
   cssString = cssString.replaceAll(lightDarkRGBA, "light-dark(rgba($1), rgba($2));")
   cssString = cssString.replaceAll(lightDarkInherit, "inherit;")
 
+  return cleanup(cssString)
+}
+
+function cleanup(cssString) {
+  cssString = cssString.replace(/rgba\(((?:[\d\.]+,\s*){3,})(?:[\d\.]+,\s*)([\d\.]+)\);/gms, "rgba($1$2);") // Fix rgba with more than 4 values
+  cssString = cssString.replace(/rgba?\((\#[\da-fA-F]{3,8})\);/gms, "$1;") // Fix hex colors in rgba
+  cssString = cssString.replace(/\#{2,}([\da-fA-F]{3,8});/gms, "#$1;") // Fix hex colors with more than 2 #
+  cssString = cssString.replace(/rgba?\((light-dark\([^\)]+\))\);/gms, "$1;") // Fix light-dark() in rgba
+  cssString = cssString.replace(/;\s*;/gms, ";") // Remove duplicate semicolons
+
   return cssString
 }

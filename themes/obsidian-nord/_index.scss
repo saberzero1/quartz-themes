@@ -22,6 +22,8 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
+  --mono-rgb-100: 255, 255, 255;
+  --mono-rgb-100: 255, 255, 255;
 }
 
 :root[saved-theme="light"],
@@ -39,6 +41,8 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
+  --mono-rgb-100: 0, 0, 0;
+  --mono-rgb-100: 0, 0, 0;
 }
 
 @font-face {
@@ -202,8 +206,36 @@ html[saved-theme="light"] {
 }
 
 :root {
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-50);
+
+  --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
+  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
+  --background-modifier-border: var(--color-base-30);
+  --background-modifier-border-hover: var(--color-base-35);
+  --background-modifier-border-focus: var(--color-base-40);
+  --code-background: var(--background-primary-alt);
+  --code-normal: var(--text-normal);
+  --code-comment: var(--text-faint);
+  --code-function: var(--color-yellow);
+  --code-important: var(--color-orange);
+  --code-keyword: var(--color-pink);
+  --code-property: var(--color-cyan);
+  --code-punctuation: var(--text-muted);
+  --code-string: var(--color-green);
+  --code-tag: var(--color-red);
+  --code-value: var(--color-purple);
+  --icon-color: var(--text-muted);
+  --link-color: var(--text-accent);
+  --link-color-hover: var(--text-accent-hover);
+  --link-weight: var(--font-weight);
+  --link-external-color: var(--text-accent);
+  --link-external-color-hover: var(--text-accent-hover);
   --background-modifier-border: light-dark(#e5e9f0, #434c5e);
   --background-primary: light-dark(#ffffff, #2e3440);
+  --background-primary-alt: light-dark(#ffffff, #2e3440);
   --bold-color: light-dark(#a3be8c, #ebcb8b);
   --checkbox-border-color: light-dark(#81a1c1, #8fbcbb);
   --checkbox-border-color-hover: light-dark(#81a1c1, #8fbcbb);
@@ -213,10 +245,14 @@ html[saved-theme="light"] {
   --code-normal: light-dark(#88c0d0, #88c0d0);
   --color-accent-2: light-dark(#cb7d89, #d799a4);
   --color-accent-hsl: light-dark(#be6069, #be6069);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
   --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
   --color-blue: light-dark(#086ddd, #027aff);
   --color-cyan: light-dark(#00bfbc, #53dfdd);
   --color-green: light-dark(#08b94e, #44cf6e);
@@ -224,6 +260,7 @@ html[saved-theme="light"] {
   --color-pink: light-dark(#d53984, #fa99cd);
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --graph-line: light-dark(#d8dee9, #4c566a);
   --graph-node-tag: light-dark(#bf616a, #bf616a);
   --h1-color: light-dark(#bf616a, #bf616a);
@@ -240,11 +277,38 @@ html[saved-theme="light"] {
   --text-normal: light-dark(#434c5e, #eceff4);
 }
 body {
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-50);
+  --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
+  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
+  --background-modifier-border: var(--color-base-30);
+  --background-modifier-border-hover: var(--color-base-35);
+  --background-modifier-border-focus: var(--color-base-40);
+  --code-background: var(--background-primary-alt);
+  --code-normal: var(--text-normal);
+  --code-comment: var(--text-faint);
+  --code-function: var(--color-yellow);
+  --code-important: var(--color-orange);
+  --code-keyword: var(--color-pink);
+  --code-property: var(--color-cyan);
+  --code-punctuation: var(--text-muted);
+  --code-string: var(--color-green);
+  --code-tag: var(--color-red);
+  --code-value: var(--color-purple);
+  --icon-color: var(--text-muted);
+  --link-color: var(--text-accent);
+  --link-color-hover: var(--text-accent-hover);
+  --link-weight: var(--font-weight);
+  --link-external-color: var(--text-accent);
+  --link-external-color-hover: var(--text-accent-hover);
   --background-modifier-border: light-dark(#e5e9f0, #434c5e);
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;
   --background-modifier-hover: #ffffff11;
   --background-primary: light-dark(#ffffff, #2e3440);
+  --background-primary-alt: light-dark(#ffffff, #2e3440);
   --bold-color: light-dark(#a3be8c, #ebcb8b);
   --bold-weight: 600;
   --checkbox-border-color: light-dark(#81a1c1, #8fbcbb);
@@ -269,10 +333,14 @@ body {
   --collapse-icon-color-collapsed: #d08770;
   --color-accent-2: light-dark(#cb7d89, #d799a4);
   --color-accent-hsl: light-dark(#be6069, #be6069);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
   --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
   --color-blue: light-dark(#086ddd, #027aff);
   --color-cyan: light-dark(#00bfbc, #53dfdd);
   --color-green: light-dark(#08b94e, #44cf6e);
@@ -280,6 +348,7 @@ body {
   --color-pink: light-dark(#d53984, #fa99cd);
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -289,6 +358,7 @@ body {
     "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif;
+  --font-weight: 400;
   --graph-line: light-dark(#d8dee9, #4c566a);
   --graph-node-tag: light-dark(#bf616a, #bf616a);
   --graph-node-unresolved: #d8dee9;
@@ -467,10 +537,12 @@ html {
     line-height: 1.3;
     padding: 0;
     & > .callout-title-inner > p {
+      --font-weight: 800;
       color: inherit;
       font-weight: 600;
     }
     .callout-title-inner {
+      --font-weight: 800;
       color: inherit;
       font-weight: 600;
     }
@@ -503,6 +575,7 @@ body {
   /* LINKS */
   a,
   footer a {
+    --font-weight: var(--link-weight);
     color: var(--text-a, var(--link-color));
     font-weight: var(--link-weight);
     outline: none;
@@ -646,6 +719,7 @@ body {
   }
   /* HEADINGS */
   h1 {
+    --font-weight: 700;
     color: light-dark(#bf616a, #bf616a);
     font-family: inherit;
     font-size: 1.802em;
@@ -661,6 +735,7 @@ body {
     --link-weight: 700;
   }
   h2 {
+    --font-weight: 600;
     color: light-dark(#ebcb8b, #ebcb8b);
     font-family: inherit;
     font-size: 1.602em;
@@ -676,6 +751,7 @@ body {
     --link-weight: 600;
   }
   h3 {
+    --font-weight: 600;
     color: light-dark(#a3be8c, #a3be8c);
     font-family: inherit;
     font-size: 1.424em;
@@ -691,6 +767,7 @@ body {
     --link-weight: 600;
   }
   h4 {
+    --font-weight: 600;
     color: light-dark(#b48ead, #b48ead);
     font-family: inherit;
     font-size: 1.266em;
@@ -706,6 +783,7 @@ body {
     --link-weight: 600;
   }
   h5 {
+    --font-weight: 600;
     color: light-dark(#8fbcbb, #8fbcbb);
     font-family: inherit;
     font-size: 1.125em;
@@ -721,6 +799,7 @@ body {
     --link-weight: 600;
   }
   h6 {
+    --font-weight: 600;
     color: light-dark(#81a1c1, #81a1c1);
     font-family: inherit;
     font-size: 1em;
@@ -859,6 +938,7 @@ body {
   /* BACKLINKS */
   .backlinks {
     h3 {
+      --font-weight: 600;
       color: light-dark(#a3be8c, #a3be8c);
       font-family: inherit;
       font-size: 1.424em;
@@ -977,6 +1057,7 @@ body {
     color: light-dark(#a3be8c, #a3be8c);
     button.toc-header {
       h3 {
+        --font-weight: 600;
         color: light-dark(#a3be8c, #a3be8c);
         font-family: inherit;
         font-size: 1.424em;
@@ -1005,6 +1086,7 @@ body {
   .graph,
   .toc {
     h3 {
+      --font-weight: 600;
       color: light-dark(#a3be8c, #a3be8c);
       font-family: inherit;
       font-size: 1.424em;
@@ -1228,13 +1310,13 @@ body {
   }
   /* BACKGROUNDS */
   section {
-    //background-color: var(--background-primary);
+    background-color: var(--background-primary);
   }
   .page > #quartz-body {
     .sidebar {
-      //background-color: var(--background-primary);
+      background-color: var(--background-primary);
       &.left:has(.explorer) {
-        //background-color: var(--background-primary);
+        background-color: var(--background-primary);
       }
     }
   }
@@ -1271,7 +1353,7 @@ body {
   ul,
   .katex,
   .math {
-    color: var(--color-base-100, var(--text-normal));
+    color: var(--text-normal);
     font-family: var(--font-text, var(--font-default));
     hyphens: none;
   }

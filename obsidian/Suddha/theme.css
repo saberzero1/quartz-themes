@@ -310,7 +310,7 @@
 
   --text-normal: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 100%));
   --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 55%));
-  --text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 3s5%));
+  --text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 35%));
   --text-selection: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 6%));
 
   --text-shadow: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 80%));
