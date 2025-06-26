@@ -949,53 +949,53 @@
 }
 
 :root {
-  --background-primary: light-dark(var(--color-base-20), var(--color-base-00));
+  --background-primary: light-dark(var(--color-base-00), var(--color-base-20));
   --background-secondary: light-dark(
-    var(--color-base-00),
-    var(--color-base-10)
+    var(--color-base-10),
+    var(--color-base-00)
   );
   --background-secondary-alt: light-dark(
-    var(--color-base-30),
-    var(--color-base-05)
+    var(--color-base-05),
+    var(--color-base-30)
   );
   --blockquote-background-color: light-dark(
     var(--color-base-00),
     var(--color-base-00)
   );
-  --blockquote-color: light-dark(var(--color-accent-alt), var(--color-base-40));
-  --code-background: light-dark(#15222c, var(--color-base-20));
-  --code-comment: light-dark(#3f6a87, #82a2c8);
+  --blockquote-color: light-dark(var(--color-base-40), var(--color-accent-alt));
+  --code-background: light-dark(var(--color-base-20), #15222c);
+  --code-comment: light-dark(#82a2c8, #3f6a87);
   --color-accent: light-dark(
     hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
     hsl(var(--accent-h), var(--accent-s), var(--accent-l))
   );
   --color-accent-1: light-dark(
     hsl(
-      calc(var(--accent-h) - 3),
-      calc(var(--accent-s) * 1.02),
-      calc(var(--accent-l) * 1.15)
-    ),
-    hsl(
       calc(var(--accent-h) - 1),
       calc(var(--accent-s) * 1.01),
       calc(var(--accent-l) * 1.075)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
     )
   );
   --color-accent-2: light-dark(
     hsl(
-      calc(var(--accent-h) - 5),
-      calc(var(--accent-s) * 1.05),
-      calc(var(--accent-l) * 1.29)
-    ),
-    hsl(
       calc(var(--accent-h) - 3),
       calc(var(--accent-s) * 1.02),
       calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
     )
   );
   --color-accent-alt: light-dark(
-    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-dark) + 15%)),
-    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 25%))
+    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 25%)),
+    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-dark) + 15%))
   );
   --color-accent-hsl: light-dark(
     var(--accent-h),
@@ -1005,45 +1005,45 @@
     var(--accent-s),
     var(--accent-l)
   );
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
   --color-emphasis: light-dark(
     var(--text-accent-emphasis),
     var(--text-accent-emphasis)
   );
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --embed-background-color: light-dark(
-    var(--color-base-30),
-    var(--color-base-10)
+    var(--color-base-10),
+    var(--color-base-30)
   );
   --graph-line: light-dark(
-    var(--color-base-50, var(--background-modifier-border-focus)),
-    var(--color-base-30, var(--background-modifier-border-focus))
+    var(--color-base-30, var(--background-modifier-border-focus)),
+    var(--color-base-50, var(--background-modifier-border-focus))
   );
-  --graph-node: light-dark(var(--text-accent-hover), var(--color-accent-alt));
+  --graph-node: light-dark(var(--color-accent-alt), var(--text-accent-hover));
   --graph-node-attachment: light-dark(var(--color-yellow), var(--color-yellow));
   --graph-node-focused: light-dark(var(--text-accent), var(--text-accent));
   --graph-node-tag: light-dark(var(--color-green), var(--color-green));
   --graph-node-unresolved: light-dark(
-    var(--color-base-60),
-    var(--color-base-30)
+    var(--color-base-30),
+    var(--color-base-60)
   );
   --graph-text: light-dark(var(--text-normal), var(--text-normal));
   --h1-color: light-dark(var(--heading-color), var(--heading-color));
@@ -1052,9 +1052,9 @@
   --h4-color: light-dark(var(--heading-color), var(--heading-color));
   --h5-color: light-dark(var(--heading-color), var(--heading-color));
   --h6-color: light-dark(var(--heading-color), var(--heading-color));
-  --heading-color: light-dark(#dee8ed, var(--color-base-40));
-  --inline-title-border: light-dark(var(--color-base-35), var(--color-base-25));
-  --inline-title-color: light-dark(#3d6681, #7c93a4);
+  --heading-color: light-dark(var(--color-base-40), #dee8ed);
+  --inline-title-border: light-dark(var(--color-base-25), var(--color-base-35));
+  --inline-title-color: light-dark(#7c93a4, #3d6681);
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
   --page-border: 9px solid transparent;
@@ -1064,7 +1064,7 @@
     var(--code-background),
     var(--code-background)
   );
-  --rendered-code-text: light-dark(var(--color-orange), var(--color-red));
+  --rendered-code-text: light-dark(var(--color-red), var(--color-orange));
   --safe-area-inset-bottom: env(safe-area-inset-bottom);
   --safe-area-inset-left: env(safe-area-inset-left);
   --safe-area-inset-right: env(safe-area-inset-right);
@@ -1078,7 +1078,7 @@
     var(--color-base-00),
     var(--color-base-00)
   );
-  --tab-divider-color: light-dark(var(--color-base-30), var(--color-base-25));
+  --tab-divider-color: light-dark(var(--color-base-25), var(--color-base-30));
   --tab-text-color: light-dark(var(--color-base-35), var(--color-base-35));
   --tab-text-color-active: light-dark(
     var(--color-base-50),
@@ -1100,48 +1100,48 @@
     var(--text-accent),
     var(--text-accent)
   );
-  --table-border-color: light-dark(var(--color-base-35), var(--color-base-25));
+  --table-border-color: light-dark(var(--color-base-25), var(--color-base-35));
   --table-header-background: light-dark(
     var(--color-base-10),
     var(--color-base-10)
   );
   --table-header-background-hover: light-dark(
-    var(--color-base-25),
-    var(--color-base-10)
+    var(--color-base-10),
+    var(--color-base-25)
   );
   --table-row-background-hover: light-dark(
     var(--color-base-10),
     var(--color-base-10)
   );
   --table-row-even-background: light-dark(
-    var(--color-base-30),
-    var(--color-base-00)
+    var(--color-base-00),
+    var(--color-base-30)
   );
   --table-row-odd-background: light-dark(
     var(--color-base-20),
     var(--color-base-20)
   );
   --text-accent: light-dark(
-    hsl(var(--accent-h), var(--accent-s), var(--accent-dark)),
-    hsl(var(--accent-h), var(--accent-s), var(--accent-l))
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
+    hsl(var(--accent-h), var(--accent-s), var(--accent-dark))
   );
   --text-accent-emphasis: light-dark(
-    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-dark) + 10%)),
-    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2%))
+    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2%)),
+    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-dark) + 10%))
   );
   --text-accent-hover: light-dark(
-    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-dark) + 20%)),
-    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 10%))
+    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 10%)),
+    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-dark) + 20%))
   );
   --text-accent-hover-embed: light-dark(
-    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 50%)),
-    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%))
+    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%)),
+    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 50%))
   );
   --text-completed-checkboxes: light-dark(#3e657c, #3e657c);
   --text-completed-checkboxes-embed: light-dark(#3f6b88, #3f6b88);
-  --text-highlight-editing: light-dark(#f0eaaf, #000);
+  --text-highlight-editing: light-dark(#000, #f0eaaf);
   --text-highlight-rendered: light-dark(#252525, #252525);
-  --text-normal: light-dark(var(--color-base-100), var(--color-base-70));
+  --text-normal: light-dark(var(--color-base-70), var(--color-base-100));
   --titlebar-background-focused: light-dark(
     var(--color-base-00),
     var(--color-base-00)
@@ -1787,15 +1787,15 @@ body {
   --background-modifier-message: rgba(0, 0, 0, 0.9);
   --background-modifier-success: var(--color-green);
   --background-modifier-success-rgb: var(--color-green-rgb);
-  --background-primary: light-dark(var(--color-base-20), var(--color-base-00));
+  --background-primary: light-dark(var(--color-base-00), var(--color-base-20));
   --background-primary-alt: var(--color-base-10);
   --background-secondary: light-dark(
-    var(--color-base-00),
-    var(--color-base-10)
+    var(--color-base-10),
+    var(--color-base-00)
   );
   --background-secondary-alt: light-dark(
-    var(--color-base-30),
-    var(--color-base-05)
+    var(--color-base-05),
+    var(--color-base-30)
   );
   --bases-embed-border: 1px solid var(--background-modifier-border);
   --bases-embed-border-radius: var(--radius-s);
@@ -1836,7 +1836,7 @@ body {
   );
   --blockquote-border-color: var(--interactive-accent);
   --blockquote-border-thickness: 2px;
-  --blockquote-color: light-dark(var(--color-accent-alt), var(--color-base-40));
+  --blockquote-color: light-dark(var(--color-base-40), var(--color-accent-alt));
   --blockquote-font-style: normal;
   --blockquote-style: italic;
   --bold-color: inherit;
@@ -1892,10 +1892,10 @@ body {
   --checklist-done-color: var(--text-muted);
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: var(--radius-s);
-  --code-background: light-dark(#15222c, var(--color-base-20));
+  --code-background: light-dark(var(--color-base-20), #15222c);
   --code-border-color: var(--background-modifier-border);
   --code-border-width: 0px;
-  --code-comment: light-dark(#3f6a87, #82a2c8);
+  --code-comment: light-dark(#82a2c8, #3f6a87);
   --code-function: var(--color-yellow);
   --code-important: var(--color-orange);
   --code-keyword: var(--color-pink);
@@ -1917,31 +1917,31 @@ body {
   );
   --color-accent-1: light-dark(
     hsl(
-      calc(var(--accent-h) - 3),
-      calc(var(--accent-s) * 1.02),
-      calc(var(--accent-l) * 1.15)
-    ),
-    hsl(
       calc(var(--accent-h) - 1),
       calc(var(--accent-s) * 1.01),
       calc(var(--accent-l) * 1.075)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
     )
   );
   --color-accent-2: light-dark(
     hsl(
-      calc(var(--accent-h) - 5),
-      calc(var(--accent-s) * 1.05),
-      calc(var(--accent-l) * 1.29)
-    ),
-    hsl(
       calc(var(--accent-h) - 3),
       calc(var(--accent-s) * 1.02),
       calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
     )
   );
   --color-accent-alt: light-dark(
-    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-dark) + 15%)),
-    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 25%))
+    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 25%)),
+    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-dark) + 15%))
   );
   --color-accent-hsl: light-dark(
     var(--accent-h),
@@ -1951,30 +1951,30 @@ body {
     var(--accent-s),
     var(--accent-l)
   );
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
   --color-emphasis: light-dark(
     var(--text-accent-emphasis),
     var(--text-accent-emphasis)
   );
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -1996,8 +1996,8 @@ body {
   --dropdown-padding: 0 1.9em 0 0.8em;
   --embed-background: inherit;
   --embed-background-color: light-dark(
-    var(--color-base-30),
-    var(--color-base-10)
+    var(--color-base-10),
+    var(--color-base-30)
   );
   --embed-block-shadow-hover:
     0 0 0 1px var(--background-modifier-border),
@@ -2081,16 +2081,16 @@ body {
   --footnote-size: var(--font-smaller);
   --graph-controls-width: 240px;
   --graph-line: light-dark(
-    var(--color-base-50, var(--background-modifier-border-focus)),
-    var(--color-base-30, var(--background-modifier-border-focus))
+    var(--color-base-30, var(--background-modifier-border-focus)),
+    var(--color-base-50, var(--background-modifier-border-focus))
   );
-  --graph-node: light-dark(var(--text-accent-hover), var(--color-accent-alt));
+  --graph-node: light-dark(var(--color-accent-alt), var(--text-accent-hover));
   --graph-node-attachment: light-dark(var(--color-yellow), var(--color-yellow));
   --graph-node-focused: light-dark(var(--text-accent), var(--text-accent));
   --graph-node-tag: light-dark(var(--color-green), var(--color-green));
   --graph-node-unresolved: light-dark(
-    var(--color-base-60),
-    var(--color-base-30)
+    var(--color-base-30),
+    var(--color-base-60)
   );
   --graph-text: light-dark(var(--text-normal), var(--text-normal));
   --h1-color: light-dark(var(--heading-color), var(--heading-color));
@@ -2136,7 +2136,7 @@ body {
   --h6-variant: normal;
   --h6-weight: 600;
   --header-height: 40px;
-  --heading-color: light-dark(#dee8ed, var(--color-base-40));
+  --heading-color: light-dark(var(--color-base-40), #dee8ed);
   --heading-formatting: var(--text-faint);
   --heading-spacing: calc(var(--p-spacing) * 2.5);
   --hr-color: var(--background-modifier-border);
@@ -2169,8 +2169,8 @@ body {
   --indentation-guide-source-indent: 0.25em;
   --indentation-guide-width: 1px;
   --indentation-guide-width-active: 1px;
-  --inline-title-border: light-dark(var(--color-base-35), var(--color-base-25));
-  --inline-title-color: light-dark(#3d6681, #7c93a4);
+  --inline-title-border: light-dark(var(--color-base-25), var(--color-base-35));
+  --inline-title-color: light-dark(#7c93a4, #3d6681);
   --inline-title-font: var(--h1-font);
   --inline-title-line-height: var(--h1-line-height);
   --inline-title-margin-bottom: 0.5em;
@@ -2374,7 +2374,7 @@ body {
     var(--code-background),
     var(--code-background)
   );
-  --rendered-code-text: light-dark(var(--color-orange), var(--color-red));
+  --rendered-code-text: light-dark(var(--color-red), var(--color-orange));
   --ribbon-background: var(--background-secondary);
   --ribbon-background-collapsed: var(--background-primary);
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
@@ -2444,7 +2444,7 @@ body {
     var(--color-base-00)
   );
   --tab-curve: 6px;
-  --tab-divider-color: light-dark(var(--color-base-30), var(--color-base-25));
+  --tab-divider-color: light-dark(var(--color-base-25), var(--color-base-30));
   --tab-font-size: var(--font-ui-small);
   --tab-font-weight: inherit;
   --tab-max-width: 320px;
@@ -2492,7 +2492,7 @@ body {
   --table-add-button-border-color: var(--background-modifier-border);
   --table-add-button-border-width: var(--table-border-width);
   --table-background: transparent;
-  --table-border-color: light-dark(var(--color-base-35), var(--color-base-25));
+  --table-border-color: light-dark(var(--color-base-25), var(--color-base-35));
   --table-border-width: 1px;
   --table-cell-vertical-alignment: top;
   --table-column-alt-background: var(--table-background);
@@ -2509,8 +2509,8 @@ body {
     var(--color-base-10)
   );
   --table-header-background-hover: light-dark(
-    var(--color-base-25),
-    var(--color-base-10)
+    var(--color-base-10),
+    var(--color-base-25)
   );
   --table-header-border-color: var(--table-border-color);
   --table-header-border-width: var(--table-border-width);
@@ -2526,8 +2526,8 @@ body {
     var(--color-base-10)
   );
   --table-row-even-background: light-dark(
-    var(--color-base-30),
-    var(--color-base-00)
+    var(--color-base-00),
+    var(--color-base-30)
   );
   --table-row-last-border-width: var(--table-border-width);
   --table-row-odd-background: light-dark(
@@ -2557,20 +2557,20 @@ body {
   --tag-size: var(--h6-size);
   --tag-weight: inherit;
   --text-accent: light-dark(
-    hsl(var(--accent-h), var(--accent-s), var(--accent-dark)),
-    hsl(var(--accent-h), var(--accent-s), var(--accent-l))
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
+    hsl(var(--accent-h), var(--accent-s), var(--accent-dark))
   );
   --text-accent-emphasis: light-dark(
-    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-dark) + 10%)),
-    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2%))
+    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2%)),
+    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-dark) + 10%))
   );
   --text-accent-hover: light-dark(
-    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-dark) + 20%)),
-    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 10%))
+    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 10%)),
+    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-dark) + 20%))
   );
   --text-accent-hover-embed: light-dark(
-    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 50%)),
-    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%))
+    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%)),
+    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 50%))
   );
   --text-completed-checkboxes: light-dark(#3e657c, #3e657c);
   --text-completed-checkboxes-embed: light-dark(#3f6b88, #3f6b88);
@@ -2578,10 +2578,10 @@ body {
   --text-faint: var(--color-base-60);
   --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-highlight-editing: light-dark(#f0eaaf, #000);
+  --text-highlight-editing: light-dark(#000, #f0eaaf);
   --text-highlight-rendered: light-dark(#252525, #252525);
   --text-muted: var(--color-base-70);
-  --text-normal: light-dark(var(--color-base-100), var(--color-base-70));
+  --text-normal: light-dark(var(--color-base-70), var(--color-base-100));
   --text-on-accent: white;
   --text-on-accent-inverted: black;
   --text-selection: hsla(var(--color-accent-hsl), 0.2);

@@ -931,41 +931,41 @@
 }
 
 :root {
-  --background-blue: light-dark(#2f5264, #ddebf1);
-  --background-brown: light-dark(#493a3a, #e9e5e3);
-  --background-gray: light-dark(#535353, #ebeced);
-  --background-green: light-dark(#32503e, #ddedea);
-  --background-orange: light-dark(#53422f, #faebdd);
-  --background-pink: light-dark(#533b4a, #f4dfeb);
-  --background-purple: light-dark(#443f57, #eae4f2);
-  --background-red: light-dark(#683c3c, #ffe3e3);
-  --background-secondary-alt: light-dark(#363636, #212121);
-  --background-yellow: light-dark(#585536, #fbf3db);
-  --blue-green: light-dark(#3bd4da, #00b0b5);
+  --background-blue: light-dark(#ddebf1, #2f5264);
+  --background-brown: light-dark(#e9e5e3, #493a3a);
+  --background-gray: light-dark(#ebeced, #535353);
+  --background-green: light-dark(#ddedea, #32503e);
+  --background-orange: light-dark(#faebdd, #53422f);
+  --background-pink: light-dark(#f4dfeb, #533b4a);
+  --background-purple: light-dark(#eae4f2, #443f57);
+  --background-red: light-dark(#ffe3e3, #683c3c);
+  --background-secondary-alt: light-dark(#212121, #363636);
+  --background-yellow: light-dark(#fbf3db, #585536);
+  --blue-green: light-dark(#00b0b5, #3bd4da);
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
@@ -1054,7 +1054,7 @@
   --font-size-tag: 1em;
   --font-size-vault-name: 0.875em;
   --keyboard-height: 0px;
-  --light-purple: light-dark(#b74ff3, #b77dca);
+  --light-purple: light-dark(#b77dca, #b74ff3);
   --loading-icon-delay: 400ms;
   --mermaid-font-family: "Comic Sans MS", "Comic Sans", cursive;
   --page-border: 9px solid transparent;
@@ -1065,20 +1065,20 @@
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
   --spreadHorizontalWrapped-margin-LR: -3.5px;
-  --stag1: light-dark(#cf0000, #ff0000);
-  --stag2: light-dark(#cf7c00, #ff9900);
-  --stag3: light-dark(#00a71c, #00a030);
-  --text-blue: light-dark(#8ca1ff, #0083bb);
-  --text-brown: light-dark(#be9684, #855a46);
+  --stag1: light-dark(#ff0000, #cf0000);
+  --stag2: light-dark(#ff9900, #cf7c00);
+  --stag3: light-dark(#00a030, #00a71c);
+  --text-blue: light-dark(#0083bb, #8ca1ff);
+  --text-brown: light-dark(#855a46, #be9684);
   --text-family-inline-code: "Consolas", "Monaco", monospace;
-  --text-gray: light-dark(#acacac, #37352f99);
-  --text-green: light-dark(#52c7b2, #00927f);
-  --text-orange: light-dark(#ffa344, #d9730d);
-  --text-pink: light-dark(#ff6bba, #c40075);
-  --text-purple: light-dark(#b386f1, #5d1fb9);
-  --text-red: light-dark(#ff4f4f, #ff4343);
+  --text-gray: light-dark(#37352f99, #acacac);
+  --text-green: light-dark(#00927f, #52c7b2);
+  --text-orange: light-dark(#d9730d, #ffa344);
+  --text-pink: light-dark(#c40075, #ff6bba);
+  --text-purple: light-dark(#5d1fb9, #b386f1);
+  --text-red: light-dark(#ff4343, #ff4f4f);
   --text-size-cloze: 0.9375em;
-  --text-yellow: light-dark(#ffdc51, #d4a300);
+  --text-yellow: light-dark(#d4a300, #ffdc51);
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
@@ -1703,10 +1703,10 @@ body {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
-  --background-blue: light-dark(#2f5264, #ddebf1);
-  --background-brown: light-dark(#493a3a, #e9e5e3);
-  --background-gray: light-dark(#535353, #ebeced);
-  --background-green: light-dark(#32503e, #ddedea);
+  --background-blue: light-dark(#ddebf1, #2f5264);
+  --background-brown: light-dark(#e9e5e3, #493a3a);
+  --background-gray: light-dark(#ebeced, #535353);
+  --background-green: light-dark(#ddedea, #32503e);
   --background-modifier-active-hover: #8a5cf526;
   --background-modifier-border: #363636;
   --background-modifier-border-focus: #555555;
@@ -1719,15 +1719,15 @@ body {
   --background-modifier-message: #000000e6;
   --background-modifier-success: #44cf6e;
   --background-modifier-success-rgb: 68, 207, 110;
-  --background-orange: light-dark(#53422f, #faebdd);
-  --background-pink: light-dark(#533b4a, #f4dfeb);
+  --background-orange: light-dark(#faebdd, #53422f);
+  --background-pink: light-dark(#f4dfeb, #533b4a);
   --background-primary: #000;
   --background-primary-alt: #111;
-  --background-purple: light-dark(#443f57, #eae4f2);
-  --background-red: light-dark(#683c3c, #ffe3e3);
+  --background-purple: light-dark(#eae4f2, #443f57);
+  --background-red: light-dark(#ffe3e3, #683c3c);
   --background-secondary: #1e1e1e;
-  --background-secondary-alt: light-dark(#363636, #212121);
-  --background-yellow: light-dark(#585536, #fbf3db);
+  --background-secondary-alt: light-dark(#212121, #363636);
+  --background-yellow: light-dark(#fbf3db, #585536);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -1765,7 +1765,7 @@ body {
   --blockquote-border-thickness: 2px;
   --blockquote-color: inherit;
   --blockquote-font-style: normal;
-  --blue-green: light-dark(#3bd4da, #00b0b5);
+  --blue-green: light-dark(#00b0b5, #3bd4da);
   --bold-color: inherit;
   --bold-modifier: 200;
   --bold-weight: 800;
@@ -1838,29 +1838,29 @@ body {
   --collapse-icon-color: #797979;
   --collapse-icon-color-collapsed: #e1b87f;
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -2082,7 +2082,7 @@ body {
   --layer-slides: 45;
   --layer-status-bar: 15;
   --layer-tooltip: 70;
-  --light-purple: light-dark(#b74ff3, #b77dca);
+  --light-purple: light-dark(#b77dca, #b74ff3);
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;
   --link-color: #e1b87f;
@@ -2286,9 +2286,9 @@ body {
   --slider-thumb-y: -6px;
   --slider-track-background: transparent;
   --slider-track-height: 3px;
-  --stag1: light-dark(#cf0000, #ff0000);
-  --stag2: light-dark(#cf7c00, #ff9900);
-  --stag3: light-dark(#00a71c, #00a030);
+  --stag1: light-dark(#ff0000, #cf0000);
+  --stag2: light-dark(#ff9900, #cf7c00);
+  --stag3: light-dark(#00a030, #00a71c);
   --status-bar-background: #383433;
   --status-bar-border-color: #00000026;
   --status-bar-border-width: 1px 0 0 1px;
@@ -2394,26 +2394,26 @@ body {
   --tag-weight: inherit;
   --text-accent: #8a5cf5;
   --text-accent-hover: #c5b6fc;
-  --text-blue: light-dark(#8ca1ff, #0083bb);
-  --text-brown: light-dark(#be9684, #855a46);
+  --text-blue: light-dark(#0083bb, #8ca1ff);
+  --text-brown: light-dark(#855a46, #be9684);
   --text-error: #fb464c;
   --text-faint: #666666;
-  --text-gray: light-dark(#acacac, #37352f99);
-  --text-green: light-dark(#52c7b2, #00927f);
+  --text-gray: light-dark(#37352f99, #acacac);
+  --text-green: light-dark(#00927f, #52c7b2);
   --text-highlight-bg: #ffd00066;
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: #b3b3b3;
   --text-normal: #dadada;
   --text-on-accent: #ffffff;
   --text-on-accent-inverted: #000000;
-  --text-orange: light-dark(#ffa344, #d9730d);
-  --text-pink: light-dark(#ff6bba, #c40075);
-  --text-purple: light-dark(#b386f1, #5d1fb9);
-  --text-red: light-dark(#ff4f4f, #ff4343);
+  --text-orange: light-dark(#d9730d, #ffa344);
+  --text-pink: light-dark(#c40075, #ff6bba);
+  --text-purple: light-dark(#5d1fb9, #b386f1);
+  --text-red: light-dark(#ff4343, #ff4f4f);
   --text-selection: #8a5cf533;
   --text-success: #44cf6e;
   --text-warning: #e9973f;
-  --text-yellow: light-dark(#ffdc51, #d4a300);
+  --text-yellow: light-dark(#d4a300, #ffdc51);
   --titlebar-background: #383433;
   --titlebar-background-focused: #007672;
   --titlebar-border-color: transparent;
@@ -2996,8 +2996,8 @@ iframe {
   .titlebar {
     -webkit-app-region: drag;
     background-color: light-dark(
-      light-dark(#363636, #e0e0e0),
-      light-dark(#212121, #fcfcfc)
+      light-dark(#fcfcfc, #212121),
+      light-dark(#e0e0e0, #363636)
     );
     border-bottom: 0px solid transparent;
     display: flex;
@@ -6796,8 +6796,8 @@ body:not(.is-mobile)
 .workspace-leaf-resize-handle {
   -webkit-app-region: no-drag;
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   border-color: #00000026;
   border-top: 0;
@@ -8093,8 +8093,8 @@ button.mod-destructive {
 
 .card {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   border: 1px solid transparent;
   border-radius: 4px;
@@ -10518,8 +10518,8 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   cursor: default;
   text-align: center;
@@ -11683,25 +11683,25 @@ kbd {
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
-  filter: drop-shadow(0px 0px 1px light-dark(#999999, #707070))
+  filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
 }
 
@@ -18841,8 +18841,8 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 @media (hover: hover) {
   .search-result-file-match:hover {
     background-color: light-dark(
-      light-dark(#363636, #e0e0e0),
-      light-dark(#212121, #fcfcfc)
+      light-dark(#fcfcfc, #212121),
+      light-dark(#e0e0e0, #363636)
     );
     color: #ffffff;
   }
@@ -20869,12 +20869,12 @@ body.is-mobile .canvas-node-resizer {
 
 .canvas-color-picker-item.canvas-color-picker-custom:not(.is-active) {
   background: conic-gradient(
-    light-dark(#fb464c, #e93147),
-    light-dark(#e0de71, #e0ac00),
-    light-dark(#44cf6e, #08b94e),
-    light-dark(#027aff, #086ddd),
-    light-dark(#a882ff, #7852ee),
-    light-dark(#fb464c, #e93147)
+    light-dark(#e93147, #fb464c),
+    light-dark(#e0ac00, #e0de71),
+    light-dark(#08b94e, #44cf6e),
+    light-dark(#086ddd, #027aff),
+    light-dark(#7852ee, #a882ff),
+    light-dark(#e93147, #fb464c)
   );
 }
 
@@ -24215,7 +24215,7 @@ input.mobile-vault-chooser-field-input {
 }
 
 .tag[href^="#important"] {
-  background-color: light-dark(#cf0000, #ff0000);
+  background-color: light-dark(#ff0000, #cf0000);
   font-family:
     "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina", cursive;
   font-weight: 600;
@@ -24224,14 +24224,14 @@ input.mobile-vault-chooser-field-input {
 .cm-s-obsidian
   .CodeMirror-line
   span.cm-tag-important:not(.cm-formatting-hashtag) {
-  color: light-dark(#cf0000, #ff0000);
+  color: light-dark(#ff0000, #cf0000);
   font-family:
     "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina", cursive;
   font-weight: 600;
 }
 
 .tag[href^="#重要"] {
-  background-color: light-dark(#cf0000, #ff0000);
+  background-color: light-dark(#ff0000, #cf0000);
   font-family:
     Webdings,
     Microsoft YaHei;
@@ -24239,7 +24239,7 @@ input.mobile-vault-chooser-field-input {
 }
 
 .tag[href^="#complete"] {
-  background-color: light-dark(#00a71c, #00a030);
+  background-color: light-dark(#00a030, #00a71c);
   font-family:
     "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina", cursive;
   font-weight: 600;
@@ -24248,14 +24248,14 @@ input.mobile-vault-chooser-field-input {
 .cm-s-obsidian
   .CodeMirror-line
   span.cm-tag-complete:not(.cm-formatting-hashtag) {
-  color: light-dark(#00a71c, #00a030);
+  color: light-dark(#00a030, #00a71c);
   font-family:
     "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina", cursive;
   font-weight: 600;
 }
 
 .tag[href^="#完成"] {
-  background-color: light-dark(#00a71c, #00a030);
+  background-color: light-dark(#00a030, #00a71c);
   font-family:
     Origin,
     Microsoft YaHei;
@@ -24263,7 +24263,7 @@ input.mobile-vault-chooser-field-input {
 }
 
 .tag[href^="#inprogress"] {
-  background-color: light-dark(#cf7c00, #ff9900);
+  background-color: light-dark(#ff9900, #cf7c00);
   font-family:
     "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina", cursive;
   font-weight: 600;
@@ -24272,14 +24272,14 @@ input.mobile-vault-chooser-field-input {
 .cm-s-obsidian
   .CodeMirror-line
   span.cm-tag-inprogress:not(.cm-formatting-hashtag) {
-  color: light-dark(#cf7c00, #ff9900);
+  color: light-dark(#ff9900, #cf7c00);
   font-family:
     "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina", cursive;
   font-weight: 600;
 }
 
 .tag[href^="#进行中"] {
-  background-color: light-dark(#cf7c00, #ff9900);
+  background-color: light-dark(#ff9900, #cf7c00);
   font-family:
     Wingdings,
     Microsoft YaHei;
@@ -24559,8 +24559,8 @@ input.search-input {
 
 .nav-folder.mod-root > .nav-folder-title {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   cursor: default;
   font-family: "Lucida Handwriting", "Segoe UI Emoji";
@@ -24605,8 +24605,8 @@ input.search-input {
 
 .backlink-pane > .tree-item-self.is-clickable:hover {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   color: #ffffff;
 }
@@ -25476,7 +25476,7 @@ span.cm-formatting.cm-formatting-strong.cm-em.cm-strong {
   div.CodeMirror-activeline
   .CodeMirror-line
   span.cm-formatting.cm-formatting-em.cm-em {
-  color: light-dark(#ffa344, #d9730d);
+  color: light-dark(#d9730d, #ffa344);
   opacity: 1;
 }
 
@@ -25779,11 +25779,11 @@ pre[class*="language-"] {
 }
 
 .theme-light .token.regex {
-  color: light-dark(#b74ff3, #b77dca);
+  color: light-dark(#b77dca, #b74ff3);
 }
 
 .theme-light .token.variable {
-  color: light-dark(#b74ff3, #b77dca);
+  color: light-dark(#b77dca, #b74ff3);
 }
 
 .theme-dark .token.important {
@@ -25791,7 +25791,7 @@ pre[class*="language-"] {
 }
 
 .theme-light .token.important {
-  color: light-dark(#3bd4da, #00b0b5);
+  color: light-dark(#00b0b5, #3bd4da);
 }
 
 pre.line-numbers {
@@ -26398,151 +26398,151 @@ div.CodeMirror-activeline > .HyperMD-quote {
 }
 
 .app-container .markdown-preview-view pre.language-note-notice {
-  background-color: light-dark(#535353, #ebeced);
+  background-color: light-dark(#ebeced, #535353);
 }
 
 .app-container .markdown-preview-view pre.language-note-gray-background {
-  background-color: light-dark(#535353, #ebeced);
+  background-color: light-dark(#ebeced, #535353);
 }
 
 .app-container .markdown-preview-view pre.language-note-gray-bg {
-  background-color: light-dark(#535353, #ebeced);
+  background-color: light-dark(#ebeced, #535353);
 }
 
 .gray-background {
-  background-color: light-dark(#535353, #ebeced);
+  background-color: light-dark(#ebeced, #535353);
 }
 
 .gray-bg {
-  background-color: light-dark(#535353, #ebeced);
+  background-color: light-dark(#ebeced, #535353);
 }
 
 .app-container .markdown-preview-view pre.language-note-brown-background {
-  background-color: light-dark(#493a3a, #e9e5e3);
+  background-color: light-dark(#e9e5e3, #493a3a);
 }
 
 .app-container .markdown-preview-view pre.language-note-brown-bg {
-  background-color: light-dark(#493a3a, #e9e5e3);
+  background-color: light-dark(#e9e5e3, #493a3a);
 }
 
 .brown-background {
-  background-color: light-dark(#493a3a, #e9e5e3);
+  background-color: light-dark(#e9e5e3, #493a3a);
 }
 
 .brown-bg {
-  background-color: light-dark(#493a3a, #e9e5e3);
+  background-color: light-dark(#e9e5e3, #493a3a);
 }
 
 .app-container .markdown-preview-view pre.language-note-orange-background {
-  background-color: light-dark(#53422f, #faebdd);
+  background-color: light-dark(#faebdd, #53422f);
 }
 
 .app-container .markdown-preview-view pre.language-note-orange-bg {
-  background-color: light-dark(#53422f, #faebdd);
+  background-color: light-dark(#faebdd, #53422f);
 }
 
 .orange-background {
-  background-color: light-dark(#53422f, #faebdd);
+  background-color: light-dark(#faebdd, #53422f);
 }
 
 .orange-bg {
-  background-color: light-dark(#53422f, #faebdd);
+  background-color: light-dark(#faebdd, #53422f);
 }
 
 .app-container .markdown-preview-view pre.language-note-yellow-background {
-  background-color: light-dark(#585536, #fbf3db);
+  background-color: light-dark(#fbf3db, #585536);
 }
 
 .app-container .markdown-preview-view pre.language-note-yellow-bg {
-  background-color: light-dark(#585536, #fbf3db);
+  background-color: light-dark(#fbf3db, #585536);
 }
 
 .yellow-background {
-  background-color: light-dark(#585536, #fbf3db);
+  background-color: light-dark(#fbf3db, #585536);
 }
 
 .yellow-bg {
-  background-color: light-dark(#585536, #fbf3db);
+  background-color: light-dark(#fbf3db, #585536);
 }
 
 .app-container .markdown-preview-view pre.language-note-green-background {
-  background-color: light-dark(#32503e, #ddedea);
+  background-color: light-dark(#ddedea, #32503e);
 }
 
 .app-container .markdown-preview-view pre.language-note-green-bg {
-  background-color: light-dark(#32503e, #ddedea);
+  background-color: light-dark(#ddedea, #32503e);
 }
 
 .green-background {
-  background-color: light-dark(#32503e, #ddedea);
+  background-color: light-dark(#ddedea, #32503e);
 }
 
 .green-bg {
-  background-color: light-dark(#32503e, #ddedea);
+  background-color: light-dark(#ddedea, #32503e);
 }
 
 .app-container .markdown-preview-view pre.language-note-blue-background {
-  background-color: light-dark(#2f5264, #ddebf1);
+  background-color: light-dark(#ddebf1, #2f5264);
 }
 
 .app-container .markdown-preview-view pre.language-note-blue-bg {
-  background-color: light-dark(#2f5264, #ddebf1);
+  background-color: light-dark(#ddebf1, #2f5264);
 }
 
 .blue-background {
-  background-color: light-dark(#2f5264, #ddebf1);
+  background-color: light-dark(#ddebf1, #2f5264);
 }
 
 .blue-bg {
-  background-color: light-dark(#2f5264, #ddebf1);
+  background-color: light-dark(#ddebf1, #2f5264);
 }
 
 .app-container .markdown-preview-view pre.language-note-purple-background {
-  background-color: light-dark(#443f57, #eae4f2);
+  background-color: light-dark(#eae4f2, #443f57);
 }
 
 .app-container .markdown-preview-view pre.language-note-purple-bg {
-  background-color: light-dark(#443f57, #eae4f2);
+  background-color: light-dark(#eae4f2, #443f57);
 }
 
 .purple-background {
-  background-color: light-dark(#443f57, #eae4f2);
+  background-color: light-dark(#eae4f2, #443f57);
 }
 
 .purple-bg {
-  background-color: light-dark(#443f57, #eae4f2);
+  background-color: light-dark(#eae4f2, #443f57);
 }
 
 .app-container .markdown-preview-view pre.language-note-pink-background {
-  background-color: light-dark(#533b4a, #f4dfeb);
+  background-color: light-dark(#f4dfeb, #533b4a);
 }
 
 .app-container .markdown-preview-view pre.language-note-pink-bg {
-  background-color: light-dark(#533b4a, #f4dfeb);
+  background-color: light-dark(#f4dfeb, #533b4a);
 }
 
 .pink-background {
-  background-color: light-dark(#533b4a, #f4dfeb);
+  background-color: light-dark(#f4dfeb, #533b4a);
 }
 
 .pink-bg {
-  background-color: light-dark(#533b4a, #f4dfeb);
+  background-color: light-dark(#f4dfeb, #533b4a);
 }
 
 .app-container .markdown-preview-view pre.language-note-red-background {
-  background-color: light-dark(#683c3c, #ffe3e3);
+  background-color: light-dark(#ffe3e3, #683c3c);
 }
 
 .app-container .markdown-preview-view pre.language-note-red-bg {
-  background-color: light-dark(#683c3c, #ffe3e3);
+  background-color: light-dark(#ffe3e3, #683c3c);
 }
 
 .red-background {
-  background-color: light-dark(#683c3c, #ffe3e3);
+  background-color: light-dark(#ffe3e3, #683c3c);
 }
 
 .red-bg {
-  background-color: light-dark(#683c3c, #ffe3e3);
+  background-color: light-dark(#ffe3e3, #683c3c);
 }
 
 .app-container .markdown-preview-view pre.language-note-important {
@@ -26607,99 +26607,99 @@ pre.language-note-imp::before {
   .markdown-preview-view
   pre.language-note-gray
   code.language-note-gray {
-  color: light-dark(#acacac, #37352f99);
+  color: light-dark(#37352f99, #acacac);
 }
 
 .gray {
-  color: light-dark(#acacac, #37352f99);
+  color: light-dark(#37352f99, #acacac);
 }
 
 .app-container
   .markdown-preview-view
   pre.language-note-brown
   code.language-note-brown {
-  color: light-dark(#be9684, #855a46);
+  color: light-dark(#855a46, #be9684);
 }
 
 .brown {
-  color: light-dark(#be9684, #855a46);
+  color: light-dark(#855a46, #be9684);
 }
 
 .app-container
   .markdown-preview-view
   pre.language-note-orange
   code.language-note-orange {
-  color: light-dark(#ffa344, #d9730d);
+  color: light-dark(#d9730d, #ffa344);
 }
 
 .orange {
-  color: light-dark(#ffa344, #d9730d);
+  color: light-dark(#d9730d, #ffa344);
 }
 
 .app-container
   .markdown-preview-view
   pre.language-note-yellow
   code.language-note-yellow {
-  color: light-dark(#ffdc51, #d4a300);
+  color: light-dark(#d4a300, #ffdc51);
 }
 
 .yellow {
-  color: light-dark(#ffdc51, #d4a300);
+  color: light-dark(#d4a300, #ffdc51);
 }
 
 .app-container
   .markdown-preview-view
   pre.language-note-green
   code.language-note-green {
-  color: light-dark(#52c7b2, #00927f);
+  color: light-dark(#00927f, #52c7b2);
 }
 
 .green {
-  color: light-dark(#52c7b2, #00927f);
+  color: light-dark(#00927f, #52c7b2);
 }
 
 .app-container
   .markdown-preview-view
   pre.language-note-blue
   code.language-note-blue {
-  color: light-dark(#8ca1ff, #0083bb);
+  color: light-dark(#0083bb, #8ca1ff);
 }
 
 .blue {
-  color: light-dark(#8ca1ff, #0083bb);
+  color: light-dark(#0083bb, #8ca1ff);
 }
 
 .app-container
   .markdown-preview-view
   pre.language-note-purple
   code.language-note-purple {
-  color: light-dark(#b386f1, #5d1fb9);
+  color: light-dark(#5d1fb9, #b386f1);
 }
 
 .purple {
-  color: light-dark(#b386f1, #5d1fb9);
+  color: light-dark(#5d1fb9, #b386f1);
 }
 
 .app-container
   .markdown-preview-view
   pre.language-note-pink
   code.language-note-pink {
-  color: light-dark(#ff6bba, #c40075);
+  color: light-dark(#c40075, #ff6bba);
 }
 
 .pink {
-  color: light-dark(#ff6bba, #c40075);
+  color: light-dark(#c40075, #ff6bba);
 }
 
 .app-container
   .markdown-preview-view
   pre.language-note-red
   code.language-note-red {
-  color: light-dark(#ff4f4f, #ff4343);
+  color: light-dark(#ff4343, #ff4f4f);
 }
 
 .red {
-  color: light-dark(#ff4f4f, #ff4343);
+  color: light-dark(#ff4343, #ff4f4f);
 }
 
 .app-container
@@ -26840,7 +26840,7 @@ div.mermaidTooltip {
 }
 
 .actor {
-  fill: light-dark(light-dark(#363636, #e0e0e0), light-dark(#212121, #fcfcfc));
+  fill: light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
   stroke: #e1b87f;
 }
 
@@ -26889,7 +26889,7 @@ text.actor > tspan {
 }
 
 .labelBox {
-  fill: light-dark(light-dark(#363636, #e0e0e0), light-dark(#212121, #fcfcfc));
+  fill: light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
   stroke: #e1b87f;
 }
 
@@ -27359,7 +27359,7 @@ g.clickable {
 }
 
 g.classGroup rect {
-  fill: light-dark(light-dark(#363636, #e0e0e0), light-dark(#212121, #fcfcfc));
+  fill: light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
   stroke: #e1b87f;
 }
 
@@ -27369,7 +27369,7 @@ g.classGroup line {
 }
 
 .classLabel .box {
-  fill: light-dark(light-dark(#363636, #e0e0e0), light-dark(#212121, #fcfcfc));
+  fill: light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
   opacity: 0.2;
   stroke: none;
   stroke-width: 0;
@@ -27403,13 +27403,13 @@ g.classGroup line {
 }
 
 #aggregationStart {
-  fill: light-dark(light-dark(#363636, #e0e0e0), light-dark(#212121, #fcfcfc));
+  fill: light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
   stroke: #e1b87f;
   stroke-width: 1;
 }
 
 #aggregationEnd {
-  fill: light-dark(light-dark(#363636, #e0e0e0), light-dark(#212121, #fcfcfc));
+  fill: light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
   stroke: #e1b87f;
   stroke-width: 1;
 }
@@ -27499,12 +27499,12 @@ g.stateGroup text {
 }
 
 g.stateGroup .state-title {
-  fill: light-dark(light-dark(#363636, #e0e0e0), light-dark(#212121, #fcfcfc));
+  fill: light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
   font-weight: bolder;
 }
 
 g.stateGroup rect {
-  fill: light-dark(light-dark(#363636, #e0e0e0), light-dark(#212121, #fcfcfc));
+  fill: light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
   stroke: #e1b87f;
 }
 
@@ -27541,7 +27541,7 @@ g.stateGroup line {
 }
 
 .stateLabel .box {
-  fill: light-dark(light-dark(#363636, #e0e0e0), light-dark(#212121, #fcfcfc));
+  fill: light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
   opacity: 0.5;
   stroke: none;
   stroke-width: 0;
@@ -27574,7 +27574,7 @@ g.stateGroup line {
 }
 
 .statediagram-cluster rect {
-  fill: light-dark(light-dark(#363636, #e0e0e0), light-dark(#212121, #fcfcfc));
+  fill: light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
   stroke: #e1b87f;
   stroke-width: 1px;
 }
@@ -27760,9 +27760,9 @@ body.plugin-sliding-panes .view-actions {
 
 body.plugin-sliding-panes-rotate-header .workspace > .mod-root .view-header {
   border-left: 1px solid
-    light-dark(light-dark(#363636, #e0e0e0), light-dark(#212121, #fcfcfc));
+    light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
   border-right: 1px solid
-    light-dark(light-dark(#363636, #e0e0e0), light-dark(#212121, #fcfcfc));
+    light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
 }
 
 #calendar-container {
@@ -27802,7 +27802,7 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root .view-header {
 #calendar-container td {
   border-radius: 0px;
   border-right: 2px solid
-    light-dark(light-dark(#363636, #e0e0e0), light-dark(#212121, #fcfcfc));
+    light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
   line-height: 22px;
   padding: 0px 0px 0px 0px;
   width: 12.5%;
@@ -27810,7 +27810,7 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root .view-header {
 
 #calendar-container tr {
   border: 2px solid
-    light-dark(light-dark(#363636, #e0e0e0), light-dark(#212121, #fcfcfc));
+    light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
 }
 
 #calendar-container .day:not(:empty):hover {

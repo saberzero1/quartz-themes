@@ -932,87 +932,87 @@
 
 :root {
   --background-modifier-active-hover: light-dark(
-    color-mix(in srgb, #82807d, #000000 70%),
-    color-mix(in srgb, #82807d, #ffffff 60%)
+    color-mix(in srgb, #82807d, #ffffff 60%),
+    color-mix(in srgb, #82807d, #000000 70%)
   );
   --background-modifier-active-hover-alt: light-dark(
-    color-mix(in srgb, #82807d, #000000 25%),
-    color-mix(in srgb, #82807d, #ffffff 25%)
+    color-mix(in srgb, #82807d, #ffffff 25%),
+    color-mix(in srgb, #82807d, #000000 25%)
   );
   --background-modifier-border: light-dark(
-    color-mix(in srgb, #82807d, #000000 25%),
-    color-mix(in srgb, #82807d, #ffffff 25%)
+    color-mix(in srgb, #82807d, #ffffff 25%),
+    color-mix(in srgb, #82807d, #000000 25%)
   );
   --background-modifier-border-focus: light-dark(
-    color-mix(in srgb, #82807d, #000000 25%),
-    #82807d
+    #82807d,
+    color-mix(in srgb, #82807d, #000000 25%)
   );
   --background-modifier-hover: light-dark(#82807d, #82807d);
   --background-prompt: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 95%)
+    color-mix(in srgb, #82807d, #ffffff 95%),
+    color-mix(in srgb, #82807d, #000000 80%)
   );
   --background-secondary: light-dark(
-    color-mix(in srgb, #82807d, #000000 70%),
-    color-mix(in srgb, #82807d, #ffffff 60%)
+    color-mix(in srgb, #82807d, #ffffff 60%),
+    color-mix(in srgb, #82807d, #000000 70%)
   );
-  --background-secondary-alt: light-dark(#363636, #212121);
+  --background-secondary-alt: light-dark(#212121, #363636);
   --blockquote-border-color: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
+    color-mix(in srgb, #82807d, #ffffff 80%),
+    color-mix(in srgb, #82807d, #000000 80%)
   );
-  --caret-color: light-dark(hsl(258, 150%, 80%), hsl(258, 150%, 50%));
+  --caret-color: light-dark(hsl(258, 150%, 50%), hsl(258, 150%, 80%));
   --collapse-icon-color: light-dark(#82807d, #82807d);
   --collapse-icon-color-collapsed: light-dark(#82807d, #82807d);
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --empty-pane-color: light-dark(
     color-mix(in srgb, #82807d, #000000 70%),
     color-mix(in srgb, #82807d, #000000 70%)
   );
   --icon-color: light-dark(#82807d, #82807d);
   --interactive-accent: light-dark(#82807d, #82807d);
-  --interactive-accent-hover: light-dark(#a68af9, #82807d);
+  --interactive-accent-hover: light-dark(#82807d, #a68af9);
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
   --metadata-input-background-active: light-dark(
-    color-mix(in srgb, #82807d, #000000 90%),
-    color-mix(in srgb, #82807d, #ffffff 95%)
+    color-mix(in srgb, #82807d, #ffffff 95%),
+    color-mix(in srgb, #82807d, #000000 90%)
   );
   --metadata-label-background-active: light-dark(
-    color-mix(in srgb, #82807d, #000000 90%),
-    color-mix(in srgb, #82807d, #ffffff 95%)
+    color-mix(in srgb, #82807d, #ffffff 95%),
+    color-mix(in srgb, #82807d, #000000 90%)
   );
   --metadata-property-background: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 95%)
+    color-mix(in srgb, #82807d, #ffffff 95%),
+    color-mix(in srgb, #82807d, #000000 80%)
   );
   --metadata-property-background-hover: light-dark(#82807d1f, #82807d1f);
   --modal-background: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
+    color-mix(in srgb, #82807d, #ffffff 80%),
+    color-mix(in srgb, #82807d, #000000 80%)
   );
   --nav-collapse-icon-color: light-dark(#82807dbf, #82807dbf);
   --nav-collapse-icon-color-collapsed: light-dark(#82807dbf, #82807dbf);
@@ -1020,12 +1020,12 @@
   --nav-item-background-active: light-dark(#82807d, #82807d);
   --nav-item-background-selected: light-dark(#82807d40, #82807d40);
   --nav-item-color: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 60%),
-    color-mix(in srgb, #82807d, #000000 80%)
+    color-mix(in srgb, #82807d, #000000 80%),
+    color-mix(in srgb, #82807d, #ffffff 60%)
   );
   --nav-item-color-active: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
+    color-mix(in srgb, #82807d, #ffffff 80%),
+    color-mix(in srgb, #82807d, #000000 80%)
   );
   --page-border: 9px solid transparent;
   --page-margin: 1px auto -8px;
@@ -1033,16 +1033,16 @@
   --pill-background: light-dark(#82807dbf, #82807dbf);
   --pill-background-hover: light-dark(#82807d, #82807d);
   --pill-background-remove-hover: light-dark(
-    color-mix(in srgb, #82807d, #000000 25%),
-    color-mix(in srgb, #82807d, #ffffff 25%)
+    color-mix(in srgb, #82807d, #ffffff 25%),
+    color-mix(in srgb, #82807d, #000000 25%)
   );
   --pill-color-remove: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
+    color-mix(in srgb, #82807d, #ffffff 80%),
+    color-mix(in srgb, #82807d, #000000 80%)
   );
   --pill-color-remove-hover: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
+    color-mix(in srgb, #82807d, #ffffff 80%),
+    color-mix(in srgb, #82807d, #000000 80%)
   );
   --safe-area-inset-bottom: env(safe-area-inset-bottom);
   --safe-area-inset-left: env(safe-area-inset-left);
@@ -1053,18 +1053,18 @@
   --spreadHorizontalWrapped-margin-LR: -3.5px;
   --tab-background-active: light-dark(#000000, #000000);
   --tab-background-inactive: light-dark(
-    color-mix(in srgb, #82807d, #000000 85%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
+    color-mix(in srgb, #82807d, #ffffff 80%),
+    color-mix(in srgb, #82807d, #000000 85%)
   );
   --tab-text-color: light-dark(#82807d80, #82807d80);
   --tab-text-color-active: light-dark(#82807d80, #82807d80);
   --tab-text-color-focused: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 25%),
-    color-mix(in srgb, #82807d, #000000 25%)
+    color-mix(in srgb, #82807d, #000000 25%),
+    color-mix(in srgb, #82807d, #ffffff 25%)
   );
   --tab-text-color-focused-active: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 25%),
-    color-mix(in srgb, #82807d, #000000 25%)
+    color-mix(in srgb, #82807d, #000000 25%),
+    color-mix(in srgb, #82807d, #ffffff 25%)
   );
   --tab-text-color-focused-active-current: light-dark(
     color-mix(in srgb, #82807d, #ffffff 60%),
@@ -1072,46 +1072,46 @@
   );
   --tab-text-color-focused-highlighted: light-dark(#a68af9, #a68af9);
   --table-border-color: light-dark(
-    color-mix(in srgb, #82807d, #000000 70%),
-    color-mix(in srgb, #82807d, #ffffff 60%)
-  );
-  --table-header-border-color: light-dark(
-    color-mix(in srgb, #82807d, #000000 70%),
-    color-mix(in srgb, #82807d, #ffffff 60%)
-  );
-  --tag-background: light-dark(#8a5cf533, #8a5cf526);
-  --tag-color: light-dark(hsl(258, 105.6%, 66%), #733cf3);
-  --text-faint: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 25%),
+    color-mix(in srgb, #82807d, #ffffff 60%),
     color-mix(in srgb, #82807d, #000000 70%)
   );
-  --text-normal: light-dark(
+  --table-header-border-color: light-dark(
     color-mix(in srgb, #82807d, #ffffff 60%),
-    color-mix(in srgb, #82807d, #000000 90%)
+    color-mix(in srgb, #82807d, #000000 70%)
   );
-  --theme-color-activeLineHighlight: light-dark(#82807d1f, #82807d1f);
-  --theme-color-audioRecordingActive: light-dark(#ffdfe0, #b90e00);
-  --theme-color-blockId: light-dark(
-    color-mix(in srgb, #82807d, #000000 25%),
+  --tag-background: light-dark(#8a5cf526, #8a5cf533);
+  --tag-color: light-dark(#733cf3, hsl(258, 105.6%, 66%));
+  --text-faint: light-dark(
+    color-mix(in srgb, #82807d, #000000 70%),
     color-mix(in srgb, #82807d, #ffffff 25%)
   );
-  --theme-color-calendarDayBg: light-dark(#00000080, #ffffffbf);
+  --text-normal: light-dark(
+    color-mix(in srgb, #82807d, #000000 90%),
+    color-mix(in srgb, #82807d, #ffffff 60%)
+  );
+  --theme-color-activeLineHighlight: light-dark(#82807d1f, #82807d1f);
+  --theme-color-audioRecordingActive: light-dark(#b90e00, #ffdfe0);
+  --theme-color-blockId: light-dark(
+    color-mix(in srgb, #82807d, #ffffff 25%),
+    color-mix(in srgb, #82807d, #000000 25%)
+  );
+  --theme-color-calendarDayBg: light-dark(#ffffffbf, #00000080);
   --theme-color-communityItemBg: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
+    color-mix(in srgb, #82807d, #ffffff 80%),
+    color-mix(in srgb, #82807d, #000000 80%)
   );
   --theme-color-communityItemBgActive: light-dark(#82807d, #82807d);
   --theme-color-communityItemBgHover: light-dark(
-    color-mix(in srgb, #82807d, #000000 70%),
-    color-mix(in srgb, #82807d, #ffffff 60%)
+    color-mix(in srgb, #82807d, #ffffff 60%),
+    color-mix(in srgb, #82807d, #000000 70%)
   );
   --theme-color-communityItemBgSelected: light-dark(
-    color-mix(in srgb, #82807d, #000000 25%),
-    color-mix(in srgb, #82807d, #ffffff 25%)
+    color-mix(in srgb, #82807d, #ffffff 25%),
+    color-mix(in srgb, #82807d, #000000 25%)
   );
-  --theme-color-contentItemBg: light-dark(#00000033, #ffffff80);
+  --theme-color-contentItemBg: light-dark(#ffffff80, #00000033);
   --theme-color-contentItemBgActive: light-dark(#82807d, #82807d);
-  --theme-color-contentItemBgHover: light-dark(#0000001a, #ffffff40);
+  --theme-color-contentItemBgHover: light-dark(#ffffff40, #0000001a);
   --theme-color-controlActive: light-dark(
     light-dark(
       color-mix(in srgb, #82807d, #000000 70%),
@@ -1123,56 +1123,56 @@
     )
   );
   --theme-color-controlBg: light-dark(
-    color-mix(in srgb, #82807d, #000000 25%),
-    color-mix(in srgb, #82807d, #ffffff 95%)
+    color-mix(in srgb, #82807d, #ffffff 95%),
+    color-mix(in srgb, #82807d, #000000 25%)
   );
   --theme-color-controlBgHover: light-dark(#82807d, #82807d);
   --theme-color-controlBgLowWeight: light-dark(
-    var(--theme-color-darkenTransparent25),
-    #ffffff80
+    #ffffff80,
+    var(--theme-color-darkenTransparent25)
   );
   --theme-color-controlContentArea: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 60%),
-    #82807d
+    #82807d,
+    color-mix(in srgb, #82807d, #ffffff 60%)
   );
   --theme-color-controlContentAreaHover: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
+    color-mix(in srgb, #82807d, #ffffff 80%),
+    color-mix(in srgb, #82807d, #000000 80%)
   );
   --theme-color-controlHover: light-dark(
-    color-mix(in srgb, #82807d, #000000 90%),
-    color-mix(in srgb, #82807d, #ffffff 95%)
+    color-mix(in srgb, #82807d, #ffffff 95%),
+    color-mix(in srgb, #82807d, #000000 90%)
   );
   --theme-color-controlLightweightActive: light-dark(
     color-mix(in srgb, #82807d, #ffffff 95%),
     color-mix(in srgb, #82807d, #ffffff 95%)
   );
   --theme-color-controlSetBg: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
+    color-mix(in srgb, #82807d, #ffffff 80%),
+    color-mix(in srgb, #82807d, #000000 80%)
   );
   --theme-color-controlText: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 60%),
-    color-mix(in srgb, #82807d, #000000 70%)
-  );
-  --theme-color-controlTextHover: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
-  );
-  --theme-color-controlUIHover: light-dark(
     color-mix(in srgb, #82807d, #000000 70%),
     color-mix(in srgb, #82807d, #ffffff 60%)
   );
+  --theme-color-controlTextHover: light-dark(
+    color-mix(in srgb, #82807d, #ffffff 80%),
+    color-mix(in srgb, #82807d, #000000 80%)
+  );
+  --theme-color-controlUIHover: light-dark(
+    color-mix(in srgb, #82807d, #ffffff 60%),
+    color-mix(in srgb, #82807d, #000000 70%)
+  );
   --theme-color-controlUISelected: light-dark(
-    color-mix(in srgb, #82807d, #000000 70%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
+    color-mix(in srgb, #82807d, #ffffff 80%),
+    color-mix(in srgb, #82807d, #000000 70%)
   );
   --theme-color-emptyStateBg: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
+    color-mix(in srgb, #82807d, #ffffff 80%),
+    color-mix(in srgb, #82807d, #000000 80%)
   );
-  --theme-color-gradientCardsetBottom: light-dark(#82807d1f, #82807d0f);
-  --theme-color-gradientCardsetTop: light-dark(#82807d0f, #82807d1f);
+  --theme-color-gradientCardsetBottom: light-dark(#82807d0f, #82807d1f);
+  --theme-color-gradientCardsetTop: light-dark(#82807d1f, #82807d0f);
   --theme-color-hotkey: light-dark(#82807d, #82807d);
   --theme-color-inputBorder: light-dark(
     color-mix(in srgb, #82807d, #ffffff 25%),
@@ -1180,36 +1180,36 @@
   );
   --theme-color-inputPlaceholder: light-dark(#82807d, #82807d);
   --theme-color-interactiveActive: light-dark(
-    color-mix(in srgb, #82807d, #000000 25%),
-    color-mix(in srgb, #82807d, #ffffff 25%)
+    color-mix(in srgb, #82807d, #ffffff 25%),
+    color-mix(in srgb, #82807d, #000000 25%)
   );
   --theme-color-kanbanLaneBg: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
-  );
-  --theme-color-log: light-dark(
     color-mix(in srgb, #82807d, #ffffff 80%),
     color-mix(in srgb, #82807d, #000000 80%)
   );
+  --theme-color-log: light-dark(
+    color-mix(in srgb, #82807d, #000000 80%),
+    color-mix(in srgb, #82807d, #ffffff 80%)
+  );
   --theme-color-logBg: light-dark(
-    color-mix(in srgb, #82807d, #000000 25%),
-    color-mix(in srgb, #82807d, #ffffff 25%)
+    color-mix(in srgb, #82807d, #ffffff 25%),
+    color-mix(in srgb, #82807d, #000000 25%)
   );
   --theme-color-menuBg: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
+    color-mix(in srgb, #82807d, #ffffff 80%),
+    color-mix(in srgb, #82807d, #000000 80%)
   );
   --theme-color-mobileToolbarBg: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
+    color-mix(in srgb, #82807d, #ffffff 80%),
+    color-mix(in srgb, #82807d, #000000 80%)
   );
   --theme-color-modalContentBg: light-dark(
-    color-mix(in srgb, #82807d, #000000 70%),
-    color-mix(in srgb, #82807d, #ffffff 60%)
+    color-mix(in srgb, #82807d, #ffffff 60%),
+    color-mix(in srgb, #82807d, #000000 70%)
   );
   --theme-color-navFileTag: light-dark(
-    color-mix(in srgb, #82807d, #000000 25%),
-    #82807d
+    #82807d,
+    color-mix(in srgb, #82807d, #000000 25%)
   );
   --theme-color-navFileTagActive: light-dark(
     color-mix(in srgb, #82807d, #000000 80%),
@@ -1220,52 +1220,52 @@
     color-mix(in srgb, #82807d, #000000 80%)
   );
   --theme-color-navFileTagBorder: light-dark(
-    color-mix(in srgb, #82807d, #000000 25%),
-    #82807d
+    #82807d,
+    color-mix(in srgb, #82807d, #000000 25%)
   );
   --theme-color-notice: light-dark(
-    color-mix(in srgb, #82807d, #000000 90%),
-    color-mix(in srgb, #82807d, #ffffff 95%)
+    color-mix(in srgb, #82807d, #ffffff 95%),
+    color-mix(in srgb, #82807d, #000000 90%)
   );
   --theme-color-noticeBg: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 95%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
-  --theme-color-promptInstructions: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 40%),
-    color-mix(in srgb, #82807d, #000000 40%)
-  );
-  --theme-color-settingsBg: light-dark(
     color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
-  );
-  --theme-color-settingsBgStripe: light-dark(
-    color-mix(in srgb, #82807d, #000000 90%),
     color-mix(in srgb, #82807d, #ffffff 95%)
   );
-  --theme-color-settingsGroupBg: light-dark(#00000080, #ffffff80);
-  --theme-color-shadow: light-dark(#0d0d0d, #61605e);
+  --theme-color-promptInstructions: light-dark(
+    color-mix(in srgb, #82807d, #000000 40%),
+    color-mix(in srgb, #82807d, #ffffff 40%)
+  );
+  --theme-color-settingsBg: light-dark(
+    color-mix(in srgb, #82807d, #ffffff 80%),
+    color-mix(in srgb, #82807d, #000000 80%)
+  );
+  --theme-color-settingsBgStripe: light-dark(
+    color-mix(in srgb, #82807d, #ffffff 95%),
+    color-mix(in srgb, #82807d, #000000 90%)
+  );
+  --theme-color-settingsGroupBg: light-dark(#ffffff80, #00000080);
+  --theme-color-shadow: light-dark(#61605e, #0d0d0d);
   --theme-color-suggestionBg: light-dark(
-    color-mix(in srgb, #82807d, #000000 85%),
-    color-mix(in srgb, #82807d, #ffffff 85%)
+    color-mix(in srgb, #82807d, #ffffff 85%),
+    color-mix(in srgb, #82807d, #000000 85%)
   );
   --theme-color-switcherBgActive: light-dark(#82807d, #82807d);
-  --theme-color-tagBgHover: light-dark(#ad8cfa1a, #9166f71a);
+  --theme-color-tagBgHover: light-dark(#9166f71a, #ad8cfa1a);
   --theme-color-tagBgSidebar: light-dark(
     hsl(258, 105.6%, 66%, 0.15),
     hsl(258, 105.6%, 66%, 0.15)
   );
   --theme-color-tagBgSidebarHover: light-dark(
-    #ab8af926,
-    hsl(258, 107.36%, 75.9%, 0.15)
+    hsl(258, 107.36%, 75.9%, 0.15),
+    #ab8af926
   );
-  --theme-color-tagHover: light-dark(#cbb6fc, #9166f7);
-  --theme-color-tagSidebar: light-dark(hsl(258, 105.6%, 66%), #2c087f);
-  --theme-color-tagSidebarHover: light-dark(hsl(258, 107.712%, 75.9%), #320893);
+  --theme-color-tagHover: light-dark(#9166f7, #cbb6fc);
+  --theme-color-tagSidebar: light-dark(#2c087f, hsl(258, 105.6%, 66%));
+  --theme-color-tagSidebarHover: light-dark(#320893, hsl(258, 107.712%, 75.9%));
   --theme-color-textMeta: light-dark(#82807d, #82807d);
   --theme-color-textSelected: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
+    color-mix(in srgb, #82807d, #ffffff 80%),
+    color-mix(in srgb, #82807d, #000000 80%)
   );
   --theme-color-warningBg: light-dark(
     color-mix(in srgb, #82807d, #ffffff 95%),
@@ -1279,8 +1279,8 @@
 @supports (color: color(display-p3 0 0 0%)) and (color: light-dark(red, red)) {
   :root {
     --theme-color-audioRecordingActive: light-dark(
-      color(display-p3 0.99836 0.86981 0.87175),
-      color(display-p3 0.69369 0.06701 0)
+      color(display-p3 0.69369 0.06701 0),
+      color(display-p3 0.99836 0.86981 0.87175)
     );
   }
 }
@@ -1906,20 +1906,20 @@ body {
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   --background-input: #82807d1f;
   --background-modifier-active-hover: light-dark(
-    color-mix(in srgb, #82807d, #000000 70%),
-    color-mix(in srgb, #82807d, #ffffff 60%)
+    color-mix(in srgb, #82807d, #ffffff 60%),
+    color-mix(in srgb, #82807d, #000000 70%)
   );
   --background-modifier-active-hover-alt: light-dark(
-    color-mix(in srgb, #82807d, #000000 25%),
-    color-mix(in srgb, #82807d, #ffffff 25%)
+    color-mix(in srgb, #82807d, #ffffff 25%),
+    color-mix(in srgb, #82807d, #000000 25%)
   );
   --background-modifier-border: light-dark(
-    color-mix(in srgb, #82807d, #000000 25%),
-    color-mix(in srgb, #82807d, #ffffff 25%)
+    color-mix(in srgb, #82807d, #ffffff 25%),
+    color-mix(in srgb, #82807d, #000000 25%)
   );
   --background-modifier-border-focus: light-dark(
-    color-mix(in srgb, #82807d, #000000 25%),
-    #82807d
+    #82807d,
+    color-mix(in srgb, #82807d, #000000 25%)
   );
   --background-modifier-border-hover: #3f3f3f;
   --background-modifier-error: #fb464c;
@@ -1933,14 +1933,14 @@ body {
   --background-primary: #000;
   --background-primary-alt: #111;
   --background-prompt: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 95%)
+    color-mix(in srgb, #82807d, #ffffff 95%),
+    color-mix(in srgb, #82807d, #000000 80%)
   );
   --background-secondary: light-dark(
-    color-mix(in srgb, #82807d, #000000 70%),
-    color-mix(in srgb, #82807d, #ffffff 60%)
+    color-mix(in srgb, #82807d, #ffffff 60%),
+    color-mix(in srgb, #82807d, #000000 70%)
   );
-  --background-secondary-alt: light-dark(#363636, #212121);
+  --background-secondary-alt: light-dark(#212121, #363636);
   --base-h: 258;
   --base-l: 66%;
   --base-s: 88%;
@@ -1978,8 +1978,8 @@ body {
   --bases-table-white-space: nowrap;
   --blockquote-background-color: transparent;
   --blockquote-border-color: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
+    color-mix(in srgb, #82807d, #ffffff 80%),
+    color-mix(in srgb, #82807d, #000000 80%)
   );
   --blockquote-border-thickness: 0.25em;
   --blockquote-color: inherit;
@@ -2024,7 +2024,7 @@ body {
   --canvas-color-5: 83, 223, 221;
   --canvas-color-6: 168, 130, 255;
   --canvas-dot-pattern: #363636;
-  --caret-color: light-dark(hsl(258, 150%, 80%), hsl(258, 150%, 50%));
+  --caret-color: light-dark(hsl(258, 150%, 50%), hsl(258, 150%, 80%));
   --checkbox-border-color: #82807d;
   --checkbox-border-color-hover: #82807d;
   --checkbox-color: #82807d;
@@ -2056,29 +2056,29 @@ body {
   --collapse-icon-color: light-dark(#82807d, #82807d);
   --collapse-icon-color-collapsed: light-dark(#82807d, #82807d);
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -2301,7 +2301,7 @@ body {
   --input-placeholder-color: color-mix(in srgb, #82807d, #ffffff 25%);
   --input-radius: 5px;
   --interactive-accent: light-dark(#82807d, #82807d);
-  --interactive-accent-hover: light-dark(#a68af9, #82807d);
+  --interactive-accent-hover: light-dark(#82807d, #a68af9);
   --interactive-accent-hsl: 258, 88%, 66%;
   --interactive-hover: #111;
   --interactive-normal: #000;
@@ -2369,8 +2369,8 @@ body {
   --metadata-gap: 0.5em;
   --metadata-input-background: transparent;
   --metadata-input-background-active: light-dark(
-    color-mix(in srgb, #82807d, #000000 90%),
-    color-mix(in srgb, #82807d, #ffffff 95%)
+    color-mix(in srgb, #82807d, #ffffff 95%),
+    color-mix(in srgb, #82807d, #000000 90%)
   );
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
@@ -2384,8 +2384,8 @@ body {
   --metadata-input-text-color: color-mix(in srgb, #82807d, #ffffff 60%);
   --metadata-label-background: transparent;
   --metadata-label-background-active: light-dark(
-    color-mix(in srgb, #82807d, #000000 90%),
-    color-mix(in srgb, #82807d, #ffffff 95%)
+    color-mix(in srgb, #82807d, #ffffff 95%),
+    color-mix(in srgb, #82807d, #000000 90%)
   );
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
@@ -2401,8 +2401,8 @@ body {
   --metadata-max-width: none;
   --metadata-padding: 8px 0;
   --metadata-property-background: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 95%)
+    color-mix(in srgb, #82807d, #ffffff 95%),
+    color-mix(in srgb, #82807d, #000000 80%)
   );
   --metadata-property-background-active: #82807d;
   --metadata-property-background-hover: light-dark(#82807d1f, #82807d1f);
@@ -2416,8 +2416,8 @@ body {
   --metadata-sidebar-input-font-size: 14.992px;
   --metadata-sidebar-label-font-size: 14.992px;
   --modal-background: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
+    color-mix(in srgb, #82807d, #ffffff 80%),
+    color-mix(in srgb, #82807d, #000000 80%)
   );
   --modal-border-color: #000000;
   --modal-border-width: 0;
@@ -2446,12 +2446,12 @@ body {
   --nav-item-children-padding-left: calc(1em - 0.5px);
   --nav-item-children-padding-start: 4px;
   --nav-item-color: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 60%),
-    color-mix(in srgb, #82807d, #000000 80%)
+    color-mix(in srgb, #82807d, #000000 80%),
+    color-mix(in srgb, #82807d, #ffffff 60%)
   );
   --nav-item-color-active: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
+    color-mix(in srgb, #82807d, #ffffff 80%),
+    color-mix(in srgb, #82807d, #000000 80%)
   );
   --nav-item-color-highlighted: var(--nav-item-hover);
   --nav-item-color-hover: color-mix(in srgb, #82807d, #ffffff 60%);
@@ -2474,8 +2474,8 @@ body {
   --pill-background: light-dark(#82807dbf, #82807dbf);
   --pill-background-hover: light-dark(#82807d, #82807d);
   --pill-background-remove-hover: light-dark(
-    color-mix(in srgb, #82807d, #000000 25%),
-    color-mix(in srgb, #82807d, #ffffff 25%)
+    color-mix(in srgb, #82807d, #ffffff 25%),
+    color-mix(in srgb, #82807d, #000000 25%)
   );
   --pill-border-color: color-mix(in srgb, #82807d, #000000 25%);
   --pill-border-color-hover: #3f3f3f;
@@ -2483,12 +2483,12 @@ body {
   --pill-color: currentColor;
   --pill-color-hover: color-mix(in srgb, #82807d, #ffffff 60%);
   --pill-color-remove: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
+    color-mix(in srgb, #82807d, #ffffff 80%),
+    color-mix(in srgb, #82807d, #000000 80%)
   );
   --pill-color-remove-hover: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
+    color-mix(in srgb, #82807d, #ffffff 80%),
+    color-mix(in srgb, #82807d, #000000 80%)
   );
   --pill-decoration: none;
   --pill-decoration-hover: none;
@@ -2613,8 +2613,8 @@ body {
   --sync-avatar-color-current-user: transparent;
   --tab-background-active: light-dark(#000000, #000000);
   --tab-background-inactive: light-dark(
-    color-mix(in srgb, #82807d, #000000 85%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
+    color-mix(in srgb, #82807d, #ffffff 80%),
+    color-mix(in srgb, #82807d, #000000 85%)
   );
   --tab-container-background: transparent;
   --tab-curve: 0.125em;
@@ -2645,12 +2645,12 @@ body {
   --tab-text-color: light-dark(#82807d80, #82807d80);
   --tab-text-color-active: light-dark(#82807d80, #82807d80);
   --tab-text-color-focused: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 25%),
-    color-mix(in srgb, #82807d, #000000 25%)
+    color-mix(in srgb, #82807d, #000000 25%),
+    color-mix(in srgb, #82807d, #ffffff 25%)
   );
   --tab-text-color-focused-active: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 25%),
-    color-mix(in srgb, #82807d, #000000 25%)
+    color-mix(in srgb, #82807d, #000000 25%),
+    color-mix(in srgb, #82807d, #ffffff 25%)
   );
   --tab-text-color-focused-active-current: light-dark(
     color-mix(in srgb, #82807d, #ffffff 60%),
@@ -2663,8 +2663,8 @@ body {
   --table-add-button-border-width: 1px;
   --table-background: transparent;
   --table-border-color: light-dark(
-    color-mix(in srgb, #82807d, #000000 70%),
-    color-mix(in srgb, #82807d, #ffffff 60%)
+    color-mix(in srgb, #82807d, #ffffff 60%),
+    color-mix(in srgb, #82807d, #000000 70%)
   );
   --table-border-width: 1px;
   --table-cell-vertical-alignment: top;
@@ -2680,8 +2680,8 @@ body {
   --table-header-background: transparent;
   --table-header-background-hover: inherit;
   --table-header-border-color: light-dark(
-    color-mix(in srgb, #82807d, #000000 70%),
-    color-mix(in srgb, #82807d, #ffffff 60%)
+    color-mix(in srgb, #82807d, #ffffff 60%),
+    color-mix(in srgb, #82807d, #000000 70%)
   );
   --table-header-border-width: 1px;
   --table-header-color: color-mix(in srgb, #82807d, #ffffff 60%);
@@ -2701,12 +2701,12 @@ body {
   --table-text-color: inherit;
   --table-text-size: 16px;
   --table-white-space: break-spaces;
-  --tag-background: light-dark(#8a5cf533, #8a5cf526);
+  --tag-background: light-dark(#8a5cf526, #8a5cf533);
   --tag-background-hover: #8a5cf533;
   --tag-border-color: #8a5cf526;
   --tag-border-color-hover: #8a5cf526;
   --tag-border-width: 0px;
-  --tag-color: light-dark(hsl(258, 105.6%, 66%), #733cf3);
+  --tag-color: light-dark(#733cf3, hsl(258, 105.6%, 66%));
   --tag-color-hover: #a68af9;
   --tag-decoration: none;
   --tag-decoration-hover: none;
@@ -2719,8 +2719,8 @@ body {
   --text-accent-hover: #c5b6fc;
   --text-error: #fb464c;
   --text-faint: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 25%),
-    color-mix(in srgb, #82807d, #000000 70%)
+    color-mix(in srgb, #82807d, #000000 70%),
+    color-mix(in srgb, #82807d, #ffffff 25%)
   );
   --text-highlight-bg: #ffd00066;
   --text-highlight-bg-rgb: 255, 208, 0;
@@ -2730,8 +2730,8 @@ body {
     transparent 30%
   );
   --text-normal: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 60%),
-    color-mix(in srgb, #82807d, #000000 90%)
+    color-mix(in srgb, #82807d, #000000 90%),
+    color-mix(in srgb, #82807d, #ffffff 60%)
   );
   --text-on-accent: color-mix(in srgb, #82807d, #ffffff 95%);
   --text-on-accent-inverted: #000000;
@@ -2741,7 +2741,7 @@ body {
   --theme-cardAspectRatio: auto;
   --theme-cardImageFit: contain;
   --theme-color-activeLineHighlight: light-dark(#82807d1f, #82807d1f);
-  --theme-color-audioRecordingActive: light-dark(#ffdfe0, #b90e00);
+  --theme-color-audioRecordingActive: light-dark(#b90e00, #ffdfe0);
   --theme-color-base: #82807d;
   --theme-color-baseDarkened25: color-mix(in srgb, #82807d, #000000 25%);
   --theme-color-baseDarkened40: color-mix(in srgb, #82807d, #000000 40%);
@@ -2764,8 +2764,8 @@ body {
   --theme-color-baseTransparent50: #82807d80;
   --theme-color-baseTransparent75: #82807dbf;
   --theme-color-blockId: light-dark(
-    color-mix(in srgb, #82807d, #000000 25%),
-    color-mix(in srgb, #82807d, #ffffff 25%)
+    color-mix(in srgb, #82807d, #ffffff 25%),
+    color-mix(in srgb, #82807d, #000000 25%)
   );
   --theme-color-blueDarkened: #004287;
   --theme-color-blueLightened: #83bcff;
@@ -2773,24 +2773,24 @@ body {
     color-mix(in srgb, #82807d, #ffffff 85%),
     color-mix(in srgb, #82807d, #000000 80%)
   );
-  --theme-color-calendarDayBg: light-dark(#00000080, #ffffffbf);
+  --theme-color-calendarDayBg: light-dark(#ffffffbf, #00000080);
   --theme-color-cardBg: #000000;
   --theme-color-communityItemBg: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
+    color-mix(in srgb, #82807d, #ffffff 80%),
+    color-mix(in srgb, #82807d, #000000 80%)
   );
   --theme-color-communityItemBgActive: light-dark(#82807d, #82807d);
   --theme-color-communityItemBgHover: light-dark(
-    color-mix(in srgb, #82807d, #000000 70%),
-    color-mix(in srgb, #82807d, #ffffff 60%)
+    color-mix(in srgb, #82807d, #ffffff 60%),
+    color-mix(in srgb, #82807d, #000000 70%)
   );
   --theme-color-communityItemBgSelected: light-dark(
-    color-mix(in srgb, #82807d, #000000 25%),
-    color-mix(in srgb, #82807d, #ffffff 25%)
+    color-mix(in srgb, #82807d, #ffffff 25%),
+    color-mix(in srgb, #82807d, #000000 25%)
   );
-  --theme-color-contentItemBg: light-dark(#00000033, #ffffff80);
+  --theme-color-contentItemBg: light-dark(#ffffff80, #00000033);
   --theme-color-contentItemBgActive: light-dark(#82807d, #82807d);
-  --theme-color-contentItemBgHover: light-dark(#0000001a, #ffffff40);
+  --theme-color-contentItemBgHover: light-dark(#ffffff40, #0000001a);
   --theme-color-control: light-dark(
     color-mix(in srgb, #82807d, #000000 70%),
     color-mix(in srgb, #82807d, #ffffff 60%)
@@ -2806,49 +2806,49 @@ body {
     )
   );
   --theme-color-controlBg: light-dark(
-    color-mix(in srgb, #82807d, #000000 25%),
-    color-mix(in srgb, #82807d, #ffffff 95%)
+    color-mix(in srgb, #82807d, #ffffff 95%),
+    color-mix(in srgb, #82807d, #000000 25%)
   );
   --theme-color-controlBgHover: light-dark(#82807d, #82807d);
   --theme-color-controlBgLowWeight: light-dark(
-    var(--theme-color-darkenTransparent25),
-    #ffffff80
+    #ffffff80,
+    var(--theme-color-darkenTransparent25)
   );
   --theme-color-controlContentArea: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 60%),
-    #82807d
+    #82807d,
+    color-mix(in srgb, #82807d, #ffffff 60%)
   );
   --theme-color-controlContentAreaHover: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
+    color-mix(in srgb, #82807d, #ffffff 80%),
+    color-mix(in srgb, #82807d, #000000 80%)
   );
   --theme-color-controlHover: light-dark(
-    color-mix(in srgb, #82807d, #000000 90%),
-    color-mix(in srgb, #82807d, #ffffff 95%)
+    color-mix(in srgb, #82807d, #ffffff 95%),
+    color-mix(in srgb, #82807d, #000000 90%)
   );
   --theme-color-controlLightweightActive: light-dark(
     color-mix(in srgb, #82807d, #ffffff 95%),
     color-mix(in srgb, #82807d, #ffffff 95%)
   );
   --theme-color-controlSetBg: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
+    color-mix(in srgb, #82807d, #ffffff 80%),
+    color-mix(in srgb, #82807d, #000000 80%)
   );
   --theme-color-controlText: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 60%),
-    color-mix(in srgb, #82807d, #000000 70%)
-  );
-  --theme-color-controlTextHover: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
-  );
-  --theme-color-controlUIHover: light-dark(
     color-mix(in srgb, #82807d, #000000 70%),
     color-mix(in srgb, #82807d, #ffffff 60%)
   );
+  --theme-color-controlTextHover: light-dark(
+    color-mix(in srgb, #82807d, #ffffff 80%),
+    color-mix(in srgb, #82807d, #000000 80%)
+  );
+  --theme-color-controlUIHover: light-dark(
+    color-mix(in srgb, #82807d, #ffffff 60%),
+    color-mix(in srgb, #82807d, #000000 70%)
+  );
   --theme-color-controlUISelected: light-dark(
-    color-mix(in srgb, #82807d, #000000 70%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
+    color-mix(in srgb, #82807d, #ffffff 80%),
+    color-mix(in srgb, #82807d, #000000 70%)
   );
   --theme-color-cyanDarkened: #009b99;
   --theme-color-cyanLightened: #cefffe;
@@ -2863,11 +2863,11 @@ body {
   --theme-color-dragTarget: #82807d80;
   --theme-color-dragTargetBg: #82807d40;
   --theme-color-emptyStateBg: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
+    color-mix(in srgb, #82807d, #ffffff 80%),
+    color-mix(in srgb, #82807d, #000000 80%)
   );
-  --theme-color-gradientCardsetBottom: light-dark(#82807d1f, #82807d0f);
-  --theme-color-gradientCardsetTop: light-dark(#82807d0f, #82807d1f);
+  --theme-color-gradientCardsetBottom: light-dark(#82807d0f, #82807d1f);
+  --theme-color-gradientCardsetTop: light-dark(#82807d1f, #82807d0f);
   --theme-color-graphViewBg: transparent;
   --theme-color-greenDarkened: #08822d;
   --theme-color-greenLightened: #a3fabd;
@@ -2880,8 +2880,8 @@ body {
   );
   --theme-color-inputPlaceholder: light-dark(#82807d, #82807d);
   --theme-color-interactiveActive: light-dark(
-    color-mix(in srgb, #82807d, #000000 25%),
-    color-mix(in srgb, #82807d, #ffffff 25%)
+    color-mix(in srgb, #82807d, #ffffff 25%),
+    color-mix(in srgb, #82807d, #000000 25%)
   );
   --theme-color-jiraIssueDanger: #ffffff;
   --theme-color-jiraIssueDangerBg: #fb464c40;
@@ -2896,8 +2896,8 @@ body {
   --theme-color-jiraIssueTableStripe: light-dark(#ffffff80, #00000080);
   --theme-color-jiraIssueWarningBg: light-dark(#fffffb, #a5a203);
   --theme-color-kanbanLaneBg: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
+    color-mix(in srgb, #82807d, #ffffff 80%),
+    color-mix(in srgb, #82807d, #000000 80%)
   );
   --theme-color-lightenTransparent06: #ffffff0f;
   --theme-color-lightenTransparent12: #ffffff1f;
@@ -2909,28 +2909,28 @@ body {
     color-mix(in srgb, #82807d, #000000 60%)
   );
   --theme-color-log: light-dark(
+    color-mix(in srgb, #82807d, #000000 80%),
+    color-mix(in srgb, #82807d, #ffffff 80%)
+  );
+  --theme-color-logBg: light-dark(
+    color-mix(in srgb, #82807d, #ffffff 25%),
+    color-mix(in srgb, #82807d, #000000 25%)
+  );
+  --theme-color-menuBg: light-dark(
     color-mix(in srgb, #82807d, #ffffff 80%),
     color-mix(in srgb, #82807d, #000000 80%)
   );
-  --theme-color-logBg: light-dark(
-    color-mix(in srgb, #82807d, #000000 25%),
-    color-mix(in srgb, #82807d, #ffffff 25%)
-  );
-  --theme-color-menuBg: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
-  );
   --theme-color-mobileToolbarBg: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
+    color-mix(in srgb, #82807d, #ffffff 80%),
+    color-mix(in srgb, #82807d, #000000 80%)
   );
   --theme-color-modalContentBg: light-dark(
-    color-mix(in srgb, #82807d, #000000 70%),
-    color-mix(in srgb, #82807d, #ffffff 60%)
+    color-mix(in srgb, #82807d, #ffffff 60%),
+    color-mix(in srgb, #82807d, #000000 70%)
   );
   --theme-color-navFileTag: light-dark(
-    color-mix(in srgb, #82807d, #000000 25%),
-    #82807d
+    #82807d,
+    color-mix(in srgb, #82807d, #000000 25%)
   );
   --theme-color-navFileTagActive: light-dark(
     color-mix(in srgb, #82807d, #000000 80%),
@@ -2941,20 +2941,20 @@ body {
     color-mix(in srgb, #82807d, #000000 80%)
   );
   --theme-color-navFileTagBorder: light-dark(
-    color-mix(in srgb, #82807d, #000000 25%),
-    #82807d
+    #82807d,
+    color-mix(in srgb, #82807d, #000000 25%)
   );
   --theme-color-navigationButtonBgHover: light-dark(
     color-mix(in srgb, #82807d, #ffffff 70%),
     color-mix(in srgb, #82807d, #000000 70%)
   );
   --theme-color-notice: light-dark(
-    color-mix(in srgb, #82807d, #000000 90%),
-    color-mix(in srgb, #82807d, #ffffff 95%)
+    color-mix(in srgb, #82807d, #ffffff 95%),
+    color-mix(in srgb, #82807d, #000000 90%)
   );
   --theme-color-noticeBg: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 95%),
-    color-mix(in srgb, #82807d, #000000 80%)
+    color-mix(in srgb, #82807d, #000000 80%),
+    color-mix(in srgb, #82807d, #ffffff 95%)
   );
   --theme-color-orangeDarkened: #a04f00;
   --theme-color-orangeLightened: #ffe1c1;
@@ -2963,8 +2963,8 @@ body {
   --theme-color-pinkDarkened: #e70070;
   --theme-color-pinkLightened: #ffffff;
   --theme-color-promptInstructions: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 40%),
-    color-mix(in srgb, #82807d, #000000 40%)
+    color-mix(in srgb, #82807d, #000000 40%),
+    color-mix(in srgb, #82807d, #ffffff 40%)
   );
   --theme-color-purpleDarkened: #2000d8;
   --theme-color-purpleLightened: #ffffff;
@@ -2973,18 +2973,18 @@ body {
   --theme-color-redTransparent25: #fb464c40;
   --theme-color-redTransparent75: #fb464cbf;
   --theme-color-settingsBg: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
+    color-mix(in srgb, #82807d, #ffffff 80%),
+    color-mix(in srgb, #82807d, #000000 80%)
   );
   --theme-color-settingsBgStripe: light-dark(
-    color-mix(in srgb, #82807d, #000000 90%),
-    color-mix(in srgb, #82807d, #ffffff 95%)
+    color-mix(in srgb, #82807d, #ffffff 95%),
+    color-mix(in srgb, #82807d, #000000 90%)
   );
-  --theme-color-settingsGroupBg: light-dark(#00000080, #ffffff80);
-  --theme-color-shadow: light-dark(#0d0d0d, #61605e);
+  --theme-color-settingsGroupBg: light-dark(#ffffff80, #00000080);
+  --theme-color-shadow: light-dark(#61605e, #0d0d0d);
   --theme-color-suggestionBg: light-dark(
-    color-mix(in srgb, #82807d, #000000 85%),
-    color-mix(in srgb, #82807d, #ffffff 85%)
+    color-mix(in srgb, #82807d, #ffffff 85%),
+    color-mix(in srgb, #82807d, #000000 85%)
   );
   --theme-color-switcherBgActive: light-dark(#82807d, #82807d);
   --theme-color-tabBgInactiveHover: #82807dbf;
@@ -2997,22 +2997,22 @@ body {
     color-mix(in srgb, #82807d, #ffffff 60%),
     color-mix(in srgb, #82807d, #000000 60%)
   );
-  --theme-color-tagBgHover: light-dark(#ad8cfa1a, #9166f71a);
+  --theme-color-tagBgHover: light-dark(#9166f71a, #ad8cfa1a);
   --theme-color-tagBgSidebar: light-dark(
     hsl(258, 105.6%, 66%, 0.15),
     hsl(258, 105.6%, 66%, 0.15)
   );
   --theme-color-tagBgSidebarHover: light-dark(
-    #ab8af926,
-    hsl(258, 107.36%, 75.9%, 0.15)
+    hsl(258, 107.36%, 75.9%, 0.15),
+    #ab8af926
   );
-  --theme-color-tagHover: light-dark(#cbb6fc, #9166f7);
-  --theme-color-tagSidebar: light-dark(hsl(258, 105.6%, 66%), #2c087f);
-  --theme-color-tagSidebarHover: light-dark(hsl(258, 107.712%, 75.9%), #320893);
+  --theme-color-tagHover: light-dark(#9166f7, #cbb6fc);
+  --theme-color-tagSidebar: light-dark(#2c087f, hsl(258, 105.6%, 66%));
+  --theme-color-tagSidebarHover: light-dark(#320893, hsl(258, 107.712%, 75.9%));
   --theme-color-textMeta: light-dark(#82807d, #82807d);
   --theme-color-textSelected: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
+    color-mix(in srgb, #82807d, #ffffff 80%),
+    color-mix(in srgb, #82807d, #000000 80%)
   );
   --theme-color-warningBg: light-dark(
     color-mix(in srgb, #82807d, #ffffff 95%),
@@ -3130,8 +3130,8 @@ body {
 @supports (color: color(display-p3 0 0 0%)) and (color: light-dark(red, red)) {
   body {
     --theme-color-audioRecordingActive: light-dark(
-      color(display-p3 0.99836 0.86981 0.87175),
-      color(display-p3 0.69369 0.06701 0)
+      color(display-p3 0.69369 0.06701 0),
+      color(display-p3 0.99836 0.86981 0.87175)
     );
   }
 }
@@ -9078,8 +9078,8 @@ button.mod-destructive {
 
 .card {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   border: 1px solid color-mix(in srgb, #82807d, #000000 25%);
   border-radius: 4px;
@@ -11748,8 +11748,8 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   cursor: default;
   text-align: center;
@@ -12909,25 +12909,25 @@ kbd {
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
-  filter: drop-shadow(0px 0px 1px light-dark(#999999, #707070))
+  filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
 }
 
@@ -22379,12 +22379,12 @@ body.is-mobile .canvas-node-resizer {
 
 .canvas-color-picker-item.canvas-color-picker-custom:not(.is-active) {
   background: conic-gradient(
-    light-dark(#fb464c, #e93147),
-    light-dark(#e0de71, #e0ac00),
-    light-dark(#44cf6e, #08b94e),
-    light-dark(#027aff, #086ddd),
-    light-dark(#a882ff, #7852ee),
-    light-dark(#fb464c, #e93147)
+    light-dark(#e93147, #fb464c),
+    light-dark(#e0ac00, #e0de71),
+    light-dark(#08b94e, #44cf6e),
+    light-dark(#086ddd, #027aff),
+    light-dark(#7852ee, #a882ff),
+    light-dark(#e93147, #fb464c)
   );
 }
 
@@ -26893,67 +26893,67 @@ audio::-webkit-media-controls-panel {
 }
 
 .mermaid svg[aria-roledescription="pie"] .pieCircle:nth-of-type(1) {
-  fill: light-dark(#fb464c, #e93147);
+  fill: light-dark(#e93147, #fb464c);
 }
 
 .mermaid svg[aria-roledescription="pie"] .legend:nth-of-type(1) rect {
-  fill: light-dark(#fb464c, #e93147);
+  fill: light-dark(#e93147, #fb464c);
 }
 
 .mermaid svg[aria-roledescription="pie"] .pieCircle:nth-of-type(2) {
-  fill: light-dark(#53dfdd, #00bfbc);
+  fill: light-dark(#00bfbc, #53dfdd);
 }
 
 .mermaid svg[aria-roledescription="pie"] .legend:nth-of-type(2) rect {
-  fill: light-dark(#53dfdd, #00bfbc);
+  fill: light-dark(#00bfbc, #53dfdd);
 }
 
 .mermaid svg[aria-roledescription="pie"] .pieCircle:nth-of-type(3) {
-  fill: light-dark(#e9973f, #ec7500);
+  fill: light-dark(#ec7500, #e9973f);
 }
 
 .mermaid svg[aria-roledescription="pie"] .legend:nth-of-type(3) rect {
-  fill: light-dark(#e9973f, #ec7500);
+  fill: light-dark(#ec7500, #e9973f);
 }
 
 .mermaid svg[aria-roledescription="pie"] .pieCircle:nth-of-type(4) {
-  fill: light-dark(#027aff, #086ddd);
+  fill: light-dark(#086ddd, #027aff);
 }
 
 .mermaid svg[aria-roledescription="pie"] .legend:nth-of-type(4) rect {
-  fill: light-dark(#027aff, #086ddd);
+  fill: light-dark(#086ddd, #027aff);
 }
 
 .mermaid svg[aria-roledescription="pie"] .pieCircle:nth-of-type(5) {
-  fill: light-dark(#e0de71, #e0ac00);
+  fill: light-dark(#e0ac00, #e0de71);
 }
 
 .mermaid svg[aria-roledescription="pie"] .legend:nth-of-type(5) rect {
-  fill: light-dark(#e0de71, #e0ac00);
+  fill: light-dark(#e0ac00, #e0de71);
 }
 
 .mermaid svg[aria-roledescription="pie"] .pieCircle:nth-of-type(6) {
-  fill: light-dark(#a882ff, #7852ee);
+  fill: light-dark(#7852ee, #a882ff);
 }
 
 .mermaid svg[aria-roledescription="pie"] .legend:nth-of-type(6) rect {
-  fill: light-dark(#a882ff, #7852ee);
+  fill: light-dark(#7852ee, #a882ff);
 }
 
 .mermaid svg[aria-roledescription="pie"] .pieCircle:nth-of-type(7) {
-  fill: light-dark(#44cf6e, #08b94e);
+  fill: light-dark(#08b94e, #44cf6e);
 }
 
 .mermaid svg[aria-roledescription="pie"] .legend:nth-of-type(7) rect {
-  fill: light-dark(#44cf6e, #08b94e);
+  fill: light-dark(#08b94e, #44cf6e);
 }
 
 .mermaid svg[aria-roledescription="pie"] .pieCircle:nth-of-type(8) {
-  fill: light-dark(#fa99cd, #d53984);
+  fill: light-dark(#d53984, #fa99cd);
 }
 
 .mermaid svg[aria-roledescription="pie"] .legend:nth-of-type(8) rect {
-  fill: light-dark(#fa99cd, #d53984);
+  fill: light-dark(#d53984, #fa99cd);
 }
 
 body.theme-setting-codeBlockLineNumbers {

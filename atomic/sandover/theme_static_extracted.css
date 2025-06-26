@@ -2,11 +2,11 @@
   --accent-h: 9;
   --accent-l: 66%;
   --accent-s: 89%;
-  --background-modifier-active-hover: light-dark(#ff8671, #ffa99a);
-  --background-primary: light-dark(#282828, #fffcf4);
-  --background-secondary: light-dark(#282828, #fffcf4);
-  --background-secondary-alt: light-dark(#363636, #212121);
-  --blockquote-color: light-dark(#53dfdd, #027aff);
+  --background-modifier-active-hover: light-dark(#ffa99a, #ff8671);
+  --background-primary: light-dark(#fffcf4, #282828);
+  --background-secondary: light-dark(#fffcf4, #282828);
+  --background-secondary-alt: light-dark(#212121, #363636);
+  --blockquote-color: light-dark(#027aff, #53dfdd);
   --callout-bug: light-dark(#fb464c, #fb464c);
   --callout-default: light-dark(#027aff, #027aff);
   --callout-error: light-dark(#fb464c, #fb464c);
@@ -23,61 +23,61 @@
   --callout-todo: light-dark(#44cf6e, #44cf6e);
   --callout-warning: light-dark(#e9973f, #e9973f);
   --color-accent: light-dark(#f5725b, #f5725b);
-  --color-accent-1: light-dark(#f9958a, #f88472);
-  --color-accent-2: light-dark(#fdbab6, #f9958a);
+  --color-accent-1: light-dark(#f88472, #f9958a);
+  --color-accent-2: light-dark(#f9958a, #fdbab6);
   --color-accent-hsl: light-dark(#f5725b, #f5725b);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
   --color-blue-rgb: 83, 119, 145;
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
   --color-cyan-rgb: 166, 230, 227;
   --color-dark1: #282828;
   --color-dark1-rgb: 40, 40, 40;
   --color-darker-purple: 153, 119, 181;
   --color-gray-rgb: 240, 240, 240;
-  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-green: light-dark(#08b94e, #44cf6e);
   --color-green-rgb: 172, 224, 153;
   --color-light1: #fffcf4;
   --color-light1-rgb: 255, 252, 244;
-  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-orange: light-dark(#ec7500, #e9973f);
   --color-orange-rgb: 255, 84, 0;
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --color-red-rgb: 255, 57, 77;
   --color-salmon: #ff8671;
   --color-salmon-lighter: #ffa99a;
   --color-salmon-lighter-rgb: 255, 169, 154;
   --color-salmon-rgb: 255, 134, 113;
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --color-yellow-light: #ffe5a7;
   --color-yellow-light-rgb: 255, 229, 167;
   --color-yellow-rgb: 255, 215, 125;
   --h1-color: light-dark(#c585cc, #c585cc);
-  --icon-color: light-dark(#fffcf4, #141300);
-  --icon-color-active: light-dark(#c585cc, #fffcf4);
+  --icon-color: light-dark(#141300, #fffcf4);
+  --icon-color-active: light-dark(#fffcf4, #c585cc);
   --icon-color-focused: light-dark(#fffcf4, #fffcf4);
-  --icon-color-focused-active: light-dark(197, 133, 204, #fffcf4);
+  --icon-color-focused-active: light-dark(#fffcf4, 197, 133, 204);
   --indentation-guide-color: light-dark(#2a2a2a, #2a2a2a);
   --indentation-guide-color-active: light-dark(#c585cc, #c585cc);
   --interactive-accent: light-dark(#f5725b, #f5725b);
-  --interactive-accent-hover: light-dark(#f9958a, #ff8671);
+  --interactive-accent-hover: light-dark(#ff8671, #f9958a);
   --keyboard-height: 0px;
   --link-color: light-dark(#ff8671, #ff8671);
-  --list-marker-color: light-dark(#fffcf4, #000000);
+  --list-marker-color: light-dark(#000000, #fffcf4);
   --loading-icon-delay: 400ms;
-  --nav-item-color-hover: light-dark(#ff8671, #000000);
+  --nav-item-color-hover: light-dark(#000000, #ff8671);
   --page-border: 9px solid transparent;
   --page-margin: 1px auto -8px;
   --pdfViewer-padding-bottom: 0;
@@ -91,10 +91,10 @@
   --status-bar-border-color: light-dark(#141300, #141300);
   --tag-color: light-dark(#ff8671, #ff8671);
   --text-accent: light-dark(#ff8671, #ff8671);
-  --text-normal: light-dark(#fffcf4, #000000);
-  --titlebar-background: light-dark(#ff8671, #ffa99a);
-  --titlebar-background-focused: light-dark(#ff8671, #ffa99a);
-  --titlebar-text-color: light-dark(#000000, #fffcf4);
+  --text-normal: light-dark(#000000, #fffcf4);
+  --titlebar-background: light-dark(#ffa99a, #ff8671);
+  --titlebar-background-focused: light-dark(#ffa99a, #ff8671);
+  --titlebar-text-color: light-dark(#fffcf4, #000000);
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
@@ -113,7 +113,7 @@ body {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
-  --background-modifier-active-hover: light-dark(#ff8671, #ffa99a);
+  --background-modifier-active-hover: light-dark(#ffa99a, #ff8671);
   --background-modifier-border: #363636;
   --background-modifier-border-focus: #f5725b;
   --background-modifier-border-hover: #3f3f3f;
@@ -125,10 +125,10 @@ body {
   --background-modifier-message: #000000e6;
   --background-modifier-success: #44cf6e;
   --background-modifier-success-rgb: 68, 207, 110;
-  --background-primary: light-dark(#282828, #fffcf4);
+  --background-primary: light-dark(#fffcf4, #282828);
   --background-primary-alt: #111;
-  --background-secondary: light-dark(#282828, #fffcf4);
-  --background-secondary-alt: light-dark(#363636, #212121);
+  --background-secondary: light-dark(#fffcf4, #282828);
+  --background-secondary-alt: light-dark(#212121, #363636);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 0px;
   --bases-filter-menu-width: 520px;
@@ -164,7 +164,7 @@ body {
   --blockquote-background-color: transparent;
   --blockquote-border-color: #f5725b;
   --blockquote-border-thickness: 2px;
-  --blockquote-color: light-dark(#53dfdd, #027aff);
+  --blockquote-color: light-dark(#027aff, #53dfdd);
   --blockquote-font-style: normal;
   --bold-color: inherit;
   --bold-modifier: 200;
@@ -240,29 +240,29 @@ body {
   --collapse-icon-color: rgba(#fffcf4, 0.5);
   --collapse-icon-color-collapsed: #ff8671;
   --color-accent: light-dark(#f5725b, #f5725b);
-  --color-accent-1: light-dark(#f9958a, #f88472);
-  --color-accent-2: light-dark(#fdbab6, #f9958a);
+  --color-accent-1: light-dark(#f88472, #f9958a);
+  --color-accent-2: light-dark(#f9958a, #fdbab6);
   --color-accent-hsl: light-dark(#f5725b, #f5725b);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -426,10 +426,10 @@ body {
   --heading-spacing: 0rem;
   --hr-color: transparent;
   --hr-thickness: 2px;
-  --icon-color: light-dark(#fffcf4, #141300);
-  --icon-color-active: light-dark(#c585cc, #fffcf4);
+  --icon-color: light-dark(#141300, #fffcf4);
+  --icon-color-active: light-dark(#fffcf4, #c585cc);
   --icon-color-focused: light-dark(#fffcf4, #fffcf4);
-  --icon-color-focused-active: light-dark(197, 133, 204, #fffcf4);
+  --icon-color-focused-active: light-dark(#fffcf4, 197, 133, 204);
   --icon-color-hover: rgba(#fffcf4, 0.8);
   --icon-l: 18px;
   --icon-l-stroke-width: 1.75px;
@@ -471,7 +471,7 @@ body {
   --input-placeholder-color: rgba(#fffcf4, 0.5);
   --input-radius: 0px;
   --interactive-accent: light-dark(#f5725b, #f5725b);
-  --interactive-accent-hover: light-dark(#f9958a, #ff8671);
+  --interactive-accent-hover: light-dark(#ff8671, #f9958a);
   --interactive-accent-hsl: 9, 89%, 66%;
   --interactive-hover: #111;
   --interactive-normal: #000000;
@@ -515,7 +515,7 @@ body {
   --list-indent: 2.25em;
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
-  --list-marker-color: light-dark(#fffcf4, #000000);
+  --list-marker-color: light-dark(#000000, #fffcf4);
   --list-marker-color-collapsed: #ff8671;
   --list-marker-color-hover: rgba(#fffcf4, 0.8);
   --list-numbered-style: decimal;
@@ -607,7 +607,7 @@ body {
   --nav-item-color: rgba(#fffcf4, 0.8);
   --nav-item-color-active: #fffcf4;
   --nav-item-color-highlighted: #ff8671;
-  --nav-item-color-hover: light-dark(#ff8671, #000000);
+  --nav-item-color-hover: light-dark(#000000, #ff8671);
   --nav-item-color-selected: #fffcf4;
   --nav-item-padding: 4px 8px 4px 24px;
   --nav-item-parent-padding: 6px 8px 6px 24px;
@@ -807,18 +807,18 @@ body {
   --text-highlight-bg: #ffd00066;
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: #b3b3b3;
-  --text-normal: light-dark(#fffcf4, #000000);
+  --text-normal: light-dark(#000000, #fffcf4);
   --text-on-accent: #ffffff;
   --text-on-accent-inverted: #000000;
   --text-selection: #f5725b33;
   --text-success: #44cf6e;
   --text-warning: #e9973f;
-  --titlebar-background: light-dark(#ff8671, #ffa99a);
-  --titlebar-background-focused: light-dark(#ff8671, #ffa99a);
+  --titlebar-background: light-dark(#ffa99a, #ff8671);
+  --titlebar-background-focused: light-dark(#ffa99a, #ff8671);
   --titlebar-border-color: transparent;
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;
-  --titlebar-text-color: light-dark(#000000, #fffcf4);
+  --titlebar-text-color: light-dark(#fffcf4, #000000);
   --titlebar-text-color-focused: #fffcf4;
   --titlebar-text-weight: 700;
   --toggle-border-width: 2px;
@@ -843,7 +843,7 @@ body {
   --zoom-factor: 1;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(40, 40, 40, #fffcf4);
+  background-color: light-dark(#fffcf4, 40, 40, 40);
   caret-color: #ff8671;
   color: 240, 240, 240;
   contain: initial;
@@ -1262,7 +1262,7 @@ h6 {
 }
 
 .popover {
-  background-color: light-dark(40, 40, 40, #fffcf4);
+  background-color: light-dark(#fffcf4, 40, 40, 40);
   border: 1px solid transparent;
   border-radius: 0px;
   box-shadow:
@@ -1276,7 +1276,7 @@ h6 {
 }
 
 .prompt {
-  background-color: light-dark(40, 40, 40, #fffcf4);
+  background-color: light-dark(#fffcf4, 40, 40, 40);
   border: 0.5pt solid #555555;
   border-radius: 0px;
   box-shadow:
@@ -1295,9 +1295,9 @@ h6 {
 }
 
 input.prompt-input {
-  background-color: light-dark(40, 40, 40, #fffcf4);
+  background-color: light-dark(#fffcf4, 40, 40, 40);
   border: none;
-  border-bottom: 1px solid light-dark(40, 40, 40, #fffcf4);
+  border-bottom: 1px solid light-dark(#fffcf4, 40, 40, 40);
   border-radius: 0;
   font-size: 16px;
   height: 48px;
@@ -1316,7 +1316,7 @@ input.prompt-input {
 
 .markdown-rendered mark {
   background-color: #ffe5a74d;
-  color: light-dark(#fffcf4, #000000);
+  color: light-dark(#000000, #fffcf4);
 }
 
 a.tag {
@@ -1336,7 +1336,7 @@ input[type="search"] {
   background: transparent;
   border: 1px solid transparent;
   border-radius: 0px;
-  color: light-dark(#fffcf4, #000000);
+  color: light-dark(#000000, #fffcf4);
   font-family: inherit;
   font-size: 14.992px;
   height: 40px;
@@ -1368,7 +1368,7 @@ input[type="search"] {
 
 .nav-file-icon {
   align-items: center;
-  color: light-dark(255, 252, 244, #141300);
+  color: light-dark(#141300, 255, 252, 244);
   display: inline-flex;
   margin-inline-end: 6px;
   opacity: 1;
@@ -1454,7 +1454,7 @@ input[type="search"] {
 
 .tree-item-self.is-clickable.mobile-tap {
   background-color: #ffffff26;
-  color: light-dark(#ff8671, #000000);
+  color: light-dark(#000000, #ff8671);
   font-weight: inherit;
 }
 
@@ -1479,7 +1479,7 @@ input[type="search"] {
 
 .tree-item-self .tree-item-icon {
   align-items: center;
-  color: light-dark(255, 252, 244, #141300);
+  color: light-dark(#141300, 255, 252, 244);
   display: flex;
   flex: 0 0 auto;
   justify-content: center;
@@ -1559,7 +1559,7 @@ svg.svg-icon {
 }
 
 .clickable-icon.mod-filled svg {
-  fill: light-dark(255, 252, 244, #141300);
+  fill: light-dark(#141300, 255, 252, 244);
 }
 
 .setting-item-control .clickable-icon {
@@ -1581,8 +1581,8 @@ svg.svg-icon {
 }
 
 .clickable-icon.is-active {
-  background-color: light-dark(#ff8671, #ffa99a);
-  color: light-dark(#c585cc, #fffcf4);
+  background-color: light-dark(#ffa99a, #ff8671);
+  color: light-dark(#fffcf4, #c585cc);
   opacity: 0.65;
 }
 
@@ -1591,7 +1591,7 @@ svg.svg-icon {
   align-items: center;
   background-color: transparent;
   border-radius: 0px;
-  color: light-dark(255, 252, 244, #141300);
+  color: light-dark(#141300, 255, 252, 244);
   cursor: pointer;
   display: flex;
   height: auto;
@@ -1678,7 +1678,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-arrow {
-  color: light-dark(#fffcf4, #000000);
+  color: light-dark(#000000, #fffcf4);
   opacity: 0.5;
 }
 
@@ -1695,7 +1695,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-highlight {
-  color: light-dark(#44cf6e, #08b94e);
+  color: light-dark(#08b94e, #44cf6e);
 }
 
 .graph-view.color-line-highlight {
@@ -1703,7 +1703,7 @@ svg.svg-icon {
 }
 
 .graph-controls {
-  background-color: light-dark(40, 40, 40, #fffcf4);
+  background-color: light-dark(#fffcf4, 40, 40, 40);
   border-radius: 0px;
   inset-inline-end: 12px;
   overflow: auto;
@@ -1952,16 +1952,16 @@ svg.svg-icon {
 }
 
 .workspace-tabs .workspace-leaf {
-  background-color: light-dark(40, 40, 40, #fffcf4);
+  background-color: light-dark(#fffcf4, 40, 40, 40);
   height: 100%;
 }
 
 .workspace-split.mod-root {
-  background-color: light-dark(40, 40, 40, #fffcf4);
+  background-color: light-dark(#fffcf4, 40, 40, 40);
 }
 
 .workspace-split.mod-root .view-content {
-  background-color: light-dark(40, 40, 40, #fffcf4);
+  background-color: light-dark(#fffcf4, 40, 40, 40);
 }
 
 .workspace-leaf-resize-handle {

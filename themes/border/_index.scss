@@ -226,33 +226,33 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --background-primary: light-dark(#27282e, #000);
+  --background-primary: light-dark(#000, #27282e);
   --code-background: light-dark(#282c34, #282c34);
-  --color-accent-2: light-dark(#adb8de, #909cd0);
+  --color-accent-2: light-dark(#909cd0, #adb8de);
   --color-accent-hsl: light-dark(#707bc2, #707bc2);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --text-accent: light-dark(#909cd0, #909cd0);
   --text-accent-hover: light-dark(#adb8de, #adb8de);
-  --text-faint: light-dark(#74778b, #989bae);
-  --text-muted: light-dark(#b8bac7, #545664);
-  --text-normal: light-dark(#d3d5de, #1d1d20);
+  --text-faint: light-dark(#989bae, #74778b);
+  --text-muted: light-dark(#545664, #b8bac7);
+  --text-normal: light-dark(#1d1d20, #d3d5de);
 }
 body {
   --background-modifier-border: #363636;
   --background-modifier-border-focus: #555;
   --background-modifier-border-hover: #3f3f3f;
   --background-modifier-hover: #ffffff11;
-  --background-primary: light-dark(#27282e, #000);
+  --background-primary: light-dark(#000, #27282e);
   --bold-color: #ff7881;
   --bold-weight: 600;
   --checkbox-border-color: #777c9c;
@@ -275,19 +275,19 @@ body {
   --code-value: #cb9eff;
   --collapse-icon-color: #777c9c;
   --collapse-icon-color-collapsed: #909cd0;
-  --color-accent-2: light-dark(#adb8de, #909cd0);
+  --color-accent-2: light-dark(#909cd0, #adb8de);
   --color-accent-hsl: light-dark(#707bc2, #707bc2);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -331,10 +331,10 @@ body {
   --tag-weight: inherit;
   --text-accent: light-dark(#909cd0, #909cd0);
   --text-accent-hover: light-dark(#adb8de, #adb8de);
-  --text-faint: light-dark(#74778b, #989bae);
+  --text-faint: light-dark(#989bae, #74778b);
   --text-highlight-bg: #ffd00066;
-  --text-muted: light-dark(#b8bac7, #545664);
-  --text-normal: light-dark(#d3d5de, #1d1d20);
+  --text-muted: light-dark(#545664, #b8bac7);
+  --text-normal: light-dark(#1d1d20, #d3d5de);
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: transparent;

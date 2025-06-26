@@ -949,22 +949,22 @@
 }
 
 :root {
-  --background-primary: light-dark(var(--r-dark0), var(--r-light1));
-  --background-primary-alt: light-dark(var(--dark0), var(--r-light0));
-  --background-secondary: light-dark(var(--r-dark1), var(--r-light2));
+  --background-primary: light-dark(var(--r-light1), var(--r-dark0));
+  --background-primary-alt: light-dark(var(--r-light0), var(--dark0));
+  --background-secondary: light-dark(var(--r-light2), var(--r-dark1));
   --background-secondary-alt: light-dark(
-    var(--color-base-30),
-    var(--color-base-05)
+    var(--color-base-05),
+    var(--color-base-30)
   );
   --bright-orange-v: #fe8019;
   --bright-red: #fb4934;
   --bright-yellow-v: #fabd2f;
   --button-text-color: light-dark(
-    var(--background-secondary-alt),
-    var(--text-on-accent)
+    var(--text-on-accent),
+    var(--background-secondary-alt)
   );
   --code-light-gray: #cccccc;
-  --code-normal: light-dark(var(--code-light-gray), var(--r-dark2));
+  --code-normal: light-dark(var(--r-dark2), var(--code-light-gray));
   --code-orange: #b46629;
   --color-accent: light-dark(
     hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
@@ -972,26 +972,26 @@
   );
   --color-accent-1: light-dark(
     hsl(
-      calc(var(--accent-h) - 3),
-      calc(var(--accent-s) * 1.02),
-      calc(var(--accent-l) * 1.15)
-    ),
-    hsl(
       calc(var(--accent-h) - 1),
       calc(var(--accent-s) * 1.01),
       calc(var(--accent-l) * 1.075)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
     )
   );
   --color-accent-2: light-dark(
     hsl(
-      calc(var(--accent-h) - 5),
-      calc(var(--accent-s) * 1.05),
-      calc(var(--accent-l) * 1.29)
-    ),
-    hsl(
       calc(var(--accent-h) - 3),
       calc(var(--accent-s) * 1.02),
       calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
     )
   );
   --color-accent-hsl: light-dark(
@@ -1002,26 +1002,26 @@
     var(--accent-s),
     var(--accent-l)
   );
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --dark0: #282828;
   --dark0-hard: #1d2021;
   --dark0-soft: #32302f;
@@ -1039,16 +1039,16 @@
   --faded-red: #9d0006;
   --faded-yellow: #b57614;
   --font-monospace: "JetBrains Mono", Liberation Mono, Monospace, Courier New;
-  --graph-view-line-color: light-dark(var(--dark1), var(--light4));
+  --graph-view-line-color: light-dark(var(--light4), var(--dark1));
   --gray: #928374;
   --interactive-accent: light-dark(var(--r-deep-orange), var(--r-deep-orange));
   --interactive-accent-rgb: light-dark(
     var(--r-bright-orange),
     var(--r-bright-orange)
   );
-  --interactive-before: light-dark(var(--dark4), var(--r-light4));
-  --interactive-hover: light-dark(var(--color-base-35), var(--r-light0));
-  --interactive-normal: light-dark(var(--color-base-30), var(--r-light2));
+  --interactive-before: light-dark(var(--r-light4), var(--dark4));
+  --interactive-hover: light-dark(var(--r-light0), var(--color-base-35));
+  --interactive-normal: light-dark(var(--r-light2), var(--color-base-30));
   --keyboard-height: 0px;
   --light0: #fbf1c7;
   --light0-hard: #f9f5d7;
@@ -1107,8 +1107,8 @@
   --size-normal: 16px;
   --spreadHorizontalWrapped-margin-LR: -3.5px;
   --status-bar-background: light-dark(
-    var(--background-secondary),
-    var(--r-light2-soft)
+    var(--r-light2-soft),
+    var(--background-secondary)
   );
   --test-green: #00ff00;
   --text-a-hover: light-dark(var(--r-yellow-orange), var(--r-yellow-orange));
@@ -1117,17 +1117,17 @@
     var(--r-yellow-orange),
     var(--r-yellow-orange)
   );
-  --text-card: light-dark(var(--r-light2-soft), var(--r-dark2));
-  --text-faint: light-dark(var(--r-scorpion), var(--r-gunmetal));
+  --text-card: light-dark(var(--r-dark2), var(--r-light2-soft));
+  --text-faint: light-dark(var(--r-gunmetal), var(--r-scorpion));
   --text-highlight-bg: light-dark(var(--r-bg-highlight), var(--r-bg-highlight));
-  --text-link: light-dark(var(--text-a), var(--r-dark-orange));
-  --text-link-hover: light-dark(var(--text-a-hover), var(--r-deep-orange));
+  --text-link: light-dark(var(--r-dark-orange), var(--text-a));
+  --text-link-hover: light-dark(var(--r-deep-orange), var(--text-a-hover));
   --text-mark: light-dark(var(--r-bg-highlight), var(--r-bg-highlight));
-  --text-muted: light-dark(var(--color-base-70), var(--r-gunmetal));
-  --text-normal: light-dark(var(--r-standard-text), var(--r-dark0-accent));
+  --text-muted: light-dark(var(--r-gunmetal), var(--color-base-70));
+  --text-normal: light-dark(var(--r-dark0-accent), var(--r-standard-text));
   --text-platinum: light-dark(var(--platinum), var(--platinum));
   --text-selection: light-dark(var(--r-bg-selection), var(--r-bg-selection));
-  --text-tag: light-dark(var(--r-bright-orange), var(--r-deep-orange));
+  --text-tag: light-dark(var(--r-deep-orange), var(--r-bright-orange));
   --text-title-h1: light-dark(var(--r-dark-red), var(--r-dark-red));
   --text-title-h2: light-dark(var(--r-orange), var(--r-orange));
   --text-title-h3: light-dark(var(--r-bright-orange), var(--r-bright-orange));
@@ -1778,12 +1778,12 @@ body {
   --background-modifier-message: rgba(0, 0, 0, 0.9);
   --background-modifier-success: var(--color-green);
   --background-modifier-success-rgb: var(--color-green-rgb);
-  --background-primary: light-dark(var(--r-dark0), var(--r-light1));
-  --background-primary-alt: light-dark(var(--dark0), var(--r-light0));
-  --background-secondary: light-dark(var(--r-dark1), var(--r-light2));
+  --background-primary: light-dark(var(--r-light1), var(--r-dark0));
+  --background-primary-alt: light-dark(var(--r-light0), var(--dark0));
+  --background-secondary: light-dark(var(--r-light2), var(--r-dark1));
   --background-secondary-alt: light-dark(
-    var(--color-base-30),
-    var(--color-base-05)
+    var(--color-base-05),
+    var(--color-base-30)
   );
   --bases-embed-border: 1px solid var(--background-modifier-border);
   --bases-embed-border-radius: var(--radius-s);
@@ -1828,8 +1828,8 @@ body {
   --border-width: 1px;
   --button-radius: var(--input-radius);
   --button-text-color: light-dark(
-    var(--background-secondary-alt),
-    var(--text-on-accent)
+    var(--text-on-accent),
+    var(--background-secondary-alt)
   );
   --callout-blend-mode: normal;
   --callout-border-opacity: 0.25;
@@ -1886,7 +1886,7 @@ body {
   --code-function: var(--color-yellow);
   --code-important: var(--color-orange);
   --code-keyword: var(--color-pink);
-  --code-normal: light-dark(var(--code-light-gray), var(--r-dark2));
+  --code-normal: light-dark(var(--r-dark2), var(--code-light-gray));
   --code-operator: var(--color-red);
   --code-property: var(--color-cyan);
   --code-punctuation: var(--text-muted);
@@ -1904,26 +1904,26 @@ body {
   );
   --color-accent-1: light-dark(
     hsl(
-      calc(var(--accent-h) - 3),
-      calc(var(--accent-s) * 1.02),
-      calc(var(--accent-l) * 1.15)
-    ),
-    hsl(
       calc(var(--accent-h) - 1),
       calc(var(--accent-s) * 1.01),
       calc(var(--accent-l) * 1.075)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
     )
   );
   --color-accent-2: light-dark(
     hsl(
-      calc(var(--accent-h) - 5),
-      calc(var(--accent-s) * 1.05),
-      calc(var(--accent-l) * 1.29)
-    ),
-    hsl(
       calc(var(--accent-h) - 3),
       calc(var(--accent-s) * 1.02),
       calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
     )
   );
   --color-accent-hsl: light-dark(
@@ -1934,26 +1934,26 @@ body {
     var(--accent-s),
     var(--accent-l)
   );
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -2063,7 +2063,7 @@ body {
   --graph-node-tag: var(--color-green);
   --graph-node-unresolved: var(--text-faint);
   --graph-text: var(--text-normal);
-  --graph-view-line-color: light-dark(var(--dark1), var(--light4));
+  --graph-view-line-color: light-dark(var(--light4), var(--dark1));
   --h1-color: inherit;
   --h1-font: inherit;
   --h1-line-height: 1.2;
@@ -2198,9 +2198,9 @@ body {
     var(--r-bright-orange),
     var(--r-bright-orange)
   );
-  --interactive-before: light-dark(var(--dark4), var(--r-light4));
-  --interactive-hover: light-dark(var(--color-base-35), var(--r-light0));
-  --interactive-normal: light-dark(var(--color-base-30), var(--r-light2));
+  --interactive-before: light-dark(var(--r-light4), var(--dark4));
+  --interactive-hover: light-dark(var(--r-light0), var(--color-base-35));
+  --interactive-normal: light-dark(var(--r-light2), var(--color-base-30));
   --italic-color: inherit;
   --italic-weight: inherit;
   --layer-cover: 5;
@@ -2423,8 +2423,8 @@ body {
   --slider-track-background: var(--background-modifier-border);
   --slider-track-height: 3px;
   --status-bar-background: light-dark(
-    var(--background-secondary),
-    var(--r-light2-soft)
+    var(--r-light2-soft),
+    var(--background-secondary)
   );
   --status-bar-border-color: var(--divider-color);
   --status-bar-border-width: 1px 0 0 1px;
@@ -2534,22 +2534,22 @@ body {
     var(--r-yellow-orange),
     var(--r-yellow-orange)
   );
-  --text-card: light-dark(var(--r-light2-soft), var(--r-dark2));
+  --text-card: light-dark(var(--r-dark2), var(--r-light2-soft));
   --text-error: var(--color-red);
-  --text-faint: light-dark(var(--r-scorpion), var(--r-gunmetal));
+  --text-faint: light-dark(var(--r-gunmetal), var(--r-scorpion));
   --text-highlight-bg: light-dark(var(--r-bg-highlight), var(--r-bg-highlight));
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-link: light-dark(var(--text-a), var(--r-dark-orange));
-  --text-link-hover: light-dark(var(--text-a-hover), var(--r-deep-orange));
+  --text-link: light-dark(var(--r-dark-orange), var(--text-a));
+  --text-link-hover: light-dark(var(--r-deep-orange), var(--text-a-hover));
   --text-mark: light-dark(var(--r-bg-highlight), var(--r-bg-highlight));
-  --text-muted: light-dark(var(--color-base-70), var(--r-gunmetal));
-  --text-normal: light-dark(var(--r-standard-text), var(--r-dark0-accent));
+  --text-muted: light-dark(var(--r-gunmetal), var(--color-base-70));
+  --text-normal: light-dark(var(--r-dark0-accent), var(--r-standard-text));
   --text-on-accent: white;
   --text-on-accent-inverted: black;
   --text-platinum: light-dark(var(--platinum), var(--platinum));
   --text-selection: light-dark(var(--r-bg-selection), var(--r-bg-selection));
   --text-success: var(--color-green);
-  --text-tag: light-dark(var(--r-bright-orange), var(--r-deep-orange));
+  --text-tag: light-dark(var(--r-deep-orange), var(--r-bright-orange));
   --text-title-h1: light-dark(var(--r-dark-red), var(--r-dark-red));
   --text-title-h2: light-dark(var(--r-orange), var(--r-orange));
   --text-title-h3: light-dark(var(--r-bright-orange), var(--r-bright-orange));

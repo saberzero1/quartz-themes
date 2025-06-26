@@ -13,55 +13,55 @@
   --background-modifier-success-rgb: light-dark(#99e5b5, #99e5b5);
   --background-primary: light-dark(#0b1510, #0b1510);
   --background-secondary: light-dark(#0b1510, #0b1510);
-  --background-secondary-alt: light-dark(#363636, #212121);
-  --col-accent: light-dark(#3fff8c, #437a41);
-  --col-accent-plus: light-dark(#99e5b5, #20542c);
-  --col-base: light-dark(#40b266, #64a055);
-  --col-base-background: light-dark(#0b1510, #d7ddd9);
+  --background-secondary-alt: light-dark(#212121, #363636);
+  --col-accent: light-dark(#437a41, #3fff8c);
+  --col-accent-plus: light-dark(#20542c, #99e5b5);
+  --col-base: light-dark(#64a055, #40b266);
+  --col-base-background: light-dark(#d7ddd9, #0b1510);
   --col-bckg-filetreeheader: light-dark(#0b1510, #0b1510);
   --col-bckg-mainpanels: light-dark(#020704, #020704);
   --col-bckg-menudropdownhover: light-dark(#163f26, #163f26);
   --col-bckg-menudropdowns: light-dark(#163f26, #163f26);
   --col-bckg-selectedtitles: light-dark(#163f26, #163f26);
-  --col-danger: light-dark(#318c54, #86c66c);
+  --col-danger: light-dark(#86c66c, #318c54);
   --col-icons: light-dark(#99e5b5, #99e5b5);
-  --col-important: light-dark(#ffd303, #0457e5);
-  --col-important-muted: light-dark(#3f3401, #3f8cff);
-  --col-important-plus: light-dark(#fff2bf, #011f64);
+  --col-important: light-dark(#0457e5, #ffd303);
+  --col-important-muted: light-dark(#3f8cff, #3f3401);
+  --col-important-plus: light-dark(#011f64, #fff2bf);
   --col-menucheckbox: light-dark(#3fff8c, #3fff8c);
-  --col-muted: light-dark(#163f26, #86c66c);
-  --col-muted-plus: light-dark(#020704, #c9d3cb);
-  --col-safety: light-dark(#163f26, #acd580);
+  --col-muted: light-dark(#86c66c, #163f26);
+  --col-muted-plus: light-dark(#c9d3cb, #020704);
+  --col-safety: light-dark(#acd580, #163f26);
   --col-text-selection: #437254;
   --col-txt-menudropdownhover: light-dark(#3fff8c, #3fff8c);
   --col-txt-menudropdowns: light-dark(#3fff8c, #3fff8c);
   --col-txt-selectedtitles: light-dark(#99e5b5, #99e5b5);
-  --col-txt-titlebars: light-dark(#070707, #e5eae7);
+  --col-txt-titlebars: light-dark(#e5eae7, #070707);
   --col-txt-titles: light-dark(#3fff8c, #3fff8c);
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --files-font-size: 1em;
   --fnt-head-p: "DotGothic16", "ModeSeven Regular";
   --fnt-title: "Audiowide", "Scifi Title";
@@ -135,7 +135,7 @@ body {
   --background-primary: light-dark(#0b1510, #0b1510);
   --background-primary-alt: #111;
   --background-secondary: light-dark(#0b1510, #0b1510);
-  --background-secondary-alt: light-dark(#363636, #212121);
+  --background-secondary-alt: light-dark(#212121, #363636);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -242,16 +242,16 @@ body {
   --code-tag: #fb464c;
   --code-value: #a882ff;
   --code-white-space: pre-wrap;
-  --col-accent: light-dark(#3fff8c, #437a41);
-  --col-accent-plus: light-dark(#99e5b5, #20542c);
-  --col-base: light-dark(#40b266, #64a055);
-  --col-base-background: light-dark(#0b1510, #d7ddd9);
+  --col-accent: light-dark(#437a41, #3fff8c);
+  --col-accent-plus: light-dark(#20542c, #99e5b5);
+  --col-base: light-dark(#64a055, #40b266);
+  --col-base-background: light-dark(#d7ddd9, #0b1510);
   --col-bckg-filetreeheader: light-dark(#0b1510, #0b1510);
   --col-bckg-mainpanels: light-dark(#020704, #020704);
   --col-bckg-menudropdownhover: light-dark(#163f26, #163f26);
   --col-bckg-menudropdowns: light-dark(#163f26, #163f26);
   --col-bckg-selectedtitles: light-dark(#163f26, #163f26);
-  --col-danger: light-dark(#318c54, #86c66c);
+  --col-danger: light-dark(#86c66c, #318c54);
   --col-ed-background: #0b1510;
   --col-ed-bckg-checkbox-empty: #163f26;
   --col-ed-bckg-checkbox-full: #99e5b5;
@@ -294,12 +294,12 @@ body {
   --col-ed-txt-title: #99e5b5;
   --col-ed-txt-ul-bullet: #99e5b5;
   --col-icons: light-dark(#99e5b5, #99e5b5);
-  --col-important: light-dark(#ffd303, #0457e5);
-  --col-important-muted: light-dark(#3f3401, #3f8cff);
-  --col-important-plus: light-dark(#fff2bf, #011f64);
+  --col-important: light-dark(#0457e5, #ffd303);
+  --col-important-muted: light-dark(#3f8cff, #3f3401);
+  --col-important-plus: light-dark(#011f64, #fff2bf);
   --col-menucheckbox: light-dark(#3fff8c, #3fff8c);
-  --col-muted: light-dark(#163f26, #86c66c);
-  --col-muted-plus: light-dark(#020704, #c9d3cb);
+  --col-muted: light-dark(#86c66c, #163f26);
+  --col-muted-plus: light-dark(#c9d3cb, #020704);
   --col-pr-background: #0b1510;
   --col-pr-bckg-checkbox-empty: #163f26;
   --col-pr-bckg-checkbox-full: #99e5b5;
@@ -338,38 +338,38 @@ body {
   --col-pr-txt-tag: #163f26;
   --col-pr-txt-title: #99e5b5;
   --col-pr-txt-ul-bullet: #99e5b5;
-  --col-safety: light-dark(#163f26, #acd580);
+  --col-safety: light-dark(#acd580, #163f26);
   --col-txt-menudropdownhover: light-dark(#3fff8c, #3fff8c);
   --col-txt-menudropdowns: light-dark(#3fff8c, #3fff8c);
   --col-txt-selectedtitles: light-dark(#99e5b5, #99e5b5);
-  --col-txt-titlebars: light-dark(#070707, #e5eae7);
+  --col-txt-titlebars: light-dark(#e5eae7, #070707);
   --col-txt-titles: light-dark(#3fff8c, #3fff8c);
   --collapse-icon-color: #99e5b5;
   --collapse-icon-color-collapsed: #99e5b5;
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -971,11 +971,11 @@ body {
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: light-dark(
-    light-dark(#0b1510, #d7ddd9),
-    light-dark(#0b1510, #d7ddd9)
+    light-dark(#d7ddd9, #0b1510),
+    light-dark(#d7ddd9, #0b1510)
   );
   caret-color: #99e5b5;
-  color: light-dark(light-dark(#99e5b5, #20542c), light-dark(#99e5b5, #20542c));
+  color: light-dark(light-dark(#20542c, #99e5b5), light-dark(#20542c, #99e5b5));
   contain: initial;
   font-family: "DotGothic16", "ModeSeven Regular";
   font-size: 16px;
@@ -1135,7 +1135,7 @@ h6 {
 .markdown-rendered button.copy-code-button {
   background-color: transparent;
   box-shadow: none;
-  color: light-dark(light-dark(#99e5b5, #20542c), light-dark(#99e5b5, #20542c));
+  color: light-dark(light-dark(#20542c, #99e5b5), light-dark(#20542c, #99e5b5));
   font-family: "DotGothic16", "ModeSeven Regular";
   font-size: 12.8px;
   height: auto;
@@ -1148,8 +1148,8 @@ h6 {
 
 .markdown-rendered button.copy-code-button:hover {
   background-color: light-dark(
-    light-dark(#163f26, #86c66c),
-    light-dark(#163f26, #86c66c)
+    light-dark(#86c66c, #163f26),
+    light-dark(#86c66c, #163f26)
   );
 }
 
@@ -1368,11 +1368,11 @@ h6 {
 
 .popover {
   background-color: light-dark(
-    light-dark(#0b1510, #d7ddd9),
-    light-dark(#0b1510, #d7ddd9)
+    light-dark(#d7ddd9, #0b1510),
+    light-dark(#d7ddd9, #0b1510)
   );
   border: 1px solid
-    light-dark(light-dark(#020704, #c9d3cb), light-dark(#020704, #c9d3cb));
+    light-dark(light-dark(#c9d3cb, #020704), light-dark(#c9d3cb, #020704));
   border-radius: 8px;
   box-shadow:
     0px 1px 2px #0000001f,
@@ -1386,8 +1386,8 @@ h6 {
 
 .prompt {
   background-color: light-dark(
-    light-dark(#0b1510, #d7ddd9),
-    light-dark(#0b1510, #d7ddd9)
+    light-dark(#d7ddd9, #0b1510),
+    light-dark(#d7ddd9, #0b1510)
   );
   border: 0.5pt solid #555555;
   border-radius: 12px;
@@ -1408,12 +1408,12 @@ h6 {
 
 input.prompt-input {
   background-color: light-dark(
-    light-dark(#0b1510, #d7ddd9),
-    light-dark(#0b1510, #d7ddd9)
+    light-dark(#d7ddd9, #0b1510),
+    light-dark(#d7ddd9, #0b1510)
   );
   border: none;
   border-bottom: 1px solid
-    light-dark(light-dark(#0b1510, #d7ddd9), light-dark(#0b1510, #d7ddd9));
+    light-dark(light-dark(#d7ddd9, #0b1510), light-dark(#d7ddd9, #0b1510));
   border-radius: 0;
   font-size: 16px;
   height: 48px;
@@ -1424,8 +1424,8 @@ input.prompt-input {
 
 .suggestion-item.is-selected {
   background-color: light-dark(
-    light-dark(#163f26, #86c66c),
-    light-dark(#163f26, #86c66c)
+    light-dark(#86c66c, #163f26),
+    light-dark(#86c66c, #163f26)
   );
 }
 
@@ -1435,7 +1435,7 @@ input.prompt-input {
 
 .markdown-rendered mark {
   background-color: #ffd00066;
-  color: light-dark(light-dark(#99e5b5, #20542c), light-dark(#99e5b5, #20542c));
+  color: light-dark(light-dark(#20542c, #99e5b5), light-dark(#20542c, #99e5b5));
 }
 
 a.tag {
@@ -1454,13 +1454,13 @@ a.tag {
 input[type="search"] {
   -webkit-app-region: no-drag;
   background: light-dark(
-    light-dark(#020704, #c9d3cb),
-    light-dark(#020704, #c9d3cb)
+    light-dark(#c9d3cb, #020704),
+    light-dark(#c9d3cb, #020704)
   );
   border: 1px solid
-    light-dark(light-dark(#020704, #c9d3cb), light-dark(#020704, #c9d3cb));
+    light-dark(light-dark(#c9d3cb, #020704), light-dark(#c9d3cb, #020704));
   border-radius: 5px;
-  color: light-dark(light-dark(#99e5b5, #20542c), light-dark(#99e5b5, #20542c));
+  color: light-dark(light-dark(#20542c, #99e5b5), light-dark(#20542c, #99e5b5));
   font-family: inherit;
   font-size: 14.992px;
   height: 40px;
@@ -1470,8 +1470,8 @@ input[type="search"] {
 
 .nav-files-container {
   background-color: light-dark(
-    light-dark(#020704, #c9d3cb),
-    light-dark(#020704, #c9d3cb)
+    light-dark(#c9d3cb, #020704),
+    light-dark(#c9d3cb, #020704)
   );
   flex-grow: 1;
   overflow-x: hidden;
@@ -1484,8 +1484,8 @@ input[type="search"] {
 .nav-file-tag {
   align-self: center;
   background-color: light-dark(
-    light-dark(#163f26, #86c66c),
-    light-dark(#163f26, #86c66c)
+    light-dark(#86c66c, #163f26),
+    light-dark(#86c66c, #163f26)
   );
   border-radius: 4px;
   font-size: 9px;
@@ -1532,10 +1532,10 @@ input[type="search"] {
 
 .nav-file-title.is-active {
   background-color: light-dark(
-    light-dark(#163f26, #86c66c),
-    light-dark(#163f26, #86c66c)
+    light-dark(#86c66c, #163f26),
+    light-dark(#86c66c, #163f26)
   );
-  color: light-dark(light-dark(#99e5b5, #20542c), light-dark(#99e5b5, #20542c));
+  color: light-dark(light-dark(#20542c, #99e5b5), light-dark(#20542c, #99e5b5));
   font-weight: bold;
 }
 
@@ -1605,10 +1605,10 @@ input[type="search"] {
 
 .tree-item-self.is-being-dragged {
   background-color: light-dark(
-    light-dark(#3fff8c, #437a41),
-    light-dark(#3fff8c, #437a41)
+    light-dark(#437a41, #3fff8c),
+    light-dark(#437a41, #3fff8c)
   );
-  color: light-dark(light-dark(#020704, #c9d3cb), light-dark(#020704, #c9d3cb));
+  color: light-dark(light-dark(#c9d3cb, #020704), light-dark(#c9d3cb, #020704));
 }
 
 .tree-item-self .tree-item-icon {
@@ -1642,7 +1642,7 @@ input[type="search"] {
 
 .tree-item-flair {
   border-radius: 4px;
-  color: light-dark(light-dark(#99e5b5, #20542c), light-dark(#99e5b5, #20542c));
+  color: light-dark(light-dark(#20542c, #99e5b5), light-dark(#20542c, #99e5b5));
   font-size: 12.8px;
   line-height: 1;
 }
@@ -1659,7 +1659,7 @@ input[type="search"] {
 }
 
 .tree-item-inner-subtext {
-  color: light-dark(light-dark(#99e5b5, #20542c), light-dark(#99e5b5, #20542c));
+  color: light-dark(light-dark(#20542c, #99e5b5), light-dark(#20542c, #99e5b5));
   font-size: 85%;
 }
 
@@ -1689,7 +1689,7 @@ svg.svg-icon {
 }
 
 .clickable-icon.mod-warning {
-  color: light-dark(light-dark(#ffd303, #0457e5), light-dark(#ffd303, #0457e5));
+  color: light-dark(light-dark(#0457e5, #ffd303), light-dark(#0457e5, #ffd303));
 }
 
 .clickable-icon.mod-filled svg {
@@ -1702,7 +1702,7 @@ svg.svg-icon {
 
 .clickable-icon[aria-disabled="true"] {
   background-color: unset;
-  color: light-dark(light-dark(#99e5b5, #20542c), light-dark(#99e5b5, #20542c));
+  color: light-dark(light-dark(#20542c, #99e5b5), light-dark(#20542c, #99e5b5));
   opacity: 0.4;
 }
 
@@ -1716,8 +1716,8 @@ svg.svg-icon {
 
 .clickable-icon.is-active {
   background-color: light-dark(
-    light-dark(#163f26, #86c66c),
-    light-dark(#163f26, #86c66c)
+    light-dark(#86c66c, #163f26),
+    light-dark(#86c66c, #163f26)
   );
   color: #99e5b5;
   opacity: 0.65;
@@ -1739,7 +1739,7 @@ svg.svg-icon {
 }
 
 .view-header-title-parent .view-header-breadcrumb-separator {
-  color: light-dark(light-dark(#99e5b5, #20542c), light-dark(#99e5b5, #20542c));
+  color: light-dark(light-dark(#20542c, #99e5b5), light-dark(#20542c, #99e5b5));
   padding: 2px 1px;
 }
 
@@ -1791,31 +1791,31 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-1 {
-  color: light-dark(light-dark(#99e5b5, #20542c), light-dark(#99e5b5, #20542c));
+  color: light-dark(light-dark(#20542c, #99e5b5), light-dark(#20542c, #99e5b5));
 }
 
 .graph-view.color-fill-2 {
-  color: light-dark(light-dark(#99e5b5, #20542c), light-dark(#99e5b5, #20542c));
+  color: light-dark(light-dark(#20542c, #99e5b5), light-dark(#20542c, #99e5b5));
 }
 
 .graph-view.color-fill-3 {
-  color: light-dark(light-dark(#99e5b5, #20542c), light-dark(#99e5b5, #20542c));
+  color: light-dark(light-dark(#20542c, #99e5b5), light-dark(#20542c, #99e5b5));
 }
 
 .graph-view.color-fill-4 {
-  color: light-dark(light-dark(#99e5b5, #20542c), light-dark(#99e5b5, #20542c));
+  color: light-dark(light-dark(#20542c, #99e5b5), light-dark(#20542c, #99e5b5));
 }
 
 .graph-view.color-fill-5 {
-  color: light-dark(light-dark(#99e5b5, #20542c), light-dark(#99e5b5, #20542c));
+  color: light-dark(light-dark(#20542c, #99e5b5), light-dark(#20542c, #99e5b5));
 }
 
 .graph-view.color-fill-6 {
-  color: light-dark(light-dark(#99e5b5, #20542c), light-dark(#99e5b5, #20542c));
+  color: light-dark(light-dark(#20542c, #99e5b5), light-dark(#20542c, #99e5b5));
 }
 
 .graph-view.color-arrow {
-  color: light-dark(light-dark(#99e5b5, #20542c), light-dark(#99e5b5, #20542c));
+  color: light-dark(light-dark(#20542c, #99e5b5), light-dark(#20542c, #99e5b5));
   opacity: 0.5;
 }
 
@@ -1832,17 +1832,17 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-highlight {
-  color: light-dark(light-dark(#3fff8c, #437a41), light-dark(#3fff8c, #437a41));
+  color: light-dark(light-dark(#437a41, #3fff8c), light-dark(#437a41, #3fff8c));
 }
 
 .graph-view.color-line-highlight {
-  color: light-dark(light-dark(#3fff8c, #437a41), light-dark(#3fff8c, #437a41));
+  color: light-dark(light-dark(#437a41, #3fff8c), light-dark(#437a41, #3fff8c));
 }
 
 .graph-controls {
   background-color: light-dark(
-    light-dark(#0b1510, #d7ddd9),
-    light-dark(#0b1510, #d7ddd9)
+    light-dark(#d7ddd9, #0b1510),
+    light-dark(#d7ddd9, #0b1510)
   );
   border-radius: 8px;
   inset-inline-end: 12px;
@@ -2079,23 +2079,23 @@ svg.svg-icon {
 
 .workspace-tabs .workspace-leaf {
   background-color: light-dark(
-    light-dark(#0b1510, #d7ddd9),
-    light-dark(#0b1510, #d7ddd9)
+    light-dark(#d7ddd9, #0b1510),
+    light-dark(#d7ddd9, #0b1510)
   );
   height: 100%;
 }
 
 .workspace-split.mod-root {
   background-color: light-dark(
-    light-dark(#0b1510, #d7ddd9),
-    light-dark(#0b1510, #d7ddd9)
+    light-dark(#d7ddd9, #0b1510),
+    light-dark(#d7ddd9, #0b1510)
   );
 }
 
 .workspace-split.mod-root .view-content {
   background-color: light-dark(
-    light-dark(#0b1510, #d7ddd9),
-    light-dark(#0b1510, #d7ddd9)
+    light-dark(#d7ddd9, #0b1510),
+    light-dark(#d7ddd9, #0b1510)
   );
 }
 

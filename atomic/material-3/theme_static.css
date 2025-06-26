@@ -931,130 +931,130 @@
 }
 
 :root {
-  --background-secondary-alt: light-dark(#363636, #212121);
+  --background-secondary-alt: light-dark(#212121, #363636);
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
-  --md-extended-blue-color: light-dark(#bbc3ff, #283cba);
-  --md-extended-blue-color-container: light-dark(#475bd6, #5164e0);
-  --md-extended-blue-on-color: light-dark(#001b96, #ffffff);
+  --md-extended-blue-color: light-dark(#283cba, #bbc3ff);
+  --md-extended-blue-color-container: light-dark(#5164e0, #475bd6);
+  --md-extended-blue-on-color: light-dark(#ffffff, #001b96);
   --md-extended-blue-on-color-container: light-dark(#ffffff, #ffffff);
   --md-extended-blue-seed: #086ddd;
   --md-extended-blue-value: #5164e0;
-  --md-extended-cyan-color: light-dark(#4ddff2, #006874);
-  --md-extended-cyan-color-container: light-dark(#00b4c7, #28c8db);
-  --md-extended-cyan-on-color: light-dark(#00363d, #ffffff);
-  --md-extended-cyan-on-color-container: light-dark(#001c20, #002f35);
+  --md-extended-cyan-color: light-dark(#006874, #4ddff2);
+  --md-extended-cyan-color-container: light-dark(#28c8db, #00b4c7);
+  --md-extended-cyan-on-color: light-dark(#ffffff, #00363d);
+  --md-extended-cyan-on-color-container: light-dark(#002f35, #001c20);
   --md-extended-cyan-seed: #00bfbc;
   --md-extended-cyan-value: #05bdd0;
   --md-extended-green-color: light-dark(#4ddfa2, #4ddfa2);
-  --md-extended-green-color-container: light-dark(#00ad77, #25c389);
-  --md-extended-green-on-color: light-dark(#003824, #ffffff);
-  --md-extended-green-on-color-container: light-dark(#000703, #002818);
+  --md-extended-green-color-container: light-dark(#25c389, #00ad77);
+  --md-extended-green-on-color: light-dark(#ffffff, #003824);
+  --md-extended-green-on-color-container: light-dark(#002818, #000703);
   --md-extended-green-seed: #08b94e;
   --md-extended-green-value: #00b77e;
-  --md-extended-orange-color: light-dark(#ffb59c, #a93806);
-  --md-extended-orange-color-container: light-dark(#c74d1e, #ff7b4c);
-  --md-extended-orange-on-color: light-dark(#5c1900, #ffffff);
-  --md-extended-orange-on-color-container: light-dark(#ffffff, #300900);
+  --md-extended-orange-color: light-dark(#a93806, #ffb59c);
+  --md-extended-orange-color-container: light-dark(#ff7b4c, #c74d1e);
+  --md-extended-orange-on-color: light-dark(#ffffff, #5c1900);
+  --md-extended-orange-on-color-container: light-dark(#300900, #ffffff);
   --md-extended-orange-seed: #ec7500;
   --md-extended-orange-value: #f46d3c;
-  --md-extended-pink-color: light-dark(#ffade3, #96007e);
-  --md-extended-pink-color-container: light-dark(#c131a3, #c637a8);
-  --md-extended-pink-on-color: light-dark(#5f004f, #ffffff);
+  --md-extended-pink-color: light-dark(#96007e, #ffade3);
+  --md-extended-pink-color-container: light-dark(#c637a8, #c131a3);
+  --md-extended-pink-on-color: light-dark(#ffffff, #5f004f);
   --md-extended-pink-on-color-container: light-dark(#ffffff, #ffffff);
   --md-extended-pink-seed: #d53984;
   --md-extended-pink-value: #cb3bac;
-  --md-extended-purple-color: light-dark(#cdbdff, #5522c7);
-  --md-extended-purple-color-container: light-dark(#7147e4, #7a51ed);
-  --md-extended-purple-on-color: light-dark(#370095, #ffffff);
+  --md-extended-purple-color: light-dark(#5522c7, #cdbdff);
+  --md-extended-purple-color-container: light-dark(#7a51ed, #7147e4);
+  --md-extended-purple-on-color: light-dark(#ffffff, #370095);
   --md-extended-purple-on-color-container: light-dark(#ffffff, #ffffff);
   --md-extended-purple-seed: #7852ee;
   --md-extended-purple-value: #7a51ed;
-  --md-extended-red-color: light-dark(#ffb1c4, #a0004c);
-  --md-extended-red-color-container: light-dark(#dc1f6f, #dd2070);
-  --md-extended-red-on-color: light-dark(#65002e, #ffffff);
+  --md-extended-red-color: light-dark(#a0004c, #ffb1c4);
+  --md-extended-red-color-container: light-dark(#dd2070, #dc1f6f);
+  --md-extended-red-on-color: light-dark(#ffffff, #65002e);
   --md-extended-red-on-color-container: light-dark(#ffffff, #ffffff);
   --md-extended-red-seed: #e93147;
   --md-extended-red-value: #e72a77;
-  --md-extended-yellow-color: light-dark(#ffcf92, #835500);
-  --md-extended-yellow-color-container: light-dark(#ed9d0c, #ffac23);
-  --md-extended-yellow-on-color: light-dark(#452b00, #ffffff);
-  --md-extended-yellow-on-color-container: light-dark(#331e00, #442a00);
+  --md-extended-yellow-color: light-dark(#835500, #ffcf92);
+  --md-extended-yellow-color-container: light-dark(#ffac23, #ed9d0c);
+  --md-extended-yellow-on-color: light-dark(#ffffff, #452b00);
+  --md-extended-yellow-on-color-container: light-dark(#442a00, #331e00);
   --md-extended-yellow-seed: #e0ac00;
   --md-extended-yellow-value: #f4a317;
   --md-key-colors-primary: #8658ff;
   --md-source-seed: #8658ff;
-  --md-sys-color-background: light-dark(#14121b, #fdf7ff);
-  --md-sys-color-error: light-dark(#ffb4ab, #ba1a1a);
-  --md-sys-color-error-container: light-dark(#93000a, #ffdad6);
-  --md-sys-color-inverse-on-surface: light-dark(#322f39, #f5eefc);
-  --md-sys-color-inverse-primary: light-dark(#6b36e2, #cebdff);
-  --md-sys-color-inverse-surface: light-dark(#e7e0ee, #322f39);
-  --md-sys-color-on-background: light-dark(#e7e0ee, #1d1a24);
-  --md-sys-color-on-error: light-dark(#690005, #ffffff);
-  --md-sys-color-on-error-container: light-dark(#ffdad6, #410002);
-  --md-sys-color-on-primary: light-dark(#390093, #ffffff);
-  --md-sys-color-on-primary-container: light-dark(#e8ddff, #21005d);
+  --md-sys-color-background: light-dark(#fdf7ff, #14121b);
+  --md-sys-color-error: light-dark(#ba1a1a, #ffb4ab);
+  --md-sys-color-error-container: light-dark(#ffdad6, #93000a);
+  --md-sys-color-inverse-on-surface: light-dark(#f5eefc, #322f39);
+  --md-sys-color-inverse-primary: light-dark(#cebdff, #6b36e2);
+  --md-sys-color-inverse-surface: light-dark(#322f39, #e7e0ee);
+  --md-sys-color-on-background: light-dark(#1d1a24, #e7e0ee);
+  --md-sys-color-on-error: light-dark(#ffffff, #690005);
+  --md-sys-color-on-error-container: light-dark(#410002, #ffdad6);
+  --md-sys-color-on-primary: light-dark(#ffffff, #390093);
+  --md-sys-color-on-primary-container: light-dark(#21005d, #e8ddff);
   --md-sys-color-on-primary-fixed: light-dark(#21005d, #21005d);
   --md-sys-color-on-primary-fixed-variant: light-dark(#5208ca, #5208ca);
-  --md-sys-color-on-secondary: light-dark(#36226b, #ffffff);
-  --md-sys-color-on-secondary-container: light-dark(#e8ddff, #210656);
+  --md-sys-color-on-secondary: light-dark(#ffffff, #36226b);
+  --md-sys-color-on-secondary-container: light-dark(#210656, #e8ddff);
   --md-sys-color-on-secondary-fixed: light-dark(#210656, #210656);
   --md-sys-color-on-secondary-fixed-variant: light-dark(#4d3a83, #4d3a83);
-  --md-sys-color-on-surface: light-dark(#e7e0ee, #1d1a24);
-  --md-sys-color-on-surface-variant: light-dark(#cbc3d8, #494455);
-  --md-sys-color-on-tertiary: light-dark(#4c2700, #ffffff);
-  --md-sys-color-on-tertiary-container: light-dark(#ffdcc1, #2e1500);
+  --md-sys-color-on-surface: light-dark(#1d1a24, #e7e0ee);
+  --md-sys-color-on-surface-variant: light-dark(#494455, #cbc3d8);
+  --md-sys-color-on-tertiary: light-dark(#ffffff, #4c2700);
+  --md-sys-color-on-tertiary-container: light-dark(#2e1500, #ffdcc1);
   --md-sys-color-on-tertiary-fixed: light-dark(#2e1500, #2e1500);
   --md-sys-color-on-tertiary-fixed-variant: light-dark(#6c3a00, #6c3a00);
-  --md-sys-color-outline: light-dark(#948ea1, #7a7487);
-  --md-sys-color-outline-variant: light-dark(#494455, #cbc3d8);
-  --md-sys-color-primary: light-dark(#cebdff, #6b36e2);
-  --md-sys-color-primary-container: light-dark(#5208ca, #e8ddff);
+  --md-sys-color-outline: light-dark(#7a7487, #948ea1);
+  --md-sys-color-outline-variant: light-dark(#cbc3d8, #494455);
+  --md-sys-color-primary: light-dark(#6b36e2, #cebdff);
+  --md-sys-color-primary-container: light-dark(#e8ddff, #5208ca);
   --md-sys-color-primary-fixed: light-dark(#e8ddff, #e8ddff);
   --md-sys-color-primary-fixed-dim: light-dark(#cebdff, #cebdff);
   --md-sys-color-scrim: light-dark(#000000, #000000);
-  --md-sys-color-secondary: light-dark(#cebdff, #65529d);
-  --md-sys-color-secondary-container: light-dark(#4d3a83, #e8ddff);
+  --md-sys-color-secondary: light-dark(#65529d, #cebdff);
+  --md-sys-color-secondary-container: light-dark(#e8ddff, #4d3a83);
   --md-sys-color-secondary-fixed: light-dark(#e8ddff, #e8ddff);
   --md-sys-color-secondary-fixed-dim: light-dark(#cebdff, #cebdff);
   --md-sys-color-shadow: light-dark(#000000, #000000);
-  --md-sys-color-surface: light-dark(#14121b, #fdf7ff);
-  --md-sys-color-surface-bright: light-dark(#3b3742, #fdf7ff);
-  --md-sys-color-surface-container: light-dark(#211e28, #f2ebf9);
-  --md-sys-color-surface-container-high: light-dark(#2b2833, #ece5f4);
-  --md-sys-color-surface-container-highest: light-dark(#36333e, #e7e0ee);
-  --md-sys-color-surface-container-low: light-dark(#1d1a24, #f8f1ff);
-  --md-sys-color-surface-container-lowest: light-dark(#0f0d16, #ffffff);
-  --md-sys-color-surface-dim: light-dark(#14121b, #ded7e5);
-  --md-sys-color-surface-tint: light-dark(#cebdff, #6b36e2);
-  --md-sys-color-surface-variant: light-dark(#494455, #e7dff4);
-  --md-sys-color-tertiary: light-dark(#ffb779, #8f4e00);
-  --md-sys-color-tertiary-container: light-dark(#6c3a00, #ffdcc1);
+  --md-sys-color-surface: light-dark(#fdf7ff, #14121b);
+  --md-sys-color-surface-bright: light-dark(#fdf7ff, #3b3742);
+  --md-sys-color-surface-container: light-dark(#f2ebf9, #211e28);
+  --md-sys-color-surface-container-high: light-dark(#ece5f4, #2b2833);
+  --md-sys-color-surface-container-highest: light-dark(#e7e0ee, #36333e);
+  --md-sys-color-surface-container-low: light-dark(#f8f1ff, #1d1a24);
+  --md-sys-color-surface-container-lowest: light-dark(#ffffff, #0f0d16);
+  --md-sys-color-surface-dim: light-dark(#ded7e5, #14121b);
+  --md-sys-color-surface-tint: light-dark(#6b36e2, #cebdff);
+  --md-sys-color-surface-variant: light-dark(#e7dff4, #494455);
+  --md-sys-color-tertiary: light-dark(#8f4e00, #ffb779);
+  --md-sys-color-tertiary-container: light-dark(#ffdcc1, #6c3a00);
   --md-sys-color-tertiary-fixed: light-dark(#ffdcc1, #ffdcc1);
   --md-sys-color-tertiary-fixed-dim: light-dark(#ffb779, #ffb779);
   --md-sys-motion-duration-extra-long1: 700ms;
@@ -1746,7 +1746,7 @@ body {
   --background-primary: #000;
   --background-primary-alt: #111;
   --background-secondary: #1e1e1e;
-  --background-secondary-alt: light-dark(#363636, #212121);
+  --background-secondary-alt: light-dark(#212121, #363636);
   --bases-embed-border: 1px solid #cbc3d8;
   --bases-embed-border-radius: 8px;
   --bases-filter-menu-width: 520px;
@@ -1856,29 +1856,29 @@ body {
   --collapse-icon-color: #494455;
   --collapse-icon-color-collapsed: #6b36e2;
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -2135,85 +2135,85 @@ body {
   --list-marker-color-hover: #494455;
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
-  --md-extended-blue-color: light-dark(#bbc3ff, #283cba);
-  --md-extended-blue-color-container: light-dark(#475bd6, #5164e0);
-  --md-extended-blue-on-color: light-dark(#001b96, #ffffff);
+  --md-extended-blue-color: light-dark(#283cba, #bbc3ff);
+  --md-extended-blue-color-container: light-dark(#5164e0, #475bd6);
+  --md-extended-blue-on-color: light-dark(#ffffff, #001b96);
   --md-extended-blue-on-color-container: light-dark(#ffffff, #ffffff);
-  --md-extended-cyan-color: light-dark(#4ddff2, #006874);
-  --md-extended-cyan-color-container: light-dark(#00b4c7, #28c8db);
-  --md-extended-cyan-on-color: light-dark(#00363d, #ffffff);
-  --md-extended-cyan-on-color-container: light-dark(#001c20, #002f35);
+  --md-extended-cyan-color: light-dark(#006874, #4ddff2);
+  --md-extended-cyan-color-container: light-dark(#28c8db, #00b4c7);
+  --md-extended-cyan-on-color: light-dark(#ffffff, #00363d);
+  --md-extended-cyan-on-color-container: light-dark(#002f35, #001c20);
   --md-extended-green-color: light-dark(#4ddfa2, #4ddfa2);
-  --md-extended-green-color-container: light-dark(#00ad77, #25c389);
-  --md-extended-green-on-color: light-dark(#003824, #ffffff);
-  --md-extended-green-on-color-container: light-dark(#000703, #002818);
-  --md-extended-orange-color: light-dark(#ffb59c, #a93806);
-  --md-extended-orange-color-container: light-dark(#c74d1e, #ff7b4c);
-  --md-extended-orange-on-color: light-dark(#5c1900, #ffffff);
-  --md-extended-orange-on-color-container: light-dark(#ffffff, #300900);
-  --md-extended-pink-color: light-dark(#ffade3, #96007e);
-  --md-extended-pink-color-container: light-dark(#c131a3, #c637a8);
-  --md-extended-pink-on-color: light-dark(#5f004f, #ffffff);
+  --md-extended-green-color-container: light-dark(#25c389, #00ad77);
+  --md-extended-green-on-color: light-dark(#ffffff, #003824);
+  --md-extended-green-on-color-container: light-dark(#002818, #000703);
+  --md-extended-orange-color: light-dark(#a93806, #ffb59c);
+  --md-extended-orange-color-container: light-dark(#ff7b4c, #c74d1e);
+  --md-extended-orange-on-color: light-dark(#ffffff, #5c1900);
+  --md-extended-orange-on-color-container: light-dark(#300900, #ffffff);
+  --md-extended-pink-color: light-dark(#96007e, #ffade3);
+  --md-extended-pink-color-container: light-dark(#c637a8, #c131a3);
+  --md-extended-pink-on-color: light-dark(#ffffff, #5f004f);
   --md-extended-pink-on-color-container: light-dark(#ffffff, #ffffff);
-  --md-extended-purple-color: light-dark(#cdbdff, #5522c7);
-  --md-extended-purple-color-container: light-dark(#7147e4, #7a51ed);
-  --md-extended-purple-on-color: light-dark(#370095, #ffffff);
+  --md-extended-purple-color: light-dark(#5522c7, #cdbdff);
+  --md-extended-purple-color-container: light-dark(#7a51ed, #7147e4);
+  --md-extended-purple-on-color: light-dark(#ffffff, #370095);
   --md-extended-purple-on-color-container: light-dark(#ffffff, #ffffff);
-  --md-extended-red-color: light-dark(#ffb1c4, #a0004c);
-  --md-extended-red-color-container: light-dark(#dc1f6f, #dd2070);
-  --md-extended-red-on-color: light-dark(#65002e, #ffffff);
+  --md-extended-red-color: light-dark(#a0004c, #ffb1c4);
+  --md-extended-red-color-container: light-dark(#dd2070, #dc1f6f);
+  --md-extended-red-on-color: light-dark(#ffffff, #65002e);
   --md-extended-red-on-color-container: light-dark(#ffffff, #ffffff);
-  --md-extended-yellow-color: light-dark(#ffcf92, #835500);
-  --md-extended-yellow-color-container: light-dark(#ed9d0c, #ffac23);
-  --md-extended-yellow-on-color: light-dark(#452b00, #ffffff);
-  --md-extended-yellow-on-color-container: light-dark(#331e00, #442a00);
-  --md-sys-color-background: light-dark(#14121b, #fdf7ff);
-  --md-sys-color-error: light-dark(#ffb4ab, #ba1a1a);
-  --md-sys-color-error-container: light-dark(#93000a, #ffdad6);
-  --md-sys-color-inverse-on-surface: light-dark(#322f39, #f5eefc);
-  --md-sys-color-inverse-primary: light-dark(#6b36e2, #cebdff);
-  --md-sys-color-inverse-surface: light-dark(#e7e0ee, #322f39);
-  --md-sys-color-on-background: light-dark(#e7e0ee, #1d1a24);
-  --md-sys-color-on-error: light-dark(#690005, #ffffff);
-  --md-sys-color-on-error-container: light-dark(#ffdad6, #410002);
-  --md-sys-color-on-primary: light-dark(#390093, #ffffff);
-  --md-sys-color-on-primary-container: light-dark(#e8ddff, #21005d);
+  --md-extended-yellow-color: light-dark(#835500, #ffcf92);
+  --md-extended-yellow-color-container: light-dark(#ffac23, #ed9d0c);
+  --md-extended-yellow-on-color: light-dark(#ffffff, #452b00);
+  --md-extended-yellow-on-color-container: light-dark(#442a00, #331e00);
+  --md-sys-color-background: light-dark(#fdf7ff, #14121b);
+  --md-sys-color-error: light-dark(#ba1a1a, #ffb4ab);
+  --md-sys-color-error-container: light-dark(#ffdad6, #93000a);
+  --md-sys-color-inverse-on-surface: light-dark(#f5eefc, #322f39);
+  --md-sys-color-inverse-primary: light-dark(#cebdff, #6b36e2);
+  --md-sys-color-inverse-surface: light-dark(#322f39, #e7e0ee);
+  --md-sys-color-on-background: light-dark(#1d1a24, #e7e0ee);
+  --md-sys-color-on-error: light-dark(#ffffff, #690005);
+  --md-sys-color-on-error-container: light-dark(#410002, #ffdad6);
+  --md-sys-color-on-primary: light-dark(#ffffff, #390093);
+  --md-sys-color-on-primary-container: light-dark(#21005d, #e8ddff);
   --md-sys-color-on-primary-fixed: light-dark(#21005d, #21005d);
   --md-sys-color-on-primary-fixed-variant: light-dark(#5208ca, #5208ca);
-  --md-sys-color-on-secondary: light-dark(#36226b, #ffffff);
-  --md-sys-color-on-secondary-container: light-dark(#e8ddff, #210656);
+  --md-sys-color-on-secondary: light-dark(#ffffff, #36226b);
+  --md-sys-color-on-secondary-container: light-dark(#210656, #e8ddff);
   --md-sys-color-on-secondary-fixed: light-dark(#210656, #210656);
   --md-sys-color-on-secondary-fixed-variant: light-dark(#4d3a83, #4d3a83);
-  --md-sys-color-on-surface: light-dark(#e7e0ee, #1d1a24);
-  --md-sys-color-on-surface-variant: light-dark(#cbc3d8, #494455);
-  --md-sys-color-on-tertiary: light-dark(#4c2700, #ffffff);
-  --md-sys-color-on-tertiary-container: light-dark(#ffdcc1, #2e1500);
+  --md-sys-color-on-surface: light-dark(#1d1a24, #e7e0ee);
+  --md-sys-color-on-surface-variant: light-dark(#494455, #cbc3d8);
+  --md-sys-color-on-tertiary: light-dark(#ffffff, #4c2700);
+  --md-sys-color-on-tertiary-container: light-dark(#2e1500, #ffdcc1);
   --md-sys-color-on-tertiary-fixed: light-dark(#2e1500, #2e1500);
   --md-sys-color-on-tertiary-fixed-variant: light-dark(#6c3a00, #6c3a00);
-  --md-sys-color-outline: light-dark(#948ea1, #7a7487);
-  --md-sys-color-outline-variant: light-dark(#494455, #cbc3d8);
-  --md-sys-color-primary: light-dark(#cebdff, #6b36e2);
-  --md-sys-color-primary-container: light-dark(#5208ca, #e8ddff);
+  --md-sys-color-outline: light-dark(#7a7487, #948ea1);
+  --md-sys-color-outline-variant: light-dark(#cbc3d8, #494455);
+  --md-sys-color-primary: light-dark(#6b36e2, #cebdff);
+  --md-sys-color-primary-container: light-dark(#e8ddff, #5208ca);
   --md-sys-color-primary-fixed: light-dark(#e8ddff, #e8ddff);
   --md-sys-color-primary-fixed-dim: light-dark(#cebdff, #cebdff);
   --md-sys-color-scrim: light-dark(#000000, #000000);
-  --md-sys-color-secondary: light-dark(#cebdff, #65529d);
-  --md-sys-color-secondary-container: light-dark(#4d3a83, #e8ddff);
+  --md-sys-color-secondary: light-dark(#65529d, #cebdff);
+  --md-sys-color-secondary-container: light-dark(#e8ddff, #4d3a83);
   --md-sys-color-secondary-fixed: light-dark(#e8ddff, #e8ddff);
   --md-sys-color-secondary-fixed-dim: light-dark(#cebdff, #cebdff);
   --md-sys-color-shadow: light-dark(#000000, #000000);
-  --md-sys-color-surface: light-dark(#14121b, #fdf7ff);
-  --md-sys-color-surface-bright: light-dark(#3b3742, #fdf7ff);
-  --md-sys-color-surface-container: light-dark(#211e28, #f2ebf9);
-  --md-sys-color-surface-container-high: light-dark(#2b2833, #ece5f4);
-  --md-sys-color-surface-container-highest: light-dark(#36333e, #e7e0ee);
-  --md-sys-color-surface-container-low: light-dark(#1d1a24, #f8f1ff);
-  --md-sys-color-surface-container-lowest: light-dark(#0f0d16, #ffffff);
-  --md-sys-color-surface-dim: light-dark(#14121b, #ded7e5);
-  --md-sys-color-surface-tint: light-dark(#cebdff, #6b36e2);
-  --md-sys-color-surface-variant: light-dark(#494455, #e7dff4);
-  --md-sys-color-tertiary: light-dark(#ffb779, #8f4e00);
-  --md-sys-color-tertiary-container: light-dark(#6c3a00, #ffdcc1);
+  --md-sys-color-surface: light-dark(#fdf7ff, #14121b);
+  --md-sys-color-surface-bright: light-dark(#fdf7ff, #3b3742);
+  --md-sys-color-surface-container: light-dark(#f2ebf9, #211e28);
+  --md-sys-color-surface-container-high: light-dark(#ece5f4, #2b2833);
+  --md-sys-color-surface-container-highest: light-dark(#e7e0ee, #36333e);
+  --md-sys-color-surface-container-low: light-dark(#f8f1ff, #1d1a24);
+  --md-sys-color-surface-container-lowest: light-dark(#ffffff, #0f0d16);
+  --md-sys-color-surface-dim: light-dark(#ded7e5, #14121b);
+  --md-sys-color-surface-tint: light-dark(#6b36e2, #cebdff);
+  --md-sys-color-surface-variant: light-dark(#e7dff4, #494455);
+  --md-sys-color-tertiary: light-dark(#8f4e00, #ffb779);
+  --md-sys-color-tertiary-container: light-dark(#ffdcc1, #6c3a00);
   --md-sys-color-tertiary-fixed: light-dark(#ffdcc1, #ffdcc1);
   --md-sys-color-tertiary-fixed-dim: light-dark(#ffb779, #ffb779);
   --menu-backdrop-filter: none;
@@ -8089,8 +8089,8 @@ button.mod-destructive {
 
 .card {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   border: 1px solid #cbc3d8;
   border-radius: 4px;
@@ -10526,8 +10526,8 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   cursor: default;
   text-align: center;
@@ -11701,25 +11701,25 @@ kbd {
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
-  filter: drop-shadow(0px 0px 1px light-dark(#999999, #707070))
+  filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
 }
 
@@ -20964,12 +20964,12 @@ body.is-mobile .canvas-node-resizer {
 
 .canvas-color-picker-item.canvas-color-picker-custom:not(.is-active) {
   background: conic-gradient(
-    light-dark(#fb464c, #e93147),
-    light-dark(#e0de71, #e0ac00),
-    light-dark(#44cf6e, #08b94e),
-    light-dark(#027aff, #086ddd),
-    light-dark(#a882ff, #7852ee),
-    light-dark(#fb464c, #e93147)
+    light-dark(#e93147, #fb464c),
+    light-dark(#e0ac00, #e0de71),
+    light-dark(#08b94e, #44cf6e),
+    light-dark(#086ddd, #027aff),
+    light-dark(#7852ee, #a882ff),
+    light-dark(#e93147, #fb464c)
   );
 }
 
@@ -24944,7 +24944,7 @@ body.theme-dark .multi-select-pill .multi-select-pill-remove-button svg {
 body.theme-dark
   .multi-select-pill
   .multi-select-pill-remove-button:focus-visible {
-  outline: 3px solid light-dark(#cebdff, #65529d);
+  outline: 3px solid light-dark(#65529d, #cebdff);
   outline-offset: 2px;
 }
 
@@ -24963,7 +24963,7 @@ body.theme-dark .multi-select-pill .multi-select-pill-remove-button::after {
   body.theme-dark
     .multi-select-pill
     .multi-select-pill-remove-button:hover::after {
-    background-color: light-dark(#e7e0ee, #1d1a24);
+    background-color: light-dark(#1d1a24, #e7e0ee);
     opacity: 0.08;
   }
 }
@@ -24971,12 +24971,12 @@ body.theme-dark .multi-select-pill .multi-select-pill-remove-button::after {
 body.theme-dark
   .multi-select-pill
   .multi-select-pill-remove-button:active::after {
-  background-color: light-dark(#e7e0ee, #1d1a24);
+  background-color: light-dark(#1d1a24, #e7e0ee);
   opacity: 0.12;
 }
 
 body.theme-dark .multi-select-pill:focus-visible {
-  outline: 3px solid light-dark(#cebdff, #65529d);
+  outline: 3px solid light-dark(#65529d, #cebdff);
   outline-offset: 2px;
 }
 
@@ -24993,18 +24993,18 @@ body.theme-dark .multi-select-pill::before {
 
 @media (hover: hover) {
   body.theme-dark .multi-select-pill:hover::before {
-    background-color: light-dark(#e7e0ee, #1d1a24);
+    background-color: light-dark(#1d1a24, #e7e0ee);
     opacity: 0.08;
   }
 }
 
 body.theme-dark .multi-select-pill:active::before {
-  background-color: light-dark(#e7e0ee, #1d1a24);
+  background-color: light-dark(#1d1a24, #e7e0ee);
   opacity: 0.12;
 }
 
 body.theme-dark.is-mobile .workspace-drawer {
-  background-color: light-dark(#1d1a24, #f8f1ff);
+  background-color: light-dark(#f8f1ff, #1d1a24);
   border-end-end-radius: 16px;
   border-end-start-radius: 0px;
   border-start-end-radius: 16px;
@@ -25012,23 +25012,23 @@ body.theme-dark.is-mobile .workspace-drawer {
 }
 
 body.theme-dark.is-mobile .workspace-drawer-inner {
-  background-color: light-dark(#1d1a24, #f8f1ff);
+  background-color: light-dark(#f8f1ff, #1d1a24);
 }
 
 body.theme-dark.is-mobile .workspace-drawer-header .clickable-icon {
-  color: light-dark(#cbc3d8, #494455);
+  color: light-dark(#494455, #cbc3d8);
   height: 48px;
   padding: unset;
   width: 48px;
 }
 
 body.theme-dark.is-mobile .workspace-drawer-active-tab-container {
-  background-color: light-dark(#1d1a24, #f8f1ff);
+  background-color: light-dark(#f8f1ff, #1d1a24);
 }
 
 body.theme-dark.is-mobile .workspace-drawer-active-tab-container .nav-header {
   align-content: center;
-  background-color: light-dark(#2b2833, #ece5f4);
+  background-color: light-dark(#ece5f4, #2b2833);
   border: unset;
   min-height: calc(env(safe-area-inset-bottom) + 64px);
   padding-block: 0 env(safe-area-inset-bottom);
@@ -25044,7 +25044,7 @@ body.theme-dark.is-mobile
   .workspace-drawer-active-tab-container
   .nav-buttons-container
   .clickable-icon {
-  color: light-dark(#cbc3d8, #494455);
+  color: light-dark(#494455, #cbc3d8);
   height: 48px;
   max-width: 48px;
   padding: unset;
@@ -25054,7 +25054,7 @@ body.theme-dark.is-mobile .workspace-drawer-active-tab-header {
   background-color: #00000000;
   border: 1px solid #948ea1;
   border-radius: 9999px;
-  color: light-dark(#cebdff, #6b36e2);
+  color: light-dark(#6b36e2, #cebdff);
   height: 40px;
   padding-inline-end: 16px;
   padding-inline-start: 24px;
@@ -25111,7 +25111,7 @@ body.theme-dark.is-phone .modal.mod-settings .modal-close-button::before {
 }
 
 body.theme-dark.is-phone .modal.mod-settings .modal-header {
-  background-color: light-dark(#211e28, #f2ebf9);
+  background-color: light-dark(#f2ebf9, #211e28);
   border: unset;
   height: calc(env(safe-area-inset-top) + 64px);
   padding-block: env(safe-area-inset-top) 0;
@@ -25228,19 +25228,19 @@ body.theme-dark:not(.is-phone)
   .modal.mod-settings
   .modal-content
   .vertical-tab-nav-item.is-active {
-  background-color: light-dark(#4d3a83, #e8ddff);
-  color: light-dark(#e8ddff, #210656);
+  background-color: light-dark(#e8ddff, #4d3a83);
+  color: light-dark(#210656, #e8ddff);
 }
 
 body.theme-dark .modal-container .prompt {
-  background-color: light-dark(#14121b, #fdf7ff);
+  background-color: light-dark(#fdf7ff, #14121b);
   border: unset;
   border-radius: 28px;
 }
 
 body.theme-dark .modal-container .prompt .prompt-input-container {
   align-items: center;
-  background-color: light-dark(#2b2833, #ece5f4);
+  background-color: light-dark(#ece5f4, #2b2833);
   border: unset;
   border-radius: 9999px;
   gap: 16px;
@@ -25338,7 +25338,7 @@ body.theme-dark
     .prompt
     .prompt-input-container
     .search-input-clear-button:hover::before {
-    background-color: light-dark(#e7e0ee, #1d1a24);
+    background-color: light-dark(#1d1a24, #e7e0ee);
     opacity: 0.08;
   }
 }
@@ -25348,12 +25348,12 @@ body.theme-dark
   .prompt
   .prompt-input-container
   .search-input-clear-button:active::before {
-  background-color: light-dark(#e7e0ee, #1d1a24);
+  background-color: light-dark(#1d1a24, #e7e0ee);
   opacity: 0.12;
 }
 
 body.theme-dark .modal-container .prompt .prompt-results {
-  background-color: light-dark(#14121b, #fdf7ff);
+  background-color: light-dark(#fdf7ff, #14121b);
   padding: unset;
 }
 
@@ -25366,7 +25366,7 @@ body.theme-dark .modal-container .prompt .prompt-results .suggestion-item {
   align-items: center;
   background-color: #00000000;
   border-radius: 0px;
-  color: light-dark(#e7e0ee, #1d1a24);
+  color: light-dark(#1d1a24, #e7e0ee);
   font-family: Roboto;
   font-size: 1rem;
   font-weight: 400;
@@ -25382,7 +25382,7 @@ body.theme-dark
   .prompt
   .prompt-results
   .suggestion-item.is-selected:not(:active) {
-  background-color: rgb(from light-dark(#e7e0ee, #1d1a24) r g b/0.08);
+  background-color: rgb(from light-dark(#1d1a24, #e7e0ee) r g b/0.08);
 }
 
 body.theme-dark
@@ -25406,7 +25406,7 @@ body.theme-dark
     .prompt
     .prompt-results
     .suggestion-item:hover::after {
-    background-color: light-dark(#e7e0ee, #1d1a24);
+    background-color: light-dark(#1d1a24, #e7e0ee);
     opacity: 0.08;
   }
 }
@@ -25416,7 +25416,7 @@ body.theme-dark
   .prompt
   .prompt-results
   .suggestion-item:active::after {
-  background-color: light-dark(#e7e0ee, #1d1a24);
+  background-color: light-dark(#1d1a24, #e7e0ee);
   opacity: 0.12;
 }
 
@@ -25438,9 +25438,9 @@ body.theme-dark
   kbd {
   align-content: center;
   background-color: #00000000;
-  border: 1px solid light-dark(#948ea1, #7a7487);
+  border: 1px solid light-dark(#7a7487, #948ea1);
   border-radius: 8px;
-  color: light-dark(#cbc3d8, #494455);
+  color: light-dark(#494455, #cbc3d8);
   font-family: Roboto;
   font-size: 0.875rem;
   font-weight: 500;
@@ -25453,11 +25453,11 @@ body.theme-dark
 }
 
 body.theme-dark .modal-container .prompt .prompt-instructions {
-  background-color: light-dark(#211e28, #f2ebf9);
+  background-color: light-dark(#f2ebf9, #211e28);
 }
 
 body.theme-dark.is-phone .menu {
-  background-color: light-dark(#1d1a24, #f8f1ff);
+  background-color: light-dark(#f8f1ff, #1d1a24);
   border-end-end-radius: 0px;
   border-end-start-radius: 0px;
   border-start-end-radius: 28px;
@@ -25467,7 +25467,7 @@ body.theme-dark.is-phone .menu {
 }
 
 body.theme-dark.is-phone .menu-grabber {
-  color: light-dark(#cbc3d8, #494455);
+  color: light-dark(#494455, #cbc3d8);
   height: 4px;
   margin: 22px auto;
   width: 32px;
@@ -25482,7 +25482,7 @@ body.theme-dark.is-phone .menu-grabber::before {
 }
 
 body.theme-dark.is-phone .menu-scroll {
-  background-color: light-dark(#1d1a24, #f8f1ff);
+  background-color: light-dark(#f8f1ff, #1d1a24);
   display: block;
   padding-block-end: max(env(safe-area-inset-bottom), 8px);
   padding-block-start: 0;
@@ -25490,7 +25490,7 @@ body.theme-dark.is-phone .menu-scroll {
 
 body.theme-dark.is-phone .menu-separator {
   border: unset;
-  color: light-dark(#494455, #cbc3d8);
+  color: light-dark(#cbc3d8, #494455);
   display: flex;
   height: 1px;
   margin-block: 8px;
@@ -25522,7 +25522,7 @@ body.theme-dark.is-phone .menu-item.is-label {
 }
 
 body.theme-dark.is-phone .menu-item.is-label .menu-item-title {
-  background-color: light-dark(#36333e, #e7e0ee);
+  background-color: light-dark(#e7e0ee, #36333e);
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -25579,13 +25579,13 @@ body.theme-dark.is-phone .menu-item.tappable::after {
 
 @media (hover: hover) {
   body.theme-dark.is-phone .menu-item.tappable:hover::after {
-    background-color: light-dark(#e7e0ee, #1d1a24);
+    background-color: light-dark(#1d1a24, #e7e0ee);
     opacity: 0.08;
   }
 }
 
 body.theme-dark.is-phone .menu-item.tappable:active::after {
-  background-color: light-dark(#e7e0ee, #1d1a24);
+  background-color: light-dark(#1d1a24, #e7e0ee);
   opacity: 0.12;
 }
 
@@ -25595,13 +25595,13 @@ body.theme-dark.is-phone .menu-item-icon {
 }
 
 body.theme-dark.is-phone .menu-item-icon .svg-icon {
-  color: light-dark(#cbc3d8, #494455);
+  color: light-dark(#494455, #cbc3d8);
   height: 24px;
   width: 24px;
 }
 
 body.theme-dark.is-phone .menu-item-title {
-  color: light-dark(#e7e0ee, #1d1a24);
+  color: light-dark(#1d1a24, #e7e0ee);
   font-family: Roboto;
   font-size: 1rem;
   font-weight: 400;
@@ -26272,7 +26272,7 @@ body.theme-light .multi-select-pill .multi-select-pill-remove-button svg {
 body.theme-light
   .multi-select-pill
   .multi-select-pill-remove-button:focus-visible {
-  outline: 3px solid light-dark(#cebdff, #65529d);
+  outline: 3px solid light-dark(#65529d, #cebdff);
   outline-offset: 2px;
 }
 
@@ -26291,7 +26291,7 @@ body.theme-light .multi-select-pill .multi-select-pill-remove-button::after {
   body.theme-light
     .multi-select-pill
     .multi-select-pill-remove-button:hover::after {
-    background-color: light-dark(#e7e0ee, #1d1a24);
+    background-color: light-dark(#1d1a24, #e7e0ee);
     opacity: 0.08;
   }
 }
@@ -26299,12 +26299,12 @@ body.theme-light .multi-select-pill .multi-select-pill-remove-button::after {
 body.theme-light
   .multi-select-pill
   .multi-select-pill-remove-button:active::after {
-  background-color: light-dark(#e7e0ee, #1d1a24);
+  background-color: light-dark(#1d1a24, #e7e0ee);
   opacity: 0.12;
 }
 
 body.theme-light .multi-select-pill:focus-visible {
-  outline: 3px solid light-dark(#cebdff, #65529d);
+  outline: 3px solid light-dark(#65529d, #cebdff);
   outline-offset: 2px;
 }
 
@@ -26321,18 +26321,18 @@ body.theme-light .multi-select-pill::before {
 
 @media (hover: hover) {
   body.theme-light .multi-select-pill:hover::before {
-    background-color: light-dark(#e7e0ee, #1d1a24);
+    background-color: light-dark(#1d1a24, #e7e0ee);
     opacity: 0.08;
   }
 }
 
 body.theme-light .multi-select-pill:active::before {
-  background-color: light-dark(#e7e0ee, #1d1a24);
+  background-color: light-dark(#1d1a24, #e7e0ee);
   opacity: 0.12;
 }
 
 body.theme-light.is-mobile .workspace-drawer {
-  background-color: light-dark(#1d1a24, #f8f1ff);
+  background-color: light-dark(#f8f1ff, #1d1a24);
   border-end-end-radius: 16px;
   border-end-start-radius: 0px;
   border-start-end-radius: 16px;
@@ -26340,23 +26340,23 @@ body.theme-light.is-mobile .workspace-drawer {
 }
 
 body.theme-light.is-mobile .workspace-drawer-inner {
-  background-color: light-dark(#1d1a24, #f8f1ff);
+  background-color: light-dark(#f8f1ff, #1d1a24);
 }
 
 body.theme-light.is-mobile .workspace-drawer-header .clickable-icon {
-  color: light-dark(#cbc3d8, #494455);
+  color: light-dark(#494455, #cbc3d8);
   height: 48px;
   padding: unset;
   width: 48px;
 }
 
 body.theme-light.is-mobile .workspace-drawer-active-tab-container {
-  background-color: light-dark(#1d1a24, #f8f1ff);
+  background-color: light-dark(#f8f1ff, #1d1a24);
 }
 
 body.theme-light.is-mobile .workspace-drawer-active-tab-container .nav-header {
   align-content: center;
-  background-color: light-dark(#2b2833, #ece5f4);
+  background-color: light-dark(#ece5f4, #2b2833);
   border: unset;
   min-height: calc(env(safe-area-inset-bottom) + 64px);
   padding-block: 0 env(safe-area-inset-bottom);
@@ -26372,7 +26372,7 @@ body.theme-light.is-mobile
   .workspace-drawer-active-tab-container
   .nav-buttons-container
   .clickable-icon {
-  color: light-dark(#cbc3d8, #494455);
+  color: light-dark(#494455, #cbc3d8);
   height: 48px;
   max-width: 48px;
   padding: unset;
@@ -26382,7 +26382,7 @@ body.theme-light.is-mobile .workspace-drawer-active-tab-header {
   background-color: #00000000;
   border: 1px solid #7a7487;
   border-radius: 9999px;
-  color: light-dark(#cebdff, #6b36e2);
+  color: light-dark(#6b36e2, #cebdff);
   height: 40px;
   padding-inline-end: 16px;
   padding-inline-start: 24px;
@@ -26439,7 +26439,7 @@ body.theme-light.is-phone .modal.mod-settings .modal-close-button::before {
 }
 
 body.theme-light.is-phone .modal.mod-settings .modal-header {
-  background-color: light-dark(#211e28, #f2ebf9);
+  background-color: light-dark(#f2ebf9, #211e28);
   border: unset;
   height: calc(env(safe-area-inset-top) + 64px);
   padding-block: env(safe-area-inset-top) 0;
@@ -26556,19 +26556,19 @@ body.theme-light:not(.is-phone)
   .modal.mod-settings
   .modal-content
   .vertical-tab-nav-item.is-active {
-  background-color: light-dark(#4d3a83, #e8ddff);
-  color: light-dark(#e8ddff, #210656);
+  background-color: light-dark(#e8ddff, #4d3a83);
+  color: light-dark(#210656, #e8ddff);
 }
 
 body.theme-light .modal-container .prompt {
-  background-color: light-dark(#14121b, #fdf7ff);
+  background-color: light-dark(#fdf7ff, #14121b);
   border: unset;
   border-radius: 28px;
 }
 
 body.theme-light .modal-container .prompt .prompt-input-container {
   align-items: center;
-  background-color: light-dark(#2b2833, #ece5f4);
+  background-color: light-dark(#ece5f4, #2b2833);
   border: unset;
   border-radius: 9999px;
   gap: 16px;
@@ -26670,7 +26670,7 @@ body.theme-light
     .prompt
     .prompt-input-container
     .search-input-clear-button:hover::before {
-    background-color: light-dark(#e7e0ee, #1d1a24);
+    background-color: light-dark(#1d1a24, #e7e0ee);
     opacity: 0.08;
   }
 }
@@ -26680,12 +26680,12 @@ body.theme-light
   .prompt
   .prompt-input-container
   .search-input-clear-button:active::before {
-  background-color: light-dark(#e7e0ee, #1d1a24);
+  background-color: light-dark(#1d1a24, #e7e0ee);
   opacity: 0.12;
 }
 
 body.theme-light .modal-container .prompt .prompt-results {
-  background-color: light-dark(#14121b, #fdf7ff);
+  background-color: light-dark(#fdf7ff, #14121b);
   padding: unset;
 }
 
@@ -26698,7 +26698,7 @@ body.theme-light .modal-container .prompt .prompt-results .suggestion-item {
   align-items: center;
   background-color: #00000000;
   border-radius: 0px;
-  color: light-dark(#e7e0ee, #1d1a24);
+  color: light-dark(#1d1a24, #e7e0ee);
   font-family: Roboto;
   font-size: 1rem;
   font-weight: 400;
@@ -26714,7 +26714,7 @@ body.theme-light
   .prompt
   .prompt-results
   .suggestion-item.is-selected:not(:active) {
-  background-color: rgb(from light-dark(#e7e0ee, #1d1a24) r g b/0.08);
+  background-color: rgb(from light-dark(#1d1a24, #e7e0ee) r g b/0.08);
 }
 
 body.theme-light
@@ -26738,7 +26738,7 @@ body.theme-light
     .prompt
     .prompt-results
     .suggestion-item:hover::after {
-    background-color: light-dark(#e7e0ee, #1d1a24);
+    background-color: light-dark(#1d1a24, #e7e0ee);
     opacity: 0.08;
   }
 }
@@ -26748,7 +26748,7 @@ body.theme-light
   .prompt
   .prompt-results
   .suggestion-item:active::after {
-  background-color: light-dark(#e7e0ee, #1d1a24);
+  background-color: light-dark(#1d1a24, #e7e0ee);
   opacity: 0.12;
 }
 
@@ -26770,9 +26770,9 @@ body.theme-light
   kbd {
   align-content: center;
   background-color: #00000000;
-  border: 1px solid light-dark(#948ea1, #7a7487);
+  border: 1px solid light-dark(#7a7487, #948ea1);
   border-radius: 8px;
-  color: light-dark(#cbc3d8, #494455);
+  color: light-dark(#494455, #cbc3d8);
   font-family: Roboto;
   font-size: 0.875rem;
   font-weight: 500;
@@ -26785,11 +26785,11 @@ body.theme-light
 }
 
 body.theme-light .modal-container .prompt .prompt-instructions {
-  background-color: light-dark(#211e28, #f2ebf9);
+  background-color: light-dark(#f2ebf9, #211e28);
 }
 
 body.theme-light.is-phone .menu {
-  background-color: light-dark(#1d1a24, #f8f1ff);
+  background-color: light-dark(#f8f1ff, #1d1a24);
   border-end-end-radius: 0px;
   border-end-start-radius: 0px;
   border-start-end-radius: 28px;
@@ -26799,7 +26799,7 @@ body.theme-light.is-phone .menu {
 }
 
 body.theme-light.is-phone .menu-grabber {
-  color: light-dark(#cbc3d8, #494455);
+  color: light-dark(#494455, #cbc3d8);
   height: 4px;
   margin: 22px auto;
   width: 32px;
@@ -26814,7 +26814,7 @@ body.theme-light.is-phone .menu-grabber::before {
 }
 
 body.theme-light.is-phone .menu-scroll {
-  background-color: light-dark(#1d1a24, #f8f1ff);
+  background-color: light-dark(#f8f1ff, #1d1a24);
   display: block;
   padding-block-end: max(env(safe-area-inset-bottom), 8px);
   padding-block-start: 0;
@@ -26822,7 +26822,7 @@ body.theme-light.is-phone .menu-scroll {
 
 body.theme-light.is-phone .menu-separator {
   border: unset;
-  color: light-dark(#494455, #cbc3d8);
+  color: light-dark(#cbc3d8, #494455);
   display: flex;
   height: 1px;
   margin-block: 8px;
@@ -26854,7 +26854,7 @@ body.theme-light.is-phone .menu-item.is-label {
 }
 
 body.theme-light.is-phone .menu-item.is-label .menu-item-title {
-  background-color: light-dark(#36333e, #e7e0ee);
+  background-color: light-dark(#e7e0ee, #36333e);
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -26911,13 +26911,13 @@ body.theme-light.is-phone .menu-item.tappable::after {
 
 @media (hover: hover) {
   body.theme-light.is-phone .menu-item.tappable:hover::after {
-    background-color: light-dark(#e7e0ee, #1d1a24);
+    background-color: light-dark(#1d1a24, #e7e0ee);
     opacity: 0.08;
   }
 }
 
 body.theme-light.is-phone .menu-item.tappable:active::after {
-  background-color: light-dark(#e7e0ee, #1d1a24);
+  background-color: light-dark(#1d1a24, #e7e0ee);
   opacity: 0.12;
 }
 
@@ -26927,13 +26927,13 @@ body.theme-light.is-phone .menu-item-icon {
 }
 
 body.theme-light.is-phone .menu-item-icon .svg-icon {
-  color: light-dark(#cbc3d8, #494455);
+  color: light-dark(#494455, #cbc3d8);
   height: 24px;
   width: 24px;
 }
 
 body.theme-light.is-phone .menu-item-title {
-  color: light-dark(#e7e0ee, #1d1a24);
+  color: light-dark(#1d1a24, #e7e0ee);
   font-family: Roboto;
   font-size: 1rem;
   font-weight: 400;

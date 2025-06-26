@@ -931,41 +931,41 @@
 }
 
 :root {
-  --background-primary: light-dark(#30393f, #fdf6e3);
-  --background-primary-alt: light-dark(#30393f, #fdf6e3);
-  --background-secondary: light-dark(#283035, #fdf6e3);
-  --background-secondary-alt: light-dark(#363636, #212121);
+  --background-primary: light-dark(#fdf6e3, #30393f);
+  --background-primary-alt: light-dark(#fdf6e3, #30393f);
+  --background-secondary: light-dark(#fdf6e3, #283035);
+  --background-secondary-alt: light-dark(#212121, #363636);
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
-  --h1-color: light-dark(#1e91c7, #0f4761);
-  --h2-color: light-dark(#1eb0c7, #12597a);
-  --h3-color: light-dark(#1ec7c4, #166c94);
-  --h4-color: light-dark(#1ec7bc, #1a7ead);
-  --h5-color: light-dark(#1ec7a2, #1e91c7);
-  --h6-color: light-dark(#1ec78f, #22a4e0);
-  --inline-title-color: light-dark(#ffffff, #000000);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
+  --h1-color: light-dark(#0f4761, #1e91c7);
+  --h2-color: light-dark(#12597a, #1eb0c7);
+  --h3-color: light-dark(#166c94, #1ec7c4);
+  --h4-color: light-dark(#1a7ead, #1ec7bc);
+  --h5-color: light-dark(#1e91c7, #1ec7a2);
+  --h6-color: light-dark(#22a4e0, #1ec78f);
+  --inline-title-color: light-dark(#000000, #ffffff);
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
   --page-border: 9px solid transparent;
@@ -976,7 +976,7 @@
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
   --spreadHorizontalWrapped-margin-LR: -3.5px;
-  --titlebar-background-focused: light-dark(#283035, #fff5de);
+  --titlebar-background-focused: light-dark(#fff5de, #283035);
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
@@ -1613,10 +1613,10 @@ body {
   --background-modifier-message: #000000e6;
   --background-modifier-success: #44cf6e;
   --background-modifier-success-rgb: 68, 207, 110;
-  --background-primary: light-dark(#30393f, #fdf6e3);
-  --background-primary-alt: light-dark(#30393f, #fdf6e3);
-  --background-secondary: light-dark(#283035, #fdf6e3);
-  --background-secondary-alt: light-dark(#363636, #212121);
+  --background-primary: light-dark(#fdf6e3, #30393f);
+  --background-primary-alt: light-dark(#fdf6e3, #30393f);
+  --background-secondary: light-dark(#fdf6e3, #283035);
+  --background-secondary-alt: light-dark(#212121, #363636);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -1726,29 +1726,29 @@ body {
   --collapse-icon-color: #666666;
   --collapse-icon-color-collapsed: #a68af9;
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -1864,42 +1864,42 @@ body {
   --graph-node-tag: #44cf6e;
   --graph-node-unresolved: #666666;
   --graph-text: #dadada;
-  --h1-color: light-dark(#1e91c7, #0f4761);
+  --h1-color: light-dark(#0f4761, #1e91c7);
   --h1-font: inherit;
   --h1-line-height: 1.5em;
   --h1-size: 2em;
   --h1-style: normal;
   --h1-variant: normal;
   --h1-weight: 700;
-  --h2-color: light-dark(#1eb0c7, #12597a);
+  --h2-color: light-dark(#12597a, #1eb0c7);
   --h2-font: inherit;
   --h2-line-height: 1.5em;
   --h2-size: 1.6em;
   --h2-style: normal;
   --h2-variant: normal;
   --h2-weight: 600;
-  --h3-color: light-dark(#1ec7c4, #166c94);
+  --h3-color: light-dark(#166c94, #1ec7c4);
   --h3-font: inherit;
   --h3-line-height: 1.5em;
   --h3-size: 1.35em;
   --h3-style: normal;
   --h3-variant: normal;
   --h3-weight: 400;
-  --h4-color: light-dark(#1ec7bc, #1a7ead);
+  --h4-color: light-dark(#1a7ead, #1ec7bc);
   --h4-font: inherit;
   --h4-line-height: 1.5em;
   --h4-size: 1.2em;
   --h4-style: normal;
   --h4-variant: normal;
   --h4-weight: 400;
-  --h5-color: light-dark(#1ec7a2, #1e91c7);
+  --h5-color: light-dark(#1e91c7, #1ec7a2);
   --h5-font: inherit;
   --h5-line-height: 1.5em;
   --h5-size: 1.2em;
   --h5-style: normal;
   --h5-variant: normal;
   --h5-weight: 300;
-  --h6-color: light-dark(#1ec78f, #22a4e0);
+  --h6-color: light-dark(#22a4e0, #1ec78f);
   --h6-font: inherit;
   --h6-line-height: 1.5em;
   --h6-size: 1.1em;
@@ -1940,7 +1940,7 @@ body {
   --indentation-guide-source-indent: 0.25em;
   --indentation-guide-width: 2px;
   --indentation-guide-width-active: 1px;
-  --inline-title-color: light-dark(#ffffff, #000000);
+  --inline-title-color: light-dark(#000000, #ffffff);
   --inline-title-font: inherit;
   --inline-title-line-height: 1.5em;
   --inline-title-margin-bottom: 0.5em;
@@ -2291,7 +2291,7 @@ body {
   --text-success: #44cf6e;
   --text-warning: #e9973f;
   --titlebar-background: #283035;
-  --titlebar-background-focused: light-dark(#283035, #fff5de);
+  --titlebar-background-focused: light-dark(#fff5de, #283035);
   --titlebar-border-color: transparent;
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;
@@ -4268,7 +4268,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 }
 
 .inline-title {
-  color: light-dark(#ffffff, #000000);
+  color: light-dark(#000000, #ffffff);
   margin-block-end: 0.5em;
   unicode-bidi: plaintext;
   white-space: pre-wrap;
@@ -4286,7 +4286,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h1 {
   --font-weight: 700;
-  color: light-dark(#1e91c7, #0f4761);
+  color: light-dark(#0f4761, #1e91c7);
   font-family: inherit;
   font-size: 2em;
   font-style: normal;
@@ -4300,7 +4300,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h2 {
   --font-weight: 600;
-  color: light-dark(#1eb0c7, #12597a);
+  color: light-dark(#12597a, #1eb0c7);
   font-family: inherit;
   font-size: 1.6em;
   font-style: normal;
@@ -4314,7 +4314,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h3 {
   --font-weight: 400;
-  color: light-dark(#1ec7c4, #166c94);
+  color: light-dark(#166c94, #1ec7c4);
   font-family: inherit;
   font-size: 1.35em;
   font-style: normal;
@@ -4328,7 +4328,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h4 {
   --font-weight: 400;
-  color: light-dark(#1ec7bc, #1a7ead);
+  color: light-dark(#1a7ead, #1ec7bc);
   font-family: inherit;
   font-size: 1.2em;
   font-style: normal;
@@ -4341,7 +4341,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h5 {
   --font-weight: 300;
-  color: light-dark(#1ec7a2, #1e91c7);
+  color: light-dark(#1e91c7, #1ec7a2);
   font-family: inherit;
   font-size: 1.2em;
   font-style: normal;
@@ -4354,7 +4354,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h6 {
   --font-weight: 300;
-  color: light-dark(#1ec78f, #22a4e0);
+  color: light-dark(#22a4e0, #1ec78f);
   font-family: inherit;
   font-size: 1.1em;
   font-style: normal;
@@ -7688,8 +7688,8 @@ button.mod-destructive {
 
 .card {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   border: 1px solid transparent;
   border-radius: 4px;
@@ -10114,8 +10114,8 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   cursor: default;
   text-align: center;
@@ -11282,25 +11282,25 @@ kbd {
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
-  filter: drop-shadow(0px 0px 1px light-dark(#999999, #707070))
+  filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
 }
 
@@ -13636,7 +13636,7 @@ input.metadata-property-key-input:focus {
 
 h1 {
   --font-weight: 700;
-  color: light-dark(#1e91c7, #0f4761);
+  color: light-dark(#0f4761, #1e91c7);
   font-family: inherit;
   font-size: 2em;
   font-style: normal;
@@ -13650,7 +13650,7 @@ h1 {
 
 h2 {
   --font-weight: 600;
-  color: light-dark(#1eb0c7, #12597a);
+  color: light-dark(#12597a, #1eb0c7);
   font-family: inherit;
   font-size: 1.6em;
   font-style: normal;
@@ -13664,7 +13664,7 @@ h2 {
 
 h3 {
   --font-weight: 400;
-  color: light-dark(#1ec7c4, #166c94);
+  color: light-dark(#166c94, #1ec7c4);
   font-family: inherit;
   font-size: 1.35em;
   font-style: normal;
@@ -13678,7 +13678,7 @@ h3 {
 
 h4 {
   --font-weight: 400;
-  color: light-dark(#1ec7bc, #1a7ead);
+  color: light-dark(#1a7ead, #1ec7bc);
   font-family: inherit;
   font-size: 1.2em;
   font-style: normal;
@@ -13692,7 +13692,7 @@ h4 {
 
 h5 {
   --font-weight: 300;
-  color: light-dark(#1ec7a2, #1e91c7);
+  color: light-dark(#1e91c7, #1ec7a2);
   font-family: inherit;
   font-size: 1.2em;
   font-style: normal;
@@ -13706,7 +13706,7 @@ h5 {
 
 h6 {
   --font-weight: 300;
-  color: light-dark(#1ec78f, #22a4e0);
+  color: light-dark(#22a4e0, #1ec78f);
   font-family: inherit;
   font-size: 1.1em;
   font-style: normal;
@@ -13720,7 +13720,7 @@ h6 {
 
 .markdown-rendered h1 {
   --font-weight: 700;
-  color: light-dark(#1e91c7, #0f4761);
+  color: light-dark(#0f4761, #1e91c7);
   font-family: inherit;
   font-size: 2em;
   font-style: normal;
@@ -13740,7 +13740,7 @@ h1 a {
 
 .markdown-rendered h2 {
   --font-weight: 600;
-  color: light-dark(#1eb0c7, #12597a);
+  color: light-dark(#12597a, #1eb0c7);
   font-family: inherit;
   font-size: 1.6em;
   font-style: normal;
@@ -13760,7 +13760,7 @@ h2 a {
 
 .markdown-rendered h3 {
   --font-weight: 400;
-  color: light-dark(#1ec7c4, #166c94);
+  color: light-dark(#166c94, #1ec7c4);
   font-family: inherit;
   font-size: 1.35em;
   font-style: normal;
@@ -13780,7 +13780,7 @@ h3 a {
 
 .markdown-rendered h4 {
   --font-weight: 400;
-  color: light-dark(#1ec7bc, #1a7ead);
+  color: light-dark(#1a7ead, #1ec7bc);
   font-family: inherit;
   font-size: 1.2em;
   font-style: normal;
@@ -13800,7 +13800,7 @@ h4 a {
 
 .markdown-rendered h5 {
   --font-weight: 300;
-  color: light-dark(#1ec7a2, #1e91c7);
+  color: light-dark(#1e91c7, #1ec7a2);
   font-family: inherit;
   font-size: 1.2em;
   font-style: normal;
@@ -13820,7 +13820,7 @@ h5 a {
 
 .markdown-rendered h6 {
   --font-weight: 300;
-  color: light-dark(#1ec78f, #22a4e0);
+  color: light-dark(#22a4e0, #1ec78f);
   font-family: inherit;
   font-size: 1.1em;
   font-style: normal;
@@ -13862,7 +13862,7 @@ h6 a {
 
 .HyperMD-header-1 {
   --font-weight: 700;
-  color: light-dark(#1e91c7, #0f4761);
+  color: light-dark(#0f4761, #1e91c7);
   font-family: inherit;
   font-size: 2em;
   font-style: normal;
@@ -13874,7 +13874,7 @@ h6 a {
 
 .HyperMD-list-line .cm-header-1 {
   --font-weight: 700;
-  color: light-dark(#1e91c7, #0f4761);
+  color: light-dark(#0f4761, #1e91c7);
   font-family: inherit;
   font-size: 2em;
   font-style: normal;
@@ -13910,7 +13910,7 @@ h6 a {
 
 .HyperMD-header-2 {
   --font-weight: 600;
-  color: light-dark(#1eb0c7, #12597a);
+  color: light-dark(#12597a, #1eb0c7);
   font-family: inherit;
   font-size: 1.6em;
   font-style: normal;
@@ -13922,7 +13922,7 @@ h6 a {
 
 .HyperMD-list-line .cm-header-2 {
   --font-weight: 600;
-  color: light-dark(#1eb0c7, #12597a);
+  color: light-dark(#12597a, #1eb0c7);
   font-family: inherit;
   font-size: 1.6em;
   font-style: normal;
@@ -13958,7 +13958,7 @@ h6 a {
 
 .HyperMD-header-3 {
   --font-weight: 400;
-  color: light-dark(#1ec7c4, #166c94);
+  color: light-dark(#166c94, #1ec7c4);
   font-family: inherit;
   font-size: 1.35em;
   font-style: normal;
@@ -13970,7 +13970,7 @@ h6 a {
 
 .HyperMD-list-line .cm-header-3 {
   --font-weight: 400;
-  color: light-dark(#1ec7c4, #166c94);
+  color: light-dark(#166c94, #1ec7c4);
   font-family: inherit;
   font-size: 1.35em;
   font-style: normal;
@@ -14006,7 +14006,7 @@ h6 a {
 
 .HyperMD-header-4 {
   --font-weight: 400;
-  color: light-dark(#1ec7bc, #1a7ead);
+  color: light-dark(#1a7ead, #1ec7bc);
   font-family: inherit;
   font-size: 1.2em;
   font-style: normal;
@@ -14017,7 +14017,7 @@ h6 a {
 
 .HyperMD-list-line .cm-header-4 {
   --font-weight: 400;
-  color: light-dark(#1ec7bc, #1a7ead);
+  color: light-dark(#1a7ead, #1ec7bc);
   font-family: inherit;
   font-size: 1.2em;
   font-style: normal;
@@ -14052,7 +14052,7 @@ h6 a {
 
 .HyperMD-header-5 {
   --font-weight: 300;
-  color: light-dark(#1ec7a2, #1e91c7);
+  color: light-dark(#1e91c7, #1ec7a2);
   font-family: inherit;
   font-size: 1.2em;
   font-style: normal;
@@ -14063,7 +14063,7 @@ h6 a {
 
 .HyperMD-list-line .cm-header-5 {
   --font-weight: 300;
-  color: light-dark(#1ec7a2, #1e91c7);
+  color: light-dark(#1e91c7, #1ec7a2);
   font-family: inherit;
   font-size: 1.2em;
   font-style: normal;
@@ -14098,7 +14098,7 @@ h6 a {
 
 .HyperMD-header-6 {
   --font-weight: 300;
-  color: light-dark(#1ec78f, #22a4e0);
+  color: light-dark(#22a4e0, #1ec78f);
   font-family: inherit;
   font-size: 1.1em;
   font-style: normal;
@@ -14110,7 +14110,7 @@ h6 a {
 
 .HyperMD-list-line .cm-header-6 {
   --font-weight: 300;
-  color: light-dark(#1ec78f, #22a4e0);
+  color: light-dark(#22a4e0, #1ec78f);
   font-family: inherit;
   font-size: 1.1em;
   font-style: normal;
@@ -16115,7 +16115,7 @@ em {
 }
 
 .bases-header .title {
-  color: light-dark(#1eb0c7, #12597a);
+  color: light-dark(#12597a, #1eb0c7);
   font-size: 1.6em;
 }
 
@@ -20430,12 +20430,12 @@ body.is-mobile .canvas-node-resizer {
 
 .canvas-color-picker-item.canvas-color-picker-custom:not(.is-active) {
   background: conic-gradient(
-    light-dark(#fb464c, #e93147),
-    light-dark(#e0de71, #e0ac00),
-    light-dark(#44cf6e, #08b94e),
-    light-dark(#027aff, #086ddd),
-    light-dark(#a882ff, #7852ee),
-    light-dark(#fb464c, #e93147)
+    light-dark(#e93147, #fb464c),
+    light-dark(#e0ac00, #e0de71),
+    light-dark(#08b94e, #44cf6e),
+    light-dark(#086ddd, #027aff),
+    light-dark(#7852ee, #a882ff),
+    light-dark(#e93147, #fb464c)
   );
 }
 
@@ -23788,7 +23788,7 @@ input.mobile-vault-chooser-field-input {
 
 ::-webkit-scrollbar-thumb {
   background-clip: padding-box;
-  background-color: light-dark(#666666, #ababab);
+  background-color: light-dark(#ababab, #666666);
   border: 4px solid #00000000;
   border-radius: 9999px;
   width: 2px;

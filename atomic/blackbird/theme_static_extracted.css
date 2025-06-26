@@ -1,36 +1,36 @@
 :root {
-  --background-secondary-alt: light-dark(#000000, #212121);
-  --color-1: light-dark(#fdf7cd, #020832);
-  --color-2: light-dark(#00ecd8, #0066ff);
-  --color-3: light-dark(#e92741, #020832);
-  --color-4: light-dark(#3ec840, #c137bf);
-  --color-5: light-dark(#e1dc3f, #020832);
-  --color-6: light-dark(#418fdd, #be7022);
-  --color-7: light-dark(#ff9900, #0066ff);
+  --background-secondary-alt: light-dark(#212121, #000000);
+  --color-1: light-dark(#020832, #fdf7cd);
+  --color-2: light-dark(#0066ff, #00ecd8);
+  --color-3: light-dark(#020832, #e92741);
+  --color-4: light-dark(#c137bf, #3ec840);
+  --color-5: light-dark(#020832, #e1dc3f);
+  --color-6: light-dark(#be7022, #418fdd);
+  --color-7: light-dark(#0066ff, #ff9900);
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
   --page-border: 9px solid transparent;
@@ -75,7 +75,7 @@ body {
   --background-primary: #000;
   --background-primary-alt: #111;
   --background-secondary: #1e1e1e;
-  --background-secondary-alt: light-dark(#000000, #212121);
+  --background-secondary-alt: light-dark(#212121, #000000);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -184,37 +184,37 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: #666666;
   --collapse-icon-color-collapsed: #e92741;
-  --color-1: light-dark(#fdf7cd, #020832);
-  --color-2: light-dark(#00ecd8, #0066ff);
-  --color-3: light-dark(#e92741, #020832);
-  --color-4: light-dark(#3ec840, #c137bf);
-  --color-5: light-dark(#e1dc3f, #020832);
-  --color-6: light-dark(#418fdd, #be7022);
-  --color-7: light-dark(#ff9900, #0066ff);
+  --color-1: light-dark(#020832, #fdf7cd);
+  --color-2: light-dark(#0066ff, #00ecd8);
+  --color-3: light-dark(#020832, #e92741);
+  --color-4: light-dark(#c137bf, #3ec840);
+  --color-5: light-dark(#020832, #e1dc3f);
+  --color-6: light-dark(#be7022, #418fdd);
+  --color-7: light-dark(#0066ff, #ff9900);
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -842,7 +842,7 @@ h6 a {
 
 h1 {
   --font-weight: 700;
-  color: light-dark(#e92741, #020832);
+  color: light-dark(#020832, #e92741);
   font-family: inherit;
   font-size: 1.802em;
   font-style: normal;
@@ -857,7 +857,7 @@ h1 {
 
 h2 {
   --font-weight: 600;
-  color: light-dark(#e92741, #020832);
+  color: light-dark(#020832, #e92741);
   font-family: inherit;
   font-size: 1.602em;
   font-style: normal;
@@ -872,7 +872,7 @@ h2 {
 
 h3 {
   --font-weight: 600;
-  color: light-dark(#e92741, #020832);
+  color: light-dark(#020832, #e92741);
   font-family: inherit;
   font-size: 1.424em;
   font-style: normal;
@@ -887,7 +887,7 @@ h3 {
 
 h4 {
   --font-weight: 600;
-  color: light-dark(#e92741, #020832);
+  color: light-dark(#020832, #e92741);
   font-family: inherit;
   font-size: 1.266em;
   font-style: normal;
@@ -902,7 +902,7 @@ h4 {
 
 h5 {
   --font-weight: 600;
-  color: light-dark(#e92741, #020832);
+  color: light-dark(#020832, #e92741);
   font-family: inherit;
   font-size: 1.125em;
   font-style: normal;
@@ -917,7 +917,7 @@ h5 {
 
 h6 {
   --font-weight: 600;
-  color: light-dark(#e92741, #020832);
+  color: light-dark(#020832, #e92741);
   font-family: inherit;
   font-size: 1em;
   font-style: normal;
@@ -1268,7 +1268,7 @@ a.tag {
   background-color: #8a5cf533;
   border: 0px solid #8a5cf526;
   border-radius: 2em;
-  color: light-dark(#00ecd8, #0066ff);
+  color: light-dark(#0066ff, #00ecd8);
   font-size: 0.875em;
   font-weight: inherit;
   line-height: 1;
@@ -1591,7 +1591,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-unresolved {
-  color: light-dark(#fdf7cd, #020832);
+  color: light-dark(#020832, #fdf7cd);
   opacity: 0.7;
 }
 
@@ -1620,7 +1620,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-arrow {
-  color: light-dark(#e1dc3f, #020832);
+  color: light-dark(#020832, #e1dc3f);
   opacity: 1;
 }
 
@@ -1633,15 +1633,15 @@ svg.svg-icon {
 }
 
 .graph-view.color-text {
-  color: light-dark(#fdf7cd, #020832);
+  color: light-dark(#020832, #fdf7cd);
 }
 
 .graph-view.color-fill-highlight {
-  color: light-dark(#418fdd, #be7022);
+  color: light-dark(#be7022, #418fdd);
 }
 
 .graph-view.color-line-highlight {
-  color: light-dark(#418fdd, #be7022);
+  color: light-dark(#be7022, #418fdd);
 }
 
 .graph-controls {

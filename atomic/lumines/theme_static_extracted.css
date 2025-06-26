@@ -1,9 +1,9 @@
 :root {
   --active-bg: light-dark(transparent, transparent);
-  --background-primary: light-dark(#0a0a0a, #f9f9f9);
-  --background-primary-alt: light-dark(#1e1e1e, #efefef);
-  --background-secondary: light-dark(#1e1e1e, #efefef);
-  --background-secondary-alt: light-dark(#161616, #212121);
+  --background-primary: light-dark(#f9f9f9, #0a0a0a);
+  --background-primary-alt: light-dark(#efefef, #1e1e1e);
+  --background-secondary: light-dark(#efefef, #1e1e1e);
+  --background-secondary-alt: light-dark(#212121, #161616);
   --color-000: #ffffff;
   --color-010: #f3effe;
   --color-020: #e8defd;
@@ -21,35 +21,35 @@
   --color-140: #533793;
   --color-150: #452e7b;
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
   --color-gray: #ced4da;
-  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-green: light-dark(#08b94e, #44cf6e);
   --color-indigo: #818cf8;
   --color-lime: #bef264;
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --color-sky: #4dabf7;
   --color-violet: #9f8fef;
   --color-white: #dcdcdc;
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
   --page-border: 9px solid transparent;
@@ -91,10 +91,10 @@ body {
   --background-modifier-message: #000000e6;
   --background-modifier-success: #44cf6e;
   --background-modifier-success-rgb: 68, 207, 110;
-  --background-primary: light-dark(#0a0a0a, #f9f9f9);
-  --background-primary-alt: light-dark(#1e1e1e, #efefef);
-  --background-secondary: light-dark(#1e1e1e, #efefef);
-  --background-secondary-alt: light-dark(#161616, #212121);
+  --background-primary: light-dark(#f9f9f9, #0a0a0a);
+  --background-primary-alt: light-dark(#efefef, #1e1e1e);
+  --background-secondary: light-dark(#efefef, #1e1e1e);
+  --background-secondary-alt: light-dark(#212121, #161616);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -204,29 +204,29 @@ body {
   --collapse-icon-color: #404040;
   --collapse-icon-color-collapsed: #a68af9;
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -796,7 +796,7 @@ body {
   --zoom-factor: 1;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(#0a0a0a, #f9f9f9);
+  background-color: light-dark(#f9f9f9, #0a0a0a);
   caret-color: #a68af9;
   color: #dcdcdc;
   contain: initial;
@@ -1266,7 +1266,7 @@ h6 {
 }
 
 .popover {
-  background-color: light-dark(#0a0a0a, #f9f9f9);
+  background-color: light-dark(#f9f9f9, #0a0a0a);
   border: 1px solid transparent;
   border-radius: 8px;
   box-shadow:
@@ -1280,7 +1280,7 @@ h6 {
 }
 
 .prompt {
-  background-color: light-dark(#0a0a0a, #f9f9f9);
+  background-color: light-dark(#f9f9f9, #0a0a0a);
   border: 0.5pt solid #1c1c1c;
   border-radius: 12px;
   box-shadow:
@@ -1299,9 +1299,9 @@ h6 {
 }
 
 input.prompt-input {
-  background-color: light-dark(#0a0a0a, #f9f9f9);
+  background-color: light-dark(#f9f9f9, #0a0a0a);
   border: none;
-  border-bottom: 1px solid light-dark(#1e1e1e, #efefef);
+  border-bottom: 1px solid light-dark(#efefef, #1e1e1e);
   border-radius: 0;
   font-size: 16px;
   height: 48px;
@@ -1712,7 +1712,7 @@ svg.svg-icon {
 }
 
 .graph-controls {
-  background-color: light-dark(#0a0a0a, #f9f9f9);
+  background-color: light-dark(#f9f9f9, #0a0a0a);
   border-radius: 8px;
   inset-inline-end: 12px;
   overflow: auto;
@@ -1871,16 +1871,16 @@ svg.svg-icon {
 }
 
 .workspace-tabs .workspace-leaf {
-  background-color: light-dark(#1e1e1e, #efefef);
+  background-color: light-dark(#efefef, #1e1e1e);
   height: 100%;
 }
 
 .workspace-split.mod-root {
-  background-color: light-dark(#0a0a0a, #f9f9f9);
+  background-color: light-dark(#f9f9f9, #0a0a0a);
 }
 
 .workspace-split.mod-root .view-content {
-  background-color: light-dark(#0a0a0a, #f9f9f9);
+  background-color: light-dark(#f9f9f9, #0a0a0a);
 }
 
 .workspace-leaf-resize-handle {

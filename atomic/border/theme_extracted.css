@@ -1,87 +1,87 @@
 :root {
-  --accent-h: light-dark(var(--accent-dark-h), var(--accent-light-h));
-  --accent-l: light-dark(var(--accent-dark-l), var(--accent-light-l));
-  --accent-s: light-dark(var(--accent-dark-s), var(--accent-light-s));
+  --accent-h: light-dark(var(--accent-light-h), var(--accent-dark-h));
+  --accent-l: light-dark(var(--accent-light-l), var(--accent-dark-l));
+  --accent-s: light-dark(var(--accent-light-s), var(--accent-dark-s));
   --background-primary: light-dark(
+    var(--color-base-00),
     hsl(
       var(--accent-h),
       calc(var(--accent-s) / 5),
       calc(1.25 * var(--accent-l) / 4.5)
-    ),
-    var(--color-base-00)
+    )
   );
   --background-primary-alt: light-dark(
+    var(--color-base-10),
     hsl(
       var(--accent-h),
       calc(var(--accent-s) / 5),
       calc(1.25 * var(--accent-l) / 3.9)
-    ),
-    var(--color-base-10)
+    )
   );
   --background-secondary: light-dark(
     hsl(
       var(--accent-h),
-      calc(var(--accent-s) / 5),
-      calc(1.25 * var(--accent-l) / 4.9)
+      calc((var(--accent-s)) / 6),
+      calc(100% - (100% - var(--accent-l)) / 16)
     ),
     hsl(
       var(--accent-h),
-      calc((var(--accent-s)) / 6),
-      calc(100% - (100% - var(--accent-l)) / 16)
+      calc(var(--accent-s) / 5),
+      calc(1.25 * var(--accent-l) / 4.9)
     )
   );
   --background-secondary-alt: light-dark(
-    var(--color-base-30),
-    var(--color-base-05)
+    var(--color-base-05),
+    var(--color-base-30)
   );
   --background-tertiary: light-dark(
     hsl(
       var(--accent-h),
-      calc(var(--accent-s) / 5.4),
-      calc(1.25 * var(--accent-l) / 3.6)
+      calc((var(--accent-s)) / 2),
+      calc(100% - (100% - var(--accent-l)) / 12)
     ),
     hsl(
       var(--accent-h),
-      calc((var(--accent-s)) / 2),
-      calc(100% - (100% - var(--accent-l)) / 12)
+      calc(var(--accent-s) / 5.4),
+      calc(1.25 * var(--accent-l) / 3.6)
     )
   );
   --code-background: light-dark(
-    var(--code-background-dark),
-    var(--code-background-light)
+    var(--code-background-light),
+    var(--code-background-dark)
   );
-  --code-border: light-dark(var(--code-border-dark), var(--code-border-light));
+  --code-border: light-dark(var(--code-border-light), var(--code-border-dark));
   --color-accent: light-dark(
     hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
     hsl(var(--accent-h), var(--accent-s), var(--accent-l))
   );
   --color-accent-1: light-dark(
     hsl(
-      calc(var(--accent-h) - 3),
-      calc(var(--accent-s) * 1.02),
-      calc(var(--accent-l) * 1.15)
-    ),
-    hsl(
       calc(var(--accent-h) - 1),
       calc(var(--accent-s) * 1.01),
       calc(var(--accent-l) * 1.075)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
     )
   );
   --color-accent-2: light-dark(
     hsl(
-      calc(var(--accent-h) - 5),
-      calc(var(--accent-s) * 1.05),
-      calc(var(--accent-l) * 1.29)
-    ),
-    hsl(
       calc(var(--accent-h) - 3),
       calc(var(--accent-s) * 1.02),
       calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
     )
   );
   --color-accent-3: light-dark(
-    var(--color-accent-3-dark),
-    var(--color-accent-3-light)
+    var(--color-accent-3-light),
+    var(--color-accent-3-dark)
   );
   --color-accent-hsl: light-dark(
     var(--accent-h),
@@ -91,46 +91,46 @@
     var(--accent-s),
     var(--accent-l)
   );
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-15: light-dark(#252525, #f7f7f7);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-15: light-dark(#f7f7f7, #252525);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --input-radius: light-dark(
-    var(--input-radius-dark),
-    var(--input-radius-light)
+    var(--input-radius-light),
+    var(--input-radius-dark)
   );
   --interactive-hover: light-dark(
+    var(--color-base-15),
     hsl(
       var(--accent-h),
       calc(var(--accent-s) / 7),
       calc(1.25 * var(--accent-l) / 2.7)
-    ),
-    var(--color-base-15)
+    )
   );
   --interactive-normal: light-dark(
+    var(--color-base-05),
     hsl(
       var(--accent-h),
       calc(var(--accent-s) / 7),
       calc(1.25 * var(--accent-l) / 3)
-    ),
-    var(--color-base-05)
+    )
   );
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
@@ -145,48 +145,48 @@
   --text-accent: light-dark(var(--color-accent-1), var(--color-accent-1));
   --text-accent-hover: light-dark(var(--color-accent-2), var(--color-accent-2));
   --text-faint: light-dark(
-    hsl(var(--accent-h), 9%, 50%),
-    hsl(var(--accent-h), 12%, 64%)
+    hsl(var(--accent-h), 12%, 64%),
+    hsl(var(--accent-h), 9%, 50%)
   );
   --text-muted: light-dark(
-    hsl(var(--accent-h), 12%, 75%),
-    hsl(var(--accent-h), 9%, 36%)
+    hsl(var(--accent-h), 9%, 36%),
+    hsl(var(--accent-h), 12%, 75%)
   );
   --text-normal: light-dark(
-    hsl(var(--accent-h), 15%, 85%),
-    hsl(var(--accent-h), 6%, 12%)
+    hsl(var(--accent-h), 6%, 12%),
+    hsl(var(--accent-h), 15%, 85%)
   );
   --toggle-thumb-color: light-dark(
-    var(--toggle-thumb-color-dark),
-    var(--toggle-thumb-color-light)
+    var(--toggle-thumb-color-light),
+    var(--toggle-thumb-color-dark)
   );
   --toggle-thumb-enabled-color: light-dark(
-    var(--toggle-thumb-enabled-color-dark),
-    var(--toggle-thumb-enabled-color-light)
+    var(--toggle-thumb-enabled-color-light),
+    var(--toggle-thumb-enabled-color-dark)
   );
   --toggle-thumb-enabled-shadow: light-dark(
-    var(--toggle-thumb-enabled-shadow-dark),
-    var(--toggle-thumb-enabled-shadow-light)
+    var(--toggle-thumb-enabled-shadow-light),
+    var(--toggle-thumb-enabled-shadow-dark)
   );
   --toggle-thumb-shadow: light-dark(
-    var(--toggle-thumb-shadow-dark),
-    var(--toggle-thumb-shadow-light)
+    var(--toggle-thumb-shadow-light),
+    var(--toggle-thumb-shadow-dark)
   );
   --toggle-track-color: light-dark(
-    var(--toggle-track-color-dark),
-    var(--toggle-track-color-light)
+    var(--toggle-track-color-light),
+    var(--toggle-track-color-dark)
   );
   --toggle-track-enabled-color: light-dark(
-    var(--toggle-track-enabled-color-dark),
-    var(--toggle-track-enabled-color-light)
+    var(--toggle-track-enabled-color-light),
+    var(--toggle-track-enabled-color-dark)
   );
   --toggle-track-hovered-shadow: light-dark(
-    var(--toggle-track-hovered-shadow-dark),
-    var(--toggle-track-hovered-shadow-light)
+    var(--toggle-track-hovered-shadow-light),
+    var(--toggle-track-hovered-shadow-dark)
   );
   --toggle-track-shadow: light-dark(
-    var(--toggle-track-shadow-dark),
-    var(--toggle-track-shadow-light)
+    var(--toggle-track-shadow-light),
+    var(--toggle-track-shadow-dark)
   );
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
@@ -194,9 +194,9 @@
 }
 
 body {
-  --accent-h: light-dark(var(--accent-dark-h), var(--accent-light-h));
-  --accent-l: light-dark(var(--accent-dark-l), var(--accent-light-l));
-  --accent-s: light-dark(var(--accent-dark-s), var(--accent-light-s));
+  --accent-h: light-dark(var(--accent-light-h), var(--accent-dark-h));
+  --accent-l: light-dark(var(--accent-light-l), var(--accent-dark-l));
+  --accent-s: light-dark(var(--accent-light-s), var(--accent-dark-s));
   --anim-duration-fast: calc(150ms / var(--anim-speed));
   --anim-duration-moderate: calc(300ms / var(--anim-speed));
   --anim-duration-none: 0;
@@ -257,47 +257,47 @@ body {
   --background-modifier-success: var(--color-green);
   --background-modifier-success-rgb: var(--color-green-rgb);
   --background-primary: light-dark(
+    var(--color-base-00),
     hsl(
       var(--accent-h),
       calc(var(--accent-s) / 5),
       calc(1.25 * var(--accent-l) / 4.5)
-    ),
-    var(--color-base-00)
+    )
   );
   --background-primary-alt: light-dark(
+    var(--color-base-10),
     hsl(
       var(--accent-h),
       calc(var(--accent-s) / 5),
       calc(1.25 * var(--accent-l) / 3.9)
-    ),
-    var(--color-base-10)
+    )
   );
   --background-secondary: light-dark(
     hsl(
       var(--accent-h),
-      calc(var(--accent-s) / 5),
-      calc(1.25 * var(--accent-l) / 4.9)
+      calc((var(--accent-s)) / 6),
+      calc(100% - (100% - var(--accent-l)) / 16)
     ),
     hsl(
       var(--accent-h),
-      calc((var(--accent-s)) / 6),
-      calc(100% - (100% - var(--accent-l)) / 16)
+      calc(var(--accent-s) / 5),
+      calc(1.25 * var(--accent-l) / 4.9)
     )
   );
   --background-secondary-alt: light-dark(
-    var(--color-base-30),
-    var(--color-base-05)
+    var(--color-base-05),
+    var(--color-base-30)
   );
   --background-tertiary: light-dark(
     hsl(
       var(--accent-h),
-      calc(var(--accent-s) / 5.4),
-      calc(1.25 * var(--accent-l) / 3.6)
+      calc((var(--accent-s)) / 2),
+      calc(100% - (100% - var(--accent-l)) / 12)
     ),
     hsl(
       var(--accent-h),
-      calc((var(--accent-s)) / 2),
-      calc(100% - (100% - var(--accent-l)) / 12)
+      calc(var(--accent-s) / 5.4),
+      calc(1.25 * var(--accent-l) / 3.6)
     )
   );
   --background-underlying: var(--background-tertiary);
@@ -501,12 +501,12 @@ body {
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: 6px;
   --code-background: light-dark(
-    var(--code-background-dark),
-    var(--code-background-light)
+    var(--code-background-light),
+    var(--code-background-dark)
   );
   --code-background-dark: var(--background-alt-dark);
   --code-background-light: var(--background-alt-light);
-  --code-border: light-dark(var(--code-border-dark), var(--code-border-light));
+  --code-border: light-dark(var(--code-border-light), var(--code-border-dark));
   --code-border-color: var(--background-modifier-border);
   --code-border-dark: 1px dashed var(--background-modifier-border);
   --code-border-light: 1px dashed var(--background-modifier-border);
@@ -533,31 +533,31 @@ body {
   );
   --color-accent-1: light-dark(
     hsl(
-      calc(var(--accent-h) - 3),
-      calc(var(--accent-s) * 1.02),
-      calc(var(--accent-l) * 1.15)
-    ),
-    hsl(
       calc(var(--accent-h) - 1),
       calc(var(--accent-s) * 1.01),
       calc(var(--accent-l) * 1.075)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
     )
   );
   --color-accent-2: light-dark(
     hsl(
-      calc(var(--accent-h) - 5),
-      calc(var(--accent-s) * 1.05),
-      calc(var(--accent-l) * 1.29)
-    ),
-    hsl(
       calc(var(--accent-h) - 3),
       calc(var(--accent-s) * 1.02),
       calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
     )
   );
   --color-accent-3: light-dark(
-    var(--color-accent-3-dark),
-    var(--color-accent-3-light)
+    var(--color-accent-3-light),
+    var(--color-accent-3-dark)
   );
   --color-accent-hsl: light-dark(
     var(--accent-h),
@@ -569,27 +569,27 @@ body {
   );
   --color-activated-tab-header-dark: var(--text-normal);
   --color-activated-tab-header-light: var(--text-normal);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-15: light-dark(#252525, #f7f7f7);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-15: light-dark(#f7f7f7, #252525);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: pointer;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -807,27 +807,27 @@ body {
   --input-height: 30px;
   --input-placeholder-color: var(--text-faint);
   --input-radius: light-dark(
-    var(--input-radius-dark),
-    var(--input-radius-light)
+    var(--input-radius-light),
+    var(--input-radius-dark)
   );
   --interactive-accent: var(--color-accent-1);
   --interactive-accent-hover: var(--color-accent-2);
   --interactive-accent-hsl: var(--color-accent-hsl);
   --interactive-hover: light-dark(
+    var(--color-base-15),
     hsl(
       var(--accent-h),
       calc(var(--accent-s) / 7),
       calc(1.25 * var(--accent-l) / 2.7)
-    ),
-    var(--color-base-15)
+    )
   );
   --interactive-normal: light-dark(
+    var(--color-base-05),
     hsl(
       var(--accent-h),
       calc(var(--accent-s) / 7),
       calc(1.25 * var(--accent-l) / 3)
-    ),
-    var(--color-base-05)
+    )
   );
   --italic-color: var(--color-orange);
   --italic-weight: inherit;
@@ -1211,18 +1211,18 @@ body {
   --text-accent-hover: light-dark(var(--color-accent-2), var(--color-accent-2));
   --text-error: var(--color-red);
   --text-faint: light-dark(
-    hsl(var(--accent-h), 9%, 50%),
-    hsl(var(--accent-h), 12%, 64%)
+    hsl(var(--accent-h), 12%, 64%),
+    hsl(var(--accent-h), 9%, 50%)
   );
   --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: light-dark(
-    hsl(var(--accent-h), 12%, 75%),
-    hsl(var(--accent-h), 9%, 36%)
+    hsl(var(--accent-h), 9%, 36%),
+    hsl(var(--accent-h), 12%, 75%)
   );
   --text-normal: light-dark(
-    hsl(var(--accent-h), 15%, 85%),
-    hsl(var(--accent-h), 6%, 12%)
+    hsl(var(--accent-h), 6%, 12%),
+    hsl(var(--accent-h), 15%, 85%)
   );
   --text-on-accent: white;
   --text-on-accent-inverted: black;
@@ -1244,39 +1244,39 @@ body {
   --toggle-s-thumb-width: 15px;
   --toggle-s-width: 34px;
   --toggle-thumb-color: light-dark(
-    var(--toggle-thumb-color-dark),
-    var(--toggle-thumb-color-light)
+    var(--toggle-thumb-color-light),
+    var(--toggle-thumb-color-dark)
   );
   --toggle-thumb-enabled-color: light-dark(
-    var(--toggle-thumb-enabled-color-dark),
-    var(--toggle-thumb-enabled-color-light)
+    var(--toggle-thumb-enabled-color-light),
+    var(--toggle-thumb-enabled-color-dark)
   );
   --toggle-thumb-enabled-shadow: light-dark(
-    var(--toggle-thumb-enabled-shadow-dark),
-    var(--toggle-thumb-enabled-shadow-light)
+    var(--toggle-thumb-enabled-shadow-light),
+    var(--toggle-thumb-enabled-shadow-dark)
   );
   --toggle-thumb-height: 18px;
   --toggle-thumb-radius: 18px;
   --toggle-thumb-shadow: light-dark(
-    var(--toggle-thumb-shadow-dark),
-    var(--toggle-thumb-shadow-light)
+    var(--toggle-thumb-shadow-light),
+    var(--toggle-thumb-shadow-dark)
   );
   --toggle-thumb-width: 18px;
   --toggle-track-color: light-dark(
-    var(--toggle-track-color-dark),
-    var(--toggle-track-color-light)
+    var(--toggle-track-color-light),
+    var(--toggle-track-color-dark)
   );
   --toggle-track-enabled-color: light-dark(
-    var(--toggle-track-enabled-color-dark),
-    var(--toggle-track-enabled-color-light)
+    var(--toggle-track-enabled-color-light),
+    var(--toggle-track-enabled-color-dark)
   );
   --toggle-track-hovered-shadow: light-dark(
-    var(--toggle-track-hovered-shadow-dark),
-    var(--toggle-track-hovered-shadow-light)
+    var(--toggle-track-hovered-shadow-light),
+    var(--toggle-track-hovered-shadow-dark)
   );
   --toggle-track-shadow: light-dark(
-    var(--toggle-track-shadow-dark),
-    var(--toggle-track-shadow-light)
+    var(--toggle-track-shadow-light),
+    var(--toggle-track-shadow-dark)
   );
   --toggle-width: 40px;
   --vault-profile-actions-display: flex;

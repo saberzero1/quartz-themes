@@ -1,33 +1,33 @@
 :root {
   --background-modifier-border: light-dark(#aa4400, #aa4400);
-  --background-primary: light-dark(#000000, #e5e5e5);
-  --background-secondary: light-dark(#0a0a0a, #ffffff);
-  --background-secondary-alt: light-dark(#363636, #212121);
-  --background-tertiary: light-dark(#1a1a1a, #4d4d4d);
+  --background-primary: light-dark(#e5e5e5, #000000);
+  --background-secondary: light-dark(#ffffff, #0a0a0a);
+  --background-secondary-alt: light-dark(#212121, #363636);
+  --background-tertiary: light-dark(#4d4d4d, #1a1a1a);
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --dark-gray: #1a1a1a;
   --interactive-accent: light-dark(#ff8533, #ff8533);
   --interactive-hover: light-dark(#ff6600, #ff6600);
@@ -52,9 +52,9 @@
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
   --spreadHorizontalWrapped-margin-LR: -3.5px;
-  --text-faint: light-dark(#aa4400, #4d4d4d);
-  --text-muted: light-dark(#cc5500, #333333);
-  --text-normal: light-dark(#ff6600, #000000);
+  --text-faint: light-dark(#4d4d4d, #aa4400);
+  --text-muted: light-dark(#333333, #cc5500);
+  --text-normal: light-dark(#000000, #ff6600);
   --true-black: #000000;
   --viewer-container-height: 0;
   --white: #ffffff;
@@ -87,11 +87,11 @@ body {
   --background-modifier-message: #000000e6;
   --background-modifier-success: #44cf6e;
   --background-modifier-success-rgb: 68, 207, 110;
-  --background-primary: light-dark(#000000, #e5e5e5);
+  --background-primary: light-dark(#e5e5e5, #000000);
   --background-primary-alt: #111;
-  --background-secondary: light-dark(#0a0a0a, #ffffff);
-  --background-secondary-alt: light-dark(#363636, #212121);
-  --background-tertiary: light-dark(#1a1a1a, #4d4d4d);
+  --background-secondary: light-dark(#ffffff, #0a0a0a);
+  --background-secondary-alt: light-dark(#212121, #363636);
+  --background-tertiary: light-dark(#4d4d4d, #1a1a1a);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -201,29 +201,29 @@ body {
   --collapse-icon-color: #aa4400;
   --collapse-icon-color-collapsed: #a68af9;
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -766,11 +766,11 @@ body {
   --text-accent: #8a5cf5;
   --text-accent-hover: #c5b6fc;
   --text-error: #fb464c;
-  --text-faint: light-dark(#aa4400, #4d4d4d);
+  --text-faint: light-dark(#4d4d4d, #aa4400);
   --text-highlight-bg: #ffd00066;
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: light-dark(#cc5500, #333333);
-  --text-normal: light-dark(#ff6600, #000000);
+  --text-muted: light-dark(#333333, #cc5500);
+  --text-normal: light-dark(#000000, #ff6600);
   --text-on-accent: #ffffff;
   --text-on-accent-inverted: #000000;
   --text-selection: #8a5cf533;
@@ -805,9 +805,9 @@ body {
   --zoom-factor: 1;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(#000000, #e5e5e5);
+  background-color: light-dark(#e5e5e5, #000000);
   caret-color: #a68af9;
-  color: light-dark(#ff6600, #000000);
+  color: light-dark(#000000, #ff6600);
   contain: initial;
   font-family: "Courier New", monospace;
   font-size: 14px;
@@ -989,7 +989,7 @@ h6 {
 .markdown-rendered button.copy-code-button {
   background-color: transparent;
   box-shadow: none;
-  color: light-dark(#cc5500, #333333);
+  color: light-dark(#333333, #cc5500);
   font-family:
     "??",
     "??",
@@ -1232,7 +1232,7 @@ h6 {
 }
 
 .popover {
-  background-color: light-dark(#000000, #e5e5e5);
+  background-color: light-dark(#e5e5e5, #000000);
   border: 1px solid light-dark(#aa4400, #aa4400);
   border-radius: 8px;
   box-shadow:
@@ -1246,7 +1246,7 @@ h6 {
 }
 
 .prompt {
-  background-color: light-dark(#000000, #e5e5e5);
+  background-color: light-dark(#e5e5e5, #000000);
   border: 0.5pt solid #555555;
   border-radius: 12px;
   box-shadow:
@@ -1265,9 +1265,9 @@ h6 {
 }
 
 input.prompt-input {
-  background-color: light-dark(#000000, #e5e5e5);
+  background-color: light-dark(#e5e5e5, #000000);
   border: none;
-  border-bottom: 1px solid light-dark(#0a0a0a, #ffffff);
+  border-bottom: 1px solid light-dark(#ffffff, #0a0a0a);
   border-radius: 0;
   font-size: 16px;
   height: 48px;
@@ -1286,7 +1286,7 @@ input.prompt-input {
 
 .markdown-rendered mark {
   background-color: #ffd00066;
-  color: light-dark(#ff6600, #000000);
+  color: light-dark(#000000, #ff6600);
 }
 
 a.tag {
@@ -1306,7 +1306,7 @@ input[type="search"] {
   background: transparent;
   border: 1px solid light-dark(#aa4400, #aa4400);
   border-radius: 5px;
-  color: light-dark(#ff6600, #000000);
+  color: light-dark(#000000, #ff6600);
   font-family: inherit;
   font-size: 14.992px;
   height: 40px;
@@ -1483,7 +1483,7 @@ input[type="search"] {
 
 .tree-item-flair {
   border-radius: 4px;
-  color: light-dark(#aa4400, #4d4d4d);
+  color: light-dark(#4d4d4d, #aa4400);
   font-size: 12.8px;
   line-height: 1;
 }
@@ -1500,7 +1500,7 @@ input[type="search"] {
 }
 
 .tree-item-inner-subtext {
-  color: light-dark(#aa4400, #4d4d4d);
+  color: light-dark(#4d4d4d, #aa4400);
   font-size: 85%;
 }
 
@@ -1543,7 +1543,7 @@ svg.svg-icon {
 
 .clickable-icon[aria-disabled="true"] {
   background-color: unset;
-  color: light-dark(#cc5500, #333333);
+  color: light-dark(#333333, #cc5500);
   opacity: 0.4;
 }
 
@@ -1577,7 +1577,7 @@ svg.svg-icon {
 }
 
 .view-header-title-parent .view-header-breadcrumb-separator {
-  color: light-dark(#aa4400, #4d4d4d);
+  color: light-dark(#4d4d4d, #aa4400);
   padding: 2px 1px;
 }
 
@@ -1629,31 +1629,31 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-1 {
-  color: light-dark(#cc5500, #333333);
+  color: light-dark(#333333, #cc5500);
 }
 
 .graph-view.color-fill-2 {
-  color: light-dark(#cc5500, #333333);
+  color: light-dark(#333333, #cc5500);
 }
 
 .graph-view.color-fill-3 {
-  color: light-dark(#cc5500, #333333);
+  color: light-dark(#333333, #cc5500);
 }
 
 .graph-view.color-fill-4 {
-  color: light-dark(#cc5500, #333333);
+  color: light-dark(#333333, #cc5500);
 }
 
 .graph-view.color-fill-5 {
-  color: light-dark(#cc5500, #333333);
+  color: light-dark(#333333, #cc5500);
 }
 
 .graph-view.color-fill-6 {
-  color: light-dark(#cc5500, #333333);
+  color: light-dark(#333333, #cc5500);
 }
 
 .graph-view.color-arrow {
-  color: light-dark(#ff6600, #000000);
+  color: light-dark(#000000, #ff6600);
   opacity: 0.5;
 }
 
@@ -1678,7 +1678,7 @@ svg.svg-icon {
 }
 
 .graph-controls {
-  background-color: light-dark(#000000, #e5e5e5);
+  background-color: light-dark(#e5e5e5, #000000);
   border-radius: 8px;
   inset-inline-end: 12px;
   overflow: auto;
@@ -1833,16 +1833,16 @@ svg.svg-icon {
 }
 
 .workspace-tabs .workspace-leaf {
-  background-color: light-dark(#0a0a0a, #ffffff);
+  background-color: light-dark(#ffffff, #0a0a0a);
   height: 100%;
 }
 
 .workspace-split.mod-root {
-  background-color: light-dark(#000000, #e5e5e5);
+  background-color: light-dark(#e5e5e5, #000000);
 }
 
 .workspace-split.mod-root .view-content {
-  background-color: light-dark(#000000, #e5e5e5);
+  background-color: light-dark(#e5e5e5, #000000);
 }
 
 .workspace-leaf-resize-handle {

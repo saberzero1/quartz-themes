@@ -25,14 +25,14 @@ html[saved-theme="dark"] {
 
   --background-modifier-border: #302d41;
   caret-color: light-dark(
-    rgb(light-dark(198, 208, 245, 76, 79, 105)),
-    rgb(light-dark(198, 208, 245, 76, 79, 105))
+    rgb(light-dark(76, 79, 105, 198, 208, 245)),
+    rgb(light-dark(76, 79, 105, 198, 208, 245))
   );
 
   --background-modifier-border: #302d41;
   caret-color: light-dark(
-    rgb(light-dark(198, 208, 245, 76, 79, 105)),
-    rgb(light-dark(198, 208, 245, 76, 79, 105))
+    rgb(light-dark(76, 79, 105, 198, 208, 245)),
+    rgb(light-dark(76, 79, 105, 198, 208, 245))
   );
 }
 
@@ -55,15 +55,15 @@ html[saved-theme="light"] {
   --background-modifier-border: #2d2848;
 
   caret-color: light-dark(
-    rgb(light-dark(198, 208, 245, 76, 79, 105)),
-    rgb(light-dark(198, 208, 245, 76, 79, 105))
+    rgb(light-dark(76, 79, 105, 198, 208, 245)),
+    rgb(light-dark(76, 79, 105, 198, 208, 245))
   );
 
   --background-modifier-border: #2d2848;
 
   caret-color: light-dark(
-    rgb(light-dark(198, 208, 245, 76, 79, 105)),
-    rgb(light-dark(198, 208, 245, 76, 79, 105))
+    rgb(light-dark(76, 79, 105, 198, 208, 245)),
+    rgb(light-dark(76, 79, 105, 198, 208, 245))
   );
 }
 
@@ -150,22 +150,22 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --background-modifier-border-focus: light-dark(#575269, #6d6b7d);
-  --background-modifier-border-hover: light-dark(#2d2848, #575269);
+  --background-modifier-border-focus: light-dark(#6d6b7d, #575269);
+  --background-modifier-border-hover: light-dark(#575269, #2d2848);
   --background-primary: light-dark(#1e1e2e, #1e1e2e);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --text-accent: light-dark(#b4befe, #b4befe);
   --text-accent-hover: light-dark(#b4befe, #b4befe);
   --text-muted: light-dark(#a79cb0, #a79cb0);
@@ -173,8 +173,8 @@ html[saved-theme="light"] {
 }
 body {
   --background-modifier-border: #302d41;
-  --background-modifier-border-focus: light-dark(#575269, #6d6b7d);
-  --background-modifier-border-hover: light-dark(#2d2848, #575269);
+  --background-modifier-border-focus: light-dark(#6d6b7d, #575269);
+  --background-modifier-border-hover: light-dark(#575269, #2d2848);
   --background-modifier-hover: #d9e0ee13;
   --background-primary: light-dark(#1e1e2e, #1e1e2e);
   --bold-color: inherit;
@@ -201,17 +201,17 @@ body {
   --collapse-icon-color-collapsed: #b4befe;
   --color-accent-2: rgb(180, 190, 254 !important);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -262,16 +262,16 @@ body {
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: light-dark(
-    rgb(light-dark(30, 30, 46, 239, 241, 245)),
-    rgb(light-dark(30, 30, 46, 239, 241, 245))
+    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
   caret-color: light-dark(
-    rgb(light-dark(198, 208, 245, 76, 79, 105)),
-    rgb(light-dark(198, 208, 245, 76, 79, 105))
+    rgb(light-dark(76, 79, 105, 198, 208, 245)),
+    rgb(light-dark(76, 79, 105, 198, 208, 245))
   );
   color: light-dark(
-    rgb(light-dark(198, 208, 245, 76, 79, 105)),
-    rgb(light-dark(198, 208, 245, 76, 79, 105))
+    rgb(light-dark(76, 79, 105, 198, 208, 245)),
+    rgb(light-dark(76, 79, 105, 198, 208, 245))
   );
   contain: initial;
   font-family:
@@ -428,8 +428,8 @@ body {
     var(--background-modifier-hover)
   ) !important;
   background-color: light-dark(
-    rgb(light-dark(30, 30, 46, 239, 241, 245)),
-    rgb(light-dark(30, 30, 46, 239, 241, 245))
+    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
   section,
   .page > #quartz-body .sidebar {
@@ -437,8 +437,8 @@ body {
     &.left:has(.explorer),
     &.right {
       background-color: light-dark(
-        rgb(light-dark(30, 30, 46, 239, 241, 245)),
-        rgb(light-dark(30, 30, 46, 239, 241, 245))
+        rgb(light-dark(239, 241, 245, 30, 30, 46)),
+        rgb(light-dark(239, 241, 245, 30, 30, 46))
       );
     }
   }
@@ -766,8 +766,8 @@ body {
     background-color: transparent;
     box-shadow: none;
     color: light-dark(
-      rgb(light-dark(142, 149, 179, 124, 127, 147)),
-      rgb(light-dark(142, 149, 179, 124, 127, 147))
+      rgb(light-dark(124, 127, 147, 142, 149, 179)),
+      rgb(light-dark(124, 127, 147, 142, 149, 179))
     );
     font-family:
       "??",
@@ -840,8 +840,8 @@ body {
     .explorer-content {
       @media all and ($mobile) {
         background-color: light-dark(
-          rgb(light-dark(30, 30, 46, 239, 241, 245)),
-          rgb(light-dark(30, 30, 46, 239, 241, 245))
+          rgb(light-dark(239, 241, 245, 30, 30, 46)),
+          rgb(light-dark(239, 241, 245, 30, 30, 46))
         );
       }
       .folder-container {
@@ -882,12 +882,12 @@ body {
         border-inline-start: 1px solid
           light-dark(
             light-dark(
-              rgb(light-dark(30, 30, 46, 239, 241, 245)),
-              rgb(light-dark(30, 30, 46, 239, 241, 245))
+              rgb(light-dark(239, 241, 245, 30, 30, 46)),
+              rgb(light-dark(239, 241, 245, 30, 30, 46))
             ),
             light-dark(
-              rgb(light-dark(30, 30, 46, 239, 241, 245)),
-              rgb(light-dark(30, 30, 46, 239, 241, 245))
+              rgb(light-dark(239, 241, 245, 30, 30, 46)),
+              rgb(light-dark(239, 241, 245, 30, 30, 46))
             )
           );
         margin-bottom: 1px;
@@ -1034,8 +1034,8 @@ body {
       border: 1px solid transparent;
       border-radius: 5px;
       color: light-dark(
-        rgb(light-dark(198, 208, 245, 76, 79, 105)),
-        rgb(light-dark(198, 208, 245, 76, 79, 105))
+        rgb(light-dark(76, 79, 105, 198, 208, 245)),
+        rgb(light-dark(76, 79, 105, 198, 208, 245))
       );
       font-family: inherit;
       font-size: 14.992px;
@@ -1050,8 +1050,8 @@ body {
     & > .search-container {
       & > .search-space {
         background-color: light-dark(
-          rgb(light-dark(30, 30, 46, 239, 241, 245)),
-          rgb(light-dark(30, 30, 46, 239, 241, 245))
+          rgb(light-dark(239, 241, 245, 30, 30, 46)),
+          rgb(light-dark(239, 241, 245, 30, 30, 46))
         );
         border: 0.5pt solid #555555;
         border-radius: 12px;
@@ -1062,14 +1062,14 @@ body {
         margin: 12vh auto;
         & > input {
           background-color: light-dark(
-            rgb(light-dark(30, 30, 46, 239, 241, 245)),
-            rgb(light-dark(30, 30, 46, 239, 241, 245))
+            rgb(light-dark(239, 241, 245, 30, 30, 46)),
+            rgb(light-dark(239, 241, 245, 30, 30, 46))
           );
           border: none;
           border-bottom: 1px solid
             light-dark(
-              rgb(light-dark(24, 24, 37, 230, 233, 239)),
-              rgb(light-dark(24, 24, 37, 230, 233, 239))
+              rgb(light-dark(230, 233, 239, 24, 24, 37)),
+              rgb(light-dark(230, 233, 239, 24, 24, 37))
             );
           border-radius: 0;
           font-size: 16px;
@@ -1083,8 +1083,8 @@ body {
         }
         & > * {
           color: light-dark(
-            rgb(light-dark(198, 208, 245, 76, 79, 105)),
-            rgb(light-dark(198, 208, 245, 76, 79, 105))
+            rgb(light-dark(76, 79, 105, 198, 208, 245)),
+            rgb(light-dark(76, 79, 105, 198, 208, 245))
           );
           background: transparent;
           margin-bottom: 0;
@@ -1099,8 +1099,8 @@ body {
             font-weight: bold;
             background-color: #b4befe33;
             color: light-dark(
-              rgb(light-dark(198, 208, 245, 76, 79, 105)),
-              rgb(light-dark(198, 208, 245, 76, 79, 105))
+              rgb(light-dark(76, 79, 105, 198, 208, 245)),
+              rgb(light-dark(76, 79, 105, 198, 208, 245))
             );
           }
           & > .preview-container {
@@ -1122,8 +1122,8 @@ body {
               & > ul > li > p {
                 background-color: transparent;
                 color: light-dark(
-                  rgb(light-dark(198, 208, 245, 76, 79, 105)),
-                  rgb(light-dark(198, 208, 245, 76, 79, 105))
+                  rgb(light-dark(76, 79, 105, 198, 208, 245)),
+                  rgb(light-dark(76, 79, 105, 198, 208, 245))
                 );
                 &.match-tag {
                   color: #b4befe;
@@ -1188,8 +1188,8 @@ body {
   /* POPOVER */
   .popover {
     background-color: light-dark(
-      rgb(light-dark(30, 30, 46, 239, 241, 245)),
-      rgb(light-dark(30, 30, 46, 239, 241, 245))
+      rgb(light-dark(239, 241, 245, 30, 30, 46)),
+      rgb(light-dark(239, 241, 245, 30, 30, 46))
     );
     border: 1px solid transparent;
     border-radius: 8px;
@@ -1209,8 +1209,8 @@ body {
     & .popover-inner {
       border: 1px solid transparent;
       background-color: light-dark(
-        rgb(light-dark(30, 30, 46, 239, 241, 245)),
-        rgb(light-dark(30, 30, 46, 239, 241, 245))
+        rgb(light-dark(239, 241, 245, 30, 30, 46)),
+        rgb(light-dark(239, 241, 245, 30, 30, 46))
       );
 
       border-radius: 8px;

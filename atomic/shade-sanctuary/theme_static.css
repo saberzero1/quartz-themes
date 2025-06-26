@@ -932,33 +932,33 @@
 
 :root {
   --background-secondary-alt: light-dark(
-    color-mix(in srgb, #000000 90%, #cccccc),
-    color-mix(in srgb, #000000 40%, #000)
+    color-mix(in srgb, #000000 40%, #000),
+    color-mix(in srgb, #000000 90%, #cccccc)
   );
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
   --page-border: 9px solid transparent;
@@ -1609,8 +1609,8 @@ body {
   --background-primary-alt: #111;
   --background-secondary: #1e1e1e;
   --background-secondary-alt: light-dark(
-    color-mix(in srgb, #000000 90%, #cccccc),
-    color-mix(in srgb, #000000 40%, #000)
+    color-mix(in srgb, #000000 40%, #000),
+    color-mix(in srgb, #000000 90%, #cccccc)
   );
   --bases-embed-border: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
   --bases-embed-border-radius: 4px;
@@ -1721,29 +1721,29 @@ body {
   --collapse-icon-color: color-mix(in srgb, #000000 60%, #cccccc);
   --collapse-icon-color-collapsed: #a68af9;
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -6218,7 +6218,7 @@ body:not(.is-mobile)
   align-items: center;
   align-self: center;
   background-color: #000;
-  border: solid 1px light-dark(#363636, #e0e0e0);
+  border: solid 1px light-dark(#e0e0e0, #363636);
   border-radius: 10px;
   border-top: 0.5pt solid #00000026;
   box-shadow: 2px 2px 5px #00000033;
@@ -6653,13 +6653,13 @@ body.is-phone .view-header-nav-buttons {
   .workspace-tabs
   .workspace-leaf {
   background-color: #000;
-  border: solid 1px light-dark(#363636, #e0e0e0);
+  border: solid 1px light-dark(#e0e0e0, #363636);
   border-radius: 20px;
 }
 
 .mod-root .workspace-tabs .workspace-leaf {
   background-color: #000;
-  border: solid 1px light-dark(#363636, #e0e0e0);
+  border: solid 1px light-dark(#e0e0e0, #363636);
   border-radius: 20px;
 }
 
@@ -6861,7 +6861,7 @@ body.is-phone .view-header-nav-buttons {
 
 .workspace-tab-header-inner {
   align-items: center;
-  border: solid 1px light-dark(#363636, #e0e0e0);
+  border: solid 1px light-dark(#e0e0e0, #363636);
   border-radius: 10px 10px 0px 0px;
   display: flex;
   gap: 2px;
@@ -7157,7 +7157,7 @@ body > .workspace-split {
 
 .mod-left-split .workspace-tab-header {
   background-color: transparent;
-  border: 1px solid light-dark(#555555, #bdbdbd);
+  border: 1px solid light-dark(#bdbdbd, #555555);
   border-radius: 10px;
   box-shadow: none;
   margin: 0;
@@ -7166,7 +7166,7 @@ body > .workspace-split {
 
 .mod-right-split .workspace-tab-header {
   background-color: transparent;
-  border: 1px solid light-dark(#555555, #bdbdbd);
+  border: 1px solid light-dark(#bdbdbd, #555555);
   border-radius: 10px;
   box-shadow: none;
   margin: 0;
@@ -7206,14 +7206,14 @@ body > .workspace-split {
 }
 
 .mod-left-split .workspace-tab-header.is-active {
-  background-color: light-dark(#363636, #e0e0e0);
-  border: 1px solid light-dark(#555555, #bdbdbd);
+  background-color: light-dark(#e0e0e0, #363636);
+  border: 1px solid light-dark(#bdbdbd, #555555);
   border-radius: 10px;
 }
 
 .mod-right-split .workspace-tab-header.is-active {
-  background-color: light-dark(#363636, #e0e0e0);
-  border: 1px solid light-dark(#555555, #bdbdbd);
+  background-color: light-dark(#e0e0e0, #363636);
+  border: 1px solid light-dark(#bdbdbd, #555555);
   border-radius: 10px;
 }
 
@@ -7225,13 +7225,13 @@ body > .workspace-split {
     background-color: #ffffff26;
   }
   .mod-left-split .workspace-tab-header.is-active:hover {
-    background-color: light-dark(#363636, #e0e0e0);
-    border: 1px solid light-dark(#555555, #bdbdbd);
+    background-color: light-dark(#e0e0e0, #363636);
+    border: 1px solid light-dark(#bdbdbd, #555555);
     border-radius: 10px;
   }
   .mod-right-split .workspace-tab-header.is-active:hover {
-    background-color: light-dark(#363636, #e0e0e0);
-    border: 1px solid light-dark(#555555, #bdbdbd);
+    background-color: light-dark(#e0e0e0, #363636);
+    border: 1px solid light-dark(#bdbdbd, #555555);
     border-radius: 10px;
   }
 }
@@ -7716,8 +7716,8 @@ button.mod-destructive {
 
 .card {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   border: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
   border-radius: 4px;
@@ -10143,8 +10143,8 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   cursor: default;
   text-align: center;
@@ -11319,25 +11319,25 @@ kbd {
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
-  filter: drop-shadow(0px 0px 1px light-dark(#999999, #707070))
+  filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
 }
 
@@ -20445,12 +20445,12 @@ body.is-mobile .canvas-node-resizer {
 
 .canvas-color-picker-item.canvas-color-picker-custom:not(.is-active) {
   background: conic-gradient(
-    light-dark(#fb464c, #e93147),
-    light-dark(#e0de71, #e0ac00),
-    light-dark(#44cf6e, #08b94e),
-    light-dark(#027aff, #086ddd),
-    light-dark(#a882ff, #7852ee),
-    light-dark(#fb464c, #e93147)
+    light-dark(#e93147, #fb464c),
+    light-dark(#e0ac00, #e0de71),
+    light-dark(#08b94e, #44cf6e),
+    light-dark(#086ddd, #027aff),
+    light-dark(#7852ee, #a882ff),
+    light-dark(#e93147, #fb464c)
   );
 }
 
@@ -23989,8 +23989,8 @@ img {
 }
 
 #calendar-container {
-  background: light-dark(#262626, #f6f6f6);
-  border: solid 1px light-dark(#363636, #e0e0e0);
+  background: light-dark(#f6f6f6, #262626);
+  border: solid 1px light-dark(#e0e0e0, #363636);
   border-radius: 20px;
   color: var(--tx2);
   font-weight: 700;
@@ -24073,10 +24073,10 @@ body:not(.setting-item-title-icon-remove):not(.is-phone)
 .style-settings-heading:not([data-level="0"]) + .style-settings-container {
   background-color: color-mix(
     in srgb,
-    light-dark(#242424, #fafafa) 70%,
+    light-dark(#fafafa, #242424) 70%,
     transparent
   );
-  border: 1px solid light-dark(#363636, #e0e0e0);
+  border: 1px solid light-dark(#e0e0e0, #363636);
   border-radius: 16px;
   overflow-x: hidden;
   padding: 8px;
@@ -24131,7 +24131,7 @@ body:not(.setting-item-title-icon-remove):not(.is-phone)
 
 .workspace-leaf .view-header {
   background: #000;
-  border: solid 1px light-dark(#363636, #e0e0e0);
+  border: solid 1px light-dark(#e0e0e0, #363636);
   border-radius: 16px;
   box-sizing: border-box;
   height: 46px;
@@ -24140,7 +24140,7 @@ body:not(.setting-item-title-icon-remove):not(.is-phone)
 }
 
 .workspace .mod-root .workspace-tab-header.is-active {
-  border: solid 1px light-dark(#363636, #e0e0e0);
+  border: solid 1px light-dark(#e0e0e0, #363636);
   border-radius: 10px 10px 0px 0px;
   height: calc(100% + 6px);
   z-index: 10;
@@ -24148,7 +24148,7 @@ body:not(.setting-item-title-icon-remove):not(.is-phone)
 
 .mod-root .workspace-tab-header:not(.is-active.workspace-tab-header) {
   background-color: var(--inactive-tab-background);
-  border: solid 1px light-dark(#363636, #e0e0e0);
+  border: solid 1px light-dark(#e0e0e0, #363636);
   border-radius: 10px 10px 0px 0px;
   height: calc(100% + 6px);
   padding-bottom: 4px;
@@ -24156,17 +24156,17 @@ body:not(.setting-item-title-icon-remove):not(.is-phone)
 }
 
 .workspace-tabs.mod-stacked .workspace-tab-header-inner {
-  border: 1px solid light-dark(#666666, #ababab);
+  border: 1px solid light-dark(#ababab, #666666);
   border-radius: 1000px;
 }
 
 .mod-left-split .workspace-tab-header:hover {
-  border: 1px solid light-dark(#555555, #bdbdbd);
+  border: 1px solid light-dark(#bdbdbd, #555555);
   border-radius: 10px;
 }
 
 .mod-right-split .workspace-tab-header:hover {
-  border: 1px solid light-dark(#555555, #bdbdbd);
+  border: 1px solid light-dark(#bdbdbd, #555555);
   border-radius: 10px;
 }
 

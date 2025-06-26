@@ -931,37 +931,37 @@
 }
 
 :root {
-  --background-secondary-alt: light-dark(#383838, #242424);
+  --background-secondary-alt: light-dark(#242424, #383838);
   --color-accent: light-dark(hsl(46deg, 95%, 65%), hsl(46deg, 95%, 65%));
   --color-accent-1: light-dark(
-    hsl(46deg, 95%, 61.2%),
-    hsl(calc(46deg - 1), 95.95%, 69.875%)
+    hsl(calc(46deg - 1), 95.95%, 69.875%),
+    hsl(46deg, 95%, 61.2%)
   );
   --color-accent-2: light-dark(
-    hsl(46deg, 95%, 68.8%),
-    hsl(calc(46deg - 3), 96.9%, 74.75%)
+    hsl(calc(46deg - 3), 96.9%, 74.75%),
+    hsl(46deg, 95%, 68.8%)
   );
   --color-accent-hsl: light-dark(46deg, 95%, 65%, 46deg, 95%, 65%);
-  --color-base-00: light-dark(#202020, #ffffff);
-  --color-base-05: light-dark(#242424, #fcfcfc);
-  --color-base-10: light-dark(#282828, #fafafa);
-  --color-base-100: light-dark(#ffffff, #222222);
-  --color-base-20: light-dark(#303030, #f6f6f6);
-  --color-base-25: light-dark(#383838, #e3e3e3);
-  --color-base-30: light-dark(#404040, #e0e0e0);
-  --color-base-35: light-dark(#484848, #d4d4d4);
-  --color-base-40: light-dark(#505050, #bdbdbd);
-  --color-base-50: light-dark(#707070, #ababab);
-  --color-base-60: light-dark(#909090, #707070);
-  --color-base-70: light-dark(#a0a0a0, #5c5c5c);
-  --color-blue: light-dark(#5352ed, #086ddd);
-  --color-cyan: light-dark(#70a1ff, #00bfbc);
-  --color-green: light-dark(#7bed9f, #08b94e);
-  --color-orange: light-dark(#ff7f50, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#ff6b81, #e93147);
-  --color-yellow: light-dark(hsl(46deg, 95%, 65%), #e0ac00);
+  --color-base-00: light-dark(#ffffff, #202020);
+  --color-base-05: light-dark(#fcfcfc, #242424);
+  --color-base-10: light-dark(#fafafa, #282828);
+  --color-base-100: light-dark(#222222, #ffffff);
+  --color-base-20: light-dark(#f6f6f6, #303030);
+  --color-base-25: light-dark(#e3e3e3, #383838);
+  --color-base-30: light-dark(#e0e0e0, #404040);
+  --color-base-35: light-dark(#d4d4d4, #484848);
+  --color-base-40: light-dark(#bdbdbd, #505050);
+  --color-base-50: light-dark(#ababab, #707070);
+  --color-base-60: light-dark(#707070, #909090);
+  --color-base-70: light-dark(#5c5c5c, #a0a0a0);
+  --color-blue: light-dark(#086ddd, #5352ed);
+  --color-cyan: light-dark(#00bfbc, #70a1ff);
+  --color-green: light-dark(#08b94e, #7bed9f);
+  --color-orange: light-dark(#ec7500, #ff7f50);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #ff6b81);
+  --color-yellow: light-dark(#e0ac00, hsl(46deg, 95%, 65%));
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
   --page-border: 9px solid transparent;
@@ -1611,7 +1611,7 @@ body {
   --background-primary: #000;
   --background-primary-alt: #111;
   --background-secondary: #1e1e1e;
-  --background-secondary-alt: light-dark(#383838, #242424);
+  --background-secondary-alt: light-dark(#242424, #383838);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -1722,34 +1722,34 @@ body {
   --collapse-icon-color-collapsed: hsl(46deg, 95%, 61.2%);
   --color-accent: light-dark(hsl(46deg, 95%, 65%), hsl(46deg, 95%, 65%));
   --color-accent-1: light-dark(
-    hsl(46deg, 95%, 61.2%),
-    hsl(calc(46deg - 1), 95.95%, 69.875%)
+    hsl(calc(46deg - 1), 95.95%, 69.875%),
+    hsl(46deg, 95%, 61.2%)
   );
   --color-accent-2: light-dark(
-    hsl(46deg, 95%, 68.8%),
-    hsl(calc(46deg - 3), 96.9%, 74.75%)
+    hsl(calc(46deg - 3), 96.9%, 74.75%),
+    hsl(46deg, 95%, 68.8%)
   );
   --color-accent-hsl: light-dark(46deg, 95%, 65%, 46deg, 95%, 65%);
-  --color-base-00: light-dark(#202020, #ffffff);
-  --color-base-05: light-dark(#242424, #fcfcfc);
-  --color-base-10: light-dark(#282828, #fafafa);
-  --color-base-100: light-dark(#ffffff, #222222);
-  --color-base-20: light-dark(#303030, #f6f6f6);
-  --color-base-25: light-dark(#383838, #e3e3e3);
-  --color-base-30: light-dark(#404040, #e0e0e0);
-  --color-base-35: light-dark(#484848, #d4d4d4);
-  --color-base-40: light-dark(#505050, #bdbdbd);
-  --color-base-50: light-dark(#707070, #ababab);
-  --color-base-60: light-dark(#909090, #707070);
-  --color-base-70: light-dark(#a0a0a0, #5c5c5c);
-  --color-blue: light-dark(#5352ed, #086ddd);
-  --color-cyan: light-dark(#70a1ff, #00bfbc);
-  --color-green: light-dark(#7bed9f, #08b94e);
-  --color-orange: light-dark(#ff7f50, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#ff6b81, #e93147);
-  --color-yellow: light-dark(hsl(46deg, 95%, 65%), #e0ac00);
+  --color-base-00: light-dark(#ffffff, #202020);
+  --color-base-05: light-dark(#fcfcfc, #242424);
+  --color-base-10: light-dark(#fafafa, #282828);
+  --color-base-100: light-dark(#222222, #ffffff);
+  --color-base-20: light-dark(#f6f6f6, #303030);
+  --color-base-25: light-dark(#e3e3e3, #383838);
+  --color-base-30: light-dark(#e0e0e0, #404040);
+  --color-base-35: light-dark(#d4d4d4, #484848);
+  --color-base-40: light-dark(#bdbdbd, #505050);
+  --color-base-50: light-dark(#ababab, #707070);
+  --color-base-60: light-dark(#707070, #909090);
+  --color-base-70: light-dark(#5c5c5c, #a0a0a0);
+  --color-blue: light-dark(#086ddd, #5352ed);
+  --color-cyan: light-dark(#00bfbc, #70a1ff);
+  --color-green: light-dark(#08b94e, #7bed9f);
+  --color-orange: light-dark(#ec7500, #ff7f50);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #ff6b81);
+  --color-yellow: light-dark(#e0ac00, hsl(46deg, 95%, 65%));
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -7650,8 +7650,8 @@ button.mod-destructive {
 
 .card {
   background-color: light-dark(
-    light-dark(#383838, #e3e3e3),
-    light-dark(#242424, #fcfcfc)
+    light-dark(#fcfcfc, #242424),
+    light-dark(#e3e3e3, #383838)
   );
   border: 1px solid transparent;
   border-radius: 4px;
@@ -9357,8 +9357,8 @@ select.mod-hidden {
   -webkit-app-region: no-drag;
   backdrop-filter: none;
   background: light-dark(
-    light-dark(#383838, #e3e3e3),
-    light-dark(#242424, #fcfcfc)
+    light-dark(#fcfcfc, #242424),
+    light-dark(#e3e3e3, #383838)
   );
   background-color: #1e1e1e;
   border: none;
@@ -10064,8 +10064,8 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
   background-color: light-dark(
-    light-dark(#383838, #e3e3e3),
-    light-dark(#242424, #fcfcfc)
+    light-dark(#fcfcfc, #242424),
+    light-dark(#e3e3e3, #383838)
   );
   cursor: default;
   text-align: center;
@@ -11186,25 +11186,25 @@ kbd {
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
   background-color: light-dark(
-    light-dark(#383838, #e3e3e3),
-    light-dark(#242424, #fcfcfc)
+    light-dark(#fcfcfc, #242424),
+    light-dark(#e3e3e3, #383838)
   );
-  filter: drop-shadow(0px 0px 1px light-dark(#909090, #707070))
+  filter: drop-shadow(0px 0px 1px light-dark(#707070, #909090))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
   background-color: light-dark(
-    light-dark(#383838, #e3e3e3),
-    light-dark(#242424, #fcfcfc)
+    light-dark(#fcfcfc, #242424),
+    light-dark(#e3e3e3, #383838)
   );
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
   background-color: light-dark(
-    light-dark(#383838, #e3e3e3),
-    light-dark(#242424, #fcfcfc)
+    light-dark(#fcfcfc, #242424),
+    light-dark(#e3e3e3, #383838)
   );
 }
 
@@ -20222,12 +20222,12 @@ body.is-mobile .canvas-node-resizer {
 
 .canvas-color-picker-item.canvas-color-picker-custom:not(.is-active) {
   background: conic-gradient(
-    light-dark(#ff6b81, #e93147),
-    light-dark(hsl(46deg, 95%, 65%), #e0ac00),
-    light-dark(#7bed9f, #08b94e),
-    light-dark(#5352ed, #086ddd),
-    light-dark(#a882ff, #7852ee),
-    light-dark(#ff6b81, #e93147)
+    light-dark(#e93147, #ff6b81),
+    light-dark(#e0ac00, hsl(46deg, 95%, 65%)),
+    light-dark(#08b94e, #7bed9f),
+    light-dark(#086ddd, #5352ed),
+    light-dark(#7852ee, #a882ff),
+    light-dark(#e93147, #ff6b81)
   );
 }
 

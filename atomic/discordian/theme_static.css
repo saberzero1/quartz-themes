@@ -931,31 +931,31 @@
 }
 
 :root {
-  --background-secondary-alt: light-dark(#363636, #212121);
+  --background-secondary-alt: light-dark(#212121, #363636);
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --default-font: Catamaran, Helvetica Neue, Helvetica, Arial, sans-serif;
   --discord-blue: #7288da;
   --discord-blue-hover: #687cc4;
@@ -1637,7 +1637,7 @@ body {
   --background-primary: #000;
   --background-primary-alt: #111;
   --background-secondary: #1e1e1e;
-  --background-secondary-alt: light-dark(#363636, #212121);
+  --background-secondary-alt: light-dark(#212121, #363636);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -1747,29 +1747,29 @@ body {
   --collapse-icon-color: #9c9c9c;
   --collapse-icon-color-collapsed: #b088e7;
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -4608,8 +4608,8 @@ body:not(.show-ribbon) .workspace-ribbon {
 
 .workspace-ribbon.mod-left.is-collapsed {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   border-right-color: #00000026;
   transition: background-color 250ms 95ms ease-in-out;
@@ -4625,8 +4625,8 @@ body:not(.show-ribbon) .workspace-ribbon {
 
 .workspace-ribbon.is-collapsed {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
 }
 
@@ -5457,8 +5457,8 @@ input {
   align-self: flex-end;
   background-color: #ffffff26;
   border-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   border-radius: 4px;
   display: flex;
@@ -6080,8 +6080,8 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
 
 .status-bar {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   border-color: #00000026;
   border-radius: 8px 0 0 0;
@@ -7758,8 +7758,8 @@ button {
   align-items: center;
   border: 0;
   border-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   border-radius: 5px;
   color: #fb464c;
@@ -7904,8 +7904,8 @@ button.mod-destructive {
 
 .card {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   border: 1px solid transparent;
   border-radius: 4px;
@@ -8328,8 +8328,8 @@ select {
     100%;
   border: 1px solid #20222580;
   border-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   border-radius: 6px;
   box-shadow: none;
@@ -8965,8 +8965,8 @@ input[type="text"] {
   background-color: #212326;
   border: 1px solid transparent;
   border-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   border-radius: 4px;
   color: #8d9196;
@@ -8989,8 +8989,8 @@ input[type="search"] {
   background-color: #212326;
   border: 1px solid transparent;
   border-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   border-radius: 4px;
   color: #8d9196;
@@ -9013,8 +9013,8 @@ input[type="email"] {
   background-color: #212326;
   border: 1px solid transparent;
   border-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   border-radius: 4px;
   color: #8d9196;
@@ -9037,8 +9037,8 @@ input[type="password"] {
   background-color: #212326;
   border: 1px solid transparent;
   border-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   border-radius: 4px;
   color: #8d9196;
@@ -9061,8 +9061,8 @@ input[type="number"] {
   background-color: #212326;
   border: 1px solid transparent;
   border-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   border-radius: 4px;
   color: #8d9196;
@@ -10448,8 +10448,8 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   cursor: default;
   text-align: center;
@@ -11678,25 +11678,25 @@ kbd {
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
-  filter: drop-shadow(0px 0px 1px light-dark(#999999, #707070))
+  filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
 }
 
@@ -17878,8 +17878,8 @@ em {
 .nav-file-tag {
   align-self: center;
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   border-radius: 4px;
   font-size: 9px;
@@ -21252,12 +21252,12 @@ body.is-mobile .canvas-node-resizer {
 
 .canvas-color-picker-item.canvas-color-picker-custom:not(.is-active) {
   background: conic-gradient(
-    light-dark(#fb464c, #e93147),
-    light-dark(#e0de71, #e0ac00),
-    light-dark(#44cf6e, #08b94e),
-    light-dark(#027aff, #086ddd),
-    light-dark(#a882ff, #7852ee),
-    light-dark(#fb464c, #e93147)
+    light-dark(#e93147, #fb464c),
+    light-dark(#e0ac00, #e0de71),
+    light-dark(#08b94e, #44cf6e),
+    light-dark(#086ddd, #027aff),
+    light-dark(#7852ee, #a882ff),
+    light-dark(#e93147, #fb464c)
   );
 }
 
@@ -24741,8 +24741,8 @@ body.theme-dark:not(.discordian-theme) .modal-container {
 
 .splash-brand-name {
   border-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   font-family:
     Catamaran,
@@ -24755,8 +24755,8 @@ body.theme-dark:not(.discordian-theme) .modal-container {
 
 .suggestion-hotkey {
   border-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   font-family:
     Catamaran,
@@ -25414,8 +25414,8 @@ div.popover.hover-popover .markdown-preview-view h6 {
   background-color: #36393f;
   border: 0 solid transparent;
   border-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   border-radius: 0;
 }
@@ -25484,8 +25484,8 @@ div.popover.hover-popover .markdown-preview-view h6 {
 
 .workspace-ribbon.mod-right.is-collapsed {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
 }
 
@@ -25538,10 +25538,10 @@ div.popover.hover-popover .markdown-preview-view h6 {
 
 .side-dock-panels-container {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
-  color: light-dark(light-dark(#363636, #e0e0e0), light-dark(#212121, #fcfcfc));
+  color: light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
   font-size: 13px;
 }
 
@@ -25723,8 +25723,8 @@ body:not(.is-grabbing) .nav-file-title.is-active {
 
 .search-result-file-title .pane-list-item-ending-flair {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   border-radius: 3px;
   font-size: 12px;
@@ -26484,8 +26484,8 @@ pre.frontmatter[class*="language-"] {
 
 .modal:not(.mod-settings) .modal-title {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -28183,32 +28183,32 @@ body.discordian-paragraph-focus .CodeMirror-activeline .CodeMirror-line {
 
 .discordian-original-markings .cm-s-obsidian div.HyperMD-codeblock-begin-bg {
   border-top: 1px solid
-    light-dark(light-dark(#363636, #e0e0e0), light-dark(#212121, #fcfcfc));
+    light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
 }
 
 .discordian-original-markings .cm-s-obsidian div.HyperMD-codeblock-bg {
   background-color: #2f3137;
   border-left: 1px solid
-    light-dark(light-dark(#363636, #e0e0e0), light-dark(#212121, #fcfcfc));
+    light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
   border-right: 1px solid
-    light-dark(light-dark(#363636, #e0e0e0), light-dark(#212121, #fcfcfc));
+    light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
 }
 
 .discordian-original-markings .cm-s-obsidian div.HyperMD-codeblock-end-bg {
   border-bottom: 1px solid
-    light-dark(light-dark(#363636, #e0e0e0), light-dark(#212121, #fcfcfc));
+    light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
 }
 
 .discordian-original-markings.theme-dark :not(pre) > code[class*="language-"] {
   background-color: #2f3137;
   border: 1px solid
-    light-dark(light-dark(#363636, #e0e0e0), light-dark(#212121, #fcfcfc));
+    light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
 }
 
 .discordian-original-markings.theme-dark pre[class*="language-"] {
   background-color: #2f3137;
   border: 1px solid
-    light-dark(light-dark(#363636, #e0e0e0), light-dark(#212121, #fcfcfc));
+    light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
 }
 
 body.discordian-dark-enhance:not(.plugin-sliding-panes):not(

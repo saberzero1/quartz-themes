@@ -1,60 +1,60 @@
 :root {
-  --background-secondary-alt: light-dark(#000000, #212121);
-  --blockquote-background-color: light-dark(#1121019c, #71974b42);
+  --background-secondary-alt: light-dark(#212121, #000000);
+  --blockquote-background-color: light-dark(#71974b42, #1121019c);
   --bold-color: light-dark(#41b4b4, #41b4b4);
-  --code-background: light-dark(#3f542946, #070e00);
+  --code-background: light-dark(#070e00, #3f542946);
   --code-keyword: light-dark(#c678dd, #c678dd);
   --code-normal: light-dark(#a8c090, #a8c090);
   --code-property: light-dark(#9d527c, #9d527c);
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
-  --h1-color: light-dark(#2cce10, #128a12);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
+  --h1-color: light-dark(#128a12, #2cce10);
   --h2-color: light-dark(#be7070, #be7070);
   --h3-color: light-dark(#3d7676, #3d7676);
   --h4-color: light-dark(#a9ba9d, #a9ba9d);
   --h5-color: light-dark(#9dc183, #9dc183);
   --h6-color: light-dark(#486e02, #486e02);
-  --icon-color: light-dark(#529d52, #274b27);
-  --icon-color-focused: light-dark(#39ff14, #128a12);
-  --icon-color-hover: light-dark(#39ff14, #128a12);
-  --indentation-guide-color: light-dark(#39ff14, #529d52);
-  --indentation-guide-color-active: light-dark(#39ff14, #529d52);
-  --inline-title-color: light-dark(#2cce10, #529d52);
-  --interactive-accent: light-dark(#529d5273, #529d52);
-  --interactive-accent-hover: light-dark(#37ff148c, #2e7e2e);
-  --italic-color: light-dark(#d8e43a, #7c8508);
+  --icon-color: light-dark(#274b27, #529d52);
+  --icon-color-focused: light-dark(#128a12, #39ff14);
+  --icon-color-hover: light-dark(#128a12, #39ff14);
+  --indentation-guide-color: light-dark(#529d52, #39ff14);
+  --indentation-guide-color-active: light-dark(#529d52, #39ff14);
+  --inline-title-color: light-dark(#529d52, #2cce10);
+  --interactive-accent: light-dark(#529d52, #529d5273);
+  --interactive-accent-hover: light-dark(#2e7e2e, #37ff148c);
+  --italic-color: light-dark(#7c8508, #d8e43a);
   --keyboard-height: 0px;
-  --link-color: light-dark(#63be63, #529d52);
-  --link-color-hover: light-dark(#39ff14, #274b27);
+  --link-color: light-dark(#529d52, #63be63);
+  --link-color-hover: light-dark(#274b27, #39ff14);
   --link-external-color: light-dark(#529d52, #529d52);
   --loading-icon-delay: 400ms;
   --nav-collapse-icon-color: light-dark(#529d52, #529d52);
   --nav-file-tag: light-dark(#f4ec9e, #f4ec9e);
   --nav-indentation-guide-color: light-dark(#529d52, #529d52);
-  --nav-item-color-active: light-dark(#39ff14, #128a12);
-  --nav-item-color-hover: light-dark(#39ff14, #128a12);
+  --nav-item-color-active: light-dark(#128a12, #39ff14);
+  --nav-item-color-hover: light-dark(#128a12, #39ff14);
   --nav-item-size: light-dark(16px, 16px);
   --page-border: 9px solid transparent;
   --page-margin: 1px auto -8px;
@@ -63,12 +63,12 @@
   --safe-area-inset-left: env(safe-area-inset-left);
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
-  --scrollbar-active-thumb-bg: light-dark(#39ff14, #529d52);
+  --scrollbar-active-thumb-bg: light-dark(#529d52, #39ff14);
   --scrollbar-thumb-bg: light-dark(#529d52, #529d52);
   --spreadHorizontalWrapped-margin-LR: -3.5px;
   --table-header-background: light-dark(#2a2a2a4c, #2a2a2a4c);
-  --text-accent: light-dark(#63be63, #529d52);
-  --text-highlight-bg: light-dark(#67c26769, #529d52b1);
+  --text-accent: light-dark(#529d52, #63be63);
+  --text-highlight-bg: light-dark(#529d52b1, #67c26769);
   --text-selection: light-dark(#55a05550, #55a05550);
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
@@ -103,7 +103,7 @@ body {
   --background-primary: #000;
   --background-primary-alt: #111;
   --background-secondary: #1e1e1e;
-  --background-secondary-alt: light-dark(#000000, #212121);
+  --background-secondary-alt: light-dark(#212121, #000000);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -136,7 +136,7 @@ body {
   --bases-table-row-height: 30px;
   --bases-table-text-size: 0.875em;
   --bases-table-white-space: nowrap;
-  --blockquote-background-color: light-dark(#1121019c, #71974b42);
+  --blockquote-background-color: light-dark(#71974b42, #1121019c);
   --blockquote-border-color: #529d52;
   --blockquote-border-thickness: 2px;
   --blockquote-color: inherit;
@@ -193,7 +193,7 @@ body {
   --checklist-done-color: #b3b3b3;
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: 4px;
-  --code-background: light-dark(#3f542946, #070e00);
+  --code-background: light-dark(#070e00, #3f542946);
   --code-border-color: transparent;
   --code-border-width: 0px;
   --code-comment: #666666;
@@ -213,29 +213,29 @@ body {
   --collapse-icon-color: #666666;
   --collapse-icon-color-collapsed: #63be63;
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -351,7 +351,7 @@ body {
   --graph-node-tag: #44cf6e;
   --graph-node-unresolved: #666666;
   --graph-text: #dadada;
-  --h1-color: light-dark(#2cce10, #128a12);
+  --h1-color: light-dark(#128a12, #2cce10);
   --h1-font: inherit;
   --h1-line-height: 1.2;
   --h1-size: 1.802em;
@@ -398,10 +398,10 @@ body {
   --heading-spacing: 0rem;
   --hr-color: transparent;
   --hr-thickness: 2px;
-  --icon-color: light-dark(#529d52, #274b27);
+  --icon-color: light-dark(#274b27, #529d52);
   --icon-color-active: #63be63;
-  --icon-color-focused: light-dark(#39ff14, #128a12);
-  --icon-color-hover: light-dark(#39ff14, #128a12);
+  --icon-color-focused: light-dark(#128a12, #39ff14);
+  --icon-color-hover: light-dark(#128a12, #39ff14);
   --icon-l: 18px;
   --icon-l-stroke-width: 1.75px;
   --icon-m: 18px;
@@ -419,14 +419,14 @@ body {
   --icon-xs-stroke-width: 2px;
   --indent-size: 4;
   --indent-unit: 0.5625em;
-  --indentation-guide-color: light-dark(#39ff14, #529d52);
-  --indentation-guide-color-active: light-dark(#39ff14, #529d52);
+  --indentation-guide-color: light-dark(#529d52, #39ff14);
+  --indentation-guide-color-active: light-dark(#529d52, #39ff14);
   --indentation-guide-editing-indent: 0.85em;
   --indentation-guide-reading-indent: -0.85em;
   --indentation-guide-source-indent: 0.25em;
   --indentation-guide-width: 1px;
   --indentation-guide-width-active: 1px;
-  --inline-title-color: light-dark(#2cce10, #529d52);
+  --inline-title-color: light-dark(#529d52, #2cce10);
   --inline-title-font: inherit;
   --inline-title-line-height: 1.2;
   --inline-title-margin-bottom: 0.5em;
@@ -440,12 +440,12 @@ body {
   --input-height: 30px;
   --input-placeholder-color: #666666;
   --input-radius: 5px;
-  --interactive-accent: light-dark(#529d5273, #529d52);
-  --interactive-accent-hover: light-dark(#37ff148c, #2e7e2e);
+  --interactive-accent: light-dark(#529d52, #529d5273);
+  --interactive-accent-hover: light-dark(#2e7e2e, #37ff148c);
   --interactive-accent-hsl: 258, 88%, 66%;
   --interactive-hover: #111;
   --interactive-normal: #000;
-  --italic-color: light-dark(#d8e43a, #7c8508);
+  --italic-color: light-dark(#7c8508, #d8e43a);
   --italic-weight: inherit;
   --layer-cover: 5;
   --layer-dragged-item: 80;
@@ -459,8 +459,8 @@ body {
   --layer-tooltip: 70;
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;
-  --link-color: light-dark(#63be63, #529d52);
-  --link-color-hover: light-dark(#39ff14, #274b27);
+  --link-color: light-dark(#529d52, #63be63);
+  --link-color-hover: light-dark(#274b27, #39ff14);
   --link-decoration: underline;
   --link-decoration-hover: underline;
   --link-decoration-thickness: auto;
@@ -570,9 +570,9 @@ body {
   --nav-item-children-margin-start: 12px;
   --nav-item-children-padding-start: 4px;
   --nav-item-color: #b3b3b3;
-  --nav-item-color-active: light-dark(#39ff14, #128a12);
+  --nav-item-color-active: light-dark(#128a12, #39ff14);
   --nav-item-color-highlighted: #63be63;
-  --nav-item-color-hover: light-dark(#39ff14, #128a12);
+  --nav-item-color-hover: light-dark(#128a12, #39ff14);
   --nav-item-color-selected: #dadada;
   --nav-item-padding: 4px 8px 4px 24px;
   --nav-item-parent-padding: 6px 8px 6px 24px;
@@ -626,7 +626,7 @@ body {
   --ribbon-background-collapsed: #000000;
   --ribbon-padding: 8px 4px 12px;
   --ribbon-width: 44px;
-  --scrollbar-active-thumb-bg: light-dark(#39ff14, #529d52);
+  --scrollbar-active-thumb-bg: light-dark(#529d52, #39ff14);
   --scrollbar-bg: #ffffff0d;
   --scrollbar-thumb-bg: light-dark(#529d52, #529d52);
   --search-clear-button-color: #b3b3b3;
@@ -764,11 +764,11 @@ body {
   --tag-radius: 2em;
   --tag-size: 0.875em;
   --tag-weight: inherit;
-  --text-accent: light-dark(#63be63, #529d52);
+  --text-accent: light-dark(#529d52, #63be63);
   --text-accent-hover: #c5b6fc;
   --text-error: #fb464c;
   --text-faint: #666666;
-  --text-highlight-bg: light-dark(#67c26769, #529d52b1);
+  --text-highlight-bg: light-dark(#529d52b1, #67c26769);
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: #b3b3b3;
   --text-normal: #dadada;
@@ -865,7 +865,7 @@ h6 a {
 h1 {
   --font-weight: 700;
   border-bottom: 2px solid #128a12;
-  color: light-dark(#2cce10, #128a12);
+  color: light-dark(#128a12, #2cce10);
   content: "";
   display: block;
   font-family: inherit;
@@ -959,7 +959,7 @@ h6 {
 }
 
 .markdown-rendered pre {
-  background-color: light-dark(#3f542946, #070e00);
+  background-color: light-dark(#070e00, #3f542946);
   border: 0px solid transparent;
   border-radius: 4px;
   min-height: 38px;
@@ -971,7 +971,7 @@ h6 {
 
 .markdown-rendered code {
   -webkit-box-decoration-break: clone;
-  background-color: light-dark(#3f542946, #070e00);
+  background-color: light-dark(#070e00, #3f542946);
   border: 0px solid transparent;
   border-radius: 4px;
   color: light-dark(#a8c090, #a8c090);
@@ -1288,7 +1288,7 @@ input.prompt-input {
 }
 
 .markdown-rendered mark {
-  background-color: light-dark(#67c26769, #529d52b1);
+  background-color: light-dark(#529d52b1, #67c26769);
   color: #dadada;
 }
 
@@ -1341,7 +1341,7 @@ input[type="search"] {
 
 .nav-file-icon {
   align-items: center;
-  color: light-dark(#529d52, #274b27);
+  color: light-dark(#274b27, #529d52);
   display: inline-flex;
   margin-inline-end: 6px;
   opacity: 1;
@@ -1374,13 +1374,13 @@ input[type="search"] {
 
 .nav-file-title.is-active {
   background-color: #ffffff26;
-  color: light-dark(#39ff14, #128a12);
+  color: light-dark(#128a12, #39ff14);
   font-weight: inherit;
 }
 
 .nav-folder-title.is-active {
   background-color: #ffffff26;
-  color: light-dark(#39ff14, #128a12);
+  color: light-dark(#128a12, #39ff14);
   font-weight: inherit;
 }
 
@@ -1427,13 +1427,13 @@ input[type="search"] {
 
 .tree-item-self.is-clickable.mobile-tap {
   background-color: #ffffff26;
-  color: light-dark(#39ff14, #128a12);
+  color: light-dark(#128a12, #39ff14);
   font-weight: inherit;
 }
 
 .tree-item-self.is-active {
   background-color: #ffffff26;
-  color: light-dark(#39ff14, #128a12);
+  color: light-dark(#128a12, #39ff14);
   font-weight: inherit;
 }
 
@@ -1443,13 +1443,13 @@ input[type="search"] {
 }
 
 .tree-item-self.is-being-dragged {
-  background-color: light-dark(#529d5273, #529d52);
+  background-color: light-dark(#529d52, #529d5273);
   color: #ffffff;
 }
 
 .tree-item-self .tree-item-icon {
   align-items: center;
-  color: light-dark(#529d52, #274b27);
+  color: light-dark(#274b27, #529d52);
   display: flex;
   flex: 0 0 auto;
   justify-content: center;
@@ -1507,7 +1507,7 @@ input[type="search"] {
 }
 
 kbd {
-  background-color: light-dark(#3f542946, #070e00);
+  background-color: light-dark(#070e00, #3f542946);
   border-radius: 4px;
   color: light-dark(#a8c090, #a8c090);
   font-family:
@@ -1529,7 +1529,7 @@ svg.svg-icon {
 }
 
 .clickable-icon.mod-filled svg {
-  fill: light-dark(#529d52, #274b27);
+  fill: light-dark(#274b27, #529d52);
 }
 
 .setting-item-control .clickable-icon {
@@ -1561,7 +1561,7 @@ svg.svg-icon {
   align-items: center;
   background-color: transparent;
   border-radius: 4px;
-  color: light-dark(#529d52, #274b27);
+  color: light-dark(#274b27, #529d52);
   cursor: pointer;
   display: flex;
   height: auto;
@@ -1665,11 +1665,11 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-highlight {
-  color: light-dark(#529d5273, #529d52);
+  color: light-dark(#529d52, #529d5273);
 }
 
 .graph-view.color-line-highlight {
-  color: light-dark(#529d5273, #529d52);
+  color: light-dark(#529d52, #529d5273);
 }
 
 .graph-controls {

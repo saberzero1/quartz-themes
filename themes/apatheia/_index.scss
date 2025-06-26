@@ -189,8 +189,8 @@ html[saved-theme="dark"] {
 
 :root {
   --color-accent-2: light-dark(
-    hsl(calc(211.36364deg - 5), 105%, 117.87059%),
-    hsl(calc(211.36364deg - 3), 102%, 105.07843%)
+    hsl(calc(211.36364deg - 3), 102%, 105.07843%),
+    hsl(calc(211.36364deg - 5), 105%, 117.87059%)
   );
   --color-accent-hsl: light-dark(
     211.3636363636deg,
@@ -200,17 +200,17 @@ html[saved-theme="dark"] {
     100%,
     91.3725490196%
   );
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --graph-line: light-dark(
     hsl(249.2307692308deg, 33.3333333333%, 22.6470588235%),
     hsl(249.2307692308deg, 33.3333333333%, 22.6470588235%)
@@ -273,8 +273,8 @@ body {
   --collapse-icon-color: hsl(249.2307692308deg, 33.3333333333%, 50%);
   --collapse-icon-color-collapsed: hsl(211.3636363636deg, 100%, 80%);
   --color-accent-2: light-dark(
-    hsl(calc(211.36364deg - 5), 105%, 117.87059%),
-    hsl(calc(211.36364deg - 3), 102%, 105.07843%)
+    hsl(calc(211.36364deg - 3), 102%, 105.07843%),
+    hsl(calc(211.36364deg - 5), 105%, 117.87059%)
   );
   --color-accent-hsl: light-dark(
     211.3636363636deg,
@@ -284,17 +284,17 @@ body {
     100%,
     91.3725490196%
   );
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -526,13 +526,13 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: light-dark(#262626, #f6f6f6);
+  background-color: light-dark(#f6f6f6, #262626);
   section,
   .page > #quartz-body .sidebar {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: light-dark(#262626, #f6f6f6);
+      background-color: light-dark(#f6f6f6, #262626);
     }
   }
   .highlight,
@@ -990,7 +990,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: light-dark(#262626, #f6f6f6);
+        background-color: light-dark(#f6f6f6, #262626);
       }
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
@@ -1178,8 +1178,8 @@ body {
     & > .search-button {
       -webkit-app-region: no-drag;
       background: light-dark(
-        light-dark(#2a2a2a, #e3e3e3),
-        light-dark(#2a2a2a, #e3e3e3)
+        light-dark(#e3e3e3, #2a2a2a),
+        light-dark(#e3e3e3, #2a2a2a)
       );
       border: 1px solid transparent;
       border-radius: 5px;

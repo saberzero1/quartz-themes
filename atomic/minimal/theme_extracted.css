@@ -5,12 +5,12 @@
     hsl(var(--accent-h), var(--accent-s), var(--accent-l))
   );
   --ax2: light-dark(
-    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 8%)),
-    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 8%))
+    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 8%)),
+    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 8%))
   );
   --ax3: light-dark(
-    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 5%)),
-    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 6%))
+    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 6%)),
+    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 5%))
   );
   --background-modifier-accent: light-dark(var(--ax3), var(--ax3));
   --background-modifier-active-hover: light-dark(var(--bg3), var(--bg3));
@@ -31,13 +31,13 @@
   --background-primary-alt: light-dark(var(--bg2), var(--bg2));
   --background-secondary: light-dark(var(--bg2), var(--bg2));
   --background-secondary-alt: light-dark(
-    var(--color-base-30),
-    var(--color-base-05)
+    var(--color-base-05),
+    var(--color-base-30)
   );
   --background-table-rows: light-dark(var(--bg2), var(--bg2));
   --bg2: light-dark(
-    hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 2%)),
-    hsl(var(--base-h), var(--base-s), var(--base-l))
+    hsl(var(--base-h), var(--base-s), var(--base-l)),
+    hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 2%))
   );
   --checkbox-color: light-dark(var(--ax3), var(--ax3));
   --code-normal: light-dark(var(--tx1), var(--tx1));
@@ -47,26 +47,26 @@
   );
   --color-accent-1: light-dark(
     hsl(
-      calc(var(--accent-h) - 3),
-      calc(var(--accent-s) * 1.02),
-      calc(var(--accent-l) * 1.15)
-    ),
-    hsl(
       calc(var(--accent-h) - 1),
       calc(var(--accent-s) * 1.01),
       calc(var(--accent-l) * 1.075)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
     )
   );
   --color-accent-2: light-dark(
     hsl(
-      calc(var(--accent-h) - 5),
-      calc(var(--accent-s) * 1.05),
-      calc(var(--accent-l) * 1.29)
-    ),
-    hsl(
       calc(var(--accent-h) - 3),
       calc(var(--accent-s) * 1.02),
       calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
     )
   );
   --color-accent-hsl: light-dark(
@@ -77,26 +77,26 @@
     var(--accent-s),
     var(--accent-l)
   );
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --divider-color: light-dark(var(--ui1), var(--ui1));
   --focus-animation-duration: 0.1s;
   --frame-background-h: light-dark(var(--accent-h), var(--accent-h));
@@ -106,12 +106,12 @@
     hsl(
       var(--frame-background-h),
       calc(var(--frame-background-s) - 10%),
-      calc(var(--frame-background-l) + 25%)
+      calc(var(--frame-background-l) - 35%)
     ),
     hsl(
       var(--frame-background-h),
       calc(var(--frame-background-s) - 10%),
-      calc(var(--frame-background-l) - 35%)
+      calc(var(--frame-background-l) + 25%)
     )
   );
   --hider-ribbon-display: none;
@@ -124,9 +124,9 @@
   --interactive-accent: light-dark(var(--ax3), var(--ax3));
   --interactive-accent-hover: light-dark(var(--ax1), var(--ax1));
   --interactive-hover: light-dark(var(--ui1), var(--ui1));
-  --interactive-normal: light-dark(var(--bg3), var(--bg1));
+  --interactive-normal: light-dark(var(--bg1), var(--bg3));
   --keyboard-height: 0px;
-  --leaflet-buttons: light-dark(var(--bg2), var(--bg1));
+  --leaflet-buttons: light-dark(var(--bg1), var(--bg2));
   --list-marker-color: light-dark(var(--tx3), var(--tx3));
   --loading-icon-delay: 400ms;
   --mobile-sidebar-background: light-dark(var(--bg1), var(--bg1));
@@ -176,32 +176,32 @@
   --titlebar-background-focused: light-dark(var(--bg2), var(--bg2));
   --titlebar-text-color-focused: light-dark(var(--tx1), var(--tx1));
   --tx1: light-dark(
-    hsl(var(--base-h), calc(var(--base-s) - 10%), calc(var(--base-l) + 67%)),
-    hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 90%))
+    hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 90%)),
+    hsl(var(--base-h), calc(var(--base-s) - 10%), calc(var(--base-l) + 67%))
   );
   --tx2: light-dark(
-    hsl(var(--base-h), calc(var(--base-s) - 20%), calc(var(--base-l) + 45%)),
-    hsl(var(--base-h), calc(var(--base-s) - 20%), calc(var(--base-l) - 50%))
+    hsl(var(--base-h), calc(var(--base-s) - 20%), calc(var(--base-l) - 50%)),
+    hsl(var(--base-h), calc(var(--base-s) - 20%), calc(var(--base-l) + 45%))
   );
   --tx3: light-dark(
-    hsl(var(--base-h), calc(var(--base-s) - 10%), calc(var(--base-l) + 20%)),
-    hsl(var(--base-h), calc(var(--base-s) - 10%), calc(var(--base-l) - 25%))
+    hsl(var(--base-h), calc(var(--base-s) - 10%), calc(var(--base-l) - 25%)),
+    hsl(var(--base-h), calc(var(--base-s) - 10%), calc(var(--base-l) + 20%))
   );
   --tx4: light-dark(
-    hsl(var(--base-h), calc(var(--base-s) - 10%), calc(var(--base-l) + 50%)),
-    hsl(var(--base-h), calc(var(--base-s) - 10%), calc(var(--base-l) - 60%))
+    hsl(var(--base-h), calc(var(--base-s) - 10%), calc(var(--base-l) - 60%)),
+    hsl(var(--base-h), calc(var(--base-s) - 10%), calc(var(--base-l) + 50%))
   );
   --ui1: light-dark(
-    hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 6%)),
-    hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 6%))
+    hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 6%)),
+    hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 6%))
   );
   --ui2: light-dark(
-    hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 12%)),
-    hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 12%))
+    hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 12%)),
+    hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 12%))
   );
   --ui3: light-dark(
-    hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 20%)),
-    hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 20%))
+    hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 20%)),
+    hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 20%))
   );
   --vault-profile-color: light-dark(var(--tx1), var(--tx1));
   --vault-profile-color-hover: light-dark(var(--tx1), var(--tx1));
@@ -229,12 +229,12 @@ body {
     hsl(var(--accent-h), var(--accent-s), var(--accent-l))
   );
   --ax2: light-dark(
-    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 8%)),
-    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 8%))
+    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 8%)),
+    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 8%))
   );
   --ax3: light-dark(
-    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 5%)),
-    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 6%))
+    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 6%)),
+    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 5%))
   );
   --background-modifier-accent: light-dark(var(--ax3), var(--ax3));
   --background-modifier-active-hover: light-dark(var(--bg3), var(--bg3));
@@ -260,8 +260,8 @@ body {
   --background-primary-alt: light-dark(var(--bg2), var(--bg2));
   --background-secondary: light-dark(var(--bg2), var(--bg2));
   --background-secondary-alt: light-dark(
-    var(--color-base-30),
-    var(--color-base-05)
+    var(--color-base-05),
+    var(--color-base-30)
   );
   --background-table-rows: light-dark(var(--bg2), var(--bg2));
   --base-h: 0;
@@ -300,8 +300,8 @@ body {
   --bases-table-text-size: calc(var(--font-adaptive-normal) * 0.875);
   --bases-table-white-space: nowrap;
   --bg2: light-dark(
-    hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 2%)),
-    hsl(var(--base-h), var(--base-s), var(--base-l))
+    hsl(var(--base-h), var(--base-s), var(--base-l)),
+    hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 2%))
   );
   --blockquote-background-color: transparent;
   --blockquote-border-color: var(--quote-opening-modifier);
@@ -416,26 +416,26 @@ body {
   );
   --color-accent-1: light-dark(
     hsl(
-      calc(var(--accent-h) - 3),
-      calc(var(--accent-s) * 1.02),
-      calc(var(--accent-l) * 1.15)
-    ),
-    hsl(
       calc(var(--accent-h) - 1),
       calc(var(--accent-s) * 1.01),
       calc(var(--accent-l) * 1.075)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
     )
   );
   --color-accent-2: light-dark(
     hsl(
-      calc(var(--accent-h) - 5),
-      calc(var(--accent-s) * 1.05),
-      calc(var(--accent-l) * 1.29)
-    ),
-    hsl(
       calc(var(--accent-h) - 3),
       calc(var(--accent-s) * 1.02),
       calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
     )
   );
   --color-accent-hsl: light-dark(
@@ -446,33 +446,33 @@ body {
     var(--accent-s),
     var(--accent-l)
   );
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
   --color-blue-rgb: 108, 153, 187;
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
   --color-cyan-rgb: 115, 187, 178;
-  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-green: light-dark(#08b94e, #44cf6e);
   --color-green-rgb: 168, 195, 115;
-  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-orange: light-dark(#ec7500, #e9973f);
   --color-orange-rgb: 213, 118, 63;
-  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-pink: light-dark(#d53984, #fa99cd);
   --color-pink-rgb: 176, 82, 121;
-  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-purple: light-dark(#7852ee, #a882ff);
   --color-purple-rgb: 158, 134, 200;
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-red: light-dark(#e93147, #fb464c);
   --color-red-rgb: 208, 66, 85;
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --color-yellow-rgb: 229, 181, 103;
   --container-chart-max-width: var(--max-width);
   --container-chart-width: var(--line-width);
@@ -621,12 +621,12 @@ body {
     hsl(
       var(--frame-background-h),
       calc(var(--frame-background-s) - 10%),
-      calc(var(--frame-background-l) + 25%)
+      calc(var(--frame-background-l) - 35%)
     ),
     hsl(
       var(--frame-background-h),
       calc(var(--frame-background-s) - 10%),
-      calc(var(--frame-background-l) - 35%)
+      calc(var(--frame-background-l) + 25%)
     )
   );
   --graph-controls-width: 240px;
@@ -749,7 +749,7 @@ body {
   --interactive-accent-hover: light-dark(var(--ax1), var(--ax1));
   --interactive-accent-hsl: var(--color-accent-hsl);
   --interactive-hover: light-dark(var(--ui1), var(--ui1));
-  --interactive-normal: light-dark(var(--bg3), var(--bg1));
+  --interactive-normal: light-dark(var(--bg1), var(--bg3));
   --italic-color: inherit;
   --italic-weight: inherit;
   --layer-cover: 5;
@@ -762,7 +762,7 @@ body {
   --layer-slides: 45;
   --layer-status-bar: 15;
   --layer-tooltip: 70;
-  --leaflet-buttons: light-dark(var(--bg2), var(--bg1));
+  --leaflet-buttons: light-dark(var(--bg1), var(--bg2));
   --line-height: 1.5;
   --line-height-normal: var(--line-height);
   --line-height-tight: 1.3;
@@ -1143,32 +1143,32 @@ body {
   --toggle-width: 40px;
   --top-left-padding-y: 0px;
   --tx1: light-dark(
-    hsl(var(--base-h), calc(var(--base-s) - 10%), calc(var(--base-l) + 67%)),
-    hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 90%))
+    hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 90%)),
+    hsl(var(--base-h), calc(var(--base-s) - 10%), calc(var(--base-l) + 67%))
   );
   --tx2: light-dark(
-    hsl(var(--base-h), calc(var(--base-s) - 20%), calc(var(--base-l) + 45%)),
-    hsl(var(--base-h), calc(var(--base-s) - 20%), calc(var(--base-l) - 50%))
+    hsl(var(--base-h), calc(var(--base-s) - 20%), calc(var(--base-l) - 50%)),
+    hsl(var(--base-h), calc(var(--base-s) - 20%), calc(var(--base-l) + 45%))
   );
   --tx3: light-dark(
-    hsl(var(--base-h), calc(var(--base-s) - 10%), calc(var(--base-l) + 20%)),
-    hsl(var(--base-h), calc(var(--base-s) - 10%), calc(var(--base-l) - 25%))
+    hsl(var(--base-h), calc(var(--base-s) - 10%), calc(var(--base-l) - 25%)),
+    hsl(var(--base-h), calc(var(--base-s) - 10%), calc(var(--base-l) + 20%))
   );
   --tx4: light-dark(
-    hsl(var(--base-h), calc(var(--base-s) - 10%), calc(var(--base-l) + 50%)),
-    hsl(var(--base-h), calc(var(--base-s) - 10%), calc(var(--base-l) - 60%))
+    hsl(var(--base-h), calc(var(--base-s) - 10%), calc(var(--base-l) - 60%)),
+    hsl(var(--base-h), calc(var(--base-s) - 10%), calc(var(--base-l) + 50%))
   );
   --ui1: light-dark(
-    hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 6%)),
-    hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 6%))
+    hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 6%)),
+    hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 6%))
   );
   --ui2: light-dark(
-    hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 12%)),
-    hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 12%))
+    hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 12%)),
+    hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 12%))
   );
   --ui3: light-dark(
-    hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 20%)),
-    hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 20%))
+    hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 20%)),
+    hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 20%))
   );
   --vault-profile-actions-display: flex;
   --vault-profile-color: light-dark(var(--tx1), var(--tx1));

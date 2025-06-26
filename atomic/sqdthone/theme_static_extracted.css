@@ -7,38 +7,38 @@
   --background-primary: light-dark(hsl(46, 56%, 91%), hsl(46, 56%, 91%));
   --background-primary-alt: light-dark(hsl(46, 42%, 88%), hsl(46, 42%, 88%));
   --background-secondary: light-dark(hsl(46, 42%, 88%), hsl(46, 42%, 88%));
-  --background-secondary-alt: light-dark(#363636, #212121);
+  --background-secondary-alt: light-dark(#212121, #363636);
   --color-accent: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-accent-1: light-dark(
-    hsl(255, 89.76%, 75.9%),
-    hsl(257, 88.88%, 70.95%)
+    hsl(257, 88.88%, 70.95%),
+    hsl(255, 89.76%, 75.9%)
   );
   --color-accent-2: light-dark(
-    hsl(253, 92.4%, 85.14%),
-    hsl(255, 89.76%, 75.9%)
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
   );
   --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-alternate: light-dark(hsl(331, 64%, 52%), hsl(331, 64%, 52%));
-  --color-base-0: light-dark(hsl(300, 6%, 10%), hsl(15, 20%, 96%));
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-1: light-dark(hsl(300, 6%, 14%), hsl(15, 20%, 92%));
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-2: light-dark(hsl(300, 6%, 18%), hsl(15, 20%, 88%));
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-3: light-dark(hsl(300, 6%, 22%), hsl(15, 20%, 84%));
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-4: light-dark(hsl(300, 6%, 26%), hsl(15, 20%, 80%));
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-5: light-dark(hsl(300, 6%, 30%), hsl(15, 20%, 76%));
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-black: light-dark(hsl(300, 6%, 22%), hsl(300, 6%, 18%));
-  --color-blue: light-dark(#027aff, #086ddd);
+  --color-base-0: light-dark(hsl(15, 20%, 96%), hsl(300, 6%, 10%));
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-1: light-dark(hsl(15, 20%, 92%), hsl(300, 6%, 14%));
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-2: light-dark(hsl(15, 20%, 88%), hsl(300, 6%, 18%));
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-3: light-dark(hsl(15, 20%, 84%), hsl(300, 6%, 22%));
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-4: light-dark(hsl(15, 20%, 80%), hsl(300, 6%, 26%));
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-5: light-dark(hsl(15, 20%, 76%), hsl(300, 6%, 30%));
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-black: light-dark(hsl(300, 6%, 18%), hsl(300, 6%, 22%));
+  --color-blue: light-dark(#086ddd, #027aff);
   --color-caution: light-dark(hsl(45, 100%, 35%), hsl(45, 100%, 35%));
   --color-checklist-empty: light-dark(hsl(1, 71%, 52%), hsl(1, 71%, 52%));
   --color-checklist-empty-border: light-dark(
@@ -62,8 +62,8 @@
   --color-code-value: light-dark(hsl(237, 43%, 60%), hsl(237, 43%, 60%));
   --color-confirmed: light-dark(hsl(68, 100%, 30%), hsl(68, 100%, 30%));
   --color-content: light-dark(hsl(175, 59%, 40%), hsl(175, 59%, 40%));
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
   --color-horizontal-rule: light-dark(hsl(331, 64%, 52%), hsl(331, 64%, 52%));
   --color-hovered: light-dark(hsl(237, 43%, 60%), hsl(237, 43%, 60%));
   --color-interactable: light-dark(hsl(205, 69%, 49%), hsl(205, 69%, 49%));
@@ -72,23 +72,23 @@
     hsl(331, 64%, 52%),
     hsl(331, 64%, 52%)
   );
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --color-selected: light-dark(hsl(18, 80%, 44%), hsl(18, 80%, 44%));
   --color-stop: light-dark(hsl(1, 71%, 52%), hsl(1, 71%, 52%));
   --color-tag: light-dark(hsl(45, 100%, 35%), hsl(45, 100%, 35%));
   --color-tag-hover: light-dark(hsl(45, 50%, 44%), hsl(45, 50%, 44%));
-  --color-teal: light-dark(hsl(160, 50%, 46%), hsl(160, 50%, 38%));
+  --color-teal: light-dark(hsl(160, 50%, 38%), hsl(160, 50%, 46%));
   --color-text-bold: light-dark(hsl(183, 40%, 60%), hsl(183, 40%, 60%));
-  --color-text-faint: light-dark(hsl(168, 50%, 54%), hsl(300, 6%, 30%));
-  --color-text-h1: light-dark(hsl(1, 71%, 52%), hsl(226, 40%, 44%));
-  --color-text-h2: light-dark(hsl(18, 80%, 44%), hsl(226, 40%, 48%));
-  --color-text-h3: light-dark(hsl(226, 40%, 44%), hsl(226, 40%, 52%));
-  --color-text-h4: light-dark(hsl(226, 40%, 48%), hsl(226, 40%, 56%));
-  --color-text-h5: light-dark(hsl(226, 40%, 52%), hsl(226, 40%, 60%));
-  --color-text-h6: light-dark(hsl(226, 40%, 56%), hsl(226, 40%, 64%));
+  --color-text-faint: light-dark(hsl(300, 6%, 30%), hsl(168, 50%, 54%));
+  --color-text-h1: light-dark(hsl(226, 40%, 44%), hsl(1, 71%, 52%));
+  --color-text-h2: light-dark(hsl(226, 40%, 48%), hsl(18, 80%, 44%));
+  --color-text-h3: light-dark(hsl(226, 40%, 52%), hsl(226, 40%, 44%));
+  --color-text-h4: light-dark(hsl(226, 40%, 56%), hsl(226, 40%, 48%));
+  --color-text-h5: light-dark(hsl(226, 40%, 60%), hsl(226, 40%, 52%));
+  --color-text-h6: light-dark(hsl(226, 40%, 64%), hsl(226, 40%, 56%));
   --color-text-highlight: light-dark(hsl(60, 20%, 95%), hsl(60, 20%, 95%));
   --color-text-highlight-active-background: light-dark(
     hsl(18, 80%, 44%),
@@ -99,12 +99,12 @@
     hsl(45, 100%, 35%)
   );
   --color-text-italic: light-dark(hsl(68, 100%, 30%), hsl(68, 100%, 30%));
-  --color-text-muted: light-dark(hsl(160, 50%, 46%), hsl(300, 6%, 22%));
-  --color-text-normal: light-dark(hsl(160, 50%, 38%), hsl(300, 6%, 14%));
+  --color-text-muted: light-dark(hsl(300, 6%, 22%), hsl(160, 50%, 46%));
+  --color-text-normal: light-dark(hsl(300, 6%, 14%), hsl(160, 50%, 38%));
   --color-text-strikethrough: light-dark(hsl(1, 71%, 52%), hsl(1, 71%, 52%));
-  --color-text-title: light-dark(hsl(331, 64%, 52%), hsl(183, 40%, 60%));
-  --color-white: light-dark(hsl(15, 20%, 84%), hsl(15, 20%, 88%));
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-text-title: light-dark(hsl(183, 40%, 60%), hsl(331, 64%, 52%));
+  --color-white: light-dark(hsl(15, 20%, 88%), hsl(15, 20%, 84%));
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --crimson0: 346, 50%, 40%;
   --crimson1: 346, 50%, 36%;
   --crimson2: 346, 50%, 32%;
@@ -206,7 +206,7 @@
   --teal3: 160, 50%, 46%;
   --teal4: 160, 50%, 50%;
   --teal5: 168, 50%, 54%;
-  --text-selection: light-dark(hsl(60, 20%, 95%), hsl(45, 100%, 35%));
+  --text-selection: light-dark(hsl(45, 100%, 35%), hsl(60, 20%, 95%));
   --titlebar-background: light-dark(hsl(180, 7%, 60%), hsl(180, 7%, 60%));
   --titlebar-background-focused: light-dark(
     hsl(46, 42%, 88%),
@@ -372,35 +372,35 @@ body {
   --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
   --color-accent: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-accent-1: light-dark(
-    hsl(255, 89.76%, 75.9%),
-    hsl(257, 88.88%, 70.95%)
+    hsl(257, 88.88%, 70.95%),
+    hsl(255, 89.76%, 75.9%)
   );
   --color-accent-2: light-dark(
-    hsl(253, 92.4%, 85.14%),
-    hsl(255, 89.76%, 75.9%)
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
   );
   --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-alternate: light-dark(hsl(331, 64%, 52%), hsl(331, 64%, 52%));
-  --color-base-0: light-dark(hsl(300, 6%, 10%), hsl(15, 20%, 96%));
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-1: light-dark(hsl(300, 6%, 14%), hsl(15, 20%, 92%));
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-2: light-dark(hsl(300, 6%, 18%), hsl(15, 20%, 88%));
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-3: light-dark(hsl(300, 6%, 22%), hsl(15, 20%, 84%));
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-4: light-dark(hsl(300, 6%, 26%), hsl(15, 20%, 80%));
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-5: light-dark(hsl(300, 6%, 30%), hsl(15, 20%, 76%));
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-black: light-dark(hsl(300, 6%, 22%), hsl(300, 6%, 18%));
-  --color-blue: light-dark(#027aff, #086ddd);
+  --color-base-0: light-dark(hsl(15, 20%, 96%), hsl(300, 6%, 10%));
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-1: light-dark(hsl(15, 20%, 92%), hsl(300, 6%, 14%));
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-2: light-dark(hsl(15, 20%, 88%), hsl(300, 6%, 18%));
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-3: light-dark(hsl(15, 20%, 84%), hsl(300, 6%, 22%));
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-4: light-dark(hsl(15, 20%, 80%), hsl(300, 6%, 26%));
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-5: light-dark(hsl(15, 20%, 76%), hsl(300, 6%, 30%));
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-black: light-dark(hsl(300, 6%, 18%), hsl(300, 6%, 22%));
+  --color-blue: light-dark(#086ddd, #027aff);
   --color-caution: light-dark(hsl(45, 100%, 35%), hsl(45, 100%, 35%));
   --color-checklist-empty: light-dark(hsl(1, 71%, 52%), hsl(1, 71%, 52%));
   --color-checklist-empty-border: light-dark(
@@ -424,8 +424,8 @@ body {
   --color-code-value: light-dark(hsl(237, 43%, 60%), hsl(237, 43%, 60%));
   --color-confirmed: light-dark(hsl(68, 100%, 30%), hsl(68, 100%, 30%));
   --color-content: light-dark(hsl(175, 59%, 40%), hsl(175, 59%, 40%));
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
   --color-horizontal-rule: light-dark(hsl(331, 64%, 52%), hsl(331, 64%, 52%));
   --color-hovered: light-dark(hsl(237, 43%, 60%), hsl(237, 43%, 60%));
   --color-interactable: light-dark(hsl(205, 69%, 49%), hsl(205, 69%, 49%));
@@ -434,23 +434,23 @@ body {
     hsl(331, 64%, 52%),
     hsl(331, 64%, 52%)
   );
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --color-selected: light-dark(hsl(18, 80%, 44%), hsl(18, 80%, 44%));
   --color-stop: light-dark(hsl(1, 71%, 52%), hsl(1, 71%, 52%));
   --color-tag: light-dark(hsl(45, 100%, 35%), hsl(45, 100%, 35%));
   --color-tag-hover: light-dark(hsl(45, 50%, 44%), hsl(45, 50%, 44%));
-  --color-teal: light-dark(hsl(160, 50%, 46%), hsl(160, 50%, 38%));
+  --color-teal: light-dark(hsl(160, 50%, 38%), hsl(160, 50%, 46%));
   --color-text-bold: light-dark(hsl(183, 40%, 60%), hsl(183, 40%, 60%));
-  --color-text-faint: light-dark(hsl(168, 50%, 54%), hsl(300, 6%, 30%));
-  --color-text-h1: light-dark(hsl(1, 71%, 52%), hsl(226, 40%, 44%));
-  --color-text-h2: light-dark(hsl(18, 80%, 44%), hsl(226, 40%, 48%));
-  --color-text-h3: light-dark(hsl(226, 40%, 44%), hsl(226, 40%, 52%));
-  --color-text-h4: light-dark(hsl(226, 40%, 48%), hsl(226, 40%, 56%));
-  --color-text-h5: light-dark(hsl(226, 40%, 52%), hsl(226, 40%, 60%));
-  --color-text-h6: light-dark(hsl(226, 40%, 56%), hsl(226, 40%, 64%));
+  --color-text-faint: light-dark(hsl(300, 6%, 30%), hsl(168, 50%, 54%));
+  --color-text-h1: light-dark(hsl(226, 40%, 44%), hsl(1, 71%, 52%));
+  --color-text-h2: light-dark(hsl(226, 40%, 48%), hsl(18, 80%, 44%));
+  --color-text-h3: light-dark(hsl(226, 40%, 52%), hsl(226, 40%, 44%));
+  --color-text-h4: light-dark(hsl(226, 40%, 56%), hsl(226, 40%, 48%));
+  --color-text-h5: light-dark(hsl(226, 40%, 60%), hsl(226, 40%, 52%));
+  --color-text-h6: light-dark(hsl(226, 40%, 64%), hsl(226, 40%, 56%));
   --color-text-highlight: light-dark(hsl(60, 20%, 95%), hsl(60, 20%, 95%));
   --color-text-highlight-active-background: light-dark(
     hsl(18, 80%, 44%),
@@ -461,12 +461,12 @@ body {
     hsl(45, 100%, 35%)
   );
   --color-text-italic: light-dark(hsl(68, 100%, 30%), hsl(68, 100%, 30%));
-  --color-text-muted: light-dark(hsl(160, 50%, 46%), hsl(300, 6%, 22%));
-  --color-text-normal: light-dark(hsl(160, 50%, 38%), hsl(300, 6%, 14%));
+  --color-text-muted: light-dark(hsl(300, 6%, 22%), hsl(160, 50%, 46%));
+  --color-text-normal: light-dark(hsl(300, 6%, 14%), hsl(160, 50%, 38%));
   --color-text-strikethrough: light-dark(hsl(1, 71%, 52%), hsl(1, 71%, 52%));
-  --color-text-title: light-dark(hsl(331, 64%, 52%), hsl(183, 40%, 60%));
-  --color-white: light-dark(hsl(15, 20%, 84%), hsl(15, 20%, 88%));
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-text-title: light-dark(hsl(183, 40%, 60%), hsl(331, 64%, 52%));
+  --color-white: light-dark(hsl(15, 20%, 88%), hsl(15, 20%, 84%));
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -1018,7 +1018,7 @@ body {
   --text-normal: hsl(194, 14%, 40%);
   --text-on-accent: white;
   --text-on-accent-inverted: black;
-  --text-selection: light-dark(hsl(60, 20%, 95%), hsl(45, 100%, 35%));
+  --text-selection: light-dark(hsl(45, 100%, 35%), hsl(60, 20%, 95%));
   --text-success: 68, 100%, 30%;
   --text-warning: 18, 80%, 44%;
   --titlebar-background: light-dark(hsl(180, 7%, 60%), hsl(180, 7%, 60%));
@@ -1054,8 +1054,8 @@ body {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-user-select: none;
   background-color: light-dark(
-    hsl(light-dark(300, 6%, 14%, 15, 20%, 92%)),
-    hsl(light-dark(300, 6%, 14%, 15, 20%, 92%))
+    hsl(light-dark(15, 20%, 92%, 300, 6%, 14%)),
+    hsl(light-dark(15, 20%, 92%, 300, 6%, 14%))
   );
   caret-color: hsl(255, 89.76%, 75.9%);
   color: hsl(194, 14%, 40%);
@@ -1100,7 +1100,7 @@ h6 a {
 
 h1 {
   --font-weight: 700;
-  color: hsl(light-dark(light-dark(#fb464c, #e93147), 226, 40%, 44%));
+  color: hsl(light-dark(226, 40%, 44%, light-dark(#e93147, #fb464c)));
   font-family: "Tahoma", serif;
   font-size: 3em;
   font-style: normal;
@@ -1125,7 +1125,7 @@ h1 {
 
 h2 {
   --font-weight: 600;
-  color: hsl(light-dark(light-dark(#e9973f, #ec7500), 226, 40%, 48%));
+  color: hsl(light-dark(226, 40%, 48%, light-dark(#ec7500, #e9973f)));
   font-family: "Tahoma", serif;
   font-size: 30px;
   font-style: normal;
@@ -1139,7 +1139,7 @@ h2 {
 
 h3 {
   --font-weight: 600;
-  color: hsl(light-dark(226, 40%, 44%, 226, 40%, 52%));
+  color: hsl(light-dark(226, 40%, 52%, 226, 40%, 44%));
   font-family: "Tahoma", serif;
   font-size: 27px;
   font-style: normal;
@@ -1153,7 +1153,7 @@ h3 {
 
 h4 {
   --font-weight: 600;
-  color: hsl(light-dark(226, 40%, 48%, 226, 40%, 56%));
+  color: hsl(light-dark(226, 40%, 56%, 226, 40%, 48%));
   font-family: "Tahoma", serif;
   font-size: 24px;
   font-style: normal;
@@ -1167,7 +1167,7 @@ h4 {
 
 h5 {
   --font-weight: 600;
-  color: hsl(light-dark(226, 40%, 52%, 226, 40%, 60%));
+  color: hsl(light-dark(226, 40%, 60%, 226, 40%, 52%));
   font-family: "Tahoma", serif;
   font-size: 21px;
   font-style: normal;
@@ -1181,7 +1181,7 @@ h5 {
 
 h6 {
   --font-weight: 600;
-  color: hsl(light-dark(226, 40%, 56%, 226, 40%, 64%));
+  color: hsl(light-dark(226, 40%, 64%, 226, 40%, 56%));
   font-family: "Tahoma", serif;
   font-size: 18px;
   font-style: normal;
@@ -1457,8 +1457,8 @@ h6 {
 
 .popover {
   background-color: light-dark(
-    hsl(light-dark(300, 6%, 14%, 15, 20%, 92%)),
-    hsl(light-dark(300, 6%, 14%, 15, 20%, 92%))
+    hsl(light-dark(15, 20%, 92%, 300, 6%, 14%)),
+    hsl(light-dark(15, 20%, 92%, 300, 6%, 14%))
   );
   border: 1px solid transparent;
   border-radius: 8px;
@@ -1473,14 +1473,14 @@ h6 {
 }
 
 .prompt {
-  background-color: hsl(light-dark(300, 6%, 22%, 15, 20%, 84%));
+  background-color: hsl(light-dark(15, 20%, 84%, 300, 6%, 22%));
   border: 0.5pt solid #555555;
   border-radius: 12px;
   box-shadow:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
     0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
-  color: hsl(light-dark(160, 50%, 38%, 300, 6%, 14%));
+  color: hsl(light-dark(300, 6%, 14%, 160, 50%, 38%));
   display: flex;
   flex-direction: column;
   max-height: 70vh;
@@ -1494,14 +1494,14 @@ h6 {
 
 input.prompt-input {
   background-color: light-dark(
-    hsl(light-dark(300, 6%, 14%, 15, 20%, 92%)),
-    hsl(light-dark(300, 6%, 14%, 15, 20%, 92%))
+    hsl(light-dark(15, 20%, 92%, 300, 6%, 14%)),
+    hsl(light-dark(15, 20%, 92%, 300, 6%, 14%))
   );
   border: none;
   border-bottom: 1px solid
     light-dark(
-      hsl(light-dark(300, 6%, 18%, 15, 20%, 88%)),
-      hsl(light-dark(300, 6%, 18%, 15, 20%, 88%))
+      hsl(light-dark(15, 20%, 88%, 300, 6%, 18%)),
+      hsl(light-dark(15, 20%, 88%, 300, 6%, 18%))
     );
   border-radius: 0;
   font-size: 16px;
@@ -1521,23 +1521,23 @@ input.prompt-input {
 
 .markdown-rendered mark {
   background-color: hsl(
-    light-dark(light-dark(#e9973f, #ec7500), light-dark(#e9973f, #ec7500))
+    light-dark(light-dark(#ec7500, #e9973f), light-dark(#ec7500, #e9973f))
   );
   color: hsl(
     light-dark(
-      light-dark(15, 20%, 84%, 15, 20%, 88%),
-      light-dark(15, 20%, 84%, 15, 20%, 88%)
+      light-dark(15, 20%, 88%, 15, 20%, 84%),
+      light-dark(15, 20%, 88%, 15, 20%, 84%)
     )
   );
 }
 
 a.tag {
   background-color: hsl(
-    light-dark(light-dark(#e0de71, #e0ac00), light-dark(#e0de71, #e0ac00))
+    light-dark(light-dark(#e0ac00, #e0de71), light-dark(#e0ac00, #e0de71))
   );
   border: none;
   border-radius: 25px;
-  color: hsl(light-dark(300, 6%, 14%, 15, 20%, 92%));
+  color: hsl(light-dark(15, 20%, 92%, 300, 6%, 14%));
   font-size: 0.875em;
   font-weight: 500;
   line-height: 1;
@@ -1550,7 +1550,7 @@ a.tag {
 
 input[type="search"] {
   -webkit-app-region: no-drag;
-  background: hsl(light-dark(300, 6%, 18%, 15, 20%, 88%));
+  background: hsl(light-dark(15, 20%, 88%, 300, 6%, 18%));
   border: 1px solid transparent;
   border-radius: 5px;
   color: hsl(194, 14%, 40%);
@@ -1576,8 +1576,8 @@ input[type="search"] {
   border-radius: 4px;
   color: hsl(
     light-dark(
-      light-dark(160, 50%, 46%, 160, 50%, 38%),
-      light-dark(160, 50%, 46%, 160, 50%, 38%)
+      light-dark(160, 50%, 38%, 160, 50%, 46%),
+      light-dark(160, 50%, 38%, 160, 50%, 46%)
     )
   );
   font-size: 9px;
@@ -1623,17 +1623,17 @@ input[type="search"] {
 }
 
 .nav-file-title.is-active {
-  background-color: hsl(light-dark(300, 6%, 10%, 15, 20%, 96%));
+  background-color: hsl(light-dark(15, 20%, 96%, 300, 6%, 10%));
   color: hsl(
-    light-dark(light-dark(#e9973f, #ec7500), light-dark(#e9973f, #ec7500))
+    light-dark(light-dark(#ec7500, #e9973f), light-dark(#ec7500, #e9973f))
   );
   font-weight: inherit;
 }
 
 .nav-folder-title.is-active {
-  background-color: hsl(light-dark(300, 6%, 10%, 15, 20%, 96%));
+  background-color: hsl(light-dark(15, 20%, 96%, 300, 6%, 10%));
   color: hsl(
-    light-dark(light-dark(#e9973f, #ec7500), light-dark(#e9973f, #ec7500))
+    light-dark(light-dark(#ec7500, #e9973f), light-dark(#ec7500, #e9973f))
   );
   font-weight: inherit;
 }
@@ -1688,8 +1688,8 @@ input[type="search"] {
 }
 
 .tree-item-self.is-active {
-  background-color: hsl(light-dark(300, 6%, 10%, 15, 20%, 96%));
-  border: solid 1px hsl(light-dark(300, 6%, 18%, 15, 20%, 88%));
+  background-color: hsl(light-dark(15, 20%, 96%, 300, 6%, 10%));
+  border: solid 1px hsl(light-dark(15, 20%, 88%, 300, 6%, 18%));
   color: hsl(194, 14%, 40%);
   font-weight: inherit;
 }
@@ -1758,7 +1758,7 @@ input[type="search"] {
 
 .tree-item-children {
   border-bottom-left-radius: 1%;
-  border-color: hsl(light-dark(168, 50%, 54%, 300, 6%, 30%));
+  border-color: hsl(light-dark(300, 6%, 30%, 168, 50%, 54%));
   border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
   margin-bottom: 1px;
   margin-inline-start: 12px;
@@ -1799,7 +1799,7 @@ svg.svg-icon {
   border-radius: 5px;
   border-style: solid;
   color: hsl(
-    light-dark(light-dark(#027aff, #086ddd), light-dark(#027aff, #086ddd))
+    light-dark(light-dark(#086ddd, #027aff), light-dark(#086ddd, #027aff))
   );
   padding: 4px;
   padding-left: 8px;
@@ -1822,12 +1822,12 @@ svg.svg-icon {
 
 .clickable-icon.is-active {
   background-color: hsl(
-    light-dark(light-dark(#e9973f, #ec7500), light-dark(#e9973f, #ec7500))
+    light-dark(light-dark(#ec7500, #e9973f), light-dark(#ec7500, #e9973f))
   );
   color: hsl(
     light-dark(
-      light-dark(15, 20%, 84%, 15, 20%, 88%),
-      light-dark(15, 20%, 84%, 15, 20%, 88%)
+      light-dark(15, 20%, 88%, 15, 20%, 84%),
+      light-dark(15, 20%, 88%, 15, 20%, 84%)
     )
   );
   opacity: 0.65;
@@ -1842,7 +1842,7 @@ svg.svg-icon {
   border-style: solid;
   box-shadow: none;
   color: hsl(
-    light-dark(light-dark(#027aff, #086ddd), light-dark(#027aff, #086ddd))
+    light-dark(light-dark(#086ddd, #027aff), light-dark(#086ddd, #027aff))
   );
   cursor: pointer;
   display: flex;
@@ -1885,33 +1885,33 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill {
-  color: hsl(light-dark(#53dfdd, #00bfbc));
+  color: hsl(light-dark(#00bfbc, #53dfdd));
 }
 
 .graph-view.color-fill-focused {
   color: hsl(
-    light-dark(light-dark(#e9973f, #ec7500), light-dark(#e9973f, #ec7500))
+    light-dark(light-dark(#ec7500, #e9973f), light-dark(#ec7500, #e9973f))
   );
 }
 
 .graph-view.color-fill-tag {
   color: hsl(
-    light-dark(light-dark(#e0de71, #e0ac00), light-dark(#e0de71, #e0ac00))
+    light-dark(light-dark(#e0ac00, #e0de71), light-dark(#e0ac00, #e0de71))
   );
 }
 
 .graph-view.color-fill-attachment {
   color: hsl(
     light-dark(
-      light-dark(160, 50%, 46%, 160, 50%, 38%),
-      light-dark(160, 50%, 46%, 160, 50%, 38%)
+      light-dark(160, 50%, 38%, 160, 50%, 46%),
+      light-dark(160, 50%, 38%, 160, 50%, 46%)
     )
   );
 }
 
 .graph-view.color-fill-unresolved {
   color: hsl(
-    light-dark(light-dark(#fb464c, #e93147), light-dark(#fb464c, #e93147))
+    light-dark(light-dark(#e93147, #fb464c), light-dark(#e93147, #fb464c))
   );
   opacity: 0.5;
 }
@@ -1941,7 +1941,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-arrow {
-  color: hsl(light-dark(168, 50%, 54%, 300, 6%, 30%));
+  color: hsl(light-dark(300, 6%, 30%, 168, 50%, 54%));
   opacity: 0.5;
 }
 
@@ -1950,27 +1950,27 @@ svg.svg-icon {
 }
 
 .graph-view.color-line {
-  color: hsl(light-dark(300, 6%, 22%, 15, 20%, 84%));
+  color: hsl(light-dark(15, 20%, 84%, 300, 6%, 22%));
 }
 
 .graph-view.color-text {
-  color: hsl(light-dark(160, 50%, 38%, 300, 6%, 14%));
+  color: hsl(light-dark(300, 6%, 14%, 160, 50%, 38%));
 }
 
 .graph-view.color-fill-highlight {
   color: hsl(
-    light-dark(light-dark(#a882ff, #7852ee), light-dark(#a882ff, #7852ee))
+    light-dark(light-dark(#7852ee, #a882ff), light-dark(#7852ee, #a882ff))
   );
 }
 
 .graph-view.color-line-highlight {
-  color: hsl(light-dark(300, 6%, 30%, 15, 20%, 76%));
+  color: hsl(light-dark(15, 20%, 76%, 300, 6%, 30%));
 }
 
 .graph-controls {
   background-color: light-dark(
-    hsl(light-dark(300, 6%, 14%, 15, 20%, 92%)),
-    hsl(light-dark(300, 6%, 14%, 15, 20%, 92%))
+    hsl(light-dark(15, 20%, 92%, 300, 6%, 14%)),
+    hsl(light-dark(15, 20%, 92%, 300, 6%, 14%))
   );
   border-radius: 8px;
   inset-inline-end: 12px;
@@ -2237,23 +2237,23 @@ svg.svg-icon {
 
 .workspace-tabs .workspace-leaf {
   background-color: light-dark(
-    hsl(light-dark(300, 6%, 18%, 15, 20%, 88%)),
-    hsl(light-dark(300, 6%, 18%, 15, 20%, 88%))
+    hsl(light-dark(15, 20%, 88%, 300, 6%, 18%)),
+    hsl(light-dark(15, 20%, 88%, 300, 6%, 18%))
   );
   height: 100%;
 }
 
 .workspace-split.mod-root {
   background-color: light-dark(
-    hsl(light-dark(300, 6%, 14%, 15, 20%, 92%)),
-    hsl(light-dark(300, 6%, 14%, 15, 20%, 92%))
+    hsl(light-dark(15, 20%, 92%, 300, 6%, 14%)),
+    hsl(light-dark(15, 20%, 92%, 300, 6%, 14%))
   );
 }
 
 .workspace-split.mod-root .view-content {
   background-color: light-dark(
-    hsl(light-dark(300, 6%, 14%, 15, 20%, 92%)),
-    hsl(light-dark(300, 6%, 14%, 15, 20%, 92%))
+    hsl(light-dark(15, 20%, 92%, 300, 6%, 14%)),
+    hsl(light-dark(15, 20%, 92%, 300, 6%, 14%))
   );
 }
 

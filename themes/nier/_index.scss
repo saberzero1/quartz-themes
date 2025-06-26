@@ -215,33 +215,33 @@ html[saved-theme="dark"] {
 }
 
 :root {
-  --background-modifier-border: light-dark(#424958, #dbdbdc);
-  --background-primary: light-dark(#ddd8c7, #fafafa);
-  --color-accent-2: light-dark(#89afe0, #6c97d7);
+  --background-modifier-border: light-dark(#dbdbdc, #424958);
+  --background-primary: light-dark(#fafafa, #ddd8c7);
+  --color-accent-2: light-dark(#6c97d7, #89afe0);
   --color-accent-hsl: light-dark(#4c79cd, #4c79cd);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --text-accent: light-dark(#4a473e, #1592ff);
-  --text-accent-hover: light-dark(#5d42ad, #097add);
-  --text-faint: light-dark(#515663, #999999);
-  --text-muted: light-dark(#696868, #8e8e90);
-  --text-normal: light-dark(#49463d, #383a42);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --text-accent: light-dark(#1592ff, #4a473e);
+  --text-accent-hover: light-dark(#097add, #5d42ad);
+  --text-faint: light-dark(#999999, #515663);
+  --text-muted: light-dark(#8e8e90, #696868);
+  --text-normal: light-dark(#383a42, #49463d);
 }
 body {
-  --background-modifier-border: light-dark(#424958, #dbdbdc);
+  --background-modifier-border: light-dark(#dbdbdc, #424958);
   --background-modifier-border-focus: #aea395;
   --background-modifier-border-hover: #aea395;
   --background-modifier-hover: #ffffff11;
-  --background-primary: light-dark(#ddd8c7, #fafafa);
+  --background-primary: light-dark(#fafafa, #ddd8c7);
   --bold-color: inherit;
   --bold-weight: 700;
   --checkbox-border-color: #515663;
@@ -264,19 +264,19 @@ body {
   --code-value: #a882ff;
   --collapse-icon-color: #515663;
   --collapse-icon-color-collapsed: #4a473e;
-  --color-accent-2: light-dark(#89afe0, #6c97d7);
+  --color-accent-2: light-dark(#6c97d7, #89afe0);
   --color-accent-hsl: light-dark(#4c79cd, #4c79cd);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -318,17 +318,17 @@ body {
   --tag-decoration-hover: none;
   --tag-radius: 4px;
   --tag-weight: inherit;
-  --text-accent: light-dark(#4a473e, #1592ff);
-  --text-accent-hover: light-dark(#5d42ad, #097add);
-  --text-faint: light-dark(#515663, #999999);
+  --text-accent: light-dark(#1592ff, #4a473e);
+  --text-accent-hover: light-dark(#097add, #5d42ad);
+  --text-faint: light-dark(#999999, #515663);
   --text-highlight-bg: #ffd00066;
-  --text-muted: light-dark(#696868, #8e8e90);
-  --text-normal: light-dark(#49463d, #383a42);
+  --text-muted: light-dark(#8e8e90, #696868);
+  --text-normal: light-dark(#383a42, #49463d);
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(#ddd8c7, #fafafa);
+  background-color: light-dark(#fafafa, #ddd8c7);
   caret-color: #4a473e;
-  color: light-dark(#49463d, #383a42);
+  color: light-dark(#383a42, #49463d);
   contain: initial;
   font-family:
     "??",
@@ -483,13 +483,13 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: light-dark(#ddd8c7, #fafafa);
+  background-color: light-dark(#fafafa, #ddd8c7);
   section,
   .page > #quartz-body .sidebar {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: light-dark(#ddd8c7, #fafafa);
+      background-color: light-dark(#fafafa, #ddd8c7);
     }
   }
   .highlight,
@@ -643,8 +643,8 @@ body {
   }
   /* HEADINGS */
   h1 {
-    border-bottom: 2px solid light-dark(#49463d, #383a42);
-    color: light-dark(#49463d, #383a42);
+    border-bottom: 2px solid light-dark(#383a42, #49463d);
+    color: light-dark(#383a42, #49463d);
     content: "";
     display: block;
     font-family: inherit;
@@ -664,7 +664,7 @@ body {
     --link-weight: 700;
   }
   h2 {
-    color: light-dark(#49463d, #383a42);
+    color: light-dark(#383a42, #49463d);
     font-family: inherit;
     font-size: 25px;
     font-style: normal;
@@ -681,7 +681,7 @@ body {
     --link-weight: 600;
   }
   h3 {
-    color: light-dark(#49463d, #383a42);
+    color: light-dark(#383a42, #49463d);
     font-family: inherit;
     font-size: 20px;
     font-style: normal;
@@ -698,7 +698,7 @@ body {
     --link-weight: 600;
   }
   h4 {
-    color: light-dark(#49463d, #383a42);
+    color: light-dark(#383a42, #49463d);
     font-family: inherit;
     font-size: 17px;
     font-style: normal;
@@ -715,7 +715,7 @@ body {
     --link-weight: 600;
   }
   h5 {
-    color: light-dark(#49463d, #383a42);
+    color: light-dark(#383a42, #49463d);
     font-family: inherit;
     font-size: 14px;
     font-style: normal;
@@ -732,7 +732,7 @@ body {
     --link-weight: 600;
   }
   h6 {
-    color: light-dark(#49463d, #383a42);
+    color: light-dark(#383a42, #49463d);
     font-family: inherit;
     font-size: 12px;
     font-style: normal;
@@ -831,7 +831,7 @@ body {
   .clipboard-button {
     background-color: transparent;
     box-shadow: none;
-    color: light-dark(#696868, #8e8e90);
+    color: light-dark(#8e8e90, #696868);
     font-family:
       "??",
       "??",
@@ -867,12 +867,12 @@ body {
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: light-dark(#515663, #999999);
+    color: light-dark(#999999, #515663);
   }
   /* BACKLINKS */
   .backlinks {
     h3 {
-      color: light-dark(#49463d, #383a42);
+      color: light-dark(#383a42, #49463d);
       font-family: inherit;
       font-size: 20px;
       font-style: normal;
@@ -900,11 +900,11 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: light-dark(#49463d, #383a42);
+      color: light-dark(#383a42, #49463d);
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: light-dark(#ddd8c7, #fafafa);
+        background-color: light-dark(#fafafa, #ddd8c7);
       }
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
@@ -962,8 +962,8 @@ body {
           &.active,
           &:hover {
             background-color: light-dark(
-              light-dark(#363636, #e0e0e0),
-              light-dark(#212121, #fcfcfc)
+              light-dark(#fcfcfc, #212121),
+              light-dark(#e0e0e0, #363636)
             );
             color: #ffffff;
             font-weight: inherit;
@@ -992,10 +992,10 @@ body {
   }
   /* TOC */
   .toc {
-    color: light-dark(#49463d, #383a42);
+    color: light-dark(#383a42, #49463d);
     button.toc-header {
       h3 {
-        color: light-dark(#49463d, #383a42);
+        color: light-dark(#383a42, #49463d);
         font-family: inherit;
         font-size: 20px;
         font-style: normal;
@@ -1008,7 +1008,7 @@ body {
         text-shadow: 0.2rem 0.2rem 0 #4d493e4d;
         text-transform: uppercase;
       }
-      color: light-dark(#49463d, #383a42);
+      color: light-dark(#383a42, #49463d);
       color: inherit;
     }
     ul.toc-content.overflow {
@@ -1025,7 +1025,7 @@ body {
   .graph,
   .toc {
     h3 {
-      color: light-dark(#49463d, #383a42);
+      color: light-dark(#383a42, #49463d);
       font-family: inherit;
       font-size: 20px;
       font-style: normal;
@@ -1090,9 +1090,9 @@ body {
     & > .search-button {
       -webkit-app-region: no-drag;
       background: #0000004d;
-      border: 1px solid light-dark(#424958, #dbdbdc);
+      border: 1px solid light-dark(#dbdbdc, #424958);
       border-radius: 5px;
-      color: light-dark(#49463d, #383a42);
+      color: light-dark(#383a42, #49463d);
       font-family: inherit;
       font-size: 14.992px;
       height: 40px;
@@ -1105,7 +1105,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: light-dark(#ddd8c7, #fafafa);
+        background-color: light-dark(#fafafa, #ddd8c7);
         border: 0.5pt solid #18191e;
         border-radius: 12px;
         box-shadow:
@@ -1114,9 +1114,9 @@ body {
           0px 30px 90px #00000033;
         margin: 12vh auto;
         & > input {
-          background-color: light-dark(#ddd8c7, #fafafa);
+          background-color: light-dark(#fafafa, #ddd8c7);
           border: none;
-          border-bottom: 1px solid light-dark(#afaa96, #eaeaeb);
+          border-bottom: 1px solid light-dark(#eaeaeb, #afaa96);
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1128,7 +1128,7 @@ body {
           background: transparent;
         }
         & > * {
-          color: light-dark(#49463d, #383a42);
+          color: light-dark(#383a42, #49463d);
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1142,7 +1142,7 @@ body {
             font-weight: bold;
             background-color: #f0ece0;
             border-radius: 5px;
-            color: light-dark(#49463d, #383a42);
+            color: light-dark(#383a42, #49463d);
             padding-bottom: 0px;
             padding-left: 4px;
             padding-right: 4px;
@@ -1166,7 +1166,7 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: light-dark(#49463d, #383a42);
+                color: light-dark(#383a42, #49463d);
                 &.match-tag {
                   color: #ffffff;
                 }
@@ -1229,8 +1229,8 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: light-dark(#ddd8c7, #fafafa);
-    border: 1px solid light-dark(#424958, #dbdbdc);
+    background-color: light-dark(#fafafa, #ddd8c7);
+    border: 1px solid light-dark(#dbdbdc, #424958);
     border-radius: 8px;
     box-shadow:
       0px 1px 2px #0000001f,
@@ -1246,8 +1246,8 @@ body {
     background-color: unset;
     border: unset;
     & .popover-inner {
-      border: 1px solid light-dark(#424958, #dbdbdc);
-      background-color: light-dark(#ddd8c7, #fafafa);
+      border: 1px solid light-dark(#dbdbdc, #424958);
+      background-color: light-dark(#fafafa, #ddd8c7);
 
       border-radius: 8px;
     }

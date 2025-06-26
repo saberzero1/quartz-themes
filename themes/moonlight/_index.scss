@@ -202,34 +202,34 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --background-modifier-border: light-dark(#333, #ddd);
-  --background-primary: light-dark(#202020, #ffffff);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --background-modifier-border: light-dark(#ddd, #333);
+  --background-primary: light-dark(#ffffff, #202020);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --text-accent: light-dark(#5c73f2, #5c73f2);
   --text-accent-hover: light-dark(#5c73f2, #5c73f2);
-  --text-faint: light-dark(#555, #999999);
+  --text-faint: light-dark(#999999, #555);
   --text-highlight-bg: light-dark(#5cd6f296, #5cd6f296);
-  --text-muted: light-dark(#888, #888888);
-  --text-normal: light-dark(#dcddde, #2e3338);
+  --text-muted: light-dark(#888888, #888);
+  --text-normal: light-dark(#2e3338, #dcddde);
 }
 body {
-  --background-modifier-border: light-dark(#333, #ddd);
+  --background-modifier-border: light-dark(#ddd, #333);
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;
   --background-modifier-hover: #ffffff11;
-  --background-primary: light-dark(#202020, #ffffff);
+  --background-primary: light-dark(#ffffff, #202020);
   --bold-color: inherit;
   --bold-weight: 800;
   --checkbox-border-color: #555;
@@ -252,19 +252,19 @@ body {
   --code-value: #a882ff;
   --collapse-icon-color: #555;
   --collapse-icon-color-collapsed: #5c73f2;
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -308,15 +308,15 @@ body {
   --tag-weight: inherit;
   --text-accent: light-dark(#5c73f2, #5c73f2);
   --text-accent-hover: light-dark(#5c73f2, #5c73f2);
-  --text-faint: light-dark(#555, #999999);
+  --text-faint: light-dark(#999999, #555);
   --text-highlight-bg: light-dark(#5cd6f296, #5cd6f296);
-  --text-muted: light-dark(#888, #888888);
-  --text-normal: light-dark(#dcddde, #2e3338);
+  --text-muted: light-dark(#888888, #888);
+  --text-normal: light-dark(#2e3338, #dcddde);
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(#202020, #ffffff);
+  background-color: light-dark(#ffffff, #202020);
   caret-color: #5c73f2;
-  color: light-dark(#dcddde, #2e3338);
+  color: light-dark(#2e3338, #dcddde);
   contain: initial;
   font-family:
     "??",
@@ -471,13 +471,13 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: light-dark(#202020, #ffffff);
+  background-color: light-dark(#ffffff, #202020);
   section,
   .page > #quartz-body .sidebar {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: light-dark(#202020, #ffffff);
+      background-color: light-dark(#ffffff, #202020);
     }
   }
   .highlight,
@@ -803,7 +803,7 @@ body {
   .clipboard-button {
     background-color: transparent;
     box-shadow: none;
-    color: light-dark(#888, #888888);
+    color: light-dark(#888888, #888);
     font-family:
       "??",
       "??",
@@ -839,7 +839,7 @@ body {
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: light-dark(#555, #999999);
+    color: light-dark(#999999, #555);
   }
   /* BACKLINKS */
   .backlinks {
@@ -874,7 +874,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: light-dark(#202020, #ffffff);
+        background-color: light-dark(#ffffff, #202020);
       }
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
@@ -921,7 +921,7 @@ body {
         position: relative;
         a {
           border-radius: 4px;
-          color: light-dark(#dcddde, #2e3338);
+          color: light-dark(#2e3338, #dcddde);
           cursor: pointer;
           display: flex;
           font-size: 16px;
@@ -1053,9 +1053,9 @@ body {
     & > .search-button {
       -webkit-app-region: no-drag;
       background: transparent;
-      border: 1px solid light-dark(#333, #ddd);
+      border: 1px solid light-dark(#ddd, #333);
       border-radius: 5px;
-      color: light-dark(#dcddde, #2e3338);
+      color: light-dark(#2e3338, #dcddde);
       font-family: inherit;
       font-size: 14.992px;
       height: 40px;
@@ -1068,7 +1068,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: light-dark(#202020, #ffffff);
+        background-color: light-dark(#ffffff, #202020);
         border: 0.5pt solid #555555;
         border-radius: 12px;
         box-shadow:
@@ -1077,9 +1077,9 @@ body {
           0px 30px 90px #00000033;
         margin: 12vh auto;
         & > input {
-          background-color: light-dark(#202020, #ffffff);
+          background-color: light-dark(#ffffff, #202020);
           border: none;
-          border-bottom: 1px solid light-dark(#161616, #f2f3f5);
+          border-bottom: 1px solid light-dark(#f2f3f5, #161616);
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1091,7 +1091,7 @@ body {
           background: transparent;
         }
         & > * {
-          color: light-dark(#dcddde, #2e3338);
+          color: light-dark(#2e3338, #dcddde);
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1104,7 +1104,7 @@ body {
           & .highlight {
             font-weight: bold;
             background-color: light-dark(#5cd6f296, #5cd6f296);
-            color: light-dark(#dcddde, #2e3338);
+            color: light-dark(#2e3338, #dcddde);
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1124,7 +1124,7 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: light-dark(#dcddde, #2e3338);
+                color: light-dark(#2e3338, #dcddde);
                 &.match-tag {
                   color: #5c73f2;
                 }
@@ -1187,8 +1187,8 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: light-dark(#202020, #ffffff);
-    border: 1px solid light-dark(#333, #ddd);
+    background-color: light-dark(#ffffff, #202020);
+    border: 1px solid light-dark(#ddd, #333);
     border-radius: 8px;
     box-shadow:
       0px 1px 2px #0000001f,
@@ -1204,8 +1204,8 @@ body {
     background-color: unset;
     border: unset;
     & .popover-inner {
-      border: 1px solid light-dark(#333, #ddd);
-      background-color: light-dark(#202020, #ffffff);
+      border: 1px solid light-dark(#ddd, #333);
+      background-color: light-dark(#ffffff, #202020);
 
       border-radius: 8px;
     }

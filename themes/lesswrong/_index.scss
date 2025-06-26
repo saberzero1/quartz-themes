@@ -207,23 +207,23 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --code-background: light-dark(#1c1b1a, #f5f5f5);
-  --color-accent-2: light-dark(#b3d1b3, #9ac09b);
+  --code-background: light-dark(#f5f5f5, #1c1b1a);
+  --color-accent-2: light-dark(#9ac09b, #b3d1b3);
   --color-accent-hsl: light-dark(#7eae82, #7eae82);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#252525, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --link-color-hover: light-dark(#344437, #b3c3b5);
-  --link-external-color-hover: light-dark(#193f04, #97bd83);
-  --text-normal: light-dark(#dedede, #212121);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #252525);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --link-color-hover: light-dark(#b3c3b5, #344437);
+  --link-external-color-hover: light-dark(#97bd83, #193f04);
+  --text-normal: light-dark(#212121, #dedede);
 }
 body {
   --background-modifier-border: #252525;
@@ -240,7 +240,7 @@ body {
   --checkbox-marker-color: #000;
   --checkbox-radius: 3px;
   --checkbox-size: 16px;
-  --code-background: light-dark(#1c1b1a, #f5f5f5);
+  --code-background: light-dark(#f5f5f5, #1c1b1a);
   --code-comment: #666666;
   --code-function: #e0de71;
   --code-important: #e9973f;
@@ -253,19 +253,19 @@ body {
   --code-value: #a882ff;
   --collapse-icon-color: #666666;
   --collapse-icon-color-collapsed: #9ac09b;
-  --color-accent-2: light-dark(#b3d1b3, #9ac09b);
+  --color-accent-2: light-dark(#9ac09b, #b3d1b3);
   --color-accent-hsl: light-dark(#7eae82, #7eae82);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#252525, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #252525);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --cursor-link: default;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -289,9 +289,9 @@ body {
   --interactive-accent-hsl: 125, 23%, 59%;
   --italic-color: inherit;
   --link-color: #69886e;
-  --link-color-hover: light-dark(#344437, #b3c3b5);
+  --link-color-hover: light-dark(#b3c3b5, #344437);
   --link-external-color: #2b7801;
-  --link-external-color-hover: light-dark(#193f04, #97bd83);
+  --link-external-color-hover: light-dark(#97bd83, #193f04);
   --link-external-filter: none;
   --link-weight: 100;
   --p-spacing: 1rem;
@@ -312,12 +312,12 @@ body {
   --text-faint: #666666;
   --text-highlight-bg: #ffd00066;
   --text-muted: #b3b3b3;
-  --text-normal: light-dark(#dedede, #212121);
+  --text-normal: light-dark(#212121, #dedede);
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: #000;
   caret-color: #9ac09b;
-  color: light-dark(#dedede, #212121);
+  color: light-dark(#212121, #dedede);
   contain: initial;
   font-family:
     "??",
@@ -723,7 +723,7 @@ body {
   }
   /* CODE */
   pre {
-    background-color: light-dark(#1c1b1a, #f5f5f5);
+    background-color: light-dark(#f5f5f5, #1c1b1a);
     border: 0px solid transparent;
     border-radius: 3px;
     min-height: 38px;
@@ -740,7 +740,7 @@ body {
   }
   code {
     -webkit-box-decoration-break: clone;
-    background-color: light-dark(#1c1b1a, #f5f5f5);
+    background-color: light-dark(#f5f5f5, #1c1b1a);
     border: 0px solid transparent;
     border-radius: 3px;
     color: #dedede;
@@ -1056,7 +1056,7 @@ body {
       background: transparent;
       border: 1px solid transparent;
       border-radius: 5px;
-      color: light-dark(#dedede, #212121);
+      color: light-dark(#212121, #dedede);
       font-family: inherit;
       font-size: 16.866px;
       height: 40px;
@@ -1092,7 +1092,7 @@ body {
           background: transparent;
         }
         & > * {
-          color: light-dark(#dedede, #212121);
+          color: light-dark(#212121, #dedede);
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1105,7 +1105,7 @@ body {
           & .highlight {
             font-weight: bold;
             background-color: #ffd00066;
-            color: light-dark(#dedede, #212121);
+            color: light-dark(#212121, #dedede);
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1125,7 +1125,7 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: light-dark(#dedede, #212121);
+                color: light-dark(#212121, #dedede);
                 &.match-tag {
                   color: #9ac09b;
                 }

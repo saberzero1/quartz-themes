@@ -295,50 +295,50 @@ html[saved-theme="light"] {
 
 :root {
   --background-modifier-border: light-dark(
-    color-mix(in srgb, #82807d, #000000 25%),
-    color-mix(in srgb, #82807d, #ffffff 25%)
+    color-mix(in srgb, #82807d, #ffffff 25%),
+    color-mix(in srgb, #82807d, #000000 25%)
   );
   --background-modifier-border-focus: light-dark(
-    color-mix(in srgb, #82807d, #000000 25%),
-    #82807d
+    #82807d,
+    color-mix(in srgb, #82807d, #000000 25%)
   );
   --background-modifier-hover: light-dark(#82807d, #82807d);
   --collapse-icon-color: light-dark(#82807d, #82807d);
   --collapse-icon-color-collapsed: light-dark(#82807d, #82807d);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --icon-color: light-dark(#82807d, #82807d);
   --search-icon-color: light-dark(#82807d, #82807d);
-  --tag-background: light-dark(#8a5cf533, #8a5cf526);
-  --tag-color: light-dark(hsl(258, 105.6%, 66%), #733cf3);
+  --tag-background: light-dark(#8a5cf526, #8a5cf533);
+  --tag-color: light-dark(#733cf3, hsl(258, 105.6%, 66%));
   --text-faint: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 25%),
-    color-mix(in srgb, #82807d, #000000 70%)
+    color-mix(in srgb, #82807d, #000000 70%),
+    color-mix(in srgb, #82807d, #ffffff 25%)
   );
   --text-normal: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 60%),
-    color-mix(in srgb, #82807d, #000000 90%)
+    color-mix(in srgb, #82807d, #000000 90%),
+    color-mix(in srgb, #82807d, #ffffff 60%)
   );
 }
 body {
   --background-modifier-border: light-dark(
-    color-mix(in srgb, #82807d, #000000 25%),
-    color-mix(in srgb, #82807d, #ffffff 25%)
+    color-mix(in srgb, #82807d, #ffffff 25%),
+    color-mix(in srgb, #82807d, #000000 25%)
   );
   --background-modifier-border-focus: light-dark(
-    color-mix(in srgb, #82807d, #000000 25%),
-    #82807d
+    #82807d,
+    color-mix(in srgb, #82807d, #000000 25%)
   );
   --background-modifier-border-hover: #3f3f3f;
   --background-modifier-hover: light-dark(#82807d, #82807d);
@@ -365,19 +365,19 @@ body {
   --code-value: #a882ff;
   --collapse-icon-color: light-dark(#82807d, #82807d);
   --collapse-icon-color-collapsed: light-dark(#82807d, #82807d);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --cursor-link: pointer;
   --font-default:
     system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
@@ -408,12 +408,12 @@ body {
   --link-weight: 500;
   --p-spacing: 1em;
   --search-icon-color: light-dark(#82807d, #82807d);
-  --tag-background: light-dark(#8a5cf533, #8a5cf526);
+  --tag-background: light-dark(#8a5cf526, #8a5cf533);
   --tag-background-hover: #8a5cf533;
   --tag-border-color: #8a5cf526;
   --tag-border-color-hover: #8a5cf526;
   --tag-border-width: 0px;
-  --tag-color: light-dark(hsl(258, 105.6%, 66%), #733cf3);
+  --tag-color: light-dark(#733cf3, hsl(258, 105.6%, 66%));
   --tag-color-hover: #a68af9;
   --tag-decoration: none;
   --tag-decoration-hover: none;
@@ -422,8 +422,8 @@ body {
   --text-accent: #8a5cf5;
   --text-accent-hover: #c5b6fc;
   --text-faint: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 25%),
-    color-mix(in srgb, #82807d, #000000 70%)
+    color-mix(in srgb, #82807d, #000000 70%),
+    color-mix(in srgb, #82807d, #ffffff 25%)
   );
   --text-highlight-bg: #ffd00066;
   --text-muted: color-mix(
@@ -432,8 +432,8 @@ body {
     transparent 30%
   );
   --text-normal: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 60%),
-    color-mix(in srgb, #82807d, #000000 90%)
+    color-mix(in srgb, #82807d, #000000 90%),
+    color-mix(in srgb, #82807d, #ffffff 60%)
   );
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;

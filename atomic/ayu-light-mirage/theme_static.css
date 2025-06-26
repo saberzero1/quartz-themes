@@ -931,37 +931,37 @@
 }
 
 :root {
-  --accent-h: light-dark(40, 35);
-  --accent-l: light-dark(70%, 60%);
+  --accent-h: light-dark(35, 40);
+  --accent-l: light-dark(60%, 70%);
   --accent-s: light-dark(100%, 100%);
   --background-secondary-alt: light-dark(
-    color-mix(in srgb, #1f2430, #707a8c 30%),
-    color-mix(in srgb, #1f2430, #707a8c 5%)
+    color-mix(in srgb, #1f2430, #707a8c 5%),
+    color-mix(in srgb, #1f2430, #707a8c 30%)
   );
   --color-accent: light-dark(#ffcc66, #ffcc66);
-  --color-accent-1: light-dark(hsl(37, 102%, 80.5%), hsl(39, 101%, 75.25%));
-  --color-accent-2: light-dark(hsl(35, 105%, 90.3%), hsl(37, 102%, 80.5%));
+  --color-accent-1: light-dark(hsl(39, 101%, 75.25%), hsl(37, 102%, 80.5%));
+  --color-accent-2: light-dark(hsl(37, 102%, 80.5%), hsl(35, 105%, 90.3%));
   --color-accent-hsl: light-dark(#ffcc66, #ffcc66);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
   --page-border: 9px solid transparent;
@@ -1584,8 +1584,8 @@
 }
 
 body {
-  --accent-h: light-dark(40, 35);
-  --accent-l: light-dark(70%, 60%);
+  --accent-h: light-dark(35, 40);
+  --accent-l: light-dark(60%, 70%);
   --accent-s: light-dark(100%, 100%);
   --anim-duration-fast: 140ms;
   --anim-duration-moderate: 300ms;
@@ -1612,8 +1612,8 @@ body {
   --background-primary-alt: color-mix(in srgb, #1f2430, #707a8c 10%);
   --background-secondary: color-mix(in srgb, #1f2430, #707a8c 20%);
   --background-secondary-alt: light-dark(
-    color-mix(in srgb, #1f2430, #707a8c 30%),
-    color-mix(in srgb, #1f2430, #707a8c 5%)
+    color-mix(in srgb, #1f2430, #707a8c 5%),
+    color-mix(in srgb, #1f2430, #707a8c 30%)
   );
   --bases-embed-border: 1px solid #8a919966;
   --bases-embed-border-radius: 4px;
@@ -1724,29 +1724,29 @@ body {
   --collapse-icon-color: #8a919966;
   --collapse-icon-color-collapsed: #ffcc66;
   --color-accent: light-dark(#ffcc66, #ffcc66);
-  --color-accent-1: light-dark(hsl(37, 102%, 80.5%), hsl(39, 101%, 75.25%));
-  --color-accent-2: light-dark(hsl(35, 105%, 90.3%), hsl(37, 102%, 80.5%));
+  --color-accent-1: light-dark(hsl(39, 101%, 75.25%), hsl(37, 102%, 80.5%));
+  --color-accent-2: light-dark(hsl(37, 102%, 80.5%), hsl(35, 105%, 90.3%));
   --color-accent-hsl: light-dark(#ffcc66, #ffcc66);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -7773,8 +7773,8 @@ button.mod-destructive {
 
 .card {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   border: 1px solid #8a919966;
   border-radius: 4px;
@@ -9917,8 +9917,8 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .modal .modal-nav-action.mod-cta {
   color: light-dark(
-    hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%)),
-    hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%))
+    hsl(light-dark(35, 40), light-dark(100%, 100%), light-dark(60%, 70%)),
+    hsl(light-dark(35, 40), light-dark(100%, 100%), light-dark(60%, 70%))
   );
   font-weight: 600;
   inset-inline-end: 0;
@@ -10211,8 +10211,8 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   cursor: default;
   text-align: center;
@@ -11397,25 +11397,25 @@ kbd {
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
-  filter: drop-shadow(0px 0px 1px light-dark(#999999, #707070))
+  filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
 }
 
@@ -19795,19 +19795,19 @@ body.theme-dark {
 .canvas-selection {
   background-color: hsla(
     light-dark(
-      light-dark(40, 35),
+      light-dark(35, 40),
       light-dark(100%, 100%),
-      light-dark(70%, 60%),
-      light-dark(40, 35),
+      light-dark(60%, 70%),
+      light-dark(35, 40),
       light-dark(100%, 100%),
-      light-dark(70%, 60%)
+      light-dark(60%, 70%)
     ),
     0.1
   );
   border: 2px solid
     light-dark(
-      hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%)),
-      hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%))
+      hsl(light-dark(35, 40), light-dark(100%, 100%), light-dark(60%, 70%)),
+      hsl(light-dark(35, 40), light-dark(100%, 100%), light-dark(60%, 70%))
     );
   pointer-events: none;
   position: absolute;
@@ -19817,23 +19817,23 @@ body.theme-dark {
 .canvas-selection.mod-group-selection {
   background-color: hsla(
     light-dark(
-      light-dark(40, 35),
+      light-dark(35, 40),
       light-dark(100%, 100%),
-      light-dark(70%, 60%),
-      light-dark(40, 35),
+      light-dark(60%, 70%),
+      light-dark(35, 40),
       light-dark(100%, 100%),
-      light-dark(70%, 60%)
+      light-dark(60%, 70%)
     ),
     0.03
   );
   border-color: hsla(
     light-dark(
-      light-dark(40, 35),
+      light-dark(35, 40),
       light-dark(100%, 100%),
-      light-dark(70%, 60%),
-      light-dark(40, 35),
+      light-dark(60%, 70%),
+      light-dark(35, 40),
       light-dark(100%, 100%),
-      light-dark(70%, 60%)
+      light-dark(60%, 70%)
     ),
     0.3
   );
@@ -19912,8 +19912,8 @@ body.theme-dark {
 @media (hover: hover) {
   .canvas-card-menu .canvas-card-menu-button:hover {
     color: light-dark(
-      hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%)),
-      hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%))
+      hsl(light-dark(35, 40), light-dark(100%, 100%), light-dark(60%, 70%)),
+      hsl(light-dark(35, 40), light-dark(100%, 100%), light-dark(60%, 70%))
     );
   }
 }
@@ -19986,8 +19986,8 @@ body.theme-dark {
 
 .canvas-control-item.is-active {
   color: light-dark(
-    hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%)),
-    hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%))
+    hsl(light-dark(35, 40), light-dark(100%, 100%), light-dark(60%, 70%)),
+    hsl(light-dark(35, 40), light-dark(100%, 100%), light-dark(60%, 70%))
   );
 }
 
@@ -20158,8 +20158,8 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 
 .canvas-node.is-selected .canvas-node-container {
   border-color: light-dark(
-    hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%)),
-    hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%))
+    hsl(light-dark(35, 40), light-dark(100%, 100%), light-dark(60%, 70%)),
+    hsl(light-dark(35, 40), light-dark(100%, 100%), light-dark(60%, 70%))
   );
   box-shadow:
     0px 0.5px 1px 0.5px #0000001a,
@@ -20168,8 +20168,8 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 
 .canvas-node.is-focused .canvas-node-container {
   border-color: light-dark(
-    hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%)),
-    hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%))
+    hsl(light-dark(35, 40), light-dark(100%, 100%), light-dark(60%, 70%)),
+    hsl(light-dark(35, 40), light-dark(100%, 100%), light-dark(60%, 70%))
   );
   box-shadow:
     0px 0.5px 1px 0.5px #0000001a,
@@ -20228,19 +20228,19 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 .canvas-node.is-dummy .canvas-node-container {
   background-color: hsla(
     light-dark(
-      light-dark(40, 35),
+      light-dark(35, 40),
       light-dark(100%, 100%),
-      light-dark(70%, 60%),
-      light-dark(40, 35),
+      light-dark(60%, 70%),
+      light-dark(35, 40),
       light-dark(100%, 100%),
-      light-dark(70%, 60%)
+      light-dark(60%, 70%)
     ),
     0.2
   );
   border: 4px solid
     light-dark(
-      hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%)),
-      hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%))
+      hsl(light-dark(35, 40), light-dark(100%, 100%), light-dark(60%, 70%)),
+      hsl(light-dark(35, 40), light-dark(100%, 100%), light-dark(60%, 70%))
     );
   box-shadow: 0px 2px 10px #00000026;
 }
@@ -20516,8 +20516,8 @@ body.is-mobile .canvas-node-resizer {
   background-color: #242936;
   border: 2px solid
     light-dark(
-      hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%)),
-      hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%))
+      hsl(light-dark(35, 40), light-dark(100%, 100%), light-dark(60%, 70%)),
+      hsl(light-dark(35, 40), light-dark(100%, 100%), light-dark(60%, 70%))
     );
   border-radius: 3px;
   display: block;
@@ -20533,8 +20533,8 @@ body.is-mobile .canvas-node-resizer {
   background-color: #242936;
   border: 2px solid
     light-dark(
-      hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%)),
-      hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%))
+      hsl(light-dark(35, 40), light-dark(100%, 100%), light-dark(60%, 70%)),
+      hsl(light-dark(35, 40), light-dark(100%, 100%), light-dark(60%, 70%))
     );
   border-radius: 3px;
   display: block;
@@ -20550,8 +20550,8 @@ body.is-mobile .canvas-node-resizer {
   background-color: #242936;
   border: 2px solid
     light-dark(
-      hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%)),
-      hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%))
+      hsl(light-dark(35, 40), light-dark(100%, 100%), light-dark(60%, 70%)),
+      hsl(light-dark(35, 40), light-dark(100%, 100%), light-dark(60%, 70%))
     );
   border-radius: 3px;
   display: block;
@@ -20567,8 +20567,8 @@ body.is-mobile .canvas-node-resizer {
   background-color: #242936;
   border: 2px solid
     light-dark(
-      hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%)),
-      hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%))
+      hsl(light-dark(35, 40), light-dark(100%, 100%), light-dark(60%, 70%)),
+      hsl(light-dark(35, 40), light-dark(100%, 100%), light-dark(60%, 70%))
     );
   border-radius: 3px;
   display: block;
@@ -20607,8 +20607,8 @@ body.is-mobile .canvas-node-resizer {
 
 .canvas-node-connection-point::after {
   background-color: light-dark(
-    hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%)),
-    hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%))
+    hsl(light-dark(35, 40), light-dark(100%, 100%), light-dark(60%, 70%)),
+    hsl(light-dark(35, 40), light-dark(100%, 100%), light-dark(60%, 70%))
   );
   border: 3px solid #8a919966;
   border-radius: 50%;
@@ -20644,16 +20644,16 @@ body.is-mobile .canvas-node-resizer {
 
 .canvas-snaps line {
   stroke: light-dark(
-    hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%)),
-    hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%))
+    hsl(light-dark(35, 40), light-dark(100%, 100%), light-dark(60%, 70%)),
+    hsl(light-dark(35, 40), light-dark(100%, 100%), light-dark(60%, 70%))
   );
   stroke-width: 1px;
 }
 
 .canvas-snaps circle {
   fill: light-dark(
-    hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%)),
-    hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%))
+    hsl(light-dark(35, 40), light-dark(100%, 100%), light-dark(60%, 70%)),
+    hsl(light-dark(35, 40), light-dark(100%, 100%), light-dark(60%, 70%))
   );
 }
 
@@ -20825,12 +20825,12 @@ body.is-mobile .canvas-node-resizer {
 
 .canvas-color-picker-item.canvas-color-picker-custom:not(.is-active) {
   background: conic-gradient(
-    light-dark(#fb464c, #e93147),
-    light-dark(#e0de71, #e0ac00),
-    light-dark(#44cf6e, #08b94e),
-    light-dark(#027aff, #086ddd),
-    light-dark(#a882ff, #7852ee),
-    light-dark(#fb464c, #e93147)
+    light-dark(#e93147, #fb464c),
+    light-dark(#e0ac00, #e0de71),
+    light-dark(#08b94e, #44cf6e),
+    light-dark(#086ddd, #027aff),
+    light-dark(#7852ee, #a882ff),
+    light-dark(#e93147, #fb464c)
   );
 }
 
@@ -20889,19 +20889,19 @@ body.is-mobile .canvas-node-resizer {
 .canvas-placeholder-message {
   background: hsla(
     light-dark(
-      light-dark(40, 35),
+      light-dark(35, 40),
       light-dark(100%, 100%),
-      light-dark(70%, 60%),
-      light-dark(40, 35),
+      light-dark(60%, 70%),
+      light-dark(35, 40),
       light-dark(100%, 100%),
-      light-dark(70%, 60%)
+      light-dark(60%, 70%)
     ),
     0.1
   );
   border-radius: 8px;
   color: light-dark(
-    hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%)),
-    hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%))
+    hsl(light-dark(35, 40), light-dark(100%, 100%), light-dark(60%, 70%)),
+    hsl(light-dark(35, 40), light-dark(100%, 100%), light-dark(60%, 70%))
   );
   font-size: 19.2px;
   line-height: 1.5;
@@ -20948,8 +20948,8 @@ body.is-mobile .canvas-node-resizer {
 .canvas-cursor {
   border: 5px solid
     light-dark(
-      hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%)),
-      hsl(light-dark(40, 35), light-dark(100%, 100%), light-dark(70%, 60%))
+      hsl(light-dark(35, 40), light-dark(100%, 100%), light-dark(60%, 70%)),
+      hsl(light-dark(35, 40), light-dark(100%, 100%), light-dark(60%, 70%))
     );
   border-radius: 5px;
   height: 1px;
@@ -24354,15 +24354,15 @@ img {
 }
 
 em strong {
-  color: light-dark(#53dfdd, #00bfbc);
+  color: light-dark(#00bfbc, #53dfdd);
 }
 
 strong em {
-  color: light-dark(#53dfdd, #00bfbc);
+  color: light-dark(#00bfbc, #53dfdd);
 }
 
 .cm-s-obsidian .cm-em.cm-strong {
-  color: light-dark(#53dfdd, #00bfbc);
+  color: light-dark(#00bfbc, #53dfdd);
 }
 
 code {
@@ -24393,7 +24393,7 @@ del {
 .mermaid {
   --background-accent: #ffcc66;
   --background-modifier-border: #8a919966;
-  fill: light-dark(light-dark(#363636, #e0e0e0), light-dark(#212121, #fcfcfc));
+  fill: light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
   stroke: rgb(138 145 153 / 0.4);
 }
 

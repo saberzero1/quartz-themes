@@ -950,8 +950,8 @@
 
 :root {
   --background-secondary-alt: light-dark(
-    var(--color-base-30),
-    var(--color-base-05)
+    var(--color-base-05),
+    var(--color-base-30)
   );
   --color-accent: light-dark(
     hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
@@ -959,26 +959,26 @@
   );
   --color-accent-1: light-dark(
     hsl(
-      calc(var(--accent-h) - 3),
-      calc(var(--accent-s) * 1.02),
-      calc(var(--accent-l) * 1.15)
-    ),
-    hsl(
       calc(var(--accent-h) - 1),
       calc(var(--accent-s) * 1.01),
       calc(var(--accent-l) * 1.075)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
     )
   );
   --color-accent-2: light-dark(
     hsl(
-      calc(var(--accent-h) - 5),
-      calc(var(--accent-s) * 1.05),
-      calc(var(--accent-l) * 1.29)
-    ),
-    hsl(
       calc(var(--accent-h) - 3),
       calc(var(--accent-s) * 1.02),
       calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
     )
   );
   --color-accent-hsl: light-dark(
@@ -989,37 +989,37 @@
     var(--accent-s),
     var(--accent-l)
   );
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
-  --hex-blue: light-dark(#89b4fa, #1e66f5);
-  --hex-green: light-dark(#a6e3a1, #40a02b);
-  --hex-lavender: light-dark(#b4befe, #7287fd);
-  --hex-mauve: light-dark(#cba6f7, #8839ef);
-  --hex-peach: light-dark(#fab387, #fe640b);
-  --hex-pink: light-dark(#f5c2e7, #ea76cb);
-  --hex-red: light-dark(#f38ba8, #d20f39);
-  --hex-sapphire: light-dark(#74c7ec, #209fb5);
-  --hex-sky: light-dark(#89dceb, #04a5e5);
-  --hex-teal: light-dark(#94e2d5, #179299);
-  --hex-yellow: light-dark(#f9e2af, #df8e1d);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
+  --hex-blue: light-dark(#1e66f5, #89b4fa);
+  --hex-green: light-dark(#40a02b, #a6e3a1);
+  --hex-lavender: light-dark(#7287fd, #b4befe);
+  --hex-mauve: light-dark(#8839ef, #cba6f7);
+  --hex-peach: light-dark(#fe640b, #fab387);
+  --hex-pink: light-dark(#ea76cb, #f5c2e7);
+  --hex-red: light-dark(#d20f39, #f38ba8);
+  --hex-sapphire: light-dark(#209fb5, #74c7ec);
+  --hex-sky: light-dark(#04a5e5, #89dceb);
+  --hex-teal: light-dark(#179299, #94e2d5);
+  --hex-yellow: light-dark(#df8e1d, #f9e2af);
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
   --page-border: 9px solid transparent;
@@ -1678,8 +1678,8 @@ body {
   --background-primary-rgb: var(--ctp-base);
   --background-secondary: rgb(var(--ctp-mantle));
   --background-secondary-alt: light-dark(
-    var(--color-base-30),
-    var(--color-base-05)
+    var(--color-base-05),
+    var(--color-base-30)
   );
   --bases-embed-border: 1px solid var(--background-modifier-border);
   --bases-embed-border-radius: var(--radius-s);
@@ -1796,26 +1796,26 @@ body {
   );
   --color-accent-1: light-dark(
     hsl(
-      calc(var(--accent-h) - 3),
-      calc(var(--accent-s) * 1.02),
-      calc(var(--accent-l) * 1.15)
-    ),
-    hsl(
       calc(var(--accent-h) - 1),
       calc(var(--accent-s) * 1.01),
       calc(var(--accent-l) * 1.075)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
     )
   );
   --color-accent-2: light-dark(
     hsl(
-      calc(var(--accent-h) - 5),
-      calc(var(--accent-s) * 1.05),
-      calc(var(--accent-l) * 1.29)
-    ),
-    hsl(
       calc(var(--accent-h) - 3),
       calc(var(--accent-s) * 1.02),
       calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
     )
   );
   --color-accent-hsl: light-dark(
@@ -1826,33 +1826,33 @@ body {
     var(--accent-s),
     var(--accent-l)
   );
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
   --color-blue-rgb: var(--ctp-blue);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
   --color-cyan-rgb: var(--ctp-sapphire);
-  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-green: light-dark(#08b94e, #44cf6e);
   --color-green-rgb: var(--ctp-green);
-  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-orange: light-dark(#ec7500, #e9973f);
   --color-orange-rgb: var(--ctp-peach);
-  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-pink: light-dark(#d53984, #fa99cd);
   --color-pink-rgb: var(--ctp-pink);
-  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-purple: light-dark(#7852ee, #a882ff);
   --color-purple-rgb: var(--ctp-mauve);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-red: light-dark(#e93147, #fb464c);
   --color-red-rgb: var(--ctp-red);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --color-yellow-rgb: var(--ctp-yellow);
   --cursor: default;
   --cursor-link: pointer;
@@ -2013,17 +2013,17 @@ body {
   --header-height: 40px;
   --heading-formatting: var(--text-faint);
   --heading-spacing: calc(var(--p-spacing) * 2.5);
-  --hex-blue: light-dark(#89b4fa, #1e66f5);
-  --hex-green: light-dark(#a6e3a1, #40a02b);
-  --hex-lavender: light-dark(#b4befe, #7287fd);
-  --hex-mauve: light-dark(#cba6f7, #8839ef);
-  --hex-peach: light-dark(#fab387, #fe640b);
-  --hex-pink: light-dark(#f5c2e7, #ea76cb);
-  --hex-red: light-dark(#f38ba8, #d20f39);
-  --hex-sapphire: light-dark(#74c7ec, #209fb5);
-  --hex-sky: light-dark(#89dceb, #04a5e5);
-  --hex-teal: light-dark(#94e2d5, #179299);
-  --hex-yellow: light-dark(#f9e2af, #df8e1d);
+  --hex-blue: light-dark(#1e66f5, #89b4fa);
+  --hex-green: light-dark(#40a02b, #a6e3a1);
+  --hex-lavender: light-dark(#7287fd, #b4befe);
+  --hex-mauve: light-dark(#8839ef, #cba6f7);
+  --hex-peach: light-dark(#fe640b, #fab387);
+  --hex-pink: light-dark(#ea76cb, #f5c2e7);
+  --hex-red: light-dark(#d20f39, #f38ba8);
+  --hex-sapphire: light-dark(#209fb5, #74c7ec);
+  --hex-sky: light-dark(#04a5e5, #89dceb);
+  --hex-teal: light-dark(#179299, #94e2d5);
+  --hex-yellow: light-dark(#df8e1d, #f9e2af);
   --hr-color: var(--background-modifier-border);
   --hr-thickness: 2px;
   --icon-color: var(--text-muted);

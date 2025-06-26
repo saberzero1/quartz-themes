@@ -232,45 +232,45 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --background-modifier-border: light-dark(#1b1b1b, #cdcdcd);
-  --background-modifier-border-focus: light-dark(#070707, #b8b8b8);
-  --background-primary: light-dark(#1e1e1e, #f8f8f8);
-  --code-normal: light-dark(#9fbbd8, #4575ae);
-  --color-accent-2: light-dark(#c38ca0, #b6758a);
+  --background-modifier-border: light-dark(#cdcdcd, #1b1b1b);
+  --background-modifier-border-focus: light-dark(#b8b8b8, #070707);
+  --background-primary: light-dark(#f8f8f8, #1e1e1e);
+  --code-normal: light-dark(#4575ae, #9fbbd8);
+  --color-accent-2: light-dark(#b6758a, #c38ca0);
   --color-accent-hsl: light-dark(#a85d71, #a85d71);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --graph-line: light-dark(#484848, #cdcdcd);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --graph-line: light-dark(#cdcdcd, #484848);
   --graph-node-tag: light-dark(#d38d9f, #d38d9f);
   --graph-node-unresolved: light-dark(#b8b8b8, #b8b8b8);
-  --h1-color: light-dark(#e0b15e, #c49a52);
-  --text-accent: light-dark(#deaab8, #a75c70);
-  --text-accent-hover: light-dark(#e8c4ce, #693a46);
+  --h1-color: light-dark(#c49a52, #e0b15e);
+  --text-accent: light-dark(#a75c70, #deaab8);
+  --text-accent-hover: light-dark(#693a46, #e8c4ce);
   --text-faint: light-dark(#a0a0a0, #a0a0a0);
   --text-highlight-bg-rgb: light-dark(
-    var(--primary-accent-2-rgb),
     167,
     92,
-    112
+    112,
+    var(--primary-accent-2-rgb)
   );
-  --text-muted: light-dark(#b8b8b8, #5d5d5d);
-  --text-normal: light-dark(#cdcdcd, #484848);
+  --text-muted: light-dark(#5d5d5d, #b8b8b8);
+  --text-normal: light-dark(#484848, #cdcdcd);
 }
 body {
-  --background-modifier-border: light-dark(#1b1b1b, #cdcdcd);
-  --background-modifier-border-focus: light-dark(#070707, #b8b8b8);
+  --background-modifier-border: light-dark(#cdcdcd, #1b1b1b);
+  --background-modifier-border-focus: light-dark(#b8b8b8, #070707);
   --background-modifier-border-hover: #3f3f3f;
   --background-modifier-hover: #ffffff11;
-  --background-primary: light-dark(#1e1e1e, #f8f8f8);
+  --background-primary: light-dark(#f8f8f8, #1e1e1e);
   --bold-color: #7fa4ca;
   --bold-weight: 700;
   --checkbox-border-color: #a0a0a0;
@@ -285,7 +285,7 @@ body {
   --code-function: #e0b15e;
   --code-important: #e3ac97;
   --code-keyword: #deaab8;
-  --code-normal: light-dark(#9fbbd8, #4575ae);
+  --code-normal: light-dark(#4575ae, #9fbbd8);
   --code-property: #74c6c5;
   --code-punctuation: #b8b8b8;
   --code-string: #adbcb0;
@@ -293,19 +293,19 @@ body {
   --code-value: #c6b2c3;
   --collapse-icon-color: #a0a0a0;
   --collapse-icon-color-collapsed: #deaab8;
-  --color-accent-2: light-dark(#c38ca0, #b6758a);
+  --color-accent-2: light-dark(#b6758a, #c38ca0);
   --color-accent-hsl: light-dark(#a85d71, #a85d71);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -315,10 +315,10 @@ body {
     "??", "IBM Plex Sans", Helvetica Neue, ui-sans-serif, -apple-system,
     BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --graph-line: light-dark(#484848, #cdcdcd);
+  --graph-line: light-dark(#cdcdcd, #484848);
   --graph-node-tag: light-dark(#d38d9f, #d38d9f);
   --graph-node-unresolved: light-dark(#b8b8b8, #b8b8b8);
-  --h1-color: light-dark(#e0b15e, #c49a52);
+  --h1-color: light-dark(#c49a52, #e0b15e);
   --h1-font: "Architects Daughter";
   --h3-line-height: 1.5;
   --hr-color: transparent;
@@ -347,18 +347,18 @@ body {
   --tag-decoration-hover: none;
   --tag-radius: 2em;
   --tag-weight: inherit;
-  --text-accent: light-dark(#deaab8, #a75c70);
-  --text-accent-hover: light-dark(#e8c4ce, #693a46);
+  --text-accent: light-dark(#a75c70, #deaab8);
+  --text-accent-hover: light-dark(#693a46, #e8c4ce);
   --text-faint: light-dark(#a0a0a0, #a0a0a0);
   --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
   --text-highlight-bg-rgb: light-dark(
-    var(--primary-accent-2-rgb),
     167,
     92,
-    112
+    112,
+    var(--primary-accent-2-rgb)
   );
-  --text-muted: light-dark(#b8b8b8, #5d5d5d);
-  --text-normal: light-dark(#cdcdcd, #484848);
+  --text-muted: light-dark(#5d5d5d, #b8b8b8);
+  --text-normal: light-dark(#484848, #cdcdcd);
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: #1e1e1e;

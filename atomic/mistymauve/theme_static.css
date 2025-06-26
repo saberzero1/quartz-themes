@@ -932,48 +932,48 @@
 
 :root {
   --arvo-bold: "Arvo", serif;
-  --background-secondary-alt: light-dark(#363636, #212121);
+  --background-secondary-alt: light-dark(#212121, #363636);
   --color-accent: light-dark(hsl(#d8d9cf, 91%, 55%), hsl(#d8d9cf, 91%, 55%));
   --color-accent-1: light-dark(
-    hsl(calc(#d8d9cf - 3), calc(91% * 1.02), calc(55% * 1.15)),
-    hsl(calc(#d8d9cf - 1), calc(91% * 1.01), calc(55% * 1.075))
-  );
-  --color-accent-2: light-dark(
-    hsl(calc(#d8d9cf - 5), calc(91% * 1.05), calc(55% * 1.29)),
+    hsl(calc(#d8d9cf - 1), calc(91% * 1.01), calc(55% * 1.075)),
     hsl(calc(#d8d9cf - 3), calc(91% * 1.02), calc(55% * 1.15))
   );
+  --color-accent-2: light-dark(
+    hsl(calc(#d8d9cf - 3), calc(91% * 1.02), calc(55% * 1.15)),
+    hsl(calc(#d8d9cf - 5), calc(91% * 1.05), calc(55% * 1.29))
+  );
   --color-accent-hsl: light-dark(#d8d9cf, 91%, 55%, #d8d9cf, 91%, 55%);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
   --color-bright-gray: #ededed;
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
   --color-light-carmine-pink: #e26868;
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --color-timberwolf: #d8d9cf;
   --color-tulip: #ff8787;
-  --color-yellow: light-dark(#e0de71, #e0ac00);
-  --graph-node-attachment: light-dark(#4b4b4b, #ededed);
-  --h1-color: light-dark(#ededed, #ff8787);
-  --h2-color: light-dark(#ededed, #ff8787);
-  --h3-color: light-dark(#ededed, #ff8787);
-  --h4-color: light-dark(#ededed, #ff8787);
-  --h5-color: light-dark(#ededed, #ff8787);
-  --h6-color: light-dark(#ededed, #ff8787);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
+  --graph-node-attachment: light-dark(#ededed, #4b4b4b);
+  --h1-color: light-dark(#ff8787, #ededed);
+  --h2-color: light-dark(#ff8787, #ededed);
+  --h3-color: light-dark(#ff8787, #ededed);
+  --h4-color: light-dark(#ff8787, #ededed);
+  --h5-color: light-dark(#ff8787, #ededed);
+  --h6-color: light-dark(#ff8787, #ededed);
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
   --page-border: 9px solid transparent;
@@ -985,9 +985,9 @@
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
   --spreadHorizontalWrapped-margin-LR: -3.5px;
-  --table-border-color: light-dark(#ffffff, #000000);
-  --text-highlight-bg: light-dark(#e26868, #ff8787);
-  --text-selection: light-dark(#e26868, #ff8787);
+  --table-border-color: light-dark(#000000, #ffffff);
+  --text-highlight-bg: light-dark(#ff8787, #e26868);
+  --text-selection: light-dark(#ff8787, #e26868);
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
@@ -1627,7 +1627,7 @@ body {
   --background-primary: #000;
   --background-primary-alt: #111;
   --background-secondary: #1e1e1e;
-  --background-secondary-alt: light-dark(#363636, #212121);
+  --background-secondary-alt: light-dark(#212121, #363636);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -1746,34 +1746,34 @@ body {
   );
   --color-accent: light-dark(hsl(#d8d9cf, 91%, 55%), hsl(#d8d9cf, 91%, 55%));
   --color-accent-1: light-dark(
-    hsl(calc(#d8d9cf - 3), calc(91% * 1.02), calc(55% * 1.15)),
-    hsl(calc(#d8d9cf - 1), calc(91% * 1.01), calc(55% * 1.075))
-  );
-  --color-accent-2: light-dark(
-    hsl(calc(#d8d9cf - 5), calc(91% * 1.05), calc(55% * 1.29)),
+    hsl(calc(#d8d9cf - 1), calc(91% * 1.01), calc(55% * 1.075)),
     hsl(calc(#d8d9cf - 3), calc(91% * 1.02), calc(55% * 1.15))
   );
+  --color-accent-2: light-dark(
+    hsl(calc(#d8d9cf - 3), calc(91% * 1.02), calc(55% * 1.15)),
+    hsl(calc(#d8d9cf - 5), calc(91% * 1.05), calc(55% * 1.29))
+  );
   --color-accent-hsl: light-dark(#d8d9cf, 91%, 55%, #d8d9cf, 91%, 55%);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -1884,47 +1884,47 @@ body {
   --graph-controls-width: 240px;
   --graph-line: #3f3f3f;
   --graph-node: #e26868;
-  --graph-node-attachment: light-dark(#4b4b4b, #ededed);
+  --graph-node-attachment: light-dark(#ededed, #4b4b4b);
   --graph-node-focused: #ff8787;
   --graph-node-tag: #44cf6e;
   --graph-node-unresolved: #666666;
   --graph-text: #e26868;
-  --h1-color: light-dark(#ededed, #ff8787);
+  --h1-color: light-dark(#ff8787, #ededed);
   --h1-font: "Arvo", serif;
   --h1-line-height: 1.2;
   --h1-size: 2em;
   --h1-style: normal;
   --h1-variant: normal;
   --h1-weight: 400;
-  --h2-color: light-dark(#ededed, #ff8787);
+  --h2-color: light-dark(#ff8787, #ededed);
   --h2-font: "Arvo", serif;
   --h2-line-height: 1.2;
   --h2-size: 1.7em;
   --h2-style: normal;
   --h2-variant: normal;
   --h2-weight: 400;
-  --h3-color: light-dark(#ededed, #ff8787);
+  --h3-color: light-dark(#ff8787, #ededed);
   --h3-font: "Arvo", serif;
   --h3-line-height: 1.3;
   --h3-size: 1.5em;
   --h3-style: normal;
   --h3-variant: normal;
   --h3-weight: 400;
-  --h4-color: light-dark(#ededed, #ff8787);
+  --h4-color: light-dark(#ff8787, #ededed);
   --h4-font: "Arvo", serif;
   --h4-line-height: 1.4;
   --h4-size: 1.3em;
   --h4-style: normal;
   --h4-variant: normal;
   --h4-weight: 400;
-  --h5-color: light-dark(#ededed, #ff8787);
+  --h5-color: light-dark(#ff8787, #ededed);
   --h5-font: "Arvo", serif;
   --h5-line-height: 1.5;
   --h5-size: 1.1em;
   --h5-style: normal;
   --h5-variant: normal;
   --h5-weight: 400;
-  --h6-color: light-dark(#ededed, #ff8787);
+  --h6-color: light-dark(#ff8787, #ededed);
   --h6-font: "Arvo", serif;
   --h6-line-height: 1.5;
   --h6-size: 0.8em;
@@ -2282,7 +2282,7 @@ body {
   --table-add-button-border-color: transparent;
   --table-add-button-border-width: 1px;
   --table-background: transparent;
-  --table-border-color: light-dark(#ffffff, #000000);
+  --table-border-color: light-dark(#000000, #ffffff);
   --table-border-width: 1px;
   --table-cell-vertical-alignment: top;
   --table-column-alt-background: transparent;
@@ -2337,13 +2337,13 @@ body {
   );
   --text-error: #fb464c;
   --text-faint: #666666;
-  --text-highlight-bg: light-dark(#e26868, #ff8787);
+  --text-highlight-bg: light-dark(#ff8787, #e26868);
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: color.mix(#e26868, #ededed);
   --text-normal: #dadada;
   --text-on-accent: #ff8787;
   --text-on-accent-inverted: #ff8787;
-  --text-selection: light-dark(#e26868, #ff8787);
+  --text-selection: light-dark(#ff8787, #e26868);
   --text-success: #44cf6e;
   --text-warning: #e9973f;
   --titlebar-background: #ededed;
@@ -2827,7 +2827,7 @@ body.is-translucent {
 }
 
 .is-flashing {
-  background-color: light-dark(#e26868, #ff8787);
+  background-color: light-dark(#ff8787, #e26868);
   border-radius: 4px;
   color: #dadada;
   mix-blend-mode: darken;
@@ -3137,19 +3137,19 @@ body:not(.is-mobile) .app-container {
 }
 
 .markdown-source-view.mod-cm6 ::selection {
-  background-color: light-dark(#e26868, #ff8787);
+  background-color: light-dark(#ff8787, #e26868);
 }
 
 .markdown-source-view.mod-cm6 .cm-line .cm-selection {
-  background-color: light-dark(#e26868, #ff8787);
+  background-color: light-dark(#ff8787, #e26868);
 }
 
 .markdown-source-view.mod-cm6 .cm-line .cm-inline-code .cm-selection {
-  background-color: light-dark(#e26868, #ff8787);
+  background-color: light-dark(#ff8787, #e26868);
 }
 
 .markdown-source-view.mod-cm6 .cm-selectionBackground {
-  background-color: light-dark(#e26868, #ff8787);
+  background-color: light-dark(#ff8787, #e26868);
 }
 
 .markdown-source-view.mod-cm6
@@ -3157,7 +3157,7 @@ body:not(.is-mobile) .app-container {
   > .cm-scroller
   > .cm-selectionLayer
   > .cm-selectionBackground {
-  background-color: light-dark(#e26868, #ff8787);
+  background-color: light-dark(#ff8787, #e26868);
 }
 
 .markdown-source-view.mod-cm6.is-readable-line-width .cm-sizer {
@@ -4349,7 +4349,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h1 {
   --font-weight: 400;
-  color: light-dark(#ededed, #ff8787);
+  color: light-dark(#ff8787, #ededed);
   font-family: "Arvo", serif;
   font-size: 2em;
   font-style: normal;
@@ -4363,7 +4363,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h2 {
   --font-weight: 400;
-  color: light-dark(#ededed, #ff8787);
+  color: light-dark(#ff8787, #ededed);
   font-family: "Arvo", serif;
   font-size: 1.7em;
   font-style: normal;
@@ -4377,7 +4377,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h3 {
   --font-weight: 400;
-  color: light-dark(#ededed, #ff8787);
+  color: light-dark(#ff8787, #ededed);
   font-family: "Arvo", serif;
   font-size: 1.5em;
   font-style: normal;
@@ -4391,7 +4391,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h4 {
   --font-weight: 400;
-  color: light-dark(#ededed, #ff8787);
+  color: light-dark(#ff8787, #ededed);
   font-family: "Arvo", serif;
   font-size: 1.3em;
   font-style: normal;
@@ -4404,7 +4404,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h5 {
   --font-weight: 400;
-  color: light-dark(#ededed, #ff8787);
+  color: light-dark(#ff8787, #ededed);
   font-family: "Arvo", serif;
   font-size: 1.1em;
   font-style: normal;
@@ -4417,7 +4417,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h6 {
   --font-weight: 400;
-  color: light-dark(#ededed, #ff8787);
+  color: light-dark(#ff8787, #ededed);
   font-family: "Arvo", serif;
   font-size: 0.8em;
   font-style: normal;
@@ -4446,7 +4446,7 @@ body:not(.show-inline-title) .inline-title:not([data-level]) {
 }
 
 ::selection {
-  background-color: light-dark(#e26868, #ff8787);
+  background-color: light-dark(#ff8787, #e26868);
 }
 
 .markdown-reading-view {
@@ -5752,7 +5752,7 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
 }
 
 .community-item .suggestion-highlight {
-  background-color: light-dark(#e26868, #ff8787);
+  background-color: light-dark(#ff8787, #e26868);
 }
 
 @media (hover: hover) {
@@ -7756,8 +7756,8 @@ button.mod-destructive {
 
 .card {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   border: 1px solid transparent;
   border-radius: 4px;
@@ -8126,7 +8126,7 @@ button.mod-destructive {
 }
 
 .cm-s-obsidian span.cm-highlight.obsidian-search-match-highlight {
-  background-color: light-dark(#e26868, #ff8787);
+  background-color: light-dark(#ff8787, #e26868);
 }
 
 select {
@@ -9203,73 +9203,73 @@ input[type="datetime-local"].is-empty:focus-within::-webkit-datetime-edit-year-f
 }
 
 input[type="date"]::-webkit-datetime-edit-month-field:active {
-  background-color: light-dark(#e26868, #ff8787);
+  background-color: light-dark(#ff8787, #e26868);
   color: #dadada;
   cursor: text;
 }
 
 input[type="datetime-local"]::-webkit-datetime-edit-month-field:active {
-  background-color: light-dark(#e26868, #ff8787);
+  background-color: light-dark(#ff8787, #e26868);
   color: #dadada;
   cursor: text;
 }
 
 input[type="date"]::-webkit-datetime-edit-month-field:focus {
-  background-color: light-dark(#e26868, #ff8787);
+  background-color: light-dark(#ff8787, #e26868);
   color: #dadada;
   cursor: text;
 }
 
 input[type="datetime-local"]::-webkit-datetime-edit-month-field:focus {
-  background-color: light-dark(#e26868, #ff8787);
+  background-color: light-dark(#ff8787, #e26868);
   color: #dadada;
   cursor: text;
 }
 
 input[type="date"]::-webkit-datetime-edit-day-field:active {
-  background-color: light-dark(#e26868, #ff8787);
+  background-color: light-dark(#ff8787, #e26868);
   color: #dadada;
   cursor: text;
 }
 
 input[type="datetime-local"]::-webkit-datetime-edit-day-field:active {
-  background-color: light-dark(#e26868, #ff8787);
+  background-color: light-dark(#ff8787, #e26868);
   color: #dadada;
   cursor: text;
 }
 
 input[type="date"]::-webkit-datetime-edit-day-field:focus {
-  background-color: light-dark(#e26868, #ff8787);
+  background-color: light-dark(#ff8787, #e26868);
   color: #dadada;
   cursor: text;
 }
 
 input[type="datetime-local"]::-webkit-datetime-edit-day-field:focus {
-  background-color: light-dark(#e26868, #ff8787);
+  background-color: light-dark(#ff8787, #e26868);
   color: #dadada;
   cursor: text;
 }
 
 input[type="date"]::-webkit-datetime-edit-year-field:active {
-  background-color: light-dark(#e26868, #ff8787);
+  background-color: light-dark(#ff8787, #e26868);
   color: #dadada;
   cursor: text;
 }
 
 input[type="datetime-local"]::-webkit-datetime-edit-year-field:active {
-  background-color: light-dark(#e26868, #ff8787);
+  background-color: light-dark(#ff8787, #e26868);
   color: #dadada;
   cursor: text;
 }
 
 input[type="date"]::-webkit-datetime-edit-year-field:focus {
-  background-color: light-dark(#e26868, #ff8787);
+  background-color: light-dark(#ff8787, #e26868);
   color: #dadada;
   cursor: text;
 }
 
 input[type="datetime-local"]::-webkit-datetime-edit-year-field:focus {
-  background-color: light-dark(#e26868, #ff8787);
+  background-color: light-dark(#ff8787, #e26868);
   color: #dadada;
   cursor: text;
 }
@@ -10181,8 +10181,8 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   cursor: default;
   text-align: center;
@@ -11349,25 +11349,25 @@ kbd {
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
-  filter: drop-shadow(0px 0px 1px light-dark(#999999, #707070))
+  filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
 }
 
@@ -13716,7 +13716,7 @@ input.metadata-property-key-input:focus {
 
 h1 {
   --font-weight: 400;
-  color: light-dark(#ededed, #ff8787);
+  color: light-dark(#ff8787, #ededed);
   font-family: "Arvo", serif;
   font-size: 2em;
   font-style: normal;
@@ -13730,7 +13730,7 @@ h1 {
 
 h2 {
   --font-weight: 400;
-  color: light-dark(#ededed, #ff8787);
+  color: light-dark(#ff8787, #ededed);
   font-family: "Arvo", serif;
   font-size: 1.7em;
   font-style: normal;
@@ -13744,7 +13744,7 @@ h2 {
 
 h3 {
   --font-weight: 400;
-  color: light-dark(#ededed, #ff8787);
+  color: light-dark(#ff8787, #ededed);
   font-family: "Arvo", serif;
   font-size: 1.5em;
   font-style: normal;
@@ -13758,7 +13758,7 @@ h3 {
 
 h4 {
   --font-weight: 400;
-  color: light-dark(#ededed, #ff8787);
+  color: light-dark(#ff8787, #ededed);
   font-family: "Arvo", serif;
   font-size: 1.3em;
   font-style: normal;
@@ -13772,7 +13772,7 @@ h4 {
 
 h5 {
   --font-weight: 400;
-  color: light-dark(#ededed, #ff8787);
+  color: light-dark(#ff8787, #ededed);
   font-family: "Arvo", serif;
   font-size: 1.1em;
   font-style: normal;
@@ -13786,7 +13786,7 @@ h5 {
 
 h6 {
   --font-weight: 400;
-  color: light-dark(#ededed, #ff8787);
+  color: light-dark(#ff8787, #ededed);
   font-family: "Arvo", serif;
   font-size: 0.8em;
   font-style: normal;
@@ -13800,7 +13800,7 @@ h6 {
 
 .markdown-rendered h1 {
   --font-weight: 400;
-  color: light-dark(#ededed, #ff8787);
+  color: light-dark(#ff8787, #ededed);
   font-family: "Arvo", serif;
   font-size: 2em;
   font-style: normal;
@@ -13820,7 +13820,7 @@ h1 a {
 
 .markdown-rendered h2 {
   --font-weight: 400;
-  color: light-dark(#ededed, #ff8787);
+  color: light-dark(#ff8787, #ededed);
   font-family: "Arvo", serif;
   font-size: 1.7em;
   font-style: normal;
@@ -13840,7 +13840,7 @@ h2 a {
 
 .markdown-rendered h3 {
   --font-weight: 400;
-  color: light-dark(#ededed, #ff8787);
+  color: light-dark(#ff8787, #ededed);
   font-family: "Arvo", serif;
   font-size: 1.5em;
   font-style: normal;
@@ -13860,7 +13860,7 @@ h3 a {
 
 .markdown-rendered h4 {
   --font-weight: 400;
-  color: light-dark(#ededed, #ff8787);
+  color: light-dark(#ff8787, #ededed);
   font-family: "Arvo", serif;
   font-size: 1.3em;
   font-style: normal;
@@ -13880,7 +13880,7 @@ h4 a {
 
 .markdown-rendered h5 {
   --font-weight: 400;
-  color: light-dark(#ededed, #ff8787);
+  color: light-dark(#ff8787, #ededed);
   font-family: "Arvo", serif;
   font-size: 1.1em;
   font-style: normal;
@@ -13900,7 +13900,7 @@ h5 a {
 
 .markdown-rendered h6 {
   --font-weight: 400;
-  color: light-dark(#ededed, #ff8787);
+  color: light-dark(#ff8787, #ededed);
   font-family: "Arvo", serif;
   font-size: 0.8em;
   font-style: normal;
@@ -13941,7 +13941,7 @@ h6 a {
 
 .HyperMD-header-1 {
   --font-weight: 400;
-  color: light-dark(#ededed, #ff8787);
+  color: light-dark(#ff8787, #ededed);
   font-family: "Arvo", serif;
   font-size: 2em;
   font-style: normal;
@@ -13953,7 +13953,7 @@ h6 a {
 
 .HyperMD-list-line .cm-header-1 {
   --font-weight: 400;
-  color: light-dark(#ededed, #ff8787);
+  color: light-dark(#ff8787, #ededed);
   font-family: "Arvo", serif;
   font-size: 2em;
   font-style: normal;
@@ -13989,7 +13989,7 @@ h6 a {
 
 .HyperMD-header-2 {
   --font-weight: 400;
-  color: light-dark(#ededed, #ff8787);
+  color: light-dark(#ff8787, #ededed);
   font-family: "Arvo", serif;
   font-size: 1.7em;
   font-style: normal;
@@ -14001,7 +14001,7 @@ h6 a {
 
 .HyperMD-list-line .cm-header-2 {
   --font-weight: 400;
-  color: light-dark(#ededed, #ff8787);
+  color: light-dark(#ff8787, #ededed);
   font-family: "Arvo", serif;
   font-size: 1.7em;
   font-style: normal;
@@ -14037,7 +14037,7 @@ h6 a {
 
 .HyperMD-header-3 {
   --font-weight: 400;
-  color: light-dark(#ededed, #ff8787);
+  color: light-dark(#ff8787, #ededed);
   font-family: "Arvo", serif;
   font-size: 1.5em;
   font-style: normal;
@@ -14049,7 +14049,7 @@ h6 a {
 
 .HyperMD-list-line .cm-header-3 {
   --font-weight: 400;
-  color: light-dark(#ededed, #ff8787);
+  color: light-dark(#ff8787, #ededed);
   font-family: "Arvo", serif;
   font-size: 1.5em;
   font-style: normal;
@@ -14085,7 +14085,7 @@ h6 a {
 
 .HyperMD-header-4 {
   --font-weight: 400;
-  color: light-dark(#ededed, #ff8787);
+  color: light-dark(#ff8787, #ededed);
   font-family: "Arvo", serif;
   font-size: 1.3em;
   font-style: normal;
@@ -14096,7 +14096,7 @@ h6 a {
 
 .HyperMD-list-line .cm-header-4 {
   --font-weight: 400;
-  color: light-dark(#ededed, #ff8787);
+  color: light-dark(#ff8787, #ededed);
   font-family: "Arvo", serif;
   font-size: 1.3em;
   font-style: normal;
@@ -14131,7 +14131,7 @@ h6 a {
 
 .HyperMD-header-5 {
   --font-weight: 400;
-  color: light-dark(#ededed, #ff8787);
+  color: light-dark(#ff8787, #ededed);
   font-family: "Arvo", serif;
   font-size: 1.1em;
   font-style: normal;
@@ -14142,7 +14142,7 @@ h6 a {
 
 .HyperMD-list-line .cm-header-5 {
   --font-weight: 400;
-  color: light-dark(#ededed, #ff8787);
+  color: light-dark(#ff8787, #ededed);
   font-family: "Arvo", serif;
   font-size: 1.1em;
   font-style: normal;
@@ -14177,7 +14177,7 @@ h6 a {
 
 .HyperMD-header-6 {
   --font-weight: 400;
-  color: light-dark(#ededed, #ff8787);
+  color: light-dark(#ff8787, #ededed);
   font-family: "Arvo", serif;
   font-size: 0.8em;
   font-style: normal;
@@ -14189,7 +14189,7 @@ h6 a {
 
 .HyperMD-list-line .cm-header-6 {
   --font-weight: 400;
-  color: light-dark(#ededed, #ff8787);
+  color: light-dark(#ff8787, #ededed);
   font-family: "Arvo", serif;
   font-size: 0.8em;
   font-style: normal;
@@ -15417,7 +15417,7 @@ mjx-container {
 }
 
 .cm-html-embed td {
-  border: 1px solid light-dark(#ffffff, #000000);
+  border: 1px solid light-dark(#000000, #ffffff);
   color: inherit;
   font-size: 16px;
   max-width: none;
@@ -15428,7 +15428,7 @@ mjx-container {
 }
 
 .markdown-rendered td {
-  border: 1px solid light-dark(#ffffff, #000000);
+  border: 1px solid light-dark(#000000, #ffffff);
   color: inherit;
   font-size: 16px;
   max-width: none;
@@ -15439,7 +15439,7 @@ mjx-container {
 }
 
 .cm-html-embed th {
-  border: 1px solid light-dark(#ffffff, #000000);
+  border: 1px solid light-dark(#000000, #ffffff);
   color: #e26868;
   font-family: inherit;
   font-size: 16px;
@@ -15453,7 +15453,7 @@ mjx-container {
 }
 
 .markdown-rendered th {
-  border: 1px solid light-dark(#ffffff, #000000);
+  border: 1px solid light-dark(#000000, #ffffff);
   color: #e26868;
   font-family: inherit;
   font-size: 16px;
@@ -16019,7 +16019,7 @@ em {
 }
 
 .markdown-rendered mark {
-  background-color: light-dark(#e26868, #ff8787);
+  background-color: light-dark(#ff8787, #e26868);
   color: #dadada;
 }
 
@@ -16028,12 +16028,12 @@ em {
 }
 
 .cm-s-obsidian span.cm-formatting-highlight {
-  background-color: light-dark(#e26868, #ff8787);
+  background-color: light-dark(#ff8787, #e26868);
   color: #dadada;
 }
 
 .cm-s-obsidian span.cm-highlight {
-  background-color: light-dark(#e26868, #ff8787);
+  background-color: light-dark(#ff8787, #e26868);
   color: #dadada;
 }
 
@@ -16234,7 +16234,7 @@ em {
 }
 
 .bases-header .title {
-  color: light-dark(#ededed, #ff8787);
+  color: light-dark(#ff8787, #ededed);
   font-size: 1.7em;
 }
 
@@ -16609,7 +16609,7 @@ em {
 
 .bases-query-container .filter-group .filter-group {
   background-color: #111;
-  border: 1px solid light-dark(#ffffff, #000000);
+  border: 1px solid light-dark(#000000, #ffffff);
   border-radius: 8px;
   padding: 6px;
 }
@@ -16954,7 +16954,7 @@ em {
 }
 
 .bases-tbody {
-  box-shadow: 0 1px 0 light-dark(#ffffff, #000000);
+  box-shadow: 0 1px 0 light-dark(#000000, #ffffff);
   position: relative;
   width: 100%;
 }
@@ -16965,7 +16965,7 @@ em {
 
 .bases-tr {
   --input-height: 30px;
-  box-shadow: 0 -1px 0 light-dark(#ffffff, #000000);
+  box-shadow: 0 -1px 0 light-dark(#000000, #ffffff);
   display: flex;
   flex-direction: row;
   height: 30px;
@@ -16979,7 +16979,7 @@ em {
 
 .bases-td {
   align-items: center;
-  box-shadow: -1px 0 0 light-dark(#ffffff, #000000);
+  box-shadow: -1px 0 0 light-dark(#000000, #ffffff);
   display: flex;
   flex: 1 0 auto;
   height: 30px;
@@ -17631,7 +17631,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .graph-view.color-fill-attachment {
-  color: light-dark(#4b4b4b, #ededed);
+  color: light-dark(#ededed, #4b4b4b);
 }
 
 .graph-view.color-fill-unresolved {
@@ -18519,7 +18519,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 @media (hover: hover) {
   .search-result-file-match:hover {
-    background-color: light-dark(#e26868, #ff8787);
+    background-color: light-dark(#ff8787, #e26868);
     color: #dadada;
   }
   .search-result-file-match:hover .search-result-file-match-replace-button {
@@ -18528,7 +18528,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .search-result-file-match.mobile-tap {
-  background-color: light-dark(#e26868, #ff8787);
+  background-color: light-dark(#ff8787, #e26868);
   color: #dadada;
 }
 
@@ -20548,12 +20548,12 @@ body.is-mobile .canvas-node-resizer {
 
 .canvas-color-picker-item.canvas-color-picker-custom:not(.is-active) {
   background: conic-gradient(
-    light-dark(#fb464c, #e93147),
-    light-dark(#e0de71, #e0ac00),
-    light-dark(#44cf6e, #08b94e),
-    light-dark(#027aff, #086ddd),
-    light-dark(#a882ff, #7852ee),
-    light-dark(#fb464c, #e93147)
+    light-dark(#e93147, #fb464c),
+    light-dark(#e0ac00, #e0de71),
+    light-dark(#08b94e, #44cf6e),
+    light-dark(#086ddd, #027aff),
+    light-dark(#7852ee, #a882ff),
+    light-dark(#e93147, #fb464c)
   );
 }
 

@@ -1,48 +1,48 @@
 :root {
-  --background-modifier-active-hover: light-dark(#c86464, #faf0f0);
+  --background-modifier-active-hover: light-dark(#faf0f0, #c86464);
   --background-primary: light-dark(#282a2f, #282a2f);
-  --background-secondary: light-dark(#212327, #fdf9f7);
-  --background-secondary-alt: light-dark(#525760, #282a2f);
+  --background-secondary: light-dark(#fdf9f7, #212327);
+  --background-secondary-alt: light-dark(#282a2f, #525760);
   --blockquote-background-color: light-dark(#282a2f, #282a2f);
   --blockquote-border-color: light-dark(#c86464, #c86464);
-  --code-background: light-dark(#2d2f34, #36393f);
-  --code-comment: light-dark(#525760, #838995);
-  --code-function: light-dark(#cc6666, #c65353);
-  --code-important: light-dark(#cc6666, #c65353);
-  --code-keyword: light-dark(#d3975f, #ce8a4b);
+  --code-background: light-dark(#36393f, #2d2f34);
+  --code-comment: light-dark(#838995, #525760);
+  --code-function: light-dark(#c65353, #cc6666);
+  --code-important: light-dark(#c65353, #cc6666);
+  --code-keyword: light-dark(#ce8a4b, #d3975f);
   --code-normal: light-dark(#d6d8dc, #d6d8dc);
   --code-operator: light-dark(#9fa3ad, #9fa3ad);
-  --code-property: light-dark(#76bad5, #4fa7c9);
+  --code-property: light-dark(#4fa7c9, #76bad5);
   --code-punctuation: light-dark(#838995, #838995);
-  --code-string: light-dark(#9cca77, #a3c18b);
-  --code-tag: light-dark(#d27979, #cc6666);
-  --code-value: light-dark(#cc9766, #c68a53);
+  --code-string: light-dark(#a3c18b, #9cca77);
+  --code-tag: light-dark(#cc6666, #d27979);
+  --code-value: light-dark(#c68a53, #cc9766);
   --collapse-icon-color-collapsed: light-dark(#c86464, #c86464);
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-base-80: light-dark(#d6d8dc, #444444);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-base-80: light-dark(#444444, #d6d8dc);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --h1-color: light-dark(#f1f2f3, #f1f2f3);
   --h2-color: light-dark(#f1f2f3, #f1f2f3);
   --h3-color: light-dark(#d6d8dc, #d6d8dc);
@@ -58,8 +58,8 @@
   --loading-icon-delay: 400ms;
   --nav-item-background-active: light-dark(#c86464, #c86464);
   --nav-item-background-hover: light-dark(#c86464, #c86464);
-  --nav-item-color-active: light-dark(#d6d8dc, #36393f);
-  --nav-item-color-hover: light-dark(#d6d8dc, #36393f);
+  --nav-item-color-active: light-dark(#36393f, #d6d8dc);
+  --nav-item-color-hover: light-dark(#36393f, #d6d8dc);
   --page-border: 9px solid transparent;
   --page-margin: 1px auto -8px;
   --pdfViewer-padding-bottom: 0;
@@ -75,12 +75,12 @@
   --table-header-background: light-dark(#36393f, #36393f);
   --tag-background: light-dark(#c86464, #c86464);
   --tag-background-hover: light-dark(#dc7878, #dc7878);
-  --tag-color: light-dark(#f1f2f3, #2d2f34);
-  --tag-color-hover: light-dark(#f1f2f3, #212327);
+  --tag-color: light-dark(#2d2f34, #f1f2f3);
+  --tag-color-hover: light-dark(#212327, #f1f2f3);
   --text-normal: light-dark(#babdc4, #babdc4);
-  --text-selection: light-dark(#b34d4d, #c86464);
-  --titlebar-background: light-dark(#212327, #36393f);
-  --titlebar-background-focused: light-dark(#212327, #36393f);
+  --text-selection: light-dark(#c86464, #b34d4d);
+  --titlebar-background: light-dark(#36393f, #212327);
+  --titlebar-background-focused: light-dark(#36393f, #212327);
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
@@ -99,7 +99,7 @@ body {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
-  --background-modifier-active-hover: light-dark(#c86464, #faf0f0);
+  --background-modifier-active-hover: light-dark(#faf0f0, #c86464);
   --background-modifier-border: #525760;
   --background-modifier-border-focus: #838995;
   --background-modifier-border-hover: #5e636e;
@@ -113,8 +113,8 @@ body {
   --background-modifier-success-rgb: 68, 207, 110;
   --background-primary: light-dark(#282a2f, #282a2f);
   --background-primary-alt: #2d2f34;
-  --background-secondary: light-dark(#212327, #fdf9f7);
-  --background-secondary-alt: light-dark(#525760, #282a2f);
+  --background-secondary: light-dark(#fdf9f7, #212327);
+  --background-secondary-alt: light-dark(#282a2f, #525760);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 3px;
   --bases-filter-menu-width: 520px;
@@ -204,50 +204,50 @@ body {
   --checklist-done-color: #babdc4;
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: 3px;
-  --code-background: light-dark(#2d2f34, #36393f);
+  --code-background: light-dark(#36393f, #2d2f34);
   --code-border-color: transparent;
   --code-border-width: 0px;
-  --code-comment: light-dark(#525760, #838995);
-  --code-function: light-dark(#cc6666, #c65353);
-  --code-important: light-dark(#cc6666, #c65353);
-  --code-keyword: light-dark(#d3975f, #ce8a4b);
+  --code-comment: light-dark(#838995, #525760);
+  --code-function: light-dark(#c65353, #cc6666);
+  --code-important: light-dark(#c65353, #cc6666);
+  --code-keyword: light-dark(#ce8a4b, #d3975f);
   --code-normal: light-dark(#d6d8dc, #d6d8dc);
   --code-operator: light-dark(#9fa3ad, #9fa3ad);
-  --code-property: light-dark(#76bad5, #4fa7c9);
+  --code-property: light-dark(#4fa7c9, #76bad5);
   --code-punctuation: light-dark(#838995, #838995);
   --code-radius: 3px;
   --code-size: 0.8rem;
-  --code-string: light-dark(#9cca77, #a3c18b);
-  --code-tag: light-dark(#d27979, #cc6666);
-  --code-value: light-dark(#cc9766, #c68a53);
+  --code-string: light-dark(#a3c18b, #9cca77);
+  --code-tag: light-dark(#cc6666, #d27979);
+  --code-value: light-dark(#c68a53, #cc9766);
   --code-white-space: pre-wrap;
   --collapse-icon-color: #6a6f7c;
   --collapse-icon-color-collapsed: light-dark(#c86464, #c86464);
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-base-80: light-dark(#d6d8dc, #444444);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-base-80: light-dark(#444444, #d6d8dc);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -565,9 +565,9 @@ body {
   --nav-item-children-margin-start: 12px;
   --nav-item-children-padding-start: 4px;
   --nav-item-color: #babdc4;
-  --nav-item-color-active: light-dark(#d6d8dc, #36393f);
+  --nav-item-color-active: light-dark(#36393f, #d6d8dc);
   --nav-item-color-highlighted: #c86464;
-  --nav-item-color-hover: light-dark(#d6d8dc, #36393f);
+  --nav-item-color-hover: light-dark(#36393f, #d6d8dc);
   --nav-item-color-selected: #babdc4;
   --nav-item-padding: 4px 8px 4px 24px;
   --nav-item-parent-padding: 6px 8px 6px 24px;
@@ -752,8 +752,8 @@ body {
   --tag-border-color: #8a5cf526;
   --tag-border-color-hover: #8a5cf526;
   --tag-border-width: 0px;
-  --tag-color: light-dark(#f1f2f3, #2d2f34);
-  --tag-color-hover: light-dark(#f1f2f3, #212327);
+  --tag-color: light-dark(#2d2f34, #f1f2f3);
+  --tag-color-hover: light-dark(#212327, #f1f2f3);
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-padding-x: 0.65em;
@@ -771,11 +771,11 @@ body {
   --text-normal: light-dark(#babdc4, #babdc4);
   --text-on-accent: #ffffff;
   --text-on-accent-inverted: #000000;
-  --text-selection: light-dark(#b34d4d, #c86464);
+  --text-selection: light-dark(#c86464, #b34d4d);
   --text-success: #44cf6e;
   --text-warning: #e9973f;
-  --titlebar-background: light-dark(#212327, #36393f);
-  --titlebar-background-focused: light-dark(#212327, #36393f);
+  --titlebar-background: light-dark(#36393f, #212327);
+  --titlebar-background-focused: light-dark(#36393f, #212327);
   --titlebar-border-color: transparent;
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;
@@ -804,11 +804,11 @@ body {
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
   caret-color: #c86464;
-  color: light-dark(light-dark(#b3b3b3, #5c5c5c), light-dark(#b3b3b3, #5c5c5c));
+  color: light-dark(light-dark(#5c5c5c, #b3b3b3), light-dark(#5c5c5c, #b3b3b3));
   contain: initial;
   font-family: "??", "??", "SF Pro", ui-sans-serif, sans-serif;
   font-size: 16px;
@@ -850,8 +850,8 @@ h6 a {
 
 h1 {
   --font-weight: 700;
-  border-bottom: 1px solid light-dark(#3f3f3f, #d4d4d4);
-  color: light-dark(light-dark(#dadada, #222222), light-dark(#dadada, #222222));
+  border-bottom: 1px solid light-dark(#d4d4d4, #3f3f3f);
+  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
   font-family: "SF Pro", ui-sans-serif, sans-serif;
   font-size: 2rem;
   font-style: normal;
@@ -866,8 +866,8 @@ h1 {
 
 h2 {
   --font-weight: 600;
-  border-bottom: 1px solid light-dark(#3f3f3f, #d4d4d4);
-  color: light-dark(light-dark(#dadada, #222222), light-dark(#dadada, #222222));
+  border-bottom: 1px solid light-dark(#d4d4d4, #3f3f3f);
+  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
   font-family: "SF Pro", ui-sans-serif, sans-serif;
   font-size: 1.65rem;
   font-style: normal;
@@ -882,7 +882,7 @@ h2 {
 
 h3 {
   --font-weight: 600;
-  color: light-dark(light-dark(#d6d8dc, #444444), light-dark(#d6d8dc, #444444));
+  color: light-dark(light-dark(#444444, #d6d8dc), light-dark(#444444, #d6d8dc));
   font-family: "SF Pro", ui-sans-serif, sans-serif;
   font-size: 1.5rem;
   font-style: normal;
@@ -896,7 +896,7 @@ h3 {
 
 h4 {
   --font-weight: 600;
-  color: light-dark(light-dark(#d6d8dc, #444444), light-dark(#d6d8dc, #444444));
+  color: light-dark(light-dark(#444444, #d6d8dc), light-dark(#444444, #d6d8dc));
   font-family: "SF Pro", ui-sans-serif, sans-serif;
   font-size: 1.25rem;
   font-style: normal;
@@ -910,7 +910,7 @@ h4 {
 
 h5 {
   --font-weight: 600;
-  color: light-dark(light-dark(#d6d8dc, #444444), light-dark(#d6d8dc, #444444));
+  color: light-dark(light-dark(#444444, #d6d8dc), light-dark(#444444, #d6d8dc));
   font-family: "SF Pro", ui-sans-serif, sans-serif;
   font-size: 1.125rem;
   font-style: normal;
@@ -924,7 +924,7 @@ h5 {
 
 h6 {
   --font-weight: 600;
-  color: light-dark(light-dark(#d6d8dc, #444444), light-dark(#d6d8dc, #444444));
+  color: light-dark(light-dark(#444444, #d6d8dc), light-dark(#444444, #d6d8dc));
   font-family: "SF Pro", ui-sans-serif, sans-serif;
   font-size: 1rem;
   font-style: normal;
@@ -938,8 +938,8 @@ h6 {
 
 .markdown-rendered pre {
   background-color: light-dark(
-    light-dark(#242424, #fafafa),
-    light-dark(#262626, #f6f6f6)
+    light-dark(#f6f6f6, #262626),
+    light-dark(#fafafa, #242424)
   );
   border: 0px solid transparent;
   border-radius: 3px;
@@ -953,12 +953,12 @@ h6 {
 .markdown-rendered code {
   -webkit-box-decoration-break: clone;
   background-color: light-dark(
-    light-dark(#242424, #fafafa),
-    light-dark(#262626, #f6f6f6)
+    light-dark(#f6f6f6, #262626),
+    light-dark(#fafafa, #242424)
   );
   border: 0px solid transparent;
   border-radius: 3px;
-  color: light-dark(light-dark(#d6d8dc, #444444), light-dark(#d6d8dc, #444444));
+  color: light-dark(light-dark(#444444, #d6d8dc), light-dark(#444444, #d6d8dc));
   font-family:
     "??", "??", "SF Mono", ui-monospace, "Cascadia Code", "Source Code Pro",
     Menlo, Consolas, "DejaVu Sans Mono", monospace;
@@ -1023,7 +1023,7 @@ h6 {
 
 .callout-content {
   background-color: transparent;
-  color: light-dark(#d6d8dc, #444444);
+  color: light-dark(#444444, #d6d8dc);
   overflow-x: auto;
   padding: 0;
 }
@@ -1207,8 +1207,8 @@ h6 {
 
 .popover {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
   border: 1px solid transparent;
   border-radius: 8px;
@@ -1224,8 +1224,8 @@ h6 {
 
 .prompt {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
   border: 0.15rem solid #c86464;
   border-radius: 12px;
@@ -1246,11 +1246,11 @@ h6 {
 
 input.prompt-input {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
   border: none;
-  border-bottom: 1px solid light-dark(light-dark(#1e1e1e, #ffffff), #fdf9f7);
+  border-bottom: 1px solid light-dark(#fdf9f7, light-dark(#ffffff, #1e1e1e));
   border-radius: 0;
   font-size: 16px;
   height: 48px;
@@ -1269,14 +1269,14 @@ input.prompt-input {
 
 .markdown-rendered mark {
   background-color: #ffd00066;
-  color: light-dark(light-dark(#b3b3b3, #5c5c5c), light-dark(#b3b3b3, #5c5c5c));
+  color: light-dark(light-dark(#5c5c5c, #b3b3b3), light-dark(#5c5c5c, #b3b3b3));
 }
 
 a.tag {
   background-color: #c86464;
   border: 0px solid #8a5cf526;
   border-radius: 3px;
-  color: light-dark(light-dark(#dadada, #222222), light-dark(#242424, #fafafa));
+  color: light-dark(light-dark(#fafafa, #242424), light-dark(#222222, #dadada));
   font-size: 0.875em;
   font-weight: inherit;
   line-height: 1;
@@ -1289,7 +1289,7 @@ input[type="search"] {
   background: transparent;
   border: 1px solid transparent;
   border-radius: 3px;
-  color: light-dark(light-dark(#b3b3b3, #5c5c5c), light-dark(#b3b3b3, #5c5c5c));
+  color: light-dark(light-dark(#5c5c5c, #b3b3b3), light-dark(#5c5c5c, #b3b3b3));
   font-family: inherit;
   font-size: 14.992px;
   height: 40px;
@@ -1354,13 +1354,13 @@ input[type="search"] {
 
 .nav-file-title.is-active {
   background-color: #c86464;
-  color: light-dark(light-dark(#d6d8dc, #444444), light-dark(#262626, #f6f6f6));
+  color: light-dark(light-dark(#f6f6f6, #262626), light-dark(#444444, #d6d8dc));
   font-weight: inherit;
 }
 
 .nav-folder-title.is-active {
   background-color: #c86464;
-  color: light-dark(light-dark(#d6d8dc, #444444), light-dark(#262626, #f6f6f6));
+  color: light-dark(light-dark(#f6f6f6, #262626), light-dark(#444444, #d6d8dc));
   font-weight: inherit;
 }
 
@@ -1407,13 +1407,13 @@ input[type="search"] {
 
 .tree-item-self.is-clickable.mobile-tap {
   background-color: #c86464;
-  color: light-dark(light-dark(#d6d8dc, #444444), light-dark(#262626, #f6f6f6));
+  color: light-dark(light-dark(#f6f6f6, #262626), light-dark(#444444, #d6d8dc));
   font-weight: inherit;
 }
 
 .tree-item-self.is-active {
   background-color: #c86464;
-  color: light-dark(light-dark(#d6d8dc, #444444), light-dark(#262626, #f6f6f6));
+  color: light-dark(light-dark(#f6f6f6, #262626), light-dark(#444444, #d6d8dc));
   font-weight: inherit;
 }
 
@@ -1488,11 +1488,11 @@ input[type="search"] {
 
 kbd {
   background-color: light-dark(
-    light-dark(#242424, #fafafa),
-    light-dark(#262626, #f6f6f6)
+    light-dark(#f6f6f6, #262626),
+    light-dark(#fafafa, #242424)
   );
   border-radius: 3px;
-  color: light-dark(light-dark(#d6d8dc, #444444), light-dark(#d6d8dc, #444444));
+  color: light-dark(light-dark(#444444, #d6d8dc), light-dark(#444444, #d6d8dc));
   font-family:
     "??", "??", "SF Mono", ui-monospace, "Cascadia Code", "Source Code Pro",
     Menlo, Consolas, "DejaVu Sans Mono", monospace;
@@ -1630,7 +1630,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-arrow {
-  color: light-dark(light-dark(#b3b3b3, #5c5c5c), light-dark(#b3b3b3, #5c5c5c));
+  color: light-dark(light-dark(#5c5c5c, #b3b3b3), light-dark(#5c5c5c, #b3b3b3));
   opacity: 0.5;
 }
 
@@ -1656,8 +1656,8 @@ svg.svg-icon {
 
 .graph-controls {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
   border-radius: 8px;
   inset-inline-end: 12px;
@@ -1891,21 +1891,21 @@ svg.svg-icon {
 }
 
 .workspace-tabs .workspace-leaf {
-  background-color: light-dark(light-dark(#1e1e1e, #ffffff), #fdf9f7);
+  background-color: light-dark(#fdf9f7, light-dark(#ffffff, #1e1e1e));
   height: 100%;
 }
 
 .workspace-split.mod-root {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
 }
 
 .workspace-split.mod-root .view-content {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
 }
 

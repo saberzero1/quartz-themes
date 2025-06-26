@@ -1,29 +1,29 @@
 :root {
-  --background-secondary-alt: light-dark(#363636, #212121);
+  --background-secondary-alt: light-dark(#212121, #363636);
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --font-family-editor: Avenir, Avenir Next, sans-serif;
   --font-family-preview: Avenir, Avenir Next, sans-serif;
   --font-size-code: 15px;
@@ -42,21 +42,21 @@
   --page-border: 9px solid transparent;
   --page-margin: 1px auto -8px;
   --pdfViewer-padding-bottom: 0;
-  --rp-base: light-dark(#191724, #faf4ed);
-  --rp-foam: light-dark(#9ccfd8, #56949f);
-  --rp-gold: light-dark(#f6c177, #ea9d34);
-  --rp-highlightHigh: light-dark(#524f67, #cecacd);
-  --rp-highlightLow: light-dark(#21202e, #f4ede8);
-  --rp-highlightMed: light-dark(#403d52, #dfdad9);
-  --rp-iris: light-dark(#c4a7e7, #907aa9);
-  --rp-love: light-dark(#eb6f92, #b4637a);
-  --rp-muted: light-dark(#6e6a86, #9893a5);
-  --rp-overlay: light-dark(#26233a, #f2e9e1);
-  --rp-pine: light-dark(#31748f, #286983);
-  --rp-rose: light-dark(#ebbcba, #d7827e);
-  --rp-subtle: light-dark(#908caa, #797593);
-  --rp-surface: light-dark(#1f1d2e, #fffaf3);
-  --rp-text: light-dark(#e0def4, #575279);
+  --rp-base: light-dark(#faf4ed, #191724);
+  --rp-foam: light-dark(#56949f, #9ccfd8);
+  --rp-gold: light-dark(#ea9d34, #f6c177);
+  --rp-highlightHigh: light-dark(#cecacd, #524f67);
+  --rp-highlightLow: light-dark(#f4ede8, #21202e);
+  --rp-highlightMed: light-dark(#dfdad9, #403d52);
+  --rp-iris: light-dark(#907aa9, #c4a7e7);
+  --rp-love: light-dark(#b4637a, #eb6f92);
+  --rp-muted: light-dark(#9893a5, #6e6a86);
+  --rp-overlay: light-dark(#f2e9e1, #26233a);
+  --rp-pine: light-dark(#286983, #31748f);
+  --rp-rose: light-dark(#d7827e, #ebbcba);
+  --rp-subtle: light-dark(#797593, #908caa);
+  --rp-surface: light-dark(#fffaf3, #1f1d2e);
+  --rp-text: light-dark(#575279, #e0def4);
   --safe-area-inset-bottom: env(safe-area-inset-bottom);
   --safe-area-inset-left: env(safe-area-inset-left);
   --safe-area-inset-right: env(safe-area-inset-right);
@@ -99,7 +99,7 @@ body {
   --background-primary: #1f1d2e;
   --background-primary-alt: #191724;
   --background-secondary: #191724;
-  --background-secondary-alt: light-dark(#363636, #212121);
+  --background-secondary-alt: light-dark(#212121, #363636);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -212,29 +212,29 @@ body {
   --collapse-icon-color: #eb6f92;
   --collapse-icon-color-collapsed: #a68af9;
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -627,27 +627,27 @@ body {
   --ribbon-background-collapsed: #1f1d2e;
   --ribbon-padding: 8px 4px 12px;
   --ribbon-width: 44px;
-  --rp-base: light-dark(#191724, #faf4ed);
-  --rp-foam: light-dark(#9ccfd8, #56949f);
-  --rp-gold: light-dark(#f6c177, #ea9d34);
+  --rp-base: light-dark(#faf4ed, #191724);
+  --rp-foam: light-dark(#56949f, #9ccfd8);
+  --rp-gold: light-dark(#ea9d34, #f6c177);
   --rp-h1: #eb6f92;
   --rp-h2: #c4a7e7;
   --rp-h3: #ebbcba;
   --rp-h4: #f6c177;
   --rp-h5: #9ccfd8;
   --rp-h6: #31748f;
-  --rp-highlightHigh: light-dark(#524f67, #cecacd);
-  --rp-highlightLow: light-dark(#21202e, #f4ede8);
-  --rp-highlightMed: light-dark(#403d52, #dfdad9);
-  --rp-iris: light-dark(#c4a7e7, #907aa9);
-  --rp-love: light-dark(#eb6f92, #b4637a);
-  --rp-muted: light-dark(#6e6a86, #9893a5);
-  --rp-overlay: light-dark(#26233a, #f2e9e1);
-  --rp-pine: light-dark(#31748f, #286983);
-  --rp-rose: light-dark(#ebbcba, #d7827e);
-  --rp-subtle: light-dark(#908caa, #797593);
-  --rp-surface: light-dark(#1f1d2e, #fffaf3);
-  --rp-text: light-dark(#e0def4, #575279);
+  --rp-highlightHigh: light-dark(#cecacd, #524f67);
+  --rp-highlightLow: light-dark(#f4ede8, #21202e);
+  --rp-highlightMed: light-dark(#dfdad9, #403d52);
+  --rp-iris: light-dark(#907aa9, #c4a7e7);
+  --rp-love: light-dark(#b4637a, #eb6f92);
+  --rp-muted: light-dark(#9893a5, #6e6a86);
+  --rp-overlay: light-dark(#f2e9e1, #26233a);
+  --rp-pine: light-dark(#286983, #31748f);
+  --rp-rose: light-dark(#d7827e, #ebbcba);
+  --rp-subtle: light-dark(#797593, #908caa);
+  --rp-surface: light-dark(#fffaf3, #1f1d2e);
+  --rp-text: light-dark(#575279, #e0def4);
   --scrollbar-active-thumb-bg: #26233a;
   --scrollbar-bg: #26233a;
   --scrollbar-thumb-bg: #26233a;
@@ -830,10 +830,10 @@ body {
   --zoom-factor: 1;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background: light-dark(#191724, #faf4ed);
+  background: light-dark(#faf4ed, #191724);
   background-color: #1f1d2e;
   caret-color: #a68af9;
-  color: light-dark(#e0def4, #575279);
+  color: light-dark(#575279, #e0def4);
   contain: initial;
   font-family:
     "??",
@@ -1625,7 +1625,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill {
-  color: light-dark(#c4a7e7, #907aa9);
+  color: light-dark(#907aa9, #c4a7e7);
 }
 
 .graph-view.color-fill-focused {
@@ -1633,15 +1633,15 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-tag {
-  color: light-dark(#9ccfd8, #56949f);
+  color: light-dark(#56949f, #9ccfd8);
 }
 
 .graph-view.color-fill-attachment {
-  color: light-dark(#f6c177, #ea9d34);
+  color: light-dark(#ea9d34, #f6c177);
 }
 
 .graph-view.color-fill-unresolved {
-  color: light-dark(#ebbcba, #d7827e);
+  color: light-dark(#d7827e, #ebbcba);
   opacity: 0.5;
 }
 
@@ -1670,7 +1670,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-arrow {
-  color: light-dark(#31748f, #286983);
+  color: light-dark(#286983, #31748f);
   opacity: 0.5;
 }
 
@@ -1679,7 +1679,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-line {
-  color: light-dark(#524f67, #cecacd);
+  color: light-dark(#cecacd, #524f67);
 }
 
 .graph-view.color-text {

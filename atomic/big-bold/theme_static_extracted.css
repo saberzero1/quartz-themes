@@ -1,31 +1,31 @@
 :root {
-  --background-secondary-alt: light-dark(#9496ac66, #f4f5f6);
+  --background-secondary-alt: light-dark(#f4f5f6, #9496ac66);
   --color-accent: light-dark(#7988ec, #7988ec);
-  --color-accent-1: light-dark(#a7b5f3, #909ef0);
-  --color-accent-2: light-dark(#d3dbfa, #a7b5f3);
+  --color-accent-1: light-dark(#909ef0, #a7b5f3);
+  --color-accent-2: light-dark(#a7b5f3, #d3dbfa);
   --color-accent-3: light-dark(#ceaff4, #ceaff4);
   --color-accent-hsl: light-dark(#7988ec, #7988ec);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
-  --doc-bg: light-dark(#2b3946, #f0f5f5);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
+  --doc-bg: light-dark(#f0f5f5, #2b3946);
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
   --page-border: 9px solid transparent;
@@ -69,7 +69,7 @@ body {
   --background-primary: #f7f7f8bf;
   --background-primary-alt: #f1f2f3;
   --background-secondary: #e5e6eb;
-  --background-secondary-alt: light-dark(#9496ac66, #f4f5f6);
+  --background-secondary-alt: light-dark(#f4f5f6, #9496ac66);
   --bases-embed-border: 1px solid #d9dde8;
   --bases-embed-border-radius: 7px;
   --bases-filter-menu-width: 520px;
@@ -181,30 +181,30 @@ body {
   --collapse-icon-color: #787689;
   --collapse-icon-color-collapsed: #7089eb;
   --color-accent: light-dark(#7988ec, #7988ec);
-  --color-accent-1: light-dark(#a7b5f3, #909ef0);
-  --color-accent-2: light-dark(#d3dbfa, #a7b5f3);
+  --color-accent-1: light-dark(#909ef0, #a7b5f3);
+  --color-accent-2: light-dark(#a7b5f3, #d3dbfa);
   --color-accent-3: light-dark(#ceaff4, #ceaff4);
   --color-accent-hsl: light-dark(#7988ec, #7988ec);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --custom-code-height: 1em;
@@ -219,7 +219,7 @@ body {
   --divider-vertical-height: calc(100% - 25px);
   --divider-width: 1px;
   --divider-width-hover: 3px;
-  --doc-bg: light-dark(#2b3946, #f0f5f5);
+  --doc-bg: light-dark(#f0f5f5, #2b3946);
   --drag-ghost-background: #000000d9;
   --drag-ghost-text-color: #fff;
   --dropdown-background: #ffffff26;
@@ -1022,8 +1022,8 @@ h6 {
   --callout-color: 131, 145, 237;
   --callout-icon: lucide-pencil;
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   border: 1px solid #9e9e9e59;
   border-color: #9e9e9e40;
@@ -1324,8 +1324,8 @@ input.prompt-input {
 
 a.tag {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   border: 0.8px solid vaR(--background-modifier-border);
   border-radius: vaR(--radius-s);

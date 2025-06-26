@@ -1,27 +1,27 @@
 :root {
   --background-secondary-alt: light-dark(
-    var(--color-base-25),
-    var(--color-base-05)
+    var(--color-base-05),
+    var(--color-base-25)
   );
   --color-accent: light-dark(
     hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
     hsl(var(--accent-h), var(--accent-s), var(--accent-l))
   );
   --color-accent-1: light-dark(
-    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 10%)),
     hsl(
       calc(var(--accent-h) - 1),
       calc(var(--accent-s) * 1.01),
       calc(var(--accent-l) * 1.075)
-    )
+    ),
+    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 10%))
   );
   --color-accent-2: light-dark(
-    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 10%)),
     hsl(
       calc(var(--accent-h) - 3),
       calc(var(--accent-s) * 1.02),
       calc(var(--accent-l) * 1.15)
-    )
+    ),
+    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 10%))
   );
   --color-accent-hsl: light-dark(
     var(--accent-h),
@@ -31,26 +31,26 @@
     var(--accent-s),
     var(--accent-l)
   );
-  --color-base-00: light-dark(#1a1a1a, #ffffff);
-  --color-base-05: light-dark(#1a1a1a, #fcfcfc);
-  --color-base-10: light-dark(#1a1a1a, #fafafa);
-  --color-base-100: light-dark(#ffffff, #222222);
-  --color-base-20: light-dark(#121212, #f6f6f6);
-  --color-base-25: light-dark(#121212, #e3e3e3);
-  --color-base-30: light-dark(#222222, #e0e0e0);
-  --color-base-35: light-dark(#303030, #d4d4d4);
-  --color-base-40: light-dark(#505050, #bdbdbd);
-  --color-base-50: light-dark(#707070, #ababab);
-  --color-base-60: light-dark(#909090, #707070);
-  --color-base-70: light-dark(#a0a0a0, #5c5c5c);
-  --color-blue: light-dark(#97c0f3, #086ddd);
-  --color-cyan: light-dark(#8bf0db, #00bfbc);
-  --color-green: light-dark(#a5e693, #08b94e);
-  --color-orange: light-dark(#ffc8a3, #ec7500);
-  --color-pink: light-dark(#eaa9ff, #d53984);
-  --color-purple: light-dark(#ac9df2, #7852ee);
-  --color-red: light-dark(#f5988f, #e93147);
-  --color-yellow: light-dark(#f0e395, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1a1a1a);
+  --color-base-05: light-dark(#fcfcfc, #1a1a1a);
+  --color-base-10: light-dark(#fafafa, #1a1a1a);
+  --color-base-100: light-dark(#222222, #ffffff);
+  --color-base-20: light-dark(#f6f6f6, #121212);
+  --color-base-25: light-dark(#e3e3e3, #121212);
+  --color-base-30: light-dark(#e0e0e0, #222222);
+  --color-base-35: light-dark(#d4d4d4, #303030);
+  --color-base-40: light-dark(#bdbdbd, #505050);
+  --color-base-50: light-dark(#ababab, #707070);
+  --color-base-60: light-dark(#707070, #909090);
+  --color-base-70: light-dark(#5c5c5c, #a0a0a0);
+  --color-blue: light-dark(#086ddd, #97c0f3);
+  --color-cyan: light-dark(#00bfbc, #8bf0db);
+  --color-green: light-dark(#08b94e, #a5e693);
+  --color-orange: light-dark(#ec7500, #ffc8a3);
+  --color-pink: light-dark(#d53984, #eaa9ff);
+  --color-purple: light-dark(#7852ee, #ac9df2);
+  --color-red: light-dark(#e93147, #f5988f);
+  --color-yellow: light-dark(#e0ac00, #f0e395);
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
   --page-border: 9px solid transparent;
@@ -95,8 +95,8 @@ body {
   --background-primary-alt: var(--color-base-10);
   --background-secondary: var(--color-base-20);
   --background-secondary-alt: light-dark(
-    var(--color-base-25),
-    var(--color-base-05)
+    var(--color-base-05),
+    var(--color-base-25)
   );
   --bases-embed-border: 1px solid var(--background-modifier-border);
   --bases-embed-border-radius: var(--radius-s);
@@ -212,20 +212,20 @@ body {
     hsl(var(--accent-h), var(--accent-s), var(--accent-l))
   );
   --color-accent-1: light-dark(
-    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 10%)),
     hsl(
       calc(var(--accent-h) - 1),
       calc(var(--accent-s) * 1.01),
       calc(var(--accent-l) * 1.075)
-    )
+    ),
+    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 10%))
   );
   --color-accent-2: light-dark(
-    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 10%)),
     hsl(
       calc(var(--accent-h) - 3),
       calc(var(--accent-s) * 1.02),
       calc(var(--accent-l) * 1.15)
-    )
+    ),
+    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 10%))
   );
   --color-accent-hsl: light-dark(
     var(--accent-h),
@@ -235,26 +235,26 @@ body {
     var(--accent-s),
     var(--accent-l)
   );
-  --color-base-00: light-dark(#1a1a1a, #ffffff);
-  --color-base-05: light-dark(#1a1a1a, #fcfcfc);
-  --color-base-10: light-dark(#1a1a1a, #fafafa);
-  --color-base-100: light-dark(#ffffff, #222222);
-  --color-base-20: light-dark(#121212, #f6f6f6);
-  --color-base-25: light-dark(#121212, #e3e3e3);
-  --color-base-30: light-dark(#222222, #e0e0e0);
-  --color-base-35: light-dark(#303030, #d4d4d4);
-  --color-base-40: light-dark(#505050, #bdbdbd);
-  --color-base-50: light-dark(#707070, #ababab);
-  --color-base-60: light-dark(#909090, #707070);
-  --color-base-70: light-dark(#a0a0a0, #5c5c5c);
-  --color-blue: light-dark(#97c0f3, #086ddd);
-  --color-cyan: light-dark(#8bf0db, #00bfbc);
-  --color-green: light-dark(#a5e693, #08b94e);
-  --color-orange: light-dark(#ffc8a3, #ec7500);
-  --color-pink: light-dark(#eaa9ff, #d53984);
-  --color-purple: light-dark(#ac9df2, #7852ee);
-  --color-red: light-dark(#f5988f, #e93147);
-  --color-yellow: light-dark(#f0e395, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1a1a1a);
+  --color-base-05: light-dark(#fcfcfc, #1a1a1a);
+  --color-base-10: light-dark(#fafafa, #1a1a1a);
+  --color-base-100: light-dark(#222222, #ffffff);
+  --color-base-20: light-dark(#f6f6f6, #121212);
+  --color-base-25: light-dark(#e3e3e3, #121212);
+  --color-base-30: light-dark(#e0e0e0, #222222);
+  --color-base-35: light-dark(#d4d4d4, #303030);
+  --color-base-40: light-dark(#bdbdbd, #505050);
+  --color-base-50: light-dark(#ababab, #707070);
+  --color-base-60: light-dark(#707070, #909090);
+  --color-base-70: light-dark(#5c5c5c, #a0a0a0);
+  --color-blue: light-dark(#086ddd, #97c0f3);
+  --color-cyan: light-dark(#00bfbc, #8bf0db);
+  --color-green: light-dark(#08b94e, #a5e693);
+  --color-orange: light-dark(#ec7500, #ffc8a3);
+  --color-pink: light-dark(#d53984, #eaa9ff);
+  --color-purple: light-dark(#7852ee, #ac9df2);
+  --color-red: light-dark(#e93147, #f5988f);
+  --color-yellow: light-dark(#e0ac00, #f0e395);
   --complement-h: 285.3488372093deg;
   --complement-l: 83.137254902%;
   --complement-s: 100%;

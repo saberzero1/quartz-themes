@@ -1,33 +1,33 @@
 :root {
-  --accent: light-dark(#9bb62f, #b5d049);
-  --background-primary: light-dark(#020422, #dddffd);
-  --background-secondary: light-dark(#000000, #ffffff);
-  --background-secondary-alt: light-dark(#363636, #212121);
+  --accent: light-dark(#b5d049, #9bb62f);
+  --background-primary: light-dark(#dddffd, #020422);
+  --background-secondary: light-dark(#ffffff, #000000);
+  --background-secondary-alt: light-dark(#212121, #363636);
   --bold-color: light-dark(#d86679, #d86679);
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --h1-color: light-dark(#ffc444, #ffc444);
   --h2-color: light-dark(#faa250, #faa250);
   --h3-color: light-dark(#f88765, #f88765);
@@ -40,21 +40,21 @@
   --page-border: 9px solid transparent;
   --page-margin: 1px auto -8px;
   --pdfViewer-padding-bottom: 0;
-  --primary: light-dark(#77f8c2, #078852);
+  --primary: light-dark(#078852, #77f8c2);
   --safe-area-inset-bottom: env(safe-area-inset-bottom);
   --safe-area-inset-left: env(safe-area-inset-left);
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
-  --secondary: light-dark(#079739, #68f89a);
+  --secondary: light-dark(#68f89a, #079739);
   --spreadHorizontalWrapped-margin-LR: -3.5px;
-  --text: light-dark(#ddddfd, #020222);
+  --text: light-dark(#020222, #ddddfd);
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
 }
 
 body {
-  --accent: light-dark(#9bb62f, #b5d049);
+  --accent: light-dark(#b5d049, #9bb62f);
   --accent-h: 258;
   --accent-l: 66%;
   --accent-s: 88%;
@@ -79,10 +79,10 @@ body {
   --background-modifier-message: #000000e6;
   --background-modifier-success: #44cf6e;
   --background-modifier-success-rgb: 68, 207, 110;
-  --background-primary: light-dark(#020422, #dddffd);
+  --background-primary: light-dark(#dddffd, #020422);
   --background-primary-alt: #111;
-  --background-secondary: light-dark(#000000, #ffffff);
-  --background-secondary-alt: light-dark(#363636, #212121);
+  --background-secondary: light-dark(#ffffff, #000000);
+  --background-secondary-alt: light-dark(#212121, #363636);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 8px;
   --bases-filter-menu-width: 520px;
@@ -192,29 +192,29 @@ body {
   --collapse-icon-color: #666666;
   --collapse-icon-color-collapsed: #a68af9;
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -590,7 +590,7 @@ body {
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
   --popover-width: 450px;
-  --primary: light-dark(#77f8c2, #078852);
+  --primary: light-dark(#078852, #77f8c2);
   --prompt-border-color: #555555;
   --prompt-border-width: 0.5pt;
   --prompt-input-height: 40px;
@@ -613,7 +613,7 @@ body {
   --search-icon-color: #b3b3b3;
   --search-icon-size: 18px;
   --search-result-background: #020422;
-  --secondary: light-dark(#079739, #68f89a);
+  --secondary: light-dark(#68f89a, #079739);
   --sidebar-markdown-font-size: 14.4px;
   --sidebar-tab-text-display: none;
   --size-2-1: 2px;
@@ -744,7 +744,7 @@ body {
   --tag-radius: 2em;
   --tag-size: 0.875em;
   --tag-weight: inherit;
-  --text: light-dark(#ddddfd, #020222);
+  --text: light-dark(#020222, #ddddfd);
   --text-accent: #8a5cf5;
   --text-accent-hover: #c5b6fc;
   --text-error: #fb464c;
@@ -787,9 +787,9 @@ body {
   --zoom-factor: 1;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(#020422, #dddffd);
+  background-color: light-dark(#dddffd, #020422);
   caret-color: #a68af9;
-  color: light-dark(#ddddfd, #020222);
+  color: light-dark(#020222, #ddddfd);
   contain: initial;
   font-family: "Cabin", sans-serif;
   font-size: 16px;
@@ -1190,7 +1190,7 @@ h6 {
 }
 
 .popover {
-  background-color: light-dark(#020422, #dddffd);
+  background-color: light-dark(#dddffd, #020422);
   border: 1px solid transparent;
   border-radius: 12px;
   box-shadow:
@@ -1204,7 +1204,7 @@ h6 {
 }
 
 .prompt {
-  background-color: light-dark(#020422, #dddffd);
+  background-color: light-dark(#dddffd, #020422);
   border: 0.5pt solid #555555;
   border-radius: 16px;
   box-shadow:
@@ -1223,9 +1223,9 @@ h6 {
 }
 
 input.prompt-input {
-  background-color: light-dark(#020422, #dddffd);
+  background-color: light-dark(#dddffd, #020422);
   border: none;
-  border-bottom: 1px solid light-dark(#000000, #ffffff);
+  border-bottom: 1px solid light-dark(#ffffff, #000000);
   border-radius: 0;
   font-size: 16px;
   height: 48px;
@@ -1628,7 +1628,7 @@ svg.svg-icon {
 }
 
 .graph-controls {
-  background-color: light-dark(#020422, #dddffd);
+  background-color: light-dark(#dddffd, #020422);
   border-radius: 12px;
   inset-inline-end: 12px;
   overflow: auto;
@@ -1796,16 +1796,16 @@ svg.svg-icon {
 }
 
 .workspace-tabs .workspace-leaf {
-  background-color: light-dark(#000000, #ffffff);
+  background-color: light-dark(#ffffff, #000000);
   height: 100%;
 }
 
 .workspace-split.mod-root {
-  background-color: light-dark(#020422, #dddffd);
+  background-color: light-dark(#dddffd, #020422);
 }
 
 .workspace-split.mod-root .view-content {
-  background-color: light-dark(#020422, #dddffd);
+  background-color: light-dark(#dddffd, #020422);
 }
 
 .workspace-leaf-resize-handle {

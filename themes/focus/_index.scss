@@ -100,8 +100,8 @@ html[saved-theme="dark"] {
 
 :root {
   --color-accent-2: light-dark(
-    hsl(106.9879518072deg, 62.4060150376%, 83.92157%),
-    hsl(calc(106.98795deg - 3), 63.65414%, 85.0098%)
+    hsl(calc(106.98795deg - 3), 63.65414%, 85.0098%),
+    hsl(106.9879518072deg, 62.4060150376%, 83.92157%)
   );
   --color-accent-hsl: light-dark(
     106.9879518072deg,
@@ -111,17 +111,17 @@ html[saved-theme="dark"] {
     62.4060150376%,
     73.9215686275%
   );
-  --color-base-100: light-dark(#ffffff, #222222);
-  --color-base-30: light-dark(#222222, #e0e0e0);
-  --color-base-35: light-dark(#303030, #d4d4d4);
-  --color-base-40: light-dark(#505050, #bdbdbd);
-  --color-blue: light-dark(#97c0f3, #086ddd);
-  --color-cyan: light-dark(#8bf0db, #00bfbc);
-  --color-green: light-dark(#a5e693, #08b94e);
-  --color-orange: light-dark(#ffc8a3, #ec7500);
-  --color-pink: light-dark(#eaa9ff, #d53984);
-  --color-purple: light-dark(#ac9df2, #7852ee);
-  --color-red: light-dark(#f5988f, #e93147);
+  --color-base-100: light-dark(#222222, #ffffff);
+  --color-base-30: light-dark(#e0e0e0, #222222);
+  --color-base-35: light-dark(#d4d4d4, #303030);
+  --color-base-40: light-dark(#bdbdbd, #505050);
+  --color-blue: light-dark(#086ddd, #97c0f3);
+  --color-cyan: light-dark(#00bfbc, #8bf0db);
+  --color-green: light-dark(#08b94e, #a5e693);
+  --color-orange: light-dark(#ec7500, #ffc8a3);
+  --color-pink: light-dark(#d53984, #eaa9ff);
+  --color-purple: light-dark(#7852ee, #ac9df2);
+  --color-red: light-dark(#e93147, #f5988f);
 }
 body {
   --background-modifier-border: #222222;
@@ -156,8 +156,8 @@ body {
     73.9215686275%
   );
   --color-accent-2: light-dark(
-    hsl(106.9879518072deg, 62.4060150376%, 83.92157%),
-    hsl(calc(106.98795deg - 3), 63.65414%, 85.0098%)
+    hsl(calc(106.98795deg - 3), 63.65414%, 85.0098%),
+    hsl(106.9879518072deg, 62.4060150376%, 83.92157%)
   );
   --color-accent-hsl: light-dark(
     106.9879518072deg,
@@ -167,17 +167,17 @@ body {
     62.4060150376%,
     73.9215686275%
   );
-  --color-base-100: light-dark(#ffffff, #222222);
-  --color-base-30: light-dark(#222222, #e0e0e0);
-  --color-base-35: light-dark(#303030, #d4d4d4);
-  --color-base-40: light-dark(#505050, #bdbdbd);
-  --color-blue: light-dark(#97c0f3, #086ddd);
-  --color-cyan: light-dark(#8bf0db, #00bfbc);
-  --color-green: light-dark(#a5e693, #08b94e);
-  --color-orange: light-dark(#ffc8a3, #ec7500);
-  --color-pink: light-dark(#eaa9ff, #d53984);
-  --color-purple: light-dark(#ac9df2, #7852ee);
-  --color-red: light-dark(#f5988f, #e93147);
+  --color-base-100: light-dark(#222222, #ffffff);
+  --color-base-30: light-dark(#e0e0e0, #222222);
+  --color-base-35: light-dark(#d4d4d4, #303030);
+  --color-base-40: light-dark(#bdbdbd, #505050);
+  --color-blue: light-dark(#086ddd, #97c0f3);
+  --color-cyan: light-dark(#00bfbc, #8bf0db);
+  --color-green: light-dark(#08b94e, #a5e693);
+  --color-orange: light-dark(#ec7500, #ffc8a3);
+  --color-pink: light-dark(#d53984, #eaa9ff);
+  --color-purple: light-dark(#7852ee, #ac9df2);
+  --color-red: light-dark(#e93147, #f5988f);
   --cursor-link: pointer;
   --font-default:
     JetBrains Mono, Menlo, SFMono-Regular, Consolas, "Roboto Mono",

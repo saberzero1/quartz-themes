@@ -931,45 +931,45 @@
 }
 
 :root {
-  --accent-h: light-dark(193, 187);
-  --accent-l: light-dark(75%, 45%);
-  --accent-s: light-dark(46%, 30%);
-  --background-secondary-alt: light-dark(#363636, #212121);
-  --base: light-dark(#191724, #faf4ed);
+  --accent-h: light-dark(187, 193);
+  --accent-l: light-dark(45%, 75%);
+  --accent-s: light-dark(30%, 46%);
+  --background-secondary-alt: light-dark(#212121, #363636);
+  --base: light-dark(#faf4ed, #191724);
   --color-accent: light-dark(hsl(213, 60%, 67%), hsl(213, 60%, 67%));
   --color-accent-1: light-dark(
-    hsl(210, 61.2%, 77.05%),
-    hsl(212, 60.6%, 72.025%)
+    hsl(212, 60.6%, 72.025%),
+    hsl(210, 61.2%, 77.05%)
   );
-  --color-accent-2: light-dark(hsl(208, 63%, 86.43%), hsl(210, 61.2%, 77.05%));
+  --color-accent-2: light-dark(hsl(210, 61.2%, 77.05%), hsl(208, 63%, 86.43%));
   --color-accent-hsl: light-dark(hsl(213, 60%, 67%), hsl(213, 60%, 67%));
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
-  --highlight-high: light-dark(#524f67, #cecacd);
-  --highlight-low: light-dark(#21202e, #f4ede8);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
+  --highlight-high: light-dark(#cecacd, #524f67);
+  --highlight-low: light-dark(#f4ede8, #21202e);
   --keyboard-height: 0px;
-  --latex-color: light-dark(rgb(246, 173, 119), rgb(121, 166, 222));
+  --latex-color: light-dark(rgb(121, 166, 222), rgb(246, 173, 119));
   --loading-icon-delay: 400ms;
-  --muted: light-dark(#6e6a86, #9893a5);
-  --overlay: light-dark(#26233a, #f2e9e1);
+  --muted: light-dark(#9893a5, #6e6a86);
+  --overlay: light-dark(#f2e9e1, #26233a);
   --page-border: 9px solid transparent;
   --page-margin: 1px auto -8px;
   --pdfViewer-padding-bottom: 0;
@@ -978,8 +978,8 @@
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
   --spreadHorizontalWrapped-margin-LR: -3.5px;
-  --subtle: light-dark(#908caa, #797593);
-  --text: light-dark(#e0def4, #575279);
+  --subtle: light-dark(#797593, #908caa);
+  --text: light-dark(#575279, #e0def4);
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
@@ -1592,9 +1592,9 @@
 }
 
 body {
-  --accent-h: light-dark(193, 187);
-  --accent-l: light-dark(75%, 45%);
-  --accent-s: light-dark(46%, 30%);
+  --accent-h: light-dark(187, 193);
+  --accent-l: light-dark(45%, 75%);
+  --accent-s: light-dark(30%, 46%);
   --anim-duration-fast: 140ms;
   --anim-duration-moderate: 300ms;
   --anim-duration-none: 0;
@@ -1620,8 +1620,8 @@ body {
   --background-primary: rgb(25, 25, 46);
   --background-primary-alt: #212037;
   --background-secondary: rgba(25, 25, 46, 0.8);
-  --background-secondary-alt: light-dark(#363636, #212121);
-  --base: light-dark(#191724, #faf4ed);
+  --background-secondary-alt: light-dark(#212121, #363636);
+  --base: light-dark(#faf4ed, #191724);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -1733,38 +1733,38 @@ body {
   --collapse-icon-color-collapsed: hsl(210, 61.2%, 77.05%);
   --color-accent: light-dark(hsl(213, 60%, 67%), hsl(213, 60%, 67%));
   --color-accent-1: light-dark(
-    hsl(210, 61.2%, 77.05%),
-    hsl(212, 60.6%, 72.025%)
+    hsl(212, 60.6%, 72.025%),
+    hsl(210, 61.2%, 77.05%)
   );
-  --color-accent-2: light-dark(hsl(208, 63%, 86.43%), hsl(210, 61.2%, 77.05%));
+  --color-accent-2: light-dark(hsl(210, 61.2%, 77.05%), hsl(208, 63%, 86.43%));
   --color-accent-hsl: light-dark(hsl(213, 60%, 67%), hsl(213, 60%, 67%));
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
   --color-blue-rgb: 121, 166, 222;
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
   --color-cyan-rgb: 195, 230, 148;
-  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-green: light-dark(#08b94e, #44cf6e);
   --color-green-rgb: 195, 230, 148;
-  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-orange: light-dark(#ec7500, #e9973f);
   --color-orange-rgb: 246, 173, 119;
-  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-pink: light-dark(#d53984, #fa99cd);
   --color-pink-rgb: 232, 157, 149;
-  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-purple: light-dark(#7852ee, #a882ff);
   --color-purple-rgb: 145, 145, 188;
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-red: light-dark(#e93147, #fb464c);
   --color-red-rgb: 187, 163, 121;
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --color-yellow-rgb: 246, 173, 119;
   --cursor: pointer;
   --cursor-link: pointer;
@@ -1978,8 +1978,8 @@ body {
     BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif,
     sans-serif, "Inter", sans-serif;
-  --highlight-high: light-dark(#524f67, #cecacd);
-  --highlight-low: light-dark(#21202e, #f4ede8);
+  --highlight-high: light-dark(#cecacd, #524f67);
+  --highlight-low: light-dark(#f4ede8, #21202e);
   --highlight-med: rgb(48, 62, 85);
   --hr-color: transparent;
   --hr-thickness: 2px;
@@ -2037,7 +2037,7 @@ body {
   --iris: rgb(145, 145, 188);
   --italic-color: rgb(195, 230, 148);
   --italic-weight: inherit;
-  --latex-color: light-dark(rgb(246, 173, 119), rgb(121, 166, 222));
+  --latex-color: light-dark(rgb(121, 166, 222), rgb(246, 173, 119));
   --layer-cover: 5;
   --layer-dragged-item: 80;
   --layer-menu: 65;
@@ -2153,7 +2153,7 @@ body {
   --modal-max-width-narrow: 800px;
   --modal-radius: 12px;
   --modal-width: 90vw;
-  --muted: light-dark(#6e6a86, #9893a5);
+  --muted: light-dark(#9893a5, #6e6a86);
   --nav-collapse-icon-color: rgb(121, 166, 222);
   --nav-collapse-icon-color-collapsed: #a09a79;
   --nav-heading-color: rgb(121, 166, 222);
@@ -2181,7 +2181,7 @@ body {
   --nav-item-weight-active: inherit;
   --nav-item-weight-hover: inherit;
   --nav-item-white-space: pre;
-  --overlay: light-dark(#26233a, #f2e9e1);
+  --overlay: light-dark(#f2e9e1, #26233a);
   --p-spacing: 1rem;
   --p-spacing-empty: 0rem;
   --pdf-background: rgba(25, 25, 46, 0.8);
@@ -2274,7 +2274,7 @@ body {
   --status-bar-position: fixed;
   --status-bar-radius: 12px 0 0 12px;
   --status-bar-text-color: #a09a79;
-  --subtle: light-dark(#908caa, #797593);
+  --subtle: light-dark(#797593, #908caa);
   --surface: rgb(25, 25, 46);
   --swatch-height: 24px;
   --swatch-radius: 14px;
@@ -2374,7 +2374,7 @@ body {
   --tag-radius: 2em;
   --tag-size: 0.875em;
   --tag-weight: inherit;
-  --text: light-dark(#e0def4, #575279);
+  --text: light-dark(#575279, #e0def4);
   --text-accent: rgb(187, 163, 121);
   --text-accent-hover: hsl(208, 63%, 86.43%);
   --text-error: #fb464c;
@@ -6239,7 +6239,7 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
 
 .status-bar {
   background-color: #151527;
-  border: 1px solid light-dark(#524f67, #cecacd);
+  border: 1px solid light-dark(#cecacd, #524f67);
   border-color: rgba(0, 0, 0, 0.15);
   border-radius: 12px 0 0 12px;
   border-style: solid;
@@ -7010,7 +7010,7 @@ body.is-phone .view-header-nav-buttons {
 }
 
 .workspace-tab-header-container {
-  background-color: light-dark(#26233a, #f2e9e1);
+  background-color: light-dark(#f2e9e1, #26233a);
   border: 1px solid transparent;
   border-bottom: 0.5pt solid transparent;
   border-radius: 100px;
@@ -8050,8 +8050,8 @@ button.mod-destructive {
 
 .card {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   border: 1px solid transparent;
   border-radius: 4px;
@@ -10000,7 +10000,7 @@ select.mod-hidden {
 
 .modal-sidebar {
   --background-modifier-form-field: rgba(25, 25, 46, 0.8);
-  background-color: light-dark(#191724, #faf4ed);
+  background-color: light-dark(#faf4ed, #191724);
   display: flex;
   flex: 1 1 100%;
   flex-direction: column;
@@ -10189,8 +10189,8 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .modal .modal-nav-action.mod-cta {
   color: light-dark(
-    hsl(light-dark(193, 187), light-dark(46%, 30%), light-dark(75%, 45%)),
-    hsl(light-dark(193, 187), light-dark(46%, 30%), light-dark(75%, 45%))
+    hsl(light-dark(187, 193), light-dark(30%, 46%), light-dark(45%, 75%)),
+    hsl(light-dark(187, 193), light-dark(30%, 46%), light-dark(45%, 75%))
   );
   font-weight: 600;
   inset-inline-end: 0;
@@ -10494,8 +10494,8 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   cursor: default;
   text-align: center;
@@ -11170,7 +11170,7 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 }
 
 .vertical-tab-header {
-  background-color: light-dark(#191724, #faf4ed);
+  background-color: light-dark(#faf4ed, #191724);
   padding: 12px;
 }
 
@@ -11719,25 +11719,25 @@ kbd {
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
-  filter: drop-shadow(0px 0px 1px light-dark(#999999, #707070))
+  filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
 }
 
@@ -12950,7 +12950,7 @@ code[class*="language-"] {
 }
 
 .file-embed {
-  background-color: light-dark(#26233a, #f2e9e1);
+  background-color: light-dark(#f2e9e1, #26233a);
   border-radius: 8px;
   display: flex;
   justify-content: center;
@@ -19404,7 +19404,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .search-result-file-matches {
   background-color: rgba(25, 25, 46, 0.8);
-  border: 1px solid light-dark(#26233a, #f2e9e1);
+  border: 1px solid light-dark(#f2e9e1, #26233a);
   border-radius: 4px;
   box-shadow: 0 0 0 1px transparent;
   color: #a09a79;
@@ -20527,19 +20527,19 @@ body.theme-dark {
 .canvas-selection {
   background-color: hsla(
     light-dark(
-      light-dark(193, 187),
-      light-dark(46%, 30%),
-      light-dark(75%, 45%),
-      light-dark(193, 187),
-      light-dark(46%, 30%),
-      light-dark(75%, 45%)
+      light-dark(187, 193),
+      light-dark(30%, 46%),
+      light-dark(45%, 75%),
+      light-dark(187, 193),
+      light-dark(30%, 46%),
+      light-dark(45%, 75%)
     ),
     0.1
   );
   border: 2px solid
     light-dark(
-      hsl(light-dark(193, 187), light-dark(46%, 30%), light-dark(75%, 45%)),
-      hsl(light-dark(193, 187), light-dark(46%, 30%), light-dark(75%, 45%))
+      hsl(light-dark(187, 193), light-dark(30%, 46%), light-dark(45%, 75%)),
+      hsl(light-dark(187, 193), light-dark(30%, 46%), light-dark(45%, 75%))
     );
   pointer-events: none;
   position: absolute;
@@ -20549,23 +20549,23 @@ body.theme-dark {
 .canvas-selection.mod-group-selection {
   background-color: hsla(
     light-dark(
-      light-dark(193, 187),
-      light-dark(46%, 30%),
-      light-dark(75%, 45%),
-      light-dark(193, 187),
-      light-dark(46%, 30%),
-      light-dark(75%, 45%)
+      light-dark(187, 193),
+      light-dark(30%, 46%),
+      light-dark(45%, 75%),
+      light-dark(187, 193),
+      light-dark(30%, 46%),
+      light-dark(45%, 75%)
     ),
     0.03
   );
   border-color: hsla(
     light-dark(
-      light-dark(193, 187),
-      light-dark(46%, 30%),
-      light-dark(75%, 45%),
-      light-dark(193, 187),
-      light-dark(46%, 30%),
-      light-dark(75%, 45%)
+      light-dark(187, 193),
+      light-dark(30%, 46%),
+      light-dark(45%, 75%),
+      light-dark(187, 193),
+      light-dark(30%, 46%),
+      light-dark(45%, 75%)
     ),
     0.3
   );
@@ -20644,8 +20644,8 @@ body.theme-dark {
 @media (hover: hover) {
   .canvas-card-menu .canvas-card-menu-button:hover {
     color: light-dark(
-      hsl(light-dark(193, 187), light-dark(46%, 30%), light-dark(75%, 45%)),
-      hsl(light-dark(193, 187), light-dark(46%, 30%), light-dark(75%, 45%))
+      hsl(light-dark(187, 193), light-dark(30%, 46%), light-dark(45%, 75%)),
+      hsl(light-dark(187, 193), light-dark(30%, 46%), light-dark(45%, 75%))
     );
   }
 }
@@ -20718,8 +20718,8 @@ body.theme-dark {
 
 .canvas-control-item.is-active {
   color: light-dark(
-    hsl(light-dark(193, 187), light-dark(46%, 30%), light-dark(75%, 45%)),
-    hsl(light-dark(193, 187), light-dark(46%, 30%), light-dark(75%, 45%))
+    hsl(light-dark(187, 193), light-dark(30%, 46%), light-dark(45%, 75%)),
+    hsl(light-dark(187, 193), light-dark(30%, 46%), light-dark(45%, 75%))
   );
 }
 
@@ -20890,8 +20890,8 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 
 .canvas-node.is-selected .canvas-node-container {
   border-color: light-dark(
-    hsl(light-dark(193, 187), light-dark(46%, 30%), light-dark(75%, 45%)),
-    hsl(light-dark(193, 187), light-dark(46%, 30%), light-dark(75%, 45%))
+    hsl(light-dark(187, 193), light-dark(30%, 46%), light-dark(45%, 75%)),
+    hsl(light-dark(187, 193), light-dark(30%, 46%), light-dark(45%, 75%))
   );
   box-shadow:
     0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1),
@@ -20900,8 +20900,8 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 
 .canvas-node.is-focused .canvas-node-container {
   border-color: light-dark(
-    hsl(light-dark(193, 187), light-dark(46%, 30%), light-dark(75%, 45%)),
-    hsl(light-dark(193, 187), light-dark(46%, 30%), light-dark(75%, 45%))
+    hsl(light-dark(187, 193), light-dark(30%, 46%), light-dark(45%, 75%)),
+    hsl(light-dark(187, 193), light-dark(30%, 46%), light-dark(45%, 75%))
   );
   box-shadow:
     0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1),
@@ -20960,19 +20960,19 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 .canvas-node.is-dummy .canvas-node-container {
   background-color: hsla(
     light-dark(
-      light-dark(193, 187),
-      light-dark(46%, 30%),
-      light-dark(75%, 45%),
-      light-dark(193, 187),
-      light-dark(46%, 30%),
-      light-dark(75%, 45%)
+      light-dark(187, 193),
+      light-dark(30%, 46%),
+      light-dark(45%, 75%),
+      light-dark(187, 193),
+      light-dark(30%, 46%),
+      light-dark(45%, 75%)
     ),
     0.2
   );
   border: 4px solid
     light-dark(
-      hsl(light-dark(193, 187), light-dark(46%, 30%), light-dark(75%, 45%)),
-      hsl(light-dark(193, 187), light-dark(46%, 30%), light-dark(75%, 45%))
+      hsl(light-dark(187, 193), light-dark(30%, 46%), light-dark(45%, 75%)),
+      hsl(light-dark(187, 193), light-dark(30%, 46%), light-dark(45%, 75%))
     );
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
 }
@@ -21248,8 +21248,8 @@ body.is-mobile .canvas-node-resizer {
   background-color: rgba(25, 25, 46, 0.8);
   border: 2px solid
     light-dark(
-      hsl(light-dark(193, 187), light-dark(46%, 30%), light-dark(75%, 45%)),
-      hsl(light-dark(193, 187), light-dark(46%, 30%), light-dark(75%, 45%))
+      hsl(light-dark(187, 193), light-dark(30%, 46%), light-dark(45%, 75%)),
+      hsl(light-dark(187, 193), light-dark(30%, 46%), light-dark(45%, 75%))
     );
   border-radius: 3px;
   display: block;
@@ -21265,8 +21265,8 @@ body.is-mobile .canvas-node-resizer {
   background-color: rgba(25, 25, 46, 0.8);
   border: 2px solid
     light-dark(
-      hsl(light-dark(193, 187), light-dark(46%, 30%), light-dark(75%, 45%)),
-      hsl(light-dark(193, 187), light-dark(46%, 30%), light-dark(75%, 45%))
+      hsl(light-dark(187, 193), light-dark(30%, 46%), light-dark(45%, 75%)),
+      hsl(light-dark(187, 193), light-dark(30%, 46%), light-dark(45%, 75%))
     );
   border-radius: 3px;
   display: block;
@@ -21282,8 +21282,8 @@ body.is-mobile .canvas-node-resizer {
   background-color: rgba(25, 25, 46, 0.8);
   border: 2px solid
     light-dark(
-      hsl(light-dark(193, 187), light-dark(46%, 30%), light-dark(75%, 45%)),
-      hsl(light-dark(193, 187), light-dark(46%, 30%), light-dark(75%, 45%))
+      hsl(light-dark(187, 193), light-dark(30%, 46%), light-dark(45%, 75%)),
+      hsl(light-dark(187, 193), light-dark(30%, 46%), light-dark(45%, 75%))
     );
   border-radius: 3px;
   display: block;
@@ -21299,8 +21299,8 @@ body.is-mobile .canvas-node-resizer {
   background-color: rgba(25, 25, 46, 0.8);
   border: 2px solid
     light-dark(
-      hsl(light-dark(193, 187), light-dark(46%, 30%), light-dark(75%, 45%)),
-      hsl(light-dark(193, 187), light-dark(46%, 30%), light-dark(75%, 45%))
+      hsl(light-dark(187, 193), light-dark(30%, 46%), light-dark(45%, 75%)),
+      hsl(light-dark(187, 193), light-dark(30%, 46%), light-dark(45%, 75%))
     );
   border-radius: 3px;
   display: block;
@@ -21339,8 +21339,8 @@ body.is-mobile .canvas-node-resizer {
 
 .canvas-node-connection-point::after {
   background-color: light-dark(
-    hsl(light-dark(193, 187), light-dark(46%, 30%), light-dark(75%, 45%)),
-    hsl(light-dark(193, 187), light-dark(46%, 30%), light-dark(75%, 45%))
+    hsl(light-dark(187, 193), light-dark(30%, 46%), light-dark(45%, 75%)),
+    hsl(light-dark(187, 193), light-dark(30%, 46%), light-dark(45%, 75%))
   );
   border: 3px solid transparent;
   border-radius: 50%;
@@ -21376,16 +21376,16 @@ body.is-mobile .canvas-node-resizer {
 
 .canvas-snaps line {
   stroke: light-dark(
-    hsl(light-dark(193, 187), light-dark(46%, 30%), light-dark(75%, 45%)),
-    hsl(light-dark(193, 187), light-dark(46%, 30%), light-dark(75%, 45%))
+    hsl(light-dark(187, 193), light-dark(30%, 46%), light-dark(45%, 75%)),
+    hsl(light-dark(187, 193), light-dark(30%, 46%), light-dark(45%, 75%))
   );
   stroke-width: 1px;
 }
 
 .canvas-snaps circle {
   fill: light-dark(
-    hsl(light-dark(193, 187), light-dark(46%, 30%), light-dark(75%, 45%)),
-    hsl(light-dark(193, 187), light-dark(46%, 30%), light-dark(75%, 45%))
+    hsl(light-dark(187, 193), light-dark(30%, 46%), light-dark(45%, 75%)),
+    hsl(light-dark(187, 193), light-dark(30%, 46%), light-dark(45%, 75%))
   );
 }
 
@@ -21557,12 +21557,12 @@ body.is-mobile .canvas-node-resizer {
 
 .canvas-color-picker-item.canvas-color-picker-custom:not(.is-active) {
   background: conic-gradient(
-    light-dark(#fb464c, #e93147),
-    light-dark(#e0de71, #e0ac00),
-    light-dark(#44cf6e, #08b94e),
-    light-dark(#027aff, #086ddd),
-    light-dark(#a882ff, #7852ee),
-    light-dark(#fb464c, #e93147)
+    light-dark(#e93147, #fb464c),
+    light-dark(#e0ac00, #e0de71),
+    light-dark(#08b94e, #44cf6e),
+    light-dark(#086ddd, #027aff),
+    light-dark(#7852ee, #a882ff),
+    light-dark(#e93147, #fb464c)
   );
 }
 
@@ -21621,19 +21621,19 @@ body.is-mobile .canvas-node-resizer {
 .canvas-placeholder-message {
   background: hsla(
     light-dark(
-      light-dark(193, 187),
-      light-dark(46%, 30%),
-      light-dark(75%, 45%),
-      light-dark(193, 187),
-      light-dark(46%, 30%),
-      light-dark(75%, 45%)
+      light-dark(187, 193),
+      light-dark(30%, 46%),
+      light-dark(45%, 75%),
+      light-dark(187, 193),
+      light-dark(30%, 46%),
+      light-dark(45%, 75%)
     ),
     0.1
   );
   border-radius: 8px;
   color: light-dark(
-    hsl(light-dark(193, 187), light-dark(46%, 30%), light-dark(75%, 45%)),
-    hsl(light-dark(193, 187), light-dark(46%, 30%), light-dark(75%, 45%))
+    hsl(light-dark(187, 193), light-dark(30%, 46%), light-dark(45%, 75%)),
+    hsl(light-dark(187, 193), light-dark(30%, 46%), light-dark(45%, 75%))
   );
   font-size: 19.2px;
   line-height: 1.75;
@@ -21680,8 +21680,8 @@ body.is-mobile .canvas-node-resizer {
 .canvas-cursor {
   border: 5px solid
     light-dark(
-      hsl(light-dark(193, 187), light-dark(46%, 30%), light-dark(75%, 45%)),
-      hsl(light-dark(193, 187), light-dark(46%, 30%), light-dark(75%, 45%))
+      hsl(light-dark(187, 193), light-dark(30%, 46%), light-dark(45%, 75%)),
+      hsl(light-dark(187, 193), light-dark(30%, 46%), light-dark(45%, 75%))
     );
   border-radius: 5px;
   height: 1px;
@@ -25397,7 +25397,7 @@ mark {
 }
 
 body:not(.is-phone) .prompt-results {
-  border-top: 2px solid light-dark(#fb464c, #e93147);
+  border-top: 2px solid light-dark(#e93147, #fb464c);
 }
 .focus-mode .titlebar-button-container {
   display: none;
@@ -25624,7 +25624,7 @@ body:not(.no-links)
 }
 
 progress::-webkit-progress-bar {
-  background-color: light-dark(#26233a, #f2e9e1);
+  background-color: light-dark(#f2e9e1, #26233a);
   border: 1px solid rgb(48, 62, 85);
 }
 
@@ -25698,7 +25698,7 @@ body:not(.no-button) button {
 }
 
 .cm-vim-message {
-  color: light-dark(#fa99cd, #d53984);
+  color: light-dark(#d53984, #fa99cd);
 }
 
 .ͼp .cm-vim-panel span {
@@ -25843,7 +25843,7 @@ body:not(.no-checkboxes) {
   background-image: none;
   border: none;
   border-radius: 0px;
-  color: light-dark(#e9973f, #ec7500);
+  color: light-dark(#ec7500, #e9973f);
   mask-position: 50% 50%;
   mask-size: 100%;
   text-decoration: line-through;
@@ -25971,8 +25971,8 @@ body:not(.no-checkboxes) {
   border: 1px rgb(121, 166, 222);
 }
 .kanban-plugin__item-title-wrapper {
-  background-color: light-dark(#26233a, #f2e9e1);
-  border: 1px solid light-dark(#524f67, #cecacd);
+  background-color: light-dark(#f2e9e1, #26233a);
+  border: 1px solid light-dark(#cecacd, #524f67);
   border-radius: 10px;
   padding: 10px;
   transition-duration: 0.3s;
@@ -26014,7 +26014,7 @@ button.kanban-plugin__new-item-button {
   background-color: transparent;
   border: 1px solid #a09a79;
   border-radius: 10px;
-  color: light-dark(#fa99cd, #d53984);
+  color: light-dark(#d53984, #fa99cd);
   cursor: pointer;
   outline: none;
   padding: 10px;
@@ -26041,7 +26041,7 @@ body:not(.no-widgets) {
   background: transparent;
   border: 2px solid rgb(246, 173, 119);
   border-radius: 20px;
-  color: light-dark(#908caa, #797593);
+  color: light-dark(#797593, #908caa);
   font-family:
     "??",
     "Lexend",
@@ -26066,7 +26066,7 @@ body:not(.no-widgets) {
 
 .tokei-plugin {
   background-color: transparent;
-  border: 2px dotted light-dark(#524f67, #cecacd);
+  border: 2px dotted light-dark(#cecacd, #524f67);
   border-radius: 5px;
   color: #ced9bf;
   flex-direction: row;
@@ -26095,10 +26095,10 @@ body:not(.no-todoist) {
   --todoist-p4-border: rgb(187, 163, 121);
   --todoist-p4-border-hover: rgb(232, 157, 149);
   --todoist-task-separator-color: transparent;
-  background-color: light-dark(#191724, #faf4ed);
-  border-color: light-dark(#524f67, #cecacd);
+  background-color: light-dark(#faf4ed, #191724);
+  border-color: light-dark(#cecacd, #524f67);
   border-radius: 50px;
-  color: light-dark(#a882ff, #7852ee);
+  color: light-dark(#7852ee, #a882ff);
   font-size: 1.15em;
   font-variant: small-caps;
 }
@@ -26116,7 +26116,7 @@ body:not(.no-todoist) {
 }
 
 .mb-card {
-  background-color: light-dark(#26233a, #f2e9e1);
+  background-color: light-dark(#f2e9e1, #26233a);
 }
 
 .banner
@@ -26188,7 +26188,7 @@ body:not(.no-todoist) {
   font-size: 16px;
 }
 .dataview.inline-field-key {
-  background-color: light-dark(#191724, #faf4ed);
+  background-color: light-dark(#faf4ed, #191724);
   border: 1px solid rgb(48, 62, 85);
   border-radius: 10px 0px 0px 10px;
   color: rgb(232, 157, 149);
@@ -26197,7 +26197,7 @@ body:not(.no-todoist) {
 }
 
 .dataview.inline-field-value {
-  background-color: light-dark(#191724, #faf4ed);
+  background-color: light-dark(#faf4ed, #191724);
   border: 1px solid rgb(48, 62, 85);
   border-left: none;
   border-radius: 0px 10px 10px 0px;
@@ -26205,7 +26205,7 @@ body:not(.no-todoist) {
 }
 
 .dataview.inline-field-standalone-value {
-  background-color: light-dark(#191724, #faf4ed);
+  background-color: light-dark(#faf4ed, #191724);
   border: 1px solid rgb(48, 62, 85);
   border-radius: 10px;
   color: rgb(145, 145, 188);
@@ -26213,7 +26213,7 @@ body:not(.no-todoist) {
 }
 
 body:not(.no-cardboard) {
-  background-color: light-dark(#26233a, #f2e9e1);
+  background-color: light-dark(#f2e9e1, #26233a);
   border: 1px solid transparent;
   border-bottom: 3px solid transparent;
   border-color: rgba(168, 130, 255, 0.5);
@@ -26227,7 +26227,7 @@ body:not(.no-cardboard) {
 }
 
 .style-settings-info-text .style-settings-markdown {
-  background-color: light-dark(#191724, #faf4ed);
+  background-color: light-dark(#faf4ed, #191724);
   border: 1px rgb(48, 62, 85) dashed;
   border-radius: 6px;
   color: #ced9bf;
@@ -26253,14 +26253,14 @@ body:not(.no-cardboard) {
     [data-id="bg-image"],
     [data-id="headings-color"]
   ) {
-  background-color: light-dark(#191724, #faf4ed);
+  background-color: light-dark(#faf4ed, #191724);
   border-radius: 5px 5px 0px 0px;
   margin-bottom: 0px;
   padding: 2px 25px;
 }
 
 .style-settings-heading[data-level="1"] + .style-settings-container {
-  border: 3px light-dark(#191724, #faf4ed) solid;
+  border: 3px light-dark(#faf4ed, #191724) solid;
   border-radius: 0px 0px 10px 10px;
   border-width: 0 3px 3px 3px;
   margin-top: 0px;

@@ -4,62 +4,62 @@
   --accent-h-o: 50;
   --accent-l: 63%;
   --accent-s: 90%;
-  --background-modifier-accent: light-dark(#a987f7, #9166f5);
-  --background-modifier-border: light-dark(#262626, #dedede);
-  --background-modifier-border-focus: light-dark(#4d4d4d, #bfbfbf);
-  --background-modifier-border-hover: light-dark(#333333, #d4d4d4);
-  --background-primary: light-dark(#0f0f0f, #e6e6e6);
-  --background-primary-alt: light-dark(#121212, #ededed);
-  --background-secondary: light-dark(#1a1a1a, #f2f2f2);
-  --background-secondary-alt: light-dark(#363636, #212121);
-  --background-secondary-table: light-dark(#141414, #ededed);
-  --background-tertiary: light-dark(#242424, #d4d4d4);
+  --background-modifier-accent: light-dark(#9166f5, #a987f7);
+  --background-modifier-border: light-dark(#dedede, #262626);
+  --background-modifier-border-focus: light-dark(#bfbfbf, #4d4d4d);
+  --background-modifier-border-hover: light-dark(#d4d4d4, #333333);
+  --background-primary: light-dark(#e6e6e6, #0f0f0f);
+  --background-primary-alt: light-dark(#ededed, #121212);
+  --background-secondary: light-dark(#f2f2f2, #1a1a1a);
+  --background-secondary-alt: light-dark(#212121, #363636);
+  --background-secondary-table: light-dark(#ededed, #141414);
+  --background-tertiary: light-dark(#d4d4d4, #242424);
   --base-d: 10%;
   --base-h: 0;
   --base-l: 95%;
   --base-s: 0%;
   --bold-weight: 500;
-  --button-background: light-dark(#262626, #d9d9d9);
-  --button-background-active: light-dark(#666666, #b3b3b3);
+  --button-background: light-dark(#d9d9d9, #262626);
+  --button-background-active: light-dark(#b3b3b3, #666666);
   --buttons-fade-in-speed: filter 100ms ease-in-out;
   --buttons-fade-out-speed: filter 2000ms ease-in-out;
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
-  --color-accent-hover: light-dark(#e87d7d, #e36363);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
+  --color-accent-hover: light-dark(#e36363, #e87d7d);
   --color-accent-hover-invert: light-dark(#8c8c8c, #8c8c8c);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-external: light-dark(#4ed5ff, #389ebd);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-external: light-dark(#389ebd, #4ed5ff);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: pointer;
   --font-medium: 13.5px;
   --font-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
   --font-normal: 16px;
   --font-small: 12px;
   --font-smaller: 11px;
-  --interactive-accent: light-dark(#cbb7fa, #8a5cf5);
-  --interactive-accent-hover: light-dark(#eee7fd, #672cf2);
+  --interactive-accent: light-dark(#8a5cf5, #cbb7fa);
+  --interactive-accent-hover: light-dark(#672cf2, #eee7fd);
   --keyboard-height: 0px;
-  --line-shadow: light-dark(#1f1f1f, #cccccc);
+  --line-shadow: light-dark(#cccccc, #1f1f1f);
   --line-width: 800px;
   --loading-icon-delay: 400ms;
   --main-accent-d: 60%;
@@ -71,7 +71,7 @@
   --page-border: 9px solid transparent;
   --page-margin: 1px auto -8px;
   --pdfViewer-padding-bottom: 0;
-  --quote-opening-modifier: light-dark(#404040, #cccccc);
+  --quote-opening-modifier: light-dark(#cccccc, #404040);
   --safe-area-inset-bottom: env(safe-area-inset-bottom);
   --safe-area-inset-left: env(safe-area-inset-left);
   --safe-area-inset-right: env(safe-area-inset-right);
@@ -82,18 +82,18 @@
   --text:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
     Cantarell, "m1+ 1p";
-  --text-accent: light-dark(#cbb7fa, #8a5cf5);
-  --text-accent-hover: light-dark(#eee7fd, #672cf2);
+  --text-accent: light-dark(#8a5cf5, #cbb7fa);
+  --text-accent-hover: light-dark(#672cf2, #eee7fd);
   --text-editor:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
     Cantarell, "Helvetica Neue", "m1+ 1p";
   --text-faint: light-dark(
-    hsl(0, 0%, calc(10% + 20%)),
-    hsl(0, 0%, calc(95% - 3s5%))
+    hsl(0, 0%, calc(95% - 3s5%)),
+    hsl(0, 0%, calc(10% + 20%))
   );
-  --text-muted: light-dark(#8c8c8c, #666666);
-  --text-normal: light-dark(#cccccc, hsl(0, 0%, -5%));
-  --text-shadow: light-dark(#212121, #e6e6e6);
+  --text-muted: light-dark(#666666, #8c8c8c);
+  --text-normal: light-dark(hsl(0, 0%, -5%), #cccccc);
+  --text-shadow: light-dark(#e6e6e6, #212121);
   --view-width: 95%;
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
@@ -113,11 +113,11 @@ body {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
-  --background-modifier-accent: light-dark(#a987f7, #9166f5);
+  --background-modifier-accent: light-dark(#9166f5, #a987f7);
   --background-modifier-active-hover: #8a5cf526;
-  --background-modifier-border: light-dark(#262626, #dedede);
-  --background-modifier-border-focus: light-dark(#4d4d4d, #bfbfbf);
-  --background-modifier-border-hover: light-dark(#333333, #d4d4d4);
+  --background-modifier-border: light-dark(#dedede, #262626);
+  --background-modifier-border-focus: light-dark(#bfbfbf, #4d4d4d);
+  --background-modifier-border-hover: light-dark(#d4d4d4, #333333);
   --background-modifier-error: #fb464c;
   --background-modifier-error-hover: #fb464c;
   --background-modifier-error-rgb: 251, 70, 76;
@@ -126,12 +126,12 @@ body {
   --background-modifier-message: #000000e6;
   --background-modifier-success: #44cf6e;
   --background-modifier-success-rgb: 68, 207, 110;
-  --background-primary: light-dark(#0f0f0f, #e6e6e6);
-  --background-primary-alt: light-dark(#121212, #ededed);
-  --background-secondary: light-dark(#1a1a1a, #f2f2f2);
-  --background-secondary-alt: light-dark(#363636, #212121);
-  --background-secondary-table: light-dark(#141414, #ededed);
-  --background-tertiary: light-dark(#242424, #d4d4d4);
+  --background-primary: light-dark(#e6e6e6, #0f0f0f);
+  --background-primary-alt: light-dark(#ededed, #121212);
+  --background-secondary: light-dark(#f2f2f2, #1a1a1a);
+  --background-secondary-alt: light-dark(#212121, #363636);
+  --background-secondary-table: light-dark(#ededed, #141414);
+  --background-tertiary: light-dark(#d4d4d4, #242424);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -173,8 +173,8 @@ body {
   --bold-modifier: 200;
   --bold-weight: 800;
   --border-width: 1px;
-  --button-background: light-dark(#262626, #d9d9d9);
-  --button-background-active: light-dark(#666666, #b3b3b3);
+  --button-background: light-dark(#d9d9d9, #262626);
+  --button-background-active: light-dark(#b3b3b3, #666666);
   --button-radius: 5px;
   --callout-blend-mode: darken;
   --callout-border-opacity: 0.25;
@@ -243,32 +243,32 @@ body {
   --collapse-icon-color: #4d4d4d;
   --collapse-icon-color-collapsed: #cbb7fa;
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
-  --color-accent-hover: light-dark(#e87d7d, #e36363);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
+  --color-accent-hover: light-dark(#e36363, #e87d7d);
   --color-accent-hover-invert: light-dark(#8c8c8c, #8c8c8c);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-external: light-dark(#4ed5ff, #389ebd);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-external: light-dark(#389ebd, #4ed5ff);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -473,8 +473,8 @@ body {
   --input-height: 30px;
   --input-placeholder-color: #4d4d4d;
   --input-radius: 5px;
-  --interactive-accent: light-dark(#cbb7fa, #8a5cf5);
-  --interactive-accent-hover: light-dark(#eee7fd, #672cf2);
+  --interactive-accent: light-dark(#8a5cf5, #cbb7fa);
+  --interactive-accent-hover: light-dark(#672cf2, #eee7fd);
   --interactive-accent-hsl: 258, 88%, 66%;
   --interactive-hover: #111;
   --interactive-normal: #000;
@@ -492,7 +492,7 @@ body {
   --layer-tooltip: 70;
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;
-  --line-shadow: light-dark(#1f1f1f, #cccccc);
+  --line-shadow: light-dark(#cccccc, #1f1f1f);
   --link-color: #cbb7fa;
   --link-color-hover: #eee7fd;
   --link-decoration: underline;
@@ -651,7 +651,7 @@ body {
   --prompt-max-height: 70vh;
   --prompt-max-width: 80vw;
   --prompt-width: 700px;
-  --quote-opening-modifier: light-dark(#404040, #cccccc);
+  --quote-opening-modifier: light-dark(#cccccc, #404040);
   --radius-l: 12px;
   --radius-m: 8px;
   --radius-s: 4px;
@@ -798,21 +798,21 @@ body {
   --tag-radius: 2em;
   --tag-size: 0.875em;
   --tag-weight: inherit;
-  --text-accent: light-dark(#cbb7fa, #8a5cf5);
-  --text-accent-hover: light-dark(#eee7fd, #672cf2);
+  --text-accent: light-dark(#8a5cf5, #cbb7fa);
+  --text-accent-hover: light-dark(#672cf2, #eee7fd);
   --text-error: #fb464c;
   --text-faint: light-dark(
-    hsl(0, 0%, calc(10% + 20%)),
-    hsl(0, 0%, calc(95% - 3s5%))
+    hsl(0, 0%, calc(95% - 3s5%)),
+    hsl(0, 0%, calc(10% + 20%))
   );
   --text-highlight-bg: #ffd00066;
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: light-dark(#8c8c8c, #666666);
-  --text-normal: light-dark(#cccccc, hsl(0, 0%, -5%));
+  --text-muted: light-dark(#666666, #8c8c8c);
+  --text-normal: light-dark(hsl(0, 0%, -5%), #cccccc);
   --text-on-accent: #ffffff;
   --text-on-accent-inverted: #000000;
   --text-selection: #8a5cf533;
-  --text-shadow: light-dark(#212121, #e6e6e6);
+  --text-shadow: light-dark(#e6e6e6, #212121);
   --text-success: #44cf6e;
   --text-warning: #e9973f;
   --titlebar-background: #1a1a1a;
@@ -845,9 +845,9 @@ body {
   -webkit-font-smoothing: subpixel-antialiased;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(#0f0f0f, #e6e6e6);
+  background-color: light-dark(#e6e6e6, #0f0f0f);
   caret-color: #cbb7fa;
-  color: light-dark(#cccccc, hsl(0, 0%, -5%));
+  color: light-dark(hsl(0, 0%, -5%), #cccccc);
   contain: initial;
   font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
@@ -1007,7 +1007,7 @@ h6 {
 .markdown-rendered button.copy-code-button {
   background-color: transparent;
   box-shadow: none;
-  color: light-dark(#8c8c8c, #666666);
+  color: light-dark(#666666, #8c8c8c);
   font-family:
     "??",
     "??",
@@ -1250,8 +1250,8 @@ h6 {
 }
 
 .popover {
-  background-color: light-dark(#0f0f0f, #e6e6e6);
-  border: 1px solid light-dark(#262626, #dedede);
+  background-color: light-dark(#e6e6e6, #0f0f0f);
+  border: 1px solid light-dark(#dedede, #262626);
   border-radius: 8px;
   box-shadow:
     0px 1px 2px #0000001f,
@@ -1265,8 +1265,8 @@ h6 {
 
 .prompt {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   border: 0.5pt solid #555555;
   border-radius: 8px;
@@ -1286,10 +1286,10 @@ h6 {
 }
 
 input.prompt-input {
-  background: light-dark(#0f0f0f, #e6e6e6);
-  background-color: light-dark(#0f0f0f, #e6e6e6);
+  background: light-dark(#e6e6e6, #0f0f0f);
+  background-color: light-dark(#e6e6e6, #0f0f0f);
   border: none;
-  border-bottom: 1px solid light-dark(#1a1a1a, #f2f2f2);
+  border-bottom: 1px solid light-dark(#f2f2f2, #1a1a1a);
   border-radius: 0;
   font-size: 16px;
   height: 48px;
@@ -1308,7 +1308,7 @@ input.prompt-input {
 
 .markdown-rendered mark {
   background-color: #a8dcfa54;
-  color: light-dark(#cccccc, hsl(0, 0%, -5%));
+  color: light-dark(hsl(0, 0%, -5%), #cccccc);
 }
 
 a.tag {
@@ -1327,9 +1327,9 @@ a.tag {
 input[type="search"] {
   -webkit-app-region: no-drag;
   background: #333333;
-  border: 1px solid light-dark(#262626, #dedede);
+  border: 1px solid light-dark(#dedede, #262626);
   border-radius: 4px;
-  color: light-dark(#cccccc, hsl(0, 0%, -5%));
+  color: light-dark(hsl(0, 0%, -5%), #cccccc);
   font-family: "Inter", sans-serif;
   font-size: 70%;
   height: 30px;
@@ -1372,7 +1372,7 @@ input[type="search"] {
 .nav-folder-title {
   border: 1px solid transparent;
   border-radius: 4px;
-  color: light-dark(#8c8c8c, #666666);
+  color: light-dark(#666666, #8c8c8c);
   cursor: pointer;
   display: flex;
   font-size: 75%;
@@ -1391,7 +1391,7 @@ input[type="search"] {
 
 .nav-file-title {
   border-radius: 4px;
-  color: light-dark(#8c8c8c, #666666);
+  color: light-dark(#666666, #8c8c8c);
   cursor: pointer;
   display: block;
   font-size: 70%;
@@ -1432,7 +1432,7 @@ input[type="search"] {
 .tree-item-self {
   align-items: flex-start;
   border-radius: 3px;
-  color: light-dark(#8c8c8c, #666666);
+  color: light-dark(#666666, #8c8c8c);
   display: flex;
   font-size: 16px;
   font-weight: inherit;
@@ -1478,7 +1478,7 @@ input[type="search"] {
 }
 
 .tree-item-self.is-being-dragged {
-  background-color: light-dark(#b6d9fb, #4ca1f6);
+  background-color: light-dark(#4ca1f6, #b6d9fb);
   color: #ffffff;
 }
 
@@ -1514,18 +1514,18 @@ input[type="search"] {
 
 .tree-item-flair {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   border-radius: 3px;
-  color: light-dark(hsl(0, 0%, calc(10% + 20%)), hsl(0, 0%, calc(95% - 3s5%)));
+  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
   font-size: 8px;
   line-height: 12px;
   padding: 2px 4px;
 }
 
 .tree-item-inner {
-  color: light-dark(#cccccc, hsl(0, 0%, -5%));
+  color: light-dark(hsl(0, 0%, -5%), #cccccc);
   font-size: 70%;
   margin: 1px -2px -10px 0;
   overflow: hidden;
@@ -1540,7 +1540,7 @@ input[type="search"] {
 }
 
 .tree-item-inner-subtext {
-  color: light-dark(hsl(0, 0%, calc(10% + 20%)), hsl(0, 0%, calc(95% - 3s5%)));
+  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
   font-size: 85%;
 }
 
@@ -1580,7 +1580,7 @@ svg.svg-icon {
 
 .clickable-icon[aria-disabled="true"] {
   background-color: unset;
-  color: light-dark(#8c8c8c, #666666);
+  color: light-dark(#666666, #8c8c8c);
   opacity: 0.4;
 }
 
@@ -1614,7 +1614,7 @@ svg.svg-icon {
 }
 
 .view-header-title-parent .view-header-breadcrumb-separator {
-  color: light-dark(hsl(0, 0%, calc(10% + 20%)), hsl(0, 0%, calc(95% - 3s5%)));
+  color: light-dark(hsl(0, 0%, calc(95% - 3s5%)), hsl(0, 0%, calc(10% + 20%)));
   padding: 2px 1px;
 }
 
@@ -1654,7 +1654,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-tag {
-  color: light-dark(light-dark(#8c8c8c, #666666), light-dark(#8c8c8c, #666666));
+  color: light-dark(light-dark(#666666, #8c8c8c), light-dark(#666666, #8c8c8c));
 }
 
 .graph-view.color-fill-attachment {
@@ -1667,31 +1667,31 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-1 {
-  color: light-dark(#8c8c8c, #666666);
+  color: light-dark(#666666, #8c8c8c);
 }
 
 .graph-view.color-fill-2 {
-  color: light-dark(#8c8c8c, #666666);
+  color: light-dark(#666666, #8c8c8c);
 }
 
 .graph-view.color-fill-3 {
-  color: light-dark(#8c8c8c, #666666);
+  color: light-dark(#666666, #8c8c8c);
 }
 
 .graph-view.color-fill-4 {
-  color: light-dark(#8c8c8c, #666666);
+  color: light-dark(#666666, #8c8c8c);
 }
 
 .graph-view.color-fill-5 {
-  color: light-dark(#8c8c8c, #666666);
+  color: light-dark(#666666, #8c8c8c);
 }
 
 .graph-view.color-fill-6 {
-  color: light-dark(#8c8c8c, #666666);
+  color: light-dark(#666666, #8c8c8c);
 }
 
 .graph-view.color-arrow {
-  color: light-dark(#cccccc, hsl(0, 0%, -5%));
+  color: light-dark(hsl(0, 0%, -5%), #cccccc);
   opacity: 0.5;
 }
 
@@ -1708,16 +1708,16 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-highlight {
-  color: light-dark(#e87d7d, #e36363);
+  color: light-dark(#e36363, #e87d7d);
 }
 
 .graph-view.color-line-highlight {
-  color: light-dark(#e87d7d, #e36363);
+  color: light-dark(#e36363, #e87d7d);
 }
 
 .graph-controls {
-  background-color: light-dark(#121212, #ededed);
-  border: 1px solid light-dark(#262626, #dedede);
+  background-color: light-dark(#ededed, #121212);
+  border: 1px solid light-dark(#dedede, #262626);
   border-radius: 6px;
   inset-inline-end: 12px;
   left: 0px;
@@ -1929,17 +1929,17 @@ svg.svg-icon {
 }
 
 .workspace-tabs .workspace-leaf {
-  background-color: light-dark(#1a1a1a, #f2f2f2);
+  background-color: light-dark(#f2f2f2, #1a1a1a);
   height: 100%;
   width: 100%;
 }
 
 .workspace-split.mod-root {
-  background-color: light-dark(#0f0f0f, #e6e6e6);
+  background-color: light-dark(#e6e6e6, #0f0f0f);
 }
 
 .workspace-split.mod-root .view-content {
-  background-color: light-dark(#0f0f0f, #e6e6e6);
+  background-color: light-dark(#e6e6e6, #0f0f0f);
 }
 
 .workspace-leaf-resize-handle {

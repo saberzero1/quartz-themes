@@ -8,41 +8,41 @@
   --background-primary: light-dark(#000000, #000000);
   --background-primary-alt: light-dark(#000000, #000000);
   --background-secondary: light-dark(#000000, #000000);
-  --background-secondary-alt: light-dark(#363636, #212121);
-  --black: light-dark(#ffffff, #000000);
+  --background-secondary-alt: light-dark(#212121, #363636);
+  --black: light-dark(#000000, #ffffff);
   --button-interactive-normal: light-dark(#ffffff, #ffffff);
   --button-text-normal: light-dark(#000000, #000000);
   --checkbox-border-color: light-dark(#ffffff, #ffffff);
   --checkbox-marker-color: light-dark(#ffffff, #ffffff);
   --checklist-done-color: light-dark(#ffffff, #ffffff);
-  --code-background: light-dark(#111111, #eeeeee);
+  --code-background: light-dark(#eeeeee, #111111);
   --code-normal: light-dark(#ffffff, #ffffff);
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
-  --gray-1: light-dark(#999999, #666666);
-  --gray-2: light-dark(#555555, #aaaaaa);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
+  --gray-1: light-dark(#666666, #999999);
+  --gray-2: light-dark(#aaaaaa, #555555);
   --h1-color: light-dark(#ffffff, #ffffff);
   --h2-color: light-dark(#ffffff, #ffffff);
   --h3-color: light-dark(#ffffff, #ffffff);
@@ -52,7 +52,7 @@
   --icon-color: light-dark(#ffffff, #ffffff);
   --interactive-accent: light-dark(#555555, #555555);
   --interactive-accent-hover: light-dark(#999999, #999999);
-  --interactive-hover: light-dark(#111111, #eeeeee);
+  --interactive-hover: light-dark(#eeeeee, #111111);
   --interactive-normal: light-dark(#000000, #000000);
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
@@ -75,14 +75,14 @@
   --text-error: light-dark(#ffffff, #ffffff);
   --text-error-hover: light-dark(#ffffff, #ffffff);
   --text-faint: light-dark(#999999, #999999);
-  --text-highlight: light-dark(#ffffff, #000000);
-  --text-highlight-bg: light-dark(#000000, #ffffff);
+  --text-highlight: light-dark(#000000, #ffffff);
+  --text-highlight-bg: light-dark(#ffffff, #000000);
   --text-muted: light-dark(#999999, #999999);
   --text-normal: light-dark(#ffffff, #ffffff);
   --text-on-accent: light-dark(#000000, #000000);
   --text-selection: light-dark(#ffffff, #ffffff);
   --viewer-container-height: 0;
-  --white: light-dark(#000000, #ffffff);
+  --white: light-dark(#ffffff, #000000);
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
 }
@@ -116,7 +116,7 @@ body {
   --background-primary: light-dark(#000000, #000000);
   --background-primary-alt: light-dark(#000000, #000000);
   --background-secondary: light-dark(#000000, #000000);
-  --background-secondary-alt: light-dark(#363636, #212121);
+  --background-secondary-alt: light-dark(#212121, #363636);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -149,7 +149,7 @@ body {
   --bases-table-row-height: 30px;
   --bases-table-text-size: 0.875em;
   --bases-table-white-space: nowrap;
-  --black: light-dark(#ffffff, #000000);
+  --black: light-dark(#000000, #ffffff);
   --blockquote-background-color: transparent;
   --blockquote-border-color: #555555;
   --blockquote-border-thickness: 2px;
@@ -209,7 +209,7 @@ body {
   --checklist-done-color: light-dark(#ffffff, #ffffff);
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: 4px;
-  --code-background: light-dark(#111111, #eeeeee);
+  --code-background: light-dark(#eeeeee, #111111);
   --code-border-color: transparent;
   --code-border-width: 0px;
   --code-comment: #999999;
@@ -229,29 +229,29 @@ body {
   --collapse-icon-color: #999999;
   --collapse-icon-color-collapsed: #ffffff;
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -361,8 +361,8 @@ body {
   --graph-node-tag: #44cf6e;
   --graph-node-unresolved: #999999;
   --graph-text: #ffffff;
-  --gray-1: light-dark(#999999, #666666);
-  --gray-2: light-dark(#555555, #aaaaaa);
+  --gray-1: light-dark(#666666, #999999);
+  --gray-2: light-dark(#aaaaaa, #555555);
   --h1-color: light-dark(#ffffff, #ffffff);
   --h1-font: inherit;
   --h1-line-height: 1.2;
@@ -455,7 +455,7 @@ body {
   --interactive-accent: light-dark(#555555, #555555);
   --interactive-accent-hover: light-dark(#999999, #999999);
   --interactive-accent-hsl: 258, 88%, 66%;
-  --interactive-hover: light-dark(#111111, #eeeeee);
+  --interactive-hover: light-dark(#eeeeee, #111111);
   --interactive-normal: light-dark(#000000, #000000);
   --italic-color: inherit;
   --italic-weight: inherit;
@@ -777,8 +777,8 @@ body {
   --text-error: light-dark(#ffffff, #ffffff);
   --text-error-hover: light-dark(#ffffff, #ffffff);
   --text-faint: light-dark(#999999, #999999);
-  --text-highlight: light-dark(#ffffff, #000000);
-  --text-highlight-bg: light-dark(#000000, #ffffff);
+  --text-highlight: light-dark(#000000, #ffffff);
+  --text-highlight-bg: light-dark(#ffffff, #000000);
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: light-dark(#999999, #999999);
   --text-normal: light-dark(#ffffff, #ffffff);
@@ -812,18 +812,18 @@ body {
   --vault-profile-display: flex;
   --vault-profile-font-size: 14.992px;
   --vault-profile-font-weight: 500;
-  --white: light-dark(#000000, #ffffff);
+  --white: light-dark(#ffffff, #000000);
   --workspace-background-translucent: #00000099;
   --zoom-factor: 1;
   -webkit-font-smoothing: auto;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: light-dark(
-    light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff)),
-    light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff))
+    light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000)),
+    light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000))
   );
   caret-color: #ffffff;
-  color: light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000));
+  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
   contain: initial;
   font-family: "Fira Code", "FuraMono Nerd Font", monospace;
   font-size: 16px;
@@ -865,7 +865,7 @@ h6 a {
 
 h1 {
   --font-weight: 700;
-  color: light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000));
+  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
   font-family: inherit;
   font-size: 1.802em;
   font-style: normal;
@@ -879,7 +879,7 @@ h1 {
 
 h2 {
   --font-weight: 600;
-  color: light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000));
+  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
   font-family: inherit;
   font-size: 1.602em;
   font-style: normal;
@@ -893,7 +893,7 @@ h2 {
 
 h3 {
   --font-weight: 600;
-  color: light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000));
+  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
   font-family: inherit;
   font-size: 1.424em;
   font-style: normal;
@@ -907,7 +907,7 @@ h3 {
 
 h4 {
   --font-weight: 600;
-  color: light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000));
+  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
   font-family: inherit;
   font-size: 1.266em;
   font-style: normal;
@@ -921,7 +921,7 @@ h4 {
 
 h5 {
   --font-weight: 600;
-  color: light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000));
+  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
   font-family: inherit;
   font-size: 1.125em;
   font-style: normal;
@@ -935,7 +935,7 @@ h5 {
 
 h6 {
   --font-weight: 600;
-  color: light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000));
+  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
   font-family: inherit;
   font-size: 1em;
   font-style: normal;
@@ -948,7 +948,7 @@ h6 {
 }
 
 .markdown-rendered pre {
-  background-color: light-dark(#111111, #eeeeee);
+  background-color: light-dark(#eeeeee, #111111);
   border: 0px solid transparent;
   border-radius: 4px;
   min-height: 38px;
@@ -960,10 +960,10 @@ h6 {
 
 .markdown-rendered code {
   -webkit-box-decoration-break: clone;
-  background-color: light-dark(#111111, #eeeeee);
+  background-color: light-dark(#eeeeee, #111111);
   border: 0px solid transparent;
   border-radius: 0;
-  color: light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000));
+  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
   font-family:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -981,7 +981,7 @@ h6 {
 .markdown-rendered button.copy-code-button {
   background-color: transparent;
   box-shadow: none;
-  color: light-dark(light-dark(#999999, #666666), light-dark(#999999, #666666));
+  color: light-dark(light-dark(#666666, #999999), light-dark(#666666, #999999));
   font-family: "Fira Code", "FuraMono Nerd Font", monospace;
   font-size: 12.8px;
   height: auto;
@@ -1211,11 +1211,11 @@ h6 {
 
 .popover {
   background-color: light-dark(
-    light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff)),
-    light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff))
+    light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000)),
+    light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000))
   );
   border: 1px solid
-    light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000));
+    light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
   border-radius: 8px;
   box-shadow:
     0px 1px 2px #0000001f,
@@ -1229,8 +1229,8 @@ h6 {
 
 .prompt {
   background-color: light-dark(
-    light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff)),
-    light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff))
+    light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000)),
+    light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000))
   );
   border: 0.5pt solid #555555;
   border-radius: 12px;
@@ -1251,14 +1251,14 @@ h6 {
 
 input.prompt-input {
   background-color: light-dark(
-    light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff)),
-    light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff))
+    light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000)),
+    light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000))
   );
   border: none;
   border-bottom: 1px solid
     light-dark(
-      light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff)),
-      light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff))
+      light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000)),
+      light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000))
     );
   border-radius: 0;
   font-size: 16px;
@@ -1301,13 +1301,13 @@ a.tag {
 input[type="search"] {
   -webkit-app-region: no-drag;
   background: light-dark(
-    light-dark(#000000, #ffffff),
-    light-dark(#000000, #ffffff)
+    light-dark(#ffffff, #000000),
+    light-dark(#ffffff, #000000)
   );
   border: 1px solid
-    light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000));
+    light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
   border-radius: 5px;
-  color: light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000));
+  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
   font-family: inherit;
   font-size: 14.992px;
   height: 40px;
@@ -1339,7 +1339,7 @@ input[type="search"] {
 
 .nav-file-icon {
   align-items: center;
-  color: light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000));
+  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
   display: inline-flex;
   margin-inline-end: 6px;
   opacity: 1;
@@ -1348,7 +1348,7 @@ input[type="search"] {
 
 .nav-folder-title {
   border-radius: 4px;
-  color: light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000));
+  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
   cursor: pointer;
   display: flex;
   font-size: 16px;
@@ -1360,7 +1360,7 @@ input[type="search"] {
 
 .nav-file-title {
   border-radius: 4px;
-  color: light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000));
+  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
   cursor: pointer;
   display: flex;
   font-size: 16px;
@@ -1395,7 +1395,7 @@ input[type="search"] {
 .tree-item-self {
   align-items: baseline;
   border-radius: 4px;
-  color: light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000));
+  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
   display: flex;
   font-size: 16px;
   font-weight: inherit;
@@ -1442,15 +1442,15 @@ input[type="search"] {
 
 .tree-item-self.is-being-dragged {
   background-color: light-dark(
-    light-dark(#555555, #aaaaaa),
-    light-dark(#555555, #aaaaaa)
+    light-dark(#aaaaaa, #555555),
+    light-dark(#aaaaaa, #555555)
   );
-  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
+  color: light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000));
 }
 
 .tree-item-self .tree-item-icon {
   align-items: center;
-  color: light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000));
+  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
   display: flex;
   flex: 0 0 auto;
   justify-content: center;
@@ -1479,7 +1479,7 @@ input[type="search"] {
 
 .tree-item-flair {
   border-radius: 4px;
-  color: light-dark(light-dark(#999999, #666666), light-dark(#999999, #666666));
+  color: light-dark(light-dark(#666666, #999999), light-dark(#666666, #999999));
   font-size: 12.8px;
   line-height: 1;
 }
@@ -1496,7 +1496,7 @@ input[type="search"] {
 }
 
 .tree-item-inner-subtext {
-  color: light-dark(light-dark(#999999, #666666), light-dark(#999999, #666666));
+  color: light-dark(light-dark(#666666, #999999), light-dark(#666666, #999999));
   font-size: 85%;
 }
 
@@ -1508,9 +1508,9 @@ input[type="search"] {
 }
 
 kbd {
-  background-color: light-dark(#111111, #eeeeee);
+  background-color: light-dark(#eeeeee, #111111);
   border-radius: 4px;
-  color: light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000));
+  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
   font-family:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1526,11 +1526,11 @@ svg.svg-icon {
 }
 
 .clickable-icon.mod-warning {
-  color: light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000));
+  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
 }
 
 .clickable-icon.mod-filled svg {
-  fill: light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000));
+  fill: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
 }
 
 .setting-item-control .clickable-icon {
@@ -1539,7 +1539,7 @@ svg.svg-icon {
 
 .clickable-icon[aria-disabled="true"] {
   background-color: unset;
-  color: light-dark(light-dark(#999999, #666666), light-dark(#999999, #666666));
+  color: light-dark(light-dark(#666666, #999999), light-dark(#666666, #999999));
   opacity: 0.4;
 }
 
@@ -1562,7 +1562,7 @@ svg.svg-icon {
   align-items: center;
   background-color: transparent;
   border-radius: 4px;
-  color: light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000));
+  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
   cursor: pointer;
   display: flex;
   height: auto;
@@ -1573,7 +1573,7 @@ svg.svg-icon {
 }
 
 .view-header-title-parent .view-header-breadcrumb-separator {
-  color: light-dark(light-dark(#999999, #666666), light-dark(#999999, #666666));
+  color: light-dark(light-dark(#666666, #999999), light-dark(#666666, #999999));
   padding: 2px 1px;
 }
 
@@ -1604,7 +1604,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill {
-  color: light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000));
+  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
 }
 
 .graph-view.color-fill-focused {
@@ -1625,58 +1625,58 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-1 {
-  color: light-dark(light-dark(#999999, #666666), light-dark(#999999, #666666));
+  color: light-dark(light-dark(#666666, #999999), light-dark(#666666, #999999));
 }
 
 .graph-view.color-fill-2 {
-  color: light-dark(light-dark(#999999, #666666), light-dark(#999999, #666666));
+  color: light-dark(light-dark(#666666, #999999), light-dark(#666666, #999999));
 }
 
 .graph-view.color-fill-3 {
-  color: light-dark(light-dark(#999999, #666666), light-dark(#999999, #666666));
+  color: light-dark(light-dark(#666666, #999999), light-dark(#666666, #999999));
 }
 
 .graph-view.color-fill-4 {
-  color: light-dark(light-dark(#999999, #666666), light-dark(#999999, #666666));
+  color: light-dark(light-dark(#666666, #999999), light-dark(#666666, #999999));
 }
 
 .graph-view.color-fill-5 {
-  color: light-dark(light-dark(#999999, #666666), light-dark(#999999, #666666));
+  color: light-dark(light-dark(#666666, #999999), light-dark(#666666, #999999));
 }
 
 .graph-view.color-fill-6 {
-  color: light-dark(light-dark(#999999, #666666), light-dark(#999999, #666666));
+  color: light-dark(light-dark(#666666, #999999), light-dark(#666666, #999999));
 }
 
 .graph-view.color-arrow {
-  color: light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000));
+  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
   opacity: 0.5;
 }
 
 .graph-view.color-circle {
-  color: light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000));
+  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
 }
 
 .graph-view.color-line {
-  color: light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000));
+  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
 }
 
 .graph-view.color-text {
-  color: light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000));
+  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
 }
 
 .graph-view.color-fill-highlight {
-  color: light-dark(light-dark(#555555, #aaaaaa), light-dark(#555555, #aaaaaa));
+  color: light-dark(light-dark(#aaaaaa, #555555), light-dark(#aaaaaa, #555555));
 }
 
 .graph-view.color-line-highlight {
-  color: light-dark(light-dark(#555555, #aaaaaa), light-dark(#555555, #aaaaaa));
+  color: light-dark(light-dark(#aaaaaa, #555555), light-dark(#aaaaaa, #555555));
 }
 
 .graph-controls {
   background-color: light-dark(
-    light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff)),
-    light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff))
+    light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000)),
+    light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000))
   );
   border-radius: 8px;
   inset-inline-end: 12px;
@@ -1915,23 +1915,23 @@ svg.svg-icon {
 
 .workspace-tabs .workspace-leaf {
   background-color: light-dark(
-    light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff)),
-    light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff))
+    light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000)),
+    light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000))
   );
   height: 100%;
 }
 
 .workspace-split.mod-root {
   background-color: light-dark(
-    light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff)),
-    light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff))
+    light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000)),
+    light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000))
   );
 }
 
 .workspace-split.mod-root .view-content {
   background-color: light-dark(
-    light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff)),
-    light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff))
+    light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000)),
+    light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000))
   );
 }
 

@@ -931,33 +931,33 @@
 }
 
 :root {
-  --background-secondary-alt: light-dark(#21201e, #212121);
+  --background-secondary-alt: light-dark(#212121, #21201e);
   --color-accent: light-dark(#2282e2, #2282e2);
-  --color-accent-1: light-dark(#439ee8, #328fe5);
-  --color-accent-2: light-dark(#61b4ee, #439ee8);
+  --color-accent-1: light-dark(#328fe5, #439ee8);
+  --color-accent-2: light-dark(#439ee8, #61b4ee);
   --color-accent-hsl: light-dark(#2282e2, #2282e2);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-brown: light-dark(#ba856f, #9f6b53);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-gray: light-dark(#9b9b9b, #787774);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-brown: light-dark(#9f6b53, #ba856f);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-gray: light-dark(#787774, #9b9b9b);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
   --page-border: 9px solid transparent;
@@ -968,16 +968,16 @@
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
   --spreadHorizontalWrapped-margin-LR: -3.5px;
-  --tag-1-default: light-dark(#89632a, #fdecc8);
-  --tag-10-default: light-dark(#373737, #e3e2e080);
-  --tag-2-default: light-dark(#2b593f, #dbeddb);
-  --tag-3-default: light-dark(#28456c, #d3e5ef);
-  --tag-4-default: light-dark(#492f64, #e8deee);
-  --tag-5-default: light-dark(#69314c, #f5e0e9);
-  --tag-6-default: light-dark(#6e3630, #ffe2dd);
-  --tag-7-default: light-dark(#854c1d, #fadec9);
-  --tag-8-default: light-dark(#5a5a5a, #eee0da);
-  --tag-9-default: light-dark(#603b2c, #e3e2e0);
+  --tag-1-default: light-dark(#fdecc8, #89632a);
+  --tag-10-default: light-dark(#e3e2e080, #373737);
+  --tag-2-default: light-dark(#dbeddb, #2b593f);
+  --tag-3-default: light-dark(#d3e5ef, #28456c);
+  --tag-4-default: light-dark(#e8deee, #492f64);
+  --tag-5-default: light-dark(#f5e0e9, #69314c);
+  --tag-6-default: light-dark(#ffe2dd, #6e3630);
+  --tag-7-default: light-dark(#fadec9, #854c1d);
+  --tag-8-default: light-dark(#eee0da, #5a5a5a);
+  --tag-9-default: light-dark(#e3e2e0, #603b2c);
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
@@ -1617,7 +1617,7 @@ body {
   --background-primary: #000;
   --background-primary-alt: #111;
   --background-secondary: #1e1e1e;
-  --background-secondary-alt: light-dark(#21201e, #212121);
+  --background-secondary-alt: light-dark(#212121, #21201e);
   --banner-size: 220px;
   --bases-embed-border: 1px solid #ffffff24;
   --bases-embed-border-radius: 3px;
@@ -1729,31 +1729,31 @@ body {
   --collapse-icon-color: #ffffff8c;
   --collapse-icon-color-collapsed: #ffffff73;
   --color-accent: light-dark(#2282e2, #2282e2);
-  --color-accent-1: light-dark(#439ee8, #328fe5);
-  --color-accent-2: light-dark(#61b4ee, #439ee8);
+  --color-accent-1: light-dark(#328fe5, #439ee8);
+  --color-accent-2: light-dark(#439ee8, #61b4ee);
   --color-accent-hsl: light-dark(#2282e2, #2282e2);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-brown: light-dark(#ba856f, #9f6b53);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-gray: light-dark(#9b9b9b, #787774);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-brown: light-dark(#9f6b53, #ba856f);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-gray: light-dark(#787774, #9b9b9b);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --custom-line-height: 1.5em;
@@ -2257,16 +2257,16 @@ body {
   --table-text-color: inherit;
   --table-text-size: 16px;
   --table-white-space: break-spaces;
-  --tag-1-default: light-dark(#89632a, #fdecc8);
-  --tag-10-default: light-dark(#373737, #e3e2e080);
-  --tag-2-default: light-dark(#2b593f, #dbeddb);
-  --tag-3-default: light-dark(#28456c, #d3e5ef);
-  --tag-4-default: light-dark(#492f64, #e8deee);
-  --tag-5-default: light-dark(#69314c, #f5e0e9);
-  --tag-6-default: light-dark(#6e3630, #ffe2dd);
-  --tag-7-default: light-dark(#854c1d, #fadec9);
-  --tag-8-default: light-dark(#5a5a5a, #eee0da);
-  --tag-9-default: light-dark(#603b2c, #e3e2e0);
+  --tag-1-default: light-dark(#fdecc8, #89632a);
+  --tag-10-default: light-dark(#e3e2e080, #373737);
+  --tag-2-default: light-dark(#dbeddb, #2b593f);
+  --tag-3-default: light-dark(#d3e5ef, #28456c);
+  --tag-4-default: light-dark(#e8deee, #492f64);
+  --tag-5-default: light-dark(#f5e0e9, #69314c);
+  --tag-6-default: light-dark(#ffe2dd, #6e3630);
+  --tag-7-default: light-dark(#fadec9, #854c1d);
+  --tag-8-default: light-dark(#eee0da, #5a5a5a);
+  --tag-9-default: light-dark(#e3e2e0, #603b2c);
   --tag-background: #2282e21a;
   --tag-background-hover: #2282e233;
   --tag-border-color: #2282e226;
@@ -7641,8 +7641,8 @@ button.mod-destructive {
 
 .card {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   border: 1px solid #ffffff24;
   border-radius: 4px;
@@ -10062,8 +10062,8 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   cursor: default;
   text-align: center;
@@ -11220,25 +11220,25 @@ kbd {
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
-  filter: drop-shadow(0px 0px 1px light-dark(#999999, #707070))
+  filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
 }
 
@@ -17439,7 +17439,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .graph-view.color-arrow {
-  color: light-dark(#53dfdd, #00bfbc);
+  color: light-dark(#00bfbc, #53dfdd);
   opacity: 1;
 }
 
@@ -20308,12 +20308,12 @@ body.is-mobile .canvas-node-resizer {
 
 .canvas-color-picker-item.canvas-color-picker-custom:not(.is-active) {
   background: conic-gradient(
-    light-dark(#fb464c, #e93147),
-    light-dark(#e0de71, #e0ac00),
-    light-dark(#44cf6e, #08b94e),
-    light-dark(#027aff, #086ddd),
-    light-dark(#a882ff, #7852ee),
-    light-dark(#fb464c, #e93147)
+    light-dark(#e93147, #fb464c),
+    light-dark(#e0ac00, #e0de71),
+    light-dark(#08b94e, #44cf6e),
+    light-dark(#086ddd, #027aff),
+    light-dark(#7852ee, #a882ff),
+    light-dark(#e93147, #fb464c)
   );
 }
 
@@ -24502,7 +24502,7 @@ div.HyperMD-codeblock {
 }
 
 .markdown-preview-section > div a.tag:nth-of-type(10n + 1) {
-  background-color: light-dark(#89632a, #fdecc8);
+  background-color: light-dark(#fdecc8, #89632a);
 }
 
 .HyperMD-list-line
@@ -24510,7 +24510,7 @@ div.HyperMD-codeblock {
     span.cm-hashtag:nth-of-type(20n + 2),
     span.cm-hashtag:nth-of-type(20n + 2) + .cm-hashtag
   ) {
-  background-color: light-dark(#89632a, #fdecc8);
+  background-color: light-dark(#fdecc8, #89632a);
 }
 
 .cm-line
@@ -24518,7 +24518,7 @@ div.HyperMD-codeblock {
     span.cm-hashtag-begin:nth-of-type(10n + 1),
     span.cm-hashtag-end:nth-of-type(20n + 2)
   ) {
-  background-color: light-dark(#89632a, #fdecc8);
+  background-color: light-dark(#fdecc8, #89632a);
 }
 
 :is(
@@ -24534,7 +24534,7 @@ div.HyperMD-codeblock {
       span.cm-hashtag-end:nth-of-type(20n + 4)
     )
 ) {
-  background-color: light-dark(#2b593f, #dbeddb);
+  background-color: light-dark(#dbeddb, #2b593f);
 }
 
 :is(
@@ -24550,7 +24550,7 @@ div.HyperMD-codeblock {
       span.cm-hashtag-end:nth-of-type(20n + 6)
     )
 ) {
-  background-color: light-dark(#28456c, #d3e5ef);
+  background-color: light-dark(#d3e5ef, #28456c);
 }
 
 :is(
@@ -24566,7 +24566,7 @@ div.HyperMD-codeblock {
       span.cm-hashtag-end:nth-of-type(20n + 8)
     )
 ) {
-  background-color: light-dark(#492f64, #e8deee);
+  background-color: light-dark(#e8deee, #492f64);
 }
 
 :is(
@@ -24582,7 +24582,7 @@ div.HyperMD-codeblock {
       span.cm-hashtag-end:nth-of-type(20n + 10)
     )
 ) {
-  background-color: light-dark(#69314c, #f5e0e9);
+  background-color: light-dark(#f5e0e9, #69314c);
 }
 
 :is(
@@ -24598,7 +24598,7 @@ div.HyperMD-codeblock {
       span.cm-hashtag-end:nth-of-type(20n + 12)
     )
 ) {
-  background-color: light-dark(#6e3630, #ffe2dd);
+  background-color: light-dark(#ffe2dd, #6e3630);
 }
 
 :is(
@@ -24614,7 +24614,7 @@ div.HyperMD-codeblock {
       span.cm-hashtag-end:nth-of-type(20n + 14)
     )
 ) {
-  background-color: light-dark(#854c1d, #fadec9);
+  background-color: light-dark(#fadec9, #854c1d);
 }
 
 :is(
@@ -24630,7 +24630,7 @@ div.HyperMD-codeblock {
       span.cm-hashtag-end:nth-of-type(20n + 16)
     )
 ) {
-  background-color: light-dark(#5a5a5a, #eee0da);
+  background-color: light-dark(#eee0da, #5a5a5a);
 }
 
 :is(
@@ -24646,7 +24646,7 @@ div.HyperMD-codeblock {
       span.cm-hashtag-end:nth-of-type(20n + 18)
     )
 ) {
-  background-color: light-dark(#603b2c, #e3e2e0);
+  background-color: light-dark(#e3e2e0, #603b2c);
 }
 
 :is(
@@ -24662,7 +24662,7 @@ div.HyperMD-codeblock {
       span.cm-hashtag-end:nth-of-type(20n + 20)
     )
 ) {
-  background-color: light-dark(#373737, #e3e2e080);
+  background-color: light-dark(#e3e2e080, #373737);
 }
 
 table {
@@ -24920,43 +24920,43 @@ li li li li {
 }
 
 .multi-select-pill:nth-of-type(10n + 1) {
-  background-color: light-dark(#89632a, #fdecc8);
+  background-color: light-dark(#fdecc8, #89632a);
 }
 
 .multi-select-pill:nth-of-type(10n + 2) {
-  background-color: light-dark(#2b593f, #dbeddb);
+  background-color: light-dark(#dbeddb, #2b593f);
 }
 
 .multi-select-pill:nth-of-type(10n + 3) {
-  background-color: light-dark(#28456c, #d3e5ef);
+  background-color: light-dark(#d3e5ef, #28456c);
 }
 
 .multi-select-pill:nth-of-type(10n + 4) {
-  background-color: light-dark(#492f64, #e8deee);
+  background-color: light-dark(#e8deee, #492f64);
 }
 
 .multi-select-pill:nth-of-type(10n + 5) {
-  background-color: light-dark(#69314c, #f5e0e9);
+  background-color: light-dark(#f5e0e9, #69314c);
 }
 
 .multi-select-pill:nth-of-type(10n + 6) {
-  background-color: light-dark(#6e3630, #ffe2dd);
+  background-color: light-dark(#ffe2dd, #6e3630);
 }
 
 .multi-select-pill:nth-of-type(10n + 7) {
-  background-color: light-dark(#854c1d, #fadec9);
+  background-color: light-dark(#fadec9, #854c1d);
 }
 
 .multi-select-pill:nth-of-type(10n + 8) {
-  background-color: light-dark(#5a5a5a, #eee0da);
+  background-color: light-dark(#eee0da, #5a5a5a);
 }
 
 .multi-select-pill:nth-of-type(10n + 9) {
-  background-color: light-dark(#603b2c, #e3e2e0);
+  background-color: light-dark(#e3e2e0, #603b2c);
 }
 
 .multi-select-pill:nth-of-type(10n + 10) {
-  background-color: light-dark(#373737, #e3e2e080);
+  background-color: light-dark(#e3e2e080, #373737);
 }
 
 .mod-settings div.vertical-tab-content {

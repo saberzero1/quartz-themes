@@ -931,31 +931,31 @@
 }
 
 :root {
-  --background-secondary-alt: light-dark(#414141, #1e1e1e);
+  --background-secondary-alt: light-dark(#1e1e1e, #414141);
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --dataview-table-even-bg-color: light-dark(#111, #111);
   --dataview-table-odd-bg-color: light-dark(#1e1e1e, #1e1e1e);
   --dataview-table-row-hover: light-dark(#8a5cf5, #8a5cf5);
@@ -969,7 +969,7 @@
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
   --spreadHorizontalWrapped-margin-LR: -3.5px;
-  --text-accent: light-dark(#8a5cf5, #7e55dd);
+  --text-accent: light-dark(#7e55dd, #8a5cf5);
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
@@ -1609,7 +1609,7 @@ body {
   --background-primary: #000;
   --background-primary-alt: #111;
   --background-secondary: #1e1e1e;
-  --background-secondary-alt: light-dark(#414141, #1e1e1e);
+  --background-secondary-alt: light-dark(#1e1e1e, #414141);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -1719,29 +1719,29 @@ body {
   --collapse-icon-color: #666666;
   --collapse-icon-color-collapsed: #666666;
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --dataview-table-even-bg-color: light-dark(#111, #111);
@@ -2282,7 +2282,7 @@ body {
   --tag-radius: 1em;
   --tag-size: 0.875em;
   --tag-weight: inherit;
-  --text-accent: light-dark(#8a5cf5, #7e55dd);
+  --text-accent: light-dark(#7e55dd, #8a5cf5);
   --text-accent-hover: #c5b6fc;
   --text-error: #e03035;
   --text-faint: #666666;
@@ -3744,7 +3744,7 @@ body:not(.is-mobile) .app-container {
 }
 
 .empty-state-action {
-  color: light-dark(#8a5cf5, #7e55dd);
+  color: light-dark(#7e55dd, #8a5cf5);
   cursor: pointer;
   line-height: 36px;
 }
@@ -5354,11 +5354,11 @@ input {
 }
 
 .setting-add-hotkey-button.mod-active {
-  color: light-dark(#8a5cf5, #7e55dd);
+  color: light-dark(#7e55dd, #8a5cf5);
 }
 
 .setting-restore-hotkey-button.mod-active {
-  color: light-dark(#8a5cf5, #7e55dd);
+  color: light-dark(#7e55dd, #8a5cf5);
 }
 
 @media (hover: hover) {
@@ -7075,7 +7075,7 @@ body > .workspace-split {
 .mod-root .workspace-tab-header-status-icon {
   --icon-size: 14px;
   --icon-stroke: 2px;
-  color: light-dark(#8a5cf5, #7e55dd);
+  color: light-dark(#7e55dd, #8a5cf5);
 }
 
 .mod-root .workspace-tab-header-inner-icon {
@@ -7681,8 +7681,8 @@ button.mod-destructive {
 
 .card {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   border: 1px solid transparent;
   border-radius: 4px;
@@ -7869,7 +7869,7 @@ button.mod-destructive {
 }
 
 .u-pop {
-  color: light-dark(#8a5cf5, #7e55dd);
+  color: light-dark(#7e55dd, #8a5cf5);
   font-weight: 600;
 }
 
@@ -7921,7 +7921,7 @@ button.mod-destructive {
 
 @media (hover: hover) {
   .diff-collapsed:hover {
-    color: light-dark(#8a5cf5, #7e55dd);
+    color: light-dark(#7e55dd, #8a5cf5);
   }
 }
 
@@ -8034,13 +8034,13 @@ button.mod-destructive {
 }
 
 .markdown-rendered .search-highlight > div.is-active {
-  box-shadow: 0 0 0px 3px light-dark(#8a5cf5, #7e55dd);
+  box-shadow: 0 0 0px 3px light-dark(#7e55dd, #8a5cf5);
   opacity: 1;
 }
 
 .cm-s-obsidian span.obsidian-search-match-highlight {
   border-radius: 2px;
-  box-shadow: 0 0 0px 3px light-dark(#8a5cf5, #7e55dd);
+  box-shadow: 0 0 0px 3px light-dark(#7e55dd, #8a5cf5);
   mix-blend-mode: darken;
 }
 
@@ -9371,7 +9371,7 @@ select.mod-hidden {
 
 .notice-cta {
   align-items: center;
-  color: light-dark(#8a5cf5, #7e55dd);
+  color: light-dark(#7e55dd, #8a5cf5);
   display: flex;
   white-space: nowrap;
 }
@@ -10104,8 +10104,8 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   cursor: default;
   text-align: center;
@@ -11272,25 +11272,25 @@ kbd {
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
-  filter: drop-shadow(0px 0px 1px light-dark(#999999, #707070))
+  filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
 }
 
@@ -11329,7 +11329,7 @@ kbd {
 
 .is-phone .pdf-findbar .pdf-toolbar-button {
   background-color: transparent;
-  color: light-dark(#8a5cf5, #7e55dd);
+  color: light-dark(#7e55dd, #8a5cf5);
   flex-grow: 0;
   flex-shrink: 0;
   height: auto;
@@ -12686,7 +12686,7 @@ iframe.external-embed {
 
 @media (hover: hover) {
   .footnote-backref:hover {
-    color: light-dark(#8a5cf5, #7e55dd);
+    color: light-dark(#7e55dd, #8a5cf5);
     text-decoration: none;
   }
 }
@@ -12924,7 +12924,7 @@ iframe.external-embed {
 }
 
 .metadata-error-cta {
-  color: light-dark(#8a5cf5, #7e55dd);
+  color: light-dark(#7e55dd, #8a5cf5);
   cursor: pointer;
   font-size: 14.992px;
   font-weight: 500;
@@ -15300,7 +15300,7 @@ mjx-container {
 }
 
 .cm-s-obsidian span.cm-formatting-math {
-  color: light-dark(#8a5cf5, #7e55dd);
+  color: light-dark(#7e55dd, #8a5cf5);
   font-weight: inherit;
 }
 
@@ -15427,8 +15427,8 @@ mjx-container {
 
 .cm-html-embed thead > tr > th {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
   overflow: hidden;
   text-overflow: ellipsis;
@@ -15437,8 +15437,8 @@ mjx-container {
 
 .markdown-rendered thead > tr > th {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
   overflow: hidden;
   text-overflow: ellipsis;
@@ -15447,8 +15447,8 @@ mjx-container {
 
 .cm-html-embed tbody > tr > td {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
   overflow: hidden;
   text-overflow: ellipsis;
@@ -15457,8 +15457,8 @@ mjx-container {
 
 .markdown-rendered tbody > tr > td {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
   overflow: hidden;
   text-overflow: ellipsis;
@@ -20468,12 +20468,12 @@ body.is-mobile .canvas-node-resizer {
 
 .canvas-color-picker-item.canvas-color-picker-custom:not(.is-active) {
   background: conic-gradient(
-    light-dark(#fb464c, #e93147),
-    light-dark(#e0de71, #e0ac00),
-    light-dark(#44cf6e, #08b94e),
-    light-dark(#027aff, #086ddd),
-    light-dark(#a882ff, #7852ee),
-    light-dark(#fb464c, #e93147)
+    light-dark(#e93147, #fb464c),
+    light-dark(#e0ac00, #e0de71),
+    light-dark(#08b94e, #44cf6e),
+    light-dark(#086ddd, #027aff),
+    light-dark(#7852ee, #a882ff),
+    light-dark(#e93147, #fb464c)
   );
 }
 
@@ -23263,7 +23263,7 @@ body.is-tablet .mobile-navbar {
 }
 
 .mobile-toolbar-floating-options .mobile-toolbar-option {
-  color: light-dark(#8a5cf5, #7e55dd);
+  color: light-dark(#7e55dd, #8a5cf5);
   min-width: 50px;
 }
 
@@ -24028,7 +24028,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable.nav-file-title:hover {
 .workspace-leaf-content[data-type~="graph"] {
   background: radial-gradient(
     circle,
-    light-dark(#242424, #fafafa) 0%,
+    light-dark(#fafafa, #242424) 0%,
     #111 20%,
     #000 80%,
     #000 100%
@@ -24148,7 +24148,7 @@ h6:hover {
   background-color: color-mix(
     in srgb,
     #8a5cf5 15%,
-    light-dark(light-dark(#212121, #fcfcfc), light-dark(#212121, #fcfcfc))
+    light-dark(light-dark(#fcfcfc, #212121), light-dark(#fcfcfc, #212121))
   );
 }
 
@@ -24156,7 +24156,7 @@ h6:hover {
   background-color: color-mix(
     in srgb,
     #8a5cf5 15%,
-    light-dark(light-dark(#212121, #fcfcfc), light-dark(#212121, #fcfcfc))
+    light-dark(light-dark(#fcfcfc, #212121), light-dark(#fcfcfc, #212121))
   );
 }
 
@@ -24164,7 +24164,7 @@ h6:hover {
   background-color: color-mix(
     in srgb,
     #8a5cf5 15%,
-    light-dark(light-dark(#212121, #fcfcfc), light-dark(#212121, #fcfcfc))
+    light-dark(light-dark(#fcfcfc, #212121), light-dark(#fcfcfc, #212121))
   );
 }
 
@@ -24172,35 +24172,35 @@ h6:hover {
   background-color: color-mix(
     in srgb,
     #8a5cf5 15%,
-    light-dark(light-dark(#212121, #fcfcfc), light-dark(#212121, #fcfcfc))
+    light-dark(light-dark(#fcfcfc, #212121), light-dark(#fcfcfc, #212121))
   );
 }
 
 .cm-html-embed thead tr > th:nth-child(even) {
   background-color: light-dark(
-    light-dark(#242424, #fafafa),
-    light-dark(#242424, #fafafa)
+    light-dark(#fafafa, #242424),
+    light-dark(#fafafa, #242424)
   );
 }
 
 .markdown-rendered thead tr > th:nth-child(even) {
   background-color: light-dark(
-    light-dark(#242424, #fafafa),
-    light-dark(#242424, #fafafa)
+    light-dark(#fafafa, #242424),
+    light-dark(#fafafa, #242424)
   );
 }
 
 .cm-html-embed tbody tr > td:nth-child(even) {
   background-color: light-dark(
-    light-dark(#242424, #fafafa),
-    light-dark(#242424, #fafafa)
+    light-dark(#fafafa, #242424),
+    light-dark(#fafafa, #242424)
   );
 }
 
 .markdown-rendered tbody tr > td:nth-child(even) {
   background-color: light-dark(
-    light-dark(#242424, #fafafa),
-    light-dark(#242424, #fafafa)
+    light-dark(#fafafa, #242424),
+    light-dark(#fafafa, #242424)
   );
 }
 
@@ -24208,7 +24208,7 @@ h6:hover {
   background-color: color-mix(
     in srgb,
     #8a5cf5 15%,
-    light-dark(light-dark(#242424, #fafafa), light-dark(#242424, #fafafa))
+    light-dark(light-dark(#fafafa, #242424), light-dark(#fafafa, #242424))
   );
 }
 
@@ -24216,7 +24216,7 @@ h6:hover {
   background-color: color-mix(
     in srgb,
     #8a5cf5 15%,
-    light-dark(light-dark(#242424, #fafafa), light-dark(#242424, #fafafa))
+    light-dark(light-dark(#fafafa, #242424), light-dark(#fafafa, #242424))
   );
 }
 
@@ -24224,7 +24224,7 @@ h6:hover {
   background-color: color-mix(
     in srgb,
     #8a5cf5 15%,
-    light-dark(light-dark(#242424, #fafafa), light-dark(#242424, #fafafa))
+    light-dark(light-dark(#fafafa, #242424), light-dark(#fafafa, #242424))
   );
 }
 
@@ -24232,7 +24232,7 @@ h6:hover {
   background-color: color-mix(
     in srgb,
     #8a5cf5 15%,
-    light-dark(light-dark(#242424, #fafafa), light-dark(#242424, #fafafa))
+    light-dark(light-dark(#fafafa, #242424), light-dark(#fafafa, #242424))
   );
 }
 
@@ -24285,6 +24285,6 @@ div.reset-button.svelte-1vwr9dd.svelte-1vwr9dd {
 }
 
 .themed-color-wrapper .pickr-reset > button {
-  background-color: light-dark(#262626, #f6f6f6);
-  color: light-dark(#dadada, #222222);
+  background-color: light-dark(#f6f6f6, #262626);
+  color: light-dark(#222222, #dadada);
 }

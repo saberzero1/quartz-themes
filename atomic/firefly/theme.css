@@ -950,8 +950,8 @@
 
 :root {
   --background-secondary-alt: light-dark(
-    var(--color-base-30),
-    var(--color-base-05)
+    var(--color-base-05),
+    var(--color-base-30)
   );
   --color-accent: light-dark(
     hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
@@ -959,26 +959,26 @@
   );
   --color-accent-1: light-dark(
     hsl(
-      calc(var(--accent-h) - 3),
-      calc(var(--accent-s) * 1.02),
-      calc(var(--accent-l) * 1.15)
-    ),
-    hsl(
       calc(var(--accent-h) - 1),
       calc(var(--accent-s) * 1.01),
       calc(var(--accent-l) * 1.075)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
     )
   );
   --color-accent-2: light-dark(
     hsl(
-      calc(var(--accent-h) - 5),
-      calc(var(--accent-s) * 1.05),
-      calc(var(--accent-l) * 1.29)
-    ),
-    hsl(
       calc(var(--accent-h) - 3),
       calc(var(--accent-s) * 1.02),
       calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
     )
   );
   --color-accent-hsl: light-dark(
@@ -989,47 +989,47 @@
     var(--accent-s),
     var(--accent-l)
   );
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-element-border: light-dark(#0a0b0f, #ffffff);
-  --color-element-border-light: light-dark(#484e6d, #ffffff);
-  --color-element-icon: light-dark(#adb9db, #1f212f);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-element-border: light-dark(#ffffff, #0a0b0f);
+  --color-element-border-light: light-dark(#ffffff, #484e6d);
+  --color-element-icon: light-dark(#1f212f, #adb9db);
   --color-family-primary: Inter, sans-serif;
   --color-family-secondary: Jetbrains Mono, monospace;
-  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-green: light-dark(#08b94e, #44cf6e);
   --color-lineheight-large: 2em;
   --color-lineheight-max: 2.5em;
   --color-lineheight-medium: 1.5em;
   --color-lineheight-min: 1em;
   --color-lineheight-regular: 1.75em;
   --color-lineheight-xtra-large: 2.25em;
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-primary-100: light-dark(#676f9b, #959ab9);
-  --color-primary-1000: light-dark(#0a0b0f, #f0f1f5);
-  --color-primary-1100: light-dark(#050608, #f0f1f5);
-  --color-primary-200: light-dark(#5d648c, #ffffff);
-  --color-primary-300: light-dark(#52597c, #ffffff);
-  --color-primary-400: light-dark(#484e6d, #ffffff);
-  --color-primary-500: light-dark(#3e435d, #ffffff);
-  --color-primary-600: light-dark(#34384e, #ffffff);
-  --color-primary-700: light-dark(#292c3e, #ffffff);
-  --color-primary-800: light-dark(#1f212f, #ffffff);
-  --color-primary-900: light-dark(#15161f, #f0f1f5);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-primary-100: light-dark(#959ab9, #676f9b);
+  --color-primary-1000: light-dark(#f0f1f5, #0a0b0f);
+  --color-primary-1100: light-dark(#f0f1f5, #050608);
+  --color-primary-200: light-dark(#ffffff, #5d648c);
+  --color-primary-300: light-dark(#ffffff, #52597c);
+  --color-primary-400: light-dark(#ffffff, #484e6d);
+  --color-primary-500: light-dark(#ffffff, #3e435d);
+  --color-primary-600: light-dark(#ffffff, #34384e);
+  --color-primary-700: light-dark(#ffffff, #292c3e);
+  --color-primary-800: light-dark(#ffffff, #1f212f);
+  --color-primary-900: light-dark(#f0f1f5, #15161f);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --color-size-2xtra-large: 1.5rem;
   --color-size-3xtra-large: 1.75rem;
   --color-size-4xtra-large: 2rem;
@@ -1038,20 +1038,20 @@
   --color-size-small: 1rem;
   --color-size-xtra-large: 1.25rem;
   --color-size-xtra-small: 0.75rem;
-  --color-text-code: light-dark(#00c9a7, #6be399);
-  --color-text-hash-tag: light-dark(#95ff6f, #5d648c);
-  --color-text-link: light-dark(#6fa1ff, #2633ab);
-  --color-text-linkUrl: light-dark(#6fa1ff, #2633ab);
-  --color-text-paragraph: light-dark(#c0cdf3, #1f212f);
-  --color-text-quote: light-dark(#c0cdf3, #484e6d);
-  --color-text-strong: light-dark(#ebeff7, #ff0040);
-  --color-title-h1: light-dark(#ff6fcd, #ff4683);
-  --color-title-h2: light-dark(#ff6f91, #598bf7);
-  --color-title-h3: light-dark(#ffb86c, #48e484);
-  --color-title-h4: light-dark(#fff06c, #fb49ae);
-  --color-title-h5: light-dark(#c5e478, #63b9ff);
-  --color-title-h6: light-dark(#c0cdf3, #b4da54);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-text-code: light-dark(#6be399, #00c9a7);
+  --color-text-hash-tag: light-dark(#5d648c, #95ff6f);
+  --color-text-link: light-dark(#2633ab, #6fa1ff);
+  --color-text-linkUrl: light-dark(#2633ab, #6fa1ff);
+  --color-text-paragraph: light-dark(#1f212f, #c0cdf3);
+  --color-text-quote: light-dark(#484e6d, #c0cdf3);
+  --color-text-strong: light-dark(#ff0040, #ebeff7);
+  --color-title-h1: light-dark(#ff4683, #ff6fcd);
+  --color-title-h2: light-dark(#598bf7, #ff6f91);
+  --color-title-h3: light-dark(#48e484, #ffb86c);
+  --color-title-h4: light-dark(#fb49ae, #fff06c);
+  --color-title-h5: light-dark(#63b9ff, #c5e478);
+  --color-title-h6: light-dark(#b4da54, #c0cdf3);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
   --page-border: 9px solid transparent;
@@ -1706,8 +1706,8 @@ body {
   --background-primary-alt: var(--color-base-10);
   --background-secondary: var(--color-base-20);
   --background-secondary-alt: light-dark(
-    var(--color-base-30),
-    var(--color-base-05)
+    var(--color-base-05),
+    var(--color-base-30)
   );
   --bases-embed-border: 1px solid var(--background-modifier-border);
   --bases-embed-border-radius: var(--radius-s);
@@ -1824,26 +1824,26 @@ body {
   );
   --color-accent-1: light-dark(
     hsl(
-      calc(var(--accent-h) - 3),
-      calc(var(--accent-s) * 1.02),
-      calc(var(--accent-l) * 1.15)
-    ),
-    hsl(
       calc(var(--accent-h) - 1),
       calc(var(--accent-s) * 1.01),
       calc(var(--accent-l) * 1.075)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
     )
   );
   --color-accent-2: light-dark(
     hsl(
-      calc(var(--accent-h) - 5),
-      calc(var(--accent-s) * 1.05),
-      calc(var(--accent-l) * 1.29)
-    ),
-    hsl(
       calc(var(--accent-h) - 3),
       calc(var(--accent-s) * 1.02),
       calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
     )
   );
   --color-accent-hsl: light-dark(
@@ -1854,53 +1854,53 @@ body {
     var(--accent-s),
     var(--accent-l)
   );
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-element-border: light-dark(#0a0b0f, #ffffff);
-  --color-element-border-light: light-dark(#484e6d, #ffffff);
-  --color-element-icon: light-dark(#adb9db, #1f212f);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-primary-100: light-dark(#676f9b, #959ab9);
-  --color-primary-1000: light-dark(#0a0b0f, #f0f1f5);
-  --color-primary-1100: light-dark(#050608, #f0f1f5);
-  --color-primary-200: light-dark(#5d648c, #ffffff);
-  --color-primary-300: light-dark(#52597c, #ffffff);
-  --color-primary-400: light-dark(#484e6d, #ffffff);
-  --color-primary-500: light-dark(#3e435d, #ffffff);
-  --color-primary-600: light-dark(#34384e, #ffffff);
-  --color-primary-700: light-dark(#292c3e, #ffffff);
-  --color-primary-800: light-dark(#1f212f, #ffffff);
-  --color-primary-900: light-dark(#15161f, #f0f1f5);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-text-code: light-dark(#00c9a7, #6be399);
-  --color-text-hash-tag: light-dark(#95ff6f, #5d648c);
-  --color-text-link: light-dark(#6fa1ff, #2633ab);
-  --color-text-linkUrl: light-dark(#6fa1ff, #2633ab);
-  --color-text-paragraph: light-dark(#c0cdf3, #1f212f);
-  --color-text-quote: light-dark(#c0cdf3, #484e6d);
-  --color-text-strong: light-dark(#ebeff7, #ff0040);
-  --color-title-h1: light-dark(#ff6fcd, #ff4683);
-  --color-title-h2: light-dark(#ff6f91, #598bf7);
-  --color-title-h3: light-dark(#ffb86c, #48e484);
-  --color-title-h4: light-dark(#fff06c, #fb49ae);
-  --color-title-h5: light-dark(#c5e478, #63b9ff);
-  --color-title-h6: light-dark(#c0cdf3, #b4da54);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-element-border: light-dark(#ffffff, #0a0b0f);
+  --color-element-border-light: light-dark(#ffffff, #484e6d);
+  --color-element-icon: light-dark(#1f212f, #adb9db);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-primary-100: light-dark(#959ab9, #676f9b);
+  --color-primary-1000: light-dark(#f0f1f5, #0a0b0f);
+  --color-primary-1100: light-dark(#f0f1f5, #050608);
+  --color-primary-200: light-dark(#ffffff, #5d648c);
+  --color-primary-300: light-dark(#ffffff, #52597c);
+  --color-primary-400: light-dark(#ffffff, #484e6d);
+  --color-primary-500: light-dark(#ffffff, #3e435d);
+  --color-primary-600: light-dark(#ffffff, #34384e);
+  --color-primary-700: light-dark(#ffffff, #292c3e);
+  --color-primary-800: light-dark(#ffffff, #1f212f);
+  --color-primary-900: light-dark(#f0f1f5, #15161f);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-text-code: light-dark(#6be399, #00c9a7);
+  --color-text-hash-tag: light-dark(#5d648c, #95ff6f);
+  --color-text-link: light-dark(#2633ab, #6fa1ff);
+  --color-text-linkUrl: light-dark(#2633ab, #6fa1ff);
+  --color-text-paragraph: light-dark(#1f212f, #c0cdf3);
+  --color-text-quote: light-dark(#484e6d, #c0cdf3);
+  --color-text-strong: light-dark(#ff0040, #ebeff7);
+  --color-title-h1: light-dark(#ff4683, #ff6fcd);
+  --color-title-h2: light-dark(#598bf7, #ff6f91);
+  --color-title-h3: light-dark(#48e484, #ffb86c);
+  --color-title-h4: light-dark(#fb49ae, #fff06c);
+  --color-title-h5: light-dark(#63b9ff, #c5e478);
+  --color-title-h6: light-dark(#b4da54, #c0cdf3);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;

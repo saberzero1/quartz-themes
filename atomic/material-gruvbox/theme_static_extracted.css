@@ -1,45 +1,45 @@
 :root {
-  --background-accent: light-dark(#32302f, #f2e5bc);
-  --background-modifier-border: light-dark(#3c3836, #d5c4a1);
-  --background-primary: light-dark(#282828, #f9f5d7);
-  --background-primary-alt: light-dark(#32302f, #f9f5d7);
-  --background-secondary: light-dark(#1d2021, #ebdbb2);
-  --background-secondary-alt: light-dark(#363636, #212121);
-  --bold-color: light-dark(#e78a4e, #c35e0a);
-  --calendar-background-hover: light-dark(#3c3836, #ebdbb2);
+  --background-accent: light-dark(#f2e5bc, #32302f);
+  --background-modifier-border: light-dark(#d5c4a1, #3c3836);
+  --background-primary: light-dark(#f9f5d7, #282828);
+  --background-primary-alt: light-dark(#f9f5d7, #32302f);
+  --background-secondary: light-dark(#ebdbb2, #1d2021);
+  --background-secondary-alt: light-dark(#212121, #363636);
+  --bold-color: light-dark(#c35e0a, #e78a4e);
+  --calendar-background-hover: light-dark(#ebdbb2, #3c3836);
   --calendar-hover: light-dark(#ea6962, #ea6962);
-  --calendar-today: light-dark(var(--neutral-orange), #ea6962);
-  --calendar-week: light-dark(var(--neutral-orange), #ea6962);
+  --calendar-today: light-dark(#ea6962, var(--neutral-orange));
+  --calendar-week: light-dark(#ea6962, var(--neutral-orange));
   --checkbox-border-color: light-dark(#a89984, #a89984);
   --checkbox-border-color-hover: light-dark(#a89984, #a89984);
   --checkbox-color: light-dark(#a89984, #a89984);
   --checkbox-color-hover: light-dark(#a89984, #a89984);
-  --code-background: light-dark(#3c3836, #ebdbb2);
+  --code-background: light-dark(#ebdbb2, #3c3836);
   --code-normal: light-dark(#7daea3, #7daea3);
   --color-accent: light-dark(#7bada1, #7bada1);
-  --color-accent-1: light-dark(#96beb3, #89b5aa);
-  --color-accent-2: light-dark(#afcec4, #96beb3);
+  --color-accent-1: light-dark(#89b5aa, #96beb3);
+  --color-accent-2: light-dark(#96beb3, #afcec4);
   --color-accent-hsl: light-dark(#7bada1, #7bada1);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --dark-text: #654735;
   --dark-text-faint: #b37e5d;
   --dark-text-faint-x: 179, 126, 93;
@@ -74,22 +74,22 @@
   --faded-red-x: 193, 74, 74;
   --faded-yellow: #c35e0a;
   --faded-yellow-x: 195, 94, 10;
-  --graph-line: light-dark(#504945, #bdae93);
-  --graph-node: light-dark(#bdae93, #928374);
+  --graph-line: light-dark(#bdae93, #504945);
+  --graph-node: light-dark(#928374, #bdae93);
   --graph-node-attachment: light-dark(#a9b665, #a9b665);
-  --graph-node-tag: light-dark(#ea6962, #c14a4a);
+  --graph-node-tag: light-dark(#c14a4a, #ea6962);
   --gray: #928374;
   --gray-x: 146, 131, 116;
-  --h1-color: light-dark(#ea6962, #c14a4a);
-  --h2-color: light-dark(#e78a4e, #c35e0a);
-  --h3-color: light-dark(#a9b665, #6c782e);
-  --h4-color: light-dark(#89b482, #4c7a5d);
-  --h5-color: light-dark(#7daea3, #45707a);
-  --h6-color: light-dark(#d3869b, #945e80);
+  --h1-color: light-dark(#c14a4a, #ea6962);
+  --h2-color: light-dark(#c35e0a, #e78a4e);
+  --h3-color: light-dark(#6c782e, #a9b665);
+  --h4-color: light-dark(#4c7a5d, #89b482);
+  --h5-color: light-dark(#45707a, #7daea3);
+  --h6-color: light-dark(#945e80, #d3869b);
   --icon-color-focused: light-dark(#7daea3, #7daea3);
   --icon-color-hover: light-dark(#ea6962, #ea6962);
   --inline-title-color: light-dark(#e78a4e, #e78a4e);
-  --italic-color: light-dark(#e78a4e, #c35e0a);
+  --italic-color: light-dark(#c35e0a, #e78a4e);
   --keyboard-height: 0px;
   --light-text: #d4be98;
   --light-text-x: 212, 190, 152;
@@ -108,10 +108,10 @@
   --light4: #a89984;
   --light4-x: 168, 153, 132;
   --loading-icon-delay: 400ms;
-  --mermaid-actor: light-dark(#504945, #bdae93);
-  --mermaid-loopline: light-dark(#7daea3, #45707a);
+  --mermaid-actor: light-dark(#bdae93, #504945);
+  --mermaid-loopline: light-dark(#45707a, #7daea3);
   --mermaid-note: light-dark(#7daea3, #7daea3);
-  --nav-item-color-active: light-dark(#89b482, #45707a);
+  --nav-item-color-active: light-dark(#45707a, #89b482);
   --nav-item-color-hover: light-dark(#ea6962, #ea6962);
   --neutral-aqua: #89b482;
   --neutral-aqua-x: 137, 180, 130;
@@ -135,18 +135,18 @@
   --spreadHorizontalWrapped-margin-LR: -3.5px;
   --tab-text-color-focused-active: light-dark(#e78a4e, #e78a4e);
   --tab-text-color-focused-active-current: light-dark(#ea6962, #ea6962);
-  --table-header-background-hover: light-dark(#504945, #d5c4a1);
-  --table-row-background-hover: light-dark(#504945, #d5c4a1);
-  --tag-background: light-dark(#504945, #ebdbb2);
-  --tag-color: light-dark(#89b482, #4c7a5d);
+  --table-header-background-hover: light-dark(#d5c4a1, #504945);
+  --table-row-background-hover: light-dark(#d5c4a1, #504945);
+  --tag-background: light-dark(#ebdbb2, #504945);
+  --tag-color: light-dark(#4c7a5d, #89b482);
   --text-accent: light-dark(#e78a4e, #e78a4e);
   --text-accent-hover: light-dark(#c35e0a, #c35e0a);
-  --text-faint: light-dark(#ebdbb2, #b37e5d);
-  --text-highlight-bg: light-dark(#e78a4e, #c35e0a);
-  --text-highlight-fg: light-dark(#1d2021, #f9f5d7);
-  --text-muted: light-dark(#d5c4a1, #735145);
-  --text-normal: light-dark(#d4be98, #654735);
-  --titlebar-text-color-focused: light-dark(#ea6962, var(--bright-red));
+  --text-faint: light-dark(#b37e5d, #ebdbb2);
+  --text-highlight-bg: light-dark(#c35e0a, #e78a4e);
+  --text-highlight-fg: light-dark(#f9f5d7, #1d2021);
+  --text-muted: light-dark(#735145, #d5c4a1);
+  --text-normal: light-dark(#654735, #d4be98);
+  --titlebar-text-color-focused: light-dark(var(--bright-red), #ea6962);
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
@@ -165,9 +165,9 @@ body {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
-  --background-accent: light-dark(#32302f, #f2e5bc);
+  --background-accent: light-dark(#f2e5bc, #32302f);
   --background-modifier-active-hover: #7bada126;
-  --background-modifier-border: light-dark(#3c3836, #d5c4a1);
+  --background-modifier-border: light-dark(#d5c4a1, #3c3836);
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;
   --background-modifier-error: #ea6962;
@@ -178,10 +178,10 @@ body {
   --background-modifier-message: #000000e6;
   --background-modifier-success: #a9b665;
   --background-modifier-success-rgb: 169, 182, 101;
-  --background-primary: light-dark(#282828, #f9f5d7);
-  --background-primary-alt: light-dark(#32302f, #f9f5d7);
-  --background-secondary: light-dark(#1d2021, #ebdbb2);
-  --background-secondary-alt: light-dark(#363636, #212121);
+  --background-primary: light-dark(#f9f5d7, #282828);
+  --background-primary-alt: light-dark(#f9f5d7, #32302f);
+  --background-secondary: light-dark(#ebdbb2, #1d2021);
+  --background-secondary-alt: light-dark(#212121, #363636);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -219,15 +219,15 @@ body {
   --blockquote-border-thickness: 2px;
   --blockquote-color: inherit;
   --blockquote-font-style: normal;
-  --bold-color: light-dark(#e78a4e, #c35e0a);
+  --bold-color: light-dark(#c35e0a, #e78a4e);
   --bold-modifier: 200;
   --bold-weight: 600;
   --border-width: 1px;
   --button-radius: 5px;
-  --calendar-background-hover: light-dark(#3c3836, #ebdbb2);
+  --calendar-background-hover: light-dark(#ebdbb2, #3c3836);
   --calendar-hover: light-dark(#ea6962, #ea6962);
-  --calendar-today: light-dark(var(--neutral-orange), #ea6962);
-  --calendar-week: light-dark(var(--neutral-orange), #ea6962);
+  --calendar-today: light-dark(#ea6962, var(--neutral-orange));
+  --calendar-week: light-dark(#ea6962, var(--neutral-orange));
   --callout-blend-mode: darken;
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
@@ -275,7 +275,7 @@ body {
   --checklist-done-color: #d5c4a1;
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: 4px;
-  --code-background: light-dark(#3c3836, #ebdbb2);
+  --code-background: light-dark(#ebdbb2, #3c3836);
   --code-border-color: transparent;
   --code-border-width: 0px;
   --code-comment: #ebdbb2;
@@ -295,29 +295,29 @@ body {
   --collapse-icon-color: #ebdbb2;
   --collapse-icon-color-collapsed: #e78a4e;
   --color-accent: light-dark(#7bada1, #7bada1);
-  --color-accent-1: light-dark(#96beb3, #89b5aa);
-  --color-accent-2: light-dark(#afcec4, #96beb3);
+  --color-accent-1: light-dark(#89b5aa, #96beb3);
+  --color-accent-2: light-dark(#96beb3, #afcec4);
   --color-accent-hsl: light-dark(#7bada1, #7bada1);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --dataview-key: light-dark(#ebdbb2, #ebdbb2);
@@ -429,49 +429,49 @@ body {
   --footnote-radius: 4px;
   --footnote-size: 0.875em;
   --graph-controls-width: 240px;
-  --graph-line: light-dark(#504945, #bdae93);
-  --graph-node: light-dark(#bdae93, #928374);
+  --graph-line: light-dark(#bdae93, #504945);
+  --graph-node: light-dark(#928374, #bdae93);
   --graph-node-attachment: light-dark(#a9b665, #a9b665);
   --graph-node-focused: #e78a4e;
-  --graph-node-tag: light-dark(#ea6962, #c14a4a);
+  --graph-node-tag: light-dark(#c14a4a, #ea6962);
   --graph-node-unresolved: #ebdbb2;
   --graph-text: #d4be98;
-  --h1-color: light-dark(#ea6962, #c14a4a);
+  --h1-color: light-dark(#c14a4a, #ea6962);
   --h1-font: inherit;
   --h1-line-height: 1.2;
   --h1-size: 1.802em;
   --h1-style: normal;
   --h1-variant: normal;
   --h1-weight: 700;
-  --h2-color: light-dark(#e78a4e, #c35e0a);
+  --h2-color: light-dark(#c35e0a, #e78a4e);
   --h2-font: inherit;
   --h2-line-height: 1.2;
   --h2-size: 1.602em;
   --h2-style: normal;
   --h2-variant: normal;
   --h2-weight: 600;
-  --h3-color: light-dark(#a9b665, #6c782e);
+  --h3-color: light-dark(#6c782e, #a9b665);
   --h3-font: inherit;
   --h3-line-height: 1.3;
   --h3-size: 1.424em;
   --h3-style: normal;
   --h3-variant: normal;
   --h3-weight: 600;
-  --h4-color: light-dark(#89b482, #4c7a5d);
+  --h4-color: light-dark(#4c7a5d, #89b482);
   --h4-font: inherit;
   --h4-line-height: 1.4;
   --h4-size: 1.266em;
   --h4-style: normal;
   --h4-variant: normal;
   --h4-weight: 600;
-  --h5-color: light-dark(#7daea3, #45707a);
+  --h5-color: light-dark(#45707a, #7daea3);
   --h5-font: inherit;
   --h5-line-height: 1.5;
   --h5-size: 1.125em;
   --h5-style: normal;
   --h5-variant: normal;
   --h5-weight: 600;
-  --h6-color: light-dark(#d3869b, #945e80);
+  --h6-color: light-dark(#945e80, #d3869b);
   --h6-font: inherit;
   --h6-line-height: 1.5;
   --h6-size: 1em;
@@ -530,7 +530,7 @@ body {
   --interactive-accent-hsl: 166, 23%, 58%;
   --interactive-hover: #111;
   --interactive-normal: #000;
-  --italic-color: light-dark(#e78a4e, #c35e0a);
+  --italic-color: light-dark(#c35e0a, #e78a4e);
   --italic-weight: inherit;
   --layer-cover: 5;
   --layer-dragged-item: 80;
@@ -581,8 +581,8 @@ body {
   --menu-radius: 8px;
   --menu-shadow:
     0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
-  --mermaid-actor: light-dark(#504945, #bdae93);
-  --mermaid-loopline: light-dark(#7daea3, #45707a);
+  --mermaid-actor: light-dark(#bdae93, #504945);
+  --mermaid-loopline: light-dark(#45707a, #7daea3);
   --mermaid-note: light-dark(#7daea3, #7daea3);
   --metadata-background: transparent;
   --metadata-border-color: transparent;
@@ -657,7 +657,7 @@ body {
   --nav-item-children-margin-start: 12px;
   --nav-item-children-padding-start: 4px;
   --nav-item-color: #d5c4a1;
-  --nav-item-color-active: light-dark(#89b482, #45707a);
+  --nav-item-color-active: light-dark(#45707a, #89b482);
   --nav-item-color-highlighted: #e78a4e;
   --nav-item-color-hover: light-dark(#ea6962, #ea6962);
   --nav-item-color-selected: #d4be98;
@@ -817,7 +817,7 @@ body {
   --table-drag-handle-color: #ebdbb2;
   --table-drag-handle-color-active: #ffffff;
   --table-header-background: transparent;
-  --table-header-background-hover: light-dark(#504945, #d5c4a1);
+  --table-header-background-hover: light-dark(#d5c4a1, #504945);
   --table-header-border-color: transparent;
   --table-header-border-width: 1px;
   --table-header-color: #d4be98;
@@ -827,7 +827,7 @@ body {
   --table-line-height: 1.3;
   --table-row-alt-background: transparent;
   --table-row-alt-background-hover: transparent;
-  --table-row-background-hover: light-dark(#504945, #d5c4a1);
+  --table-row-background-hover: light-dark(#d5c4a1, #504945);
   --table-row-last-border-width: 1px;
   --table-selection: #7bada11a;
   --table-selection-blend-mode: darken;
@@ -837,12 +837,12 @@ body {
   --table-text-color: inherit;
   --table-text-size: 16px;
   --table-white-space: break-spaces;
-  --tag-background: light-dark(#504945, #ebdbb2);
+  --tag-background: light-dark(#ebdbb2, #504945);
   --tag-background-hover: #7bada133;
   --tag-border-color: #7bada126;
   --tag-border-color-hover: #7bada126;
   --tag-border-width: 0px;
-  --tag-color: light-dark(#89b482, #4c7a5d);
+  --tag-color: light-dark(#4c7a5d, #89b482);
   --tag-color-hover: #e78a4e;
   --tag-decoration: none;
   --tag-decoration-hover: underline;
@@ -854,12 +854,12 @@ body {
   --text-accent: light-dark(#e78a4e, #e78a4e);
   --text-accent-hover: light-dark(#c35e0a, #c35e0a);
   --text-error: #ea6962;
-  --text-faint: light-dark(#ebdbb2, #b37e5d);
-  --text-highlight-bg: light-dark(#e78a4e, #c35e0a);
+  --text-faint: light-dark(#b37e5d, #ebdbb2);
+  --text-highlight-bg: light-dark(#c35e0a, #e78a4e);
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-highlight-fg: light-dark(#1d2021, #f9f5d7);
-  --text-muted: light-dark(#d5c4a1, #735145);
-  --text-normal: light-dark(#d4be98, #654735);
+  --text-highlight-fg: light-dark(#f9f5d7, #1d2021);
+  --text-muted: light-dark(#735145, #d5c4a1);
+  --text-normal: light-dark(#654735, #d4be98);
   --text-on-accent: #ffffff;
   --text-on-accent-inverted: #000000;
   --text-selection: #7bada133;
@@ -871,7 +871,7 @@ body {
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;
   --titlebar-text-color: #d5c4a1;
-  --titlebar-text-color-focused: light-dark(#ea6962, var(--bright-red));
+  --titlebar-text-color-focused: light-dark(var(--bright-red), #ea6962);
   --titlebar-text-weight: 700;
   --toggle-border-width: 2px;
   --toggle-radius: 18px;
@@ -894,9 +894,9 @@ body {
   --zoom-factor: 1;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(#282828, #f9f5d7);
+  background-color: light-dark(#f9f5d7, #282828);
   caret-color: #e78a4e;
-  color: light-dark(#d4be98, #654735);
+  color: light-dark(#654735, #d4be98);
   contain: initial;
   font-family:
     "??",
@@ -952,7 +952,7 @@ h6 a {
 
 h1 {
   --font-weight: 700;
-  color: light-dark(#ea6962, #c14a4a);
+  color: light-dark(#c14a4a, #ea6962);
   font-family: inherit;
   font-size: 1.802em;
   font-style: normal;
@@ -966,7 +966,7 @@ h1 {
 
 h2 {
   --font-weight: 600;
-  color: light-dark(#e78a4e, #c35e0a);
+  color: light-dark(#c35e0a, #e78a4e);
   font-family: inherit;
   font-size: 1.602em;
   font-style: normal;
@@ -980,7 +980,7 @@ h2 {
 
 h3 {
   --font-weight: 600;
-  color: light-dark(#a9b665, #6c782e);
+  color: light-dark(#6c782e, #a9b665);
   font-family: inherit;
   font-size: 1.424em;
   font-style: normal;
@@ -994,7 +994,7 @@ h3 {
 
 h4 {
   --font-weight: 600;
-  color: light-dark(#89b482, #4c7a5d);
+  color: light-dark(#4c7a5d, #89b482);
   font-family: inherit;
   font-size: 1.266em;
   font-style: normal;
@@ -1008,7 +1008,7 @@ h4 {
 
 h5 {
   --font-weight: 600;
-  color: light-dark(#7daea3, #45707a);
+  color: light-dark(#45707a, #7daea3);
   font-family: inherit;
   font-size: 1.125em;
   font-style: normal;
@@ -1022,7 +1022,7 @@ h5 {
 
 h6 {
   --font-weight: 600;
-  color: light-dark(#d3869b, #945e80);
+  color: light-dark(#945e80, #d3869b);
   font-family: inherit;
   font-size: 1em;
   font-style: normal;
@@ -1035,7 +1035,7 @@ h6 {
 }
 
 .markdown-rendered pre {
-  background-color: light-dark(#3c3836, #ebdbb2);
+  background-color: light-dark(#ebdbb2, #3c3836);
   border: 0px solid transparent;
   border-radius: 4px;
   min-height: 38px;
@@ -1047,7 +1047,7 @@ h6 {
 
 .markdown-rendered code {
   -webkit-box-decoration-break: clone;
-  background-color: light-dark(#3c3836, #ebdbb2);
+  background-color: light-dark(#ebdbb2, #3c3836);
   border: 0px solid transparent;
   border-radius: 4px;
   color: light-dark(#7daea3, #7daea3);
@@ -1068,7 +1068,7 @@ h6 {
 .markdown-rendered button.copy-code-button {
   background-color: transparent;
   box-shadow: none;
-  color: light-dark(#d5c4a1, #735145);
+  color: light-dark(#735145, #d5c4a1);
   font-family:
     "??",
     "??",
@@ -1311,8 +1311,8 @@ h6 {
 }
 
 .popover {
-  background-color: light-dark(#282828, #f9f5d7);
-  border: 1px solid light-dark(#3c3836, #d5c4a1);
+  background-color: light-dark(#f9f5d7, #282828);
+  border: 1px solid light-dark(#d5c4a1, #3c3836);
   border-radius: 8px;
   box-shadow:
     0px 1px 2px #0000001f,
@@ -1325,7 +1325,7 @@ h6 {
 }
 
 .prompt {
-  background-color: light-dark(#282828, #f9f5d7);
+  background-color: light-dark(#f9f5d7, #282828);
   border: 0.5pt solid #555555;
   border-radius: 12px;
   box-shadow:
@@ -1344,9 +1344,9 @@ h6 {
 }
 
 input.prompt-input {
-  background-color: light-dark(#282828, #f9f5d7);
+  background-color: light-dark(#f9f5d7, #282828);
   border: none;
-  border-bottom: 1px solid light-dark(#1d2021, #ebdbb2);
+  border-bottom: 1px solid light-dark(#ebdbb2, #1d2021);
   border-radius: 0;
   font-size: 16px;
   height: 48px;
@@ -1365,15 +1365,15 @@ input.prompt-input {
 }
 
 .markdown-rendered mark {
-  background-color: light-dark(#e78a4e, #c35e0a);
-  color: light-dark(#1d2021, #f9f5d7);
+  background-color: light-dark(#c35e0a, #e78a4e);
+  color: light-dark(#f9f5d7, #1d2021);
 }
 
 a.tag {
-  background-color: light-dark(#504945, #ebdbb2);
+  background-color: light-dark(#ebdbb2, #504945);
   border: 0px solid #7bada126;
   border-radius: 0.5em;
-  color: light-dark(#89b482, #4c7a5d);
+  color: light-dark(#4c7a5d, #89b482);
   font-size: 0.875em;
   font-weight: inherit;
   line-height: 1;
@@ -1384,9 +1384,9 @@ a.tag {
 input[type="search"] {
   -webkit-app-region: no-drag;
   background: transparent;
-  border: 1px solid light-dark(#3c3836, #d5c4a1);
+  border: 1px solid light-dark(#d5c4a1, #3c3836);
   border-radius: 5px;
-  color: light-dark(#d4be98, #654735);
+  color: light-dark(#654735, #d4be98);
   font-family: inherit;
   font-size: 14.992px;
   height: 40px;
@@ -1452,13 +1452,13 @@ input[type="search"] {
 
 .nav-file-title.is-active {
   background-color: #ffffff26;
-  color: light-dark(#89b482, #45707a);
+  color: light-dark(#45707a, #89b482);
   font-weight: inherit;
 }
 
 .nav-folder-title.is-active {
   background-color: #ffffff26;
-  color: light-dark(#89b482, #45707a);
+  color: light-dark(#45707a, #89b482);
   font-weight: inherit;
 }
 
@@ -1511,7 +1511,7 @@ input[type="search"] {
 
 .tree-item-self.is-active {
   background-color: #ffffff26;
-  color: light-dark(#89b482, #45707a);
+  color: light-dark(#45707a, #89b482);
   font-weight: inherit;
 }
 
@@ -1556,7 +1556,7 @@ input[type="search"] {
 
 .tree-item-flair {
   border-radius: 4px;
-  color: light-dark(#ebdbb2, #b37e5d);
+  color: light-dark(#b37e5d, #ebdbb2);
   font-size: 12.8px;
   line-height: 1;
 }
@@ -1573,7 +1573,7 @@ input[type="search"] {
 }
 
 .tree-item-inner-subtext {
-  color: light-dark(#ebdbb2, #b37e5d);
+  color: light-dark(#b37e5d, #ebdbb2);
   font-size: 85%;
 }
 
@@ -1585,7 +1585,7 @@ input[type="search"] {
 }
 
 kbd {
-  background-color: light-dark(#3c3836, #ebdbb2);
+  background-color: light-dark(#ebdbb2, #3c3836);
   border-radius: 4px;
   color: light-dark(#7daea3, #7daea3);
   font-family:
@@ -1616,7 +1616,7 @@ svg.svg-icon {
 
 .clickable-icon[aria-disabled="true"] {
   background-color: unset;
-  color: light-dark(#d5c4a1, #735145);
+  color: light-dark(#735145, #d5c4a1);
   opacity: 0.4;
 }
 
@@ -1650,7 +1650,7 @@ svg.svg-icon {
 }
 
 .view-header-title-parent .view-header-breadcrumb-separator {
-  color: light-dark(#ebdbb2, #b37e5d);
+  color: light-dark(#b37e5d, #ebdbb2);
   padding: 2px 1px;
 }
 
@@ -1681,7 +1681,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill {
-  color: light-dark(#bdae93, #928374);
+  color: light-dark(#928374, #bdae93);
 }
 
 .graph-view.color-fill-focused {
@@ -1689,7 +1689,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-tag {
-  color: light-dark(#ea6962, #c14a4a);
+  color: light-dark(#c14a4a, #ea6962);
 }
 
 .graph-view.color-fill-attachment {
@@ -1702,31 +1702,31 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-1 {
-  color: light-dark(#d5c4a1, #735145);
+  color: light-dark(#735145, #d5c4a1);
 }
 
 .graph-view.color-fill-2 {
-  color: light-dark(#d5c4a1, #735145);
+  color: light-dark(#735145, #d5c4a1);
 }
 
 .graph-view.color-fill-3 {
-  color: light-dark(#d5c4a1, #735145);
+  color: light-dark(#735145, #d5c4a1);
 }
 
 .graph-view.color-fill-4 {
-  color: light-dark(#d5c4a1, #735145);
+  color: light-dark(#735145, #d5c4a1);
 }
 
 .graph-view.color-fill-5 {
-  color: light-dark(#d5c4a1, #735145);
+  color: light-dark(#735145, #d5c4a1);
 }
 
 .graph-view.color-fill-6 {
-  color: light-dark(#d5c4a1, #735145);
+  color: light-dark(#735145, #d5c4a1);
 }
 
 .graph-view.color-arrow {
-  color: light-dark(#d4be98, #654735);
+  color: light-dark(#654735, #d4be98);
   opacity: 0.5;
 }
 
@@ -1735,7 +1735,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-line {
-  color: light-dark(#504945, #bdae93);
+  color: light-dark(#bdae93, #504945);
 }
 
 .graph-view.color-text {
@@ -1751,7 +1751,7 @@ svg.svg-icon {
 }
 
 .graph-controls {
-  background-color: light-dark(#282828, #f9f5d7);
+  background-color: light-dark(#f9f5d7, #282828);
   border-radius: 8px;
   inset-inline-end: 12px;
   overflow: auto;
@@ -2011,16 +2011,16 @@ svg.svg-icon {
 }
 
 .workspace-tabs .workspace-leaf {
-  background-color: light-dark(#1d2021, #ebdbb2);
+  background-color: light-dark(#ebdbb2, #1d2021);
   height: 100%;
 }
 
 .workspace-split.mod-root {
-  background-color: light-dark(#282828, #f9f5d7);
+  background-color: light-dark(#f9f5d7, #282828);
 }
 
 .workspace-split.mod-root .view-content {
-  background-color: light-dark(#282828, #f9f5d7);
+  background-color: light-dark(#f9f5d7, #282828);
 }
 
 .workspace-leaf-resize-handle {

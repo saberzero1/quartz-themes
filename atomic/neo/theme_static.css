@@ -934,49 +934,49 @@
   --background-modifier-border: light-dark(#262626, #262626);
   --background-modifier-border-focus: light-dark(#424242, #424242);
   --background-modifier-border-hover: light-dark(#303030, #303030);
-  --background-secondary-alt: light-dark(#363636, #212121);
-  --base-05: light-dark(#ededed, #141414);
-  --base-10: light-dark(#d1d1d1, #1f1f1f);
-  --base-15: light-dark(#bfbfbf, #262626);
-  --base-20: light-dark(#a6a6a6, #303030);
-  --base-25: light-dark(#8f8f8f, #404040);
-  --base-30: light-dark(#757575, #595959);
-  --base-35: light-dark(#595959, #9e9e9e);
-  --base-40: light-dark(#404040, #c7c7c7);
-  --base-45: light-dark(#303030, #dbdbdb);
-  --base-50: light-dark(#262626, #ebebeb);
-  --base-55: light-dark(#1f1f1f, #f5f5f5);
-  --base-60: light-dark(#171717, #fafafa);
+  --background-secondary-alt: light-dark(#212121, #363636);
+  --base-05: light-dark(#141414, #ededed);
+  --base-10: light-dark(#1f1f1f, #d1d1d1);
+  --base-15: light-dark(#262626, #bfbfbf);
+  --base-20: light-dark(#303030, #a6a6a6);
+  --base-25: light-dark(#404040, #8f8f8f);
+  --base-30: light-dark(#595959, #757575);
+  --base-35: light-dark(#9e9e9e, #595959);
+  --base-40: light-dark(#c7c7c7, #404040);
+  --base-45: light-dark(#dbdbdb, #303030);
+  --base-50: light-dark(#ebebeb, #262626);
+  --base-55: light-dark(#f5f5f5, #1f1f1f);
+  --base-60: light-dark(#fafafa, #171717);
   --color-accent: light-dark(#9d8cf2, #9d8cf2);
-  --color-accent-1: light-dark(#c6bff9, #b2a6f6);
-  --color-accent-2: light-dark(#f1f0fe, #c6bff9);
+  --color-accent-1: light-dark(#b2a6f6, #c6bff9);
+  --color-accent-2: light-dark(#c6bff9, #f1f0fe);
   --color-accent-hsl: light-dark(#9d8cf2, #9d8cf2);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-black: light-dark(#0e1319, #0f141a);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-muted: light-dark(#8b949e, #8a939e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-teal: light-dark(#3eb4bf, #2caeba);
-  --color-white: light-dark(#e6e6e6, #dedede);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
-  --interactive-hover: light-dark(#303030, #1f1f1f);
-  --interactive-normal: light-dark(#262626, #141414);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-black: light-dark(#0f141a, #0e1319);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-muted: light-dark(#8a939e, #8b949e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-teal: light-dark(#2caeba, #3eb4bf);
+  --color-white: light-dark(#dedede, #e6e6e6);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
+  --interactive-hover: light-dark(#1f1f1f, #303030);
+  --interactive-normal: light-dark(#141414, #262626);
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
   --page-border: 9px solid transparent;
@@ -987,9 +987,9 @@
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
   --spreadHorizontalWrapped-margin-LR: -3.5px;
-  --text-accent: light-dark(#9b89f5, #735af2);
-  --text-accent-hover: light-dark(#beb1fb, #452eb8);
-  --text-highlight-bg: light-dark(#303030, #262626);
+  --text-accent: light-dark(#735af2, #9b89f5);
+  --text-accent-hover: light-dark(#452eb8, #beb1fb);
+  --text-highlight-bg: light-dark(#262626, #303030);
   --text-selection: light-dark(#1f1f1f, #1f1f1f);
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
@@ -1630,19 +1630,19 @@ body {
   --background-primary: #0d0d0d;
   --background-primary-alt: #141414;
   --background-secondary: #141414;
-  --background-secondary-alt: light-dark(#363636, #212121);
-  --base-05: light-dark(#ededed, #141414);
-  --base-10: light-dark(#d1d1d1, #1f1f1f);
-  --base-15: light-dark(#bfbfbf, #262626);
-  --base-20: light-dark(#a6a6a6, #303030);
-  --base-25: light-dark(#8f8f8f, #404040);
-  --base-30: light-dark(#757575, #595959);
-  --base-35: light-dark(#595959, #9e9e9e);
-  --base-40: light-dark(#404040, #c7c7c7);
-  --base-45: light-dark(#303030, #dbdbdb);
-  --base-50: light-dark(#262626, #ebebeb);
-  --base-55: light-dark(#1f1f1f, #f5f5f5);
-  --base-60: light-dark(#171717, #fafafa);
+  --background-secondary-alt: light-dark(#212121, #363636);
+  --base-05: light-dark(#141414, #ededed);
+  --base-10: light-dark(#1f1f1f, #d1d1d1);
+  --base-15: light-dark(#262626, #bfbfbf);
+  --base-20: light-dark(#303030, #a6a6a6);
+  --base-25: light-dark(#404040, #8f8f8f);
+  --base-30: light-dark(#595959, #757575);
+  --base-35: light-dark(#9e9e9e, #595959);
+  --base-40: light-dark(#c7c7c7, #404040);
+  --base-45: light-dark(#dbdbdb, #303030);
+  --base-50: light-dark(#ebebeb, #262626);
+  --base-55: light-dark(#f5f5f5, #1f1f1f);
+  --base-60: light-dark(#fafafa, #171717);
   --base-hue: 230;
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
@@ -1764,33 +1764,33 @@ body {
   --collapse-icon-color: #424242;
   --collapse-icon-color-collapsed: #9f8fef;
   --color-accent: light-dark(#9d8cf2, #9d8cf2);
-  --color-accent-1: light-dark(#c6bff9, #b2a6f6);
-  --color-accent-2: light-dark(#f1f0fe, #c6bff9);
+  --color-accent-1: light-dark(#b2a6f6, #c6bff9);
+  --color-accent-2: light-dark(#c6bff9, #f1f0fe);
   --color-accent-hsl: light-dark(#9d8cf2, #9d8cf2);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-black: light-dark(#0e1319, #0f141a);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-muted: light-dark(#8b949e, #8a939e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-teal: light-dark(#3eb4bf, #2caeba);
-  --color-white: light-dark(#e6e6e6, #dedede);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-black: light-dark(#0f141a, #0e1319);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-muted: light-dark(#8a939e, #8b949e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-teal: light-dark(#2caeba, #3eb4bf);
+  --color-white: light-dark(#dedede, #e6e6e6);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: pointer;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -2014,8 +2014,8 @@ body {
   --interactive-accent: #8a75f0;
   --interactive-accent-hover: #9d8cf2;
   --interactive-accent-hsl: 250, 80%, 70%;
-  --interactive-hover: light-dark(#303030, #1f1f1f);
-  --interactive-normal: light-dark(#262626, #141414);
+  --interactive-hover: light-dark(#1f1f1f, #303030);
+  --interactive-normal: light-dark(#141414, #262626);
   --italic-color: inherit;
   --italic-weight: inherit;
   --layer-cover: 5;
@@ -2340,11 +2340,11 @@ body {
   --tag-radius: 6px;
   --tag-size: 0.875em;
   --tag-weight: inherit;
-  --text-accent: light-dark(#9b89f5, #735af2);
-  --text-accent-hover: light-dark(#beb1fb, #452eb8);
+  --text-accent: light-dark(#735af2, #9b89f5);
+  --text-accent-hover: light-dark(#452eb8, #beb1fb);
   --text-error: #db4b4b;
   --text-faint: #424242;
-  --text-highlight-bg: light-dark(#303030, #262626);
+  --text-highlight-bg: light-dark(#262626, #303030);
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: #999999;
   --text-normal: #b3b3b3;
@@ -7834,8 +7834,8 @@ button.mod-destructive {
 
 .card {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   border: 1px solid transparent;
   border-radius: 4px;
@@ -10267,8 +10267,8 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   cursor: default;
   text-align: center;
@@ -11456,25 +11456,25 @@ kbd {
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
-  filter: drop-shadow(0px 0px 1px light-dark(#999999, #707070))
+  filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
 }
 
@@ -20685,12 +20685,12 @@ body.is-mobile .canvas-node-resizer {
 
 .canvas-color-picker-item.canvas-color-picker-custom:not(.is-active) {
   background: conic-gradient(
-    light-dark(#fb464c, #e93147),
-    light-dark(#e0de71, #e0ac00),
-    light-dark(#44cf6e, #08b94e),
-    light-dark(#027aff, #086ddd),
-    light-dark(#a882ff, #7852ee),
-    light-dark(#fb464c, #e93147)
+    light-dark(#e93147, #fb464c),
+    light-dark(#e0ac00, #e0de71),
+    light-dark(#08b94e, #44cf6e),
+    light-dark(#086ddd, #027aff),
+    light-dark(#7852ee, #a882ff),
+    light-dark(#e93147, #fb464c)
   );
 }
 
@@ -24553,7 +24553,7 @@ body:not(.disable-alternative-checkboxes) {
   background-image: none;
   border: 2px solid #999999;
   border-radius: 10px;
-  color: light-dark(#027aff, #086ddd);
+  color: light-dark(#086ddd, #027aff);
   content: " ";
   display: block;
   height: 100%;

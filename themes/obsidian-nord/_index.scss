@@ -202,59 +202,59 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --background-modifier-border: light-dark(#434c5e, #e5e9f0);
-  --background-primary: light-dark(#2e3440, #ffffff);
-  --bold-color: light-dark(#ebcb8b, #a3be8c);
-  --checkbox-border-color: light-dark(#8fbcbb, #81a1c1);
-  --checkbox-border-color-hover: light-dark(#8fbcbb, #81a1c1);
-  --checkbox-color: light-dark(#8fbcbb, #81a1c1);
-  --checkbox-color-hover: light-dark(#8fbcbb, #81a1c1);
-  --code-background: light-dark(#3b4252, #eceff4);
+  --background-modifier-border: light-dark(#e5e9f0, #434c5e);
+  --background-primary: light-dark(#ffffff, #2e3440);
+  --bold-color: light-dark(#a3be8c, #ebcb8b);
+  --checkbox-border-color: light-dark(#81a1c1, #8fbcbb);
+  --checkbox-border-color-hover: light-dark(#81a1c1, #8fbcbb);
+  --checkbox-color: light-dark(#81a1c1, #8fbcbb);
+  --checkbox-color-hover: light-dark(#81a1c1, #8fbcbb);
+  --code-background: light-dark(#eceff4, #3b4252);
   --code-normal: light-dark(#88c0d0, #88c0d0);
-  --color-accent-2: light-dark(#d799a4, #cb7d89);
+  --color-accent-2: light-dark(#cb7d89, #d799a4);
   --color-accent-hsl: light-dark(#be6069, #be6069);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --graph-line: light-dark(#4c566a, #d8dee9);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --graph-line: light-dark(#d8dee9, #4c566a);
   --graph-node-tag: light-dark(#bf616a, #bf616a);
   --h1-color: light-dark(#bf616a, #bf616a);
   --inline-title-color: light-dark(#ebcb8b, #ebcb8b);
-  --italic-color: light-dark(#ebcb8b, #a3be8c);
-  --tag-background: light-dark(#434c5e, #e5e9f0);
-  --tag-background-hover: light-dark(#3b4252, #d8dee9);
-  --tag-color: light-dark(#8fbcbb, #4c566a);
+  --italic-color: light-dark(#a3be8c, #ebcb8b);
+  --tag-background: light-dark(#e5e9f0, #434c5e);
+  --tag-background-hover: light-dark(#d8dee9, #3b4252);
+  --tag-color: light-dark(#4c566a, #8fbcbb);
   --text-accent: light-dark(#d08770, #d08770);
   --text-accent-hover: light-dark(#81a1c1, #81a1c1);
-  --text-faint: light-dark(#d8dee9, #2e3440);
-  --text-highlight-bg: light-dark(#88c0d0, #ebcb8b);
-  --text-muted: light-dark(#e5e9f0, #3b4252);
-  --text-normal: light-dark(#eceff4, #434c5e);
+  --text-faint: light-dark(#2e3440, #d8dee9);
+  --text-highlight-bg: light-dark(#ebcb8b, #88c0d0);
+  --text-muted: light-dark(#3b4252, #e5e9f0);
+  --text-normal: light-dark(#434c5e, #eceff4);
 }
 body {
-  --background-modifier-border: light-dark(#434c5e, #e5e9f0);
+  --background-modifier-border: light-dark(#e5e9f0, #434c5e);
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;
   --background-modifier-hover: #ffffff11;
-  --background-primary: light-dark(#2e3440, #ffffff);
-  --bold-color: light-dark(#ebcb8b, #a3be8c);
+  --background-primary: light-dark(#ffffff, #2e3440);
+  --bold-color: light-dark(#a3be8c, #ebcb8b);
   --bold-weight: 600;
-  --checkbox-border-color: light-dark(#8fbcbb, #81a1c1);
-  --checkbox-border-color-hover: light-dark(#8fbcbb, #81a1c1);
-  --checkbox-color: light-dark(#8fbcbb, #81a1c1);
-  --checkbox-color-hover: light-dark(#8fbcbb, #81a1c1);
+  --checkbox-border-color: light-dark(#81a1c1, #8fbcbb);
+  --checkbox-border-color-hover: light-dark(#81a1c1, #8fbcbb);
+  --checkbox-color: light-dark(#81a1c1, #8fbcbb);
+  --checkbox-color-hover: light-dark(#81a1c1, #8fbcbb);
   --checkbox-marker-color: #2e3440;
   --checkbox-radius: 0;
   --checkbox-size: 16px;
-  --code-background: light-dark(#3b4252, #eceff4);
+  --code-background: light-dark(#eceff4, #3b4252);
   --code-comment: #d8dee9;
   --code-function: #ebcb8b;
   --code-important: #d08770;
@@ -267,19 +267,19 @@ body {
   --code-value: #b48ead;
   --collapse-icon-color: #d8dee9;
   --collapse-icon-color-collapsed: #d08770;
-  --color-accent-2: light-dark(#d799a4, #cb7d89);
+  --color-accent-2: light-dark(#cb7d89, #d799a4);
   --color-accent-hsl: light-dark(#be6069, #be6069);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -289,7 +289,7 @@ body {
     "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif;
-  --graph-line: light-dark(#4c566a, #d8dee9);
+  --graph-line: light-dark(#d8dee9, #4c566a);
   --graph-node-tag: light-dark(#bf616a, #bf616a);
   --graph-node-unresolved: #d8dee9;
   --h1-color: light-dark(#bf616a, #bf616a);
@@ -301,7 +301,7 @@ body {
   --inline-title-color: light-dark(#ebcb8b, #ebcb8b);
   --inline-title-font: inherit;
   --interactive-accent-hsl: 354, 42%, 56%;
-  --italic-color: light-dark(#ebcb8b, #a3be8c);
+  --italic-color: light-dark(#a3be8c, #ebcb8b);
   --link-color: #d08770;
   --link-color-hover: #81a1c1;
   --link-external-color: #d08770;
@@ -310,12 +310,12 @@ body {
   --link-weight: 600;
   --p-spacing: 1rem;
   --search-icon-color: #e5e9f0;
-  --tag-background: light-dark(#434c5e, #e5e9f0);
-  --tag-background-hover: light-dark(#3b4252, #d8dee9);
+  --tag-background: light-dark(#e5e9f0, #434c5e);
+  --tag-background-hover: light-dark(#d8dee9, #3b4252);
   --tag-border-color: #be606926;
   --tag-border-color-hover: #be606926;
   --tag-border-width: 0px;
-  --tag-color: light-dark(#8fbcbb, #4c566a);
+  --tag-color: light-dark(#4c566a, #8fbcbb);
   --tag-color-hover: #d08770;
   --tag-decoration: none;
   --tag-decoration-hover: underline;
@@ -323,15 +323,15 @@ body {
   --tag-weight: inherit;
   --text-accent: light-dark(#d08770, #d08770);
   --text-accent-hover: light-dark(#81a1c1, #81a1c1);
-  --text-faint: light-dark(#d8dee9, #2e3440);
-  --text-highlight-bg: light-dark(#88c0d0, #ebcb8b);
-  --text-muted: light-dark(#e5e9f0, #3b4252);
-  --text-normal: light-dark(#eceff4, #434c5e);
+  --text-faint: light-dark(#2e3440, #d8dee9);
+  --text-highlight-bg: light-dark(#ebcb8b, #88c0d0);
+  --text-muted: light-dark(#3b4252, #e5e9f0);
+  --text-normal: light-dark(#434c5e, #eceff4);
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(#2e3440, #ffffff);
+  background-color: light-dark(#ffffff, #2e3440);
   caret-color: #d08770;
-  color: light-dark(#eceff4, #434c5e);
+  color: light-dark(#434c5e, #eceff4);
   contain: initial;
   font-family:
     "??",
@@ -486,13 +486,13 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: light-dark(#2e3440, #ffffff);
+  background-color: light-dark(#ffffff, #2e3440);
   section,
   .page > #quartz-body .sidebar {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: light-dark(#2e3440, #ffffff);
+      background-color: light-dark(#ffffff, #2e3440);
     }
   }
   .highlight,
@@ -737,7 +737,7 @@ body {
   }
   /* CODE */
   pre {
-    background-color: light-dark(#3b4252, #eceff4);
+    background-color: light-dark(#eceff4, #3b4252);
     border: 0px solid transparent;
     border-radius: 4px;
     min-height: 38px;
@@ -754,7 +754,7 @@ body {
   }
   code {
     -webkit-box-decoration-break: clone;
-    background-color: light-dark(#3b4252, #eceff4);
+    background-color: light-dark(#eceff4, #3b4252);
     border: 0px solid transparent;
     border-radius: 4px;
     color: light-dark(#88c0d0, #88c0d0);
@@ -818,7 +818,7 @@ body {
   .clipboard-button {
     background-color: transparent;
     box-shadow: none;
-    color: light-dark(#e5e9f0, #3b4252);
+    color: light-dark(#3b4252, #e5e9f0);
     font-family:
       "??",
       "??",
@@ -854,7 +854,7 @@ body {
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: light-dark(#d8dee9, #2e3440);
+    color: light-dark(#2e3440, #d8dee9);
   }
   /* BACKLINKS */
   .backlinks {
@@ -889,7 +889,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: light-dark(#2e3440, #ffffff);
+        background-color: light-dark(#ffffff, #2e3440);
       }
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
@@ -1068,9 +1068,9 @@ body {
     & > .search-button {
       -webkit-app-region: no-drag;
       background: transparent;
-      border: 1px solid light-dark(#434c5e, #e5e9f0);
+      border: 1px solid light-dark(#e5e9f0, #434c5e);
       border-radius: 5px;
-      color: light-dark(#eceff4, #434c5e);
+      color: light-dark(#434c5e, #eceff4);
       font-family: inherit;
       font-size: 14.992px;
       height: 40px;
@@ -1083,7 +1083,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: light-dark(#2e3440, #ffffff);
+        background-color: light-dark(#ffffff, #2e3440);
         border: 0.5pt solid #555555;
         border-radius: 12px;
         box-shadow:
@@ -1092,9 +1092,9 @@ body {
           0px 30px 90px #00000033;
         margin: 12vh auto;
         & > input {
-          background-color: light-dark(#2e3440, #ffffff);
+          background-color: light-dark(#ffffff, #2e3440);
           border: none;
-          border-bottom: 1px solid light-dark(#3b4252, #eceff4);
+          border-bottom: 1px solid light-dark(#eceff4, #3b4252);
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1106,7 +1106,7 @@ body {
           background: transparent;
         }
         & > * {
-          color: light-dark(#eceff4, #434c5e);
+          color: light-dark(#434c5e, #eceff4);
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1119,7 +1119,7 @@ body {
           & .highlight {
             color: #bf616a;
             font-weight: bold;
-            background-color: light-dark(#88c0d0, #ebcb8b);
+            background-color: light-dark(#ebcb8b, #88c0d0);
             color: light-dark(#2e3440, #2e3440);
           }
           & > .preview-container {
@@ -1140,9 +1140,9 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: light-dark(#eceff4, #434c5e);
+                color: light-dark(#434c5e, #eceff4);
                 &.match-tag {
-                  color: light-dark(#8fbcbb, #4c566a);
+                  color: light-dark(#4c566a, #8fbcbb);
                 }
               }
             }
@@ -1203,8 +1203,8 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: light-dark(#2e3440, #ffffff);
-    border: 1px solid light-dark(#434c5e, #e5e9f0);
+    background-color: light-dark(#ffffff, #2e3440);
+    border: 1px solid light-dark(#e5e9f0, #434c5e);
     border-radius: 8px;
     box-shadow:
       0px 1px 2px #0000001f,
@@ -1220,8 +1220,8 @@ body {
     background-color: unset;
     border: unset;
     & .popover-inner {
-      border: 1px solid light-dark(#434c5e, #e5e9f0);
-      background-color: light-dark(#2e3440, #ffffff);
+      border: 1px solid light-dark(#e5e9f0, #434c5e);
+      background-color: light-dark(#ffffff, #2e3440);
 
       border-radius: 8px;
     }

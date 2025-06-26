@@ -949,10 +949,10 @@
 }
 
 :root {
-  --background-primary-alt: light-dark(#212121, #e1e1e1);
+  --background-primary-alt: light-dark(#e1e1e1, #212121);
   --background-secondary-alt: light-dark(
-    var(--color-base-30),
-    var(--color-base-05)
+    var(--color-base-05),
+    var(--color-base-30)
   );
   --color-accent: light-dark(
     hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
@@ -960,26 +960,26 @@
   );
   --color-accent-1: light-dark(
     hsl(
-      calc(var(--accent-h) - 3),
-      calc(var(--accent-s) * 1.02),
-      calc(var(--accent-l) * 1.15)
-    ),
-    hsl(
       calc(var(--accent-h) - 1),
       calc(var(--accent-s) * 1.01),
       calc(var(--accent-l) * 1.075)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
     )
   );
   --color-accent-2: light-dark(
     hsl(
-      calc(var(--accent-h) - 5),
-      calc(var(--accent-s) * 1.05),
-      calc(var(--accent-l) * 1.29)
-    ),
-    hsl(
       calc(var(--accent-h) - 3),
       calc(var(--accent-s) * 1.02),
       calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
     )
   );
   --color-accent-hsl: light-dark(
@@ -990,26 +990,26 @@
     var(--accent-s),
     var(--accent-l)
   );
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --interactive-hover: light-dark(
     var(--background-modifier-hover),
     var(--background-modifier-hover)
@@ -1020,60 +1020,60 @@
   );
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
-  --mu-background-color-1: light-dark(#002248, #e8efff);
-  --mu-background-color-2: light-dark(#001122, #d1dfff);
-  --mu-blockquote-background: light-dark(#cfcfcf20, #cfcfcf88);
+  --mu-background-color-1: light-dark(#e8efff, #002248);
+  --mu-background-color-2: light-dark(#d1dfff, #001122);
+  --mu-blockquote-background: light-dark(#cfcfcf88, #cfcfcf20);
   --mu-blockquote-border: light-dark(#007fff, #007fff);
-  --mu-bookmarked-note-icon-bg: light-dark(#007fff40, #007fff30);
-  --mu-caret-color: light-dark(#00cfff, #cf00ff);
-  --mu-code-attribute: light-dark(#ffa3a3, #e50000);
+  --mu-bookmarked-note-icon-bg: light-dark(#007fff30, #007fff40);
+  --mu-caret-color: light-dark(#cf00ff, #00cfff);
+  --mu-code-attribute: light-dark(#e50000, #ffa3a3);
   --mu-color-lig: light-dark(#007fff, #007fff);
-  --mu-column-stripped-background: light-dark(#00000082, #00000011);
+  --mu-column-stripped-background: light-dark(#00000011, #00000082);
   --mu-divider-color: light-dark(#007fff10, #007fff10);
-  --mu-external-link: light-dark(#00a9dd, #0033ff);
-  --mu-external-link-hover: light-dark(#00c3ff, #00a3ff);
-  --mu-folder-text-color: light-dark(#72a3ff, #0048a3);
+  --mu-external-link: light-dark(#0033ff, #00a9dd);
+  --mu-external-link-hover: light-dark(#00a3ff, #00c3ff);
+  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
   --mu-gray-1: light-dark(#a3a3a3, #a3a3a3);
-  --mu-green-1: light-dark(#20f120, #20cf20);
+  --mu-green-1: light-dark(#20cf20, #20f120);
   --mu-green-2: light-dark(#20a320, #20a320);
-  --mu-h1: light-dark(#00a3ff, #0072d3);
-  --mu-h2: light-dark(#00a3ff, #0072d3);
-  --mu-h3: light-dark(#00a3ff, #0072d3);
-  --mu-h4: light-dark(#00a3ff, #0072d3);
-  --mu-h5: light-dark(#00a3ff, #0072d3);
-  --mu-h6: light-dark(#00a3ff, #0072d3);
+  --mu-h1: light-dark(#0072d3, #00a3ff);
+  --mu-h2: light-dark(#0072d3, #00a3ff);
+  --mu-h3: light-dark(#0072d3, #00a3ff);
+  --mu-h4: light-dark(#0072d3, #00a3ff);
+  --mu-h5: light-dark(#0072d3, #00a3ff);
+  --mu-h6: light-dark(#0072d3, #00a3ff);
   --mu-hr-color: light-dark(#0072d3, #0072d3);
   --mu-icon: light-dark(#5382d3, #5382d3);
   --mu-icon-active: light-dark(#007fff, #007fff);
   --mu-icon-focused: light-dark(#00a3ff, #00a3ff);
   --mu-icon-hover: light-dark(#007fff, #007fff);
   --mu-icon-statusbar-menu: light-dark(#0072d3, #0072d3);
-  --mu-input-bg-color: light-dark(#001836, #fff);
-  --mu-label-h1: light-dark(#a35fbf, #bf72d8);
-  --mu-label-h2: light-dark(#a35fbf, #bf72d8);
-  --mu-label-h3: light-dark(#a35fbf, #bf72d8);
-  --mu-label-h4: light-dark(#a35fbf, #bf72d8);
-  --mu-label-h5: light-dark(#a35fbf, #bf72d8);
-  --mu-label-h6: light-dark(#a35fbf, #bf72d8);
-  --mu-link: light-dark(#d372ff, #a200ff);
-  --mu-link-hover: light-dark(#db8fff, #c300ff);
+  --mu-input-bg-color: light-dark(#fff, #001836);
+  --mu-label-h1: light-dark(#bf72d8, #a35fbf);
+  --mu-label-h2: light-dark(#bf72d8, #a35fbf);
+  --mu-label-h3: light-dark(#bf72d8, #a35fbf);
+  --mu-label-h4: light-dark(#bf72d8, #a35fbf);
+  --mu-label-h5: light-dark(#bf72d8, #a35fbf);
+  --mu-label-h6: light-dark(#bf72d8, #a35fbf);
+  --mu-link: light-dark(#a200ff, #d372ff);
+  --mu-link-hover: light-dark(#c300ff, #db8fff);
   --mu-magenta-1: light-dark(#f100f1, #f100f1);
-  --mu-modal-background: light-dark(#000, #cfcfcf);
-  --mu-property-color: light-dark(#00a3ff, #0072d3);
-  --mu-property-title-color: light-dark(#00a3ff, #0072d3);
+  --mu-modal-background: light-dark(#cfcfcf, #000);
+  --mu-property-color: light-dark(#0072d3, #00a3ff);
+  --mu-property-title-color: light-dark(#0072d3, #00a3ff);
   --mu-purple-1: light-dark(#d372ff, #d372ff);
-  --mu-purple-2: light-dark(#a273d8, #b10aff);
-  --mu-scrollbar-thumb-bg: light-dark(#84848422, #48484822);
-  --mu-scrollbar-thumb-bg-hover: light-dark(#84848448, #48484848);
-  --mu-scrollbar-track-bg-hover: light-dark(#00000021, #82828221);
+  --mu-purple-2: light-dark(#b10aff, #a273d8);
+  --mu-scrollbar-thumb-bg: light-dark(#48484822, #84848422);
+  --mu-scrollbar-thumb-bg-hover: light-dark(#48484848, #84848448);
+  --mu-scrollbar-track-bg-hover: light-dark(#82828221, #00000021);
   --mu-special-folder-color: light-dark(#000, #000);
-  --mu-suggestion-color: light-dark(#00d3ff, #0072d3);
-  --mu-text-1: light-dark(#f1f1f1, #000);
-  --mu-text-selection: light-dark(#0051f1a3, #0051f136);
-  --mu-text-title: light-dark(hsl(278, 80%, 60%), #a300cf);
+  --mu-suggestion-color: light-dark(#0072d3, #00d3ff);
+  --mu-text-1: light-dark(#000, #f1f1f1);
+  --mu-text-selection: light-dark(#0051f136, #0051f1a3);
+  --mu-text-title: light-dark(#a300cf, hsl(278, 80%, 60%));
   --mu-titlebar-background: light-dark(#003388, #003388);
   --mu-titlebar-text: light-dark(#f1f1f1, #f1f1f1);
-  --mu-vault-title: light-dark(var(--mu-purple-2), #a300cf);
+  --mu-vault-title: light-dark(#a300cf, var(--mu-purple-2));
   --page-border: 9px solid transparent;
   --page-margin: 1px auto -8px;
   --pdfViewer-padding-bottom: 0;
@@ -1724,11 +1724,11 @@ body {
   --background-modifier-success: var(--color-green);
   --background-modifier-success-rgb: var(--color-green-rgb);
   --background-primary: var(--mu-background-color-1);
-  --background-primary-alt: light-dark(#212121, #e1e1e1);
+  --background-primary-alt: light-dark(#e1e1e1, #212121);
   --background-secondary: var(--mu-background-color-2);
   --background-secondary-alt: light-dark(
-    var(--color-base-30),
-    var(--color-base-05)
+    var(--color-base-05),
+    var(--color-base-30)
   );
   --bases-embed-border: 1px solid var(--background-modifier-border);
   --bases-embed-border-radius: var(--radius-s);
@@ -1846,26 +1846,26 @@ body {
   );
   --color-accent-1: light-dark(
     hsl(
-      calc(var(--accent-h) - 3),
-      calc(var(--accent-s) * 1.02),
-      calc(var(--accent-l) * 1.15)
-    ),
-    hsl(
       calc(var(--accent-h) - 1),
       calc(var(--accent-s) * 1.01),
       calc(var(--accent-l) * 1.075)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
     )
   );
   --color-accent-2: light-dark(
     hsl(
-      calc(var(--accent-h) - 5),
-      calc(var(--accent-s) * 1.05),
-      calc(var(--accent-l) * 1.29)
-    ),
-    hsl(
       calc(var(--accent-h) - 3),
       calc(var(--accent-s) * 1.02),
       calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
     )
   );
   --color-accent-hsl: light-dark(
@@ -1876,26 +1876,26 @@ body {
     var(--accent-s),
     var(--accent-l)
   );
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -2215,13 +2215,13 @@ body {
   --mu-amulet-hue: 224;
   --mu-amulet-sat: calc(var(--mu-amulet-sat-value) * 1%);
   --mu-amulet-sat-value: 50;
-  --mu-background-color-1: light-dark(#002248, #e8efff);
-  --mu-background-color-2: light-dark(#001122, #d1dfff);
+  --mu-background-color-1: light-dark(#e8efff, #002248);
+  --mu-background-color-2: light-dark(#d1dfff, #001122);
   --mu-bg-image-overlay: 0;
   --mu-bg-search-results: #001836;
-  --mu-blockquote-background: light-dark(#cfcfcf20, #cfcfcf88);
+  --mu-blockquote-background: light-dark(#cfcfcf88, #cfcfcf20);
   --mu-blockquote-border: light-dark(#007fff, #007fff);
-  --mu-bookmarked-note-icon-bg: light-dark(#007fff40, #007fff30);
+  --mu-bookmarked-note-icon-bg: light-dark(#007fff30, #007fff40);
   --mu-border-width: calc(var(--mu-border-width-value) * 1px);
   --mu-border-width-value: 1;
   --mu-box-callout-icon: '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z" fill="currentColor" fill-rule="evenodd"/></svg>';
@@ -2243,12 +2243,12 @@ body {
   --mu-callout-video: 237, 48, 48;
   --mu-callout-yellow: 237, 188, 0;
   --mu-cards-border: var(--mu-background-color-1);
-  --mu-caret-color: light-dark(#00cfff, #cf00ff);
-  --mu-code-attribute: light-dark(#ffa3a3, #e50000);
+  --mu-caret-color: light-dark(#cf00ff, #00cfff);
+  --mu-code-attribute: light-dark(#e50000, #ffa3a3);
   --mu-code-block-border: #0072d3;
   --mu-collapse-icon-size: 1.2;
   --mu-color-lig: light-dark(#007fff, #007fff);
-  --mu-column-stripped-background: light-dark(#00000082, #00000011);
+  --mu-column-stripped-background: light-dark(#00000011, #00000082);
   --mu-dark-sidebar-color: #001122;
   --mu-default-mode-border-color: #0088ff;
   --mu-default-mode-border-value: 1;
@@ -2259,8 +2259,8 @@ body {
   --mu-divider-color-hover: #007fff;
   --mu-divider-hover-width-value: 3;
   --mu-divider-width-value: 1;
-  --mu-external-link: light-dark(#00a9dd, #0033ff);
-  --mu-external-link-hover: light-dark(#00c3ff, #00a3ff);
+  --mu-external-link: light-dark(#0033ff, #00a9dd);
+  --mu-external-link-hover: light-dark(#00a3ff, #00c3ff);
   --mu-file-header-border-color: #007fff20;
   --mu-file-header-border-value: 1;
   --mu-file-header-border-width: calc(var(--mu-file-header-border-value) * 1px);
@@ -2278,7 +2278,7 @@ body {
   --mu-folder-icon-opened-op3: url("data:image/svg+xml,utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2'/></svg>");
   --mu-folder-icon-opened-selected: var(--mu-folder-icon-opened-default);
   --mu-folder-icon-opened-unfilled: url("data:image/svg+xml,utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z'/></svg>");
-  --mu-folder-text-color: light-dark(#72a3ff, #0048a3);
+  --mu-folder-text-color: light-dark(#0048a3, #72a3ff);
   --mu-font-headings:
     -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto,
     "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -2292,14 +2292,14 @@ body {
   --mu-global-font-letter-spacing: normal;
   --mu-global-font-stylistic-set: normal;
   --mu-gray-1: light-dark(#a3a3a3, #a3a3a3);
-  --mu-green-1: light-dark(#20f120, #20cf20);
+  --mu-green-1: light-dark(#20cf20, #20f120);
   --mu-green-2: light-dark(#20a320, #20a320);
-  --mu-h1: light-dark(#00a3ff, #0072d3);
-  --mu-h2: light-dark(#00a3ff, #0072d3);
-  --mu-h3: light-dark(#00a3ff, #0072d3);
-  --mu-h4: light-dark(#00a3ff, #0072d3);
-  --mu-h5: light-dark(#00a3ff, #0072d3);
-  --mu-h6: light-dark(#00a3ff, #0072d3);
+  --mu-h1: light-dark(#0072d3, #00a3ff);
+  --mu-h2: light-dark(#0072d3, #00a3ff);
+  --mu-h3: light-dark(#0072d3, #00a3ff);
+  --mu-h4: light-dark(#0072d3, #00a3ff);
+  --mu-h5: light-dark(#0072d3, #00a3ff);
+  --mu-h6: light-dark(#0072d3, #00a3ff);
   --mu-header-title-drag: no-drag;
   --mu-hover-underline-color: #ff0000cf;
   --mu-hover-underline-offset: calc(
@@ -2328,13 +2328,13 @@ body {
     var(--mu-inline-title-font-size-value) * 1em
   );
   --mu-inline-title-font-size-value: 0.88;
-  --mu-input-bg-color: light-dark(#001836, #fff);
-  --mu-label-h1: light-dark(#a35fbf, #bf72d8);
-  --mu-label-h2: light-dark(#a35fbf, #bf72d8);
-  --mu-label-h3: light-dark(#a35fbf, #bf72d8);
-  --mu-label-h4: light-dark(#a35fbf, #bf72d8);
-  --mu-label-h5: light-dark(#a35fbf, #bf72d8);
-  --mu-label-h6: light-dark(#a35fbf, #bf72d8);
+  --mu-input-bg-color: light-dark(#fff, #001836);
+  --mu-label-h1: light-dark(#bf72d8, #a35fbf);
+  --mu-label-h2: light-dark(#bf72d8, #a35fbf);
+  --mu-label-h3: light-dark(#bf72d8, #a35fbf);
+  --mu-label-h4: light-dark(#bf72d8, #a35fbf);
+  --mu-label-h5: light-dark(#bf72d8, #a35fbf);
+  --mu-label-h6: light-dark(#bf72d8, #a35fbf);
   --mu-laser-area: calc(var(--mu-laser-area-value) * 1px);
   --mu-laser-area-value: 82;
   --mu-laser-color-bg: #80ffaa;
@@ -2344,12 +2344,12 @@ body {
   --mu-laser-top-value: 50;
   --mu-line-highlight-background: transparent;
   --mu-line-highlight-border: transparent;
-  --mu-link: light-dark(#d372ff, #a200ff);
-  --mu-link-hover: light-dark(#db8fff, #c300ff);
+  --mu-link: light-dark(#a200ff, #d372ff);
+  --mu-link-hover: light-dark(#c300ff, #db8fff);
   --mu-magenta-1: light-dark(#f100f1, #f100f1);
   --mu-max-letter-spacing: 2px;
   --mu-menu-separator-color: #0072d322;
-  --mu-modal-background: light-dark(#000, #cfcfcf);
+  --mu-modal-background: light-dark(#cfcfcf, #000);
   --mu-neon-mode-glow-intensity: calc(var(--mu-neon-mode-glow-value) * 1em);
   --mu-neon-mode-glow-value: 0.5;
   --mu-new-window-border-color: #007fff;
@@ -2359,10 +2359,10 @@ body {
   --mu-num-table-bg-row: #00000022;
   --mu-o-ui-border: #0072d3;
   --mu-properties-container-color: #007fff10;
-  --mu-property-color: light-dark(#00a3ff, #0072d3);
-  --mu-property-title-color: light-dark(#00a3ff, #0072d3);
+  --mu-property-color: light-dark(#0072d3, #00a3ff);
+  --mu-property-title-color: light-dark(#0072d3, #00a3ff);
   --mu-purple-1: light-dark(#d372ff, #d372ff);
-  --mu-purple-2: light-dark(#a273d8, #b10aff);
+  --mu-purple-2: light-dark(#b10aff, #a273d8);
   --mu-quote-icon: '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m185 89.2-124 177a84.4 91.3 0 0 0-15.6 22.2l-5.09 7.26 2.05-0.186a84.4 91.3 0 0 0-7.11 35.9 84.4 91.3 0 0 0 84.4 91.3 84.4 91.3 0 0 0 84.4-91.3 84.4 91.3 0 0 0-36.5-74.8l103-167zm206 0-124 177a84.4 91.3 0 0 0-15.6 22.2l-5.09 7.25 2.05-0.186a84.4 91.3 0 0 0-7.11 35.9 84.4 91.3 0 0 0 84.4 91.3 84.4 91.3 0 0 0 84.4-91.3 84.4 91.3 0 0 0-36.5-74.8l103-167z" fill="currentColor" stroke="currentColor"/></svg>';
   --mu-rainbow-hue-1: var(--mu-rainbow-hue-start-value);
   --mu-rainbow-hue-10: calc(var(--mu-rainbow-hue-1) + 270);
@@ -2387,8 +2387,8 @@ body {
     var(--mu-reading-indicator-width-value-rem) * -1rem
   );
   --mu-reading-indicator-width-value-rem: 0.3;
-  --mu-scrollbar-thumb-bg: light-dark(#84848422, #48484822);
-  --mu-scrollbar-thumb-bg-hover: light-dark(#84848448, #48484848);
+  --mu-scrollbar-thumb-bg: light-dark(#48484822, #84848422);
+  --mu-scrollbar-thumb-bg-hover: light-dark(#48484848, #84848448);
   --mu-scrollbar-thumb-size: calc(
     var(--mu-scrollbar-thumb-size-adjusted-value) * 1px
   );
@@ -2397,7 +2397,7 @@ body {
   );
   --mu-scrollbar-thumb-size-value: 10;
   --mu-scrollbar-track-bg: transparent;
-  --mu-scrollbar-track-bg-hover: light-dark(#00000021, #82828221);
+  --mu-scrollbar-track-bg-hover: light-dark(#82828221, #00000021);
   --mu-scrollbar-width: calc(var(--mu-scrollbar-width-value) * 1px);
   --mu-scrollbar-width-value: 16;
   --mu-sidebar-bottom-vault-profile-bg-color: var(--background-secondary);
@@ -2412,7 +2412,7 @@ body {
   --mu-style-settings-indent-color-1: #007fff7f;
   --mu-style-settings-indent-color-2: #d372ff7f;
   --mu-style-settings-indent-color-3: #ff7f007f;
-  --mu-suggestion-color: light-dark(#00d3ff, #0072d3);
+  --mu-suggestion-color: light-dark(#0072d3, #00d3ff);
   --mu-suggestion-search-panel-bg-color: var(--background-secondary);
   --mu-table-color-1: var(--mu-background-color-2);
   --mu-table-color-2: var(--mu-background-color-1);
@@ -2431,9 +2431,9 @@ body {
   --mu-tag-border-color: #0072d3;
   --mu-tags-hashtag-padding: calc(var(--mu-tags-hashtag-padding-value) * 1px);
   --mu-tags-hashtag-padding-value: 2;
-  --mu-text-1: light-dark(#f1f1f1, #000);
-  --mu-text-selection: light-dark(#0051f1a3, #0051f136);
-  --mu-text-title: light-dark(hsl(278, 80%, 60%), #a300cf);
+  --mu-text-1: light-dark(#000, #f1f1f1);
+  --mu-text-selection: light-dark(#0051f136, #0051f1a3);
+  --mu-text-title: light-dark(#a300cf, hsl(278, 80%, 60%));
   --mu-titlebar-background: light-dark(#003388, #003388);
   --mu-titlebar-button-fg: var(--mu-icon);
   --mu-titlebar-text: light-dark(#f1f1f1, #f1f1f1);
@@ -2443,7 +2443,7 @@ body {
   --mu-transparency-blur-level-value: 8;
   --mu-transparency-menus-level: 0.5;
   --mu-underline-text-color-rgb: 255, 40, 72;
-  --mu-vault-title: light-dark(var(--mu-purple-2), #a300cf);
+  --mu-vault-title: light-dark(#a300cf, var(--mu-purple-2));
   --mu-warm-screen-mode: 0;
   --muc-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16px' height='16px' viewBox='0 0 24 24' fill='%23ffff4848' stroke='%23ffbf00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z'/%3E%3C/svg%3E");
   --muc-icon-active: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16px' height='16px' viewBox='0 0 24 24' fill='%23ffbf00' stroke='%23ffbf00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z'/%3E%3C/svg%3E");

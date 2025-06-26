@@ -367,35 +367,35 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --background-modifier-border: light-dark(#1d1e1e, #00000026);
+  --background-modifier-border: light-dark(#00000026, #1d1e1e);
   --background-modifier-border-focus: light-dark(#6830e8, #6830e8);
-  --background-modifier-border-hover: light-dark(#2f2f2f, #00000026);
-  --code-background: light-dark(#171818, #1e1d1e);
+  --background-modifier-border-hover: light-dark(#00000026, #2f2f2f);
+  --code-background: light-dark(#1e1d1e, #171818);
   --code-comment: light-dark(#b8b2b1, #b8b2b1);
   --code-normal: light-dark(#e4e4e4, #e4e4e4);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --link-color: light-dark(#6640bf, #6830e8);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --link-color: light-dark(#6830e8, #6640bf);
   --link-color-hover: light-dark(#e4e4e4, #e4e4e4);
   --link-external-color: light-dark(#e4e4e4, #e4e4e4);
   --link-external-color-hover: light-dark(#e4e4e4, #e4e4e4);
   --text-highlight-bg: light-dark(#291a4d, #291a4d);
 }
 body {
-  --background-modifier-border: light-dark(#1d1e1e, #00000026);
+  --background-modifier-border: light-dark(#00000026, #1d1e1e);
   --background-modifier-border-focus: #6640bf;
-  --background-modifier-border-hover: light-dark(#2f2f2f, #00000026);
+  --background-modifier-border-hover: light-dark(#00000026, #2f2f2f);
   --background-modifier-hover: #ffffff11;
   --background-primary: #1d1e1e;
   --bold-color: inherit;
@@ -407,7 +407,7 @@ body {
   --checkbox-marker-color: #f2f2f6;
   --checkbox-radius: 50%;
   --checkbox-size: 10px;
-  --code-background: light-dark(#171818, #1e1d1e);
+  --code-background: light-dark(#1e1d1e, #171818);
   --code-comment: light-dark(#b8b2b1, #b8b2b1);
   --code-function: #e0de71;
   --code-important: #f99e15;
@@ -420,19 +420,19 @@ body {
   --code-value: #c161fd;
   --collapse-icon-color: #959595;
   --collapse-icon-color-collapsed: #6830e8;
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -459,7 +459,7 @@ body {
     sans-serif;
   --interactive-accent-hsl: 258, 88%, 66%;
   --italic-color: inherit;
-  --link-color: light-dark(#6640bf, #6830e8);
+  --link-color: light-dark(#6830e8, #6640bf);
   --link-color-hover: light-dark(#e4e4e4, #e4e4e4);
   --link-external-color: light-dark(#e4e4e4, #e4e4e4);
   --link-external-color-hover: light-dark(#e4e4e4, #e4e4e4);
@@ -927,7 +927,7 @@ body {
   }
   /* CODE */
   pre {
-    background-color: light-dark(#171818, light-dark(#212121, #fcfcfc));
+    background-color: light-dark(light-dark(#fcfcfc, #212121), #171818);
     border: 0px solid transparent;
     border-radius: 2px;
     min-height: 38px;
@@ -944,12 +944,12 @@ body {
   }
   code {
     -webkit-box-decoration-break: clone;
-    background-color: light-dark(#171818, light-dark(#212121, #fcfcfc));
+    background-color: light-dark(light-dark(#fcfcfc, #212121), #171818);
     border: 0px solid transparent;
     border-radius: 2px;
     color: light-dark(
-      light-dark(#dadada, #222222),
-      light-dark(#dadada, #222222)
+      light-dark(#222222, #dadada),
+      light-dark(#222222, #dadada)
     );
     font-family:
       "??", "??", "SF Mono", SFMono-Regular, Menlo, Consolas, "Roboto Mono",
@@ -1275,7 +1275,7 @@ body {
     & > .search-button {
       -webkit-app-region: no-drag;
       background: transparent;
-      border: 1px solid light-dark(light-dark(#1e1e1e, #ffffff), #00000026);
+      border: 1px solid light-dark(#00000026, light-dark(#ffffff, #1e1e1e));
       border-radius: 5px;
       color: #e4e4e4;
       font-family: inherit;
@@ -1290,7 +1290,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: light-dark(#363636, #f8f2f1);
+        background-color: light-dark(#f8f2f1, #363636);
         border: 1pt solid #605852;
         border-radius: 4px;
         box-shadow:
@@ -1299,12 +1299,12 @@ body {
           0px 30px 90px #00000033;
         margin: 12vh auto;
         & > input {
-          background-color: light-dark(#363636, #f8f2f1);
+          background-color: light-dark(#f8f2f1, #363636);
           border: none;
           border-bottom: 1pt solid #00000026;
           border-radius: 0;
           box-shadow: none;
-          color: light-dark(#dadada, #222222);
+          color: light-dark(#222222, #dadada);
           font-size: 0.8433em;
           height: 48px;
           padding: 24px;
@@ -1344,7 +1344,7 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: light-dark(#363636, #e0e0e0);
+                background-color: light-dark(#e0e0e0, #363636);
               }
               & > ul > li > p {
                 background-color: transparent;
@@ -1412,7 +1412,7 @@ body {
   /* POPOVER */
   .popover {
     background-color: #f2f2f6;
-    border: 1px solid light-dark(light-dark(#1e1e1e, #ffffff), #00000026);
+    border: 1px solid light-dark(#00000026, light-dark(#ffffff, #1e1e1e));
     border-radius: 4px;
     box-shadow:
       0px 1px 2px #0000001f,
@@ -1428,7 +1428,7 @@ body {
     background-color: unset;
     border: unset;
     & .popover-inner {
-      border: 1px solid light-dark(light-dark(#1e1e1e, #ffffff), #00000026);
+      border: 1px solid light-dark(#00000026, light-dark(#ffffff, #1e1e1e));
       background-color: #f2f2f6;
 
       border-radius: 4px;

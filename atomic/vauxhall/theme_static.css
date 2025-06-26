@@ -936,49 +936,49 @@
     color-mix(in srgb, #000000 95%, #cccccc),
     color-mix(in srgb, #000000 95%, #cccccc)
   );
-  --background-primary: light-dark(#000, color-mix(in srgb, #000000 40%, #000));
+  --background-primary: light-dark(color-mix(in srgb, #000000 40%, #000), #000);
   --background-secondary: light-dark(
     color-mix(in srgb, #000000 40%, #000),
     color-mix(in srgb, #000000 40%, #000)
   );
   --background-secondary-alt: light-dark(
-    color-mix(in srgb, #000000 90%, #cccccc),
-    color-mix(in srgb, #000000 40%, #000)
+    color-mix(in srgb, #000000 40%, #000),
+    color-mix(in srgb, #000000 90%, #cccccc)
   );
   --black: light-dark(#000, #000);
   --blue: light-dark(#437cf3, #437cf3);
   --blue-violet: light-dark(#6f51f4, #6f51f4);
   --code-background: light-dark(
-    color-mix(in srgb, #000000 80%, #000),
-    color-mix(in srgb, #000000 90%, #cccccc)
+    color-mix(in srgb, #000000 90%, #cccccc),
+    color-mix(in srgb, #000000 80%, #000)
   );
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
-  --cool-cyan: light-dark(#43cfea, #3bb2ce);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
+  --cool-cyan: light-dark(#3bb2ce, #43cfea);
   --cool-gray: light-dark(#515768, #515768);
-  --cyan: light-dark(#51e1e9, #47c1cd);
+  --cyan: light-dark(#47c1cd, #51e1e9);
   --h1-color: light-dark(#43cfea, #43cfea);
   --h2-color: light-dark(#54b6f8, #54b6f8);
   --h3-color: light-dark(#437cf3, #437cf3);
@@ -998,7 +998,7 @@
   --light-blue: light-dark(#54b6f8, #54b6f8);
   --loading-icon-delay: 400ms;
   --magenta: light-dark(#e54f9b, #e54f9b);
-  --mint: light-dark(#52eea3, #47cc91);
+  --mint: light-dark(#47cc91, #52eea3);
   --nav-indentation-guide-color: light-dark(
     color-mix(in srgb, #000000 90%, #cccccc),
     color-mix(in srgb, #000000 90%, #cccccc)
@@ -1014,8 +1014,8 @@
   --spreadHorizontalWrapped-margin-LR: -3.5px;
   --titlebar-background: light-dark(#000, #000);
   --titlebar-background-focused: light-dark(#111, #111);
-  --vauxhall-bg: light-dark(#000000, #bdc3db);
-  --vauxhall-fg: light-dark(#cccccc, #000000);
+  --vauxhall-bg: light-dark(#bdc3db, #000000);
+  --vauxhall-fg: light-dark(#000000, #cccccc);
   --viewer-container-height: 0;
   --violet: light-dark(#9446f8, #9446f8);
   --white: light-dark(#fff, #fff);
@@ -1657,15 +1657,15 @@ body {
   --background-modifier-message: #000000e6;
   --background-modifier-success: #52eea3;
   --background-modifier-success-rgb: 68, 207, 110;
-  --background-primary: light-dark(#000, color-mix(in srgb, #000000 40%, #000));
+  --background-primary: light-dark(color-mix(in srgb, #000000 40%, #000), #000);
   --background-primary-alt: #111;
   --background-secondary: light-dark(
     color-mix(in srgb, #000000 40%, #000),
     color-mix(in srgb, #000000 40%, #000)
   );
   --background-secondary-alt: light-dark(
-    color-mix(in srgb, #000000 90%, #cccccc),
-    color-mix(in srgb, #000000 40%, #000)
+    color-mix(in srgb, #000000 40%, #000),
+    color-mix(in srgb, #000000 90%, #cccccc)
   );
   --bases-embed-border: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
   --bases-embed-border-radius: 4px;
@@ -1760,8 +1760,8 @@ body {
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: 4px;
   --code-background: light-dark(
-    color-mix(in srgb, #000000 80%, #000),
-    color-mix(in srgb, #000000 90%, #cccccc)
+    color-mix(in srgb, #000000 90%, #cccccc),
+    color-mix(in srgb, #000000 80%, #000)
   );
   --code-border-color: color-mix(in srgb, #000000 80%, #cccccc);
   --code-border-width: 0px;
@@ -1782,34 +1782,34 @@ body {
   --collapse-icon-color: color-mix(in srgb, #000000 60%, #cccccc);
   --collapse-icon-color-collapsed: #a68af9;
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
-  --cool-cyan: light-dark(#43cfea, #3bb2ce);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
+  --cool-cyan: light-dark(#3bb2ce, #43cfea);
   --cool-gray: light-dark(#515768, #515768);
   --cursor: default;
   --cursor-link: pointer;
-  --cyan: light-dark(#51e1e9, #47c1cd);
+  --cyan: light-dark(#47c1cd, #51e1e9);
   --dialog-max-height: 85vh;
   --dialog-max-width: 80vw;
   --dialog-width: 560px;
@@ -2127,7 +2127,7 @@ body {
   --metadata-property-radius-hover: 6px;
   --metadata-sidebar-input-font-size: 14.992px;
   --metadata-sidebar-label-font-size: 14.992px;
-  --mint: light-dark(#52eea3, #47cc91);
+  --mint: light-dark(#47cc91, #52eea3);
   --modal-background: #000;
   --modal-border-color: color-mix(in srgb, #000000 80%, #cccccc);
   --modal-border-width: 0.5pt;
@@ -2394,8 +2394,8 @@ body {
   --vault-profile-display: flex;
   --vault-profile-font-size: 14.992px;
   --vault-profile-font-weight: 500;
-  --vauxhall-bg: light-dark(#000000, #bdc3db);
-  --vauxhall-fg: light-dark(#cccccc, #000000);
+  --vauxhall-bg: light-dark(#bdc3db, #000000);
+  --vauxhall-fg: light-dark(#000000, #cccccc);
   --violet: light-dark(#9446f8, #9446f8);
   --white: light-dark(#fff, #fff);
   --workspace-background-translucent: #00000099;
@@ -2403,8 +2403,8 @@ body {
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   caret-color: #a68af9;
   color: color-mix(in srgb, #cccccc 30%, #fff);
@@ -2773,8 +2773,8 @@ iframe {
   .titlebar {
     -webkit-app-region: drag;
     background-color: light-dark(
-      light-dark(#1e1e1e, #ffffff),
-      light-dark(#1e1e1e, #ffffff)
+      light-dark(#ffffff, #1e1e1e),
+      light-dark(#ffffff, #1e1e1e)
     );
     border-bottom: 0px solid color-mix(in srgb, #000000 80%, #cccccc);
     display: flex;
@@ -2800,8 +2800,8 @@ iframe {
   }
   .popover {
     background-color: light-dark(
-      light-dark(#1e1e1e, #ffffff),
-      light-dark(#212121, #fcfcfc)
+      light-dark(#fcfcfc, #212121),
+      light-dark(#ffffff, #1e1e1e)
     );
     border: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
     border-radius: 8px;
@@ -2831,8 +2831,8 @@ iframe {
   .suggestion-container {
     align-self: stretch;
     background-color: light-dark(
-      light-dark(#1e1e1e, #ffffff),
-      light-dark(#212121, #fcfcfc)
+      light-dark(#fcfcfc, #212121),
+      light-dark(#ffffff, #1e1e1e)
     );
     border: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
     border-radius: 8px;
@@ -2987,8 +2987,8 @@ body:not(.is-mobile) .app-container {
   align-items: center;
   aspect-ratio: 1/1;
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
   border-radius: 4px;
   display: flex;
@@ -3030,8 +3030,8 @@ body:not(.is-mobile) .app-container {
   .download-attachment-item
   input[type="checkbox"]:not(:checked) {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
 }
 
@@ -3162,8 +3162,8 @@ body:not(.is-mobile) .app-container {
 
 .drag-reorder-ghost {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   border-radius: 4px;
   box-shadow: 0 2px 8px #0000004d;
@@ -3839,8 +3839,8 @@ body:not(.is-mobile) .app-container {
 @media (hover: hover) {
   .markdown-source-view.mod-cm6 .edit-block-button:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
   }
 }
@@ -4124,16 +4124,16 @@ body.is-focused .workspace-tabs.mod-top {
 
 .is-hidden-frameless:not(.is-fullscreen) .titlebar-button-container.mod-right {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#1e1e1e, #ffffff)
+    light-dark(#ffffff, #1e1e1e),
+    light-dark(#ffffff, #1e1e1e)
   );
 }
 
 .is-hidden-frameless:not(.is-fullscreen).is-focused
   .titlebar-button-container.mod-right {
   background-color: light-dark(
-    light-dark(#242424, #fafafa),
-    light-dark(#242424, #fafafa)
+    light-dark(#fafafa, #242424),
+    light-dark(#fafafa, #242424)
   );
 }
 
@@ -4287,8 +4287,8 @@ body.is-frameless .modal {
 
 .view-header {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   border-bottom: 0.5pt solid transparent;
   display: flex;
@@ -4305,8 +4305,8 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .is-focused .workspace-leaf.mod-active .view-header {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
 }
 
@@ -4386,8 +4386,8 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 @media (hover: hover) {
   .view-header-title-parent .view-header-breadcrumb:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
     color: color-mix(in srgb, #cccccc 30%, #fff);
   }
@@ -4424,8 +4424,8 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .workspace-split.mod-root .view-content {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
 }
 
@@ -4462,7 +4462,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h1 {
   --font-weight: 700;
-  color: light-dark(light-dark(#43cfea, #3bb2ce), light-dark(#43cfea, #3bb2ce));
+  color: light-dark(light-dark(#3bb2ce, #43cfea), light-dark(#3bb2ce, #43cfea));
   font-family: inherit;
   font-size: 1.802em;
   font-style: normal;
@@ -4599,8 +4599,8 @@ body:not(.show-inline-title) .inline-title:not([data-level]) {
 
 .workspace-leaf-content.is-read-mode .markdown-preview-view {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   inset-inline-start: 0;
   width: 100%;
@@ -4647,8 +4647,8 @@ body:not(.show-inline-title) .inline-title:not([data-level]) {
 .workspace-ribbon.mod-left:before {
   -webkit-app-region: drag;
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#1e1e1e, #ffffff)
+    light-dark(#ffffff, #1e1e1e),
+    light-dark(#ffffff, #1e1e1e)
   );
   border-bottom: 0.5pt solid #00000026;
   box-sizing: border-box;
@@ -4698,8 +4698,8 @@ body:not(.show-ribbon) .workspace-ribbon {
 
 .workspace-ribbon.is-collapsed {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
 }
 
@@ -5469,8 +5469,8 @@ input {
   align-items: center;
   align-self: flex-end;
   background-color: light-dark(
-    light-dark(#3f3f3f, #d4d4d4),
-    light-dark(#3f3f3f, #d4d4d4)
+    light-dark(#d4d4d4, #3f3f3f),
+    light-dark(#d4d4d4, #3f3f3f)
   );
   border-radius: 4px;
   display: flex;
@@ -5560,15 +5560,15 @@ input {
 @media (hover: hover) {
   .setting-add-hotkey-button:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
     color: color-mix(in srgb, #cccccc 30%, #fff);
   }
   .setting-restore-hotkey-button:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
     color: color-mix(in srgb, #cccccc 30%, #fff);
   }
@@ -5613,8 +5613,8 @@ input {
 .hotkey-filter {
   align-items: center;
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
   border-radius: 4px;
   display: flex;
@@ -5654,8 +5654,8 @@ input {
 @media (hover: hover) {
   .hotkey-filter-remove-button:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
   }
 }
@@ -5732,8 +5732,8 @@ input {
 
 .setting-progress-bar {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
   border-radius: 4px;
   box-shadow: inset 0 0 0 1px color-mix(in srgb, #000000 80%, #cccccc);
@@ -5877,8 +5877,8 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
 
 .community-item {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   border: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
   border-radius: 8px;
@@ -6143,8 +6143,8 @@ body:not(.is-fullscreen) .status-bar {
 @media (hover: hover) {
   .status-bar-item.mod-clickable:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
     color: color-mix(in srgb, #cccccc 30%, #fff);
   }
@@ -6161,14 +6161,14 @@ body:not(.is-fullscreen) .status-bar {
 @media (hover: hover) {
   .status-bar-item.plugin-editor-status:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
   }
   .status-bar-item.plugin-sync:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
   }
 }
@@ -6268,8 +6268,8 @@ body:not(.is-fullscreen) .status-bar {
 @media (hover: hover) {
   .titlebar-button:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
     opacity: 1;
   }
@@ -6444,8 +6444,8 @@ body:not(.is-mobile)
   .workspace-sidedock-vault-profile {
   align-items: center;
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
   border-top: 0.5pt solid #00000026;
   display: flex;
@@ -6476,8 +6476,8 @@ body:not(.is-mobile)
   .workspace-sidedock-vault-profile
   .workspace-drawer-vault-switcher.has-active-menu {
   background-color: light-dark(
-    light-dark(#3f3f3f, #d4d4d4),
-    light-dark(#3f3f3f, #d4d4d4)
+    light-dark(#d4d4d4, #3f3f3f),
+    light-dark(#d4d4d4, #3f3f3f)
   );
 }
 
@@ -6495,8 +6495,8 @@ body:not(.is-mobile)
     .workspace-sidedock-vault-profile
     .workspace-drawer-vault-switcher:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
     color: color-mix(in srgb, #cccccc 30%, #fff);
   }
@@ -6576,8 +6576,8 @@ body:not(.is-mobile)
 
 .workspace-split.mod-root {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
 }
 
@@ -6795,8 +6795,8 @@ body.is-phone .view-header-nav-buttons {
 
 .workspace-fake-target-overlay {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   height: 0;
   inset-inline-start: 0;
@@ -6866,8 +6866,8 @@ body.is-phone .view-header-nav-buttons {
 
 .workspace-tabs .workspace-leaf {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
   height: 100%;
 }
@@ -6884,15 +6884,15 @@ body.is-phone .view-header-nav-buttons {
   .workspace-tabs
   .workspace-leaf {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
 }
 
 .mod-root .workspace-tabs .workspace-leaf {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
 }
 
@@ -7028,16 +7028,16 @@ body.is-phone .view-header-nav-buttons {
 @media (hover: hover) {
   .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
   }
 }
 
 .workspace-tab-header:not(.is-active).mobile-tap .workspace-tab-header-inner {
   background-color: light-dark(
-    light-dark(#3f3f3f, #d4d4d4),
-    light-dark(#3f3f3f, #d4d4d4)
+    light-dark(#d4d4d4, #3f3f3f),
+    light-dark(#d4d4d4, #3f3f3f)
   );
 }
 
@@ -7161,15 +7161,15 @@ body.is-phone .view-header-nav-buttons {
 @media (hover: hover) {
   .workspace-tab-header.is-active .workspace-tab-header-status-icon:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
   }
   .workspace-tab-header.is-active
     .workspace-tab-header-inner-close-button:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
     color: color-mix(in srgb, #cccccc 30%, #fff);
   }
@@ -7435,55 +7435,55 @@ body > .workspace-split {
 
 .mod-left-split .workspace-tab-header.has-active-menu {
   background-color: light-dark(
-    light-dark(#3f3f3f, #d4d4d4),
-    light-dark(#3f3f3f, #d4d4d4)
+    light-dark(#d4d4d4, #3f3f3f),
+    light-dark(#d4d4d4, #3f3f3f)
   );
 }
 
 .mod-right-split .workspace-tab-header.has-active-menu {
   background-color: light-dark(
-    light-dark(#3f3f3f, #d4d4d4),
-    light-dark(#3f3f3f, #d4d4d4)
+    light-dark(#d4d4d4, #3f3f3f),
+    light-dark(#d4d4d4, #3f3f3f)
   );
 }
 
 .mod-left-split .workspace-tab-header.is-active {
   background-color: light-dark(
-    light-dark(#3f3f3f, #d4d4d4),
-    light-dark(#3f3f3f, #d4d4d4)
+    light-dark(#d4d4d4, #3f3f3f),
+    light-dark(#d4d4d4, #3f3f3f)
   );
 }
 
 .mod-right-split .workspace-tab-header.is-active {
   background-color: light-dark(
-    light-dark(#3f3f3f, #d4d4d4),
-    light-dark(#3f3f3f, #d4d4d4)
+    light-dark(#d4d4d4, #3f3f3f),
+    light-dark(#d4d4d4, #3f3f3f)
   );
 }
 
 @media (hover: hover) {
   .mod-left-split .workspace-tab-header.has-active-menu:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
   }
   .mod-right-split .workspace-tab-header.has-active-menu:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
   }
   .mod-left-split .workspace-tab-header.is-active:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
   }
   .mod-right-split .workspace-tab-header.is-active:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
   }
 }
@@ -7653,8 +7653,8 @@ body > .workspace-split {
   .workspace-tab-header {
   --no-tooltip: true;
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   border-radius: 0;
   box-shadow:
@@ -7745,8 +7745,8 @@ body > .workspace-split {
     .workspace-tab-container
     .workspace-tab-header-inner-icon:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
   }
 }
@@ -7774,8 +7774,8 @@ body > .workspace-split {
     .workspace-tab-container
     .workspace-tab-header-inner-close-button:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
   }
 }
@@ -7943,16 +7943,16 @@ button.mod-cta:focus-visible {
 button.mod-muted {
   --text-color: color-mix(in srgb, #000000 30%, #cccccc);
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
 }
 
 @media (hover: hover) {
   button.mod-muted:hover {
     background-color: light-dark(
-      light-dark(#212121, #fcfcfc),
-      light-dark(#212121, #fcfcfc)
+      light-dark(#fcfcfc, #212121),
+      light-dark(#fcfcfc, #212121)
     );
   }
 }
@@ -7982,8 +7982,8 @@ button.mod-destructive {
 
 .card {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   border: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
   border-radius: 4px;
@@ -8101,16 +8101,16 @@ button.mod-destructive {
 
 .list-item.mod-selectable.mobile-tap {
   background-color: light-dark(
-    light-dark(#3f3f3f, #d4d4d4),
-    light-dark(#3f3f3f, #d4d4d4)
+    light-dark(#d4d4d4, #3f3f3f),
+    light-dark(#d4d4d4, #3f3f3f)
   );
 }
 
 @media (hover: hover) {
   .list-item.mod-selectable:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
   }
 }
@@ -8150,16 +8150,16 @@ button.mod-destructive {
 
 .list-item-part.clickable-icon:hover {
   background-color: light-dark(
-    light-dark(#3f3f3f, #d4d4d4),
-    light-dark(#3f3f3f, #d4d4d4)
+    light-dark(#d4d4d4, #3f3f3f),
+    light-dark(#d4d4d4, #3f3f3f)
   );
   color: #8a5cf5;
 }
 
 .list-item-part.clickable-icon:active {
   background-color: light-dark(
-    light-dark(#3f3f3f, #d4d4d4),
-    light-dark(#3f3f3f, #d4d4d4)
+    light-dark(#d4d4d4, #3f3f3f),
+    light-dark(#d4d4d4, #3f3f3f)
   );
   color: #8a5cf5;
 }
@@ -8252,15 +8252,15 @@ button.mod-destructive {
 
 .mod-active .document-search-container {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
 }
 
 .document-search-container {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
-  border-color: light-dark(#363636, #e0e0e0);
+  border-color: light-dark(#e0e0e0, #363636);
   border-style: solid;
   border-top-width: 0px;
   border-width: 1px;
@@ -8342,7 +8342,7 @@ button.mod-destructive {
 }
 
 .document-search-button {
-  color: light-dark(#dadada, #222222);
+  color: light-dark(#222222, #dadada);
   font-size: 14.992px;
 }
 
@@ -8458,8 +8458,8 @@ select:focus {
 
 .dropdown option {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   font-weight: normal;
 }
@@ -8763,8 +8763,8 @@ svg.svg-icon {
 @media (hover: hover) {
   .clickable-icon:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
     box-shadow: none;
     color: #8a5cf5;
@@ -8772,16 +8772,16 @@ svg.svg-icon {
   }
   .clickable-icon.has-active-menu {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
     color: color-mix(in srgb, #cccccc 30%, #fff);
     opacity: 0.65;
   }
   .clickable-icon:active {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
     color: color-mix(in srgb, #cccccc 30%, #fff);
     opacity: 0.65;
@@ -8889,8 +8889,8 @@ svg.svg-icon {
 @media (hover: hover) {
   .text-icon-button:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
     box-shadow: none;
     color: color-mix(in srgb, #cccccc 30%, #fff);
@@ -8901,16 +8901,16 @@ svg.svg-icon {
   }
   .text-icon-button.has-active-menu {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
     color: color-mix(in srgb, #cccccc 30%, #fff);
     opacity: 0.65;
   }
   .text-icon-button:active {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
     color: color-mix(in srgb, #cccccc 30%, #fff);
     opacity: 0.65;
@@ -8933,7 +8933,7 @@ svg.svg-icon {
 
 .markdown-rendered.show-indentation-guide li > ul::before {
   border-inline-end: 1px solid
-    light-dark(light-dark(#363636, #e0e0e0), light-dark(#363636, #e0e0e0));
+    light-dark(light-dark(#e0e0e0, #363636), light-dark(#e0e0e0, #363636));
   bottom: 0;
   content: "\200B";
   display: block;
@@ -8944,7 +8944,7 @@ svg.svg-icon {
 
 .markdown-rendered.show-indentation-guide li > ol::before {
   border-inline-end: 1px solid
-    light-dark(light-dark(#363636, #e0e0e0), light-dark(#363636, #e0e0e0));
+    light-dark(light-dark(#e0e0e0, #363636), light-dark(#e0e0e0, #363636));
   bottom: 0;
   content: "\200B";
   display: block;
@@ -8960,7 +8960,7 @@ svg.svg-icon {
 
 .markdown-source-view.mod-cm6 .cm-indent::before {
   border-inline-end: 1px solid
-    light-dark(light-dark(#363636, #e0e0e0), light-dark(#363636, #e0e0e0));
+    light-dark(light-dark(#e0e0e0, #363636), light-dark(#e0e0e0, #363636));
   bottom: 0;
   color: transparent;
   content: "\200B";
@@ -8977,7 +8977,7 @@ svg.svg-icon {
 
 .markdown-source-view.mod-cm6 .cm-active-indent::before {
   border-inline-end: 1px solid
-    light-dark(light-dark(#3f3f3f, #d4d4d4), light-dark(#3f3f3f, #d4d4d4));
+    light-dark(light-dark(#d4d4d4, #3f3f3f), light-dark(#d4d4d4, #3f3f3f));
 }
 
 .input-button {
@@ -8998,8 +8998,8 @@ svg.svg-icon {
 textarea {
   -webkit-app-region: no-drag;
   background: light-dark(
-    light-dark(#262626, #f6f6f6),
-    light-dark(#262626, #f6f6f6)
+    light-dark(#f6f6f6, #262626),
+    light-dark(#f6f6f6, #262626)
   );
   border: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
   border-radius: 5px;
@@ -9014,8 +9014,8 @@ textarea {
 input.metadata-input-text {
   -webkit-app-region: no-drag;
   background: light-dark(
-    light-dark(#262626, #f6f6f6),
-    light-dark(#262626, #f6f6f6)
+    light-dark(#f6f6f6, #262626),
+    light-dark(#f6f6f6, #262626)
   );
   border: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
   border-radius: 5px;
@@ -9029,8 +9029,8 @@ input.metadata-input-text {
 input[type="date"] {
   -webkit-app-region: no-drag;
   background: light-dark(
-    light-dark(#262626, #f6f6f6),
-    light-dark(#262626, #f6f6f6)
+    light-dark(#f6f6f6, #262626),
+    light-dark(#f6f6f6, #262626)
   );
   border: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
   border-radius: 5px;
@@ -9046,8 +9046,8 @@ input[type="date"] {
 input[type="datetime-local"] {
   -webkit-app-region: no-drag;
   background: light-dark(
-    light-dark(#262626, #f6f6f6),
-    light-dark(#262626, #f6f6f6)
+    light-dark(#f6f6f6, #262626),
+    light-dark(#f6f6f6, #262626)
   );
   border: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
   border-radius: 5px;
@@ -9063,8 +9063,8 @@ input[type="datetime-local"] {
 input[type="text"] {
   -webkit-app-region: no-drag;
   background: light-dark(
-    light-dark(#262626, #f6f6f6),
-    light-dark(#262626, #f6f6f6)
+    light-dark(#f6f6f6, #262626),
+    light-dark(#f6f6f6, #262626)
   );
   border: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
   border-radius: 5px;
@@ -9079,8 +9079,8 @@ input[type="text"] {
 input[type="search"] {
   -webkit-app-region: no-drag;
   background: light-dark(
-    light-dark(#262626, #f6f6f6),
-    light-dark(#262626, #f6f6f6)
+    light-dark(#f6f6f6, #262626),
+    light-dark(#f6f6f6, #262626)
   );
   border: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
   border-radius: 5px;
@@ -9095,8 +9095,8 @@ input[type="search"] {
 input[type="email"] {
   -webkit-app-region: no-drag;
   background: light-dark(
-    light-dark(#262626, #f6f6f6),
-    light-dark(#262626, #f6f6f6)
+    light-dark(#f6f6f6, #262626),
+    light-dark(#f6f6f6, #262626)
   );
   border: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
   border-radius: 5px;
@@ -9111,8 +9111,8 @@ input[type="email"] {
 input[type="password"] {
   -webkit-app-region: no-drag;
   background: light-dark(
-    light-dark(#262626, #f6f6f6),
-    light-dark(#262626, #f6f6f6)
+    light-dark(#f6f6f6, #262626),
+    light-dark(#f6f6f6, #262626)
   );
   border: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
   border-radius: 5px;
@@ -9127,8 +9127,8 @@ input[type="password"] {
 input[type="number"] {
   -webkit-app-region: no-drag;
   background: light-dark(
-    light-dark(#262626, #f6f6f6),
-    light-dark(#262626, #f6f6f6)
+    light-dark(#f6f6f6, #262626),
+    light-dark(#f6f6f6, #262626)
   );
   border: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
   border-radius: 5px;
@@ -9855,8 +9855,8 @@ select.mod-hidden {
 
 .menu-item.selected:not(.is-label):not(.is-disabled) {
   background-color: light-dark(
-    light-dark(#3f3f3f, #d4d4d4),
-    light-dark(#3f3f3f, #d4d4d4)
+    light-dark(#d4d4d4, #3f3f3f),
+    light-dark(#d4d4d4, #3f3f3f)
   );
 }
 
@@ -10004,8 +10004,8 @@ select.mod-hidden {
 .modal-sidebar {
   --background-modifier-form-field: #000;
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
   display: flex;
   flex: 1 1 100%;
@@ -10036,8 +10036,8 @@ body.styled-scrollbars .modal-close-button {
 @media (hover: hover) {
   .modal-close-button:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
     color: color-mix(in srgb, #cccccc 30%, #fff);
   }
@@ -10224,8 +10224,8 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .modal.mod-scrollable .modal-button-container {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   border-top: 0.5pt solid color-mix(in srgb, #000000 80%, #cccccc);
   bottom: 0;
@@ -10253,8 +10253,8 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .multi-select-container {
   background: light-dark(
-    light-dark(#262626, #f6f6f6),
-    light-dark(#262626, #f6f6f6)
+    light-dark(#f6f6f6, #262626),
+    light-dark(#f6f6f6, #262626)
   );
   border: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
   border-radius: 5px;
@@ -10493,8 +10493,8 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
   cursor: default;
   text-align: center;
@@ -10617,8 +10617,8 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .notice progress[value]::-webkit-progress-bar {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
   border-radius: 6px;
   box-shadow: inset 0px 0px 0px 1px color-mix(in srgb, #000000 80%, #cccccc);
@@ -10627,8 +10627,8 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .markdown-preview-view progress[value]::-webkit-progress-bar {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
   border-radius: 6px;
   box-shadow: inset 0px 0px 0px 1px color-mix(in srgb, #000000 80%, #cccccc);
@@ -10637,8 +10637,8 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .markdown-rendered progress[value]::-webkit-progress-bar {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
   border-radius: 6px;
   box-shadow: inset 0px 0px 0px 1px color-mix(in srgb, #000000 80%, #cccccc);
@@ -10647,8 +10647,8 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .markdown-source-view.is-live-preview progress[value]::-webkit-progress-bar {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
   border-radius: 6px;
   box-shadow: inset 0px 0px 0px 1px color-mix(in srgb, #000000 80%, #cccccc);
@@ -10678,8 +10678,8 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 .progress-bar-container {
   align-items: center;
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   display: flex;
   flex-direction: column;
@@ -10756,8 +10756,8 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .prompt {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   border: 0.5pt solid color-mix(in srgb, #000000 80%, #cccccc);
   border-radius: 12px;
@@ -10788,12 +10788,12 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 input.prompt-input {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   border: none;
   border-bottom: 1px solid
-    light-dark(light-dark(#212121, #fcfcfc), light-dark(#212121, #fcfcfc));
+    light-dark(light-dark(#fcfcfc, #212121), light-dark(#fcfcfc, #212121));
   border-radius: 0;
   font-size: 16px;
   height: 48px;
@@ -10804,19 +10804,19 @@ input.prompt-input {
 
 input.prompt-input:hover {
   border-bottom: 1px solid
-    light-dark(light-dark(#212121, #fcfcfc), light-dark(#212121, #fcfcfc));
+    light-dark(light-dark(#fcfcfc, #212121), light-dark(#fcfcfc, #212121));
   box-shadow: none;
 }
 
 input.prompt-input:focus {
   border-bottom: 1px solid
-    light-dark(light-dark(#212121, #fcfcfc), light-dark(#212121, #fcfcfc));
+    light-dark(light-dark(#fcfcfc, #212121), light-dark(#fcfcfc, #212121));
   box-shadow: none;
 }
 
 input.prompt-input:focus-visible {
   border-bottom: 1px solid
-    light-dark(light-dark(#212121, #fcfcfc), light-dark(#212121, #fcfcfc));
+    light-dark(light-dark(#fcfcfc, #212121), light-dark(#fcfcfc, #212121));
   box-shadow: none;
 }
 
@@ -10829,7 +10829,7 @@ input.prompt-input:focus-visible {
 
 .prompt-instructions {
   border-top: 1px solid
-    light-dark(light-dark(#212121, #fcfcfc), light-dark(#212121, #fcfcfc));
+    light-dark(light-dark(#fcfcfc, #212121), light-dark(#fcfcfc, #212121));
   color: color-mix(in srgb, #000000 30%, #cccccc);
   display: flex;
   flex-wrap: wrap;
@@ -10937,8 +10937,8 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 
 .suggestion-item.is-selected {
   background-color: light-dark(
-    light-dark(#3f3f3f, #d4d4d4),
-    light-dark(#3f3f3f, #d4d4d4)
+    light-dark(#d4d4d4, #3f3f3f),
+    light-dark(#d4d4d4, #3f3f3f)
   );
 }
 
@@ -11123,8 +11123,8 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 .horizontal-tab-nav-item.mobile-tap {
   --icon-color: color-mix(in srgb, #cccccc 30%, #fff);
   background-color: light-dark(
-    light-dark(#3f3f3f, #d4d4d4),
-    light-dark(#3f3f3f, #d4d4d4)
+    light-dark(#d4d4d4, #3f3f3f),
+    light-dark(#d4d4d4, #3f3f3f)
   );
   color: color-mix(in srgb, #cccccc 30%, #fff);
 }
@@ -11132,8 +11132,8 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 .vertical-tab-nav-item.mobile-tap {
   --icon-color: color-mix(in srgb, #cccccc 30%, #fff);
   background-color: light-dark(
-    light-dark(#3f3f3f, #d4d4d4),
-    light-dark(#3f3f3f, #d4d4d4)
+    light-dark(#d4d4d4, #3f3f3f),
+    light-dark(#d4d4d4, #3f3f3f)
   );
   color: color-mix(in srgb, #cccccc 30%, #fff);
 }
@@ -11141,14 +11141,14 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 @media (hover: hover) {
   .horizontal-tab-nav-item:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
   }
   .vertical-tab-nav-item:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
   }
 }
@@ -11159,8 +11159,8 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 
 .horizontal-tab-content {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   container-type: inline-size;
   padding-inline-end: 48px;
@@ -11169,8 +11169,8 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 
 .vertical-tab-content {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   container-type: inline-size;
   height: 100%;
@@ -11187,8 +11187,8 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 
 .vertical-tab-header {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
   padding: 12px;
 }
@@ -11603,7 +11603,7 @@ body:not(.is-phone)
 
 .tree-item-children {
   border-inline-start: 1px solid
-    light-dark(light-dark(#363636, #e0e0e0), light-dark(#363636, #e0e0e0));
+    light-dark(light-dark(#e0e0e0, #363636), light-dark(#e0e0e0, #363636));
   margin-bottom: 1px;
   margin-inline-start: 12px;
   padding-inline-start: 4px;
@@ -11677,8 +11677,8 @@ audio::-webkit-media-controls-time-remaining-display {
 
 kbd {
   background-color: light-dark(
-    light-dark(#2a2a2a, #e3e3e3),
-    light-dark(#363636, #e0e0e0)
+    light-dark(#e0e0e0, #363636),
+    light-dark(#e3e3e3, #2a2a2a)
   );
   border-radius: 4px;
   color: color-mix(in srgb, #cccccc 30%, #fff);
@@ -11715,25 +11715,25 @@ kbd {
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
-  filter: drop-shadow(0px 0px 1px light-dark(#999999, #707070))
+  filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#e0e0e0, #363636)
   );
 }
 
@@ -11850,8 +11850,8 @@ kbd {
 
 .popupWrapper > div {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   border-radius: 4px;
   filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.2))
@@ -11862,8 +11862,8 @@ kbd {
 
 .popupWrapper > div:after {
   background: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   border-start-start-radius: 2px;
   content: "";
@@ -11960,8 +11960,8 @@ kbd {
   --icon-stroke: 2.5px;
   align-items: center;
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -11976,8 +11976,8 @@ kbd {
 
 .popupContent:empty + .popupMeta {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   border-top: none;
   border-top-left-radius: 4px;
@@ -12281,8 +12281,8 @@ kbd {
 .markdown-rendered code {
   -webkit-box-decoration-break: clone;
   background-color: light-dark(
-    light-dark(#2a2a2a, #e3e3e3),
-    light-dark(#363636, #e0e0e0)
+    light-dark(#e0e0e0, #363636),
+    light-dark(#e3e3e3, #2a2a2a)
   );
   border: 0px solid color-mix(in srgb, #000000 80%, #cccccc);
   border-radius: 4px;
@@ -12298,8 +12298,8 @@ kbd {
 .cm-s-obsidian span.cm-inline-code {
   -webkit-box-decoration-break: clone;
   background-color: light-dark(
-    light-dark(#2a2a2a, #e3e3e3),
-    light-dark(#363636, #e0e0e0)
+    light-dark(#e0e0e0, #363636),
+    light-dark(#e3e3e3, #2a2a2a)
   );
   color: color-mix(in srgb, #cccccc 30%, #fff);
   font-size: 1em;
@@ -12316,8 +12316,8 @@ kbd {
     .obsidian-search-match-highlight
   ) {
   background-color: light-dark(
-    light-dark(#2a2a2a, #e3e3e3),
-    light-dark(#363636, #e0e0e0)
+    light-dark(#e0e0e0, #363636),
+    light-dark(#e3e3e3, #2a2a2a)
   );
   vertical-align: baseline;
 }
@@ -12372,8 +12372,8 @@ kbd {
 
 .markdown-rendered pre {
   background-color: light-dark(
-    light-dark(#2a2a2a, #e3e3e3),
-    light-dark(#363636, #e0e0e0)
+    light-dark(#e0e0e0, #363636),
+    light-dark(#e3e3e3, #2a2a2a)
   );
   border: 0px solid color-mix(in srgb, #000000 80%, #cccccc);
   border-radius: 4px;
@@ -12429,8 +12429,8 @@ kbd {
 @media (hover: hover) {
   .markdown-rendered button.copy-code-button:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
   }
 }
@@ -12478,8 +12478,8 @@ kbd {
 @media (hover: hover) {
   .markdown-source-view.mod-cm6 .code-block-flair:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
   }
 }
@@ -12540,8 +12540,8 @@ kbd {
 
 .cm-s-obsidian div.HyperMD-codeblock-bg {
   background-color: light-dark(
-    light-dark(#2a2a2a, #e3e3e3),
-    light-dark(#363636, #e0e0e0)
+    light-dark(#e0e0e0, #363636),
+    light-dark(#e3e3e3, #2a2a2a)
   );
   border-color: color-mix(in srgb, #000000 80%, #cccccc);
   border-style: solid;
@@ -12552,8 +12552,8 @@ kbd {
 
 .cm-s-obsidian div.HyperMD-codeblock-begin-bg {
   background-color: light-dark(
-    light-dark(#2a2a2a, #e3e3e3),
-    light-dark(#363636, #e0e0e0)
+    light-dark(#e0e0e0, #363636),
+    light-dark(#e3e3e3, #2a2a2a)
   );
   border-color: color-mix(in srgb, #000000 80%, #cccccc);
   border-style: solid;
@@ -12564,8 +12564,8 @@ kbd {
 
 .cm-s-obsidian div.HyperMD-codeblock-end-bg {
   background-color: light-dark(
-    light-dark(#2a2a2a, #e3e3e3),
-    light-dark(#363636, #e0e0e0)
+    light-dark(#e0e0e0, #363636),
+    light-dark(#e3e3e3, #2a2a2a)
   );
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -12885,8 +12885,8 @@ code[class*="language-"] {
 
 .markdown-source-view.mod-cm6 .pdf-embed .edit-block-button {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   opacity: 1;
   top: 6px;
@@ -12896,8 +12896,8 @@ code[class*="language-"] {
 @media (hover: hover) {
   .markdown-source-view.mod-cm6 .pdf-embed .edit-block-button:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
     color: #8a5cf5;
   }
@@ -12967,16 +12967,16 @@ code[class*="language-"] {
 @media (hover: hover) {
   .markdown-embed-link:hover {
     background: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
     color: #8a5cf5;
     opacity: 0.65;
   }
   .file-embed-link:hover {
     background: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
     color: #8a5cf5;
     opacity: 0.65;
@@ -13014,15 +13014,15 @@ code[class*="language-"] {
 @media (hover: hover) {
   .file-embed.mod-generic:hover {
     background-color: light-dark(
-      light-dark(#212121, #fcfcfc),
-      light-dark(#212121, #fcfcfc)
+      light-dark(#fcfcfc, #212121),
+      light-dark(#fcfcfc, #212121)
     );
     color: color-mix(in srgb, #cccccc 30%, #fff);
   }
   .file-embed.mod-empty:hover {
     background-color: light-dark(
-      light-dark(#212121, #fcfcfc),
-      light-dark(#212121, #fcfcfc)
+      light-dark(#fcfcfc, #212121),
+      light-dark(#fcfcfc, #212121)
     );
     color: color-mix(in srgb, #cccccc 30%, #fff);
   }
@@ -13126,8 +13126,8 @@ iframe.external-embed {
     .cm-embed-block:not(.cm-table-widget, .cm-lang-base):hover
     .edit-block-button:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
   }
 }
@@ -14129,7 +14129,7 @@ input.metadata-property-key-input:focus {
 
 h1 {
   --font-weight: 700;
-  color: light-dark(light-dark(#43cfea, #3bb2ce), light-dark(#43cfea, #3bb2ce));
+  color: light-dark(light-dark(#3bb2ce, #43cfea), light-dark(#3bb2ce, #43cfea));
   font-family: inherit;
   font-size: 1.802em;
   font-style: normal;
@@ -14214,7 +14214,7 @@ h6 {
 
 .markdown-rendered h1 {
   --font-weight: 700;
-  color: light-dark(light-dark(#43cfea, #3bb2ce), light-dark(#43cfea, #3bb2ce));
+  color: light-dark(light-dark(#3bb2ce, #43cfea), light-dark(#3bb2ce, #43cfea));
   font-family: inherit;
   font-size: 1.802em;
   font-style: normal;
@@ -14355,7 +14355,7 @@ h6 a {
 
 .HyperMD-header-1 {
   --font-weight: 700;
-  color: light-dark(light-dark(#43cfea, #3bb2ce), light-dark(#43cfea, #3bb2ce));
+  color: light-dark(light-dark(#3bb2ce, #43cfea), light-dark(#3bb2ce, #43cfea));
   font-family: inherit;
   font-size: 1.802em;
   font-style: normal;
@@ -14367,7 +14367,7 @@ h6 a {
 
 .HyperMD-list-line .cm-header-1 {
   --font-weight: 700;
-  color: light-dark(light-dark(#43cfea, #3bb2ce), light-dark(#43cfea, #3bb2ce));
+  color: light-dark(light-dark(#3bb2ce, #43cfea), light-dark(#3bb2ce, #43cfea));
   font-family: inherit;
   font-size: 1.802em;
   font-style: normal;
@@ -14839,8 +14839,8 @@ hr {
 
 .internal-query .search-result-container {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
   border: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
   border-radius: 8px;
@@ -15137,22 +15137,22 @@ li.is-collapsed .list-bullet:after {
   .list-collapse-indicator:hover ~ .list-bullet:after {
     background-color: color-mix(in srgb, #000000 30%, #cccccc);
     box-shadow: 0 0 0 4px
-      light-dark(light-dark(#3f3f3f, #d4d4d4), light-dark(#3f3f3f, #d4d4d4));
+      light-dark(light-dark(#d4d4d4, #3f3f3f), light-dark(#d4d4d4, #3f3f3f));
   }
   .cm-fold-indicator:hover ~ .list-bullet:after {
     background-color: color-mix(in srgb, #000000 30%, #cccccc);
     box-shadow: 0 0 0 4px
-      light-dark(light-dark(#3f3f3f, #d4d4d4), light-dark(#3f3f3f, #d4d4d4));
+      light-dark(light-dark(#d4d4d4, #3f3f3f), light-dark(#d4d4d4, #3f3f3f));
   }
   .list-collapse-indicator:hover ~ .cm-formatting-list .list-bullet:after {
     background-color: color-mix(in srgb, #000000 30%, #cccccc);
     box-shadow: 0 0 0 4px
-      light-dark(light-dark(#3f3f3f, #d4d4d4), light-dark(#3f3f3f, #d4d4d4));
+      light-dark(light-dark(#d4d4d4, #3f3f3f), light-dark(#d4d4d4, #3f3f3f));
   }
   .cm-fold-indicator:hover ~ .cm-formatting-list .list-bullet:after {
     background-color: color-mix(in srgb, #000000 30%, #cccccc);
     box-shadow: 0 0 0 4px
-      light-dark(light-dark(#3f3f3f, #d4d4d4), light-dark(#3f3f3f, #d4d4d4));
+      light-dark(light-dark(#d4d4d4, #3f3f3f), light-dark(#d4d4d4, #3f3f3f));
   }
   li.is-collapsed .list-collapse-indicator:hover ~ .list-bullet:after {
     background-color: #a68af9;
@@ -16653,8 +16653,8 @@ em {
 @media (hover: hover) {
   .bases-toolbar-menu-container-header .back-button:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
   }
 }
@@ -16974,8 +16974,8 @@ em {
 
 .bases-error .formula-preview {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
   padding: 8px;
 }
@@ -17039,8 +17039,8 @@ em {
   .filter-group-header
   .conjunction.dropdown:hover {
   background-color: light-dark(
-    light-dark(#3f3f3f, #d4d4d4),
-    light-dark(#3f3f3f, #d4d4d4)
+    light-dark(#d4d4d4, #3f3f3f),
+    light-dark(#d4d4d4, #3f3f3f)
   );
 }
 
@@ -17386,8 +17386,8 @@ em {
 
 .bases-td:focus-within {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   border-radius: 2px;
   box-shadow: 0 0 0 2px #8a5cf5;
@@ -17649,8 +17649,8 @@ em {
 .nav-file-tag {
   align-self: center;
   background-color: light-dark(
-    light-dark(#3f3f3f, #d4d4d4),
-    light-dark(#3f3f3f, #d4d4d4)
+    light-dark(#d4d4d4, #3f3f3f),
+    light-dark(#d4d4d4, #3f3f3f)
   );
   border-radius: 4px;
   font-size: 9px;
@@ -17973,8 +17973,8 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 @media (hover: hover) {
   .file-recovery-list-item-header:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
   }
 }
@@ -17993,8 +17993,8 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .file-recovery-text {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   flex: 1 0 0;
   font-family:
@@ -18097,8 +18097,8 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .graph-controls {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   border-radius: 8px;
   inset-inline-end: 12px;
@@ -18120,8 +18120,8 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .graph-controls.is-close {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   border: 1px solid transparent;
   min-width: inherit;
@@ -18135,8 +18135,8 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .workspace-split:not(.mod-root) .graph-controls.is-close {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
 }
 
@@ -18674,8 +18674,8 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 @media (hover: hover) {
   .password-item:hover {
     background-color: light-dark(
-      light-dark(#1e1e1e, #ffffff),
-      light-dark(#212121, #fcfcfc)
+      light-dark(#fcfcfc, #212121),
+      light-dark(#ffffff, #1e1e1e)
     );
   }
 }
@@ -18833,16 +18833,16 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 @media (hover: hover) {
   .search-suggest-icon:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
   }
 }
 
 .suggestion-container.mod-search-suggestion {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
   border-color: color-mix(in srgb, #000000 80%, #cccccc);
   max-height: 600px;
@@ -18851,8 +18851,8 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .suggestion-container.mod-search-suggestion .suggestion {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
   border-radius: 8px;
   padding: 6px;
@@ -18989,8 +18989,8 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 @media (hover: hover) {
   .search-result-hover-button:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
     opacity: 1;
   }
@@ -19055,8 +19055,8 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 @media (hover: hover) {
   .search-result-file-match:hover .search-result-file-match-destination-file {
     background-color: light-dark(
-      light-dark(#212121, #fcfcfc),
-      light-dark(#212121, #fcfcfc)
+      light-dark(#fcfcfc, #212121),
+      light-dark(#fcfcfc, #212121)
     );
   }
   .search-result-file-match:hover
@@ -19222,7 +19222,7 @@ body:not(.is-phone)
   --icon-size: 10px;
   background-color: #8a5cf5;
   border-radius: 50%;
-  color: light-dark(light-dark(#212121, #fcfcfc), light-dark(#212121, #fcfcfc));
+  color: light-dark(light-dark(#fcfcfc, #212121), light-dark(#fcfcfc, #212121));
   display: flex;
   margin-inline-start: 6px;
   opacity: 1;
@@ -19365,8 +19365,8 @@ body:not(.is-phone)
 
 .sync-history-list-container {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
   border-inline-end: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
   display: flex;
@@ -19435,8 +19435,8 @@ body:not(.is-phone)
 @media (hover: hover) {
   .sync-history-list-item-header:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
   }
 }
@@ -19514,8 +19514,8 @@ body:not(.is-phone)
   .sync-history-list-item-header .tree-item-flair:hover {
     --nav-collapse-icon-color: color-mix(in srgb, #cccccc 30%, #fff);
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
     opacity: 1;
   }
@@ -19528,8 +19528,8 @@ body:not(.is-phone)
 
 .sync-history-list-item .version-group-container .connecting-line {
   background-color: light-dark(
-    light-dark(#363636, #e0e0e0),
-    light-dark(#363636, #e0e0e0)
+    light-dark(#e0e0e0, #363636),
+    light-dark(#e0e0e0, #363636)
   );
   height: 100%;
   inset-inline-start: 24px;
@@ -19550,8 +19550,8 @@ body:not(.is-phone)
 
 .sync-history-list-item .version-group-container .version-group-item:hover {
   background-color: light-dark(
-    light-dark(#3f3f3f, #d4d4d4),
-    light-dark(#3f3f3f, #d4d4d4)
+    light-dark(#d4d4d4, #3f3f3f),
+    light-dark(#d4d4d4, #3f3f3f)
   );
   color: color-mix(in srgb, #cccccc 30%, #fff);
 }
@@ -19586,8 +19586,8 @@ body:not(.is-phone)
 
 .sync-history-content-container {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   display: flex;
   flex: 1 1 auto;
@@ -19673,8 +19673,8 @@ body:not(.is-phone)
 .sync-history-preview {
   --cursor-link: default;
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   flex: 1 0 0;
   font-family:
@@ -19699,8 +19699,8 @@ body:not(.is-phone)
 
 .file-recovery-diff {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   flex: 1 0 0;
   font-size: 16px;
@@ -19711,8 +19711,8 @@ body:not(.is-phone)
 
 .sync-history-diff {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   flex: 1 0 0;
   font-size: 16px;
@@ -19747,8 +19747,8 @@ body:not(.is-phone)
 
 button.sync-history-button {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
   box-shadow: none;
   margin: 4px 0 8px;
@@ -19758,8 +19758,8 @@ button.sync-history-button {
 @media (hover: hover) {
   button.sync-history-button:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
     box-shadow: none;
   }
@@ -19781,8 +19781,8 @@ button.sync-history-button {
 
 .modal.mod-sync-log .sync-log-container {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
   border: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
   border-radius: 4px;
@@ -19922,8 +19922,8 @@ button.sync-history-button {
 
 .tag-pane-tag.is-active .tag-pane-tag-count {
   background-color: light-dark(
-    light-dark(#3f3f3f, #d4d4d4),
-    light-dark(#3f3f3f, #d4d4d4)
+    light-dark(#d4d4d4, #3f3f3f),
+    light-dark(#d4d4d4, #3f3f3f)
   );
   color: color-mix(in srgb, #cccccc 30%, #fff);
 }
@@ -20116,8 +20116,8 @@ body.theme-dark {
 .canvas-card-menu {
   align-items: stretch;
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   border-radius: 4px;
   bottom: 16px;
@@ -20140,8 +20140,8 @@ body.theme-dark {
 
 .theme-dark .canvas-card-menu {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
 }
 
@@ -20169,11 +20169,11 @@ body.theme-dark {
 }
 
 .canvas-card-menu .canvas-card-menu-button svg {
-  fill: light-dark(light-dark(#1e1e1e, #ffffff), light-dark(#212121, #fcfcfc));
+  fill: light-dark(light-dark(#fcfcfc, #212121), light-dark(#ffffff, #1e1e1e));
 }
 
 .theme-dark .canvas-card-menu .canvas-card-menu-button svg {
-  fill: light-dark(light-dark(#212121, #fcfcfc), light-dark(#212121, #fcfcfc));
+  fill: light-dark(light-dark(#fcfcfc, #212121), light-dark(#fcfcfc, #212121));
 }
 
 .canvas-card-menu .canvas-card-menu-button.mod-draggable {
@@ -20197,8 +20197,8 @@ body.theme-dark {
 
 .canvas-control-group {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   border: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
   border-radius: 4px;
@@ -20251,8 +20251,8 @@ body.theme-dark {
 
 .canvas-node-container {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   border: 2px solid #7e7e7e;
   border-radius: 8px;
@@ -20540,8 +20540,8 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-group-label {
 
 .canvas-group-label[contenteditable="true"] {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   box-shadow: 0 0 0 2px #7e7e7e;
   color: color-mix(in srgb, #cccccc 30%, #fff);
@@ -20750,8 +20750,8 @@ body.is-mobile .canvas-node-resizer {
   .canvas-node-interaction-layer
   .canvas-node-resizer[data-resize="topright"] {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   border: 2px solid #8a5cf5;
   border-radius: 3px;
@@ -20766,8 +20766,8 @@ body.is-mobile .canvas-node-resizer {
   .canvas-node-interaction-layer
   .canvas-node-resizer[data-resize="bottomright"] {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   border: 2px solid #8a5cf5;
   border-radius: 3px;
@@ -20782,8 +20782,8 @@ body.is-mobile .canvas-node-resizer {
   .canvas-node-interaction-layer
   .canvas-node-resizer[data-resize="topleft"] {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   border: 2px solid #8a5cf5;
   border-radius: 3px;
@@ -20798,8 +20798,8 @@ body.is-mobile .canvas-node-resizer {
   .canvas-node-interaction-layer
   .canvas-node-resizer[data-resize="bottomleft"] {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   border: 2px solid #8a5cf5;
   border-radius: 3px;
@@ -20957,8 +20957,8 @@ body.is-mobile .canvas-node-resizer {
 
 .canvas-path-label {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   border-radius: 4px;
   font-size: 19.2px;
@@ -20987,8 +20987,8 @@ body.is-mobile .canvas-node-resizer {
 
 .canvas-menu {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   border: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
   border-radius: 4px;
@@ -21008,8 +21008,8 @@ body.is-mobile .canvas-node-resizer {
 
 .canvas-submenu {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   border: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
   border-radius: 4px;
@@ -21031,7 +21031,7 @@ body.is-mobile .canvas-node-resizer {
 .canvas-color-picker-item {
   background-color: #7e7e7e;
   border: 2px solid
-    light-dark(light-dark(#1e1e1e, #ffffff), light-dark(#212121, #fcfcfc));
+    light-dark(light-dark(#fcfcfc, #212121), light-dark(#ffffff, #1e1e1e));
   border-radius: 12px;
   cursor: pointer;
   height: 24px;
@@ -21058,12 +21058,12 @@ body.is-mobile .canvas-node-resizer {
 
 .canvas-color-picker-item.canvas-color-picker-custom:not(.is-active) {
   background: conic-gradient(
-    light-dark(#fb464c, #e93147),
-    light-dark(#e0de71, #e0ac00),
-    light-dark(#44cf6e, #08b94e),
-    light-dark(#027aff, #086ddd),
-    light-dark(#a882ff, #7852ee),
-    light-dark(#fb464c, #e93147)
+    light-dark(#e93147, #fb464c),
+    light-dark(#e0ac00, #e0de71),
+    light-dark(#08b94e, #44cf6e),
+    light-dark(#086ddd, #027aff),
+    light-dark(#7852ee, #a882ff),
+    light-dark(#e93147, #fb464c)
   );
 }
 
@@ -21467,8 +21467,8 @@ textarea.webviewer-adblock-lists {
 
 .starter-screen {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   display: flex;
   flex-direction: column;
@@ -21485,8 +21485,8 @@ textarea.webviewer-adblock-lists {
 .splash {
   align-items: center;
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   display: flex;
   flex: 1 1 auto;
@@ -21549,8 +21549,8 @@ textarea.webviewer-adblock-lists {
 
 .open-vault-options {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   display: flex;
   flex-direction: column;
@@ -21678,8 +21678,8 @@ textarea.webviewer-adblock-lists {
 
 .recent-vaults {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
   border-right: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
   flex-shrink: 0;
@@ -21718,8 +21718,8 @@ textarea.webviewer-adblock-lists {
 @media (hover: hover) {
   .recent-vaults-list-item:hover {
     background-color: light-dark(
-      light-dark(#3f3f3f, #d4d4d4),
-      light-dark(#3f3f3f, #d4d4d4)
+      light-dark(#d4d4d4, #3f3f3f),
+      light-dark(#d4d4d4, #3f3f3f)
     );
     color: #ffffff;
   }
@@ -21740,8 +21740,8 @@ textarea.webviewer-adblock-lists {
 
 .recent-vaults-list-item-name[contenteditable] {
   background-color: light-dark(
-    light-dark(#3f3f3f, #d4d4d4),
-    light-dark(#3f3f3f, #d4d4d4)
+    light-dark(#d4d4d4, #3f3f3f),
+    light-dark(#d4d4d4, #3f3f3f)
   );
   border-color: #8a5cf5;
   cursor: text;
@@ -22028,7 +22028,7 @@ body.is-phone .suggestion-bg {
 .mod-fade:not(.mod-at-start):before {
   background: linear-gradient(
     to right,
-    light-dark(light-dark(#1e1e1e, #ffffff), light-dark(#212121, #fcfcfc)),
+    light-dark(light-dark(#fcfcfc, #212121), light-dark(#ffffff, #1e1e1e)),
     transparent
   );
   content: " ";
@@ -22045,7 +22045,7 @@ body.is-phone .suggestion-bg {
   background: linear-gradient(
     to right,
     transparent,
-    light-dark(light-dark(#1e1e1e, #ffffff), light-dark(#212121, #fcfcfc))
+    light-dark(light-dark(#fcfcfc, #212121), light-dark(#ffffff, #1e1e1e))
   );
   content: " ";
   height: 100%;
@@ -22058,8 +22058,8 @@ body.is-phone .suggestion-bg {
 
 .is-phone .query-toolbar-menu {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
   border: none;
   border-radius: 12px 12px 0 0;
@@ -22098,8 +22098,8 @@ body.is-phone .suggestion-bg {
 
 .is-phone .bases-query-container .metadata-property-operator {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   border-end-start-radius: 4px;
   border-start-start-radius: 4px;
@@ -22109,8 +22109,8 @@ body.is-phone .suggestion-bg {
 
 .is-phone .bases-query-container .filter-rhs-container {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   border-color: color-mix(in srgb, #000000 80%, #cccccc);
   border-style: solid;
@@ -22119,8 +22119,8 @@ body.is-phone .suggestion-bg {
 
 .is-phone .bases-query-container .filter-row-actions {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   border-color: color-mix(in srgb, #000000 80%, #cccccc);
   border-end-end-radius: 4px;
@@ -22321,8 +22321,8 @@ body.is-phone .suggestion-bg {
 
 .mobile-onboarding-screen {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   display: flex;
   flex-direction: column;
@@ -22418,8 +22418,8 @@ body.is-phone .suggestion-bg {
 .mobile-onboarding-navbar {
   align-items: center;
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   display: flex;
   height: 80px;
@@ -22563,15 +22563,15 @@ body.is-phone .suggestion-bg {
 
 .is-tablet.theme-dark .community-item {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
 }
 
 .is-tablet.theme-dark .vertical-tab-content {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
 }
 
@@ -22681,8 +22681,8 @@ body.is-phone .suggestion-bg {
 
 .is-phone .modal.mod-settings .vertical-tab-header {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   border-right: none;
   flex-grow: 1;
@@ -22694,8 +22694,8 @@ body.is-phone .suggestion-bg {
 
 .is-phone .modal.mod-settings .vertical-tab-content {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   box-shadow:
     0px 1px 2px #0000001f,
@@ -22786,8 +22786,8 @@ body.is-phone .suggestion-bg {
 
 .is-phone .community-modal-sidebar {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
 }
 
@@ -22831,8 +22831,8 @@ body.is-phone .suggestion-bg {
 
 .is-phone .community-modal-details {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   border: none;
 }
@@ -22949,15 +22949,15 @@ body.is-phone .suggestion-bg {
 
 :not(.is-mobile) .mobile-option-setting-item-option-icon:hover {
   background-color: light-dark(
-    light-dark(#3f3f3f, #d4d4d4),
-    light-dark(#3f3f3f, #d4d4d4)
+    light-dark(#d4d4d4, #3f3f3f),
+    light-dark(#d4d4d4, #3f3f3f)
   );
 }
 
 :not(.is-mobile) .mobile-option-setting-item-option-icon:active {
   background-color: light-dark(
-    light-dark(#3f3f3f, #d4d4d4),
-    light-dark(#3f3f3f, #d4d4d4)
+    light-dark(#d4d4d4, #3f3f3f),
+    light-dark(#d4d4d4, #3f3f3f)
   );
 }
 
@@ -23086,8 +23086,8 @@ body.is-tablet .workspace-drawer.mod-left .workspace-drawer-inner {
 
 .workspace-drawer-inner {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   display: flex;
   flex: 1 1 auto;
@@ -23099,8 +23099,8 @@ body.is-tablet .workspace-drawer.mod-left .workspace-drawer-inner {
 
 .theme-dark .workspace-drawer-inner {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
 }
 
@@ -23310,8 +23310,8 @@ body.is-tablet .workspace-drawer.mod-left .workspace-drawer-inner {
 .workspace-drawer-active-tab-header {
   align-items: center;
   background-color: light-dark(
-    light-dark(#262626, #f6f6f6),
-    light-dark(#262626, #f6f6f6)
+    light-dark(#f6f6f6, #262626),
+    light-dark(#f6f6f6, #262626)
   );
   border-radius: 8px;
   display: flex;
@@ -23448,8 +23448,8 @@ body.is-tablet .sidebar-toggle-button.mod-left {
 
 .is-phone .menu {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
   border-radius: 12px 12px 0 0;
   bottom: 0;
@@ -23463,8 +23463,8 @@ body.is-tablet .sidebar-toggle-button.mod-left {
 
 .is-phone .menu-scroll {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
   max-height: 60vh;
   padding-bottom: env(safe-area-inset-bottom);
@@ -23479,8 +23479,8 @@ body.is-tablet .sidebar-toggle-button.mod-left {
 
 .is-phone .menu-item.mobile-tap:not(.is-disabled) {
   background-color: light-dark(
-    light-dark(#3f3f3f, #d4d4d4),
-    light-dark(#3f3f3f, #d4d4d4)
+    light-dark(#d4d4d4, #3f3f3f),
+    light-dark(#d4d4d4, #3f3f3f)
   );
 }
 
@@ -23551,8 +23551,8 @@ body.is-tablet .sidebar-toggle-button.mod-left {
 .is-phone .modal .modal:not(.mod-lg) {
   --interactive-normal: #ffffff26;
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
 }
 
@@ -23576,8 +23576,8 @@ body.is-tablet .sidebar-toggle-button.mod-left {
 
 .is-phone .modal-sidebar {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
 }
 
@@ -23678,8 +23678,8 @@ body.is-tablet .sidebar-toggle-button.mod-left {
 
 .mobile-navbar {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   padding-bottom: calc(env(safe-area-inset-bottom));
   padding-left: calc(8px + env(safe-area-inset-left));
@@ -23820,15 +23820,15 @@ body.is-tablet .mobile-navbar {
 
 .theme-dark.is-mobile .prompt {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
 }
 
 .theme-dark.is-mobile .prompt input.prompt-input {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
 }
 
@@ -23875,8 +23875,8 @@ body.is-tablet .mobile-navbar {
 
 .pull-action {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
   color: color-mix(in srgb, #000000 30%, #cccccc);
   font-size: 12.8px;
@@ -23912,8 +23912,8 @@ body.is-tablet .mobile-navbar {
 .mobile-toolbar {
   -webkit-app-region: drag;
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   flex: 0 0 auto;
   overflow-y: hidden;
@@ -23928,8 +23928,8 @@ body.is-tablet .mobile-navbar {
 
 .mobile-toolbar-spacer {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   display: flex;
   height: 40px;
@@ -24152,8 +24152,8 @@ body.is-ios .mobile-tab-switcher-inner-scroll {
 
 .mobile-tab-preview {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   border-radius: 16px;
   height: 200px;
@@ -24175,8 +24175,8 @@ body.is-ios .mobile-tab-switcher-inner-scroll {
   --icon-stroke: 1.25px;
   align-items: center;
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   border-radius: 16px;
   box-shadow: 0 0 0 1px #ffffff0d;
@@ -24192,8 +24192,8 @@ body.is-ios .mobile-tab-switcher-inner-scroll {
 
 .mobile-tab-preview-embed {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   border-radius: 16px;
   box-shadow: 0 0 0 1px #ffffff0d;
@@ -24217,8 +24217,8 @@ body.is-ios .mobile-tab-switcher-inner-scroll {
 
 .is-tablet.theme-dark .suggestion-container {
   background-color: light-dark(
-    light-dark(#212121, #fcfcfc),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#fcfcfc, #212121)
   );
 }
 
@@ -24318,8 +24318,8 @@ body.is-ios .mobile-tab-switcher-inner-scroll {
 
 .is-phone .sync-history-list-container {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   border: none;
   display: block;
@@ -24366,8 +24366,8 @@ body.is-ios .mobile-tab-switcher-inner-scroll {
 
 .mobile-vault-chooser {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   height: 100%;
   position: relative;
@@ -24381,8 +24381,8 @@ body.is-ios .mobile-tab-switcher-inner-scroll {
 
 .mobile-vault-chooser-screen {
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   display: flex;
   flex-direction: column;
@@ -24399,8 +24399,8 @@ body.is-ios .mobile-tab-switcher-inner-scroll {
 .mobile-vault-chooser-header {
   align-items: center;
   background-color: light-dark(
-    light-dark(#1e1e1e, #ffffff),
-    light-dark(#212121, #fcfcfc)
+    light-dark(#fcfcfc, #212121),
+    light-dark(#ffffff, #1e1e1e)
   );
   border-bottom: 0.5pt solid color-mix(in srgb, #000000 80%, #cccccc);
   color: color-mix(in srgb, #000000 30%, #cccccc);
@@ -24475,8 +24475,8 @@ body.is-ios .mobile-tab-switcher-inner-scroll {
 
 .mobile-vault-chooser-action.mobile-tap {
   background-color: light-dark(
-    light-dark(#3f3f3f, #d4d4d4),
-    light-dark(#3f3f3f, #d4d4d4)
+    light-dark(#d4d4d4, #3f3f3f),
+    light-dark(#d4d4d4, #3f3f3f)
   );
 }
 

@@ -3,14 +3,14 @@
   --accent-h: 14;
   --accent-l: 70%;
   --accent-s: 90%;
-  --background-modifier-accent: light-dark(#530ff0, #ac8cf8);
-  --background-modifier-border: light-dark(#03243e, #bb7ae6);
-  --background-modifier-border-focus: light-dark(#ecc48d, #9c3eda);
-  --background-modifier-border-hover: light-dark(#c792ea, #ad60e1);
-  --background-modifier-form-field: light-dark(#2a2a2a, #d5aeef);
-  --background-secondary: light-dark(#021d33, #f78c6c);
-  --background-secondary-alt: light-dark(#363636, #212121);
-  --background-tertiary: light-dark(#082632, #03243e);
+  --background-modifier-accent: light-dark(#ac8cf8, #530ff0);
+  --background-modifier-border: light-dark(#bb7ae6, #03243e);
+  --background-modifier-border-focus: light-dark(#9c3eda, #ecc48d);
+  --background-modifier-border-hover: light-dark(#ad60e1, #c792ea);
+  --background-modifier-form-field: light-dark(#d5aeef, #2a2a2a);
+  --background-secondary: light-dark(#f78c6c, #021d33);
+  --background-secondary-alt: light-dark(#212121, #363636);
+  --background-tertiary: light-dark(#03243e, #082632);
   --base-d: 15%;
   --base-h: 276;
   --base-l: 75%;
@@ -19,29 +19,29 @@
   --border-width: 1px;
   --border-width-alt: 1px;
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --font-monospace:
     "Monaspace Argon", "monolisa", menlo, SFMono-Regular, Consolas, monospace;
@@ -66,7 +66,7 @@
   --h6: 0.85em;
   --h6-weight: 400;
   --icon-muted: 0.4;
-  --interactive-accent: light-dark(#c792ea, #ac8cf8);
+  --interactive-accent: light-dark(#ac8cf8, #c792ea);
   --keyboard-height: 0px;
   --line-height: 1.5;
   --line-width: 40rem;
@@ -77,7 +77,7 @@
   --page-border: 9px solid transparent;
   --page-margin: 1px auto -8px;
   --pdfViewer-padding-bottom: 0;
-  --quote-opening-modifier: light-dark(#48146b, #b269e2);
+  --quote-opening-modifier: light-dark(#b269e2, #48146b);
   --safe-area-inset-bottom: env(safe-area-inset-bottom);
   --safe-area-inset-left: env(safe-area-inset-left);
   --safe-area-inset-right: env(safe-area-inset-right);
@@ -85,12 +85,12 @@
   --spreadHorizontalWrapped-margin-LR: -3.5px;
   --text:
     "Monaspace Argon", "monolisa", menlo, SFMono-Regular, Consolas, monospace;
-  --text-accent: light-dark(#ecc48d, #8a5cf5);
-  --text-accent-hover: light-dark(#c792ea, #672cf2);
+  --text-accent: light-dark(#8a5cf5, #ecc48d);
+  --text-accent-hover: light-dark(#672cf2, #c792ea);
   --text-editor:
     "Monaspace Argon", "monolisa", menlo, SFMono-Regular, Consolas, monospace;
-  --text-muted: light-dark(#c792ea, #03243e);
-  --text-normal: light-dark(#abb2bf, #c792ea);
+  --text-muted: light-dark(#03243e, #c792ea);
+  --text-normal: light-dark(#c792ea, #abb2bf);
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
@@ -109,24 +109,24 @@ body {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
-  --background-modifier-accent: light-dark(#530ff0, #ac8cf8);
+  --background-modifier-accent: light-dark(#ac8cf8, #530ff0);
   --background-modifier-active-hover: #8a5cf526;
-  --background-modifier-border: light-dark(#03243e, #bb7ae6);
-  --background-modifier-border-focus: light-dark(#ecc48d, #9c3eda);
-  --background-modifier-border-hover: light-dark(#c792ea, #ad60e1);
+  --background-modifier-border: light-dark(#bb7ae6, #03243e);
+  --background-modifier-border-focus: light-dark(#9c3eda, #ecc48d);
+  --background-modifier-border-hover: light-dark(#ad60e1, #c792ea);
   --background-modifier-error: #fb464c;
   --background-modifier-error-hover: #fb464c;
   --background-modifier-error-rgb: 251, 70, 76;
-  --background-modifier-form-field: light-dark(#2a2a2a, #d5aeef);
+  --background-modifier-form-field: light-dark(#d5aeef, #2a2a2a);
   --background-modifier-hover: #ffffff11;
   --background-modifier-message: #000000e6;
   --background-modifier-success: #44cf6e;
   --background-modifier-success-rgb: 68, 207, 110;
   --background-primary: #000;
   --background-primary-alt: #111;
-  --background-secondary: light-dark(#021d33, #f78c6c);
-  --background-secondary-alt: light-dark(#363636, #212121);
-  --background-tertiary: light-dark(#082632, #03243e);
+  --background-secondary: light-dark(#f78c6c, #021d33);
+  --background-secondary-alt: light-dark(#212121, #363636);
+  --background-tertiary: light-dark(#03243e, #082632);
   --bases-embed-border: 1px solid #03243e;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -236,29 +236,29 @@ body {
   --collapse-icon-color: #c792ea97;
   --collapse-icon-color-collapsed: #ecc48d;
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#a68af9, #9873f7);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-1: light-dark(#9873f7, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -466,7 +466,7 @@ body {
   --input-height: 30px;
   --input-placeholder-color: #c792ea97;
   --input-radius: 5px;
-  --interactive-accent: light-dark(#c792ea, #ac8cf8);
+  --interactive-accent: light-dark(#ac8cf8, #c792ea);
   --interactive-accent-hover: #c5b6fc;
   --interactive-accent-hsl: 258, 88%, 66%;
   --interactive-hover: #111;
@@ -644,7 +644,7 @@ body {
   --prompt-max-height: 70vh;
   --prompt-max-width: 80vw;
   --prompt-width: 700px;
-  --quote-opening-modifier: light-dark(#48146b, #b269e2);
+  --quote-opening-modifier: light-dark(#b269e2, #48146b);
   --radius-l: 12px;
   --radius-m: 8px;
   --radius-s: 4px;
@@ -791,14 +791,14 @@ body {
   --tag-radius: 2em;
   --tag-size: 0.875em;
   --tag-weight: inherit;
-  --text-accent: light-dark(#ecc48d, #8a5cf5);
-  --text-accent-hover: light-dark(#c792ea, #672cf2);
+  --text-accent: light-dark(#8a5cf5, #ecc48d);
+  --text-accent-hover: light-dark(#672cf2, #c792ea);
   --text-error: #fb464c;
   --text-faint: #666666;
   --text-highlight-bg: #ffd00066;
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: light-dark(#c792ea, #03243e);
-  --text-normal: light-dark(#abb2bf, #c792ea);
+  --text-muted: light-dark(#03243e, #c792ea);
+  --text-normal: light-dark(#c792ea, #abb2bf);
   --text-on-accent: #ffffff;
   --text-on-accent-inverted: #000000;
   --text-selection: #8a5cf533;
@@ -836,7 +836,7 @@ body {
   -webkit-user-select: none;
   background-color: #c894eb;
   caret-color: #ecc48d;
-  color: light-dark(#abb2bf, #c792ea);
+  color: light-dark(#c792ea, #abb2bf);
   contain: initial;
   font-family:
     "Monaspace Argon", "monolisa", menlo, SFMono-Regular, Consolas, monospace;
@@ -994,7 +994,7 @@ h6 {
 .markdown-rendered button.copy-code-button {
   background-color: transparent;
   box-shadow: none;
-  color: light-dark(#c792ea, #03243e);
+  color: light-dark(#03243e, #c792ea);
   font-family:
     "??",
     "??",
@@ -1238,7 +1238,7 @@ h6 {
 
 .popover {
   background-color: #c894eb;
-  border: 1px solid light-dark(#03243e, #bb7ae6);
+  border: 1px solid light-dark(#bb7ae6, #03243e);
   border-radius: 8px;
   box-shadow: 0 20px 40px #0000004d;
   display: flex;
@@ -1272,7 +1272,7 @@ input.prompt-input {
   background: #c894eb;
   background-color: #c894eb;
   border: 0;
-  border-bottom: 1px solid light-dark(#021d33, #f78c6c);
+  border-bottom: 1px solid light-dark(#f78c6c, #021d33);
   border-radius: 0;
   font-size: 16px;
   height: 40px;
@@ -1284,7 +1284,7 @@ input.prompt-input {
 }
 
 .suggestion-item.is-selected {
-  background: light-dark(#082632, #03243e);
+  background: light-dark(#03243e, #082632);
   background-color: #ffffff26;
 }
 
@@ -1294,14 +1294,14 @@ input.prompt-input {
 
 .markdown-rendered mark {
   background-color: #03243e80;
-  color: light-dark(#abb2bf, #c792ea);
+  color: light-dark(#c792ea, #abb2bf);
 }
 
 a.tag {
   background-color: transparent;
-  border: 1px solid light-dark(#03243e, #bb7ae6);
+  border: 1px solid light-dark(#bb7ae6, #03243e);
   border-radius: 14px;
-  color: light-dark(#c792ea, #03243e);
+  color: light-dark(#03243e, #c792ea);
   display: inline-block;
   font-family:
     "Monaspace Argon", "monolisa", menlo, SFMono-Regular, Consolas, monospace;
@@ -1317,10 +1317,10 @@ a.tag {
 input[type="search"] {
   -webkit-app-region: no-drag;
   -webkit-appearance: none;
-  background: light-dark(light-dark(#2a2a2a, #e3e3e3), #d5aeef);
-  border: 1px solid light-dark(#03243e, #bb7ae6);
+  background: light-dark(#d5aeef, light-dark(#e3e3e3, #2a2a2a));
+  border: 1px solid light-dark(#bb7ae6, #03243e);
   border-radius: 5px;
-  color: light-dark(#abb2bf, #c792ea);
+  color: light-dark(#c792ea, #abb2bf);
   font-family:
     "Monaspace Argon", "monolisa", menlo, SFMono-Regular, Consolas, monospace;
   font-size: 13px;
@@ -1366,7 +1366,7 @@ input[type="search"] {
 
 .nav-folder-title {
   border-radius: 4px;
-  color: light-dark(#c792ea, #03243e);
+  color: light-dark(#03243e, #c792ea);
   cursor: default;
   display: flex;
   font-size: calc(0.933em + 3px);
@@ -1380,10 +1380,10 @@ input[type="search"] {
 }
 
 .nav-file-title {
-  border-color: light-dark(#021d33, #f78c6c);
+  border-color: light-dark(#f78c6c, #021d33);
   border-radius: 6px;
   border-width: 0;
-  color: light-dark(#c792ea, #03243e);
+  color: light-dark(#03243e, #c792ea);
   cursor: default;
   display: flex;
   font-size: calc(0.933em + 3px);
@@ -1396,8 +1396,8 @@ input[type="search"] {
 }
 
 .nav-file-title.is-active {
-  background-color: light-dark(#082632, #03243e);
-  color: light-dark(#abb2bf, #c792ea);
+  background-color: light-dark(#03243e, #082632);
+  color: light-dark(#c792ea, #abb2bf);
   font-weight: inherit;
 }
 
@@ -1420,7 +1420,7 @@ input[type="search"] {
 .tree-item-self {
   align-items: baseline;
   border-radius: 4px;
-  color: light-dark(#c792ea, #03243e);
+  color: light-dark(#03243e, #c792ea);
   display: flex;
   font-size: calc(0.933em + 3px);
   font-weight: inherit;
@@ -1466,7 +1466,7 @@ input[type="search"] {
 }
 
 .tree-item-self.is-being-dragged {
-  background-color: light-dark(#c792ea, #fab49e);
+  background-color: light-dark(#fab49e, #c792ea);
   color: #abb2bf;
 }
 
@@ -1563,7 +1563,7 @@ svg.svg-icon {
 
 .clickable-icon[aria-disabled="true"] {
   background-color: unset;
-  color: light-dark(#c792ea, #03243e);
+  color: light-dark(#03243e, #c792ea);
   opacity: 0.4;
 }
 
@@ -1617,7 +1617,7 @@ svg.svg-icon {
 
 .backlink-pane > .tree-item-self {
   background: transparent;
-  color: light-dark(#c792ea, #03243e);
+  color: light-dark(#03243e, #c792ea);
   font-size: calc(0.8em + 2px);
   font-weight: 500;
   letter-spacing: 0.05em;
@@ -1636,7 +1636,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill {
-  color: light-dark(#c792ea, #03243e);
+  color: light-dark(#03243e, #c792ea);
 }
 
 .graph-view.color-fill-focused {
@@ -1657,53 +1657,53 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-1 {
-  color: light-dark(#c792ea, #03243e);
+  color: light-dark(#03243e, #c792ea);
 }
 
 .graph-view.color-fill-2 {
-  color: light-dark(#c792ea, #03243e);
+  color: light-dark(#03243e, #c792ea);
 }
 
 .graph-view.color-fill-3 {
-  color: light-dark(#c792ea, #03243e);
+  color: light-dark(#03243e, #c792ea);
 }
 
 .graph-view.color-fill-4 {
-  color: light-dark(#c792ea, #03243e);
+  color: light-dark(#03243e, #c792ea);
 }
 
 .graph-view.color-fill-5 {
-  color: light-dark(#c792ea, #03243e);
+  color: light-dark(#03243e, #c792ea);
 }
 
 .graph-view.color-fill-6 {
-  color: light-dark(#c792ea, #03243e);
+  color: light-dark(#03243e, #c792ea);
 }
 
 .graph-view.color-arrow {
-  color: light-dark(#abb2bf, #c792ea);
+  color: light-dark(#c792ea, #abb2bf);
   opacity: 0.5;
 }
 
 .graph-view.color-circle {
-  color: light-dark(#ecc48d, #f78e6e);
+  color: light-dark(#f78e6e, #ecc48d);
 }
 
 .graph-view.color-line {
-  color: light-dark(#03243e, #bb7ae6);
+  color: light-dark(#bb7ae6, #03243e);
 }
 
 .graph-view.color-text {
-  color: light-dark(#abb2bf, #c792ea);
+  color: light-dark(#c792ea, #abb2bf);
 }
 
 .graph-view.color-fill-highlight {
-  color: light-dark(#ecc48d, #f78e6e);
+  color: light-dark(#f78e6e, #ecc48d);
 }
 
 .graph-view.color-line-highlight {
   border: 0;
-  color: light-dark(#ecc48d, #f78e6e);
+  color: light-dark(#f78e6e, #ecc48d);
 }
 
 .graph-controls {
@@ -1899,7 +1899,7 @@ svg.svg-icon {
 }
 
 .workspace-tabs .workspace-leaf {
-  background-color: light-dark(#021d33, #f78c6c);
+  background-color: light-dark(#f78c6c, #021d33);
   height: 100%;
 }
 

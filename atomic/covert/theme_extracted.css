@@ -1,22 +1,22 @@
 :root {
-  --background-modifier-border: light-dark(var(--dark2), var(--light1));
-  --background-primary: light-dark(var(--dark0), var(--light3));
-  --background-primary-alt: light-dark(var(--dark0), var(--light3));
-  --background-secondary: light-dark(var(--dark1), var(--light2));
+  --background-modifier-border: light-dark(var(--light1), var(--dark2));
+  --background-primary: light-dark(var(--light3), var(--dark0));
+  --background-primary-alt: light-dark(var(--light3), var(--dark0));
+  --background-secondary: light-dark(var(--light2), var(--dark1));
   --background-secondary-alt: light-dark(
-    var(--color-base-30),
-    var(--color-base-05)
+    var(--color-base-05),
+    var(--color-base-30)
   );
-  --bold-color: light-dark(var(--yellow), var(--green));
-  --calendar-background-hover: light-dark(var(--dark3), var(--light0));
+  --bold-color: light-dark(var(--green), var(--yellow));
+  --calendar-background-hover: light-dark(var(--light0), var(--dark3));
   --calendar-hover: light-dark(var(--red), var(--red));
-  --calendar-today: light-dark(var(--yellow), var(--orange));
-  --calendar-week: light-dark(var(--yellow), var(--orange));
-  --checkbox-border-color: light-dark(var(--frost0), var(--frost2));
-  --checkbox-border-color-hover: light-dark(var(--frost0), var(--frost2));
-  --checkbox-color: light-dark(var(--frost0), var(--frost2));
-  --checkbox-color-hover: light-dark(var(--frost0), var(--frost2));
-  --code-background: light-dark(var(--dark1), var(--light2));
+  --calendar-today: light-dark(var(--orange), var(--yellow));
+  --calendar-week: light-dark(var(--orange), var(--yellow));
+  --checkbox-border-color: light-dark(var(--frost2), var(--frost0));
+  --checkbox-border-color-hover: light-dark(var(--frost2), var(--frost0));
+  --checkbox-color: light-dark(var(--frost2), var(--frost0));
+  --checkbox-color-hover: light-dark(var(--frost2), var(--frost0));
+  --code-background: light-dark(var(--light2), var(--dark1));
   --code-normal: light-dark(var(--frost1), var(--frost1));
   --color-accent: light-dark(
     hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
@@ -24,26 +24,26 @@
   );
   --color-accent-1: light-dark(
     hsl(
-      calc(var(--accent-h) - 3),
-      calc(var(--accent-s) * 1.02),
-      calc(var(--accent-l) * 1.15)
-    ),
-    hsl(
       calc(var(--accent-h) - 1),
       calc(var(--accent-s) * 1.01),
       calc(var(--accent-l) * 1.075)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
     )
   );
   --color-accent-2: light-dark(
     hsl(
-      calc(var(--accent-h) - 5),
-      calc(var(--accent-s) * 1.05),
-      calc(var(--accent-l) * 1.29)
-    ),
-    hsl(
       calc(var(--accent-h) - 3),
       calc(var(--accent-s) * 1.02),
       calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
     )
   );
   --color-accent-hsl: light-dark(
@@ -54,26 +54,26 @@
     var(--accent-s),
     var(--accent-l)
   );
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --dark0: rgb(var(--dark0_x));
   --dark0_x: 33, 34, 36;
   --dark1: rgb(var(--dark1_x));
@@ -94,8 +94,8 @@
   --frost2_x: 97, 96, 96;
   --frost3: rgb(var(--frost3_x));
   --frost3_x: 94, 129, 172;
-  --graph-line: light-dark(var(--dark3), var(--light0));
-  --graph-node: light-dark(var(--light3), var(--dark3));
+  --graph-line: light-dark(var(--light0), var(--dark3));
+  --graph-node: light-dark(var(--dark3), var(--light3));
   --graph-node-attachment: light-dark(var(--green), var(--green));
   --graph-node-tag: light-dark(var(--red), var(--red));
   --green: rgb(var(--green_x));
@@ -106,10 +106,10 @@
   --h4-color: light-dark(var(--purple), var(--purple));
   --h5-color: light-dark(var(--frost0), var(--frost0));
   --h6-color: light-dark(var(--frost2), var(--frost2));
-  --icon-color-focused: light-dark(var(--frost2), var(--frost3));
+  --icon-color-focused: light-dark(var(--frost3), var(--frost2));
   --icon-color-hover: light-dark(var(--red), var(--red));
   --inline-title-color: light-dark(var(--yellow), var(--yellow));
-  --italic-color: light-dark(var(--yellow), var(--green));
+  --italic-color: light-dark(var(--green), var(--yellow));
   --keyboard-height: 0px;
   --light0: rgb(var(--light0_x));
   --light0_x: 97, 96, 96;
@@ -121,7 +121,7 @@
   --light3_x: 97, 96, 96;
   --loading-icon-delay: 400ms;
   --mermaid-loopline: light-dark(var(--frost1), var(--frost1));
-  --mermaid-note: light-dark(var(--frost3), var(--frost0));
+  --mermaid-note: light-dark(var(--frost0), var(--frost3));
   --nav-item-color-active: light-dark(var(--frost2), var(--frost2));
   --nav-item-color-hover: light-dark(var(--red), var(--red));
   --orange: rgb(var(--orange_x));
@@ -140,18 +140,18 @@
   --spreadHorizontalWrapped-margin-LR: -3.5px;
   --tab-text-color-focused-active: light-dark(var(--frost2), var(--frost2));
   --tab-text-color-focused-active-current: light-dark(var(--red), var(--red));
-  --table-header-background-hover: light-dark(hsl(240, 1%, 21%), var(--frost2));
-  --table-row-background-hover: light-dark(var(--dark3), var(--frost2));
-  --tag-background: light-dark(var(--dark1), var(--light1));
-  --tag-background-hover: light-dark(var(--dark1), var(--light0));
-  --tag-color: light-dark(var(--dark4), var(--dark3));
+  --table-header-background-hover: light-dark(var(--frost2), hsl(240, 1%, 21%));
+  --table-row-background-hover: light-dark(var(--frost2), var(--dark3));
+  --tag-background: light-dark(var(--light1), var(--dark1));
+  --tag-background-hover: light-dark(var(--light0), var(--dark1));
+  --tag-color: light-dark(var(--dark3), var(--dark4));
   --text-accent: light-dark(var(--orange), var(--orange));
   --text-accent-hover: light-dark(var(--frost2), var(--frost2));
-  --text-faint: light-dark(var(--light0), var(--dark0));
-  --text-highlight-bg: light-dark(var(--frost1), var(--yellow));
+  --text-faint: light-dark(var(--dark0), var(--light0));
+  --text-highlight-bg: light-dark(var(--yellow), var(--frost1));
   --text-highlight-fg: light-dark(var(--dark0), var(--dark0));
-  --text-muted: light-dark(var(--light1), var(--dark1));
-  --text-normal: light-dark(var(--light2), var(--dark2));
+  --text-muted: light-dark(var(--dark1), var(--light1));
+  --text-normal: light-dark(var(--dark2), var(--light2));
   --titlebar-text-color-focused: light-dark(var(--red), var(--red));
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
@@ -174,7 +174,7 @@ body {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
-  --background-modifier-border: light-dark(var(--dark2), var(--light1));
+  --background-modifier-border: light-dark(var(--light1), var(--dark2));
   --background-modifier-border-focus: var(--color-base-40);
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-error: var(--color-red);
@@ -185,12 +185,12 @@ body {
   --background-modifier-message: rgba(0, 0, 0, 0.9);
   --background-modifier-success: var(--color-green);
   --background-modifier-success-rgb: var(--color-green-rgb);
-  --background-primary: light-dark(var(--dark0), var(--light3));
-  --background-primary-alt: light-dark(var(--dark0), var(--light3));
-  --background-secondary: light-dark(var(--dark1), var(--light2));
+  --background-primary: light-dark(var(--light3), var(--dark0));
+  --background-primary-alt: light-dark(var(--light3), var(--dark0));
+  --background-secondary: light-dark(var(--light2), var(--dark1));
   --background-secondary-alt: light-dark(
-    var(--color-base-30),
-    var(--color-base-05)
+    var(--color-base-05),
+    var(--color-base-30)
   );
   --bases-embed-border: 1px solid var(--background-modifier-border);
   --bases-embed-border-radius: var(--radius-s);
@@ -229,15 +229,15 @@ body {
   --blockquote-border-thickness: 2px;
   --blockquote-color: inherit;
   --blockquote-font-style: normal;
-  --bold-color: light-dark(var(--yellow), var(--green));
+  --bold-color: light-dark(var(--green), var(--yellow));
   --bold-modifier: 200;
   --bold-weight: 600;
   --border-width: 1px;
   --button-radius: var(--input-radius);
-  --calendar-background-hover: light-dark(var(--dark3), var(--light0));
+  --calendar-background-hover: light-dark(var(--light0), var(--dark3));
   --calendar-hover: light-dark(var(--red), var(--red));
-  --calendar-today: light-dark(var(--yellow), var(--orange));
-  --calendar-week: light-dark(var(--yellow), var(--orange));
+  --calendar-today: light-dark(var(--orange), var(--yellow));
+  --calendar-week: light-dark(var(--orange), var(--yellow));
   --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
@@ -275,10 +275,10 @@ body {
   --canvas-color-6: var(--color-purple-rgb);
   --canvas-dot-pattern: var(--color-base-30);
   --caret-color: var(--text-normal);
-  --checkbox-border-color: light-dark(var(--frost0), var(--frost2));
-  --checkbox-border-color-hover: light-dark(var(--frost0), var(--frost2));
-  --checkbox-color: light-dark(var(--frost0), var(--frost2));
-  --checkbox-color-hover: light-dark(var(--frost0), var(--frost2));
+  --checkbox-border-color: light-dark(var(--frost2), var(--frost0));
+  --checkbox-border-color-hover: light-dark(var(--frost2), var(--frost0));
+  --checkbox-color: light-dark(var(--frost2), var(--frost0));
+  --checkbox-color-hover: light-dark(var(--frost2), var(--frost0));
   --checkbox-margin-inline-start: 0.85em;
   --checkbox-marker-color: var(--background-primary);
   --checkbox-radius: 0;
@@ -286,7 +286,7 @@ body {
   --checklist-done-color: var(--text-muted);
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: var(--radius-s);
-  --code-background: light-dark(var(--dark1), var(--light2));
+  --code-background: light-dark(var(--light2), var(--dark1));
   --code-border-color: var(--background-modifier-border);
   --code-border-width: 0px;
   --code-comment: var(--text-faint);
@@ -311,26 +311,26 @@ body {
   );
   --color-accent-1: light-dark(
     hsl(
-      calc(var(--accent-h) - 3),
-      calc(var(--accent-s) * 1.02),
-      calc(var(--accent-l) * 1.15)
-    ),
-    hsl(
       calc(var(--accent-h) - 1),
       calc(var(--accent-s) * 1.01),
       calc(var(--accent-l) * 1.075)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
     )
   );
   --color-accent-2: light-dark(
     hsl(
-      calc(var(--accent-h) - 5),
-      calc(var(--accent-s) * 1.05),
-      calc(var(--accent-l) * 1.29)
-    ),
-    hsl(
       calc(var(--accent-h) - 3),
       calc(var(--accent-s) * 1.02),
       calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
     )
   );
   --color-accent-hsl: light-dark(
@@ -341,26 +341,26 @@ body {
     var(--accent-s),
     var(--accent-l)
   );
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --dataview-key: light-dark(var(--text-faint), var(--text-faint));
@@ -465,8 +465,8 @@ body {
   --footnote-radius: var(--radius-s);
   --footnote-size: var(--font-smaller);
   --graph-controls-width: 240px;
-  --graph-line: light-dark(var(--dark3), var(--light0));
-  --graph-node: light-dark(var(--light3), var(--dark3));
+  --graph-line: light-dark(var(--light0), var(--dark3));
+  --graph-node: light-dark(var(--dark3), var(--light3));
   --graph-node-attachment: light-dark(var(--green), var(--green));
   --graph-node-focused: var(--text-accent);
   --graph-node-tag: light-dark(var(--red), var(--red));
@@ -521,7 +521,7 @@ body {
   --hr-thickness: 2px;
   --icon-color: var(--text-muted);
   --icon-color-active: var(--text-accent);
-  --icon-color-focused: light-dark(var(--frost2), var(--frost3));
+  --icon-color-focused: light-dark(var(--frost3), var(--frost2));
   --icon-color-hover: light-dark(var(--red), var(--red));
   --icon-l: 18px;
   --icon-l-stroke-width: 1.75px;
@@ -566,7 +566,7 @@ body {
   --interactive-accent-hsl: var(--color-accent-hsl);
   --interactive-hover: var(--color-base-10);
   --interactive-normal: var(--color-base-00);
-  --italic-color: light-dark(var(--yellow), var(--green));
+  --italic-color: light-dark(var(--green), var(--yellow));
   --italic-weight: inherit;
   --layer-cover: 5;
   --layer-dragged-item: 80;
@@ -617,7 +617,7 @@ body {
   --menu-radius: var(--radius-m);
   --menu-shadow: var(--shadow-s);
   --mermaid-loopline: light-dark(var(--frost1), var(--frost1));
-  --mermaid-note: light-dark(var(--frost3), var(--frost0));
+  --mermaid-note: light-dark(var(--frost0), var(--frost3));
   --metadata-background: transparent;
   --metadata-border-color: var(--background-modifier-border);
   --metadata-border-radius: 0;
@@ -855,7 +855,7 @@ body {
   --table-drag-handle-color: var(--text-faint);
   --table-drag-handle-color-active: var(--text-on-accent);
   --table-header-background: var(--table-background);
-  --table-header-background-hover: light-dark(hsl(240, 1%, 21%), var(--frost2));
+  --table-header-background-hover: light-dark(var(--frost2), hsl(240, 1%, 21%));
   --table-header-border-color: var(--table-border-color);
   --table-header-border-width: var(--table-border-width);
   --table-header-color: var(--text-normal);
@@ -865,7 +865,7 @@ body {
   --table-line-height: var(--line-height-tight);
   --table-row-alt-background: var(--table-background);
   --table-row-alt-background-hover: var(--table-background);
-  --table-row-background-hover: light-dark(var(--dark3), var(--frost2));
+  --table-row-background-hover: light-dark(var(--frost2), var(--dark3));
   --table-row-last-border-width: var(--table-border-width);
   --table-selection: hsla(var(--color-accent-hsl), 0.1);
   --table-selection-blend-mode: var(--highlight-mix-blend-mode);
@@ -875,12 +875,12 @@ body {
   --table-text-color: inherit;
   --table-text-size: var(--font-text-size);
   --table-white-space: break-spaces;
-  --tag-background: light-dark(var(--dark1), var(--light1));
-  --tag-background-hover: light-dark(var(--dark1), var(--light0));
+  --tag-background: light-dark(var(--light1), var(--dark1));
+  --tag-background-hover: light-dark(var(--light0), var(--dark1));
   --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);
   --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);
   --tag-border-width: 0px;
-  --tag-color: light-dark(var(--dark4), var(--dark3));
+  --tag-color: light-dark(var(--dark3), var(--dark4));
   --tag-color-hover: var(--text-accent);
   --tag-decoration: none;
   --tag-decoration-hover: underline;
@@ -892,12 +892,12 @@ body {
   --text-accent: light-dark(var(--orange), var(--orange));
   --text-accent-hover: light-dark(var(--frost2), var(--frost2));
   --text-error: var(--color-red);
-  --text-faint: light-dark(var(--light0), var(--dark0));
-  --text-highlight-bg: light-dark(var(--frost1), var(--yellow));
+  --text-faint: light-dark(var(--dark0), var(--light0));
+  --text-highlight-bg: light-dark(var(--yellow), var(--frost1));
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-highlight-fg: light-dark(var(--dark0), var(--dark0));
-  --text-muted: light-dark(var(--light1), var(--dark1));
-  --text-normal: light-dark(var(--light2), var(--dark2));
+  --text-muted: light-dark(var(--dark1), var(--light1));
+  --text-normal: light-dark(var(--dark2), var(--light2));
   --text-on-accent: white;
   --text-on-accent-inverted: black;
   --text-selection: hsla(var(--color-accent-hsl), 0.2);

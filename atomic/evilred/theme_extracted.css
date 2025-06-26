@@ -1,11 +1,11 @@
 :root {
-  --background-modifier-border: light-dark(var(--dark2), var(--light1));
-  --background-primary: light-dark(var(--dark0), var(--light1));
-  --background-primary-alt: light-dark(var(--dark0), var(--light1));
-  --background-secondary: light-dark(var(--dark1), var(--light2));
+  --background-modifier-border: light-dark(var(--light1), var(--dark2));
+  --background-primary: light-dark(var(--light1), var(--dark0));
+  --background-primary-alt: light-dark(var(--light1), var(--dark0));
+  --background-secondary: light-dark(var(--light2), var(--dark1));
   --background-secondary-alt: light-dark(
-    var(--color-base-30),
-    var(--color-base-05)
+    var(--color-base-05),
+    var(--color-base-30)
   );
   --code-block: light-dark(var(--frost1), var(--frost1));
   --color-accent: light-dark(
@@ -14,26 +14,26 @@
   );
   --color-accent-1: light-dark(
     hsl(
-      calc(var(--accent-h) - 3),
-      calc(var(--accent-s) * 1.02),
-      calc(var(--accent-l) * 1.15)
-    ),
-    hsl(
       calc(var(--accent-h) - 1),
       calc(var(--accent-s) * 1.01),
       calc(var(--accent-l) * 1.075)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
     )
   );
   --color-accent-2: light-dark(
     hsl(
-      calc(var(--accent-h) - 5),
-      calc(var(--accent-s) * 1.05),
-      calc(var(--accent-l) * 1.29)
-    ),
-    hsl(
       calc(var(--accent-h) - 3),
       calc(var(--accent-s) * 1.02),
       calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
     )
   );
   --color-accent-hsl: light-dark(
@@ -44,26 +44,26 @@
     var(--accent-s),
     var(--accent-l)
   );
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --dark-orange: #83572f;
   --dark0: #390000;
   --dark1: #290202;
@@ -84,7 +84,7 @@
   --input-unfocused-border-color: transparent;
   --interactive-accent: light-dark(var(--frost0), var(--frost0));
   --interactive-accent-rgb: light-dark(var(--orange), var(--orange));
-  --interactive-before: light-dark(var(--dark3), var(--light0));
+  --interactive-before: light-dark(var(--light0), var(--dark3));
   --keyboard-height: 0px;
   --light0: #ff8a8a;
   --light1: #e4d1cf;
@@ -95,7 +95,7 @@
   --page-border: 9px solid transparent;
   --page-margin: 1px auto -8px;
   --pdfViewer-padding-bottom: 0;
-  --pre-code: light-dark(var(--dark1), var(--light2));
+  --pre-code: light-dark(var(--light2), var(--dark1));
   --purple: #f899e7;
   --red: #d63f4e;
   --safe-area-inset-bottom: env(safe-area-inset-bottom);
@@ -104,23 +104,23 @@
   --safe-area-inset-top: env(safe-area-inset-top);
   --sideRed: #910b0bcc;
   --spreadHorizontalWrapped-margin-LR: -3.5px;
-  --table-header: light-dark(hsl(220, 16%, 16%), hsl(217, 74%, 70%));
-  --table-hover: light-dark(var(--dark3), var(--light1));
-  --table-row-even: light-dark(hsl(220, 16%, 20%), hsl(220, 16%, 94%));
-  --table-row-odd: light-dark(hsl(220, 16%, 24%), hsl(220, 16%, 98%));
+  --table-header: light-dark(hsl(217, 74%, 70%), hsl(220, 16%, 16%));
+  --table-hover: light-dark(var(--light1), var(--dark3));
+  --table-row-even: light-dark(hsl(220, 16%, 94%), hsl(220, 16%, 20%));
+  --table-row-odd: light-dark(hsl(220, 16%, 98%), hsl(220, 16%, 24%));
   --task-checkbox: light-dark(var(--frost0), var(--frost0));
   --text-a: light-dark(var(--frost3), var(--frost3));
-  --text-a-hover: light-dark(var(--frost2), var(--frost1));
+  --text-a-hover: light-dark(var(--frost1), var(--frost2));
   --text-accent: light-dark(var(--orange), var(--orange));
-  --text-faint: light-dark(var(--light0), var(--dark3));
-  --text-highlight-bg-active: light-dark(var(--green), var(--yellow));
+  --text-faint: light-dark(var(--dark3), var(--light0));
+  --text-highlight-bg-active: light-dark(var(--yellow), var(--green));
   --text-link: light-dark(var(--frost0), var(--frost0));
-  --text-muted: light-dark(var(--light1), var(--dark2));
-  --text-normal: light-dark(var(--light2), var(--dark1));
-  --text-selection: light-dark(var(--dark3), var(--light0));
-  --text-tag: light-dark(var(--frost0), var(--frost2));
+  --text-muted: light-dark(var(--dark2), var(--light1));
+  --text-normal: light-dark(var(--dark1), var(--light2));
+  --text-selection: light-dark(var(--light0), var(--dark3));
+  --text-tag: light-dark(var(--frost2), var(--frost0));
   --text-title-h1: light-dark(var(--red), var(--red));
-  --text-title-h2: light-dark(var(--orange), var(--dark-orange));
+  --text-title-h2: light-dark(var(--dark-orange), var(--orange));
   --text-title-h3: light-dark(var(--yellow), var(--yellow));
   --text-title-h4: light-dark(var(--green), var(--green));
   --text-title-h5: light-dark(var(--purple), var(--purple));
@@ -146,7 +146,7 @@ body {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
-  --background-modifier-border: light-dark(var(--dark2), var(--light1));
+  --background-modifier-border: light-dark(var(--light1), var(--dark2));
   --background-modifier-border-focus: var(--color-base-40);
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-error: var(--color-red);
@@ -157,12 +157,12 @@ body {
   --background-modifier-message: rgba(0, 0, 0, 0.9);
   --background-modifier-success: var(--color-green);
   --background-modifier-success-rgb: var(--color-green-rgb);
-  --background-primary: light-dark(var(--dark0), var(--light1));
-  --background-primary-alt: light-dark(var(--dark0), var(--light1));
-  --background-secondary: light-dark(var(--dark1), var(--light2));
+  --background-primary: light-dark(var(--light1), var(--dark0));
+  --background-primary-alt: light-dark(var(--light1), var(--dark0));
+  --background-secondary: light-dark(var(--light2), var(--dark1));
   --background-secondary-alt: light-dark(
-    var(--color-base-30),
-    var(--color-base-05)
+    var(--color-base-05),
+    var(--color-base-30)
   );
   --bases-embed-border: 1px solid var(--background-modifier-border);
   --bases-embed-border-radius: var(--radius-s);
@@ -280,26 +280,26 @@ body {
   );
   --color-accent-1: light-dark(
     hsl(
-      calc(var(--accent-h) - 3),
-      calc(var(--accent-s) * 1.02),
-      calc(var(--accent-l) * 1.15)
-    ),
-    hsl(
       calc(var(--accent-h) - 1),
       calc(var(--accent-s) * 1.01),
       calc(var(--accent-l) * 1.075)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
     )
   );
   --color-accent-2: light-dark(
     hsl(
-      calc(var(--accent-h) - 5),
-      calc(var(--accent-s) * 1.05),
-      calc(var(--accent-l) * 1.29)
-    ),
-    hsl(
       calc(var(--accent-h) - 3),
       calc(var(--accent-s) * 1.02),
       calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
     )
   );
   --color-accent-hsl: light-dark(
@@ -310,26 +310,26 @@ body {
     var(--accent-s),
     var(--accent-l)
   );
-  --color-base-00: light-dark(#1e1e1e, #ffffff);
-  --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(#242424, #fafafa);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(#262626, #f6f6f6);
-  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-base-50: light-dark(#666666, #ababab);
-  --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --color-yellow: light-dark(#e0de71, #e0ac00);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -536,7 +536,7 @@ body {
   --interactive-accent-hover: var(--color-accent-2);
   --interactive-accent-hsl: var(--color-accent-hsl);
   --interactive-accent-rgb: light-dark(var(--orange), var(--orange));
-  --interactive-before: light-dark(var(--dark3), var(--light0));
+  --interactive-before: light-dark(var(--light0), var(--dark3));
   --interactive-hover: var(--color-base-10);
   --interactive-normal: var(--color-base-00);
   --italic-color: inherit;
@@ -705,7 +705,7 @@ body {
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
   --popover-width: 450px;
-  --pre-code: light-dark(var(--dark1), var(--light2));
+  --pre-code: light-dark(var(--light2), var(--dark1));
   --prompt-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
@@ -826,7 +826,7 @@ body {
   --table-drag-handle-background-active: var(--table-selection-border-color);
   --table-drag-handle-color: var(--text-faint);
   --table-drag-handle-color-active: var(--text-on-accent);
-  --table-header: light-dark(hsl(220, 16%, 16%), hsl(217, 74%, 70%));
+  --table-header: light-dark(hsl(217, 74%, 70%), hsl(220, 16%, 16%));
   --table-header-background: var(--table-background);
   --table-header-background-hover: inherit;
   --table-header-border-color: var(--table-border-color);
@@ -835,14 +835,14 @@ body {
   --table-header-font: inherit;
   --table-header-size: var(--table-text-size);
   --table-header-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --table-hover: light-dark(var(--dark3), var(--light1));
+  --table-hover: light-dark(var(--light1), var(--dark3));
   --table-line-height: var(--line-height-tight);
   --table-row-alt-background: var(--table-background);
   --table-row-alt-background-hover: var(--table-background);
   --table-row-background-hover: var(--table-background);
-  --table-row-even: light-dark(hsl(220, 16%, 20%), hsl(220, 16%, 94%));
+  --table-row-even: light-dark(hsl(220, 16%, 94%), hsl(220, 16%, 20%));
   --table-row-last-border-width: var(--table-border-width);
-  --table-row-odd: light-dark(hsl(220, 16%, 24%), hsl(220, 16%, 98%));
+  --table-row-odd: light-dark(hsl(220, 16%, 98%), hsl(220, 16%, 24%));
   --table-selection: hsla(var(--color-accent-hsl), 0.1);
   --table-selection-blend-mode: var(--highlight-mix-blend-mode);
   --table-selection-border-color: var(--interactive-accent);
@@ -867,24 +867,24 @@ body {
   --tag-weight: inherit;
   --task-checkbox: light-dark(var(--frost0), var(--frost0));
   --text-a: light-dark(var(--frost3), var(--frost3));
-  --text-a-hover: light-dark(var(--frost2), var(--frost1));
+  --text-a-hover: light-dark(var(--frost1), var(--frost2));
   --text-accent: light-dark(var(--orange), var(--orange));
   --text-accent-hover: var(--color-accent-2);
   --text-error: var(--color-red);
-  --text-faint: light-dark(var(--light0), var(--dark3));
+  --text-faint: light-dark(var(--dark3), var(--light0));
   --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
-  --text-highlight-bg-active: light-dark(var(--green), var(--yellow));
+  --text-highlight-bg-active: light-dark(var(--yellow), var(--green));
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-link: light-dark(var(--frost0), var(--frost0));
-  --text-muted: light-dark(var(--light1), var(--dark2));
-  --text-normal: light-dark(var(--light2), var(--dark1));
+  --text-muted: light-dark(var(--dark2), var(--light1));
+  --text-normal: light-dark(var(--dark1), var(--light2));
   --text-on-accent: white;
   --text-on-accent-inverted: black;
-  --text-selection: light-dark(var(--dark3), var(--light0));
+  --text-selection: light-dark(var(--light0), var(--dark3));
   --text-success: var(--color-green);
-  --text-tag: light-dark(var(--frost0), var(--frost2));
+  --text-tag: light-dark(var(--frost2), var(--frost0));
   --text-title-h1: light-dark(var(--red), var(--red));
-  --text-title-h2: light-dark(var(--orange), var(--dark-orange));
+  --text-title-h2: light-dark(var(--dark-orange), var(--orange));
   --text-title-h3: light-dark(var(--yellow), var(--yellow));
   --text-title-h4: light-dark(var(--green), var(--green));
   --text-title-h5: light-dark(var(--purple), var(--purple));
