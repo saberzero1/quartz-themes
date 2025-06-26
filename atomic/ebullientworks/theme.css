@@ -949,10 +949,6 @@
 }
 
 :root {
-  --background-modifier-active-hover: light-dark(
-    hsla(var(--interactive-accent-hsl), 0.15),
-    hsla(var(--interactive-accent-hsl), 0.15)
-  );
   --background-modifier-border: light-dark(
     var(--gray-dark-9),
     var(--gray-light-1)
@@ -960,15 +956,6 @@
   --background-modifier-border-focus: light-dark(
     var(--gray-dark-10),
     var(--gray)
-  );
-  --background-modifier-border-hover: light-dark(black, var(--gray-light-2));
-  --background-modifier-box-shadow: light-dark(
-    light-dark(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
-    rgba(0, 0, 0, 0.1)
-  );
-  --background-modifier-cover: light-dark(
-    light-dark(rgba(0, 0, 0, 0.8), rgba(220, 220, 220, 0.4)),
-    rgba(220, 220, 220, 0.4)
   );
   --background-modifier-error: light-dark(var(--red-5), var(--red-4));
   --background-modifier-error-hover: light-dark(var(--red-4), var(--red-3));
@@ -980,19 +967,7 @@
     var(--gray-dark-6),
     var(--background-primary)
   );
-  --background-modifier-form-field-highlighted: light-dark(
-    rgba(0, 0, 0, 0.22),
-    rgba(0, 0, 0, 0.22)
-  );
-  --background-modifier-hover: light-dark(
-    rgba(var(--mono-rgb-100), 0.075),
-    rgba(0, 0, 0, 0.075)
-  );
   --background-modifier-info: light-dark(var(--blue-5), var(--blue-4));
-  --background-modifier-message: light-dark(
-    var(--gray-dark-6),
-    rgba(0, 0, 0, 0.9)
-  );
   --background-modifier-success: light-dark(var(--green-5), var(--green-4));
   --background-modifier-success-rgb: light-dark(
     var(--green-5-rgb),
@@ -1010,8 +985,8 @@
   );
   --background-secondary: light-dark(var(--gray-dark-7), var(--gray-light-3));
   --background-secondary-alt: light-dark(
-    light-dark(var(--gray-dark-8), var(--color-base-05)),
-    var(--gray-light-4)
+    var(--color-base-30),
+    var(--color-base-05)
   );
   --calendar-dividing-line: light-dark(
     var(--primary-accent-1),
@@ -1059,106 +1034,26 @@
     var(--accent-s),
     var(--accent-l)
   );
-  --color-base-00: light-dark(
-    light-dark(var(--gray-dark-10), #ffffff),
-    var(--gray-light-8)
-  );
-  --color-base-05: light-dark(
-    light-dark(var(--gray-dark-9), #fcfcfc),
-    var(--gray-light-7)
-  );
-  --color-base-10: light-dark(
-    light-dark(var(--gray-dark-85), #fafafa),
-    var(--gray-light-6)
-  );
-  --color-base-100: light-dark(
-    light-dark(var(--gray-light-1), #222222),
-    var(--gray-dark-8)
-  );
-  --color-base-20: light-dark(
-    light-dark(var(--gray-dark-8), #f6f6f6),
-    var(--gray-light-5)
-  );
-  --color-base-25: light-dark(
-    light-dark(var(--gray-dark-75), #e3e3e3),
-    var(--gray-light-3)
-  );
-  --color-base-30: light-dark(
-    light-dark(var(--gray-dark-7), #e0e0e0),
-    var(--gray-light-2)
-  );
-  --color-base-35: light-dark(
-    light-dark(var(--gray-dark-6), #d4d4d4),
-    var(--gray-light-1)
-  );
-  --color-base-40: light-dark(
-    light-dark(var(--gray-dark-5), #bdbdbd),
-    var(--gray)
-  );
-  --color-base-50: light-dark(
-    light-dark(var(--gray-dark-3), #ababab),
-    var(--gray-dark-1)
-  );
-  --color-base-60: light-dark(
-    light-dark(var(--gray-dark-1), #707070),
-    var(--gray-dark-3)
-  );
-  --color-base-70: light-dark(
-    light-dark(var(--gray), #5c5c5c),
-    var(--gray-dark-4)
-  );
-  --color-blue: light-dark(light-dark(var(--blue-2), #086ddd), var(--blue-4));
-  --color-blue-rgb: light-dark(
-    light-dark(var(--blue-2-rgb), 8, 109, 221),
-    var(--blue-4-rgb)
-  );
-  --color-cyan: light-dark(light-dark(var(--cyan-2), #00bfbc), var(--cyan-4));
-  --color-cyan-rgb: light-dark(
-    light-dark(var(--cyan-2-rgb), 0, 191, 188),
-    var(--cyan-4-rgb)
-  );
-  --color-green: light-dark(
-    light-dark(var(--green-2), #08b94e),
-    var(--green-4)
-  );
-  --color-green-rgb: light-dark(
-    light-dark(var(--green-2-rgb), 8, 185, 78),
-    var(--green-4-rgb)
-  );
-  --color-orange: light-dark(
-    light-dark(var(--orange-2), #ec7500),
-    var(--orange-4)
-  );
-  --color-orange-rgb: light-dark(
-    light-dark(var(--orange-2-rgb), 236, 117, 0),
-    var(--orange-4-rgb)
-  );
-  --color-pink: light-dark(light-dark(var(--pink-2), #d53984), var(--pink-4));
-  --color-pink-rgb: light-dark(
-    light-dark(var(--pink-2-rgb), 213, 57, 132),
-    var(--pink-4-rgb)
-  );
-  --color-purple: light-dark(
-    light-dark(var(--purple-2), #7852ee),
-    var(--purple-4)
-  );
-  --color-purple-rgb: light-dark(
-    light-dark(var(--purple-2-rgb), 120, 82, 238),
-    var(--purple-4-rgb)
-  );
-  --color-red: light-dark(light-dark(var(--red-2), #e93147), var(--red-4));
-  --color-red-rgb: light-dark(
-    light-dark(var(--red-2-rgb), 233, 49, 71),
-    var(--red-4-rgb)
-  );
-  --color-yellow: light-dark(
-    light-dark(var(--yellow-2), #e0ac00),
-    var(--yellow-3)
-  );
-  --color-yellow-rgb: light-dark(
-    light-dark(var(--yellow-2-rgb), 224, 172, 0),
-    var(--yellow-3-rgb)
-  );
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --day-planner-timeline-fg: light-dark(
     var(--primary-accent-3),
     var(--primary-accent-1)
@@ -1167,12 +1062,10 @@
     var(--tab-outline-color),
     var(--gray-dark-3)
   );
-  --ebw-row-alt: light-dark(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.05));
   --ebw-tab-title-active-bg: light-dark(
     var(--secondary-accent-5),
     var(--secondary-accent-4)
   );
-  --ebw-tab-title-active-fg: light-dark(var(--text-normal), white);
   --ebw-tab-title-active-focused-bg: light-dark(
     var(--primary-accent-5),
     var(--primary-accent-4)
@@ -1180,10 +1073,6 @@
   --ebw-tab-title-inactive-bg: light-dark(
     var(--gray-dark-4),
     var(--gray-dark-3)
-  );
-  --ebw-table-header-alt: light-dark(
-    var(--primary-accent-4),
-    rgba(var(--primary-accent-4-rgb), 0.4)
   );
   --graph-line: light-dark(var(--gray-dark-5), var(--gray-light-1));
   --graph-node: light-dark(var(--primary-accent-4), var(--primary-accent-2));
@@ -1215,7 +1104,6 @@
     var(--secondary-accent-4),
     var(--secondary-accent-3)
   );
-  --he-title-bar-active-fg: light-dark(var(--gray-light-6), white);
   --he-title-bar-active-pinned-bg: light-dark(
     var(--primary-accent-4),
     var(--primary-accent-3)
@@ -1231,31 +1119,6 @@
   --he-title-bar-inactive-pinned-bg: light-dark(
     var(--gray-dark-3),
     var(--gray-dark-1)
-  );
-  --highlight-mix-blend-mode: light-dark(darken, darken);
-  --input-shadow: light-dark(
-    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2),
-    0 0 0 0 transparent,
-    inset 0 0 0 1px rgba(0, 0, 0, 0.12),
-    0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
-    0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent
-  );
-  --input-shadow-hover: light-dark(
-    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(0, 0, 0, 0.3),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4),
-    0 0 0 0 transparent,
-    inset 0 0 0 1px rgba(0, 0, 0, 0.17),
-    0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
-    0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent
   );
   --interactive-accent: light-dark(
     var(--primary-accent-5),
@@ -1283,10 +1146,7 @@
   );
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
-  --modifier-text: light-dark(var(--gray-light-8), white);
   --modifier-text-accent: light-dark(var(--gray-light-7), var(--gray-light-7));
-  --mono-rgb-0: light-dark(0, 0, 0, 255, 255, 255);
-  --mono-rgb-100: light-dark(255, 255, 255, 0, 0, 0);
   --page-border: 9px solid transparent;
   --page-margin: 1px auto -8px;
   --pdfViewer-padding-bottom: 0;
@@ -1294,22 +1154,6 @@
   --safe-area-inset-left: env(safe-area-inset-left);
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
-  --shadow-l: light-dark(
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2),
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2)
-  );
-  --shadow-s: light-dark(
-    0px 1px 2px rgba(0, 0, 0, 0.121),
-    0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3),
-    0px 1px 2px rgba(0, 0, 0, 0.028),
-    0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07)
-  );
   --spreadHorizontalWrapped-margin-LR: -3.5px;
   --table-header-background: light-dark(
     var(--primary-accent-5),
@@ -1323,10 +1167,6 @@
   );
   --text-error: light-dark(var(--red-3), var(--red-4));
   --text-faint: light-dark(var(--gray-dark-1), var(--gray-dark-1));
-  --text-highlight-bg: light-dark(
-    var(--primary-accent-2),
-    rgba(var(--text-highlight-bg-rgb), 0.2)
-  );
   --text-highlight-bg-rgb: light-dark(
     var(--primary-accent-2-rgb),
     var(--primary-accent-4-rgb)
@@ -1335,10 +1175,6 @@
   --text-muted: light-dark(var(--gray), var(--gray-dark-4));
   --text-normal: light-dark(var(--gray-light-1), var(--gray-dark-5));
   --text-on-accent: light-dark(var(--gray-light-8), var(--gray-light-8));
-  --text-selection: light-dark(
-    rgba(var(--primary-accent-4-rgb), 0.2),
-    rgba(var(--secondary-accent-4-rgb), 0.2)
-  );
   --text-success: light-dark(var(--green-3), var(--green-4));
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;

@@ -1,5 +1,4 @@
 :root {
-  --active-line-bg: light-dark(rgba(255, 255, 255, 0.04), rgba(0, 0, 0, 0.035));
   --ax1: light-dark(
     hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
     hsl(var(--accent-h), var(--accent-s), var(--accent-l))
@@ -17,30 +16,6 @@
   --background-modifier-border: light-dark(var(--ui1), var(--ui1));
   --background-modifier-border-focus: light-dark(var(--ui3), var(--ui3));
   --background-modifier-border-hover: light-dark(var(--ui2), var(--ui2));
-  --background-modifier-box-shadow: light-dark(
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.1)
-  );
-  --background-modifier-cover: light-dark(
-    light-dark(
-      hsla(var(--base-h), var(--base-s), calc(var(--base-l) - 12%), 0.5),
-      rgba(220, 220, 220, 0.4)
-    ),
-    hsla(
-      var(--base-h),
-      calc(var(--base-s) - 70%),
-      calc(var(--base-l) - 20%),
-      0.5
-    )
-  );
-  --background-modifier-error: light-dark(
-    rgba(255, 20, 20, 0.12),
-    rgba(255, 0, 0, 0.14)
-  );
-  --background-modifier-error-hover: light-dark(
-    rgba(255, 20, 20, 0.18),
-    rgba(255, 0, 0, 0.08)
-  );
   --background-modifier-form-field: light-dark(var(--bg1), var(--bg1));
   --background-modifier-form-field-highlighted: light-dark(
     var(--bg1),
@@ -55,20 +30,14 @@
   --background-primary-alt: light-dark(var(--bg2), var(--bg2));
   --background-secondary: light-dark(var(--bg2), var(--bg2));
   --background-secondary-alt: light-dark(
-    light-dark(var(--bg1), var(--color-base-05)),
-    var(--bg1)
+    var(--color-base-30),
+    var(--color-base-05)
   );
   --background-table-rows: light-dark(var(--bg2), var(--bg2));
-  --bg1: light-dark(hsl(var(--base-h), var(--base-s), var(--base-l)), white);
   --bg2: light-dark(
     hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 2%)),
     hsl(var(--base-h), var(--base-s), var(--base-l))
   );
-  --bg3: light-dark(
-    hsla(var(--base-h), var(--base-s), calc(var(--base-l) + 40%), 0.12),
-    hsla(var(--base-h), var(--base-s), calc(var(--base-l) - 50%), 0.12)
-  );
-  --btn-shadow-color: light-dark(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.05));
   --checkbox-color: light-dark(var(--ax3), var(--ax3));
   --code-normal: light-dark(var(--tx1), var(--tx1));
   --color-accent: light-dark(
@@ -120,28 +89,16 @@
   --color-base-60: light-dark(#999999, #707070);
   --color-base-70: light-dark(#b3b3b3, #5c5c5c);
   --color-blue: light-dark(#027aff, #086ddd);
-  --color-blue-rgb: light-dark(2, 122, 255, 8, 109, 221);
   --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-cyan-rgb: light-dark(83, 223, 221, 0, 191, 188);
   --color-green: light-dark(#44cf6e, #08b94e);
-  --color-green-rgb: light-dark(68, 207, 110, 8, 185, 78);
   --color-orange: light-dark(#e9973f, #ec7500);
-  --color-orange-rgb: light-dark(233, 151, 63, 236, 117, 0);
   --color-pink: light-dark(#fa99cd, #d53984);
-  --color-pink-rgb: light-dark(250, 153, 205, 213, 57, 132);
   --color-purple: light-dark(#a882ff, #7852ee);
-  --color-purple-rgb: light-dark(168, 130, 255, 120, 82, 238);
   --color-red: light-dark(#fb464c, #e93147);
-  --color-red-rgb: light-dark(251, 70, 76, 233, 49, 71);
   --color-yellow: light-dark(#e0de71, #e0ac00);
-  --color-yellow-rgb: light-dark(224, 222, 113, 224, 172, 0);
   --divider-color: light-dark(var(--ui1), var(--ui1));
   --focus-animation-duration: 0.1s;
   --frame-background-h: light-dark(var(--accent-h), var(--accent-h));
-  --frame-background-l: light-dark(
-    calc(var(--accent-l) - 25%),
-    calc(var(--accent-l) + 30%)
-  );
   --frame-background-s: light-dark(var(--accent-s), var(--accent-s));
   --frame-divider-color: light-dark(var(--ui1), var(--ui1));
   --frame-muted-color: light-dark(
@@ -156,72 +113,22 @@
       calc(var(--frame-background-l) - 35%)
     )
   );
-  --frame-outline-color: light-dark(
-    hsla(
-      var(--frame-background-h),
-      calc(var(--frame-background-s) - 2%),
-      calc(var(--frame-background-l) + 6.5%),
-      1
-    ),
-    hsla(
-      var(--frame-background-h),
-      var(--frame-background-s),
-      calc(var(--frame-background-l) - 6.5%),
-      1
-    )
-  );
   --hider-ribbon-display: none;
-  --highlight-mix-blend-mode: light-dark(darken, darken);
-  --hl1: light-dark(
-    hsla(var(--accent-h), 50%, 40%, 30%),
-    hsla(var(--accent-h), 50%, calc(var(--base-l) - 20%), 30%)
-  );
-  --hl2: light-dark(rgba(255, 177, 80, 0.3), rgba(255, 225, 0, 0.5));
   --icon-color: light-dark(var(--tx2), var(--tx2));
   --icon-color-active: light-dark(var(--tx1), var(--tx1));
   --icon-color-focused: light-dark(var(--tx1), var(--tx1));
   --icon-color-hover: light-dark(var(--tx2), var(--tx2));
   --icon-hex: light-dark(var(--mono0), var(--mono0));
   --image-mix: normal;
-  --input-shadow: light-dark(
-    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2),
-    0 0 0 0 transparent,
-    inset 0 0 0 1px rgba(0, 0, 0, 0.12),
-    0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
-    0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent
-  );
-  --input-shadow-hover: light-dark(
-    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(0, 0, 0, 0.3),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4),
-    0 0 0 0 transparent,
-    inset 0 0 0 1px rgba(0, 0, 0, 0.17),
-    0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
-    0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent
-  );
   --interactive-accent: light-dark(var(--ax3), var(--ax3));
   --interactive-accent-hover: light-dark(var(--ax1), var(--ax1));
-  --interactive-accent-rgb: light-dark(66, 66, 66, 220, 220, 220);
   --interactive-hover: light-dark(var(--ui1), var(--ui1));
   --interactive-normal: light-dark(var(--bg3), var(--bg1));
   --keyboard-height: 0px;
-  --leaflet-borders: light-dark(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
   --leaflet-buttons: light-dark(var(--bg2), var(--bg1));
   --list-marker-color: light-dark(var(--tx3), var(--tx3));
   --loading-icon-delay: 400ms;
   --mobile-sidebar-background: light-dark(var(--bg1), var(--bg1));
-  --mono-rgb-0: light-dark(0, 0, 0, 255, 255, 255);
-  --mono-rgb-100: light-dark(255, 255, 255, 0, 0, 0);
-  --mono0: light-dark(black, white);
-  --mono100: light-dark(white, black);
   --nav-collapse-icon-color: light-dark(var(--tx2), var(--tx2));
   --nav-collapse-icon-color-collapsed: light-dark(var(--tx2), var(--tx2));
   --nav-indentation-guide-color: light-dark(var(--ui1), var(--ui1));
@@ -243,27 +150,8 @@
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
   --scrollbar-active-thumb-bg: light-dark(var(--ui3), var(--ui3));
-  --scrollbar-bg: light-dark(transparent, transparent);
   --scrollbar-thumb-bg: light-dark(var(--ui1), var(--ui1));
   --search-result-background: light-dark(var(--bg1), var(--bg1));
-  --shadow-color: light-dark(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
-  --shadow-l: light-dark(
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2),
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2)
-  );
-  --shadow-s: light-dark(
-    0px 1px 2px rgba(0, 0, 0, 0.121),
-    0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3),
-    0px 1px 2px rgba(0, 0, 0, 0.028),
-    0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07)
-  );
-  --sp1: light-dark(white, white);
   --spreadHorizontalWrapped-margin-LR: -3.5px;
   --tab-outline-color: light-dark(var(--ui1), var(--ui1));
   --tab-text-color-focused-active: light-dark(var(--tx1), var(--tx1));
@@ -276,10 +164,6 @@
   --text-faint: light-dark(var(--tx3), var(--tx3));
   --text-formatting: light-dark(var(--tx3), var(--tx3));
   --text-highlight-bg: light-dark(var(--hl2), var(--hl2));
-  --text-highlight-bg-active: light-dark(
-    rgba(255, 255, 255, 0.1),
-    rgba(0, 0, 0, 0.1)
-  );
   --text-italic: light-dark(var(--tx1), var(--tx1));
   --text-muted: light-dark(var(--tx2), var(--tx2));
   --text-normal: light-dark(var(--tx1), var(--tx1));
@@ -321,10 +205,6 @@
   --vault-profile-color: light-dark(var(--tx1), var(--tx1));
   --vault-profile-color-hover: light-dark(var(--tx1), var(--tx1));
   --viewer-container-height: 0;
-  --workspace-background-translucent: light-dark(
-    hsla(var(--base-h), var(--base-s), var(--base-l), 0.7),
-    hsla(var(--base-h), var(--base-s), var(--base-l), 0.7)
-  );
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
 }

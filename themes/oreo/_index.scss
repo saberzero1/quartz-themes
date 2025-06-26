@@ -40,7 +40,7 @@ html[saved-theme="dark"] {
   --code-string: #e6db74;
   --code-tag: #a6e22e;
   --code-value: #ae81ff;
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --color-accent-2: hsl(253, 92.4%, 85.14%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -71,7 +71,7 @@ html[saved-theme="dark"] {
   --tag-border-color-hover: #888888;
   --tag-color: #ffffff;
   --tag-color-hover: #cccccc;
-  --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --text-accent: hsl(255, 89.76%, 75.9%);
   --background-primary: black;
   --bold-color: #cccccc;
   --checkbox-border-color: #666666;
@@ -90,7 +90,7 @@ html[saved-theme="dark"] {
   --code-string: #e6db74;
   --code-tag: #a6e22e;
   --code-value: #ae81ff;
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --color-accent-2: hsl(253, 92.4%, 85.14%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -121,7 +121,7 @@ html[saved-theme="dark"] {
   --tag-border-color-hover: #888888;
   --tag-color: #ffffff;
   --tag-color-hover: #cccccc;
-  --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --text-accent: hsl(255, 89.76%, 75.9%);
 }
 
 :root[saved-theme="light"],
@@ -156,7 +156,7 @@ html[saved-theme="light"] {
   --code-string: #032f62;
   --code-tag: #22863a;
   --code-value: #b31d28;
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -204,7 +204,7 @@ html[saved-theme="light"] {
   --code-string: #032f62;
   --code-tag: #22863a;
   --code-value: #b31d28;
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -404,7 +404,6 @@ html[saved-theme="light"] {
   --checkbox-border-color-hover: light-dark(#999999, #666666);
   --checkbox-color: light-dark(#333333, #e6e6e6);
   --checkbox-color-hover: light-dark(#4d4d4d, #cccccc);
-  --checkbox-marker-color: light-dark(black, white);
   --code-background: light-dark(#2d2d2d, #f5f5f5);
   --code-comment: light-dark(#999988, #6a737d);
   --code-function: light-dark(#a6e22e, #6f42c1);
@@ -417,8 +416,8 @@ html[saved-theme="light"] {
   --code-tag: light-dark(#a6e22e, #22863a);
   --code-value: light-dark(#ae81ff, #b31d28);
   --color-accent-2: light-dark(
-    hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29)),
-    hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15))
+    hsl(253, 92.4%, 85.14%),
+    hsl(255, 89.76%, 75.9%)
   );
   --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
   --color-base-100: light-dark(#dadada, #222222);
@@ -434,7 +433,6 @@ html[saved-theme="light"] {
   --color-red: light-dark(#fb464c, #e93147);
   --h1-color: light-dark(#cccccc, #333333);
   --hr-color: light-dark(#ffffff, #000000);
-  --hr-thickness: light-dark(2px, 2px);
   --icon-color: light-dark(#ffffff, #000000);
   --inline-title-color: light-dark(#ffffff, #000000);
   --interactive-accent-hsl: light-dark(hsl(0, 0%, 40%), hsl(0, 0%, 60%));
@@ -443,7 +441,6 @@ html[saved-theme="light"] {
   --link-color-hover: light-dark(#4682b4, #1c86ee);
   --link-external-color: light-dark(#98fb98, #32cd32);
   --link-external-color-hover: light-dark(#32cd32, #2eb82e);
-  --link-weight: light-dark(normal, normal);
   --p-spacing: 10px;
   --tag-background: light-dark(#444444, #f0f0f0);
   --tag-background-hover: light-dark(#555555, #e0e0e0);
@@ -484,11 +481,7 @@ body {
   --code-tag: #fb464c;
   --code-value: #a882ff;
   --collapse-icon-color: #666666;
-  --collapse-icon-color-collapsed: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  );
+  --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -521,14 +514,14 @@ body {
   --tag-border-color: hsla(hsl(0, 0%, 40%), 0.15);
   --tag-border-color-hover: hsla(hsl(0, 0%, 40%), 0.15);
   --tag-border-width: 0px;
-  --tag-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --tag-color-hover: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --tag-color: hsl(255, 89.76%, 75.9%);
+  --tag-color-hover: hsl(255, 89.76%, 75.9%);
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-radius: 2em;
   --tag-weight: inherit;
   --text-accent: hsl(258, 88%, 66%);
-  --text-accent-hover: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --text-accent-hover: hsl(253, 92.4%, 85.14%);
   --text-faint: #666666;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-muted: #b3b3b3;
@@ -536,7 +529,7 @@ body {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-user-select: none;
   background-color: black;
-  caret-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  caret-color: hsl(255, 89.76%, 75.9%);
   color: #dadada;
   contain: initial;
   font-family:
@@ -554,7 +547,7 @@ body {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   height: 100%;
   line-height: 1.3;
   margin: 0;
@@ -600,7 +593,7 @@ html[saved-theme="dark"] {
   --code-string: #e6db74;
   --code-tag: #a6e22e;
   --code-value: #ae81ff;
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --color-accent-2: hsl(253, 92.4%, 85.14%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -631,7 +624,7 @@ html[saved-theme="dark"] {
   --tag-border-color-hover: #888888;
   --tag-color: #ffffff;
   --tag-color-hover: #cccccc;
-  --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --text-accent: hsl(255, 89.76%, 75.9%);
   --background-primary: black;
   --bold-color: #cccccc;
   --checkbox-border-color: #666666;
@@ -650,7 +643,7 @@ html[saved-theme="dark"] {
   --code-string: #e6db74;
   --code-tag: #a6e22e;
   --code-value: #ae81ff;
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --color-accent-2: hsl(253, 92.4%, 85.14%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -681,7 +674,7 @@ html[saved-theme="dark"] {
   --tag-border-color-hover: #888888;
   --tag-color: #ffffff;
   --tag-color-hover: #cccccc;
-  --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --text-accent: hsl(255, 89.76%, 75.9%);
 }
 /* END DARK */
 /* START LIGHT */
@@ -717,7 +710,7 @@ html[saved-theme="light"] {
   --code-string: #032f62;
   --code-tag: #22863a;
   --code-value: #b31d28;
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -765,7 +758,7 @@ html[saved-theme="light"] {
   --code-string: #032f62;
   --code-tag: #22863a;
   --code-value: #b31d28;
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -803,14 +796,14 @@ html[saved-theme="light"] {
 html {
   .callout {
     background-color: rgba(158, 158, 158, 0.1);
-    border-color: rgba(158, 158, 158, 0.25);
-    border-radius: 4px;
+    border-color: rgba(158, 158, 158, 1);
+    border-radius: 8px;
     border-style: solid;
-    border-width: 0px;
+    border-width: 2px;
     margin: 1em 0;
     mix-blend-mode: normal;
     overflow: hidden;
-    padding: 12px 24px 12px 12px;
+    padding: 16px;
     background-color: rgba(158, 158, 158, 0.1);
     overflow-x: auto;
     overflow-y: hidden;
@@ -900,23 +893,23 @@ html {
     align-items: flex-start;
     color: rgb(158, 158, 158);
     display: flex;
-    font-size: inherit;
+    font-size: 1.2em;
     gap: 4px;
     line-height: 1.3;
-    padding: 0;
+    padding: 8px;
     & > .callout-title-inner > p {
-      color: #ffffff;
-      font-weight: bold;
+      color: light-dark(#ffffff, #000000);
+      font-weight: 400;
     }
     .callout-title-inner {
-      color: #ffffff;
-      font-weight: bold;
+      color: light-dark(#ffffff, #000000);
+      font-weight: 400;
     }
   }
   & > .callout-content {
     background-color: transparent;
     overflow-x: auto;
-    padding: 0;
+    padding: 12px;
   }
 }
 body {
@@ -1084,105 +1077,105 @@ body {
   }
   /* HEADINGS */
   h1 {
-    color: #cccccc;
+    color: light-dark(#cccccc, #333333);
     font-family: "Arial", sans-serif;
     font-size: 2em;
     font-style: normal;
     font-variant: normal;
-    font-weight: bold;
+    font-weight: 400;
     letter-spacing: -0.015em;
     line-height: 1.5;
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
+    margin-block-end: 10px;
+    margin-block-start: 10px;
   }
   h1 a {
     --link-weight: bold;
   }
   h2 {
-    color: #bbbbbb;
+    color: light-dark(#bbbbbb, #444444);
     font-family: "Arial", sans-serif;
     font-size: 1.75em;
     font-style: normal;
     font-variant: normal;
-    font-weight: bold;
+    font-weight: 400;
     letter-spacing: -0.015em;
     line-height: 1.5;
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
+    margin-block-end: 10px;
+    margin-block-start: 10px;
   }
   h2 a {
     --link-weight: bold;
   }
   h3 {
-    color: #aaaaaa;
+    color: light-dark(#aaaaaa, #555555);
     font-family: "Arial", sans-serif;
     font-size: 1.5em;
     font-style: normal;
     font-variant: normal;
-    font-weight: bold;
+    font-weight: 400;
     letter-spacing: -0.015em;
     line-height: 1.5;
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
+    margin-block-end: 10px;
+    margin-block-start: 10px;
   }
   h3 a {
     --link-weight: bold;
   }
   h4 {
-    color: #999999;
+    color: light-dark(#999999, #666666);
     font-family: "Arial", sans-serif;
     font-size: 1.25em;
     font-style: normal;
     font-variant: normal;
-    font-weight: bold;
+    font-weight: 400;
     letter-spacing: 0.015em;
     line-height: 1.5;
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
+    margin-block-end: 10px;
+    margin-block-start: 10px;
   }
   h4 a {
     --link-weight: bold;
   }
   h5 {
-    color: #888888;
+    color: light-dark(#888888, #777777);
     font-family: "Arial", sans-serif;
     font-size: 1em;
     font-style: normal;
     font-variant: normal;
-    font-weight: bold;
+    font-weight: 400;
     letter-spacing: 0.015em;
     line-height: 1.5;
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
+    margin-block-end: 10px;
+    margin-block-start: 10px;
   }
   h5 a {
     --link-weight: bold;
   }
   h6 {
-    color: #777777;
+    color: light-dark(#777777, #888888);
     font-family: "Arial", sans-serif;
     font-size: 0.875em;
     font-style: normal;
     font-variant: normal;
-    font-weight: bold;
+    font-weight: 400;
     letter-spacing: 0.015em;
     line-height: 1.5;
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
+    margin-block-end: 10px;
+    margin-block-start: 10px;
   }
   h6 a {
     --link-weight: bold;
   }
   /* CODE */
   pre {
-    background-color: #2d2d2d;
+    background-color: light-dark(#2d2d2d, #f5f5f5);
     border: 0px solid transparent;
     border-radius: 4px;
     min-height: 38px;
     overflow-x: auto;
     padding: 12px 16px;
     position: relative;
-    white-space: pre-wrap;
+    white-space: pre;
     white-space: pre;
     & > code {
       background-color: transparent;
@@ -1192,15 +1185,15 @@ body {
   }
   code {
     -webkit-box-decoration-break: clone;
-    background-color: #2d2d2d;
+    background-color: light-dark(#2d2d2d, #f5f5f5);
     border: 0px solid transparent;
     border-radius: 4px;
-    color: #ffffff;
+    color: light-dark(#ffffff, #000000);
     font-family:
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
       "Source Code Pro", monospace;
-    font-size: 1em;
+    font-size: 14px;
     padding: 0.15em 0.3em;
     background-color: var(--code-background);
     //color: var(--code-color);
@@ -1272,7 +1265,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-size: calc(16px * 0.8);
+    font-size: 12px;
     height: auto;
     inset-inline-end: 0;
     margin: 6px;
@@ -1288,7 +1281,7 @@ body {
   }
   /* METADATA */
   .content-meta {
-    color: #ffffff;
+    color: light-dark(#ffffff, #000000);
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {
@@ -1297,20 +1290,20 @@ body {
   /* BACKLINKS */
   .backlinks {
     h3 {
-      color: #aaaaaa;
+      color: light-dark(#aaaaaa, #555555);
       font-family: "Arial", sans-serif;
       font-size: 1.5em;
       font-style: normal;
       font-variant: normal;
-      font-weight: bold;
+      font-weight: 400;
       letter-spacing: -0.015em;
       line-height: 1.5;
-      margin-block-end: 0rem;
-      margin-block-start: 0rem;
+      margin-block-end: 10px;
+      margin-block-start: 10px;
     }
     ul li {
-      color: #ffffff;
-      font-weight: 500;
+      color: light-dark(#ffffff, #000000);
+      font-weight: bold;
     }
   }
   /* EXPLORER */
@@ -1323,7 +1316,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: #bbbbbb;
+      color: light-dark(#bbbbbb, #444444);
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1332,7 +1325,7 @@ body {
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
-        color: #000000;
+        color: light-dark(#ffffff, #000000);
         text-overflow: ellipsis;
         position: relative;
         & > svg {
@@ -1364,29 +1357,29 @@ body {
         -webkit-mask-image: var(--folder-open-icon);
       }
       .folder-outer > ul.content {
-        border-inline-start: 1px solid #666666;
+        border-inline-start: 1px solid light-dark(#666666, #cccccc);
         margin-bottom: 1px;
-        margin-inline-start: 12px;
-        padding-inline-start: 4px;
+        margin-inline-start: 16px;
+        padding-inline-start: 16px;
       }
       ul.explorer-ul li {
         text-overflow: ellipsis;
         position: relative;
         a {
           border-radius: 4px;
-          color: #dadada;
+          color: light-dark(#ffffff, #000000);
           cursor: pointer;
           display: flex;
-          font-size: 16px;
-          font-weight: inherit;
+          font-size: 14px;
+          font-weight: normal;
           line-height: 1.3;
           margin-bottom: 2px;
-          padding: 6px 8px 6px 24px;
+          padding: 8px;
           &.active,
           &:hover {
-            background-color: #666666;
-            color: #00ffff;
-            font-weight: inherit;
+            background-color: light-dark(#666666, #d0d0d0);
+            color: light-dark(#00ffff, #7c7cff);
+            font-weight: bold;
           }
           &[data-for$="/index"] {
             padding-inline-start: 8px;
@@ -1412,29 +1405,29 @@ body {
   }
   /* TOC */
   .toc {
-    color: #aaaaaa;
+    color: light-dark(#aaaaaa, #555555);
     button.toc-header {
       h3 {
-        color: #aaaaaa;
+        color: light-dark(#aaaaaa, #555555);
         font-family: "Arial", sans-serif;
         font-size: 1.5em;
         font-style: normal;
         font-variant: normal;
-        font-weight: bold;
+        font-weight: 400;
         letter-spacing: -0.015em;
         line-height: 1.5;
-        margin-block-end: 0rem;
-        margin-block-start: 0rem;
+        margin-block-end: 10px;
+        margin-block-start: 10px;
       }
-      color: #aaaaaa;
+      color: light-dark(#aaaaaa, #555555);
       color: inherit;
     }
     ul.toc-content.overflow {
       li,
       li > a {
-        color: #dadada;
-        font-weight: inherit;
-        font-size: 16px;
+        color: light-dark(#ffffff, #000000);
+        font-weight: normal;
+        font-size: 14px;
       }
     }
   }
@@ -1443,16 +1436,16 @@ body {
   .graph,
   .toc {
     h3 {
-      color: #aaaaaa;
+      color: light-dark(#aaaaaa, #555555);
       font-family: "Arial", sans-serif;
       font-size: 1.5em;
       font-style: normal;
       font-variant: normal;
-      font-weight: bold;
+      font-weight: 400;
       letter-spacing: -0.015em;
       line-height: 1.5;
-      margin-block-end: 0rem;
-      margin-block-start: 0rem;
+      margin-block-end: 10px;
+      margin-block-start: 10px;
       min-height: calc(2 * var(--p-spacing) + var(--h3-line-height));
     }
   }
@@ -1506,11 +1499,11 @@ body {
     & > .search-button {
       -webkit-app-region: no-drag;
       background: transparent;
-      border: 1px solid transparent;
+      border: 2px solid transparent;
       border-radius: 5px;
       color: #dadada;
       font-family: inherit;
-      font-size: calc(16px * 0.937);
+      font-size: 13px;
       height: 40px;
       outline: none;
       padding: 4px 8px;
@@ -1522,7 +1515,7 @@ body {
     & > .search-container {
       & > .search-space {
         background-color: black;
-        border: 0.5pt solid #444444;
+        border: 2px solid light-dark(#444444, #cccccc);
         border-radius: 12px;
         box-shadow:
           0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
@@ -1534,8 +1527,8 @@ body {
           border: none;
           border-bottom: 1px solid #1a1a1a;
           border-radius: 0;
-          font-size: 16px;
-          height: 48px;
+          font-size: 15px;
+          height: 40px;
           padding: 24px;
           padding-inline-end: 48px;
           width: 100%;
@@ -1579,7 +1572,7 @@ body {
                 background-color: transparent;
                 color: #dadada;
                 &.match-tag {
-                  color: #ffffff;
+                  color: light-dark(#ffffff, #000000);
                 }
               }
             }

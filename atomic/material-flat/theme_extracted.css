@@ -1,22 +1,8 @@
 :root {
   --background: light-dark(#1c1b1e, #fffbff);
   --background-modifier-border: light-dark(var(--surface), #fff);
-  --background-modifier-box-shadow: light-dark(
-    light-dark(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
-    rgba(0, 0, 0, 0.1)
-  );
-  --background-modifier-cover: light-dark(
-    light-dark(rgba(0, 0, 0, 0.8), rgba(220, 220, 220, 0.4)),
-    rgba(0, 0, 0, 0.8)
-  );
   --background-modifier-error: light-dark(var(--error), var(--error));
   --background-modifier-error-hover: light-dark(#470000, #b00020);
-  --background-modifier-error-rgb: light-dark(61, 0, 0, 230, 135, 135);
-  --background-modifier-form-field: light-dark(rgba(0, 0, 0, 0.3), #fff);
-  --background-modifier-form-field-highlighted: light-dark(
-    rgba(0, 0, 0, 0.22),
-    #fff
-  );
   --background-modifier-success: light-dark(#197300, #a4e7c3);
   --background-primary: light-dark(var(--background), var(--background));
   --background-primary-alt: light-dark(var(--surface1), var(--surface1));
@@ -25,8 +11,8 @@
     var(--surface-variant)
   );
   --background-secondary-alt: light-dark(
-    light-dark(var(--surface3), var(--color-base-05)),
-    var(--surface3)
+    var(--color-base-30),
+    var(--color-base-05)
   );
   --big-radius: 24px;
   --bold: 650;
@@ -79,21 +65,13 @@
   --color-base-60: light-dark(#999999, #707070);
   --color-base-70: light-dark(#b3b3b3, #5c5c5c);
   --color-blue: light-dark(#027aff, #086ddd);
-  --color-blue-rgb: light-dark(2, 122, 255, 8, 109, 221);
   --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-cyan-rgb: light-dark(83, 223, 221, 0, 191, 188);
   --color-green: light-dark(#44cf6e, #08b94e);
-  --color-green-rgb: light-dark(68, 207, 110, 8, 185, 78);
   --color-orange: light-dark(#e9973f, #ec7500);
-  --color-orange-rgb: light-dark(233, 151, 63, 236, 117, 0);
   --color-pink: light-dark(#fa99cd, #d53984);
-  --color-pink-rgb: light-dark(250, 153, 205, 213, 57, 132);
   --color-purple: light-dark(#a882ff, #7852ee);
-  --color-purple-rgb: light-dark(168, 130, 255, 120, 82, 238);
   --color-red: light-dark(#fb464c, #e93147);
-  --color-red-rgb: light-dark(251, 70, 76, 233, 49, 71);
   --color-yellow: light-dark(#e0de71, #e0ac00);
-  --color-yellow-rgb: light-dark(224, 222, 113, 224, 172, 0);
   --elevation1: 0.05;
   --elevation2: 0.08;
   --elevation3: 0.11;
@@ -108,33 +86,8 @@
   --h4: 1.5em;
   --h5: 1.375em;
   --h6: 1em;
-  --highlight-mix-blend-mode: light-dark(light-dark(lighten, darken), darken);
   --hover: light-dark(var(--surface2), var(--surface2));
   --hr-color: light-dark(var(--surface-variant), var(--surface-variant));
-  --input-shadow: light-dark(
-    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2),
-    0 0 0 0 transparent,
-    inset 0 0 0 1px rgba(0, 0, 0, 0.12),
-    0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
-    0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent
-  );
-  --input-shadow-hover: light-dark(
-    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(0, 0, 0, 0.3),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4),
-    0 0 0 0 transparent,
-    inset 0 0 0 1px rgba(0, 0, 0, 0.17),
-    0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
-    0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent
-  );
   --interactive-accent: light-dark(var(--primary), var(--primary));
   --interactive-accent-hover: light-dark(var(--primary), var(--primary));
   --interactive-accent-rgb: light-dark(var(--primary), var(--primary));
@@ -160,8 +113,6 @@
   --loading-icon-delay: 400ms;
   --medium: 500;
   --medium-radius: 16px;
-  --mono-rgb-0: light-dark(0, 0, 0, 255, 255, 255);
-  --mono-rgb-100: light-dark(255, 255, 255, 0, 0, 0);
   --on-accent: light-dark(var(--background), var(--text-muted));
   --on-background: light-dark(var(--on-background), #1c1b1e);
   --on-primary: light-dark(var(--on-primary), #ffffff);
@@ -179,51 +130,19 @@
   --page-margin: 1px auto -8px;
   --pdfViewer-padding-bottom: 0;
   --primary: light-dark(#cabeff, #5f4bbd);
-  --primary-b: light-dark(255, 189);
   --primary-container: light-dark(var(--primary-container), #e7deff);
-  --primary-g: light-dark(190, 75);
-  --primary-r: light-dark(202, 95);
   --primaryInverse: light-dark(#5f4bbd, #cabeff);
   --regular: 400;
   --safe-area-inset-bottom: env(safe-area-inset-bottom);
   --safe-area-inset-left: env(safe-area-inset-left);
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
-  --scrollbar-active-thumb-bg: light-dark(
-    rgba(255, 255, 255, 0.2),
-    rgba(0, 0, 0, 0.2)
-  );
-  --scrollbar-bg: light-dark(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.05));
-  --scrollbar-thumb-bg: light-dark(
-    rgba(255, 255, 255, 0.1),
-    rgba(0, 0, 0, 0.1)
-  );
   --secondary: light-dark(#c9c3dc, #605c71);
   --secondary-container: light-dark(var(--secondary-container), #e6dff9);
-  --shadow-l: light-dark(
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2),
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2)
-  );
-  --shadow-s: light-dark(
-    0px 1px 2px rgba(0, 0, 0, 0.121),
-    0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3),
-    0px 1px 2px rgba(0, 0, 0, 0.028),
-    0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07)
-  );
   --small-radius: 8px;
   --smaller: 0.875em;
   --smallest: 0.75em;
   --spreadHorizontalWrapped-margin-LR: -3.5px;
-  --surface: light-dark(light-dark(#1c1b1e, #fffbff), #fffbff);
-  --surface-b: light-dark(30, 255);
-  --surface-g: light-dark(27, 251);
-  --surface-r: light-dark(28, 255);
   --surface-variant: light-dark(var(--surface-variant), #e5e0eb);
   --surface1: light-dark(
     rgb(
@@ -388,21 +307,12 @@
     var(--surface-variant),
     var(--surface-variant)
   );
-  --text-highlight-bg-active: light-dark(
-    rgba(255, 128, 0, 0.4),
-    rgba(255, 128, 0, 0.4)
-  );
   --text-muted: light-dark(
     var(--on-surface-variant),
     var(--on-surface-variant)
   );
-  --text-muted-rgb: light-dark(153, 153, 153, 136, 136, 136);
   --text-normal: light-dark(var(--on-background), var(--on-background));
   --text-on-accent: light-dark(var(--background), var(--text-muted));
-  --text-selection: light-dark(
-    rgba(23, 48, 77, 0.99),
-    rgba(204, 230, 255, 0.99)
-  );
   --titlebar-text-color-focused: var(--text-normal);
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;

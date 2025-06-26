@@ -1,20 +1,9 @@
 :root {
   --background-modifier-border: light-dark(rgb(45, 45, 46), rgb(97, 96, 96));
-  --background-modifier-box-shadow: light-dark(
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.1)
-  );
-  --background-modifier-cover: light-dark(
-    rgba(10, 10, 10, 0.4),
-    rgba(220, 220, 220, 0.4)
-  );
   --background-primary: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
   --background-primary-alt: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
   --background-secondary: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
-  --background-secondary-alt: light-dark(
-    light-dark(rgb(45, 45, 46), #212121),
-    rgb(97, 96, 96)
-  );
+  --background-secondary-alt: light-dark(#363636, #212121);
   --bold-color: light-dark(rgb(235, 203, 139), rgb(163, 190, 140));
   --calendar-background-hover: light-dark(rgb(76, 86, 106), rgb(97, 96, 96));
   --calendar-hover: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
@@ -24,20 +13,16 @@
   --checkbox-border-color-hover: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
   --checkbox-color: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
   --checkbox-color-hover: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
-  --checklist-done-color: light-dark(
-    rgba(97, 96, 96, 0.5),
-    rgba(45, 45, 46, 0.4)
-  );
   --code-background: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
   --code-normal: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
   --color-accent: light-dark(hsl(354, 42%, 56%), hsl(354, 42%, 56%));
   --color-accent-1: light-dark(
-    hsl(calc(354 - 3), calc(42% * 1.02), calc(56% * 1.15)),
-    hsl(calc(354 - 1), calc(42% * 1.01), calc(56% * 1.075))
+    hsl(351, 42.84%, 64.4%),
+    hsl(353, 42.42%, 60.2%)
   );
   --color-accent-2: light-dark(
-    hsl(calc(354 - 5), calc(42% * 1.05), calc(56% * 1.29)),
-    hsl(calc(354 - 3), calc(42% * 1.02), calc(56% * 1.15))
+    hsl(349, 44.1%, 72.24%),
+    hsl(351, 42.84%, 64.4%)
   );
   --color-accent-hsl: light-dark(354, 42%, 56%, 354, 42%, 56%);
   --color-base-00: light-dark(#1e1e1e, #ffffff);
@@ -52,72 +37,14 @@
   --color-base-50: light-dark(#666666, #ababab);
   --color-base-60: light-dark(#999999, #707070);
   --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(
-    light-dark(rgb(94, 129, 172), #086ddd),
-    rgb(94, 129, 172)
-  );
-  --color-blue-rgb: light-dark(
-    light-dark(94, 129, 172, 8, 109, 221),
-    94,
-    129,
-    172
-  );
-  --color-cyan: light-dark(
-    light-dark(rgb(97, 96, 96), #00bfbc),
-    rgb(97, 96, 96)
-  );
-  --color-cyan-rgb: light-dark(light-dark(97, 96, 96, 0, 191, 188), 97, 96, 96);
-  --color-green: light-dark(
-    light-dark(rgb(163, 190, 140), #08b94e),
-    rgb(163, 190, 140)
-  );
-  --color-green-rgb: light-dark(
-    light-dark(163, 190, 140, 8, 185, 78),
-    163,
-    190,
-    140
-  );
-  --color-orange: light-dark(
-    light-dark(rgb(208, 135, 112), #ec7500),
-    rgb(208, 135, 112)
-  );
-  --color-orange-rgb: light-dark(
-    light-dark(208, 135, 112, 236, 117, 0),
-    208,
-    135,
-    112
-  );
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
   --color-pink: light-dark(#fa99cd, #d53984);
-  --color-pink-rgb: light-dark(250, 153, 205, 213, 57, 132);
-  --color-purple: light-dark(
-    light-dark(rgb(180, 142, 173), #7852ee),
-    rgb(180, 142, 173)
-  );
-  --color-purple-rgb: light-dark(
-    light-dark(180, 142, 173, 120, 82, 238),
-    180,
-    142,
-    173
-  );
-  --color-red: light-dark(
-    light-dark(rgb(97, 96, 96), #e93147),
-    rgb(97, 96, 96)
-  );
-  --color-red-rgb: light-dark(light-dark(97, 96, 96, 233, 49, 71), 97, 96, 96);
-  --color-yellow: light-dark(
-    light-dark(rgb(235, 203, 139), #e0ac00),
-    rgb(235, 203, 139)
-  );
-  --color-yellow-rgb: light-dark(
-    light-dark(235, 203, 139, 224, 172, 0),
-    235,
-    203,
-    139
-  );
-  --cursor-line-background: light-dark(
-    rgba(rgb(33, 34, 36), 0.5),
-    rgba(97, 96, 96, 0.2)
-  );
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --dark0: rgb(33, 34, 36);
   --dark0_x: 33, 34, 36;
   --dark1: rgb(33, 34, 36);
@@ -129,19 +56,7 @@
   --dark4: rgb(76, 86, 106);
   --dark4_x: 33, 34, 36;
   --dataview-key: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
-  --dataview-key-background: light-dark(
-    rgba(97, 96, 96, 0.3),
-    rgba(97, 96, 96, 0.3)
-  );
   --dataview-value: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
-  --dataview-value-background: light-dark(
-    rgba(97, 96, 96, 0.3),
-    rgba(97, 96, 96, 0.3)
-  );
-  --flashing-background: light-dark(
-    rgba(97, 96, 96, 0.3),
-    rgba(97, 96, 96, 0.3)
-  );
   --frost0: rgb(97, 96, 96);
   --frost0_x: 97, 96, 96;
   --frost1: rgb(97, 96, 96);
@@ -162,34 +77,9 @@
   --h4-color: light-dark(rgb(180, 142, 173), rgb(180, 142, 173));
   --h5-color: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
   --h6-color: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
-  --highlight-mix-blend-mode: light-dark(darken, darken);
   --icon-color-focused: light-dark(rgb(97, 96, 96), rgb(94, 129, 172));
   --icon-color-hover: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
   --inline-title-color: light-dark(rgb(235, 203, 139), rgb(235, 203, 139));
-  --input-shadow: light-dark(
-    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2),
-    0 0 0 0 transparent,
-    inset 0 0 0 1px rgba(0, 0, 0, 0.12),
-    0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
-    0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent
-  );
-  --input-shadow-hover: light-dark(
-    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(0, 0, 0, 0.3),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4),
-    0 0 0 0 transparent,
-    inset 0 0 0 1px rgba(0, 0, 0, 0.17),
-    0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
-    0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent
-  );
   --italic-color: light-dark(rgb(235, 203, 139), rgb(163, 190, 140));
   --keyboard-height: 0px;
   --light0: rgb(97, 96, 96);
@@ -203,12 +93,6 @@
   --loading-icon-delay: 400ms;
   --mermaid-loopline: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
   --mermaid-note: light-dark(rgb(94, 129, 172), rgb(97, 96, 96));
-  --mono-rgb-0: light-dark(0, 0, 0, 255, 255, 255);
-  --mono-rgb-100: light-dark(255, 255, 255, 0, 0, 0);
-  --nav-file-tag: light-dark(
-    rgba(235, 203, 139, 0.9),
-    rgba(208, 135, 112, 0.9)
-  );
   --nav-item-color-active: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
   --nav-item-color-hover: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
   --orange: rgb(208, 135, 112);
@@ -224,45 +108,17 @@
   --safe-area-inset-left: env(safe-area-inset-left);
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
-  --shadow-l: light-dark(
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2),
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2)
-  );
-  --shadow-s: light-dark(
-    0px 1px 2px rgba(0, 0, 0, 0.121),
-    0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3),
-    0px 1px 2px rgba(0, 0, 0, 0.028),
-    0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07)
-  );
   --spreadHorizontalWrapped-margin-LR: -3.5px;
   --tab-text-color-focused-active: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
   --tab-text-color-focused-active-current: light-dark(
     rgb(97, 96, 96),
     rgb(97, 96, 96)
   );
-  --table-header-background: light-dark(
-    hsl(240, 1%, 21%),
-    rgba(97, 96, 96, 0.2)
-  );
   --table-header-background-hover: light-dark(
     hsl(240, 1%, 21%),
     rgb(97, 96, 96)
   );
   --table-row-background-hover: light-dark(rgb(76, 86, 106), rgb(97, 96, 96));
-  --table-row-even-background: light-dark(
-    hsl(30, 2%, 19%),
-    rgba(97, 96, 96, 0.4)
-  );
-  --table-row-odd-background: light-dark(
-    hsl(180, 3%, 16%),
-    rgba(97, 96, 96, 0.8)
-  );
   --tag-background: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
   --tag-background-hover: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
   --tag-color: light-dark(rgb(76, 86, 106), rgb(76, 86, 106));
@@ -273,7 +129,6 @@
   --text-highlight-fg: light-dark(rgb(33, 34, 36), rgb(33, 34, 36));
   --text-muted: light-dark(rgb(97, 96, 96), rgb(33, 34, 36));
   --text-normal: light-dark(rgb(97, 96, 96), rgb(45, 45, 46));
-  --text-selection: light-dark(rgba(97, 96, 96, 0.6), rgba(97, 96, 96, 0.6));
   --titlebar-text-color-focused: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
@@ -374,7 +229,7 @@ body {
   --callout-title-color: inherit;
   --callout-title-padding: 0;
   --callout-title-size: inherit;
-  --callout-title-weight: calc(600 + 200);
+  --callout-title-weight: 800;
   --callout-todo: 94, 129, 172;
   --callout-warning: 208, 135, 112;
   --canvas-background: rgb(33, 34, 36);
@@ -391,11 +246,7 @@ body {
   --checkbox-border-color: rgb(97, 96, 96);
   --checkbox-border-color-hover: rgb(97, 96, 96);
   --checkbox-color: hsl(354, 42%, 56%);
-  --checkbox-color-hover: hsl(
-    calc(354 - 3),
-    calc(42% * 1.02),
-    calc(56% * 1.15)
-  );
+  --checkbox-color-hover: hsl(351, 42.84%, 64.4%);
   --checkbox-margin-inline-start: 0.85em;
   --checkbox-marker-color: rgb(33, 34, 36);
   --checkbox-radius: 0;
@@ -459,7 +310,7 @@ body {
     "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --file-header-font-size: calc(16px * 0.937);
+  --file-header-font-size: 14.992px;
   --file-header-font-weight: 400;
   --file-header-justify: center;
   --file-line-width: 700px;
@@ -576,7 +427,7 @@ body {
   --h6-weight: 600;
   --header-height: 40px;
   --heading-formatting: rgb(97, 96, 96);
-  --heading-spacing: calc(0rem * 2.5);
+  --heading-spacing: 0rem;
   --hr-color: transparent;
   --hr-thickness: 2px;
   --icon-color: rgb(97, 96, 96);
@@ -621,12 +472,8 @@ body {
   --input-height: 30px;
   --input-placeholder-color: rgb(97, 96, 96);
   --input-radius: 5px;
-  --interactive-accent: hsl(calc(354 - 3), calc(42% * 1.02), calc(56% * 1.15));
-  --interactive-accent-hover: hsl(
-    calc(354 - 5),
-    calc(42% * 1.05),
-    calc(56% * 1.29)
-  );
+  --interactive-accent: hsl(351, 42.84%, 64.4%);
+  --interactive-accent-hover: hsl(349, 44.1%, 72.24%);
   --interactive-accent-hsl: 354, 42%, 56%;
   --interactive-hover: #111;
   --interactive-normal: #000;
@@ -665,7 +512,7 @@ body {
   --list-bullet-radius: 50%;
   --list-bullet-size: 0.3em;
   --list-bullet-transform: none;
-  --list-indent: calc(0.5625em * 4);
+  --list-indent: 2.25em;
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
   --list-marker-color: rgb(97, 96, 96);
@@ -701,7 +548,7 @@ body {
     system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-input-font-size: 0.875em;
-  --metadata-input-height: calc(16px * 1.75);
+  --metadata-input-height: 28px;
   --metadata-input-longtext-lines: 3;
   --metadata-input-text-color: rgb(97, 96, 96);
   --metadata-label-background: transparent;
@@ -727,8 +574,8 @@ body {
   --metadata-property-radius: 6px;
   --metadata-property-radius-focus: 6px;
   --metadata-property-radius-hover: 6px;
-  --metadata-sidebar-input-font-size: calc(16px * 0.937);
-  --metadata-sidebar-label-font-size: calc(16px * 0.937);
+  --metadata-sidebar-input-font-size: 14.992px;
+  --metadata-sidebar-label-font-size: 14.992px;
   --modal-background: rgb(33, 34, 36);
   --modal-border-color: #555555;
   --modal-border-width: 0.5pt;
@@ -761,7 +608,7 @@ body {
   --nav-item-color-selected: rgb(97, 96, 96);
   --nav-item-padding: 4px 8px 4px 24px;
   --nav-item-parent-padding: 6px 8px 6px 24px;
-  --nav-item-size: calc(16px * 0.937);
+  --nav-item-size: 14.992px;
   --nav-item-weight: inherit;
   --nav-item-weight-active: inherit;
   --nav-item-weight-hover: inherit;
@@ -820,7 +667,7 @@ body {
   --search-icon-color: rgb(97, 96, 96);
   --search-icon-size: 18px;
   --search-result-background: rgb(33, 34, 36);
-  --sidebar-markdown-font-size: calc(16px * 0.9);
+  --sidebar-markdown-font-size: 14.4px;
   --sidebar-tab-text-display: none;
   --size-2-1: 2px;
   --size-2-2: 4px;
@@ -850,7 +697,7 @@ body {
   --status-bar-background: rgb(33, 34, 36);
   --status-bar-border-color: rgba(0, 0, 0, 0.15);
   --status-bar-border-width: 1px 0 0 1px;
-  --status-bar-font-size: calc(16px * 0.8);
+  --status-bar-font-size: 12.8px;
   --status-bar-position: fixed;
   --status-bar-radius: 8px 0 0 0;
   --status-bar-text-color: rgb(97, 96, 96);
@@ -871,14 +718,14 @@ body {
   --tab-container-background: rgb(33, 34, 36);
   --tab-curve: 6px;
   --tab-divider-color: #3f3f3f;
-  --tab-font-size: calc(16px * 0.937);
+  --tab-font-size: 14.992px;
   --tab-font-weight: 600;
   --tab-max-width: 320px;
   --tab-outline-color: rgba(0, 0, 0, 0.15);
   --tab-outline-width: 1px;
   --tab-radius: 4px;
   --tab-radius-active: 6px 6px 0 0;
-  --tab-stacked-font-size: calc(16px * 0.937);
+  --tab-stacked-font-size: 14.992px;
   --tab-stacked-font-weight: 400;
   --tab-stacked-header-width: 40px;
   --tab-stacked-pane-width: 700px;
@@ -922,7 +769,7 @@ body {
   --table-header-color: rgb(97, 96, 96);
   --table-header-font: inherit;
   --table-header-size: 16px;
-  --table-header-weight: calc(600 + 200);
+  --table-header-weight: 800;
   --table-line-height: 1.3;
   --table-row-alt-background: transparent;
   --table-row-alt-background-hover: transparent;
@@ -951,7 +798,7 @@ body {
   --tag-size: 0.875em;
   --tag-weight: inherit;
   --text-accent: hsl(354, 42%, 56%);
-  --text-accent-hover: hsl(calc(354 - 5), calc(42% * 1.05), calc(56% * 1.29));
+  --text-accent-hover: hsl(349, 44.1%, 72.24%);
   --text-error: rgb(97, 96, 96);
   --text-faint: #666666;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
@@ -986,15 +833,15 @@ body {
   --vault-profile-color: rgb(97, 96, 96);
   --vault-profile-color-hover: rgb(97, 96, 96);
   --vault-profile-display: flex;
-  --vault-profile-font-size: calc(16px * 0.937);
+  --vault-profile-font-size: 14.992px;
   --vault-profile-font-weight: 500;
   --workspace-background-translucent: rgba(0, 0, 0, 0.6);
   --zoom-factor: 1;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-user-select: none;
-  background-color: rgb(33, 34, 36);
+  background-color: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
   caret-color: rgb(208, 135, 112);
-  color: rgb(97, 96, 96);
+  color: light-dark(rgb(97, 96, 96), rgb(45, 45, 46));
   contain: initial;
   font-family:
     "??",
@@ -1133,7 +980,7 @@ h6 {
 }
 
 .markdown-rendered pre {
-  background-color: rgb(33, 34, 36);
+  background-color: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
   border: 0px solid transparent;
   border-radius: 4px;
   min-height: 38px;
@@ -1145,10 +992,10 @@ h6 {
 
 .markdown-rendered code {
   -webkit-box-decoration-break: clone;
-  background-color: rgb(33, 34, 36);
+  background-color: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
   border: 0px solid transparent;
   border-radius: 4px;
-  color: rgb(97, 96, 96);
+  color: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
   font-family:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1166,7 +1013,7 @@ h6 {
 .markdown-rendered button.copy-code-button {
   background-color: transparent;
   box-shadow: none;
-  color: rgb(97, 96, 96);
+  color: light-dark(rgb(97, 96, 96), rgb(33, 34, 36));
   font-family:
     "??",
     "??",
@@ -1182,7 +1029,7 @@ h6 {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-size: calc(16px * 0.8);
+  font-size: 12.8px;
   height: auto;
   inset-inline-end: 0;
   margin: 6px;
@@ -1220,7 +1067,7 @@ h6 {
 }
 
 .callout-title-inner {
-  --font-weight: calc(600 + 200);
+  --font-weight: 800;
   color: inherit;
   font-weight: 600;
 }
@@ -1394,14 +1241,14 @@ h6 {
 }
 
 .callout-fold.is-collapsed .svg-icon {
-  transform: rotate(calc(-1 * -1 * 90deg));
+  transform: rotate(90deg);
 }
 
 .metadata-input-longtext {
   color: rgb(97, 96, 96);
   cursor: text;
   flex-grow: 1;
-  font-size: calc(16px * 0.937);
+  font-size: 14.992px;
   max-height: 300px;
   padding: 4px 8px;
   unicode-bidi: plaintext;
@@ -1409,8 +1256,8 @@ h6 {
 }
 
 .popover {
-  background-color: rgb(33, 34, 36);
-  border: 1px solid transparent;
+  background-color: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
+  border: 1px solid light-dark(rgb(45, 45, 46), rgb(97, 96, 96));
   border-radius: 8px;
   box-shadow:
     0px 1px 2px rgba(0, 0, 0, 0.121),
@@ -1423,7 +1270,7 @@ h6 {
 }
 
 .prompt {
-  background-color: rgb(33, 34, 36);
+  background-color: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
   border: 0.5pt solid #555555;
   border-radius: 12px;
   box-shadow:
@@ -1442,9 +1289,9 @@ h6 {
 }
 
 input.prompt-input {
-  background-color: rgb(33, 34, 36);
+  background-color: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
   border: none;
-  border-bottom: 1px solid rgb(33, 34, 36);
+  border-bottom: 1px solid light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
   border-radius: 0;
   font-size: 16px;
   height: 48px;
@@ -1463,15 +1310,15 @@ input.prompt-input {
 }
 
 .markdown-rendered mark {
-  background-color: rgb(97, 96, 96);
-  color: rgb(33, 34, 36);
+  background-color: light-dark(rgb(97, 96, 96), rgb(235, 203, 139));
+  color: light-dark(rgb(33, 34, 36), rgb(33, 34, 36));
 }
 
 a.tag {
-  background-color: hsla(354, 42%, 56%, 0.2);
+  background-color: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
   border: 0px solid hsla(354, 42%, 56%, 0.15);
   border-radius: 0.5em;
-  color: rgb(76, 86, 106);
+  color: light-dark(rgb(76, 86, 106), rgb(76, 86, 106));
   font-size: 0.875em;
   font-weight: inherit;
   line-height: 1;
@@ -1482,11 +1329,11 @@ a.tag {
 input[type="search"] {
   -webkit-app-region: no-drag;
   background: transparent;
-  border: 1px solid transparent;
+  border: 1px solid light-dark(rgb(45, 45, 46), rgb(97, 96, 96));
   border-radius: 5px;
-  color: rgb(97, 96, 96);
+  color: light-dark(rgb(97, 96, 96), rgb(45, 45, 46));
   font-family: inherit;
-  font-size: calc(16px * 0.937);
+  font-size: 14.992px;
   height: 40px;
   outline: none;
   padding: 4px 8px;
@@ -1497,7 +1344,7 @@ input[type="search"] {
   overflow-x: hidden;
   overflow-y: auto;
   padding: 4px 12px 24px 12px;
-  padding-bottom: max(34px, 24px);
+  padding-bottom: max(env(safe-area-inset-bottom), 24px);
   scroll-padding-block: 8px;
 }
 
@@ -1550,13 +1397,13 @@ input[type="search"] {
 
 .nav-file-title.is-active {
   background-color: rgba(255, 255, 255, 0.15);
-  color: rgb(97, 96, 96);
+  color: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
   font-weight: inherit;
 }
 
 .nav-folder-title.is-active {
   background-color: rgba(255, 255, 255, 0.15);
-  color: rgb(97, 96, 96);
+  color: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
   font-weight: inherit;
 }
 
@@ -1603,13 +1450,13 @@ input[type="search"] {
 
 .tree-item-self.is-clickable.mobile-tap {
   background-color: rgba(255, 255, 255, 0.15);
-  color: rgb(97, 96, 96);
+  color: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
   font-weight: inherit;
 }
 
 .tree-item-self.is-active {
   background-color: rgba(255, 255, 255, 0.15);
-  color: rgb(97, 96, 96);
+  color: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
   font-weight: inherit;
 }
 
@@ -1629,7 +1476,7 @@ input[type="search"] {
   display: flex;
   flex: 0 0 auto;
   justify-content: center;
-  margin-inline-start: calc(-1 * 20px);
+  margin-inline-start: -20px;
   opacity: 1;
   position: absolute;
   width: 16px;
@@ -1654,8 +1501,8 @@ input[type="search"] {
 
 .tree-item-flair {
   border-radius: 4px;
-  color: rgb(97, 96, 96);
-  font-size: calc(16px * 0.8);
+  color: light-dark(rgb(97, 96, 96), rgb(33, 34, 36));
+  font-size: 12.8px;
   line-height: 1;
 }
 
@@ -1671,7 +1518,7 @@ input[type="search"] {
 }
 
 .tree-item-inner-subtext {
-  color: rgb(97, 96, 96);
+  color: light-dark(rgb(97, 96, 96), rgb(33, 34, 36));
   font-size: 85%;
 }
 
@@ -1683,9 +1530,9 @@ input[type="search"] {
 }
 
 kbd {
-  background-color: rgb(33, 34, 36);
+  background-color: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
   border-radius: 4px;
-  color: rgb(97, 96, 96);
+  color: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
   font-family:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1714,7 +1561,7 @@ svg.svg-icon {
 
 .clickable-icon[aria-disabled="true"] {
   background-color: unset;
-  color: rgb(97, 96, 96);
+  color: light-dark(rgb(97, 96, 96), rgb(33, 34, 36));
   opacity: 0.4;
 }
 
@@ -1728,7 +1575,7 @@ svg.svg-icon {
 
 .clickable-icon.is-active {
   background-color: hsla(354, 42%, 56%, 0.15);
-  color: hsl(calc(354 - 3), calc(42% * 1.02), calc(56% * 1.15));
+  color: hsl(351, 42.84%, 64.4%);
   opacity: 0.65;
 }
 
@@ -1748,14 +1595,14 @@ svg.svg-icon {
 }
 
 .view-header-title-parent .view-header-breadcrumb-separator {
-  color: rgb(97, 96, 96);
+  color: light-dark(rgb(97, 96, 96), rgb(33, 34, 36));
   padding: 2px 1px;
 }
 
 .backlink-pane {
   flex: 1 0 0;
   overflow-y: auto;
-  padding-bottom: max(34px, 32px);
+  padding-bottom: max(env(safe-area-inset-bottom), 32px);
   padding-inline-end: 12px;
   padding-inline-start: 12px;
   padding-top: 4px;
@@ -1779,7 +1626,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill {
-  color: rgb(97, 96, 96);
+  color: light-dark(rgb(97, 96, 96), rgb(76, 86, 106));
 }
 
 .graph-view.color-fill-focused {
@@ -1787,11 +1634,11 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-tag {
-  color: rgb(97, 96, 96);
+  color: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
 }
 
 .graph-view.color-fill-attachment {
-  color: rgb(163, 190, 140);
+  color: light-dark(rgb(163, 190, 140), rgb(163, 190, 140));
 }
 
 .graph-view.color-fill-unresolved {
@@ -1800,31 +1647,31 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-1 {
-  color: rgb(97, 96, 96);
+  color: light-dark(rgb(97, 96, 96), rgb(33, 34, 36));
 }
 
 .graph-view.color-fill-2 {
-  color: rgb(97, 96, 96);
+  color: light-dark(rgb(97, 96, 96), rgb(33, 34, 36));
 }
 
 .graph-view.color-fill-3 {
-  color: rgb(97, 96, 96);
+  color: light-dark(rgb(97, 96, 96), rgb(33, 34, 36));
 }
 
 .graph-view.color-fill-4 {
-  color: rgb(97, 96, 96);
+  color: light-dark(rgb(97, 96, 96), rgb(33, 34, 36));
 }
 
 .graph-view.color-fill-5 {
-  color: rgb(97, 96, 96);
+  color: light-dark(rgb(97, 96, 96), rgb(33, 34, 36));
 }
 
 .graph-view.color-fill-6 {
-  color: rgb(97, 96, 96);
+  color: light-dark(rgb(97, 96, 96), rgb(33, 34, 36));
 }
 
 .graph-view.color-arrow {
-  color: rgb(97, 96, 96);
+  color: light-dark(rgb(97, 96, 96), rgb(45, 45, 46));
   opacity: 0.5;
 }
 
@@ -1833,7 +1680,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-line {
-  color: rgb(76, 86, 106);
+  color: light-dark(rgb(76, 86, 106), rgb(97, 96, 96));
 }
 
 .graph-view.color-text {
@@ -1849,7 +1696,7 @@ svg.svg-icon {
 }
 
 .graph-controls {
-  background-color: rgb(33, 34, 36);
+  background-color: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
   border-radius: 8px;
   inset-inline-end: 12px;
   overflow: auto;
@@ -1881,8 +1728,8 @@ svg.svg-icon {
   --code-background: rgb(33, 34, 36);
   --code-normal: rgb(97, 96, 96);
   --color-accent: hsl(354, 42%, 56%);
-  --color-accent-1: hsl(calc(354 - 3), calc(42% * 1.02), calc(56% * 1.15));
-  --color-accent-2: hsl(calc(354 - 5), calc(42% * 1.05), calc(56% * 1.29));
+  --color-accent-1: hsl(351, 42.84%, 64.4%);
+  --color-accent-2: hsl(349, 44.1%, 72.24%);
   --color-accent-hsl: 354, 42%, 56%;
   --color-base-00: #1e1e1e;
   --color-base-05: #212121;
@@ -1941,11 +1788,7 @@ svg.svg-icon {
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
   --interactive-accent: hsl(354, 42%, 56%);
-  --interactive-accent-hover: hsl(
-    calc(354 - 3),
-    calc(42% * 1.02),
-    calc(56% * 1.15)
-  );
+  --interactive-accent-hover: hsl(351, 42.84%, 64.4%);
   --interactive-hover: #3f3f3f;
   --interactive-normal: #363636;
   --italic-color: rgb(235, 203, 139);
@@ -2006,8 +1849,8 @@ svg.svg-icon {
   --code-background: rgb(97, 96, 96);
   --code-normal: rgb(97, 96, 96);
   --color-accent: hsl(354, 42%, 56%);
-  --color-accent-1: hsl(calc(354 - 1), calc(42% * 1.01), calc(56% * 1.075));
-  --color-accent-2: hsl(calc(354 - 3), calc(42% * 1.02), calc(56% * 1.15));
+  --color-accent-1: hsl(353, 42.42%, 60.2%);
+  --color-accent-2: hsl(351, 42.84%, 64.4%);
   --color-accent-hsl: 354, 42%, 56%;
   --color-base-00: #ffffff;
   --color-base-05: #fcfcfc;
@@ -2115,16 +1958,16 @@ svg.svg-icon {
 }
 
 .workspace-tabs .workspace-leaf {
-  background-color: rgb(33, 34, 36);
+  background-color: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
   height: 100%;
 }
 
 .workspace-split.mod-root {
-  background-color: rgb(33, 34, 36);
+  background-color: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
 }
 
 .workspace-split.mod-root .view-content {
-  background-color: rgb(33, 34, 36);
+  background-color: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
 }
 
 .workspace-leaf-resize-handle {

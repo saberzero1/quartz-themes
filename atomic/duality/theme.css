@@ -949,44 +949,22 @@
 }
 
 :root {
-  --background-modifier-active-hover: light-dark(
-    rgba(255, 255, 255, 0.1),
-    rgba(var(--color-base-50-rgb), 0.25)
-  );
   --background-modifier-border: light-dark(#4a2c2a, var(--color-base-30));
   --background-modifier-border-focus: light-dark(
     #663b38,
     var(--interactive-accent)
   );
   --background-modifier-border-hover: light-dark(#663b38, var(--color-base-40));
-  --background-modifier-box-shadow: light-dark(
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.1)
-  );
-  --background-modifier-cover: light-dark(
-    rgba(10, 10, 10, 0.4),
-    rgba(220, 220, 220, 0.4)
-  );
-  --background-modifier-hover: light-dark(
-    rgba(255, 255, 255, 0.05),
-    rgba(var(--color-base-50-rgb), 0.15)
-  );
   --background-primary: light-dark(#1c1c1c, var(--color-base-00));
   --background-primary-alt: light-dark(#2a2a2a, var(--color-base-05));
   --background-secondary: light-dark(#151515, var(--color-base-05));
   --background-secondary-alt: light-dark(
-    light-dark(#151515, var(--color-base-05)),
-    var(--color-base-10)
+    var(--color-base-30),
+    var(--color-base-05)
   );
   --bold-modifier: 200;
   --bold-weight: calc(var(--font-weight) + var(--bold-modifier));
   --border-width: 1px;
-  --button-radius: light-dark(6px, var(--radius-m));
-  --callout-background: light-dark(
-    #2a2a2a,
-    linear-gradient(to bottom, var(--color-base-05), var(--color-base-00))
-  );
-  --callout-content-background: light-dark(#2a2a2a, transparent);
   --callout-title-color: light-dark(#ff4500, var(--text-accent));
   --code-background: light-dark(#2a2a2a, var(--color-base-05));
   --code-comment: light-dark(#8c816d, var(--text-muted));
@@ -1029,77 +1007,26 @@
     var(--accent-s),
     var(--accent-l)
   );
-  --color-base-00: light-dark(light-dark(#1e1e1e, #ffffff), #f5f8ff);
-  --color-base-05: light-dark(light-dark(#212121, #fcfcfc), #e8eeff);
-  --color-base-10: light-dark(light-dark(#242424, #fafafa), #dbe4ff);
-  --color-base-100: light-dark(light-dark(#dadada, #222222), #3a5ca0);
-  --color-base-20: light-dark(light-dark(#262626, #f6f6f6), #c8d7ff);
-  --color-base-25: light-dark(light-dark(#2a2a2a, #e3e3e3), #b8caff);
-  --color-base-30: light-dark(light-dark(#363636, #e0e0e0), #a8bdff);
-  --color-base-35: light-dark(light-dark(#3f3f3f, #d4d4d4), #98b0ff);
-  --color-base-40: light-dark(light-dark(#555555, #bdbdbd), #88a3ff);
-  --color-base-50: light-dark(light-dark(#666666, #ababab), #7896f0);
-  --color-base-60: light-dark(light-dark(#999999, #707070), #6889e0);
-  --color-base-70: light-dark(light-dark(#b3b3b3, #5c5c5c), #587cd0);
-  --color-blue: light-dark(light-dark(#027aff, #086ddd), #1565c0);
-  --color-blue-rgb: light-dark(
-    light-dark(2, 122, 255, 8, 109, 221),
-    21,
-    101,
-    192
-  );
-  --color-cyan: light-dark(light-dark(#53dfdd, #00bfbc), #00838f);
-  --color-cyan-rgb: light-dark(
-    light-dark(83, 223, 221, 0, 191, 188),
-    0,
-    131,
-    143
-  );
-  --color-green: light-dark(light-dark(#44cf6e, #08b94e), #2e7d32);
-  --color-green-rgb: light-dark(
-    light-dark(68, 207, 110, 8, 185, 78),
-    46,
-    125,
-    50
-  );
-  --color-orange: light-dark(light-dark(#e9973f, #ec7500), #f57c00);
-  --color-orange-rgb: light-dark(
-    light-dark(233, 151, 63, 236, 117, 0),
-    245,
-    124,
-    0
-  );
-  --color-pink: light-dark(light-dark(#fa99cd, #d53984), #ad1457);
-  --color-pink-rgb: light-dark(
-    light-dark(250, 153, 205, 213, 57, 132),
-    173,
-    20,
-    87
-  );
-  --color-purple: light-dark(light-dark(#a882ff, #7852ee), #6a1b9a);
-  --color-purple-rgb: light-dark(
-    light-dark(168, 130, 255, 120, 82, 238),
-    106,
-    27,
-    154
-  );
-  --color-red: light-dark(light-dark(#fb464c, #e93147), #c62828);
-  --color-red-rgb: light-dark(
-    light-dark(251, 70, 76, 233, 49, 71),
-    198,
-    40,
-    40
-  );
-  --color-yellow: light-dark(light-dark(#e0de71, #e0ac00), #fbc02d);
-  --color-yellow-rgb: light-dark(
-    light-dark(224, 222, 113, 224, 172, 0),
-    251,
-    192,
-    45
-  );
-  --dialog-max-height: light-dark(75vh, 80vh);
-  --dialog-max-width: light-dark(90vw, 600px);
-  --dialog-width: light-dark(500px, 500px);
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --divider-color: light-dark(#4a2c2a, var(--color-base-30));
   --divider-color-hover: light-dark(#663b38, var(--color-base-40));
   --font-interface-theme: "Segoe UI", Arial, sans-serif;
@@ -1111,42 +1038,11 @@
   --font-ui-smaller: 12px;
   --font-weight: 400;
   --h1-color: light-dark(#ff4500, var(--color-purple));
-  --h1-size: light-dark(2em, 2.2em);
   --h2-color: light-dark(#ff4500, var(--color-blue));
-  --h2-size: light-dark(1.6em, 1.9em);
   --h3-color: light-dark(#d4c9b5, var(--color-green));
-  --h3-size: light-dark(1.4em, 1.6em);
   --h4-color: light-dark(#d4c9b5, var(--color-orange));
-  --h4-size: light-dark(1.2em, 1.3em);
   --h5-color: light-dark(#b0a38c, var(--color-pink));
-  --h5-size: light-dark(1em, 1.15em);
   --h6-color: light-dark(#b0a38c, var(--color-cyan));
-  --h6-size: light-dark(0.9em, 1em);
-  --highlight-mix-blend-mode: light-dark(darken, darken);
-  --input-shadow: light-dark(
-    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2),
-    0 0 0 0 transparent,
-    inset 0 0 0 1px rgba(0, 0, 0, 0.12),
-    0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
-    0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent
-  );
-  --input-shadow-hover: light-dark(
-    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(0, 0, 0, 0.3),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4),
-    0 0 0 0 transparent,
-    inset 0 0 0 1px rgba(0, 0, 0, 0.17),
-    0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
-    0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent
-  );
   --interactive-accent: light-dark(
     var(--color-accent),
     hsl(var(--accent-h), var(--accent-s), var(--accent-l))
@@ -1160,26 +1056,11 @@
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;
   --link-color: light-dark(#ff4500, var(--color-blue));
-  --link-color-hover: light-dark(#ff6347, rgba(var(--color-blue-rgb), 0.8));
-  --link-decoration: light-dark(none, none);
-  --link-decoration-hover: light-dark(underline, underline);
   --link-external-color: light-dark(#ff4500, var(--color-green));
-  --link-external-color-hover: light-dark(
-    #ff6347,
-    rgba(var(--color-green-rgb), 0.8)
-  );
   --link-unresolved-color: light-dark(#ff6666, var(--color-red));
-  --link-unresolved-decoration-style: light-dark(dashed, wavy);
   --loading-icon-delay: 400ms;
   --modal-background: light-dark(#2a2a2a, var(--color-base-00));
   --modal-border-color: light-dark(#4a2c2a, var(--color-base-30));
-  --modal-radius: light-dark(6px, var(--radius-l));
-  --mono-rgb-0: light-dark(0, 0, 0, 255, 255, 255);
-  --mono-rgb-100: light-dark(255, 255, 255, 0, 0, 0);
-  --nav-item-background-hover: light-dark(
-    rgba(255, 255, 255, 0.05),
-    var(--color-base-10)
-  );
   --nav-item-color: light-dark(#d4c9b5, var(--text-normal));
   --nav-item-color-hover: light-dark(#ff4500, var(--text-accent));
   --p-spacing: var(--size-4-4);
@@ -1195,28 +1076,11 @@
   --scrollbar-active-thumb-bg: light-dark(#663b38, var(--color-base-50));
   --scrollbar-bg: light-dark(#151515, var(--color-base-10));
   --scrollbar-thumb-bg: light-dark(#4a2c2a, var(--color-base-40));
-  --shadow-l: light-dark(
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2),
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2)
-  );
-  --shadow-s: light-dark(
-    0px 1px 2px rgba(0, 0, 0, 0.121),
-    0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3),
-    0px 1px 2px rgba(0, 0, 0, 0.028),
-    0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07)
-  );
   --spreadHorizontalWrapped-margin-LR: -3.5px;
   --status-bar-background: light-dark(#151515, var(--color-base-05));
   --status-bar-border-color: light-dark(#4a2c2a, var(--color-base-30));
   --status-bar-text-color: light-dark(#d4c9b5, var(--text-muted));
   --tab-background-active: light-dark(#1c1c1c, var(--color-base-05));
-  --tab-radius: light-dark(6px, var(--radius-s));
   --tab-text-color: light-dark(#d4c9b5, var(--text-muted));
   --tab-text-color-active: light-dark(#ff4500, var(--text-normal));
   --tab-text-color-focused: light-dark(#d4c9b5, var(--text-normal));
@@ -1224,17 +1088,9 @@
   --text-accent: light-dark(#ff4500, var(--interactive-accent));
   --text-accent-hover: light-dark(#ff6347, var(--interactive-accent-hover));
   --text-faint: light-dark(#8c816d, var(--color-base-50));
-  --text-highlight-bg: light-dark(
-    rgba(255, 69, 0, 0.9),
-    rgba(var(--color-yellow-rgb), 0.5)
-  );
   --text-muted: light-dark(#b0a38c, var(--color-base-60));
   --text-normal: light-dark(#d4c9b5, var(--color-base-100));
   --text-on-accent: light-dark(#000000, #1a1a1a);
-  --text-selection: light-dark(
-    rgba(255, 69, 0, 0.3),
-    rgba(var(--accent-h), var(--accent-s), 85%, 0.3)
-  );
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");

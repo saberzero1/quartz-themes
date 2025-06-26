@@ -22,7 +22,7 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --color-accent-2: hsl(calc(254 - 5), calc(80% * 1.05), calc(68% * 1.29));
+  --color-accent-2: hsl(249, 84%, 87.72%);
   --color-accent-hsl: 254, 80%, 68%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -35,8 +35,8 @@ html[saved-theme="dark"] {
   --color-pink: #fa99cd;
   --color-purple: #a882ff;
   --color-red: #fb464c;
-  --text-accent: hsl(calc(254 - 3), calc(80% * 1.02), calc(68% * 1.15));
-  --color-accent-2: hsl(calc(254 - 5), calc(80% * 1.05), calc(68% * 1.29));
+  --text-accent: hsl(251, 81.6%, 78.2%);
+  --color-accent-2: hsl(249, 84%, 87.72%);
   --color-accent-hsl: 254, 80%, 68%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -49,7 +49,7 @@ html[saved-theme="dark"] {
   --color-pink: #fa99cd;
   --color-purple: #a882ff;
   --color-red: #fb464c;
-  --text-accent: hsl(calc(254 - 3), calc(80% * 1.02), calc(68% * 1.15));
+  --text-accent: hsl(251, 81.6%, 78.2%);
 }
 
 :root[saved-theme="light"],
@@ -67,7 +67,7 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --color-accent-2: hsl(calc(254 - 3), calc(80% * 1.02), calc(68% * 1.15));
+  --color-accent-2: hsl(251, 81.6%, 78.2%);
   --color-accent-hsl: 254, 80%, 68%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -80,7 +80,7 @@ html[saved-theme="light"] {
   --color-pink: #d53984;
   --color-purple: #7852ee;
   --color-red: #e93147;
-  --color-accent-2: hsl(calc(254 - 3), calc(80% * 1.02), calc(68% * 1.15));
+  --color-accent-2: hsl(251, 81.6%, 78.2%);
   --color-accent-hsl: 254, 80%, 68%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -223,10 +223,7 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --color-accent-2: light-dark(
-    hsl(calc(254 - 5), calc(80% * 1.05), calc(68% * 1.29)),
-    hsl(calc(254 - 3), calc(80% * 1.02), calc(68% * 1.15))
-  );
+  --color-accent-2: light-dark(hsl(249, 84%, 87.72%), hsl(251, 81.6%, 78.2%));
   --color-accent-hsl: light-dark(254, 80%, 68%, 254, 80%, 68%);
   --color-base-100: light-dark(#dadada, #222222);
   --color-base-30: light-dark(#363636, #e0e0e0);
@@ -251,11 +248,7 @@ body {
   --checkbox-border-color: rgb(69, 71, 90);
   --checkbox-border-color-hover: rgb(166, 173, 200);
   --checkbox-color: rgb(203, 166, 247);
-  --checkbox-color-hover: hsl(
-    calc(254 - 3),
-    calc(80% * 1.02),
-    calc(68% * 1.15)
-  );
+  --checkbox-color-hover: hsl(251, 81.6%, 78.2%);
   --checkbox-marker-color: rgb(30, 30, 46);
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
@@ -333,7 +326,7 @@ body {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-user-select: none;
   background-color: rgb(30, 30, 46);
-  caret-color: hsl(calc(254 - 3), calc(80% * 1.02), calc(68% * 1.15));
+  caret-color: hsl(251, 81.6%, 78.2%);
   color: rgb(24, 24, 37);
   contain: initial;
   font-family:
@@ -386,7 +379,7 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --color-accent-2: hsl(calc(254 - 5), calc(80% * 1.05), calc(68% * 1.29));
+  --color-accent-2: hsl(249, 84%, 87.72%);
   --color-accent-hsl: 254, 80%, 68%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -399,8 +392,8 @@ html[saved-theme="dark"] {
   --color-pink: #fa99cd;
   --color-purple: #a882ff;
   --color-red: #fb464c;
-  --text-accent: hsl(calc(254 - 3), calc(80% * 1.02), calc(68% * 1.15));
-  --color-accent-2: hsl(calc(254 - 5), calc(80% * 1.05), calc(68% * 1.29));
+  --text-accent: hsl(251, 81.6%, 78.2%);
+  --color-accent-2: hsl(249, 84%, 87.72%);
   --color-accent-hsl: 254, 80%, 68%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -413,7 +406,7 @@ html[saved-theme="dark"] {
   --color-pink: #fa99cd;
   --color-purple: #a882ff;
   --color-red: #fb464c;
-  --text-accent: hsl(calc(254 - 3), calc(80% * 1.02), calc(68% * 1.15));
+  --text-accent: hsl(251, 81.6%, 78.2%);
 }
 /* END DARK */
 /* START LIGHT */
@@ -432,7 +425,7 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --color-accent-2: hsl(calc(254 - 3), calc(80% * 1.02), calc(68% * 1.15));
+  --color-accent-2: hsl(251, 81.6%, 78.2%);
   --color-accent-hsl: 254, 80%, 68%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -445,7 +438,7 @@ html[saved-theme="light"] {
   --color-pink: #d53984;
   --color-purple: #7852ee;
   --color-red: #e93147;
-  --color-accent-2: hsl(calc(254 - 3), calc(80% * 1.02), calc(68% * 1.15));
+  --color-accent-2: hsl(251, 81.6%, 78.2%);
   --color-accent-hsl: 254, 80%, 68%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -942,7 +935,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-size: calc(16px * 0.8);
+    font-size: 12.8px;
     height: auto;
     inset-inline-end: 0;
     margin: 6px;
@@ -1183,7 +1176,7 @@ body {
       border-radius: 5px;
       color: rgb(24, 24, 37);
       font-family: inherit;
-      font-size: calc(16px * 0.937);
+      font-size: 14.992px;
       height: 40px;
       outline: none;
       padding: 4px 8px;

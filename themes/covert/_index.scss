@@ -32,7 +32,7 @@ html[saved-theme="dark"] {
   --checkbox-color-hover: rgb(97, 96, 96);
   --code-background: rgb(33, 34, 36);
   --code-normal: rgb(97, 96, 96);
-  --color-accent-2: hsl(calc(354 - 5), calc(42% * 1.05), calc(56% * 1.29));
+  --color-accent-2: hsl(349, 44.1%, 72.24%);
   --color-accent-hsl: 354, 42%, 56%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -68,7 +68,7 @@ html[saved-theme="dark"] {
   --checkbox-color-hover: rgb(97, 96, 96);
   --code-background: rgb(33, 34, 36);
   --code-normal: rgb(97, 96, 96);
-  --color-accent-2: hsl(calc(354 - 5), calc(42% * 1.05), calc(56% * 1.29));
+  --color-accent-2: hsl(349, 44.1%, 72.24%);
   --color-accent-hsl: 354, 42%, 56%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -272,39 +272,21 @@ html[saved-theme="dark"] {
   --code-background: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
   --code-normal: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
   --color-accent-2: light-dark(
-    hsl(calc(354 - 5), calc(42% * 1.05), calc(56% * 1.29)),
-    hsl(calc(354 - 3), calc(42% * 1.02), calc(56% * 1.15))
+    hsl(349, 44.1%, 72.24%),
+    hsl(351, 42.84%, 64.4%)
   );
   --color-accent-hsl: light-dark(354, 42%, 56%, 354, 42%, 56%);
   --color-base-100: light-dark(#dadada, #222222);
   --color-base-30: light-dark(#363636, #e0e0e0);
   --color-base-35: light-dark(#3f3f3f, #d4d4d4);
   --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(
-    light-dark(rgb(94, 129, 172), #086ddd),
-    rgb(94, 129, 172)
-  );
-  --color-cyan: light-dark(
-    light-dark(rgb(97, 96, 96), #00bfbc),
-    rgb(97, 96, 96)
-  );
-  --color-green: light-dark(
-    light-dark(rgb(163, 190, 140), #08b94e),
-    rgb(163, 190, 140)
-  );
-  --color-orange: light-dark(
-    light-dark(rgb(208, 135, 112), #ec7500),
-    rgb(208, 135, 112)
-  );
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
   --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(
-    light-dark(rgb(180, 142, 173), #7852ee),
-    rgb(180, 142, 173)
-  );
-  --color-red: light-dark(
-    light-dark(rgb(97, 96, 96), #e93147),
-    rgb(97, 96, 96)
-  );
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
   --graph-line: light-dark(rgb(76, 86, 106), rgb(97, 96, 96));
   --graph-node-tag: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
   --h1-color: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
@@ -331,11 +313,7 @@ body {
   --checkbox-border-color: rgb(97, 96, 96);
   --checkbox-border-color-hover: rgb(97, 96, 96);
   --checkbox-color: hsl(354, 42%, 56%);
-  --checkbox-color-hover: hsl(
-    calc(354 - 3),
-    calc(42% * 1.02),
-    calc(56% * 1.15)
-  );
+  --checkbox-color-hover: hsl(351, 42.84%, 64.4%);
   --checkbox-marker-color: rgb(33, 34, 36);
   --checkbox-radius: 0;
   --checkbox-size: 16px;
@@ -391,16 +369,16 @@ body {
   --tag-radius: 0.5em;
   --tag-weight: inherit;
   --text-accent: hsl(354, 42%, 56%);
-  --text-accent-hover: hsl(calc(354 - 5), calc(42% * 1.05), calc(56% * 1.29));
+  --text-accent-hover: hsl(349, 44.1%, 72.24%);
   --text-faint: #666666;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-muted: #b3b3b3;
   --text-normal: #dadada;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-user-select: none;
-  background-color: rgb(33, 34, 36);
+  background-color: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
   caret-color: rgb(208, 135, 112);
-  color: rgb(97, 96, 96);
+  color: light-dark(rgb(97, 96, 96), rgb(45, 45, 46));
   contain: initial;
   font-family:
     "??",
@@ -455,7 +433,7 @@ html {
   --checkbox-color-hover: rgb(97, 96, 96);
   --code-background: rgb(33, 34, 36);
   --code-normal: rgb(97, 96, 96);
-  --color-accent-2: hsl(calc(354 - 5), calc(42% * 1.05), calc(56% * 1.29));
+  --color-accent-2: hsl(349, 44.1%, 72.24%);
   --color-accent-hsl: 354, 42%, 56%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -491,7 +469,7 @@ html {
   --checkbox-color-hover: rgb(97, 96, 96);
   --code-background: rgb(33, 34, 36);
   --code-normal: rgb(97, 96, 96);
-  --color-accent-2: hsl(calc(354 - 5), calc(42% * 1.05), calc(56% * 1.29));
+  --color-accent-2: hsl(349, 44.1%, 72.24%);
   --color-accent-hsl: 354, 42%, 56%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -646,13 +624,13 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: rgb(33, 34, 36);
+  background-color: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
   section,
   .page > #quartz-body .sidebar {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: rgb(33, 34, 36);
+      background-color: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
     }
   }
   .highlight,
@@ -897,7 +875,7 @@ body {
   }
   /* CODE */
   pre {
-    background-color: rgb(33, 34, 36);
+    background-color: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
     border: 0px solid transparent;
     border-radius: 4px;
     min-height: 38px;
@@ -914,10 +892,10 @@ body {
   }
   code {
     -webkit-box-decoration-break: clone;
-    background-color: rgb(33, 34, 36);
+    background-color: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
     border: 0px solid transparent;
     border-radius: 4px;
-    color: rgb(97, 96, 96);
+    color: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
     font-family:
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -978,7 +956,7 @@ body {
   .clipboard-button {
     background-color: transparent;
     box-shadow: none;
-    color: rgb(97, 96, 96);
+    color: light-dark(rgb(97, 96, 96), rgb(33, 34, 36));
     font-family:
       "??",
       "??",
@@ -994,7 +972,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-size: calc(16px * 0.8);
+    font-size: 12.8px;
     height: auto;
     inset-inline-end: 0;
     margin: 6px;
@@ -1014,7 +992,7 @@ body {
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: rgb(97, 96, 96);
+    color: light-dark(rgb(97, 96, 96), rgb(33, 34, 36));
   }
   /* BACKLINKS */
   .backlinks {
@@ -1049,7 +1027,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: rgb(33, 34, 36);
+        background-color: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
       }
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
@@ -1107,7 +1085,7 @@ body {
           &.active,
           &:hover {
             background-color: rgba(255, 255, 255, 0.15);
-            color: rgb(97, 96, 96);
+            color: light-dark(rgb(97, 96, 96), rgb(97, 96, 96));
             font-weight: inherit;
           }
           &[data-for$="/index"] {
@@ -1228,11 +1206,11 @@ body {
     & > .search-button {
       -webkit-app-region: no-drag;
       background: transparent;
-      border: 1px solid transparent;
+      border: 1px solid light-dark(rgb(45, 45, 46), rgb(97, 96, 96));
       border-radius: 5px;
-      color: rgb(97, 96, 96);
+      color: light-dark(rgb(97, 96, 96), rgb(45, 45, 46));
       font-family: inherit;
-      font-size: calc(16px * 0.937);
+      font-size: 14.992px;
       height: 40px;
       outline: none;
       padding: 4px 8px;
@@ -1243,7 +1221,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: rgb(33, 34, 36);
+        background-color: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
         border: 0.5pt solid #555555;
         border-radius: 12px;
         box-shadow:
@@ -1252,9 +1230,9 @@ body {
           0px 30px 90px rgba(0, 0, 0, 0.2);
         margin: 12vh auto;
         & > input {
-          background-color: rgb(33, 34, 36);
+          background-color: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
           border: none;
-          border-bottom: 1px solid rgb(33, 34, 36);
+          border-bottom: 1px solid light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1266,7 +1244,7 @@ body {
           background: transparent;
         }
         & > * {
-          color: rgb(97, 96, 96);
+          color: light-dark(rgb(97, 96, 96), rgb(45, 45, 46));
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1279,8 +1257,8 @@ body {
           & .highlight {
             color: rgb(97, 96, 96);
             font-weight: bold;
-            background-color: rgb(97, 96, 96);
-            color: rgb(33, 34, 36);
+            background-color: light-dark(rgb(97, 96, 96), rgb(235, 203, 139));
+            color: light-dark(rgb(33, 34, 36), rgb(33, 34, 36));
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1300,9 +1278,9 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: rgb(97, 96, 96);
+                color: light-dark(rgb(97, 96, 96), rgb(45, 45, 46));
                 &.match-tag {
-                  color: rgb(76, 86, 106);
+                  color: light-dark(rgb(76, 86, 106), rgb(76, 86, 106));
                 }
               }
             }
@@ -1363,8 +1341,8 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: rgb(33, 34, 36);
-    border: 1px solid transparent;
+    background-color: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
+    border: 1px solid light-dark(rgb(45, 45, 46), rgb(97, 96, 96));
     border-radius: 8px;
     box-shadow:
       0px 1px 2px rgba(0, 0, 0, 0.121),
@@ -1380,8 +1358,8 @@ body {
     background-color: unset;
     border: unset;
     & .popover-inner {
-      border: 1px solid transparent;
-      background-color: rgb(33, 34, 36);
+      border: 1px solid light-dark(rgb(45, 45, 46), rgb(97, 96, 96));
+      background-color: light-dark(rgb(33, 34, 36), rgb(97, 96, 96));
 
       border-radius: 8px;
     }

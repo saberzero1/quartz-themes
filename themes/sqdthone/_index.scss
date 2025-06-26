@@ -23,7 +23,7 @@ html[saved-theme="dark"] {
     color: var(--shiki-dark);
   }
   --background-primary: hsl(46, 56%, 91%);
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --color-accent-2: hsl(253, 92.4%, 85.14%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -36,9 +36,9 @@ html[saved-theme="dark"] {
   --color-pink: 316, 50%, 80%;
   --color-purple: 270, 40%, 42%;
   --color-red: 346, 50%, 36%;
-  --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --text-accent: hsl(255, 89.76%, 75.9%);
   --background-primary: hsl(46, 56%, 91%);
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --color-accent-2: hsl(253, 92.4%, 85.14%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -51,7 +51,7 @@ html[saved-theme="dark"] {
   --color-pink: 316, 50%, 80%;
   --color-purple: 270, 40%, 42%;
   --color-red: 346, 50%, 36%;
-  --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --text-accent: hsl(255, 89.76%, 75.9%);
 }
 
 :root[saved-theme="light"],
@@ -70,7 +70,7 @@ html[saved-theme="light"] {
     color: var(--shiki-light);
   }
   --background-primary: hsl(46, 56%, 91%);
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -84,7 +84,7 @@ html[saved-theme="light"] {
   --color-purple: 270, 40%, 38%;
   --color-red: 346, 50%, 32%;
   --background-primary: hsl(46, 56%, 91%);
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -186,21 +186,21 @@ html[saved-theme="light"] {
 :root {
   --background-primary: light-dark(hsl(46, 56%, 91%), hsl(46, 56%, 91%));
   --color-accent-2: light-dark(
-    hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29)),
-    hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15))
+    hsl(253, 92.4%, 85.14%),
+    hsl(255, 89.76%, 75.9%)
   );
   --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
   --color-base-100: light-dark(#dadada, #222222);
   --color-base-30: light-dark(#363636, #e0e0e0);
   --color-base-35: light-dark(#3f3f3f, #d4d4d4);
   --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(light-dark(226, 40%, 56%, #086ddd), 226, 40%, 52%);
-  --color-cyan: light-dark(light-dark(189, 40%, 50%, #00bfbc), 189, 40%, 42%);
-  --color-green: light-dark(light-dark(108, 40%, 42%, #08b94e), 108, 40%, 42%);
-  --color-orange: light-dark(light-dark(21, 50%, 52%, #ec7500), 22, 50%, 40%);
-  --color-pink: light-dark(light-dark(316, 50%, 80%, #d53984), 316, 50%, 68%);
-  --color-purple: light-dark(light-dark(270, 40%, 42%, #7852ee), 270, 40%, 38%);
-  --color-red: light-dark(light-dark(346, 50%, 36%, #e93147), 346, 50%, 32%);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
   --font-default: "Consolas", "Source Sans Pro", "Segoe UI Emoji", sans-serif;
 }
 body {
@@ -210,15 +210,11 @@ body {
   --background-modifier-hover: rgba(255, 255, 255, 0.067);
   --background-primary: hsl(46, 56%, 91%);
   --bold-color: inherit;
-  --bold-weight: calc(600 + 200);
+  --bold-weight: 800;
   --checkbox-border-color: hsl(180, 7%, 60%);
   --checkbox-border-color-hover: hsl(196, 13%, 45%);
   --checkbox-color: hsl(237, 43%, 60%);
-  --checkbox-color-hover: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  );
+  --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
   --checkbox-marker-color: hsl(44, 87%, 94%);
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
@@ -234,11 +230,7 @@ body {
   --code-tag: 1, 71%, 52%;
   --code-value: 237, 43%, 60%;
   --collapse-icon-color: hsl(180, 7%, 60%);
-  --collapse-icon-color-collapsed: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  );
+  --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -258,9 +250,9 @@ body {
   --inline-title-font: inherit;
   --interactive-accent-hsl: 258, 88%, 66%;
   --italic-color: inherit;
-  --link-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --link-color: hsl(255, 89.76%, 75.9%);
   --link-color-hover: hsl(237, 43%, 60%);
-  --link-external-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --link-external-color: hsl(255, 89.76%, 75.9%);
   --link-external-color-hover: hsl(237, 43%, 60%);
   --link-external-filter: none;
   --link-weight: 600;
@@ -271,8 +263,8 @@ body {
   --tag-border-color: hsla(258, 88%, 66%, 0.15);
   --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
   --tag-border-width: 0px;
-  --tag-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --tag-color-hover: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --tag-color: hsl(255, 89.76%, 75.9%);
+  --tag-color-hover: hsl(255, 89.76%, 75.9%);
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-radius: 2em;
@@ -285,35 +277,14 @@ body {
   --text-normal: hsl(194, 14%, 40%);
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-user-select: none;
-  background-color: hsl(44, 87%, 94%);
-  caret-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  background-color: light-dark(
+    hsl(light-dark(300, 6%, 14%, 15, 20%, 92%)),
+    hsl(light-dark(300, 6%, 14%, 15, 20%, 92%))
+  );
+  caret-color: hsl(255, 89.76%, 75.9%);
   color: hsl(194, 14%, 40%);
   contain: initial;
-  font-family:
-    "??",
-    "??",
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+  font-family: "Consolas", "Source Sans Pro", "Segoe UI Emoji", sans-serif;
   font-size: 16px;
   height: 100%;
   line-height: 1.3;
@@ -343,7 +314,7 @@ html[saved-theme="dark"] {
     color: var(--shiki-dark);
   }
   --background-primary: hsl(46, 56%, 91%);
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --color-accent-2: hsl(253, 92.4%, 85.14%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -356,9 +327,9 @@ html[saved-theme="dark"] {
   --color-pink: 316, 50%, 80%;
   --color-purple: 270, 40%, 42%;
   --color-red: 346, 50%, 36%;
-  --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --text-accent: hsl(255, 89.76%, 75.9%);
   --background-primary: hsl(46, 56%, 91%);
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --color-accent-2: hsl(253, 92.4%, 85.14%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -371,7 +342,7 @@ html[saved-theme="dark"] {
   --color-pink: 316, 50%, 80%;
   --color-purple: 270, 40%, 42%;
   --color-red: 346, 50%, 36%;
-  --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --text-accent: hsl(255, 89.76%, 75.9%);
 }
 /* END DARK */
 /* START LIGHT */
@@ -391,7 +362,7 @@ html[saved-theme="light"] {
     color: var(--shiki-light);
   }
   --background-primary: hsl(46, 56%, 91%);
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -405,7 +376,7 @@ html[saved-theme="light"] {
   --color-purple: 270, 40%, 38%;
   --color-red: 346, 50%, 32%;
   --background-primary: hsl(46, 56%, 91%);
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -546,13 +517,19 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: hsl(44, 87%, 94%);
+  background-color: light-dark(
+    hsl(light-dark(300, 6%, 14%, 15, 20%, 92%)),
+    hsl(light-dark(300, 6%, 14%, 15, 20%, 92%))
+  );
   section,
   .page > #quartz-body .sidebar {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: hsl(44, 87%, 94%);
+      background-color: light-dark(
+        hsl(light-dark(300, 6%, 14%, 15, 20%, 92%)),
+        hsl(light-dark(300, 6%, 14%, 15, 20%, 92%))
+      );
     }
   }
   .highlight,
@@ -706,7 +683,7 @@ body {
   }
   /* HEADINGS */
   h1 {
-    color: hsl(68, 100%, 30%);
+    color: hsl(light-dark(light-dark(#fb464c, #e93147), 226, 40%, 44%));
     font-family: "Tahoma", serif;
     font-size: 3em;
     font-style: normal;
@@ -732,7 +709,7 @@ body {
     --link-weight: 700;
   }
   h2 {
-    color: hsl(175, 59%, 40%);
+    color: hsl(light-dark(light-dark(#e9973f, #ec7500), 226, 40%, 48%));
     font-family: "Tahoma", serif;
     font-size: 30px;
     font-style: normal;
@@ -747,7 +724,7 @@ body {
     --link-weight: 600;
   }
   h3 {
-    color: hsl(205, 69%, 49%);
+    color: hsl(light-dark(226, 40%, 44%, 226, 40%, 52%));
     font-family: "Tahoma", serif;
     font-size: 27px;
     font-style: normal;
@@ -762,7 +739,7 @@ body {
     --link-weight: 600;
   }
   h4 {
-    color: hsl(331, 64%, 52%);
+    color: hsl(light-dark(226, 40%, 48%, 226, 40%, 56%));
     font-family: "Tahoma", serif;
     font-size: 24px;
     font-style: normal;
@@ -777,7 +754,7 @@ body {
     --link-weight: 600;
   }
   h5 {
-    color: hsl(237, 43%, 60%);
+    color: hsl(light-dark(226, 40%, 52%, 226, 40%, 60%));
     font-family: "Tahoma", serif;
     font-size: 21px;
     font-style: normal;
@@ -792,7 +769,7 @@ body {
     --link-weight: 600;
   }
   h6 {
-    color: hsl(18, 80%, 44%);
+    color: hsl(light-dark(226, 40%, 56%, 226, 40%, 64%));
     font-family: "Tahoma", serif;
     font-size: 18px;
     font-style: normal;
@@ -890,32 +867,8 @@ body {
     background-color: transparent;
     box-shadow: none;
     color: hsl(196, 13%, 45%);
-    font-family:
-      "??",
-      "??",
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      "Inter",
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif,
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      "Inter",
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    font-size: calc(16px * 0.8);
+    font-family: "Consolas", "Source Sans Pro", "Segoe UI Emoji", sans-serif;
+    font-size: 12.8px;
     height: auto;
     inset-inline-end: 0;
     margin: 6px;
@@ -940,7 +893,7 @@ body {
   /* BACKLINKS */
   .backlinks {
     h3 {
-      color: hsl(205, 69%, 49%);
+      color: hsl(light-dark(226, 40%, 44%, 226, 40%, 52%));
       font-family: "Tahoma", serif;
       font-size: 27px;
       font-style: normal;
@@ -966,11 +919,14 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: hsl(175, 59%, 40%);
+      color: hsl(light-dark(light-dark(#e9973f, #ec7500), 226, 40%, 48%));
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: hsl(44, 87%, 94%);
+        background-color: light-dark(
+          hsl(light-dark(300, 6%, 14%, 15, 20%, 92%)),
+          hsl(light-dark(300, 6%, 14%, 15, 20%, 92%))
+        );
       }
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
@@ -1008,7 +964,7 @@ body {
       }
       .folder-outer > ul.content {
         border-bottom-left-radius: 1%;
-        border-color: hsl(180, 7%, 60%);
+        border-color: hsl(light-dark(168, 50%, 54%, 300, 6%, 30%));
         border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
         margin-bottom: 1px;
         margin-inline-start: 12px;
@@ -1031,8 +987,13 @@ body {
           padding: 6px 8px 6px 24px;
           &.active,
           &:hover {
-            background-color: hsl(44, 87%, 94%);
-            color: hsl(18, 80%, 44%);
+            background-color: hsl(light-dark(300, 6%, 10%, 15, 20%, 96%));
+            color: hsl(
+              light-dark(
+                light-dark(#e9973f, #ec7500),
+                light-dark(#e9973f, #ec7500)
+              )
+            );
             font-weight: inherit;
           }
           &[data-for$="/index"] {
@@ -1059,10 +1020,10 @@ body {
   }
   /* TOC */
   .toc {
-    color: hsl(205, 69%, 49%);
+    color: hsl(light-dark(226, 40%, 44%, 226, 40%, 52%));
     button.toc-header {
       h3 {
-        color: hsl(205, 69%, 49%);
+        color: hsl(light-dark(226, 40%, 44%, 226, 40%, 52%));
         font-family: "Tahoma", serif;
         font-size: 27px;
         font-style: normal;
@@ -1073,7 +1034,7 @@ body {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
       }
-      color: hsl(205, 69%, 49%);
+      color: hsl(light-dark(226, 40%, 44%, 226, 40%, 52%));
       color: inherit;
     }
     ul.toc-content.overflow {
@@ -1090,7 +1051,7 @@ body {
   .graph,
   .toc {
     h3 {
-      color: hsl(205, 69%, 49%);
+      color: hsl(light-dark(226, 40%, 44%, 226, 40%, 52%));
       font-family: "Tahoma", serif;
       font-size: 27px;
       font-style: normal;
@@ -1152,12 +1113,12 @@ body {
   .search {
     & > .search-button {
       -webkit-app-region: no-drag;
-      background: hsl(46, 42%, 88%);
+      background: hsl(light-dark(300, 6%, 18%, 15, 20%, 88%));
       border: 1px solid transparent;
       border-radius: 5px;
       color: hsl(194, 14%, 40%);
       font-family: inherit;
-      font-size: calc(16px * 0.937);
+      font-size: 14.992px;
       height: 40px;
       outline: none;
       padding: 4px 8px;
@@ -1168,7 +1129,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: hsl(180, 7%, 60%);
+        background-color: hsl(light-dark(300, 6%, 22%, 15, 20%, 84%));
         border: 0.5pt solid #555555;
         border-radius: 12px;
         box-shadow:
@@ -1177,9 +1138,16 @@ body {
           0px 30px 90px rgba(0, 0, 0, 0.2);
         margin: 12vh auto;
         & > input {
-          background-color: hsl(44, 87%, 94%);
+          background-color: light-dark(
+            hsl(light-dark(300, 6%, 14%, 15, 20%, 92%)),
+            hsl(light-dark(300, 6%, 14%, 15, 20%, 92%))
+          );
           border: none;
-          border-bottom: 1px solid hsl(46, 56%, 91%);
+          border-bottom: 1px solid
+            light-dark(
+              hsl(light-dark(300, 6%, 18%, 15, 20%, 88%)),
+              hsl(light-dark(300, 6%, 18%, 15, 20%, 88%))
+            );
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1203,8 +1171,18 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: hsl(18, 80%, 44%);
-            color: hsl(60, 20%, 95%);
+            background-color: hsl(
+              light-dark(
+                light-dark(#e9973f, #ec7500),
+                light-dark(#e9973f, #ec7500)
+              )
+            );
+            color: hsl(
+              light-dark(
+                light-dark(15, 20%, 84%, 15, 20%, 88%),
+                light-dark(15, 20%, 84%, 15, 20%, 88%)
+              )
+            );
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1226,7 +1204,7 @@ body {
                 background-color: transparent;
                 color: hsl(194, 14%, 40%);
                 &.match-tag {
-                  color: hsl(46, 56%, 91%);
+                  color: hsl(light-dark(300, 6%, 14%, 15, 20%, 92%));
                 }
               }
             }
@@ -1287,7 +1265,10 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: hsl(44, 87%, 94%);
+    background-color: light-dark(
+      hsl(light-dark(300, 6%, 14%, 15, 20%, 92%)),
+      hsl(light-dark(300, 6%, 14%, 15, 20%, 92%))
+    );
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow:
@@ -1305,7 +1286,10 @@ body {
     border: unset;
     & .popover-inner {
       border: 1px solid transparent;
-      background-color: hsl(44, 87%, 94%);
+      background-color: light-dark(
+        hsl(light-dark(300, 6%, 14%, 15, 20%, 92%)),
+        hsl(light-dark(300, 6%, 14%, 15, 20%, 92%))
+      );
 
       border-radius: 8px;
     }

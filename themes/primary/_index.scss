@@ -22,148 +22,122 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --background-modifier-border: hsla(28, 22%, 19%, 1);
-  --background-modifier-border-focus: color-mix(
-    in srgb,
-    hsla(31, 27%, 25%, 1) 40%,
-    hsla(28, 22%, 19%, 1)
-  );
-  --background-modifier-border-hover: color-mix(
-    in srgb,
-    hsla(31, 27%, 25%, 1) 40%,
-    hsla(28, 22%, 19%, 1)
-  );
-  --background-modifier-hover: rgba(0, 0, 0, 0.3);
-  --background-primary: hsla(30, 19%, 15%, 1);
-  --bold-color: hsla(4, 88%, 61%, 1);
+  --background-modifier-border: #3b3026;
+  --background-modifier-border-focus: color-mix(in srgb, #51402f 40%, #3b3026);
+  --background-modifier-border-hover: color-mix(in srgb, #51402f 40%, #3b3026);
+  --background-modifier-hover: #0000004d;
+  --background-primary: #2e261f;
+  --bold-color: #f35044;
   --callout-content-background: color-mix(
     in srgb,
-    hsla(30, 17%, 14%, 1) 50%,
+    #2a241e 50%,
     var(--editor-bg-color)
   );
-  --checkbox-border-color: hsla(31, 27%, 25%, 1);
-  --checkbox-border-color-hover: hsla(33, 27%, 33%, 1);
-  --checkbox-color: hsla(154, 75%, 26%, 1);
-  --checkbox-color-hover: hsla(155, 78%, 29%, 1);
-  --checkbox-marker-color: white;
-  --collapse-icon-color: hsla(33, 27%, 33%, 1);
-  --collapse-icon-color-collapsed: hsla(33, 27%, 33%, 1);
-  --color-accent-2: hsl(calc(31 - 5), calc(27% * 1.16), calc(24% * 1.34));
+  --checkbox-border-color: #51402f;
+  --checkbox-border-color-hover: #6b563d;
+  --checkbox-color: #117449;
+  --checkbox-color-hover: #108454;
+  --checkbox-marker-color: #ffffff;
+  --collapse-icon-color: #6b563d;
+  --collapse-icon-color-collapsed: #6b563d;
+  --color-accent-2: #6c4f38;
   --color-accent-hsl: 31, 27%, 24%;
-  --color-base-100: hsla(32, 48%, 85%, 1);
-  --color-base-30: hsla(31, 27%, 25%, 1);
-  --color-base-35: hsla(33, 27%, 33%, 1);
-  --color-base-40: hsla(34, 24%, 46%, 1);
-  --color-blue: rgb(63, 137, 176);
-  --color-cyan: rgb(70, 169, 180);
-  --color-green: rgb(80, 196, 101);
-  --color-orange: rgb(203, 128, 53);
-  --color-pink: rgb(180, 100, 100);
-  --color-purple: rgb(113, 97, 194);
-  --color-red: rgb(192, 78, 78);
+  --color-base-100: #ebdac6;
+  --color-base-30: #51402f;
+  --color-base-35: #6b563d;
+  --color-base-40: #917959;
+  --color-blue: #3f89b0;
+  --color-cyan: #46a9b4;
+  --color-green: #50c465;
+  --color-orange: #cb8035;
+  --color-pink: #b46464;
+  --color-purple: #7161c2;
+  --color-red: #c04e4e;
   --editor-bg-color: var(--background-primary);
   --graph-line: transparent;
-  --graph-node-tag: hsla(4, 88%, 61%, 1);
-  --graph-node-unresolved: hsla(42, 79%, 51%, 1);
-  --h1-color: hsla(32, 48%, 85%, 1);
-  --icon-color: color-mix(
-    in srgb,
-    hsla(33, 27%, 33%, 1) 30%,
-    hsla(34, 24%, 46%, 1)
-  );
-  --inline-title-color: hsla(32, 48%, 85%, 1);
+  --graph-node-tag: #f35044;
+  --graph-node-unresolved: #e5aa1f;
+  --h1-color: #ebdac6;
+  --icon-color: color-mix(in srgb, #6b563d 30%, #917959);
+  --inline-title-color: #ebdac6;
   --interactive-accent-hsl: 31, 27%, 24%;
-  --italic-color: hsla(194, 59%, 56%, 1);
-  --link-color: hsla(42, 79%, 51%, 1);
-  --link-color-hover: hsla(43, 69%, 63%, 1);
-  --link-external-color: hsla(154, 57%, 42%, 1);
-  --link-external-color-hover: hsla(152, 51%, 54%, 1);
-  --prompt-input-background: var(--background-primary);
-  --search-icon-color: hsla(34, 39%, 74%, 1);
-  --tag-background: rgba(0, 0, 0, 0.3);
-  --tag-background-hover: rgba(0, 0, 0, 0.2);
-  --tag-border-color: rgba(0, 0, 0, 0.25);
-  --tag-border-color-hover: rgba(0, 0, 0, 0.35);
+  --italic-color: #4db2d1;
+  --link-color: #e5aa1f;
+  --link-color-hover: #e2bd60;
+  --link-external-color: #2ea873;
+  --link-external-color-hover: #4ec68e;
+  --search-icon-color: #d7c0a3;
+  --tag-background: #0000004d;
+  --tag-background-hover: #00000033;
+  --tag-border-color: #00000040;
+  --tag-border-color-hover: #00000059;
   --tag-border-width: 1px;
-  --tag-color: hsla(197, 48%, 49%, 1);
-  --tag-color-hover: hsla(194, 59%, 56%, 1);
-  --text-accent: hsl(31, 27%, 24%);
-  --text-accent-hover: hsl(calc(31 - 5), calc(27% * 1.16), calc(24% * 1.34));
-  --text-faint: hsla(34, 24%, 46%, 1);
-  --text-highlight-bg: hsla(44, 100%, 50%, 0.2);
-  --text-muted: hsla(35, 27%, 55%, 1);
-  --text-normal: hsla(34, 39%, 74%, 1);
-  --background-modifier-border: hsla(28, 22%, 19%, 1);
-  --background-modifier-border-focus: color-mix(
-    in srgb,
-    hsla(31, 27%, 25%, 1) 40%,
-    hsla(28, 22%, 19%, 1)
-  );
-  --background-modifier-border-hover: color-mix(
-    in srgb,
-    hsla(31, 27%, 25%, 1) 40%,
-    hsla(28, 22%, 19%, 1)
-  );
-  --background-modifier-hover: rgba(0, 0, 0, 0.3);
-  --background-primary: hsla(30, 19%, 15%, 1);
-  --bold-color: hsla(4, 88%, 61%, 1);
+  --tag-color: #4197b9;
+  --tag-color-hover: #4db2d1;
+  --text-accent: #4e3e2d;
+  --text-accent-hover: #6c4f38;
+  --text-faint: #917959;
+  --text-highlight-bg: #ffbb0033;
+  --text-muted: #ab916d;
+  --text-normal: #d7c0a3;
+  --background-modifier-border: #3b3026;
+  --background-modifier-border-focus: color-mix(in srgb, #51402f 40%, #3b3026);
+  --background-modifier-border-hover: color-mix(in srgb, #51402f 40%, #3b3026);
+  --background-modifier-hover: #0000004d;
+  --background-primary: #2e261f;
+  --bold-color: #f35044;
   --callout-content-background: color-mix(
     in srgb,
-    hsla(30, 17%, 14%, 1) 50%,
+    #2a241e 50%,
     var(--editor-bg-color)
   );
-  --checkbox-border-color: hsla(31, 27%, 25%, 1);
-  --checkbox-border-color-hover: hsla(33, 27%, 33%, 1);
-  --checkbox-color: hsla(154, 75%, 26%, 1);
-  --checkbox-color-hover: hsla(155, 78%, 29%, 1);
-  --checkbox-marker-color: white;
-  --collapse-icon-color: hsla(33, 27%, 33%, 1);
-  --collapse-icon-color-collapsed: hsla(33, 27%, 33%, 1);
-  --color-accent-2: hsl(calc(31 - 5), calc(27% * 1.16), calc(24% * 1.34));
+  --checkbox-border-color: #51402f;
+  --checkbox-border-color-hover: #6b563d;
+  --checkbox-color: #117449;
+  --checkbox-color-hover: #108454;
+  --checkbox-marker-color: #ffffff;
+  --collapse-icon-color: #6b563d;
+  --collapse-icon-color-collapsed: #6b563d;
+  --color-accent-2: #6c4f38;
   --color-accent-hsl: 31, 27%, 24%;
-  --color-base-100: hsla(32, 48%, 85%, 1);
-  --color-base-30: hsla(31, 27%, 25%, 1);
-  --color-base-35: hsla(33, 27%, 33%, 1);
-  --color-base-40: hsla(34, 24%, 46%, 1);
-  --color-blue: rgb(63, 137, 176);
-  --color-cyan: rgb(70, 169, 180);
-  --color-green: rgb(80, 196, 101);
-  --color-orange: rgb(203, 128, 53);
-  --color-pink: rgb(180, 100, 100);
-  --color-purple: rgb(113, 97, 194);
-  --color-red: rgb(192, 78, 78);
+  --color-base-100: #ebdac6;
+  --color-base-30: #51402f;
+  --color-base-35: #6b563d;
+  --color-base-40: #917959;
+  --color-blue: #3f89b0;
+  --color-cyan: #46a9b4;
+  --color-green: #50c465;
+  --color-orange: #cb8035;
+  --color-pink: #b46464;
+  --color-purple: #7161c2;
+  --color-red: #c04e4e;
   --editor-bg-color: var(--background-primary);
   --graph-line: transparent;
-  --graph-node-tag: hsla(4, 88%, 61%, 1);
-  --graph-node-unresolved: hsla(42, 79%, 51%, 1);
-  --h1-color: hsla(32, 48%, 85%, 1);
-  --icon-color: color-mix(
-    in srgb,
-    hsla(33, 27%, 33%, 1) 30%,
-    hsla(34, 24%, 46%, 1)
-  );
-  --inline-title-color: hsla(32, 48%, 85%, 1);
+  --graph-node-tag: #f35044;
+  --graph-node-unresolved: #e5aa1f;
+  --h1-color: #ebdac6;
+  --icon-color: color-mix(in srgb, #6b563d 30%, #917959);
+  --inline-title-color: #ebdac6;
   --interactive-accent-hsl: 31, 27%, 24%;
-  --italic-color: hsla(194, 59%, 56%, 1);
-  --link-color: hsla(42, 79%, 51%, 1);
-  --link-color-hover: hsla(43, 69%, 63%, 1);
-  --link-external-color: hsla(154, 57%, 42%, 1);
-  --link-external-color-hover: hsla(152, 51%, 54%, 1);
-  --prompt-input-background: var(--background-primary);
-  --search-icon-color: hsla(34, 39%, 74%, 1);
-  --tag-background: rgba(0, 0, 0, 0.3);
-  --tag-background-hover: rgba(0, 0, 0, 0.2);
-  --tag-border-color: rgba(0, 0, 0, 0.25);
-  --tag-border-color-hover: rgba(0, 0, 0, 0.35);
+  --italic-color: #4db2d1;
+  --link-color: #e5aa1f;
+  --link-color-hover: #e2bd60;
+  --link-external-color: #2ea873;
+  --link-external-color-hover: #4ec68e;
+  --search-icon-color: #d7c0a3;
+  --tag-background: #0000004d;
+  --tag-background-hover: #00000033;
+  --tag-border-color: #00000040;
+  --tag-border-color-hover: #00000059;
   --tag-border-width: 1px;
-  --tag-color: hsla(197, 48%, 49%, 1);
-  --tag-color-hover: hsla(194, 59%, 56%, 1);
-  --text-accent: hsl(31, 27%, 24%);
-  --text-accent-hover: hsl(calc(31 - 5), calc(27% * 1.16), calc(24% * 1.34));
-  --text-faint: hsla(34, 24%, 46%, 1);
-  --text-highlight-bg: hsla(44, 100%, 50%, 0.2);
-  --text-muted: hsla(35, 27%, 55%, 1);
-  --text-normal: hsla(34, 39%, 74%, 1);
+  --tag-color: #4197b9;
+  --tag-color-hover: #4db2d1;
+  --text-accent: #4e3e2d;
+  --text-accent-hover: #6c4f38;
+  --text-faint: #917959;
+  --text-highlight-bg: #ffbb0033;
+  --text-muted: #ab916d;
+  --text-normal: #d7c0a3;
 }
 
 :root[saved-theme="light"],
@@ -181,140 +155,122 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --background-modifier-border: hsla(37, 38%, 83%, 1);
-  --background-modifier-border-focus: color-mix(
-    in hsl,
-    hsla(34, 37%, 70%, 1) 60%,
-    hsla(37, 38%, 83%, 1)
-  );
-  --background-modifier-border-hover: color-mix(
-    in hsl,
-    hsla(34, 37%, 70%, 1) 60%,
-    hsla(37, 38%, 83%, 1)
-  );
-  --background-modifier-hover: rgba(255, 255, 255, 0.5);
-  --background-primary: hsla(35, 36%, 96%, 1);
-  --bold-color: hsla(4, 56%, 48%, 1);
+  --background-modifier-border: #e4d8c3;
+  --background-modifier-border-focus: color-mix(in hsl, #cfb696 60%, #e4d8c3);
+  --background-modifier-border-hover: color-mix(in hsl, #cfb696 60%, #e4d8c3);
+  --background-modifier-hover: #ffffff80;
+  --background-primary: #f8f5f1;
+  --bold-color: #bf3f36;
   --callout-content-background: color-mix(
     in srgb,
-    hsla(30, 17%, 14%, 1) 50%,
+    #2a241e 50%,
     var(--background-primary)
   );
-  --checkbox-border-color: hsla(37, 38%, 83%, 1);
-  --checkbox-border-color-hover: hsla(34, 37%, 70%, 1);
-  --checkbox-color: hsla(149, 50%, 39%, 1);
-  --checkbox-color-hover: hsla(148, 48%, 47%, 1);
-  --checkbox-marker-color: white;
-  --collapse-icon-color: hsla(34, 37%, 70%, 1);
-  --collapse-icon-color-collapsed: hsla(34, 37%, 70%, 1);
-  --color-accent-2: hsl(calc(31 - 3), calc(27% * 1.33), calc(24% * 1.19));
+  --checkbox-border-color: #e4d8c3;
+  --checkbox-border-color-hover: #cfb696;
+  --checkbox-color: #329562;
+  --checkbox-color-hover: #3eb174;
+  --checkbox-marker-color: #ffffff;
+  --collapse-icon-color: #cfb696;
+  --collapse-icon-color-collapsed: #cfb696;
+  --color-accent-2: #63472f;
   --color-accent-hsl: 31, 27%, 24%;
-  --color-base-100: hsla(33, 54%, 17%, 1);
-  --color-base-30: hsla(37, 38%, 83%, 1);
-  --color-base-35: hsla(34, 37%, 70%, 1);
-  --color-base-40: hsla(34, 29%, 60%, 1);
-  --color-blue: hsla(206, 57%, 44%, 1);
-  --color-cyan: hsla(178, 39%, 49%, 1);
-  --color-green: hsla(146, 37%, 49%, 1);
-  --color-orange: hsla(30, 66%, 52%, 1);
-  --color-pink: hsla(351, 44%, 61%, 1);
-  --color-purple: hsla(249, 39%, 60%, 1);
-  --color-red: hsla(0, 58%, 53%, 1);
+  --color-base-100: #432e14;
+  --color-base-30: #e4d8c3;
+  --color-base-35: #cfb696;
+  --color-base-40: #b79d7b;
+  --color-blue: #3079b0;
+  --color-cyan: #4caeaa;
+  --color-green: #4fab77;
+  --color-orange: #d58534;
+  --color-pink: #c7707d;
+  --color-purple: #7d71c1;
+  --color-red: #cd4242;
   --editor-bg-color: var(--background-primary);
   --graph-line: transparent;
-  --graph-node-tag: hsla(4, 72%, 55%, 1);
-  --graph-node-unresolved: hsla(43, 83%, 57%, 1);
-  --h1-color: hsla(33, 54%, 17%, 1);
-  --icon-color: hsla(34, 29%, 60%, 1);
-  --inline-title-color: hsla(33, 54%, 17%, 1);
+  --graph-node-tag: #df453a;
+  --graph-node-unresolved: #ecb936;
+  --h1-color: #432e14;
+  --icon-color: #b79d7b;
+  --inline-title-color: #432e14;
   --interactive-accent-hsl: 31, 27%, 24%;
-  --italic-color: hsla(200, 64%, 37%, 1);
-  --link-color: hsla(40, 79%, 47%, 1);
-  --link-color-hover: hsla(43, 83%, 57%, 1);
-  --link-external-color: hsla(149, 50%, 39%, 1);
-  --link-external-color-hover: hsla(148, 48%, 47%, 1);
-  --prompt-input-background: var(--background-primary);
-  --search-icon-color: hsla(34, 29%, 60%, 1);
-  --tag-background: rgba(255, 255, 255, 0.5);
-  --tag-background-hover: rgba(255, 255, 255, 0.8);
-  --tag-border-color: rgba(0, 0, 0, 0.15);
-  --tag-border-color-hover: rgba(0, 0, 0, 0.25);
+  --italic-color: #22729b;
+  --link-color: #d79719;
+  --link-color-hover: #ecb936;
+  --link-external-color: #329562;
+  --link-external-color-hover: #3eb174;
+  --search-icon-color: #b79d7b;
+  --tag-background: #ffffff80;
+  --tag-background-hover: #ffffffcc;
+  --tag-border-color: #00000026;
+  --tag-border-color-hover: #00000040;
   --tag-border-width: 1px;
-  --tag-color: hsla(200, 64%, 37%, 1);
-  --tag-color-hover: hsla(202, 66%, 48%, 1);
-  --text-accent: hsl(31, 27%, 24%);
-  --text-accent-hover: hsl(calc(31 - 5), calc(27% * 1.16), calc(24% * 1.34));
-  --text-faint: hsla(34, 29%, 60%, 1);
-  --text-highlight-bg: hsla(44, 100%, 50%, 0.2);
-  --text-muted: hsla(35, 28%, 40%, 1);
-  --text-normal: hsla(31, 45%, 24%, 1);
-  --background-modifier-border: hsla(37, 38%, 83%, 1);
-  --background-modifier-border-focus: color-mix(
-    in hsl,
-    hsla(34, 37%, 70%, 1) 60%,
-    hsla(37, 38%, 83%, 1)
-  );
-  --background-modifier-border-hover: color-mix(
-    in hsl,
-    hsla(34, 37%, 70%, 1) 60%,
-    hsla(37, 38%, 83%, 1)
-  );
-  --background-modifier-hover: rgba(255, 255, 255, 0.5);
-  --background-primary: hsla(35, 36%, 96%, 1);
-  --bold-color: hsla(4, 56%, 48%, 1);
+  --tag-color: #22729b;
+  --tag-color-hover: #2a90cb;
+  --text-accent: #4e3e2d;
+  --text-accent-hover: #6c4f38;
+  --text-faint: #b79d7b;
+  --text-highlight-bg: #ffbb0033;
+  --text-muted: #836b49;
+  --text-normal: #593e22;
+  --background-modifier-border: #e4d8c3;
+  --background-modifier-border-focus: color-mix(in hsl, #cfb696 60%, #e4d8c3);
+  --background-modifier-border-hover: color-mix(in hsl, #cfb696 60%, #e4d8c3);
+  --background-modifier-hover: #ffffff80;
+  --background-primary: #f8f5f1;
+  --bold-color: #bf3f36;
   --callout-content-background: color-mix(
     in srgb,
-    hsla(30, 17%, 14%, 1) 50%,
+    #2a241e 50%,
     var(--background-primary)
   );
-  --checkbox-border-color: hsla(37, 38%, 83%, 1);
-  --checkbox-border-color-hover: hsla(34, 37%, 70%, 1);
-  --checkbox-color: hsla(149, 50%, 39%, 1);
-  --checkbox-color-hover: hsla(148, 48%, 47%, 1);
-  --checkbox-marker-color: white;
-  --collapse-icon-color: hsla(34, 37%, 70%, 1);
-  --collapse-icon-color-collapsed: hsla(34, 37%, 70%, 1);
-  --color-accent-2: hsl(calc(31 - 3), calc(27% * 1.33), calc(24% * 1.19));
+  --checkbox-border-color: #e4d8c3;
+  --checkbox-border-color-hover: #cfb696;
+  --checkbox-color: #329562;
+  --checkbox-color-hover: #3eb174;
+  --checkbox-marker-color: #ffffff;
+  --collapse-icon-color: #cfb696;
+  --collapse-icon-color-collapsed: #cfb696;
+  --color-accent-2: #63472f;
   --color-accent-hsl: 31, 27%, 24%;
-  --color-base-100: hsla(33, 54%, 17%, 1);
-  --color-base-30: hsla(37, 38%, 83%, 1);
-  --color-base-35: hsla(34, 37%, 70%, 1);
-  --color-base-40: hsla(34, 29%, 60%, 1);
-  --color-blue: hsla(206, 57%, 44%, 1);
-  --color-cyan: hsla(178, 39%, 49%, 1);
-  --color-green: hsla(146, 37%, 49%, 1);
-  --color-orange: hsla(30, 66%, 52%, 1);
-  --color-pink: hsla(351, 44%, 61%, 1);
-  --color-purple: hsla(249, 39%, 60%, 1);
-  --color-red: hsla(0, 58%, 53%, 1);
+  --color-base-100: #432e14;
+  --color-base-30: #e4d8c3;
+  --color-base-35: #cfb696;
+  --color-base-40: #b79d7b;
+  --color-blue: #3079b0;
+  --color-cyan: #4caeaa;
+  --color-green: #4fab77;
+  --color-orange: #d58534;
+  --color-pink: #c7707d;
+  --color-purple: #7d71c1;
+  --color-red: #cd4242;
   --editor-bg-color: var(--background-primary);
   --graph-line: transparent;
-  --graph-node-tag: hsla(4, 72%, 55%, 1);
-  --graph-node-unresolved: hsla(43, 83%, 57%, 1);
-  --h1-color: hsla(33, 54%, 17%, 1);
-  --icon-color: hsla(34, 29%, 60%, 1);
-  --inline-title-color: hsla(33, 54%, 17%, 1);
+  --graph-node-tag: #df453a;
+  --graph-node-unresolved: #ecb936;
+  --h1-color: #432e14;
+  --icon-color: #b79d7b;
+  --inline-title-color: #432e14;
   --interactive-accent-hsl: 31, 27%, 24%;
-  --italic-color: hsla(200, 64%, 37%, 1);
-  --link-color: hsla(40, 79%, 47%, 1);
-  --link-color-hover: hsla(43, 83%, 57%, 1);
-  --link-external-color: hsla(149, 50%, 39%, 1);
-  --link-external-color-hover: hsla(148, 48%, 47%, 1);
-  --prompt-input-background: var(--background-primary);
-  --search-icon-color: hsla(34, 29%, 60%, 1);
-  --tag-background: rgba(255, 255, 255, 0.5);
-  --tag-background-hover: rgba(255, 255, 255, 0.8);
-  --tag-border-color: rgba(0, 0, 0, 0.15);
-  --tag-border-color-hover: rgba(0, 0, 0, 0.25);
+  --italic-color: #22729b;
+  --link-color: #d79719;
+  --link-color-hover: #ecb936;
+  --link-external-color: #329562;
+  --link-external-color-hover: #3eb174;
+  --search-icon-color: #b79d7b;
+  --tag-background: #ffffff80;
+  --tag-background-hover: #ffffffcc;
+  --tag-border-color: #00000026;
+  --tag-border-color-hover: #00000040;
   --tag-border-width: 1px;
-  --tag-color: hsla(200, 64%, 37%, 1);
-  --tag-color-hover: hsla(202, 66%, 48%, 1);
-  --text-accent: hsl(31, 27%, 24%);
-  --text-accent-hover: hsl(calc(31 - 5), calc(27% * 1.16), calc(24% * 1.34));
-  --text-faint: hsla(34, 29%, 60%, 1);
-  --text-highlight-bg: hsla(44, 100%, 50%, 0.2);
-  --text-muted: hsla(35, 28%, 40%, 1);
-  --text-normal: hsla(31, 45%, 24%, 1);
+  --tag-color: #22729b;
+  --tag-color-hover: #2a90cb;
+  --text-accent: #4e3e2d;
+  --text-accent-hover: #6c4f38;
+  --text-faint: #b79d7b;
+  --text-highlight-bg: #ffbb0033;
+  --text-muted: #836b49;
+  --text-normal: #593e22;
 }
 
 @font-face {
@@ -327,254 +283,131 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --background-modifier-border: light-dark(
-    hsla(28, 22%, 19%, 1),
-    hsla(37, 38%, 83%, 1)
-  );
-  --background-modifier-border-focus: light-dark(
-    color-mix(in srgb, hsla(31, 27%, 25%, 1) 40%, hsla(28, 22%, 19%, 1)),
-    color-mix(in hsl, hsla(34, 37%, 70%, 1) 60%, hsla(37, 38%, 83%, 1))
-  );
-  --background-modifier-border-hover: light-dark(
-    color-mix(in srgb, hsla(31, 27%, 25%, 1) 40%, hsla(28, 22%, 19%, 1)),
-    color-mix(in hsl, hsla(34, 37%, 70%, 1) 60%, hsla(37, 38%, 83%, 1))
-  );
-  --background-modifier-hover: light-dark(
-    rgba(0, 0, 0, 0.3),
-    rgba(255, 255, 255, 0.5)
-  );
-  --background-primary: light-dark(
-    hsla(30, 19%, 15%, 1),
-    hsla(35, 36%, 96%, 1)
-  );
-  --bold-color: light-dark(hsla(4, 88%, 61%, 1), hsla(4, 56%, 48%, 1));
-  --callout-content-background: light-dark(
-    color-mix(in srgb, hsla(30, 17%, 14%, 1) 50%, var(--editor-bg-color)),
-    color-mix(in srgb, hsla(30, 17%, 14%, 1) 50%, var(--background-primary))
-  );
-  --checkbox-border-color: light-dark(
-    hsla(31, 27%, 25%, 1),
-    hsla(37, 38%, 83%, 1)
-  );
-  --checkbox-border-color-hover: light-dark(
-    hsla(33, 27%, 33%, 1),
-    hsla(34, 37%, 70%, 1)
-  );
-  --checkbox-color: light-dark(hsla(154, 75%, 26%, 1), hsla(149, 50%, 39%, 1));
-  --checkbox-color-hover: light-dark(
-    hsla(155, 78%, 29%, 1),
-    hsla(148, 48%, 47%, 1)
-  );
-  --checkbox-marker-color: light-dark(white, white);
-  --collapse-icon-color: light-dark(
-    hsla(33, 27%, 33%, 1),
-    hsla(34, 37%, 70%, 1)
-  );
-  --collapse-icon-color-collapsed: light-dark(
-    hsla(33, 27%, 33%, 1),
-    hsla(34, 37%, 70%, 1)
-  );
-  --color-accent-2: light-dark(
-    light-dark(
-      hsl(calc(31 - 5), calc(27% * 1.16), calc(24% * 1.34)),
-      hsl(calc(31 - 3), calc(27% * 1.02), calc(24% * 1.15))
-    ),
-    hsl(calc(31 - 3), calc(27% * 1.33), calc(24% * 1.19))
-  );
-  --color-accent-hsl: light-dark(
-    light-dark(31, 27%, 24%, 31, 27%, 24%),
-    31,
-    27%,
-    24%
-  );
-  --color-base-100: light-dark(
-    light-dark(hsla(32, 48%, 85%, 1), #222222),
-    hsla(33, 54%, 17%, 1)
-  );
-  --color-base-30: light-dark(
-    light-dark(hsla(31, 27%, 25%, 1), #e0e0e0),
-    hsla(37, 38%, 83%, 1)
-  );
-  --color-base-35: light-dark(
-    light-dark(hsla(33, 27%, 33%, 1), #d4d4d4),
-    hsla(34, 37%, 70%, 1)
-  );
-  --color-base-40: light-dark(
-    light-dark(hsla(34, 24%, 46%, 1), #bdbdbd),
-    hsla(34, 29%, 60%, 1)
-  );
-  --color-blue: light-dark(
-    light-dark(rgb(63, 137, 176), #086ddd),
-    hsla(206, 57%, 44%, 1)
-  );
-  --color-cyan: light-dark(
-    light-dark(rgb(70, 169, 180), #00bfbc),
-    hsla(178, 39%, 49%, 1)
-  );
-  --color-green: light-dark(
-    light-dark(rgb(80, 196, 101), #08b94e),
-    hsla(146, 37%, 49%, 1)
-  );
-  --color-orange: light-dark(
-    light-dark(rgb(203, 128, 53), #ec7500),
-    hsla(30, 66%, 52%, 1)
-  );
-  --color-pink: light-dark(
-    light-dark(rgb(180, 100, 100), #d53984),
-    hsla(351, 44%, 61%, 1)
-  );
-  --color-purple: light-dark(
-    light-dark(rgb(113, 97, 194), #7852ee),
-    hsla(249, 39%, 60%, 1)
-  );
-  --color-red: light-dark(
-    light-dark(rgb(192, 78, 78), #e93147),
-    hsla(0, 58%, 53%, 1)
-  );
+  --background-modifier-border: light-dark(#3b3026, #e4d8c3);
+  --background-primary: light-dark(#2e261f, #f8f5f1);
+  --bold-color: light-dark(#f35044, #bf3f36);
+  --checkbox-border-color: light-dark(#51402f, #e4d8c3);
+  --checkbox-border-color-hover: light-dark(#6b563d, #cfb696);
+  --checkbox-color: light-dark(#117449, #329562);
+  --checkbox-color-hover: light-dark(#108454, #3eb174);
+  --collapse-icon-color: light-dark(#6b563d, #cfb696);
+  --collapse-icon-color-collapsed: light-dark(#6b563d, #cfb696);
+  --color-accent-2: light-dark(#654c39, #5a4533);
+  --color-accent-hsl: light-dark(31, 27%, 24%, 31, 27%, 24%);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
   --editor-bg-color: light-dark(
     var(--background-primary),
     var(--background-primary)
   );
   --graph-line: light-dark(transparent, transparent);
-  --graph-node-tag: light-dark(hsla(4, 88%, 61%, 1), hsla(4, 72%, 55%, 1));
-  --graph-node-unresolved: light-dark(
-    hsla(42, 79%, 51%, 1),
-    hsla(43, 83%, 57%, 1)
-  );
-  --h1-color: light-dark(hsla(32, 48%, 85%, 1), hsla(33, 54%, 17%, 1));
-  --icon-color: light-dark(
-    color-mix(in srgb, hsla(33, 27%, 33%, 1) 30%, hsla(34, 24%, 46%, 1)),
-    hsla(34, 29%, 60%, 1)
-  );
-  --inline-title-color: light-dark(
-    hsla(32, 48%, 85%, 1),
-    hsla(33, 54%, 17%, 1)
-  );
+  --graph-node-tag: light-dark(#f35044, #df453a);
+  --graph-node-unresolved: light-dark(#e5aa1f, #ecb936);
+  --h1-color: light-dark(#ebdac6, #432e14);
+  --inline-title-color: light-dark(#ebdac6, #432e14);
   --interactive-accent-hsl: light-dark(31, 27%, 24%, 31, 27%, 24%);
-  --italic-color: light-dark(hsla(194, 59%, 56%, 1), hsla(200, 64%, 37%, 1));
-  --link-color: light-dark(hsla(42, 79%, 51%, 1), hsla(40, 79%, 47%, 1));
-  --link-color-hover: light-dark(hsla(43, 69%, 63%, 1), hsla(43, 83%, 57%, 1));
-  --link-external-color: light-dark(
-    hsla(154, 57%, 42%, 1),
-    hsla(149, 50%, 39%, 1)
-  );
-  --link-external-color-hover: light-dark(
-    hsla(152, 51%, 54%, 1),
-    hsla(148, 48%, 47%, 1)
-  );
-  --prompt-input-background: light-dark(
-    var(--background-primary),
-    var(--background-primary)
-  );
-  --search-icon-color: light-dark(hsla(34, 39%, 74%, 1), hsla(34, 29%, 60%, 1));
-  --tag-background: light-dark(rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.5));
-  --tag-background-hover: light-dark(
-    rgba(0, 0, 0, 0.2),
-    rgba(255, 255, 255, 0.8)
-  );
-  --tag-border-color: light-dark(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.15));
-  --tag-border-color-hover: light-dark(
-    rgba(0, 0, 0, 0.35),
-    rgba(0, 0, 0, 0.25)
-  );
-  --tag-border-width: light-dark(1px, 1px);
-  --tag-color: light-dark(hsla(197, 48%, 49%, 1), hsla(200, 64%, 37%, 1));
-  --tag-color-hover: light-dark(hsla(194, 59%, 56%, 1), hsla(202, 66%, 48%, 1));
-  --text-accent: light-dark(hsl(31, 27%, 24%), hsl(31, 27%, 24%));
-  --text-accent-hover: light-dark(
-    hsl(calc(31 - 5), calc(27% * 1.16), calc(24% * 1.34)),
-    hsl(calc(31 - 5), calc(27% * 1.16), calc(24% * 1.34))
-  );
-  --text-faint: light-dark(hsla(34, 24%, 46%, 1), hsla(34, 29%, 60%, 1));
-  --text-highlight-bg: light-dark(
-    hsla(44, 100%, 50%, 0.2),
-    hsla(44, 100%, 50%, 0.2)
-  );
-  --text-muted: light-dark(hsla(35, 27%, 55%, 1), hsla(35, 28%, 40%, 1));
-  --text-normal: light-dark(hsla(34, 39%, 74%, 1), hsla(31, 45%, 24%, 1));
+  --italic-color: light-dark(#4db2d1, #22729b);
+  --link-color: light-dark(#e5aa1f, #d79719);
+  --link-color-hover: light-dark(#e2bd60, #ecb936);
+  --link-external-color: light-dark(#2ea873, #329562);
+  --link-external-color-hover: light-dark(#4ec68e, #3eb174);
+  --search-icon-color: light-dark(#d7c0a3, #b79d7b);
+  --tag-color: light-dark(#4197b9, #22729b);
+  --tag-color-hover: light-dark(#4db2d1, #2a90cb);
+  --text-accent: light-dark(#4e3e2d, #4e3e2d);
+  --text-accent-hover: light-dark(#6c4f38, #6c4f38);
+  --text-faint: light-dark(#917959, #b79d7b);
+  --text-highlight-bg: light-dark(#ffbb0033, #ffbb0033);
+  --text-muted: light-dark(#ab916d, #836b49);
+  --text-normal: light-dark(#d7c0a3, #593e22);
 }
 body {
-  --background-modifier-border: hsla(31, 27%, 25%, 1);
-  --background-modifier-border-focus: hsla(34, 24%, 46%, 1);
-  --background-modifier-border-hover: hsla(33, 27%, 33%, 1);
-  --background-modifier-hover: rgba(255, 255, 255, 0.067);
-  --background-primary: hsla(32, 21%, 9%, 1);
+  --background-modifier-border: #51402f;
+  --background-modifier-border-focus: #917959;
+  --background-modifier-border-hover: #6b563d;
+  --background-modifier-hover: #ffffff11;
+  --background-primary: #1c1712;
   --bold-color: inherit;
   --bold-weight: 750;
   --callout-content-background: transparent;
-  --checkbox-border-color: hsla(34, 24%, 46%, 1);
-  --checkbox-border-color-hover: hsla(35, 27%, 55%, 1);
-  --checkbox-color: hsl(calc(31 - 3), calc(27% * 1.02), calc(24% * 1.15));
-  --checkbox-color-hover: hsl(calc(31 - 5), calc(27% * 1.16), calc(24% * 1.34));
+  --checkbox-border-color: #917959;
+  --checkbox-border-color-hover: #ab916d;
+  --checkbox-color: #5a4533;
+  --checkbox-color-hover: #6c4f38;
   --checkbox-marker-color: var(--background-primary);
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --code-background: hsla(30, 17%, 14%, 1);
-  --code-comment: hsla(34, 24%, 46%, 1);
-  --code-function: rgb(225, 178, 67);
-  --code-important: rgb(203, 128, 53);
-  --code-keyword: rgb(180, 100, 100);
-  --code-normal: hsla(34, 39%, 74%, 1);
-  --code-property: rgb(70, 169, 180);
-  --code-punctuation: hsla(35, 27%, 55%, 1);
-  --code-string: rgb(80, 196, 101);
-  --code-tag: rgb(192, 78, 78);
-  --code-value: rgb(113, 97, 194);
-  --collapse-icon-color: hsla(34, 24%, 46%, 1);
-  --collapse-icon-color-collapsed: hsl(31, 27%, 24%);
+  --code-background: #2a241e;
+  --code-comment: #917959;
+  --code-function: #e1b243;
+  --code-important: #cb8035;
+  --code-keyword: #b46464;
+  --code-normal: #d7c0a3;
+  --code-property: #46a9b4;
+  --code-punctuation: #ab916d;
+  --code-string: #50c465;
+  --code-tag: #c04e4e;
+  --code-value: #7161c2;
+  --collapse-icon-color: #917959;
+  --collapse-icon-color-collapsed: #4e3e2d;
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
   --font-text: "??", "??", "Inter", "Arial";
-  --graph-line: hsla(33, 27%, 33%, 1);
-  --graph-node-tag: rgb(80, 196, 101);
-  --graph-node-unresolved: hsla(34, 24%, 46%, 1);
+  --graph-line: #6b563d;
+  --graph-node-tag: #50c465;
+  --graph-node-unresolved: #917959;
   --h1-color: inherit;
   --h1-font: inherit;
   --h3-line-height: 1.3;
   --hr-color: transparent;
   --hr-thickness: 1px;
-  --icon-color: hsla(35, 27%, 55%, 1);
-  --inline-title-color: hsla(32, 48%, 85%, 1);
+  --icon-color: #ab916d;
+  --inline-title-color: #ebdac6;
   --inline-title-font: inherit;
   --interactive-accent-hsl: 31, 27%, 24%;
   --italic-color: inherit;
-  --link-color: hsl(31, 27%, 24%);
-  --link-color-hover: hsl(calc(31 - 5), calc(27% * 1.16), calc(24% * 1.34));
-  --link-external-color: hsl(31, 27%, 24%);
-  --link-external-color-hover: hsl(
-    calc(31 - 5),
-    calc(27% * 1.16),
-    calc(24% * 1.34)
-  );
+  --link-color: #4e3e2d;
+  --link-color-hover: #6c4f38;
+  --link-external-color: #4e3e2d;
+  --link-external-color-hover: #6c4f38;
   --link-external-filter: none;
   --link-weight: 650;
   --p-spacing: 1rem;
-  --search-icon-color: hsla(35, 27%, 55%, 1);
-  --tag-background: hsla(31, 27%, 24%, 0.1);
-  --tag-background-hover: hsla(31, 27%, 24%, 0.2);
-  --tag-border-color: hsla(31, 27%, 24%, 0.15);
-  --tag-border-color-hover: hsla(31, 27%, 24%, 0.15);
+  --search-icon-color: #ab916d;
+  --tag-background: #4e3e2d1a;
+  --tag-background-hover: #4e3e2d33;
+  --tag-border-color: #4e3e2d26;
+  --tag-border-color-hover: #4e3e2d26;
   --tag-border-width: 0px;
-  --tag-color: hsl(31, 27%, 24%);
-  --tag-color-hover: hsl(31, 27%, 24%);
+  --tag-color: #4e3e2d;
+  --tag-color-hover: #4e3e2d;
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-radius: 1em;
   --tag-weight: inherit;
-  --text-accent: hsl(31, 27%, 24%);
-  --text-accent-hover: hsl(calc(31 - 5), calc(27% * 1.16), calc(24% * 1.34));
-  --text-faint: hsla(35, 27%, 55%, 1);
-  --text-highlight-bg: rgba(249, 207, 81, 0.4);
-  --text-muted: hsla(34, 39%, 74%, 1);
-  --text-normal: hsla(32, 48%, 85%, 1);
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  --text-accent: #4e3e2d;
+  --text-accent-hover: #6c4f38;
+  --text-faint: #ab916d;
+  --text-highlight-bg: #f9cf5166;
+  --text-muted: #d7c0a3;
+  --text-normal: #ebdac6;
+  -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: var(--background-primary);
-  caret-color: hsl(31, 27%, 24%);
-  color: hsla(34, 39%, 74%, 1);
+  background-color: light-dark(#2e261f, #f8f5f1);
+  caret-color: #4e3e2d;
+  color: #d7c0a3;
   contain: initial;
   font-family:
     "??",
@@ -632,148 +465,122 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --background-modifier-border: hsla(28, 22%, 19%, 1);
-  --background-modifier-border-focus: color-mix(
-    in srgb,
-    hsla(31, 27%, 25%, 1) 40%,
-    hsla(28, 22%, 19%, 1)
-  );
-  --background-modifier-border-hover: color-mix(
-    in srgb,
-    hsla(31, 27%, 25%, 1) 40%,
-    hsla(28, 22%, 19%, 1)
-  );
-  --background-modifier-hover: rgba(0, 0, 0, 0.3);
-  --background-primary: hsla(30, 19%, 15%, 1);
-  --bold-color: hsla(4, 88%, 61%, 1);
+  --background-modifier-border: #3b3026;
+  --background-modifier-border-focus: color-mix(in srgb, #51402f 40%, #3b3026);
+  --background-modifier-border-hover: color-mix(in srgb, #51402f 40%, #3b3026);
+  --background-modifier-hover: #0000004d;
+  --background-primary: #2e261f;
+  --bold-color: #f35044;
   --callout-content-background: color-mix(
     in srgb,
-    hsla(30, 17%, 14%, 1) 50%,
+    #2a241e 50%,
     var(--editor-bg-color)
   );
-  --checkbox-border-color: hsla(31, 27%, 25%, 1);
-  --checkbox-border-color-hover: hsla(33, 27%, 33%, 1);
-  --checkbox-color: hsla(154, 75%, 26%, 1);
-  --checkbox-color-hover: hsla(155, 78%, 29%, 1);
-  --checkbox-marker-color: white;
-  --collapse-icon-color: hsla(33, 27%, 33%, 1);
-  --collapse-icon-color-collapsed: hsla(33, 27%, 33%, 1);
-  --color-accent-2: hsl(calc(31 - 5), calc(27% * 1.16), calc(24% * 1.34));
+  --checkbox-border-color: #51402f;
+  --checkbox-border-color-hover: #6b563d;
+  --checkbox-color: #117449;
+  --checkbox-color-hover: #108454;
+  --checkbox-marker-color: #ffffff;
+  --collapse-icon-color: #6b563d;
+  --collapse-icon-color-collapsed: #6b563d;
+  --color-accent-2: #6c4f38;
   --color-accent-hsl: 31, 27%, 24%;
-  --color-base-100: hsla(32, 48%, 85%, 1);
-  --color-base-30: hsla(31, 27%, 25%, 1);
-  --color-base-35: hsla(33, 27%, 33%, 1);
-  --color-base-40: hsla(34, 24%, 46%, 1);
-  --color-blue: rgb(63, 137, 176);
-  --color-cyan: rgb(70, 169, 180);
-  --color-green: rgb(80, 196, 101);
-  --color-orange: rgb(203, 128, 53);
-  --color-pink: rgb(180, 100, 100);
-  --color-purple: rgb(113, 97, 194);
-  --color-red: rgb(192, 78, 78);
+  --color-base-100: #ebdac6;
+  --color-base-30: #51402f;
+  --color-base-35: #6b563d;
+  --color-base-40: #917959;
+  --color-blue: #3f89b0;
+  --color-cyan: #46a9b4;
+  --color-green: #50c465;
+  --color-orange: #cb8035;
+  --color-pink: #b46464;
+  --color-purple: #7161c2;
+  --color-red: #c04e4e;
   --editor-bg-color: var(--background-primary);
   --graph-line: transparent;
-  --graph-node-tag: hsla(4, 88%, 61%, 1);
-  --graph-node-unresolved: hsla(42, 79%, 51%, 1);
-  --h1-color: hsla(32, 48%, 85%, 1);
-  --icon-color: color-mix(
-    in srgb,
-    hsla(33, 27%, 33%, 1) 30%,
-    hsla(34, 24%, 46%, 1)
-  );
-  --inline-title-color: hsla(32, 48%, 85%, 1);
+  --graph-node-tag: #f35044;
+  --graph-node-unresolved: #e5aa1f;
+  --h1-color: #ebdac6;
+  --icon-color: color-mix(in srgb, #6b563d 30%, #917959);
+  --inline-title-color: #ebdac6;
   --interactive-accent-hsl: 31, 27%, 24%;
-  --italic-color: hsla(194, 59%, 56%, 1);
-  --link-color: hsla(42, 79%, 51%, 1);
-  --link-color-hover: hsla(43, 69%, 63%, 1);
-  --link-external-color: hsla(154, 57%, 42%, 1);
-  --link-external-color-hover: hsla(152, 51%, 54%, 1);
-  --prompt-input-background: var(--background-primary);
-  --search-icon-color: hsla(34, 39%, 74%, 1);
-  --tag-background: rgba(0, 0, 0, 0.3);
-  --tag-background-hover: rgba(0, 0, 0, 0.2);
-  --tag-border-color: rgba(0, 0, 0, 0.25);
-  --tag-border-color-hover: rgba(0, 0, 0, 0.35);
+  --italic-color: #4db2d1;
+  --link-color: #e5aa1f;
+  --link-color-hover: #e2bd60;
+  --link-external-color: #2ea873;
+  --link-external-color-hover: #4ec68e;
+  --search-icon-color: #d7c0a3;
+  --tag-background: #0000004d;
+  --tag-background-hover: #00000033;
+  --tag-border-color: #00000040;
+  --tag-border-color-hover: #00000059;
   --tag-border-width: 1px;
-  --tag-color: hsla(197, 48%, 49%, 1);
-  --tag-color-hover: hsla(194, 59%, 56%, 1);
-  --text-accent: hsl(31, 27%, 24%);
-  --text-accent-hover: hsl(calc(31 - 5), calc(27% * 1.16), calc(24% * 1.34));
-  --text-faint: hsla(34, 24%, 46%, 1);
-  --text-highlight-bg: hsla(44, 100%, 50%, 0.2);
-  --text-muted: hsla(35, 27%, 55%, 1);
-  --text-normal: hsla(34, 39%, 74%, 1);
-  --background-modifier-border: hsla(28, 22%, 19%, 1);
-  --background-modifier-border-focus: color-mix(
-    in srgb,
-    hsla(31, 27%, 25%, 1) 40%,
-    hsla(28, 22%, 19%, 1)
-  );
-  --background-modifier-border-hover: color-mix(
-    in srgb,
-    hsla(31, 27%, 25%, 1) 40%,
-    hsla(28, 22%, 19%, 1)
-  );
-  --background-modifier-hover: rgba(0, 0, 0, 0.3);
-  --background-primary: hsla(30, 19%, 15%, 1);
-  --bold-color: hsla(4, 88%, 61%, 1);
+  --tag-color: #4197b9;
+  --tag-color-hover: #4db2d1;
+  --text-accent: #4e3e2d;
+  --text-accent-hover: #6c4f38;
+  --text-faint: #917959;
+  --text-highlight-bg: #ffbb0033;
+  --text-muted: #ab916d;
+  --text-normal: #d7c0a3;
+  --background-modifier-border: #3b3026;
+  --background-modifier-border-focus: color-mix(in srgb, #51402f 40%, #3b3026);
+  --background-modifier-border-hover: color-mix(in srgb, #51402f 40%, #3b3026);
+  --background-modifier-hover: #0000004d;
+  --background-primary: #2e261f;
+  --bold-color: #f35044;
   --callout-content-background: color-mix(
     in srgb,
-    hsla(30, 17%, 14%, 1) 50%,
+    #2a241e 50%,
     var(--editor-bg-color)
   );
-  --checkbox-border-color: hsla(31, 27%, 25%, 1);
-  --checkbox-border-color-hover: hsla(33, 27%, 33%, 1);
-  --checkbox-color: hsla(154, 75%, 26%, 1);
-  --checkbox-color-hover: hsla(155, 78%, 29%, 1);
-  --checkbox-marker-color: white;
-  --collapse-icon-color: hsla(33, 27%, 33%, 1);
-  --collapse-icon-color-collapsed: hsla(33, 27%, 33%, 1);
-  --color-accent-2: hsl(calc(31 - 5), calc(27% * 1.16), calc(24% * 1.34));
+  --checkbox-border-color: #51402f;
+  --checkbox-border-color-hover: #6b563d;
+  --checkbox-color: #117449;
+  --checkbox-color-hover: #108454;
+  --checkbox-marker-color: #ffffff;
+  --collapse-icon-color: #6b563d;
+  --collapse-icon-color-collapsed: #6b563d;
+  --color-accent-2: #6c4f38;
   --color-accent-hsl: 31, 27%, 24%;
-  --color-base-100: hsla(32, 48%, 85%, 1);
-  --color-base-30: hsla(31, 27%, 25%, 1);
-  --color-base-35: hsla(33, 27%, 33%, 1);
-  --color-base-40: hsla(34, 24%, 46%, 1);
-  --color-blue: rgb(63, 137, 176);
-  --color-cyan: rgb(70, 169, 180);
-  --color-green: rgb(80, 196, 101);
-  --color-orange: rgb(203, 128, 53);
-  --color-pink: rgb(180, 100, 100);
-  --color-purple: rgb(113, 97, 194);
-  --color-red: rgb(192, 78, 78);
+  --color-base-100: #ebdac6;
+  --color-base-30: #51402f;
+  --color-base-35: #6b563d;
+  --color-base-40: #917959;
+  --color-blue: #3f89b0;
+  --color-cyan: #46a9b4;
+  --color-green: #50c465;
+  --color-orange: #cb8035;
+  --color-pink: #b46464;
+  --color-purple: #7161c2;
+  --color-red: #c04e4e;
   --editor-bg-color: var(--background-primary);
   --graph-line: transparent;
-  --graph-node-tag: hsla(4, 88%, 61%, 1);
-  --graph-node-unresolved: hsla(42, 79%, 51%, 1);
-  --h1-color: hsla(32, 48%, 85%, 1);
-  --icon-color: color-mix(
-    in srgb,
-    hsla(33, 27%, 33%, 1) 30%,
-    hsla(34, 24%, 46%, 1)
-  );
-  --inline-title-color: hsla(32, 48%, 85%, 1);
+  --graph-node-tag: #f35044;
+  --graph-node-unresolved: #e5aa1f;
+  --h1-color: #ebdac6;
+  --icon-color: color-mix(in srgb, #6b563d 30%, #917959);
+  --inline-title-color: #ebdac6;
   --interactive-accent-hsl: 31, 27%, 24%;
-  --italic-color: hsla(194, 59%, 56%, 1);
-  --link-color: hsla(42, 79%, 51%, 1);
-  --link-color-hover: hsla(43, 69%, 63%, 1);
-  --link-external-color: hsla(154, 57%, 42%, 1);
-  --link-external-color-hover: hsla(152, 51%, 54%, 1);
-  --prompt-input-background: var(--background-primary);
-  --search-icon-color: hsla(34, 39%, 74%, 1);
-  --tag-background: rgba(0, 0, 0, 0.3);
-  --tag-background-hover: rgba(0, 0, 0, 0.2);
-  --tag-border-color: rgba(0, 0, 0, 0.25);
-  --tag-border-color-hover: rgba(0, 0, 0, 0.35);
+  --italic-color: #4db2d1;
+  --link-color: #e5aa1f;
+  --link-color-hover: #e2bd60;
+  --link-external-color: #2ea873;
+  --link-external-color-hover: #4ec68e;
+  --search-icon-color: #d7c0a3;
+  --tag-background: #0000004d;
+  --tag-background-hover: #00000033;
+  --tag-border-color: #00000040;
+  --tag-border-color-hover: #00000059;
   --tag-border-width: 1px;
-  --tag-color: hsla(197, 48%, 49%, 1);
-  --tag-color-hover: hsla(194, 59%, 56%, 1);
-  --text-accent: hsl(31, 27%, 24%);
-  --text-accent-hover: hsl(calc(31 - 5), calc(27% * 1.16), calc(24% * 1.34));
-  --text-faint: hsla(34, 24%, 46%, 1);
-  --text-highlight-bg: hsla(44, 100%, 50%, 0.2);
-  --text-muted: hsla(35, 27%, 55%, 1);
-  --text-normal: hsla(34, 39%, 74%, 1);
+  --tag-color: #4197b9;
+  --tag-color-hover: #4db2d1;
+  --text-accent: #4e3e2d;
+  --text-accent-hover: #6c4f38;
+  --text-faint: #917959;
+  --text-highlight-bg: #ffbb0033;
+  --text-muted: #ab916d;
+  --text-normal: #d7c0a3;
 }
 /* END DARK */
 /* START LIGHT */
@@ -792,140 +599,122 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --background-modifier-border: hsla(37, 38%, 83%, 1);
-  --background-modifier-border-focus: color-mix(
-    in hsl,
-    hsla(34, 37%, 70%, 1) 60%,
-    hsla(37, 38%, 83%, 1)
-  );
-  --background-modifier-border-hover: color-mix(
-    in hsl,
-    hsla(34, 37%, 70%, 1) 60%,
-    hsla(37, 38%, 83%, 1)
-  );
-  --background-modifier-hover: rgba(255, 255, 255, 0.5);
-  --background-primary: hsla(35, 36%, 96%, 1);
-  --bold-color: hsla(4, 56%, 48%, 1);
+  --background-modifier-border: #e4d8c3;
+  --background-modifier-border-focus: color-mix(in hsl, #cfb696 60%, #e4d8c3);
+  --background-modifier-border-hover: color-mix(in hsl, #cfb696 60%, #e4d8c3);
+  --background-modifier-hover: #ffffff80;
+  --background-primary: #f8f5f1;
+  --bold-color: #bf3f36;
   --callout-content-background: color-mix(
     in srgb,
-    hsla(30, 17%, 14%, 1) 50%,
+    #2a241e 50%,
     var(--background-primary)
   );
-  --checkbox-border-color: hsla(37, 38%, 83%, 1);
-  --checkbox-border-color-hover: hsla(34, 37%, 70%, 1);
-  --checkbox-color: hsla(149, 50%, 39%, 1);
-  --checkbox-color-hover: hsla(148, 48%, 47%, 1);
-  --checkbox-marker-color: white;
-  --collapse-icon-color: hsla(34, 37%, 70%, 1);
-  --collapse-icon-color-collapsed: hsla(34, 37%, 70%, 1);
-  --color-accent-2: hsl(calc(31 - 3), calc(27% * 1.33), calc(24% * 1.19));
+  --checkbox-border-color: #e4d8c3;
+  --checkbox-border-color-hover: #cfb696;
+  --checkbox-color: #329562;
+  --checkbox-color-hover: #3eb174;
+  --checkbox-marker-color: #ffffff;
+  --collapse-icon-color: #cfb696;
+  --collapse-icon-color-collapsed: #cfb696;
+  --color-accent-2: #63472f;
   --color-accent-hsl: 31, 27%, 24%;
-  --color-base-100: hsla(33, 54%, 17%, 1);
-  --color-base-30: hsla(37, 38%, 83%, 1);
-  --color-base-35: hsla(34, 37%, 70%, 1);
-  --color-base-40: hsla(34, 29%, 60%, 1);
-  --color-blue: hsla(206, 57%, 44%, 1);
-  --color-cyan: hsla(178, 39%, 49%, 1);
-  --color-green: hsla(146, 37%, 49%, 1);
-  --color-orange: hsla(30, 66%, 52%, 1);
-  --color-pink: hsla(351, 44%, 61%, 1);
-  --color-purple: hsla(249, 39%, 60%, 1);
-  --color-red: hsla(0, 58%, 53%, 1);
+  --color-base-100: #432e14;
+  --color-base-30: #e4d8c3;
+  --color-base-35: #cfb696;
+  --color-base-40: #b79d7b;
+  --color-blue: #3079b0;
+  --color-cyan: #4caeaa;
+  --color-green: #4fab77;
+  --color-orange: #d58534;
+  --color-pink: #c7707d;
+  --color-purple: #7d71c1;
+  --color-red: #cd4242;
   --editor-bg-color: var(--background-primary);
   --graph-line: transparent;
-  --graph-node-tag: hsla(4, 72%, 55%, 1);
-  --graph-node-unresolved: hsla(43, 83%, 57%, 1);
-  --h1-color: hsla(33, 54%, 17%, 1);
-  --icon-color: hsla(34, 29%, 60%, 1);
-  --inline-title-color: hsla(33, 54%, 17%, 1);
+  --graph-node-tag: #df453a;
+  --graph-node-unresolved: #ecb936;
+  --h1-color: #432e14;
+  --icon-color: #b79d7b;
+  --inline-title-color: #432e14;
   --interactive-accent-hsl: 31, 27%, 24%;
-  --italic-color: hsla(200, 64%, 37%, 1);
-  --link-color: hsla(40, 79%, 47%, 1);
-  --link-color-hover: hsla(43, 83%, 57%, 1);
-  --link-external-color: hsla(149, 50%, 39%, 1);
-  --link-external-color-hover: hsla(148, 48%, 47%, 1);
-  --prompt-input-background: var(--background-primary);
-  --search-icon-color: hsla(34, 29%, 60%, 1);
-  --tag-background: rgba(255, 255, 255, 0.5);
-  --tag-background-hover: rgba(255, 255, 255, 0.8);
-  --tag-border-color: rgba(0, 0, 0, 0.15);
-  --tag-border-color-hover: rgba(0, 0, 0, 0.25);
+  --italic-color: #22729b;
+  --link-color: #d79719;
+  --link-color-hover: #ecb936;
+  --link-external-color: #329562;
+  --link-external-color-hover: #3eb174;
+  --search-icon-color: #b79d7b;
+  --tag-background: #ffffff80;
+  --tag-background-hover: #ffffffcc;
+  --tag-border-color: #00000026;
+  --tag-border-color-hover: #00000040;
   --tag-border-width: 1px;
-  --tag-color: hsla(200, 64%, 37%, 1);
-  --tag-color-hover: hsla(202, 66%, 48%, 1);
-  --text-accent: hsl(31, 27%, 24%);
-  --text-accent-hover: hsl(calc(31 - 5), calc(27% * 1.16), calc(24% * 1.34));
-  --text-faint: hsla(34, 29%, 60%, 1);
-  --text-highlight-bg: hsla(44, 100%, 50%, 0.2);
-  --text-muted: hsla(35, 28%, 40%, 1);
-  --text-normal: hsla(31, 45%, 24%, 1);
-  --background-modifier-border: hsla(37, 38%, 83%, 1);
-  --background-modifier-border-focus: color-mix(
-    in hsl,
-    hsla(34, 37%, 70%, 1) 60%,
-    hsla(37, 38%, 83%, 1)
-  );
-  --background-modifier-border-hover: color-mix(
-    in hsl,
-    hsla(34, 37%, 70%, 1) 60%,
-    hsla(37, 38%, 83%, 1)
-  );
-  --background-modifier-hover: rgba(255, 255, 255, 0.5);
-  --background-primary: hsla(35, 36%, 96%, 1);
-  --bold-color: hsla(4, 56%, 48%, 1);
+  --tag-color: #22729b;
+  --tag-color-hover: #2a90cb;
+  --text-accent: #4e3e2d;
+  --text-accent-hover: #6c4f38;
+  --text-faint: #b79d7b;
+  --text-highlight-bg: #ffbb0033;
+  --text-muted: #836b49;
+  --text-normal: #593e22;
+  --background-modifier-border: #e4d8c3;
+  --background-modifier-border-focus: color-mix(in hsl, #cfb696 60%, #e4d8c3);
+  --background-modifier-border-hover: color-mix(in hsl, #cfb696 60%, #e4d8c3);
+  --background-modifier-hover: #ffffff80;
+  --background-primary: #f8f5f1;
+  --bold-color: #bf3f36;
   --callout-content-background: color-mix(
     in srgb,
-    hsla(30, 17%, 14%, 1) 50%,
+    #2a241e 50%,
     var(--background-primary)
   );
-  --checkbox-border-color: hsla(37, 38%, 83%, 1);
-  --checkbox-border-color-hover: hsla(34, 37%, 70%, 1);
-  --checkbox-color: hsla(149, 50%, 39%, 1);
-  --checkbox-color-hover: hsla(148, 48%, 47%, 1);
-  --checkbox-marker-color: white;
-  --collapse-icon-color: hsla(34, 37%, 70%, 1);
-  --collapse-icon-color-collapsed: hsla(34, 37%, 70%, 1);
-  --color-accent-2: hsl(calc(31 - 3), calc(27% * 1.33), calc(24% * 1.19));
+  --checkbox-border-color: #e4d8c3;
+  --checkbox-border-color-hover: #cfb696;
+  --checkbox-color: #329562;
+  --checkbox-color-hover: #3eb174;
+  --checkbox-marker-color: #ffffff;
+  --collapse-icon-color: #cfb696;
+  --collapse-icon-color-collapsed: #cfb696;
+  --color-accent-2: #63472f;
   --color-accent-hsl: 31, 27%, 24%;
-  --color-base-100: hsla(33, 54%, 17%, 1);
-  --color-base-30: hsla(37, 38%, 83%, 1);
-  --color-base-35: hsla(34, 37%, 70%, 1);
-  --color-base-40: hsla(34, 29%, 60%, 1);
-  --color-blue: hsla(206, 57%, 44%, 1);
-  --color-cyan: hsla(178, 39%, 49%, 1);
-  --color-green: hsla(146, 37%, 49%, 1);
-  --color-orange: hsla(30, 66%, 52%, 1);
-  --color-pink: hsla(351, 44%, 61%, 1);
-  --color-purple: hsla(249, 39%, 60%, 1);
-  --color-red: hsla(0, 58%, 53%, 1);
+  --color-base-100: #432e14;
+  --color-base-30: #e4d8c3;
+  --color-base-35: #cfb696;
+  --color-base-40: #b79d7b;
+  --color-blue: #3079b0;
+  --color-cyan: #4caeaa;
+  --color-green: #4fab77;
+  --color-orange: #d58534;
+  --color-pink: #c7707d;
+  --color-purple: #7d71c1;
+  --color-red: #cd4242;
   --editor-bg-color: var(--background-primary);
   --graph-line: transparent;
-  --graph-node-tag: hsla(4, 72%, 55%, 1);
-  --graph-node-unresolved: hsla(43, 83%, 57%, 1);
-  --h1-color: hsla(33, 54%, 17%, 1);
-  --icon-color: hsla(34, 29%, 60%, 1);
-  --inline-title-color: hsla(33, 54%, 17%, 1);
+  --graph-node-tag: #df453a;
+  --graph-node-unresolved: #ecb936;
+  --h1-color: #432e14;
+  --icon-color: #b79d7b;
+  --inline-title-color: #432e14;
   --interactive-accent-hsl: 31, 27%, 24%;
-  --italic-color: hsla(200, 64%, 37%, 1);
-  --link-color: hsla(40, 79%, 47%, 1);
-  --link-color-hover: hsla(43, 83%, 57%, 1);
-  --link-external-color: hsla(149, 50%, 39%, 1);
-  --link-external-color-hover: hsla(148, 48%, 47%, 1);
-  --prompt-input-background: var(--background-primary);
-  --search-icon-color: hsla(34, 29%, 60%, 1);
-  --tag-background: rgba(255, 255, 255, 0.5);
-  --tag-background-hover: rgba(255, 255, 255, 0.8);
-  --tag-border-color: rgba(0, 0, 0, 0.15);
-  --tag-border-color-hover: rgba(0, 0, 0, 0.25);
+  --italic-color: #22729b;
+  --link-color: #d79719;
+  --link-color-hover: #ecb936;
+  --link-external-color: #329562;
+  --link-external-color-hover: #3eb174;
+  --search-icon-color: #b79d7b;
+  --tag-background: #ffffff80;
+  --tag-background-hover: #ffffffcc;
+  --tag-border-color: #00000026;
+  --tag-border-color-hover: #00000040;
   --tag-border-width: 1px;
-  --tag-color: hsla(200, 64%, 37%, 1);
-  --tag-color-hover: hsla(202, 66%, 48%, 1);
-  --text-accent: hsl(31, 27%, 24%);
-  --text-accent-hover: hsl(calc(31 - 5), calc(27% * 1.16), calc(24% * 1.34));
-  --text-faint: hsla(34, 29%, 60%, 1);
-  --text-highlight-bg: hsla(44, 100%, 50%, 0.2);
-  --text-muted: hsla(35, 28%, 40%, 1);
-  --text-normal: hsla(31, 45%, 24%, 1);
+  --tag-color: #22729b;
+  --tag-color-hover: #2a90cb;
+  --text-accent: #4e3e2d;
+  --text-accent-hover: #6c4f38;
+  --text-faint: #b79d7b;
+  --text-highlight-bg: #ffbb0033;
+  --text-muted: #836b49;
+  --text-normal: #593e22;
 }
 /* END LIGHT */
 /* CALLOUTS */
@@ -934,214 +723,214 @@ html {
   .callout {
     background-color: color-mix(
       in srgb,
-      rgba(240, 180, 225) 32.5%,
-      var(--editor-bg-color)
+      #f0b4e1 32.5%,
+      light-dark(light-dark(#2e261f, #f8f5f1), light-dark(#2e261f, #f8f5f1))
     );
-    border-color: rgba(240, 180, 225, 0.1);
+    border-color: #f0b4e11a;
     border-radius: 8px;
     border-style: solid;
     border-width: 0px;
     box-shadow:
-      inset 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
-      0px 2px 6px 0px rgba(0, 0, 0, 0.28);
+      inset 0px 0px 0px 1px #0000002e,
+      0px 2px 6px 0px #00000047;
     margin: 1em 0;
     mix-blend-mode: normal;
     overflow: hidden;
     padding: 0;
     background-color: color-mix(
       in srgb,
-      rgba(240, 180, 225) 32.5%,
-      var(--editor-bg-color)
+      #f0b4e1 32.5%,
+      light-dark(light-dark(#2e261f, #f8f5f1), light-dark(#2e261f, #f8f5f1))
     );
     overflow-x: auto;
     overflow-y: hidden;
     &[data-callout] {
       background-color: color-mix(
         in srgb,
-        rgba(240, 180, 225) 32.5%,
-        var(--editor-bg-color)
+        #f0b4e1 32.5%,
+        light-dark(light-dark(#2e261f, #f8f5f1), light-dark(#2e261f, #f8f5f1))
       );
     }
     &[data-callout="abstract"] {
       background-color: color-mix(
         in srgb,
-        rgba(240, 180, 225) 32.5%,
-        var(--editor-bg-color)
+        #f0b4e1 32.5%,
+        light-dark(light-dark(#2e261f, #f8f5f1), light-dark(#2e261f, #f8f5f1))
       );
     }
     &[data-callout="summary"] {
       background-color: color-mix(
         in srgb,
-        rgba(240, 180, 225) 32.5%,
-        var(--editor-bg-color)
+        #f0b4e1 32.5%,
+        light-dark(light-dark(#2e261f, #f8f5f1), light-dark(#2e261f, #f8f5f1))
       );
     }
     &[data-callout="tldr"] {
       background-color: color-mix(
         in srgb,
-        rgba(240, 180, 225) 32.5%,
-        var(--editor-bg-color)
+        #f0b4e1 32.5%,
+        light-dark(light-dark(#2e261f, #f8f5f1), light-dark(#2e261f, #f8f5f1))
       );
     }
     &[data-callout="info"] {
       background-color: color-mix(
         in srgb,
-        rgba(240, 180, 225) 32.5%,
-        var(--editor-bg-color)
+        #f0b4e1 32.5%,
+        light-dark(light-dark(#2e261f, #f8f5f1), light-dark(#2e261f, #f8f5f1))
       );
     }
     &[data-callout="todo"] {
       background-color: color-mix(
         in srgb,
-        rgba(240, 180, 225) 32.5%,
-        var(--editor-bg-color)
+        #f0b4e1 32.5%,
+        light-dark(light-dark(#2e261f, #f8f5f1), light-dark(#2e261f, #f8f5f1))
       );
     }
     &[data-callout="important"] {
       background-color: color-mix(
         in srgb,
-        rgba(240, 180, 225) 32.5%,
-        var(--editor-bg-color)
+        #f0b4e1 32.5%,
+        light-dark(light-dark(#2e261f, #f8f5f1), light-dark(#2e261f, #f8f5f1))
       );
     }
     &[data-callout="tip"] {
       background-color: color-mix(
         in srgb,
-        rgba(240, 180, 225) 32.5%,
-        var(--editor-bg-color)
+        #f0b4e1 32.5%,
+        light-dark(light-dark(#2e261f, #f8f5f1), light-dark(#2e261f, #f8f5f1))
       );
     }
     &[data-callout="hint"] {
       background-color: color-mix(
         in srgb,
-        rgba(240, 180, 225) 32.5%,
-        var(--editor-bg-color)
+        #f0b4e1 32.5%,
+        light-dark(light-dark(#2e261f, #f8f5f1), light-dark(#2e261f, #f8f5f1))
       );
     }
     &[data-callout="success"] {
       background-color: color-mix(
         in srgb,
-        rgba(240, 180, 225) 32.5%,
-        var(--editor-bg-color)
+        #f0b4e1 32.5%,
+        light-dark(light-dark(#2e261f, #f8f5f1), light-dark(#2e261f, #f8f5f1))
       );
     }
     &[data-callout="check"] {
       background-color: color-mix(
         in srgb,
-        rgba(240, 180, 225) 32.5%,
-        var(--editor-bg-color)
+        #f0b4e1 32.5%,
+        light-dark(light-dark(#2e261f, #f8f5f1), light-dark(#2e261f, #f8f5f1))
       );
     }
     &[data-callout="done"] {
       background-color: color-mix(
         in srgb,
-        rgba(240, 180, 225) 32.5%,
-        var(--editor-bg-color)
+        #f0b4e1 32.5%,
+        light-dark(light-dark(#2e261f, #f8f5f1), light-dark(#2e261f, #f8f5f1))
       );
     }
     &[data-callout="question"] {
       background-color: color-mix(
         in srgb,
-        rgba(240, 180, 225) 32.5%,
-        var(--editor-bg-color)
+        #f0b4e1 32.5%,
+        light-dark(light-dark(#2e261f, #f8f5f1), light-dark(#2e261f, #f8f5f1))
       );
     }
     &[data-callout="help"] {
       background-color: color-mix(
         in srgb,
-        rgba(240, 180, 225) 32.5%,
-        var(--editor-bg-color)
+        #f0b4e1 32.5%,
+        light-dark(light-dark(#2e261f, #f8f5f1), light-dark(#2e261f, #f8f5f1))
       );
     }
     &[data-callout="faq"] {
       background-color: color-mix(
         in srgb,
-        rgba(240, 180, 225) 32.5%,
-        var(--editor-bg-color)
+        #f0b4e1 32.5%,
+        light-dark(light-dark(#2e261f, #f8f5f1), light-dark(#2e261f, #f8f5f1))
       );
     }
     &[data-callout="warning"] {
       background-color: color-mix(
         in srgb,
-        rgba(240, 180, 225) 32.5%,
-        var(--editor-bg-color)
+        #f0b4e1 32.5%,
+        light-dark(light-dark(#2e261f, #f8f5f1), light-dark(#2e261f, #f8f5f1))
       );
     }
     &[data-callout="caution"] {
       background-color: color-mix(
         in srgb,
-        rgba(240, 180, 225) 32.5%,
-        var(--editor-bg-color)
+        #f0b4e1 32.5%,
+        light-dark(light-dark(#2e261f, #f8f5f1), light-dark(#2e261f, #f8f5f1))
       );
     }
     &[data-callout="attention"] {
       background-color: color-mix(
         in srgb,
-        rgba(240, 180, 225) 32.5%,
-        var(--editor-bg-color)
+        #f0b4e1 32.5%,
+        light-dark(light-dark(#2e261f, #f8f5f1), light-dark(#2e261f, #f8f5f1))
       );
     }
     &[data-callout="failure"] {
       background-color: color-mix(
         in srgb,
-        rgba(240, 180, 225) 32.5%,
-        var(--editor-bg-color)
+        #f0b4e1 32.5%,
+        light-dark(light-dark(#2e261f, #f8f5f1), light-dark(#2e261f, #f8f5f1))
       );
     }
     &[data-callout="fail"] {
       background-color: color-mix(
         in srgb,
-        rgba(240, 180, 225) 32.5%,
-        var(--editor-bg-color)
+        #f0b4e1 32.5%,
+        light-dark(light-dark(#2e261f, #f8f5f1), light-dark(#2e261f, #f8f5f1))
       );
     }
     &[data-callout="missing"] {
       background-color: color-mix(
         in srgb,
-        rgba(240, 180, 225) 32.5%,
-        var(--editor-bg-color)
+        #f0b4e1 32.5%,
+        light-dark(light-dark(#2e261f, #f8f5f1), light-dark(#2e261f, #f8f5f1))
       );
     }
     &[data-callout="danger"] {
       background-color: color-mix(
         in srgb,
-        rgba(240, 180, 225) 32.5%,
-        var(--editor-bg-color)
+        #f0b4e1 32.5%,
+        light-dark(light-dark(#2e261f, #f8f5f1), light-dark(#2e261f, #f8f5f1))
       );
     }
     &[data-callout="error"] {
       background-color: color-mix(
         in srgb,
-        rgba(240, 180, 225) 32.5%,
-        var(--editor-bg-color)
+        #f0b4e1 32.5%,
+        light-dark(light-dark(#2e261f, #f8f5f1), light-dark(#2e261f, #f8f5f1))
       );
     }
     &[data-callout="bug"] {
       background-color: color-mix(
         in srgb,
-        rgba(240, 180, 225) 32.5%,
-        var(--editor-bg-color)
+        #f0b4e1 32.5%,
+        light-dark(light-dark(#2e261f, #f8f5f1), light-dark(#2e261f, #f8f5f1))
       );
     }
     &[data-callout="example"] {
       background-color: color-mix(
         in srgb,
-        rgba(240, 180, 225) 32.5%,
-        var(--editor-bg-color)
+        #f0b4e1 32.5%,
+        light-dark(light-dark(#2e261f, #f8f5f1), light-dark(#2e261f, #f8f5f1))
       );
     }
     &[data-callout="quote"] {
       background-color: color-mix(
         in srgb,
-        rgba(240, 180, 225) 32.5%,
-        var(--editor-bg-color)
+        #f0b4e1 32.5%,
+        light-dark(light-dark(#2e261f, #f8f5f1), light-dark(#2e261f, #f8f5f1))
       );
     }
     &[data-callout="cite"] {
       background-color: color-mix(
         in srgb,
-        rgba(240, 180, 225) 32.5%,
-        var(--editor-bg-color)
+        #f0b4e1 32.5%,
+        light-dark(light-dark(#2e261f, #f8f5f1), light-dark(#2e261f, #f8f5f1))
       );
     }
   }
@@ -1150,20 +939,20 @@ html {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     box-shadow:
-      inset 0px -1px 1px 0px rgba(0, 0, 0, 0.25),
-      inset 0px 1px 1px 0px rgba(255, 255, 255, 0.1);
-    color: rgb(240, 180, 225);
+      inset 0px -1px 1px 0px #00000040,
+      inset 0px 1px 1px 0px #ffffff1a;
+    color: #f0b4e1;
     display: flex;
     font-size: inherit;
     gap: 8px;
     line-height: 1.3;
     padding: 12px 16px;
     & > .callout-title-inner > p {
-      color: hsla(34, 39%, 74%, 1);
+      color: #d7c0a3;
       font-weight: 650;
     }
     .callout-title-inner {
-      color: hsla(34, 39%, 74%, 1);
+      color: #d7c0a3;
       font-weight: 650;
     }
   }
@@ -1172,10 +961,10 @@ html {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     box-shadow:
-      inset 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
-      inset 0px calc(-1 * 4px - 1px) 3px 0px rgba(0, 0, 0, 0.3);
+      inset 0px 0px 0px 1px #0000002e,
+      inset 0px -5px 3px 0px #0000004d;
     overflow-x: auto;
-    padding: 4px 16px calc(4px + 4px) 16px;
+    padding: 4px 16px 8px 16px;
   }
 }
 body {
@@ -1183,13 +972,13 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: var(--background-primary);
+  background-color: light-dark(#2e261f, #f8f5f1);
   section,
   .page > #quartz-body .sidebar {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: var(--background-primary);
+      background-color: light-dark(#2e261f, #f8f5f1);
     }
   }
   .highlight,
@@ -1351,7 +1140,7 @@ body {
     border-style: solid;
     border-top-color: transparent;
     border-width: 0px;
-    color: hsla(32, 48%, 85%, 1);
+    color: #ebdac6;
     font-family: inherit;
     font-size: 1.802em;
     font-style: normal;
@@ -1376,7 +1165,7 @@ body {
     border-style: solid;
     border-top-color: transparent;
     border-width: 0px;
-    color: hsla(32, 48%, 85%, 1);
+    color: #ebdac6;
     font-family: inherit;
     font-size: 1.602em;
     font-style: normal;
@@ -1401,7 +1190,7 @@ body {
     border-style: solid;
     border-top-color: transparent;
     border-width: 0px;
-    color: hsla(32, 48%, 85%, 1);
+    color: #ebdac6;
     font-family: inherit;
     font-size: 1.424em;
     font-style: normal;
@@ -1426,7 +1215,7 @@ body {
     border-style: solid;
     border-top-color: transparent;
     border-width: 0px;
-    color: hsla(32, 48%, 85%, 1);
+    color: #ebdac6;
     font-family: inherit;
     font-size: 1.266em;
     font-style: normal;
@@ -1451,7 +1240,7 @@ body {
     border-style: solid;
     border-top-color: transparent;
     border-width: 0px;
-    color: hsla(32, 48%, 85%, 1);
+    color: #ebdac6;
     font-family: inherit;
     font-size: 1.125em;
     font-style: normal;
@@ -1476,7 +1265,7 @@ body {
     border-style: solid;
     border-top-color: transparent;
     border-width: 0px;
-    color: hsla(32, 48%, 85%, 1);
+    color: #ebdac6;
     font-family: inherit;
     font-size: 1em;
     font-style: normal;
@@ -1494,7 +1283,7 @@ body {
   }
   /* CODE */
   pre {
-    background-color: hsla(30, 17%, 14%, 1);
+    background-color: #2a241e;
     border: 0px solid transparent;
     border-radius: 8px;
     min-height: 38px;
@@ -1511,10 +1300,10 @@ body {
   }
   code {
     -webkit-box-decoration-break: clone;
-    background-color: hsla(30, 17%, 14%, 1);
+    background-color: #2a241e;
     border: 0px solid transparent;
     border-radius: 8px;
-    color: hsla(34, 39%, 74%, 1);
+    color: #d7c0a3;
     font-family:
       "??", "Cascadia Code", ui-monospace, SFMono-Regular, "Cascadia Mono",
       "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
@@ -1576,7 +1365,7 @@ body {
     background-color: transparent;
     border-radius: 8px;
     box-shadow: none;
-    color: hsla(35, 27%, 55%, 1);
+    color: #ab916d;
     display: flex;
     font-family:
       "??",
@@ -1605,7 +1394,7 @@ body {
       "cv11" 1,
       "cv12" 0,
       "cv13" 0;
-    font-size: calc(16px * 0.8);
+    font-size: 12.8px;
     font-weight: 550;
     height: auto;
     inset-inline-end: 0;
@@ -1616,10 +1405,10 @@ body {
     top: 0;
     transition: 70ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
     &:hover {
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: #0000004d;
       box-shadow:
-        inset 0px 0px 0px 1px rgba(0, 0, 0, 0.39),
-        0px 2px 4px -2px rgba(0, 0, 0, 0.39);
+        inset 0px 0px 0px 1px #00000063,
+        0px 2px 4px -2px #00000063;
     }
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -1627,7 +1416,7 @@ body {
   }
   /* METADATA */
   .content-meta {
-    color: hsla(35, 27%, 55%, 1);
+    color: #ab916d;
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {
@@ -1644,7 +1433,7 @@ body {
       border-style: solid;
       border-top-color: transparent;
       border-width: 0px;
-      color: hsla(32, 48%, 85%, 1);
+      color: #ebdac6;
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1658,7 +1447,7 @@ body {
       text-transform: normal;
     }
     ul li {
-      color: hsla(34, 24%, 46%, 1);
+      color: #917959;
       font-weight: 550;
     }
   }
@@ -1672,16 +1461,16 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: hsla(32, 48%, 85%, 1);
+      color: #ebdac6;
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: var(--background-primary);
+        background-color: light-dark(#2e261f, #f8f5f1);
       }
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
-        color: hsla(34, 39%, 74%, 1);
+        color: #d7c0a3;
         text-overflow: ellipsis;
         position: relative;
         & > svg {
@@ -1723,7 +1512,7 @@ body {
         position: relative;
         a {
           border-radius: 4px;
-          color: hsla(35, 27%, 55%, 1);
+          color: #ab916d;
           cursor: pointer;
           display: flex;
           font-size: 16px;
@@ -1736,14 +1525,14 @@ body {
             transform 140ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
           &.active,
           &:hover {
-            background-color: rgba(0, 0, 0, 0.125);
+            background-color: #00000020;
             box-shadow:
-              inset 0px 0px 0px 1px rgba(0, 0, 0, 0.27),
-              inset 0px calc(-1 * 2px) 0px 2px rgba(0, 0, 0, 0.24),
-              0px 2px 3px 0px rgba(0, 0, 0, 0.22);
-            color: hsla(35, 27%, 55%, 1);
+              inset 0px 0px 0px 1px #00000045,
+              inset 0px -2px 0px 2px #0000003d,
+              0px 2px 3px 0px #00000038;
+            color: #ab916d;
             font-weight: inherit;
-            padding: calc(4px) 8px calc(4px + 2px) 24px;
+            padding: 4px 8px 6px 24px;
           }
           &[data-for$="/index"] {
             padding-inline-start: 8px;
@@ -1769,7 +1558,7 @@ body {
   }
   /* TOC */
   .toc {
-    color: hsla(32, 48%, 85%, 1);
+    color: #ebdac6;
     button.toc-header {
       h3 {
         background: transparent;
@@ -1780,7 +1569,7 @@ body {
         border-style: solid;
         border-top-color: transparent;
         border-width: 0px;
-        color: hsla(32, 48%, 85%, 1);
+        color: #ebdac6;
         font-family: inherit;
         font-size: 1.424em;
         font-style: normal;
@@ -1793,13 +1582,13 @@ body {
         text-align: left;
         text-transform: normal;
       }
-      color: hsla(32, 48%, 85%, 1);
+      color: #ebdac6;
       color: inherit;
     }
     ul.toc-content.overflow {
       li,
       li > a {
-        color: hsla(35, 27%, 55%, 1);
+        color: #ab916d;
         font-weight: inherit;
         font-size: 16px;
       }
@@ -1818,7 +1607,7 @@ body {
       border-style: solid;
       border-top-color: transparent;
       border-width: 0px;
-      color: hsla(32, 48%, 85%, 1);
+      color: #ebdac6;
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1882,12 +1671,12 @@ body {
   .search {
     & > .search-button {
       -webkit-app-region: no-drag;
-      background: hsla(24, 18%, 11%, 1);
+      background: #211b17;
       border: 1px solid transparent;
-      border-radius: calc(12px - 2px);
-      color: hsla(34, 39%, 74%, 1);
+      border-radius: 10px;
+      color: #d7c0a3;
       font-family: inherit;
-      font-size: calc(16px * 0.937);
+      font-size: 14.992px;
       height: 40px;
       outline: none;
       padding: 4px 8px;
@@ -1898,20 +1687,22 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: var(--background-primary);
-        border: 0.5pt solid
-          color-mix(in srgb, hsla(31, 27%, 25%, 1) 40%, hsla(28, 22%, 19%, 1));
+        background-color: light-dark(#2e261f, #f8f5f1);
+        border: 0.5pt solid color-mix(in srgb, #51402f 40%, #3b3026);
         border-radius: 12px;
         box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.271),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.312),
-          0px 30px 90px rgba(0, 0, 0, 0.4);
+          0px 1.8px 7.3px #00000045,
+          0px 6.3px 24.7px #00000050,
+          0px 30px 90px #00000066;
         margin: 12vh auto;
         & > input {
-          background: var(--prompt-input-background);
-          background-color: var(--background-primary);
+          background: light-dark(
+            light-dark(#2e261f, #f8f5f1),
+            light-dark(#2e261f, #f8f5f1)
+          );
+          background-color: light-dark(#2e261f, #f8f5f1);
           border: none;
-          border-bottom: 1px solid hsla(33, 20%, 17%, 1);
+          border-bottom: 1px solid #342c23;
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1923,7 +1714,7 @@ body {
           background: transparent;
         }
         & > * {
-          color: hsla(34, 39%, 74%, 1);
+          color: #d7c0a3;
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1935,8 +1726,8 @@ body {
           }
           & .highlight {
             font-weight: 650;
-            background-color: hsla(44, 100%, 50%, 0.2);
-            color: hsla(34, 39%, 74%, 1);
+            background-color: #ffbb0033;
+            color: #d7c0a3;
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1952,13 +1743,13 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: rgba(0, 0, 0, 0.3);
+                background-color: #0000004d;
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: hsla(34, 39%, 74%, 1);
+                color: #d7c0a3;
                 &.match-tag {
-                  color: hsla(197, 48%, 49%, 1);
+                  color: #4197b9;
                 }
               }
             }
@@ -2020,13 +1811,13 @@ body {
   /* POPOVER */
   .popover {
     animation: none;
-    background-color: var(--background-primary);
+    background-color: light-dark(#2e261f, #f8f5f1);
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow:
-      0px 1px 2px rgba(0, 0, 0, 0.228),
-      0px 3.4px 6.7px rgba(0, 0, 0, 0.242),
-      0px 15px 30px rgba(0, 0, 0, 0.27);
+      0px 1px 2px #0000003a,
+      0px 3.4px 6.7px #0000003e,
+      0px 15px 30px #00000045;
     display: flex;
     max-height: 95vh;
     position: absolute;
@@ -2038,7 +1829,7 @@ body {
     border: unset;
     & .popover-inner {
       border: 1px solid transparent;
-      background-color: var(--background-primary);
+      background-color: light-dark(#2e261f, #f8f5f1);
 
       border-radius: 8px;
     }

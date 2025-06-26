@@ -296,14 +296,14 @@ manifestCollection.forEach((manifest) => {
         // Static version
         writePrettier(
           `./converted_app_static.css`,
-          generateStatic(result),
+          generateStatic(result, themeNameLocal),
           "utf8",
         );
         // Write extracted version to speed up later processing
         const cssAtomicString = fs.readFileSync(`./converted_app.css`, "utf8");
         const extractResult = extractCSS(cssAtomicString);
         const staticExctractResult = extractCSS(
-          generateStatic(cssAtomicString),
+          generateStatic(cssAtomicString, themeNameLocal),
         );
         writePrettier(`./converted_app_extracted.css`, extractResult, "utf8");
         writePrettier(
@@ -323,7 +323,7 @@ manifestCollection.forEach((manifest) => {
     const obsidianCSS = fs.readFileSync("./converted_app.css", "utf8");
 
     let result = cleanCSS(obsidianCSS, splitCombinedRules(cssString));
-    let staticResult = generateStatic(result);
+    let staticResult = generateStatic(result, themeNameLocal);
 
     // Theme variations (for style settings)
     const styleSettings = extractStyleSettings(cssString);
@@ -489,7 +489,11 @@ manifestCollection.forEach((manifest) => {
     // Write the main theme CSS to the atomic file
     writePrettier(atomicFile, result, "utf8");
     // Write the static custom properties to the atomic file
-    writePrettier(staticFile, generateStatic(staticResult), "utf8");
+    writePrettier(
+      staticFile,
+      generateStatic(staticResult, themeNameLocal),
+      "utf8",
+    );
     // Write extracted version to speed up later processing
     const cssAtomicString = fs.readFileSync(atomicFile, "utf8");
     const extractResult = extractCSS(cssAtomicString);

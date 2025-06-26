@@ -24,7 +24,7 @@ html[saved-theme="dark"] {
   }
   --background-modifier-border: #303030;
   --background-primary: #212121;
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --color-accent-2: hsl(253, 92.4%, 85.14%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -46,7 +46,7 @@ html[saved-theme="dark"] {
   --text-normal: #dcddde;
   --background-modifier-border: #303030;
   --background-primary: #212121;
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --color-accent-2: hsl(253, 92.4%, 85.14%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -85,7 +85,7 @@ html[saved-theme="light"] {
   }
   --background-modifier-border: #ddd;
   --background-primary: #ffffff;
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -107,7 +107,7 @@ html[saved-theme="light"] {
   --text-normal: rgb(203, 77, 73);
   --background-modifier-border: #ddd;
   --background-primary: #ffffff;
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -293,8 +293,8 @@ html[saved-theme="light"] {
   --background-modifier-border: light-dark(#303030, #ddd);
   --background-primary: light-dark(#212121, #ffffff);
   --color-accent-2: light-dark(
-    hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29)),
-    hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15))
+    hsl(253, 92.4%, 85.14%),
+    hsl(255, 89.76%, 75.9%)
   );
   --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
   --color-base-100: light-dark(#dadada, #222222);
@@ -312,10 +312,6 @@ html[saved-theme="light"] {
   --text-accent: light-dark(#3e93d8, rgb(203, 77, 73));
   --text-accent-hover: light-dark(#2b60af, rgb(203, 77, 73));
   --text-faint: light-dark(#666, #999999);
-  --text-highlight-bg: light-dark(
-    rgba(26, 73, 100, 0.66),
-    rgba(240, 255, 82, 0.76)
-  );
   --text-muted: light-dark(#999, rgb(143, 147, 143));
   --text-normal: light-dark(#dcddde, rgb(203, 77, 73));
 }
@@ -326,7 +322,7 @@ body {
   --background-modifier-hover: rgba(255, 255, 255, 0.067);
   --background-primary: #000;
   --bold-color: inherit;
-  --bold-weight: calc(600 + 200);
+  --bold-weight: 800;
   --checkbox-border-color: #666;
   --checkbox-border-color-hover: #999;
   --checkbox-color: rgb(32, 171, 233);
@@ -386,16 +382,16 @@ body {
   --tag-radius: 2em;
   --tag-weight: inherit;
   --text-accent: hsl(258, 88%, 66%);
-  --text-accent-hover: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --text-accent-hover: hsl(253, 92.4%, 85.14%);
   --text-faint: #666666;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-muted: #b3b3b3;
   --text-normal: #dadada;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-user-select: none;
-  background-color: #212121;
+  background-color: light-dark(#212121, #ffffff);
   caret-color: #3e93d8;
-  color: #dcddde;
+  color: light-dark(#dcddde, #2e3338);
   contain: initial;
   font-family:
     Source Code Pro,
@@ -431,7 +427,7 @@ html[saved-theme="dark"] {
   }
   --background-modifier-border: #303030;
   --background-primary: #212121;
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --color-accent-2: hsl(253, 92.4%, 85.14%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -453,7 +449,7 @@ html[saved-theme="dark"] {
   --text-normal: #dcddde;
   --background-modifier-border: #303030;
   --background-primary: #212121;
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --color-accent-2: hsl(253, 92.4%, 85.14%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -493,7 +489,7 @@ html[saved-theme="light"] {
   }
   --background-modifier-border: #ddd;
   --background-primary: #ffffff;
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -515,7 +511,7 @@ html[saved-theme="light"] {
   --text-normal: rgb(203, 77, 73);
   --background-modifier-border: #ddd;
   --background-primary: #ffffff;
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -663,13 +659,13 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: #212121;
+  background-color: light-dark(#212121, #ffffff);
   section,
   .page > #quartz-body .sidebar {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: #212121;
+      background-color: light-dark(#212121, #ffffff);
     }
   }
   .highlight,
@@ -995,7 +991,7 @@ body {
   .clipboard-button {
     background-color: transparent;
     box-shadow: none;
-    color: #999;
+    color: light-dark(#999, rgb(143, 147, 143));
     font-family:
       "??",
       "??",
@@ -1013,7 +1009,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-size: calc(16px * 0.8);
+    font-size: 12.8px;
     height: auto;
     inset-inline-end: 0;
     margin: 6px;
@@ -1033,7 +1029,7 @@ body {
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: #666;
+    color: light-dark(#666, #999999);
   }
   /* BACKLINKS */
   .backlinks {
@@ -1068,7 +1064,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: #212121;
+        background-color: light-dark(#212121, #ffffff);
       }
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
@@ -1125,8 +1121,8 @@ body {
           padding: 6px 8px 6px 24px;
           &.active,
           &:hover {
-            background-color: #3e93d8;
-            color: rgb(255, 255, 255);
+            background-color: light-dark(#3e93d8, rgb(203, 77, 73));
+            color: light-dark(rgb(255, 255, 255), rgb(255, 255, 255));
             font-weight: inherit;
           }
           &[data-for$="/index"] {
@@ -1246,12 +1242,12 @@ body {
   .search {
     & > .search-button {
       -webkit-app-region: no-drag;
-      background: transparent;
-      border: 1px solid transparent;
+      background: light-dark(light-dark(#2a2a2a, #e3e3e3), #fff);
+      border: 1px solid light-dark(#303030, #ddd);
       border-radius: 5px;
-      color: #dcddde;
+      color: light-dark(#dcddde, #2e3338);
       font-family: inherit;
-      font-size: calc(16px * 0.937);
+      font-size: 14.992px;
       height: 40px;
       outline: none;
       padding: 4px 8px;
@@ -1262,7 +1258,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: #212121;
+        background-color: light-dark(#212121, #ffffff);
         border: 0.5pt solid #555555;
         border-radius: 12px;
         box-shadow:
@@ -1271,9 +1267,9 @@ body {
           0px 30px 90px rgba(0, 0, 0, 0.2);
         margin: 12vh auto;
         & > input {
-          background-color: #212121;
+          background-color: light-dark(#212121, #ffffff);
           border: none;
-          border-bottom: 1px solid #212121;
+          border-bottom: 1px solid light-dark(#212121, rgb(57, 63, 63));
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1285,7 +1281,7 @@ body {
           background: transparent;
         }
         & > * {
-          color: #dcddde;
+          color: light-dark(#dcddde, #2e3338);
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1298,7 +1294,7 @@ body {
           & .highlight {
             font-weight: bold;
             background-color: rgba(26, 73, 100, 0.66);
-            color: #dcddde;
+            color: light-dark(#dcddde, rgb(203, 77, 73));
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1314,11 +1310,11 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: #3e93d8;
+                background-color: light-dark(#3e93d8, rgb(203, 77, 73));
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: #dcddde;
+                color: light-dark(#dcddde, #2e3338);
                 &.match-tag {
                   color: #3e93d8;
                 }
@@ -1381,8 +1377,8 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: #212121;
-    border: 1px solid transparent;
+    background-color: light-dark(#212121, #ffffff);
+    border: 1px solid light-dark(#303030, #ddd);
     border-radius: 8px;
     box-shadow:
       0px 1px 2px rgba(0, 0, 0, 0.121),
@@ -1398,8 +1394,8 @@ body {
     background-color: unset;
     border: unset;
     & .popover-inner {
-      border: 1px solid transparent;
-      background-color: #212121;
+      border: 1px solid light-dark(#303030, #ddd);
+      background-color: light-dark(#212121, #ffffff);
 
       border-radius: 8px;
     }

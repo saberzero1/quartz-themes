@@ -949,14 +949,6 @@
 }
 
 :root {
-  --background-modifier-box-shadow: light-dark(
-    light-dark(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
-    rgba(0, 0, 0, 0.1)
-  );
-  --background-modifier-cover: light-dark(
-    light-dark(rgba(10, 10, 10, 0.4), rgba(220, 220, 220, 0.4)),
-    rgba(220, 220, 220, 0.4)
-  );
   --background-primary: light-dark(
     var(--custom-black-600),
     var(--custom-white-2-100)
@@ -974,17 +966,14 @@
     var(--custom-white-2-200)
   );
   --background-secondary-alt: light-dark(
-    light-dark(var(--custom-black-950), var(--color-base-05)),
-    var(--custom-white-2-400)
+    var(--color-base-30),
+    var(--color-base-05)
   );
   --blockquote-background-color: light-dark(
     var(--custom-black-700),
     var(--custom-black-700)
   );
   --blockquote-border-color: light-dark(var(--black), var(--black));
-  --blockquote-border-thickness: light-dark(2px, 2px);
-  --blockquote-color: light-dark(inherit, inherit);
-  --blockquote-font-style: light-dark(normal, normal);
   --checkbox-border-color: light-dark(var(--text-faint), var(--text-faint));
   --checkbox-border-color-hover: light-dark(
     var(--text-muted),
@@ -999,95 +988,63 @@
     var(--custom-gold-950)
   );
   --checkbox-radius: light-dark(var(--radius-s), var(--radius-s));
-  --checkbox-size: light-dark(15px, 15px);
   --checklist-done-color: light-dark(var(--text-faint), var(--text-faint));
   --color-accent: light-dark(
-    light-dark(
-      light-dark(
-        var(--custom-gold-950),
-        hsl(var(--accent-h), var(--accent-s), var(--accent-l))
-      ),
-      hsl(var(--accent-h), var(--accent-s), var(--accent-l))
-    ),
-    var(--custom-gold-950)
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l))
   );
   --color-accent-1: light-dark(
-    light-dark(
-      var(--custom-gold-2-500),
-      hsl(
-        calc(var(--accent-h) - 1),
-        calc(var(--accent-s) * 1.01),
-        calc(var(--accent-l) * 1.075)
-      )
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
     ),
-    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2.5%))
+    hsl(
+      calc(var(--accent-h) - 1),
+      calc(var(--accent-s) * 1.01),
+      calc(var(--accent-l) * 1.075)
+    )
   );
   --color-accent-2: light-dark(
-    light-dark(
-      var(--custom-gold-2-950),
-      hsl(
-        calc(var(--accent-h) - 3),
-        calc(var(--accent-s) * 1.02),
-        calc(var(--accent-l) * 1.15)
-      )
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
     ),
-    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%))
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    )
   );
   --color-accent-hsl: light-dark(
-    light-dark(
-      var(--accent-h),
-      var(--accent-s),
-      var(--accent-l),
-      var(--accent-h),
-      var(--accent-s),
-      var(--accent-l)
-    ),
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
     var(--accent-h),
     var(--accent-s),
     var(--accent-l)
   );
-  --color-base-00: light-dark(light-dark(#1e1e1e, #ffffff), #ffffff);
-  --color-base-05: light-dark(light-dark(#212121, #fcfcfc), #fcfcfc);
-  --color-base-10: light-dark(light-dark(#242424, #fafafa), #fafafa);
-  --color-base-100: light-dark(light-dark(#dadada, #222222), #222222);
-  --color-base-20: light-dark(light-dark(#262626, #f6f6f6), #f6f6f6);
-  --color-base-25: light-dark(light-dark(#2a2a2a, #e3e3e3), #e3e3e3);
-  --color-base-30: light-dark(light-dark(#363636, #e0e0e0), #e0e0e0);
-  --color-base-35: light-dark(light-dark(#3f3f3f, #d4d4d4), #d4d4d4);
-  --color-base-40: light-dark(light-dark(#555, #bdbdbd), #bdbdbd);
-  --color-base-50: light-dark(light-dark(#666, #ababab), #ababab);
-  --color-base-60: light-dark(light-dark(#999, #707070), #707070);
-  --color-base-70: light-dark(light-dark(#bababa, #5c5c5c), #5a5a5a);
-  --color-blue: light-dark(light-dark(#027aff, #086ddd), #086ddd);
-  --color-blue-rgb: light-dark(2, 122, 255, 8, 109, 221);
-  --color-cyan: light-dark(light-dark(#53dfdd, #00bfbc), #2db7b5);
-  --color-cyan-rgb: light-dark(83, 223, 221, 0, 191, 188);
-  --color-green: light-dark(light-dark(#44cf6e, #08b94e), #0cb54f);
-  --color-green-rgb: light-dark(
-    light-dark(68, 207, 110, 8, 185, 78),
-    12,
-    181,
-    79
-  );
-  --color-orange: light-dark(light-dark(#e9973f, #ec7500), #d96c00);
-  --color-orange-rgb: light-dark(233, 151, 63, 236, 117, 0);
-  --color-pink: light-dark(light-dark(#fa99cd, #d53984), #c32b74);
-  --color-pink-rgb: light-dark(250, 153, 205, 213, 57, 132);
-  --color-purple: light-dark(light-dark(#a882ff, #7852ee), #876be0);
-  --color-purple-rgb: light-dark(168, 130, 255, 120, 82, 238);
-  --color-red: light-dark(light-dark(#fb464c, #e93147), #e4374b);
-  --color-red-rgb: light-dark(
-    light-dark(251, 70, 76, 233, 49, 71),
-    228,
-    55,
-    75
-  );
-  --color-yellow: light-dark(light-dark(#e0de71, #e0ac00), #bd8e37);
-  --color-yellow-rgb: light-dark(224, 222, 113, 224, 172, 0);
-  --custom-active-page-shadow: light-dark(
-    inset 0px 0px 15px 8px var(--custom-black-850),
-    inset 0px 0px 15px 8px var(--zinc-500)
-  );
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --custom-admonition-border-color: light-dark(
     var(--custom-black-950),
     var(--custom-black-950)
@@ -1112,10 +1069,6 @@
     var(--custom-gold-950),
     var(--custom-gold-950)
   );
-  --custom-checkbox-background-gradient-degree-checked: light-dark(
-    45deg,
-    45deg
-  );
   --custom-checkbox-border-image-gradient-color-1-checked: light-dark(
     var(--transparent),
     var(--transparent)
@@ -1123,22 +1076,6 @@
   --custom-checkbox-border-image-gradient-color-1-unchecked: light-dark(
     var(--transparent),
     var(--transparent)
-  );
-  --custom-checkbox-border-image-gradient-color-2-checked: light-dark(
-    var(--custom-red-600),
-    var(--custom-red-600)
-  );
-  --custom-checkbox-border-image-gradient-color-2-unchecked: light-dark(
-    var(--custom-red-600),
-    var(--custom-red-600)
-  );
-  --custom-checkbox-border-image-gradient-degree-checked: light-dark(
-    45deg,
-    45deg
-  );
-  --custom-checkbox-border-image-gradient-degree-unchecked: light-dark(
-    45deg,
-    45deg
   );
   --custom-code-border-color: light-dark(var(--black), var(--black));
   --custom-file-icon: light-dark(
@@ -1162,56 +1099,21 @@
     var(--Red-Accent-1),
     var(--Red-Accent-1)
   );
-  --custom-global-drop-shadow: light-dark(
-    drop-shadow(2px 2px 1px var(--custom-black-800))
-      drop-shadow(0px 0px 2px var(--custom-black-800)),
-    drop-shadow(2px 2px 1px var(--zinc-300))
-      drop-shadow(0px 0px 2px var(--zinc-300))
-  );
   --custom-h1-gradiant-1: light-dark(
     var(--custom-gold-2-950),
     var(--custom-gold-2-950)
   );
-  --custom-h1-gradiant-1-percent: light-dark(0, 0);
   --custom-h1-gradiant-2: light-dark(var(--red-400), var(--red-400));
-  --custom-h1-gradiant-2-percent: light-dark(30%, 30%);
-  --custom-h1-gradiant-inline-1-percent: light-dark(0, 0);
-  --custom-h1-gradiant-inline-2-percent: light-dark(100%, 100%);
   --custom-h2-gradiant-1: light-dark(var(--red-300), var(--red-300));
-  --custom-h2-gradiant-1-percent: light-dark(0, 0);
   --custom-h2-gradiant-2: light-dark(var(--pink-500), var(--pink-500));
-  --custom-h2-gradiant-2-percent: light-dark(30%, 30%);
-  --custom-h2-gradiant-inline-1-percent: light-dark(0, 0);
-  --custom-h2-gradiant-inline-2-percent: light-dark(100%, 100%);
   --custom-h3-gradiant-1: light-dark(var(--pink-400), var(--pink-400));
-  --custom-h3-gradiant-1-percent: light-dark(0, 0);
   --custom-h3-gradiant-2: light-dark(var(--fuchsia-500), var(--fuchsia-500));
-  --custom-h3-gradiant-2-percent: light-dark(30%, 30%);
-  --custom-h3-gradiant-inline-1-percent: light-dark(0, 0);
-  --custom-h3-gradiant-inline-2-percent: light-dark(100%, 100%);
   --custom-h4-gradiant-1: light-dark(var(--fuchsia-400), var(--fuchsia-400));
-  --custom-h4-gradiant-1-percent: light-dark(0, 0);
   --custom-h4-gradiant-2: light-dark(var(--blue-500), var(--blue-500));
-  --custom-h4-gradiant-2-percent: light-dark(30%, 30%);
-  --custom-h4-gradiant-inline-1-percent: light-dark(0, 0);
-  --custom-h4-gradiant-inline-2-percent: light-dark(100%, 100%);
   --custom-h5-gradiant-1: light-dark(var(--blue-400), var(--blue-400));
-  --custom-h5-gradiant-1-percent: light-dark(0, 0);
   --custom-h5-gradiant-2: light-dark(var(--cyan-300), var(--cyan-300));
-  --custom-h5-gradiant-2-percent: light-dark(30%, 30%);
-  --custom-h5-gradiant-inline-1-percent: light-dark(0, 0);
-  --custom-h5-gradiant-inline-2-percent: light-dark(100%, 100%);
   --custom-h6-gradiant-1: light-dark(var(--cyan-200), var(--cyan-200));
-  --custom-h6-gradiant-1-percent: light-dark(0, 0);
   --custom-h6-gradiant-2: light-dark(var(--green-400), var(--green-400));
-  --custom-h6-gradiant-2-percent: light-dark(30%, 30%);
-  --custom-h6-gradiant-inline-1-percent: light-dark(0, 0);
-  --custom-h6-gradiant-inline-2-percent: light-dark(100%, 100%);
-  --custom-heading-filter-brightness: light-dark(0.9, 0.9);
-  --custom-heading-filter-contrast: light-dark(1.25, 1.25);
-  --custom-heading-filter-drop-shadow-blur: light-dark(6px, 6px);
-  --custom-heading-filter-drop-shadow-color: light-dark(black, black);
-  --custom-heading-filter-saturate: light-dark(1.15, 1.15);
   --custom-highlight-bg-color: light-dark(
     var(--custom-red-900),
     var(--custom-red-900)
@@ -1220,20 +1122,14 @@
     var(--custom-black-950),
     var(--custom-black-950)
   );
-  --custom-inline-heading-border-style: light-dark(solid, solid);
-  --custom-inline-heading-border-width: light-dark(1px, 1px);
-  --custom-inline-heading-box-shadow-inset-blur: light-dark(0px, 0px);
   --custom-inline-heading-box-shadow-inset-color: light-dark(
     var(--custom-white-200),
     var(--custom-white-200)
   );
-  --custom-inline-heading-box-shadow-inset-width: light-dark(1px, 1px);
-  --custom-inline-heading-box-shadow-outer-blur: light-dark(0px, 0px);
   --custom-inline-heading-box-shadow-outer-color: light-dark(
     var(--custom-black-950),
     var(--custom-black-950)
   );
-  --custom-inline-heading-box-shadow-outer-width: light-dark(0px, 0px);
   --custom-inline-heading-color: light-dark(
     var(--custom-black-800),
     var(--custom-black-800)
@@ -1283,7 +1179,6 @@
     var(--custom-grey-950),
     var(--custom-grey-950)
   );
-  --custom-scrollbar-height: light-dark(12px, 12px);
   --custom-scrollbar-thumb-bg-hover: light-dark(
     var(--custom-gold-950),
     var(--custom-gold-950)
@@ -1300,60 +1195,9 @@
     var(--custom-grey-950),
     var(--custom-grey-950)
   );
-  --custom-scrollbar-width: light-dark(12px, 12px);
-  --custom-statusbar-drop-shadow: light-dark(
-    drop-shadow(2px 2px 1px var(--custom-black-900))
-      drop-shadow(0px 0px 2px var(--custom-black-900)),
-    drop-shadow(2px 2px 1px var(--zinc-500))
-      drop-shadow(0px 0px 2px var(--zinc-500))
-  );
-  --custom-titlebar-drop-shadow: light-dark(
-    drop-shadow(0px 2px 3px black) drop-shadow(0px 2px 6px black),
-    drop-shadow(0px 2px 3px var(--zinc-500))
-      drop-shadow(0px 2px 6px var(--zinc-500))
-  );
   --FA6Regular: "Font Awesome 6 Free Regular";
   --FA6Solid: "Font Awesome 6 Free Solid";
   --font: "";
-  --highlight-mix-blend-mode: light-dark(light-dark(normal, darken), darken);
-  --input-shadow: light-dark(
-    light-dark(
-      inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-      0 2px 4px 0 rgba(0, 0, 0, 0.15),
-      0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-      0 1px 2px 0 rgba(0, 0, 0, 0.2),
-      0 0 0 0 transparent,
-      inset 0 0 0 1px rgba(0, 0, 0, 0.12),
-      0 2px 3px 0 rgba(0, 0, 0, 0.05),
-      0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
-      0 1px 2px 0 rgba(0, 0, 0, 0.04),
-      0 0 0 0 transparent
-    ),
-    inset 0 0 0 1px rgba(0, 0, 0, 0.12),
-    0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
-    0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent
-  );
-  --input-shadow-hover: light-dark(
-    light-dark(
-      inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-      0 2px 3px 0 rgba(0, 0, 0, 0.3),
-      0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-      0 1px 2px 0 rgba(0, 0, 0, 0.4),
-      0 0 0 0 transparent,
-      inset 0 0 0 1px rgba(0, 0, 0, 0.17),
-      0 2px 3px 0 rgba(0, 0, 0, 0.1),
-      0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
-      0 1px 2px 0 rgba(0, 0, 0, 0.04),
-      0 0 0 0 transparent
-    ),
-    inset 0 0 0 1px rgba(0, 0, 0, 0.17),
-    0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
-    0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent
-  );
   --interactive-accent: light-dark(
     var(--custom-gold-950),
     var(--custom-gold-950)
@@ -1374,8 +1218,6 @@
   );
   --list-marker-color-hover: light-dark(var(--text-muted), var(--text-muted));
   --loading-icon-delay: 400ms;
-  --mono-rgb-0: light-dark(light-dark(0, 0, 0, 255, 255, 255), 255, 255, 255);
-  --mono-rgb-100: light-dark(light-dark(255, 255, 255, 0, 0, 0), 0, 0, 0);
   --page-border: 9px solid transparent;
   --page-margin: 1px auto -8px;
   --pdfViewer-padding-bottom: 0;
@@ -1396,32 +1238,6 @@
     var(--custom-grey-500),
     var(--custom-grey-500)
   );
-  --shadow-l: light-dark(
-    light-dark(
-      0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-      0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-      0px 30px 90px rgba(0, 0, 0, 0.2),
-      0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-      0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-      0px 30px 90px rgba(0, 0, 0, 0.2)
-    ),
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2)
-  );
-  --shadow-s: light-dark(
-    light-dark(
-      0px 1px 2px rgba(0, 0, 0, 0.121),
-      0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-      0px 15px 30px rgba(0, 0, 0, 0.3),
-      0px 1px 2px rgba(0, 0, 0, 0.028),
-      0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-      0px 15px 30px rgba(0, 0, 0, 0.07)
-    ),
-    0px 1px 2px rgba(0, 0, 0, 0.028),
-    0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07)
-  );
   --spreadHorizontalWrapped-margin-LR: -3.5px;
   --status-bar-background: light-dark(
     var(--custom-background-tertiary),
@@ -1429,21 +1245,9 @@
   );
   --tab-text-color: light-dark(var(--text-muted), var(--text-muted));
   --tab-text-color-focused: light-dark(var(--text-muted), var(--text-muted));
-  --tab-text-color-focused-active: light-dark(
-    var(--text-normal),
-    var(--text-normal)
-  );
   --tab-text-color-focused-active-current: light-dark(
     var(--text-normal),
     var(--text-normal)
-  );
-  --text-highlight-bg: light-dark(
-    rgba(255, 208, 0, 0.4),
-    rgba(255, 208, 0, 0.4)
-  );
-  --text-highlight-bg-active: light-dark(
-    rgba(255, 128, 0, 0.4),
-    rgba(255, 128, 0, 0.4)
   );
   --text-on-accent: light-dark(
     var(--background-primary-active),

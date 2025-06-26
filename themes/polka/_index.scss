@@ -22,32 +22,13 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --background-modifier-border: hsla(
-    221,
-    calc(calc(3.33% * 10) * 0.5),
-    85%,
-    0.1
-  );
-  --background-modifier-border-focus: hsl(
-    221,
-    calc(3.33% * 10),
-    calc(calc(2.58% * 5) - 4%)
-  );
-  --background-modifier-border-hover: hsla(
-    221,
-    calc(calc(3.33% * 10) * 0.5),
-    85%,
-    0.1
-  );
-  --background-modifier-hover: hsla(
-    221,
-    calc(calc(3.33% * 10) * 0.5),
-    85%,
-    0.05
-  );
-  --background-primary: hsl(221, calc(3.33% * 10), calc(2.58% * 5));
+  --background-modifier-border: hsla(221, 16.65%, 85%, 0.1);
+  --background-modifier-border-focus: hsl(221, 33.3%, 8.9%);
+  --background-modifier-border-hover: hsla(221, 16.65%, 85%, 0.1);
+  --background-modifier-hover: hsla(221, 16.65%, 85%, 0.05);
+  --background-primary: hsl(221, 33.3%, 12.9%);
   --code-comment: rgba(175, 191, 255, 0.7);
-  --color-accent-2: hsl(calc(189 - 5), calc(100% * 1.05), calc(49% * 1.29));
+  --color-accent-2: hsl(184, 105%, 63.21%);
   --color-accent-hsl: 189, 100%, 49%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -69,32 +50,13 @@ html[saved-theme="dark"] {
   --text-highlight-bg: rgb(220, 193, 45);
   --text-muted: rgb(250, 247, 245);
   --text-normal: rgb(250, 247, 245);
-  --background-modifier-border: hsla(
-    221,
-    calc(calc(3.33% * 10) * 0.5),
-    85%,
-    0.1
-  );
-  --background-modifier-border-focus: hsl(
-    221,
-    calc(3.33% * 10),
-    calc(calc(2.58% * 5) - 4%)
-  );
-  --background-modifier-border-hover: hsla(
-    221,
-    calc(calc(3.33% * 10) * 0.5),
-    85%,
-    0.1
-  );
-  --background-modifier-hover: hsla(
-    221,
-    calc(calc(3.33% * 10) * 0.5),
-    85%,
-    0.05
-  );
-  --background-primary: hsl(221, calc(3.33% * 10), calc(2.58% * 5));
+  --background-modifier-border: hsla(221, 16.65%, 85%, 0.1);
+  --background-modifier-border-focus: hsl(221, 33.3%, 8.9%);
+  --background-modifier-border-hover: hsla(221, 16.65%, 85%, 0.1);
+  --background-modifier-hover: hsla(221, 16.65%, 85%, 0.05);
+  --background-primary: hsl(221, 33.3%, 12.9%);
   --code-comment: rgba(175, 191, 255, 0.7);
-  --color-accent-2: hsl(calc(189 - 5), calc(100% * 1.05), calc(49% * 1.29));
+  --color-accent-2: hsl(184, 105%, 63.21%);
   --color-accent-hsl: 189, 100%, 49%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -133,33 +95,13 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --background-modifier-border: hsla(
-    221,
-    calc(calc(3.33% * 10) * 0.5),
-    85%,
-    0.1
-  );
-  --background-modifier-border-focus: hsla(
-    221,
-    calc(calc(3.33% * 10) * 0.5),
-    85%,
-    0.1
-  );
-  --background-modifier-border-hover: hsla(
-    221,
-    calc(calc(3.33% * 10) * 0.5),
-    85%,
-    0.1
-  );
-  --background-modifier-hover: hsla(
-    221,
-    calc(calc(3.33% * 10) * 0.5),
-    85%,
-    0.05
-  );
-  --background-primary: hsl(221, calc(3.33% * 10), calc(2.58% * 5));
+  --background-modifier-border: hsla(221, 16.65%, 85%, 0.1);
+  --background-modifier-border-focus: hsla(221, 16.65%, 85%, 0.1);
+  --background-modifier-border-hover: hsla(221, 16.65%, 85%, 0.1);
+  --background-modifier-hover: hsla(221, 16.65%, 85%, 0.05);
+  --background-primary: hsl(221, 33.3%, 12.9%);
   --code-comment: rgba(175, 191, 255);
-  --color-accent-2: hsl(calc(189 - 3), calc(100% * 1.02), calc(49% * 1.15));
+  --color-accent-2: hsl(186, 102%, 56.35%);
   --color-accent-hsl: 189, 100%, 49%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -180,33 +122,13 @@ html[saved-theme="light"] {
   --text-highlight-bg: rgb(250, 231, 75);
   --text-muted: rgb(250, 247, 245);
   --text-normal: rgb(0, 0, 0);
-  --background-modifier-border: hsla(
-    221,
-    calc(calc(3.33% * 10) * 0.5),
-    85%,
-    0.1
-  );
-  --background-modifier-border-focus: hsla(
-    221,
-    calc(calc(3.33% * 10) * 0.5),
-    85%,
-    0.1
-  );
-  --background-modifier-border-hover: hsla(
-    221,
-    calc(calc(3.33% * 10) * 0.5),
-    85%,
-    0.1
-  );
-  --background-modifier-hover: hsla(
-    221,
-    calc(calc(3.33% * 10) * 0.5),
-    85%,
-    0.05
-  );
-  --background-primary: hsl(221, calc(3.33% * 10), calc(2.58% * 5));
+  --background-modifier-border: hsla(221, 16.65%, 85%, 0.1);
+  --background-modifier-border-focus: hsla(221, 16.65%, 85%, 0.1);
+  --background-modifier-border-hover: hsla(221, 16.65%, 85%, 0.1);
+  --background-modifier-hover: hsla(221, 16.65%, 85%, 0.05);
+  --background-primary: hsl(221, 33.3%, 12.9%);
   --code-comment: rgba(175, 191, 255);
-  --color-accent-2: hsl(calc(189 - 3), calc(100% * 1.02), calc(49% * 1.15));
+  --color-accent-2: hsl(186, 102%, 56.35%);
   --color-accent-hsl: 189, 100%, 49%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -359,30 +281,26 @@ html[saved-theme="light"] {
 
 :root {
   --background-modifier-border: light-dark(
-    hsla(221, calc(calc(3.33% * 10) * 0.5), 85%, 0.1),
-    hsla(221, calc(calc(3.33% * 10) * 0.5), 85%, 0.1)
+    hsla(221, 16.65%, 85%, 0.1),
+    hsla(221, 16.65%, 85%, 0.1)
   );
   --background-modifier-border-focus: light-dark(
-    hsl(221, calc(3.33% * 10), calc(calc(2.58% * 5) - 4%)),
-    hsla(221, calc(calc(3.33% * 10) * 0.5), 85%, 0.1)
+    hsl(221, 33.3%, 8.9%),
+    hsla(221, 16.65%, 85%, 0.1)
   );
   --background-modifier-border-hover: light-dark(
-    hsla(221, calc(calc(3.33% * 10) * 0.5), 85%, 0.1),
-    hsla(221, calc(calc(3.33% * 10) * 0.5), 85%, 0.1)
+    hsla(221, 16.65%, 85%, 0.1),
+    hsla(221, 16.65%, 85%, 0.1)
   );
   --background-modifier-hover: light-dark(
-    hsla(221, calc(calc(3.33% * 10) * 0.5), 85%, 0.05),
-    hsla(221, calc(calc(3.33% * 10) * 0.5), 85%, 0.05)
+    hsla(221, 16.65%, 85%, 0.05),
+    hsla(221, 16.65%, 85%, 0.05)
   );
   --background-primary: light-dark(
-    hsl(221, calc(3.33% * 10), calc(2.58% * 5)),
-    hsl(221, calc(3.33% * 10), calc(2.58% * 5))
+    hsl(221, 33.3%, 12.9%),
+    hsl(221, 33.3%, 12.9%)
   );
-  --code-comment: light-dark(rgba(175, 191, 255, 0.7), rgba(175, 191, 255));
-  --color-accent-2: light-dark(
-    hsl(calc(189 - 5), calc(100% * 1.05), calc(49% * 1.29)),
-    hsl(calc(189 - 3), calc(100% * 1.02), calc(49% * 1.15))
-  );
+  --color-accent-2: light-dark(hsl(184, 105%, 63.21%), hsl(186, 102%, 56.35%));
   --color-accent-hsl: light-dark(189, 100%, 49%, 189, 100%, 49%);
   --color-base-100: light-dark(#dadada, #222222);
   --color-base-30: light-dark(#363636, #e0e0e0);
@@ -395,7 +313,6 @@ html[saved-theme="light"] {
   --color-pink: light-dark(#fa99cd, #d53984);
   --color-purple: light-dark(#a882ff, #7852ee);
   --color-red: light-dark(#fb464c, #e93147);
-  --hr-color: light-dark(rgba(250, 247, 245, 0.1), rgba(0, 0, 0, 0.4));
   --tag-background: light-dark(
     hsla(189, 100%, 49%, 0.1),
     hsla(189, 100%, 49%, 0.1)
@@ -417,13 +334,13 @@ body {
   --background-modifier-hover: rgba(255, 255, 255, 0.067);
   --background-primary: #000;
   --bold-color: inherit;
-  --bold-weight: calc(600 + 200);
+  --bold-weight: 800;
   --checkbox-border-color: rgb(250, 247, 245);
   --checkbox-border-color-hover: rgb(250, 247, 245);
   --checkbox-color: hsl(189, 100%, 49%);
   --checkbox-color-hover: hsl(189, 100%, 49%);
-  --checkbox-marker-color: hsl(221, calc(3.33% * 10), calc(2.58% * 5));
-  --checkbox-radius: calc(0.1px * 20);
+  --checkbox-marker-color: hsl(221, 33.3%, 12.9%);
+  --checkbox-radius: 2px;
   --checkbox-size: 16px;
   --code-background: rgb(10, 18, 30);
   --code-comment: rgb(250, 247, 245);
@@ -479,17 +396,17 @@ body {
   --tag-color-hover: hsl(189, 100%, 49%);
   --tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-radius: calc(calc(0.1px * 20) * 2);
+  --tag-radius: 4px;
   --tag-weight: inherit;
   --text-accent: hsl(189, 100%, 49%);
-  --text-accent-hover: hsl(calc(189 - 5), calc(100% * 1.05), calc(49% * 1.29));
+  --text-accent-hover: hsl(184, 105%, 63.21%);
   --text-faint: #666666;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-muted: #b3b3b3;
   --text-normal: #dadada;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-user-select: none;
-  background-color: hsl(221, calc(3.33% * 10), calc(2.58% * 5));
+  background-color: hsl(221, 33.3%, 12.9%);
   caret-color: hsl(189, 100%, 49%);
   color: rgb(250, 247, 245);
   contain: initial;
@@ -540,32 +457,13 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --background-modifier-border: hsla(
-    221,
-    calc(calc(3.33% * 10) * 0.5),
-    85%,
-    0.1
-  );
-  --background-modifier-border-focus: hsl(
-    221,
-    calc(3.33% * 10),
-    calc(calc(2.58% * 5) - 4%)
-  );
-  --background-modifier-border-hover: hsla(
-    221,
-    calc(calc(3.33% * 10) * 0.5),
-    85%,
-    0.1
-  );
-  --background-modifier-hover: hsla(
-    221,
-    calc(calc(3.33% * 10) * 0.5),
-    85%,
-    0.05
-  );
-  --background-primary: hsl(221, calc(3.33% * 10), calc(2.58% * 5));
+  --background-modifier-border: hsla(221, 16.65%, 85%, 0.1);
+  --background-modifier-border-focus: hsl(221, 33.3%, 8.9%);
+  --background-modifier-border-hover: hsla(221, 16.65%, 85%, 0.1);
+  --background-modifier-hover: hsla(221, 16.65%, 85%, 0.05);
+  --background-primary: hsl(221, 33.3%, 12.9%);
   --code-comment: rgba(175, 191, 255, 0.7);
-  --color-accent-2: hsl(calc(189 - 5), calc(100% * 1.05), calc(49% * 1.29));
+  --color-accent-2: hsl(184, 105%, 63.21%);
   --color-accent-hsl: 189, 100%, 49%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -587,32 +485,13 @@ html[saved-theme="dark"] {
   --text-highlight-bg: rgb(220, 193, 45);
   --text-muted: rgb(250, 247, 245);
   --text-normal: rgb(250, 247, 245);
-  --background-modifier-border: hsla(
-    221,
-    calc(calc(3.33% * 10) * 0.5),
-    85%,
-    0.1
-  );
-  --background-modifier-border-focus: hsl(
-    221,
-    calc(3.33% * 10),
-    calc(calc(2.58% * 5) - 4%)
-  );
-  --background-modifier-border-hover: hsla(
-    221,
-    calc(calc(3.33% * 10) * 0.5),
-    85%,
-    0.1
-  );
-  --background-modifier-hover: hsla(
-    221,
-    calc(calc(3.33% * 10) * 0.5),
-    85%,
-    0.05
-  );
-  --background-primary: hsl(221, calc(3.33% * 10), calc(2.58% * 5));
+  --background-modifier-border: hsla(221, 16.65%, 85%, 0.1);
+  --background-modifier-border-focus: hsl(221, 33.3%, 8.9%);
+  --background-modifier-border-hover: hsla(221, 16.65%, 85%, 0.1);
+  --background-modifier-hover: hsla(221, 16.65%, 85%, 0.05);
+  --background-primary: hsl(221, 33.3%, 12.9%);
   --code-comment: rgba(175, 191, 255, 0.7);
-  --color-accent-2: hsl(calc(189 - 5), calc(100% * 1.05), calc(49% * 1.29));
+  --color-accent-2: hsl(184, 105%, 63.21%);
   --color-accent-hsl: 189, 100%, 49%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -652,33 +531,13 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --background-modifier-border: hsla(
-    221,
-    calc(calc(3.33% * 10) * 0.5),
-    85%,
-    0.1
-  );
-  --background-modifier-border-focus: hsla(
-    221,
-    calc(calc(3.33% * 10) * 0.5),
-    85%,
-    0.1
-  );
-  --background-modifier-border-hover: hsla(
-    221,
-    calc(calc(3.33% * 10) * 0.5),
-    85%,
-    0.1
-  );
-  --background-modifier-hover: hsla(
-    221,
-    calc(calc(3.33% * 10) * 0.5),
-    85%,
-    0.05
-  );
-  --background-primary: hsl(221, calc(3.33% * 10), calc(2.58% * 5));
+  --background-modifier-border: hsla(221, 16.65%, 85%, 0.1);
+  --background-modifier-border-focus: hsla(221, 16.65%, 85%, 0.1);
+  --background-modifier-border-hover: hsla(221, 16.65%, 85%, 0.1);
+  --background-modifier-hover: hsla(221, 16.65%, 85%, 0.05);
+  --background-primary: hsl(221, 33.3%, 12.9%);
   --code-comment: rgba(175, 191, 255);
-  --color-accent-2: hsl(calc(189 - 3), calc(100% * 1.02), calc(49% * 1.15));
+  --color-accent-2: hsl(186, 102%, 56.35%);
   --color-accent-hsl: 189, 100%, 49%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -699,33 +558,13 @@ html[saved-theme="light"] {
   --text-highlight-bg: rgb(250, 231, 75);
   --text-muted: rgb(250, 247, 245);
   --text-normal: rgb(0, 0, 0);
-  --background-modifier-border: hsla(
-    221,
-    calc(calc(3.33% * 10) * 0.5),
-    85%,
-    0.1
-  );
-  --background-modifier-border-focus: hsla(
-    221,
-    calc(calc(3.33% * 10) * 0.5),
-    85%,
-    0.1
-  );
-  --background-modifier-border-hover: hsla(
-    221,
-    calc(calc(3.33% * 10) * 0.5),
-    85%,
-    0.1
-  );
-  --background-modifier-hover: hsla(
-    221,
-    calc(calc(3.33% * 10) * 0.5),
-    85%,
-    0.05
-  );
-  --background-primary: hsl(221, calc(3.33% * 10), calc(2.58% * 5));
+  --background-modifier-border: hsla(221, 16.65%, 85%, 0.1);
+  --background-modifier-border-focus: hsla(221, 16.65%, 85%, 0.1);
+  --background-modifier-border-hover: hsla(221, 16.65%, 85%, 0.1);
+  --background-modifier-hover: hsla(221, 16.65%, 85%, 0.05);
+  --background-primary: hsl(221, 33.3%, 12.9%);
   --code-comment: rgba(175, 191, 255);
-  --color-accent-2: hsl(calc(189 - 3), calc(100% * 1.02), calc(49% * 1.15));
+  --color-accent-2: hsl(186, 102%, 56.35%);
   --color-accent-hsl: 189, 100%, 49%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -756,7 +595,7 @@ html {
     background-color: rgba(rgb(250, 247, 245), 0.1);
     border: 2px dashed rgb(250, 247, 245);
     border-color: rgba(rgb(250, 247, 245), 0.25);
-    border-radius: calc(0.1px * 20);
+    border-radius: 2px;
     border-style: solid;
     border-width: 0px;
     margin: 1em 0;
@@ -876,13 +715,13 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: hsl(221, calc(3.33% * 10), calc(2.58% * 5));
+  background-color: hsl(221, 33.3%, 12.9%);
   section,
   .page > #quartz-body .sidebar {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: hsl(221, calc(3.33% * 10), calc(2.58% * 5));
+      background-color: hsl(221, 33.3%, 12.9%);
     }
   }
   .highlight,
@@ -1129,7 +968,7 @@ body {
   pre {
     background-color: #eee8d5;
     border: 0px solid transparent;
-    border-radius: calc(0.1px * 20);
+    border-radius: 2px;
     color: #839496;
     font-family:
       "??", "??", "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo,
@@ -1150,7 +989,7 @@ body {
     -webkit-box-decoration-break: clone;
     background-color: #eee8d5;
     border: 0px solid transparent;
-    border-radius: calc(0.1px * 20);
+    border-radius: 2px;
     color: #839496;
     font-family:
       "??", "??", "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo,
@@ -1231,7 +1070,7 @@ body {
       BlinkMacSystemFont,
       "Segoe UI",
       sans-serif;
-    font-size: calc(16px * 0.8);
+    font-size: 12.8px;
     height: auto;
     inset-inline-end: 0;
     margin: 6px;
@@ -1239,7 +1078,7 @@ body {
     position: absolute;
     top: 0;
     &:hover {
-      background-color: #000;
+      background-color: light-dark(#000, #000);
       box-shadow: none;
       color: #839496;
     }
@@ -1288,7 +1127,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: hsl(221, calc(3.33% * 10), calc(2.58% * 5));
+        background-color: hsl(221, 33.3%, 12.9%);
       }
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
@@ -1334,7 +1173,7 @@ body {
         text-overflow: ellipsis;
         position: relative;
         a {
-          border-radius: calc(0.1px * 20);
+          border-radius: 2px;
           color: rgb(250, 247, 245);
           cursor: pointer;
           display: flex;
@@ -1345,12 +1184,7 @@ body {
           padding: 6px 8px 6px 24px;
           &.active,
           &:hover {
-            background-color: hsla(
-              221,
-              calc(calc(3.33% * 10) * 0.5),
-              85%,
-              0.05
-            );
+            background-color: hsla(221, 16.65%, 85%, 0.05);
             color: rgb(250, 247, 245);
             font-weight: inherit;
           }
@@ -1473,10 +1307,10 @@ body {
       -webkit-app-region: no-drag;
       background: transparent;
       border: 1px solid transparent;
-      border-radius: calc(calc(0.1px * 20) * 2);
+      border-radius: 4px;
       color: rgb(250, 247, 245);
       font-family: inherit;
-      font-size: calc(16px * 0.937);
+      font-size: 14.992px;
       height: 40px;
       outline: none;
       padding: 4px 8px;
@@ -1487,18 +1321,18 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: hsl(221, calc(3.33% * 10), calc(2.58% * 5));
-        border: 0.5pt solid hsla(221, calc(calc(3.33% * 10) * 0.5), 85%, 0.1);
-        border-radius: calc(calc(0.1px * 20) * 3);
+        background-color: hsl(221, 33.3%, 12.9%);
+        border: 0.5pt solid hsla(221, 16.65%, 85%, 0.1);
+        border-radius: 6px;
         box-shadow:
           0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
           0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
           0px 30px 90px rgba(0, 0, 0, 0.2);
         margin: 12vh auto;
         & > input {
-          background-color: hsl(221, calc(3.33% * 10), calc(2.58% * 5));
+          background-color: hsl(221, 33.3%, 12.9%);
           border: none;
-          border-bottom: 1px solid hsl(221, calc(3.33% * 10), calc(2.58% * 5));
+          border-bottom: 1px solid hsl(221, 33.3%, 12.9%);
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1522,12 +1356,12 @@ body {
           }
           & .highlight {
             background: rgb(220, 193, 45);
-            color: #000;
+            color: light-dark(#000, #000);
             font-weight: bold;
             background: rgb(220, 193, 45);
             background-color: rgb(220, 193, 45);
             border-radius: 0.5px;
-            color: #000;
+            color: light-dark(#000, #000);
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1610,9 +1444,9 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: hsl(221, calc(3.33% * 10), calc(2.58% * 5));
+    background-color: hsl(221, 33.3%, 12.9%);
     border: 1px solid transparent;
-    border-radius: calc(calc(0.1px * 20) * 2);
+    border-radius: 4px;
     box-shadow:
       0px 1px 2px rgba(0, 0, 0, 0.121),
       0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
@@ -1628,9 +1462,9 @@ body {
     border: unset;
     & .popover-inner {
       border: 1px solid transparent;
-      background-color: hsl(221, calc(3.33% * 10), calc(2.58% * 5));
+      background-color: hsl(221, 33.3%, 12.9%);
 
-      border-radius: calc(calc(0.1px * 20) * 2);
+      border-radius: 4px;
     }
   }
   /* BACKGROUNDS */

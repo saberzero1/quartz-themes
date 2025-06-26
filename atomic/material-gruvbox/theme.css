@@ -951,20 +951,12 @@
 :root {
   --background-accent: light-dark(var(--dark0-soft), var(--light0-soft));
   --background-modifier-border: light-dark(var(--dark1), var(--light2));
-  --background-modifier-box-shadow: light-dark(
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.1)
-  );
-  --background-modifier-cover: light-dark(
-    rgba(10, 10, 10, 0.4),
-    rgba(220, 220, 220, 0.4)
-  );
   --background-primary: light-dark(var(--dark0), var(--light0-hard));
   --background-primary-alt: light-dark(var(--dark0-soft), var(--light0-hard));
   --background-secondary: light-dark(var(--dark0-hard), var(--light1));
   --background-secondary-alt: light-dark(
-    light-dark(var(--dark1), var(--color-base-05)),
-    var(--light1)
+    var(--color-base-30),
+    var(--color-base-05)
   );
   --bold-color: light-dark(var(--neutral-yellow), var(--faded-yellow));
   --calendar-background-hover: light-dark(var(--dark1), var(--light1));
@@ -975,10 +967,6 @@
   --checkbox-border-color-hover: light-dark(var(--light4), var(--light4));
   --checkbox-color: light-dark(var(--light4), var(--light4));
   --checkbox-color-hover: light-dark(var(--light4), var(--light4));
-  --checklist-done-color: light-dark(
-    rgba(var(--light2-x), 0.5),
-    rgba(var(--dark2-x), 0.4)
-  );
   --code-background: light-dark(var(--dark1), var(--light1));
   --code-normal: light-dark(var(--neutral-blue), var(--neutral-blue));
   --color-accent: light-dark(
@@ -1029,74 +1017,14 @@
   --color-base-50: light-dark(#666666, #ababab);
   --color-base-60: light-dark(#999999, #707070);
   --color-base-70: light-dark(#b3b3b3, #5c5c5c);
-  --color-blue: light-dark(
-    light-dark(var(--faded-blue), #086ddd),
-    var(--faded-blue)
-  );
-  --color-blue-rgb: light-dark(
-    light-dark(var(--faded-blue-x), 8, 109, 221),
-    var(--faded-blue-x)
-  );
-  --color-cyan: light-dark(
-    light-dark(var(--neutral-blue), #00bfbc),
-    var(--neutral-blue)
-  );
-  --color-cyan-rgb: light-dark(
-    light-dark(var(--neutral-blue-x), 0, 191, 188),
-    var(--neutral-blue-x)
-  );
-  --color-green: light-dark(
-    light-dark(var(--neutral-green), #08b94e),
-    var(--faded-green)
-  );
-  --color-green-rgb: light-dark(
-    light-dark(var(--neutral-green-x), 8, 185, 78),
-    var(--faded-green-x)
-  );
-  --color-orange: light-dark(
-    light-dark(var(--faded-yellow), #ec7500),
-    var(--faded-yellow)
-  );
-  --color-orange-rgb: light-dark(
-    light-dark(var(--faded-yellow-x), 236, 117, 0),
-    var(--faded-yellow-x)
-  );
-  --color-pink: light-dark(
-    light-dark(var(--neutral-purple), #d53984),
-    var(--faded-purple)
-  );
-  --color-pink-rgb: light-dark(
-    light-dark(var(--neutral-purple-x), 213, 57, 132),
-    var(--faded-purple-x)
-  );
-  --color-purple: light-dark(
-    light-dark(var(--neutral-purple), #7852ee),
-    var(--faded-purple)
-  );
-  --color-purple-rgb: light-dark(
-    light-dark(var(--neutral-purple-x), 120, 82, 238),
-    var(--faded-purple-x)
-  );
-  --color-red: light-dark(
-    light-dark(var(--neutral-red), #e93147),
-    var(--faded-red)
-  );
-  --color-red-rgb: light-dark(
-    light-dark(var(--neutral-red-x), 233, 49, 71),
-    var(--faded-red-x)
-  );
-  --color-yellow: light-dark(
-    light-dark(var(--neutral-yellow), #e0ac00),
-    var(--neutral-yellow)
-  );
-  --color-yellow-rgb: light-dark(
-    light-dark(var(--neutral-yellow-x), 224, 172, 0),
-    var(--neutral-yellow-x)
-  );
-  --cursor-line-background: light-dark(
-    rgba(var(--dark1-x), 0.5),
-    rgba(var(--light1-x), 0.5)
-  );
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --dark-text: rgb(var(--dark-text-x));
   --dark-text-faint: rgb(var(--dark-text-faint-x));
   --dark-text-faint-x: 179, 126, 93;
@@ -1118,15 +1046,7 @@
   --dark4: rgb(var(--dark4-x));
   --dark4-x: 124, 111, 100;
   --dataview-key: light-dark(var(--text-faint), var(--text-faint));
-  --dataview-key-background: light-dark(
-    rgba(var(--faded-red-x), 0.5),
-    rgba(var(--faded-red-x), 0.3)
-  );
   --dataview-value: light-dark(var(--text-faint), var(--text-faint));
-  --dataview-value-background: light-dark(
-    rgba(var(--neutral-green-x), 0.3),
-    rgba(var(--neutral-green-x), 0.2)
-  );
   --faded-aqua: rgb(var(--faded-aqua-x));
   --faded-aqua-x: 76, 122, 93;
   --faded-blue: rgb(var(--faded-blue-x));
@@ -1139,10 +1059,6 @@
   --faded-red-x: 193, 74, 74;
   --faded-yellow: rgb(var(--faded-yellow-x));
   --faded-yellow-x: 195, 94, 10;
-  --flashing-background: light-dark(
-    rgba(var(--neutral-red-x), 0.3),
-    rgba(var(--neutral-red-x), 0.3)
-  );
   --graph-line: light-dark(var(--dark2), var(--light3));
   --graph-node: light-dark(var(--light3), var(--gray));
   --graph-node-attachment: light-dark(
@@ -1158,36 +1074,11 @@
   --h4-color: light-dark(var(--neutral-aqua), var(--faded-aqua));
   --h5-color: light-dark(var(--neutral-blue), var(--faded-blue));
   --h6-color: light-dark(var(--neutral-purple), var(--faded-purple));
-  --highlight-mix-blend-mode: light-dark(darken, darken);
   --icon-color-focused: light-dark(var(--neutral-blue), var(--neutral-blue));
   --icon-color-hover: light-dark(var(--neutral-red), var(--neutral-red));
   --inline-title-color: light-dark(
     var(--neutral-yellow),
     var(--neutral-yellow)
-  );
-  --input-shadow: light-dark(
-    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2),
-    0 0 0 0 transparent,
-    inset 0 0 0 1px rgba(0, 0, 0, 0.12),
-    0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
-    0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent
-  );
-  --input-shadow-hover: light-dark(
-    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(0, 0, 0, 0.3),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4),
-    0 0 0 0 transparent,
-    inset 0 0 0 1px rgba(0, 0, 0, 0.17),
-    0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
-    0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent
   );
   --italic-color: light-dark(var(--neutral-yellow), var(--faded-yellow));
   --keyboard-height: 0px;
@@ -1211,12 +1102,6 @@
   --mermaid-actor: light-dark(var(--dark2), var(--light3));
   --mermaid-loopline: light-dark(var(--neutral-blue), var(--faded-blue));
   --mermaid-note: light-dark(var(--neutral-blue), var(--neutral-blue));
-  --mono-rgb-0: light-dark(0, 0, 0, 255, 255, 255);
-  --mono-rgb-100: light-dark(255, 255, 255, 0, 0, 0);
-  --nav-file-tag: light-dark(
-    rgba(var(--neutral-yellow-x), 0.9),
-    rgba(var(--faded-blue-x), 0.9)
-  );
   --nav-item-color-active: light-dark(var(--neutral-aqua), var(--faded-blue));
   --nav-item-color-hover: light-dark(var(--neutral-red), var(--neutral-red));
   --neutral-aqua: rgb(var(--neutral-aqua-x));
@@ -1238,22 +1123,6 @@
   --safe-area-inset-left: env(safe-area-inset-left);
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
-  --shadow-l: light-dark(
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2),
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2)
-  );
-  --shadow-s: light-dark(
-    0px 1px 2px rgba(0, 0, 0, 0.121),
-    0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3),
-    0px 1px 2px rgba(0, 0, 0, 0.028),
-    0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07)
-  );
   --spreadHorizontalWrapped-margin-LR: -3.5px;
   --tab-text-color-focused-active: light-dark(
     var(--neutral-yellow),
@@ -1263,22 +1132,9 @@
     var(--neutral-red),
     var(--neutral-red)
   );
-  --table-header-background: light-dark(
-    rgba(var(--dark0-x), 0.2),
-    rgba(var(--light3-x), 0.4)
-  );
   --table-header-background-hover: light-dark(var(--dark2), var(--light2));
   --table-row-background-hover: light-dark(var(--dark2), var(--light2));
-  --table-row-even-background: light-dark(
-    rgba(var(--dark2-x), 0.2),
-    rgba(var(--light1-x), 0.2)
-  );
-  --table-row-odd-background: light-dark(
-    rgba(var(--dark2-x), 0.4),
-    rgba(var(--light1-x), 0.7)
-  );
   --tag-background: light-dark(var(--dark2), var(--light1));
-  --tag-background-hover: light-dark(var(--dark1), rgba(var(--light1-x), 0.6));
   --tag-color: light-dark(var(--neutral-aqua), var(--faded-aqua));
   --text-accent: light-dark(var(--neutral-yellow), var(--neutral-yellow));
   --text-accent-hover: light-dark(var(--faded-yellow), var(--faded-yellow));
@@ -1287,10 +1143,6 @@
   --text-highlight-fg: light-dark(var(--dark0-hard), var(--light0-hard));
   --text-muted: light-dark(var(--light2), var(--dark-text-muted));
   --text-normal: light-dark(var(--light-text), var(--dark-text));
-  --text-selection: light-dark(
-    rgba(var(--neutral-red-x), 0.6),
-    rgba(var(--neutral-red-x), 0.6)
-  );
   --titlebar-text-color-focused: light-dark(
     var(--neutral-red),
     var(--bright-red)

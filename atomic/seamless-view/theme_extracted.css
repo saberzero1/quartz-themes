@@ -1,15 +1,4 @@
 :root {
-  --accent-h: light-dark(85, 180);
-  --accent-l: light-dark(40%, 25%);
-  --accent-s: light-dark(45%, 100%);
-  --background-modifier-box-shadow: light-dark(
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.1)
-  );
-  --background-modifier-cover: light-dark(
-    rgba(10, 10, 10, 0.4),
-    rgba(220, 220, 220, 0.4)
-  );
   --background-primary: light-dark(var(--color-base-25), var(--color-base-10));
   --background-primary-alt: light-dark(
     var(--color-base-30),
@@ -20,8 +9,8 @@
     var(--color-base-25)
   );
   --background-secondary-alt: light-dark(
-    light-dark(var(--color-base-30), var(--color-base-05)),
-    var(--color-base-20)
+    var(--color-base-30),
+    var(--color-base-05)
   );
   --bold-color: light-dark(var(--color-red-alt), var(--color-blue));
   --canvas-color-6: light-dark(
@@ -36,11 +25,8 @@
   --code-tag: light-dark(var(--color-red-alt), var(--color-red));
   --code-value: light-dark(var(--color-orange-alt), var(--color-orange));
   --color-accent: light-dark(
-    light-dark(
-      hsl(85, 45%, 40%),
-      hsl(var(--accent-h), var(--accent-s), var(--accent-l))
-    ),
-    hsl(180, 100%, 25%)
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l))
   );
   --color-accent-1: light-dark(
     hsl(
@@ -74,91 +60,28 @@
     var(--accent-s),
     var(--accent-l)
   );
-  --color-accent-rgb: light-dark(110, 148, 56, 0, 128, 128);
-  --color-base-00: light-dark(light-dark(#1e1e1e, #ffffff), hsl(40, 90%, 80%));
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(light-dark(#242424, #fafafa), hsl(36, 85%, 76%));
-  --color-base-100: light-dark(light-dark(#dadada, #222222), hsl(10, 20%, 15%));
-  --color-base-20: light-dark(light-dark(#262626, #f6f6f6), hsl(35, 80%, 72%));
-  --color-base-25: light-dark(light-dark(#2a2a2a, #e3e3e3), hsl(32, 80%, 70%));
-  --color-base-30: light-dark(light-dark(#363636, #e0e0e0), hsl(32, 70%, 60%));
-  --color-base-35: light-dark(light-dark(#3f3f3f, #d4d4d4), hsl(30, 60%, 55%));
-  --color-base-40: light-dark(light-dark(#555555, #bdbdbd), hsl(30, 40%, 50%));
-  --color-base-50: light-dark(light-dark(#666666, #ababab), hsl(20, 35%, 45%));
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
   --color-base-60: light-dark(#999999, #707070);
-  --color-base-70: light-dark(light-dark(#b3b3b3, #5c5c5c), hsl(20, 30%, 35%));
-  --color-blue: light-dark(
-    light-dark(hsl(207, 82%, 70%), #086ddd),
-    hsl(200, 90%, 30%)
-  );
-  --color-blue-rgb: light-dark(
-    light-dark(116, 185, 241, 8, 109, 221),
-    8,
-    99,
-    145
-  );
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
+  --color-blue: light-dark(#027aff, #086ddd);
   --color-code-alt: light-dark(rgb(160, 160, 160), rgb(194, 94, 0));
-  --color-code-alt-rgb: light-dark(160, 160, 160, 194, 94, 0);
-  --color-cyan: light-dark(
-    light-dark(hsl(187, 47%, 55%), #00bfbc),
-    hsl(180, 100%, 25%)
-  );
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
   --color-cyan-alt: light-dark(hsl(170, 100%, 24%), hsl(185, 70%, 65%));
-  --color-cyan-alt-rgb: light-dark(0, 122, 102, 103, 218, 228);
-  --color-cyan-rgb: light-dark(
-    light-dark(86, 182, 194, 0, 191, 188),
-    0,
-    128,
-    128
-  );
-  --color-green: light-dark(light-dark(#44cf6e, #08b94e), hsl(70, 100%, 25%));
-  --color-green-rgb: light-dark(
-    light-dark(68, 207, 110, 8, 185, 78),
-    106,
-    128,
-    0
-  );
-  --color-orange: light-dark(light-dark(#e9973f, #ec7500), hsl(35, 100%, 40%));
-  --color-orange-rgb: light-dark(
-    light-dark(233, 151, 63, 236, 117, 0),
-    204,
-    119,
-    0
-  );
-  --color-pink: light-dark(
-    light-dark(hsl(286, 60%, 67%), #d53984),
-    hsl(331, 65%, 53%)
-  );
-  --color-pink-rgb: light-dark(
-    light-dark(198, 120, 221, 213, 57, 132),
-    213,
-    57,
-    133
-  );
-  --color-purple: light-dark(light-dark(#a882ff, #7852ee), hsl(285, 65%, 50%));
-  --color-purple-rgb: light-dark(
-    light-dark(168, 130, 255, 120, 82, 238),
-    169,
-    45,
-    210
-  );
-  --color-red: light-dark(light-dark(#fb464c, #e93147), hsl(353, 81%, 40%));
-  --color-red-rgb: light-dark(
-    light-dark(251, 70, 76, 233, 49, 71),
-    185,
-    19,
-    39
-  );
-  --color-yellow: light-dark(
-    light-dark(hsl(50, 65%, 70%), #e0ac00),
-    hsl(45, 40%, 40%)
-  );
-  --color-yellow-rgb: light-dark(
-    light-dark(228, 212, 129, 224, 172, 0),
-    143,
-    122,
-    61
-  );
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --h1-color: light-dark(var(--color-red-alt), var(--color-red));
   --h2-color: light-dark(var(--color-yellow), var(--color-green));
   --h3-color: light-dark(var(--color-blue), var(--color-blue));
@@ -169,38 +92,10 @@
     var(--color-red-alt2-rgb),
     var(--color-cyan-alt-rgb)
   );
-  --highlight-mix-blend-mode: light-dark(darken, darken);
   --hr-color: light-dark(var(--color-base-40), var(--color-base-40));
-  --input-shadow: light-dark(
-    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2),
-    0 0 0 0 transparent,
-    inset 0 0 0 1px rgba(0, 0, 0, 0.12),
-    0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
-    0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent
-  );
-  --input-shadow-hover: light-dark(
-    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(0, 0, 0, 0.3),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4),
-    0 0 0 0 transparent,
-    inset 0 0 0 1px rgba(0, 0, 0, 0.17),
-    0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
-    0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent
-  );
   --italic-color: light-dark(var(--color-yellow), var(--color-red));
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
-  --metadata-icon: light-dark("📄", "📜");
-  --mono-rgb-0: light-dark(0, 0, 0, 255, 255, 255);
-  --mono-rgb-100: light-dark(255, 255, 255, 0, 0, 0);
   --page-border: 9px solid transparent;
   --page-margin: 1px auto -8px;
   --pdfViewer-padding-bottom: 0;
@@ -208,22 +103,6 @@
   --safe-area-inset-left: env(safe-area-inset-left);
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
-  --shadow-l: light-dark(
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2),
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2)
-  );
-  --shadow-s: light-dark(
-    0px 1px 2px rgba(0, 0, 0, 0.121),
-    0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3),
-    0px 1px 2px rgba(0, 0, 0, 0.028),
-    0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07)
-  );
   --spreadHorizontalWrapped-margin-LR: -3.5px;
   --strike-color: light-dark(var(--text-muted), var(--text-muted));
   --table-border-color: light-dark(var(--color-base-50), var(--color-base-50));

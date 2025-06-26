@@ -1,5 +1,23 @@
-export default function generateStaticCSS(cssString) {
+import colors from "./color-convert.mjs"
+import calc from "postcss-calc"
+import postcssCustomProperties from "postcss-custom-properties"
+import postcss from "postcss"
+
+export default function generateStaticCSS(cssString, themeName) {
+  const skipColors = ["Shiba Inu"]
+
   cssString = cssString.replace(/\/\*.*?\*\//gms, "")
+
+  cssString = postcss()
+  .use(postcssCustomProperties({ preserve: false }))
+  .process(cssString)
+  .css
+
+  cssString = postcss()
+  .use(calc({ preserve: false }))
+  .process(cssString)
+  .css
+
   let compareString = cssString
   cssString = resolveCssVariables(cssString)
 
@@ -8,7 +26,15 @@ export default function generateStaticCSS(cssString) {
     cssString = resolveCssVariables(cssString)
   }
 
-  return cssString;
+  const result = cssString
+
+  if (skipColors.includes(themeName)) return result
+
+  try {
+    return colors(cssString)
+  } catch(_e) {
+    return result
+  }
 }
 
 /**

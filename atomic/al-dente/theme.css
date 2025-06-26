@@ -949,35 +949,21 @@
 }
 
 :root {
-  --background-modifier-box-shadow: light-dark(
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.1)
-  );
-  --background-modifier-cover: light-dark(
-    rgba(10, 10, 10, 0.4),
-    rgba(220, 220, 220, 0.4)
-  );
   --background-nav: light-dark(var(--color-light), var(--color-light));
   --background-nav-alt: light-dark(var(--color-dark), var(--color-light));
   --background-primary: light-dark(var(--color-dark), var(--color-light));
   --background-primary-alt: light-dark(var(--color-dark), var(--color-light));
   --background-secondary: light-dark(var(--color-dark), var(--color-light));
   --background-secondary-alt: light-dark(
-    light-dark(var(--color-dark), var(--color-base-05)),
-    var(--color-light)
+    var(--color-base-30),
+    var(--color-base-05)
   );
   --code-block-background: light-dark(#000, #fff);
   --code-block-border: light-dark(
     var(--color-gray-light),
     var(--color-gray-light)
   );
-  --color-accent: light-dark(
-    light-dark(
-      hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
-      hsl(var(--accent-h), var(--accent-s), var(--accent-l))
-    ),
-    var(--color-green)
-  );
+  --color-accent: #e9573f;
   --color-accent-1: light-dark(
     hsl(
       calc(var(--accent-h) - 3),
@@ -1027,9 +1013,7 @@
   --color-blue: light-dark(#027aff, #086ddd);
   --color-blue-light: #17a2b8;
   --color-blue-lightest: #8bd1dc;
-  --color-blue-rgb: light-dark(2, 122, 255, 8, 109, 221);
   --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-cyan-rgb: light-dark(83, 223, 221, 0, 191, 188);
   --color-dark: #3f3e3c;
   --color-front: light-dark(var(--color-light), var(--color-dark));
   --color-gray: #696966;
@@ -1039,26 +1023,20 @@
   --color-green: light-dark(#44cf6e, #08b94e);
   --color-green-light: #c4cd8e;
   --color-green-lightest: #d4dbad;
-  --color-green-rgb: light-dark(68, 207, 110, 8, 185, 78);
   --color-light: #f6f6f4;
   --color-off: light-dark(#ccc, var(--color-gray-light));
   --color-orange: light-dark(#e9973f, #ec7500);
   --color-orange-light: #fc6e51;
-  --color-orange-rgb: light-dark(233, 151, 63, 236, 117, 0);
   --color-pink: light-dark(#fa99cd, #d53984);
-  --color-pink-rgb: light-dark(250, 153, 205, 213, 57, 132);
   --color-purple: light-dark(#a882ff, #7852ee);
   --color-purple-light: #b19fb6;
   --color-purple-lightest: #e1d6e2;
-  --color-purple-rgb: light-dark(168, 130, 255, 120, 82, 238);
   --color-red: light-dark(#fb464c, #e93147);
   --color-red-light: #e74c3c;
   --color-red-lightest: #f3a69e;
-  --color-red-rgb: light-dark(251, 70, 76, 233, 49, 71);
   --color-yellow: light-dark(#e0de71, #e0ac00);
   --color-yellow-light: #ffce54;
   --color-yellow-lightest: #f9dda2c0;
-  --color-yellow-rgb: light-dark(224, 222, 113, 224, 172, 0);
   --font-family-editor:
     "nunito sans", gotham, metropolis, prologue, manrope, inter, poppins,
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
@@ -1067,31 +1045,6 @@
   --font-monospace: "courier prime", "courier prime code";
   --font-title:
     bitter, "moranga", "matchbook regular", prompt, var(--font-family-editor);
-  --highlight-mix-blend-mode: light-dark(darken, darken);
-  --input-shadow: light-dark(
-    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2),
-    0 0 0 0 transparent,
-    inset 0 0 0 1px rgba(0, 0, 0, 0.12),
-    0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
-    0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent
-  );
-  --input-shadow-hover: light-dark(
-    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(0, 0, 0, 0.3),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4),
-    0 0 0 0 transparent,
-    inset 0 0 0 1px rgba(0, 0, 0, 0.17),
-    0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
-    0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent
-  );
   --interactive-accent: light-dark(var(--color-accent), var(--color-accent));
   --interactive-accent-hover: light-dark(
     var(--color-accent),
@@ -1104,8 +1057,6 @@
   --keyboard-height: 0px;
   --list-color: light-dark(var(--color-accent2), var(--color-accent));
   --loading-icon-delay: 400ms;
-  --mono-rgb-0: light-dark(0, 0, 0, 255, 255, 255);
-  --mono-rgb-100: light-dark(255, 255, 255, 0, 0, 0);
   --page-border: 9px solid transparent;
   --page-margin: 1px auto -8px;
   --pdfViewer-padding-bottom: 0;
@@ -1114,29 +1065,12 @@
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
   --shadow: 1px 1px 2px #88888888;
-  --shadow-l: light-dark(
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2),
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2)
-  );
-  --shadow-s: light-dark(
-    0px 1px 2px rgba(0, 0, 0, 0.121),
-    0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3),
-    0px 1px 2px rgba(0, 0, 0, 0.028),
-    0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07)
-  );
   --spreadHorizontalWrapped-margin-LR: -3.5px;
   --text-accent: light-dark(var(--color-accent2), var(--color-accent));
   --text-accent-hover: light-dark(
     var(--color-accent),
     var(--color-blue-accent)
   );
-  --text-faint: light-dark(rgba(150, 150, 150, 255), var(--color-gray-light));
   --text-highlight-bg: light-dark(#d0d6b1, var(--color-green-lightest));
   --text-nav: light-dark(var(--color-light), var(--color-dark));
   --text-nav-selected: light-dark(var(--color-light), var(--color-dark));

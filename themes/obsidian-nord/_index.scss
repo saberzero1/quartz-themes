@@ -23,78 +23,78 @@ html[saved-theme="dark"] {
     color: var(--shiki-dark);
   }
 
-  --background-modifier-border: rgb(67, 76, 94);
-  --background-primary: rgb(46, 52, 64);
-  --bold-color: rgb(235, 203, 139);
-  --checkbox-border-color: rgb(143, 188, 187);
-  --checkbox-border-color-hover: rgb(143, 188, 187);
-  --checkbox-color: rgb(143, 188, 187);
-  --checkbox-color-hover: rgb(143, 188, 187);
-  --code-background: rgb(59, 66, 82);
-  --code-normal: rgb(136, 192, 208);
-  --color-accent-2: hsl(calc(354 - 5), calc(42% * 1.05), calc(56% * 1.29));
+  --background-modifier-border: #434c5e;
+  --background-primary: #2e3440;
+  --bold-color: #ebcb8b;
+  --checkbox-border-color: #8fbcbb;
+  --checkbox-border-color-hover: #8fbcbb;
+  --checkbox-color: #8fbcbb;
+  --checkbox-color-hover: #8fbcbb;
+  --code-background: #3b4252;
+  --code-normal: #88c0d0;
+  --color-accent-2: #d799a4;
   --color-accent-hsl: 354, 42%, 56%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
   --color-base-35: #3f3f3f;
   --color-base-40: #555555;
-  --color-blue: rgb(94, 129, 172);
-  --color-cyan: rgb(136, 192, 208);
-  --color-green: rgb(163, 190, 140);
-  --color-orange: rgb(208, 135, 112);
+  --color-blue: #5e81ac;
+  --color-cyan: #88c0d0;
+  --color-green: #a3be8c;
+  --color-orange: #d08770;
   --color-pink: #fa99cd;
-  --color-purple: rgb(180, 142, 173);
-  --color-red: rgb(191, 97, 106);
-  --graph-line: rgb(76, 86, 106);
-  --graph-node-tag: rgb(191, 97, 106);
-  --h1-color: rgb(191, 97, 106);
-  --inline-title-color: rgb(235, 203, 139);
-  --italic-color: rgb(235, 203, 139);
-  --tag-background: rgb(67, 76, 94);
-  --tag-background-hover: rgb(59, 66, 82);
-  --tag-color: rgb(143, 188, 187);
-  --text-accent: rgb(208, 135, 112);
-  --text-accent-hover: rgb(129, 161, 193);
-  --text-faint: rgb(216, 222, 233);
-  --text-highlight-bg: rgb(136, 192, 208);
-  --text-muted: rgb(229, 233, 240);
-  --text-normal: rgb(236, 239, 244);
-  --background-modifier-border: rgb(67, 76, 94);
-  --background-primary: rgb(46, 52, 64);
-  --bold-color: rgb(235, 203, 139);
-  --checkbox-border-color: rgb(143, 188, 187);
-  --checkbox-border-color-hover: rgb(143, 188, 187);
-  --checkbox-color: rgb(143, 188, 187);
-  --checkbox-color-hover: rgb(143, 188, 187);
-  --code-background: rgb(59, 66, 82);
-  --code-normal: rgb(136, 192, 208);
-  --color-accent-2: hsl(calc(354 - 5), calc(42% * 1.05), calc(56% * 1.29));
+  --color-purple: #b48ead;
+  --color-red: #bf616a;
+  --graph-line: #4c566a;
+  --graph-node-tag: #bf616a;
+  --h1-color: #bf616a;
+  --inline-title-color: #ebcb8b;
+  --italic-color: #ebcb8b;
+  --tag-background: #434c5e;
+  --tag-background-hover: #3b4252;
+  --tag-color: #8fbcbb;
+  --text-accent: #d08770;
+  --text-accent-hover: #81a1c1;
+  --text-faint: #d8dee9;
+  --text-highlight-bg: #88c0d0;
+  --text-muted: #e5e9f0;
+  --text-normal: #eceff4;
+  --background-modifier-border: #434c5e;
+  --background-primary: #2e3440;
+  --bold-color: #ebcb8b;
+  --checkbox-border-color: #8fbcbb;
+  --checkbox-border-color-hover: #8fbcbb;
+  --checkbox-color: #8fbcbb;
+  --checkbox-color-hover: #8fbcbb;
+  --code-background: #3b4252;
+  --code-normal: #88c0d0;
+  --color-accent-2: #d799a4;
   --color-accent-hsl: 354, 42%, 56%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
   --color-base-35: #3f3f3f;
   --color-base-40: #555555;
-  --color-blue: rgb(94, 129, 172);
-  --color-cyan: rgb(136, 192, 208);
-  --color-green: rgb(163, 190, 140);
-  --color-orange: rgb(208, 135, 112);
+  --color-blue: #5e81ac;
+  --color-cyan: #88c0d0;
+  --color-green: #a3be8c;
+  --color-orange: #d08770;
   --color-pink: #fa99cd;
-  --color-purple: rgb(180, 142, 173);
-  --color-red: rgb(191, 97, 106);
-  --graph-line: rgb(76, 86, 106);
-  --graph-node-tag: rgb(191, 97, 106);
-  --h1-color: rgb(191, 97, 106);
-  --inline-title-color: rgb(235, 203, 139);
-  --italic-color: rgb(235, 203, 139);
-  --tag-background: rgb(67, 76, 94);
-  --tag-background-hover: rgb(59, 66, 82);
-  --tag-color: rgb(143, 188, 187);
-  --text-accent: rgb(208, 135, 112);
-  --text-accent-hover: rgb(129, 161, 193);
-  --text-faint: rgb(216, 222, 233);
-  --text-highlight-bg: rgb(136, 192, 208);
-  --text-muted: rgb(229, 233, 240);
-  --text-normal: rgb(236, 239, 244);
+  --color-purple: #b48ead;
+  --color-red: #bf616a;
+  --graph-line: #4c566a;
+  --graph-node-tag: #bf616a;
+  --h1-color: #bf616a;
+  --inline-title-color: #ebcb8b;
+  --italic-color: #ebcb8b;
+  --tag-background: #434c5e;
+  --tag-background-hover: #3b4252;
+  --tag-color: #8fbcbb;
+  --text-accent: #d08770;
+  --text-accent-hover: #81a1c1;
+  --text-faint: #d8dee9;
+  --text-highlight-bg: #88c0d0;
+  --text-muted: #e5e9f0;
+  --text-normal: #eceff4;
 }
 
 :root[saved-theme="light"],
@@ -113,78 +113,78 @@ html[saved-theme="light"] {
     color: var(--shiki-light);
   }
 
-  --background-modifier-border: rgb(229, 233, 240);
-  --background-primary: rgb(255, 255, 255);
-  --bold-color: rgb(163, 190, 140);
-  --checkbox-border-color: rgb(129, 161, 193);
-  --checkbox-border-color-hover: rgb(129, 161, 193);
-  --checkbox-color: rgb(129, 161, 193);
-  --checkbox-color-hover: rgb(129, 161, 193);
-  --code-background: rgb(236, 239, 244);
-  --code-normal: rgb(136, 192, 208);
-  --color-accent-2: hsl(calc(354 - 3), calc(42% * 1.02), calc(56% * 1.15));
+  --background-modifier-border: #e5e9f0;
+  --background-primary: #ffffff;
+  --bold-color: #a3be8c;
+  --checkbox-border-color: #81a1c1;
+  --checkbox-border-color-hover: #81a1c1;
+  --checkbox-color: #81a1c1;
+  --checkbox-color-hover: #81a1c1;
+  --code-background: #eceff4;
+  --code-normal: #88c0d0;
+  --color-accent-2: #cb7d89;
   --color-accent-hsl: 354, 42%, 56%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
   --color-base-35: #d4d4d4;
   --color-base-40: #bdbdbd;
-  --color-blue: rgb(94, 129, 172);
-  --color-cyan: rgb(136, 192, 208);
-  --color-green: rgb(163, 190, 140);
-  --color-orange: rgb(208, 135, 112);
+  --color-blue: #5e81ac;
+  --color-cyan: #88c0d0;
+  --color-green: #a3be8c;
+  --color-orange: #d08770;
   --color-pink: #d53984;
-  --color-purple: rgb(180, 142, 173);
-  --color-red: rgb(191, 97, 106);
-  --graph-line: rgb(216, 222, 233);
-  --graph-node-tag: rgb(191, 97, 106);
-  --h1-color: rgb(191, 97, 106);
-  --inline-title-color: rgb(235, 203, 139);
-  --italic-color: rgb(163, 190, 140);
-  --tag-background: rgb(229, 233, 240);
-  --tag-background-hover: rgb(216, 222, 233);
-  --tag-color: rgb(76, 86, 106);
-  --text-accent: rgb(208, 135, 112);
-  --text-accent-hover: rgb(129, 161, 193);
-  --text-faint: rgb(46, 52, 64);
-  --text-highlight-bg: rgb(235, 203, 139);
-  --text-muted: rgb(59, 66, 82);
-  --text-normal: rgb(67, 76, 94);
-  --background-modifier-border: rgb(229, 233, 240);
-  --background-primary: rgb(255, 255, 255);
-  --bold-color: rgb(163, 190, 140);
-  --checkbox-border-color: rgb(129, 161, 193);
-  --checkbox-border-color-hover: rgb(129, 161, 193);
-  --checkbox-color: rgb(129, 161, 193);
-  --checkbox-color-hover: rgb(129, 161, 193);
-  --code-background: rgb(236, 239, 244);
-  --code-normal: rgb(136, 192, 208);
-  --color-accent-2: hsl(calc(354 - 3), calc(42% * 1.02), calc(56% * 1.15));
+  --color-purple: #b48ead;
+  --color-red: #bf616a;
+  --graph-line: #d8dee9;
+  --graph-node-tag: #bf616a;
+  --h1-color: #bf616a;
+  --inline-title-color: #ebcb8b;
+  --italic-color: #a3be8c;
+  --tag-background: #e5e9f0;
+  --tag-background-hover: #d8dee9;
+  --tag-color: #4c566a;
+  --text-accent: #d08770;
+  --text-accent-hover: #81a1c1;
+  --text-faint: #2e3440;
+  --text-highlight-bg: #ebcb8b;
+  --text-muted: #3b4252;
+  --text-normal: #434c5e;
+  --background-modifier-border: #e5e9f0;
+  --background-primary: #ffffff;
+  --bold-color: #a3be8c;
+  --checkbox-border-color: #81a1c1;
+  --checkbox-border-color-hover: #81a1c1;
+  --checkbox-color: #81a1c1;
+  --checkbox-color-hover: #81a1c1;
+  --code-background: #eceff4;
+  --code-normal: #88c0d0;
+  --color-accent-2: #cb7d89;
   --color-accent-hsl: 354, 42%, 56%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
   --color-base-35: #d4d4d4;
   --color-base-40: #bdbdbd;
-  --color-blue: rgb(94, 129, 172);
-  --color-cyan: rgb(136, 192, 208);
-  --color-green: rgb(163, 190, 140);
-  --color-orange: rgb(208, 135, 112);
+  --color-blue: #5e81ac;
+  --color-cyan: #88c0d0;
+  --color-green: #a3be8c;
+  --color-orange: #d08770;
   --color-pink: #d53984;
-  --color-purple: rgb(180, 142, 173);
-  --color-red: rgb(191, 97, 106);
-  --graph-line: rgb(216, 222, 233);
-  --graph-node-tag: rgb(191, 97, 106);
-  --h1-color: rgb(191, 97, 106);
-  --inline-title-color: rgb(235, 203, 139);
-  --italic-color: rgb(163, 190, 140);
-  --tag-background: rgb(229, 233, 240);
-  --tag-background-hover: rgb(216, 222, 233);
-  --tag-color: rgb(76, 86, 106);
-  --text-accent: rgb(208, 135, 112);
-  --text-accent-hover: rgb(129, 161, 193);
-  --text-faint: rgb(46, 52, 64);
-  --text-highlight-bg: rgb(235, 203, 139);
-  --text-muted: rgb(59, 66, 82);
-  --text-normal: rgb(67, 76, 94);
+  --color-purple: #b48ead;
+  --color-red: #bf616a;
+  --graph-line: #d8dee9;
+  --graph-node-tag: #bf616a;
+  --h1-color: #bf616a;
+  --inline-title-color: #ebcb8b;
+  --italic-color: #a3be8c;
+  --tag-background: #e5e9f0;
+  --tag-background-hover: #d8dee9;
+  --tag-color: #4c566a;
+  --text-accent: #d08770;
+  --text-accent-hover: #81a1c1;
+  --text-faint: #2e3440;
+  --text-highlight-bg: #ebcb8b;
+  --text-muted: #3b4252;
+  --text-normal: #434c5e;
 }
 
 @font-face {
@@ -348,99 +348,71 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --background-modifier-border: light-dark(rgb(67, 76, 94), rgb(229, 233, 240));
-  --background-primary: light-dark(rgb(46, 52, 64), rgb(255, 255, 255));
-  --bold-color: light-dark(rgb(235, 203, 139), rgb(163, 190, 140));
-  --checkbox-border-color: light-dark(rgb(143, 188, 187), rgb(129, 161, 193));
-  --checkbox-border-color-hover: light-dark(
-    rgb(143, 188, 187),
-    rgb(129, 161, 193)
-  );
-  --checkbox-color: light-dark(rgb(143, 188, 187), rgb(129, 161, 193));
-  --checkbox-color-hover: light-dark(rgb(143, 188, 187), rgb(129, 161, 193));
-  --code-background: light-dark(rgb(59, 66, 82), rgb(236, 239, 244));
-  --code-normal: light-dark(rgb(136, 192, 208), rgb(136, 192, 208));
-  --color-accent-2: light-dark(
-    hsl(calc(354 - 5), calc(42% * 1.05), calc(56% * 1.29)),
-    hsl(calc(354 - 3), calc(42% * 1.02), calc(56% * 1.15))
-  );
+  --background-modifier-border: light-dark(#434c5e, #e5e9f0);
+  --background-primary: light-dark(#2e3440, #ffffff);
+  --bold-color: light-dark(#ebcb8b, #a3be8c);
+  --checkbox-border-color: light-dark(#8fbcbb, #81a1c1);
+  --checkbox-border-color-hover: light-dark(#8fbcbb, #81a1c1);
+  --checkbox-color: light-dark(#8fbcbb, #81a1c1);
+  --checkbox-color-hover: light-dark(#8fbcbb, #81a1c1);
+  --code-background: light-dark(#3b4252, #eceff4);
+  --code-normal: light-dark(#88c0d0, #88c0d0);
+  --color-accent-2: light-dark(#d799a4, #cb7d89);
   --color-accent-hsl: light-dark(354, 42%, 56%, 354, 42%, 56%);
   --color-base-100: light-dark(#dadada, #222222);
   --color-base-30: light-dark(#363636, #e0e0e0);
   --color-base-35: light-dark(#3f3f3f, #d4d4d4);
   --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(
-    light-dark(rgb(94, 129, 172), #086ddd),
-    rgb(94, 129, 172)
-  );
-  --color-cyan: light-dark(
-    light-dark(rgb(136, 192, 208), #00bfbc),
-    rgb(136, 192, 208)
-  );
-  --color-green: light-dark(
-    light-dark(rgb(163, 190, 140), #08b94e),
-    rgb(163, 190, 140)
-  );
-  --color-orange: light-dark(
-    light-dark(rgb(208, 135, 112), #ec7500),
-    rgb(208, 135, 112)
-  );
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
   --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(
-    light-dark(rgb(180, 142, 173), #7852ee),
-    rgb(180, 142, 173)
-  );
-  --color-red: light-dark(
-    light-dark(rgb(191, 97, 106), #e93147),
-    rgb(191, 97, 106)
-  );
-  --graph-line: light-dark(rgb(76, 86, 106), rgb(216, 222, 233));
-  --graph-node-tag: light-dark(rgb(191, 97, 106), rgb(191, 97, 106));
-  --h1-color: light-dark(rgb(191, 97, 106), rgb(191, 97, 106));
-  --inline-title-color: light-dark(rgb(235, 203, 139), rgb(235, 203, 139));
-  --italic-color: light-dark(rgb(235, 203, 139), rgb(163, 190, 140));
-  --tag-background: light-dark(rgb(67, 76, 94), rgb(229, 233, 240));
-  --tag-background-hover: light-dark(rgb(59, 66, 82), rgb(216, 222, 233));
-  --tag-color: light-dark(rgb(143, 188, 187), rgb(76, 86, 106));
-  --text-accent: light-dark(rgb(208, 135, 112), rgb(208, 135, 112));
-  --text-accent-hover: light-dark(rgb(129, 161, 193), rgb(129, 161, 193));
-  --text-faint: light-dark(rgb(216, 222, 233), rgb(46, 52, 64));
-  --text-highlight-bg: light-dark(rgb(136, 192, 208), rgb(235, 203, 139));
-  --text-muted: light-dark(rgb(229, 233, 240), rgb(59, 66, 82));
-  --text-normal: light-dark(rgb(236, 239, 244), rgb(67, 76, 94));
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
+  --graph-line: light-dark(#4c566a, #d8dee9);
+  --graph-node-tag: light-dark(#bf616a, #bf616a);
+  --h1-color: light-dark(#bf616a, #bf616a);
+  --inline-title-color: light-dark(#ebcb8b, #ebcb8b);
+  --italic-color: light-dark(#ebcb8b, #a3be8c);
+  --tag-background: light-dark(#434c5e, #e5e9f0);
+  --tag-background-hover: light-dark(#3b4252, #d8dee9);
+  --tag-color: light-dark(#8fbcbb, #4c566a);
+  --text-accent: light-dark(#d08770, #d08770);
+  --text-accent-hover: light-dark(#81a1c1, #81a1c1);
+  --text-faint: light-dark(#d8dee9, #2e3440);
+  --text-highlight-bg: light-dark(#88c0d0, #ebcb8b);
+  --text-muted: light-dark(#e5e9f0, #3b4252);
+  --text-normal: light-dark(#eceff4, #434c5e);
 }
 body {
   --background-modifier-border: #363636;
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;
-  --background-modifier-hover: rgba(255, 255, 255, 0.067);
+  --background-modifier-hover: #ffffff11;
   --background-primary: #000;
   --bold-color: inherit;
   --bold-weight: 600;
-  --checkbox-border-color: rgb(216, 222, 233);
-  --checkbox-border-color-hover: rgb(229, 233, 240);
-  --checkbox-color: hsl(354, 42%, 56%);
-  --checkbox-color-hover: hsl(
-    calc(354 - 3),
-    calc(42% * 1.02),
-    calc(56% * 1.15)
-  );
-  --checkbox-marker-color: rgb(46, 52, 64);
+  --checkbox-border-color: #d8dee9;
+  --checkbox-border-color-hover: #e5e9f0;
+  --checkbox-color: #be6069;
+  --checkbox-color-hover: #cb7d89;
+  --checkbox-marker-color: #2e3440;
   --checkbox-radius: 0;
   --checkbox-size: 16px;
-  --code-background: rgb(46, 52, 64);
-  --code-comment: rgb(216, 222, 233);
-  --code-function: rgb(235, 203, 139);
-  --code-important: rgb(208, 135, 112);
+  --code-background: #2e3440;
+  --code-comment: #d8dee9;
+  --code-function: #ebcb8b;
+  --code-important: #d08770;
   --code-keyword: #fa99cd;
-  --code-normal: rgb(236, 239, 244);
-  --code-property: rgb(136, 192, 208);
-  --code-punctuation: rgb(229, 233, 240);
-  --code-string: rgb(163, 190, 140);
-  --code-tag: rgb(191, 97, 106);
-  --code-value: rgb(180, 142, 173);
-  --collapse-icon-color: rgb(216, 222, 233);
-  --collapse-icon-color-collapsed: rgb(208, 135, 112);
+  --code-normal: #eceff4;
+  --code-property: #88c0d0;
+  --code-punctuation: #e5e9f0;
+  --code-string: #a3be8c;
+  --code-tag: #bf616a;
+  --code-value: #b48ead;
+  --collapse-icon-color: #d8dee9;
+  --collapse-icon-color-collapsed: #d08770;
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -448,48 +420,48 @@ body {
     sans-serif;
   --font-text: "??", "??", "??", "Arial";
   --graph-line: #3f3f3f;
-  --graph-node-tag: rgb(163, 190, 140);
-  --graph-node-unresolved: rgb(216, 222, 233);
+  --graph-node-tag: #a3be8c;
+  --graph-node-unresolved: #d8dee9;
   --h1-color: inherit;
   --h1-font: inherit;
   --h3-line-height: 1.3;
   --hr-color: transparent;
   --hr-thickness: 2px;
-  --icon-color: rgb(229, 233, 240);
-  --inline-title-color: rgb(191, 97, 106);
+  --icon-color: #e5e9f0;
+  --inline-title-color: #bf616a;
   --inline-title-font: inherit;
   --interactive-accent-hsl: 354, 42%, 56%;
   --italic-color: inherit;
-  --link-color: rgb(208, 135, 112);
-  --link-color-hover: rgb(129, 161, 193);
-  --link-external-color: rgb(208, 135, 112);
-  --link-external-color-hover: rgb(129, 161, 193);
+  --link-color: #d08770;
+  --link-color-hover: #81a1c1;
+  --link-external-color: #d08770;
+  --link-external-color-hover: #81a1c1;
   --link-external-filter: none;
   --link-weight: 600;
   --p-spacing: 1rem;
-  --search-icon-color: rgb(229, 233, 240);
-  --tag-background: hsla(354, 42%, 56%, 0.1);
-  --tag-background-hover: hsla(354, 42%, 56%, 0.2);
-  --tag-border-color: hsla(354, 42%, 56%, 0.15);
-  --tag-border-color-hover: hsla(354, 42%, 56%, 0.15);
+  --search-icon-color: #e5e9f0;
+  --tag-background: #be60691a;
+  --tag-background-hover: #be606933;
+  --tag-border-color: #be606926;
+  --tag-border-color-hover: #be606926;
   --tag-border-width: 0px;
-  --tag-color: rgb(208, 135, 112);
-  --tag-color-hover: rgb(208, 135, 112);
+  --tag-color: #d08770;
+  --tag-color-hover: #d08770;
   --tag-decoration: none;
   --tag-decoration-hover: underline;
   --tag-radius: 0.5em;
   --tag-weight: inherit;
-  --text-accent: hsl(354, 42%, 56%);
-  --text-accent-hover: hsl(calc(354 - 5), calc(42% * 1.05), calc(56% * 1.29));
+  --text-accent: #be6069;
+  --text-accent-hover: #d799a4;
   --text-faint: #666666;
-  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-highlight-bg: #ffd00066;
   --text-muted: #b3b3b3;
   --text-normal: #dadada;
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: rgb(46, 52, 64);
-  caret-color: rgb(208, 135, 112);
-  color: rgb(236, 239, 244);
+  background-color: light-dark(#2e3440, #ffffff);
+  caret-color: #d08770;
+  color: light-dark(#eceff4, #434c5e);
   contain: initial;
   font-family:
     "??",
@@ -535,78 +507,78 @@ html[saved-theme="dark"] {
     color: var(--shiki-dark);
   }
 
-  --background-modifier-border: rgb(67, 76, 94);
-  --background-primary: rgb(46, 52, 64);
-  --bold-color: rgb(235, 203, 139);
-  --checkbox-border-color: rgb(143, 188, 187);
-  --checkbox-border-color-hover: rgb(143, 188, 187);
-  --checkbox-color: rgb(143, 188, 187);
-  --checkbox-color-hover: rgb(143, 188, 187);
-  --code-background: rgb(59, 66, 82);
-  --code-normal: rgb(136, 192, 208);
-  --color-accent-2: hsl(calc(354 - 5), calc(42% * 1.05), calc(56% * 1.29));
+  --background-modifier-border: #434c5e;
+  --background-primary: #2e3440;
+  --bold-color: #ebcb8b;
+  --checkbox-border-color: #8fbcbb;
+  --checkbox-border-color-hover: #8fbcbb;
+  --checkbox-color: #8fbcbb;
+  --checkbox-color-hover: #8fbcbb;
+  --code-background: #3b4252;
+  --code-normal: #88c0d0;
+  --color-accent-2: #d799a4;
   --color-accent-hsl: 354, 42%, 56%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
   --color-base-35: #3f3f3f;
   --color-base-40: #555555;
-  --color-blue: rgb(94, 129, 172);
-  --color-cyan: rgb(136, 192, 208);
-  --color-green: rgb(163, 190, 140);
-  --color-orange: rgb(208, 135, 112);
+  --color-blue: #5e81ac;
+  --color-cyan: #88c0d0;
+  --color-green: #a3be8c;
+  --color-orange: #d08770;
   --color-pink: #fa99cd;
-  --color-purple: rgb(180, 142, 173);
-  --color-red: rgb(191, 97, 106);
-  --graph-line: rgb(76, 86, 106);
-  --graph-node-tag: rgb(191, 97, 106);
-  --h1-color: rgb(191, 97, 106);
-  --inline-title-color: rgb(235, 203, 139);
-  --italic-color: rgb(235, 203, 139);
-  --tag-background: rgb(67, 76, 94);
-  --tag-background-hover: rgb(59, 66, 82);
-  --tag-color: rgb(143, 188, 187);
-  --text-accent: rgb(208, 135, 112);
-  --text-accent-hover: rgb(129, 161, 193);
-  --text-faint: rgb(216, 222, 233);
-  --text-highlight-bg: rgb(136, 192, 208);
-  --text-muted: rgb(229, 233, 240);
-  --text-normal: rgb(236, 239, 244);
-  --background-modifier-border: rgb(67, 76, 94);
-  --background-primary: rgb(46, 52, 64);
-  --bold-color: rgb(235, 203, 139);
-  --checkbox-border-color: rgb(143, 188, 187);
-  --checkbox-border-color-hover: rgb(143, 188, 187);
-  --checkbox-color: rgb(143, 188, 187);
-  --checkbox-color-hover: rgb(143, 188, 187);
-  --code-background: rgb(59, 66, 82);
-  --code-normal: rgb(136, 192, 208);
-  --color-accent-2: hsl(calc(354 - 5), calc(42% * 1.05), calc(56% * 1.29));
+  --color-purple: #b48ead;
+  --color-red: #bf616a;
+  --graph-line: #4c566a;
+  --graph-node-tag: #bf616a;
+  --h1-color: #bf616a;
+  --inline-title-color: #ebcb8b;
+  --italic-color: #ebcb8b;
+  --tag-background: #434c5e;
+  --tag-background-hover: #3b4252;
+  --tag-color: #8fbcbb;
+  --text-accent: #d08770;
+  --text-accent-hover: #81a1c1;
+  --text-faint: #d8dee9;
+  --text-highlight-bg: #88c0d0;
+  --text-muted: #e5e9f0;
+  --text-normal: #eceff4;
+  --background-modifier-border: #434c5e;
+  --background-primary: #2e3440;
+  --bold-color: #ebcb8b;
+  --checkbox-border-color: #8fbcbb;
+  --checkbox-border-color-hover: #8fbcbb;
+  --checkbox-color: #8fbcbb;
+  --checkbox-color-hover: #8fbcbb;
+  --code-background: #3b4252;
+  --code-normal: #88c0d0;
+  --color-accent-2: #d799a4;
   --color-accent-hsl: 354, 42%, 56%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
   --color-base-35: #3f3f3f;
   --color-base-40: #555555;
-  --color-blue: rgb(94, 129, 172);
-  --color-cyan: rgb(136, 192, 208);
-  --color-green: rgb(163, 190, 140);
-  --color-orange: rgb(208, 135, 112);
+  --color-blue: #5e81ac;
+  --color-cyan: #88c0d0;
+  --color-green: #a3be8c;
+  --color-orange: #d08770;
   --color-pink: #fa99cd;
-  --color-purple: rgb(180, 142, 173);
-  --color-red: rgb(191, 97, 106);
-  --graph-line: rgb(76, 86, 106);
-  --graph-node-tag: rgb(191, 97, 106);
-  --h1-color: rgb(191, 97, 106);
-  --inline-title-color: rgb(235, 203, 139);
-  --italic-color: rgb(235, 203, 139);
-  --tag-background: rgb(67, 76, 94);
-  --tag-background-hover: rgb(59, 66, 82);
-  --tag-color: rgb(143, 188, 187);
-  --text-accent: rgb(208, 135, 112);
-  --text-accent-hover: rgb(129, 161, 193);
-  --text-faint: rgb(216, 222, 233);
-  --text-highlight-bg: rgb(136, 192, 208);
-  --text-muted: rgb(229, 233, 240);
-  --text-normal: rgb(236, 239, 244);
+  --color-purple: #b48ead;
+  --color-red: #bf616a;
+  --graph-line: #4c566a;
+  --graph-node-tag: #bf616a;
+  --h1-color: #bf616a;
+  --inline-title-color: #ebcb8b;
+  --italic-color: #ebcb8b;
+  --tag-background: #434c5e;
+  --tag-background-hover: #3b4252;
+  --tag-color: #8fbcbb;
+  --text-accent: #d08770;
+  --text-accent-hover: #81a1c1;
+  --text-faint: #d8dee9;
+  --text-highlight-bg: #88c0d0;
+  --text-muted: #e5e9f0;
+  --text-normal: #eceff4;
 }
 /* END DARK */
 /* START LIGHT */
@@ -626,86 +598,86 @@ html[saved-theme="light"] {
     color: var(--shiki-light);
   }
 
-  --background-modifier-border: rgb(229, 233, 240);
-  --background-primary: rgb(255, 255, 255);
-  --bold-color: rgb(163, 190, 140);
-  --checkbox-border-color: rgb(129, 161, 193);
-  --checkbox-border-color-hover: rgb(129, 161, 193);
-  --checkbox-color: rgb(129, 161, 193);
-  --checkbox-color-hover: rgb(129, 161, 193);
-  --code-background: rgb(236, 239, 244);
-  --code-normal: rgb(136, 192, 208);
-  --color-accent-2: hsl(calc(354 - 3), calc(42% * 1.02), calc(56% * 1.15));
+  --background-modifier-border: #e5e9f0;
+  --background-primary: #ffffff;
+  --bold-color: #a3be8c;
+  --checkbox-border-color: #81a1c1;
+  --checkbox-border-color-hover: #81a1c1;
+  --checkbox-color: #81a1c1;
+  --checkbox-color-hover: #81a1c1;
+  --code-background: #eceff4;
+  --code-normal: #88c0d0;
+  --color-accent-2: #cb7d89;
   --color-accent-hsl: 354, 42%, 56%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
   --color-base-35: #d4d4d4;
   --color-base-40: #bdbdbd;
-  --color-blue: rgb(94, 129, 172);
-  --color-cyan: rgb(136, 192, 208);
-  --color-green: rgb(163, 190, 140);
-  --color-orange: rgb(208, 135, 112);
+  --color-blue: #5e81ac;
+  --color-cyan: #88c0d0;
+  --color-green: #a3be8c;
+  --color-orange: #d08770;
   --color-pink: #d53984;
-  --color-purple: rgb(180, 142, 173);
-  --color-red: rgb(191, 97, 106);
-  --graph-line: rgb(216, 222, 233);
-  --graph-node-tag: rgb(191, 97, 106);
-  --h1-color: rgb(191, 97, 106);
-  --inline-title-color: rgb(235, 203, 139);
-  --italic-color: rgb(163, 190, 140);
-  --tag-background: rgb(229, 233, 240);
-  --tag-background-hover: rgb(216, 222, 233);
-  --tag-color: rgb(76, 86, 106);
-  --text-accent: rgb(208, 135, 112);
-  --text-accent-hover: rgb(129, 161, 193);
-  --text-faint: rgb(46, 52, 64);
-  --text-highlight-bg: rgb(235, 203, 139);
-  --text-muted: rgb(59, 66, 82);
-  --text-normal: rgb(67, 76, 94);
-  --background-modifier-border: rgb(229, 233, 240);
-  --background-primary: rgb(255, 255, 255);
-  --bold-color: rgb(163, 190, 140);
-  --checkbox-border-color: rgb(129, 161, 193);
-  --checkbox-border-color-hover: rgb(129, 161, 193);
-  --checkbox-color: rgb(129, 161, 193);
-  --checkbox-color-hover: rgb(129, 161, 193);
-  --code-background: rgb(236, 239, 244);
-  --code-normal: rgb(136, 192, 208);
-  --color-accent-2: hsl(calc(354 - 3), calc(42% * 1.02), calc(56% * 1.15));
+  --color-purple: #b48ead;
+  --color-red: #bf616a;
+  --graph-line: #d8dee9;
+  --graph-node-tag: #bf616a;
+  --h1-color: #bf616a;
+  --inline-title-color: #ebcb8b;
+  --italic-color: #a3be8c;
+  --tag-background: #e5e9f0;
+  --tag-background-hover: #d8dee9;
+  --tag-color: #4c566a;
+  --text-accent: #d08770;
+  --text-accent-hover: #81a1c1;
+  --text-faint: #2e3440;
+  --text-highlight-bg: #ebcb8b;
+  --text-muted: #3b4252;
+  --text-normal: #434c5e;
+  --background-modifier-border: #e5e9f0;
+  --background-primary: #ffffff;
+  --bold-color: #a3be8c;
+  --checkbox-border-color: #81a1c1;
+  --checkbox-border-color-hover: #81a1c1;
+  --checkbox-color: #81a1c1;
+  --checkbox-color-hover: #81a1c1;
+  --code-background: #eceff4;
+  --code-normal: #88c0d0;
+  --color-accent-2: #cb7d89;
   --color-accent-hsl: 354, 42%, 56%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
   --color-base-35: #d4d4d4;
   --color-base-40: #bdbdbd;
-  --color-blue: rgb(94, 129, 172);
-  --color-cyan: rgb(136, 192, 208);
-  --color-green: rgb(163, 190, 140);
-  --color-orange: rgb(208, 135, 112);
+  --color-blue: #5e81ac;
+  --color-cyan: #88c0d0;
+  --color-green: #a3be8c;
+  --color-orange: #d08770;
   --color-pink: #d53984;
-  --color-purple: rgb(180, 142, 173);
-  --color-red: rgb(191, 97, 106);
-  --graph-line: rgb(216, 222, 233);
-  --graph-node-tag: rgb(191, 97, 106);
-  --h1-color: rgb(191, 97, 106);
-  --inline-title-color: rgb(235, 203, 139);
-  --italic-color: rgb(163, 190, 140);
-  --tag-background: rgb(229, 233, 240);
-  --tag-background-hover: rgb(216, 222, 233);
-  --tag-color: rgb(76, 86, 106);
-  --text-accent: rgb(208, 135, 112);
-  --text-accent-hover: rgb(129, 161, 193);
-  --text-faint: rgb(46, 52, 64);
-  --text-highlight-bg: rgb(235, 203, 139);
-  --text-muted: rgb(59, 66, 82);
-  --text-normal: rgb(67, 76, 94);
+  --color-purple: #b48ead;
+  --color-red: #bf616a;
+  --graph-line: #d8dee9;
+  --graph-node-tag: #bf616a;
+  --h1-color: #bf616a;
+  --inline-title-color: #ebcb8b;
+  --italic-color: #a3be8c;
+  --tag-background: #e5e9f0;
+  --tag-background-hover: #d8dee9;
+  --tag-color: #4c566a;
+  --text-accent: #d08770;
+  --text-accent-hover: #81a1c1;
+  --text-faint: #2e3440;
+  --text-highlight-bg: #ebcb8b;
+  --text-muted: #3b4252;
+  --text-normal: #434c5e;
 }
 /* END LIGHT */
 /* CALLOUTS */
 :root,
 html {
   .callout {
-    background-color: rgba(158, 158, 158, 0.1);
-    border-color: rgba(158, 158, 158, 0.25);
+    background-color: #9e9e9e1a;
+    border-color: #9e9e9e40;
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
@@ -713,94 +685,94 @@ html {
     mix-blend-mode: normal;
     overflow: hidden;
     padding: 12px 24px 12px 12px;
-    background-color: rgba(158, 158, 158, 0.1);
+    background-color: #9e9e9e1a;
     overflow-x: auto;
     overflow-y: hidden;
     &[data-callout] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="abstract"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="summary"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="tldr"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="info"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="todo"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="important"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="tip"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="hint"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="success"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="check"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="done"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="question"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="help"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="faq"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="warning"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="caution"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="attention"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="failure"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="fail"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="missing"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="danger"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="error"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="bug"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="example"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="quote"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="cite"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
   }
   .callout-title {
     align-items: flex-start;
-    color: rgb(158, 158, 158);
+    color: #9e9e9e;
     display: flex;
     font-size: inherit;
     gap: 4px;
@@ -826,13 +798,13 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: rgb(46, 52, 64);
+  background-color: light-dark(#2e3440, #ffffff);
   section,
   .page > #quartz-body .sidebar {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: rgb(46, 52, 64);
+      background-color: light-dark(#2e3440, #ffffff);
     }
   }
   .highlight,
@@ -986,7 +958,7 @@ body {
   }
   /* HEADINGS */
   h1 {
-    color: rgb(191, 97, 106);
+    color: light-dark(#bf616a, #bf616a);
     font-family: inherit;
     font-size: 1.802em;
     font-style: normal;
@@ -1001,7 +973,7 @@ body {
     --link-weight: 700;
   }
   h2 {
-    color: rgb(235, 203, 139);
+    color: light-dark(#ebcb8b, #ebcb8b);
     font-family: inherit;
     font-size: 1.602em;
     font-style: normal;
@@ -1016,7 +988,7 @@ body {
     --link-weight: 600;
   }
   h3 {
-    color: rgb(163, 190, 140);
+    color: light-dark(#a3be8c, #a3be8c);
     font-family: inherit;
     font-size: 1.424em;
     font-style: normal;
@@ -1031,7 +1003,7 @@ body {
     --link-weight: 600;
   }
   h4 {
-    color: rgb(180, 142, 173);
+    color: light-dark(#b48ead, #b48ead);
     font-family: inherit;
     font-size: 1.266em;
     font-style: normal;
@@ -1046,7 +1018,7 @@ body {
     --link-weight: 600;
   }
   h5 {
-    color: rgb(143, 188, 187);
+    color: light-dark(#8fbcbb, #8fbcbb);
     font-family: inherit;
     font-size: 1.125em;
     font-style: normal;
@@ -1061,7 +1033,7 @@ body {
     --link-weight: 600;
   }
   h6 {
-    color: rgb(129, 161, 193);
+    color: light-dark(#81a1c1, #81a1c1);
     font-family: inherit;
     font-size: 1em;
     font-style: normal;
@@ -1077,7 +1049,7 @@ body {
   }
   /* CODE */
   pre {
-    background-color: rgb(59, 66, 82);
+    background-color: light-dark(#3b4252, #eceff4);
     border: 0px solid transparent;
     border-radius: 4px;
     min-height: 38px;
@@ -1094,10 +1066,10 @@ body {
   }
   code {
     -webkit-box-decoration-break: clone;
-    background-color: rgb(59, 66, 82);
+    background-color: light-dark(#3b4252, #eceff4);
     border: 0px solid transparent;
     border-radius: 4px;
-    color: rgb(136, 192, 208);
+    color: light-dark(#88c0d0, #88c0d0);
     font-family:
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1158,7 +1130,7 @@ body {
   .clipboard-button {
     background-color: transparent;
     box-shadow: none;
-    color: rgb(229, 233, 240);
+    color: light-dark(#e5e9f0, #3b4252);
     font-family:
       "??",
       "??",
@@ -1174,7 +1146,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-size: calc(16px * 0.8);
+    font-size: 12.8px;
     height: auto;
     inset-inline-end: 0;
     margin: 6px;
@@ -1182,7 +1154,7 @@ body {
     position: absolute;
     top: 0;
     &:hover {
-      background-color: rgba(255, 255, 255, 0.15);
+      background-color: #ffffff26;
     }
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -1190,16 +1162,16 @@ body {
   }
   /* METADATA */
   .content-meta {
-    color: rgb(236, 239, 244);
+    color: #eceff4;
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: rgb(216, 222, 233);
+    color: light-dark(#d8dee9, #2e3440);
   }
   /* BACKLINKS */
   .backlinks {
     h3 {
-      color: rgb(163, 190, 140);
+      color: light-dark(#a3be8c, #a3be8c);
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1211,7 +1183,7 @@ body {
       margin-block-start: 0rem;
     }
     ul li {
-      color: rgb(236, 239, 244);
+      color: #eceff4;
       font-weight: 500;
     }
   }
@@ -1225,16 +1197,16 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: rgb(235, 203, 139);
+      color: light-dark(#ebcb8b, #ebcb8b);
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: rgb(46, 52, 64);
+        background-color: light-dark(#2e3440, #ffffff);
       }
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
-        color: hsl(354, 42%, 56%);
+        color: #be6069;
         text-overflow: ellipsis;
         position: relative;
         & > svg {
@@ -1266,7 +1238,7 @@ body {
         -webkit-mask-image: var(--folder-open-icon);
       }
       .folder-outer > ul.content {
-        border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+        border-inline-start: 1px solid #ffffff1f;
         margin-bottom: 1px;
         margin-inline-start: 12px;
         padding-inline-start: 4px;
@@ -1276,7 +1248,7 @@ body {
         position: relative;
         a {
           border-radius: 4px;
-          color: rgb(236, 239, 244);
+          color: #eceff4;
           cursor: pointer;
           display: flex;
           font-size: 16px;
@@ -1286,8 +1258,8 @@ body {
           padding: 6px 8px 6px 24px;
           &.active,
           &:hover {
-            background-color: rgba(255, 255, 255, 0.15);
-            color: rgb(129, 161, 193);
+            background-color: #ffffff26;
+            color: light-dark(#81a1c1, #81a1c1);
             font-weight: inherit;
           }
           &[data-for$="/index"] {
@@ -1314,10 +1286,10 @@ body {
   }
   /* TOC */
   .toc {
-    color: rgb(163, 190, 140);
+    color: light-dark(#a3be8c, #a3be8c);
     button.toc-header {
       h3 {
-        color: rgb(163, 190, 140);
+        color: light-dark(#a3be8c, #a3be8c);
         font-family: inherit;
         font-size: 1.424em;
         font-style: normal;
@@ -1328,13 +1300,13 @@ body {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
       }
-      color: rgb(163, 190, 140);
+      color: light-dark(#a3be8c, #a3be8c);
       color: inherit;
     }
     ul.toc-content.overflow {
       li,
       li > a {
-        color: rgb(236, 239, 244);
+        color: #eceff4;
         font-weight: inherit;
         font-size: 16px;
       }
@@ -1345,7 +1317,7 @@ body {
   .graph,
   .toc {
     h3 {
-      color: rgb(163, 190, 140);
+      color: light-dark(#a3be8c, #a3be8c);
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1408,11 +1380,11 @@ body {
     & > .search-button {
       -webkit-app-region: no-drag;
       background: transparent;
-      border: 1px solid transparent;
+      border: 1px solid light-dark(#434c5e, #e5e9f0);
       border-radius: 5px;
-      color: rgb(236, 239, 244);
+      color: light-dark(#eceff4, #434c5e);
       font-family: inherit;
-      font-size: calc(16px * 0.937);
+      font-size: 14.992px;
       height: 40px;
       outline: none;
       padding: 4px 8px;
@@ -1423,18 +1395,18 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: rgb(46, 52, 64);
+        background-color: light-dark(#2e3440, #ffffff);
         border: 0.5pt solid #555555;
         border-radius: 12px;
         box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-          0px 30px 90px rgba(0, 0, 0, 0.2);
+          0px 1.8px 7.3px #00000012,
+          0px 6.3px 24.7px #0000001d,
+          0px 30px 90px #00000033;
         margin: 12vh auto;
         & > input {
-          background-color: rgb(46, 52, 64);
+          background-color: light-dark(#2e3440, #ffffff);
           border: none;
-          border-bottom: 1px solid rgb(59, 66, 82);
+          border-bottom: 1px solid light-dark(#3b4252, #eceff4);
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1446,7 +1418,7 @@ body {
           background: transparent;
         }
         & > * {
-          color: rgb(236, 239, 244);
+          color: light-dark(#eceff4, #434c5e);
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1457,10 +1429,10 @@ body {
             border-top-right-radius: 0;
           }
           & .highlight {
-            color: rgb(191, 97, 106);
+            color: #bf616a;
             font-weight: bold;
-            background-color: rgb(136, 192, 208);
-            color: rgb(46, 52, 64);
+            background-color: light-dark(#88c0d0, #ebcb8b);
+            color: light-dark(#2e3440, #2e3440);
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1476,13 +1448,13 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: rgba(255, 255, 255, 0.15);
+                background-color: #ffffff26;
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: rgb(236, 239, 244);
+                color: light-dark(#eceff4, #434c5e);
                 &.match-tag {
-                  color: rgb(143, 188, 187);
+                  color: light-dark(#8fbcbb, #4c566a);
                 }
               }
             }
@@ -1543,13 +1515,13 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: rgb(46, 52, 64);
-    border: 1px solid transparent;
+    background-color: light-dark(#2e3440, #ffffff);
+    border: 1px solid light-dark(#434c5e, #e5e9f0);
     border-radius: 8px;
     box-shadow:
-      0px 1px 2px rgba(0, 0, 0, 0.121),
-      0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-      0px 15px 30px rgba(0, 0, 0, 0.3);
+      0px 1px 2px #0000001f,
+      0px 3.4px 6.7px #0000002e,
+      0px 15px 30px #0000004d;
     display: flex;
     max-height: 95vh;
     position: absolute;
@@ -1560,8 +1532,8 @@ body {
     background-color: unset;
     border: unset;
     & .popover-inner {
-      border: 1px solid transparent;
-      background-color: rgb(46, 52, 64);
+      border: 1px solid light-dark(#434c5e, #e5e9f0);
+      background-color: light-dark(#2e3440, #ffffff);
 
       border-radius: 8px;
     }

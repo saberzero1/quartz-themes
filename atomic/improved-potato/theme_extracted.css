@@ -1,12 +1,4 @@
 :root {
-  --background-modifier-box-shadow: light-dark(
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.1)
-  );
-  --background-modifier-cover: light-dark(
-    rgba(10, 10, 10, 0.4),
-    rgba(220, 220, 220, 0.4)
-  );
   --background-secondary-alt: light-dark(
     var(--color-base-30),
     var(--color-base-05)
@@ -47,64 +39,29 @@
     var(--accent-s),
     var(--accent-l)
   );
-  --color-base-00: light-dark(light-dark(#171b21, #ffffff), #f6f7f9);
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
   --color-base-05: light-dark(#212121, #fcfcfc);
-  --color-base-10: light-dark(light-dark(#262c36, #fafafa), #e1e4ea);
-  --color-base-100: light-dark(light-dark(#ccd2db, #222222), #485465);
-  --color-base-20: light-dark(light-dark(#262c36, #f6f6f6), #e1e4ea);
-  --color-base-25: light-dark(light-dark(#303845, #e3e3e3), #ccd2db);
-  --color-base-30: light-dark(light-dark(#455063, #e0e0e0), #b7bfcd);
-  --color-base-35: light-dark(light-dark(#546178, #d4d4d4), #a2acbe);
-  --color-base-40: light-dark(light-dark(#647590, #bdbdbd), #8d9ab0);
-  --color-base-50: light-dark(light-dark(#7b89a3, #ababab), #7886a1);
-  --color-base-60: light-dark(light-dark(#939fb4, #707070), #647590);
-  --color-base-70: light-dark(light-dark(#aeb7c7, #5c5c5c), #56647b);
+  --color-base-10: light-dark(#242424, #fafafa);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-20: light-dark(#262626, #f6f6f6);
+  --color-base-25: light-dark(#2a2a2a, #e3e3e3);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-base-50: light-dark(#666666, #ababab);
+  --color-base-60: light-dark(#999999, #707070);
+  --color-base-70: light-dark(#b3b3b3, #5c5c5c);
   --color-blue: light-dark(#027aff, #086ddd);
-  --color-blue-rgb: light-dark(2, 122, 255, 8, 109, 221);
   --color-cyan: light-dark(rgb(51, 150, 148), #00bfbc);
-  --color-cyan-rgb: light-dark(51, 150, 148, 0, 191, 188);
   --color-green: light-dark(#33a555, #08b94e);
-  --color-green-rgb: light-dark(51, 165, 85, 8, 185, 78);
   --color-orange: light-dark(#a86f32, #ec7500);
-  --color-orange-rgb: light-dark(168, 111, 50, 236, 117, 0);
   --color-pink: light-dark(#af608a, #d53984);
-  --color-pink-rgb: light-dark(175, 96, 138, 213, 57, 132);
   --color-purple: light-dark(#876ec4, #7852ee);
-  --color-purple-rgb: light-dark(16135, 110, 196, 120, 82, 238);
   --color-red: light-dark(#c03c40, #e93147);
-  --color-red-rgb: light-dark(192, 60, 64, 233, 49, 71);
   --color-yellow: light-dark(#8d8b1d, #e0ac00);
-  --color-yellow-rgb: light-dark(141, 139, 29, 224, 172, 0);
-  --highlight-mix-blend-mode: light-dark(darken, darken);
-  --input-shadow: light-dark(
-    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2),
-    0 0 0 0 transparent,
-    inset 0 0 0 1px rgba(0, 0, 0, 0.12),
-    0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
-    0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent
-  );
-  --input-shadow-hover: light-dark(
-    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(0, 0, 0, 0.3),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4),
-    0 0 0 0 transparent,
-    inset 0 0 0 1px rgba(0, 0, 0, 0.17),
-    0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
-    0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent
-  );
   --keyboard-height: 0px;
   --line-number-color: light-dark(var(--color-base-50), var(--color-base-50));
   --loading-icon-delay: 400ms;
-  --mono-rgb-0: light-dark(0, 0, 0, 255, 255, 255);
-  --mono-rgb-100: light-dark(255, 255, 255, 0, 0, 0);
   --page-border: 9px solid transparent;
   --page-margin: 1px auto -8px;
   --pdfViewer-padding-bottom: 0;
@@ -112,22 +69,6 @@
   --safe-area-inset-left: env(safe-area-inset-left);
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
-  --shadow-l: light-dark(
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2),
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2)
-  );
-  --shadow-s: light-dark(
-    0px 1px 2px rgba(0, 0, 0, 0.121),
-    0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3),
-    0px 1px 2px rgba(0, 0, 0, 0.028),
-    0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07)
-  );
   --spreadHorizontalWrapped-margin-LR: -3.5px;
   --titlebar-background: light-dark(var(--color-base-25), var(--color-base-10));
   --viewer-container-height: 0;

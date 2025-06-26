@@ -34,7 +34,7 @@ html[saved-theme="dark"] {
   --checkbox-color-hover: rgb(86, 95, 137);
   --code-background: rgb(35, 35, 55);
   --code-normal: rgb(192, 202, 245);
-  --color-accent-2: hsl(calc(202 - 5), calc(100% * 1.05), calc(75% * 1.29));
+  --color-accent-2: hsl(197, 105%, 96.75%);
   --color-accent-hsl: 202, 100%, 75%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -54,7 +54,7 @@ html[saved-theme="dark"] {
   --italic-color: hsl(202, 100%, 75%);
   --tag-background: rgba(187, 154, 247, 0.15);
   --tag-color: rgb(187, 154, 247);
-  --text-accent: hsl(calc(202 - 3), calc(100% * 1.02), calc(75% * 1.15));
+  --text-accent: hsl(199, 102%, 86.25%);
   --text-faint: rgb(86, 95, 137);
   --text-highlight-bg: rgba(255, 158, 100, 0.4);
   --text-muted: rgb(169, 177, 214);
@@ -71,7 +71,7 @@ html[saved-theme="dark"] {
   --checkbox-color-hover: rgb(86, 95, 137);
   --code-background: rgb(35, 35, 55);
   --code-normal: rgb(192, 202, 245);
-  --color-accent-2: hsl(calc(202 - 5), calc(100% * 1.05), calc(75% * 1.29));
+  --color-accent-2: hsl(197, 105%, 96.75%);
   --color-accent-hsl: 202, 100%, 75%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -91,7 +91,7 @@ html[saved-theme="dark"] {
   --italic-color: hsl(202, 100%, 75%);
   --tag-background: rgba(187, 154, 247, 0.15);
   --tag-color: rgb(187, 154, 247);
-  --text-accent: hsl(calc(202 - 3), calc(100% * 1.02), calc(75% * 1.15));
+  --text-accent: hsl(199, 102%, 86.25%);
   --text-faint: rgb(86, 95, 137);
   --text-highlight-bg: rgba(255, 158, 100, 0.4);
   --text-muted: rgb(169, 177, 214);
@@ -213,10 +213,7 @@ html[saved-theme="dark"] {
 }
 
 :root {
-  --color-accent-2: light-dark(
-    hsl(calc(202 - 5), calc(100% * 1.05), calc(75% * 1.29)),
-    hsl(calc(202 - 3), calc(100% * 1.02), calc(75% * 1.15))
-  );
+  --color-accent-2: light-dark(hsl(197, 105%, 96.75%), hsl(199, 102%, 86.25%));
   --color-accent-hsl: light-dark(202, 100%, 75%, 202, 100%, 75%);
   --color-base-100: light-dark(#dadada, #222222);
   --color-base-30: light-dark(#363636, #e0e0e0);
@@ -237,15 +234,11 @@ body {
   --background-modifier-hover: rgba(255, 255, 255, 0.067);
   --background-primary: #000;
   --bold-color: inherit;
-  --bold-weight: calc(600 + 200);
+  --bold-weight: 800;
   --checkbox-border-color: rgb(86, 95, 137);
   --checkbox-border-color-hover: rgb(169, 177, 214);
   --checkbox-color: hsl(202, 100%, 75%);
-  --checkbox-color-hover: hsl(
-    calc(202 - 3),
-    calc(100% * 1.02),
-    calc(75% * 1.15)
-  );
+  --checkbox-color-hover: hsl(199, 102%, 86.25%);
   --checkbox-marker-color: rgb(36, 40, 59);
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
@@ -261,11 +254,7 @@ body {
   --code-tag: rgb(255, 117, 127);
   --code-value: rgb(157, 124, 21);
   --collapse-icon-color: rgb(86, 95, 137);
-  --collapse-icon-color-collapsed: hsl(
-    calc(202 - 3),
-    calc(100% * 1.02),
-    calc(75% * 1.15)
-  );
+  --collapse-icon-color-collapsed: hsl(199, 102%, 86.25%);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -285,18 +274,10 @@ body {
   --inline-title-font: inherit;
   --interactive-accent-hsl: 202, 100%, 75%;
   --italic-color: inherit;
-  --link-color: hsl(calc(202 - 3), calc(100% * 1.02), calc(75% * 1.15));
-  --link-color-hover: hsl(calc(202 - 5), calc(100% * 1.05), calc(75% * 1.29));
-  --link-external-color: hsl(
-    calc(202 - 3),
-    calc(100% * 1.02),
-    calc(75% * 1.15)
-  );
-  --link-external-color-hover: hsl(
-    calc(202 - 5),
-    calc(100% * 1.05),
-    calc(75% * 1.29)
-  );
+  --link-color: hsl(199, 102%, 86.25%);
+  --link-color-hover: hsl(197, 105%, 96.75%);
+  --link-external-color: hsl(199, 102%, 86.25%);
+  --link-external-color-hover: hsl(197, 105%, 96.75%);
   --link-external-filter: none;
   --link-weight: 600;
   --p-spacing: 1rem;
@@ -306,14 +287,14 @@ body {
   --tag-border-color: hsla(202, 100%, 75%, 0.15);
   --tag-border-color-hover: hsla(202, 100%, 75%, 0.15);
   --tag-border-width: 0px;
-  --tag-color: hsl(calc(202 - 3), calc(100% * 1.02), calc(75% * 1.15));
-  --tag-color-hover: hsl(calc(202 - 3), calc(100% * 1.02), calc(75% * 1.15));
+  --tag-color: hsl(199, 102%, 86.25%);
+  --tag-color-hover: hsl(199, 102%, 86.25%);
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-radius: 2em;
   --tag-weight: inherit;
   --text-accent: hsl(202, 100%, 75%);
-  --text-accent-hover: hsl(calc(202 - 5), calc(100% * 1.05), calc(75% * 1.29));
+  --text-accent-hover: hsl(197, 105%, 96.75%);
   --text-faint: #666666;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-muted: #b3b3b3;
@@ -321,7 +302,7 @@ body {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-user-select: none;
   background-color: rgb(36, 40, 59);
-  caret-color: hsl(calc(202 - 3), calc(100% * 1.02), calc(75% * 1.15));
+  caret-color: hsl(199, 102%, 86.25%);
   color: rgb(192, 202, 245);
   contain: initial;
   font-family:
@@ -380,7 +361,7 @@ html {
   --checkbox-color-hover: rgb(86, 95, 137);
   --code-background: rgb(35, 35, 55);
   --code-normal: rgb(192, 202, 245);
-  --color-accent-2: hsl(calc(202 - 5), calc(100% * 1.05), calc(75% * 1.29));
+  --color-accent-2: hsl(197, 105%, 96.75%);
   --color-accent-hsl: 202, 100%, 75%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -400,7 +381,7 @@ html {
   --italic-color: hsl(202, 100%, 75%);
   --tag-background: rgba(187, 154, 247, 0.15);
   --tag-color: rgb(187, 154, 247);
-  --text-accent: hsl(calc(202 - 3), calc(100% * 1.02), calc(75% * 1.15));
+  --text-accent: hsl(199, 102%, 86.25%);
   --text-faint: rgb(86, 95, 137);
   --text-highlight-bg: rgba(255, 158, 100, 0.4);
   --text-muted: rgb(169, 177, 214);
@@ -417,7 +398,7 @@ html {
   --checkbox-color-hover: rgb(86, 95, 137);
   --code-background: rgb(35, 35, 55);
   --code-normal: rgb(192, 202, 245);
-  --color-accent-2: hsl(calc(202 - 5), calc(100% * 1.05), calc(75% * 1.29));
+  --color-accent-2: hsl(197, 105%, 96.75%);
   --color-accent-hsl: 202, 100%, 75%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -437,7 +418,7 @@ html {
   --italic-color: hsl(202, 100%, 75%);
   --tag-background: rgba(187, 154, 247, 0.15);
   --tag-color: rgb(187, 154, 247);
-  --text-accent: hsl(calc(202 - 3), calc(100% * 1.02), calc(75% * 1.15));
+  --text-accent: hsl(199, 102%, 86.25%);
   --text-faint: rgb(86, 95, 137);
   --text-highlight-bg: rgba(255, 158, 100, 0.4);
   --text-muted: rgb(169, 177, 214);
@@ -842,10 +823,7 @@ body {
     border: 0px solid transparent;
     border-radius: 4px;
     color: rgb(192, 202, 245);
-    font-family:
-      "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    font-family: "Anonymous Pro", "Anonymouse Pro for Powerline", monospace;
     font-size: 1em;
     padding: 0.15em 0.3em;
     background-color: var(--code-background);
@@ -919,7 +897,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-size: calc(16px * 0.8);
+    font-size: 12.8px;
     height: auto;
     inset-inline-end: 0;
     margin: 6px;
@@ -1157,7 +1135,7 @@ body {
       border-radius: 5px;
       color: rgb(192, 202, 245);
       font-family: inherit;
-      font-size: calc(16px * 0.937);
+      font-size: 14.992px;
       height: 40px;
       outline: none;
       padding: 4px 8px;

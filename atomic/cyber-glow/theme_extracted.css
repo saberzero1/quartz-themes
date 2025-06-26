@@ -1,65 +1,26 @@
 :root {
-  --accent-h: light-dark(198, 198);
-  --accent-l: light-dark(57%, 64%);
-  --accent-s: light-dark(63%, 78%);
   --background-close: light-dark(#b4000066, #b4000066);
   --background-close-active: light-dark(#f2394c8a, #88111c8a);
   --background-close-hover: light-dark(#e6647170, #99212d70);
-  --background-modifier-box-shadow: light-dark(
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.1)
-  );
-  --background-modifier-cover: light-dark(
-    rgba(10, 10, 10, 0.4),
-    rgba(220, 220, 220, 0.4)
-  );
   --background-secondary-alt: light-dark(
     var(--color-base-30),
     var(--color-base-05)
   );
-  --background-settings: light-dark(
-    rgba(30, 30, 30, 0.9),
-    rgba(255, 255, 255, 0.9)
-  );
-  --background-settings-2: light-dark(
-    rgba(78, 75, 75, 0.2),
-    rgba(179, 179, 179, 0.25)
-  );
-  --background-settings-3: light-dark(
-    rgba(30, 30, 30, 0.3),
-    rgba(226, 226, 226, 0.35)
-  );
-  --background-settings-alt: light-dark(
-    rgba(30, 30, 30, 0.65),
-    rgba(203, 202, 202, 0.65)
-  );
-  --bg-primary: light-dark(0, 0, 0, 230, 229, 229);
-  --bg-secondary: light-dark(30, 30, 30, 194, 194, 194);
-  --code-background: light-dark(
-    rgba(30, 30, 30, 0.75),
-    rgba(225, 225, 225, 0.75)
-  );
   --color-accent: light-dark(
-    light-dark(
-      hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
-      hsl(var(--accent-h), var(--accent-s), var(--accent-l))
-    ),
-    hsl(
-      var(--accent-h),
-      calc(var(--accent-s) - 20%),
-      calc(var(--accent-l) - 10%)
-    )
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l))
   );
   --color-accent-1: light-dark(
-    light-dark(
-      hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 3.8%)),
-      hsl(
-        calc(var(--accent-h) - 1),
-        calc(var(--accent-s) * 1.01),
-        calc(var(--accent-l) * 1.075)
-      )
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
     ),
-    hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 3.8%))
+    hsl(
+      calc(var(--accent-h) - 1),
+      calc(var(--accent-s) * 1.01),
+      calc(var(--accent-l) * 1.075)
+    )
   );
   --color-accent-2: light-dark(
     hsl(
@@ -71,34 +32,6 @@
       calc(var(--accent-h) - 3),
       calc(var(--accent-s) * 1.02),
       calc(var(--accent-l) * 1.15)
-    )
-  );
-  --color-accent-active: light-dark(
-    hsla(
-      var(--accent-h),
-      calc(var(--accent-s) - 25%),
-      calc(var(--accent-l) - 30%),
-      0.65
-    ),
-    hsla(
-      var(--accent-h),
-      calc(var(--accent-s) - 13%),
-      calc(var(--accent-l) + 10%),
-      0.65
-    )
-  );
-  --color-accent-active2: light-dark(
-    hsla(
-      var(--accent-h),
-      calc(var(--accent-s) - 25%),
-      calc(var(--accent-l) - 30%),
-      0.25
-    ),
-    hsla(
-      var(--accent-h),
-      calc(var(--accent-s) - 13%),
-      calc(var(--accent-l) + 10%),
-      0.45
     )
   );
   --color-accent-faint: light-dark(
@@ -114,29 +47,18 @@
     )
   );
   --color-accent-hsl: light-dark(
-    light-dark(
-      var(--accent-h),
-      var(--accent-s),
-      var(--accent-l),
-      var(--accent-h),
-      var(--accent-s),
-      var(--accent-l)
-    ),
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
     var(--accent-h),
     var(--accent-s),
     var(--accent-l)
   );
-  --color-base-00: light-dark(
-    light-dark(rgba(0, 0, 0), #ffffff),
-    rgb(230, 229, 229)
-  );
-  --color-base-05: light-dark(light-dark(#171717b7, #fcfcfc), #f6f4f4b7);
+  --color-base-00: light-dark(#1e1e1e, #ffffff);
+  --color-base-05: light-dark(#212121, #fcfcfc);
   --color-base-10: light-dark(#242424, #fafafa);
   --color-base-100: light-dark(#dadada, #222222);
-  --color-base-20: light-dark(
-    light-dark(rgba(30, 30, 30), #f6f6f6),
-    rgb(194, 194, 194)
-  );
+  --color-base-20: light-dark(#262626, #f6f6f6);
   --color-base-25: light-dark(#2a2a2a, #e3e3e3);
   --color-base-30: light-dark(#363636, #e0e0e0);
   --color-base-35: light-dark(#3f3f3f, #d4d4d4);
@@ -145,9 +67,7 @@
   --color-base-60: light-dark(#999999, #707070);
   --color-base-70: light-dark(#b3b3b3, #5c5c5c);
   --color-blue: light-dark(#027aff, #086ddd);
-  --color-blue-rgb: light-dark(2, 122, 255, 8, 109, 221);
   --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-cyan-rgb: light-dark(83, 223, 221, 0, 191, 188);
   --color-glow: light-dark(
     hsl(
       calc(var(--accent-h) + 1),
@@ -161,60 +81,13 @@
     )
   );
   --color-green: light-dark(#44cf6e, #08b94e);
-  --color-green-rgb: light-dark(68, 207, 110, 8, 185, 78);
   --color-orange: light-dark(#e9973f, #ec7500);
-  --color-orange-rgb: light-dark(233, 151, 63, 236, 117, 0);
   --color-pink: light-dark(#fa99cd, #d53984);
-  --color-pink-rgb: light-dark(250, 153, 205, 213, 57, 132);
   --color-purple: light-dark(#a882ff, #7852ee);
-  --color-purple-rgb: light-dark(168, 130, 255, 120, 82, 238);
   --color-red: light-dark(#fb464c, #e93147);
-  --color-red-rgb: light-dark(251, 70, 76, 233, 49, 71);
   --color-yellow: light-dark(#e0de71, #e0ac00);
-  --color-yellow-rgb: light-dark(224, 222, 113, 224, 172, 0);
-  --folder-blue: light-dark(135, 176, 249, 42, 110, 245);
-  --folder-green: light-dark(166, 227, 161, 64, 160, 43);
-  --folder-lavender: light-dark(180, 190, 254, 114, 135, 253);
-  --folder-lightpink: light-dark(242, 205, 205, 221, 120, 120);
-  --folder-maroon: light-dark(235, 160, 172, 230, 69, 83);
-  --folder-mauve: light-dark(203, 166, 247, 136, 57, 239);
-  --folder-peach: light-dark(250, 179, 135, 254, 100, 11);
-  --folder-pink: light-dark(245, 194, 231, 236, 131, 208);
-  --folder-red: light-dark(243, 139, 168, 210, 15, 57);
-  --folder-rose: light-dark(245, 224, 220, 222, 149, 132);
-  --folder-sapphire: light-dark(116, 199, 236, 32, 159, 181);
-  --folder-sky: light-dark(137, 220, 235, 4, 165, 229);
-  --folder-teal: light-dark(148, 226, 213, 23, 146, 153);
-  --folder-yellow: light-dark(249, 226, 175, 228, 147, 32);
-  --highlight-mix-blend-mode: light-dark(darken, darken);
-  --input-shadow: light-dark(
-    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2),
-    0 0 0 0 transparent,
-    inset 0 0 0 1px rgba(0, 0, 0, 0.12),
-    0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
-    0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent
-  );
-  --input-shadow-hover: light-dark(
-    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(0, 0, 0, 0.3),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4),
-    0 0 0 0 transparent,
-    inset 0 0 0 1px rgba(0, 0, 0, 0.17),
-    0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
-    0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent
-  );
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
-  --mono-rgb-0: light-dark(0, 0, 0, 255, 255, 255);
-  --mono-rgb-100: light-dark(255, 255, 255, 0, 0, 0);
   --page-border: 9px solid transparent;
   --page-margin: 1px auto -8px;
   --pdfViewer-padding-bottom: 0;
@@ -222,28 +95,8 @@
   --safe-area-inset-left: env(safe-area-inset-left);
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
-  --shadow-l: light-dark(
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2),
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2)
-  );
-  --shadow-s: light-dark(
-    0px 1px 2px rgba(0, 0, 0, 0.121),
-    0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3),
-    0px 1px 2px rgba(0, 0, 0, 0.028),
-    0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07)
-  );
   --spreadHorizontalWrapped-margin-LR: -3.5px;
   --text-close-color: light-dark(#ff909b, #791d26);
-  --text-selection: light-dark(
-    hsla(var(--interactive-accent-hsl), 0.35),
-    hsla(var(--interactive-accent-hsl), 0.35)
-  );
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");

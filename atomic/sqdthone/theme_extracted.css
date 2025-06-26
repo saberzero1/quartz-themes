@@ -4,14 +4,6 @@
   --anim-duration-none: 0;
   --anim-duration-slow: 500ms;
   --anim-duration-superfast: 75ms;
-  --background-modifier-box-shadow: light-dark(
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.1)
-  );
-  --background-modifier-cover: light-dark(
-    rgba(10, 10, 10, 0.4),
-    rgba(220, 220, 220, 0.4)
-  );
   --background-primary: light-dark(
     hsl(var(--color-base-1)),
     hsl(var(--color-base-1))
@@ -25,8 +17,8 @@
     hsl(var(--color-base-2))
   );
   --background-secondary-alt: light-dark(
-    light-dark(hsl(var(--color-base-3)), var(--color-base-05)),
-    hsl(var(--color-base-3))
+    var(--color-base-30),
+    var(--color-base-05)
   );
   --color-accent: light-dark(
     hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
@@ -84,8 +76,7 @@
   --color-base-60: light-dark(#999999, #707070);
   --color-base-70: light-dark(#b3b3b3, #5c5c5c);
   --color-black: light-dark(var(--night3), var(--night2));
-  --color-blue: light-dark(light-dark(var(--frost3), #086ddd), var(--frost2));
-  --color-blue-rgb: light-dark(2, 122, 255, 8, 109, 221);
+  --color-blue: light-dark(#027aff, #086ddd);
   --color-caution: light-dark(var(--color-yellow), var(--color-yellow));
   --color-checklist-empty: light-dark(var(--color-stop), var(--color-stop));
   --color-checklist-empty-border: light-dark(
@@ -118,13 +109,8 @@
   --color-code-value: light-dark(var(--color-purple), var(--color-purple));
   --color-confirmed: light-dark(var(--color-green), var(--color-green));
   --color-content: light-dark(var(--color-teal), var(--color-teal));
-  --color-cyan: light-dark(
-    light-dark(var(--moonstone4), #00bfbc),
-    var(--moonstone2)
-  );
-  --color-cyan-rgb: light-dark(83, 223, 221, 0, 191, 188);
-  --color-green: light-dark(light-dark(var(--green2), #08b94e), var(--green2));
-  --color-green-rgb: light-dark(68, 207, 110, 8, 185, 78);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
   --color-horizontal-rule: light-dark(
     var(--color-alternate),
     var(--color-alternate)
@@ -132,25 +118,14 @@
   --color-hovered: light-dark(var(--color-purple), var(--color-purple));
   --color-interactable: light-dark(var(--color-blue), var(--color-blue));
   --color-list-bullets: light-dark(var(--color-pink), var(--color-pink));
-  --color-list-indentation-indicator: light-dark(magenta, magenta);
   --color-list-indentation-indicator-hover: light-dark(
     var(--color-pink),
     var(--color-pink)
   );
-  --color-orange: light-dark(light-dark(var(--peach3), #ec7500), var(--peach0));
-  --color-orange-rgb: light-dark(233, 151, 63, 236, 117, 0);
-  --color-pink: light-dark(light-dark(var(--pink5), #d53984), var(--pink2));
-  --color-pink-rgb: light-dark(250, 153, 205, 213, 57, 132);
-  --color-purple: light-dark(
-    light-dark(var(--indigo3), #7852ee),
-    var(--indigo2)
-  );
-  --color-purple-rgb: light-dark(168, 130, 255, 120, 82, 238);
-  --color-red: light-dark(
-    light-dark(var(--crimson1), #e93147),
-    var(--crimson2)
-  );
-  --color-red-rgb: light-dark(251, 70, 76, 233, 49, 71);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
   --color-selected: light-dark(var(--color-orange), var(--color-orange));
   --color-stop: light-dark(var(--color-red), var(--color-red));
   --color-tag: light-dark(var(--color-yellow), var(--color-yellow));
@@ -179,11 +154,7 @@
   --color-text-strikethrough: light-dark(var(--color-red), var(--color-red));
   --color-text-title: light-dark(var(--color-pink), var(--color-cyan));
   --color-white: light-dark(var(--day3), var(--day2));
-  --color-yellow: light-dark(
-    light-dark(var(--yellow0), #e0ac00),
-    var(--yellow0)
-  );
-  --color-yellow-rgb: light-dark(224, 222, 113, 224, 172, 0);
+  --color-yellow: light-dark(#e0de71, #e0ac00);
   --crimson0: 346, 50%, 40%;
   --crimson1: 346, 50%, 36%;
   --crimson2: 346, 50%, 32%;
@@ -214,43 +185,16 @@
   --green3: 108, 40%, 46%;
   --green4: 108, 40%, 50%;
   --green5: 108, 40%, 54%;
-  --highlight-mix-blend-mode: light-dark(darken, darken);
   --indigo0: 270, 40%, 30%;
   --indigo1: 270, 40%, 34%;
   --indigo2: 270, 40%, 38%;
   --indigo3: 270, 40%, 42%;
   --indigo4: 270, 40%, 46%;
   --indigo5: 270, 40%, 50%;
-  --input-shadow: light-dark(
-    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2),
-    0 0 0 0 transparent,
-    inset 0 0 0 1px rgba(0, 0, 0, 0.12),
-    0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
-    0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent
-  );
-  --input-shadow-hover: light-dark(
-    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(0, 0, 0, 0.3),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4),
-    0 0 0 0 transparent,
-    inset 0 0 0 1px rgba(0, 0, 0, 0.17),
-    0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
-    0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent
-  );
   --keyboard-height: 0px;
   --letterspacing-text-headers: 1.2px;
   --letterspacing-text-p: 1px;
   --loading-icon-delay: 400ms;
-  --mono-rgb-0: light-dark(0, 0, 0, 255, 255, 255);
-  --mono-rgb-100: light-dark(255, 255, 255, 0, 0, 0);
   --moonstone0: 189, 40%, 34%;
   --moonstone1: 189, 40%, 38%;
   --moonstone2: 189, 40%, 42%;
@@ -282,22 +226,6 @@
   --safe-area-inset-left: env(safe-area-inset-left);
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
-  --shadow-l: light-dark(
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2),
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2)
-  );
-  --shadow-s: light-dark(
-    0px 1px 2px rgba(0, 0, 0, 0.121),
-    0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3),
-    0px 1px 2px rgba(0, 0, 0, 0.028),
-    0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07)
-  );
   --size-icon: 15px;
   --size-text-h1: 3em;
   --size-text-h2: 30px;
