@@ -1136,7 +1136,7 @@ body {
   ul,
   .katex,
   .math {
-    color: var(--text-normal);
+    color: var(--color-base-100, var(--text-normal));
     font-family: var(--font-text, var(--font-default));
     hyphens: none;
   }
