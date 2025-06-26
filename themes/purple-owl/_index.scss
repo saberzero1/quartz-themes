@@ -86,32 +86,32 @@ html[saved-theme="dark"] {
 }
 
 :root {
-  --background-modifier-border: light-dark(#03243e, #bb7ae6);
-  --background-modifier-border-focus: light-dark(#ecc48d, #9c3eda);
-  --background-modifier-border-hover: light-dark(#c792ea, #ad60e1);
+  --background-modifier-border: light-dark(#bb7ae6, #03243e);
+  --background-modifier-border-focus: light-dark(#9c3eda, #ecc48d);
+  --background-modifier-border-hover: light-dark(#ad60e1, #c792ea);
   --bold-weight: 600;
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --text-accent: light-dark(#ecc48d, #8a5cf5);
-  --text-accent-hover: light-dark(#c792ea, #672cf2);
-  --text-muted: light-dark(#c792ea, #03243e);
-  --text-normal: light-dark(#abb2bf, #c792ea);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --text-accent: light-dark(#8a5cf5, #ecc48d);
+  --text-accent-hover: light-dark(#672cf2, #c792ea);
+  --text-muted: light-dark(#03243e, #c792ea);
+  --text-normal: light-dark(#c792ea, #abb2bf);
 }
 body {
-  --background-modifier-border: light-dark(#03243e, #bb7ae6);
-  --background-modifier-border-focus: light-dark(#ecc48d, #9c3eda);
-  --background-modifier-border-hover: light-dark(#c792ea, #ad60e1);
+  --background-modifier-border: light-dark(#bb7ae6, #03243e);
+  --background-modifier-border-focus: light-dark(#9c3eda, #ecc48d);
+  --background-modifier-border-hover: light-dark(#ad60e1, #c792ea);
   --background-modifier-hover: #ffffff11;
   --background-primary: #000;
   --bold-color: inherit;
@@ -136,19 +136,19 @@ body {
   --code-value: #a882ff;
   --collapse-icon-color: #c792ea97;
   --collapse-icon-color-collapsed: #ecc48d;
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -190,18 +190,18 @@ body {
   --tag-decoration-hover: none;
   --tag-radius: 2em;
   --tag-weight: inherit;
-  --text-accent: light-dark(#ecc48d, #8a5cf5);
-  --text-accent-hover: light-dark(#c792ea, #672cf2);
+  --text-accent: light-dark(#8a5cf5, #ecc48d);
+  --text-accent-hover: light-dark(#672cf2, #c792ea);
   --text-faint: #666666;
   --text-highlight-bg: #ffd00066;
-  --text-muted: light-dark(#c792ea, #03243e);
-  --text-normal: light-dark(#abb2bf, #c792ea);
+  --text-muted: light-dark(#03243e, #c792ea);
+  --text-normal: light-dark(#c792ea, #abb2bf);
   -webkit-font-smoothing: subpixel-antialiased;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: #c894eb;
   caret-color: #ecc48d;
-  color: light-dark(#abb2bf, #c792ea);
+  color: light-dark(#c792ea, #abb2bf);
   contain: initial;
   font-family:
     "Monaspace Argon", "monolisa", menlo, SFMono-Regular, Consolas, monospace;
@@ -674,7 +674,7 @@ body {
   .clipboard-button {
     background-color: transparent;
     box-shadow: none;
-    color: light-dark(#c792ea, #03243e);
+    color: light-dark(#03243e, #c792ea);
     font-family:
       "??",
       "??",
@@ -727,7 +727,7 @@ body {
       margin-block-start: 0rem;
     }
     ul li {
-      color: light-dark(#c792ea, #03243e);
+      color: light-dark(#03243e, #c792ea);
       font-weight: 500;
     }
   }
@@ -792,10 +792,10 @@ body {
         text-overflow: ellipsis;
         position: relative;
         a {
-          border-color: light-dark(#021d33, #f78c6c);
+          border-color: light-dark(#f78c6c, #021d33);
           border-radius: 6px;
           border-width: 0;
-          color: light-dark(#c792ea, #03243e);
+          color: light-dark(#03243e, #c792ea);
           cursor: default;
           display: flex;
           font-size: calc(0.933em + 3px);
@@ -807,8 +807,8 @@ body {
           width: calc(100% - 30px);
           &.active,
           &:hover {
-            background-color: light-dark(#082632, #03243e);
-            color: light-dark(#abb2bf, #c792ea);
+            background-color: light-dark(#03243e, #082632);
+            color: light-dark(#c792ea, #abb2bf);
             font-weight: inherit;
           }
           &[data-for$="/index"] {
@@ -855,7 +855,7 @@ body {
     ul.toc-content.overflow {
       li,
       li > a {
-        color: light-dark(#c792ea, #03243e);
+        color: light-dark(#03243e, #c792ea);
         font-weight: inherit;
         font-size: calc(0.933em + 3px);
       }
@@ -929,10 +929,10 @@ body {
     & > .search-button {
       -webkit-app-region: no-drag;
       -webkit-appearance: none;
-      background: light-dark(light-dark(#2a2a2a, #e3e3e3), #d5aeef);
-      border: 1px solid light-dark(#03243e, #bb7ae6);
+      background: light-dark(#d5aeef, light-dark(#e3e3e3, #2a2a2a));
+      border: 1px solid light-dark(#bb7ae6, #03243e);
       border-radius: 5px;
-      color: light-dark(#abb2bf, #c792ea);
+      color: light-dark(#c792ea, #abb2bf);
       font-family:
         "Monaspace Argon", "monolisa", menlo, SFMono-Regular, Consolas,
         monospace;
@@ -957,7 +957,7 @@ body {
           background: #c894eb;
           background-color: #c894eb;
           border: 0;
-          border-bottom: 1px solid light-dark(#021d33, #f78c6c);
+          border-bottom: 1px solid light-dark(#f78c6c, #021d33);
           border-radius: 0;
           font-size: 16px;
           height: 40px;
@@ -971,7 +971,7 @@ body {
           background: transparent;
         }
         & > * {
-          color: light-dark(#abb2bf, #c792ea);
+          color: light-dark(#c792ea, #abb2bf);
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -984,7 +984,7 @@ body {
           & .highlight {
             font-weight: bold;
             background-color: #03243e80;
-            color: light-dark(#abb2bf, #c792ea);
+            color: light-dark(#c792ea, #abb2bf);
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1004,9 +1004,9 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: light-dark(#abb2bf, #c792ea);
+                color: light-dark(#c792ea, #abb2bf);
                 &.match-tag {
-                  color: light-dark(#c792ea, #03243e);
+                  color: light-dark(#03243e, #c792ea);
                 }
               }
             }
@@ -1068,7 +1068,7 @@ body {
   /* POPOVER */
   .popover {
     background-color: #c894eb;
-    border: 1px solid light-dark(#03243e, #bb7ae6);
+    border: 1px solid light-dark(#bb7ae6, #03243e);
     border-radius: 8px;
     box-shadow: 0 20px 40px #0000004d;
     display: flex;
@@ -1085,7 +1085,7 @@ body {
     background-color: unset;
     border: unset;
     & .popover-inner {
-      border: 1px solid light-dark(#03243e, #bb7ae6);
+      border: 1px solid light-dark(#bb7ae6, #03243e);
       background-color: #c894eb;
 
       border-radius: 8px;

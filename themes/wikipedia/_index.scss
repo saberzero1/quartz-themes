@@ -92,26 +92,26 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --background-modifier-border: light-dark(#dae1ea31, #a2a9b1);
-  --color-accent-2: light-dark(#59a4f0, #3b8dea);
+  --background-modifier-border: light-dark(#a2a9b1, #dae1ea31);
+  --color-accent-2: light-dark(#3b8dea, #59a4f0);
   --color-accent-hsl: light-dark(#1b6fe4, #1b6fe4);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --link-color: light-dark(#5f8eec, #1855cd);
-  --link-external-color: light-dark(#7680ef, #1827cd);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --link-color: light-dark(#1855cd, #5f8eec);
+  --link-external-color: light-dark(#1827cd, #7680ef);
   --link-external-color-hover: light-dark(#2858e6, #2858e6);
 }
 body {
-  --background-modifier-border: light-dark(#dae1ea31, #a2a9b1);
+  --background-modifier-border: light-dark(#a2a9b1, #dae1ea31);
   --background-modifier-border-focus: #32343c;
   --background-modifier-border-hover: #313539;
   --background-modifier-hover: #ffffff11;
@@ -138,19 +138,19 @@ body {
   --code-value: #a882ff;
   --collapse-icon-color: #8e949d;
   --collapse-icon-color-collapsed: #2b79e6;
-  --color-accent-2: light-dark(#59a4f0, #3b8dea);
+  --color-accent-2: light-dark(#3b8dea, #59a4f0);
   --color-accent-hsl: light-dark(#1b6fe4, #1b6fe4);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --cursor-link: pointer;
   --font-default: "Archivo", Arial, "Archivo", sans-serif;
   --font-text: "??", "??", "Archivo", Arial, "Archivo", sans-serif;
@@ -167,9 +167,9 @@ body {
   --inline-title-font: "Linux Libertine", "Georgia", "Times", serif;
   --interactive-accent-hsl: 215, 79%, 50%;
   --italic-color: inherit;
-  --link-color: light-dark(#5f8eec, #1855cd);
+  --link-color: light-dark(#1855cd, #5f8eec);
   --link-color-hover: #196cd2;
-  --link-external-color: light-dark(#7680ef, #1827cd);
+  --link-external-color: light-dark(#1827cd, #7680ef);
   --link-external-color-hover: light-dark(#2858e6, #2858e6);
   --link-external-filter: none;
   --link-weight: bold;
@@ -511,7 +511,7 @@ body {
   }
   /* HEADINGS */
   h1 {
-    border-bottom: 1px solid light-dark(#dae1ea31, #a2a9b1);
+    border-bottom: 1px solid light-dark(#a2a9b1, #dae1ea31);
     color: inherit;
     font-family: "Linux Libertine", "Georgia", "Times", serif;
     font-size: 1.7em;
@@ -923,7 +923,7 @@ body {
     & > .search-button {
       -webkit-app-region: no-drag;
       background: transparent;
-      border: 1px solid light-dark(#dae1ea31, #a2a9b1);
+      border: 1px solid light-dark(#a2a9b1, #dae1ea31);
       border-radius: 0px;
       color: #d8dce3;
       font-family: inherit;
@@ -1058,7 +1058,7 @@ body {
   /* POPOVER */
   .popover {
     background-color: #000;
-    border: 1px solid light-dark(#dae1ea31, #a2a9b1);
+    border: 1px solid light-dark(#a2a9b1, #dae1ea31);
     border-radius: 0px;
     box-shadow:
       0px 1px 2px #0000001f,
@@ -1074,7 +1074,7 @@ body {
     background-color: unset;
     border: unset;
     & .popover-inner {
-      border: 1px solid light-dark(#dae1ea31, #a2a9b1);
+      border: 1px solid light-dark(#a2a9b1, #dae1ea31);
       background-color: #000;
 
       border-radius: 0px;

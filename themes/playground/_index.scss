@@ -93,25 +93,25 @@ html[saved-theme="light"] {
 
 :root {
   --checkbox-color: light-dark(
-    oklch(74.5% 0.164 161.65),
-    oklch(48.5% 0.106 161.65)
+    oklch(48.5% 0.106 161.65),
+    oklch(74.5% 0.164 161.65)
   );
   --color-accent-2: light-dark(
-    hsl(253, 92.4%, 85.14%),
-    hsl(255, 89.76%, 75.9%)
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
   );
   --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --h1-color: light-dark(oklch(61.5% 0.17 288), oklch(61.5% 0.17 288));
 }
 body {
@@ -125,8 +125,8 @@ body {
   --checkbox-border-color: oklch(74.5% 0.018 279.29);
   --checkbox-border-color-hover: oklch(61.5% 0.028 279.29);
   --checkbox-color: light-dark(
-    oklch(74.5% 0.164 161.65),
-    oklch(48.5% 0.106 161.65)
+    oklch(48.5% 0.106 161.65),
+    oklch(74.5% 0.164 161.65)
   );
   --checkbox-color-hover: hsl(258, 88%, 66%);
   --checkbox-marker-color: oklch(13.5% 0.01 279.29);
@@ -146,21 +146,21 @@ body {
   --collapse-icon-color: oklch(74.5% 0.018 279.29);
   --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
   --color-accent-2: light-dark(
-    hsl(253, 92.4%, 85.14%),
-    hsl(255, 89.76%, 75.9%)
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
   );
   --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -528,8 +528,8 @@ body {
   /* HEADINGS */
   h1 {
     color: light-dark(
-      light-dark(oklch(61.5% 0.17 288), oklch(48.5% 0.213 288)),
-      light-dark(oklch(61.5% 0.17 288), oklch(48.5% 0.213 288))
+      light-dark(oklch(48.5% 0.213 288), oklch(61.5% 0.17 288)),
+      light-dark(oklch(48.5% 0.213 288), oklch(61.5% 0.17 288))
     );
     font-family: "Bricolage Grotesque";
     font-size: 1.802em;
@@ -591,8 +591,8 @@ body {
   }
   h5 {
     color: light-dark(
-      light-dark(oklch(84.5% 0.01 279.29), oklch(25.5% 0.021 279.29)),
-      light-dark(oklch(61.5% 0.028 279.29), oklch(48.5% 0.039 279.29))
+      light-dark(oklch(48.5% 0.039 279.29), oklch(61.5% 0.028 279.29)),
+      light-dark(oklch(25.5% 0.021 279.29), oklch(84.5% 0.01 279.29))
     );
     font-family: "Bricolage Grotesque";
     font-size: 1.125em;
@@ -609,8 +609,8 @@ body {
   }
   h6 {
     color: light-dark(
-      light-dark(oklch(84.5% 0.01 279.29), oklch(25.5% 0.021 279.29)),
-      light-dark(oklch(61.5% 0.028 279.29), oklch(48.5% 0.039 279.29))
+      light-dark(oklch(48.5% 0.039 279.29), oklch(61.5% 0.028 279.29)),
+      light-dark(oklch(25.5% 0.021 279.29), oklch(84.5% 0.01 279.29))
     );
     font-family: "Bricolage Grotesque";
     font-size: 1em;

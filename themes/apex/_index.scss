@@ -210,21 +210,21 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --text-muted: light-dark(#707070, #b5b3b1);
-  --text-normal: light-dark(#ccc, #1a1a1a);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --text-muted: light-dark(#b5b3b1, #707070);
+  --text-normal: light-dark(#1a1a1a, #ccc);
 }
 body {
   --background-modifier-border: #363636;
@@ -254,19 +254,19 @@ body {
   --code-value: #a882ff;
   --collapse-icon-color: #666666;
   --collapse-icon-color-collapsed: #a68af9;
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -309,13 +309,13 @@ body {
   --text-accent-hover: #c5b6fc;
   --text-faint: #666666;
   --text-highlight-bg: #ffd00066;
-  --text-muted: light-dark(#707070, #b5b3b1);
-  --text-normal: light-dark(#ccc, #1a1a1a);
+  --text-muted: light-dark(#b5b3b1, #707070);
+  --text-normal: light-dark(#1a1a1a, #ccc);
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: #111111;
   caret-color: #a68af9;
-  color: light-dark(#ccc, #1a1a1a);
+  color: light-dark(#1a1a1a, #ccc);
   contain: initial;
   font-family:
     "??",
@@ -802,7 +802,7 @@ body {
   .clipboard-button {
     background-color: transparent;
     box-shadow: none;
-    color: light-dark(#707070, #b5b3b1);
+    color: light-dark(#b5b3b1, #707070);
     font-family:
       "??",
       "??",
@@ -1054,7 +1054,7 @@ body {
       background: transparent;
       border: 1px solid transparent;
       border-radius: 5px;
-      color: light-dark(#ccc, #1a1a1a);
+      color: light-dark(#1a1a1a, #ccc);
       font-family: inherit;
       font-size: 14.992px;
       height: 40px;
@@ -1067,7 +1067,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: light-dark(#141414, #fcfcfc);
+        background-color: light-dark(#fcfcfc, #141414);
         border: 0.5pt solid #555555;
         border-radius: 12px;
         box-shadow:
@@ -1078,7 +1078,7 @@ body {
         & > input {
           background-color: #111111;
           border: none;
-          border-bottom: 1px solid light-dark(#141414, #fcfcfc);
+          border-bottom: 1px solid light-dark(#fcfcfc, #141414);
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1090,7 +1090,7 @@ body {
           background: transparent;
         }
         & > * {
-          color: light-dark(#ccc, #1a1a1a);
+          color: light-dark(#1a1a1a, #ccc);
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1103,7 +1103,7 @@ body {
           & .highlight {
             font-weight: bold;
             background-color: #ffd00066;
-            color: light-dark(#ccc, #1a1a1a);
+            color: light-dark(#1a1a1a, #ccc);
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1123,7 +1123,7 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: light-dark(#ccc, #1a1a1a);
+                color: light-dark(#1a1a1a, #ccc);
                 &.match-tag {
                   color: #a68af9;
                 }

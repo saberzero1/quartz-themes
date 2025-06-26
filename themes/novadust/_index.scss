@@ -264,21 +264,21 @@ html[saved-theme="dark"] {
 
 :root {
   --color-accent-2: light-dark(
-    hsl(135, 58.8%, 89.01%),
-    hsl(137, 57.12%, 79.35%)
+    hsl(137, 57.12%, 79.35%),
+    hsl(135, 58.8%, 89.01%)
   );
   --color-accent-hsl: light-dark(hsl(140, 56%, 69%), hsl(140, 56%, 69%));
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#2c4f64, #086ddd);
-  --color-cyan: light-dark(#5dcbc3, #00bfbc);
-  --color-green: light-dark(#b9e678, #08b94e);
-  --color-orange: light-dark(#ffa161, #ec7500);
-  --color-pink: light-dark(#ffa161, #d53984);
-  --color-purple: light-dark(#d689e3, #7852ee);
-  --color-red: light-dark(#ff695d, #e93147);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #2c4f64);
+  --color-cyan: light-dark(#00bfbc, #5dcbc3);
+  --color-green: light-dark(#08b94e, #b9e678);
+  --color-orange: light-dark(#ec7500, #ffa161);
+  --color-pink: light-dark(#d53984, #ffa161);
+  --color-purple: light-dark(#7852ee, #d689e3);
+  --color-red: light-dark(#e93147, #ff695d);
 }
 body {
   --background-modifier-border: #363636;
@@ -309,21 +309,21 @@ body {
   --collapse-icon-color: #5dcbc3;
   --collapse-icon-color-collapsed: hsl(137, 57.12%, 79.35%);
   --color-accent-2: light-dark(
-    hsl(135, 58.8%, 89.01%),
-    hsl(137, 57.12%, 79.35%)
+    hsl(137, 57.12%, 79.35%),
+    hsl(135, 58.8%, 89.01%)
   );
   --color-accent-hsl: light-dark(hsl(140, 56%, 69%), hsl(140, 56%, 69%));
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#2c4f64, #086ddd);
-  --color-cyan: light-dark(#5dcbc3, #00bfbc);
-  --color-green: light-dark(#b9e678, #08b94e);
-  --color-orange: light-dark(#ffa161, #ec7500);
-  --color-pink: light-dark(#ffa161, #d53984);
-  --color-purple: light-dark(#d689e3, #7852ee);
-  --color-red: light-dark(#ff695d, #e93147);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #2c4f64);
+  --color-cyan: light-dark(#00bfbc, #5dcbc3);
+  --color-green: light-dark(#08b94e, #b9e678);
+  --color-orange: light-dark(#ec7500, #ffa161);
+  --color-pink: light-dark(#d53984, #ffa161);
+  --color-purple: light-dark(#7852ee, #d689e3);
+  --color-red: light-dark(#e93147, #ff695d);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",

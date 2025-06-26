@@ -5388,37 +5388,37 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --background-modifier-border: light-dark(#343434, #dddddd);
+  --background-modifier-border: light-dark(#dddddd, #343434);
   --background-primary: light-dark(#1f1f1fbf, #1f1f1fbf);
   --code-comment: #676e95;
   --code-keyword: #c792ea;
-  --code-normal: light-dark(#d0d0d0, #000000);
+  --code-normal: light-dark(#000000, #d0d0d0);
   --code-property: #c792ea;
   --code-string: #c3e88d;
   --code-tag: #ff5370;
-  --color-accent-2: light-dark(#86bee4, #68a9db);
+  --color-accent-2: light-dark(#68a9db, #86bee4);
   --color-accent-hsl: light-dark(#478fd1, #478fd1);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --graph-line: light-dark(#8c8c8c, #b1b1b1);
-  --h1-color: light-dark(#96c22e, #08377d);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --graph-line: light-dark(#b1b1b1, #8c8c8c);
+  --h1-color: light-dark(#08377d, #96c22e);
   --text-accent: light-dark(#42a1fa, #42a1fa);
   --text-accent-hover: light-dark(#86bee4, #86bee4);
-  --text-faint: light-dark(#797979, #7f7f7f);
-  --text-muted: light-dark(#8a8a8a, #7f7f7f);
-  --text-normal: light-dark(#c6c6c6, #0e0e0e);
+  --text-faint: light-dark(#7f7f7f, #797979);
+  --text-muted: light-dark(#7f7f7f, #8a8a8a);
+  --text-normal: light-dark(#0e0e0e, #c6c6c6);
 }
 body {
-  --background-modifier-border: light-dark(#343434, #dddddd);
+  --background-modifier-border: light-dark(#dddddd, #343434);
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;
   --background-modifier-hover: #ffffff11;
@@ -5437,7 +5437,7 @@ body {
   --code-function: #e0de71;
   --code-important: #e9973f;
   --code-keyword: #fa99cd;
-  --code-normal: light-dark(#d0d0d0, #000000);
+  --code-normal: light-dark(#000000, #d0d0d0);
   --code-property: #00a3b9;
   --code-punctuation: #525252;
   --code-string: #44cf6e;
@@ -5445,19 +5445,19 @@ body {
   --code-value: #00ffc7;
   --collapse-icon-color: #dee4ede6;
   --collapse-icon-color-collapsed: #42a1fa;
-  --color-accent-2: light-dark(#86bee4, #68a9db);
+  --color-accent-2: light-dark(#68a9db, #86bee4);
   --color-accent-hsl: light-dark(#478fd1, #478fd1);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -5468,10 +5468,10 @@ body {
     "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
-  --graph-line: light-dark(#8c8c8c, #b1b1b1);
+  --graph-line: light-dark(#b1b1b1, #8c8c8c);
   --graph-node-tag: #44cf6e;
   --graph-node-unresolved: #dee4ede6;
-  --h1-color: light-dark(#96c22e, #08377d);
+  --h1-color: light-dark(#08377d, #96c22e);
   --h1-font:
     "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
     "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont,
@@ -5516,15 +5516,15 @@ body {
   --tag-weight: inherit;
   --text-accent: light-dark(#42a1fa, #42a1fa);
   --text-accent-hover: light-dark(#86bee4, #86bee4);
-  --text-faint: light-dark(#797979, #7f7f7f);
+  --text-faint: light-dark(#7f7f7f, #797979);
   --text-highlight-bg: #ffd00066;
-  --text-muted: light-dark(#8a8a8a, #7f7f7f);
-  --text-normal: light-dark(#c6c6c6, #0e0e0e);
+  --text-muted: light-dark(#7f7f7f, #8a8a8a);
+  --text-normal: light-dark(#0e0e0e, #c6c6c6);
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(#202020, #ffffff);
+  background-color: light-dark(#ffffff, #202020);
   caret-color: #42a1fa;
-  color: light-dark(#c6c6c6, #0e0e0e);
+  color: light-dark(#0e0e0e, #c6c6c6);
   contain: initial;
   font-family:
     "??",
@@ -5558,7 +5558,7 @@ body {
 html {
   .callout {
     --callout-color: 2, 122, 255;
-    background-color: light-dark(#11111100, #ffffff00);
+    background-color: light-dark(#ffffff00, #11111100);
     border-color: #1fac8b40;
     border-left: 4px solid #1fac8b26;
     border-radius: 2px;
@@ -5568,116 +5568,116 @@ html {
     mix-blend-mode: normal;
     overflow: hidden;
     padding: 0;
-    background-color: light-dark(#11111100, #ffffff00);
+    background-color: light-dark(#ffffff00, #11111100);
     overflow-x: auto;
     overflow-y: hidden;
     &[data-callout] {
       --callout-color: 2, 122, 255;
-      background-color: light-dark(#11111100, #ffffff00);
+      background-color: light-dark(#ffffff00, #11111100);
     }
     &[data-callout="abstract"] {
       --callout-color: 83, 223, 221;
-      background-color: light-dark(#11111100, #ffffff00);
+      background-color: light-dark(#ffffff00, #11111100);
     }
     &[data-callout="summary"] {
       --callout-color: 83, 223, 221;
-      background-color: light-dark(#11111100, #ffffff00);
+      background-color: light-dark(#ffffff00, #11111100);
     }
     &[data-callout="tldr"] {
       --callout-color: 83, 223, 221;
-      background-color: light-dark(#11111100, #ffffff00);
+      background-color: light-dark(#ffffff00, #11111100);
     }
     &[data-callout="info"] {
       --callout-color: 2, 122, 255;
-      background-color: light-dark(#11111100, #ffffff00);
+      background-color: light-dark(#ffffff00, #11111100);
     }
     &[data-callout="todo"] {
       --callout-color: 2, 122, 255;
-      background-color: light-dark(#11111100, #ffffff00);
+      background-color: light-dark(#ffffff00, #11111100);
     }
     &[data-callout="important"] {
       --callout-color: 83, 223, 221;
-      background-color: light-dark(#11111100, #ffffff00);
+      background-color: light-dark(#ffffff00, #11111100);
     }
     &[data-callout="tip"] {
       --callout-color: 83, 223, 221;
-      background-color: light-dark(#11111100, #ffffff00);
+      background-color: light-dark(#ffffff00, #11111100);
     }
     &[data-callout="hint"] {
       --callout-color: 83, 223, 221;
-      background-color: light-dark(#11111100, #ffffff00);
+      background-color: light-dark(#ffffff00, #11111100);
     }
     &[data-callout="success"] {
       --callout-color: 68, 207, 110;
-      background-color: light-dark(#11111100, #ffffff00);
+      background-color: light-dark(#ffffff00, #11111100);
     }
     &[data-callout="check"] {
       --callout-color: 68, 207, 110;
-      background-color: light-dark(#11111100, #ffffff00);
+      background-color: light-dark(#ffffff00, #11111100);
     }
     &[data-callout="done"] {
       --callout-color: 68, 207, 110;
-      background-color: light-dark(#11111100, #ffffff00);
+      background-color: light-dark(#ffffff00, #11111100);
     }
     &[data-callout="question"] {
       --callout-color: 233, 151, 63;
-      background-color: light-dark(#11111100, #ffffff00);
+      background-color: light-dark(#ffffff00, #11111100);
     }
     &[data-callout="help"] {
       --callout-color: 233, 151, 63;
-      background-color: light-dark(#11111100, #ffffff00);
+      background-color: light-dark(#ffffff00, #11111100);
     }
     &[data-callout="faq"] {
       --callout-color: 233, 151, 63;
-      background-color: light-dark(#11111100, #ffffff00);
+      background-color: light-dark(#ffffff00, #11111100);
     }
     &[data-callout="warning"] {
       --callout-color: 233, 151, 63;
-      background-color: light-dark(#11111100, #ffffff00);
+      background-color: light-dark(#ffffff00, #11111100);
     }
     &[data-callout="caution"] {
       --callout-color: 233, 151, 63;
-      background-color: light-dark(#11111100, #ffffff00);
+      background-color: light-dark(#ffffff00, #11111100);
     }
     &[data-callout="attention"] {
       --callout-color: 233, 151, 63;
-      background-color: light-dark(#11111100, #ffffff00);
+      background-color: light-dark(#ffffff00, #11111100);
     }
     &[data-callout="failure"] {
       --callout-color: 251, 70, 76;
-      background-color: light-dark(#11111100, #ffffff00);
+      background-color: light-dark(#ffffff00, #11111100);
     }
     &[data-callout="fail"] {
       --callout-color: 251, 70, 76;
-      background-color: light-dark(#11111100, #ffffff00);
+      background-color: light-dark(#ffffff00, #11111100);
     }
     &[data-callout="missing"] {
       --callout-color: 251, 70, 76;
-      background-color: light-dark(#11111100, #ffffff00);
+      background-color: light-dark(#ffffff00, #11111100);
     }
     &[data-callout="danger"] {
       --callout-color: 251, 70, 76;
-      background-color: light-dark(#11111100, #ffffff00);
+      background-color: light-dark(#ffffff00, #11111100);
     }
     &[data-callout="error"] {
       --callout-color: 251, 70, 76;
-      background-color: light-dark(#11111100, #ffffff00);
+      background-color: light-dark(#ffffff00, #11111100);
     }
     &[data-callout="bug"] {
       --callout-color: 251, 70, 76;
-      background-color: light-dark(#11111100, #ffffff00);
+      background-color: light-dark(#ffffff00, #11111100);
     }
     &[data-callout="example"] {
       --callout-color: 168, 130, 255;
-      background-color: light-dark(#11111100, #ffffff00);
+      background-color: light-dark(#ffffff00, #11111100);
     }
     &[data-callout="quote"] {
       --callout-color: 158, 158, 158;
-      background-color: light-dark(#11111100, #ffffff00);
+      background-color: light-dark(#ffffff00, #11111100);
     }
     &[data-callout="cite"] {
       --callout-color: 158, 158, 158;
-      background-color: light-dark(#11111100, #ffffff00);
+      background-color: light-dark(#ffffff00, #11111100);
     }
   }
   .callout-title {
@@ -5711,13 +5711,13 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: light-dark(#202020, #ffffff);
+  background-color: light-dark(#ffffff, #202020);
   section,
   .page > #quartz-body .sidebar {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: light-dark(#202020, #ffffff);
+      background-color: light-dark(#ffffff, #202020);
     }
   }
   .highlight,
@@ -5871,7 +5871,7 @@ body {
   }
   /* HEADINGS */
   h1 {
-    color: light-dark(#96c22e, #08377d);
+    color: light-dark(#08377d, #96c22e);
     font-family:
       "??",
       Bookerly,
@@ -5915,7 +5915,7 @@ body {
     --link-weight: 700;
   }
   h2 {
-    color: light-dark(#4cb148, #004fa8);
+    color: light-dark(#004fa8, #4cb148);
     font-family:
       "??",
       Bookerly,
@@ -5960,7 +5960,7 @@ body {
     --link-weight: 600;
   }
   h3 {
-    color: light-dark(#3abbbb, #0e63b9);
+    color: light-dark(#0e63b9, #3abbbb);
     font-family:
       "??",
       Bookerly,
@@ -6005,7 +6005,7 @@ body {
     --link-weight: 600;
   }
   h4 {
-    color: light-dark(#75a2e6, #3482c5);
+    color: light-dark(#3482c5, #75a2e6);
     font-family:
       "??",
       Bookerly,
@@ -6050,7 +6050,7 @@ body {
     --link-weight: 600;
   }
   h5 {
-    color: light-dark(#b296f3, #5aa0e2);
+    color: light-dark(#5aa0e2, #b296f3);
     font-family: inherit;
     font-size: 1.0625em;
     font-style: normal;
@@ -6066,7 +6066,7 @@ body {
     --link-weight: 600;
   }
   h6 {
-    color: light-dark(#eaa5f8, #89b9e6);
+    color: light-dark(#89b9e6, #eaa5f8);
     font-family: inherit;
     font-size: 1em;
     font-style: normal;
@@ -6103,7 +6103,7 @@ body {
     background-color: #272822d9;
     border: 0px solid #bfbfbf;
     border-radius: 5px;
-    color: light-dark(#d58000, #e95d00);
+    color: light-dark(#e95d00, #d58000);
     font-family:
       "??", "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC",
       "Source Han Mono", "Microsoft Yahei Mono", "Segoe UI Emoji",
@@ -6167,7 +6167,7 @@ body {
   .clipboard-button {
     background-color: transparent;
     box-shadow: none;
-    color: light-dark(#8a8a8a, #7f7f7f);
+    color: light-dark(#7f7f7f, #8a8a8a);
     font-family:
       "??",
       "??",
@@ -6203,12 +6203,12 @@ body {
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: light-dark(#797979, #7f7f7f);
+    color: light-dark(#7f7f7f, #797979);
   }
   /* BACKLINKS */
   .backlinks {
     h3 {
-      color: light-dark(#3abbbb, #0e63b9);
+      color: light-dark(#0e63b9, #3abbbb);
       font-family:
         "??",
         Bookerly,
@@ -6264,11 +6264,11 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: light-dark(#4cb148, #004fa8);
+      color: light-dark(#004fa8, #4cb148);
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: light-dark(#202020, #ffffff);
+        background-color: light-dark(#ffffff, #202020);
       }
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
@@ -6353,10 +6353,10 @@ body {
   }
   /* TOC */
   .toc {
-    color: light-dark(#3abbbb, #0e63b9);
+    color: light-dark(#0e63b9, #3abbbb);
     button.toc-header {
       h3 {
-        color: light-dark(#3abbbb, #0e63b9);
+        color: light-dark(#0e63b9, #3abbbb);
         font-family:
           "??",
           Bookerly,
@@ -6397,7 +6397,7 @@ body {
         margin-block-start: 0rem;
         page-break-after: avoid;
       }
-      color: light-dark(#3abbbb, #0e63b9);
+      color: light-dark(#0e63b9, #3abbbb);
       color: inherit;
     }
     ul.toc-content.overflow {
@@ -6414,7 +6414,7 @@ body {
   .graph,
   .toc {
     h3 {
-      color: light-dark(#3abbbb, #0e63b9);
+      color: light-dark(#0e63b9, #3abbbb);
       font-family:
         "??",
         Bookerly,
@@ -6506,10 +6506,10 @@ body {
   .search {
     & > .search-button {
       -webkit-app-region: no-drag;
-      background: light-dark(#2e2e2e9d, #ffffffd2);
-      border: 1px solid light-dark(#343434, #dddddd);
+      background: light-dark(#ffffffd2, #2e2e2e9d);
+      border: 1px solid light-dark(#dddddd, #343434);
       border-radius: 5px;
-      color: light-dark(#c6c6c6, #0e0e0e);
+      color: light-dark(#0e0e0e, #c6c6c6);
       font-family: inherit;
       font-size: 14.992px;
       height: 40px;
@@ -6522,15 +6522,15 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: light-dark(#202020, #ffffff);
+        background-color: light-dark(#ffffff, #202020);
         border: none;
         border-radius: 15px;
-        box-shadow: 0 0 10px 1px light-dark(#555555, #bebebe);
+        box-shadow: 0 0 10px 1px light-dark(#bebebe, #555555);
         margin: 12vh auto;
         & > input {
-          background-color: light-dark(#202020, #ffffff);
+          background-color: light-dark(#ffffff, #202020);
           border: none;
-          border-bottom: 1px solid light-dark(#151515, #fcfcfc);
+          border-bottom: 1px solid light-dark(#fcfcfc, #151515);
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -6542,7 +6542,7 @@ body {
           background: transparent;
         }
         & > * {
-          color: light-dark(#c6c6c6, #0e0e0e);
+          color: light-dark(#0e0e0e, #c6c6c6);
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -6555,7 +6555,7 @@ body {
           & .highlight {
             font-weight: bold;
             background-color: #b39029;
-            color: light-dark(#c6c6c6, #0e0e0e);
+            color: light-dark(#0e0e0e, #c6c6c6);
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -6575,7 +6575,7 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: light-dark(#c6c6c6, #0e0e0e);
+                color: light-dark(#0e0e0e, #c6c6c6);
                 &.match-tag {
                   color: #42a1fa;
                 }
@@ -6638,8 +6638,8 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: light-dark(#202020, #ffffff);
-    border: 1px solid light-dark(#343434, #dddddd);
+    background-color: light-dark(#ffffff, #202020);
+    border: 1px solid light-dark(#dddddd, #343434);
     border-radius: 7px;
     box-shadow:
       0px 1px 2px #0000001f,
@@ -6655,8 +6655,8 @@ body {
     background-color: unset;
     border: unset;
     & .popover-inner {
-      border: 1px solid light-dark(#343434, #dddddd);
-      background-color: light-dark(#202020, #ffffff);
+      border: 1px solid light-dark(#dddddd, #343434);
+      background-color: light-dark(#ffffff, #202020);
 
       border-radius: 7px;
     }

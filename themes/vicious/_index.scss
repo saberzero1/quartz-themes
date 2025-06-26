@@ -206,37 +206,37 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --background-modifier-hover: light-dark(#17181e, #f1f2f5);
-  --background-primary: light-dark(#08090e, #fbfcfc);
+  --background-modifier-hover: light-dark(#f1f2f5, #17181e);
+  --background-primary: light-dark(#fbfcfc, #08090e);
   --checkbox-border-color: light-dark(#818184, #818184);
-  --code-background: light-dark(#17181e, #f1f2f5);
-  --collapse-icon-color: light-dark(#4f5053, #68696c);
-  --collapse-icon-color-collapsed: light-dark(#fbfcfc, #08090e);
-  --color-accent-2: light-dark(#fdf2e4, #f7ddb5);
+  --code-background: light-dark(#f1f2f5, #17181e);
+  --collapse-icon-color: light-dark(#68696c, #4f5053);
+  --collapse-icon-color-collapsed: light-dark(#08090e, #fbfcfc);
+  --color-accent-2: light-dark(#f7ddb5, #fdf2e4);
   --color-accent-hsl: light-dark(#f1cb83, #f1cb83);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --hr-color: light-dark(#17181e, #f1f2f5);
-  --icon-color: light-dark(#fbfcfc, #08090e);
-  --text-faint: light-dark(#68696c, #818184);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --hr-color: light-dark(#f1f2f5, #17181e);
+  --icon-color: light-dark(#08090e, #fbfcfc);
+  --text-faint: light-dark(#818184, #68696c);
   --text-muted: light-dark(#818184, #818184);
-  --text-normal: light-dark(#fbfcfc, #08090e);
+  --text-normal: light-dark(#08090e, #fbfcfc);
 }
 body {
   --background-modifier-border: #292a2f;
   --background-modifier-border-focus: #4f5053;
   --background-modifier-border-hover: #4f5053;
-  --background-modifier-hover: light-dark(#17181e, #f1f2f5);
-  --background-primary: light-dark(#08090e, #fbfcfc);
+  --background-modifier-hover: light-dark(#f1f2f5, #17181e);
+  --background-primary: light-dark(#fbfcfc, #08090e);
   --bold-color: inherit;
   --bold-weight: 800;
   --checkbox-border-color: light-dark(#818184, #818184);
@@ -246,7 +246,7 @@ body {
   --checkbox-marker-color: #08090e;
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --code-background: light-dark(#17181e, #f1f2f5);
+  --code-background: light-dark(#f1f2f5, #17181e);
   --code-comment: #68696c;
   --code-function: #ebcb8b;
   --code-important: #f19a81;
@@ -257,21 +257,21 @@ body {
   --code-string: #81f1a4;
   --code-tag: #f18196;
   --code-value: #ab8beb;
-  --collapse-icon-color: light-dark(#4f5053, #68696c);
-  --collapse-icon-color-collapsed: light-dark(#fbfcfc, #08090e);
-  --color-accent-2: light-dark(#fdf2e4, #f7ddb5);
+  --collapse-icon-color: light-dark(#68696c, #4f5053);
+  --collapse-icon-color-collapsed: light-dark(#08090e, #fbfcfc);
+  --color-accent-2: light-dark(#f7ddb5, #fdf2e4);
   --color-accent-hsl: light-dark(#f1cb83, #f1cb83);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -287,9 +287,9 @@ body {
   --h1-color: inherit;
   --h1-font: inherit;
   --h3-line-height: 1.3;
-  --hr-color: light-dark(#17181e, #f1f2f5);
+  --hr-color: light-dark(#f1f2f5, #17181e);
   --hr-thickness: 3px;
-  --icon-color: light-dark(#fbfcfc, #08090e);
+  --icon-color: light-dark(#08090e, #fbfcfc);
   --inline-title-color: inherit;
   --inline-title-font: inherit;
   --interactive-accent-hsl: 39, 80%, 73%;
@@ -315,15 +315,15 @@ body {
   --tag-weight: inherit;
   --text-accent: #f1cb83;
   --text-accent-hover: #fdf2e4;
-  --text-faint: light-dark(#68696c, #818184);
+  --text-faint: light-dark(#818184, #68696c);
   --text-highlight-bg: #68696c66;
   --text-muted: light-dark(#818184, #818184);
-  --text-normal: light-dark(#fbfcfc, #08090e);
+  --text-normal: light-dark(#08090e, #fbfcfc);
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(#08090e, #fbfcfc);
+  background-color: light-dark(#fbfcfc, #08090e);
   caret-color: #f7ddb5;
-  color: light-dark(#fbfcfc, #08090e);
+  color: light-dark(#08090e, #fbfcfc);
   contain: initial;
   font-family:
     "??",
@@ -468,7 +468,7 @@ html {
     }
   }
   & > .callout-content {
-    background-color: light-dark(#08090e, #fbfcfc);
+    background-color: light-dark(#fbfcfc, #08090e);
     overflow-x: auto;
     padding: 0;
   }
@@ -478,13 +478,13 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: light-dark(#08090e, #fbfcfc);
+  background-color: light-dark(#fbfcfc, #08090e);
   section,
   .page > #quartz-body .sidebar {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: light-dark(#08090e, #fbfcfc);
+      background-color: light-dark(#fbfcfc, #08090e);
     }
   }
   .highlight,
@@ -729,7 +729,7 @@ body {
   }
   /* CODE */
   pre {
-    background-color: light-dark(#17181e, #f1f2f5);
+    background-color: light-dark(#f1f2f5, #17181e);
     border: 0px solid transparent;
     border-radius: 8px;
     min-height: 38px;
@@ -746,7 +746,7 @@ body {
   }
   code {
     -webkit-box-decoration-break: clone;
-    background-color: light-dark(#17181e, #f1f2f5);
+    background-color: light-dark(#f1f2f5, #17181e);
     border: 0px solid transparent;
     border-radius: 8px;
     color: #fbfcfc;
@@ -834,7 +834,7 @@ body {
     position: absolute;
     top: 0;
     &:hover {
-      background-color: light-dark(#17181e, #f1f2f5);
+      background-color: light-dark(#f1f2f5, #17181e);
     }
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -846,7 +846,7 @@ body {
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: light-dark(#68696c, #818184);
+    color: light-dark(#818184, #68696c);
   }
   /* BACKLINKS */
   .backlinks {
@@ -881,12 +881,12 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: light-dark(#08090e, #fbfcfc);
+        background-color: light-dark(#fbfcfc, #08090e);
       }
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
-        color: light-dark(#fbfcfc, #08090e);
+        color: light-dark(#08090e, #fbfcfc);
         text-overflow: ellipsis;
         position: relative;
         & > svg {
@@ -919,7 +919,7 @@ body {
       }
       .folder-outer > ul.content {
         border-inline-start: 0px solid #fbfcfc1f;
-        border-left: 1px solid light-dark(#68696c, #818184);
+        border-left: 1px solid light-dark(#818184, #68696c);
         margin-bottom: 1px;
         margin-inline-start: 12px;
         padding-inline-start: 4px;
@@ -929,7 +929,7 @@ body {
         position: relative;
         a {
           border-radius: 4px;
-          color: light-dark(#fbfcfc, #08090e);
+          color: light-dark(#08090e, #fbfcfc);
           cursor: pointer;
           display: flex;
           font-size: 16px;
@@ -988,7 +988,7 @@ body {
     ul.toc-content.overflow {
       li,
       li > a {
-        color: light-dark(#fbfcfc, #08090e);
+        color: light-dark(#08090e, #fbfcfc);
         font-weight: inherit;
         font-size: 16px;
       }
@@ -1062,10 +1062,10 @@ body {
     & > .search-button {
       -webkit-app-region: no-drag;
       background: transparent;
-      background-color: light-dark(#08090e, #fbfcfc);
+      background-color: light-dark(#fbfcfc, #08090e);
       border: 1px solid transparent;
       border-radius: 16px;
-      color: light-dark(#fbfcfc, #08090e);
+      color: light-dark(#08090e, #fbfcfc);
       font-family: inherit;
       font-size: 14.992px;
       height: 40px;
@@ -1078,7 +1078,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: light-dark(#08090e, #fbfcfc);
+        background-color: light-dark(#fbfcfc, #08090e);
         border: 0.5pt solid #4f5053;
         border-radius: 12px;
         box-shadow:
@@ -1087,9 +1087,9 @@ body {
           0px 30px 90px #00000033;
         margin: 12vh auto;
         & > input {
-          background-color: light-dark(#08090e, #fbfcfc);
+          background-color: light-dark(#fbfcfc, #08090e);
           border: none;
-          border-bottom: 1px solid light-dark(#08090e, #fbfcfc);
+          border-bottom: 1px solid light-dark(#fbfcfc, #08090e);
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1101,7 +1101,7 @@ body {
           background: transparent;
         }
         & > * {
-          color: light-dark(#fbfcfc, #08090e);
+          color: light-dark(#08090e, #fbfcfc);
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1114,7 +1114,7 @@ body {
           & .highlight {
             font-weight: bold;
             background-color: #68696c66;
-            color: light-dark(#fbfcfc, #08090e);
+            color: light-dark(#08090e, #fbfcfc);
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1130,13 +1130,13 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: light-dark(#17181e, #f1f2f5);
+                background-color: light-dark(#f1f2f5, #17181e);
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: light-dark(#fbfcfc, #08090e);
+                color: light-dark(#08090e, #fbfcfc);
                 &.match-tag {
-                  color: light-dark(#08090e, #fbfcfc);
+                  color: light-dark(#fbfcfc, #08090e);
                 }
               }
             }
@@ -1197,7 +1197,7 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: light-dark(#08090e, #fbfcfc);
+    background-color: light-dark(#fbfcfc, #08090e);
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow:
@@ -1215,7 +1215,7 @@ body {
     border: unset;
     & .popover-inner {
       border: 1px solid transparent;
-      background-color: light-dark(#08090e, #fbfcfc);
+      background-color: light-dark(#fbfcfc, #08090e);
 
       border-radius: 8px;
     }

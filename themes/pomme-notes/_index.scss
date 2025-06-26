@@ -224,36 +224,36 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --background-primary: light-dark(#1c1c1e, #ffffff);
-  --code-comment: light-dark(#a0a0a0, #808080);
-  --code-function: light-dark(#5ac8fa, #007aff);
-  --code-important: light-dark(#ff453a, #ff9f0a);
-  --code-keyword: light-dark(#ff9f0a, #ff453a);
-  --code-property: light-dark(#ffd60a, #bf5af2);
-  --code-string: light-dark(#50fa7b, #008000);
-  --code-tag: light-dark(#ff6188, #d70040);
-  --code-value: light-dark(#0a84ff, #005bbb);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --background-primary: light-dark(#ffffff, #1c1c1e);
+  --code-comment: light-dark(#808080, #a0a0a0);
+  --code-function: light-dark(#007aff, #5ac8fa);
+  --code-important: light-dark(#ff9f0a, #ff453a);
+  --code-keyword: light-dark(#ff453a, #ff9f0a);
+  --code-property: light-dark(#bf5af2, #ffd60a);
+  --code-string: light-dark(#008000, #50fa7b);
+  --code-tag: light-dark(#d70040, #ff6188);
+  --code-value: light-dark(#005bbb, #0a84ff);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --text-normal: light-dark(#dcdcdc, #454545);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --text-normal: light-dark(#454545, #dcdcdc);
 }
 body {
   --background-modifier-border: #363636;
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;
   --background-modifier-hover: #ffffff11;
-  --background-primary: light-dark(#1c1c1e, #ffffff);
+  --background-primary: light-dark(#ffffff, #1c1c1e);
   --bold-color: inherit;
   --bold-weight: 800;
   --checkbox-border-color: #666666;
@@ -264,31 +264,31 @@ body {
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
   --code-background: #111;
-  --code-comment: light-dark(#a0a0a0, #808080);
-  --code-function: light-dark(#5ac8fa, #007aff);
-  --code-important: light-dark(#ff453a, #ff9f0a);
-  --code-keyword: light-dark(#ff9f0a, #ff453a);
+  --code-comment: light-dark(#808080, #a0a0a0);
+  --code-function: light-dark(#007aff, #5ac8fa);
+  --code-important: light-dark(#ff9f0a, #ff453a);
+  --code-keyword: light-dark(#ff453a, #ff9f0a);
   --code-normal: #dcdcdc;
-  --code-property: light-dark(#ffd60a, #bf5af2);
+  --code-property: light-dark(#bf5af2, #ffd60a);
   --code-punctuation: #b3b3b3;
-  --code-string: light-dark(#50fa7b, #008000);
-  --code-tag: light-dark(#ff6188, #d70040);
-  --code-value: light-dark(#0a84ff, #005bbb);
+  --code-string: light-dark(#008000, #50fa7b);
+  --code-tag: light-dark(#d70040, #ff6188);
+  --code-value: light-dark(#005bbb, #0a84ff);
   --collapse-icon-color: #666666;
   --collapse-icon-color-collapsed: #a68af9;
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -335,12 +335,12 @@ body {
   --text-faint: #666666;
   --text-highlight-bg: #ffd00066;
   --text-muted: #b3b3b3;
-  --text-normal: light-dark(#dcdcdc, #454545);
+  --text-normal: light-dark(#454545, #dcdcdc);
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(#1c1c1e, #ffffff);
+  background-color: light-dark(#ffffff, #1c1c1e);
   caret-color: #a68af9;
-  color: light-dark(#dcdcdc, #454545);
+  color: light-dark(#454545, #dcdcdc);
   contain: initial;
   font-family:
     "??",
@@ -495,13 +495,13 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: light-dark(#1c1c1e, #ffffff);
+  background-color: light-dark(#ffffff, #1c1c1e);
   section,
   .page > #quartz-body .sidebar {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: light-dark(#1c1c1e, #ffffff);
+      background-color: light-dark(#ffffff, #1c1c1e);
     }
   }
   .highlight,
@@ -713,7 +713,7 @@ body {
     --link-weight: 600;
   }
   h4 {
-    border-bottom: 1px solid light-dark(#191919, #e6e6e6);
+    border-bottom: 1px solid light-dark(#e6e6e6, #191919);
     color: inherit;
     font-family: inherit;
     font-size: 1em;
@@ -928,7 +928,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: light-dark(#1c1c1e, #ffffff);
+        background-color: light-dark(#ffffff, #1c1c1e);
       }
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
@@ -1117,7 +1117,7 @@ body {
       background: transparent;
       border: 1px solid transparent;
       border-radius: 5px;
-      color: light-dark(#dcdcdc, #454545);
+      color: light-dark(#454545, #dcdcdc);
       font-family: inherit;
       font-size: 14.992px;
       height: 40px;
@@ -1130,15 +1130,15 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: light-dark(#1c1c1e, #ffffff);
+        background-color: light-dark(#ffffff, #1c1c1e);
         border: 0.5pt solid #555555;
         border-radius: 12px;
         box-shadow: 0px 15px 15px #0000004d;
         margin: 12vh auto;
         & > input {
-          background-color: light-dark(#1c1c1e, #ffffff);
+          background-color: light-dark(#ffffff, #1c1c1e);
           border: none;
-          border-bottom: 1px solid light-dark(#2c2c2e, #e9e9e9);
+          border-bottom: 1px solid light-dark(#e9e9e9, #2c2c2e);
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1150,7 +1150,7 @@ body {
           background: transparent;
         }
         & > * {
-          color: light-dark(#dcdcdc, #454545);
+          color: light-dark(#454545, #dcdcdc);
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1163,7 +1163,7 @@ body {
           & .highlight {
             font-weight: bold;
             background-color: #ffd00066;
-            color: light-dark(#dcdcdc, #454545);
+            color: light-dark(#454545, #dcdcdc);
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1183,7 +1183,7 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: light-dark(#dcdcdc, #454545);
+                color: light-dark(#454545, #dcdcdc);
                 &.match-tag {
                   color: #a68af9;
                 }
@@ -1246,7 +1246,7 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: light-dark(#1c1c1e, #ffffff);
+    background-color: light-dark(#ffffff, #1c1c1e);
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow:
@@ -1264,7 +1264,7 @@ body {
     border: unset;
     & .popover-inner {
       border: 1px solid transparent;
-      background-color: light-dark(#1c1c1e, #ffffff);
+      background-color: light-dark(#ffffff, #1c1c1e);
 
       border-radius: 8px;
     }

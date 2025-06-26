@@ -335,20 +335,20 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --color-accent-2: light-dark(#61b4ee, #439ee8);
+  --color-accent-2: light-dark(#439ee8, #61b4ee);
   --color-accent-hsl: light-dark(#2282e2, #2282e2);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --text-highlight-bg: light-dark(#2282e24d, #2282e233);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --text-highlight-bg: light-dark(#2282e233, #2282e24d);
 }
 body {
   --background-modifier-border: #21201e;
@@ -378,19 +378,19 @@ body {
   --code-value: #9065b0;
   --collapse-icon-color: #707070;
   --collapse-icon-color-collapsed: #439ee8;
-  --color-accent-2: light-dark(#61b4ee, #439ee8);
+  --color-accent-2: light-dark(#439ee8, #61b4ee);
   --color-accent-hsl: light-dark(#2282e2, #2282e2);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --cursor-link: pointer;
   --font-default: "Arima", cursive;
   --font-text:
@@ -431,7 +431,7 @@ body {
   --text-accent: #2282e2;
   --text-accent-hover: #61b4ee;
   --text-faint: #707070;
-  --text-highlight-bg: light-dark(#2282e24d, #2282e233);
+  --text-highlight-bg: light-dark(#2282e233, #2282e24d);
   --text-muted: #a0a0a0;
   --text-normal: #ffffffcf;
   -webkit-tap-highlight-color: #ffffff00;
@@ -1224,8 +1224,8 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: light-dark(#c18bac4d, #c18bac33);
-            border-bottom: 2px light-dark(#e3c9db, #d2abc5) outset;
+            background-color: light-dark(#c18bac33, #c18bac4d);
+            border-bottom: 2px light-dark(#d2abc5, #e3c9db) outset;
             border-radius: 5px;
             color: #ffffffcf;
             padding-left: 5px;

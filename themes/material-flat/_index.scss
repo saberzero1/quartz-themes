@@ -251,25 +251,25 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --background-modifier-border: light-dark(#faf9fa, #fff);
+  --background-modifier-border: light-dark(#fff, #faf9fa);
   --background-primary: light-dark(#f2f1f4, #f2f1f4);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --hr-color: light-dark(#e8e1f9, #e8e1f9);
   --link-color-hover: #bea8f0;
   --link-external-color-hover: #bea8f0;
-  --tertiary: light-dark(#edb8cd, #7c5264);
+  --tertiary: light-dark(#7c5264, #edb8cd);
   --text-accent: light-dark(#bfadeb, #bfadeb);
   --text-accent-hover: light-dark(#bfadeb, #bfadeb);
   --text-highlight-bg: light-dark(#e8e1f9, #e8e1f9);
@@ -277,7 +277,7 @@ html[saved-theme="light"] {
   --text-normal: light-dark(#111, #111);
 }
 body {
-  --background-modifier-border: light-dark(#faf9fa, #fff);
+  --background-modifier-border: light-dark(#fff, #faf9fa);
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;
   --background-modifier-hover: #ffffff11;
@@ -304,19 +304,19 @@ body {
   --code-value: #a882ff;
   --collapse-icon-color: #2e2640;
   --collapse-icon-color-collapsed: #653cc3;
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -360,7 +360,7 @@ body {
   --tag-decoration-hover: none;
   --tag-radius: 2em;
   --tag-weight: inherit;
-  --tertiary: light-dark(#edb8cd, #7c5264);
+  --tertiary: light-dark(#7c5264, #edb8cd);
   --text-accent: light-dark(#bfadeb, #bfadeb);
   --text-accent-hover: light-dark(#bfadeb, #bfadeb);
   --text-faint: #666666;
@@ -370,8 +370,8 @@ body {
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: light-dark(
-    light-dark(#1c1b1e, #fffbff),
-    light-dark(#1c1b1e, #fffbff)
+    light-dark(#fffbff, #1c1b1e),
+    light-dark(#fffbff, #1c1b1e)
   );
   caret-color: #653cc3;
   color: #111;
@@ -535,8 +535,8 @@ body {
     var(--background-modifier-hover)
   ) !important;
   background-color: light-dark(
-    light-dark(#1c1b1e, #fffbff),
-    light-dark(#1c1b1e, #fffbff)
+    light-dark(#fffbff, #1c1b1e),
+    light-dark(#fffbff, #1c1b1e)
   );
   section,
   .page > #quartz-body .sidebar {
@@ -544,8 +544,8 @@ body {
     &.left:has(.explorer),
     &.right {
       background-color: light-dark(
-        light-dark(#1c1b1e, #fffbff),
-        light-dark(#1c1b1e, #fffbff)
+        light-dark(#fffbff, #1c1b1e),
+        light-dark(#fffbff, #1c1b1e)
       );
     }
   }
@@ -950,8 +950,8 @@ body {
     .explorer-content {
       @media all and ($mobile) {
         background-color: light-dark(
-          light-dark(#1c1b1e, #fffbff),
-          light-dark(#1c1b1e, #fffbff)
+          light-dark(#fffbff, #1c1b1e),
+          light-dark(#fffbff, #1c1b1e)
         );
       }
       .folder-container {
@@ -1147,8 +1147,8 @@ body {
     & > .search-container {
       & > .search-space {
         background-color: light-dark(
-          light-dark(#1c1b1e, #fffbff),
-          light-dark(#1c1b1e, #fffbff)
+          light-dark(#fffbff, #1c1b1e),
+          light-dark(#fffbff, #1c1b1e)
         );
         border: 0.5pt solid #555555;
         border-radius: 12px;
@@ -1159,8 +1159,8 @@ body {
         margin: 12vh auto;
         & > input {
           background-color: light-dark(
-            light-dark(#1c1b1e, #fffbff),
-            light-dark(#1c1b1e, #fffbff)
+            light-dark(#fffbff, #1c1b1e),
+            light-dark(#fffbff, #1c1b1e)
           );
           border: none;
           border-bottom: 1px solid #e8e1f9;
@@ -1186,7 +1186,7 @@ body {
             border-top-right-radius: 0;
           }
           & .highlight {
-            color: light-dark(#c9c3dc, #605c71);
+            color: light-dark(#605c71, #c9c3dc);
             font-weight: bold;
             background-color: #e8e1f9;
             color: #111;
@@ -1273,8 +1273,8 @@ body {
   /* POPOVER */
   .popover {
     background-color: light-dark(
-      light-dark(#1c1b1e, #fffbff),
-      light-dark(#1c1b1e, #fffbff)
+      light-dark(#fffbff, #1c1b1e),
+      light-dark(#fffbff, #1c1b1e)
     );
     border: 1px solid transparent;
     border-radius: 8px;
@@ -1294,8 +1294,8 @@ body {
     & .popover-inner {
       border: 1px solid transparent;
       background-color: light-dark(
-        light-dark(#1c1b1e, #fffbff),
-        light-dark(#1c1b1e, #fffbff)
+        light-dark(#fffbff, #1c1b1e),
+        light-dark(#fffbff, #1c1b1e)
       );
 
       border-radius: 8px;

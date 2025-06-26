@@ -64,26 +64,26 @@ html[saved-theme="light"] {
   --background-modifier-border-hover: light-dark(#50125a94, #50125a94);
   --background-modifier-hover: light-dark(#a32d7f52, #a32d7f52);
   --background-primary: light-dark(#211f23, #211f23);
-  --bold-color: light-dark(#9c4296, #24262a);
+  --bold-color: light-dark(#24262a, #9c4296);
   --checkbox-color: light-dark(#a32d7f, #a32d7f);
   --code-normal: light-dark(#e499e4a2, #e499e4a2);
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --graph-line: light-dark(#a540a55f, #a540a55f);
   --graph-node-tag: light-dark(#c8d89bdb, #c8d89bdb);
   --graph-node-unresolved: light-dark(#e499e4a2, #e499e4a2);
-  --italic-color: light-dark(#f3967a, #fca287);
+  --italic-color: light-dark(#fca287, #f3967a);
   --text-accent: light-dark(#d560b1, #d560b1);
   --text-accent-hover: light-dark(#d560b1, #d560b1);
   --text-faint: light-dark(#e499e4a2, #e499e4a2);
@@ -97,7 +97,7 @@ body {
   --background-modifier-border-hover: light-dark(#50125a94, #50125a94);
   --background-modifier-hover: light-dark(#a32d7f52, #a32d7f52);
   --background-primary: light-dark(#211f23, #211f23);
-  --bold-color: light-dark(#9c4296, #24262a);
+  --bold-color: light-dark(#24262a, #9c4296);
   --bold-weight: 800;
   --checkbox-border-color: #e499e4a2;
   --checkbox-border-color-hover: #e499e4a2;
@@ -119,19 +119,19 @@ body {
   --code-value: #a882ff;
   --collapse-icon-color: #e499e4a2;
   --collapse-icon-color-collapsed: #d560b1;
-  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -153,7 +153,7 @@ body {
   --inline-title-color: #d8bcd8;
   --inline-title-font: inherit;
   --interactive-accent-hsl: 258, 88%, 66%;
-  --italic-color: light-dark(#f3967a, #fca287);
+  --italic-color: light-dark(#fca287, #f3967a);
   --link-color: #d560b1;
   --link-color-hover: #d560b1;
   --link-external-color: #d560b1;
@@ -183,7 +183,7 @@ body {
   -webkit-user-select: none;
   background-color: #211f23;
   caret-color: #d560b1;
-  color: light-dark(light-dark(#d8bcd8, #30222b), light-dark(#d8bcd8, #30222b));
+  color: light-dark(light-dark(#30222b, #d8bcd8), light-dark(#30222b, #d8bcd8));
   contain: initial;
   font-family:
     "??",
@@ -610,8 +610,8 @@ body {
     border: 0px solid transparent;
     border-radius: 5px;
     color: light-dark(
-      light-dark(#e499e4a2, #412438cd),
-      light-dark(#e499e4a2, #412438cd)
+      light-dark(#412438cd, #e499e4a2),
+      light-dark(#412438cd, #e499e4a2)
     );
     font-family:
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
@@ -673,7 +673,7 @@ body {
   .clipboard-button {
     background-color: transparent;
     box-shadow: none;
-    color: light-dark(#e499e4a2, light-dark(#e499e4a2, #412438cd));
+    color: light-dark(light-dark(#412438cd, #e499e4a2), #e499e4a2);
     font-family:
       "??",
       "??",
@@ -712,7 +712,7 @@ body {
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: light-dark(#e499e4a2, light-dark(#e499e4a2, #412438cd));
+    color: light-dark(light-dark(#412438cd, #e499e4a2), #e499e4a2);
   }
   /* BACKLINKS */
   .backlinks {
@@ -799,8 +799,8 @@ body {
         a {
           border-radius: 5px;
           color: light-dark(
-            light-dark(#d8bcd8, #30222b),
-            light-dark(#d8bcd8, #30222b)
+            light-dark(#30222b, #d8bcd8),
+            light-dark(#30222b, #d8bcd8)
           );
           cursor: pointer;
           display: flex;
@@ -816,8 +816,8 @@ body {
               light-dark(#a32d7f52, #a32d7f52)
             );
             color: light-dark(
-              light-dark(#d8bcd8, #30222b),
-              light-dark(#d8bcd8, #30222b)
+              light-dark(#30222b, #d8bcd8),
+              light-dark(#30222b, #d8bcd8)
             );
             font-weight: inherit;
           }
@@ -866,8 +866,8 @@ body {
       li,
       li > a {
         color: light-dark(
-          light-dark(#d8bcd8, #30222b),
-          light-dark(#d8bcd8, #30222b)
+          light-dark(#30222b, #d8bcd8),
+          light-dark(#30222b, #d8bcd8)
         );
         font-weight: inherit;
         font-size: 16px;
@@ -949,8 +949,8 @@ body {
         );
       border-radius: 5px;
       color: light-dark(
-        light-dark(#d8bcd8, #30222b),
-        light-dark(#d8bcd8, #30222b)
+        light-dark(#30222b, #d8bcd8),
+        light-dark(#30222b, #d8bcd8)
       );
       font-family: inherit;
       font-size: 14.992px;
@@ -989,8 +989,8 @@ body {
         }
         & > * {
           color: light-dark(
-            light-dark(#d8bcd8, #30222b),
-            light-dark(#d8bcd8, #30222b)
+            light-dark(#30222b, #d8bcd8),
+            light-dark(#30222b, #d8bcd8)
           );
           background: transparent;
           margin-bottom: 0;
@@ -1008,8 +1008,8 @@ body {
               light-dark(#a32d7f52, #a32d7f52)
             );
             color: light-dark(
-              light-dark(#d8bcd8, #30222b),
-              light-dark(#d8bcd8, #30222b)
+              light-dark(#30222b, #d8bcd8),
+              light-dark(#30222b, #d8bcd8)
             );
           }
           & > .preview-container {
@@ -1034,8 +1034,8 @@ body {
               & > ul > li > p {
                 background-color: transparent;
                 color: light-dark(
-                  light-dark(#d8bcd8, #30222b),
-                  light-dark(#d8bcd8, #30222b)
+                  light-dark(#30222b, #d8bcd8),
+                  light-dark(#30222b, #d8bcd8)
                 );
                 &.match-tag {
                   color: #d560b1;

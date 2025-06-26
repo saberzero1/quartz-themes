@@ -212,49 +212,49 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --background-modifier-border: light-dark(#3c3836, #d5c4a1);
-  --background-primary: light-dark(#282828, #f9f5d7);
-  --bold-color: light-dark(#e78a4e, #c35e0a);
+  --background-modifier-border: light-dark(#d5c4a1, #3c3836);
+  --background-primary: light-dark(#f9f5d7, #282828);
+  --bold-color: light-dark(#c35e0a, #e78a4e);
   --checkbox-border-color: light-dark(#a89984, #a89984);
   --checkbox-border-color-hover: light-dark(#a89984, #a89984);
   --checkbox-color: light-dark(#a89984, #a89984);
   --checkbox-color-hover: light-dark(#a89984, #a89984);
-  --code-background: light-dark(#3c3836, #ebdbb2);
+  --code-background: light-dark(#ebdbb2, #3c3836);
   --code-normal: light-dark(#7daea3, #7daea3);
-  --color-accent-2: light-dark(#afcec4, #96beb3);
+  --color-accent-2: light-dark(#96beb3, #afcec4);
   --color-accent-hsl: light-dark(#7bada1, #7bada1);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
-  --graph-line: light-dark(#504945, #bdae93);
-  --graph-node-tag: light-dark(#ea6962, #c14a4a);
-  --h1-color: light-dark(#ea6962, #c14a4a);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --graph-line: light-dark(#bdae93, #504945);
+  --graph-node-tag: light-dark(#c14a4a, #ea6962);
+  --h1-color: light-dark(#c14a4a, #ea6962);
   --inline-title-color: light-dark(#e78a4e, #e78a4e);
-  --italic-color: light-dark(#e78a4e, #c35e0a);
-  --tag-background: light-dark(#504945, #ebdbb2);
-  --tag-color: light-dark(#89b482, #4c7a5d);
+  --italic-color: light-dark(#c35e0a, #e78a4e);
+  --tag-background: light-dark(#ebdbb2, #504945);
+  --tag-color: light-dark(#4c7a5d, #89b482);
   --text-accent: light-dark(#e78a4e, #e78a4e);
   --text-accent-hover: light-dark(#c35e0a, #c35e0a);
-  --text-faint: light-dark(#ebdbb2, #b37e5d);
-  --text-highlight-bg: light-dark(#e78a4e, #c35e0a);
-  --text-muted: light-dark(#d5c4a1, #735145);
-  --text-normal: light-dark(#d4be98, #654735);
+  --text-faint: light-dark(#b37e5d, #ebdbb2);
+  --text-highlight-bg: light-dark(#c35e0a, #e78a4e);
+  --text-muted: light-dark(#735145, #d5c4a1);
+  --text-normal: light-dark(#654735, #d4be98);
 }
 body {
-  --background-modifier-border: light-dark(#3c3836, #d5c4a1);
+  --background-modifier-border: light-dark(#d5c4a1, #3c3836);
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;
   --background-modifier-hover: #ffffff11;
-  --background-primary: light-dark(#282828, #f9f5d7);
-  --bold-color: light-dark(#e78a4e, #c35e0a);
+  --background-primary: light-dark(#f9f5d7, #282828);
+  --bold-color: light-dark(#c35e0a, #e78a4e);
   --bold-weight: 600;
   --checkbox-border-color: light-dark(#a89984, #a89984);
   --checkbox-border-color-hover: light-dark(#a89984, #a89984);
@@ -263,7 +263,7 @@ body {
   --checkbox-marker-color: #282828;
   --checkbox-radius: 0;
   --checkbox-size: 16px;
-  --code-background: light-dark(#3c3836, #ebdbb2);
+  --code-background: light-dark(#ebdbb2, #3c3836);
   --code-comment: #ebdbb2;
   --code-function: #e78a4e;
   --code-important: #c35e0a;
@@ -276,19 +276,19 @@ body {
   --code-value: #d3869b;
   --collapse-icon-color: #ebdbb2;
   --collapse-icon-color-collapsed: #e78a4e;
-  --color-accent-2: light-dark(#afcec4, #96beb3);
+  --color-accent-2: light-dark(#96beb3, #afcec4);
   --color-accent-hsl: light-dark(#7bada1, #7bada1);
-  --color-base-100: light-dark(#dadada, #222222);
-  --color-base-30: light-dark(#363636, #e0e0e0);
-  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
-  --color-base-40: light-dark(#555555, #bdbdbd);
-  --color-blue: light-dark(#027aff, #086ddd);
-  --color-cyan: light-dark(#53dfdd, #00bfbc);
-  --color-green: light-dark(#44cf6e, #08b94e);
-  --color-orange: light-dark(#e9973f, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#fb464c, #e93147);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -298,10 +298,10 @@ body {
     "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif;
-  --graph-line: light-dark(#504945, #bdae93);
-  --graph-node-tag: light-dark(#ea6962, #c14a4a);
+  --graph-line: light-dark(#bdae93, #504945);
+  --graph-node-tag: light-dark(#c14a4a, #ea6962);
   --graph-node-unresolved: #ebdbb2;
-  --h1-color: light-dark(#ea6962, #c14a4a);
+  --h1-color: light-dark(#c14a4a, #ea6962);
   --h1-font: inherit;
   --h3-line-height: 1.3;
   --hr-color: transparent;
@@ -310,7 +310,7 @@ body {
   --inline-title-color: light-dark(#e78a4e, #e78a4e);
   --inline-title-font: inherit;
   --interactive-accent-hsl: 166, 23%, 58%;
-  --italic-color: light-dark(#e78a4e, #c35e0a);
+  --italic-color: light-dark(#c35e0a, #e78a4e);
   --link-color: #e78a4e;
   --link-color-hover: #c35e0a;
   --link-external-color: #e78a4e;
@@ -319,12 +319,12 @@ body {
   --link-weight: 600;
   --p-spacing: 1rem;
   --search-icon-color: #d5c4a1;
-  --tag-background: light-dark(#504945, #ebdbb2);
+  --tag-background: light-dark(#ebdbb2, #504945);
   --tag-background-hover: #7bada133;
   --tag-border-color: #7bada126;
   --tag-border-color-hover: #7bada126;
   --tag-border-width: 0px;
-  --tag-color: light-dark(#89b482, #4c7a5d);
+  --tag-color: light-dark(#4c7a5d, #89b482);
   --tag-color-hover: #e78a4e;
   --tag-decoration: none;
   --tag-decoration-hover: underline;
@@ -332,15 +332,15 @@ body {
   --tag-weight: inherit;
   --text-accent: light-dark(#e78a4e, #e78a4e);
   --text-accent-hover: light-dark(#c35e0a, #c35e0a);
-  --text-faint: light-dark(#ebdbb2, #b37e5d);
-  --text-highlight-bg: light-dark(#e78a4e, #c35e0a);
-  --text-muted: light-dark(#d5c4a1, #735145);
-  --text-normal: light-dark(#d4be98, #654735);
+  --text-faint: light-dark(#b37e5d, #ebdbb2);
+  --text-highlight-bg: light-dark(#c35e0a, #e78a4e);
+  --text-muted: light-dark(#735145, #d5c4a1);
+  --text-normal: light-dark(#654735, #d4be98);
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(#282828, #f9f5d7);
+  background-color: light-dark(#f9f5d7, #282828);
   caret-color: #e78a4e;
-  color: light-dark(#d4be98, #654735);
+  color: light-dark(#654735, #d4be98);
   contain: initial;
   font-family:
     "??",
@@ -495,13 +495,13 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: light-dark(#282828, #f9f5d7);
+  background-color: light-dark(#f9f5d7, #282828);
   section,
   .page > #quartz-body .sidebar {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: light-dark(#282828, #f9f5d7);
+      background-color: light-dark(#f9f5d7, #282828);
     }
   }
   .highlight,
@@ -655,7 +655,7 @@ body {
   }
   /* HEADINGS */
   h1 {
-    color: light-dark(#ea6962, #c14a4a);
+    color: light-dark(#c14a4a, #ea6962);
     font-family: inherit;
     font-size: 1.802em;
     font-style: normal;
@@ -670,7 +670,7 @@ body {
     --link-weight: 700;
   }
   h2 {
-    color: light-dark(#e78a4e, #c35e0a);
+    color: light-dark(#c35e0a, #e78a4e);
     font-family: inherit;
     font-size: 1.602em;
     font-style: normal;
@@ -685,7 +685,7 @@ body {
     --link-weight: 600;
   }
   h3 {
-    color: light-dark(#a9b665, #6c782e);
+    color: light-dark(#6c782e, #a9b665);
     font-family: inherit;
     font-size: 1.424em;
     font-style: normal;
@@ -700,7 +700,7 @@ body {
     --link-weight: 600;
   }
   h4 {
-    color: light-dark(#89b482, #4c7a5d);
+    color: light-dark(#4c7a5d, #89b482);
     font-family: inherit;
     font-size: 1.266em;
     font-style: normal;
@@ -715,7 +715,7 @@ body {
     --link-weight: 600;
   }
   h5 {
-    color: light-dark(#7daea3, #45707a);
+    color: light-dark(#45707a, #7daea3);
     font-family: inherit;
     font-size: 1.125em;
     font-style: normal;
@@ -730,7 +730,7 @@ body {
     --link-weight: 600;
   }
   h6 {
-    color: light-dark(#d3869b, #945e80);
+    color: light-dark(#945e80, #d3869b);
     font-family: inherit;
     font-size: 1em;
     font-style: normal;
@@ -746,7 +746,7 @@ body {
   }
   /* CODE */
   pre {
-    background-color: light-dark(#3c3836, #ebdbb2);
+    background-color: light-dark(#ebdbb2, #3c3836);
     border: 0px solid transparent;
     border-radius: 4px;
     min-height: 38px;
@@ -763,7 +763,7 @@ body {
   }
   code {
     -webkit-box-decoration-break: clone;
-    background-color: light-dark(#3c3836, #ebdbb2);
+    background-color: light-dark(#ebdbb2, #3c3836);
     border: 0px solid transparent;
     border-radius: 4px;
     color: light-dark(#7daea3, #7daea3);
@@ -827,7 +827,7 @@ body {
   .clipboard-button {
     background-color: transparent;
     box-shadow: none;
-    color: light-dark(#d5c4a1, #735145);
+    color: light-dark(#735145, #d5c4a1);
     font-family:
       "??",
       "??",
@@ -863,12 +863,12 @@ body {
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: light-dark(#ebdbb2, #b37e5d);
+    color: light-dark(#b37e5d, #ebdbb2);
   }
   /* BACKLINKS */
   .backlinks {
     h3 {
-      color: light-dark(#a9b665, #6c782e);
+      color: light-dark(#6c782e, #a9b665);
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -894,11 +894,11 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: light-dark(#e78a4e, #c35e0a);
+      color: light-dark(#c35e0a, #e78a4e);
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: light-dark(#282828, #f9f5d7);
+        background-color: light-dark(#f9f5d7, #282828);
       }
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
@@ -956,7 +956,7 @@ body {
           &.active,
           &:hover {
             background-color: #ffffff26;
-            color: light-dark(#89b482, #45707a);
+            color: light-dark(#45707a, #89b482);
             font-weight: inherit;
           }
           &[data-for$="/index"] {
@@ -983,10 +983,10 @@ body {
   }
   /* TOC */
   .toc {
-    color: light-dark(#a9b665, #6c782e);
+    color: light-dark(#6c782e, #a9b665);
     button.toc-header {
       h3 {
-        color: light-dark(#a9b665, #6c782e);
+        color: light-dark(#6c782e, #a9b665);
         font-family: inherit;
         font-size: 1.424em;
         font-style: normal;
@@ -997,7 +997,7 @@ body {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
       }
-      color: light-dark(#a9b665, #6c782e);
+      color: light-dark(#6c782e, #a9b665);
       color: inherit;
     }
     ul.toc-content.overflow {
@@ -1014,7 +1014,7 @@ body {
   .graph,
   .toc {
     h3 {
-      color: light-dark(#a9b665, #6c782e);
+      color: light-dark(#6c782e, #a9b665);
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1077,9 +1077,9 @@ body {
     & > .search-button {
       -webkit-app-region: no-drag;
       background: transparent;
-      border: 1px solid light-dark(#3c3836, #d5c4a1);
+      border: 1px solid light-dark(#d5c4a1, #3c3836);
       border-radius: 5px;
-      color: light-dark(#d4be98, #654735);
+      color: light-dark(#654735, #d4be98);
       font-family: inherit;
       font-size: 14.992px;
       height: 40px;
@@ -1092,7 +1092,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: light-dark(#282828, #f9f5d7);
+        background-color: light-dark(#f9f5d7, #282828);
         border: 0.5pt solid #555555;
         border-radius: 12px;
         box-shadow:
@@ -1101,9 +1101,9 @@ body {
           0px 30px 90px #00000033;
         margin: 12vh auto;
         & > input {
-          background-color: light-dark(#282828, #f9f5d7);
+          background-color: light-dark(#f9f5d7, #282828);
           border: none;
-          border-bottom: 1px solid light-dark(#1d2021, #ebdbb2);
+          border-bottom: 1px solid light-dark(#ebdbb2, #1d2021);
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1115,7 +1115,7 @@ body {
           background: transparent;
         }
         & > * {
-          color: light-dark(#d4be98, #654735);
+          color: light-dark(#654735, #d4be98);
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1128,8 +1128,8 @@ body {
           & .highlight {
             color: var(--bright-red);
             font-weight: bold;
-            background-color: light-dark(#e78a4e, #c35e0a);
-            color: light-dark(#1d2021, #f9f5d7);
+            background-color: light-dark(#c35e0a, #e78a4e);
+            color: light-dark(#f9f5d7, #1d2021);
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1149,9 +1149,9 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: light-dark(#d4be98, #654735);
+                color: light-dark(#654735, #d4be98);
                 &.match-tag {
-                  color: light-dark(#89b482, #4c7a5d);
+                  color: light-dark(#4c7a5d, #89b482);
                 }
               }
             }
@@ -1212,8 +1212,8 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: light-dark(#282828, #f9f5d7);
-    border: 1px solid light-dark(#3c3836, #d5c4a1);
+    background-color: light-dark(#f9f5d7, #282828);
+    border: 1px solid light-dark(#d5c4a1, #3c3836);
     border-radius: 8px;
     box-shadow:
       0px 1px 2px #0000001f,
@@ -1229,8 +1229,8 @@ body {
     background-color: unset;
     border: unset;
     & .popover-inner {
-      border: 1px solid light-dark(#3c3836, #d5c4a1);
-      background-color: light-dark(#282828, #f9f5d7);
+      border: 1px solid light-dark(#d5c4a1, #3c3836);
+      background-color: light-dark(#f9f5d7, #282828);
 
       border-radius: 8px;
     }

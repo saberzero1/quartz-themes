@@ -194,21 +194,21 @@ html[saved-theme="dark"] {
 
 :root {
   --color-accent-2: light-dark(
-    hsl(46deg, 95%, 68.8%),
-    hsl(calc(46deg - 3), 96.9%, 74.75%)
+    hsl(calc(46deg - 3), 96.9%, 74.75%),
+    hsl(46deg, 95%, 68.8%)
   );
   --color-accent-hsl: light-dark(46deg, 95%, 65%, 46deg, 95%, 65%);
-  --color-base-100: light-dark(#ffffff, #222222);
-  --color-base-30: light-dark(#404040, #e0e0e0);
-  --color-base-35: light-dark(#484848, #d4d4d4);
-  --color-base-40: light-dark(#505050, #bdbdbd);
-  --color-blue: light-dark(#5352ed, #086ddd);
-  --color-cyan: light-dark(#70a1ff, #00bfbc);
-  --color-green: light-dark(#7bed9f, #08b94e);
-  --color-orange: light-dark(#ff7f50, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#ff6b81, #e93147);
+  --color-base-100: light-dark(#222222, #ffffff);
+  --color-base-30: light-dark(#e0e0e0, #404040);
+  --color-base-35: light-dark(#d4d4d4, #484848);
+  --color-base-40: light-dark(#bdbdbd, #505050);
+  --color-blue: light-dark(#086ddd, #5352ed);
+  --color-cyan: light-dark(#00bfbc, #70a1ff);
+  --color-green: light-dark(#08b94e, #7bed9f);
+  --color-orange: light-dark(#ec7500, #ff7f50);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #ff6b81);
 }
 body {
   --background-modifier-border: #404040;
@@ -239,21 +239,21 @@ body {
   --collapse-icon-color: #707070;
   --collapse-icon-color-collapsed: hsl(46deg, 95%, 61.2%);
   --color-accent-2: light-dark(
-    hsl(46deg, 95%, 68.8%),
-    hsl(calc(46deg - 3), 96.9%, 74.75%)
+    hsl(calc(46deg - 3), 96.9%, 74.75%),
+    hsl(46deg, 95%, 68.8%)
   );
   --color-accent-hsl: light-dark(46deg, 95%, 65%, 46deg, 95%, 65%);
-  --color-base-100: light-dark(#ffffff, #222222);
-  --color-base-30: light-dark(#404040, #e0e0e0);
-  --color-base-35: light-dark(#484848, #d4d4d4);
-  --color-base-40: light-dark(#505050, #bdbdbd);
-  --color-blue: light-dark(#5352ed, #086ddd);
-  --color-cyan: light-dark(#70a1ff, #00bfbc);
-  --color-green: light-dark(#7bed9f, #08b94e);
-  --color-orange: light-dark(#ff7f50, #ec7500);
-  --color-pink: light-dark(#fa99cd, #d53984);
-  --color-purple: light-dark(#a882ff, #7852ee);
-  --color-red: light-dark(#ff6b81, #e93147);
+  --color-base-100: light-dark(#222222, #ffffff);
+  --color-base-30: light-dark(#e0e0e0, #404040);
+  --color-base-35: light-dark(#d4d4d4, #484848);
+  --color-base-40: light-dark(#bdbdbd, #505050);
+  --color-blue: light-dark(#086ddd, #5352ed);
+  --color-cyan: light-dark(#00bfbc, #70a1ff);
+  --color-green: light-dark(#08b94e, #7bed9f);
+  --color-orange: light-dark(#ec7500, #ff7f50);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #ff6b81);
   --cursor-link: pointer;
   --font-default:
     "??", "??", Menlo, SFMono-Regular, Consolas, "Roboto Mono",

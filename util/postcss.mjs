@@ -361,7 +361,7 @@ export function getCombinedThemeVariables(cssString, darkThemeSelector = ".theme
         // If the variable already exists in the combinedVariables,
         // we combine them using the light-dark() function.
         if (combinedVariables[decl.prop]) {
-          combinedVariables[decl.prop] = createLightDarkTuple(combinedVariables[decl.prop], decl.value, decl.prop)
+          combinedVariables[decl.prop] = createLightDarkTuple(decl.value, combinedVariables[decl.prop], decl.prop)
         } else {
           combinedVariables[decl.prop] = decl.value
         }
