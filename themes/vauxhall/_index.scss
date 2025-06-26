@@ -22,19 +22,15 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --background-modifier-hover: color-mix(
-    in srgb,
-    hsl(228, 30%, 0%) 95%,
-    hsl(220, 0%, 80%)
-  );
+  --background-modifier-hover: color-mix(in srgb, #000000 95%, #cccccc);
   --background-primary: #000;
-  --code-background: color-mix(in srgb, hsl(228, 30%, 0%) 80%, #000);
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --code-background: color-mix(in srgb, #000000 80%, #000);
+  --color-accent-2: #c5b6fc;
   --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: color-mix(in srgb, hsl(228, 30%, 0%) 0%, hsl(220, 0%, 80%));
-  --color-base-30: color-mix(in srgb, hsl(228, 30%, 0%) 90%, hsl(220, 0%, 80%));
-  --color-base-35: color-mix(in srgb, hsl(228, 30%, 0%) 95%, hsl(220, 0%, 80%));
-  --color-base-40: color-mix(in srgb, hsl(228, 30%, 0%) 80%, hsl(220, 0%, 80%));
+  --color-base-100: color-mix(in srgb, #000000 0%, #cccccc);
+  --color-base-30: color-mix(in srgb, #000000 90%, #cccccc);
+  --color-base-35: color-mix(in srgb, #000000 95%, #cccccc);
+  --color-base-40: color-mix(in srgb, #000000 80%, #cccccc);
   --color-blue: #437cf3;
   --color-cyan: #43cfea;
   --color-green: #52eea3;
@@ -43,22 +39,18 @@ html[saved-theme="dark"] {
   --color-purple: #9446f8;
   --color-red: #e3365e;
   --h1-color: #43cfea;
-  --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --text-highlight-bg: color-mix(in srgb, hsl(258, 88%, 66%) 25%, transparent);
-  --text-normal: color-mix(in srgb, hsl(220, 0%, 80%) 30%, #fff);
-  --background-modifier-hover: color-mix(
-    in srgb,
-    hsl(228, 30%, 0%) 95%,
-    hsl(220, 0%, 80%)
-  );
+  --text-accent: #a68af9;
+  --text-highlight-bg: color-mix(in srgb, #8a5cf5 25%, transparent);
+  --text-normal: color-mix(in srgb, #cccccc 30%, #fff);
+  --background-modifier-hover: color-mix(in srgb, #000000 95%, #cccccc);
   --background-primary: #000;
-  --code-background: color-mix(in srgb, hsl(228, 30%, 0%) 80%, #000);
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --code-background: color-mix(in srgb, #000000 80%, #000);
+  --color-accent-2: #c5b6fc;
   --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: color-mix(in srgb, hsl(228, 30%, 0%) 0%, hsl(220, 0%, 80%));
-  --color-base-30: color-mix(in srgb, hsl(228, 30%, 0%) 90%, hsl(220, 0%, 80%));
-  --color-base-35: color-mix(in srgb, hsl(228, 30%, 0%) 95%, hsl(220, 0%, 80%));
-  --color-base-40: color-mix(in srgb, hsl(228, 30%, 0%) 80%, hsl(220, 0%, 80%));
+  --color-base-100: color-mix(in srgb, #000000 0%, #cccccc);
+  --color-base-30: color-mix(in srgb, #000000 90%, #cccccc);
+  --color-base-35: color-mix(in srgb, #000000 95%, #cccccc);
+  --color-base-40: color-mix(in srgb, #000000 80%, #cccccc);
   --color-blue: #437cf3;
   --color-cyan: #43cfea;
   --color-green: #52eea3;
@@ -67,9 +59,9 @@ html[saved-theme="dark"] {
   --color-purple: #9446f8;
   --color-red: #e3365e;
   --h1-color: #43cfea;
-  --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --text-highlight-bg: color-mix(in srgb, hsl(258, 88%, 66%) 25%, transparent);
-  --text-normal: color-mix(in srgb, hsl(220, 0%, 80%) 30%, #fff);
+  --text-accent: #a68af9;
+  --text-highlight-bg: color-mix(in srgb, #8a5cf5 25%, transparent);
+  --text-normal: color-mix(in srgb, #cccccc 30%, #fff);
 }
 
 :root[saved-theme="light"],
@@ -87,23 +79,15 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --background-modifier-hover: color-mix(
-    in srgb,
-    hsl(228, 30%, 0%) 95%,
-    hsl(220, 0%, 80%)
-  );
-  --background-primary: color-mix(in srgb, hsl(228, 30%, 0%) 40%, #000);
-  --code-background: color-mix(
-    in srgb,
-    hsl(228, 30%, 0%) 90%,
-    hsl(220, 0%, 80%)
-  );
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --background-modifier-hover: color-mix(in srgb, #000000 95%, #cccccc);
+  --background-primary: color-mix(in srgb, #000000 40%, #000);
+  --code-background: color-mix(in srgb, #000000 90%, #cccccc);
+  --color-accent-2: #a68af9;
   --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: color-mix(in srgb, hsl(228, 30%, 0%) 0%, hsl(220, 0%, 80%));
-  --color-base-30: color-mix(in srgb, hsl(228, 30%, 0%) 90%, hsl(220, 0%, 80%));
-  --color-base-35: color-mix(in srgb, hsl(228, 30%, 0%) 95%, hsl(220, 0%, 80%));
-  --color-base-40: color-mix(in srgb, hsl(228, 30%, 0%) 80%, hsl(220, 0%, 80%));
+  --color-base-100: color-mix(in srgb, #000000 0%, #cccccc);
+  --color-base-30: color-mix(in srgb, #000000 90%, #cccccc);
+  --color-base-35: color-mix(in srgb, #000000 95%, #cccccc);
+  --color-base-40: color-mix(in srgb, #000000 80%, #cccccc);
   --color-blue: #437cf3;
   --color-cyan: #43cfea;
   --color-green: #52eea3;
@@ -112,25 +96,17 @@ html[saved-theme="light"] {
   --color-purple: #9446f8;
   --color-red: #e3365e;
   --h1-color: #43cfea;
-  --text-highlight-bg: color-mix(in srgb, hsl(258, 88%, 66%) 25%, transparent);
-  --text-normal: color-mix(in srgb, hsl(220, 0%, 80%) 50%, #000);
-  --background-modifier-hover: color-mix(
-    in srgb,
-    hsl(228, 30%, 0%) 95%,
-    hsl(220, 0%, 80%)
-  );
-  --background-primary: color-mix(in srgb, hsl(228, 30%, 0%) 40%, #000);
-  --code-background: color-mix(
-    in srgb,
-    hsl(228, 30%, 0%) 90%,
-    hsl(220, 0%, 80%)
-  );
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --text-highlight-bg: color-mix(in srgb, #8a5cf5 25%, transparent);
+  --text-normal: color-mix(in srgb, #cccccc 50%, #000);
+  --background-modifier-hover: color-mix(in srgb, #000000 95%, #cccccc);
+  --background-primary: color-mix(in srgb, #000000 40%, #000);
+  --code-background: color-mix(in srgb, #000000 90%, #cccccc);
+  --color-accent-2: #a68af9;
   --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: color-mix(in srgb, hsl(228, 30%, 0%) 0%, hsl(220, 0%, 80%));
-  --color-base-30: color-mix(in srgb, hsl(228, 30%, 0%) 90%, hsl(220, 0%, 80%));
-  --color-base-35: color-mix(in srgb, hsl(228, 30%, 0%) 95%, hsl(220, 0%, 80%));
-  --color-base-40: color-mix(in srgb, hsl(228, 30%, 0%) 80%, hsl(220, 0%, 80%));
+  --color-base-100: color-mix(in srgb, #000000 0%, #cccccc);
+  --color-base-30: color-mix(in srgb, #000000 90%, #cccccc);
+  --color-base-35: color-mix(in srgb, #000000 95%, #cccccc);
+  --color-base-40: color-mix(in srgb, #000000 80%, #cccccc);
   --color-blue: #437cf3;
   --color-cyan: #43cfea;
   --color-green: #52eea3;
@@ -139,8 +115,8 @@ html[saved-theme="light"] {
   --color-purple: #9446f8;
   --color-red: #e3365e;
   --h1-color: #43cfea;
-  --text-highlight-bg: color-mix(in srgb, hsl(258, 88%, 66%) 25%, transparent);
-  --text-normal: color-mix(in srgb, hsl(220, 0%, 80%) 50%, #000);
+  --text-highlight-bg: color-mix(in srgb, #8a5cf5 25%, transparent);
+  --text-normal: color-mix(in srgb, #cccccc 50%, #000);
 }
 
 @font-face {
@@ -305,192 +281,109 @@ html[saved-theme="light"] {
 
 :root {
   --background-modifier-hover: light-dark(
-    color-mix(in srgb, hsl(228, 30%, 0%) 95%, hsl(220, 0%, 80%)),
-    color-mix(in srgb, hsl(228, 30%, 0%) 95%, hsl(220, 0%, 80%))
+    color-mix(in srgb, #000000 95%, #cccccc),
+    color-mix(in srgb, #000000 95%, #cccccc)
   );
-  --background-primary: light-dark(
-    #000,
-    color-mix(in srgb, hsl(228, 30%, 0%) 40%, #000)
-  );
+  --background-primary: light-dark(#000, color-mix(in srgb, #000000 40%, #000));
   --code-background: light-dark(
-    color-mix(in srgb, hsl(228, 30%, 0%) 80%, #000),
-    color-mix(in srgb, hsl(228, 30%, 0%) 90%, hsl(220, 0%, 80%))
+    color-mix(in srgb, #000000 80%, #000),
+    color-mix(in srgb, #000000 90%, #cccccc)
   );
-  --color-accent-2: light-dark(
-    hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29)),
-    hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15))
-  );
+  --color-accent-2: light-dark(#c5b6fc, #a68af9);
   --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
-  --color-base-100: light-dark(
-    light-dark(
-      color-mix(in srgb, hsl(228, 30%, 0%) 0%, hsl(220, 0%, 80%)),
-      #222222
-    ),
-    color-mix(in srgb, hsl(228, 30%, 0%) 0%, hsl(220, 0%, 80%))
-  );
-  --color-base-30: light-dark(
-    light-dark(
-      color-mix(in srgb, hsl(228, 30%, 0%) 90%, hsl(220, 0%, 80%)),
-      #e0e0e0
-    ),
-    color-mix(in srgb, hsl(228, 30%, 0%) 90%, hsl(220, 0%, 80%))
-  );
-  --color-base-35: light-dark(
-    light-dark(
-      color-mix(in srgb, hsl(228, 30%, 0%) 95%, hsl(220, 0%, 80%)),
-      #d4d4d4
-    ),
-    color-mix(in srgb, hsl(228, 30%, 0%) 95%, hsl(220, 0%, 80%))
-  );
-  --color-base-40: light-dark(
-    light-dark(
-      color-mix(in srgb, hsl(228, 30%, 0%) 80%, hsl(220, 0%, 80%)),
-      #bdbdbd
-    ),
-    color-mix(in srgb, hsl(228, 30%, 0%) 80%, hsl(220, 0%, 80%))
-  );
-  --color-blue: light-dark(light-dark(#437cf3, #086ddd), #437cf3);
-  --color-cyan: light-dark(light-dark(#43cfea, #00bfbc), #43cfea);
-  --color-green: light-dark(light-dark(#52eea3, #08b94e), #52eea3);
-  --color-orange: light-dark(light-dark(#fa9f50, #ec7500), #fa9f50);
-  --color-pink: light-dark(light-dark(#e54f9b, #d53984), #e54f9b);
-  --color-purple: light-dark(light-dark(#9446f8, #7852ee), #9446f8);
-  --color-red: light-dark(light-dark(#e3365e, #e93147), #e3365e);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
   --h1-color: light-dark(#43cfea, #43cfea);
-  --text-highlight-bg: light-dark(
-    color-mix(in srgb, hsl(258, 88%, 66%) 25%, transparent),
-    color-mix(in srgb, hsl(258, 88%, 66%) 25%, transparent)
-  );
-  --text-normal: light-dark(
-    color-mix(in srgb, hsl(220, 0%, 80%) 30%, #fff),
-    color-mix(in srgb, hsl(220, 0%, 80%) 50%, #000)
-  );
 }
 body {
-  --background-modifier-border: color-mix(
-    in srgb,
-    hsl(228, 30%, 0%) 90%,
-    hsl(220, 0%, 80%)
-  );
-  --background-modifier-border-focus: color-mix(
-    in srgb,
-    hsl(228, 30%, 0%) 80%,
-    hsl(220, 0%, 80%)
-  );
-  --background-modifier-border-hover: color-mix(
-    in srgb,
-    hsl(228, 30%, 0%) 95%,
-    hsl(220, 0%, 80%)
-  );
-  --background-modifier-hover: rgba(255, 255, 255, 0.067);
+  --background-modifier-border: color-mix(in srgb, #000000 90%, #cccccc);
+  --background-modifier-border-focus: color-mix(in srgb, #000000 80%, #cccccc);
+  --background-modifier-border-hover: color-mix(in srgb, #000000 95%, #cccccc);
+  --background-modifier-hover: #ffffff11;
   --background-primary: #000;
   --bold-color: inherit;
-  --bold-weight: calc(600 + 200);
-  --checkbox-border-color: color-mix(
-    in srgb,
-    hsl(228, 30%, 0%) 60%,
-    hsl(220, 0%, 80%)
-  );
-  --checkbox-border-color-hover: color-mix(
-    in srgb,
-    hsl(228, 30%, 0%) 30%,
-    hsl(220, 0%, 80%)
-  );
-  --checkbox-color: hsl(258, 88%, 66%);
-  --checkbox-color-hover: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  );
+  --bold-weight: 800;
+  --checkbox-border-color: color-mix(in srgb, #000000 60%, #cccccc);
+  --checkbox-border-color-hover: color-mix(in srgb, #000000 30%, #cccccc);
+  --checkbox-color: #8a5cf5;
+  --checkbox-color-hover: #a68af9;
   --checkbox-marker-color: #000;
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
   --code-background: #111;
-  --code-comment: color-mix(in srgb, hsl(228, 30%, 0%) 60%, hsl(220, 0%, 80%));
+  --code-comment: color-mix(in srgb, #000000 60%, #cccccc);
   --code-function: #ffd85e;
   --code-important: #fa9f50;
   --code-keyword: #e54f9b;
-  --code-normal: color-mix(in srgb, hsl(220, 0%, 80%) 30%, #fff);
+  --code-normal: color-mix(in srgb, #cccccc 30%, #fff);
   --code-property: #43cfea;
-  --code-punctuation: color-mix(
-    in srgb,
-    hsl(228, 30%, 0%) 30%,
-    hsl(220, 0%, 80%)
-  );
+  --code-punctuation: color-mix(in srgb, #000000 30%, #cccccc);
   --code-string: #52eea3;
   --code-tag: #e3365e;
   --code-value: #9446f8;
-  --collapse-icon-color: color-mix(
-    in srgb,
-    hsl(228, 30%, 0%) 60%,
-    hsl(220, 0%, 80%)
-  );
-  --collapse-icon-color-collapsed: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  );
+  --collapse-icon-color: color-mix(in srgb, #000000 60%, #cccccc);
+  --collapse-icon-color-collapsed: #a68af9;
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
   --font-text: "??", "??", "??", "Arial";
-  --graph-line: color-mix(in srgb, hsl(228, 30%, 0%) 95%, hsl(220, 0%, 80%));
+  --graph-line: color-mix(in srgb, #000000 95%, #cccccc);
   --graph-node-tag: #52eea3;
-  --graph-node-unresolved: color-mix(
-    in srgb,
-    hsl(228, 30%, 0%) 60%,
-    hsl(220, 0%, 80%)
-  );
+  --graph-node-unresolved: color-mix(in srgb, #000000 60%, #cccccc);
   --h1-color: inherit;
   --h1-font: inherit;
   --h3-line-height: 1.3;
-  --hr-color: color-mix(in srgb, hsl(228, 30%, 0%) 80%, hsl(220, 0%, 80%));
+  --hr-color: color-mix(in srgb, #000000 80%, #cccccc);
   --hr-thickness: 2px;
-  --icon-color: color-mix(in srgb, hsl(228, 30%, 0%) 30%, hsl(220, 0%, 80%));
-  --inline-title-color: hsl(258, 88%, 66%);
+  --icon-color: color-mix(in srgb, #000000 30%, #cccccc);
+  --inline-title-color: #8a5cf5;
   --inline-title-font: inherit;
   --interactive-accent-hsl: 258, 88%, 66%;
   --italic-color: inherit;
-  --link-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --link-color-hover: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
-  --link-external-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --link-external-color-hover: hsl(
-    calc(258 - 5),
-    calc(88% * 1.05),
-    calc(66% * 1.29)
-  );
+  --link-color: #a68af9;
+  --link-color-hover: #c5b6fc;
+  --link-external-color: #a68af9;
+  --link-external-color-hover: #c5b6fc;
   --link-external-filter: none;
   --link-weight: 600;
   --p-spacing: 1rem;
-  --search-icon-color: color-mix(
-    in srgb,
-    hsl(228, 30%, 0%) 30%,
-    hsl(220, 0%, 80%)
-  );
-  --tag-background: hsla(258, 88%, 66%, 0.1);
-  --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-  --tag-border-color: hsla(258, 88%, 66%, 0.15);
-  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
+  --search-icon-color: color-mix(in srgb, #000000 30%, #cccccc);
+  --tag-background: #8a5cf51a;
+  --tag-background-hover: #8a5cf533;
+  --tag-border-color: #8a5cf526;
+  --tag-border-color-hover: #8a5cf526;
   --tag-border-width: 0px;
-  --tag-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --tag-color-hover: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --tag-color: #a68af9;
+  --tag-color-hover: #a68af9;
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-radius: 2em;
   --tag-weight: inherit;
-  --text-accent: hsl(258, 88%, 66%);
-  --text-accent-hover: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
-  --text-faint: color-mix(in srgb, hsl(228, 30%, 0%) 60%, hsl(220, 0%, 80%));
-  --text-highlight-bg: rgba(255, 208, 0, 0.4);
-  --text-muted: color-mix(in srgb, hsl(228, 30%, 0%) 30%, hsl(220, 0%, 80%));
-  --text-normal: color-mix(in srgb, hsl(228, 30%, 0%) 0%, hsl(220, 0%, 80%));
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  --text-accent: #8a5cf5;
+  --text-accent-hover: #c5b6fc;
+  --text-faint: color-mix(in srgb, #000000 60%, #cccccc);
+  --text-highlight-bg: #ffd00066;
+  --text-muted: color-mix(in srgb, #000000 30%, #cccccc);
+  --text-normal: color-mix(in srgb, #000000 0%, #cccccc);
+  -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: #000;
-  caret-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  color: color-mix(in srgb, hsl(220, 0%, 80%) 30%, #fff);
+  background-color: light-dark(
+    light-dark(#1e1e1e, #ffffff),
+    light-dark(#212121, #fcfcfc)
+  );
+  caret-color: #a68af9;
+  color: color-mix(in srgb, #cccccc 30%, #fff);
   contain: initial;
   font-family:
     "??",
@@ -535,19 +428,15 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --background-modifier-hover: color-mix(
-    in srgb,
-    hsl(228, 30%, 0%) 95%,
-    hsl(220, 0%, 80%)
-  );
+  --background-modifier-hover: color-mix(in srgb, #000000 95%, #cccccc);
   --background-primary: #000;
-  --code-background: color-mix(in srgb, hsl(228, 30%, 0%) 80%, #000);
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --code-background: color-mix(in srgb, #000000 80%, #000);
+  --color-accent-2: #c5b6fc;
   --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: color-mix(in srgb, hsl(228, 30%, 0%) 0%, hsl(220, 0%, 80%));
-  --color-base-30: color-mix(in srgb, hsl(228, 30%, 0%) 90%, hsl(220, 0%, 80%));
-  --color-base-35: color-mix(in srgb, hsl(228, 30%, 0%) 95%, hsl(220, 0%, 80%));
-  --color-base-40: color-mix(in srgb, hsl(228, 30%, 0%) 80%, hsl(220, 0%, 80%));
+  --color-base-100: color-mix(in srgb, #000000 0%, #cccccc);
+  --color-base-30: color-mix(in srgb, #000000 90%, #cccccc);
+  --color-base-35: color-mix(in srgb, #000000 95%, #cccccc);
+  --color-base-40: color-mix(in srgb, #000000 80%, #cccccc);
   --color-blue: #437cf3;
   --color-cyan: #43cfea;
   --color-green: #52eea3;
@@ -556,22 +445,18 @@ html[saved-theme="dark"] {
   --color-purple: #9446f8;
   --color-red: #e3365e;
   --h1-color: #43cfea;
-  --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --text-highlight-bg: color-mix(in srgb, hsl(258, 88%, 66%) 25%, transparent);
-  --text-normal: color-mix(in srgb, hsl(220, 0%, 80%) 30%, #fff);
-  --background-modifier-hover: color-mix(
-    in srgb,
-    hsl(228, 30%, 0%) 95%,
-    hsl(220, 0%, 80%)
-  );
+  --text-accent: #a68af9;
+  --text-highlight-bg: color-mix(in srgb, #8a5cf5 25%, transparent);
+  --text-normal: color-mix(in srgb, #cccccc 30%, #fff);
+  --background-modifier-hover: color-mix(in srgb, #000000 95%, #cccccc);
   --background-primary: #000;
-  --code-background: color-mix(in srgb, hsl(228, 30%, 0%) 80%, #000);
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --code-background: color-mix(in srgb, #000000 80%, #000);
+  --color-accent-2: #c5b6fc;
   --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: color-mix(in srgb, hsl(228, 30%, 0%) 0%, hsl(220, 0%, 80%));
-  --color-base-30: color-mix(in srgb, hsl(228, 30%, 0%) 90%, hsl(220, 0%, 80%));
-  --color-base-35: color-mix(in srgb, hsl(228, 30%, 0%) 95%, hsl(220, 0%, 80%));
-  --color-base-40: color-mix(in srgb, hsl(228, 30%, 0%) 80%, hsl(220, 0%, 80%));
+  --color-base-100: color-mix(in srgb, #000000 0%, #cccccc);
+  --color-base-30: color-mix(in srgb, #000000 90%, #cccccc);
+  --color-base-35: color-mix(in srgb, #000000 95%, #cccccc);
+  --color-base-40: color-mix(in srgb, #000000 80%, #cccccc);
   --color-blue: #437cf3;
   --color-cyan: #43cfea;
   --color-green: #52eea3;
@@ -580,9 +465,9 @@ html[saved-theme="dark"] {
   --color-purple: #9446f8;
   --color-red: #e3365e;
   --h1-color: #43cfea;
-  --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --text-highlight-bg: color-mix(in srgb, hsl(258, 88%, 66%) 25%, transparent);
-  --text-normal: color-mix(in srgb, hsl(220, 0%, 80%) 30%, #fff);
+  --text-accent: #a68af9;
+  --text-highlight-bg: color-mix(in srgb, #8a5cf5 25%, transparent);
+  --text-normal: color-mix(in srgb, #cccccc 30%, #fff);
 }
 /* END DARK */
 /* START LIGHT */
@@ -601,23 +486,15 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --background-modifier-hover: color-mix(
-    in srgb,
-    hsl(228, 30%, 0%) 95%,
-    hsl(220, 0%, 80%)
-  );
-  --background-primary: color-mix(in srgb, hsl(228, 30%, 0%) 40%, #000);
-  --code-background: color-mix(
-    in srgb,
-    hsl(228, 30%, 0%) 90%,
-    hsl(220, 0%, 80%)
-  );
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --background-modifier-hover: color-mix(in srgb, #000000 95%, #cccccc);
+  --background-primary: color-mix(in srgb, #000000 40%, #000);
+  --code-background: color-mix(in srgb, #000000 90%, #cccccc);
+  --color-accent-2: #a68af9;
   --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: color-mix(in srgb, hsl(228, 30%, 0%) 0%, hsl(220, 0%, 80%));
-  --color-base-30: color-mix(in srgb, hsl(228, 30%, 0%) 90%, hsl(220, 0%, 80%));
-  --color-base-35: color-mix(in srgb, hsl(228, 30%, 0%) 95%, hsl(220, 0%, 80%));
-  --color-base-40: color-mix(in srgb, hsl(228, 30%, 0%) 80%, hsl(220, 0%, 80%));
+  --color-base-100: color-mix(in srgb, #000000 0%, #cccccc);
+  --color-base-30: color-mix(in srgb, #000000 90%, #cccccc);
+  --color-base-35: color-mix(in srgb, #000000 95%, #cccccc);
+  --color-base-40: color-mix(in srgb, #000000 80%, #cccccc);
   --color-blue: #437cf3;
   --color-cyan: #43cfea;
   --color-green: #52eea3;
@@ -626,25 +503,17 @@ html[saved-theme="light"] {
   --color-purple: #9446f8;
   --color-red: #e3365e;
   --h1-color: #43cfea;
-  --text-highlight-bg: color-mix(in srgb, hsl(258, 88%, 66%) 25%, transparent);
-  --text-normal: color-mix(in srgb, hsl(220, 0%, 80%) 50%, #000);
-  --background-modifier-hover: color-mix(
-    in srgb,
-    hsl(228, 30%, 0%) 95%,
-    hsl(220, 0%, 80%)
-  );
-  --background-primary: color-mix(in srgb, hsl(228, 30%, 0%) 40%, #000);
-  --code-background: color-mix(
-    in srgb,
-    hsl(228, 30%, 0%) 90%,
-    hsl(220, 0%, 80%)
-  );
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --text-highlight-bg: color-mix(in srgb, #8a5cf5 25%, transparent);
+  --text-normal: color-mix(in srgb, #cccccc 50%, #000);
+  --background-modifier-hover: color-mix(in srgb, #000000 95%, #cccccc);
+  --background-primary: color-mix(in srgb, #000000 40%, #000);
+  --code-background: color-mix(in srgb, #000000 90%, #cccccc);
+  --color-accent-2: #a68af9;
   --color-accent-hsl: 258, 88%, 66%;
-  --color-base-100: color-mix(in srgb, hsl(228, 30%, 0%) 0%, hsl(220, 0%, 80%));
-  --color-base-30: color-mix(in srgb, hsl(228, 30%, 0%) 90%, hsl(220, 0%, 80%));
-  --color-base-35: color-mix(in srgb, hsl(228, 30%, 0%) 95%, hsl(220, 0%, 80%));
-  --color-base-40: color-mix(in srgb, hsl(228, 30%, 0%) 80%, hsl(220, 0%, 80%));
+  --color-base-100: color-mix(in srgb, #000000 0%, #cccccc);
+  --color-base-30: color-mix(in srgb, #000000 90%, #cccccc);
+  --color-base-35: color-mix(in srgb, #000000 95%, #cccccc);
+  --color-base-40: color-mix(in srgb, #000000 80%, #cccccc);
   --color-blue: #437cf3;
   --color-cyan: #43cfea;
   --color-green: #52eea3;
@@ -653,16 +522,16 @@ html[saved-theme="light"] {
   --color-purple: #9446f8;
   --color-red: #e3365e;
   --h1-color: #43cfea;
-  --text-highlight-bg: color-mix(in srgb, hsl(258, 88%, 66%) 25%, transparent);
-  --text-normal: color-mix(in srgb, hsl(220, 0%, 80%) 50%, #000);
+  --text-highlight-bg: color-mix(in srgb, #8a5cf5 25%, transparent);
+  --text-normal: color-mix(in srgb, #cccccc 50%, #000);
 }
 /* END LIGHT */
 /* CALLOUTS */
 :root,
 html {
   .callout {
-    background-color: rgba(158, 158, 158, 0.1);
-    border-color: rgba(158, 158, 158, 0.25);
+    background-color: #9e9e9e1a;
+    border-color: #9e9e9e40;
     border-radius: 12px;
     border-style: solid;
     border-width: 2px;
@@ -670,94 +539,94 @@ html {
     mix-blend-mode: normal;
     overflow: hidden;
     padding: 12px 24px 12px 12px;
-    background-color: rgba(158, 158, 158, 0.1);
+    background-color: #9e9e9e1a;
     overflow-x: auto;
     overflow-y: hidden;
     &[data-callout] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="abstract"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="summary"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="tldr"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="info"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="todo"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="important"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="tip"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="hint"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="success"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="check"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="done"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="question"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="help"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="faq"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="warning"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="caution"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="attention"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="failure"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="fail"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="missing"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="danger"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="error"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="bug"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="example"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="quote"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="cite"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
   }
   .callout-title {
     align-items: flex-start;
-    color: rgb(158, 158, 158);
+    color: #9e9e9e;
     display: flex;
     font-size: inherit;
     gap: 4px;
@@ -783,13 +652,19 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: #000;
+  background-color: light-dark(
+    light-dark(#1e1e1e, #ffffff),
+    light-dark(#212121, #fcfcfc)
+  );
   section,
   .page > #quartz-body .sidebar {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: #000;
+      background-color: light-dark(
+        light-dark(#1e1e1e, #ffffff),
+        light-dark(#212121, #fcfcfc)
+      );
     }
   }
   .highlight,
@@ -943,7 +818,10 @@ body {
   }
   /* HEADINGS */
   h1 {
-    color: hsl(258, 88%, 66%);
+    color: light-dark(
+      light-dark(#43cfea, #3bb2ce),
+      light-dark(#43cfea, #3bb2ce)
+    );
     font-family: inherit;
     font-size: 1.802em;
     font-style: normal;
@@ -959,7 +837,10 @@ body {
     --link-weight: 700;
   }
   h2 {
-    color: #437cf3;
+    color: light-dark(
+      light-dark(#54b6f8, #54b6f8),
+      light-dark(#54b6f8, #54b6f8)
+    );
     font-family: inherit;
     font-size: 1.602em;
     font-style: normal;
@@ -974,7 +855,10 @@ body {
     --link-weight: 600;
   }
   h3 {
-    color: #9446f8;
+    color: light-dark(
+      light-dark(#437cf3, #437cf3),
+      light-dark(#437cf3, #437cf3)
+    );
     font-family: inherit;
     font-size: 1.424em;
     font-style: normal;
@@ -989,7 +873,10 @@ body {
     --link-weight: 600;
   }
   h4 {
-    color: #c952ed;
+    color: light-dark(
+      light-dark(#6f51f4, #6f51f4),
+      light-dark(#6f51f4, #6f51f4)
+    );
     font-family: inherit;
     font-size: 1.266em;
     font-style: normal;
@@ -1004,7 +891,10 @@ body {
     --link-weight: 600;
   }
   h5 {
-    color: #e54f9b;
+    color: light-dark(
+      light-dark(#9446f8, #9446f8),
+      light-dark(#9446f8, #9446f8)
+    );
     font-family: inherit;
     font-size: 1.125em;
     font-style: normal;
@@ -1019,7 +909,10 @@ body {
     --link-weight: 600;
   }
   h6 {
-    color: #e3365e;
+    color: light-dark(
+      light-dark(#c952ed, #c952ed),
+      light-dark(#c952ed, #c952ed)
+    );
     font-family: inherit;
     font-size: 1em;
     font-style: normal;
@@ -1035,9 +928,11 @@ body {
   }
   /* CODE */
   pre {
-    background-color: color-mix(in srgb, hsl(228, 30%, 0%) 80%, #000);
-    border: 0px solid
-      color-mix(in srgb, hsl(228, 30%, 0%) 80%, hsl(220, 0%, 80%));
+    background-color: light-dark(
+      light-dark(#2a2a2a, #e3e3e3),
+      light-dark(#363636, #e0e0e0)
+    );
+    border: 0px solid color-mix(in srgb, #000000 80%, #cccccc);
     border-radius: 4px;
     min-height: 38px;
     overflow-x: auto;
@@ -1053,11 +948,13 @@ body {
   }
   code {
     -webkit-box-decoration-break: clone;
-    background-color: color-mix(in srgb, hsl(228, 30%, 0%) 80%, #000);
-    border: 0px solid
-      color-mix(in srgb, hsl(228, 30%, 0%) 80%, hsl(220, 0%, 80%));
+    background-color: light-dark(
+      light-dark(#2a2a2a, #e3e3e3),
+      light-dark(#363636, #e0e0e0)
+    );
+    border: 0px solid color-mix(in srgb, #000000 80%, #cccccc);
     border-radius: 4px;
-    color: color-mix(in srgb, hsl(220, 0%, 80%) 30%, #fff);
+    color: color-mix(in srgb, #cccccc 30%, #fff);
     font-family:
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1118,7 +1015,7 @@ body {
   .clipboard-button {
     background-color: transparent;
     box-shadow: none;
-    color: color-mix(in srgb, hsl(228, 30%, 0%) 30%, hsl(220, 0%, 80%));
+    color: color-mix(in srgb, #000000 30%, #cccccc);
     font-family:
       "??",
       "??",
@@ -1134,7 +1031,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-size: calc(16px * 0.8);
+    font-size: 12.8px;
     height: auto;
     inset-inline-end: 0;
     margin: 6px;
@@ -1142,7 +1039,10 @@ body {
     position: absolute;
     top: 0;
     &:hover {
-      background-color: rgba(255, 255, 255, 0.15);
+      background-color: light-dark(
+        light-dark(#3f3f3f, #d4d4d4),
+        light-dark(#3f3f3f, #d4d4d4)
+      );
     }
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -1150,16 +1050,19 @@ body {
   }
   /* METADATA */
   .content-meta {
-    color: color-mix(in srgb, hsl(220, 0%, 80%) 30%, #fff);
+    color: color-mix(in srgb, #cccccc 30%, #fff);
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: color-mix(in srgb, hsl(228, 30%, 0%) 60%, hsl(220, 0%, 80%));
+    color: color-mix(in srgb, #000000 60%, #cccccc);
   }
   /* BACKLINKS */
   .backlinks {
     h3 {
-      color: #9446f8;
+      color: light-dark(
+        light-dark(#437cf3, #437cf3),
+        light-dark(#437cf3, #437cf3)
+      );
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1171,7 +1074,7 @@ body {
       margin-block-start: 0rem;
     }
     ul li {
-      color: color-mix(in srgb, hsl(220, 0%, 80%) 30%, #fff);
+      color: color-mix(in srgb, #cccccc 30%, #fff);
       font-weight: 500;
     }
   }
@@ -1185,16 +1088,22 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: #437cf3;
+      color: light-dark(
+        light-dark(#54b6f8, #54b6f8),
+        light-dark(#54b6f8, #54b6f8)
+      );
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: #000;
+        background-color: light-dark(
+          light-dark(#1e1e1e, #ffffff),
+          light-dark(#212121, #fcfcfc)
+        );
       }
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
-        color: hsl(258, 88%, 66%);
+        color: #8a5cf5;
         text-overflow: ellipsis;
         position: relative;
         & > svg {
@@ -1227,7 +1136,7 @@ body {
       }
       .folder-outer > ul.content {
         border-inline-start: 1px solid
-          color-mix(in srgb, hsl(228, 30%, 0%) 90%, hsl(220, 0%, 80%));
+          light-dark(light-dark(#363636, #e0e0e0), light-dark(#363636, #e0e0e0));
         margin-bottom: 1px;
         margin-inline-start: 12px;
         padding-inline-start: 4px;
@@ -1237,7 +1146,7 @@ body {
         position: relative;
         a {
           border-radius: 4px;
-          color: color-mix(in srgb, hsl(220, 0%, 80%) 30%, #fff);
+          color: color-mix(in srgb, #cccccc 30%, #fff);
           cursor: pointer;
           display: flex;
           font-size: 16px;
@@ -1247,8 +1156,8 @@ body {
           padding: 6px 8px 6px 24px;
           &.active,
           &:hover {
-            background-color: rgba(255, 255, 255, 0.15);
-            color: color-mix(in srgb, hsl(220, 0%, 80%) 30%, #fff);
+            background-color: #ffffff26;
+            color: color-mix(in srgb, #cccccc 30%, #fff);
             font-weight: inherit;
           }
           &[data-for$="/index"] {
@@ -1275,10 +1184,16 @@ body {
   }
   /* TOC */
   .toc {
-    color: #9446f8;
+    color: light-dark(
+      light-dark(#437cf3, #437cf3),
+      light-dark(#437cf3, #437cf3)
+    );
     button.toc-header {
       h3 {
-        color: #9446f8;
+        color: light-dark(
+          light-dark(#437cf3, #437cf3),
+          light-dark(#437cf3, #437cf3)
+        );
         font-family: inherit;
         font-size: 1.424em;
         font-style: normal;
@@ -1289,13 +1204,16 @@ body {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
       }
-      color: #9446f8;
+      color: light-dark(
+        light-dark(#437cf3, #437cf3),
+        light-dark(#437cf3, #437cf3)
+      );
       color: inherit;
     }
     ul.toc-content.overflow {
       li,
       li > a {
-        color: color-mix(in srgb, hsl(220, 0%, 80%) 30%, #fff);
+        color: color-mix(in srgb, #cccccc 30%, #fff);
         font-weight: inherit;
         font-size: 16px;
       }
@@ -1306,7 +1224,10 @@ body {
   .graph,
   .toc {
     h3 {
-      color: #9446f8;
+      color: light-dark(
+        light-dark(#437cf3, #437cf3),
+        light-dark(#437cf3, #437cf3)
+      );
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1368,13 +1289,15 @@ body {
   .search {
     & > .search-button {
       -webkit-app-region: no-drag;
-      background: color-mix(in srgb, hsl(228, 30%, 0%) 40%, #000);
-      border: 1px solid
-        color-mix(in srgb, hsl(228, 30%, 0%) 80%, hsl(220, 0%, 80%));
+      background: light-dark(
+        light-dark(#262626, #f6f6f6),
+        light-dark(#262626, #f6f6f6)
+      );
+      border: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
       border-radius: 5px;
-      color: color-mix(in srgb, hsl(220, 0%, 80%) 30%, #fff);
+      color: color-mix(in srgb, #cccccc 30%, #fff);
       font-family: inherit;
-      font-size: calc(16px * 0.937);
+      font-size: 14.992px;
       height: 40px;
       outline: none;
       padding: 4px 8px;
@@ -1385,19 +1308,28 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: #000;
-        border: 0.5pt solid
-          color-mix(in srgb, hsl(228, 30%, 0%) 80%, hsl(220, 0%, 80%));
+        background-color: light-dark(
+          light-dark(#1e1e1e, #ffffff),
+          light-dark(#212121, #fcfcfc)
+        );
+        border: 0.5pt solid color-mix(in srgb, #000000 80%, #cccccc);
         border-radius: 12px;
         box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-          0px 30px 90px rgba(0, 0, 0, 0.2);
+          0px 1.8px 7.3px #00000012,
+          0px 6.3px 24.7px #0000001d,
+          0px 30px 90px #00000033;
         margin: 12vh auto;
         & > input {
-          background-color: #000;
+          background-color: light-dark(
+            light-dark(#1e1e1e, #ffffff),
+            light-dark(#212121, #fcfcfc)
+          );
           border: none;
-          border-bottom: 1px solid #000;
+          border-bottom: 1px solid
+            light-dark(
+              light-dark(#212121, #fcfcfc),
+              light-dark(#212121, #fcfcfc)
+            );
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1409,7 +1341,7 @@ body {
           background: transparent;
         }
         & > * {
-          color: color-mix(in srgb, hsl(220, 0%, 80%) 30%, #fff);
+          color: color-mix(in srgb, #cccccc 30%, #fff);
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1421,12 +1353,8 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: color-mix(
-              in srgb,
-              hsl(258, 88%, 66%) 25%,
-              transparent
-            );
-            color: color-mix(in srgb, hsl(220, 0%, 80%) 30%, #fff);
+            background-color: color-mix(in srgb, #8a5cf5 25%, transparent);
+            color: color-mix(in srgb, #cccccc 30%, #fff);
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1442,13 +1370,16 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: rgba(255, 255, 255, 0.15);
+                background-color: light-dark(
+                  light-dark(#3f3f3f, #d4d4d4),
+                  light-dark(#3f3f3f, #d4d4d4)
+                );
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: color-mix(in srgb, hsl(220, 0%, 80%) 30%, #fff);
+                color: color-mix(in srgb, #cccccc 30%, #fff);
                 &.match-tag {
-                  color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+                  color: #a68af9;
                 }
               }
             }
@@ -1509,14 +1440,16 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: #000;
-    border: 1px solid
-      color-mix(in srgb, hsl(228, 30%, 0%) 80%, hsl(220, 0%, 80%));
+    background-color: light-dark(
+      light-dark(#1e1e1e, #ffffff),
+      light-dark(#212121, #fcfcfc)
+    );
+    border: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
     border-radius: 8px;
     box-shadow:
-      0px 1px 2px rgba(0, 0, 0, 0.121),
-      0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-      0px 15px 30px rgba(0, 0, 0, 0.3);
+      0px 1px 2px #0000001f,
+      0px 3.4px 6.7px #0000002e,
+      0px 15px 30px #0000004d;
     display: flex;
     max-height: 95vh;
     position: absolute;
@@ -1527,9 +1460,11 @@ body {
     background-color: unset;
     border: unset;
     & .popover-inner {
-      border: 1px solid
-        color-mix(in srgb, hsl(228, 30%, 0%) 80%, hsl(220, 0%, 80%));
-      background-color: #000;
+      border: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
+      background-color: light-dark(
+        light-dark(#1e1e1e, #ffffff),
+        light-dark(#212121, #fcfcfc)
+      );
 
       border-radius: 8px;
     }

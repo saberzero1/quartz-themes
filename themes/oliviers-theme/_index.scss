@@ -22,7 +22,7 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --color-accent-2: hsl(calc(318 - 5), calc(97% * 1.05), calc(35% * 1.29));
+  --color-accent-2: hsl(313, 101.85%, 45.15%);
   --color-accent-hsl: 318, 97%, 35%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -36,7 +36,7 @@ html[saved-theme="dark"] {
   --color-purple: #a882ff;
   --color-red: #ef5547;
   --text-accent: #fd71d3;
-  --color-accent-2: hsl(calc(318 - 5), calc(97% * 1.05), calc(35% * 1.29));
+  --color-accent-2: hsl(313, 101.85%, 45.15%);
   --color-accent-hsl: 318, 97%, 35%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -67,7 +67,7 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --color-accent-2: hsl(calc(318 - 3), calc(97% * 1.02), calc(35% * 1.15));
+  --color-accent-2: #cc0199;
   --color-accent-hsl: 318, 97%, 35%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -80,7 +80,7 @@ html[saved-theme="light"] {
   --color-pink: #d53984;
   --color-purple: #7852ee;
   --color-red: #e93147;
-  --color-accent-2: hsl(calc(318 - 3), calc(97% * 1.02), calc(35% * 1.15));
+  --color-accent-2: #cc0199;
   --color-accent-hsl: 318, 97%, 35%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -152,10 +152,7 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --color-accent-2: light-dark(
-    hsl(calc(318 - 5), calc(97% * 1.05), calc(35% * 1.29)),
-    hsl(calc(318 - 3), calc(97% * 1.02), calc(35% * 1.15))
-  );
+  --color-accent-2: light-dark(hsl(313, 101.85%, 45.15%), #cc0199);
   --color-accent-hsl: light-dark(318, 97%, 35%, 318, 97%, 35%);
   --color-base-100: light-dark(#dadada, #222222);
   --color-base-30: light-dark(#363636, #e0e0e0);
@@ -177,7 +174,7 @@ body {
   --background-modifier-hover: #fd71d3;
   --background-primary: #0d0d0d;
   --bold-color: inherit;
-  --bold-weight: calc(600 + 200);
+  --bold-weight: 800;
   --checkbox-border-color: #2c1cbd;
   --checkbox-border-color-hover: #fd71d3;
   --checkbox-color: #2c1cbd;
@@ -185,7 +182,7 @@ body {
   --checkbox-marker-color: #0d0d0d;
   --checkbox-radius: 0.3rem;
   --checkbox-size: 0.95rem;
-  --code-background: floralwhite;
+  --code-background: #fffaf0;
   --code-comment: #9e7f02;
   --code-function: #e0de71;
   --code-important: #e9973f;
@@ -193,12 +190,12 @@ body {
   --code-normal: #2c1cbd;
   --code-property: #c8a204;
   --code-punctuation: #f2c204;
-  --code-string: silver;
+  --code-string: #c0c0c0;
   --code-tag: #9e7f02;
   --code-value: #a882ff;
   --collapse-icon-color: #9e7f02;
   --collapse-icon-color-collapsed: #2c1cbd;
-  --color-accent-2: hsl(318, 97%, calc(35% + 0%));
+  --color-accent-2: #b0037c;
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -221,9 +218,9 @@ body {
     "Source Code Pro", monospace;
   --interactive-accent-hsl: 318, 97%, 35%;
   --italic-color: inherit;
-  --link-color: hsl(258, 88%, 66%);
+  --link-color: #8a5cf5;
   --link-color-hover: ##f2c204;
-  --link-external-color: silver;
+  --link-external-color: #c0c0c0;
   --link-external-color-hover: #fd71d3;
   --link-external-filter: none;
   --link-weight: 600;
@@ -232,8 +229,8 @@ body {
   --search-icon-color: #1a1a1a;
   --tag-background: #f2c204;
   --tag-background-hover: #fd71d3;
-  --tag-border-color: hsla(318, 97%, 35%, 0.15);
-  --tag-border-color-hover: hsla(318, 97%, 35%, 0.15);
+  --tag-border-color: #b0037c26;
+  --tag-border-color-hover: #b0037c26;
   --tag-border-width: 0px;
   --tag-color: #f2c204;
   --tag-color-hover: ##f2c204;
@@ -244,10 +241,10 @@ body {
   --text-accent: #c10388;
   --text-accent-hover: ##f2c204;
   --text-faint: #9e7f02;
-  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-highlight-bg: #ffd00066;
   --text-muted: #f2c204;
   --text-normal: #f2c204;
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: #0d0d0d;
   caret-color: #fd71d3;
@@ -296,7 +293,7 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --color-accent-2: hsl(calc(318 - 5), calc(97% * 1.05), calc(35% * 1.29));
+  --color-accent-2: hsl(313, 101.85%, 45.15%);
   --color-accent-hsl: 318, 97%, 35%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -310,7 +307,7 @@ html[saved-theme="dark"] {
   --color-purple: #a882ff;
   --color-red: #ef5547;
   --text-accent: #fd71d3;
-  --color-accent-2: hsl(calc(318 - 5), calc(97% * 1.05), calc(35% * 1.29));
+  --color-accent-2: hsl(313, 101.85%, 45.15%);
   --color-accent-hsl: 318, 97%, 35%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -342,7 +339,7 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --color-accent-2: hsl(calc(318 - 3), calc(97% * 1.02), calc(35% * 1.15));
+  --color-accent-2: #cc0199;
   --color-accent-hsl: 318, 97%, 35%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -355,7 +352,7 @@ html[saved-theme="light"] {
   --color-pink: #d53984;
   --color-purple: #7852ee;
   --color-red: #e93147;
-  --color-accent-2: hsl(calc(318 - 3), calc(97% * 1.02), calc(35% * 1.15));
+  --color-accent-2: #cc0199;
   --color-accent-hsl: 318, 97%, 35%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -374,8 +371,8 @@ html[saved-theme="light"] {
 :root,
 html {
   .callout {
-    background-color: rgba(158, 158, 158, 0.1);
-    border-color: rgba(158, 158, 158, 0.25);
+    background-color: #9e9e9e1a;
+    border-color: #9e9e9e40;
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
@@ -383,94 +380,94 @@ html {
     mix-blend-mode: normal;
     overflow: hidden;
     padding: 12px 24px 12px 12px;
-    background-color: rgba(158, 158, 158, 0.1);
+    background-color: #9e9e9e1a;
     overflow-x: auto;
     overflow-y: hidden;
     &[data-callout] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="abstract"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="summary"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="tldr"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="info"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="todo"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="important"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="tip"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="hint"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="success"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="check"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="done"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="question"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="help"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="faq"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="warning"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="caution"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="attention"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="failure"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="fail"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="missing"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="danger"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="error"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="bug"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="example"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="quote"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
     &[data-callout="cite"] {
-      background-color: rgba(158, 158, 158, 0.1);
+      background-color: #9e9e9e1a;
     }
   }
   .callout-title {
     align-items: flex-start;
-    color: rgb(158, 158, 158);
+    color: #9e9e9e;
     display: flex;
     font-size: inherit;
     gap: 4px;
@@ -656,7 +653,7 @@ body {
   }
   /* HEADINGS */
   h1 {
-    color: hsl(59, 81%, 47%);
+    color: #d9d617;
     font-family: inherit;
     font-size: 3.052em;
     font-style: normal;
@@ -671,7 +668,7 @@ body {
     --link-weight: 700;
   }
   h2 {
-    color: hsl(260, 100%, 79%);
+    color: #b894ff;
     font-family: inherit;
     font-size: 2.441em;
     font-style: normal;
@@ -686,7 +683,7 @@ body {
     --link-weight: 600;
   }
   h3 {
-    color: hsl(194, 69%, 54%);
+    color: #39b5db;
     font-family: inherit;
     font-size: 1.953em;
     font-style: italic;
@@ -701,7 +698,7 @@ body {
     --link-weight: 600;
   }
   h4 {
-    color: hsl(151, 54%, 64%);
+    color: #72d5a5;
     font-family: inherit;
     font-size: 1.563em;
     font-style: italic;
@@ -716,7 +713,7 @@ body {
     --link-weight: 600;
   }
   h5 {
-    color: hsl(224, 37%, 80%);
+    color: #b9c3df;
     font-family: inherit;
     font-size: 1.25em;
     font-style: italic;
@@ -731,7 +728,7 @@ body {
     --link-weight: 600;
   }
   h6 {
-    color: hsl(223, 18%, 68%);
+    color: #9fa7bc;
     font-family: inherit;
     font-size: 1em;
     font-style: italic;
@@ -844,7 +841,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-size: calc(1.3em * 0.8);
+    font-size: 1.04em;
     height: auto;
     inset-inline-end: 0;
     margin: 6px;
@@ -870,7 +867,7 @@ body {
   /* BACKLINKS */
   .backlinks {
     h3 {
-      color: hsl(194, 69%, 54%);
+      color: #39b5db;
       font-family: inherit;
       font-size: 1.953em;
       font-style: italic;
@@ -896,7 +893,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: hsl(260, 100%, 79%);
+      color: #b894ff;
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -985,10 +982,10 @@ body {
   }
   /* TOC */
   .toc {
-    color: hsl(194, 69%, 54%);
+    color: #39b5db;
     button.toc-header {
       h3 {
-        color: hsl(194, 69%, 54%);
+        color: #39b5db;
         font-family: inherit;
         font-size: 1.953em;
         font-style: italic;
@@ -999,7 +996,7 @@ body {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
       }
-      color: hsl(194, 69%, 54%);
+      color: #39b5db;
       color: inherit;
     }
     ul.toc-content.overflow {
@@ -1016,7 +1013,7 @@ body {
   .graph,
   .toc {
     h3 {
-      color: hsl(194, 69%, 54%);
+      color: #39b5db;
       font-family: inherit;
       font-size: 1.953em;
       font-style: italic;
@@ -1083,7 +1080,7 @@ body {
       border-radius: 5px;
       color: #2c1cbd;
       font-family: inherit;
-      font-size: calc(1.3em * 0.937);
+      font-size: 1.2181em;
       height: 40px;
       outline: none;
       padding: 4px 8px;
@@ -1098,9 +1095,9 @@ body {
         border: 0.5pt solid #d9af04;
         border-radius: 12px;
         box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-          0px 30px 90px rgba(0, 0, 0, 0.2);
+          0px 1.8px 7.3px #00000012,
+          0px 6.3px 24.7px #0000001d,
+          0px 30px 90px #00000033;
         margin: 12vh auto;
         & > input {
           background-color: #0d0d0d;
@@ -1146,7 +1143,7 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: rgba(255, 255, 255, 0.15);
+                background-color: #ffffff26;
               }
               & > ul > li > p {
                 background-color: transparent;
@@ -1217,9 +1214,9 @@ body {
     border: 1px solid #f2b630;
     border-radius: 8px;
     box-shadow:
-      0px 1px 2px rgba(0, 0, 0, 0.121),
-      0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-      0px 15px 30px rgba(0, 0, 0, 0.3);
+      0px 1px 2px #0000001f,
+      0px 3.4px 6.7px #0000002e,
+      0px 15px 30px #0000004d;
     display: flex;
     max-height: 70vh;
     position: absolute;

@@ -22,25 +22,17 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --background-modifier-border: color-mix(
-    in srgb,
-    hsl(40, 2%, 50%),
-    black calc(100% * 0.25)
-  );
+  --background-modifier-border: color-mix(in srgb, hsl(40, 2%, 50%), black 25%);
   --background-modifier-border-focus: color-mix(
     in srgb,
     hsl(40, 2%, 50%),
-    black calc(100% * 0.25)
+    black 25%
   );
   --background-modifier-hover: hsl(40, 2%, 50%);
-  --background-primary: color-mix(
-    in srgb,
-    hsl(40, 2%, 50%),
-    black calc(100% * 0.95)
-  );
+  --background-primary: color-mix(in srgb, hsl(40, 2%, 50%), black 95%);
   --collapse-icon-color: hsl(40, 2%, 50%);
   --collapse-icon-color-collapsed: hsl(40, 2%, 50%);
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --color-accent-2: hsl(253, 92.4%, 85.14%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -56,29 +48,21 @@ html[saved-theme="dark"] {
   --icon-color: hsl(40, 2%, 50%);
   --search-icon-color: hsl(40, 2%, 50%);
   --tag-background: hsl(258, 88%, 66%, 0.2);
-  --tag-color: hsl(258, calc(88% * 1.2), calc(66%));
-  --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --text-faint: color-mix(in srgb, hsl(40, 2%, 50%), white calc(100% * 0.25));
-  --text-normal: color-mix(in srgb, hsl(40, 2%, 50%), white calc(100% * 0.6));
-  --background-modifier-border: color-mix(
-    in srgb,
-    hsl(40, 2%, 50%),
-    black calc(100% * 0.25)
-  );
+  --tag-color: hsl(258, 105.6%, 66%);
+  --text-accent: hsl(255, 89.76%, 75.9%);
+  --text-faint: color-mix(in srgb, hsl(40, 2%, 50%), white 25%);
+  --text-normal: color-mix(in srgb, hsl(40, 2%, 50%), white 60%);
+  --background-modifier-border: color-mix(in srgb, hsl(40, 2%, 50%), black 25%);
   --background-modifier-border-focus: color-mix(
     in srgb,
     hsl(40, 2%, 50%),
-    black calc(100% * 0.25)
+    black 25%
   );
   --background-modifier-hover: hsl(40, 2%, 50%);
-  --background-primary: color-mix(
-    in srgb,
-    hsl(40, 2%, 50%),
-    black calc(100% * 0.95)
-  );
+  --background-primary: color-mix(in srgb, hsl(40, 2%, 50%), black 95%);
   --collapse-icon-color: hsl(40, 2%, 50%);
   --collapse-icon-color-collapsed: hsl(40, 2%, 50%);
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --color-accent-2: hsl(253, 92.4%, 85.14%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -94,10 +78,10 @@ html[saved-theme="dark"] {
   --icon-color: hsl(40, 2%, 50%);
   --search-icon-color: hsl(40, 2%, 50%);
   --tag-background: hsl(258, 88%, 66%, 0.2);
-  --tag-color: hsl(258, calc(88% * 1.2), calc(66%));
-  --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --text-faint: color-mix(in srgb, hsl(40, 2%, 50%), white calc(100% * 0.25));
-  --text-normal: color-mix(in srgb, hsl(40, 2%, 50%), white calc(100% * 0.6));
+  --tag-color: hsl(258, 105.6%, 66%);
+  --text-accent: hsl(255, 89.76%, 75.9%);
+  --text-faint: color-mix(in srgb, hsl(40, 2%, 50%), white 25%);
+  --text-normal: color-mix(in srgb, hsl(40, 2%, 50%), white 60%);
 }
 
 :root[saved-theme="light"],
@@ -115,17 +99,13 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --background-modifier-border: color-mix(
-    in srgb,
-    hsl(40, 2%, 50%),
-    white calc(100% * 0.25)
-  );
+  --background-modifier-border: color-mix(in srgb, hsl(40, 2%, 50%), white 25%);
   --background-modifier-border-focus: hsl(40, 2%, 50%);
   --background-modifier-hover: hsl(40, 2%, 50%);
   --background-primary: white;
   --collapse-icon-color: hsl(40, 2%, 50%);
   --collapse-icon-color-collapsed: hsl(40, 2%, 50%);
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -141,20 +121,16 @@ html[saved-theme="light"] {
   --icon-color: hsl(40, 2%, 50%);
   --search-icon-color: hsl(40, 2%, 50%);
   --tag-background: hsl(258, 88%, 66%, 0.15);
-  --tag-color: hsl(258, calc(88%), calc(66% * 0.9));
-  --text-faint: color-mix(in srgb, hsl(40, 2%, 50%), black calc(100% * 0.7));
-  --text-normal: color-mix(in srgb, hsl(40, 2%, 50%), black calc(100% * 0.9));
-  --background-modifier-border: color-mix(
-    in srgb,
-    hsl(40, 2%, 50%),
-    white calc(100% * 0.25)
-  );
+  --tag-color: hsl(258, 88%, 59.4%);
+  --text-faint: color-mix(in srgb, hsl(40, 2%, 50%), black 70%);
+  --text-normal: color-mix(in srgb, hsl(40, 2%, 50%), black 90%);
+  --background-modifier-border: color-mix(in srgb, hsl(40, 2%, 50%), white 25%);
   --background-modifier-border-focus: hsl(40, 2%, 50%);
   --background-modifier-hover: hsl(40, 2%, 50%);
   --background-primary: white;
   --collapse-icon-color: hsl(40, 2%, 50%);
   --collapse-icon-color-collapsed: hsl(40, 2%, 50%);
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -170,9 +146,9 @@ html[saved-theme="light"] {
   --icon-color: hsl(40, 2%, 50%);
   --search-icon-color: hsl(40, 2%, 50%);
   --tag-background: hsl(258, 88%, 66%, 0.15);
-  --tag-color: hsl(258, calc(88%), calc(66% * 0.9));
-  --text-faint: color-mix(in srgb, hsl(40, 2%, 50%), black calc(100% * 0.7));
-  --text-normal: color-mix(in srgb, hsl(40, 2%, 50%), black calc(100% * 0.9));
+  --tag-color: hsl(258, 88%, 59.4%);
+  --text-faint: color-mix(in srgb, hsl(40, 2%, 50%), black 70%);
+  --text-normal: color-mix(in srgb, hsl(40, 2%, 50%), black 90%);
 }
 
 /* cyrillic-ext */
@@ -417,26 +393,22 @@ html[saved-theme="light"] {
 
 :root {
   --background-modifier-border: light-dark(
-    color-mix(in srgb, hsl(40, 2%, 50%), black calc(100% * 0.25)),
-    color-mix(in srgb, hsl(40, 2%, 50%), white calc(100% * 0.25))
+    color-mix(in srgb, hsl(40, 2%, 50%), black 25%),
+    color-mix(in srgb, hsl(40, 2%, 50%), white 25%)
   );
   --background-modifier-border-focus: light-dark(
-    color-mix(in srgb, hsl(40, 2%, 50%), black calc(100% * 0.25)),
+    color-mix(in srgb, hsl(40, 2%, 50%), black 25%),
     hsl(40, 2%, 50%)
   );
   --background-modifier-hover: light-dark(hsl(40, 2%, 50%), hsl(40, 2%, 50%));
-  --background-primary: light-dark(
-    color-mix(in srgb, hsl(40, 2%, 50%), black calc(100% * 0.95)),
-    white
-  );
   --collapse-icon-color: light-dark(hsl(40, 2%, 50%), hsl(40, 2%, 50%));
   --collapse-icon-color-collapsed: light-dark(
     hsl(40, 2%, 50%),
     hsl(40, 2%, 50%)
   );
   --color-accent-2: light-dark(
-    hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29)),
-    hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15))
+    hsl(253, 92.4%, 85.14%),
+    hsl(255, 89.76%, 75.9%)
   );
   --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
   --color-base-100: light-dark(#dadada, #222222);
@@ -456,17 +428,14 @@ html[saved-theme="light"] {
     hsl(258, 88%, 66%, 0.2),
     hsl(258, 88%, 66%, 0.15)
   );
-  --tag-color: light-dark(
-    hsl(258, calc(88% * 1.2), calc(66%)),
-    hsl(258, calc(88%), calc(66% * 0.9))
-  );
+  --tag-color: light-dark(hsl(258, 105.6%, 66%), hsl(258, 88%, 59.4%));
   --text-faint: light-dark(
-    color-mix(in srgb, hsl(40, 2%, 50%), white calc(100% * 0.25)),
-    color-mix(in srgb, hsl(40, 2%, 50%), black calc(100% * 0.7))
+    color-mix(in srgb, hsl(40, 2%, 50%), white 25%),
+    color-mix(in srgb, hsl(40, 2%, 50%), black 70%)
   );
   --text-normal: light-dark(
-    color-mix(in srgb, hsl(40, 2%, 50%), white calc(100% * 0.6)),
-    color-mix(in srgb, hsl(40, 2%, 50%), black calc(100% * 0.9))
+    color-mix(in srgb, hsl(40, 2%, 50%), white 60%),
+    color-mix(in srgb, hsl(40, 2%, 50%), black 90%)
   );
 }
 body {
@@ -476,7 +445,7 @@ body {
   --background-modifier-hover: rgba(255, 255, 255, 0.067);
   --background-primary: #000;
   --bold-color: inherit;
-  --bold-weight: calc(500 + 200);
+  --bold-weight: 700;
   --checkbox-border-color: hsl(40, 2%, 50%);
   --checkbox-border-color-hover: hsl(40, 2%, 50%);
   --checkbox-color: hsl(40, 2%, 50%);
@@ -495,22 +464,14 @@ body {
   --code-function: #e0de71;
   --code-important: #e9973f;
   --code-keyword: #fa99cd;
-  --code-normal: color-mix(in srgb, hsl(40, 2%, 50%), white calc(100% * 0.6));
+  --code-normal: color-mix(in srgb, hsl(40, 2%, 50%), white 60%);
   --code-property: #53dfdd;
   --code-punctuation: currentColor;
   --code-string: #44cf6e;
   --code-tag: #fb464c;
   --code-value: #a882ff;
-  --collapse-icon-color: color-mix(
-    in srgb,
-    hsl(40, 2%, 50%),
-    white calc(100% * 0.25)
-  );
-  --collapse-icon-color-collapsed: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  );
+  --collapse-icon-color: color-mix(in srgb, hsl(40, 2%, 50%), white 25%);
+  --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
   --color-blue: hsl(from hsl(40, 2%, 50%) 219 s l);
   --color-cyan: hsl(from hsl(40, 2%, 50%) 179 s l);
   --color-green: hsl(from hsl(40, 2%, 50%) 124 s l);
@@ -527,29 +488,21 @@ body {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Arial";
   --graph-line: #3f3f3f;
   --graph-node-tag: #44cf6e;
-  --graph-node-unresolved: color-mix(
-    in srgb,
-    hsl(40, 2%, 50%),
-    white calc(100% * 0.25)
-  );
+  --graph-node-unresolved: color-mix(in srgb, hsl(40, 2%, 50%), white 25%);
   --h1-color: inherit;
   --h1-font: inherit;
   --h3-line-height: 1.5;
-  --hr-color: color-mix(in srgb, hsl(40, 2%, 50%), black calc(100% * 0.25));
+  --hr-color: color-mix(in srgb, hsl(40, 2%, 50%), black 25%);
   --hr-thickness: 2px;
   --icon-color: currentColor;
   --inline-title-color: inherit;
   --inline-title-font: inherit;
   --interactive-accent-hsl: 258, 88%, 66%;
   --italic-color: inherit;
-  --link-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --link-color-hover: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
-  --link-external-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --link-external-color-hover: hsl(
-    calc(258 - 5),
-    calc(88% * 1.05),
-    calc(66% * 1.29)
-  );
+  --link-color: hsl(255, 89.76%, 75.9%);
+  --link-color-hover: hsl(253, 92.4%, 85.14%);
+  --link-external-color: hsl(255, 89.76%, 75.9%);
+  --link-external-color-hover: hsl(253, 92.4%, 85.14%);
   --link-external-filter: none;
   --link-weight: 500;
   --p-spacing: 1em;
@@ -559,19 +512,19 @@ body {
   --tag-border-color: hsla(258, 88%, 66%, 0.15);
   --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
   --tag-border-width: 0px;
-  --tag-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --tag-color-hover: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --tag-color: hsl(255, 89.76%, 75.9%);
+  --tag-color-hover: hsl(255, 89.76%, 75.9%);
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-radius: 2em;
   --tag-weight: inherit;
   --text-accent: hsl(258, 88%, 66%);
-  --text-accent-hover: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --text-accent-hover: hsl(253, 92.4%, 85.14%);
   --text-faint: #666666;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-muted: color-mix(
     in srgb,
-    color-mix(in srgb, hsl(40, 2%, 50%), white calc(100% * 0.6)),
+    color-mix(in srgb, hsl(40, 2%, 50%), white 60%),
     transparent 30%
   );
   --text-normal: #dadada;
@@ -579,7 +532,7 @@ body {
   -webkit-user-select: none;
   background-color: black;
   caret-color: hsl(258, 150%, 80%);
-  color: color-mix(in srgb, hsl(40, 2%, 50%), white calc(100% * 0.6));
+  color: color-mix(in srgb, hsl(40, 2%, 50%), white 60%);
   contain: initial;
   font-family:
     "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
@@ -616,25 +569,17 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --background-modifier-border: color-mix(
-    in srgb,
-    hsl(40, 2%, 50%),
-    black calc(100% * 0.25)
-  );
+  --background-modifier-border: color-mix(in srgb, hsl(40, 2%, 50%), black 25%);
   --background-modifier-border-focus: color-mix(
     in srgb,
     hsl(40, 2%, 50%),
-    black calc(100% * 0.25)
+    black 25%
   );
   --background-modifier-hover: hsl(40, 2%, 50%);
-  --background-primary: color-mix(
-    in srgb,
-    hsl(40, 2%, 50%),
-    black calc(100% * 0.95)
-  );
+  --background-primary: color-mix(in srgb, hsl(40, 2%, 50%), black 95%);
   --collapse-icon-color: hsl(40, 2%, 50%);
   --collapse-icon-color-collapsed: hsl(40, 2%, 50%);
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --color-accent-2: hsl(253, 92.4%, 85.14%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -650,29 +595,21 @@ html[saved-theme="dark"] {
   --icon-color: hsl(40, 2%, 50%);
   --search-icon-color: hsl(40, 2%, 50%);
   --tag-background: hsl(258, 88%, 66%, 0.2);
-  --tag-color: hsl(258, calc(88% * 1.2), calc(66%));
-  --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --text-faint: color-mix(in srgb, hsl(40, 2%, 50%), white calc(100% * 0.25));
-  --text-normal: color-mix(in srgb, hsl(40, 2%, 50%), white calc(100% * 0.6));
-  --background-modifier-border: color-mix(
-    in srgb,
-    hsl(40, 2%, 50%),
-    black calc(100% * 0.25)
-  );
+  --tag-color: hsl(258, 105.6%, 66%);
+  --text-accent: hsl(255, 89.76%, 75.9%);
+  --text-faint: color-mix(in srgb, hsl(40, 2%, 50%), white 25%);
+  --text-normal: color-mix(in srgb, hsl(40, 2%, 50%), white 60%);
+  --background-modifier-border: color-mix(in srgb, hsl(40, 2%, 50%), black 25%);
   --background-modifier-border-focus: color-mix(
     in srgb,
     hsl(40, 2%, 50%),
-    black calc(100% * 0.25)
+    black 25%
   );
   --background-modifier-hover: hsl(40, 2%, 50%);
-  --background-primary: color-mix(
-    in srgb,
-    hsl(40, 2%, 50%),
-    black calc(100% * 0.95)
-  );
+  --background-primary: color-mix(in srgb, hsl(40, 2%, 50%), black 95%);
   --collapse-icon-color: hsl(40, 2%, 50%);
   --collapse-icon-color-collapsed: hsl(40, 2%, 50%);
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --color-accent-2: hsl(253, 92.4%, 85.14%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -688,10 +625,10 @@ html[saved-theme="dark"] {
   --icon-color: hsl(40, 2%, 50%);
   --search-icon-color: hsl(40, 2%, 50%);
   --tag-background: hsl(258, 88%, 66%, 0.2);
-  --tag-color: hsl(258, calc(88% * 1.2), calc(66%));
-  --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --text-faint: color-mix(in srgb, hsl(40, 2%, 50%), white calc(100% * 0.25));
-  --text-normal: color-mix(in srgb, hsl(40, 2%, 50%), white calc(100% * 0.6));
+  --tag-color: hsl(258, 105.6%, 66%);
+  --text-accent: hsl(255, 89.76%, 75.9%);
+  --text-faint: color-mix(in srgb, hsl(40, 2%, 50%), white 25%);
+  --text-normal: color-mix(in srgb, hsl(40, 2%, 50%), white 60%);
 }
 /* END DARK */
 /* START LIGHT */
@@ -710,17 +647,13 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --background-modifier-border: color-mix(
-    in srgb,
-    hsl(40, 2%, 50%),
-    white calc(100% * 0.25)
-  );
+  --background-modifier-border: color-mix(in srgb, hsl(40, 2%, 50%), white 25%);
   --background-modifier-border-focus: hsl(40, 2%, 50%);
   --background-modifier-hover: hsl(40, 2%, 50%);
   --background-primary: white;
   --collapse-icon-color: hsl(40, 2%, 50%);
   --collapse-icon-color-collapsed: hsl(40, 2%, 50%);
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -736,20 +669,16 @@ html[saved-theme="light"] {
   --icon-color: hsl(40, 2%, 50%);
   --search-icon-color: hsl(40, 2%, 50%);
   --tag-background: hsl(258, 88%, 66%, 0.15);
-  --tag-color: hsl(258, calc(88%), calc(66% * 0.9));
-  --text-faint: color-mix(in srgb, hsl(40, 2%, 50%), black calc(100% * 0.7));
-  --text-normal: color-mix(in srgb, hsl(40, 2%, 50%), black calc(100% * 0.9));
-  --background-modifier-border: color-mix(
-    in srgb,
-    hsl(40, 2%, 50%),
-    white calc(100% * 0.25)
-  );
+  --tag-color: hsl(258, 88%, 59.4%);
+  --text-faint: color-mix(in srgb, hsl(40, 2%, 50%), black 70%);
+  --text-normal: color-mix(in srgb, hsl(40, 2%, 50%), black 90%);
+  --background-modifier-border: color-mix(in srgb, hsl(40, 2%, 50%), white 25%);
   --background-modifier-border-focus: hsl(40, 2%, 50%);
   --background-modifier-hover: hsl(40, 2%, 50%);
   --background-primary: white;
   --collapse-icon-color: hsl(40, 2%, 50%);
   --collapse-icon-color-collapsed: hsl(40, 2%, 50%);
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -765,9 +694,9 @@ html[saved-theme="light"] {
   --icon-color: hsl(40, 2%, 50%);
   --search-icon-color: hsl(40, 2%, 50%);
   --tag-background: hsl(258, 88%, 66%, 0.15);
-  --tag-color: hsl(258, calc(88%), calc(66% * 0.9));
-  --text-faint: color-mix(in srgb, hsl(40, 2%, 50%), black calc(100% * 0.7));
-  --text-normal: color-mix(in srgb, hsl(40, 2%, 50%), black calc(100% * 0.9));
+  --tag-color: hsl(258, 88%, 59.4%);
+  --text-faint: color-mix(in srgb, hsl(40, 2%, 50%), black 70%);
+  --text-normal: color-mix(in srgb, hsl(40, 2%, 50%), black 90%);
 }
 /* END LIGHT */
 /* CALLOUTS */
@@ -1062,10 +991,7 @@ body {
   h1 {
     color: inherit;
     font-family: inherit;
-    font-size: calc(
-      1.618 *
-        calc(1.618 * calc(1.618 * calc(1.618 * calc(1.618 * calc(0.8 * 16px)))))
-    );
+    font-size: 141.93927px;
     font-style: normal;
     font-variant: normal;
     font-weight: 500;
@@ -1080,9 +1006,7 @@ body {
   h2 {
     color: inherit;
     font-family: inherit;
-    font-size: calc(
-      1.618 * calc(1.618 * calc(1.618 * calc(1.618 * calc(0.8 * 16px))))
-    );
+    font-size: 87.72513px;
     font-style: normal;
     font-variant: normal;
     font-weight: 500;
@@ -1097,7 +1021,7 @@ body {
   h3 {
     color: inherit;
     font-family: inherit;
-    font-size: calc(1.618 * calc(1.618 * calc(1.618 * calc(0.8 * 16px))));
+    font-size: 54.21825px;
     font-style: normal;
     font-variant: normal;
     font-weight: 500;
@@ -1112,7 +1036,7 @@ body {
   h4 {
     color: inherit;
     font-family: inherit;
-    font-size: calc(1.618 * calc(1.618 * calc(0.8 * 16px)));
+    font-size: 33.50943px;
     font-style: normal;
     font-variant: normal;
     font-weight: 500;
@@ -1127,7 +1051,7 @@ body {
   h5 {
     color: inherit;
     font-family: inherit;
-    font-size: calc(1.618 * calc(0.8 * 16px));
+    font-size: 20.7104px;
     font-style: normal;
     font-variant: normal;
     font-weight: 500;
@@ -1142,7 +1066,7 @@ body {
   h6 {
     color: inherit;
     font-family: inherit;
-    font-size: calc(0.8 * 16px);
+    font-size: 12.8px;
     font-style: normal;
     font-variant: normal;
     font-weight: 500;
@@ -1160,8 +1084,7 @@ body {
       hsl(from black h s l / 0.06),
       hsl(from white h s l / 0.06)
     );
-    border: 0px solid
-      color-mix(in srgb, hsl(40, 2%, 50%), black calc(100% * 0.25));
+    border: 0px solid color-mix(in srgb, hsl(40, 2%, 50%), black 25%);
     border-radius: 0.25rem;
     min-height: 38px;
     overflow-x: auto;
@@ -1181,10 +1104,9 @@ body {
       hsl(from black h s l / 0.06),
       hsl(from white h s l / 0.06)
     );
-    border: 0px solid
-      color-mix(in srgb, hsl(40, 2%, 50%), black calc(100% * 0.25));
+    border: 0px solid color-mix(in srgb, hsl(40, 2%, 50%), black 25%);
     border-radius: 0.25rem;
-    color: color-mix(in srgb, hsl(40, 2%, 50%), white calc(100% * 0.6));
+    color: color-mix(in srgb, hsl(40, 2%, 50%), white 60%);
     font-family:
       "??", ui-monospace, Menlo, SFMono-Regular, Consolas, "Roboto Mono",
       "Source Code Pro", monospace, ui-monospace, Menlo, SFMono-Regular,
@@ -1251,7 +1173,7 @@ body {
       "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "??", system-ui,
       "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: calc(16px * 0.8);
+    font-size: 12.8px;
     height: auto;
     inset-inline-end: 0;
     margin: 6px;
@@ -1267,18 +1189,18 @@ body {
   }
   /* METADATA */
   .content-meta {
-    color: color-mix(in srgb, hsl(40, 2%, 50%), white calc(100% * 0.6));
+    color: color-mix(in srgb, hsl(40, 2%, 50%), white 60%);
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: color-mix(in srgb, hsl(40, 2%, 50%), white calc(100% * 0.25));
+    color: color-mix(in srgb, hsl(40, 2%, 50%), white 25%);
   }
   /* BACKLINKS */
   .backlinks {
     h3 {
       color: inherit;
       font-family: inherit;
-      font-size: calc(1.618 * calc(1.618 * calc(1.618 * calc(0.8 * 16px))));
+      font-size: 54.21825px;
       font-style: normal;
       font-variant: normal;
       font-weight: 500;
@@ -1289,8 +1211,8 @@ body {
     }
     ul li {
       color: light-dark(
-        color-mix(in srgb, hsl(40, 2%, 50%), black calc(100% * 0.7)),
-        color-mix(in srgb, hsl(40, 2%, 50%), white calc(100% * 0.6))
+        color-mix(in srgb, hsl(40, 2%, 50%), black 70%),
+        color-mix(in srgb, hsl(40, 2%, 50%), white 60%)
       );
       font-weight: 500;
     }
@@ -1357,7 +1279,7 @@ body {
         position: relative;
         a {
           border-radius: 0.25rem;
-          color: color-mix(in srgb, hsl(40, 2%, 50%), white calc(100% * 0.6));
+          color: color-mix(in srgb, hsl(40, 2%, 50%), white 60%);
           cursor: pointer;
           display: flex;
           font-size: 16px;
@@ -1369,7 +1291,7 @@ body {
           &.active,
           &:hover {
             background-color: hsl(40, 2%, 50%);
-            color: color-mix(in srgb, hsl(40, 2%, 50%), black calc(100% * 0.8));
+            color: color-mix(in srgb, hsl(40, 2%, 50%), black 80%);
             font-weight: inherit;
           }
           &[data-for$="/index"] {
@@ -1401,7 +1323,7 @@ body {
       h3 {
         color: inherit;
         font-family: inherit;
-        font-size: calc(1.618 * calc(1.618 * calc(1.618 * calc(0.8 * 16px))));
+        font-size: 54.21825px;
         font-style: normal;
         font-variant: normal;
         font-weight: 500;
@@ -1416,7 +1338,7 @@ body {
     ul.toc-content.overflow {
       li,
       li > a {
-        color: color-mix(in srgb, hsl(40, 2%, 50%), white calc(100% * 0.6));
+        color: color-mix(in srgb, hsl(40, 2%, 50%), white 60%);
         font-weight: inherit;
         font-size: 16px;
       }
@@ -1429,7 +1351,7 @@ body {
     h3 {
       color: inherit;
       font-family: inherit;
-      font-size: calc(1.618 * calc(1.618 * calc(1.618 * calc(0.8 * 16px))));
+      font-size: 54.21825px;
       font-style: normal;
       font-variant: normal;
       font-weight: 500;
@@ -1493,9 +1415,9 @@ body {
       border: none;
       border-radius: 5px;
       box-shadow: 0 0 0 1px hsl(40, 2%, 50%);
-      color: color-mix(in srgb, hsl(40, 2%, 50%), white calc(100% * 0.6));
+      color: color-mix(in srgb, hsl(40, 2%, 50%), white 60%);
       font-family: inherit;
-      font-size: calc(16px * 0.937);
+      font-size: 14.992px;
       height: 30px;
       outline: none;
       padding: 4px 8px;
@@ -1506,11 +1428,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: color-mix(
-          in srgb,
-          hsl(40, 2%, 50%),
-          black calc(100% * 0.8)
-        );
+        background-color: color-mix(in srgb, hsl(40, 2%, 50%), black 80%);
         border: 0 solid transparent;
         border-radius: 0.75rem;
         box-shadow:
@@ -1522,7 +1440,7 @@ body {
           background-color: black;
           border: none;
           border-bottom: 1px solid
-            color-mix(in srgb, hsl(40, 2%, 50%), black calc(100% * 0.7));
+            color-mix(in srgb, hsl(40, 2%, 50%), black 70%);
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1534,7 +1452,7 @@ body {
           background: transparent;
         }
         & > * {
-          color: color-mix(in srgb, hsl(40, 2%, 50%), white calc(100% * 0.6));
+          color: color-mix(in srgb, hsl(40, 2%, 50%), white 60%);
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1547,7 +1465,7 @@ body {
           & .highlight {
             font-weight: bold;
             background-color: rgba(255, 208, 0, 0.4);
-            color: color-mix(in srgb, hsl(40, 2%, 50%), white calc(100% * 0.6));
+            color: color-mix(in srgb, hsl(40, 2%, 50%), white 60%);
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1567,13 +1485,9 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: color-mix(
-                  in srgb,
-                  hsl(40, 2%, 50%),
-                  white calc(100% * 0.6)
-                );
+                color: color-mix(in srgb, hsl(40, 2%, 50%), white 60%);
                 &.match-tag {
-                  color: hsl(258, calc(88% * 1.2), calc(66%));
+                  color: hsl(258, 105.6%, 66%);
                 }
               }
             }

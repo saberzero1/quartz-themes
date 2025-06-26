@@ -26,7 +26,7 @@ html[saved-theme="dark"] {
   --background-modifier-border-hover: oklch(35.5% 0.029 279.29);
   --checkbox-border-color: oklch(48.5% 0.039 279.29);
   --checkbox-color: oklch(74.5% 0.164 161.65);
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --color-accent-2: hsl(253, 92.4%, 85.14%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -40,11 +40,11 @@ html[saved-theme="dark"] {
   --color-purple: #a882ff;
   --color-red: #fb464c;
   --h1-color: oklch(61.5% 0.17 288);
-  --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --text-accent: hsl(255, 89.76%, 75.9%);
   --background-modifier-border-hover: oklch(35.5% 0.029 279.29);
   --checkbox-border-color: oklch(48.5% 0.039 279.29);
   --checkbox-color: oklch(74.5% 0.164 161.65);
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --color-accent-2: hsl(253, 92.4%, 85.14%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -58,7 +58,7 @@ html[saved-theme="dark"] {
   --color-purple: #a882ff;
   --color-red: #fb464c;
   --h1-color: oklch(61.5% 0.17 288);
-  --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --text-accent: hsl(255, 89.76%, 75.9%);
 }
 
 :root[saved-theme="light"],
@@ -77,7 +77,7 @@ html[saved-theme="light"] {
     color: var(--shiki-light);
   }
   --checkbox-color: oklch(48.5% 0.106 161.65);
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -92,7 +92,7 @@ html[saved-theme="light"] {
   --color-red: #e93147;
   --h1-color: oklch(61.5% 0.17 288);
   --checkbox-color: oklch(48.5% 0.106 161.65);
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -154,8 +154,8 @@ html[saved-theme="light"] {
     oklch(48.5% 0.106 161.65)
   );
   --color-accent-2: light-dark(
-    hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29)),
-    hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15))
+    hsl(253, 92.4%, 85.14%),
+    hsl(255, 89.76%, 75.9%)
   );
   --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
   --color-base-100: light-dark(#dadada, #222222);
@@ -178,7 +178,7 @@ body {
   --background-modifier-hover: rgba(255, 255, 255, 0.067);
   --background-primary: oklch(13.5% 0.01 279.29);
   --bold-color: inherit;
-  --bold-weight: calc(650 + 300);
+  --bold-weight: 950;
   --checkbox-border-color: oklch(74.5% 0.018 279.29);
   --checkbox-border-color-hover: oklch(61.5% 0.028 279.29);
   --checkbox-color: hsl(258, 88%, 66%);
@@ -198,11 +198,7 @@ body {
   --code-tag: #fb464c;
   --code-value: #a882ff;
   --collapse-icon-color: oklch(74.5% 0.018 279.29);
-  --collapse-icon-color-collapsed: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  );
+  --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -222,14 +218,10 @@ body {
   --inline-title-font: "Bricolage Grotesque";
   --interactive-accent-hsl: 258, 88%, 66%;
   --italic-color: inherit;
-  --link-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --link-color-hover: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
-  --link-external-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --link-external-color-hover: hsl(
-    calc(258 - 5),
-    calc(88% * 1.05),
-    calc(66% * 1.29)
-  );
+  --link-color: hsl(255, 89.76%, 75.9%);
+  --link-color-hover: hsl(253, 92.4%, 85.14%);
+  --link-external-color: hsl(255, 89.76%, 75.9%);
+  --link-external-color-hover: hsl(253, 92.4%, 85.14%);
   --link-external-filter: none;
   --link-weight: 650;
   --p-spacing: 1rem;
@@ -240,13 +232,13 @@ body {
   --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
   --tag-border-width: 0px;
   --tag-color: oklch(84.5% 0.06 260.58);
-  --tag-color-hover: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --tag-color-hover: hsl(255, 89.76%, 75.9%);
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-radius: 2em;
   --tag-weight: inherit;
   --text-accent: hsl(258, 88%, 66%);
-  --text-accent-hover: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --text-accent-hover: hsl(253, 92.4%, 85.14%);
   --text-faint: oklch(74.5% 0.018 279.29);
   --text-highlight-bg: oklch(25.5% 0.052 97.11);
   --text-muted: oklch(84.5% 0.01 279.29);
@@ -254,7 +246,7 @@ body {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-user-select: none;
   background-color: oklch(13.5% 0.01 279.29);
-  caret-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  caret-color: hsl(255, 89.76%, 75.9%);
   color: oklch(12% 0.009 279.29);
   contain: initial;
   font-family:
@@ -304,7 +296,7 @@ html[saved-theme="dark"] {
   --background-modifier-border-hover: oklch(35.5% 0.029 279.29);
   --checkbox-border-color: oklch(48.5% 0.039 279.29);
   --checkbox-color: oklch(74.5% 0.164 161.65);
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --color-accent-2: hsl(253, 92.4%, 85.14%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -318,11 +310,11 @@ html[saved-theme="dark"] {
   --color-purple: #a882ff;
   --color-red: #fb464c;
   --h1-color: oklch(61.5% 0.17 288);
-  --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --text-accent: hsl(255, 89.76%, 75.9%);
   --background-modifier-border-hover: oklch(35.5% 0.029 279.29);
   --checkbox-border-color: oklch(48.5% 0.039 279.29);
   --checkbox-color: oklch(74.5% 0.164 161.65);
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --color-accent-2: hsl(253, 92.4%, 85.14%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -336,7 +328,7 @@ html[saved-theme="dark"] {
   --color-purple: #a882ff;
   --color-red: #fb464c;
   --h1-color: oklch(61.5% 0.17 288);
-  --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --text-accent: hsl(255, 89.76%, 75.9%);
 }
 /* END DARK */
 /* START LIGHT */
@@ -356,7 +348,7 @@ html[saved-theme="light"] {
     color: var(--shiki-light);
   }
   --checkbox-color: oklch(48.5% 0.106 161.65);
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -371,7 +363,7 @@ html[saved-theme="light"] {
   --color-red: #e93147;
   --h1-color: oklch(61.5% 0.17 288);
   --checkbox-color: oklch(48.5% 0.106 161.65);
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -673,7 +665,10 @@ body {
   }
   /* HEADINGS */
   h1 {
-    color: oklch(61.5% 0.17 288);
+    color: light-dark(
+      light-dark(oklch(61.5% 0.17 288), oklch(48.5% 0.213 288)),
+      light-dark(oklch(61.5% 0.17 288), oklch(48.5% 0.213 288))
+    );
     font-family: "Bricolage Grotesque";
     font-size: 1.802em;
     font-style: normal;
@@ -733,7 +728,10 @@ body {
     --link-weight: 650;
   }
   h5 {
-    color: oklch(84.5% 0.01 279.29);
+    color: light-dark(
+      light-dark(oklch(84.5% 0.01 279.29), oklch(25.5% 0.021 279.29)),
+      light-dark(oklch(61.5% 0.028 279.29), oklch(48.5% 0.039 279.29))
+    );
     font-family: "Bricolage Grotesque";
     font-size: 1.125em;
     font-style: normal;
@@ -748,7 +746,10 @@ body {
     --link-weight: 600;
   }
   h6 {
-    color: oklch(84.5% 0.01 279.29);
+    color: light-dark(
+      light-dark(oklch(84.5% 0.01 279.29), oklch(25.5% 0.021 279.29)),
+      light-dark(oklch(61.5% 0.028 279.29), oklch(48.5% 0.039 279.29))
+    );
     font-family: "Bricolage Grotesque";
     font-size: 1em;
     font-style: normal;
@@ -861,7 +862,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-size: calc(16px * 0.8);
+    font-size: 12.8px;
     height: auto;
     inset-inline-end: 0;
     margin: 6px;
@@ -1099,7 +1100,7 @@ body {
       border-radius: 5px;
       color: oklch(12% 0.009 279.29);
       font-family: inherit;
-      font-size: calc(16px * 0.937);
+      font-size: 14.992px;
       height: 40px;
       outline: none;
       padding: 4px 8px;

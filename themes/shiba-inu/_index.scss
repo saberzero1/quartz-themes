@@ -26,7 +26,7 @@ html[saved-theme="dark"] {
   --background-modifier-border: rgb(48, 45, 65);
   --background-modifier-border-focus: rgb(87, 82, 105);
   --background-modifier-border-hover: rgb(45, 40, 72);
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --color-accent-2: hsl(253, 92.4%, 85.14%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -44,7 +44,7 @@ html[saved-theme="dark"] {
   --background-modifier-border: rgb(48, 45, 65);
   --background-modifier-border-focus: rgb(87, 82, 105);
   --background-modifier-border-hover: rgb(45, 40, 72);
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --color-accent-2: hsl(253, 92.4%, 85.14%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -80,7 +80,7 @@ html[saved-theme="light"] {
   --background-modifier-border: rgb(45, 40, 72);
   --background-modifier-border-focus: rgb(109, 107, 125);
   --background-modifier-border-hover: rgb(87, 82, 105);
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -97,7 +97,7 @@ html[saved-theme="light"] {
   --background-modifier-border: rgb(45, 40, 72);
   --background-modifier-border-focus: rgb(109, 107, 125);
   --background-modifier-border-hover: rgb(87, 82, 105);
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -284,8 +284,8 @@ html[saved-theme="light"] {
     rgb(87, 82, 105)
   );
   --color-accent-2: light-dark(
-    hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29)),
-    hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15))
+    hsl(253, 92.4%, 85.14%),
+    hsl(255, 89.76%, 75.9%)
   );
   --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
   --color-base-100: light-dark(#dadada, #222222);
@@ -308,7 +308,7 @@ body {
   --background-modifier-hover: rgba(217, 224, 238, 0.075);
   --background-primary: rgb(20, 20, 20);
   --bold-color: inherit;
-  --bold-weight: calc(600 + 200);
+  --bold-weight: 800;
   --checkbox-border-color: rgb(190, 179, 193);
   --checkbox-border-color-hover: rgb(167, 156, 176);
   --checkbox-color: rgb(235, 188, 186);
@@ -443,7 +443,7 @@ html[saved-theme="dark"] {
   --background-modifier-border: rgb(48, 45, 65);
   --background-modifier-border-focus: rgb(87, 82, 105);
   --background-modifier-border-hover: rgb(45, 40, 72);
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --color-accent-2: hsl(253, 92.4%, 85.14%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -461,7 +461,7 @@ html[saved-theme="dark"] {
   --background-modifier-border: rgb(48, 45, 65);
   --background-modifier-border-focus: rgb(87, 82, 105);
   --background-modifier-border-hover: rgb(45, 40, 72);
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --color-accent-2: hsl(253, 92.4%, 85.14%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -498,7 +498,7 @@ html[saved-theme="light"] {
   --background-modifier-border: rgb(45, 40, 72);
   --background-modifier-border-focus: rgb(109, 107, 125);
   --background-modifier-border-hover: rgb(87, 82, 105);
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -515,7 +515,7 @@ html[saved-theme="light"] {
   --background-modifier-border: rgb(45, 40, 72);
   --background-modifier-border-focus: rgb(109, 107, 125);
   --background-modifier-border-hover: rgb(87, 82, 105);
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -1064,7 +1064,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-size: calc(16px * 0.8);
+    font-size: 12.8px;
     height: auto;
     inset-inline-end: 0;
     margin: 6px;
@@ -1352,7 +1352,7 @@ body {
       border-radius: 5px;
       color: #d4d4d4;
       font-family: inherit;
-      font-size: calc(16px * 0.937);
+      font-size: 14.992px;
       height: 40px;
       outline: none;
       padding: 4px 8px;

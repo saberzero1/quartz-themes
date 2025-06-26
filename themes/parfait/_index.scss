@@ -22,7 +22,7 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: #a68af9;
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -35,7 +35,7 @@ html[saved-theme="light"] {
   --color-pink: #d53984;
   --color-purple: #7852ee;
   --color-red: #e93147;
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: #a68af9;
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -215,10 +215,7 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --color-accent-2: light-dark(
-    hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29)),
-    hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15))
-  );
+  --color-accent-2: light-dark(#c5b6fc, #a68af9);
   --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
   --color-base-100: light-dark(#dadada, #222222);
   --color-base-30: light-dark(#363636, #e0e0e0);
@@ -236,18 +233,14 @@ body {
   --background-modifier-border: #363636;
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;
-  --background-modifier-hover: rgba(255, 255, 255, 0.067);
+  --background-modifier-hover: #ffffff11;
   --background-primary: #000;
   --bold-color: inherit;
-  --bold-weight: calc(600 + 200);
+  --bold-weight: 800;
   --checkbox-border-color: #666666;
   --checkbox-border-color-hover: #b3b3b3;
-  --checkbox-color: hsl(258, 88%, 66%);
-  --checkbox-color-hover: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  );
+  --checkbox-color: #8a5cf5;
+  --checkbox-color-hover: #a68af9;
   --checkbox-marker-color: #000;
   --checkbox-radius: 0px;
   --checkbox-size: 16px;
@@ -263,11 +256,7 @@ body {
   --code-tag: #fb464c;
   --code-value: #a882ff;
   --collapse-icon-color: #666666;
-  --collapse-icon-color-collapsed: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  );
+  --collapse-icon-color-collapsed: #a68af9;
   --color-base-100: #372622;
   --color-base-30: #e6d8c5;
   --color-base-35: #e6d8c5;
@@ -291,9 +280,9 @@ body {
   --inline-title-font: inherit;
   --interactive-accent-hsl: 258, 88%, 66%;
   --italic-color: inherit;
-  --link-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --link-color: #a68af9;
   --link-color-hover: #ebc4c4;
-  --link-external-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --link-external-color: #a68af9;
   --link-external-color-hover: #ebc4c4;
   --link-external-filter: none;
   --link-weight: 600;
@@ -301,8 +290,8 @@ body {
   --search-icon-color: #b3b3b3;
   --tag-background: transparent;
   --tag-background-hover: #74593d;
-  --tag-border-color: hsla(258, 88%, 66%, 0.15);
-  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
+  --tag-border-color: #8a5cf526;
+  --tag-border-color-hover: #8a5cf526;
   --tag-border-width: 0px;
   --tag-color: #74593d;
   --tag-color-hover: #f5ede3;
@@ -316,10 +305,10 @@ body {
   --text-highlight-bg: transparent;
   --text-muted: #b3b3b3;
   --text-normal: #dadada;
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: #000;
-  caret-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  caret-color: #a68af9;
   color: #dadada;
   contain: initial;
   font-family:
@@ -365,7 +354,7 @@ html {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: #a68af9;
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -378,7 +367,7 @@ html {
   --color-pink: #d53984;
   --color-purple: #7852ee;
   --color-red: #e93147;
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: #a68af9;
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -868,7 +857,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-size: calc(16px * 0.8);
+    font-size: 12.8px;
     height: auto;
     inset-inline-end: 0;
     margin: 6px;
@@ -876,7 +865,7 @@ body {
     position: absolute;
     top: 0;
     &:hover {
-      background-color: rgba(255, 255, 255, 0.15);
+      background-color: #ffffff26;
     }
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -928,7 +917,7 @@ body {
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
-        color: hsl(258, 88%, 66%);
+        color: #8a5cf5;
         text-overflow: ellipsis;
         position: relative;
         & > svg {
@@ -960,7 +949,7 @@ body {
         -webkit-mask-image: var(--folder-open-icon);
       }
       .folder-outer > ul.content {
-        border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+        border-inline-start: 1px solid #ffffff1f;
         margin-bottom: 1px;
         margin-inline-start: 12px;
         padding-inline-start: 4px;
@@ -1106,7 +1095,7 @@ body {
       border-radius: 0px;
       color: #dadada;
       font-family: inherit;
-      font-size: calc(16px * 0.937);
+      font-size: 14.992px;
       height: 40px;
       outline: none;
       padding: 4px 8px;
@@ -1121,9 +1110,9 @@ body {
         border: 0.5pt solid #555555;
         border-radius: 0px;
         box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-          0px 30px 90px rgba(0, 0, 0, 0.2);
+          0px 1.8px 7.3px #00000012,
+          0px 6.3px 24.7px #0000001d,
+          0px 30px 90px #00000033;
         margin: 12vh auto;
         & > input {
           background-color: #000;
@@ -1169,7 +1158,7 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: rgba(255, 255, 255, 0.15);
+                background-color: #ffffff26;
               }
               & > ul > li > p {
                 background-color: transparent;
@@ -1240,9 +1229,9 @@ body {
     border: 1px solid transparent;
     border-radius: 0px;
     box-shadow:
-      0px 1px 2px rgba(0, 0, 0, 0.121),
-      0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-      0px 15px 30px rgba(0, 0, 0, 0.3);
+      0px 1px 2px #0000001f,
+      0px 3.4px 6.7px #0000002e,
+      0px 15px 30px #0000004d;
     display: flex;
     max-height: 95vh;
     position: absolute;

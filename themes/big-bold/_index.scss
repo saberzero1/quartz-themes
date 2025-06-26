@@ -24,12 +24,12 @@ html[saved-theme="dark"] {
   }
 
   --background-modifier-border: #d9dde8;
-  --color-accent-2: hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%));
+  --color-accent-2: #8892f2;
   --color-accent-hsl: 232, 75%, 70%;
   --color-base-100: #c8d4e6;
-  --color-base-30: hsl(218, 18%, 15%);
-  --color-base-35: hsl(218, 19%, 27%);
-  --color-base-40: hsl(218, 19%, 31%);
+  --color-base-30: #1f242d;
+  --color-base-35: #384152;
+  --color-base-40: #404b5e;
   --color-blue: #009be3;
   --color-cyan: #00cecb;
   --color-green: #7dcf2b;
@@ -37,15 +37,15 @@ html[saved-theme="dark"] {
   --color-pink: #e66ab4;
   --color-purple: #b45af5;
   --color-red: #ff4d3a;
-  --text-accent: hsl(calc(232 - 4), 75%, calc(70% - 2%));
-  --text-highlight-bg: hsla(232, 75%, 70%, 0.475);
+  --text-accent: #7089eb;
+  --text-highlight-bg: #7988ec79;
   --background-modifier-border: #d9dde8;
-  --color-accent-2: hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%));
+  --color-accent-2: #8892f2;
   --color-accent-hsl: 232, 75%, 70%;
   --color-base-100: #c8d4e6;
-  --color-base-30: hsl(218, 18%, 15%);
-  --color-base-35: hsl(218, 19%, 27%);
-  --color-base-40: hsl(218, 19%, 31%);
+  --color-base-30: #1f242d;
+  --color-base-35: #384152;
+  --color-base-40: #404b5e;
   --color-blue: #009be3;
   --color-cyan: #00cecb;
   --color-green: #7dcf2b;
@@ -53,8 +53,8 @@ html[saved-theme="dark"] {
   --color-pink: #e66ab4;
   --color-purple: #b45af5;
   --color-red: #ff4d3a;
-  --text-accent: hsl(calc(232 - 4), 75%, calc(70% - 2%));
-  --text-highlight-bg: hsla(232, 75%, 70%, 0.475);
+  --text-accent: #7089eb;
+  --text-highlight-bg: #7988ec79;
 }
 
 :root[saved-theme="light"],
@@ -72,7 +72,7 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --color-accent-2: hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%));
+  --color-accent-2: #8892f2;
   --color-accent-hsl: 232, 75%, 70%;
   --color-base-100: #252525;
   --color-base-30: #9f9f9f66;
@@ -85,8 +85,8 @@ html[saved-theme="light"] {
   --color-pink: #ac7aaa;
   --color-purple: #8076ad;
   --color-red: #c75f54;
-  --text-highlight-bg: rgba(255, 200, 0, 0.459);
-  --color-accent-2: hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%));
+  --text-highlight-bg: #ffc80075;
+  --color-accent-2: #8892f2;
   --color-accent-hsl: 232, 75%, 70%;
   --color-base-100: #252525;
   --color-base-30: #9f9f9f66;
@@ -99,7 +99,7 @@ html[saved-theme="light"] {
   --color-pink: #ac7aaa;
   --color-purple: #8076ad;
   --color-red: #c75f54;
-  --text-highlight-bg: rgba(255, 200, 0, 0.459);
+  --text-highlight-bg: #ffc80075;
 }
 
 /* cyrillic-ext */
@@ -815,66 +815,53 @@ body {
 }
 
 :root {
-  --color-accent-2: light-dark(
-    light-dark(
-      hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%)),
-      hsl(calc(232 - 3), calc(75% * 1.02), calc(70% * 1.15))
-    ),
-    hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%))
-  );
+  --color-accent-2: light-dark(#d3dbfa, #a7b5f3);
   --color-accent-hsl: light-dark(232, 75%, 70%, 232, 75%, 70%);
-  --color-base-100: light-dark(light-dark(#c8d4e6, #222222), #252525);
-  --color-base-30: light-dark(
-    light-dark(hsl(218, 18%, 15%), #e0e0e0),
-    #9f9f9f66
-  );
-  --color-base-35: light-dark(light-dark(hsl(218, 19%, 27%), #d4d4d4), #dedede);
-  --color-base-40: light-dark(light-dark(hsl(218, 19%, 31%), #bdbdbd), #d7d7d7);
-  --color-blue: light-dark(light-dark(#009be3, #086ddd), #4e8aa6);
-  --color-cyan: light-dark(light-dark(#00cecb, #00bfbc), #49a7ba);
-  --color-green: light-dark(light-dark(#7dcf2b, #08b94e), #8fb26b);
-  --color-orange: light-dark(light-dark(#f69c00, #ec7500), #d08344);
-  --color-pink: light-dark(light-dark(#e66ab4, #d53984), #ac7aaa);
-  --color-purple: light-dark(light-dark(#b45af5, #7852ee), #8076ad);
-  --color-red: light-dark(light-dark(#ff4d3a, #e93147), #c75f54);
-  --text-highlight-bg: light-dark(
-    light-dark(hsla(232, 75%, 70%, 0.475), rgba(255, 208, 0, 0.4)),
-    rgba(255, 200, 0, 0.459)
-  );
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
 }
 body {
   --background-modifier-border: #9496ac66;
-  --background-modifier-border-focus: hsl(242, 19%, 72%);
-  --background-modifier-border-hover: hsl(220, 5%, 78%);
-  --background-modifier-hover: rgba(255, 255, 255, 0.067);
-  --background-primary: hsla(237, 10%, 97%, 75%);
+  --background-modifier-border-focus: #abaac5;
+  --background-modifier-border-hover: #c4c6ca;
+  --background-modifier-hover: #ffffff11;
+  --background-primary: #f7f7f8bf;
   --bold-color: inherit;
-  --bold-weight: calc(700 + 200);
-  --checkbox-border-color: rgb(255, 114, 114);
+  --bold-weight: 900;
+  --checkbox-border-color: #ff7272;
   --checkbox-border-color-hover: #6d6b78;
   --checkbox-color: transparent;
-  --checkbox-color-hover: hsl(calc(232 - 4), 75%, calc(70% - 2%));
-  --checkbox-marker-color: hsla(237, 10%, 97%, 75%);
+  --checkbox-color-hover: #7089eb;
+  --checkbox-marker-color: #f7f7f8bf;
   --checkbox-radius: 14px;
   --checkbox-size: 18px;
-  --code-background: hsl(220, 9%, 95%);
+  --code-background: #f1f2f3;
   --code-comment: #787689;
-  --code-function: rgb(219, 202, 103);
-  --code-important: rgb(255, 160, 88);
-  --code-keyword: rgb(233, 145, 196);
+  --code-function: #dbca67;
+  --code-important: #ffa058;
+  --code-keyword: #e991c4;
   --code-normal: #3e3a4f;
-  --code-property: rgb(84, 186, 182);
+  --code-property: #54bab6;
   --code-punctuation: #6d6b78;
-  --code-string: rgb(132, 204, 124);
-  --code-tag: rgb(255, 114, 114);
-  --code-value: rgb(183, 140, 218);
+  --code-string: #84cc7c;
+  --code-tag: #ff7272;
+  --code-value: #b78cda;
   --collapse-icon-color: #787689;
-  --collapse-icon-color-collapsed: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  --collapse-icon-color-collapsed: #7089eb;
   --cursor-link: pointer;
   --font-default: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   --font-text: "??", "??", "??", "Arial";
-  --graph-line: hsl(220, 5%, 78%);
-  --graph-node-tag: rgb(132, 204, 124);
+  --graph-line: #c4c6ca;
+  --graph-node-tag: #84cc7c;
   --graph-node-unresolved: #787689;
   --h1-color: inherit;
   --h1-font:
@@ -890,39 +877,35 @@ body {
     Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   --interactive-accent-hsl: 232, 75%, 70%;
   --italic-color: inherit;
-  --link-color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
-  --link-color-hover: hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%));
-  --link-external-color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
-  --link-external-color-hover: hsl(
-    calc(232 + 2),
-    calc(75% + 5%),
-    calc(70% + 4%)
-  );
+  --link-color: #7089eb;
+  --link-color-hover: #8892f2;
+  --link-external-color: #7089eb;
+  --link-external-color-hover: #8892f2;
   --link-external-filter: none;
   --link-weight: 700;
   --p-spacing: 1rem;
   --search-icon-color: #6d6b78;
-  --tag-background: hsla(232, 75%, 70%, 0.1);
-  --tag-background-hover: hsla(232, 75%, 70%, 0.2);
-  --tag-border-color: hsla(232, 75%, 70%, 0.15);
-  --tag-border-color-hover: hsla(232, 75%, 70%, 0.15);
+  --tag-background: #7988ec1a;
+  --tag-background-hover: #7988ec33;
+  --tag-border-color: #7988ec26;
+  --tag-border-color-hover: #7988ec26;
   --tag-border-width: 0px;
-  --tag-color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
-  --tag-color-hover: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  --tag-color: #7089eb;
+  --tag-color-hover: #7089eb;
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-radius: 2em;
   --tag-weight: inherit;
-  --text-accent: hsl(232, 75%, 70%);
-  --text-accent-hover: hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%));
+  --text-accent: #7988ec;
+  --text-accent-hover: #8892f2;
   --text-faint: #787689;
-  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-highlight-bg: #ffd00066;
   --text-muted: #6d6b78;
   --text-normal: #3e3a4f;
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: hsla(237, 10%, 97%, 75%);
-  caret-color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  background-color: #f7f7f8bf;
+  caret-color: #7089eb;
   color: #3e3a4f;
   contain: initial;
   font-family:
@@ -957,12 +940,12 @@ html[saved-theme="dark"] {
   }
 
   --background-modifier-border: #d9dde8;
-  --color-accent-2: hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%));
+  --color-accent-2: #8892f2;
   --color-accent-hsl: 232, 75%, 70%;
   --color-base-100: #c8d4e6;
-  --color-base-30: hsl(218, 18%, 15%);
-  --color-base-35: hsl(218, 19%, 27%);
-  --color-base-40: hsl(218, 19%, 31%);
+  --color-base-30: #1f242d;
+  --color-base-35: #384152;
+  --color-base-40: #404b5e;
   --color-blue: #009be3;
   --color-cyan: #00cecb;
   --color-green: #7dcf2b;
@@ -970,15 +953,15 @@ html[saved-theme="dark"] {
   --color-pink: #e66ab4;
   --color-purple: #b45af5;
   --color-red: #ff4d3a;
-  --text-accent: hsl(calc(232 - 4), 75%, calc(70% - 2%));
-  --text-highlight-bg: hsla(232, 75%, 70%, 0.475);
+  --text-accent: #7089eb;
+  --text-highlight-bg: #7988ec79;
   --background-modifier-border: #d9dde8;
-  --color-accent-2: hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%));
+  --color-accent-2: #8892f2;
   --color-accent-hsl: 232, 75%, 70%;
   --color-base-100: #c8d4e6;
-  --color-base-30: hsl(218, 18%, 15%);
-  --color-base-35: hsl(218, 19%, 27%);
-  --color-base-40: hsl(218, 19%, 31%);
+  --color-base-30: #1f242d;
+  --color-base-35: #384152;
+  --color-base-40: #404b5e;
   --color-blue: #009be3;
   --color-cyan: #00cecb;
   --color-green: #7dcf2b;
@@ -986,8 +969,8 @@ html[saved-theme="dark"] {
   --color-pink: #e66ab4;
   --color-purple: #b45af5;
   --color-red: #ff4d3a;
-  --text-accent: hsl(calc(232 - 4), 75%, calc(70% - 2%));
-  --text-highlight-bg: hsla(232, 75%, 70%, 0.475);
+  --text-accent: #7089eb;
+  --text-highlight-bg: #7988ec79;
 }
 /* END DARK */
 /* START LIGHT */
@@ -1006,7 +989,7 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --color-accent-2: hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%));
+  --color-accent-2: #8892f2;
   --color-accent-hsl: 232, 75%, 70%;
   --color-base-100: #252525;
   --color-base-30: #9f9f9f66;
@@ -1019,8 +1002,8 @@ html[saved-theme="light"] {
   --color-pink: #ac7aaa;
   --color-purple: #8076ad;
   --color-red: #c75f54;
-  --text-highlight-bg: rgba(255, 200, 0, 0.459);
-  --color-accent-2: hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%));
+  --text-highlight-bg: #ffc80075;
+  --color-accent-2: #8892f2;
   --color-accent-hsl: 232, 75%, 70%;
   --color-base-100: #252525;
   --color-base-30: #9f9f9f66;
@@ -1033,114 +1016,201 @@ html[saved-theme="light"] {
   --color-pink: #ac7aaa;
   --color-purple: #8076ad;
   --color-red: #c75f54;
-  --text-highlight-bg: rgba(255, 200, 0, 0.459);
+  --text-highlight-bg: #ffc80075;
 }
 /* END LIGHT */
 /* CALLOUTS */
 :root,
 html {
   .callout {
-    background-color: #9496ac66;
-    border: 1px solid rgba(158, 158, 158, 0.35);
-    border-color: rgba(158, 158, 158, 0.25);
+    background-color: light-dark(
+      light-dark(#363636, #e0e0e0),
+      light-dark(#212121, #fcfcfc)
+    );
+    border: 1px solid #9e9e9e59;
+    border-color: #9e9e9e40;
     border-radius: 14px;
     border-style: solid;
     border-width: 0px;
-    margin: calc(2em * 0.4) auto;
+    margin: 0.8em auto;
     max-width: 700px;
     min-width: 320px;
     mix-blend-mode: normal;
     overflow: hidden;
     padding: 0;
-    background-color: #9496ac66;
+    background-color: light-dark(
+      light-dark(#363636, #e0e0e0),
+      light-dark(#212121, #fcfcfc)
+    );
     overflow-x: auto;
     overflow-y: hidden;
     &[data-callout] {
-      background-color: #9496ac66;
+      background-color: light-dark(
+        light-dark(#363636, #e0e0e0),
+        light-dark(#212121, #fcfcfc)
+      );
     }
     &[data-callout="abstract"] {
-      background-color: #9496ac66;
+      background-color: light-dark(
+        light-dark(#363636, #e0e0e0),
+        light-dark(#212121, #fcfcfc)
+      );
     }
     &[data-callout="summary"] {
-      background-color: #9496ac66;
+      background-color: light-dark(
+        light-dark(#363636, #e0e0e0),
+        light-dark(#212121, #fcfcfc)
+      );
     }
     &[data-callout="tldr"] {
-      background-color: #9496ac66;
+      background-color: light-dark(
+        light-dark(#363636, #e0e0e0),
+        light-dark(#212121, #fcfcfc)
+      );
     }
     &[data-callout="info"] {
-      background-color: #9496ac66;
+      background-color: light-dark(
+        light-dark(#363636, #e0e0e0),
+        light-dark(#212121, #fcfcfc)
+      );
     }
     &[data-callout="todo"] {
-      background-color: #9496ac66;
+      background-color: light-dark(
+        light-dark(#363636, #e0e0e0),
+        light-dark(#212121, #fcfcfc)
+      );
     }
     &[data-callout="important"] {
-      background-color: #9496ac66;
+      background-color: light-dark(
+        light-dark(#363636, #e0e0e0),
+        light-dark(#212121, #fcfcfc)
+      );
     }
     &[data-callout="tip"] {
-      background-color: #9496ac66;
+      background-color: light-dark(
+        light-dark(#363636, #e0e0e0),
+        light-dark(#212121, #fcfcfc)
+      );
     }
     &[data-callout="hint"] {
-      background-color: #9496ac66;
+      background-color: light-dark(
+        light-dark(#363636, #e0e0e0),
+        light-dark(#212121, #fcfcfc)
+      );
     }
     &[data-callout="success"] {
-      background-color: #9496ac66;
+      background-color: light-dark(
+        light-dark(#363636, #e0e0e0),
+        light-dark(#212121, #fcfcfc)
+      );
     }
     &[data-callout="check"] {
-      background-color: #9496ac66;
+      background-color: light-dark(
+        light-dark(#363636, #e0e0e0),
+        light-dark(#212121, #fcfcfc)
+      );
     }
     &[data-callout="done"] {
-      background-color: #9496ac66;
+      background-color: light-dark(
+        light-dark(#363636, #e0e0e0),
+        light-dark(#212121, #fcfcfc)
+      );
     }
     &[data-callout="question"] {
-      background-color: #9496ac66;
+      background-color: light-dark(
+        light-dark(#363636, #e0e0e0),
+        light-dark(#212121, #fcfcfc)
+      );
     }
     &[data-callout="help"] {
-      background-color: #9496ac66;
+      background-color: light-dark(
+        light-dark(#363636, #e0e0e0),
+        light-dark(#212121, #fcfcfc)
+      );
     }
     &[data-callout="faq"] {
-      background-color: #9496ac66;
+      background-color: light-dark(
+        light-dark(#363636, #e0e0e0),
+        light-dark(#212121, #fcfcfc)
+      );
     }
     &[data-callout="warning"] {
-      background-color: #9496ac66;
+      background-color: light-dark(
+        light-dark(#363636, #e0e0e0),
+        light-dark(#212121, #fcfcfc)
+      );
     }
     &[data-callout="caution"] {
-      background-color: #9496ac66;
+      background-color: light-dark(
+        light-dark(#363636, #e0e0e0),
+        light-dark(#212121, #fcfcfc)
+      );
     }
     &[data-callout="attention"] {
-      background-color: #9496ac66;
+      background-color: light-dark(
+        light-dark(#363636, #e0e0e0),
+        light-dark(#212121, #fcfcfc)
+      );
     }
     &[data-callout="failure"] {
-      background-color: #9496ac66;
+      background-color: light-dark(
+        light-dark(#363636, #e0e0e0),
+        light-dark(#212121, #fcfcfc)
+      );
     }
     &[data-callout="fail"] {
-      background-color: #9496ac66;
+      background-color: light-dark(
+        light-dark(#363636, #e0e0e0),
+        light-dark(#212121, #fcfcfc)
+      );
     }
     &[data-callout="missing"] {
-      background-color: #9496ac66;
+      background-color: light-dark(
+        light-dark(#363636, #e0e0e0),
+        light-dark(#212121, #fcfcfc)
+      );
     }
     &[data-callout="danger"] {
-      background-color: #9496ac66;
+      background-color: light-dark(
+        light-dark(#363636, #e0e0e0),
+        light-dark(#212121, #fcfcfc)
+      );
     }
     &[data-callout="error"] {
-      background-color: #9496ac66;
+      background-color: light-dark(
+        light-dark(#363636, #e0e0e0),
+        light-dark(#212121, #fcfcfc)
+      );
     }
     &[data-callout="bug"] {
-      background-color: #9496ac66;
+      background-color: light-dark(
+        light-dark(#363636, #e0e0e0),
+        light-dark(#212121, #fcfcfc)
+      );
     }
     &[data-callout="example"] {
-      background-color: #9496ac66;
+      background-color: light-dark(
+        light-dark(#363636, #e0e0e0),
+        light-dark(#212121, #fcfcfc)
+      );
     }
     &[data-callout="quote"] {
-      background-color: #9496ac66;
+      background-color: light-dark(
+        light-dark(#363636, #e0e0e0),
+        light-dark(#212121, #fcfcfc)
+      );
     }
     &[data-callout="cite"] {
-      background-color: #9496ac66;
+      background-color: light-dark(
+        light-dark(#363636, #e0e0e0),
+        light-dark(#212121, #fcfcfc)
+      );
     }
   }
   .callout-title {
     align-items: flex-start;
-    background-color: rgba(158, 158, 158, 0.08);
-    color: rgb(158, 158, 158);
+    background-color: #9e9e9e14;
+    color: #9e9e9e;
     display: flex;
     font-size: inherit;
     gap: 4px;
@@ -1176,13 +1246,13 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: hsla(237, 10%, 97%, 75%);
+  background-color: #f7f7f8bf;
   section,
   .page > #quartz-body .sidebar {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: hsla(237, 10%, 97%, 75%);
+      background-color: #f7f7f8bf;
     }
   }
   .highlight,
@@ -1336,7 +1406,7 @@ body {
   }
   /* HEADINGS */
   h1 {
-    color: rgb(84, 186, 182);
+    color: #54bab6;
     font-family:
       "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
       Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
@@ -1353,7 +1423,7 @@ body {
     --link-weight: 700;
   }
   h2 {
-    color: rgb(131, 145, 237);
+    color: #8391ed;
     font-family:
       "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
       Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
@@ -1370,7 +1440,7 @@ body {
     --link-weight: 700;
   }
   h3 {
-    color: rgb(183, 140, 218);
+    color: #b78cda;
     font-family:
       "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
       Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
@@ -1387,7 +1457,7 @@ body {
     --link-weight: 700;
   }
   h4 {
-    color: rgb(233, 145, 196);
+    color: #e991c4;
     font-family:
       "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
       Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
@@ -1404,7 +1474,7 @@ body {
     --link-weight: 700;
   }
   h5 {
-    color: rgb(255, 114, 114);
+    color: #ff7272;
     font-family:
       "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
       Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
@@ -1421,7 +1491,7 @@ body {
     --link-weight: 700;
   }
   h6 {
-    color: rgb(255, 160, 88);
+    color: #ffa058;
     font-family:
       "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
       Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
@@ -1439,7 +1509,7 @@ body {
   }
   /* CODE */
   pre {
-    background-color: hsl(220, 9%, 95%);
+    background-color: #f1f2f3;
     border: 1px solid #d9dde8;
     border-radius: 7px;
     box-shadow: none;
@@ -1457,7 +1527,7 @@ body {
   }
   code {
     -webkit-box-decoration-break: clone;
-    background-color: hsl(220, 9%, 95%);
+    background-color: #f1f2f3;
     border: 0px solid #d9dde8;
     border-radius: 7px;
     color: #3e3a4f;
@@ -1522,7 +1592,7 @@ body {
     color: #6d6b78;
     font-family:
       "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-    font-size: calc(16px * 0.8);
+    font-size: 12.8px;
     height: auto;
     inset-inline-end: 0;
     margin: 6px;
@@ -1530,7 +1600,7 @@ body {
     position: absolute;
     top: 0;
     &:hover {
-      background-color: rgba(255, 255, 255, 0.15);
+      background-color: #ffffff26;
     }
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -1547,7 +1617,7 @@ body {
   /* BACKLINKS */
   .backlinks {
     h3 {
-      color: rgb(183, 140, 218);
+      color: #b78cda;
       font-family:
         "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
         Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
@@ -1575,16 +1645,16 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: rgb(131, 145, 237);
+      color: #8391ed;
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: hsla(237, 10%, 97%, 75%);
+        background-color: #f7f7f8bf;
       }
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
-        color: hsl(232, 75%, 70%);
+        color: #7988ec;
         text-overflow: ellipsis;
         position: relative;
         & > svg {
@@ -1640,7 +1710,7 @@ body {
           &.active,
           &:hover {
             background-color: transparent;
-            border-left: 3px hsl(232, 75%, 70%) solid;
+            border-left: 3px #7988ec solid;
             color: #3e3a4f;
             font-weight: inherit;
           }
@@ -1668,10 +1738,10 @@ body {
   }
   /* TOC */
   .toc {
-    color: rgb(183, 140, 218);
+    color: #b78cda;
     button.toc-header {
       h3 {
-        color: rgb(183, 140, 218);
+        color: #b78cda;
         font-family:
           "Merriweather Sans", "Book Antiqua", "Nunito Sans",
           "Noto Color Emoji", Inter, sans-serif, "Nunito Sans",
@@ -1685,7 +1755,7 @@ body {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
       }
-      color: rgb(183, 140, 218);
+      color: #b78cda;
       color: inherit;
     }
     ul.toc-content.overflow {
@@ -1702,7 +1772,7 @@ body {
   .graph,
   .toc {
     h3 {
-      color: rgb(183, 140, 218);
+      color: #b78cda;
       font-family:
         "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
         Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
@@ -1771,7 +1841,7 @@ body {
       border-radius: 5px;
       color: #3e3a4f;
       font-family: inherit;
-      font-size: calc(16px * 0.937);
+      font-size: 14.992px;
       height: 40px;
       outline: none;
       padding: 4px 8px;
@@ -1782,15 +1852,15 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: hsla(237, 10%, 97%, 75%);
-        border: 0.5pt solid hsl(242, 19%, 72%);
+        background-color: #f7f7f8bf;
+        border: 0.5pt solid #abaac5;
         border-radius: 19px;
         box-shadow: none;
         margin: 12vh auto;
         & > input {
-          background-color: hsla(237, 10%, 97%, 75%);
+          background-color: #f7f7f8bf;
           border: none;
-          border-bottom: 1px solid hsl(229, 14%, 91%);
+          border-bottom: 1px solid #e5e6eb;
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1814,11 +1884,11 @@ body {
           }
           & .highlight {
             background-color: transparent;
-            color: hsl(232, 75%, 70%);
+            color: #7988ec;
             font-weight: bold;
-            background-color: rgba(255, 208, 0, 0.4);
+            background-color: #ffd00066;
             border-radius: 6px;
-            color: white;
+            color: #ffffff;
             font-family:
               "Merriweather Sans", "Book Antiqua", "Nunito Sans",
               "Noto Color Emoji", Inter, sans-serif, "Nunito Sans",
@@ -1839,13 +1909,13 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: rgba(255, 255, 255, 0.15);
+                background-color: #ffffff26;
               }
               & > ul > li > p {
                 background-color: transparent;
                 color: #3e3a4f;
                 &.match-tag {
-                  color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+                  color: #7089eb;
                 }
               }
             }
@@ -1906,7 +1976,7 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: hsla(237, 10%, 97%, 75%);
+    background-color: #f7f7f8bf;
     border: 1px solid #d9dde8;
     border-radius: 14px;
     box-shadow: none;
@@ -1921,7 +1991,7 @@ body {
     border: unset;
     & .popover-inner {
       border: 1px solid #d9dde8;
-      background-color: hsla(237, 10%, 97%, 75%);
+      background-color: #f7f7f8bf;
 
       border-radius: 14px;
     }

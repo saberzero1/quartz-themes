@@ -22,12 +22,12 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --color-accent-2: #c5b6fc;
   --color-accent-hsl: 184, 79%, 45%;
-  --color-base-100: hsl(0 0% 85%);
-  --color-base-30: hsl(0 0% 22%);
-  --color-base-35: hsl(0 0% 25%);
-  --color-base-40: hsl(0 0% 33%);
+  --color-base-100: #d9d9d9;
+  --color-base-30: #383838;
+  --color-base-35: #404040;
+  --color-base-40: #545454;
   --color-blue: #027aff;
   --color-cyan: #53dfdd;
   --color-green: #44cf6e;
@@ -35,13 +35,13 @@ html[saved-theme="dark"] {
   --color-pink: #fa99cd;
   --color-purple: #a882ff;
   --color-red: #fb464c;
-  --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --text-accent: #a68af9;
+  --color-accent-2: #c5b6fc;
   --color-accent-hsl: 184, 79%, 45%;
-  --color-base-100: hsl(0 0% 85%);
-  --color-base-30: hsl(0 0% 22%);
-  --color-base-35: hsl(0 0% 25%);
-  --color-base-40: hsl(0 0% 33%);
+  --color-base-100: #d9d9d9;
+  --color-base-30: #383838;
+  --color-base-35: #404040;
+  --color-base-40: #545454;
   --color-blue: #027aff;
   --color-cyan: #53dfdd;
   --color-green: #44cf6e;
@@ -49,7 +49,7 @@ html[saved-theme="dark"] {
   --color-pink: #fa99cd;
   --color-purple: #a882ff;
   --color-red: #fb464c;
-  --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --text-accent: #a68af9;
 }
 
 :root[saved-theme="light"],
@@ -67,12 +67,12 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: #a68af9;
   --color-accent-hsl: 184, 79%, 35%;
-  --color-base-100: hsl(0 0% 13%);
-  --color-base-30: hsl(0 0% 88%);
-  --color-base-35: hsl(0 0% 83%);
-  --color-base-40: hsl(0 0% 74%);
+  --color-base-100: #212121;
+  --color-base-30: #e0e0e0;
+  --color-base-35: #d4d4d4;
+  --color-base-40: #bdbdbd;
   --color-blue: #086ddd;
   --color-cyan: #00bfbc;
   --color-green: #08b94e;
@@ -80,12 +80,12 @@ html[saved-theme="light"] {
   --color-pink: #d53984;
   --color-purple: #7852ee;
   --color-red: #e93147;
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: #a68af9;
   --color-accent-hsl: 184, 79%, 35%;
-  --color-base-100: hsl(0 0% 13%);
-  --color-base-30: hsl(0 0% 88%);
-  --color-base-35: hsl(0 0% 83%);
-  --color-base-40: hsl(0 0% 74%);
+  --color-base-100: #212121;
+  --color-base-30: #e0e0e0;
+  --color-base-35: #d4d4d4;
+  --color-base-40: #bdbdbd;
   --color-blue: #086ddd;
   --color-cyan: #00bfbc;
   --color-green: #08b94e;
@@ -312,32 +312,12 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --color-accent-2: light-dark(
-    hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29)),
-    hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15))
-  );
-  --color-accent-hsl: light-dark(
-    light-dark(184, 79%, 45%, 258, 88%, 66%),
-    184,
-    79%,
-    35%
-  );
-  --color-base-100: light-dark(
-    light-dark(hsl(0 0% 85%), #222222),
-    hsl(0 0% 13%)
-  );
-  --color-base-30: light-dark(
-    light-dark(hsl(0 0% 22%), #e0e0e0),
-    hsl(0 0% 88%)
-  );
-  --color-base-35: light-dark(
-    light-dark(hsl(0 0% 25%), #d4d4d4),
-    hsl(0 0% 83%)
-  );
-  --color-base-40: light-dark(
-    light-dark(hsl(0 0% 33%), #bdbdbd),
-    hsl(0 0% 74%)
-  );
+  --color-accent-2: light-dark(#c5b6fc, #a68af9);
+  --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
   --color-blue: light-dark(#027aff, #086ddd);
   --color-cyan: light-dark(#53dfdd, #00bfbc);
   --color-green: light-dark(#44cf6e, #08b94e);
@@ -350,10 +330,10 @@ body {
   --background-modifier-border: #655b53;
   --background-modifier-border-focus: #918273;
   --background-modifier-border-hover: #7d6f64;
-  --background-modifier-hover: rgba(255, 255, 255, 0.067);
+  --background-modifier-hover: #ffffff11;
   --background-primary: #292929;
   --bold-color: #d85f0e;
-  --bold-weight: calc(600 + 200);
+  --bold-weight: 800;
   --checkbox-border-color: #bdaf93;
   --checkbox-border-color-hover: #d85f0e;
   --checkbox-color: #b8ba26;
@@ -373,11 +353,7 @@ body {
   --code-tag: #f84935;
   --code-value: #d4879c;
   --collapse-icon-color: #a89985;
-  --collapse-icon-color-collapsed: hsl(
-    calc(258 - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  );
+  --collapse-icon-color-collapsed: #a68af9;
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -397,9 +373,9 @@ body {
   --inline-title-font: "Optima", "Recursive S";
   --interactive-accent-hsl: 358 100% 31%;
   --italic-color: #d85f0e;
-  --link-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --link-color: #a68af9;
   --link-color-hover: #d85f0e;
-  --link-external-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --link-external-color: #a68af9;
   --link-external-color-hover: #d85f0e;
   --link-external-filter: none;
   --link-weight: 600;
@@ -407,8 +383,8 @@ body {
   --search-icon-color: #655b53;
   --tag-background: none;
   --tag-background-hover: none;
-  --tag-border-color: hsla(358 100% 31%, 0.15);
-  --tag-border-color-hover: hsla(358 100% 31%, 0.15);
+  --tag-border-color: #010000;
+  --tag-border-color-hover: #010000;
   --tag-border-width: 0;
   --tag-color: #b8ba26;
   --tag-color-hover: #d85f0e;
@@ -419,13 +395,13 @@ body {
   --text-accent: #f84935;
   --text-accent-hover: #d85f0e;
   --text-faint: #a89985;
-  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-highlight-bg: #ffd00066;
   --text-muted: #655b53;
-  --text-normal: hsl(0 calc(0% * 2) 82%);
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  --text-normal: #d1d1d1;
+  -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: #292929;
-  caret-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  caret-color: #a68af9;
   color: #ebdbb2;
   contain: initial;
   font-family:
@@ -471,12 +447,12 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --color-accent-2: #c5b6fc;
   --color-accent-hsl: 184, 79%, 45%;
-  --color-base-100: hsl(0 0% 85%);
-  --color-base-30: hsl(0 0% 22%);
-  --color-base-35: hsl(0 0% 25%);
-  --color-base-40: hsl(0 0% 33%);
+  --color-base-100: #d9d9d9;
+  --color-base-30: #383838;
+  --color-base-35: #404040;
+  --color-base-40: #545454;
   --color-blue: #027aff;
   --color-cyan: #53dfdd;
   --color-green: #44cf6e;
@@ -484,13 +460,13 @@ html[saved-theme="dark"] {
   --color-pink: #fa99cd;
   --color-purple: #a882ff;
   --color-red: #fb464c;
-  --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --text-accent: #a68af9;
+  --color-accent-2: #c5b6fc;
   --color-accent-hsl: 184, 79%, 45%;
-  --color-base-100: hsl(0 0% 85%);
-  --color-base-30: hsl(0 0% 22%);
-  --color-base-35: hsl(0 0% 25%);
-  --color-base-40: hsl(0 0% 33%);
+  --color-base-100: #d9d9d9;
+  --color-base-30: #383838;
+  --color-base-35: #404040;
+  --color-base-40: #545454;
   --color-blue: #027aff;
   --color-cyan: #53dfdd;
   --color-green: #44cf6e;
@@ -498,7 +474,7 @@ html[saved-theme="dark"] {
   --color-pink: #fa99cd;
   --color-purple: #a882ff;
   --color-red: #fb464c;
-  --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --text-accent: #a68af9;
 }
 /* END DARK */
 /* START LIGHT */
@@ -517,12 +493,12 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: #a68af9;
   --color-accent-hsl: 184, 79%, 35%;
-  --color-base-100: hsl(0 0% 13%);
-  --color-base-30: hsl(0 0% 88%);
-  --color-base-35: hsl(0 0% 83%);
-  --color-base-40: hsl(0 0% 74%);
+  --color-base-100: #212121;
+  --color-base-30: #e0e0e0;
+  --color-base-35: #d4d4d4;
+  --color-base-40: #bdbdbd;
   --color-blue: #086ddd;
   --color-cyan: #00bfbc;
   --color-green: #08b94e;
@@ -530,12 +506,12 @@ html[saved-theme="light"] {
   --color-pink: #d53984;
   --color-purple: #7852ee;
   --color-red: #e93147;
-  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: #a68af9;
   --color-accent-hsl: 184, 79%, 35%;
-  --color-base-100: hsl(0 0% 13%);
-  --color-base-30: hsl(0 0% 88%);
-  --color-base-35: hsl(0 0% 83%);
-  --color-base-40: hsl(0 0% 74%);
+  --color-base-100: #212121;
+  --color-base-30: #e0e0e0;
+  --color-base-35: #d4d4d4;
+  --color-base-40: #bdbdbd;
   --color-blue: #086ddd;
   --color-cyan: #00bfbc;
   --color-green: #08b94e;
@@ -549,8 +525,8 @@ html[saved-theme="light"] {
 :root,
 html {
   .callout {
-    background-color: rgb(158, 158, 158, 11%);
-    border-color: rgba(158, 158, 158, 0.25);
+    background-color: #9e9e9e1c;
+    border-color: #9e9e9e40;
     border-radius: 0;
     border-style: solid;
     border-width: 1.5px;
@@ -558,95 +534,95 @@ html {
     mix-blend-mode: normal;
     overflow: hidden;
     padding: 0;
-    background-color: rgb(158, 158, 158, 11%);
+    background-color: #9e9e9e1c;
     overflow-x: auto;
     overflow-y: hidden;
     &[data-callout] {
-      background-color: rgb(158, 158, 158, 11%);
+      background-color: #9e9e9e1c;
     }
     &[data-callout="abstract"] {
-      background-color: rgb(158, 158, 158, 11%);
+      background-color: #9e9e9e1c;
     }
     &[data-callout="summary"] {
-      background-color: rgb(158, 158, 158, 11%);
+      background-color: #9e9e9e1c;
     }
     &[data-callout="tldr"] {
-      background-color: rgb(158, 158, 158, 11%);
+      background-color: #9e9e9e1c;
     }
     &[data-callout="info"] {
-      background-color: rgb(158, 158, 158, 11%);
+      background-color: #9e9e9e1c;
     }
     &[data-callout="todo"] {
-      background-color: rgb(158, 158, 158, 11%);
+      background-color: #9e9e9e1c;
     }
     &[data-callout="important"] {
-      background-color: rgb(158, 158, 158, 11%);
+      background-color: #9e9e9e1c;
     }
     &[data-callout="tip"] {
-      background-color: rgb(158, 158, 158, 11%);
+      background-color: #9e9e9e1c;
     }
     &[data-callout="hint"] {
-      background-color: rgb(158, 158, 158, 11%);
+      background-color: #9e9e9e1c;
     }
     &[data-callout="success"] {
-      background-color: rgb(158, 158, 158, 11%);
+      background-color: #9e9e9e1c;
     }
     &[data-callout="check"] {
-      background-color: rgb(158, 158, 158, 11%);
+      background-color: #9e9e9e1c;
     }
     &[data-callout="done"] {
-      background-color: rgb(158, 158, 158, 11%);
+      background-color: #9e9e9e1c;
     }
     &[data-callout="question"] {
-      background-color: rgb(158, 158, 158, 11%);
+      background-color: #9e9e9e1c;
     }
     &[data-callout="help"] {
-      background-color: rgb(158, 158, 158, 11%);
+      background-color: #9e9e9e1c;
     }
     &[data-callout="faq"] {
-      background-color: rgb(158, 158, 158, 11%);
+      background-color: #9e9e9e1c;
     }
     &[data-callout="warning"] {
-      background-color: rgb(158, 158, 158, 11%);
+      background-color: #9e9e9e1c;
     }
     &[data-callout="caution"] {
-      background-color: rgb(158, 158, 158, 11%);
+      background-color: #9e9e9e1c;
     }
     &[data-callout="attention"] {
-      background-color: rgb(158, 158, 158, 11%);
+      background-color: #9e9e9e1c;
     }
     &[data-callout="failure"] {
-      background-color: rgb(158, 158, 158, 11%);
+      background-color: #9e9e9e1c;
     }
     &[data-callout="fail"] {
-      background-color: rgb(158, 158, 158, 11%);
+      background-color: #9e9e9e1c;
     }
     &[data-callout="missing"] {
-      background-color: rgb(158, 158, 158, 11%);
+      background-color: #9e9e9e1c;
     }
     &[data-callout="danger"] {
-      background-color: rgb(158, 158, 158, 11%);
+      background-color: #9e9e9e1c;
     }
     &[data-callout="error"] {
-      background-color: rgb(158, 158, 158, 11%);
+      background-color: #9e9e9e1c;
     }
     &[data-callout="bug"] {
-      background-color: rgb(158, 158, 158, 11%);
+      background-color: #9e9e9e1c;
     }
     &[data-callout="example"] {
-      background-color: rgb(158, 158, 158, 11%);
+      background-color: #9e9e9e1c;
     }
     &[data-callout="quote"] {
-      background-color: rgb(158, 158, 158, 11%);
+      background-color: #9e9e9e1c;
     }
     &[data-callout="cite"] {
-      background-color: rgb(158, 158, 158, 11%);
+      background-color: #9e9e9e1c;
     }
   }
   .callout-title {
     align-items: flex-start;
-    background-color: rgb(158, 158, 158, 15%);
-    border-bottom: 1.5px solid rgb(158, 158, 158, 0.25);
+    background-color: #9e9e9e26;
+    border-bottom: 1.5px solid #9e9e9e40;
     color: #655b53;
     display: flex;
     font-size: 110%;
@@ -838,7 +814,7 @@ body {
   h1 {
     color: #fe811b;
     font-family: "Optima", "Recursive S";
-    font-size: calc(1.7em * 1);
+    font-size: 1.7em;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -853,7 +829,7 @@ body {
   h2 {
     color: #b8ba26;
     font-family: "Optima", "Recursive S";
-    font-size: calc(1.5em * 1);
+    font-size: 1.5em;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -868,7 +844,7 @@ body {
   h3 {
     color: #fabd2e;
     font-family: "Optima", "Recursive S";
-    font-size: calc(1.35em * 1);
+    font-size: 1.35em;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -883,7 +859,7 @@ body {
   h4 {
     color: #f84935;
     font-family: "Optima", "Recursive S";
-    font-size: calc(1.2em * 1);
+    font-size: 1.2em;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -898,7 +874,7 @@ body {
   h5 {
     color: #279b99;
     font-family: "Optima", "Recursive S";
-    font-size: calc(1.1em * 1);
+    font-size: 1.1em;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -913,7 +889,7 @@ body {
   h6 {
     color: #83a598;
     font-family: "Optima", "Recursive S";
-    font-size: calc(1em * 1);
+    font-size: 1em;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -1024,7 +1000,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-size: calc(16px * 0.8);
+    font-size: 12.8px;
     height: auto;
     inset-inline-end: 0;
     margin: 6px;
@@ -1051,7 +1027,7 @@ body {
     h3 {
       color: #fabd2e;
       font-family: "Optima", "Recursive S";
-      font-size: calc(1.35em * 1);
+      font-size: 1.35em;
       font-style: normal;
       font-variant: normal;
       font-weight: 600;
@@ -1138,7 +1114,7 @@ body {
           &.active,
           &:hover {
             background-color: #32302f;
-            color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+            color: #a68af9;
             font-weight: inherit;
           }
           &[data-for$="/index"] {
@@ -1170,7 +1146,7 @@ body {
       h3 {
         color: #fabd2e;
         font-family: "Optima", "Recursive S";
-        font-size: calc(1.35em * 1);
+        font-size: 1.35em;
         font-style: normal;
         font-variant: normal;
         font-weight: 600;
@@ -1198,7 +1174,7 @@ body {
     h3 {
       color: #fabd2e;
       font-family: "Optima", "Recursive S";
-      font-size: calc(1.35em * 1);
+      font-size: 1.35em;
       font-style: normal;
       font-variant: normal;
       font-weight: 600;
@@ -1263,7 +1239,7 @@ body {
       border-radius: 0;
       color: #ebdbb2;
       font-family: inherit;
-      font-size: calc(16px * 0.937);
+      font-size: 14.992px;
       height: 40px;
       outline: none;
       padding: 4px 8px;
@@ -1278,9 +1254,9 @@ body {
         border: 2px solid #a89985;
         border-radius: 0;
         box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-          0px 30px 90px rgba(0, 0, 0, 0.2);
+          0px 1.8px 7.3px #00000012,
+          0px 6.3px 24.7px #0000001d,
+          0px 30px 90px #00000033;
         margin: 12vh auto;
         & > input {
           background-color: #292929;
@@ -1309,7 +1285,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: hsla(50 85% 40%/40%);
+            background-color: #bda00f66;
             color: #ebdbb2;
           }
           & > .preview-container {
@@ -1397,9 +1373,9 @@ body {
     border: 1px solid #4f4945;
     border-radius: 0;
     box-shadow:
-      0px 1px 2px rgba(0, 0, 0, 0.121),
-      0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-      0px 15px 30px rgba(0, 0, 0, 0.3);
+      0px 1px 2px #0000001f,
+      0px 3.4px 6.7px #0000002e,
+      0px 15px 30px #0000004d;
     display: flex;
     max-height: 95vh;
     position: absolute;

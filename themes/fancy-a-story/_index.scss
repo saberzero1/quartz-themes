@@ -22,11 +22,7 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --color-accent-2: hsl(
-    calc(194.8 - 5),
-    calc(83.1% * 1.05),
-    calc(16.3% * 1.29)
-  );
+  --color-accent-2: hsl(189.8, 87.255%, 21.027%);
   --color-accent-hsl: 194.8, 83.1%, 16.3%;
   --color-base-100: #d9d9d9;
   --color-base-30: color-mix(in lab, #272b34, #ffffff 20%);
@@ -39,12 +35,8 @@ html[saved-theme="dark"] {
   --color-pink: #f7bdf8;
   --color-purple: #c48bf3;
   --color-red: #f06565;
-  --text-accent: hsl(calc(194.8 - 3), calc(83.1% * 1.02), calc(16.3% * 1.15));
-  --color-accent-2: hsl(
-    calc(194.8 - 5),
-    calc(83.1% * 1.05),
-    calc(16.3% * 1.29)
-  );
+  --text-accent: hsl(191.8, 84.762%, 18.745%);
+  --color-accent-2: hsl(189.8, 87.255%, 21.027%);
   --color-accent-hsl: 194.8, 83.1%, 16.3%;
   --color-base-100: #d9d9d9;
   --color-base-30: color-mix(in lab, #272b34, #ffffff 20%);
@@ -57,7 +49,7 @@ html[saved-theme="dark"] {
   --color-pink: #f7bdf8;
   --color-purple: #c48bf3;
   --color-red: #f06565;
-  --text-accent: hsl(calc(194.8 - 3), calc(83.1% * 1.02), calc(16.3% * 1.15));
+  --text-accent: hsl(191.8, 84.762%, 18.745%);
 }
 
 :root[saved-theme="light"],
@@ -75,11 +67,7 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --color-accent-2: hsl(
-    calc(194.8 - 3),
-    calc(83.1% * 1.02),
-    calc(16.3% * 1.15)
-  );
+  --color-accent-2: hsl(191.8, 84.762%, 18.745%);
   --color-accent-hsl: 194.8, 83.1%, 16.3%;
   --color-base-100: #000000;
   --color-base-30: color-mix(in lab, #272b34, #ffffff 20%);
@@ -92,11 +80,7 @@ html[saved-theme="light"] {
   --color-pink: #e43eba;
   --color-purple: #641c7a;
   --color-red: #b13030;
-  --color-accent-2: hsl(
-    calc(194.8 - 3),
-    calc(83.1% * 1.02),
-    calc(16.3% * 1.15)
-  );
+  --color-accent-2: hsl(191.8, 84.762%, 18.745%);
   --color-accent-hsl: 194.8, 83.1%, 16.3%;
   --color-base-100: #000000;
   --color-base-30: color-mix(in lab, #272b34, #ffffff 20%);
@@ -325,30 +309,21 @@ html[saved-theme="light"] {
 
 :root {
   --color-accent-2: light-dark(
-    hsl(calc(194.8 - 5), calc(83.1% * 1.05), calc(16.3% * 1.29)),
-    hsl(calc(194.8 - 3), calc(83.1% * 1.02), calc(16.3% * 1.15))
+    hsl(189.8, 87.255%, 21.027%),
+    hsl(191.8, 84.762%, 18.745%)
   );
   --color-accent-hsl: light-dark(194.8, 83.1%, 16.3%, 194.8, 83.1%, 16.3%);
-  --color-base-100: light-dark(light-dark(#d9d9d9, #222222), #000000);
-  --color-base-30: light-dark(
-    light-dark(color-mix(in lab, #272b34, #ffffff 20%), #e0e0e0),
-    color-mix(in lab, #272b34, #ffffff 20%)
-  );
-  --color-base-35: light-dark(
-    light-dark(color-mix(in lab, #272b34, #ffffff 35%), #d4d4d4),
-    color-mix(in lab, #272b34, #ffffff 35%)
-  );
-  --color-base-40: light-dark(
-    light-dark(color-mix(in lab, #272b34, #ffffff 40%), #bdbdbd),
-    color-mix(in lab, #272b34, #ffffff 40%)
-  );
-  --color-blue: light-dark(light-dark(#6795e9, #086ddd), #323296);
-  --color-cyan: light-dark(light-dark(#7be2e2, #00bfbc), #319191);
-  --color-green: light-dark(light-dark(#60db60, #08b94e), #0d610d);
-  --color-orange: light-dark(light-dark(#eea444, #ec7500), #be6900);
-  --color-pink: light-dark(light-dark(#f7bdf8, #d53984), #e43eba);
-  --color-purple: light-dark(light-dark(#c48bf3, #7852ee), #641c7a);
-  --color-red: light-dark(light-dark(#f06565, #e93147), #b13030);
+  --color-base-100: light-dark(#dadada, #222222);
+  --color-base-30: light-dark(#363636, #e0e0e0);
+  --color-base-35: light-dark(#3f3f3f, #d4d4d4);
+  --color-base-40: light-dark(#555555, #bdbdbd);
+  --color-blue: light-dark(#027aff, #086ddd);
+  --color-cyan: light-dark(#53dfdd, #00bfbc);
+  --color-green: light-dark(#44cf6e, #08b94e);
+  --color-orange: light-dark(#e9973f, #ec7500);
+  --color-pink: light-dark(#fa99cd, #d53984);
+  --color-purple: light-dark(#a882ff, #7852ee);
+  --color-red: light-dark(#fb464c, #e93147);
 }
 body {
   --background-modifier-border: color-mix(in lab, #272b34, #ffffff 20%);
@@ -357,15 +332,11 @@ body {
   --background-modifier-hover: rgba(255, 255, 255, 0.067);
   --background-primary: #272b34;
   --bold-color: inherit;
-  --bold-weight: calc(400 + 500);
+  --bold-weight: 900;
   --checkbox-border-color: color-mix(in lab, #272b34, #ffffff 50%);
   --checkbox-border-color-hover: color-mix(in lab, #272b34, #ffffff 70%);
   --checkbox-color: hsl(194.8, 83.1%, 16.3%);
-  --checkbox-color-hover: hsl(
-    calc(194.8 - 3),
-    calc(83.1% * 1.02),
-    calc(16.3% * 1.15)
-  );
+  --checkbox-color-hover: hsl(191.8, 84.762%, 18.745%);
   --checkbox-marker-color: #272b34;
   --checkbox-radius: 0;
   --checkbox-size: 1.1rem;
@@ -381,11 +352,7 @@ body {
   --code-tag: #d2657c;
   --code-value: #ab82f5;
   --collapse-icon-color: color-mix(in lab, #272b34, #ffffff 50%);
-  --collapse-icon-color-collapsed: hsl(
-    calc(194.8 - 3),
-    calc(83.1% * 1.02),
-    calc(16.3% * 1.15)
-  );
+  --collapse-icon-color-collapsed: hsl(191.8, 84.762%, 18.745%);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -405,22 +372,10 @@ body {
   --inline-title-font: "Orbitron", Arial, serif;
   --interactive-accent-hsl: 194.8, 83.1%, 16.3%;
   --italic-color: inherit;
-  --link-color: hsl(calc(194.8 - 3), calc(83.1% * 1.02), calc(16.3% * 1.15));
-  --link-color-hover: hsl(
-    calc(194.8 - 5),
-    calc(83.1% * 1.05),
-    calc(16.3% * 1.29)
-  );
-  --link-external-color: hsl(
-    calc(194.8 - 3),
-    calc(83.1% * 1.02),
-    calc(16.3% * 1.15)
-  );
-  --link-external-color-hover: hsl(
-    calc(194.8 - 5),
-    calc(83.1% * 1.05),
-    calc(16.3% * 1.29)
-  );
+  --link-color: hsl(191.8, 84.762%, 18.745%);
+  --link-color-hover: hsl(189.8, 87.255%, 21.027%);
+  --link-external-color: hsl(191.8, 84.762%, 18.745%);
+  --link-external-color-hover: hsl(189.8, 87.255%, 21.027%);
   --link-external-filter: none;
   --link-weight: 400;
   --p-spacing: 1rem;
@@ -430,22 +385,14 @@ body {
   --tag-border-color: hsla(194.8, 83.1%, 16.3%, 0.15);
   --tag-border-color-hover: hsla(194.8, 83.1%, 16.3%, 0.15);
   --tag-border-width: 0px;
-  --tag-color: hsl(calc(194.8 - 3), calc(83.1% * 1.02), calc(16.3% * 1.15));
-  --tag-color-hover: hsl(
-    calc(194.8 - 3),
-    calc(83.1% * 1.02),
-    calc(16.3% * 1.15)
-  );
+  --tag-color: hsl(191.8, 84.762%, 18.745%);
+  --tag-color-hover: hsl(191.8, 84.762%, 18.745%);
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-radius: 2em;
   --tag-weight: inherit;
   --text-accent: hsl(194.8, 83.1%, 16.3%);
-  --text-accent-hover: hsl(
-    calc(194.8 - 5),
-    calc(83.1% * 1.05),
-    calc(16.3% * 1.29)
-  );
+  --text-accent-hover: hsl(189.8, 87.255%, 21.027%);
   --text-faint: color-mix(in lab, #272b34, #ffffff 50%);
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-muted: color-mix(in lab, #272b34, #ffffff 70%);
@@ -453,7 +400,7 @@ body {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-user-select: none;
   background-color: #ffffff;
-  caret-color: hsl(calc(194.8 - 3), calc(83.1% * 1.02), calc(16.3% * 1.15));
+  caret-color: hsl(191.8, 84.762%, 18.745%);
   color: black;
   contain: initial;
   font-family:
@@ -499,11 +446,7 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --color-accent-2: hsl(
-    calc(194.8 - 5),
-    calc(83.1% * 1.05),
-    calc(16.3% * 1.29)
-  );
+  --color-accent-2: hsl(189.8, 87.255%, 21.027%);
   --color-accent-hsl: 194.8, 83.1%, 16.3%;
   --color-base-100: #d9d9d9;
   --color-base-30: color-mix(in lab, #272b34, #ffffff 20%);
@@ -516,12 +459,8 @@ html[saved-theme="dark"] {
   --color-pink: #f7bdf8;
   --color-purple: #c48bf3;
   --color-red: #f06565;
-  --text-accent: hsl(calc(194.8 - 3), calc(83.1% * 1.02), calc(16.3% * 1.15));
-  --color-accent-2: hsl(
-    calc(194.8 - 5),
-    calc(83.1% * 1.05),
-    calc(16.3% * 1.29)
-  );
+  --text-accent: hsl(191.8, 84.762%, 18.745%);
+  --color-accent-2: hsl(189.8, 87.255%, 21.027%);
   --color-accent-hsl: 194.8, 83.1%, 16.3%;
   --color-base-100: #d9d9d9;
   --color-base-30: color-mix(in lab, #272b34, #ffffff 20%);
@@ -534,7 +473,7 @@ html[saved-theme="dark"] {
   --color-pink: #f7bdf8;
   --color-purple: #c48bf3;
   --color-red: #f06565;
-  --text-accent: hsl(calc(194.8 - 3), calc(83.1% * 1.02), calc(16.3% * 1.15));
+  --text-accent: hsl(191.8, 84.762%, 18.745%);
 }
 /* END DARK */
 /* START LIGHT */
@@ -553,11 +492,7 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --color-accent-2: hsl(
-    calc(194.8 - 3),
-    calc(83.1% * 1.02),
-    calc(16.3% * 1.15)
-  );
+  --color-accent-2: hsl(191.8, 84.762%, 18.745%);
   --color-accent-hsl: 194.8, 83.1%, 16.3%;
   --color-base-100: #000000;
   --color-base-30: color-mix(in lab, #272b34, #ffffff 20%);
@@ -570,11 +505,7 @@ html[saved-theme="light"] {
   --color-pink: #e43eba;
   --color-purple: #641c7a;
   --color-red: #b13030;
-  --color-accent-2: hsl(
-    calc(194.8 - 3),
-    calc(83.1% * 1.02),
-    calc(16.3% * 1.15)
-  );
+  --color-accent-2: hsl(191.8, 84.762%, 18.745%);
   --color-accent-hsl: 194.8, 83.1%, 16.3%;
   --color-base-100: #000000;
   --color-base-30: color-mix(in lab, #272b34, #ffffff 20%);
@@ -1387,11 +1318,7 @@ body {
                 background-color: transparent;
                 color: black;
                 &.match-tag {
-                  color: hsl(
-                    calc(194.8 - 3),
-                    calc(83.1% * 1.02),
-                    calc(16.3% * 1.15)
-                  );
+                  color: hsl(191.8, 84.762%, 18.745%);
                 }
               }
             }

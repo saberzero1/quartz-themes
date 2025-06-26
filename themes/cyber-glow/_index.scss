@@ -22,8 +22,8 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --code-background: rgba(30, 30, 30, 0.75);
-  --color-accent-2: hsl(calc(198 - 5), calc(63% * 1.05), calc(57% * 1.29));
+  --code-background: #1e1e1ebf;
+  --color-accent-2: #8fd5e8;
   --color-accent-hsl: 198, 63%, 57%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -36,9 +36,9 @@ html[saved-theme="dark"] {
   --color-pink: #fa99cd;
   --color-purple: #a882ff;
   --color-red: #fb464c;
-  --text-accent: hsl(198, 63%, calc(57% - 3.8%));
-  --code-background: rgba(30, 30, 30, 0.75);
-  --color-accent-2: hsl(calc(198 - 5), calc(63% * 1.05), calc(57% * 1.29));
+  --text-accent: #3ca6d3;
+  --code-background: #1e1e1ebf;
+  --color-accent-2: #8fd5e8;
   --color-accent-hsl: 198, 63%, 57%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -51,7 +51,7 @@ html[saved-theme="dark"] {
   --color-pink: #fa99cd;
   --color-purple: #a882ff;
   --color-red: #fb464c;
-  --text-accent: hsl(198, 63%, calc(57% - 3.8%));
+  --text-accent: #3ca6d3;
 }
 
 :root[saved-theme="light"],
@@ -69,8 +69,8 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --code-background: rgba(225, 225, 225, 0.75);
-  --color-accent-2: hsl(calc(198 - 3), calc(63% * 1.02), calc(57% * 1.15));
+  --code-background: #e1e1e1bf;
+  --color-accent-2: #6fc3e0;
   --color-accent-hsl: 198, 63%, 57%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -83,8 +83,8 @@ html[saved-theme="light"] {
   --color-pink: #d53984;
   --color-purple: #7852ee;
   --color-red: #e93147;
-  --code-background: rgba(225, 225, 225, 0.75);
-  --color-accent-2: hsl(calc(198 - 3), calc(63% * 1.02), calc(57% * 1.15));
+  --code-background: #e1e1e1bf;
+  --color-accent-2: #6fc3e0;
   --color-accent-hsl: 198, 63%, 57%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -171,20 +171,8 @@ html[saved-theme="light"] {
 }
 
 :root {
-  --code-background: light-dark(
-    rgba(30, 30, 30, 0.75),
-    rgba(225, 225, 225, 0.75)
-  );
-  --color-accent-2: light-dark(
-    hsl(calc(198 - 5), calc(63% * 1.05), calc(57% * 1.29)),
-    hsl(calc(198 - 3), calc(63% * 1.02), calc(57% * 1.15))
-  );
-  --color-accent-hsl: light-dark(
-    light-dark(198, 63%, 57%, 198, 63%, 57%),
-    198,
-    63%,
-    57%
-  );
+  --color-accent-2: light-dark(#8fd5e8, #6fc3e0);
+  --color-accent-hsl: light-dark(198, 63%, 57%, 198, 63%, 57%);
   --color-base-100: light-dark(#dadada, #222222);
   --color-base-30: light-dark(#363636, #e0e0e0);
   --color-base-35: light-dark(#3f3f3f, #d4d4d4);
@@ -201,15 +189,15 @@ body {
   --background-modifier-border: #363636;
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;
-  --background-modifier-hover: hsla(198, 63%, 57%, 0.15);
+  --background-modifier-hover: #4cadd626;
   --background-primary: #000;
   --bold-color: inherit;
-  --bold-weight: calc(600 + 200);
+  --bold-weight: 800;
   --checkbox-border-color: #b3b3b3;
   --checkbox-border-color-hover: #b3b3b3;
-  --checkbox-color: hsl(198, 63%, 57%);
-  --checkbox-color-hover: hsl(198, 63%, calc(57% - 3.8%));
-  --checkbox-marker-color: rgba(0, 0, 0, 0.45);
+  --checkbox-color: #4cadd6;
+  --checkbox-color-hover: #3ca6d3;
+  --checkbox-marker-color: #00000073;
   --checkbox-radius: 3px;
   --checkbox-size: 16px;
   --code-background: #111;
@@ -224,7 +212,7 @@ body {
   --code-tag: #fb464c;
   --code-value: #a882ff;
   --collapse-icon-color: #b3b3b3;
-  --collapse-icon-color-collapsed: hsl(198, 63%, calc(57% - 3.8%));
+  --collapse-icon-color-collapsed: #3ca6d3;
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -250,34 +238,34 @@ body {
   --interactive-accent-hsl: 198, 63%, 57%;
   --italic-color: inherit;
   --link-color: #ffa500;
-  --link-color-hover: hsl(calc(198 - 5), calc(63% * 1.05), calc(57% * 1.29));
+  --link-color-hover: #8fd5e8;
   --link-external-color: #ffc400;
   --link-external-color-hover: #ffc400;
   --link-external-filter: none;
   --link-weight: 600;
   --p-spacing: 1rem;
   --search-icon-color: #b3b3b3;
-  --tag-background: hsla(198, 63%, 57%, 0.1);
-  --tag-background-hover: hsla(198, 63%, 57%, 0.2);
-  --tag-border-color: hsla(198, 63%, 57%, 0.15);
-  --tag-border-color-hover: hsla(198, 63%, 57%, 0.15);
+  --tag-background: #4cadd61a;
+  --tag-background-hover: #4cadd633;
+  --tag-border-color: #4cadd626;
+  --tag-border-color-hover: #4cadd626;
   --tag-border-width: 0px;
-  --tag-color: hsl(198, 63%, calc(57% - 3.8%));
-  --tag-color-hover: hsl(198, 63%, calc(57% - 3.8%));
+  --tag-color: #3ca6d3;
+  --tag-color-hover: #3ca6d3;
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-radius: 2em;
   --tag-weight: inherit;
-  --text-accent: hsl(198, 63%, 57%);
-  --text-accent-hover: hsl(calc(198 - 5), calc(63% * 1.05), calc(57% * 1.29));
+  --text-accent: #4cadd6;
+  --text-accent-hover: #8fd5e8;
   --text-faint: #b3b3b3;
-  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-highlight-bg: #ffd00066;
   --text-muted: #b3b3b3;
   --text-normal: #dadada;
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: rgba(0, 0, 0, 0.45);
-  caret-color: hsl(198, 63%, calc(57% - 3.8%));
+  background-color: #00000073;
+  caret-color: #3ca6d3;
   color: #dadada;
   contain: initial;
   font-family:
@@ -329,8 +317,8 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --code-background: rgba(30, 30, 30, 0.75);
-  --color-accent-2: hsl(calc(198 - 5), calc(63% * 1.05), calc(57% * 1.29));
+  --code-background: #1e1e1ebf;
+  --color-accent-2: #8fd5e8;
   --color-accent-hsl: 198, 63%, 57%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -343,9 +331,9 @@ html[saved-theme="dark"] {
   --color-pink: #fa99cd;
   --color-purple: #a882ff;
   --color-red: #fb464c;
-  --text-accent: hsl(198, 63%, calc(57% - 3.8%));
-  --code-background: rgba(30, 30, 30, 0.75);
-  --color-accent-2: hsl(calc(198 - 5), calc(63% * 1.05), calc(57% * 1.29));
+  --text-accent: #3ca6d3;
+  --code-background: #1e1e1ebf;
+  --color-accent-2: #8fd5e8;
   --color-accent-hsl: 198, 63%, 57%;
   --color-base-100: #dadada;
   --color-base-30: #363636;
@@ -358,7 +346,7 @@ html[saved-theme="dark"] {
   --color-pink: #fa99cd;
   --color-purple: #a882ff;
   --color-red: #fb464c;
-  --text-accent: hsl(198, 63%, calc(57% - 3.8%));
+  --text-accent: #3ca6d3;
 }
 /* END DARK */
 /* START LIGHT */
@@ -377,8 +365,8 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --code-background: rgba(225, 225, 225, 0.75);
-  --color-accent-2: hsl(calc(198 - 3), calc(63% * 1.02), calc(57% * 1.15));
+  --code-background: #e1e1e1bf;
+  --color-accent-2: #6fc3e0;
   --color-accent-hsl: 198, 63%, 57%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -391,8 +379,8 @@ html[saved-theme="light"] {
   --color-pink: #d53984;
   --color-purple: #7852ee;
   --color-red: #e93147;
-  --code-background: rgba(225, 225, 225, 0.75);
-  --color-accent-2: hsl(calc(198 - 3), calc(63% * 1.02), calc(57% * 1.15));
+  --code-background: #e1e1e1bf;
+  --color-accent-2: #6fc3e0;
   --color-accent-hsl: 198, 63%, 57%;
   --color-base-100: #222222;
   --color-base-30: #e0e0e0;
@@ -412,7 +400,7 @@ html[saved-theme="light"] {
 html {
   .callout {
     background-color: transparent;
-    border-color: rgba(102, 187, 106, 0.25);
+    border-color: #66bb6a40;
     border-radius: 3px;
     border-style: solid;
     border-width: 0px;
@@ -508,7 +496,7 @@ html {
   }
   .callout-title {
     align-items: flex-start;
-    color: rgb(102, 187, 106);
+    color: #66bb6a;
     display: flex;
     font-size: inherit;
     gap: 4px;
@@ -524,13 +512,13 @@ html {
     }
   }
   & > .callout-content {
-    background-color: rgba(102, 187, 106, 0.3);
+    background-color: #66bb6a4d;
     border-bottom: 2px solid;
     border-image-slice: 1;
     border-image-source: linear-gradient(
       to right,
       transparent,
-      rgb(102, 187, 106),
+      #66bb6a,
       transparent
     );
     border-radius: 0 0 5px 5px;
@@ -545,13 +533,13 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: #00000073;
   section,
   .page > #quartz-body .sidebar {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: rgba(0, 0, 0, 0.45);
+      background-color: #00000073;
     }
   }
   .highlight,
@@ -841,14 +829,14 @@ body {
   }
   /* CODE */
   pre {
-    background-color: rgba(30, 30, 30, 0.75);
+    background-color: #1e1e1ebf;
     border: 0px solid transparent;
     border-bottom: 1px solid;
     border-image-slice: 1;
     border-image-source: linear-gradient(
       to right,
       transparent,
-      hsl(198, 63%, calc(57% - 3.8%)),
+      #3ca6d3,
       transparent
     );
     border-radius: 3px;
@@ -869,7 +857,7 @@ body {
   }
   code {
     -webkit-box-decoration-break: clone;
-    background-color: rgba(30, 30, 30, 0.75);
+    background-color: #1e1e1ebf;
     border: 0px solid transparent;
     border-radius: 3px;
     color: #dadada;
@@ -930,8 +918,8 @@ body {
   .clipboard-button {
     background-color: transparent;
     border-radius: 3px;
-    box-shadow: inset 0em 0em 12.5px hsl(198, 63%, calc(57% - 3.8%));
-    color: white;
+    box-shadow: inset 0em 0em 12.5px #3ca6d3;
+    color: #ffffff;
     display: inline;
     font-family:
       "??",
@@ -954,7 +942,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-size: calc(16px * 0.8);
+    font-size: 12.8px;
     height: auto;
     inset-inline-end: 0;
     margin: 6px;
@@ -964,12 +952,12 @@ body {
     user-select: none;
     &:hover {
       animation: 0.3s bighover forwards;
-      background-color: hsla(198, 63%, 57%, 0.25);
+      background-color: #4cadd640;
       border-radius: 3px;
       box-shadow:
-        0em 0em 0.8px 1.2px hsl(198, 63%, calc(57% - 3.8%)),
-        inset 0em 0em 15px hsl(198, 63%, calc(57% - 3.8%));
-      color: white;
+        0em 0em 0.8px 1.2px #3ca6d3,
+        inset 0em 0em 15px #3ca6d3;
+      color: #ffffff;
       transition:
         background-color 0.2s,
         box-shadow 0.2s;
@@ -1028,7 +1016,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: rgba(0, 0, 0, 0.45);
+        background-color: #00000073;
       }
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
@@ -1065,7 +1053,7 @@ body {
         -webkit-mask-image: var(--folder-open-icon);
       }
       .folder-outer > ul.content {
-        border-inline-start: 1px solid hsl(198, 63%, calc(57% - 3.8%));
+        border-inline-start: 1px solid #3ca6d3;
         margin-bottom: 1px;
         margin-inline-start: 12px;
         padding-inline-start: 4px;
@@ -1085,7 +1073,7 @@ body {
           padding: 6px 8px 6px 24px;
           &.active,
           &:hover {
-            background-color: hsla(198, 63%, 57%, 0.15);
+            background-color: #4cadd626;
             color: #dadada;
             font-weight: inherit;
           }
@@ -1224,14 +1212,14 @@ body {
   .search {
     & > .search-button {
       -webkit-app-region: no-drag;
-      background: rgba(78, 75, 75, 0.2);
+      background: #4e4b4b33;
       border: 1px solid transparent;
-      border-bottom: 1px solid hsl(198, 63%, calc(57% - 3.8%));
+      border-bottom: 1px solid #3ca6d3;
       border-image-slice: 1;
       border-image-source: linear-gradient(
         to right,
         transparent,
-        hsl(198, 63%, calc(57% - 3.8%)),
+        #3ca6d3,
         transparent
       );
       border-left: 0px solid transparent;
@@ -1240,7 +1228,7 @@ body {
       border-top: 1px solid;
       color: #dadada;
       font-family: inherit;
-      font-size: calc(16px * 0.937);
+      font-size: 14.992px;
       height: 40px;
       outline: none;
       padding: 4px 8px;
@@ -1252,24 +1240,24 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: rgba(0, 0, 0, 0.45);
+        background-color: #00000073;
         border: 0.5pt solid #555555;
         border-radius: 10px;
         box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-          0px 30px 90px rgba(0, 0, 0, 0.2);
+          0px 1.8px 7.3px #00000012,
+          0px 6.3px 24.7px #0000001d,
+          0px 30px 90px #00000033;
         margin: 12vh auto;
         & > input {
-          background: rgba(78, 75, 75, 0.2);
-          background-color: hsla(198, calc(63% - 25%), calc(57% - 30%), 0.65);
+          background: #4e4b4b33;
+          background-color: #2b4f5fa6;
           border: none;
-          border-bottom: 1px solid rgba(30, 30, 30, 0.45);
+          border-bottom: 1px solid #1e1e1e73;
           border-image-slice: 1;
           border-image-source: linear-gradient(
             to right,
             transparent,
-            hsl(198, 63%, calc(57% - 3.8%)),
+            #3ca6d3,
             transparent
           );
           border-radius: 5px;
@@ -1297,7 +1285,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: rgba(255, 208, 0, 0.4);
+            background-color: #ffd00066;
             color: #dadada;
           }
           & > .preview-container {
@@ -1314,7 +1302,7 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: hsla(198, 63%, 57%, 0.15);
+                background-color: #4cadd626;
               }
               & > ul > li > p {
                 background-color: transparent;
@@ -1381,13 +1369,13 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: #00000073;
     border: 1px solid transparent;
     border-radius: 3px;
     box-shadow:
-      0px 1px 2px rgba(0, 0, 0, 0.121),
-      0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-      0px 15px 30px rgba(0, 0, 0, 0.3);
+      0px 1px 2px #0000001f,
+      0px 3.4px 6.7px #0000002e,
+      0px 15px 30px #0000004d;
     display: flex;
     max-height: 95vh;
     position: absolute;
@@ -1399,7 +1387,7 @@ body {
     border: unset;
     & .popover-inner {
       border: 1px solid transparent;
-      background-color: rgba(0, 0, 0, 0.45);
+      background-color: #00000073;
 
       border-radius: 3px;
     }

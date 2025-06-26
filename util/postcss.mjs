@@ -327,8 +327,16 @@ export function getCombinedThemeVariables(cssString, darkThemeSelector = ".theme
   const root = postcss.parse(cssString)
   const combinedVariables = {}
 
+  const isColorVariable = (value) => {
+    // Check if the value is a color variable
+    return value.startsWith("var(--") || value.startsWith("#") || value.startsWith("rgb(") || value.startsWith("hsl(") || value.startsWith("oklch(") || value.startsWith("oklab(")
+  }
+
   // Helper function to create tuples of light and dark variables
   const createLightDarkTuple = (lightVar, darkVar) => {
+    if (!isColorVariable(lightVar) || !isColorVariable(darkVar)) {
+      return "none";
+    }
     return `light-dark(${lightVar}, ${darkVar})`
   }
 
