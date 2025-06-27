@@ -354,136 +354,163 @@ html {
     &[data-callout] {
       --callout-color: 97, 153, 191;
       background-color: #9e9e9e1a;
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="abstract"] {
       --callout-color: 97, 177, 191;
       background-color: #9e9e9e1a;
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="summary"] {
       --callout-color: 97, 177, 191;
       background-color: #9e9e9e1a;
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="tldr"] {
       --callout-color: 97, 177, 191;
       background-color: #9e9e9e1a;
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="info"] {
       --callout-color: 97, 153, 191;
       background-color: #9e9e9e1a;
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="todo"] {
       --callout-color: 97, 153, 191;
       background-color: #9e9e9e1a;
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="important"] {
       --callout-color: 97, 177, 191;
       background-color: #9e9e9e1a;
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="tip"] {
       --callout-color: 97, 177, 191;
       background-color: #9e9e9e1a;
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="hint"] {
       --callout-color: 97, 177, 191;
       background-color: #9e9e9e1a;
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="success"] {
       --callout-color: 163, 190, 140;
       background-color: #9e9e9e1a;
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="check"] {
       --callout-color: 163, 190, 140;
       background-color: #9e9e9e1a;
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="done"] {
       --callout-color: 163, 190, 140;
       background-color: #9e9e9e1a;
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="question"] {
       --callout-color: 208, 135, 112;
       background-color: #9e9e9e1a;
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="help"] {
       --callout-color: 208, 135, 112;
       background-color: #9e9e9e1a;
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="faq"] {
       --callout-color: 208, 135, 112;
       background-color: #9e9e9e1a;
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="warning"] {
       --callout-color: 208, 135, 112;
       background-color: #9e9e9e1a;
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="caution"] {
       --callout-color: 208, 135, 112;
       background-color: #9e9e9e1a;
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="attention"] {
       --callout-color: 208, 135, 112;
       background-color: #9e9e9e1a;
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="failure"] {
       --callout-color: 191, 97, 106;
       background-color: #9e9e9e1a;
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="fail"] {
       --callout-color: 191, 97, 106;
       background-color: #9e9e9e1a;
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="missing"] {
       --callout-color: 191, 97, 106;
       background-color: #9e9e9e1a;
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="danger"] {
       --callout-color: 191, 97, 106;
       background-color: #9e9e9e1a;
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="error"] {
       --callout-color: 191, 97, 106;
       background-color: #9e9e9e1a;
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="bug"] {
       --callout-color: 191, 97, 106;
       background-color: #9e9e9e1a;
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="example"] {
       --callout-color: 149, 142, 180;
       background-color: #9e9e9e1a;
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="quote"] {
       --callout-color: 158, 158, 158;
       background-color: #9e9e9e1a;
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="cite"] {
       --callout-color: 158, 158, 158;
       background-color: #9e9e9e1a;
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
   }
@@ -501,6 +528,7 @@ html {
       --font-weight: 800;
       color: inherit;
       font-weight: 600;
+      color: var(--color);
     }
     .callout-title-inner {
       --font-weight: 800;

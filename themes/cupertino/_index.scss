@@ -360,136 +360,163 @@ html {
     &[data-callout] {
       --callout-color: 0, 122, 255;
       background-color: rgba(hsl(258, 88%, 66%), 0.15);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="abstract"] {
       --callout-color: 85, 190, 240;
       background-color: rgba(hsl(258, 88%, 66%), 0.15);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="summary"] {
       --callout-color: 85, 190, 240;
       background-color: rgba(hsl(258, 88%, 66%), 0.15);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="tldr"] {
       --callout-color: 85, 190, 240;
       background-color: rgba(hsl(258, 88%, 66%), 0.15);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="info"] {
       --callout-color: 0, 122, 255;
       background-color: rgba(hsl(258, 88%, 66%), 0.15);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="todo"] {
       --callout-color: 0, 122, 255;
       background-color: rgba(hsl(258, 88%, 66%), 0.15);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="important"] {
       --callout-color: 85, 190, 240;
       background-color: rgba(hsl(258, 88%, 66%), 0.15);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="tip"] {
       --callout-color: 85, 190, 240;
       background-color: rgba(hsl(258, 88%, 66%), 0.15);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="hint"] {
       --callout-color: 85, 190, 240;
       background-color: rgba(hsl(258, 88%, 66%), 0.15);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="success"] {
       --callout-color: 40, 205, 65;
       background-color: rgba(hsl(258, 88%, 66%), 0.15);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="check"] {
       --callout-color: 40, 205, 65;
       background-color: rgba(hsl(258, 88%, 66%), 0.15);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="done"] {
       --callout-color: 40, 205, 65;
       background-color: rgba(hsl(258, 88%, 66%), 0.15);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="question"] {
       --callout-color: 255, 149, 0;
       background-color: rgba(hsl(258, 88%, 66%), 0.15);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="help"] {
       --callout-color: 255, 149, 0;
       background-color: rgba(hsl(258, 88%, 66%), 0.15);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="faq"] {
       --callout-color: 255, 149, 0;
       background-color: rgba(hsl(258, 88%, 66%), 0.15);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="warning"] {
       --callout-color: 255, 149, 0;
       background-color: rgba(hsl(258, 88%, 66%), 0.15);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="caution"] {
       --callout-color: 255, 149, 0;
       background-color: rgba(hsl(258, 88%, 66%), 0.15);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="attention"] {
       --callout-color: 255, 149, 0;
       background-color: rgba(hsl(258, 88%, 66%), 0.15);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="failure"] {
       --callout-color: 255, 59, 48;
       background-color: rgba(hsl(258, 88%, 66%), 0.15);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="fail"] {
       --callout-color: 255, 59, 48;
       background-color: rgba(hsl(258, 88%, 66%), 0.15);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="missing"] {
       --callout-color: 255, 59, 48;
       background-color: rgba(hsl(258, 88%, 66%), 0.15);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="danger"] {
       --callout-color: 255, 59, 48;
       background-color: rgba(hsl(258, 88%, 66%), 0.15);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="error"] {
       --callout-color: 255, 59, 48;
       background-color: rgba(hsl(258, 88%, 66%), 0.15);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="bug"] {
       --callout-color: 255, 59, 48;
       background-color: rgba(hsl(258, 88%, 66%), 0.15);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="example"] {
       --callout-color: 175, 82, 222;
       background-color: rgba(hsl(258, 88%, 66%), 0.15);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="quote"] {
       --callout-color: 158, 158, 158;
       background-color: rgba(hsl(258, 88%, 66%), 0.15);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="cite"] {
       --callout-color: 158, 158, 158;
       background-color: rgba(hsl(258, 88%, 66%), 0.15);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
   }
@@ -505,6 +532,7 @@ html {
       --font-weight: 900;
       color: inherit;
       font-weight: 600;
+      color: var(--color);
     }
     .callout-title-inner {
       --font-weight: 900;
