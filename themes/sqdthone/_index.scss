@@ -1023,7 +1023,7 @@ body {
       }
       .folder-outer > ul.content {
         border-bottom-left-radius: 1%;
-        border-color: hsl(light-dark(300, 6%, 30%, 168, 50%, 54%));
+        border-color: light-dark(hsl(300, 6%, 30%), hsl(168, 50%, 54%));
         border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
         margin-bottom: 1px;
         margin-inline-start: 12px;
