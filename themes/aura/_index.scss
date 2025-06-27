@@ -235,6 +235,11 @@ body {
   --background-primary: light-dark(#110719, #110719);
   --bold-color: light-dark(#ff5555, #ff5555);
   --bold-weight: 800;
+  --callout-fail: 251, 70, 76;
+  --callout-important: 83, 223, 221;
+  --callout-success: 68, 207, 110;
+  --callout-summary: 83, 223, 221;
+  --callout-tip: 83, 223, 221;
   --checkbox-border-color: #e27affb3;
   --checkbox-border-color-hover: #e27affb3;
   --checkbox-color: #ff79c6;
@@ -339,6 +344,7 @@ body {
 :root,
 html {
   .callout {
+    --callout-color: 2, 122, 255;
     background-color: #bd93f91a;
     border-color: #bd93f940;
     border-radius: 3px;
@@ -349,88 +355,144 @@ html {
     overflow: hidden;
     padding: 0;
     background-color: #bd93f91a;
+    background-color: var(--bg);
+    border-color: var(--border);
     overflow-x: auto;
     overflow-y: hidden;
     &[data-callout] {
+      --callout-color: 2, 122, 255;
       background-color: #bd93f91a;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="abstract"] {
+      --callout-color: var(--callout-summary);
       background-color: #bd93f91a;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="summary"] {
+      --callout-color: var(--callout-summary);
       background-color: #bd93f91a;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="tldr"] {
+      --callout-color: var(--callout-summary);
       background-color: #bd93f91a;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="info"] {
+      --callout-color: 83, 223, 221;
       background-color: #bd93f91a;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="todo"] {
+      --callout-color: 83, 223, 221;
       background-color: #bd93f91a;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="important"] {
+      --callout-color: var(--callout-important);
       background-color: #bd93f91a;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="tip"] {
+      --callout-color: var(--callout-tip);
       background-color: #bd93f91a;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="hint"] {
+      --callout-color: var(--callout-tip);
       background-color: #bd93f91a;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="success"] {
+      --callout-color: var(--callout-success);
       background-color: #bd93f91a;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="check"] {
+      --callout-color: var(--callout-success);
       background-color: #bd93f91a;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="done"] {
+      --callout-color: var(--callout-success);
       background-color: #bd93f91a;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="question"] {
+      --callout-color: 68, 207, 110;
       background-color: #bd93f91a;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="help"] {
+      --callout-color: 68, 207, 110;
       background-color: #bd93f91a;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="faq"] {
+      --callout-color: 68, 207, 110;
       background-color: #bd93f91a;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="warning"] {
+      --callout-color: 233, 151, 63;
       background-color: #bd93f91a;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="caution"] {
+      --callout-color: 233, 151, 63;
       background-color: #bd93f91a;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="attention"] {
+      --callout-color: 233, 151, 63;
       background-color: #bd93f91a;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="failure"] {
+      --callout-color: var(--callout-fail);
       background-color: #bd93f91a;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="fail"] {
+      --callout-color: var(--callout-fail);
       background-color: #bd93f91a;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="missing"] {
+      --callout-color: var(--callout-fail);
       background-color: #bd93f91a;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="danger"] {
+      --callout-color: 251, 70, 76;
       background-color: #bd93f91a;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="error"] {
+      --callout-color: 251, 70, 76;
       background-color: #bd93f91a;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="bug"] {
+      --callout-color: 250, 153, 205;
       background-color: #bd93f91a;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="example"] {
+      --callout-color: 168, 130, 255;
       background-color: #bd93f91a;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="quote"] {
+      --callout-color: 125, 164, 247;
       background-color: #bd93f91a;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="cite"] {
+      --callout-color: 125, 164, 247;
       background-color: #bd93f91a;
+      --bg: rgba(var(--callout-color), 0.1);
     }
   }
   .callout-title {

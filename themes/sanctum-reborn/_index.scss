@@ -398,6 +398,7 @@ body {
 :root,
 html {
   .callout {
+    --callout-color: 2, 122, 255;
     background-color: #00000033;
     border: 0px solid #0000004d;
     border-color: #0000004d;
@@ -409,88 +410,144 @@ html {
     overflow: hidden;
     padding: 16px 12px;
     background-color: #00000033;
+    background-color: var(--bg);
+    border-color: var(--border);
     overflow-x: auto;
     overflow-y: hidden;
     &[data-callout] {
+      --callout-color: 2, 122, 255;
       background-color: #00000033;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="abstract"] {
+      --callout-color: 104, 145, 181;
       background-color: #00000033;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="summary"] {
+      --callout-color: 104, 145, 181;
       background-color: #00000033;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="tldr"] {
+      --callout-color: 104, 145, 181;
       background-color: #00000033;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="info"] {
+      --callout-color: 99, 149, 156;
       background-color: #00000033;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="todo"] {
+      --callout-color: 99, 149, 156;
       background-color: #00000033;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="important"] {
+      --callout-color: 92, 153, 124;
       background-color: #00000033;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="tip"] {
+      --callout-color: 92, 153, 124;
       background-color: #00000033;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="hint"] {
+      --callout-color: 92, 153, 124;
       background-color: #00000033;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="success"] {
+      --callout-color: 102, 153, 97;
       background-color: #00000033;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="check"] {
+      --callout-color: 102, 153, 97;
       background-color: #00000033;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="done"] {
+      --callout-color: 102, 153, 97;
       background-color: #00000033;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="question"] {
+      --callout-color: 141, 147, 25;
       background-color: #00000033;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="help"] {
+      --callout-color: 141, 147, 25;
       background-color: #00000033;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="faq"] {
+      --callout-color: 141, 147, 25;
       background-color: #00000033;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="warning"] {
+      --callout-color: 184, 131, 0;
       background-color: #00000033;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="caution"] {
+      --callout-color: 184, 131, 0;
       background-color: #00000033;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="attention"] {
+      --callout-color: 184, 131, 0;
       background-color: #00000033;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="failure"] {
+      --callout-color: 226, 105, 52;
       background-color: #00000033;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="fail"] {
+      --callout-color: 226, 105, 52;
       background-color: #00000033;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="missing"] {
+      --callout-color: 226, 105, 52;
       background-color: #00000033;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="danger"] {
+      --callout-color: 243, 90, 55;
       background-color: #00000033;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="error"] {
+      --callout-color: 243, 90, 55;
       background-color: #00000033;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="bug"] {
+      --callout-color: 236, 90, 118;
       background-color: #00000033;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="example"] {
+      --callout-color: 165, 119, 218;
       background-color: #00000033;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="quote"] {
+      --callout-color: 142, 140, 139;
       background-color: #00000033;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="cite"] {
+      --callout-color: 142, 140, 139;
       background-color: #00000033;
+      --bg: rgba(var(--callout-color), 0.1);
     }
   }
   .callout-title {
