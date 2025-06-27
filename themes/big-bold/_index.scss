@@ -1520,7 +1520,6 @@ body {
     font-size: 1em;
     line-height: 1em;
     padding: 0.15em 0.3em;
-    color: var(--code-normal, var(--text-normal));
   }
   .clipboard-button {
     background-color: transparent;
@@ -1644,6 +1643,7 @@ body {
           padding-bottom: 6.6px;
           padding-top: 6.6px;
           transition: font-size 65ms;
+          color: inherit;
           &.active,
           &:hover {
             background-color: transparent;
@@ -1702,6 +1702,7 @@ body {
         color: #3e3a4f;
         font-weight: inherit;
         font-size: 16px;
+        color: inherit;
       }
     }
   }

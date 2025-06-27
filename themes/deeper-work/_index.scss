@@ -773,7 +773,6 @@ body {
     font-family: "JetBrains Mono", "Consolas", monospace;
     font-size: 1em;
     padding: 0.15em 0.3em;
-    color: var(--code-normal, var(--text-normal));
   }
   .clipboard-button {
     background-color: transparent;
@@ -909,6 +908,7 @@ body {
           margin-bottom: 2px;
           padding: 6px 8px 6px 24px;
           width: 100%;
+          color: inherit;
           &.active,
           &:hover {
             background-color: #ffffff26;
@@ -963,6 +963,7 @@ body {
         color: #ffffff;
         font-weight: inherit;
         font-size: 16px;
+        color: inherit;
       }
     }
   }

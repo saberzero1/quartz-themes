@@ -786,7 +786,6 @@ body {
     font-family: "Consolas", "Monaco", "Source Code Pro", monospace;
     font-size: 1em;
     padding: 0.15em 0.3em;
-    color: var(--code-normal, var(--text-normal));
   }
   .clipboard-button {
     background-color: transparent;
@@ -930,6 +929,7 @@ body {
           position: relative;
           white-space: normal;
           width: auto;
+          color: inherit;
           &.active,
           &:hover {
             --text-normal: #ffffff;
@@ -985,6 +985,7 @@ body {
         color: #ffffff;
         font-weight: inherit;
         font-size: 16px;
+        color: inherit;
       }
     }
   }
