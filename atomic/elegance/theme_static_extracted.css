@@ -1256,7 +1256,7 @@ h6 {
 }
 
 .callout-icon .svg-icon {
-  color: rgb(rgba(103, 161, 149, 0.459));
+  color: rgba(103, 161, 149, 0.459);
 }
 
 .callout-icon::after {

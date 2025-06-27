@@ -11835,7 +11835,7 @@ kbd {
 
 .callout-title {
   align-items: flex-start;
-  color: rgb(hsl(258, 88%, 66%));
+  color: hsl(258, 88%, 66%);
   display: flex;
   font-size: inherit;
   gap: 4px;
@@ -11860,7 +11860,7 @@ kbd {
 }
 
 .callout-icon .svg-icon {
-  color: rgb(hsl(258, 88%, 66%));
+  color: hsl(258, 88%, 66%);
 }
 
 .callout-icon::after {
@@ -31169,79 +31169,79 @@ li[data-task="d"] > p > input:checked::after {
 .callout-icon .lucide-pencil {
   -webkit-mask-position: 50% 50%;
   -webkit-mask-size: 100% 100%;
-  background-color: rgb(hsl(258, 88%, 66%));
+  background-color: hsl(258, 88%, 66%);
 }
 
 .callout-icon .lucide-clipboard-list {
   -webkit-mask-position: 50% 50%;
   -webkit-mask-size: 100% 100%;
-  background-color: rgb(hsl(258, 88%, 66%));
+  background-color: hsl(258, 88%, 66%);
 }
 
 .callout-icon .lucide-info {
   -webkit-mask-position: 50% 50%;
   -webkit-mask-size: 100% 100%;
-  background-color: rgb(hsl(258, 88%, 66%));
+  background-color: hsl(258, 88%, 66%);
 }
 
 .callout-icon .lucide-check-circle-2 {
   -webkit-mask-position: 50% 50%;
   -webkit-mask-size: 100% 100%;
-  background-color: rgb(hsl(258, 88%, 66%));
+  background-color: hsl(258, 88%, 66%);
 }
 
 .callout-icon .lucide-flame {
   -webkit-mask-position: 50% 50%;
   -webkit-mask-size: 100% 100%;
-  background-color: rgb(hsl(258, 88%, 66%));
+  background-color: hsl(258, 88%, 66%);
 }
 
 .callout-icon .lucide-check {
   -webkit-mask-position: 50% 50%;
   -webkit-mask-size: 100% 100%;
-  background-color: rgb(hsl(258, 88%, 66%));
+  background-color: hsl(258, 88%, 66%);
 }
 
 .callout-icon .lucide-help-circle {
   -webkit-mask-position: 50% 50%;
   -webkit-mask-size: 100% 100%;
-  background-color: rgb(hsl(258, 88%, 66%));
+  background-color: hsl(258, 88%, 66%);
 }
 
 .callout-icon .lucide-alert-triangle {
   -webkit-mask-position: 50% 50%;
   -webkit-mask-size: 100% 100%;
-  background-color: rgb(hsl(258, 88%, 66%));
+  background-color: hsl(258, 88%, 66%);
 }
 
 .callout-icon .lucide-x {
   -webkit-mask-position: 50% 50%;
   -webkit-mask-size: 100% 100%;
-  background-color: rgb(hsl(258, 88%, 66%));
+  background-color: hsl(258, 88%, 66%);
 }
 
 .callout-icon .lucide-zap {
   -webkit-mask-position: 50% 50%;
   -webkit-mask-size: 100% 100%;
-  background-color: rgb(hsl(258, 88%, 66%));
+  background-color: hsl(258, 88%, 66%);
 }
 
 .callout-icon .lucide-bug {
   -webkit-mask-position: 50% 50%;
   -webkit-mask-size: 100% 100%;
-  background-color: rgb(hsl(258, 88%, 66%));
+  background-color: hsl(258, 88%, 66%);
 }
 
 .callout-icon .lucide-list {
   -webkit-mask-position: 50% 50%;
   -webkit-mask-size: 100% 100%;
-  background-color: rgb(hsl(258, 88%, 66%));
+  background-color: hsl(258, 88%, 66%);
 }
 
 .callout-icon .lucide-quote {
   -webkit-mask-position: 50% 50%;
   -webkit-mask-size: 100% 100%;
-  background-color: rgb(hsl(258, 88%, 66%));
+  background-color: hsl(258, 88%, 66%);
 }
 
 .callout-icon .lucide-pencil path {

@@ -13467,7 +13467,7 @@ kbd {
 
 .callout-title {
   align-items: flex-start;
-  color: rgb(hsl(0, 49%, 49%));
+  color: hsl(0, 49%, 49%);
   display: flex;
   font-size: inherit;
   gap: 4px;
@@ -13493,7 +13493,7 @@ kbd {
 }
 
 .callout-icon .svg-icon {
-  color: rgb(hsl(0, 49%, 49%));
+  color: hsl(0, 49%, 49%);
 }
 
 .callout-icon::after {
@@ -17887,12 +17887,12 @@ ul > li.task-list-item[data-task="X"] {
 }
 
 b {
-  color: rgb(hsl(0, 49%, 49%));
+  color: hsl(0, 49%, 49%);
   font-weight: 1100;
 }
 
 strong {
-  color: rgb(hsl(0, 49%, 49%));
+  color: hsl(0, 49%, 49%);
   font-weight: 1100;
 }
 
@@ -17940,7 +17940,7 @@ em {
 }
 
 .cm-strong {
-  color: rgb(hsl(0, 49%, 49%));
+  color: hsl(0, 49%, 49%);
   font-weight: 1100;
 }
 
@@ -37445,7 +37445,7 @@ body:not(.callout-no-metadata)
 body:not(.callout-no-metadata)
   .callout.callout[data-callout~="Metadata" i]
   .callout-title-inner {
-  color: rgb(hsl(0, 49%, 49%));
+  color: hsl(0, 49%, 49%);
   flex: unset;
 }
 
@@ -37454,13 +37454,13 @@ body:not(.callout-no-metadata)
     [data-callout-metadata~="no-strong"],
     [data-callout-metadata~="no-str"]
   ) {
-  --bold-color: rgb(hsl(0, 49%, 49%));
+  --bold-color: hsl(0, 49%, 49%);
 }
 
 body:not(.callout-no-metadata)
   .callout.callout[data-callout~="Metadata" i]
   .dataview.inline-field-key {
-  background: rgb(hsl(0, 49%, 49%));
+  background: hsl(0, 49%, 49%);
   color: light-dark(light-dark(#e5ebee, #e5ebee), light-dark(#e5ebee, #e5ebee));
   font-weight: 900;
 }
@@ -38001,7 +38001,7 @@ body:not(.callout-no-metadata)
 }
 
 .callout.callout[data-callout~="timeline"] .callout-title em {
-  color: rgb(hsl(0, 49%, 49%));
+  color: hsl(0, 49%, 49%);
   display: block;
   font-size: 14px;
   font-style: normal;
@@ -38122,7 +38122,7 @@ body:not(.callout-no-metadata)
 }
 
 .callout[data-callout="kith"] .callout-title-inner {
-  color: rgb(hsl(0, 49%, 49%));
+  color: hsl(0, 49%, 49%);
   font-weight: unset;
 }
 
@@ -38596,11 +38596,11 @@ body:not(.default-callout-quote, .callout-no-quote)
 }
 
 .callout-alternate-line .callout .callout-fold {
-  color: rgb(hsl(0, 49%, 49%));
+  color: hsl(0, 49%, 49%);
 }
 
 .callout.callout[data-callout-metadata~="alt-line"] .callout-fold {
-  color: rgb(hsl(0, 49%, 49%));
+  color: hsl(0, 49%, 49%);
 }
 
 .callout-alternate-line .callout .callout-content.callout-content {
@@ -39456,12 +39456,12 @@ body.canvas-milanote.canvas-milanote {
 
 .table.table {
   --table-style-column-header-background: #eef3fd;
-  --table-style-column-header-bold-color: rgb(hsl(0, 49%, 49%));
+  --table-style-column-header-bold-color: hsl(0, 49%, 49%);
   --table-style-column-header-bold-weight: 900;
 }
 
 .table.table td:nth-child(1) {
-  color: rgb(hsl(0, 49%, 49%));
+  color: hsl(0, 49%, 49%);
   font-weight: 900;
 }
 
