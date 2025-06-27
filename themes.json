@@ -1616,10 +1616,10 @@
     },
     "nordic": {
       "compatibility": ["checking", "collection"],
-      "modes": ["dark", "light"],
+      "modes": ["light"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": [],
+      "extras": ["hide-toggle"],
       "fonts": ["deadhead-script", "gentium-book-basic", "norwester"]
     },
     "northern-sky": {
@@ -1904,10 +1904,10 @@
     },
     "playground": {
       "compatibility": ["checking"],
-      "modes": ["dark", "light"],
+      "modes": ["dark"],
       "use_extended_syntax": false,
       "variations": [],
-      "extras": [],
+      "extras": ["hide-toggle"],
       "fonts": ["bricolage-grotesque"]
     },
     "pln": {

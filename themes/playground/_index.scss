@@ -5,9 +5,9 @@
 @use "sass:string";
 /* Quartz imports */
 @use "../variables.scss" as *;
-/* quartz themes */
+/* quartz themes dark-only */
 
-:root[saved-theme="dark"],
+:root:root,
 html[saved-theme="dark"] {
   color-scheme: dark;
 
@@ -32,23 +32,8 @@ html[saved-theme="dark"] {
   --text-accent: hsl(255, 89.76%, 75.9%);
 }
 
-:root[saved-theme="light"],
-html[saved-theme="light"] {
-  color-scheme: light;
-
-  .callout {
-  }
-
-  code[data-theme*=" "] {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
-  }
-
-  code[data-theme*=" "] span {
-    color: var(--shiki-light);
-  }
-  --mono-rgb-100: 0, 0, 0;
-  --mono-rgb-100: 0, 0, 0;
+.darkmode {
+  display: none;
 }
 
 /* vietnamese */
@@ -1358,13 +1343,13 @@ body {
   user-select: text;
   -webkit-user-select: text;
 }
-:root[saved-theme="light"] {
+:root {
   button.darkmode {
     mask-image: var(--sun-icon);
     -webkit-mask-image: var(--sun-icon);
   }
 }
-:root[saved-theme="dark"] {
+:root {
   button.darkmode {
     mask-image: var(--moon-icon);
     -webkit-mask-image: var(--moon-icon);
@@ -1374,37 +1359,8 @@ body {
 :root:root:root {
 }
 /* START CANVAS GRAPH WORKAROUND */
-/* START LIGHT GRAPH */
-:root:root[saved-theme="light"] {
-  --highlight-fallback: 258, 88%, 66%;
-  --lightgray: var(
-    --graph-line,
-    var(
-      --color-base-35,
-      var(
-        --background-modifier-border-focus,
-        var(--background-modifier-border, var(--color-base-30, #e0e0e0))
-      )
-    )
-  ) !important;
-  --darkgray: var(
-    --graph-node-unresolved,
-    var(--text-faint, var(--text-normal, var(--color-base-100, #222222)))
-  ) !important;
-  --tertiary: var(
-    --graph-node-tag,
-    var(
-      --color-green,
-      var(
-        --link-color-hover,
-        var(--text-accent-hover, var(--color-accent-2, #a386f9))
-      )
-    )
-  ) !important;
-}
-/* END LIGHT GRAPH */
 /* START DARK GRAPH */
-:root:root[saved-theme="dark"] {
+:root:root {
   --highlight-fallback: 258, 88%, 66%;
   --lightgray: var(
     --graph-line,

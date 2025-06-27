@@ -599,7 +599,7 @@ export function cleanup(cssString) {
   cssString = cssString.replaceAll(/^\s*?hsl\(light-dark\(([\d\.\%]+),\s?([\d\.\%]+)\),\s*?light-dark\(([\d\.\%]+),\s?([\d\.\%]+)\),\s*?light-dark\(([\d\.\%]+),\s?([\d\.\%]+)\)\s*?\)(?=$|;|,)/gms, "light-dark(hsl($1, $3, $5), hsl($2, $4, $6))") // Fix light-dark(hsl) with 6 values
   cssString = cssString.replaceAll(/;\s*;/gms, ";") // Remove duplicate semicolons
 
-  cssString = cssString.replaceAll(/^\s*?color:\s*?hsl\(light-dark\([^\#\)]+\),\s*?(light-dark\(\#[\da-fA-F]{3,8},\s*?\#[\da-fA-F]{3,8}\))\)\)(?=$|;|,)/gms, "color: $1")
+  cssString = cssString.replaceAll(/^\s*?color:\s*?hsl\(light-dark\([^\#l\)]+(light-dark\(\#[\da-fA-F]{3,8},\s*?\#[\da-fA-F]{3,8}\))\)\)(?=$|;|,)/gms, "color: $1")
 
   return cssString
 }
