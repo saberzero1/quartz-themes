@@ -1,0 +1,103 @@
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
+  --background-active: #00000022;
+  --background-active-hover: #00000033;
+  --background-double-active: #00000044;
+  --background-hover: #00000011;
+  --background-modifier-box-shadow: #0000001a;
+  --background-modifier-cover: #dcdcdc66;
+
+  --color-blue-rgb: 53, 132, 228;
+
+  --color-cyan-rgb: 52, 170, 180;
+
+  --color-green-rgb: 51, 209, 122;
+  --color-invert-filter-b: none;
+  --color-invert-filter-w: invert();
+
+  --color-orange-rgb: 255, 120, 0;
+
+  --color-pink-rgb: var(--pink-3-rgb);
+
+  --color-purple-rgb: 145, 65, 172;
+
+  --color-red-rgb: 224, 27, 36;
+
+  --color-yellow-rgb: 229, 165, 10;
+  --highlight-mix-blend-mode: darken;
+  --input-shadow:
+    inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px #0000002b, 0 2px 3px 0 #0000001a, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+
+  --invert-filter-b: none;
+  --invert-filter-w: invert() hue-rotate(180deg);
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
+
+  --background-active: #00000022;
+  --background-active-hover: #00000033;
+  --background-double-active: #00000044;
+  --background-hover: #00000011;
+  --background-modifier-box-shadow: #0000001a;
+  --background-modifier-cover: #dcdcdc66;
+
+  --color-blue-rgb: 53, 132, 228;
+
+  --color-cyan-rgb: 52, 170, 180;
+
+  --color-green-rgb: 51, 209, 122;
+  --color-invert-filter-b: none;
+  --color-invert-filter-w: invert();
+
+  --color-orange-rgb: 255, 120, 0;
+
+  --color-pink-rgb: var(--pink-3-rgb);
+
+  --color-purple-rgb: 145, 65, 172;
+
+  --color-red-rgb: 224, 27, 36;
+
+  --color-yellow-rgb: 229, 165, 10;
+  --highlight-mix-blend-mode: darken;
+  --input-shadow:
+    inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px #0000002b, 0 2px 3px 0 #0000001a, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+
+  --invert-filter-b: none;
+  --invert-filter-w: invert() hue-rotate(180deg);
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
+
+  --titlebar-background-focused: #ffffff;
+}

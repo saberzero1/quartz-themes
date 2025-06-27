@@ -1,0 +1,104 @@
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
+  --background-modifier-box-shadow: #0000001a;
+  --background-modifier-cover: #dcdcdc66;
+  --background-scondary-alt: #a7a7a7;
+
+  --canvas-color: 20, 20, 20;
+
+  --color-blue-hsl: 210, 92%, 71%;
+  --color-blue-rgb: 112, 180, 249;
+
+  --color-cyan-hsl: 186, 45%, 47%;
+  --color-cyan-rgb: 66, 163, 173;
+
+  --color-green-hsl: 88, 57%, 39%;
+  --color-green-rgb: 104, 156, 43;
+
+  --color-orange-hsl: 29, 98%, 58%;
+  --color-orange-rgb: 253, 145, 44;
+
+  --color-pink-hsl: 313, 95%, 68%;
+  --color-pink-rgb: 251, 94, 216, 1;
+
+  --color-purple-hsl: 263, 41%, 50%;
+  --color-purple-rgb: 116, 76, 180;
+
+  --color-red-hsl: 16, 100%, 57%;
+  --color-red-rgb: 255, 94, 35;
+
+  --color-yellow-hsl: 50, 97%, 60%;
+  --color-yellow-rgb: 252, 220, 55;
+  --highlight-mix-blend-mode: darken;
+  --input-shadow:
+    inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px #0000002b, 0 2px 3px 0 #0000001a, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --shadow-l: #959da533 0px 8px 24px;
+  --shadow-lm-only: #0000001a 0px 10px 15px -3px, #0000000d 0px 4px 6px -2px;
+  --shadow-s: #0000000a 0px 3px 5px;
+  --text-on-accent: #ffffff;
+
+  --background-modifier-box-shadow: #0000001a;
+  --background-modifier-cover: #dcdcdc66;
+  --background-scondary-alt: #a7a7a7;
+
+  --canvas-color: 20, 20, 20;
+
+  --color-blue-hsl: 210, 92%, 71%;
+  --color-blue-rgb: 112, 180, 249;
+
+  --color-cyan-hsl: 186, 45%, 47%;
+  --color-cyan-rgb: 66, 163, 173;
+
+  --color-green-hsl: 88, 57%, 39%;
+  --color-green-rgb: 104, 156, 43;
+
+  --color-orange-hsl: 29, 98%, 58%;
+  --color-orange-rgb: 253, 145, 44;
+
+  --color-pink-hsl: 313, 95%, 68%;
+  --color-pink-rgb: 251, 94, 216, 1;
+
+  --color-purple-hsl: 263, 41%, 50%;
+  --color-purple-rgb: 116, 76, 180;
+
+  --color-red-hsl: 16, 100%, 57%;
+  --color-red-rgb: 255, 94, 35;
+
+  --color-yellow-hsl: 50, 97%, 60%;
+  --color-yellow-rgb: 252, 220, 55;
+  --highlight-mix-blend-mode: darken;
+  --input-shadow:
+    inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px #0000002b, 0 2px 3px 0 #0000001a, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --shadow-l: #959da533 0px 8px 24px;
+  --shadow-lm-only: #0000001a 0px 10px 15px -3px, #0000000d 0px 4px 6px -2px;
+  --shadow-s: #0000000a 0px 3px 5px;
+  --text-on-accent: #ffffff;
+  --text-on-button: #000000;
+}

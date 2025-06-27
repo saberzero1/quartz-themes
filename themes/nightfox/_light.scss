@@ -1,0 +1,139 @@
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
+  --background-modifier-box-shadow: #0000001a;
+  --background-modifier-cover: #dcdcdc66;
+
+  --callout-warning: 219, 192, 116;
+  --canvas-color-1: 209, 105, 131;
+  --canvas-color-2: 246, 176, 121;
+  --canvas-color-3: 224, 201, 137;
+  --canvas-color-4: 142, 186, 164;
+  --canvas-color-5: 122, 213, 214;
+  --canvas-color-6: 186, 161, 226;
+
+  --color-blue-bright-rgb: 134, 171, 220;
+
+  --color-blue-rgb: 40, 72, 169;
+
+  --color-cyan-bright-rgb: 122, 213, 214;
+
+  --color-cyan-rgb: 40, 121, 128;
+
+  --color-green-bright-rgb: 142, 186, 164;
+
+  --color-green-rgb: 87, 127, 99;
+
+  --color-orange-bright-rgb: 246, 176, 121;
+
+  --color-orange-rgb: 149, 95, 97;
+
+  --color-pink-bright-rgb: 220, 142, 217;
+
+  --color-pink-rgb: 164, 64, 181;
+
+  --color-purple-bright-rgb: 186, 161, 226;
+
+  --color-purple-rgb: 110, 51, 206;
+
+  --color-red-bright-rgb: 209, 105, 131;
+
+  --color-red-rgb: 165, 34, 47;
+
+  --color-yellow-bright-rgb: 224, 201, 137;
+
+  --color-yellow-rgb: 172, 84, 2;
+  --graph-line: #1e1e1e;
+  --graph-node-attachment: #e0af0f;
+
+  --highlight-mix-blend-mode: darken;
+  --input-shadow:
+    inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px #0000002b, 0 2px 3px 0 #0000001a, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+  --mono-rgb-0: 228, 220, 212;
+  --mono-rgb-100: 61, 43, 90;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
+  --text-warning: #dbc074;
+
+  --background-modifier-box-shadow: #0000001a;
+  --background-modifier-cover: #dcdcdc66;
+
+  --callout-warning: 219, 192, 116;
+  --canvas-color-1: 209, 105, 131;
+  --canvas-color-2: 246, 176, 121;
+  --canvas-color-3: 224, 201, 137;
+  --canvas-color-4: 142, 186, 164;
+  --canvas-color-5: 122, 213, 214;
+  --canvas-color-6: 186, 161, 226;
+
+  --color-blue-bright-rgb: 134, 171, 220;
+
+  --color-blue-rgb: 40, 72, 169;
+
+  --color-cyan-bright-rgb: 122, 213, 214;
+
+  --color-cyan-rgb: 40, 121, 128;
+
+  --color-green-bright-rgb: 142, 186, 164;
+
+  --color-green-rgb: 87, 127, 99;
+
+  --color-orange-bright-rgb: 246, 176, 121;
+
+  --color-orange-rgb: 149, 95, 97;
+
+  --color-pink-bright-rgb: 220, 142, 217;
+
+  --color-pink-rgb: 164, 64, 181;
+
+  --color-purple-bright-rgb: 186, 161, 226;
+
+  --color-purple-rgb: 110, 51, 206;
+
+  --color-red-bright-rgb: 209, 105, 131;
+
+  --color-red-rgb: 165, 34, 47;
+
+  --color-yellow-bright-rgb: 224, 201, 137;
+
+  --color-yellow-rgb: 172, 84, 2;
+  --graph-line: #1e1e1e;
+  --graph-node-attachment: #e0af0f;
+
+  --highlight-mix-blend-mode: darken;
+  --input-shadow:
+    inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px #0000002b, 0 2px 3px 0 #0000001a, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+  --mono-rgb-0: 228, 220, 212;
+  --mono-rgb-100: 61, 43, 90;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
+  --text-warning: #dbc074;
+}

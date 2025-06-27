@@ -3,6 +3,7 @@ import calc from "postcss-calc"
 import postcssCustomProperties from "postcss-custom-properties"
 import postcss from "postcss"
 import postcssRelativeColorSyntax from "@csstools/postcss-relative-color-syntax"
+import postcssColorMixFunction from "@csstools/postcss-color-mix-function"
 import { cleanup, cleanRulesAfterRun } from "./util.mjs"
 
 export default function generateStaticCSS(cssString, themeName) {
@@ -43,14 +44,26 @@ export default function generateStaticCSS(cssString, themeName) {
     .css
   }
 
-  //cssString = cleanRulesAfterRun(cssString)
-
   compareString = cssString
   cssString = resolveCssVariables(cssString)
 
   while (cssString !== compareString) {
     compareString = cssString
     cssString = resolveCssVariables(cssString)
+  }
+
+  compareString = cssString
+  cssString = postcss()
+  .use(postcssColorMixFunction())
+  .process(cssString)
+  .css
+
+  while (cssString !== compareString) {
+    compareString = cssString
+    cssString = postcss()
+    .use(postcssColorMixFunction())
+    .process(cssString)
+    .css
   }
 
   compareString = cssString

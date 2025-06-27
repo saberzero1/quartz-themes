@@ -1,0 +1,145 @@
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
+  --background-modifier-box-shadow: #0000004d;
+  --background-modifier-cover: #00000099;
+
+  --background-modifier-form-field: #ffffff;
+  --background-modifier-form-field-highlighted: #00000038;
+
+  --checkbox-border-color: #5c6370;
+  --checkbox-marker-color: #b3d97e;
+  --checklist-done-color: #b3d97e;
+
+  --color-blue-rgb: 8, 109, 221;
+
+  --color-cyan-rgb: 0, 191, 188;
+
+  --color-green-rgb: 8, 185, 78;
+
+  --color-orange-rgb: 236, 117, 0;
+
+  --color-pink-rgb: 213, 57, 132;
+
+  --color-purple-rgb: 120, 82, 238;
+
+  --color-red-rgb: 233, 49, 71;
+
+  --color-yellow-rgb: 224, 172, 0;
+
+  --gray-4: #eeeae5;
+
+  --highlight-mix-blend-mode: darken;
+
+  --input-shadow:
+    inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px #0000002b, 0 2px 3px 0 #0000001a, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+
+  --interactive-accent-rgb: 97, 175, 239;
+
+  --metadata-label-text-color: #5c6370;
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --nav-collapse-icon-color: #ef6f89;
+
+  --oz-fta-file-pane-file-name-color: #2c292d;
+  --oz-fta-header-background-color: #a8a0ee;
+  --oz-fta-header-icon-colors: #2c292d;
+
+  --scrollbar-active-thumb-bg: #282a3a05;
+  --scrollbar-bg: #282a3a0d;
+  --scrollbar-thumb-bg: #282a3a1a;
+  --search-clear-button-color: #2c292d;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
+  --tab-text-color: #abb2bf;
+  --tab-text-color-active: #2c292d;
+  --tab-text-color-active-focused: #abb2bf;
+  --tab-text-color-focused: #5c6370;
+  --tag-color: #2c292d;
+
+  --background-modifier-box-shadow: #0000004d;
+  --background-modifier-cover: #00000099;
+
+  --background-modifier-form-field: #ffffff;
+  --background-modifier-form-field-highlighted: #00000038;
+
+  --checkbox-border-color: #5c6370;
+  --checkbox-marker-color: #b3d97e;
+  --checklist-done-color: #b3d97e;
+
+  --color-blue-rgb: 8, 109, 221;
+
+  --color-cyan-rgb: 0, 191, 188;
+
+  --color-green-rgb: 8, 185, 78;
+
+  --color-orange-rgb: 236, 117, 0;
+
+  --color-pink-rgb: 213, 57, 132;
+
+  --color-purple-rgb: 120, 82, 238;
+
+  --color-red-rgb: 233, 49, 71;
+
+  --color-yellow-rgb: 224, 172, 0;
+
+  --gray-4: #eeeae5;
+
+  --highlight-mix-blend-mode: darken;
+
+  --input-shadow:
+    inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px #0000002b, 0 2px 3px 0 #0000001a, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+
+  --interactive-accent-rgb: 97, 175, 239;
+
+  --metadata-label-text-color: #5c6370;
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --nav-collapse-icon-color: #ef6f89;
+
+  --oz-fta-file-pane-file-name-color: #2c292d;
+  --oz-fta-header-background-color: #a8a0ee;
+  --oz-fta-header-icon-colors: #2c292d;
+
+  --scrollbar-active-thumb-bg: #282a3a05;
+  --scrollbar-bg: #282a3a0d;
+  --scrollbar-thumb-bg: #282a3a1a;
+  --search-clear-button-color: #2c292d;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
+  --tab-text-color: #abb2bf;
+  --tab-text-color-active: #2c292d;
+  --tab-text-color-active-focused: #abb2bf;
+  --tab-text-color-focused: #5c6370;
+  --tag-color: #2c292d;
+
+  --yellow: #fad872;
+}

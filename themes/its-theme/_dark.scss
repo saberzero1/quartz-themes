@@ -1,0 +1,198 @@
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
+  color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
+  --accent-color: 134, 55, 55;
+
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: #d0ddef62;
+
+  --bold-color: inherit;
+
+  --chbx-a: 248, 114, 181;
+  --chbx-b: 230, 129, 63;
+  --chbx-B: 136, 94, 233;
+  --chbx-c: 149, 233, 238;
+  --chbx-C: 207, 67, 67;
+  --chbx-d: 62, 69, 82;
+  --chbx-h: 92, 118, 153;
+  --chbx-i: 194, 42, 42;
+  --chbx-I: 82, 139, 212;
+  --chbx-id: 231, 231, 171;
+  --chbx-N: 133, 91, 65;
+  --chbx-P: 79, 165, 79;
+  --chbx-q: 253, 175, 0;
+  --chbx-r: 249, 190, 123;
+  --chbx-R: 170, 179, 202;
+
+  --color-blue-rgb: 2, 122, 255;
+
+  --color-cyan-rgb: 83, 223, 221;
+
+  --color-green-rgb: 68, 207, 110;
+
+  --color-orange-rgb: 233, 151, 63;
+
+  --color-pink-rgb: 250, 153, 205;
+
+  --color-purple-rgb: 168, 130, 255;
+
+  --color-red-rgb: 251, 70, 76;
+
+  --color-yellow-rgb: 224, 222, 113;
+
+  --file-icon-color: #a6bbde;
+
+  --highlight: #7a141466;
+  --highlight-mix-blend-mode: darken;
+
+  --hvr: rgba(168, 60, 60, 0.4);
+  --hvr-active: rgba(212, 47, 47, 0.4);
+
+  --icon-opacity: 1;
+
+  --input-bg: rgba(0, 0, 0, 0.3);
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+
+  --italic-color: inherit;
+
+  --link-background: transparent;
+
+  --link-border: none;
+
+  --link-decoration: none;
+  --link-decoration-hover: none;
+
+  --link-font: inherit;
+  --link-transform: none;
+
+  --link-unresolved-opacity: 1;
+
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+
+  --note-rgb: 26, 30, 36;
+
+  --pdf-shadow: 0 0 0 1px #ccd6eb;
+  --pdf-thumbnail-shadow: 0 0 0 1px #ccd6eb;
+
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+
+  --toggle-thumb-color: transparent;
+
+  --accent-color: 134, 55, 55;
+
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: #d0ddef62;
+
+  --bold-color: inherit;
+
+  --chbx-a: 248, 114, 181;
+  --chbx-b: 230, 129, 63;
+  --chbx-B: 136, 94, 233;
+  --chbx-c: 149, 233, 238;
+  --chbx-C: 207, 67, 67;
+  --chbx-d: 62, 69, 82;
+  --chbx-h: 92, 118, 153;
+  --chbx-i: 194, 42, 42;
+  --chbx-I: 82, 139, 212;
+  --chbx-id: 231, 231, 171;
+  --chbx-N: 133, 91, 65;
+  --chbx-P: 79, 165, 79;
+  --chbx-q: 253, 175, 0;
+  --chbx-r: 249, 190, 123;
+  --chbx-R: 170, 179, 202;
+
+  --color-blue-rgb: 2, 122, 255;
+
+  --color-cyan-rgb: 83, 223, 221;
+
+  --color-green-rgb: 68, 207, 110;
+
+  --color-orange-rgb: 233, 151, 63;
+
+  --color-pink-rgb: 250, 153, 205;
+
+  --color-purple-rgb: 168, 130, 255;
+
+  --color-red-rgb: 251, 70, 76;
+
+  --color-yellow-rgb: 224, 222, 113;
+
+  --file-icon-color: #a6bbde;
+
+  --highlight: #7a141466;
+  --highlight-mix-blend-mode: darken;
+
+  --hvr: rgba(168, 60, 60, 0.4);
+  --hvr-active: rgba(212, 47, 47, 0.4);
+
+  --icon-opacity: 1;
+
+  --input-bg: rgba(0, 0, 0, 0.3);
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+
+  --italic-color: inherit;
+
+  --link-background: transparent;
+
+  --link-border: none;
+
+  --link-decoration: none;
+  --link-decoration-hover: none;
+
+  --link-font: inherit;
+  --link-transform: none;
+
+  --link-unresolved-opacity: 1;
+
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+
+  --note-rgb: 26, 30, 36;
+
+  --pdf-shadow: 0 0 0 1px #ccd6eb;
+  --pdf-thumbnail-shadow: 0 0 0 1px #ccd6eb;
+
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+
+  --toggle-thumb-color: transparent;
+  --tooltip-color: white;
+}

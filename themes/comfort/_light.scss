@@ -1,0 +1,110 @@
+:root:root,
+html[saved-theme="light"] {
+  color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
+  --aqua: #89bace;
+  --background-modifier-box-shadow: #0000001a;
+  --background-modifier-cover: #f6f9ec;
+
+  --blue: #3d74f6;
+
+  --color-blue-rgb: 8, 109, 221;
+
+  --color-cyan-rgb: 0, 191, 188;
+
+  --color-green-rgb: 8, 185, 78;
+
+  --color-orange-rgb: 236, 117, 0;
+
+  --color-pink-rgb: 213, 57, 132;
+
+  --color-purple-rgb: 120, 82, 238;
+
+  --color-red-rgb: 197, 65, 40;
+
+  --color-yellow-rgb: 224, 172, 0;
+  --gray-1: #b0c0aa;
+  --gray-2: #a0a5b8;
+  --green: #afe4ae;
+  --highlight-mix-blend-mode: darken;
+  --input-shadow: none;
+  --input-shadow-hover: none;
+
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --nav-item-color-active: #edf4f0;
+  --nav-item-color-hover: #edf4f0;
+  --orange: #c1a58c;
+  --panel-border-color: #00000000;
+  --purple: #ce82cd;
+  --red: #cd8f88;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
+  --slider-track-background: #eff1e1;
+  --tab-container-background: #a3d5aa;
+
+  --toggle-radius: 4px;
+  --yellow: #e1d5ac;
+  --aqua: #89bace;
+  --background-modifier-box-shadow: #0000001a;
+  --background-modifier-cover: #f6f9ec;
+
+  --blue: #3d74f6;
+
+  --color-blue-rgb: 8, 109, 221;
+
+  --color-cyan-rgb: 0, 191, 188;
+
+  --color-green-rgb: 8, 185, 78;
+
+  --color-orange-rgb: 236, 117, 0;
+
+  --color-pink-rgb: 213, 57, 132;
+
+  --color-purple-rgb: 120, 82, 238;
+
+  --color-red-rgb: 197, 65, 40;
+
+  --color-yellow-rgb: 224, 172, 0;
+  --gray-1: #b0c0aa;
+  --gray-2: #a0a5b8;
+  --green: #afe4ae;
+  --highlight-mix-blend-mode: darken;
+  --input-shadow: none;
+  --input-shadow-hover: none;
+
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --nav-item-color-active: #edf4f0;
+  --nav-item-color-hover: #edf4f0;
+  --orange: #c1a58c;
+  --panel-border-color: #00000000;
+  --purple: #ce82cd;
+  --red: #cd8f88;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
+  --slider-track-background: #eff1e1;
+  --tab-container-background: #a3d5aa;
+
+  --toggle-radius: 4px;
+  --yellow: #e1d5ac;
+}

@@ -1,0 +1,139 @@
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
+  --background-modifier-box-shadow: #0000001a;
+  --background-modifier-cover: #dcdcdc66;
+
+  --color-blue-rgb: 8, 109, 221;
+
+  --color-cyan-rgb: 0, 191, 188;
+
+  --color-green-rgb: 8, 185, 78;
+
+  --color-orange-rgb: 236, 117, 0;
+
+  --color-pink-rgb: 213, 57, 132;
+
+  --color-purple-rgb: 120, 82, 238;
+
+  --color-red-rgb: 233, 49, 71;
+
+  --color-yellow-rgb: 224, 172, 0;
+
+  --cpt-black: 74, 52, 28;
+  --cpt-blue: 124, 155, 255;
+  --cpt-border: 233, 223, 209;
+  --cpt-core: 247, 243, 238;
+  --cpt-core-alt: 250, 238, 225;
+  --cpt-crust: 241, 230, 214;
+  --cpt-crust-alt: 247, 203, 160;
+  --cpt-cyan: 89, 202, 206;
+  --cpt-green: 154, 230, 92;
+  --cpt-mantle: 238, 231, 221;
+  --cpt-mantle-alt: 22, 22, 22;
+
+  --cpt-orange: 245, 146, 75;
+  --cpt-pink: 235, 0, 235;
+  --cpt-purple: 144, 120, 241;
+  --cpt-red: 240, 100, 119;
+  --cpt-text: 74, 52, 28;
+  --cpt-white: 240, 240, 240;
+  --cpt-yellow: 233, 179, 92;
+  --highlight-mix-blend-mode: darken;
+  --input-shadow:
+    inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px #0000002b, 0 2px 3px 0 #0000001a, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+
+  --interactive-accent-hover: #ff79c6b3;
+
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
+
+  --text-accent-hover: #ff79c6b3;
+
+  --text-selection: #ff79c61a;
+
+  --background-modifier-box-shadow: #0000001a;
+  --background-modifier-cover: #dcdcdc66;
+
+  --color-blue-rgb: 8, 109, 221;
+
+  --color-cyan-rgb: 0, 191, 188;
+
+  --color-green-rgb: 8, 185, 78;
+
+  --color-orange-rgb: 236, 117, 0;
+
+  --color-pink-rgb: 213, 57, 132;
+
+  --color-purple-rgb: 120, 82, 238;
+
+  --color-red-rgb: 233, 49, 71;
+
+  --color-yellow-rgb: 224, 172, 0;
+
+  --cpt-black: 74, 52, 28;
+  --cpt-blue: 124, 155, 255;
+  --cpt-border: 233, 223, 209;
+  --cpt-core: 247, 243, 238;
+  --cpt-core-alt: 250, 238, 225;
+  --cpt-crust: 241, 230, 214;
+  --cpt-crust-alt: 247, 203, 160;
+  --cpt-cyan: 89, 202, 206;
+  --cpt-green: 154, 230, 92;
+  --cpt-mantle: 238, 231, 221;
+  --cpt-mantle-alt: 22, 22, 22;
+
+  --cpt-orange: 245, 146, 75;
+  --cpt-pink: 235, 0, 235;
+  --cpt-purple: 144, 120, 241;
+  --cpt-red: 240, 100, 119;
+  --cpt-text: 74, 52, 28;
+  --cpt-white: 240, 240, 240;
+  --cpt-yellow: 233, 179, 92;
+  --highlight-mix-blend-mode: darken;
+  --input-shadow:
+    inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px #0000002b, 0 2px 3px 0 #0000001a, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+
+  --interactive-accent-hover: #ff79c6b3;
+
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
+
+  --text-accent-hover: #ff79c6b3;
+
+  --text-selection: #ff79c61a;
+
+  --titlebar-background-focused: #09000f;
+}

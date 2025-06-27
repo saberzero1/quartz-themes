@@ -1,0 +1,307 @@
+:root:root,
+html[saved-theme="dark"] {
+  color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: rgba(10, 10, 10, 0.4);
+
+  --background-modifier-form-field: #303f51;
+
+  --background-modifier-message: #ffa161;
+
+  --blockquote-background-color: #2c3a4a;
+  --blockquote-border-color: #84dca1;
+  --blockquote-border-thickness: 0.2em;
+  --bold-color: #b9e678;
+  --callout-border-opacity: 0.05;
+  --callout-border-width: 2px;
+  --callout-bug: 214, 137, 227;
+  --callout-default: 95, 203, 195;
+  --callout-error: 255, 105, 93;
+  --callout-example: 214, 137, 227;
+  --callout-fail: 255, 105, 93;
+  --callout-important: 255, 161, 97;
+  --callout-info: 95, 203, 195;
+  --callout-question: 255, 213, 128;
+  --callout-quote: 255, 213, 128;
+  --callout-radius: 10px;
+  --callout-success: 185, 230, 120;
+  --callout-summary: 116, 133, 154;
+  --callout-tip: 255, 161, 97;
+  --callout-title-color: none;
+  --callout-todo: 95, 203, 195;
+  --callout-warning: 255, 105, 93;
+  --canvas-card-label-color: #74859a;
+  --canvas-color: 133, 221, 162;
+  --canvas-color-1: 255, 105, 93;
+  --canvas-color-2: 255, 161, 97;
+  --canvas-color-3: 255, 213, 128;
+  --canvas-color-4: 185, 230, 120;
+  --canvas-color-5: 95, 203, 195;
+  --canvas-color-6: 214, 137, 227;
+  --canvas-dot-pattern: #2c4f64;
+  --checkbox-border-color: rgba(255, 213, 128, 0.8);
+  --checkbox-border-color-hover: rgba(255, 213, 128, 0.6);
+  --checkbox-color: #ffd580;
+  --checkbox-color-hover: rgba(255, 213, 128, 0.8);
+  --checkbox-marker-color: #1d2833;
+  --checklist-done-color: #74859a;
+  --checklist-done-decoration: unset;
+
+  --color-blue-rgb: 95, 203, 195;
+
+  --color-cyan-rgb: 133, 221, 162;
+
+  --color-green-rgb: 185, 230, 120;
+
+  --color-orange-rgb: 255, 161, 97;
+
+  --color-pink-rgb: 255, 161, 97;
+
+  --color-purple-rgb: 214, 137, 227;
+
+  --color-red-rgb: 255, 105, 93;
+
+  --color-yellow-rgb: 255, 213, 128;
+  --divider-color: #2c3a4a;
+  --file-header-active: #f7f5e9;
+  --graph-line: #303f51;
+  --graph-node: #ffd580;
+  --graph-node-attachment: #ff695d;
+  --graph-node-focused: #ffa161;
+  --graph-node-tag: #5dcbc3;
+  --graph-node-unresolved: #74859a;
+  --graph-text: #74859a;
+  --h1-color: #ff695d;
+  --h1-size: 2.3em;
+  --h2-color: #ffa161;
+  --h2-size: 2.1em;
+  --h3-color: #f8c260;
+  --h3-size: 1.9em;
+  --h4-color: #b9e678;
+  --h4-size: 1.7em;
+  --h5-color: #84dca1;
+  --h5-size: 1.6em;
+  --h6-color: #5dcbc3;
+  --h6-size: 1.5em;
+  --highlight-mix-blend-mode: darken;
+  --hr-color: #84dca1;
+
+  --indentation-guide-color: rgba(44, 79, 100, 0.4);
+  --indentation-guide-color-active: rgba(44, 79, 100, 1);
+  --indentation-guide-width: 2px;
+  --indentation-guide-width-active: 2px;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --interactive-accent: #5dcbc3;
+  --interactive-accent-hover: rgba(44, 79, 100, 0.8);
+  --interactive-accent-hsl: hsl(202.5, 38.89%, 28.24%);
+  --interactive-hover: rgba(255, 161, 97, 0.9);
+  --interactive-normal: #ffa161;
+  --italic-color: #f8c260;
+  --italic-weight: bold;
+
+  --list-marker-color: #84dca1;
+  --list-marker-color-collapsed: #84dca1;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --nav-collapse-icon-color: #84dca1;
+  --pdf-shadow: 0 0 0 1px transparent;
+  --pdf-thumbnail-shadow: 0 0 0 1px transparent;
+  --ribbon-background: #2c3a4a;
+  --scrollbar-active-thumb-bg: #84dca1;
+  --scrollbar-thumb-bg: #273341;
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --slider-track-background: #2c4f64;
+  --tab-container-background: #2c3a4a;
+  --tab-curve: none;
+  --tab-radius: 5px;
+  --tab-radius-active: 5px;
+  --tab-text-color: #74859a;
+  --tag-background: #2c4f64;
+  --tag-background-hover: #303f51;
+  --tag-border-color: none;
+  --tag-border-width: 0px;
+  --tag-color: #b9e678;
+  --tag-color-hover: #84dca1;
+  --tag-radius: 15px;
+  --tag-weight: 600;
+  --text-accent: hsl(137, 57.12%, 79.35%);
+  --text-error: #ff695d;
+
+  --text-highlight-bg: rgba(133, 221, 162, 0.5);
+
+  --text-on-accent: #2c4f64;
+  --text-on-accent-inverted: #2c4f64;
+  --text-selection: #ff695d;
+  --text-success: #b9e678;
+
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: rgba(10, 10, 10, 0.4);
+
+  --background-modifier-form-field: #303f51;
+
+  --background-modifier-message: #ffa161;
+
+  --blockquote-background-color: #2c3a4a;
+  --blockquote-border-color: #84dca1;
+  --blockquote-border-thickness: 0.2em;
+  --bold-color: #b9e678;
+  --callout-border-opacity: 0.05;
+  --callout-border-width: 2px;
+  --callout-bug: 214, 137, 227;
+  --callout-default: 95, 203, 195;
+  --callout-error: 255, 105, 93;
+  --callout-example: 214, 137, 227;
+  --callout-fail: 255, 105, 93;
+  --callout-important: 255, 161, 97;
+  --callout-info: 95, 203, 195;
+  --callout-question: 255, 213, 128;
+  --callout-quote: 255, 213, 128;
+  --callout-radius: 10px;
+  --callout-success: 185, 230, 120;
+  --callout-summary: 116, 133, 154;
+  --callout-tip: 255, 161, 97;
+  --callout-title-color: none;
+  --callout-todo: 95, 203, 195;
+  --callout-warning: 255, 105, 93;
+  --canvas-card-label-color: #74859a;
+  --canvas-color: 133, 221, 162;
+  --canvas-color-1: 255, 105, 93;
+  --canvas-color-2: 255, 161, 97;
+  --canvas-color-3: 255, 213, 128;
+  --canvas-color-4: 185, 230, 120;
+  --canvas-color-5: 95, 203, 195;
+  --canvas-color-6: 214, 137, 227;
+  --canvas-dot-pattern: #2c4f64;
+  --checkbox-border-color: rgba(255, 213, 128, 0.8);
+  --checkbox-border-color-hover: rgba(255, 213, 128, 0.6);
+  --checkbox-color: #ffd580;
+  --checkbox-color-hover: rgba(255, 213, 128, 0.8);
+  --checkbox-marker-color: #1d2833;
+  --checklist-done-color: #74859a;
+  --checklist-done-decoration: unset;
+
+  --color-blue-rgb: 95, 203, 195;
+
+  --color-cyan-rgb: 133, 221, 162;
+
+  --color-green-rgb: 185, 230, 120;
+
+  --color-orange-rgb: 255, 161, 97;
+
+  --color-pink-rgb: 255, 161, 97;
+
+  --color-purple-rgb: 214, 137, 227;
+
+  --color-red-rgb: 255, 105, 93;
+
+  --color-yellow-rgb: 255, 213, 128;
+  --divider-color: #2c3a4a;
+  --file-header-active: #f7f5e9;
+  --graph-line: #303f51;
+  --graph-node: #ffd580;
+  --graph-node-attachment: #ff695d;
+  --graph-node-focused: #ffa161;
+  --graph-node-tag: #5dcbc3;
+  --graph-node-unresolved: #74859a;
+  --graph-text: #74859a;
+  --h1-color: #ff695d;
+  --h1-size: 2.3em;
+  --h2-color: #ffa161;
+  --h2-size: 2.1em;
+  --h3-color: #f8c260;
+  --h3-size: 1.9em;
+  --h4-color: #b9e678;
+  --h4-size: 1.7em;
+  --h5-color: #84dca1;
+  --h5-size: 1.6em;
+  --h6-color: #5dcbc3;
+  --h6-size: 1.5em;
+  --highlight-mix-blend-mode: darken;
+  --hr-color: #84dca1;
+
+  --indentation-guide-color: rgba(44, 79, 100, 0.4);
+  --indentation-guide-color-active: rgba(44, 79, 100, 1);
+  --indentation-guide-width: 2px;
+  --indentation-guide-width-active: 2px;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --interactive-accent: #5dcbc3;
+  --interactive-accent-hover: rgba(44, 79, 100, 0.8);
+  --interactive-accent-hsl: hsl(202.5, 38.89%, 28.24%);
+  --interactive-hover: rgba(255, 161, 97, 0.9);
+  --interactive-normal: #ffa161;
+  --italic-color: #f8c260;
+  --italic-weight: bold;
+
+  --list-marker-color: #84dca1;
+  --list-marker-color-collapsed: #84dca1;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --nav-collapse-icon-color: #84dca1;
+  --pdf-shadow: 0 0 0 1px transparent;
+  --pdf-thumbnail-shadow: 0 0 0 1px transparent;
+  --ribbon-background: #2c3a4a;
+  --scrollbar-active-thumb-bg: #84dca1;
+  --scrollbar-thumb-bg: #273341;
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --slider-track-background: #2c4f64;
+  --tab-container-background: #2c3a4a;
+  --tab-curve: none;
+  --tab-radius: 5px;
+  --tab-radius-active: 5px;
+  --tab-text-color: #74859a;
+  --tag-background: #2c4f64;
+  --tag-background-hover: #303f51;
+  --tag-border-color: none;
+  --tag-border-width: 0px;
+  --tag-color: #b9e678;
+  --tag-color-hover: #84dca1;
+  --tag-radius: 15px;
+  --tag-weight: 600;
+  --text-accent: hsl(137, 57.12%, 79.35%);
+  --text-error: #ff695d;
+
+  --text-highlight-bg: rgba(133, 221, 162, 0.5);
+
+  --text-on-accent: #2c4f64;
+  --text-on-accent-inverted: #2c4f64;
+  --text-selection: #ff695d;
+  --text-success: #b9e678;
+}

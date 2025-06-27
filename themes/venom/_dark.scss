@@ -1,0 +1,214 @@
+:root:root,
+html[saved-theme="dark"] {
+  color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
+  --altblue: #0087ff;
+  --aqua: #078480;
+  --aquadark: #0b4c5e;
+  --background-accent: #ff0000;
+
+  --background-modifier-box-shadow: #0000004d;
+  --background-modifier-cover: #00000099;
+
+  --background-modifier-form-field: #0000004d;
+  --background-modifier-form-field-highlighted: #00000038;
+
+  --blue: #61afef;
+
+  --color-blue-rgb: 2, 122, 255;
+
+  --color-cyan-rgb: 83, 223, 221;
+
+  --color-green-rgb: 68, 207, 110;
+
+  --color-orange-rgb: 233, 151, 63;
+
+  --color-pink-rgb: 250, 153, 205;
+
+  --color-purple-rgb: 168, 130, 255;
+
+  --color-red-rgb: 251, 70, 76;
+
+  --color-yellow-rgb: 224, 222, 113;
+  --cyan: #0fb3ff;
+  --file-line-width: 1200px;
+  --font-monospace:
+    "Consolas", "Fira Code", "Source Code Pro", "Droid Sans Mono", "Monoid",
+    "Arial", sans-serif;
+  --font-weight-title: 600px;
+  --gray-1: #5c6370;
+  --green: #15df6b;
+  --green-light: #42accd;
+  --highlight-mix-blend-mode: darken;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
+    0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
+    0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
+  --interactive-accent: #7f01fe;
+  --interactive-accent-hover: #5082df;
+  --interactive-accent-rgb: 76, 120, 204;
+  --interactive-hover: #353b47;
+  --interactive-normal: #20242b;
+  --light-orange: #ff693f;
+  --lila: #c90481;
+  --lime: #b2f711;
+  --line-height-headers: 1;
+  --link_venom_bg_1: url("https://imgur.com/9OXj9sV.jpg");
+  --magenta: #ff2857;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --orange: #ffc83f;
+  --panel-border-color: #752126;
+  --pdf-shadow: 0 0 0 1px transparent;
+  --pdf-thumbnail-shadow: 0 0 0 1px transparent;
+  --peach: #ff5555;
+  --purple: #8c44aa;
+  --red: #ff0f44;
+  --scrollbar-active-thumb-bg: #7f01fe;
+  --scrollbar-bg: #ffffff0d;
+  --scrollbar-thumb-bg: #8e9599;
+  --search-match-color: #ffff00;
+  --search-other-match-color: #ff9632;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+  --text-accent: #fff;
+  --text-accent-hover: #b13d4c;
+  --text-accent1: #61d29d;
+  --text-accent2: #00ddff;
+  --text-error: #e16d76;
+  --text-error-hover: #c9626a;
+  --text-highlight-bg: #0c1520;
+
+  --text-on-accent: #dcddde;
+  --text-selection: #7f01fe;
+  --text-title-h1: #ff0f44;
+  --text-title-h2: #ff8126;
+  --text-title-h3: #fccd11;
+  --text-title-h4: #90ee90;
+  --text-title-h5: #87ceeb;
+  --text-title-h6: #8c44aa;
+  --venom_dark_navy: #0c1520;
+  --venom_dark_red: #752126;
+  --venom_gray: #8e9599;
+  --venom_navy: #1e303a;
+  --venom_pink: #b13d4c;
+  --venom_purple: #7f01fe;
+  --venom_white: #fff;
+  --yellow: #fccd11;
+  --altblue: #0087ff;
+  --aqua: #078480;
+  --aquadark: #0b4c5e;
+  --background-accent: #ff0000;
+
+  --background-modifier-box-shadow: #0000004d;
+  --background-modifier-cover: #00000099;
+
+  --background-modifier-form-field: #0000004d;
+  --background-modifier-form-field-highlighted: #00000038;
+
+  --blue: #61afef;
+
+  --color-blue-rgb: 2, 122, 255;
+
+  --color-cyan-rgb: 83, 223, 221;
+
+  --color-green-rgb: 68, 207, 110;
+
+  --color-orange-rgb: 233, 151, 63;
+
+  --color-pink-rgb: 250, 153, 205;
+
+  --color-purple-rgb: 168, 130, 255;
+
+  --color-red-rgb: 251, 70, 76;
+
+  --color-yellow-rgb: 224, 222, 113;
+  --cyan: #0fb3ff;
+  --file-line-width: 1200px;
+  --font-monospace:
+    "Consolas", "Fira Code", "Source Code Pro", "Droid Sans Mono", "Monoid",
+    "Arial", sans-serif;
+  --font-weight-title: 600px;
+  --gray-1: #5c6370;
+  --green: #15df6b;
+  --green-light: #42accd;
+  --highlight-mix-blend-mode: darken;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
+    0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
+    0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
+  --interactive-accent: #7f01fe;
+  --interactive-accent-hover: #5082df;
+  --interactive-accent-rgb: 76, 120, 204;
+  --interactive-hover: #353b47;
+  --interactive-normal: #20242b;
+  --light-orange: #ff693f;
+  --lila: #c90481;
+  --lime: #b2f711;
+  --line-height-headers: 1;
+  --link_venom_bg_1: url("https://imgur.com/9OXj9sV.jpg");
+  --magenta: #ff2857;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --orange: #ffc83f;
+  --panel-border-color: #752126;
+  --pdf-shadow: 0 0 0 1px transparent;
+  --pdf-thumbnail-shadow: 0 0 0 1px transparent;
+  --peach: #ff5555;
+  --purple: #8c44aa;
+  --red: #ff0f44;
+  --scrollbar-active-thumb-bg: #7f01fe;
+  --scrollbar-bg: #ffffff0d;
+  --scrollbar-thumb-bg: #8e9599;
+  --search-match-color: #ffff00;
+  --search-other-match-color: #ff9632;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+  --text-accent: #fff;
+  --text-accent-hover: #b13d4c;
+  --text-accent1: #61d29d;
+  --text-accent2: #00ddff;
+  --text-error: #e16d76;
+  --text-error-hover: #c9626a;
+  --text-highlight-bg: #0c1520;
+
+  --text-on-accent: #dcddde;
+  --text-selection: #7f01fe;
+  --text-title-h1: #ff0f44;
+  --text-title-h2: #ff8126;
+  --text-title-h3: #fccd11;
+  --text-title-h4: #90ee90;
+  --text-title-h5: #87ceeb;
+  --text-title-h6: #8c44aa;
+  --venom_dark_navy: #0c1520;
+  --venom_dark_red: #752126;
+  --venom_gray: #8e9599;
+  --venom_navy: #1e303a;
+  --venom_pink: #b13d4c;
+  --venom_purple: #7f01fe;
+  --venom_white: #fff;
+  --yellow: #fccd11;
+}

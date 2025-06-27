@@ -1,0 +1,210 @@
+:root:root,
+html[saved-theme="light"] {
+  color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
+  --background-code: #ebebeb;
+  --background-modifier-box-shadow: #0000001a;
+  --background-modifier-cover: #dcdcdc66;
+
+  --bar-gradient-end: transparent;
+  --bar-gradient-mid: #13c4a3;
+  --bar-gradient-start: transparent;
+  --checkbox-border-color: #121019;
+  --checkbox-border-color-hover: #13c4a3;
+  --checkbox-color-hover: #13c4a3;
+  --checkbox-marker-color: #fcfcfc;
+  --checklist-done-color: #7c809b;
+  --code-builtin-color: #13c4a3;
+  --code-comment-color: #7c809b;
+  --code-function-color: #13c4a3;
+  --code-operator-color: #13c4a3;
+  --code-string-color: #ff3366;
+  --code-variable-color: #121019;
+  --codeblock-background: #ebebeb;
+  --codeblock-color: #121019;
+
+  --color-blue-rgb: 8, 109, 221;
+
+  --color-cyan-rgb: 0, 191, 188;
+
+  --color-green-rgb: 8, 185, 78;
+
+  --color-orange-rgb: 236, 117, 0;
+
+  --color-pink-rgb: 213, 57, 132;
+
+  --color-purple-rgb: 120, 82, 238;
+
+  --color-red-rgb: 233, 49, 71;
+
+  --color-yellow-rgb: 224, 172, 0;
+  --file-title-color: #121019;
+  --find-flashing: #13c4a3;
+  --folder-filter: invert(55%) sepia(90%) saturate(407%) hue-rotate(119deg)
+    brightness(94%) contrast(91%);
+  --folder-title-color: #1b1825;
+  --h1-color: #375ba9;
+  --h1-gradient-end: transparent;
+  --h1-gradient-mid: #375ba9;
+  --h1-gradient-start: transparent;
+  --h2-color: #375ba9;
+  --h2-gradient-end: transparent;
+  --h2-gradient-start: #375ba9;
+  --h3-color: #375ba9;
+  --h4-color: #375ba9;
+  --h5-color: #375ba9;
+  --h6-color: #375ba9;
+  --highlight-background-color: #13c4a3;
+  --highlight-mix-blend-mode: darken;
+  --highlight-text-color: #fcfcfc;
+  --highlight-text-shadow: #121019;
+  --inline-code-background: #ebebeb;
+  --inline-code-color: #8b80f9;
+  --input-shadow:
+    inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px #0000002b, 0 2px 3px 0 #0000001a, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+
+  --italic: #ff3366;
+  --link-ext-color: #13c4a3;
+  --link-int-color: #8b80f9;
+  --link-text-color: #121019;
+  --link-text-color-hover: #13c4a3;
+  --link-text-shadow: #fcfcfc;
+  --link-url-text-color: #8b80f9;
+  --list-marker-color: #121019;
+  --list-marker-color-hover: #13c4a3;
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --progress-bar-color: #13c4a3;
+  --quote-background: #ebebeb;
+  --quote-style: italic;
+  --radius-s: 2px;
+  --search-result-background: #d1d2dc;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
+  --strong: #ff3366;
+  --tags-background: #ebebeb;
+  --tags-color: #ff3366;
+
+  --text-header: var(--ylmn-blu);
+
+  --text-selection: #d1d2dc;
+  --underline-line-color: #13c4a3;
+  --underline-line-thickness: 3px;
+  --underline-text-color: #121019;
+  --background-code: #ebebeb;
+  --background-modifier-box-shadow: #0000001a;
+  --background-modifier-cover: #dcdcdc66;
+
+  --bar-gradient-end: transparent;
+  --bar-gradient-mid: #13c4a3;
+  --bar-gradient-start: transparent;
+  --checkbox-border-color: #121019;
+  --checkbox-border-color-hover: #13c4a3;
+  --checkbox-color-hover: #13c4a3;
+  --checkbox-marker-color: #fcfcfc;
+  --checklist-done-color: #7c809b;
+  --code-builtin-color: #13c4a3;
+  --code-comment-color: #7c809b;
+  --code-function-color: #13c4a3;
+  --code-operator-color: #13c4a3;
+  --code-string-color: #ff3366;
+  --code-variable-color: #121019;
+  --codeblock-background: #ebebeb;
+  --codeblock-color: #121019;
+
+  --color-blue-rgb: 8, 109, 221;
+
+  --color-cyan-rgb: 0, 191, 188;
+
+  --color-green-rgb: 8, 185, 78;
+
+  --color-orange-rgb: 236, 117, 0;
+
+  --color-pink-rgb: 213, 57, 132;
+
+  --color-purple-rgb: 120, 82, 238;
+
+  --color-red-rgb: 233, 49, 71;
+
+  --color-yellow-rgb: 224, 172, 0;
+  --file-title-color: #121019;
+  --find-flashing: #13c4a3;
+  --folder-filter: invert(55%) sepia(90%) saturate(407%) hue-rotate(119deg)
+    brightness(94%) contrast(91%);
+  --folder-title-color: #1b1825;
+  --h1-color: #375ba9;
+  --h1-gradient-end: transparent;
+  --h1-gradient-mid: #375ba9;
+  --h1-gradient-start: transparent;
+  --h2-color: #375ba9;
+  --h2-gradient-end: transparent;
+  --h2-gradient-start: #375ba9;
+  --h3-color: #375ba9;
+  --h4-color: #375ba9;
+  --h5-color: #375ba9;
+  --h6-color: #375ba9;
+  --highlight-background-color: #13c4a3;
+  --highlight-mix-blend-mode: darken;
+  --highlight-text-color: #fcfcfc;
+  --highlight-text-shadow: #121019;
+  --inline-code-background: #ebebeb;
+  --inline-code-color: #8b80f9;
+  --input-shadow:
+    inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px #0000002b, 0 2px 3px 0 #0000001a, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+
+  --italic: #ff3366;
+  --link-ext-color: #13c4a3;
+  --link-int-color: #8b80f9;
+  --link-text-color: #121019;
+  --link-text-color-hover: #13c4a3;
+  --link-text-shadow: #fcfcfc;
+  --link-url-text-color: #8b80f9;
+  --list-marker-color: #121019;
+  --list-marker-color-hover: #13c4a3;
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --progress-bar-color: #13c4a3;
+  --quote-background: #ebebeb;
+  --quote-style: italic;
+  --radius-s: 2px;
+  --search-result-background: #d1d2dc;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
+  --strong: #ff3366;
+  --tags-background: #ebebeb;
+  --tags-color: #ff3366;
+
+  --text-header: var(--ylmn-blu);
+
+  --text-selection: #d1d2dc;
+  --underline-line-color: #13c4a3;
+  --underline-line-thickness: 3px;
+  --underline-text-color: #121019;
+}

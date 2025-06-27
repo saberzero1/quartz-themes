@@ -1,0 +1,111 @@
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
+  --background-modifier-box-shadow: #0000001a;
+  --background-modifier-cover: #00000080;
+  --background-modifier-form-field: #ffffff80;
+
+  --color-black-rgb: 15, 20, 26;
+
+  --color-blue-rgb: 86, 128, 219;
+
+  --color-cyan-rgb: 61, 155, 184;
+
+  --color-green-rgb: 14, 192, 67;
+
+  --color-muted-rgb: 138, 147, 158;
+
+  --color-orange-rgb: 248, 119, 33;
+
+  --color-pink-rgb: 212, 73, 147;
+
+  --color-purple-rgb: 111, 85, 241;
+
+  --color-red-rgb: 250, 55, 62;
+
+  --color-teal-rgb: 44, 174, 186;
+
+  --color-white-rgb: 222, 222, 222;
+
+  --color-yellow-rgb: 229, 199, 0;
+  --highlight-mix-blend-mode: darken;
+  --inline-title-color: #e6e6e6;
+  --input-shadow:
+    inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px #0000002b, 0 2px 3px 0 #0000001a, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
+  --tab-active-color: #0d0d0d;
+  --tab-active-shadow: inset 0 0 0 1px transparent;
+
+  --background-modifier-box-shadow: #0000001a;
+  --background-modifier-cover: #00000080;
+  --background-modifier-form-field: #ffffff80;
+
+  --color-black-rgb: 15, 20, 26;
+
+  --color-blue-rgb: 86, 128, 219;
+
+  --color-cyan-rgb: 61, 155, 184;
+
+  --color-green-rgb: 14, 192, 67;
+
+  --color-muted-rgb: 138, 147, 158;
+
+  --color-orange-rgb: 248, 119, 33;
+
+  --color-pink-rgb: 212, 73, 147;
+
+  --color-purple-rgb: 111, 85, 241;
+
+  --color-red-rgb: 250, 55, 62;
+
+  --color-teal-rgb: 44, 174, 186;
+
+  --color-white-rgb: 222, 222, 222;
+
+  --color-yellow-rgb: 229, 199, 0;
+  --highlight-mix-blend-mode: darken;
+  --inline-title-color: #e6e6e6;
+  --input-shadow:
+    inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px #0000002b, 0 2px 3px 0 #0000001a, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
+  --tab-active-color: #0d0d0d;
+  --tab-active-shadow: inset 0 0 0 1px transparent;
+
+  --text-selection: #1f1f1f;
+}

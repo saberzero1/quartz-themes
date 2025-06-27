@@ -1,0 +1,227 @@
+:root:root,
+html[saved-theme="dark"] {
+  color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
+  --background-modifier-box-shadow: #0000004d;
+  --background-modifier-cover: #0a0a0a66;
+  --background-modifier-form-field: #2a2a2a;
+
+  --bold-color: #c51b0c;
+  --calendar-background-hover: #0f1116;
+  --calendar-hover: #2f459c;
+  --calendar-today: #122886;
+  --calendar-week: #122886;
+  --checkbox-border-color: #4e72ff;
+  --checkbox-border-color-hover: #122886;
+  --checkbox-color: #122886;
+  --checkbox-color-hover: #4e72ff;
+  --checklist-done-color: #122886;
+
+  --color-blue-rgb: #2f459c;
+
+  --color-cyan-rgb: #2f459c;
+  --color-frost0: #122886;
+  --color-frost0-rgb: #122886;
+  --color-frost1: #2f459c;
+  --color-frost1-rgb: #2f459c;
+
+  --color-green-rgb: 68, 207, 110;
+  --color-light3: #4e72ff;
+  --color-light3-rgb: #4e72ff;
+
+  --color-orange-rgb: 233, 151, 63;
+
+  --color-pink-rgb: 250, 153, 205;
+
+  --color-purple-rgb: 168, 130, 255;
+
+  --color-red-rgb: 251, 70, 76;
+  --color-teal0: #2f459c;
+  --color-teal0-rgb: #2f459c;
+
+  --color-yellow-rgb: 224, 222, 113;
+  --cursor-line-background: rgba(#2f459c, 0.2);
+  --dataview-key: #889ef9;
+  --dataview-key-background: rgba(#2f459c, 0.3);
+  --dataview-value: #889ef9;
+  --dataview-value-background: rgba(#2f459c, 0.3);
+  --flashing-background: #2f459c;
+  --graph-line: #8b9bd8;
+  --graph-node: #4568fc;
+  --graph-node-attachment: #2f459c;
+  --graph-node-tag: #2f459c;
+  --h1-color: #122886;
+  --h2-color: #122886;
+  --h3-color: #122886;
+  --h4-color: #122886;
+  --h5-color: #122886;
+  --h6-color: #122886;
+  --highlight-mix-blend-mode: darken;
+
+  --inline-title-color: #122886;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
+    0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
+    0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
+  --interactive-accent: #2f459d;
+  --interactive-accent-hover: #3555b6;
+  --interactive-hover: #3f3f3f;
+  --interactive-normal: #363636;
+  --italic-color: #fcc200;
+
+  --link-url: #4e72ff;
+  --mermaid-exclude: #0f1116;
+  --mermaid-loopline: #2f459c;
+  --mermaid-note: #2f459c;
+  --mermaid-seqnum: #0f1116;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --nav-file-tag: #8b9bd8;
+  --nav-item-color-active: #4e72ff;
+  --nav-item-color-hover: #2f459c;
+  --pdf-shadow: 0 0 0 1px transparent;
+  --pdf-thumbnail-shadow: 0 0 0 1px transparent;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+  --tab-text-color-focused-active: #2f459c;
+  --tab-text-color-focused-active-current: #4e72ff;
+  --table-header-background: #2f459c;
+  --table-header-background-hover: #4568fc;
+  --table-row-background-hover: #2f459c;
+  --table-row-even-background: #000716;
+  --table-row-odd-background: #393939;
+  --tag-background: #0f1116;
+  --tag-background-hover: #0f1116;
+  --tag-color: #122886;
+  --text-accent: #2f459c;
+  --text-accent-hover: #4e72ff;
+
+  --text-highlight-bg: #122886;
+  --text-highlight-fg: #0f1116;
+
+  --text-selection: #2f459c;
+  --titlebar-text-color-focused: #2f459c;
+
+  --background-modifier-box-shadow: #0000004d;
+  --background-modifier-cover: #0a0a0a66;
+  --background-modifier-form-field: #2a2a2a;
+
+  --bold-color: #c51b0c;
+  --calendar-background-hover: #0f1116;
+  --calendar-hover: #2f459c;
+  --calendar-today: #122886;
+  --calendar-week: #122886;
+  --checkbox-border-color: #4e72ff;
+  --checkbox-border-color-hover: #122886;
+  --checkbox-color: #122886;
+  --checkbox-color-hover: #4e72ff;
+  --checklist-done-color: #122886;
+
+  --color-blue-rgb: #2f459c;
+
+  --color-cyan-rgb: #2f459c;
+  --color-frost0: #122886;
+  --color-frost0-rgb: #122886;
+  --color-frost1: #2f459c;
+  --color-frost1-rgb: #2f459c;
+
+  --color-green-rgb: 68, 207, 110;
+  --color-light3: #4e72ff;
+  --color-light3-rgb: #4e72ff;
+
+  --color-orange-rgb: 233, 151, 63;
+
+  --color-pink-rgb: 250, 153, 205;
+
+  --color-purple-rgb: 168, 130, 255;
+
+  --color-red-rgb: 251, 70, 76;
+  --color-teal0: #2f459c;
+  --color-teal0-rgb: #2f459c;
+
+  --color-yellow-rgb: 224, 222, 113;
+  --cursor-line-background: rgba(#2f459c, 0.2);
+  --dataview-key: #889ef9;
+  --dataview-key-background: rgba(#2f459c, 0.3);
+  --dataview-value: #889ef9;
+  --dataview-value-background: rgba(#2f459c, 0.3);
+  --flashing-background: #2f459c;
+  --graph-line: #8b9bd8;
+  --graph-node: #4568fc;
+  --graph-node-attachment: #2f459c;
+  --graph-node-tag: #2f459c;
+  --h1-color: #122886;
+  --h2-color: #122886;
+  --h3-color: #122886;
+  --h4-color: #122886;
+  --h5-color: #122886;
+  --h6-color: #122886;
+  --highlight-mix-blend-mode: darken;
+
+  --inline-title-color: #122886;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
+    0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
+    0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
+  --interactive-accent: #2f459d;
+  --interactive-accent-hover: #3555b6;
+  --interactive-hover: #3f3f3f;
+  --interactive-normal: #363636;
+  --italic-color: #fcc200;
+
+  --link-url: #4e72ff;
+  --mermaid-exclude: #0f1116;
+  --mermaid-loopline: #2f459c;
+  --mermaid-note: #2f459c;
+  --mermaid-seqnum: #0f1116;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --nav-file-tag: #8b9bd8;
+  --nav-item-color-active: #4e72ff;
+  --nav-item-color-hover: #2f459c;
+  --pdf-shadow: 0 0 0 1px transparent;
+  --pdf-thumbnail-shadow: 0 0 0 1px transparent;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+  --tab-text-color-focused-active: #2f459c;
+  --tab-text-color-focused-active-current: #4e72ff;
+  --table-header-background: #2f459c;
+  --table-header-background-hover: #4568fc;
+  --table-row-background-hover: #2f459c;
+  --table-row-even-background: #000716;
+  --table-row-odd-background: #393939;
+  --tag-background: #0f1116;
+  --tag-background-hover: #0f1116;
+  --tag-color: #122886;
+  --text-accent: #2f459c;
+  --text-accent-hover: #4e72ff;
+
+  --text-highlight-bg: #122886;
+  --text-highlight-fg: #0f1116;
+
+  --text-selection: #2f459c;
+  --titlebar-text-color-focused: #2f459c;
+}

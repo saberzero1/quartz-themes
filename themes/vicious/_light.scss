@@ -1,0 +1,111 @@
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
+  --background-modifier-box-shadow: #0000001a;
+  --background-modifier-cover: #fbfcfc;
+
+  --color-blue-rgb: 188, 241, 129;
+
+  --color-cyan-rgb: 139, 227, 235;
+
+  --color-green-rgb: 129, 241, 164;
+
+  --color-orange-rgb: 241, 154, 129;
+
+  --color-pink-rgb: 238, 129, 241;
+
+  --color-purple-rgb: 171, 139, 235;
+
+  --color-red-rgb: 241, 129, 150;
+
+  --color-yellow-rgb: 241, 201, 129;
+  --divider-color: transparent;
+
+  --highlight-mix-blend-mode: darken;
+
+  --input-shadow:
+    inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px #0000002b, 0 2px 3px 0 #0000001a, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+
+  --line-highlight-color: #f1f2f500;
+  --list-marker-color: #818184;
+
+  --metadata-label-background-active: transparent;
+
+  --mono-rgb-0: 251, 252, 252;
+  --mono-rgb-100: 8, 9, 14;
+
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+
+  --shadow-s:
+    0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
+
+  --tab-outline-color: transparent;
+
+  --background-modifier-box-shadow: #0000001a;
+  --background-modifier-cover: #fbfcfc;
+
+  --color-blue-rgb: 188, 241, 129;
+
+  --color-cyan-rgb: 139, 227, 235;
+
+  --color-green-rgb: 129, 241, 164;
+
+  --color-orange-rgb: 241, 154, 129;
+
+  --color-pink-rgb: 238, 129, 241;
+
+  --color-purple-rgb: 171, 139, 235;
+
+  --color-red-rgb: 241, 129, 150;
+
+  --color-yellow-rgb: 241, 201, 129;
+  --divider-color: transparent;
+
+  --highlight-mix-blend-mode: darken;
+
+  --input-shadow:
+    inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px #0000002b, 0 2px 3px 0 #0000001a, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+
+  --line-highlight-color: #f1f2f500;
+  --list-marker-color: #818184;
+
+  --metadata-label-background-active: transparent;
+
+  --mono-rgb-0: 251, 252, 252;
+  --mono-rgb-100: 8, 9, 14;
+
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+
+  --shadow-s:
+    0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
+
+  --tab-outline-color: transparent;
+
+  --th-bg: #f1f2f5;
+}

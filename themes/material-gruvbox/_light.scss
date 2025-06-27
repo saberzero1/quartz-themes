@@ -1,0 +1,128 @@
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
+  --background-modifier-box-shadow: #0000001a;
+  --background-modifier-cover: #dcdcdc66;
+
+  --checklist-done-color: #50494566;
+
+  --color-blue-rgb: 69, 112, 122;
+
+  --color-cyan-rgb: 125, 174, 163;
+
+  --color-green-rgb: 108, 120, 46;
+
+  --color-orange-rgb: 195, 94, 10;
+
+  --color-pink-rgb: 148, 94, 128;
+
+  --color-purple-rgb: 148, 94, 128;
+
+  --color-red-rgb: 193, 74, 74;
+
+  --color-yellow-rgb: 231, 138, 78;
+  --cursor-line-background: #ebdbb280;
+
+  --dataview-key-background: #c14a4a4d;
+
+  --dataview-value-background: #a9b66533;
+  --flashing-background: #ea69624d;
+
+  --highlight-mix-blend-mode: darken;
+
+  --input-shadow:
+    inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px #0000002b, 0 2px 3px 0 #0000001a, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --nav-file-tag: #45707ae6;
+
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
+
+  --table-header-background: #bdae9366;
+
+  --table-row-even-background: #ebdbb233;
+  --table-row-odd-background: #ebdbb2b3;
+
+  --tag-background-hover: #ebdbb299;
+
+  --text-selection: #ea696299;
+
+  --background-modifier-box-shadow: #0000001a;
+  --background-modifier-cover: #dcdcdc66;
+
+  --checklist-done-color: #50494566;
+
+  --color-blue-rgb: 69, 112, 122;
+
+  --color-cyan-rgb: 125, 174, 163;
+
+  --color-green-rgb: 108, 120, 46;
+
+  --color-orange-rgb: 195, 94, 10;
+
+  --color-pink-rgb: 148, 94, 128;
+
+  --color-purple-rgb: 148, 94, 128;
+
+  --color-red-rgb: 193, 74, 74;
+
+  --color-yellow-rgb: 231, 138, 78;
+  --cursor-line-background: #ebdbb280;
+
+  --dataview-key-background: #c14a4a4d;
+
+  --dataview-value-background: #a9b66533;
+  --flashing-background: #ea69624d;
+
+  --highlight-mix-blend-mode: darken;
+
+  --input-shadow:
+    inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px #0000002b, 0 2px 3px 0 #0000001a, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --nav-file-tag: #45707ae6;
+
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
+
+  --table-header-background: #bdae9366;
+
+  --table-row-even-background: #ebdbb233;
+  --table-row-odd-background: #ebdbb2b3;
+
+  --tag-background-hover: #ebdbb299;
+
+  --text-selection: #ea696299;
+  --titlebar-text-color-focused: var(--bright-red);
+}

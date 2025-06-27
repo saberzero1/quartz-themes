@@ -1,0 +1,197 @@
+:root:root,
+html[saved-theme="dark"] {
+  color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
+  --background-modifier-box-shadow: #252525;
+  --background-modifier-cover: #000000cc;
+
+  --background-modifier-form-field: #000000;
+  --background-modifier-form-field-highlighted: #090c0d;
+
+  --black: #000000;
+  --brass-base: #575042;
+  --brass-bright: #b7ad97;
+  --brass-compliment: #4b505d;
+  --brass-dark: #3f3624;
+  --brass-deep: #392d15;
+  --brass-light: #8b806c;
+
+  --color-blue-rgb: 2, 122, 255;
+
+  --color-cyan-rgb: 83, 223, 221;
+
+  --color-green-rgb: 68, 207, 110;
+
+  --color-orange-rgb: 233, 151, 63;
+
+  --color-pink-rgb: 250, 153, 205;
+
+  --color-purple-rgb: 168, 130, 255;
+
+  --color-red-rgb: 251, 70, 76;
+
+  --color-yellow-rgb: 224, 222, 113;
+  --green-base: #00503b;
+  --green-bright: #227e67;
+  --green-compliment: #7b2e00;
+  --green-dark: #00372a;
+  --green-deep: #090c0d;
+  --green-light: #0f6751;
+  --highlight-mix-blend-mode: lighten;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
+    0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
+    0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
+  --interactive-accent: #00372a;
+  --interactive-accent-hover: #090c0d;
+  --interactive-accent-rgb: 97, 97, 97;
+  --interactive-hover: #3f3624;
+  --interactive-normal: #575042;
+  --interactive-success: #197300;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --pdf-shadow: 0 0 0 1px transparent;
+  --pdf-thumbnail-shadow: 0 0 0 1px transparent;
+  --purple-base: #3b0050;
+  --purple-bright: #66008b;
+  --purple-compliment: #707700;
+  --purple-dark: #22002e;
+  --purple-deep: #0c090d;
+  --purple-light: #51006d;
+  --scrollbar-active-thumb-bg: #eeeded33;
+  --scrollbar-bg: #eeeded0d;
+  --scrollbar-thumb-bg: #eeeded1a;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+  --silver-base: #909090;
+  --silver-bright: #eeeded;
+  --silver-compliment: #737373;
+  --silver-dark: #616161;
+  --silver-deep: #252525;
+  --silver-light: #bbbbbb;
+  --text-accent: #8b806c;
+  --text-accent-hover: #575042;
+  --text-error: #ff3333;
+  --text-error-hover: #990000;
+
+  --text-highlight-bg: #8b806c66;
+  --text-highlight-bg-active: #ff800066;
+
+  --text-muted-rgb: 153, 153, 153;
+
+  --text-on-accent: #bbbbbb;
+  --text-selection: #3f3624fc;
+  --text-title-h1: #392d15;
+  --text-title-h2: #3f3624;
+  --text-title-h3: #575042;
+  --text-title-h4: #8b806c;
+  --text-title-h5: #b7ad97;
+
+  --background-modifier-box-shadow: #252525;
+  --background-modifier-cover: #000000cc;
+
+  --background-modifier-form-field: #000000;
+  --background-modifier-form-field-highlighted: #090c0d;
+
+  --black: #000000;
+  --brass-base: #575042;
+  --brass-bright: #b7ad97;
+  --brass-compliment: #4b505d;
+  --brass-dark: #3f3624;
+  --brass-deep: #392d15;
+  --brass-light: #8b806c;
+
+  --color-blue-rgb: 2, 122, 255;
+
+  --color-cyan-rgb: 83, 223, 221;
+
+  --color-green-rgb: 68, 207, 110;
+
+  --color-orange-rgb: 233, 151, 63;
+
+  --color-pink-rgb: 250, 153, 205;
+
+  --color-purple-rgb: 168, 130, 255;
+
+  --color-red-rgb: 251, 70, 76;
+
+  --color-yellow-rgb: 224, 222, 113;
+  --green-base: #00503b;
+  --green-bright: #227e67;
+  --green-compliment: #7b2e00;
+  --green-dark: #00372a;
+  --green-deep: #090c0d;
+  --green-light: #0f6751;
+  --highlight-mix-blend-mode: lighten;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
+    0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
+    0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
+  --interactive-accent: #00372a;
+  --interactive-accent-hover: #090c0d;
+  --interactive-accent-rgb: 97, 97, 97;
+  --interactive-hover: #3f3624;
+  --interactive-normal: #575042;
+  --interactive-success: #197300;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --pdf-shadow: 0 0 0 1px transparent;
+  --pdf-thumbnail-shadow: 0 0 0 1px transparent;
+  --purple-base: #3b0050;
+  --purple-bright: #66008b;
+  --purple-compliment: #707700;
+  --purple-dark: #22002e;
+  --purple-deep: #0c090d;
+  --purple-light: #51006d;
+  --scrollbar-active-thumb-bg: #eeeded33;
+  --scrollbar-bg: #eeeded0d;
+  --scrollbar-thumb-bg: #eeeded1a;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+  --silver-base: #909090;
+  --silver-bright: #eeeded;
+  --silver-compliment: #737373;
+  --silver-dark: #616161;
+  --silver-deep: #252525;
+  --silver-light: #bbbbbb;
+  --text-accent: #8b806c;
+  --text-accent-hover: #575042;
+  --text-error: #ff3333;
+  --text-error-hover: #990000;
+
+  --text-highlight-bg: #8b806c66;
+  --text-highlight-bg-active: #ff800066;
+
+  --text-muted-rgb: 153, 153, 153;
+
+  --text-on-accent: #bbbbbb;
+  --text-selection: #3f3624fc;
+  --text-title-h1: #392d15;
+  --text-title-h2: #3f3624;
+  --text-title-h3: #575042;
+  --text-title-h4: #8b806c;
+  --text-title-h5: #b7ad97;
+}

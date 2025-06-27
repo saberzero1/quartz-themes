@@ -1,0 +1,292 @@
+:root:root,
+html[saved-theme="dark"] {
+  color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
+  --background-modifier-box-shadow: #0000004d;
+  --background-modifier-cover: #0a0a0a66;
+  --background-modifier-form-field: #262626;
+
+  --body-font: "Inter";
+  --button-background: #000;
+  --button-border: #000;
+  --button-text: #dddddd;
+
+  --color-base-80: #dddddd;
+  --color-base-90: #eeeeee;
+
+  --color-blue-rgb: 2, 122, 255;
+
+  --color-cyan-rgb: 83, 223, 221;
+
+  --color-green-rgb: 68, 207, 110;
+
+  --color-orange-rgb: 233, 151, 63;
+
+  --color-pink-rgb: 250, 153, 205;
+
+  --color-purple-rgb: 168, 130, 255;
+
+  --color-red-rgb: 251, 70, 76;
+
+  --color-yellow-rgb: 224, 222, 113;
+  --file-header-font: "Inter";
+  --focus-border: #b48ead;
+  --font-text-theme: "Inter";
+  --frost0: #8fbcbb;
+  --frost0_x: 143, 188, 187;
+  --frost2: #81a1c1;
+  --frost2_x: 129, 161, 193;
+  --green: #a3be8c;
+  --green_x: 163, 190, 140;
+  --h1-color: #bf616a;
+  --h1-font: "Inter";
+  --h2-color: #ebcb8b;
+  --h2-font: "Inter";
+  --h3-color: #a3be8c;
+  --h3-font: "Inter";
+  --h4-color: #b48ead;
+  --h4-font: "Inter";
+  --h5-color: #8fbcbb;
+  --h5-font: "Inter";
+  --h6-color: #81a1c1;
+  --h6-font: "Inter";
+  --header-font: "Inter";
+  --highlight-mix-blend-mode: darken;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
+    0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
+    0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
+  --interactive-accent: #8a5cf5;
+  --interactive-accent-hover: #a68af9;
+  --interactive-hover: #363636;
+  --interactive-normal: #333333;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --orange: #d08770;
+  --orange_x: 208, 135, 112;
+  --pdf-shadow: 0 0 0 1px transparent;
+  --pdf-thumbnail-shadow: 0 0 0 1px transparent;
+  --purple: #b48ead;
+  --purple_x: 180, 142, 173;
+  --red: #bf616a;
+  --red_x: 191, 97, 106;
+  --selection-background: #a3be8c59;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+  --status-bar-background: #343434;
+  --status-bar-foreground: #ffffff;
+  --style-settings-section-accent-colors: "Accent Colors";
+  --style-settings-section-buttons: "Buttons";
+  --style-settings-section-colors: "Base Colors";
+  --style-settings-section-headings: "Headings";
+  --style-settings-section-selection-focus: "Selections and Focus";
+  --style-settings-section-status-bar: "Status Bar";
+  --style-settings-section-text-colors: "Text Colors";
+  --style-settings-var-button-background:
+    [color, Button Background Color, #000];
+  --style-settings-var-button-border: [color, Button Border Color, #000];
+  --style-settings-var-button-text: [color, Button Text Color, #dddddd];
+  --style-settings-var-color-base-00: [color, Base Dark, #0e0e0e];
+  --style-settings-var-color-base-05: [color, Darker Secondary, #343434];
+  --style-settings-var-color-base-10: [color, Slightly Lighter Dark, #242424];
+  --style-settings-var-color-base-100: [color, Pure #ffffff, #ffffff];
+  --style-settings-var-color-base-20: [color, Even Lighter Dark, #1a1a1a];
+  --style-settings-var-color-base-25: [color, Soft Highlight Color, #262626];
+  --style-settings-var-color-base-30: [color, Dark #808080, #333333];
+  --style-settings-var-color-base-35: [color, Medium Dark, #363636];
+  --style-settings-var-color-base-40: [color, Mid-Tone #808080, #4a4a4a];
+  --style-settings-var-color-base-50: [color, Light #808080, #666666];
+  --style-settings-var-color-base-60: [color, Lighter #808080, #999999];
+  --style-settings-var-color-base-70: [color, Almost #ffffff #808080, #bbbbbb];
+  --style-settings-var-color-base-80: [color, Very Light #808080, #dddddd];
+  --style-settings-var-color-base-90: [color, Almost #ffffff, #eeeeee];
+  --style-settings-var-focus-border: [color, Focus Border Color, #b48ead];
+  --style-settings-var-frost0_x: [color, #00ffff Frost, #8fbcbb];
+  --style-settings-var-frost2_x: [color, #0000ff Frost, #81a1c1];
+  --style-settings-var-green_x: [color, #008000 Base, #a3be8c];
+  --style-settings-var-h1-color: [color, Heading 1 Color, #bf616a];
+  --style-settings-var-h2-color: [color, Heading 2 Color, #ebcb8b];
+  --style-settings-var-h3-color: [color, Heading 3 Color, #a3be8c];
+  --style-settings-var-h4-color: [color, Heading 4 Color, #b48ead];
+  --style-settings-var-h5-color: [color, Heading 5 Color, #8fbcbb];
+  --style-settings-var-h6-color: [color, Heading 6 Color, #81a1c1];
+  --style-settings-var-orange_x: [color, #ffa500 Base, #d08770];
+  --style-settings-var-purple_x: [color, #800080 Base, #b48ead];
+  --style-settings-var-red_x: [color, #ff0000 Base, #bf616a];
+  --style-settings-var-selection-background:
+    [color, Selection Background Color, #a3be8c40];
+  --style-settings-var-status-bar-background:
+    [color, Status Bar Background, #343434];
+  --style-settings-var-status-bar-foreground:
+    [color, Status Bar Foreground, #ffffff];
+  --style-settings-var-text-error: [color, Error Text Color, #bf616a];
+  --style-settings-var-text-primary: [color, Primary Text Color, #dddddd];
+  --style-settings-var-text-secondary: [color, Secondary Text Color, #666666];
+  --style-settings-var-text-warning: [color, Warning Text Color, #ebcb8b];
+  --style-settings-var-yellow_x: [color, #ffff00 Base, #ebcb8b];
+  --text-accent: #a68af9;
+  --text-error: #bf616a;
+  --text-primary: #dddddd;
+  --text-secondary: #666666;
+  --text-selection: #8a5cf554;
+  --text-warning: #ebcb8b;
+  --titlebar-background: #000;
+  --titlebar-background-focused: #111;
+  --yellow: #ebcb8b;
+  --yellow_x: 235, 203, 139;
+  --background-modifier-box-shadow: #0000004d;
+  --background-modifier-cover: #0a0a0a66;
+  --background-modifier-form-field: #262626;
+
+  --body-font: "Inter";
+  --button-background: #000;
+  --button-border: #000;
+  --button-text: #dddddd;
+
+  --color-base-80: #dddddd;
+  --color-base-90: #eeeeee;
+
+  --color-blue-rgb: 2, 122, 255;
+
+  --color-cyan-rgb: 83, 223, 221;
+
+  --color-green-rgb: 68, 207, 110;
+
+  --color-orange-rgb: 233, 151, 63;
+
+  --color-pink-rgb: 250, 153, 205;
+
+  --color-purple-rgb: 168, 130, 255;
+
+  --color-red-rgb: 251, 70, 76;
+
+  --color-yellow-rgb: 224, 222, 113;
+  --file-header-font: "Inter";
+  --focus-border: #b48ead;
+  --font-text-theme: "Inter";
+  --frost0: #8fbcbb;
+  --frost0_x: 143, 188, 187;
+  --frost2: #81a1c1;
+  --frost2_x: 129, 161, 193;
+  --green: #a3be8c;
+  --green_x: 163, 190, 140;
+  --h1-color: #bf616a;
+  --h1-font: "Inter";
+  --h2-color: #ebcb8b;
+  --h2-font: "Inter";
+  --h3-color: #a3be8c;
+  --h3-font: "Inter";
+  --h4-color: #b48ead;
+  --h4-font: "Inter";
+  --h5-color: #8fbcbb;
+  --h5-font: "Inter";
+  --h6-color: #81a1c1;
+  --h6-font: "Inter";
+  --header-font: "Inter";
+  --highlight-mix-blend-mode: darken;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
+    0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
+    0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
+  --interactive-accent: #8a5cf5;
+  --interactive-accent-hover: #a68af9;
+  --interactive-hover: #363636;
+  --interactive-normal: #333333;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --orange: #d08770;
+  --orange_x: 208, 135, 112;
+  --pdf-shadow: 0 0 0 1px transparent;
+  --pdf-thumbnail-shadow: 0 0 0 1px transparent;
+  --purple: #b48ead;
+  --purple_x: 180, 142, 173;
+  --red: #bf616a;
+  --red_x: 191, 97, 106;
+  --selection-background: #a3be8c59;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+  --status-bar-background: #343434;
+  --status-bar-foreground: #ffffff;
+  --style-settings-section-accent-colors: "Accent Colors";
+  --style-settings-section-buttons: "Buttons";
+  --style-settings-section-colors: "Base Colors";
+  --style-settings-section-headings: "Headings";
+  --style-settings-section-selection-focus: "Selections and Focus";
+  --style-settings-section-status-bar: "Status Bar";
+  --style-settings-section-text-colors: "Text Colors";
+  --style-settings-var-button-background:
+    [color, Button Background Color, #000];
+  --style-settings-var-button-border: [color, Button Border Color, #000];
+  --style-settings-var-button-text: [color, Button Text Color, #dddddd];
+  --style-settings-var-color-base-00: [color, Base Dark, #0e0e0e];
+  --style-settings-var-color-base-05: [color, Darker Secondary, #343434];
+  --style-settings-var-color-base-10: [color, Slightly Lighter Dark, #242424];
+  --style-settings-var-color-base-100: [color, Pure #ffffff, #ffffff];
+  --style-settings-var-color-base-20: [color, Even Lighter Dark, #1a1a1a];
+  --style-settings-var-color-base-25: [color, Soft Highlight Color, #262626];
+  --style-settings-var-color-base-30: [color, Dark #808080, #333333];
+  --style-settings-var-color-base-35: [color, Medium Dark, #363636];
+  --style-settings-var-color-base-40: [color, Mid-Tone #808080, #4a4a4a];
+  --style-settings-var-color-base-50: [color, Light #808080, #666666];
+  --style-settings-var-color-base-60: [color, Lighter #808080, #999999];
+  --style-settings-var-color-base-70: [color, Almost #ffffff #808080, #bbbbbb];
+  --style-settings-var-color-base-80: [color, Very Light #808080, #dddddd];
+  --style-settings-var-color-base-90: [color, Almost #ffffff, #eeeeee];
+  --style-settings-var-focus-border: [color, Focus Border Color, #b48ead];
+  --style-settings-var-frost0_x: [color, #00ffff Frost, #8fbcbb];
+  --style-settings-var-frost2_x: [color, #0000ff Frost, #81a1c1];
+  --style-settings-var-green_x: [color, #008000 Base, #a3be8c];
+  --style-settings-var-h1-color: [color, Heading 1 Color, #bf616a];
+  --style-settings-var-h2-color: [color, Heading 2 Color, #ebcb8b];
+  --style-settings-var-h3-color: [color, Heading 3 Color, #a3be8c];
+  --style-settings-var-h4-color: [color, Heading 4 Color, #b48ead];
+  --style-settings-var-h5-color: [color, Heading 5 Color, #8fbcbb];
+  --style-settings-var-h6-color: [color, Heading 6 Color, #81a1c1];
+  --style-settings-var-orange_x: [color, #ffa500 Base, #d08770];
+  --style-settings-var-purple_x: [color, #800080 Base, #b48ead];
+  --style-settings-var-red_x: [color, #ff0000 Base, #bf616a];
+  --style-settings-var-selection-background:
+    [color, Selection Background Color, #a3be8c40];
+  --style-settings-var-status-bar-background:
+    [color, Status Bar Background, #343434];
+  --style-settings-var-status-bar-foreground:
+    [color, Status Bar Foreground, #ffffff];
+  --style-settings-var-text-error: [color, Error Text Color, #bf616a];
+  --style-settings-var-text-primary: [color, Primary Text Color, #dddddd];
+  --style-settings-var-text-secondary: [color, Secondary Text Color, #666666];
+  --style-settings-var-text-warning: [color, Warning Text Color, #ebcb8b];
+  --style-settings-var-yellow_x: [color, #ffff00 Base, #ebcb8b];
+  --text-accent: #a68af9;
+  --text-error: #bf616a;
+  --text-primary: #dddddd;
+  --text-secondary: #666666;
+  --text-selection: #8a5cf554;
+  --text-warning: #ebcb8b;
+  --titlebar-background: #000;
+  --titlebar-background-focused: #111;
+  --yellow: #ebcb8b;
+  --yellow_x: 235, 203, 139;
+}

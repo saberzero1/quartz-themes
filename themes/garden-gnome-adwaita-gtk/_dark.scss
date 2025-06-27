@@ -1,0 +1,119 @@
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
+  color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
+  --background-active: #ffffff22;
+  --background-active-hover: #ffffff33;
+  --background-double-active: #ffffff44;
+  --background-hover: #ffffff11;
+  --background-modifier-box-shadow: #0000004d;
+  --background-modifier-cover: #0a0a0a66;
+  --background-modifier-form-field: #2a2a2a;
+
+  --color-blue-rgb: 53, 132, 228;
+
+  --color-cyan-rgb: 52, 170, 180;
+
+  --color-green-rgb: 51, 209, 122;
+  --color-invert-filter-b: invert();
+  --color-invert-filter-w: none;
+
+  --color-orange-rgb: 255, 120, 0;
+
+  --color-pink-rgb: var(--pink-3-rgb);
+
+  --color-purple-rgb: 145, 65, 172;
+
+  --color-red-rgb: 224, 27, 36;
+
+  --color-yellow-rgb: 246, 211, 45;
+  --highlight-mix-blend-mode: darken;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
+    0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
+    0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
+
+  --interactive-accent-hover: #8ac2f9;
+  --interactive-hover: #3f3f3f;
+  --interactive-normal: #363636;
+  --invert-filter-b: invert() hue-rotate(180deg);
+  --invert-filter-w: none;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --pdf-shadow: 0 0 0 1px transparent;
+  --pdf-thumbnail-shadow: 0 0 0 1px transparent;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+
+  --text-selection: #5ca1f554;
+
+  --background-active: #ffffff22;
+  --background-active-hover: #ffffff33;
+  --background-double-active: #ffffff44;
+  --background-hover: #ffffff11;
+  --background-modifier-box-shadow: #0000004d;
+  --background-modifier-cover: #0a0a0a66;
+  --background-modifier-form-field: #2a2a2a;
+
+  --color-blue-rgb: 53, 132, 228;
+
+  --color-cyan-rgb: 52, 170, 180;
+
+  --color-green-rgb: 51, 209, 122;
+  --color-invert-filter-b: invert();
+  --color-invert-filter-w: none;
+
+  --color-orange-rgb: 255, 120, 0;
+
+  --color-pink-rgb: var(--pink-3-rgb);
+
+  --color-purple-rgb: 145, 65, 172;
+
+  --color-red-rgb: 224, 27, 36;
+
+  --color-yellow-rgb: 246, 211, 45;
+  --highlight-mix-blend-mode: darken;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
+    0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
+    0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
+
+  --interactive-accent-hover: #8ac2f9;
+  --interactive-hover: #3f3f3f;
+  --interactive-normal: #363636;
+  --invert-filter-b: invert() hue-rotate(180deg);
+  --invert-filter-w: none;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --pdf-shadow: 0 0 0 1px transparent;
+  --pdf-thumbnail-shadow: 0 0 0 1px transparent;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+
+  --text-selection: #5ca1f554;
+
+  --titlebar-background-focused: #303030;
+}

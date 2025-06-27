@@ -1,0 +1,186 @@
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
+  --background-modifier-box-shadow: #0000001a;
+  --background-modifier-cover: #dcdcdc66;
+
+  --background-modifier-form-field-highlighted: #00000038;
+
+  --background-modifier-message: #000000e6;
+
+  --blockquote-border-color: #deaab8;
+  --bold-color: #4575ae;
+
+  --checkbox-cancelled: #a0a0a0;
+  --checkbox-checked: #91a695;
+  --checkbox-deferred: #7fa4ca;
+  --checkbox-hover: #dbdbdb;
+  --checkbox-important: #c24c4a;
+  --checkbox-in-progress: #41b0b0;
+  --checkbox-question: #c49a52;
+  --checkbox-review: #91a695;
+
+  --color-blue-rgb: 69, 117, 174;
+
+  --color-cyan-rgb: 62, 125, 121;
+
+  --color-green-rgb: 92, 122, 98;
+
+  --color-orange-rgb: 157, 101, 83;
+
+  --color-pink-rgb: 167, 92, 112;
+
+  --color-purple-rgb: 142, 103, 135;
+
+  --color-red-rgb: 194, 76, 74;
+
+  --color-yellow-rgb: 196, 154, 82;
+
+  --ebw-callout-abstract: 88, 64, 84;
+  --ebw-callout-danger: 167, 92, 112;
+  --ebw-callout-info: 53, 119, 174;
+  --ebw-callout-note: 33, 75, 109;
+  --ebw-callout-reference: 137, 137, 137;
+  --ebw-callout-success: 92, 122, 99;
+  --ebw-callout-tip: 61, 126, 123;
+  --ebw-callout-toc: 159, 159, 159;
+  --ebw-embed-border-color: #e8c4ce;
+
+  --ebw-link-hidden: #74c6c5;
+  --ebw-link-underline: #41b0b0;
+  --ebw-row-alt: #0000000d;
+  --ebw-strong-em: #c49a52;
+
+  --ebw-tab-title-active-fg: #ffffff;
+
+  --ebw-table-header-alt: #a75c7066;
+
+  --he-title-bar-active-fg: #ffffff;
+
+  --highlight-mix-blend-mode: darken;
+  --input-shadow:
+    inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px #0000002b, 0 2px 3px 0 #0000001a, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+
+  --italic-color: #a75c70;
+
+  --modifier-text: #ffffff;
+
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
+
+  --table-header-border-color: #d38d9f;
+
+  --table-header-weight: 600;
+
+  --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.2);
+
+  --text-selection: #a75c7033;
+
+  --background-modifier-box-shadow: #0000001a;
+  --background-modifier-cover: #dcdcdc66;
+
+  --background-modifier-form-field-highlighted: #00000038;
+
+  --background-modifier-message: #000000e6;
+
+  --blockquote-border-color: #deaab8;
+  --bold-color: #4575ae;
+
+  --checkbox-cancelled: #a0a0a0;
+  --checkbox-checked: #91a695;
+  --checkbox-deferred: #7fa4ca;
+  --checkbox-hover: #dbdbdb;
+  --checkbox-important: #c24c4a;
+  --checkbox-in-progress: #41b0b0;
+  --checkbox-question: #c49a52;
+  --checkbox-review: #91a695;
+
+  --color-blue-rgb: 69, 117, 174;
+
+  --color-cyan-rgb: 62, 125, 121;
+
+  --color-green-rgb: 92, 122, 98;
+
+  --color-orange-rgb: 157, 101, 83;
+
+  --color-pink-rgb: 167, 92, 112;
+
+  --color-purple-rgb: 142, 103, 135;
+
+  --color-red-rgb: 194, 76, 74;
+
+  --color-yellow-rgb: 196, 154, 82;
+
+  --ebw-callout-abstract: 88, 64, 84;
+  --ebw-callout-danger: 167, 92, 112;
+  --ebw-callout-info: 53, 119, 174;
+  --ebw-callout-note: 33, 75, 109;
+  --ebw-callout-reference: 137, 137, 137;
+  --ebw-callout-success: 92, 122, 99;
+  --ebw-callout-tip: 61, 126, 123;
+  --ebw-callout-toc: 159, 159, 159;
+  --ebw-embed-border-color: #e8c4ce;
+
+  --ebw-link-hidden: #74c6c5;
+  --ebw-link-underline: #41b0b0;
+  --ebw-row-alt: #0000000d;
+  --ebw-strong-em: #c49a52;
+
+  --ebw-tab-title-active-fg: #ffffff;
+
+  --ebw-table-header-alt: #a75c7066;
+
+  --he-title-bar-active-fg: #ffffff;
+
+  --highlight-mix-blend-mode: darken;
+  --input-shadow:
+    inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px #0000002b, 0 2px 3px 0 #0000001a, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+
+  --italic-color: #a75c70;
+
+  --modifier-text: #ffffff;
+
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
+
+  --table-header-border-color: #d38d9f;
+
+  --table-header-weight: 600;
+
+  --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.2);
+
+  --text-selection: #a75c7033;
+  --text-success: #5c7a62;
+}

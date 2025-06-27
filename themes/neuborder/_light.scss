@@ -1,0 +1,267 @@
+:root:root,
+html[saved-theme="light"] {
+  color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
+  --accent-light-h: 232;
+  --accent-light-l: 64%;
+  --accent-light-s: 80%;
+
+  --accent-strong: #ec0d0d;
+
+  --background-modifier-box-shadow: #000000d9;
+  --background-modifier-cover: #dcdcdc66;
+  --background-modifier-form-field: transparent;
+
+  --background-tertiary: #ebf2fc;
+  --button-color-1: #f0f0f0;
+  --button-hover-1: #868ec1;
+  --button-radius-circle: 36px;
+  --button-radius-large: 12px;
+  --button-radius-medium: 6px;
+  --button-radius-medium-large: 8px;
+  --button-radius-small: 3px;
+  --color: 0, 0%;
+
+  --color-accent-1-light: #6577ee;
+
+  --color-accent-2-light: #7182ef;
+  --color-accent-3: #868ec1;
+  --color-accent-3-light: #868ec1;
+
+  --color-accent-hsl-light: 232, 80%, 64%;
+  --color-accent-light: #5a6ded;
+
+  --color-base-15: #f7f7f7;
+
+  --color-blue-rgb: 3, 138, 255;
+
+  --color-cyan-rgb: 54, 215, 183;
+
+  --color-green-rgb: 120, 186, 126;
+
+  --color-orange-rgb: 243, 156, 18;
+
+  --color-pink-rgb: 242, 63, 165;
+  --color-primary: #e6e6e6;
+  --color-primary-dark: #d9d9d9;
+  --color-primary-darkest: #bfbfbf;
+  --color-primary-light: #ececec;
+  --color-primary-lighter: #f7f7f7;
+  --color-primary-lightest: #ffffff;
+
+  --color-purple-rgb: 148, 85, 236;
+
+  --color-red-rgb: 254, 121, 104;
+  --color-text-dark: #999999;
+  --color-text-darkest: #808080;
+
+  --color-yellow-rgb: 229, 199, 0;
+  --highlight-mix-blend-mode: darken;
+
+  --image-radius: 6px;
+  --input-radius: 5px;
+  --input-radius-light: 5px;
+  --input-shadow: 4px 4px 8px #00000026, -4px -4px 8px #ffffff80;
+  --input-shadow-hover:
+    inset 3px 3px 3px #00000033, inset -3px -3px 3px #ffffffb3;
+  --input-shadow-hover-light:
+    inset 3px 3px 3px #00000033, inset -3px -3px 3px #ffffffb3;
+  --input-shadow-light:
+    0px 4px 8px -4px #00000029, inset 0px -1px 0px #0000000a,
+    inset 0px 0px 0px 1px #0000001f, inset 0px 2px 0.75px #ffffff3d,
+    inset 0px -3px 0.75px #0000000a;
+
+  --interactive-accent-rgb: 32, 171, 233;
+
+  --l: 100%;
+  --list-radius-large: 12px;
+  --list-radius-medium: 6px;
+  --list-radius-small: 3px;
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --search-result-background: transparent;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
+  --text-error: #ff3333;
+  --text-error-hover: #990000;
+
+  --text-highlight-bg: #ffd00066;
+  --text-highlight-bg-active: #ff800066;
+  --text-matched: #7dff8f;
+
+  --text-title-h1: #000000;
+  --text-title-h2: #000000;
+  --text-title-h3: #000000;
+  --text-title-h4: #000000;
+  --text-title-h5: #000000;
+  --text-title-h6: #000000;
+  --toggle-thumb-color: #ffffff;
+  --toggle-thumb-color-light: #ffffff;
+  --toggle-thumb-enabled-color: #ffffff;
+  --toggle-thumb-enabled-color-light: #ffffff;
+  --toggle-thumb-enabled-shadow:
+    0px 4px 4px #0000000d, 0px 1px 2px #0000004d, inset 0px -1px 1px #ffffff66,
+    inset 0px -4px 4px #5a6ded4d;
+  --toggle-thumb-enabled-shadow-light:
+    0px 4px 4px #0000000d, 0px 1px 2px #0000004d, inset 0px -1px 1px #ffffff66,
+    inset 0px -4px 4px #5a6ded4d;
+  --toggle-thumb-shadow:
+    0px 4px 4px #0000000d, 0px 1px 2px #0000004d, inset 0px -1px 1px #ffffff66,
+    inset 0px -4px 4px #0000001a;
+  --toggle-thumb-shadow-light:
+    0px 4px 4px #0000000d, 0px 1px 2px #0000004d, inset 0px -1px 1px #ffffff66,
+    inset 0px -4px 4px #0000001a;
+  --toggle-track-color: #3f3f3f;
+  --toggle-track-color-light: #3f3f3f;
+  --toggle-track-enabled-color: #5a6ded;
+  --toggle-track-enabled-color-light: #5a6ded;
+  --toggle-track-hovered-shadow:
+    inset 0px 1px 2px #00000040, 0px 1px 0px #ffffff, 0px 2px 4px #0000000a;
+  --toggle-track-hovered-shadow-light:
+    inset 0px 1px 2px #00000040, 0px 1px 0px #ffffff, 0px 2px 4px #0000000a;
+  --toggle-track-shadow:
+    inset 0px 1px 2px #00000040, 0px 1px 0px #ffffff, 0px 2px 4px #0000000a;
+  --toggle-track-shadow-light:
+    inset 0px 1px 2px #00000040, 0px 1px 0px #ffffff, 0px 2px 4px #0000000a;
+
+  --accent-light-h: 232;
+  --accent-light-l: 64%;
+  --accent-light-s: 80%;
+
+  --accent-strong: #ec0d0d;
+
+  --background-modifier-box-shadow: #000000d9;
+  --background-modifier-cover: #dcdcdc66;
+  --background-modifier-form-field: transparent;
+
+  --background-tertiary: #ebf2fc;
+  --button-color-1: #f0f0f0;
+  --button-hover-1: #868ec1;
+  --button-radius-circle: 36px;
+  --button-radius-large: 12px;
+  --button-radius-medium: 6px;
+  --button-radius-medium-large: 8px;
+  --button-radius-small: 3px;
+  --color: 0, 0%;
+
+  --color-accent-1-light: #6577ee;
+
+  --color-accent-2-light: #7182ef;
+  --color-accent-3: #868ec1;
+  --color-accent-3-light: #868ec1;
+
+  --color-accent-hsl-light: 232, 80%, 64%;
+  --color-accent-light: #5a6ded;
+
+  --color-base-15: #f7f7f7;
+
+  --color-blue-rgb: 3, 138, 255;
+
+  --color-cyan-rgb: 54, 215, 183;
+
+  --color-green-rgb: 120, 186, 126;
+
+  --color-orange-rgb: 243, 156, 18;
+
+  --color-pink-rgb: 242, 63, 165;
+  --color-primary: #e6e6e6;
+  --color-primary-dark: #d9d9d9;
+  --color-primary-darkest: #bfbfbf;
+  --color-primary-light: #ececec;
+  --color-primary-lighter: #f7f7f7;
+  --color-primary-lightest: #ffffff;
+
+  --color-purple-rgb: 148, 85, 236;
+
+  --color-red-rgb: 254, 121, 104;
+  --color-text-dark: #999999;
+  --color-text-darkest: #808080;
+
+  --color-yellow-rgb: 229, 199, 0;
+  --highlight-mix-blend-mode: darken;
+
+  --image-radius: 6px;
+  --input-radius: 5px;
+  --input-radius-light: 5px;
+  --input-shadow: 4px 4px 8px #00000026, -4px -4px 8px #ffffff80;
+  --input-shadow-hover:
+    inset 3px 3px 3px #00000033, inset -3px -3px 3px #ffffffb3;
+  --input-shadow-hover-light:
+    inset 3px 3px 3px #00000033, inset -3px -3px 3px #ffffffb3;
+  --input-shadow-light:
+    0px 4px 8px -4px #00000029, inset 0px -1px 0px #0000000a,
+    inset 0px 0px 0px 1px #0000001f, inset 0px 2px 0.75px #ffffff3d,
+    inset 0px -3px 0.75px #0000000a;
+
+  --interactive-accent-rgb: 32, 171, 233;
+
+  --l: 100%;
+  --list-radius-large: 12px;
+  --list-radius-medium: 6px;
+  --list-radius-small: 3px;
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --search-result-background: transparent;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
+  --text-error: #ff3333;
+  --text-error-hover: #990000;
+
+  --text-highlight-bg: #ffd00066;
+  --text-highlight-bg-active: #ff800066;
+  --text-matched: #7dff8f;
+
+  --text-title-h1: #000000;
+  --text-title-h2: #000000;
+  --text-title-h3: #000000;
+  --text-title-h4: #000000;
+  --text-title-h5: #000000;
+  --text-title-h6: #000000;
+  --toggle-thumb-color: #ffffff;
+  --toggle-thumb-color-light: #ffffff;
+  --toggle-thumb-enabled-color: #ffffff;
+  --toggle-thumb-enabled-color-light: #ffffff;
+  --toggle-thumb-enabled-shadow:
+    0px 4px 4px #0000000d, 0px 1px 2px #0000004d, inset 0px -1px 1px #ffffff66,
+    inset 0px -4px 4px #5a6ded4d;
+  --toggle-thumb-enabled-shadow-light:
+    0px 4px 4px #0000000d, 0px 1px 2px #0000004d, inset 0px -1px 1px #ffffff66,
+    inset 0px -4px 4px #5a6ded4d;
+  --toggle-thumb-shadow:
+    0px 4px 4px #0000000d, 0px 1px 2px #0000004d, inset 0px -1px 1px #ffffff66,
+    inset 0px -4px 4px #0000001a;
+  --toggle-thumb-shadow-light:
+    0px 4px 4px #0000000d, 0px 1px 2px #0000004d, inset 0px -1px 1px #ffffff66,
+    inset 0px -4px 4px #0000001a;
+  --toggle-track-color: #3f3f3f;
+  --toggle-track-color-light: #3f3f3f;
+  --toggle-track-enabled-color: #5a6ded;
+  --toggle-track-enabled-color-light: #5a6ded;
+  --toggle-track-hovered-shadow:
+    inset 0px 1px 2px #00000040, 0px 1px 0px #ffffff, 0px 2px 4px #0000000a;
+  --toggle-track-hovered-shadow-light:
+    inset 0px 1px 2px #00000040, 0px 1px 0px #ffffff, 0px 2px 4px #0000000a;
+  --toggle-track-shadow:
+    inset 0px 1px 2px #00000040, 0px 1px 0px #ffffff, 0px 2px 4px #0000000a;
+  --toggle-track-shadow-light:
+    inset 0px 1px 2px #00000040, 0px 1px 0px #ffffff, 0px 2px 4px #0000000a;
+}

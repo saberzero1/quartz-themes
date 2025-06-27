@@ -1,0 +1,192 @@
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
+  color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
+  --background: #000000;
+
+  --background-modifier-box-shadow: #0000004d;
+  --background-modifier-cover: #0a0a0a66;
+  --background-modifier-form-field: #1e1e1e;
+
+  --black: #000;
+  --blue: #437cf3;
+  --blue-violet: #6f51f4;
+  --checkbox-color: #a68af9;
+
+  --color-blue-rgb: 2, 122, 255;
+
+  --color-cyan-rgb: 83, 223, 221;
+
+  --color-green-rgb: 68, 207, 110;
+
+  --color-orange-rgb: 233, 151, 63;
+
+  --color-pink-rgb: 250, 153, 205;
+
+  --color-purple-rgb: 168, 130, 255;
+
+  --color-red-rgb: 251, 70, 76;
+
+  --color-yellow-rgb: 224, 222, 113;
+  --cool-cyan: #43cfea;
+  --cool-gray: #515768;
+  --cyan: #51e1e9;
+  --foreground: #cccccc;
+  --h1-color: #a6a6a6;
+  --h2-color: #bfbfbf;
+  --h3-color: #cccccc;
+  --h4-color: #cccccc;
+  --h5-color: #e6e6e6;
+  --h6-color: #f2f2f2;
+  --header-title-color: #a6a6a6;
+  --highlight-mix-blend-mode: darken;
+  --hot-red: #e3365e;
+  --hue-bg: 265;
+  --hue-fg: 265;
+  --indentation-guide-color: #141414;
+  --indentation-guide-color-active: #0a0a0a;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
+    0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
+    0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
+  --interactive-accent: #8a5cf5;
+  --interactive-accent-hover: #a68af9;
+  --interactive-hover: #0a0a0a;
+  --interactive-normal: #141414;
+  --light-blue: #54b6f8;
+  --lum: 11%;
+  --lum-bg: 95%;
+  --lum-fg: 50%;
+  --magenta: #e54f9b;
+  --mint: #52eea3;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --nav-indentation-guide-color: #141414;
+  --pdf-shadow: 0 0 0 1px #292929;
+  --pdf-thumbnail-shadow: 0 0 0 1px #292929;
+  --purple: #c952ed;
+  --sat-bg: 60%;
+  --sat-fg: 100%;
+  --scrollbar-active-thumb-bg: #292929;
+  --scrollbar-thumb-bg: #141414;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+  --slider-track-background: #a68af9;
+  --slider-track-height: 3px;
+  --table-border-color: #525252;
+  --text-accent: #a68af9;
+  --text-highlight-bg: #a6a6a640;
+  --text-highlight-bg-active: #a6a6a640;
+
+  --text-selection: #8a5cf554;
+  --title-color: #a6a6a6;
+  --titlebar-background: #111;
+  --titlebar-background-focused: #111;
+  --violet: #9446f8;
+  --white: #fff;
+  --background: #000000;
+
+  --background-modifier-box-shadow: #0000004d;
+  --background-modifier-cover: #0a0a0a66;
+  --background-modifier-form-field: #1e1e1e;
+
+  --black: #000;
+  --blue: #437cf3;
+  --blue-violet: #6f51f4;
+  --checkbox-color: #a68af9;
+
+  --color-blue-rgb: 2, 122, 255;
+
+  --color-cyan-rgb: 83, 223, 221;
+
+  --color-green-rgb: 68, 207, 110;
+
+  --color-orange-rgb: 233, 151, 63;
+
+  --color-pink-rgb: 250, 153, 205;
+
+  --color-purple-rgb: 168, 130, 255;
+
+  --color-red-rgb: 251, 70, 76;
+
+  --color-yellow-rgb: 224, 222, 113;
+  --cool-cyan: #43cfea;
+  --cool-gray: #515768;
+  --cyan: #51e1e9;
+  --foreground: #cccccc;
+  --h1-color: #a6a6a6;
+  --h2-color: #bfbfbf;
+  --h3-color: #cccccc;
+  --h4-color: #cccccc;
+  --h5-color: #e6e6e6;
+  --h6-color: #f2f2f2;
+  --header-title-color: #a6a6a6;
+  --highlight-mix-blend-mode: darken;
+  --hot-red: #e3365e;
+  --hue-bg: 265;
+  --hue-fg: 265;
+  --indentation-guide-color: #141414;
+  --indentation-guide-color-active: #0a0a0a;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
+    0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
+    0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
+  --interactive-accent: #8a5cf5;
+  --interactive-accent-hover: #a68af9;
+  --interactive-hover: #0a0a0a;
+  --interactive-normal: #141414;
+  --light-blue: #54b6f8;
+  --lum: 11%;
+  --lum-bg: 95%;
+  --lum-fg: 50%;
+  --magenta: #e54f9b;
+  --mint: #52eea3;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --nav-indentation-guide-color: #141414;
+  --pdf-shadow: 0 0 0 1px #292929;
+  --pdf-thumbnail-shadow: 0 0 0 1px #292929;
+  --purple: #c952ed;
+  --sat-bg: 60%;
+  --sat-fg: 100%;
+  --scrollbar-active-thumb-bg: #292929;
+  --scrollbar-thumb-bg: #141414;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+  --slider-track-background: #a68af9;
+  --slider-track-height: 3px;
+  --table-border-color: #525252;
+  --text-accent: #a68af9;
+  --text-highlight-bg: #a6a6a640;
+  --text-highlight-bg-active: #a6a6a640;
+
+  --text-selection: #8a5cf554;
+  --title-color: #a6a6a6;
+  --titlebar-background: #111;
+  --titlebar-background-focused: #111;
+  --violet: #9446f8;
+  --white: #fff;
+}
