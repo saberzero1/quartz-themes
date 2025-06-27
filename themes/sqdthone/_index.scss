@@ -1171,7 +1171,7 @@ body {
   .search {
     & > .search-button {
       -webkit-app-region: no-drag;
-      background: hsl(light-dark(15, 20%, 88%, 300, 6%, 18%));
+      background: light-dark(hsl(15, 20%, 88%), hsl(300, 6%, 18%));
       border: 1px solid transparent;
       border-radius: 5px;
       color: hsl(194, 14%, 40%);
