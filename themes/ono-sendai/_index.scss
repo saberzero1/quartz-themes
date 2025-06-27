@@ -1236,10 +1236,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: light-dark(
-          light-dark(#fcfcfc, #212121),
-          light-dark(#e0e0e0, #363636)
-        );
+        background-color: light-dark(#fcfcfc, #212121);
         border: 0.5pt solid #555555;
         border-radius: 8px;
         box-shadow:
@@ -1360,10 +1357,7 @@ body {
   .popover {
     -webkit-font-smoothing: none;
     -webkit-text-stroke: 0px;
-    background-color: light-dark(
-      light-dark(#fcfcfc, #212121),
-      light-dark(#e0e0e0, #363636)
-    );
+    background-color: light-dark(#fcfcfc, #212121);
     border: 1px solid light-dark(#914a29, #28b0ff);
     border-radius: 0px;
     box-shadow: 3px 3px 1px light-dark(#914a29, #28b0ff);
@@ -1382,10 +1376,7 @@ body {
     border: unset;
     & .popover-inner {
       border: 1px solid light-dark(#914a29, #28b0ff);
-      background-color: light-dark(
-        light-dark(#fcfcfc, #212121),
-        light-dark(#e0e0e0, #363636)
-      );
+      background-color: light-dark(#fcfcfc, #212121);
 
       border-radius: 0px;
     }

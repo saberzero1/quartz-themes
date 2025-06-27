@@ -370,10 +370,7 @@ body {
   --text-normal: #dadada;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(
-    light-dark(#fafafa, #242424),
-    light-dark(#e3e3e3, #2a2a2a)
-  );
+  background-color: light-dark(#fafafa, #242424);
   caret-color: #84ab3f;
   color: #dadada;
   contain: initial;
@@ -648,19 +645,13 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: light-dark(
-    light-dark(#fafafa, #242424),
-    light-dark(#e3e3e3, #2a2a2a)
-  );
+  background-color: light-dark(#fafafa, #242424);
   section,
   .page > #quartz-body .sidebar {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: light-dark(
-        light-dark(#fafafa, #242424),
-        light-dark(#e3e3e3, #2a2a2a)
-      );
+      background-color: light-dark(#fafafa, #242424);
     }
   }
   .highlight,
@@ -832,10 +823,7 @@ body {
   }
   h2 {
     --font-weight: 600;
-    color: light-dark(
-      light-dark(#08b94e, #44cf6e),
-      light-dark(#e0ac00, #e0de71)
-    );
+    color: light-dark(#08b94e, #44cf6e);
     font-family: inherit;
     font-size: 1.5625em;
     font-style: normal;
@@ -851,10 +839,7 @@ body {
   }
   h3 {
     --font-weight: 600;
-    color: light-dark(
-      light-dark(#086ddd, #027aff),
-      light-dark(#086ddd, #027aff)
-    );
+    color: light-dark(#086ddd, #027aff);
     font-family: inherit;
     font-size: 1.375em;
     font-style: normal;
@@ -902,10 +887,7 @@ body {
   }
   h6 {
     --font-weight: 600;
-    color: light-dark(
-      light-dark(#ec7500, #e9973f),
-      light-dark(#7852ee, #a882ff)
-    );
+    color: light-dark(#ec7500, #e9973f);
     font-family: inherit;
     font-size: 1em;
     font-style: normal;
@@ -1046,10 +1028,7 @@ body {
   .backlinks {
     h3 {
       --font-weight: 600;
-      color: light-dark(
-        light-dark(#086ddd, #027aff),
-        light-dark(#086ddd, #027aff)
-      );
+      color: light-dark(#086ddd, #027aff);
       font-family: inherit;
       font-size: 1.375em;
       font-style: normal;
@@ -1075,17 +1054,11 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: light-dark(
-        light-dark(#08b94e, #44cf6e),
-        light-dark(#e0ac00, #e0de71)
-      );
+      color: light-dark(#08b94e, #44cf6e);
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: light-dark(
-          light-dark(#fafafa, #242424),
-          light-dark(#e3e3e3, #2a2a2a)
-        );
+        background-color: light-dark(#fafafa, #242424);
       }
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
@@ -1171,17 +1144,11 @@ body {
   }
   /* TOC */
   .toc {
-    color: light-dark(
-      light-dark(#086ddd, #027aff),
-      light-dark(#086ddd, #027aff)
-    );
+    color: light-dark(#086ddd, #027aff);
     button.toc-header {
       h3 {
         --font-weight: 600;
-        color: light-dark(
-          light-dark(#086ddd, #027aff),
-          light-dark(#086ddd, #027aff)
-        );
+        color: light-dark(#086ddd, #027aff);
         font-family: inherit;
         font-size: 1.375em;
         font-style: normal;
@@ -1192,10 +1159,7 @@ body {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
       }
-      color: light-dark(
-        light-dark(#086ddd, #027aff),
-        light-dark(#086ddd, #027aff)
-      );
+      color: light-dark(#086ddd, #027aff);
       color: inherit;
     }
     ul.toc-content.overflow {
@@ -1214,10 +1178,7 @@ body {
   .toc {
     h3 {
       --font-weight: 600;
-      color: light-dark(
-        light-dark(#086ddd, #027aff),
-        light-dark(#086ddd, #027aff)
-      );
+      color: light-dark(#086ddd, #027aff);
       font-family: inherit;
       font-size: 1.375em;
       font-style: normal;
@@ -1295,10 +1256,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: light-dark(
-          light-dark(#fafafa, #242424),
-          light-dark(#e3e3e3, #2a2a2a)
-        );
+        background-color: light-dark(#fafafa, #242424);
         border: 0.5pt solid #555555;
         border-radius: 12px;
         box-shadow:
@@ -1307,16 +1265,9 @@ body {
           0px 30px 90px #00000033;
         margin: 12vh auto;
         & > input {
-          background-color: light-dark(
-            light-dark(#fafafa, #242424),
-            light-dark(#e3e3e3, #2a2a2a)
-          );
+          background-color: light-dark(#fafafa, #242424);
           border: none;
-          border-bottom: 1px solid
-            light-dark(
-              light-dark(#e3e3e3, #2a2a2a),
-              light-dark(#ffffff, #1e1e1e)
-            );
+          border-bottom: 1px solid light-dark(#e3e3e3, #2a2a2a);
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1424,10 +1375,7 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: light-dark(
-      light-dark(#fafafa, #242424),
-      light-dark(#e3e3e3, #2a2a2a)
-    );
+    background-color: light-dark(#fafafa, #242424);
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow:
@@ -1445,10 +1393,7 @@ body {
     border: unset;
     & .popover-inner {
       border: 1px solid transparent;
-      background-color: light-dark(
-        light-dark(#fafafa, #242424),
-        light-dark(#e3e3e3, #2a2a2a)
-      );
+      background-color: light-dark(#fafafa, #242424);
 
       border-radius: 8px;
     }

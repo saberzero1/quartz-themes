@@ -957,10 +957,7 @@ body {
   }
   /* CODE */
   pre {
-    background-color: light-dark(
-      light-dark(#121212, #121212),
-      light-dark(#121212, #121212)
-    );
+    background-color: light-dark(#121212, #121212);
     border: 0px solid transparent;
     border-radius: 4px;
     min-height: 38px;
@@ -1025,10 +1022,7 @@ body {
   }
   code {
     -webkit-box-decoration-break: clone;
-    background-color: light-dark(
-      light-dark(#121212, #121212),
-      light-dark(#121212, #121212)
-    );
+    background-color: light-dark(#121212, #121212);
     border: 0px solid transparent;
     border-radius: 4px;
     color: #e0e0e0;

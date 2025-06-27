@@ -1248,10 +1248,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: light-dark(
-          light-dark(#fcfcfc, #212121),
-          light-dark(#e0e0e0, #363636)
-        );
+        background-color: light-dark(#fcfcfc, #212121);
         border: 0.5pt solid #555555;
         border-radius: 8px;
         box-shadow:

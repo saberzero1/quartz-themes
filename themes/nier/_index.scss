@@ -1126,10 +1126,7 @@ body {
           color: inherit;
           &.active,
           &:hover {
-            background-color: light-dark(
-              light-dark(#fcfcfc, #212121),
-              light-dark(#e0e0e0, #363636)
-            );
+            background-color: light-dark(#fcfcfc, #212121);
             color: #ffffff;
             font-weight: inherit;
           }

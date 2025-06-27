@@ -429,10 +429,7 @@ body {
   --text-normal: light-dark(#111, #111);
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(
-    light-dark(#fffbff, #1c1b1e),
-    light-dark(#fffbff, #1c1b1e)
-  );
+  background-color: light-dark(#fffbff, #1c1b1e);
   caret-color: #653cc3;
   color: #111;
   contain: initial;
@@ -711,19 +708,13 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: light-dark(
-    light-dark(#fffbff, #1c1b1e),
-    light-dark(#fffbff, #1c1b1e)
-  );
+  background-color: light-dark(#fffbff, #1c1b1e);
   section,
   .page > #quartz-body .sidebar {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: light-dark(
-        light-dark(#fffbff, #1c1b1e),
-        light-dark(#fffbff, #1c1b1e)
-      );
+      background-color: light-dark(#fffbff, #1c1b1e);
     }
   }
   .highlight,
@@ -1133,10 +1124,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: light-dark(
-          light-dark(#fffbff, #1c1b1e),
-          light-dark(#fffbff, #1c1b1e)
-        );
+        background-color: light-dark(#fffbff, #1c1b1e);
       }
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
@@ -1334,10 +1322,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: light-dark(
-          light-dark(#fffbff, #1c1b1e),
-          light-dark(#fffbff, #1c1b1e)
-        );
+        background-color: light-dark(#fffbff, #1c1b1e);
         border: 0.5pt solid #555555;
         border-radius: 12px;
         box-shadow:
@@ -1346,10 +1331,7 @@ body {
           0px 30px 90px #00000033;
         margin: 12vh auto;
         & > input {
-          background-color: light-dark(
-            light-dark(#fffbff, #1c1b1e),
-            light-dark(#fffbff, #1c1b1e)
-          );
+          background-color: light-dark(#fffbff, #1c1b1e);
           border: none;
           border-bottom: 1px solid #e8e1f9;
           border-radius: 0;
@@ -1460,10 +1442,7 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: light-dark(
-      light-dark(#fffbff, #1c1b1e),
-      light-dark(#fffbff, #1c1b1e)
-    );
+    background-color: light-dark(#fffbff, #1c1b1e);
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow:
@@ -1481,10 +1460,7 @@ body {
     border: unset;
     & .popover-inner {
       border: 1px solid transparent;
-      background-color: light-dark(
-        light-dark(#fffbff, #1c1b1e),
-        light-dark(#fffbff, #1c1b1e)
-      );
+      background-color: light-dark(#fffbff, #1c1b1e);
 
       border-radius: 8px;
     }

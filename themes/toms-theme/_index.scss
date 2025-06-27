@@ -972,10 +972,7 @@ body {
   .clipboard-button {
     background-color: transparent;
     box-shadow: none;
-    color: light-dark(
-      light-dark(#08b94e, #44cf6e),
-      light-dark(#08b94e, #44cf6e)
-    );
+    color: light-dark(#08b94e, #44cf6e);
     font-family: "??", "??", "??", Courier, monospace;
     font-size: 12.8px;
     height: auto;

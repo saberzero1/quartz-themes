@@ -364,7 +364,7 @@ html {
     background-color: color-mix(
       in srgb,
       #f0b4e1 32.5%,
-      light-dark(light-dark(#f8f5f1, #2e261f), light-dark(#f8f5f1, #2e261f))
+      light-dark(#f8f5f1, #2e261f)
     );
     border-color: #f0b4e11a;
     border-radius: 8px;
@@ -380,7 +380,7 @@ html {
     background-color: color-mix(
       in srgb,
       #f0b4e1 32.5%,
-      light-dark(light-dark(#f8f5f1, #2e261f), light-dark(#f8f5f1, #2e261f))
+      light-dark(#f8f5f1, #2e261f)
     );
     background-color: var(--bg);
     border-color: var(--border);
@@ -391,7 +391,7 @@ html {
       background-color: color-mix(
         in srgb,
         #f0b4e1 32.5%,
-        light-dark(light-dark(#f8f5f1, #2e261f), light-dark(#f8f5f1, #2e261f))
+        light-dark(#f8f5f1, #2e261f)
       );
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -402,7 +402,7 @@ html {
       background-color: color-mix(
         in srgb,
         #f0b4e1 32.5%,
-        light-dark(light-dark(#f8f5f1, #2e261f), light-dark(#f8f5f1, #2e261f))
+        light-dark(#f8f5f1, #2e261f)
       );
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -413,7 +413,7 @@ html {
       background-color: color-mix(
         in srgb,
         #f0b4e1 32.5%,
-        light-dark(light-dark(#f8f5f1, #2e261f), light-dark(#f8f5f1, #2e261f))
+        light-dark(#f8f5f1, #2e261f)
       );
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -424,7 +424,7 @@ html {
       background-color: color-mix(
         in srgb,
         #f0b4e1 32.5%,
-        light-dark(light-dark(#f8f5f1, #2e261f), light-dark(#f8f5f1, #2e261f))
+        light-dark(#f8f5f1, #2e261f)
       );
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -435,7 +435,7 @@ html {
       background-color: color-mix(
         in srgb,
         #f0b4e1 32.5%,
-        light-dark(light-dark(#f8f5f1, #2e261f), light-dark(#f8f5f1, #2e261f))
+        light-dark(#f8f5f1, #2e261f)
       );
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -446,7 +446,7 @@ html {
       background-color: color-mix(
         in srgb,
         #f0b4e1 32.5%,
-        light-dark(light-dark(#f8f5f1, #2e261f), light-dark(#f8f5f1, #2e261f))
+        light-dark(#f8f5f1, #2e261f)
       );
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -457,7 +457,7 @@ html {
       background-color: color-mix(
         in srgb,
         #f0b4e1 32.5%,
-        light-dark(light-dark(#f8f5f1, #2e261f), light-dark(#f8f5f1, #2e261f))
+        light-dark(#f8f5f1, #2e261f)
       );
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -468,7 +468,7 @@ html {
       background-color: color-mix(
         in srgb,
         #f0b4e1 32.5%,
-        light-dark(light-dark(#f8f5f1, #2e261f), light-dark(#f8f5f1, #2e261f))
+        light-dark(#f8f5f1, #2e261f)
       );
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -479,7 +479,7 @@ html {
       background-color: color-mix(
         in srgb,
         #f0b4e1 32.5%,
-        light-dark(light-dark(#f8f5f1, #2e261f), light-dark(#f8f5f1, #2e261f))
+        light-dark(#f8f5f1, #2e261f)
       );
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -490,7 +490,7 @@ html {
       background-color: color-mix(
         in srgb,
         #f0b4e1 32.5%,
-        light-dark(light-dark(#f8f5f1, #2e261f), light-dark(#f8f5f1, #2e261f))
+        light-dark(#f8f5f1, #2e261f)
       );
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -501,7 +501,7 @@ html {
       background-color: color-mix(
         in srgb,
         #f0b4e1 32.5%,
-        light-dark(light-dark(#f8f5f1, #2e261f), light-dark(#f8f5f1, #2e261f))
+        light-dark(#f8f5f1, #2e261f)
       );
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -512,7 +512,7 @@ html {
       background-color: color-mix(
         in srgb,
         #f0b4e1 32.5%,
-        light-dark(light-dark(#f8f5f1, #2e261f), light-dark(#f8f5f1, #2e261f))
+        light-dark(#f8f5f1, #2e261f)
       );
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -523,7 +523,7 @@ html {
       background-color: color-mix(
         in srgb,
         #f0b4e1 32.5%,
-        light-dark(light-dark(#f8f5f1, #2e261f), light-dark(#f8f5f1, #2e261f))
+        light-dark(#f8f5f1, #2e261f)
       );
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -534,7 +534,7 @@ html {
       background-color: color-mix(
         in srgb,
         #f0b4e1 32.5%,
-        light-dark(light-dark(#f8f5f1, #2e261f), light-dark(#f8f5f1, #2e261f))
+        light-dark(#f8f5f1, #2e261f)
       );
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -545,7 +545,7 @@ html {
       background-color: color-mix(
         in srgb,
         #f0b4e1 32.5%,
-        light-dark(light-dark(#f8f5f1, #2e261f), light-dark(#f8f5f1, #2e261f))
+        light-dark(#f8f5f1, #2e261f)
       );
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -556,7 +556,7 @@ html {
       background-color: color-mix(
         in srgb,
         #f0b4e1 32.5%,
-        light-dark(light-dark(#f8f5f1, #2e261f), light-dark(#f8f5f1, #2e261f))
+        light-dark(#f8f5f1, #2e261f)
       );
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -567,7 +567,7 @@ html {
       background-color: color-mix(
         in srgb,
         #f0b4e1 32.5%,
-        light-dark(light-dark(#f8f5f1, #2e261f), light-dark(#f8f5f1, #2e261f))
+        light-dark(#f8f5f1, #2e261f)
       );
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -578,7 +578,7 @@ html {
       background-color: color-mix(
         in srgb,
         #f0b4e1 32.5%,
-        light-dark(light-dark(#f8f5f1, #2e261f), light-dark(#f8f5f1, #2e261f))
+        light-dark(#f8f5f1, #2e261f)
       );
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -589,7 +589,7 @@ html {
       background-color: color-mix(
         in srgb,
         #f0b4e1 32.5%,
-        light-dark(light-dark(#f8f5f1, #2e261f), light-dark(#f8f5f1, #2e261f))
+        light-dark(#f8f5f1, #2e261f)
       );
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -600,7 +600,7 @@ html {
       background-color: color-mix(
         in srgb,
         #f0b4e1 32.5%,
-        light-dark(light-dark(#f8f5f1, #2e261f), light-dark(#f8f5f1, #2e261f))
+        light-dark(#f8f5f1, #2e261f)
       );
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -611,7 +611,7 @@ html {
       background-color: color-mix(
         in srgb,
         #f0b4e1 32.5%,
-        light-dark(light-dark(#f8f5f1, #2e261f), light-dark(#f8f5f1, #2e261f))
+        light-dark(#f8f5f1, #2e261f)
       );
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -622,7 +622,7 @@ html {
       background-color: color-mix(
         in srgb,
         #f0b4e1 32.5%,
-        light-dark(light-dark(#f8f5f1, #2e261f), light-dark(#f8f5f1, #2e261f))
+        light-dark(#f8f5f1, #2e261f)
       );
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -633,7 +633,7 @@ html {
       background-color: color-mix(
         in srgb,
         #f0b4e1 32.5%,
-        light-dark(light-dark(#f8f5f1, #2e261f), light-dark(#f8f5f1, #2e261f))
+        light-dark(#f8f5f1, #2e261f)
       );
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -644,7 +644,7 @@ html {
       background-color: color-mix(
         in srgb,
         #f0b4e1 32.5%,
-        light-dark(light-dark(#f8f5f1, #2e261f), light-dark(#f8f5f1, #2e261f))
+        light-dark(#f8f5f1, #2e261f)
       );
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -655,7 +655,7 @@ html {
       background-color: color-mix(
         in srgb,
         #f0b4e1 32.5%,
-        light-dark(light-dark(#f8f5f1, #2e261f), light-dark(#f8f5f1, #2e261f))
+        light-dark(#f8f5f1, #2e261f)
       );
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -666,7 +666,7 @@ html {
       background-color: color-mix(
         in srgb,
         #f0b4e1 32.5%,
-        light-dark(light-dark(#f8f5f1, #2e261f), light-dark(#f8f5f1, #2e261f))
+        light-dark(#f8f5f1, #2e261f)
       );
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -677,7 +677,7 @@ html {
       background-color: color-mix(
         in srgb,
         #f0b4e1 32.5%,
-        light-dark(light-dark(#f8f5f1, #2e261f), light-dark(#f8f5f1, #2e261f))
+        light-dark(#f8f5f1, #2e261f)
       );
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);

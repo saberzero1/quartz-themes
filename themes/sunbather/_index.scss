@@ -966,10 +966,7 @@ body {
     background-color: light-dark(#ecebeb, #131313);
     border: 0px solid transparent;
     border-radius: 4px;
-    color: light-dark(
-      light-dark(#262626, #d6d4d4),
-      light-dark(#262626, #d6d4d4)
-    );
+    color: light-dark(#262626, #d6d4d4);
     font-family:
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1262,11 +1259,7 @@ body {
         & > input {
           background-color: light-dark(#ffffff, #050505);
           border: none;
-          border-bottom: 1px solid
-            light-dark(
-              light-dark(#ffffff, #050505),
-              light-dark(#ffffff, #050505)
-            );
+          border-bottom: 1px solid light-dark(#ffffff, #050505);
           border-radius: 0;
           font-size: 16px;
           height: 48px;

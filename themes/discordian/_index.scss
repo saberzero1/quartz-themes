@@ -1167,10 +1167,7 @@ body {
       background: transparent;
       background-color: #212326;
       border: 1px solid transparent;
-      border-color: light-dark(
-        light-dark(#fcfcfc, #212121),
-        light-dark(#e0e0e0, #363636)
-      );
+      border-color: light-dark(#fcfcfc, #212121);
       border-radius: 4px;
       color: #8d9196;
       font-family:
