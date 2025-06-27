@@ -390,12 +390,9 @@ body {
   -webkit-font-smoothing: auto;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(
-    light-dark(#fdf9f3, #1e1f2b),
-    light-dark(#fdf9f3, #1e1f2b)
-  );
+  background-color: light-dark(#fdf9f3, #1e1f2b);
   caret-color: #fad872;
-  color: light-dark(light-dark(#2c292d, #2c292d), light-dark(#ffffff, #ffffff));
+  color: light-dark(#2c292d, #2c292d);
   contain: initial;
   font-family:
     "??",
@@ -667,19 +664,13 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: light-dark(
-    light-dark(#fdf9f3, #1e1f2b),
-    light-dark(#fdf9f3, #1e1f2b)
-  );
+  background-color: light-dark(#fdf9f3, #1e1f2b);
   section,
   .page > #quartz-body .sidebar {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: light-dark(
-        light-dark(#fdf9f3, #1e1f2b),
-        light-dark(#fdf9f3, #1e1f2b)
-      );
+      background-color: light-dark(#fdf9f3, #1e1f2b);
     }
   }
   .highlight,
@@ -835,10 +826,7 @@ body {
   /* HEADINGS */
   h1 {
     --font-weight: 700;
-    color: light-dark(
-      light-dark(#b3d97e, #b3d97e),
-      light-dark(#b3d97e, #b3d97e)
-    );
+    color: light-dark(#b3d97e, #b3d97e);
     font-family: inherit;
     font-size: 1.802em;
     font-style: normal;
@@ -854,10 +842,7 @@ body {
   }
   h2 {
     --font-weight: 600;
-    color: light-dark(
-      light-dark(#61afef, #61afef),
-      light-dark(#61afef, #61afef)
-    );
+    color: light-dark(#61afef, #61afef);
     font-family: inherit;
     font-size: 1.602em;
     font-style: normal;
@@ -873,10 +858,7 @@ body {
   }
   h3 {
     --font-weight: 600;
-    color: light-dark(
-      light-dark(#f19d6d, #f19d6d),
-      light-dark(#f19d6d, #f19d6d)
-    );
+    color: light-dark(#f19d6d, #f19d6d);
     font-family: inherit;
     font-size: 1.424em;
     font-style: normal;
@@ -892,10 +874,7 @@ body {
   }
   h4 {
     --font-weight: 600;
-    color: light-dark(
-      light-dark(#a8a0ee, #a8a0ee),
-      light-dark(#a8a0ee, #a8a0ee)
-    );
+    color: light-dark(#a8a0ee, #a8a0ee);
     font-family: inherit;
     font-size: 1.266em;
     font-style: normal;
@@ -911,10 +890,7 @@ body {
   }
   h5 {
     --font-weight: 600;
-    color: light-dark(
-      light-dark(#abb2bf, #abb2bf),
-      light-dark(#abb2bf, #abb2bf)
-    );
+    color: light-dark(#abb2bf, #abb2bf);
     font-family: inherit;
     font-size: 1.125em;
     font-style: normal;
@@ -946,10 +922,7 @@ body {
   }
   /* CODE */
   pre {
-    background-color: light-dark(
-      light-dark(#2c292d, #2c292d),
-      light-dark(#2c292d, #2c292d)
-    );
+    background-color: light-dark(#2c292d, #2c292d);
     border: 0px solid transparent;
     border-radius: 4px;
     min-height: 38px;
@@ -1014,16 +987,10 @@ body {
   }
   code {
     -webkit-box-decoration-break: clone;
-    background-color: light-dark(
-      light-dark(#2c292d, #2c292d),
-      light-dark(#2c292d, #2c292d)
-    );
+    background-color: light-dark(#2c292d, #2c292d);
     border: 0px solid transparent;
     border-radius: 4px;
-    color: light-dark(
-      light-dark(#ffffff, #ffffff),
-      light-dark(#ffffff, #ffffff)
-    );
+    color: light-dark(#ffffff, #ffffff);
     font-family:
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1034,10 +1001,7 @@ body {
   .clipboard-button {
     background-color: transparent;
     box-shadow: none;
-    color: light-dark(
-      light-dark(#5c6370, #5c6370),
-      light-dark(#abb2bf, #abb2bf)
-    );
+    color: light-dark(#5c6370, #5c6370);
     font-family:
       "??",
       "??",
@@ -1074,19 +1038,13 @@ body {
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: light-dark(
-      light-dark(#f19d6d, #f19d6d),
-      light-dark(#fad872, #fad872)
-    );
+    color: light-dark(#f19d6d, #f19d6d);
   }
   /* BACKLINKS */
   .backlinks {
     h3 {
       --font-weight: 600;
-      color: light-dark(
-        light-dark(#f19d6d, #f19d6d),
-        light-dark(#f19d6d, #f19d6d)
-      );
+      color: light-dark(#f19d6d, #f19d6d);
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1112,25 +1070,16 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: light-dark(
-        light-dark(#61afef, #61afef),
-        light-dark(#61afef, #61afef)
-      );
+      color: light-dark(#61afef, #61afef);
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: light-dark(
-          light-dark(#fdf9f3, #1e1f2b),
-          light-dark(#fdf9f3, #1e1f2b)
-        );
+        background-color: light-dark(#fdf9f3, #1e1f2b);
       }
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
-        color: light-dark(
-          light-dark(#2c292d, #2c292d),
-          light-dark(#a8a0ee, #a8a0ee)
-        );
+        color: light-dark(#2c292d, #2c292d);
         text-overflow: ellipsis;
         position: relative;
         & > svg {
@@ -1172,10 +1121,7 @@ body {
         position: relative;
         a {
           border-radius: 4px;
-          color: light-dark(
-            light-dark(#abb2bf, #abb2bf),
-            light-dark(#abb2bf, #abb2bf)
-          );
+          color: light-dark(#abb2bf, #abb2bf);
           cursor: pointer;
           display: flex;
           font-size: 16px;
@@ -1214,17 +1160,11 @@ body {
   }
   /* TOC */
   .toc {
-    color: light-dark(
-      light-dark(#f19d6d, #f19d6d),
-      light-dark(#f19d6d, #f19d6d)
-    );
+    color: light-dark(#f19d6d, #f19d6d);
     button.toc-header {
       h3 {
         --font-weight: 600;
-        color: light-dark(
-          light-dark(#f19d6d, #f19d6d),
-          light-dark(#f19d6d, #f19d6d)
-        );
+        color: light-dark(#f19d6d, #f19d6d);
         font-family: inherit;
         font-size: 1.424em;
         font-style: normal;
@@ -1235,19 +1175,13 @@ body {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
       }
-      color: light-dark(
-        light-dark(#f19d6d, #f19d6d),
-        light-dark(#f19d6d, #f19d6d)
-      );
+      color: light-dark(#f19d6d, #f19d6d);
       color: inherit;
     }
     ul.toc-content.overflow {
       li,
       li > a {
-        color: light-dark(
-          light-dark(#abb2bf, #abb2bf),
-          light-dark(#abb2bf, #abb2bf)
-        );
+        color: light-dark(#abb2bf, #abb2bf);
         font-weight: inherit;
         font-size: 16px;
         color: inherit;
@@ -1260,10 +1194,7 @@ body {
   .toc {
     h3 {
       --font-weight: 600;
-      color: light-dark(
-        light-dark(#f19d6d, #f19d6d),
-        light-dark(#f19d6d, #f19d6d)
-      );
+      color: light-dark(#f19d6d, #f19d6d);
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1326,13 +1257,9 @@ body {
     & > .search-button {
       -webkit-app-region: no-drag;
       background: transparent;
-      border: 1px solid
-        light-dark(light-dark(#5c6370, #5c6370), light-dark(#5c6370, #5c6370));
+      border: 1px solid light-dark(#5c6370, #5c6370);
       border-radius: 5px;
-      color: light-dark(
-        light-dark(#2c292d, #2c292d),
-        light-dark(#ffffff, #ffffff)
-      );
+      color: light-dark(#2c292d, #2c292d);
       font-family: inherit;
       font-size: 14.992px;
       height: 40px;
@@ -1345,10 +1272,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: light-dark(
-          light-dark(#fdf9f3, #1e1f2b),
-          light-dark(#fdf9f3, #1e1f2b)
-        );
+        background-color: light-dark(#fdf9f3, #1e1f2b);
         border: 0.5pt solid #555555;
         border-radius: 12px;
         box-shadow:
@@ -1357,16 +1281,9 @@ body {
           0px 30px 90px #00000033;
         margin: 12vh auto;
         & > input {
-          background-color: light-dark(
-            light-dark(#fdf9f3, #1e1f2b),
-            light-dark(#fdf9f3, #1e1f2b)
-          );
+          background-color: light-dark(#fdf9f3, #1e1f2b);
           border: none;
-          border-bottom: 1px solid
-            light-dark(
-              light-dark(#fdf9f3, #282a3a),
-              light-dark(#fdf9f3, #282a3a)
-            );
+          border-bottom: 1px solid light-dark(#fdf9f3, #282a3a);
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1378,10 +1295,7 @@ body {
           background: transparent;
         }
         & > * {
-          color: light-dark(
-            light-dark(#2c292d, #2c292d),
-            light-dark(#ffffff, #ffffff)
-          );
+          color: light-dark(#2c292d, #2c292d);
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1393,14 +1307,8 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: light-dark(
-              light-dark(#fad872, #fad872),
-              light-dark(#fad872, #fad872)
-            );
-            color: light-dark(
-              light-dark(#2c292d, #2c292d),
-              light-dark(#ffffff, #ffffff)
-            );
+            background-color: light-dark(#fad872, #fad872);
+            color: light-dark(#2c292d, #2c292d);
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1420,10 +1328,7 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: light-dark(
-                  light-dark(#2c292d, #2c292d),
-                  light-dark(#ffffff, #ffffff)
-                );
+                color: light-dark(#2c292d, #2c292d);
                 &.match-tag {
                   color: #2c292d;
                 }
@@ -1486,12 +1391,8 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: light-dark(
-      light-dark(#fdf9f3, #1e1f2b),
-      light-dark(#fdf9f3, #1e1f2b)
-    );
-    border: 1px solid
-      light-dark(light-dark(#5c6370, #5c6370), light-dark(#5c6370, #5c6370));
+    background-color: light-dark(#fdf9f3, #1e1f2b);
+    border: 1px solid light-dark(#5c6370, #5c6370);
     border-radius: 8px;
     box-shadow:
       0px 1px 2px #0000001f,
@@ -1507,12 +1408,8 @@ body {
     background-color: unset;
     border: unset;
     & .popover-inner {
-      border: 1px solid
-        light-dark(light-dark(#5c6370, #5c6370), light-dark(#5c6370, #5c6370));
-      background-color: light-dark(
-        light-dark(#fdf9f3, #1e1f2b),
-        light-dark(#fdf9f3, #1e1f2b)
-      );
+      border: 1px solid light-dark(#5c6370, #5c6370);
+      background-color: light-dark(#fdf9f3, #1e1f2b);
 
       border-radius: 8px;
     }

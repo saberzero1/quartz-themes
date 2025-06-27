@@ -711,8 +711,7 @@ body {
   /* HEADINGS */
   h1 {
     --font-weight: 700;
-    border-bottom: 2px solid
-      light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
+    border-bottom: 2px solid light-dark(#fcfcfc, #212121);
     color: inherit;
     font-family: inherit;
     font-size: 1.55rem;
@@ -730,8 +729,7 @@ body {
   }
   h2 {
     --font-weight: 600;
-    border-bottom: 2px solid
-      light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
+    border-bottom: 2px solid light-dark(#fcfcfc, #212121);
     color: inherit;
     font-family: inherit;
     font-size: 1.4rem;

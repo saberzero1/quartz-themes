@@ -1048,12 +1048,7 @@ body {
           &.active,
           &:hover {
             background-color: light-dark(hsl(15, 20%, 96%), hsl(300, 6%, 10%));
-            color: hsl(
-              light-dark(
-                light-dark(#ec7500, #e9973f),
-                light-dark(#ec7500, #e9973f)
-              )
-            );
+            color: light-dark(#ec7500, #e9973f);
             font-weight: inherit;
           }
           &[data-for$="/index"] {
@@ -1234,18 +1229,8 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: hsl(
-              light-dark(
-                light-dark(#ec7500, #e9973f),
-                light-dark(#ec7500, #e9973f)
-              )
-            );
-            color: hsl(
-              light-dark(
-                light-dark(15, 20%, 88%, 15, 20%, 84%),
-                light-dark(15, 20%, 88%, 15, 20%, 84%)
-              )
-            );
+            background-color: light-dark(#ec7500, #e9973f);
+            color: light-dark(15, 20%, 88%, 15, 20%, 84%);
           }
           & > .preview-container {
             color: var(--text-normal);

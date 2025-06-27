@@ -1014,10 +1014,7 @@ body {
     right: 0;
     top: 0;
     &:hover {
-      background-color: light-dark(
-        light-dark(#fcfcfc, #212121),
-        light-dark(#e0e0e0, #363636)
-      );
+      background-color: light-dark(#fcfcfc, #212121);
     }
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));

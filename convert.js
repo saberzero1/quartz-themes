@@ -735,7 +735,7 @@ themeFolders.forEach((folder) => {
     const processedScss = inlineScssUseRulesAndClean(scssContent, themePath);
     const prunedScss = prune(processedScss);
     const cleanedScss = cleanup(prunedScss);
-    writePrettier(themePath, cleanedScss, "utf8");
+    writePrettier(themePath, cleanup(cleanedScss), "utf8");
     // Remove all directories under themes/${folder}
     const themeDir = `./themes/${folder}`;
     const items = fs.readdirSync(themeDir);

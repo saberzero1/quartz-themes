@@ -1157,10 +1157,7 @@ body {
           0px 30px 90px #00000033;
         margin: 12vh auto;
         & > input {
-          background-color: light-dark(
-            light-dark(#fcfcfc, #212121),
-            light-dark(#e0e0e0, #363636)
-          );
+          background-color: light-dark(#fcfcfc, #212121);
           border: none;
           border-bottom: 1px solid light-dark(#f2f2f2, #3b4252);
           border-radius: 0;
@@ -1204,10 +1201,7 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: light-dark(
-                  light-dark(#fcfcfc, #212121),
-                  light-dark(#e0e0e0, #363636)
-                );
+                background-color: light-dark(#fcfcfc, #212121);
               }
               & > ul > li > p {
                 background-color: transparent;

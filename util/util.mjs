@@ -582,7 +582,8 @@ export function cleanRulesAfterRun(cssString) {
 }
 
 export function cleanup(cssString) {
-  cssString = cssString.replaceAll(/^\s*?((?:background-)?color:)\s*?rgba\(\s*?light-dark\((\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3})\s*?\),\s*?([\d\.\%]+)\s*?\)(?=$|;|,)/gms, "$1 light-dark(rgba($2, $3, $4, $8), rgba($5, $6, $7, $8));") // Fix light-dark(rgb) with 6 values
+  cssString = cssString.replaceAll(/^\s*?((?:background-|border-)?color:)\s*?rgba\(\s*?light-dark\((\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3})\s*?\),\s*?([\d\.\%]+)\s*?\)(?=$|;|,)/gms, "$1 light-dark(rgba($2, $3, $4, $8), rgba($5, $6, $7, $8));") // Fix light-dark(rgb) with 6 values
+  cssString = cssString.replaceAll(/(?<=^\s*?(?:(?:background-|border-)?color:\s*?)?)rgba\(\s*?light-dark\((\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3})\s*?\),\s*?([\d\.\%]+)\s*?\)(?=$|;|,)/gms, "$1 light-dark(rgba($2, $3, $4, $8), rgba($5, $6, $7, $8));") // Fix light-dark(rgb) with 6 values
   cssString = cssString.replaceAll(/rgba\(((?:[\d\.]+,\s*){3,})([\d\.]+,\s*)([\d\.\%]+)\);/gms, "rgba($1$3);") // Fix rgba with more than 4 values
   cssString = cssString.replaceAll(/rgba?\((\#[\da-fA-F]{3,8})\);/gms, "$1;") // Fix hex colors in rgba
   cssString = cssString.replaceAll(/\#{2,}([\da-fA-F]{3,8});/gms, "#$1;") // Fix hex colors with more than 2 #
@@ -600,7 +601,11 @@ export function cleanup(cssString) {
   cssString = cssString.replaceAll(/;\s*;/gms, ";") // Remove duplicate semicolons
 
   cssString = cssString.replaceAll(/^\s*?color:\s*?hsl\(light-dark\([^\#l\)]+(light-dark\(\#[\da-fA-F]{3,8},\s*?\#[\da-fA-F]{3,8}\))\)\)(?=$|;|,)/gms, "color: $1")
-  cssString = cssString.replaceAll(/background-color:\s*?light-dark\(\s*?hsl\((light-dark\([^\)]+\))\)\s*?,\s*?hsl\((light-dark\([^\)]+\))\)\s*?\);/gms, "background-color: $1;") // Fix light-dark(hsl) with 6 values
+  cssString = cssString.replaceAll(/(?<=^\s*?(?:(?:background-|border-)?color:\s*?)?)(?:light-dark|hsl)\(\s*?(light-dark\([^\)]+\))\s*?\)\s*?,\s*?(light-dark\([^\)]+\))\s*?\)\s*?\)(?=$|;|,)/gms, "$1") // Fix light-dark(hsl) with 6 values
+  cssString = cssString.replaceAll(/(?<=^\s*?(?:(?:background-|border-)?color:\s*?)?)hsl\(\s*?light-dark\(\s*?(light-dark\([^\)]+\))\s*?,\s*?(light-dark\([^\)]+\))\s*?\)\s*?\)(?=$|;|,)/gms, "$1") // Fix light-dark(hsl) with 6 values
+  cssString = cssString.replaceAll(/(?<=solid\s*?)light-dark\(\#[\da-fA-F]{3,8},\s*?(light-dark\(\#[\da-fA-F]{3,8},\s*?\#[\da-fA-F]{3,8}\))(?=$|;|,)/gms, "$1")
+  cssString = cssString.replaceAll(/(?<=^\s*?(?:(?:background-|border-)?color:\s*?)?)light-dark\(\s*?(light-dark\(\#[\da-fA-F]{3,8},\s*?\#[\da-fA-F]{3,8}\s*?\)),\s*?(light-dark\(\#[\da-fA-F]{3,8},\s*?\#[\da-fA-F]{3,8}\s*?\))\s*?\)(?=$|;|,)/gms, "$1")
+  cssString = cssString.replaceAll(/(?<=^\s*?(?:(?:background-|border-)?color:\s*?)?)light-dark\(\s*?(light-dark\([^\)]+\)),\s*?(light-dark\([^\)]+\))\s*?\)(?=$|;|,)/gms, "$1")
 
   return cssString
 }

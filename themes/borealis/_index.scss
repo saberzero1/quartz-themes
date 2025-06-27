@@ -939,10 +939,7 @@ body {
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: light-dark(
-      light-dark(#21b043, #a1f98f),
-      light-dark(#21b043, #a1f98f)
-    );
+    color: light-dark(#21b043, #a1f98f);
   }
   /* BACKLINKS */
   .backlinks {

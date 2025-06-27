@@ -380,12 +380,9 @@ body {
   --text-normal: light-dark(#7aa3b8, #bdd1db);
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(
-    light-dark(#ffffff, #1e1e1e),
-    light-dark(#f6f6f6, #262626)
-  );
+  background-color: light-dark(#ffffff, #1e1e1e);
   caret-color: #3ca7dd;
-  color: light-dark(light-dark(#5c5c5c, #b3b3b3), light-dark(#222222, #dadada));
+  color: light-dark(#5c5c5c, #b3b3b3);
   contain: initial;
   font-family:
     "??",
@@ -659,19 +656,13 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: light-dark(
-    light-dark(#ffffff, #1e1e1e),
-    light-dark(#f6f6f6, #262626)
-  );
+  background-color: light-dark(#ffffff, #1e1e1e);
   section,
   .page > #quartz-body .sidebar {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: light-dark(
-        light-dark(#ffffff, #1e1e1e),
-        light-dark(#f6f6f6, #262626)
-      );
+      background-color: light-dark(#ffffff, #1e1e1e);
     }
   }
   .highlight,
@@ -1020,10 +1011,7 @@ body {
     );
     border: 0px solid transparent;
     border-radius: 4px;
-    color: light-dark(
-      light-dark(#e93147, #fb464c),
-      light-dark(#ec7500, #e9973f)
-    );
+    color: light-dark(#e93147, #fb464c);
     font-family:
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1115,10 +1103,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: light-dark(
-          light-dark(#ffffff, #1e1e1e),
-          light-dark(#f6f6f6, #262626)
-        );
+        background-color: light-dark(#ffffff, #1e1e1e);
       }
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
@@ -1318,10 +1303,7 @@ body {
       background: transparent;
       border: 1px solid transparent;
       border-radius: 5px;
-      color: light-dark(
-        light-dark(#5c5c5c, #b3b3b3),
-        light-dark(#222222, #dadada)
-      );
+      color: light-dark(#5c5c5c, #b3b3b3);
       font-family: inherit;
       font-size: 14.992px;
       height: 40px;
@@ -1334,10 +1316,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: light-dark(
-          light-dark(#ffffff, #1e1e1e),
-          light-dark(#f6f6f6, #262626)
-        );
+        background-color: light-dark(#ffffff, #1e1e1e);
         border: 0.5pt solid #1e3038;
         border-radius: 12px;
         box-shadow:
@@ -1346,16 +1325,9 @@ body {
           0px 30px 90px #00000033;
         margin: 12vh auto;
         & > input {
-          background-color: light-dark(
-            light-dark(#ffffff, #1e1e1e),
-            light-dark(#f6f6f6, #262626)
-          );
+          background-color: light-dark(#ffffff, #1e1e1e);
           border: none;
-          border-bottom: 1px solid
-            light-dark(
-              light-dark(#fafafa, #242424),
-              light-dark(#ffffff, #1e1e1e)
-            );
+          border-bottom: 1px solid light-dark(#fafafa, #242424);
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1367,10 +1339,7 @@ body {
           background: transparent;
         }
         & > * {
-          color: light-dark(
-            light-dark(#5c5c5c, #b3b3b3),
-            light-dark(#222222, #dadada)
-          );
+          color: light-dark(#5c5c5c, #b3b3b3);
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1383,10 +1352,7 @@ body {
           & .highlight {
             font-weight: bold;
             background-color: #ffd00066;
-            color: light-dark(
-              light-dark(#5c5c5c, #b3b3b3),
-              light-dark(#222222, #dadada)
-            );
+            color: light-dark(#5c5c5c, #b3b3b3);
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1406,10 +1372,7 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: light-dark(
-                  light-dark(#5c5c5c, #b3b3b3),
-                  light-dark(#222222, #dadada)
-                );
+                color: light-dark(#5c5c5c, #b3b3b3);
                 &.match-tag {
                   color: #3ca7dd;
                 }
@@ -1472,10 +1435,7 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: light-dark(
-      light-dark(#ffffff, #1e1e1e),
-      light-dark(#f6f6f6, #262626)
-    );
+    background-color: light-dark(#ffffff, #1e1e1e);
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow:
@@ -1493,10 +1453,7 @@ body {
     border: unset;
     & .popover-inner {
       border: 1px solid transparent;
-      background-color: light-dark(
-        light-dark(#ffffff, #1e1e1e),
-        light-dark(#f6f6f6, #262626)
-      );
+      background-color: light-dark(#ffffff, #1e1e1e);
 
       border-radius: 8px;
     }

@@ -704,10 +704,7 @@ body {
   /* HEADINGS */
   h1 {
     --font-weight: 00;
-    color: light-dark(
-      light-dark(#686868, #dddddd),
-      light-dark(#686868, #dddddd)
-    );
+    color: light-dark(#686868, #dddddd);
     font-family: "Peace Sans";
     font-size: 1.802em;
     font-style: normal;
@@ -723,10 +720,7 @@ body {
   }
   h2 {
     --font-weight: 00;
-    color: light-dark(
-      light-dark(#686868, #dddddd),
-      light-dark(#686868, #dddddd)
-    );
+    color: light-dark(#686868, #dddddd);
     font-family: "Peace Sans";
     font-size: 1.602em;
     font-style: normal;
@@ -742,10 +736,7 @@ body {
   }
   h3 {
     --font-weight: 000;
-    color: light-dark(
-      light-dark(#686868, #dddddd),
-      light-dark(#686868, #dddddd)
-    );
+    color: light-dark(#686868, #dddddd);
     font-family: "Peace Sans";
     font-size: 1.424em;
     font-style: normal;
@@ -761,10 +752,7 @@ body {
   }
   h4 {
     --font-weight: 00;
-    color: light-dark(
-      light-dark(#686868, #dddddd),
-      light-dark(#686868, #dddddd)
-    );
+    color: light-dark(#686868, #dddddd);
     font-family: "Peace Sans";
     font-size: 1.266em;
     font-style: normal;
@@ -780,10 +768,7 @@ body {
   }
   h5 {
     --font-weight: 00;
-    color: light-dark(
-      light-dark(#686868, #dddddd),
-      light-dark(#686868, #dddddd)
-    );
+    color: light-dark(#686868, #dddddd);
     font-family: "Peace Sans";
     font-size: 1.125em;
     font-style: normal;
@@ -799,10 +784,7 @@ body {
   }
   h6 {
     --font-weight: 00;
-    color: light-dark(
-      light-dark(#686868, #dddddd),
-      light-dark(#686868, #dddddd)
-    );
+    color: light-dark(#686868, #dddddd);
     font-family: "Peace Sans";
     font-size: 1em;
     font-style: normal;
@@ -943,10 +925,7 @@ body {
   .backlinks {
     h3 {
       --font-weight: 000;
-      color: light-dark(
-        light-dark(#686868, #dddddd),
-        light-dark(#686868, #dddddd)
-      );
+      color: light-dark(#686868, #dddddd);
       font-family: "Peace Sans";
       font-size: 1.424em;
       font-style: normal;
@@ -972,10 +951,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: light-dark(
-        light-dark(#686868, #dddddd),
-        light-dark(#686868, #dddddd)
-      );
+      color: light-dark(#686868, #dddddd);
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1069,17 +1045,11 @@ body {
   }
   /* TOC */
   .toc {
-    color: light-dark(
-      light-dark(#686868, #dddddd),
-      light-dark(#686868, #dddddd)
-    );
+    color: light-dark(#686868, #dddddd);
     button.toc-header {
       h3 {
         --font-weight: 000;
-        color: light-dark(
-          light-dark(#686868, #dddddd),
-          light-dark(#686868, #dddddd)
-        );
+        color: light-dark(#686868, #dddddd);
         font-family: "Peace Sans";
         font-size: 1.424em;
         font-style: normal;
@@ -1090,10 +1060,7 @@ body {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
       }
-      color: light-dark(
-        light-dark(#686868, #dddddd),
-        light-dark(#686868, #dddddd)
-      );
+      color: light-dark(#686868, #dddddd);
       color: inherit;
     }
     ul.toc-content.overflow {
@@ -1112,10 +1079,7 @@ body {
   .toc {
     h3 {
       --font-weight: 000;
-      color: light-dark(
-        light-dark(#686868, #dddddd),
-        light-dark(#686868, #dddddd)
-      );
+      color: light-dark(#686868, #dddddd);
       font-family: "Peace Sans";
       font-size: 1.424em;
       font-style: normal;
