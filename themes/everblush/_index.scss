@@ -247,6 +247,9 @@ html[saved-theme="dark"] {
   --text-muted: light-dark(#1e2528, #d0d0d0);
   --text-normal: light-dark(#141b1e, #d5d5d5);
   --text-title-h2: light-dark(#f3a368, var(--blue));
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-50);
 }
 body {
   --text-normal: var(--color-base-100);
@@ -411,6 +414,9 @@ body {
   text-rendering: optimizeLegibility;
   user-select: none;
   width: 100%;
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-50);
 }
 /* CALLOUTS */
 :root,

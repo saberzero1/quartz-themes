@@ -179,6 +179,9 @@ html[saved-theme="light"] {
   --italic-color: light-dark(#ffd700, #f6fa70);
   --link-color: light-dark(#ffd700, #f6fa70);
   --link-external-color: light-dark(#ffd700, #f6fa70);
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-50);
 }
 body {
   --text-normal: var(--color-base-100);
@@ -333,6 +336,9 @@ body {
   text-rendering: optimizeLegibility;
   user-select: none;
   width: 100%;
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-50);
 }
 /* CALLOUTS */
 :root,
