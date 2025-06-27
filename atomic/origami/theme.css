@@ -3037,7 +3037,7 @@ body:not(.is-mobile) .app-container {
     );
     opacity: 0.7;
     right: 0;
-    transform: var(--persistent-transform,) scale(0.9);
+    transform: var(--persistent-transform), scale(0.9);
     width: 100%;
   }
 }
@@ -26241,7 +26241,7 @@ kbd.suggestion-hotkey {
 }
 
 .nav-file-title > * {
-  --persistent-transform:  ;
+  --persistent-transform: none;
 }
 
 /* change > infront of active folder
@@ -27745,7 +27745,7 @@ body.is-phone
 }
 
 body.is-phone .nav-file-title > * {
-  --persistent-transform1:  ;
+  --persistent-transform1: none;
 }
 
 body.is-phone .nav-file-title.is-active {

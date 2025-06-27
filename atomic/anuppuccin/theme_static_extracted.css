@@ -94,9 +94,9 @@ body {
   --background-modifier-success: rgba(inherit, 1);
   --background-modifier-success-hover: rgba(inherit, 0.9);
   --background-modifier-success-rgb: inherit;
-  --background-primary: rgb(inherit);
-  --background-primary-alt: rgb(inherit);
-  --background-secondary: rgb(inherit);
+  --background-primary: inherit;
+  --background-primary-alt: inherit;
+  --background-secondary: inherit;
   --background-secondary-alt: light-dark(#212121, #363636);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
@@ -106,18 +106,18 @@ body {
   --bases-header-padding-end: 2px;
   --bases-header-padding-start: 2px;
   --bases-table-border-color: transparent;
-  --bases-table-cell-background-active: rgb(inherit);
+  --bases-table-cell-background-active: inherit;
   --bases-table-cell-background-disabled: #00000080;
   --bases-table-cell-radius-active: 2px;
-  --bases-table-cell-shadow-active: 0 0 0 2px rgb(inherit);
+  --bases-table-cell-shadow-active: 0 0 0 2px inherit;
   --bases-table-column-border-width: 1px;
   --bases-table-column-max-width: 300;
   --bases-table-column-min-width: 40;
   --bases-table-container-border-radius: 4px;
   --bases-table-container-border-width: 1px;
-  --bases-table-header-background: rgb(inherit);
+  --bases-table-header-background: inherit;
   --bases-table-header-background-hover: rgba(inherit, 0.075);
-  --bases-table-header-color: rgb(inherit);
+  --bases-table-header-color: inherit;
   --bases-table-header-icon-display: flex;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -131,7 +131,7 @@ body {
   --bases-table-text-size: 0.875em;
   --bases-table-white-space: nowrap;
   --blockquote-background-color: rgba(inherit, 0.5);
-  --blockquote-border-color: rgb(inherit);
+  --blockquote-border-color: inherit;
   --blockquote-border-thickness: 2px;
   --blockquote-color: inherit;
   --blockquote-font-style: normal;
@@ -165,8 +165,8 @@ body {
   --callout-title-weight: 800;
   --callout-todo: 2, 122, 255;
   --callout-warning: 233, 151, 63;
-  --canvas-background: rgb(inherit);
-  --canvas-card-label-color: rgb(inherit);
+  --canvas-background: inherit;
+  --canvas-card-label-color: inherit;
   --canvas-color: inherit;
   --canvas-color-1: 251, 70, 76;
   --canvas-color-2: 233, 151, 63;
@@ -175,39 +175,39 @@ body {
   --canvas-color-5: 83, 223, 221;
   --canvas-color-6: 168, 130, 255;
   --canvas-dot-pattern: #363636;
-  --card-background-color: rgb(inherit);
-  --card-foreground-color: rgb(inherit);
-  --caret-color: rgb(inherit);
-  --checkbox-border-color: rgb(inherit);
-  --checkbox-border-color-hover: rgb(inherit);
-  --checkbox-color: rgb(inherit);
-  --checkbox-color-hover: rgb(inherit);
+  --card-background-color: inherit;
+  --card-foreground-color: inherit;
+  --caret-color: inherit;
+  --checkbox-border-color: inherit;
+  --checkbox-border-color-hover: inherit;
+  --checkbox-color: inherit;
+  --checkbox-color-hover: inherit;
   --checkbox-margin-inline-start: 0.85em;
-  --checkbox-marker-color: rgb(inherit);
+  --checkbox-marker-color: inherit;
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --checklist-done-color: rgb(inherit);
+  --checklist-done-color: inherit;
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: 4px;
   --code-background: #363636;
   --code-border-color: transparent;
   --code-border-width: 0px;
-  --code-comment: rgb(inherit);
+  --code-comment: inherit;
   --code-function: #e0de71;
   --code-important: #e9973f;
   --code-keyword: #fa99cd;
-  --code-normal: rgb(inherit);
+  --code-normal: inherit;
   --code-operator: #fb464c;
   --code-property: #53dfdd;
-  --code-punctuation: rgb(inherit);
+  --code-punctuation: inherit;
   --code-radius: 4px;
   --code-size: 0.875em;
   --code-string: #44cf6e;
   --code-tag: #fb464c;
   --code-value: #a882ff;
   --code-white-space: pre-wrap;
-  --collapse-icon-color: rgb(inherit);
-  --collapse-icon-color-collapsed: rgb(inherit);
+  --collapse-icon-color: inherit;
+  --collapse-icon-color-collapsed: inherit;
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
   --color-accent-1: light-dark(#9873f7, #a68af9);
   --color-accent-2: light-dark(#a68af9, #c5b6fc);
@@ -241,7 +241,7 @@ body {
   --color-yellow: light-dark(#e0ac00, #e0de71);
   --color-yellow-rgb: inherit;
   --colorful-frame-color: rgba(inherit, 1);
-  --colorful-icon-color: rgb(inherit);
+  --colorful-icon-color: inherit;
   --colorful-icon-color-alt: #363636;
   --ctp-base: light-dark(#eff1f5, #1e1e2e);
   --ctp-blue: light-dark(#2a6ef5, #87b0f9);
@@ -264,15 +264,15 @@ body {
   --dialog-width: 560px;
   --direction: 1;
   --divider-color: transparent;
-  --divider-color-hover: rgb(inherit);
+  --divider-color-hover: inherit;
   --divider-vertical-height: calc(100% - 40px);
   --divider-width: 1px;
   --divider-width-hover: 3px;
-  --drag-ghost-background: rgb(inherit);
-  --drag-ghost-text-color: rgb(inherit);
+  --drag-ghost-background: inherit;
+  --drag-ghost-text-color: inherit;
   --dropdown-background: rgba(inherit, 0.075);
   --dropdown-background-blend-mode: hard-light;
-  --dropdown-background-hover: rgb(inherit);
+  --dropdown-background-hover: inherit;
   --dropdown-background-position: right 0.5em top 50%, 0 0;
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
@@ -280,7 +280,7 @@ body {
   --embed-block-shadow-hover: none;
   --embed-border-bottom: none;
   --embed-border-end: none;
-  --embed-border-start: 2px solid rgb(inherit);
+  --embed-border-start: 2px solid inherit;
   --embed-border-top: none;
   --embed-canvas-max-height: 400px;
   --embed-font-style: inherit;
@@ -298,7 +298,7 @@ body {
   --file-line-width: 700px;
   --file-margins: 32px;
   --flair-background: rgba(inherit, 0.075);
-  --flair-color: rgb(inherit);
+  --flair-color: inherit;
   --font-black: 900;
   --font-bold: 700;
   --font-default:
@@ -353,8 +353,8 @@ body {
   --footnote-divider-color-active: transparent;
   --footnote-divider-width: 1px;
   --footnote-gap: 4px;
-  --footnote-id-color: rgb(inherit);
-  --footnote-id-color-no-occurrences: rgb(inherit);
+  --footnote-id-color: inherit;
+  --footnote-id-color-no-occurrences: inherit;
   --footnote-id-delimiter: ".";
   --footnote-input-background: transparent;
   --footnote-input-background-active: transparent;
@@ -365,12 +365,12 @@ body {
   --footnote-size: 0.875em;
   --graph-controls-width: 240px;
   --graph-line: #3f3f3f;
-  --graph-node: rgb(inherit);
+  --graph-node: inherit;
   --graph-node-attachment: #e0de71;
-  --graph-node-focused: rgb(inherit);
+  --graph-node-focused: inherit;
   --graph-node-tag: #44cf6e;
-  --graph-node-unresolved: rgb(inherit);
-  --graph-text: rgb(inherit);
+  --graph-node-unresolved: inherit;
+  --graph-text: inherit;
   --h1-color: inherit;
   --h1-font: inherit;
   --h1-line-height: 1.2;
@@ -414,14 +414,14 @@ body {
   --h6-variant: normal;
   --h6-weight: 600;
   --header-height: 40px;
-  --heading-formatting: rgb(inherit);
+  --heading-formatting: inherit;
   --heading-spacing: 0rem;
   --hr-color: transparent;
   --hr-thickness: 2px;
-  --icon-color: rgb(inherit);
-  --icon-color-active: rgb(inherit);
-  --icon-color-focused: rgb(inherit);
-  --icon-color-hover: rgb(inherit);
+  --icon-color: inherit;
+  --icon-color-active: inherit;
+  --icon-color-focused: inherit;
+  --icon-color-hover: inherit;
   --icon-l: 18px;
   --icon-l-stroke-width: 1.75px;
   --icon-m: 18px;
@@ -446,7 +446,7 @@ body {
   --indentation-guide-source-indent: 0.25em;
   --indentation-guide-width: 1px;
   --indentation-guide-width-active: 1px;
-  --inline-title-color: rgb(inherit);
+  --inline-title-color: inherit;
   --inline-title-font:
     "??", "??", "??", "??", "??", ui-sans-serif, -apple-system,
     BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
@@ -458,10 +458,10 @@ body {
   --inline-title-variant: normal;
   --inline-title-weight: 600;
   --input-border-width: 1px;
-  --input-date-separator: rgb(inherit);
+  --input-date-separator: inherit;
   --input-font-weight: 400;
   --input-height: 30px;
-  --input-placeholder-color: rgb(inherit);
+  --input-placeholder-color: inherit;
   --input-radius: 5px;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 rgba(inherit, 0.15),
@@ -471,12 +471,12 @@ body {
     inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 rgba(inherit, 0.3),
     0 1px 1.5px 0 rgba(inherit, 0.2), 0 1px 2px 0 rgba(inherit, 0.4),
     0 0 0 0 transparent;
-  --interactive-accent: rgb(inherit);
+  --interactive-accent: inherit;
   --interactive-accent-hover: rgba(inherit, 0.9);
   --interactive-accent-hsl: 258, 88%, 66%;
-  --interactive-hover: rgb(inherit);
-  --interactive-normal: rgb(inherit);
-  --interactive-success: rgb(inherit);
+  --interactive-hover: inherit;
+  --interactive-normal: inherit;
+  --interactive-success: inherit;
   --italic-color: inherit;
   --italic-weight: inherit;
   --layer-cover: 5;
@@ -491,17 +491,17 @@ body {
   --layer-tooltip: 70;
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;
-  --link-color: rgb(inherit);
-  --link-color-hover: rgb(inherit);
+  --link-color: inherit;
+  --link-color-hover: inherit;
   --link-decoration: underline;
   --link-decoration-hover: underline;
   --link-decoration-thickness: auto;
-  --link-external-color: rgb(inherit);
-  --link-external-color-hover: rgb(inherit);
+  --link-external-color: inherit;
+  --link-external-color-hover: inherit;
   --link-external-decoration: underline;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
-  --link-unresolved-color: rgb(inherit);
+  --link-unresolved-color: inherit;
   --link-unresolved-decoration-color: #8a5cf54d;
   --link-unresolved-decoration-style: solid;
   --link-unresolved-filter: none;
@@ -515,15 +515,15 @@ body {
   --list-indent: 2.25em;
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
-  --list-marker-color: rgb(inherit);
-  --list-marker-color-collapsed: rgb(inherit);
-  --list-marker-color-hover: rgb(inherit);
+  --list-marker-color: inherit;
+  --list-marker-color-collapsed: inherit;
+  --list-marker-color-hover: inherit;
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
   --max-width-image: 90%;
   --menu-backdrop-filter: none;
-  --menu-background: rgb(inherit);
-  --menu-border-color: rgb(inherit);
+  --menu-background: inherit;
+  --menu-border-color: inherit;
   --menu-border-width: 1px;
   --menu-padding: 6px;
   --menu-radius: 8px;
@@ -550,7 +550,7 @@ body {
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: 28px;
   --metadata-input-longtext-lines: 3;
-  --metadata-input-text-color: rgb(inherit);
+  --metadata-input-text-color: inherit;
   --metadata-label-background: transparent;
   --metadata-label-background-active: rgba(inherit, 0.075);
   --metadata-label-background-hover: transparent;
@@ -560,16 +560,16 @@ body {
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-label-font-size: 0.875em;
   --metadata-label-font-weight: inherit;
-  --metadata-label-text-color: rgb(inherit);
-  --metadata-label-text-color-hover: rgb(inherit);
+  --metadata-label-text-color: inherit;
+  --metadata-label-text-color-hover: inherit;
   --metadata-label-width: 9em;
   --metadata-max-width: none;
   --metadata-padding: 8px 0;
   --metadata-property-background: transparent;
   --metadata-property-background-active: rgba(inherit, 0.075);
   --metadata-property-background-hover: transparent;
-  --metadata-property-box-shadow-focus: 0 0 0 2px rgb(inherit);
-  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(inherit);
+  --metadata-property-box-shadow-focus: 0 0 0 2px inherit;
+  --metadata-property-box-shadow-hover: 0 0 0 1px inherit;
   --metadata-property-padding: 0;
   --metadata-property-radius: 6px;
   --metadata-property-radius-focus: 6px;
@@ -577,8 +577,8 @@ body {
   --metadata-sidebar-input-font-size: 14.992px;
   --metadata-sidebar-label-font-size: 14.992px;
   --min-width-image: 50%;
-  --modal-background: rgb(inherit);
-  --modal-border-color: rgb(inherit);
+  --modal-background: inherit;
+  --modal-border-color: inherit;
   --modal-border-width: 0.5pt;
   --modal-community-sidebar-width: 280px;
   --modal-height: 85vh;
@@ -589,12 +589,12 @@ body {
   --modal-width: 90vw;
   --mono-rgb-0: inherit;
   --mono-rgb-100: inherit;
-  --nav-collapse-icon-color: rgb(inherit);
-  --nav-collapse-icon-color-collapsed: rgb(inherit);
-  --nav-heading-color: rgb(inherit);
-  --nav-heading-color-collapsed: rgb(inherit);
-  --nav-heading-color-collapsed-hover: rgb(inherit);
-  --nav-heading-color-hover: rgb(inherit);
+  --nav-collapse-icon-color: inherit;
+  --nav-collapse-icon-color-collapsed: inherit;
+  --nav-heading-color: inherit;
+  --nav-heading-color-collapsed: inherit;
+  --nav-heading-color-collapsed-hover: inherit;
+  --nav-heading-color-hover: inherit;
   --nav-heading-weight: 500;
   --nav-heading-weight-hover: 500;
   --nav-indentation-guide-color: rgba(inherit, 0.4);
@@ -604,11 +604,11 @@ body {
   --nav-item-background-selected: #8a5cf526;
   --nav-item-children-margin-start: 12px;
   --nav-item-children-padding-start: 4px;
-  --nav-item-color: rgb(inherit);
-  --nav-item-color-active: rgb(inherit);
-  --nav-item-color-highlighted: rgb(inherit);
-  --nav-item-color-hover: rgb(inherit);
-  --nav-item-color-selected: rgb(inherit);
+  --nav-item-color: inherit;
+  --nav-item-color-active: inherit;
+  --nav-item-color-highlighted: inherit;
+  --nav-item-color-hover: inherit;
+  --nav-item-color-selected: inherit;
   --nav-item-padding: 4px 8px 4px 24px;
   --nav-item-parent-padding: 6px 8px 6px 24px;
   --nav-item-size: 14.992px;
@@ -618,22 +618,22 @@ body {
   --nav-item-white-space: pre;
   --p-spacing: 1rem;
   --p-spacing-empty: 0rem;
-  --pdf-background: rgb(inherit);
+  --pdf-background: inherit;
   --pdf-dark-opacity: 1;
-  --pdf-page-background: rgb(inherit);
+  --pdf-page-background: inherit;
   --pdf-shadow: 0 0 0 1px #00000026, 0 2px 8px transparent;
-  --pdf-sidebar-background: rgb(inherit);
+  --pdf-sidebar-background: inherit;
   --pdf-spread-shadow: 0 0 0 1px #0000000d;
   --pdf-thumbnail-shadow: 0 0 0 1px #00000026, 0 2px 8px transparent;
   --pill-background: transparent;
   --pill-background-hover: transparent;
   --pill-border-color: transparent;
-  --pill-border-color-hover: rgb(inherit);
+  --pill-border-color-hover: inherit;
   --pill-border-width: 0.5pt;
-  --pill-color: rgb(inherit);
-  --pill-color-hover: rgb(inherit);
-  --pill-color-remove: rgb(inherit);
-  --pill-color-remove-hover: rgb(inherit);
+  --pill-color: inherit;
+  --pill-color-hover: inherit;
+  --pill-color-remove: inherit;
+  --pill-color-remove-hover: inherit;
   --pill-decoration: none;
   --pill-decoration-hover: none;
   --pill-focus-left-adjust: -4px;
@@ -658,18 +658,18 @@ body {
   --radius-m: 8px;
   --radius-s: 4px;
   --radius-xl: 16px;
-  --ribbon-background: rgb(inherit);
-  --ribbon-background-collapsed: rgb(inherit);
+  --ribbon-background: inherit;
+  --ribbon-background-collapsed: inherit;
   --ribbon-padding: 8px 4px 12px;
   --ribbon-width: 44px;
   --scrollbar-active-thumb-bg: #ffffff33;
   --scrollbar-bg: #ffffff0d;
   --scrollbar-thumb-bg: #ffffff1a;
-  --search-clear-button-color: rgb(inherit);
+  --search-clear-button-color: inherit;
   --search-clear-button-size: 13px;
-  --search-icon-color: rgb(inherit);
+  --search-icon-color: inherit;
   --search-icon-size: 18px;
-  --search-result-background: rgb(inherit);
+  --search-result-background: inherit;
   --shadow-l:
     0px 1.8px 7.3px rgba(inherit, 0.071), 0px 6.3px 24.7px rgba(inherit, 0.112),
     0px 30px 90px rgba(inherit, 0.2);
@@ -695,7 +695,7 @@ body {
   --size-4-9: 36px;
   --slider-s-thumb-position: -5px;
   --slider-s-thumb-size: 15px;
-  --slider-thumb-border-color: rgb(inherit);
+  --slider-thumb-border-color: inherit;
   --slider-thumb-border-width: 1px;
   --slider-thumb-height: 18px;
   --slider-thumb-radius: 50%;
@@ -703,13 +703,13 @@ body {
   --slider-thumb-y: -6px;
   --slider-track-background: transparent;
   --slider-track-height: 3px;
-  --status-bar-background: rgb(inherit);
+  --status-bar-background: inherit;
   --status-bar-border-color: transparent;
   --status-bar-border-width: 1px 0 0 1px;
   --status-bar-font-size: 12.8px;
   --status-bar-position: fixed;
   --status-bar-radius: 8px 0 0 0;
-  --status-bar-text-color: rgb(inherit);
+  --status-bar-text-color: inherit;
   --swatch-height: 24px;
   --swatch-radius: 14px;
   --swatch-shadow: inset 0 0 0 1px #ffffff26;
@@ -723,13 +723,13 @@ body {
   --sync-avatar-color-7: #a882ff;
   --sync-avatar-color-8: #fa99cd;
   --sync-avatar-color-current-user: transparent;
-  --tab-background-active: rgb(inherit);
-  --tab-container-background: rgb(inherit);
+  --tab-background-active: inherit;
+  --tab-container-background: inherit;
   --tab-curve: 6px;
-  --tab-divider-color: rgb(inherit);
+  --tab-divider-color: inherit;
   --tab-font-size: 14.992px;
   --tab-font-weight: inherit;
-  --tab-inactive-color: rgb(inherit);
+  --tab-inactive-color: inherit;
   --tab-max-width: 320px;
   --tab-outline-color: transparent;
   --tab-outline-width: 1px;
@@ -743,18 +743,18 @@ body {
   --tab-stacked-text-align: start;
   --tab-stacked-text-transform: rotate(0deg);
   --tab-stacked-text-writing-mode: vertical-lr;
-  --tab-switcher-background: rgb(inherit);
-  --tab-switcher-menubar-background: rgb(inherit);
+  --tab-switcher-background: inherit;
+  --tab-switcher-menubar-background: inherit;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px #00000033;
   --tab-switcher-preview-radius: 16px;
   --tab-switcher-preview-shadow: 0 0 0 1px #ffffff0d;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(inherit);
-  --tab-text-color: rgb(inherit);
-  --tab-text-color-active: rgb(inherit);
-  --tab-text-color-focused: rgb(inherit);
-  --tab-text-color-focused-active: rgb(inherit);
-  --tab-text-color-focused-active-current: rgb(inherit);
-  --tab-text-color-focused-highlighted: rgb(inherit);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px inherit;
+  --tab-text-color: inherit;
+  --tab-text-color-active: inherit;
+  --tab-text-color-focused: inherit;
+  --tab-text-color-focused-active: inherit;
+  --tab-text-color-focused-active-current: inherit;
+  --tab-text-color-focused-highlighted: inherit;
   --tab-width: 200px;
   --table-add-button-background: transparent;
   --table-add-button-border-color: transparent;
@@ -769,14 +769,14 @@ body {
   --table-column-max-width: none;
   --table-column-min-width: 6ch;
   --table-drag-handle-background: transparent;
-  --table-drag-handle-background-active: rgb(inherit);
-  --table-drag-handle-color: rgb(inherit);
-  --table-drag-handle-color-active: rgb(inherit);
+  --table-drag-handle-background-active: inherit;
+  --table-drag-handle-color: inherit;
+  --table-drag-handle-color-active: inherit;
   --table-header-background: transparent;
   --table-header-background-hover: inherit;
   --table-header-border-color: transparent;
   --table-header-border-width: 1px;
-  --table-header-color: rgb(inherit);
+  --table-header-color: inherit;
   --table-header-font: inherit;
   --table-header-size: 16px;
   --table-header-weight: 800;
@@ -787,7 +787,7 @@ body {
   --table-row-last-border-width: 1px;
   --table-selection: #8a5cf51a;
   --table-selection-blend-mode: none;
-  --table-selection-border-color: rgb(inherit);
+  --table-selection-border-color: inherit;
   --table-selection-border-radius: 4px;
   --table-selection-border-width: 2px;
   --table-text-color: inherit;
@@ -798,8 +798,8 @@ body {
   --tag-border-color: #8a5cf526;
   --tag-border-color-hover: #8a5cf526;
   --tag-border-width: 0px;
-  --tag-color: rgb(inherit);
-  --tag-color-hover: rgb(inherit);
+  --tag-color: inherit;
+  --tag-color-hover: inherit;
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-padding-x: 0.65em;
@@ -807,29 +807,29 @@ body {
   --tag-radius: 2em;
   --tag-size: 0.875em;
   --tag-weight: inherit;
-  --text-accent: rgb(inherit);
+  --text-accent: inherit;
   --text-accent-hover: rgba(inherit, 0.9);
-  --text-error: rgb(inherit);
+  --text-error: inherit;
   --text-error-hover: rgba(inherit, 0.8);
-  --text-faint: rgb(inherit);
+  --text-faint: inherit;
   --text-highlight-bg: rgba(inherit, 0.2);
   --text-highlight-bg-active: rgba(inherit, 0.4);
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: rgb(inherit);
+  --text-muted: inherit;
   --text-muted-rgb: inherit;
-  --text-normal: rgb(inherit);
-  --text-on-accent: rgb(inherit);
+  --text-normal: inherit;
+  --text-on-accent: inherit;
   --text-on-accent-inverted: #000000;
   --text-selection: #8a5cf533;
-  --text-success: rgb(inherit);
+  --text-success: inherit;
   --text-warning: #e9973f;
-  --titlebar-background: rgb(inherit);
+  --titlebar-background: inherit;
   --titlebar-background-focused: #363636;
   --titlebar-border-color: transparent;
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;
-  --titlebar-text-color: rgb(inherit);
-  --titlebar-text-color-focused: rgb(inherit);
+  --titlebar-text-color: inherit;
+  --titlebar-text-color-focused: inherit;
   --titlebar-text-weight: 700;
   --toggle-border-width: 2px;
   --toggle-radius: 18px;
@@ -843,8 +843,8 @@ body {
   --toggle-thumb-width: 18px;
   --toggle-width: 40px;
   --vault-profile-actions-display: flex;
-  --vault-profile-color: rgb(inherit);
-  --vault-profile-color-hover: rgb(inherit);
+  --vault-profile-color: inherit;
+  --vault-profile-color-hover: inherit;
   --vault-profile-display: flex;
   --vault-profile-font-size: 14.992px;
   --vault-profile-font-weight: 500;
@@ -853,9 +853,9 @@ body {
   --zoom-factor: 1;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: rgb(inherit);
-  caret-color: rgb(inherit);
-  color: rgb(inherit);
+  background-color: inherit;
+  caret-color: inherit;
+  color: inherit;
   contain: initial;
   font-family:
     "??",
@@ -911,7 +911,7 @@ h6 a {
 
 h1 {
   --font-weight: 600;
-  color: rgb(inherit);
+  color: inherit;
   font-family:
     "??",
     "??",
@@ -941,7 +941,7 @@ h1 {
 
 h2 {
   --font-weight: 600;
-  color: rgb(inherit);
+  color: inherit;
   font-family:
     "??",
     "??",
@@ -971,7 +971,7 @@ h2 {
 
 h3 {
   --font-weight: 600;
-  color: rgb(inherit);
+  color: inherit;
   font-family:
     "??",
     "??",
@@ -1001,7 +1001,7 @@ h3 {
 
 h4 {
   --font-weight: 600;
-  color: rgb(inherit);
+  color: inherit;
   font-family:
     "??",
     "??",
@@ -1031,7 +1031,7 @@ h4 {
 
 h5 {
   --font-weight: 600;
-  color: rgb(inherit);
+  color: inherit;
   font-family:
     "??",
     "??",
@@ -1061,7 +1061,7 @@ h5 {
 
 h6 {
   --font-weight: 600;
-  color: rgb(inherit);
+  color: inherit;
   font-family:
     "??",
     "??",
@@ -1105,7 +1105,7 @@ h6 {
   background-color: #363636;
   border: 0px solid transparent;
   border-radius: 4px;
-  color: rgb(inherit);
+  color: inherit;
   font-family:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1123,7 +1123,7 @@ h6 {
 .markdown-rendered button.copy-code-button {
   background-color: light-dark(rgb(220, 224, 232), rgb(17, 17, 27));
   box-shadow: none;
-  color: rgb(inherit);
+  color: inherit;
   font-family:
     "??",
     "??",
@@ -1168,7 +1168,7 @@ h6 {
 
 .callout-title {
   align-items: flex-start;
-  color: rgb(inherit);
+  color: inherit;
   display: flex;
   font-size: inherit;
   gap: 4px;
@@ -1329,7 +1329,7 @@ h6 {
 }
 
 .callout-icon .svg-icon {
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .callout-icon::after {
@@ -1355,7 +1355,7 @@ h6 {
 }
 
 .metadata-input-longtext {
-  color: rgb(inherit);
+  color: inherit;
   cursor: text;
   flex-grow: 1;
   font-size: 14.992px;
@@ -1366,7 +1366,7 @@ h6 {
 }
 
 .popover {
-  background-color: rgb(inherit);
+  background-color: inherit;
   border: 1px solid transparent;
   border-radius: 8px;
   box-shadow:
@@ -1380,7 +1380,7 @@ h6 {
 }
 
 .prompt {
-  background-color: rgb(inherit);
+  background-color: inherit;
   border: 0.5pt solid #555555;
   border-radius: 12px;
   box-shadow:
@@ -1399,9 +1399,9 @@ h6 {
 }
 
 input.prompt-input {
-  background-color: rgb(inherit);
+  background-color: inherit;
   border: none;
-  border-bottom: 1px solid rgb(inherit);
+  border-bottom: 1px solid inherit;
   border-radius: 0;
   font-size: 16px;
   height: 48px;
@@ -1420,7 +1420,7 @@ input.prompt-input {
 
 .markdown-rendered mark {
   background-color: rgba(inherit, 0.2);
-  color: rgb(inherit);
+  color: inherit;
 }
 
 a.tag {
@@ -1437,10 +1437,10 @@ a.tag {
 
 input[type="search"] {
   -webkit-app-region: no-drag;
-  background: rgb(inherit);
+  background: inherit;
   border: 1px solid transparent;
   border-radius: 6px;
-  color: rgb(inherit);
+  color: inherit;
   font-family: inherit;
   font-size: 14.992px;
   height: 40px;
@@ -1481,7 +1481,7 @@ input[type="search"] {
 
 .nav-folder-title {
   border-radius: 4px;
-  color: rgb(inherit);
+  color: inherit;
   cursor: pointer;
   display: flex;
   font-size: 16px;
@@ -1493,7 +1493,7 @@ input[type="search"] {
 
 .nav-file-title {
   border-radius: 4px;
-  color: rgb(inherit);
+  color: inherit;
   cursor: pointer;
   display: flex;
   font-size: 16px;
@@ -1505,30 +1505,30 @@ input[type="search"] {
 
 .nav-file-title.is-active {
   background-color: rgba(inherit, 0.1);
-  color: rgb(inherit);
+  color: inherit;
   font-weight: inherit;
 }
 
 .nav-folder-title.is-active {
   background-color: rgba(inherit, 0.1);
-  color: rgb(inherit);
+  color: inherit;
   font-weight: inherit;
 }
 
 .nav-file-title.is-selected {
   background-color: rgba(inherit, 0.2);
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .nav-folder-title.is-selected {
   background-color: rgba(inherit, 0.2);
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .tree-item-self {
   align-items: baseline;
   border-radius: 4px;
-  color: rgb(inherit);
+  color: inherit;
   display: flex;
   font-size: 16px;
   font-weight: inherit;
@@ -1558,24 +1558,24 @@ input[type="search"] {
 
 .tree-item-self.is-clickable.mobile-tap {
   background-color: rgba(inherit, 0.1);
-  color: rgb(inherit);
+  color: inherit;
   font-weight: inherit;
 }
 
 .tree-item-self.is-active {
   background-color: rgba(inherit, 0.1);
-  color: rgb(inherit);
+  color: inherit;
   font-weight: inherit;
 }
 
 .tree-item-self.is-selected {
   background-color: rgba(inherit, 0.2);
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .tree-item-self.is-being-dragged {
-  background-color: rgb(inherit);
-  color: rgb(inherit);
+  background-color: inherit;
+  color: inherit;
 }
 
 .tree-item-self .tree-item-icon {
@@ -1609,7 +1609,7 @@ input[type="search"] {
 
 .tree-item-flair {
   border-radius: 4px;
-  color: rgb(inherit);
+  color: inherit;
   font-size: 12.8px;
   line-height: 1;
 }
@@ -1627,7 +1627,7 @@ input[type="search"] {
 }
 
 .tree-item-inner-subtext {
-  color: rgb(inherit);
+  color: inherit;
   font-size: 85%;
 }
 
@@ -1641,7 +1641,7 @@ input[type="search"] {
 kbd {
   background-color: #363636;
   border-radius: 4px;
-  color: rgb(inherit);
+  color: inherit;
   font-family:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1657,7 +1657,7 @@ svg.svg-icon {
 }
 
 .clickable-icon.mod-warning {
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .clickable-icon.mod-filled svg {
@@ -1670,7 +1670,7 @@ svg.svg-icon {
 
 .clickable-icon[aria-disabled="true"] {
   background-color: unset;
-  color: rgb(inherit);
+  color: inherit;
   opacity: 0.4;
 }
 
@@ -1684,7 +1684,7 @@ svg.svg-icon {
 
 .clickable-icon.is-active {
   background-color: rgba(inherit, 0.15);
-  color: rgb(inherit);
+  color: inherit;
   opacity: 0.65;
 }
 
@@ -1704,7 +1704,7 @@ svg.svg-icon {
 }
 
 .view-header-title-parent .view-header-breadcrumb-separator {
-  color: rgb(inherit);
+  color: inherit;
   padding: 2px 1px;
 }
 
@@ -1722,7 +1722,7 @@ svg.svg-icon {
 }
 
 .backlink-pane > .tree-item-self {
-  color: rgb(inherit);
+  color: inherit;
   padding-inline-start: 8px;
 }
 
@@ -1731,15 +1731,15 @@ svg.svg-icon {
 }
 
 .backlink-pane > .tree-item-self.is-clickable.is-collapsed {
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .graph-view.color-fill {
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .graph-view.color-fill-focused {
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .graph-view.color-fill-tag {
@@ -1751,41 +1751,41 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-unresolved {
-  color: rgb(inherit);
+  color: inherit;
   opacity: 0.5;
 }
 
 .graph-view.color-fill-1 {
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .graph-view.color-fill-2 {
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .graph-view.color-fill-3 {
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .graph-view.color-fill-4 {
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .graph-view.color-fill-5 {
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .graph-view.color-fill-6 {
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .graph-view.color-arrow {
-  color: rgb(inherit);
+  color: inherit;
   opacity: 0.5;
 }
 
 .graph-view.color-circle {
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .graph-view.color-line {
@@ -1793,19 +1793,19 @@ svg.svg-icon {
 }
 
 .graph-view.color-text {
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .graph-view.color-fill-highlight {
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .graph-view.color-line-highlight {
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .graph-controls {
-  background-color: rgb(inherit);
+  background-color: inherit;
   border-radius: 8px;
   inset-inline-end: 12px;
   overflow: auto;
@@ -1817,9 +1817,9 @@ svg.svg-icon {
 
 .theme-dark {
   --anp-speech-bubble-opacity: 0.9;
-  --background-modifier-border: rgb(inherit);
-  --background-modifier-border-focus: rgb(inherit);
-  --background-modifier-border-hover: rgb(inherit);
+  --background-modifier-border: inherit;
+  --background-modifier-border-focus: inherit;
+  --background-modifier-border-hover: inherit;
   --background-modifier-box-shadow: #0000004d;
   --background-modifier-cover: rgba(inherit, 0.4);
   --background-modifier-form-field: #2a2a2a;
@@ -1889,8 +1889,8 @@ svg.svg-icon {
   --input-shadow-hover:
     inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
     0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
-  --interactive-accent: rgb(inherit);
-  --interactive-accent-hover: rgb(inherit);
+  --interactive-accent: inherit;
+  --interactive-accent-hover: inherit;
   --interactive-hover: #3f3f3f;
   --interactive-normal: #363636;
   --mono-rgb-0: 0, 0, 0;
@@ -1902,15 +1902,15 @@ svg.svg-icon {
     0px 30px 90px #00000033;
   --shadow-s:
     0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
-  --text-accent: rgb(inherit);
+  --text-accent: inherit;
   --text-selection: #8a5cf554;
 }
 
 .theme-light {
   --anp-speech-bubble-opacity: 0.5;
-  --background-modifier-border: rgb(inherit);
-  --background-modifier-border-focus: rgb(inherit);
-  --background-modifier-border-hover: rgb(inherit);
+  --background-modifier-border: inherit;
+  --background-modifier-border-focus: inherit;
+  --background-modifier-border-hover: inherit;
   --background-modifier-box-shadow: #0000001a;
   --background-modifier-cover: #00000022;
   --background-secondary-alt: #212121;
@@ -1989,11 +1989,11 @@ svg.svg-icon {
 }
 
 .mod-sidedock {
-  --bases-table-header-background: rgb(inherit);
+  --bases-table-header-background: inherit;
 }
 
 .workspace-split {
-  background-color: rgb(inherit);
+  background-color: inherit;
   display: flex;
   position: relative;
 }
@@ -2003,16 +2003,16 @@ svg.svg-icon {
 }
 
 .workspace-tabs .workspace-leaf {
-  background-color: rgb(inherit);
+  background-color: inherit;
   height: 100%;
 }
 
 .workspace-split.mod-root {
-  background-color: rgb(inherit);
+  background-color: inherit;
 }
 
 .workspace-split.mod-root .view-content {
-  background-color: rgb(inherit);
+  background-color: inherit;
 }
 
 .workspace-leaf-resize-handle {

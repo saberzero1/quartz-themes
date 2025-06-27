@@ -1334,8 +1334,8 @@ h6 {
 .callout {
   --callout-color: oklch(48.5% 0.173 260.58);
   --callout-icon: lucide-pencil;
-  background-color: rgba(oklch(48.5% 0.039 279.29), 0.1);
-  border-color: rgba(oklch(48.5% 0.039 279.29), 0.25);
+  background-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.1);
+  border-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.25);
   border-radius: 8px;
   border-style: solid;
   border-width: 0px;
@@ -2210,11 +2210,7 @@ svg.svg-icon {
   --checklist-green-color: oklch(48.5% 0.145 140.09);
   --checklist-orange-color: oklch(35.5% 0.098 46.85);
   --checklist-red-color: oklch(48.5% 0.193 13.65);
-  --checklist-yellow-color: color-mix(
-    in oklch,
-    oklch(25.5% 0.052 97.11),
-    oklch(35.5% 0.098 46.85) 20%
-  );
+  --checklist-yellow-color: rgb(51, 37, 0);
   --color-accent: hsl(258, 88%, 66%);
   --color-accent-1: hsl(257, 88.88%, 70.95%);
   --color-accent-2: hsl(255, 89.76%, 75.9%);

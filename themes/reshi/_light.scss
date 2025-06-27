@@ -1,0 +1,161 @@
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
+  --accent-1: 33%;
+
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-cover: rgba(220, 220, 220, 0.4);
+
+  --callout-bug: 211, 152, 12;
+  --callout-default: 89, 109, 58;
+  --callout-error: 128, 32, 32;
+  --callout-example: 69, 44, 108;
+  --callout-fail: 128, 32, 32;
+  --callout-important: 89, 109, 58;
+  --callout-info: 49, 103, 147;
+  --callout-question: 69, 44, 108;
+  --callout-quote: 211, 152, 12;
+  --callout-success: 89, 109, 58;
+  --callout-summary: 211, 152, 12;
+  --callout-tip: 69, 44, 108;
+  --callout-title-color: inherit;
+  --callout-todo: 49, 103, 147;
+  --callout-warning: 128, 32, 32;
+
+  --checkbox-color: none;
+
+  --color-blue-rgb: rgb(49, 103, 147);
+
+  --color-cyan-rgb: rgb(43, 139, 135);
+
+  --color-green-rgb: rgb(89, 109, 58);
+
+  --color-orange-rgb: rgb(207, 94, 14);
+
+  --color-pink-rgb: rgb(198, 47, 70);
+
+  --color-purple-rgb: rgb(69, 44, 108);
+
+  --color-red-rgb: rgb(128, 32, 32);
+
+  --color-yellow-rgb: rgb(211, 152, 12);
+
+  --highlight-mix-blend-mode: darken;
+
+  --input-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
+
+  --interactive-accent-hsl: #596d3a;
+
+  --link-decoration: none;
+  --link-decoration-hover: none;
+  --link-decoration-thickness: none;
+
+  --link-unresolved-filter: none;
+  --link-unresolved-opacity: 100%;
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+
+  --pill-color-remove: none;
+  --pill-color-remove-hover: none;
+
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+
+  --accent-1: 33%;
+
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-cover: rgba(220, 220, 220, 0.4);
+
+  --callout-bug: 211, 152, 12;
+  --callout-default: 89, 109, 58;
+  --callout-error: 128, 32, 32;
+  --callout-example: 69, 44, 108;
+  --callout-fail: 128, 32, 32;
+  --callout-important: 89, 109, 58;
+  --callout-info: 49, 103, 147;
+  --callout-question: 69, 44, 108;
+  --callout-quote: 211, 152, 12;
+  --callout-success: 89, 109, 58;
+  --callout-summary: 211, 152, 12;
+  --callout-tip: 69, 44, 108;
+  --callout-title-color: inherit;
+  --callout-todo: 49, 103, 147;
+  --callout-warning: 128, 32, 32;
+
+  --checkbox-color: none;
+
+  --color-blue-rgb: rgb(49, 103, 147);
+
+  --color-cyan-rgb: rgb(43, 139, 135);
+
+  --color-green-rgb: rgb(89, 109, 58);
+
+  --color-orange-rgb: rgb(207, 94, 14);
+
+  --color-pink-rgb: rgb(198, 47, 70);
+
+  --color-purple-rgb: rgb(69, 44, 108);
+
+  --color-red-rgb: rgb(128, 32, 32);
+
+  --color-yellow-rgb: rgb(211, 152, 12);
+
+  --highlight-mix-blend-mode: darken;
+
+  --input-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
+
+  --interactive-accent-hsl: #596d3a;
+
+  --link-decoration: none;
+  --link-decoration-hover: none;
+  --link-decoration-thickness: none;
+
+  --link-unresolved-filter: none;
+  --link-unresolved-opacity: 100%;
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+
+  --pill-color-remove: none;
+  --pill-color-remove-hover: none;
+
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+
+  --vault-name-color: #151515;
+}

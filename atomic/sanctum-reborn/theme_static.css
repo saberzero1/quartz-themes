@@ -12276,8 +12276,8 @@ kbd {
   --callout-color: 2, 122, 255;
   --callout-icon: lucide-pencil;
   background-color: #00000033;
-  border: 0px solid rgba(0, 0, 0, 0, 30%);
-  border-color: rgba(0, 0, 0, 0, 30%);
+  border: 0px solid #0000004d;
+  border-color: #0000004d;
   border-radius: 4px;
   border-style: solid;
   border-width: 0px;

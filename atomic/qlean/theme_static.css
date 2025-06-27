@@ -30622,15 +30622,15 @@ body.callout-dogs-ear .style-settings-container .callout:hover:after {
 }
 
 .markdown-source-view.is-live-preview .callout[data-callout="note"] {
-  background-color: color-mix(in srgb, rgb(20, 32, 49), transparent 20%);
+  background-color: rgba(20, 32, 49, 0.8);
 }
 
 .markdown-rendered .callout[data-callout="note"] {
-  background-color: color-mix(in srgb, rgb(20, 32, 49), transparent 20%);
+  background-color: rgba(20, 32, 49, 0.8);
 }
 
 .style-settings-container .callout[data-callout="note"] {
-  background-color: color-mix(in srgb, rgb(20, 32, 49), transparent 20%);
+  background-color: rgba(20, 32, 49, 0.8);
 }
 
 .markdown-source-view.is-live-preview .callout[data-callout="abstract"] {
@@ -30706,279 +30706,279 @@ body.callout-dogs-ear .style-settings-container .callout:hover:after {
 }
 
 .markdown-source-view.is-live-preview .callout[data-callout="info"] {
-  background-color: color-mix(in srgb, rgb(20, 32, 49), transparent 20%);
+  background-color: rgba(20, 32, 49, 0.8);
 }
 
 .markdown-rendered .callout[data-callout="info"] {
-  background-color: color-mix(in srgb, rgb(20, 32, 49), transparent 20%);
+  background-color: rgba(20, 32, 49, 0.8);
 }
 
 .style-settings-container .callout[data-callout="info"] {
-  background-color: color-mix(in srgb, rgb(20, 32, 49), transparent 20%);
+  background-color: rgba(20, 32, 49, 0.8);
 }
 
 .markdown-source-view.is-live-preview .callout[data-callout="todo"] {
-  background-color: color-mix(in srgb, rgb(20, 32, 49), transparent 20%);
+  background-color: rgba(20, 32, 49, 0.8);
 }
 
 .markdown-rendered .callout[data-callout="todo"] {
-  background-color: color-mix(in srgb, rgb(20, 32, 49), transparent 20%);
+  background-color: rgba(20, 32, 49, 0.8);
 }
 
 .style-settings-container .callout[data-callout="todo"] {
-  background-color: color-mix(in srgb, rgb(20, 32, 49), transparent 20%);
+  background-color: rgba(20, 32, 49, 0.8);
 }
 
 .markdown-source-view.is-live-preview .callout[data-callout="tip"] {
-  background-color: color-mix(in srgb, rgb(30, 44, 44), transparent 20%);
+  background-color: rgba(30, 44, 44, 0.8);
 }
 
 .markdown-rendered .callout[data-callout="tip"] {
-  background-color: color-mix(in srgb, rgb(30, 44, 44), transparent 20%);
+  background-color: rgba(30, 44, 44, 0.8);
 }
 
 .style-settings-container .callout[data-callout="tip"] {
-  background-color: color-mix(in srgb, rgb(30, 44, 44), transparent 20%);
+  background-color: rgba(30, 44, 44, 0.8);
 }
 
 .markdown-source-view.is-live-preview .callout[data-callout="hint"] {
-  background-color: color-mix(in srgb, rgb(30, 44, 44), transparent 20%);
+  background-color: rgba(30, 44, 44, 0.8);
 }
 
 .markdown-rendered .callout[data-callout="hint"] {
-  background-color: color-mix(in srgb, rgb(30, 44, 44), transparent 20%);
+  background-color: rgba(30, 44, 44, 0.8);
 }
 
 .style-settings-container .callout[data-callout="hint"] {
-  background-color: color-mix(in srgb, rgb(30, 44, 44), transparent 20%);
+  background-color: rgba(30, 44, 44, 0.8);
 }
 
 .markdown-source-view.is-live-preview .callout[data-callout="important"] {
-  background-color: color-mix(in srgb, rgb(30, 44, 44), transparent 20%);
+  background-color: rgba(30, 44, 44, 0.8);
 }
 
 .markdown-rendered .callout[data-callout="important"] {
-  background-color: color-mix(in srgb, rgb(30, 44, 44), transparent 20%);
+  background-color: rgba(30, 44, 44, 0.8);
 }
 
 .style-settings-container .callout[data-callout="important"] {
-  background-color: color-mix(in srgb, rgb(30, 44, 44), transparent 20%);
+  background-color: rgba(30, 44, 44, 0.8);
 }
 
 .markdown-source-view.is-live-preview .callout[data-callout="success"] {
-  background-color: color-mix(in srgb, rgb(26, 43, 30), transparent 20%);
+  background-color: rgba(26, 43, 30, 0.8);
 }
 
 .markdown-rendered .callout[data-callout="success"] {
-  background-color: color-mix(in srgb, rgb(26, 43, 30), transparent 20%);
+  background-color: rgba(26, 43, 30, 0.8);
 }
 
 .style-settings-container .callout[data-callout="success"] {
-  background-color: color-mix(in srgb, rgb(26, 43, 30), transparent 20%);
+  background-color: rgba(26, 43, 30, 0.8);
 }
 
 .markdown-source-view.is-live-preview .callout[data-callout="check"] {
-  background-color: color-mix(in srgb, rgb(26, 43, 30), transparent 20%);
+  background-color: rgba(26, 43, 30, 0.8);
 }
 
 .markdown-rendered .callout[data-callout="check"] {
-  background-color: color-mix(in srgb, rgb(26, 43, 30), transparent 20%);
+  background-color: rgba(26, 43, 30, 0.8);
 }
 
 .style-settings-container .callout[data-callout="check"] {
-  background-color: color-mix(in srgb, rgb(26, 43, 30), transparent 20%);
+  background-color: rgba(26, 43, 30, 0.8);
 }
 
 .markdown-source-view.is-live-preview .callout[data-callout="done"] {
-  background-color: color-mix(in srgb, rgb(26, 43, 30), transparent 20%);
+  background-color: rgba(26, 43, 30, 0.8);
 }
 
 .markdown-rendered .callout[data-callout="done"] {
-  background-color: color-mix(in srgb, rgb(26, 43, 30), transparent 20%);
+  background-color: rgba(26, 43, 30, 0.8);
 }
 
 .style-settings-container .callout[data-callout="done"] {
-  background-color: color-mix(in srgb, rgb(26, 43, 30), transparent 20%);
+  background-color: rgba(26, 43, 30, 0.8);
 }
 
 .markdown-source-view.is-live-preview .callout[data-callout="question"] {
-  background-color: color-mix(in srgb, rgb(47, 36, 25), transparent 20%);
+  background-color: rgba(47, 36, 25, 0.8);
 }
 
 .markdown-rendered .callout[data-callout="question"] {
-  background-color: color-mix(in srgb, rgb(47, 36, 25), transparent 20%);
+  background-color: rgba(47, 36, 25, 0.8);
 }
 
 .style-settings-container .callout[data-callout="question"] {
-  background-color: color-mix(in srgb, rgb(47, 36, 25), transparent 20%);
+  background-color: rgba(47, 36, 25, 0.8);
 }
 
 .markdown-source-view.is-live-preview .callout[data-callout="help"] {
-  background-color: color-mix(in srgb, rgb(47, 36, 25), transparent 20%);
+  background-color: rgba(47, 36, 25, 0.8);
 }
 
 .markdown-rendered .callout[data-callout="help"] {
-  background-color: color-mix(in srgb, rgb(47, 36, 25), transparent 20%);
+  background-color: rgba(47, 36, 25, 0.8);
 }
 
 .style-settings-container .callout[data-callout="help"] {
-  background-color: color-mix(in srgb, rgb(47, 36, 25), transparent 20%);
+  background-color: rgba(47, 36, 25, 0.8);
 }
 
 .markdown-source-view.is-live-preview .callout[data-callout="faq"] {
-  background-color: color-mix(in srgb, rgb(47, 36, 25), transparent 20%);
+  background-color: rgba(47, 36, 25, 0.8);
 }
 
 .markdown-rendered .callout[data-callout="faq"] {
-  background-color: color-mix(in srgb, rgb(47, 36, 25), transparent 20%);
+  background-color: rgba(47, 36, 25, 0.8);
 }
 
 .style-settings-container .callout[data-callout="faq"] {
-  background-color: color-mix(in srgb, rgb(47, 36, 25), transparent 20%);
+  background-color: rgba(47, 36, 25, 0.8);
 }
 
 .markdown-source-view.is-live-preview .callout[data-callout="warning"] {
-  background-color: color-mix(in srgb, rgb(47, 36, 25), transparent 20%);
+  background-color: rgba(47, 36, 25, 0.8);
 }
 
 .markdown-rendered .callout[data-callout="warning"] {
-  background-color: color-mix(in srgb, rgb(47, 36, 25), transparent 20%);
+  background-color: rgba(47, 36, 25, 0.8);
 }
 
 .style-settings-container .callout[data-callout="warning"] {
-  background-color: color-mix(in srgb, rgb(47, 36, 25), transparent 20%);
+  background-color: rgba(47, 36, 25, 0.8);
 }
 
 .markdown-source-view.is-live-preview .callout[data-callout="caution"] {
-  background-color: color-mix(in srgb, rgb(47, 36, 25), transparent 20%);
+  background-color: rgba(47, 36, 25, 0.8);
 }
 
 .markdown-rendered .callout[data-callout="caution"] {
-  background-color: color-mix(in srgb, rgb(47, 36, 25), transparent 20%);
+  background-color: rgba(47, 36, 25, 0.8);
 }
 
 .style-settings-container .callout[data-callout="caution"] {
-  background-color: color-mix(in srgb, rgb(47, 36, 25), transparent 20%);
+  background-color: rgba(47, 36, 25, 0.8);
 }
 
 .markdown-source-view.is-live-preview .callout[data-callout="attention"] {
-  background-color: color-mix(in srgb, rgb(47, 36, 25), transparent 20%);
+  background-color: rgba(47, 36, 25, 0.8);
 }
 
 .markdown-rendered .callout[data-callout="attention"] {
-  background-color: color-mix(in srgb, rgb(47, 36, 25), transparent 20%);
+  background-color: rgba(47, 36, 25, 0.8);
 }
 
 .style-settings-container .callout[data-callout="attention"] {
-  background-color: color-mix(in srgb, rgb(47, 36, 25), transparent 20%);
+  background-color: rgba(47, 36, 25, 0.8);
 }
 
 .markdown-source-view.is-live-preview .callout[data-callout="failure"] {
-  background-color: color-mix(in srgb, rgb(50, 26, 26), transparent 20%);
+  background-color: rgba(50, 26, 26, 0.8);
 }
 
 .markdown-rendered .callout[data-callout="failure"] {
-  background-color: color-mix(in srgb, rgb(50, 26, 26), transparent 20%);
+  background-color: rgba(50, 26, 26, 0.8);
 }
 
 .style-settings-container .callout[data-callout="failure"] {
-  background-color: color-mix(in srgb, rgb(50, 26, 26), transparent 20%);
+  background-color: rgba(50, 26, 26, 0.8);
 }
 
 .markdown-source-view.is-live-preview .callout[data-callout="fail"] {
-  background-color: color-mix(in srgb, rgb(50, 26, 26), transparent 20%);
+  background-color: rgba(50, 26, 26, 0.8);
 }
 
 .markdown-rendered .callout[data-callout="fail"] {
-  background-color: color-mix(in srgb, rgb(50, 26, 26), transparent 20%);
+  background-color: rgba(50, 26, 26, 0.8);
 }
 
 .style-settings-container .callout[data-callout="fail"] {
-  background-color: color-mix(in srgb, rgb(50, 26, 26), transparent 20%);
+  background-color: rgba(50, 26, 26, 0.8);
 }
 
 .markdown-source-view.is-live-preview .callout[data-callout="missing"] {
-  background-color: color-mix(in srgb, rgb(50, 26, 26), transparent 20%);
+  background-color: rgba(50, 26, 26, 0.8);
 }
 
 .markdown-rendered .callout[data-callout="missing"] {
-  background-color: color-mix(in srgb, rgb(50, 26, 26), transparent 20%);
+  background-color: rgba(50, 26, 26, 0.8);
 }
 
 .style-settings-container .callout[data-callout="missing"] {
-  background-color: color-mix(in srgb, rgb(50, 26, 26), transparent 20%);
+  background-color: rgba(50, 26, 26, 0.8);
 }
 
 .markdown-source-view.is-live-preview .callout[data-callout="danger"] {
-  background-color: color-mix(in srgb, rgb(50, 26, 26), transparent 20%);
+  background-color: rgba(50, 26, 26, 0.8);
 }
 
 .markdown-rendered .callout[data-callout="danger"] {
-  background-color: color-mix(in srgb, rgb(50, 26, 26), transparent 20%);
+  background-color: rgba(50, 26, 26, 0.8);
 }
 
 .style-settings-container .callout[data-callout="danger"] {
-  background-color: color-mix(in srgb, rgb(50, 26, 26), transparent 20%);
+  background-color: rgba(50, 26, 26, 0.8);
 }
 
 .markdown-source-view.is-live-preview .callout[data-callout="error"] {
-  background-color: color-mix(in srgb, rgb(50, 26, 26), transparent 20%);
+  background-color: rgba(50, 26, 26, 0.8);
 }
 
 .markdown-rendered .callout[data-callout="error"] {
-  background-color: color-mix(in srgb, rgb(50, 26, 26), transparent 20%);
+  background-color: rgba(50, 26, 26, 0.8);
 }
 
 .style-settings-container .callout[data-callout="error"] {
-  background-color: color-mix(in srgb, rgb(50, 26, 26), transparent 20%);
+  background-color: rgba(50, 26, 26, 0.8);
 }
 
 .markdown-source-view.is-live-preview .callout[data-callout="bug"] {
-  background-color: color-mix(in srgb, rgb(50, 26, 26), transparent 20%);
+  background-color: rgba(50, 26, 26, 0.8);
 }
 
 .markdown-rendered .callout[data-callout="bug"] {
-  background-color: color-mix(in srgb, rgb(50, 26, 26), transparent 20%);
+  background-color: rgba(50, 26, 26, 0.8);
 }
 
 .style-settings-container .callout[data-callout="bug"] {
-  background-color: color-mix(in srgb, rgb(50, 26, 26), transparent 20%);
+  background-color: rgba(50, 26, 26, 0.8);
 }
 
 .markdown-source-view.is-live-preview .callout[data-callout="example"] {
-  background-color: color-mix(in srgb, rgb(38, 32, 48), transparent 20%);
+  background-color: rgba(38, 32, 48, 0.8);
 }
 
 .markdown-rendered .callout[data-callout="example"] {
-  background-color: color-mix(in srgb, rgb(38, 32, 48), transparent 20%);
+  background-color: rgba(38, 32, 48, 0.8);
 }
 
 .style-settings-container .callout[data-callout="example"] {
-  background-color: color-mix(in srgb, rgb(38, 32, 48), transparent 20%);
+  background-color: rgba(38, 32, 48, 0.8);
 }
 
 .markdown-source-view.is-live-preview .callout[data-callout="quote"] {
-  background-color: color-mix(in srgb, rgb(36, 36, 36), transparent 20%);
+  background-color: rgba(36, 36, 36, 0.8);
 }
 
 .markdown-rendered .callout[data-callout="quote"] {
-  background-color: color-mix(in srgb, rgb(36, 36, 36), transparent 20%);
+  background-color: rgba(36, 36, 36, 0.8);
 }
 
 .style-settings-container .callout[data-callout="quote"] {
-  background-color: color-mix(in srgb, rgb(36, 36, 36), transparent 20%);
+  background-color: rgba(36, 36, 36, 0.8);
 }
 
 .markdown-source-view.is-live-preview .callout[data-callout="cite"] {
-  background-color: color-mix(in srgb, rgb(36, 36, 36), transparent 20%);
+  background-color: rgba(36, 36, 36, 0.8);
 }
 
 .markdown-rendered .callout[data-callout="cite"] {
-  background-color: color-mix(in srgb, rgb(36, 36, 36), transparent 20%);
+  background-color: rgba(36, 36, 36, 0.8);
 }
 
 .style-settings-container .callout[data-callout="cite"] {
-  background-color: color-mix(in srgb, rgb(36, 36, 36), transparent 20%);
+  background-color: rgba(36, 36, 36, 0.8);
 }
 
 .markdown-source-view.is-live-preview .HyperMD-quote.cm-line {

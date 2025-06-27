@@ -348,10 +348,7 @@
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
   --divider-color: light-dark(transparent, transparent);
-  --divider-color-hover: light-dark(
-    color-mix(in srgb, #51402f 40%, #3b3026),
-    color-mix(in srgb, #51402f 40%, #3b3026)
-  );
+  --divider-color-hover: light-dark(#443629, #443629);
   --drag-ghost-background: light-dark(#5a4533, #5a4533);
   --drag-ghost-text-color: light-dark(#ebdac6, #ebdac6);
   --editor-bg-color: light-dark(
@@ -423,10 +420,7 @@
   --icon-color-active: light-dark(#836b49, #ab916d);
   --icon-color-focused: light-dark(#9d8062, #917959);
   --indentation-guide-color: light-dark(transparent, transparent);
-  --indentation-guide-color-active: light-dark(
-    color-mix(in srgb, #51402f 40%, #3b3026),
-    color-mix(in srgb, #51402f 40%, #3b3026)
-  );
+  --indentation-guide-color-active: light-dark(#443629, #443629);
   --inline-code-bg: light-dark(#fcfaf8, #211b17);
   --inline-code-color: light-dark(#d9746d, #f7685e);
   --inline-title-color: light-dark(#432e14, #ebdac6);
@@ -474,10 +468,7 @@
   --metadata-properties-title-color-collapsed: light-dark(#cfb696, #6b563d);
   --metadata-properties-title-color-hover: light-dark(#b79d7b, #917959);
   --metadata-tab-background: light-dark(#26211c, #26211c);
-  --modal-border-color: light-dark(
-    color-mix(in srgb, #51402f 40%, #3b3026),
-    color-mix(in srgb, #51402f 40%, #3b3026)
-  );
+  --modal-border-color: light-dark(#443629, #443629);
   --nav-collapse-icon-color: light-dark(#6b563d, #6b563d);
   --nav-collapse-icon-color-collapsed: light-dark(#917959, #917959);
   --nav-file-tag-color: light-dark(#9d8062, #6b563d);
@@ -546,10 +537,7 @@
   --safe-area-inset-left: env(safe-area-inset-left);
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
-  --scrollbar-active-thumb-bg: light-dark(
-    color-mix(in srgb, #51402f 40%, #3b3026),
-    color-mix(in srgb, #51402f 40%, #3b3026)
-  );
+  --scrollbar-active-thumb-bg: light-dark(#443629, #443629);
   --scrollbar-thumb-bg: light-dark(transparent, transparent);
   --search-clear-button-color: light-dark(#d7c0a3, #d7c0a3);
   --search-clear-button-color-hover: light-dark(#f35044, #f35044);
@@ -588,10 +576,7 @@
     var(--background-primary)
   );
   --tab-container-background: light-dark(#26211c, #26211c);
-  --tab-divider-color: light-dark(
-    color-mix(in srgb, #51402f 40%, #3b3026),
-    color-mix(in srgb, #51402f 40%, #3b3026)
-  );
+  --tab-divider-color: light-dark(#443629, #443629);
   --tab-text-color: light-dark(#917959, #917959);
   --tab-text-color-active: light-dark(#ab916d, #ab916d);
   --tab-text-color-focused: light-dark(#ab916d, #ab916d);
@@ -1173,10 +1158,7 @@ body {
   --dialog-width: 560px;
   --direction: 1;
   --divider-color: light-dark(transparent, transparent);
-  --divider-color-hover: light-dark(
-    color-mix(in srgb, #51402f 40%, #3b3026),
-    color-mix(in srgb, #51402f 40%, #3b3026)
-  );
+  --divider-color-hover: light-dark(#443629, #443629);
   --divider-radius: 8px;
   --divider-vertical-height: calc(100% - 38px);
   --divider-width: 1px;
@@ -1185,7 +1167,7 @@ body {
   --drag-ghost-text-color: light-dark(#ebdac6, #ebdac6);
   --dropdown-background: #26211c;
   --dropdown-background-blend-mode: hard-light;
-  --dropdown-background-hover: color-mix(in hsl, #2e261f 50%, #26211c);
+  --dropdown-background-hover: #2a241d;
   --dropdown-background-position: right 0.5em top 50%, 0 0;
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-height: 32.992px;
@@ -1474,10 +1456,7 @@ body {
   --indent-size: 4;
   --indent-unit: 0.5625em;
   --indentation-guide-color: light-dark(transparent, transparent);
-  --indentation-guide-color-active: light-dark(
-    color-mix(in srgb, #51402f 40%, #3b3026),
-    color-mix(in srgb, #51402f 40%, #3b3026)
-  );
+  --indentation-guide-color-active: light-dark(#443629, #443629);
   --indentation-guide-editing-indent: 0.85em;
   --indentation-guide-reading-indent: -1em;
   --indentation-guide-source-indent: 0.25em;
@@ -1574,7 +1553,7 @@ body {
   --loading-line-color: light-dark(#63a2bb, #6abfd2);
   --menu-backdrop-filter: none;
   --menu-background: #26211c;
-  --menu-border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  --menu-border-color: #443629;
   --menu-border-width: 1px;
   --menu-item-bg-active: light-dark(#ebe3d6, #211b17);
   --menu-item-color-active: light-dark(#cfb696, #6b563d);
@@ -1630,10 +1609,8 @@ body {
   --metadata-property-background: transparent;
   --metadata-property-background-active: #0000004d;
   --metadata-property-background-hover: transparent;
-  --metadata-property-box-shadow-focus: 0 0 0 2px
-    color-mix(in srgb, #51402f 40%, #3b3026);
-  --metadata-property-box-shadow-hover: 0 0 0 1px
-    color-mix(in srgb, #51402f 40%, #3b3026);
+  --metadata-property-box-shadow-focus: 0 0 0 2px #443629;
+  --metadata-property-box-shadow-hover: 0 0 0 1px #443629;
   --metadata-property-padding: 0;
   --metadata-property-radius: 7px;
   --metadata-property-radius-focus: 6px;
@@ -1642,10 +1619,7 @@ body {
   --metadata-sidebar-label-font-size: 14.992px;
   --metadata-tab-background: light-dark(#26211c, #26211c);
   --modal-background: var(--background-primary);
-  --modal-border-color: light-dark(
-    color-mix(in srgb, #51402f 40%, #3b3026),
-    color-mix(in srgb, #51402f 40%, #3b3026)
-  );
+  --modal-border-color: light-dark(#443629, #443629);
   --modal-border-width: 0.5pt;
   --modal-close-button-size: 20px;
   --modal-community-sidebar-width: 280px;
@@ -1720,7 +1694,7 @@ body {
   --pill-background: transparent;
   --pill-background-hover: light-dark(transparent, transparent);
   --pill-border-color: transparent;
-  --pill-border-color-hover: color-mix(in srgb, #51402f 40%, #3b3026);
+  --pill-border-color-hover: #443629;
   --pill-border-width: 0.5pt;
   --pill-color: light-dark(#655134, #c7b194);
   --pill-color-hover: light-dark(#432e14, #d7c0a3);
@@ -1794,10 +1768,7 @@ body {
   --ribbon-radius: 12px;
   --ribbon-slideout-background: light-dark(#f2ece3, #2a241e);
   --ribbon-width: 44px;
-  --scrollbar-active-thumb-bg: light-dark(
-    color-mix(in srgb, #51402f 40%, #3b3026),
-    color-mix(in srgb, #51402f 40%, #3b3026)
-  );
+  --scrollbar-active-thumb-bg: light-dark(#443629, #443629);
   --scrollbar-bg: #ffffff0d;
   --scrollbar-thumb-bg: light-dark(transparent, transparent);
   --search-clear-button-color: light-dark(#d7c0a3, #d7c0a3);
@@ -1840,7 +1811,7 @@ body {
   --slider-s-thumb-position: -5px;
   --slider-s-thumb-size: 15px;
   --slider-thumb-bg: light-dark(#fcfaf8, #d7c0a3);
-  --slider-thumb-border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  --slider-thumb-border-color: #443629;
   --slider-thumb-border-width: 1px;
   --slider-thumb-height: 18px;
   --slider-thumb-radius: 50%;
@@ -1895,10 +1866,7 @@ body {
   --tab-container-background: light-dark(#26211c, #26211c);
   --tab-curve: 6px;
   --tab-curves-display: none;
-  --tab-divider-color: light-dark(
-    color-mix(in srgb, #51402f 40%, #3b3026),
-    color-mix(in srgb, #51402f 40%, #3b3026)
-  );
+  --tab-divider-color: light-dark(#443629, #443629);
   --tab-font-size: 14.992px;
   --tab-font-weight: inherit;
   --tab-header-container-border-bottom: none;
@@ -2590,7 +2558,7 @@ h6 {
 .prompt {
   animation: none;
   background-color: light-dark(#f8f5f1, #2e261f);
-  border: 0.5pt solid color-mix(in srgb, #51402f 40%, #3b3026);
+  border: 0.5pt solid #443629;
   border-radius: 12px;
   box-shadow:
     0px 1.8px 7.3px #00000045,
@@ -3093,8 +3061,8 @@ svg.svg-icon {
   --amount-chbx-radius: 100%;
   --background-modifier-active-hover: #51402f;
   --background-modifier-border: #3b3026;
-  --background-modifier-border-focus: color-mix(in srgb, #51402f 40%, #3b3026);
-  --background-modifier-border-hover: color-mix(in srgb, #51402f 40%, #3b3026);
+  --background-modifier-border-focus: #443629;
+  --background-modifier-border-hover: #443629;
   --background-modifier-box-shadow: #0000004d;
   --background-modifier-cover: #0a0a0a66;
   --background-modifier-error: #e02f29;
@@ -3241,8 +3209,8 @@ svg.svg-icon {
   --canvas-icon-color: #917959;
   --canvas-icon-color-disabled: #51402f;
   --canvas-icon-color-hover: #c7b194;
-  --canvas-menu-bg: color-mix(in srgb, #342c23 60%, #2e261f);
-  --canvas-menu-bg-hover: color-mix(in srgb, #342c23 10%, #2e261f);
+  --canvas-menu-bg: #312a21;
+  --canvas-menu-bg-hover: #2e271f;
   --canvas-menu-border: 1px solid transparent;
   --canvas-menu-shadow:
     0px 1px 2px 1px #00000024, 0px 1px 4px -2.1px #00000038,
@@ -3351,7 +3319,7 @@ svg.svg-icon {
     inset 0px 0px 0px 1px #00000063, 0px 2px 4px -2px #00000063;
   --disabled-component-opacity: 0.3;
   --divider-color: transparent;
-  --divider-color-hover: color-mix(in srgb, #51402f 40%, #3b3026);
+  --divider-color-hover: #443629;
   --down-chbx-color: #cb5148;
   --drag-ghost-background: #5a4533;
   --drag-ghost-text-color: #ebdac6;
@@ -3365,8 +3333,8 @@ svg.svg-icon {
   --embed-border-end-color: transparent;
   --embed-border-start-color: transparent;
   --embed-border-top-color: transparent;
-  --embed-edit-btn-bg: color-mix(in srgb, #211b17 70%, transparent);
-  --embed-edit-btn-bg-hover: color-mix(in srgb, #211b17 100%, transparent);
+  --embed-edit-btn-bg: #211b17b3;
+  --embed-edit-btn-bg-hover: #211b17;
   --embed-edit-btn-shadow:
     inset 0px 0px 0px 1px #00000080, inset 0px -2px 1px 1px #00000080;
   --embed-edit-btn-shadow-hover:
@@ -3391,7 +3359,7 @@ svg.svg-icon {
   --graph-node-unresolved: #e5aa1f;
   --graph-node-unresolved-opacity: 1;
   --graph-text: #917959;
-  --gutter-color: color-mix(in srgb, #6b563d 40%, #51402f);
+  --gutter-color: #5b4934;
   --gutter-color-active: #917959;
   --h1-bg-color: transparent;
   --h1-border-bottom-color: transparent;
@@ -3435,10 +3403,10 @@ svg.svg-icon {
   --icon-bg-active-menu: transparent;
   --icon-bg-hover: transparent;
   --icon-bg-pressed: transparent;
-  --icon-color: color-mix(in srgb, #6b563d 30%, #917959);
+  --icon-color: #866f51;
   --icon-color-active: #ab916d;
   --icon-color-focused: #917959;
-  --icon-color-hover: color-mix(in srgb, #917959 70%, #ab916d);
+  --icon-color-hover: #99805f;
   --icon-opacity: 1;
   --icon-opacity-active: 1;
   --icon-opacity-hover: 1;
@@ -3447,7 +3415,7 @@ svg.svg-icon {
   --important-chbx-icon-color: #ffffff;
   --important-chbx-radius: 100%;
   --indentation-guide-color: transparent;
-  --indentation-guide-color-active: color-mix(in srgb, #51402f 40%, #3b3026);
+  --indentation-guide-color-active: #443629;
   --info-chbx-color: #488987;
   --info-chbx-icon-color: #ffffff;
   --inline-code-bg: #211b17;
@@ -3455,7 +3423,7 @@ svg.svg-icon {
   --inline-query-bg: color-mix(in srgb, #26211c 25%, var(--background-primary));
   --inline-query-shadow: 0px 1px 10px 0px #00000042;
   --inline-title-color: #ebdac6;
-  --inprogress-chbx-border-color: color-mix(in srgb, #ef993e 15%, #c7b194);
+  --inprogress-chbx-border-color: #cdad87;
   --inprogress-chbx-color: #ef993e;
   --inprogress-chbx-color-hover: #fbab51;
   --input-shadow:
@@ -3474,7 +3442,7 @@ svg.svg-icon {
   --interactive-accent: #5a4533;
   --interactive-accent-hover: #6c4f38;
   --interactive-accent-hsl: 31, 27%, 24%;
-  --interactive-hover: color-mix(in hsl, #2e261f 50%, #26211c);
+  --interactive-hover: #2a241d;
   --interactive-normal: #26211c;
   --italic-color: #4db2d1;
   --italic-highlight-bg: #2ab1c033;
@@ -3488,8 +3456,8 @@ svg.svg-icon {
   --kanban-item-shadow:
     inset 0px 0px 0px 1px #00000066, inset 0px 1px 0px 0px #ffffff30,
     inset 0px -1px 0px 1px #0000000f, 0px 2px 2px 0px #00000021;
-  --kanban-lane-bg: color-mix(in srgb, #2a241e 50%, #26211c);
-  --kanban-lane-border: 1px solid color-mix(in srgb, #342c23 40%, #2e261f);
+  --kanban-lane-bg: #28221d;
+  --kanban-lane-border: 1px solid #302920;
   --kanban-lane-shadow: none;
   --kanban-new-item-bg: transparent;
   --kanban-new-item-bg-hover: #2e261f;
@@ -3514,39 +3482,19 @@ svg.svg-icon {
     currentColor 22%,
     transparent
   );
-  --link-ahref-decoration-color-hover: color-mix(
-    in srgb,
-    #fb8479 22%,
-    transparent
-  );
+  --link-ahref-decoration-color-hover: #fb847938;
   --link-color: #e5aa1f;
   --link-color-hover: #e2bd60;
-  --link-decoration-color: color-mix(in srgb, #da5e16 22%, transparent);
-  --link-decoration-color-hover: color-mix(in srgb, #e2bd60 22%, transparent);
+  --link-decoration-color: #da5e1638;
+  --link-decoration-color-hover: #e2bd6038;
   --link-external-color: #2ea873;
   --link-external-color-hover: #4ec68e;
-  --link-external-decoration-color: color-mix(
-    in srgb,
-    #2ea873 22%,
-    transparent
-  );
-  --link-external-decoration-color-hover: color-mix(
-    in srgb,
-    #4ec68e 22%,
-    transparent
-  );
+  --link-external-decoration-color: #2ea87338;
+  --link-external-decoration-color-hover: #4ec68e38;
   --link-unresolved-color: #917959;
   --link-unresolved-color-hover: #ab916d;
-  --link-unresolved-decoration-color: color-mix(
-    in srgb,
-    #917959 22%,
-    transparent
-  );
-  --link-unresolved-decoration-color-hover: color-mix(
-    in srgb,
-    #ab916d 22%,
-    transparent
-  );
+  --link-unresolved-decoration-color: #91795938;
+  --link-unresolved-decoration-color-hover: #ab916d38;
   --list-marker-color: #917959;
   --list-marker-color-collapsed: #ab916d;
   --list-marker-color-hover: #c7b194;
@@ -3582,7 +3530,7 @@ svg.svg-icon {
   --metadata-properties-title-color-hover: #917959;
   --metadata-tab-background: #26211c;
   --modal-background: var(--background-primary);
-  --modal-border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  --modal-border-color: #443629;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --nav-collapse-icon-color: #6b563d;
@@ -3592,7 +3540,7 @@ svg.svg-icon {
     0px 2px 3px 0px #00000038;
   --nav-file-tag-bg: transparent;
   --nav-file-tag-color: #6b563d;
-  --nav-folder-1-bg-color: color-mix(in srgb, #f0516c33 60%, transparent);
+  --nav-folder-1-bg-color: #f0516c1f;
   --nav-folder-1-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-1-bg-color) 70%,
@@ -3609,7 +3557,7 @@ svg.svg-icon {
     var(--nav-folder-1-color) 25%,
     transparent
   );
-  --nav-folder-10-bg-color: color-mix(in srgb, #99be2333 60%, transparent);
+  --nav-folder-10-bg-color: #99be231f;
   --nav-folder-10-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-10-bg-color) 70%,
@@ -3626,7 +3574,7 @@ svg.svg-icon {
     var(--nav-folder-10-color) 25%,
     transparent
   );
-  --nav-folder-11-bg-color: color-mix(in srgb, #2ab1c033 60%, transparent);
+  --nav-folder-11-bg-color: #2ab1c01f;
   --nav-folder-11-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-11-bg-color) 70%,
@@ -3643,7 +3591,7 @@ svg.svg-icon {
     var(--nav-folder-11-color) 25%,
     transparent
   );
-  --nav-folder-12-bg-color: color-mix(in srgb, #707aff33 60%, transparent);
+  --nav-folder-12-bg-color: #707aff1f;
   --nav-folder-12-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-12-bg-color) 70%,
@@ -3660,7 +3608,7 @@ svg.svg-icon {
     var(--nav-folder-12-color) 25%,
     transparent
   );
-  --nav-folder-2-bg-color: color-mix(in srgb, #ff730033 60%, transparent);
+  --nav-folder-2-bg-color: #ff73001f;
   --nav-folder-2-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-2-bg-color) 70%,
@@ -3677,7 +3625,7 @@ svg.svg-icon {
     var(--nav-folder-2-color) 25%,
     transparent
   );
-  --nav-folder-3-bg-color: color-mix(in srgb, #ffbb0033 60%, transparent);
+  --nav-folder-3-bg-color: #ffbb001f;
   --nav-folder-3-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-3-bg-color) 70%,
@@ -3694,7 +3642,7 @@ svg.svg-icon {
     var(--nav-folder-3-color) 25%,
     transparent
   );
-  --nav-folder-4-bg-color: color-mix(in srgb, #99be2333 60%, transparent);
+  --nav-folder-4-bg-color: #99be231f;
   --nav-folder-4-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-4-bg-color) 70%,
@@ -3711,7 +3659,7 @@ svg.svg-icon {
     var(--nav-folder-4-color) 25%,
     transparent
   );
-  --nav-folder-5-bg-color: color-mix(in srgb, #2ab1c033 60%, transparent);
+  --nav-folder-5-bg-color: #2ab1c01f;
   --nav-folder-5-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-5-bg-color) 70%,
@@ -3728,7 +3676,7 @@ svg.svg-icon {
     var(--nav-folder-5-color) 25%,
     transparent
   );
-  --nav-folder-6-bg-color: color-mix(in srgb, #707aff33 60%, transparent);
+  --nav-folder-6-bg-color: #707aff1f;
   --nav-folder-6-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-6-bg-color) 70%,
@@ -3745,7 +3693,7 @@ svg.svg-icon {
     var(--nav-folder-6-color) 25%,
     transparent
   );
-  --nav-folder-7-bg-color: color-mix(in srgb, #f0516c33 60%, transparent);
+  --nav-folder-7-bg-color: #f0516c1f;
   --nav-folder-7-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-7-bg-color) 70%,
@@ -3762,7 +3710,7 @@ svg.svg-icon {
     var(--nav-folder-7-color) 25%,
     transparent
   );
-  --nav-folder-8-bg-color: color-mix(in srgb, #ff730033 60%, transparent);
+  --nav-folder-8-bg-color: #ff73001f;
   --nav-folder-8-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-8-bg-color) 70%,
@@ -3779,7 +3727,7 @@ svg.svg-icon {
     var(--nav-folder-8-color) 25%,
     transparent
   );
-  --nav-folder-9-bg-color: color-mix(in srgb, #ffbb0033 60%, transparent);
+  --nav-folder-9-bg-color: #ffbb001f;
   --nav-folder-9-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-9-bg-color) 70%,
@@ -3825,12 +3773,8 @@ svg.svg-icon {
   --pdf-thumbnail-shadow: 0 0 0 1px transparent;
   --pill-background: #00000033;
   --pill-background-hover: transparent;
-  --pill-border-color: color-mix(in srgb, transparent 50%, transparent);
-  --pill-border-color-hover: color-mix(
-    in srgb,
-    color-mix(in srgb, #51402f 40%, #3b3026) 50%,
-    transparent
-  );
+  --pill-border-color: #00000000;
+  --pill-border-color-hover: #44362980;
   --pill-color: #c7b194;
   --pill-color-hover: #d7c0a3;
   --pill-color-remove: #6b563d;
@@ -3854,7 +3798,7 @@ svg.svg-icon {
   --progress-gradient-2: #e5aa1f;
   --progress-gradient-3: #4db2d1;
   --progress-value-outline: #ffffff36;
-  --prompt-border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  --prompt-border-color: #443629;
   --prompt-input-background: var(--background-primary);
   --prompt-instructions-background: color-mix(
     in hsl,
@@ -3866,7 +3810,7 @@ svg.svg-icon {
   --prompt-suggestion-background-selected: #0000001a;
   --prompt-suggestion-color: #ab916d;
   --prompt-suggestion-color-selected: #d7c0a3;
-  --prompt-suggestion-highlight-color: color-mix(in srgb, #ab916d 70%, #ffffff);
+  --prompt-suggestion-highlight-color: #c4b299;
   --prompt-suggestion-highlight-color-selected: #d7c0a3;
   --prompt-suggestion-shadow-selected:
     inset 0px 0px 0px 1px #00000024, 0px 2px 6px 0px #0000001f;
@@ -3879,14 +3823,14 @@ svg.svg-icon {
   --ribbon-slideout-shadow:
     8px 7px 21px -4px #00000059, 0px 5px 5px -5px #00000061;
   --sched-chbx-color: #9f9589;
-  --scrollbar-active-thumb-bg: color-mix(in srgb, #51402f 40%, #3b3026);
+  --scrollbar-active-thumb-bg: #443629;
   --scrollbar-bg: transparent;
   --scrollbar-thumb-bg: transparent;
   --search-clear-button-color: #d7c0a3;
   --search-clear-button-color-hover: #f35044;
   --search-icon-color: #d7c0a3;
   --search-result-background: #2a241e;
-  --search-result-background-hover: color-mix(in srgb, #211b17 50%, #1c1712);
+  --search-result-background-hover: #1e1915;
   --search-result-dest-file-bg: #26211c;
   --search-result-dest-file-bg-hover: #1c1712;
   --search-result-dest-file-color: #917959;
@@ -3933,7 +3877,7 @@ svg.svg-icon {
   --strikethrough-color: #917959;
   --strikethrough-highlight-bg: #ffbb0033;
   --strikethrough-highlight-color: #917959;
-  --style-settings-container-bg: color-mix(in srgb, #2a241e 50%, transparent);
+  --style-settings-container-bg: #2a241e80;
   --swatch-shadow: inset 0px 0px 0px 1px #0000004d;
   --sync-icon-success: #117449;
   --sync-icon-success-active: #6b563d;
@@ -3948,7 +3892,7 @@ svg.svg-icon {
   --tab-background-active: var(--background-primary);
   --tab-bg: transparent;
   --tab-container-background: #26211c;
-  --tab-divider-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  --tab-divider-color: #443629;
   --tab-outline-color: transparent;
   --tab-stacked-shadow:
     -2.9px 0 10.5px -6.2px #0000004f, -6.2px 0 3.6px -5.2px #00000045,
@@ -3993,7 +3937,7 @@ svg.svg-icon {
   --text-on-accent: #ebdac6;
   --text-on-accent-inverted: #1c1712;
   --text-selection: #7e694e33;
-  --text-selection-theme-bg: color-mix(in srgb, #917959 30%, transparent);
+  --text-selection-theme-bg: #9179594d;
   --text-selection-theme-text-color: color-mix(
     in srgb,
     currentColor 70%,
@@ -4005,7 +3949,7 @@ svg.svg-icon {
   --titlebar-background-focused: #26211c;
   --titlebar-text-color: #51402f;
   --titlebar-text-color-focused: #6b563d;
-  --toggle-bg: color-mix(in srgb, #51402f 50%, #6b563d);
+  --toggle-bg: #5e4b36;
   --toggle-bg-enabled: #117449;
   --toggle-shadow:
     inset 0 4px 10px #00000030, inset 0px 0px 0px 1px #ffffff17,
@@ -4059,8 +4003,8 @@ svg.svg-icon {
   --amount-chbx-radius: 100%;
   --background-modifier-active-hover: #e4d8c3;
   --background-modifier-border: #e4d8c3;
-  --background-modifier-border-focus: color-mix(in hsl, #cfb696 60%, #e4d8c3);
-  --background-modifier-border-hover: color-mix(in hsl, #cfb696 60%, #e4d8c3);
+  --background-modifier-border-focus: #d7c4a8;
+  --background-modifier-border-hover: #d7c4a8;
   --background-modifier-box-shadow: #0000001a;
   --background-modifier-cover: #dcdcdc66;
   --background-modifier-error: #bf3f36;
@@ -4208,7 +4152,7 @@ svg.svg-icon {
   --canvas-icon-color: #b79d7b;
   --canvas-icon-color-disabled: #e4d8c3;
   --canvas-icon-color-hover: #655134;
-  --canvas-menu-bg: color-mix(in hsl, #fcfaf8 50%, #f8f5f1);
+  --canvas-menu-bg: #faf8f5;
   --canvas-menu-bg-hover: #fcfaf8;
   --canvas-menu-border: 1px solid transparent;
   --canvas-menu-shadow:
@@ -4318,7 +4262,7 @@ svg.svg-icon {
     inset 0px 0px 0px 1px #00000017, 0px 2px 4px -2px #0000000f;
   --disabled-component-opacity: 0.3;
   --divider-color: transparent;
-  --divider-color-hover: color-mix(in srgb, #51402f 40%, #3b3026);
+  --divider-color-hover: #443629;
   --down-chbx-color: #bf3f36;
   --drag-ghost-background: #5a4533;
   --drag-ghost-text-color: #ebdac6;
@@ -4332,8 +4276,8 @@ svg.svg-icon {
   --embed-border-end-color: transparent;
   --embed-border-start-color: transparent;
   --embed-border-top-color: transparent;
-  --embed-edit-btn-bg: color-mix(in srgb, #f8f5f1 70%, transparent);
-  --embed-edit-btn-bg-hover: color-mix(in srgb, #f8f5f1 100%, transparent);
+  --embed-edit-btn-bg: #f8f5f1b3;
+  --embed-edit-btn-bg-hover: #f8f5f1;
   --embed-edit-btn-shadow:
     inset 0px 0px 0px 1px #0000001a, inset 0px -2px 1px 1px #0000001a;
   --embed-edit-btn-shadow-hover:
@@ -4341,7 +4285,7 @@ svg.svg-icon {
     0px 1px 2px 0px #0000001a;
   --embed-title-border-color: transparent;
   --embed-title-color: #9d8062;
-  --empty-state-action-btn-bg: color-mix(in srgb, #2a241e 50%, transparent);
+  --empty-state-action-btn-bg: #2a241e80;
   --file-header-border: 1px solid transparent;
   --file-header-border-color: transparent;
   --file-header-title-color: #655134;
@@ -4358,7 +4302,7 @@ svg.svg-icon {
   --graph-node-unresolved: #ecb936;
   --graph-node-unresolved-opacity: 1;
   --graph-text: #b79d7b;
-  --gutter-color: color-mix(in hsl, #e4d8c3 40%, #cfb696);
+  --gutter-color: #d7c4a8;
   --gutter-color-active: #9d8062;
   --h1-bg-color: transparent;
   --h1-border-bottom-color: transparent;
@@ -4414,7 +4358,7 @@ svg.svg-icon {
   --important-chbx-icon-color: #ffffff;
   --important-chbx-radius: 100%;
   --indentation-guide-color: transparent;
-  --indentation-guide-color-active: color-mix(in srgb, #51402f 40%, #3b3026);
+  --indentation-guide-color-active: #443629;
   --info-chbx-color: #519492;
   --info-chbx-icon-color: #ffffff;
   --inline-code-bg: #fcfaf8;
@@ -4422,7 +4366,7 @@ svg.svg-icon {
   --inline-query-bg: color-mix(in srgb, #26211c 20%, var(--editor-bg-color));
   --inline-query-shadow: 0px 1px 10px 0px #0000000f;
   --inline-title-color: #432e14;
-  --inprogress-chbx-border-color: color-mix(in srgb, #ef993e 65%, #c7b194);
+  --inprogress-chbx-border-color: #e1a25c;
   --inprogress-chbx-color: #eb9d37;
   --inprogress-chbx-color-hover: #eead58;
   --input-shadow:
@@ -4441,7 +4385,7 @@ svg.svg-icon {
   --interactive-accent: #5a4533;
   --interactive-accent-hover: #6c4f38;
   --interactive-accent-hsl: 31, 27%, 24%;
-  --interactive-hover: color-mix(in hsl, #fcfaf8 50%, #26211c);
+  --interactive-hover: #ac906f;
   --interactive-normal: #f2ece3;
   --italic-color: #22729b;
   --italic-highlight-bg: #2ab1c033;
@@ -4481,39 +4425,19 @@ svg.svg-icon {
     currentColor 22%,
     transparent
   );
-  --link-ahref-decoration-color-hover: color-mix(
-    in srgb,
-    #fb8479 22%,
-    transparent
-  );
+  --link-ahref-decoration-color-hover: #fb847938;
   --link-color: #d79719;
   --link-color-hover: #ecb936;
-  --link-decoration-color: color-mix(in srgb, #da5e16 22%, transparent);
-  --link-decoration-color-hover: color-mix(in srgb, #e2bd60 22%, transparent);
+  --link-decoration-color: #da5e1638;
+  --link-decoration-color-hover: #e2bd6038;
   --link-external-color: #329562;
   --link-external-color-hover: #3eb174;
-  --link-external-decoration-color: color-mix(
-    in srgb,
-    #2ea873 22%,
-    transparent
-  );
-  --link-external-decoration-color-hover: color-mix(
-    in srgb,
-    #4ec68e 22%,
-    transparent
-  );
+  --link-external-decoration-color: #2ea87338;
+  --link-external-decoration-color-hover: #4ec68e38;
   --link-unresolved-color: #b79d7b;
   --link-unresolved-color-hover: #cfb696;
-  --link-unresolved-decoration-color: color-mix(
-    in srgb,
-    #917959 22%,
-    transparent
-  );
-  --link-unresolved-decoration-color-hover: color-mix(
-    in srgb,
-    #ab916d 22%,
-    transparent
-  );
+  --link-unresolved-decoration-color: #91795938;
+  --link-unresolved-decoration-color-hover: #ab916d38;
   --list-marker-color: #b79d7b;
   --list-marker-color-collapsed: #9d8062;
   --list-marker-color-hover: #836b49;
@@ -4548,7 +4472,7 @@ svg.svg-icon {
   --metadata-properties-title-color-collapsed: #cfb696;
   --metadata-properties-title-color-hover: #b79d7b;
   --metadata-tab-background: #26211c;
-  --modal-border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  --modal-border-color: #443629;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
   --nav-collapse-icon-color: #6b563d;
@@ -4558,7 +4482,7 @@ svg.svg-icon {
     0px 2px 3px 0px #0000000d;
   --nav-file-tag-bg: transparent;
   --nav-file-tag-color: #9d8062;
-  --nav-folder-1-bg-color: color-mix(in srgb, #f0516c33 60%, transparent);
+  --nav-folder-1-bg-color: #f0516c1f;
   --nav-folder-1-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-1-bg-color) 70%,
@@ -4575,7 +4499,7 @@ svg.svg-icon {
     var(--nav-folder-1-color) 25%,
     transparent
   );
-  --nav-folder-10-bg-color: color-mix(in srgb, #99be2333 60%, transparent);
+  --nav-folder-10-bg-color: #99be231f;
   --nav-folder-10-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-10-bg-color) 70%,
@@ -4592,7 +4516,7 @@ svg.svg-icon {
     var(--nav-folder-10-color) 25%,
     transparent
   );
-  --nav-folder-11-bg-color: color-mix(in srgb, #2ab1c033 60%, transparent);
+  --nav-folder-11-bg-color: #2ab1c01f;
   --nav-folder-11-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-11-bg-color) 70%,
@@ -4609,7 +4533,7 @@ svg.svg-icon {
     var(--nav-folder-11-color) 25%,
     transparent
   );
-  --nav-folder-12-bg-color: color-mix(in srgb, #707aff33 60%, transparent);
+  --nav-folder-12-bg-color: #707aff1f;
   --nav-folder-12-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-12-bg-color) 70%,
@@ -4626,7 +4550,7 @@ svg.svg-icon {
     var(--nav-folder-12-color) 25%,
     transparent
   );
-  --nav-folder-2-bg-color: color-mix(in srgb, #ff730033 60%, transparent);
+  --nav-folder-2-bg-color: #ff73001f;
   --nav-folder-2-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-2-bg-color) 70%,
@@ -4643,7 +4567,7 @@ svg.svg-icon {
     var(--nav-folder-2-color) 25%,
     transparent
   );
-  --nav-folder-3-bg-color: color-mix(in srgb, #ffbb0033 60%, transparent);
+  --nav-folder-3-bg-color: #ffbb001f;
   --nav-folder-3-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-3-bg-color) 70%,
@@ -4660,7 +4584,7 @@ svg.svg-icon {
     var(--nav-folder-3-color) 25%,
     transparent
   );
-  --nav-folder-4-bg-color: color-mix(in srgb, #99be2333 60%, transparent);
+  --nav-folder-4-bg-color: #99be231f;
   --nav-folder-4-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-4-bg-color) 70%,
@@ -4677,7 +4601,7 @@ svg.svg-icon {
     var(--nav-folder-4-color) 25%,
     transparent
   );
-  --nav-folder-5-bg-color: color-mix(in srgb, #2ab1c033 60%, transparent);
+  --nav-folder-5-bg-color: #2ab1c01f;
   --nav-folder-5-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-5-bg-color) 70%,
@@ -4694,7 +4618,7 @@ svg.svg-icon {
     var(--nav-folder-5-color) 25%,
     transparent
   );
-  --nav-folder-6-bg-color: color-mix(in srgb, #707aff33 60%, transparent);
+  --nav-folder-6-bg-color: #707aff1f;
   --nav-folder-6-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-6-bg-color) 70%,
@@ -4711,7 +4635,7 @@ svg.svg-icon {
     var(--nav-folder-6-color) 25%,
     transparent
   );
-  --nav-folder-7-bg-color: color-mix(in srgb, #f0516c33 60%, transparent);
+  --nav-folder-7-bg-color: #f0516c1f;
   --nav-folder-7-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-7-bg-color) 70%,
@@ -4728,7 +4652,7 @@ svg.svg-icon {
     var(--nav-folder-7-color) 25%,
     transparent
   );
-  --nav-folder-8-bg-color: color-mix(in srgb, #ff730033 60%, transparent);
+  --nav-folder-8-bg-color: #ff73001f;
   --nav-folder-8-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-8-bg-color) 70%,
@@ -4745,7 +4669,7 @@ svg.svg-icon {
     var(--nav-folder-8-color) 25%,
     transparent
   );
-  --nav-folder-9-bg-color: color-mix(in srgb, #ffbb0033 60%, transparent);
+  --nav-folder-9-bg-color: #ffbb001f;
   --nav-folder-9-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-9-bg-color) 70%,
@@ -4789,12 +4713,8 @@ svg.svg-icon {
   --pcr-btn-shadow: inset 0px 0px 0px 1.5px #00000033;
   --pill-background: #ffffff66;
   --pill-background-hover: transparent;
-  --pill-border-color: color-mix(in srgb, transparent 50%, transparent);
-  --pill-border-color-hover: color-mix(
-    in srgb,
-    color-mix(in srgb, #51402f 40%, #3b3026) 50%,
-    transparent
-  );
+  --pill-border-color: #00000000;
+  --pill-border-color-hover: #44362980;
   --pill-color: #655134;
   --pill-color-hover: #432e14;
   --pill-color-remove: #cfb696;
@@ -4818,7 +4738,7 @@ svg.svg-icon {
   --progress-gradient-2: #e7c56f;
   --progress-gradient-3: #63a2bb;
   --progress-value-outline: #0000002e;
-  --prompt-border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  --prompt-border-color: #443629;
   --prompt-input-background: var(--background-primary);
   --prompt-instructions-background: color-mix(
     in hsl,
@@ -4830,7 +4750,7 @@ svg.svg-icon {
   --prompt-suggestion-background-selected: #ffffff59;
   --prompt-suggestion-color: #9d8062;
   --prompt-suggestion-color-selected: #593e22;
-  --prompt-suggestion-highlight-color: color-mix(in srgb, #ab916d 70%, #000000);
+  --prompt-suggestion-highlight-color: #78664c;
   --prompt-suggestion-highlight-color-selected: #593e22;
   --prompt-suggestion-shadow-selected:
     inset 0px 0px 0px 1px #00000014, 0px 2px 6px 0px #00000008;
@@ -4843,16 +4763,16 @@ svg.svg-icon {
   --ribbon-slideout-shadow:
     8px 7px 21px -4px #0000001f, 0px 5px 5px -5px #00000026;
   --sched-chbx-color: #b6aea5;
-  --scrollbar-active-thumb-bg: color-mix(in srgb, #51402f 40%, #3b3026);
+  --scrollbar-active-thumb-bg: #443629;
   --scrollbar-bg: transparent;
   --scrollbar-thumb-bg: transparent;
   --search-clear-button-color: #d7c0a3;
   --search-clear-button-color-hover: #f35044;
   --search-icon-color: #b79d7b;
   --search-result-background: #2a241e;
-  --search-result-background-hover: color-mix(in srgb, #fcfaf8 50%, #f8f5f1);
+  --search-result-background-hover: #faf8f5;
   --search-result-dest-file-bg: #f8f5f1;
-  --search-result-dest-file-bg-hover: color-mix(in srgb, #f8f5f1 50%, #fcfaf8);
+  --search-result-dest-file-bg-hover: #faf8f5;
   --search-result-dest-file-color: #836b49;
   --search-result-dest-file-icon-color: #cfb696;
   --search-result-dest-file-shadow:
@@ -4896,7 +4816,7 @@ svg.svg-icon {
   --strikethrough-color: #b79d7b;
   --strikethrough-highlight-bg: #ffbb0033;
   --strikethrough-highlight-color: #917959;
-  --style-settings-container-bg: color-mix(in srgb, #2a241e 50%, transparent);
+  --style-settings-container-bg: #2a241e80;
   --swatch-shadow: inset 0px 0px 0px 1px #00000033;
   --sync-icon-success: #329562;
   --sync-icon-success-active: #6b563d;
@@ -4911,7 +4831,7 @@ svg.svg-icon {
   --tab-background-active: var(--background-primary);
   --tab-bg: transparent;
   --tab-container-background: #26211c;
-  --tab-divider-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  --tab-divider-color: #443629;
   --tab-outline-color: transparent;
   --tab-stacked-shadow:
     -2.9px 0 10.5px -6.2px #00000014, -6.2px 0 3.6px -5.2px #0000000a,
@@ -4944,7 +4864,7 @@ svg.svg-icon {
   --text-faint: #b79d7b;
   --text-highlight-bg: #ffbb0033;
   --text-highlight-bg-rgb: 249, 207, 81;
-  --text-input-bg-active: color-mix(in hsl, #211b17 40%, #fcfaf8);
+  --text-input-bg-active: #bda285;
   --text-input-border-color: #e4d8c3;
   --text-input-color: #593e22;
   --text-input-color-focused: #593e22;
@@ -4956,7 +4876,7 @@ svg.svg-icon {
   --text-on-accent: #fcfaf8;
   --text-on-accent-inverted: #432e14;
   --text-selection: #cfb69626;
-  --text-selection-theme-bg: color-mix(in srgb, #cfb696 30%, transparent);
+  --text-selection-theme-bg: #cfb6964d;
   --text-selection-theme-text-color: color-mix(
     in srgb,
     currentColor 70%,
@@ -4968,7 +4888,7 @@ svg.svg-icon {
   --titlebar-background-focused: #26211c;
   --titlebar-text-color: #e4d8c3;
   --titlebar-text-color-focused: #cfb696;
-  --toggle-bg: color-mix(in hsl, #e4d8c3 80%, #cfb696);
+  --toggle-bg: #e0d1ba;
   --toggle-bg-enabled: #329562;
   --toggle-shadow:
     inset 0 4px 10px #00000017, inset 0px 0px 0px 1px #0000000f,

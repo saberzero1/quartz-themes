@@ -13708,11 +13708,7 @@ h1 {
   --font-weight: 600;
   border-bottom: 0px solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(
-    to right,
-    color-mix(in lch, #e0e4eb 60%, transparent),
-    transparent
-  );
+  border-image-source: linear-gradient(to right, #e0e4eb99, transparent);
   color: #e0e4eb;
   font-family: Courgette;
   font-size: 1.6em;
@@ -13730,11 +13726,7 @@ h2 {
   --font-weight: 600;
   border-bottom: 1px solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(
-    to right,
-    color-mix(in lch, #c1c9d7 60%, transparent),
-    transparent
-  );
+  border-image-source: linear-gradient(to right, #c1c9d799, transparent);
   color: #c1c9d7;
   font-family: Courgette;
   font-size: 1.48em;
@@ -13752,11 +13744,7 @@ h3 {
   --font-weight: 600;
   border-bottom: 0px solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(
-    to right,
-    color-mix(in lch, #a2afc3 60%, transparent),
-    transparent
-  );
+  border-image-source: linear-gradient(to right, #a2afc399, transparent);
   color: #a2afc3;
   font-family: "Karla", "Inter";
   font-size: 1.36em;
@@ -24302,11 +24290,7 @@ div:has(> h1, > h2) + div:has(p) > p {
 .HyperMD-header-1::after {
   border-bottom: 0px solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(
-    to right,
-    color-mix(in lch, #e0e4eb 60%, transparent),
-    transparent
-  );
+  border-image-source: linear-gradient(to right, #e0e4eb99, transparent);
   content: "";
   display: block;
   padding-bottom: 0.1rem;
@@ -24315,11 +24299,7 @@ div:has(> h1, > h2) + div:has(p) > p {
 .HyperMD-header-2::after {
   border-bottom: 1px solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(
-    to right,
-    color-mix(in lch, #c1c9d7 60%, transparent),
-    transparent
-  );
+  border-image-source: linear-gradient(to right, #c1c9d799, transparent);
   content: "";
   display: block;
   padding-bottom: 0.1rem;
@@ -24328,11 +24308,7 @@ div:has(> h1, > h2) + div:has(p) > p {
 .HyperMD-header-3::after {
   border-bottom: 0px solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(
-    to right,
-    color-mix(in lch, #a2afc3 60%, transparent),
-    transparent
-  );
+  border-image-source: linear-gradient(to right, #a2afc399, transparent);
   content: "";
   display: block;
 }
@@ -24349,11 +24325,7 @@ div:has(> h1, > h2) + div:has(p) > p {
   border-bottom: none;
   border-bottom-width: 0px;
   border-image-slice: 1;
-  border-image-source: linear-gradient(
-    to right,
-    color-mix(in lch, #e0e4eb 60%, transparent),
-    transparent
-  );
+  border-image-source: linear-gradient(to right, #e0e4eb99, transparent);
   contain: strict;
   content: "";
   display: block;
@@ -24363,11 +24335,7 @@ div:has(> h1, > h2) + div:has(p) > p {
   border-bottom: none;
   border-bottom-width: 1px;
   border-image-slice: 1;
-  border-image-source: linear-gradient(
-    to right,
-    color-mix(in lch, #c1c9d7 60%, transparent),
-    transparent
-  );
+  border-image-source: linear-gradient(to right, #c1c9d799, transparent);
   contain: strict;
   content: "";
   display: block;
@@ -24377,11 +24345,7 @@ div:has(> h1, > h2) + div:has(p) > p {
   border-bottom: none;
   border-bottom-width: 0px;
   border-image-slice: 1;
-  border-image-source: linear-gradient(
-    to right,
-    color-mix(in lch, #a2afc3 60%, transparent),
-    transparent
-  );
+  border-image-source: linear-gradient(to right, #a2afc399, transparent);
   contain: strict;
   content: "";
   display: block;

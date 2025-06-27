@@ -888,7 +888,7 @@ body {
   --green-1: light-dark(#3dc730, #79c142);
   --grid-notebook-line-color-1: light-dark(#c7c7c740, #c7c7c71f);
   --grid-notebook-line-color-2: light-dark(#afafaf40, #74747440);
-  --h1-bg-color: color-mix(in srgb, #d4d4d4 15%, transparent);
+  --h1-bg-color: #d4d4d426;
   --h1-color: light-dark(#08377d, #96c22e);
   --h1-font:
     "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
@@ -903,7 +903,7 @@ body {
   --h1-style: normal;
   --h1-variant: normal;
   --h1-weight: 700;
-  --h2-bg-color: color-mix(in srgb, #d4d4d4 15%, transparent);
+  --h2-bg-color: #d4d4d426;
   --h2-color: light-dark(#004fa8, #4cb148);
   --h2-font:
     "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
@@ -918,7 +918,7 @@ body {
   --h2-style: normal;
   --h2-variant: normal;
   --h2-weight: 600;
-  --h3-bg-color: color-mix(in srgb, #d4d4d4 15%, transparent);
+  --h3-bg-color: #d4d4d426;
   --h3-color: light-dark(#0e63b9, #3abbbb);
   --h3-font:
     "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
@@ -933,7 +933,7 @@ body {
   --h3-style: normal;
   --h3-variant: normal;
   --h3-weight: 600;
-  --h4-bg-color: color-mix(in srgb, #d4d4d4 15%, transparent);
+  --h4-bg-color: #d4d4d426;
   --h4-color: light-dark(#3482c5, #75a2e6);
   --h4-font:
     "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
@@ -948,7 +948,7 @@ body {
   --h4-style: normal;
   --h4-variant: normal;
   --h4-weight: 600;
-  --h5-bg-color: color-mix(in srgb, #d4d4d4 15%, transparent);
+  --h5-bg-color: #d4d4d426;
   --h5-color: light-dark(#5aa0e2, #b296f3);
   --h5-font: inherit;
   --h5-line-height: 1.5;
@@ -956,7 +956,7 @@ body {
   --h5-style: normal;
   --h5-variant: normal;
   --h5-weight: 600;
-  --h6-bg-color: color-mix(in srgb, #d4d4d4 15%, transparent);
+  --h6-bg-color: #d4d4d426;
   --h6-color: light-dark(#89b9e6, #eaa5f8);
   --h6-font: inherit;
   --h6-line-height: 1.5;
@@ -1022,7 +1022,7 @@ body {
   --indentation-guide-source-indent: 0.25em;
   --indentation-guide-width: 1px;
   --indentation-guide-width-active: 1px;
-  --inline-title-bg-color: color-mix(in srgb, #d4d4d4 15%, transparent);
+  --inline-title-bg-color: #d4d4d426;
   --inline-title-color: #d4d4d4;
   --inline-title-font:
     "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
@@ -1183,8 +1183,7 @@ body {
   --metadata-property-background: transparent;
   --metadata-property-background-active: #ffffff26;
   --metadata-property-background-hover: transparent;
-  --metadata-property-box-shadow-focus: 0 0 0 2px
-    color-mix(in srgb, #95a503, transparent 30%);
+  --metadata-property-box-shadow-focus: 0 0 0 2px #95a503b3;
   --metadata-property-box-shadow-hover: 0 0 0 1px #3f3f3f;
   --metadata-property-padding: 0;
   --metadata-property-radius: 6px;

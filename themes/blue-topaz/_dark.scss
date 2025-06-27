@@ -1,0 +1,182 @@
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
+  color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
+  --accent-l-alt: 57.75%;
+
+  --background-modifier-box-shadow: #e4e4e414;
+  --background-modifier-cover: #0a0a0a66;
+
+  --background-titlebar-inner: #478fd11a;
+
+  --bt-indentation-line-image: url();
+
+  --color-blue-rgb: 2, 122, 255;
+
+  --color-cyan-rgb: 83, 223, 221;
+
+  --color-green-rgb: 68, 207, 110;
+
+  --color-orange-rgb: 233, 151, 63;
+
+  --color-pink-rgb: 250, 153, 205;
+
+  --color-purple-rgb: 168, 130, 255;
+
+  --color-red-rgb: 251, 70, 76;
+
+  --color-yellow-rgb: 224, 222, 113;
+
+  --embed-color: hsla(209, 72%, 110%, 0.055);
+
+  --graph-circle-outline: transparent;
+
+  --highlight-mix-blend-mode: darken;
+  --hr-color: #111;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
+    0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
+    0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
+  --interactive-accent: #42a1fa;
+
+  --interactive-accent-rgb: 45, 130, 204;
+
+  --kanban-color-1: #0065d852;
+  --kanban-color-2: #30e4e441;
+  --kanban-color-3: #1cb54f44;
+  --kanban-color-4: #97b82b49;
+  --kanban-color-5: #bb722d41;
+  --kanban-color-6: #d12e2e42;
+  --kanban-color-7: #8f36cb3f;
+
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+
+  --p-kanban-border-color: transparent;
+
+  --pdf-shadow: 0 0 0 1px #bfbfbf;
+  --pdf-thumbnail-shadow: 0 0 0 1px #bfbfbf;
+
+  --search-result-background: #16161680;
+
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+
+  --table-color-rgb: 0, 91, 144;
+
+  --text-highlight-bg: #88843a8a;
+
+  --text-muted-rgb: 138, 138, 138;
+
+  --theme-color-translucent-001: #478fd103;
+  --theme-color-translucent-005: #478fd10d;
+  --theme-color-translucent-01: #478fd11a;
+  --theme-color-translucent-015: #478fd126;
+  --theme-color-translucent-02: #478fd133;
+  --theme-color-translucent-04: #478fd166;
+  --theme-color-translucent-06: #478fd199;
+
+  --window-shadow: 0 1px 3px #171a1c1a;
+  --window-shadow2: 0 0 9px #0000004d;
+
+  --accent-l-alt: 57.75%;
+
+  --background-modifier-box-shadow: #e4e4e414;
+  --background-modifier-cover: #0a0a0a66;
+
+  --background-titlebar-inner: #478fd11a;
+
+  --bt-indentation-line-image: url();
+
+  --color-blue-rgb: 2, 122, 255;
+
+  --color-cyan-rgb: 83, 223, 221;
+
+  --color-green-rgb: 68, 207, 110;
+
+  --color-orange-rgb: 233, 151, 63;
+
+  --color-pink-rgb: 250, 153, 205;
+
+  --color-purple-rgb: 168, 130, 255;
+
+  --color-red-rgb: 251, 70, 76;
+
+  --color-yellow-rgb: 224, 222, 113;
+
+  --embed-color: hsla(209, 72%, 110%, 0.055);
+
+  --graph-circle-outline: transparent;
+
+  --highlight-mix-blend-mode: darken;
+  --hr-color: #111;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
+    0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
+    0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
+  --interactive-accent: #42a1fa;
+
+  --interactive-accent-rgb: 45, 130, 204;
+
+  --kanban-color-1: #0065d852;
+  --kanban-color-2: #30e4e441;
+  --kanban-color-3: #1cb54f44;
+  --kanban-color-4: #97b82b49;
+  --kanban-color-5: #bb722d41;
+  --kanban-color-6: #d12e2e42;
+  --kanban-color-7: #8f36cb3f;
+
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+
+  --p-kanban-border-color: transparent;
+
+  --pdf-shadow: 0 0 0 1px #bfbfbf;
+  --pdf-thumbnail-shadow: 0 0 0 1px #bfbfbf;
+
+  --search-result-background: #16161680;
+
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+
+  --table-color-rgb: 0, 91, 144;
+
+  --text-highlight-bg: #88843a8a;
+
+  --text-muted-rgb: 138, 138, 138;
+
+  --theme-color-translucent-001: #478fd103;
+  --theme-color-translucent-005: #478fd10d;
+  --theme-color-translucent-01: #478fd11a;
+  --theme-color-translucent-015: #478fd126;
+  --theme-color-translucent-02: #478fd133;
+  --theme-color-translucent-04: #478fd166;
+  --theme-color-translucent-06: #478fd199;
+
+  --window-shadow: 0 1px 3px #171a1c1a;
+  --window-shadow2: 0 0 9px #0000004d;
+  --yellow: #d6b87f;
+}

@@ -2923,7 +2923,7 @@ body:not(.is-mobile) .app-container {
     background-image: linear-gradient(135deg, #030303 40%, #727272 100%);
     opacity: 0.7;
     right: 0;
-    transform: scale(0.9);
+    transform: none, scale(0.9);
     width: 100%;
   }
 }
@@ -17363,7 +17363,7 @@ em {
   line-height: 1.3;
   margin-bottom: 2px;
   padding: 6px 8px 6px 24px;
-  transform:;
+  transform: none;
 }
 
 @media (hover: hover) {
@@ -25717,7 +25717,7 @@ kbd.suggestion-hotkey {
 }
 
 .nav-file-title > * {
-  --persistent-transform:  ;
+  --persistent-transform: none;
 }
 
 .tree-item.nav-folder:not(.is-collapsed) .tree-item-self .tree-item-icon {
@@ -27122,7 +27122,7 @@ body.is-phone .nav-file-title::before {
 
 body.is-phone .nav-file-title {
   --persistent-transform1: translateX(-17.5px);
-  transform:;
+  transform: none;
 }
 
 body.is-phone
@@ -27132,7 +27132,7 @@ body.is-phone
 }
 
 body.is-phone .nav-file-title > * {
-  --persistent-transform1:  ;
+  --persistent-transform1: none;
 }
 
 body.is-phone .nav-file-title.is-active {
@@ -27366,10 +27366,10 @@ div.chat-view-bubble-mode-default > h4.chat-view-header {
 }
 
 div.chat-view-bubble {
-  --chat-bubble-border: 1px solid color-mix(in srgb, #000000, #72c3d5 50%);
+  --chat-bubble-border: 1px solid #39616a;
   --chat-bubble-border-width: 1px;
-  background-color: color-mix(in srgb, #000000, #72c3d5 30%);
-  border: 1px solid color-mix(in srgb, #000000, #72c3d5 50%);
+  background-color: #223a40;
+  border: 1px solid #39616a;
   position: relative;
 }
 
@@ -27381,8 +27381,8 @@ div.chat-view-bubble.chat-view-align-left {
 }
 
 div.chat-view-bubble.chat-view-align-right {
-  --chat-bubble-bg: color-mix(in srgb, #000000, #72c3d5 30%);
-  --chat-bubble-border-color: color-mix(in srgb, #000000, #72c3d5 50%);
+  --chat-bubble-bg: #223a40;
+  --chat-bubble-border-color: #39616a;
   border-bottom-right-radius: 0;
   border-radius: 0px;
 }
@@ -27399,7 +27399,7 @@ div.chat-view-bubble::before {
 
 div.chat-view-bubble::after {
   background: none;
-  border-bottom: 1px solid color-mix(in srgb, #000000, #72c3d5 50%);
+  border-bottom: 1px solid #39616a;
   bottom: -1px;
   content: "";
   display: block;
@@ -27411,16 +27411,16 @@ div.chat-view-bubble::after {
 div.chat-view-bubble.chat-view-align-left::before {
   border-bottom-right-radius: 50% 100%;
   box-shadow:
-    1px 0 color-mix(in srgb, #000000, #72c3d5 50%),
-    20px 0 color-mix(in srgb, #000000, #72c3d5 30%);
+    1px 0 #39616a,
+    20px 0 #223a40;
   left: -41px;
 }
 
 div.chat-view-bubble.chat-view-align-right::before {
   border-bottom-left-radius: 50% 100%;
   box-shadow:
-    -1px 0 color-mix(in srgb, #000000, #72c3d5 50%),
-    -20px 0 color-mix(in srgb, #000000, #72c3d5 30%);
+    -1px 0 #39616a,
+    -20px 0 #223a40;
   right: -41px;
 }
 

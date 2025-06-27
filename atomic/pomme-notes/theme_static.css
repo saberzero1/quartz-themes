@@ -16069,7 +16069,7 @@ em {
 }
 
 .cm-s-obsidian span.cm-highlight {
-  background-color: color-mix(in srgb, #8a5cf5 20%, #ffffff 10%);
+  background-color: #b192f84d;
   border-radius: 3px;
   color: #8a5cf5;
   padding: 2px 4px;
@@ -24154,7 +24154,7 @@ body.is-phone .nav-file-title {
 }
 
 .markdown-preview-view mark {
-  background-color: color-mix(in srgb, #8a5cf5 20%, #ffffff 10%);
+  background-color: #b192f84d;
   border-radius: 3px;
   color: #8a5cf5;
   padding: 2px 4px;

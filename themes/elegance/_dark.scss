@@ -1,0 +1,206 @@
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
+  color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
+  --arrow1: rgba(99, 99, 99, 0.687);
+
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: rgba(0, 0, 0, 0.68);
+
+  --background-modifier-form-field: rgba(0, 0, 0, 0.2);
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.5);
+
+  --bg-blue: rgba(29, 174, 226, 0.4);
+  --bg-blue2: rgb(29, 173, 226);
+  --bg-green: rgba(32, 225, 180, 0.4);
+  --bg-green2: rgb(32, 225, 180);
+  --bg-magenta: rgba(231, 60, 126, 0.45);
+  --bg-magenta2: rgb(249, 75, 142);
+  --bg-orange: rgba(255, 132, 0, 0.43);
+  --bg-orange2: rgb(255, 145, 18);
+  --bg-purple: rgba(165, 26, 234, 0.4);
+  --bg-purple2: rgb(180, 37, 252);
+
+  --blue-rgb: 98, 114, 164;
+
+  --color-blue-rgb: 2, 122, 255;
+
+  --color-cyan-rgb: 83, 223, 221;
+
+  --color-green-rgb: 68, 207, 110;
+
+  --color-orange-rgb: 233, 151, 63;
+
+  --color-pink-rgb: 250, 153, 205;
+
+  --color-purple-rgb: 168, 130, 255;
+
+  --color-red-rgb: 251, 70, 76;
+
+  --color-yellow-rgb: 224, 222, 113;
+
+  --cyan-rgb: 139, 233, 253;
+
+  --fcolor-header: white;
+  --file-margins: 8px;
+
+  --font-ui-large: 20px;
+  --font-ui-medium: 15px;
+  --font-ui-small: 14px;
+  --font-ui-smaller: 13.5px;
+
+  --green-rgb: 80, 250, 123;
+  --highlight-mix-blend-mode: darken;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+
+  --list-indent: 1.9em;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+
+  --orange-rgb: 255, 184, 108;
+  --pdf-shadow: 0 0 0 1px transparent;
+  --pdf-thumbnail-shadow: 0 0 0 1px transparent;
+
+  --pink-rgb: 255, 121, 198;
+  --pre-code: rgba(255, 255, 255, 0.064);
+
+  --purple-rgb: 189, 147, 249;
+  --quote-bg: rgba(77, 74, 75, 0.7);
+
+  --red-rgb: 255, 85, 85;
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.5);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.22);
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --tab-text-nofocus: rgba(255, 255, 255, 0.7);
+
+  --text-antinormal: black;
+  --text-error: rgba(214, 0, 46, 0.925);
+  --text-error-hover: rgba(255, 0, 0, 0.466);
+
+  --text-highlight-bg: rgba(255, 255, 0, 0.699);
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+
+  --text-selection: rgb(78, 91, 154);
+
+  --yellow-rgb: 241, 250, 140;
+  --arrow1: rgba(99, 99, 99, 0.687);
+
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: rgba(0, 0, 0, 0.68);
+
+  --background-modifier-form-field: rgba(0, 0, 0, 0.2);
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.5);
+
+  --bg-blue: rgba(29, 174, 226, 0.4);
+  --bg-blue2: rgb(29, 173, 226);
+  --bg-green: rgba(32, 225, 180, 0.4);
+  --bg-green2: rgb(32, 225, 180);
+  --bg-magenta: rgba(231, 60, 126, 0.45);
+  --bg-magenta2: rgb(249, 75, 142);
+  --bg-orange: rgba(255, 132, 0, 0.43);
+  --bg-orange2: rgb(255, 145, 18);
+  --bg-purple: rgba(165, 26, 234, 0.4);
+  --bg-purple2: rgb(180, 37, 252);
+
+  --blue-rgb: 98, 114, 164;
+
+  --color-blue-rgb: 2, 122, 255;
+
+  --color-cyan-rgb: 83, 223, 221;
+
+  --color-green-rgb: 68, 207, 110;
+
+  --color-orange-rgb: 233, 151, 63;
+
+  --color-pink-rgb: 250, 153, 205;
+
+  --color-purple-rgb: 168, 130, 255;
+
+  --color-red-rgb: 251, 70, 76;
+
+  --color-yellow-rgb: 224, 222, 113;
+
+  --cyan-rgb: 139, 233, 253;
+
+  --fcolor-header: white;
+  --file-margins: 8px;
+
+  --font-ui-large: 20px;
+  --font-ui-medium: 15px;
+  --font-ui-small: 14px;
+  --font-ui-smaller: 13.5px;
+
+  --green-rgb: 80, 250, 123;
+  --highlight-mix-blend-mode: darken;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+
+  --list-indent: 1.9em;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+
+  --orange-rgb: 255, 184, 108;
+  --pdf-shadow: 0 0 0 1px transparent;
+  --pdf-thumbnail-shadow: 0 0 0 1px transparent;
+
+  --pink-rgb: 255, 121, 198;
+  --pre-code: rgba(255, 255, 255, 0.064);
+
+  --purple-rgb: 189, 147, 249;
+  --quote-bg: rgba(77, 74, 75, 0.7);
+
+  --red-rgb: 255, 85, 85;
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.5);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.22);
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --tab-text-nofocus: rgba(255, 255, 255, 0.7);
+
+  --text-antinormal: black;
+  --text-error: rgba(214, 0, 46, 0.925);
+  --text-error-hover: rgba(255, 0, 0, 0.466);
+
+  --text-highlight-bg: rgba(255, 255, 0, 0.699);
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+
+  --text-selection: rgb(78, 91, 154);
+
+  --yellow-rgb: 241, 250, 140;
+}

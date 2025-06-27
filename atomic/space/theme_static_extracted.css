@@ -521,8 +521,7 @@ body {
   --metadata-property-background: transparent;
   --metadata-property-background-active: #ffffff26;
   --metadata-property-background-hover: transparent;
-  --metadata-property-box-shadow-focus: 0 0 0 2px
-    color-mix(in srgb, #c9cad9 40%, transparent);
+  --metadata-property-box-shadow-focus: 0 0 0 2px #c9cad966;
   --metadata-property-box-shadow-hover: 0 0 0 1px #3f3f3f;
   --metadata-property-padding: 0;
   --metadata-property-radius: 6px;
@@ -1344,13 +1343,13 @@ input[type="search"] {
 }
 
 .nav-file-title.is-active {
-  background-color: color-mix(in srgb, #c9cad9 10%, transparent);
+  background-color: #c9cad91a;
   color: #d8d7df;
   font-weight: inherit;
 }
 
 .nav-folder-title.is-active {
-  background-color: color-mix(in srgb, #c9cad9 10%, transparent);
+  background-color: #c9cad91a;
   color: #d8d7df;
   font-weight: inherit;
 }
@@ -1397,13 +1396,13 @@ input[type="search"] {
 }
 
 .tree-item-self.is-clickable.mobile-tap {
-  background-color: color-mix(in srgb, #c9cad9 15%, transparent);
-  color: color-mix(in srgb, #c9cad9 40%, #fff);
+  background-color: #c9cad926;
+  color: #e9eaf0;
   font-weight: bold;
 }
 
 .tree-item-self.is-active {
-  background-color: color-mix(in srgb, #c9cad9 10%, transparent);
+  background-color: #c9cad91a;
   color: #d8d7df;
   font-weight: inherit;
 }
@@ -1471,7 +1470,7 @@ input[type="search"] {
 }
 
 .tree-item-children {
-  border-inline-start: 1px solid color-mix(in srgb, #c9cad9 20%, transparent);
+  border-inline-start: 1px solid #c9cad933;
   margin-bottom: 1px;
   margin-inline-start: 12px;
   padding-inline-start: 4px;

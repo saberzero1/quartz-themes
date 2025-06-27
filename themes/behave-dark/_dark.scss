@@ -1,0 +1,159 @@
+:root:root,
+html[saved-theme="dark"] {
+  color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
+  --background-accent: #d2d8e1;
+
+  --background-modifier-box-shadow: #0000004d;
+  --background-modifier-cover: #00000099;
+
+  --background-modifier-form-field: #00000033;
+  --background-modifier-form-field-highlighted: #00000080;
+
+  --blockquote-border: #facb68;
+  --border-color: #232932;
+  --code-block: #6ab8e5;
+
+  --color-blue-rgb: 2, 122, 255;
+
+  --color-cyan-rgb: 83, 223, 221;
+
+  --color-green-rgb: 68, 207, 110;
+
+  --color-orange-rgb: 233, 151, 63;
+
+  --color-pink-rgb: 250, 153, 205;
+
+  --color-purple-rgb: 168, 130, 255;
+
+  --color-red-rgb: 251, 70, 76;
+
+  --color-yellow-rgb: 224, 222, 113;
+  --highlight-mix-blend-mode: darken;
+  --inline-code: #6ab8e5;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
+    0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
+    0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
+  --interactive-accent: #61d29d;
+  --interactive-accent-hover: #c9a9f9;
+  --interactive-accent-rgb: 123, 108, 217;
+  --interactive-hover: #ef4d44;
+  --interactive-normal: #facb68;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --pdf-shadow: 0 0 0 1px #d2d8e1;
+  --pdf-thumbnail-shadow: 0 0 0 1px #d2d8e1;
+  --pre-code: #434d5b;
+  --scrollbar-active-thumb-bg: #ffffff33;
+  --scrollbar-bg: #ffffff0d;
+  --scrollbar-thumb-bg: #ffffff1a;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+  --text-accent: #61d29d;
+  --text-accent-hover: #c9a9f9;
+  --text-accent-second: #f0d879;
+  --text-error: #ef4d44;
+  --text-error-hover: #ef4d44;
+
+  --text-highlight-bg: #4271ae;
+
+  --text-on-accent: #434d5b;
+  --text-selection: #434d5b;
+  --text-title-h1: #f0d879;
+  --text-title-h2: #61d29d;
+  --text-title-h3: #ec9076;
+  --text-title-h4: #6ab8e5;
+  --text-title-h5: #7dcbc4;
+  --text-title-h6: #4271ae;
+  --vim-cursor: #ec9076;
+
+  --background-accent: #d2d8e1;
+
+  --background-modifier-box-shadow: #0000004d;
+  --background-modifier-cover: #00000099;
+
+  --background-modifier-form-field: #00000033;
+  --background-modifier-form-field-highlighted: #00000080;
+
+  --blockquote-border: #facb68;
+  --border-color: #232932;
+  --code-block: #6ab8e5;
+
+  --color-blue-rgb: 2, 122, 255;
+
+  --color-cyan-rgb: 83, 223, 221;
+
+  --color-green-rgb: 68, 207, 110;
+
+  --color-orange-rgb: 233, 151, 63;
+
+  --color-pink-rgb: 250, 153, 205;
+
+  --color-purple-rgb: 168, 130, 255;
+
+  --color-red-rgb: 251, 70, 76;
+
+  --color-yellow-rgb: 224, 222, 113;
+  --highlight-mix-blend-mode: darken;
+  --inline-code: #6ab8e5;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
+    0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
+    0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
+  --interactive-accent: #61d29d;
+  --interactive-accent-hover: #c9a9f9;
+  --interactive-accent-rgb: 123, 108, 217;
+  --interactive-hover: #ef4d44;
+  --interactive-normal: #facb68;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --pdf-shadow: 0 0 0 1px #d2d8e1;
+  --pdf-thumbnail-shadow: 0 0 0 1px #d2d8e1;
+  --pre-code: #434d5b;
+  --scrollbar-active-thumb-bg: #ffffff33;
+  --scrollbar-bg: #ffffff0d;
+  --scrollbar-thumb-bg: #ffffff1a;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+  --text-accent: #61d29d;
+  --text-accent-hover: #c9a9f9;
+  --text-accent-second: #f0d879;
+  --text-error: #ef4d44;
+  --text-error-hover: #ef4d44;
+
+  --text-highlight-bg: #4271ae;
+
+  --text-on-accent: #434d5b;
+  --text-selection: #434d5b;
+  --text-title-h1: #f0d879;
+  --text-title-h2: #61d29d;
+  --text-title-h3: #ec9076;
+  --text-title-h4: #6ab8e5;
+  --text-title-h5: #7dcbc4;
+  --text-title-h6: #4271ae;
+  --vim-cursor: #ec9076;
+}

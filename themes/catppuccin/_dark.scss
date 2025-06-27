@@ -1,0 +1,154 @@
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
+  color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
+  --background-modifier-box-shadow: #0000004d;
+  --background-modifier-cover: #0a0a0a66;
+  --background-modifier-form-field: #2a2a2a;
+
+  --color-blue-rgb: 2, 122, 255;
+
+  --color-cyan-rgb: 83, 223, 221;
+
+  --color-green-rgb: 68, 207, 110;
+
+  --color-orange-rgb: 233, 151, 63;
+
+  --color-pink-rgb: 250, 153, 205;
+
+  --color-purple-rgb: 168, 130, 255;
+
+  --color-red-rgb: 251, 70, 76;
+
+  --color-yellow-rgb: 224, 222, 113;
+  --ctp-base: 30, 30, 46;
+  --ctp-blue: 137, 180, 250;
+  --ctp-crust: 17, 17, 27;
+  --ctp-flamingo: 242, 205, 205;
+  --ctp-green: 166, 227, 161;
+  --ctp-lavender: 180, 190, 254;
+  --ctp-mantle: 24, 24, 37;
+  --ctp-maroon: 235, 160, 172;
+  --ctp-mauve: 203, 166, 247;
+  --ctp-overlay0: 108, 112, 134;
+  --ctp-overlay1: 127, 132, 156;
+  --ctp-overlay2: 147, 153, 178;
+  --ctp-peach: 250, 179, 135;
+  --ctp-pink: 245, 194, 231;
+  --ctp-red: 243, 139, 168;
+  --ctp-rosewater: 245, 224, 220;
+  --ctp-sapphire: 116, 199, 236;
+  --ctp-sky: 137, 220, 235;
+  --ctp-subtext0: 166, 173, 200;
+  --ctp-subtext1: 186, 194, 222;
+  --ctp-surface0: 49, 50, 68;
+  --ctp-surface1: 69, 71, 90;
+  --ctp-surface2: 88, 91, 112;
+  --ctp-teal: 148, 226, 213;
+  --ctp-text: 205, 214, 244;
+  --ctp-yellow: 249, 226, 175;
+
+  --highlight-mix-blend-mode: lighten;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
+    0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
+    0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
+  --interactive-accent: #8b6cef;
+  --interactive-accent-hover: #ab9af5;
+  --interactive-hover: #3f3f3f;
+  --interactive-normal: #363636;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --pdf-shadow: 0 0 0 1px transparent;
+  --pdf-thumbnail-shadow: 0 0 0 1px transparent;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+  --text-accent: #ab9af5;
+  --text-selection: #8b6cef54;
+  --background-modifier-box-shadow: #0000004d;
+  --background-modifier-cover: #0a0a0a66;
+  --background-modifier-form-field: #2a2a2a;
+
+  --color-blue-rgb: 2, 122, 255;
+
+  --color-cyan-rgb: 83, 223, 221;
+
+  --color-green-rgb: 68, 207, 110;
+
+  --color-orange-rgb: 233, 151, 63;
+
+  --color-pink-rgb: 250, 153, 205;
+
+  --color-purple-rgb: 168, 130, 255;
+
+  --color-red-rgb: 251, 70, 76;
+
+  --color-yellow-rgb: 224, 222, 113;
+  --ctp-base: 30, 30, 46;
+  --ctp-blue: 137, 180, 250;
+  --ctp-crust: 17, 17, 27;
+  --ctp-flamingo: 242, 205, 205;
+  --ctp-green: 166, 227, 161;
+  --ctp-lavender: 180, 190, 254;
+  --ctp-mantle: 24, 24, 37;
+  --ctp-maroon: 235, 160, 172;
+  --ctp-mauve: 203, 166, 247;
+  --ctp-overlay0: 108, 112, 134;
+  --ctp-overlay1: 127, 132, 156;
+  --ctp-overlay2: 147, 153, 178;
+  --ctp-peach: 250, 179, 135;
+  --ctp-pink: 245, 194, 231;
+  --ctp-red: 243, 139, 168;
+  --ctp-rosewater: 245, 224, 220;
+  --ctp-sapphire: 116, 199, 236;
+  --ctp-sky: 137, 220, 235;
+  --ctp-subtext0: 166, 173, 200;
+  --ctp-subtext1: 186, 194, 222;
+  --ctp-surface0: 49, 50, 68;
+  --ctp-surface1: 69, 71, 90;
+  --ctp-surface2: 88, 91, 112;
+  --ctp-teal: 148, 226, 213;
+  --ctp-text: 205, 214, 244;
+  --ctp-yellow: 249, 226, 175;
+
+  --highlight-mix-blend-mode: lighten;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
+    0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
+    0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
+  --interactive-accent: #8b6cef;
+  --interactive-accent-hover: #ab9af5;
+  --interactive-hover: #3f3f3f;
+  --interactive-normal: #363636;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --pdf-shadow: 0 0 0 1px transparent;
+  --pdf-thumbnail-shadow: 0 0 0 1px transparent;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+  --text-accent: #ab9af5;
+  --text-selection: #8b6cef54;
+}

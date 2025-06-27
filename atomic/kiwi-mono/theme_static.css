@@ -2362,14 +2362,14 @@ body {
 
 .theme-light {
   --accent: #8a5cf5;
-  --accent-shade-1: color-mix(in lch, #8a5cf5, #110330 20%);
-  --accent-shade-2: color-mix(in lch, #8a5cf5, #110330 40%);
-  --accent-shade-3: color-mix(in lch, #8a5cf5, #110330 80%);
-  --accent-shade-4: color-mix(in lch, #8a5cf5, #110330 90%);
-  --accent-tint-1: color-mix(in lch, #8a5cf5, #eee7fd 30%);
-  --accent-tint-2: color-mix(in lch, #8a5cf5, #eee7fd 50%);
-  --accent-tint-3: color-mix(in lch, #8a5cf5, #eee7fd 80%);
-  --accent-tint-4: color-mix(in lch, #8a5cf5, #eee7fd 90%);
+  --accent-shade-1: #6d4aca;
+  --accent-shade-2: #5239a1;
+  --accent-shade-3: #221853;
+  --accent-shade-4: #171041;
+  --accent-tint-1: #a986f9;
+  --accent-tint-2: #bda2fc;
+  --accent-tint-3: #dacbfd;
+  --accent-tint-4: #e4d9fe;
   --background-modifier-box-shadow: #0000001a;
   --background-modifier-cover: #dcdcdc66;
   --background-primary: #fff;
@@ -2441,14 +2441,14 @@ body {
 
 .theme-dark {
   --accent: #8a5cf5;
-  --accent-shade-1: color-mix(in lch, #8a5cf5, #eee7fd 30%);
-  --accent-shade-2: color-mix(in lch, #8a5cf5, #eee7fd 50%);
-  --accent-shade-3: color-mix(in lch, #8a5cf5, #eee7fd 80%);
-  --accent-shade-4: color-mix(in lch, #8a5cf5, #eee7fd 90%);
-  --accent-tint-1: color-mix(in lch, #8a5cf5, #110330 20%);
-  --accent-tint-2: color-mix(in lch, #8a5cf5, #110330 40%);
-  --accent-tint-3: color-mix(in lch, #8a5cf5, #110330 80%);
-  --accent-tint-4: color-mix(in lch, #8a5cf5, #110330 90%);
+  --accent-shade-1: #a986f9;
+  --accent-shade-2: #bda2fc;
+  --accent-shade-3: #dacbfd;
+  --accent-shade-4: #e4d9fe;
+  --accent-tint-1: #6d4aca;
+  --accent-tint-2: #5239a1;
+  --accent-tint-3: #221853;
+  --accent-tint-4: #171041;
   --background-modifier-box-shadow: #0000004d;
   --background-modifier-cover: #0a0a0a66;
   --background-modifier-form-field: #2a2a2a;

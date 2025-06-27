@@ -1,0 +1,135 @@
+:root:root,
+html[saved-theme="dark"] {
+  color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
+  --background-modifier-box-shadow: #00000000;
+  --background-modifier-cover: #000000cc;
+
+  --background-modifier-form-field: #00000000;
+  --background-modifier-form-field-highlighted: #00000000;
+
+  --color-blue-rgb: 2, 122, 255;
+
+  --color-cyan-rgb: 83, 223, 221;
+
+  --color-green-rgb: 68, 207, 110;
+
+  --color-orange-rgb: 233, 151, 63;
+
+  --color-pink-rgb: 250, 153, 205;
+
+  --color-purple-rgb: 168, 130, 255;
+
+  --color-red-rgb: 251, 70, 76;
+
+  --color-yellow-rgb: 224, 222, 113;
+  --highlight-mix-blend-mode: lighten;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
+    0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
+    0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
+  --interactive-accent: #000000;
+  --interactive-accent-hover: #000000;
+  --interactive-accent-rgb: 35, 255, 24;
+  --interactive-hover: #000000;
+  --interactive-normal: #000000;
+  --interactive-success: #197300;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --pdf-shadow: 0 0 0 1px transparent;
+  --pdf-thumbnail-shadow: 0 0 0 1px transparent;
+  --scrollbar-active-thumb-bg: #ffffff;
+  --scrollbar-bg: #ffffff0d;
+  --scrollbar-thumb-bg: #ffffff1a;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+  --text-accent: #15d00d;
+  --text-accent-hover: #15d00d;
+  --text-error: #ff3333;
+  --text-error-hover: #990000;
+
+  --text-highlight-bg: #ffff0066;
+  --text-highlight-bg-active: #ff800066;
+
+  --text-muted-rgb: 35, 255, 24;
+
+  --text-on-accent: #15d00d;
+  --text-selection: #17304dfc;
+
+  --background-modifier-box-shadow: #00000000;
+  --background-modifier-cover: #000000cc;
+
+  --background-modifier-form-field: #00000000;
+  --background-modifier-form-field-highlighted: #00000000;
+
+  --color-blue-rgb: 2, 122, 255;
+
+  --color-cyan-rgb: 83, 223, 221;
+
+  --color-green-rgb: 68, 207, 110;
+
+  --color-orange-rgb: 233, 151, 63;
+
+  --color-pink-rgb: 250, 153, 205;
+
+  --color-purple-rgb: 168, 130, 255;
+
+  --color-red-rgb: 251, 70, 76;
+
+  --color-yellow-rgb: 224, 222, 113;
+  --highlight-mix-blend-mode: lighten;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
+    0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
+    0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
+  --interactive-accent: #000000;
+  --interactive-accent-hover: #000000;
+  --interactive-accent-rgb: 35, 255, 24;
+  --interactive-hover: #000000;
+  --interactive-normal: #000000;
+  --interactive-success: #197300;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --pdf-shadow: 0 0 0 1px transparent;
+  --pdf-thumbnail-shadow: 0 0 0 1px transparent;
+  --scrollbar-active-thumb-bg: #ffffff;
+  --scrollbar-bg: #ffffff0d;
+  --scrollbar-thumb-bg: #ffffff1a;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+  --text-accent: #15d00d;
+  --text-accent-hover: #15d00d;
+  --text-error: #ff3333;
+  --text-error-hover: #990000;
+
+  --text-highlight-bg: #ffff0066;
+  --text-highlight-bg-active: #ff800066;
+
+  --text-muted-rgb: 35, 255, 24;
+
+  --text-on-accent: #15d00d;
+  --text-selection: #17304dfc;
+}

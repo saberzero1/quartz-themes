@@ -1,25 +1,13 @@
 :root {
   --background-modifier-form-field: light-dark(#1e1e1e, #1e1e1e);
-  --background-modifier-hover: light-dark(
-    color-mix(in srgb, #000000 95%, #cccccc),
-    color-mix(in srgb, #000000 95%, #cccccc)
-  );
-  --background-primary: light-dark(color-mix(in srgb, #000000 40%, #000), #000);
-  --background-secondary: light-dark(
-    color-mix(in srgb, #000000 40%, #000),
-    color-mix(in srgb, #000000 40%, #000)
-  );
-  --background-secondary-alt: light-dark(
-    color-mix(in srgb, #000000 40%, #000),
-    color-mix(in srgb, #000000 90%, #cccccc)
-  );
+  --background-modifier-hover: light-dark(#0a0a0a, #0a0a0a);
+  --background-primary: light-dark(#000000, #000);
+  --background-secondary: light-dark(#000000, #000000);
+  --background-secondary-alt: light-dark(#000000, #141414);
   --black: light-dark(#000, #000);
   --blue: light-dark(#437cf3, #437cf3);
   --blue-violet: light-dark(#6f51f4, #6f51f4);
-  --code-background: light-dark(
-    color-mix(in srgb, #000000 90%, #cccccc),
-    color-mix(in srgb, #000000 80%, #000)
-  );
+  --code-background: light-dark(#141414, #000000);
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
   --color-accent-1: light-dark(#9873f7, #a68af9);
   --color-accent-2: light-dark(#a68af9, #c5b6fc);
@@ -54,23 +42,14 @@
   --h5-color: light-dark(#9446f8, #9446f8);
   --h6-color: light-dark(#c952ed, #c952ed);
   --hot-red: light-dark(#e3365e, #e3365e);
-  --indentation-guide-color: light-dark(
-    color-mix(in srgb, #000000 90%, #cccccc),
-    color-mix(in srgb, #000000 90%, #cccccc)
-  );
-  --indentation-guide-color-active: light-dark(
-    color-mix(in srgb, #000000 95%, #cccccc),
-    color-mix(in srgb, #000000 95%, #cccccc)
-  );
+  --indentation-guide-color: light-dark(#141414, #141414);
+  --indentation-guide-color-active: light-dark(#0a0a0a, #0a0a0a);
   --keyboard-height: 0px;
   --light-blue: light-dark(#54b6f8, #54b6f8);
   --loading-icon-delay: 400ms;
   --magenta: light-dark(#e54f9b, #e54f9b);
   --mint: light-dark(#47cc91, #52eea3);
-  --nav-indentation-guide-color: light-dark(
-    color-mix(in srgb, #000000 90%, #cccccc),
-    color-mix(in srgb, #000000 90%, #cccccc)
-  );
+  --nav-indentation-guide-color: light-dark(#141414, #141414);
   --page-border: 9px solid transparent;
   --page-margin: 1px auto -8px;
   --pdfViewer-padding-bottom: 0;
@@ -105,38 +84,29 @@ body {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   --background-modifier-active-hover: #8a5cf526;
-  --background-modifier-border: color-mix(in srgb, #000000 90%, #cccccc);
-  --background-modifier-border-focus: color-mix(in srgb, #000000 80%, #cccccc);
-  --background-modifier-border-hover: color-mix(in srgb, #000000 95%, #cccccc);
+  --background-modifier-border: #141414;
+  --background-modifier-border-focus: #292929;
+  --background-modifier-border-hover: #0a0a0a;
   --background-modifier-error: #e3365e;
   --background-modifier-error-hover: #e3365e;
   --background-modifier-error-rgb: 251, 70, 76;
   --background-modifier-form-field: light-dark(#1e1e1e, #1e1e1e);
-  --background-modifier-hover: light-dark(
-    color-mix(in srgb, #000000 95%, #cccccc),
-    color-mix(in srgb, #000000 95%, #cccccc)
-  );
+  --background-modifier-hover: light-dark(#0a0a0a, #0a0a0a);
   --background-modifier-message: #000000e6;
   --background-modifier-success: #52eea3;
   --background-modifier-success-rgb: 68, 207, 110;
-  --background-primary: light-dark(color-mix(in srgb, #000000 40%, #000), #000);
+  --background-primary: light-dark(#000000, #000);
   --background-primary-alt: #111;
-  --background-secondary: light-dark(
-    color-mix(in srgb, #000000 40%, #000),
-    color-mix(in srgb, #000000 40%, #000)
-  );
-  --background-secondary-alt: light-dark(
-    color-mix(in srgb, #000000 40%, #000),
-    color-mix(in srgb, #000000 90%, #cccccc)
-  );
-  --bases-embed-border: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
+  --background-secondary: light-dark(#000000, #000000);
+  --background-secondary-alt: light-dark(#000000, #141414);
+  --bases-embed-border: 1px solid #292929;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
   --bases-header-border-width: 0 0 1px 0;
   --bases-header-height: 40px;
   --bases-header-padding-end: 2px;
   --bases-header-padding-start: 2px;
-  --bases-table-border-color: color-mix(in srgb, #000000 80%, #cccccc);
+  --bases-table-border-color: #292929;
   --bases-table-cell-background-active: #000;
   --bases-table-cell-background-disabled: #00000080;
   --bases-table-cell-radius-active: 2px;
@@ -148,7 +118,7 @@ body {
   --bases-table-container-border-width: 1px;
   --bases-table-header-background: #000;
   --bases-table-header-background-hover: #ffffff26;
-  --bases-table-header-color: color-mix(in srgb, #000000 30%, #cccccc);
+  --bases-table-header-color: #8f8f8f;
   --bases-table-header-icon-display: flex;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -200,7 +170,7 @@ body {
   --callout-todo: 2, 122, 255;
   --callout-warning: 233, 151, 63;
   --canvas-background: #000;
-  --canvas-card-label-color: color-mix(in srgb, #000000 60%, #cccccc);
+  --canvas-card-label-color: #525252;
   --canvas-color: 192, 192, 192;
   --canvas-color-1: 251, 70, 76;
   --canvas-color-2: 233, 151, 63;
@@ -208,40 +178,37 @@ body {
   --canvas-color-4: 68, 207, 110;
   --canvas-color-5: 83, 223, 221;
   --canvas-color-6: 168, 130, 255;
-  --canvas-dot-pattern: color-mix(in srgb, #000000 90%, #cccccc);
-  --caret-color: color-mix(in srgb, #cccccc 30%, #fff);
-  --checkbox-border-color: color-mix(in srgb, #000000 60%, #cccccc);
-  --checkbox-border-color-hover: color-mix(in srgb, #000000 30%, #cccccc);
+  --canvas-dot-pattern: #141414;
+  --caret-color: #f0f0f0;
+  --checkbox-border-color: #525252;
+  --checkbox-border-color-hover: #8f8f8f;
   --checkbox-color: #8a5cf5;
   --checkbox-color-hover: #a68af9;
   --checkbox-margin-inline-start: 0.85em;
   --checkbox-marker-color: #000;
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --checklist-done-color: color-mix(in srgb, #000000 30%, #cccccc);
+  --checklist-done-color: #8f8f8f;
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: 4px;
-  --code-background: light-dark(
-    color-mix(in srgb, #000000 90%, #cccccc),
-    color-mix(in srgb, #000000 80%, #000)
-  );
-  --code-border-color: color-mix(in srgb, #000000 80%, #cccccc);
+  --code-background: light-dark(#141414, #000000);
+  --code-border-color: #292929;
   --code-border-width: 0px;
-  --code-comment: color-mix(in srgb, #000000 60%, #cccccc);
+  --code-comment: #525252;
   --code-function: #ffd85e;
   --code-important: #fa9f50;
   --code-keyword: #e54f9b;
-  --code-normal: color-mix(in srgb, #cccccc 30%, #fff);
+  --code-normal: #f0f0f0;
   --code-operator: #e3365e;
   --code-property: #43cfea;
-  --code-punctuation: color-mix(in srgb, #000000 30%, #cccccc);
+  --code-punctuation: #8f8f8f;
   --code-radius: 4px;
   --code-size: 0.875em;
   --code-string: #52eea3;
   --code-tag: #e3365e;
   --code-value: #9446f8;
   --code-white-space: pre-wrap;
-  --collapse-icon-color: color-mix(in srgb, #000000 60%, #cccccc);
+  --collapse-icon-color: #525252;
   --collapse-icon-color-collapsed: #a68af9;
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
   --color-accent-1: light-dark(#9873f7, #a68af9);
@@ -276,7 +243,7 @@ body {
   --dialog-max-width: 80vw;
   --dialog-width: 560px;
   --direction: 1;
-  --divider-color: color-mix(in srgb, #000000 80%, #cccccc);
+  --divider-color: #292929;
   --divider-color-hover: #8a5cf5;
   --divider-vertical-height: calc(100% - 40px);
   --divider-width: 1px;
@@ -285,14 +252,12 @@ body {
   --drag-ghost-text-color: #fff;
   --dropdown-background: #ffffff26;
   --dropdown-background-blend-mode: hard-light;
-  --dropdown-background-hover: color-mix(in srgb, #000000 95%, #cccccc);
+  --dropdown-background-hover: #0a0a0a;
   --dropdown-background-position: right 0.5em top 50%, 0 0;
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
   --embed-background: inherit;
-  --embed-block-shadow-hover:
-    0 0 0 1px color-mix(in srgb, #000000 80%, #cccccc),
-    inset 0 0 0 1px color-mix(in srgb, #000000 80%, #cccccc);
+  --embed-block-shadow-hover: 0 0 0 1px #292929, inset 0 0 0 1px #292929;
   --embed-border-bottom: none;
   --embed-border-end: none;
   --embed-border-start: 2px solid #8a5cf5;
@@ -313,7 +278,7 @@ body {
   --file-line-width: 700px;
   --file-margins: 32px;
   --flair-background: #ffffff26;
-  --flair-color: color-mix(in srgb, #cccccc 30%, #fff);
+  --flair-color: #f0f0f0;
   --font-black: 900;
   --font-bold: 700;
   --font-default:
@@ -368,8 +333,8 @@ body {
   --footnote-divider-color-active: transparent;
   --footnote-divider-width: 1px;
   --footnote-gap: 4px;
-  --footnote-id-color: color-mix(in srgb, #000000 30%, #cccccc);
-  --footnote-id-color-no-occurrences: color-mix(in srgb, #000000 60%, #cccccc);
+  --footnote-id-color: #8f8f8f;
+  --footnote-id-color-no-occurrences: #525252;
   --footnote-id-delimiter: ".";
   --footnote-input-background: transparent;
   --footnote-input-background-active: transparent;
@@ -379,13 +344,13 @@ body {
   --footnote-radius: 4px;
   --footnote-size: 0.875em;
   --graph-controls-width: 240px;
-  --graph-line: color-mix(in srgb, #000000 95%, #cccccc);
-  --graph-node: color-mix(in srgb, #000000 30%, #cccccc);
+  --graph-line: #0a0a0a;
+  --graph-node: #8f8f8f;
   --graph-node-attachment: #ffd85e;
   --graph-node-focused: #a68af9;
   --graph-node-tag: #52eea3;
-  --graph-node-unresolved: color-mix(in srgb, #000000 60%, #cccccc);
-  --graph-text: color-mix(in srgb, #cccccc 30%, #fff);
+  --graph-node-unresolved: #525252;
+  --graph-text: #f0f0f0;
   --h1-color: light-dark(#43cfea, #43cfea);
   --h1-font: inherit;
   --h1-line-height: 1.2;
@@ -429,15 +394,15 @@ body {
   --h6-variant: normal;
   --h6-weight: 600;
   --header-height: 40px;
-  --heading-formatting: color-mix(in srgb, #000000 60%, #cccccc);
+  --heading-formatting: #525252;
   --heading-spacing: 0rem;
   --hot-red: light-dark(#e3365e, #e3365e);
-  --hr-color: color-mix(in srgb, #000000 80%, #cccccc);
+  --hr-color: #292929;
   --hr-thickness: 2px;
-  --icon-color: color-mix(in srgb, #000000 30%, #cccccc);
+  --icon-color: #8f8f8f;
   --icon-color-active: #a68af9;
-  --icon-color-focused: color-mix(in srgb, #cccccc 30%, #fff);
-  --icon-color-hover: color-mix(in srgb, #000000 30%, #cccccc);
+  --icon-color-focused: #f0f0f0;
+  --icon-color-hover: #8f8f8f;
   --icon-l: 18px;
   --icon-l-stroke-width: 1.75px;
   --icon-m: 18px;
@@ -455,14 +420,8 @@ body {
   --icon-xs-stroke-width: 2px;
   --indent-size: 4;
   --indent-unit: 0.5625em;
-  --indentation-guide-color: light-dark(
-    color-mix(in srgb, #000000 90%, #cccccc),
-    color-mix(in srgb, #000000 90%, #cccccc)
-  );
-  --indentation-guide-color-active: light-dark(
-    color-mix(in srgb, #000000 95%, #cccccc),
-    color-mix(in srgb, #000000 95%, #cccccc)
-  );
+  --indentation-guide-color: light-dark(#141414, #141414);
+  --indentation-guide-color-active: light-dark(#0a0a0a, #0a0a0a);
   --indentation-guide-editing-indent: 0.85em;
   --indentation-guide-reading-indent: -0.85em;
   --indentation-guide-source-indent: 0.25em;
@@ -477,10 +436,10 @@ body {
   --inline-title-variant: normal;
   --inline-title-weight: 700;
   --input-border-width: 1px;
-  --input-date-separator: color-mix(in srgb, #000000 60%, #cccccc);
+  --input-date-separator: #525252;
   --input-font-weight: 400;
   --input-height: 30px;
-  --input-placeholder-color: color-mix(in srgb, #000000 60%, #cccccc);
+  --input-placeholder-color: #525252;
   --input-radius: 5px;
   --interactive-accent: #a68af9;
   --interactive-accent-hover: #c5b6fc;
@@ -526,27 +485,27 @@ body {
   --list-indent: 2.25em;
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
-  --list-marker-color: color-mix(in srgb, #000000 60%, #cccccc);
+  --list-marker-color: #525252;
   --list-marker-color-collapsed: #a68af9;
-  --list-marker-color-hover: color-mix(in srgb, #000000 30%, #cccccc);
+  --list-marker-color-hover: #8f8f8f;
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
   --magenta: light-dark(#e54f9b, #e54f9b);
   --menu-backdrop-filter: none;
   --menu-background: #000;
-  --menu-border-color: color-mix(in srgb, #000000 95%, #cccccc);
+  --menu-border-color: #0a0a0a;
   --menu-border-width: 1px;
   --menu-padding: 6px;
   --menu-radius: 8px;
   --menu-shadow:
     0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
   --metadata-background: transparent;
-  --metadata-border-color: color-mix(in srgb, #000000 80%, #cccccc);
+  --metadata-border-color: #292929;
   --metadata-border-radius: 0;
   --metadata-border-width: 0;
   --metadata-display-editing: block;
   --metadata-display-reading: block;
-  --metadata-divider-color: color-mix(in srgb, #000000 80%, #cccccc);
+  --metadata-divider-color: #292929;
   --metadata-divider-color-focus: transparent;
   --metadata-divider-color-hover: transparent;
   --metadata-divider-width: 0;
@@ -561,7 +520,7 @@ body {
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: 28px;
   --metadata-input-longtext-lines: 3;
-  --metadata-input-text-color: color-mix(in srgb, #cccccc 30%, #fff);
+  --metadata-input-text-color: #f0f0f0;
   --metadata-label-background: transparent;
   --metadata-label-background-active: #ffffff26;
   --metadata-label-background-hover: transparent;
@@ -571,18 +530,16 @@ body {
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-label-font-size: 0.875em;
   --metadata-label-font-weight: inherit;
-  --metadata-label-text-color: color-mix(in srgb, #000000 30%, #cccccc);
-  --metadata-label-text-color-hover: color-mix(in srgb, #000000 30%, #cccccc);
+  --metadata-label-text-color: #8f8f8f;
+  --metadata-label-text-color-hover: #8f8f8f;
   --metadata-label-width: 9em;
   --metadata-max-width: none;
   --metadata-padding: 8px 0;
   --metadata-property-background: transparent;
   --metadata-property-background-active: #ffffff26;
   --metadata-property-background-hover: transparent;
-  --metadata-property-box-shadow-focus: 0 0 0 2px
-    color-mix(in srgb, #000000 80%, #cccccc);
-  --metadata-property-box-shadow-hover: 0 0 0 1px
-    color-mix(in srgb, #000000 95%, #cccccc);
+  --metadata-property-box-shadow-focus: 0 0 0 2px #292929;
+  --metadata-property-box-shadow-hover: 0 0 0 1px #0a0a0a;
   --metadata-property-padding: 0;
   --metadata-property-radius: 6px;
   --metadata-property-radius-focus: 6px;
@@ -591,7 +548,7 @@ body {
   --metadata-sidebar-label-font-size: 14.992px;
   --mint: light-dark(#47cc91, #52eea3);
   --modal-background: #000;
-  --modal-border-color: color-mix(in srgb, #000000 80%, #cccccc);
+  --modal-border-color: #292929;
   --modal-border-width: 0.5pt;
   --modal-community-sidebar-width: 280px;
   --modal-height: 85vh;
@@ -600,29 +557,26 @@ body {
   --modal-max-width-narrow: 800px;
   --modal-radius: 12px;
   --modal-width: 90vw;
-  --nav-collapse-icon-color: color-mix(in srgb, #000000 60%, #cccccc);
-  --nav-collapse-icon-color-collapsed: color-mix(in srgb, #000000 60%, #cccccc);
-  --nav-heading-color: color-mix(in srgb, #cccccc 30%, #fff);
-  --nav-heading-color-collapsed: color-mix(in srgb, #000000 60%, #cccccc);
-  --nav-heading-color-collapsed-hover: color-mix(in srgb, #000000 30%, #cccccc);
-  --nav-heading-color-hover: color-mix(in srgb, #cccccc 30%, #fff);
+  --nav-collapse-icon-color: #525252;
+  --nav-collapse-icon-color-collapsed: #525252;
+  --nav-heading-color: #f0f0f0;
+  --nav-heading-color-collapsed: #525252;
+  --nav-heading-color-collapsed-hover: #8f8f8f;
+  --nav-heading-color-hover: #f0f0f0;
   --nav-heading-weight: 500;
   --nav-heading-weight-hover: 500;
-  --nav-indentation-guide-color: light-dark(
-    color-mix(in srgb, #000000 90%, #cccccc),
-    color-mix(in srgb, #000000 90%, #cccccc)
-  );
+  --nav-indentation-guide-color: light-dark(#141414, #141414);
   --nav-indentation-guide-width: 1px;
   --nav-item-background-active: #ffffff26;
   --nav-item-background-hover: #ffffff26;
   --nav-item-background-selected: #8a5cf526;
   --nav-item-children-margin-start: 12px;
   --nav-item-children-padding-start: 4px;
-  --nav-item-color: color-mix(in srgb, #000000 30%, #cccccc);
-  --nav-item-color-active: color-mix(in srgb, #cccccc 30%, #fff);
+  --nav-item-color: #8f8f8f;
+  --nav-item-color-active: #f0f0f0;
   --nav-item-color-highlighted: #a68af9;
-  --nav-item-color-hover: color-mix(in srgb, #cccccc 30%, #fff);
-  --nav-item-color-selected: color-mix(in srgb, #cccccc 30%, #fff);
+  --nav-item-color-hover: #f0f0f0;
+  --nav-item-color-selected: #f0f0f0;
   --nav-item-padding: 4px 8px 4px 24px;
   --nav-item-parent-padding: 6px 8px 6px 24px;
   --nav-item-size: 14.992px;
@@ -640,12 +594,12 @@ body {
   --pdf-thumbnail-shadow: 0 0 0 1px #00000026, 0 2px 8px #00000033;
   --pill-background: transparent;
   --pill-background-hover: transparent;
-  --pill-border-color: color-mix(in srgb, #000000 80%, #cccccc);
-  --pill-border-color-hover: color-mix(in srgb, #000000 95%, #cccccc);
+  --pill-border-color: #292929;
+  --pill-border-color-hover: #0a0a0a;
   --pill-border-width: 0.5pt;
-  --pill-color: color-mix(in srgb, #000000 30%, #cccccc);
-  --pill-color-hover: color-mix(in srgb, #cccccc 30%, #fff);
-  --pill-color-remove: color-mix(in srgb, #000000 60%, #cccccc);
+  --pill-color: #8f8f8f;
+  --pill-color-hover: #f0f0f0;
+  --pill-color-remove: #525252;
   --pill-color-remove-hover: #a68af9;
   --pill-decoration: none;
   --pill-decoration-hover: none;
@@ -661,7 +615,7 @@ body {
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
   --popover-width: 450px;
-  --prompt-border-color: color-mix(in srgb, #000000 80%, #cccccc);
+  --prompt-border-color: #292929;
   --prompt-border-width: 0.5pt;
   --prompt-input-height: 40px;
   --prompt-max-height: 70vh;
@@ -679,9 +633,9 @@ body {
   --scrollbar-active-thumb-bg: #ffffff33;
   --scrollbar-bg: #ffffff0d;
   --scrollbar-thumb-bg: #ffffff1a;
-  --search-clear-button-color: color-mix(in srgb, #000000 30%, #cccccc);
+  --search-clear-button-color: #8f8f8f;
   --search-clear-button-size: 13px;
-  --search-icon-color: color-mix(in srgb, #000000 30%, #cccccc);
+  --search-icon-color: #8f8f8f;
   --search-icon-size: 18px;
   --search-result-background: #000;
   --sidebar-markdown-font-size: 14.4px;
@@ -703,13 +657,13 @@ body {
   --size-4-9: 36px;
   --slider-s-thumb-position: -5px;
   --slider-s-thumb-size: 15px;
-  --slider-thumb-border-color: color-mix(in srgb, #000000 95%, #cccccc);
+  --slider-thumb-border-color: #0a0a0a;
   --slider-thumb-border-width: 1px;
   --slider-thumb-height: 18px;
   --slider-thumb-radius: 50%;
   --slider-thumb-width: 18px;
   --slider-thumb-y: -6px;
-  --slider-track-background: color-mix(in srgb, #000000 80%, #cccccc);
+  --slider-track-background: #292929;
   --slider-track-height: 3px;
   --status-bar-background: #000;
   --status-bar-border-color: #00000026;
@@ -717,7 +671,7 @@ body {
   --status-bar-font-size: 12.8px;
   --status-bar-position: fixed;
   --status-bar-radius: 8px 0 0 0;
-  --status-bar-text-color: color-mix(in srgb, #000000 30%, #cccccc);
+  --status-bar-text-color: #8f8f8f;
   --swatch-height: 24px;
   --swatch-radius: 14px;
   --swatch-shadow: inset 0 0 0 1px #ffffff26;
@@ -734,7 +688,7 @@ body {
   --tab-background-active: #000;
   --tab-container-background: #000;
   --tab-curve: 6px;
-  --tab-divider-color: color-mix(in srgb, #000000 95%, #cccccc);
+  --tab-divider-color: #0a0a0a;
   --tab-font-size: 14.992px;
   --tab-font-weight: inherit;
   --tab-max-width: 320px;
@@ -756,22 +710,18 @@ body {
   --tab-switcher-preview-radius: 16px;
   --tab-switcher-preview-shadow: 0 0 0 1px #ffffff0d;
   --tab-switcher-preview-shadow-active: 0 0 0 2px #8a5cf5;
-  --tab-text-color: color-mix(in srgb, #000000 60%, #cccccc);
-  --tab-text-color-active: color-mix(in srgb, #000000 30%, #cccccc);
-  --tab-text-color-focused: color-mix(in srgb, #000000 30%, #cccccc);
-  --tab-text-color-focused-active: color-mix(in srgb, #000000 30%, #cccccc);
-  --tab-text-color-focused-active-current: color-mix(
-    in srgb,
-    #cccccc 30%,
-    #fff
-  );
+  --tab-text-color: #525252;
+  --tab-text-color-active: #8f8f8f;
+  --tab-text-color-focused: #8f8f8f;
+  --tab-text-color-focused-active: #8f8f8f;
+  --tab-text-color-focused-active-current: #f0f0f0;
   --tab-text-color-focused-highlighted: #a68af9;
   --tab-width: 200px;
   --table-add-button-background: transparent;
-  --table-add-button-border-color: color-mix(in srgb, #000000 80%, #cccccc);
+  --table-add-button-border-color: #292929;
   --table-add-button-border-width: 1px;
   --table-background: transparent;
-  --table-border-color: color-mix(in srgb, #000000 80%, #cccccc);
+  --table-border-color: #292929;
   --table-border-width: 1px;
   --table-cell-vertical-alignment: top;
   --table-column-alt-background: transparent;
@@ -781,13 +731,13 @@ body {
   --table-column-min-width: 6ch;
   --table-drag-handle-background: transparent;
   --table-drag-handle-background-active: #8a5cf5;
-  --table-drag-handle-color: color-mix(in srgb, #000000 60%, #cccccc);
+  --table-drag-handle-color: #525252;
   --table-drag-handle-color-active: #ffffff;
   --table-header-background: transparent;
   --table-header-background-hover: inherit;
-  --table-header-border-color: color-mix(in srgb, #000000 80%, #cccccc);
+  --table-header-border-color: #292929;
   --table-header-border-width: 1px;
-  --table-header-color: color-mix(in srgb, #cccccc 30%, #fff);
+  --table-header-color: #f0f0f0;
   --table-header-font: inherit;
   --table-header-size: 16px;
   --table-header-weight: 800;
@@ -821,11 +771,11 @@ body {
   --text-accent: #8a5cf5;
   --text-accent-hover: #c5b6fc;
   --text-error: #e3365e;
-  --text-faint: color-mix(in srgb, #000000 60%, #cccccc);
+  --text-faint: #525252;
   --text-highlight-bg: #ffd00066;
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: color-mix(in srgb, #000000 30%, #cccccc);
-  --text-normal: color-mix(in srgb, #000000 0%, #cccccc);
+  --text-muted: #8f8f8f;
+  --text-normal: #cccccc;
   --text-on-accent: #ffffff;
   --text-on-accent-inverted: #000000;
   --text-selection: #8a5cf533;
@@ -833,11 +783,11 @@ body {
   --text-warning: #fa9f50;
   --titlebar-background: light-dark(#000, #000);
   --titlebar-background-focused: light-dark(#111, #111);
-  --titlebar-border-color: color-mix(in srgb, #000000 80%, #cccccc);
+  --titlebar-border-color: #292929;
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;
-  --titlebar-text-color: color-mix(in srgb, #000000 30%, #cccccc);
-  --titlebar-text-color-focused: color-mix(in srgb, #cccccc 30%, #fff);
+  --titlebar-text-color: #8f8f8f;
+  --titlebar-text-color-focused: #f0f0f0;
   --titlebar-text-weight: 700;
   --toggle-border-width: 2px;
   --toggle-radius: 18px;
@@ -851,8 +801,8 @@ body {
   --toggle-thumb-width: 18px;
   --toggle-width: 40px;
   --vault-profile-actions-display: flex;
-  --vault-profile-color: color-mix(in srgb, #cccccc 30%, #fff);
-  --vault-profile-color-hover: color-mix(in srgb, #cccccc 30%, #fff);
+  --vault-profile-color: #f0f0f0;
+  --vault-profile-color-hover: #f0f0f0;
   --vault-profile-display: flex;
   --vault-profile-font-size: 14.992px;
   --vault-profile-font-weight: 500;
@@ -869,7 +819,7 @@ body {
     light-dark(#ffffff, #1e1e1e)
   );
   caret-color: #a68af9;
-  color: color-mix(in srgb, #cccccc 30%, #fff);
+  color: #f0f0f0;
   contain: initial;
   font-family:
     "??",
@@ -1013,7 +963,7 @@ h6 {
     light-dark(#e0e0e0, #363636),
     light-dark(#e3e3e3, #2a2a2a)
   );
-  border: 0px solid color-mix(in srgb, #000000 80%, #cccccc);
+  border: 0px solid #292929;
   border-radius: 4px;
   min-height: 38px;
   overflow-x: auto;
@@ -1028,9 +978,9 @@ h6 {
     light-dark(#e0e0e0, #363636),
     light-dark(#e3e3e3, #2a2a2a)
   );
-  border: 0px solid color-mix(in srgb, #000000 80%, #cccccc);
+  border: 0px solid #292929;
   border-radius: 4px;
-  color: color-mix(in srgb, #cccccc 30%, #fff);
+  color: #f0f0f0;
   font-family:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1048,7 +998,7 @@ h6 {
 .markdown-rendered button.copy-code-button {
   background-color: transparent;
   box-shadow: none;
-  color: color-mix(in srgb, #000000 30%, #cccccc);
+  color: #8f8f8f;
   font-family:
     "??",
     "??",
@@ -1283,7 +1233,7 @@ h6 {
 }
 
 .metadata-input-longtext {
-  color: color-mix(in srgb, #cccccc 30%, #fff);
+  color: #f0f0f0;
   cursor: text;
   flex-grow: 1;
   font-size: 14.992px;
@@ -1298,7 +1248,7 @@ h6 {
     light-dark(#fcfcfc, #212121),
     light-dark(#ffffff, #1e1e1e)
   );
-  border: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
+  border: 1px solid #292929;
   border-radius: 8px;
   box-shadow:
     0px 1px 2px #0000001f,
@@ -1315,7 +1265,7 @@ h6 {
     light-dark(#fcfcfc, #212121),
     light-dark(#ffffff, #1e1e1e)
   );
-  border: 0.5pt solid color-mix(in srgb, #000000 80%, #cccccc);
+  border: 0.5pt solid #292929;
   border-radius: 12px;
   box-shadow:
     0px 1.8px 7.3px #00000012,
@@ -1360,8 +1310,8 @@ input.prompt-input {
 }
 
 .markdown-rendered mark {
-  background-color: color-mix(in srgb, #8a5cf5 25%, transparent);
-  color: color-mix(in srgb, #cccccc 30%, #fff);
+  background-color: #8a5cf540;
+  color: #f0f0f0;
 }
 
 a.tag {
@@ -1382,9 +1332,9 @@ input[type="search"] {
     light-dark(#f6f6f6, #262626),
     light-dark(#f6f6f6, #262626)
   );
-  border: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
+  border: 1px solid #292929;
   border-radius: 5px;
-  color: color-mix(in srgb, #cccccc 30%, #fff);
+  color: #f0f0f0;
   font-family: inherit;
   font-size: 14.992px;
   height: 40px;
@@ -1428,7 +1378,7 @@ input[type="search"] {
 
 .nav-folder-title {
   border-radius: 4px;
-  color: color-mix(in srgb, #cccccc 30%, #fff);
+  color: #f0f0f0;
   cursor: pointer;
   display: flex;
   font-size: 16px;
@@ -1440,7 +1390,7 @@ input[type="search"] {
 
 .nav-file-title {
   border-radius: 4px;
-  color: color-mix(in srgb, #cccccc 30%, #fff);
+  color: #f0f0f0;
   cursor: pointer;
   display: flex;
   font-size: 16px;
@@ -1452,30 +1402,30 @@ input[type="search"] {
 
 .nav-file-title.is-active {
   background-color: #ffffff26;
-  color: color-mix(in srgb, #cccccc 30%, #fff);
+  color: #f0f0f0;
   font-weight: inherit;
 }
 
 .nav-folder-title.is-active {
   background-color: #ffffff26;
-  color: color-mix(in srgb, #cccccc 30%, #fff);
+  color: #f0f0f0;
   font-weight: inherit;
 }
 
 .nav-file-title.is-selected {
   background-color: #8a5cf526;
-  color: color-mix(in srgb, #cccccc 30%, #fff);
+  color: #f0f0f0;
 }
 
 .nav-folder-title.is-selected {
   background-color: #8a5cf526;
-  color: color-mix(in srgb, #cccccc 30%, #fff);
+  color: #f0f0f0;
 }
 
 .tree-item-self {
   align-items: baseline;
   border-radius: 4px;
-  color: color-mix(in srgb, #cccccc 30%, #fff);
+  color: #f0f0f0;
   display: flex;
   font-size: 16px;
   font-weight: inherit;
@@ -1505,19 +1455,19 @@ input[type="search"] {
 
 .tree-item-self.is-clickable.mobile-tap {
   background-color: #ffffff26;
-  color: color-mix(in srgb, #cccccc 30%, #fff);
+  color: #f0f0f0;
   font-weight: inherit;
 }
 
 .tree-item-self.is-active {
   background-color: #ffffff26;
-  color: color-mix(in srgb, #cccccc 30%, #fff);
+  color: #f0f0f0;
   font-weight: inherit;
 }
 
 .tree-item-self.is-selected {
   background-color: #8a5cf526;
-  color: color-mix(in srgb, #cccccc 30%, #fff);
+  color: #f0f0f0;
 }
 
 .tree-item-self.is-being-dragged {
@@ -1556,7 +1506,7 @@ input[type="search"] {
 
 .tree-item-flair {
   border-radius: 4px;
-  color: color-mix(in srgb, #000000 60%, #cccccc);
+  color: #525252;
   font-size: 12.8px;
   line-height: 1;
 }
@@ -1573,7 +1523,7 @@ input[type="search"] {
 }
 
 .tree-item-inner-subtext {
-  color: color-mix(in srgb, #000000 60%, #cccccc);
+  color: #525252;
   font-size: 85%;
 }
 
@@ -1591,7 +1541,7 @@ kbd {
     light-dark(#e3e3e3, #2a2a2a)
   );
   border-radius: 4px;
-  color: color-mix(in srgb, #cccccc 30%, #fff);
+  color: #f0f0f0;
   font-family:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1620,7 +1570,7 @@ svg.svg-icon {
 
 .clickable-icon[aria-disabled="true"] {
   background-color: unset;
-  color: color-mix(in srgb, #000000 30%, #cccccc);
+  color: #8f8f8f;
   opacity: 0.4;
 }
 
@@ -1654,7 +1604,7 @@ svg.svg-icon {
 }
 
 .view-header-title-parent .view-header-breadcrumb-separator {
-  color: color-mix(in srgb, #000000 60%, #cccccc);
+  color: #525252;
   padding: 2px 1px;
 }
 
@@ -1672,7 +1622,7 @@ svg.svg-icon {
 }
 
 .backlink-pane > .tree-item-self {
-  color: color-mix(in srgb, #cccccc 30%, #fff);
+  color: #f0f0f0;
   padding-inline-start: 8px;
 }
 
@@ -1681,11 +1631,11 @@ svg.svg-icon {
 }
 
 .backlink-pane > .tree-item-self.is-clickable.is-collapsed {
-  color: color-mix(in srgb, #000000 60%, #cccccc);
+  color: #525252;
 }
 
 .graph-view.color-fill {
-  color: color-mix(in srgb, #000000 30%, #cccccc);
+  color: #8f8f8f;
 }
 
 .graph-view.color-fill-focused {
@@ -1701,36 +1651,36 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-unresolved {
-  color: color-mix(in srgb, #000000 60%, #cccccc);
+  color: #525252;
   opacity: 0.5;
 }
 
 .graph-view.color-fill-1 {
-  color: color-mix(in srgb, #000000 30%, #cccccc);
+  color: #8f8f8f;
 }
 
 .graph-view.color-fill-2 {
-  color: color-mix(in srgb, #000000 30%, #cccccc);
+  color: #8f8f8f;
 }
 
 .graph-view.color-fill-3 {
-  color: color-mix(in srgb, #000000 30%, #cccccc);
+  color: #8f8f8f;
 }
 
 .graph-view.color-fill-4 {
-  color: color-mix(in srgb, #000000 30%, #cccccc);
+  color: #8f8f8f;
 }
 
 .graph-view.color-fill-5 {
-  color: color-mix(in srgb, #000000 30%, #cccccc);
+  color: #8f8f8f;
 }
 
 .graph-view.color-fill-6 {
-  color: color-mix(in srgb, #000000 30%, #cccccc);
+  color: #8f8f8f;
 }
 
 .graph-view.color-arrow {
-  color: color-mix(in srgb, #cccccc 30%, #fff);
+  color: #f0f0f0;
   opacity: 0.5;
 }
 
@@ -1739,11 +1689,11 @@ svg.svg-icon {
 }
 
 .graph-view.color-line {
-  color: color-mix(in srgb, #000000 95%, #cccccc);
+  color: #0a0a0a;
 }
 
 .graph-view.color-text {
-  color: color-mix(in srgb, #cccccc 30%, #fff);
+  color: #f0f0f0;
 }
 
 .graph-view.color-fill-highlight {
@@ -1772,30 +1722,30 @@ svg.svg-icon {
   --background-modifier-box-shadow: #0000004d;
   --background-modifier-cover: #0a0a0a66;
   --background-modifier-form-field: #1e1e1e;
-  --background-modifier-hover: color-mix(in srgb, #000000 95%, #cccccc);
+  --background-modifier-hover: #0a0a0a;
   --background-primary: #000;
-  --background-secondary: color-mix(in srgb, #000000 40%, #000);
-  --background-secondary-alt: color-mix(in srgb, #000000 90%, #cccccc);
+  --background-secondary: #000000;
+  --background-secondary-alt: #141414;
   --black: #000;
   --blue: #437cf3;
   --blue-violet: #6f51f4;
-  --code-background: color-mix(in srgb, #000000 80%, #000);
+  --code-background: #000000;
   --color-accent: #8a5cf5;
   --color-accent-1: #a68af9;
   --color-accent-2: #c5b6fc;
   --color-accent-hsl: 258, 88%, 66%;
-  --color-base-00: color-mix(in srgb, #000000 25%, #000);
-  --color-base-05: color-mix(in srgb, #000000 40%, #000);
-  --color-base-10: color-mix(in srgb, #000000 50%, #000);
-  --color-base-100: color-mix(in srgb, #000000 0%, #cccccc);
-  --color-base-20: color-mix(in srgb, #000000 80%, #000);
-  --color-base-25: color-mix(in srgb, #000000 80%, #000);
-  --color-base-30: color-mix(in srgb, #000000 90%, #cccccc);
-  --color-base-35: color-mix(in srgb, #000000 95%, #cccccc);
-  --color-base-40: color-mix(in srgb, #000000 80%, #cccccc);
-  --color-base-50: color-mix(in srgb, #000000 60%, #cccccc);
-  --color-base-60: color-mix(in srgb, #000000 60%, #cccccc);
-  --color-base-70: color-mix(in srgb, #000000 30%, #cccccc);
+  --color-base-00: #000000;
+  --color-base-05: #000000;
+  --color-base-10: #000000;
+  --color-base-100: #cccccc;
+  --color-base-20: #000000;
+  --color-base-25: #000000;
+  --color-base-30: #141414;
+  --color-base-35: #0a0a0a;
+  --color-base-40: #292929;
+  --color-base-50: #525252;
+  --color-base-60: #525252;
+  --color-base-70: #8f8f8f;
   --color-blue: #437cf3;
   --color-blue-rgb: 2, 122, 255;
   --color-cyan: #43cfea;
@@ -1825,8 +1775,8 @@ svg.svg-icon {
   --hot-red: #e3365e;
   --hue-bg: 238;
   --hue-fg: 255;
-  --indentation-guide-color: color-mix(in srgb, #000000 90%, #cccccc);
-  --indentation-guide-color-active: color-mix(in srgb, #000000 95%, #cccccc);
+  --indentation-guide-color: #141414;
+  --indentation-guide-color-active: #0a0a0a;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
     0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
@@ -1835,8 +1785,8 @@ svg.svg-icon {
     0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
   --interactive-accent: #8a5cf5;
   --interactive-accent-hover: #a68af9;
-  --interactive-hover: color-mix(in srgb, #000000 95%, #cccccc);
-  --interactive-normal: color-mix(in srgb, #000000 90%, #cccccc);
+  --interactive-hover: #0a0a0a;
+  --interactive-normal: #141414;
   --light-blue: #54b6f8;
   --lum: 11%;
   --lum-bg: 95%;
@@ -1845,9 +1795,9 @@ svg.svg-icon {
   --mint: #52eea3;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  --nav-indentation-guide-color: color-mix(in srgb, #000000 90%, #cccccc);
-  --pdf-shadow: 0 0 0 1px color-mix(in srgb, #000000 80%, #cccccc);
-  --pdf-thumbnail-shadow: 0 0 0 1px color-mix(in srgb, #000000 80%, #cccccc);
+  --nav-indentation-guide-color: #141414;
+  --pdf-shadow: 0 0 0 1px #292929;
+  --pdf-thumbnail-shadow: 0 0 0 1px #292929;
   --purple: #c952ed;
   --sat-bg: 60%;
   --sat-fg: 100%;
@@ -1857,9 +1807,9 @@ svg.svg-icon {
   --shadow-s:
     0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
   --text-accent: #a68af9;
-  --text-highlight-bg: color-mix(in srgb, #8a5cf5 25%, transparent);
-  --text-highlight-bg-active: color-mix(in srgb, #8a5cf5 25%, transparent);
-  --text-normal: color-mix(in srgb, #cccccc 30%, #fff);
+  --text-highlight-bg: #8a5cf540;
+  --text-highlight-bg-active: #8a5cf540;
+  --text-normal: #f0f0f0;
   --text-selection: #8a5cf554;
   --titlebar-background: #000;
   --titlebar-background-focused: #111;
@@ -1873,30 +1823,30 @@ svg.svg-icon {
   --background-modifier-box-shadow: #0000001a;
   --background-modifier-cover: #dcdcdc66;
   --background-modifier-form-field: #1e1e1e;
-  --background-modifier-hover: color-mix(in srgb, #000000 95%, #cccccc);
-  --background-primary: color-mix(in srgb, #000000 40%, #000);
-  --background-secondary: color-mix(in srgb, #000000 40%, #000);
-  --background-secondary-alt: color-mix(in srgb, #000000 40%, #000);
+  --background-modifier-hover: #0a0a0a;
+  --background-primary: #000000;
+  --background-secondary: #000000;
+  --background-secondary-alt: #000000;
   --black: #000;
   --blue: #437cf3;
   --blue-violet: #6f51f4;
-  --code-background: color-mix(in srgb, #000000 90%, #cccccc);
+  --code-background: #141414;
   --color-accent: #8a5cf5;
   --color-accent-1: #9873f7;
   --color-accent-2: #a68af9;
   --color-accent-hsl: 258, 88%, 66%;
-  --color-base-00: color-mix(in srgb, #000000 25%, #fff);
-  --color-base-05: color-mix(in srgb, #000000 40%, #fff);
-  --color-base-10: color-mix(in srgb, #000000 50%, #fff);
-  --color-base-100: color-mix(in srgb, #000000 0%, #cccccc);
-  --color-base-20: color-mix(in srgb, #000000 80%, #fff);
-  --color-base-25: color-mix(in srgb, #000000 80%, #fff);
-  --color-base-30: color-mix(in srgb, #000000 90%, #cccccc);
-  --color-base-35: color-mix(in srgb, #000000 95%, #cccccc);
-  --color-base-40: color-mix(in srgb, #000000 80%, #cccccc);
-  --color-base-50: color-mix(in srgb, #000000 60%, #cccccc);
-  --color-base-60: color-mix(in srgb, #000000 60%, #cccccc);
-  --color-base-70: color-mix(in srgb, #000000 30%, #cccccc);
+  --color-base-00: #bfbfbf;
+  --color-base-05: #999999;
+  --color-base-10: #808080;
+  --color-base-100: #cccccc;
+  --color-base-20: #333333;
+  --color-base-25: #333333;
+  --color-base-30: #141414;
+  --color-base-35: #0a0a0a;
+  --color-base-40: #292929;
+  --color-base-50: #525252;
+  --color-base-60: #525252;
+  --color-base-70: #8f8f8f;
   --color-blue: #437cf3;
   --color-blue-rgb: 8, 109, 221;
   --color-cyan: #43cfea;
@@ -1926,8 +1876,8 @@ svg.svg-icon {
   --hot-red: #e3365e;
   --hue-bg: 238;
   --hue-fg: 255;
-  --indentation-guide-color: color-mix(in srgb, #000000 90%, #cccccc);
-  --indentation-guide-color-active: color-mix(in srgb, #000000 95%, #cccccc);
+  --indentation-guide-color: #141414;
+  --indentation-guide-color-active: #0a0a0a;
   --input-shadow:
     inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008,
     0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
@@ -1942,7 +1892,7 @@ svg.svg-icon {
   --mint: #47cc91;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  --nav-indentation-guide-color: color-mix(in srgb, #000000 90%, #cccccc);
+  --nav-indentation-guide-color: #141414;
   --purple: #c952ed;
   --sat-bg: 60%;
   --sat-fg: 100%;
@@ -1951,9 +1901,9 @@ svg.svg-icon {
     0px 30px 90px #00000033;
   --shadow-s:
     0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
-  --text-highlight-bg: color-mix(in srgb, #8a5cf5 25%, transparent);
-  --text-highlight-bg-active: color-mix(in srgb, #8a5cf5 25%, transparent);
-  --text-normal: color-mix(in srgb, #cccccc 50%, #000);
+  --text-highlight-bg: #8a5cf540;
+  --text-highlight-bg-active: #8a5cf540;
+  --text-normal: #666666;
   --titlebar-background: #000;
   --titlebar-background-focused: #111;
   --vauxhall-bg: #bdc3db;
@@ -1967,7 +1917,7 @@ svg.svg-icon {
 }
 
 .workspace-split {
-  background-color: color-mix(in srgb, #000000 40%, #000);
+  background-color: #000000;
   display: flex;
   position: relative;
 }

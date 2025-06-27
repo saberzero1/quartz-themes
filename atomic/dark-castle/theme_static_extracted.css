@@ -1,8 +1,5 @@
 :root {
-  --background-secondary-alt: light-dark(
-    color-mix(in hsl, #000000, #000000),
-    color-mix(in hsl, #292929, #9c9c9c)
-  );
+  --background-secondary-alt: light-dark(#000000, #636363);
   --color-accent: light-dark(#ffcc66, #ffcc66);
   --color-accent-1: light-dark(hsl(39, 101%, 75.25%), hsl(37, 102%, 80.5%));
   --color-accent-2: light-dark(hsl(37, 102%, 80.5%), hsl(35, 105%, 90.3%));
@@ -56,8 +53,8 @@ body {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   --background-modifier-active-hover: #ffcc6626;
-  --background-modifier-border: color-mix(in hsl, #292929, #9c9c9c);
-  --background-modifier-border-focus: color-mix(in hsl, #9c9c9c, #9c9c9c);
+  --background-modifier-border: #636363;
+  --background-modifier-border-focus: #9c9c9c;
   --background-modifier-border-hover: #9c9c9c;
   --background-modifier-error: #ff000f;
   --background-modifier-error-hover: #ff000f;
@@ -69,11 +66,8 @@ body {
   --background-modifier-success-rgb: 186, 230, 126;
   --background-primary: #000000;
   --background-primary-alt: #000000;
-  --background-secondary: color-mix(in hsl, #000000, #292929);
-  --background-secondary-alt: light-dark(
-    color-mix(in hsl, #000000, #000000),
-    color-mix(in hsl, #292929, #9c9c9c)
-  );
+  --background-secondary: #141414;
+  --background-secondary-alt: light-dark(#000000, #636363);
   --bases-embed-border: 1px solid #292929;
   --bases-embed-border-radius: 2px;
   --bases-filter-menu-width: 520px;
@@ -150,16 +144,12 @@ body {
   --canvas-color-4: 186, 230, 126;
   --canvas-color-5: 92, 207, 230;
   --canvas-color-6: 195, 166, 255;
-  --canvas-dot-pattern: color-mix(in hsl, #292929, #9c9c9c);
+  --canvas-dot-pattern: #636363;
   --caret-color: #ffd580;
   --checkbox-border-color: #ff8040;
   --checkbox-border-color-hover: #9c9c9c;
   --checkbox-color: #ff8040;
-  --checkbox-color-hover: color-mix(
-    in hsl shorter hue,
-    #ff8040 75%,
-    transparent
-  );
+  --checkbox-color-hover: #ff8040bf;
   --checkbox-margin-inline-start: 0.85em;
   --checkbox-marker-color: #000000;
   --checkbox-radius: 2px;
@@ -223,11 +213,7 @@ body {
   --divider-width-hover: 3px;
   --drag-ghost-background: #000000d9;
   --drag-ghost-text-color: #fff;
-  --dropdown-background: color-mix(
-    in hsl shorter hue,
-    #000000 75%,
-    transparent
-  );
+  --dropdown-background: #000000bf;
   --dropdown-background-blend-mode: hard-light;
   --dropdown-background-hover: #000000;
   --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -254,7 +240,7 @@ body {
   --file-header-justify: center;
   --file-line-width: 700px;
   --file-margins: 32px;
-  --flair-background: color-mix(in hsl shorter hue, #000000 75%, transparent);
+  --flair-background: #000000bf;
   --flair-color: #ffd580;
   --font-black: 900;
   --font-bold: 700;
@@ -521,7 +507,7 @@ body {
   --metadata-sidebar-input-font-size: 14.992px;
   --metadata-sidebar-label-font-size: 14.992px;
   --modal-background: #000000;
-  --modal-border-color: color-mix(in hsl, #9c9c9c, #9c9c9c);
+  --modal-border-color: #9c9c9c;
   --modal-border-width: 0.5pt;
   --modal-community-sidebar-width: 280px;
   --modal-height: 85vh;
@@ -588,7 +574,7 @@ body {
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
   --popover-width: 450px;
-  --prompt-border-color: color-mix(in hsl, #9c9c9c, #9c9c9c);
+  --prompt-border-color: #9c9c9c;
   --prompt-border-width: 0.5pt;
   --prompt-input-height: 40px;
   --prompt-max-height: 70vh;
@@ -746,7 +732,7 @@ body {
   --text-faint: #9c9c9c;
   --text-highlight-bg: #ffd00066;
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: color-mix(in hsl, #9c9c9c, #9c9c9c);
+  --text-muted: #9c9c9c;
   --text-normal: #9c9c9c;
   --text-on-accent: #ffffff;
   --text-on-accent-inverted: #000000;
@@ -1214,7 +1200,7 @@ h6 {
 
 .prompt {
   background-color: #000000;
-  border: 0.5pt solid color-mix(in hsl, #000000, #292929);
+  border: 0.5pt solid #141414;
   border-radius: 6px;
   box-shadow:
     0px 1.8px 7.3px #00000012,
@@ -1257,7 +1243,7 @@ input.prompt-input {
 }
 
 a.tag {
-  background-color: color-mix(in hsl shorter hue, #ffffff 25%, transparent);
+  background-color: #ffffff40;
   border: 0px solid #ffcc6626;
   border-radius: 2em;
   color: #ffffff;
@@ -1651,7 +1637,7 @@ svg.svg-icon {
   --background-modifier-box-shadow: #0000004d;
   --background-modifier-cover: #0a0a0a66;
   --background-modifier-form-field: #292929;
-  --background-secondary-alt: color-mix(in hsl, #292929, #9c9c9c);
+  --background-secondary-alt: #636363;
   --color-accent: #ffcc66;
   --color-accent-1: hsl(37, 102%, 80.5%);
   --color-accent-2: hsl(35, 105%, 90.3%);
@@ -1694,7 +1680,7 @@ svg.svg-icon {
   --interactive-accent: #ffcc66;
   --interactive-accent-hover: hsl(37, 102%, 80.5%);
   --interactive-hover: #9c9c9c;
-  --interactive-normal: color-mix(in hsl, #292929, #9c9c9c);
+  --interactive-normal: #636363;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --pdf-shadow: 0 0 0 1px #292929;
@@ -1711,7 +1697,7 @@ svg.svg-icon {
 .theme-light {
   --background-modifier-box-shadow: #0000001a;
   --background-modifier-cover: #dcdcdc66;
-  --background-secondary-alt: color-mix(in hsl, #000000, #000000);
+  --background-secondary-alt: #000000;
   --color-accent: #ffcc66;
   --color-accent-1: hsl(39, 101%, 75.25%);
   --color-accent-2: hsl(37, 102%, 80.5%);

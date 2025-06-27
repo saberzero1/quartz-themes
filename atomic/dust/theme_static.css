@@ -10790,7 +10790,7 @@ body:not(.is-phone) .vertical-tab-header-group-items {
 }
 
 .vertical-tab-header-group-title {
-  color: color-mix(in srgb, #5882d0 90%, #ffffff);
+  color: #698ed5;
   font-size: 12.8px;
   font-weight: 600;
   padding: 8px;

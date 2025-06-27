@@ -1032,7 +1032,7 @@
   --link-background-hover: light-dark(transparent, transparent);
   --link-color-hover: light-dark(#cd2626, #cd2626);
   --link-external-color-hover: light-dark(#aac1d3, #aac1d3);
-  --link-external-font: light-dark(inherit, inherit);
+  --link-external-font: inherit;
   --link-unresolved-color: light-dark(#a6bbde, #a6bbde);
   --list-color-1: light-dark(#bb5555, #bb5555);
   --list-color-2: light-dark(#a53f3f, #a53f3f);
@@ -2365,7 +2365,7 @@ body {
   --link-external-decoration: none;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
-  --link-external-font: light-dark(inherit, inherit);
+  --link-external-font: inherit;
   --link-font: inherit;
   --link-transform: none;
   --link-unresolved-color: light-dark(#a6bbde, #a6bbde);

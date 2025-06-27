@@ -879,11 +879,7 @@ h1 {
   --font-weight: 600;
   border-bottom: 0px solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(
-    to right,
-    color-mix(in lch, #e0e4eb 60%, transparent),
-    transparent
-  );
+  border-image-source: linear-gradient(to right, #e0e4eb99, transparent);
   color: #e0e4eb;
   font-family: Courgette;
   font-size: 1.6em;
@@ -901,11 +897,7 @@ h2 {
   --font-weight: 600;
   border-bottom: 1px solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(
-    to right,
-    color-mix(in lch, #c1c9d7 60%, transparent),
-    transparent
-  );
+  border-image-source: linear-gradient(to right, #c1c9d799, transparent);
   color: #c1c9d7;
   font-family: Courgette;
   font-size: 1.48em;
@@ -923,11 +915,7 @@ h3 {
   --font-weight: 600;
   border-bottom: 0px solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(
-    to right,
-    color-mix(in lch, #a2afc3 60%, transparent),
-    transparent
-  );
+  border-image-source: linear-gradient(to right, #a2afc399, transparent);
   color: #a2afc3;
   font-family: "Karla", "Inter";
   font-size: 1.36em;

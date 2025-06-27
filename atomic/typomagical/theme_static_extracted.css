@@ -1774,7 +1774,7 @@ svg.svg-icon {
   --tag-background-hover: #f7d865;
   --tag-color: #3a527e;
   --tag-color-hover: #3a527e;
-  --title-gradient-bottom: color-mix(in hsl, #482dd2, #000000);
+  --title-gradient-bottom: #322b54;
   --title-gradient-top: #482dd2;
 }
 

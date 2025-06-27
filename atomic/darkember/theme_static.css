@@ -25145,11 +25145,11 @@ li::marker {
 }
 
 .list-indent-color ol:before {
-  background-color: color-mix(in srgb, #8e44ad 7.5%, transparent);
+  background-color: #8e44ad13;
 }
 
 .list-indent-color ol ol:before {
-  background-color: color-mix(in srgb, #9b59b6 7.5%, transparent);
+  background-color: #9b59b613;
 }
 
 .list-indent-color ol ol li::marker {
@@ -25157,7 +25157,7 @@ li::marker {
 }
 
 .list-indent-color ol ol ol:before {
-  background-color: color-mix(in srgb, #8e44ad 7.5%, transparent);
+  background-color: #8e44ad13;
 }
 
 .list-indent-color ol ol ol li::marker {
@@ -25165,7 +25165,7 @@ li::marker {
 }
 
 .list-indent-color ol ol ol ol:before {
-  background-color: color-mix(in srgb, #3498db 7.5%, transparent);
+  background-color: #3498db13;
 }
 
 .list-indent-color ol ol ol ol li::marker {
@@ -25173,7 +25173,7 @@ li::marker {
 }
 
 .list-indent-color ol ol ol ol ol:before {
-  background-color: color-mix(in srgb, #2980b9 7.5%, transparent);
+  background-color: #2980b913;
 }
 
 .list-indent-color ol ol ol ol ol li::marker {
@@ -25181,7 +25181,7 @@ li::marker {
 }
 
 .list-indent-color ol ol ol ol ol ol:before {
-  background-color: color-mix(in srgb, #1abc9c 7.5%, transparent);
+  background-color: #1abc9c13;
 }
 
 .list-indent-color ol ol ol ol ol ol li::marker {
@@ -25189,7 +25189,7 @@ li::marker {
 }
 
 .list-indent-color ol ol ol ol ol ol ol:before {
-  background-color: color-mix(in srgb, #16a085 7.5%, transparent);
+  background-color: #16a08513;
 }
 
 .list-indent-color ol ol ol ol ol ol ol li::marker {
@@ -25512,7 +25512,7 @@ table {
 }
 
 thead tr {
-  background-color: color-mix(in srgb, #8e44ad 20%, #f0e1f0);
+  background-color: #dcc2e3;
   color: #ffffff;
   opacity: 0.9;
   text-align: left;

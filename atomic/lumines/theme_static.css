@@ -1955,7 +1955,7 @@ body {
   --indentation-guide-source-indent: 0.25em;
   --indentation-guide-width: 1px;
   --indentation-guide-width-active: 1px;
-  --inline-title-color: color-mix(in srgb, #8a5cf5 100%, #ffffff 0%);
+  --inline-title-color: #8a5cf5;
   --inline-title-font: inherit;
   --inline-title-line-height: 1.2;
   --inline-title-margin-bottom: 0.5em;
@@ -2406,12 +2406,12 @@ body {
   --color-red-rgb: 233, 49, 71;
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
-  --h1-color: color-mix(in srgb, #8a5cf5 100%, #8a5cf5 0%);
-  --h2-color: color-mix(in srgb, #8a5cf5 80%, #7c53dd 20%);
-  --h3-color: color-mix(in srgb, #8a5cf5 60%, #6e4ac4 40%);
-  --h4-color: color-mix(in srgb, #8a5cf5 40%, #6140ac 60%);
-  --h5-color: color-mix(in srgb, #8a5cf5 20%, #533793 80%);
-  --h6-color: color-mix(in srgb, #8a5cf5 0%, #452e7b 100%);
+  --h1-color: #8a5cf5;
+  --h2-color: #875af0;
+  --h3-color: #7f55e1;
+  --h4-color: #714bc9;
+  --h5-color: #5e3ea7;
+  --h6-color: #452e7b;
   --highlight-mix-blend-mode: darken;
   --input-shadow:
     inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008,
@@ -2470,12 +2470,12 @@ body {
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
-  --h1-color: color-mix(in srgb, #8a5cf5 100%, #ffffff 0%);
-  --h2-color: color-mix(in srgb, #8a5cf5 80%, #ffffff 20%);
-  --h3-color: color-mix(in srgb, #8a5cf5 60%, #ffffff 40%);
-  --h4-color: color-mix(in srgb, #8a5cf5 40%, #ffffff 60%);
-  --h5-color: color-mix(in srgb, #8a5cf5 20%, #ffffff 80%);
-  --h6-color: color-mix(in srgb, #8a5cf5 0%, #ffffff 100%);
+  --h1-color: #8a5cf5;
+  --h2-color: #a17df7;
+  --h3-color: #b99df9;
+  --h4-color: #d0befb;
+  --h5-color: #e8defd;
+  --h6-color: #ffffff;
   --highlight-mix-blend-mode: darken;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
@@ -4274,7 +4274,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 }
 
 .inline-title {
-  color: color-mix(in srgb, #8a5cf5 100%, #ffffff 0%);
+  color: #8a5cf5;
   margin-block-end: 0.5em;
   unicode-bidi: plaintext;
   white-space: pre-wrap;
@@ -4292,7 +4292,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h1 {
   --font-weight: 700;
-  color: color-mix(in srgb, #8a5cf5 100%, #ffffff 0%);
+  color: #8a5cf5;
   font-family: inherit;
   font-size: 1.802em;
   font-style: normal;
@@ -4306,7 +4306,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h2 {
   --font-weight: 600;
-  color: color-mix(in srgb, #8a5cf5 80%, #ffffff 20%);
+  color: #a17df7;
   font-family: inherit;
   font-size: 1.602em;
   font-style: normal;
@@ -4320,7 +4320,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h3 {
   --font-weight: 600;
-  color: color-mix(in srgb, #8a5cf5 60%, #ffffff 40%);
+  color: #b99df9;
   font-family: inherit;
   font-size: 1.424em;
   font-style: normal;
@@ -4334,7 +4334,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h4 {
   --font-weight: 600;
-  color: color-mix(in srgb, #8a5cf5 40%, #ffffff 60%);
+  color: #d0befb;
   font-family: inherit;
   font-size: 1.266em;
   font-style: normal;
@@ -4347,7 +4347,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h5 {
   --font-weight: 600;
-  color: color-mix(in srgb, #8a5cf5 20%, #ffffff 80%);
+  color: #e8defd;
   font-family: inherit;
   font-size: 1.125em;
   font-style: normal;
@@ -13611,7 +13611,7 @@ input.metadata-property-key-input:focus {
 
 @media (hover: hover) {
   .metadata-link-inner:hover {
-    color: color-mix(in srgb, #8a5cf5 80%, #ffffff 20%);
+    color: #a17df7;
     text-decoration-line: none;
   }
   .metadata-link-inner:hover ~ .metadata-link-flair {
@@ -13696,7 +13696,7 @@ input.metadata-property-key-input:focus {
 
 h1 {
   --font-weight: 700;
-  color: color-mix(in srgb, #8a5cf5 100%, #ffffff 0%);
+  color: #8a5cf5;
   font-family: inherit;
   font-size: 1.802em;
   font-style: normal;
@@ -13710,7 +13710,7 @@ h1 {
 
 h2 {
   --font-weight: 600;
-  color: color-mix(in srgb, #8a5cf5 80%, #ffffff 20%);
+  color: #a17df7;
   font-family: inherit;
   font-size: 1.602em;
   font-style: normal;
@@ -13724,7 +13724,7 @@ h2 {
 
 h3 {
   --font-weight: 600;
-  color: color-mix(in srgb, #8a5cf5 60%, #ffffff 40%);
+  color: #b99df9;
   font-family: inherit;
   font-size: 1.424em;
   font-style: normal;
@@ -13738,7 +13738,7 @@ h3 {
 
 h4 {
   --font-weight: 600;
-  color: color-mix(in srgb, #8a5cf5 40%, #ffffff 60%);
+  color: #d0befb;
   font-family: inherit;
   font-size: 1.266em;
   font-style: normal;
@@ -13752,7 +13752,7 @@ h4 {
 
 h5 {
   --font-weight: 600;
-  color: color-mix(in srgb, #8a5cf5 20%, #ffffff 80%);
+  color: #e8defd;
   font-family: inherit;
   font-size: 1.125em;
   font-style: normal;
@@ -13780,7 +13780,7 @@ h6 {
 
 .markdown-rendered h1 {
   --font-weight: 700;
-  color: color-mix(in srgb, #8a5cf5 100%, #ffffff 0%);
+  color: #8a5cf5;
   font-family: inherit;
   font-size: 1.802em;
   font-style: normal;
@@ -13800,7 +13800,7 @@ h1 a {
 
 .markdown-rendered h2 {
   --font-weight: 600;
-  color: color-mix(in srgb, #8a5cf5 80%, #ffffff 20%);
+  color: #a17df7;
   font-family: inherit;
   font-size: 1.602em;
   font-style: normal;
@@ -13820,7 +13820,7 @@ h2 a {
 
 .markdown-rendered h3 {
   --font-weight: 600;
-  color: color-mix(in srgb, #8a5cf5 60%, #ffffff 40%);
+  color: #b99df9;
   font-family: inherit;
   font-size: 1.424em;
   font-style: normal;
@@ -13840,7 +13840,7 @@ h3 a {
 
 .markdown-rendered h4 {
   --font-weight: 600;
-  color: color-mix(in srgb, #8a5cf5 40%, #ffffff 60%);
+  color: #d0befb;
   font-family: inherit;
   font-size: 1.266em;
   font-style: normal;
@@ -13860,7 +13860,7 @@ h4 a {
 
 .markdown-rendered h5 {
   --font-weight: 600;
-  color: color-mix(in srgb, #8a5cf5 20%, #ffffff 80%);
+  color: #e8defd;
   font-family: inherit;
   font-size: 1.125em;
   font-style: normal;
@@ -13921,7 +13921,7 @@ h6 a {
 
 .HyperMD-header-1 {
   --font-weight: 700;
-  color: color-mix(in srgb, #8a5cf5 100%, #ffffff 0%);
+  color: #8a5cf5;
   font-family: inherit;
   font-size: 1.802em;
   font-style: normal;
@@ -13933,7 +13933,7 @@ h6 a {
 
 .HyperMD-list-line .cm-header-1 {
   --font-weight: 700;
-  color: color-mix(in srgb, #8a5cf5 100%, #ffffff 0%);
+  color: #8a5cf5;
   font-family: inherit;
   font-size: 1.802em;
   font-style: normal;
@@ -13969,7 +13969,7 @@ h6 a {
 
 .HyperMD-header-2 {
   --font-weight: 600;
-  color: color-mix(in srgb, #8a5cf5 80%, #ffffff 20%);
+  color: #a17df7;
   font-family: inherit;
   font-size: 1.602em;
   font-style: normal;
@@ -13981,7 +13981,7 @@ h6 a {
 
 .HyperMD-list-line .cm-header-2 {
   --font-weight: 600;
-  color: color-mix(in srgb, #8a5cf5 80%, #ffffff 20%);
+  color: #a17df7;
   font-family: inherit;
   font-size: 1.602em;
   font-style: normal;
@@ -14017,7 +14017,7 @@ h6 a {
 
 .HyperMD-header-3 {
   --font-weight: 600;
-  color: color-mix(in srgb, #8a5cf5 60%, #ffffff 40%);
+  color: #b99df9;
   font-family: inherit;
   font-size: 1.424em;
   font-style: normal;
@@ -14029,7 +14029,7 @@ h6 a {
 
 .HyperMD-list-line .cm-header-3 {
   --font-weight: 600;
-  color: color-mix(in srgb, #8a5cf5 60%, #ffffff 40%);
+  color: #b99df9;
   font-family: inherit;
   font-size: 1.424em;
   font-style: normal;
@@ -14065,7 +14065,7 @@ h6 a {
 
 .HyperMD-header-4 {
   --font-weight: 600;
-  color: color-mix(in srgb, #8a5cf5 40%, #ffffff 60%);
+  color: #d0befb;
   font-family: inherit;
   font-size: 1.266em;
   font-style: normal;
@@ -14076,7 +14076,7 @@ h6 a {
 
 .HyperMD-list-line .cm-header-4 {
   --font-weight: 600;
-  color: color-mix(in srgb, #8a5cf5 40%, #ffffff 60%);
+  color: #d0befb;
   font-family: inherit;
   font-size: 1.266em;
   font-style: normal;
@@ -14111,7 +14111,7 @@ h6 a {
 
 .HyperMD-header-5 {
   --font-weight: 600;
-  color: color-mix(in srgb, #8a5cf5 20%, #ffffff 80%);
+  color: #e8defd;
   font-family: inherit;
   font-size: 1.125em;
   font-style: normal;
@@ -14122,7 +14122,7 @@ h6 a {
 
 .HyperMD-list-line .cm-header-5 {
   --font-weight: 600;
-  color: color-mix(in srgb, #8a5cf5 20%, #ffffff 80%);
+  color: #e8defd;
   font-family: inherit;
   font-size: 1.125em;
   font-style: normal;
@@ -14793,7 +14793,7 @@ a {
 
 @media (hover: hover) {
   a:hover {
-    color: color-mix(in srgb, #8a5cf5 80%, #ffffff 20%);
+    color: #a17df7;
     text-decoration-line: none;
   }
 }
@@ -14854,11 +14854,11 @@ a.mobile-tap {
 
 @media (hover: hover) {
   .metadata-property-value .internal-link:hover {
-    color: color-mix(in srgb, #8a5cf5 80%, #ffffff 20%);
+    color: #a17df7;
     text-decoration-line: none;
   }
   .markdown-rendered .internal-link:hover {
-    color: color-mix(in srgb, #8a5cf5 80%, #ffffff 20%);
+    color: #a17df7;
     text-decoration-line: none;
   }
 }
@@ -14889,15 +14889,15 @@ a.mobile-tap {
 
 @media (hover: hover) {
   .metadata-property-value .internal-link.is-unresolved:hover {
-    color: color-mix(in srgb, #8a5cf5 80%, #ffffff 20%);
+    color: #a17df7;
     opacity: 1;
-    text-decoration-color: color-mix(in srgb, #8a5cf5 80%, #ffffff 20%);
+    text-decoration-color: #a17df7;
     text-decoration-line: none;
   }
   .markdown-rendered .internal-link.is-unresolved:hover {
-    color: color-mix(in srgb, #8a5cf5 80%, #ffffff 20%);
+    color: #a17df7;
     opacity: 1;
-    text-decoration-color: color-mix(in srgb, #8a5cf5 80%, #ffffff 20%);
+    text-decoration-color: #a17df7;
     text-decoration-line: none;
   }
 }
@@ -14910,7 +14910,7 @@ a.mobile-tap {
 
 @media (hover: hover) {
   .cm-s-obsidian span.cm-hmd-internal-link:hover {
-    color: color-mix(in srgb, #8a5cf5 80%, #ffffff 20%);
+    color: #a17df7;
     text-decoration-line: none;
   }
 }
@@ -15005,9 +15005,9 @@ a.mobile-tap {
 
 @media (hover: hover) {
   .markdown-source-view.mod-cm6 .is-unresolved:hover {
-    color: color-mix(in srgb, #8a5cf5 80%, #ffffff 20%);
+    color: #a17df7;
     opacity: 1;
-    text-decoration-color: color-mix(in srgb, #8a5cf5 80%, #ffffff 20%);
+    text-decoration-color: #a17df7;
   }
 }
 
@@ -16175,7 +16175,7 @@ em {
 }
 
 .bases-header .title {
-  color: color-mix(in srgb, #8a5cf5 80%, #ffffff 20%);
+  color: #a17df7;
   font-size: 1.602em;
 }
 
@@ -17193,7 +17193,7 @@ em {
   align-self: center;
   background-color: #ffffff26;
   border-radius: 4px;
-  color: color-mix(in srgb, #8a5cf5 70%, #ffffff 30%);
+  color: #ad8df8;
   font-size: 9px;
   font-weight: 600;
   letter-spacing: 0.05em;
@@ -24401,99 +24401,99 @@ ul {
 }
 
 .nav-folder:nth-of-type(1) .nav-folder-title {
-  color: color-mix(in srgb, #8a5cf5 100%, #ffffff 0%);
+  color: #8a5cf5;
 }
 
 .nav-folder:nth-of-type(2) .nav-folder-title {
-  color: color-mix(in srgb, #8a5cf5 90%, #ffffff 10%);
+  color: #966cf6;
 }
 
 .nav-folder:nth-of-type(3) .nav-folder-title {
-  color: color-mix(in srgb, #8a5cf5 80%, #ffffff 20%);
+  color: #a17df7;
 }
 
 .nav-folder:nth-of-type(4) .nav-folder-title {
-  color: color-mix(in srgb, #8a5cf5 70%, #ffffff 30%);
+  color: #ad8df8;
 }
 
 .nav-folder:nth-of-type(5) .nav-folder-title {
-  color: color-mix(in srgb, #8a5cf5 60%, #ffffff 40%);
+  color: #b99df9;
 }
 
 .nav-folder:nth-of-type(6) .nav-folder-title {
-  color: color-mix(in srgb, #8a5cf5 50%, #ffffff 50%);
+  color: #c4aefa;
 }
 
 .nav-folder:nth-of-type(7) .nav-folder-title {
-  color: color-mix(in srgb, #8a5cf5 40%, #ffffff 60%);
+  color: #d0befb;
 }
 
 .nav-folder:nth-of-type(8) .nav-folder-title {
-  color: color-mix(in srgb, #8a5cf5 30%, #ffffff 70%);
+  color: #dccefc;
 }
 
 .nav-folder:nth-of-type(9) .nav-folder-title {
-  color: color-mix(in srgb, #8a5cf5 20%, #ffffff 80%);
+  color: #e8defd;
 }
 
 .nav-folder:nth-of-type(10) .nav-folder-title {
-  color: color-mix(in srgb, #8a5cf5 10%, #ffffff 90%);
+  color: #f3effe;
 }
 
 .nav-folder:nth-of-type(11) .nav-folder-title {
-  color: color-mix(in srgb, #8a5cf5 0%, #ffffff 100%);
+  color: #ffffff;
 }
 
 .nav-folder:nth-of-type(n + 12) .nav-folder-title {
-  color: color-mix(in srgb, #8a5cf5 0%, #ffffff 100%);
+  color: #ffffff;
 }
 
 .folder-title-accent .nav-folder:nth-of-type(1) .nav-folder-title {
-  color: color-mix(in srgb, #8a5cf5 100%, #ffffff 0%);
+  color: #8a5cf5;
 }
 
 .folder-title-accent .nav-folder:nth-of-type(2) .nav-folder-title {
-  color: color-mix(in srgb, #8a5cf5 90%, #ffffff 10%);
+  color: #966cf6;
 }
 
 .folder-title-accent .nav-folder:nth-of-type(3) .nav-folder-title {
-  color: color-mix(in srgb, #8a5cf5 80%, #ffffff 20%);
+  color: #a17df7;
 }
 
 .folder-title-accent .nav-folder:nth-of-type(4) .nav-folder-title {
-  color: color-mix(in srgb, #8a5cf5 70%, #ffffff 30%);
+  color: #ad8df8;
 }
 
 .folder-title-accent .nav-folder:nth-of-type(5) .nav-folder-title {
-  color: color-mix(in srgb, #8a5cf5 60%, #ffffff 40%);
+  color: #b99df9;
 }
 
 .folder-title-accent .nav-folder:nth-of-type(6) .nav-folder-title {
-  color: color-mix(in srgb, #8a5cf5 50%, #ffffff 50%);
+  color: #c4aefa;
 }
 
 .folder-title-accent .nav-folder:nth-of-type(7) .nav-folder-title {
-  color: color-mix(in srgb, #8a5cf5 40%, #ffffff 60%);
+  color: #d0befb;
 }
 
 .folder-title-accent .nav-folder:nth-of-type(8) .nav-folder-title {
-  color: color-mix(in srgb, #8a5cf5 30%, #ffffff 70%);
+  color: #dccefc;
 }
 
 .folder-title-accent .nav-folder:nth-of-type(9) .nav-folder-title {
-  color: color-mix(in srgb, #8a5cf5 20%, #ffffff 80%);
+  color: #e8defd;
 }
 
 .folder-title-accent .nav-folder:nth-of-type(10) .nav-folder-title {
-  color: color-mix(in srgb, #8a5cf5 10%, #ffffff 90%);
+  color: #f3effe;
 }
 
 .folder-title-accent .nav-folder:nth-of-type(11) .nav-folder-title {
-  color: color-mix(in srgb, #8a5cf5 0%, #ffffff 100%);
+  color: #ffffff;
 }
 
 .folder-title-accent .nav-folder:nth-of-type(n + 12) .nav-folder-title {
-  color: color-mix(in srgb, #8a5cf5 0%, #ffffff 100%);
+  color: #ffffff;
 }
 
 .folder-title-red .nav-folder:nth-of-type(1) .nav-folder-title {
@@ -24641,51 +24641,51 @@ ul {
 }
 
 .folder-title-lime .nav-folder:nth-of-type(1) .nav-folder-title {
-  color: color-mix(in srgb, #bef264 100%, #ffffff 0%);
+  color: #bef264;
 }
 
 .folder-title-lime .nav-folder:nth-of-type(2) .nav-folder-title {
-  color: color-mix(in srgb, #bef264 90%, #ffffff 10%);
+  color: #c4f373;
 }
 
 .folder-title-lime .nav-folder:nth-of-type(3) .nav-folder-title {
-  color: color-mix(in srgb, #bef264 80%, #ffffff 20%);
+  color: #cbf583;
 }
 
 .folder-title-lime .nav-folder:nth-of-type(4) .nav-folder-title {
-  color: color-mix(in srgb, #bef264 70%, #ffffff 30%);
+  color: #d2f693;
 }
 
 .folder-title-lime .nav-folder:nth-of-type(5) .nav-folder-title {
-  color: color-mix(in srgb, #bef264 60%, #ffffff 40%);
+  color: #d8f7a2;
 }
 
 .folder-title-lime .nav-folder:nth-of-type(6) .nav-folder-title {
-  color: color-mix(in srgb, #bef264 50%, #ffffff 50%);
+  color: #def9b1;
 }
 
 .folder-title-lime .nav-folder:nth-of-type(7) .nav-folder-title {
-  color: color-mix(in srgb, #bef264 40%, #ffffff 60%);
+  color: #e5fac1;
 }
 
 .folder-title-lime .nav-folder:nth-of-type(8) .nav-folder-title {
-  color: color-mix(in srgb, #bef264 30%, #ffffff 70%);
+  color: #ebfbd0;
 }
 
 .folder-title-lime .nav-folder:nth-of-type(9) .nav-folder-title {
-  color: color-mix(in srgb, #bef264 20%, #ffffff 80%);
+  color: #f2fce0;
 }
 
 .folder-title-lime .nav-folder:nth-of-type(10) .nav-folder-title {
-  color: color-mix(in srgb, #bef264 10%, #ffffff 90%);
+  color: #f9fef0;
 }
 
 .folder-title-lime .nav-folder:nth-of-type(11) .nav-folder-title {
-  color: color-mix(in srgb, #bef264 0%, #ffffff 100%);
+  color: #ffffff;
 }
 
 .folder-title-lime .nav-folder:nth-of-type(n + 12) .nav-folder-title {
-  color: color-mix(in srgb, #bef264 0%, #ffffff 100%);
+  color: #ffffff;
 }
 
 .folder-title-green .nav-folder:nth-of-type(1) .nav-folder-title {
@@ -24785,51 +24785,51 @@ ul {
 }
 
 .folder-title-sky .nav-folder:nth-of-type(1) .nav-folder-title {
-  color: color-mix(in srgb, #4dabf7 100%, #ffffff 0%);
+  color: #4dabf7;
 }
 
 .folder-title-sky .nav-folder:nth-of-type(2) .nav-folder-title {
-  color: color-mix(in srgb, #4dabf7 90%, #ffffff 10%);
+  color: #5fb3f8;
 }
 
 .folder-title-sky .nav-folder:nth-of-type(3) .nav-folder-title {
-  color: color-mix(in srgb, #4dabf7 80%, #ffffff 20%);
+  color: #71bcf9;
 }
 
 .folder-title-sky .nav-folder:nth-of-type(4) .nav-folder-title {
-  color: color-mix(in srgb, #4dabf7 70%, #ffffff 30%);
+  color: #82c4f9;
 }
 
 .folder-title-sky .nav-folder:nth-of-type(5) .nav-folder-title {
-  color: color-mix(in srgb, #4dabf7 60%, #ffffff 40%);
+  color: #94cdfa;
 }
 
 .folder-title-sky .nav-folder:nth-of-type(6) .nav-folder-title {
-  color: color-mix(in srgb, #4dabf7 50%, #ffffff 50%);
+  color: #a6d5fb;
 }
 
 .folder-title-sky .nav-folder:nth-of-type(7) .nav-folder-title {
-  color: color-mix(in srgb, #4dabf7 40%, #ffffff 60%);
+  color: #b8ddfc;
 }
 
 .folder-title-sky .nav-folder:nth-of-type(8) .nav-folder-title {
-  color: color-mix(in srgb, #4dabf7 30%, #ffffff 70%);
+  color: #cae6fd;
 }
 
 .folder-title-sky .nav-folder:nth-of-type(9) .nav-folder-title {
-  color: color-mix(in srgb, #4dabf7 20%, #ffffff 80%);
+  color: #dbeefd;
 }
 
 .folder-title-sky .nav-folder:nth-of-type(10) .nav-folder-title {
-  color: color-mix(in srgb, #4dabf7 10%, #ffffff 90%);
+  color: #edf7fe;
 }
 
 .folder-title-sky .nav-folder:nth-of-type(11) .nav-folder-title {
-  color: color-mix(in srgb, #4dabf7 0%, #ffffff 100%);
+  color: #ffffff;
 }
 
 .folder-title-sky .nav-folder:nth-of-type(n + 12) .nav-folder-title {
-  color: color-mix(in srgb, #4dabf7 0%, #ffffff 100%);
+  color: #ffffff;
 }
 
 .folder-title-blue .nav-folder:nth-of-type(1) .nav-folder-title {
@@ -24881,99 +24881,99 @@ ul {
 }
 
 .folder-title-indigo .nav-folder:nth-of-type(1) .nav-folder-title {
-  color: color-mix(in srgb, #818cf8 100%, #ffffff 0%);
+  color: #818cf8;
 }
 
 .folder-title-indigo .nav-folder:nth-of-type(2) .nav-folder-title {
-  color: color-mix(in srgb, #818cf8 90%, #ffffff 10%);
+  color: #8e98f9;
 }
 
 .folder-title-indigo .nav-folder:nth-of-type(3) .nav-folder-title {
-  color: color-mix(in srgb, #818cf8 80%, #ffffff 20%);
+  color: #9aa3f9;
 }
 
 .folder-title-indigo .nav-folder:nth-of-type(4) .nav-folder-title {
-  color: color-mix(in srgb, #818cf8 70%, #ffffff 30%);
+  color: #a7affa;
 }
 
 .folder-title-indigo .nav-folder:nth-of-type(5) .nav-folder-title {
-  color: color-mix(in srgb, #818cf8 60%, #ffffff 40%);
+  color: #b3bafb;
 }
 
 .folder-title-indigo .nav-folder:nth-of-type(6) .nav-folder-title {
-  color: color-mix(in srgb, #818cf8 50%, #ffffff 50%);
+  color: #c0c6fc;
 }
 
 .folder-title-indigo .nav-folder:nth-of-type(7) .nav-folder-title {
-  color: color-mix(in srgb, #818cf8 40%, #ffffff 60%);
+  color: #cdd1fc;
 }
 
 .folder-title-indigo .nav-folder:nth-of-type(8) .nav-folder-title {
-  color: color-mix(in srgb, #818cf8 30%, #ffffff 70%);
+  color: #d9ddfd;
 }
 
 .folder-title-indigo .nav-folder:nth-of-type(9) .nav-folder-title {
-  color: color-mix(in srgb, #818cf8 20%, #ffffff 80%);
+  color: #e6e8fe;
 }
 
 .folder-title-indigo .nav-folder:nth-of-type(10) .nav-folder-title {
-  color: color-mix(in srgb, #818cf8 10%, #ffffff 90%);
+  color: #f2f4fe;
 }
 
 .folder-title-indigo .nav-folder:nth-of-type(11) .nav-folder-title {
-  color: color-mix(in srgb, #818cf8 0%, #ffffff 100%);
+  color: #ffffff;
 }
 
 .folder-title-indigo .nav-folder:nth-of-type(n + 12) .nav-folder-title {
-  color: color-mix(in srgb, #818cf8 0%, #ffffff 100%);
+  color: #ffffff;
 }
 
 .folder-title-violet .nav-folder:nth-of-type(1) .nav-folder-title {
-  color: color-mix(in srgb, #9f8fef 100%, #ffffff 0%);
+  color: #9f8fef;
 }
 
 .folder-title-violet .nav-folder:nth-of-type(2) .nav-folder-title {
-  color: color-mix(in srgb, #9f8fef 90%, #ffffff 10%);
+  color: #a99af1;
 }
 
 .folder-title-violet .nav-folder:nth-of-type(3) .nav-folder-title {
-  color: color-mix(in srgb, #9f8fef 80%, #ffffff 20%);
+  color: #b2a5f2;
 }
 
 .folder-title-violet .nav-folder:nth-of-type(4) .nav-folder-title {
-  color: color-mix(in srgb, #9f8fef 70%, #ffffff 30%);
+  color: #bcb1f4;
 }
 
 .folder-title-violet .nav-folder:nth-of-type(5) .nav-folder-title {
-  color: color-mix(in srgb, #9f8fef 60%, #ffffff 40%);
+  color: #c5bcf5;
 }
 
 .folder-title-violet .nav-folder:nth-of-type(6) .nav-folder-title {
-  color: color-mix(in srgb, #9f8fef 50%, #ffffff 50%);
+  color: #cfc7f7;
 }
 
 .folder-title-violet .nav-folder:nth-of-type(7) .nav-folder-title {
-  color: color-mix(in srgb, #9f8fef 40%, #ffffff 60%);
+  color: #d9d2f9;
 }
 
 .folder-title-violet .nav-folder:nth-of-type(8) .nav-folder-title {
-  color: color-mix(in srgb, #9f8fef 30%, #ffffff 70%);
+  color: #e2ddfa;
 }
 
 .folder-title-violet .nav-folder:nth-of-type(9) .nav-folder-title {
-  color: color-mix(in srgb, #9f8fef 20%, #ffffff 80%);
+  color: #ece9fc;
 }
 
 .folder-title-violet .nav-folder:nth-of-type(10) .nav-folder-title {
-  color: color-mix(in srgb, #9f8fef 10%, #ffffff 90%);
+  color: #f5f4fd;
 }
 
 .folder-title-violet .nav-folder:nth-of-type(11) .nav-folder-title {
-  color: color-mix(in srgb, #9f8fef 0%, #ffffff 100%);
+  color: #ffffff;
 }
 
 .folder-title-violet .nav-folder:nth-of-type(n + 12) .nav-folder-title {
-  color: color-mix(in srgb, #9f8fef 0%, #ffffff 100%);
+  color: #ffffff;
 }
 
 .folder-title-pink .nav-folder:nth-of-type(1) .nav-folder-title {
@@ -26290,142 +26290,142 @@ ul.dataview-ul {
 
 .link-red a {
   --link-color: #fb464c;
-  --link-color-hover: color-mix(in srgb, #fb464c 80%, #ffffff 20%);
+  --link-color-hover: #fc6b70;
 }
 
 .a-red a {
   --link-color: #fb464c;
-  --link-color-hover: color-mix(in srgb, #fb464c 80%, #ffffff 20%);
+  --link-color-hover: #fc6b70;
 }
 
 .link-orange a {
   --link-color: #e9973f;
-  --link-color-hover: color-mix(in srgb, #e9973f 80%, #ffffff 20%);
+  --link-color-hover: #edac65;
 }
 
 .a-orange a {
   --link-color: #e9973f;
-  --link-color-hover: color-mix(in srgb, #e9973f 80%, #ffffff 20%);
+  --link-color-hover: #edac65;
 }
 
 .link-yellow a {
   --link-color: #e0de71;
-  --link-color-hover: color-mix(in srgb, #e0de71 80%, #ffffff 20%);
+  --link-color-hover: #e6e58d;
 }
 
 .a-yellow a {
   --link-color: #e0de71;
-  --link-color-hover: color-mix(in srgb, #e0de71 80%, #ffffff 20%);
+  --link-color-hover: #e6e58d;
 }
 
 .link-lime a {
   --link-color: #bef264;
-  --link-color-hover: color-mix(in srgb, #bef264 80%, #ffffff 20%);
+  --link-color-hover: #cbf583;
 }
 
 .a-lime a {
   --link-color: #bef264;
-  --link-color-hover: color-mix(in srgb, #bef264 80%, #ffffff 20%);
+  --link-color-hover: #cbf583;
 }
 
 .link-green a {
   --link-color: #44cf6e;
-  --link-color-hover: color-mix(in srgb, #44cf6e 80%, #ffffff 20%);
+  --link-color-hover: #69d98b;
 }
 
 .a-green a {
   --link-color: #44cf6e;
-  --link-color-hover: color-mix(in srgb, #44cf6e 80%, #ffffff 20%);
+  --link-color-hover: #69d98b;
 }
 
 .link-cyan a {
   --link-color: #53dfdd;
-  --link-color-hover: color-mix(in srgb, #53dfdd 80%, #ffffff 20%);
+  --link-color-hover: #75e5e4;
 }
 
 .a-cyan a {
   --link-color: #53dfdd;
-  --link-color-hover: color-mix(in srgb, #53dfdd 80%, #ffffff 20%);
+  --link-color-hover: #75e5e4;
 }
 
 .link-sky a {
   --link-color: #4dabf7;
-  --link-color-hover: color-mix(in srgb, #4dabf7 80%, #ffffff 20%);
+  --link-color-hover: #71bcf9;
 }
 
 .a-sky a {
   --link-color: #4dabf7;
-  --link-color-hover: color-mix(in srgb, #4dabf7 80%, #ffffff 20%);
+  --link-color-hover: #71bcf9;
 }
 
 .link-blue a {
   --link-color: #027aff;
-  --link-color-hover: color-mix(in srgb, #027aff 80%, #ffffff 20%);
+  --link-color-hover: #3595ff;
 }
 
 .a-blue a {
   --link-color: #027aff;
-  --link-color-hover: color-mix(in srgb, #027aff 80%, #ffffff 20%);
+  --link-color-hover: #3595ff;
 }
 
 .link-indigo a {
   --link-color: #818cf8;
-  --link-color-hover: color-mix(in srgb, #818cf8 80%, #ffffff 20%);
+  --link-color-hover: #9aa3f9;
 }
 
 .a-indigo a {
   --link-color: #818cf8;
-  --link-color-hover: color-mix(in srgb, #818cf8 80%, #ffffff 20%);
+  --link-color-hover: #9aa3f9;
 }
 
 .link-violet a {
   --link-color: #9f8fef;
-  --link-color-hover: color-mix(in srgb, #9f8fef 80%, #ffffff 20%);
+  --link-color-hover: #b2a5f2;
 }
 
 .a-violet a {
   --link-color: #9f8fef;
-  --link-color-hover: color-mix(in srgb, #9f8fef 80%, #ffffff 20%);
+  --link-color-hover: #b2a5f2;
 }
 
 .link-pink a {
   --link-color: #fa99cd;
-  --link-color-hover: color-mix(in srgb, #fa99cd 80%, #ffffff 20%);
+  --link-color-hover: #fbadd7;
 }
 
 .a-pink a {
   --link-color: #fa99cd;
-  --link-color-hover: color-mix(in srgb, #fa99cd 80%, #ffffff 20%);
+  --link-color-hover: #fbadd7;
 }
 
 .link-gray a {
   --link-color: #ced4da;
-  --link-color-hover: color-mix(in srgb, #ced4da 80%, #ffffff 20%);
+  --link-color-hover: #d8dde1;
 }
 
 .a-gray a {
   --link-color: #ced4da;
-  --link-color-hover: color-mix(in srgb, #ced4da 80%, #ffffff 20%);
+  --link-color-hover: #d8dde1;
 }
 
 .link-white a {
   --link-color: #dcdcdc;
-  --link-color-hover: color-mix(in srgb, #dcdcdc 80%, #ffffff 20%);
+  --link-color-hover: #e3e3e3;
 }
 
 .a-white a {
   --link-color: #dcdcdc;
-  --link-color-hover: color-mix(in srgb, #dcdcdc 80%, #ffffff 20%);
+  --link-color-hover: #e3e3e3;
 }
 
 .link-accent a {
   --link-color: #8a5cf5;
-  --link-color-hover: color-mix(in srgb, #8a5cf5 80%, #ffffff 20%);
+  --link-color-hover: #a17df7;
 }
 
 .a-accent a {
   --link-color: #8a5cf5;
-  --link-color-hover: color-mix(in srgb, #8a5cf5 80%, #ffffff 20%);
+  --link-color-hover: #a17df7;
 }
 
 .quote-red {

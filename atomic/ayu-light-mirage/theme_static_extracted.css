@@ -2,10 +2,7 @@
   --accent-h: light-dark(35, 40);
   --accent-l: light-dark(60%, 70%);
   --accent-s: light-dark(100%, 100%);
-  --background-secondary-alt: light-dark(
-    color-mix(in srgb, #1f2430, #707a8c 5%),
-    color-mix(in srgb, #1f2430, #707a8c 30%)
-  );
+  --background-secondary-alt: light-dark(#232835, #373e4c);
   --color-accent: light-dark(#ffcc66, #ffcc66);
   --color-accent-1: light-dark(hsl(39, 101%, 75.25%), hsl(37, 102%, 80.5%));
   --color-accent-2: light-dark(hsl(37, 102%, 80.5%), hsl(35, 105%, 90.3%));
@@ -59,24 +56,21 @@ body {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   --background-modifier-active-hover: #ffcc6626;
-  --background-modifier-border: color-mix(in srgb, #1f2430, #707a8c 30%);
-  --background-modifier-border-focus: color-mix(in srgb, #1f2430, #707a8c 40%);
-  --background-modifier-border-hover: color-mix(in srgb, #1f2430, #707a8c 35%);
+  --background-modifier-border: #373e4c;
+  --background-modifier-border-focus: #3f4655;
+  --background-modifier-border-hover: #3b4250;
   --background-modifier-error: #f28779;
   --background-modifier-error-hover: #f28779;
   --background-modifier-error-rgb: 242 135 121;
-  --background-modifier-form-field: color-mix(in srgb, #1f2430, #707a8c 0%);
+  --background-modifier-form-field: #1f2430;
   --background-modifier-hover: #ffffff11;
   --background-modifier-message: #000000e6;
   --background-modifier-success: #d5ff80;
   --background-modifier-success-rgb: 213 255 128;
-  --background-primary: color-mix(in srgb, #1f2430, #707a8c 0%);
-  --background-primary-alt: color-mix(in srgb, #1f2430, #707a8c 10%);
-  --background-secondary: color-mix(in srgb, #1f2430, #707a8c 20%);
-  --background-secondary-alt: light-dark(
-    color-mix(in srgb, #1f2430, #707a8c 5%),
-    color-mix(in srgb, #1f2430, #707a8c 30%)
-  );
+  --background-primary: #1f2430;
+  --background-primary-alt: #272d39;
+  --background-secondary: #2f3542;
+  --background-secondary-alt: light-dark(#232835, #373e4c);
   --bases-embed-border: 1px solid #8a919966;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -153,7 +147,7 @@ body {
   --canvas-color-4: 213 255 128;
   --canvas-color-5: 149 230 203;
   --canvas-color-6: 223 191 255;
-  --canvas-dot-pattern: color-mix(in srgb, #1f2430, #707a8c 30%);
+  --canvas-dot-pattern: #373e4c;
   --caret-color: #cccac2;
   --checkbox-border-color: #8a919966;
   --checkbox-border-color-hover: #b8cfe680;
@@ -313,7 +307,7 @@ body {
   --footnote-radius: 4px;
   --footnote-size: 0.875em;
   --graph-controls-width: 240px;
-  --graph-line: color-mix(in srgb, #1f2430, #707a8c 35%);
+  --graph-line: #3b4250;
   --graph-node: #b8cfe680;
   --graph-node-attachment: #ffd073;
   --graph-node-focused: #ffcc66;
@@ -412,8 +406,8 @@ body {
   --interactive-accent: hsl(37, 102%, 80.5%);
   --interactive-accent-hover: hsl(35, 105%, 90.3%);
   --interactive-accent-hsl: 40, 100%, 70%;
-  --interactive-hover: color-mix(in srgb, #1f2430, #707a8c 10%);
-  --interactive-normal: color-mix(in srgb, #1f2430, #707a8c 0%);
+  --interactive-hover: #272d39;
+  --interactive-normal: #1f2430;
   --italic-color: inherit;
   --italic-weight: inherit;
   --layer-cover: 5;
@@ -513,7 +507,7 @@ body {
   --metadata-sidebar-input-font-size: 14.992px;
   --metadata-sidebar-label-font-size: 14.992px;
   --modal-background: #242936;
-  --modal-border-color: color-mix(in srgb, #1f2430, #707a8c 40%);
+  --modal-border-color: #3f4655;
   --modal-border-width: 0.5pt;
   --modal-community-sidebar-width: 280px;
   --modal-height: 85vh;
@@ -580,7 +574,7 @@ body {
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
   --popover-width: 450px;
-  --prompt-border-color: color-mix(in srgb, #1f2430, #707a8c 40%);
+  --prompt-border-color: #3f4655;
   --prompt-border-width: 0.5pt;
   --prompt-input-height: 40px;
   --prompt-max-height: 70vh;
@@ -735,11 +729,11 @@ body {
   --text-accent: #ffcc66;
   --text-accent-hover: hsl(35, 105%, 90.3%);
   --text-error: #f28779;
-  --text-faint: color-mix(in srgb, #1f2430, #707a8c 50%);
+  --text-faint: #474f5e;
   --text-highlight-bg: #ffd00066;
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: color-mix(in srgb, #1f2430, #707a8c 70%);
-  --text-normal: color-mix(in srgb, #1f2430, #707a8c 100%);
+  --text-muted: #586070;
+  --text-normal: #707a8c;
   --text-on-accent: #ffffff;
   --text-on-accent-inverted: #000000;
   --text-selection: #ffcc6633;
@@ -1222,7 +1216,7 @@ h6 {
 
 .prompt {
   background-color: #242936;
-  border: 0.5pt solid color-mix(in srgb, #1f2430, #707a8c 40%);
+  border: 0.5pt solid #3f4655;
   border-radius: 12px;
   box-shadow:
     0px 1.8px 7.3px #00000012,
@@ -1640,7 +1634,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-line {
-  color: color-mix(in srgb, #1f2430, #707a8c 35%);
+  color: #3b4250;
 }
 
 .graph-view.color-text {
@@ -1672,8 +1666,8 @@ svg.svg-icon {
   --accent-s: 100%;
   --background-modifier-box-shadow: #0000004d;
   --background-modifier-cover: #0a0a0a66;
-  --background-modifier-form-field: color-mix(in srgb, #1f2430, #707a8c 25%);
-  --background-secondary-alt: color-mix(in srgb, #1f2430, #707a8c 30%);
+  --background-modifier-form-field: #333947;
+  --background-secondary-alt: #373e4c;
   --color-accent: #ffcc66;
   --color-accent-1: hsl(37, 102%, 80.5%);
   --color-accent-2: hsl(35, 105%, 90.3%);
@@ -1728,8 +1722,8 @@ svg.svg-icon {
     0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
   --interactive-accent: #ffcc66;
   --interactive-accent-hover: hsl(37, 102%, 80.5%);
-  --interactive-hover: color-mix(in srgb, #1f2430, #707a8c 35%);
-  --interactive-normal: color-mix(in srgb, #1f2430, #707a8c 30%);
+  --interactive-hover: #3b4250;
+  --interactive-normal: #373e4c;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --pdf-shadow: 0 0 0 1px #8a919966;
@@ -1770,7 +1764,7 @@ svg.svg-icon {
   --accent-s: 100%;
   --background-modifier-box-shadow: #0000001a;
   --background-modifier-cover: #dcdcdc66;
-  --background-secondary-alt: color-mix(in srgb, #1f2430, #707a8c 5%);
+  --background-secondary-alt: #232835;
   --color-accent: #ffcc66;
   --color-accent-1: hsl(39, 101%, 75.25%);
   --color-accent-2: hsl(37, 102%, 80.5%);

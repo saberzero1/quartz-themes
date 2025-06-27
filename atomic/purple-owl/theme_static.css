@@ -1839,10 +1839,10 @@ body {
   --file-margins: 32px;
   --flair-background: #ffffff26;
   --flair-color: #abb2bf;
-  --font-adaptive-normal: 400;
-  --font-adaptive-small: 0.933em;
-  --font-adaptive-smaller: 0.875em;
-  --font-adaptive-smallest: 0.8em;
+  --font-adaptive-normal: 16px;
+  --font-adaptive-small: 13px;
+  --font-adaptive-smaller: 11px;
+  --font-adaptive-smallest: 10px;
   --font-black: 900;
   --font-bold: 700;
   --font-default:
@@ -2378,7 +2378,7 @@ body {
   contain: initial;
   font-family:
     "Monaspace Argon", "monolisa", menlo, SFMono-Regular, Consolas, monospace;
-  font-size: calc(400 + 4px);
+  font-size: 20px;
   font-weight: 400;
   height: 100%;
   line-height: 1.5;
@@ -4469,7 +4469,7 @@ body:not(.show-inline-title) .inline-title:not([data-level]) {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-size: calc(400 + 4px);
+  font-size: 20px;
   font-weight: 400;
   height: 100%;
   line-height: 1.5;
@@ -4779,7 +4779,7 @@ body:not(.show-ribbon) .workspace-ribbon {
   border-radius: 4px;
   box-shadow: 0 2px 8px #0000004d;
   color: #fafafa;
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   font-weight: 500;
   left: 50%;
   line-height: 1.2;
@@ -4823,7 +4823,7 @@ input {
   -webkit-font-smoothing: subpixel-antialiased;
   font-family:
     "Monaspace Argon", "monolisa", menlo, SFMono-Regular, Consolas, monospace;
-  font-size: calc(400 + 4px);
+  font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
   unicode-bidi: plaintext;
@@ -6007,7 +6007,7 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
   bottom: 0;
   color: light-dark(#03243e, #c792ea);
   display: flex;
-  font-size: calc(0.875em + 2px);
+  font-size: 13px;
   font-variant-numeric: tabular-nums;
   gap: 4px;
   justify-content: flex-end;
@@ -8165,7 +8165,7 @@ button.mod-destructive {
 .document-search-button {
   color: light-dark(#03243e, #c792ea);
   cursor: default;
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
 }
 
 .markdown-rendered .search-highlight > div {
@@ -9652,7 +9652,7 @@ select.mod-hidden {
   border-radius: 5px;
   cursor: default;
   display: flex;
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   gap: 8px;
   height: 24px;
   line-height: 20px;
@@ -10732,7 +10732,7 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 .suggestion-item {
   border-radius: 4px;
   cursor: default;
-  font-size: calc(400 + 4px);
+  font-size: 20px;
   margin-bottom: 1px;
   padding: 6px 12px;
   padding-inline-start: 12px;
@@ -10742,7 +10742,7 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 
 .suggestion-empty {
   color: light-dark(#03243e, #c792ea);
-  font-size: calc(400 + 4px);
+  font-size: 20px;
   margin-bottom: 1px;
   padding: 8px;
   padding-top: 12px;
@@ -11230,7 +11230,7 @@ body:not(.is-phone) .vertical-tab-header-group-items {
   border-radius: 4px;
   color: light-dark(#03243e, #c792ea);
   display: flex;
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   font-weight: inherit;
   line-height: 1.3;
   margin-bottom: 2px;
@@ -11387,7 +11387,7 @@ body:not(.is-phone)
   background: transparent;
   border-radius: 4px;
   color: #c792ea97;
-  font-size: calc(0.875em + 2px);
+  font-size: 13px;
   line-height: 1;
   right: 0;
 }
@@ -15287,7 +15287,7 @@ body.is-mobile .markdown-source-view.mod-cm6 .cm-underline {
   -webkit-font-smoothing: subpixel-antialiased;
   font-family:
     "Monaspace Argon", "monolisa", menlo, SFMono-Regular, Consolas, monospace;
-  font-size: calc(400 + 4px);
+  font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -15379,7 +15379,7 @@ body.is-mobile .markdown-source-view.mod-cm6 .cm-underline {
   color: light-dark(#03243e, #c792ea);
   font-family:
     "Monaspace Argon", "monolisa", menlo, SFMono-Regular, Consolas, monospace;
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
 }
 
 .cm-s-obsidian .cm-hmd-orgmode-markup {
@@ -15427,7 +15427,7 @@ body.is-mobile .markdown-source-view.mod-cm6 .cm-underline {
 }
 
 .cm-s-obsidian span.cm-footref {
-  font-size: calc(400 + 4px);
+  font-size: 20px;
   position: relative;
   top: -0.2em;
   vertical-align: text-top;
@@ -15907,7 +15907,7 @@ a.tag {
   display: inline-block;
   font-family:
     "Monaspace Argon", "monolisa", menlo, SFMono-Regular, Consolas, monospace;
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   font-weight: inherit;
   line-height: 1;
   margin: 2px 0 0 0;
@@ -16229,7 +16229,7 @@ em {
 .backlink-pane > .tree-item-self {
   background: transparent;
   color: light-dark(#03243e, #c792ea);
-  font-size: calc(0.8em + 2px);
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.05em;
   padding: 5px 7px 5px 10px;
@@ -16241,7 +16241,7 @@ em {
 .outgoing-link-pane > .tree-item-self {
   background: transparent;
   color: light-dark(#03243e, #c792ea);
-  font-size: calc(0.8em + 2px);
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.05em;
   padding: 5px 7px 5px 10px;
@@ -16287,7 +16287,7 @@ em {
   .backlink-pane > .tree-item-self:hover {
     background: transparent;
     color: light-dark(#03243e, #c792ea);
-    font-size: calc(0.8em + 2px);
+    font-size: 12px;
     font-weight: 500;
     letter-spacing: 0.05em;
     padding: 5px 7px 5px 10px;
@@ -16297,7 +16297,7 @@ em {
   .outgoing-link-pane > .tree-item-self:hover {
     background: transparent;
     color: light-dark(#03243e, #c792ea);
-    font-size: calc(0.8em + 2px);
+    font-size: 12px;
     font-weight: 500;
     letter-spacing: 0.05em;
     padding: 5px 7px 5px 10px;
@@ -17465,7 +17465,7 @@ em {
   color: light-dark(#03243e, #c792ea);
   cursor: default;
   display: flex;
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   font-weight: inherit;
   line-height: 1.5;
   margin: 0 0 0 8px;
@@ -17482,7 +17482,7 @@ em {
   color: light-dark(#03243e, #c792ea);
   cursor: default;
   display: flex;
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   font-weight: inherit;
   line-height: 1.6;
   margin: 0 8px 0 -4px;
@@ -17903,17 +17903,17 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .graph-controls input[type="text"] {
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   width: 100%;
 }
 
 .graph-controls input[type="range"] {
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   width: 100%;
 }
 
 .graph-controls .mod-cta {
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   margin-top: 6px;
   padding: 5px;
   width: 100%;
@@ -17958,7 +17958,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .graph-controls .setting-item-name {
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
 }
 
 .graph-controls::-webkit-scrollbar {
@@ -18079,7 +18079,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .graph-control-section-header {
   color: light-dark(#03243e, #c792ea);
-  font-size: calc(0.8em + 2px);
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -18500,7 +18500,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 .search-input-container input {
   background-color: light-dark(#f78c6c, #021d33);
   display: block;
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   padding: 5px 10px;
   padding-inline-start: 36px;
   width: 100%;
@@ -18633,7 +18633,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
   border-radius: 0;
   color: light-dark(#03243e, #c792ea);
   cursor: default;
-  font-size: calc(0.875em + 2px);
+  font-size: 13px;
   font-weight: 600;
   margin: 0;
   padding: 0 0 0 8px;
@@ -18670,7 +18670,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .search-empty-state {
   color: #c792ea97;
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   margin: 0;
   padding-inline-start: 8px;
   padding-left: 5px;
@@ -18691,7 +18691,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
   border-radius: 4px;
   box-shadow: 0 0 0 1px light-dark(#bb7ae6, #03243e);
   color: light-dark(#03243e, #c792ea);
-  font-size: calc(0.875em + 2px);
+  font-size: 13px;
   line-height: 1.3;
   margin: 4px 0 8px;
   margin-bottom: 8px;
@@ -18705,7 +18705,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .search-info-more-matches {
   color: light-dark(#c792ea, #abb2bf);
-  font-size: calc(0.875em + 2px);
+  font-size: 13px;
   padding-bottom: 4px;
   padding-top: 4px;
 }
@@ -18778,7 +18778,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .search-info-container {
   color: #c792ea97;
-  font-size: calc(0.875em + 2px);
+  font-size: 13px;
   padding: 4px 16px 8px;
   padding-bottom: 5px;
   padding-top: 5px;
@@ -19392,7 +19392,7 @@ body:not(.is-phone)
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   overflow: hidden;
   padding: 20px 40px 20px 20px;
 }
@@ -21493,10 +21493,10 @@ body.is-screenshotting *::-webkit-scrollbar {
   --checkbox-size: 17px;
   --cursor: pointer;
   --file-margins: 8px 24px;
-  --font-adaptive-normal: calc(400 + 4px);
-  --font-adaptive-small: calc(0.933em + 3px);
-  --font-adaptive-smaller: calc(0.875em + 2px);
-  --font-adaptive-smallest: calc(0.8em + 2px);
+  --font-adaptive-normal: 20px;
+  --font-adaptive-small: 16px;
+  --font-adaptive-smaller: 13px;
+  --font-adaptive-smallest: 12px;
   --font-settings: 16px;
   --font-settings-small: 13px;
   --font-ui-large: 19.2px;
@@ -21637,7 +21637,7 @@ body.is-mobile.keyboard-animating .app-container {
 .is-mobile .empty-state-action {
   background-color: #bf83e7;
   border-radius: 6px;
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   margin: 12px 0;
   padding: 6px 30px;
   text-align: center;
@@ -23867,7 +23867,7 @@ body.is-ios .mobile-tab-switcher-inner-scroll {
 }
 
 .is-mobile .suggestion-item {
-  font-size: calc(400 + 4px);
+  font-size: 20px;
   letter-spacing: 0.001px;
   padding: 8px 12px;
   padding-left: 10px;
@@ -24955,7 +24955,7 @@ body:not(.is-mobile)
 
 #calendar-container .reset-button {
   cursor: default;
-  font-size: calc(0.875em + 2px);
+  font-size: 13px;
 }
 
 #calendar-container .reset-button:hover {
@@ -24963,12 +24963,12 @@ body:not(.is-mobile)
 }
 
 #calendar-container .title {
-  font-size: calc(400 + 4px);
+  font-size: 20px;
   font-weight: 400;
 }
 
 #calendar-container .month {
-  font-size: calc(400 + 4px);
+  font-size: 20px;
   font-weight: 400;
 }
 
@@ -25015,7 +25015,7 @@ body:not(.is-mobile)
 }
 
 .markdown-preview-view .table-view-table {
-  font-size: calc(400 + 3px);
+  font-size: 19px;
 }
 
 .markdown-preview-view .table-view-table > thead > tr > th {
@@ -25023,7 +25023,7 @@ body:not(.is-mobile)
   border-color: light-dark(#bb7ae6, #03243e);
   color: light-dark(#c792ea, #abb2bf);
   cursor: default;
-  font-size: vcalc(400 + 3px);
+  font-size: 19px;
   font-weight: 600;
 }
 
@@ -25050,7 +25050,7 @@ body .kanban-plugin__board {
 
 body .kanban-plugin__checkbox-label {
   color: light-dark(#03243e, #c792ea);
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
 }
 
 body .kanban-plugin__item-content-wrapper {
@@ -25059,26 +25059,26 @@ body .kanban-plugin__item-content-wrapper {
 
 body .kanban-plugin__grow-wrap > textarea {
   border: 0;
-  font-size: calc(400 + 2px);
+  font-size: 18px;
   padding: 0;
 }
 
 body .kanban-plugin__grow-wrap::after {
   border: 0;
-  font-size: calc(400 + 2px);
+  font-size: 18px;
   padding: 0;
 }
 
 body .kanban-plugin__item-title p {
-  font-size: calc(400 + 2px);
+  font-size: 18px;
 }
 
 .kanban-plugin__item-input-actions button {
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
 }
 
 .kanban-plugin__lane-input-actions button {
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
 }
 
 body .kanban-plugin__item {
@@ -25173,7 +25173,7 @@ body .kanban-plugin__new-lane-button-wrapper {
 body .kanban-plugin__item-button-wrapper > button {
   background: transparent;
   color: light-dark(#03243e, #c792ea);
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
 }
 
 body .kanban-plugin__item-button-wrapper > button:hover {
@@ -25225,7 +25225,7 @@ body button.kanban-plugin__new-lane-button {
   background: transparent;
   border-radius: 0;
   cursor: default;
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   margin: 1px auto;
   padding: 0;
 }
@@ -25234,7 +25234,7 @@ body button.kanban-plugin__new-lane-button {
   background: transparent;
   border-radius: 0;
   cursor: default;
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   margin: 1px auto;
   padding: 0;
 }
@@ -25256,7 +25256,7 @@ body button.kanban-plugin__new-lane-button {
 
 .checklist-plugin-main .title {
   color: light-dark(#03243e, #c792ea);
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -25323,7 +25323,7 @@ body button.kanban-plugin__new-lane-button {
 .checklist-plugin-main .group .count {
   background: transparent;
   color: #c792ea97;
-  font-size: calc(0.875em + 2px);
+  font-size: 13px;
   font-weight: 400;
   padding: 0;
 }
@@ -25354,7 +25354,7 @@ body button.kanban-plugin__new-lane-button {
   color: light-dark(#03243e, #c792ea);
   font-family:
     "Monaspace Argon", "monolisa", menlo, SFMono-Regular, Consolas, monospace;
-  font-size: calc(400 + 4px);
+  font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -25610,7 +25610,7 @@ body button.kanban-plugin__new-lane-button {
   display: inline-block;
   font-family:
     "Monaspace Argon", "monolisa", menlo, SFMono-Regular, Consolas, monospace;
-  font-size: calc(0.875em + 2px);
+  font-size: 13px;
   margin: 2px 0 0 0;
   padding: 2px 8px;
   text-align: center;
@@ -25627,7 +25627,7 @@ body button.kanban-plugin__new-lane-button {
   display: inline-block;
   font-family:
     "Monaspace Argon", "monolisa", menlo, SFMono-Regular, Consolas, monospace;
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   margin: 2px 0;
   padding-bottom: 2px;
   padding-top: 1px;
@@ -25693,7 +25693,7 @@ span.cm-hashtag.cm-hashtag-end {
 .sync-history-list-item {
   border-radius: 4px;
   cursor: default;
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   margin-bottom: 4px;
   padding: 4px 8px;
 }
@@ -25742,7 +25742,7 @@ span.cm-hashtag.cm-hashtag-end {
   color: light-dark(#03243e, #c792ea);
   font-family:
     "Monaspace Argon", "monolisa", menlo, SFMono-Regular, Consolas, monospace;
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
 }
 
 .markdown-source-view .cm-s-obsidian .cm-hmd-frontmatter {
@@ -26089,7 +26089,7 @@ span.cm-hashtag.cm-hashtag-end {
 .CodeMirror-linenumber {
   color: #c792ea97;
   font-feature-settings: "tnum";
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   padding-top: 3px;
 }
 
@@ -26174,14 +26174,14 @@ span.cm-hashtag.cm-hashtag-end {
 }
 
 .cm-s-obsidian pre.HyperMD-footnote {
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   padding-left: 20px;
 }
 
 .CodeMirror pre.HyperMD-table-row {
   font-family:
     "Monaspace Argon", "monolisa", menlo, SFMono-Regular, Consolas, monospace;
-  font-size: calc(400 + 3px);
+  font-size: 19px;
 }
 
 .cm-formatting-list {
@@ -26197,7 +26197,7 @@ span.cm-hashtag.cm-hashtag-end {
 }
 
 .mod-search-suggestion .suggestion-item {
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
 }
 
 .mod-search-suggestion .clickable-icon {
@@ -26235,7 +26235,7 @@ input.document-search-input {
   background: #c894eb;
   border: 1px solid light-dark(#bb7ae6, #03243e);
   border-radius: 5px;
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   margin-top: 2px;
   transition: border-color 0.1s ease-in-out;
 }
@@ -26244,7 +26244,7 @@ input.document-replace-input {
   background: #c894eb;
   border: 1px solid light-dark(#bb7ae6, #03243e);
   border-radius: 5px;
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   margin-top: 2px;
   transition: border-color 0.1s ease-in-out;
 }
@@ -26274,7 +26274,7 @@ input.document-replace-input:focus {
 }
 
 .workspace > .workspace-split:not(.mod-root) .CodeMirror {
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   line-height: 1.2;
   max-width: 100%;
   padding: 0;
@@ -26282,7 +26282,7 @@ input.document-replace-input:focus {
 }
 
 .workspace > .workspace-split:not(.mod-root) .markdown-preview-view {
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   line-height: 1.2;
 }
 
@@ -26456,20 +26456,20 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 
 .is-collapsed .search-result-file-title {
   color: light-dark(#03243e, #c792ea);
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
 }
 
 .tag-pane-tag {
   color: light-dark(#03243e, #c792ea);
   cursor: default;
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   padding: 2px 5px 2px 5px;
 }
 
 .search-result-file-title {
   color: light-dark(#c792ea, #abb2bf);
   cursor: default;
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.3;
   overflow: hidden;
@@ -26482,7 +26482,7 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 .side-dock-collapsible-section-header {
   color: light-dark(#03243e, #c792ea);
   cursor: default;
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   margin-left: 0;
   margin-right: 0;
 }
@@ -26811,20 +26811,20 @@ h5:hover .heading-collapse-indicator.collapse-indicator svg {
 }
 
 .outline {
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   padding: 15px 10px 20px 0;
 }
 
 .outline .pane-empty {
   color: #c792ea97;
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   padding: 0 0 0 15px;
   width: 100%;
 }
 
 .outline .collapsible-item-self {
   cursor: default;
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   line-height: 1.4;
   margin-bottom: 4px;
   padding-left: 15px;
@@ -26869,13 +26869,13 @@ h5:hover .heading-collapse-indicator.collapse-indicator svg {
 
 .search-input-container input:hover {
   background-color: light-dark(#f78c6c, #021d33);
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   padding: 5px 10px;
 }
 
 .search-input-container input:focus {
   background-color: light-dark(#f78c6c, #021d33);
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   padding: 5px 10px;
 }
 
@@ -26918,7 +26918,7 @@ input.search-input:focus {
   background: #c894eb;
   border: 1px solid light-dark(#bb7ae6, #03243e);
   border-radius: 5px;
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   height: 28px;
   padding: 7px 10px;
   transition: border-color 0.1s ease-in-out;
@@ -26929,7 +26929,7 @@ input.search-input:focus {
   border: 1px solid light-dark(#bb7ae6, #03243e);
   border-color: light-dark(#ad60e1, #c792ea);
   border-radius: 5px;
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   height: 28px;
   padding: 7px 10px;
   transition: border-color 0.1s ease-in-out;
@@ -26940,7 +26940,7 @@ input.search-input:focus {
   border: 1px solid light-dark(#bb7ae6, #03243e);
   border-color: light-dark(#9c3eda, #ecc48d);
   border-radius: 5px;
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   height: 28px;
   padding: 7px 10px;
   transition: all 0.1s ease-in-out;
@@ -26948,7 +26948,7 @@ input.search-input:focus {
 
 .search-input-container input::placeholder {
   color: #c792ea97;
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
 }
 
 .workspace-split.mod-root
@@ -27131,7 +27131,7 @@ a[href*="obsidian://search"]
 }
 
 .footnotes-list {
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   margin-block-start: -10px;
   padding-inline-start: 20px;
 }
@@ -27177,14 +27177,14 @@ a[href*="obsidian://search"]
   border: 0;
   border-bottom: 1px solid light-dark(#bb7ae6, #03243e);
   border-radius: 0;
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   margin: 0;
   padding: 10px 0;
 }
 
 .frontmatter-container .frontmatter-container-header {
   border-bottom: 0;
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   font-weight: 500;
   padding: 0;
 }
@@ -27626,11 +27626,11 @@ body.minimal-folding.is-mobile .view-header-title {
 }
 
 .is-mobile .workspace-drawer-tab-option-item-title {
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
 }
 
 .is-mobile .workspace-drawer-active-tab-title {
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
 }
 
 .is-mobile
@@ -27652,52 +27652,52 @@ body.minimal-folding.is-mobile .view-header-title {
 }
 
 .is-mobile .nav-file-title {
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   line-height: 1.5;
   margin-bottom: 4px;
 }
 
 .is-mobile .nav-folder-title {
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   line-height: 1.5;
   margin-bottom: 4px;
 }
 
 .is-mobile .outline {
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   line-height: 1.5;
   margin-bottom: 4px;
 }
 
 .is-mobile .tree-item-self {
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   line-height: 1.5;
   margin-bottom: 4px;
 }
 
 .is-mobile .tag-container {
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   line-height: 1.5;
   margin-bottom: 4px;
   padding-top: 10px;
 }
 
 .is-mobile .tag-pane-tag {
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   line-height: 1.5;
   margin-bottom: 4px;
 }
 
 .is-mobile .backlink-pane > .tree-item-self {
-  font-size: calc(0.8em + 2px);
+  font-size: 12px;
 }
 
 .is-mobile .outgoing-link-pane > .tree-item-self {
-  font-size: calc(0.8em + 2px);
+  font-size: 12px;
 }
 
 .is-mobile .tree-item-flair {
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
 }
 
 .is-mobile .nav-files-container {
@@ -27709,11 +27709,11 @@ body.minimal-folding.is-mobile .view-header-title {
 }
 
 .is-mobile .search-result-file-matches {
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
 }
 
 .is-mobile .search-result-file-title {
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
 }
 
 .is-mobile .cm-s-obsidian .cm-gutters {
@@ -27735,7 +27735,7 @@ body:not(.is-ios).is-mobile .workspace-drawer-ribbon {
 
 .is-mobile .workspace-drawer-header-info {
   color: #c792ea97;
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   margin-bottom: 5px;
 }
 
@@ -27872,13 +27872,13 @@ body:not(.is-ios).is-mobile .workspace-drawer-ribbon {
 }
 
 .is-mobile input[type="text"].prompt-input {
-  font-size: calc(400 + 4px);
+  font-size: 20px;
   line-height: 2;
   padding: 8px;
 }
 
 .is-mobile input[type="text"].prompt-input:hover {
-  font-size: calc(400 + 4px);
+  font-size: 20px;
   line-height: 2;
   padding: 8px;
 }
@@ -28052,7 +28052,7 @@ body:not(.is-ios).is-mobile .workspace-drawer-ribbon {
 }
 
 .is-mobile .sync-history-list-item {
-  font-size: calc(0.933em + 3px);
+  font-size: 16px;
   padding: 8px 10px;
 }
 
@@ -28132,10 +28132,10 @@ body:not(.is-ios).is-mobile .workspace-drawer-ribbon {
     word-break: break-word;
   }
   .is-mobile .frontmatter-container .tag {
-    font-size: calc(0.875em + 2px);
+    font-size: 13px;
   }
   .is-mobile .tag {
-    font-size: calc(0.875em + 2px);
+    font-size: 13px;
   }
 
   .is-mobile .markdown-preview-sizer > div {

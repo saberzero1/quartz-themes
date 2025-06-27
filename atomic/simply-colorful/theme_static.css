@@ -13629,7 +13629,7 @@ input.metadata-property-key-input:focus {
 
 h1 {
   --font-weight: 700;
-  background-color: color-mix(in srgb, #2471d4 7%, transparent);
+  background-color: #2471d412;
   border-radius: 4px;
   color: #2471d4;
   font-family: inherit;
@@ -13648,7 +13648,7 @@ h1 {
 
 h2 {
   --font-weight: 700;
-  background-color: color-mix(in srgb, #9149e4 7%, transparent);
+  background-color: #9149e412;
   border-radius: 4px;
   color: #9149e4;
   font-family: inherit;
@@ -13667,7 +13667,7 @@ h2 {
 
 h3 {
   --font-weight: 700;
-  background-color: color-mix(in srgb, #e0308d 7%, transparent);
+  background-color: #e0308d12;
   border-radius: 4px;
   color: #e0308d;
   font-family: inherit;
@@ -13686,7 +13686,7 @@ h3 {
 
 h4 {
   --font-weight: 700;
-  background-color: color-mix(in srgb, #e03035 7%, transparent);
+  background-color: #e0303512;
   border-radius: 4px;
   color: #e03035;
   font-family: inherit;
@@ -13705,7 +13705,7 @@ h4 {
 
 h5 {
   --font-weight: 700;
-  background-color: color-mix(in srgb, #e08330 7%, transparent);
+  background-color: #e0833012;
   border-radius: 4px;
   color: #e08330;
   font-family: inherit;
@@ -13724,7 +13724,7 @@ h5 {
 
 h6 {
   --font-weight: 700;
-  background-color: color-mix(in srgb, #cec92a 7%, transparent);
+  background-color: #cec92a12;
   border-radius: 4px;
   color: #cec92a;
   font-family: inherit;
@@ -23836,7 +23836,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable.nav-file-title:hover {
 }
 
 .view-content.node-insert-event .tree-item .tree-item-inner {
-  background-color: color-mix(in srgb, #2471d4 7%, transparent);
+  background-color: #2471d412;
   color: #2471d4;
 }
 
@@ -23844,7 +23844,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable.nav-file-title:hover {
   .tree-item
   .tree-item-self.is-active
   .tree-item-inner {
-  background-color: color-mix(in srgb, #2471d4 20%, transparent);
+  background-color: #2471d433;
   color: #2471d4;
 }
 
@@ -23852,14 +23852,14 @@ body:not(.is-grabbing) .tree-item-self.is-clickable.nav-file-title:hover {
   .tree-item
   .tree-item-self.is-clickable:hover
   .tree-item-inner {
-  background-color: color-mix(in srgb, #2471d4 20%, transparent);
+  background-color: #2471d433;
   border-left: 2px solid #2471d4;
   color: #2471d4;
   padding-left: 4px;
 }
 
 .view-content.node-insert-event .tree-item .tree-item .tree-item-inner {
-  background-color: color-mix(in srgb, #9149e4 7%, transparent);
+  background-color: #9149e412;
   color: #9149e4;
 }
 
@@ -23868,7 +23868,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable.nav-file-title:hover {
   .tree-item
   .tree-item-self.is-active
   .tree-item-inner {
-  background-color: color-mix(in srgb, #9149e4 20%, transparent);
+  background-color: #9149e433;
   color: #9149e4;
 }
 
@@ -23877,7 +23877,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable.nav-file-title:hover {
   .tree-item
   .tree-item-self.is-clickable:hover
   .tree-item-inner {
-  background-color: color-mix(in srgb, #9149e4 20%, transparent);
+  background-color: #9149e433;
   border-left: 2px solid #9149e4;
   color: #9149e4;
   padding-left: 4px;
@@ -23888,7 +23888,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable.nav-file-title:hover {
   .tree-item
   .tree-item
   .tree-item-inner {
-  background-color: color-mix(in srgb, #e0308d 7%, transparent);
+  background-color: #e0308d12;
   color: #e0308d;
 }
 
@@ -23898,7 +23898,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable.nav-file-title:hover {
   .tree-item
   .tree-item-self.is-active
   .tree-item-inner {
-  background-color: color-mix(in srgb, #e0308d 20%, transparent);
+  background-color: #e0308d33;
   color: #e0308d;
 }
 
@@ -23908,7 +23908,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable.nav-file-title:hover {
   .tree-item
   .tree-item-self.is-clickable:hover
   .tree-item-inner {
-  background-color: color-mix(in srgb, #e0308d 20%, transparent);
+  background-color: #e0308d33;
   border-left: 2px solid #e0308d;
   color: #e0308d;
   padding-left: 4px;
@@ -23920,7 +23920,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable.nav-file-title:hover {
   .tree-item
   .tree-item
   .tree-item-inner {
-  background-color: color-mix(in srgb, #e03035 7%, transparent);
+  background-color: #e0303512;
   color: #e03035;
 }
 
@@ -23931,7 +23931,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable.nav-file-title:hover {
   .tree-item
   .tree-item-self.is-active
   .tree-item-inner {
-  background-color: color-mix(in srgb, #e03035 20%, transparent);
+  background-color: #e0303533;
   color: #e03035;
 }
 
@@ -23942,7 +23942,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable.nav-file-title:hover {
   .tree-item
   .tree-item-self.is-clickable:hover
   .tree-item-inner {
-  background-color: color-mix(in srgb, #e03035 20%, transparent);
+  background-color: #e0303533;
   border-left: 2px solid #e03035;
   color: #e03035;
   padding-left: 4px;
@@ -23955,7 +23955,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable.nav-file-title:hover {
   .tree-item
   .tree-item
   .tree-item-inner {
-  background-color: color-mix(in srgb, #e08330 7%, transparent);
+  background-color: #e0833012;
   color: #e08330;
 }
 
@@ -23967,7 +23967,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable.nav-file-title:hover {
   .tree-item
   .tree-item-self.is-active
   .tree-item-inner {
-  background-color: color-mix(in srgb, #e08330 20%, transparent);
+  background-color: #e0833033;
   color: #e08330;
 }
 
@@ -23979,7 +23979,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable.nav-file-title:hover {
   .tree-item
   .tree-item-self.is-clickable:hover
   .tree-item-inner {
-  background-color: color-mix(in srgb, #e08330 20%, transparent);
+  background-color: #e0833033;
   border-left: 2px solid #e08330;
   color: #e08330;
   padding-left: 4px;
@@ -23993,7 +23993,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable.nav-file-title:hover {
   .tree-item
   .tree-item
   .tree-item-inner {
-  background-color: color-mix(in srgb, #cec92a 7%, transparent);
+  background-color: #cec92a12;
   color: #cec92a;
 }
 
@@ -24006,7 +24006,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable.nav-file-title:hover {
   .tree-item
   .tree-item-self.is-active
   .tree-item-inner {
-  background-color: color-mix(in srgb, #cec92a 20%, transparent);
+  background-color: #cec92a33;
   color: #cec92a;
 }
 
@@ -24019,7 +24019,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable.nav-file-title:hover {
   .tree-item
   .tree-item-self.is-clickable:hover
   .tree-item-inner {
-  background-color: color-mix(in srgb, #cec92a 20%, transparent);
+  background-color: #cec92a33;
   border-left: 2px solid #cec92a;
   color: #cec92a;
   padding-left: 4px;
@@ -24044,27 +24044,27 @@ body:not(.is-grabbing) .tree-item-self.is-clickable.nav-file-title:hover {
 }
 
 h1:hover {
-  background-color: color-mix(in srgb, #2471d4 20%, transparent);
+  background-color: #2471d433;
 }
 
 h2:hover {
-  background-color: color-mix(in srgb, #9149e4 20%, transparent);
+  background-color: #9149e433;
 }
 
 h3:hover {
-  background-color: color-mix(in srgb, #e0308d 20%, transparent);
+  background-color: #e0308d33;
 }
 
 h4:hover {
-  background-color: color-mix(in srgb, #e03035 20%, transparent);
+  background-color: #e0303533;
 }
 
 h5:hover {
-  background-color: color-mix(in srgb, #e08330 20%, transparent);
+  background-color: #e0833033;
 }
 
 h6:hover {
-  background-color: color-mix(in srgb, #cec92a 20%, transparent);
+  background-color: #cec92a33;
 }
 
 .cm-s-obsidian.is-live-preview .cm-line.HyperMD-header {
@@ -24077,8 +24077,8 @@ h6:hover {
     180deg,
     transparent 0px,
     transparent 0rem,
-    color-mix(in srgb, #2471d4 7%, transparent) 0rem,
-    color-mix(in srgb, #2471d4 7%, transparent) 100%,
+    #2471d412 0rem,
+    #2471d412 100%,
     transparent 100%,
     transparent 100%
   );
@@ -24089,8 +24089,8 @@ h6:hover {
     180deg,
     transparent 0px,
     transparent 0rem,
-    color-mix(in srgb, #9149e4 7%, transparent) 0rem,
-    color-mix(in srgb, #9149e4 7%, transparent) 100%,
+    #9149e412 0rem,
+    #9149e412 100%,
     transparent 100%,
     transparent 100%
   );
@@ -24101,8 +24101,8 @@ h6:hover {
     180deg,
     transparent 0px,
     transparent 0rem,
-    color-mix(in srgb, #e0308d 7%, transparent) 0rem,
-    color-mix(in srgb, #e0308d 7%, transparent) 100%,
+    #e0308d12 0rem,
+    #e0308d12 100%,
     transparent 100%,
     transparent 100%
   );
@@ -24113,8 +24113,8 @@ h6:hover {
     180deg,
     transparent 0px,
     transparent 0rem,
-    color-mix(in srgb, #e03035 7%, transparent) 0rem,
-    color-mix(in srgb, #e03035 7%, transparent) 100%,
+    #e0303512 0rem,
+    #e0303512 100%,
     transparent 100%,
     transparent 100%
   );
@@ -24125,8 +24125,8 @@ h6:hover {
     180deg,
     transparent 0px,
     transparent 0rem,
-    color-mix(in srgb, #e08330 7%, transparent) 0rem,
-    color-mix(in srgb, #e08330 7%, transparent) 100%,
+    #e0833012 0rem,
+    #e0833012 100%,
     transparent 100%,
     transparent 100%
   );
@@ -24137,8 +24137,8 @@ h6:hover {
     180deg,
     transparent 0px,
     transparent 0rem,
-    color-mix(in srgb, #cec92a 7%, transparent) 0rem,
-    color-mix(in srgb, #cec92a 7%, transparent) 100%,
+    #cec92a12 0rem,
+    #cec92a12 100%,
     transparent 100%,
     transparent 100%
   );

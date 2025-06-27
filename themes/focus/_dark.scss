@@ -1,0 +1,122 @@
+:root:root,
+html[saved-theme="dark"] {
+  color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
+  --background-modifier-box-shadow: #0000004d;
+  --background-modifier-cover: #0a0a0a66;
+  --background-modifier-form-field: #ffffff26;
+
+  --color-accent-rgb: 165, 230, 147;
+
+  --color-base-15: #1a1a1a;
+
+  --color-base-80: #c0c0c0;
+  --color-base-90: #e0e0e0;
+
+  --color-blue-rgb: 151, 192, 243;
+  --color-complement: hsl(285.3488372093deg, 100%, 83.137254902%);
+  --color-complement-1: hsl(285.3488372093deg, 100%, 73.13725%);
+  --color-complement-2: hsl(285.3488372093deg, 100%, 93.13725%);
+  --color-complement-hsl: 285.3488372093deg, 100%, 83.137254902%;
+  --color-complement-rgb: 234, 169, 255;
+
+  --color-cyan-rgb: 139, 240, 219;
+
+  --color-green-rgb: 165, 230, 147;
+
+  --color-orange-rgb: 255, 200, 163;
+
+  --color-pink-rgb: 234, 169, 255;
+
+  --color-purple-rgb: 172, 157, 242;
+
+  --color-red-rgb: 245, 152, 143;
+
+  --color-yellow-rgb: 240, 227, 149;
+  --highlight-mix-blend-mode: lighten;
+  --input-shadow: 0 0 0 0 transparent;
+  --input-shadow-hover: 0 0 0 0 transparent;
+  --interactive-accent: hsl(106.9879518072deg, 62.4060150376%, 73.9215686275%);
+  --interactive-accent-hover: hsl(106.9879518072deg, 62.4060150376%, 83.92157%);
+  --interactive-hover: #303030;
+  --interactive-normal: #222222;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --pdf-shadow: 0 0 0 1px transparent;
+  --pdf-thumbnail-shadow: 0 0 0 1px transparent;
+  --shadow-l:
+    0px 1.8px 7.3px #0000000d, 0px 6.3px 24.7px #0000001a,
+    0px 30px 90px #00000026;
+  --shadow-s:
+    0px 1px 2px #0000000d, 0px 3.4px 6.7px #0000001a, 0px 15px 30px #00000026;
+  --text-accent: hsl(106.9879518072deg, 62.4060150376%, 73.9215686275%);
+  --text-accent-hover: hsl(106.9879518072deg, 62.4060150376%, 83.92157%);
+  --text-complement: hsl(285.3488372093deg, 100%, 83.137254902%);
+  --text-complement-hover: hsl(285.3488372093deg, 100%, 93.13725%);
+  --text-selection: #ffffff33;
+  --background-modifier-box-shadow: #0000004d;
+  --background-modifier-cover: #0a0a0a66;
+  --background-modifier-form-field: #ffffff26;
+
+  --color-accent-rgb: 165, 230, 147;
+
+  --color-base-15: #1a1a1a;
+
+  --color-base-80: #c0c0c0;
+  --color-base-90: #e0e0e0;
+
+  --color-blue-rgb: 151, 192, 243;
+  --color-complement: hsl(285.3488372093deg, 100%, 83.137254902%);
+  --color-complement-1: hsl(285.3488372093deg, 100%, 73.13725%);
+  --color-complement-2: hsl(285.3488372093deg, 100%, 93.13725%);
+  --color-complement-hsl: 285.3488372093deg, 100%, 83.137254902%;
+  --color-complement-rgb: 234, 169, 255;
+
+  --color-cyan-rgb: 139, 240, 219;
+
+  --color-green-rgb: 165, 230, 147;
+
+  --color-orange-rgb: 255, 200, 163;
+
+  --color-pink-rgb: 234, 169, 255;
+
+  --color-purple-rgb: 172, 157, 242;
+
+  --color-red-rgb: 245, 152, 143;
+
+  --color-yellow-rgb: 240, 227, 149;
+  --highlight-mix-blend-mode: lighten;
+  --input-shadow: 0 0 0 0 transparent;
+  --input-shadow-hover: 0 0 0 0 transparent;
+  --interactive-accent: hsl(106.9879518072deg, 62.4060150376%, 73.9215686275%);
+  --interactive-accent-hover: hsl(106.9879518072deg, 62.4060150376%, 83.92157%);
+  --interactive-hover: #303030;
+  --interactive-normal: #222222;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --pdf-shadow: 0 0 0 1px transparent;
+  --pdf-thumbnail-shadow: 0 0 0 1px transparent;
+  --shadow-l:
+    0px 1.8px 7.3px #0000000d, 0px 6.3px 24.7px #0000001a,
+    0px 30px 90px #00000026;
+  --shadow-s:
+    0px 1px 2px #0000000d, 0px 3.4px 6.7px #0000001a, 0px 15px 30px #00000026;
+  --text-accent: hsl(106.9879518072deg, 62.4060150376%, 73.9215686275%);
+  --text-accent-hover: hsl(106.9879518072deg, 62.4060150376%, 83.92157%);
+  --text-complement: hsl(285.3488372093deg, 100%, 83.137254902%);
+  --text-complement-hover: hsl(285.3488372093deg, 100%, 93.13725%);
+  --text-selection: #ffffff33;
+}

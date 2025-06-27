@@ -1,8 +1,5 @@
 :root {
-  --background-secondary-alt: light-dark(
-    color-mix(in srgb, #000000 40%, #000),
-    color-mix(in srgb, #000000 90%, #cccccc)
-  );
+  --background-secondary-alt: light-dark(#000000, #141414);
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
   --color-accent-1: light-dark(#9873f7, #a68af9);
   --color-accent-2: light-dark(#a68af9, #c5b6fc);
@@ -56,9 +53,9 @@ body {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   --background-modifier-active-hover: #8a5cf526;
-  --background-modifier-border: color-mix(in srgb, #000000 90%, #cccccc);
-  --background-modifier-border-focus: color-mix(in srgb, #000000 80%, #cccccc);
-  --background-modifier-border-hover: color-mix(in srgb, #000000 95%, #cccccc);
+  --background-modifier-border: #141414;
+  --background-modifier-border-focus: #292929;
+  --background-modifier-border-hover: #0a0a0a;
   --background-modifier-error: #fb464c;
   --background-modifier-error-hover: #fb464c;
   --background-modifier-error-rgb: 251, 70, 76;
@@ -70,11 +67,8 @@ body {
   --background-primary: #000;
   --background-primary-alt: #111;
   --background-secondary: #1e1e1e;
-  --background-secondary-alt: light-dark(
-    color-mix(in srgb, #000000 40%, #000),
-    color-mix(in srgb, #000000 90%, #cccccc)
-  );
-  --bases-embed-border: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
+  --background-secondary-alt: light-dark(#000000, #141414);
+  --bases-embed-border: 1px solid #292929;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
   --bases-header-border-width: 0 0 1px 0;
@@ -93,7 +87,7 @@ body {
   --bases-table-container-border-width: 1px;
   --bases-table-header-background: #000;
   --bases-table-header-background-hover: #ffffff26;
-  --bases-table-header-color: color-mix(in srgb, #000000 30%, #cccccc);
+  --bases-table-header-color: #8f8f8f;
   --bases-table-header-icon-display: flex;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -142,7 +136,7 @@ body {
   --callout-todo: 2, 122, 255;
   --callout-warning: 233, 151, 63;
   --canvas-background: #000;
-  --canvas-card-label-color: color-mix(in srgb, #000000 60%, #cccccc);
+  --canvas-card-label-color: #525252;
   --canvas-color: 192, 192, 192;
   --canvas-color-1: 251, 70, 76;
   --canvas-color-2: 233, 151, 63;
@@ -150,37 +144,37 @@ body {
   --canvas-color-4: 68, 207, 110;
   --canvas-color-5: 83, 223, 221;
   --canvas-color-6: 168, 130, 255;
-  --canvas-dot-pattern: color-mix(in srgb, #000000 90%, #cccccc);
+  --canvas-dot-pattern: #141414;
   --caret-color: #faf4ed;
-  --checkbox-border-color: color-mix(in srgb, #000000 60%, #cccccc);
-  --checkbox-border-color-hover: color-mix(in srgb, #000000 30%, #cccccc);
+  --checkbox-border-color: #525252;
+  --checkbox-border-color-hover: #8f8f8f;
   --checkbox-color: #8a5cf5;
   --checkbox-color-hover: #a68af9;
   --checkbox-margin-inline-start: 0.85em;
   --checkbox-marker-color: #000;
   --checkbox-radius: 4px;
   --checkbox-size: 10px;
-  --checklist-done-color: color-mix(in srgb, #000000 30%, #cccccc);
+  --checklist-done-color: #8f8f8f;
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: 4px;
   --code-background: #111;
-  --code-border-color: color-mix(in srgb, #000000 80%, #cccccc);
+  --code-border-color: #292929;
   --code-border-width: 0px;
-  --code-comment: color-mix(in srgb, #000000 60%, #cccccc);
+  --code-comment: #525252;
   --code-function: #e0de71;
   --code-important: #e9973f;
   --code-keyword: #fa99cd;
   --code-normal: #faf4ed;
   --code-operator: #fb464c;
   --code-property: #53dfdd;
-  --code-punctuation: color-mix(in srgb, #000000 30%, #cccccc);
+  --code-punctuation: #8f8f8f;
   --code-radius: 4px;
   --code-size: 0.875em;
   --code-string: #44cf6e;
   --code-tag: #fb464c;
   --code-value: #a882ff;
   --code-white-space: pre-wrap;
-  --collapse-icon-color: color-mix(in srgb, #000000 60%, #cccccc);
+  --collapse-icon-color: #525252;
   --collapse-icon-color-collapsed: #a68af9;
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
   --color-accent-1: light-dark(#9873f7, #a68af9);
@@ -212,7 +206,7 @@ body {
   --dialog-max-width: 80vw;
   --dialog-width: 560px;
   --direction: 1;
-  --divider-color: color-mix(in srgb, #000000 80%, #cccccc);
+  --divider-color: #292929;
   --divider-color-hover: #8a5cf5;
   --divider-vertical-height: calc(100% - 40px);
   --divider-width: 1px;
@@ -221,14 +215,12 @@ body {
   --drag-ghost-text-color: #fff;
   --dropdown-background: #ffffff26;
   --dropdown-background-blend-mode: hard-light;
-  --dropdown-background-hover: color-mix(in srgb, #000000 95%, #cccccc);
+  --dropdown-background-hover: #0a0a0a;
   --dropdown-background-position: right 0.5em top 50%, 0 0;
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
   --embed-background: inherit;
-  --embed-block-shadow-hover:
-    0 0 0 1px color-mix(in srgb, #000000 80%, #cccccc),
-    inset 0 0 0 1px color-mix(in srgb, #000000 80%, #cccccc);
+  --embed-block-shadow-hover: 0 0 0 1px #292929, inset 0 0 0 1px #292929;
   --embed-border-bottom: none;
   --embed-border-end: none;
   --embed-border-start: 2px solid #8a5cf5;
@@ -301,8 +293,8 @@ body {
   --footnote-divider-color-active: transparent;
   --footnote-divider-width: 1px;
   --footnote-gap: 4px;
-  --footnote-id-color: color-mix(in srgb, #000000 30%, #cccccc);
-  --footnote-id-color-no-occurrences: color-mix(in srgb, #000000 60%, #cccccc);
+  --footnote-id-color: #8f8f8f;
+  --footnote-id-color-no-occurrences: #525252;
   --footnote-id-delimiter: ".";
   --footnote-input-background: transparent;
   --footnote-input-background-active: transparent;
@@ -312,12 +304,12 @@ body {
   --footnote-radius: 4px;
   --footnote-size: 0.875em;
   --graph-controls-width: 240px;
-  --graph-line: color-mix(in srgb, #000000 95%, #cccccc);
-  --graph-node: color-mix(in srgb, #000000 30%, #cccccc);
+  --graph-line: #0a0a0a;
+  --graph-node: #8f8f8f;
   --graph-node-attachment: #e0de71;
   --graph-node-focused: #a68af9;
   --graph-node-tag: #44cf6e;
-  --graph-node-unresolved: color-mix(in srgb, #000000 60%, #cccccc);
+  --graph-node-unresolved: #525252;
   --graph-text: #faf4ed;
   --h1-color: inherit;
   --h1-font: inherit;
@@ -362,14 +354,14 @@ body {
   --h6-variant: normal;
   --h6-weight: 600;
   --header-height: 40px;
-  --heading-formatting: color-mix(in srgb, #000000 60%, #cccccc);
+  --heading-formatting: #525252;
   --heading-spacing: 0rem;
-  --hr-color: color-mix(in srgb, #000000 80%, #cccccc);
+  --hr-color: #292929;
   --hr-thickness: 2px;
-  --icon-color: color-mix(in srgb, #000000 30%, #cccccc);
+  --icon-color: #8f8f8f;
   --icon-color-active: #a68af9;
   --icon-color-focused: #faf4ed;
-  --icon-color-hover: color-mix(in srgb, #000000 30%, #cccccc);
+  --icon-color-hover: #8f8f8f;
   --icon-l: 18px;
   --icon-l-stroke-width: 1.75px;
   --icon-m: 18px;
@@ -403,10 +395,10 @@ body {
   --inline-title-variant: normal;
   --inline-title-weight: 700;
   --input-border-width: 1px;
-  --input-date-separator: color-mix(in srgb, #000000 60%, #cccccc);
+  --input-date-separator: #525252;
   --input-font-weight: 400;
   --input-height: 30px;
-  --input-placeholder-color: color-mix(in srgb, #000000 60%, #cccccc);
+  --input-placeholder-color: #525252;
   --input-radius: 5px;
   --interactive-accent: #a68af9;
   --interactive-accent-hover: #c5b6fc;
@@ -451,26 +443,26 @@ body {
   --list-indent: 2.25em;
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
-  --list-marker-color: color-mix(in srgb, #000000 60%, #cccccc);
+  --list-marker-color: #525252;
   --list-marker-color-collapsed: #a68af9;
-  --list-marker-color-hover: color-mix(in srgb, #000000 30%, #cccccc);
+  --list-marker-color-hover: #8f8f8f;
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
   --menu-backdrop-filter: none;
   --menu-background: #000;
-  --menu-border-color: color-mix(in srgb, #000000 95%, #cccccc);
+  --menu-border-color: #0a0a0a;
   --menu-border-width: 1px;
   --menu-padding: 6px;
   --menu-radius: 8px;
   --menu-shadow:
     0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
   --metadata-background: transparent;
-  --metadata-border-color: color-mix(in srgb, #000000 80%, #cccccc);
+  --metadata-border-color: #292929;
   --metadata-border-radius: 0;
   --metadata-border-width: 0;
   --metadata-display-editing: block;
   --metadata-display-reading: block;
-  --metadata-divider-color: color-mix(in srgb, #000000 80%, #cccccc);
+  --metadata-divider-color: #292929;
   --metadata-divider-color-focus: transparent;
   --metadata-divider-color-hover: transparent;
   --metadata-divider-width: 0;
@@ -495,18 +487,16 @@ body {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-label-font-size: 0.875em;
   --metadata-label-font-weight: inherit;
-  --metadata-label-text-color: color-mix(in srgb, #000000 30%, #cccccc);
-  --metadata-label-text-color-hover: color-mix(in srgb, #000000 30%, #cccccc);
+  --metadata-label-text-color: #8f8f8f;
+  --metadata-label-text-color-hover: #8f8f8f;
   --metadata-label-width: 9em;
   --metadata-max-width: none;
   --metadata-padding: 8px 0;
   --metadata-property-background: transparent;
   --metadata-property-background-active: #ffffff26;
   --metadata-property-background-hover: transparent;
-  --metadata-property-box-shadow-focus: 0 0 0 2px
-    color-mix(in srgb, #000000 80%, #cccccc);
-  --metadata-property-box-shadow-hover: 0 0 0 1px
-    color-mix(in srgb, #000000 95%, #cccccc);
+  --metadata-property-box-shadow-focus: 0 0 0 2px #292929;
+  --metadata-property-box-shadow-hover: 0 0 0 1px #0a0a0a;
   --metadata-property-padding: 0;
   --metadata-property-radius: 6px;
   --metadata-property-radius-focus: 6px;
@@ -514,7 +504,7 @@ body {
   --metadata-sidebar-input-font-size: 9.37px;
   --metadata-sidebar-label-font-size: 9.37px;
   --modal-background: #000;
-  --modal-border-color: color-mix(in srgb, #000000 80%, #cccccc);
+  --modal-border-color: #292929;
   --modal-border-width: 0.5pt;
   --modal-community-sidebar-width: 280px;
   --modal-height: 85vh;
@@ -523,22 +513,22 @@ body {
   --modal-max-width-narrow: 800px;
   --modal-radius: 12px;
   --modal-width: 90vw;
-  --nav-collapse-icon-color: color-mix(in srgb, #000000 60%, #cccccc);
-  --nav-collapse-icon-color-collapsed: color-mix(in srgb, #000000 60%, #cccccc);
+  --nav-collapse-icon-color: #525252;
+  --nav-collapse-icon-color-collapsed: #525252;
   --nav-heading-color: #faf4ed;
-  --nav-heading-color-collapsed: color-mix(in srgb, #000000 60%, #cccccc);
-  --nav-heading-color-collapsed-hover: color-mix(in srgb, #000000 30%, #cccccc);
+  --nav-heading-color-collapsed: #525252;
+  --nav-heading-color-collapsed-hover: #8f8f8f;
   --nav-heading-color-hover: #faf4ed;
   --nav-heading-weight: 500;
   --nav-heading-weight-hover: 500;
-  --nav-indentation-guide-color: color-mix(in srgb, #000000 90%, #cccccc);
+  --nav-indentation-guide-color: #141414;
   --nav-indentation-guide-width: 1px;
   --nav-item-background-active: #ffffff26;
   --nav-item-background-hover: #ffffff26;
   --nav-item-background-selected: #8a5cf526;
   --nav-item-children-margin-start: 12px;
   --nav-item-children-padding-start: 4px;
-  --nav-item-color: color-mix(in srgb, #000000 30%, #cccccc);
+  --nav-item-color: #8f8f8f;
   --nav-item-color-active: #faf4ed;
   --nav-item-color-highlighted: #a68af9;
   --nav-item-color-hover: #faf4ed;
@@ -560,12 +550,12 @@ body {
   --pdf-thumbnail-shadow: 0 0 0 1px #00000026, 0 2px 8px #00000033;
   --pill-background: transparent;
   --pill-background-hover: transparent;
-  --pill-border-color: color-mix(in srgb, #000000 80%, #cccccc);
-  --pill-border-color-hover: color-mix(in srgb, #000000 95%, #cccccc);
+  --pill-border-color: #292929;
+  --pill-border-color-hover: #0a0a0a;
   --pill-border-width: 0.5pt;
-  --pill-color: color-mix(in srgb, #000000 30%, #cccccc);
+  --pill-color: #8f8f8f;
   --pill-color-hover: #faf4ed;
-  --pill-color-remove: color-mix(in srgb, #000000 60%, #cccccc);
+  --pill-color-remove: #525252;
   --pill-color-remove-hover: #a68af9;
   --pill-decoration: none;
   --pill-decoration-hover: none;
@@ -581,7 +571,7 @@ body {
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
   --popover-width: 450px;
-  --prompt-border-color: color-mix(in srgb, #000000 80%, #cccccc);
+  --prompt-border-color: #292929;
   --prompt-border-width: 0.5pt;
   --prompt-input-height: 40px;
   --prompt-max-height: 70vh;
@@ -598,9 +588,9 @@ body {
   --scrollbar-active-thumb-bg: #ffffff33;
   --scrollbar-bg: #ffffff0d;
   --scrollbar-thumb-bg: #ffffff1a;
-  --search-clear-button-color: color-mix(in srgb, #000000 30%, #cccccc);
+  --search-clear-button-color: #8f8f8f;
   --search-clear-button-size: 13px;
-  --search-icon-color: color-mix(in srgb, #000000 30%, #cccccc);
+  --search-icon-color: #8f8f8f;
   --search-icon-size: 18px;
   --search-result-background: #000;
   --sidebar-markdown-font-size: 9px;
@@ -622,13 +612,13 @@ body {
   --size-4-9: 36px;
   --slider-s-thumb-position: -5px;
   --slider-s-thumb-size: 15px;
-  --slider-thumb-border-color: color-mix(in srgb, #000000 95%, #cccccc);
+  --slider-thumb-border-color: #0a0a0a;
   --slider-thumb-border-width: 1px;
   --slider-thumb-height: 18px;
   --slider-thumb-radius: 50%;
   --slider-thumb-width: 18px;
   --slider-thumb-y: -6px;
-  --slider-track-background: color-mix(in srgb, #000000 80%, #cccccc);
+  --slider-track-background: #292929;
   --slider-track-height: 3px;
   --status-bar-background: #000;
   --status-bar-border-color: #00000026;
@@ -636,7 +626,7 @@ body {
   --status-bar-font-size: 8px;
   --status-bar-position: fixed;
   --status-bar-radius: 8px 0 0 0;
-  --status-bar-text-color: color-mix(in srgb, #000000 30%, #cccccc);
+  --status-bar-text-color: #8f8f8f;
   --swatch-height: 24px;
   --swatch-radius: 14px;
   --swatch-shadow: inset 0 0 0 1px #ffffff26;
@@ -653,7 +643,7 @@ body {
   --tab-background-active: #000;
   --tab-container-background: #000;
   --tab-curve: 10px;
-  --tab-divider-color: color-mix(in srgb, #000000 95%, #cccccc);
+  --tab-divider-color: #0a0a0a;
   --tab-font-size: 10pt;
   --tab-font-weight: inherit;
   --tab-max-width: 300px;
@@ -675,18 +665,18 @@ body {
   --tab-switcher-preview-radius: 16px;
   --tab-switcher-preview-shadow: 0 0 0 1px #ffffff0d;
   --tab-switcher-preview-shadow-active: 0 0 0 2px #8a5cf5;
-  --tab-text-color: color-mix(in srgb, #000000 60%, #cccccc);
-  --tab-text-color-active: color-mix(in srgb, #000000 30%, #cccccc);
-  --tab-text-color-focused: color-mix(in srgb, #000000 30%, #cccccc);
-  --tab-text-color-focused-active: color-mix(in srgb, #000000 30%, #cccccc);
+  --tab-text-color: #525252;
+  --tab-text-color-active: #8f8f8f;
+  --tab-text-color-focused: #8f8f8f;
+  --tab-text-color-focused-active: #8f8f8f;
   --tab-text-color-focused-active-current: #faf4ed;
   --tab-text-color-focused-highlighted: #a68af9;
   --tab-width: 180px;
   --table-add-button-background: transparent;
-  --table-add-button-border-color: color-mix(in srgb, #000000 80%, #cccccc);
+  --table-add-button-border-color: #292929;
   --table-add-button-border-width: 1px;
   --table-background: transparent;
-  --table-border-color: color-mix(in srgb, #000000 80%, #cccccc);
+  --table-border-color: #292929;
   --table-border-width: 1px;
   --table-cell-vertical-alignment: top;
   --table-column-alt-background: transparent;
@@ -696,7 +686,7 @@ body {
   --table-column-min-width: 6ch;
   --table-drag-handle-background: transparent;
   --table-drag-handle-background-active: #8a5cf5;
-  --table-drag-handle-color: color-mix(in srgb, #000000 60%, #cccccc);
+  --table-drag-handle-color: #525252;
   --table-drag-handle-color-active: #ffffff;
   --table-header-background: transparent;
   --table-header-background-hover: inherit;
@@ -736,22 +726,22 @@ body {
   --text-accent: #8a5cf5;
   --text-accent-hover: #c5b6fc;
   --text-error: #fb464c;
-  --text-faint: color-mix(in srgb, #000000 60%, #cccccc);
+  --text-faint: #525252;
   --text-highlight-bg: #ffd00066;
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: color-mix(in srgb, #000000 30%, #cccccc);
-  --text-normal: color-mix(in srgb, #000000 0%, #cccccc);
+  --text-muted: #8f8f8f;
+  --text-normal: #cccccc;
   --text-on-accent: #ffffff;
   --text-on-accent-inverted: #000000;
   --text-selection: #8a5cf533;
   --text-success: #44cf6e;
   --text-warning: #e9973f;
   --titlebar-background: #000;
-  --titlebar-background-focused: color-mix(in srgb, #000000 90%, #cccccc);
-  --titlebar-border-color: color-mix(in srgb, #000000 80%, #cccccc);
+  --titlebar-background-focused: #141414;
+  --titlebar-border-color: #292929;
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;
-  --titlebar-text-color: color-mix(in srgb, #000000 30%, #cccccc);
+  --titlebar-text-color: #8f8f8f;
   --titlebar-text-color-focused: #faf4ed;
   --titlebar-text-weight: 700;
   --toggle-border-width: 2px;
@@ -920,7 +910,7 @@ h6 {
 
 .markdown-rendered pre {
   background-color: #111;
-  border: 0px solid color-mix(in srgb, #000000 80%, #cccccc);
+  border: 0px solid #292929;
   border-radius: 4px;
   min-height: 38px;
   overflow-x: auto;
@@ -932,7 +922,7 @@ h6 {
 .markdown-rendered code {
   -webkit-box-decoration-break: clone;
   background-color: #111;
-  border: 0px solid color-mix(in srgb, #000000 80%, #cccccc);
+  border: 0px solid #292929;
   border-radius: 4px;
   color: #faf4ed;
   font-family:
@@ -952,7 +942,7 @@ h6 {
 .markdown-rendered button.copy-code-button {
   background-color: transparent;
   box-shadow: none;
-  color: color-mix(in srgb, #000000 30%, #cccccc);
+  color: #8f8f8f;
   font-family:
     "??",
     "Jetbrains Mono",
@@ -1199,7 +1189,7 @@ h6 {
 
 .popover {
   background-color: #000;
-  border: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
+  border: 1px solid #292929;
   border-radius: 8px;
   box-shadow:
     0px 1px 2px #0000001f,
@@ -1213,7 +1203,7 @@ h6 {
 
 .prompt {
   background-color: #000;
-  border: 0.5pt solid color-mix(in srgb, #000000 80%, #cccccc);
+  border: 0.5pt solid #292929;
   border-radius: 12px;
   box-shadow:
     0px 1.8px 7.3px #00000012,
@@ -1251,7 +1241,7 @@ input.prompt-input {
 }
 
 .markdown-rendered mark {
-  background-color: color-mix(in srgb, #a6a6a6 25%, transparent);
+  background-color: #a6a6a640;
   color: #faf4ed;
 }
 
@@ -1269,8 +1259,8 @@ a.tag {
 
 input[type="search"] {
   -webkit-app-region: no-drag;
-  background: color-mix(in srgb, #000000 40%, #000);
-  border: 1px solid color-mix(in srgb, #000000 80%, #cccccc);
+  background: #000000;
+  border: 1px solid #292929;
   border-radius: 5px;
   color: #faf4ed;
   font-family: inherit;
@@ -1441,7 +1431,7 @@ input[type="search"] {
 
 .tree-item-flair {
   border-radius: 4px;
-  color: color-mix(in srgb, #000000 60%, #cccccc);
+  color: #525252;
   font-size: 8px;
   line-height: 1;
 }
@@ -1458,12 +1448,12 @@ input[type="search"] {
 }
 
 .tree-item-inner-subtext {
-  color: color-mix(in srgb, #000000 60%, #cccccc);
+  color: #525252;
   font-size: 85%;
 }
 
 .tree-item-children {
-  border-inline-start: 1px solid color-mix(in srgb, #000000 90%, #cccccc);
+  border-inline-start: 1px solid #141414;
   margin-bottom: 1px;
   margin-inline-start: 12px;
   padding-inline-start: 4px;
@@ -1501,7 +1491,7 @@ svg.svg-icon {
 
 .clickable-icon[aria-disabled="true"] {
   background-color: unset;
-  color: color-mix(in srgb, #000000 30%, #cccccc);
+  color: #8f8f8f;
   opacity: 0.4;
 }
 
@@ -1535,7 +1525,7 @@ svg.svg-icon {
 }
 
 .view-header-title-parent .view-header-breadcrumb-separator {
-  color: color-mix(in srgb, #000000 60%, #cccccc);
+  color: #525252;
   padding: 2px 1px;
 }
 
@@ -1562,11 +1552,11 @@ svg.svg-icon {
 }
 
 .backlink-pane > .tree-item-self.is-clickable.is-collapsed {
-  color: color-mix(in srgb, #000000 60%, #cccccc);
+  color: #525252;
 }
 
 .graph-view.color-fill {
-  color: color-mix(in srgb, #000000 30%, #cccccc);
+  color: #8f8f8f;
 }
 
 .graph-view.color-fill-focused {
@@ -1582,32 +1572,32 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-unresolved {
-  color: color-mix(in srgb, #000000 60%, #cccccc);
+  color: #525252;
   opacity: 0.5;
 }
 
 .graph-view.color-fill-1 {
-  color: color-mix(in srgb, #000000 30%, #cccccc);
+  color: #8f8f8f;
 }
 
 .graph-view.color-fill-2 {
-  color: color-mix(in srgb, #000000 30%, #cccccc);
+  color: #8f8f8f;
 }
 
 .graph-view.color-fill-3 {
-  color: color-mix(in srgb, #000000 30%, #cccccc);
+  color: #8f8f8f;
 }
 
 .graph-view.color-fill-4 {
-  color: color-mix(in srgb, #000000 30%, #cccccc);
+  color: #8f8f8f;
 }
 
 .graph-view.color-fill-5 {
-  color: color-mix(in srgb, #000000 30%, #cccccc);
+  color: #8f8f8f;
 }
 
 .graph-view.color-fill-6 {
-  color: color-mix(in srgb, #000000 30%, #cccccc);
+  color: #8f8f8f;
 }
 
 .graph-view.color-arrow {
@@ -1620,7 +1610,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-line {
-  color: color-mix(in srgb, #000000 95%, #cccccc);
+  color: #0a0a0a;
 }
 
 .graph-view.color-text {
@@ -1648,14 +1638,14 @@ svg.svg-icon {
 
 .theme-dark {
   --background: #000000;
-  --background-modifier-border: color-mix(in srgb, #000000 90%, #cccccc);
+  --background-modifier-border: #141414;
   --background-modifier-box-shadow: #0000004d;
   --background-modifier-cover: #0a0a0a66;
   --background-modifier-form-field: #1e1e1e;
-  --background-modifier-hover: color-mix(in srgb, #000000 80%, #cccccc);
+  --background-modifier-hover: #292929;
   --background-primary: #000;
   --background-secondary: #111;
-  --background-secondary-alt: color-mix(in srgb, #000000 90%, #cccccc);
+  --background-secondary-alt: #141414;
   --black: #000;
   --blue: #437cf3;
   --blue-violet: #6f51f4;
@@ -1664,18 +1654,18 @@ svg.svg-icon {
   --color-accent-1: #a68af9;
   --color-accent-2: #c5b6fc;
   --color-accent-hsl: 258, 88%, 66%;
-  --color-base-00: color-mix(in srgb, #000000 25%, #000);
-  --color-base-05: color-mix(in srgb, #000000 40%, #000);
-  --color-base-10: color-mix(in srgb, #000000 50%, #000);
-  --color-base-100: color-mix(in srgb, #000000 0%, #cccccc);
-  --color-base-20: color-mix(in srgb, #000000 80%, #000);
-  --color-base-25: color-mix(in srgb, #000000 80%, #000);
-  --color-base-30: color-mix(in srgb, #000000 90%, #cccccc);
-  --color-base-35: color-mix(in srgb, #000000 95%, #cccccc);
-  --color-base-40: color-mix(in srgb, #000000 80%, #cccccc);
-  --color-base-50: color-mix(in srgb, #000000 60%, #cccccc);
-  --color-base-60: color-mix(in srgb, #000000 60%, #cccccc);
-  --color-base-70: color-mix(in srgb, #000000 30%, #cccccc);
+  --color-base-00: #000000;
+  --color-base-05: #000000;
+  --color-base-10: #000000;
+  --color-base-100: #cccccc;
+  --color-base-20: #000000;
+  --color-base-25: #000000;
+  --color-base-30: #141414;
+  --color-base-35: #0a0a0a;
+  --color-base-40: #292929;
+  --color-base-50: #525252;
+  --color-base-60: #525252;
+  --color-base-70: #8f8f8f;
   --color-blue: #027aff;
   --color-blue-rgb: 2, 122, 255;
   --color-cyan: #53dfdd;
@@ -1707,8 +1697,8 @@ svg.svg-icon {
   --hot-red: #e3365e;
   --hue-bg: 265;
   --hue-fg: 265;
-  --indentation-guide-color: color-mix(in srgb, #000000 90%, #cccccc);
-  --indentation-guide-color-active: color-mix(in srgb, #000000 95%, #cccccc);
+  --indentation-guide-color: #141414;
+  --indentation-guide-color-active: #0a0a0a;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
     0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
@@ -1717,8 +1707,8 @@ svg.svg-icon {
     0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
   --interactive-accent: #8a5cf5;
   --interactive-accent-hover: #a68af9;
-  --interactive-hover: color-mix(in srgb, #000000 95%, #cccccc);
-  --interactive-normal: color-mix(in srgb, #000000 90%, #cccccc);
+  --interactive-hover: #0a0a0a;
+  --interactive-normal: #141414;
   --light-blue: #54b6f8;
   --lum: 11%;
   --lum-bg: 95%;
@@ -1727,14 +1717,14 @@ svg.svg-icon {
   --mint: #52eea3;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  --nav-indentation-guide-color: color-mix(in srgb, #000000 90%, #cccccc);
-  --pdf-shadow: 0 0 0 1px color-mix(in srgb, #000000 80%, #cccccc);
-  --pdf-thumbnail-shadow: 0 0 0 1px color-mix(in srgb, #000000 80%, #cccccc);
+  --nav-indentation-guide-color: #141414;
+  --pdf-shadow: 0 0 0 1px #292929;
+  --pdf-thumbnail-shadow: 0 0 0 1px #292929;
   --purple: #c952ed;
   --sat-bg: 60%;
   --sat-fg: 100%;
-  --scrollbar-active-thumb-bg: color-mix(in srgb, #000000 80%, #cccccc);
-  --scrollbar-thumb-bg: color-mix(in srgb, #000000 90%, #cccccc);
+  --scrollbar-active-thumb-bg: #292929;
+  --scrollbar-thumb-bg: #141414;
   --shadow-l:
     0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
     0px 30px 90px #00000033;
@@ -1742,10 +1732,10 @@ svg.svg-icon {
     0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
   --slider-track-background: #a68af9;
   --slider-track-height: 3px;
-  --table-border-color: color-mix(in srgb, #000000 60%, #cccccc);
+  --table-border-color: #525252;
   --text-accent: #a68af9;
-  --text-highlight-bg: color-mix(in srgb, #a6a6a6 25%, transparent);
-  --text-highlight-bg-active: color-mix(in srgb, #a6a6a6 25%, transparent);
+  --text-highlight-bg: #a6a6a640;
+  --text-highlight-bg-active: #a6a6a640;
   --text-normal: #faf4ed;
   --text-selection: #8a5cf554;
   --title-color: #a6a6a6;
@@ -1758,7 +1748,7 @@ svg.svg-icon {
 .theme-light {
   --background-modifier-box-shadow: #0000001a;
   --background-modifier-cover: #dcdcdc66;
-  --background-secondary-alt: color-mix(in srgb, #000000 40%, #000);
+  --background-secondary-alt: #000000;
   --color-accent: #8a5cf5;
   --color-accent-1: #9873f7;
   --color-accent-2: #a68af9;
@@ -1821,7 +1811,7 @@ svg.svg-icon {
 
 .workspace-split {
   background: none;
-  background-color: color-mix(in srgb, #000000 40%, #000);
+  background-color: #000000;
   display: flex;
   position: relative;
 }

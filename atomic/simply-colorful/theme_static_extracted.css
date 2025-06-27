@@ -844,7 +844,7 @@ h6 a {
 
 h1 {
   --font-weight: 700;
-  background-color: color-mix(in srgb, #2471d4 7%, transparent);
+  background-color: #2471d412;
   border-radius: 4px;
   color: #2471d4;
   font-family: inherit;
@@ -863,7 +863,7 @@ h1 {
 
 h2 {
   --font-weight: 700;
-  background-color: color-mix(in srgb, #9149e4 7%, transparent);
+  background-color: #9149e412;
   border-radius: 4px;
   color: #9149e4;
   font-family: inherit;
@@ -882,7 +882,7 @@ h2 {
 
 h3 {
   --font-weight: 700;
-  background-color: color-mix(in srgb, #e0308d 7%, transparent);
+  background-color: #e0308d12;
   border-radius: 4px;
   color: #e0308d;
   font-family: inherit;
@@ -901,7 +901,7 @@ h3 {
 
 h4 {
   --font-weight: 700;
-  background-color: color-mix(in srgb, #e03035 7%, transparent);
+  background-color: #e0303512;
   border-radius: 4px;
   color: #e03035;
   font-family: inherit;
@@ -920,7 +920,7 @@ h4 {
 
 h5 {
   --font-weight: 700;
-  background-color: color-mix(in srgb, #e08330 7%, transparent);
+  background-color: #e0833012;
   border-radius: 4px;
   color: #e08330;
   font-family: inherit;
@@ -939,7 +939,7 @@ h5 {
 
 h6 {
   --font-weight: 700;
-  background-color: color-mix(in srgb, #cec92a 7%, transparent);
+  background-color: #cec92a12;
   border-radius: 4px;
   color: #cec92a;
   font-family: inherit;

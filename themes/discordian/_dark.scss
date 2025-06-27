@@ -1,0 +1,232 @@
+:root:root,
+html[saved-theme="dark"] {
+  color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
+  --background-accent: #50555e;
+  --background-code: #292c2e;
+  --background-code-border: #292929;
+  --background-code-preview: #292c2e;
+  --background-modifier-accent: #ffffff0f;
+  --background-modifier-active: #50555e3d;
+
+  --background-modifier-box-shadow: #0000004d;
+  --background-modifier-cover: #36393f;
+
+  --background-modifier-form-field: #00000033;
+  --background-modifier-form-field-highlighted: #00000033;
+
+  --background-modifier-selected: #50555e52;
+
+  --background-tertiary: #282a2e;
+  --blockquote-bg: #05050612;
+  --blockquote-border: #b295bb;
+
+  --color-blue-rgb: 2, 122, 255;
+
+  --color-cyan-rgb: 83, 223, 221;
+
+  --color-green-rgb: 68, 207, 110;
+
+  --color-orange-rgb: 233, 151, 63;
+
+  --color-pink-rgb: 250, 153, 205;
+
+  --color-purple-rgb: 168, 130, 255;
+
+  --color-red-rgb: 251, 70, 76;
+
+  --color-yellow-rgb: 224, 222, 113;
+  --cursor: default;
+  --graph-arrow: #d66bbd;
+  --graph-circle-fill: #fefa01;
+  --graph-circle-fill-highlight: #fefa01;
+  --graph-circle-fill-unresolved: #73bef7;
+  --graph-circle-outline: transparent;
+  --graph-fill-attachment: #d66bbd;
+  --graph-fill-tag: #9d8aff;
+  --graph-line: #26798c;
+  --graph-line-highlight: #5bbcd2;
+  --highlight-mix-blend-mode: darken;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
+    0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
+    0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
+  --interactive-accent: #43b683;
+  --interactive-accent-alt: #282a2e;
+  --interactive-accent-hover: #2caf72;
+  --interactive-accent-light: #ae9d47;
+  --interactive-active: #ffffff;
+  --interactive-hover: #dddedf;
+  --interactive-muted: #50555e;
+  --interactive-normal: #babcbf;
+  --markup-code: #f4a743;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --opacity-translucency: 1;
+  --pdf-shadow: 0 0 0 1px transparent;
+  --pdf-thumbnail-shadow: 0 0 0 1px transparent;
+  --scrollbar-auto-scrollbar-color-thumb: #212326;
+  --scrollbar-auto-scrollbar-color-track: #2f3137;
+  --scrollbar-auto-thumb: #212326;
+  --scrollbar-auto-track: #2e3338;
+  --scrollbar-bg: transparent;
+  --scrollbar-thin-thumb: #212326;
+  --scrollbar-thin-track: transparent;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+  --syntax-blue: #569cd6;
+  --syntax-default: #bfc1c2;
+  --syntax-green: #98c379;
+  --syntax-grey: #708090;
+  --syntax-purple: #c678dd;
+  --syntax-red: #e06c75;
+  --syntax-teal: #56b6c2;
+  --syntax-yellow: #d19a66;
+  --text-a: #e481c0;
+  --text-a-hover: #ff8aca;
+  --text-accent: #b088e7;
+  --text-em: #b8ba7d;
+
+  --text-header: #8c95d4;
+  --text-highlight-bg: #6287b2;
+  --text-linenumber: #4f5154d9;
+  --text-linenumber-active: #9c9c9cd9;
+  --text-link: #00aff5;
+  --text-mark: #f3c986;
+
+  --text-on-accent: #dddedf;
+  --text-selection: #6287b280;
+  --text-strong: #deaf63;
+  --text-tag: #ff9742ba;
+  --text-title-h1: #8a87c5;
+  --text-title-h2: #8c95d4;
+  --text-title-h3: #8c95d4;
+  --text-title-h4: #8c95d4;
+  --text-title-h5: #8c95d4;
+  --text-title-h6: #789197;
+  --background-accent: #50555e;
+  --background-code: #292c2e;
+  --background-code-border: #292929;
+  --background-code-preview: #292c2e;
+  --background-modifier-accent: #ffffff0f;
+  --background-modifier-active: #50555e3d;
+
+  --background-modifier-box-shadow: #0000004d;
+  --background-modifier-cover: #36393f;
+
+  --background-modifier-form-field: #00000033;
+  --background-modifier-form-field-highlighted: #00000033;
+
+  --background-modifier-selected: #50555e52;
+
+  --background-tertiary: #282a2e;
+  --blockquote-bg: #05050612;
+  --blockquote-border: #b295bb;
+
+  --color-blue-rgb: 2, 122, 255;
+
+  --color-cyan-rgb: 83, 223, 221;
+
+  --color-green-rgb: 68, 207, 110;
+
+  --color-orange-rgb: 233, 151, 63;
+
+  --color-pink-rgb: 250, 153, 205;
+
+  --color-purple-rgb: 168, 130, 255;
+
+  --color-red-rgb: 251, 70, 76;
+
+  --color-yellow-rgb: 224, 222, 113;
+  --cursor: default;
+  --graph-arrow: #d66bbd;
+  --graph-circle-fill: #fefa01;
+  --graph-circle-fill-highlight: #fefa01;
+  --graph-circle-fill-unresolved: #73bef7;
+  --graph-circle-outline: transparent;
+  --graph-fill-attachment: #d66bbd;
+  --graph-fill-tag: #9d8aff;
+  --graph-line: #26798c;
+  --graph-line-highlight: #5bbcd2;
+  --highlight-mix-blend-mode: darken;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
+    0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
+    0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
+  --interactive-accent: #43b683;
+  --interactive-accent-alt: #282a2e;
+  --interactive-accent-hover: #2caf72;
+  --interactive-accent-light: #ae9d47;
+  --interactive-active: #ffffff;
+  --interactive-hover: #dddedf;
+  --interactive-muted: #50555e;
+  --interactive-normal: #babcbf;
+  --markup-code: #f4a743;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --opacity-translucency: 1;
+  --pdf-shadow: 0 0 0 1px transparent;
+  --pdf-thumbnail-shadow: 0 0 0 1px transparent;
+  --scrollbar-auto-scrollbar-color-thumb: #212326;
+  --scrollbar-auto-scrollbar-color-track: #2f3137;
+  --scrollbar-auto-thumb: #212326;
+  --scrollbar-auto-track: #2e3338;
+  --scrollbar-bg: transparent;
+  --scrollbar-thin-thumb: #212326;
+  --scrollbar-thin-track: transparent;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+  --syntax-blue: #569cd6;
+  --syntax-default: #bfc1c2;
+  --syntax-green: #98c379;
+  --syntax-grey: #708090;
+  --syntax-purple: #c678dd;
+  --syntax-red: #e06c75;
+  --syntax-teal: #56b6c2;
+  --syntax-yellow: #d19a66;
+  --text-a: #e481c0;
+  --text-a-hover: #ff8aca;
+  --text-accent: #b088e7;
+  --text-em: #b8ba7d;
+
+  --text-header: #8c95d4;
+  --text-highlight-bg: #6287b2;
+  --text-linenumber: #4f5154d9;
+  --text-linenumber-active: #9c9c9cd9;
+  --text-link: #00aff5;
+  --text-mark: #f3c986;
+
+  --text-on-accent: #dddedf;
+  --text-selection: #6287b280;
+  --text-strong: #deaf63;
+  --text-tag: #ff9742ba;
+  --text-title-h1: #8a87c5;
+  --text-title-h2: #8c95d4;
+  --text-title-h3: #8c95d4;
+  --text-title-h4: #8c95d4;
+  --text-title-h5: #8c95d4;
+  --text-title-h6: #789197;
+}

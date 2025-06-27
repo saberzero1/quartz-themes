@@ -1,0 +1,108 @@
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
+  color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
+  --background-modifier-box-shadow: #0000004d;
+  --background-modifier-cover: #0a0a0a66;
+  --background-modifier-form-field: #2a2a2a;
+
+  --color-blue-rgb: 102, 140, 179;
+  --color-creme-0: #1f1a14;
+
+  --color-creme-fade: #b2aba480;
+
+  --color-cyan-rgb: 91, 168, 190;
+
+  --color-green-rgb: 138, 172, 108;
+
+  --color-orange-rgb: 207, 134, 74;
+
+  --color-pink-rgb: 187, 119, 175;
+
+  --color-purple-rgb: 135, 125, 181;
+
+  --color-red-rgb: 194, 87, 87;
+  --color-shadow: #180e01cc;
+
+  --color-yellow-rgb: 225, 177, 81;
+  --highlight-mix-blend-mode: darken;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
+    0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
+    0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
+  --interactive-accent: #d66e5c;
+  --interactive-accent-hover: #e08980;
+  --interactive-hover: #3f3f3f;
+  --interactive-normal: #363636;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --pdf-shadow: 0 0 0 1px transparent;
+  --pdf-thumbnail-shadow: 0 0 0 1px transparent;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+  --text-accent: #e08980;
+  --text-selection: #d66e5c54;
+  --background-modifier-box-shadow: #0000004d;
+  --background-modifier-cover: #0a0a0a66;
+  --background-modifier-form-field: #2a2a2a;
+
+  --color-blue-rgb: 102, 140, 179;
+  --color-creme-0: #1f1a14;
+
+  --color-creme-fade: #b2aba480;
+
+  --color-cyan-rgb: 91, 168, 190;
+
+  --color-green-rgb: 138, 172, 108;
+
+  --color-orange-rgb: 207, 134, 74;
+
+  --color-pink-rgb: 187, 119, 175;
+
+  --color-purple-rgb: 135, 125, 181;
+
+  --color-red-rgb: 194, 87, 87;
+  --color-shadow: #180e01cc;
+
+  --color-yellow-rgb: 225, 177, 81;
+  --highlight-mix-blend-mode: darken;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
+    0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
+    0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
+  --interactive-accent: #d66e5c;
+  --interactive-accent-hover: #e08980;
+  --interactive-hover: #3f3f3f;
+  --interactive-normal: #363636;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --pdf-shadow: 0 0 0 1px transparent;
+  --pdf-thumbnail-shadow: 0 0 0 1px transparent;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+  --text-accent: #e08980;
+  --text-selection: #d66e5c54;
+}

@@ -1,0 +1,142 @@
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
+  --active-line-bg: #00000009;
+
+  --background-modifier-box-shadow: #0000001a;
+  --background-modifier-cover: hsla(218, -61%, -5%, 0.5);
+
+  --bg1: #ffffff;
+
+  --bg3: hsla(218, 9%, -35%, 0.12);
+  --btn-shadow-color: #0000000d;
+
+  --color-blue-rgb: 8, 109, 221;
+
+  --color-cyan-rgb: 0, 191, 188;
+
+  --color-green-rgb: 8, 185, 78;
+
+  --color-orange-rgb: 236, 117, 0;
+
+  --color-pink-rgb: 213, 57, 132;
+
+  --color-purple-rgb: 120, 82, 238;
+
+  --color-red-rgb: 233, 49, 71;
+
+  --color-yellow-rgb: 224, 172, 0;
+
+  --frame-background-l: 94%;
+
+  --frame-outline-color: #07469e;
+  --highlight-mix-blend-mode: darken;
+  --hl1: hsla(215, 50%, -5%, 30%);
+  --hl2: #ffe10080;
+
+  --input-shadow:
+    inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px #0000002b, 0 2px 3px 0 #0000001a, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+
+  --interactive-accent-rgb: 220, 220, 220;
+
+  --leaflet-borders: #0000001a;
+
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --mono0: #ffffff;
+  --mono100: #000000;
+
+  --scrollbar-bg: transparent;
+
+  --shadow-color: #0000001a;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
+  --sp1: #ffffff;
+
+  --text-highlight-bg-active: #0000001a;
+
+  --workspace-background-translucent: #23252ab3;
+  --active-line-bg: #00000009;
+
+  --background-modifier-box-shadow: #0000001a;
+  --background-modifier-cover: hsla(218, -61%, -5%, 0.5);
+
+  --bg1: #ffffff;
+
+  --bg3: hsla(218, 9%, -35%, 0.12);
+  --btn-shadow-color: #0000000d;
+
+  --color-blue-rgb: 8, 109, 221;
+
+  --color-cyan-rgb: 0, 191, 188;
+
+  --color-green-rgb: 8, 185, 78;
+
+  --color-orange-rgb: 236, 117, 0;
+
+  --color-pink-rgb: 213, 57, 132;
+
+  --color-purple-rgb: 120, 82, 238;
+
+  --color-red-rgb: 233, 49, 71;
+
+  --color-yellow-rgb: 224, 172, 0;
+
+  --frame-background-l: 94%;
+
+  --frame-outline-color: #07469e;
+  --highlight-mix-blend-mode: darken;
+  --hl1: hsla(215, 50%, -5%, 30%);
+  --hl2: #ffe10080;
+
+  --input-shadow:
+    inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px #0000002b, 0 2px 3px 0 #0000001a, 0 1px 1.5px 0 #00000008,
+    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+
+  --interactive-accent-rgb: 220, 220, 220;
+
+  --leaflet-borders: #0000001a;
+
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --mono0: #ffffff;
+  --mono100: #000000;
+
+  --scrollbar-bg: transparent;
+
+  --shadow-color: #0000001a;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
+  --sp1: #ffffff;
+
+  --text-highlight-bg-active: #0000001a;
+
+  --workspace-background-translucent: #23252ab3;
+}

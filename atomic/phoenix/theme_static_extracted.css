@@ -77,8 +77,8 @@
   --pdfViewer-padding-bottom: 0;
   --platinum: #cccccc;
   --pre-code: light-dark(#1a1a1a, #1a1a1a);
-  --r-bg-highlight: color-mix(in srgb, #fe9109 50%, transparent);
-  --r-bg-selection: color-mix(in srgb, #d5520e 25%, transparent);
+  --r-bg-highlight: #fe910980;
+  --r-bg-selection: #d5520e40;
   --r-bright-orange: #fe750e;
   --r-bright-yellow: #fea30f;
   --r-dark-orange: #d5520e;
@@ -122,23 +122,14 @@
   --text-accent-hover: light-dark(#fe9109, #fe9109);
   --text-card: light-dark(#161414, #c4b09c);
   --text-faint: light-dark(#534f4e, #625e5e);
-  --text-highlight-bg: light-dark(
-    color-mix(in srgb, #fe9109 50%, transparent),
-    color-mix(in srgb, #fe9109 50%, transparent)
-  );
+  --text-highlight-bg: light-dark(#fe910980, #fe910980);
   --text-link: light-dark(#d5520e, #fe750e);
   --text-link-hover: light-dark(#ed5b0f, #fe9109);
-  --text-mark: light-dark(
-    color-mix(in srgb, #fe9109 50%, transparent),
-    color-mix(in srgb, #fe9109 50%, transparent)
-  );
+  --text-mark: light-dark(#fe910980, #fe910980);
   --text-muted: light-dark(#534f4e, #b3b3b3);
   --text-normal: light-dark(#1e1e1e, #eadad9);
   --text-platinum: light-dark(#cccccc, #cccccc);
-  --text-selection: light-dark(
-    color-mix(in srgb, #d5520e 25%, transparent),
-    color-mix(in srgb, #d5520e 25%, transparent)
-  );
+  --text-selection: light-dark(#d5520e40, #d5520e40);
   --text-tag: light-dark(#ed5b0f, #fe750e);
   --text-title-h1: light-dark(#bc0104, #bc0104);
   --text-title-h2: light-dark(#ea4f0d, #ea4f0d);
@@ -436,8 +427,8 @@ body {
   --h1-color: inherit;
   --h1-font: inherit;
   --h1-line-height: 1.2;
-  --h1-link-hover-color: color-mix(in srgb, #ff6666 20%, #bc0104);
-  --h1-link-ul-color: color-mix(in srgb, #bc0104 33%, transparent);
+  --h1-link-hover-color: #c91518;
+  --h1-link-ul-color: #bc010454;
   --h1-size: 2.2em;
   --h1-style: normal;
   --h1-variant: normal;
@@ -445,8 +436,8 @@ body {
   --h2-color: inherit;
   --h2-font: inherit;
   --h2-line-height: 1.2;
-  --h2-link-hover-color: color-mix(in srgb, #ff9090 20%, #ea4f0d);
-  --h2-link-ul-color: color-mix(in srgb, #ea4f0d 33%, transparent);
+  --h2-link-hover-color: #ee5c27;
+  --h2-link-ul-color: #ea4f0d54;
   --h2-size: 2em;
   --h2-style: normal;
   --h2-variant: normal;
@@ -454,8 +445,8 @@ body {
   --h3-color: inherit;
   --h3-font: inherit;
   --h3-line-height: 1.3;
-  --h3-link-hover-color: color-mix(in srgb, #ffaaaa 20%, #fe750e);
-  --h3-link-ul-color: color-mix(in srgb, #fe750e 33%, transparent);
+  --h3-link-hover-color: #fe802d;
+  --h3-link-ul-color: #fe750e54;
   --h3-size: 1.85em;
   --h3-style: normal;
   --h3-variant: normal;
@@ -463,8 +454,8 @@ body {
   --h4-color: inherit;
   --h4-font: inherit;
   --h4-line-height: 1.4;
-  --h4-link-hover-color: color-mix(in srgb, #ffd2d2 20%, #fea30f);
-  --h4-link-ul-color: color-mix(in srgb, #fea30f 33%, transparent);
+  --h4-link-hover-color: #feac36;
+  --h4-link-ul-color: #fea30f54;
   --h4-size: 1.6em;
   --h4-style: normal;
   --h4-variant: normal;
@@ -472,8 +463,8 @@ body {
   --h5-color: inherit;
   --h5-font: inherit;
   --h5-line-height: 1.5;
-  --h5-link-hover-color: color-mix(in srgb, #ffffff 17%, #c0c90a);
-  --h5-link-ul-color: color-mix(in srgb, #c0c90a 33%, transparent);
+  --h5-link-hover-color: #cbd234;
+  --h5-link-ul-color: #c0c90a54;
   --h5-size: 1.47em;
   --h5-style: normal;
   --h5-variant: normal;
@@ -481,8 +472,8 @@ body {
   --h6-color: inherit;
   --h6-font: inherit;
   --h6-line-height: 1.5;
-  --h6-link-hover-color: color-mix(in srgb, #ffffff 25%, #27cac7);
-  --h6-link-ul-color: color-mix(in srgb, #27cac7 33%, transparent);
+  --h6-link-hover-color: #5dd7d5;
+  --h6-link-ul-color: #27cac754;
   --h6-size: 1.35em;
   --h6-style: normal;
   --h6-variant: normal;
@@ -872,26 +863,17 @@ body {
   --text-card: light-dark(#161414, #c4b09c);
   --text-error: #fb464c;
   --text-faint: light-dark(#534f4e, #625e5e);
-  --text-highlight-bg: light-dark(
-    color-mix(in srgb, #fe9109 50%, transparent),
-    color-mix(in srgb, #fe9109 50%, transparent)
-  );
+  --text-highlight-bg: light-dark(#fe910980, #fe910980);
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-link: light-dark(#d5520e, #fe750e);
   --text-link-hover: light-dark(#ed5b0f, #fe9109);
-  --text-mark: light-dark(
-    color-mix(in srgb, #fe9109 50%, transparent),
-    color-mix(in srgb, #fe9109 50%, transparent)
-  );
+  --text-mark: light-dark(#fe910980, #fe910980);
   --text-muted: light-dark(#534f4e, #b3b3b3);
   --text-normal: light-dark(#1e1e1e, #eadad9);
   --text-on-accent: #ffffff;
   --text-on-accent-inverted: #000000;
   --text-platinum: light-dark(#cccccc, #cccccc);
-  --text-selection: light-dark(
-    color-mix(in srgb, #d5520e 25%, transparent),
-    color-mix(in srgb, #d5520e 25%, transparent)
-  );
+  --text-selection: light-dark(#d5520e40, #d5520e40);
   --text-success: #44cf6e;
   --text-tag: light-dark(#ed5b0f, #fe750e);
   --text-title-h1: light-dark(#bc0104, #bc0104);
@@ -1160,7 +1142,7 @@ h6 {
 .callout {
   --callout-color: 2, 122, 255;
   --callout-icon: lucide-pencil;
-  background-color: color-mix(in srgb, #000000 0%, #9e9e9e1a);
+  background-color: #9e9e9e1a;
   border-color: #9e9e9e40;
   border-radius: 4px;
   border-style: solid;
@@ -1426,10 +1408,7 @@ input.prompt-input {
 }
 
 .markdown-rendered mark {
-  background-color: light-dark(
-    color-mix(in srgb, #fe9109 50%, transparent),
-    color-mix(in srgb, #fe9109 50%, transparent)
-  );
+  background-color: light-dark(#fe910980, #fe910980);
   color: light-dark(#1e1e1e, #eadad9);
 }
 
@@ -1911,14 +1890,14 @@ svg.svg-icon {
   --text-accent-hover: #fe9109;
   --text-card: #c4b09c;
   --text-faint: #625e5e;
-  --text-highlight-bg: color-mix(in srgb, #fe9109 50%, transparent);
+  --text-highlight-bg: #fe910980;
   --text-link: #fe750e;
   --text-link-hover: #fe9109;
-  --text-mark: color-mix(in srgb, #fe9109 50%, transparent);
+  --text-mark: #fe910980;
   --text-muted: #b3b3b3;
   --text-normal: #eadad9;
   --text-platinum: #cccccc;
-  --text-selection: color-mix(in srgb, #d5520e 25%, transparent);
+  --text-selection: #d5520e40;
   --text-tag: #fe750e;
   --text-title-h1: #bc0104;
   --text-title-h2: #ea4f0d;
@@ -2003,14 +1982,14 @@ svg.svg-icon {
   --text-accent-hover: #fe9109;
   --text-card: #161414;
   --text-faint: #534f4e;
-  --text-highlight-bg: color-mix(in srgb, #fe9109 50%, transparent);
+  --text-highlight-bg: #fe910980;
   --text-link: #d5520e;
   --text-link-hover: #ed5b0f;
-  --text-mark: color-mix(in srgb, #fe9109 50%, transparent);
+  --text-mark: #fe910980;
   --text-muted: #534f4e;
   --text-normal: #1e1e1e;
   --text-platinum: #cccccc;
-  --text-selection: color-mix(in srgb, #d5520e 25%, transparent);
+  --text-selection: #d5520e40;
   --text-tag: #ed5b0f;
   --text-title-h1: #bc0104;
   --text-title-h2: #ea4f0d;

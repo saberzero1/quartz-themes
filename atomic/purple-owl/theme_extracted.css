@@ -410,10 +410,10 @@ body {
   --file-margins: var(--size-4-8);
   --flair-background: var(--interactive-normal);
   --flair-color: var(--text-normal);
-  --font-adaptive-normal: var(--font-normal);
-  --font-adaptive-small: var(--font-small);
-  --font-adaptive-smaller: var(--font-smaller);
-  --font-adaptive-smallest: var(--font-smallest);
+  --font-adaptive-normal: 16px;
+  --font-adaptive-small: 13px;
+  --font-adaptive-smaller: 11px;
+  --font-adaptive-smallest: 10px;
   --font-black: 900;
   --font-bold: 700;
   --font-default:

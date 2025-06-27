@@ -8209,7 +8209,7 @@ h6:hover .collapse-indicator {
 }
 
 .collapse-icon svg.svg-icon {
-  color: rgb(inherit);
+  color: inherit;
   height: 10px;
   stroke-width: 4px;
   transition: transform 100ms ease-in-out;
@@ -26792,9 +26792,9 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
 }
 
 .folder-rainbow-titles .nav-folder-title {
-  --nav-collapse-icon-color: rgb(inherit);
-  --nav-collapse-icon-color-collapsed: rgb(inherit);
-  color: rgb(inherit);
+  --nav-collapse-icon-color: inherit;
+  --nav-collapse-icon-color-collapsed: inherit;
+  color: inherit;
 }
 
 .folder-rainbow-backgrounds .nav-folder-title {
@@ -26805,20 +26805,20 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
 }
 
 .folder-rainbow-backgrounds.theme-crystal .nav-folder-title {
-  --nav-collapse-icon-color: rgb(inherit);
-  --nav-collapse-icon-color-collapsed: rgb(inherit);
+  --nav-collapse-icon-color: inherit;
+  --nav-collapse-icon-color-collapsed: inherit;
   background-color: rgba(inherit, 0.13);
-  border: 0.25px solid rgb(inherit);
-  color: rgb(inherit);
+  border: 0.25px solid inherit;
+  color: inherit;
   margin-bottom: 5px;
 }
 
 .folder-rainbow-backgrounds.theme-ash-old .nav-folder-title {
-  --nav-collapse-icon-color: rgb(inherit);
-  --nav-collapse-icon-color-collapsed: rgb(inherit);
+  --nav-collapse-icon-color: inherit;
+  --nav-collapse-icon-color-collapsed: inherit;
   background-color: rgba(inherit, 0.13);
-  border: 0.25px solid rgb(inherit);
-  color: rgb(inherit);
+  border: 0.25px solid inherit;
+  color: inherit;
   margin-bottom: 5px;
 }
 
@@ -26856,7 +26856,7 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
 
 .folder-rainbow-backgrounds .nav-folder.mod-root .nav-folder .nav-file-title {
   --rainbow-folder-color: inherit;
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .cards.table-100 table.dataview tbody {

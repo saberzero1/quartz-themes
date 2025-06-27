@@ -1,34 +1,13 @@
 :root {
-  --background-modifier-active-hover: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 60%),
-    color-mix(in srgb, #82807d, #000000 70%)
-  );
-  --background-modifier-active-hover-alt: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 25%),
-    color-mix(in srgb, #82807d, #000000 25%)
-  );
-  --background-modifier-border: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 25%),
-    color-mix(in srgb, #82807d, #000000 25%)
-  );
-  --background-modifier-border-focus: light-dark(
-    #82807d,
-    color-mix(in srgb, #82807d, #000000 25%)
-  );
+  --background-modifier-active-hover: light-dark(#cdcccb, #272725);
+  --background-modifier-active-hover-alt: light-dark(#a1a09d, #62605e);
+  --background-modifier-border: light-dark(#a1a09d, #62605e);
+  --background-modifier-border-focus: light-dark(#82807d, #62605e);
   --background-modifier-hover: light-dark(#82807d, #82807d);
-  --background-prompt: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 95%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
-  --background-secondary: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 60%),
-    color-mix(in srgb, #82807d, #000000 70%)
-  );
+  --background-prompt: light-dark(#f9f9f8, #1a1a19);
+  --background-secondary: light-dark(#cdcccb, #272725);
   --background-secondary-alt: light-dark(#212121, #363636);
-  --blockquote-border-color: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
+  --blockquote-border-color: light-dark(#e6e6e5, #1a1a19);
   --caret-color: light-dark(hsl(258, 150%, 50%), hsl(258, 150%, 80%));
   --collapse-icon-color: light-dark(#82807d, #82807d);
   --collapse-icon-color-collapsed: light-dark(#82807d, #82807d);
@@ -56,62 +35,32 @@
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
-  --empty-pane-color: light-dark(
-    color-mix(in srgb, #82807d, #000000 70%),
-    color-mix(in srgb, #82807d, #000000 70%)
-  );
+  --empty-pane-color: light-dark(#272725, #272725);
   --icon-color: light-dark(#82807d, #82807d);
   --interactive-accent: light-dark(#82807d, #82807d);
   --interactive-accent-hover: light-dark(#82807d, #a68af9);
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
-  --metadata-input-background-active: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 95%),
-    color-mix(in srgb, #82807d, #000000 90%)
-  );
-  --metadata-label-background-active: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 95%),
-    color-mix(in srgb, #82807d, #000000 90%)
-  );
-  --metadata-property-background: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 95%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
+  --metadata-input-background-active: light-dark(#f9f9f8, #0d0d0c);
+  --metadata-label-background-active: light-dark(#f9f9f8, #0d0d0c);
+  --metadata-property-background: light-dark(#f9f9f8, #1a1a19);
   --metadata-property-background-hover: light-dark(#82807d1f, #82807d1f);
-  --modal-background: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
+  --modal-background: light-dark(#e6e6e5, #1a1a19);
   --nav-collapse-icon-color: light-dark(#82807dbf, #82807dbf);
   --nav-collapse-icon-color-collapsed: light-dark(#82807dbf, #82807dbf);
   --nav-indentation-guide-color: light-dark(#82807d40, #82807d40);
   --nav-item-background-active: light-dark(#82807d, #82807d);
   --nav-item-background-selected: light-dark(#82807d40, #82807d40);
-  --nav-item-color: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 60%)
-  );
-  --nav-item-color-active: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
+  --nav-item-color: light-dark(#1a1a19, #cdcccb);
+  --nav-item-color-active: light-dark(#e6e6e5, #1a1a19);
   --page-border: 9px solid transparent;
   --page-margin: 1px auto -8px;
   --pdfViewer-padding-bottom: 0;
   --pill-background: light-dark(#82807dbf, #82807dbf);
   --pill-background-hover: light-dark(#82807d, #82807d);
-  --pill-background-remove-hover: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 25%),
-    color-mix(in srgb, #82807d, #000000 25%)
-  );
-  --pill-color-remove: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
-  --pill-color-remove-hover: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
+  --pill-background-remove-hover: light-dark(#a1a09d, #62605e);
+  --pill-color-remove: light-dark(#e6e6e5, #1a1a19);
+  --pill-color-remove-hover: light-dark(#e6e6e5, #1a1a19);
   --safe-area-inset-bottom: env(safe-area-inset-bottom);
   --safe-area-inset-left: env(safe-area-inset-left);
   --safe-area-inset-right: env(safe-area-inset-right);
@@ -120,203 +69,74 @@
   --search-icon-color: light-dark(#82807d, #82807d);
   --spreadHorizontalWrapped-margin-LR: -3.5px;
   --tab-background-active: light-dark(#000000, #000000);
-  --tab-background-inactive: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 85%)
-  );
+  --tab-background-inactive: light-dark(#e6e6e5, #141313);
   --tab-text-color: light-dark(#82807d80, #82807d80);
   --tab-text-color-active: light-dark(#82807d80, #82807d80);
-  --tab-text-color-focused: light-dark(
-    color-mix(in srgb, #82807d, #000000 25%),
-    color-mix(in srgb, #82807d, #ffffff 25%)
-  );
-  --tab-text-color-focused-active: light-dark(
-    color-mix(in srgb, #82807d, #000000 25%),
-    color-mix(in srgb, #82807d, #ffffff 25%)
-  );
-  --tab-text-color-focused-active-current: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 60%),
-    color-mix(in srgb, #82807d, #ffffff 60%)
-  );
+  --tab-text-color-focused: light-dark(#62605e, #a1a09d);
+  --tab-text-color-focused-active: light-dark(#62605e, #a1a09d);
+  --tab-text-color-focused-active-current: light-dark(#cdcccb, #cdcccb);
   --tab-text-color-focused-highlighted: light-dark(#a68af9, #a68af9);
-  --table-border-color: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 60%),
-    color-mix(in srgb, #82807d, #000000 70%)
-  );
-  --table-header-border-color: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 60%),
-    color-mix(in srgb, #82807d, #000000 70%)
-  );
+  --table-border-color: light-dark(#cdcccb, #272725);
+  --table-header-border-color: light-dark(#cdcccb, #272725);
   --tag-background: light-dark(#8a5cf526, #8a5cf533);
   --tag-color: light-dark(#733cf3, hsl(258, 105.6%, 66%));
-  --text-faint: light-dark(
-    color-mix(in srgb, #82807d, #000000 70%),
-    color-mix(in srgb, #82807d, #ffffff 25%)
-  );
-  --text-normal: light-dark(
-    color-mix(in srgb, #82807d, #000000 90%),
-    color-mix(in srgb, #82807d, #ffffff 60%)
-  );
+  --text-faint: light-dark(#272725, #a1a09d);
+  --text-normal: light-dark(#0d0d0c, #cdcccb);
   --theme-color-activeLineHighlight: light-dark(#82807d1f, #82807d1f);
   --theme-color-audioRecordingActive: light-dark(#b90e00, #ffdfe0);
-  --theme-color-blockId: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 25%),
-    color-mix(in srgb, #82807d, #000000 25%)
-  );
+  --theme-color-blockId: light-dark(#a1a09d, #62605e);
   --theme-color-calendarDayBg: light-dark(#ffffffbf, #00000080);
-  --theme-color-communityItemBg: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
+  --theme-color-communityItemBg: light-dark(#e6e6e5, #1a1a19);
   --theme-color-communityItemBgActive: light-dark(#82807d, #82807d);
-  --theme-color-communityItemBgHover: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 60%),
-    color-mix(in srgb, #82807d, #000000 70%)
-  );
-  --theme-color-communityItemBgSelected: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 25%),
-    color-mix(in srgb, #82807d, #000000 25%)
-  );
+  --theme-color-communityItemBgHover: light-dark(#cdcccb, #272725);
+  --theme-color-communityItemBgSelected: light-dark(#a1a09d, #62605e);
   --theme-color-contentItemBg: light-dark(#ffffff80, #00000033);
   --theme-color-contentItemBgActive: light-dark(#82807d, #82807d);
   --theme-color-contentItemBgHover: light-dark(#ffffff40, #0000001a);
   --theme-color-controlActive: light-dark(
-    light-dark(
-      color-mix(in srgb, #82807d, #000000 70%),
-      color-mix(in srgb, #82807d, #ffffff 60%)
-    ),
-    light-dark(
-      color-mix(in srgb, #82807d, #000000 70%),
-      color-mix(in srgb, #82807d, #ffffff 60%)
-    )
+    light-dark(#272725, #cdcccb),
+    light-dark(#272725, #cdcccb)
   );
-  --theme-color-controlBg: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 95%),
-    color-mix(in srgb, #82807d, #000000 25%)
-  );
+  --theme-color-controlBg: light-dark(#f9f9f8, #62605e);
   --theme-color-controlBgHover: light-dark(#82807d, #82807d);
   --theme-color-controlBgLowWeight: light-dark(
     #ffffff80,
     var(--theme-color-darkenTransparent25)
   );
-  --theme-color-controlContentArea: light-dark(
-    #82807d,
-    color-mix(in srgb, #82807d, #ffffff 60%)
-  );
-  --theme-color-controlContentAreaHover: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
-  --theme-color-controlHover: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 95%),
-    color-mix(in srgb, #82807d, #000000 90%)
-  );
-  --theme-color-controlLightweightActive: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 95%),
-    color-mix(in srgb, #82807d, #ffffff 95%)
-  );
-  --theme-color-controlSetBg: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
-  --theme-color-controlText: light-dark(
-    color-mix(in srgb, #82807d, #000000 70%),
-    color-mix(in srgb, #82807d, #ffffff 60%)
-  );
-  --theme-color-controlTextHover: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
-  --theme-color-controlUIHover: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 60%),
-    color-mix(in srgb, #82807d, #000000 70%)
-  );
-  --theme-color-controlUISelected: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 70%)
-  );
-  --theme-color-emptyStateBg: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
+  --theme-color-controlContentArea: light-dark(#82807d, #cdcccb);
+  --theme-color-controlContentAreaHover: light-dark(#e6e6e5, #1a1a19);
+  --theme-color-controlHover: light-dark(#f9f9f8, #0d0d0c);
+  --theme-color-controlLightweightActive: light-dark(#f9f9f8, #f9f9f8);
+  --theme-color-controlSetBg: light-dark(#e6e6e5, #1a1a19);
+  --theme-color-controlText: light-dark(#272725, #cdcccb);
+  --theme-color-controlTextHover: light-dark(#e6e6e5, #1a1a19);
+  --theme-color-controlUIHover: light-dark(#cdcccb, #272725);
+  --theme-color-controlUISelected: light-dark(#e6e6e5, #272725);
+  --theme-color-emptyStateBg: light-dark(#e6e6e5, #1a1a19);
   --theme-color-gradientCardsetBottom: light-dark(#82807d0f, #82807d1f);
   --theme-color-gradientCardsetTop: light-dark(#82807d1f, #82807d0f);
   --theme-color-hotkey: light-dark(#82807d, #82807d);
-  --theme-color-inputBorder: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 25%),
-    color-mix(in srgb, #82807d, #ffffff 25%)
-  );
+  --theme-color-inputBorder: light-dark(#a1a09d, #a1a09d);
   --theme-color-inputPlaceholder: light-dark(#82807d, #82807d);
-  --theme-color-interactiveActive: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 25%),
-    color-mix(in srgb, #82807d, #000000 25%)
-  );
-  --theme-color-kanbanLaneBg: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
-  --theme-color-log: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
-  );
-  --theme-color-logBg: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 25%),
-    color-mix(in srgb, #82807d, #000000 25%)
-  );
-  --theme-color-menuBg: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
-  --theme-color-mobileToolbarBg: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
-  --theme-color-modalContentBg: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 60%),
-    color-mix(in srgb, #82807d, #000000 70%)
-  );
-  --theme-color-navFileTag: light-dark(
-    #82807d,
-    color-mix(in srgb, #82807d, #000000 25%)
-  );
-  --theme-color-navFileTagActive: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
-  --theme-color-navFileTagActiveBorder: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
-  --theme-color-navFileTagBorder: light-dark(
-    #82807d,
-    color-mix(in srgb, #82807d, #000000 25%)
-  );
-  --theme-color-notice: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 95%),
-    color-mix(in srgb, #82807d, #000000 90%)
-  );
-  --theme-color-noticeBg: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 95%)
-  );
-  --theme-color-promptInstructions: light-dark(
-    color-mix(in srgb, #82807d, #000000 40%),
-    color-mix(in srgb, #82807d, #ffffff 40%)
-  );
-  --theme-color-settingsBg: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
-  --theme-color-settingsBgStripe: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 95%),
-    color-mix(in srgb, #82807d, #000000 90%)
-  );
+  --theme-color-interactiveActive: light-dark(#a1a09d, #62605e);
+  --theme-color-kanbanLaneBg: light-dark(#e6e6e5, #1a1a19);
+  --theme-color-log: light-dark(#1a1a19, #e6e6e5);
+  --theme-color-logBg: light-dark(#a1a09d, #62605e);
+  --theme-color-menuBg: light-dark(#e6e6e5, #1a1a19);
+  --theme-color-mobileToolbarBg: light-dark(#e6e6e5, #1a1a19);
+  --theme-color-modalContentBg: light-dark(#cdcccb, #272725);
+  --theme-color-navFileTag: light-dark(#82807d, #62605e);
+  --theme-color-navFileTagActive: light-dark(#1a1a19, #1a1a19);
+  --theme-color-navFileTagActiveBorder: light-dark(#1a1a19, #1a1a19);
+  --theme-color-navFileTagBorder: light-dark(#82807d, #62605e);
+  --theme-color-notice: light-dark(#f9f9f8, #0d0d0c);
+  --theme-color-noticeBg: light-dark(#1a1a19, #f9f9f8);
+  --theme-color-promptInstructions: light-dark(#4e4d4b, #b4b3b1);
+  --theme-color-settingsBg: light-dark(#e6e6e5, #1a1a19);
+  --theme-color-settingsBgStripe: light-dark(#f9f9f8, #0d0d0c);
   --theme-color-settingsGroupBg: light-dark(#ffffff80, #00000080);
   --theme-color-shadow: light-dark(#61605e, #0d0d0d);
-  --theme-color-suggestionBg: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 85%),
-    color-mix(in srgb, #82807d, #000000 85%)
-  );
+  --theme-color-suggestionBg: light-dark(#ececeb, #141313);
   --theme-color-switcherBgActive: light-dark(#82807d, #82807d);
   --theme-color-tagBgHover: light-dark(#9166f71a, #ad8cfa1a);
   --theme-color-tagBgSidebar: light-dark(
@@ -331,14 +151,8 @@
   --theme-color-tagSidebar: light-dark(#2c087f, hsl(258, 105.6%, 66%));
   --theme-color-tagSidebarHover: light-dark(#320893, hsl(258, 107.712%, 75.9%));
   --theme-color-textMeta: light-dark(#82807d, #82807d);
-  --theme-color-textSelected: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
-  --theme-color-warningBg: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 95%),
-    color-mix(in srgb, #82807d, #ffffff 95%)
-  );
+  --theme-color-textSelected: light-dark(#e6e6e5, #1a1a19);
+  --theme-color-warningBg: light-dark(#f9f9f8, #f9f9f8);
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
@@ -358,53 +172,35 @@ body {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   --background-input: #82807d1f;
-  --background-modifier-active-hover: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 60%),
-    color-mix(in srgb, #82807d, #000000 70%)
-  );
-  --background-modifier-active-hover-alt: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 25%),
-    color-mix(in srgb, #82807d, #000000 25%)
-  );
-  --background-modifier-border: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 25%),
-    color-mix(in srgb, #82807d, #000000 25%)
-  );
-  --background-modifier-border-focus: light-dark(
-    #82807d,
-    color-mix(in srgb, #82807d, #000000 25%)
-  );
+  --background-modifier-active-hover: light-dark(#cdcccb, #272725);
+  --background-modifier-active-hover-alt: light-dark(#a1a09d, #62605e);
+  --background-modifier-border: light-dark(#a1a09d, #62605e);
+  --background-modifier-border-focus: light-dark(#82807d, #62605e);
   --background-modifier-border-hover: #3f3f3f;
   --background-modifier-error: #fb464c;
   --background-modifier-error-hover: #fb464c;
   --background-modifier-error-rgb: 251, 70, 76;
   --background-modifier-form-field: #000;
   --background-modifier-hover: light-dark(#82807d, #82807d);
-  --background-modifier-message: color-mix(in srgb, #82807d, #ffffff 95%);
+  --background-modifier-message: #f9f9f8;
   --background-modifier-success: #44cf6e;
   --background-modifier-success-rgb: 68, 207, 110;
   --background-primary: #000;
   --background-primary-alt: #111;
-  --background-prompt: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 95%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
-  --background-secondary: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 60%),
-    color-mix(in srgb, #82807d, #000000 70%)
-  );
+  --background-prompt: light-dark(#f9f9f8, #1a1a19);
+  --background-secondary: light-dark(#cdcccb, #272725);
   --background-secondary-alt: light-dark(#212121, #363636);
   --base-h: 258;
   --base-l: 66%;
   --base-s: 88%;
-  --bases-embed-border: 1px solid color-mix(in srgb, #82807d, #000000 25%);
+  --bases-embed-border: 1px solid #62605e;
   --bases-embed-border-radius: 0.25rem;
   --bases-filter-menu-width: 520px;
   --bases-header-border-width: 0 0 1px 0;
   --bases-header-height: 40px;
   --bases-header-padding-end: 2px;
   --bases-header-padding-start: 2px;
-  --bases-table-border-color: color-mix(in srgb, #82807d, #000000 70%);
+  --bases-table-border-color: #272725;
   --bases-table-cell-background-active: #000000;
   --bases-table-cell-background-disabled: #00000080;
   --bases-table-cell-radius-active: 2px;
@@ -430,10 +226,7 @@ body {
   --bases-table-text-size: 0.875em;
   --bases-table-white-space: nowrap;
   --blockquote-background-color: transparent;
-  --blockquote-border-color: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
+  --blockquote-border-color: light-dark(#e6e6e5, #1a1a19);
   --blockquote-border-thickness: 0.25em;
   --blockquote-color: inherit;
   --blockquote-font-style: normal;
@@ -468,7 +261,7 @@ body {
   --callout-todo: 2, 122, 255;
   --callout-warning: 233, 151, 63;
   --canvas-background: #000000;
-  --canvas-card-label-color: color-mix(in srgb, #82807d, #ffffff 25%);
+  --canvas-card-label-color: #a1a09d;
   --canvas-color: 192, 192, 192;
   --canvas-color-1: 251, 70, 76;
   --canvas-color-2: 233, 151, 63;
@@ -490,13 +283,13 @@ body {
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: 0.25rem;
   --code-background: light-dark(#0000000f, #ffffff0f);
-  --code-border-color: color-mix(in srgb, #82807d, #000000 25%);
+  --code-border-color: #62605e;
   --code-border-width: 0px;
   --code-comment: light-dark(#00000080, #ffffff80);
   --code-function: #e0de71;
   --code-important: #e9973f;
   --code-keyword: #fa99cd;
-  --code-normal: color-mix(in srgb, #82807d, #ffffff 60%);
+  --code-normal: #cdcccb;
   --code-operator: #fb464c;
   --code-property: #53dfdd;
   --code-punctuation: currentColor;
@@ -538,7 +331,7 @@ body {
   --dialog-max-width: 80vw;
   --dialog-width: 560px;
   --direction: 1;
-  --divider-color: color-mix(in srgb, #82807d, #000000 25%);
+  --divider-color: #62605e;
   --divider-color-hover: #82807d;
   --divider-vertical-height: calc(100% - 18px - 1rem);
   --divider-width: 0;
@@ -552,9 +345,7 @@ body {
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
   --embed-background: #82807d1f;
-  --embed-block-shadow-hover:
-    0 0 0 1px color-mix(in srgb, #82807d, #000000 25%),
-    inset 0 0 0 1px color-mix(in srgb, #82807d, #000000 25%);
+  --embed-block-shadow-hover: 0 0 0 1px #62605e, inset 0 0 0 1px #62605e;
   --embed-border-bottom: none;
   --embed-border-end: none;
   --embed-border-left: none;
@@ -565,10 +356,7 @@ body {
   --embed-font-style: inherit;
   --embed-max-height: 4000px;
   --embed-padding: 1em;
-  --empty-pane-color: light-dark(
-    color-mix(in srgb, #82807d, #000000 70%),
-    color-mix(in srgb, #82807d, #000000 70%)
-  );
+  --empty-pane-color: light-dark(#272725, #272725);
   --file-folding-offset: 24px;
   --file-header-border: 0.5pt solid transparent;
   --file-header-font:
@@ -582,7 +370,7 @@ body {
   --file-line-width: 60ch;
   --file-margins: 0 2em;
   --flair-background: #82807d;
-  --flair-color: color-mix(in srgb, #82807d, #ffffff 60%);
+  --flair-color: #cdcccb;
   --font-black: 900;
   --font-bold: 700;
   --font-default:
@@ -647,10 +435,10 @@ body {
   --footnote-divider-width: 1px;
   --footnote-gap: 4px;
   --footnote-id-color: currentColor;
-  --footnote-id-color-no-occurrences: color-mix(in srgb, #82807d, #ffffff 25%);
+  --footnote-id-color-no-occurrences: #a1a09d;
   --footnote-id-delimiter: ".";
   --footnote-input-background: transparent;
-  --footnote-input-background-active: color-mix(in srgb, #82807d, #000000 90%);
+  --footnote-input-background-active: #0d0d0c;
   --footnote-line-height: 1.5;
   --footnote-padding-block: 6px;
   --footnote-padding-inline: 6px;
@@ -662,8 +450,8 @@ body {
   --graph-node-attachment: #e0de71;
   --graph-node-focused: #a68af9;
   --graph-node-tag: #44cf6e;
-  --graph-node-unresolved: color-mix(in srgb, #82807d, #ffffff 25%);
-  --graph-text: color-mix(in srgb, #82807d, #ffffff 60%);
+  --graph-node-unresolved: #a1a09d;
+  --graph-text: #cdcccb;
   --h1-color: inherit;
   --h1-font: inherit;
   --h1-line-height: 1.5;
@@ -707,13 +495,13 @@ body {
   --h6-variant: normal;
   --h6-weight: 500;
   --header-height: calc(18px + 1rem);
-  --heading-formatting: color-mix(in srgb, #82807d, #ffffff 25%);
+  --heading-formatting: #a1a09d;
   --heading-spacing: 0.67em;
-  --hr-color: color-mix(in srgb, #82807d, #000000 25%);
+  --hr-color: #62605e;
   --hr-thickness: 2px;
   --icon-color: light-dark(#82807d, #82807d);
   --icon-color-active: #a68af9;
-  --icon-color-focused: color-mix(in srgb, #82807d, #ffffff 60%);
+  --icon-color-focused: #cdcccb;
   --icon-color-hover: currentColor;
   --icon-l: 18px;
   --icon-l-stroke-width: 1.75px;
@@ -748,10 +536,10 @@ body {
   --inline-title-variant: normal;
   --inline-title-weight: 400;
   --input-border-width: 2px;
-  --input-date-separator: color-mix(in srgb, #82807d, #ffffff 25%);
+  --input-date-separator: #a1a09d;
   --input-font-weight: 400;
   --input-height: 30px;
-  --input-placeholder-color: color-mix(in srgb, #82807d, #ffffff 25%);
+  --input-placeholder-color: #a1a09d;
   --input-radius: 5px;
   --interactive-accent: light-dark(#82807d, #82807d);
   --interactive-accent-hover: light-dark(#82807d, #a68af9);
@@ -796,13 +584,13 @@ body {
   --list-indent: 1.5em;
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
-  --list-marker-color: color-mix(in srgb, #82807d, #ffffff 60%);
-  --list-marker-color-collapsed: color-mix(in srgb, #82807d, #ffffff 60%);
+  --list-marker-color: #cdcccb;
+  --list-marker-color-collapsed: #cdcccb;
   --list-marker-color-hover: currentColor;
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
   --menu-backdrop-filter: none;
-  --menu-background: color-mix(in srgb, #82807d, #000000 70%);
+  --menu-background: #272725;
   --menu-border-color: #3f3f3f;
   --menu-border-width: 1px;
   --menu-padding: 6px;
@@ -810,21 +598,18 @@ body {
   --menu-shadow:
     0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
   --metadata-background: transparent;
-  --metadata-border-color: color-mix(in srgb, #82807d, #000000 25%);
+  --metadata-border-color: #62605e;
   --metadata-border-radius: 0;
   --metadata-border-width: 0;
   --metadata-display-editing: block;
   --metadata-display-reading: block;
-  --metadata-divider-color: color-mix(in srgb, #82807d, #000000 25%);
+  --metadata-divider-color: #62605e;
   --metadata-divider-color-focus: transparent;
   --metadata-divider-color-hover: transparent;
   --metadata-divider-width: 0;
   --metadata-gap: 0.5em;
   --metadata-input-background: transparent;
-  --metadata-input-background-active: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 95%),
-    color-mix(in srgb, #82807d, #000000 90%)
-  );
+  --metadata-input-background-active: light-dark(#f9f9f8, #0d0d0c);
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
     "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
@@ -834,12 +619,9 @@ body {
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: 28px;
   --metadata-input-longtext-lines: 3;
-  --metadata-input-text-color: color-mix(in srgb, #82807d, #ffffff 60%);
+  --metadata-input-text-color: #cdcccb;
   --metadata-label-background: transparent;
-  --metadata-label-background-active: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 95%),
-    color-mix(in srgb, #82807d, #000000 90%)
-  );
+  --metadata-label-background-active: light-dark(#f9f9f8, #0d0d0c);
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
     "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
@@ -853,14 +635,10 @@ body {
   --metadata-label-width: 9em;
   --metadata-max-width: none;
   --metadata-padding: 8px 0;
-  --metadata-property-background: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 95%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
+  --metadata-property-background: light-dark(#f9f9f8, #1a1a19);
   --metadata-property-background-active: #82807d;
   --metadata-property-background-hover: light-dark(#82807d1f, #82807d1f);
-  --metadata-property-box-shadow-focus: 0 0 0 2px
-    color-mix(in srgb, #82807d, #000000 25%);
+  --metadata-property-box-shadow-focus: 0 0 0 2px #62605e;
   --metadata-property-box-shadow-hover: 0 0 0 1px #3f3f3f;
   --metadata-property-padding: 0;
   --metadata-property-radius: 6px;
@@ -868,10 +646,7 @@ body {
   --metadata-property-radius-hover: 6px;
   --metadata-sidebar-input-font-size: 14.992px;
   --metadata-sidebar-label-font-size: 14.992px;
-  --modal-background: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
+  --modal-background: light-dark(#e6e6e5, #1a1a19);
   --modal-border-color: #000000;
   --modal-border-width: 0;
   --modal-community-sidebar-width: 280px;
@@ -883,10 +658,10 @@ body {
   --modal-width: 65rem;
   --nav-collapse-icon-color: light-dark(#82807dbf, #82807dbf);
   --nav-collapse-icon-color-collapsed: light-dark(#82807dbf, #82807dbf);
-  --nav-heading-color: color-mix(in srgb, #82807d, #ffffff 60%);
-  --nav-heading-color-collapsed: color-mix(in srgb, #82807d, #ffffff 25%);
+  --nav-heading-color: #cdcccb;
+  --nav-heading-color-collapsed: #a1a09d;
   --nav-heading-color-collapsed-hover: currentColor;
-  --nav-heading-color-hover: color-mix(in srgb, #82807d, #ffffff 60%);
+  --nav-heading-color-hover: #cdcccb;
   --nav-heading-weight: 500;
   --nav-heading-weight-hover: 500;
   --nav-indentation-guide-color: light-dark(#82807d40, #82807d40);
@@ -898,17 +673,11 @@ body {
   --nav-item-children-margin-start: 12px;
   --nav-item-children-padding-left: calc(1em - 0.5px);
   --nav-item-children-padding-start: 4px;
-  --nav-item-color: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 60%)
-  );
-  --nav-item-color-active: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
+  --nav-item-color: light-dark(#1a1a19, #cdcccb);
+  --nav-item-color-active: light-dark(#e6e6e5, #1a1a19);
   --nav-item-color-highlighted: var(--nav-item-hover);
-  --nav-item-color-hover: color-mix(in srgb, #82807d, #ffffff 60%);
-  --nav-item-color-selected: color-mix(in srgb, #82807d, #ffffff 60%);
+  --nav-item-color-hover: #cdcccb;
+  --nav-item-color-selected: #cdcccb;
   --nav-item-padding: 0.375em 0.75em 0.375em 0.75em;
   --nav-item-parent-padding: 0.25em 0 0.25em 0;
   --nav-item-size: 14.992px;
@@ -926,23 +695,14 @@ body {
   --pdf-thumbnail-shadow: 0 0 0 1px #00000026, 0 2px 8px #00000033;
   --pill-background: light-dark(#82807dbf, #82807dbf);
   --pill-background-hover: light-dark(#82807d, #82807d);
-  --pill-background-remove-hover: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 25%),
-    color-mix(in srgb, #82807d, #000000 25%)
-  );
-  --pill-border-color: color-mix(in srgb, #82807d, #000000 25%);
+  --pill-background-remove-hover: light-dark(#a1a09d, #62605e);
+  --pill-border-color: #62605e;
   --pill-border-color-hover: #3f3f3f;
   --pill-border-width: 0.5pt;
   --pill-color: currentColor;
-  --pill-color-hover: color-mix(in srgb, #82807d, #ffffff 60%);
-  --pill-color-remove: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
-  --pill-color-remove-hover: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
+  --pill-color-hover: #cdcccb;
+  --pill-color-remove: light-dark(#e6e6e5, #1a1a19);
+  --pill-color-remove-hover: light-dark(#e6e6e5, #1a1a19);
   --pill-decoration: none;
   --pill-decoration-hover: none;
   --pill-focus-left-adjust: 0;
@@ -968,7 +728,7 @@ body {
   --r-code-font:
     ui-monospace, Menlo, SFMono-Regular, Consolas, "Roboto Mono",
     "Source Code Pro", monospace;
-  --r-heading-color: color-mix(in srgb, #82807d, #ffffff 60%);
+  --r-heading-color: #cdcccb;
   --r-heading-font: var(--font-text-theme: );
   --r-heading-font-weight: 100;
   --r-heading-letter-spacing: normal;
@@ -984,7 +744,7 @@ body {
   --r-link-color: #e9973f;
   --r-link-color-dark: var(--link-color-active);
   --r-link-color-hover: #c5b6fc;
-  --r-main-color: color-mix(in srgb, #82807d, #ffffff 60%);
+  --r-main-color: #cdcccb;
   --r-main-font:
     system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -1006,17 +766,12 @@ body {
   --search-icon-size: 18px;
   --search-result-background: #000000;
   --shadow-l:
-    0 0 0.2rem color-mix(in srgb, #0d0d0d 2%, transparent),
-    0 0.2rem 0.4rem color-mix(in srgb, #0d0d0d 4%, transparent),
-    0 0.4rem 1.2rem color-mix(in srgb, #0d0d0d 6%, transparent),
-    0 1.2rem 2rem color-mix(in srgb, #0d0d0d 8%, transparent),
-    0 2rem 4rem color-mix(in srgb, #0d0d0d 10%, transparent);
+    0 0 0.2rem #0d0d0d05, 0 0.2rem 0.4rem #0d0d0d0a, 0 0.4rem 1.2rem #0d0d0d0f,
+    0 1.2rem 2rem #0d0d0d14, 0 2rem 4rem #0d0d0d1a;
   --shadow-s:
-    0 0 0.05rem color-mix(in srgb, #0d0d0d 2%, transparent),
-    0 0.05rem 0.1rem color-mix(in srgb, #0d0d0d 4%, transparent),
-    0 0.1rem 0.3rem color-mix(in srgb, #0d0d0d 6%, transparent),
-    0 0.3rem 0.5rem color-mix(in srgb, #0d0d0d 8%, transparent),
-    0 0.5rem 1rem color-mix(in srgb, #0d0d0d 10%, transparent);
+    0 0 0.05rem #0d0d0d05, 0 0.05rem 0.1rem #0d0d0d0a,
+    0 0.1rem 0.3rem #0d0d0d0f, 0 0.3rem 0.5rem #0d0d0d14,
+    0 0.5rem 1rem #0d0d0d1a;
   --sidebar-markdown-font-size: 12.8px;
   --sidebar-tab-text-display: none;
   --size-2-1: 2px;
@@ -1050,7 +805,7 @@ body {
   --status-bar-font-size: 12.8px;
   --status-bar-position: fixed;
   --status-bar-radius: 0.5rem 0 0 0;
-  --status-bar-text-color: color-mix(in srgb, #82807d, #ffffff 60%);
+  --status-bar-text-color: #cdcccb;
   --swatch-height: 24px;
   --swatch-radius: 14px;
   --swatch-shadow: inset 0 0 0 1px #ffffff26;
@@ -1065,10 +820,7 @@ body {
   --sync-avatar-color-8: #fa99cd;
   --sync-avatar-color-current-user: transparent;
   --tab-background-active: light-dark(#000000, #000000);
-  --tab-background-inactive: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 85%)
-  );
+  --tab-background-inactive: light-dark(#e6e6e5, #141313);
   --tab-container-background: transparent;
   --tab-curve: 0.125em;
   --tab-divider-color: #3f3f3f;
@@ -1087,8 +839,8 @@ body {
   --tab-stacked-text-align: start;
   --tab-stacked-text-transform: rotate(0deg);
   --tab-stacked-text-writing-mode: vertical-lr;
-  --tab-switcher-background: color-mix(in srgb, #82807d, #000000 70%);
-  --tab-switcher-menubar-background: color-mix(in srgb, #82807d, #000000 70%);
+  --tab-switcher-background: #272725;
+  --tab-switcher-menubar-background: #272725;
   --tab-switcher-preview-background-shadow:
     0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
     0px 30px 90px #00000033;
@@ -1097,28 +849,16 @@ body {
   --tab-switcher-preview-shadow-active: none;
   --tab-text-color: light-dark(#82807d80, #82807d80);
   --tab-text-color-active: light-dark(#82807d80, #82807d80);
-  --tab-text-color-focused: light-dark(
-    color-mix(in srgb, #82807d, #000000 25%),
-    color-mix(in srgb, #82807d, #ffffff 25%)
-  );
-  --tab-text-color-focused-active: light-dark(
-    color-mix(in srgb, #82807d, #000000 25%),
-    color-mix(in srgb, #82807d, #ffffff 25%)
-  );
-  --tab-text-color-focused-active-current: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 60%),
-    color-mix(in srgb, #82807d, #ffffff 60%)
-  );
+  --tab-text-color-focused: light-dark(#62605e, #a1a09d);
+  --tab-text-color-focused-active: light-dark(#62605e, #a1a09d);
+  --tab-text-color-focused-active-current: light-dark(#cdcccb, #cdcccb);
   --tab-text-color-focused-highlighted: light-dark(#a68af9, #a68af9);
   --tab-width: 200px;
   --table-add-button-background: transparent;
-  --table-add-button-border-color: color-mix(in srgb, #82807d, #000000 25%);
+  --table-add-button-border-color: #62605e;
   --table-add-button-border-width: 1px;
   --table-background: transparent;
-  --table-border-color: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 60%),
-    color-mix(in srgb, #82807d, #000000 70%)
-  );
+  --table-border-color: light-dark(#cdcccb, #272725);
   --table-border-width: 1px;
   --table-cell-vertical-alignment: top;
   --table-column-alt-background: transparent;
@@ -1128,16 +868,13 @@ body {
   --table-column-min-width: 6ch;
   --table-drag-handle-background: transparent;
   --table-drag-handle-background-active: #82807d;
-  --table-drag-handle-color: color-mix(in srgb, #82807d, #ffffff 25%);
-  --table-drag-handle-color-active: color-mix(in srgb, #82807d, #ffffff 95%);
+  --table-drag-handle-color: #a1a09d;
+  --table-drag-handle-color-active: #f9f9f8;
   --table-header-background: transparent;
   --table-header-background-hover: inherit;
-  --table-header-border-color: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 60%),
-    color-mix(in srgb, #82807d, #000000 70%)
-  );
+  --table-header-border-color: light-dark(#cdcccb, #272725);
   --table-header-border-width: 1px;
-  --table-header-color: color-mix(in srgb, #82807d, #ffffff 60%);
+  --table-header-color: #cdcccb;
   --table-header-font: inherit;
   --table-header-size: 16px;
   --table-header-weight: 700;
@@ -1171,22 +908,12 @@ body {
   --text-accent: #8a5cf5;
   --text-accent-hover: #c5b6fc;
   --text-error: #fb464c;
-  --text-faint: light-dark(
-    color-mix(in srgb, #82807d, #000000 70%),
-    color-mix(in srgb, #82807d, #ffffff 25%)
-  );
+  --text-faint: light-dark(#272725, #a1a09d);
   --text-highlight-bg: #ffd00066;
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: color-mix(
-    in srgb,
-    color-mix(in srgb, #82807d, #ffffff 60%),
-    transparent 30%
-  );
-  --text-normal: light-dark(
-    color-mix(in srgb, #82807d, #000000 90%),
-    color-mix(in srgb, #82807d, #ffffff 60%)
-  );
-  --text-on-accent: color-mix(in srgb, #82807d, #ffffff 95%);
+  --text-muted: #cdcccbb3;
+  --text-normal: light-dark(#0d0d0c, #cdcccb);
+  --text-on-accent: #f9f9f8;
   --text-on-accent-inverted: #000000;
   --text-selection: #8a5cf533;
   --text-success: #44cf6e;
@@ -1196,129 +923,69 @@ body {
   --theme-color-activeLineHighlight: light-dark(#82807d1f, #82807d1f);
   --theme-color-audioRecordingActive: light-dark(#b90e00, #ffdfe0);
   --theme-color-base: #82807d;
-  --theme-color-baseDarkened25: color-mix(in srgb, #82807d, #000000 25%);
-  --theme-color-baseDarkened40: color-mix(in srgb, #82807d, #000000 40%);
-  --theme-color-baseDarkened60: color-mix(in srgb, #82807d, #000000 60%);
-  --theme-color-baseDarkened70: color-mix(in srgb, #82807d, #000000 70%);
-  --theme-color-baseDarkened80: color-mix(in srgb, #82807d, #000000 80%);
-  --theme-color-baseDarkened85: color-mix(in srgb, #82807d, #000000 85%);
-  --theme-color-baseDarkened90: color-mix(in srgb, #82807d, #000000 90%);
-  --theme-color-baseLightened25: color-mix(in srgb, #82807d, #ffffff 25%);
-  --theme-color-baseLightened40: color-mix(in srgb, #82807d, #ffffff 40%);
-  --theme-color-baseLightened60: color-mix(in srgb, #82807d, #ffffff 60%);
-  --theme-color-baseLightened70: color-mix(in srgb, #82807d, #ffffff 70%);
-  --theme-color-baseLightened80: color-mix(in srgb, #82807d, #ffffff 80%);
-  --theme-color-baseLightened85: color-mix(in srgb, #82807d, #ffffff 85%);
-  --theme-color-baseLightened95: color-mix(in srgb, #82807d, #ffffff 95%);
+  --theme-color-baseDarkened25: #62605e;
+  --theme-color-baseDarkened40: #4e4d4b;
+  --theme-color-baseDarkened60: #343332;
+  --theme-color-baseDarkened70: #272725;
+  --theme-color-baseDarkened80: #1a1a19;
+  --theme-color-baseDarkened85: #141313;
+  --theme-color-baseDarkened90: #0d0d0c;
+  --theme-color-baseLightened25: #a1a09d;
+  --theme-color-baseLightened40: #b4b3b1;
+  --theme-color-baseLightened60: #cdcccb;
+  --theme-color-baseLightened70: #dad9d8;
+  --theme-color-baseLightened80: #e6e6e5;
+  --theme-color-baseLightened85: #ececeb;
+  --theme-color-baseLightened95: #f9f9f8;
   --theme-color-baseTransparent06: #82807d0f;
   --theme-color-baseTransparent12: #82807d1f;
   --theme-color-baseTransparent25: #82807d40;
   --theme-color-baseTransparent35: #82807d59;
   --theme-color-baseTransparent50: #82807d80;
   --theme-color-baseTransparent75: #82807dbf;
-  --theme-color-blockId: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 25%),
-    color-mix(in srgb, #82807d, #000000 25%)
-  );
+  --theme-color-blockId: light-dark(#a1a09d, #62605e);
   --theme-color-blueDarkened: #004287;
   --theme-color-blueLightened: #83bcff;
-  --theme-color-calendarBg: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 85%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
+  --theme-color-calendarBg: light-dark(#ececeb, #1a1a19);
   --theme-color-calendarDayBg: light-dark(#ffffffbf, #00000080);
   --theme-color-cardBg: #000000;
-  --theme-color-communityItemBg: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
+  --theme-color-communityItemBg: light-dark(#e6e6e5, #1a1a19);
   --theme-color-communityItemBgActive: light-dark(#82807d, #82807d);
-  --theme-color-communityItemBgHover: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 60%),
-    color-mix(in srgb, #82807d, #000000 70%)
-  );
-  --theme-color-communityItemBgSelected: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 25%),
-    color-mix(in srgb, #82807d, #000000 25%)
-  );
+  --theme-color-communityItemBgHover: light-dark(#cdcccb, #272725);
+  --theme-color-communityItemBgSelected: light-dark(#a1a09d, #62605e);
   --theme-color-contentItemBg: light-dark(#ffffff80, #00000033);
   --theme-color-contentItemBgActive: light-dark(#82807d, #82807d);
   --theme-color-contentItemBgHover: light-dark(#ffffff40, #0000001a);
-  --theme-color-control: light-dark(
-    color-mix(in srgb, #82807d, #000000 70%),
-    color-mix(in srgb, #82807d, #ffffff 60%)
-  );
+  --theme-color-control: light-dark(#272725, #cdcccb);
   --theme-color-controlActive: light-dark(
-    light-dark(
-      color-mix(in srgb, #82807d, #000000 70%),
-      color-mix(in srgb, #82807d, #ffffff 60%)
-    ),
-    light-dark(
-      color-mix(in srgb, #82807d, #000000 70%),
-      color-mix(in srgb, #82807d, #ffffff 60%)
-    )
+    light-dark(#272725, #cdcccb),
+    light-dark(#272725, #cdcccb)
   );
-  --theme-color-controlBg: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 95%),
-    color-mix(in srgb, #82807d, #000000 25%)
-  );
+  --theme-color-controlBg: light-dark(#f9f9f8, #62605e);
   --theme-color-controlBgHover: light-dark(#82807d, #82807d);
   --theme-color-controlBgLowWeight: light-dark(
     #ffffff80,
     var(--theme-color-darkenTransparent25)
   );
-  --theme-color-controlContentArea: light-dark(
-    #82807d,
-    color-mix(in srgb, #82807d, #ffffff 60%)
-  );
-  --theme-color-controlContentAreaHover: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
-  --theme-color-controlHover: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 95%),
-    color-mix(in srgb, #82807d, #000000 90%)
-  );
-  --theme-color-controlLightweightActive: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 95%),
-    color-mix(in srgb, #82807d, #ffffff 95%)
-  );
-  --theme-color-controlSetBg: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
-  --theme-color-controlText: light-dark(
-    color-mix(in srgb, #82807d, #000000 70%),
-    color-mix(in srgb, #82807d, #ffffff 60%)
-  );
-  --theme-color-controlTextHover: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
-  --theme-color-controlUIHover: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 60%),
-    color-mix(in srgb, #82807d, #000000 70%)
-  );
-  --theme-color-controlUISelected: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 70%)
-  );
+  --theme-color-controlContentArea: light-dark(#82807d, #cdcccb);
+  --theme-color-controlContentAreaHover: light-dark(#e6e6e5, #1a1a19);
+  --theme-color-controlHover: light-dark(#f9f9f8, #0d0d0c);
+  --theme-color-controlLightweightActive: light-dark(#f9f9f8, #f9f9f8);
+  --theme-color-controlSetBg: light-dark(#e6e6e5, #1a1a19);
+  --theme-color-controlText: light-dark(#272725, #cdcccb);
+  --theme-color-controlTextHover: light-dark(#e6e6e5, #1a1a19);
+  --theme-color-controlUIHover: light-dark(#cdcccb, #272725);
+  --theme-color-controlUISelected: light-dark(#e6e6e5, #272725);
   --theme-color-cyanDarkened: #009b99;
   --theme-color-cyanLightened: #cefffe;
   --theme-color-darkenTransparent06: #0000000f;
   --theme-color-darkenTransparent12: #0000001f;
   --theme-color-darkenTransparent50: #00000080;
   --theme-color-darkenTransparent75: #000000bf;
-  --theme-color-dataviewEmpty: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 40%),
-    color-mix(in srgb, #82807d, #000000 40%)
-  );
+  --theme-color-dataviewEmpty: light-dark(#b4b3b1, #4e4d4b);
   --theme-color-dragTarget: #82807d80;
   --theme-color-dragTargetBg: #82807d40;
-  --theme-color-emptyStateBg: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
+  --theme-color-emptyStateBg: light-dark(#e6e6e5, #1a1a19);
   --theme-color-gradientCardsetBottom: light-dark(#82807d0f, #82807d1f);
   --theme-color-gradientCardsetTop: light-dark(#82807d1f, #82807d0f);
   --theme-color-graphViewBg: transparent;
@@ -1327,129 +994,60 @@ body {
   --theme-color-greenTransparent25: #44cf6e40;
   --theme-color-greenTransparent75: #44cf6ebf;
   --theme-color-hotkey: light-dark(#82807d, #82807d);
-  --theme-color-inputBorder: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 25%),
-    color-mix(in srgb, #82807d, #ffffff 25%)
-  );
+  --theme-color-inputBorder: light-dark(#a1a09d, #a1a09d);
   --theme-color-inputPlaceholder: light-dark(#82807d, #82807d);
-  --theme-color-interactiveActive: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 25%),
-    color-mix(in srgb, #82807d, #000000 25%)
-  );
+  --theme-color-interactiveActive: light-dark(#a1a09d, #62605e);
   --theme-color-jiraIssueDanger: #ffffff;
   --theme-color-jiraIssueDangerBg: #fb464c40;
   --theme-color-jiraIssueDeleteBg: #fb464c;
   --theme-color-jiraIssueInfoBg: light-dark(#83bcff, #004287);
-  --theme-color-jiraIssueStatus: color-mix(in srgb, #82807d, #ffffff 95%);
-  --theme-color-jiraIssueStatusBg: light-dark(
-    color-mix(in srgb, #82807d, #000000 90%),
-    color-mix(in srgb, #82807d, #000000 90%)
-  );
+  --theme-color-jiraIssueStatus: #f9f9f8;
+  --theme-color-jiraIssueStatusBg: light-dark(#0d0d0c, #0d0d0c);
   --theme-color-jiraIssueSuccessBg: light-dark(#a3fabd, #08822d);
   --theme-color-jiraIssueTableStripe: light-dark(#ffffff80, #00000080);
   --theme-color-jiraIssueWarningBg: light-dark(#fffffb, #a5a203);
-  --theme-color-kanbanLaneBg: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
+  --theme-color-kanbanLaneBg: light-dark(#e6e6e5, #1a1a19);
   --theme-color-lightenTransparent06: #ffffff0f;
   --theme-color-lightenTransparent12: #ffffff1f;
   --theme-color-lightenTransparent25: #ffffff40;
   --theme-color-lightenTransparent50: #ffffff80;
   --theme-color-lightenTransparent75: #ffffffbf;
-  --theme-color-lineNumbers: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 60%),
-    color-mix(in srgb, #82807d, #000000 60%)
-  );
-  --theme-color-log: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 80%)
-  );
-  --theme-color-logBg: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 25%),
-    color-mix(in srgb, #82807d, #000000 25%)
-  );
-  --theme-color-menuBg: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
-  --theme-color-mobileToolbarBg: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
-  --theme-color-modalContentBg: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 60%),
-    color-mix(in srgb, #82807d, #000000 70%)
-  );
-  --theme-color-navFileTag: light-dark(
-    #82807d,
-    color-mix(in srgb, #82807d, #000000 25%)
-  );
-  --theme-color-navFileTagActive: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
-  --theme-color-navFileTagActiveBorder: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
-  --theme-color-navFileTagBorder: light-dark(
-    #82807d,
-    color-mix(in srgb, #82807d, #000000 25%)
-  );
-  --theme-color-navigationButtonBgHover: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 70%),
-    color-mix(in srgb, #82807d, #000000 70%)
-  );
-  --theme-color-notice: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 95%),
-    color-mix(in srgb, #82807d, #000000 90%)
-  );
-  --theme-color-noticeBg: light-dark(
-    color-mix(in srgb, #82807d, #000000 80%),
-    color-mix(in srgb, #82807d, #ffffff 95%)
-  );
+  --theme-color-lineNumbers: light-dark(#cdcccb, #343332);
+  --theme-color-log: light-dark(#1a1a19, #e6e6e5);
+  --theme-color-logBg: light-dark(#a1a09d, #62605e);
+  --theme-color-menuBg: light-dark(#e6e6e5, #1a1a19);
+  --theme-color-mobileToolbarBg: light-dark(#e6e6e5, #1a1a19);
+  --theme-color-modalContentBg: light-dark(#cdcccb, #272725);
+  --theme-color-navFileTag: light-dark(#82807d, #62605e);
+  --theme-color-navFileTagActive: light-dark(#1a1a19, #1a1a19);
+  --theme-color-navFileTagActiveBorder: light-dark(#1a1a19, #1a1a19);
+  --theme-color-navFileTagBorder: light-dark(#82807d, #62605e);
+  --theme-color-navigationButtonBgHover: light-dark(#dad9d8, #272725);
+  --theme-color-notice: light-dark(#f9f9f8, #0d0d0c);
+  --theme-color-noticeBg: light-dark(#1a1a19, #f9f9f8);
   --theme-color-orangeDarkened: #a04f00;
   --theme-color-orangeLightened: #ffe1c1;
   --theme-color-orangeTransparent25: #e9973f40;
   --theme-color-orangeTransparent75: #e9973fbf;
   --theme-color-pinkDarkened: #e70070;
   --theme-color-pinkLightened: #ffffff;
-  --theme-color-promptInstructions: light-dark(
-    color-mix(in srgb, #82807d, #000000 40%),
-    color-mix(in srgb, #82807d, #ffffff 40%)
-  );
+  --theme-color-promptInstructions: light-dark(#4e4d4b, #b4b3b1);
   --theme-color-purpleDarkened: #2000d8;
   --theme-color-purpleLightened: #ffffff;
   --theme-color-redDarkened: #b90e00;
   --theme-color-redLightened: #ffdfe0;
   --theme-color-redTransparent25: #fb464c40;
   --theme-color-redTransparent75: #fb464cbf;
-  --theme-color-settingsBg: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
-  --theme-color-settingsBgStripe: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 95%),
-    color-mix(in srgb, #82807d, #000000 90%)
-  );
+  --theme-color-settingsBg: light-dark(#e6e6e5, #1a1a19);
+  --theme-color-settingsBgStripe: light-dark(#f9f9f8, #0d0d0c);
   --theme-color-settingsGroupBg: light-dark(#ffffff80, #00000080);
   --theme-color-shadow: light-dark(#61605e, #0d0d0d);
-  --theme-color-suggestionBg: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 85%),
-    color-mix(in srgb, #82807d, #000000 85%)
-  );
+  --theme-color-suggestionBg: light-dark(#ececeb, #141313);
   --theme-color-switcherBgActive: light-dark(#82807d, #82807d);
   --theme-color-tabBgInactiveHover: #82807dbf;
   --theme-color-tableHeaderBg: #82807d1f;
-  --theme-color-tabNavActiveBg: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 70%),
-    color-mix(in srgb, #82807d, #000000 70%)
-  );
-  --theme-color-tabNavBg: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 60%),
-    color-mix(in srgb, #82807d, #000000 60%)
-  );
+  --theme-color-tabNavActiveBg: light-dark(#dad9d8, #272725);
+  --theme-color-tabNavBg: light-dark(#cdcccb, #343332);
   --theme-color-tagBgHover: light-dark(#9166f71a, #ad8cfa1a);
   --theme-color-tagBgSidebar: light-dark(
     hsl(258, 105.6%, 66%, 0.15),
@@ -1463,14 +1061,8 @@ body {
   --theme-color-tagSidebar: light-dark(#2c087f, hsl(258, 105.6%, 66%));
   --theme-color-tagSidebarHover: light-dark(#320893, hsl(258, 107.712%, 75.9%));
   --theme-color-textMeta: light-dark(#82807d, #82807d);
-  --theme-color-textSelected: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 80%),
-    color-mix(in srgb, #82807d, #000000 80%)
-  );
-  --theme-color-warningBg: light-dark(
-    color-mix(in srgb, #82807d, #ffffff 95%),
-    color-mix(in srgb, #82807d, #ffffff 95%)
-  );
+  --theme-color-textSelected: light-dark(#e6e6e5, #1a1a19);
+  --theme-color-warningBg: light-dark(#f9f9f8, #f9f9f8);
   --theme-color-yellowDarkened: #a5a203;
   --theme-color-yellowLightened: #fffffb;
   --theme-color-yellowTransparent25: #e0de7140;
@@ -1492,8 +1084,8 @@ body {
   );
   --theme-gradient-DarkenedTopToBottom: linear-gradient(
     0deg,
-    color-mix(in srgb, #82807d, #ffffff 45%) 0%,
-    color-mix(in srgb, #82807d, #ffffff 25%) 100%
+    #bab9b7 0%,
+    #a1a09d 100%
   );
   --theme-gradient-topToBottom: linear-gradient(
     0deg,
@@ -1516,11 +1108,8 @@ body {
   --theme-padding-blockVertical: 0.75em;
   --theme-setting-lineWidth: 60;
   --theme-shadow-indent:
-    0 0 0.2rem color-mix(in srgb, #0d0d0d 4%, transparent),
-    0 0 0.4rem color-mix(in srgb, #0d0d0d 8%, transparent),
-    0 0 1.2rem color-mix(in srgb, #0d0d0d 12%, transparent),
-    0 0 2rem color-mix(in srgb, #0d0d0d 16%, transparent),
-    0 0 4rem color-mix(in srgb, #0d0d0d 20%, transparent);
+    0 0 0.2rem #0d0d0d0a, 0 0 0.4rem #0d0d0d14, 0 0 1.2rem #0d0d0d1f,
+    0 0 2rem #0d0d0d29, 0 0 4rem #0d0d0d33;
   --theme-spacing-mobileHorizontalSpacing: calc(
     var(--theme-setting-mobileHorizontalPadding) * 1rem
   );
@@ -1529,11 +1118,11 @@ body {
   --theme-value-sidebarFontScalingFactor: 0.8;
   --titlebar-background: transparent;
   --titlebar-background-focused: transparent;
-  --titlebar-border-color: color-mix(in srgb, #82807d, #000000 25%);
+  --titlebar-border-color: #62605e;
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;
   --titlebar-text-color: currentColor;
-  --titlebar-text-color-focused: color-mix(in srgb, #82807d, #ffffff 60%);
+  --titlebar-text-color-focused: #cdcccb;
   --titlebar-text-weight: 700;
   --toggle-border-width: 2px;
   --toggle-radius: 18px;
@@ -1547,8 +1136,8 @@ body {
   --toggle-thumb-width: 18px;
   --toggle-width: 40px;
   --vault-profile-actions-display: flex;
-  --vault-profile-color: color-mix(in srgb, #82807d, #ffffff 60%);
-  --vault-profile-color-hover: color-mix(in srgb, #82807d, #ffffff 60%);
+  --vault-profile-color: #cdcccb;
+  --vault-profile-color-hover: #cdcccb;
   --vault-profile-display: flex;
   --vault-profile-font-size: 14.992px;
   --vault-profile-font-weight: 500;
@@ -1558,7 +1147,7 @@ body {
   -webkit-user-select: none;
   background-color: #000000;
   caret-color: hsl(258, 150%, 80%);
-  color: color-mix(in srgb, #82807d, #ffffff 60%);
+  color: #cdcccb;
   contain: initial;
   font-family:
     "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
@@ -1690,7 +1279,7 @@ h6 {
 
 .markdown-rendered pre {
   background-color: light-dark(#0000000f, #ffffff0f);
-  border: 0px solid color-mix(in srgb, #82807d, #000000 25%);
+  border: 0px solid #62605e;
   border-radius: 0.25rem;
   min-height: 38px;
   overflow-x: auto;
@@ -1702,9 +1291,9 @@ h6 {
 .markdown-rendered code {
   -webkit-box-decoration-break: clone;
   background-color: light-dark(#0000000f, #ffffff0f);
-  border: 0px solid color-mix(in srgb, #82807d, #000000 25%);
+  border: 0px solid #62605e;
   border-radius: 0.25rem;
-  color: color-mix(in srgb, #82807d, #ffffff 60%);
+  color: #cdcccb;
   font-family:
     "??", ui-monospace, Menlo, SFMono-Regular, Consolas, "Roboto Mono",
     "Source Code Pro", monospace, ui-monospace, Menlo, SFMono-Regular, Consolas,
@@ -1949,7 +1538,7 @@ h6 {
 }
 
 .metadata-input-longtext {
-  color: color-mix(in srgb, #82807d, #ffffff 60%);
+  color: #cdcccb;
   cursor: text;
   flex-grow: 1;
   font-size: 14.992px;
@@ -1977,7 +1566,7 @@ h6 {
 .prompt {
   animation: 0.5s 1 alternate fadein;
   animation-timing-function: ease-in-out;
-  background-color: color-mix(in srgb, #82807d, #000000 80%);
+  background-color: #1a1a19;
   border: 0 solid transparent;
   border-radius: 0.75rem;
   box-shadow:
@@ -1998,7 +1587,7 @@ h6 {
 input.prompt-input {
   background-color: #000000;
   border: none;
-  border-bottom: 1px solid color-mix(in srgb, #82807d, #000000 70%);
+  border-bottom: 1px solid #272725;
   border-radius: 0;
   font-size: 16px;
   height: 48px;
@@ -2009,7 +1598,7 @@ input.prompt-input {
 
 .suggestion-item.is-selected {
   background-color: #82807dbf;
-  color: color-mix(in srgb, #82807d, #000000 80%);
+  color: #1a1a19;
 }
 
 .suggestion-highlight {
@@ -2018,7 +1607,7 @@ input.prompt-input {
 
 .markdown-rendered mark {
   background-color: #ffd00066;
-  color: color-mix(in srgb, #82807d, #ffffff 60%);
+  color: #cdcccb;
 }
 
 a.tag {
@@ -2039,7 +1628,7 @@ input[type="search"] {
   border: none;
   border-radius: 5px;
   box-shadow: 0 0 0 1px #82807d;
-  color: color-mix(in srgb, #82807d, #ffffff 60%);
+  color: #cdcccb;
   font-family: inherit;
   font-size: 14.992px;
   height: 30px;
@@ -2063,7 +1652,7 @@ input[type="search"] {
   background-color: #82807d;
   border: solid 1px var(--nav-file-tag-border-color);
   border-radius: 0.25rem;
-  color: color-mix(in srgb, #82807d, #000000 25%);
+  color: #62605e;
   font-size: 9px;
   font-weight: 600;
   letter-spacing: 0.05em;
@@ -2084,7 +1673,7 @@ input[type="search"] {
 
 .nav-folder-title {
   border-radius: 0.25rem;
-  color: color-mix(in srgb, #82807d, #ffffff 60%);
+  color: #cdcccb;
   cursor: pointer;
   display: flex;
   font-size: 16px;
@@ -2096,7 +1685,7 @@ input[type="search"] {
 
 .nav-file-title {
   border-radius: 0.25rem;
-  color: color-mix(in srgb, #82807d, #ffffff 60%);
+  color: #cdcccb;
   cursor: pointer;
   display: flex;
   font-size: 16px;
@@ -2109,30 +1698,30 @@ input[type="search"] {
 
 .nav-file-title.is-active {
   background-color: #82807d;
-  color: color-mix(in srgb, #82807d, #000000 80%);
+  color: #1a1a19;
   font-weight: inherit;
 }
 
 .nav-folder-title.is-active {
   background-color: #82807d;
-  color: color-mix(in srgb, #82807d, #000000 80%);
+  color: #1a1a19;
   font-weight: inherit;
 }
 
 .nav-file-title.is-selected {
   background-color: #82807d40;
-  color: color-mix(in srgb, #82807d, #ffffff 60%);
+  color: #cdcccb;
 }
 
 .nav-folder-title.is-selected {
   background-color: #82807d40;
-  color: color-mix(in srgb, #82807d, #ffffff 60%);
+  color: #cdcccb;
 }
 
 .tree-item-self {
   align-items: baseline;
   border-radius: 0.25rem;
-  color: color-mix(in srgb, #82807d, #ffffff 60%);
+  color: #cdcccb;
   display: flex;
   font-size: 16px;
   font-weight: inherit;
@@ -2172,18 +1761,18 @@ input[type="search"] {
 
 .tree-item-self.is-active {
   background-color: #82807d;
-  color: color-mix(in srgb, #82807d, #000000 80%);
+  color: #1a1a19;
   font-weight: inherit;
 }
 
 .tree-item-self.is-selected {
   background-color: #82807d40;
-  color: color-mix(in srgb, #82807d, #ffffff 60%);
+  color: #cdcccb;
 }
 
 .tree-item-self.is-being-dragged {
   background-color: #82807d;
-  color: color-mix(in srgb, #82807d, #ffffff 95%);
+  color: #f9f9f8;
 }
 
 .tree-item-self .tree-item-icon {
@@ -2218,7 +1807,7 @@ input[type="search"] {
 
 .tree-item-flair {
   border-radius: 0.25rem;
-  color: color-mix(in srgb, #82807d, #ffffff 25%);
+  color: #a1a09d;
   font-size: 12.8px;
   line-height: 1;
 }
@@ -2236,7 +1825,7 @@ input[type="search"] {
 }
 
 .tree-item-inner-subtext {
-  color: color-mix(in srgb, #82807d, #ffffff 25%);
+  color: #a1a09d;
   font-size: 85%;
 }
 
@@ -2251,7 +1840,7 @@ input[type="search"] {
 kbd {
   background-color: light-dark(#0000000f, #ffffff0f);
   border-radius: 0.25rem;
-  color: color-mix(in srgb, #82807d, #ffffff 60%);
+  color: #cdcccb;
   font-family:
     "??", ui-monospace, Menlo, SFMono-Regular, Consolas, "Roboto Mono",
     "Source Code Pro", monospace, ui-monospace, Menlo, SFMono-Regular, Consolas,
@@ -2280,10 +1869,7 @@ svg.svg-icon {
   border: none;
   border-radius: 0.25rem;
   box-shadow: none;
-  color: light-dark(
-    color-mix(in srgb, #82807d, #000000 70%),
-    color-mix(in srgb, #82807d, #ffffff 60%)
-  );
+  color: light-dark(#272725, #cdcccb);
   cursor: pointer;
   display: flex;
   height: 2em;
@@ -2314,8 +1900,8 @@ svg.svg-icon {
 }
 
 .clickable-icon.is-active {
-  background-color: color-mix(in srgb, #82807d, #000000 25%);
-  color: color-mix(in srgb, #82807d, #ffffff 95%);
+  background-color: #62605e;
+  color: #f9f9f8;
   opacity: 0.65;
 }
 
@@ -2326,10 +1912,7 @@ svg.svg-icon {
   border: none;
   border-radius: 0.25rem;
   box-shadow: none;
-  color: light-dark(
-    color-mix(in srgb, #82807d, #000000 70%),
-    color-mix(in srgb, #82807d, #ffffff 60%)
-  );
+  color: light-dark(#272725, #cdcccb);
   cursor: pointer;
   display: flex;
   height: 2em;
@@ -2344,7 +1927,7 @@ svg.svg-icon {
 }
 
 .view-header-title-parent .view-header-breadcrumb-separator {
-  color: color-mix(in srgb, #82807d, #ffffff 25%);
+  color: #a1a09d;
   padding: 2px 1px;
 }
 
@@ -2367,10 +1950,7 @@ svg.svg-icon {
 }
 
 .backlink-pane > .tree-item-self {
-  color: light-dark(
-    color-mix(in srgb, #82807d, #000000 70%),
-    color-mix(in srgb, #82807d, #ffffff 60%)
-  );
+  color: light-dark(#272725, #cdcccb);
   padding: 0.25em 0.5em 0.25em 0;
   padding-inline-start: 8px;
   width: inherit;
@@ -2381,7 +1961,7 @@ svg.svg-icon {
 }
 
 .backlink-pane > .tree-item-self.is-clickable.is-collapsed {
-  color: color-mix(in srgb, #82807d, #ffffff 25%);
+  color: #a1a09d;
 }
 
 .graph-view.color-fill {
@@ -2402,7 +1982,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-unresolved {
-  color: color-mix(in srgb, #82807d, #ffffff 25%);
+  color: #a1a09d;
   opacity: 0.5;
 }
 
@@ -2458,7 +2038,7 @@ svg.svg-icon {
 }
 
 .graph-controls {
-  background: color-mix(in srgb, #82807d, #000000 80%);
+  background: #1a1a19;
   background-color: #000000;
   border: none;
   border-radius: 0.5rem;
@@ -2480,23 +2060,19 @@ svg.svg-icon {
 }
 
 .theme-dark {
-  --background-modifier-active-hover: color-mix(in srgb, #82807d, #000000 70%);
-  --background-modifier-active-hover-alt: color-mix(
-    in srgb,
-    #82807d,
-    #000000 25%
-  );
-  --background-modifier-border: color-mix(in srgb, #82807d, #000000 25%);
-  --background-modifier-border-focus: color-mix(in srgb, #82807d, #000000 25%);
+  --background-modifier-active-hover: #272725;
+  --background-modifier-active-hover-alt: #62605e;
+  --background-modifier-border: #62605e;
+  --background-modifier-border-focus: #62605e;
   --background-modifier-box-shadow: #0000004d;
   --background-modifier-cover: #0a0a0a66;
   --background-modifier-form-field: #2a2a2a;
   --background-modifier-hover: #82807d;
-  --background-primary: color-mix(in srgb, #82807d, #000000 95%);
-  --background-prompt: color-mix(in srgb, #82807d, #000000 80%);
-  --background-secondary: color-mix(in srgb, #82807d, #000000 70%);
+  --background-primary: #070606;
+  --background-prompt: #1a1a19;
+  --background-secondary: #272725;
   --background-secondary-alt: #363636;
-  --blockquote-border-color: color-mix(in srgb, #82807d, #000000 80%);
+  --blockquote-border-color: #1a1a19;
   --caret-color: hsl(258, 150%, 80%);
   --collapse-icon-color: #82807d;
   --collapse-icon-color-collapsed: #82807d;
@@ -2532,11 +2108,11 @@ svg.svg-icon {
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
-  --empty-pane-color: color-mix(in srgb, #82807d, #000000 70%);
+  --empty-pane-color: #272725;
   --highlight-mix-blend-mode: darken;
   --icon-color: #82807d;
-  --icon-color-focused: color-mix(in srgb, #82807d, #ffffff 80%);
-  --icon-color-hover: color-mix(in srgb, #82807d, #ffffff 80%);
+  --icon-color-focused: #e6e6e5;
+  --icon-color-hover: #e6e6e5;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
     0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
@@ -2547,11 +2123,11 @@ svg.svg-icon {
   --interactive-accent-hover: #a68af9;
   --interactive-hover: #3f3f3f;
   --interactive-normal: #363636;
-  --metadata-input-background-active: color-mix(in srgb, #82807d, #000000 90%);
-  --metadata-label-background-active: color-mix(in srgb, #82807d, #000000 90%);
-  --metadata-property-background: color-mix(in srgb, #82807d, #000000 80%);
+  --metadata-input-background-active: #0d0d0c;
+  --metadata-label-background-active: #0d0d0c;
+  --metadata-property-background: #1a1a19;
   --metadata-property-background-hover: #82807d1f;
-  --modal-background: color-mix(in srgb, #82807d, #000000 80%);
+  --modal-background: #1a1a19;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --nav-collapse-icon-color: #82807dbf;
@@ -2559,18 +2135,18 @@ svg.svg-icon {
   --nav-indentation-guide-color: #82807d40;
   --nav-item-background-active: #82807d;
   --nav-item-background-selected: #82807d40;
-  --nav-item-color: color-mix(in srgb, #82807d, #ffffff 60%);
-  --nav-item-color-active: color-mix(in srgb, #82807d, #000000 80%);
+  --nav-item-color: #cdcccb;
+  --nav-item-color-active: #1a1a19;
   --nav-item-color-hover: #000000;
-  --pdf-shadow: 0 0 0 1px color-mix(in srgb, #82807d, #000000 25%);
-  --pdf-thumbnail-shadow: 0 0 0 1px color-mix(in srgb, #82807d, #000000 25%);
+  --pdf-shadow: 0 0 0 1px #62605e;
+  --pdf-thumbnail-shadow: 0 0 0 1px #62605e;
   --pill-background: #82807dbf;
   --pill-background-hover: #82807d;
-  --pill-background-remove-hover: color-mix(in srgb, #82807d, #000000 25%);
+  --pill-background-remove-hover: #62605e;
   --pill-color: #000000;
   --pill-color-hover: #000000;
-  --pill-color-remove: color-mix(in srgb, #82807d, #000000 80%);
-  --pill-color-remove-hover: color-mix(in srgb, #82807d, #000000 80%);
+  --pill-color-remove: #1a1a19;
+  --pill-color-remove-hover: #1a1a19;
   --search-clear-button-color: #82807d;
   --search-icon-color: #82807d;
   --shadow-l:
@@ -2579,98 +2155,75 @@ svg.svg-icon {
   --shadow-s:
     0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
   --tab-background-active: #000000;
-  --tab-background-inactive: color-mix(in srgb, #82807d, #000000 85%);
+  --tab-background-inactive: #141313;
   --tab-text-color: #82807d80;
   --tab-text-color-active: #82807d80;
-  --tab-text-color-focused: color-mix(in srgb, #82807d, #ffffff 25%);
-  --tab-text-color-focused-active: color-mix(in srgb, #82807d, #ffffff 25%);
-  --tab-text-color-focused-active-current: color-mix(
-    in srgb,
-    #82807d,
-    #ffffff 60%
-  );
+  --tab-text-color-focused: #a1a09d;
+  --tab-text-color-focused-active: #a1a09d;
+  --tab-text-color-focused-active-current: #cdcccb;
   --tab-text-color-focused-highlighted: #a68af9;
-  --table-border-color: color-mix(in srgb, #82807d, #000000 70%);
-  --table-header-border-color: color-mix(in srgb, #82807d, #000000 70%);
+  --table-border-color: #272725;
+  --table-header-border-color: #272725;
   --tag-background: #8a5cf533;
   --tag-color: hsl(258, 105.6%, 66%);
   --text-accent: #a68af9;
-  --text-faint: color-mix(in srgb, #82807d, #ffffff 25%);
-  --text-normal: color-mix(in srgb, #82807d, #ffffff 60%);
+  --text-faint: #a1a09d;
+  --text-normal: #cdcccb;
   --text-selection: #8a5cf554;
   --theme-color-activeLineHighlight: #82807d1f;
   --theme-color-audioRecordingActive: #ffdfe0;
-  --theme-color-blockId: color-mix(in srgb, #82807d, #000000 25%);
+  --theme-color-blockId: #62605e;
   --theme-color-calendarDayBg: #00000080;
-  --theme-color-communityItemBg: color-mix(in srgb, #82807d, #000000 80%);
+  --theme-color-communityItemBg: #1a1a19;
   --theme-color-communityItemBgActive: #82807d;
-  --theme-color-communityItemBgHover: color-mix(in srgb, #82807d, #000000 70%);
-  --theme-color-communityItemBgSelected: color-mix(
-    in srgb,
-    #82807d,
-    #000000 25%
-  );
+  --theme-color-communityItemBgHover: #272725;
+  --theme-color-communityItemBgSelected: #62605e;
   --theme-color-contentItemBg: #00000033;
   --theme-color-contentItemBgActive: #82807d;
   --theme-color-contentItemBgHover: #0000001a;
-  --theme-color-controlActive: light-dark(
-    color-mix(in srgb, #82807d, #000000 70%),
-    color-mix(in srgb, #82807d, #ffffff 60%)
-  );
-  --theme-color-controlBg: color-mix(in srgb, #82807d, #000000 25%);
+  --theme-color-controlActive: light-dark(#272725, #cdcccb);
+  --theme-color-controlBg: #62605e;
   --theme-color-controlBgHover: #82807d;
   --theme-color-controlBgLowWeight: var(--theme-color-darkenTransparent25);
-  --theme-color-controlContentArea: color-mix(in srgb, #82807d, #ffffff 60%);
-  --theme-color-controlContentAreaHover: color-mix(
-    in srgb,
-    #82807d,
-    #000000 80%
-  );
-  --theme-color-controlHover: color-mix(in srgb, #82807d, #000000 90%);
-  --theme-color-controlLightweightActive: color-mix(
-    in srgb,
-    #82807d,
-    #ffffff 95%
-  );
-  --theme-color-controlSetBg: color-mix(in srgb, #82807d, #000000 80%);
-  --theme-color-controlText: color-mix(in srgb, #82807d, #ffffff 60%);
-  --theme-color-controlTextHover: color-mix(in srgb, #82807d, #000000 80%);
-  --theme-color-controlUIHover: color-mix(in srgb, #82807d, #000000 70%);
-  --theme-color-controlUISelected: color-mix(in srgb, #82807d, #000000 70%);
-  --theme-color-emptyStateBg: color-mix(in srgb, #82807d, #000000 80%);
-  --theme-color-gradientBottom: color-mix(in srgb, #82807d, #000000 80%);
+  --theme-color-controlContentArea: #cdcccb;
+  --theme-color-controlContentAreaHover: #1a1a19;
+  --theme-color-controlHover: #0d0d0c;
+  --theme-color-controlLightweightActive: #f9f9f8;
+  --theme-color-controlSetBg: #1a1a19;
+  --theme-color-controlText: #cdcccb;
+  --theme-color-controlTextHover: #1a1a19;
+  --theme-color-controlUIHover: #272725;
+  --theme-color-controlUISelected: #272725;
+  --theme-color-emptyStateBg: #1a1a19;
+  --theme-color-gradientBottom: #1a1a19;
   --theme-color-gradientCardsetBottom: #82807d1f;
   --theme-color-gradientCardsetGeneratedBottom: #82807d40;
   --theme-color-gradientCardsetGeneratedTop: #82807d1f;
   --theme-color-gradientCardsetTop: #82807d0f;
-  --theme-color-gradientTop: color-mix(in srgb, #82807d, #000000 60%);
+  --theme-color-gradientTop: #343332;
   --theme-color-graphLine: #ffffff;
   --theme-color-hotkey: #82807d;
-  --theme-color-inputBorder: color-mix(in srgb, #82807d, #ffffff 25%);
+  --theme-color-inputBorder: #a1a09d;
   --theme-color-inputPlaceholder: #82807d;
-  --theme-color-interactiveActive: color-mix(in srgb, #82807d, #000000 25%);
-  --theme-color-kanbanLaneBg: color-mix(in srgb, #82807d, #000000 80%);
-  --theme-color-log: color-mix(in srgb, #82807d, #ffffff 80%);
-  --theme-color-logBg: color-mix(in srgb, #82807d, #000000 25%);
-  --theme-color-menuBg: color-mix(in srgb, #82807d, #000000 80%);
-  --theme-color-mobileToolbarBg: color-mix(in srgb, #82807d, #000000 80%);
-  --theme-color-modalContentBg: color-mix(in srgb, #82807d, #000000 70%);
-  --theme-color-navFileTag: color-mix(in srgb, #82807d, #000000 25%);
-  --theme-color-navFileTagActive: color-mix(in srgb, #82807d, #000000 80%);
-  --theme-color-navFileTagActiveBorder: color-mix(
-    in srgb,
-    #82807d,
-    #000000 80%
-  );
-  --theme-color-navFileTagBorder: color-mix(in srgb, #82807d, #000000 25%);
-  --theme-color-notice: color-mix(in srgb, #82807d, #000000 90%);
-  --theme-color-noticeBg: color-mix(in srgb, #82807d, #ffffff 95%);
-  --theme-color-promptInstructions: color-mix(in srgb, #82807d, #ffffff 40%);
-  --theme-color-settingsBg: color-mix(in srgb, #82807d, #000000 80%);
-  --theme-color-settingsBgStripe: color-mix(in srgb, #82807d, #000000 90%);
+  --theme-color-interactiveActive: #62605e;
+  --theme-color-kanbanLaneBg: #1a1a19;
+  --theme-color-log: #e6e6e5;
+  --theme-color-logBg: #62605e;
+  --theme-color-menuBg: #1a1a19;
+  --theme-color-mobileToolbarBg: #1a1a19;
+  --theme-color-modalContentBg: #272725;
+  --theme-color-navFileTag: #62605e;
+  --theme-color-navFileTagActive: #1a1a19;
+  --theme-color-navFileTagActiveBorder: #1a1a19;
+  --theme-color-navFileTagBorder: #62605e;
+  --theme-color-notice: #0d0d0c;
+  --theme-color-noticeBg: #f9f9f8;
+  --theme-color-promptInstructions: #b4b3b1;
+  --theme-color-settingsBg: #1a1a19;
+  --theme-color-settingsBgStripe: #0d0d0c;
   --theme-color-settingsGroupBg: #00000080;
   --theme-color-shadow: #0d0d0d;
-  --theme-color-suggestionBg: color-mix(in srgb, #82807d, #000000 85%);
+  --theme-color-suggestionBg: #141313;
   --theme-color-switcherBgActive: #82807d;
   --theme-color-tagBgHover: #ad8cfa1a;
   --theme-color-tagBgSidebar: hsl(258, 105.6%, 66%, 0.15);
@@ -2679,30 +2232,26 @@ svg.svg-icon {
   --theme-color-tagSidebar: hsl(258, 105.6%, 66%);
   --theme-color-tagSidebarHover: hsl(258, 107.712%, 75.9%);
   --theme-color-textMeta: #82807d;
-  --theme-color-textSelected: color-mix(in srgb, #82807d, #000000 80%);
-  --theme-color-warningBg: color-mix(in srgb, #82807d, #ffffff 95%);
+  --theme-color-textSelected: #1a1a19;
+  --theme-color-warningBg: #f9f9f8;
   --theme-shadow-control: 0px 1px 2px #60605f1a;
   --theme-shadow-input:
     0px 1px 2px #0d0d0d80, 0px 3.4px 6.7px #0d0d0c40, 0px 15px 30px #0d0d0d26;
 }
 
 .theme-light {
-  --background-modifier-active-hover: color-mix(in srgb, #82807d, #ffffff 60%);
-  --background-modifier-active-hover-alt: color-mix(
-    in srgb,
-    #82807d,
-    #ffffff 25%
-  );
-  --background-modifier-border: color-mix(in srgb, #82807d, #ffffff 25%);
+  --background-modifier-active-hover: #cdcccb;
+  --background-modifier-active-hover-alt: #a1a09d;
+  --background-modifier-border: #a1a09d;
   --background-modifier-border-focus: #82807d;
   --background-modifier-box-shadow: #0000001a;
   --background-modifier-cover: #dcdcdc66;
   --background-modifier-hover: #82807d;
   --background-primary: #ffffff;
-  --background-prompt: color-mix(in srgb, #82807d, #ffffff 95%);
-  --background-secondary: color-mix(in srgb, #82807d, #ffffff 60%);
+  --background-prompt: #f9f9f8;
+  --background-secondary: #cdcccb;
   --background-secondary-alt: #212121;
-  --blockquote-border-color: color-mix(in srgb, #82807d, #ffffff 80%);
+  --blockquote-border-color: #e6e6e5;
   --caret-color: hsl(258, 150%, 50%);
   --collapse-icon-color: #82807d;
   --collapse-icon-color-collapsed: #82807d;
@@ -2738,7 +2287,7 @@ svg.svg-icon {
   --color-red-rgb: 233, 49, 71;
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
-  --empty-pane-color: color-mix(in srgb, #82807d, #000000 70%);
+  --empty-pane-color: #272725;
   --highlight-mix-blend-mode: darken;
   --icon-color: #82807d;
   --icon-color-focused: #ffffff;
@@ -2751,11 +2300,11 @@ svg.svg-icon {
     0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
   --interactive-accent: #82807d;
   --interactive-accent-hover: #82807d;
-  --metadata-input-background-active: color-mix(in srgb, #82807d, #ffffff 95%);
-  --metadata-label-background-active: color-mix(in srgb, #82807d, #ffffff 95%);
-  --metadata-property-background: color-mix(in srgb, #82807d, #ffffff 95%);
+  --metadata-input-background-active: #f9f9f8;
+  --metadata-label-background-active: #f9f9f8;
+  --metadata-property-background: #f9f9f8;
   --metadata-property-background-hover: #82807d1f;
-  --modal-background: color-mix(in srgb, #82807d, #ffffff 80%);
+  --modal-background: #e6e6e5;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
   --nav-collapse-icon-color: #82807dbf;
@@ -2763,16 +2312,16 @@ svg.svg-icon {
   --nav-indentation-guide-color: #82807d40;
   --nav-item-background-active: #82807d;
   --nav-item-background-selected: #82807d40;
-  --nav-item-color: color-mix(in srgb, #82807d, #000000 80%);
-  --nav-item-color-active: color-mix(in srgb, #82807d, #ffffff 80%);
+  --nav-item-color: #1a1a19;
+  --nav-item-color-active: #e6e6e5;
   --nav-item-color-hover: #ffffff;
   --pill-background: #82807dbf;
   --pill-background-hover: #82807d;
-  --pill-background-remove-hover: color-mix(in srgb, #82807d, #ffffff 25%);
+  --pill-background-remove-hover: #a1a09d;
   --pill-color: #ffffff;
   --pill-color-hover: #ffffff;
-  --pill-color-remove: color-mix(in srgb, #82807d, #ffffff 80%);
-  --pill-color-remove-hover: color-mix(in srgb, #82807d, #ffffff 80%);
+  --pill-color-remove: #e6e6e5;
+  --pill-color-remove-hover: #e6e6e5;
   --search-clear-button-color: #82807d;
   --search-icon-color: #82807d;
   --shadow-l:
@@ -2782,102 +2331,75 @@ svg.svg-icon {
     0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
   --status-bar-text-color: #000000;
   --tab-background-active: #000000;
-  --tab-background-inactive: color-mix(in srgb, #82807d, #ffffff 80%);
+  --tab-background-inactive: #e6e6e5;
   --tab-text-color: #82807d80;
   --tab-text-color-active: #82807d80;
-  --tab-text-color-focused: color-mix(in srgb, #82807d, #000000 25%);
-  --tab-text-color-focused-active: color-mix(in srgb, #82807d, #000000 25%);
-  --tab-text-color-focused-active-current: color-mix(
-    in srgb,
-    #82807d,
-    #ffffff 60%
-  );
+  --tab-text-color-focused: #62605e;
+  --tab-text-color-focused-active: #62605e;
+  --tab-text-color-focused-active-current: #cdcccb;
   --tab-text-color-focused-highlighted: #a68af9;
-  --table-border-color: color-mix(in srgb, #82807d, #ffffff 60%);
-  --table-header-border-color: color-mix(in srgb, #82807d, #ffffff 60%);
+  --table-border-color: #cdcccb;
+  --table-header-border-color: #cdcccb;
   --tag-background: #8a5cf526;
   --tag-color: #733cf3;
-  --text-faint: color-mix(in srgb, #82807d, #000000 70%);
-  --text-normal: color-mix(in srgb, #82807d, #000000 90%);
+  --text-faint: #272725;
+  --text-normal: #0d0d0c;
   --theme-color-activeLineHighlight: #82807d1f;
   --theme-color-audioRecordingActive: #b90e00;
-  --theme-color-blockId: color-mix(in srgb, #82807d, #ffffff 25%);
+  --theme-color-blockId: #a1a09d;
   --theme-color-calendarDayBg: #ffffffbf;
-  --theme-color-communityItemBg: color-mix(in srgb, #82807d, #ffffff 80%);
+  --theme-color-communityItemBg: #e6e6e5;
   --theme-color-communityItemBgActive: #82807d;
-  --theme-color-communityItemBgHover: color-mix(in srgb, #82807d, #ffffff 60%);
-  --theme-color-communityItemBgSelected: color-mix(
-    in srgb,
-    #82807d,
-    #ffffff 25%
-  );
+  --theme-color-communityItemBgHover: #cdcccb;
+  --theme-color-communityItemBgSelected: #a1a09d;
   --theme-color-contentItemBg: #ffffff80;
   --theme-color-contentItemBgActive: #82807d;
   --theme-color-contentItemBgHover: #ffffff40;
-  --theme-color-controlActive: light-dark(
-    color-mix(in srgb, #82807d, #000000 70%),
-    color-mix(in srgb, #82807d, #ffffff 60%)
-  );
-  --theme-color-controlBg: color-mix(in srgb, #82807d, #ffffff 95%);
+  --theme-color-controlActive: light-dark(#272725, #cdcccb);
+  --theme-color-controlBg: #f9f9f8;
   --theme-color-controlBgHover: #82807d;
   --theme-color-controlBgLowWeight: #ffffff80;
   --theme-color-controlContentArea: #82807d;
-  --theme-color-controlContentAreaHover: color-mix(
-    in srgb,
-    #82807d,
-    #ffffff 80%
-  );
-  --theme-color-controlHover: color-mix(in srgb, #82807d, #ffffff 95%);
-  --theme-color-controlLightweightActive: color-mix(
-    in srgb,
-    #82807d,
-    #ffffff 95%
-  );
-  --theme-color-controlSetBg: color-mix(in srgb, #82807d, #ffffff 80%);
-  --theme-color-controlText: color-mix(in srgb, #82807d, #000000 70%);
-  --theme-color-controlTextHover: color-mix(in srgb, #82807d, #ffffff 80%);
-  --theme-color-controlUIHover: color-mix(in srgb, #82807d, #ffffff 60%);
-  --theme-color-controlUISelected: color-mix(in srgb, #82807d, #ffffff 80%);
-  --theme-color-emptyStateBg: color-mix(in srgb, #82807d, #ffffff 80%);
-  --theme-color-gradientBottom: color-mix(in srgb, #82807d, #ffffff 40%);
+  --theme-color-controlContentAreaHover: #e6e6e5;
+  --theme-color-controlHover: #f9f9f8;
+  --theme-color-controlLightweightActive: #f9f9f8;
+  --theme-color-controlSetBg: #e6e6e5;
+  --theme-color-controlText: #272725;
+  --theme-color-controlTextHover: #e6e6e5;
+  --theme-color-controlUIHover: #cdcccb;
+  --theme-color-controlUISelected: #e6e6e5;
+  --theme-color-emptyStateBg: #e6e6e5;
+  --theme-color-gradientBottom: #b4b3b1;
   --theme-color-gradientCardsetBottom: #82807d0f;
   --theme-color-gradientCardsetGeneratedBottom: #82807d1f;
   --theme-color-gradientCardsetGeneratedTop: #82807d59;
   --theme-color-gradientCardsetTop: #82807d1f;
-  --theme-color-gradientDarkenedBottom: color-mix(
-    in srgb,
-    #82807d,
-    #ffffff 25%
-  );
-  --theme-color-gradientDarkenedTop: color-mix(in srgb, #82807d, #ffffff 45%);
-  --theme-color-gradientTop: color-mix(in srgb, #82807d, #ffffff 60%);
+  --theme-color-gradientDarkenedBottom: #a1a09d;
+  --theme-color-gradientDarkenedTop: #bab9b7;
+  --theme-color-gradientTop: #cdcccb;
   --theme-color-graphLine: #000000;
   --theme-color-hotkey: #82807d;
-  --theme-color-inputBorder: color-mix(in srgb, #82807d, #ffffff 25%);
+  --theme-color-inputBorder: #a1a09d;
   --theme-color-inputPlaceholder: #82807d;
-  --theme-color-interactiveActive: color-mix(in srgb, #82807d, #ffffff 25%);
-  --theme-color-kanbanLaneBg: color-mix(in srgb, #82807d, #ffffff 80%);
-  --theme-color-log: color-mix(in srgb, #82807d, #000000 80%);
-  --theme-color-logBg: color-mix(in srgb, #82807d, #ffffff 25%);
-  --theme-color-menuBg: color-mix(in srgb, #82807d, #ffffff 80%);
-  --theme-color-mobileToolbarBg: color-mix(in srgb, #82807d, #ffffff 80%);
-  --theme-color-modalContentBg: color-mix(in srgb, #82807d, #ffffff 60%);
+  --theme-color-interactiveActive: #a1a09d;
+  --theme-color-kanbanLaneBg: #e6e6e5;
+  --theme-color-log: #1a1a19;
+  --theme-color-logBg: #a1a09d;
+  --theme-color-menuBg: #e6e6e5;
+  --theme-color-mobileToolbarBg: #e6e6e5;
+  --theme-color-modalContentBg: #cdcccb;
   --theme-color-navFileTag: #82807d;
-  --theme-color-navFileTagActive: color-mix(in srgb, #82807d, #000000 80%);
-  --theme-color-navFileTagActiveBorder: color-mix(
-    in srgb,
-    #82807d,
-    #000000 80%
-  );
+  --theme-color-navFileTagActive: #1a1a19;
+  --theme-color-navFileTagActiveBorder: #1a1a19;
   --theme-color-navFileTagBorder: #82807d;
-  --theme-color-notice: color-mix(in srgb, #82807d, #ffffff 95%);
-  --theme-color-noticeBg: color-mix(in srgb, #82807d, #000000 80%);
-  --theme-color-promptInstructions: color-mix(in srgb, #82807d, #000000 40%);
-  --theme-color-settingsBg: color-mix(in srgb, #82807d, #ffffff 80%);
-  --theme-color-settingsBgStripe: color-mix(in srgb, #82807d, #ffffff 95%);
+  --theme-color-notice: #f9f9f8;
+  --theme-color-noticeBg: #1a1a19;
+  --theme-color-promptInstructions: #4e4d4b;
+  --theme-color-settingsBg: #e6e6e5;
+  --theme-color-settingsBgStripe: #f9f9f8;
   --theme-color-settingsGroupBg: #ffffff80;
   --theme-color-shadow: #61605e;
-  --theme-color-suggestionBg: color-mix(in srgb, #82807d, #ffffff 85%);
+  --theme-color-suggestionBg: #ececeb;
   --theme-color-switcherBgActive: #82807d;
   --theme-color-tagBgHover: #9166f71a;
   --theme-color-tagBgSidebar: hsl(258, 105.6%, 66%, 0.15);
@@ -2886,15 +2408,15 @@ svg.svg-icon {
   --theme-color-tagSidebar: #2c087f;
   --theme-color-tagSidebarHover: #320893;
   --theme-color-textMeta: #82807d;
-  --theme-color-textSelected: color-mix(in srgb, #82807d, #ffffff 80%);
-  --theme-color-warningBg: color-mix(in srgb, #82807d, #ffffff 95%);
+  --theme-color-textSelected: #e6e6e5;
+  --theme-color-warningBg: #f9f9f8;
   --theme-shadow-control: 0 1px 2px #63615d80;
   --theme-shadow-input:
     0 1px 2px #42403e33, 0 3.4px 6.7px #41403e26, 0 15px 30px #41403f0d;
 }
 
 .mod-sidedock {
-  --bases-table-header-background: color-mix(in srgb, #82807d, #000000 70%);
+  --bases-table-header-background: #272725;
   --h1-size: 141.93927px;
   --h2-size: 87.72513px;
   --h3-size: 54.21825px;
@@ -2931,7 +2453,7 @@ svg.svg-icon {
 
 .workspace-tabs .workspace-leaf {
   background: transparent;
-  background-color: color-mix(in srgb, #82807d, #000000 70%);
+  background-color: #272725;
   height: 100%;
 }
 

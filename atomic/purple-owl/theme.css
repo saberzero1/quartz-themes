@@ -1970,10 +1970,10 @@ body {
   --file-margins: var(--size-4-8);
   --flair-background: var(--interactive-normal);
   --flair-color: var(--text-normal);
-  --font-adaptive-normal: var(--font-normal);
-  --font-adaptive-small: var(--font-small);
-  --font-adaptive-smaller: var(--font-smaller);
-  --font-adaptive-smallest: var(--font-smallest);
+  --font-adaptive-normal: 16px;
+  --font-adaptive-small: 13px;
+  --font-adaptive-smaller: 11px;
+  --font-adaptive-smallest: 10px;
   --font-black: 900;
   --font-bold: 700;
   --font-default:
@@ -21560,10 +21560,10 @@ body.is-screenshotting *::-webkit-scrollbar {
   --checkbox-size: 17px;
   --cursor: pointer;
   --file-margins: var(--size-4-2) var(--size-4-6);
-  --font-adaptive-normal: calc(var(--font-normal) + 4px);
-  --font-adaptive-small: calc(var(--font-small) + 3px);
-  --font-adaptive-smaller: calc(var(--font-smaller) + 2px);
-  --font-adaptive-smallest: calc(var(--font-smallest) + 2px);
+  --font-adaptive-normal: 20px;
+  --font-adaptive-small: 16px;
+  --font-adaptive-smaller: 13px;
+  --font-adaptive-smallest: 12px;
   --font-settings: 16px;
   --font-settings-small: 13px;
   --font-ui-large: calc(var(--font-text-size) * 1.2);
@@ -25335,7 +25335,7 @@ body:not(.is-mobile)
   border-color: var(--background-modifier-border);
   color: var(--text-normal);
   cursor: var(--cursor);
-  font-size: vcalc(var(--font-adaptive-normal) - 1px);
+  font-size: calc(var(--font-adaptive-normal) - 1px);
   font-weight: 600;
 }
 

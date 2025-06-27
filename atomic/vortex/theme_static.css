@@ -1582,27 +1582,27 @@
 }
 
 body {
-  --accent-brighter-10: color-mix(in srgb, #8a5cf5 90%, #ffffff);
-  --accent-brighter-30: color-mix(in srgb, #8a5cf5 70%, #ffffff);
-  --accent-brighter-50: color-mix(in srgb, #8a5cf5 50%, #ffffff);
-  --accent-brighter-70: color-mix(in srgb, #8a5cf5 30%, #ffffff);
-  --accent-brighter-90: color-mix(in srgb, #8a5cf5 10%, #ffffff);
-  --accent-darker-10: color-mix(in srgb, #8a5cf5 90%, #111111);
-  --accent-darker-30: color-mix(in srgb, #8a5cf5 70%, #111111);
-  --accent-darker-50: color-mix(in srgb, #8a5cf5 50%, #111111);
-  --accent-darker-70: color-mix(in srgb, #8a5cf5 30%, #111111);
+  --accent-brighter-10: #966cf6;
+  --accent-brighter-30: #ad8df8;
+  --accent-brighter-50: #c4aefa;
+  --accent-brighter-70: #dccefc;
+  --accent-brighter-90: #f3effe;
+  --accent-darker-10: #7e55de;
+  --accent-darker-30: #6646b0;
+  --accent-darker-50: #4d3783;
+  --accent-darker-70: #352855;
   --accent-h: 258;
   --accent-l: 66%;
-  --accent-opacity-10: color-mix(in srgb, #8a5cf5 10%, transparent);
-  --accent-opacity-20: color-mix(in srgb, #8a5cf5 20%, transparent);
-  --accent-opacity-30: color-mix(in srgb, #8a5cf5 30%, transparent);
-  --accent-opacity-40: color-mix(in srgb, #8a5cf5 40%, transparent);
-  --accent-opacity-5: color-mix(in srgb, #8a5cf5 5%, transparent);
-  --accent-opacity-50: color-mix(in srgb, #8a5cf5 50%, transparent);
-  --accent-opacity-60: color-mix(in srgb, #8a5cf5 60%, transparent);
-  --accent-opacity-70: color-mix(in srgb, #8a5cf5 70%, transparent);
-  --accent-opacity-80: color-mix(in srgb, #8a5cf5 80%, transparent);
-  --accent-opacity-90: color-mix(in srgb, #8a5cf5 90%, transparent);
+  --accent-opacity-10: #8a5cf51a;
+  --accent-opacity-20: #8a5cf533;
+  --accent-opacity-30: #8a5cf54d;
+  --accent-opacity-40: #8a5cf566;
+  --accent-opacity-5: #8a5cf50d;
+  --accent-opacity-50: #8a5cf580;
+  --accent-opacity-60: #8a5cf599;
+  --accent-opacity-70: #8a5cf5b3;
+  --accent-opacity-80: #8a5cf5cc;
+  --accent-opacity-90: #8a5cf5e6;
   --accent-s: 88%;
   --alt-color: light-dark(#111111, #ffffff);
   --anim-duration-fast: 140ms;
@@ -1615,7 +1615,7 @@ body {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   --background-modifier-active-hover: #8a5cf526;
-  --background-modifier-border: color-mix(in srgb, #8a5cf5 5%, transparent);
+  --background-modifier-border: #8a5cf50d;
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;
   --background-modifier-error: #fb464c;
@@ -1715,10 +1715,10 @@ body {
   --canvas-color-6: 168, 130, 255;
   --canvas-dot-pattern: #363636;
   --caret-color: #dadada;
-  --checkbox-border-color: color-mix(in srgb, #8a5cf5 70%, #ffffff);
+  --checkbox-border-color: #ad8df8;
   --checkbox-border-color-hover: #8a5cf5;
   --checkbox-color: #8a5cf5;
-  --checkbox-color-hover: color-mix(in srgb, #8a5cf5 70%, #ffffff);
+  --checkbox-color-hover: #ad8df8;
   --checkbox-margin-inline-start: 0.85em;
   --checkbox-marker-color: #111111;
   --checkbox-radius: 4px;
@@ -2174,7 +2174,7 @@ body {
   --ribbon-background-collapsed: #111111;
   --ribbon-padding: 8px 4px 12px;
   --ribbon-width: 44px;
-  --scrollbar-active-thumb-bg: color-mix(in srgb, #8a5cf5 80%, transparent);
+  --scrollbar-active-thumb-bg: #8a5cf5cc;
   --scrollbar-bg: #ffffff0d;
   --scrollbar-thumb-bg: #ffffff1a;
   --search-clear-button-color: #b3b3b3;
@@ -2207,7 +2207,7 @@ body {
   --slider-thumb-radius: 50%;
   --slider-thumb-width: 18px;
   --slider-thumb-y: -6px;
-  --slider-track-background: color-mix(in srgb, #8a5cf5 40%, transparent);
+  --slider-track-background: #8a5cf566;
   --slider-track-height: 3px;
   --status-bar-background: #1a1a1a;
   --status-bar-border-color: #00000026;
@@ -2217,7 +2217,7 @@ body {
   --status-bar-radius: 8px 0 0 0;
   --status-bar-text-color: #b3b3b3;
   --sub-accent: #f4569d;
-  --sub-accent-60: color-mix(in srgb, #f4569d 60%, transparent);
+  --sub-accent-60: #f4569d99;
   --swatch-height: 24px;
   --swatch-radius: 14px;
   --swatch-shadow: inset 0 0 0 1px #ffffff26;
@@ -2300,13 +2300,13 @@ body {
   --table-text-color: inherit;
   --table-text-size: 16px;
   --table-white-space: break-spaces;
-  --tag-background: color-mix(in srgb, #8a5cf5 10%, transparent);
-  --tag-background-hover: color-mix(in srgb, #8a5cf5 30%, transparent);
+  --tag-background: #8a5cf51a;
+  --tag-background-hover: #8a5cf54d;
   --tag-border-color: #8a5cf526;
   --tag-border-color-hover: #8a5cf526;
   --tag-border-width: 0px;
   --tag-color: #8a5cf5;
-  --tag-color-hover: color-mix(in srgb, #8a5cf5 70%, #ffffff);
+  --tag-color-hover: #ad8df8;
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-padding-x: 0.65em;
@@ -4732,7 +4732,7 @@ body:not(.show-ribbon) .workspace-ribbon {
   pointer-events: none;
   position: fixed;
   text-align: center;
-  text-shadow: 0 0 0.5em color-mix(in srgb, #8a5cf5 30%, transparent);
+  text-shadow: 0 0 0.5em #8a5cf54d;
   transform: translateX(-50%);
   unicode-bidi: plaintext;
   white-space: pre-wrap;
@@ -7674,7 +7674,7 @@ button.mod-loading::after {
 
 button.mod-cta {
   --text-color: #ffffff;
-  background-color: color-mix(in srgb, #8a5cf5 80%, transparent);
+  background-color: #8a5cf5cc;
   color: light-dark(#111111, #ffffff);
 }
 
@@ -9259,7 +9259,7 @@ body:not(.is-ios):not(.is-android) input[type="datetime-local"] {
 
 input[type="range"] {
   -webkit-appearance: none;
-  background-color: color-mix(in srgb, #8a5cf5 40%, transparent);
+  background-color: #8a5cf566;
   border-radius: 6px;
   height: 6px;
   outline: none;
@@ -9968,9 +9968,9 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 @media (hover: hover) {
   .multi-select-pill:hover {
-    background-color: color-mix(in srgb, #8a5cf5 30%, transparent);
+    background-color: #8a5cf54d;
     border: 0 solid #8a5cf526;
-    color: color-mix(in srgb, #8a5cf5 70%, #ffffff);
+    color: #ad8df8;
     text-decoration: none;
   }
 }
@@ -9988,7 +9988,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 @media (hover: hover) {
   .multi-select-pill-remove-button:hover {
-    color: color-mix(in srgb, #8a5cf5 70%, #ffffff);
+    color: #ad8df8;
   }
 }
 
@@ -10514,11 +10514,11 @@ body.styled-scrollbars ::-webkit-scrollbar-thumb {
 
 body.styled-scrollbars ::-webkit-scrollbar-thumb:active {
   -webkit-border-radius: 12px;
-  background-color: color-mix(in srgb, #8a5cf5 80%, transparent);
+  background-color: #8a5cf5cc;
 }
 
 body.styled-scrollbars ::-webkit-scrollbar-thumb:hover {
-  background-color: color-mix(in srgb, #8a5cf5 80%, transparent);
+  background-color: #8a5cf5cc;
 }
 
 body.styled-scrollbars ::-webkit-scrollbar-corner {
@@ -10786,7 +10786,7 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
     background-color: #ffffff26;
   }
   .vertical-tab-nav-item:hover {
-    background-color: color-mix(in srgb, #8a5cf5 30%, transparent);
+    background-color: #8a5cf54d;
     color: #8a5cf5;
     text-shadow: 0 0 0.5em #8a5cf5;
   }
@@ -12159,7 +12159,7 @@ kbd {
 }
 
 .cm-s-obsidian div.HyperMD-codeblock-bg {
-  background-color: color-mix(in srgb, #8a5cf5 5%, transparent);
+  background-color: #8a5cf50d;
   border-color: transparent;
   border-style: solid;
   border-width: 0px 0px 0px 0px;
@@ -13094,7 +13094,7 @@ iframe.external-embed {
     background-color: transparent;
     border-radius: 0px;
     box-shadow: 0 0 0 1px #3f3f3f;
-    outline: 2px solid color-mix(in srgb, #8a5cf5 40%, transparent);
+    outline: 2px solid #8a5cf566;
   }
 }
 
@@ -13403,14 +13403,14 @@ input.metadata-property-key-input:focus {
 
 .metadata-property[data-property-key="tags"] .multi-select-pill {
   --pill-background: #8a5cf533;
-  --pill-background-hover: color-mix(in srgb, #8a5cf5 30%, transparent);
+  --pill-background-hover: #8a5cf54d;
   --pill-border-color: #8a5cf526;
   --pill-border-color-hover: #8a5cf526;
   --pill-border-width: 0px;
   --pill-color: #8a5cf5;
-  --pill-color-hover: color-mix(in srgb, #8a5cf5 70%, #ffffff);
+  --pill-color-hover: #ad8df8;
   --pill-color-remove: #8a5cf5;
-  --pill-color-remove-hover: color-mix(in srgb, #8a5cf5 70%, #ffffff);
+  --pill-color-remove-hover: #ad8df8;
   --pill-decoration: none;
   --pill-decoration-hover: none;
   --pill-focus-left-adjust: 0;
@@ -13597,7 +13597,7 @@ input.metadata-property-key-input:focus {
 
 .metadata-property-value .clickable-icon:hover {
   background: transparent;
-  background-color: color-mix(in srgb, #8a5cf5 10%, transparent);
+  background-color: #8a5cf51a;
   color: #8a5cf5;
   cursor: default;
   opacity: 1;
@@ -14906,11 +14906,7 @@ a.mobile-tap {
 
 .external-link {
   animation: unhoverFill 0.5s forwards;
-  background-image: linear-gradient(
-    to bottom,
-    color-mix(in srgb, #f4569d 60%, transparent) 0%,
-    color-mix(in srgb, #f4569d 60%, transparent) 100%
-  );
+  background-image: linear-gradient(to bottom, #f4569d99 0%, #f4569d99 100%);
   background-position: 0 100%;
   background-position-y: 0.25em;
   background-repeat: repeat-x;
@@ -15848,9 +15844,9 @@ a.tag {
 
 @media (hover: hover) {
   a.tag:hover {
-    background-color: color-mix(in srgb, #8a5cf5 30%, transparent);
+    background-color: #8a5cf54d;
     border: 0px solid #8a5cf526;
-    color: color-mix(in srgb, #8a5cf5 70%, #ffffff);
+    color: #ad8df8;
     text-decoration: none;
   }
 }
@@ -15891,7 +15887,7 @@ a.tag {
 input[type="checkbox"] {
   -webkit-appearance: none;
   appearance: none;
-  border: 1px solid color-mix(in srgb, #8a5cf5 70%, #ffffff);
+  border: 1px solid #ad8df8;
   border-radius: 4px;
   flex-shrink: 0;
   height: 17px;
@@ -15943,8 +15939,8 @@ input[type="checkbox"]:checked {
 
 @media (hover: hover) {
   input[type="checkbox"]:checked:hover {
-    background-color: color-mix(in srgb, #8a5cf5 70%, #ffffff);
-    border-color: color-mix(in srgb, #8a5cf5 70%, #ffffff);
+    background-color: #ad8df8;
+    border-color: #ad8df8;
   }
 }
 
@@ -16033,7 +16029,7 @@ ul > li.task-list-item[data-task="X"] {
 }
 
 .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"] {
-  color: color-mix(in srgb, #8a5cf5 50%, transparent);
+  color: #8a5cf580;
   text-decoration: none;
 }
 
@@ -16071,7 +16067,7 @@ i {
 }
 
 em {
-  color: color-mix(in srgb, #8a5cf5 90%, #ffffff);
+  color: #966cf6;
   font-family:
     Rubik,
     Segoe UI,
@@ -16098,26 +16094,26 @@ em {
 }
 
 .cm-s-obsidian span.cm-formatting-highlight {
-  background-color: color-mix(in srgb, #8a5cf5 50%, transparent);
+  background-color: #8a5cf580;
   background-image: none;
   border-bottom-right-radius: 10px;
   border-top-left-radius: 10px;
   color: light-dark(#111111, #ffffff);
   display: inline-block;
   line-height: 1.2;
-  outline: 2px solid color-mix(in srgb, #8a5cf5 80%, transparent);
+  outline: 2px solid #8a5cf5cc;
   padding: 0 4px;
 }
 
 .cm-s-obsidian span.cm-highlight {
-  background-color: color-mix(in srgb, #8a5cf5 50%, transparent);
+  background-color: #8a5cf580;
   background-image: none;
   border-bottom-right-radius: 10px;
   border-top-left-radius: 10px;
   color: light-dark(#111111, #ffffff);
   display: inline-block;
   line-height: 1.2;
-  outline: 2px solid color-mix(in srgb, #8a5cf5 80%, transparent);
+  outline: 2px solid #8a5cf5cc;
   padding: 0 4px;
 }
 
@@ -16136,7 +16132,7 @@ em {
 }
 
 .cm-em {
-  color: color-mix(in srgb, #8a5cf5 90%, #ffffff);
+  color: #966cf6;
   font-family:
     Rubik,
     Segoe UI,
@@ -24278,11 +24274,7 @@ input.mobile-vault-chooser-field-input {
 
 .internal-link {
   animation: unhoverFill 0.5s forwards;
-  background-image: linear-gradient(
-    to bottom,
-    color-mix(in srgb, #8a5cf5 50%, transparent) 0%,
-    color-mix(in srgb, #8a5cf5 50%, transparent) 100%
-  );
+  background-image: linear-gradient(to bottom, #8a5cf580 0%, #8a5cf580 100%);
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-size: 100% 18%;
@@ -24388,26 +24380,26 @@ strong::selection {
 }
 
 .markdown-preview-view mark {
-  background-color: color-mix(in srgb, #8a5cf5 50%, transparent);
+  background-color: #8a5cf580;
   background-image: none;
   border-bottom-right-radius: 10px;
   border-top-left-radius: 10px;
   color: light-dark(#111111, #ffffff);
   display: inline-block;
   line-height: 1.2;
-  outline: 2px solid color-mix(in srgb, #8a5cf5 80%, transparent);
+  outline: 2px solid #8a5cf5cc;
   padding: 0 4px;
 }
 
 .markdown-preview-view span.highlight {
-  background-color: color-mix(in srgb, #8a5cf5 50%, transparent);
+  background-color: #8a5cf580;
   background-image: none;
   border-bottom-right-radius: 10px;
   border-top-left-radius: 10px;
   color: light-dark(#111111, #ffffff);
   display: inline-block;
   line-height: 1.2;
-  outline: 2px solid color-mix(in srgb, #8a5cf5 80%, transparent);
+  outline: 2px solid #8a5cf5cc;
   padding: 0 4px;
 }
 
@@ -24418,8 +24410,8 @@ strong::selection {
 }
 
 .vertical-tab-nav-item.is-active {
-  background-color: color-mix(in srgb, #8a5cf5 10%, transparent);
-  color: color-mix(in srgb, #8a5cf5 70%, #ffffff);
+  background-color: #8a5cf51a;
+  color: #ad8df8;
   outline: 2px solid #8a5cf5;
 }
 
@@ -24432,32 +24424,32 @@ strong::selection {
 }
 
 .clickable-icon.extra-setting-button:hover {
-  background-color: color-mix(in srgb, #8a5cf5 10%, transparent);
+  background-color: #8a5cf51a;
   color: #8a5cf5;
   opacity: 1;
 }
 
 .clickable-icon.setting-add-hotkey-button:hover {
-  background-color: color-mix(in srgb, #8a5cf5 10%, transparent);
+  background-color: #8a5cf51a;
   color: #8a5cf5;
   opacity: 1;
 }
 
 .setting-item-control .clickable-icon:hover {
-  background-color: color-mix(in srgb, #8a5cf5 10%, transparent);
+  background-color: #8a5cf51a;
   color: #8a5cf5;
   opacity: 1;
 }
 
 .modal.mod-settings.mod-sidebar-layout .modal-close-button:hover {
-  background: color-mix(in srgb, #8a5cf5 10%, transparent);
+  background: #8a5cf51a;
   color: #8a5cf5;
 }
 
 .mod-cta:hover {
-  background-color: color-mix(in srgb, #8a5cf5 10%, transparent);
+  background-color: #8a5cf51a;
   color: #8a5cf5;
-  outline: 3px solid color-mix(in srgb, #8a5cf5 80%, transparent);
+  outline: 3px solid #8a5cf5cc;
   text-shadow: 0 0 0.5em #8a5cf5;
   transition: 100ms;
 }
@@ -24513,7 +24505,7 @@ strong::selection {
 }
 
 .clickable-icon.side-dock-ribbon-action:hover {
-  background: color-mix(in srgb, #8a5cf5 10%, transparent);
+  background: #8a5cf51a;
   color: #8a5cf5;
   opacity: 1;
 }
@@ -24521,7 +24513,7 @@ strong::selection {
 .workspace-split.mod-horizontal.mod-sidedock.mod-left-split
   .nav-buttons-container
   .clickable-icon.nav-action-button:hover {
-  background: color-mix(in srgb, #8a5cf5 10%, transparent);
+  background: #8a5cf51a;
   color: #8a5cf5;
   opacity: 1;
 }
@@ -24529,26 +24521,26 @@ strong::selection {
 .workspace-split.mod-horizontal.mod-sidedock.mod-right-split
   .nav-buttons-container
   .clickable-icon.nav-action-button:hover {
-  background: color-mix(in srgb, #8a5cf5 10%, transparent);
+  background: #8a5cf51a;
   color: #8a5cf5;
   opacity: 1;
 }
 
 .sidebar-toggle-button.mod-left .clickable-icon:hover {
-  background: color-mix(in srgb, #8a5cf5 20%, transparent);
+  background: #8a5cf533;
   color: #8a5cf5;
 }
 
 .workspace.is-left-sidedock-open
   .sidebar-toggle-button.mod-left
   .clickable-icon {
-  background: color-mix(in srgb, #8a5cf5 10%, transparent);
+  background: #8a5cf51a;
   color: #8a5cf5;
-  outline: 3px solid color-mix(in srgb, #8a5cf5 60%, transparent);
+  outline: 3px solid #8a5cf599;
 }
 
 .workspace-drawer-vault-actions .clickable-icon:hover {
-  background: color-mix(in srgb, #8a5cf5 20%, transparent);
+  background: #8a5cf533;
   color: #8a5cf5;
   transition: 100ms;
 }
@@ -24568,19 +24560,19 @@ strong::selection {
 }
 
 .tree-item-self.nav-file-title.tappable.is-clickable.is-active {
-  background-color: color-mix(in srgb, #8a5cf5 10%, transparent);
-  color: color-mix(in srgb, #8a5cf5 70%, #ffffff);
-  outline: 2px solid color-mix(in srgb, #8a5cf5 60%, transparent);
+  background-color: #8a5cf51a;
+  color: #ad8df8;
+  outline: 2px solid #8a5cf599;
 }
 
 .nav-file-title:hover {
-  background-color: color-mix(in srgb, #8a5cf5 20%, transparent);
+  background-color: #8a5cf533;
   color: #8a5cf5;
   text-shadow: 0 0 0.2em #8a5cf5;
 }
 
 .nav-folder-title:hover {
-  background-color: color-mix(in srgb, #8a5cf5 20%, transparent);
+  background-color: #8a5cf533;
   color: #8a5cf5;
   text-shadow: 0 0 0.2em #8a5cf5;
 }
@@ -24611,13 +24603,13 @@ strong::selection {
 
 .workspace-split.mod-horizontal.mod-sidedock.mod-left-split
   .workspace-tab-header.tappable.is-active {
-  background-color: color-mix(in srgb, #8a5cf5 20%, transparent);
+  background-color: #8a5cf533;
   opacity: 1;
 }
 
 .workspace-split.mod-horizontal.mod-sidedock.mod-right-split
   .workspace-tab-header.tappable.is-active {
-  background-color: color-mix(in srgb, #8a5cf5 20%, transparent);
+  background-color: #8a5cf533;
   opacity: 1;
 }
 
@@ -24637,20 +24629,20 @@ strong::selection {
 
 .workspace-split.mod-horizontal.mod-sidedock.mod-left-split
   .workspace-tab-header.tappable:hover {
-  background-color: color-mix(in srgb, #8a5cf5 5%, transparent);
+  background-color: #8a5cf50d;
   opacity: 1;
 }
 
 .workspace-split.mod-horizontal.mod-sidedock.mod-right-split
   .workspace-tab-header.tappable:hover {
-  background-color: color-mix(in srgb, #8a5cf5 5%, transparent);
+  background-color: #8a5cf50d;
   opacity: 1;
 }
 
 .workspace-split.mod-vertical.mod-root
   .workspace-tab-header.tappable.is-active
   .workspace-tab-header-inner {
-  background-color: color-mix(in srgb, #8a5cf5 20%, transparent);
+  background-color: #8a5cf533;
   border: 2px solid #8a5cf5;
   border-radius: 8px;
   color: #8a5cf5;
@@ -24666,7 +24658,7 @@ strong::selection {
 .workspace-split.mod-vertical.mod-root
   .workspace-tab-header.tappable:hover
   .workspace-tab-header-inner {
-  background-color: color-mix(in srgb, #8a5cf5 20%, transparent);
+  background-color: #8a5cf533;
   color: #8a5cf5;
   text-shadow: 0 0 0.5em #8a5cf5;
 }
@@ -24678,30 +24670,30 @@ strong::selection {
 }
 
 .workspace-tab-header-new-tab .clickable-icon:hover {
-  background-color: color-mix(in srgb, #8a5cf5 20%, transparent);
+  background-color: #8a5cf533;
   color: #8a5cf5;
 }
 
 .sidebar-toggle-button.mod-right .clickable-icon:hover {
-  background-color: color-mix(in srgb, #8a5cf5 20%, transparent);
+  background-color: #8a5cf533;
   color: #8a5cf5;
 }
 
 .workspace.is-right-sidedock-open
   .sidebar-toggle-button.mod-right
   .clickable-icon {
-  background: color-mix(in srgb, #8a5cf5 10%, transparent);
+  background: #8a5cf51a;
   color: #8a5cf5;
-  outline: 3px solid color-mix(in srgb, #8a5cf5 50%, transparent);
+  outline: 3px solid #8a5cf580;
 }
 
 .titlebar-button-container.mod-right .titlebar-button.mod-minimize:hover {
-  background-color: color-mix(in srgb, #8a5cf5 10%, transparent);
+  background-color: #8a5cf51a;
   color: #8a5cf5;
 }
 
 .titlebar-button-container.mod-right .titlebar-button.mod-maximize:hover {
-  background-color: color-mix(in srgb, #8a5cf5 10%, transparent);
+  background-color: #8a5cf51a;
   color: #8a5cf5;
 }
 
@@ -24715,12 +24707,12 @@ strong::selection {
 }
 
 .view-actions button:hover {
-  background-color: color-mix(in srgb, #8a5cf5 10%, transparent);
+  background-color: #8a5cf51a;
   color: #8a5cf5;
 }
 
 .view-header-left .view-header-nav-buttons button:hover {
-  background-color: color-mix(in srgb, #8a5cf5 10%, transparent);
+  background-color: #8a5cf51a;
   color: #8a5cf5;
 }
 
@@ -24741,11 +24733,7 @@ strong::selection {
 .cm-s-obsidian span.cm-link:not(.cm-formatting-link) .cm-underline {
   -webkit-text-fill-color: light-dark(#111111, #ffffff);
   animation: unhoverFill 0.5s forwards;
-  background-image: linear-gradient(
-    to bottom,
-    color-mix(in srgb, #f4569d 60%, transparent) 0%,
-    color-mix(in srgb, #f4569d 60%, transparent) 100%
-  );
+  background-image: linear-gradient(to bottom, #f4569d99 0%, #f4569d99 100%);
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-size: 5px 2px;
@@ -24757,11 +24745,7 @@ strong::selection {
 .cm-s-obsidian span.cm-hmd-internal-link .cm-underline {
   -webkit-text-fill-color: light-dark(#111111, #ffffff);
   animation: unhoverFill 0.5s forwards;
-  background-image: linear-gradient(
-    to bottom,
-    color-mix(in srgb, #8a5cf5 50%, transparent) 0%,
-    color-mix(in srgb, #8a5cf5 50%, transparent) 100%
-  );
+  background-image: linear-gradient(to bottom, #8a5cf580 0%, #8a5cf580 100%);
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-size: 5px 2px;
@@ -24822,16 +24806,16 @@ strong::selection {
 }
 
 .metadata-add-button.text-icon-button:hover {
-  background-color: color-mix(in srgb, #8a5cf5 10%, transparent);
+  background-color: #8a5cf51a;
   color: #8a5cf5;
-  outline: 2px solid color-mix(in srgb, #8a5cf5 40%, transparent);
+  outline: 2px solid #8a5cf566;
 }
 
 .cm-s-obsidian
   span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(
     .obsidian-search-match-highlight
   ) {
-  background-color: color-mix(in srgb, #8a5cf5 10%, transparent);
+  background-color: #8a5cf51a;
   border-radius: 0.3rem;
   color: #8a5cf5;
   overflow-wrap: break-word;
@@ -24840,7 +24824,7 @@ strong::selection {
 }
 
 .markdown-preview-view code {
-  background-color: color-mix(in srgb, #8a5cf5 10%, transparent);
+  background-color: #8a5cf51a;
   border-radius: 0.3rem;
   color: #8a5cf5;
   overflow-wrap: break-word;
@@ -24863,7 +24847,7 @@ strong::selection {
 }
 
 .cm-s-obsidian span.code-block-flair:not(:empty) {
-  background: color-mix(in srgb, #8a5cf5 30%, #111111);
+  background: #352855;
   border-radius: 8px;
   color: #8a5cf5;
   font-size: 0.6rem;
@@ -24879,7 +24863,7 @@ strong::selection {
 }
 
 .cm-s-obsidian div.HyperMD-codeblock-begin-bg:before {
-  background-color: color-mix(in srgb, #8a5cf5 5%, transparent);
+  background-color: #8a5cf50d;
   border-top-left-radius: 0.3em;
   border-top-right-radius: 0.3em;
   content: "";
@@ -24896,7 +24880,7 @@ pre {
 }
 
 pre[class*="language-"]:before {
-  background: color-mix(in srgb, #8a5cf5 5%, transparent);
+  background: #8a5cf50d;
   border-radius: 8px;
   color: #8a5cf5;
   content: "";

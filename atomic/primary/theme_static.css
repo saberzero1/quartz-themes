@@ -1280,10 +1280,7 @@
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
   --divider-color: light-dark(transparent, transparent);
-  --divider-color-hover: light-dark(
-    color-mix(in srgb, #51402f 40%, #3b3026),
-    color-mix(in srgb, #51402f 40%, #3b3026)
-  );
+  --divider-color-hover: light-dark(#443629, #443629);
   --drag-ghost-background: light-dark(#5a4533, #5a4533);
   --drag-ghost-text-color: light-dark(#ebdac6, #ebdac6);
   --editor-bg-color: light-dark(
@@ -1355,10 +1352,7 @@
   --icon-color-active: light-dark(#836b49, #ab916d);
   --icon-color-focused: light-dark(#9d8062, #917959);
   --indentation-guide-color: light-dark(transparent, transparent);
-  --indentation-guide-color-active: light-dark(
-    color-mix(in srgb, #51402f 40%, #3b3026),
-    color-mix(in srgb, #51402f 40%, #3b3026)
-  );
+  --indentation-guide-color-active: light-dark(#443629, #443629);
   --inline-code-bg: light-dark(#fcfaf8, #211b17);
   --inline-code-color: light-dark(#d9746d, #f7685e);
   --inline-title-color: light-dark(#432e14, #ebdac6);
@@ -1406,10 +1400,7 @@
   --metadata-properties-title-color-collapsed: light-dark(#cfb696, #6b563d);
   --metadata-properties-title-color-hover: light-dark(#b79d7b, #917959);
   --metadata-tab-background: light-dark(#26211c, #26211c);
-  --modal-border-color: light-dark(
-    color-mix(in srgb, #51402f 40%, #3b3026),
-    color-mix(in srgb, #51402f 40%, #3b3026)
-  );
+  --modal-border-color: light-dark(#443629, #443629);
   --nav-collapse-icon-color: light-dark(#6b563d, #6b563d);
   --nav-collapse-icon-color-collapsed: light-dark(#917959, #917959);
   --nav-file-tag-color: light-dark(#9d8062, #6b563d);
@@ -1478,10 +1469,7 @@
   --safe-area-inset-left: env(safe-area-inset-left);
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
-  --scrollbar-active-thumb-bg: light-dark(
-    color-mix(in srgb, #51402f 40%, #3b3026),
-    color-mix(in srgb, #51402f 40%, #3b3026)
-  );
+  --scrollbar-active-thumb-bg: light-dark(#443629, #443629);
   --scrollbar-thumb-bg: light-dark(transparent, transparent);
   --search-clear-button-color: light-dark(#d7c0a3, #d7c0a3);
   --search-clear-button-color-hover: light-dark(#f35044, #f35044);
@@ -1520,10 +1508,7 @@
     var(--background-primary)
   );
   --tab-container-background: light-dark(#26211c, #26211c);
-  --tab-divider-color: light-dark(
-    color-mix(in srgb, #51402f 40%, #3b3026),
-    color-mix(in srgb, #51402f 40%, #3b3026)
-  );
+  --tab-divider-color: light-dark(#443629, #443629);
   --tab-text-color: light-dark(#917959, #917959);
   --tab-text-color-active: light-dark(#ab916d, #ab916d);
   --tab-text-color-focused: light-dark(#ab916d, #ab916d);
@@ -2711,10 +2696,7 @@ body {
   --dialog-width: 560px;
   --direction: 1;
   --divider-color: light-dark(transparent, transparent);
-  --divider-color-hover: light-dark(
-    color-mix(in srgb, #51402f 40%, #3b3026),
-    color-mix(in srgb, #51402f 40%, #3b3026)
-  );
+  --divider-color-hover: light-dark(#443629, #443629);
   --divider-radius: 8px;
   --divider-vertical-height: calc(100% - 38px);
   --divider-width: 1px;
@@ -2723,7 +2705,7 @@ body {
   --drag-ghost-text-color: light-dark(#ebdac6, #ebdac6);
   --dropdown-background: #26211c;
   --dropdown-background-blend-mode: hard-light;
-  --dropdown-background-hover: color-mix(in hsl, #2e261f 50%, #26211c);
+  --dropdown-background-hover: #2a241d;
   --dropdown-background-position: right 0.5em top 50%, 0 0;
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-height: 32.992px;
@@ -3012,10 +2994,7 @@ body {
   --indent-size: 4;
   --indent-unit: 0.5625em;
   --indentation-guide-color: light-dark(transparent, transparent);
-  --indentation-guide-color-active: light-dark(
-    color-mix(in srgb, #51402f 40%, #3b3026),
-    color-mix(in srgb, #51402f 40%, #3b3026)
-  );
+  --indentation-guide-color-active: light-dark(#443629, #443629);
   --indentation-guide-editing-indent: 0.85em;
   --indentation-guide-reading-indent: -1em;
   --indentation-guide-source-indent: 0.25em;
@@ -3112,7 +3091,7 @@ body {
   --loading-line-color: light-dark(#63a2bb, #6abfd2);
   --menu-backdrop-filter: none;
   --menu-background: #26211c;
-  --menu-border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  --menu-border-color: #443629;
   --menu-border-width: 1px;
   --menu-item-bg-active: light-dark(#ebe3d6, #211b17);
   --menu-item-color-active: light-dark(#cfb696, #6b563d);
@@ -3168,10 +3147,8 @@ body {
   --metadata-property-background: transparent;
   --metadata-property-background-active: #0000004d;
   --metadata-property-background-hover: transparent;
-  --metadata-property-box-shadow-focus: 0 0 0 2px
-    color-mix(in srgb, #51402f 40%, #3b3026);
-  --metadata-property-box-shadow-hover: 0 0 0 1px
-    color-mix(in srgb, #51402f 40%, #3b3026);
+  --metadata-property-box-shadow-focus: 0 0 0 2px #443629;
+  --metadata-property-box-shadow-hover: 0 0 0 1px #443629;
   --metadata-property-padding: 0;
   --metadata-property-radius: 7px;
   --metadata-property-radius-focus: 6px;
@@ -3180,10 +3157,7 @@ body {
   --metadata-sidebar-label-font-size: 14.992px;
   --metadata-tab-background: light-dark(#26211c, #26211c);
   --modal-background: var(--background-primary);
-  --modal-border-color: light-dark(
-    color-mix(in srgb, #51402f 40%, #3b3026),
-    color-mix(in srgb, #51402f 40%, #3b3026)
-  );
+  --modal-border-color: light-dark(#443629, #443629);
   --modal-border-width: 0.5pt;
   --modal-close-button-size: 20px;
   --modal-community-sidebar-width: 280px;
@@ -3258,7 +3232,7 @@ body {
   --pill-background: transparent;
   --pill-background-hover: light-dark(transparent, transparent);
   --pill-border-color: transparent;
-  --pill-border-color-hover: color-mix(in srgb, #51402f 40%, #3b3026);
+  --pill-border-color-hover: #443629;
   --pill-border-width: 0.5pt;
   --pill-color: light-dark(#655134, #c7b194);
   --pill-color-hover: light-dark(#432e14, #d7c0a3);
@@ -3332,10 +3306,7 @@ body {
   --ribbon-radius: 12px;
   --ribbon-slideout-background: light-dark(#f2ece3, #2a241e);
   --ribbon-width: 44px;
-  --scrollbar-active-thumb-bg: light-dark(
-    color-mix(in srgb, #51402f 40%, #3b3026),
-    color-mix(in srgb, #51402f 40%, #3b3026)
-  );
+  --scrollbar-active-thumb-bg: light-dark(#443629, #443629);
   --scrollbar-bg: #ffffff0d;
   --scrollbar-thumb-bg: light-dark(transparent, transparent);
   --search-clear-button-color: light-dark(#d7c0a3, #d7c0a3);
@@ -3378,7 +3349,7 @@ body {
   --slider-s-thumb-position: -5px;
   --slider-s-thumb-size: 15px;
   --slider-thumb-bg: light-dark(#fcfaf8, #d7c0a3);
-  --slider-thumb-border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  --slider-thumb-border-color: #443629;
   --slider-thumb-border-width: 1px;
   --slider-thumb-height: 18px;
   --slider-thumb-radius: 50%;
@@ -3433,10 +3404,7 @@ body {
   --tab-container-background: light-dark(#26211c, #26211c);
   --tab-curve: 6px;
   --tab-curves-display: none;
-  --tab-divider-color: light-dark(
-    color-mix(in srgb, #51402f 40%, #3b3026),
-    color-mix(in srgb, #51402f 40%, #3b3026)
-  );
+  --tab-divider-color: light-dark(#443629, #443629);
   --tab-font-size: 14.992px;
   --tab-font-weight: inherit;
   --tab-header-container-border-bottom: none;
@@ -3645,8 +3613,8 @@ body {
   --amount-chbx-radius: 100%;
   --background-modifier-active-hover: #e4d8c3;
   --background-modifier-border: #e4d8c3;
-  --background-modifier-border-focus: color-mix(in hsl, #cfb696 60%, #e4d8c3);
-  --background-modifier-border-hover: color-mix(in hsl, #cfb696 60%, #e4d8c3);
+  --background-modifier-border-focus: #d7c4a8;
+  --background-modifier-border-hover: #d7c4a8;
   --background-modifier-box-shadow: #0000001a;
   --background-modifier-cover: #dcdcdc66;
   --background-modifier-error: #bf3f36;
@@ -3794,7 +3762,7 @@ body {
   --canvas-icon-color: #b79d7b;
   --canvas-icon-color-disabled: #e4d8c3;
   --canvas-icon-color-hover: #655134;
-  --canvas-menu-bg: color-mix(in hsl, #fcfaf8 50%, #f8f5f1);
+  --canvas-menu-bg: #faf8f5;
   --canvas-menu-bg-hover: #fcfaf8;
   --canvas-menu-border: 1px solid transparent;
   --canvas-menu-shadow:
@@ -3904,7 +3872,7 @@ body {
     inset 0px 0px 0px 1px #00000017, 0px 2px 4px -2px #0000000f;
   --disabled-component-opacity: 0.3;
   --divider-color: transparent;
-  --divider-color-hover: color-mix(in srgb, #51402f 40%, #3b3026);
+  --divider-color-hover: #443629;
   --down-chbx-color: #bf3f36;
   --drag-ghost-background: #5a4533;
   --drag-ghost-text-color: #ebdac6;
@@ -3918,8 +3886,8 @@ body {
   --embed-border-end-color: transparent;
   --embed-border-start-color: transparent;
   --embed-border-top-color: transparent;
-  --embed-edit-btn-bg: color-mix(in srgb, #f8f5f1 70%, transparent);
-  --embed-edit-btn-bg-hover: color-mix(in srgb, #f8f5f1 100%, transparent);
+  --embed-edit-btn-bg: #f8f5f1b3;
+  --embed-edit-btn-bg-hover: #f8f5f1;
   --embed-edit-btn-shadow:
     inset 0px 0px 0px 1px #0000001a, inset 0px -2px 1px 1px #0000001a;
   --embed-edit-btn-shadow-hover:
@@ -3927,7 +3895,7 @@ body {
     0px 1px 2px 0px #0000001a;
   --embed-title-border-color: transparent;
   --embed-title-color: #9d8062;
-  --empty-state-action-btn-bg: color-mix(in srgb, #2a241e 50%, transparent);
+  --empty-state-action-btn-bg: #2a241e80;
   --file-header-border: 1px solid transparent;
   --file-header-border-color: transparent;
   --file-header-title-color: #655134;
@@ -3944,7 +3912,7 @@ body {
   --graph-node-unresolved: #ecb936;
   --graph-node-unresolved-opacity: 1;
   --graph-text: #b79d7b;
-  --gutter-color: color-mix(in hsl, #e4d8c3 40%, #cfb696);
+  --gutter-color: #d7c4a8;
   --gutter-color-active: #9d8062;
   --h1-bg-color: transparent;
   --h1-border-bottom-color: transparent;
@@ -4000,7 +3968,7 @@ body {
   --important-chbx-icon-color: #ffffff;
   --important-chbx-radius: 100%;
   --indentation-guide-color: transparent;
-  --indentation-guide-color-active: color-mix(in srgb, #51402f 40%, #3b3026);
+  --indentation-guide-color-active: #443629;
   --info-chbx-color: #519492;
   --info-chbx-icon-color: #ffffff;
   --inline-code-bg: #fcfaf8;
@@ -4008,7 +3976,7 @@ body {
   --inline-query-bg: color-mix(in srgb, #26211c 20%, var(--editor-bg-color));
   --inline-query-shadow: 0px 1px 10px 0px #0000000f;
   --inline-title-color: #432e14;
-  --inprogress-chbx-border-color: color-mix(in srgb, #ef993e 65%, #c7b194);
+  --inprogress-chbx-border-color: #e1a25c;
   --inprogress-chbx-color: #eb9d37;
   --inprogress-chbx-color-hover: #eead58;
   --input-shadow:
@@ -4027,7 +3995,7 @@ body {
   --interactive-accent: #5a4533;
   --interactive-accent-hover: #6c4f38;
   --interactive-accent-hsl: 31, 27%, 24%;
-  --interactive-hover: color-mix(in hsl, #fcfaf8 50%, #26211c);
+  --interactive-hover: #ac906f;
   --interactive-normal: #f2ece3;
   --italic-color: #22729b;
   --italic-highlight-bg: #2ab1c033;
@@ -4067,39 +4035,19 @@ body {
     currentColor 22%,
     transparent
   );
-  --link-ahref-decoration-color-hover: color-mix(
-    in srgb,
-    #fb8479 22%,
-    transparent
-  );
+  --link-ahref-decoration-color-hover: #fb847938;
   --link-color: #d79719;
   --link-color-hover: #ecb936;
-  --link-decoration-color: color-mix(in srgb, #da5e16 22%, transparent);
-  --link-decoration-color-hover: color-mix(in srgb, #e2bd60 22%, transparent);
+  --link-decoration-color: #da5e1638;
+  --link-decoration-color-hover: #e2bd6038;
   --link-external-color: #329562;
   --link-external-color-hover: #3eb174;
-  --link-external-decoration-color: color-mix(
-    in srgb,
-    #2ea873 22%,
-    transparent
-  );
-  --link-external-decoration-color-hover: color-mix(
-    in srgb,
-    #4ec68e 22%,
-    transparent
-  );
+  --link-external-decoration-color: #2ea87338;
+  --link-external-decoration-color-hover: #4ec68e38;
   --link-unresolved-color: #b79d7b;
   --link-unresolved-color-hover: #cfb696;
-  --link-unresolved-decoration-color: color-mix(
-    in srgb,
-    #917959 22%,
-    transparent
-  );
-  --link-unresolved-decoration-color-hover: color-mix(
-    in srgb,
-    #ab916d 22%,
-    transparent
-  );
+  --link-unresolved-decoration-color: #91795938;
+  --link-unresolved-decoration-color-hover: #ab916d38;
   --list-marker-color: #b79d7b;
   --list-marker-color-collapsed: #9d8062;
   --list-marker-color-hover: #836b49;
@@ -4134,7 +4082,7 @@ body {
   --metadata-properties-title-color-collapsed: #cfb696;
   --metadata-properties-title-color-hover: #b79d7b;
   --metadata-tab-background: #26211c;
-  --modal-border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  --modal-border-color: #443629;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
   --nav-collapse-icon-color: #6b563d;
@@ -4144,7 +4092,7 @@ body {
     0px 2px 3px 0px #0000000d;
   --nav-file-tag-bg: transparent;
   --nav-file-tag-color: #9d8062;
-  --nav-folder-1-bg-color: color-mix(in srgb, #f0516c33 60%, transparent);
+  --nav-folder-1-bg-color: #f0516c1f;
   --nav-folder-1-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-1-bg-color) 70%,
@@ -4161,7 +4109,7 @@ body {
     var(--nav-folder-1-color) 25%,
     transparent
   );
-  --nav-folder-10-bg-color: color-mix(in srgb, #99be2333 60%, transparent);
+  --nav-folder-10-bg-color: #99be231f;
   --nav-folder-10-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-10-bg-color) 70%,
@@ -4178,7 +4126,7 @@ body {
     var(--nav-folder-10-color) 25%,
     transparent
   );
-  --nav-folder-11-bg-color: color-mix(in srgb, #2ab1c033 60%, transparent);
+  --nav-folder-11-bg-color: #2ab1c01f;
   --nav-folder-11-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-11-bg-color) 70%,
@@ -4195,7 +4143,7 @@ body {
     var(--nav-folder-11-color) 25%,
     transparent
   );
-  --nav-folder-12-bg-color: color-mix(in srgb, #707aff33 60%, transparent);
+  --nav-folder-12-bg-color: #707aff1f;
   --nav-folder-12-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-12-bg-color) 70%,
@@ -4212,7 +4160,7 @@ body {
     var(--nav-folder-12-color) 25%,
     transparent
   );
-  --nav-folder-2-bg-color: color-mix(in srgb, #ff730033 60%, transparent);
+  --nav-folder-2-bg-color: #ff73001f;
   --nav-folder-2-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-2-bg-color) 70%,
@@ -4229,7 +4177,7 @@ body {
     var(--nav-folder-2-color) 25%,
     transparent
   );
-  --nav-folder-3-bg-color: color-mix(in srgb, #ffbb0033 60%, transparent);
+  --nav-folder-3-bg-color: #ffbb001f;
   --nav-folder-3-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-3-bg-color) 70%,
@@ -4246,7 +4194,7 @@ body {
     var(--nav-folder-3-color) 25%,
     transparent
   );
-  --nav-folder-4-bg-color: color-mix(in srgb, #99be2333 60%, transparent);
+  --nav-folder-4-bg-color: #99be231f;
   --nav-folder-4-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-4-bg-color) 70%,
@@ -4263,7 +4211,7 @@ body {
     var(--nav-folder-4-color) 25%,
     transparent
   );
-  --nav-folder-5-bg-color: color-mix(in srgb, #2ab1c033 60%, transparent);
+  --nav-folder-5-bg-color: #2ab1c01f;
   --nav-folder-5-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-5-bg-color) 70%,
@@ -4280,7 +4228,7 @@ body {
     var(--nav-folder-5-color) 25%,
     transparent
   );
-  --nav-folder-6-bg-color: color-mix(in srgb, #707aff33 60%, transparent);
+  --nav-folder-6-bg-color: #707aff1f;
   --nav-folder-6-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-6-bg-color) 70%,
@@ -4297,7 +4245,7 @@ body {
     var(--nav-folder-6-color) 25%,
     transparent
   );
-  --nav-folder-7-bg-color: color-mix(in srgb, #f0516c33 60%, transparent);
+  --nav-folder-7-bg-color: #f0516c1f;
   --nav-folder-7-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-7-bg-color) 70%,
@@ -4314,7 +4262,7 @@ body {
     var(--nav-folder-7-color) 25%,
     transparent
   );
-  --nav-folder-8-bg-color: color-mix(in srgb, #ff730033 60%, transparent);
+  --nav-folder-8-bg-color: #ff73001f;
   --nav-folder-8-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-8-bg-color) 70%,
@@ -4331,7 +4279,7 @@ body {
     var(--nav-folder-8-color) 25%,
     transparent
   );
-  --nav-folder-9-bg-color: color-mix(in srgb, #ffbb0033 60%, transparent);
+  --nav-folder-9-bg-color: #ffbb001f;
   --nav-folder-9-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-9-bg-color) 70%,
@@ -4375,12 +4323,8 @@ body {
   --pcr-btn-shadow: inset 0px 0px 0px 1.5px #00000033;
   --pill-background: #ffffff66;
   --pill-background-hover: transparent;
-  --pill-border-color: color-mix(in srgb, transparent 50%, transparent);
-  --pill-border-color-hover: color-mix(
-    in srgb,
-    color-mix(in srgb, #51402f 40%, #3b3026) 50%,
-    transparent
-  );
+  --pill-border-color: #00000000;
+  --pill-border-color-hover: #44362980;
   --pill-color: #655134;
   --pill-color-hover: #432e14;
   --pill-color-remove: #cfb696;
@@ -4404,7 +4348,7 @@ body {
   --progress-gradient-2: #e7c56f;
   --progress-gradient-3: #63a2bb;
   --progress-value-outline: #0000002e;
-  --prompt-border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  --prompt-border-color: #443629;
   --prompt-input-background: var(--background-primary);
   --prompt-instructions-background: color-mix(
     in hsl,
@@ -4416,7 +4360,7 @@ body {
   --prompt-suggestion-background-selected: #ffffff59;
   --prompt-suggestion-color: #9d8062;
   --prompt-suggestion-color-selected: #593e22;
-  --prompt-suggestion-highlight-color: color-mix(in srgb, #ab916d 70%, #000000);
+  --prompt-suggestion-highlight-color: #78664c;
   --prompt-suggestion-highlight-color-selected: #593e22;
   --prompt-suggestion-shadow-selected:
     inset 0px 0px 0px 1px #00000014, 0px 2px 6px 0px #00000008;
@@ -4429,16 +4373,16 @@ body {
   --ribbon-slideout-shadow:
     8px 7px 21px -4px #0000001f, 0px 5px 5px -5px #00000026;
   --sched-chbx-color: #b6aea5;
-  --scrollbar-active-thumb-bg: color-mix(in srgb, #51402f 40%, #3b3026);
+  --scrollbar-active-thumb-bg: #443629;
   --scrollbar-bg: transparent;
   --scrollbar-thumb-bg: transparent;
   --search-clear-button-color: #d7c0a3;
   --search-clear-button-color-hover: #f35044;
   --search-icon-color: #b79d7b;
   --search-result-background: #2a241e;
-  --search-result-background-hover: color-mix(in srgb, #fcfaf8 50%, #f8f5f1);
+  --search-result-background-hover: #faf8f5;
   --search-result-dest-file-bg: #f8f5f1;
-  --search-result-dest-file-bg-hover: color-mix(in srgb, #f8f5f1 50%, #fcfaf8);
+  --search-result-dest-file-bg-hover: #faf8f5;
   --search-result-dest-file-color: #836b49;
   --search-result-dest-file-icon-color: #cfb696;
   --search-result-dest-file-shadow:
@@ -4482,7 +4426,7 @@ body {
   --strikethrough-color: #b79d7b;
   --strikethrough-highlight-bg: #ffbb0033;
   --strikethrough-highlight-color: #917959;
-  --style-settings-container-bg: color-mix(in srgb, #2a241e 50%, transparent);
+  --style-settings-container-bg: #2a241e80;
   --swatch-shadow: inset 0px 0px 0px 1px #00000033;
   --sync-icon-success: #329562;
   --sync-icon-success-active: #6b563d;
@@ -4497,7 +4441,7 @@ body {
   --tab-background-active: var(--background-primary);
   --tab-bg: transparent;
   --tab-container-background: #26211c;
-  --tab-divider-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  --tab-divider-color: #443629;
   --tab-outline-color: transparent;
   --tab-stacked-shadow:
     -2.9px 0 10.5px -6.2px #00000014, -6.2px 0 3.6px -5.2px #0000000a,
@@ -4530,7 +4474,7 @@ body {
   --text-faint: #b79d7b;
   --text-highlight-bg: #ffbb0033;
   --text-highlight-bg-rgb: 249, 207, 81;
-  --text-input-bg-active: color-mix(in hsl, #211b17 40%, #fcfaf8);
+  --text-input-bg-active: #bda285;
   --text-input-border-color: #e4d8c3;
   --text-input-color: #593e22;
   --text-input-color-focused: #593e22;
@@ -4542,7 +4486,7 @@ body {
   --text-on-accent: #fcfaf8;
   --text-on-accent-inverted: #432e14;
   --text-selection: #cfb69626;
-  --text-selection-theme-bg: color-mix(in srgb, #cfb696 30%, transparent);
+  --text-selection-theme-bg: #cfb6964d;
   --text-selection-theme-text-color: color-mix(
     in srgb,
     currentColor 70%,
@@ -4554,7 +4498,7 @@ body {
   --titlebar-background-focused: #26211c;
   --titlebar-text-color: #e4d8c3;
   --titlebar-text-color-focused: #cfb696;
-  --toggle-bg: color-mix(in hsl, #e4d8c3 80%, #cfb696);
+  --toggle-bg: #e0d1ba;
   --toggle-bg-enabled: #329562;
   --toggle-shadow:
     inset 0 4px 10px #00000017, inset 0px 0px 0px 1px #0000000f,
@@ -4608,8 +4552,8 @@ body {
   --amount-chbx-radius: 100%;
   --background-modifier-active-hover: #51402f;
   --background-modifier-border: #3b3026;
-  --background-modifier-border-focus: color-mix(in srgb, #51402f 40%, #3b3026);
-  --background-modifier-border-hover: color-mix(in srgb, #51402f 40%, #3b3026);
+  --background-modifier-border-focus: #443629;
+  --background-modifier-border-hover: #443629;
   --background-modifier-box-shadow: #0000004d;
   --background-modifier-cover: #0a0a0a66;
   --background-modifier-error: #e02f29;
@@ -4756,8 +4700,8 @@ body {
   --canvas-icon-color: #917959;
   --canvas-icon-color-disabled: #51402f;
   --canvas-icon-color-hover: #c7b194;
-  --canvas-menu-bg: color-mix(in srgb, #342c23 60%, #2e261f);
-  --canvas-menu-bg-hover: color-mix(in srgb, #342c23 10%, #2e261f);
+  --canvas-menu-bg: #312a21;
+  --canvas-menu-bg-hover: #2e271f;
   --canvas-menu-border: 1px solid transparent;
   --canvas-menu-shadow:
     0px 1px 2px 1px #00000024, 0px 1px 4px -2.1px #00000038,
@@ -4866,7 +4810,7 @@ body {
     inset 0px 0px 0px 1px #00000063, 0px 2px 4px -2px #00000063;
   --disabled-component-opacity: 0.3;
   --divider-color: transparent;
-  --divider-color-hover: color-mix(in srgb, #51402f 40%, #3b3026);
+  --divider-color-hover: #443629;
   --down-chbx-color: #cb5148;
   --drag-ghost-background: #5a4533;
   --drag-ghost-text-color: #ebdac6;
@@ -4880,8 +4824,8 @@ body {
   --embed-border-end-color: transparent;
   --embed-border-start-color: transparent;
   --embed-border-top-color: transparent;
-  --embed-edit-btn-bg: color-mix(in srgb, #211b17 70%, transparent);
-  --embed-edit-btn-bg-hover: color-mix(in srgb, #211b17 100%, transparent);
+  --embed-edit-btn-bg: #211b17b3;
+  --embed-edit-btn-bg-hover: #211b17;
   --embed-edit-btn-shadow:
     inset 0px 0px 0px 1px #00000080, inset 0px -2px 1px 1px #00000080;
   --embed-edit-btn-shadow-hover:
@@ -4906,7 +4850,7 @@ body {
   --graph-node-unresolved: #e5aa1f;
   --graph-node-unresolved-opacity: 1;
   --graph-text: #917959;
-  --gutter-color: color-mix(in srgb, #6b563d 40%, #51402f);
+  --gutter-color: #5b4934;
   --gutter-color-active: #917959;
   --h1-bg-color: transparent;
   --h1-border-bottom-color: transparent;
@@ -4950,10 +4894,10 @@ body {
   --icon-bg-active-menu: transparent;
   --icon-bg-hover: transparent;
   --icon-bg-pressed: transparent;
-  --icon-color: color-mix(in srgb, #6b563d 30%, #917959);
+  --icon-color: #866f51;
   --icon-color-active: #ab916d;
   --icon-color-focused: #917959;
-  --icon-color-hover: color-mix(in srgb, #917959 70%, #ab916d);
+  --icon-color-hover: #99805f;
   --icon-opacity: 1;
   --icon-opacity-active: 1;
   --icon-opacity-hover: 1;
@@ -4962,7 +4906,7 @@ body {
   --important-chbx-icon-color: #ffffff;
   --important-chbx-radius: 100%;
   --indentation-guide-color: transparent;
-  --indentation-guide-color-active: color-mix(in srgb, #51402f 40%, #3b3026);
+  --indentation-guide-color-active: #443629;
   --info-chbx-color: #488987;
   --info-chbx-icon-color: #ffffff;
   --inline-code-bg: #211b17;
@@ -4970,7 +4914,7 @@ body {
   --inline-query-bg: color-mix(in srgb, #26211c 25%, var(--background-primary));
   --inline-query-shadow: 0px 1px 10px 0px #00000042;
   --inline-title-color: #ebdac6;
-  --inprogress-chbx-border-color: color-mix(in srgb, #ef993e 15%, #c7b194);
+  --inprogress-chbx-border-color: #cdad87;
   --inprogress-chbx-color: #ef993e;
   --inprogress-chbx-color-hover: #fbab51;
   --input-shadow:
@@ -4989,7 +4933,7 @@ body {
   --interactive-accent: #5a4533;
   --interactive-accent-hover: #6c4f38;
   --interactive-accent-hsl: 31, 27%, 24%;
-  --interactive-hover: color-mix(in hsl, #2e261f 50%, #26211c);
+  --interactive-hover: #2a241d;
   --interactive-normal: #26211c;
   --italic-color: #4db2d1;
   --italic-highlight-bg: #2ab1c033;
@@ -5003,8 +4947,8 @@ body {
   --kanban-item-shadow:
     inset 0px 0px 0px 1px #00000066, inset 0px 1px 0px 0px #ffffff30,
     inset 0px -1px 0px 1px #0000000f, 0px 2px 2px 0px #00000021;
-  --kanban-lane-bg: color-mix(in srgb, #2a241e 50%, #26211c);
-  --kanban-lane-border: 1px solid color-mix(in srgb, #342c23 40%, #2e261f);
+  --kanban-lane-bg: #28221d;
+  --kanban-lane-border: 1px solid #302920;
   --kanban-lane-shadow: none;
   --kanban-new-item-bg: transparent;
   --kanban-new-item-bg-hover: #2e261f;
@@ -5029,39 +4973,19 @@ body {
     currentColor 22%,
     transparent
   );
-  --link-ahref-decoration-color-hover: color-mix(
-    in srgb,
-    #fb8479 22%,
-    transparent
-  );
+  --link-ahref-decoration-color-hover: #fb847938;
   --link-color: #e5aa1f;
   --link-color-hover: #e2bd60;
-  --link-decoration-color: color-mix(in srgb, #da5e16 22%, transparent);
-  --link-decoration-color-hover: color-mix(in srgb, #e2bd60 22%, transparent);
+  --link-decoration-color: #da5e1638;
+  --link-decoration-color-hover: #e2bd6038;
   --link-external-color: #2ea873;
   --link-external-color-hover: #4ec68e;
-  --link-external-decoration-color: color-mix(
-    in srgb,
-    #2ea873 22%,
-    transparent
-  );
-  --link-external-decoration-color-hover: color-mix(
-    in srgb,
-    #4ec68e 22%,
-    transparent
-  );
+  --link-external-decoration-color: #2ea87338;
+  --link-external-decoration-color-hover: #4ec68e38;
   --link-unresolved-color: #917959;
   --link-unresolved-color-hover: #ab916d;
-  --link-unresolved-decoration-color: color-mix(
-    in srgb,
-    #917959 22%,
-    transparent
-  );
-  --link-unresolved-decoration-color-hover: color-mix(
-    in srgb,
-    #ab916d 22%,
-    transparent
-  );
+  --link-unresolved-decoration-color: #91795938;
+  --link-unresolved-decoration-color-hover: #ab916d38;
   --list-marker-color: #917959;
   --list-marker-color-collapsed: #ab916d;
   --list-marker-color-hover: #c7b194;
@@ -5097,7 +5021,7 @@ body {
   --metadata-properties-title-color-hover: #917959;
   --metadata-tab-background: #26211c;
   --modal-background: var(--background-primary);
-  --modal-border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  --modal-border-color: #443629;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --nav-collapse-icon-color: #6b563d;
@@ -5107,7 +5031,7 @@ body {
     0px 2px 3px 0px #00000038;
   --nav-file-tag-bg: transparent;
   --nav-file-tag-color: #6b563d;
-  --nav-folder-1-bg-color: color-mix(in srgb, #f0516c33 60%, transparent);
+  --nav-folder-1-bg-color: #f0516c1f;
   --nav-folder-1-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-1-bg-color) 70%,
@@ -5124,7 +5048,7 @@ body {
     var(--nav-folder-1-color) 25%,
     transparent
   );
-  --nav-folder-10-bg-color: color-mix(in srgb, #99be2333 60%, transparent);
+  --nav-folder-10-bg-color: #99be231f;
   --nav-folder-10-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-10-bg-color) 70%,
@@ -5141,7 +5065,7 @@ body {
     var(--nav-folder-10-color) 25%,
     transparent
   );
-  --nav-folder-11-bg-color: color-mix(in srgb, #2ab1c033 60%, transparent);
+  --nav-folder-11-bg-color: #2ab1c01f;
   --nav-folder-11-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-11-bg-color) 70%,
@@ -5158,7 +5082,7 @@ body {
     var(--nav-folder-11-color) 25%,
     transparent
   );
-  --nav-folder-12-bg-color: color-mix(in srgb, #707aff33 60%, transparent);
+  --nav-folder-12-bg-color: #707aff1f;
   --nav-folder-12-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-12-bg-color) 70%,
@@ -5175,7 +5099,7 @@ body {
     var(--nav-folder-12-color) 25%,
     transparent
   );
-  --nav-folder-2-bg-color: color-mix(in srgb, #ff730033 60%, transparent);
+  --nav-folder-2-bg-color: #ff73001f;
   --nav-folder-2-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-2-bg-color) 70%,
@@ -5192,7 +5116,7 @@ body {
     var(--nav-folder-2-color) 25%,
     transparent
   );
-  --nav-folder-3-bg-color: color-mix(in srgb, #ffbb0033 60%, transparent);
+  --nav-folder-3-bg-color: #ffbb001f;
   --nav-folder-3-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-3-bg-color) 70%,
@@ -5209,7 +5133,7 @@ body {
     var(--nav-folder-3-color) 25%,
     transparent
   );
-  --nav-folder-4-bg-color: color-mix(in srgb, #99be2333 60%, transparent);
+  --nav-folder-4-bg-color: #99be231f;
   --nav-folder-4-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-4-bg-color) 70%,
@@ -5226,7 +5150,7 @@ body {
     var(--nav-folder-4-color) 25%,
     transparent
   );
-  --nav-folder-5-bg-color: color-mix(in srgb, #2ab1c033 60%, transparent);
+  --nav-folder-5-bg-color: #2ab1c01f;
   --nav-folder-5-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-5-bg-color) 70%,
@@ -5243,7 +5167,7 @@ body {
     var(--nav-folder-5-color) 25%,
     transparent
   );
-  --nav-folder-6-bg-color: color-mix(in srgb, #707aff33 60%, transparent);
+  --nav-folder-6-bg-color: #707aff1f;
   --nav-folder-6-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-6-bg-color) 70%,
@@ -5260,7 +5184,7 @@ body {
     var(--nav-folder-6-color) 25%,
     transparent
   );
-  --nav-folder-7-bg-color: color-mix(in srgb, #f0516c33 60%, transparent);
+  --nav-folder-7-bg-color: #f0516c1f;
   --nav-folder-7-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-7-bg-color) 70%,
@@ -5277,7 +5201,7 @@ body {
     var(--nav-folder-7-color) 25%,
     transparent
   );
-  --nav-folder-8-bg-color: color-mix(in srgb, #ff730033 60%, transparent);
+  --nav-folder-8-bg-color: #ff73001f;
   --nav-folder-8-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-8-bg-color) 70%,
@@ -5294,7 +5218,7 @@ body {
     var(--nav-folder-8-color) 25%,
     transparent
   );
-  --nav-folder-9-bg-color: color-mix(in srgb, #ffbb0033 60%, transparent);
+  --nav-folder-9-bg-color: #ffbb001f;
   --nav-folder-9-bg-color-hover: color-mix(
     in srgb,
     var(--nav-folder-9-bg-color) 70%,
@@ -5340,12 +5264,8 @@ body {
   --pdf-thumbnail-shadow: 0 0 0 1px transparent;
   --pill-background: #00000033;
   --pill-background-hover: transparent;
-  --pill-border-color: color-mix(in srgb, transparent 50%, transparent);
-  --pill-border-color-hover: color-mix(
-    in srgb,
-    color-mix(in srgb, #51402f 40%, #3b3026) 50%,
-    transparent
-  );
+  --pill-border-color: #00000000;
+  --pill-border-color-hover: #44362980;
   --pill-color: #c7b194;
   --pill-color-hover: #d7c0a3;
   --pill-color-remove: #6b563d;
@@ -5369,7 +5289,7 @@ body {
   --progress-gradient-2: #e5aa1f;
   --progress-gradient-3: #4db2d1;
   --progress-value-outline: #ffffff36;
-  --prompt-border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  --prompt-border-color: #443629;
   --prompt-input-background: var(--background-primary);
   --prompt-instructions-background: color-mix(
     in hsl,
@@ -5381,7 +5301,7 @@ body {
   --prompt-suggestion-background-selected: #0000001a;
   --prompt-suggestion-color: #ab916d;
   --prompt-suggestion-color-selected: #d7c0a3;
-  --prompt-suggestion-highlight-color: color-mix(in srgb, #ab916d 70%, #ffffff);
+  --prompt-suggestion-highlight-color: #c4b299;
   --prompt-suggestion-highlight-color-selected: #d7c0a3;
   --prompt-suggestion-shadow-selected:
     inset 0px 0px 0px 1px #00000024, 0px 2px 6px 0px #0000001f;
@@ -5394,14 +5314,14 @@ body {
   --ribbon-slideout-shadow:
     8px 7px 21px -4px #00000059, 0px 5px 5px -5px #00000061;
   --sched-chbx-color: #9f9589;
-  --scrollbar-active-thumb-bg: color-mix(in srgb, #51402f 40%, #3b3026);
+  --scrollbar-active-thumb-bg: #443629;
   --scrollbar-bg: transparent;
   --scrollbar-thumb-bg: transparent;
   --search-clear-button-color: #d7c0a3;
   --search-clear-button-color-hover: #f35044;
   --search-icon-color: #d7c0a3;
   --search-result-background: #2a241e;
-  --search-result-background-hover: color-mix(in srgb, #211b17 50%, #1c1712);
+  --search-result-background-hover: #1e1915;
   --search-result-dest-file-bg: #26211c;
   --search-result-dest-file-bg-hover: #1c1712;
   --search-result-dest-file-color: #917959;
@@ -5448,7 +5368,7 @@ body {
   --strikethrough-color: #917959;
   --strikethrough-highlight-bg: #ffbb0033;
   --strikethrough-highlight-color: #917959;
-  --style-settings-container-bg: color-mix(in srgb, #2a241e 50%, transparent);
+  --style-settings-container-bg: #2a241e80;
   --swatch-shadow: inset 0px 0px 0px 1px #0000004d;
   --sync-icon-success: #117449;
   --sync-icon-success-active: #6b563d;
@@ -5463,7 +5383,7 @@ body {
   --tab-background-active: var(--background-primary);
   --tab-bg: transparent;
   --tab-container-background: #26211c;
-  --tab-divider-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  --tab-divider-color: #443629;
   --tab-outline-color: transparent;
   --tab-stacked-shadow:
     -2.9px 0 10.5px -6.2px #0000004f, -6.2px 0 3.6px -5.2px #00000045,
@@ -5508,7 +5428,7 @@ body {
   --text-on-accent: #ebdac6;
   --text-on-accent-inverted: #1c1712;
   --text-selection: #7e694e33;
-  --text-selection-theme-bg: color-mix(in srgb, #917959 30%, transparent);
+  --text-selection-theme-bg: #9179594d;
   --text-selection-theme-text-color: color-mix(
     in srgb,
     currentColor 70%,
@@ -5520,7 +5440,7 @@ body {
   --titlebar-background-focused: #26211c;
   --titlebar-text-color: #51402f;
   --titlebar-text-color-focused: #6b563d;
-  --toggle-bg: color-mix(in srgb, #51402f 50%, #6b563d);
+  --toggle-bg: #5e4b36;
   --toggle-bg-enabled: #117449;
   --toggle-shadow:
     inset 0 4px 10px #00000030, inset 0px 0px 0px 1px #ffffff17,
@@ -6254,22 +6174,22 @@ body:not(.is-mobile) .app-container {
 }
 
 .markdown-source-view.mod-cm6 ::selection {
-  background-color: color-mix(in srgb, #917959 30%, transparent);
+  background-color: #9179594d;
   color: color-mix(in srgb, currentColor 70%, #ffffff);
 }
 
 .markdown-source-view.mod-cm6 .cm-line .cm-selection {
-  background-color: color-mix(in srgb, #917959 30%, transparent);
+  background-color: #9179594d;
   color: color-mix(in srgb, currentColor 70%, #ffffff);
 }
 
 .markdown-source-view.mod-cm6 .cm-line .cm-inline-code .cm-selection {
-  background-color: color-mix(in srgb, #917959 30%, transparent);
+  background-color: #9179594d;
   color: color-mix(in srgb, currentColor 70%, #ffffff);
 }
 
 .markdown-source-view.mod-cm6 .cm-selectionBackground {
-  background-color: color-mix(in srgb, #917959 30%, transparent);
+  background-color: #9179594d;
   color: color-mix(in srgb, currentColor 70%, #ffffff);
 }
 
@@ -6278,7 +6198,7 @@ body:not(.is-mobile) .app-container {
   > .cm-scroller
   > .cm-selectionLayer
   > .cm-selectionBackground {
-  background-color: color-mix(in srgb, #917959 30%, transparent);
+  background-color: #9179594d;
   color: color-mix(in srgb, currentColor 70%, #ffffff);
 }
 
@@ -7754,7 +7674,7 @@ body:not(.show-inline-title) .inline-title:not([data-level]) {
 }
 
 ::selection {
-  background-color: color-mix(in srgb, #917959 30%, transparent);
+  background-color: #9179594d;
   color: color-mix(in srgb, currentColor 70%, #ffffff);
 }
 
@@ -9293,7 +9213,7 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
 
 @media (hover: hover) {
   .community-item:hover {
-    border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+    border-color: #443629;
     box-shadow: inset 0px 0px 0px 1px #ffffff1a;
   }
 }
@@ -10074,12 +9994,12 @@ body:not(.is-mobile)
 
 @media (hover: hover) {
   .workspace-leaf-resize-handle:hover {
-    background-color: color-mix(in srgb, #51402f 40%, #3b3026);
-    border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+    background-color: #443629;
+    border-color: #443629;
   }
   .is-translucent .workspace-leaf-resize-handle:hover {
-    background-color: color-mix(in srgb, #51402f 40%, #3b3026);
-    border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+    background-color: #443629;
+    border-color: #443629;
   }
 }
 
@@ -11158,7 +11078,7 @@ body > .workspace-split {
 }
 
 .workspace .mod-root .workspace-tab-header-inner::after {
-  background-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  background-color: #443629;
   content: "";
   height: 20px;
   inset-inline-end: -0.5px;
@@ -11467,19 +11387,19 @@ button:not(.clickable-icon) {
 }
 
 button:not(.clickable-icon).mobile-tap {
-  background-color: color-mix(in hsl, #2e261f 50%, #26211c);
+  background-color: #2a241d;
   box-shadow: none;
 }
 
 @media (hover: hover) {
   button:hover {
-    background-color: color-mix(in hsl, #2e261f 50%, #26211c);
+    background-color: #2a241d;
     box-shadow: none;
   }
 }
 
 button:focus-visible {
-  box-shadow: 0 0 0 3px color-mix(in srgb, #51402f 40%, #3b3026);
+  box-shadow: 0 0 0 3px #443629;
 }
 
 button[disabled] {
@@ -11612,7 +11532,7 @@ button.mod-cta.mobile-tap {
 }
 
 button.mod-cta:focus-visible {
-  box-shadow: 0 0 0 3px color-mix(in srgb, #51402f 40%, #3b3026);
+  box-shadow: 0 0 0 3px #443629;
 }
 
 button.mod-muted {
@@ -12251,19 +12171,19 @@ select {
 
 @media (hover: hover) {
   select:hover {
-    background-color: color-mix(in hsl, #2e261f 50%, #26211c);
+    background-color: #2a241d;
     box-shadow: none;
     cursor: pointer;
   }
   .dropdown:hover {
-    background-color: color-mix(in hsl, #2e261f 50%, #26211c);
+    background-color: #2a241d;
     box-shadow: none;
     cursor: pointer;
   }
 }
 
 select:focus {
-  background-color: color-mix(in hsl, #2e261f 50%, #26211c);
+  background-color: #2a241d;
   box-shadow:
     inset 0px 1px 0px 0px #ffffff0d,
     inset 0px 0px 0px 1px #0000004d,
@@ -12277,7 +12197,7 @@ select:focus {
 }
 
 .dropdown:focus {
-  background-color: color-mix(in hsl, #2e261f 50%, #26211c);
+  background-color: #2a241d;
   box-shadow:
     inset 0px 1px 0px 0px #ffffff0d,
     inset 0px 0px 0px 1px #0000004d,
@@ -12705,7 +12625,7 @@ svg.svg-icon {
 }
 
 .text-icon-button:focus-visible {
-  box-shadow: 0 0 0px 2px color-mix(in srgb, #51402f 40%, #3b3026);
+  box-shadow: 0 0 0px 2px #443629;
   outline: none;
 }
 
@@ -12802,7 +12722,7 @@ svg.svg-icon {
 }
 
 .markdown-source-view.mod-cm6 .cm-active-indent::before {
-  border-inline-end: 1px solid color-mix(in srgb, #51402f 40%, #3b3026);
+  border-inline-end: 1px solid #443629;
 }
 
 .input-button {
@@ -12952,55 +12872,55 @@ input[type="number"] {
 
 @media (hover: hover) {
   textarea:hover {
-    border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+    border-color: #443629;
     transition:
       box-shadow 0.15s ease-in-out,
       border 0.15s ease-in-out;
   }
   input.metadata-input-text:hover {
-    border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+    border-color: #443629;
     transition:
       box-shadow 0.15s ease-in-out,
       border 0.15s ease-in-out;
   }
   input[type="date"]:hover {
-    border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+    border-color: #443629;
     transition:
       box-shadow 0.15s ease-in-out,
       border 0.15s ease-in-out;
   }
   input[type="datetime-local"]:hover {
-    border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+    border-color: #443629;
     transition:
       box-shadow 0.15s ease-in-out,
       border 0.15s ease-in-out;
   }
   input[type="text"]:hover {
-    border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+    border-color: #443629;
     transition:
       box-shadow 0.15s ease-in-out,
       border 0.15s ease-in-out;
   }
   input[type="search"]:hover {
-    border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+    border-color: #443629;
     transition:
       box-shadow 0.15s ease-in-out,
       border 0.15s ease-in-out;
   }
   input[type="email"]:hover {
-    border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+    border-color: #443629;
     transition:
       box-shadow 0.15s ease-in-out,
       border 0.15s ease-in-out;
   }
   input[type="password"]:hover {
-    border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+    border-color: #443629;
     transition:
       box-shadow 0.15s ease-in-out,
       border 0.15s ease-in-out;
   }
   input[type="number"]:hover {
-    border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+    border-color: #443629;
     transition:
       box-shadow 0.15s ease-in-out,
       border 0.15s ease-in-out;
@@ -13010,7 +12930,7 @@ input[type="number"] {
 textarea:active {
   background: #1c1712;
   border: 1px solid #1c1712;
-  border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  border-color: #443629;
   box-shadow:
     inset 0px 1px 0px 0px #ffffff08,
     inset 0px -1px 0px 0px #00000063,
@@ -13024,7 +12944,7 @@ textarea:active {
 input.metadata-input-text:active {
   background: #1c1712;
   border: 1px solid #1c1712;
-  border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  border-color: #443629;
   box-shadow:
     inset 0px 1px 0px 0px #ffffff08,
     inset 0px -1px 0px 0px #00000063,
@@ -13038,7 +12958,7 @@ input.metadata-input-text:active {
 input[type="date"]:active {
   background: #1c1712;
   border: 1px solid #1c1712;
-  border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  border-color: #443629;
   box-shadow:
     inset 0px 1px 0px 0px #ffffff08,
     inset 0px -1px 0px 0px #00000063,
@@ -13052,7 +12972,7 @@ input[type="date"]:active {
 input[type="datetime-local"]:active {
   background: #1c1712;
   border: 1px solid #1c1712;
-  border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  border-color: #443629;
   box-shadow:
     inset 0px 1px 0px 0px #ffffff08,
     inset 0px -1px 0px 0px #00000063,
@@ -13064,8 +12984,8 @@ input[type="datetime-local"]:active {
 }
 
 input[type="text"]:active {
-  border-color: color-mix(in srgb, #51402f 40%, #3b3026);
-  box-shadow: 0 0 0 2px color-mix(in srgb, #51402f 40%, #3b3026);
+  border-color: #443629;
+  box-shadow: 0 0 0 2px #443629;
   transition:
     box-shadow 0.15s ease-in-out,
     border 0.15s ease-in-out;
@@ -13074,7 +12994,7 @@ input[type="text"]:active {
 input[type="search"]:active {
   background: #1c1712;
   border: 1px solid #1c1712;
-  border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  border-color: #443629;
   box-shadow:
     inset 0px 1px 0px 0px #ffffff08,
     inset 0px -1px 0px 0px #00000063,
@@ -13088,7 +13008,7 @@ input[type="search"]:active {
 input[type="email"]:active {
   background: #1c1712;
   border: 1px solid #1c1712;
-  border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  border-color: #443629;
   box-shadow:
     inset 0px 1px 0px 0px #ffffff08,
     inset 0px -1px 0px 0px #00000063,
@@ -13102,7 +13022,7 @@ input[type="email"]:active {
 input[type="password"]:active {
   background: #1c1712;
   border: 1px solid #1c1712;
-  border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  border-color: #443629;
   box-shadow:
     inset 0px 1px 0px 0px #ffffff08,
     inset 0px -1px 0px 0px #00000063,
@@ -13116,7 +13036,7 @@ input[type="password"]:active {
 input[type="number"]:active {
   background: #1c1712;
   border: 1px solid #1c1712;
-  border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  border-color: #443629;
   box-shadow:
     inset 0px 1px 0px 0px #ffffff08,
     inset 0px -1px 0px 0px #00000063,
@@ -13130,7 +13050,7 @@ input[type="number"]:active {
 textarea:focus {
   background: #1c1712;
   border: 1px solid #1c1712;
-  border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  border-color: #443629;
   box-shadow:
     inset 0px 1px 0px 0px #ffffff08,
     inset 0px -1px 0px 0px #00000063,
@@ -13144,7 +13064,7 @@ textarea:focus {
 input.metadata-input-text:focus {
   background: #1c1712;
   border: 1px solid #1c1712;
-  border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  border-color: #443629;
   box-shadow:
     inset 0px 1px 0px 0px #ffffff08,
     inset 0px -1px 0px 0px #00000063,
@@ -13158,7 +13078,7 @@ input.metadata-input-text:focus {
 input[type="date"]:focus {
   background: #1c1712;
   border: 1px solid #1c1712;
-  border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  border-color: #443629;
   box-shadow:
     inset 0px 1px 0px 0px #ffffff08,
     inset 0px -1px 0px 0px #00000063,
@@ -13172,7 +13092,7 @@ input[type="date"]:focus {
 input[type="datetime-local"]:focus {
   background: #1c1712;
   border: 1px solid #1c1712;
-  border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  border-color: #443629;
   box-shadow:
     inset 0px 1px 0px 0px #ffffff08,
     inset 0px -1px 0px 0px #00000063,
@@ -13184,8 +13104,8 @@ input[type="datetime-local"]:focus {
 }
 
 input[type="text"]:focus {
-  border-color: color-mix(in srgb, #51402f 40%, #3b3026);
-  box-shadow: 0 0 0 2px color-mix(in srgb, #51402f 40%, #3b3026);
+  border-color: #443629;
+  box-shadow: 0 0 0 2px #443629;
   transition:
     box-shadow 0.15s ease-in-out,
     border 0.15s ease-in-out;
@@ -13194,7 +13114,7 @@ input[type="text"]:focus {
 input[type="search"]:focus {
   background: #1c1712;
   border: 1px solid #1c1712;
-  border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  border-color: #443629;
   box-shadow:
     inset 0px 1px 0px 0px #ffffff08,
     inset 0px -1px 0px 0px #00000063,
@@ -13208,7 +13128,7 @@ input[type="search"]:focus {
 input[type="email"]:focus {
   background: #1c1712;
   border: 1px solid #1c1712;
-  border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  border-color: #443629;
   box-shadow:
     inset 0px 1px 0px 0px #ffffff08,
     inset 0px -1px 0px 0px #00000063,
@@ -13222,7 +13142,7 @@ input[type="email"]:focus {
 input[type="password"]:focus {
   background: #1c1712;
   border: 1px solid #1c1712;
-  border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  border-color: #443629;
   box-shadow:
     inset 0px 1px 0px 0px #ffffff08,
     inset 0px -1px 0px 0px #00000063,
@@ -13236,7 +13156,7 @@ input[type="password"]:focus {
 input[type="number"]:focus {
   background: #1c1712;
   border: 1px solid #1c1712;
-  border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  border-color: #443629;
   box-shadow:
     inset 0px 1px 0px 0px #ffffff08,
     inset 0px -1px 0px 0px #00000063,
@@ -13300,7 +13220,7 @@ input[type="datetime-local"]:focus-visible {
 }
 
 input[type="text"]:focus-visible {
-  box-shadow: 0 0 0 2px color-mix(in srgb, #51402f 40%, #3b3026);
+  box-shadow: 0 0 0 2px #443629;
 }
 
 input[type="search"]:focus-visible {
@@ -13478,73 +13398,73 @@ input[type="datetime-local"].is-empty:focus-within::-webkit-datetime-edit-year-f
 }
 
 input[type="date"]::-webkit-datetime-edit-month-field:active {
-  background-color: color-mix(in srgb, #917959 30%, transparent);
+  background-color: #9179594d;
   color: color-mix(in srgb, currentColor 70%, #ffffff);
   cursor: text;
 }
 
 input[type="datetime-local"]::-webkit-datetime-edit-month-field:active {
-  background-color: color-mix(in srgb, #917959 30%, transparent);
+  background-color: #9179594d;
   color: color-mix(in srgb, currentColor 70%, #ffffff);
   cursor: text;
 }
 
 input[type="date"]::-webkit-datetime-edit-month-field:focus {
-  background-color: color-mix(in srgb, #917959 30%, transparent);
+  background-color: #9179594d;
   color: color-mix(in srgb, currentColor 70%, #ffffff);
   cursor: text;
 }
 
 input[type="datetime-local"]::-webkit-datetime-edit-month-field:focus {
-  background-color: color-mix(in srgb, #917959 30%, transparent);
+  background-color: #9179594d;
   color: color-mix(in srgb, currentColor 70%, #ffffff);
   cursor: text;
 }
 
 input[type="date"]::-webkit-datetime-edit-day-field:active {
-  background-color: color-mix(in srgb, #917959 30%, transparent);
+  background-color: #9179594d;
   color: color-mix(in srgb, currentColor 70%, #ffffff);
   cursor: text;
 }
 
 input[type="datetime-local"]::-webkit-datetime-edit-day-field:active {
-  background-color: color-mix(in srgb, #917959 30%, transparent);
+  background-color: #9179594d;
   color: color-mix(in srgb, currentColor 70%, #ffffff);
   cursor: text;
 }
 
 input[type="date"]::-webkit-datetime-edit-day-field:focus {
-  background-color: color-mix(in srgb, #917959 30%, transparent);
+  background-color: #9179594d;
   color: color-mix(in srgb, currentColor 70%, #ffffff);
   cursor: text;
 }
 
 input[type="datetime-local"]::-webkit-datetime-edit-day-field:focus {
-  background-color: color-mix(in srgb, #917959 30%, transparent);
+  background-color: #9179594d;
   color: color-mix(in srgb, currentColor 70%, #ffffff);
   cursor: text;
 }
 
 input[type="date"]::-webkit-datetime-edit-year-field:active {
-  background-color: color-mix(in srgb, #917959 30%, transparent);
+  background-color: #9179594d;
   color: color-mix(in srgb, currentColor 70%, #ffffff);
   cursor: text;
 }
 
 input[type="datetime-local"]::-webkit-datetime-edit-year-field:active {
-  background-color: color-mix(in srgb, #917959 30%, transparent);
+  background-color: #9179594d;
   color: color-mix(in srgb, currentColor 70%, #ffffff);
   cursor: text;
 }
 
 input[type="date"]::-webkit-datetime-edit-year-field:focus {
-  background-color: color-mix(in srgb, #917959 30%, transparent);
+  background-color: #9179594d;
   color: color-mix(in srgb, currentColor 70%, #ffffff);
   cursor: text;
 }
 
 input[type="datetime-local"]::-webkit-datetime-edit-year-field:focus {
-  background-color: color-mix(in srgb, #917959 30%, transparent);
+  background-color: #9179594d;
   color: color-mix(in srgb, currentColor 70%, #ffffff);
   cursor: text;
 }
@@ -13578,7 +13498,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   background: #d7c0a3;
-  border: 0.5px solid color-mix(in srgb, #51402f 40%, #3b3026);
+  border: 0.5px solid #443629;
   border-radius: 50%;
   box-shadow:
     inset 0px 0px 0px 1px #00000059,
@@ -13595,7 +13515,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 input[type="range"]::-webkit-slider-thumb:hover {
   background: #d7c0a3;
-  border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  border-color: #443629;
   box-shadow:
     inset 0px 0px 0px 1px #00000059,
     inset 0pc 1px 0px 1px #ffffff4d,
@@ -13607,7 +13527,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
 
 input[type="range"]::-webkit-slider-thumb:active {
   background: #d7c0a3;
-  border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  border-color: #443629;
   box-shadow:
     inset 0px 0px 0px 1px #00000059,
     inset 0pc 1px 0px 1px #ffffff4d,
@@ -13628,11 +13548,11 @@ body:not(.is-mobile) input[type="range"]:focus::-webkit-slider-thumb {
 }
 
 body:not(.is-mobile) input[type="range"]:focus-visible::-webkit-slider-thumb {
-  border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  border-color: #443629;
   box-shadow:
     0 1px 2px 0px #0000000d,
     0 2px 3px 0px #00000033,
-    0 0 0px 2px color-mix(in srgb, #51402f 40%, #3b3026);
+    0 0 0px 2px #443629;
 }
 
 input[type="color"] {
@@ -13661,20 +13581,20 @@ input[type="color"]::-webkit-color-swatch {
   input[type="color"]::-webkit-color-swatch:hover {
     box-shadow:
       none,
-      0 0 0 3px color-mix(in srgb, #51402f 40%, #3b3026);
+      0 0 0 3px #443629;
   }
 }
 
 input[type="color"]:focus-visible::-webkit-color-swatch {
   box-shadow:
     none,
-    0 0 0 3px color-mix(in srgb, #51402f 40%, #3b3026);
+    0 0 0 3px #443629;
 }
 
 input[type="color"]:focus::-webkit-color-swatch {
   box-shadow:
     none,
-    0 0 0 3px color-mix(in srgb, #51402f 40%, #3b3026);
+    0 0 0 3px #443629;
 }
 
 select.mod-hidden {
@@ -13815,7 +13735,7 @@ select.mod-hidden {
   animation: none;
   backdrop-filter: none;
   background-color: #26211c;
-  border: 1px solid color-mix(in srgb, #51402f 40%, #3b3026);
+  border: 1px solid #443629;
   border-radius: 8px;
   box-shadow:
     0px 1px 2px #0000003a,
@@ -14001,7 +13921,7 @@ select.mod-hidden {
   --checkbox-size: 16px;
   animation: none;
   background-color: var(--modal-background);
-  border: 0.5pt solid color-mix(in srgb, #51402f 40%, #3b3026);
+  border: 0.5pt solid #443629;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
@@ -14342,8 +14262,8 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 .multi-select-pill:focus:after {
   border-radius: 1em;
   box-shadow:
-    0 0 0 1px color-mix(in srgb, #51402f 40%, #3b3026),
-    inset 0 0 0 1px color-mix(in srgb, #51402f 40%, #3b3026);
+    0 0 0 1px #443629,
+    inset 0 0 0 1px #443629;
   content: "";
   display: block;
   height: 100%;
@@ -14447,8 +14367,8 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover.is-editing {
-  border-color: color-mix(in srgb, #51402f 40%, #3b3026);
-  outline: 2px color-mix(in srgb, #51402f 40%, #3b3026) solid;
+  border-color: #443629;
+  outline: 2px #443629 solid;
 }
 
 .popover.hover-popover > * {
@@ -14975,7 +14895,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 .prompt {
   animation: none;
   background-color: light-dark(#f8f5f1, #2e261f);
-  border: 0.5pt solid color-mix(in srgb, #51402f 40%, #3b3026);
+  border: 0.5pt solid #443629;
   border-radius: 12px;
   box-shadow:
     0px 1.8px 7.3px #00000045,
@@ -15093,11 +15013,11 @@ body.styled-scrollbars ::-webkit-scrollbar-thumb {
 
 body.styled-scrollbars ::-webkit-scrollbar-thumb:active {
   -webkit-border-radius: 12px;
-  background-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  background-color: #443629;
 }
 
 body.styled-scrollbars ::-webkit-scrollbar-thumb:hover {
-  background-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  background-color: #443629;
 }
 
 body.styled-scrollbars ::-webkit-scrollbar-corner {
@@ -15522,8 +15442,8 @@ body:not(.is-phone) .vertical-tab-header-group-items {
 
 .checkbox-container {
   -webkit-app-region: no-drag;
-  background: color-mix(in srgb, #51402f 50%, #6b563d);
-  background-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  background: #5e4b36;
+  background-color: #443629;
   border-radius: 26px;
   box-shadow:
     inset 0 4px 10px #00000030,
@@ -15533,7 +15453,7 @@ body:not(.is-phone) .vertical-tab-header-group-items {
   display: inline-block;
   flex-shrink: 0;
   height: 30px;
-  outline: 0 solid color-mix(in srgb, #51402f 40%, #3b3026);
+  outline: 0 solid #443629;
   position: relative;
   transition:
     box-shadow 0.15s ease-in-out,
@@ -15917,11 +15837,11 @@ body:not(.is-phone) .vertical-tab-header-group-items {
 }
 
 .tree-item-self.has-active-menu {
-  box-shadow: 0 0 0 2px color-mix(in srgb, #51402f 40%, #3b3026);
+  box-shadow: 0 0 0 2px #443629;
 }
 
 .tree-item-self.is-being-renamed {
-  box-shadow: 0 0 0 2px color-mix(in srgb, #51402f 40%, #3b3026);
+  box-shadow: 0 0 0 2px #443629;
   flex-grow: 1;
   white-space: normal;
 }
@@ -16082,7 +16002,7 @@ body:not(.is-grabbing) .tree-item-self.is-being-dragged:hover .tree-item-icon {
 }
 
 body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
-  box-shadow: 0 0 0 2px color-mix(in srgb, #51402f 40%, #3b3026);
+  box-shadow: 0 0 0 2px #443629;
 }
 
 body:not(.is-phone)
@@ -16368,19 +16288,19 @@ kbd {
 }
 
 .is-mobile .pdf-sidebar-container[data-view="1"] {
-  background-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  background-color: #443629;
 }
 
 .is-mobile .pdf-sidebar-container[data-view="2"] {
-  background-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  background-color: #443629;
 }
 
 .is-mobile .pdf-sidebar-resizer {
-  background-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  background-color: #443629;
 }
 
 @media (hover: hover) {
-  background-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  background-color: #443629;
   background-color: color-mix(in srgb, #51402f 40%, #3b3026);
 }
 
@@ -18083,7 +18003,7 @@ iframe.external-embed {
 }
 
 .metadata-properties-heading:focus:before {
-  box-shadow: 0 0 0 2px color-mix(in srgb, #51402f 40%, #3b3026);
+  box-shadow: 0 0 0 2px #443629;
 }
 
 .metadata-properties-heading .collapse-indicator {
@@ -18236,7 +18156,7 @@ iframe.external-embed {
   align-items: start;
   background-color: transparent;
   border-radius: 0px;
-  box-shadow: 0 0 0 1px color-mix(in srgb, #51402f 40%, #3b3026);
+  box-shadow: 0 0 0 1px #443629;
   display: flex;
   overflow: hidden;
   padding: 0;
@@ -18248,7 +18168,7 @@ iframe.external-embed {
     --metadata-divider-color: transparent;
     background-color: transparent;
     border-radius: 0px;
-    box-shadow: 0 0 0 1px color-mix(in srgb, #51402f 40%, #3b3026);
+    box-shadow: 0 0 0 1px #443629;
   }
 }
 
@@ -18256,7 +18176,7 @@ iframe.external-embed {
   --metadata-divider-color: transparent;
   background-color: transparent;
   border-radius: 6px;
-  box-shadow: 0 0 0 2px color-mix(in srgb, #51402f 40%, #3b3026);
+  box-shadow: 0 0 0 2px #443629;
 }
 
 .metadata-property input[type="text"] {
@@ -20118,7 +20038,7 @@ a {
 @media (hover: hover) {
   a:hover {
     color: #fb8479;
-    text-decoration-color: color-mix(in srgb, #fb8479 22%, transparent);
+    text-decoration-color: #fb847938;
     text-decoration-line: none;
   }
 }
@@ -20140,7 +20060,7 @@ a.mobile-tap {
   cursor: default;
   filter: none;
   padding-inline-end: 0.9em;
-  text-decoration-color: color-mix(in srgb, #2ea873 22%, transparent);
+  text-decoration-color: #2ea87338;
   text-decoration-line: none;
   text-underline-offset: 2px;
   transition: opacity 0.15s ease-in-out;
@@ -20149,7 +20069,7 @@ a.mobile-tap {
 @media (hover: hover) {
   .external-link:hover {
     color: #4ec68e;
-    text-decoration-color: color-mix(in srgb, #4ec68e 22%, transparent);
+    text-decoration-color: #4ec68e38;
     text-decoration-line: none;
     text-underline-offset: 2px;
   }
@@ -20179,7 +20099,7 @@ a.mobile-tap {
 .markdown-rendered .internal-link {
   color: #da5e16;
   cursor: default;
-  text-decoration-color: color-mix(in srgb, #da5e16 22%, transparent);
+  text-decoration-color: #da5e1638;
   text-decoration-line: none;
   text-underline-offset: 2px;
   transition: opacity 0.15s ease-in-out;
@@ -20192,7 +20112,7 @@ a.mobile-tap {
   }
   .markdown-rendered .internal-link:hover {
     color: #e2bd60;
-    text-decoration-color: color-mix(in srgb, #e2bd60 22%, transparent);
+    text-decoration-color: #e2bd6038;
     text-decoration-line: none;
   }
 }
@@ -20209,7 +20129,7 @@ a.mobile-tap {
   color: #917959;
   filter: none;
   opacity: 1;
-  text-decoration-color: color-mix(in srgb, #917959 22%, transparent);
+  text-decoration-color: #91795938;
   text-decoration-style: none;
 }
 
@@ -20217,7 +20137,7 @@ a.mobile-tap {
   color: #917959;
   filter: none;
   opacity: 1;
-  text-decoration-color: color-mix(in srgb, #917959 22%, transparent);
+  text-decoration-color: #91795938;
   text-decoration-style: none;
   text-underline-offset: 2px;
 }
@@ -20232,7 +20152,7 @@ a.mobile-tap {
   .markdown-rendered .internal-link.is-unresolved:hover {
     color: #ab916d;
     opacity: 1;
-    text-decoration-color: color-mix(in srgb, #ab916d 22%, transparent);
+    text-decoration-color: #ab916d38;
     text-decoration-line: none;
   }
 }
@@ -20348,7 +20268,7 @@ a.mobile-tap {
 
 .markdown-source-view.mod-cm6 .is-unresolved .cm-underline {
   color: #917959;
-  text-decoration-color: color-mix(in srgb, #917959 22%, transparent);
+  text-decoration-color: #91795938;
   text-decoration-line: none;
   text-decoration-style: none;
 }
@@ -21185,7 +21105,7 @@ input[type="checkbox"]:focus {
 }
 
 input[type="checkbox"]:focus-visible {
-  box-shadow: 0 0 0 2px color-mix(in srgb, #51402f 40%, #3b3026);
+  box-shadow: 0 0 0 2px #443629;
 }
 
 input[type="checkbox"]:checked:after {
@@ -21780,7 +21700,7 @@ em {
 }
 
 .bases-toolbar-menu-item.is-selected input[type="checkbox"] {
-  box-shadow: 0 0 0 2px color-mix(in srgb, #51402f 40%, #3b3026);
+  box-shadow: 0 0 0 2px #443629;
 }
 
 .bases-toolbar-menu-item.is-selected .bases-property-visibility-button {
@@ -22077,8 +21997,7 @@ em {
   --input-shadow: none;
   --metadata-divider-width: 0px;
   --metadata-label-width: 7em;
-  --metadata-property-box-shadow: 0 0 0 1px
-    color-mix(in srgb, #51402f 40%, #3b3026);
+  --metadata-property-box-shadow: 0 0 0 1px #443629;
   align-items: center;
   background-color: #26211c;
   display: flex;
@@ -22281,11 +22200,11 @@ em {
 }
 
 .bases-table-header-resizer.is-active {
-  background-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  background-color: #443629;
 }
 
 .bases-table-header-resizer:hover {
-  background-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  background-color: #443629;
 }
 
 .bases-tbody {
@@ -24212,7 +24131,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .suggestion-container.mod-search-suggestion {
   background-color: #26211c;
-  border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  border-color: #443629;
   max-height: 600px;
   max-width: unset;
 }
@@ -24314,7 +24233,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 @media (hover: hover) {
   .search-result-file-match:hover {
-    background: color-mix(in srgb, #211b17 50%, #1c1712);
+    background: #1e1915;
     background-color: transparent;
     color: #d7c0a3;
   }
@@ -24438,7 +24357,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
   }
   .search-result-file-match:hover
     .search-result-file-match-destination-file:hover {
-    background-color: color-mix(in hsl, #2e261f 50%, #26211c);
+    background-color: #2a241d;
     box-shadow: none;
     color: #d7c0a3;
   }
@@ -24466,14 +24385,14 @@ body:not(.is-phone)
   .search-result.has-focus
   .tree-item-self {
   border-radius: 4px;
-  box-shadow: inset 0 0 0 2px color-mix(in srgb, #51402f 40%, #3b3026);
+  box-shadow: inset 0 0 0 2px #443629;
 }
 
 body:not(.is-phone)
   .workspace-leaf.mod-active
   .search-result-file-match.has-focus {
   border-radius: 4px;
-  box-shadow: inset 0 0 0 2px color-mix(in srgb, #51402f 40%, #3b3026);
+  box-shadow: inset 0 0 0 2px #443629;
 }
 
 .search-results-info {
@@ -25454,7 +25373,7 @@ body:not(.is-phone)
   .tree-item.has-focus
   > .tag-pane-tag {
   border-radius: 4px;
-  box-shadow: 0 0 0 2px color-mix(in srgb, #51402f 40%, #3b3026);
+  box-shadow: 0 0 0 2px #443629;
 }
 
 .mod-canvas-color-1 {
@@ -25733,7 +25652,7 @@ body.theme-dark {
 }
 
 .canvas-control-group {
-  background: color-mix(in srgb, #342c23 60%, #2e261f);
+  background: #312a21;
   background-color: light-dark(#f8f5f1, #2e261f);
   border: 1px solid transparent;
   border-radius: 8px;
@@ -25770,7 +25689,7 @@ body.theme-dark {
 
 @media (hover: hover) {
   .canvas-control-item:hover {
-    background-color: color-mix(in hsl, #2e261f 50%, #26211c);
+    background-color: #2a241d;
     color: #d7c0a3;
   }
 }
@@ -26630,7 +26549,7 @@ body.is-mobile .canvas-node-resizer {
 
 @media (hover: hover) {
   .canvas-color-picker-item.canvas-color-picker-custom:not(.is-active):hover {
-    box-shadow: 0 0 0 2px color-mix(in srgb, #51402f 40%, #3b3026);
+    box-shadow: 0 0 0 2px #443629;
   }
 }
 
@@ -26977,7 +26896,7 @@ textarea.webviewer-adblock-lists {
 
 .footnotes-view .footnote-list-item.is-editing > .footnote {
   background-color: transparent;
-  box-shadow: 0 0 0 2px color-mix(in srgb, #51402f 40%, #3b3026);
+  box-shadow: 0 0 0 2px #443629;
 }
 
 .footnotes-view .footnote-list-item:last-child {
@@ -27471,7 +27390,7 @@ body.is-screenshotting *::-webkit-scrollbar {
 }
 
 .is-tablet.theme-dark {
-  --interactive-hover: color-mix(in srgb, #51402f 40%, #3b3026);
+  --interactive-hover: #443629;
   --interactive-normal: transparent;
   --modal-background: #26211c;
   --titlebar-background: var(--background-primary);
@@ -27959,7 +27878,7 @@ body.is-phone .suggestion-bg {
 }
 
 .mobile-onboarding-radio-option:focus {
-  border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  border-color: #443629;
 }
 
 .mobile-onboarding-radio-option.is-selected {
@@ -29103,7 +29022,7 @@ body.is-tablet .sidebar-toggle-button.mod-left {
 }
 
 .is-mobile .menu {
-  border: 1px solid color-mix(in srgb, #51402f 40%, #3b3026);
+  border: 1px solid #443629;
   border-radius: 16px;
   max-width: 100%;
 }
@@ -29160,7 +29079,7 @@ body.is-tablet .sidebar-toggle-button.mod-left {
 }
 
 .is-mobile .modal {
-  border: 1px solid color-mix(in srgb, #51402f 40%, #3b3026);
+  border: 1px solid #443629;
   border-radius: 16px;
 }
 
@@ -29508,7 +29427,7 @@ body.is-tablet .mobile-navbar {
 
 .is-mobile .prompt {
   --prompt-top: 105px;
-  border: 1px solid color-mix(in srgb, #51402f 40%, #3b3026);
+  border: 1px solid #443629;
   max-height: min(70vh, calc(100vh - 105px - env(safe-area-inset-bottom)));
   top: 105px;
 }
@@ -30928,7 +30847,7 @@ pre {
 }
 
 .theme-dark.is-tablet {
-  --interactive-hover: color-mix(in hsl, #2e261f 50%, #26211c);
+  --interactive-hover: #2a241d;
   --interactive-normal: #26211c;
   --modal-background: var(--background-primary);
   --titlebar-background: #26211c;
@@ -31989,7 +31908,7 @@ button:not(button.clickable-icon).mod-cancel {
 .markdown-source-view.mod-cm6
   .cm-embed-block:not(.cm-table-widget):hover
   .edit-block-button {
-  background: color-mix(in srgb, #211b17 70%, transparent);
+  background: #211b17b3;
   border-radius: 8px;
   box-shadow:
     inset 0px 0px 0px 1px #00000080,
@@ -32000,7 +31919,7 @@ button:not(button.clickable-icon).mod-cancel {
 .markdown-source-view.mod-cm6
   .cm-embed-block:not(.cm-table-widget):hover
   .edit-block-button:hover {
-  background: color-mix(in srgb, #211b17 100%, transparent);
+  background: #211b17;
   box-shadow:
     inset 0px 0px 0px 1px #00000080,
     inset 0px -2px 1px 1px #00000080,
@@ -32060,7 +31979,7 @@ button:not(button.clickable-icon).mod-cancel {
   input[type="color"]::-webkit-color-swatch:hover:focus {
     box-shadow:
       none,
-      0 0 0 3px color-mix(in srgb, #51402f 40%, #3b3026);
+      0 0 0 3px #443629;
   }
 }
 
@@ -32238,7 +32157,7 @@ span.setting-hotkey {
 }
 
 .is-phone .mod-confirmation .modal:not(.mod-lg) {
-  border: 1px solid color-mix(in srgb, #51402f 40%, #3b3026);
+  border: 1px solid #443629;
 }
 
 .community-item.is-selected {
@@ -32623,7 +32542,7 @@ input.prompt-input:active {
 
 .suggestion-item:not(.mod-search-suggestion .suggestion-item).mod-complex
   .suggestion-highlight {
-  color: color-mix(in srgb, #ab916d 70%, #ffffff);
+  color: #c4b299;
   font-weight: 650;
 }
 
@@ -34554,21 +34473,21 @@ input[type="checkbox"]:checked[data-task="/"] {
   background: linear-gradient(to right, #ef993e 50%, #2a241e 50%);
   background-clip: padding-box;
   background-repeat: no-repeat;
-  border-color: color-mix(in srgb, #ef993e 15%, #c7b194);
+  border-color: #cdad87;
 }
 
 li[data-task="/"] > input:checked {
   background: linear-gradient(to right, #ef993e 50%, #2a241e 50%);
   background-clip: padding-box;
   background-repeat: no-repeat;
-  border-color: color-mix(in srgb, #ef993e 15%, #c7b194);
+  border-color: #cdad87;
 }
 
 li[data-task="/"] > p > input:checked {
   background: linear-gradient(to right, #ef993e 50%, #2a241e 50%);
   background-clip: padding-box;
   background-repeat: no-repeat;
-  border-color: color-mix(in srgb, #ef993e 15%, #c7b194);
+  border-color: #cdad87;
 }
 
 input[type="checkbox"]:checked[data-task="/"]:after {
@@ -34588,17 +34507,17 @@ li[data-task="/"] > p > input:checked:after {
 
 input[type="checkbox"]:checked[data-task="/"]:hover {
   background: linear-gradient(to right, #fbab51 50%, #2a241e 50%);
-  border-color: color-mix(in srgb, #ef993e 15%, #c7b194);
+  border-color: #cdad87;
 }
 
 li[data-task="/"] > input:checked:hover {
   background: linear-gradient(to right, #fbab51 50%, #2a241e 50%);
-  border-color: color-mix(in srgb, #ef993e 15%, #c7b194);
+  border-color: #cdad87;
 }
 
 li[data-task="/"] > p > input:checked:hover {
   background: linear-gradient(to right, #fbab51 50%, #2a241e 50%);
-  border-color: color-mix(in srgb, #ef993e 15%, #c7b194);
+  border-color: #cdad87;
 }
 
 input[type="checkbox"]:checked[data-task=">"] {
@@ -35618,7 +35537,7 @@ body.embed-hide-title .embed-title {
 }
 
 .workspace-leaf-content .empty-state-action:hover {
-  border-color: color-mix(in srgb, #51402f 40%, #3b3026);
+  border-color: #443629;
   color: #ab916d;
 }
 
@@ -35741,24 +35660,24 @@ a:active {
 
 .internal-link {
   color: #da5e16;
-  text-decoration-color: color-mix(in srgb, #da5e16 22%, transparent);
+  text-decoration-color: #da5e1638;
   text-underline-offset: 2px;
 }
 
 .metadata-container .internal-link {
   color: #da5e16;
-  text-decoration-color: color-mix(in srgb, #da5e16 22%, transparent);
+  text-decoration-color: #da5e1638;
   text-underline-offset: 2px;
 }
 
 .internal-link:hover {
   color: #e2bd60;
-  text-decoration-color: color-mix(in srgb, #e2bd60 22%, transparent);
+  text-decoration-color: #e2bd6038;
 }
 
 .metadata-container .internal-link:hover {
   color: #e2bd60;
-  text-decoration-color: color-mix(in srgb, #e2bd60 22%, transparent);
+  text-decoration-color: #e2bd6038;
 }
 
 .internal-link:active {
@@ -35775,24 +35694,24 @@ a:active {
 
 .internal-link.is-unresolved {
   color: #917959;
-  text-decoration-color: color-mix(in srgb, #917959 22%, transparent);
+  text-decoration-color: #91795938;
   text-underline-offset: 2px;
 }
 
 .metadata-container .internal-link.is-unresolved {
   color: #917959;
-  text-decoration-color: color-mix(in srgb, #917959 22%, transparent);
+  text-decoration-color: #91795938;
   text-underline-offset: 2px;
 }
 
 .internal-link.is-unresolved:hover {
   color: #ab916d;
-  text-decoration-color: color-mix(in srgb, #ab916d 22%, transparent);
+  text-decoration-color: #ab916d38;
 }
 
 .metadata-container .internal-link.is-unresolved:hover {
   color: #ab916d;
-  text-decoration-color: color-mix(in srgb, #ab916d 22%, transparent);
+  text-decoration-color: #ab916d38;
 }
 
 .internal-link.is-unresolved:active {
@@ -35809,13 +35728,13 @@ a:active {
 
 .cm-hmd-internal-link .is-unresolved .cm-underline {
   color: #917959;
-  text-decoration-color: color-mix(in srgb, #917959 22%, transparent);
+  text-decoration-color: #91795938;
   text-underline-offset: 2px;
 }
 
 .cm-hmd-internal-link .is-unresolved .cm-underline:hover {
   color: #ab916d;
-  text-decoration-color: color-mix(in srgb, #ab916d 22%, transparent);
+  text-decoration-color: #ab916d38;
 }
 
 .cm-hmd-internal-link .is-unresolved .cm-underline:active {
@@ -35825,13 +35744,13 @@ a:active {
 
 .cm-hmd-internal-link .cm-underline {
   color: #da5e16;
-  text-decoration-color: color-mix(in srgb, #da5e16 22%, transparent);
+  text-decoration-color: #da5e1638;
   text-underline-offset: 2px;
 }
 
 .cm-hmd-internal-link .cm-underline:hover {
   color: #e2bd60;
-  text-decoration-color: color-mix(in srgb, #e2bd60 22%, transparent);
+  text-decoration-color: #e2bd6038;
   text-underline-offset: 2px;
 }
 
@@ -35842,37 +35761,37 @@ a:active {
 
 .cm-link .cm-underline {
   color: #2ea873;
-  text-decoration-color: color-mix(in srgb, #2ea873 22%, transparent);
+  text-decoration-color: #2ea87338;
   text-underline-offset: 2px;
 }
 
 .cm-underline {
   color: #2ea873;
-  text-decoration-color: color-mix(in srgb, #2ea873 22%, transparent);
+  text-decoration-color: #2ea87338;
   text-underline-offset: 2px;
 }
 
 .cm-url {
   color: #2ea873;
-  text-decoration-color: color-mix(in srgb, #2ea873 22%, transparent);
+  text-decoration-color: #2ea87338;
   text-underline-offset: 2px;
 }
 
 .cm-link .cm-underline:hover {
   color: #4ec68e;
-  text-decoration-color: color-mix(in srgb, #4ec68e 22%, transparent);
+  text-decoration-color: #4ec68e38;
   text-underline-offset: 2px;
 }
 
 .cm-underline:hover {
   color: #4ec68e;
-  text-decoration-color: color-mix(in srgb, #4ec68e 22%, transparent);
+  text-decoration-color: #4ec68e38;
   text-underline-offset: 2px;
 }
 
 .cm-url:hover {
   color: #4ec68e;
-  text-decoration-color: color-mix(in srgb, #4ec68e 22%, transparent);
+  text-decoration-color: #4ec68e38;
   text-underline-offset: 2px;
 }
 
@@ -36021,7 +35940,7 @@ body span.cm-quote.cm-strong.cm-em.cm-strikethrough {
 }
 
 .cm-gutterElement {
-  color: color-mix(in srgb, #6b563d 40%, #51402f);
+  color: #5b4934;
   font-size: 11px;
 }
 
@@ -36702,7 +36621,7 @@ body.colorful-folders_different-bookmark-colors
 }
 
 .canvas-card-menu.canvas-card-menu {
-  background: color-mix(in srgb, #342c23 60%, #2e261f);
+  background: #312a21;
   border: 1px solid transparent;
   border-radius: 8px;
   box-shadow:
@@ -36729,12 +36648,12 @@ body.colorful-folders_different-bookmark-colors
 }
 
 .canvas-control-group .canvas-control-item {
-  background: color-mix(in srgb, #342c23 60%, #2e261f);
+  background: #312a21;
   color: #917959;
 }
 
 .canvas-control-group .canvas-control-item:hover {
-  background: color-mix(in srgb, #342c23 10%, #2e261f);
+  background: #2e271f;
   color: #c7b194;
 }
 
@@ -37712,8 +37631,8 @@ body.alt-folder-icons
 }
 
 .kanban-plugin__lane {
-  background: color-mix(in srgb, #2a241e 50%, #26211c);
-  border: 1px solid color-mix(in srgb, #342c23 40%, #2e261f);
+  background: #28221d;
+  border: 1px solid #302920;
   border-radius: 8px;
   box-shadow: none;
 }
@@ -37781,7 +37700,7 @@ body.alt-folder-icons
 }
 
 .kanban-plugin__lane-setting-wrapper > div:last-child {
-  border-bottom: 1px solid color-mix(in srgb, #342c23 40%, #2e261f);
+  border-bottom: 1px solid #302920;
   margin-bottom: 4px;
 }
 
@@ -38118,7 +38037,7 @@ body.alt-folder-icons
 .style-settings-container:not(
     .style-settings-heading[data-level="0"] + .style-settings-container
   ) {
-  background: color-mix(in srgb, #2a241e 50%, transparent);
+  background: #2a241e80;
   border: 1px solid transparent;
   border-radius: 8px;
   padding: 16px 16px;
@@ -38238,16 +38157,8 @@ body.zero-popup-blur {
 
 body.editor-bgpattern-linegrid .workspace-split.mod-root .view-content {
   background-image:
-    linear-gradient(
-      to left,
-      color-mix(in srgb, #51402f 30%, transparent) 1px,
-      transparent 1px
-    ),
-    linear-gradient(
-      to top,
-      color-mix(in srgb, #51402f 30%, transparent) 1px,
-      transparent 1px
-    );
+    linear-gradient(to left, #51402f4d 1px, transparent 1px),
+    linear-gradient(to top, #51402f4d 1px, transparent 1px);
   background-size: 50px 50px;
 }
 

@@ -1,0 +1,102 @@
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
+  color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
+  --background-modifier-box-shadow: #0000004d;
+  --background-modifier-cover: #0a0a0a66;
+  --background-modifier-form-field: #21201e;
+
+  --color-blue-rgb: 136, 198, 227;
+
+  --color-cyan-rgb: 111, 210, 194;
+
+  --color-green-rgb: 117, 194, 151;
+
+  --color-orange-rgb: 241, 144, 112;
+
+  --color-pink-rgb: 220, 118, 167;
+
+  --color-purple-rgb: 181, 132, 199;
+
+  --color-red-rgb: 225, 120, 132;
+
+  --color-yellow-rgb: 255, 168, 46;
+  --highlight-mix-blend-mode: lighten;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
+    0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
+    0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
+  --interactive-accent: #2282e2;
+  --interactive-accent-hover: #439ee8;
+  --interactive-hover: #363636;
+  --interactive-normal: #21201e;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --pdf-shadow: 0 0 0 1px #323130;
+  --pdf-thumbnail-shadow: 0 0 0 1px #323130;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+  --text-accent: #439ee8;
+
+  --text-selection: #2282e254;
+  --background-modifier-box-shadow: #0000004d;
+  --background-modifier-cover: #0a0a0a66;
+  --background-modifier-form-field: #21201e;
+
+  --color-blue-rgb: 136, 198, 227;
+
+  --color-cyan-rgb: 111, 210, 194;
+
+  --color-green-rgb: 117, 194, 151;
+
+  --color-orange-rgb: 241, 144, 112;
+
+  --color-pink-rgb: 220, 118, 167;
+
+  --color-purple-rgb: 181, 132, 199;
+
+  --color-red-rgb: 225, 120, 132;
+
+  --color-yellow-rgb: 255, 168, 46;
+  --highlight-mix-blend-mode: lighten;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
+    0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
+    0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
+  --interactive-accent: #2282e2;
+  --interactive-accent-hover: #439ee8;
+  --interactive-hover: #363636;
+  --interactive-normal: #21201e;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --pdf-shadow: 0 0 0 1px #323130;
+  --pdf-thumbnail-shadow: 0 0 0 1px #323130;
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+  --text-accent: #439ee8;
+
+  --text-selection: #2282e254;
+}

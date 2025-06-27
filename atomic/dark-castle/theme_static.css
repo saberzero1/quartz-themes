@@ -931,10 +931,7 @@
 }
 
 :root {
-  --background-secondary-alt: light-dark(
-    color-mix(in hsl, #000000, #000000),
-    color-mix(in hsl, #292929, #9c9c9c)
-  );
+  --background-secondary-alt: light-dark(#000000, #636363);
   --color-accent: light-dark(#ffcc66, #ffcc66);
   --color-accent-1: light-dark(hsl(39, 101%, 75.25%), hsl(37, 102%, 80.5%));
   --color-accent-2: light-dark(hsl(37, 102%, 80.5%), hsl(35, 105%, 90.3%));
@@ -1594,8 +1591,8 @@ body {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   --background-modifier-active-hover: #ffcc6626;
-  --background-modifier-border: color-mix(in hsl, #292929, #9c9c9c);
-  --background-modifier-border-focus: color-mix(in hsl, #9c9c9c, #9c9c9c);
+  --background-modifier-border: #636363;
+  --background-modifier-border-focus: #9c9c9c;
   --background-modifier-border-hover: #9c9c9c;
   --background-modifier-error: #ff000f;
   --background-modifier-error-hover: #ff000f;
@@ -1607,11 +1604,8 @@ body {
   --background-modifier-success-rgb: 186, 230, 126;
   --background-primary: #000000;
   --background-primary-alt: #000000;
-  --background-secondary: color-mix(in hsl, #000000, #292929);
-  --background-secondary-alt: light-dark(
-    color-mix(in hsl, #000000, #000000),
-    color-mix(in hsl, #292929, #9c9c9c)
-  );
+  --background-secondary: #141414;
+  --background-secondary-alt: light-dark(#000000, #636363);
   --bases-embed-border: 1px solid #292929;
   --bases-embed-border-radius: 2px;
   --bases-filter-menu-width: 520px;
@@ -1688,16 +1682,12 @@ body {
   --canvas-color-4: 186, 230, 126;
   --canvas-color-5: 92, 207, 230;
   --canvas-color-6: 195, 166, 255;
-  --canvas-dot-pattern: color-mix(in hsl, #292929, #9c9c9c);
+  --canvas-dot-pattern: #636363;
   --caret-color: #ffd580;
   --checkbox-border-color: #ff8040;
   --checkbox-border-color-hover: #9c9c9c;
   --checkbox-color: #ff8040;
-  --checkbox-color-hover: color-mix(
-    in hsl shorter hue,
-    #ff8040 75%,
-    transparent
-  );
+  --checkbox-color-hover: #ff8040bf;
   --checkbox-margin-inline-start: 0.85em;
   --checkbox-marker-color: #000000;
   --checkbox-radius: 2px;
@@ -1761,11 +1751,7 @@ body {
   --divider-width-hover: 3px;
   --drag-ghost-background: #000000d9;
   --drag-ghost-text-color: #fff;
-  --dropdown-background: color-mix(
-    in hsl shorter hue,
-    #000000 75%,
-    transparent
-  );
+  --dropdown-background: #000000bf;
   --dropdown-background-blend-mode: hard-light;
   --dropdown-background-hover: #000000;
   --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -1792,7 +1778,7 @@ body {
   --file-header-justify: center;
   --file-line-width: 700px;
   --file-margins: 32px;
-  --flair-background: color-mix(in hsl shorter hue, #000000 75%, transparent);
+  --flair-background: #000000bf;
   --flair-color: #ffd580;
   --font-black: 900;
   --font-bold: 700;
@@ -2059,7 +2045,7 @@ body {
   --metadata-sidebar-input-font-size: 14.992px;
   --metadata-sidebar-label-font-size: 14.992px;
   --modal-background: #000000;
-  --modal-border-color: color-mix(in hsl, #9c9c9c, #9c9c9c);
+  --modal-border-color: #9c9c9c;
   --modal-border-width: 0.5pt;
   --modal-community-sidebar-width: 280px;
   --modal-height: 85vh;
@@ -2126,7 +2112,7 @@ body {
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
   --popover-width: 450px;
-  --prompt-border-color: color-mix(in hsl, #9c9c9c, #9c9c9c);
+  --prompt-border-color: #9c9c9c;
   --prompt-border-width: 0.5pt;
   --prompt-input-height: 40px;
   --prompt-max-height: 70vh;
@@ -2284,7 +2270,7 @@ body {
   --text-faint: #9c9c9c;
   --text-highlight-bg: #ffd00066;
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: color-mix(in hsl, #9c9c9c, #9c9c9c);
+  --text-muted: #9c9c9c;
   --text-normal: #9c9c9c;
   --text-on-accent: #ffffff;
   --text-on-accent-inverted: #000000;
@@ -2355,7 +2341,7 @@ body {
 .theme-light {
   --background-modifier-box-shadow: #0000001a;
   --background-modifier-cover: #dcdcdc66;
-  --background-secondary-alt: color-mix(in hsl, #000000, #000000);
+  --background-secondary-alt: #000000;
   --color-accent: #ffcc66;
   --color-accent-1: hsl(39, 101%, 75.25%);
   --color-accent-2: hsl(37, 102%, 80.5%);
@@ -2408,7 +2394,7 @@ body {
   --background-modifier-box-shadow: #0000004d;
   --background-modifier-cover: #0a0a0a66;
   --background-modifier-form-field: #292929;
-  --background-secondary-alt: color-mix(in hsl, #292929, #9c9c9c);
+  --background-secondary-alt: #636363;
   --color-accent: #ffcc66;
   --color-accent-1: hsl(37, 102%, 80.5%);
   --color-accent-2: hsl(35, 105%, 90.3%);
@@ -2451,7 +2437,7 @@ body {
   --interactive-accent: #ffcc66;
   --interactive-accent-hover: hsl(37, 102%, 80.5%);
   --interactive-hover: #9c9c9c;
-  --interactive-normal: color-mix(in hsl, #292929, #9c9c9c);
+  --interactive-normal: #636363;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --pdf-shadow: 0 0 0 1px #292929;
@@ -4651,7 +4637,7 @@ body:not(.show-ribbon) .workspace-ribbon {
 
 .tooltip {
   animation: pop-down 200ms forwards ease-in-out;
-  background-color: color-mix(in hsl, #000000, #292929);
+  background-color: #141414;
   border-radius: 2px;
   box-shadow: 0 2px 8px #0000004d;
   color: #fafafa;
@@ -7544,7 +7530,7 @@ button {
 }
 
 button:not(.clickable-icon) {
-  background-color: color-mix(in hsl shorter hue, #000000 75%, transparent);
+  background-color: #000000bf;
   box-shadow: none;
   color: #ef6b73;
 }
@@ -7610,12 +7596,12 @@ button.mod-cta {
 }
 
 button.mod-cta.mobile-tap {
-  background-color: color-mix(in hsl shorter hue, #ff8040 75%, transparent);
+  background-color: #ff8040bf;
 }
 
 @media (hover: hover) {
   button.mod-cta:hover {
-    background-color: color-mix(in hsl shorter hue, #ff8040 75%, transparent);
+    background-color: #ff8040bf;
   }
 }
 
@@ -8035,7 +8021,7 @@ select {
   -webkit-appearance: none;
   appearance: none;
   background-blend-mode: hard-light;
-  background-color: color-mix(in hsl shorter hue, #000000 75%, transparent);
+  background-color: #000000bf;
   background-position:
     left 0.5em top 50%,
     0 0;
@@ -8063,7 +8049,7 @@ select {
   -webkit-appearance: none;
   appearance: none;
   background-blend-mode: hard-light;
-  background-color: color-mix(in hsl shorter hue, #000000 75%, transparent);
+  background-color: #000000bf;
   background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23000%27 opacity=%270.9%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E");
   background-position:
     left 0.5em top 50%,
@@ -9307,7 +9293,7 @@ select.mod-hidden {
 }
 
 .notice {
-  background-color: color-mix(in hsl, #000000, #292929);
+  background-color: #141414;
   border-radius: 4px;
   box-shadow: 0 2px 8px #0000004d;
   color: #fafafa;
@@ -10330,7 +10316,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .prompt {
   background-color: #000000;
-  border: 0.5pt solid color-mix(in hsl, #000000, #292929);
+  border: 0.5pt solid #141414;
   border-radius: 6px;
   box-shadow:
     0px 1.8px 7.3px #00000012,
@@ -10895,7 +10881,7 @@ body:not(.is-phone) .vertical-tab-header-group-items {
 }
 
 .tooltip .tooltip-arrow {
-  border-bottom: 5px solid color-mix(in hsl, #000000, #292929);
+  border-bottom: 5px solid #141414;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   content: " ";
@@ -10910,7 +10896,7 @@ body:not(.is-phone) .vertical-tab-header-group-items {
 
 .tooltip.mod-right .tooltip-arrow {
   border-bottom: 5px solid transparent;
-  border-right: 5px solid color-mix(in hsl, #000000, #292929);
+  border-right: 5px solid #141414;
   border-top: 5px solid transparent;
   left: -5px;
   top: calc(50% - 5px);
@@ -10918,7 +10904,7 @@ body:not(.is-phone) .vertical-tab-header-group-items {
 
 .tooltip.mod-left .tooltip-arrow {
   border-bottom: 5px solid transparent;
-  border-left: 5px solid color-mix(in hsl, #000000, #292929);
+  border-left: 5px solid #141414;
   border-top: 5px solid transparent;
   left: calc(100% + 5px);
   top: calc(50% - 5px);
@@ -10926,7 +10912,7 @@ body:not(.is-phone) .vertical-tab-header-group-items {
 
 .tooltip.mod-top .tooltip-arrow {
   border-bottom: 5px solid transparent;
-  border-top: 5px solid color-mix(in hsl, #000000, #292929);
+  border-top: 5px solid #141414;
   top: 100%;
 }
 
@@ -13261,7 +13247,7 @@ input.metadata-property-key-input:focus {
 }
 
 .metadata-property[data-property-key="tags"] .multi-select-pill {
-  --pill-background: color-mix(in hsl shorter hue, #ffffff 25%, transparent);
+  --pill-background: #ffffff40;
   --pill-background-hover: #ffffff;
   --pill-border-color: #ffcc6626;
   --pill-border-color-hover: #ffcc6626;
@@ -14137,14 +14123,14 @@ h6 a {
 
 hr {
   border: none;
-  border-color: color-mix(in hsl shorter hue, #2d449b, #2d449b);
+  border-color: #2d449b;
   border-top: 2px solid;
   margin: 2rem 0;
 }
 
 .markdown-rendered hr {
   border: none;
-  border-color: color-mix(in hsl shorter hue, #2d449b, #2d449b);
+  border-color: #2d449b;
   border-top: 2px solid;
 }
 
@@ -15629,7 +15615,7 @@ mjx-container {
 }
 
 a.tag {
-  background-color: color-mix(in hsl shorter hue, #ffffff 25%, transparent);
+  background-color: #ffffff40;
   border: 0px solid #ffcc6626;
   border-radius: 2em;
   color: #ffffff;
@@ -15650,7 +15636,7 @@ a.tag {
 }
 
 .cm-hashtag {
-  background-color: color-mix(in hsl shorter hue, #ffffff 25%, transparent);
+  background-color: #ffffff40;
   border: 0px solid #ffcc6626;
   border-inline-end: none;
   border-inline-start: none;
@@ -16593,7 +16579,7 @@ em {
   --metadata-label-width: 7em;
   --metadata-property-box-shadow: 0 0 0 1px #ff8040;
   align-items: center;
-  background-color: color-mix(in hsl shorter hue, #000000 75%, transparent);
+  background-color: #000000bf;
   display: flex;
   width: 100%;
 }
@@ -18267,7 +18253,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .suggestion-container.mod-search-suggestion {
   background-color: #000000;
-  border-color: color-mix(in hsl, #000000, #292929);
+  border-color: #141414;
   max-height: 600px;
   max-width: unset;
 }
@@ -18461,7 +18447,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .search-result-file-match-destination-file {
-  background-color: color-mix(in hsl shorter hue, #000000 75%, transparent);
+  background-color: #000000bf;
   border-radius: 2px;
   box-shadow: none;
   color: #9c9c9c;
@@ -19365,7 +19351,7 @@ body.theme-dark {
   --dark-castle-accent-hover: #575757;
   --dark-castle-accent-l: 70%;
   --dark-castle-accent-s: 100%;
-  --dark-castle-base-grey-mix: color-mix(in hsl, #9c9c9c, #9c9c9c);
+  --dark-castle-base-grey-mix: #9c9c9c;
   --dark-castle-code-error: #ff8040;
   --dark-castle-code-function: #ff5503;
   --dark-castle-code-keyword: #aa1b86;
@@ -19373,13 +19359,13 @@ body.theme-dark {
   --dark-castle-code-variable: #08d220;
   --dark-castle-palette-black: #000000;
   --dark-castle-palette-black-02: #1a1a1a;
-  --dark-castle-palette-black-02-mix: color-mix(in hsl, #000000, #000000);
-  --dark-castle-palette-black-03-mix: color-mix(in hsl, #000000, #292929);
+  --dark-castle-palette-black-02-mix: #000000;
+  --dark-castle-palette-black-03-mix: #141414;
   --dark-castle-palette-blue: #4164ff;
   --dark-castle-palette-dark-blue: #2d449b;
   --dark-castle-palette-dark-gray: #292929;
   --dark-castle-palette-dark-gray-02: #333333;
-  --dark-castle-palette-dark-gray-04-mix: color-mix(in hsl, #292929, #9c9c9c);
+  --dark-castle-palette-dark-gray-04-mix: #636363;
   --dark-castle-palette-dark-green: #0d8501;
   --dark-castle-palette-dark-purple: #aa1b86;
   --dark-castle-palette-dark-red: #aa0000;
@@ -19388,13 +19374,9 @@ body.theme-dark {
   --dark-castle-palette-gray: #575757;
   --dark-castle-palette-green: #08d220;
   --dark-castle-palette-light-blue: #4dbced;
-  --dark-castle-palette-light-blue-hover: color-mix(
-    in hsl shorter hue,
-    #4dbced,
-    #9c9c9c
-  );
+  --dark-castle-palette-light-blue-hover: #74acc5;
   --dark-castle-palette-light-gray: #9c9c9c;
-  --dark-castle-palette-light-gray-05-mix: color-mix(in hsl, #9c9c9c, #9c9c9c);
+  --dark-castle-palette-light-gray-05-mix: #9c9c9c;
   --dark-castle-palette-light-green: #bae67e;
   --dark-castle-palette-light-orange: #ff8040;
   --dark-castle-palette-light-purple: #d8bfd8;
@@ -19480,7 +19462,7 @@ body.theme-dark {
 }
 
 .canvas-background circle {
-  fill: color-mix(in hsl, #292929, #9c9c9c);
+  fill: #636363;
 }
 
 .canvas {
@@ -19627,7 +19609,7 @@ body.theme-dark {
   --icon-size: 18px;
   --icon-stroke: 2px;
   align-items: center;
-  background-color: color-mix(in hsl shorter hue, #000000 75%, transparent);
+  background-color: #000000bf;
   border-bottom: 1px solid #292929;
   border-radius: 0;
   box-shadow: none;
@@ -21827,8 +21809,8 @@ body.is-phone .suggestion-bg {
 
 .is-mobile .view-header-nav-buttons {
   --icon-color: #ff8040;
-  --icon-color-active: color-mix(in hsl shorter hue, #ff8040 75%, transparent);
-  --icon-color-focus: color-mix(in hsl shorter hue, #ff8040 75%, transparent);
+  --icon-color-active: #ff8040bf;
+  --icon-color-focus: #ff8040bf;
   --icon-color-hover: #ff8040;
   --icon-size: 24px;
   --icon-stroke: 1.75px;
@@ -21836,8 +21818,8 @@ body.is-phone .suggestion-bg {
 
 .is-mobile .view-header .view-action {
   --icon-color: #ff8040;
-  --icon-color-active: color-mix(in hsl shorter hue, #ff8040 75%, transparent);
-  --icon-color-focus: color-mix(in hsl shorter hue, #ff8040 75%, transparent);
+  --icon-color-active: #ff8040bf;
+  --icon-color-focus: #ff8040bf;
   --icon-color-hover: #ff8040;
   --icon-size: 24px;
   --icon-stroke: 1.75px;
@@ -22364,7 +22346,7 @@ body.is-tablet .workspace-drawer.mod-left .workspace-drawer-inner {
 .workspace-drawer .nav-buttons-container {
   --icon-color: #ff8040;
   --icon-color-active: #ff8040;
-  --icon-color-focus: color-mix(in hsl shorter hue, #ff8040 75%, transparent);
+  --icon-color-focus: #ff8040bf;
   --icon-color-hover: #ff8040;
   --icon-size: 24px;
   --icon-stroke: 1.75px;
@@ -22718,8 +22700,8 @@ body.is-tablet .workspace-drawer.mod-left .workspace-drawer-inner {
 
 body.is-tablet .sidebar-toggle-button {
   --icon-color: #ff8040;
-  --icon-color-active: color-mix(in hsl shorter hue, #ff8040 75%, transparent);
-  --icon-color-focus: color-mix(in hsl shorter hue, #ff8040 75%, transparent);
+  --icon-color-active: #ff8040bf;
+  --icon-color-focus: #ff8040bf;
   --icon-color-hover: #ff8040;
   --icon-size: 24px;
   --icon-stroke: 1.75px;
@@ -22806,7 +22788,7 @@ body.is-tablet .sidebar-toggle-button.mod-left {
 }
 
 .is-mobile button.mod-warning {
-  background-color: color-mix(in hsl shorter hue, #000000 75%, transparent);
+  background-color: #000000bf;
   color: #ef6b73;
   font-weight: 775;
 }
@@ -22998,8 +22980,8 @@ body.is-tablet .mobile-navbar {
 
 .mobile-navbar-actions {
   --icon-color: #ff8040;
-  --icon-color-active: color-mix(in hsl shorter hue, #ff8040 75%, transparent);
-  --icon-color-focus: color-mix(in hsl shorter hue, #ff8040 75%, transparent);
+  --icon-color-active: #ff8040bf;
+  --icon-color-focus: #ff8040bf;
   --icon-color-hover: #ff8040;
   --icon-size: 26px;
   --icon-stroke: 1.75px;
@@ -23294,8 +23276,8 @@ body.is-ios .mobile-tab-switcher-inner-scroll {
 
 .mobile-tab-switcher-menubar {
   --icon-color: #ff8040;
-  --icon-color-active: color-mix(in hsl shorter hue, #ff8040 75%, transparent);
-  --icon-color-focus: color-mix(in hsl shorter hue, #ff8040 75%, transparent);
+  --icon-color-active: #ff8040bf;
+  --icon-color-focus: #ff8040bf;
   --icon-color-hover: #ff8040;
   --icon-size: 26px;
   --icon-stroke: 1.75px;
@@ -23836,7 +23818,7 @@ body:is(.theme-dark) {
   --background-modifier-border-focus: #9c9c9c;
   --background-modifier-border-hover: #ff8040;
   --background-modifier-hover: #292929;
-  --background-modifier-message: color-mix(in hsl, #000000, #292929);
+  --background-modifier-message: #141414;
   --background-primary: #000000;
   --background-primary-alt: #292929;
   --background-secondary: #000000;
@@ -23846,17 +23828,17 @@ body:is(.theme-dark) {
   --checkbox-color: #aa1b86;
   --checkbox-color-hover: #9354ff;
   --color-base-00: #000000;
-  --color-base-05: color-mix(in hsl, #000000, #000000);
+  --color-base-05: #000000;
   --color-base-10: #000000;
   --color-base-100: #9c9c9c;
-  --color-base-20: color-mix(in hsl, #000000, #292929);
+  --color-base-20: #141414;
   --color-base-25: #292929;
-  --color-base-30: color-mix(in hsl, #292929, #9c9c9c);
+  --color-base-30: #636363;
   --color-base-35: #9c9c9c;
-  --color-base-40: color-mix(in hsl, #9c9c9c, #9c9c9c);
+  --color-base-40: #9c9c9c;
   --color-base-50: #9c9c9c;
   --color-base-60: #9c9c9c;
-  --color-base-70: color-mix(in hsl, #9c9c9c, #9c9c9c);
+  --color-base-70: #9c9c9c;
   --color-blue: #4dbced;
   --color-blue-rgb: 112, 153, 219;
   --color-cyan: #4dbced;
@@ -23874,14 +23856,10 @@ body:is(.theme-dark) {
   --color-yellow: #ffd580;
   --color-yellow-rgb: 255, 204, 102;
   --interactive-accent: #ff8040;
-  --interactive-accent-hover: color-mix(
-    in hsl shorter hue,
-    #ff8040 75%,
-    transparent
-  );
+  --interactive-accent-hover: #ff8040bf;
   --interactive-accent-hsl: 40, 100%, 70%;
   --interactive-hover: #000000;
-  --interactive-normal: color-mix(in hsl shorter hue, #000000 75%, transparent);
+  --interactive-normal: #000000bf;
   --text-accent: #ff8040;
   --text-accent-hover: #575757;
   --text-error: #ef6b73;
@@ -23950,7 +23928,7 @@ body:where(.theme-dark) {
   --h5-weight: 600;
   --h6-color: #ff000f;
   --h6-weight: 575;
-  --hr-color: color-mix(in hsl shorter hue, #2d449b, #2d449b);
+  --hr-color: #2d449b;
   --icon-color-active: #ffd580;
   --icon-color-focused: #ffd580;
   --icon-stroke: 2px;
@@ -23966,17 +23944,13 @@ body:where(.theme-dark) {
   --list-marker-color-collapsed: #ff000f;
   --list-marker-color-hover: #575757;
   --metadata-label-text-color: #4dbced;
-  --metadata-label-text-color-hover: color-mix(
-    in hsl shorter hue,
-    #4dbced,
-    #9c9c9c
-  );
+  --metadata-label-text-color-hover: #74acc5;
   --modal-border-color: #000000;
   --nav-item-background-selected: #292929;
   --nav-item-color: #9c9c9c;
   --nav-item-color-active: #ffd580;
   --nav-item-color-selected: #4dbced;
-  --prompt-border-color: color-mix(in hsl, #000000, #292929);
+  --prompt-border-color: #141414;
   --radius-l: 6px;
   --radius-m: 4px;
   --radius-s: 2px;
@@ -24141,15 +24115,15 @@ body:is(.theme-dark):not(.no-fix-text-input-selection)
 
 body:is(.theme-dark):not(.no-fix-text-input-selection)
   .metadata-input-longtext::selection {
-  background-color: color-mix(in hsl, #292929, #9c9c9c);
+  background-color: #636363;
 }
 
 body:is(.theme-dark):not(.no-fix-text-input-selection) input::selection {
-  background-color: color-mix(in hsl, #292929, #9c9c9c);
+  background-color: #636363;
 }
 
 body:is(.theme-dark):not(.no-fix-text-input-selection) textarea::selection {
-  background-color: color-mix(in hsl, #292929, #9c9c9c);
+  background-color: #636363;
 }
 
 body.theme-dark:not(.no-fix-toggle-readability) .checkbox-container {
@@ -24171,7 +24145,7 @@ body.theme-dark:not(.no-fix-underline-offset) {
 }
 
 .is-mobile.theme-dark:not(.no-fix-mobile-tag-background) {
-  --tag-background: color-mix(in hsl shorter hue, #ffffff 25%, transparent);
+  --tag-background: #ffffff40;
 }
 
 body:is(.theme-dark):not(.dont-make-blockquotes-small-caps)

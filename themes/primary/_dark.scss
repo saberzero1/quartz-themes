@@ -1,0 +1,1303 @@
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
+  color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
+  --amount-chbx-color: #348d64;
+  --amount-chbx-icon-color: #ffffff;
+  --amount-chbx-radius: 100%;
+
+  --background-modifier-box-shadow: #0000004d;
+  --background-modifier-cover: #0a0a0a66;
+
+  --bookmark-chbx-color: #e96d2b;
+
+  --button-accent-shadow:
+    inset 0px 1px 0px 0px #ffffff1a, inset 0px 0px 0px 1px #0000004d,
+    inset 0px -2px 0px 2px #00000042, inset 0px -2px 4px 0px #00000059,
+    0px 4px 4px -5.6px #0000005e, 0px 2px 4px -2.7px #00000045,
+    0px 2px 4px -1px #00000024;
+
+  --button-accent-shadow-focus:
+    inset 0px 1px 0px 0px #ffffff1f, inset 0px 0px 0px 1px #00000047,
+    inset 0px -2px 0px 2px #0000001c, inset 0px -2px 4px 0px #00000033,
+    0px 4px 4px -5.6px #00000085, 0px 2px 4px -2.7px #00000045,
+    0px 2px 6px -1px #0000003d, 0px 0px 0px 3px #7e694e33;
+  --button-accent-shadow-hover:
+    inset 0px 1px 0px 0px #ffffff26, inset 0px 0px 0px 1px #00000057,
+    inset 0px -2px 0px 2px #00000042, inset 0px -2px 4px 0px #00000059,
+    0px 4px 4px -5.6px #0000005e, 0px 2px 4px -2.7px #0000004d,
+    0px 2px 6px -1px #00000030;
+
+  --button-shadow-focus:
+    inset 0px 1px 0px 0px #ffffff0d, inset 0px 0px 0px 1px #0000004d,
+    inset 0px -2px 0px 2px #0000003d, inset 0px -2px 4px 0px #00000040,
+    0px 4px 4px -5.6px #0000008c, 0px 2px 4px -2.7px #0000004d,
+    0px 2px 6px -1px #00000040, 0px 0px 0px 3px #7e694e33;
+
+  --callout-border-opacity: 0.1;
+  --callout-color-opacity: 32.5%;
+  --callout-container-shadow:
+    inset 0px 0px 0px 1px #0000002e, 0px 2px 6px 0px #00000047;
+  --callout-content-background: color-mix(
+    in srgb,
+    #2a241e 50%,
+    var(--editor-bg-color)
+  );
+  --callout-content-shadow:
+    inset 0px 0px 0px 1px #0000002e, inset 0px -5px 3px 0px #0000004d;
+  --callout-icon-fold-filter: brightness(1);
+
+  --callout-title-shadow:
+    inset 0px -1px 1px 0px #00000040, inset 0px 1px 1px 0px #ffffff1a;
+  --cancelled-chbx-color: #9f9589;
+
+  --cancelled-chbx-text-decoration: line-through;
+
+  --canvas-menu-bg: #312a21;
+  --canvas-menu-bg-hover: #2e271f;
+  --canvas-menu-border: 1px solid transparent;
+  --canvas-menu-shadow:
+    0px 1px 2px 1px #00000024, 0px 1px 4px -2.1px #00000038,
+    0px 2px 8px -1.2px #00000026;
+
+  --checkbox-marker-color: #ffffff;
+  --checked-border-color: #ffffff26;
+  --checked-border-color-hover: #ffffff1a;
+
+  --checklist-shadow-hover: 0px 0px 0px 3px #0000004d;
+  --clock-chbx-color: #5585b4;
+
+  --color-blue-rgb: 99, 156, 192;
+
+  --color-cyan-rgb: 91, 175, 183;
+  --color-d-alpha-blue: #2ab1c033;
+  --color-d-alpha-gray: #7e694e33;
+  --color-d-alpha-green: #99be2333;
+  --color-d-alpha-orange: #ff730033;
+  --color-d-alpha-purple: #707aff33;
+  --color-d-alpha-red: #f0516c33;
+  --color-d-alpha-yellow: #ffbb0033;
+  --color-d-blue-10: #6abfd2;
+  --color-d-blue-20: #4db2d1;
+  --color-d-blue-30: #4197b9;
+  --color-d-blue-40: #387494;
+  --color-d-gray-10: #ebdac6;
+  --color-d-gray-100: #2e261f;
+  --color-d-gray-110: #2a241e;
+  --color-d-gray-120: #26211c;
+  --color-d-gray-130: #211b17;
+  --color-d-gray-140: #1c1712;
+  --color-d-gray-20: #d7c0a3;
+  --color-d-gray-30: #c7b194;
+  --color-d-gray-40: #ab916d;
+  --color-d-gray-50: #917959;
+  --color-d-gray-60: #6b563d;
+  --color-d-gray-70: #51402f;
+  --color-d-gray-80: #3b3026;
+  --color-d-gray-90: #342c23;
+  --color-d-green-10: #4ec68e;
+  --color-d-green-20: #2ea873;
+  --color-d-green-30: #108454;
+  --color-d-green-40: #117449;
+  --color-d-orange-10: #ef8839;
+  --color-d-orange-20: #eb6a14;
+  --color-d-orange-30: #da5e16;
+  --color-d-orange-40: #bd4914;
+  --color-d-purple-10: #8a87d9;
+  --color-d-purple-20: #6260c3;
+  --color-d-purple-30: #4a4cba;
+  --color-d-purple-40: #4145b4;
+  --color-d-red-10: #fb8479;
+  --color-d-red-20: #f7685e;
+  --color-d-red-30: #f35044;
+  --color-d-red-40: #e02f29;
+  --color-d-yellow-10: #e2bd60;
+  --color-d-yellow-20: #e5aa1f;
+  --color-d-yellow-30: #da9a1b;
+  --color-d-yellow-40: #bc811a;
+  --color-gray: #a6968d;
+  --color-gray-rgb: 166, 150, 142;
+
+  --color-green-rgb: 100, 194, 113;
+
+  --color-orange-rgb: 238, 163, 89;
+
+  --color-pink-rgb: 224, 108, 138;
+
+  --color-purple-rgb: 139, 113, 185;
+
+  --color-red-rgb: 228, 87, 78;
+
+  --color-yellow-rgb: 249, 207, 81;
+  --community-item-flair-shadow: inset 0px 0px 0px 1px #0000001a;
+  --community-item-selected-shadow:
+    inset 0px 0px 0px 1px #ffffff2e, 0px 1px 3px -2.6px #00000054,
+    0px 2px 6px -4.2px #0000004a, 0px 4px 12px -6px #000000e6;
+  --community-item-shadow: inset 0px 0px 0px 1px #ffffff08;
+  --community-item-shadow-hover: inset 0px 0px 0px 1px #ffffff1a;
+  --con-chbx-color: #c54a2b;
+  --copy-code-btn-shadow:
+    inset 0px 0px 0px 1px #00000063, 0px 2px 4px -2px #00000063;
+  --disabled-component-opacity: 0.3;
+
+  --down-chbx-color: #cb5148;
+
+  --embed-bg-color-mix: color-mix(in srgb, #2a241e 50%, var(--editor-bg-color));
+  --embed-block-shadow-hover: none;
+
+  --embed-edit-btn-bg: #211b17b3;
+  --embed-edit-btn-bg-hover: #211b17;
+  --embed-edit-btn-shadow:
+    inset 0px 0px 0px 1px #00000080, inset 0px -2px 1px 1px #00000080;
+  --embed-edit-btn-shadow-hover:
+    inset 0px 0px 0px 1px #00000080, inset 0px -2px 1px 1px #00000080,
+    0px 1px 2px 0px #00000080;
+
+  --empty-state-action-btn-bg: #2a241e;
+
+  --graph-node-unresolved-opacity: 1;
+
+  --gutter-color: #5b4934;
+
+  --h1-bg-color: transparent;
+
+  --h2-bg-color: transparent;
+
+  --h3-bg-color: transparent;
+
+  --h4-bg-color: transparent;
+
+  --h5-bg-color: transparent;
+
+  --h6-bg-color: transparent;
+
+  --highlight-mix-blend-mode: darken;
+  --icon-bg: transparent;
+
+  --icon-bg-active-menu: transparent;
+  --icon-bg-hover: transparent;
+  --icon-bg-pressed: transparent;
+
+  --icon-opacity: 1;
+  --icon-opacity-active: 1;
+  --icon-opacity-hover: 1;
+  --idea-chbx-color: #e49e58;
+  --important-chbx-color: #db4d14;
+  --important-chbx-icon-color: #ffffff;
+  --important-chbx-radius: 100%;
+
+  --info-chbx-color: #488987;
+  --info-chbx-icon-color: #ffffff;
+
+  --inline-query-bg: color-mix(in srgb, #26211c 25%, var(--background-primary));
+  --inline-query-shadow: 0px 1px 10px 0px #00000042;
+
+  --inprogress-chbx-border-color: #cdad87;
+  --inprogress-chbx-color: #ef993e;
+  --inprogress-chbx-color-hover: #fbab51;
+  --input-shadow:
+    inset 0px 1px 0px 0px #ffffff05, inset 0px 0px 0px 1px #00000040,
+    inset 0px -2px 0px 2px #00000033, inset 0px -2px 4px 0px #00000040,
+    0px 4px 4px -5.6px #0000008c, 0px 2px 4px -2.7px #00000040,
+    0px 2px 4px -1px #00000033;
+  --input-shadow-active:
+    inset 0px 0px 0px 1px #00000073, inset 0px 0px 0px 3px #00000026,
+    inset 0px 2px 8px 0px #00000091, 0px 0px 0px 1px #ffffff05;
+  --input-shadow-hover:
+    inset 0px 1px 0px 0px #ffffff0f, inset 0px 0px 0px 1px #0000004d,
+    inset 0px -2px 0px 2px #00000033, inset 0px -2px 4px 0px #00000040,
+    0px 4px 4px -5.6px #0000008c, 0px 2px 4px -2.7px #0000004d,
+    0px 2px 6px -1px #00000040;
+
+  --interactive-hover: #2a241d;
+
+  --kanban-drag-item-border: none;
+  --kanban-drag-item-shadow:
+    0px 8.3px 22.8px -9px #0000007d, 0px 6.2px 10.1px -4.2px #00000085,
+    0px 2.1px 6.8px -3.2px #00000096;
+
+  --kanban-item-border: none;
+  --kanban-item-shadow:
+    inset 0px 0px 0px 1px #00000066, inset 0px 1px 0px 0px #ffffff30,
+    inset 0px -1px 0px 1px #0000000f, 0px 2px 2px 0px #00000021;
+  --kanban-lane-bg: #28221d;
+  --kanban-lane-border: 1px solid #302920;
+  --kanban-lane-shadow: none;
+  --kanban-new-item-bg: transparent;
+
+  --kanban-new-item-shadow: none;
+  --kanban-new-item-shadow-hover:
+    inset 0px 0px 0px 1px #00000038, 0px 2px 4px 0px #00000024;
+
+  --kbd-shadow:
+    inset 0px 0px 0px 1px #0000002b, inset 0px -2px 0px 0px #00000033;
+  --language-chbx-color: #db6f61;
+  --law-chbx-color: #ae8a5b;
+
+  --link-ahref-decoration-color: color-mix(
+    in srgb,
+    currentColor 22%,
+    transparent
+  );
+  --link-ahref-decoration-color-hover: #fb847938;
+
+  --link-decoration-color: #da5e1638;
+  --link-decoration-color-hover: #e2bd6038;
+
+  --link-external-decoration-color: #2ea87338;
+  --link-external-decoration-color-hover: #4ec68e38;
+
+  --link-unresolved-decoration-color-hover: #ab916d38;
+
+  --loading-line-shadow: inset 0px 0px 0px 1px #ffffff1a;
+  --location-chbox-color: #bf3636;
+
+  --menu-item-bg-hover: #00000040;
+
+  --metadata-background: color-mix(
+    in srgb,
+    var(--editor-bg-color) 50%,
+    #2a241e
+  );
+
+  --metadata-divider-color-focus: transparent;
+  --metadata-divider-color-hover: transparent;
+  --metadata-input-background: transparent;
+  --metadata-input-background-active: #00000033;
+  --metadata-input-background-hover: transparent;
+  --metadata-input-shadow-active:
+    inset 0px 0px 0px 1px transparent, 0px 0px 0px 1px transparent;
+  --metadata-input-shadow-hover: none;
+
+  --modal-background: var(--background-primary);
+
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+
+  --nav-file-shadow-active:
+    inset 0px 0px 0px 1px #00000045, inset 0px -2px 0px 2px #0000003d,
+    0px 2px 3px 0px #00000038;
+  --nav-file-tag-bg: transparent;
+
+  --nav-folder-1-bg-color: #f0516c1f;
+  --nav-folder-1-bg-color-hover: color-mix(
+    in srgb,
+    var(--nav-folder-1-bg-color) 70%,
+    transparent
+  );
+  --nav-folder-1-collapse-color: color-mix(
+    in srgb,
+    var(--nav-folder-1-color) 50%,
+    transparent
+  );
+
+  --nav-folder-1-indent-color: color-mix(
+    in srgb,
+    var(--nav-folder-1-color) 25%,
+    transparent
+  );
+  --nav-folder-10-bg-color: #99be231f;
+  --nav-folder-10-bg-color-hover: color-mix(
+    in srgb,
+    var(--nav-folder-10-bg-color) 70%,
+    transparent
+  );
+  --nav-folder-10-collapse-color: color-mix(
+    in srgb,
+    var(--nav-folder-10-color) 50%,
+    transparent
+  );
+
+  --nav-folder-10-indent-color: color-mix(
+    in srgb,
+    var(--nav-folder-10-color) 25%,
+    transparent
+  );
+  --nav-folder-11-bg-color: #2ab1c01f;
+  --nav-folder-11-bg-color-hover: color-mix(
+    in srgb,
+    var(--nav-folder-11-bg-color) 70%,
+    transparent
+  );
+  --nav-folder-11-collapse-color: color-mix(
+    in srgb,
+    var(--nav-folder-11-color) 50%,
+    transparent
+  );
+
+  --nav-folder-11-indent-color: color-mix(
+    in srgb,
+    var(--nav-folder-11-color) 25%,
+    transparent
+  );
+  --nav-folder-12-bg-color: #707aff1f;
+  --nav-folder-12-bg-color-hover: color-mix(
+    in srgb,
+    var(--nav-folder-12-bg-color) 70%,
+    transparent
+  );
+  --nav-folder-12-collapse-color: color-mix(
+    in srgb,
+    var(--nav-folder-12-color) 50%,
+    transparent
+  );
+
+  --nav-folder-12-indent-color: color-mix(
+    in srgb,
+    var(--nav-folder-12-color) 25%,
+    transparent
+  );
+  --nav-folder-2-bg-color: #ff73001f;
+  --nav-folder-2-bg-color-hover: color-mix(
+    in srgb,
+    var(--nav-folder-2-bg-color) 70%,
+    transparent
+  );
+  --nav-folder-2-collapse-color: color-mix(
+    in srgb,
+    var(--nav-folder-2-color) 50%,
+    transparent
+  );
+
+  --nav-folder-2-indent-color: color-mix(
+    in srgb,
+    var(--nav-folder-2-color) 25%,
+    transparent
+  );
+  --nav-folder-3-bg-color: #ffbb001f;
+  --nav-folder-3-bg-color-hover: color-mix(
+    in srgb,
+    var(--nav-folder-3-bg-color) 70%,
+    transparent
+  );
+  --nav-folder-3-collapse-color: color-mix(
+    in srgb,
+    var(--nav-folder-3-color) 50%,
+    transparent
+  );
+
+  --nav-folder-3-indent-color: color-mix(
+    in srgb,
+    var(--nav-folder-3-color) 25%,
+    transparent
+  );
+  --nav-folder-4-bg-color: #99be231f;
+  --nav-folder-4-bg-color-hover: color-mix(
+    in srgb,
+    var(--nav-folder-4-bg-color) 70%,
+    transparent
+  );
+  --nav-folder-4-collapse-color: color-mix(
+    in srgb,
+    var(--nav-folder-4-color) 50%,
+    transparent
+  );
+
+  --nav-folder-4-indent-color: color-mix(
+    in srgb,
+    var(--nav-folder-4-color) 25%,
+    transparent
+  );
+  --nav-folder-5-bg-color: #2ab1c01f;
+  --nav-folder-5-bg-color-hover: color-mix(
+    in srgb,
+    var(--nav-folder-5-bg-color) 70%,
+    transparent
+  );
+  --nav-folder-5-collapse-color: color-mix(
+    in srgb,
+    var(--nav-folder-5-color) 50%,
+    transparent
+  );
+
+  --nav-folder-5-indent-color: color-mix(
+    in srgb,
+    var(--nav-folder-5-color) 25%,
+    transparent
+  );
+  --nav-folder-6-bg-color: #707aff1f;
+  --nav-folder-6-bg-color-hover: color-mix(
+    in srgb,
+    var(--nav-folder-6-bg-color) 70%,
+    transparent
+  );
+  --nav-folder-6-collapse-color: color-mix(
+    in srgb,
+    var(--nav-folder-6-color) 50%,
+    transparent
+  );
+
+  --nav-folder-6-indent-color: color-mix(
+    in srgb,
+    var(--nav-folder-6-color) 25%,
+    transparent
+  );
+  --nav-folder-7-bg-color: #f0516c1f;
+  --nav-folder-7-bg-color-hover: color-mix(
+    in srgb,
+    var(--nav-folder-7-bg-color) 70%,
+    transparent
+  );
+  --nav-folder-7-collapse-color: color-mix(
+    in srgb,
+    var(--nav-folder-7-color) 50%,
+    transparent
+  );
+
+  --nav-folder-7-indent-color: color-mix(
+    in srgb,
+    var(--nav-folder-7-color) 25%,
+    transparent
+  );
+  --nav-folder-8-bg-color: #ff73001f;
+  --nav-folder-8-bg-color-hover: color-mix(
+    in srgb,
+    var(--nav-folder-8-bg-color) 70%,
+    transparent
+  );
+  --nav-folder-8-collapse-color: color-mix(
+    in srgb,
+    var(--nav-folder-8-color) 50%,
+    transparent
+  );
+
+  --nav-folder-8-indent-color: color-mix(
+    in srgb,
+    var(--nav-folder-8-color) 25%,
+    transparent
+  );
+  --nav-folder-9-bg-color: #ffbb001f;
+  --nav-folder-9-bg-color-hover: color-mix(
+    in srgb,
+    var(--nav-folder-9-bg-color) 70%,
+    transparent
+  );
+  --nav-folder-9-collapse-color: color-mix(
+    in srgb,
+    var(--nav-folder-9-color) 50%,
+    transparent
+  );
+
+  --nav-folder-9-indent-color: color-mix(
+    in srgb,
+    var(--nav-folder-9-color) 25%,
+    transparent
+  );
+
+  --nav-item-background-active: #00000020;
+  --nav-item-background-hover: #00000020;
+  --nav-item-background-selected: #29586b80;
+  --nav-item-background-selected-hover: #29586b66;
+
+  --nav-item-shadow-active: inset 0px 0px 0px 1px #0000003b;
+
+  --note-chbx-color: #c45a4a;
+
+  --notice-shadow:
+    inset 0px 0px 0px 1px #ffffff17, 0px 2px 9px -2.1px #00000066,
+    0px 3px 17px -4.3px #0000004d, 0px 7px 30px -5.5px #00000033;
+  --pcr-btn-shadow: inset 0px 0px 0px 1.5px #ffffff33;
+  --pdf-shadow: 0 0 0 1px transparent;
+  --pdf-thumbnail-shadow: 0 0 0 1px transparent;
+  --pill-background: #00000033;
+
+  --pill-border-color: #00000000;
+  --pill-border-color-hover: #44362980;
+
+  --pill-tag-shadow-hover: inset 0px 0px 0px 1px #ffffff0d;
+  --pro-chbx-color: #4da376;
+
+  --progress-bar-outline: #ffffff1a;
+
+  --progress-color-5: linear-gradient(45deg, #f35044, #e5aa1f, #4db2d1);
+
+  --progress-value-outline: #ffffff36;
+  --prompt-border-color: #443629;
+
+  --prompt-instructions-background: color-mix(
+    in hsl,
+    var(--editor-bg-color) 60%,
+    #26211c
+  );
+
+  --prompt-separator-border: 1px solid #342c23;
+  --prompt-suggestion-background-selected: #0000001a;
+
+  --prompt-suggestion-highlight-color: #c4b299;
+
+  --prompt-suggestion-shadow-selected:
+    inset 0px 0px 0px 1px #00000024, 0px 2px 6px 0px #0000001f;
+  --question-chbx-color: #9a5eb5;
+  --question-chbx-icon-color: #ffffff;
+  --quote-chbx-color: #4182b4;
+  --quote-chbx-icon-color: #ffffff;
+  --resched-chbx-color: #76a2a1;
+
+  --ribbon-slideout-shadow:
+    8px 7px 21px -4px #00000059, 0px 5px 5px -5px #00000061;
+  --sched-chbx-color: #9f9589;
+
+  --scrollbar-bg: transparent;
+
+  --search-result-background-hover: #1e1915;
+
+  --search-result-dest-file-bg-hover: #1c1712;
+
+  --search-result-dest-file-shadow:
+    inset 0px 0px 0px 1px #0000004d, inset 0px -2px 0px 0px #00000040;
+  --search-result-dest-file-shadow-hover:
+    inset 0px 0px 0px 1px #0000004d, inset 0px -2px 0px 0px #00000040,
+    0px 2px 3px 0px #0000004a;
+
+  --settings-nav-item-bg-active: #211b17;
+  --settings-nav-item-bg-hover: transparent;
+
+  --shadow-l:
+    0px 1.8px 7.3px #00000045, 0px 6.3px 24.7px #00000050,
+    0px 30px 90px #00000066;
+  --shadow-s:
+    0px 1px 2px #0000003a, 0px 3.4px 6.7px #0000003e, 0px 15px 30px #00000045;
+
+  --slider-thumb-border-width: 0px;
+  --slider-thumb-shadow:
+    inset 0px 0px 0px 1px #00000059, inset 0pc 1px 0px 1px #ffffff4d,
+    inset 0px -1px 0px 1px #0000004a, 0px 1px 2px 0px #00000080;
+  --slider-thumb-shadow-hover:
+    inset 0px 0px 0px 1px #00000059, inset 0pc 1px 0px 1px #ffffff4d,
+    inset 0px -1px 0px 1px #0000004a, 0px 1px 2px 0px #00000080,
+    0px 0px 0px 6px #ffffff14;
+
+  --slider-track-shadow:
+    inset 0px 0px 0px 1px #00000033, 0px 0px 0px 1px #ffffff0a;
+  --star-chbx-color: #e59a06;
+  --star-chbx-icon-color: #ffffff;
+
+  --status-bar-floating-shadow:
+    8px 7px 21px -4px #00000059, 0px 5px 5px -5px #00000061;
+  --status-bar-item-bg-hover: transparent;
+  --status-bar-item-clickable-bg-active: transparent;
+
+  --style-settings-container-bg: #2a241e80;
+  --swatch-shadow: inset 0px 0px 0px 1px #0000004d;
+
+  --tab-active-shadow:
+    inset 0px 1px 0px 0px #ffffff1a, inset 0px -2px 0px 1px #00000040,
+    0px 1px 2px -0.1px #00000078;
+
+  --tab-bg: transparent;
+
+  --tab-outline-color: transparent;
+  --tab-stacked-shadow:
+    -2.9px 0 10.5px -6.2px #0000004f, -6.2px 0 3.6px -5.2px #00000045,
+    -9.4px 0 8.4px -4.1px #00000033;
+
+  --tag-background: #0000004d;
+  --tag-background-hover: #00000033;
+  --tag-border-color: #00000040;
+  --tag-border-color-hover: #00000059;
+  --tag-border-width: 1px;
+
+  --tag-shadow: inset 0px -0.1em 0px 0px #00000033;
+  --tag-shadow-active: inset 0px -0.1em 0px 0px #00000033;
+  --tag-shadow-hover:
+    inset 0px -0.1em 0px 0px #00000033, 0px 0px 0px 3px #00000026;
+  --telephone-chbx-color: #389f68;
+
+  --text-input-bg-active: #1c1712;
+
+  --text-input-shadow-active:
+    inset 0px 1px 0px 0px #ffffff08, inset 0px -1px 0px 0px #00000063,
+    0px 1px 6px 0px #0000005e;
+
+  --text-selection-theme-bg: #9179594d;
+  --text-selection-theme-text-color: color-mix(
+    in srgb,
+    currentColor 70%,
+    #ffffff
+  );
+
+  --toggle-bg: #5e4b36;
+
+  --toggle-shadow:
+    inset 0 4px 10px #00000030, inset 0px 0px 0px 1px #ffffff17,
+    inset 0 0 1px #00000066;
+  --toggle-shadow-focus:
+    inset 0 6px 20px #00000047, inset 0px 0px 0px 1px #ffffff17,
+    inset 0 0 1px #00000070, 0px 0px 0px 5px #ffffff14;
+  --toggle-shadow-hover:
+    inset 0 6px 20px #00000047, inset 0px 0px 0px 1px #ffffff17,
+    inset 0 0 1px #00000070;
+
+  --toggle-thumb-shadow:
+    inset 0px 1px 0px 1px #ffffff80, inset 0px 0px 0px 1px #00000040,
+    0 2px 2px #00000059;
+  --tooltip-shadow:
+    inset 0px -1px 0px 0px #0000004d, 0px 2px 4px -1.4px #0000004d,
+    0px 3px 10px -1.7px #00000024;
+
+  --underline-decoration-color: color-mix(
+    in srgb,
+    currentColor 22%,
+    transparent
+  );
+  --up-chbx-color: #53b27c;
+
+  --vault-name-border: 1px solid transparent;
+
+  --amount-chbx-color: #348d64;
+  --amount-chbx-icon-color: #ffffff;
+  --amount-chbx-radius: 100%;
+
+  --background-modifier-box-shadow: #0000004d;
+  --background-modifier-cover: #0a0a0a66;
+
+  --bookmark-chbx-color: #e96d2b;
+
+  --button-accent-shadow:
+    inset 0px 1px 0px 0px #ffffff1a, inset 0px 0px 0px 1px #0000004d,
+    inset 0px -2px 0px 2px #00000042, inset 0px -2px 4px 0px #00000059,
+    0px 4px 4px -5.6px #0000005e, 0px 2px 4px -2.7px #00000045,
+    0px 2px 4px -1px #00000024;
+
+  --button-accent-shadow-focus:
+    inset 0px 1px 0px 0px #ffffff1f, inset 0px 0px 0px 1px #00000047,
+    inset 0px -2px 0px 2px #0000001c, inset 0px -2px 4px 0px #00000033,
+    0px 4px 4px -5.6px #00000085, 0px 2px 4px -2.7px #00000045,
+    0px 2px 6px -1px #0000003d, 0px 0px 0px 3px #7e694e33;
+  --button-accent-shadow-hover:
+    inset 0px 1px 0px 0px #ffffff26, inset 0px 0px 0px 1px #00000057,
+    inset 0px -2px 0px 2px #00000042, inset 0px -2px 4px 0px #00000059,
+    0px 4px 4px -5.6px #0000005e, 0px 2px 4px -2.7px #0000004d,
+    0px 2px 6px -1px #00000030;
+
+  --button-shadow-focus:
+    inset 0px 1px 0px 0px #ffffff0d, inset 0px 0px 0px 1px #0000004d,
+    inset 0px -2px 0px 2px #0000003d, inset 0px -2px 4px 0px #00000040,
+    0px 4px 4px -5.6px #0000008c, 0px 2px 4px -2.7px #0000004d,
+    0px 2px 6px -1px #00000040, 0px 0px 0px 3px #7e694e33;
+
+  --callout-border-opacity: 0.1;
+  --callout-color-opacity: 32.5%;
+  --callout-container-shadow:
+    inset 0px 0px 0px 1px #0000002e, 0px 2px 6px 0px #00000047;
+  --callout-content-background: color-mix(
+    in srgb,
+    #2a241e 50%,
+    var(--editor-bg-color)
+  );
+  --callout-content-shadow:
+    inset 0px 0px 0px 1px #0000002e, inset 0px -5px 3px 0px #0000004d;
+  --callout-icon-fold-filter: brightness(1);
+
+  --callout-title-shadow:
+    inset 0px -1px 1px 0px #00000040, inset 0px 1px 1px 0px #ffffff1a;
+  --cancelled-chbx-color: #9f9589;
+
+  --cancelled-chbx-text-decoration: line-through;
+
+  --canvas-menu-bg: #312a21;
+  --canvas-menu-bg-hover: #2e271f;
+  --canvas-menu-border: 1px solid transparent;
+  --canvas-menu-shadow:
+    0px 1px 2px 1px #00000024, 0px 1px 4px -2.1px #00000038,
+    0px 2px 8px -1.2px #00000026;
+
+  --checkbox-marker-color: #ffffff;
+  --checked-border-color: #ffffff26;
+  --checked-border-color-hover: #ffffff1a;
+
+  --checklist-shadow-hover: 0px 0px 0px 3px #0000004d;
+  --clock-chbx-color: #5585b4;
+
+  --color-blue-rgb: 99, 156, 192;
+
+  --color-cyan-rgb: 91, 175, 183;
+  --color-d-alpha-blue: #2ab1c033;
+  --color-d-alpha-gray: #7e694e33;
+  --color-d-alpha-green: #99be2333;
+  --color-d-alpha-orange: #ff730033;
+  --color-d-alpha-purple: #707aff33;
+  --color-d-alpha-red: #f0516c33;
+  --color-d-alpha-yellow: #ffbb0033;
+  --color-d-blue-10: #6abfd2;
+  --color-d-blue-20: #4db2d1;
+  --color-d-blue-30: #4197b9;
+  --color-d-blue-40: #387494;
+  --color-d-gray-10: #ebdac6;
+  --color-d-gray-100: #2e261f;
+  --color-d-gray-110: #2a241e;
+  --color-d-gray-120: #26211c;
+  --color-d-gray-130: #211b17;
+  --color-d-gray-140: #1c1712;
+  --color-d-gray-20: #d7c0a3;
+  --color-d-gray-30: #c7b194;
+  --color-d-gray-40: #ab916d;
+  --color-d-gray-50: #917959;
+  --color-d-gray-60: #6b563d;
+  --color-d-gray-70: #51402f;
+  --color-d-gray-80: #3b3026;
+  --color-d-gray-90: #342c23;
+  --color-d-green-10: #4ec68e;
+  --color-d-green-20: #2ea873;
+  --color-d-green-30: #108454;
+  --color-d-green-40: #117449;
+  --color-d-orange-10: #ef8839;
+  --color-d-orange-20: #eb6a14;
+  --color-d-orange-30: #da5e16;
+  --color-d-orange-40: #bd4914;
+  --color-d-purple-10: #8a87d9;
+  --color-d-purple-20: #6260c3;
+  --color-d-purple-30: #4a4cba;
+  --color-d-purple-40: #4145b4;
+  --color-d-red-10: #fb8479;
+  --color-d-red-20: #f7685e;
+  --color-d-red-30: #f35044;
+  --color-d-red-40: #e02f29;
+  --color-d-yellow-10: #e2bd60;
+  --color-d-yellow-20: #e5aa1f;
+  --color-d-yellow-30: #da9a1b;
+  --color-d-yellow-40: #bc811a;
+  --color-gray: #a6968d;
+  --color-gray-rgb: 166, 150, 142;
+
+  --color-green-rgb: 100, 194, 113;
+
+  --color-orange-rgb: 238, 163, 89;
+
+  --color-pink-rgb: 224, 108, 138;
+
+  --color-purple-rgb: 139, 113, 185;
+
+  --color-red-rgb: 228, 87, 78;
+
+  --color-yellow-rgb: 249, 207, 81;
+  --community-item-flair-shadow: inset 0px 0px 0px 1px #0000001a;
+  --community-item-selected-shadow:
+    inset 0px 0px 0px 1px #ffffff2e, 0px 1px 3px -2.6px #00000054,
+    0px 2px 6px -4.2px #0000004a, 0px 4px 12px -6px #000000e6;
+  --community-item-shadow: inset 0px 0px 0px 1px #ffffff08;
+  --community-item-shadow-hover: inset 0px 0px 0px 1px #ffffff1a;
+  --con-chbx-color: #c54a2b;
+  --copy-code-btn-shadow:
+    inset 0px 0px 0px 1px #00000063, 0px 2px 4px -2px #00000063;
+  --disabled-component-opacity: 0.3;
+
+  --down-chbx-color: #cb5148;
+
+  --embed-bg-color-mix: color-mix(in srgb, #2a241e 50%, var(--editor-bg-color));
+  --embed-block-shadow-hover: none;
+
+  --embed-edit-btn-bg: #211b17b3;
+  --embed-edit-btn-bg-hover: #211b17;
+  --embed-edit-btn-shadow:
+    inset 0px 0px 0px 1px #00000080, inset 0px -2px 1px 1px #00000080;
+  --embed-edit-btn-shadow-hover:
+    inset 0px 0px 0px 1px #00000080, inset 0px -2px 1px 1px #00000080,
+    0px 1px 2px 0px #00000080;
+
+  --empty-state-action-btn-bg: #2a241e;
+
+  --graph-node-unresolved-opacity: 1;
+
+  --gutter-color: #5b4934;
+
+  --h1-bg-color: transparent;
+
+  --h2-bg-color: transparent;
+
+  --h3-bg-color: transparent;
+
+  --h4-bg-color: transparent;
+
+  --h5-bg-color: transparent;
+
+  --h6-bg-color: transparent;
+
+  --highlight-mix-blend-mode: darken;
+  --icon-bg: transparent;
+
+  --icon-bg-active-menu: transparent;
+  --icon-bg-hover: transparent;
+  --icon-bg-pressed: transparent;
+
+  --icon-opacity: 1;
+  --icon-opacity-active: 1;
+  --icon-opacity-hover: 1;
+  --idea-chbx-color: #e49e58;
+  --important-chbx-color: #db4d14;
+  --important-chbx-icon-color: #ffffff;
+  --important-chbx-radius: 100%;
+
+  --info-chbx-color: #488987;
+  --info-chbx-icon-color: #ffffff;
+
+  --inline-query-bg: color-mix(in srgb, #26211c 25%, var(--background-primary));
+  --inline-query-shadow: 0px 1px 10px 0px #00000042;
+
+  --inprogress-chbx-border-color: #cdad87;
+  --inprogress-chbx-color: #ef993e;
+  --inprogress-chbx-color-hover: #fbab51;
+  --input-shadow:
+    inset 0px 1px 0px 0px #ffffff05, inset 0px 0px 0px 1px #00000040,
+    inset 0px -2px 0px 2px #00000033, inset 0px -2px 4px 0px #00000040,
+    0px 4px 4px -5.6px #0000008c, 0px 2px 4px -2.7px #00000040,
+    0px 2px 4px -1px #00000033;
+  --input-shadow-active:
+    inset 0px 0px 0px 1px #00000073, inset 0px 0px 0px 3px #00000026,
+    inset 0px 2px 8px 0px #00000091, 0px 0px 0px 1px #ffffff05;
+  --input-shadow-hover:
+    inset 0px 1px 0px 0px #ffffff0f, inset 0px 0px 0px 1px #0000004d,
+    inset 0px -2px 0px 2px #00000033, inset 0px -2px 4px 0px #00000040,
+    0px 4px 4px -5.6px #0000008c, 0px 2px 4px -2.7px #0000004d,
+    0px 2px 6px -1px #00000040;
+
+  --interactive-hover: #2a241d;
+
+  --kanban-drag-item-border: none;
+  --kanban-drag-item-shadow:
+    0px 8.3px 22.8px -9px #0000007d, 0px 6.2px 10.1px -4.2px #00000085,
+    0px 2.1px 6.8px -3.2px #00000096;
+
+  --kanban-item-border: none;
+  --kanban-item-shadow:
+    inset 0px 0px 0px 1px #00000066, inset 0px 1px 0px 0px #ffffff30,
+    inset 0px -1px 0px 1px #0000000f, 0px 2px 2px 0px #00000021;
+  --kanban-lane-bg: #28221d;
+  --kanban-lane-border: 1px solid #302920;
+  --kanban-lane-shadow: none;
+  --kanban-new-item-bg: transparent;
+
+  --kanban-new-item-shadow: none;
+  --kanban-new-item-shadow-hover:
+    inset 0px 0px 0px 1px #00000038, 0px 2px 4px 0px #00000024;
+
+  --kbd-shadow:
+    inset 0px 0px 0px 1px #0000002b, inset 0px -2px 0px 0px #00000033;
+  --language-chbx-color: #db6f61;
+  --law-chbx-color: #ae8a5b;
+
+  --link-ahref-decoration-color: color-mix(
+    in srgb,
+    currentColor 22%,
+    transparent
+  );
+  --link-ahref-decoration-color-hover: #fb847938;
+
+  --link-decoration-color: #da5e1638;
+  --link-decoration-color-hover: #e2bd6038;
+
+  --link-external-decoration-color: #2ea87338;
+  --link-external-decoration-color-hover: #4ec68e38;
+
+  --link-unresolved-decoration-color-hover: #ab916d38;
+
+  --loading-line-shadow: inset 0px 0px 0px 1px #ffffff1a;
+  --location-chbox-color: #bf3636;
+
+  --menu-item-bg-hover: #00000040;
+
+  --metadata-background: color-mix(
+    in srgb,
+    var(--editor-bg-color) 50%,
+    #2a241e
+  );
+
+  --metadata-divider-color-focus: transparent;
+  --metadata-divider-color-hover: transparent;
+  --metadata-input-background: transparent;
+  --metadata-input-background-active: #00000033;
+  --metadata-input-background-hover: transparent;
+  --metadata-input-shadow-active:
+    inset 0px 0px 0px 1px transparent, 0px 0px 0px 1px transparent;
+  --metadata-input-shadow-hover: none;
+
+  --modal-background: var(--background-primary);
+
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+
+  --nav-file-shadow-active:
+    inset 0px 0px 0px 1px #00000045, inset 0px -2px 0px 2px #0000003d,
+    0px 2px 3px 0px #00000038;
+  --nav-file-tag-bg: transparent;
+
+  --nav-folder-1-bg-color: #f0516c1f;
+  --nav-folder-1-bg-color-hover: color-mix(
+    in srgb,
+    var(--nav-folder-1-bg-color) 70%,
+    transparent
+  );
+  --nav-folder-1-collapse-color: color-mix(
+    in srgb,
+    var(--nav-folder-1-color) 50%,
+    transparent
+  );
+
+  --nav-folder-1-indent-color: color-mix(
+    in srgb,
+    var(--nav-folder-1-color) 25%,
+    transparent
+  );
+  --nav-folder-10-bg-color: #99be231f;
+  --nav-folder-10-bg-color-hover: color-mix(
+    in srgb,
+    var(--nav-folder-10-bg-color) 70%,
+    transparent
+  );
+  --nav-folder-10-collapse-color: color-mix(
+    in srgb,
+    var(--nav-folder-10-color) 50%,
+    transparent
+  );
+
+  --nav-folder-10-indent-color: color-mix(
+    in srgb,
+    var(--nav-folder-10-color) 25%,
+    transparent
+  );
+  --nav-folder-11-bg-color: #2ab1c01f;
+  --nav-folder-11-bg-color-hover: color-mix(
+    in srgb,
+    var(--nav-folder-11-bg-color) 70%,
+    transparent
+  );
+  --nav-folder-11-collapse-color: color-mix(
+    in srgb,
+    var(--nav-folder-11-color) 50%,
+    transparent
+  );
+
+  --nav-folder-11-indent-color: color-mix(
+    in srgb,
+    var(--nav-folder-11-color) 25%,
+    transparent
+  );
+  --nav-folder-12-bg-color: #707aff1f;
+  --nav-folder-12-bg-color-hover: color-mix(
+    in srgb,
+    var(--nav-folder-12-bg-color) 70%,
+    transparent
+  );
+  --nav-folder-12-collapse-color: color-mix(
+    in srgb,
+    var(--nav-folder-12-color) 50%,
+    transparent
+  );
+
+  --nav-folder-12-indent-color: color-mix(
+    in srgb,
+    var(--nav-folder-12-color) 25%,
+    transparent
+  );
+  --nav-folder-2-bg-color: #ff73001f;
+  --nav-folder-2-bg-color-hover: color-mix(
+    in srgb,
+    var(--nav-folder-2-bg-color) 70%,
+    transparent
+  );
+  --nav-folder-2-collapse-color: color-mix(
+    in srgb,
+    var(--nav-folder-2-color) 50%,
+    transparent
+  );
+
+  --nav-folder-2-indent-color: color-mix(
+    in srgb,
+    var(--nav-folder-2-color) 25%,
+    transparent
+  );
+  --nav-folder-3-bg-color: #ffbb001f;
+  --nav-folder-3-bg-color-hover: color-mix(
+    in srgb,
+    var(--nav-folder-3-bg-color) 70%,
+    transparent
+  );
+  --nav-folder-3-collapse-color: color-mix(
+    in srgb,
+    var(--nav-folder-3-color) 50%,
+    transparent
+  );
+
+  --nav-folder-3-indent-color: color-mix(
+    in srgb,
+    var(--nav-folder-3-color) 25%,
+    transparent
+  );
+  --nav-folder-4-bg-color: #99be231f;
+  --nav-folder-4-bg-color-hover: color-mix(
+    in srgb,
+    var(--nav-folder-4-bg-color) 70%,
+    transparent
+  );
+  --nav-folder-4-collapse-color: color-mix(
+    in srgb,
+    var(--nav-folder-4-color) 50%,
+    transparent
+  );
+
+  --nav-folder-4-indent-color: color-mix(
+    in srgb,
+    var(--nav-folder-4-color) 25%,
+    transparent
+  );
+  --nav-folder-5-bg-color: #2ab1c01f;
+  --nav-folder-5-bg-color-hover: color-mix(
+    in srgb,
+    var(--nav-folder-5-bg-color) 70%,
+    transparent
+  );
+  --nav-folder-5-collapse-color: color-mix(
+    in srgb,
+    var(--nav-folder-5-color) 50%,
+    transparent
+  );
+
+  --nav-folder-5-indent-color: color-mix(
+    in srgb,
+    var(--nav-folder-5-color) 25%,
+    transparent
+  );
+  --nav-folder-6-bg-color: #707aff1f;
+  --nav-folder-6-bg-color-hover: color-mix(
+    in srgb,
+    var(--nav-folder-6-bg-color) 70%,
+    transparent
+  );
+  --nav-folder-6-collapse-color: color-mix(
+    in srgb,
+    var(--nav-folder-6-color) 50%,
+    transparent
+  );
+
+  --nav-folder-6-indent-color: color-mix(
+    in srgb,
+    var(--nav-folder-6-color) 25%,
+    transparent
+  );
+  --nav-folder-7-bg-color: #f0516c1f;
+  --nav-folder-7-bg-color-hover: color-mix(
+    in srgb,
+    var(--nav-folder-7-bg-color) 70%,
+    transparent
+  );
+  --nav-folder-7-collapse-color: color-mix(
+    in srgb,
+    var(--nav-folder-7-color) 50%,
+    transparent
+  );
+
+  --nav-folder-7-indent-color: color-mix(
+    in srgb,
+    var(--nav-folder-7-color) 25%,
+    transparent
+  );
+  --nav-folder-8-bg-color: #ff73001f;
+  --nav-folder-8-bg-color-hover: color-mix(
+    in srgb,
+    var(--nav-folder-8-bg-color) 70%,
+    transparent
+  );
+  --nav-folder-8-collapse-color: color-mix(
+    in srgb,
+    var(--nav-folder-8-color) 50%,
+    transparent
+  );
+
+  --nav-folder-8-indent-color: color-mix(
+    in srgb,
+    var(--nav-folder-8-color) 25%,
+    transparent
+  );
+  --nav-folder-9-bg-color: #ffbb001f;
+  --nav-folder-9-bg-color-hover: color-mix(
+    in srgb,
+    var(--nav-folder-9-bg-color) 70%,
+    transparent
+  );
+  --nav-folder-9-collapse-color: color-mix(
+    in srgb,
+    var(--nav-folder-9-color) 50%,
+    transparent
+  );
+
+  --nav-folder-9-indent-color: color-mix(
+    in srgb,
+    var(--nav-folder-9-color) 25%,
+    transparent
+  );
+
+  --nav-item-background-active: #00000020;
+  --nav-item-background-hover: #00000020;
+  --nav-item-background-selected: #29586b80;
+  --nav-item-background-selected-hover: #29586b66;
+
+  --nav-item-shadow-active: inset 0px 0px 0px 1px #0000003b;
+
+  --note-chbx-color: #c45a4a;
+
+  --notice-shadow:
+    inset 0px 0px 0px 1px #ffffff17, 0px 2px 9px -2.1px #00000066,
+    0px 3px 17px -4.3px #0000004d, 0px 7px 30px -5.5px #00000033;
+  --pcr-btn-shadow: inset 0px 0px 0px 1.5px #ffffff33;
+  --pdf-shadow: 0 0 0 1px transparent;
+  --pdf-thumbnail-shadow: 0 0 0 1px transparent;
+  --pill-background: #00000033;
+
+  --pill-border-color: #00000000;
+  --pill-border-color-hover: #44362980;
+
+  --pill-tag-shadow-hover: inset 0px 0px 0px 1px #ffffff0d;
+  --pro-chbx-color: #4da376;
+
+  --progress-bar-outline: #ffffff1a;
+
+  --progress-color-5: linear-gradient(45deg, #f35044, #e5aa1f, #4db2d1);
+
+  --progress-value-outline: #ffffff36;
+  --prompt-border-color: #443629;
+
+  --prompt-instructions-background: color-mix(
+    in hsl,
+    var(--editor-bg-color) 60%,
+    #26211c
+  );
+
+  --prompt-separator-border: 1px solid #342c23;
+  --prompt-suggestion-background-selected: #0000001a;
+
+  --prompt-suggestion-highlight-color: #c4b299;
+
+  --prompt-suggestion-shadow-selected:
+    inset 0px 0px 0px 1px #00000024, 0px 2px 6px 0px #0000001f;
+  --question-chbx-color: #9a5eb5;
+  --question-chbx-icon-color: #ffffff;
+  --quote-chbx-color: #4182b4;
+  --quote-chbx-icon-color: #ffffff;
+  --resched-chbx-color: #76a2a1;
+
+  --ribbon-slideout-shadow:
+    8px 7px 21px -4px #00000059, 0px 5px 5px -5px #00000061;
+  --sched-chbx-color: #9f9589;
+
+  --scrollbar-bg: transparent;
+
+  --search-result-background-hover: #1e1915;
+
+  --search-result-dest-file-bg-hover: #1c1712;
+
+  --search-result-dest-file-shadow:
+    inset 0px 0px 0px 1px #0000004d, inset 0px -2px 0px 0px #00000040;
+  --search-result-dest-file-shadow-hover:
+    inset 0px 0px 0px 1px #0000004d, inset 0px -2px 0px 0px #00000040,
+    0px 2px 3px 0px #0000004a;
+
+  --settings-nav-item-bg-active: #211b17;
+  --settings-nav-item-bg-hover: transparent;
+
+  --shadow-l:
+    0px 1.8px 7.3px #00000045, 0px 6.3px 24.7px #00000050,
+    0px 30px 90px #00000066;
+  --shadow-s:
+    0px 1px 2px #0000003a, 0px 3.4px 6.7px #0000003e, 0px 15px 30px #00000045;
+
+  --slider-thumb-border-width: 0px;
+  --slider-thumb-shadow:
+    inset 0px 0px 0px 1px #00000059, inset 0pc 1px 0px 1px #ffffff4d,
+    inset 0px -1px 0px 1px #0000004a, 0px 1px 2px 0px #00000080;
+  --slider-thumb-shadow-hover:
+    inset 0px 0px 0px 1px #00000059, inset 0pc 1px 0px 1px #ffffff4d,
+    inset 0px -1px 0px 1px #0000004a, 0px 1px 2px 0px #00000080,
+    0px 0px 0px 6px #ffffff14;
+
+  --slider-track-shadow:
+    inset 0px 0px 0px 1px #00000033, 0px 0px 0px 1px #ffffff0a;
+  --star-chbx-color: #e59a06;
+  --star-chbx-icon-color: #ffffff;
+
+  --status-bar-floating-shadow:
+    8px 7px 21px -4px #00000059, 0px 5px 5px -5px #00000061;
+  --status-bar-item-bg-hover: transparent;
+  --status-bar-item-clickable-bg-active: transparent;
+
+  --style-settings-container-bg: #2a241e80;
+  --swatch-shadow: inset 0px 0px 0px 1px #0000004d;
+
+  --tab-active-shadow:
+    inset 0px 1px 0px 0px #ffffff1a, inset 0px -2px 0px 1px #00000040,
+    0px 1px 2px -0.1px #00000078;
+
+  --tab-bg: transparent;
+
+  --tab-outline-color: transparent;
+  --tab-stacked-shadow:
+    -2.9px 0 10.5px -6.2px #0000004f, -6.2px 0 3.6px -5.2px #00000045,
+    -9.4px 0 8.4px -4.1px #00000033;
+
+  --tag-background: #0000004d;
+  --tag-background-hover: #00000033;
+  --tag-border-color: #00000040;
+  --tag-border-color-hover: #00000059;
+  --tag-border-width: 1px;
+
+  --tag-shadow: inset 0px -0.1em 0px 0px #00000033;
+  --tag-shadow-active: inset 0px -0.1em 0px 0px #00000033;
+  --tag-shadow-hover:
+    inset 0px -0.1em 0px 0px #00000033, 0px 0px 0px 3px #00000026;
+  --telephone-chbx-color: #389f68;
+
+  --text-input-bg-active: #1c1712;
+
+  --text-input-shadow-active:
+    inset 0px 1px 0px 0px #ffffff08, inset 0px -1px 0px 0px #00000063,
+    0px 1px 6px 0px #0000005e;
+
+  --text-selection-theme-bg: #9179594d;
+  --text-selection-theme-text-color: color-mix(
+    in srgb,
+    currentColor 70%,
+    #ffffff
+  );
+
+  --toggle-bg: #5e4b36;
+
+  --toggle-shadow:
+    inset 0 4px 10px #00000030, inset 0px 0px 0px 1px #ffffff17,
+    inset 0 0 1px #00000066;
+  --toggle-shadow-focus:
+    inset 0 6px 20px #00000047, inset 0px 0px 0px 1px #ffffff17,
+    inset 0 0 1px #00000070, 0px 0px 0px 5px #ffffff14;
+  --toggle-shadow-hover:
+    inset 0 6px 20px #00000047, inset 0px 0px 0px 1px #ffffff17,
+    inset 0 0 1px #00000070;
+
+  --toggle-thumb-shadow:
+    inset 0px 1px 0px 1px #ffffff80, inset 0px 0px 0px 1px #00000040,
+    0 2px 2px #00000059;
+  --tooltip-shadow:
+    inset 0px -1px 0px 0px #0000004d, 0px 2px 4px -1.4px #0000004d,
+    0px 3px 10px -1.7px #00000024;
+
+  --underline-decoration-color: color-mix(
+    in srgb,
+    currentColor 22%,
+    transparent
+  );
+  --up-chbx-color: #53b27c;
+
+  --vault-name-border: 1px solid transparent;
+
+  --yaml-string-color: #da9a1b;
+}

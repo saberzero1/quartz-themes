@@ -1,0 +1,139 @@
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
+  color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
+  --background-modifier-box-shadow: #0000004d;
+  --background-modifier-cover: #0a0a0a66;
+  --background-modifier-form-field: #2a2a2a;
+
+  --canvas-dot-pattern: #a9a9a9;
+
+  --codebg-col: #00000080;
+
+  --color-blue-rgb: 2, 122, 255;
+
+  --color-cyan-rgb: 83, 223, 221;
+
+  --color-green-rgb: 68, 207, 110;
+
+  --color-orange-rgb: 233, 151, 63;
+
+  --color-pink-rgb: 250, 153, 205;
+
+  --color-purple-rgb: 168, 130, 255;
+
+  --color-red-rgb: 251, 70, 76;
+
+  --color-yellow-rgb: 224, 222, 113;
+
+  --graph-circle-fill-unresolved: #808080;
+
+  --highlight-mix-blend-mode: darken;
+
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
+    0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
+    0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
+  --interactive-accent: #8a5cf5;
+  --interactive-accent-hover: #a68af9;
+  --interactive-hover: #3f3f3f;
+  --interactive-normal: #363636;
+  --intro-dune: linear-gradient(to right, #000000, #000000, #390058, #8b0000);
+
+  --logo-grad: linear-gradient(to bottom, #f2e79c 0%, #11438a 100%);
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --pdf-shadow: 0 0 0 1px #77736a;
+  --pdf-thumbnail-shadow: 0 0 0 1px #77736a;
+  --prefs-grad: linear-gradient(180deg, #ffffff, #2f2f2f, #2f2f2f, #ffffff);
+
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+  --shadow-tone: #ffffff0f;
+
+  --table-accent: #ffffff80;
+
+  --text-accent: #a68af9;
+
+  --text-selection: #ff6e2f4d;
+
+  --background-modifier-box-shadow: #0000004d;
+  --background-modifier-cover: #0a0a0a66;
+  --background-modifier-form-field: #2a2a2a;
+
+  --canvas-dot-pattern: #a9a9a9;
+
+  --codebg-col: #00000080;
+
+  --color-blue-rgb: 2, 122, 255;
+
+  --color-cyan-rgb: 83, 223, 221;
+
+  --color-green-rgb: 68, 207, 110;
+
+  --color-orange-rgb: 233, 151, 63;
+
+  --color-pink-rgb: 250, 153, 205;
+
+  --color-purple-rgb: 168, 130, 255;
+
+  --color-red-rgb: 251, 70, 76;
+
+  --color-yellow-rgb: 224, 222, 113;
+
+  --graph-circle-fill-unresolved: #808080;
+
+  --highlight-mix-blend-mode: darken;
+
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
+    0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
+    0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
+  --interactive-accent: #8a5cf5;
+  --interactive-accent-hover: #a68af9;
+  --interactive-hover: #3f3f3f;
+  --interactive-normal: #363636;
+  --intro-dune: linear-gradient(to right, #000000, #000000, #390058, #8b0000);
+
+  --logo-grad: linear-gradient(to bottom, #f2e79c 0%, #11438a 100%);
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --pdf-shadow: 0 0 0 1px #77736a;
+  --pdf-thumbnail-shadow: 0 0 0 1px #77736a;
+  --prefs-grad: linear-gradient(180deg, #ffffff, #2f2f2f, #2f2f2f, #ffffff);
+
+  --shadow-l:
+    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
+    0px 30px 90px #00000033;
+  --shadow-s:
+    0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+  --shadow-tone: #ffffff0f;
+
+  --table-accent: #ffffff80;
+
+  --text-accent: #a68af9;
+
+  --text-selection: #ff6e2f4d;
+
+  --var-tone-sw: #ffffff;
+}
