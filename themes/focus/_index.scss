@@ -106,12 +106,10 @@ html[saved-theme="dark"] {
   --text-faint: var(--color-base-50);
 
   --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-border-focus: var(--color-base-40);
-  --code-background: var(--background-primary-alt);
   --code-normal: var(--text-normal);
   --code-comment: var(--text-faint);
   --code-function: var(--color-yellow);
@@ -141,7 +139,6 @@ html[saved-theme="dark"] {
     73.9215686275%
   );
   --color-base-00: light-dark(#ffffff, #1a1a1a);
-  --color-base-10: light-dark(#fafafa, #1a1a1a);
   --color-base-100: light-dark(#222222, #ffffff);
   --color-base-30: light-dark(#e0e0e0, #222222);
   --color-base-35: light-dark(#d4d4d4, #303030);
@@ -165,12 +162,10 @@ body {
   --text-muted: var(--color-base-70);
   --text-faint: var(--color-base-50);
   --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-border-focus: var(--color-base-40);
-  --code-background: var(--background-primary-alt);
   --code-normal: var(--text-normal);
   --code-comment: var(--text-faint);
   --code-function: var(--color-yellow);
@@ -192,7 +187,6 @@ body {
   --background-modifier-border-hover: #303030;
   --background-modifier-hover: #ffffff13;
   --background-primary: #000;
-  --background-primary-alt: #111;
   --bold-color: hsl(106.9879518072deg, 62.4060150376%, 73.9215686275%);
   --bold-weight: 700;
   --checkbox-border-color: #505050;
@@ -202,7 +196,6 @@ body {
   --checkbox-marker-color: #000;
   --checkbox-radius: 0px;
   --checkbox-size: 16px;
-  --code-background: #111;
   --code-comment: #505050;
   --code-function: #f0e395;
   --code-important: #ffc8a3;
@@ -232,7 +225,6 @@ body {
     73.9215686275%
   );
   --color-base-00: light-dark(#ffffff, #1a1a1a);
-  --color-base-10: light-dark(#fafafa, #1a1a1a);
   --color-base-100: light-dark(#222222, #ffffff);
   --color-base-30: light-dark(#e0e0e0, #222222);
   --color-base-35: light-dark(#d4d4d4, #303030);
@@ -750,6 +742,54 @@ body {
       background-color: transparent;
       border: none;
       padding: 0;
+      span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
+        //color: var(--code-value) !important;
+        color: var(--color-purple) !important;
+      }
+      span[style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"] {
+        //color: var(--code-function) !important;
+        color: var(--color-blue) !important;
+      }
+      span[style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"] {
+        //color: var(--code-string) !important;
+        color: var(--color-cyan) !important;
+      }
+      span[style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;"] {
+        //color: var(--code-property) !important;
+        color: var(--code-yellow) !important;
+      }
+      span[style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"] {
+        //color: var(--code-normal) !important;
+        color: var(--code-normal) !important;
+      }
+      span[style="--shiki-light:#586069;--shiki-dark:#D1D5DA;"] {
+        //color: var(--code-punctuation) !important;
+        color: var(--text-muted) !important;
+      }
+      span[style="--shiki-light:#F6F8FA;--shiki-dark:#2F363D;"] {
+        //color: var(--code-comment) !important;
+        color: var(--text-faint) !important;
+      }
+      span[style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"] {
+        //color: var(--code-comment) !important;
+        color: var(--code-comment) !important;
+      }
+      span[style="--shiki-light:#22863A;--shiki-dark:#85E89D;"] {
+        //color: var(--code-tag) !important;
+        color: var(--color-green) !important;
+      }
+      span[style="--shiki-light:#E36209;--shiki-dark:#FFAB70;"] {
+        //color: var(--code-important) !important;
+        color: var(--color-orange) !important;
+      }
+      span[style="--shiki-light:#B31D28;--shiki-dark:#FDAEB7;"] {
+        //color: var(--text-operator) !important;
+        color: var(--color-pink) !important;
+      }
+      span[style="--shiki-light:#D73A49;--shiki-dark:#F97583;"] {
+        //color: var(--code-keyword) !important;
+        color: var(--color-red) !important;
+      }
     }
   }
   code {
@@ -764,56 +804,7 @@ body {
       "Source Code Pro", monospace;
     font-size: 1em;
     padding: 0.15em 0.3em;
-    background-color: var(--code-background);
-    //color: var(--code-color);
-    span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
-      //color: var(--code-value) !important;
-      color: var(--color-purple) !important;
-    }
-    span[style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"] {
-      //color: var(--code-function) !important;
-      color: var(--color-blue) !important;
-    }
-    span[style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"] {
-      //color: var(--code-string) !important;
-      color: var(--color-cyan) !important;
-    }
-    span[style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;"] {
-      //color: var(--code-property) !important;
-      color: var(--code-yellow) !important;
-    }
-    span[style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"] {
-      //color: var(--code-normal) !important;
-      color: var(--code-normal) !important;
-    }
-    span[style="--shiki-light:#586069;--shiki-dark:#D1D5DA;"] {
-      //color: var(--code-punctuation) !important;
-      color: var(--text-muted) !important;
-    }
-    span[style="--shiki-light:#F6F8FA;--shiki-dark:#2F363D;"] {
-      //color: var(--code-comment) !important;
-      color: var(--text-faint) !important;
-    }
-    span[style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"] {
-      //color: var(--code-comment) !important;
-      color: var(--code-comment) !important;
-    }
-    span[style="--shiki-light:#22863A;--shiki-dark:#85E89D;"] {
-      //color: var(--code-tag) !important;
-      color: var(--color-green) !important;
-    }
-    span[style="--shiki-light:#E36209;--shiki-dark:#FFAB70;"] {
-      //color: var(--code-important) !important;
-      color: var(--color-orange) !important;
-    }
-    span[style="--shiki-light:#B31D28;--shiki-dark:#FDAEB7;"] {
-      //color: var(--text-operator) !important;
-      color: var(--color-pink) !important;
-    }
-    span[style="--shiki-light:#D73A49;--shiki-dark:#F97583;"] {
-      //color: var(--code-keyword) !important;
-      color: var(--color-red) !important;
-    }
+    color: var(--code-normal, var(--text-normal));
   }
   .clipboard-button {
     background-color: transparent;

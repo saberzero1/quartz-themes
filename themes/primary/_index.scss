@@ -112,12 +112,10 @@ html[saved-theme="light"] {
   --text-faint: var(--color-base-50);
 
   --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-border-focus: var(--color-base-40);
-  --code-background: var(--background-primary-alt);
   --code-normal: var(--text-normal);
   --code-comment: var(--text-faint);
   --code-function: var(--color-yellow);
@@ -136,7 +134,6 @@ html[saved-theme="light"] {
   --link-external-color-hover: var(--text-accent-hover);
   --background-modifier-border: light-dark(#e4d8c3, #3b3026);
   --background-primary: light-dark(#f8f5f1, #2e261f);
-  --background-primary-alt: light-dark(#f2ece3, #2a241e);
   --bold-color: light-dark(#bf3f36, #f35044);
   --checkbox-border-color: light-dark(#e4d8c3, #51402f);
   --checkbox-border-color-hover: light-dark(#cfb696, #6b563d);
@@ -147,7 +144,6 @@ html[saved-theme="light"] {
   --color-accent-2: light-dark(#5a4533, #654c39);
   --color-accent-hsl: light-dark(#4e3e2d, #4e3e2d);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
-  --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
@@ -195,12 +191,10 @@ body {
   --text-muted: var(--color-base-70);
   --text-faint: var(--color-base-50);
   --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-border-focus: var(--color-base-40);
-  --code-background: var(--background-primary-alt);
   --code-normal: var(--text-normal);
   --code-comment: var(--text-faint);
   --code-function: var(--color-yellow);
@@ -222,7 +216,6 @@ body {
   --background-modifier-border-hover: #6b563d;
   --background-modifier-hover: #ffffff11;
   --background-primary: light-dark(#f8f5f1, #2e261f);
-  --background-primary-alt: light-dark(#f2ece3, #2a241e);
   --bold-color: light-dark(#bf3f36, #f35044);
   --bold-weight: 750;
   --callout-content-background: transparent;
@@ -233,7 +226,6 @@ body {
   --checkbox-marker-color: var(--background-primary);
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --code-background: #2a241e;
   --code-comment: #917959;
   --code-function: #e1b243;
   --code-important: #cb8035;
@@ -249,7 +241,6 @@ body {
   --color-accent-2: light-dark(#5a4533, #654c39);
   --color-accent-hsl: light-dark(#4e3e2d, #4e3e2d);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
-  --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
@@ -953,6 +944,54 @@ body {
       background-color: transparent;
       border: none;
       padding: 0;
+      span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
+        //color: var(--code-value) !important;
+        color: var(--color-purple) !important;
+      }
+      span[style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"] {
+        //color: var(--code-function) !important;
+        color: var(--color-blue) !important;
+      }
+      span[style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"] {
+        //color: var(--code-string) !important;
+        color: var(--color-cyan) !important;
+      }
+      span[style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;"] {
+        //color: var(--code-property) !important;
+        color: var(--code-yellow) !important;
+      }
+      span[style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"] {
+        //color: var(--code-normal) !important;
+        color: var(--code-normal) !important;
+      }
+      span[style="--shiki-light:#586069;--shiki-dark:#D1D5DA;"] {
+        //color: var(--code-punctuation) !important;
+        color: var(--text-muted) !important;
+      }
+      span[style="--shiki-light:#F6F8FA;--shiki-dark:#2F363D;"] {
+        //color: var(--code-comment) !important;
+        color: var(--text-faint) !important;
+      }
+      span[style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"] {
+        //color: var(--code-comment) !important;
+        color: var(--code-comment) !important;
+      }
+      span[style="--shiki-light:#22863A;--shiki-dark:#85E89D;"] {
+        //color: var(--code-tag) !important;
+        color: var(--color-green) !important;
+      }
+      span[style="--shiki-light:#E36209;--shiki-dark:#FFAB70;"] {
+        //color: var(--code-important) !important;
+        color: var(--color-orange) !important;
+      }
+      span[style="--shiki-light:#B31D28;--shiki-dark:#FDAEB7;"] {
+        //color: var(--text-operator) !important;
+        color: var(--color-pink) !important;
+      }
+      span[style="--shiki-light:#D73A49;--shiki-dark:#F97583;"] {
+        //color: var(--code-keyword) !important;
+        color: var(--color-red) !important;
+      }
     }
   }
   code {
@@ -967,56 +1006,7 @@ body {
       "Consolas", "Source Code Pro", monospace;
     font-size: 1em;
     padding: 0.15em 0.3em;
-    background-color: var(--code-background);
-    //color: var(--code-color);
-    span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
-      //color: var(--code-value) !important;
-      color: var(--color-purple) !important;
-    }
-    span[style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"] {
-      //color: var(--code-function) !important;
-      color: var(--color-blue) !important;
-    }
-    span[style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"] {
-      //color: var(--code-string) !important;
-      color: var(--color-cyan) !important;
-    }
-    span[style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;"] {
-      //color: var(--code-property) !important;
-      color: var(--code-yellow) !important;
-    }
-    span[style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"] {
-      //color: var(--code-normal) !important;
-      color: var(--code-normal) !important;
-    }
-    span[style="--shiki-light:#586069;--shiki-dark:#D1D5DA;"] {
-      //color: var(--code-punctuation) !important;
-      color: var(--text-muted) !important;
-    }
-    span[style="--shiki-light:#F6F8FA;--shiki-dark:#2F363D;"] {
-      //color: var(--code-comment) !important;
-      color: var(--text-faint) !important;
-    }
-    span[style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"] {
-      //color: var(--code-comment) !important;
-      color: var(--code-comment) !important;
-    }
-    span[style="--shiki-light:#22863A;--shiki-dark:#85E89D;"] {
-      //color: var(--code-tag) !important;
-      color: var(--color-green) !important;
-    }
-    span[style="--shiki-light:#E36209;--shiki-dark:#FFAB70;"] {
-      //color: var(--code-important) !important;
-      color: var(--color-orange) !important;
-    }
-    span[style="--shiki-light:#B31D28;--shiki-dark:#FDAEB7;"] {
-      //color: var(--text-operator) !important;
-      color: var(--color-pink) !important;
-    }
-    span[style="--shiki-light:#D73A49;--shiki-dark:#F97583;"] {
-      //color: var(--code-keyword) !important;
-      color: var(--color-red) !important;
-    }
+    color: var(--code-normal, var(--text-normal));
   }
   .clipboard-button {
     background-color: transparent;
