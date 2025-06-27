@@ -917,7 +917,6 @@ body {
       "Source Code Pro", monospace;
     font-size: 1em;
     padding: 0.15em 0.3em;
-    color: var(--code-normal, var(--text-normal));
   }
   .clipboard-button {
     background-color: transparent;
@@ -1052,6 +1051,7 @@ body {
           line-height: 24px;
           margin-bottom: 2px;
           padding: 0;
+          color: inherit;
           &.active,
           &:hover {
             background-color: #f8f9fa;
@@ -1108,6 +1108,7 @@ body {
         color: #dadada;
         font-weight: inherit;
         font-size: 16px;
+        color: inherit;
       }
     }
   }

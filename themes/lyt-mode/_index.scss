@@ -824,7 +824,6 @@ body {
       "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     font-size: 0.875em;
     padding: 0.15em 0.3em;
-    color: var(--code-normal, var(--text-normal));
   }
   .clipboard-button {
     background-color: transparent;
@@ -966,6 +965,7 @@ body {
           line-height: 1;
           margin-bottom: 2px;
           padding: 2px 8px;
+          color: inherit;
           &.active,
           &:hover {
             background-color: #2d3039;
@@ -1020,6 +1020,7 @@ body {
         color: #a0a7bb;
         font-weight: inherit;
         font-size: 14.992px;
+        color: inherit;
       }
     }
   }

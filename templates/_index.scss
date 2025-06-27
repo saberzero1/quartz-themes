@@ -714,7 +714,6 @@ body {
 
     //%%CODE INLINE%%
 
-    color: var(--code-normal, var(--text-normal));
   }
   .clipboard-button {
 
@@ -832,6 +831,8 @@ body {
 
             //%%EXPLORER FILE TITLE%%
 
+            color: inherit;
+
           &.active,
           &:hover {
 
@@ -888,6 +889,7 @@ body {
 
         //%%TOC ITEM FONT SIZE%%
 
+        color: inherit;
       }
     }
   }

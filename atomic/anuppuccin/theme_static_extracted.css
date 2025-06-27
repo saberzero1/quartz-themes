@@ -85,14 +85,14 @@ body {
   --background-modifier-border: inherit;
   --background-modifier-border-focus: inherit;
   --background-modifier-border-hover: inherit;
-  --background-modifier-error: rgba(inherit, 1);
-  --background-modifier-error-hover: rgba(inherit, 0.9);
+  --background-modifier-error: inherit;
+  --background-modifier-error-hover: inherit;
   --background-modifier-error-rgb: inherit;
-  --background-modifier-form-field: rgba(inherit, 0.3);
-  --background-modifier-hover: rgba(inherit, 0.075);
-  --background-modifier-message: rgba(inherit, 0.9);
-  --background-modifier-success: rgba(inherit, 1);
-  --background-modifier-success-hover: rgba(inherit, 0.9);
+  --background-modifier-form-field: inherit;
+  --background-modifier-hover: inherit;
+  --background-modifier-message: inherit;
+  --background-modifier-success: inherit;
+  --background-modifier-success-hover: inherit;
   --background-modifier-success-rgb: inherit;
   --background-primary: inherit;
   --background-primary-alt: inherit;
@@ -116,7 +116,7 @@ body {
   --bases-table-container-border-radius: 4px;
   --bases-table-container-border-width: 1px;
   --bases-table-header-background: inherit;
-  --bases-table-header-background-hover: rgba(inherit, 0.075);
+  --bases-table-header-background-hover: inherit;
   --bases-table-header-color: inherit;
   --bases-table-header-icon-display: flex;
   --bases-table-header-sort-mask: linear-gradient(
@@ -130,7 +130,7 @@ body {
   --bases-table-row-height: 30px;
   --bases-table-text-size: 0.875em;
   --bases-table-white-space: nowrap;
-  --blockquote-background-color: rgba(inherit, 0.5);
+  --blockquote-background-color: inherit;
   --blockquote-border-color: inherit;
   --blockquote-border-thickness: 2px;
   --blockquote-color: inherit;
@@ -240,7 +240,7 @@ body {
   --color-red-rgb: inherit;
   --color-yellow: light-dark(#e0ac00, #e0de71);
   --color-yellow-rgb: inherit;
-  --colorful-frame-color: rgba(inherit, 1);
+  --colorful-frame-color: inherit;
   --colorful-icon-color: inherit;
   --colorful-icon-color-alt: #363636;
   --ctp-base: light-dark(#eff1f5, #1e1e2e);
@@ -270,7 +270,7 @@ body {
   --divider-width-hover: 3px;
   --drag-ghost-background: inherit;
   --drag-ghost-text-color: inherit;
-  --dropdown-background: rgba(inherit, 0.075);
+  --dropdown-background: inherit;
   --dropdown-background-blend-mode: hard-light;
   --dropdown-background-hover: inherit;
   --dropdown-background-position: right 0.5em top 50%, 0 0;
@@ -297,7 +297,7 @@ body {
   --file-header-justify: center;
   --file-line-width: 700px;
   --file-margins: 32px;
-  --flair-background: rgba(inherit, 0.075);
+  --flair-background: inherit;
   --flair-color: inherit;
   --font-black: 900;
   --font-bold: 700;
@@ -472,7 +472,7 @@ body {
     0 1px 1.5px 0 rgba(inherit, 0.2), 0 1px 2px 0 rgba(inherit, 0.4),
     0 0 0 0 transparent;
   --interactive-accent: inherit;
-  --interactive-accent-hover: rgba(inherit, 0.9);
+  --interactive-accent-hover: inherit;
   --interactive-accent-hsl: 258, 88%, 66%;
   --interactive-hover: inherit;
   --interactive-normal: inherit;
@@ -541,7 +541,7 @@ body {
   --metadata-divider-width: 0;
   --metadata-gap: 3px;
   --metadata-input-background: transparent;
-  --metadata-input-background-active: rgba(inherit, 0.075);
+  --metadata-input-background-active: inherit;
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
     "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
@@ -552,7 +552,7 @@ body {
   --metadata-input-longtext-lines: 3;
   --metadata-input-text-color: inherit;
   --metadata-label-background: transparent;
-  --metadata-label-background-active: rgba(inherit, 0.075);
+  --metadata-label-background-active: inherit;
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
     "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
@@ -566,7 +566,7 @@ body {
   --metadata-max-width: none;
   --metadata-padding: 8px 0;
   --metadata-property-background: transparent;
-  --metadata-property-background-active: rgba(inherit, 0.075);
+  --metadata-property-background-active: inherit;
   --metadata-property-background-hover: transparent;
   --metadata-property-box-shadow-focus: 0 0 0 2px inherit;
   --metadata-property-box-shadow-hover: 0 0 0 1px inherit;
@@ -597,10 +597,10 @@ body {
   --nav-heading-color-hover: inherit;
   --nav-heading-weight: 500;
   --nav-heading-weight-hover: 500;
-  --nav-indentation-guide-color: rgba(inherit, 0.4);
+  --nav-indentation-guide-color: inherit;
   --nav-indentation-guide-width: 1px;
-  --nav-item-background-active: rgba(inherit, 0.075);
-  --nav-item-background-hover: rgba(inherit, 0.075);
+  --nav-item-background-active: inherit;
+  --nav-item-background-hover: inherit;
   --nav-item-background-selected: #8a5cf526;
   --nav-item-children-margin-start: 12px;
   --nav-item-children-padding-start: 4px;
@@ -672,10 +672,10 @@ body {
   --search-result-background: inherit;
   --shadow-l:
     0px 1.8px 7.3px rgba(inherit, 0.071), 0px 6.3px 24.7px rgba(inherit, 0.112),
-    0px 30px 90px rgba(inherit, 0.2);
+    0px 30px 90px inherit;
   --shadow-s:
     0px 1px 2px rgba(inherit, 0.121), 0px 3.4px 6.7px rgba(inherit, 0.179),
-    0px 15px 30px rgba(inherit, 0.3);
+    0px 15px 30px inherit;
   --sidebar-markdown-font-size: 14.4px;
   --sidebar-tab-text-display: none;
   --size-2-1: 2px;
@@ -808,12 +808,12 @@ body {
   --tag-size: 0.875em;
   --tag-weight: inherit;
   --text-accent: inherit;
-  --text-accent-hover: rgba(inherit, 0.9);
+  --text-accent-hover: inherit;
   --text-error: inherit;
-  --text-error-hover: rgba(inherit, 0.8);
+  --text-error-hover: inherit;
   --text-faint: inherit;
-  --text-highlight-bg: rgba(inherit, 0.2);
-  --text-highlight-bg-active: rgba(inherit, 0.4);
+  --text-highlight-bg: inherit;
+  --text-highlight-bg-active: inherit;
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: inherit;
   --text-muted-rgb: inherit;
@@ -849,7 +849,7 @@ body {
   --vault-profile-font-size: 14.992px;
   --vault-profile-font-weight: 500;
   --width-image-gallery: 200px;
-  --workspace-background-translucent: rgba(inherit, 0.6);
+  --workspace-background-translucent: inherit;
   --zoom-factor: 1;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
@@ -1149,14 +1149,14 @@ h6 {
 }
 
 .markdown-rendered button.copy-code-button:hover {
-  background-color: rgba(inherit, 0.075);
+  background-color: inherit;
 }
 
 .callout {
   --callout-color: 2, 122, 255;
   --callout-icon: lucide-pencil;
-  background-color: rgba(inherit, 0.1);
-  border-color: rgba(inherit, 0.4);
+  background-color: inherit;
+  border-color: inherit;
   border-radius: 4px;
   border-style: solid;
   border-width: 1px;
@@ -1419,13 +1419,13 @@ input.prompt-input {
 }
 
 .markdown-rendered mark {
-  background-color: rgba(inherit, 0.2);
+  background-color: inherit;
   color: inherit;
 }
 
 a.tag {
   background-color: transparent;
-  border: 0 solid rgba(inherit, 0.15);
+  border: 0 solid inherit;
   border-radius: 2em;
   color: #e9973f;
   font-size: reset;
@@ -1459,7 +1459,7 @@ input[type="search"] {
 
 .nav-file-tag {
   align-self: center;
-  background-color: rgba(inherit, 0.075);
+  background-color: inherit;
   border-radius: 4px;
   font-size: 9px;
   font-weight: 600;
@@ -1472,7 +1472,7 @@ input[type="search"] {
 
 .nav-file-icon {
   align-items: center;
-  color: rgba(inherit, 1);
+  color: inherit;
   display: inline-flex;
   margin-inline-end: 6px;
   opacity: 1;
@@ -1504,24 +1504,24 @@ input[type="search"] {
 }
 
 .nav-file-title.is-active {
-  background-color: rgba(inherit, 0.1);
+  background-color: inherit;
   color: inherit;
   font-weight: inherit;
 }
 
 .nav-folder-title.is-active {
-  background-color: rgba(inherit, 0.1);
+  background-color: inherit;
   color: inherit;
   font-weight: inherit;
 }
 
 .nav-file-title.is-selected {
-  background-color: rgba(inherit, 0.2);
+  background-color: inherit;
   color: inherit;
 }
 
 .nav-folder-title.is-selected {
-  background-color: rgba(inherit, 0.2);
+  background-color: inherit;
   color: inherit;
 }
 
@@ -1557,19 +1557,19 @@ input[type="search"] {
 }
 
 .tree-item-self.is-clickable.mobile-tap {
-  background-color: rgba(inherit, 0.1);
+  background-color: inherit;
   color: inherit;
   font-weight: inherit;
 }
 
 .tree-item-self.is-active {
-  background-color: rgba(inherit, 0.1);
+  background-color: inherit;
   color: inherit;
   font-weight: inherit;
 }
 
 .tree-item-self.is-selected {
-  background-color: rgba(inherit, 0.2);
+  background-color: inherit;
   color: inherit;
 }
 
@@ -1580,7 +1580,7 @@ input[type="search"] {
 
 .tree-item-self .tree-item-icon {
   align-items: center;
-  color: rgba(inherit, 1);
+  color: inherit;
   display: flex;
   flex: 0 0 auto;
   justify-content: center;
@@ -1632,7 +1632,7 @@ input[type="search"] {
 }
 
 .tree-item-children {
-  border-inline-start: 1px solid rgba(inherit, 0.4);
+  border-inline-start: 1px solid inherit;
   margin-bottom: 1px;
   margin-inline-start: 12px;
   padding-inline-start: 4px;
@@ -1661,7 +1661,7 @@ svg.svg-icon {
 }
 
 .clickable-icon.mod-filled svg {
-  fill: rgba(inherit, 1);
+  fill: inherit;
 }
 
 .setting-item-control .clickable-icon {
@@ -1683,7 +1683,7 @@ svg.svg-icon {
 }
 
 .clickable-icon.is-active {
-  background-color: rgba(inherit, 0.15);
+  background-color: inherit;
   color: inherit;
   opacity: 0.65;
 }
@@ -1693,7 +1693,7 @@ svg.svg-icon {
   align-items: center;
   background-color: transparent;
   border-radius: 4px;
-  color: rgba(inherit, 1);
+  color: inherit;
   cursor: pointer;
   display: flex;
   height: auto;
@@ -1821,7 +1821,7 @@ svg.svg-icon {
   --background-modifier-border-focus: inherit;
   --background-modifier-border-hover: inherit;
   --background-modifier-box-shadow: #0000004d;
-  --background-modifier-cover: rgba(inherit, 0.4);
+  --background-modifier-cover: inherit;
   --background-modifier-form-field: #2a2a2a;
   --background-secondary-alt: #363636;
   --color-accent: #8a5cf5;
@@ -1999,7 +1999,7 @@ svg.svg-icon {
 }
 
 .workspace-tabs.mod-top {
-  --tab-container-background: rgba(inherit, 1);
+  --tab-container-background: inherit;
 }
 
 .workspace-tabs .workspace-leaf {

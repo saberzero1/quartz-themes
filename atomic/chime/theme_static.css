@@ -26800,14 +26800,14 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
 .folder-rainbow-backgrounds .nav-folder-title {
   --nav-collapse-icon-color: #ffffffcf;
   --nav-collapse-icon-color-collapsed: #ffffffcf;
-  background-color: rgba(inherit, 0.3);
+  background-color: inherit;
   color: inherit;
 }
 
 .folder-rainbow-backgrounds.theme-crystal .nav-folder-title {
   --nav-collapse-icon-color: inherit;
   --nav-collapse-icon-color-collapsed: inherit;
-  background-color: rgba(inherit, 0.13);
+  background-color: inherit;
   border: 0.25px solid inherit;
   color: inherit;
   margin-bottom: 5px;
@@ -26816,7 +26816,7 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
 .folder-rainbow-backgrounds.theme-ash-old .nav-folder-title {
   --nav-collapse-icon-color: inherit;
   --nav-collapse-icon-color-collapsed: inherit;
-  background-color: rgba(inherit, 0.13);
+  background-color: inherit;
   border: 0.25px solid inherit;
   color: inherit;
   margin-bottom: 5px;

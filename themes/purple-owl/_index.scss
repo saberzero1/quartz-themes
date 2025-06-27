@@ -738,7 +738,6 @@ body {
       "Monaspace Argon", "monolisa", menlo, SFMono-Regular, Consolas, monospace;
     font-size: 1em;
     padding: 0.15em 0.3em;
-    color: var(--code-normal, var(--text-normal));
   }
   .clipboard-button {
     background-color: transparent;
@@ -875,6 +874,7 @@ body {
           margin-bottom: 2px;
           padding: 2px 2px;
           width: calc(100% - 30px);
+          color: inherit;
           &.active,
           &:hover {
             background-color: light-dark(#03243e, #082632);
@@ -929,6 +929,7 @@ body {
         color: light-dark(#03243e, #c792ea);
         font-weight: inherit;
         font-size: 16px;
+        color: inherit;
       }
     }
   }

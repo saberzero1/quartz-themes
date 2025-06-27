@@ -854,7 +854,6 @@ body {
     font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
     font-size: 1em;
     padding: 0.15em 0.3em;
-    color: var(--code-normal, var(--text-normal));
   }
   .clipboard-button {
     background-color: transparent;
@@ -992,6 +991,7 @@ body {
           text-overflow: ellipsis;
           white-space: wrap;
           width: 85%;
+          color: inherit;
           &.active,
           &:hover {
             background-color: #ffffff26;
@@ -1046,6 +1046,7 @@ body {
         color: light-dark(#666666, #8c8c8c);
         font-weight: inherit;
         font-size: 16px;
+        color: inherit;
       }
     }
   }

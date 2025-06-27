@@ -25,12 +25,12 @@ html[saved-theme="dark"] {
   --mono-rgb-100: 255, 255, 255;
   caret-color: light-dark(
     light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
-    rgb(light-dark(76, 79, 105, 198, 208, 245))
+    light-dark(rgb(76, 79, 105), rgb(198, 208, 245))
   );
   --mono-rgb-100: 255, 255, 255;
   caret-color: light-dark(
     light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
-    rgb(light-dark(76, 79, 105, 198, 208, 245))
+    light-dark(rgb(76, 79, 105), rgb(198, 208, 245))
   );
 }
 
@@ -53,13 +53,13 @@ html[saved-theme="light"] {
 
   caret-color: light-dark(
     light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
-    rgb(light-dark(76, 79, 105, 198, 208, 245))
+    light-dark(rgb(76, 79, 105), rgb(198, 208, 245))
   );
   --mono-rgb-100: 0, 0, 0;
 
   caret-color: light-dark(
     light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
-    rgb(light-dark(76, 79, 105, 198, 208, 245))
+    light-dark(rgb(76, 79, 105), rgb(198, 208, 245))
   );
 }
 
@@ -320,15 +320,15 @@ body {
   -webkit-user-select: none;
   background-color: light-dark(
     light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
-    rgb(light-dark(239, 241, 245, 30, 30, 46))
+    light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
   );
   caret-color: light-dark(
     light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
-    rgb(light-dark(76, 79, 105, 198, 208, 245))
+    light-dark(rgb(76, 79, 105), rgb(198, 208, 245))
   );
   color: light-dark(
     light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
-    rgb(light-dark(76, 79, 105, 198, 208, 245))
+    light-dark(rgb(76, 79, 105), rgb(198, 208, 245))
   );
   contain: initial;
   font-family:
@@ -491,7 +491,7 @@ body {
   ) !important;
   background-color: light-dark(
     light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
-    rgb(light-dark(239, 241, 245, 30, 30, 46))
+    light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
   );
   section,
   .page > #quartz-body .sidebar {
@@ -500,7 +500,7 @@ body {
     &.right {
       background-color: light-dark(
         light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
-        rgb(light-dark(239, 241, 245, 30, 30, 46))
+        light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
       );
     }
   }
@@ -828,14 +828,13 @@ body {
       "Source Code Pro", monospace;
     font-size: 1em;
     padding: 0.15em 0.3em;
-    color: var(--code-normal, var(--text-normal));
   }
   .clipboard-button {
     background-color: transparent;
     box-shadow: none;
     color: light-dark(
       light-dark(rgb(124, 127, 147), rgb(142, 149, 179)),
-      rgb(light-dark(124, 127, 147, 142, 149, 179))
+      light-dark(rgb(124, 127, 147), rgb(142, 149, 179))
     );
     font-family:
       "??",
@@ -910,7 +909,7 @@ body {
       @media all and ($mobile) {
         background-color: light-dark(
           light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
-          rgb(light-dark(239, 241, 245, 30, 30, 46))
+          light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
         );
       }
       .folder-container {
@@ -952,11 +951,11 @@ body {
           light-dark(
             light-dark(
               light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
-              rgb(light-dark(239, 241, 245, 30, 30, 46))
+              light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
             ),
             light-dark(
               light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
-              rgb(light-dark(239, 241, 245, 30, 30, 46))
+              light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
             )
           );
         margin-bottom: 1px;
@@ -976,6 +975,7 @@ body {
           line-height: 1.3;
           margin-bottom: 2px;
           padding: 6px 8px 6px 24px;
+          color: inherit;
           &.active,
           &:hover {
             background-color: #ffffff26;
@@ -1030,6 +1030,7 @@ body {
         color: #d9e0ee;
         font-weight: inherit;
         font-size: 16px;
+        color: inherit;
       }
     }
   }
@@ -1106,7 +1107,7 @@ body {
       border-radius: 5px;
       color: light-dark(
         light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
-        rgb(light-dark(76, 79, 105, 198, 208, 245))
+        light-dark(rgb(76, 79, 105), rgb(198, 208, 245))
       );
       font-family: inherit;
       font-size: 14.992px;
@@ -1122,7 +1123,7 @@ body {
       & > .search-space {
         background-color: light-dark(
           light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
-          rgb(light-dark(239, 241, 245, 30, 30, 46))
+          light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
         );
         border: 0.5pt solid #555555;
         border-radius: 12px;
@@ -1134,13 +1135,13 @@ body {
         & > input {
           background-color: light-dark(
             light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
-            rgb(light-dark(239, 241, 245, 30, 30, 46))
+            light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
           );
           border: none;
           border-bottom: 1px solid
             light-dark(
               light-dark(rgb(230, 233, 239), rgb(24, 24, 37)),
-              rgb(light-dark(230, 233, 239, 24, 24, 37))
+              light-dark(rgb(230, 233, 239), rgb(24, 24, 37))
             );
           border-radius: 0;
           font-size: 16px;
@@ -1155,7 +1156,7 @@ body {
         & > * {
           color: light-dark(
             light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
-            rgb(light-dark(76, 79, 105, 198, 208, 245))
+            light-dark(rgb(76, 79, 105), rgb(198, 208, 245))
           );
           background: transparent;
           margin-bottom: 0;
@@ -1171,7 +1172,7 @@ body {
             background-color: #b4befe33;
             color: light-dark(
               light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
-              rgb(light-dark(76, 79, 105, 198, 208, 245))
+              light-dark(rgb(76, 79, 105), rgb(198, 208, 245))
             );
           }
           & > .preview-container {
@@ -1194,7 +1195,7 @@ body {
                 background-color: transparent;
                 color: light-dark(
                   light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
-                  rgb(light-dark(76, 79, 105, 198, 208, 245))
+                  light-dark(rgb(76, 79, 105), rgb(198, 208, 245))
                 );
                 &.match-tag {
                   color: #b4befe;
@@ -1260,7 +1261,7 @@ body {
   .popover {
     background-color: light-dark(
       light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
-      rgb(light-dark(239, 241, 245, 30, 30, 46))
+      light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
     );
     border: 1px solid transparent;
     border-radius: 8px;
@@ -1281,7 +1282,7 @@ body {
       border: 1px solid transparent;
       background-color: light-dark(
         light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
-        rgb(light-dark(239, 241, 245, 30, 30, 46))
+        light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
       );
 
       border-radius: 8px;

@@ -588,13 +588,12 @@ export function cleanup(cssString) {
   cssString = cssString.replaceAll(/rgba?\((light-dark\([^\)]+\))\);/gms, "$1;") // Fix light-dark() in rgba
   cssString = cssString.replaceAll(/rgba?\((rgba?\([^\)]+\))\);/gms, "$1;") // Fix rgb(a) in rgba
   cssString = cssString.replaceAll(/rgba?\((hsla?\([^\)]+\))\);/gms, "$1;") // Fix hsl(a) in rgba
-  cssString = cssString.replaceAll(/rgba?\(\s*?inherit\s*?\);/gms, "inherit;")
+  cssString = cssString.replaceAll(/rgba?\(\s*?inherit\s*?(?:,\s*?[\d\.\%]+\s*?)?\);/gms, "inherit;")
   cssString = cssString.replaceAll(/rgba?\(\s*?(oklch\([^\)]+\)),\s*?([\d\.\%]+)\)/gms, "color.change($1, \$alpha: $2);")
   cssString = cssString.replaceAll(/^\s*?caret-color: hsla?\((?:.*?\#[\da-fA-F]{3,8}.*?)\);$/gm, "")
-  //(?:[^\;]*?calc\([^\)]*?deg[^\)]*?\)[^\;]*?)
-  cssString = cssString.replaceAll(/^\s*?rgb\(light-dark\((\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3})\s*?\)\)(;|,)/gms, "light-dark(rgb($1, $2, $3), rgb($4, $5, $6))$7") // Fix light-dark(rgb) with 6 values
-  cssString = cssString.replaceAll(/^\s*?hsl\(light-dark\(([\d\.\%]+),\s*?([\d\.\%]+),\s*?([\d\.\%]+),\s*?([\d\.\%]+),\s*?([\d\.\%]+),\s*?([\d\.\%]+)\s*?\)\)(;|,)/gms, "light-dark(hsl($1, $2, $3), hsl($4, $5, $6))$7") // Fix light-dark(rgb) with 6 values
-  cssString = cssString.replaceAll(/^\s*?hsl\(light-dark\(([\d\.\%]+),\s?([\d\.\%]+)\),\s*?light-dark\(([\d\.\%]+),\s?([\d\.\%]+)\),\s*?light-dark\(([\d\.\%]+),\s?([\d\.\%]+)\)\s*?\)(;|,)/gms, "light-dark(hsl($1, $3, $5), hsl($2, $4, $6))$7") // Fix light-dark(hsl) with 6 values
+  cssString = cssString.replaceAll(/^\s*?rgb\(light-dark\((\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3})\s*?\)\)(?=$|;|,)/gms, "light-dark(rgb($1, $2, $3), rgb($4, $5, $6))") // Fix light-dark(rgb) with 6 values
+  cssString = cssString.replaceAll(/^\s*?hsl\(light-dark\(([\d\.\%]+),\s*?([\d\.\%]+),\s*?([\d\.\%]+),\s*?([\d\.\%]+),\s*?([\d\.\%]+),\s*?([\d\.\%]+)\s*?\)\)(?=$|;|,)/gms, "light-dark(hsl($1, $2, $3), hsl($4, $5, $6))") // Fix light-dark(rgb) with 6 values
+  cssString = cssString.replaceAll(/^\s*?hsl\(light-dark\(([\d\.\%]+),\s?([\d\.\%]+)\),\s*?light-dark\(([\d\.\%]+),\s?([\d\.\%]+)\),\s*?light-dark\(([\d\.\%]+),\s?([\d\.\%]+)\)\s*?\)(?=$|;|,)/gms, "light-dark(hsl($1, $3, $5), hsl($2, $4, $6))") // Fix light-dark(hsl) with 6 values
   cssString = cssString.replaceAll(/;\s*;/gms, ";") // Remove duplicate semicolons
 
   return cssString

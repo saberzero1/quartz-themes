@@ -1006,7 +1006,6 @@ body {
       "Consolas", "Source Code Pro", monospace;
     font-size: 1em;
     padding: 0.15em 0.3em;
-    color: var(--code-normal, var(--text-normal));
   }
   .clipboard-button {
     background-color: transparent;
@@ -1171,6 +1170,7 @@ body {
           transition:
             padding,
             transform 140ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
+          color: inherit;
           &.active,
           &:hover {
             background-color: #00000020;
@@ -1240,6 +1240,7 @@ body {
         color: #ab916d;
         font-weight: inherit;
         font-size: 16px;
+        color: inherit;
       }
     }
   }

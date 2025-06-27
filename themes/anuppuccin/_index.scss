@@ -208,7 +208,7 @@ body {
   --background-modifier-border: inherit;
   --background-modifier-border-focus: inherit;
   --background-modifier-border-hover: inherit;
-  --background-modifier-hover: rgba(inherit, 0.075);
+  --background-modifier-hover: inherit;
   --background-primary: inherit;
   --bold-color: inherit;
   --bold-weight: 800;
@@ -295,9 +295,9 @@ body {
   --tag-radius: 2em;
   --tag-weight: inherit;
   --text-accent: inherit;
-  --text-accent-hover: rgba(inherit, 0.9);
+  --text-accent-hover: inherit;
   --text-faint: inherit;
-  --text-highlight-bg: rgba(inherit, 0.2);
+  --text-highlight-bg: inherit;
   --text-muted: inherit;
   --text-normal: inherit;
   -webkit-tap-highlight-color: #ffffff00;
@@ -340,8 +340,8 @@ body {
 :root,
 html {
   .callout {
-    background-color: rgba(inherit, 0.1);
-    border-color: rgba(inherit, 0.4);
+    background-color: inherit;
+    border-color: inherit;
     border-radius: 4px;
     border-style: solid;
     border-width: 1px;
@@ -349,89 +349,89 @@ html {
     mix-blend-mode: normal;
     overflow: hidden;
     padding: 0;
-    background-color: rgba(inherit, 0.1);
+    background-color: inherit;
     overflow-x: auto;
     overflow-y: hidden;
     &[data-callout] {
-      background-color: rgba(inherit, 0.1);
+      background-color: inherit;
     }
     &[data-callout="abstract"] {
-      background-color: rgba(inherit, 0.1);
+      background-color: inherit;
     }
     &[data-callout="summary"] {
-      background-color: rgba(inherit, 0.1);
+      background-color: inherit;
     }
     &[data-callout="tldr"] {
-      background-color: rgba(inherit, 0.1);
+      background-color: inherit;
     }
     &[data-callout="info"] {
-      background-color: rgba(inherit, 0.1);
+      background-color: inherit;
     }
     &[data-callout="todo"] {
-      background-color: rgba(inherit, 0.1);
+      background-color: inherit;
     }
     &[data-callout="important"] {
-      background-color: rgba(inherit, 0.1);
+      background-color: inherit;
     }
     &[data-callout="tip"] {
-      background-color: rgba(inherit, 0.1);
+      background-color: inherit;
     }
     &[data-callout="hint"] {
-      background-color: rgba(inherit, 0.1);
+      background-color: inherit;
     }
     &[data-callout="success"] {
-      background-color: rgba(inherit, 0.1);
+      background-color: inherit;
     }
     &[data-callout="check"] {
-      background-color: rgba(inherit, 0.1);
+      background-color: inherit;
     }
     &[data-callout="done"] {
-      background-color: rgba(inherit, 0.1);
+      background-color: inherit;
     }
     &[data-callout="question"] {
-      background-color: rgba(inherit, 0.1);
+      background-color: inherit;
     }
     &[data-callout="help"] {
-      background-color: rgba(inherit, 0.1);
+      background-color: inherit;
     }
     &[data-callout="faq"] {
-      background-color: rgba(inherit, 0.1);
+      background-color: inherit;
     }
     &[data-callout="warning"] {
-      background-color: rgba(inherit, 0.1);
+      background-color: inherit;
     }
     &[data-callout="caution"] {
-      background-color: rgba(inherit, 0.1);
+      background-color: inherit;
     }
     &[data-callout="attention"] {
-      background-color: rgba(inherit, 0.1);
+      background-color: inherit;
     }
     &[data-callout="failure"] {
-      background-color: rgba(inherit, 0.1);
+      background-color: inherit;
     }
     &[data-callout="fail"] {
-      background-color: rgba(inherit, 0.1);
+      background-color: inherit;
     }
     &[data-callout="missing"] {
-      background-color: rgba(inherit, 0.1);
+      background-color: inherit;
     }
     &[data-callout="danger"] {
-      background-color: rgba(inherit, 0.1);
+      background-color: inherit;
     }
     &[data-callout="error"] {
-      background-color: rgba(inherit, 0.1);
+      background-color: inherit;
     }
     &[data-callout="bug"] {
-      background-color: rgba(inherit, 0.1);
+      background-color: inherit;
     }
     &[data-callout="example"] {
-      background-color: rgba(inherit, 0.1);
+      background-color: inherit;
     }
     &[data-callout="quote"] {
-      background-color: rgba(inherit, 0.1);
+      background-color: inherit;
     }
     &[data-callout="cite"] {
-      background-color: rgba(inherit, 0.1);
+      background-color: inherit;
     }
   }
   .callout-title {
@@ -893,7 +893,6 @@ body {
       "Source Code Pro", monospace;
     font-size: 1em;
     padding: 0.15em 0.3em;
-    color: var(--code-normal, var(--text-normal));
   }
   .clipboard-button {
     background-color: light-dark(rgb(220, 224, 232), rgb(17, 17, 27));
@@ -922,7 +921,7 @@ body {
     position: absolute;
     top: 0;
     &:hover {
-      background-color: rgba(inherit, 0.075);
+      background-color: inherit;
     }
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -991,7 +990,7 @@ body {
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
-        color: rgba(inherit, 1);
+        color: inherit;
         text-overflow: ellipsis;
         position: relative;
         & > svg {
@@ -1023,7 +1022,7 @@ body {
         -webkit-mask-image: var(--folder-open-icon);
       }
       .folder-outer > ul.content {
-        border-inline-start: 1px solid rgba(inherit, 0.4);
+        border-inline-start: 1px solid inherit;
         margin-bottom: 1px;
         margin-inline-start: 12px;
         padding-inline-start: 4px;
@@ -1041,9 +1040,10 @@ body {
           line-height: 1.3;
           margin-bottom: 2px;
           padding: 6px 8px 6px 24px;
+          color: inherit;
           &.active,
           &:hover {
-            background-color: rgba(inherit, 0.1);
+            background-color: inherit;
             color: inherit;
             font-weight: inherit;
           }
@@ -1111,6 +1111,7 @@ body {
         color: inherit;
         font-weight: inherit;
         font-size: 16px;
+        color: inherit;
       }
     }
   }
@@ -1249,7 +1250,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: rgba(inherit, 0.2);
+            background-color: inherit;
             color: inherit;
           }
           & > .preview-container {
