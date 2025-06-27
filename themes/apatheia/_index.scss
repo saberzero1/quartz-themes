@@ -1109,6 +1109,7 @@ body {
   /* METADATA */
   .content-meta {
     color: hsl(249.2307692308deg, 33.3333333333%, 97.6470588235%);
+    color: var(--text-normal);
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {

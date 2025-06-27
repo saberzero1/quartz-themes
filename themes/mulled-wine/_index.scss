@@ -1038,6 +1038,7 @@ body {
   /* METADATA */
   .content-meta {
     color: #e46872;
+    color: var(--text-normal);
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {

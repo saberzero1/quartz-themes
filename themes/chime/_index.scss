@@ -1143,6 +1143,7 @@ body {
   /* METADATA */
   .content-meta {
     color: #ffffffcf;
+    color: var(--text-normal);
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {
