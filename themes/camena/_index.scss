@@ -302,162 +302,189 @@ html {
       background-color: rgba(138, 92, 245, 0.1);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
+      background: var(--bg);
     }
     &[data-callout="abstract"] {
       --callout-color: from hsl(185, 88%, 66%) r g b;
       background-color: rgba(138, 92, 245, 0.1);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
+      background: var(--bg);
     }
     &[data-callout="summary"] {
       --callout-color: from hsl(185, 88%, 66%) r g b;
       background-color: rgba(138, 92, 245, 0.1);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
+      background: var(--bg);
     }
     &[data-callout="tldr"] {
       --callout-color: from hsl(185, 88%, 66%) r g b;
       background-color: rgba(138, 92, 245, 0.1);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
+      background: var(--bg);
     }
     &[data-callout="info"] {
       --callout-color: from hsl(210, 88%, 66%) r g b;
       background-color: rgba(138, 92, 245, 0.1);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
+      background: var(--bg);
     }
     &[data-callout="todo"] {
       --callout-color: from hsl(210, 88%, 66%) r g b;
       background-color: rgba(138, 92, 245, 0.1);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
+      background: var(--bg);
     }
     &[data-callout="important"] {
       --callout-color: from hsl(185, 88%, 66%) r g b;
       background-color: rgba(138, 92, 245, 0.1);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
+      background: var(--bg);
     }
     &[data-callout="tip"] {
       --callout-color: from hsl(185, 88%, 66%) r g b;
       background-color: rgba(138, 92, 245, 0.1);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
+      background: var(--bg);
     }
     &[data-callout="hint"] {
       --callout-color: from hsl(185, 88%, 66%) r g b;
       background-color: rgba(138, 92, 245, 0.1);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
+      background: var(--bg);
     }
     &[data-callout="success"] {
       --callout-color: from hsl(100, 88%, 66%) r g b;
       background-color: rgba(138, 92, 245, 0.1);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
+      background: var(--bg);
     }
     &[data-callout="check"] {
       --callout-color: from hsl(100, 88%, 66%) r g b;
       background-color: rgba(138, 92, 245, 0.1);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
+      background: var(--bg);
     }
     &[data-callout="done"] {
       --callout-color: from hsl(100, 88%, 66%) r g b;
       background-color: rgba(138, 92, 245, 0.1);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
+      background: var(--bg);
     }
     &[data-callout="question"] {
       --callout-color: from hsl(25, 88%, 66%) r g b;
       background-color: rgba(138, 92, 245, 0.1);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
+      background: var(--bg);
     }
     &[data-callout="help"] {
       --callout-color: from hsl(25, 88%, 66%) r g b;
       background-color: rgba(138, 92, 245, 0.1);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
+      background: var(--bg);
     }
     &[data-callout="faq"] {
       --callout-color: from hsl(25, 88%, 66%) r g b;
       background-color: rgba(138, 92, 245, 0.1);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
+      background: var(--bg);
     }
     &[data-callout="warning"] {
       --callout-color: from hsl(25, 88%, 66%) r g b;
       background-color: rgba(138, 92, 245, 0.1);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
+      background: var(--bg);
     }
     &[data-callout="caution"] {
       --callout-color: from hsl(25, 88%, 66%) r g b;
       background-color: rgba(138, 92, 245, 0.1);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
+      background: var(--bg);
     }
     &[data-callout="attention"] {
       --callout-color: from hsl(25, 88%, 66%) r g b;
       background-color: rgba(138, 92, 245, 0.1);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
+      background: var(--bg);
     }
     &[data-callout="failure"] {
       --callout-color: from hsl(5, 88%, 66%) r g b;
       background-color: rgba(138, 92, 245, 0.1);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
+      background: var(--bg);
     }
     &[data-callout="fail"] {
       --callout-color: from hsl(5, 88%, 66%) r g b;
       background-color: rgba(138, 92, 245, 0.1);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
+      background: var(--bg);
     }
     &[data-callout="missing"] {
       --callout-color: from hsl(5, 88%, 66%) r g b;
       background-color: rgba(138, 92, 245, 0.1);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
+      background: var(--bg);
     }
     &[data-callout="danger"] {
       --callout-color: from hsl(5, 88%, 66%) r g b;
       background-color: rgba(138, 92, 245, 0.1);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
+      background: var(--bg);
     }
     &[data-callout="error"] {
       --callout-color: from hsl(5, 88%, 66%) r g b;
       background-color: rgba(138, 92, 245, 0.1);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
+      background: var(--bg);
     }
     &[data-callout="bug"] {
       --callout-color: from hsl(5, 88%, 66%) r g b;
       background-color: rgba(138, 92, 245, 0.1);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
+      background: var(--bg);
     }
     &[data-callout="example"] {
       --callout-color: from hsl(270, 88%, 66%) r g b;
       background-color: rgba(138, 92, 245, 0.1);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
+      background: var(--bg);
     }
     &[data-callout="quote"] {
       --callout-color: from hsl(258, 88%, 66%) r g b;
       background-color: rgba(138, 92, 245, 0.1);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
+      background: var(--bg);
     }
     &[data-callout="cite"] {
       --callout-color: from hsl(258, 88%, 66%) r g b;
       background-color: rgba(138, 92, 245, 0.1);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
+      background: var(--bg);
     }
   }
   .callout-title {

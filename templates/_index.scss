@@ -165,6 +165,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-note);
+      background: var(--bg);
     }
     &[data-callout="abstract"] {
       //%%CALLOUT ABSTRACT%%
@@ -174,6 +175,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-abstract);
+      background: var(--bg);
     }
     &[data-callout="summary"] {
       //%%CALLOUT SUMMARY%%
@@ -183,6 +185,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-abstract);
+      background: var(--bg);
     }
     &[data-callout="tldr"] {
       //%%CALLOUT TLDR%%
@@ -192,6 +195,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-abstract);
+      background: var(--bg);
     }
     &[data-callout="info"] {
       //%%CALLOUT INFO%%
@@ -201,6 +205,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-info);
+      background: var(--bg);
     }
     &[data-callout="todo"] {
       //%%CALLOUT TODO%%
@@ -210,6 +215,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-todo);
+      background: var(--bg);
     }
     &[data-callout="important"] {
       //%%CALLOUT IMPORTANT%%
@@ -219,6 +225,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-tip);
+      background: var(--bg);
     }
     &[data-callout="tip"] {
       //%%CALLOUT TIP%%
@@ -228,6 +235,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-tip);
+      background: var(--bg);
     }
     &[data-callout="hint"] {
       //%%CALLOUT HINT%%
@@ -237,6 +245,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-tip);
+      background: var(--bg);
     }
     &[data-callout="success"] {
       //%%CALLOUT SUCCESS%%
@@ -246,6 +255,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-success);
+      background: var(--bg);
     }
     &[data-callout="check"] {
       //%%CALLOUT CHECK%%
@@ -255,6 +265,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-success);
+      background: var(--bg);
     }
     &[data-callout="done"] {
       //%%CALLOUT DONE%%
@@ -264,6 +275,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-success);
+      background: var(--bg);
     }
     &[data-callout="question"] {
       //%%CALLOUT QUESTION%%
@@ -273,6 +285,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-question);
+      background: var(--bg);
     }
     &[data-callout="help"] {
       //%%CALLOUT HELP%%
@@ -282,6 +295,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-question);
+      background: var(--bg);
     }
     &[data-callout="faq"] {
       //%%CALLOUT FAQ%%
@@ -291,6 +305,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-question);
+      background: var(--bg);
     }
     &[data-callout="warning"] {
       //%%CALLOUT WARNING%%
@@ -300,6 +315,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-warning);
+      background: var(--bg);
     }
     &[data-callout="caution"] {
       //%%CALLOUT CAUTION%%
@@ -309,6 +325,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-warning);
+      background: var(--bg);
     }
     &[data-callout="attention"] {
       //%%CALLOUT ATTENTION%%
@@ -318,6 +335,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-warning);
+      background: var(--bg);
     }
     &[data-callout="failure"] {
       //%%CALLOUT FAILURE%%
@@ -327,6 +345,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-failure);
+      background: var(--bg);
     }
     &[data-callout="fail"] {
       //%%CALLOUT FAIL%%
@@ -336,6 +355,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-failure);
+      background: var(--bg);
     }
     &[data-callout="missing"] {
       //%%CALLOUT MISSING%%
@@ -345,6 +365,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-failure);
+      background: var(--bg);
     }
     &[data-callout="danger"] {
       //%%CALLOUT DANGER%%
@@ -354,6 +375,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-danger);
+      background: var(--bg);
     }
     &[data-callout="error"] {
       //%%CALLOUT ERROR%%
@@ -363,6 +385,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-danger);
+      background: var(--bg);
     }
     &[data-callout="bug"] {
       //%%CALLOUT BUG%%
@@ -372,6 +395,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-bug);
+      background: var(--bg);
     }
     &[data-callout="example"] {
       //%%CALLOUT EXAMPLE%%
@@ -381,6 +405,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-example);
+      background: var(--bg);
     }
     &[data-callout="quote"] {
       //%%CALLOUT QUOTE%%
@@ -390,6 +415,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-quote);
+      background: var(--bg);
     }
     &[data-callout="cite"] {
       //%%CALLOUT CITE%%
@@ -399,6 +425,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-quote);
+      background: var(--bg);
     }
   }
 
