@@ -1324,9 +1324,9 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: rgba(
-                  light-dark(76, 79, 105, 198, 208, 245),
-                  0.075
+                background-color: light-dark(
+                  rgba(76, 79, 105, 0.075),
+                  rgba(198, 208, 245, 0.075)
                 );
               }
               & > ul > li > p {
