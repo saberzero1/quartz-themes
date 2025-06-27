@@ -313,7 +313,7 @@ body {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-user-select: none;
   background-color: light-dark(
-    hsl(light-dark(15, 20%, 92%, 300, 6%, 14%)),
+    light-dark(hsl(15, 20%, 92%), hsl(300, 6%, 14%)),
     hsl(light-dark(15, 20%, 92%, 300, 6%, 14%))
   );
   caret-color: hsl(255, 89.76%, 75.9%);
@@ -461,7 +461,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
   background-color: light-dark(
-    hsl(light-dark(15, 20%, 92%, 300, 6%, 14%)),
+    light-dark(hsl(15, 20%, 92%), hsl(300, 6%, 14%)),
     hsl(light-dark(15, 20%, 92%, 300, 6%, 14%))
   );
   section,
@@ -470,7 +470,7 @@ body {
     &.left:has(.explorer),
     &.right {
       background-color: light-dark(
-        hsl(light-dark(15, 20%, 92%, 300, 6%, 14%)),
+        light-dark(hsl(15, 20%, 92%), hsl(300, 6%, 14%)),
         hsl(light-dark(15, 20%, 92%, 300, 6%, 14%))
       );
     }
@@ -875,7 +875,7 @@ body {
     .explorer-content {
       @media all and ($mobile) {
         background-color: light-dark(
-          hsl(light-dark(15, 20%, 92%, 300, 6%, 14%)),
+          light-dark(hsl(15, 20%, 92%), hsl(300, 6%, 14%)),
           hsl(light-dark(15, 20%, 92%, 300, 6%, 14%))
         );
       }
@@ -1092,13 +1092,13 @@ body {
         margin: 12vh auto;
         & > input {
           background-color: light-dark(
-            hsl(light-dark(15, 20%, 92%, 300, 6%, 14%)),
+            light-dark(hsl(15, 20%, 92%), hsl(300, 6%, 14%)),
             hsl(light-dark(15, 20%, 92%, 300, 6%, 14%))
           );
           border: none;
           border-bottom: 1px solid
             light-dark(
-              hsl(light-dark(15, 20%, 88%, 300, 6%, 18%)),
+              light-dark(hsl(15, 20%, 88%), hsl(300, 6%, 18%)),
               hsl(light-dark(15, 20%, 88%, 300, 6%, 18%))
             );
           border-radius: 0;
@@ -1219,7 +1219,7 @@ body {
   /* POPOVER */
   .popover {
     background-color: light-dark(
-      hsl(light-dark(15, 20%, 92%, 300, 6%, 14%)),
+      light-dark(hsl(15, 20%, 92%), hsl(300, 6%, 14%)),
       hsl(light-dark(15, 20%, 92%, 300, 6%, 14%))
     );
     border: 1px solid transparent;
@@ -1240,7 +1240,7 @@ body {
     & .popover-inner {
       border: 1px solid transparent;
       background-color: light-dark(
-        hsl(light-dark(15, 20%, 92%, 300, 6%, 14%)),
+        light-dark(hsl(15, 20%, 92%), hsl(300, 6%, 14%)),
         hsl(light-dark(15, 20%, 92%, 300, 6%, 14%))
       );
 

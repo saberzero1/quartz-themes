@@ -2582,15 +2582,15 @@ body {
 
 @keyframes pop-trans {
   0% {
-    transform: var(--persistent-transform,) scale(1);
+    transform: var(--persistent-transform), scale(1);
   }
 
   50% {
-    transform: var(--persistent-transform,) scale(0.9);
+    transform: var(--persistent-transform), scale(0.9);
   }
 
   100% {
-    transform: var(--persistent-transform,) scale(1);
+    transform: var(--persistent-transform), scale(1);
   }
 }
 
@@ -3842,7 +3842,7 @@ kbd,
 }
 
 .nav-file-title > * {
-  --persistent-transform: ;
+  --persistent-transform: none;
 }
 
 .nav-file-title.is-active {
@@ -5383,7 +5383,7 @@ body.is-phone
 }
 
 body.is-phone .nav-file-title > * {
-  --persistent-transform1: ;
+  --persistent-transform1: none;
 }
 
 body.is-phone .nav-file-title.is-active {

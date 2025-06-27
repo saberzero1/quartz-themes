@@ -23,7 +23,7 @@ html[saved-theme="dark"] {
     color: var(--shiki-dark);
   }
   --mono-rgb-100: 255, 255, 255;
-  --text-accent: rgb(inherit);
+  --text-accent: inherit;
   --mono-rgb-100: 255, 255, 255;
   --text-accent: rgb(inherit);
 }
@@ -211,30 +211,30 @@ body {
   --background-modifier-border-focus: inherit;
   --background-modifier-border-hover: inherit;
   --background-modifier-hover: rgba(inherit, 0.075);
-  --background-primary: rgb(inherit);
-  --background-primary-alt: rgb(inherit);
+  --background-primary: inherit;
+  --background-primary-alt: inherit;
   --bold-color: inherit;
   --bold-weight: 800;
-  --checkbox-border-color: rgb(inherit);
-  --checkbox-border-color-hover: rgb(inherit);
-  --checkbox-color: rgb(inherit);
-  --checkbox-color-hover: rgb(inherit);
-  --checkbox-marker-color: rgb(inherit);
+  --checkbox-border-color: inherit;
+  --checkbox-border-color-hover: inherit;
+  --checkbox-color: inherit;
+  --checkbox-color-hover: inherit;
+  --checkbox-marker-color: inherit;
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
   --code-background: #363636;
-  --code-comment: rgb(inherit);
+  --code-comment: inherit;
   --code-function: #e0de71;
   --code-important: #e9973f;
   --code-keyword: #fa99cd;
-  --code-normal: rgb(inherit);
+  --code-normal: inherit;
   --code-property: #53dfdd;
-  --code-punctuation: rgb(inherit);
+  --code-punctuation: inherit;
   --code-string: #44cf6e;
   --code-tag: #fb464c;
   --code-value: #a882ff;
-  --collapse-icon-color: rgb(inherit);
-  --collapse-icon-color-collapsed: rgb(inherit);
+  --collapse-icon-color: inherit;
+  --collapse-icon-color-collapsed: inherit;
   --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
@@ -265,51 +265,51 @@ body {
   --font-weight: 400;
   --graph-line: #3f3f3f;
   --graph-node-tag: #44cf6e;
-  --graph-node-unresolved: rgb(inherit);
+  --graph-node-unresolved: inherit;
   --h1-color: inherit;
   --h1-font: inherit;
   --h3-line-height: 1.3;
   --hr-color: transparent;
   --hr-thickness: 2px;
-  --icon-color: rgb(inherit);
-  --inline-title-color: rgb(inherit);
+  --icon-color: inherit;
+  --inline-title-color: inherit;
   --inline-title-font:
     "??", "??", "??", "??", "??", ui-sans-serif, -apple-system,
     BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --interactive-accent-hsl: 258, 88%, 66%;
   --italic-color: inherit;
-  --link-color: rgb(inherit);
-  --link-color-hover: rgb(inherit);
-  --link-external-color: rgb(inherit);
-  --link-external-color-hover: rgb(inherit);
+  --link-color: inherit;
+  --link-color-hover: inherit;
+  --link-external-color: inherit;
+  --link-external-color-hover: inherit;
   --link-external-filter: none;
   --link-weight: 600;
   --mono-rgb-100: inherit;
   --p-spacing: 1rem;
-  --search-icon-color: rgb(inherit);
+  --search-icon-color: inherit;
   --tag-background: #8a5cf51a;
   --tag-background-hover: #8a5cf533;
   --tag-border-color: #8a5cf526;
   --tag-border-color-hover: #8a5cf526;
   --tag-border-width: 0px;
-  --tag-color: rgb(inherit);
-  --tag-color-hover: rgb(inherit);
+  --tag-color: inherit;
+  --tag-color-hover: inherit;
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-radius: 2em;
   --tag-weight: inherit;
-  --text-accent: rgb(inherit);
+  --text-accent: inherit;
   --text-accent-hover: rgba(inherit, 0.9);
-  --text-faint: rgb(inherit);
+  --text-faint: inherit;
   --text-highlight-bg: rgba(inherit, 0.2);
-  --text-muted: rgb(inherit);
-  --text-normal: rgb(inherit);
+  --text-muted: inherit;
+  --text-normal: inherit;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: rgb(inherit);
-  caret-color: rgb(inherit);
-  color: rgb(inherit);
+  background-color: inherit;
+  caret-color: inherit;
+  color: inherit;
   contain: initial;
   font-family:
     "??",
@@ -438,7 +438,7 @@ html {
   }
   .callout-title {
     align-items: flex-start;
-    color: rgb(inherit);
+    color: inherit;
     display: flex;
     font-size: inherit;
     gap: 4px;
@@ -466,13 +466,13 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: rgb(inherit);
+  background-color: inherit;
   section,
   .page > #quartz-body .sidebar {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: rgb(inherit);
+      background-color: inherit;
     }
   }
   .highlight,
@@ -628,7 +628,7 @@ body {
   /* HEADINGS */
   h1 {
     --font-weight: 600;
-    color: rgb(inherit);
+    color: inherit;
     font-family:
       "??",
       "??",
@@ -660,7 +660,7 @@ body {
   }
   h2 {
     --font-weight: 600;
-    color: rgb(inherit);
+    color: inherit;
     font-family:
       "??",
       "??",
@@ -692,7 +692,7 @@ body {
   }
   h3 {
     --font-weight: 600;
-    color: rgb(inherit);
+    color: inherit;
     font-family:
       "??",
       "??",
@@ -724,7 +724,7 @@ body {
   }
   h4 {
     --font-weight: 600;
-    color: rgb(inherit);
+    color: inherit;
     font-family:
       "??",
       "??",
@@ -756,7 +756,7 @@ body {
   }
   h5 {
     --font-weight: 600;
-    color: rgb(inherit);
+    color: inherit;
     font-family:
       "??",
       "??",
@@ -788,7 +788,7 @@ body {
   }
   h6 {
     --font-weight: 600;
-    color: rgb(inherit);
+    color: inherit;
     font-family:
       "??",
       "??",
@@ -840,7 +840,7 @@ body {
     background-color: #363636;
     border: 0px solid transparent;
     border-radius: 4px;
-    color: rgb(inherit);
+    color: inherit;
     font-family:
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -901,7 +901,7 @@ body {
   .clipboard-button {
     background-color: light-dark(rgb(220, 224, 232), rgb(17, 17, 27));
     box-shadow: none;
-    color: rgb(inherit);
+    color: inherit;
     font-family:
       "??",
       "??",
@@ -933,17 +933,17 @@ body {
   }
   /* METADATA */
   .content-meta {
-    color: rgb(inherit);
+    color: inherit;
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: rgb(inherit);
+    color: inherit;
   }
   /* BACKLINKS */
   .backlinks {
     h3 {
       --font-weight: 600;
-      color: rgb(inherit);
+      color: inherit;
       font-family:
         "??",
         "??",
@@ -971,7 +971,7 @@ body {
       margin-block-start: 0rem;
     }
     ul li {
-      color: rgb(inherit);
+      color: inherit;
       font-weight: 500;
     }
   }
@@ -985,11 +985,11 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: rgb(inherit);
+      color: inherit;
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: rgb(inherit);
+        background-color: inherit;
       }
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
@@ -1036,7 +1036,7 @@ body {
         position: relative;
         a {
           border-radius: 4px;
-          color: rgb(inherit);
+          color: inherit;
           cursor: pointer;
           display: flex;
           font-size: 16px;
@@ -1047,7 +1047,7 @@ body {
           &.active,
           &:hover {
             background-color: rgba(inherit, 0.1);
-            color: rgb(inherit);
+            color: inherit;
             font-weight: inherit;
           }
           &[data-for$="/index"] {
@@ -1074,11 +1074,11 @@ body {
   }
   /* TOC */
   .toc {
-    color: rgb(inherit);
+    color: inherit;
     button.toc-header {
       h3 {
         --font-weight: 600;
-        color: rgb(inherit);
+        color: inherit;
         font-family:
           "??",
           "??",
@@ -1105,13 +1105,13 @@ body {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
       }
-      color: rgb(inherit);
+      color: inherit;
       color: inherit;
     }
     ul.toc-content.overflow {
       li,
       li > a {
-        color: rgb(inherit);
+        color: inherit;
         font-weight: inherit;
         font-size: 16px;
       }
@@ -1123,7 +1123,7 @@ body {
   .toc {
     h3 {
       --font-weight: 600;
-      color: rgb(inherit);
+      color: inherit;
       font-family:
         "??",
         "??",
@@ -1201,10 +1201,10 @@ body {
   .search {
     & > .search-button {
       -webkit-app-region: no-drag;
-      background: rgb(inherit);
+      background: inherit;
       border: 1px solid transparent;
       border-radius: 6px;
-      color: rgb(inherit);
+      color: inherit;
       font-family: inherit;
       font-size: 14.992px;
       height: 40px;
@@ -1217,7 +1217,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: rgb(inherit);
+        background-color: inherit;
         border: 0.5pt solid #555555;
         border-radius: 12px;
         box-shadow:
@@ -1226,9 +1226,9 @@ body {
           0px 30px 90px #00000033;
         margin: 12vh auto;
         & > input {
-          background-color: rgb(inherit);
+          background-color: inherit;
           border: none;
-          border-bottom: 1px solid rgb(inherit);
+          border-bottom: 1px solid inherit;
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1240,7 +1240,7 @@ body {
           background: transparent;
         }
         & > * {
-          color: rgb(inherit);
+          color: inherit;
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1253,7 +1253,7 @@ body {
           & .highlight {
             font-weight: bold;
             background-color: rgba(inherit, 0.2);
-            color: rgb(inherit);
+            color: inherit;
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1276,7 +1276,7 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: rgb(inherit);
+                color: inherit;
                 &.match-tag {
                   color: #e9973f;
                 }
@@ -1339,7 +1339,7 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: rgb(inherit);
+    background-color: inherit;
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow:
@@ -1357,7 +1357,7 @@ body {
     border: unset;
     & .popover-inner {
       border: 1px solid transparent;
-      background-color: rgb(inherit);
+      background-color: inherit;
 
       border-radius: 8px;
     }

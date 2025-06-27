@@ -310,8 +310,8 @@ body {
 :root,
 html {
   .callout {
-    background-color: rgba(oklch(48.5% 0.039 279.29), 0.1);
-    border-color: rgba(oklch(48.5% 0.039 279.29), 0.25);
+    background-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.1);
+    border-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.25);
     border-radius: 8px;
     border-style: solid;
     border-width: 0px;
@@ -319,89 +319,89 @@ html {
     mix-blend-mode: normal;
     overflow: hidden;
     padding: 12px 24px 12px 12px;
-    background-color: rgba(oklch(48.5% 0.039 279.29), 0.1);
+    background-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.1);
     overflow-x: auto;
     overflow-y: hidden;
     &[data-callout] {
-      background-color: rgba(oklch(48.5% 0.039 279.29), 0.1);
+      background-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.1);
     }
     &[data-callout="abstract"] {
-      background-color: rgba(oklch(48.5% 0.039 279.29), 0.1);
+      background-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.1);
     }
     &[data-callout="summary"] {
-      background-color: rgba(oklch(48.5% 0.039 279.29), 0.1);
+      background-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.1);
     }
     &[data-callout="tldr"] {
-      background-color: rgba(oklch(48.5% 0.039 279.29), 0.1);
+      background-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.1);
     }
     &[data-callout="info"] {
-      background-color: rgba(oklch(48.5% 0.039 279.29), 0.1);
+      background-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.1);
     }
     &[data-callout="todo"] {
-      background-color: rgba(oklch(48.5% 0.039 279.29), 0.1);
+      background-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.1);
     }
     &[data-callout="important"] {
-      background-color: rgba(oklch(48.5% 0.039 279.29), 0.1);
+      background-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.1);
     }
     &[data-callout="tip"] {
-      background-color: rgba(oklch(48.5% 0.039 279.29), 0.1);
+      background-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.1);
     }
     &[data-callout="hint"] {
-      background-color: rgba(oklch(48.5% 0.039 279.29), 0.1);
+      background-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.1);
     }
     &[data-callout="success"] {
-      background-color: rgba(oklch(48.5% 0.039 279.29), 0.1);
+      background-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.1);
     }
     &[data-callout="check"] {
-      background-color: rgba(oklch(48.5% 0.039 279.29), 0.1);
+      background-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.1);
     }
     &[data-callout="done"] {
-      background-color: rgba(oklch(48.5% 0.039 279.29), 0.1);
+      background-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.1);
     }
     &[data-callout="question"] {
-      background-color: rgba(oklch(48.5% 0.039 279.29), 0.1);
+      background-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.1);
     }
     &[data-callout="help"] {
-      background-color: rgba(oklch(48.5% 0.039 279.29), 0.1);
+      background-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.1);
     }
     &[data-callout="faq"] {
-      background-color: rgba(oklch(48.5% 0.039 279.29), 0.1);
+      background-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.1);
     }
     &[data-callout="warning"] {
-      background-color: rgba(oklch(48.5% 0.039 279.29), 0.1);
+      background-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.1);
     }
     &[data-callout="caution"] {
-      background-color: rgba(oklch(48.5% 0.039 279.29), 0.1);
+      background-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.1);
     }
     &[data-callout="attention"] {
-      background-color: rgba(oklch(48.5% 0.039 279.29), 0.1);
+      background-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.1);
     }
     &[data-callout="failure"] {
-      background-color: rgba(oklch(48.5% 0.039 279.29), 0.1);
+      background-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.1);
     }
     &[data-callout="fail"] {
-      background-color: rgba(oklch(48.5% 0.039 279.29), 0.1);
+      background-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.1);
     }
     &[data-callout="missing"] {
-      background-color: rgba(oklch(48.5% 0.039 279.29), 0.1);
+      background-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.1);
     }
     &[data-callout="danger"] {
-      background-color: rgba(oklch(48.5% 0.039 279.29), 0.1);
+      background-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.1);
     }
     &[data-callout="error"] {
-      background-color: rgba(oklch(48.5% 0.039 279.29), 0.1);
+      background-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.1);
     }
     &[data-callout="bug"] {
-      background-color: rgba(oklch(48.5% 0.039 279.29), 0.1);
+      background-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.1);
     }
     &[data-callout="example"] {
-      background-color: rgba(oklch(48.5% 0.039 279.29), 0.1);
+      background-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.1);
     }
     &[data-callout="quote"] {
-      background-color: rgba(oklch(48.5% 0.039 279.29), 0.1);
+      background-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.1);
     }
     &[data-callout="cite"] {
-      background-color: rgba(oklch(48.5% 0.039 279.29), 0.1);
+      background-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.1);
     }
   }
   .callout-title {
