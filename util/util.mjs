@@ -591,6 +591,7 @@ export function cleanup(cssString) {
   cssString = cssString.replaceAll(/rgba?\((hsla?\([^\)]+\))\);/gms, "$1;") // Fix hsl(a) in rgba
   cssString = cssString.replaceAll(/rgba?\(\s*?inherit\s*?(?:,\s*?[\d\.\%]+\s*?)?\);/gms, "inherit;")
   cssString = cssString.replaceAll(/rgba?\(\s*?(oklch\([^\)]+\)),\s*?([\d\.\%]+)\)/gms, "color.change($1, \$alpha: $2);")
+  cssString = cssString.replaceAll(/rgb\(\s*?(oklch\([^\)]+\))\)(?=$|;|,)/gms, "color.change($1)")
   cssString = cssString.replaceAll(/^\s*?caret-color: hsla?\((?:.*?\#[\da-fA-F]{3,8}.*?)\);$/gm, "")
   cssString = cssString.replaceAll(/^\s*?caret-color: hsla?\((?:.*?calc\(.*?deg.*?\).*?)\);$/gm, "")
   cssString = cssString.replaceAll(/^\s*?rgb\(light-dark\((\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3})\s*?\)\)(?=$|;|,)/gms, "light-dark(rgb($1, $2, $3), rgb($4, $5, $6))") // Fix light-dark(rgb) with 6 values

@@ -1001,6 +1001,7 @@ body {
   /* METADATA */
   .content-meta {
     color: #e8ded1;
+    color: var(--text-normal);
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {
