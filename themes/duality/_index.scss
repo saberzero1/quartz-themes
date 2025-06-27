@@ -478,136 +478,163 @@ html {
     &[data-callout] {
       --callout-color: #027aff;
       background-color: rgba(#a882ff, 0.1);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="abstract"] {
       --callout-color: #027aff;
       background-color: rgba(#a882ff, 0.1);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="summary"] {
       --callout-color: #027aff;
       background-color: rgba(#a882ff, 0.1);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="tldr"] {
       --callout-color: #027aff;
       background-color: rgba(#a882ff, 0.1);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="info"] {
       --callout-color: #53dfdd;
       background-color: rgba(#a882ff, 0.1);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="todo"] {
       --callout-color: #e9973f;
       background-color: rgba(#a882ff, 0.1);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="important"] {
       --callout-color: #fa99cd;
       background-color: rgba(#a882ff, 0.1);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="tip"] {
       --callout-color: #44cf6e;
       background-color: rgba(#a882ff, 0.1);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="hint"] {
       --callout-color: #44cf6e;
       background-color: rgba(#a882ff, 0.1);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="success"] {
       --callout-color: #44cf6e;
       background-color: rgba(#a882ff, 0.1);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="check"] {
       --callout-color: #44cf6e;
       background-color: rgba(#a882ff, 0.1);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="done"] {
       --callout-color: #44cf6e;
       background-color: rgba(#a882ff, 0.1);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="question"] {
       --callout-color: #e0de71;
       background-color: rgba(#a882ff, 0.1);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="help"] {
       --callout-color: #e0de71;
       background-color: rgba(#a882ff, 0.1);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="faq"] {
       --callout-color: #e0de71;
       background-color: rgba(#a882ff, 0.1);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="warning"] {
       --callout-color: #e0de71;
       background-color: rgba(#a882ff, 0.1);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="caution"] {
       --callout-color: #e0de71;
       background-color: rgba(#a882ff, 0.1);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="attention"] {
       --callout-color: #e0de71;
       background-color: rgba(#a882ff, 0.1);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="failure"] {
       --callout-color: #e9973f;
       background-color: rgba(#a882ff, 0.1);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="fail"] {
       --callout-color: #e9973f;
       background-color: rgba(#a882ff, 0.1);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="missing"] {
       --callout-color: #e9973f;
       background-color: rgba(#a882ff, 0.1);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="danger"] {
       --callout-color: #fb464c;
       background-color: rgba(#a882ff, 0.1);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="error"] {
       --callout-color: #fb464c;
       background-color: rgba(#a882ff, 0.1);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="bug"] {
       --callout-color: #fb464c;
       background-color: rgba(#a882ff, 0.1);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="example"] {
       --callout-color: #a882ff;
       background-color: rgba(#a882ff, 0.1);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="quote"] {
       --callout-color: #a882ff;
       background-color: rgba(#a882ff, 0.1);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="cite"] {
       --callout-color: #a882ff;
       background-color: rgba(#a882ff, 0.1);
+      --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
     }
   }
@@ -626,6 +653,7 @@ html {
         #ff4500
       );
       font-weight: 400;
+      color: var(--color);
     }
     .callout-title-inner {
       --font-weight: 600;
