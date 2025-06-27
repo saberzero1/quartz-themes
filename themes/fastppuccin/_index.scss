@@ -24,12 +24,12 @@ html[saved-theme="dark"] {
   }
   --mono-rgb-100: 255, 255, 255;
   caret-color: light-dark(
-    rgb(light-dark(76, 79, 105, 198, 208, 245)),
+    light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
     rgb(light-dark(76, 79, 105, 198, 208, 245))
   );
   --mono-rgb-100: 255, 255, 255;
   caret-color: light-dark(
-    rgb(light-dark(76, 79, 105, 198, 208, 245)),
+    light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
     rgb(light-dark(76, 79, 105, 198, 208, 245))
   );
 }
@@ -52,13 +52,13 @@ html[saved-theme="light"] {
   --mono-rgb-100: 0, 0, 0;
 
   caret-color: light-dark(
-    rgb(light-dark(76, 79, 105, 198, 208, 245)),
+    light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
     rgb(light-dark(76, 79, 105, 198, 208, 245))
   );
   --mono-rgb-100: 0, 0, 0;
 
   caret-color: light-dark(
-    rgb(light-dark(76, 79, 105, 198, 208, 245)),
+    light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
     rgb(light-dark(76, 79, 105, 198, 208, 245))
   );
 }
@@ -324,15 +324,15 @@ body {
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
   caret-color: light-dark(
-    rgb(light-dark(76, 79, 105, 198, 208, 245)),
+    light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
     rgb(light-dark(76, 79, 105, 198, 208, 245))
   );
   color: light-dark(
-    rgb(light-dark(76, 79, 105, 198, 208, 245)),
+    light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
     rgb(light-dark(76, 79, 105, 198, 208, 245))
   );
   contain: initial;
@@ -492,7 +492,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
   background-color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
   section,
@@ -501,7 +501,7 @@ body {
     &.left:has(.explorer),
     &.right {
       background-color: light-dark(
-        rgb(light-dark(239, 241, 245, 30, 30, 46)),
+        light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
         rgb(light-dark(239, 241, 245, 30, 30, 46))
       );
     }
@@ -837,7 +837,7 @@ body {
     background-color: transparent;
     box-shadow: none;
     color: light-dark(
-      rgb(light-dark(124, 127, 147, 142, 149, 179)),
+      light-dark(rgb(124, 127, 147), rgb(142, 149, 179)),
       rgb(light-dark(124, 127, 147, 142, 149, 179))
     );
     font-family:
@@ -912,7 +912,7 @@ body {
     .explorer-content {
       @media all and ($mobile) {
         background-color: light-dark(
-          rgb(light-dark(239, 241, 245, 30, 30, 46)),
+          light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
           rgb(light-dark(239, 241, 245, 30, 30, 46))
         );
       }
@@ -954,11 +954,11 @@ body {
         border-inline-start: 1px solid
           light-dark(
             light-dark(
-              rgb(light-dark(239, 241, 245, 30, 30, 46)),
+              light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
               rgb(light-dark(239, 241, 245, 30, 30, 46))
             ),
             light-dark(
-              rgb(light-dark(239, 241, 245, 30, 30, 46)),
+              light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
               rgb(light-dark(239, 241, 245, 30, 30, 46))
             )
           );
@@ -1108,7 +1108,7 @@ body {
       border: 1px solid transparent;
       border-radius: 5px;
       color: light-dark(
-        rgb(light-dark(76, 79, 105, 198, 208, 245)),
+        light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
         rgb(light-dark(76, 79, 105, 198, 208, 245))
       );
       font-family: inherit;
@@ -1124,7 +1124,7 @@ body {
     & > .search-container {
       & > .search-space {
         background-color: light-dark(
-          rgb(light-dark(239, 241, 245, 30, 30, 46)),
+          light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
           rgb(light-dark(239, 241, 245, 30, 30, 46))
         );
         border: 0.5pt solid #555555;
@@ -1136,13 +1136,13 @@ body {
         margin: 12vh auto;
         & > input {
           background-color: light-dark(
-            rgb(light-dark(239, 241, 245, 30, 30, 46)),
+            light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
             rgb(light-dark(239, 241, 245, 30, 30, 46))
           );
           border: none;
           border-bottom: 1px solid
             light-dark(
-              rgb(light-dark(230, 233, 239, 24, 24, 37)),
+              light-dark(rgb(230, 233, 239), rgb(24, 24, 37)),
               rgb(light-dark(230, 233, 239, 24, 24, 37))
             );
           border-radius: 0;
@@ -1157,7 +1157,7 @@ body {
         }
         & > * {
           color: light-dark(
-            rgb(light-dark(76, 79, 105, 198, 208, 245)),
+            light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
             rgb(light-dark(76, 79, 105, 198, 208, 245))
           );
           background: transparent;
@@ -1173,7 +1173,7 @@ body {
             font-weight: bold;
             background-color: #b4befe33;
             color: light-dark(
-              rgb(light-dark(76, 79, 105, 198, 208, 245)),
+              light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
               rgb(light-dark(76, 79, 105, 198, 208, 245))
             );
           }
@@ -1196,7 +1196,7 @@ body {
               & > ul > li > p {
                 background-color: transparent;
                 color: light-dark(
-                  rgb(light-dark(76, 79, 105, 198, 208, 245)),
+                  light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
                   rgb(light-dark(76, 79, 105, 198, 208, 245))
                 );
                 &.match-tag {
@@ -1262,7 +1262,7 @@ body {
   /* POPOVER */
   .popover {
     background-color: light-dark(
-      rgb(light-dark(239, 241, 245, 30, 30, 46)),
+      light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
       rgb(light-dark(239, 241, 245, 30, 30, 46))
     );
     border: 1px solid transparent;
@@ -1283,7 +1283,7 @@ body {
     & .popover-inner {
       border: 1px solid transparent;
       background-color: light-dark(
-        rgb(light-dark(239, 241, 245, 30, 30, 46)),
+        light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
         rgb(light-dark(239, 241, 245, 30, 30, 46))
       );
 

@@ -195,19 +195,19 @@ Disabled features */
 
 /* Desktop font sizes */
 body {
-  --font-adaptive-normal: var(--font-normal);
-  --font-adaptive-small: var(--font-small);
-  --font-adaptive-smaller: var(--font-smaller);
-  --font-adaptive-smallest: var(--font-smallest);
+  --font-adaptive-normal: 16px;
+  --font-adaptive-small: 13px;
+  --font-adaptive-smaller: 11px;
+  --font-adaptive-smallest: 10px;
   --line-width-adaptive: var(--line-width);
 }
 
 /* Phone font sizes */
 @media (max-width: 400pt) {
   .is-mobile {
-    --font-adaptive-small: calc(var(--font-small) + 2px);
-    --font-adaptive-smaller: calc(var(--font-smaller) + 2px);
-    --font-adaptive-smallest: calc(var(--font-smallest) + 2px);
+    --font-adaptive-small: 15px;
+    --font-adaptive-smaller: 13px;
+    --font-adaptive-smallest: 12px;
     --max-width: 88%;
   }
 }
@@ -215,10 +215,10 @@ body {
 /* Tablet font sizes */
 @media (min-width: 400pt) {
   .is-mobile {
-    --font-adaptive-normal: calc(var(--font-normal) + 4px);
-    --font-adaptive-small: calc(var(--font-small) + 3px);
-    --font-adaptive-smaller: calc(var(--font-smaller) + 2px);
-    --font-adaptive-smallest: calc(var(--font-smallest) + 2px);
+    --font-adaptive-normal: 20px;
+    --font-adaptive-small: 16px;
+    --font-adaptive-smaller: 13px;
+    --font-adaptive-smallest: 12px;
     --line-width-adaptive: calc(var(--line-width) + 6rem);
     --max-width: 90%;
   }
@@ -942,7 +942,7 @@ body:not(.is-mobile)
 }
 .markdown-preview-view .table-view-table > thead > tr > th {
   font-weight: 600;
-  font-size: vcalc(var(--font-adaptive-normal) - 1px);
+  font-size: calc(var(--font-adaptive-normal) - 1px);
   color: var(--text-normal);
   border-bottom: 1px solid var(--text-faint);
   cursor: var(--cursor);
