@@ -3,7 +3,7 @@ import calc from "postcss-calc"
 import postcssCustomProperties from "postcss-custom-properties"
 import postcss from "postcss"
 import postcssRelativeColorSyntax from "@csstools/postcss-relative-color-syntax"
-import { cleanRulesAfterRun } from "./util.mjs"
+import { cleanup, cleanRulesAfterRun } from "./util.mjs"
 
 export default function generateStaticCSS(cssString, themeName) {
   // TODO: investigate why Shiba Inu theme is not working with colors
@@ -25,6 +25,9 @@ export default function generateStaticCSS(cssString, themeName) {
     .process(cssString)
     .css
   }
+
+  cleanup(cssString)
+  compareString = cssString
 
   cssString = postcss()
   .use(calc({ preserve: false }))

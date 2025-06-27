@@ -581,12 +581,15 @@ export function cleanRulesAfterRun(cssString) {
   return cleanup(cssString)
 }
 
-function cleanup(cssString) {
-  cssString = cssString.replace(/rgba\(((?:[\d\.]+,\s*){3,})(?:[\d\.]+,\s*)([\d\.]+)\);/gms, "rgba($1$2);") // Fix rgba with more than 4 values
-  cssString = cssString.replace(/rgba?\((\#[\da-fA-F]{3,8})\);/gms, "$1;") // Fix hex colors in rgba
-  cssString = cssString.replace(/\#{2,}([\da-fA-F]{3,8});/gms, "#$1;") // Fix hex colors with more than 2 #
-  cssString = cssString.replace(/rgba?\((light-dark\([^\)]+\))\);/gms, "$1;") // Fix light-dark() in rgba
-  cssString = cssString.replace(/;\s*;/gms, ";") // Remove duplicate semicolons
+export function cleanup(cssString) {
+  cssString = cssString.replaceAll(/rgba\(((?:[\d\.]+,\s*){3,})(?:[\d\.]+,\s*)([\d\.]+)\);/gms, "rgba($1$2);") // Fix rgba with more than 4 values
+  cssString = cssString.replaceAll(/rgba?\((\#[\da-fA-F]{3,8})\);/gms, "$1;") // Fix hex colors in rgba
+  cssString = cssString.replaceAll(/\#{2,}([\da-fA-F]{3,8});/gms, "#$1;") // Fix hex colors with more than 2 #
+  cssString = cssString.replaceAll(/rgba?\((light-dark\([^\)]+\))\);/gms, "$1;") // Fix light-dark() in rgba
+  cssString = cssString.replaceAll(/rgba?\((rgba?\([^\)]+\))\);/gms, "$1;") // Fix rgb(a) in rgba
+  cssString = cssString.replaceAll(/rgba?\((hsla?\([^\)]+\))\);/gms, "$1;") // Fix hsl(a) in rgba
+  cssString = cssString.replaceAll(/rgba?\(\s*?inherit\s*?\);/gms, "inherit;")
+  cssString = cssString.replaceAll(/;\s*;/gms, ";") // Remove duplicate semicolons
 
   return cssString
 }
