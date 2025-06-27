@@ -582,6 +582,7 @@ export function cleanRulesAfterRun(cssString) {
 }
 
 export function cleanup(cssString) {
+  cssString = cssString.replaceAll(/^\s*?((?:background-)?color:)\s*?rgba\(\s*?light-dark\((\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3})\s*?\),\s*?([\d\.\%]+)\s*?\)(?=$|;|,)/gms, "$1 light-dark(rgba($2, $3, $4, $8), rgba($5, $6, $7, $8));") // Fix light-dark(rgb) with 6 values
   cssString = cssString.replaceAll(/rgba\(((?:[\d\.]+,\s*){3,})([\d\.]+,\s*)([\d\.\%]+)\);/gms, "rgba($1$3);") // Fix rgba with more than 4 values
   cssString = cssString.replaceAll(/rgba?\((\#[\da-fA-F]{3,8})\);/gms, "$1;") // Fix hex colors in rgba
   cssString = cssString.replaceAll(/\#{2,}([\da-fA-F]{3,8});/gms, "#$1;") // Fix hex colors with more than 2 #
@@ -595,6 +596,8 @@ export function cleanup(cssString) {
   cssString = cssString.replaceAll(/^\s*?hsl\(light-dark\(([\d\.\%]+),\s*?([\d\.\%]+),\s*?([\d\.\%]+),\s*?([\d\.\%]+),\s*?([\d\.\%]+),\s*?([\d\.\%]+)\s*?\)\)(?=$|;|,)/gms, "light-dark(hsl($1, $2, $3), hsl($4, $5, $6))") // Fix light-dark(rgb) with 6 values
   cssString = cssString.replaceAll(/^\s*?hsl\(light-dark\(([\d\.\%]+),\s?([\d\.\%]+)\),\s*?light-dark\(([\d\.\%]+),\s?([\d\.\%]+)\),\s*?light-dark\(([\d\.\%]+),\s?([\d\.\%]+)\)\s*?\)(?=$|;|,)/gms, "light-dark(hsl($1, $3, $5), hsl($2, $4, $6))") // Fix light-dark(hsl) with 6 values
   cssString = cssString.replaceAll(/;\s*;/gms, ";") // Remove duplicate semicolons
+
+  cssString = cssString.replaceAll(/^\s*?color:\s*?hsl\(light-dark\([^\#\)]+\),\s*?(light-dark\(\#[\da-fA-F]{3,8},\s*?\#[\da-fA-F]{3,8}\))\)\)(?=$|;|,)/gms, "color: $1")
 
   return cssString
 }

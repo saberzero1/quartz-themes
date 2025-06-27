@@ -321,6 +321,7 @@ body {
 :root,
 html {
   .callout {
+    --callout-color: 54, 73, 84;
     background-color: transparent;
     border: 1px #ffffff24 solid;
     border-color: #9e9e9e40;
@@ -332,88 +333,144 @@ html {
     overflow: hidden;
     padding: 1em;
     background-color: transparent;
+    background-color: var(--bg);
+    border-color: var(--border);
     overflow-x: auto;
     overflow-y: hidden;
     &[data-callout] {
+      --callout-color: 54, 73, 84;
       background-color: transparent;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="abstract"] {
+      --callout-color: 29, 40, 46;
       background-color: transparent;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="summary"] {
+      --callout-color: 29, 40, 46;
       background-color: transparent;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="tldr"] {
+      --callout-color: 29, 40, 46;
       background-color: transparent;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="info"] {
+      --callout-color: 54, 73, 84;
       background-color: transparent;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="todo"] {
+      --callout-color: 54, 73, 84;
       background-color: transparent;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="important"] {
+      --callout-color: 29, 40, 46;
       background-color: transparent;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="tip"] {
+      --callout-color: 29, 40, 46;
       background-color: transparent;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="hint"] {
+      --callout-color: 29, 40, 46;
       background-color: transparent;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="success"] {
+      --callout-color: 53, 76, 75;
       background-color: transparent;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="check"] {
+      --callout-color: 53, 76, 75;
       background-color: transparent;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="done"] {
+      --callout-color: 53, 76, 75;
       background-color: transparent;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="question"] {
+      --callout-color: 89, 74, 58;
       background-color: transparent;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="help"] {
+      --callout-color: 89, 74, 58;
       background-color: transparent;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="faq"] {
+      --callout-color: 89, 74, 58;
       background-color: transparent;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="warning"] {
+      --callout-color: 89, 74, 58;
       background-color: transparent;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="caution"] {
+      --callout-color: 89, 74, 58;
       background-color: transparent;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="attention"] {
+      --callout-color: 89, 74, 58;
       background-color: transparent;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="failure"] {
+      --callout-color: 89, 65, 65;
       background-color: transparent;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="fail"] {
+      --callout-color: 89, 65, 65;
       background-color: transparent;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="missing"] {
+      --callout-color: 89, 65, 65;
       background-color: transparent;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="danger"] {
+      --callout-color: 89, 65, 65;
       background-color: transparent;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="error"] {
+      --callout-color: 89, 65, 65;
       background-color: transparent;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="bug"] {
+      --callout-color: 89, 65, 65;
       background-color: transparent;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="example"] {
+      --callout-color: 68, 63, 87;
       background-color: transparent;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="quote"] {
+      --callout-color: 158, 158, 158;
       background-color: transparent;
+      --bg: rgba(var(--callout-color), 0.1);
     }
     &[data-callout="cite"] {
+      --callout-color: 158, 158, 158;
       background-color: transparent;
+      --bg: rgba(var(--callout-color), 0.1);
     }
   }
   .callout-title {
