@@ -260,6 +260,9 @@ html[saved-theme="light"] {
   --text-faint: light-dark(#4d4d4d, #aa4400);
   --text-muted: light-dark(#333333, #cc5500);
   --text-normal: light-dark(#000000, #ff6600);
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-50);
 }
 body {
   --text-normal: var(--color-base-100);
@@ -400,6 +403,9 @@ body {
   text-rendering: optimizeLegibility;
   user-select: none;
   width: 100%;
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-50);
 }
 /* CALLOUTS */
 :root,

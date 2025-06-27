@@ -142,6 +142,9 @@ html[saved-theme="light"] {
   --color-yellow: light-dark(#e0ac00, #e0de71);
   --h1-color: light-dark(#ff8787, #ededed);
   --text-highlight-bg: light-dark(#ff8787, #e26868);
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-50);
 }
 body {
   --text-normal: var(--color-base-100);
@@ -315,6 +318,9 @@ body {
   transition: all 0.3s ease-in-out;
   user-select: none;
   width: 100%;
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-50);
 }
 /* CALLOUTS */
 :root,

@@ -258,6 +258,9 @@ html[saved-theme="light"] {
   --link-color-hover: light-dark(#b3c3b5, #344437);
   --link-external-color-hover: light-dark(#97bd83, #193f04);
   --text-normal: light-dark(#212121, #dedede);
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-50);
 }
 body {
   --text-normal: var(--color-base-100);
@@ -412,6 +415,9 @@ body {
   text-rendering: optimizeLegibility;
   user-select: none;
   width: 100%;
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-50);
 }
 /* CALLOUTS */
 :root,

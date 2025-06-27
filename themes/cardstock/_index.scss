@@ -264,6 +264,9 @@ html[saved-theme="light"] {
   --text-highlight-bg: light-dark(#f3e118, #756b13);
   --text-muted: light-dark(#949494, #f0eae2);
   --text-normal: light-dark(#2d2c2c, #ffffff);
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-50);
 }
 body {
   --text-normal: var(--color-base-100);
@@ -415,6 +418,9 @@ body {
   text-rendering: optimizeLegibility;
   user-select: none;
   width: 100%;
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-50);
 }
 /* CALLOUTS */
 :root,
