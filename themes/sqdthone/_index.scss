@@ -780,7 +780,7 @@ body {
   }
   h3 {
     --font-weight: 600;
-    color: hsl(light-dark(226, 40%, 52%, 226, 40%, 44%));
+    color: light-dark(hsl(226, 40%, 52%), hsl(226, 40%, 44%));
     font-family: "Tahoma", serif;
     font-size: 27px;
     font-style: normal;
@@ -796,7 +796,7 @@ body {
   }
   h4 {
     --font-weight: 600;
-    color: hsl(light-dark(226, 40%, 56%, 226, 40%, 48%));
+    color: light-dark(hsl(226, 40%, 56%), hsl(226, 40%, 48%));
     font-family: "Tahoma", serif;
     font-size: 24px;
     font-style: normal;
@@ -812,7 +812,7 @@ body {
   }
   h5 {
     --font-weight: 600;
-    color: hsl(light-dark(226, 40%, 60%, 226, 40%, 52%));
+    color: light-dark(hsl(226, 40%, 60%), hsl(226, 40%, 52%));
     font-family: "Tahoma", serif;
     font-size: 21px;
     font-style: normal;
@@ -828,7 +828,7 @@ body {
   }
   h6 {
     --font-weight: 600;
-    color: hsl(light-dark(226, 40%, 64%, 226, 40%, 56%));
+    color: light-dark(hsl(226, 40%, 64%), hsl(226, 40%, 56%));
     font-family: "Tahoma", serif;
     font-size: 18px;
     font-style: normal;
@@ -952,7 +952,7 @@ body {
   .backlinks {
     h3 {
       --font-weight: 600;
-      color: hsl(light-dark(226, 40%, 52%, 226, 40%, 44%));
+      color: light-dark(hsl(226, 40%, 52%), hsl(226, 40%, 44%));
       font-family: "Tahoma", serif;
       font-size: 27px;
       font-style: normal;
@@ -1047,7 +1047,7 @@ body {
           color: inherit;
           &.active,
           &:hover {
-            background-color: hsl(light-dark(15, 20%, 96%, 300, 6%, 10%));
+            background-color: light-dark(hsl(15, 20%, 96%), hsl(300, 6%, 10%));
             color: hsl(
               light-dark(
                 light-dark(#ec7500, #e9973f),
@@ -1080,11 +1080,11 @@ body {
   }
   /* TOC */
   .toc {
-    color: hsl(light-dark(226, 40%, 52%, 226, 40%, 44%));
+    color: light-dark(hsl(226, 40%, 52%), hsl(226, 40%, 44%));
     button.toc-header {
       h3 {
         --font-weight: 600;
-        color: hsl(light-dark(226, 40%, 52%, 226, 40%, 44%));
+        color: light-dark(hsl(226, 40%, 52%), hsl(226, 40%, 44%));
         font-family: "Tahoma", serif;
         font-size: 27px;
         font-style: normal;
@@ -1095,7 +1095,7 @@ body {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
       }
-      color: hsl(light-dark(226, 40%, 52%, 226, 40%, 44%));
+      color: light-dark(hsl(226, 40%, 52%), hsl(226, 40%, 44%));
       color: inherit;
     }
     ul.toc-content.overflow {
@@ -1114,7 +1114,7 @@ body {
   .toc {
     h3 {
       --font-weight: 600;
-      color: hsl(light-dark(226, 40%, 52%, 226, 40%, 44%));
+      color: light-dark(hsl(226, 40%, 52%), hsl(226, 40%, 44%));
       font-family: "Tahoma", serif;
       font-size: 27px;
       font-style: normal;
@@ -1192,7 +1192,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: hsl(light-dark(15, 20%, 84%, 300, 6%, 22%));
+        background-color: light-dark(hsl(15, 20%, 84%), hsl(300, 6%, 22%));
         border: 0.5pt solid #555555;
         border-radius: 12px;
         box-shadow:
@@ -1267,7 +1267,7 @@ body {
                 background-color: transparent;
                 color: hsl(194, 14%, 40%);
                 &.match-tag {
-                  color: hsl(light-dark(15, 20%, 92%, 300, 6%, 14%));
+                  color: light-dark(hsl(15, 20%, 92%), hsl(300, 6%, 14%));
                 }
               }
             }
