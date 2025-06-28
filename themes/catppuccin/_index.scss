@@ -23,9 +23,9 @@ html[saved-theme="dark"] {
     color: var(--shiki-dark);
   }
   --mono-rgb-100: 255, 255, 255;
-  --text-accent: #ab9af5;
+  --text-accent: hsl(251, 81.6%, 78.2%);
   --mono-rgb-100: 255, 255, 255;
-  --text-accent: #ab9af5;
+  --text-accent: hsl(251, 81.6%, 78.2%);
 }
 
 :root[saved-theme="light"],
@@ -200,8 +200,8 @@ html[saved-theme="light"] {
   --link-weight: var(--font-weight);
   --link-external-color: var(--text-accent);
   --link-external-color-hover: var(--text-accent-hover);
-  --color-accent-2: light-dark(#ab9af5, #cdc5fa);
-  --color-accent-hsl: light-dark(#8b6cef, #8b6cef);
+  --color-accent-2: light-dark(hsl(251, 81.6%, 78.2%), hsl(249, 84%, 87.72%));
+  --color-accent-hsl: light-dark(hsl(254, 80%, 68%), hsl(254, 80%, 68%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
@@ -246,34 +246,34 @@ body {
   --link-weight: var(--font-weight);
   --link-external-color: var(--text-accent);
   --link-external-color-hover: var(--text-accent-hover);
-  --background-modifier-border: #313244;
+  --background-modifier-border: rgb(49, 50, 68);
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;
-  --background-modifier-hover: #ffffff13;
-  --background-primary: #1e1e2e;
+  --background-modifier-hover: rgb(255, 255, 255, 7.5%);
+  --background-primary: rgb(30, 30, 46);
   --bold-color: inherit;
   --bold-weight: 600;
-  --checkbox-border-color: #45475a;
-  --checkbox-border-color-hover: #a6adc8;
-  --checkbox-color: #cba6f7;
-  --checkbox-color-hover: #ab9af5;
-  --checkbox-marker-color: #1e1e2e;
+  --checkbox-border-color: rgb(69, 71, 90);
+  --checkbox-border-color-hover: rgb(166, 173, 200);
+  --checkbox-color: rgb(203, 166, 247);
+  --checkbox-color-hover: hsl(251, 81.6%, 78.2%);
+  --checkbox-marker-color: rgb(30, 30, 46);
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --code-comment: #45475a;
+  --code-comment: rgb(69, 71, 90);
   --code-function: #e0de71;
   --code-important: #e9973f;
   --code-keyword: #fa99cd;
-  --code-normal: #a6adc8;
+  --code-normal: rgb(166, 173, 200);
   --code-property: #53dfdd;
-  --code-punctuation: #a6adc8;
+  --code-punctuation: rgb(166, 173, 200);
   --code-string: #44cf6e;
   --code-tag: #fb464c;
   --code-value: #a882ff;
-  --collapse-icon-color: #45475a;
-  --collapse-icon-color-collapsed: #a6adc8;
-  --color-accent-2: light-dark(#ab9af5, #cdc5fa);
-  --color-accent-hsl: light-dark(#8b6cef, #8b6cef);
+  --collapse-icon-color: rgb(69, 71, 90);
+  --collapse-icon-color-collapsed: rgb(166, 173, 200);
+  --color-accent-2: light-dark(hsl(251, 81.6%, 78.2%), hsl(249, 84%, 87.72%));
+  --color-accent-hsl: light-dark(hsl(254, 80%, 68%), hsl(254, 80%, 68%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
@@ -302,48 +302,48 @@ body {
   --font-weight: 400;
   --graph-line: #3f3f3f;
   --graph-node-tag: #44cf6e;
-  --graph-node-unresolved: #45475a;
+  --graph-node-unresolved: rgb(69, 71, 90);
   --h1-color: inherit;
   --h1-font: inherit;
   --h3-line-height: 1.5;
   --hr-color: transparent;
   --hr-thickness: 2px;
-  --icon-color: #a6adc8;
-  --inline-title-color: #b4befe;
+  --icon-color: rgb(166, 173, 200);
+  --inline-title-color: rgb(180, 190, 254);
   --inline-title-font: inherit;
   --interactive-accent-hsl: 254, 80%, 68%;
   --italic-color: inherit;
-  --link-color: #89b4fa;
-  --link-color-hover: #89b4fa;
-  --link-external-color: #94e2d5;
-  --link-external-color-hover: #94e2d5;
+  --link-color: rgb(137, 180, 250);
+  --link-color-hover: rgb(137, 180, 250);
+  --link-external-color: rgb(148, 226, 213);
+  --link-external-color-hover: rgb(148, 226, 213);
   --link-external-filter: none;
   --link-weight: 600;
   --mono-rgb-100: 205, 214, 244;
   --p-spacing: 1rem;
-  --search-icon-color: #a6adc8;
+  --search-icon-color: rgb(166, 173, 200);
   --tag-background: transparent;
   --tag-background-hover: 0;
-  --tag-border-color: #8b6cef1a;
-  --tag-border-color-hover: #8b6cef26;
+  --tag-border-color: hsl(254, 80%, 68%, 10%);
+  --tag-border-color-hover: hsl(254, 80%, 68%, 15%);
   --tag-border-width: 0;
-  --tag-color: #b4befe;
-  --tag-color-hover: #b4befe;
+  --tag-color: rgb(180, 190, 254);
+  --tag-color-hover: rgb(180, 190, 254);
   --tag-decoration: none;
   --tag-decoration-hover: underline;
   --tag-radius: 0.8em;
   --tag-weight: inherit;
-  --text-accent: #b4befe;
-  --text-accent-hover: #b4befe;
-  --text-faint: #45475a;
-  --text-highlight-bg: #f5e0dc;
-  --text-muted: #a6adc8;
-  --text-normal: #cdd6f4;
-  -webkit-tap-highlight-color: #ffffff00;
+  --text-accent: rgb(180, 190, 254);
+  --text-accent-hover: rgb(180, 190, 254);
+  --text-faint: rgb(69, 71, 90);
+  --text-highlight-bg: rgb(245, 224, 220, 100%);
+  --text-muted: rgb(166, 173, 200);
+  --text-normal: rgb(205, 214, 244);
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-user-select: none;
-  background-color: #1e1e2e;
-  caret-color: #ab9af5;
-  color: #181825;
+  background-color: rgb(30, 30, 46);
+  caret-color: hsl(251, 81.6%, 78.2%);
+  color: rgb(24, 24, 37);
   contain: initial;
   font-family:
     "??",
@@ -387,8 +387,8 @@ body {
 html {
   .callout {
     --callout-color: 2, 122, 255;
-    background-color: #9e9e9e1a;
-    border-color: #9e9e9e99;
+    background-color: rgb(158, 158, 158, 10%);
+    border-color: rgb(158, 158, 158, 60%);
     border-radius: 4px;
     border-style: solid;
     border-width: 0.25px;
@@ -396,196 +396,196 @@ html {
     mix-blend-mode: normal;
     overflow: hidden;
     padding: 12px 24px 12px 12px;
-    background-color: #9e9e9e1a;
+    background-color: rgb(158, 158, 158, 10%);
     background-color: var(--bg);
     border-color: var(--border);
     overflow-x: auto;
     overflow-y: hidden;
     &[data-callout] {
       --callout-color: 2, 122, 255;
-      background-color: #9e9e9e1a;
+      background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="abstract"] {
       --callout-color: 83, 223, 221;
-      background-color: #9e9e9e1a;
+      background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="summary"] {
       --callout-color: 83, 223, 221;
-      background-color: #9e9e9e1a;
+      background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="tldr"] {
       --callout-color: 83, 223, 221;
-      background-color: #9e9e9e1a;
+      background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="info"] {
       --callout-color: 2, 122, 255;
-      background-color: #9e9e9e1a;
+      background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="todo"] {
       --callout-color: 2, 122, 255;
-      background-color: #9e9e9e1a;
+      background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="important"] {
       --callout-color: 83, 223, 221;
-      background-color: #9e9e9e1a;
+      background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="tip"] {
       --callout-color: 83, 223, 221;
-      background-color: #9e9e9e1a;
+      background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="hint"] {
       --callout-color: 83, 223, 221;
-      background-color: #9e9e9e1a;
+      background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="success"] {
       --callout-color: 68, 207, 110;
-      background-color: #9e9e9e1a;
+      background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="check"] {
       --callout-color: 68, 207, 110;
-      background-color: #9e9e9e1a;
+      background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="done"] {
       --callout-color: 68, 207, 110;
-      background-color: #9e9e9e1a;
+      background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="question"] {
       --callout-color: 224, 222, 113;
-      background-color: #9e9e9e1a;
+      background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="help"] {
       --callout-color: 224, 222, 113;
-      background-color: #9e9e9e1a;
+      background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="faq"] {
       --callout-color: 224, 222, 113;
-      background-color: #9e9e9e1a;
+      background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="warning"] {
       --callout-color: 233, 151, 63;
-      background-color: #9e9e9e1a;
+      background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="caution"] {
       --callout-color: 233, 151, 63;
-      background-color: #9e9e9e1a;
+      background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="attention"] {
       --callout-color: 233, 151, 63;
-      background-color: #9e9e9e1a;
+      background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="failure"] {
       --callout-color: 251, 70, 76;
-      background-color: #9e9e9e1a;
+      background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="fail"] {
       --callout-color: 251, 70, 76;
-      background-color: #9e9e9e1a;
+      background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="missing"] {
       --callout-color: 251, 70, 76;
-      background-color: #9e9e9e1a;
+      background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="danger"] {
       --callout-color: 251, 70, 76;
-      background-color: #9e9e9e1a;
+      background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="error"] {
       --callout-color: 251, 70, 76;
-      background-color: #9e9e9e1a;
+      background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="bug"] {
       --callout-color: 251, 70, 76;
-      background-color: #9e9e9e1a;
+      background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="example"] {
       --callout-color: 168, 130, 255;
-      background-color: #9e9e9e1a;
+      background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="quote"] {
       --callout-color: 158, 158, 158;
-      background-color: #9e9e9e1a;
+      background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="cite"] {
       --callout-color: 158, 158, 158;
-      background-color: #9e9e9e1a;
+      background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
@@ -593,7 +593,7 @@ html {
   }
   .callout-title {
     align-items: flex-start;
-    color: #9e9e9e;
+    color: rgb(158, 158, 158);
     display: flex;
     font-size: inherit;
     gap: 4px;
@@ -622,13 +622,13 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: #1e1e2e;
+  background-color: rgb(30, 30, 46);
   section,
   .page > #quartz-body .sidebar {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: #1e1e2e;
+      background-color: rgb(30, 30, 46);
     }
   }
   .highlight,
@@ -784,8 +784,8 @@ body {
   /* HEADINGS */
   h1 {
     --font-weight: 700;
-    --h1-color: #b4befe;
-    color: #b4befe;
+    --h1-color: rgb(180, 190, 254);
+    color: rgb(180, 190, 254);
     font-family: inherit;
     font-size: 2em;
     font-style: normal;
@@ -801,7 +801,7 @@ body {
   }
   h2 {
     --font-weight: 600;
-    color: #b4befe;
+    color: rgb(180, 190, 254);
     font-family: inherit;
     font-size: 1.6em;
     font-style: normal;
@@ -817,7 +817,7 @@ body {
   }
   h3 {
     --font-weight: 600;
-    color: #b4befe;
+    color: rgb(180, 190, 254);
     font-family: inherit;
     font-size: 1.37em;
     font-style: normal;
@@ -833,7 +833,7 @@ body {
   }
   h4 {
     --font-weight: 600;
-    color: #b4befe;
+    color: rgb(180, 190, 254);
     font-family: inherit;
     font-size: 1.25em;
     font-style: normal;
@@ -849,7 +849,7 @@ body {
   }
   h5 {
     --font-weight: 600;
-    color: #b4befe;
+    color: rgb(180, 190, 254);
     font-family: inherit;
     font-size: 1.12em;
     font-style: normal;
@@ -865,7 +865,7 @@ body {
   }
   h6 {
     --font-weight: 600;
-    color: #b4befe;
+    color: rgb(180, 190, 254);
     font-family: inherit;
     font-size: 1.12em;
     font-style: normal;
@@ -881,7 +881,7 @@ body {
   }
   /* CODE */
   pre {
-    background-color: #181825;
+    background-color: rgb(24, 24, 37);
     border: 0px solid transparent;
     border-radius: 4px;
     min-height: 38px;
@@ -946,10 +946,10 @@ body {
   }
   code {
     -webkit-box-decoration-break: clone;
-    background-color: #181825;
+    background-color: rgb(24, 24, 37);
     border: 0px solid transparent;
     border-radius: 4px;
-    color: #a6adc8;
+    color: rgb(166, 173, 200);
     font-family:
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -958,9 +958,9 @@ body {
     padding: 0.15em 0.3em;
   }
   .clipboard-button {
-    background-color: #11111b;
+    background-color: rgb(17, 17, 27);
     box-shadow: none;
-    color: #a6adc8;
+    color: rgb(166, 173, 200);
     font-family:
       "??",
       "Nunito Sans",
@@ -991,7 +991,7 @@ body {
     position: absolute;
     top: 0;
     &:hover {
-      background-color: #b4befe;
+      background-color: rgb(180, 190, 254);
     }
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -999,18 +999,18 @@ body {
   }
   /* METADATA */
   .content-meta {
-    color: #181825;
+    color: rgb(24, 24, 37);
     color: var(--text-normal);
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: #45475a;
+    color: rgb(69, 71, 90);
   }
   /* BACKLINKS */
   .backlinks {
     h3 {
       --font-weight: 600;
-      color: #b4befe;
+      color: rgb(180, 190, 254);
       font-family: inherit;
       font-size: 1.37em;
       font-style: normal;
@@ -1022,7 +1022,7 @@ body {
       margin-block-start: 0rem;
     }
     ul li {
-      color: #181825;
+      color: rgb(24, 24, 37);
       font-weight: 500;
     }
   }
@@ -1036,16 +1036,16 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: #b4befe;
+      color: rgb(180, 190, 254);
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: #1e1e2e;
+        background-color: rgb(30, 30, 46);
       }
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
-        color: #181825;
+        color: rgb(24, 24, 37);
         text-overflow: ellipsis;
         position: relative;
         & > svg {
@@ -1077,7 +1077,7 @@ body {
         -webkit-mask-image: var(--folder-open-icon);
       }
       .folder-outer > ul.content {
-        border-inline-start: 2px solid #45475a;
+        border-inline-start: 2px solid rgb(69, 71, 90);
         margin-bottom: 1px;
         margin-inline-start: 12px;
         padding-inline-start: 4px;
@@ -1087,7 +1087,7 @@ body {
         position: relative;
         a {
           border-radius: 4px;
-          color: #181825;
+          color: rgb(24, 24, 37);
           cursor: pointer;
           display: flex;
           font-size: 16px;
@@ -1101,8 +1101,8 @@ body {
           color: inherit;
           &.active,
           &:hover {
-            background-color: #b4befee6;
-            color: #181825;
+            background-color: rgb(180, 190, 254, 90%);
+            color: rgb(24, 24, 37);
             font-weight: inherit;
           }
           &[data-for$="/index"] {
@@ -1129,11 +1129,11 @@ body {
   }
   /* TOC */
   .toc {
-    color: #b4befe;
+    color: rgb(180, 190, 254);
     button.toc-header {
       h3 {
         --font-weight: 600;
-        color: #b4befe;
+        color: rgb(180, 190, 254);
         font-family: inherit;
         font-size: 1.37em;
         font-style: normal;
@@ -1144,13 +1144,13 @@ body {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
       }
-      color: #b4befe;
+      color: rgb(180, 190, 254);
       color: inherit;
     }
     ul.toc-content.overflow {
       li,
       li > a {
-        color: #181825;
+        color: rgb(24, 24, 37);
         font-weight: inherit;
         font-size: 16px;
         color: inherit;
@@ -1163,7 +1163,7 @@ body {
   .toc {
     h3 {
       --font-weight: 600;
-      color: #b4befe;
+      color: rgb(180, 190, 254);
       font-family: inherit;
       font-size: 1.37em;
       font-style: normal;
@@ -1228,7 +1228,7 @@ body {
       background: transparent;
       border: 1px solid transparent;
       border-radius: 5px;
-      color: #181825;
+      color: rgb(24, 24, 37);
       font-family: inherit;
       font-size: 14.992px;
       height: 40px;
@@ -1241,18 +1241,18 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: #1e1e2e;
-        border: 0.5pt solid #45475a;
+        background-color: rgb(30, 30, 46);
+        border: 0.5pt solid rgb(69, 71, 90);
         border-radius: 10px;
         box-shadow:
-          0px 1.8px 7.3px #00000012,
-          0px 6.3px 24.7px #0000001d,
-          0px 30px 90px #00000033;
+          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
+          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+          0px 30px 90px rgba(0, 0, 0, 0.2);
         margin: 12vh auto;
         & > input {
-          background-color: #1e1e2e;
+          background-color: rgb(30, 30, 46);
           border: none;
-          border-bottom: 1px solid #181825;
+          border-bottom: 1px solid rgb(24, 24, 37);
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1264,7 +1264,7 @@ body {
           background: transparent;
         }
         & > * {
-          color: #181825;
+          color: rgb(24, 24, 37);
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1276,8 +1276,8 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: #f5e0dc;
-            color: #181825;
+            background-color: rgb(245, 224, 220);
+            color: rgb(24, 24, 37);
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1293,13 +1293,13 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: #b4befe;
+                background-color: rgb(180, 190, 254);
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: #181825;
+                color: rgb(24, 24, 37);
                 &.match-tag {
-                  color: #181825;
+                  color: rgb(24, 24, 37);
                 }
               }
             }
@@ -1360,13 +1360,13 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: #1e1e2e;
+    background-color: rgb(30, 30, 46);
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow:
-      0px 1px 2px #0000001f,
-      0px 3.4px 6.7px #0000002e,
-      0px 15px 30px #0000004d;
+      0px 1px 2px rgba(0, 0, 0, 0.121),
+      0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+      0px 15px 30px rgba(0, 0, 0, 0.3);
     display: flex;
     max-height: 70vh;
     position: absolute;
@@ -1378,7 +1378,7 @@ body {
     border: unset;
     & .popover-inner {
       border: 1px solid transparent;
-      background-color: #1e1e2e;
+      background-color: rgb(30, 30, 46);
 
       border-radius: 8px;
     }
