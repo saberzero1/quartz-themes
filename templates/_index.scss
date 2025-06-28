@@ -469,6 +469,19 @@ body {
       //%%WORKSPACE BACKGROUND ROOT%%
 
     }
+    @media all and ($mobile) {
+      &.left:has(.explorer):before {
+
+        //%%WORKSPACE BACKGROUND EXPLORER%%
+
+        content: " ";
+        display: block;
+        height: 100%;
+        width: 1rem;
+        left: -1rem;
+        position: absolute;
+      }
+    }
   }
 
   .highlight,

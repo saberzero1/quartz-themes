@@ -589,6 +589,16 @@ body {
         light-dark(hsl(15, 20%, 92%), hsl(300, 6%, 14%))
       );
     }
+    @media all and ($mobile) {
+      &.left:has(.explorer):before {
+        content: " ";
+        display: block;
+        height: 100%;
+        width: 1rem;
+        left: -1rem;
+        position: absolute;
+      }
+    }
   }
   .highlight,
   ::selection,

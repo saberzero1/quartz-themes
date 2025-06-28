@@ -627,6 +627,16 @@ body {
     &.right {
       background-color: rgb(36, 40, 59);
     }
+    @media all and ($mobile) {
+      &.left:has(.explorer):before {
+        content: " ";
+        display: block;
+        height: 100%;
+        width: 1rem;
+        left: -1rem;
+        position: absolute;
+      }
+    }
   }
   .highlight,
   ::selection,
