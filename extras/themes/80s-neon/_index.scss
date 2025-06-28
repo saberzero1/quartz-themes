@@ -15,6 +15,9 @@
   * simply remove the `/*` below a subsection to enable it **/
 
 /* 6.1. Pentile effect (chunky pixels) */
+body {
+  position: relative;
+}
 /* DELETE THIS LINE TO ENABLE */
 body::before {
   content: " ";
@@ -24,8 +27,8 @@ body::before {
   left: 0;
   bottom: 0;
   right: 0;
-  height: 100%;
-  width: 100%;
+  height: inherit;
+  width: inherit;
   background:
     linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
     linear-gradient(
@@ -51,8 +54,8 @@ body::after {
   left: 0;
   bottom: 0;
   right: 0;
-  height: 100%;
-  width: 100%;
+  height: inherit;
+  width: inherit;
   background: rgba(18, 16, 16, 0.1);
   opacity: 0;
   z-index: 2001;
