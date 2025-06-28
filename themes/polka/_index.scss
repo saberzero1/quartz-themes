@@ -685,6 +685,12 @@ body {
     var(--background-modifier-hover)
   ) !important;
   background-color: hsl(221, 33.3%, 12.9%);
+
+  @media all and ($mobile) {
+    div.flex-component > div:has(> button.readermode) {
+      display: none;
+    }
+  }
   section,
   .page > #quartz-body .sidebar {
     &.left,
@@ -694,6 +700,7 @@ body {
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
+        background-color: hsl(221, 33.3%, 12.9%);
         content: " ";
         display: block;
         height: 100%;
