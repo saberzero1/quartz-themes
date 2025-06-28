@@ -1077,6 +1077,7 @@ body {
       Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-size: 1em;
     padding: 0.25em 0.5em;
+    background-color: var(--code-background);
   }
   .clipboard-button {
     background-color: transparent;
