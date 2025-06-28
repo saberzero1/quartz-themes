@@ -160,6 +160,7 @@ html[saved-theme="light"] {
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
   --text-faint: var(--color-base-50);
+  --quartz-themes-title-font-size: 1.75rem;
 }
 body {
   --text-normal: var(--color-base-100);
@@ -317,6 +318,7 @@ body {
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
   --text-faint: var(--color-base-50);
+  --quartz-themes-title-font-size: 1.75rem;
 }
 /* CALLOUTS */
 :root,
@@ -1202,6 +1204,7 @@ body {
   /* EXPLORER */
   .explorer {
     @media all and ($mobile) {
+      margin-top: calc((var(--quartz-themes-title-font-size) - 10px) / 2);
       &:not(.collapsed) > .explorer-content {
         -webkit-backdrop-filter: blur(8px);
         backdrop-filter: blur(8px);
@@ -1628,6 +1631,7 @@ body {
       --inline-title-font,
       var(--h1-font, var(--font-text, inherit))
     );
+    font-size: var(--quartz-themes-title-font-size, 1.75rem);
   }
   /* GRAPH */
   .graph {
