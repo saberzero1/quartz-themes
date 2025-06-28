@@ -11,6 +11,9 @@
 //%%EXTRAS%%
 
 :root {
+
+  //%%ROOT%%
+
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
   --text-faint: var(--color-base-50);
@@ -61,16 +64,13 @@
   --link-unresolved-decoration-style: solid;
   --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3);
 
-  //%%ROOT%%
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
-
   --quartz-themes-title-font-size: 1.75rem;
 }
 
 body {
+
+  //%%BODY%%
+
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
   --text-faint: var(--color-base-50);
@@ -121,12 +121,6 @@ body {
   --link-unresolved-color: var(--text-accent);
   --link-unresolved-decoration-style: solid;
   --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3);
-
-  //%%BODY%%
-
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
 
   --quartz-themes-title-font-size: 1.75rem;
 }
@@ -464,16 +458,18 @@ html {
 body {
   --quartz-text-highlight: var(--text-highlight-bg, var(--background-modifier-hover)) !important;
 
-  /*
+  //%%WORKSPACE BACKGROUND ROOT%%
+
   section,
   .page > #quartz-body .sidebar {
     &.left,
     &.left:has(.explorer),
     &.right {
 
+      //%%WORKSPACE BACKGROUND ROOT%%
+
     }
   }
-  */
 
   .highlight,
   ::selection,
