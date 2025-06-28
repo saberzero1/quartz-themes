@@ -1013,8 +1013,8 @@ body {
   h1 a {
     --link-weight: 100;
   }
-  .page-title,
-  .page-title a,
+  h2.page-title,
+  h2.page-title a,
   h2 {
     --font-weight: 100;
     color: inherit;
