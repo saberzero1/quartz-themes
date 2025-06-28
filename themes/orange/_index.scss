@@ -689,6 +689,16 @@ body {
     &.right {
       background-color: light-dark(#ffffff, #ffffff);
     }
+    @media all and ($mobile) {
+      &.left:has(.explorer):before {
+        content: " ";
+        display: block;
+        height: 100%;
+        width: 1rem;
+        left: -1rem;
+        position: absolute;
+      }
+    }
   }
   .highlight,
   ::selection,
