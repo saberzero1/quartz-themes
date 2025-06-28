@@ -644,6 +644,7 @@ html {
     gap: 4px;
     line-height: 1.3;
     padding: 4px 12px;
+    background: var(--bg);
     & > .callout-title-inner > p {
       --font-weight: 800;
       color: #08090e;
@@ -667,15 +668,15 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: light-dark(#fbfcfc, #08090e);
+  /*
   section,
   .page > #quartz-body .sidebar {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: light-dark(#fbfcfc, #08090e);
     }
   }
+  */
   .highlight,
   ::selection,
   ::-moz-selection {
@@ -1079,7 +1080,6 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: light-dark(#fbfcfc, #08090e);
       }
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');

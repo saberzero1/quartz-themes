@@ -433,6 +433,8 @@ html {
     
     //%%CALLOUT TITLE%%
 
+    background: var(--bg);
+
     & > .callout-title-inner > p {
 
       //%%CALLOUT TITLE INNER%%
@@ -458,18 +460,16 @@ html {
 body {
   --quartz-text-highlight: var(--text-highlight-bg, var(--background-modifier-hover)) !important;
 
-  //%%WORKSPACE BACKGROUND ROOT%%
-
+  /*
   section,
   .page > #quartz-body .sidebar {
     &.left,
     &.left:has(.explorer),
     &.right {
 
-      //%%WORKSPACE BACKGROUND ROOT%%
-
     }
   }
+  */
 
   .highlight,
   ::selection,
