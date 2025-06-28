@@ -56,7 +56,7 @@ clean-fonts:
 [private]
 format:
   prettier . --write --cache --check --ignore-path "./.prettiercompileignore"
-  prettier . --write --cache --check --ignore-path "./.prettiercompileignore"
+  # prettier . --write --cache --check --ignore-path "./.prettiercompileignore"
 
 [private]
 format-all:
