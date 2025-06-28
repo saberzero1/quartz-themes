@@ -553,6 +553,12 @@ body {
     #79091f 35%,
     #030303 100%
   );
+
+  @media all and ($mobile) {
+    div.flex-component > div:has(> button.readermode) {
+      display: none;
+    }
+  }
   section,
   .page > #quartz-body .sidebar {
     &.left,
@@ -567,6 +573,12 @@ body {
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
+        background-color: linear-gradient(
+          45deg,
+          #240a00 0%,
+          #79091f 35%,
+          #030303 100%
+        );
         content: " ";
         display: block;
         height: 100%;

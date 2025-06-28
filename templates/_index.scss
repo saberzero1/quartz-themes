@@ -459,6 +459,12 @@ body {
   --quartz-text-highlight: var(--text-highlight-bg, var(--background-modifier-hover)) !important;
 
   //%%WORKSPACE BACKGROUND ROOT%%
+  
+  @media all and ($mobile) {
+    div.flex-component > div:has(> button.readermode) {
+      display: none;
+    }
+  }
 
   section,
   .page > #quartz-body .sidebar {
@@ -472,7 +478,7 @@ body {
     @media all and ($mobile) {
       &.left:has(.explorer):before {
 
-        //%%WORKSPACE BACKGROUND EXPLORER%%
+        //%%WORKSPACE BACKGROUND ROOT%%
 
         content: " ";
         display: block;

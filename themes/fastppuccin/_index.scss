@@ -610,6 +610,12 @@ body {
     light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
     light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
   );
+
+  @media all and ($mobile) {
+    div.flex-component > div:has(> button.readermode) {
+      display: none;
+    }
+  }
   section,
   .page > #quartz-body .sidebar {
     &.left,
@@ -622,6 +628,10 @@ body {
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
+        background-color: light-dark(
+          light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
+          light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
+        );
         content: " ";
         display: block;
         height: 100%;
