@@ -761,6 +761,7 @@ body {
     --link-weight: 700;
   }
   body .page-title,
+  body .page-title a,
   h2 {
     --font-weight: 600;
     -webkit-text-stroke: 0.01rem light-dark(#ababab, #666666);
