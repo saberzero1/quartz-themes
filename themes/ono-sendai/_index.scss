@@ -785,6 +785,7 @@ body {
     --link-weight: 700;
   }
   body .page-title,
+  body .page-title a,
   h2 {
     --font-weight: 600;
     border-bottom: 1px solid light-dark(#9c735c, #666);
