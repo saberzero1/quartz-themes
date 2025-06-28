@@ -812,8 +812,8 @@ body {
   h1 a {
     --link-weight: 700;
   }
-  body .page-title,
-  body .page-title a,
+  .page-title,
+  .page-title a,
   h2 {
     --font-weight: 600;
     color: light-dark(#b9ca4a, #b9ca4a);

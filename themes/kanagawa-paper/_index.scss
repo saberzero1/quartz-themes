@@ -757,8 +757,8 @@ body {
     --link-weight: 700;
     color: var(--text-title-h1);
   }
-  body .page-title,
-  body .page-title a,
+  .page-title,
+  .page-title a,
   h2 {
     --font-weight: 600;
     color: inherit;
