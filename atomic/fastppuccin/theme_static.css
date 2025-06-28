@@ -25637,7 +25637,7 @@ input.mobile-vault-chooser-field-input {
 
   )
   .setting-item-name {
-  color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
+  color: rgb(light-dark(136, 57, 239, 203, 166, 247));
 }
 
 body.theme-light {
@@ -26398,7 +26398,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task="?"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(254, 100, 11), rgb(250, 179, 135));
+  background-color: rgb(light-dark(254, 100, 11, 250, 179, 135));
   left: 0px;
 }
 
@@ -26407,18 +26407,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(254, 100, 11), rgb(250, 179, 135));
+  background-color: rgb(light-dark(254, 100, 11, 250, 179, 135));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="?"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(254, 100, 11), rgb(250, 179, 135));
+  background-color: rgb(light-dark(254, 100, 11, 250, 179, 135));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="?"] > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(254, 100, 11), rgb(250, 179, 135));
+  color: rgb(light-dark(254, 100, 11, 250, 179, 135));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26429,7 +26429,7 @@ body.theme-light {
   [data-task="?"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(254, 100, 11), rgb(250, 179, 135));
+  color: rgb(light-dark(254, 100, 11, 250, 179, 135));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26437,7 +26437,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="?"][type="checkbox"]:checked:before {
-  color: light-dark(rgb(254, 100, 11), rgb(250, 179, 135));
+  color: rgb(light-dark(254, 100, 11, 250, 179, 135));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26526,7 +26526,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task="b"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
+  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
   left: 0px;
 }
 
@@ -26535,18 +26535,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
+  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="b"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
+  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="b"] > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
+  color: rgb(light-dark(210, 15, 57, 243, 139, 168));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26557,7 +26557,7 @@ body.theme-light {
   [data-task="b"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
+  color: rgb(light-dark(210, 15, 57, 243, 139, 168));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26565,7 +26565,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="b"][type="checkbox"]:checked:before {
-  color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
+  color: rgb(light-dark(210, 15, 57, 243, 139, 168));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26592,7 +26592,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task="I"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
+  background-color: rgb(light-dark(228, 147, 32, 249, 226, 175));
   left: 0px;
 }
 
@@ -26601,18 +26601,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
+  background-color: rgb(light-dark(228, 147, 32, 249, 226, 175));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="I"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
+  background-color: rgb(light-dark(228, 147, 32, 249, 226, 175));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="I"] > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
+  color: rgb(light-dark(228, 147, 32, 249, 226, 175));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26623,7 +26623,7 @@ body.theme-light {
   [data-task="I"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
+  color: rgb(light-dark(228, 147, 32, 249, 226, 175));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26631,7 +26631,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="I"][type="checkbox"]:checked:before {
-  color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
+  color: rgb(light-dark(228, 147, 32, 249, 226, 175));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26658,7 +26658,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task="p"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
+  background-color: rgb(light-dark(64, 160, 43, 166, 227, 161));
   left: 0px;
 }
 
@@ -26667,18 +26667,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
+  background-color: rgb(light-dark(64, 160, 43, 166, 227, 161));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="p"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
+  background-color: rgb(light-dark(64, 160, 43, 166, 227, 161));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="p"] > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
+  color: rgb(light-dark(64, 160, 43, 166, 227, 161));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26689,7 +26689,7 @@ body.theme-light {
   [data-task="p"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
+  color: rgb(light-dark(64, 160, 43, 166, 227, 161));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26697,7 +26697,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="p"][type="checkbox"]:checked:before {
-  color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
+  color: rgb(light-dark(64, 160, 43, 166, 227, 161));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26724,7 +26724,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task="c"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: 100%;
-  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
+  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
   left: 0px;
 }
 
@@ -26733,13 +26733,13 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: 100%;
-  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
+  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="c"][type="checkbox"]:checked:after {
   -webkit-mask-size: 100%;
-  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
+  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
   left: 0px;
 }
 
@@ -26790,7 +26790,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task="i"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(42, 110, 245), rgb(135, 176, 249));
+  background-color: rgb(light-dark(42, 110, 245, 135, 176, 249));
   left: 0px;
 }
 
@@ -26799,18 +26799,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(42, 110, 245), rgb(135, 176, 249));
+  background-color: rgb(light-dark(42, 110, 245, 135, 176, 249));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="i"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(42, 110, 245), rgb(135, 176, 249));
+  background-color: rgb(light-dark(42, 110, 245, 135, 176, 249));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="i"] > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(42, 110, 245), rgb(135, 176, 249));
+  color: rgb(light-dark(42, 110, 245, 135, 176, 249));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26821,7 +26821,7 @@ body.theme-light {
   [data-task="i"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(42, 110, 245), rgb(135, 176, 249));
+  color: rgb(light-dark(42, 110, 245, 135, 176, 249));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26829,7 +26829,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="i"][type="checkbox"]:checked:before {
-  color: light-dark(rgb(42, 110, 245), rgb(135, 176, 249));
+  color: rgb(light-dark(42, 110, 245, 135, 176, 249));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26856,7 +26856,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task="l"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
+  background-color: rgb(light-dark(136, 57, 239, 203, 166, 247));
   left: 0px;
 }
 
@@ -26865,18 +26865,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
+  background-color: rgb(light-dark(136, 57, 239, 203, 166, 247));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="l"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
+  background-color: rgb(light-dark(136, 57, 239, 203, 166, 247));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="l"] > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
+  color: rgb(light-dark(136, 57, 239, 203, 166, 247));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26887,7 +26887,7 @@ body.theme-light {
   [data-task="l"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
+  color: rgb(light-dark(136, 57, 239, 203, 166, 247));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26895,7 +26895,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="l"][type="checkbox"]:checked:before {
-  color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
+  color: rgb(light-dark(136, 57, 239, 203, 166, 247));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26922,7 +26922,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task="*"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
+  background-color: rgb(light-dark(228, 147, 32, 249, 226, 175));
   left: 0px;
 }
 
@@ -26931,18 +26931,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
+  background-color: rgb(light-dark(228, 147, 32, 249, 226, 175));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="*"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
+  background-color: rgb(light-dark(228, 147, 32, 249, 226, 175));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="*"] > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
+  color: rgb(light-dark(228, 147, 32, 249, 226, 175));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26953,7 +26953,7 @@ body.theme-light {
   [data-task="*"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
+  color: rgb(light-dark(228, 147, 32, 249, 226, 175));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26961,7 +26961,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="*"][type="checkbox"]:checked:before {
-  color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
+  color: rgb(light-dark(228, 147, 32, 249, 226, 175));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26988,7 +26988,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task="n"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(230, 69, 83), rgb(235, 160, 172));
+  background-color: rgb(light-dark(230, 69, 83, 235, 160, 172));
   left: 0px;
 }
 
@@ -26997,18 +26997,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(230, 69, 83), rgb(235, 160, 172));
+  background-color: rgb(light-dark(230, 69, 83, 235, 160, 172));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="n"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(230, 69, 83), rgb(235, 160, 172));
+  background-color: rgb(light-dark(230, 69, 83, 235, 160, 172));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="n"] > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(230, 69, 83), rgb(235, 160, 172));
+  color: rgb(light-dark(230, 69, 83, 235, 160, 172));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27019,7 +27019,7 @@ body.theme-light {
   [data-task="n"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(230, 69, 83), rgb(235, 160, 172));
+  color: rgb(light-dark(230, 69, 83, 235, 160, 172));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27027,7 +27027,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="n"][type="checkbox"]:checked:before {
-  color: light-dark(rgb(230, 69, 83), rgb(235, 160, 172));
+  color: rgb(light-dark(230, 69, 83, 235, 160, 172));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27054,7 +27054,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task="S"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
+  background-color: rgb(light-dark(64, 160, 43, 166, 227, 161));
   left: 0px;
 }
 
@@ -27063,18 +27063,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
+  background-color: rgb(light-dark(64, 160, 43, 166, 227, 161));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="S"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
+  background-color: rgb(light-dark(64, 160, 43, 166, 227, 161));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="S"] > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
+  color: rgb(light-dark(64, 160, 43, 166, 227, 161));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27085,7 +27085,7 @@ body.theme-light {
   [data-task="S"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
+  color: rgb(light-dark(64, 160, 43, 166, 227, 161));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27093,7 +27093,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="S"][type="checkbox"]:checked:before {
-  color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
+  color: rgb(light-dark(64, 160, 43, 166, 227, 161));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27103,19 +27103,19 @@ body.theme-light {
 .anp-custom-checkboxes [data-task="/"] > input[type="checkbox"]:checked {
   --checkbox-color: #beb3c14d;
   --checkbox-color-hover: #beb3c14d;
-  border-color: light-dark(rgb(108, 111, 133), rgb(161, 168, 201));
+  border-color: rgb(light-dark(108, 111, 133, 161, 168, 201));
 }
 
 .anp-custom-checkboxes [data-task="/"] > p > input[type="checkbox"]:checked {
   --checkbox-color: #beb3c14d;
   --checkbox-color-hover: #beb3c14d;
-  border-color: light-dark(rgb(108, 111, 133), rgb(161, 168, 201));
+  border-color: rgb(light-dark(108, 111, 133, 161, 168, 201));
 }
 
 .anp-custom-checkboxes [data-task="/"][type="checkbox"]:checked {
   --checkbox-color: #beb3c14d;
   --checkbox-color-hover: #beb3c14d;
-  border-color: light-dark(rgb(108, 111, 133), rgb(161, 168, 201));
+  border-color: rgb(light-dark(108, 111, 133, 161, 168, 201));
 }
 
 .anp-custom-checkboxes [data-task="/"] > input[type="checkbox"]:checked:after {
@@ -27134,7 +27134,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="/"] > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(108, 111, 133), rgb(161, 168, 201));
+  color: rgb(light-dark(108, 111, 133, 161, 168, 201));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27145,7 +27145,7 @@ body.theme-light {
   [data-task="/"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(108, 111, 133), rgb(161, 168, 201));
+  color: rgb(light-dark(108, 111, 133, 161, 168, 201));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27153,7 +27153,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="/"][type="checkbox"]:checked:before {
-  color: light-dark(rgb(108, 111, 133), rgb(161, 168, 201));
+  color: rgb(light-dark(108, 111, 133, 161, 168, 201));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27180,7 +27180,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task="<"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(23, 146, 153), rgb(148, 226, 213));
+  background-color: rgb(light-dark(23, 146, 153, 148, 226, 213));
   left: 0px;
 }
 
@@ -27189,18 +27189,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(23, 146, 153), rgb(148, 226, 213));
+  background-color: rgb(light-dark(23, 146, 153, 148, 226, 213));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="<"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(23, 146, 153), rgb(148, 226, 213));
+  background-color: rgb(light-dark(23, 146, 153, 148, 226, 213));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="<"] > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(23, 146, 153), rgb(148, 226, 213));
+  color: rgb(light-dark(23, 146, 153, 148, 226, 213));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27211,7 +27211,7 @@ body.theme-light {
   [data-task="<"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(23, 146, 153), rgb(148, 226, 213));
+  color: rgb(light-dark(23, 146, 153, 148, 226, 213));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27219,7 +27219,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="<"][type="checkbox"]:checked:before {
-  color: light-dark(rgb(23, 146, 153), rgb(148, 226, 213));
+  color: rgb(light-dark(23, 146, 153, 148, 226, 213));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27246,7 +27246,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task=">"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(32, 159, 181), rgb(116, 199, 236));
+  background-color: rgb(light-dark(32, 159, 181, 116, 199, 236));
   left: 0px;
 }
 
@@ -27255,18 +27255,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(32, 159, 181), rgb(116, 199, 236));
+  background-color: rgb(light-dark(32, 159, 181, 116, 199, 236));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task=">"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(32, 159, 181), rgb(116, 199, 236));
+  background-color: rgb(light-dark(32, 159, 181, 116, 199, 236));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task=">"] > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(32, 159, 181), rgb(116, 199, 236));
+  color: rgb(light-dark(32, 159, 181, 116, 199, 236));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27277,7 +27277,7 @@ body.theme-light {
   [data-task=">"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(32, 159, 181), rgb(116, 199, 236));
+  color: rgb(light-dark(32, 159, 181, 116, 199, 236));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27285,7 +27285,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task=">"][type="checkbox"]:checked:before {
-  color: light-dark(rgb(32, 159, 181), rgb(116, 199, 236));
+  color: rgb(light-dark(32, 159, 181, 116, 199, 236));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27312,7 +27312,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task='"'] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(108, 111, 133), rgb(161, 168, 201));
+  background-color: rgb(light-dark(108, 111, 133, 161, 168, 201));
   left: 0px;
 }
 
@@ -27321,18 +27321,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(108, 111, 133), rgb(161, 168, 201));
+  background-color: rgb(light-dark(108, 111, 133, 161, 168, 201));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task='"'][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(108, 111, 133), rgb(161, 168, 201));
+  background-color: rgb(light-dark(108, 111, 133, 161, 168, 201));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task='"'] > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(108, 111, 133), rgb(161, 168, 201));
+  color: rgb(light-dark(108, 111, 133, 161, 168, 201));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27343,7 +27343,7 @@ body.theme-light {
   [data-task='"']
   > p
   > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(108, 111, 133), rgb(161, 168, 201));
+  color: rgb(light-dark(108, 111, 133, 161, 168, 201));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27351,7 +27351,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task='"'][type="checkbox"]:checked:before {
-  color: light-dark(rgb(108, 111, 133), rgb(161, 168, 201));
+  color: rgb(light-dark(108, 111, 133, 161, 168, 201));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27378,7 +27378,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task="u"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
+  background-color: rgb(light-dark(64, 160, 43, 166, 227, 161));
   left: 0px;
 }
 
@@ -27387,18 +27387,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
+  background-color: rgb(light-dark(64, 160, 43, 166, 227, 161));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="u"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
+  background-color: rgb(light-dark(64, 160, 43, 166, 227, 161));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="u"] > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
+  color: rgb(light-dark(64, 160, 43, 166, 227, 161));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27409,7 +27409,7 @@ body.theme-light {
   [data-task="u"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
+  color: rgb(light-dark(64, 160, 43, 166, 227, 161));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27417,7 +27417,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="u"][type="checkbox"]:checked:before {
-  color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
+  color: rgb(light-dark(64, 160, 43, 166, 227, 161));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27444,7 +27444,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task="d"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
+  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
   left: 0px;
 }
 
@@ -27453,18 +27453,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
+  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="d"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
+  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="d"] > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
+  color: rgb(light-dark(210, 15, 57, 243, 139, 168));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27475,7 +27475,7 @@ body.theme-light {
   [data-task="d"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
+  color: rgb(light-dark(210, 15, 57, 243, 139, 168));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27483,7 +27483,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="d"][type="checkbox"]:checked:before {
-  color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
+  color: rgb(light-dark(210, 15, 57, 243, 139, 168));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27510,7 +27510,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task="f"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
+  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
   left: 0px;
 }
 
@@ -27519,18 +27519,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
+  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="f"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
+  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="f"] > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
+  color: rgb(light-dark(210, 15, 57, 243, 139, 168));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27541,7 +27541,7 @@ body.theme-light {
   [data-task="f"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
+  color: rgb(light-dark(210, 15, 57, 243, 139, 168));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27549,7 +27549,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="f"][type="checkbox"]:checked:before {
-  color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
+  color: rgb(light-dark(210, 15, 57, 243, 139, 168));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27576,7 +27576,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task="k"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
+  background-color: rgb(light-dark(228, 147, 32, 249, 226, 175));
   left: 0px;
 }
 
@@ -27585,18 +27585,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
+  background-color: rgb(light-dark(228, 147, 32, 249, 226, 175));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="k"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
+  background-color: rgb(light-dark(228, 147, 32, 249, 226, 175));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="k"] > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
+  color: rgb(light-dark(228, 147, 32, 249, 226, 175));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27607,7 +27607,7 @@ body.theme-light {
   [data-task="k"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
+  color: rgb(light-dark(228, 147, 32, 249, 226, 175));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27615,7 +27615,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="k"][type="checkbox"]:checked:before {
-  color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
+  color: rgb(light-dark(228, 147, 32, 249, 226, 175));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27642,7 +27642,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task="w"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
+  background-color: rgb(light-dark(136, 57, 239, 203, 166, 247));
   left: 0px;
 }
 
@@ -27651,18 +27651,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
+  background-color: rgb(light-dark(136, 57, 239, 203, 166, 247));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="w"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
+  background-color: rgb(light-dark(136, 57, 239, 203, 166, 247));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="w"] > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
+  color: rgb(light-dark(136, 57, 239, 203, 166, 247));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27673,7 +27673,7 @@ body.theme-light {
   [data-task="w"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
+  color: rgb(light-dark(136, 57, 239, 203, 166, 247));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27681,7 +27681,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="w"][type="checkbox"]:checked:before {
-  color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
+  color: rgb(light-dark(136, 57, 239, 203, 166, 247));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;

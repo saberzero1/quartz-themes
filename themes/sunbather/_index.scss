@@ -1259,7 +1259,11 @@ body {
         & > input {
           background-color: light-dark(#ffffff, #050505);
           border: none;
-          border-bottom: 1px solid light-dark(#ffffff, #050505);
+          border-bottom: 1px solid
+            light-dark(
+              light-dark(#ffffff, #050505),
+              light-dark(#ffffff, #050505)
+            );
           border-radius: 0;
           font-size: 16px;
           height: 48px;

@@ -1063,7 +1063,7 @@ h6 {
 
 .callout-title {
   align-items: flex-start;
-  color: #c7b89e;
+  color: rgb(#c7b89e);
   display: flex;
   font-size: 18px;
   gap: 4px;
@@ -1225,7 +1225,7 @@ h6 {
 }
 
 .callout-icon .svg-icon {
-  color: #c7b89e;
+  color: rgb(#c7b89e);
 }
 
 .callout-icon::after {

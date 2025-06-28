@@ -737,7 +737,8 @@ body {
   /* HEADINGS */
   h1 {
     --font-weight: 700;
-    -webkit-text-stroke: 0.01rem light-dark(#ababab, #666666);
+    -webkit-text-stroke: 0.01rem
+      light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
     color: #9652da;
     font-family: "Architects Daughter", Neucha;
     font-size: 1.802em;
@@ -757,7 +758,8 @@ body {
   }
   h2 {
     --font-weight: 600;
-    -webkit-text-stroke: 0.01rem light-dark(#ababab, #666666);
+    -webkit-text-stroke: 0.01rem
+      light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
     color: #df1278;
     font-family: "Architects Daughter", Neucha;
     font-size: 1.602em;
@@ -777,7 +779,8 @@ body {
   }
   h3 {
     --font-weight: 600;
-    -webkit-text-stroke: 0.01rem light-dark(#ababab, #666666);
+    -webkit-text-stroke: 0.01rem
+      light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
     color: #5e33cc;
     font-family: "Architects Daughter", Neucha;
     font-size: 1.424em;
@@ -797,7 +800,8 @@ body {
   }
   h4 {
     --font-weight: 600;
-    -webkit-text-stroke: 0.01rem light-dark(#ababab, #666666);
+    -webkit-text-stroke: 0.01rem
+      light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
     color: #3ca209;
     font-family: "Architects Daughter", Neucha;
     font-size: 1.266em;
@@ -817,7 +821,8 @@ body {
   }
   h5 {
     --font-weight: 600;
-    -webkit-text-stroke: 0.01rem light-dark(#ababab, #666666);
+    -webkit-text-stroke: 0.01rem
+      light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
     color: #00b87a;
     font-family: "Architects Daughter", Neucha;
     font-size: 1.125em;
@@ -837,7 +842,8 @@ body {
   }
   h6 {
     --font-weight: 600;
-    -webkit-text-stroke: 0.01rem light-dark(#ababab, #666666);
+    -webkit-text-stroke: 0.01rem
+      light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
     color: #006e85;
     font-family: "Architects Daughter", Neucha;
     font-size: 1em;
@@ -979,7 +985,8 @@ body {
   .backlinks {
     h3 {
       --font-weight: 600;
-      -webkit-text-stroke: 0.01rem light-dark(#ababab, #666666);
+      -webkit-text-stroke: 0.01rem
+        light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
       color: #5e33cc;
       font-family: "Architects Daughter", Neucha;
       font-size: 1.424em;
@@ -1103,7 +1110,8 @@ body {
     button.toc-header {
       h3 {
         --font-weight: 600;
-        -webkit-text-stroke: 0.01rem light-dark(#ababab, #666666);
+        -webkit-text-stroke: 0.01rem
+          light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
         color: #5e33cc;
         font-family: "Architects Daughter", Neucha;
         font-size: 1.424em;
@@ -1137,7 +1145,8 @@ body {
   .toc {
     h3 {
       --font-weight: 600;
-      -webkit-text-stroke: 0.01rem light-dark(#ababab, #666666);
+      -webkit-text-stroke: 0.01rem
+        light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
       color: #5e33cc;
       font-family: "Architects Daughter", Neucha;
       font-size: 1.424em;

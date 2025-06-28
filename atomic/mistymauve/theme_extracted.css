@@ -100,7 +100,7 @@
 }
 
 body {
-  --accent-h: var(--color-timberwolf);
+  --accent-h: 210;
   --accent-l: 55%;
   --accent-s: 91%;
   --anim-duration-fast: 140ms;

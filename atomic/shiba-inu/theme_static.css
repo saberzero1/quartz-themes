@@ -26088,7 +26088,7 @@ body.image-zoom:not(.is-mobile)
   box-shadow:
     0 -2px 0 0 rgba(100, 100, 100, 0.1) inset,
     0 2px 4px 0 rgba(100, 100, 100, 0.1);
-  color: hsl(27, 15%, 12%);
+  color: rgb(hsl(27, 15%, 12%));
 }
 
 body.dark-background-file:not(.shiba-remove-file-icons):not(

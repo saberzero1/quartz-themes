@@ -1257,7 +1257,8 @@ body {
     & > .search-button {
       -webkit-app-region: no-drag;
       background: transparent;
-      border: 1px solid light-dark(#5c6370, #5c6370);
+      border: 1px solid
+        light-dark(light-dark(#5c6370, #5c6370), light-dark(#5c6370, #5c6370));
       border-radius: 5px;
       color: light-dark(#2c292d, #2c292d);
       font-family: inherit;
@@ -1283,7 +1284,11 @@ body {
         & > input {
           background-color: light-dark(#fdf9f3, #1e1f2b);
           border: none;
-          border-bottom: 1px solid light-dark(#fdf9f3, #282a3a);
+          border-bottom: 1px solid
+            light-dark(
+              light-dark(#fdf9f3, #282a3a),
+              light-dark(#fdf9f3, #282a3a)
+            );
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1392,7 +1397,8 @@ body {
   /* POPOVER */
   .popover {
     background-color: light-dark(#fdf9f3, #1e1f2b);
-    border: 1px solid light-dark(#5c6370, #5c6370);
+    border: 1px solid
+      light-dark(light-dark(#5c6370, #5c6370), light-dark(#5c6370, #5c6370));
     border-radius: 8px;
     box-shadow:
       0px 1px 2px #0000001f,
@@ -1408,7 +1414,8 @@ body {
     background-color: unset;
     border: unset;
     & .popover-inner {
-      border: 1px solid light-dark(#5c6370, #5c6370);
+      border: 1px solid
+        light-dark(light-dark(#5c6370, #5c6370), light-dark(#5c6370, #5c6370));
       background-color: light-dark(#fdf9f3, #1e1f2b);
 
       border-radius: 8px;

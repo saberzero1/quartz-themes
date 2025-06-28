@@ -26,14 +26,14 @@ html[saved-theme="dark"] {
   --graph-node-unresolved: #d8d9cf;
   --mono-rgb-100: 255, 255, 255;
 
-  --text-accent: hsl(calc(#d8d9cf - 3), calc(91% * 1.02), calc(55% * 1.15));
+  --text-accent: #4aaaf8;
 
   color: #d8d9cf;
 
   --graph-node-unresolved: #d8d9cf;
   --mono-rgb-100: 255, 255, 255;
 
-  --text-accent: hsl(calc(#d8d9cf - 3), calc(91% * 1.02), calc(55% * 1.15));
+  --text-accent: #4aaaf8;
 
   color: #d8d9cf;
 }
@@ -117,11 +117,8 @@ html[saved-theme="light"] {
   --link-weight: var(--font-weight);
   --link-external-color: var(--text-accent);
   --link-external-color-hover: var(--text-accent-hover);
-  --color-accent-2: light-dark(
-    hsl(calc(#d8d9cf - 3), calc(91% * 1.02), calc(55% * 1.15)),
-    hsl(calc(#d8d9cf - 5), calc(91% * 1.05), calc(55% * 1.29))
-  );
-  --color-accent-hsl: light-dark(#d8d9cf, 91%, 55%, #d8d9cf, 91%, 55%);
+  --color-accent-2: light-dark(#4aaaf8, #6ec1fc);
+  --color-accent-hsl: light-dark(#248cf5, #248cf5);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
@@ -177,12 +174,8 @@ body {
   --bold-weight: 600;
   --checkbox-border-color: #666666;
   --checkbox-border-color-hover: color.mix(#e26868, #ededed);
-  --checkbox-color: hsl(#d8d9cf, 91%, 55%);
-  --checkbox-color-hover: hsl(
-    calc(#d8d9cf - 3),
-    calc(91% * 1.02),
-    calc(55% * 1.15)
-  );
+  --checkbox-color: #248cf5;
+  --checkbox-color-hover: #4aaaf8;
   --checkbox-marker-color: #d8d9cf;
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
@@ -197,16 +190,9 @@ body {
   --code-tag: #fb464c;
   --code-value: #a882ff;
   --collapse-icon-color: #666666;
-  --collapse-icon-color-collapsed: hsl(
-    calc(#d8d9cf - 3),
-    calc(91% * 1.02),
-    calc(55% * 1.15)
-  );
-  --color-accent-2: light-dark(
-    hsl(calc(#d8d9cf - 3), calc(91% * 1.02), calc(55% * 1.15)),
-    hsl(calc(#d8d9cf - 5), calc(91% * 1.05), calc(55% * 1.29))
-  );
-  --color-accent-hsl: light-dark(#d8d9cf, 91%, 55%, #d8d9cf, 91%, 55%);
+  --collapse-icon-color-collapsed: #4aaaf8;
+  --color-accent-2: light-dark(#4aaaf8, #6ec1fc);
+  --color-accent-hsl: light-dark(#248cf5, #248cf5);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
@@ -243,7 +229,7 @@ body {
   --icon-color: color.mix(#e26868, #ededed);
   --inline-title-color: #e26868;
   --inline-title-font: "Permanent Marker", cursive;
-  --interactive-accent-hsl: #d8d9cf, 91%, 55%;
+  --interactive-accent-hsl: 210, 91%, 55%;
   --italic-color: inherit;
   --link-color: #ff8787;
   --link-color-hover: #e26868;
@@ -253,23 +239,19 @@ body {
   --link-weight: 400;
   --p-spacing: 1rem;
   --search-icon-color: #ff8787;
-  --tag-background: hsla(#d8d9cf, 91%, 55%, 0.1);
-  --tag-background-hover: hsla(#d8d9cf, 91%, 55%, 0.2);
-  --tag-border-color: hsla(#d8d9cf, 91%, 55%, 0.15);
-  --tag-border-color-hover: hsla(#d8d9cf, 91%, 55%, 0.15);
+  --tag-background: #248cf51a;
+  --tag-background-hover: #248cf533;
+  --tag-border-color: #248cf526;
+  --tag-border-color-hover: #248cf526;
   --tag-border-width: 0px;
-  --tag-color: hsl(calc(#d8d9cf - 3), calc(91% * 1.02), calc(55% * 1.15));
-  --tag-color-hover: hsl(calc(#d8d9cf - 3), calc(91% * 1.02), calc(55% * 1.15));
+  --tag-color: #4aaaf8;
+  --tag-color-hover: #4aaaf8;
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-radius: 2em;
   --tag-weight: inherit;
-  --text-accent: hsl(#d8d9cf, 91%, 55%);
-  --text-accent-hover: hsl(
-    calc(#d8d9cf - 5),
-    calc(91% * 1.05),
-    calc(55% * 1.29)
-  );
+  --text-accent: #248cf5;
+  --text-accent-hover: #6ec1fc;
   --text-faint: #666666;
   --text-highlight-bg: light-dark(#ff8787, #e26868);
   --text-muted: color.mix(#e26868, #ededed);
@@ -279,7 +261,7 @@ body {
   animation: zoom-in-zoom-out 0.8s infinite;
   background-color: #9e9e9e26;
   border-radius: 50%;
-
+  caret-color: #4aaaf8;
   color: #ff0000;
   contain: initial;
   fill: #ff8787;
@@ -970,7 +952,7 @@ body {
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
-        color: hsl(#d8d9cf, 91%, 55%);
+        color: #248cf5;
         text-overflow: ellipsis;
         position: relative;
         & > svg {
@@ -1221,11 +1203,7 @@ body {
                 background-color: transparent;
                 color: #ff0000;
                 &.match-tag {
-                  color: hsl(
-                    calc(#d8d9cf - 3),
-                    calc(91% * 1.02),
-                    calc(55% * 1.15)
-                  );
+                  color: #4aaaf8;
                 }
               }
             }

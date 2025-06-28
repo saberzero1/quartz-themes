@@ -578,7 +578,7 @@ export function cleanRulesAfterRun(cssString) {
   cssString = cssString.replaceAll(lightDarkRGBA, "light-dark(rgba($1), rgba($2));")
   cssString = cssString.replaceAll(lightDarkInherit, "inherit;")
 
-  return cleanup(cssString)
+  return cssString
 }
 
 export function cleanup(cssString) {

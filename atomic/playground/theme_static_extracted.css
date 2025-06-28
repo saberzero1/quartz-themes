@@ -1334,8 +1334,8 @@ h6 {
 .callout {
   --callout-color: oklch(48.5% 0.173 260.58);
   --callout-icon: lucide-pencil;
-  background-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.1);
-  border-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.25);
+  background-color: rgba(oklch(48.5% 0.039 279.29), 0.1);
+  border-color: rgba(oklch(48.5% 0.039 279.29), 0.25);
   border-radius: 8px;
   border-style: solid;
   border-width: 0px;

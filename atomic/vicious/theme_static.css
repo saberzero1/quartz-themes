@@ -11667,7 +11667,7 @@ kbd {
 }
 
 .textLayer .mod-focused {
-  background-color: light-dark(rgb(129, 129, 132), rgb(104, 105, 108));
+  background-color: rgb(light-dark(129, 129, 132, 104, 105, 108));
   border-radius: 4px;
   box-sizing: content-box;
   margin: -4px;
@@ -24965,7 +24965,7 @@ table.table-view-table {
 }
 
 .callout-style-03 .callout-content {
-  background: light-dark(#08090e, #fbfcfc);
+  background: rgb(light-dark(#08090e, #fbfcfc));
   border-top: 1px solid light-dark(#fbfcfc, #08090e);
   color: light-dark(#fbfcfc, #08090e);
   padding: 8px 16px;
@@ -25011,7 +25011,7 @@ table.table-view-table {
 }
 
 .callout-style-04 .callout-content {
-  background: light-dark(rgb(225, 226, 233), rgb(41, 42, 47));
+  background: rgba(light-dark(225, 226, 233, 41, 42, 47));
   border-top: 1px solid #8be3eba3;
   color: #fbfcfc;
   padding: 8px 16px;
@@ -26218,7 +26218,7 @@ body:not(.vibrant-folders)
   > .nav-folder-children
   > .nav-folder
   .nav-folder-title {
-  color: #fbfcfc;
+  color: rgba(#fbfcfc);
 }
 
 .theme-dark
@@ -26226,18 +26226,18 @@ body:not(.vibrant-folders)
   > .nav-folder-children
   > .nav-folder
   .nav-file-title {
-  color: #fbfcfc;
+  color: rgba(#fbfcfc);
 }
 
 .theme-dark .nav-folder.mod-root .collapse-icon svg.svg-icon {
-  color: #fbfcfc;
+  color: rgba(#fbfcfc);
 }
 
 .theme-dark
   .workspace-leaf-content[data-type="file-explorer"]
   .tree-item-self
   .tree-item-icon {
-  color: #fbfcfc;
+  color: rgba(#fbfcfc);
 }
 
 .theme-light

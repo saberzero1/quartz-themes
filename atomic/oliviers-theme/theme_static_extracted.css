@@ -298,7 +298,7 @@ body {
   --floating-toc-header-background-color: #1a1a1a;
   --floating-toc-highlight-color: #c10388;
   --floating-toc-highlight-color-rgb: 255, 128, 0;
-  --floating-toc-hover-color: #f2c204;
+  --floating-toc-hover-color: ##f2c204;
   --floating-toc-line-color: #fffae5;
   --floating-toc-line-height: 1.2rem;
   --floating-toc-response-time: 0s;
@@ -435,7 +435,7 @@ body {
   --icon-color: #f2c204;
   --icon-color-active: #1a1a1a;
   --icon-color-focused: #2c1cbd;
-  --icon-color-hover: #f2c204;
+  --icon-color-hover: ##f2c204;
   --icon-l: 18px;
   --icon-l-stroke-width: 1.75px;
   --icon-m: 18px;
@@ -498,7 +498,7 @@ body {
   --line-height-normal: 1.5em;
   --line-height-tight: 1.3;
   --link-color: #8a5cf5;
-  --link-color-hover: #f2c204;
+  --link-color-hover: ##f2c204;
   --link-decoration: none;
   --link-decoration-hover: none;
   --link-decoration-thickness: auto;
@@ -613,7 +613,7 @@ body {
   --nav-item-color: #c8a204;
   --nav-item-color-active: #fffae5;
   --nav-item-color-highlighted: #fd71d3;
-  --nav-item-color-hover: #f2c204;
+  --nav-item-color-hover: ##f2c204;
   --nav-item-color-selected: #d9f2f0;
   --nav-item-padding: 8px 8px 8px 24px;
   --nav-item-parent-padding: 6px 8px 6px 24px;
@@ -628,7 +628,7 @@ body {
   --OT-button-cta-text-normal: #fffae5;
   --OT-button-OFF-bg: #808080;
   --OT-button-ON-bg: #c10388;
-  --OT-button-text-hover: #f2c204;
+  --OT-button-text-hover: ##f2c204;
   --OT-button-text-normal: #d9f2f0;
   --OT-calendar-day-color: #f2c204;
   --OT-calendar-today-color: #2c1cbd;
@@ -683,7 +683,7 @@ body {
   --OT-text-selection-background: light-dark(#feb4e8, #640247);
   --OT-text-selection-color: light-dark(#2c1cbd, #2c1cbd);
   --OT-theme-reference-color: #000000;
-  --OT-tooltip-text-color: #f2c204;
+  --OT-tooltip-text-color: ##f2c204;
   --OT-tree-item-flair-background: #7e0259;
   --OT-tree-item-flair-color: #d9f2f0;
   --OT-UI-font-size: 15px;
@@ -705,9 +705,9 @@ body {
   --pill-border-color-hover: #333333;
   --pill-border-width: 0.5pt;
   --pill-color: #f2c204;
-  --pill-color-hover: #f2c204;
+  --pill-color-hover: ##f2c204;
   --pill-color-remove: #f2c204;
-  --pill-color-remove-hover: #f2c204;
+  --pill-color-remove-hover: ##f2c204;
   --pill-decoration: none;
   --pill-decoration-hover: none;
   --pill-focus-left-adjust: -4px;
@@ -838,7 +838,7 @@ body {
   --table-drag-handle-background: transparent;
   --table-drag-handle-background-active: #b0037c;
   --table-drag-handle-color: #1a1a1a;
-  --table-drag-handle-color-active: #f2c204;
+  --table-drag-handle-color-active: ##f2c204;
   --table-header-background: #322f2c;
   --table-header-background-hover: transparent;
   --table-header-border-color: #f2b630;
@@ -866,7 +866,7 @@ body {
   --tag-border-color-hover: #b0037c26;
   --tag-border-width: 0px;
   --tag-color: #f2c204;
-  --tag-color-hover: #f2c204;
+  --tag-color-hover: ##f2c204;
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-padding-x: 0.65em;
@@ -875,14 +875,14 @@ body {
   --tag-size: 0.875em;
   --tag-weight: inherit;
   --text-accent: #c10388;
-  --text-accent-hover: #f2c204;
+  --text-accent-hover: ##f2c204;
   --text-error: #ef5547;
   --text-faint: #9e7f02;
   --text-highlight-bg: #ffd00066;
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: #f2c204;
   --text-normal: #f2c204;
-  --text-on-accent: #f2c204;
+  --text-on-accent: ##f2c204;
   --text-on-accent-inverted: #fd71d3;
   --text-selection: #b0037c33;
   --text-success: #44cf6e;
@@ -909,7 +909,7 @@ body {
   --vault-name-font-weight: 700;
   --vault-profile-actions-display: flex;
   --vault-profile-color: #11804e;
-  --vault-profile-color-hover: #f2c204;
+  --vault-profile-color-hover: ##f2c204;
   --vault-profile-display: flex;
   --vault-profile-font-size: 1.56em;
   --vault-profile-font-weight: 500;
@@ -1118,7 +1118,7 @@ h6 {
 
 .markdown-rendered button.copy-code-button:hover {
   background-color: #fd71d3;
-  color: #f2c204;
+  color: ##f2c204;
 }
 
 .callout {
@@ -1382,7 +1382,7 @@ input.prompt-input {
 
 .suggestion-item.is-selected {
   background-color: #ffffff26;
-  color: #f2c204;
+  color: ##f2c204;
 }
 
 .suggestion-highlight {
@@ -1530,7 +1530,7 @@ input[type="search"] {
 
 .tree-item-self.is-clickable.mobile-tap {
   background-color: #fd71d3;
-  color: #f2c204;
+  color: ##f2c204;
   font-weight: inherit;
 }
 
@@ -1547,7 +1547,7 @@ input[type="search"] {
 
 .tree-item-self.is-being-dragged {
   background-color: #b0037c;
-  color: #f2c204;
+  color: ##f2c204;
 }
 
 .tree-item-self .tree-item-icon {
