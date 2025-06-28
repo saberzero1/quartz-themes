@@ -271,7 +271,7 @@ body hr {
       0 0 3px;
   }
 }
-@animation dropShadow {
+@keyframes dropShadow {
   0% {
     filter: drop-shadow(
       0.4389924193300864px 0 1px rgba(0, 30, 255, 0.5),
