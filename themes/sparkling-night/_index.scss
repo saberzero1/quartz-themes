@@ -842,8 +842,8 @@ body {
   h1 a {
     --link-weight: 700;
   }
-  .page-title,
-  .page-title a,
+  h2.page-title,
+  h2.page-title a,
   h2 {
     --font-weight: 600;
     border-bottom: 0.05em solid transparent;

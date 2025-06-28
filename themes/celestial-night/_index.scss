@@ -803,8 +803,8 @@ body {
   h1 a {
     --link-weight: 900;
   }
-  .page-title,
-  .page-title a,
+  h2.page-title,
+  h2.page-title a,
   h2 {
     --font-weight: 800;
     color: inherit;
