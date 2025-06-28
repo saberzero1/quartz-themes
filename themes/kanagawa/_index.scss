@@ -734,8 +734,8 @@ body {
     --link-weight: 700;
     color: light-dark(#c84053, #cc241d);
   }
-  body .page-title,
-  body .page-title a,
+  .page-title,
+  .page-title a,
   h2 {
     --font-weight: 600;
     color: inherit;

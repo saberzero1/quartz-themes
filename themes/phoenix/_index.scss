@@ -840,8 +840,8 @@ body {
     color: light-dark(#bc0104, #bc0104);
     font-weight: 500;
   }
-  body .page-title,
-  body .page-title a,
+  .page-title,
+  .page-title a,
   h2 {
     --font-weight: 600;
     color: inherit;
