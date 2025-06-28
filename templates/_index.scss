@@ -685,6 +685,7 @@ body {
 
     //%%PRE%%
 
+    background-color: var(--code-background);
     white-space: pre;
     & > code {
 
@@ -738,6 +739,8 @@ body {
         //color: var(--code-keyword) !important;
         color: var(--color-red) !important;
       }
+
+      background-color: transparent; 
     }
   }
 

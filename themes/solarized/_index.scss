@@ -228,10 +228,12 @@ html[saved-theme="light"] {
   --text-faint: var(--color-base-50);
 
   --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-border-focus: var(--color-base-40);
+  --code-background: var(--background-primary-alt);
   --code-normal: var(--text-normal);
   --code-comment: var(--text-faint);
   --code-function: var(--color-yellow);
@@ -249,6 +251,7 @@ html[saved-theme="light"] {
   --link-external-color: var(--text-accent);
   --link-external-color-hover: var(--text-accent-hover);
   --background-primary: light-dark(#fdf6e3, #002b36);
+  --background-primary-alt: light-dark(#eee8d5, #073642);
   --color-accent-2: light-dark(
     hsl(calc(17.56906deg - 3), 82.05333%, 50.73529%),
     hsl(calc(17.56906deg - 5), 84.46667%, 56.91176%)
@@ -262,6 +265,7 @@ html[saved-theme="light"] {
     44.1176470588%
   );
   --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
@@ -288,10 +292,12 @@ body {
   --text-muted: var(--color-base-70);
   --text-faint: var(--color-base-50);
   --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-border-focus: var(--color-base-40);
+  --code-background: var(--background-primary-alt);
   --code-normal: var(--text-normal);
   --code-comment: var(--text-faint);
   --code-function: var(--color-yellow);
@@ -317,6 +323,7 @@ body {
   --background-modifier-border-hover: #073642;
   --background-modifier-hover: #ffffff11;
   --background-primary: light-dark(#fdf6e3, #002b36);
+  --background-primary-alt: light-dark(#eee8d5, #073642);
   --bold-color: inherit;
   --bold-weight: 800;
   --checkbox-border-color: hsl(
@@ -334,6 +341,7 @@ body {
   --checkbox-marker-color: #002b36;
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
+  --code-background: #073642;
   --code-comment: #53dfdd;
   --code-function: #027aff;
   --code-important: #e9973f;
@@ -363,6 +371,7 @@ body {
     44.1176470588%
   );
   --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
@@ -444,7 +453,7 @@ body {
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: #002b36;
-  caret-color: hsl(calc(17.56906deg - 3), 82.05333%, 50.73529%);
+
   color: #839496;
   contain: initial;
   font-family:
@@ -983,6 +992,7 @@ body {
     padding: 12px 16px;
     position: relative;
     white-space: pre-wrap;
+    background-color: var(--code-background);
     white-space: pre;
     & > code {
       background-color: transparent;
@@ -1036,6 +1046,7 @@ body {
         //color: var(--code-keyword) !important;
         color: var(--color-red) !important;
       }
+      background-color: transparent;
     }
   }
   code {

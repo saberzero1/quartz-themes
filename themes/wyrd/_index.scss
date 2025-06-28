@@ -139,10 +139,12 @@ html[saved-theme="light"] {
   --text-faint: var(--color-base-50);
 
   --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-border-focus: var(--color-base-40);
+  --code-background: var(--background-primary-alt);
   --code-normal: var(--text-normal);
   --code-comment: var(--text-faint);
   --code-function: var(--color-yellow);
@@ -162,6 +164,7 @@ html[saved-theme="light"] {
   --color-accent-2: light-dark(#a776e3, #ba97eb);
   --color-accent-hsl: light-dark(#9652da, #9652da);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
@@ -188,10 +191,12 @@ body {
   --text-muted: var(--color-base-70);
   --text-faint: var(--color-base-50);
   --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-border-focus: var(--color-base-40);
+  --code-background: var(--background-primary-alt);
   --code-normal: var(--text-normal);
   --code-comment: var(--text-faint);
   --code-function: var(--color-yellow);
@@ -213,6 +218,7 @@ body {
   --background-modifier-border-hover: #80758a;
   --background-modifier-hover: #ffffff13;
   --background-primary: #111;
+  --background-primary-alt: #1e1e1e;
   --bold-color: #dd785f;
   --bold-weight: 800;
   --checkbox-border-color: #a69ab1;
@@ -222,6 +228,7 @@ body {
   --checkbox-marker-color: #111;
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
+  --code-background: #1e1e1e;
   --code-comment: #a69ab1;
   --code-function: #e0de71;
   --code-important: #e9973f;
@@ -237,6 +244,7 @@ body {
   --color-accent-2: light-dark(#a776e3, #ba97eb);
   --color-accent-hsl: light-dark(#9652da, #9652da);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
@@ -737,8 +745,7 @@ body {
   /* HEADINGS */
   h1 {
     --font-weight: 700;
-    -webkit-text-stroke: 0.01rem
-      light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
+    -webkit-text-stroke: 0.01rem light-dark(#ababab, #666666);
     color: #9652da;
     font-family: "Architects Daughter", Neucha;
     font-size: 1.802em;
@@ -758,8 +765,7 @@ body {
   }
   h2 {
     --font-weight: 600;
-    -webkit-text-stroke: 0.01rem
-      light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
+    -webkit-text-stroke: 0.01rem light-dark(#ababab, #666666);
     color: #df1278;
     font-family: "Architects Daughter", Neucha;
     font-size: 1.602em;
@@ -779,8 +785,7 @@ body {
   }
   h3 {
     --font-weight: 600;
-    -webkit-text-stroke: 0.01rem
-      light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
+    -webkit-text-stroke: 0.01rem light-dark(#ababab, #666666);
     color: #5e33cc;
     font-family: "Architects Daughter", Neucha;
     font-size: 1.424em;
@@ -800,8 +805,7 @@ body {
   }
   h4 {
     --font-weight: 600;
-    -webkit-text-stroke: 0.01rem
-      light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
+    -webkit-text-stroke: 0.01rem light-dark(#ababab, #666666);
     color: #3ca209;
     font-family: "Architects Daughter", Neucha;
     font-size: 1.266em;
@@ -821,8 +825,7 @@ body {
   }
   h5 {
     --font-weight: 600;
-    -webkit-text-stroke: 0.01rem
-      light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
+    -webkit-text-stroke: 0.01rem light-dark(#ababab, #666666);
     color: #00b87a;
     font-family: "Architects Daughter", Neucha;
     font-size: 1.125em;
@@ -842,8 +845,7 @@ body {
   }
   h6 {
     --font-weight: 600;
-    -webkit-text-stroke: 0.01rem
-      light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
+    -webkit-text-stroke: 0.01rem light-dark(#ababab, #666666);
     color: #006e85;
     font-family: "Architects Daughter", Neucha;
     font-size: 1em;
@@ -871,6 +873,7 @@ body {
     padding: 12px 16px;
     position: relative;
     white-space: pre-wrap;
+    background-color: var(--code-background);
     white-space: pre;
     & > code {
       background-color: transparent;
@@ -924,6 +927,7 @@ body {
         //color: var(--code-keyword) !important;
         color: var(--color-red) !important;
       }
+      background-color: transparent;
     }
   }
   code {
@@ -985,8 +989,7 @@ body {
   .backlinks {
     h3 {
       --font-weight: 600;
-      -webkit-text-stroke: 0.01rem
-        light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
+      -webkit-text-stroke: 0.01rem light-dark(#ababab, #666666);
       color: #5e33cc;
       font-family: "Architects Daughter", Neucha;
       font-size: 1.424em;
@@ -1110,8 +1113,7 @@ body {
     button.toc-header {
       h3 {
         --font-weight: 600;
-        -webkit-text-stroke: 0.01rem
-          light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
+        -webkit-text-stroke: 0.01rem light-dark(#ababab, #666666);
         color: #5e33cc;
         font-family: "Architects Daughter", Neucha;
         font-size: 1.424em;
@@ -1145,8 +1147,7 @@ body {
   .toc {
     h3 {
       --font-weight: 600;
-      -webkit-text-stroke: 0.01rem
-        light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
+      -webkit-text-stroke: 0.01rem light-dark(#ababab, #666666);
       color: #5e33cc;
       font-family: "Architects Daughter", Neucha;
       font-size: 1.424em;

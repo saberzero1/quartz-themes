@@ -219,10 +219,12 @@ html[saved-theme="light"] {
   --text-faint: var(--color-base-50);
 
   --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-border-focus: var(--color-base-40);
+  --code-background: var(--background-primary-alt);
   --code-normal: var(--text-normal);
   --code-comment: var(--text-faint);
   --code-function: var(--color-yellow);
@@ -241,10 +243,13 @@ html[saved-theme="light"] {
   --link-external-color-hover: var(--text-accent-hover);
   --background-modifier-border: light-dark(#5c6370, #5c6370);
   --background-primary: light-dark(#1e1f2b, #1e1f2b);
+  --background-primary-alt: light-dark(#282a3a, #282a3a);
+  --code-background: light-dark(#2c292d, #2c292d);
   --code-normal: light-dark(#ffffff, #ffffff);
   --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
@@ -276,10 +281,12 @@ body {
   --text-muted: var(--color-base-70);
   --text-faint: var(--color-base-50);
   --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-border-focus: var(--color-base-40);
+  --code-background: var(--background-primary-alt);
   --code-normal: var(--text-normal);
   --code-comment: var(--text-faint);
   --code-function: var(--color-yellow);
@@ -301,6 +308,7 @@ body {
   --background-modifier-border-hover: #3f3f3f;
   --background-modifier-hover: #ffffff11;
   --background-primary: light-dark(#1e1f2b, #1e1f2b);
+  --background-primary-alt: light-dark(#282a3a, #282a3a);
   --bold-color: inherit;
   --bold-weight: 800;
   --checkbox-border-color: #fad872;
@@ -310,6 +318,7 @@ body {
   --checkbox-marker-color: #1e1f2b;
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
+  --code-background: light-dark(#2c292d, #2c292d);
   --code-comment: #fad872;
   --code-function: #e0de71;
   --code-important: #e9973f;
@@ -325,6 +334,7 @@ body {
   --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
@@ -930,6 +940,7 @@ body {
     padding: 12px 16px;
     position: relative;
     white-space: pre-wrap;
+    background-color: var(--code-background);
     white-space: pre;
     & > code {
       background-color: transparent;
@@ -983,6 +994,7 @@ body {
         //color: var(--code-keyword) !important;
         color: var(--color-red) !important;
       }
+      background-color: transparent;
     }
   }
   code {
@@ -1257,8 +1269,7 @@ body {
     & > .search-button {
       -webkit-app-region: no-drag;
       background: transparent;
-      border: 1px solid
-        light-dark(light-dark(#5c6370, #5c6370), light-dark(#5c6370, #5c6370));
+      border: 1px solid light-dark(#5c6370, #5c6370);
       border-radius: 5px;
       color: light-dark(#2c292d, #2c292d);
       font-family: inherit;
@@ -1284,11 +1295,7 @@ body {
         & > input {
           background-color: light-dark(#fdf9f3, #1e1f2b);
           border: none;
-          border-bottom: 1px solid
-            light-dark(
-              light-dark(#fdf9f3, #282a3a),
-              light-dark(#fdf9f3, #282a3a)
-            );
+          border-bottom: 1px solid light-dark(#fdf9f3, #282a3a);
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1397,8 +1404,7 @@ body {
   /* POPOVER */
   .popover {
     background-color: light-dark(#fdf9f3, #1e1f2b);
-    border: 1px solid
-      light-dark(light-dark(#5c6370, #5c6370), light-dark(#5c6370, #5c6370));
+    border: 1px solid light-dark(#5c6370, #5c6370);
     border-radius: 8px;
     box-shadow:
       0px 1px 2px #0000001f,
@@ -1414,8 +1420,7 @@ body {
     background-color: unset;
     border: unset;
     & .popover-inner {
-      border: 1px solid
-        light-dark(light-dark(#5c6370, #5c6370), light-dark(#5c6370, #5c6370));
+      border: 1px solid light-dark(#5c6370, #5c6370);
       background-color: light-dark(#fdf9f3, #1e1f2b);
 
       border-radius: 8px;

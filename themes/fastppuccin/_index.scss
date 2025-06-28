@@ -24,13 +24,13 @@ html[saved-theme="dark"] {
   }
   --mono-rgb-100: 255, 255, 255;
   caret-color: light-dark(
-    rgb(light-dark(76, 79, 105, 198, 208, 245)),
-    rgb(light-dark(76, 79, 105, 198, 208, 245))
+    light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
+    light-dark(rgb(76, 79, 105), rgb(198, 208, 245))
   );
   --mono-rgb-100: 255, 255, 255;
   caret-color: light-dark(
-    rgb(light-dark(76, 79, 105, 198, 208, 245)),
-    rgb(light-dark(76, 79, 105, 198, 208, 245))
+    light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
+    light-dark(rgb(76, 79, 105), rgb(198, 208, 245))
   );
 }
 
@@ -52,14 +52,14 @@ html[saved-theme="light"] {
   --mono-rgb-100: 0, 0, 0;
 
   caret-color: light-dark(
-    rgb(light-dark(76, 79, 105, 198, 208, 245)),
-    rgb(light-dark(76, 79, 105, 198, 208, 245))
+    light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
+    light-dark(rgb(76, 79, 105), rgb(198, 208, 245))
   );
   --mono-rgb-100: 0, 0, 0;
 
   caret-color: light-dark(
-    rgb(light-dark(76, 79, 105, 198, 208, 245)),
-    rgb(light-dark(76, 79, 105, 198, 208, 245))
+    light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
+    light-dark(rgb(76, 79, 105), rgb(198, 208, 245))
   );
 }
 
@@ -151,10 +151,12 @@ html[saved-theme="light"] {
   --text-faint: var(--color-base-50);
 
   --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-border-focus: var(--color-base-40);
+  --code-background: var(--background-primary-alt);
   --code-normal: var(--text-normal);
   --code-comment: var(--text-faint);
   --code-function: var(--color-yellow);
@@ -177,6 +179,7 @@ html[saved-theme="light"] {
   --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
@@ -204,10 +207,12 @@ body {
   --text-muted: var(--color-base-70);
   --text-faint: var(--color-base-50);
   --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-border-focus: var(--color-base-40);
+  --code-background: var(--background-primary-alt);
   --code-normal: var(--text-normal);
   --code-comment: var(--text-faint);
   --code-function: var(--color-yellow);
@@ -229,6 +234,7 @@ body {
   --background-modifier-border-hover: light-dark(#575269, #2d2848);
   --background-modifier-hover: #d9e0ee13;
   --background-primary: light-dark(#1e1e2e, #1e1e2e);
+  --background-primary-alt: #1a1826;
   --bold-color: inherit;
   --bold-weight: 800;
   --checkbox-border-color: #beb3c1;
@@ -238,6 +244,7 @@ body {
   --checkbox-marker-color: #1e1e2e;
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
+  --code-background: #363636;
   --code-comment: #beb3c1;
   --code-function: #e0de71;
   --code-important: #e9973f;
@@ -253,6 +260,7 @@ body {
   --color-accent-2: rgb(180, 190, 254 !important);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
@@ -319,16 +327,16 @@ body {
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
-    rgb(light-dark(239, 241, 245, 30, 30, 46))
+    light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
+    light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
   );
   caret-color: light-dark(
-    rgb(light-dark(76, 79, 105, 198, 208, 245)),
-    rgb(light-dark(76, 79, 105, 198, 208, 245))
+    light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
+    light-dark(rgb(76, 79, 105), rgb(198, 208, 245))
   );
   color: light-dark(
-    rgb(light-dark(76, 79, 105, 198, 208, 245)),
-    rgb(light-dark(76, 79, 105, 198, 208, 245))
+    light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
+    light-dark(rgb(76, 79, 105), rgb(198, 208, 245))
   );
   contain: initial;
   font-family:
@@ -602,8 +610,8 @@ body {
     var(--background-modifier-hover)
   ) !important;
   background-color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
-    rgb(light-dark(239, 241, 245, 30, 30, 46))
+    light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
+    light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
   );
   section,
   .page > #quartz-body .sidebar {
@@ -611,8 +619,8 @@ body {
     &.left:has(.explorer),
     &.right {
       background-color: light-dark(
-        rgb(light-dark(239, 241, 245, 30, 30, 46)),
-        rgb(light-dark(239, 241, 245, 30, 30, 46))
+        light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
+        light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
       );
     }
   }
@@ -873,6 +881,7 @@ body {
     padding: 12px 16px;
     position: relative;
     white-space: pre-wrap;
+    background-color: var(--code-background);
     white-space: pre;
     & > code {
       background-color: transparent;
@@ -926,6 +935,7 @@ body {
         //color: var(--code-keyword) !important;
         color: var(--color-red) !important;
       }
+      background-color: transparent;
     }
   }
   code {
@@ -945,8 +955,8 @@ body {
     background-color: transparent;
     box-shadow: none;
     color: light-dark(
-      rgb(light-dark(124, 127, 147, 142, 149, 179)),
-      rgb(light-dark(124, 127, 147, 142, 149, 179))
+      light-dark(rgb(124, 127, 147), rgb(142, 149, 179)),
+      light-dark(rgb(124, 127, 147), rgb(142, 149, 179))
     );
     font-family:
       "??",
@@ -1021,8 +1031,8 @@ body {
     .explorer-content {
       @media all and ($mobile) {
         background-color: light-dark(
-          rgb(light-dark(239, 241, 245, 30, 30, 46)),
-          rgb(light-dark(239, 241, 245, 30, 30, 46))
+          light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
+          light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
         );
       }
       .folder-container {
@@ -1063,12 +1073,12 @@ body {
         border-inline-start: 1px solid
           light-dark(
             light-dark(
-              rgb(light-dark(239, 241, 245, 30, 30, 46)),
-              rgb(light-dark(239, 241, 245, 30, 30, 46))
+              light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
+              light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
             ),
             light-dark(
-              rgb(light-dark(239, 241, 245, 30, 30, 46)),
-              rgb(light-dark(239, 241, 245, 30, 30, 46))
+              light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
+              light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
             )
           );
         margin-bottom: 1px;
@@ -1219,8 +1229,8 @@ body {
       border: 1px solid transparent;
       border-radius: 5px;
       color: light-dark(
-        rgb(light-dark(76, 79, 105, 198, 208, 245)),
-        rgb(light-dark(76, 79, 105, 198, 208, 245))
+        light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
+        light-dark(rgb(76, 79, 105), rgb(198, 208, 245))
       );
       font-family: inherit;
       font-size: 14.992px;
@@ -1235,8 +1245,8 @@ body {
     & > .search-container {
       & > .search-space {
         background-color: light-dark(
-          rgb(light-dark(239, 241, 245, 30, 30, 46)),
-          rgb(light-dark(239, 241, 245, 30, 30, 46))
+          light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
+          light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
         );
         border: 0.5pt solid #555555;
         border-radius: 12px;
@@ -1247,14 +1257,14 @@ body {
         margin: 12vh auto;
         & > input {
           background-color: light-dark(
-            rgb(light-dark(239, 241, 245, 30, 30, 46)),
-            rgb(light-dark(239, 241, 245, 30, 30, 46))
+            light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
+            light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
           );
           border: none;
           border-bottom: 1px solid
             light-dark(
-              rgb(light-dark(230, 233, 239, 24, 24, 37)),
-              rgb(light-dark(230, 233, 239, 24, 24, 37))
+              light-dark(rgb(230, 233, 239), rgb(24, 24, 37)),
+              light-dark(rgb(230, 233, 239), rgb(24, 24, 37))
             );
           border-radius: 0;
           font-size: 16px;
@@ -1268,8 +1278,8 @@ body {
         }
         & > * {
           color: light-dark(
-            rgb(light-dark(76, 79, 105, 198, 208, 245)),
-            rgb(light-dark(76, 79, 105, 198, 208, 245))
+            light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
+            light-dark(rgb(76, 79, 105), rgb(198, 208, 245))
           );
           background: transparent;
           margin-bottom: 0;
@@ -1284,8 +1294,8 @@ body {
             font-weight: bold;
             background-color: #b4befe33;
             color: light-dark(
-              rgb(light-dark(76, 79, 105, 198, 208, 245)),
-              rgb(light-dark(76, 79, 105, 198, 208, 245))
+              light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
+              light-dark(rgb(76, 79, 105), rgb(198, 208, 245))
             );
           }
           & > .preview-container {
@@ -1307,8 +1317,8 @@ body {
               & > ul > li > p {
                 background-color: transparent;
                 color: light-dark(
-                  rgb(light-dark(76, 79, 105, 198, 208, 245)),
-                  rgb(light-dark(76, 79, 105, 198, 208, 245))
+                  light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
+                  light-dark(rgb(76, 79, 105), rgb(198, 208, 245))
                 );
                 &.match-tag {
                   color: #b4befe;
@@ -1373,8 +1383,8 @@ body {
   /* POPOVER */
   .popover {
     background-color: light-dark(
-      rgb(light-dark(239, 241, 245, 30, 30, 46)),
-      rgb(light-dark(239, 241, 245, 30, 30, 46))
+      light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
+      light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
     );
     border: 1px solid transparent;
     border-radius: 8px;
@@ -1394,8 +1404,8 @@ body {
     & .popover-inner {
       border: 1px solid transparent;
       background-color: light-dark(
-        rgb(light-dark(239, 241, 245, 30, 30, 46)),
-        rgb(light-dark(239, 241, 245, 30, 30, 46))
+        light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
+        light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
       );
 
       border-radius: 8px;
