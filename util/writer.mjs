@@ -141,6 +141,7 @@ export function writeIndex(themeName, themeCSS) {
   resultCSS = applyRuleToString(resultCSS, "body", "//%%BODY COLOR%%", themeCSS, "color")
 
   // Layout
+  /*
   resultCSS = applyRuleToString(
     resultCSS,
     ".workspace-split.mod-root",
@@ -148,6 +149,7 @@ export function writeIndex(themeName, themeCSS) {
     themeCSS,
     "background-color",
   )
+  */
   /*resultCSS = applyRuleToString(
     resultCSS,
     ".workspace-split",
