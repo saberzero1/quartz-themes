@@ -198,10 +198,12 @@ html[saved-theme="dark"] {
   --text-faint: var(--color-base-50);
 
   --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-border-focus: var(--color-base-40);
+  --code-background: var(--background-primary-alt);
   --code-normal: var(--text-normal);
   --code-comment: var(--text-faint);
   --code-function: var(--color-yellow);
@@ -221,6 +223,7 @@ html[saved-theme="dark"] {
   --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
   --color-base-00: light-dark(#ffffff, #040812);
+  --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
@@ -270,10 +273,12 @@ body {
   --text-muted: var(--color-base-70);
   --text-faint: var(--color-base-50);
   --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-border-focus: var(--color-base-40);
+  --code-background: var(--background-primary-alt);
   --code-normal: var(--text-normal);
   --code-comment: var(--text-faint);
   --code-function: var(--color-yellow);
@@ -295,6 +300,7 @@ body {
   --background-modifier-border-hover: #3f3f3f;
   --background-modifier-hover: #ffffff13;
   --background-primary: #000;
+  --background-primary-alt: #111;
   --bold-color: #d8bfd8;
   --bold-weight: 600;
   --checkbox-border-color: #666666;
@@ -304,6 +310,7 @@ body {
   --checkbox-marker-color: #000;
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
+  --code-background: #0f1116;
   --code-comment: #666666;
   --code-function: #cc4143;
   --code-important: #e9973f;
@@ -319,6 +326,7 @@ body {
   --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
   --color-base-00: light-dark(#ffffff, #040812);
+  --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
@@ -923,6 +931,7 @@ body {
     padding: 12px 16px;
     position: relative;
     white-space: pre-wrap;
+    background-color: var(--code-background);
     white-space: pre;
     & > code {
       background-color: transparent;
@@ -976,6 +985,7 @@ body {
         //color: var(--code-keyword) !important;
         color: var(--color-red) !important;
       }
+      background-color: transparent;
     }
   }
   code {

@@ -187,10 +187,12 @@ html[saved-theme="light"] {
   --text-faint: var(--color-base-50);
 
   --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-border-focus: var(--color-base-40);
+  --code-background: var(--background-primary-alt);
   --code-normal: var(--text-normal);
   --code-comment: var(--text-faint);
   --code-function: var(--color-yellow);
@@ -227,9 +229,11 @@ html[saved-theme="light"] {
     hsl(221, 33.3%, 12.9%),
     hsl(221, 33.3%, 12.9%)
   );
+  --background-primary-alt: light-dark(hsl(221, 33.3%, 12.9%), rgb(10, 18, 30));
   --color-accent-2: light-dark(hsl(186, 102%, 56.35%), hsl(184, 105%, 63.21%));
   --color-accent-hsl: light-dark(hsl(189, 100%, 49%), hsl(189, 100%, 49%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
@@ -266,10 +270,12 @@ body {
   --text-muted: var(--color-base-70);
   --text-faint: var(--color-base-50);
   --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-border-focus: var(--color-base-40);
+  --code-background: var(--background-primary-alt);
   --code-normal: var(--text-normal);
   --code-comment: var(--text-faint);
   --code-function: var(--color-yellow);
@@ -306,6 +312,7 @@ body {
     hsl(221, 33.3%, 12.9%),
     hsl(221, 33.3%, 12.9%)
   );
+  --background-primary-alt: light-dark(hsl(221, 33.3%, 12.9%), rgb(10, 18, 30));
   --bold-color: inherit;
   --bold-weight: 800;
   --checkbox-border-color: rgb(250, 247, 245);
@@ -315,6 +322,7 @@ body {
   --checkbox-marker-color: hsl(221, 33.3%, 12.9%);
   --checkbox-radius: 2px;
   --checkbox-size: 16px;
+  --code-background: rgb(10, 18, 30);
   --code-comment: rgb(250, 247, 245);
   --code-function: #b58900;
   --code-important: #cb4b16;
@@ -330,6 +338,7 @@ body {
   --color-accent-2: light-dark(hsl(186, 102%, 56.35%), hsl(184, 105%, 63.21%));
   --color-accent-hsl: light-dark(hsl(189, 100%, 49%), hsl(189, 100%, 49%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
@@ -948,6 +957,7 @@ body {
     padding: 12px 16px;
     position: relative;
     white-space: pre-wrap;
+    background-color: var(--code-background);
     white-space: pre;
     & > code {
       background-color: transparent;
@@ -1001,6 +1011,7 @@ body {
         //color: var(--code-keyword) !important;
         color: var(--color-red) !important;
       }
+      background-color: transparent;
     }
   }
   code {

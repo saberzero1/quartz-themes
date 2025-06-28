@@ -215,10 +215,12 @@ html[saved-theme="light"] {
   --text-faint: var(--color-base-50);
 
   --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-border-focus: var(--color-base-40);
+  --code-background: var(--background-primary-alt);
   --code-normal: var(--text-normal);
   --code-comment: var(--text-faint);
   --code-function: var(--color-yellow);
@@ -238,11 +240,13 @@ html[saved-theme="light"] {
   --background-modifier-hover: light-dark(#f1f2f5, #17181e);
   --background-primary: light-dark(#fbfcfc, #08090e);
   --checkbox-border-color: light-dark(#818184, #818184);
+  --code-background: light-dark(#f1f2f5, #17181e);
   --collapse-icon-color: light-dark(#68696c, #4f5053);
   --collapse-icon-color-collapsed: light-dark(#08090e, #fbfcfc);
   --color-accent-2: light-dark(#f7ddb5, #fdf2e4);
   --color-accent-hsl: light-dark(#f1cb83, #f1cb83);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
@@ -271,10 +275,12 @@ body {
   --text-muted: var(--color-base-70);
   --text-faint: var(--color-base-50);
   --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-border-focus: var(--color-base-40);
+  --code-background: var(--background-primary-alt);
   --code-normal: var(--text-normal);
   --code-comment: var(--text-faint);
   --code-function: var(--color-yellow);
@@ -296,6 +302,7 @@ body {
   --background-modifier-border-hover: #4f5053;
   --background-modifier-hover: light-dark(#f1f2f5, #17181e);
   --background-primary: light-dark(#fbfcfc, #08090e);
+  --background-primary-alt: #111;
   --bold-color: inherit;
   --bold-weight: 800;
   --checkbox-border-color: light-dark(#818184, #818184);
@@ -305,6 +312,7 @@ body {
   --checkbox-marker-color: #08090e;
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
+  --code-background: light-dark(#f1f2f5, #17181e);
   --code-comment: #68696c;
   --code-function: #ebcb8b;
   --code-important: #f19a81;
@@ -320,6 +328,7 @@ body {
   --color-accent-2: light-dark(#f7ddb5, #fdf2e4);
   --color-accent-hsl: light-dark(#f1cb83, #f1cb83);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
@@ -924,6 +933,7 @@ body {
     padding: 12px 16px;
     position: relative;
     white-space: pre-wrap;
+    background-color: var(--code-background);
     white-space: pre;
     & > code {
       background-color: transparent;
@@ -977,6 +987,7 @@ body {
         //color: var(--code-keyword) !important;
         color: var(--color-red) !important;
       }
+      background-color: transparent;
     }
   }
   code {
