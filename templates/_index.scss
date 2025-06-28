@@ -806,6 +806,7 @@ body {
       &:not(.collapsed) > .explorer-content {
         -webkit-backdrop-filter: blur(8px);
         backdrop-filter: blur(8px);
+        padding-left: 1rem;
       }
     }
     button.explorer-toggle,
@@ -819,6 +820,7 @@ body {
 
         //%%WORKSPACE BACKGROUND ROOT%%
 
+        left: -1rem;
       }
 
       .folder-container {
