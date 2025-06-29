@@ -238,7 +238,11 @@ html[saved-theme="dark"] {
   --link-weight: var(--font-weight);
   --link-external-color: var(--text-accent);
   --link-external-color-hover: var(--text-accent-hover);
-  --quartz-themes-title-font-size: 1.75rem !important;
+  --quartz-themes-title-font-size: 1.75rem;
+}
+html {
+  /* Ensure rem units are based on a 16px root font size */
+  font-size: 16px;
 }
 body {
   --background-modifier-border: #404040;
@@ -394,7 +398,7 @@ body {
   --link-weight: var(--font-weight);
   --link-external-color: var(--text-accent);
   --link-external-color-hover: var(--text-accent-hover);
-  --quartz-themes-title-font-size: 1.75rem !important;
+  --quartz-themes-title-font-size: 1.75rem;
 }
 /* CALLOUTS */
 :root,
@@ -830,6 +834,8 @@ body {
     margin-top: 0;
     padding: 0 4px;
     width: 100%;
+
+    font-size: 2rem;
   }
   h1 a {
     --link-weight: 600;
@@ -852,6 +858,7 @@ body {
     margin-top: 0;
     padding: 0 4px;
     width: 100%;
+    font-size: 1.75rem;
   }
   h2 a {
     --link-weight: 600;
@@ -872,6 +879,7 @@ body {
     margin-top: 0;
     padding: 0 4px;
     width: 100%;
+    font-size: 1.6rem;
   }
   h3 a {
     --link-weight: 600;
@@ -892,6 +900,7 @@ body {
     margin-top: 0;
     padding: 0 4px;
     width: 100%;
+    font-size: 1.4rem;
   }
   h4 a {
     --link-weight: 600;
@@ -912,6 +921,7 @@ body {
     margin-top: 0;
     padding: 0 4px;
     width: 100%;
+    font-size: 1.2rem;
   }
   h5 a {
     --link-weight: 600;
@@ -932,6 +942,7 @@ body {
     margin-top: 0;
     padding: 0 4px;
     width: 100%;
+    font-size: 1.1rem;
   }
   h6 a {
     --link-weight: 600;
