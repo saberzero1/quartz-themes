@@ -288,7 +288,7 @@ html[saved-theme="light"] {
   --link-weight: var(--font-weight);
   --link-external-color: var(--text-accent);
   --link-external-color-hover: var(--text-accent-hover);
-  --quartz-themes-title-font-size: 1.75rem;
+  --quartz-themes-title-font-size: 1.75rem !important;
 }
 body {
   --background-modifier-border: light-dark(#d2cfc5, #4a473e);
@@ -446,7 +446,7 @@ body {
   --link-weight: var(--font-weight);
   --link-external-color: var(--text-accent);
   --link-external-color-hover: var(--text-accent-hover);
-  --quartz-themes-title-font-size: 1.75rem;
+  --quartz-themes-title-font-size: 1.75rem !important;
 }
 /* CALLOUTS */
 :root,
