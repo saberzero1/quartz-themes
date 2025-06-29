@@ -64,7 +64,7 @@
   --link-unresolved-decoration-style: solid;
   --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3);
 
-  --quartz-themes-title-font-size: 1.75rem;
+  --quartz-themes-title-font-size: 1.75rem !important;
 }
 
 body {
@@ -122,7 +122,7 @@ body {
   --link-unresolved-decoration-style: solid;
   --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3);
 
-  --quartz-themes-title-font-size: 1.75rem;
+  --quartz-themes-title-font-size: 1.75rem !important;
 }
 
 /* CALLOUTS */
