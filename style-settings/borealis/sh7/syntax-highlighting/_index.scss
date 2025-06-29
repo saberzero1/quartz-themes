@@ -1,0 +1,23 @@
+.sh7 {
+  --code-background: #000000;
+  --code-white-space: pre;
+  --code-size: 13px;
+  --code-normal: #cccccc;
+  --code-comment: #969896;
+  --code-function: #e78c45;
+  --code-important: #ff6666;
+  --code-keyword: #cc99cc;
+  --code-operator: #cccccc;
+  --code-property: #99cccc;
+  --code-punctuation: #cccccc;
+  --code-string: #b9ca4a;
+  --code-tag: #cc99cc;
+  --code-value: #e78c45;
+}
+.sh7 .markdown-preview-view .token.class-name,
+.sh7 .markdown-preview-view .token.function {
+  color: #7aa6da;
+}
+.sh7 .markdown-preview-view .token.console {
+  color: #d54e53;
+}

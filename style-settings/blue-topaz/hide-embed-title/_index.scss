@@ -1,0 +1,9 @@
+body .markdown-embed-title {
+  display: none;
+}
+body.hover-popover .inline-title {
+  display: none;
+}
+body .hover-popover .markdown-embed[data-type="heading"] .inline-title {
+  display: none;
+}

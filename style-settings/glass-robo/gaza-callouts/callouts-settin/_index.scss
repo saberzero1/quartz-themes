@@ -1,0 +1,18 @@
+.gaza-callouts .callout {
+  border-radius: 30px;
+  background: rgba(var(--callout-color), 0.1);
+  padding: 3px;
+}
+.gaza-callouts .callout .callout-title {
+  align-items: center;
+  justify-content: center;
+}
+.gaza-callouts .callout .callout-content {
+  background-color: var(
+    --glass-background-color-settings,
+    var(--s-bg-primary-color)
+  );
+  border: 1px solid rgba(var(--callout-color), 0.2);
+  border-radius: 30px;
+  padding: 15px 20px;
+}

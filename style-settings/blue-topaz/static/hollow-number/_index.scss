@@ -1,0 +1,10 @@
+body.fancy-hr-number .markdown-rendered hr::after,
+body.fancy-hr-number .markdown-source-view.mod-cm6 hr::after,
+body.fancy-hr-number
+  .markdown-source-view
+  div:not(.CodeMirror-activeline)
+  > .HyperMD-hr.CodeMirror-line::after {
+  -webkit-text-fill-color: var(--hr-numbers-text-fill);
+  -webkit-text-stroke: 1px var(--hr-numbers-text-stroke);
+  font-family: var(--font-text-theme);
+}

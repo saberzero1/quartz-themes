@@ -274,7 +274,13 @@ body {
   border-left-color: var(--wyrd-teal);
   border-right-color: var(--wyrd-teal);
 }
-.markdown-rendered blockquote blockquote blockquote blockquote blockquote blockquote {
+.markdown-rendered
+  blockquote
+  blockquote
+  blockquote
+  blockquote
+  blockquote
+  blockquote {
   border-left-color: var(--wyrd-blue);
   border-right-color: var(--wyrd-blue);
 }
@@ -377,7 +383,12 @@ h1::before,
 .HyperMD-header-1::before,
 .HyperMD-list-line .cm-header-1::before {
   content: " ";
-  background: linear-gradient(90deg, var(--wyrd-purple), var(--wyrd-purple) 25%, transparent 75%);
+  background: linear-gradient(
+    90deg,
+    var(--wyrd-purple),
+    var(--wyrd-purple) 25%,
+    transparent 75%
+  );
   border-top-left-radius: 50px;
   border-bottom-left-radius: 20px;
   height: calc(var(--font-text-size) * 2.5);
@@ -399,7 +410,12 @@ h2::before,
 .HyperMD-header-2::before,
 .HyperMD-list-line .cm-header-2::before {
   content: " ";
-  background: linear-gradient(90deg, var(--wyrd-pink), var(--wyrd-pink) 25%, transparent 75%);
+  background: linear-gradient(
+    90deg,
+    var(--wyrd-pink),
+    var(--wyrd-pink) 25%,
+    transparent 75%
+  );
   border-top-left-radius: 50px;
   border-bottom-left-radius: 20px;
   height: calc(var(--font-text-size) * 2.1);
@@ -421,7 +437,12 @@ h3::before,
 .HyperMD-header-3::before,
 .HyperMD-list-line .cm-header-3::before {
   content: " ";
-  background: linear-gradient(90deg, var(--wyrd-indigo), var(--wyrd-indigo) 25%, transparent 75%);
+  background: linear-gradient(
+    90deg,
+    var(--wyrd-indigo),
+    var(--wyrd-indigo) 25%,
+    transparent 75%
+  );
   border-top-left-radius: 50px;
   border-bottom-left-radius: 20px;
   height: calc(var(--font-text-size) * 1.8);
@@ -442,7 +463,12 @@ h4::before,
 .HyperMD-header-4::before,
 .HyperMD-list-line .cm-header-4::before {
   content: " ";
-  background: linear-gradient(90deg, var(--wyrd-green), var(--wyrd-green) 25%, transparent 75%);
+  background: linear-gradient(
+    90deg,
+    var(--wyrd-green),
+    var(--wyrd-green) 25%,
+    transparent 75%
+  );
   border-top-left-radius: 50px;
   border-bottom-left-radius: 20px;
   height: calc(var(--font-text-size) * 1.675);
@@ -463,7 +489,12 @@ h5::before,
 .HyperMD-header-5::before,
 .HyperMD-list-line .cm-header-5::before {
   content: " ";
-  background: linear-gradient(90deg, var(--wyrd-teal), var(--wyrd-teal) 25%, transparent 75%);
+  background: linear-gradient(
+    90deg,
+    var(--wyrd-teal),
+    var(--wyrd-teal) 25%,
+    transparent 75%
+  );
   border-top-left-radius: 50px;
   border-bottom-left-radius: 20px;
   height: calc(var(--font-text-size) * 1.5);
@@ -484,7 +515,12 @@ h6::before,
 .HyperMD-header-6::before,
 .HyperMD-list-line .cm-header-6::before {
   content: " ";
-  background: linear-gradient(90deg, var(--wyrd-blue), var(--wyrd-blue) 25%, transparent 75%);
+  background: linear-gradient(
+    90deg,
+    var(--wyrd-blue),
+    var(--wyrd-blue) 25%,
+    transparent 75%
+  );
   border-top-left-radius: 50px;
   border-bottom-left-radius: 20px;
   height: calc(var(--font-text-size) * 1.5);
@@ -743,19 +779,25 @@ body {
 .cm-s-obsidian .HyperMD-table-row:not(.HyperMD-table-row-0):nth-child(even) {
   text-shadow: 0 -1px 1px var(--wyrd-green);
 }
-.cm-s-obsidian .HyperMD-table-row:not(.HyperMD-table-row-0):nth-child(even) .cm-hmd-table-sep {
+.cm-s-obsidian
+  .HyperMD-table-row:not(.HyperMD-table-row-0):nth-child(even)
+  .cm-hmd-table-sep {
   color: var(--wyrd-green);
 }
-.cm-s-obsidian .HyperMD-table-row:not(.HyperMD-table-row-0):nth-child(even):hover {
+.cm-s-obsidian
+  .HyperMD-table-row:not(.HyperMD-table-row-0):nth-child(even):hover {
   color: var(--wyrd-teal);
 }
 .cm-s-obsidian .HyperMD-table-row:not(.HyperMD-table-row-0):nth-child(odd) {
   text-shadow: 0 -1px 1px var(--wyrd-blue);
 }
-.cm-s-obsidian .HyperMD-table-row:not(.HyperMD-table-row-0):nth-child(odd) .cm-hmd-table-sep {
+.cm-s-obsidian
+  .HyperMD-table-row:not(.HyperMD-table-row-0):nth-child(odd)
+  .cm-hmd-table-sep {
   color: var(--wyrd-blue);
 }
-.cm-s-obsidian .HyperMD-table-row:not(.HyperMD-table-row-0):nth-child(odd):hover {
+.cm-s-obsidian
+  .HyperMD-table-row:not(.HyperMD-table-row-0):nth-child(odd):hover {
   color: var(--wyrd-teal);
 }
 .cm-s-obsidian .HyperMD-table-row.HyperMD-table-row-0 {
@@ -841,7 +883,11 @@ strong em,
 .has-list-bullet .has-list-bullet .has-list-bullet .list-bullet::before {
   color: var(--wyrd-indigo);
 }
-.has-list-bullet .has-list-bullet .has-list-bullet .has-list-bullet .list-bullet::before {
+.has-list-bullet
+  .has-list-bullet
+  .has-list-bullet
+  .has-list-bullet
+  .list-bullet::before {
   color: var(--wyrd-green);
 }
 .has-list-bullet
@@ -980,13 +1026,19 @@ ul input[type="checkbox"],
   color: var(--wyrd-strike-color);
   font-weight: normal;
 }
-.has-list-bullet.contains-task-list .task-list-item.is-checked .has-list-bullet {
+.has-list-bullet.contains-task-list
+  .task-list-item.is-checked
+  .has-list-bullet {
   color: var(--text-normal);
 }
-.has-list-bullet .has-list-bullet.contains-task-list .task-list-item-checkbox:not(:checked) {
+.has-list-bullet
+  .has-list-bullet.contains-task-list
+  .task-list-item-checkbox:not(:checked) {
   box-shadow: inset 0 0 5px var(--wyrd-pink);
 }
-.has-list-bullet .has-list-bullet.contains-task-list .task-list-item-checkbox:checked {
+.has-list-bullet
+  .has-list-bullet.contains-task-list
+  .task-list-item-checkbox:checked {
   background-color: var(--wyrd-pink);
 }
 .has-list-bullet
@@ -1068,34 +1120,77 @@ ol.contains-task-list .task-list-item .task-list-item-checkbox:not(:checked) {
 ol.contains-task-list .task-list-item .task-list-item-checkbox:checked {
   background-color: var(--wyrd-purple);
 }
-ol ol.contains-task-list .task-list-item .task-list-item-checkbox:not(:checked) {
+ol
+  ol.contains-task-list
+  .task-list-item
+  .task-list-item-checkbox:not(:checked) {
   box-shadow: inset 0 0 5px var(--wyrd-pink);
 }
 ol ol.contains-task-list .task-list-item .task-list-item-checkbox:checked {
   background-color: var(--wyrd-pink);
 }
-ol ol ol.contains-task-list .task-list-item .task-list-item-checkbox:not(:checked) {
+ol
+  ol
+  ol.contains-task-list
+  .task-list-item
+  .task-list-item-checkbox:not(:checked) {
   box-shadow: inset 0 0 5px var(--wyrd-indigo);
 }
 ol ol ol.contains-task-list .task-list-item .task-list-item-checkbox:checked {
   background-color: var(--wyrd-indigo);
 }
-ol ol ol ol.contains-task-list .task-list-item .task-list-item-checkbox:not(:checked) {
+ol
+  ol
+  ol
+  ol.contains-task-list
+  .task-list-item
+  .task-list-item-checkbox:not(:checked) {
   box-shadow: inset 0 0 5px var(--wyrd-green);
 }
-ol ol ol ol.contains-task-list .task-list-item .task-list-item-checkbox:checked {
+ol
+  ol
+  ol
+  ol.contains-task-list
+  .task-list-item
+  .task-list-item-checkbox:checked {
   background-color: var(--wyrd-green);
 }
-ol ol ol ol ol.contains-task-list .task-list-item .task-list-item-checkbox:not(:checked) {
+ol
+  ol
+  ol
+  ol
+  ol.contains-task-list
+  .task-list-item
+  .task-list-item-checkbox:not(:checked) {
   box-shadow: inset 0 0 5px var(--wyrd-teal);
 }
-ol ol ol ol ol.contains-task-list .task-list-item .task-list-item-checkbox:checked {
+ol
+  ol
+  ol
+  ol
+  ol.contains-task-list
+  .task-list-item
+  .task-list-item-checkbox:checked {
   background-color: var(--wyrd-teal);
 }
-ol ol ol ol ol ol.contains-task-list .task-list-item .task-list-item-checkbox:not(:checked) {
+ol
+  ol
+  ol
+  ol
+  ol
+  ol.contains-task-list
+  .task-list-item
+  .task-list-item-checkbox:not(:checked) {
   box-shadow: inset 0 0 5px var(--wyrd-blue);
 }
-ol ol ol ol ol ol.contains-task-list .task-list-item .task-list-item-checkbox:checked {
+ol
+  ol
+  ol
+  ol
+  ol
+  ol.contains-task-list
+  .task-list-item
+  .task-list-item-checkbox:checked {
   background-color: var(--wyrd-blue);
 }
 

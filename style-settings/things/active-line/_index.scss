@@ -1,0 +1,10 @@
+body .cm-active:not(.HyperMD-header, .HyperMD-codeblock)::before,
+body .cm-active.HyperMD-quote::before {
+  content: "";
+  height: 100%;
+  position: absolute;
+  left: -1.125em;
+  border-left: 3px solid var(--color-accent);
+  border-radius: 10px 0 0 10px;
+  opacity: 0.85;
+}

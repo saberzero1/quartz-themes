@@ -1,0 +1,31 @@
+.HyperMD-header-1::before,
+.HyperMD-header-2::before,
+.HyperMD-header-3::before,
+.HyperMD-header-4::before,
+.HyperMD-header-5::before,
+.HyperMD-header-6::before {
+  font-size: 0.7rem;
+  font-weight: normal;
+  font-family: inherit;
+  text-transform: uppercase;
+  padding-right: 5px;
+  border-radius: var(--radius-s);
+}
+.HyperMD-header-1::before {
+  content: "H1";
+}
+.HyperMD-header-2::before {
+  content: "H2";
+}
+.HyperMD-header-3::before {
+  content: "H3";
+}
+.HyperMD-header-4::before {
+  content: "H4";
+}
+.HyperMD-header-5::before {
+  content: "H5";
+}
+.HyperMD-header-6::before {
+  content: "H6";
+}

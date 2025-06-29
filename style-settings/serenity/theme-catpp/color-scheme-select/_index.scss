@@ -1,0 +1,26 @@
+.theme-catpp {
+  --theme-tint: 220;
+  --theme-sat: 45%;
+  --theme-tint-secondary: 220;
+  --theme-sat-secondary: 35%;
+  --theme-tint-text: 234;
+  --theme-sat-text: 24%;
+  --background-modifier-hover: rgba(var(--color-purple-rgb), 0.25);
+  --checkbox-color: var(--color-green);
+  --checkbox-color-hover: var(--color-cyan);
+  --accent-h: 231 !important;
+  --accent-s: 97% !important;
+  --accent-l: 72% !important;
+}
+.theme-catpp:not(.red-accent):not(.orange-accent):not(.yellow-accent):not(
+    .green-accent
+  ):not(.cyan-accent):not(.blue-accent):not(.purple-accent):not(.pink-accent) {
+  --color-accent-1: var(--color-purple);
+  --color-accent-2: var(--color-pink);
+  --interactive-accent: var(--rose);
+  --text-on-accent: var(--background-primary) !important;
+  --text-accent: var(--color-green);
+  --link-color: var(--color-purple);
+  --link-color-hover: var(--color-pink);
+  --link-unresolved-color: var(--color-cyan);
+}

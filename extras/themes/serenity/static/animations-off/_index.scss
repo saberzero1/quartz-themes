@@ -1,0 +1,22 @@
+.animations-off {
+  /* Remove Animations */
+  --anim-duration-none: 0 !important;
+  --anim-duration-superfast: 0 !important;
+  --anim-duration-fast: 0 !important;
+  --anim-duration-moderate: 0 !important;
+  --anim-duration-slow: 0 !important;
+  --anim-motion-smooth: 0 !important;
+  --anim-motion-delay: 0 !important;
+  --anim-motion-jumpy: 0 !important;
+  --anim-motion-swing: 0 !important;
+}
+
+.animations-off * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+  transition-property: none !important;
+  transform: none !important;
+  animation: none !important;
+}

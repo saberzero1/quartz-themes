@@ -1,0 +1,9 @@
+body.pt-accent-color-blue-dt {
+  --interactive-accent-base-hsl: var(--color-blue-base-hsl);
+  --interactive-accent-tint-hsl: var(--color-blue-tint-hsl);
+  --interactive-accent-text-hsl: var(--color-blue-text-hsl);
+  --interactive-accent-base: var(--color-blue-base);
+  --interactive-accent-tint: var(--color-blue-tint);
+  --interactive-accent-text: var(--color-blue-text);
+  --interactive-accent-hover: var(--color-blue-tint);
+}

@@ -1,0 +1,17 @@
+.headers-mono {
+  --h1-color: var(--vauxhall-fg);
+  --h2-color: var(--vauxhall-fg);
+  --h3-color: var(--vauxhall-fg);
+  --h4-color: var(--vauxhall-fg);
+  --h5-color: var(--vauxhall-fg);
+  --h6-color: var(--vauxhall-fg);
+}
+
+.headers-mono-gradient {
+  --h1-color: hsl(var(--hue-fg), var(--sat-fg), 65%);
+  --h2-color: hsl(var(--hue-fg), var(--sat-fg), 75%);
+  --h3-color: hsl(var(--hue-fg), var(--sat-fg), 80%);
+  --h4-color: hsl(var(--hue-fg), var(--sat-fg), 80%);
+  --h5-color: hsl(var(--hue-fg), var(--sat-fg), 90%);
+  --h6-color: hsl(var(--hue-fg), var(--sat-fg), 95%);
+}

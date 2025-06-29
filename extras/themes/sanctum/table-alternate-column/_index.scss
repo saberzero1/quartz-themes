@@ -1,0 +1,17 @@
+.table-alternate-column
+  .cm-embed-block.markdown-rendered
+  .block-language-dataview
+  tbody
+  tr
+  td:nth-child(odd),
+.table-alternate-column .markdown-rendered table tbody tr td:nth-child(odd),
+.table-alternate-column
+  .markdown-rendered
+  .table-view-table
+  tbody
+  tr
+  td:nth-child(odd) {
+  background-color: var(--background-hover);
+  border-top: 1px solid var(--background-hover);
+  border-bottom: 1px solid var(--background-hover);
+}

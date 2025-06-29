@@ -1,0 +1,8 @@
+body
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder
+  > .tree-item-self.is-clickable.nav-folder-title
+  .nav-folder-title-content::before {
+  display: none;
+}

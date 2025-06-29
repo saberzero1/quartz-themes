@@ -1,0 +1,39 @@
+.dataview-inline-lists .markdown-preview-view .dataview-ul,
+.dataview-inline-lists .markdown-source-view .dataview-ul {
+  --list-spacing: 0;
+}
+
+.dataview-inline-lists
+  .markdown-preview-view
+  .dataview-ol
+  li:not(:last-child):after,
+.dataview-inline-lists
+  .markdown-preview-view
+  .dataview-ul
+  li:not(:last-child):after,
+.dataview-inline-lists
+  .markdown-source-view
+  .dataview-ol
+  li:not(:last-child):after,
+.dataview-inline-lists
+  .markdown-source-view
+  .dataview-ul
+  li:not(:last-child):after {
+  content: ", ";
+}
+
+.dataview-inline-lists .markdown-preview-view ul.dataview-ol > li::before,
+.dataview-inline-lists .markdown-preview-view ul.dataview-ul > li::before,
+.dataview-inline-lists .markdown-source-view ul.dataview-ol > li::before,
+.dataview-inline-lists .markdown-source-view ul.dataview-ul > li::before {
+  display: none;
+}
+
+.dataview-inline-lists .markdown-preview-view .dataview-ol li,
+.dataview-inline-lists .markdown-preview-view .dataview-ul li,
+.dataview-inline-lists .markdown-source-view .dataview-ol li,
+.dataview-inline-lists .markdown-source-view .dataview-ul li {
+  display: inline-block;
+  padding-inline-end: 0.25em;
+  margin-inline-start: 0;
+}

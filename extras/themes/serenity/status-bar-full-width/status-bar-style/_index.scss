@@ -1,0 +1,9 @@
+.status-bar-full-width {
+  --status-bar-radius: 0;
+  --status-bar-border-width: 1px 0 0 0;
+}
+
+.status-bar-full-width .status-bar {
+  position: relative;
+  margin: 0em;
+}

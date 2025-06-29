@@ -1,0 +1,20 @@
+table {
+  counter-reset: section;
+}
+table thead > tr > th:first-child::before {
+  display: inline-block;
+  content: " ";
+  padding-right: 8px;
+  min-width: 3ch;
+}
+table tbody > tr > td:first-child::before {
+  display: inline-block;
+  counter-increment: section;
+  content: counter(section) " ";
+  text-align: center;
+  padding-right: 8px;
+  color: var(--text-faint);
+  font-size: 0.875em;
+  font-variant-numeric: tabular-nums;
+  min-width: 3ch;
+}

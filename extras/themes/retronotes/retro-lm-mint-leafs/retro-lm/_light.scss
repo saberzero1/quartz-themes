@@ -1,0 +1,37 @@
+.theme-light {
+  /* Base Color */
+  --color-base-00: #f1f9ee;
+  --color-base-05: #e5f4e0;
+  --color-base-10: #d9efd1;
+  --color-base-20: #c1e5b4;
+  --color-base-25: #b5dfa6;
+  --color-base-30: #a9da97;
+  --color-base-35: #9dd589;
+  --color-base-40: #91d07a;
+  --color-base-50: #82b56e;
+  --color-base-60: #62ba42;
+  --color-base-70: #539d37;
+  --color-base-100: #254619;
+  /* Accent color = --color-base-50 */
+  --accent-h: 103.1 !important;
+  --accent-s: 32.4% !important;
+  --accent-l: 57.1% !important;
+  /* Mint Leafs Variables */
+  --main-ink: var(--black-ink);
+  --main-ink-muted: var(--black-ink-muted);
+  --main-ink-fainted: var(--black-ink-fainted);
+  --secondary-ink: var(--darkgreen-ink);
+  --secondary-ink-muted: var(--darkgreen-ink-muted);
+  --secondary-ink-fainted: var(--darkgreen-ink-fainted);
+  --bold-accent-ink: var(--darkgreen-ink);
+  --italic-accent-ink: var(--red-ink);
+  --leather-color: #162a0e;
+  --leather-color-alt: #0e1b09;
+  --leather-color-rgb: 22, 42, 14;
+  --leather-contrast-color: var(--white-ink);
+  --leather-contrast-color-muted: var(--white-ink-muted);
+  --paper-color: rgba(241, 249, 238, 0.9);
+  --interactive-hover: var(--color-base-100);
+  --inline-title-color: var(--leather-color);
+  --background-modifier-hover: var(--leather-color);
+}

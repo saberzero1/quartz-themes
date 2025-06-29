@@ -1,0 +1,64 @@
+:root,
+body {
+  --header-text-align: center;
+  --h1-text-align: var(--header-text-align);
+  --h2-text-align: var(--header-text-align);
+  --h3-text-align: var(--header-text-align);
+  --h4-text-align: var(--header-text-align);
+  --h5-text-align: var(--header-text-align);
+  --h6-text-align: var(--header-text-align);
+  --h1-border-line-height: 6px;
+  --h2-border-line-height: 5px;
+  --h3-border-line-height: 4px;
+  --h4-border-line-height: 3px;
+  --h5-border-line-height: 3px;
+  --h6-border-line-height: 3px;
+  --header-border-line-left: block;
+  .writing.writing,
+  .writing.writing {
+    --header-border-line-height: 0;
+    --h1-border-line-height: var(--header-border-line-height);
+    --h2-border-line-height: var(--header-border-line-height);
+    --h3-border-line-height: var(--header-border-line-height);
+    --h4-border-line-height: var(--header-border-line-height);
+    --h5-border-line-height: var(--header-border-line-height);
+    --h6-border-line-height: var(--header-border-line-height);
+  }
+}
+.HyperMD-header.cm-line,
+:is(h1, h2, h3, h4, h5, h6) {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.HyperMD-header.cm-line:not(.HyperMD-header) > :not(.collapse-indicator),
+.HyperMD-header.cm-line
+  > :not(.collapse-indicator):nth-child(2):not(:last-child):not(:first-child),
+:is(h1, h2, h3, h4, h5, h6):not(.HyperMD-header) > :not(.collapse-indicator),
+:is(h1, h2, h3, h4, h5, h6)
+  > :not(.collapse-indicator):nth-child(2):not(:last-child):not(:first-child) {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.HyperMD-header.cm-line:before,
+.HyperMD-header.cm-line:after,
+:is(h1, h2, h3, h4, h5, h6):before,
+:is(h1, h2, h3, h4, h5, h6):after {
+  flex: 1;
+}
+.HyperMD-header.cm-line:before,
+:is(h1, h2, h3, h4, h5, h6):before {
+  margin-right: 0.3em;
+}
+.HyperMD-header.cm-line:after,
+:is(h1, h2, h3, h4, h5, h6):after {
+  margin-left: 0.3em;
+}
+.HyperMD-header.cm-line sup,
+:is(h1, h2, h3, h4, h5, h6) sup {
+  margin-top: -10.5px;
+}
+.HyperMD-header.cm-line sub,
+:is(h1, h2, h3, h4, h5, h6) sub {
+  margin-top: 10.5px;
+}

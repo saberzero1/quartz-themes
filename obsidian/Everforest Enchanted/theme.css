@@ -169,13 +169,15 @@
 }
 /* Dark mode */
 :root body.is-mobile.theme-dark {
-  --input-shadow: inset 0 1px 1px 0.5px rgba(255, 255, 255, 0.1), 0 2px 4px rgba(0, 0, 0, 0.4);
+  --input-shadow:
+    inset 0 1px 1px 0.5px rgba(255, 255, 255, 0.1), 0 2px 4px rgba(0, 0, 0, 0.4);
   --interactive-normal: var(--color-base-30);
   --background-modifier-form-field: var(--color-base-25);
 }
 /* Light mode */
 :root body.is-mobile.theme-light {
-  --input-shadow: inset 0 0 0.5px 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.1);
+  --input-shadow:
+    inset 0 0 0.5px 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.1);
   --interactive-normal: var(--color-base-00);
   --background-modifier-form-field: var(--color-base-00);
 }
@@ -304,7 +306,8 @@
 }
 
 /* Make gutters not affect the content flow for unstacked tabs */
-.workspace-tabs:not(.mod-stacked) .mod-cm6.is-readable-line-width:not(.full-width),
+.workspace-tabs:not(.mod-stacked)
+  .mod-cm6.is-readable-line-width:not(.full-width),
 body:not(.stacked-panes-gutter-disable-float)
   .workspace-tabs.mod-stacked
   .mod-cm6.is-readable-line-width {
@@ -333,7 +336,10 @@ body:not(.stacked-panes-gutter-disable-float)
   padding-right: 0.45rem;
 }
 .markdown-source-view.mod-cm6
-  .cm-line:not(.cm-active):not(.HyperMD-header):not(.HyperMD-task-line, .HyperMD-list-line-1)
+  .cm-line:not(.cm-active):not(.HyperMD-header):not(
+    .HyperMD-task-line,
+    .HyperMD-list-line-1
+  )
   .cm-fold-indicator
   .collapse-indicator {
   padding-right: 0.75rem;
@@ -473,7 +479,8 @@ del {
 /** Code **/
 
 /* Inline code */
-.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-formatting + .cm-inline-code),
+.cm-s-obsidian
+  span.cm-inline-code:not(.cm-formatting):not(.cm-formatting + .cm-inline-code),
 .markdown-rendered code {
   background-color: var(--code-background);
   padding: 0.1em 0.25em;
@@ -482,7 +489,9 @@ del {
 }
 /* Fix other elements' inline code */
 .cm-s-obsidian span.cm-inline-code:not(.cm-formatting),
-.markdown-rendered :is(table, p, li, .callout-title-inner, h1, h2, h3, h4, h5, h6) code {
+.markdown-rendered
+  :is(table, p, li, .callout-title-inner, h1, h2, h3, h4, h5, h6)
+  code {
   color: var(--code-inline);
 }
 
@@ -512,7 +521,9 @@ pre {
 
 /* Codeblock top bars */
 pre[class^="language-"] {
-  padding-top: calc(var(--size-4-2) + var(--code-size) * var(--line-height-normal) + 1px);
+  padding-top: calc(
+    var(--size-4-2) + var(--code-size) * var(--line-height-normal) + 1px
+  );
 }
 pre[class^="language-"]::before {
   content: "";
@@ -523,7 +534,9 @@ pre[class^="language-"]::before {
   height: calc(var(--code-size) * var(--line-height-normal));
   background-color: var(--code-header);
 }
-.HyperMD-codeblock-begin-bg:not(:has(> .code-block-flair > *)):has(> .code-block-flair) {
+.HyperMD-codeblock-begin-bg:not(:has(> .code-block-flair > *)):has(
+    > .code-block-flair
+  ) {
   overflow: hidden;
   &::before {
     content: "";
@@ -758,7 +771,8 @@ input.task-list-item-checkbox:hover {
   border-color: var(--header-blue);
 }
 input.task-list-item-checkbox:checked {
-  box-shadow: inset 0 0 0 calc(0.0625 * var(--font-text-size)) var(--background-primary);
+  box-shadow: inset 0 0 0 calc(0.0625 * var(--font-text-size))
+    var(--background-primary);
   transition: box-shadow 0s;
 }
 input.task-list-item-checkbox:checked::after {
@@ -767,7 +781,8 @@ input.task-list-item-checkbox:checked::after {
 
 .checkbox-container {
   background-color: var(--interactive-before);
-  transition: background-color var(--anim-duration-moderate) cubic-bezier(0, 0.5, 0, 1);
+  transition: background-color var(--anim-duration-moderate)
+    cubic-bezier(0, 0.5, 0, 1);
 }
 .checkbox-container:after {
   background-color: var(--interactive-accent);
@@ -786,9 +801,11 @@ input.task-list-item-checkbox:checked::after {
 /* Make blockquotes work in source view */
 .markdown-source-view:not(.is-live-preview) .HyperMD-quote {
   background-color: var(--background-embed);
-  border-left: var(--blockquote-border-thickness) solid var(--blockquote-border-color);
+  border-left: var(--blockquote-border-thickness) solid
+    var(--blockquote-border-color);
 }
-.markdown-source-view:not(.is-live-preview) .cm-formatting-quote:not(.cm-formatting-quote-1) {
+.markdown-source-view:not(.is-live-preview)
+  .cm-formatting-quote:not(.cm-formatting-quote-1) {
   position: relative;
 }
 .markdown-source-view:not(.is-live-preview)
@@ -796,7 +813,8 @@ input.task-list-item-checkbox:checked::after {
   content: "\200b";
   position: absolute;
   width: 1px;
-  border-left: var(--blockquote-border-thickness) solid var(--blockquote-border-color);
+  border-left: var(--blockquote-border-thickness) solid
+    var(--blockquote-border-color);
   color: transparent;
   left: -2px;
 }
@@ -820,9 +838,12 @@ input.task-list-item-checkbox:checked::after {
 
 /* Fix borders from Dataview */
 .table-view-table > thead > tr > th {
-  border-left: var(--table-header-border-width) solid var(--table-header-border-color);
-  border-top: var(--table-header-border-width) solid var(--table-header-border-color);
-  border-right: var(--table-header-border-width) solid var(--table-header-border-color);
+  border-left: var(--table-header-border-width) solid
+    var(--table-header-border-color);
+  border-top: var(--table-header-border-width) solid
+    var(--table-header-border-color);
+  border-right: var(--table-header-border-width) solid
+    var(--table-header-border-color);
 }
 :root .table-view-table thead > tr > th {
   border-width: var(--table-border-width) 0 3px var(--table-border-width);
@@ -896,7 +917,11 @@ div:has(h1) + div p:has(.tag) {
 }
 
 /* Embed first header */
-.markdown-embed-content .markdown-preview-section .mod-header + div :is(h1, h2, h3, h4, h5, h6) {
+.markdown-embed-content
+  .markdown-preview-section
+  .mod-header
+  + div
+  :is(h1, h2, h3, h4, h5, h6) {
   margin-top: 0;
 }
 
@@ -1580,13 +1605,17 @@ settings:
 }
 
 /* Remove default margins */
-[data-id="everforest-enchanted-theme"] + .style-settings-container .setting-item-heading {
+[data-id="everforest-enchanted-theme"]
+  + .style-settings-container
+  .setting-item-heading {
   margin-top: 0;
   margin-bottom: 0;
 }
 
 /* Style headings */
-[data-id="everforest-enchanted-theme"] + .style-settings-container .setting-item-heading {
+[data-id="everforest-enchanted-theme"]
+  + .style-settings-container
+  .setting-item-heading {
   border-color: var(--setting-border-color);
 }
 .setting-item-heading > .setting-item-info > .setting-item-name {
@@ -1610,7 +1639,9 @@ settings:
 }
 
 /* Modify the style of setting items */
-.view-content .style-settings-container :is(.setting-item-control:has(input), input[type="text"]) {
+.view-content
+  .style-settings-container
+  :is(.setting-item-control:has(input), input[type="text"]) {
   width: 100%;
   place-content: flex-start;
 }
@@ -1660,8 +1691,10 @@ body:not(.is-translucent).enable-menu-blur .modal-bg {
 /* Vim cursor options */
 body.vim-curor-animate .cm-fat-cursor {
   transition:
-    left var(--vim-cursor-speed, var(--anim-duration-superfast)) cubic-bezier(0.39, 0.575, 0.565, 1),
-    top var(--vim-cursor-speed, var(--anim-duration-superfast)) cubic-bezier(0.39, 0.575, 0.565, 1);
+    left var(--vim-cursor-speed, var(--anim-duration-superfast))
+      cubic-bezier(0.39, 0.575, 0.565, 1),
+    top var(--vim-cursor-speed, var(--anim-duration-superfast))
+      cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 /** Element Settings **/
@@ -1677,37 +1710,43 @@ body.vim-curor-animate .cm-fat-cursor {
 /* H1 underline option */
 body.h1-underline h1,
 body.h1-underline .HyperMD-header-1.cm-line {
-  border-bottom: 2px var(--h1-underline-style, solid) var(--background-modifier-border);
+  border-bottom: 2px var(--h1-underline-style, solid)
+    var(--background-modifier-border);
   padding-bottom: 2px;
 }
 /* H2 underline option */
 body.h2-underline h2,
 body.h2-underline .HyperMD-header-2.cm-line {
-  border-bottom: 2px var(--h2-underline-style, solid) var(--background-modifier-border);
+  border-bottom: 2px var(--h2-underline-style, solid)
+    var(--background-modifier-border);
   padding-bottom: 2px;
 }
 /* H3 underline option */
 body.h3-underline h3,
 body.h3-underline .HyperMD-header-3.cm-line {
-  border-bottom: 2px var(--h3-underline-style, solid) var(--background-modifier-border);
+  border-bottom: 2px var(--h3-underline-style, solid)
+    var(--background-modifier-border);
   padding-bottom: 2px;
 }
 /* H4 underline option */
 body.h4-underline h4,
 body.h4-underline .HyperMD-header-4.cm-line {
-  border-bottom: 2px var(--h4-underline-style, solid) var(--background-modifier-border);
+  border-bottom: 2px var(--h4-underline-style, solid)
+    var(--background-modifier-border);
   padding-bottom: 2px;
 }
 /* H5 underline option */
 body.h5-underline h5,
 body.h5-underline .HyperMD-header-5.cm-line {
-  border-bottom: 2px var(--h5-underline-style, solid) var(--background-modifier-border);
+  border-bottom: 2px var(--h5-underline-style, solid)
+    var(--background-modifier-border);
   padding-bottom: 2px;
 }
 /* H6 underline option */
 body.h6-underline h6,
 body.h6-underline .HyperMD-header-6.cm-line {
-  border-bottom: 2px var(--h6-underline-style, solid) var(--background-modifier-border);
+  border-bottom: 2px var(--h6-underline-style, solid)
+    var(--background-modifier-border);
   padding-bottom: 2px;
 }
 
@@ -1730,7 +1769,10 @@ body.image-embed-enable-zoom {
     }
 
     &:active {
-      --zoom-embed-size: min(90%, calc(var(--readable-line-length-custom, 700px) + 120px));
+      --zoom-embed-size: min(
+        90%,
+        calc(var(--readable-line-length-custom, 700px) + 120px)
+      );
       display: flex !important;
       flex-direction: column;
       align-items: center;
@@ -1786,7 +1828,11 @@ body.image-embed-enable-zoom {
 /* Math */
 /* Outlines for math blocks (enabled by default) */
 body:not(.disable-math-outline)
-  :is(div.math-block, span.math-block > mjx-container, .math.math-block.cm-embed-block) {
+  :is(
+    div.math-block,
+    span.math-block > mjx-container,
+    .math.math-block.cm-embed-block
+  ) {
   border: 1px solid var(--bg5);
   border-radius: 5px;
 }
@@ -1827,7 +1873,9 @@ body.rounded-tables :where(table:not(:has([rowspan]))) {
 /** Custom Stacked Panes **/
 
 .custom-stacked-panes-enabled .mod-vertical .mod-stacked .workspace-leaf {
-  max-width: calc((100% / var(--custom-stacked-panes-count, 2)) - 2.5rem) !important;
+  max-width: calc(
+    (100% / var(--custom-stacked-panes-count, 2)) - 2.5rem
+  ) !important;
   width: 100% !important;
 }
 
@@ -1844,9 +1892,18 @@ body.background-image-enabled {
   /* This breaks canvas screenshots! */
   --canvas-background: transparent;
 
-  --background-transparent: rgba(var(--background-primary-rgb), var(--pane-opacity, 0.85));
-  --background-partially-transparent: rgba(var(--background-primary-rgb), var(--ui-opacity, 0.85));
-  --background-tabs-transparent: rgba(var(--background-primary-rgb), var(--tab-opacity, 0.85));
+  --background-transparent: rgba(
+    var(--background-primary-rgb),
+    var(--pane-opacity, 0.85)
+  );
+  --background-partially-transparent: rgba(
+    var(--background-primary-rgb),
+    var(--ui-opacity, 0.85)
+  );
+  --background-tabs-transparent: rgba(
+    var(--background-primary-rgb),
+    var(--tab-opacity, 0.85)
+  );
 }
 
 /* Apply the background image */
@@ -1876,8 +1933,12 @@ body.background-image-enabled {
 }
 
 /* Make stacked tab headers transparent */
-.background-image-enabled .workspace-tab-container .workspace-tab-header:not(.mod-active),
-.background-image-enabled .workspace-tab-container .workspace-tab-header.mod-active {
+.background-image-enabled
+  .workspace-tab-container
+  .workspace-tab-header:not(.mod-active),
+.background-image-enabled
+  .workspace-tab-container
+  .workspace-tab-header.mod-active {
   background-color: var(--background-tabs-transparent) !important;
 }
 
@@ -1896,8 +1957,11 @@ body.background-image-enabled {
 .background-image-enabled
   .workspace-split:not(.mod-root, .mod-horizontal)
   .workspace-tab-header-container,
-.background-image-enabled .workspace-split:not(.mod-left-split, .mod-right-split),
-.background-image-enabled .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+.background-image-enabled
+  .workspace-split:not(.mod-left-split, .mod-right-split),
+.background-image-enabled
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile {
   background-color: transparent !important;
 }
 /* Fix double side headers */
@@ -1954,8 +2018,11 @@ body.visual-parity-enabled {
   /* Fix hr elements */
   .markdown-rendered hr {
     margin-block: calc(
-      (var(--font-text-size, 1rem) * var(--line-height-normal) - var(--hr-thickness)) / 2 +
-        var(--p-spacing)
+      (
+          var(--font-text-size, 1rem) * var(--line-height-normal) -
+            var(--hr-thickness)
+        ) /
+        2 + var(--p-spacing)
     );
   }
 
@@ -2020,7 +2087,11 @@ body.visual-parity-enabled {
   color: rgb(var(--callout-color));
 }
 .callout-title-inner {
-  color: color-mix(in srgb, rgb(var(--callout-color)) 70%, var(--color-base-100));
+  color: color-mix(
+    in srgb,
+    rgb(var(--callout-color)) 70%,
+    var(--color-base-100)
+  );
   filter: contrast(2);
 }
 .callout-title-inner > * {
@@ -2125,7 +2196,9 @@ p:has(.image-embed ~ .image-embed, img ~ img):not(:has([alt="inline"])) {
   }
 }
 /* Makes a highlighted line shrink the image */
-:root:root .cm-line.cm-active > :is(.image-embed:not([alt="inline"]), img:not([alt="inline"])) {
+:root:root
+  .cm-line.cm-active
+  > :is(.image-embed:not([alt="inline"]), img:not([alt="inline"])) {
   width: 100px;
   display: inline-block;
 }

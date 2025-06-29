@@ -1,0 +1,17 @@
+:root,
+body {
+  & ::-webkit-scrollbar {
+    visibility: hidden;
+    background-color: transparent;
+    width: 10px;
+  }
+  & ::-webkit-scrollbar-thumb {
+    visibility: hidden;
+  }
+  & ::-webkit-scrollbar:hover {
+    visibility: initial;
+  }
+  & ::-webkit-scrollbar-thumb:hover {
+    visibility: initial;
+  }
+}

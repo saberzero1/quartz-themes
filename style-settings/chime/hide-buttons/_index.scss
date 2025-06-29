@@ -1,0 +1,16 @@
+.classic-layout {
+  --border-width: 0px;
+}
+.view-actions,
+.side-dock-settings,
+.side-dock-actions,
+.sidebar-toggle-button {
+  opacity: 0;
+}
+.view-actions:hover,
+.side-dock-settings:hover,
+.side-dock-actions:hover {
+  opacity: 1;
+  transition: opacity 0.15s ease-in-out;
+  transition-delay: 0ms;
+}

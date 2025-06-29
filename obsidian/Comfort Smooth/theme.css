@@ -915,7 +915,9 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-comment {
   display: none !important;
 }
 /* highlight (==) not visible anymore if not active line */
-div:not(.CodeMirror-activeline) > .CodeMirror-line .cm-formatting-highlight.cm-highlight {
+div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  .cm-formatting-highlight.cm-highlight {
   font-size: 1em;
   color: transparent;
 }

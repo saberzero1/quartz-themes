@@ -38,7 +38,9 @@
 
 /* That weird dot fix */
 
-.workspace-tab-container .workspace-leaf.mod-active hr.workspace-leaf-resize-handle,
+.workspace-tab-container
+  .workspace-leaf.mod-active
+  hr.workspace-leaf-resize-handle,
 .workspace-tab-container .workspace-leaf .workspace-leaf-resize-handle {
   display: none;
 }
@@ -207,7 +209,12 @@ ul > li::marker,
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(120deg, #ffd900 30%, #ff00b0 70%, #ff00b0 100%) !important;
+  background-image: linear-gradient(
+    120deg,
+    #ffd900 30%,
+    #ff00b0 70%,
+    #ff00b0 100%
+  ) !important;
   background-size: 100%;
   width: fit-content;
 }
@@ -247,7 +254,10 @@ input[type="checkbox"]:checked:hover {
 
 /* Tabs */
 
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+.is-focused
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-title {
   color: var(--accent-color-text) !important;
 }
 
@@ -626,7 +636,12 @@ body:not(.is-phone) .community-item.is-selected .community-item-author {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(120deg, #ffd900 30%, #ff00b0 70%, #ff00b0 100%) !important;
+  background-image: linear-gradient(
+    120deg,
+    #ffd900 30%,
+    #ff00b0 70%,
+    #ff00b0 100%
+  ) !important;
   background-size: 100%;
   width: fit-content;
 }
@@ -734,25 +749,49 @@ body:not(.is-phone) .community-item.is-selected .community-item-author {
 .callout:is([data-callout="note"]) {
   border-color: #4187ff;
 }
-.callout:is([data-callout="abstract"], [data-callout="summary"], [data-callout="tldr"]) {
+.callout:is(
+    [data-callout="abstract"],
+    [data-callout="summary"],
+    [data-callout="tldr"]
+  ) {
   border-color: #9de1ff;
 }
 .callout:is([data-callout="info"], [data-callout="todo"]) {
   border-color: #00ddff;
 }
-.callout:is([data-callout="tip"], [data-callout="hint"], [data-callout="important"]) {
+.callout:is(
+    [data-callout="tip"],
+    [data-callout="hint"],
+    [data-callout="important"]
+  ) {
   border-color: #00ffe5;
 }
-.callout:is([data-callout="success"], [data-callout="check"], [data-callout="done"]) {
+.callout:is(
+    [data-callout="success"],
+    [data-callout="check"],
+    [data-callout="done"]
+  ) {
   border-color: #00ff62;
 }
-.callout:is([data-callout="question"], [data-callout="help"], [data-callout="faq"]) {
+.callout:is(
+    [data-callout="question"],
+    [data-callout="help"],
+    [data-callout="faq"]
+  ) {
   border-color: #62ff00;
 }
-.callout:is([data-callout="warning"], [data-callout="caution"], [data-callout="attention"]) {
+.callout:is(
+    [data-callout="warning"],
+    [data-callout="caution"],
+    [data-callout="attention"]
+  ) {
   border-color: #ff9500;
 }
-.callout:is([data-callout="failure"], [data-callout="fail"], [data-callout="missing"]) {
+.callout:is(
+    [data-callout="failure"],
+    [data-callout="fail"],
+    [data-callout="missing"]
+  ) {
   border-color: #ff0000;
 }
 .callout:is([data-callout="danger"], [data-callout="error"]) {
@@ -775,11 +814,19 @@ body:not(.is-phone) .community-item.is-selected .community-item-author {
   stroke: #4187ff;
 }
 
-.callout:is([data-callout="abstract"], [data-callout="summary"], [data-callout="tldr"])
+.callout:is(
+    [data-callout="abstract"],
+    [data-callout="summary"],
+    [data-callout="tldr"]
+  )
   > .callout-title {
   color: #9de1ff;
 }
-.callout:is([data-callout="abstract"], [data-callout="summary"], [data-callout="tldr"])
+.callout:is(
+    [data-callout="abstract"],
+    [data-callout="summary"],
+    [data-callout="tldr"]
+  )
   > .callout-title
   .callout-icon
   .svg-icon
@@ -798,11 +845,19 @@ body:not(.is-phone) .community-item.is-selected .community-item-author {
   stroke: #00ddff;
 }
 
-.callout:is([data-callout="tip"], [data-callout="hint"], [data-callout="important"])
+.callout:is(
+    [data-callout="tip"],
+    [data-callout="hint"],
+    [data-callout="important"]
+  )
   > .callout-title {
   color: #00ffe5;
 }
-.callout:is([data-callout="tip"], [data-callout="hint"], [data-callout="important"])
+.callout:is(
+    [data-callout="tip"],
+    [data-callout="hint"],
+    [data-callout="important"]
+  )
   > .callout-title
   .callout-icon
   .svg-icon
@@ -810,11 +865,19 @@ body:not(.is-phone) .community-item.is-selected .community-item-author {
   stroke: #00ffe5;
 }
 
-.callout:is([data-callout="success"], [data-callout="check"], [data-callout="done"])
+.callout:is(
+    [data-callout="success"],
+    [data-callout="check"],
+    [data-callout="done"]
+  )
   > .callout-title {
   color: #00ff62;
 }
-.callout:is([data-callout="success"], [data-callout="check"], [data-callout="done"])
+.callout:is(
+    [data-callout="success"],
+    [data-callout="check"],
+    [data-callout="done"]
+  )
   > .callout-title
   .callout-icon
   .svg-icon
@@ -822,11 +885,19 @@ body:not(.is-phone) .community-item.is-selected .community-item-author {
   stroke: #00ff62;
 }
 
-.callout:is([data-callout="question"], [data-callout="help"], [data-callout="faq"])
+.callout:is(
+    [data-callout="question"],
+    [data-callout="help"],
+    [data-callout="faq"]
+  )
   > .callout-title {
   color: #62ff00;
 }
-.callout:is([data-callout="question"], [data-callout="help"], [data-callout="faq"])
+.callout:is(
+    [data-callout="question"],
+    [data-callout="help"],
+    [data-callout="faq"]
+  )
   > .callout-title
   .callout-icon
   .svg-icon
@@ -834,11 +905,19 @@ body:not(.is-phone) .community-item.is-selected .community-item-author {
   stroke: #62ff00;
 }
 
-.callout:is([data-callout="warning"], [data-callout="caution"], [data-callout="attention"])
+.callout:is(
+    [data-callout="warning"],
+    [data-callout="caution"],
+    [data-callout="attention"]
+  )
   > .callout-title {
   color: #ff9500;
 }
-.callout:is([data-callout="warning"], [data-callout="caution"], [data-callout="attention"])
+.callout:is(
+    [data-callout="warning"],
+    [data-callout="caution"],
+    [data-callout="attention"]
+  )
   > .callout-title
   .callout-icon
   .svg-icon
@@ -846,11 +925,19 @@ body:not(.is-phone) .community-item.is-selected .community-item-author {
   stroke: #ff9500;
 }
 
-.callout:is([data-callout="failure"], [data-callout="fail"], [data-callout="missing"])
+.callout:is(
+    [data-callout="failure"],
+    [data-callout="fail"],
+    [data-callout="missing"]
+  )
   > .callout-title {
   color: #ff0000;
 }
-.callout:is([data-callout="failure"], [data-callout="fail"], [data-callout="missing"])
+.callout:is(
+    [data-callout="failure"],
+    [data-callout="fail"],
+    [data-callout="missing"]
+  )
   > .callout-title
   .callout-icon
   .svg-icon
@@ -1082,7 +1169,11 @@ body:not(.is-phone) .community-item.is-selected .community-item-author {
   }
 
   .callout:is([data-callout="note"]) > .callout-title .callout-icon .svg-icon,
-  .callout:is([data-callout="abstract"], [data-callout="summary"], [data-callout="tldr"])
+  .callout:is(
+      [data-callout="abstract"],
+      [data-callout="summary"],
+      [data-callout="tldr"]
+    )
     > .callout-title
     .callout-icon
     .svg-icon
@@ -1092,27 +1183,47 @@ body:not(.is-phone) .community-item.is-selected .community-item-author {
     .callout-icon
     .svg-icon
     *,
-  .callout:is([data-callout="tip"], [data-callout="hint"], [data-callout="important"])
+  .callout:is(
+      [data-callout="tip"],
+      [data-callout="hint"],
+      [data-callout="important"]
+    )
     > .callout-title
     .callout-icon
     .svg-icon
     *,
-  .callout:is([data-callout="success"], [data-callout="check"], [data-callout="done"])
+  .callout:is(
+      [data-callout="success"],
+      [data-callout="check"],
+      [data-callout="done"]
+    )
     > .callout-title
     .callout-icon
     .svg-icon
     *,
-  .callout:is([data-callout="question"], [data-callout="help"], [data-callout="faq"])
+  .callout:is(
+      [data-callout="question"],
+      [data-callout="help"],
+      [data-callout="faq"]
+    )
     > .callout-title
     .callout-icon
     .svg-icon
     *,
-  .callout:is([data-callout="warning"], [data-callout="caution"], [data-callout="attention"])
+  .callout:is(
+      [data-callout="warning"],
+      [data-callout="caution"],
+      [data-callout="attention"]
+    )
     > .callout-title
     .callout-icon
     .svg-icon
     *,
-  .callout:is([data-callout="failure"], [data-callout="fail"], [data-callout="missing"])
+  .callout:is(
+      [data-callout="failure"],
+      [data-callout="fail"],
+      [data-callout="missing"]
+    )
     > .callout-title
     .callout-icon
     .svg-icon
@@ -1127,23 +1238,51 @@ body:not(.is-phone) .community-item.is-selected .community-item-author {
     stroke: var(--pdf-text);
   }
 
-  .callout:is([data-callout="quote"], [data-callout="cite"], [data-callout="note"])
+  .callout:is(
+      [data-callout="quote"],
+      [data-callout="cite"],
+      [data-callout="note"]
+    )
     > .callout-title,
   .callout[data-callout="example"] > .callout-title,
   .callout[data-callout="bug"] > .callout-title,
   .callout:is([data-callout="danger"], [data-callout="error"]) > .callout-title,
-  .callout:is([data-callout="failure"], [data-callout="fail"], [data-callout="missing"])
+  .callout:is(
+      [data-callout="failure"],
+      [data-callout="fail"],
+      [data-callout="missing"]
+    )
     > .callout-title,
-  .callout:is([data-callout="warning"], [data-callout="caution"], [data-callout="attention"])
+  .callout:is(
+      [data-callout="warning"],
+      [data-callout="caution"],
+      [data-callout="attention"]
+    )
     > .callout-title,
-  .callout:is([data-callout="question"], [data-callout="help"], [data-callout="faq"])
+  .callout:is(
+      [data-callout="question"],
+      [data-callout="help"],
+      [data-callout="faq"]
+    )
     > .callout-title,
-  .callout:is([data-callout="success"], [data-callout="check"], [data-callout="done"])
+  .callout:is(
+      [data-callout="success"],
+      [data-callout="check"],
+      [data-callout="done"]
+    )
     > .callout-title,
-  .callout:is([data-callout="tip"], [data-callout="hint"], [data-callout="important"])
+  .callout:is(
+      [data-callout="tip"],
+      [data-callout="hint"],
+      [data-callout="important"]
+    )
     > .callout-title,
   .callout:is([data-callout="info"], [data-callout="todo"]) > .callout-title,
-  .callout:is([data-callout="abstract"], [data-callout="summary"], [data-callout="tldr"])
+  .callout:is(
+      [data-callout="abstract"],
+      [data-callout="summary"],
+      [data-callout="tldr"]
+    )
     > .callout-title,
   callout:is([data-callout="note"]) > .callout-title {
     color: var(--pdf-text);

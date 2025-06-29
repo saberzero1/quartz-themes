@@ -1,0 +1,9 @@
+body.share-thino-with-thino-background
+  .share-memo-image-dialog
+  > .dialog-container
+  > .dialog-content-container
+  > .memo-container:is(.modern, .clean, .gradient)
+  > .memo-background {
+  background-image: var(--thino-background-light-custom) !important;
+  background-size: cover;
+}

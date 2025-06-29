@@ -1,0 +1,25 @@
+.markdown-source-view.is-live-preview.show-properties .metadata-container {
+  display: var(--metadata-display-editing);
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-primary);
+  margin-bottom: 3em;
+  border-radius: 8px;
+  padding: 8px;
+}
+.ulu-noborder
+  .markdown-source-view.is-live-preview.show-properties
+  .metadata-container {
+  border: 0 !important;
+}
+.ulu-dborder
+  .markdown-source-view.is-live-preview.show-properties
+  .metadata-container {
+  border: 1px dashed var(--background-modifier-border) !important;
+}
+.markdown-source-view.is-live-preview.show-properties .metadata-container {
+  display: var(--metadata-display-editing);
+  border: 1px solid var(--background-modifier-border-alt) !important;
+  margin-bottom: 3em;
+  border-radius: var(--ulu-radius);
+  padding: 8px;
+}

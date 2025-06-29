@@ -1,0 +1,39 @@
+.everforest-dark {
+  /*PALETTE*/
+  --love-rgb: 230, 126, 128;
+  /*red*/
+  --gold-rgb: 219, 188, 127;
+  /*yellow*/
+  --rose-rgb: 230, 152, 117;
+  /*orange*/
+  --pine-rgb: 131, 192, 146;
+  /*aqua*/
+  --foam-rgb: 127, 187, 179;
+  /*blue*/
+  --iris-rgb: 214, 153, 182;
+  /*purple*/
+  --base: #1e2326;
+  /*bg_dim*/
+  --surface-rgb: 39, 46, 51;
+  /*bg0*/
+  --overlay: #384b55;
+  /*bg_blue*/
+  --muted: #859289;
+  /*gray1*/
+  --subtle: #9da9a0;
+  /*gray2*/
+  --text: #d3c6aa;
+  /*fg*/
+  --highlight-low: #374145;
+  /*bg2*/
+  --highlight-med-rgb: 65, 75, 80;
+  /*bg3*/
+  --highlight-high: #495156;
+  /*bg4*/
+  /*override accent color !*/
+  --accent-h: 90;
+  --accent-s: 36%;
+  --accent-l: 66%;
+  --color-accent-hsl: 90, 36%, 66%;
+  /*green/statusline1*/
+}

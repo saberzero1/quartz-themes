@@ -1,0 +1,142 @@
+:root,
+body {
+  --divider-color: var(--in-between-background);
+  --main-controls-width: 8em;
+  .floating-sides {
+    --margin-top: calc(var(--header-height) + 5px);
+  }
+}
+.titlebar-button-container.mod-right {
+  width: var(--main-controls-width);
+  border-bottom-left-radius: var(--default-border-radius);
+}
+.workspace-split.mod-vertical.mod-root .workspace-tabs,
+.workspace-tabs.mod-top.mod-top-right-space {
+  background-color: var(--in-between-background);
+}
+.workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container {
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 3px;
+  margin-right: 5px;
+  background-color: var(--in-between-background);
+}
+.workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container-inner {
+  gap: 5px;
+  --tab-divider-color: transparent;
+}
+.workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container-inner
+  .workspace-tab-header {
+  border-radius: var(--default-border-radius);
+  border: 1px solid var(--background-secondary);
+}
+.workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container-inner
+  .workspace-tab-header.is-active {
+  border: 1px solid var(--color-accent);
+}
+.workspace-split.mod-horizontal.mod-left-split
+  .workspace-tabs
+  .workspace-tab-container
+  .workspace-leaf,
+.workspace-split.mod-horizontal.mod-right-split
+  .workspace-tabs
+  .workspace-tab-container
+  .workspace-leaf,
+.workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-container
+  .workspace-leaf,
+.workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container
+  .workspace-tab-header-new-tab
+  .clickable-icon,
+.workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container
+  .workspace-tab-header-tab-list
+  .clickable-icon {
+  border-radius: var(--default-border-radius);
+}
+.workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container
+  .sidebar-toggle-button.mod-right {
+  padding-bottom: 8px;
+}
+.workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container
+  .sidebar-toggle-button.mod-right
+  .clickable-icon {
+  padding-bottom: 5px;
+  border-radius: var(--default-border-radius);
+}
+.workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-container {
+  padding: 10px 5px;
+  background-color: var(--in-between-background);
+}
+.workspace-split.mod-horizontal.mod-left-split :not(.is-sidedock-collpased),
+.workspace-split.mod-horizontal.mod-right-split :not(.is-sidedock-collpased) {
+  --frame-right-space: 0px;
+}
+.workspace-split.mod-horizontal.mod-left-split
+  .workspace-tabs
+  .workspace-tab-header-container,
+.workspace-split.mod-horizontal.mod-right-split
+  .workspace-tabs
+  .workspace-tab-header-container {
+  padding: 5px 5px 2px;
+  background-color: var(--in-between-background);
+}
+.workspace-split.mod-horizontal.mod-left-split
+  .workspace-tabs
+  .workspace-tab-header-container-inner,
+.workspace-split.mod-horizontal.mod-right-split
+  .workspace-tabs
+  .workspace-tab-header-container-inner {
+  background-color: var(--tab-container-background);
+  border-radius: var(--default-border-radius);
+}
+.workspace-ribbon.side-dock-ribbon.mod-left,
+.workspace-split.mod-horizontal.mod-left-split
+  .workspace-tabs
+  .workspace-tab-container,
+.workspace-split.mod-horizontal.mod-right-split
+  .workspace-tabs
+  .workspace-tab-container {
+  padding: 10px 5px;
+  background-color: var(--in-between-background);
+}
+.workspace-split.mod-horizontal.mod-right-split
+  .workspace-tabs.mod-top.mod-top-right-space
+  .workspace-tab-header-container {
+  margin-right: var(--main-controls-width);
+}
+.workspace-ribbon.side-dock-ribbon.mod-left .side-dock-actions,
+.workspace-ribbon.side-dock-ribbon.mod-left .side-dock-settings {
+  border-radius: var(--default-border-radius);
+  background-color: var(--background-secondary);
+}
+.workspace-ribbon.side-dock-ribbon.mod-left
+  .sidebar-toggle-button.mod-left
+  .clickable-icon {
+  border-radius: var(--default-border-radius);
+  background-color: var(--in-between-background);
+}
+.status-bar {
+  margin-bottom: 10px;
+  margin-right: 4px;
+  border-radius: var(--default-border-radius);
+  border: 0;
+}

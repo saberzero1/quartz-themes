@@ -1,0 +1,14 @@
+body.accent-pink {
+  --accent-h: 327.45;
+  --accent-s: 90%;
+  --accent-l: 40%;
+  --interactive-accent: var(--color-pink) !important;
+  --interactive-accent-hover: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.45
+  ) !important;
+  --link-color: var(--color-pink);
+  --link-external-color: var(--color-pink);
+}

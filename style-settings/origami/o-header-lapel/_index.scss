@@ -1,0 +1,72 @@
+.markdown-reading-view h1:not(.embedded-note-title)::before,
+:nth-child(1 of .cm-header-1)::before {
+  content: "";
+  display: inline-block;
+  height: 1.2em;
+  width: 4px;
+  color: var(--text-on-accent);
+  background: var(--color-red);
+  margin-right: 16px;
+  border-radius: 8px;
+  vertical-align: bottom;
+}
+.markdown-reading-view h2:not(.embedded-note-title)::before,
+:nth-child(1 of .cm-header-2)::before {
+  content: "";
+  display: inline-block;
+  height: 1.2em;
+  width: 4px;
+  color: var(--text-on-accent);
+  background: var(--color-green);
+  margin-right: 16px;
+  border-radius: 8px;
+  vertical-align: bottom;
+}
+.markdown-reading-view h3:not(.embedded-note-title)::before,
+:nth-child(1 of .cm-header-3)::before {
+  content: "";
+  display: inline-block;
+  height: 1.2em;
+  width: 4px;
+  color: var(--text-on-accent);
+  background: var(--color-orange);
+  margin-right: 16px;
+  border-radius: 8px;
+  vertical-align: bottom;
+}
+.markdown-reading-view h4:not(.embedded-note-title)::before,
+:nth-child(1 of .cm-header-4)::before {
+  content: "";
+  display: inline-block;
+  height: 1.2em;
+  width: 4px;
+  color: var(--text-on-accent);
+  background: var(--color-cyan);
+  margin-right: 16px;
+  border-radius: 8px;
+  vertical-align: bottom;
+}
+.markdown-reading-view h5:not(.embedded-note-title)::before,
+:nth-child(1 of .cm-header-5)::before {
+  content: "";
+  display: inline-block;
+  height: 1.2em;
+  width: 4px;
+  color: var(--text-on-accent);
+  background: var(--color-blue);
+  margin-right: 16px;
+  border-radius: 8px;
+  vertical-align: bottom;
+}
+.markdown-reading-view h6:not(.embedded-note-title)::before,
+:nth-child(1 of .cm-header-6)::before {
+  content: "";
+  display: inline-block;
+  height: 1.2em;
+  width: 4px;
+  color: var(--text-on-accent);
+  background: var(--color-purple);
+  margin-right: 16px;
+  border-radius: 8px;
+  vertical-align: bottom;
+}

@@ -1,0 +1,12 @@
+body.color-scheme-options-simplicity-topaz.theme-dark:not(
+    .background-settings-workplace-background-image
+  )
+  .workspace-split.mod-root
+  .workspace-tab-header.is-active.mod-active {
+  background-color: var(--tab-background-active);
+}
+body.theme-dark
+  .workspace-split.mod-root
+  .workspace-tab-header.is-active.mod-active {
+  background-color: var(--tab-background-active);
+}

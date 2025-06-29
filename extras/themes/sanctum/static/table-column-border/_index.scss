@@ -1,0 +1,8 @@
+.table-column-border
+  .cm-embed-block.markdown-rendered
+  .block-language-dataview
+  td:not(:last-child),
+.table-column-border .markdown-rendered table td:not(:last-child),
+.table-column-border .markdown-rendered .table-view-table td:not(:last-child) {
+  border-right: 1px solid var(--border-subtle-1);
+}

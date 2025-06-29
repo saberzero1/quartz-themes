@@ -1,0 +1,8 @@
+body:not(.file-icon-remove)
+  .workspace-leaf-content[data-type="file-explorer"]
+  .tree-item-icon.collapse-icon {
+  background-color: var(--color);
+}
+body:not(.file-icon-remove) .nav-folder.mod-root > .nav-folder-title::before {
+  background-color: currentColor;
+}

@@ -1,0 +1,8 @@
+body
+  .titlebar:hover:hover
+  ~ .app-container
+  .workspace
+  .workspace-tabs.mod-top
+  .workspace-tab-header-container:before {
+  top: 0;
+}

@@ -1,0 +1,9 @@
+.border-invisible {
+  --divider-color: transparent;
+}
+.border-invisible .workspace-ribbon.mod-left:before {
+  border-bottom-color: var(--background-secondary);
+}
+.border-invisible .setting-item {
+  border-top: none;
+}

@@ -1,0 +1,285 @@
+body.rainbow-tag-no-filter .tag:not(.token):nth-child(5n + 1) {
+  --tag-border-color: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    20%
+  );
+  background-color: var(--theme-color-translucent-01);
+  color: var(--theme-color);
+}
+body.rainbow-tag-no-filter .tag:not(.token):nth-child(5n + 2) {
+  --tag-border-color: hsla(
+    calc(var(--accent-h) + 70),
+    var(--accent-s),
+    var(--accent-l),
+    20%
+  );
+  background-color: hsla(
+    calc(var(--accent-h) + 70),
+    var(--accent-s),
+    var(--accent-l),
+    10%
+  ) !important;
+  color: hsl(
+    calc(var(--accent-h) + 70),
+    var(--accent-s),
+    var(--accent-l-alt)
+  ) !important;
+}
+body.rainbow-tag-no-filter .tag:not(.token):nth-child(5n + 3) {
+  --tag-border-color: hsla(
+    calc(var(--accent-h) + 140),
+    var(--accent-s),
+    var(--accent-l),
+    20%
+  );
+  background-color: hsla(
+    calc(var(--accent-h) + 140),
+    var(--accent-s),
+    var(--accent-l),
+    10%
+  ) !important;
+  color: hsl(
+    calc(var(--accent-h) + 140),
+    var(--accent-s),
+    var(--accent-l-alt)
+  ) !important;
+}
+body.rainbow-tag-no-filter .tag:not(.token):nth-child(5n + 4) {
+  --tag-border-color: hsla(
+    calc(var(--accent-h) + 210),
+    var(--accent-s),
+    var(--accent-l),
+    20%
+  );
+  background-color: hsla(
+    calc(var(--accent-h) + 210),
+    var(--accent-s),
+    var(--accent-l),
+    10%
+  ) !important;
+  color: hsl(
+    calc(var(--accent-h) + 210),
+    var(--accent-s),
+    var(--accent-l-alt)
+  ) !important;
+}
+body.rainbow-tag-no-filter .tag:not(.token):nth-child(5n) {
+  --tag-border-color: hsla(
+    calc(var(--accent-h) + 280),
+    var(--accent-s),
+    var(--accent-l),
+    20%
+  );
+  background-color: hsla(
+    calc(var(--accent-h) + 280),
+    var(--accent-s),
+    var(--accent-l),
+    10%
+  ) !important;
+  color: hsl(
+    calc(var(--accent-h) + 280),
+    var(--accent-s),
+    var(--accent-l-alt)
+  ) !important;
+}
+body.rainbow-tag-no-filter .tag:not(.token):nth-child(5n):hover {
+  color: white !important;
+  background-color: hsl(
+    calc(var(--accent-h) + 280),
+    var(--accent-s),
+    var(--accent-l)
+  ) !important;
+}
+body.rainbow-tag-no-filter .tag:not(.token):nth-child(5n + 1):hover {
+  color: white !important;
+  background-color: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l)
+  ) !important;
+}
+body.rainbow-tag-no-filter .tag:not(.token):nth-child(5n + 2):hover {
+  color: white !important;
+  background-color: hsl(
+    calc(var(--accent-h) + 70),
+    var(--accent-s),
+    var(--accent-l)
+  ) !important;
+}
+body.rainbow-tag-no-filter .tag:not(.token):nth-child(5n + 3):hover {
+  color: white !important;
+  background-color: hsl(
+    calc(var(--accent-h) + 140),
+    var(--accent-s),
+    var(--accent-l)
+  ) !important;
+}
+body.rainbow-tag-no-filter .tag:not(.token):nth-child(5n + 4):hover {
+  color: white !important;
+  background-color: hsl(
+    calc(var(--accent-h) + 210),
+    var(--accent-s),
+    var(--accent-l)
+  ) !important;
+}
+body.rainbow-tag-no-filter
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n + 1),
+body.rainbow-tag-no-filter
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n + 1)
+  + span.cm-hashtag,
+body.rainbow-tag-no-filter
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n + 1)
+  + .cm-hashtag.cm-meta,
+body.rainbow-tag-no-filter
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n + 1)
+  + span.cm-hashtag.cm-meta
+  + span.cm-hashtag.cm-hashtag-end {
+  --tag-border-color: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    20%
+  );
+  background-color: var(--theme-color-translucent-01) !important;
+  color: var(--theme-color) !important;
+}
+body.rainbow-tag-no-filter
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n + 2),
+body.rainbow-tag-no-filter
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n + 2)
+  + span.cm-hashtag,
+body.rainbow-tag-no-filter
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n + 2)
+  + .cm-hashtag.cm-meta,
+body.rainbow-tag-no-filter
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n + 2)
+  + span.cm-hashtag.cm-meta
+  + span.cm-hashtag.cm-hashtag-end {
+  --tag-border-color: hsla(
+    calc(var(--accent-h) + 210),
+    var(--accent-s),
+    var(--accent-l),
+    20%
+  );
+  background-color: hsla(
+    calc(var(--accent-h) + 210),
+    var(--accent-s),
+    var(--accent-l),
+    10%
+  ) !important;
+  color: hsl(
+    calc(var(--accent-h) + 210),
+    var(--accent-s),
+    var(--accent-l-alt)
+  ) !important;
+}
+body.rainbow-tag-no-filter
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n + 3),
+body.rainbow-tag-no-filter
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n + 3)
+  + span.cm-hashtag,
+body.rainbow-tag-no-filter
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n + 3)
+  + .cm-hashtag.cm-meta,
+body.rainbow-tag-no-filter
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n + 3)
+  + span.cm-hashtag.cm-meta
+  + span.cm-hashtag.cm-hashtag-end {
+  --tag-border-color: hsla(
+    calc(var(--accent-h) + 70),
+    var(--accent-s),
+    var(--accent-l),
+    20%
+  );
+  background-color: hsla(
+    calc(var(--accent-h) + 70),
+    var(--accent-s),
+    var(--accent-l),
+    10%
+  ) !important;
+  color: hsl(
+    calc(var(--accent-h) + 70),
+    var(--accent-s),
+    var(--accent-l-alt)
+  ) !important;
+}
+body.rainbow-tag-no-filter
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n + 4),
+body.rainbow-tag-no-filter
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n + 4)
+  + span.cm-hashtag,
+body.rainbow-tag-no-filter
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n + 4)
+  + .cm-hashtag.cm-meta,
+body.rainbow-tag-no-filter
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n + 4)
+  + span.cm-hashtag.cm-meta
+  + span.cm-hashtag.cm-hashtag-end {
+  --tag-border-color: hsla(
+    calc(var(--accent-h) + 280),
+    var(--accent-s),
+    var(--accent-l),
+    20%
+  );
+  background-color: hsla(
+    calc(var(--accent-h) + 280),
+    var(--accent-s),
+    var(--accent-l),
+    10%
+  ) !important;
+  color: hsl(
+    calc(var(--accent-h) + 280),
+    var(--accent-s),
+    var(--accent-l-alt)
+  ) !important;
+}
+body.rainbow-tag-no-filter .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n),
+body.rainbow-tag-no-filter
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n)
+  + span.cm-hashtag,
+body.rainbow-tag-no-filter
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n)
+  + .cm-hashtag.cm-meta,
+body.rainbow-tag-no-filter
+  .cm-s-obsidian
+  span.cm-hashtag-begin:nth-child(5n)
+  + span.cm-hashtag.cm-meta
+  + span.cm-hashtag.cm-hashtag-end {
+  --tag-border-color: hsla(
+    calc(var(--accent-h) + 140),
+    var(--accent-s),
+    var(--accent-l),
+    20%
+  );
+  background-color: hsla(
+    calc(var(--accent-h) + 140),
+    var(--accent-s),
+    var(--accent-l),
+    10%
+  ) !important;
+  color: hsl(
+    calc(var(--accent-h) + 140),
+    var(--accent-s),
+    var(--accent-l-alt)
+  ) !important;
+}

@@ -1,0 +1,8 @@
+body.blockquote-style-speech-bubble-one
+  .theme-dark
+  :is(.markdown-preview-view, .markdown-rendered):not(
+    .kanban-plugin__markdown-preview-view
+  )
+  blockquote {
+  background-color: var(--background-primary) !important;
+}

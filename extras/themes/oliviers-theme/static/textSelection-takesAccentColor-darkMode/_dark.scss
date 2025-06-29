@@ -1,0 +1,24 @@
+.textSelection-takesAccentColor-darkMode .CodeMirror-selected {
+  background: var(--OT-text-selection-background) !important;
+  color: var(--OT-text-selection-color) !important;
+}
+
+.textSelection-takesAccentColor-darkMode .CodeMirror-line::selection,
+.textSelection-takesAccentColor-darkMode .CodeMirror-line > span::selection,
+.textSelection-takesAccentColor-darkMode
+  .CodeMirror-line
+  > span
+  > span::selection {
+  background: var(--OT-text-selection-background) !important;
+  color: var(--OT-text-selection-color) !important;
+}
+
+.textSelection-takesAccentColor-darkMode ::selection {
+  background: var(--OT-text-selection-background) !important;
+  color: var(--OT-text-selection-color) !important;
+}
+
+.textSelection-takesAccentColor-darkMode .cm-editor .cm-selectionBackground {
+  background: var(--OT-text-selection-background) !important;
+  color: var(--OT-text-selection-color) !important;
+}

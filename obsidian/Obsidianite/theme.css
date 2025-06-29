@@ -97,8 +97,10 @@
   /***************************************/
 
   /** Font Customization **/
-  --default-font: "Rubik", "Glow Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+  --default-font:
+    "Rubik", "Glow Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    sans-serif;
 
   --default-font-size: 18px;
 
@@ -106,9 +108,11 @@
   --body-font-weight: 450;
 
   /** Font family for hash-tags **/
-  --tag-font-family: "Space Mono", "OperatorMonoSSmLig-Book", "Glow Sans SC", "华文细黑", "STXihei",
-    "PingFang TC", "微软雅黑体", "Microsoft YaHei New", "微软雅黑", "Microsoft Yahei", "宋体",
-    "SimSun", "Helvetica Neue", "Helvetica", Arial, sans-serif !important;
+  --tag-font-family:
+    "Space Mono", "OperatorMonoSSmLig-Book", "Glow Sans SC", "华文细黑",
+    "STXihei", "PingFang TC", "微软雅黑体", "Microsoft YaHei New", "微软雅黑",
+    "Microsoft Yahei", "宋体", "SimSun", "Helvetica Neue", "Helvetica", Arial,
+    sans-serif !important;
 
   /** Font specially for codes **/
   --code-mono-font: "Space Mono", "OperatorMonoSSmLig-Book";
@@ -135,7 +139,9 @@ a.tag[href*="#进行中"] {
   color: #fff;
 }
 
-.cm-s-obsidian .CodeMirror-line span.cm-tag-working-draft:not(.cm-formatting-hashtag) {
+.cm-s-obsidian
+  .CodeMirror-line
+  span.cm-tag-working-draft:not(.cm-formatting-hashtag) {
   color: #a897ff;
 }
 
@@ -155,7 +161,9 @@ a.tag[href*="#知识"] {
   color: #fff;
 }
 
-.cm-s-obsidian .CodeMirror-line span.cm-tag-knowledge:not(.cm-formatting-hashtag) {
+.cm-s-obsidian
+  .CodeMirror-line
+  span.cm-tag-knowledge:not(.cm-formatting-hashtag) {
   color: #6cbdf3;
 }
 
@@ -165,7 +173,9 @@ a.tag[href*="#文章"] {
   color: #fff;
 }
 
-.cm-s-obsidian .CodeMirror-line span.cm-tag-writing:not(.cm-formatting-hashtag) {
+.cm-s-obsidian
+  .CodeMirror-line
+  span.cm-tag-writing:not(.cm-formatting-hashtag) {
   color: #ff7a7a;
 }
 
@@ -290,8 +300,14 @@ a.tag[href*="#想法"] {
   opacity: 1;
 }
 
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+.is-focused
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon,
+.is-focused
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-title {
   background: var(--background-modifier-border);
   color: var(--text-accent);
 }
@@ -440,7 +456,11 @@ span.cm-formatting-list,
   color: var(--interactive-accent) !important;
 }
 
-.markdown-preview-view ul > li.task-list-item.is-checked ul > li:not(.is-checked) {
+.markdown-preview-view
+  ul
+  > li.task-list-item.is-checked
+  ul
+  > li:not(.is-checked) {
   text-decoration: none !important;
   color: var(--text-normal) !important;
 }
@@ -509,7 +529,13 @@ h6 {
   border-bottom: 1px solid;
   border-width: 1px;
   border-image-slice: 1;
-  border-image-source: linear-gradient(to right, var(--text-sub-accent), #100e17, #100e17, #100e17);
+  border-image-source: linear-gradient(
+    to right,
+    var(--text-sub-accent),
+    #100e17,
+    #100e17,
+    #100e17
+  );
 }
 
 .HyperMD-header {
@@ -565,7 +591,13 @@ h6 {
   border-bottom: 1px solid;
   border-width: 35%;
   border-image-slice: 1;
-  border-image-source: linear-gradient(to right, var(--text-sub-accent), #100e17, #100e17, #100e17);
+  border-image-source: linear-gradient(
+    to right,
+    var(--text-sub-accent),
+    #100e17,
+    #100e17,
+    #100e17
+  );
 }
 
 .view-header-icon {
@@ -593,7 +625,12 @@ h6 {
   border-bottom: 1px solid;
   border-image-slice: 1;
   border-width: 1px;
-  border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
+  border-image-source: linear-gradient(
+    to right,
+    transparent,
+    var(--text-accent),
+    transparent
+  );
 }
 
 .cm-line hr::after,
@@ -733,7 +770,11 @@ cm-s-obsidian span.cm-link:not(.cm-formatting-link) .cm-underline {
 
 .cm-s-obsidian span.cm-hmd-internal-link .cm-underline,
 .internal-link {
-  background-image: linear-gradient(to bottom, var(--bg-accent-55) 0%, var(--bg-accent-55) 100%);
+  background-image: linear-gradient(
+    to bottom,
+    var(--bg-accent-55) 0%,
+    var(--bg-accent-55) 100%
+  );
   transition: background 350ms ease-in-out;
 }
 
@@ -1033,7 +1074,9 @@ blockquote {
   background: linear-gradient(90deg, rgba(13, 185, 215, 0.5), #13111a);
 }
 
-.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote + .HyperMD-quote::before {
+.markdown-source-view.mod-cm6.is-live-preview
+  .HyperMD-quote
+  + .HyperMD-quote::before {
   display: none;
 }
 

@@ -1,0 +1,13 @@
+.view-header:not(:hover):not(:focus-within) {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  z-index: 5;
+}
+-icons .view-header:not(:hover):not(:focus-within) .view-header-icon,
+-icons .view-header:not(:hover):not(:focus-within) .view-header-nav-buttons,
+-icons .view-header:not(:hover):not(:focus-within) .view-actions {
+  opacity: 0;
+  width: 0;
+  padding: 0 5px;
+}

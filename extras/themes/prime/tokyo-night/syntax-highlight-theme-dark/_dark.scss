@@ -1,0 +1,14 @@
+body.tokyo-night {
+  --code-background: var(--color-tokyo-night-background);
+  --code-normal: var(--color-tokyo-night-foreground);
+  --code-comment: var(--color-tokyo-night-faint);
+  --code-function: var(--color-tokyo-night-yellow);
+  --code-important: var(--color-tokyo-night-orange);
+  --code-keyword: var(--color-tokyo-night-purple);
+  --code-operator: var(--color-tokyo-night-red);
+  --code-property: var(--color-tokyo-night-cyan);
+  --code-punctuation: var(--text-muted);
+  --code-string: var(--color-tokyo-night-green);
+  --code-tag: var(--color-tokyo-night-red);
+  --code-value: var(--color-tokyo-night-purple);
+}

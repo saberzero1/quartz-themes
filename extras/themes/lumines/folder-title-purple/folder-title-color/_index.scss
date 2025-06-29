@@ -1,0 +1,47 @@
+.folder-title-purple .nav-folder:nth-of-type(1) .nav-folder-title {
+  color: color-mix(in srgb, var(--color-purple) 100%, var(--color-000) 0%);
+}
+
+.folder-title-purple .nav-folder:nth-of-type(2) .nav-folder-title {
+  color: color-mix(in srgb, var(--color-purple) 90%, var(--color-000) 10%);
+}
+
+.folder-title-purple .nav-folder:nth-of-type(3) .nav-folder-title {
+  color: color-mix(in srgb, var(--color-purple) 80%, var(--color-000) 20%);
+}
+
+.folder-title-purple .nav-folder:nth-of-type(4) .nav-folder-title {
+  color: color-mix(in srgb, var(--color-purple) 70%, var(--color-000) 30%);
+}
+
+.folder-title-purple .nav-folder:nth-of-type(5) .nav-folder-title {
+  color: color-mix(in srgb, var(--color-purple) 60%, var(--color-000) 40%);
+}
+
+.folder-title-purple .nav-folder:nth-of-type(6) .nav-folder-title {
+  color: color-mix(in srgb, var(--color-purple) 50%, var(--color-000) 50%);
+}
+
+.folder-title-purple .nav-folder:nth-of-type(7) .nav-folder-title {
+  color: color-mix(in srgb, var(--color-purple) 40%, var(--color-000) 60%);
+}
+
+.folder-title-purple .nav-folder:nth-of-type(8) .nav-folder-title {
+  color: color-mix(in srgb, var(--color-purple) 30%, var(--color-000) 70%);
+}
+
+.folder-title-purple .nav-folder:nth-of-type(9) .nav-folder-title {
+  color: color-mix(in srgb, var(--color-purple) 20%, var(--color-000) 80%);
+}
+
+.folder-title-purple .nav-folder:nth-of-type(10) .nav-folder-title {
+  color: color-mix(in srgb, var(--color-purple) 10%, var(--color-000) 90%);
+}
+
+.folder-title-purple .nav-folder:nth-of-type(11) .nav-folder-title {
+  color: color-mix(in srgb, var(--color-purple) 0%, var(--color-000) 100%);
+}
+
+.folder-title-purple .nav-folder:nth-of-type(n + 12) .nav-folder-title {
+  color: color-mix(in srgb, var(--color-purple) 0%, var(--color-000) 100%);
+}

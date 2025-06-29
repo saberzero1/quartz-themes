@@ -1,0 +1,55 @@
+.theme-light {
+  color-scheme: light;
+  --highlight-mix-blend-mode: darken;
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --color-red-rgb: 154, 69, 60;
+  --color-red: #9a453c;
+  --color-red-hsl: 6, 44%, 42%;
+  --color-green-rgb: 97, 113, 91;
+  --color-green: #61715b;
+  --color-green-hsl: 104, 11%, 40%;
+  --color-orange-rgb: 160, 116, 75;
+  --color-orange: #a0744b;
+  --color-orange-hsl: 29, 36%, 46%;
+  --color-yellow-rgb: 154, 143, 81;
+  --color-yellow: #9a8f51;
+  --color-yellow-hsl: 51, 31%, 46%;
+  --color-cyan-rgb: 16, 77, 112;
+  --color-cyan: #104d70;
+  --color-cyan-hsl: 202, 75%, 25%;
+  --color-blue-rgb: 51, 83, 138;
+  --color-blue: #33538a;
+  --color-blue-hsl: 218, 45%, 37%;
+  --color-purple-rgb: 95, 81, 112;
+  --color-purple: #5f5170;
+  --color-purple-hsl: 267, 16%, 38%;
+  --color-pink-rgb: 141, 72, 63;
+  --color-pink: #8d483f;
+  --color-pink-hsl: 7, 38%, 40%;
+  --canvas-color: 10, 10, 10;
+  --color-base-00: #cdd5da;
+  /* background-primary */
+  --color-base-05: #c0c8ce;
+  /* background-secondary-alt in light mode, for some reason */
+  --color-base-10: #9cacb4;
+  /* background-primary-alt */
+  --color-base-20: #a6b0b9;
+  /* background-secondary */
+  --color-base-25: #7e95a5;
+  /* idk lol */
+  --color-base-30: #8aa3b1;
+  /* background-modifier-border */
+  --color-base-35: #3a4c5a;
+  /* background-modifier-border-hover */
+  --color-base-40: var(--color-base-30);
+  /* background-modifier-border-focus */
+  --color-base-50: #3a4d5a;
+  /* text-faint */
+  --color-base-60: #34414e;
+  /* also no clue */
+  --color-base-70: #1a1f23;
+  /* text-muted */
+  --color-base-100: #090a0b;
+  /* text-normal */
+}

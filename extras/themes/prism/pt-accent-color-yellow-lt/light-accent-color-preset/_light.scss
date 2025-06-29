@@ -1,0 +1,9 @@
+body.pt-accent-color-yellow-lt {
+  --interactive-accent-base-hsl: var(--color-yellow-base-hsl);
+  --interactive-accent-tint-hsl: var(--color-yellow-tint-hsl);
+  --interactive-accent-text-hsl: var(--color-yellow-text-hsl);
+  --interactive-accent-base: var(--color-yellow-base);
+  --interactive-accent-tint: var(--color-yellow-tint);
+  --interactive-accent-text: var(--color-yellow-text);
+  --interactive-accent-hover: var(--color-yellow-tint);
+}

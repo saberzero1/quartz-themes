@@ -1,0 +1,6 @@
+.notices-at-bottom-right .notice-container {
+  bottom: calc(var(--status-bar-font-size) + var(--notice-spacing));
+  top: unset;
+  flex-direction: column-reverse;
+  display: flex;
+}

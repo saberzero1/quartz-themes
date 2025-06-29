@@ -1,0 +1,39 @@
+.theme-light {
+  --vault-icon: "❄️";
+  --accent-h: 210 !important;
+  --accent-s: 44% !important;
+  --accent-l: 59% !important;
+}
+
+.theme-light {
+  --doc-bg: hsl(207, 40%, 90%);
+  --color-base-00: hsla(208, 44%, 96%, var(--page-transparency));
+  --color-base-05: hsl(208, 45%, 95%);
+  --color-base-10: hsl(208, 48%, 93%);
+  --color-base-20: hsl(208, 48%, 91%);
+  --color-base-25: hsl(208, 47%, 88%);
+  --color-base-30: hsl(208, 30%, 85%);
+  --color-base-35: hsl(209, 45%, 81%);
+  --color-base-40: hsl(210, 40%, 77%);
+  --color-base-50: hsl(210, 30%, 61%);
+  --color-base-60: hsl(210, 27%, 62%);
+  --color-base-70: hsl(210, 22%, 53%);
+  --color-base-100: hsl(210, 30%, 18%);
+  --panel-child: hsl(208, 45%, 95.8%);
+  --color-red-rgb: 191, 97, 106;
+  --color-red: #bb5a64;
+  --color-green-rgb: 163, 190, 140;
+  --color-green: #8fad76;
+  --color-orange-rgb: 208, 135, 112;
+  --color-orange: #cf7b62;
+  --color-yellow-rgb: 235, 203, 139;
+  --color-yellow: #d3ad61;
+  --color-cyan-rgb: 136, 192, 208;
+  --color-cyan: #6ab0c4;
+  --color-blue-rgb: 129, 161, 193;
+  --color-blue: #6997c4;
+  --color-purple-rgb: 94, 129, 172;
+  --color-purple: #5e81ac;
+  --color-pink-rgb: 180, 142, 173;
+  --color-pink: #aa7aa1;
+}

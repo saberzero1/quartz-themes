@@ -1,8 +1,8 @@
 /*
 --------------------------- --------------------------- --------------------------- 
 --------------------------- --------------------------- --------------------------- 
-	Mado 11 - Obsidian Theme by hydescarf
-	https://github.com/hydescarf/Obsidian-Theme-Mado-11
+    Mado 11 - Obsidian Theme by hydescarf
+    https://github.com/hydescarf/Obsidian-Theme-Mado-11
 --------------------------- --------------------------- --------------------------- 
 --------------------------- --------------------------- --------------------------- 
 */
@@ -269,7 +269,12 @@ body:is(:not(.css-settings-manager), .toggle-easy-toggle) {
   --color-italic: hsla(215, 33%, 60%, 1);
 
   --color-highlight: hsla(45, 63%, 63%, 1); /* for highlight text color */
-  --text-highlight-bg: hsla(45, 53%, 53%, 1); /* for highlight text underline color */
+  --text-highlight-bg: hsla(
+    45,
+    53%,
+    53%,
+    1
+  ); /* for highlight text underline color */
 }
 .theme-dark:is(.THT-background, .THT-underline-light) {
   --color-highlight: hsla(45, 53%, 13%, 1);
@@ -367,7 +372,7 @@ body.mod-macos {
 /*
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
-	Mado Layout Basic Styling
+    Mado Layout Basic Styling
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
 */
@@ -384,7 +389,7 @@ body.toggle-wave-background:before {
   width: 100%;
   height: 100%;
 
-  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" xml:space="preserve"><path opacity=".1" d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"/><path opacity=".2" d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"/><path opacity=".4" d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"/></svg>');
+  -webkit-mask-image: url("data:image/svg+xml,utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none' xml:space='preserve'><path opacity='.1' d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z'/><path opacity='.2' d='M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z'/><path opacity='.4' d='M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z'/></svg>");
   -webkit-mask-size: 300% 300px;
   -webkit-mask-position: 88.5% -73px;
   -webkit-mask-repeat: no-repeat;
@@ -399,7 +404,8 @@ body.is-frameless:not(.is-hidden-frameless).is-fullscreen {
 }
 
 /* hidden scrollbar */
-body:not(.is-mobile):is(:not(.css-settings-manager), .toggle-scrollbar) ::-webkit-scrollbar-thumb {
+body:not(.is-mobile):is(:not(.css-settings-manager), .toggle-scrollbar)
+  ::-webkit-scrollbar-thumb {
   visibility: hidden;
 }
 body ::-webkit-scrollbar-thumb:hover:hover {
@@ -426,7 +432,9 @@ body:not(.is-mobile):is(:not(.css-settings-manager), .toggle-scrollbar-overlay)
     .search-result-container.mod-global-search,
     .open-vault-options,
     .recent-vaults-list,
-    .workspace-leaf-content .view-content:not(:has(.canvas-wrapper)) .markdown-preview-view,
+    .workspace-leaf-content
+      .view-content:not(:has(.canvas-wrapper))
+      .markdown-preview-view,
     ,
     .community-modal-info,
     .prompt-results,
@@ -504,14 +512,19 @@ body:not(.is-mobile):is(:not(.css-settings-manager), .toggle-sidebar-buttons)
 body:not(.is-mobile):is(:not(.css-settings-manager), .TEB-hide-vertical)
   .workspace-leaf-content[data-type="file-explorer"]
   .nav-buttons-container,
-body:not(.is-mobile):is(.TEB-hide-horizontal, .TEB-show-vertical, .TEB-show-horizontal)
+body:not(.is-mobile):is(
+    .TEB-hide-horizontal,
+    .TEB-show-vertical,
+    .TEB-show-horizontal
+  )
   .workspace-leaf-content[data-type="file-explorer"]
   .nav-buttons-container,
 body:not(.is-mobile):is(:not(.css-settings-manager), .toggle-sidebar-toggle)
   .workspace-split
   .sidebar-toggle-button,
 body.toggle-note-header .workspace-split.mod-vertical.mod-root .view-header,
-body:not(.is-mobile):is(:not(.css-settings-manager), .toggle-titlebar-buttons) .titlebar {
+body:not(.is-mobile):is(:not(.css-settings-manager), .toggle-titlebar-buttons)
+  .titlebar {
   opacity: 0;
   transition: opacity 0.1s;
 }
@@ -519,10 +532,18 @@ body:not(.is-mobile):is(:not(.css-settings-manager), .toggle-titlebar-buttons) .
 body
   .workspace-split.mod-horizontal:is(.mod-left-split, .mod-right-split)
   .workspace-tab-header-container:hover,
-body .workspace-leaf-content[data-type="file-explorer"] .nav-header:hover .nav-buttons-container,
-body .workspace-split.mod-vertical.mod-root .workspace-tab-header-container:hover:hover:hover div,
+body
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-header:hover
+  .nav-buttons-container,
+body
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tab-header-container:hover:hover:hover
+  div,
 body .workspace-split.mod-vertical.mod-root .view-header:hover,
-body.toggle-note-header .workspace-split.mod-vertical.mod-root .view-header:focus-within,
+body.toggle-note-header
+  .workspace-split.mod-vertical.mod-root
+  .view-header:focus-within,
 body .sidebar-toggle-button:hover:hover,
 body .workspace-tab-header-container:hover:hover .sidebar-toggle-button,
 body.is-grabbing.is-grabbing.is-grabbing.is-grabbing
@@ -548,12 +569,15 @@ body .titlebar:hover:hover:hover:hover:hover:hover:hover:hover:hover {
 }
 
 /* Hide Vault Title */
-body:is(:not(.css-settings-manager), .toggle-vault-title) .nav-folder-title[data-path="/"] {
+body:is(:not(.css-settings-manager), .toggle-vault-title)
+  .nav-folder-title[data-path="/"] {
   display: none;
 }
 
 /* Vault hidden by default, and show up when hovered at the very bottom part of the sidebar */
-body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+body:not(.is-mobile)
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile {
   margin-bottom: -40px !important;
   opacity: 0;
   transition:
@@ -561,21 +585,27 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
     opacity 0.1s;
   padding: 5px;
 }
-body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile:hover {
+body:not(.is-mobile)
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile:hover {
   margin-bottom: 0 !important;
   opacity: 1;
 }
-body:not(.is-mobile) .workspace-split.mod-left-split .workspace-drawer-vault-switcher {
+body:not(.is-mobile)
+  .workspace-split.mod-left-split
+  .workspace-drawer-vault-switcher {
   padding: 0;
 }
-body:not(.is-mobile) .workspace-split.mod-left-split .workspace-drawer-vault-switcher-icon {
+body:not(.is-mobile)
+  .workspace-split.mod-left-split
+  .workspace-drawer-vault-switcher-icon {
   padding: 7px 3px 7px 7px;
 }
 
 /*
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
-	Slide-down Toggle Design
+    Slide-down Toggle Design
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
 */
@@ -634,9 +664,10 @@ body:not(.is-mobile):is(:not(.css-settings-manager), .toggle-sidebar-buttons)
   > .workspace-split.mod-horizontal:not(.mod-right-split)
   .workspace-tabs.mod-top
   .workspace-tab-header-container,
-body:not(.is-mobile):is(:not(.css-settings-manager), .toggle-sidebar-buttons):not(
-    .toggle-topright-opacity
-  )
+body:not(.is-mobile):is(
+    :not(.css-settings-manager),
+    .toggle-sidebar-buttons
+  ):not(.toggle-topright-opacity)
   .workspace
   > .workspace-split.mod-horizontal.mod-right-split
   .workspace-tabs.mod-top
@@ -668,9 +699,10 @@ body:not(.is-mobile):is(:not(.css-settings-manager), .toggle-sidebar-buttons)
   /* margin-left:var(--frame-left-space); */
   /* width:calc(100% - var(--frame-left-space)); */
 }
-body:not(.is-mobile):is(:not(.css-settings-manager), .toggle-sidebar-buttons):not(
-    .toggle-topright-opacity
-  )
+body:not(.is-mobile):is(
+    :not(.css-settings-manager),
+    .toggle-sidebar-buttons
+  ):not(.toggle-topright-opacity)
   .workspace
   > .workspace-split.mod-horizontal.mod-right-split
   .workspace-tabs.mod-top
@@ -687,13 +719,16 @@ body.is-grabbing.is-grabbing.is-grabbing.is-grabbing.is-grabbing
   .workspace-split
   .workspace-tabs
   .workspace-tab-header-container,
-body .titlebar-button-container:is(.mod-right, .mod-left):hover:hover:hover:hover {
+body
+  .titlebar-button-container:is(.mod-right, .mod-left):hover:hover:hover:hover {
   top: 0;
   opacity: 1;
 }
 
 /* when grabbing, push down left side bar contents */
-.workspace-split.mod-horizontal.mod-left-split .workspace-tabs.mod-top .workspace-leaf {
+.workspace-split.mod-horizontal.mod-left-split
+  .workspace-tabs.mod-top
+  .workspace-leaf {
   transition: padding-top 0.2s;
 }
 body:is(
@@ -720,14 +755,18 @@ body:not(.is-mobile).toggle-tab-section
 }
 
 /* resize titlebar height to allow titlebar to response to cursor, this :after is a no-drag element */
-body:is(:not(.css-settings-manager), .toggle-titlebar-buttons):not(.toggle-topright-opacity)
+body:is(:not(.css-settings-manager), .toggle-titlebar-buttons):not(
+    .toggle-topright-opacity
+  )
   .workspace
   .workspace-tabs.mod-top:is(.mod-top-right-space, .mod-top-left-space)
   .workspace-tab-header-container:after {
   height: var(--hovering-trigger-size);
 }
 /* when successfully hovered, expand back the size to full height until the cursor move away */
-body:is(:not(.css-settings-manager), .toggle-titlebar-buttons):not(.toggle-topright-opacity)
+body:is(:not(.css-settings-manager), .toggle-titlebar-buttons):not(
+    .toggle-topright-opacity
+  )
   .titlebar:hover
   ~ .app-container
   .workspace
@@ -854,7 +893,10 @@ body:not(.is-mobile)
 }
 /* macos fix, remove :before height so that button on top-right corner can be hovered */
 /* Unconfirmed: possible bad fix because of macos-css-simulation on windows, thus disabling this but keep for future reference */
-body.mod-macos:not(.is-mobile):is(:not(.css-settings-manager), .toggle-sidebar-buttons)
+body.mod-macos:not(.is-mobile):is(
+    :not(.css-settings-manager),
+    .toggle-sidebar-buttons
+  )
   .workspace
   > .workspace-split.mod-horizontal
   .workspace-tabs.mod-top.mod-top-right-space
@@ -919,7 +961,11 @@ body.toggle-topright-opacity
 body:not(.is-mobile):is(:not(.css-settings-manager), .TEB-hide-vertical)
   .workspace-leaf-content[data-type="file-explorer"]
   .nav-buttons-container,
-body:not(.is-mobile):is(.TEB-hide-horizontal, .TEB-show-vertical, .TEB-show-horizontal)
+body:not(.is-mobile):is(
+    .TEB-hide-horizontal,
+    .TEB-show-vertical,
+    .TEB-show-horizontal
+  )
   .workspace-leaf-content[data-type="file-explorer"]
   .nav-buttons-container {
   flex-direction: column;
@@ -937,10 +983,14 @@ body:not(.is-mobile):is(.TEB-hide-horizontal, .TEB-show-vertical, .TEB-show-hori
     opacity 0.2s;
 }
 /* If sidebar header buttons is not hidden and explorer buttons are, adjust the initial position */
-body:not(.is-mobile).css-settings-manager.TEB-hide-vertical:not(.toggle-sidebar-buttons)
+body:not(.is-mobile).css-settings-manager.TEB-hide-vertical:not(
+    .toggle-sidebar-buttons
+  )
   .workspace-leaf-content[data-type="file-explorer"]
   .nav-buttons-container,
-body:not(.is-mobile):is(.TEB-hide-horizontal, .TEB-show-horizontal):not(.toggle-sidebar-buttons)
+body:not(.is-mobile):is(.TEB-hide-horizontal, .TEB-show-horizontal):not(
+    .toggle-sidebar-buttons
+  )
   .workspace-leaf-content[data-type="file-explorer"]
   .nav-buttons-container {
   left: 13px;
@@ -949,10 +999,14 @@ body:not(.is-mobile):is(.TEB-hide-horizontal, .TEB-show-horizontal):not(.toggle-
   box-shadow: var(--window-shadow);
 }
 /* macos fix */
-body.mod-macos:not(.is-mobile).css-settings-manager.TEB-hide-vertical:not(.toggle-sidebar-buttons)
+body.mod-macos:not(.is-mobile).css-settings-manager.TEB-hide-vertical:not(
+    .toggle-sidebar-buttons
+  )
   .workspace-leaf-content[data-type="file-explorer"]
   .nav-buttons-container,
-body.mod-macos:not(.is-mobile):is(.TEB-hide-horizontal):not(.toggle-sidebar-buttons)
+body.mod-macos:not(.is-mobile):is(.TEB-hide-horizontal):not(
+    .toggle-sidebar-buttons
+  )
   .workspace-leaf-content[data-type="file-explorer"]
   .nav-buttons-container {
   left: var(--frame-left-space);
@@ -962,7 +1016,11 @@ body:not(.is-mobile):is(:not(.css-settings-manager), .TEB-hide-vertical)
   .workspace-leaf-content[data-type="file-explorer"]
   .nav-buttons-container
   .nav-action-button,
-body:not(.is-mobile):is(.TEB-hide-horizontal, .TEB-show-vertical, .TEB-show-horizontal)
+body:not(.is-mobile):is(
+    .TEB-hide-horizontal,
+    .TEB-show-vertical,
+    .TEB-show-horizontal
+  )
   .workspace-leaf-content[data-type="file-explorer"]
   .nav-buttons-container
   .nav-action-button {
@@ -977,7 +1035,9 @@ body
   + .workspace-tab-container
   .workspace-leaf-content[data-type="file-explorer"]
   .nav-buttons-container,
-body .workspace-leaf-content[data-type="file-explorer"] .nav-buttons-container:hover:hover {
+body
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-buttons-container:hover:hover {
   pointer-events: initial;
   top: calc(var(--header-height) - 1px);
   opacity: 1;
@@ -997,7 +1057,10 @@ body:not(.toggle-sidebar-buttons).css-settings-manager
   top: 0px;
   opacity: 1;
 }
-body:not(.toggle-sidebar-buttons):is(.TEB-show-vertical, .TEB-show-horizontal).css-settings-manager
+body:not(.toggle-sidebar-buttons):is(
+    .TEB-show-vertical,
+    .TEB-show-horizontal
+  ).css-settings-manager
   .workspace-leaf-content[data-type="file-explorer"]
   .nav-buttons-container:hover:hover {
   top: 13px;
@@ -1009,7 +1072,10 @@ body:not(.is-mobile):is(.TEB-hide-horizontal, .TEB-show-horizontal)
   .nav-buttons-container {
   flex-direction: row;
 }
-body:not(.is-mobile):not(.is-mobile):is(.TEB-show-vertical, .TEB-show-horizontal)
+body:not(.is-mobile):not(.is-mobile):is(
+    .TEB-show-vertical,
+    .TEB-show-horizontal
+  )
   .workspace-leaf-content[data-type="file-explorer"]
   .nav-buttons-container,
 body:not(.toggle-sidebar-buttons):is(.TEB-show-vertical, .TEB-show-horizontal)
@@ -1029,7 +1095,7 @@ body:not(.toggle-sidebar-buttons):is(.TEB-show-vertical, .TEB-show-horizontal)
 /*
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
-	Main Note Pane Desgin
+    Main Note Pane Desgin
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
 */
@@ -1085,8 +1151,10 @@ body.is-frameless:not(.is-hidden-frameless)
 }
 
 /* remove margin-top of tab headers that block the possibilities to implement pseudo-clickable area */
-.workspace-split.mod-horizontal.mod-left-split .workspace-tab-header-container-inner,
-.workspace-split.mod-horizontal.mod-right-split .workspace-tab-header-container-inner {
+.workspace-split.mod-horizontal.mod-left-split
+  .workspace-tab-header-container-inner,
+.workspace-split.mod-horizontal.mod-right-split
+  .workspace-tab-header-container-inner {
   margin-top: 0;
   padding: 0;
   gap: 0;
@@ -1098,7 +1166,10 @@ body.is-frameless:not(.is-hidden-frameless)
   background: none;
 }
 /* prevent dragging on title */
-.workspace-split.mod-vertical.mod-root .view-header .view-header-title-container > div {
+.workspace-split.mod-vertical.mod-root
+  .view-header
+  .view-header-title-container
+  > div {
   -webkit-app-region: no-drag;
 }
 /* remove title fading element */
@@ -1121,13 +1192,16 @@ body.is-frameless:not(.is-hidden-frameless)
 
 /* macos fixes for top-right buttons */
 /* Unconfirmed: possible bad fix because of macos-css-simulation on windows, thus disabling this but keep for future reference */
-.mod-macos.is-hidden-frameless:not(.is-popout-window) .sidebar-toggle-button.mod-right {
+.mod-macos.is-hidden-frameless:not(.is-popout-window)
+  .sidebar-toggle-button.mod-right {
   /* border:var(--border); */
   /* padding:4px; */
   /* border-top:none; */
   /* border-radius:var(--button-radius); */
 }
-.mod-macos .workspace:not(.is-right-sidedock-open) .sidebar-toggle-button.mod-right {
+.mod-macos
+  .workspace:not(.is-right-sidedock-open)
+  .sidebar-toggle-button.mod-right {
   /* border-left:none; */
 }
 
@@ -1138,7 +1212,9 @@ body:not(.toggle-tab-section)
   .workspace-tab-header-container {
   margin-bottom: 0;
 }
-body:not(.toggle-tab-section) .workspace-split.mod-vertical.mod-root .workspace-tabs.mod-stacked {
+body:not(.toggle-tab-section)
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs.mod-stacked {
   border-radius: 0;
 }
 body
@@ -1164,7 +1240,9 @@ body
   order: 3;
 }
 
-.workspace-split.mod-vertical.mod-root .workspace-tabs.mod-stacked .workspace-tab-header {
+.workspace-split.mod-vertical.mod-root
+  .workspace-tabs.mod-stacked
+  .workspace-tab-header {
   margin: 0;
   padding-top: 7px;
   /* border-top-left-radius:var(--window-radius); */
@@ -1201,7 +1279,10 @@ body.is-translucent
 body.is-translucent
   .workspace-split.mod-vertical.mod-root
   .workspace-tabs.mod-stacked
-  :is(.workspace-tab-header.is-active + .workspace-leaf, .workspace-tab-header.is-active) {
+  :is(
+    .workspace-tab-header.is-active + .workspace-leaf,
+    .workspace-tab-header.is-active
+  ) {
   background: var(--color-base-00) !important;
 }
 
@@ -1234,7 +1315,10 @@ body:not(.is-mobile):is(:not(.css-settings-manager), .toggle-topleft-radius)
   + .workspace-split
   > hr
   + .workspace-tabs:not(.mod-stacked),
-body:not(.is-mobile):is(:not(.css-settings-manager), .toggle-topleft-radius).toggle-tab-section
+body:not(.is-mobile):is(
+    :not(.css-settings-manager),
+    .toggle-topleft-radius
+  ).toggle-tab-section
   .workspace-split.mod-vertical.mod-root
   .workspace-tabs.mod-stacked,
 body:not(.is-mobile):is(:not(.css-settings-manager), .toggle-topleft-radius)
@@ -1251,7 +1335,9 @@ body:not(.is-mobile) .workspace-tabs .workspace-tab-container {
 }
 
 /* Minimum padding to push down cut-off scrollbars when show-tab-title-bar is disabled */
-body:not(.show-view-header) .workspace-split.mod-vertical.mod-root .workspace-leaf {
+body:not(.show-view-header)
+  .workspace-split.mod-vertical.mod-root
+  .workspace-leaf {
   padding-top: 23px;
 }
 body.is-mobile .workspace-split.mod-vertical.mod-root .workspace-leaf {
@@ -1300,14 +1386,18 @@ body.is-phone .view-header,
   box-shadow: var(--panel-shadow);
   margin-inline: 33px;
 }
-body.toggle-sidebar-right-color .workspace-split.mod-horizontal.mod-right-split .workspace-leaf {
+body.toggle-sidebar-right-color
+  .workspace-split.mod-horizontal.mod-right-split
+  .workspace-leaf {
   background: var(--background-secondary);
 }
 
 .workspace-split.mod-horizontal.mod-right-split .view-content {
   padding: var(--size-4-4);
 }
-.workspace-split.mod-horizontal.mod-right-split .view-content .markdown-rendered {
+.workspace-split.mod-horizontal.mod-right-split
+  .view-content
+  .markdown-rendered {
   padding-block: 0;
 }
 .workspace-split.mod-horizontal.mod-right-split .inline-title {
@@ -1315,7 +1405,9 @@ body.toggle-sidebar-right-color .workspace-split.mod-horizontal.mod-right-split 
 }
 
 /* hard override translucent mode transparent background */
-body.is-translucent .workspace-split.mod-horizontal.mod-right-split .workspace-leaf {
+body.is-translucent
+  .workspace-split.mod-horizontal.mod-right-split
+  .workspace-leaf {
   background-color: var(--background-fourth) !important;
 }
 body.is-translucent.toggle-sidebar-right-color
@@ -1385,7 +1477,7 @@ body.is-translucent .modal {
 /*
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
-	Animation
+    Animation
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
 */
@@ -1449,7 +1541,9 @@ body:is(:not(.css-settings-manager), .toggle-note-animation)
   }
 }
 
-:is(.nav-folder, .nav-file) :is(.nav-folder-title, .nav-file-title).is-active svg {
+:is(.nav-folder, .nav-file)
+  :is(.nav-folder-title, .nav-file-title).is-active
+  svg {
   animation: 0.3s bounceback;
 }
 @keyframes bounceback {
@@ -1467,19 +1561,25 @@ body:is(:not(.css-settings-manager), .toggle-note-animation)
 /*
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
-	Icon Button Style
+    Icon Button Style
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
 */
 
 /* tab close button */
-.workspace .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button {
+.workspace
+  .mod-root
+  .workspace-tab-header
+  .workspace-tab-header-inner-close-button {
   padding: var(--button-padding-icon);
   right: unset;
   margin-right: -4px;
 }
 /* remove margin during stacked mode */
-.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-header-inner-close-button {
+.workspace
+  .mod-root
+  .workspace-tabs.mod-stacked
+  .workspace-tab-header-inner-close-button {
   margin-right: 0;
 }
 
@@ -1560,10 +1660,12 @@ body:not(.native-scrollbars) .modal-close-button {
 }
 
 /* remove side padding and add pseudo space on header-parent, then remove parent's is-active background and re-enable child's background */
-.workspace-split.mod-horizontal:is(.mod-left-split, .mod-right-split) .workspace-tab-header-inner {
+.workspace-split.mod-horizontal:is(.mod-left-split, .mod-right-split)
+  .workspace-tab-header-inner {
   padding: 0;
 }
-.workspace-split.mod-horizontal:is(.mod-left-split, .mod-right-split) .workspace-tab-header {
+.workspace-split.mod-horizontal:is(.mod-left-split, .mod-right-split)
+  .workspace-tab-header {
   padding: 5px 3px;
 }
 .workspace-split.mod-horizontal:is(.mod-left-split, .mod-right-split)
@@ -1591,7 +1693,7 @@ body:not(.native-scrollbars) .modal-close-button {
 /*
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
-	Long Button Style
+    Long Button Style
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
 */
@@ -1636,7 +1738,9 @@ button {
   font-size: 0.95em;
   font-weight: 500;
 }
-body:is(:not(.css-settings-manager), .toggle-explorer-collapse) .nav-folder-title .collapse-icon {
+body:is(:not(.css-settings-manager), .toggle-explorer-collapse)
+  .nav-folder-title
+  .collapse-icon {
   display: none;
 }
 body:not(.is-grabbing) .tree-item-self.is-clickable.nav-folder-title:hover {
@@ -1649,7 +1753,9 @@ body:not(.is-grabbing) .tree-item-self.is-clickable.nav-folder-title:hover {
   padding-left: 13px;
   margin-left: 20px;
 }
-body:is(:not(.css-settings-manager), .toggle-explorer-indent) .nav-folder > .nav-folder-children {
+body:is(:not(.css-settings-manager), .toggle-explorer-indent)
+  .nav-folder
+  > .nav-folder-children {
   border-inline-start: none;
   padding-left: 33px;
   margin-left: 0;
@@ -1662,7 +1768,7 @@ body:is(:not(.css-settings-manager), .toggle-explorer-indent) .nav-folder > .nav
 /*
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
-	Markdown Stying
+    Markdown Stying
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
 */
@@ -1754,7 +1860,8 @@ img {
 }
 
 /* Markdown Headings */
-body:is(:not(.css-settings-manager), .toggle-h1-margin-top) :is(h1, .markdown-rendered h1) {
+body:is(:not(.css-settings-manager), .toggle-h1-margin-top)
+  :is(h1, .markdown-rendered h1) {
   margin-top: 73px;
 }
 :is(h1, h2, h3, h4, h5, h6),
@@ -1793,7 +1900,9 @@ input[type="checkbox"]:checked:after {
   margin-block: 1px;
 }
 /* Adjust line position to fit below checkbox */
-.markdown-rendered.show-indentation-guide li.task-list-item > :is(ul, ol)::before {
+.markdown-rendered.show-indentation-guide
+  li.task-list-item
+  > :is(ul, ol)::before {
   left: -10px;
 }
 /* Collapse indicator position adjustment on lists & tasks */
@@ -1819,12 +1928,18 @@ ol {
   padding-inline: 0px 11px;
 }
 /* Build spaces at the end of each listing to distinguish from each other (source) */
-.HyperMD-list-line-1 + .HyperMD-list-line:not(.HyperMD-list-line-1):not(.HyperMD-list-line-2),
-.HyperMD-list-line-2 + .HyperMD-list-line:not(.HyperMD-list-line-2):not(.HyperMD-list-line-3),
-.HyperMD-list-line-3 + .HyperMD-list-line:not(.HyperMD-list-line-3):not(.HyperMD-list-line-4),
-.HyperMD-list-line-4 + .HyperMD-list-line:not(.HyperMD-list-line-4):not(.HyperMD-list-line-5),
-.HyperMD-list-line-5 + .HyperMD-list-line:not(.HyperMD-list-line-5):not(.HyperMD-list-line-6),
-.HyperMD-list-line-6 + .HyperMD-list-line:not(.HyperMD-list-line-6):not(.HyperMD-list-line-7) {
+.HyperMD-list-line-1
+  + .HyperMD-list-line:not(.HyperMD-list-line-1):not(.HyperMD-list-line-2),
+.HyperMD-list-line-2
+  + .HyperMD-list-line:not(.HyperMD-list-line-2):not(.HyperMD-list-line-3),
+.HyperMD-list-line-3
+  + .HyperMD-list-line:not(.HyperMD-list-line-3):not(.HyperMD-list-line-4),
+.HyperMD-list-line-4
+  + .HyperMD-list-line:not(.HyperMD-list-line-4):not(.HyperMD-list-line-5),
+.HyperMD-list-line-5
+  + .HyperMD-list-line:not(.HyperMD-list-line-5):not(.HyperMD-list-line-6),
+.HyperMD-list-line-6
+  + .HyperMD-list-line:not(.HyperMD-list-line-6):not(.HyperMD-list-line-7) {
   padding-top: 11px !important;
 }
 
@@ -1880,7 +1995,9 @@ ul > li.task-list-item.is-checked {
 del,
 .cm-strikethrough,
 ul > li.task-list-item.is-checked *,
-.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:not([data-task=" "]) span {
+.markdown-source-view.mod-cm6
+  .HyperMD-task-line[data-task]:not([data-task=" "])
+  span {
   color: var(--color-strikethrough);
 }
 
@@ -1952,7 +2069,10 @@ ul > li.task-list-item.is-checked *,
 }
 
 /* canvas text blurry fix */
-.is-focused .canvas-node-content.markdown-embed > .markdown-embed-content > .markdown-preview-view {
+.is-focused
+  .canvas-node-content.markdown-embed
+  > .markdown-embed-content
+  > .markdown-preview-view {
   transform: unset;
 }
 .canvas-node-content.markdown-embed {
@@ -1962,7 +2082,7 @@ ul > li.task-list-item.is-checked *,
 /*
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
-	Mado Theme Special Classes
+    Mado Theme Special Classes
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
 */
@@ -1988,12 +2108,18 @@ ul > li.task-list-item.is-checked *,
 .mado-heading .markdown-preview-section > div:not(.is-collapsed) > h1:before {
   border-radius: 4px 0 0 0;
 }
-.mado-heading .markdown-preview-section > div:has(+ div > *:not(h1)) > *:not(h1) {
+.mado-heading
+  .markdown-preview-section
+  > div:has(+ div > *:not(h1))
+  > *:not(h1) {
   border-radius: 0;
   border-bottom: none;
 }
 .mado-heading .markdown-preview-section > div:has(+ div > h1) > *:not(h1),
-.mado-heading .markdown-preview-section > div:has(+ div.mod-footer) > *:not(h1) {
+.mado-heading
+  .markdown-preview-section
+  > div:has(+ div.mod-footer)
+  > *:not(h1) {
   border-radius: 0;
   border-bottom-left-radius: var(--button-radius);
   border-bottom-right-radius: var(--button-radius);
@@ -2138,16 +2264,40 @@ ul > li.task-list-item.is-checked *,
   background: var(--background-fourth);
   border: none;
 }
-.mado-heading .markdown-preview-section > div > table thead > tr > *:first-child {
+.mado-heading
+  .markdown-preview-section
+  > div
+  > table
+  thead
+  > tr
+  > *:first-child {
   border-radius: 4px 0 0 0;
 }
-.mado-heading .markdown-preview-section > div > table thead > tr > *:last-child {
+.mado-heading
+  .markdown-preview-section
+  > div
+  > table
+  thead
+  > tr
+  > *:last-child {
   border-radius: 0 4px 0 0;
 }
-.mado-heading .markdown-preview-section > div > table tbody > tr:last-child > *:first-child {
+.mado-heading
+  .markdown-preview-section
+  > div
+  > table
+  tbody
+  > tr:last-child
+  > *:first-child {
   border-radius: 0 0 0 4px;
 }
-.mado-heading .markdown-preview-section > div > table tbody > tr:last-child > *:last-child {
+.mado-heading
+  .markdown-preview-section
+  > div
+  > table
+  tbody
+  > tr:last-child
+  > *:last-child {
   border-radius: 0 0 4px 0;
 }
 
@@ -2161,17 +2311,26 @@ ul > li.task-list-item.is-checked *,
   padding: 2px;
   background: var(--background-secondary);
 }
-[class*="mado-table"]:not(.mado-table-normal) .markdown-preview-section table :is(th, td) {
+[class*="mado-table"]:not(.mado-table-normal)
+  .markdown-preview-section
+  table
+  :is(th, td) {
   padding: 11px 11px;
   text-align: center;
   min-width: 83px;
 }
-[class*="mado-table"]:not(.mado-table-normal) .markdown-preview-section table th {
+[class*="mado-table"]:not(.mado-table-normal)
+  .markdown-preview-section
+  table
+  th {
   background-color: var(--background-secondary);
   font-weight: 600;
   font-size: 1em;
 }
-[class*="mado-table"]:not(.mado-table-normal).markdown-rendered .markdown-preview-section table td,
+[class*="mado-table"]:not(.mado-table-normal).markdown-rendered
+  .markdown-preview-section
+  table
+  td,
 [class*="mado-table"]:not(.mado-table-normal).mado-table-topless
   .markdown-preview-section
   table
@@ -2249,8 +2408,16 @@ ul > li.task-list-item.is-checked *,
   table
   tr
   :is(th:last-child, td:last-child),
-.mado-table-normal.mado-table-top.markdown-rendered .markdown-preview-section table tr th,
-.mado-table-normal.mado-table-bottom .markdown-preview-section table tr:last-child td {
+.mado-table-normal.mado-table-top.markdown-rendered
+  .markdown-preview-section
+  table
+  tr
+  th,
+.mado-table-normal.mado-table-bottom
+  .markdown-preview-section
+  table
+  tr:last-child
+  td {
   background-color: var(--background-secondary);
   font-weight: 600;
   font-size: 1em;
@@ -2269,36 +2436,46 @@ ul > li.task-list-item.is-checked *,
   :is(th:last-child, td:last-child) {
   border-left: 1.5px solid var(--color-accent-1);
 }
-.mado-table-normal.mado-table-bottom .markdown-preview-section table tr:last-child td {
+.mado-table-normal.mado-table-bottom
+  .markdown-preview-section
+  table
+  tr:last-child
+  td {
   border-top: 2px solid var(--color-accent-1);
 }
 
 /* Mado Table Stripe/Border styling, also adapting colors for headers */
-[class*="mado-table"]:not(.mado-table-normal).mado-table-stripe.markdown-rendered
+[class*="mado-table"]:not(
+    .mado-table-normal
+  ).mado-table-stripe.markdown-rendered
   .markdown-preview-section
   table
   tr:nth-child(2n)
   td:not(:first-child):not(:last-child),
-[class*="mado-table"]:not(.mado-table-normal).mado-table-stripe.markdown-rendered:not(
-    .mado-table-left
-  )
+[class*="mado-table"]:not(
+    .mado-table-normal
+  ).mado-table-stripe.markdown-rendered:not(.mado-table-left)
   .markdown-preview-section
   table
   tr:nth-child(2n)
   td:first-child,
-[class*="mado-table"]:not(.mado-table-normal).mado-table-stripe.markdown-rendered.mado-table-left
+[class*="mado-table"]:not(
+    .mado-table-normal
+  ).mado-table-stripe.markdown-rendered.mado-table-left
   .markdown-preview-section
   table
   tr:nth-child(2n + 1)
   td:first-child,
-[class*="mado-table"]:not(.mado-table-normal).mado-table-stripe.markdown-rendered:not(
-    .mado-table-right
-  )
+[class*="mado-table"]:not(
+    .mado-table-normal
+  ).mado-table-stripe.markdown-rendered:not(.mado-table-right)
   .markdown-preview-section
   table
   tr:nth-child(2n)
   td:last-child,
-[class*="mado-table"]:not(.mado-table-normal).mado-table-stripe.markdown-rendered.mado-table-right
+[class*="mado-table"]:not(
+    .mado-table-normal
+  ).mado-table-stripe.markdown-rendered.mado-table-right
   .markdown-preview-section
   table
   tr:nth-child(2n + 1)
@@ -2308,11 +2485,15 @@ ul > li.task-list-item.is-checked *,
   table
   tr:nth-child(2n + 1)
   :is(td:first-child, td:last-child),
-[class*="mado-table"]:not(.mado-table-normal).mado-table-border.markdown-rendered
+[class*="mado-table"]:not(
+    .mado-table-normal
+  ).mado-table-border.markdown-rendered
   .markdown-preview-section
   table
   :is(tr th:nth-child(2n + 2), tr td:nth-child(2n + 1)),
-[class*="mado-table"]:not(.mado-table-normal).mado-table-border.markdown-rendered.mado-table-bottom
+[class*="mado-table"]:not(
+    .mado-table-normal
+  ).mado-table-border.markdown-rendered.mado-table-bottom
   .markdown-preview-section
   table
   tr:last-child
@@ -2333,7 +2514,9 @@ ul > li.task-list-item.is-checked *,
   table
   tr:last-child
   td:nth-child(2n + 1),
-[class*="mado-table"]:not(.mado-table-normal).mado-table-stripe.markdown-rendered.mado-table-bottom
+[class*="mado-table"]:not(
+    .mado-table-normal
+  ).mado-table-stripe.markdown-rendered.mado-table-bottom
   .markdown-preview-section
   table
   tr:last-child
@@ -2344,8 +2527,10 @@ ul > li.task-list-item.is-checked *,
 /* Mado Table Auto-Expand */
 
 /* Remove master-parent width limit */
-.mado-table-auto.is-readable-line-width > div.markdown-preview-sizer.markdown-preview-section,
-.mado-table-auto.markdown-source-view.mod-cm6.is-readable-line-width :is(.cm-sizer, .cm-content) {
+.mado-table-auto.is-readable-line-width
+  > div.markdown-preview-sizer.markdown-preview-section,
+.mado-table-auto.markdown-source-view.mod-cm6.is-readable-line-width
+  :is(.cm-sizer, .cm-content) {
   max-width: 100%;
 }
 
@@ -2408,7 +2593,7 @@ ul > li.task-list-item.is-checked *,
   -webkit-mask-size: 83%;
   -webkit-mask-position: 53%;
   -webkit-mask-repeat: no-repeat;
-  -webkit-mask-image: url('data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+  -webkit-mask-image: url("data:image/svg+xml, utf8, <svg width='12px' height='10px' viewBox='0 0 12 8' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g transform='translate(-4.000000, -6.000000)' fill='%23000000'><path d='M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999'></path></g></g></svg>");
 }
 
 /* Mado List2Table */
@@ -2423,7 +2608,10 @@ div.callout[data-callout="mado-list2table"]
   .callout-content
   > ul
   :is(.list-bullet, .collapse-indicator),
-div.callout[data-callout="mado-list2table"] .callout-content > ul .contains-task-list:before {
+div.callout[data-callout="mado-list2table"]
+  .callout-content
+  > ul
+  .contains-task-list:before {
   display: none;
 }
 div.callout[data-callout="mado-list2table"] .callout-content {
@@ -2448,7 +2636,12 @@ div.callout[data-callout="mado-list2table"] .callout-content > ul > li > ul {
   gap: 3px;
   padding: 0;
 }
-div.callout[data-callout="mado-list2table"] .callout-content > ul > li > ul > li {
+div.callout[data-callout="mado-list2table"]
+  .callout-content
+  > ul
+  > li
+  > ul
+  > li {
   position: relative;
   height: 53px;
   min-width: 53px;
@@ -2458,7 +2651,13 @@ div.callout[data-callout="mado-list2table"] .callout-content > ul > li > ul > li
   padding: 11px;
   overflow: hidden;
 }
-div.callout[data-callout="mado-list2table"] .callout-content > ul > li > ul > li > * {
+div.callout[data-callout="mado-list2table"]
+  .callout-content
+  > ul
+  > li
+  > ul
+  > li
+  > * {
   position: absolute;
   left: 0;
   top: 0;
@@ -2475,7 +2674,12 @@ div.callout[data-callout="mado-list2table"]
   height: 100%;
   width: 100%;
 }
-div.callout[data-callout="mado-list2table"] .callout-content > ul > li > ul > li.is-checked {
+div.callout[data-callout="mado-list2table"]
+  .callout-content
+  > ul
+  > li
+  > ul
+  > li.is-checked {
   text-decoration: none;
   opacity: 0.4;
 }
@@ -2506,13 +2710,16 @@ div.callout[data-callout="mado-list2table"]
   -webkit-mask-size: 83%;
   -webkit-mask-position: 53%;
   -webkit-mask-repeat: no-repeat;
-  -webkit-mask-image: url('data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+  -webkit-mask-image: url("data:image/svg+xml, utf8, <svg width='12px' height='10px' viewBox='0 0 12 8' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g transform='translate(-4.000000, -6.000000)' fill='%23000000'><path d='M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999'></path></g></g></svg>");
 }
 
 /* Mado Explorer */
 
 /* Hide Inline Title */
-.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer .inline-title {
+.workspace-split:not(.mod-root)
+  .workspace-tabs
+  .markdown-preview-view.mado-explorer
+  .inline-title {
   display: none;
 }
 
@@ -2523,7 +2730,9 @@ div.callout[data-callout="mado-list2table"]
 }
 
 /* Adjust margin and padding from the note pane & the elements */
-.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer,
+.workspace-split:not(.mod-root)
+  .workspace-tabs
+  .markdown-preview-view.mado-explorer,
 .workspace-split:not(.mod-root)
   .workspace-tabs
   .markdown-preview-view.mado-explorer
@@ -2531,7 +2740,9 @@ div.callout[data-callout="mado-list2table"]
   margin: 0 !important;
   padding: 0 !important;
 }
-.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer {
+.workspace-split:not(.mod-root)
+  .workspace-tabs
+  .markdown-preview-view.mado-explorer {
   padding: var(--size-4-6) var(--size-4-3) !important;
 }
 .workspace-split:not(.mod-root)
@@ -2552,7 +2763,10 @@ div.callout[data-callout="mado-list2table"]
   margin: 0;
   padding: 0;
 }
-.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer ul {
+.workspace-split:not(.mod-root)
+  .workspace-tabs
+  .markdown-preview-view.mado-explorer
+  ul {
   padding-block: 7px !important;
   padding-left: 13px !important;
   margin-left: 20px !important;
@@ -2562,13 +2776,23 @@ body.css-settings-manager:not(.toggle-explorer-indent)
   .workspace-tabs
   .markdown-preview-view.mado-explorer
   ul {
-  border-left: var(--nav-indentation-guide-width) solid var(--nav-indentation-guide-color);
+  border-left: var(--nav-indentation-guide-width) solid
+    var(--nav-indentation-guide-color);
 }
 
 /* Explorer Button design */
-.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer a,
-.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer li,
-.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer h1 {
+.workspace-split:not(.mod-root)
+  .workspace-tabs
+  .markdown-preview-view.mado-explorer
+  a,
+.workspace-split:not(.mod-root)
+  .workspace-tabs
+  .markdown-preview-view.mado-explorer
+  li,
+.workspace-split:not(.mod-root)
+  .workspace-tabs
+  .markdown-preview-view.mado-explorer
+  h1 {
   padding: var(--button-padding-long);
   transition: 0.05s ease-in;
   transition-property: background, color;
@@ -2625,13 +2849,19 @@ body.css-settings-manager:not(.toggle-explorer-collapse)
 }
 
 /* hide frontmatter, collapse icon, heading without value and linebreak */
-.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer .frontmatter,
+.workspace-split:not(.mod-root)
+  .workspace-tabs
+  .markdown-preview-view.mado-explorer
+  .frontmatter,
 body:is(:not(.css-settings-manager), .toggle-explorer-collapse)
   .workspace-tabs
   .markdown-preview-view.mado-explorer
   .collapse-indicator
   svg,
-.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer .list-bullet,
+.workspace-split:not(.mod-root)
+  .workspace-tabs
+  .markdown-preview-view.mado-explorer
+  .list-bullet,
 .workspace-split:not(.mod-root)
   .workspace-tabs
   .markdown-preview-view.mado-explorer
@@ -2646,18 +2876,37 @@ body:is(:not(.css-settings-manager), .toggle-explorer-collapse)
   display: none;
 }
 
-.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer a:hover,
-.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer li:hover,
-.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer h1:hover {
+.workspace-split:not(.mod-root)
+  .workspace-tabs
+  .markdown-preview-view.mado-explorer
+  a:hover,
+.workspace-split:not(.mod-root)
+  .workspace-tabs
+  .markdown-preview-view.mado-explorer
+  li:hover,
+.workspace-split:not(.mod-root)
+  .workspace-tabs
+  .markdown-preview-view.mado-explorer
+  h1:hover {
   background-color: var(--nav-item-background-hover);
   color: var(--nav-item-color-hover);
   font-weight: var(--nav-item-weight-hover);
 }
-.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer li > a:hover {
+.workspace-split:not(.mod-root)
+  .workspace-tabs
+  .markdown-preview-view.mado-explorer
+  li
+  > a:hover {
   background: none;
 }
-.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer h1,
-.workspace-split:not(.mod-root) .workspace-tabs .markdown-preview-view.mado-explorer h1:hover {
+.workspace-split:not(.mod-root)
+  .workspace-tabs
+  .markdown-preview-view.mado-explorer
+  h1,
+.workspace-split:not(.mod-root)
+  .workspace-tabs
+  .markdown-preview-view.mado-explorer
+  h1:hover {
   color: var(--color-accent-2);
   font-size: 0.95em;
   font-weight: 500;
@@ -2677,7 +2926,11 @@ body:is(:not(.css-settings-manager), .toggle-explorer-collapse)
 /* show checkmark when previous days are filled(no longer empty), */
 /* using "~" instead of "+" decrease the complexity, though it also decrease credibility(?) as checkmark will appear if the previous day is filled */
 .mado-daily table td:first-child:not(:empty) ~ td:not(:empty) + td:nth-child(3),
-.mado-daily table td:first-child:not(:empty) ~ td:not(:empty) + td:nth-child(7) {
+.mado-daily
+  table
+  td:first-child:not(:empty)
+  ~ td:not(:empty)
+  + td:nth-child(7) {
   background: var(--background-secondary);
   position: relative;
   overflow: hidden;
@@ -2698,7 +2951,7 @@ body:is(:not(.css-settings-manager), .toggle-explorer-collapse)
   -webkit-mask-size: 83%;
   -webkit-mask-position: 53%;
   -webkit-mask-repeat: no-repeat;
-  -webkit-mask-image: url('data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23000000"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+  -webkit-mask-image: url("data:image/svg+xml, utf8, <svg width='12px' height='10px' viewBox='0 0 12 8' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g transform='translate(-4.000000, -6.000000)' fill='%23000000'><path d='M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999'></path></g></g></svg>");
 }
 
 /* Mado Timeline */
@@ -2718,7 +2971,10 @@ body:is(:not(.css-settings-manager), .toggle-explorer-collapse)
   margin-bottom: 0;
   padding-bottom: 13px;
 }
-.mado-timeline .markdown-preview-sizer > div > :is(blockquote, .callout, pre, table) {
+.mado-timeline
+  .markdown-preview-sizer
+  > div
+  > :is(blockquote, .callout, pre, table) {
   margin-top: 23px;
 }
 .mado-timeline .markdown-preview-sizer > div > hr {
@@ -2733,13 +2989,22 @@ body:is(:not(.css-settings-manager), .toggle-explorer-collapse)
 .mado-timeline .markdown-preview-sizer > div > .callout .callout-title {
   justify-content: center;
 }
-.mado-timeline .markdown-preview-sizer > div > .callout .callout-title .callout-fold {
+.mado-timeline
+  .markdown-preview-sizer
+  > div
+  > .callout
+  .callout-title
+  .callout-fold {
   padding-right: 0;
 }
 .mado-timeline .markdown-preview-sizer > div > .callout .callout-content {
   padding: 7px 0;
 }
-.mado-timeline .markdown-preview-sizer > div > .callout .callout-content:before {
+.mado-timeline
+  .markdown-preview-sizer
+  > div
+  > .callout
+  .callout-content:before {
   display: none;
 }
 
@@ -2881,7 +3146,10 @@ div.callout[data-callout*="mado-panel"] ul li.task-list-item > input {
   border: var(--border);
   border-radius: var(--button-radius);
 }
-[class*="mado-panel"] .markdown-preview-sizer > div li.task-list-item.is-checked,
+[class*="mado-panel"]
+  .markdown-preview-sizer
+  > div
+  li.task-list-item.is-checked,
 div.callout[data-callout*="mado-panel"] ul li.task-list-item.is-checked {
   background: var(--background-secondary);
 }
@@ -2921,7 +3189,10 @@ div.callout[data-callout*="mado-panel-list"] ul li {
   ul
   li
   a:not(.tag),
-div.callout[data-callout*="mado-panel-list"][data-callout*="-link"] ul li a:not(.tag) {
+div.callout[data-callout*="mado-panel-list"][data-callout*="-link"]
+  ul
+  li
+  a:not(.tag) {
   height: calc(100% + 16px);
   width: calc(100% + 46px);
   padding-block: 8px;
@@ -2934,21 +3205,39 @@ div.callout[data-callout*="mado-panel-list"][data-callout*="-link"] ul li a:not(
 div.callout[data-callout*="mado-panel-list"] ul li.task-list-item {
   padding-inline: 43px 23px;
 }
-[class*="mado-panel-list"] .markdown-preview-sizer > div li.task-list-item > input,
+[class*="mado-panel-list"]
+  .markdown-preview-sizer
+  > div
+  li.task-list-item
+  > input,
 div.callout[data-callout*="mado-panel-list"] ul li.task-list-item > input {
   padding: 12px;
   left: 0;
 }
-[class*="mado-panel-list"] .markdown-preview-sizer > div li:hover > .list-collapse-indicator,
-div.callout[data-callout*="mado-panel-list"] ul li:hover > .list-collapse-indicator {
+[class*="mado-panel-list"]
+  .markdown-preview-sizer
+  > div
+  li:hover
+  > .list-collapse-indicator,
+div.callout[data-callout*="mado-panel-list"]
+  ul
+  li:hover
+  > .list-collapse-indicator {
   opacity: 1;
 }
 
-[class*="mado-panel-list-rightbox"] .markdown-preview-sizer > div li.task-list-item,
+[class*="mado-panel-list-rightbox"]
+  .markdown-preview-sizer
+  > div
+  li.task-list-item,
 div.callout[data-callout*="mado-panel-list-rightbox"] ul li.task-list-item {
   padding-inline: 23px;
 }
-[class*="mado-panel-list-rightbox"] .markdown-preview-sizer > div li.task-list-item > input,
+[class*="mado-panel-list-rightbox"]
+  .markdown-preview-sizer
+  > div
+  li.task-list-item
+  > input,
 div.callout[data-callout*="mado-panel-list"][data-callout*="-rightbox"]
   ul
   li.task-list-item
@@ -2957,12 +3246,25 @@ div.callout[data-callout*="mado-panel-list"][data-callout*="-rightbox"]
 }
 
 /* the very first list */
-[class*="mado-panel-list"] .markdown-preview-sizer > div > ul > li > .list-collapse-indicator,
-div.callout[data-callout*="mado-panel-list"] .callout-content > ul > li > .list-collapse-indicator {
+[class*="mado-panel-list"]
+  .markdown-preview-sizer
+  > div
+  > ul
+  > li
+  > .list-collapse-indicator,
+div.callout[data-callout*="mado-panel-list"]
+  .callout-content
+  > ul
+  > li
+  > .list-collapse-indicator {
   margin-left: -53px;
 }
 /* all normal list */
-[class*="mado-panel-list"] .markdown-preview-sizer > div li > .list-collapse-indicator,
+[class*="mado-panel-list"]
+  .markdown-preview-sizer
+  > div
+  li
+  > .list-collapse-indicator,
 div.callout[data-callout*="mado-panel-list"] ul li > .list-collapse-indicator {
   margin-left: -40px;
 }
@@ -2972,7 +3274,10 @@ div.callout[data-callout*="mado-panel-list"] ul li > .list-collapse-indicator {
   > div
   li.task-list-item
   > .list-collapse-indicator,
-div.callout[data-callout*="mado-panel-list"] ul li.task-list-item > .list-collapse-indicator {
+div.callout[data-callout*="mado-panel-list"]
+  ul
+  li.task-list-item
+  > .list-collapse-indicator {
   margin-left: -73px;
   margin-top: 0px;
 }
@@ -3023,7 +3328,11 @@ div.callout[data-callout*="mado-panel-list"]
 div.callout[data-callout*="mado-panel-list"] ul li :is(ul, ol) {
   padding-inline: 0;
 }
-[class*="mado-panel-list"] .markdown-preview-sizer > div li.is-collapsed > :is(ul, ol),
+[class*="mado-panel-list"]
+  .markdown-preview-sizer
+  > div
+  li.is-collapsed
+  > :is(ul, ol),
 [class*="mado-panel-list"] .markdown-preview-sizer > div li :is(ul, ol):before,
 div.callout[data-callout*="mado-panel-list"] ul li.is-collapsed > :is(ul, ol),
 div.callout[data-callout*="mado-panel-list"] ul li :is(ul, ol):before {
@@ -3067,27 +3376,65 @@ div.callout[data-callout*="mado-panel-long"] > .callout-content > ul > li {
   height: 70px;
 }
 [class*="mado-panel-auto"] .markdown-preview-sizer > div ul li,
-div.callout[data-callout*="mado-panel"][data-callout*="-auto"] > .callout-content > ul > li {
+div.callout[data-callout*="mado-panel"][data-callout*="-auto"]
+  > .callout-content
+  > ul
+  > li {
   max-width: unset;
 }
-[class*="mado-panel-auto"][class*="mado-panel-small"] .markdown-preview-sizer > div ul li,
-div.callout[data-callout*="mado-panel-small"][data-callout*="-auto"] > .callout-content > ul > li {
+[class*="mado-panel-auto"][class*="mado-panel-small"]
+  .markdown-preview-sizer
+  > div
+  ul
+  li,
+div.callout[data-callout*="mado-panel-small"][data-callout*="-auto"]
+  > .callout-content
+  > ul
+  > li {
   min-width: calc(100% / 4 - 10px);
 }
-[class*="mado-panel-auto"][class*="mado-panel-medium"] .markdown-preview-sizer > div ul li,
-div.callout[data-callout*="mado-panel-medium"][data-callout*="-auto"] > .callout-content > ul > li {
+[class*="mado-panel-auto"][class*="mado-panel-medium"]
+  .markdown-preview-sizer
+  > div
+  ul
+  li,
+div.callout[data-callout*="mado-panel-medium"][data-callout*="-auto"]
+  > .callout-content
+  > ul
+  > li {
   min-width: calc(100% / 3 - 9px);
 }
-[class*="mado-panel-auto"][class*="mado-panel-large"] .markdown-preview-sizer > div ul li,
-div.callout[data-callout*="mado-panel-large"][data-callout*="-auto"] > .callout-content > ul > li {
+[class*="mado-panel-auto"][class*="mado-panel-large"]
+  .markdown-preview-sizer
+  > div
+  ul
+  li,
+div.callout[data-callout*="mado-panel-large"][data-callout*="-auto"]
+  > .callout-content
+  > ul
+  > li {
   min-width: calc(100% / 2 - 7px);
 }
-[class*="mado-panel-auto"][class*="mado-panel-short"] .markdown-preview-sizer > div ul li,
-div.callout[data-callout*="mado-panel-short"][data-callout*="-auto"] > .callout-content > ul > li {
+[class*="mado-panel-auto"][class*="mado-panel-short"]
+  .markdown-preview-sizer
+  > div
+  ul
+  li,
+div.callout[data-callout*="mado-panel-short"][data-callout*="-auto"]
+  > .callout-content
+  > ul
+  > li {
   min-width: calc(100% / 3 - 9px);
 }
-[class*="mado-panel-auto"][class*="mado-panel-long"] .markdown-preview-sizer > div ul li,
-div.callout[data-callout*="mado-panel-long"][data-callout*="-auto"] > .callout-content > ul > li {
+[class*="mado-panel-auto"][class*="mado-panel-long"]
+  .markdown-preview-sizer
+  > div
+  ul
+  li,
+div.callout[data-callout*="mado-panel-long"][data-callout*="-auto"]
+  > .callout-content
+  > ul
+  > li {
   min-width: calc(100% / 2 - 7px);
 }
 
@@ -3097,8 +3444,14 @@ div.callout[data-callout*="mado-panel-task"] > .callout-content > ul > li {
   height: 130px;
   display: none;
 }
-div.callout[data-callout*="mado-panel-task"] > .callout-content > ul > li:nth-child(1),
-div.callout[data-callout*="mado-panel-task"] > .callout-content > ul > li:nth-child(2) {
+div.callout[data-callout*="mado-panel-task"]
+  > .callout-content
+  > ul
+  > li:nth-child(1),
+div.callout[data-callout*="mado-panel-task"]
+  > .callout-content
+  > ul
+  > li:nth-child(2) {
   display: flex;
 }
 /* When two main tasks above are completed, show the rest of the tasks */
@@ -3116,7 +3469,7 @@ div.callout[data-callout*="mado-panel-task"]
 /*
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
-	Plugin Supports
+    Plugin Supports
 --------------------------- --------------------------- 
 --------------------------- --------------------------- 
 */
@@ -3189,7 +3542,10 @@ img.banner-image {
 
 /* icon and button styling */
 .kanban-plugin__item
-  :is(button.kanban-plugin__item-prefix-button, button.kanban-plugin__item-postfix-button),
+  :is(
+    button.kanban-plugin__item-prefix-button,
+    button.kanban-plugin__item-postfix-button
+  ),
 .kanban-plugin__lane button.kanban-plugin__lane-settings-button {
   -webkit-app-region: no-drag;
   display: flex;
@@ -3205,7 +3561,10 @@ img.banner-image {
   box-shadow: none;
 }
 .kanban-plugin__item
-  :is(button.kanban-plugin__item-prefix-button, button.kanban-plugin__item-postfix-button):hover,
+  :is(
+    button.kanban-plugin__item-prefix-button,
+    button.kanban-plugin__item-postfix-button
+  ):hover,
 .kanban-plugin__lane button.kanban-plugin__lane-settings-button:hover {
   opacity: var(--icon-opacity-hover);
   color: var(--icon-color-hover);
@@ -3224,7 +3583,10 @@ div.kanban-plugin__lane-title-count {
 
 /* checkbox completed styling */
 .kanban-plugin__item.is-complete
-  :is(.markdown-preview-view > div *, .kanban-plugin__item-metadata-wrapper:not(:empty) *) {
+  :is(
+    .markdown-preview-view > div *,
+    .kanban-plugin__item-metadata-wrapper:not(:empty) *
+  ) {
   text-decoration: line-through;
   text-decoration-color: var(--color-strikethrough);
   color: var(--color-strikethrough);
@@ -3292,7 +3654,9 @@ div.kanban-plugin__lane-title-count {
   margin-top: 0;
   padding: 0 0 0 7px;
   border: var(--border);
-  background: var(--color-base-00); /* For some reason it's not working originally */
+  background: var(
+    --color-base-00
+  ); /* For some reason it's not working originally */
 }
 
 .themed-color-wrapper {
@@ -3332,7 +3696,9 @@ div.kanban-plugin__lane-title-count {
 }
 
 /* turn into One row instead of multi rows */
-.view-content .style-settings-container .setting-item:not(.setting-item-heading) {
+.view-content
+  .style-settings-container
+  .setting-item:not(.setting-item-heading) {
   flex-direction: row;
   align-items: center;
 }
@@ -3381,162 +3747,162 @@ div.kanban-plugin__lane-title-count {
 name: Mado 11
 id: mado-11
 settings:
-	- 
-		id: intro-section
-		title: Introduction
-		description: "The setting here covers only the very basic to avoid complexity fatigue. That being said, feel free to suggest anything by submitting a Github issue on: https://github.com/hydescarf/Obsidian-Theme-Mado-11"
-		type: heading
-		collapsed: true
-		level: 3
-		
-		
-		
-		
-	-
-		id: theme-section
-		title: Theme Section
-		type: heading
-		collapsed: true
-		level: 3
-	- 
-		id: theme-color
-		title: Theme Color
-		type: class-select
-		allowEmpty: false
-		default: theme-daisy-blue
-		options:
-			-
-				label: Daisy Blue
-				value: theme-daisy-blue
-			-
-				label: Red Sky
-				value: theme-red-sky
-			-
-				label: Violette
-				value: theme-violette
-			-
-				label: Greenery
-				value: theme-greenery
-			-
-				label: Yellowish
-				value: theme-yellowish
-			-
-				label: Orange Jist
-				value: theme-orange-jist
-			-
-				label: Deep Blue
-				value: theme-deep-blue
-			-
-				label: Tea Teal
-				value: theme-tea-teal
-			-
-				label: Magenta Pink
-				value: theme-magenta-pink
-			-
-				label: Grayscale
-				value: theme-grayscale
-	- 
-		id: accent
-		title: Accent Color
-		type: variable-themed-color
-		opacity: false
-		format: hsl-split
-		default-light: '#'
-		default-dark: '#'
-	- 
-		id: bgcolor
-		title: Background Color
-		description: "*Background color is not dynamically coded. You may see off-colors if you wish to change this setting."
-		type: variable-themed-color
-		opacity: false
-		format: hsl-split
-		default-light: '#'
-		default-dark: '#'
-	- 
-		id: toggle-wave-background
-		title: Enable background wave design on left sidebar
-		type: class-toggle
-		default: false
-	- 
-		id: toggle-sidebar-right-color
-		title: Enable alternative background color for right sidebar
-		type: class-toggle
-		default: false
-	- 
-		id: toggle-topleft-radius
-		title: Enable rounded top-left corner of the main pane
-		type: class-toggle
-		default: true
-	- 
-		id: toggle-note-animation
-		title: Enable sliding animation on main pane
-		description: Animation is noticable when you switch to a new tab
-		type: class-toggle
-		default: true
-	- 
-	
-	
-	
-		id: layout-section
-		title: Layout Section
-		type: heading
-		collapsed: true
-		level: 3
-	- 
-	
-	
-		id: toggle-scrollbar-overlay
-		title: Enable Overlay Scrollbar
-		type: class-toggle
-		description: Overlay will provide you wider field of contents, but in return, scrollbar will have to overlap onto it.
-		default: true
-	- 
-		id: toggle-easy-toggle
-		title: Enable Easy Toggle
-		type: class-toggle
-		description: Enabling Easy Toggle gives you more triggerable area to reveal the hidden buttons.
-		default: true
-	- 
-		id: toggle-topright-opacity
-		title: Enable Alternative Toggle Style (Top-right)
-		description: Enabling this will switch the toggle style from "sliding" to "fading".
-		type: class-toggle
-		default: false
-	- 
-	
-	
-		id: hiding-section
-		title: Hiding Elements
-		type: heading
-		description: Hide/Unhide the surrounding elements. Most can be hovered to reveal them.
-		level: 4
-		collapsed: true
-	- 
-		id: toggle-titlebar-buttons
-		title: Hide Window Titlebar Buttons
-		type: class-toggle
-		default: true
-	- 
-		id: toggle-side-ribbons
-		title: Hide Sidedock Ribbons
-		type: class-toggle
-		default: true
-	- 
-		id: toggle-sidebar-toggle
-		title: Hide Sidebar Toggle Button 
-		type: class-toggle
-		default: true
-	- 
-		id: toggle-sidebar-buttons
-		title: Hide Sidebar Tab Buttons
-		type: class-toggle
-		default: true
-	- 
-		id: toggle-explorer-buttons
-		title: Hide File Explorer Buttons
-		description: If they are hidden, you may reveal the buttons by hovering at the "Tab Header Buttons" above it.
-		type: class-select
-		allowEmpty: false
+    - 
+        id: intro-section
+        title: Introduction
+        description: "The setting here covers only the very basic to avoid complexity fatigue. That being said, feel free to suggest anything by submitting a Github issue on: https://github.com/hydescarf/Obsidian-Theme-Mado-11"
+        type: heading
+        collapsed: true
+        level: 3
+        
+        
+        
+        
+    -
+        id: theme-section
+        title: Theme Section
+        type: heading
+        collapsed: true
+        level: 3
+    - 
+        id: theme-color
+        title: Theme Color
+        type: class-select
+        allowEmpty: false
+        default: theme-daisy-blue
+        options:
+            -
+                label: Daisy Blue
+                value: theme-daisy-blue
+            -
+                label: Red Sky
+                value: theme-red-sky
+            -
+                label: Violette
+                value: theme-violette
+            -
+                label: Greenery
+                value: theme-greenery
+            -
+                label: Yellowish
+                value: theme-yellowish
+            -
+                label: Orange Jist
+                value: theme-orange-jist
+            -
+                label: Deep Blue
+                value: theme-deep-blue
+            -
+                label: Tea Teal
+                value: theme-tea-teal
+            -
+                label: Magenta Pink
+                value: theme-magenta-pink
+            -
+                label: Grayscale
+                value: theme-grayscale
+    - 
+        id: accent
+        title: Accent Color
+        type: variable-themed-color
+        opacity: false
+        format: hsl-split
+        default-light: '#'
+        default-dark: '#'
+    - 
+        id: bgcolor
+        title: Background Color
+        description: "*Background color is not dynamically coded. You may see off-colors if you wish to change this setting."
+        type: variable-themed-color
+        opacity: false
+        format: hsl-split
+        default-light: '#'
+        default-dark: '#'
+    - 
+        id: toggle-wave-background
+        title: Enable background wave design on left sidebar
+        type: class-toggle
+        default: false
+    - 
+        id: toggle-sidebar-right-color
+        title: Enable alternative background color for right sidebar
+        type: class-toggle
+        default: false
+    - 
+        id: toggle-topleft-radius
+        title: Enable rounded top-left corner of the main pane
+        type: class-toggle
+        default: true
+    - 
+        id: toggle-note-animation
+        title: Enable sliding animation on main pane
+        description: Animation is noticable when you switch to a new tab
+        type: class-toggle
+        default: true
+    - 
+    
+    
+    
+        id: layout-section
+        title: Layout Section
+        type: heading
+        collapsed: true
+        level: 3
+    - 
+    
+    
+        id: toggle-scrollbar-overlay
+        title: Enable Overlay Scrollbar
+        type: class-toggle
+        description: Overlay will provide you wider field of contents, but in return, scrollbar will have to overlap onto it.
+        default: true
+    - 
+        id: toggle-easy-toggle
+        title: Enable Easy Toggle
+        type: class-toggle
+        description: Enabling Easy Toggle gives you more triggerable area to reveal the hidden buttons.
+        default: true
+    - 
+        id: toggle-topright-opacity
+        title: Enable Alternative Toggle Style (Top-right)
+        description: Enabling this will switch the toggle style from "sliding" to "fading".
+        type: class-toggle
+        default: false
+    - 
+    
+    
+        id: hiding-section
+        title: Hiding Elements
+        type: heading
+        description: Hide/Unhide the surrounding elements. Most can be hovered to reveal them.
+        level: 4
+        collapsed: true
+    - 
+        id: toggle-titlebar-buttons
+        title: Hide Window Titlebar Buttons
+        type: class-toggle
+        default: true
+    - 
+        id: toggle-side-ribbons
+        title: Hide Sidedock Ribbons
+        type: class-toggle
+        default: true
+    - 
+        id: toggle-sidebar-toggle
+        title: Hide Sidebar Toggle Button 
+        type: class-toggle
+        default: true
+    - 
+        id: toggle-sidebar-buttons
+        title: Hide Sidebar Tab Buttons
+        type: class-toggle
+        default: true
+    - 
+        id: toggle-explorer-buttons
+        title: Hide File Explorer Buttons
+        description: If they are hidden, you may reveal the buttons by hovering at the "Tab Header Buttons" above it.
+        type: class-select
+        allowEmpty: false
         default: TEB-hide-vertical
         options:
             - 
@@ -3554,126 +3920,126 @@ settings:
             - 
                 label: Show (Horizontal)
                 value: TEB-show-horizontal
-	- 
-		id: toggle-vault-title
-		title: Hide File Explorer Vault Title (Unhoverable)
-		type: class-toggle
-		default: true
-	- 
-		id: toggle-explorer-indent
-		title: Hide File Explorer Indentation Guide (Unhoverable)
-		type: class-toggle
-		default: true
-	- 
-		id: toggle-explorer-collapse
-		title: Hide File Explorer Collapse Indicator (Unhoverable)
-		type: class-toggle
-		default: true
-	- 
-		id: toggle-tab-section
-		title: Hide Note Tab Section
-		type: class-toggle
-		default: false
-	- 
-		id: toggle-note-header
-		title: Hide Note Title Bar
-		type: class-toggle
-		default: false
-	- 
-		id: toggle-status-bar
-		title: Hide Status Bar (Unhoverable)
-		type: class-toggle
-		default: true
-	- 
-		id: toggle-sync-button
-		title: Show Sync Button Independently
-		type: class-toggle
-		description: Available when Status Bar is hidden.
-		default: false
-	- 
-		id: toggle-scrollbar
-		title: Hide Scrollbar
-		type: class-toggle
-		default: true
-	- 
-	
-	
-	
-	
-	
-	
-		id: markdown-section
-		title: Markdown Section
-		type: heading
-		collapsed: true
-		level: 3
-	- 
-		id: file-line-width
-		title: Readable Line Length
-		type: variable-number-slider
-		default: 700
-		format: px
+    - 
+        id: toggle-vault-title
+        title: Hide File Explorer Vault Title (Unhoverable)
+        type: class-toggle
+        default: true
+    - 
+        id: toggle-explorer-indent
+        title: Hide File Explorer Indentation Guide (Unhoverable)
+        type: class-toggle
+        default: true
+    - 
+        id: toggle-explorer-collapse
+        title: Hide File Explorer Collapse Indicator (Unhoverable)
+        type: class-toggle
+        default: true
+    - 
+        id: toggle-tab-section
+        title: Hide Note Tab Section
+        type: class-toggle
+        default: false
+    - 
+        id: toggle-note-header
+        title: Hide Note Title Bar
+        type: class-toggle
+        default: false
+    - 
+        id: toggle-status-bar
+        title: Hide Status Bar (Unhoverable)
+        type: class-toggle
+        default: true
+    - 
+        id: toggle-sync-button
+        title: Show Sync Button Independently
+        type: class-toggle
+        description: Available when Status Bar is hidden.
+        default: false
+    - 
+        id: toggle-scrollbar
+        title: Hide Scrollbar
+        type: class-toggle
+        default: true
+    - 
+    
+    
+    
+    
+    
+    
+        id: markdown-section
+        title: Markdown Section
+        type: heading
+        collapsed: true
+        level: 3
+    - 
+        id: file-line-width
+        title: Readable Line Length
+        type: variable-number-slider
+        default: 700
+        format: px
         min: 400
         max: 1200
         step: 10
-	-
-		id: text-normal
-		title: Text Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: text-muted
-		title: Muted Text Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: text-faint
-		title: Faint Text Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
-	-
-	
-	
-		id: typography-section
-		title: Typography Section
-		type: heading
-		collapsed: true
-		level: 4
-	- 
-	
-	
-		id: bold-color
-		title: Bold Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: bold-weight
-		title: Bold Weight
-		type: variable-number-slider
-		default: 700
+    -
+        id: text-normal
+        title: Text Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: text-muted
+        title: Muted Text Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: text-faint
+        title: Faint Text Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
+    -
+    
+    
+        id: typography-section
+        title: Typography Section
+        type: heading
+        collapsed: true
+        level: 4
+    - 
+    
+    
+        id: bold-color
+        title: Bold Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: bold-weight
+        title: Bold Weight
+        type: variable-number-slider
+        default: 700
         min: 100
         max: 1000
         step: 100
-	-
-		id: italic-color
-		title: Italic Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: toggle-highlight-type
-		title: Highlight Type
-		type: class-select
-		allowEmpty: false
+    -
+        id: italic-color
+        title: Italic Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: toggle-highlight-type
+        title: Highlight Type
+        type: class-select
+        allowEmpty: false
         default: THT-underline-dark
         options:
             - 
@@ -3688,136 +4054,135 @@ settings:
             - 
                 label: Underlined (Dark-mode only)
                 value: THT-underline-dark
-	- 
-		id: color-highlight
-		title: Highlight Color (Text)
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: text-highlight-bg
-		title: Highlight Color (Background/Underline)
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: color-strikethrough
-		title: Strikethrough Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: inline-code-color
-		title: Inline Code Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: list-marker-color
-		title: Listing Bullet/Marker Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
-	-
-	
-	
-		id: heading-section
-		title: Heading Section
-		description: "Not applicable to cssclass: mado-heading."
-		type: heading
-		collapsed: true
-		level: 4
-	- 
-	
-	
-	- 
-		id: toggle-h1-margin-top
-		title: Enable H1 Spacious Separator
-		description: When an H1 is uncollapsed, it will create a big wide space below to distinguish from the next H1. Downside, however, is the first H1 will always have the wide space above it.
-		type: class-toggle
-		default: true
-	-
-		id: h1-size
-		title: H1 Size
-		type: variable-number
-		format: em
-		default: 2
-	-
-		id: h2-size
-		title: H2 Size
-		type: variable-number
-		format: em
-		default: 1.6
-	-
-		id: h3-size
-		title: H3 Size
-		type: variable-number
-		format: em
-		default: 1.37
-	-
-		id: h4-size
-		title: H4 Size
-		type: variable-number
-		format: em
-		default: 1.25
-	-
-		id: h5-size
-		title: H5 Size
-		type: variable-number
-		format: em
-		default: 1.12
-	-
-		id: h6-size
-		title: H6 Size
-		type: variable-number
-		format: em
-		default: 1.12
-	-
-		
-		id: h1-color
-		title: H1 Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: h2-color
-		title: H2 Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: h3-color
-		title: H3 Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: h4-color
-		title: H4 Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: h5-color
-		title: H5 Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
-	-
-		id: h6-color
-		title: H6 Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
+    - 
+        id: color-highlight
+        title: Highlight Color (Text)
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: text-highlight-bg
+        title: Highlight Color (Background/Underline)
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: color-strikethrough
+        title: Strikethrough Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: inline-code-color
+        title: Inline Code Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: list-marker-color
+        title: Listing Bullet/Marker Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
+    -
+    
+    
+        id: heading-section
+        title: Heading Section
+        description: "Not applicable to cssclass: mado-heading."
+        type: heading
+        collapsed: true
+        level: 4
+    
+    
+    - 
+        id: toggle-h1-margin-top
+        title: Enable H1 Spacious Separator
+        description: When an H1 is uncollapsed, it will create a big wide space below to distinguish from the next H1. Downside, however, is the first H1 will always have the wide space above it.
+        type: class-toggle
+        default: true
+    -
+        id: h1-size
+        title: H1 Size
+        type: variable-number
+        format: em
+        default: 2
+    -
+        id: h2-size
+        title: H2 Size
+        type: variable-number
+        format: em
+        default: 1.6
+    -
+        id: h3-size
+        title: H3 Size
+        type: variable-number
+        format: em
+        default: 1.37
+    -
+        id: h4-size
+        title: H4 Size
+        type: variable-number
+        format: em
+        default: 1.25
+    -
+        id: h5-size
+        title: H5 Size
+        type: variable-number
+        format: em
+        default: 1.12
+    -
+        id: h6-size
+        title: H6 Size
+        type: variable-number
+        format: em
+        default: 1.12
+    -
+        
+        id: h1-color
+        title: H1 Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: h2-color
+        title: H2 Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: h3-color
+        title: H3 Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: h4-color
+        title: H4 Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: h5-color
+        title: H5 Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
+    -
+        id: h6-color
+        title: H6 Color
+        type: variable-themed-color
+        format: hsl
+        default-light: '#'
+        default-dark: '#'
 */

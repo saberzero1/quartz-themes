@@ -1,0 +1,20 @@
+.OT-tables-custom .cm-embed-block.markdown-rendered .block-language-dataview,
+.OT-tables-custom .markdown-rendered table,
+.OT-tables-custom .markdown-rendered .table-view-table {
+  border: calc(var(--table-border-width) * 2) solid;
+}
+
+.OT-tables-custom .markdown-rendered td,
+.OT-tables-custom .markdown-rendered th {
+  border: 1px dotted;
+}
+
+.OT-tables-custom .markdown-rendered thead tr {
+  --table-header-size: 1em;
+  --table-header-background: var(--OT-table-header-background);
+  --table-header-background-hover: var(--table-header-background);
+  --table-header-border-width: 0;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  border-bottom: 1.5px solid var(--table-header-background);
+}

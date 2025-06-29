@@ -49,13 +49,20 @@ body.theme-dark {
 .view-header,
 .workspace-leaf.mod-active .view-header,
 .workspace-leaf-resize-handle,
-.workspace > .workspace-split > .workspace-leaf:first-of-type:last-of-type .view-header {
+.workspace
+  > .workspace-split
+  > .workspace-leaf:first-of-type:last-of-type
+  .view-header {
   background-color: var(--background-secondary-alt);
 }
 
 .workspace-leaf.mod-active .view-header-title-container:after,
 .view-header-title-container:after {
-  background: linear-gradient(to right, transparent, var(--background-secondary-alt));
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--background-secondary-alt)
+  );
 }
 
 /* Falling snow! (If it bothers you, remove everything below this comment) */
@@ -68,7 +75,7 @@ html:after {
   bottom: 0;
   right: 0;
   left: 0;
-  background-image: url(https://freepngimg.com/download/winter_snow/6-2-clear-snow-png.png);
+  background-image: url("https://freepngimg.com/download/winter_snow/6-2-clear-snow-png.png");
   opacity: 0.5;
   animation: MOVE-BG 500s linear infinite;
   z-index: 100;

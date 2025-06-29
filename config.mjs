@@ -1,9 +1,17 @@
-import { getValueFromDictionary, readJsonFileAsDictionary, getCurrentFolder } from "./util/util.mjs"
+import {
+  getValueFromDictionary,
+  readJsonFileAsDictionary,
+  getCurrentFolder,
+} from "./util/util.mjs";
+
+export const testMode = false;
+export const staticMode = true;
+export const themeToTest = "Shiba Inu";
 
 export const themes = getValueFromDictionary(
   readJsonFileAsDictionary(getCurrentFolder(), "themes.json"),
   "themes",
-)
+);
 
 export const usedRules = [
   // General
@@ -157,4 +165,4 @@ export const usedRules = [
   ".workspace-split.mod-root .view-content",
   // Borders
   ".workspace-leaf-resize-handle",
-]
+];

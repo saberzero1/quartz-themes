@@ -146,7 +146,8 @@ Disabled features */
 
   /* Preview mode */
 
-  --text: "Monaspace Argon", "monolisa", menlo, SFMono-Regular, Consolas, monospace;
+  --text:
+    "Monaspace Argon", "monolisa", menlo, SFMono-Regular, Consolas, monospace;
 
   /* Editor mode */
 
@@ -194,19 +195,19 @@ Disabled features */
 
 /* Desktop font sizes */
 body {
-  --font-adaptive-normal: var(--font-normal);
-  --font-adaptive-small: var(--font-small);
-  --font-adaptive-smaller: var(--font-smaller);
-  --font-adaptive-smallest: var(--font-smallest);
+  --font-adaptive-normal: 16px;
+  --font-adaptive-small: 13px;
+  --font-adaptive-smaller: 11px;
+  --font-adaptive-smallest: 10px;
   --line-width-adaptive: var(--line-width);
 }
 
 /* Phone font sizes */
 @media (max-width: 400pt) {
   .is-mobile {
-    --font-adaptive-small: calc(var(--font-small) + 2px);
-    --font-adaptive-smaller: calc(var(--font-smaller) + 2px);
-    --font-adaptive-smallest: calc(var(--font-smallest) + 2px);
+    --font-adaptive-small: 15px;
+    --font-adaptive-smaller: 13px;
+    --font-adaptive-smallest: 12px;
     --max-width: 88%;
   }
 }
@@ -214,10 +215,10 @@ body {
 /* Tablet font sizes */
 @media (min-width: 400pt) {
   .is-mobile {
-    --font-adaptive-normal: calc(var(--font-normal) + 4px);
-    --font-adaptive-small: calc(var(--font-small) + 3px);
-    --font-adaptive-smaller: calc(var(--font-smaller) + 2px);
-    --font-adaptive-smallest: calc(var(--font-smallest) + 2px);
+    --font-adaptive-normal: 20px;
+    --font-adaptive-small: 16px;
+    --font-adaptive-smaller: 13px;
+    --font-adaptive-smallest: 12px;
     --line-width-adaptive: calc(var(--line-width) + 6rem);
     --max-width: 90%;
   }
@@ -236,10 +237,26 @@ body {
   --background-secondary-alt: rgba(3, 36, 62, 0.5);
   --background-tertiary: #03243e;
   /* unknown what these values mean */
-  --background-modifier-border: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 6%));
-  --background-modifier-border-hover: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 12%));
-  --background-modifier-border-focus: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 20%));
-  --background-modifier-form-field: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 6%));
+  --background-modifier-border: hsl(
+    var(--base-h),
+    var(--base-s),
+    calc(var(--base-l) - 6%)
+  );
+  --background-modifier-border-hover: hsl(
+    var(--base-h),
+    var(--base-s),
+    calc(var(--base-l) - 12%)
+  );
+  --background-modifier-border-focus: hsl(
+    var(--base-h),
+    var(--base-s),
+    calc(var(--base-l) - 20%)
+  );
+  --background-modifier-form-field: hsl(
+    var(--base-h),
+    var(--base-s),
+    calc(var(--base-l) + 6%)
+  );
   --background-modifier-form-field-highlighted: hsl(
     var(--base-h),
     var(--base-s),
@@ -250,26 +267,57 @@ body {
   --text-muted: #03243e;
   --text-faint: rgba(3, 36, 62, 0.5);
   /* Unsure what to set these to:  */
-  --background-transparent: hsla(var(--base-h), var(--base-s), var(--base-l), 0);
+  --background-transparent: hsla(
+    var(--base-h),
+    var(--base-s),
+    var(--base-l),
+    0
+  );
   --background-translucent: rgba(255, 255, 255, 0.85);
   --background-match-highlight: hsla(var(--accent-h), 40%, 62%, 0.2);
-  --background-modifier-accent: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 10%));
+  --background-modifier-accent: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 10%)
+  );
   /* done */
   --text-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --text-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 10%));
+  --text-accent-hover: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) - 10%)
+  );
   --text-on-accent: white;
   --icon-hex: 000;
-  --interactive-accent: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 10%));
-  --interactive-accent-hover: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 0%));
-  --quote-opening-modifier: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 10%));
+  --interactive-accent: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 10%)
+  );
+  --interactive-accent-hover: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) - 0%)
+  );
+  --quote-opening-modifier: hsl(
+    var(--base-h),
+    var(--base-s),
+    calc(var(--base-l) - 10%)
+  );
   --interactive-accent-rgb: 220, 220, 220;
   --text-selection: hsla(var(--accent-h), 50%, calc(var(--base-l) - 20%), 30%);
   --text-highlight-bg: rgba(255, 224, 0, 0.5);
   --text-highlight-bg-active: rgba(0, 0, 0, 0.1);
-  --background-modifier-cover: hsla(var(--base-h), var(--base-s), calc(var(--base-l) - 5%), 0.7);
+  --background-modifier-cover: hsla(
+    var(--base-h),
+    var(--base-s),
+    calc(var(--base-l) - 5%),
+    0.7
+  );
 }
 
-.theme-light.minimal-light-contrast .workspace-fake-target-overlay.is-in-sidebar,
+.theme-light.minimal-light-contrast
+  .workspace-fake-target-overlay.is-in-sidebar,
 .theme-light.minimal-light-contrast .titlebar,
 .theme-light.minimal-light-contrast .status-bar,
 .theme-light.minimal-light-contrast .workspace-ribbon.mod-left,
@@ -288,10 +336,24 @@ body {
   --text-normal: #abb2bf;
   --text-muted: #c792ea;
   --text-faint: rgba(199, 146, 234, 0.593);
-  --background-transparent: hsla(var(--base-h), var(--base-s), var(--base-d), 0);
-  --background-translucent: hsla(var(--base-h), var(--base-s), var(--base-d), 0.85);
+  --background-transparent: hsla(
+    var(--base-h),
+    var(--base-s),
+    var(--base-d),
+    0
+  );
+  --background-translucent: hsla(
+    var(--base-h),
+    var(--base-s),
+    var(--base-d),
+    0.85
+  );
   --background-match-highlight: hsla(var(--accent-h), 40%, 62%, 0.2);
-  --background-modifier-accent: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-d) - 10%));
+  --background-modifier-accent: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-d) - 10%)
+  );
   --text-accent: #ecc48d;
   --text-accent-hover: #c792ea;
   --text-code: #c792ea;
@@ -299,7 +361,11 @@ body {
   --icon-hex: FFF;
   --interactive-accent: #c792ea;
   --interactive-accent-hover: rgba(141, 67, 190, 1);
-  --quote-opening-modifier: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 10%));
+  --quote-opening-modifier: hsl(
+    var(--base-h),
+    var(--base-s),
+    calc(var(--base-d) + 10%)
+  );
   --interactive-accent-rgb: 66, 66, 66;
   --text-selection: rgba(197, 146, 234, 0.651);
   --text-highlight-bg: rgba(3, 36, 62, 0.5);
@@ -311,8 +377,17 @@ body {
 }
 .theme-light.minimal-light-tonal {
   --background-primary: hsl(var(--base-h), var(--base-s), var(--base-l));
-  --background-primary-alt: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 4%));
-  --background-translucent: hsla(var(--base-h), var(--base-s), var(--base-l), 0.85);
+  --background-primary-alt: hsl(
+    var(--base-h),
+    var(--base-s),
+    calc(var(--base-l) - 4%)
+  );
+  --background-translucent: hsla(
+    var(--base-h),
+    var(--base-s),
+    var(--base-l),
+    0.85
+  );
 }
 .theme-dark.minimal-dark-tonal {
   --background-secondary: #717a8aaa;
@@ -348,11 +423,15 @@ SPECIAL FEATURES
 
 Frameless mode on macOS only */
 
-.hider-frameless:not(.is-mobile) .workspace-split.mod-right-split > .workspace-tabs,
+.hider-frameless:not(.is-mobile)
+  .workspace-split.mod-right-split
+  > .workspace-tabs,
 .hider-frameless:not(.is-mobile) .workspace-split.mod-root .view-header {
   padding-top: 2px;
 }
-.hider-frameless:not(.is-mobile) .workspace-split.mod-left-split > .workspace-tabs {
+.hider-frameless:not(.is-mobile)
+  .workspace-split.mod-left-split
+  > .workspace-tabs {
   padding-top: 24px;
 }
 .hider-frameless:not(.is-mobile)
@@ -365,22 +444,32 @@ Frameless mode on macOS only */
   ~ .workspace-tabs {
   padding-top: 0px;
 }
-.hider-frameless.is-fullscreen:not(.is-mobile) .workspace-split.mod-left-split > .workspace-tabs,
-.hider-frameless.is-fullscreen:not(.is-mobile) .workspace-split.mod-root .view-header {
+.hider-frameless.is-fullscreen:not(.is-mobile)
+  .workspace-split.mod-left-split
+  > .workspace-tabs,
+.hider-frameless.is-fullscreen:not(.is-mobile)
+  .workspace-split.mod-root
+  .view-header {
   padding-top: 0px;
 }
 
 /* Adjustments to title bar for traffic light icons */
 
-.mod-macos.minimal-folding.hider-frameless.hider-ribbon:not(.plugin-sliding-panes-rotate-header) {
+.mod-macos.minimal-folding.hider-frameless.hider-ribbon:not(
+    .plugin-sliding-panes-rotate-header
+  ) {
   --traffic-space: 80px;
   --traffic-padding: 70px;
 }
-.mod-macos.minimal-folding.hider-frameless:not(.plugin-sliding-panes-rotate-header) {
+.mod-macos.minimal-folding.hider-frameless:not(
+    .plugin-sliding-panes-rotate-header
+  ) {
   --traffic-space: 55px;
   --traffic-padding: 40px;
 }
-.mod-macos.hider-frameless.hider-ribbon:not(.plugin-sliding-panes-rotate-header) {
+.mod-macos.hider-frameless.hider-ribbon:not(
+    .plugin-sliding-panes-rotate-header
+  ) {
   --traffic-space: 95px;
   --traffic-padding: 70px;
 }
@@ -398,7 +487,9 @@ Frameless mode on macOS only */
   right: auto;
   display: flex;
 }
-.mod-macos.hider-frameless:not(.is-fullscreen):not(.plugin-sliding-panes-rotate-header)
+.mod-macos.hider-frameless:not(.is-fullscreen):not(
+    .plugin-sliding-panes-rotate-header
+  )
   .workspace-split.mod-left-split.is-collapsed
   + .mod-root
   .workspace-leaf:first-of-type
@@ -409,7 +500,9 @@ Frameless mode on macOS only */
   min-width: var(--traffic-space);
   padding-left: var(--traffic-padding);
 }
-.mod-macos.hider-frameless:not(.is-fullscreen):not(.plugin-sliding-panes-rotate-header)
+.mod-macos.hider-frameless:not(.is-fullscreen):not(
+    .plugin-sliding-panes-rotate-header
+  )
   .workspace-split.mod-left-split.is-collapsed
   + .mod-root
   .workspace-leaf:first-of-type
@@ -417,7 +510,9 @@ Frameless mode on macOS only */
   .view-actions {
   flex: 1 var(--traffic-space);
 }
-.mod-macos.hider-frameless:not(.is-fullscreen):not(.plugin-sliding-panes-rotate-header)
+.mod-macos.hider-frameless:not(.is-fullscreen):not(
+    .plugin-sliding-panes-rotate-header
+  )
   .workspace-split.mod-left-split.is-collapsed
   + .mod-root
   .workspace-leaf:first-of-type
@@ -428,7 +523,9 @@ Frameless mode on macOS only */
   flex-shrink: 1;
   flex-basis: var(--line-width-adaptive);
 }
-.mod-macos.hider-frameless:not(.is-fullscreen):not(.plugin-sliding-panes-rotate-header)
+.mod-macos.hider-frameless:not(.is-fullscreen):not(
+    .plugin-sliding-panes-rotate-header
+  )
   .workspace-split.mod-left-split.is-collapsed
   + .mod-root
   .workspace-leaf:first-of-type
@@ -496,7 +593,10 @@ body.plugin-sliding-panes-rotate-header
   .view-header-title {
   margin-top: 0;
 }
-body.plugin-sliding-panes-rotate-header .workspace > .mod-root .view-header-title-container {
+body.plugin-sliding-panes-rotate-header
+  .workspace
+  > .mod-root
+  .view-header-title-container {
   margin-left: 0;
   padding-top: 0;
 }
@@ -566,7 +666,9 @@ body.plugin-sliding-panes .mod-root .graph-controls {
   content: " ";
   pointer-events: none;
 }
-.hider-ribbon:not(.is-mobile) .workspace-ribbon.mod-left .side-dock-ribbon-action {
+.hider-ribbon:not(.is-mobile)
+  .workspace-ribbon.mod-left
+  .side-dock-ribbon-action {
   display: inline-block;
   padding: 9px 5px 0 12px;
 }
@@ -574,7 +676,9 @@ body.plugin-sliding-panes .mod-root .graph-controls {
   opacity: 1;
   transition: opacity 0.25s ease-in-out;
 }
-.hider-ribbon:not(.is-mobile) .workspace-ribbon.mod-left .workspace-ribbon-collapse-btn {
+.hider-ribbon:not(.is-mobile)
+  .workspace-ribbon.mod-left
+  .workspace-ribbon-collapse-btn {
   border-top: 1px solid var(--background-modifier-border);
 }
 .hider-ribbon:not(.is-mobile) .workspace-split.mod-left-split {
@@ -624,8 +728,15 @@ body.plugin-sliding-panes .mod-root .graph-controls {
   margin-left: 2px;
 }
 .workspace-ribbon:not(.is-collapsed) ~ .mod-root .view-actions,
-.focus-mode .workspace-ribbon:not(.is-collapsed) ~ .mod-root .view-header:hover .view-actions,
-.workspace-ribbon.mod-left.is-collapsed ~ .mod-root .view-header:hover .view-actions,
+.focus-mode
+  .workspace-ribbon:not(.is-collapsed)
+  ~ .mod-root
+  .view-header:hover
+  .view-actions,
+.workspace-ribbon.mod-left.is-collapsed
+  ~ .mod-root
+  .view-header:hover
+  .view-actions,
 .mod-right.is-collapsed ~ .mod-root .view-header:hover .view-actions {
   opacity: 1;
   transition: opacity 0.25s ease-in-out;
@@ -659,7 +770,10 @@ body.plugin-sliding-panes .mod-root .graph-controls {
   cursor: zoom-in;
 }
 
-body:not(.is-mobile) .view-content .markdown-preview-view img[referrerpolicy="no-referrer"]:active,
+body:not(.is-mobile)
+  .view-content
+  .markdown-preview-view
+  img[referrerpolicy="no-referrer"]:active,
 body:not(.is-mobile) .view-content .image-embed:active {
   cursor: zoom-out;
   display: block;
@@ -678,10 +792,17 @@ body:not(.is-mobile) .view-content .image-embed:active {
   bottom: 0;
   background: var(--background-translucent);
 }
-body:not(.is-mobile) .view-content .markdown-preview-view img[referrerpolicy="no-referrer"]:active {
+body:not(.is-mobile)
+  .view-content
+  .markdown-preview-view
+  img[referrerpolicy="no-referrer"]:active {
   padding: 2.5%;
 }
-body:not(.is-mobile) .view-content .markdown-preview-view .image-embed:active img {
+body:not(.is-mobile)
+  .view-content
+  .markdown-preview-view
+  .image-embed:active
+  img {
   top: 50%;
   transform: translateY(-50%);
   padding: 0;
@@ -821,7 +942,7 @@ body:not(.is-mobile) .view-content .markdown-preview-view .image-embed:active im
 }
 .markdown-preview-view .table-view-table > thead > tr > th {
   font-weight: 600;
-  font-size: vcalc(var(--font-adaptive-normal) - 1px);
+  font-size: calc(var(--font-adaptive-normal) - 1px);
   color: var(--text-normal);
   border-bottom: 1px solid var(--text-faint);
   cursor: var(--cursor);
@@ -1012,7 +1133,9 @@ body button.kanban-plugin__new-lane-button {
 .checklist-plugin-main .group .compact:hover {
   background: transparent;
 }
-.markdown-preview-view.checklist-plugin-main ul > li:not(.task-list-item)::before {
+.markdown-preview-view.checklist-plugin-main
+  ul
+  > li:not(.task-list-item)::before {
   display: none;
 }
 .checklist-plugin-main .group .compact > .toggle .checked {
@@ -1584,8 +1707,12 @@ input.prompt-input:hover {
 .workspace-split:not(.mod-right-split) .workspace-tabs {
   background: var(--background-secondary);
 }
-.workspace-split.mod-root > .workspace-leaf:first-of-type .workspace-leaf-content,
-.workspace-split.mod-root > .workspace-leaf:last-of-type .workspace-leaf-content {
+.workspace-split.mod-root
+  > .workspace-leaf:first-of-type
+  .workspace-leaf-content,
+.workspace-split.mod-root
+  > .workspace-leaf:last-of-type
+  .workspace-leaf-content {
   border-top-right-radius: 0px;
   border-top-left-radius: 0px;
 }
@@ -1842,7 +1969,9 @@ input.prompt-input:hover {
 
 /* Transcluded notes and embeds */
 
-.markdown-preview-view.is-readable-line-width .markdown-embed .markdown-preview-sizer {
+.markdown-preview-view.is-readable-line-width
+  .markdown-embed
+  .markdown-preview-sizer {
   max-width: 100%;
   width: 100%;
 }
@@ -2185,7 +2314,7 @@ input[type="checkbox"]:checked {
   background-position: center;
   background-size: 70%;
   background-repeat: no-repeat;
-  background-image: url('data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23ffffff"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+  background-image: url("data:image/svg+xml, utf8, <svg width='12px' height='10px' viewBox='0 0 12 8' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g transform='translate(-4.000000, -6.000000)' fill='%23ffffff'><path d='M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999'></path></g></g></svg>");
 }
 .markdown-preview-section > .contains-task-list {
   padding-bottom: 0.5em;
@@ -2408,7 +2537,8 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 .search-result-collapse-indicator,
 .search-result-file-title:hover .search-result-collapse-indicator,
 .side-dock-collapsible-section-header-indicator:hover,
-.side-dock-collapsible-section-header:hover .side-dock-collapsible-section-header-indicator,
+.side-dock-collapsible-section-header:hover
+  .side-dock-collapsible-section-header-indicator,
 .markdown-preview-view .collapse-indicator,
 .tree-view-item-collapse,
 .is-collapsed .search-result-collapse-indicator,
@@ -2465,12 +2595,20 @@ body.minimal-rel-edit .cm-hmd-list-indent > .cm-tab:after {
 
 /* Add padding to account for gutter in Edit mode when folding is on */
 
-body.minimal-folding:not(.plugin-sliding-panes-rotate-header) .view-header-title,
-.minimal-folding .allow-fold-headings.markdown-preview-view .markdown-preview-sizer,
-.minimal-folding .allow-fold-lists.markdown-preview-view .markdown-preview-sizer {
+body.minimal-folding:not(.plugin-sliding-panes-rotate-header)
+  .view-header-title,
+.minimal-folding
+  .allow-fold-headings.markdown-preview-view
+  .markdown-preview-sizer,
+.minimal-folding
+  .allow-fold-lists.markdown-preview-view
+  .markdown-preview-sizer {
   padding-left: 16px;
 }
-.minimal-folding .allow-fold-lists.markdown-preview-view .markdown-embed .markdown-preview-sizer {
+.minimal-folding
+  .allow-fold-lists.markdown-preview-view
+  .markdown-embed
+  .markdown-preview-sizer {
   padding-left: 0;
 }
 
@@ -2816,7 +2954,9 @@ input.search-input:focus {
   color: var(--text-faint);
   font-size: var(--font-adaptive-small);
 }
-.workspace-split.mod-root .workspace-split.mod-vertical .workspace-leaf-content {
+.workspace-split.mod-root
+  .workspace-split.mod-vertical
+  .workspace-leaf-content {
   padding-right: 0;
 }
 .workspace-split.mod-horizontal.mod-right-split {
@@ -2927,7 +3067,8 @@ input.search-input:focus {
 .outgoing-link-pane .search-result-file-match-destination-file {
   background: transparent;
 }
-.search-result-file-match:hover .search-result-file-match-destination-file:hover {
+.search-result-file-match:hover
+  .search-result-file-match-destination-file:hover {
   background: transparent;
   color: var(--text-normal);
 }
@@ -3532,10 +3673,10 @@ input[type="range"]::-webkit-slider-thumb:active {
 .dropdown {
   border-color: var(--background-modifier-border);
   font-family: var(--font-ui);
-  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23000%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml,charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23000%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
 }
 .theme-dark .dropdown {
-  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23FFF%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml,charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23FFF%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
 }
 .dropdown:focus {
   border-color: var(--background-modifier-border-focus);
@@ -3571,12 +3712,22 @@ input[type="range"]::-webkit-slider-thumb:active {
   border-color: var(--background-secondary);
   background-color: var(--background-modifier-border);
 }
-.theme-light.minimal-light-contrast .mod-left-split .vertical-tab-header::-webkit-scrollbar-thumb,
-.theme-light.minimal-light-contrast .mod-left-split .workspace-tabs ::-webkit-scrollbar-thumb {
+.theme-light.minimal-light-contrast
+  .mod-left-split
+  .vertical-tab-header::-webkit-scrollbar-thumb,
+.theme-light.minimal-light-contrast
+  .mod-left-split
+  .workspace-tabs
+  ::-webkit-scrollbar-thumb {
   background-color: var(--background-modifier-border-hover);
 }
-.theme-light.minimal-light-contrast .mod-left-split .vertical-tab-header::-webkit-scrollbar-track,
-.theme-light.minimal-light-contrast .mod-left-split .workspace-tabs ::-webkit-scrollbar-track {
+.theme-light.minimal-light-contrast
+  .mod-left-split
+  .vertical-tab-header::-webkit-scrollbar-track,
+.theme-light.minimal-light-contrast
+  .mod-left-split
+  .workspace-tabs
+  ::-webkit-scrollbar-track {
   background-color: red;
 }
 .modal .vertical-tab-header::-webkit-scrollbar-thumb:hover,
@@ -3613,8 +3764,12 @@ body.is-mobile {
 .is-mobile .ͼ1 .cm-line,
 .is-mobile .workspace-drawer-tab-container > *,
 body.minimal-folding.is-mobile .view-header-title,
-.minimal-folding.is-mobile .allow-fold-headings.markdown-preview-view .markdown-preview-sizer,
-.minimal-folding.is-mobile .allow-fold-lists.markdown-preview-view .markdown-preview-sizer {
+.minimal-folding.is-mobile
+  .allow-fold-headings.markdown-preview-view
+  .markdown-preview-sizer,
+.minimal-folding.is-mobile
+  .allow-fold-lists.markdown-preview-view
+  .markdown-preview-sizer {
   padding: 0;
 }
 .is-mobile .titlebar {
@@ -3655,11 +3810,17 @@ body.minimal-folding.is-mobile .view-header-title,
 .is-mobile .workspace-drawer-active-tab-title {
   font-size: var(--font-adaptive-small);
 }
-.is-mobile .workspace-drawer-tab-option-item:hover .workspace-drawer-tab-option-item-title,
-.is-mobile .workspace-drawer-active-tab-header:hover .workspace-drawer-active-tab-title {
+.is-mobile
+  .workspace-drawer-tab-option-item:hover
+  .workspace-drawer-tab-option-item-title,
+.is-mobile
+  .workspace-drawer-active-tab-header:hover
+  .workspace-drawer-active-tab-title {
   color: var(--text-normal);
 }
-.is-mobile .workspace-drawer-active-tab-header:hover .workspace-drawer-active-tab-back-icon {
+.is-mobile
+  .workspace-drawer-active-tab-header:hover
+  .workspace-drawer-active-tab-back-icon {
   color: var(--text-normal);
 }
 .is-mobile .nav-file-title,
@@ -3792,7 +3953,9 @@ body:not(.is-ios).is-mobile .workspace-drawer-ribbon {
 .is-mobile .nav-buttons-container {
   padding: 0 0 10px 15px;
 }
-.is-mobile .workspace-leaf-content:not([data-type="search"]) .nav-buttons-container {
+.is-mobile
+  .workspace-leaf-content:not([data-type="search"])
+  .nav-buttons-container {
   border-bottom: var(--border-width) solid var(--background-modifier-border);
 }
 .is-mobile input[type="text"] {
@@ -3850,7 +4013,9 @@ body:not(.is-ios).is-mobile .workspace-drawer-ribbon {
 .is-mobile .hotkey-list-container .setting-command-hotkeys {
   flex: unset;
 }
-.is-mobile .markdown-preview-view input[type="checkbox"].task-list-item-checkbox {
+.is-mobile
+  .markdown-preview-view
+  input[type="checkbox"].task-list-item-checkbox {
   top: 6px;
 }
 /*
@@ -3895,7 +4060,10 @@ body:not(.is-ios).is-mobile .workspace-drawer-ribbon {
 .is-ios .mod-root .workspace-leaf {
   padding-top: 20px;
 }
-.is-ios .mod-root .workspace-split.mod-horizontal .workspace-leaf:not(:first-of-type) {
+.is-ios
+  .mod-root
+  .workspace-split.mod-horizontal
+  .workspace-leaf:not(:first-of-type) {
   padding-top: 0;
 }
 .is-mobile.focus-mode .view-actions {
@@ -4182,7 +4350,9 @@ body:not(.is-ios).is-mobile .workspace-drawer-ribbon {
   .is-mobile .markdown-preview-sizer > div {
     overflow-x: auto;
   }
-  .is-mobile .markdown-preview-view.is-readable-line-width .markdown-preview-sizer,
+  .is-mobile
+    .markdown-preview-view.is-readable-line-width
+    .markdown-preview-sizer,
   .is-mobile .markdown-preview-sizer {
     max-width: 100%;
   }
@@ -4242,8 +4412,12 @@ body:not(.is-ios).is-mobile .workspace-drawer-ribbon {
   }
   .is-mobile .view-action:hover,
   .is-mobile .nav-action-button:hover,
-  .is-mobile .workspace-leaf-content[data-type="search"] .nav-action-button.is-active:hover,
-  .is-mobile .workspace-leaf-content[data-type="backlink"] .nav-action-button.is-active:hover,
+  .is-mobile
+    .workspace-leaf-content[data-type="search"]
+    .nav-action-button.is-active:hover,
+  .is-mobile
+    .workspace-leaf-content[data-type="backlink"]
+    .nav-action-button.is-active:hover,
   .is-mobile .workspace-drawer-tab-option-item:hover,
   .is-mobile .workspace-drawer-header-icon:hover {
     background-color: var(--background-tertiary);
@@ -4316,7 +4490,9 @@ body:not(.is-ios).is-mobile .workspace-drawer-ribbon {
     height: calc(100vh - 48px);
     border-radius: 15px;
   }
-  .is-mobile .setting-item:not(.mod-toggle):not(.setting-item-heading) .setting-item-control {
+  .is-mobile
+    .setting-item:not(.mod-toggle):not(.setting-item-heading)
+    .setting-item-control {
     width: auto;
     margin-top: 0;
   }

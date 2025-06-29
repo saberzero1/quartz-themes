@@ -1,0 +1,5 @@
+body:not(.is-mobile):is(:not(.css-settings-manager), )
+  :is(.side-dock-actions, .side-dock-settings) {
+  opacity: 0;
+  transition: opacity 0.15s;
+}

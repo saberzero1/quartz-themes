@@ -1,0 +1,27 @@
+body:not(.is-mobile):is(:not(.css-settings-manager), )
+  .workspace-split.mod-vertical.mod-root
+  > hr
+  + .workspace-tabs:not(.mod-stacked),
+body:not(.is-mobile):is(:not(.css-settings-manager), )
+  .workspace-split.mod-vertical.mod-root
+  > hr
+  + .workspace-split
+  > hr
+  + .workspace-tabs:not(.mod-stacked),
+body:not(.is-mobile):is(:not(.css-settings-manager), )
+  .workspace-split.mod-vertical.mod-root
+  > hr
+  + .workspace-split
+  > hr
+  + .workspace-split
+  > hr
+  + .workspace-tabs:not(.mod-stacked),
+body:not(.is-mobile):is(:not(.css-settings-manager), ).toggle-tab-section
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs.mod-stacked,
+body:not(.is-mobile):is(:not(.css-settings-manager), )
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs.mod-stacked
+  .workspace-tab-header {
+  border-top-left-radius: var(--window-radius);
+}

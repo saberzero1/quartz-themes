@@ -1,0 +1,10 @@
+.markdown-preview-view img,
+.markdown-source-view img {
+  opacity: 0.75;
+  transition: opacity var(--anim-duration-fast) linear;
+}
+.markdown-preview-view img:hover,
+.markdown-source-view img:hover {
+  opacity: 1;
+  transition: opacity var(--anim-duration-fast) linear;
+}

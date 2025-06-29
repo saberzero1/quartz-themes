@@ -1,0 +1,295 @@
+.shib-callout-toggle
+  .callout[data-callout="quote"]
+  .callout-title
+  .callout-title-inner,
+.shib-callout-style-2 .callout.is-collapsible.is-collapsed .callout-content,
+.shib-callout-style-3 .callout.is-collapsible.is-collapsed .callout-content {
+  display: none;
+}
+
+.shib-callout-toggle:not(:checked)
+  + body:not(
+    .shib-callout-style-1,
+    .shib-callout-style-2,
+    .shib-callout-style-3,
+    .shib-callout-style-4,
+    .shib-callout-block
+  ) {
+  --callout-border-width: 0 0 0 4px;
+  --callout-border-opacity: 1;
+  --callout-radius: 0;
+  --callout-padding: 0;
+  --callout-title-padding: var(--size-4-4) var(--size-4-4);
+  --callout-content-padding: var(--size-4-2) var(--size-4-4);
+}
+
+.shib-callout-style-2 .callout,
+.shib-callout-style-2 .callout.is-collapsible.is-collapsed,
+.shib-callout-style-2 .callout:not(.is-collapsible),
+.shib-callout-style-3 .callout,
+.shib-callout-style-3 .callout.is-collapsible.is-collapsed,
+.shib-callout-style-3 .callout:not(.is-collapsible),
+.shib-callout-style-4 .callout,
+.shib-callout-style-4 .callout:not(.is-collapsible) {
+  padding: 0;
+}
+
+.shib-callout-style-2 .callout .callout-content,
+.shib-callout-style-2 .callout:not(.is-collapsible) .callout-content,
+.shib-callout-style-3 .callout .callout-content,
+.shib-callout-style-3 .callout:not(.is-collapsible) .callout-content {
+  padding: 0 var(--callout-title-padding) var(--callout-title-padding)
+    var(--callout-title-padding);
+}
+
+.shib-callout-style-2 .callout .callout-title,
+.shib-callout-style-2 .callout:not(.is-collapsible) .callout-title,
+.shib-callout-style-3 .callout .callout-title,
+.shib-callout-style-3 .callout:not(.is-collapsible) .callout-title {
+  background-color: rgba(var(--callout-color), 0 0.5);
+  padding: var(--callout-title-padding);
+  cursor: pointer;
+}
+
+.shib-callout-style-2 .callout .callout-title .callout-title-inner,
+.shib-callout-style-2
+  .callout:not(.is-collapsible)
+  .callout-title
+  .callout-title-inner,
+.shib-callout-style-3 .callout .callout-title .callout-title-inner,
+.shib-callout-style-3
+  .callout:not(.is-collapsible)
+  .callout-title
+  .callout-title-inner {
+  font-weight: 400;
+}
+
+.shib-callout-style-2 .callout:not(.is-collapsible),
+.shib-callout-style-3 .callout:not(.is-collapsible) {
+  border-color: rgba(var(--callout-color), 0.4);
+  border-width: 1px;
+  border-radius: var(--callout-radius);
+  background-color: rgba(var(--side), 0.4);
+}
+
+.shib-callout-style-3 .callout .callout-content {
+  padding: var(--callout-title-padding) var(--callout-title-padding)
+    var(--callout-title-padding) calc(var(--callout-title-padding) * 1.5);
+  border-top: 1px solid rgba(var(--callout-color), 0.4);
+}
+
+.shib-callout-style-1 .callout .callout-fold,
+.shib-callout-style-1 .callout.is-collapsible .callout-fold,
+.shib-callout-style-2 .callout .callout-fold,
+.shib-callout-style-2 .callout.is-collapsible .callout-fold,
+.shib-callout-style-3 .callout .callout-fold,
+.shib-callout-style-3 .callout.is-collapsible .callout-fold,
+.shib-callout-style-4 .callout.is-collapsible .callout-fold {
+  padding-right: 0;
+}
+
+.shib-callout-style-1 .callout.is-collapsible .callout-title-inner,
+.shib-callout-style-2 .callout .callout-title-inner,
+.shib-callout-style-2 .callout.is-collapsible .callout-title-inner,
+.shib-callout-style-3 .callout .callout-title-inner,
+.shib-callout-style-3 .callout.is-collapsible .callout-title-inner,
+.shib-callout-style-4 .callout .callout-title-inner,
+.shib-callout-style-4 .callout.is-collapsible .callout-title-inner {
+  flex-grow: var(--shib-callout-fold-position, unset);
+}
+
+.shib-callout-style-2 .callout.is-collapsible,
+.shib-callout-style-3 .callout.is-collapsible {
+  border-color: rgba(var(--callout-color), 0.4);
+  border-width: 1px;
+  border-radius: var(--callout-radius);
+  background-color: rgba(var(--side), 0.4);
+  --bold-weight: bolder;
+}
+
+.shib-callout-style-2 .callout.is-collapsible.is-collapsed .callout-title,
+.shib-callout-style-3 .callout.is-collapsible.is-collapsed .callout-title {
+  background-color: rgba(var(--callout-color), 0.1);
+  padding: var(--callout-title-padding);
+  cursor: pointer;
+}
+
+.shib-callout-style-2 .callout.is-collapsible:not(.is-collapsed),
+.shib-callout-style-3 .callout.is-collapsible:not(.is-collapsed) {
+  padding: 0 0 var(--callout-title-padding) 0;
+}
+
+.shib-callout-style-2 .callout.is-collapsible:not(.is-collapsed) .callout-title,
+.shib-callout-style-3
+  .callout.is-collapsible:not(.is-collapsed)
+  .callout-title {
+  background-color: rgba(var(--callout-color), 0.1);
+  padding: var(--callout-title-padding);
+  border-color: rgba(var(--callout-color), 0.4);
+  cursor: pointer;
+}
+
+.shib-callout-style-3
+  .callout.is-collapsible:not(.is-collapsed)
+  .callout-content {
+  padding: var(--callout-title-padding) var(--callout-title-padding) 0
+    calc(var(--callout-title-padding) * 1.5);
+  border-top: 2px solid rgba(var(--callout-color), 0.4);
+}
+
+.shib-callout-style-2 .callout:not(.is-collapsible) .callout-title,
+.shib-callout-style-3 .callout:not(.is-collapsible) .callout-title {
+  background-color: rgba(var(--callout-color), 0.1);
+  padding: var(--callout-title-padding);
+  border-color: rgba(var(--callout-color), 0.4);
+}
+
+.shib-callout-style-2 .callout .list-collapse-indicator,
+.shib-callout-style-3 .callout .list-collapse-indicator {
+  margin-left: -35px;
+  padding-right: 3px;
+}
+
+.shib-callout-style-1 {
+  --callout-padding: 4px;
+  --callout-radius: var(--radius-m);
+  --callout-padding: 0px;
+}
+
+.shib-callout-style-1 .callout {
+  background-color: unset;
+}
+
+.shib-callout-style-1 .callout .callout-title {
+  position: relative;
+  align-items: center;
+  min-height: 36px;
+  border: 2px solid;
+  border-radius: 10px;
+  background-color: rgba(var(--callout-color), 0.1);
+  border-color: rgba(var(--callout-color), 0.4);
+}
+
+.shib-callout-style-1 .callout .callout-title:empty + .callout-content {
+  padding: 12px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-radius: 10px;
+}
+
+.shib-callout-style-1 .callout .callout-title-inner {
+  padding: 0;
+  margin: 0 var(--size-4-1);
+  flex-grow: var(--shib-callout-fold-position, unset);
+}
+
+.shib-callout-style-1 .callout .callout-icon {
+  border-radius: 10px;
+}
+
+.shib-callout-style-1 .callout .callout-content {
+  padding: 20px;
+  margin-top: -8px;
+  border-color: rgba(var(--callout-color), 0.4);
+}
+
+.shib-callout-style-1
+  .callout.is-collapsible:not(.is-collapsed)
+  .callout-content {
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-color: rgba(var(--callout-color), 0.4);
+  padding: var(--size-4-4);
+}
+
+.shib-callout-block .callout.is-collapsible,
+.shib-callout-style-1 .callout.is-collapsible {
+  background-color: rgba(var(--side), 0.4);
+  --bold-weight: bolder;
+}
+
+.shib-callout-style-2 .callout .callout-content {
+  padding: var(--callout-title-padding) var(--callout-title-padding)
+    var(--callout-title-padding) calc(var(--callout-title-padding) * 1.5);
+  border-top: 1px dashed rgba(var(--callout-color), 0.4);
+}
+
+.shib-callout-style-2
+  .callout.is-collapsible:not(.is-collapsed)
+  .callout-content {
+  padding: var(--callout-title-padding) var(--callout-title-padding) 0
+    calc(var(--callout-title-padding) * 1.5);
+  border-top: 1px dashed rgba(var(--callout-color), 0.4);
+}
+
+.shib-callout-style-4 .callout {
+  padding: 0;
+  border: 1px solid rgba(var(--callout-color), 0.2);
+  overflow: hidden;
+}
+
+.shib-callout-style-4 .callout.is-collapsible:not(.is-collapsed) .callout-fold {
+  padding-right: 0;
+  color: rgba(var(--callout-color), 1);
+}
+
+.shib-callout-block .callout {
+  border-top: 2px solid rgb(var(--callout-color));
+  border-left: 2px solid rgb(var(--callout-color));
+  border-right: 2px solid rgb(var(--callout-color));
+  border-bottom: 2px solid rgb(var(--callout-color));
+  border-radius: 10px;
+  border-color: rgba(var(--callout-color), 0.5);
+  background-color: unset;
+  border-radius: var(--callout-radius);
+}
+
+.shib-callout-block .callout .callout-title {
+  align-self: auto;
+  margin-left: -15px;
+}
+
+.shib-callout-toggle .callout-content > ol:first-child,
+.shib-callout-toggle .callout-content > p:first-child,
+.shib-callout-toggle .callout-content > ul:first-child,
+.shib-callout-toggle
+  .callout[data-callout="quote"]
+  .callout-content
+  p:first-child {
+  margin-top: 0;
+}
+
+.shib-callout-toggle .callout-content > ol:last-child,
+.shib-callout-toggle .callout-content > p:last-child,
+.shib-callout-toggle .callout-content > ul:last-child {
+  margin-bottom: 0;
+}
+
+.shib-callout-toggle
+  .callout[data-callout="quote"]
+  .callout-title
+  .callout-icon {
+  margin: 0 auto;
+}
+
+.shib-callout-toggle .callout[data-callout="quote"] .callout-content {
+  padding-top: 20px;
+}
+
+.shib-callout-toggle .callout[data-callout="quote"] .callout-content p {
+  font-style: italic;
+  text-align: center;
+}
+
+.shib-callout-toggle
+  .callout[data-callout="quote"]
+  .callout-content
+  p:last-child {
+  font-style: normal;
+  color: rgb(var(--yellow, 153, 122, 0));
+  text-align: right;
+  margin-bottom: 0;
+}

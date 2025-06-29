@@ -1,0 +1,26 @@
+body.style-options-for-kanban-plugin-static-plain .kanban-plugin__lane-wrapper {
+  background: unset !important;
+  --scrollbar-thumb-bg: unset !important;
+  --scrollbar-active-thumb-bg: unset !important;
+}
+
+body.style-options-for-kanban-plugin-static-plain .kanban-plugin__lane {
+  border: 2px solid var(--background-modifier-border) !important;
+}
+
+body.style-options-for-kanban-plugin-static-plain
+  .kanban-plugin__lane-header-wrapper {
+  background: unset !important;
+  border-bottom: 1px solid var(--background-modifier-border) !important;
+}
+
+body.style-options-for-kanban-plugin-static-plain
+  .kanban-plugin__item-button-wrapper {
+  background: transparent !important;
+}
+
+body.style-options-for-kanban-plugin-dynamic-neon-three .kanban-plugin__lane,
+body.style-options-for-kanban-plugin-dynamic-neon-one .kanban-plugin__lane,
+body.style-options-for-kanban-plugin-dynamic-neon-two .kanban-plugin__lane {
+  border: none !important;
+}

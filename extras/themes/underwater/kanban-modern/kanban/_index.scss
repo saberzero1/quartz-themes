@@ -1,0 +1,32 @@
+.kanban-modern {
+  .kanban-plugin__lane {
+    background-color: var(--background-primary) !important;
+  }
+  .kanban-plugin__lane:hover {
+    outline: 1px solid var(--highlight-med);
+  }
+  .kanban-plugin__item-title-wrapper {
+    background-color: var(--overlay);
+    border-radius: 10px;
+    border: 1px solid var(--highlight-high);
+    padding: 10px;
+    transition-duration: 0.3s;
+    transition-property: border-color, box-shadow, background-color;
+  }
+  .kanban-plugin__item:has(.markdown-source-view), .kanban-plugin__item, .kanban-plugin__item-button-wrapper, .kanban-plugin__item-form /*fix*/ {
+    outline: none;
+    border: none;
+  }
+  .kanban-plugin__item-title-wrapper:hover {
+    border: 1px solid var(--text-faint);
+    cursor: pointer;
+  }
+  button.kanban-plugin__new-item-button {
+    background-color: transparent;
+    color: var(--text-faint);
+  }
+  button.kanban-plugin__new-item-button:hover {
+    background-color: transparent;
+    color: var(--color-pink);
+  }
+}

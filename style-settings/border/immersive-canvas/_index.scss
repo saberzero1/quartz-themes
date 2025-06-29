@@ -1,0 +1,10 @@
+.canvas-card-menu,
+.canvas-controls {
+  opacity: 0;
+  transition: opacity var(--anim-out);
+}
+.canvas-card-menu:hover,
+.canvas-controls:hover {
+  opacity: 1;
+  transition: opacity var(--anim-in);
+}

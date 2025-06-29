@@ -1,0 +1,136 @@
+body-pink-topaz .theme-light,
+body.theme-light {
+  --background-primary: var(--background-primary-bg-4-bt, #fffaf0);
+  --background-primary-alt: var(--background-primary-alt-bg-4-bt, #e9e9e9);
+  --background-secondary: var(--background-secondary-bg-4-bt, #fffaf0);
+  --background-secondary-alt: var(--background-secondary-alt-bg-4-bt, #ffebeb);
+  --background-modifier-border: #e1dfdf;
+  --text-normal: #0e0e0e;
+  --text-muted: #7f7f7f;
+  --text-faint: #7f7f7f;
+  --text-folder-file: #272727;
+  --accent-em: #000000;
+  --accent-h: 325;
+  --accent-s: 80%;
+  --accent-l: 77%;
+  --text-selection: #f7b2cf59;
+  --interactive-accent-rgb: 243, 148, 203;
+  --search-text: #000000;
+  --folder-title: #000000;
+  --strong-em-highlight-color: #000000;
+  --mark-highlight-strong-em: #ffd0e99b;
+  --text-highlight-bg: #ffd0e99b;
+  --text-search-highlight-bg: #ffd1dd;
+  --search-result-file-matched-bg: #ffc3c3;
+  --background-mobile-drawer-1: #ffffff;
+  --background-mobile-drawer-2: #ffffffa1;
+  --background-secondary-alt-bg-4-bt-publish: #f6f6f6;
+  --scrollbar-thumb-bg: #e2bdbd8d;
+  --scrollbar-active-thumb-bg: #e2bdbd;
+  --search-result-file-title-color: #cc437c;
+  --background-blockquote: #e6d6ba2c;
+  --background-code: #fae4ee4d;
+  --background-code-2: #d5d5d562;
+  --text-color-code: #e95d00;
+  --list-ul-block-color: #c7c947;
+  --list-ul-disc-color: #f39c55;
+  --green-1: #3dc730;
+  --list-ul-hover: #dd922f;
+  --list-ol-block-color: #ce6d8a;
+  --list-ol-number-color: #e599ac;
+  --list-ol-hover: #b83175;
+  --tag-text: #f8f8f8;
+  --stag1: #fa8787;
+  --stag1-bg: #eb2727;
+  --stag2: #fdbd5c;
+  --stag2-bg: #ee9002;
+  --stag3: #50ce3a;
+  --stag3-bg: #22ac09;
+  --tag1: #f1afaf;
+  --tag2: #e7c190;
+  --tag3: #86c93a;
+  --tag4: #48c6bf;
+  --tag5: #797fd1;
+  --tag-dailynote: #0077ff;
+  --tag-dailynote-bg: #277cdd;
+  --tag-weeklynote: #4b9fff;
+  --tag-weeklynote-bg: #6aafff;
+  --tag-questions: #b68fff;
+  --tag-questions-bg: #b085ff;
+  --tag-ideas: #ceb900;
+  --tag-ideas-bg: #444444d8;
+  --h1-color: var(--print-h1-color, #6f0000);
+  --h2-color: var(--print-h2-color, #7a0757);
+  --h3-color: var(--print-h3-color, #9a1d75);
+  --h4-color: var(--print-h4-color, #b52a87);
+  --h5-color: var(--print-h5-color, #bb5795);
+  --h6-color: var(--print-h6-color, #cc76b7);
+  /*graph*/
+  --graph-text-color: #585858;
+  --graph-tag: #e3c982c7;
+  --graph-attach: #c982e3c7;
+  --graph-circle: #f596bbcc;
+  --graph-line: #e6b0c9;
+  --graph-unresolved: #db4e4ecc;
+  --graph-arrow: #e25300;
+  --graph-control-bg: #ffffff9a;
+  /*mermaid*/
+  --mermaid-active-task-color: #44bbff;
+  --mermaid-seq-dia-color: #76c8ff;
+  /*table*/
+  --table-border-color: #7d7d7d;
+  --table-thead-background-color: #fad1e96f;
+  --table-hover-raw-color: #fad1e92f;
+  --table-hover-color: #fad1e92f;
+  --table-hover-thead-color: #fad1e98f;
+  /*calendar*/
+  --calendar-week-color: #b884a5c7;
+  --calendar-week-hover: #e3d8df66;
+  --calendar-week-background-color: #b884a599;
+  --calendar-today-background-color: #b1779c94;
+  /*day planner*/
+  --day-planner-pie: #eca95c;
+  --day-planner-timeline: #d62f2f;
+  --day-planner-line: #ffd900;
+  --day-planner-dot: #ffd900;
+  --day-planner-item-hover: #e8a6be;
+  --event-item-color1: #e5b8cb;
+  --event-item-color2: #e1a3bd;
+  --event-item-color3: #e090b1;
+  --event-item-color4: #e080a8;
+  --event-item-color5: #e0719f;
+  --event-item-color6: #e16096;
+  --event-item-color7: #e25590;
+  --event-item-color8: #e64c8c;
+  --event-item-color9: #e64186;
+  --event-item-color10: #e92b7a;
+  /* stickies */
+  --stickies-color-1: #e5c7dab5;
+  --stickies-color-2: #dac7afc7;
+  --tape-color: #acacac65;
+  /*Sliding panes*/
+  --sliding-panes-header-color: #6f0000;
+  --background-4-sliding-pane: #ffffffef;
+  --color-view-header-gradient-1: #ffdfe4ef;
+  --color-view-header-gradient-2: #ffe4e4ef;
+  /*checkbox*/
+  --checkbox-color-0: #d879a8;
+  --checkbox-color-1: #c4c116;
+  --checkbox-color-2: #50a947;
+  --checkbox-color-3: #ffe9e9;
+  --checkbox-color-4: #fffbd4;
+  --checkbox-color-5: #ad7fbf;
+  --checkbox-color-6: #5f5f5f;
+  --text-checked-checkbox: #9b9b9b;
+  --table-color-calendar-2: rgb(245, 214, 224);
+  --table-color-rgb: 245, 214, 224;
+}
+body.theme-light *:not(font) > em > strong,
+body.theme-light *:not(font) > strong > em,
+body.theme-light .cm-strong.cm-em {
+  background-image: initial;
+  background-clip: initial;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: initial;
+  background-color: initial;
+}

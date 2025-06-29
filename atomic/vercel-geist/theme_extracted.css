@@ -1,9 +1,78 @@
 :root {
-  --font-family-editor: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+  --background-1: light-dark(var(--vercel-gray-100), var(--vercel-gray-900));
+  --background-2: light-dark(var(--vercel-gray-200), var(--vercel-gray-900));
+  --background-3: light-dark(var(--vercel-gray-300), var(--vercel-gray-800));
+  --background-secondary-alt: light-dark(
+    var(--color-base-05),
+    var(--color-base-30)
+  );
+  --border-1: light-dark(var(--vercel-gray-200), var(--vercel-gray-700));
+  --border-2: light-dark(var(--vercel-gray-300), var(--vercel-gray-600));
+  --border-3: light-dark(var(--vercel-blue-600), var(--vercel-blue-600));
+  --color-accent: light-dark(
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l))
+  );
+  --color-accent-1: light-dark(
+    hsl(
+      calc(var(--accent-h) - 1),
+      calc(var(--accent-s) * 1.01),
+      calc(var(--accent-l) * 1.075)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    )
+  );
+  --color-accent-2: light-dark(
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
+    )
+  );
+  --color-accent-hsl: light-dark(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l)
+  );
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
+  --font-family-editor:
+    "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --font-family-monospace: "Geist Mono", "SF Mono", SFMono-Regular, Consolas, "Liberation Mono",
-    Menlo, Courier, monospace;
-  --font-family-preview: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+  --font-family-monospace:
+    "Geist Mono", "SF Mono", SFMono-Regular, Consolas, "Liberation Mono", Menlo,
+    Courier, monospace;
+  --font-family-preview:
+    "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-size-code: 14px;
   --font-size-h1: 26px;
@@ -16,16 +85,28 @@
   --font-size-side-dock: 14px;
   --font-size-side-dock-title: 16px;
   --font-size-status-bar: 14px;
+  --highlight-high: light-dark(var(--vercel-blue-300), var(--vercel-gray-600));
+  --highlight-low: light-dark(var(--vercel-gray-200), var(--vercel-gray-800));
+  --highlight-med: light-dark(var(--vercel-gray-300), var(--vercel-gray-700));
+  --inline-code-bg: light-dark(var(--vercel-gray-200), var(--vercel-gray-800));
   --keyboard-height: 0px;
+  --link-color: light-dark(var(--vercel-blue-600), var(--vercel-blue-500));
+  --link-color-hover: light-dark(
+    var(--vercel-blue-700),
+    var(--vercel-blue-600)
+  );
   --loading-icon-delay: 400ms;
-  --page-border: 1px solid CanvasText;
-  --page-margin: 8px auto -1px;
-  --pdfViewer-padding-bottom: 9px;
+  --page-border: 9px solid transparent;
+  --page-margin: 1px auto -8px;
+  --pdfViewer-padding-bottom: 0;
   --safe-area-inset-bottom: env(safe-area-inset-bottom);
   --safe-area-inset-left: env(safe-area-inset-left);
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
-  --spreadHorizontalWrapped-margin-LR: 3.5px;
+  --spreadHorizontalWrapped-margin-LR: -3.5px;
+  --text-1: light-dark(var(--vercel-gray-900), var(--vercel-gray-100));
+  --text-2: light-dark(var(--vercel-gray-600), var(--vercel-gray-400));
+  --text-accent: light-dark(var(--vercel-blue-600), var(--vercel-blue-500));
   --vercel-blue-100: #ffffff;
   --vercel-blue-200: #d6e4ff;
   --vercel-blue-300: #adc8ff;
@@ -45,8 +126,8 @@
   --vercel-gray-800: #111111;
   --vercel-gray-900: #000000;
   --viewer-container-height: 0;
-  --xfa-focus-outline: 2px solid CanvasText;
-  --xfa-unfocused-field-background: url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");
+  --xfa-focus-outline: auto;
+  --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
 }
 
 body {
@@ -62,21 +143,32 @@ body {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
+  --background-1: light-dark(var(--vercel-gray-100), var(--vercel-gray-900));
+  --background-2: light-dark(var(--vercel-gray-200), var(--vercel-gray-900));
+  --background-3: light-dark(var(--vercel-gray-300), var(--vercel-gray-800));
+  --background-accent: var(--accent-blue);
   --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
-  --background-modifier-border: var(--color-base-30);
+  --background-modifier-border: var(--border-1);
   --background-modifier-border-focus: var(--color-base-40);
   --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-error: var(--color-red);
-  --background-modifier-error-hover: var(--color-red);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-cover: rgba(0, 0, 0, 0.4);
+  --background-modifier-error: #ff0000;
+  --background-modifier-error-hover: #ff3333;
   --background-modifier-error-rgb: var(--color-red-rgb);
-  --background-modifier-form-field: var(--color-base-00);
+  --background-modifier-form-field: rgba(0, 0, 0, 0.1);
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.2);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-modifier-message: rgba(0, 0, 0, 0.9);
-  --background-modifier-success: var(--color-green);
+  --background-modifier-success: var(--vercel-blue-600);
   --background-modifier-success-rgb: var(--color-green-rgb);
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: var(--color-base-10);
-  --background-secondary: var(--color-base-20);
+  --background-primary: var(--background-1);
+  --background-primary-alt: var(--background-2);
+  --background-secondary: var(--background-2);
+  --background-secondary-alt: light-dark(
+    var(--color-base-05),
+    var(--color-base-30)
+  );
   --bases-embed-border: 1px solid var(--background-modifier-border);
   --bases-embed-border-radius: var(--radius-s);
   --bases-filter-menu-width: 520px;
@@ -110,6 +202,7 @@ body {
   --bases-table-text-size: var(--font-smaller);
   --bases-table-white-space: nowrap;
   --blockquote-background-color: transparent;
+  --blockquote-border: var(--vercel-blue-600);
   --blockquote-border-color: var(--interactive-accent);
   --blockquote-border-thickness: 2px;
   --blockquote-color: inherit;
@@ -117,6 +210,10 @@ body {
   --bold-color: inherit;
   --bold-modifier: 200;
   --bold-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --border-1: light-dark(var(--vercel-gray-200), var(--vercel-gray-700));
+  --border-2: light-dark(var(--vercel-gray-300), var(--vercel-gray-600));
+  --border-3: light-dark(var(--vercel-blue-600), var(--vercel-blue-600));
+  --border-color: var(--border-1);
   --border-width: 1px;
   --button-radius: var(--input-radius);
   --callout-blend-mode: var(--highlight-mix-blend-mode);
@@ -131,7 +228,8 @@ body {
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
   --callout-radius: var(--radius-s);
@@ -167,6 +265,7 @@ body {
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: var(--radius-s);
   --code-background: var(--background-primary-alt);
+  --code-block: var(--text-1);
   --code-border-color: var(--background-modifier-border);
   --code-border-width: 0px;
   --code-comment: var(--text-faint);
@@ -185,6 +284,62 @@ body {
   --code-white-space: pre-wrap;
   --collapse-icon-color: var(--text-faint);
   --collapse-icon-color-collapsed: var(--text-accent);
+  --color-accent: light-dark(
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
+    hsl(var(--accent-h), var(--accent-s), var(--accent-l))
+  );
+  --color-accent-1: light-dark(
+    hsl(
+      calc(var(--accent-h) - 1),
+      calc(var(--accent-s) * 1.01),
+      calc(var(--accent-l) * 1.075)
+    ),
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    )
+  );
+  --color-accent-2: light-dark(
+    hsl(
+      calc(var(--accent-h) - 3),
+      calc(var(--accent-s) * 1.02),
+      calc(var(--accent-l) * 1.15)
+    ),
+    hsl(
+      calc(var(--accent-h) - 5),
+      calc(var(--accent-s) * 1.05),
+      calc(var(--accent-l) * 1.29)
+    )
+  );
+  --color-accent-hsl: light-dark(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l)
+  );
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-05: light-dark(#fcfcfc, #212121);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-25: light-dark(#e3e3e3, #2a2a2a);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-60: light-dark(#707070, #999999);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -205,7 +360,8 @@ body {
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
   --embed-background: inherit;
-  --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
+  --embed-block-shadow-hover:
+    0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border);
   --embed-border-bottom: none;
   --embed-border-end: none;
@@ -227,32 +383,40 @@ body {
   --flair-color: var(--text-normal);
   --font-black: 900;
   --font-bold: 700;
-  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto,
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-default:
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
   --font-extrabold: 800;
   --font-extralight: 200;
-  --font-interface: var(--font-interface-override), var(--font-interface-theme),
+  --font-interface:
+    var(--font-interface-override), var(--font-interface-theme),
     var(--default-font, "??"), var(--font-default);
   --font-interface-override: "??";
   --font-interface-theme: "??";
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid: var(--font-text);
-  --font-monospace: var(--font-monospace-override), var(--font-monospace-theme),
+  --font-monospace:
+    var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default);
-  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-monospace-default:
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace;
   --font-monospace-override: "??";
   --font-monospace-theme: "??";
   --font-normal: 400;
-  --font-print: var(--font-print-override), var(--font-text-override), var(--font-text-theme),
-    "Arial";
+  --font-print:
+    var(--font-print-override), var(--font-text-override),
+    var(--font-text-theme), "Arial";
   --font-print-override: "??";
   --font-semibold: 600;
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
-  --font-text: var(--font-print);
+  --font-text:
+    var(--font-text-override), var(--font-text-theme), var(--font-default);
   --font-text-override: "??";
   --font-text-size: 16px;
   --font-text-theme: "??";
@@ -327,8 +491,17 @@ body {
   --h6-variant: normal;
   --h6-weight: 600;
   --header-height: 40px;
+  --heading-color-h1: var(--vercel-blue-500);
+  --heading-color-h2: var(--vercel-blue-600);
+  --heading-color-h3: var(--text-1);
+  --heading-color-h4: var(--text-1);
+  --heading-color-h5: var(--text-1);
+  --heading-color-h6: var(--text-2);
   --heading-formatting: var(--text-faint);
   --heading-spacing: calc(var(--p-spacing) * 2.5);
+  --highlight-high: light-dark(var(--vercel-blue-300), var(--vercel-gray-600));
+  --highlight-low: light-dark(var(--vercel-gray-200), var(--vercel-gray-800));
+  --highlight-med: light-dark(var(--vercel-gray-300), var(--vercel-gray-700));
   --hr-color: var(--background-modifier-border);
   --hr-thickness: 2px;
   --icon-color: var(--text-muted);
@@ -359,6 +532,8 @@ body {
   --indentation-guide-source-indent: 0.25em;
   --indentation-guide-width: 1px;
   --indentation-guide-width-active: 1px;
+  --inline-code: var(--vercel-blue-600);
+  --inline-code-bg: light-dark(var(--vercel-gray-200), var(--vercel-gray-800));
   --inline-title-color: var(--h1-color);
   --inline-title-font: var(--h1-font);
   --inline-title-line-height: var(--h1-line-height);
@@ -373,11 +548,12 @@ body {
   --input-height: 30px;
   --input-placeholder-color: var(--text-faint);
   --input-radius: 5px;
-  --interactive-accent: var(--color-accent-1);
-  --interactive-accent-hover: var(--color-accent-2);
+  --interactive-accent: var(--accent-blue);
+  --interactive-accent-active: var(--vercel-blue-600);
+  --interactive-accent-hover: var(--vercel-blue-500);
   --interactive-accent-hsl: var(--color-accent-hsl);
-  --interactive-hover: var(--color-base-10);
-  --interactive-normal: var(--color-base-00);
+  --interactive-hover: var(--highlight-low);
+  --interactive-normal: var(--background-2);
   --italic-color: inherit;
   --italic-weight: inherit;
   --layer-cover: 5;
@@ -392,8 +568,11 @@ body {
   --layer-tooltip: 70;
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;
-  --link-color: var(--text-accent);
-  --link-color-hover: var(--text-accent-hover);
+  --link-color: light-dark(var(--vercel-blue-600), var(--vercel-blue-500));
+  --link-color-hover: light-dark(
+    var(--vercel-blue-700),
+    var(--vercel-blue-600)
+  );
   --link-decoration: underline;
   --link-decoration-hover: underline;
   --link-decoration-thickness: auto;
@@ -461,8 +640,10 @@ body {
   --metadata-property-background: transparent;
   --metadata-property-background-active: var(--background-modifier-hover);
   --metadata-property-background-hover: transparent;
-  --metadata-property-box-shadow-focus: 0 0 0 2px var(--background-modifier-border-focus);
-  --metadata-property-box-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover);
+  --metadata-property-box-shadow-focus: 0 0 0 2px
+    var(--background-modifier-border-focus);
+  --metadata-property-box-shadow-hover: 0 0 0 1px
+    var(--background-modifier-border-hover);
   --metadata-property-padding: 0;
   --metadata-property-radius: 6px;
   --metadata-property-radius-focus: 6px;
@@ -470,7 +651,10 @@ body {
   --metadata-sidebar-input-font-size: var(--font-ui-small);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --modal-background: var(--background-primary);
-  --modal-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+  --modal-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
   --modal-border-width: var(--border-width);
   --modal-community-sidebar-width: 280px;
   --modal-height: 85vh;
@@ -499,7 +683,8 @@ body {
   --nav-item-color-highlighted: var(--text-accent);
   --nav-item-color-hover: var(--text-normal);
   --nav-item-color-selected: var(--text-normal);
-  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1) var(--size-4-6);
+  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
+    var(--size-4-6);
   --nav-item-parent-padding: var(--nav-item-padding);
   --nav-item-size: var(--font-ui-small);
   --nav-item-weight: inherit;
@@ -513,7 +698,8 @@ body {
   --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
   --pdf-sidebar-background: var(--background-primary);
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+  --pdf-thumbnail-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
   --pill-background: transparent;
   --pill-background-hover: transparent;
   --pill-border-color: var(--background-modifier-border);
@@ -537,7 +723,11 @@ body {
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
   --popover-width: 450px;
-  --prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+  --pre-code: var(--background-2);
+  --prompt-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
   --prompt-border-width: var(--border-width);
   --prompt-input-height: 40px;
   --prompt-max-height: 70vh;
@@ -551,9 +741,9 @@ body {
   --ribbon-background-collapsed: var(--background-primary);
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
   --ribbon-width: 44px;
-  --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2);
-  --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05);
-  --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1);
+  --scrollbar-active-thumb-bg: var(--border-2);
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: var(--border-1);
   --search-clear-button-color: var(--text-muted);
   --search-clear-button-size: 13px;
   --search-icon-color: var(--text-muted);
@@ -689,21 +879,24 @@ body {
   --tag-radius: 2em;
   --tag-size: var(--font-smaller);
   --tag-weight: inherit;
-  --text-accent: var(--color-accent);
-  --text-accent-hover: var(--color-accent-2);
-  --text-error: var(--color-red);
-  --text-faint: var(--color-base-50);
-  --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
+  --text-1: light-dark(var(--vercel-gray-900), var(--vercel-gray-100));
+  --text-2: light-dark(var(--vercel-gray-600), var(--vercel-gray-400));
+  --text-accent: light-dark(var(--vercel-blue-600), var(--vercel-blue-500));
+  --text-accent-hover: var(--link-color-hover);
+  --text-error: #ff0000;
+  --text-error-hover: #ff3333;
+  --text-faint: var(--text-2);
+  --text-highlight-bg: var(--vercel-blue-300);
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: var(--color-base-70);
-  --text-normal: var(--color-base-100);
-  --text-on-accent: white;
+  --text-muted: var(--text-2);
+  --text-normal: var(--text-1);
+  --text-on-accent: #ffffff;
   --text-on-accent-inverted: black;
-  --text-selection: hsla(var(--color-accent-hsl), 0.2);
+  --text-selection: rgba(77, 139, 249, 0.3);
   --text-success: var(--color-green);
   --text-warning: var(--color-orange);
-  --titlebar-background: var(--background-secondary);
-  --titlebar-background-focused: var(--background-secondary-alt);
+  --titlebar-background: var(--background-1);
+  --titlebar-background-focused: var(--background-2);
   --titlebar-border-color: var(--background-modifier-border);
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;
@@ -727,6 +920,7 @@ body {
   --vault-profile-display: flex;
   --vault-profile-font-size: var(--font-ui-small);
   --vault-profile-font-weight: var(--font-medium);
+  --vim-cursor: var(--vercel-blue-600);
   --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
   --zoom-factor: 1;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
@@ -1386,9 +1580,13 @@ input[type="search"] {
 }
 
 .tree-item-children {
-  border-inline-start: var(--nav-indentation-guide-width) solid var(--nav-indentation-guide-color);
+  border-inline-start: var(--nav-indentation-guide-width) solid
+    var(--nav-indentation-guide-color);
   margin-bottom: 1px;
-  margin-inline-start: var(--nav-item-children-margin-start, var(--nav-item-children-margin-left));
+  margin-inline-start: var(
+    --nav-item-children-margin-start,
+    var(--nav-item-children-margin-left)
+  );
   padding-inline-start: var(
     --nav-item-children-padding-start,
     var(--nav-item-children-padding-left)
@@ -1574,25 +1772,13 @@ svg.svg-icon {
   --background-1: var(--vercel-gray-900);
   --background-2: var(--vercel-gray-900);
   --background-3: var(--vercel-gray-800);
-  --background-accent: var(--accent-blue);
-  --background-modifier-border: var(--border-1);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
-  --background-modifier-cover: rgba(0, 0, 0, 0.4);
-  --background-modifier-error: #ff0000;
-  --background-modifier-error-hover: #ff3333;
-  --background-modifier-form-field: rgba(0, 0, 0, 0.1);
-  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.2);
-  --background-modifier-success: var(--vercel-blue-600);
-  --background-primary: var(--background-1);
-  --background-primary-alt: var(--background-2);
-  --background-secondary: var(--background-2);
-  --background-secondary-alt: var(--background-3);
-  --blockquote-border: var(--vercel-blue-600);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: rgba(10, 10, 10, 0.4);
+  --background-modifier-form-field: var(--color-base-25);
+  --background-secondary-alt: var(--color-base-30);
   --border-1: var(--vercel-gray-700);
   --border-2: var(--vercel-gray-600);
   --border-3: var(--vercel-blue-600);
-  --border-color: var(--border-1);
-  --code-block: var(--text-1);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -1633,29 +1819,23 @@ svg.svg-icon {
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
-  --heading-color-h1: var(--vercel-blue-500);
-  --heading-color-h2: var(--vercel-blue-600);
-  --heading-color-h3: var(--text-1);
-  --heading-color-h4: var(--text-1);
-  --heading-color-h5: var(--text-1);
-  --heading-color-h6: var(--text-2);
   --highlight-high: var(--vercel-gray-600);
   --highlight-low: var(--vercel-gray-800);
   --highlight-med: var(--vercel-gray-700);
   --highlight-mix-blend-mode: darken;
-  --inline-code: var(--vercel-blue-600);
   --inline-code-bg: var(--vercel-gray-800);
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
     0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --interactive-accent: var(--accent-blue);
-  --interactive-accent-active: var(--vercel-blue-600);
-  --interactive-accent-hover: var(--vercel-blue-500);
-  --interactive-hover: var(--highlight-low);
-  --interactive-normal: var(--background-2);
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --interactive-hover: var(--color-base-35);
+  --interactive-normal: var(--color-base-30);
   --link-color: var(--vercel-blue-500);
   --link-color-hover: var(--vercel-blue-600);
   --link-external-color: var(--vercel-gray-400);
@@ -1663,55 +1843,29 @@ svg.svg-icon {
   --mono-rgb-100: 255, 255, 255;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-  --pre-code: var(--background-2);
-  --scrollbar-active-thumb-bg: var(--border-2);
-  --scrollbar-bg: transparent;
-  --scrollbar-thumb-bg: var(--border-1);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --pre-code: var(--vercel-gray-500);
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-1: var(--vercel-gray-100);
   --text-2: var(--vercel-gray-400);
-  --text-accent: var(--text-accent);
-  --text-accent-hover: var(--link-color-hover);
-  --text-error: #ff0000;
-  --text-error-hover: #ff3333;
-  --text-faint: var(--text-2);
-  --text-highlight-bg: var(--vercel-blue-300);
-  --text-muted: var(--text-2);
-  --text-normal: var(--text-1);
-  --text-on-accent: #ffffff;
-  --text-selection: rgba(77, 139, 249, 0.3);
-  --titlebar-background: var(--background-1);
-  --titlebar-background-focused: var(--background-2);
-  --vim-cursor: var(--vercel-blue-600);
-  color-scheme: dark;
+  --text-accent: var(--vercel-blue-500);
+  --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
 }
 
 .theme-light {
   --background-1: var(--vercel-gray-100);
   --background-2: var(--vercel-gray-200);
   --background-3: var(--vercel-gray-300);
-  --background-accent: var(--accent-blue);
-  --background-modifier-border: var(--border-1);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
-  --background-modifier-cover: rgba(0, 0, 0, 0.4);
-  --background-modifier-error: #ff0000;
-  --background-modifier-error-hover: #ff3333;
-  --background-modifier-form-field: rgba(0, 0, 0, 0.1);
-  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.2);
-  --background-modifier-success: var(--vercel-blue-600);
-  --background-primary: var(--background-1);
-  --background-primary-alt: var(--background-2);
-  --background-secondary: var(--background-2);
-  --background-secondary-alt: var(--background-3);
-  --blockquote-border: var(--vercel-blue-600);
+  --background-modifier-cover: rgba(220, 220, 220, 0.4);
+  --background-secondary-alt: var(--color-base-05);
   --border-1: var(--vercel-gray-200);
   --border-2: var(--vercel-gray-300);
   --border-3: var(--vercel-blue-600);
-  --border-color: var(--border-1);
-  --code-block: var(--text-1);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -1752,56 +1906,33 @@ svg.svg-icon {
   --color-red-rgb: 233, 49, 71;
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
-  --heading-color-h1: var(--vercel-blue-500);
-  --heading-color-h2: var(--vercel-blue-600);
-  --heading-color-h3: var(--text-1);
-  --heading-color-h4: var(--text-1);
-  --heading-color-h5: var(--text-1);
-  --heading-color-h6: var(--text-2);
   --highlight-high: var(--vercel-blue-300);
   --highlight-low: var(--vercel-gray-200);
   --highlight-med: var(--vercel-gray-300);
   --highlight-mix-blend-mode: darken;
-  --inline-code: var(--vercel-blue-600);
   --inline-code-bg: var(--vercel-gray-200);
-  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
-  --interactive-accent: var(--accent-blue);
-  --interactive-accent-active: var(--vercel-blue-600);
-  --interactive-accent-hover: var(--vercel-blue-500);
-  --interactive-hover: var(--highlight-low);
-  --interactive-normal: var(--background-2);
+  --input-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent;
   --link-color: var(--vercel-blue-600);
   --link-color-hover: var(--vercel-blue-700);
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  --pre-code: var(--background-2);
   --pre-code-bg: var(--vercel-gray-200);
-  --scrollbar-active-thumb-bg: var(--border-2);
-  --scrollbar-bg: transparent;
-  --scrollbar-thumb-bg: var(--border-1);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --text-1: var(--vercel-gray-900);
   --text-2: var(--vercel-gray-600);
-  --text-accent: var(--text-accent);
-  --text-accent-hover: var(--link-color-hover);
-  --text-error: #ff0000;
-  --text-error-hover: #ff3333;
-  --text-faint: var(--text-2);
-  --text-highlight-bg: var(--vercel-blue-300);
-  --text-muted: var(--text-2);
-  --text-normal: var(--text-1);
-  --text-on-accent: #ffffff;
-  --text-selection: rgba(77, 139, 249, 0.3);
-  --titlebar-background: var(--background-1);
-  --titlebar-background-focused: var(--background-2);
-  --vim-cursor: var(--vercel-blue-600);
-  color-scheme: light;
+  --text-accent: var(--vercel-blue-600);
 }
 
 .mod-sidedock {

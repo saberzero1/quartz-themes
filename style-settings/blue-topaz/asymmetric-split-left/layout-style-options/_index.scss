@@ -1,0 +1,52 @@
+body.asymmetric-split-left
+  .workspace-split.mod-horizontal.mod-left-split
+  .workspace-leaf {
+  background-color: var(--background-asymm-split-left);
+}
+body.asymmetric-split-left .workspace-ribbon.mod-left {
+  border-right: 1px solid var(--background-modifier-border-asymm);
+}
+body.asymmetric-split-left .titlebar,
+body.asymmetric-split-left .workspace-split.mod-left-split .workspace-tabs {
+  border-bottom: 1px solid var(--background-modifier-border-asymm);
+}
+body.asymmetric-split-left
+  .workspace-split.mod-left-split
+  .workspace-tab-container-before.is-before-active
+  .workspace-tab-header-inner,
+body.asymmetric-split-left
+  .workspace-split.mod-left-split
+  .workspace-tab-container-after.is-after-active
+  .workspace-tab-header-inner,
+body.asymmetric-split-left
+  .workspace-split.mod-left-split
+  .workspace-tab-header.is-before-active
+  .workspace-tab-header-inner,
+body.asymmetric-split-left
+  .workspace-split.mod-left-split
+  .workspace-tab-header.is-after-active
+  .workspace-tab-header-inner,
+body.asymmetric-split-left
+  .workspace-split.mod-left-split
+  .workspace-tab-header,
+body.asymmetric-split-left
+  .workspace-split.mod-left-split
+  .workspace-tab-header-inner,
+body.asymmetric-split-left
+  .workspace-split.mod-left-split
+  .workspace-tab-header.is-after-active,
+body.asymmetric-split-left
+  .workspace-split.mod-left-split
+  .workspace-tab-header.is-before-active,
+body.asymmetric-split-left
+  .workspace-split.mod-left-split
+  .workspace-tab-container-before.is-before-active
+  .workspace-tab-header-inner {
+  background-color: var(--background-asymm-split-left);
+  border-radius: 0;
+}
+body.asymmetric-split-left
+  .workspace-split.mod-left-split
+  .workspace-tab-header-container {
+  padding: 4px 0;
+}

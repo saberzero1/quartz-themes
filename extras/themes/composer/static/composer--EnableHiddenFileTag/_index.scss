@@ -1,0 +1,7 @@
+body.composer--EnableHiddenFileTag .nav-file-tag {
+  display: none;
+}
+
+body.composer--EnableHiddenFileTagHover .nav-file:hover .nav-file-tag {
+  display: inline;
+}

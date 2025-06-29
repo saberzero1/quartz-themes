@@ -1,0 +1,28 @@
+body.mu-o-ui-sidebars
+  .workspace-split:is(.mod-left-split, .mod-right-split)
+  .workspace-leaf {
+  border: 1px solid var(--mu-o-ui-border);
+}
+
+body.mu-cards-interface
+  .workspace-split:is(.mod-left-split, .mod-right-split)
+  .workspace-leaf {
+  border-radius: var(--size-4-2);
+}
+
+body.mu-o-ui-sidebars .search-row {
+  border-bottom: 1px solid var(--mu-o-ui-border);
+  margin: 0;
+  padding: var(--size-4-2);
+  padding-bottom: 4px;
+}
+
+body.mu-o-ui-sidebars .nav-header {
+  border-bottom: 1px solid var(--mu-o-ui-border);
+  margin-bottom: var(--size-4-1);
+}
+
+body.mu-o-ui-sidebars .status-bar {
+  border-top: 1px solid var(--mu-o-ui-border);
+  border-left: 1px solid var(--mu-o-ui-border);
+}

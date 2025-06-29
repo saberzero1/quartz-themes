@@ -1,0 +1,38 @@
+body.font-family-change-to-default .markdown-source-view,
+body.font-family-change-to-default
+  :is(.markdown-preview-view, .markdown-rendered),
+body.font-family-change-to-default .markdown-source-view.mod-cm6 .cm-scroller,
+body.font-family-change-to-default
+  :is(.markdown-preview-view, .markdown-rendered)
+  h5,
+body.font-family-change-to-default
+  :is(.markdown-preview-view, .markdown-rendered)
+  h6,
+body.font-family-change-to-default .nav-file-title,
+body.font-family-change-to-default .nav-folder-title,
+body.font-family-change-to-default a.tag,
+body.font-family-change-to-default .cm-s-obsidian span.cm-hashtag,
+body.font-family-change-to-default .nav-folder.mod-root > .nav-folder-title,
+body.font-family-change-to-default pre.frontmatter.language-yaml::before,
+body.font-family-change-to-default span.cm-strong,
+body.font-family-change-to-default :not(font) > strong,
+body.font-family-change-to-default a,
+body.font-family-change-to-default
+  :is(.markdown-preview-view, .markdown-rendered)
+  .internal-link,
+body.font-family-change-to-default
+  :is(.markdown-preview-view, .markdown-rendered)
+  th,
+body.font-family-change-to-default *:not(font) > em > strong,
+body.font-family-change-to-default *:not(font) > strong > em,
+body.font-family-change-to-default .cm-strong.cm-em {
+  font-family: var(--font-default) !important;
+}
+
+body.font-family-change-to-default .cm-s-obsidian .cm-hmd-frontmatter,
+body.font-family-change-to-default .markdown-rendered code,
+body.font-family-change-to-default
+  :is(.markdown-preview-view, .markdown-rendered)
+  code {
+  font-family: var(--font-monospace);
+}

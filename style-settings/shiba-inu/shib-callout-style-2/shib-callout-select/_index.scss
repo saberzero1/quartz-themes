@@ -1,0 +1,102 @@
+.shib-callout-toggle.shib-callout-style-2
+  .callout.is-collapsible.is-collapsed
+  .callout-content {
+  display: none;
+}
+.shib-callout-toggle.shib-callout-style-2 .callout,
+.shib-callout-toggle.shib-callout-style-2 .callout.is-collapsible.is-collapsed,
+.shib-callout-toggle.shib-callout-style-2 .callout:not(.is-collapsible) {
+  padding: 0;
+}
+.shib-callout-toggle.shib-callout-style-2 .callout .callout-content,
+.shib-callout-toggle.shib-callout-style-2
+  .callout:not(.is-collapsible)
+  .callout-content {
+  padding: 0 var(--callout-title-padding) var(--callout-title-padding)
+    var(--callout-title-padding);
+}
+.shib-callout-toggle.shib-callout-style-2 .callout .callout-title,
+.shib-callout-toggle.shib-callout-style-2
+  .callout:not(.is-collapsible)
+  .callout-title {
+  background-color: rgba(var(--callout-color), 0 0.5);
+  padding: var(--callout-title-padding);
+  cursor: pointer;
+}
+.shib-callout-toggle.shib-callout-style-2
+  .callout
+  .callout-title
+  .callout-title-inner,
+.shib-callout-toggle.shib-callout-style-2
+  .callout:not(.is-collapsible)
+  .callout-title
+  .callout-title-inner {
+  font-weight: 400;
+}
+.shib-callout-toggle.shib-callout-style-2 .callout:not(.is-collapsible) {
+  border-color: rgba(var(--callout-color), 0.4);
+  border-width: 1px;
+  border-radius: var(--callout-radius);
+  background-color: rgba(var(--side), 0.4);
+}
+.shib-callout-toggle.shib-callout-style-2 .callout .callout-fold,
+.shib-callout-toggle.shib-callout-style-2
+  .callout.is-collapsible
+  .callout-fold {
+  padding-right: 0;
+}
+.shib-callout-toggle.shib-callout-style-2 .callout .callout-title-inner,
+.shib-callout-toggle.shib-callout-style-2
+  .callout.is-collapsible
+  .callout-title-inner {
+  flex-grow: var(--shib-callout-fold-position, unset);
+}
+.shib-callout-toggle.shib-callout-style-2 .callout.is-collapsible {
+  border-color: rgba(var(--callout-color), 0.4);
+  border-width: 1px;
+  border-radius: var(--callout-radius);
+  background-color: rgba(var(--side), 0.4);
+  --bold-weight: bolder;
+}
+.shib-callout-toggle.shib-callout-style-2
+  .callout.is-collapsible.is-collapsed
+  .callout-title {
+  background-color: rgba(var(--callout-color), 0.1);
+  padding: var(--callout-title-padding);
+  cursor: pointer;
+}
+.shib-callout-toggle.shib-callout-style-2
+  .callout.is-collapsible:not(.is-collapsed) {
+  padding: 0 0 var(--callout-title-padding) 0;
+}
+.shib-callout-toggle.shib-callout-style-2
+  .callout.is-collapsible:not(.is-collapsed)
+  .callout-title {
+  background-color: rgba(var(--callout-color), 0.1);
+  padding: var(--callout-title-padding);
+  border-color: rgba(var(--callout-color), 0.4);
+  cursor: pointer;
+}
+.shib-callout-toggle.shib-callout-style-2
+  .callout:not(.is-collapsible)
+  .callout-title {
+  background-color: rgba(var(--callout-color), 0.1);
+  padding: var(--callout-title-padding);
+  border-color: rgba(var(--callout-color), 0.4);
+}
+.shib-callout-toggle.shib-callout-style-2 .callout .list-collapse-indicator {
+  margin-left: -35px;
+  padding-right: 3px;
+}
+.shib-callout-toggle.shib-callout-style-2 .callout .callout-content {
+  padding: var(--callout-title-padding) var(--callout-title-padding)
+    var(--callout-title-padding) calc(var(--callout-title-padding) * 1.5);
+  border-top: 1px dashed rgba(var(--callout-color), 0.4);
+}
+.shib-callout-toggle.shib-callout-style-2
+  .callout.is-collapsible:not(.is-collapsed)
+  .callout-content {
+  padding: var(--callout-title-padding) var(--callout-title-padding) 0
+    calc(var(--callout-title-padding) * 1.5);
+  border-top: 1px dashed rgba(var(--callout-color), 0.4);
+}

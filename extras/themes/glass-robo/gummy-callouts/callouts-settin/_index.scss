@@ -1,0 +1,19 @@
+.gummy-callouts .callout {
+  background: linear-gradient(
+    to right,
+    rgba(var(--callout-color), 0.05),
+    var(--background-primary)
+  );
+  position: relative;
+  border: 1px solid rgba(var(--callout-color), 0.4);
+  box-shadow: none;
+  border-radius: 12px;
+}
+
+.gummy-callouts .callout:has(> .callout-title .callout-title-inner:dir(rtl)) {
+  background: linear-gradient(
+    to left,
+    rgba(var(--callout-color), 0.05),
+    var(--background-primary)
+  );
+}

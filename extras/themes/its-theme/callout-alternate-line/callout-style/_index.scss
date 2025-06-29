@@ -1,0 +1,21 @@
+.callout-alternate-line .callout {
+  border: 0;
+  background-color: transparent;
+  --callout-padding: 0;
+  --callout-title-padding: 5px 10px;
+  --callout-content-padding: 0px 10px 10px;
+}
+
+.callout-alternate-line .callout .callout-title {
+  background: transparent;
+  border-bottom: 2px solid var(--table, var(--background-modifier-border));
+}
+
+.callout-alternate-line .callout .callout-fold {
+  color: rgb(var(--callout-color));
+}
+
+.callout-alternate-line .callout .callout-content.callout-content {
+  border: 0;
+  border-bottom: 1px solid rgba(var(--callout-color), 0.5);
+}

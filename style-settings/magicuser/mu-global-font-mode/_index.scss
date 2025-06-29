@@ -1,0 +1,16 @@
+body {
+  --font-default: var(--mu-global-font);
+  --font-monospace-default: var(--mu-global-font);
+  --font-interface: var(--mu-global-font);
+  --font-text: var(--mu-global-font);
+  --h1-font: var(--mu-global-font);
+  --h2-font: var(--mu-global-font);
+  --h3-font: var(--mu-global-font);
+  --h4-font: var(--mu-global-font);
+  --h5-font: var(--mu-global-font);
+  --h6-font: var(--mu-global-font);
+  font-feature-settings: var(--mu-global-font-stylistic-set);
+  letter-spacing: calc(
+    min(var(--mu-global-font-letter-spacing), var(--mu-max-letter-spacing))
+  );
+}

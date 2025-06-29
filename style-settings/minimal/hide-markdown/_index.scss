@@ -1,0 +1,17 @@
+.is-live-preview .cm-formatting.cm-formatting-code.cm-inline-code,
+.is-live-preview .cm-formatting.cm-formatting-em,
+.is-live-preview .cm-formatting.cm-formatting-highlight,
+.is-live-preview .cm-formatting.cm-formatting-link,
+.is-live-preview .cm-formatting.cm-formatting-strikethrough,
+.is-live-preview .cm-formatting.cm-formatting-strong {
+  display: none;
+}
+.is-live-preview .cm-formatting-quote {
+  opacity: 0;
+}
+.is-live-preview .cm-formatting-header,
+.is-live-preview .cm-formatting-link,
+.is-live-preview .cm-hmd-internal-link.cm-link-has-alias,
+.is-live-preview .cm-link-alias-pipe {
+  display: none;
+}

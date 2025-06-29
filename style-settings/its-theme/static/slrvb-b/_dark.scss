@@ -1,0 +1,35 @@
+,
+.theme-dark {
+  --outer-bar: #0e0f15;
+  --dark-sidebar: #10161d;
+  --side-bar: var(--note);
+  --note: #1a1e24;
+  --note-rgb: 26, 30, 36;
+  --accent-color: 57, 77, 100;
+  --accent: #394d64;
+  --lite-accent: #6ca6e0;
+  --dark-accent: #293e64;
+  --deep-dark-accent: #1f283b;
+  --accent2: #4c78cc;
+  --accent2-lite: #4c87cc;
+  --headers: #2b71cd;
+  --text: #aab3ca;
+  --soft-text: #6d7a9b;
+  --code-text: slategray;
+  --i-at: #5d7b98;
+  --footnote: #6e7e89;
+  --folder-open: #386ab6;
+  --file-icon-color: #63748d;
+  --code-bg: #232831;
+  --tag: var(--dark-accent);
+  --th: var(--dark-accent);
+  --td: #030a1495;
+  --hr: #3c5274;
+  --lines: #465164;
+  --theme-rainbow-1: var(--accent2);
+  --theme-rainbow-2: var(--headers);
+  --theme-rainbow-3: var(--dark-accent);
+  --theme-rainbow-4: var(--deep-dark-accent);
+  --theme-rainbow-5: var(--accent);
+  --theme-rainbow-6: var(--soft-text);
+}

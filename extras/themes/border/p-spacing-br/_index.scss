@@ -1,0 +1,5 @@
+body.p-spacing-br :is(.markdown-preview-view, .markdown-rendered) p > br {
+  content: " ";
+  margin-top: var(--p-spacing);
+  display: block;
+}

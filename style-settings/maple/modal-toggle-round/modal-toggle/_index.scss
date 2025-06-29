@@ -1,0 +1,24 @@
+body-round .checkbox-container {
+  --toggle-shadow: var(--color-base-40);
+}
+body-round .checkbox-container::after {
+  left: 0;
+  height: calc(var(--toggle-width) / 3);
+  width: calc(var(--toggle-width) / 3);
+  bottom: 30%;
+  border-radius: calc(var(--toggle-width) / 2);
+  border: var(--toggle-border-width) solid var(--text-faint);
+  background-color: var(--text-on-accent);
+  margin: 0;
+  transition: var(--animation-slow);
+  box-shadow: 0 4px 2px 0 var(--toggle-shadow);
+}
+body-round .checkbox-container.is-enabled {
+  border-color: var(--accent-active);
+  background-color: var(--accent-inactive);
+}
+body-round .checkbox-container.is-enabled::after {
+  border-color: var(--accent-active);
+  transform: none;
+  left: calc(100% - var(--toggle-width) / 3 - 3 * var(--toggle-border-width));
+}

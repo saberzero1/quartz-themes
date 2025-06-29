@@ -1,0 +1,53 @@
+.list-d-c-s .cm-list-1 .list-bullet::after {
+}
+.list-d-c-s .cm-list-2 .list-bullet::after {
+  width: calc(0.3rem - 1px);
+  height: calc(0.3rem - 1px);
+  outline: 1px solid;
+  background-color: transparent;
+}
+.list-d-c-s .cm-list-3 .list-bullet::after {
+  border-radius: 0%;
+}
+.list-d-c-s .markdown-rendered ul .list-bullet::after,
+.list-d-c-s .markdown-rendered ul ul ul ul .list-bullet::after,
+.list-d-c-s .markdown-rendered ul ul ul ul ul ul ul .list-bullet::after {
+  width: var(--list-bullet-size);
+  height: var(--list-bullet-size);
+  outline: none;
+  background-color: var(--list-marker-color);
+  border-radius: var(--list-bullet-radius);
+}
+.list-d-c-s .markdown-rendered ul ul .list-bullet::after,
+.list-d-c-s .markdown-rendered ul ul ul ul ul .list-bullet::after,
+.list-d-c-s .markdown-rendered ul ul ul ul ul ul ul ul .list-bullet::after {
+  width: calc(0.3rem - 1px);
+  height: calc(0.3rem - 1px);
+  outline: 1px solid;
+  background-color: transparent;
+  border-radius: var(--list-bullet-radius);
+}
+.list-d-c-s .markdown-rendered ul ul ul .list-bullet::after,
+.list-d-c-s .markdown-rendered ul ul ul ul ul ul .list-bullet::after,
+.list-d-c-s .markdown-rendered ul ul ul ul ul ul ul ul ul .list-bullet::after {
+  width: var(--list-bullet-size);
+  height: var(--list-bullet-size);
+  outline: none;
+  background-color: var(--list-marker-color);
+  border-radius: 0%;
+}
+.list-d-c-s .markdown-rendered ul.has-list-bullet,
+.list-d-c-s .markdown-rendered ul ul ul ul.has-list-bullet,
+.list-d-c-s .markdown-rendered ul ul ul ul ul ul ul.has-list-bullet {
+  list-style-type: disc;
+}
+.list-d-c-s .markdown-rendered ul ul.has-list-bullet,
+.list-d-c-s .markdown-rendered ul ul ul ul ul.has-list-bullet,
+.list-d-c-s .markdown-rendered ul ul ul ul ul ul ul ul.has-list-bullet {
+  list-style-type: circle;
+}
+.list-d-c-s .markdown-rendered ul ul ul.has-list-bullet,
+.list-d-c-s .markdown-rendered ul ul ul ul ul ul.has-list-bullet,
+.list-d-c-s .markdown-rendered ul ul ul ul ul ul ul ul ul.has-list-bullet {
+  list-style-type: square;
+}

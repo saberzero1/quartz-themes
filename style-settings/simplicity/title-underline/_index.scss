@@ -1,0 +1,19 @@
+.HyperMD-header:after {
+  padding-top: 0.7rem !important;
+}
+.HyperMD-header:after {
+  border-bottom: 2px solid
+    hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
+  padding-bottom: 0.7rem !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  border-bottom: 2px solid
+    hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
+  padding-bottom: 0.8em !important;
+  padding-top: 0.4em !important;
+}

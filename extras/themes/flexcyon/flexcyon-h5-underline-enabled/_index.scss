@@ -1,0 +1,4 @@
+body.flexcyon-h5-underline-enabled h5 {
+  border-block-end: calc((var(--h5-weight) - 200) / 100 * 1px) solid
+    var(--h5-color);
+}

@@ -1,0 +1,4 @@
+.workspace-leaf-content[data-type="file-explorer"]
+  :is(.nav-file-title-content, .nav-folder-title-content) {
+  white-space: normal;
+}

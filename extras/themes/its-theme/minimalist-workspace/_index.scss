@@ -1,0 +1,106 @@
+.minimalist-workspace {
+  --divider-color: transparent;
+  --scrollbar-thumb-bg: transparent;
+  --tab-outline-width: 0;
+  --tab-outline-color: transparent;
+}
+
+.minimalist-workspace .nav-folder.mod-root > .nav-folder-title:not(:hover) {
+  height: 6px;
+  opacity: 0;
+}
+
+.minimalist-workspace .view-header:not(:hover):not(:focus-within) {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  z-index: 5;
+}
+
+.minimalist-workspace
+  .view-header:not(:hover):not(:focus-within)
+  .view-header-icon,
+.minimalist-workspace
+  .view-header:not(:hover):not(:focus-within)
+  .view-header-nav-buttons,
+.minimalist-workspace
+  .view-header:not(:hover):not(:focus-within)
+  .view-actions {
+  opacity: 0;
+  width: 0;
+  padding: 0 5px;
+}
+
+.minimalist-workspace .side-dock-ribbon:is(.mod-left, .mod-right):not(:hover) {
+  opacity: 0;
+  flex: 0 0 10px;
+  padding: 0;
+}
+
+.minimalist-workspace
+  .side-dock-ribbon:is(.mod-left, .mod-right):not(:hover)
+  :is(.side-dock-actions, .side-dock-settings) {
+  display: none;
+}
+
+.minimalist-workspace .titlebar:not(:hover) {
+  width: 100%;
+  opacity: 0;
+  --titlebar-background: transparent;
+  --titlebar-background-focused: transparent;
+}
+
+.minimalist-workspace .status-bar:not(:hover) {
+  min-width: 100px;
+  padding: 0;
+  opacity: 0;
+  --icon-s: 0;
+  --status-bar-font-size: 0;
+  --status-bar-background: transparent;
+  --status-bar-border-color: transparent;
+  --status-bar-text-color: transparent;
+}
+
+.minimalist-workspace .workspace-tab-header-container:not(:hover) {
+  height: 12px;
+  opacity: 0;
+}
+
+.minimalist-workspace .nav-header:not(:hover) .nav-buttons-container {
+  display: none;
+}
+
+.minimalist-workspace .frontmatter-container:not(:hover) {
+  height: 10px;
+  opacity: 0;
+}
+
+.minimalist-workspace .frontmatter-container:not(:hover) > * {
+  display: none;
+}
+
+.minimalist-workspace .nav-folder .nav-folder-title {
+  --folder-icon: "";
+  --file-icon-margin: 0;
+}
+
+.minimalist-workspace
+  .nav-folder
+  .nav-folder-title
+  .nav-folder-title-content::before {
+  content: "";
+  width: 0;
+}
+
+.minimalist-workspace .nav-file .nav-file-title {
+  --file-icon: "";
+  --file-icon-margin: 0;
+}
+
+.minimalist-workspace
+  .nav-file
+  .nav-file-title
+  .nav-file-title-content::before {
+  content: "";
+  width: 0;
+}

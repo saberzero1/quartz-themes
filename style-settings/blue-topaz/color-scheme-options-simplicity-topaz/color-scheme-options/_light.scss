@@ -1,0 +1,120 @@
+body-simplicity-topaz .theme-light,
+body.theme-light {
+  --h1-color: var(--print-h1-color, var(--text-normal));
+  --h2-color: var(--print-h2-color, var(--text-normal));
+  --h3-color: var(--print-h3-color, var(--text-normal));
+  --h4-color: var(--print-h4-color, var(--text-normal));
+  --h5-color: var(--print-h5-color, var(--text-normal));
+  --h6-color: var(--print-h6-color, var(--text-normal));
+  --background-accent: var(--simple-white-1);
+  --background-modifier-border: var(--simple-gray-5);
+  --background-modifier-form-field: var(--simple-white-1);
+  --background-modifier-form-field-highlighted: var(--simple-white-1);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.05);
+  --text-normal: var(--simple-black-1);
+  --text-muted: hsla(218, 19%, 39%, 1);
+  --text-faint: hsla(218, 19%, 39%, 1);
+  --accent-em: var(--simple-gray-4);
+  --text-error: var(--simple-red-1);
+  --text-selection: var(--simple-gray-7);
+  --interactive-normal: var(--simple-white-2);
+  --interactive-hover: var(--simple-white-4);
+  --accent-h: 220;
+  --accent-s: 20%;
+  --accent-l: 35%;
+  --interactive-accent-rgb: 70, 142, 235;
+  --panel-border-color: var(--simple-white-4);
+  --background-primary-bg-4-bt: var(--simple-white-2);
+  --background-primary-alt-bg-4-bt: var(--simple-tran);
+  --background-secondary-bg-4-bt: var(--simple-tran);
+  --background-secondary-alt-bg-4-bt: var(--simple-tran);
+  --background-primary-alt: var(--simple-white-2);
+  --background-mobile-drawer-1: var(--simple-white-1);
+  --background-mobile-drawer-2: var(--simple-white-1);
+  --background-modifier-border-hr: var(--simple-gray-5);
+  --background-secondary-alt-bg-4-bt-publish: var(--simple-gray-5);
+  --scrollbar-thumb-bg: var(--simple-gray-5);
+  --color-black: var(--simple-black-1);
+  --color-dark-gray: var(--simple-gray-1);
+  --color-accent: var(--simple-blue-1);
+  --color-accent-alt: var(--simple-blue-2);
+  --color-accent-dark: var(--simple-blue-3);
+  --color-gray: var(--simple-gray-2);
+  --color-light-gray: var(--simple-gray-3);
+  --color-medium-gray: var(--simple-gray-4);
+  --modal-group-border: var(--simple-gray-6);
+  --button-selected: var(--simple-white-6);
+  --button-hover: var(--simple-white-6);
+  --button-selected-hover: var(--simple-white-3);
+  --window-shadow: 0 1px 3px var(--simple-white-3);
+  --window-shadow2: 0 0 9px var(--simple-gray-7);
+  --window-shadow-hover: 0 3px 5px var(--simple-white-6);
+  --window-shadow-transparent: 0 3px 5px transparent;
+  --border: 1px solid var(--simple-gray-5);
+  --background-primary: var(--simple-white-1);
+  --background-secondary-alt: var(--simple-white-2);
+  --background-tertiary: var(--simple-white-3);
+  --background-accent: var(--simple-blue-1);
+  --background-fourth: var(--simple-white-4);
+  --background-fifth: var(--simple-white-5);
+  --background-sixth: var(--simple-white-4);
+  --text-color-code: var(--simple-orange);
+  --text-normal: var(--simple-black-1);
+  --text-error: var(--simple-red-1);
+  --text-faint: var(--simple-gray-1);
+  --text-highlight-bg: var(--simple-yellow);
+  --accent-strong: var(--simple-black-2);
+  --accent-em: var(--simple-gray-4);
+  --text-muted: hsla(218, 19%, 39%, 1);
+  --background-modifier-error: var(--simple-red-1);
+  --background-modifier-border: var(--simple-gray-5);
+  --custom-titlebar-bg: var(--background-secondary);
+  --background-code-2: var(--simple-tran);
+  --scrollbar-bg: transparent;
+  --background-transparent-black-or-white-1: var(--simple-white-2) !important;
+  --background-transparent-black-or-white-2: var(
+    --bg-color-settings-1
+  ) !important;
+  --background-transparent-black-or-white-3: var(
+    --bg-color-settings-1
+  ) !important;
+  --tab-background-active: #ffffff;
+  --theme-color-translucent-01: hsla(254, 80%, 68%, 0.1);
+}
+body-simplicity-topaz
+  .workspace-split.mod-root
+  .workspace-tab-header.is-active.mod-active {
+  border-radius: 6px;
+  border-color: var(--background-modifier-border);
+  border-style: solid;
+  border-width: 0px;
+}
+body-simplicity-topaz .workspace-split.mod-vertical.mod-root .workspace-leaf {
+  box-shadow: var(--window-shadow);
+  height: 100%;
+}
+body-simplicity-topaz
+  .workspace-split.mod-horizontal
+  > .workspace-leaf.mod-active
+  .view-header,
+body-simplicity-topaz
+  .workspace-split.mod-vertical
+  > .workspace-leaf.mod-active
+  .view-header {
+  background: var(--simple-white-1);
+}
+body.background-settings-workplace-background-image:is(
+    .background-settings-workplace-waves2-light,
+    .background-settings-workplace-waves-light
+  ).theme-light {
+  --background-secondary-bg-4-bt: var(--simple-tran);
+}
+body.default-tab-simplicity-topaz
+  .workspace-split.mod-root
+  .workspace-tab-header.is-active {
+  background-image: linear-gradient(
+    to right,
+    var(--background-secondary),
+    var(--simple-white-2)
+  );
+}

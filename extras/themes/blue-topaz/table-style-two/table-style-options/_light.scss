@@ -1,0 +1,8 @@
+body.theme-light {
+  --table-background-color-odd: rgba(0, 0, 0, 0.02);
+  --table-background-color: rgba(0, 0, 0, 0.05);
+  --table-thead-background-color: rgba(0, 0, 0, 0.1);
+  --table-hover-color: rgba(0, 0, 0, 0.03);
+  --table-hover-raw-color: rgba(0, 0, 0, 0.09);
+  --table-hover-thead-color: var(--table-thead-background-color);
+}

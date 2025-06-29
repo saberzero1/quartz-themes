@@ -1,0 +1,22 @@
+body.background-notebook-liked-switch.notebook-liked-markdown-page-stripe-notebook-2
+  .markdown-preview-view.markdown-rendered,
+body.background-notebook-liked-switch.notebook-liked-markdown-page-stripe-notebook-2
+  .cm-s-obsidian
+  .cm-scroller {
+  background: var(--stripe-notebook-stripe-color);
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      hsla(0, 0%, 100%, 0.025),
+      hsla(0, 0%, 100%, 0.025) 20px,
+      transparent 0,
+      transparent 60px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      hsla(0, 0%, 100%, 0.025),
+      hsla(0, 0%, 100%, 0.025) 20px,
+      transparent 0,
+      transparent 60px
+    );
+}

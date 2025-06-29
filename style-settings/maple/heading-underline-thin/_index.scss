@@ -1,0 +1,18 @@
+body.heading-h1-underline :is(h1, .HyperMD-header-1)::after {
+  height: var(--size-2-1);
+}
+body.heading-h2-underline :is(h2, .HyperMD-header-2)::after {
+  height: var(--size-2-1);
+}
+body.heading-h3-underline :is(h3, .HyperMD-header-3)::after {
+  height: var(--size-2-1);
+}
+body.heading-h4-underline :is(h4, .HyperMD-header-4)::after {
+  height: var(--size-2-1);
+}
+body.heading-h5-underline :is(h5, .HyperMD-header-5)::after {
+  height: var(--size-2-1);
+}
+body.heading-h6-underline :is(h6, .HyperMD-header-6)::after {
+  height: var(--size-2-1);
+}

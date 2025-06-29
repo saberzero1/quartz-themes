@@ -1,0 +1,9 @@
+.status-bar {
+  opacity: 0;
+  transition: var(--transition-03);
+}
+.status-bar:hover {
+  opacity: 1;
+  animation: slide-top 0.3s;
+  animation-direction: alternate;
+}

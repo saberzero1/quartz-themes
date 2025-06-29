@@ -1,6 +1,6 @@
-import convertCssColorsToRgbWithSass from "./color-convert.mjs"
-import * as fs from "fs"
-import * as path from "path"
+import convertCssColorsToRgbWithSass from "./color-convert.mjs";
+import * as fs from "fs";
+import * as path from "path";
 
 /**
  * Reads a JSON file from a specified folder and returns its content as a JavaScript object.
@@ -13,17 +13,17 @@ import * as path from "path"
 function readJsonFileAsDictionary(folderPath, fileName) {
   try {
     // Construct the full path to the JSON file
-    const filePath = path.join(folderPath, fileName)
+    const filePath = path.join(folderPath, fileName);
 
     // Read the file content
-    const fileContent = fs.readFileSync(filePath, "utf8")
+    const fileContent = fs.readFileSync(filePath, "utf8");
 
     // Parse the JSON content into a JavaScript object
-    const jsonObject = JSON.parse(fileContent)
+    const jsonObject = JSON.parse(fileContent);
 
-    return jsonObject
+    return jsonObject;
   } catch (error) {
-    throw new Error(`Unable to read or parse JSON file: ${error.message}`)
+    throw new Error(`Unable to read or parse JSON file: ${error.message}`);
   }
 }
 
@@ -37,17 +37,17 @@ function readJsonFileAsDictionary(folderPath, fileName) {
 function listFoldersInDirectory(dirPath) {
   try {
     // Read the directory contents
-    const items = fs.readdirSync(dirPath)
+    const items = fs.readdirSync(dirPath);
 
     // Filter out the items that are directories
     const folders = items.filter((item) => {
-      const itemPath = path.join(dirPath, item)
-      return fs.statSync(itemPath).isDirectory()
-    })
+      const itemPath = path.join(dirPath, item);
+      return fs.statSync(itemPath).isDirectory();
+    });
 
-    return folders
+    return folders;
   } catch (error) {
-    throw new Error(`Unable to access directory: ${error.message}`)
+    throw new Error(`Unable to access directory: ${error.message}`);
   }
 }
 
@@ -58,8 +58,8 @@ function listFoldersInDirectory(dirPath) {
  */
 function getCommandLineArgs() {
   // Remove the first two elements, which are the Node executable and the script file path
-  const args = process.argv.slice(2)
-  return args
+  const args = process.argv.slice(2);
+  return args;
 }
 
 /**
@@ -68,7 +68,7 @@ function getCommandLineArgs() {
  * @returns {string} The current working directory.
  */
 function getCurrentFolder() {
-  return process.cwd()
+  return process.cwd();
 }
 
 /**
@@ -80,7 +80,7 @@ function getCurrentFolder() {
  */
 function getValueFromDictionary(dictionary, key) {
   // Check if the key exists using the `in` operator and return the value or an empty string
-  return key in dictionary ? dictionary[key] : ""
+  return key in dictionary ? dictionary[key] : "";
 }
 
 /**
@@ -92,9 +92,9 @@ function getValueFromDictionary(dictionary, key) {
 function ensureDirectoryExists(folderPath) {
   try {
     // Create the directory if it does not exist, including parent directories if necessary
-    fs.mkdirSync(folderPath, { recursive: true })
+    fs.mkdirSync(folderPath, { recursive: true });
   } catch (error) {
-    throw new Error(`Unable to create directory: ${error.message}`)
+    throw new Error(`Unable to create directory: ${error.message}`);
   }
 }
 
@@ -107,25 +107,25 @@ function ensureDirectoryExists(folderPath) {
  */
 function sanitizeFilenamePreservingEmojis(input) {
   // Convert the string to lowercase
-  let sanitized = input.toLowerCase()
+  let sanitized = input.toLowerCase();
 
   // Replace spaces with hyphens
-  sanitized = sanitized.replace(/\s+/g, "-")
+  sanitized = sanitized.replace(/\s+/g, "-");
 
   // Replace accents
-  sanitized = sanitized.normalize("NFD")
+  sanitized = sanitized.normalize("NFD");
 
   // Remove invalid filename characters, preserving emojis and some valid characters
-  sanitized = sanitized.replace(/[^a-z0-9-_\p{Emoji}]/gu, "")
+  sanitized = sanitized.replace(/[^a-z0-9-_\p{Emoji}]/gu, "");
 
   // Remove duplicate hyphens
-  sanitized = sanitized.replace(/-+/gu, "-")
+  sanitized = sanitized.replace(/-+/gu, "-");
 
   // Remove hyphens from start and end
-  sanitized = sanitized.replace(/^-+/gu, "")
-  sanitized = sanitized.replace(/-+$/gu, "")
+  sanitized = sanitized.replace(/^-+/gu, "");
+  sanitized = sanitized.replace(/-+$/gu, "");
 
-  return sanitized
+  return sanitized;
 }
 
 /**
@@ -137,26 +137,26 @@ function sanitizeFilenamePreservingEmojis(input) {
 function clearDirectoryContents(dirPath) {
   try {
     // Read all items in the directory
-    const items = fs.readdirSync(dirPath)
+    const items = fs.readdirSync(dirPath);
 
     // Iterate over each item and remove it
     items.forEach((item) => {
-      const itemPath = path.join(dirPath, item)
-      const stats = fs.statSync(itemPath)
+      const itemPath = path.join(dirPath, item);
+      const stats = fs.statSync(itemPath);
 
       // Check if it's a directory
       if (stats.isDirectory()) {
         // Recursively remove directory content
-        clearDirectoryContents(itemPath)
+        clearDirectoryContents(itemPath);
         // Remove the directory itself
-        fs.rmdirSync(itemPath)
+        fs.rmdirSync(itemPath);
       } else {
         // Remove file
-        fs.unlinkSync(itemPath)
+        fs.unlinkSync(itemPath);
       }
-    })
+    });
   } catch (error) {
-    throw new Error(`Unable to clear directory: ${error.message}`)
+    throw new Error(`Unable to clear directory: ${error.message}`);
   }
 }
 
@@ -171,21 +171,23 @@ function copyFileToDirectory(sourceFilePath, targetDirectoryPath) {
   try {
     // Ensure the target directory exists
     if (!fs.existsSync(targetDirectoryPath)) {
-      throw new Error(`Target directory does not exist: ${targetDirectoryPath}`)
+      throw new Error(
+        `Target directory does not exist: ${targetDirectoryPath}`,
+      );
     }
 
     // Get the filename from the source path
-    const fileName = path.basename(sourceFilePath)
+    const fileName = path.basename(sourceFilePath);
 
     // Construct the target file path
-    const targetFilePath = path.join(targetDirectoryPath, fileName)
+    const targetFilePath = path.join(targetDirectoryPath, fileName);
 
     // Copy the file to the target directory
-    fs.copyFileSync(sourceFilePath, targetFilePath)
+    fs.copyFileSync(sourceFilePath, targetFilePath);
 
     //console.log(`File successfully copied to '${targetFilePath}'`);
   } catch (error) {
-    throw new Error(`Unable to copy file: ${error.message}`)
+    throw new Error(`Unable to copy file: ${error.message}`);
   }
 }
 
@@ -200,17 +202,19 @@ function copyFileToDirectory(sourceFilePath, targetDirectoryPath) {
 function replaceInFile(filePath, targetString, replacementString) {
   try {
     // Read the file content
-    const fileContent = fs.readFileSync(filePath, "utf8")
+    const fileContent = fs.readFileSync(filePath, "utf8");
 
     // Replace all occurrences of the target string with the replacement string
-    const modifiedContent = fileContent.split(targetString).join(replacementString)
+    const modifiedContent = fileContent
+      .split(targetString)
+      .join(replacementString);
 
     // Write the modified content back to the file
-    fs.writeFileSync(filePath, modifiedContent, "utf8")
+    fs.writeFileSync(filePath, modifiedContent, "utf8");
 
     //console.log(`Replaced all occurrences of "${targetString}" with "${replacementString}" in '${filePath}'`);
   } catch (error) {
-    throw new Error(`Unable to process file: ${error.message}`)
+    throw new Error(`Unable to process file: ${error.message}`);
   }
 }
 
@@ -225,17 +229,17 @@ function replaceInFile(filePath, targetString, replacementString) {
 function findAllMatchesInFile(filePath, regexString) {
   try {
     // Read the file content
-    const fileContent = fs.readFileSync(filePath, "utf8")
+    const fileContent = fs.readFileSync(filePath, "utf8");
 
     // Use match to find all matches in the file content
-    const matches = fileContent.matchAll(regexString)
+    const matches = fileContent.matchAll(regexString);
 
-    console.log([matches].length)
+    console.log([matches].length);
 
     // Return the matches or an empty array if no matches are found
-    return matches !== undefined && matches.length > 0 ? [...matches][0] : []
+    return matches !== undefined && matches.length > 0 ? [...matches][0] : [];
   } catch (error) {
-    throw new Error(`Unable to process file: ${error.message}`)
+    throw new Error(`Unable to process file: ${error.message}`);
   }
 }
 
@@ -251,18 +255,18 @@ function findAllMatchesInFile(filePath, regexString) {
 function findAllMatchesAsString(filePath, regexString) {
   try {
     // Read the file content
-    const fileContent = fs.readFileSync(filePath, "utf8")
+    const fileContent = fs.readFileSync(filePath, "utf8");
 
     // Create a regular expression object with the global flag to find all matches
     //const regex = new RegExp(regexString, 'gmsv');
 
     // Use match to find all matches in the file content
-    const matches = fileContent.match(regexString)
+    const matches = fileContent.match(regexString);
 
     // Convert the matches array to a newline-separated string (or return an empty string if no matches)
-    return matches ? matches.join("\n") : ""
+    return matches ? matches.join("\n") : "";
   } catch (error) {
-    throw new Error(`Unable to process file: ${error.message}`)
+    throw new Error(`Unable to process file: ${error.message}`);
   }
 }
 
@@ -277,31 +281,35 @@ function findAllMatchesAsString(filePath, regexString) {
 function removeNonVariableLines(cssString) {
   try {
     // Read the string as an array of lines
-    const lines = cssString.split("\n")
+    const lines = cssString.split("\n");
 
     // Remove comments
-    const linesCleared = lines.map((line) => line.replaceAll(/\/\*.*?\*\//g, ""))
+    const linesCleared = lines.map((line) =>
+      line.replaceAll(/\/\*.*?\*\//g, ""),
+    );
 
     // Filter lines to include only those that match the CSS variable pattern
     const variableLines = linesCleared.filter(
       (line) => line.trim().startsWith("--") && line.trim().endsWith(";"),
-    )
+    );
 
     // Filter lines that end with invalid colors (like color: #;)
-    const emptyColorLines = variableLines.filter((line) => !line.trim().endsWith("#;"))
+    const emptyColorLines = variableLines.filter(
+      (line) => !line.trim().endsWith("#;"),
+    );
 
     // Join the filtered lines back into a single string
-    const updatedContent = emptyColorLines.join("\n")
+    const updatedContent = emptyColorLines.join("\n");
 
     // Convert colors to rgb
-    const convertedContent = convertCssColorsToRgbWithSass(updatedContent)
+    const convertedContent = convertCssColorsToRgbWithSass(updatedContent);
 
     // Write the updated content back to the file
-    return convertedContent
+    return convertedContent;
 
     //console.log(`Removed non-variable lines from '${filePath}'`);
   } catch (error) {
-    throw new Error(`Unable to process file: ${error.message}`)
+    throw new Error(`Unable to process file: ${error.message}`);
   }
 }
 
@@ -318,37 +326,39 @@ function removeNonVariableLines(cssString) {
 
 // Actual script
 // STEP 1
-const currentFolder = getCurrentFolder()
+const currentFolder = getCurrentFolder();
 //console.log("Current working directory:", currentFolder)
 
-const args = getCommandLineArgs()
+const args = getCommandLineArgs();
 //console.log("Command line arguments:", args)
 
-const obsidianFolder = "./obsidian"
-const folders = listFoldersInDirectory(obsidianFolder)
+const obsidianFolder = "./obsidian";
+const folders = listFoldersInDirectory(obsidianFolder);
 //console.log(folders.length)
 
 // STEP 2
-let manifestCollection = []
+let manifestCollection = [];
 folders.forEach((folder) => {
-  manifestCollection.push(readJsonFileAsDictionary(`${obsidianFolder}/${folder}`, "manifest.json"))
-})
+  manifestCollection.push(
+    readJsonFileAsDictionary(`${obsidianFolder}/${folder}`, "manifest.json"),
+  );
+});
 //console.log(manifestCollection)
 
 // STEP 3
-clearDirectoryContents(`./themes`)
+clearDirectoryContents(`./themes`);
 
 manifestCollection.forEach((manifest) => {
   ensureDirectoryExists(
     `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}`,
-  )
+  );
   // INIT ONLY
   if (args[0] === "INIT") {
     ensureDirectoryExists(
       `./extras/themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}`,
-    )
+    );
   }
-})
+});
 
 // STEP 4
 // README.md
@@ -356,8 +366,8 @@ manifestCollection.forEach((manifest) => {
   copyFileToDirectory(
     `./templates/README.md`,
     `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}`,
-  )
-})
+  );
+});
 
 // _index.scss
 manifestCollection.forEach((manifest) => {
@@ -365,38 +375,38 @@ manifestCollection.forEach((manifest) => {
     `./templates/_index.scss`,
     `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}`,
     // INIT ONLY
-  )
+  );
   if (args[0] === "INIT") {
     copyFileToDirectory(
       `./extras/_index.scss`,
       `./extras/themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}`,
-    )
+    );
   }
-})
+});
 
 // _fonts.scss
 manifestCollection.forEach((manifest) => {
   copyFileToDirectory(
     `./templates/_fonts.scss`,
     `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}`,
-  )
-})
+  );
+});
 
 // _dark.scss
 manifestCollection.forEach((manifest) => {
   copyFileToDirectory(
     `./templates/_dark.scss`,
     `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}`,
-  )
-})
+  );
+});
 
 // _light.scss
 manifestCollection.forEach((manifest) => {
   copyFileToDirectory(
     `./templates/_light.scss`,
     `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}`,
-  )
-})
+  );
+});
 
 // STEP 5
 // README.md
@@ -405,15 +415,15 @@ manifestCollection.forEach((manifest) => {
     `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/README.md`,
     "%OBSIDIAN_THEME_NAME%",
     getValueFromDictionary(manifest, "name"),
-  )
-})
+  );
+});
 manifestCollection.forEach((manifest) => {
   replaceInFile(
     `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/README.md`,
     "%OBSIDIAN_THEME_NAME_SANITIZED%",
     sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name")),
-  )
-})
+  );
+});
 manifestCollection.forEach((manifest) => {
   replaceInFile(
     `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/README.md`,
@@ -421,137 +431,143 @@ manifestCollection.forEach((manifest) => {
     getValueFromDictionary(manifest, "authorUrl") !== ""
       ? getValueFromDictionary(manifest, "authorUrl")
       : "#",
-  )
-})
+  );
+});
 
 // STEP 6
 // _index.scss
-const bodyRegex = new RegExp(/^body.*?\{([^\}]*?)\}$/, "gmsv")
-const rootRegex = new RegExp(/^:root.*?\{([^\}]*?)\}$/, "gmsv")
-const fontRegex = new RegExp(/(@font-face\s?\{.*?\})/, "gmsv")
-const darkRegex = new RegExp(/^(?:\.theme-dark,|\.theme-dark\s?\{)([^\}]*?)\}$/, "gmsv")
-const lightRegex = new RegExp(/^(?:\.theme-light,|\.theme-light\s?\{)([^\}]*?)\}$/, "gmsv")
-let hasDarkOptions = true
-let hasLightOptions = true
+const bodyRegex = new RegExp(/^body.*?\{([^\}]*?)\}$/, "gmsv");
+const rootRegex = new RegExp(/^:root.*?\{([^\}]*?)\}$/, "gmsv");
+const fontRegex = new RegExp(/(@font-face\s?\{.*?\})/, "gmsv");
+const darkRegex = new RegExp(
+  /^(?:\.theme-dark,|\.theme-dark\s?\{)([^\}]*?)\}$/,
+  "gmsv",
+);
+const lightRegex = new RegExp(
+  /^(?:\.theme-light,|\.theme-light\s?\{)([^\}]*?)\}$/,
+  "gmsv",
+);
+let hasDarkOptions = true;
+let hasLightOptions = true;
 manifestCollection.forEach((manifest) => {
   replaceInFile(
     `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
     `//OVERRIDES`,
     `@use "overrides";`,
-  )
-})
+  );
+});
 manifestCollection.forEach((manifest) => {
   const bodyValue = findAllMatchesAsString(
     `./obsidian/${getValueFromDictionary(manifest, "name")}/theme.css`,
     bodyRegex,
-  )
-  const bodyValue2 = bodyValue.replace(bodyRegex, "$1")
+  );
+  const bodyValue2 = bodyValue.replace(bodyRegex, "$1");
   replaceInFile(
     `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
     `//BODY`,
     removeNonVariableLines(bodyValue2),
-  )
-})
+  );
+});
 manifestCollection.forEach((manifest) => {
   const rootValue = findAllMatchesAsString(
     `./obsidian/${getValueFromDictionary(manifest, "name")}/theme.css`,
     rootRegex,
-  )
-  const rootValue2 = rootValue.replace(rootRegex, "$1")
+  );
+  const rootValue2 = rootValue.replace(rootRegex, "$1");
   replaceInFile(
     `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
     `//ROOT`,
     removeNonVariableLines(rootValue2),
-  )
-})
+  );
+});
 
 // _fonts.scss
 manifestCollection.forEach((manifest) => {
   const fontValue = findAllMatchesAsString(
     `./obsidian/${getValueFromDictionary(manifest, "name")}/theme.css`,
     fontRegex,
-  )
-  const fontValue2 = fontValue.replace(fontRegex, "$1")
+  );
+  const fontValue2 = fontValue.replace(fontRegex, "$1");
   replaceInFile(
     `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_fonts.scss`,
     `//FONTS`,
     fontValue2,
-  )
-})
+  );
+});
 
 // _dark.scss and _light.scss
 manifestCollection.forEach((manifest) => {
   const darkValue = findAllMatchesAsString(
     `./obsidian/${getValueFromDictionary(manifest, "name")}/theme.css`,
     darkRegex,
-  )
+  );
   const lightValue = findAllMatchesAsString(
     `./obsidian/${getValueFromDictionary(manifest, "name")}/theme.css`,
     lightRegex,
-  )
-  hasDarkOptions = darkValue !== ""
-  hasLightOptions = lightValue !== ""
-  const darkValue2 = darkValue.replace(darkRegex, "$1")
-  const lightValue2 = lightValue.replace(lightRegex, "$1")
+  );
+  hasDarkOptions = darkValue !== "";
+  hasLightOptions = lightValue !== "";
+  const darkValue2 = darkValue.replace(darkRegex, "$1");
+  const lightValue2 = lightValue.replace(lightRegex, "$1");
   if (hasDarkOptions) {
     replaceInFile(
       `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
       `//DARK`,
       removeNonVariableLines(darkValue2),
-    )
+    );
     replaceInFile(
       `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_dark.scss`,
       `//DARK`,
       removeNonVariableLines(darkValue2),
-    )
+    );
   }
   if (hasLightOptions) {
     replaceInFile(
       `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
       `//LIGHT`,
       removeNonVariableLines(lightValue2),
-    )
+    );
     replaceInFile(
       `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_light.scss`,
       `//LIGHT`,
       removeNonVariableLines(lightValue2),
-    )
+    );
   }
   replaceInFile(
     `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
     `//DARK`,
     removeNonVariableLines(lightValue2),
-  )
+  );
   replaceInFile(
     `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_light.scss`,
     `//DARK`,
     removeNonVariableLines(lightValue2),
-  )
+  );
   replaceInFile(
     `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
     `//LIGHT`,
     removeNonVariableLines(darkValue2),
-  )
+  );
   replaceInFile(
     `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_dark.scss`,
     `//LIGHT`,
     removeNonVariableLines(darkValue2),
-  )
+  );
 
   // Remove remaining comments
   replaceInFile(
     `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_index.scss`,
     /\/\/(?:LIGHT|DARK|ROOT|BODY|FONTS|OVERRIDES)/g,
     "",
-  )
+  );
   replaceInFile(
     `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_dark.scss`,
     /\/\/(?:LIGHT|DARK|ROOT|BODY|FONTS|OVERRIDES)/g,
     "",
-  )
+  );
   replaceInFile(
     `./themes/${sanitizeFilenamePreservingEmojis(getValueFromDictionary(manifest, "name"))}/_light.scss`,
     /\/\/(?:LIGHT|DARK|ROOT|BODY|FONTS|OVERRIDES)/g,
     "",
-  )
-})
+  );
+});

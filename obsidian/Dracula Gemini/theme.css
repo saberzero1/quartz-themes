@@ -29,7 +29,9 @@ body {
 }
 
 body.theme-dark {
-  --color-base-00: var(--color-dracula-background); /* a.k.a. hsl(231, 15%, 18%) */
+  --color-base-00: var(
+    --color-dracula-background
+  ); /* a.k.a. hsl(231, 15%, 18%) */
   --color-base-10: hsl(231, 15%, 22%);
   --color-base-20: hsl(231, 15%, 24%);
   --color-base-25: hsl(231, 15%, 27%);
@@ -39,7 +41,9 @@ body.theme-dark {
   --color-base-50: hsl(231, 15%, 50%);
   --color-base-60: hsl(231, 15%, 65%);
   --color-base-70: hsl(231, 15%, 84%);
-  --color-base-100: var(--color-dracula-foreground); /* a.k.a. hsl(60, 30%, 96%) */
+  --color-base-100: var(
+    --color-dracula-foreground
+  ); /* a.k.a. hsl(60, 30%, 96%) */
 
   --text-selection: var(--color-dracula-selection);
 
@@ -48,9 +52,21 @@ body.theme-dark {
 }
 
 body.theme-dark.is-mobile {
-  --color-base-00: hsl(231, 15%, 12%); /* 6pp lower than Desktop, default was #000000 */
-  --color-base-10: hsl(231, 15%, 17%); /* 5pp lower than Desktop, default was #121212 */
-  --color-base-20: hsl(231, 15%, 20%); /* 4pp lower than Desktop, default was #1e1e1e */
+  --color-base-00: hsl(
+    231,
+    15%,
+    12%
+  ); /* 6pp lower than Desktop, default was #000000 */
+  --color-base-10: hsl(
+    231,
+    15%,
+    17%
+  ); /* 5pp lower than Desktop, default was #121212 */
+  --color-base-20: hsl(
+    231,
+    15%,
+    20%
+  ); /* 4pp lower than Desktop, default was #1e1e1e */
 }
 
 /*
@@ -112,7 +128,9 @@ body {
 */
 
 body {
-  --code-size: var(--font-small); /* `small` is a bit bigger than code's default `smaller` */
+  --code-size: var(
+    --font-small
+  ); /* `small` is a bit bigger than code's default `smaller` */
 
   --code-normal: var(--text-muted); /* --text-muted */
   --code-comment: var(--color-dracula-comment); /* --text-faint */
@@ -387,9 +405,12 @@ body {
 /* Preview UL-task top-level lists */
 .markdown-preview-view :not(li) > ul.contains-task-list {
   --list-ul-bullet-width: 0.875em; /* 14px, the width of `- `, hopefully; see declaration of --list-ul-bullet-spacing above */
-  --list-checkbox-width: var(--list-checkbox-margin-left) + var(--checkbox-size) +
-    var(--list-checkbox-margin-right);
-  margin-left: calc(var(--list-ul-bullet-width) + var(--list-checkbox-width) - var(--list-indent));
+  --list-checkbox-width: var(--list-checkbox-margin-left) +
+    var(--checkbox-size) + var(--list-checkbox-margin-right);
+  margin-left: calc(
+    var(--list-ul-bullet-width) + var(--list-checkbox-width) -
+      var(--list-indent)
+  );
 }
 
 /* Preview OL top-level lists */
@@ -405,7 +426,9 @@ body {
 
 /* Preview UL task checkbox */
 .markdown-preview-view ul.contains-task-list .task-list-item-checkbox {
-  margin-inline-start: calc(-1 * (var(--checkbox-size) + var(--list-checkbox-margin-right)));
+  margin-inline-start: calc(
+    -1 * (var(--checkbox-size) + var(--list-checkbox-margin-right))
+  );
   margin-right: var(--list-checkbox-margin-right);
 }
 
@@ -432,7 +455,9 @@ ol > li.task-list-item[data-task="X"] {
 /* Empty line in Source is a separator, and should look smaller than a line with text */
 .markdown-source-view .cm-line:has(> br:only-child) {
   height: var(--empty-line-height);
-  line-height: var(--empty-line-height); /* to vertically align the text cursor in the empty line */
+  line-height: var(
+    --empty-line-height
+  ); /* to vertically align the text cursor in the empty line */
 }
 
 /* Empty line after paragraphs, to align Preview with Source */

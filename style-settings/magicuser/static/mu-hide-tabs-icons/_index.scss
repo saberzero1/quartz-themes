@@ -1,0 +1,8 @@
+body .workspace-tabs.mod-stacked .workspace-tab-header-inner-icon,
+body
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  .workspace-tab-header-inner-icon {
+  display: none !important;
+}

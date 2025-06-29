@@ -1,0 +1,141 @@
+:is(
+  body:not(
+      .pt-disable-mark-highlight-styling
+    ).theme-dark.pt-highlight-style-default-dt
+    mark[class].mark-default,
+  body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt
+    mark[class].mark-default,
+  body:not(
+      .pt-disable-mark-highlight-styling
+    ).theme-dark.pt-highlight-style-border-dt
+    mark[class].mark-default,
+  body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt
+    mark[class].mark-default,
+  body:not(
+      .pt-disable-mark-highlight-styling
+    ).theme-dark.pt-highlight-style-filled-dt
+    mark[class].mark-default,
+  body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt
+    mark[class].mark-default,
+  body:not(
+      .pt-disable-mark-highlight-styling
+    ).theme-dark.pt-highlight-style-borderandfilled-dt
+    mark[class].mark-default,
+  body:not(
+      .pt-disable-mark-highlight-styling
+    ).pt-highlight-style-borderandfilled-lt
+    mark[class].mark-default
+) {
+  padding: 0;
+  font-size: 1em;
+  background-color: unset;
+  border: unset;
+  opacity: 1;
+}
+:is(
+  body:not(
+      .pt-disable-mark-highlight-styling
+    ).theme-dark.pt-highlight-style-default-dt
+    mark[class].mark-border,
+  body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt
+    mark[class].mark-border,
+  body:not(
+      .pt-disable-mark-highlight-styling
+    ).theme-dark.pt-highlight-style-border-dt
+    mark[class].mark-border,
+  body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt
+    mark[class].mark-border,
+  body:not(
+      .pt-disable-mark-highlight-styling
+    ).theme-dark.pt-highlight-style-filled-dt
+    mark[class].mark-border,
+  body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt
+    mark[class].mark-border,
+  body:not(
+      .pt-disable-mark-highlight-styling
+    ).theme-dark.pt-highlight-style-borderandfilled-dt
+    mark[class].mark-border,
+  body:not(
+      .pt-disable-mark-highlight-styling
+    ).pt-highlight-style-borderandfilled-lt
+    mark[class].mark-border
+) {
+  padding: 0 3px;
+  font-size: var(--font-smallest);
+  background-color: unset;
+  border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}
+:is(
+  body:not(
+      .pt-disable-mark-highlight-styling
+    ).theme-dark.pt-highlight-style-filled-dt
+    mark[class],
+  body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt
+    mark[class]
+),
+:is(
+  body:not(
+      .pt-disable-mark-highlight-styling
+    ).theme-dark.pt-highlight-style-default-dt
+    mark[class].mark-filled,
+  body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt
+    mark[class].mark-filled,
+  body:not(
+      .pt-disable-mark-highlight-styling
+    ).theme-dark.pt-highlight-style-border-dt
+    mark[class].mark-filled,
+  body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt
+    mark[class].mark-filled,
+  body:not(
+      .pt-disable-mark-highlight-styling
+    ).theme-dark.pt-highlight-style-filled-dt
+    mark[class].mark-filled,
+  body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt
+    mark[class].mark-filled,
+  body:not(
+      .pt-disable-mark-highlight-styling
+    ).theme-dark.pt-highlight-style-borderandfilled-dt
+    mark[class].mark-filled,
+  body:not(
+      .pt-disable-mark-highlight-styling
+    ).pt-highlight-style-borderandfilled-lt
+    mark[class].mark-filled
+) {
+  padding: 0 3px;
+  font-size: var(--font-smallest);
+  background-color: var(--mark-highlight-base);
+  border: var(--accent-border-width) solid var(--mark-highlight-base);
+}
+:is(
+  body:not(
+      .pt-disable-mark-highlight-styling
+    ).theme-dark.pt-highlight-style-default-dt
+    mark[class].mark-borderandfilled,
+  body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-default-lt
+    mark[class].mark-borderandfilled,
+  body:not(
+      .pt-disable-mark-highlight-styling
+    ).theme-dark.pt-highlight-style-border-dt
+    mark[class].mark-borderandfilled,
+  body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-border-lt
+    mark[class].mark-borderandfilled,
+  body:not(
+      .pt-disable-mark-highlight-styling
+    ).theme-dark.pt-highlight-style-filled-dt
+    mark[class].mark-borderandfilled,
+  body:not(.pt-disable-mark-highlight-styling).pt-highlight-style-filled-lt
+    mark[class].mark-borderandfilled,
+  body:not(
+      .pt-disable-mark-highlight-styling
+    ).theme-dark.pt-highlight-style-borderandfilled-dt
+    mark[class].mark-borderandfilled,
+  body:not(
+      .pt-disable-mark-highlight-styling
+    ).pt-highlight-style-borderandfilled-lt
+    mark[class].mark-borderandfilled
+) {
+  padding: 0 3px;
+  font-size: var(--font-smallest);
+  background-color: var(--mark-highlight-base);
+  border: var(--accent-border-width) solid var(--mark-highlight-tint);
+}

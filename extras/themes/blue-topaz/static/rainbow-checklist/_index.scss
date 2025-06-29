@@ -1,0 +1,41 @@
+body.rainbow-checklist
+  .checklist-plugin-main:is(.markdown-preview-view, .markdown-rendered)
+  li:nth-of-type(7n + 1) {
+  background-color: var(--checklist-color-1);
+}
+
+body.rainbow-checklist
+  .checklist-plugin-main:is(.markdown-preview-view, .markdown-rendered)
+  li:nth-of-type(7n + 2) {
+  background-color: var(--checklist-color-2);
+}
+
+body.rainbow-checklist
+  .checklist-plugin-main:is(.markdown-preview-view, .markdown-rendered)
+  li:nth-of-type(7n + 3) {
+  background-color: var(--checklist-color-3);
+}
+
+body.rainbow-checklist
+  .checklist-plugin-main:is(.markdown-preview-view, .markdown-rendered)
+  li:nth-of-type(7n + 4) {
+  background-color: var(--checklist-color-4);
+}
+
+body.rainbow-checklist
+  .checklist-plugin-main:is(.markdown-preview-view, .markdown-rendered)
+  li:nth-of-type(7n + 5) {
+  background-color: var(--checklist-color-5);
+}
+
+body.rainbow-checklist
+  .checklist-plugin-main:is(.markdown-preview-view, .markdown-rendered)
+  li:nth-of-type(7n + 6) {
+  background-color: var(--checklist-color-6);
+}
+
+body.rainbow-checklist
+  .checklist-plugin-main:is(.markdown-preview-view, .markdown-rendered)
+  li:nth-of-type(7n + 7) {
+  background-color: var(--checklist-color-7);
+}

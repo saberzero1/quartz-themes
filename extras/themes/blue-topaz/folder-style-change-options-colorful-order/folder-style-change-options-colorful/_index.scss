@@ -1,0 +1,203 @@
+body.bt-toggle-colorful-folder.folder-style-change-options-colorful-order
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder
+  .nav-file-title {
+  color: var(--FoldText);
+}
+
+body.bt-toggle-colorful-folder.folder-style-change-options-colorful-order
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder
+  .nav-folder-title.is-active,
+body.bt-toggle-colorful-folder.folder-style-change-options-colorful-order
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder
+  .nav-folder-title:hover {
+  font-weight: bold;
+  filter: saturate(150%);
+}
+
+body.bt-toggle-colorful-folder.folder-style-change-options-colorful-order
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(12n + 2)
+  .nav-folder-title,
+body.bt-toggle-colorful-folder.folder-style-change-options-colorful-order
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(12n + 2)
+  .nav-folder-title
+  + .nav-folder-children {
+  --tab-color: var(--Fold0);
+}
+
+body.bt-toggle-colorful-folder.folder-style-change-options-colorful-order
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(12n + 3)
+  .nav-folder-title,
+body.bt-toggle-colorful-folder.folder-style-change-options-colorful-order
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(12n + 3)
+  .nav-folder-title
+  + .nav-folder-children {
+  --tab-color: var(--Fold1);
+}
+
+body.bt-toggle-colorful-folder.folder-style-change-options-colorful-order
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(12n + 4)
+  .nav-folder-title,
+body.bt-toggle-colorful-folder.folder-style-change-options-colorful-order
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(12n + 4)
+  .nav-folder-title
+  + .nav-folder-children {
+  --tab-color: var(--Fold2);
+}
+
+body.bt-toggle-colorful-folder.folder-style-change-options-colorful-order
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(12n + 5)
+  .nav-folder-title,
+body.bt-toggle-colorful-folder.folder-style-change-options-colorful-order
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(12n + 5)
+  .nav-folder-title
+  + .nav-folder-children {
+  --tab-color: var(--Fold3);
+}
+
+body.bt-toggle-colorful-folder.folder-style-change-options-colorful-order
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(12n + 6)
+  .nav-folder-title,
+body.bt-toggle-colorful-folder.folder-style-change-options-colorful-order
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(12n + 6)
+  .nav-folder-title
+  + .nav-folder-children {
+  --tab-color: var(--Fold4);
+}
+
+body.bt-toggle-colorful-folder.folder-style-change-options-colorful-order
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(12n + 7)
+  .nav-folder-title,
+body.bt-toggle-colorful-folder.folder-style-change-options-colorful-order
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(12n + 7)
+  .nav-folder-title
+  + .nav-folder-children {
+  --tab-color: var(--Fold5);
+}
+
+body.bt-toggle-colorful-folder.folder-style-change-options-colorful-order
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(12n + 8)
+  .nav-folder-title,
+body.bt-toggle-colorful-folder.folder-style-change-options-colorful-order
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(12n + 8)
+  .nav-folder-title
+  + .nav-folder-children {
+  --tab-color: var(--Fold6);
+}
+
+body.bt-toggle-colorful-folder.folder-style-change-options-colorful-order
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(12n + 9)
+  .nav-folder-title,
+body.bt-toggle-colorful-folder.folder-style-change-options-colorful-order
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(12n + 9)
+  .nav-folder-title
+  + .nav-folder-children {
+  --tab-color: var(--Fold7);
+}
+
+body.bt-toggle-colorful-folder.folder-style-change-options-colorful-order
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(12n + 10)
+  .nav-folder-title,
+body.bt-toggle-colorful-folder.folder-style-change-options-colorful-order
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(12n + 10)
+  .nav-folder-title
+  + .nav-folder-children {
+  --tab-color: var(--Fold8);
+}
+
+body.bt-toggle-colorful-folder.folder-style-change-options-colorful-order
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(12n + 11)
+  .nav-folder-title,
+body.bt-toggle-colorful-folder.folder-style-change-options-colorful-order
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(12n + 11)
+  .nav-folder-title
+  + .nav-folder-children {
+  --tab-color: var(--Fold9);
+}
+
+body.bt-toggle-colorful-folder.folder-style-change-options-colorful-order
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(12n + 12)
+  .nav-folder-title,
+body.bt-toggle-colorful-folder.folder-style-change-options-colorful-order
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(12n + 12)
+  .nav-folder-title
+  + .nav-folder-children {
+  --tab-color: var(--FoldA);
+}
+
+body.bt-toggle-colorful-folder.folder-style-change-options-colorful-order
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(12n + 13)
+  .nav-folder-title,
+body.bt-toggle-colorful-folder.folder-style-change-options-colorful-order
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(12n + 13)
+  .nav-folder-title
+  + .nav-folder-children {
+  --tab-color: var(--FoldB);
+}
+
+body.bt-toggle-colorful-folder.folder-colorful-custom
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder
+  .nav-folder-title,
+body.bt-toggle-colorful-folder.folder-colorful-custom
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder
+  .nav-folder-title
+  + .nav-folder-children {
+  background-color: var(--folder-colorful-custom-color);
+}

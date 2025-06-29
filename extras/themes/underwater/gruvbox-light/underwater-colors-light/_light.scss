@@ -1,0 +1,39 @@
+.gruvbox-light {
+  /*PALETTE*/
+  --love-rgb: 204, 36, 29;
+  /*red*/
+  --gold-rgb: 215, 153, 33;
+  /*yellow*/
+  --rose-rgb: 152, 151, 26;
+  /*green*/
+  --pine-rgb: 69, 133, 136;
+  /*blue*/
+  --foam-rgb: 104, 157, 106;
+  /*aqua*/
+  --iris-rgb: 177, 98, 134;
+  /*purple*/
+  --base: #ebdbb2;
+  /*bg1*/
+  --surface-rgb: 251, 241, 199;
+  /*bg*/
+  --overlay: #f2e5bc;
+  /*bg0_s*/
+  --muted: #7c6f54;
+  /*fg4*/
+  --subtle: #504945;
+  /*fg2*/
+  --text: #3c3836;
+  /*fg*/
+  --highlight-low: #d5c4a1;
+  /*bg2*/
+  --highlight-med-rgb: 189, 174, 147;
+  /*bg3*/
+  --highlight-high: #a89984;
+  /*bg4*/
+  /*override accent color !*/
+  --accent-h: 122;
+  --accent-s: 22%;
+  --accent-l: 51%;
+  --color-accent-hsl: 122, 22%, 51%;
+  /*aqua*/
+}

@@ -1,0 +1,4 @@
+body:not(.mod-windows):not(.is-mobile).theme-light .vertical-tab-header,
+body.windows-mode-off:not(.is-mobile).theme-light .vertical-tab-header {
+  background-color: var(--color-base-30);
+}

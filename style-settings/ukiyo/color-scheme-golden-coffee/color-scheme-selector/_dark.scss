@@ -1,0 +1,31 @@
+.color-scheme-golden-coffee:not(.separate-color-scheme).theme-dark,
+.color-scheme-golden-coffee:not(.separate-color-scheme).theme-light {
+  --color-base-35: var(--color-base-30);
+  --background-modifier-message: #2c1e14;
+  --color-accent-1: var(--color-accent);
+  --background-modifier-form-field: var(--color-base-25);
+  --interactive-normal: var(--color-base-30);
+  --interactive-hover: var(--color-base-35);
+  --text-highlight-bg-active: var(--text-highlight-bg);
+}
+.color-scheme-golden-coffee:not(.separate-color-scheme).theme-dark {
+  --color-base-00: #402e22;
+  --color-base-05: #5f4c45;
+  --color-base-10: #4f3626;
+  --color-base-20: #473224;
+  --color-base-25: #583f2e;
+  --color-base-30: #5f4630;
+  --color-base-40: #644a33;
+  --color-base-50: #ac8b6e;
+  --color-base-70: #b9987c;
+  --color-base-100: #dfc2a0;
+  --color-accent: #e6bb57;
+  --color-accent-2: #f5ca6c;
+  --activeline: #5b3d2895;
+  --text-selection: #825f4795;
+  --color-bold: #ce631c;
+  --color-italic: #da9517;
+  --text-highlight-bg: #a0632666;
+  --heading-formatting-color: #e04242;
+  --in-between-background: #36261b;
+}

@@ -1,0 +1,9 @@
+.heading-color-override h1 > *,
+.heading-color-override h2 > *,
+.heading-color-override h3 > *,
+.heading-color-override h4 > *,
+.heading-color-override h5 > *,
+.heading-color-override h6 > *,
+.heading-color-override .cm-s-obsidian .cm-header > * {
+  color: var(--headers);
+}

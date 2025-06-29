@@ -1,0 +1,13 @@
+.titlebar-button-container {
+  display: none;
+}
+.workspace-tab-header-container,
+.view-header,
+.status-bar,
+.metadata-properties-heading,
+::-webkit-scrollbar {
+  display: none;
+}
+.workspace-tab-container {
+  margin-top: 14px;
+}

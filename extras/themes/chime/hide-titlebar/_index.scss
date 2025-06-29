@@ -1,0 +1,12 @@
+.hide-titlebar .view-header {
+  opacity: 0;
+  height: 1px;
+  transition:
+    height 0.1s,
+    opacity 0.25s;
+}
+
+.hide-titlebar .view-header:hover {
+  opacity: 1;
+  height: var(--header-height);
+}

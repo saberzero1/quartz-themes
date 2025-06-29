@@ -227,7 +227,12 @@ li {
   border-top: 1px solid;
   /*border-color: var(--background-modifier-border);*/
   /*border-image: linear-gradient(to right, var(--background-modifier-border), #4568f7, rgba(54, 76, 167, 0)); /*blue*/
-  border-image: linear-gradient(to right, #06d93f, #77f99b, rgba(6, 217, 63, 0.1));
+  border-image: linear-gradient(
+    to right,
+    #06d93f,
+    #77f99b,
+    rgba(6, 217, 63, 0.1)
+  );
   border-image-slice: 1;
   opacity: 0.5;
 }
@@ -241,7 +246,11 @@ li {
 /*Different blockquote border*/
 .markdown-preview-view blockquote {
   border: 1px solid;
-  border-image: linear-gradient(to right, #4568f7, rgba(54, 76, 167, 0.05)); /*blue test*/
+  border-image: linear-gradient(
+    to right,
+    #4568f7,
+    rgba(54, 76, 167, 0.05)
+  ); /*blue test*/
   /*border-image: linear-gradient(to right, rgba(6, 217, 63, 0.5), rgba(6, 217, 63, 0)); /*green test*/
   border-image-slice: 1;
   border-left-width: 2px;

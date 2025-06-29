@@ -1,0 +1,36 @@
+body.theme-dark,
+body.theme-light {
+  /* solarized */
+  --code-keyword: #cb4b16;
+  --code-atom: #d33682;
+  --code-number: #d33682;
+  --code-type: #6c71c4;
+  --code-def: #2aa198;
+  --code-property: #2aa198;
+  --code-variable: #839496;
+  --code-variable-2: #b58900;
+  --code-variable-3: #6c71c4;
+  --code-function: #82aaff;
+  --code-definition: #82aaff;
+  --code-callee: #89ddff;
+  --code-qualifier: #b58900;
+  --code-operator: #6c71c4;
+  --code-hr: #98e342;
+  --code-link: #93a1a1;
+  --code-error-bg: #ff5370;
+  --code-header: #586e75;
+  --code-builtin: #d33682;
+  --code-meta: #859900;
+  --code-matching-bracket: #859900;
+  --code-tag: #93a1a1;
+  --code-tag-in-comment: #ff5370;
+  --code-string-2: #b58900;
+  --code-bracket: #cb4b16;
+  --code-comment: #586e75;
+  --code-string: #859900;
+  --code-attribute: #2aa198;
+  --code-attribute-in-comment: #c792ea;
+  --background-code: #fdf6e3e1;
+  --code-active-line-background-color: #fffcf4;
+  --code-normal: #657b83;
+}

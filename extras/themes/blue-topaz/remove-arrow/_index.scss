@@ -1,0 +1,46 @@
+body.remove-file-icons.remove-arrow .nav-folder.mod-root {
+  padding-left: 4px;
+}
+
+body.remove-arrow .tree-item-self {
+  --icon-opacity: 0;
+}
+
+body.remove-arrow .tree-item-self .tree-item-icon {
+  --icon-opacity: 0;
+}
+
+body.remove-arrow:not(.default-icons):not(
+    .bt-toggle-colorful-folder.folder-style-change-options-colorful-tab-liked
+  )
+  .nav-folder-collapse-indicator::before {
+  display: none;
+}
+
+body.remove-arrow:not(.default-icons)
+  :not([class*="mk-tree"]).nav-folder-title-content {
+  margin-left: -18px;
+}
+
+body.remove-arrow:not(.default-icons)
+  .tree-item.nav-folder.mod-root
+  > .tree-item-self.nav-folder-title {
+  padding-left: 23px;
+  margin-left: -10px;
+}
+
+body.remove-arrow .nav-folder-title .iconize-icon {
+  margin: 0 22px 0 -18px !important;
+}
+
+body.bt-toggle-colorful-folder:is(
+    .folder-style-change-options-colorful,
+    .folder-style-change-options-colorful-order
+  )
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder
+  > .nav-folder-title
+  > .nav-folder-collapse-indicator {
+  display: none;
+}

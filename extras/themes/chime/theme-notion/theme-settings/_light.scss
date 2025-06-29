@@ -1,0 +1,76 @@
+.colorful-headings h1,
+.colorful-headings .HyperMD-header-1 {
+  background-color: rgba(var(--color-red-rgb), 0.13);
+  padding: 5px 10px 5px 10px;
+}
+
+.colorful-headings h2,
+.colorful-headings .HyperMD-header-2 {
+  background-color: rgba(var(--color-orange-rgb), 0.13);
+  padding: 5px 10px 5px 10px;
+}
+
+.colorful-headings h3,
+.colorful-headings .HyperMD-header-3 {
+  background-color: rgba(var(--color-yellow-rgb), 0.15);
+  padding: 5px 10px 5px 10px;
+}
+
+.colorful-headings h4,
+.colorful-headings .HyperMD-header-4 {
+  background-color: rgba(var(--color-green-rgb), 0.13);
+  padding: 5px 10px 5px 10px;
+}
+
+.colorful-headings h5,
+.colorful-headings .HyperMD-header-5 {
+  background-color: rgba(var(--color-blue-rgb), 0.13);
+  padding: 3px 10px 3px 10px;
+}
+
+.colorful-headings h6,
+.colorful-headings .HyperMD-header-6 {
+  background-color: rgba(var(--color-purple-rgb), 0.13);
+  padding: 3px 10px 3px 10px;
+}
+
+.theme-light .callout {
+  background-color: rgba(var(--callout-color), 0.1);
+}
+
+.theme-light {
+  color-scheme: light;
+  --highlight-mix-blend-mode: darken;
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --color-base-00: #ffffff;
+  --color-base-05: #f5f5f5;
+  --color-base-10: #f0f0f0;
+  --color-base-20: #f5f5f5;
+  --color-base-25: #e1e1e1;
+  --color-base-30: #cecece;
+  --color-base-35: #c7c7c7;
+  --color-base-40: #afafaf;
+  --color-base-50: #989898;
+  --color-base-60: #7b7b7b;
+  --color-base-70: #5f5f5f;
+  --color-base-100: #000000;
+  --color-red-rgb: 212, 76, 71;
+  --color-red: #d44c47;
+  --color-green-rgb: 79, 131, 68;
+  --color-green: #4f8344;
+  --color-orange-rgb: 217, 115, 13;
+  --color-orange: #d9730d;
+  --color-yellow-rgb: 203, 145, 47;
+  --color-yellow: #cb912f;
+  --color-cyan-rgb: 88, 148, 138;
+  --color-cyan: #58948a;
+  --color-blue-rgb: 51, 126, 169;
+  --color-blue: #337ea9;
+  --color-purple-rgb: 144, 101, 176;
+  --color-purple: #9065b0;
+  --color-pink-rgb: 193, 76, 138;
+  --color-pink: #c14c8a;
+  --color-gray-rgb: 245, 245, 245;
+  --color-gray: #f2f2f2;
+}

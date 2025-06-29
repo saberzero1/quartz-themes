@@ -1,0 +1,48 @@
+body.full-width-dvtable
+  .markdown-source-view.mod-cm6.is-readable-line-width
+  .cm-contentContainer
+  > div
+  > div.cm-preview-code-block:not(.admonition-parent),
+body.full-width-dvtable
+  .markdown-source-view.mod-cm6.is-readable-line-width
+  .cm-contentContainer
+  > div
+  > div.cm-preview-code-block
+  > .block-language-dataviewjs,
+body.full-width-dvtable
+  .markdown-source-view.mod-cm6.is-readable-line-width
+  .cm-contentContainer
+  > div
+  > div.cm-preview-code-block
+  > .block-language-dataview {
+  max-width: 100%;
+}
+
+body.full-width-dvtable
+  .markdown-source-view.mod-cm6.is-readable-line-width
+  .cm-contentContainer
+  > div
+  > div.cm-preview-code-block
+  > div[class^="block-language"]:not([class^="block-language-dataview"]) {
+  max-width: var(--file-line-width);
+  margin-inline: auto;
+}
+
+body.full-width-dvtable
+  .markdown-preview-view
+  .markdown-preview-sizer.markdown-preview-sizer
+  > div[data-block-language="dataview"],
+body.full-width-dvtable
+  .markdown-preview-view
+  .markdown-preview-sizer.markdown-preview-sizer
+  > div[data-block-language="dataviewjs"],
+body.full-width-dvtable
+  .markdown-preview-view
+  .markdown-preview-sizer.markdown-preview-sizer
+  > div:is(.el-lang-dataviewjs),
+body.full-width-dvtable
+  .markdown-preview-view
+  .markdown-preview-sizer.markdown-preview-sizer
+  > div:is(.el-lang-dataview) {
+  max-width: 100% !important;
+}

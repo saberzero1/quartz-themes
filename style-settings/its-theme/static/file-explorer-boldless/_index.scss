@@ -1,0 +1,8 @@
+:root,
+body {
+  --folder-weight: 500;
+  --nav-item-weight-hover: 500;
+}
+-hover {
+  --nav-item-weight-hover: inherit;
+}

@@ -1,0 +1,28 @@
+body.ribbon-default-style .workspace-ribbon {
+  max-height: 550px;
+  background-color: var(--background-secondary);
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  margin-bottom: 35px;
+}
+
+body.ribbon-default-style .workspace-ribbon.mod-left.is-collapsed,
+body.ribbon-default-style .workspace-ribbon.mod-left {
+  background-color: var(--background-secondary);
+  margin-top: 11%;
+  border-right: var(--background-modifier-border);
+  border-bottom: var(--background-modifier-border);
+  border-top: var(--background-modifier-border);
+}
+
+body.ribbon-default-style .workspace-ribbon .sidebar-toggle-button {
+  margin-top: 6%;
+  height: 50px;
+  background: var(--background-secondary);
+  border-right: var(--background-modifier-border);
+  border-bottom: var(--background-modifier-border);
+  border-top: var(--background-modifier-border);
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  margin-bottom: 50px;
+}

@@ -1,0 +1,36 @@
+body.visual-parity-enabled {
+  --p-spacing: calc(1.5 * var(--font-text-size));
+  --heading-spacing: calc(var(--p-spacing) * 1);
+  /* Fix hr elements */
+  .markdown-rendered hr {
+    margin-block: calc(
+      (
+          var(--font-text-size, 1rem) *
+            var(--line-height-normal) - var(--hr-thickness)
+        ) /
+        2 + var(--p-spacing)
+    );
+  }
+  /* Fix header top margins */
+  .is-live-preview .cm-content > .HyperMD-header {
+    padding-top: unset;
+  }
+  .markdown-source-view.mod-cm6 .cm-table-widget {
+    padding-block: 0;
+  }
+  /* Fix collapsed headers in live preview */
+  .HyperMD-header:has(> .is-collapsed) {
+    padding-block: 0 var(--p-spacing);
+  }
+  /* Fix blockquotes */
+  & :not(blockquote) + blockquote,
+  & .cm-line:not(.HyperMD-quote-1) + .HyperMD-quote-1,
+  & .HyperMD-quote-1:first-child {
+    padding-top: 0.25em !important;
+  }
+  & blockquote:has(+ :not(blockquote)),
+  & .HyperMD-quote-1:has(+ .cm-line:not(.HyperMD-quote-1)),
+  & .HyperMD-quote-1:last-child {
+    padding-bottom: 0.25em !important;
+  }
+}

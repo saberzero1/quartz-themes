@@ -1,0 +1,14 @@
+:root,
+body {
+  --table-white-space: normal;
+  .cards table.dataview tbody > tr > td {
+    white-space: normal;
+  }
+}
+.markdown-preview-view .table-view-table > tbody > tr > td,
+.markdown-source-view.mod-cm6 .table-view-table > tbody > tr > td,
+.markdown-source-view.mod-cm6 .table-view-table > thead > tr > th {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
