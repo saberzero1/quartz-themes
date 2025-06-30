@@ -14,8 +14,8 @@ jobs:
         os: [ubuntu-latest]
     runs-on: ${{ matrix.os }}
     permissions:
+      actions: write
       contents: write
-      workflows: write
     steps:
       - uses: actions/checkout@v4
         with:
