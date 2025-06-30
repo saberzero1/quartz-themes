@@ -1142,7 +1142,7 @@ For reference, check the Obsidian style settings repo
 .Fade.modal,
 .Fade.snw-ref-title-popover,
 .Fade.menu,
-.Fade.popover,
+/*.Fade.popover,*/
 .Fade.prompt,
 .Fade.workspace-split.mod-vertical.mod-root
   .workspace-tabs:not(.mod-stacked)

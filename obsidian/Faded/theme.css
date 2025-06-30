@@ -3254,9 +3254,7 @@ a.tag:hover {
   width: 800px;
   overflow: auto;
   /* padding:    0rem 2rem 2rem 2rem; */
-  animation:
-    FadeInWithDelay 3s ease-in forwards,
-    disablePointerTillVisible 3s ease-in forwards;
+  /*animation: FadeInWithDelay 3s ease-in forwards, disablePointerTillVisible 3s ease-in forwards;*/
   pointer-events: visible;
 }
 

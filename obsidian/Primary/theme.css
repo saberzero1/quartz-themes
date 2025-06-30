@@ -4925,7 +4925,7 @@ input.prompt-input:hover {
   border-bottom: var(--prompt-separator-border);
 }
 
-.popover,
+/* .popover, */
 .suggestion-container:not([data-popper-placement]),
 .suggestion-popover {
   animation: var(--anim-popup);

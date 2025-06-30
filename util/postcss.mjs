@@ -369,7 +369,7 @@ export function getCombinedThemeVariables(cssString, darkThemeSelector = ".theme
     })
   })
 
-  // Remove any variable that is not a `litgt-dark()` function
+  // Remove any variable that is not a `light-dark()` function
   for (const key in combinedVariables) {
     if (!combinedVariables[key].startsWith("light-dark(") && skippableProps.indexOf(key) === -1) {
       // If the variable is not a light-dark function, we remove it

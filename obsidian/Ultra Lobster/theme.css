@@ -6397,7 +6397,7 @@ div[aria-label="Help"]:hover {
 .modal,
 .snw-ref-title-popover,
 .menu,
-.popover,
+/* .popover, */
 .prompt,
 .workspace-split.mod-vertical.mod-root .workspace-tabs:not(.mod-stacked) {
   animation: 0.3s pop cubic-bezier(0.17, 0.89, 0.32, 1.27);

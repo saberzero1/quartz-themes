@@ -1405,9 +1405,11 @@ iframe {
   }
 }
 
+/*
 .popover {
   animation: fadeIn 1.5s;
 }
+*/
 
 /* tweak kanban settings */
 .kanban-plugin__lane-title {

@@ -21,6 +21,7 @@
   --background-primary: var(--color-base-00);
   --background-primary-alt: var(--color-base-10);
   --background-secondary: var(--color-base-20);
+  --background-secondary-alt: var(--color-base-05);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
   --background-modifier-border: var(--color-base-30);
@@ -31,6 +32,9 @@
   --background-modifier-error-hover: var(--color-red);
   --background-modifier-success-rgb: var(--color-green-rgb);
   --background-modifier-success: var(--color-green);
+
+  --button-secondary-bg-color: transparent;
+  --button-secondary-fg-color: var(--text-primary-color);
 
   --code-border-color: var(--background-modifier-border);
   --code-radius: var(--radius-s);
@@ -92,6 +96,9 @@ body {
   --background-modifier-error: var(--color-red);
   --background-modifier-error-hover: var(--color-red);
   --background-modifier-success-rgb: var(--color-green-rgb);
+
+  --button-secondary-bg-color: transparent;
+  --button-secondary-fg-color: var(--text-primary-color);
 
   --code-border-color: var(--background-modifier-border);
   --code-radius: var(--radius-s);
@@ -1029,6 +1036,9 @@ body {
   /* SEARCH */
   .search {
     & > .search-button {
+      background: var(--button-secondary-bg-color);
+      color: var(--button-secondary-fg-color);
+
       //%%SEARCH BUTTON%%
 
       font-size: 1rem;

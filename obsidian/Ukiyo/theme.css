@@ -1495,10 +1495,12 @@ ul ul ul ul ul ul ul ul ul ul .list-bullet::after {
   white-space: pre-wrap;
 }
 
+/*
 .popover {
   animation: scale-up var(--hover-faster-animation-duration)
     var(--cubic-animation);
 }
+*/
 
 .popover.hover-popover {
   width: 45vw;

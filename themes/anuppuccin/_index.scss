@@ -162,6 +162,8 @@ html[saved-theme="light"] {
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-border-focus: var(--color-base-40);
+  --button-secondary-bg-color: transparent;
+  --button-secondary-fg-color: var(--text-primary-color);
   --code-background: var(--background-primary-alt);
   --code-normal: var(--text-normal);
   --code-comment: var(--text-faint);
@@ -325,6 +327,8 @@ body {
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-border-focus: var(--color-base-40);
+  --button-secondary-bg-color: transparent;
+  --button-secondary-fg-color: var(--text-primary-color);
   --code-background: var(--background-primary-alt);
   --code-normal: var(--text-normal);
   --code-comment: var(--text-faint);
@@ -1352,6 +1356,8 @@ body {
   /* SEARCH */
   .search {
     & > .search-button {
+      background: var(--button-secondary-bg-color);
+      color: var(--button-secondary-fg-color);
       -webkit-app-region: no-drag;
       background: inherit;
       border: 1px solid transparent;
