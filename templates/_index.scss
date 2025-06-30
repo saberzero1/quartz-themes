@@ -471,6 +471,7 @@ body {
   --quartz-text-highlight: var(--text-highlight-bg, var(--background-modifier-hover)) !important;
 
   //%%WORKSPACE BACKGROUND ROOT%%
+  background-color: var(--background-primary);
   
   @media all and ($mobile) {
     div.flex-component > div:has(> button.readermode) {
@@ -486,11 +487,14 @@ body {
 
       //%%WORKSPACE BACKGROUND ROOT%%
 
+      background-color: var(--background-primary);
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
 
         //%%WORKSPACE BACKGROUND ROOT%%
+
+        background-color: var(--background-primary);
 
         content: " ";
         display: block;
