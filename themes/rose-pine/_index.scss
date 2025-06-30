@@ -1114,6 +1114,7 @@ body {
     .explorer-content {
       @media all and ($mobile) {
         background-color: light-dark(#faf4ed, #191724);
+        background-color: var(--background-primary);
         left: -1rem;
       }
       .folder-container {
