@@ -28,7 +28,7 @@ jobs:
         run: npm ci
       - name: "Recompile Themes"
         run: npm run compile
-      - name: "Format Themes
+      - name: "Format Themes"
         run: npm run format
       - name: "Push Themes"
         run: |
