@@ -1430,11 +1430,13 @@ body {
     position: fixed;
     z-index: 999;
     border: unset;
+    background-color: var(--background-primary);
     & .popover-inner {
       border: 1px solid light-dark(#8d8d8d, #6f6f6f);
       background-color: light-dark(#ffffff, #161616);
 
       border-radius: 0px;
+      background-color: var(--background-primary);
     }
   }
   /* BACKGROUNDS */

@@ -1425,11 +1425,13 @@ body {
     position: fixed;
     z-index: 999;
     border: unset;
+    background-color: var(--background-primary);
     & .popover-inner {
       border: 1px solid light-dark(#3b3f56, #3b3f56);
       background-color: #14141e;
 
       border-radius: 26px;
+      background-color: var(--background-primary);
     }
   }
   /* BACKGROUNDS */

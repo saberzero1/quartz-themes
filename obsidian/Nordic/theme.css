@@ -42,6 +42,14 @@
   --color-purple-rgb: 180, 142, 173;
   --color-blue: #6199bf;
   --color-blue-rgb: 97, 153, 191;
+
+  --h1-color: var(--color-red);
+  --h2-color: var(--color-orange);
+  --h3-color: var(--color-yellow);
+  --h4-color: var(--color-green);
+  --h5-color: var(--color-cyan);
+  --h6-color: var(--color-blue);
+
 }
 
 /* Avenir LT Std fonts */

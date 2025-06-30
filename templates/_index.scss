@@ -1169,6 +1169,7 @@ body {
     position: fixed;
     z-index: 999;
     border: unset;
+    background-color: var(--background-primary);
     & .popover-inner {
 
       //%%POPOVER BORDER%%
@@ -1177,6 +1178,7 @@ body {
       
       //%%POPOVER BORDER RADIUS%%
 
+      background-color: var(--background-primary);
     }
   }
 

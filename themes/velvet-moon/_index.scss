@@ -1305,11 +1305,13 @@ body {
     position: fixed;
     z-index: 999;
     border: unset;
+    background-color: var(--background-primary);
     & .popover-inner {
       border: 1px solid transparent;
       background-color: #0c0e18;
 
       border-radius: 12px;
+      background-color: var(--background-primary);
     }
   }
   /* BACKGROUNDS */

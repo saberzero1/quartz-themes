@@ -1313,11 +1313,13 @@ body {
     position: fixed;
     z-index: 999;
     border: unset;
+    background-color: var(--background-primary);
     & .popover-inner {
       border: 1px solid #5050c0;
       background-color: #150b55d6;
 
       border-radius: 20px;
+      background-color: var(--background-primary);
     }
   }
   /* BACKGROUNDS */
