@@ -203,7 +203,7 @@ body {
   --canvas-color-5: 97, 177, 191;
   --canvas-color-6: 149, 142, 180;
   --canvas-dot-pattern: #d8dee9;
-  --caret-color: #47586a;
+  --caret-color: #47596a;
   --checkbox-border-color: #4c566a;
   --checkbox-border-color-hover: #67819a;
   --checkbox-color: #81a1c1;
@@ -222,7 +222,7 @@ body {
   --code-function: #ebcb8b;
   --code-important: #d08770;
   --code-keyword: #b48ead;
-  --code-normal: #47586a;
+  --code-normal: #47596a;
   --code-operator: #bf616a;
   --code-property: #61b1bf;
   --code-punctuation: #67819a;
@@ -300,7 +300,7 @@ body {
   --file-line-width: 700px;
   --file-margins: 32px;
   --flair-background: #ffffff26;
-  --flair-color: #47586a;
+  --flair-color: #47596a;
   --font-black: 900;
   --font-bold: 700;
   --font-default:
@@ -372,7 +372,7 @@ body {
   --graph-node-focused: #a0bbd1;
   --graph-node-tag: #a3be8c;
   --graph-node-unresolved: #4c566a;
-  --graph-text: #47586a;
+  --graph-text: #47596a;
   --h1-color: inherit;
   --h1-font: inherit;
   --h1-line-height: 1.2;
@@ -423,7 +423,7 @@ body {
   --hr-thickness: 2px;
   --icon-color: #67819a;
   --icon-color-active: #a0bbd1;
-  --icon-color-focused: #47586a;
+  --icon-color-focused: #47596a;
   --icon-color-hover: #67819a;
   --icon-l: 18px;
   --icon-l-stroke-width: 1.75px;
@@ -543,7 +543,7 @@ body {
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: 28px;
   --metadata-input-longtext-lines: 3;
-  --metadata-input-text-color: #47586a;
+  --metadata-input-text-color: #47596a;
   --metadata-label-background: transparent;
   --metadata-label-background-active: #ffffff26;
   --metadata-label-background-hover: transparent;
@@ -581,10 +581,10 @@ body {
   --modal-width: 90vw;
   --nav-collapse-icon-color: #4c566a;
   --nav-collapse-icon-color-collapsed: #4c566a;
-  --nav-heading-color: #47586a;
+  --nav-heading-color: #47596a;
   --nav-heading-color-collapsed: #4c566a;
   --nav-heading-color-collapsed-hover: #67819a;
-  --nav-heading-color-hover: #47586a;
+  --nav-heading-color-hover: #47596a;
   --nav-heading-weight: 500;
   --nav-heading-weight-hover: 500;
   --nav-indentation-guide-color: #ffffff1f;
@@ -595,10 +595,10 @@ body {
   --nav-item-children-margin-start: 12px;
   --nav-item-children-padding-start: 4px;
   --nav-item-color: #67819a;
-  --nav-item-color-active: #47586a;
+  --nav-item-color-active: #47596a;
   --nav-item-color-highlighted: #a0bbd1;
-  --nav-item-color-hover: #47586a;
-  --nav-item-color-selected: #47586a;
+  --nav-item-color-hover: #47596a;
+  --nav-item-color-selected: #47596a;
   --nav-item-padding: 4px 8px 4px 24px;
   --nav-item-parent-padding: 6px 8px 6px 24px;
   --nav-item-size: 14.992px;
@@ -630,7 +630,7 @@ body {
   --pill-border-color-hover: #d8dee9;
   --pill-border-width: 0.5pt;
   --pill-color: #67819a;
-  --pill-color-hover: #47586a;
+  --pill-color-hover: #47596a;
   --pill-color-remove: #4c566a;
   --pill-color-remove-hover: #a0bbd1;
   --pill-decoration: none;
@@ -778,7 +778,7 @@ body {
   --table-header-background-hover: inherit;
   --table-header-border-color: #00000080;
   --table-header-border-width: 1px;
-  --table-header-color: #47586a;
+  --table-header-color: #47596a;
   --table-header-font: light-dark("Norwester", "Norwester");
   --table-header-size: 16px;
   --table-header-weight: 800;
@@ -828,7 +828,7 @@ body {
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;
   --titlebar-text-color: #67819a;
-  --titlebar-text-color-focused: #47586a;
+  --titlebar-text-color-focused: #47596a;
   --titlebar-text-weight: 700;
   --toggle-border-width: 2px;
   --toggle-radius: 18px;
@@ -842,8 +842,8 @@ body {
   --toggle-thumb-width: 18px;
   --toggle-width: 40px;
   --vault-profile-actions-display: flex;
-  --vault-profile-color: #47586a;
-  --vault-profile-color-hover: #47586a;
+  --vault-profile-color: #47596a;
+  --vault-profile-color-hover: #47596a;
   --vault-profile-display: flex;
   --vault-profile-font-size: 14.992px;
   --vault-profile-font-weight: 500;
@@ -853,7 +853,7 @@ body {
   -webkit-user-select: none;
   background-color: #ffffff;
   caret-color: #a0bbd1;
-  color: #47586a;
+  color: #47596a;
   contain: initial;
   font-family:
     "??",
@@ -1085,7 +1085,7 @@ h6 {
   background-color: #eceff4;
   border: 0px solid transparent;
   border-radius: 4px;
-  color: #47586a;
+  color: #47596a;
   font-family:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1346,7 +1346,7 @@ h6 {
 }
 
 .metadata-input-longtext {
-  color: #47586a;
+  color: #47596a;
   cursor: text;
   flex-grow: 1;
   font-size: 14.992px;
@@ -1411,32 +1411,10 @@ input.prompt-input {
 
 .markdown-rendered mark {
   background-color: light-dark(
-    light-dark(
-      hsl(
-        light-dark(210, light-dark(210, 210)),
-        light-dark(34%, light-dark(34%, 34%)),
-        light-dark(63%, light-dark(63%, 63%))
-      ),
-      hsl(
-        light-dark(210, light-dark(210, 210)),
-        light-dark(34%, light-dark(34%, 34%)),
-        light-dark(63%, light-dark(63%, 63%))
-      )
-    ),
-    light-dark(
-      hsl(
-        light-dark(210, light-dark(210, 210)),
-        light-dark(34%, light-dark(34%, 34%)),
-        light-dark(63%, light-dark(63%, 63%))
-      ),
-      hsl(
-        light-dark(210, light-dark(210, 210)),
-        light-dark(34%, light-dark(34%, 34%)),
-        light-dark(63%, light-dark(63%, 63%))
-      )
-    )
+    light-dark(#81a1c1, #81a1c1),
+    light-dark(#81a1c1, #81a1c1)
   );
-  color: #47586a;
+  color: #47596a;
 }
 
 a.tag {
@@ -1456,7 +1434,7 @@ input[type="search"] {
   background: transparent;
   border: 1px solid transparent;
   border-radius: 5px;
-  color: #47586a;
+  color: #47596a;
   font-family: inherit;
   font-size: 14.992px;
   height: 40px;
@@ -1497,7 +1475,7 @@ input[type="search"] {
 
 .nav-folder-title {
   border-radius: 4px;
-  color: #47586a;
+  color: #47596a;
   cursor: pointer;
   display: flex;
   font-size: 16px;
@@ -1509,7 +1487,7 @@ input[type="search"] {
 
 .nav-file-title {
   border-radius: 4px;
-  color: #47586a;
+  color: #47596a;
   cursor: pointer;
   display: flex;
   font-size: 16px;
@@ -1521,30 +1499,30 @@ input[type="search"] {
 
 .nav-file-title.is-active {
   background-color: #ffffff26;
-  color: #47586a;
+  color: #47596a;
   font-weight: inherit;
 }
 
 .nav-folder-title.is-active {
   background-color: #ffffff26;
-  color: #47586a;
+  color: #47596a;
   font-weight: inherit;
 }
 
 .nav-file-title.is-selected {
   background-color: #81a1c126;
-  color: #47586a;
+  color: #47596a;
 }
 
 .nav-folder-title.is-selected {
   background-color: #81a1c126;
-  color: #47586a;
+  color: #47596a;
 }
 
 .tree-item-self {
   align-items: baseline;
   border-radius: 4px;
-  color: #47586a;
+  color: #47596a;
   display: flex;
   font-size: 16px;
   font-weight: inherit;
@@ -1574,19 +1552,19 @@ input[type="search"] {
 
 .tree-item-self.is-clickable.mobile-tap {
   background-color: #ffffff26;
-  color: #47586a;
+  color: #47596a;
   font-weight: inherit;
 }
 
 .tree-item-self.is-active {
   background-color: #ffffff26;
-  color: #47586a;
+  color: #47596a;
   font-weight: inherit;
 }
 
 .tree-item-self.is-selected {
   background-color: #81a1c126;
-  color: #47586a;
+  color: #47596a;
 }
 
 .tree-item-self.is-being-dragged {
@@ -1656,7 +1634,7 @@ input[type="search"] {
 kbd {
   background-color: #eceff4;
   border-radius: 4px;
-  color: #47586a;
+  color: #47596a;
   font-family:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1737,7 +1715,7 @@ svg.svg-icon {
 }
 
 .backlink-pane > .tree-item-self {
-  color: #47586a;
+  color: #47596a;
   padding-inline-start: 8px;
 }
 
@@ -1795,7 +1773,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-arrow {
-  color: #47586a;
+  color: #47596a;
   opacity: 0.5;
 }
 
@@ -1808,7 +1786,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-text {
-  color: #47586a;
+  color: #47596a;
 }
 
 .graph-view.color-fill-highlight {
@@ -1948,7 +1926,7 @@ svg.svg-icon {
   --table-row-background-hover: #ffffff1a;
   --text-accent: #a0bbd1;
   --text-highlight-bg: #81a1c1;
-  --text-muted: #b3c6da;
+  --text-muted: #b3c7da;
   --text-normal: #d3dee9;
   --text-selection: #81a1c154;
 }
@@ -2064,7 +2042,7 @@ svg.svg-icon {
   --table-row-background-hover: #0000001a;
   --text-highlight-bg: #81a1c1;
   --text-muted: #67819a;
-  --text-normal: #47586a;
+  --text-normal: #47596a;
 }
 
 .mod-sidedock {

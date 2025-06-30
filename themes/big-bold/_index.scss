@@ -964,7 +964,7 @@ body {
 html {
   .callout {
     --callout-color: 131, 145, 237;
-    background-color: light-dark(#fcfcfc, #212121);
+    background-color: #fcfcfc;
     border: 1px solid #9e9e9e59;
     border-color: #9e9e9e40;
     border-radius: 14px;
@@ -976,196 +976,196 @@ html {
     mix-blend-mode: normal;
     overflow: hidden;
     padding: 0;
-    background-color: light-dark(#fcfcfc, #212121);
+    background-color: #fcfcfc;
     background-color: var(--bg);
     border-color: var(--border);
     overflow-x: auto;
     overflow-y: hidden;
     &[data-callout] {
       --callout-color: 131, 145, 237;
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="abstract"] {
       --callout-color: 132, 204, 124;
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="summary"] {
       --callout-color: 132, 204, 124;
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="tldr"] {
       --callout-color: 132, 204, 124;
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="info"] {
       --callout-color: 131, 145, 237;
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="todo"] {
       --callout-color: 131, 145, 237;
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="important"] {
       --callout-color: 84, 186, 182;
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="tip"] {
       --callout-color: 219, 202, 103;
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="hint"] {
       --callout-color: 219, 202, 103;
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="success"] {
       --callout-color: 132, 204, 124;
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="check"] {
       --callout-color: 132, 204, 124;
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="done"] {
       --callout-color: 132, 204, 124;
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="question"] {
       --callout-color: 219, 202, 103;
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="help"] {
       --callout-color: 219, 202, 103;
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="faq"] {
       --callout-color: 219, 202, 103;
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="warning"] {
       --callout-color: 255, 160, 88;
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="caution"] {
       --callout-color: 255, 160, 88;
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="attention"] {
       --callout-color: 255, 160, 88;
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="failure"] {
       --callout-color: 255, 114, 114;
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="fail"] {
       --callout-color: 255, 114, 114;
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="missing"] {
       --callout-color: 255, 114, 114;
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="danger"] {
       --callout-color: 255, 160, 88;
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="error"] {
       --callout-color: 255, 160, 88;
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="bug"] {
       --callout-color: 233, 145, 196;
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="example"] {
       --callout-color: 183, 140, 218;
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="quote"] {
       --callout-color: 158, 158, 158;
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="cite"] {
       --callout-color: 158, 158, 158;
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
@@ -1908,14 +1908,7 @@ body {
               light-dark(hsl(181, 100%, 35%), hsl(181, 100%, 35%))
             );
             font-weight: bold;
-            background-color: #ffd00066;
-            border-radius: 6px;
-            color: #ffffff;
-            font-family:
-              "Merriweather Sans", "Book Antiqua", "Nunito Sans",
-              "Noto Color Emoji", Inter, sans-serif, "Nunito Sans",
-              "Noto Color Emoji", Inter, sans-serif;
-            padding: 3px 0.4em;
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);

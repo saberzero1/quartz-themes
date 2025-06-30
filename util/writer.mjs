@@ -568,12 +568,14 @@ export function writeIndex(themeName, themeCSS) {
     "//%%SEARCH HIGHLIGHT%%",
     themeCSS,
   )
+  /*
   resultCSS = applyRuleToString(
     resultCSS,
     ".markdown-rendered mark",
     "//%%SEARCH HIGHLIGHT BACKGROUND%%",
     themeCSS,
   )
+  */
   resultCSS = applyRuleToString(
     resultCSS,
     "a.tag",

@@ -1240,8 +1240,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: rgba(255, 255, 0, 0.699);
-            color: white;
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);

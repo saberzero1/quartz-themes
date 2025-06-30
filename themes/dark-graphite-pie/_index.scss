@@ -1354,8 +1354,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: rgba(26, 73, 100, 0.66);
-            color: light-dark(rgb(203, 77, 73), #dcddde);
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);

@@ -3482,21 +3482,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            -webkit-text-decoration: none solid #d4d4d4 2px;
-            background-color: hsl(254, 80%, 68%);
-            border-radius: 0.125em;
-            color: #0a0a0a;
-            font-family:
-              "Noto Sans JP", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei",
-              "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial",
-              sans-serif;
-            font-size: 1em;
-            font-style: normal;
-            font-weight: normal;
-            margin: 0.125em;
-            padding: 0.125em 0.25em;
-            text-decoration: none solid #d4d4d4 2px;
-            text-underline-offset: 3px;
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);

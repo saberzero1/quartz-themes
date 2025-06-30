@@ -1469,12 +1469,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: light-dark(#c18bac33, #c18bac4d);
-            border-bottom: 2px light-dark(#d2abc5, #e3c9db) outset;
-            border-radius: 5px;
-            color: #ffffffcf;
-            padding-left: 5px;
-            padding-right: 5px;
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);

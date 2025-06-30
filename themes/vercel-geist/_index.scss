@@ -265,7 +265,7 @@ body {
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background: light-dark(#ffffff, #000000);
-  background-color: light-dark(#ffffff, #000000);
+  background-color: #ffffff;
   caret-color: #00b8d9;
   color: light-dark(#000000, #ffffff);
   contain: initial;
@@ -566,7 +566,7 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: light-dark(#ffffff, #000000);
+  background-color: #ffffff;
   background-color: var(--background-primary);
 
   @media all and ($mobile) {
@@ -579,12 +579,12 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: light-dark(#ffffff, #000000);
+      background-color: #ffffff;
       background-color: var(--background-primary);
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
-        background-color: light-dark(#ffffff, #000000);
+        background-color: #ffffff;
         background-color: var(--background-primary);
         content: " ";
         display: block;
@@ -1010,7 +1010,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: light-dark(#ffffff, #000000);
+        background-color: #ffffff;
         background-color: var(--background-primary);
         left: -1rem;
       }
@@ -1217,7 +1217,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: light-dark(#ffffff, #000000);
+        background-color: #ffffff;
         border: 0.5pt solid #555555;
         border-radius: 12px;
         box-shadow:
@@ -1226,7 +1226,7 @@ body {
           0px 30px 90px #00000033;
         margin: 12vh auto;
         & > input {
-          background-color: light-dark(#ffffff, #000000);
+          background-color: #ffffff;
           border: none;
           border-bottom: 1px solid light-dark(#eaeaea, #000000);
           border-radius: 0;
@@ -1253,8 +1253,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: light-dark(#adc8ff, #adc8ff);
-            color: light-dark(#000000, #ffffff);
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1338,7 +1337,7 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: light-dark(#eaeaea, #000000);
+    background-color: #eaeaea;
     border: 1px solid light-dark(#eaeaea, #333333);
     border-radius: 8px;
     box-shadow:
@@ -1356,7 +1355,7 @@ body {
     background-color: var(--background-primary);
     & .popover-inner {
       border: 1px solid light-dark(#eaeaea, #333333);
-      background-color: light-dark(#eaeaea, #000000);
+      background-color: #eaeaea;
 
       border-radius: 8px;
       background-color: var(--background-primary);

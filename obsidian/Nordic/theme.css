@@ -49,7 +49,6 @@
   --h4-color: var(--color-green);
   --h5-color: var(--color-cyan);
   --h6-color: var(--color-blue);
-
 }
 
 /* Avenir LT Std fonts */
@@ -136,7 +135,8 @@
   --accent-h: 210;
   --accent-s: 34%;
   --accent-l: 63%;
-  --accent-color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  /*--accent-color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));*/
+  --accent-color: #81a1c1;
   --text-highlight-bg: var(--accent-color);
   --header-color: var(--accent-color);
   --list-marker-color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));

@@ -1210,7 +1210,7 @@ body {
       background: transparent;
       background-color: #212326;
       border: 1px solid transparent;
-      border-color: light-dark(#fcfcfc, #212121);
+      border-color: #fcfcfc;
       border-radius: 4px;
       color: #8d9196;
       font-family:
@@ -1279,8 +1279,7 @@ body {
           & .highlight {
             color: #687cc4;
             font-weight: bold;
-            background-color: #6287b2;
-            color: #d0d1d2;
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);

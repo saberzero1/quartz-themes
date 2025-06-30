@@ -1464,11 +1464,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: inherit;
-            color: light-dark(
-              light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
-              light-dark(rgb(76, 79, 105), rgb(198, 208, 245))
-            );
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);

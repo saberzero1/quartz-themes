@@ -1301,7 +1301,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: light-dark(#fcfcfc, #212121);
+        background-color: #fcfcfc;
         border: 0.5pt solid #555555;
         border-radius: 8px;
         box-shadow:
@@ -1338,8 +1338,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: #a8dcfa54;
-            color: light-dark(hsl(0, 0%, -5%), #cccccc);
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);

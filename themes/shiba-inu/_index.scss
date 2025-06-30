@@ -1491,12 +1491,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            --bold-color: rgb(217, 224, 238);
-            --italic-color: rgb(217, 224, 238);
-            background-color: rgba(249, 226, 175, 0.2);
-            border-radius: 4px;
-            color: #d4d4d4;
-            padding: 2px;
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);

@@ -1,8 +1,5 @@
 :root {
-  --accent-color: light-dark(
-    hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
-    hsl(var(--accent-h), var(--accent-s), var(--accent-l))
-  );
+  --accent-color: light-dark(#81a1c1, #81a1c1);
   --accent-h: light-dark(210, light-dark(210, 210));
   --accent-l: light-dark(63%, light-dark(63%, 63%));
   --accent-s: light-dark(34%, light-dark(34%, 34%));
@@ -159,10 +156,7 @@
 }
 
 body {
-  --accent-color: light-dark(
-    hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
-    hsl(var(--accent-h), var(--accent-s), var(--accent-l))
-  );
+  --accent-color: light-dark(#81a1c1, #81a1c1);
   --accent-h: light-dark(210, light-dark(210, 210));
   --accent-l: light-dark(63%, light-dark(63%, 63%));
   --accent-s: light-dark(34%, light-dark(34%, 34%));
@@ -1816,7 +1810,7 @@ svg.svg-icon {
 }
 
 .theme-dark {
-  --accent-color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --accent-color: #81a1c1;
   --accent-h: 210;
   --accent-l: 63%;
   --accent-s: 34%;
@@ -1982,7 +1976,7 @@ svg.svg-icon {
 }
 
 .theme-light {
-  --accent-color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --accent-color: #81a1c1;
   --accent-h: 210;
   --accent-l: 63%;
   --accent-s: 34%;

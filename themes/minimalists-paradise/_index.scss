@@ -1314,10 +1314,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: #2f424c;
-            border-radius: 8px;
-            color: inherit;
-            padding: 0.075em 0.2em;
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);

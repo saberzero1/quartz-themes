@@ -1343,8 +1343,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: transparent;
-            color: #adadad;
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);

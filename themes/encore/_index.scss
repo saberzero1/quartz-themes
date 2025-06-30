@@ -1343,10 +1343,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: #994d0080;
-            border-bottom: 1px solid #663300;
-            border-top: 1px solid #ff993326;
-            color: #ffebd6;
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);

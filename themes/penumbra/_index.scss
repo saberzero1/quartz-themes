@@ -1013,7 +1013,7 @@ body {
   }
   /* CODE */
   pre {
-    background-color: light-dark(#f2e6d4, #24272b);
+    background-color: #f2e6d4;
     border: 0px solid transparent;
     border-radius: 4px;
     min-height: 38px;
@@ -1080,7 +1080,7 @@ body {
   }
   code {
     -webkit-box-decoration-break: clone;
-    background-color: light-dark(#f2e6d4, #24272b);
+    background-color: #f2e6d4;
     border: 0px solid transparent;
     border-radius: 4px;
     color: light-dark(#8f8f8f, #8f8f8f);
@@ -1230,7 +1230,7 @@ body {
           color: inherit;
           &.active,
           &:hover {
-            background-color: light-dark(#fffdfb, #f2e6d4);
+            background-color: #fffdfb;
             color: var(--nav-item-color-active);
             font-weight: inherit;
           }
@@ -1409,8 +1409,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: #f2e6d4;
-            color: light-dark(#8f8f8f, #8f8f8f);
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);

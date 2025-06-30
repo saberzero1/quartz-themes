@@ -941,7 +941,7 @@ body {
   }
   /* CODE */
   pre {
-    background-color: light-dark(#ffffff, #ffffff);
+    background-color: #ffffff;
     border: 0px solid transparent;
     border-radius: 4px;
     min-height: 38px;
@@ -1008,7 +1008,7 @@ body {
   }
   code {
     -webkit-box-decoration-break: clone;
-    background-color: light-dark(#ffffff, #ffffff);
+    background-color: #ffffff;
     border: 0px solid transparent;
     border-radius: 4px;
     color: #181612;
@@ -1337,8 +1337,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: light-dark(#485e3066, #485e3066);
-            color: #181612;
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);

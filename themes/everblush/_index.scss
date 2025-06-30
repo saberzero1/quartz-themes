@@ -1363,8 +1363,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: light-dark(#c47fd5, #bab3e5);
-            color: light-dark(#141b1e, #d5d5d5);
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);

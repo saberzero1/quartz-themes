@@ -31,7 +31,7 @@ html[saved-theme="light"] {
   --h1-color: #81a1c1;
   --mono-rgb-100: 0, 0, 0;
 
-  --text-normal: #47586a;
+  --text-normal: #47596a;
 }
 
 .darkmode {
@@ -187,7 +187,7 @@ body {
   --code-function: #ebcb8b;
   --code-important: #d08770;
   --code-keyword: #b48ead;
-  --code-normal: #47586a;
+  --code-normal: #47596a;
   --code-property: #61b1bf;
   --code-punctuation: #67819a;
   --code-string: #a3be8c;
@@ -265,7 +265,7 @@ body {
   -webkit-user-select: none;
   background-color: #ffffff;
   caret-color: #a0bbd1;
-  color: #47586a;
+  color: #47596a;
   contain: initial;
   font-family:
     "??",
@@ -1003,7 +1003,7 @@ body {
     background-color: #eceff4;
     border: 0px solid transparent;
     border-radius: 4px;
-    color: #47586a;
+    color: #47596a;
     font-family:
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1047,7 +1047,7 @@ body {
   }
   /* METADATA */
   .content-meta {
-    color: #47586a;
+    color: #47596a;
     color: var(--text-normal);
   }
   /* BREADCRUMBS */
@@ -1083,7 +1083,7 @@ body {
       margin-block-start: 0rem;
     }
     ul li {
-      color: #47586a;
+      color: #47596a;
       font-weight: 500;
     }
   }
@@ -1152,7 +1152,7 @@ body {
         position: relative;
         a {
           border-radius: 4px;
-          color: #47586a;
+          color: #47596a;
           cursor: pointer;
           display: flex;
           font-size: 16px;
@@ -1164,7 +1164,7 @@ body {
           &.active,
           &:hover {
             background-color: #ffffff26;
-            color: #47586a;
+            color: #47596a;
             font-weight: inherit;
           }
           &[data-for$="/index"] {
@@ -1225,7 +1225,7 @@ body {
     ul.toc-content.overflow {
       li,
       li > a {
-        color: #47586a;
+        color: #47596a;
         font-weight: inherit;
         font-size: 16px;
         color: inherit;
@@ -1318,7 +1318,7 @@ body {
       background: transparent;
       border: 1px solid transparent;
       border-radius: 5px;
-      color: #47586a;
+      color: #47596a;
       font-family: inherit;
       font-size: 14.992px;
       height: 40px;
@@ -1356,7 +1356,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: #47586a;
+          color: #47596a;
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1368,33 +1368,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: light-dark(
-              light-dark(
-                hsl(
-                  light-dark(210, light-dark(210, 210)),
-                  light-dark(34%, light-dark(34%, 34%)),
-                  light-dark(63%, light-dark(63%, 63%))
-                ),
-                hsl(
-                  light-dark(210, light-dark(210, 210)),
-                  light-dark(34%, light-dark(34%, 34%)),
-                  light-dark(63%, light-dark(63%, 63%))
-                )
-              ),
-              light-dark(
-                hsl(
-                  light-dark(210, light-dark(210, 210)),
-                  light-dark(34%, light-dark(34%, 34%)),
-                  light-dark(63%, light-dark(63%, 63%))
-                ),
-                hsl(
-                  light-dark(210, light-dark(210, 210)),
-                  light-dark(34%, light-dark(34%, 34%)),
-                  light-dark(63%, light-dark(63%, 63%))
-                )
-              )
-            );
-            color: #47586a;
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1414,7 +1388,7 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: #47586a;
+                color: #47596a;
                 &.match-tag {
                   color: #a0bbd1;
                 }

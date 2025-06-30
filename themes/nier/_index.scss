@@ -1185,7 +1185,7 @@ body {
           color: inherit;
           &.active,
           &:hover {
-            background-color: light-dark(#fcfcfc, #212121);
+            background-color: #fcfcfc;
             color: light-dark(#ffffff, #ffffff);
             font-weight: inherit;
           }
@@ -1368,13 +1368,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: #f0ece0;
-            border-radius: 5px;
-            color: light-dark(#383a42, #49463d);
-            padding-bottom: 0px;
-            padding-left: 4px;
-            padding-right: 4px;
-            padding-top: 0px;
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);

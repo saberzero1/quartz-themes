@@ -1279,11 +1279,7 @@ body {
             text-decoration: underline 2px;
             text-decoration-color: #d5ff80;
             text-underline-offset: auto;
-            background-color: #ffd00066;
-            border-radius: 0.35em 0.8em;
-            color: #91bdc0;
-            font-family: "iA Writer Duo S";
-            padding: 0 0.35em 0 0.5em;
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);
