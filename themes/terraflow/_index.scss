@@ -1333,6 +1333,7 @@ body {
       transition:
         background-color 0.2s ease,
         border-color 0.2s ease;
+      font-size: 1rem;
       svg {
         color: var(--search-icon-color, var(--text-muted, var(--darkgray)));
         stroke: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -1361,6 +1362,7 @@ body {
           margin-bottom: 0;
           border-bottom: none;
           background: transparent;
+          font-size: 1.1rem;
         }
         & > * {
           color: light-dark(#3d3929, #cccccc);

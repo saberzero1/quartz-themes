@@ -1030,6 +1030,8 @@ body {
   .search {
     & > .search-button {
       //%%SEARCH BUTTON%%
+
+      font-size: 1rem;
       svg {
         color: var(--search-icon-color, var(--text-muted, var(--darkgray)));
         stroke: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -1049,6 +1051,7 @@ body {
           margin-bottom: 0;
           border-bottom: none;
           background: transparent;
+          font-size: 1.1rem;
         }
         & > * {
           //%%BODY COLOR%%

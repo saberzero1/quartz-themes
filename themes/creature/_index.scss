@@ -1288,6 +1288,7 @@ body {
       padding: 8px;
       transition: all 0.2s;
       width: 100%;
+      font-size: 1rem;
       svg {
         color: var(--search-icon-color, var(--text-muted, var(--darkgray)));
         stroke: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -1319,6 +1320,7 @@ body {
           margin-bottom: 0;
           border-bottom: none;
           background: transparent;
+          font-size: 1.1rem;
         }
         & > * {
           color: #ffffffde;
