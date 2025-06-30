@@ -1278,12 +1278,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            -webkit-box-decoration-break: clone;
-            background-color: hsla(258, 88%, 66%, 0.25);
-            border-radius: 5px;
-            box-decoration-break: clone;
-            color: #dadada;
-            padding: 1px 4px;
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);

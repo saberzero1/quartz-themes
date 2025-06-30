@@ -366,7 +366,7 @@ body {
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background: light-dark(#faf4ed, #191724);
-  background-color: light-dark(#fffaf3, #1f1d2e);
+  background-color: #fffaf3;
   caret-color: #eb6f92;
   color: light-dark(#575279, #e0def4);
   contain: initial;
@@ -667,7 +667,7 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: light-dark(#fffaf3, #1f1d2e);
+  background-color: #fffaf3;
   background-color: var(--background-primary);
 
   @media all and ($mobile) {
@@ -680,12 +680,12 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: light-dark(#fffaf3, #1f1d2e);
+      background-color: #fffaf3;
       background-color: var(--background-primary);
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
-        background-color: light-dark(#fffaf3, #1f1d2e);
+        background-color: #fffaf3;
         background-color: var(--background-primary);
         content: " ";
         display: block;
@@ -1111,7 +1111,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: light-dark(#fffaf3, #1f1d2e);
+        background-color: #fffaf3;
         background-color: var(--background-primary);
         left: -1rem;
       }
@@ -1318,7 +1318,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: light-dark(#fffaf3, #1f1d2e);
+        background-color: #fffaf3;
         border: 0.5pt solid #555555;
         border-radius: 12px;
         box-shadow:
@@ -1327,7 +1327,7 @@ body {
           0px 30px 90px #00000033;
         margin: 12vh auto;
         & > input {
-          background-color: light-dark(#fffaf3, #1f1d2e);
+          background-color: #fffaf3;
           border: none;
           border-bottom: 1px solid light-dark(#faf4ed, #191724);
           border-radius: 0;
@@ -1354,8 +1354,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: var(--text-highlight-bg);
-            color: light-dark(#575279, #e0def4);
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1439,7 +1438,7 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: light-dark(#faf4ed, #191724);
+    background-color: #faf4ed;
     border: 1px solid light-dark(#dfdad9, #403d52);
     border-radius: 8px;
     box-shadow:
@@ -1457,7 +1456,7 @@ body {
     background-color: var(--background-primary);
     & .popover-inner {
       border: 1px solid light-dark(#dfdad9, #403d52);
-      background-color: light-dark(#faf4ed, #191724);
+      background-color: #faf4ed;
 
       border-radius: 8px;
       background-color: var(--background-primary);

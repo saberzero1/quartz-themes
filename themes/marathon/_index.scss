@@ -1279,14 +1279,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: #8a5cf5;
-            border-radius: 3px;
-            color: hsl(258, 88%, -1700%);
-            padding-bottom: 2px;
-            padding-left: 2px;
-            padding-right: 2px;
-            padding-top: 0px;
-            pointer-events: none;
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);

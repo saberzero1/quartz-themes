@@ -1249,11 +1249,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: #ffd00066;
-            border-radius: 4px;
-            color: #bdbdbd;
-            padding-left: 2px;
-            padding-right: 2px;
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);

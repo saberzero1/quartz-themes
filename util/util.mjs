@@ -604,6 +604,7 @@ export function cleanup(cssString) {
   cssString = cssString.replaceAll(/(?<=^\s*?(?:(?:background-|border-)?color:\s*?)?)(?:light-dark|hsl)\(\s*?(light-dark\([^\)]+\))\s*?\)\s*?,\s*?(light-dark\([^\)]+\))\s*?\)\s*?\)(?=$|;|,)/gms, "$1") // Fix light-dark(hsl) with 6 values
   cssString = cssString.replaceAll(/(?<=^\s*?(?:(?:background-|border-)?color:\s*?)?)hsl\(\s*?light-dark\(\s*?(light-dark\([^\)]+\))\s*?,\s*?(light-dark\([^\)]+\))\s*?\)\s*?\)(?=$|;|,)/gms, "$1") // Fix light-dark(hsl) with 6 values
   cssString = cssString.replaceAll(/(?<=solid\s*?)light-dark\(\#[\da-fA-F]{3,8},\s*?(light-dark\(\#[\da-fA-F]{3,8},\s*?\#[\da-fA-F]{3,8}\))(?=$|;|,)/gms, "$1")
+  cssString = cssString.replaceAll(/(?<=(?:background-|border-)color:\s*?)light-dark\(\s*?(?:light-dark\((\#[\da-fA-F]{3,8}),\s*?\#[\da-fA-F]{3,8}\)),\s*?(light-dark\((\#[\da-fA-F]{3,8}),\s*?\#[\da-fA-F]{3,8}\))\s*?\)(?=$|;|,)/gms, "$1")
   cssString = cssString.replaceAll(/(?<=^\s*?(?:(?:background-|border-)?color:\s*?)?)light-dark\(\s*?(light-dark\(\#[\da-fA-F]{3,8},\s*?\#[\da-fA-F]{3,8}\s*?\)),\s*?(light-dark\(\#[\da-fA-F]{3,8},\s*?\#[\da-fA-F]{3,8}\s*?\))\s*?\)(?=$|;|,)/gms, "$1")
   cssString = cssString.replaceAll(/(?<=^\s*?(?:(?:background-|border-)?color:\s*?)?)light-dark\(\s*?(light-dark\([^\)]+\)),\s*?(light-dark\([^\)]+\))\s*?\)(?=$|;|,)/gms, "$1")
 

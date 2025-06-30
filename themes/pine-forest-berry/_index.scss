@@ -1210,7 +1210,7 @@ body {
           0px 30px 90px #00000033;
         margin: 12vh auto;
         & > input {
-          background-color: light-dark(#fcfcfc, #212121);
+          background-color: #fcfcfc;
           border: none;
           border-bottom: 1px solid light-dark(#f2f2f2, #3b4252);
           border-radius: 0;
@@ -1238,8 +1238,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: light-dark(#f2bd7746, #d5548a60);
-            color: light-dark(#15181e, #f8f8f2);
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1255,7 +1254,7 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: light-dark(#fcfcfc, #212121);
+                background-color: #fcfcfc;
               }
               & > ul > li > p {
                 background-color: transparent;

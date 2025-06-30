@@ -1219,18 +1219,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            animation: animated-mark 5s linear infinite;
-            background: linear-gradient(-90deg, #8a5cf54d, #8a5cf5, #8a5cf54d);
-            background-color: #ffd00066;
-            background-size: 200% 200%;
-            border-radius: 3px;
-            color: #ffffff;
-            padding-bottom: 0px;
-            padding-left: 2px;
-            padding-right: 2px;
-            padding-top: 0px;
-            pointer-events: none;
-            transition: all 0.2s;
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);

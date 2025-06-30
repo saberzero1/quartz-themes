@@ -1059,7 +1059,7 @@ body {
     right: 0;
     top: 0;
     &:hover {
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
     }
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -1355,8 +1355,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: light-dark(#dbaa205e, #dbaa205e);
-            color: #dcddde;
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);

@@ -1083,7 +1083,8 @@ body {
           }
           & .highlight {
             //%%SEARCH HIGHLIGHT%%
-            //%%SEARCH HIGHLIGHT BACKGROUND%%
+
+            background-color: var(--quartz-text-highlight)
           }
           & > .preview-container {
             color: var(--text-normal);

@@ -379,7 +379,7 @@ body {
   --text-normal: light-dark(#babdc4, #babdc4);
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(#fcfcfc, #212121);
+  background-color: #fcfcfc;
   caret-color: #c86464;
   color: light-dark(#5c5c5c, #b3b3b3);
   contain: initial;
@@ -669,7 +669,7 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: light-dark(#fcfcfc, #212121);
+  background-color: #fcfcfc;
   background-color: var(--background-primary);
 
   @media all and ($mobile) {
@@ -682,12 +682,12 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
       background-color: var(--background-primary);
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
-        background-color: light-dark(#fcfcfc, #212121);
+        background-color: #fcfcfc;
         background-color: var(--background-primary);
         content: " ";
         display: block;
@@ -960,7 +960,7 @@ body {
   }
   /* CODE */
   pre {
-    background-color: light-dark(#f6f6f6, #262626);
+    background-color: #f6f6f6;
     border: 0px solid transparent;
     border-radius: 3px;
     min-height: 38px;
@@ -1027,7 +1027,7 @@ body {
   }
   code {
     -webkit-box-decoration-break: clone;
-    background-color: light-dark(#f6f6f6, #262626);
+    background-color: #f6f6f6;
     border: 0px solid transparent;
     border-radius: 3px;
     color: light-dark(#444444, #d6d8dc);
@@ -1102,7 +1102,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: light-dark(#fcfcfc, #212121);
+        background-color: #fcfcfc;
         background-color: var(--background-primary);
         left: -1rem;
       }
@@ -1305,7 +1305,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: light-dark(#fcfcfc, #212121);
+        background-color: #fcfcfc;
         border: 0.15rem solid #c86464;
         border-radius: 12px;
         box-shadow:
@@ -1314,7 +1314,7 @@ body {
           0px 30px 90px #00000033;
         margin: 12vh auto;
         & > input {
-          background-color: light-dark(#fcfcfc, #212121);
+          background-color: #fcfcfc;
           border: none;
           border-bottom: 1px solid
             light-dark(#fdf9f7, light-dark(#ffffff, #1e1e1e));
@@ -1342,8 +1342,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: #ffd00066;
-            color: light-dark(#5c5c5c, #b3b3b3);
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1427,7 +1426,7 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: light-dark(#fcfcfc, #212121);
+    background-color: #fcfcfc;
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow:
@@ -1445,7 +1444,7 @@ body {
     background-color: var(--background-primary);
     & .popover-inner {
       border: 1px solid transparent;
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
 
       border-radius: 8px;
       background-color: var(--background-primary);

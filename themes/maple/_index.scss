@@ -1330,10 +1330,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background: #eecfa04d;
-            background-color: #eecfa04d;
-            border-radius: 4px;
-            color: var(--setting-text-highlight-color);
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);

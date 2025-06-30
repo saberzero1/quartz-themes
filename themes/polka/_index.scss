@@ -1386,10 +1386,7 @@ body {
             background: rgb(220, 193, 45);
             color: light-dark(#000, #000);
             font-weight: bold;
-            background: rgb(220, 193, 45);
-            background-color: rgb(220, 193, 45);
-            border-radius: 0.5px;
-            color: light-dark(#000, #000);
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);

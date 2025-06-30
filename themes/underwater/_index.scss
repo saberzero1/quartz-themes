@@ -1127,7 +1127,7 @@ body {
   }
   /* CODE */
   pre {
-    background-color: light-dark(#faf4ed, #191724);
+    background-color: #faf4ed;
     border: 0px solid transparent;
     border-radius: 4px;
     min-height: 38px;
@@ -1194,7 +1194,7 @@ body {
   }
   code {
     -webkit-box-decoration-break: clone;
-    background-color: light-dark(#faf4ed, #191724);
+    background-color: #faf4ed;
     border: 0px solid transparent;
     border-radius: 4px;
     color: light-dark(#797593, #908caa);
@@ -1600,8 +1600,7 @@ body {
           & .highlight {
             color: rgb(232, 157, 149);
             font-weight: bold;
-            background-color: rgba(246, 173, 119, 0.2);
-            color: light-dark(#575279, #e0def4);
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);

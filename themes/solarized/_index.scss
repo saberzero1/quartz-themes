@@ -485,7 +485,7 @@ body {
   --text-normal: light-dark(#657b83, #839496);
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(#fdf6e3, #fdf6e3);
+  background-color: #fdf6e3;
 
   color: light-dark(#657b83, #657b83);
   contain: initial;
@@ -786,7 +786,7 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: light-dark(#fdf6e3, #fdf6e3);
+  background-color: #fdf6e3;
   background-color: var(--background-primary);
 
   @media all and ($mobile) {
@@ -799,12 +799,12 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: light-dark(#fdf6e3, #fdf6e3);
+      background-color: #fdf6e3;
       background-color: var(--background-primary);
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
-        background-color: light-dark(#fdf6e3, #fdf6e3);
+        background-color: #fdf6e3;
         background-color: var(--background-primary);
         content: " ";
         display: block;
@@ -1230,7 +1230,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: light-dark(#fdf6e3, #fdf6e3);
+        background-color: #fdf6e3;
         background-color: var(--background-primary);
         left: -1rem;
       }
@@ -1433,7 +1433,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: light-dark(#fdf6e3, #fdf6e3);
+        background-color: #fdf6e3;
         border: 0.5pt solid #839496;
         border-radius: 12px;
         box-shadow:
@@ -1442,7 +1442,7 @@ body {
           0px 30px 90px #00000033;
         margin: 12vh auto;
         & > input {
-          background-color: light-dark(#fdf6e3, #fdf6e3);
+          background-color: #fdf6e3;
           border: none;
           border-bottom: 1px solid light-dark(#fdf6e3, #fdf6e3);
           border-radius: 0;
@@ -1469,33 +1469,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: light-dark(
-              light-dark(
-                hsl(
-                  light-dark(17.5690607735deg, 17.5690607735deg),
-                  light-dark(80.4444444444%, 80.4444444444%),
-                  light-dark(44.1176470588%, 44.1176470588%)
-                ),
-                hsl(
-                  light-dark(17.5690607735deg, 17.5690607735deg),
-                  light-dark(80.4444444444%, 80.4444444444%),
-                  light-dark(44.1176470588%, 44.1176470588%)
-                )
-              ),
-              light-dark(
-                hsl(
-                  light-dark(17.5690607735deg, 17.5690607735deg),
-                  light-dark(80.4444444444%, 80.4444444444%),
-                  light-dark(44.1176470588%, 44.1176470588%)
-                ),
-                hsl(
-                  light-dark(17.5690607735deg, 17.5690607735deg),
-                  light-dark(80.4444444444%, 80.4444444444%),
-                  light-dark(44.1176470588%, 44.1176470588%)
-                )
-              )
-            );
-            color: light-dark(#fdf6e3, #fdf6e3);
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1604,7 +1578,7 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: light-dark(#fdf6e3, #fdf6e3);
+    background-color: #fdf6e3;
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow:
@@ -1622,7 +1596,7 @@ body {
     background-color: var(--background-primary);
     & .popover-inner {
       border: 1px solid transparent;
-      background-color: light-dark(#fdf6e3, #fdf6e3);
+      background-color: #fdf6e3;
 
       border-radius: 8px;
       background-color: var(--background-primary);

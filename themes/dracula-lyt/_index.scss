@@ -302,7 +302,7 @@ body {
   --text-normal: light-dark(#b9c3df, #b9c3df);
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(#2d3039, #2d3039);
+  background-color: #2d3039;
   caret-color: #b9c3df;
   color: light-dark(#b9c3df, #b9c3df);
   contain: initial;
@@ -610,7 +610,7 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: light-dark(#2d3039, #2d3039);
+  background-color: #2d3039;
   background-color: var(--background-primary);
 
   @media all and ($mobile) {
@@ -623,12 +623,12 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: light-dark(#2d3039, #2d3039);
+      background-color: #2d3039;
       background-color: var(--background-primary);
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
-        background-color: light-dark(#2d3039, #2d3039);
+        background-color: #2d3039;
         background-color: var(--background-primary);
         content: " ";
         display: block;
@@ -1060,7 +1060,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: light-dark(#2d3039, #2d3039);
+        background-color: #2d3039;
         background-color: var(--background-primary);
         left: -1rem;
       }
@@ -1283,7 +1283,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: light-dark(#2d3039, #2d3039);
+        background-color: #2d3039;
         border: 0.5pt solid #555555;
         border-radius: 12px;
         box-shadow:
@@ -1295,7 +1295,7 @@ body {
         margin: 12vh auto;
         & > input {
           background: transparent;
-          background-color: light-dark(#2d3039, #2d3039);
+          background-color: #2d3039;
           border: none;
           border-bottom: 1px solid light-dark(#23242a, #23242a);
           border-radius: 0;
@@ -1322,8 +1322,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: #d6f7ff98;
-            color: light-dark(#b9c3df, #b9c3df);
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1407,7 +1406,7 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: light-dark(#2d3039, #2d3039);
+    background-color: #2d3039;
     border: 1px solid light-dark(#343a4b, #343a4b);
     border-radius: 8px;
     box-shadow:
@@ -1426,7 +1425,7 @@ body {
     background-color: var(--background-primary);
     & .popover-inner {
       border: 1px solid light-dark(#343a4b, #343a4b);
-      background-color: light-dark(#2d3039, #2d3039);
+      background-color: #2d3039;
 
       border-radius: 8px;
       background-color: var(--background-primary);

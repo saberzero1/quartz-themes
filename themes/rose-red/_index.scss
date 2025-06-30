@@ -1287,8 +1287,7 @@ body {
           & .highlight {
             color: light-dark(#50fa7b, #50fa7b);
             font-weight: bold;
-            background-color: #ffd00066;
-            color: light-dark(#f8f8f2, #f8f8f2);
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1372,7 +1371,7 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: light-dark(#fcfcfc, #212121);
+    background-color: #fcfcfc;
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow:
@@ -1390,7 +1389,7 @@ body {
     background-color: var(--background-primary);
     & .popover-inner {
       border: 1px solid transparent;
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
 
       border-radius: 8px;
       background-color: var(--background-primary);

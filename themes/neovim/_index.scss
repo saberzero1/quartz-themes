@@ -365,7 +365,7 @@ body {
   --text-normal: #c4c6cd;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(#f6f6f6, #262626);
+  background-color: #f6f6f6;
   caret-color: #b1f6bf;
   color: #c4c6cd;
   contain: initial;
@@ -666,7 +666,7 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: light-dark(#f6f6f6, #262626);
+  background-color: #f6f6f6;
   background-color: var(--background-primary);
 
   @media all and ($mobile) {
@@ -679,12 +679,12 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: light-dark(#f6f6f6, #262626);
+      background-color: #f6f6f6;
       background-color: var(--background-primary);
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
-        background-color: light-dark(#f6f6f6, #262626);
+        background-color: #f6f6f6;
         background-color: var(--background-primary);
         content: " ";
         display: block;
@@ -1110,7 +1110,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: light-dark(#f6f6f6, #262626);
+        background-color: #f6f6f6;
         background-color: var(--background-primary);
         left: -1rem;
       }
@@ -1316,7 +1316,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: light-dark(#f6f6f6, #262626);
+        background-color: #f6f6f6;
         border: 0.5pt solid #2c2e33;
         border-radius: 8px;
         box-shadow:
@@ -1325,7 +1325,7 @@ body {
           0px 30px 90px #00000033;
         margin: 12vh auto;
         & > input {
-          background-color: light-dark(#f6f6f6, #262626);
+          background-color: #f6f6f6;
           border: none;
           border-bottom: 1px solid light-dark(#f6f6f6, #262626);
           border-radius: 0;
@@ -1352,8 +1352,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: #ffd00066;
-            color: #c4c6cd;
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1437,7 +1436,7 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: light-dark(#f6f6f6, #262626);
+    background-color: #f6f6f6;
     border: 1px solid light-dark(#e0e0e0, #363636);
     border-radius: 6px;
     box-shadow:
@@ -1455,7 +1454,7 @@ body {
     background-color: var(--background-primary);
     & .popover-inner {
       border: 1px solid light-dark(#e0e0e0, #363636);
-      background-color: light-dark(#f6f6f6, #262626);
+      background-color: #f6f6f6;
 
       border-radius: 6px;
       background-color: var(--background-primary);

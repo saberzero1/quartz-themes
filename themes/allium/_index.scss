@@ -921,7 +921,7 @@ body {
     position: absolute;
     top: 0;
     &:hover {
-      background-color: light-dark(#a32d7f52, #a32d7f52);
+      background-color: #a32d7f52;
     }
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -1032,7 +1032,7 @@ body {
           color: inherit;
           &.active,
           &:hover {
-            background-color: light-dark(#a32d7f52, #a32d7f52);
+            background-color: #a32d7f52;
             color: light-dark(#30222b, #d8bcd8);
             font-weight: inherit;
           }
@@ -1211,8 +1211,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: light-dark(#a32d7f52, #a32d7f52);
-            color: light-dark(#30222b, #d8bcd8);
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1228,7 +1227,7 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: light-dark(#a32d7f52, #a32d7f52);
+                background-color: #a32d7f52;
               }
               & > ul > li > p {
                 background-color: transparent;

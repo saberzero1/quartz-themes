@@ -1063,7 +1063,7 @@ body {
     position: absolute;
     top: 0;
     &:hover {
-      background-color: light-dark(#e6e6e6, #413e3e);
+      background-color: #e6e6e6;
     }
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -1354,8 +1354,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: #ffd00066;
-            color: light-dark(#353132, #e1e1e1);
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1371,7 +1370,7 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: light-dark(#e6e6e6, #413e3e);
+                background-color: #e6e6e6;
               }
               & > ul > li > p {
                 background-color: transparent;

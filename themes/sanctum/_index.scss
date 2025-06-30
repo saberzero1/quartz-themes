@@ -1457,12 +1457,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            -webkit-box-decoration-break: clone;
-            background-color: #669961b3;
-            border-radius: 4px;
-            box-decoration-break: clone;
-            color: #c7c5c2;
-            padding: 2px 4px;
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);

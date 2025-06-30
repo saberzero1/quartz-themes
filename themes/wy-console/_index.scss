@@ -2526,7 +2526,7 @@ body {
   --text-normal: light-dark(#99e5b5, #99e5b5);
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(#d7ddd9, #0b1510);
+  background-color: #d7ddd9;
   caret-color: #99e5b5;
   color: light-dark(#20542c, #99e5b5);
   contain: initial;
@@ -2813,7 +2813,7 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: light-dark(#d7ddd9, #0b1510);
+  background-color: #d7ddd9;
   background-color: var(--background-primary);
 
   @media all and ($mobile) {
@@ -2826,12 +2826,12 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: light-dark(#d7ddd9, #0b1510);
+      background-color: #d7ddd9;
       background-color: var(--background-primary);
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
-        background-color: light-dark(#d7ddd9, #0b1510);
+        background-color: #d7ddd9;
         background-color: var(--background-primary);
         content: " ";
         display: block;
@@ -3194,7 +3194,7 @@ body {
     position: absolute;
     top: 0;
     &:hover {
-      background-color: light-dark(#86c66c, #163f26);
+      background-color: #86c66c;
     }
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -3245,7 +3245,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: light-dark(#d7ddd9, #0b1510);
+        background-color: #d7ddd9;
         background-color: var(--background-primary);
         left: -1rem;
       }
@@ -3305,7 +3305,7 @@ body {
           color: inherit;
           &.active,
           &:hover {
-            background-color: light-dark(#86c66c, #163f26);
+            background-color: #86c66c;
             color: light-dark(#20542c, #99e5b5);
             font-weight: bold;
           }
@@ -3451,7 +3451,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: light-dark(#d7ddd9, #0b1510);
+        background-color: #d7ddd9;
         border: 0.5pt solid #555555;
         border-radius: 12px;
         box-shadow:
@@ -3460,7 +3460,7 @@ body {
           0px 30px 90px #00000033;
         margin: 12vh auto;
         & > input {
-          background-color: light-dark(#d7ddd9, #0b1510);
+          background-color: #d7ddd9;
           border: none;
           border-bottom: 1px solid light-dark(#d7ddd9, #0b1510);
           border-radius: 0;
@@ -3487,8 +3487,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: #ffd00066;
-            color: light-dark(#20542c, #99e5b5);
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -3504,7 +3503,7 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: light-dark(#86c66c, #163f26);
+                background-color: #86c66c;
               }
               & > ul > li > p {
                 background-color: transparent;
@@ -3572,7 +3571,7 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: light-dark(#d7ddd9, #0b1510);
+    background-color: #d7ddd9;
     border: 1px solid light-dark(#c9d3cb, #020704);
     border-radius: 8px;
     box-shadow:
@@ -3590,7 +3589,7 @@ body {
     background-color: var(--background-primary);
     & .popover-inner {
       border: 1px solid light-dark(#c9d3cb, #020704);
-      background-color: light-dark(#d7ddd9, #0b1510);
+      background-color: #d7ddd9;
 
       border-radius: 8px;
       background-color: var(--background-primary);

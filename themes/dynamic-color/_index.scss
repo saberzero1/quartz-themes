@@ -1413,8 +1413,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: #5f3a54;
-            color: #e5e4e7;
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);

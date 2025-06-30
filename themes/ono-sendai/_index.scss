@@ -1289,7 +1289,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: light-dark(#fcfcfc, #212121);
+        background-color: #fcfcfc;
         border: 0.5pt solid #555555;
         border-radius: 8px;
         box-shadow:
@@ -1325,8 +1325,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: #1c2b0b;
-            color: light-dark(#2e3338, #dcddde);
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1412,7 +1411,7 @@ body {
   .popover {
     -webkit-font-smoothing: none;
     -webkit-text-stroke: 0px;
-    background-color: light-dark(#fcfcfc, #212121);
+    background-color: #fcfcfc;
     border: 1px solid light-dark(#914a29, #28b0ff);
     border-radius: 0px;
     box-shadow: 3px 3px 1px light-dark(#914a29, #28b0ff);
@@ -1431,7 +1430,7 @@ body {
     background-color: var(--background-primary);
     & .popover-inner {
       border: 1px solid light-dark(#914a29, #28b0ff);
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
 
       border-radius: 0px;
       background-color: var(--background-primary);

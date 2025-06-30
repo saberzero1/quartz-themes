@@ -366,7 +366,7 @@ body {
   --text-normal: #cccccc;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(#fcfcfc, #212121);
+  background-color: #fcfcfc;
   caret-color: #a68af9;
   color: #f0f0f0;
   contain: initial;
@@ -667,7 +667,7 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: light-dark(#fcfcfc, #212121);
+  background-color: #fcfcfc;
   background-color: var(--background-primary);
 
   @media all and ($mobile) {
@@ -680,12 +680,12 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
       background-color: var(--background-primary);
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
-        background-color: light-dark(#fcfcfc, #212121);
+        background-color: #fcfcfc;
         background-color: var(--background-primary);
         content: " ";
         display: block;
@@ -955,7 +955,7 @@ body {
   }
   /* CODE */
   pre {
-    background-color: light-dark(#e0e0e0, #363636);
+    background-color: #e0e0e0;
     border: 0px solid #292929;
     border-radius: 4px;
     min-height: 38px;
@@ -1022,7 +1022,7 @@ body {
   }
   code {
     -webkit-box-decoration-break: clone;
-    background-color: light-dark(#e0e0e0, #363636);
+    background-color: #e0e0e0;
     border: 0px solid #292929;
     border-radius: 4px;
     color: #f0f0f0;
@@ -1061,7 +1061,7 @@ body {
     position: absolute;
     top: 0;
     &:hover {
-      background-color: light-dark(#d4d4d4, #3f3f3f);
+      background-color: #d4d4d4;
     }
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -1112,7 +1112,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: light-dark(#fcfcfc, #212121);
+        background-color: #fcfcfc;
         background-color: var(--background-primary);
         left: -1rem;
       }
@@ -1318,7 +1318,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: light-dark(#fcfcfc, #212121);
+        background-color: #fcfcfc;
         border: 0.5pt solid #292929;
         border-radius: 12px;
         box-shadow:
@@ -1327,7 +1327,7 @@ body {
           0px 30px 90px #00000033;
         margin: 12vh auto;
         & > input {
-          background-color: light-dark(#fcfcfc, #212121);
+          background-color: #fcfcfc;
           border: none;
           border-bottom: 1px solid light-dark(#fcfcfc, #212121);
           border-radius: 0;
@@ -1354,8 +1354,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: #8a5cf540;
-            color: #f0f0f0;
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1371,7 +1370,7 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: light-dark(#d4d4d4, #3f3f3f);
+                background-color: #d4d4d4;
               }
               & > ul > li > p {
                 background-color: transparent;
@@ -1439,7 +1438,7 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: light-dark(#fcfcfc, #212121);
+    background-color: #fcfcfc;
     border: 1px solid #292929;
     border-radius: 8px;
     box-shadow:
@@ -1457,7 +1456,7 @@ body {
     background-color: var(--background-primary);
     & .popover-inner {
       border: 1px solid #292929;
-      background-color: light-dark(#fcfcfc, #212121);
+      background-color: #fcfcfc;
 
       border-radius: 8px;
       background-color: var(--background-primary);

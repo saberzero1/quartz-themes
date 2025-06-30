@@ -1487,22 +1487,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background: linear-gradient(
-              to right,
-              hsl(40.2deg, 87.2%, 63.1%),
-              hsl(40.2deg, 87.2%, 63.1%)
-            );
-            background-color: #669961b3;
-            background-position:
-              100% 100%,
-              0 100%;
-            background-repeat: no-repeat;
-            background-size:
-              100% 5px,
-              0 5px;
-            color: #c7c5c2;
-            padding: 2px 4px;
-            transition: background-size, 400ms;
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);

@@ -1241,10 +1241,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: rgba(138, 92, 245, 0.15);
-            border-radius: 0.2rem;
-            color: hsl(258, 29.33333%, 80%);
-            padding: 0.1rem 0.05rem;
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);
