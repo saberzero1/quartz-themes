@@ -668,6 +668,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
   background-color: light-dark(#ffffff, #1e1e1e);
+  background-color: var(--background-primary);
 
   @media all and ($mobile) {
     div.flex-component > div:has(> button.readermode) {
@@ -680,10 +681,12 @@ body {
     &.left:has(.explorer),
     &.right {
       background-color: light-dark(#ffffff, #1e1e1e);
+      background-color: var(--background-primary);
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
         background-color: light-dark(#ffffff, #1e1e1e);
+        background-color: var(--background-primary);
         content: " ";
         display: block;
         height: 100%;
@@ -1381,8 +1384,7 @@ body {
         light-dark(#fcfcfc, #212121),
         light-dark(#fcfcfc, #212121)
       );
-      border: 1px solid
-        light-dark(light-dark(#e3e3e3, #2a2a2a), light-dark(#e3e3e3, #2a2a2a));
+      border: 1px solid light-dark(#e3e3e3, #2a2a2a);
       border-radius: 5px;
       color: #dadada;
       font-family: inherit;
@@ -1409,11 +1411,7 @@ body {
         & > input {
           background-color: light-dark(#ffffff, #1e1e1e);
           border: none;
-          border-bottom: 1px solid
-            light-dark(
-              light-dark(#fcfcfc, #212121),
-              light-dark(#fcfcfc, #212121)
-            );
+          border-bottom: 1px solid light-dark(#fcfcfc, #212121);
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1524,8 +1522,7 @@ body {
   /* POPOVER */
   .popover {
     background-color: light-dark(#ffffff, #1e1e1e);
-    border: 1px solid
-      light-dark(light-dark(#e3e3e3, #2a2a2a), light-dark(#e3e3e3, #2a2a2a));
+    border: 1px solid light-dark(#e3e3e3, #2a2a2a);
     border-radius: 8px;
     box-shadow:
       0px 1px 2px #0000001f,
@@ -1541,8 +1538,7 @@ body {
     background-color: unset;
     border: unset;
     & .popover-inner {
-      border: 1px solid
-        light-dark(light-dark(#e3e3e3, #2a2a2a), light-dark(#e3e3e3, #2a2a2a));
+      border: 1px solid light-dark(#e3e3e3, #2a2a2a);
       background-color: light-dark(#ffffff, #1e1e1e);
 
       border-radius: 8px;

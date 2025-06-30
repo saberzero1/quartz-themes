@@ -8,13 +8,8 @@ on:
 jobs:
   build-and-test:
     if: ${{ github.repository == 'saberzero1/quartz-themes' }}
-    strategy:
-      matrix:
-        # os: [windows-latest, macos-latest, ubuntu-latest]
-        os: [ubuntu-latest]
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     permissions:
-      actions: write
       contents: write
     steps:
       - uses: actions/checkout@v4

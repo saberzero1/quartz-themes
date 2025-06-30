@@ -731,6 +731,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
   background-color: #0a0a0b;
+  background-color: var(--background-primary);
 
   @media all and ($mobile) {
     div.flex-component > div:has(> button.readermode) {
@@ -743,10 +744,12 @@ body {
     &.left:has(.explorer),
     &.right {
       background-color: #0a0a0b;
+      background-color: var(--background-primary);
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
         background-color: #0a0a0b;
+        background-color: var(--background-primary);
         content: " ";
         display: block;
         height: 100%;

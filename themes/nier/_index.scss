@@ -664,6 +664,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
   background-color: light-dark(#fafafa, #ddd8c7);
+  background-color: var(--background-primary);
 
   @media all and ($mobile) {
     div.flex-component > div:has(> button.readermode) {
@@ -676,10 +677,12 @@ body {
     &.left:has(.explorer),
     &.right {
       background-color: light-dark(#fafafa, #ddd8c7);
+      background-color: var(--background-primary);
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
         background-color: light-dark(#fafafa, #ddd8c7);
+        background-color: var(--background-primary);
         content: " ";
         display: block;
         height: 100%;
@@ -1329,8 +1332,7 @@ body {
     & > .search-container {
       & > .search-space {
         background-color: light-dark(#fafafa, #ddd8c7);
-        border: 0.5pt solid
-          light-dark(light-dark(#dbdbdc, #18191e), light-dark(#dbdbdc, #18191e));
+        border: 0.5pt solid light-dark(#dbdbdc, #18191e);
         border-radius: 12px;
         box-shadow:
           0px 1.8px 7.3px #00000012,
