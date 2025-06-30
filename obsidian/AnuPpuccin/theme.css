@@ -3924,9 +3924,11 @@ input.slider,
 }
 
 /*-Smoother popover transition-*/
+/*
 .popover.hover-popover.is-loaded {
   animation: fade 0.2s;
 }
+*/
 
 .popover .markdown-embed-link {
   --icon-color: var(--text-normal);

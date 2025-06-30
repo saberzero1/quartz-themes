@@ -4133,7 +4133,7 @@ body.is-tablet:not(.tablet-menu-off) .menu-separator {
 .popover {
   -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(16px);
-  animation: var(--anim-duration-fast) fadeInScale;
+  /* animation: var(--anim-duration-fast) fadeInScale; */
   border-radius: var(--radius-l);
   background-color: var(--workspace-background-translucent);
 }

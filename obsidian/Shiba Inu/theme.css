@@ -789,9 +789,11 @@ span[alt="shib-embed"] .markdown-embed {
   background-color: rgb(var(--exterior));
 }
 
+/*
 .popover.hover-popover.is-loaded {
   animation: 0.2s fade;
 }
+*/
 
 .popover .markdown-embed-link {
   --icon-color: var(--text-normal);

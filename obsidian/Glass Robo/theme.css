@@ -4167,7 +4167,7 @@ input[type="checkbox"] {
   animation: scale-up-center 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
-.popover,
+/* .popover, */
 .snw-ref-title-popover,
 .workspace-split.mod-vertical.mod-root .workspace-tabs:not(.mod-stacked) {
   animation: 0.3s pop cubic-bezier(0.17, 0.89, 0.32, 1.27);
