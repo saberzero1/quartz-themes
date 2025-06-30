@@ -15,6 +15,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     permissions:
       contents: write
+      workflows: write
     steps:
       - uses: actions/checkout@v4
         with:
