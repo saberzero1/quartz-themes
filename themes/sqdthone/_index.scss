@@ -1037,6 +1037,7 @@ body {
           light-dark(hsl(15, 20%, 92%), hsl(300, 6%, 14%)),
           light-dark(hsl(15, 20%, 92%), hsl(300, 6%, 14%))
         );
+        background-color: var(--background-primary);
         left: -1rem;
       }
       .folder-container {

@@ -1178,6 +1178,7 @@ body {
           light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
           light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
         );
+        background-color: var(--background-primary);
         left: -1rem;
       }
       .folder-container {
