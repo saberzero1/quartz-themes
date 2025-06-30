@@ -1899,7 +1899,18 @@ body {
           }
           & .highlight {
             background-color: transparent;
-            color: #7988ec;
+            color: light-dark(
+              hsl(
+                light-dark(181, 181),
+                light-dark(100%, 100%),
+                light-dark(35%, 35%)
+              ),
+              hsl(
+                light-dark(181, 181),
+                light-dark(100%, 100%),
+                light-dark(35%, 35%)
+              )
+            );
             font-weight: bold;
             background-color: #ffd00066;
             border-radius: 6px;

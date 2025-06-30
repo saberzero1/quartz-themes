@@ -3431,7 +3431,8 @@ body {
         light-dark(#c9d3cb, #020704),
         light-dark(#c9d3cb, #020704)
       );
-      border: 1px solid light-dark(#c9d3cb, #020704);
+      border: 1px solid
+        light-dark(light-dark(#c9d3cb, #020704), light-dark(#c9d3cb, #020704));
       border-radius: 5px;
       color: light-dark(#20542c, #99e5b5);
       font-family: inherit;
@@ -3458,7 +3459,11 @@ body {
         & > input {
           background-color: light-dark(#d7ddd9, #0b1510);
           border: none;
-          border-bottom: 1px solid light-dark(#d7ddd9, #0b1510);
+          border-bottom: 1px solid
+            light-dark(
+              light-dark(#d7ddd9, #0b1510),
+              light-dark(#d7ddd9, #0b1510)
+            );
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -3569,7 +3574,8 @@ body {
   /* POPOVER */
   .popover {
     background-color: light-dark(#d7ddd9, #0b1510);
-    border: 1px solid light-dark(#c9d3cb, #020704);
+    border: 1px solid
+      light-dark(light-dark(#c9d3cb, #020704), light-dark(#c9d3cb, #020704));
     border-radius: 8px;
     box-shadow:
       0px 1px 2px #0000001f,
@@ -3585,7 +3591,8 @@ body {
     background-color: unset;
     border: unset;
     & .popover-inner {
-      border: 1px solid light-dark(#c9d3cb, #020704);
+      border: 1px solid
+        light-dark(light-dark(#c9d3cb, #020704), light-dark(#c9d3cb, #020704));
       background-color: light-dark(#d7ddd9, #0b1510);
 
       border-radius: 8px;

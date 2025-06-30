@@ -22,7 +22,9 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
+  --graph-line: #d4d0c8;
   --mono-rgb-100: 0, 0, 0;
+  --graph-line: #d4d0c8;
   --mono-rgb-100: 0, 0, 0;
 }
 
@@ -191,6 +193,12 @@ html[saved-theme="light"] {
 }
 
 :root {
+  --background-modifier-border: light-dark(#707070, #707070);
+  --background-modifier-border-focus: light-dark(#d4d0c8, #d4d0c8);
+  --background-modifier-border-hover: light-dark(#d4d0c8, #d4d0c8);
+  --background-primary: light-dark(#bdbebd, #bdbebd);
+  --bold-color: light-dark(#000000, #000000);
+  --code-background: light-dark(#ffffff, #ffffff);
   --color-accent-2: light-dark(hsl(237, 102%, 27.6%), hsl(235, 105%, 30.96%));
   --color-accent-hsl: light-dark(#00007a, #00007a);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
@@ -209,6 +217,10 @@ html[saved-theme="light"] {
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
+  --h1-color: light-dark(#34548a, #34548a);
+  --italic-color: light-dark(#343b58, #343b58);
+  --text-faint: light-dark(#4f5057, #4f5057);
+  --text-highlight-bg: light-dark(#485e3066, #485e3066);
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
   --text-faint: var(--color-base-50);
@@ -245,34 +257,34 @@ html {
   font-size: 16px;
 }
 body {
-  --background-modifier-border: #999999;
-  --background-modifier-border-focus: #d4d0c8;
-  --background-modifier-border-hover: #d4d0c8;
-  --background-modifier-hover: #ffffff11;
-  --background-primary: #bdbebd;
+  --background-modifier-border: light-dark(#707070, #707070);
+  --background-modifier-border-focus: light-dark(#d4d0c8, #d4d0c8);
+  --background-modifier-border-hover: light-dark(#d4d0c8, #d4d0c8);
+  --background-modifier-hover: #00000011;
+  --background-primary: light-dark(#bdbebd, #bdbebd);
   --background-primary-alt: #111;
-  --bold-color: #000000;
+  --bold-color: light-dark(#000000, #000000);
   --bold-weight: 800;
   --checkbox-border-color: #4f5057;
-  --checkbox-border-color-hover: #b3b3b3;
+  --checkbox-border-color-hover: #5c5c5c;
   --checkbox-color: #7b7d00;
-  --checkbox-color-hover: hsl(237, 102%, 27.6%);
+  --checkbox-color-hover: #d4d0c8;
   --checkbox-marker-color: #d4d0c8;
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --code-background: #ffffff;
+  --code-background: light-dark(#ffffff, #ffffff);
   --code-comment: #4f5057;
-  --code-function: #e0de71;
-  --code-important: #e9973f;
-  --code-keyword: #fa99cd;
+  --code-function: #e0ac00;
+  --code-important: #ec7500;
+  --code-keyword: #d53984;
   --code-normal: #181612;
-  --code-property: #53dfdd;
-  --code-punctuation: #b3b3b3;
-  --code-string: #44cf6e;
-  --code-tag: #fb464c;
-  --code-value: #a882ff;
+  --code-property: #00bfbc;
+  --code-punctuation: #5c5c5c;
+  --code-string: #08b94e;
+  --code-tag: #e93147;
+  --code-value: #7852ee;
   --collapse-icon-color: #4f5057;
-  --collapse-icon-color-collapsed: hsl(237, 102%, 27.6%);
+  --collapse-icon-color-collapsed: hsl(239, 101%, 25.8%);
   --color-accent-2: light-dark(hsl(237, 102%, 27.6%), hsl(235, 105%, 30.96%));
   --color-accent-hsl: light-dark(#00007a, #00007a);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
@@ -301,49 +313,48 @@ body {
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif;
   --font-weight: 400;
-  --graph-line: #d4d0c8;
-  --graph-node-tag: #44cf6e;
+  --graph-line: #d4d4d4;
+  --graph-node-tag: #08b94e;
   --graph-node-unresolved: #4f5057;
-  --h1-color: #34548a;
+  --h1-color: light-dark(#34548a, #34548a);
   --h1-font: inherit;
   --h3-line-height: 1.3;
   --hr-color: transparent;
   --hr-thickness: 2px;
-  --icon-color: #b3b3b3;
+  --icon-color: #5c5c5c;
   --inline-title-color: #34548a;
   --inline-title-font: inherit;
   --interactive-accent-hsl: 240, 100%, 24%;
-  --italic-color: #343b58;
-  --link-color: hsl(237, 102%, 27.6%);
-  --link-color-hover: hsl(235, 105%, 30.96%);
-  --link-external-color: hsl(237, 102%, 27.6%);
-  --link-external-color-hover: hsl(235, 105%, 30.96%);
+  --italic-color: light-dark(#343b58, #343b58);
+  --link-color: hsl(239, 101%, 25.8%);
+  --link-color-hover: hsl(237, 102%, 27.6%);
+  --link-external-color: hsl(239, 101%, 25.8%);
+  --link-external-color-hover: hsl(237, 102%, 27.6%);
   --link-external-filter: none;
   --link-weight: 600;
-  --mono-rgb-100: 0, 0, 0;
   --p-spacing: 1rem;
-  --search-icon-color: #b3b3b3;
+  --search-icon-color: #5c5c5c;
   --tag-background: #00007a1a;
   --tag-background-hover: #00007a33;
   --tag-border-color: #00007a26;
   --tag-border-color-hover: #00007a26;
   --tag-border-width: 0px;
-  --tag-color: hsl(237, 102%, 27.6%);
-  --tag-color-hover: hsl(237, 102%, 27.6%);
+  --tag-color: hsl(239, 101%, 25.8%);
+  --tag-color-hover: hsl(239, 101%, 25.8%);
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-radius: 2em;
   --tag-weight: inherit;
   --text-accent: #00007a;
-  --text-accent-hover: hsl(235, 105%, 30.96%);
-  --text-faint: #4f5057;
-  --text-highlight-bg: #485e3066;
-  --text-muted: #b3b3b3;
-  --text-normal: #dadada;
+  --text-accent-hover: hsl(237, 102%, 27.6%);
+  --text-faint: light-dark(#4f5057, #4f5057);
+  --text-highlight-bg: light-dark(#485e3066, #485e3066);
+  --text-muted: #5c5c5c;
+  --text-normal: #222222;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: #d4d0c8;
-  caret-color: hsl(237, 102%, 27.6%);
+  background-color: light-dark(#bdbebd, #bdbebd);
+  caret-color: hsl(239, 101%, 25.8%);
   color: #181612;
   contain: initial;
   font-family:
@@ -406,7 +417,7 @@ body {
 :root,
 html {
   .callout {
-    --callout-color: 2, 122, 255;
+    --callout-color: 8, 109, 221;
     background-color: #9e9e9e1a;
     border-color: #9e9e9e40;
     border-radius: 4px;
@@ -422,175 +433,175 @@ html {
     overflow-x: auto;
     overflow-y: hidden;
     &[data-callout] {
-      --callout-color: 2, 122, 255;
+      --callout-color: 8, 109, 221;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="abstract"] {
-      --callout-color: 83, 223, 221;
+      --callout-color: 0, 191, 188;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="summary"] {
-      --callout-color: 83, 223, 221;
+      --callout-color: 0, 191, 188;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="tldr"] {
-      --callout-color: 83, 223, 221;
+      --callout-color: 0, 191, 188;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="info"] {
-      --callout-color: 2, 122, 255;
+      --callout-color: 8, 109, 221;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="todo"] {
-      --callout-color: 2, 122, 255;
+      --callout-color: 8, 109, 221;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="important"] {
-      --callout-color: 83, 223, 221;
+      --callout-color: 0, 191, 188;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="tip"] {
-      --callout-color: 83, 223, 221;
+      --callout-color: 0, 191, 188;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="hint"] {
-      --callout-color: 83, 223, 221;
+      --callout-color: 0, 191, 188;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="success"] {
-      --callout-color: 68, 207, 110;
+      --callout-color: 8, 185, 78;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="check"] {
-      --callout-color: 68, 207, 110;
+      --callout-color: 8, 185, 78;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="done"] {
-      --callout-color: 68, 207, 110;
+      --callout-color: 8, 185, 78;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="question"] {
-      --callout-color: 233, 151, 63;
+      --callout-color: 236, 117, 0;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="help"] {
-      --callout-color: 233, 151, 63;
+      --callout-color: 236, 117, 0;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="faq"] {
-      --callout-color: 233, 151, 63;
+      --callout-color: 236, 117, 0;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="warning"] {
-      --callout-color: 233, 151, 63;
+      --callout-color: 236, 117, 0;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="caution"] {
-      --callout-color: 233, 151, 63;
+      --callout-color: 236, 117, 0;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="attention"] {
-      --callout-color: 233, 151, 63;
+      --callout-color: 236, 117, 0;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="failure"] {
-      --callout-color: 251, 70, 76;
+      --callout-color: 233, 49, 71;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="fail"] {
-      --callout-color: 251, 70, 76;
+      --callout-color: 233, 49, 71;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="missing"] {
-      --callout-color: 251, 70, 76;
+      --callout-color: 233, 49, 71;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="danger"] {
-      --callout-color: 251, 70, 76;
+      --callout-color: 233, 49, 71;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="error"] {
-      --callout-color: 251, 70, 76;
+      --callout-color: 233, 49, 71;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="bug"] {
-      --callout-color: 251, 70, 76;
+      --callout-color: 233, 49, 71;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="example"] {
-      --callout-color: 168, 130, 255;
+      --callout-color: 120, 82, 238;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -643,7 +654,7 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: #d4d0c8;
+  background-color: light-dark(#bdbebd, #bdbebd);
 
   @media all and ($mobile) {
     div.flex-component > div:has(> button.readermode) {
@@ -655,11 +666,11 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: #d4d0c8;
+      background-color: light-dark(#bdbebd, #bdbebd);
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
-        background-color: #d4d0c8;
+        background-color: light-dark(#bdbebd, #bdbebd);
         content: " ";
         display: block;
         height: 100%;
@@ -822,7 +833,7 @@ body {
   /* HEADINGS */
   h1 {
     --font-weight: 700;
-    color: #34548a;
+    color: light-dark(#34548a, #34548a);
     font-family: inherit;
     font-size: 1.4rem;
     font-style: normal;
@@ -842,7 +853,7 @@ body {
   h2.page-title a,
   h2 {
     --font-weight: 600;
-    color: #34548a;
+    color: light-dark(#34548a, #34548a);
     font-family: inherit;
     font-size: 1.3rem;
     font-style: normal;
@@ -859,7 +870,7 @@ body {
   }
   h3 {
     --font-weight: 600;
-    color: #34548a;
+    color: light-dark(#34548a, #34548a);
     font-family: inherit;
     font-size: 1.2rem;
     font-style: normal;
@@ -876,7 +887,7 @@ body {
   }
   h4 {
     --font-weight: 600;
-    color: #34548a;
+    color: light-dark(#34548a, #34548a);
     font-family: inherit;
     font-size: 1.1rem;
     font-style: normal;
@@ -893,7 +904,7 @@ body {
   }
   h5 {
     --font-weight: 600;
-    color: #34548a;
+    color: light-dark(#34548a, #34548a);
     font-family: inherit;
     font-size: 1rem;
     font-style: normal;
@@ -910,7 +921,7 @@ body {
   }
   h6 {
     --font-weight: 600;
-    color: #34548a;
+    color: light-dark(#34548a, #34548a);
     font-family: inherit;
     font-size: 0.9rem;
     font-style: normal;
@@ -927,7 +938,7 @@ body {
   }
   /* CODE */
   pre {
-    background-color: #ffffff;
+    background-color: light-dark(#ffffff, #ffffff);
     border: 0px solid transparent;
     border-radius: 4px;
     min-height: 38px;
@@ -994,7 +1005,7 @@ body {
   }
   code {
     -webkit-box-decoration-break: clone;
-    background-color: #ffffff;
+    background-color: light-dark(#ffffff, #ffffff);
     border: 0px solid transparent;
     border-radius: 4px;
     color: #181612;
@@ -1009,7 +1020,7 @@ body {
   .clipboard-button {
     background-color: transparent;
     box-shadow: none;
-    color: #b3b3b3;
+    color: #5c5c5c;
     font-family:
       "??",
       "??",
@@ -1033,7 +1044,7 @@ body {
     position: absolute;
     top: 0;
     &:hover {
-      background-color: #ffffff26;
+      background-color: #00000026;
     }
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -1046,13 +1057,13 @@ body {
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: #4f5057;
+    color: light-dark(#4f5057, #4f5057);
   }
   /* BACKLINKS */
   .backlinks {
     h3 {
       --font-weight: 600;
-      color: #34548a;
+      color: light-dark(#34548a, #34548a);
       font-family: inherit;
       font-size: 1.2rem;
       font-style: normal;
@@ -1080,11 +1091,11 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: #34548a;
+      color: light-dark(#34548a, #34548a);
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: #d4d0c8;
+        background-color: light-dark(#bdbebd, #bdbebd);
         left: -1rem;
       }
       .folder-container {
@@ -1122,7 +1133,7 @@ body {
         -webkit-mask-image: var(--folder-open-icon);
       }
       .folder-outer > ul.content {
-        border-inline-start: 1px solid #ffffff66;
+        border-inline-start: 1px solid #00000066;
         margin-bottom: 1px;
         margin-inline-start: 12px;
         padding-inline-start: 4px;
@@ -1143,8 +1154,8 @@ body {
           color: inherit;
           &.active,
           &:hover {
-            background-color: #3a6ea5;
-            color: #ffffff;
+            background-color: light-dark(#00007b, #00007b);
+            color: light-dark(#ffffff, #ffffff);
             font-weight: inherit;
           }
           &[data-for$="/index"] {
@@ -1171,11 +1182,11 @@ body {
   }
   /* TOC */
   .toc {
-    color: #34548a;
+    color: light-dark(#34548a, #34548a);
     button.toc-header {
       h3 {
         --font-weight: 600;
-        color: #34548a;
+        color: light-dark(#34548a, #34548a);
         font-family: inherit;
         font-size: 1.2rem;
         font-style: normal;
@@ -1186,7 +1197,7 @@ body {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
       }
-      color: #34548a;
+      color: light-dark(#34548a, #34548a);
       color: inherit;
     }
     ul.toc-content.overflow {
@@ -1205,7 +1216,7 @@ body {
   .toc {
     h3 {
       --font-weight: 600;
-      color: #34548a;
+      color: light-dark(#34548a, #34548a);
       font-family: inherit;
       font-size: 1.2rem;
       font-style: normal;
@@ -1270,7 +1281,8 @@ body {
       color: var(--button-secondary-fg-color);
       -webkit-app-region: no-drag;
       background: transparent;
-      border: 1px solid transparent;
+      border: 1px solid
+        light-dark(light-dark(#707070, #999999), light-dark(#707070, #999999));
       border-radius: 5px;
       color: #181612;
       font-family: inherit;
@@ -1286,8 +1298,8 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: #d4d0c8;
-        border: 0.5pt solid #555555;
+        background-color: light-dark(#bdbebd, #bdbebd);
+        border: 0.5pt solid #bdbdbd;
         border-radius: 12px;
         box-shadow:
           0px 1.8px 7.3px #00000012,
@@ -1295,9 +1307,9 @@ body {
           0px 30px 90px #00000033;
         margin: 12vh auto;
         & > input {
-          background-color: #d4d0c8;
+          background-color: light-dark(#bdbebd, #bdbebd);
           border: none;
-          border-bottom: 1px solid #d4d0c8;
+          border-bottom: 1px solid light-dark(#bdbebd, #bdbebd);
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1322,7 +1334,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: #485e3066;
+            background-color: light-dark(#485e3066, #485e3066);
             color: #181612;
           }
           & > .preview-container {
@@ -1339,13 +1351,13 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: #ffffff26;
+                background-color: #00000026;
               }
               & > ul > li > p {
                 background-color: transparent;
                 color: #181612;
                 &.match-tag {
-                  color: hsl(237, 102%, 27.6%);
+                  color: hsl(239, 101%, 25.8%);
                 }
               }
             }
@@ -1407,13 +1419,14 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: #d4d0c8;
-    border: 1px solid transparent;
+    background-color: light-dark(#bdbebd, #bdbebd);
+    border: 1px solid
+      light-dark(light-dark(#707070, #999999), light-dark(#707070, #999999));
     border-radius: 8px;
     box-shadow:
-      0px 1px 2px #0000001f,
-      0px 3.4px 6.7px #0000002e,
-      0px 15px 30px #0000004d;
+      0px 1px 2px #00000007,
+      0px 3.4px 6.7px #0000000b,
+      0px 15px 30px #00000012;
     display: flex;
     max-height: 95vh;
     position: absolute;
@@ -1424,8 +1437,9 @@ body {
     background-color: unset;
     border: unset;
     & .popover-inner {
-      border: 1px solid transparent;
-      background-color: #d4d0c8;
+      border: 1px solid
+        light-dark(light-dark(#707070, #999999), light-dark(#707070, #999999));
+      background-color: light-dark(#bdbebd, #bdbebd);
 
       border-radius: 8px;
     }

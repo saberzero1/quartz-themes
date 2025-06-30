@@ -23,9 +23,11 @@ html[saved-theme="dark"] {
     color: var(--shiki-dark);
   }
   --mono-rgb-100: 255, 255, 255;
+  --p-spacing: 0.25rem;
 
   --text-a: #fe750e;
   --mono-rgb-100: 255, 255, 255;
+  --p-spacing: 0.25rem;
 
   --text-a: #fe750e;
 }
@@ -46,9 +48,11 @@ html[saved-theme="light"] {
     color: var(--shiki-light);
   }
   --mono-rgb-100: 0, 0, 0;
+  --p-spacing: 0.25rem;
 
   --text-a: #fe750e;
   --mono-rgb-100: 0, 0, 0;
+  --p-spacing: 0.25rem;
 
   --text-a: #fe750e;
 }
@@ -342,7 +346,7 @@ body {
   --link-external-color-hover: #fe9109;
   --link-external-filter: none;
   --link-weight: var(--font-weight);
-  --p-spacing: 0.25rem;
+  --p-spacing: 1rem;
   --search-icon-color: #b3b3b3;
   --tag-background: #8a5cf51a;
   --tag-background-hover: #8a5cf533;

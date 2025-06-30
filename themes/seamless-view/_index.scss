@@ -1316,7 +1316,11 @@ body {
         & > input {
           background-color: light-dark(#fafafa, #242424);
           border: none;
-          border-bottom: 1px solid light-dark(#e3e3e3, #2a2a2a);
+          border-bottom: 1px solid
+            light-dark(
+              light-dark(#e3e3e3, #2a2a2a),
+              light-dark(#ffffff, #1e1e1e)
+            );
           border-radius: 0;
           font-size: 16px;
           height: 48px;

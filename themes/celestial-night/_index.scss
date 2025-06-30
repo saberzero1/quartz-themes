@@ -22,8 +22,18 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
+  --inline-title-font:
+    "Hatolie", "??", "Bookerly", "Source Han Serif", "Noto Serif JP",
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
   --mono-rgb-100: 255, 255, 255;
   --text-accent: hsl(38, 102%, 115%);
+  --inline-title-font:
+    "Hatolie", "??", "Bookerly", "Source Han Serif", "Noto Serif JP",
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
   --mono-rgb-100: 255, 255, 255;
   --text-accent: hsl(38, 102%, 115%);
 }
@@ -174,6 +184,7 @@ html[saved-theme="dark"] {
 }
 
 :root {
+  --background-modifier-border: light-dark(#3b3f56, #3b3f56);
   --color-accent-2: light-dark(hsl(38, 102%, 115%), hsl(36, 105%, 129%));
   --color-accent-hsl: light-dark(#ffffff, #ffffff);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
@@ -228,7 +239,7 @@ html {
   font-size: 16px;
 }
 body {
-  --background-modifier-border: #3b3f56;
+  --background-modifier-border: light-dark(#3b3f56, #3b3f56);
   --background-modifier-border-focus: #424d63;
   --background-modifier-border-hover: #2f3850;
   --background-modifier-hover: #ffffff11;
@@ -245,15 +256,15 @@ body {
   --checkbox-size: 20px;
   --code-background: #1d1f2e;
   --code-comment: #4f5971;
-  --code-function: #e0de71;
-  --code-important: #e9973f;
-  --code-keyword: #fa99cd;
+  --code-function: #ffde73;
+  --code-important: #fbb36c;
+  --code-keyword: #ff94c8;
   --code-normal: #b1b7cc;
-  --code-property: #53dfdd;
+  --code-property: #6fd2c2;
   --code-punctuation: #737b94;
-  --code-string: #44cf6e;
-  --code-tag: #fb464c;
-  --code-value: #a882ff;
+  --code-string: #a5d18c;
+  --code-tag: #e46f7d;
+  --code-value: #b584c7;
   --collapse-icon-color: #4f5971;
   --collapse-icon-color-collapsed: hsl(38, 102%, 115%);
   --color-accent-2: light-dark(hsl(38, 102%, 115%), hsl(36, 105%, 129%));
@@ -285,7 +296,7 @@ body {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-weight: 400;
   --graph-line: #2f3850;
-  --graph-node-tag: #44cf6e;
+  --graph-node-tag: #a5d18c;
   --graph-node-unresolved: #4f5971;
   --h1-color: inherit;
   --h1-font: "Merienda";
@@ -294,11 +305,7 @@ body {
   --hr-thickness: 2px;
   --icon-color: #737b94;
   --inline-title-color: inherit;
-  --inline-title-font:
-    "Hatolie", "??", "Bookerly", "Source Han Serif", "Noto Serif JP",
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+  --inline-title-font: "Merienda";
   --interactive-accent-hsl: 41, 100%, 100%;
   --italic-color: inherit;
   --link-color: hsl(38, 102%, 115%);
@@ -307,7 +314,6 @@ body {
   --link-external-color-hover: hsl(36, 105%, 129%);
   --link-external-filter: none;
   --link-weight: 400;
-  --mono-rgb-100: 255, 255, 255;
   --p-spacing: 1rem;
   --search-icon-color: #737b94;
   --tag-background: #161721;
@@ -394,7 +400,7 @@ body {
 :root,
 html {
   .callout {
-    --callout-color: 2, 122, 255;
+    --callout-color: 86, 174, 214;
     background-color: #1d1f2e;
     border: 1px solid #4a4e62fb;
     border-color: #9e9e9e40;
@@ -412,175 +418,175 @@ html {
     overflow-x: auto;
     overflow-y: hidden;
     &[data-callout] {
-      --callout-color: 2, 122, 255;
+      --callout-color: 86, 174, 214;
       background-color: #1d1f2e;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="abstract"] {
-      --callout-color: 83, 223, 221;
+      --callout-color: 111, 210, 194;
       background-color: #1d1f2e;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="summary"] {
-      --callout-color: 83, 223, 221;
+      --callout-color: 111, 210, 194;
       background-color: #1d1f2e;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="tldr"] {
-      --callout-color: 83, 223, 221;
+      --callout-color: 111, 210, 194;
       background-color: #1d1f2e;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="info"] {
-      --callout-color: 2, 122, 255;
+      --callout-color: 86, 174, 214;
       background-color: #1d1f2e;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="todo"] {
-      --callout-color: 2, 122, 255;
+      --callout-color: 86, 174, 214;
       background-color: #1d1f2e;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="important"] {
-      --callout-color: 83, 223, 221;
+      --callout-color: 111, 210, 194;
       background-color: #1d1f2e;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="tip"] {
-      --callout-color: 83, 223, 221;
+      --callout-color: 111, 210, 194;
       background-color: #1d1f2e;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="hint"] {
-      --callout-color: 83, 223, 221;
+      --callout-color: 111, 210, 194;
       background-color: #1d1f2e;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="success"] {
-      --callout-color: 68, 207, 110;
+      --callout-color: 165, 209, 140;
       background-color: #1d1f2e;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="check"] {
-      --callout-color: 68, 207, 110;
+      --callout-color: 165, 209, 140;
       background-color: #1d1f2e;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="done"] {
-      --callout-color: 68, 207, 110;
+      --callout-color: 165, 209, 140;
       background-color: #1d1f2e;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="question"] {
-      --callout-color: 233, 151, 63;
+      --callout-color: 251, 179, 108;
       background-color: #1d1f2e;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="help"] {
-      --callout-color: 233, 151, 63;
+      --callout-color: 251, 179, 108;
       background-color: #1d1f2e;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="faq"] {
-      --callout-color: 233, 151, 63;
+      --callout-color: 251, 179, 108;
       background-color: #1d1f2e;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="warning"] {
-      --callout-color: 233, 151, 63;
+      --callout-color: 251, 179, 108;
       background-color: #1d1f2e;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="caution"] {
-      --callout-color: 233, 151, 63;
+      --callout-color: 251, 179, 108;
       background-color: #1d1f2e;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="attention"] {
-      --callout-color: 233, 151, 63;
+      --callout-color: 251, 179, 108;
       background-color: #1d1f2e;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="failure"] {
-      --callout-color: 251, 70, 76;
+      --callout-color: 228, 111, 125;
       background-color: #1d1f2e;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="fail"] {
-      --callout-color: 251, 70, 76;
+      --callout-color: 228, 111, 125;
       background-color: #1d1f2e;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="missing"] {
-      --callout-color: 251, 70, 76;
+      --callout-color: 228, 111, 125;
       background-color: #1d1f2e;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="danger"] {
-      --callout-color: 251, 70, 76;
+      --callout-color: 228, 111, 125;
       background-color: #1d1f2e;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="error"] {
-      --callout-color: 251, 70, 76;
+      --callout-color: 228, 111, 125;
       background-color: #1d1f2e;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="bug"] {
-      --callout-color: 251, 70, 76;
+      --callout-color: 228, 111, 125;
       background-color: #1d1f2e;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="example"] {
-      --callout-color: 168, 130, 255;
+      --callout-color: 181, 132, 199;
       background-color: #1d1f2e;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1263,7 +1269,7 @@ body {
       color: var(--button-secondary-fg-color);
       -webkit-app-region: no-drag;
       background: transparent;
-      border: 1px solid transparent;
+      border: 1px solid light-dark(#3b3f56, #3b3f56);
       border-radius: 5px;
       color: #b1b7cc;
       font-family: inherit;
@@ -1401,7 +1407,7 @@ body {
   /* POPOVER */
   .popover {
     background-color: #14141e;
-    border: 1px solid transparent;
+    border: 1px solid light-dark(#3b3f56, #3b3f56);
     border-radius: 26px;
     box-shadow:
       0px 1px 2px #0000001f,
@@ -1417,7 +1423,7 @@ body {
     background-color: unset;
     border: unset;
     & .popover-inner {
-      border: 1px solid transparent;
+      border: 1px solid light-dark(#3b3f56, #3b3f56);
       background-color: #14141e;
 
       border-radius: 26px;

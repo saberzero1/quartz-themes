@@ -85,7 +85,18 @@ html[saved-theme="light"] {
 }
 
 :root {
+  --background-modifier-border-focus: light-dark(#f5725b, #f5725b);
   --background-primary: light-dark(#fffcf4, #282828);
+  --code-comment: light-dark(#c585cc, #c585cc);
+  --code-function: light-dark(#53dfdd, #53dfdd);
+  --code-important: light-dark(#e9973f, #e9973f);
+  --code-keyword: light-dark(#44cf6e, #44cf6e);
+  --code-normal: light-dark(#fffcf4, #fffcf4);
+  --code-property: light-dark(#fffcf4, #fffcf4);
+  --code-punctuation: light-dark(#fffcf4, #fffcf4);
+  --code-string: light-dark(#53dfdd, #53dfdd);
+  --code-tag: light-dark(#fb464c, #fb464c);
+  --code-value: light-dark(#027aff, #027aff);
   --color-accent-2: light-dark(#f9958a, #fdbab6);
   --color-accent-hsl: light-dark(#f5725b, #f5725b);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
@@ -147,7 +158,7 @@ html {
 }
 body {
   --background-modifier-border: #363636;
-  --background-modifier-border-focus: #f5725b;
+  --background-modifier-border-focus: light-dark(#f5725b, #f5725b);
   --background-modifier-border-hover: #3f3f3f;
   --background-modifier-hover: #ffffff11;
   --background-primary: light-dark(#fffcf4, #282828);
@@ -162,16 +173,16 @@ body {
   --checkbox-radius: 0;
   --checkbox-size: 16px;
   --code-background: #fffcf4;
-  --code-comment: #c585cc;
-  --code-function: #53dfdd;
-  --code-important: #e9973f;
-  --code-keyword: #44cf6e;
-  --code-normal: #fffcf4;
-  --code-property: #fffcf4;
-  --code-punctuation: #fffcf4;
-  --code-string: #53dfdd;
-  --code-tag: #fb464c;
-  --code-value: #027aff;
+  --code-comment: light-dark(#c585cc, #c585cc);
+  --code-function: light-dark(#53dfdd, #53dfdd);
+  --code-important: light-dark(#e9973f, #e9973f);
+  --code-keyword: light-dark(#44cf6e, #44cf6e);
+  --code-normal: light-dark(#fffcf4, #fffcf4);
+  --code-property: light-dark(#fffcf4, #fffcf4);
+  --code-punctuation: light-dark(#fffcf4, #fffcf4);
+  --code-string: light-dark(#53dfdd, #53dfdd);
+  --code-tag: light-dark(#fb464c, #fb464c);
+  --code-value: light-dark(#027aff, #027aff);
   --collapse-icon-color: rgba(#fffcf4, 0.5);
   --collapse-icon-color-collapsed: #ff8671;
   --color-accent-2: light-dark(#f9958a, #fdbab6);
@@ -898,7 +909,7 @@ body {
     background-color: #fffcf4;
     border: 0px solid transparent;
     border-radius: 0px;
-    color: #fffcf4;
+    color: light-dark(#000000, #fffcf4);
     font-family:
       "??", "Special Elite", "TT2020 Base", ui-monospace, SFMono-Regular,
       "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono",

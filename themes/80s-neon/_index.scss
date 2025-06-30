@@ -23,9 +23,7 @@ html[saved-theme="dark"] {
     color: var(--shiki-dark);
   }
   --mono-rgb-100: 255, 255, 255;
-  --text-accent: #a68af9;
   --mono-rgb-100: 255, 255, 255;
-  --text-accent: #a68af9;
 }
 
 :root:root:root {
@@ -615,6 +613,10 @@ body hr {
 }
 
 :root {
+  --accent-2: light-dark(#00ffff, #00ffff);
+  --background-modifier-border: light-dark(#00ffff, #00ffff);
+  --background-primary: light-dark(#2b213a, #2b213a);
+  --background-primary-alt: light-dark(#171520, #171520);
   --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
@@ -633,6 +635,12 @@ body hr {
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
+  --text-accent: light-dark(#ff1690, #ff1690);
+  --text-accent-hover: light-dark(#7a6ae6, #7a6ae6);
+  --text-faint: light-dark(#bd93f9, #bd93f9);
+  --text-highlight-bg: light-dark(#ffd319, #ffd319);
+  --text-muted: light-dark(#ff79c6, #ff79c6);
+  --text-normal: light-dark(#ff00ff, #ff00ff);
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
   --text-faint: var(--color-base-50);
@@ -669,19 +677,19 @@ html {
   font-size: 16px;
 }
 body {
-  --accent-2: #00ffff;
-  --background-modifier-border: #00ffff;
+  --accent-2: light-dark(#00ffff, #00ffff);
+  --background-modifier-border: light-dark(#00ffff, #00ffff);
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;
   --background-modifier-hover: #ffffff11;
-  --background-primary: #2b213a;
-  --background-primary-alt: #171520;
+  --background-primary: light-dark(#2b213a, #2b213a);
+  --background-primary-alt: light-dark(#171520, #171520);
   --bold-color: inherit;
   --bold-weight: 800;
   --checkbox-border-color: #ffdcff40;
   --checkbox-border-color-hover: #ff79c6;
-  --checkbox-color: #8a5cf5;
-  --checkbox-color-hover: #a68af9;
+  --checkbox-color: #00ffff;
+  --checkbox-color-hover: #8be9fd;
   --checkbox-marker-color: #2b213a;
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
@@ -758,17 +766,17 @@ body {
   --tag-decoration-hover: none;
   --tag-radius: 2em;
   --tag-weight: inherit;
-  --text-accent: #ff1690;
-  --text-accent-hover: #7a6ae6;
-  --text-faint: #bd93f9;
-  --text-highlight-bg: #ffd319;
-  --text-muted: #ff79c6;
-  --text-normal: #ff00ff;
+  --text-accent: light-dark(#ff1690, #ff1690);
+  --text-accent-hover: light-dark(#7a6ae6, #7a6ae6);
+  --text-faint: light-dark(#bd93f9, #bd93f9);
+  --text-highlight-bg: light-dark(#ffd319, #ffd319);
+  --text-muted: light-dark(#ff79c6, #ff79c6);
+  --text-normal: light-dark(#ff00ff, #ff00ff);
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: #2b213a;
+  background-color: light-dark(#2b213a, #2b213a);
   caret-color: #00ffff;
-  color: #ffdcffcc;
+  color: light-dark(#ff00ff, #ff00ff);
   contain: initial;
   font-family:
     "??",
@@ -1067,7 +1075,7 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: #2b213a;
+  background-color: light-dark(#2b213a, #2b213a);
 
   @media all and ($mobile) {
     div.flex-component > div:has(> button.readermode) {
@@ -1079,11 +1087,11 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: #2b213a;
+      background-color: light-dark(#2b213a, #2b213a);
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
-        background-color: #2b213a;
+        background-color: light-dark(#2b213a, #2b213a);
         content: " ";
         display: block;
         height: 100%;
@@ -1257,7 +1265,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     overflow: visible;
-    text-shadow: 0 0 0.5em #ff00ff;
+    text-shadow: 0 0 0.5em light-dark(#ff00ff, #ff00ff);
 
     font-size: 2rem;
   }
@@ -1279,7 +1287,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     overflow: visible;
-    text-shadow: 0 0 0.5em #00ffff;
+    text-shadow: 0 0 0.5em light-dark(#00ffff, #00ffff);
     font-size: 1.75rem;
   }
   h2 a {
@@ -1298,7 +1306,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     overflow: visible;
-    text-shadow: 0 0 0.5em #00ff00;
+    text-shadow: 0 0 0.5em light-dark(#00ff00, #00ff00);
     font-size: 1.6rem;
   }
   h3 a {
@@ -1317,7 +1325,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     overflow: visible;
-    text-shadow: 0 0 0.5em #ffff00;
+    text-shadow: 0 0 0.5em light-dark(#ffff00, #ffff00);
     font-size: 1.4rem;
   }
   h4 a {
@@ -1336,7 +1344,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     overflow: visible;
-    text-shadow: 0 0 0.5em #ff0000;
+    text-shadow: 0 0 0.5em light-dark(#ff0000, #ff0000);
     font-size: 1.2rem;
   }
   h5 a {
@@ -1355,7 +1363,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     overflow: visible;
-    text-shadow: 0 0 0.5em #0000ff;
+    text-shadow: 0 0 0.5em light-dark(#0000ff, #0000ff);
     font-size: 1.1rem;
   }
   h6 a {
@@ -1445,7 +1453,7 @@ body {
   .clipboard-button {
     background-color: transparent;
     box-shadow: none;
-    color: #ff79c6;
+    color: light-dark(#ff79c6, #ff79c6);
     font-family:
       "??",
       "??",
@@ -1482,7 +1490,7 @@ body {
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: #ffdcff40;
+    color: light-dark(#bd93f9, #bd93f9);
   }
   /* BACKLINKS */
   .backlinks {
@@ -1499,7 +1507,7 @@ body {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
       overflow: visible;
-      text-shadow: 0 0 0.5em #00ff00;
+      text-shadow: 0 0 0.5em light-dark(#00ff00, #00ff00);
     }
     ul li {
       color: #ffdcffcc;
@@ -1522,13 +1530,13 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: #2b213a;
+        background-color: light-dark(#2b213a, #2b213a);
         left: -1rem;
       }
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
-        color: #8a5cf5;
+        color: #00ffff;
         text-overflow: ellipsis;
         position: relative;
         & > svg {
@@ -1624,7 +1632,7 @@ body {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
         overflow: visible;
-        text-shadow: 0 0 0.5em #00ff00;
+        text-shadow: 0 0 0.5em light-dark(#00ff00, #00ff00);
       }
       color: inherit;
       color: inherit;
@@ -1656,7 +1664,7 @@ body {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
       overflow: visible;
-      text-shadow: 0 0 0.5em #00ff00;
+      text-shadow: 0 0 0.5em light-dark(#00ff00, #00ff00);
       min-height: calc(2 * var(--p-spacing) + var(--h3-line-height));
     }
   }
@@ -1712,9 +1720,10 @@ body {
       color: var(--button-secondary-fg-color);
       -webkit-app-region: no-drag;
       background: transparent;
-      border: 1px solid transparent;
+      border: 1px solid
+        light-dark(light-dark(#00ffff, #00ffff), light-dark(#00ffff, #00ffff));
       border-radius: 5px;
-      color: #ffdcffcc;
+      color: light-dark(#ff00ff, #ff00ff);
       font-family: inherit;
       font-size: 14.992px;
       height: 40px;
@@ -1728,7 +1737,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: #2b213a;
+        background-color: light-dark(#2b213a, #2b213a);
         border: 0.5pt solid #555555;
         border-radius: 12px;
         box-shadow:
@@ -1737,9 +1746,9 @@ body {
           0px 30px 90px #00000033;
         margin: 12vh auto;
         & > input {
-          background-color: #2b213a;
+          background-color: light-dark(#2b213a, #2b213a);
           border: none;
-          border-bottom: 1px solid #1a1836;
+          border-bottom: 1px solid light-dark(#1a1836, #1a1836);
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1752,7 +1761,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: #ffdcffcc;
+          color: light-dark(#ff00ff, #ff00ff);
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1764,8 +1773,8 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: #ffd319;
-            color: #ffdcffcc;
+            background-color: light-dark(#ffd319, #ffd319);
+            color: light-dark(#ff00ff, #ff00ff);
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1785,9 +1794,9 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: #ffdcffcc;
+                color: light-dark(#ff00ff, #ff00ff);
                 &.match-tag {
-                  color: #ff00ff;
+                  color: light-dark(#ff00ff, #ff00ff);
                 }
               }
             }
@@ -1849,8 +1858,9 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: #2b213a;
-    border: 1px solid transparent;
+    background-color: light-dark(#2b213a, #2b213a);
+    border: 1px solid
+      light-dark(light-dark(#00ffff, #00ffff), light-dark(#00ffff, #00ffff));
     border-radius: 8px;
     box-shadow:
       0px 1px 2px #0000001f,
@@ -1866,8 +1876,9 @@ body {
     background-color: unset;
     border: unset;
     & .popover-inner {
-      border: 1px solid transparent;
-      background-color: #2b213a;
+      border: 1px solid
+        light-dark(light-dark(#00ffff, #00ffff), light-dark(#00ffff, #00ffff));
+      background-color: light-dark(#2b213a, #2b213a);
 
       border-radius: 8px;
     }

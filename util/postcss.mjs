@@ -24,8 +24,7 @@ export function splitCombinedRules(cssString) {
           (originalRule.selectors[0] === "body.theme-dark" && originalRule.selectors[1] === "body.theme-light") ||
           (originalRule.selectors[0] === "body.theme-light" && originalRule.selectors[1] === "body.theme-dark")
         ) {
-          originalRule.selectors = ["body"]
-          return
+          originalRule.selectors.push(["body"])
         }
       }
       const parent = originalRule.parent

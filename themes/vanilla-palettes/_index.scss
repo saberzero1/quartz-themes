@@ -23,9 +23,11 @@ html[saved-theme="dark"] {
     color: var(--shiki-dark);
   }
   --mono-rgb-100: 255, 255, 255;
-  --text-accent: #8863c8;
+
+  --text-accent-hover: #ff0000;
   --mono-rgb-100: 255, 255, 255;
-  --text-accent: #8863c8;
+
+  --text-accent-hover: #ff0000;
 }
 
 :root[saved-theme="light"],
@@ -44,7 +46,11 @@ html[saved-theme="light"] {
     color: var(--shiki-light);
   }
   --mono-rgb-100: 0, 0, 0;
+
+  --text-accent-hover: #ff0000;
   --mono-rgb-100: 0, 0, 0;
+
+  --text-accent-hover: #ff0000;
 }
 
 @font-face {
@@ -208,6 +214,16 @@ html[saved-theme="light"] {
 }
 
 :root {
+  --background-modifier-border: light-dark(#a8aecb, #a8aecb);
+  --background-modifier-border-focus: light-dark(#a8aecb, #a8aecb);
+  --background-modifier-border-hover: light-dark(#a8aecb, #a8aecb);
+  --background-modifier-hover: light-dark(#b5b9c9, #b5b9c9);
+  --bold-color: light-dark(#77a0f7, #77a0f7);
+  --checkbox-border-color: light-dark(#8d98c9, #8d98c9);
+  --checkbox-border-color-hover: light-dark(#b28af6, #b28af6);
+  --checkbox-color: light-dark(#7847bd, #7847bd);
+  --checkbox-color-hover: light-dark(#b28af6, #b28af6);
+  --code-background: light-dark(#cbccd1, #cbccd1);
   --color-accent-2: light-dark(#8863c8, #997dd3);
   --color-accent-hsl: light-dark(#7847bd, #7847bd);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
@@ -226,6 +242,26 @@ html[saved-theme="light"] {
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
+  --graph-line: light-dark(#a8aecb, #a8aecb);
+  --graph-node-tag: light-dark(#77a0f7, #77a0f7);
+  --graph-node-unresolved: light-dark(#a8aecb, #a8aecb);
+  --h1-color: light-dark(#7847bd, #7847bd);
+  --hr-color: light-dark(#a8aecb, #a8aecb);
+  --inline-title-color: light-dark(#4c505e, #4c505e);
+  --italic-color: light-dark(#77a0f7, #77a0f7);
+  --link-color: light-dark(#7847bd, #7847bd);
+  --link-color-hover: light-dark(#b28af6, #b28af6);
+  --link-external-color: light-dark(#7847bd, #7847bd);
+  --link-external-color-hover: light-dark(#b28af6, #b28af6);
+  --tag-background: light-dark(#a8aecb, #a8aecb);
+  --tag-background-hover: light-dark(#8d98c9, #8d98c9);
+  --tag-color: light-dark(#7847bd, #7847bd);
+  --tag-color-hover: light-dark(#7847bd, #7847bd);
+  --text-accent: light-dark(#f9cbbe, #f9cbbe);
+  --text-faint: light-dark(#8d98c9, #8d98c9);
+  --text-highlight-bg: light-dark(#f9cbbe, #f9cbbe);
+  --text-muted: light-dark(#4c505e, #4c505e);
+  --text-normal: light-dark(#4c505e, #4c505e);
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
   --text-faint: var(--color-base-50);
@@ -262,22 +298,22 @@ html {
   font-size: 16px;
 }
 body {
-  --background-modifier-border: #a8aecb;
-  --background-modifier-border-focus: #a8aecb;
-  --background-modifier-border-hover: #a8aecb;
-  --background-modifier-hover: #b5b9c9;
+  --background-modifier-border: light-dark(#a8aecb, #a8aecb);
+  --background-modifier-border-focus: light-dark(#a8aecb, #a8aecb);
+  --background-modifier-border-hover: light-dark(#a8aecb, #a8aecb);
+  --background-modifier-hover: light-dark(#b5b9c9, #b5b9c9);
   --background-primary: #000;
   --background-primary-alt: #111;
-  --bold-color: #77a0f7;
+  --bold-color: light-dark(#77a0f7, #77a0f7);
   --bold-weight: 800;
-  --checkbox-border-color: #8d98c9;
-  --checkbox-border-color-hover: #b28af6;
-  --checkbox-color: #7847bd;
-  --checkbox-color-hover: #b28af6;
+  --checkbox-border-color: light-dark(#8d98c9, #8d98c9);
+  --checkbox-border-color-hover: light-dark(#b28af6, #b28af6);
+  --checkbox-color: light-dark(#7847bd, #7847bd);
+  --checkbox-color-hover: light-dark(#b28af6, #b28af6);
   --checkbox-marker-color: #d5d6db;
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --code-background: #cbccd1;
+  --code-background: light-dark(#cbccd1, #cbccd1);
   --code-comment: #8d98c9;
   --code-function: #ba9155;
   --code-important: #e97c00;
@@ -289,7 +325,7 @@ body {
   --code-tag: #f77e94;
   --code-value: #7847bd;
   --collapse-icon-color: #8d98c9;
-  --collapse-icon-color-collapsed: #8863c8;
+  --collapse-icon-color-collapsed: #f9cbbe;
   --color-accent-2: light-dark(#8863c8, #997dd3);
   --color-accent-hsl: light-dark(#7847bd, #7847bd);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
@@ -318,48 +354,48 @@ body {
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif;
   --font-weight: 400;
-  --graph-line: #a8aecb;
-  --graph-node-tag: #77a0f7;
-  --graph-node-unresolved: #a8aecb;
-  --h1-color: #7847bd;
+  --graph-line: light-dark(#a8aecb, #a8aecb);
+  --graph-node-tag: light-dark(#77a0f7, #77a0f7);
+  --graph-node-unresolved: light-dark(#a8aecb, #a8aecb);
+  --h1-color: light-dark(#7847bd, #7847bd);
   --h1-font: inherit;
   --h3-line-height: 1.3;
-  --hr-color: #a8aecb;
+  --hr-color: light-dark(#a8aecb, #a8aecb);
   --hr-thickness: 2px;
   --icon-color: #4c505e;
-  --inline-title-color: #4c505e;
+  --inline-title-color: light-dark(#4c505e, #4c505e);
   --inline-title-font: inherit;
   --interactive-accent-hsl: 265, 47%, 51%;
-  --italic-color: #77a0f7;
-  --link-color: #7847bd;
-  --link-color-hover: #b28af6;
-  --link-external-color: #7847bd;
-  --link-external-color-hover: #b28af6;
+  --italic-color: light-dark(#77a0f7, #77a0f7);
+  --link-color: light-dark(#7847bd, #7847bd);
+  --link-color-hover: light-dark(#b28af6, #b28af6);
+  --link-external-color: light-dark(#7847bd, #7847bd);
+  --link-external-color-hover: light-dark(#b28af6, #b28af6);
   --link-external-filter: none;
   --link-weight: 600;
   --p-spacing: 1rem;
   --search-icon-color: #4c505e;
-  --tag-background: #a8aecb;
-  --tag-background-hover: #8d98c9;
+  --tag-background: light-dark(#a8aecb, #a8aecb);
+  --tag-background-hover: light-dark(#8d98c9, #8d98c9);
   --tag-border-color: #7847bd26;
   --tag-border-color-hover: #7847bd26;
   --tag-border-width: 0px;
-  --tag-color: #7847bd;
-  --tag-color-hover: #7847bd;
+  --tag-color: light-dark(#7847bd, #7847bd);
+  --tag-color-hover: light-dark(#7847bd, #7847bd);
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-radius: 2em;
   --tag-weight: inherit;
-  --text-accent: #f9cbbe;
-  --text-accent-hover: #ff0000;
-  --text-faint: #8d98c9;
-  --text-highlight-bg: #f9cbbe;
-  --text-muted: #4c505e;
-  --text-normal: #4c505e;
+  --text-accent: light-dark(#f9cbbe, #f9cbbe);
+  --text-accent-hover: #997dd3;
+  --text-faint: light-dark(#8d98c9, #8d98c9);
+  --text-highlight-bg: light-dark(#f9cbbe, #f9cbbe);
+  --text-muted: light-dark(#4c505e, #4c505e);
+  --text-normal: light-dark(#4c505e, #4c505e);
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: #d5d6db;
-  caret-color: #8863c8;
+  caret-color: #f9cbbe;
   color: #4c505e;
   contain: initial;
   font-family:
@@ -838,7 +874,7 @@ body {
   /* HEADINGS */
   h1 {
     --font-weight: 700;
-    color: #7847bd;
+    color: light-dark(#7852ee, #a882ff);
     font-family: inherit;
     font-size: 1.802em;
     font-style: normal;
@@ -858,7 +894,7 @@ body {
   h2.page-title a,
   h2 {
     --font-weight: 600;
-    color: #ea76cb;
+    color: light-dark(#086ddd, #027aff);
     font-family: inherit;
     font-size: 1.602em;
     font-style: normal;
@@ -875,7 +911,7 @@ body {
   }
   h3 {
     --font-weight: 600;
-    color: #799f50;
+    color: light-dark(#08b94e, #44cf6e);
     font-family: inherit;
     font-size: 1.424em;
     font-style: normal;
@@ -892,7 +928,7 @@ body {
   }
   h4 {
     --font-weight: 600;
-    color: #ba9155;
+    color: light-dark(#e0ac00, #e0de71);
     font-family: inherit;
     font-size: 1.266em;
     font-style: normal;
@@ -909,7 +945,7 @@ body {
   }
   h5 {
     --font-weight: 600;
-    color: #e97c00;
+    color: light-dark(#ec7500, #e9973f);
     font-family: inherit;
     font-size: 1.125em;
     font-style: normal;
@@ -926,7 +962,7 @@ body {
   }
   h6 {
     --font-weight: 600;
-    color: #f77e94;
+    color: light-dark(#e93147, #fb464c);
     font-family: inherit;
     font-size: 1em;
     font-style: normal;
@@ -1068,7 +1104,7 @@ body {
   .backlinks {
     h3 {
       --font-weight: 600;
-      color: #799f50;
+      color: light-dark(#08b94e, #44cf6e);
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1096,7 +1132,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: #ea76cb;
+      color: light-dark(#086ddd, #027aff);
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1106,7 +1142,7 @@ body {
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
-        color: #7847bd;
+        color: #f9cbbe;
         text-overflow: ellipsis;
         position: relative;
         & > svg {
@@ -1187,11 +1223,11 @@ body {
   }
   /* TOC */
   .toc {
-    color: #799f50;
+    color: light-dark(#08b94e, #44cf6e);
     button.toc-header {
       h3 {
         --font-weight: 600;
-        color: #799f50;
+        color: light-dark(#08b94e, #44cf6e);
         font-family: inherit;
         font-size: 1.424em;
         font-style: normal;
@@ -1202,7 +1238,7 @@ body {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
       }
-      color: #799f50;
+      color: light-dark(#08b94e, #44cf6e);
       color: inherit;
     }
     ul.toc-content.overflow {
@@ -1221,7 +1257,7 @@ body {
   .toc {
     h3 {
       --font-weight: 600;
-      color: #799f50;
+      color: light-dark(#08b94e, #44cf6e);
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;

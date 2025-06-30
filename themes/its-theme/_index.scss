@@ -28,10 +28,14 @@ html[saved-theme="dark"] {
   --italic-color: inherit;
   --mono-rgb-100: 255, 255, 255;
 
+  --tag-decoration-hover: underline;
+
   --bold-color: inherit;
 
   --italic-color: inherit;
   --mono-rgb-100: 255, 255, 255;
+
+  --tag-decoration-hover: underline;
 }
 
 :root[saved-theme="light"],
@@ -55,10 +59,14 @@ html[saved-theme="light"] {
   --italic-color: inherit;
   --mono-rgb-100: 0, 0, 0;
 
+  --tag-decoration-hover: underline;
+
   --bold-color: inherit;
 
   --italic-color: inherit;
   --mono-rgb-100: 0, 0, 0;
+
+  --tag-decoration-hover: underline;
 }
 
 @font-face {
@@ -81,6 +89,12 @@ html[saved-theme="light"] {
   --background-primary: light-dark(#f8fbff, #f8fbff);
   --background-primary-alt: light-dark(#eef3fd, #eef3fd);
   --bg: light-dark(#e1e9f6, #252c36);
+  --checkbox-border-color: light-dark(#912e2e, #912e2e);
+  --checkbox-border-color-hover: light-dark(#c35c5c, #c35c5c);
+  --checkbox-color: light-dark(#912e2e, #912e2e);
+  --checkbox-color-hover: light-dark(#c35c5c, #c35c5c);
+  --checkbox-size: light-dark(1em, 1em);
+  --collapse-icon-color-collapsed: light-dark(#a6bbde, #a6bbde);
   --color-accent-2: light-dark(
     hsl(-3, 49.98%, 56.35%),
     hsl(-5, 51.45%, 63.21%)
@@ -106,6 +120,12 @@ html[saved-theme="light"] {
   --interactive-accent-hsl: light-dark(hsl(0, 49%, 49%), hsl(0, 49%, 49%));
   --link-color-hover: light-dark(#cd2626, #cd2626);
   --link-external-color-hover: light-dark(#aac1d3, #aac1d3);
+  --tag-background: light-dark(#c35c5c, #c35c5c);
+  --tag-background-hover: light-dark(#912e2e, #912e2e);
+  --tag-border-color: light-dark(#c35c5c, #c35c5c);
+  --tag-border-color-hover: light-dark(#912e2e, #912e2e);
+  --tag-color: light-dark(white, white);
+  --tag-color-hover: light-dark(white, white);
   --text-accent: light-dark(#5599d0, #5599d0);
   --text-accent-hover: light-dark(#cd2626, #cd2626);
   --text-faint: light-dark(#4e5b6f, #4e5b6f);
@@ -162,14 +182,14 @@ body {
   --background-primary-alt: light-dark(#eef3fd, #eef3fd);
   --bg: light-dark(#e1e9f6, #252c36);
   --bold-color: inherit;
-  --bold-weight: 900;
-  --checkbox-border-color: #912e2e;
-  --checkbox-border-color-hover: #c35c5c;
-  --checkbox-color: #912e2e;
-  --checkbox-color-hover: #c35c5c;
+  --bold-weight: 1100;
+  --checkbox-border-color: light-dark(#912e2e, #912e2e);
+  --checkbox-border-color-hover: light-dark(#c35c5c, #c35c5c);
+  --checkbox-color: light-dark(#912e2e, #912e2e);
+  --checkbox-color-hover: light-dark(#c35c5c, #c35c5c);
   --checkbox-marker-color: #f8fbff;
   --checkbox-radius: 0;
-  --checkbox-size: 1em;
+  --checkbox-size: light-dark(1em, 1em);
   --code-background: #f1f5ff;
   --code-comment: #697580;
   --code-function: #e0de71;
@@ -182,7 +202,7 @@ body {
   --code-tag: #fb464c;
   --code-value: #a882ff;
   --collapse-icon-color: #697580;
-  --collapse-icon-color-collapsed: #a6bbde;
+  --collapse-icon-color-collapsed: light-dark(#a6bbde, #a6bbde);
   --color-accent-2: light-dark(
     hsl(-3, 49.98%, 56.35%),
     hsl(-5, 51.45%, 63.21%)
@@ -207,11 +227,11 @@ body {
   --cursor-link: pointer;
   --file-icon: "";
   --font-default:
-    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Microsoft YaHei Light", sans-serif;
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
   --font-text:
-    "??", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "??", "??", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   --font-weight: 400;
@@ -236,16 +256,16 @@ body {
   --link-weight: 600;
   --p-spacing: 1rem;
   --search-icon-color: #697580;
-  --tag-background: #c35c5c;
-  --tag-background-hover: #912e2e;
-  --tag-border-color: #c35c5c;
-  --tag-border-color-hover: #912e2e;
+  --tag-background: light-dark(#c35c5c, #c35c5c);
+  --tag-background-hover: light-dark(#912e2e, #912e2e);
+  --tag-border-color: light-dark(#c35c5c, #c35c5c);
+  --tag-border-color-hover: light-dark(#912e2e, #912e2e);
   --tag-border-width: 0px;
-  --tag-color: white;
-  --tag-color-hover: white;
+  --tag-color: light-dark(white, white);
+  --tag-color-hover: light-dark(white, white);
   --tag-decoration: none;
-  --tag-decoration-hover: underline;
-  --tag-radius: 0;
+  --tag-decoration-hover: none;
+  --tag-radius: 2em;
   --tag-weight: inherit;
   --text-accent: light-dark(#5599d0, #5599d0);
   --text-accent-hover: light-dark(#cd2626, #cd2626);
@@ -1274,7 +1294,11 @@ body {
       color: var(--button-secondary-fg-color);
       -webkit-app-region: no-drag;
       background: #d0ddef62;
-      border: 1px solid light-dark(#d6deea, #2f3b4d);
+      border: 1px solid
+        light-dark(
+          light-dark(#b5c2d8, light-dark(#d6deea, #2f3b4d)),
+          light-dark(#b5c2d8, light-dark(#d6deea, #2f3b4d))
+        );
       border-radius: 0;
       color: light-dark(#30353a, #bccad8);
       font-family: inherit;
@@ -1291,14 +1315,34 @@ body {
     & > .search-container {
       & > .search-space {
         background-color: light-dark(#f8fbff, #1a1e24);
-        border: 3px solid light-dark(#e1e9f6, #252c36);
+        border: 3px solid
+          light-dark(
+            light-dark(
+              light-dark(#e1e9f6, #252c36),
+              light-dark(#eef3fd, #0b0f13)
+            ),
+            light-dark(
+              light-dark(#e1e9f6, #252c36),
+              light-dark(#eef3fd, #0b0f13)
+            )
+          );
         border-radius: 0;
         box-shadow: 5px 5px 0 #e1e9f6;
         margin: 12vh auto;
         & > input {
           background-color: light-dark(#f8fbff, #1a1e24);
           border: none;
-          border-bottom: 1px solid light-dark(#f8fbff, #1a1e24);
+          border-bottom: 1px solid
+            light-dark(
+              light-dark(
+                light-dark(#f8fbff, #1a1e24),
+                light-dark(#f8fbff, #1a1e24)
+              ),
+              light-dark(
+                light-dark(#f8fbff, #1a1e24),
+                light-dark(#f8fbff, #1a1e24)
+              )
+            );
           border-radius: 0;
           font-size: 20px;
           height: 48px;
@@ -1346,7 +1390,7 @@ body {
                 background-color: transparent;
                 color: light-dark(#30353a, #bccad8);
                 &.match-tag {
-                  color: #5599d0;
+                  color: light-dark(#e5ebee, #e5ebee);
                 }
               }
             }
@@ -1409,7 +1453,11 @@ body {
   /* POPOVER */
   .popover {
     background-color: light-dark(#f8fbff, #1a1e24);
-    border: 1px solid light-dark(#d6deea, #2f3b4d);
+    border: 1px solid
+      light-dark(
+        light-dark(#b5c2d8, light-dark(#d6deea, #2f3b4d)),
+        light-dark(#b5c2d8, light-dark(#d6deea, #2f3b4d))
+      );
     border-radius: 0;
     box-shadow: 2px 2px 0 #e1e9f6;
     display: flex;
@@ -1422,7 +1470,11 @@ body {
     background-color: unset;
     border: unset;
     & .popover-inner {
-      border: 1px solid light-dark(#d6deea, #2f3b4d);
+      border: 1px solid
+        light-dark(
+          light-dark(#b5c2d8, light-dark(#d6deea, #2f3b4d)),
+          light-dark(#b5c2d8, light-dark(#d6deea, #2f3b4d))
+        );
       background-color: light-dark(#f8fbff, #1a1e24);
 
       border-radius: 0;

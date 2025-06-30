@@ -22,16 +22,26 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
+
   --link-external-filter: invert(35%) sepia(28%) saturate(681%)
     hue-rotate(192deg) brightness(94%) contrast(85%);
   --mono-rgb-100: 255, 255, 255;
-  --text-accent: hsl(199, 102%, 86.25%);
-  background: #12121840;
+
+  --tag-background: #bb9af726;
+  --tag-background-hover: #7dcfff26;
+
+  --text-highlight-bg: #ff9e6440;
+  background: #121218;
+
   --link-external-filter: invert(35%) sepia(28%) saturate(681%)
     hue-rotate(192deg) brightness(94%) contrast(85%);
   --mono-rgb-100: 255, 255, 255;
-  --text-accent: hsl(199, 102%, 86.25%);
-  background: #12121840;
+
+  --tag-background: #bb9af726;
+  --tag-background-hover: #7dcfff26;
+
+  --text-highlight-bg: #ff9e6440;
+  background: #121218;
 }
 
 :root[saved-theme="light"],
@@ -49,12 +59,24 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
+
   --link-external-filter: invert(62%) sepia(9%) saturate(266%)
     hue-rotate(189deg) brightness(97%) contrast(88%);
   --mono-rgb-100: 0, 0, 0;
+
+  --tag-background: #bb9af726;
+  --tag-background-hover: #7dcfff26;
+
+  --text-highlight-bg: #ff9e6440;
+
   --link-external-filter: invert(62%) sepia(9%) saturate(266%)
     hue-rotate(189deg) brightness(97%) contrast(88%);
   --mono-rgb-100: 0, 0, 0;
+
+  --tag-background: #bb9af726;
+  --tag-background-hover: #7dcfff26;
+
+  --text-highlight-bg: #ff9e6440;
 }
 
 /* cyrillic-ext */
@@ -124,7 +146,21 @@ html[saved-theme="light"] {
 }
 
 :root {
+  --background-modifier-border: light-dark(#292e42, #292e42);
+  --background-modifier-border-focus: light-dark(#292e42, #292e42);
+  --background-modifier-border-hover: light-dark(#292e42, #292e42);
+  --background-modifier-hover: light-dark(#292e42, #292e42);
+  --background-primary: light-dark(#1a1b26, #1a1b26);
+  --background-primary-alt: light-dark(#1a1b26, #1a1b26);
   --bg: light-dark(#1a1b26, #1a1b26);
+  --bold-color: light-dark(#7dcfff, #7dcfff);
+  --checkbox-border-color: light-dark(#565f89, #565f89);
+  --checkbox-border-color-hover: light-dark(#565f89, #565f89);
+  --checkbox-color: light-dark(#9ece6a, #9ece6a);
+  --checkbox-color-hover: light-dark(#9ece6a, #9ece6a);
+  --checkbox-marker-color: light-dark(#1a1b26, #1a1b26);
+  --checkbox-radius: light-dark(12px, 12px);
+  --code-normal: light-dark(#c0caf5, #c0caf5);
   --color-accent-2: light-dark(hsl(199, 102%, 86.25%), hsl(197, 105%, 96.75%));
   --color-accent-hsl: light-dark(#80d0ff, #80d0ff);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
@@ -143,6 +179,21 @@ html[saved-theme="light"] {
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
+  --graph-line: light-dark(#565f89, #565f89);
+  --graph-node-tag: light-dark(#ff9e64, #ff9e64);
+  --h1-color: light-dark(#ff757f, #ff757f);
+  --italic-color: light-dark(#7dcfff, #7dcfff);
+  --link-color: light-dark(#bb9af7, #bb9af7);
+  --link-color-hover: light-dark(#7dcfff, #7dcfff);
+  --link-external-color: light-dark(#bb9af7, #bb9af7);
+  --link-external-color-hover: light-dark(#7dcfff, #7dcfff);
+  --tag-color: light-dark(#bb9af7, #bb9af7);
+  --tag-color-hover: light-dark(#7dcfff, #7dcfff);
+  --text-accent: light-dark(#bb9af7, #bb9af7);
+  --text-accent-hover: light-dark(#7dcfff, #7dcfff);
+  --text-faint: light-dark(#565f89, #565f89);
+  --text-muted: light-dark(#a9b1d6, #a9b1d6);
+  --text-normal: light-dark(#c0caf5, #c0caf5);
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
   --text-faint: var(--color-base-50);
@@ -179,35 +230,35 @@ html {
   font-size: 16px;
 }
 body {
-  --background-modifier-border: #292e42;
-  --background-modifier-border-focus: #292e42;
-  --background-modifier-border-hover: #292e42;
-  --background-modifier-hover: #292e42;
-  --background-primary: #1a1b26;
-  --background-primary-alt: #1a1b26;
+  --background-modifier-border: light-dark(#292e42, #292e42);
+  --background-modifier-border-focus: light-dark(#292e42, #292e42);
+  --background-modifier-border-hover: light-dark(#292e42, #292e42);
+  --background-modifier-hover: light-dark(#292e42, #292e42);
+  --background-primary: light-dark(#1a1b26, #1a1b26);
+  --background-primary-alt: light-dark(#1a1b26, #1a1b26);
   --bg: light-dark(#1a1b26, #1a1b26);
-  --bold-color: #7dcfff;
+  --bold-color: light-dark(#7dcfff, #7dcfff);
   --bold-weight: 800;
-  --checkbox-border-color: #565f89;
-  --checkbox-border-color-hover: #565f89;
-  --checkbox-color: #9ece6a;
-  --checkbox-color-hover: #9ece6a;
-  --checkbox-marker-color: #1a1b26;
-  --checkbox-radius: 12px;
+  --checkbox-border-color: light-dark(#565f89, #565f89);
+  --checkbox-border-color-hover: light-dark(#565f89, #565f89);
+  --checkbox-color: light-dark(#9ece6a, #9ece6a);
+  --checkbox-color-hover: light-dark(#9ece6a, #9ece6a);
+  --checkbox-marker-color: light-dark(#1a1b26, #1a1b26);
+  --checkbox-radius: light-dark(12px, 12px);
   --checkbox-size: 16px;
-  --code-background: #24283b;
+  --code-background: #1a1b26;
   --code-comment: #565f89;
-  --code-function: #e0de71;
-  --code-important: #e9973f;
-  --code-keyword: #fa99cd;
-  --code-normal: #c0caf5;
-  --code-property: #53dfdd;
+  --code-function: #e0af68;
+  --code-important: #ff9e64;
+  --code-keyword: #bb9af7;
+  --code-normal: light-dark(#c0caf5, #c0caf5);
+  --code-property: #7dcfff;
   --code-punctuation: #a9b1d6;
-  --code-string: #44cf6e;
-  --code-tag: #fb464c;
-  --code-value: #a882ff;
+  --code-string: #9ece6a;
+  --code-tag: #ff757f;
+  --code-value: #bb9af7;
   --collapse-icon-color: #565f89;
-  --collapse-icon-color-collapsed: hsl(199, 102%, 86.25%);
+  --collapse-icon-color-collapsed: #bb9af7;
   --color-accent-2: light-dark(hsl(199, 102%, 86.25%), hsl(197, 105%, 96.75%));
   --color-accent-hsl: light-dark(#80d0ff, #80d0ff);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
@@ -236,10 +287,10 @@ body {
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif;
   --font-weight: 400;
-  --graph-line: #565f89;
-  --graph-node-tag: #ff9e64;
+  --graph-line: light-dark(#565f89, #565f89);
+  --graph-node-tag: light-dark(#ff9e64, #ff9e64);
   --graph-node-unresolved: #565f89;
-  --h1-color: #ff757f;
+  --h1-color: light-dark(#ff757f, #ff757f);
   --h1-font: inherit;
   --h3-line-height: 1.3;
   --hr-color: transparent;
@@ -248,36 +299,36 @@ body {
   --inline-title-color: #ff757f;
   --inline-title-font: inherit;
   --interactive-accent-hsl: 202, 100%, 75%;
-  --italic-color: #7dcfff;
-  --link-color: #bb9af7;
-  --link-color-hover: #7dcfff;
-  --link-external-color: #bb9af7;
-  --link-external-color-hover: #7dcfff;
+  --italic-color: light-dark(#7dcfff, #7dcfff);
+  --link-color: light-dark(#bb9af7, #bb9af7);
+  --link-color-hover: light-dark(#7dcfff, #7dcfff);
+  --link-external-color: light-dark(#bb9af7, #bb9af7);
+  --link-external-color-hover: light-dark(#7dcfff, #7dcfff);
   --link-external-filter: none;
   --link-weight: 600;
   --p-spacing: 1rem;
   --search-icon-color: #a9b1d6;
-  --tag-background: #bb9af726;
-  --tag-background-hover: #7dcfff26;
+  --tag-background: #80d0ff1a;
+  --tag-background-hover: #80d0ff33;
   --tag-border-color: #80d0ff26;
   --tag-border-color-hover: #80d0ff26;
   --tag-border-width: 0px;
-  --tag-color: #bb9af7;
-  --tag-color-hover: #7dcfff;
+  --tag-color: light-dark(#bb9af7, #bb9af7);
+  --tag-color-hover: light-dark(#7dcfff, #7dcfff);
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-radius: 2em;
   --tag-weight: inherit;
-  --text-accent: #bb9af7;
-  --text-accent-hover: #7dcfff;
-  --text-faint: #565f89;
-  --text-highlight-bg: #ff9e6440;
-  --text-muted: #a9b1d6;
-  --text-normal: #c0caf5;
+  --text-accent: light-dark(#bb9af7, #bb9af7);
+  --text-accent-hover: light-dark(#7dcfff, #7dcfff);
+  --text-faint: light-dark(#565f89, #565f89);
+  --text-highlight-bg: #ffd00066;
+  --text-muted: light-dark(#a9b1d6, #a9b1d6);
+  --text-normal: light-dark(#c0caf5, #c0caf5);
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: #1a1b26;
-  caret-color: hsl(199, 102%, 86.25%);
+  caret-color: #bb9af7;
   color: #c0caf5;
   contain: initial;
   font-family:
@@ -861,7 +912,7 @@ body {
   }
   /* CODE */
   pre {
-    background-color: #24283b40;
+    background-color: #24283b;
     border: 0px solid transparent;
     border-radius: 4px;
     min-height: 38px;
@@ -928,7 +979,7 @@ body {
   }
   code {
     -webkit-box-decoration-break: clone;
-    background-color: #24283b40;
+    background-color: #24283b;
     border: 0px solid transparent;
     border-radius: 4px;
     color: #c0caf5;

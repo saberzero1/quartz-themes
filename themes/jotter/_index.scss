@@ -211,7 +211,9 @@ html[saved-theme="light"] {
 
 :root {
   --background-modifier-border: light-dark(#d6d6d6, #4a4546);
+  --background-modifier-border-focus: light-dark(#363636, #363636);
   --background-modifier-border-hover: light-dark(#d6d6d6, #4f4a4b);
+  --background-modifier-hover: light-dark(#111, #111);
   --background-primary: light-dark(#f2f2f2, #322f30);
   --background-primary-alt: light-dark(#e6e6e6, #413e3e);
   --color-accent-2: light-dark(#9ba5ad, #b1b9c0);
@@ -272,9 +274,9 @@ html {
 }
 body {
   --background-modifier-border: light-dark(#d6d6d6, #4a4546);
-  --background-modifier-border-focus: #363636;
+  --background-modifier-border-focus: light-dark(#363636, #363636);
   --background-modifier-border-hover: light-dark(#d6d6d6, #4f4a4b);
-  --background-modifier-hover: #111;
+  --background-modifier-hover: light-dark(#111, #111);
   --background-primary: light-dark(#f2f2f2, #322f30);
   --background-primary-alt: light-dark(#e6e6e6, #413e3e);
   --bold-color: inherit;
@@ -1058,7 +1060,7 @@ body {
     position: absolute;
     top: 0;
     &:hover {
-      background-color: #ffffff13;
+      background-color: light-dark(#e6e6e6, #413e3e);
     }
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -1295,7 +1297,10 @@ body {
       background: var(--button-secondary-bg-color);
       color: var(--button-secondary-fg-color);
       -webkit-app-region: no-drag;
-      background: #363636;
+      background: light-dark(
+        light-dark(#f2f2f2, #322f30),
+        light-dark(#f2f2f2, #322f30)
+      );
       border: 1px solid light-dark(#d6d6d6, #4a4546);
       border-radius: 5px;
       color: light-dark(#353132, #e1e1e1);
@@ -1315,10 +1320,7 @@ body {
         background-color: light-dark(#f2f2f2, #322f30);
         border: 0.5pt solid #555555;
         border-radius: 12px;
-        box-shadow:
-          0px 1.8px 7.3px #00000012,
-          0px 6.3px 24.7px #0000001d,
-          0px 30px 90px #00000033;
+        box-shadow: none;
         margin: 12vh auto;
         & > input {
           background-color: light-dark(#f2f2f2, #322f30);
@@ -1365,7 +1367,7 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: #ffffff13;
+                background-color: light-dark(#e6e6e6, #413e3e);
               }
               & > ul > li > p {
                 background-color: transparent;
@@ -1436,10 +1438,7 @@ body {
     background-color: light-dark(#f2f2f2, #322f30);
     border: 1px solid light-dark(#d6d6d6, #4a4546);
     border-radius: 8px;
-    box-shadow:
-      0px 1px 2px #0000001f,
-      0px 3.4px 6.7px #0000002e,
-      0px 15px 30px #0000004d;
+    box-shadow: none;
     display: flex;
     max-height: 95vh;
     position: absolute;
