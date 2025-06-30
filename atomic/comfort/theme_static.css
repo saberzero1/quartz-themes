@@ -1769,7 +1769,7 @@ body {
   --embed-canvas-max-height: 400px;
   --embed-font-style: inherit;
   --embed-max-height: 4000px;
-  --embed-padding: 0 0 0 16px;
+  --embed-padding: 0 0 0 24px;
   --file-folding-offset: 24px;
   --file-header-border: 0.5pt solid transparent;
   --file-header-font:
@@ -2258,9 +2258,9 @@ body {
   --tag-color-hover: #a68af9;
   --tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-padding-x: 4px;
-  --tag-padding-y: 2px;
-  --tag-radius: 4px;
+  --tag-padding-x: 0.65em;
+  --tag-padding-y: 0.25em;
+  --tag-radius: 2em;
   --tag-size: 0.875em;
   --tag-weight: inherit;
   --text-accent: #8a5cf5;
@@ -2367,6 +2367,7 @@ body {
   --color-red-rgb: 197, 65, 40;
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
+  --embed-padding: 0 0 0 16px;
   --gray-1: #b0c0aa;
   --gray-2: #a0a5b8;
   --green: #afe4ae;
@@ -2390,6 +2391,9 @@ body {
     0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
   --slider-track-background: #eff1e1;
   --tab-container-background: #a3d5aa;
+  --tag-padding-x: 4px;
+  --tag-padding-y: 2px;
+  --tag-radius: 4px;
   --text-muted: #8d9c8d;
   --text-normal: #6f6e6a;
   --toggle-radius: 4px;
@@ -2433,6 +2437,7 @@ body {
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
+  --embed-padding: 0 0 0 16px;
   --highlight-mix-blend-mode: darken;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
@@ -2453,6 +2458,9 @@ body {
     0px 30px 90px #00000033;
   --shadow-s:
     0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+  --tag-padding-x: 4px;
+  --tag-padding-y: 2px;
+  --tag-radius: 4px;
   --text-accent: #a68af9;
   --text-selection: #8a5cf554;
 }

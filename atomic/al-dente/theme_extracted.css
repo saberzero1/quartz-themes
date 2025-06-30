@@ -1315,7 +1315,6 @@ h6 {
 }
 
 .popover {
-  animation: fadeIn 1.5s;
   background-color: var(--background-primary);
   border: 1px solid var(--background-modifier-border);
   border-radius: var(--radius-m);

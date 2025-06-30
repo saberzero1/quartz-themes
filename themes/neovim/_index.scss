@@ -23,9 +23,7 @@ html[saved-theme="dark"] {
     color: var(--shiki-dark);
   }
   --mono-rgb-100: 255, 255, 255;
-  --text-accent: #c4f9cd;
   --mono-rgb-100: 255, 255, 255;
-  --text-accent: #c4f9cd;
 }
 
 :root[saved-theme="light"],
@@ -45,6 +43,8 @@ html[saved-theme="light"] {
   }
   --mono-rgb-100: 0, 0, 0;
   --mono-rgb-100: 0, 0, 0;
+
+  --text-accent-hover: #eafded;
 }
 
 @font-face {
@@ -208,6 +208,11 @@ html[saved-theme="light"] {
 }
 
 :root {
+  --background-modifier-border: light-dark(#2c2e33, #2c2e33);
+  --background-modifier-border-focus: light-dark(#4f5258, #4f5258);
+  --background-modifier-border-hover: light-dark(#2c2e33, #2c2e33);
+  --background-primary: light-dark(#1e1e1e, #1e1e1e);
+  --background-primary-alt: light-dark(#2c2e33, #2c2e33);
   --color-accent-2: light-dark(#eafded, hsl(127, 82.95%, 107.07%));
   --color-accent-hsl: light-dark(#b1f6bf, #b1f6bf);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
@@ -226,6 +231,8 @@ html[saved-theme="light"] {
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
+  --text-accent: light-dark(#b1f6bf, #b1f6bf);
+  --text-accent-hover: light-dark(#eafded, #eafded);
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
   --text-faint: var(--color-base-50);
@@ -262,12 +269,12 @@ html {
   font-size: 16px;
 }
 body {
-  --background-modifier-border: #2c2e33;
-  --background-modifier-border-focus: #4f5258;
-  --background-modifier-border-hover: #2c2e33;
+  --background-modifier-border: light-dark(#2c2e33, #2c2e33);
+  --background-modifier-border-focus: light-dark(#4f5258, #4f5258);
+  --background-modifier-border-hover: light-dark(#2c2e33, #2c2e33);
   --background-modifier-hover: #ffffff11;
-  --background-primary: #1e1e1e;
-  --background-primary-alt: #2c2e33;
+  --background-primary: light-dark(#1e1e1e, #1e1e1e);
+  --background-primary-alt: light-dark(#2c2e33, #2c2e33);
   --bold-color: inherit;
   --bold-weight: 800;
   --checkbox-border-color: #eef1f8;
@@ -289,7 +296,7 @@ body {
   --code-tag: #ffc0b9;
   --code-value: #ffcaff;
   --collapse-icon-color: #eef1f8;
-  --collapse-icon-color-collapsed: #c4f9cd;
+  --collapse-icon-color-collapsed: #b1f6bf;
   --color-accent-2: light-dark(#eafded, hsl(127, 82.95%, 107.07%));
   --color-accent-hsl: light-dark(#b1f6bf, #b1f6bf);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
@@ -331,9 +338,9 @@ body {
   --inline-title-font: inherit;
   --interactive-accent-hsl: 132, 79%, 83%;
   --italic-color: inherit;
-  --link-color: #c4f9cd;
+  --link-color: #b1f6bf;
   --link-color-hover: #eafded;
-  --link-external-color: #c4f9cd;
+  --link-external-color: #b1f6bf;
   --link-external-color-hover: #eafded;
   --link-external-filter: none;
   --link-weight: 600;
@@ -344,22 +351,22 @@ body {
   --tag-border-color: #b1f6bf26;
   --tag-border-color-hover: #b1f6bf26;
   --tag-border-width: 0px;
-  --tag-color: #c4f9cd;
-  --tag-color-hover: #c4f9cd;
+  --tag-color: #b1f6bf;
+  --tag-color-hover: #b1f6bf;
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-radius: 2em;
   --tag-weight: inherit;
-  --text-accent: #b1f6bf;
-  --text-accent-hover: #eafded;
+  --text-accent: light-dark(#b1f6bf, #b1f6bf);
+  --text-accent-hover: light-dark(#eafded, #eafded);
   --text-faint: #eef1f8;
   --text-highlight-bg: #ffd00066;
   --text-muted: #e0e2ea;
   --text-normal: #c4c6cd;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: #1e1e1e;
-  caret-color: #c4f9cd;
+  background-color: light-dark(#f6f6f6, #262626);
+  caret-color: #b1f6bf;
   color: #c4c6cd;
   contain: initial;
   font-family:
@@ -659,7 +666,7 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: #1e1e1e;
+  background-color: light-dark(#f6f6f6, #262626);
 
   @media all and ($mobile) {
     div.flex-component > div:has(> button.readermode) {
@@ -671,11 +678,11 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: #1e1e1e;
+      background-color: light-dark(#f6f6f6, #262626);
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
-        background-color: #1e1e1e;
+        background-color: light-dark(#f6f6f6, #262626);
         content: " ";
         display: block;
         height: 100%;
@@ -1100,7 +1107,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: #1e1e1e;
+        background-color: light-dark(#f6f6f6, #262626);
         left: -1rem;
       }
       .folder-container {
@@ -1285,8 +1292,12 @@ body {
       background: var(--button-secondary-bg-color);
       color: var(--button-secondary-fg-color);
       -webkit-app-region: no-drag;
-      background: transparent;
-      border: 1px solid transparent;
+      background: light-dark(
+        light-dark(#e0e0e0, #363636),
+        light-dark(#e0e0e0, #363636)
+      );
+      border: 1px solid
+        light-dark(light-dark(#e0e0e0, #363636), light-dark(#e0e0e0, #363636));
       border-radius: 3px;
       color: #c4c6cd;
       font-family: inherit;
@@ -1302,7 +1313,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: #1e1e1e;
+        background-color: light-dark(#f6f6f6, #262626);
         border: 0.5pt solid #2c2e33;
         border-radius: 8px;
         box-shadow:
@@ -1311,9 +1322,13 @@ body {
           0px 30px 90px #00000033;
         margin: 12vh auto;
         & > input {
-          background-color: #1e1e1e;
+          background-color: light-dark(#f6f6f6, #262626);
           border: none;
-          border-bottom: 1px solid #1e1e1e;
+          border-bottom: 1px solid
+            light-dark(
+              light-dark(#f6f6f6, #262626),
+              light-dark(#f6f6f6, #262626)
+            );
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1361,7 +1376,7 @@ body {
                 background-color: transparent;
                 color: #c4c6cd;
                 &.match-tag {
-                  color: #c4f9cd;
+                  color: #b1f6bf;
                 }
               }
             }
@@ -1423,8 +1438,9 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: #1e1e1e;
-    border: 1px solid transparent;
+    background-color: light-dark(#f6f6f6, #262626);
+    border: 1px solid
+      light-dark(light-dark(#e0e0e0, #363636), light-dark(#e0e0e0, #363636));
     border-radius: 6px;
     box-shadow:
       0px 1px 2px #0000001f,
@@ -1440,8 +1456,9 @@ body {
     background-color: unset;
     border: unset;
     & .popover-inner {
-      border: 1px solid transparent;
-      background-color: #1e1e1e;
+      border: 1px solid
+        light-dark(light-dark(#e0e0e0, #363636), light-dark(#e0e0e0, #363636));
+      background-color: light-dark(#f6f6f6, #262626);
 
       border-radius: 6px;
     }

@@ -23,9 +23,11 @@ html[saved-theme="dark"] {
     color: var(--shiki-dark);
   }
   --mono-rgb-100: 255, 255, 255;
+  --tag-radius: 4px;
 
   --text-highlight-bg: #ffff0066;
   --mono-rgb-100: 255, 255, 255;
+  --tag-radius: 4px;
 
   --text-highlight-bg: #ffff0066;
 }
@@ -46,9 +48,11 @@ html[saved-theme="light"] {
     color: var(--shiki-light);
   }
   --mono-rgb-100: 0, 0, 0;
+  --tag-radius: 4px;
 
   --text-highlight-bg: #ffff0066;
   --mono-rgb-100: 0, 0, 0;
+  --tag-radius: 4px;
 
   --text-highlight-bg: #ffff0066;
 }
@@ -215,8 +219,18 @@ html[saved-theme="light"] {
 
 :root {
   --background-modifier-border: light-dark(#dbdbdc, #424958);
+  --background-modifier-border-focus: light-dark(
+    var(--interactive-hover),
+    var(--interactive-hover)
+  );
+  --background-modifier-border-hover: light-dark(
+    var(--interactive-hover),
+    var(--interactive-hover)
+  );
   --background-primary: light-dark(#fafafa, #272b34);
   --background-primary-alt: light-dark(#eaeaeb, #20242b);
+  --checkbox-color: light-dark(#61afef, #61afef);
+  --checkbox-color-hover: light-dark(#70bdfc, #70bdfc);
   --color-accent-2: light-dark(#6c97d7, #89afe0);
   --color-accent-hsl: light-dark(#4c79cd, #4c79cd);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
@@ -236,6 +250,10 @@ html[saved-theme="light"] {
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
   --interactive-hover: light-dark(#dbdbdc, #353b47);
+  --tag-background: light-dark(#20242b, #20242b);
+  --tag-background-hover: light-dark(#20242b, #20242b);
+  --tag-color: light-dark(#e5c07b, #e5c07b);
+  --tag-color-hover: light-dark(#e5c07b, #e5c07b);
   --text-accent: light-dark(#1592ff, #61afef);
   --text-accent-hover: light-dark(#097add, #70bdfc);
   --text-faint: light-dark(#999999, #515663);
@@ -278,8 +296,14 @@ html {
 }
 body {
   --background-modifier-border: light-dark(#dbdbdc, #424958);
-  --background-modifier-border-focus: var(--interactive-hover);
-  --background-modifier-border-hover: var(--interactive-hover);
+  --background-modifier-border-focus: light-dark(
+    var(--interactive-hover),
+    var(--interactive-hover)
+  );
+  --background-modifier-border-hover: light-dark(
+    var(--interactive-hover),
+    var(--interactive-hover)
+  );
   --background-modifier-hover: #ffffff11;
   --background-primary: light-dark(#fafafa, #272b34);
   --background-primary-alt: light-dark(#eaeaeb, #20242b);
@@ -287,8 +311,8 @@ body {
   --bold-weight: 800;
   --checkbox-border-color: #515663;
   --checkbox-border-color-hover: #888;
-  --checkbox-color: #61afef;
-  --checkbox-color-hover: #70bdfc;
+  --checkbox-color: light-dark(#61afef, #61afef);
+  --checkbox-color-hover: light-dark(#70bdfc, #70bdfc);
   --checkbox-marker-color: #272b34;
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
@@ -355,16 +379,16 @@ body {
   --link-weight: 600;
   --p-spacing: 1rem;
   --search-icon-color: #888;
-  --tag-background: #20242b;
-  --tag-background-hover: #20242b;
+  --tag-background: light-dark(#20242b, #20242b);
+  --tag-background-hover: light-dark(#20242b, #20242b);
   --tag-border-color: #4c79cd26;
   --tag-border-color-hover: #4c79cd26;
   --tag-border-width: 0px;
-  --tag-color: #e5c07b;
-  --tag-color-hover: #e5c07b;
+  --tag-color: light-dark(#e5c07b, #e5c07b);
+  --tag-color-hover: light-dark(#e5c07b, #e5c07b);
   --tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-radius: 4px;
+  --tag-radius: 2em;
   --tag-weight: inherit;
   --text-accent: light-dark(#1592ff, #61afef);
   --text-accent-hover: light-dark(#097add, #70bdfc);
@@ -1176,7 +1200,7 @@ body {
           &.active,
           &:hover {
             background-color: #4c79cd;
-            color: #ffffff;
+            color: light-dark(#ffffff, #ffffff);
             font-weight: inherit;
           }
           &[data-for$="/index"] {
@@ -1319,7 +1343,8 @@ body {
     & > .search-container {
       & > .search-space {
         background-color: light-dark(#fafafa, #272b34);
-        border: 0.5pt solid #18191e;
+        border: 0.5pt solid
+          light-dark(light-dark(#dbdbdc, #18191e), light-dark(#dbdbdc, #18191e));
         border-radius: 12px;
         box-shadow:
           0px 1.8px 7.3px #00000012,
@@ -1377,7 +1402,7 @@ body {
                 background-color: transparent;
                 color: light-dark(#383a42, #dcddde);
                 &.match-tag {
-                  color: #e5c07b;
+                  color: light-dark(#e35649, #e5c07b);
                 }
               }
             }

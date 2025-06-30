@@ -22,9 +22,11 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
+  --graph-line: #808080;
   --mono-rgb-100: 255, 255, 255;
 
   --text-accent: #a68af9;
+  --graph-line: #808080;
   --mono-rgb-100: 255, 255, 255;
 
   --text-accent: #a68af9;
@@ -45,7 +47,9 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
+  --graph-line: #808080;
   --mono-rgb-100: 0, 0, 0;
+  --graph-line: #808080;
   --mono-rgb-100: 0, 0, 0;
 }
 
@@ -333,7 +337,7 @@ body {
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif;
   --font-weight: 400;
-  --graph-line: #808080;
+  --graph-line: #3f3f3f;
   --graph-node-tag: #44cf6e;
   --graph-node-unresolved: #999999;
   --h1-color: #ff824d;

@@ -951,6 +951,35 @@
 :root {
   --background: light-dark(rgb(var(--gray-10)), rgb(var(--gray-100)));
   --background-inverse: light-dark(rgb(var(--gray-80)), rgb(var(--gray-10)));
+  --background-modifier-border: light-dark(
+    var(--border-subtle-0),
+    var(--border-subtle-0)
+  );
+  --background-modifier-border-focus: light-dark(var(--focus), var(--focus));
+  --background-modifier-border-hover: light-dark(
+    var(--border-subtle-1),
+    var(--border-subtle-1)
+  );
+  --background-modifier-error: light-dark(var(--red), var(--red));
+  --background-modifier-error-hover: light-dark(var(--red), var(--red));
+  --background-modifier-error-rgb: light-dark(
+    var(--color-red-rgb),
+    var(--color-red-rgb)
+  );
+  --background-modifier-form-field: light-dark(var(--field-1), var(--field-1));
+  --background-modifier-hover: light-dark(
+    var(--background-hover),
+    var(--background-hover)
+  );
+  --background-modifier-message: light-dark(var(--layer-1), var(--layer-1));
+  --background-modifier-success: light-dark(var(--green), var(--green));
+  --background-modifier-success-rgb: light-dark(
+    var(--color-green-rgb),
+    var(--color-green-rgb)
+  );
+  --background-primary: light-dark(var(--background), var(--background));
+  --background-primary-alt: light-dark(var(--layer-1), var(--layer-1));
+  --background-secondary: light-dark(var(--background), var(--background));
   --background-secondary-alt: light-dark(
     var(--color-base-05),
     var(--color-base-30)
@@ -1121,9 +1150,17 @@
   --size-9: 48px;
   --spreadHorizontalWrapped-margin-LR: -3.5px;
   --text-code: light-dark(var(--pink-60), var(--pink-50));
+  --text-error: light-dark(var(--red), var(--red));
+  --text-faint: light-dark(var(--text-placeholder), var(--text-placeholder));
+  --text-highlight-bg: light-dark(var(--highlight), var(--highlight));
+  --text-highlight-bg-active: light-dark(var(--highlight), var(--highlight));
+  --text-muted: light-dark(var(--text-secondary), var(--text-secondary));
+  --text-normal: light-dark(var(--text-primary), var(--text-primary));
+  --text-on-accent: light-dark(rgb(var(--white)), rgb(var(--white)));
   --text-placeholder: light-dark(rgb(var(--gray-40)), rgb(var(--gray-60)));
   --text-primary: light-dark(rgb(var(--gray-100)), rgb(var(--gray-10)));
   --text-secondary: light-dark(rgb(var(--gray-70)), rgb(var(--gray-30)));
+  --text-success: light-dark(var(--green), var(--green));
   --tracking-0: 0px;
   --tracking-1: 0.16px;
   --tracking-2: 0.32px;
@@ -1764,22 +1801,36 @@ body {
   --aside-text-color: var(--text-muted);
   --background: light-dark(rgb(var(--gray-10)), rgb(var(--gray-100)));
   --background-inverse: light-dark(rgb(var(--gray-80)), rgb(var(--gray-10)));
-  --background-modifier-active-hover: rgba(var(--color-accent-rgb), 0.15);
-  --background-modifier-border: var(--border-subtle-0);
-  --background-modifier-border-focus: var(--focus);
-  --background-modifier-border-hover: var(--border-subtle-1);
-  --background-modifier-cover: var(--background-hover);
-  --background-modifier-error: var(--red);
-  --background-modifier-error-hover: var(--red);
-  --background-modifier-error-rgb: var(--color-red-rgb);
-  --background-modifier-form-field: var(--field-1);
-  --background-modifier-hover: var(--background-hover);
-  --background-modifier-message: var(--layer-1);
-  --background-modifier-success: var(--green);
-  --background-modifier-success-rgb: var(--color-green-rgb);
-  --background-primary: var(--background);
-  --background-primary-alt: var(--layer-1);
-  --background-secondary: var(--background);
+  --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
+  --background-modifier-border: light-dark(
+    var(--border-subtle-0),
+    var(--border-subtle-0)
+  );
+  --background-modifier-border-focus: light-dark(var(--focus), var(--focus));
+  --background-modifier-border-hover: light-dark(
+    var(--border-subtle-1),
+    var(--border-subtle-1)
+  );
+  --background-modifier-error: light-dark(var(--red), var(--red));
+  --background-modifier-error-hover: light-dark(var(--red), var(--red));
+  --background-modifier-error-rgb: light-dark(
+    var(--color-red-rgb),
+    var(--color-red-rgb)
+  );
+  --background-modifier-form-field: light-dark(var(--field-1), var(--field-1));
+  --background-modifier-hover: light-dark(
+    var(--background-hover),
+    var(--background-hover)
+  );
+  --background-modifier-message: light-dark(var(--layer-1), var(--layer-1));
+  --background-modifier-success: light-dark(var(--green), var(--green));
+  --background-modifier-success-rgb: light-dark(
+    var(--color-green-rgb),
+    var(--color-green-rgb)
+  );
+  --background-primary: light-dark(var(--background), var(--background));
+  --background-primary-alt: light-dark(var(--layer-1), var(--layer-1));
+  --background-secondary: light-dark(var(--background), var(--background));
   --background-secondary-alt: light-dark(
     var(--color-base-05),
     var(--color-base-30)
@@ -1984,14 +2035,11 @@ body {
   --color-blue: light-dark(#086ddd, #027aff);
   --color-cyan: light-dark(#00bfbc, #53dfdd);
   --color-green: light-dark(#08b94e, #44cf6e);
-  --color-green-rgb: 102, 153, 97;
   --color-orange: light-dark(#ec7500, #e9973f);
   --color-pink: light-dark(#d53984, #fa99cd);
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
-  --color-red-rgb: 197, 65, 40;
   --color-yellow: light-dark(#e0ac00, #e0de71);
-  --color-yellow-rgb: 243, 189, 79;
   --cursor: default;
   --cursor-link: pointer;
   --cyan: var(--cyan-50);
@@ -2217,8 +2265,6 @@ body {
   --icon-xs-stroke-width: 1px;
   --indent-size: 4;
   --indent-unit: 0.5625em;
-  --indentation-guide: rgba(var(--mono-rgb-100), 0.15);
-  --indentation-guide-active: rgba(var(--mono-rgb-100), 0.3);
   --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12);
   --indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3);
   --indentation-guide-editing-indent: 0.85em;
@@ -2643,20 +2689,20 @@ body {
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-2);
   --text-code: light-dark(var(--pink-60), var(--pink-50));
-  --text-error: var(--red);
-  --text-faint: var(--text-placeholder);
-  --text-highlight-bg: var(--highlight);
-  --text-highlight-bg-active: var(--highlight);
+  --text-error: light-dark(var(--red), var(--red));
+  --text-faint: light-dark(var(--text-placeholder), var(--text-placeholder));
+  --text-highlight-bg: light-dark(var(--highlight), var(--highlight));
+  --text-highlight-bg-active: light-dark(var(--highlight), var(--highlight));
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: var(--text-secondary);
-  --text-normal: var(--text-primary);
-  --text-on-accent: rgb(var(--white));
+  --text-muted: light-dark(var(--text-secondary), var(--text-secondary));
+  --text-normal: light-dark(var(--text-primary), var(--text-primary));
+  --text-on-accent: light-dark(rgb(var(--white)), rgb(var(--white)));
   --text-on-accent-inverted: black;
   --text-placeholder: light-dark(rgb(var(--gray-40)), rgb(var(--gray-60)));
   --text-primary: light-dark(rgb(var(--gray-100)), rgb(var(--gray-10)));
   --text-secondary: light-dark(rgb(var(--gray-70)), rgb(var(--gray-30)));
-  --text-selection: rgba(var(--color-accent-rgb), 0.5);
-  --text-success: var(--green);
+  --text-selection: hsla(var(--color-accent-hsl), 0.2);
+  --text-success: light-dark(var(--green), var(--green));
   --text-warning: var(--color-orange);
   --titlebar-background: var(--background-secondary);
   --titlebar-background-focused: var(--background-secondary-alt);
@@ -2742,9 +2788,24 @@ body {
   --background-hover: rgba(var(--gray-50), 0.12);
   --background-inverse: rgb(var(--gray-80));
   --background-inverse-hover: rgba(var(--gray-70), 0.5);
+  --background-modifier-active-hover: rgba(var(--color-accent-rgb), 0.15);
+  --background-modifier-border: var(--border-subtle-0);
+  --background-modifier-border-focus: var(--focus);
+  --background-modifier-border-hover: var(--border-subtle-1);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
-  --background-modifier-cover: rgba(220, 220, 220, 0.4);
-  --background-secondary-alt: var(--color-base-05);
+  --background-modifier-cover: var(--background-hover);
+  --background-modifier-error: var(--red);
+  --background-modifier-error-hover: var(--red);
+  --background-modifier-error-rgb: var(--color-red-rgb);
+  --background-modifier-form-field: var(--field-1);
+  --background-modifier-hover: var(--background-hover);
+  --background-modifier-message: var(--layer-1);
+  --background-modifier-success: var(--green);
+  --background-modifier-success-rgb: var(--color-green-rgb);
+  --background-primary: var(--background);
+  --background-primary-alt: var(--layer-1);
+  --background-secondary: var(--background);
+  --background-secondary-alt: var(--background);
   --background-selected: rgba(var(--gray-50), 0.2);
   --background-selected-hover: rgba(var(--gray-50), 0.32);
   --border-inverse: rgb(var(--gray-100));
@@ -2766,17 +2827,9 @@ body {
   --code-string: var(--green);
   --code-tag: var(--red);
   --code-value: var(--lavender);
-  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 1),
-    calc(var(--accent-s) * 1.01),
-    calc(var(--accent-l) * 1.075)
-  );
-  --color-accent-2: hsl(
-    calc(var(--accent-h) - 3),
-    calc(var(--accent-s) * 1.02),
-    calc(var(--accent-l) * 1.15)
-  );
+  --color-accent: var(--interactive);
+  --color-accent-1: var(--interactive);
+  --color-accent-2: var(--interactive);
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent-rgb: var(--color-accent-rgb-l);
   --color-base-00: #ffffff;
@@ -2796,7 +2849,7 @@ body {
   --color-cyan: #00bfbc;
   --color-cyan-rgb: 0, 191, 188;
   --color-green: #08b94e;
-  --color-green-rgb: 8, 185, 78;
+  --color-green-rgb: 102, 153, 97;
   --color-orange: #ec7500;
   --color-orange-rgb: 236, 117, 0;
   --color-pink: #d53984;
@@ -2804,9 +2857,9 @@ body {
   --color-purple: #7852ee;
   --color-purple-rgb: 120, 82, 238;
   --color-red: #e93147;
-  --color-red-rgb: 233, 49, 71;
+  --color-red-rgb: 197, 65, 40;
   --color-yellow: #e0ac00;
-  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow-rgb: 243, 189, 79;
   --field-1: rgb(var(--white));
   --field-hover-1: rgb(var(--gray-20));
   --focus: var(--cyan-60);
@@ -2818,6 +2871,8 @@ body {
   --icon-on-color: rgb(var(--white));
   --icon-primary: rgb(var(--gray-100));
   --icon-secondary: rgb(var(--gray-70));
+  --indentation-guide: rgba(var(--mono-rgb-100), 0.15);
+  --indentation-guide-active: rgba(var(--mono-rgb-100), 0.3);
   --input-shadow:
     inset 0 0 0 1px rgba(0, 0, 0, 0.12),
     0px 0.5px 0.4px hsl(var(--shadow-color) / 0.47),
@@ -2854,9 +2909,18 @@ body {
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --text-code: var(--pink-60);
+  --text-error: var(--red);
+  --text-faint: var(--text-placeholder);
+  --text-highlight-bg: var(--highlight);
+  --text-highlight-bg-active: var(--highlight);
+  --text-muted: var(--text-secondary);
+  --text-normal: var(--text-primary);
+  --text-on-accent: rgb(var(--white));
   --text-placeholder: rgb(var(--gray-40));
   --text-primary: rgb(var(--gray-100));
   --text-secondary: rgb(var(--gray-70));
+  --text-selection: rgba(var(--color-accent-rgb), 0.5);
+  --text-success: var(--green);
 }
 
 .theme-dark {
@@ -2865,10 +2929,24 @@ body {
   --background-hover: rgba(var(--gray-50), 0.16);
   --background-inverse: rgb(var(--gray-10));
   --background-inverse-hover: rgba(var(--gray-20), 0.5);
+  --background-modifier-active-hover: rgba(var(--color-accent-rgb), 0.15);
+  --background-modifier-border: var(--border-subtle-0);
+  --background-modifier-border-focus: var(--focus);
+  --background-modifier-border-hover: var(--border-subtle-1);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-  --background-modifier-cover: rgba(10, 10, 10, 0.4);
-  --background-modifier-form-field: var(--color-base-25);
-  --background-secondary-alt: var(--color-base-30);
+  --background-modifier-cover: var(--background-hover);
+  --background-modifier-error: var(--red);
+  --background-modifier-error-hover: var(--red);
+  --background-modifier-error-rgb: var(--color-red-rgb);
+  --background-modifier-form-field: var(--field-1);
+  --background-modifier-hover: var(--background-hover);
+  --background-modifier-message: var(--layer-1);
+  --background-modifier-success: var(--green);
+  --background-modifier-success-rgb: var(--color-green-rgb);
+  --background-primary: var(--background);
+  --background-primary-alt: var(--layer-1);
+  --background-secondary: var(--background);
+  --background-secondary-alt: var(--background);
   --background-selected: rgba(var(--gray-50), 0.24);
   --background-selected-hover: rgba(var(--gray-50), 0.32);
   --border-inverse: rgb(var(--gray-10));
@@ -2889,17 +2967,9 @@ body {
   --code-string: var(--green-40);
   --code-tag: var(--red-50);
   --code-value: var(--lavender);
-  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 3),
-    calc(var(--accent-s) * 1.02),
-    calc(var(--accent-l) * 1.15)
-  );
-  --color-accent-2: hsl(
-    calc(var(--accent-h) - 5),
-    calc(var(--accent-s) * 1.05),
-    calc(var(--accent-l) * 1.29)
-  );
+  --color-accent: var(--interactive);
+  --color-accent-1: var(--interactive);
+  --color-accent-2: var(--interactive);
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent-rgb: var(--color-accent-rgb-d);
   --color-base-00: #1e1e1e;
@@ -2919,7 +2989,7 @@ body {
   --color-cyan: #53dfdd;
   --color-cyan-rgb: 83, 223, 221;
   --color-green: #44cf6e;
-  --color-green-rgb: 68, 207, 110;
+  --color-green-rgb: 102, 153, 97;
   --color-orange: #e9973f;
   --color-orange-rgb: 233, 151, 63;
   --color-pink: #fa99cd;
@@ -2927,9 +2997,9 @@ body {
   --color-purple: #a882ff;
   --color-purple-rgb: 168, 130, 255;
   --color-red: #fb464c;
-  --color-red-rgb: 251, 70, 76;
+  --color-red-rgb: 197, 65, 40;
   --color-yellow: #e0de71;
-  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow-rgb: 243, 189, 79;
   --field-1: rgb(var(--gray-90));
   --field-hover-1: rgb(var(--gray-80));
   --focus: var(--cyan-60);
@@ -2941,6 +3011,8 @@ body {
   --icon-on-color: rgb(var(--white));
   --icon-primary: rgb(var(--gray-10));
   --icon-secondary: rgb(var(--gray-30));
+  --indentation-guide: rgba(var(--mono-rgb-100), 0.15);
+  --indentation-guide-active: rgba(var(--mono-rgb-100), 0.3);
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0px 0.5px 0.4px hsl(var(--shadow-color) / 0.47),
@@ -2984,10 +3056,18 @@ body {
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-accent: var(--color-accent-1);
   --text-code: var(--pink-50);
+  --text-error: var(--red);
+  --text-faint: var(--text-placeholder);
+  --text-highlight-bg: var(--highlight);
+  --text-highlight-bg-active: var(--highlight);
+  --text-muted: var(--text-secondary);
+  --text-normal: var(--text-primary);
+  --text-on-accent: rgb(var(--white));
   --text-placeholder: rgb(var(--gray-60));
   --text-primary: rgb(var(--gray-10));
   --text-secondary: rgb(var(--gray-30));
-  --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
+  --text-selection: rgba(var(--color-accent-rgb), 0.5);
+  --text-success: var(--green);
 }
 
 iframe {

@@ -981,6 +981,7 @@
   --spreadHorizontalWrapped-margin-LR: -3.5px;
   --text-highlight-bg: light-dark(#eac357, #926b22e6);
   --text-selection: light-dark(#c7a78683, #6154508f);
+  --titlebar-background-focused: light-dark(#dabb9a, #dabb9a);
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
@@ -2272,7 +2273,7 @@ body {
   --text-success: #01903b;
   --text-warning: #c16d18;
   --titlebar-background: #e4cdba;
-  --titlebar-background-focused: #dabb9a;
+  --titlebar-background-focused: light-dark(#dabb9a, #dabb9a);
   --titlebar-border-color: transparent;
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;
@@ -2326,7 +2327,7 @@ body {
   --background-secondary-alt: #cbaa87;
   --code-background: #cbaa87;
   --color-accent: #800000;
-  --color-accent-1: #9873f7;
+  --color-accent-1: #800000;
   --color-accent-2: #a00000;
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-00: #e1c4a6;
@@ -2377,6 +2378,7 @@ body {
     0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
   --text-highlight-bg: #eac357;
   --text-selection: #c7a78683;
+  --titlebar-background-focused: #dabb9a;
 }
 
 .theme-dark {
@@ -2387,7 +2389,7 @@ body {
   --background-modifier-message: #281f1b;
   --background-secondary-alt: #c6a57f;
   --color-accent: #ba945f;
-  --color-accent-1: #a68af9;
+  --color-accent-1: #800000;
   --color-accent-2: #e0ba86;
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-00: #372d29;
@@ -2445,6 +2447,7 @@ body {
   --text-accent: #800000;
   --text-highlight-bg: #926b22e6;
   --text-selection: #6154508f;
+  --titlebar-background-focused: #dabb9a;
 }
 
 iframe {
@@ -2612,7 +2615,6 @@ iframe {
     width: 100%;
   }
   .popover {
-    animation: scale-up 75ms cubic-bezier(0.175, 0.9, 0.3, 1.1);
     background-color: #e1c4a6;
     border: 1px solid transparent;
     border-radius: 8px;
@@ -3905,7 +3907,10 @@ body.is-focused .workspace-tabs.mod-top {
 
 .is-hidden-frameless:not(.is-fullscreen).is-focused
   .titlebar-button-container.mod-right {
-  background-color: #dabb9a;
+  background-color: light-dark(
+    light-dark(#f6f6f6, #262626),
+    light-dark(#f6f6f6, #262626)
+  );
 }
 
 .titlebar-button.mod-logo:hover .logo-wireframe {

@@ -3,9 +3,9 @@
     hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
     hsl(var(--accent-h), var(--accent-s), var(--accent-l))
   );
-  --accent-h: light-dark(210, 210);
-  --accent-l: light-dark(63%, 63%);
-  --accent-s: light-dark(34%, 34%);
+  --accent-h: light-dark(210, light-dark(210, 210));
+  --accent-l: light-dark(63%, light-dark(63%, 63%));
+  --accent-s: light-dark(34%, light-dark(34%, 34%));
   --background-secondary-alt: light-dark(
     var(--color-base-05),
     var(--color-base-30)
@@ -169,9 +169,9 @@ body {
     hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
     hsl(var(--accent-h), var(--accent-s), var(--accent-l))
   );
-  --accent-h: light-dark(210, 210);
-  --accent-l: light-dark(63%, 63%);
-  --accent-s: light-dark(34%, 34%);
+  --accent-h: light-dark(210, light-dark(210, 210));
+  --accent-l: light-dark(63%, light-dark(63%, 63%));
+  --accent-s: light-dark(34%, light-dark(34%, 34%));
   --anim-duration-fast: 140ms;
   --anim-duration-moderate: 300ms;
   --anim-duration-none: 0;
@@ -357,20 +357,14 @@ body {
   --color-base-50: light-dark(#ababab, #666666);
   --color-base-60: light-dark(#707070, #999999);
   --color-base-70: light-dark(#5c5c5c, #b3b3b3);
-  --color-blue: #6199bf;
-  --color-blue-rgb: 97, 153, 191;
+  --color-blue: light-dark(#086ddd, #027aff);
   --color-cyan: light-dark(#00bfbc, #53dfdd);
-  --color-green: #a3be8c;
-  --color-green-rgb: 163, 190, 140;
-  --color-orange: #d08770;
-  --color-orange-rgb: 208, 135, 112;
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
   --color-pink: light-dark(#d53984, #fa99cd);
-  --color-purple: #b48ead;
-  --color-purple-rgb: 180, 142, 173;
-  --color-red: #bf616a;
-  --color-red-rgb: 191, 97, 106;
-  --color-yellow: #ebcb8b;
-  --color-yellow-rgb: 235, 203, 139;
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;

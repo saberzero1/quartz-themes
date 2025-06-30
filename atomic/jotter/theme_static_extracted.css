@@ -1,6 +1,9 @@
 :root {
   --background-modifier-border: light-dark(#d6d6d6, #4a4546);
+  --background-modifier-border-focus: light-dark(#363636, #363636);
   --background-modifier-border-hover: light-dark(#d6d6d6, #4f4a4b);
+  --background-modifier-form-field: light-dark(#000, #000);
+  --background-modifier-hover: light-dark(#111, #111);
   --background-primary: light-dark(#f2f2f2, #322f30);
   --background-primary-alt: light-dark(#e6e6e6, #413e3e);
   --background-secondary: light-dark(#f2f2f2, #322f30);
@@ -29,6 +32,7 @@
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
+  --indentation-guide-color: light-dark(#363636, #363636);
   --indentation-guide-color-active: light-dark(#b3b3b3, #766f71);
   --interactive-hover: light-dark(#efefef, #4a4546);
   --interactive-normal: light-dark(#e6e6e6, #433f40);
@@ -65,13 +69,13 @@ body {
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   --background-modifier-active-hover: #848e9a26;
   --background-modifier-border: light-dark(#d6d6d6, #4a4546);
-  --background-modifier-border-focus: #363636;
+  --background-modifier-border-focus: light-dark(#363636, #363636);
   --background-modifier-border-hover: light-dark(#d6d6d6, #4f4a4b);
   --background-modifier-error: #bf616a;
   --background-modifier-error-hover: #bf616a;
   --background-modifier-error-rgb: 191, 97, 106;
-  --background-modifier-form-field: #000;
-  --background-modifier-hover: #111;
+  --background-modifier-form-field: light-dark(#000, #000);
+  --background-modifier-hover: light-dark(#111, #111);
   --background-modifier-message: #000000e6;
   --background-modifier-success: #8fbcbb;
   --background-modifier-success-rgb: 143, 188, 187;
@@ -395,7 +399,7 @@ body {
   --icon-xs-stroke-width: 2px;
   --indent-size: 4;
   --indent-unit: 0.5625em;
-  --indentation-guide-color: #363636;
+  --indentation-guide-color: light-dark(#363636, #363636);
   --indentation-guide-color-active: light-dark(#b3b3b3, #766f71);
   --indentation-guide-editing-indent: 0.85em;
   --indentation-guide-reading-indent: -0.85em;
@@ -416,8 +420,6 @@ body {
   --input-height: 30px;
   --input-placeholder-color: #666666;
   --input-radius: 5px;
-  --input-shadow: none;
-  --input-shadow-hover: none;
   --interactive-accent: #9ba5ad;
   --interactive-accent-hover: #b1b9c0;
   --interactive-accent-hsl: 211, 10%, 56%;
@@ -473,8 +475,7 @@ body {
   --menu-border-width: 1px;
   --menu-padding: 6px;
   --menu-radius: 8px;
-  --menu-shadow:
-    0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+  --menu-shadow: none;
   --metadata-background: transparent;
   --metadata-border-color: #363636;
   --metadata-border-radius: 0;
@@ -612,8 +613,6 @@ body {
   --search-icon-color: #b3b3b3;
   --search-icon-size: 18px;
   --search-result-background: #000;
-  --shadow-l: none;
-  --shadow-s: none;
   --sidebar-markdown-font-size: 14.4px;
   --sidebar-tab-text-display: none;
   --size-2-1: 2px;
@@ -759,7 +758,7 @@ body {
   --text-success: #8fbcbb;
   --text-warning: #d08770;
   --titlebar-background: #1e1e1e;
-  --titlebar-background-focused: #363636;
+  --titlebar-background-focused: #1e1e1e;
   --titlebar-border-color: #363636;
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;
@@ -988,7 +987,10 @@ h6 {
 }
 
 .markdown-rendered button.copy-code-button:hover {
-  background-color: #ffffff13;
+  background-color: light-dark(
+    light-dark(#e6e6e6, #413e3e),
+    light-dark(#e6e6e6, #413e3e)
+  );
 }
 
 .callout {
@@ -1208,10 +1210,7 @@ h6 {
   background-color: light-dark(#f2f2f2, #322f30);
   border: 1px solid light-dark(#d6d6d6, #4a4546);
   border-radius: 8px;
-  box-shadow:
-    0px 1px 2px #0000001f,
-    0px 3.4px 6.7px #0000002e,
-    0px 15px 30px #0000004d;
+  box-shadow: none;
   display: flex;
   max-height: 95vh;
   position: absolute;
@@ -1222,10 +1221,7 @@ h6 {
   background-color: light-dark(#f2f2f2, #322f30);
   border: 0.5pt solid #555555;
   border-radius: 12px;
-  box-shadow:
-    0px 1.8px 7.3px #00000012,
-    0px 6.3px 24.7px #0000001d,
-    0px 30px 90px #00000033;
+  box-shadow: none;
   display: flex;
   flex-direction: column;
   max-height: 70vh;
@@ -1250,7 +1246,10 @@ input.prompt-input {
 }
 
 .suggestion-item.is-selected {
-  background-color: #ffffff13;
+  background-color: light-dark(
+    light-dark(#e6e6e6, #413e3e),
+    light-dark(#e6e6e6, #413e3e)
+  );
 }
 
 .suggestion-highlight {
@@ -1276,7 +1275,10 @@ a.tag {
 
 input[type="search"] {
   -webkit-app-region: no-drag;
-  background: #363636;
+  background: light-dark(
+    light-dark(#f2f2f2, #322f30),
+    light-dark(#f2f2f2, #322f30)
+  );
   border: 1px solid light-dark(#d6d6d6, #4a4546);
   border-radius: 5px;
   color: light-dark(#353132, #e1e1e1);
@@ -1300,7 +1302,10 @@ input[type="search"] {
 
 .nav-file-tag {
   align-self: center;
-  background-color: #ffffff13;
+  background-color: light-dark(
+    light-dark(#e6e6e6, #413e3e),
+    light-dark(#e6e6e6, #413e3e)
+  );
   border-radius: 4px;
   font-size: 9px;
   font-weight: 600;
@@ -1658,14 +1663,16 @@ svg.svg-icon {
 
 .theme-dark {
   --background-modifier-border: #4a4546;
+  --background-modifier-border-focus: #363636;
   --background-modifier-border-hover: #4f4a4b;
   --background-modifier-box-shadow: #0000004d;
   --background-modifier-cover: #0a0a0a66;
-  --background-modifier-form-field: #2a2a2a;
+  --background-modifier-form-field: #000;
+  --background-modifier-hover: #111;
   --background-primary: #322f30;
   --background-primary-alt: #413e3e;
   --background-secondary: #322f30;
-  --background-secondary-alt: #363636;
+  --background-secondary-alt: #1e1e1e;
   --color-accent: #848e9a;
   --color-accent-1: #9ba5ad;
   --color-accent-2: #b1b9c0;
@@ -1699,13 +1706,10 @@ svg.svg-icon {
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
   --highlight-mix-blend-mode: darken;
+  --indentation-guide-color: #363636;
   --indentation-guide-color-active: #766f71;
-  --input-shadow:
-    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
-    0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
-  --input-shadow-hover:
-    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
-    0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
+  --input-shadow: none;
+  --input-shadow-hover: none;
   --interactive-accent: #838e9a;
   --interactive-accent-hover: #9ba5ad;
   --interactive-hover: #4a4546;
@@ -1714,11 +1718,8 @@ svg.svg-icon {
   --mono-rgb-100: 255, 255, 255;
   --pdf-shadow: 0 0 0 1px #363636;
   --pdf-thumbnail-shadow: 0 0 0 1px #363636;
-  --shadow-l:
-    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
-    0px 30px 90px #00000033;
-  --shadow-s:
-    0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+  --shadow-l: none;
+  --shadow-s: none;
   --text-accent: #9ba5ad;
   --text-faint: #807b7b;
   --text-muted: #b7b2b2;
@@ -1728,13 +1729,16 @@ svg.svg-icon {
 
 .theme-light {
   --background-modifier-border: #d6d6d6;
+  --background-modifier-border-focus: #363636;
   --background-modifier-border-hover: #d6d6d6;
   --background-modifier-box-shadow: #0000001a;
   --background-modifier-cover: #dcdcdc66;
+  --background-modifier-form-field: #000;
+  --background-modifier-hover: #111;
   --background-primary: #f2f2f2;
   --background-primary-alt: #e6e6e6;
   --background-secondary: #f2f2f2;
-  --background-secondary-alt: #212121;
+  --background-secondary-alt: #1e1e1e;
   --color-accent: #848e9a;
   --color-accent-1: #8f9aa4;
   --color-accent-2: #9ba5ad;
@@ -1768,22 +1772,16 @@ svg.svg-icon {
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
   --highlight-mix-blend-mode: darken;
+  --indentation-guide-color: #363636;
   --indentation-guide-color-active: #b3b3b3;
-  --input-shadow:
-    inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008,
-    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
-  --input-shadow-hover:
-    inset 0 0 0 1px #0000002b, 0 2px 3px 0 #0000001a, 0 1px 1.5px 0 #00000008,
-    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+  --input-shadow: none;
+  --input-shadow-hover: none;
   --interactive-hover: #efefef;
   --interactive-normal: #e6e6e6;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  --shadow-l:
-    0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
-    0px 30px 90px #00000033;
-  --shadow-s:
-    0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
+  --shadow-l: none;
+  --shadow-s: none;
   --text-faint: #ababab;
   --text-muted: #878586;
   --text-normal: #353132;

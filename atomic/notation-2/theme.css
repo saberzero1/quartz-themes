@@ -1031,6 +1031,7 @@
   --tag-7-default: light-dark(rgb(250, 222, 201), rgb(133, 76, 29));
   --tag-8-default: light-dark(rgb(238, 224, 218), rgb(90, 90, 90));
   --tag-9-default: light-dark(rgb(227, 226, 224), rgb(96, 59, 44));
+  --text-highlight-bg: light-dark(var(--tag-1-default), var(--tag-1-default));
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
@@ -2384,7 +2385,7 @@ body {
   --text-accent-hover: var(--color-accent-2);
   --text-error: var(--color-red);
   --text-faint: var(--color-base-50);
-  --text-highlight-bg: var(--tag-1-default);
+  --text-highlight-bg: light-dark(var(--tag-1-default), var(--tag-1-default));
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: var(--color-base-70);
   --text-normal: var(--color-base-100);
@@ -2516,6 +2517,7 @@ body {
   --tag-7-default: rgb(250, 222, 201);
   --tag-8-default: rgb(238, 224, 218);
   --tag-9-default: rgb(227, 226, 224);
+  --text-highlight-bg: var(--tag-1-default);
 }
 
 .theme-dark {
@@ -2603,6 +2605,7 @@ body {
   --tag-8-default: rgb(90, 90, 90);
   --tag-9-default: rgb(96, 59, 44);
   --text-accent: var(--color-accent-1);
+  --text-highlight-bg: var(--tag-1-default);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
 }
 

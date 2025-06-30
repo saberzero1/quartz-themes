@@ -950,9 +950,21 @@
 
 :root {
   --background-modifier-border: light-dark(hsl(0, 0%, 84%), hsl(345, 3%, 28%));
+  --background-modifier-border-focus: light-dark(
+    var(--background-modifier-border),
+    var(--background-modifier-border)
+  );
   --background-modifier-border-hover: light-dark(
     hsl(0, 0%, 84%),
     hsl(345, 3%, 30%)
+  );
+  --background-modifier-form-field: light-dark(
+    var(--background-primary),
+    var(--background-primary)
+  );
+  --background-modifier-hover: light-dark(
+    var(--background-primary-alt),
+    var(--background-primary-alt)
   );
   --background-primary: light-dark(#f2f2f2, #322f30);
   --background-primary-alt: light-dark(#e6e6e6, #413e3e);
@@ -1017,6 +1029,10 @@
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
+  --indentation-guide-color: light-dark(
+    var(--background-modifier-border),
+    var(--background-modifier-border)
+  );
   --indentation-guide-color-active: light-dark(
     hsl(0, 0%, 70%),
     hsl(345, 3%, 45%)
@@ -1666,7 +1682,10 @@ body {
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
   --background-modifier-border: light-dark(hsl(0, 0%, 84%), hsl(345, 3%, 28%));
-  --background-modifier-border-focus: var(--background-modifier-border);
+  --background-modifier-border-focus: light-dark(
+    var(--background-modifier-border),
+    var(--background-modifier-border)
+  );
   --background-modifier-border-hover: light-dark(
     hsl(0, 0%, 84%),
     hsl(345, 3%, 30%)
@@ -1674,8 +1693,14 @@ body {
   --background-modifier-error: var(--color-red);
   --background-modifier-error-hover: var(--color-red);
   --background-modifier-error-rgb: var(--color-red-rgb);
-  --background-modifier-form-field: var(--background-primary);
-  --background-modifier-hover: var(--background-primary-alt);
+  --background-modifier-form-field: light-dark(
+    var(--background-primary),
+    var(--background-primary)
+  );
+  --background-modifier-hover: light-dark(
+    var(--background-primary-alt),
+    var(--background-primary-alt)
+  );
   --background-modifier-message: rgba(0, 0, 0, 0.9);
   --background-modifier-success: var(--color-green);
   --background-modifier-success-rgb: var(--color-green-rgb);
@@ -2029,7 +2054,10 @@ body {
   --icon-xs-stroke-width: 2px;
   --indent-size: 4;
   --indent-unit: 0.5625em;
-  --indentation-guide-color: var(--background-modifier-border);
+  --indentation-guide-color: light-dark(
+    var(--background-modifier-border),
+    var(--background-modifier-border)
+  );
   --indentation-guide-color-active: light-dark(
     hsl(0, 0%, 70%),
     hsl(345, 3%, 45%)
@@ -2053,8 +2081,6 @@ body {
   --input-height: 30px;
   --input-placeholder-color: var(--text-faint);
   --input-radius: 5px;
-  --input-shadow: none;
-  --input-shadow-hover: none;
   --interactive-accent: var(--color-accent-1);
   --interactive-accent-hover: var(--color-accent-2);
   --interactive-accent-hsl: var(--color-accent-hsl);
@@ -2249,8 +2275,6 @@ body {
   --search-icon-color: var(--text-muted);
   --search-icon-size: 18px;
   --search-result-background: var(--background-primary);
-  --shadow-l: none;
-  --shadow-s: none;
   --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9);
   --sidebar-tab-text-display: none;
   --size-2-1: 2px;
@@ -2445,13 +2469,16 @@ body {
 
 .theme-light {
   --background-modifier-border: hsl(0, 0%, 84%);
+  --background-modifier-border-focus: var(--background-modifier-border);
   --background-modifier-border-hover: hsl(0, 0%, 84%);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
+  --background-modifier-form-field: var(--background-primary);
+  --background-modifier-hover: var(--background-primary-alt);
   --background-primary: #f2f2f2;
   --background-primary-alt: #e6e6e6;
   --background-secondary: #f2f2f2;
-  --background-secondary-alt: var(--color-base-05);
+  --background-secondary-alt: var(--background-secondary);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -2493,25 +2520,16 @@ body {
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
   --highlight-mix-blend-mode: darken;
+  --indentation-guide-color: var(--background-modifier-border);
   --indentation-guide-color-active: hsl(0, 0%, 70%);
-  --input-shadow:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent;
-  --input-shadow-hover:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent;
+  --input-shadow: none;
+  --input-shadow-hover: none;
   --interactive-hover: #efefef;
   --interactive-normal: #e6e6e6;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  --shadow-l:
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2);
-  --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --shadow-l: none;
+  --shadow-s: none;
   --text-faint: #ababab;
   --text-muted: #878586;
   --text-normal: #353132;
@@ -2519,14 +2537,16 @@ body {
 
 .theme-dark {
   --background-modifier-border: hsl(345, 3%, 28%);
+  --background-modifier-border-focus: var(--background-modifier-border);
   --background-modifier-border-hover: hsl(345, 3%, 30%);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
-  --background-modifier-form-field: var(--color-base-25);
+  --background-modifier-form-field: var(--background-primary);
+  --background-modifier-hover: var(--background-primary-alt);
   --background-primary: #322f30;
   --background-primary-alt: #413e3e;
   --background-secondary: #322f30;
-  --background-secondary-alt: var(--color-base-30);
+  --background-secondary-alt: var(--background-secondary);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -2568,15 +2588,10 @@ body {
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
   --highlight-mix-blend-mode: darken;
+  --indentation-guide-color: var(--background-modifier-border);
   --indentation-guide-color-active: hsl(345, 3%, 45%);
-  --input-shadow:
-    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover:
-    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --input-shadow: none;
+  --input-shadow-hover: none;
   --interactive-accent: var(--color-accent);
   --interactive-accent-hover: var(--color-accent-1);
   --interactive-hover: #4a4546;
@@ -2585,12 +2600,8 @@ body {
   --mono-rgb-100: 255, 255, 255;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-  --shadow-l:
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2);
-  --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-l: none;
+  --shadow-s: none;
   --text-accent: var(--color-accent-1);
   --text-faint: #807b7b;
   --text-muted: #b7b2b2;

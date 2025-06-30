@@ -212,6 +212,12 @@ html[saved-theme="light"] {
 :root {
   --background-primary: light-dark(#efdcbc, #323232);
   --code-background: light-dark(#292929, #232323);
+  --code-function: light-dark(#dcbb59, #dcbb59);
+  --code-keyword: light-dark(#ff6347, #ff6347);
+  --code-normal: light-dark(#c4c4c4, #c4c4c4);
+  --code-property: light-dark(#d29a8c, #d29a8c);
+  --code-string: light-dark(#05a3a3, #05a3a3);
+  --code-value: light-dark(#e3b750, #e3b750);
   --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
@@ -286,15 +292,15 @@ body {
   --checkbox-size: 20px;
   --code-background: light-dark(#292929, #232323);
   --code-comment: #666666;
-  --code-function: #dcbb59;
+  --code-function: light-dark(#dcbb59, #dcbb59);
   --code-important: #e9973f;
-  --code-keyword: #ff6347;
-  --code-normal: #c4c4c4;
-  --code-property: #d29a8c;
+  --code-keyword: light-dark(#ff6347, #ff6347);
+  --code-normal: light-dark(#c4c4c4, #c4c4c4);
+  --code-property: light-dark(#d29a8c, #d29a8c);
   --code-punctuation: #b3b3b3;
-  --code-string: #05a3a3;
+  --code-string: light-dark(#05a3a3, #05a3a3);
   --code-tag: #fb464c;
-  --code-value: #e3b750;
+  --code-value: light-dark(#e3b750, #e3b750);
   --collapse-icon-color: #666666;
   --collapse-icon-color-collapsed: #a68af9;
   --color-accent-2: light-dark(#a68af9, #c5b6fc);
@@ -1020,7 +1026,7 @@ body {
     background-color: light-dark(#292929, #232323);
     border: 0px solid transparent;
     border-radius: 4px;
-    color: #c4c4c4;
+    color: light-dark(#c4c4c4, #c4c4c4);
     font-family:
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",

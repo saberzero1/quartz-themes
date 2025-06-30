@@ -107,13 +107,12 @@ body {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
-  --background-accent: hsl(var(--hue), var(--sat), var(--L0));
   --background-blue: light-dark(rgb(221, 235, 241), rgb(54, 73, 84));
   --background-brown: light-dark(rgb(233, 229, 227), rgb(67, 64, 64));
   --background-gray: light-dark(rgb(235, 236, 237), rgb(69, 75, 78));
   --background-green: light-dark(rgb(221, 237, 234), rgb(53, 76, 75));
   --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
-  --background-modifier-border: rgba(var(--text-rgb), 0.14);
+  --background-modifier-border: var(--color-base-30);
   --background-modifier-border-focus: var(--color-base-40);
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-error: var(--color-red);
@@ -126,11 +125,11 @@ body {
   --background-modifier-success-rgb: var(--color-green-rgb);
   --background-orange: light-dark(rgb(250, 235, 221), rgb(89, 74, 58));
   --background-pink: light-dark(rgb(244, 223, 235), rgb(83, 59, 76));
-  --background-primary: hsl(var(--hue), var(--sat), var(--L1));
-  --background-primary-alt: hsl(var(--hue), var(--sat), var(--L3));
+  --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
   --background-purple: light-dark(rgb(234, 228, 242), rgb(68, 63, 87));
   --background-red: light-dark(rgb(251, 228, 228), rgb(89, 65, 65));
-  --background-secondary: hsl(var(--hue), var(--sat), var(--L2));
+  --background-secondary: var(--color-base-20);
   --background-secondary-alt: light-dark(
     var(--color-base-05),
     var(--color-base-30)
@@ -226,7 +225,6 @@ body {
   --checklist-done-color: var(--text-muted);
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: var(--radius-s);
-  --code: #eb5757;
   --code-background: var(--background-primary-alt);
   --code-border-color: var(--background-modifier-border);
   --code-border-width: 0px;
@@ -457,7 +455,6 @@ body {
   --heading-spacing: calc(var(--p-spacing) * 2.5);
   --hr-color: var(--background-modifier-border);
   --hr-thickness: 2px;
-  --hue: 203;
   --icon-color: var(--text-muted);
   --icon-color-active: var(--text-accent);
   --icon-color-focused: var(--text-normal);
@@ -500,10 +497,9 @@ body {
   --input-height: 30px;
   --input-placeholder-color: var(--text-faint);
   --input-radius: 5px;
-  --interactive-accent: rgb(var(--interactive-accent-rgb));
-  --interactive-accent-hover: rgba(var(--interactive-accent-rgb), 0.8);
+  --interactive-accent: var(--color-accent-1);
+  --interactive-accent-hover: var(--color-accent-2);
   --interactive-accent-hsl: var(--color-accent-hsl);
-  --interactive-accent-rgb: 46, 170, 220;
   --interactive-hover: light-dark(#e9e9e9, #303030);
   --interactive-normal: light-dark(#f2f3f5, #2a2a2a);
   --italic-color: inherit;
@@ -640,7 +636,6 @@ body {
   --nav-item-weight-active: inherit;
   --nav-item-weight-hover: inherit;
   --nav-item-white-space: pre;
-  --opacity-translucency: 0.7;
   --p-spacing: 1rem;
   --p-spacing-empty: 0rem;
   --pdf-background: var(--background-primary);
@@ -690,7 +685,6 @@ body {
   --ribbon-background-collapsed: var(--background-primary);
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
   --ribbon-width: 44px;
-  --sat: 8%;
   --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2);
   --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05);
   --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1);
@@ -829,18 +823,18 @@ body {
   --tag-radius: 2em;
   --tag-size: var(--font-smaller);
   --tag-weight: inherit;
-  --text-accent: rgba(var(--text-rgb), 0.45);
-  --text-accent-hover: rgba(var(--text-rgb), 0.45);
+  --text-accent: var(--color-accent);
+  --text-accent-hover: var(--color-accent-2);
   --text-blue: light-dark(rgb(11, 110, 153), rgb(82, 156, 202));
   --text-brown: light-dark(rgb(100, 71, 58), rgb(147, 114, 100));
   --text-error: var(--color-red);
-  --text-faint: rgba(var(--text-rgb), 0.25);
+  --text-faint: var(--color-base-50);
   --text-green: light-dark(rgb(15, 123, 108), rgb(77, 171, 154));
   --text-highlight-bg: light-dark(rgb(251, 243, 219), rgb(89, 86, 59));
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: rgba(var(--text-rgb), 0.45);
-  --text-normal: rgba(var(--text-rgb), 0.9);
-  --text-on-accent: rgba(var(--text-rgb), 0.9);
+  --text-muted: var(--color-base-70);
+  --text-normal: var(--color-base-100);
+  --text-on-accent: white;
   --text-on-accent-inverted: black;
   --text-orange: light-dark(rgb(217, 115, 13), rgb(255, 163, 68));
   --text-pink: light-dark(rgb(173, 26, 114), rgb(226, 85, 161));

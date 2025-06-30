@@ -76,7 +76,10 @@
   --def-red: light-dark(#db3434, #ff8080);
   --frame-color-a: light-dark(#4a6cb0, #ff7029);
   --frame-color-b: light-dark(#4a6cb0, #ff7029);
-  --graph-fill-tag: light-dark(#ff8c00, #ede4b7);
+  --graph-arrow: light-dark(#999999, #999999);
+  --graph-circle-fill: light-dark(#ff8080, #ff8080);
+  --graph-circle-fill-highlight: light-dark(#ff8c00, #ff8c00);
+  --graph-line-highlight: light-dark(#ff8c00, #ff8c00);
   --h1-color: #ff824d;
   --h2-color: #ff824d;
   --h3-color: #ff824d;
@@ -463,14 +466,12 @@ body {
   --frame-color-a: light-dark(#4a6cb0, #ff7029);
   --frame-color-b: light-dark(#4a6cb0, #ff7029);
   --grabnote-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' style='fill: rgba(0, 0, 0, 1),transform: ,msFilter:,'%3E%3Cpath d='M7 7h4v4H7zm0 6h4v4H7zm6-6h4v4h-4zm0 6h4v4h-4z'%3E%3C/path%3E%3C/svg%3E");
-  --graph-arrow: #999999;
-  --graph-circle-fill: #ff8080;
-  --graph-circle-fill-highlight: #ff8c00;
-  --graph-circle-fill-unresolved: #808080;
+  --graph-arrow: light-dark(#999999, #999999);
+  --graph-circle-fill: light-dark(#ff8080, #ff8080);
+  --graph-circle-fill-highlight: light-dark(#ff8c00, #ff8c00);
   --graph-controls-width: 240px;
-  --graph-fill-tag: light-dark(#ff8c00, #ede4b7);
-  --graph-line: #808080;
-  --graph-line-highlight: #ff8c00;
+  --graph-line: #3f3f3f;
+  --graph-line-highlight: light-dark(#ff8c00, #ff8c00);
   --graph-node: #999999;
   --graph-node-attachment: #e0de71;
   --graph-node-focused: #8a5cf5;
@@ -1785,7 +1786,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill {
-  color: #ff8080;
+  color: light-dark(light-dark(#db3434, #ff8080), light-dark(#db3434, #ff8080));
 }
 
 .graph-view.color-fill-focused {
@@ -1793,7 +1794,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-tag {
-  color: #ede4b7;
+  color: #ff8c00;
 }
 
 .graph-view.color-fill-attachment {
@@ -1931,8 +1932,13 @@ svg.svg-icon {
   --def-red: #ff8080;
   --frame-color-a: #ff7029;
   --frame-color-b: #ff7029;
+  --graph-arrow: #999999;
+  --graph-circle-fill: #ff8080;
+  --graph-circle-fill-highlight: #ff8c00;
   --graph-circle-fill-unresolved: #808080;
-  --graph-fill-tag: #ede4b7;
+  --graph-fill-tag: #ff8c00;
+  --graph-line: #808080;
+  --graph-line-highlight: #ff8c00;
   --highlight-mix-blend-mode: darken;
   --hl-mark-blue: #378dff;
   --hl-mark-gray: #696969;
@@ -2040,8 +2046,13 @@ svg.svg-icon {
   --def-red: #db3434;
   --frame-color-a: #4a6cb0;
   --frame-color-b: #4a6cb0;
-  --graph-circle-fill-unresolved: #696969;
+  --graph-arrow: #999999;
+  --graph-circle-fill: #ff8080;
+  --graph-circle-fill-highlight: #ff8c00;
+  --graph-circle-fill-unresolved: #808080;
   --graph-fill-tag: #ff8c00;
+  --graph-line: #808080;
+  --graph-line-highlight: #ff8c00;
   --highlight-mix-blend-mode: darken;
   --hl-mark-blue: #99ccff;
   --hl-mark-gray: #bfbfbf;

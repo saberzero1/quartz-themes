@@ -27,6 +27,10 @@
   --color-yellow: light-dark(#e0ac00, #e0de71);
   --dark-blue: #212a70;
   --favorite-blue: #0f056b;
+  --floating-toc-background-color: light-dark(#1a1a1a, #1a1a1a);
+  --floating-toc-font-size: light-dark(1.2181em, 1.2181em);
+  --floating-toc-hover-color: light-dark(##f2c204, ##f2c204);
+  --floating-toc-line-color: light-dark(#fffae5, #fffae5);
   --keyboard-height: 0px;
   --light-blue: #a6c3e1;
   --loading-icon-delay: 400ms;
@@ -292,16 +296,12 @@ body {
   --file-margins: 32px;
   --flair-background: #ffffff26;
   --flair-color: #2c1cbd;
-  --floating-toc-background-color: #1a1a1a;
+  --floating-toc-background-color: light-dark(#1a1a1a, #1a1a1a);
   --floating-toc-font-color: #2c1cbd;
-  --floating-toc-font-size: 1.2181em;
-  --floating-toc-header-background-color: #1a1a1a;
-  --floating-toc-highlight-color: #c10388;
-  --floating-toc-highlight-color-rgb: 255, 128, 0;
-  --floating-toc-hover-color: ##f2c204;
-  --floating-toc-line-color: #fffae5;
-  --floating-toc-line-height: 1.2rem;
-  --floating-toc-response-time: 0s;
+  --floating-toc-font-size: light-dark(1.2181em, 1.2181em);
+  --floating-toc-header-background-color: #0d0d0d;
+  --floating-toc-hover-color: light-dark(##f2c204, ##f2c204);
+  --floating-toc-line-color: light-dark(#fffae5, #fffae5);
   --font-black: 900;
   --font-bold: 700;
   --font-default:
@@ -1832,6 +1832,15 @@ svg.svg-icon {
   --color-red-rgb: 199, 56, 60;
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
+  --floating-toc-background-color: #1a1a1a;
+  --floating-toc-font-size: 1.2181em;
+  --floating-toc-header-background-color: #1a1a1a;
+  --floating-toc-highlight-color: #c10388;
+  --floating-toc-highlight-color-rgb: 255, 128, 0;
+  --floating-toc-hover-color: ##f2c204;
+  --floating-toc-line-color: #fffae5;
+  --floating-toc-line-height: 1.2rem;
+  --floating-toc-response-time: 0s;
   --highlight-mix-blend-mode: darken;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
@@ -1896,6 +1905,15 @@ svg.svg-icon {
   --color-red-rgb: 233, 49, 71;
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
+  --floating-toc-background-color: #1a1a1a;
+  --floating-toc-font-size: 1.2181em;
+  --floating-toc-header-background-color: #1a1a1a;
+  --floating-toc-highlight-color: #c10388;
+  --floating-toc-highlight-color-rgb: 255, 128, 0;
+  --floating-toc-hover-color: ##f2c204;
+  --floating-toc-line-color: #fffae5;
+  --floating-toc-line-height: 1.2rem;
+  --floating-toc-response-time: 0s;
   --highlight-mix-blend-mode: darken;
   --input-shadow:
     inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008,

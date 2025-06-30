@@ -22,10 +22,8 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --mono-rgb-100: 255, 255, 255;
-  --text-accent: hsl(251, 81.6%, 78.2%);
-  --mono-rgb-100: 255, 255, 255;
-  --text-accent: hsl(251, 81.6%, 78.2%);
+  --mono-rgb-100: 205, 214, 244;
+  --mono-rgb-100: 205, 214, 244;
 }
 
 :root[saved-theme="light"],
@@ -43,8 +41,8 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --mono-rgb-100: 0, 0, 0;
-  --mono-rgb-100: 0, 0, 0;
+  --mono-rgb-100: 205, 214, 244;
+  --mono-rgb-100: 205, 214, 244;
 }
 
 /* cyrillic-ext */
@@ -175,6 +173,9 @@ html[saved-theme="light"] {
 }
 
 :root {
+  --background-modifier-border: light-dark(rgb(49, 50, 68), rgb(49, 50, 68));
+  --background-primary: light-dark(rgb(30, 30, 46), rgb(30, 30, 46));
+  --background-primary-alt: light-dark(rgb(24, 24, 37), rgb(24, 24, 37));
   --color-accent-2: light-dark(hsl(251, 81.6%, 78.2%), hsl(249, 84%, 87.72%));
   --color-accent-hsl: light-dark(hsl(254, 80%, 68%), hsl(254, 80%, 68%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
@@ -193,6 +194,15 @@ html[saved-theme="light"] {
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
+  --text-accent: light-dark(rgb(180, 190, 254), rgb(180, 190, 254));
+  --text-accent-hover: light-dark(rgb(180, 190, 254), rgb(180, 190, 254));
+  --text-faint: light-dark(rgb(69, 71, 90), rgb(69, 71, 90));
+  --text-highlight-bg: light-dark(
+    rgb(245, 224, 220, 100%),
+    rgb(245, 224, 220, 100%)
+  );
+  --text-muted: light-dark(rgb(166, 173, 200), rgb(166, 173, 200));
+  --text-normal: light-dark(rgb(205, 214, 244), rgb(205, 214, 244));
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
   --text-faint: var(--color-base-50);
@@ -229,32 +239,32 @@ html {
   font-size: 16px;
 }
 body {
-  --background-modifier-border: rgb(49, 50, 68);
-  --background-modifier-border-focus: #555555;
-  --background-modifier-border-hover: #3f3f3f;
-  --background-modifier-hover: rgb(255, 255, 255, 7.5%);
-  --background-primary: rgb(30, 30, 46);
-  --background-primary-alt: rgb(24, 24, 37);
+  --background-modifier-border: light-dark(rgb(49, 50, 68), rgb(49, 50, 68));
+  --background-modifier-border-focus: rgb(108, 112, 134);
+  --background-modifier-border-hover: rgb(88, 91, 112);
+  --background-modifier-hover: rgb(205, 214, 244, 7.5%);
+  --background-primary: light-dark(rgb(30, 30, 46), rgb(30, 30, 46));
+  --background-primary-alt: light-dark(rgb(24, 24, 37), rgb(24, 24, 37));
   --bold-color: inherit;
   --bold-weight: 600;
   --checkbox-border-color: rgb(69, 71, 90);
   --checkbox-border-color-hover: rgb(166, 173, 200);
   --checkbox-color: rgb(203, 166, 247);
-  --checkbox-color-hover: hsl(251, 81.6%, 78.2%);
+  --checkbox-color-hover: rgb(180, 190, 254);
   --checkbox-marker-color: rgb(30, 30, 46);
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
   --code-background: rgb(24, 24, 37);
   --code-comment: rgb(69, 71, 90);
-  --code-function: #e0de71;
-  --code-important: #e9973f;
-  --code-keyword: #fa99cd;
+  --code-function: rgb(249, 226, 175);
+  --code-important: rgb(250, 179, 135);
+  --code-keyword: rgb(245, 194, 231);
   --code-normal: rgb(166, 173, 200);
-  --code-property: #53dfdd;
+  --code-property: rgb(137, 220, 235);
   --code-punctuation: rgb(166, 173, 200);
-  --code-string: #44cf6e;
-  --code-tag: #fb464c;
-  --code-value: #a882ff;
+  --code-string: rgb(166, 227, 161);
+  --code-tag: rgb(243, 139, 168);
+  --code-value: rgb(180, 190, 254);
   --collapse-icon-color: rgb(69, 71, 90);
   --collapse-icon-color-collapsed: rgb(166, 173, 200);
   --color-accent-2: light-dark(hsl(251, 81.6%, 78.2%), hsl(249, 84%, 87.72%));
@@ -286,8 +296,8 @@ body {
     -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-weight: 400;
-  --graph-line: #3f3f3f;
-  --graph-node-tag: #44cf6e;
+  --graph-line: rgb(88, 91, 112);
+  --graph-node-tag: rgb(166, 227, 161);
   --graph-node-unresolved: rgb(69, 71, 90);
   --h1-color: inherit;
   --h1-font: inherit;
@@ -305,7 +315,6 @@ body {
   --link-external-color-hover: rgb(148, 226, 213);
   --link-external-filter: none;
   --link-weight: 600;
-  --mono-rgb-100: 205, 214, 244;
   --p-spacing: 1rem;
   --search-icon-color: rgb(166, 173, 200);
   --tag-background: transparent;
@@ -319,16 +328,19 @@ body {
   --tag-decoration-hover: underline;
   --tag-radius: 0.8em;
   --tag-weight: inherit;
-  --text-accent: rgb(180, 190, 254);
-  --text-accent-hover: rgb(180, 190, 254);
-  --text-faint: rgb(69, 71, 90);
-  --text-highlight-bg: rgb(245, 224, 220, 100%);
-  --text-muted: rgb(166, 173, 200);
-  --text-normal: rgb(205, 214, 244);
+  --text-accent: light-dark(rgb(180, 190, 254), rgb(180, 190, 254));
+  --text-accent-hover: light-dark(rgb(180, 190, 254), rgb(180, 190, 254));
+  --text-faint: light-dark(rgb(69, 71, 90), rgb(69, 71, 90));
+  --text-highlight-bg: light-dark(
+    rgb(245, 224, 220, 100%),
+    rgb(245, 224, 220, 100%)
+  );
+  --text-muted: light-dark(rgb(166, 173, 200), rgb(166, 173, 200));
+  --text-normal: light-dark(rgb(205, 214, 244), rgb(205, 214, 244));
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-user-select: none;
   background-color: rgb(30, 30, 46);
-  caret-color: hsl(251, 81.6%, 78.2%);
+  caret-color: rgb(180, 190, 254);
   color: rgb(24, 24, 37);
   contain: initial;
   font-family:
@@ -398,7 +410,7 @@ body {
 :root,
 html {
   .callout {
-    --callout-color: 2, 122, 255;
+    --callout-color: 137, 180, 250;
     background-color: rgb(158, 158, 158, 10%);
     border-color: rgb(158, 158, 158, 60%);
     border-radius: 4px;
@@ -414,175 +426,175 @@ html {
     overflow-x: auto;
     overflow-y: hidden;
     &[data-callout] {
-      --callout-color: 2, 122, 255;
+      --callout-color: 137, 180, 250;
       background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="abstract"] {
-      --callout-color: 83, 223, 221;
+      --callout-color: 116, 199, 236;
       background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="summary"] {
-      --callout-color: 83, 223, 221;
+      --callout-color: 116, 199, 236;
       background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="tldr"] {
-      --callout-color: 83, 223, 221;
+      --callout-color: 116, 199, 236;
       background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="info"] {
-      --callout-color: 2, 122, 255;
+      --callout-color: 137, 180, 250;
       background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="todo"] {
-      --callout-color: 2, 122, 255;
+      --callout-color: 137, 180, 250;
       background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="important"] {
-      --callout-color: 83, 223, 221;
+      --callout-color: 116, 199, 236;
       background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="tip"] {
-      --callout-color: 83, 223, 221;
+      --callout-color: 116, 199, 236;
       background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="hint"] {
-      --callout-color: 83, 223, 221;
+      --callout-color: 116, 199, 236;
       background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="success"] {
-      --callout-color: 68, 207, 110;
+      --callout-color: 166, 227, 161;
       background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="check"] {
-      --callout-color: 68, 207, 110;
+      --callout-color: 166, 227, 161;
       background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="done"] {
-      --callout-color: 68, 207, 110;
+      --callout-color: 166, 227, 161;
       background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="question"] {
-      --callout-color: 224, 222, 113;
+      --callout-color: 249, 226, 175;
       background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="help"] {
-      --callout-color: 224, 222, 113;
+      --callout-color: 249, 226, 175;
       background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="faq"] {
-      --callout-color: 224, 222, 113;
+      --callout-color: 249, 226, 175;
       background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="warning"] {
-      --callout-color: 233, 151, 63;
+      --callout-color: 250, 179, 135;
       background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="caution"] {
-      --callout-color: 233, 151, 63;
+      --callout-color: 250, 179, 135;
       background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="attention"] {
-      --callout-color: 233, 151, 63;
+      --callout-color: 250, 179, 135;
       background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="failure"] {
-      --callout-color: 251, 70, 76;
+      --callout-color: 243, 139, 168;
       background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="fail"] {
-      --callout-color: 251, 70, 76;
+      --callout-color: 243, 139, 168;
       background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="missing"] {
-      --callout-color: 251, 70, 76;
+      --callout-color: 243, 139, 168;
       background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="danger"] {
-      --callout-color: 251, 70, 76;
+      --callout-color: 243, 139, 168;
       background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="error"] {
-      --callout-color: 251, 70, 76;
+      --callout-color: 243, 139, 168;
       background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="bug"] {
-      --callout-color: 251, 70, 76;
+      --callout-color: 243, 139, 168;
       background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="example"] {
-      --callout-color: 168, 130, 255;
+      --callout-color: 203, 166, 247;
       background-color: rgb(158, 158, 158, 10%);
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);

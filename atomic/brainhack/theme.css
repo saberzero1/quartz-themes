@@ -949,6 +949,142 @@
 }
 
 :root {
+  --accent-color-alt: light-dark(
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      calc(1 * var(--accento-s, var(--accent-s))),
+      calc(1.5 * var(--accento-l, var(--accent-l))),
+      1
+    ),
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      calc(1 * var(--accento-s, var(--accent-s))),
+      calc(1.5 * var(--accento-l, var(--accent-l))),
+      1
+    )
+  );
+  --accent-color-alt2: light-dark(
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      calc(1 * var(--accento-s), var(--accent-s)),
+      calc(1.7 * var(--accento-l, var(--accent-l))),
+      1
+    ),
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      calc(1 * var(--accento-s), var(--accent-s)),
+      calc(1.7 * var(--accento-l, var(--accent-l))),
+      1
+    )
+  );
+  --accent-color-bg: light-dark(
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      var(--accento-s, var(--accent-s)),
+      98%,
+      1
+    ),
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      var(--accento-s, var(--accent-s)),
+      98%,
+      1
+    )
+  );
+  --accent-color-bg_d: light-dark(
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      calc(0.1 * var(--accento-s, var(--accent-s))),
+      10%,
+      1
+    ),
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      calc(0.1 * var(--accento-s, var(--accent-s))),
+      10%,
+      1
+    )
+  );
+  --accent-color-bg_dc: light-dark(
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      calc(0.1 * var(--accento-s, var(--accent-s))),
+      15%,
+      1
+    ),
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      calc(0.1 * var(--accento-s, var(--accent-s))),
+      15%,
+      1
+    )
+  );
+  --accent-color-bg2: light-dark(
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      var(--accento-s, var(--accent-s)),
+      85%,
+      1
+    ),
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      var(--accento-s, var(--accent-s)),
+      85%,
+      1
+    )
+  );
+  --accent-color-bg2c: light-dark(
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      var(--accent-s, var(--accent-s)),
+      85%,
+      1
+    ),
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      var(--accent-s, var(--accent-s)),
+      85%,
+      1
+    )
+  );
+  --accent-color-bright2: light-dark(
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      calc(1 * var(--accento-s, var(--accent-s))),
+      calc(1 * var(--accento-l, var(--accent-l))),
+      0.01
+    ),
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      calc(1 * var(--accento-s, var(--accent-s))),
+      calc(1 * var(--accento-l, var(--accent-l))),
+      0.01
+    )
+  );
+  --accent-color-h1: light-dark(
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      var(--accento-s, var(--accent-s)),
+      calc(calc(var(--accento-l, var(--accent-l)) - 49%) * -100)
+    ),
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      var(--accento-s, var(--accent-s)),
+      calc(calc(var(--accento-l, var(--accent-l)) - 49%) * -100)
+    )
+  );
+  --accent-color-inverse2: light-dark(
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      var(--accento-s, var(--accent-s)),
+      calc(calc(var(--accento-l, var(--accent-l)) - 67%) * -100)
+    ),
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      var(--accento-s, var(--accent-s)),
+      calc(calc(var(--accento-l, var(--accent-l)) - 67%) * -100)
+    )
+  );
   --background-primary: light-dark(
     var(--accent-color-bg),
     var(--accent-color-bg_d)
@@ -1640,188 +1776,141 @@
 /* Obsidian theme variables */
 /* ------------------------ */
 body {
-  --accent-color-alt: hsl(
-    var(--accento-h, var(--accent-h)),
-    calc(1 * var(--accento-s, var(--accent-s))),
-    calc(1.5 * var(--accento-l, var(--accent-l))),
-    1
+  --accent-color-alt: light-dark(
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      calc(1 * var(--accento-s, var(--accent-s))),
+      calc(1.5 * var(--accento-l, var(--accent-l))),
+      1
+    ),
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      calc(1 * var(--accento-s, var(--accent-s))),
+      calc(1.5 * var(--accento-l, var(--accent-l))),
+      1
+    )
   );
-  --accent-color-alt2: hsl(
-    var(--accento-h, var(--accent-h)),
-    calc(1 * var(--accento-s), var(--accent-s)),
-    calc(1.7 * var(--accento-l, var(--accent-l))),
-    1
+  --accent-color-alt2: light-dark(
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      calc(1 * var(--accento-s), var(--accent-s)),
+      calc(1.7 * var(--accento-l, var(--accent-l))),
+      1
+    ),
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      calc(1 * var(--accento-s), var(--accent-s)),
+      calc(1.7 * var(--accento-l, var(--accent-l))),
+      1
+    )
   );
-  --accent-color-bg: hsl(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    98%,
-    1
+  --accent-color-bg: light-dark(
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      var(--accento-s, var(--accent-s)),
+      98%,
+      1
+    ),
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      var(--accento-s, var(--accent-s)),
+      98%,
+      1
+    )
   );
-  --accent-color-bg_d: hsl(
-    var(--accento-h, var(--accent-h)),
-    calc(0.1 * var(--accento-s, var(--accent-s))),
-    10%,
-    1
+  --accent-color-bg_d: light-dark(
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      calc(0.1 * var(--accento-s, var(--accent-s))),
+      10%,
+      1
+    ),
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      calc(0.1 * var(--accento-s, var(--accent-s))),
+      10%,
+      1
+    )
   );
-  --accent-color-bg_dc: hsl(
-    var(--accento-h, var(--accent-h)),
-    calc(0.1 * var(--accento-s, var(--accent-s))),
-    15%,
-    1
+  --accent-color-bg_dc: light-dark(
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      calc(0.1 * var(--accento-s, var(--accent-s))),
+      15%,
+      1
+    ),
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      calc(0.1 * var(--accento-s, var(--accent-s))),
+      15%,
+      1
+    )
   );
-  --accent-color-bg2: hsl(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    85%,
-    1
+  --accent-color-bg2: light-dark(
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      var(--accento-s, var(--accent-s)),
+      85%,
+      1
+    ),
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      var(--accento-s, var(--accent-s)),
+      85%,
+      1
+    )
   );
-  --accent-color-bg2c: hsl(
-    var(--accento-h, var(--accent-h)),
-    var(--accent-s, var(--accent-s)),
-    85%,
-    1
+  --accent-color-bg2c: light-dark(
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      var(--accent-s, var(--accent-s)),
+      85%,
+      1
+    ),
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      var(--accent-s, var(--accent-s)),
+      85%,
+      1
+    )
   );
-  --accent-color-bright: hsla(
-    var(--accento-h, var(--accent-h)),
-    calc(1 * var(--accento-s, var(--accent-s))),
-    calc(1 * var(--accento-l, var(--accent-l))),
-    0.1
+  --accent-color-bright2: light-dark(
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      calc(1 * var(--accento-s, var(--accent-s))),
+      calc(1 * var(--accento-l, var(--accent-l))),
+      0.01
+    ),
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      calc(1 * var(--accento-s, var(--accent-s))),
+      calc(1 * var(--accento-l, var(--accent-l))),
+      0.01
+    )
   );
-  --accent-color-bright2: hsl(
-    var(--accento-h, var(--accent-h)),
-    calc(1 * var(--accento-s, var(--accent-s))),
-    calc(1 * var(--accento-l, var(--accent-l))),
-    0.01
+  --accent-color-h1: light-dark(
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      var(--accento-s, var(--accent-s)),
+      calc(calc(var(--accento-l, var(--accent-l)) - 49%) * -100)
+    ),
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      var(--accento-s, var(--accent-s)),
+      calc(calc(var(--accento-l, var(--accent-l)) - 49%) * -100)
+    )
   );
-  --accent-color-h1: hsl(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    calc(calc(var(--accento-l, var(--accent-l)) - 49%) * -100)
-  );
-  --accent-color-hsl: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l))
-  );
-  --accent-color-inverse2: hsl(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    calc(calc(var(--accento-l, var(--accent-l)) - 67%) * -100)
-  );
-  --accent-color-light01: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.01
-  );
-  --accent-color-light02: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.02
-  );
-  --accent-color-light03: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.03
-  );
-  --accent-color-light04: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.04
-  );
-  --accent-color-light05: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.05
-  );
-  --accent-color-light06: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.06
-  );
-  --accent-color-light07: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.07
-  );
-  --accent-color-light08: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.08
-  );
-  --accent-color-light09: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.09
-  );
-  --accent-color-light1: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.1
-  );
-  --accent-color-light10: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    1
-  );
-  --accent-color-light2: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.2
-  );
-  --accent-color-light3: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.3
-  );
-  --accent-color-light4: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.4
-  );
-  --accent-color-light5: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.5
-  );
-  --accent-color-light6: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.6
-  );
-  --accent-color-light7: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.7
-  );
-  --accent-color-light8: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.8
-  );
-  --accent-color-light9: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l)),
-    0.9
+  --accent-color-inverse2: light-dark(
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      var(--accento-s, var(--accent-s)),
+      calc(calc(var(--accento-l, var(--accent-l)) - 67%) * -100)
+    ),
+    hsl(
+      var(--accento-h, var(--accent-h)),
+      var(--accento-s, var(--accent-s)),
+      calc(calc(var(--accento-l, var(--accent-l)) - 67%) * -100)
+    )
   );
   --accent-h: 258;
   --accent-l: 66%;
@@ -2385,11 +2474,11 @@ body {
   --pill-radius: 2em;
   --pill-weight: inherit;
   --popover-font-size: var(--font-text-size);
-  --popover-height: 1250px;
+  --popover-height: 400px;
   --popover-max-height: 95vh;
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
-  --popover-width: 1050px;
+  --popover-width: 450px;
   --prompt-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
@@ -2468,7 +2557,7 @@ body {
   --tab-divider-color: var(--background-modifier-border-hover);
   --tab-font-size: var(--font-ui-small);
   --tab-font-weight: inherit;
-  --tab-max-width: 35%;
+  --tab-max-width: 320px;
   --tab-outline-color: var(--divider-color);
   --tab-outline-width: 1px;
   --tab-radius: var(--radius-s);
@@ -2545,11 +2634,7 @@ body {
   --tag-radius: 2em;
   --tag-size: var(--font-smaller);
   --tag-weight: inherit;
-  --text-accent: hsla(
-    var(--accento-h, var(--accent-h)),
-    var(--accento-s, var(--accent-s)),
-    var(--accento-l, var(--accent-l))
-  );
+  --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-2);
   --text-error: var(--color-red);
   --text-faint: var(--color-base-50);
@@ -2611,12 +2696,199 @@ body {
 }
 
 .theme-light {
+  --accent-color-alt: hsl(
+    var(--accento-h, var(--accent-h)),
+    calc(1 * var(--accento-s, var(--accent-s))),
+    calc(1.5 * var(--accento-l, var(--accent-l))),
+    1
+  );
+  --accent-color-alt2: hsl(
+    var(--accento-h, var(--accent-h)),
+    calc(1 * var(--accento-s), var(--accent-s)),
+    calc(1.7 * var(--accento-l, var(--accent-l))),
+    1
+  );
+  --accent-color-bg: hsl(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    98%,
+    1
+  );
+  --accent-color-bg_d: hsl(
+    var(--accento-h, var(--accent-h)),
+    calc(0.1 * var(--accento-s, var(--accent-s))),
+    10%,
+    1
+  );
+  --accent-color-bg_dc: hsl(
+    var(--accento-h, var(--accent-h)),
+    calc(0.1 * var(--accento-s, var(--accent-s))),
+    15%,
+    1
+  );
+  --accent-color-bg2: hsl(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    85%,
+    1
+  );
+  --accent-color-bg2c: hsl(
+    var(--accento-h, var(--accent-h)),
+    var(--accent-s, var(--accent-s)),
+    85%,
+    1
+  );
+  --accent-color-bright: hsla(
+    var(--accento-h, var(--accent-h)),
+    calc(1 * var(--accento-s, var(--accent-s))),
+    calc(1 * var(--accento-l, var(--accent-l))),
+    0.1
+  );
+  --accent-color-bright2: hsl(
+    var(--accento-h, var(--accent-h)),
+    calc(1 * var(--accento-s, var(--accent-s))),
+    calc(1 * var(--accento-l, var(--accent-l))),
+    0.01
+  );
+  --accent-color-h1: hsl(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    calc(calc(var(--accento-l, var(--accent-l)) - 49%) * -100)
+  );
+  --accent-color-hsl: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l))
+  );
+  --accent-color-inverse2: hsl(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    calc(calc(var(--accento-l, var(--accent-l)) - 67%) * -100)
+  );
+  --accent-color-light01: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.01
+  );
+  --accent-color-light02: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.02
+  );
+  --accent-color-light03: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.03
+  );
+  --accent-color-light04: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.04
+  );
+  --accent-color-light05: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.05
+  );
+  --accent-color-light06: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.06
+  );
+  --accent-color-light07: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.07
+  );
+  --accent-color-light08: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.08
+  );
+  --accent-color-light09: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.09
+  );
+  --accent-color-light1: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.1
+  );
+  --accent-color-light10: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    1
+  );
+  --accent-color-light2: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.2
+  );
+  --accent-color-light3: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.3
+  );
+  --accent-color-light4: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.4
+  );
+  --accent-color-light5: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.5
+  );
+  --accent-color-light6: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.6
+  );
+  --accent-color-light7: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.7
+  );
+  --accent-color-light8: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.8
+  );
+  --accent-color-light9: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.9
+  );
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
   --background-primary: var(--accent-color-bg);
   --background-secondary: rgb(255, 255, 255);
   --background-secondary-alt: var(--color-base-05);
-  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l))
+  );
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
     calc(var(--accent-s) * 1.01),
@@ -2667,23 +2939,218 @@ body {
     0 0 0 0 transparent;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
+  --popover-height: 1250px;
+  --popover-width: 1050px;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
+  --tab-max-width: 35%;
+  --text-accent: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l))
+  );
   background-color: white;
 }
 
 .theme-dark {
+  --accent-color-alt: hsl(
+    var(--accento-h, var(--accent-h)),
+    calc(1 * var(--accento-s, var(--accent-s))),
+    calc(1.5 * var(--accento-l, var(--accent-l))),
+    1
+  );
+  --accent-color-alt2: hsl(
+    var(--accento-h, var(--accent-h)),
+    calc(1 * var(--accento-s), var(--accent-s)),
+    calc(1.7 * var(--accento-l, var(--accent-l))),
+    1
+  );
+  --accent-color-bg: hsl(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    98%,
+    1
+  );
+  --accent-color-bg_d: hsl(
+    var(--accento-h, var(--accent-h)),
+    calc(0.1 * var(--accento-s, var(--accent-s))),
+    10%,
+    1
+  );
+  --accent-color-bg_dc: hsl(
+    var(--accento-h, var(--accent-h)),
+    calc(0.1 * var(--accento-s, var(--accent-s))),
+    15%,
+    1
+  );
+  --accent-color-bg2: hsl(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    85%,
+    1
+  );
+  --accent-color-bg2c: hsl(
+    var(--accento-h, var(--accent-h)),
+    var(--accent-s, var(--accent-s)),
+    85%,
+    1
+  );
+  --accent-color-bright: hsla(
+    var(--accento-h, var(--accent-h)),
+    calc(1 * var(--accento-s, var(--accent-s))),
+    calc(1 * var(--accento-l, var(--accent-l))),
+    0.1
+  );
+  --accent-color-bright2: hsl(
+    var(--accento-h, var(--accent-h)),
+    calc(1 * var(--accento-s, var(--accent-s))),
+    calc(1 * var(--accento-l, var(--accent-l))),
+    0.01
+  );
+  --accent-color-h1: hsl(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    calc(calc(var(--accento-l, var(--accent-l)) - 49%) * -100)
+  );
+  --accent-color-hsl: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l))
+  );
+  --accent-color-inverse2: hsl(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    calc(calc(var(--accento-l, var(--accent-l)) - 67%) * -100)
+  );
+  --accent-color-light01: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.01
+  );
+  --accent-color-light02: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.02
+  );
+  --accent-color-light03: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.03
+  );
+  --accent-color-light04: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.04
+  );
+  --accent-color-light05: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.05
+  );
+  --accent-color-light06: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.06
+  );
+  --accent-color-light07: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.07
+  );
+  --accent-color-light08: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.08
+  );
+  --accent-color-light09: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.09
+  );
+  --accent-color-light1: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.1
+  );
+  --accent-color-light10: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    1
+  );
+  --accent-color-light2: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.2
+  );
+  --accent-color-light3: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.3
+  );
+  --accent-color-light4: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.4
+  );
+  --accent-color-light5: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.5
+  );
+  --accent-color-light6: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.6
+  );
+  --accent-color-light7: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.7
+  );
+  --accent-color-light8: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.8
+  );
+  --accent-color-light9: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l)),
+    0.9
+  );
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
   --background-modifier-form-field: var(--color-base-25);
   --background-primary: var(--accent-color-bg_d);
   --background-secondary: #0e0e0e;
   --background-secondary-alt: var(--color-base-30);
-  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l))
+  );
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
     calc(var(--accent-s) * 1.02),
@@ -2740,13 +3207,20 @@ body {
   --mono-rgb-100: 255, 255, 255;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+  --popover-height: 1250px;
+  --popover-width: 1050px;
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
-  --text-accent: var(--color-accent-1);
+  --tab-max-width: 35%;
+  --text-accent: hsla(
+    var(--accento-h, var(--accent-h)),
+    var(--accento-s, var(--accent-s)),
+    var(--accento-l, var(--accent-l))
+  );
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
   background-color: rgb(22, 22, 22);
 }

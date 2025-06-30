@@ -23,7 +23,9 @@ html[saved-theme="light"] {
     color: var(--shiki-light);
   }
   --mono-rgb-100: 0, 0, 0;
+  --tag-radius: 4px;
   --mono-rgb-100: 0, 0, 0;
+  --tag-radius: 4px;
 }
 
 .darkmode {
@@ -328,7 +330,7 @@ body {
   --tag-color-hover: #a68af9;
   --tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-radius: 4px;
+  --tag-radius: 2em;
   --tag-weight: inherit;
   --text-accent: #8a5cf5;
   --text-accent-hover: #c5b6fc;

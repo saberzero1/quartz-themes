@@ -7578,7 +7578,6 @@ iframe {
     width: 100%;
   }
   .popover {
-    animation: var(--anim-popup);
     background-color: var(--background-primary);
     border: 1px solid var(--background-modifier-border);
     border-radius: var(--radius-m);
@@ -31021,6 +31020,7 @@ input.prompt-input:active {
   border-bottom: var(--prompt-separator-border);
 }
 
+/* .popover, */
 .suggestion-container:not([data-popper-placement]) {
   animation: var(--anim-popup);
 }

@@ -955,6 +955,13 @@
     var(--color-base-30)
   );
   --code-background: light-dark(#292929, #232323);
+  --code-function: light-dark(#dcbb59, #dcbb59);
+  --code-keyword: light-dark(#ff6347, #ff6347);
+  --code-normal: light-dark(#c4c4c4, #c4c4c4);
+  --code-operator: light-dark(#b89cdd, #b89cdd);
+  --code-property: light-dark(#d29a8c, #d29a8c);
+  --code-string: light-dark(#05a3a3, #05a3a3);
+  --code-value: light-dark(#e3b750, #e3b750);
   --color-accent: light-dark(
     hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
     hsl(var(--accent-h), var(--accent-s), var(--accent-l))
@@ -1776,18 +1783,18 @@ body {
   --code-border-color: var(--background-modifier-border);
   --code-border-width: 0px;
   --code-comment: var(--text-faint);
-  --code-function: #dcbb59;
+  --code-function: light-dark(#dcbb59, #dcbb59);
   --code-important: var(--color-orange);
-  --code-keyword: #ff6347;
-  --code-normal: #c4c4c4;
-  --code-operator: #b89cdd;
-  --code-property: #d29a8c;
+  --code-keyword: light-dark(#ff6347, #ff6347);
+  --code-normal: light-dark(#c4c4c4, #c4c4c4);
+  --code-operator: light-dark(#b89cdd, #b89cdd);
+  --code-property: light-dark(#d29a8c, #d29a8c);
   --code-punctuation: var(--text-muted);
   --code-radius: var(--radius-s);
   --code-size: var(--font-smaller);
-  --code-string: #05a3a3;
+  --code-string: light-dark(#05a3a3, #05a3a3);
   --code-tag: var(--color-red);
-  --code-value: #e3b750;
+  --code-value: light-dark(#e3b750, #e3b750);
   --code-white-space: pre-wrap;
   --collapse-icon-color: var(--text-faint);
   --collapse-icon-color-collapsed: var(--text-accent);
@@ -2438,6 +2445,13 @@ body {
   --background-secondary: rgba(255, 255, 255, 0.062);
   --background-secondary-alt: var(--color-base-05);
   --code-background: #292929;
+  --code-function: #dcbb59;
+  --code-keyword: #ff6347;
+  --code-normal: #c4c4c4;
+  --code-operator: #b89cdd;
+  --code-property: #d29a8c;
+  --code-string: #05a3a3;
+  --code-value: #e3b750;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -2521,6 +2535,13 @@ body {
   --background-primary: #323232;
   --background-secondary-alt: var(--color-base-30);
   --code-background: #232323;
+  --code-function: #dcbb59;
+  --code-keyword: #ff6347;
+  --code-normal: #c4c4c4;
+  --code-operator: #b89cdd;
+  --code-property: #d29a8c;
+  --code-string: #05a3a3;
+  --code-value: #e3b750;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),

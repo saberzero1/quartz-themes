@@ -977,6 +977,7 @@
     hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.5),
     hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.5)
   );
+  --brand-500: light-dark(var(--blurple), var(--blurple));
   --brand-experiment: light-dark(var(--blurple), var(--blurple));
   --brand-experiment-05a: light-dark(
     hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.05),
@@ -1550,6 +1551,7 @@
     hsl(152.6, calc(var(--saturation-factor, 1) * 46%), 48.6%),
     hsl(152.6, calc(var(--saturation-factor, 1) * 46%), 48.6%)
   );
+  --green-360: light-dark(var(--green), var(--green));
   --green-active: light-dark(
     hsl(152.3, calc(var(--saturation-factor, 1) * 45.7%), 39%),
     hsl(152.3, calc(var(--saturation-factor, 1) * 45.7%), 39%)
@@ -1572,10 +1574,27 @@
   --page-border: 9px solid transparent;
   --page-margin: 1px auto -8px;
   --pdfViewer-padding-bottom: 0;
+  --premium-tier-2-pink-for-gradients: light-dark(
+    hsl(270, calc(var(--saturation-factor, 1) * 86.7%), 70.6%),
+    hsl(270, calc(var(--saturation-factor, 1) * 86.7%), 70.6%)
+  );
+  --premium-tier-2-pink-for-gradients-2: light-dark(
+    hsl(296.8, calc(var(--saturation-factor, 1) * 44.2%), 66.3%),
+    hsl(296.8, calc(var(--saturation-factor, 1) * 44.2%), 66.3%)
+  );
+  --premium-tier-2-purple-for-gradients: light-dark(
+    hsl(342, calc(var(--saturation-factor, 1) * 58%), 72.9%),
+    hsl(342, calc(var(--saturation-factor, 1) * 58%), 72.9%)
+  );
+  --premium-tier-2-purple-for-gradients-2: light-dark(
+    hsl(296.8, calc(var(--saturation-factor, 1) * 44.2%), 66.3%),
+    hsl(296.8, calc(var(--saturation-factor, 1) * 44.2%), 66.3%)
+  );
   --red: light-dark(
     hsl(0, calc(var(--saturation-factor, 1) * 84.9%), 61%),
     hsl(0, calc(var(--saturation-factor, 1) * 84.9%), 61%)
   );
+  --red-400: light-dark(var(--red), var(--red));
   --red-active: light-dark(
     hsl(0, calc(var(--saturation-factor, 1) * 54.2%), 48.8%),
     hsl(0, calc(var(--saturation-factor, 1) * 54.2%), 48.8%)
@@ -1597,6 +1616,9 @@
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
   --spreadHorizontalWrapped-margin-LR: -3.5px;
+  --status-green-600: light-dark(var(--green), var(--green));
+  --status-red-500: light-dark(var(--red), var(--red));
+  --status-yellow-500: light-dark(var(--yellow), var(--yellow));
   --viewer-container-height: 0;
   --window-background:
     linear-gradient(to right, #ffffff66, #0000001a, #ffffff33),
@@ -1653,6 +1675,8 @@
     hsl(37.5, calc(var(--saturation-factor, 1) * 95.7%), 54.1%),
     hsl(37.5, calc(var(--saturation-factor, 1) * 95.7%), 54.1%)
   );
+  --yellow-300: light-dark(var(--yellow), var(--yellow));
+  --yellow-360: light-dark(var(--yellow), var(--yellow));
   --yellow-hover: light-dark(
     hsl(37.4, calc(var(--saturation-factor, 1) * 81.5%), 48.6%),
     hsl(37.4, calc(var(--saturation-factor, 1) * 81.5%), 48.6%)
@@ -2398,7 +2422,7 @@ body {
   --bold-modifier: 200;
   --bold-weight: calc(var(--font-weight) + var(--bold-modifier));
   --border-width: 1px;
-  --brand-500: var(--blurple);
+  --brand-500: light-dark(var(--blurple), var(--blurple));
   --brand-experiment: light-dark(var(--blurple), var(--blurple));
   --brand-experiment-05a: light-dark(
     hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 0.05),
@@ -2829,7 +2853,7 @@ body {
     hsl(152.6, calc(var(--saturation-factor, 1) * 46%), 48.6%),
     hsl(152.6, calc(var(--saturation-factor, 1) * 46%), 48.6%)
   );
-  --green-360: var(--green);
+  --green-360: light-dark(var(--green), var(--green));
   --green-active: light-dark(
     hsl(152.3, calc(var(--saturation-factor, 1) * 45.7%), 39%),
     hsl(152.3, calc(var(--saturation-factor, 1) * 45.7%), 39%)
@@ -3166,34 +3190,22 @@ body {
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
   --popover-width: 450px;
-  --premium-tier-2-pink-for-gradients: hsl(
-    270,
-    calc(var(--saturation-factor, 1) * 86.7%),
-    70.6%
+  --premium-tier-2-pink-for-gradients: light-dark(
+    hsl(270, calc(var(--saturation-factor, 1) * 86.7%), 70.6%),
+    hsl(270, calc(var(--saturation-factor, 1) * 86.7%), 70.6%)
   );
-  --premium-tier-2-pink-for-gradients-2: hsl(
-    296.8,
-    calc(var(--saturation-factor, 1) * 44.2%),
-    66.3%
+  --premium-tier-2-pink-for-gradients-2: light-dark(
+    hsl(296.8, calc(var(--saturation-factor, 1) * 44.2%), 66.3%),
+    hsl(296.8, calc(var(--saturation-factor, 1) * 44.2%), 66.3%)
   );
-  --premium-tier-2-pink-for-gradients-2-hsl:
-    296.8, calc(var(--saturation-factor, 1) * 44.2%), 66.3%;
-  --premium-tier-2-pink-for-gradients-hsl:
-    270, calc(var(--saturation-factor, 1) * 86.7%), 70.6%;
-  --premium-tier-2-purple-for-gradients: hsl(
-    342,
-    calc(var(--saturation-factor, 1) * 58%),
-    72.9%
+  --premium-tier-2-purple-for-gradients: light-dark(
+    hsl(342, calc(var(--saturation-factor, 1) * 58%), 72.9%),
+    hsl(342, calc(var(--saturation-factor, 1) * 58%), 72.9%)
   );
-  --premium-tier-2-purple-for-gradients-2: hsl(
-    296.8,
-    calc(var(--saturation-factor, 1) * 44.2%),
-    66.3%
+  --premium-tier-2-purple-for-gradients-2: light-dark(
+    hsl(296.8, calc(var(--saturation-factor, 1) * 44.2%), 66.3%),
+    hsl(296.8, calc(var(--saturation-factor, 1) * 44.2%), 66.3%)
   );
-  --premium-tier-2-purple-for-gradients-2-hsl:
-    296.8, calc(var(--saturation-factor, 1) * 44.2%), 66.3%;
-  --premium-tier-2-purple-for-gradients-hsl:
-    342, calc(var(--saturation-factor, 1) * 58%), 72.9%;
   --prompt-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
@@ -3211,7 +3223,7 @@ body {
     hsl(0, calc(var(--saturation-factor, 1) * 84.9%), 61%),
     hsl(0, calc(var(--saturation-factor, 1) * 84.9%), 61%)
   );
-  --red-400: var(--red);
+  --red-400: light-dark(var(--red), var(--red));
   --red-active: light-dark(
     hsl(0, calc(var(--saturation-factor, 1) * 54.2%), 48.8%),
     hsl(0, calc(var(--saturation-factor, 1) * 54.2%), 48.8%)
@@ -3292,9 +3304,9 @@ body {
   --status-bar-position: fixed;
   --status-bar-radius: var(--radius-m) 0 0 0;
   --status-bar-text-color: var(--text-muted);
-  --status-green-600: var(--green);
-  --status-red-500: var(--red);
-  --status-yellow-500: var(--yellow);
+  --status-green-600: light-dark(var(--green), var(--green));
+  --status-red-500: light-dark(var(--red), var(--red));
+  --status-yellow-500: light-dark(var(--yellow), var(--yellow));
   --swatch-height: 24px;
   --swatch-radius: 14px;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15);
@@ -3439,8 +3451,8 @@ body {
     hsl(37.5, calc(var(--saturation-factor, 1) * 95.7%), 54.1%),
     hsl(37.5, calc(var(--saturation-factor, 1) * 95.7%), 54.1%)
   );
-  --yellow-300: var(--yellow);
-  --yellow-360: var(--yellow);
+  --yellow-300: light-dark(var(--yellow), var(--yellow));
+  --yellow-360: light-dark(var(--yellow), var(--yellow));
   --yellow-hover: light-dark(
     hsl(37.4, calc(var(--saturation-factor, 1) * 81.5%), 48.6%),
     hsl(37.4, calc(var(--saturation-factor, 1) * 81.5%), 48.6%)
@@ -3497,6 +3509,7 @@ body {
     65.1%,
     0.5
   );
+  --brand-500: var(--blurple);
   --brand-experiment: var(--blurple);
   --brand-experiment-05a: hsl(
     226.7,
@@ -3876,6 +3889,7 @@ body {
   --dtm-08-worse-profile-popout-custom-status-header-text-shadow: 0 1px 1px
     rgb(255 255 255);
   --green: hsl(152.6, calc(var(--saturation-factor, 1) * 46%), 48.6%);
+  --green-360: var(--green);
   --green-active: hsl(152.3, calc(var(--saturation-factor, 1) * 45.7%), 39%);
   --green-hover: hsl(152.6, calc(var(--saturation-factor, 1) * 46.2%), 43.7%);
   --green-inverted: hsl(156, calc(var(--saturation-factor, 1) * 38.5%), 97.5%);
@@ -3895,7 +3909,36 @@ body {
     0 0 0 0 transparent;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
+  --premium-tier-2-pink-for-gradients: hsl(
+    270,
+    calc(var(--saturation-factor, 1) * 86.7%),
+    70.6%
+  );
+  --premium-tier-2-pink-for-gradients-2: hsl(
+    296.8,
+    calc(var(--saturation-factor, 1) * 44.2%),
+    66.3%
+  );
+  --premium-tier-2-pink-for-gradients-2-hsl:
+    296.8, calc(var(--saturation-factor, 1) * 44.2%), 66.3%;
+  --premium-tier-2-pink-for-gradients-hsl:
+    270, calc(var(--saturation-factor, 1) * 86.7%), 70.6%;
+  --premium-tier-2-purple-for-gradients: hsl(
+    342,
+    calc(var(--saturation-factor, 1) * 58%),
+    72.9%
+  );
+  --premium-tier-2-purple-for-gradients-2: hsl(
+    296.8,
+    calc(var(--saturation-factor, 1) * 44.2%),
+    66.3%
+  );
+  --premium-tier-2-purple-for-gradients-2-hsl:
+    296.8, calc(var(--saturation-factor, 1) * 44.2%), 66.3%;
+  --premium-tier-2-purple-for-gradients-hsl:
+    342, calc(var(--saturation-factor, 1) * 58%), 72.9%;
   --red: hsl(0, calc(var(--saturation-factor, 1) * 84.9%), 61%);
+  --red-400: var(--red);
   --red-active: hsl(0, calc(var(--saturation-factor, 1) * 54.2%), 48.8%);
   --red-hover: hsl(0, calc(var(--saturation-factor, 1) * 66.1%), 54.9%);
   --red-inverted: hsl(0, calc(var(--saturation-factor, 1) * 80%), 98%);
@@ -3906,7 +3949,12 @@ body {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
+  --status-green-600: var(--green);
+  --status-red-500: var(--red);
+  --status-yellow-500: var(--yellow);
   --yellow: hsl(37.5, calc(var(--saturation-factor, 1) * 95.7%), 54.1%);
+  --yellow-300: var(--yellow);
+  --yellow-360: var(--yellow);
   --yellow-hover: hsl(37.4, calc(var(--saturation-factor, 1) * 81.5%), 48.6%);
   --yellow-inverted: hsl(38.2, calc(var(--saturation-factor, 1) * 100%), 97.8%);
   --yellow-inverted-active: hsl(
@@ -3940,6 +3988,7 @@ body {
     65.1%,
     0.5
   );
+  --brand-500: var(--blurple);
   --brand-experiment: var(--blurple);
   --brand-experiment-05a: hsl(
     226.7,
@@ -4325,6 +4374,7 @@ body {
   --editorStackWidth: 200px;
   --fileHeight: 14px;
   --green: hsl(152.6, calc(var(--saturation-factor, 1) * 46%), 48.6%);
+  --green-360: var(--green);
   --green-active: hsl(152.3, calc(var(--saturation-factor, 1) * 45.7%), 39%);
   --green-hover: hsl(152.6, calc(var(--saturation-factor, 1) * 46.2%), 43.7%);
   --green-inverted: hsl(156, calc(var(--saturation-factor, 1) * 38.5%), 97.5%);
@@ -4354,7 +4404,36 @@ body {
   --outlineLevelWidth: 40px;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+  --premium-tier-2-pink-for-gradients: hsl(
+    270,
+    calc(var(--saturation-factor, 1) * 86.7%),
+    70.6%
+  );
+  --premium-tier-2-pink-for-gradients-2: hsl(
+    296.8,
+    calc(var(--saturation-factor, 1) * 44.2%),
+    66.3%
+  );
+  --premium-tier-2-pink-for-gradients-2-hsl:
+    296.8, calc(var(--saturation-factor, 1) * 44.2%), 66.3%;
+  --premium-tier-2-pink-for-gradients-hsl:
+    270, calc(var(--saturation-factor, 1) * 86.7%), 70.6%;
+  --premium-tier-2-purple-for-gradients: hsl(
+    342,
+    calc(var(--saturation-factor, 1) * 58%),
+    72.9%
+  );
+  --premium-tier-2-purple-for-gradients-2: hsl(
+    296.8,
+    calc(var(--saturation-factor, 1) * 44.2%),
+    66.3%
+  );
+  --premium-tier-2-purple-for-gradients-2-hsl:
+    296.8, calc(var(--saturation-factor, 1) * 44.2%), 66.3%;
+  --premium-tier-2-purple-for-gradients-hsl:
+    342, calc(var(--saturation-factor, 1) * 58%), 72.9%;
   --red: hsl(0, calc(var(--saturation-factor, 1) * 84.9%), 61%);
+  --red-400: var(--red);
   --red-active: hsl(0, calc(var(--saturation-factor, 1) * 54.2%), 48.8%);
   --red-hover: hsl(0, calc(var(--saturation-factor, 1) * 66.1%), 54.9%);
   --red-inverted: hsl(0, calc(var(--saturation-factor, 1) * 80%), 98%);
@@ -4368,6 +4447,9 @@ body {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
+  --status-green-600: var(--green);
+  --status-red-500: var(--red);
+  --status-yellow-500: var(--yellow);
   --tabHeightEditor: 30px;
   --tabHeightEditorStack: 40px;
   --tabHeightSidebar: 30px;
@@ -4377,6 +4459,8 @@ body {
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
   --titlebarOffset: 160px;
   --yellow: hsl(37.5, calc(var(--saturation-factor, 1) * 95.7%), 54.1%);
+  --yellow-300: var(--yellow);
+  --yellow-360: var(--yellow);
   --yellow-hover: hsl(37.4, calc(var(--saturation-factor, 1) * 81.5%), 48.6%);
   --yellow-inverted: hsl(38.2, calc(var(--saturation-factor, 1) * 100%), 97.8%);
   --yellow-inverted-active: hsl(

@@ -1,10 +1,14 @@
 :root {
-  --accent-h: 9;
-  --accent-l: 66%;
-  --accent-s: 89%;
+  --accent-h: light-dark(9, light-dark(9, 9));
+  --accent-l: light-dark(66%, light-dark(66%, 66%));
+  --accent-s: light-dark(89%, light-dark(89%, 89%));
   --background-modifier-active-hover: light-dark(
     var(--color-salmon-lighter),
     var(--color-salmon)
+  );
+  --background-modifier-border-focus: light-dark(
+    var(--interactive-accent),
+    var(--interactive-accent)
   );
   --background-primary: light-dark(var(--color-light1), var(--color-dark1-rgb));
   --background-secondary: light-dark(
@@ -43,6 +47,17 @@
     var(--color-orange-rgb),
     var(--color-orange-rgb)
   );
+  --code-comment: light-dark(var(--sandover-purple), var(--sandover-purple));
+  --code-function: light-dark(var(--color-cyan), var(--color-cyan));
+  --code-important: light-dark(var(--color-orange), var(--color-orange));
+  --code-keyword: light-dark(var(--color-green), var(--color-green));
+  --code-normal: light-dark(var(--text-normal), var(--text-normal));
+  --code-operator: light-dark(var(--code-normal), var(--code-normal));
+  --code-property: light-dark(var(--code-normal), var(--code-normal));
+  --code-punctuation: light-dark(var(--code-normal), var(--code-normal));
+  --code-string: light-dark(var(--color-cyan), var(--color-cyan));
+  --code-tag: light-dark(var(--color-red), var(--color-red));
+  --code-value: light-dark(var(--color-blue), var(--color-blue));
   --color-accent: light-dark(
     hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
     hsl(var(--accent-h), var(--accent-s), var(--accent-l))
@@ -151,6 +166,7 @@
   --sandover-purple-rgb: 197, 133, 204;
   --spreadHorizontalWrapped-margin-LR: -3.5px;
   --status-bar-border-color: light-dark(#141300, #141300);
+  --table-header-weight: light-dark(var(--font-bold), var(--font-bold));
   --tag-color: light-dark(var(--color-salmon), var(--color-salmon));
   --text-accent: light-dark(var(--color-salmon), var(--color-salmon));
   --text-normal: light-dark(#000000, var(--color-light1));
@@ -169,9 +185,9 @@
 }
 
 body {
-  --accent-h: 9;
-  --accent-l: 66%;
-  --accent-s: 89%;
+  --accent-h: light-dark(9, light-dark(9, 9));
+  --accent-l: light-dark(66%, light-dark(66%, 66%));
+  --accent-s: light-dark(89%, light-dark(89%, 89%));
   --anim-duration-fast: 140ms;
   --anim-duration-moderate: 300ms;
   --anim-duration-none: 0;
@@ -186,7 +202,10 @@ body {
     var(--color-salmon)
   );
   --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-focus: var(--interactive-accent);
+  --background-modifier-border-focus: light-dark(
+    var(--interactive-accent),
+    var(--interactive-accent)
+  );
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-error: var(--color-red);
   --background-modifier-error-hover: var(--color-red);
@@ -313,19 +332,19 @@ body {
   --code-background: var(--background-primary-alt);
   --code-border-color: var(--background-modifier-border);
   --code-border-width: 0px;
-  --code-comment: var(--sandover-purple);
-  --code-function: var(--color-cyan);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-green);
-  --code-normal: var(--text-normal);
-  --code-operator: var(--code-normal);
-  --code-property: var(--code-normal);
-  --code-punctuation: var(--code-normal);
+  --code-comment: light-dark(var(--sandover-purple), var(--sandover-purple));
+  --code-function: light-dark(var(--color-cyan), var(--color-cyan));
+  --code-important: light-dark(var(--color-orange), var(--color-orange));
+  --code-keyword: light-dark(var(--color-green), var(--color-green));
+  --code-normal: light-dark(var(--text-normal), var(--text-normal));
+  --code-operator: light-dark(var(--code-normal), var(--code-normal));
+  --code-property: light-dark(var(--code-normal), var(--code-normal));
+  --code-punctuation: light-dark(var(--code-normal), var(--code-normal));
   --code-radius: var(--radius-s);
   --code-size: var(--font-smaller);
-  --code-string: var(--color-cyan);
-  --code-tag: var(--color-red);
-  --code-value: var(--color-blue);
+  --code-string: light-dark(var(--color-cyan), var(--color-cyan));
+  --code-tag: light-dark(var(--color-red), var(--color-red));
+  --code-value: light-dark(var(--color-blue), var(--color-blue));
   --code-white-space: pre-wrap;
   --collapse-icon-color: var(--text-faint);
   --collapse-icon-color-collapsed: var(--text-accent);
@@ -896,10 +915,10 @@ body {
   --table-header-background-hover: inherit;
   --table-header-border-color: var(--table-border-color);
   --table-header-border-width: var(--table-border-width);
-  --table-header-color: inherit;
+  --table-header-color: var(--text-normal);
   --table-header-font: inherit;
-  --table-header-size: inherit;
-  --table-header-weight: var(--font-bold);
+  --table-header-size: var(--table-text-size);
+  --table-header-weight: light-dark(var(--font-bold), var(--font-bold));
   --table-line-height: var(--line-height-tight);
   --table-row-alt-background: var(--table-background);
   --table-row-alt-background-hover: var(--table-background);
@@ -1809,7 +1828,11 @@ svg.svg-icon {
 }
 
 .theme-dark {
+  --accent-h: 9;
+  --accent-l: 66%;
+  --accent-s: 89%;
   --background-modifier-active-hover: var(--color-salmon);
+  --background-modifier-border-focus: var(--interactive-accent);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
   --background-modifier-form-field: var(--color-base-25);
@@ -1835,6 +1858,17 @@ svg.svg-icon {
   --callout-tip: var(--color-salmon-lighter-rgb);
   --callout-todo: var(--color-green-rgb);
   --callout-warning: var(--color-orange-rgb);
+  --code-comment: var(--sandover-purple);
+  --code-function: var(--color-cyan);
+  --code-important: var(--color-orange);
+  --code-keyword: var(--color-green);
+  --code-normal: var(--text-normal);
+  --code-operator: var(--code-normal);
+  --code-property: var(--code-normal);
+  --code-punctuation: var(--code-normal);
+  --code-string: var(--color-cyan);
+  --code-tag: var(--color-red);
+  --code-value: var(--color-blue);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -1917,6 +1951,9 @@ svg.svg-icon {
   --status-bar-border-color: #141300;
   --tab-text-color-focused-active: var(--color-light1);
   --tab-text-color-focused-active-current: var(--color-light1);
+  --table-header-color: inherit;
+  --table-header-size: inherit;
+  --table-header-weight: var(--font-bold);
   --tag-color: var(--color-salmon);
   --text-accent: var(--color-salmon);
   --text-faint: rgba(var(--color-light1-rgb), 0.5);
@@ -1939,6 +1976,7 @@ svg.svg-icon {
   --accent-l: 66%;
   --accent-s: 89%;
   --background-modifier-active-hover: var(--color-salmon-lighter);
+  --background-modifier-border-focus: var(--interactive-accent);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
   --background-primary: var(--color-light1);
@@ -1964,6 +2002,17 @@ svg.svg-icon {
   --callout-tip: var(--color-salmon-lighter-rgb);
   --callout-todo: var(--color-green-rgb);
   --callout-warning: var(--color-orange-rgb);
+  --code-comment: var(--sandover-purple);
+  --code-function: var(--color-cyan);
+  --code-important: var(--color-orange);
+  --code-keyword: var(--color-green);
+  --code-normal: var(--text-normal);
+  --code-operator: var(--code-normal);
+  --code-property: var(--code-normal);
+  --code-punctuation: var(--code-normal);
+  --code-string: var(--color-cyan);
+  --code-tag: var(--color-red);
+  --code-value: var(--color-blue);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -2038,6 +2087,9 @@ svg.svg-icon {
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --status-bar-border-color: #141300;
+  --table-header-color: inherit;
+  --table-header-size: inherit;
+  --table-header-weight: var(--font-bold);
   --tag-color: var(--color-salmon);
   --text-accent: var(--color-salmon);
   --text-error: var(--color-red);

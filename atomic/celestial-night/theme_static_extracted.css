@@ -1,4 +1,8 @@
 :root {
+  --accent-h: light-dark(41, light-dark(0, 41));
+  --accent-l: light-dark(100%, light-dark(100%, 100%));
+  --accent-s: light-dark(100%, light-dark(100%, 100%));
+  --background-modifier-border: light-dark(#3b3f56, #3b3f56);
   --background-secondary-alt: light-dark(#1a242d, #0d0d15);
   --color-accent: light-dark(#ffffff, #ffffff);
   --color-accent-1: light-dark(hsl(40, 101%, 107.5%), hsl(38, 102%, 115%));
@@ -24,6 +28,22 @@
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
+  --font-headings: light-dark("Merienda", "Merienda");
+  --font-interface-theme: light-dark(
+    "Avenir",
+    "Avenir Next",
+    "Avenir",
+    "Avenir Next"
+  );
+  --font-text-theme: light-dark(
+    "Bookerly",
+    "Source Han Serif",
+    "Noto Serif JP",
+    "Bookerly",
+    "Source Han Serif",
+    "Noto Serif JP"
+  );
+  --heading-font: light-dark("Merienda", "Merienda");
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
   --page-border: 9px solid transparent;
@@ -34,15 +54,16 @@
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
   --spreadHorizontalWrapped-margin-LR: -3.5px;
+  --text-on-accent: light-dark(#14141e, #14141e);
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
 }
 
 body {
-  --accent-h: 41;
-  --accent-l: 100%;
-  --accent-s: 100%;
+  --accent-h: light-dark(41, light-dark(0, 41));
+  --accent-l: light-dark(100%, light-dark(100%, 100%));
+  --accent-s: light-dark(100%, light-dark(100%, 100%));
   --anim-duration-fast: 140ms;
   --anim-duration-moderate: 300ms;
   --anim-duration-none: 0;
@@ -53,17 +74,17 @@ body {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   --background-modifier-active-hover: #ffffff26;
-  --background-modifier-border: #3b3f56;
+  --background-modifier-border: light-dark(#3b3f56, #3b3f56);
   --background-modifier-border-focus: #424d63;
   --background-modifier-border-hover: #2f3850;
-  --background-modifier-error: #fb464c;
-  --background-modifier-error-hover: #fb464c;
-  --background-modifier-error-rgb: 251, 70, 76;
+  --background-modifier-error: #e46f7d;
+  --background-modifier-error-hover: #e46f7d;
+  --background-modifier-error-rgb: 228, 111, 125;
   --background-modifier-form-field: #14141e;
   --background-modifier-hover: #ffffff11;
   --background-modifier-message: #000000e6;
-  --background-modifier-success: #44cf6e;
-  --background-modifier-success-rgb: 68, 207, 110;
+  --background-modifier-success: #a5d18c;
+  --background-modifier-success-rgb: 165, 209, 140;
   --background-primary: #14141e;
   --background-primary-alt: #1d1f2e;
   --background-secondary: #161721;
@@ -113,37 +134,37 @@ body {
   --callout-blend-mode: normal;
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
-  --callout-bug: 251, 70, 76;
+  --callout-bug: 228, 111, 125;
   --callout-content-background: transparent;
   --callout-content-padding: 0;
-  --callout-default: 2, 122, 255;
-  --callout-error: 251, 70, 76;
-  --callout-example: 168, 130, 255;
-  --callout-fail: 251, 70, 76;
-  --callout-important: 83, 223, 221;
-  --callout-info: 2, 122, 255;
+  --callout-default: 86, 174, 214;
+  --callout-error: 228, 111, 125;
+  --callout-example: 181, 132, 199;
+  --callout-fail: 228, 111, 125;
+  --callout-important: 111, 210, 194;
+  --callout-info: 86, 174, 214;
   --callout-padding: 12px 12px 12px 24px;
-  --callout-question: 233, 151, 63;
+  --callout-question: 251, 179, 108;
   --callout-quote: 158, 158, 158;
   --callout-radius: 2em;
-  --callout-success: 68, 207, 110;
-  --callout-summary: 83, 223, 221;
-  --callout-tip: 83, 223, 221;
+  --callout-success: 165, 209, 140;
+  --callout-summary: 111, 210, 194;
+  --callout-tip: 111, 210, 194;
   --callout-title-color: #91aff3;
   --callout-title-padding: 0;
   --callout-title-size: inherit;
   --callout-title-weight: 600;
-  --callout-todo: 2, 122, 255;
-  --callout-warning: 233, 151, 63;
+  --callout-todo: 86, 174, 214;
+  --callout-warning: 251, 179, 108;
   --canvas-background: #14141e;
   --canvas-card-label-color: #4f5971;
   --canvas-color: 192, 192, 192;
-  --canvas-color-1: 251, 70, 76;
-  --canvas-color-2: 233, 151, 63;
-  --canvas-color-3: 224, 222, 113;
-  --canvas-color-4: 68, 207, 110;
-  --canvas-color-5: 83, 223, 221;
-  --canvas-color-6: 168, 130, 255;
+  --canvas-color-1: 228, 111, 125;
+  --canvas-color-2: 251, 179, 108;
+  --canvas-color-3: 255, 222, 115;
+  --canvas-color-4: 165, 209, 140;
+  --canvas-color-5: 111, 210, 194;
+  --canvas-color-6: 181, 132, 199;
   --canvas-dot-pattern: #0d0d15;
   --caret-color: #b1b7cc;
   --checkbox-border-color: #4f5971;
@@ -161,18 +182,18 @@ body {
   --code-border-color: transparent;
   --code-border-width: 0px;
   --code-comment: #4f5971;
-  --code-function: #e0de71;
-  --code-important: #e9973f;
-  --code-keyword: #fa99cd;
+  --code-function: #ffde73;
+  --code-important: #fbb36c;
+  --code-keyword: #ff94c8;
   --code-normal: #b1b7cc;
-  --code-operator: #fb464c;
-  --code-property: #53dfdd;
+  --code-operator: #e46f7d;
+  --code-property: #6fd2c2;
   --code-punctuation: #737b94;
   --code-radius: 20px;
   --code-size: 0.875em;
-  --code-string: #44cf6e;
-  --code-tag: #fb464c;
-  --code-value: #a882ff;
+  --code-string: #a5d18c;
+  --code-tag: #e46f7d;
+  --code-value: #b584c7;
   --code-white-space: pre-wrap;
   --collapse-icon-color: #4f5971;
   --collapse-icon-color-collapsed: hsl(38, 102%, 115%);
@@ -193,21 +214,13 @@ body {
   --color-base-60: light-dark(#707070, #999999);
   --color-base-70: light-dark(#5c5c5c, #b3b3b3);
   --color-blue: light-dark(#086ddd, #027aff);
-  --color-blue-rgb: 86, 174, 214;
   --color-cyan: light-dark(#00bfbc, #53dfdd);
-  --color-cyan-rgb: 111, 210, 194;
   --color-green: light-dark(#08b94e, #44cf6e);
-  --color-green-rgb: 165, 209, 140;
   --color-orange: light-dark(#ec7500, #e9973f);
-  --color-orange-rgb: 251, 179, 108;
   --color-pink: light-dark(#d53984, #fa99cd);
-  --color-pink-rgb: 255, 148, 200;
   --color-purple: light-dark(#7852ee, #a882ff);
-  --color-purple-rgb: 181, 132, 199;
   --color-red: light-dark(#e93147, #fb464c);
-  --color-red-rgb: 228, 111, 125;
   --color-yellow: light-dark(#e0ac00, #e0de71);
-  --color-yellow-rgb: 255, 222, 115;
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -253,20 +266,24 @@ body {
   --flair-color: #b1b7cc;
   --font-black: 900;
   --font-bold: 700;
-  --font-cursive: "Merienda";
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
   --font-extrabold: 800;
   --font-extralight: 200;
-  --font-headings: "Merienda";
+  --font-headings: light-dark("Merienda", "Merienda");
   --font-interface:
     "??", "Avenir", "Avenir Next", "??", ui-sans-serif, -apple-system,
     BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-override: "??";
-  --font-interface-theme: "Avenir", "Avenir Next";
+  --font-interface-theme: light-dark(
+    "Avenir",
+    "Avenir Next",
+    "Avenir",
+    "Avenir Next"
+  );
   --font-light: 300;
   --font-medium: 500;
   --font-mermaid:
@@ -287,9 +304,7 @@ body {
   --font-print:
     "??", "??", "Bookerly", "Source Han Serif", "Noto Serif JP", "Arial";
   --font-print-override: "??";
-  --font-sans: "Avenir", "Avenir Next";
   --font-semibold: 600;
-  --font-serif: "Bookerly";
   --font-small: 0.933em;
   --font-smaller: 0.875em;
   --font-smallest: 0.8em;
@@ -299,7 +314,14 @@ body {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-text-override: "??";
   --font-text-size: 16px;
-  --font-text-theme: "Bookerly", "Source Han Serif", "Noto Serif JP";
+  --font-text-theme: light-dark(
+    "Bookerly",
+    "Source Han Serif",
+    "Noto Serif JP",
+    "Bookerly",
+    "Source Han Serif",
+    "Noto Serif JP"
+  );
   --font-thin: 100;
   --font-ui-large: 20px;
   --font-ui-medium: 15px;
@@ -320,15 +342,14 @@ body {
   --footnote-padding-inline: 6px;
   --footnote-radius: 20px;
   --footnote-size: 0.875em;
-  --glow-color: #ffffff;
   --glow-effect-m: 0px 0px 30px #ffffff, 0px 0px 10px #5db6ff93;
   --glow-effect-s: 0px 0px 20px #ffffff88, 0px 0px 5px #5db6ff95;
   --graph-controls-width: 240px;
   --graph-line: #2f3850;
   --graph-node: #737b94;
-  --graph-node-attachment: #e0de71;
+  --graph-node-attachment: #ffde73;
   --graph-node-focused: hsl(38, 102%, 115%);
-  --graph-node-tag: #44cf6e;
+  --graph-node-tag: #a5d18c;
   --graph-node-unresolved: #4f5971;
   --graph-text: #b1b7cc;
   --h1-color: inherit;
@@ -374,10 +395,9 @@ body {
   --h6-variant: normal;
   --h6-weight: 400;
   --header-height: 40px;
-  --heading-font: "Merienda";
+  --heading-font: light-dark("Merienda", "Merienda");
   --heading-formatting: #4f5971;
   --heading-spacing: 0rem;
-  --highlight-mix-blend-mode: lighten;
   --hr-color: transparent;
   --hr-thickness: 2px;
   --icon-color: #737b94;
@@ -409,11 +429,7 @@ body {
   --indentation-guide-width: 1px;
   --indentation-guide-width-active: 1px;
   --inline-title-color: inherit;
-  --inline-title-font:
-    "Hatolie", "??", "Bookerly", "Source Han Serif", "Noto Serif JP",
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+  --inline-title-font: "Merienda";
   --inline-title-line-height: 1.2;
   --inline-title-margin-bottom: 0.5em;
   --inline-title-size: 4em;
@@ -540,8 +556,6 @@ body {
   --modal-max-width-narrow: 800px;
   --modal-radius: 30px;
   --modal-width: 90vw;
-  --mono-rgb-0: 0, 0, 0;
-  --mono-rgb-100: 255, 255, 255;
   --nav-collapse-icon-color: #4f5971;
   --nav-collapse-icon-color-collapsed: #4f5971;
   --nav-heading-color: #b1b7cc;
@@ -660,14 +674,14 @@ body {
   --swatch-radius: 14px;
   --swatch-shadow: inset 0 0 0 1px #ffffff26;
   --swatch-width: 24px;
-  --sync-avatar-color-1: #fb464c;
-  --sync-avatar-color-2: #e9973f;
-  --sync-avatar-color-3: #e0de71;
-  --sync-avatar-color-4: #44cf6e;
-  --sync-avatar-color-5: #53dfdd;
-  --sync-avatar-color-6: #027aff;
-  --sync-avatar-color-7: #a882ff;
-  --sync-avatar-color-8: #fa99cd;
+  --sync-avatar-color-1: #e46f7d;
+  --sync-avatar-color-2: #fbb36c;
+  --sync-avatar-color-3: #ffde73;
+  --sync-avatar-color-4: #a5d18c;
+  --sync-avatar-color-5: #6fd2c2;
+  --sync-avatar-color-6: #56aed6;
+  --sync-avatar-color-7: #b584c7;
+  --sync-avatar-color-8: #ff94c8;
   --sync-avatar-color-current-user: transparent;
   --tab-background-active: #14141e;
   --tab-container-background: #161721;
@@ -731,7 +745,7 @@ body {
   --table-row-background-hover: transparent;
   --table-row-last-border-width: 1px;
   --table-selection: #ffffff1a;
-  --table-selection-blend-mode: darken;
+  --table-selection-blend-mode: lighten;
   --table-selection-border-color: #ffffff;
   --table-selection-border-radius: 4px;
   --table-selection-border-width: 2px;
@@ -754,17 +768,17 @@ body {
   --tag-weight: 300;
   --text-accent: #ffffff;
   --text-accent-hover: hsl(36, 105%, 129%);
-  --text-error: #fb464c;
+  --text-error: #e46f7d;
   --text-faint: #4f5971;
   --text-highlight-bg: #ffd00066;
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: #737b94;
   --text-normal: #b1b7cc;
-  --text-on-accent: #14141e;
+  --text-on-accent: light-dark(#14141e, #14141e);
   --text-on-accent-inverted: #000000;
   --text-selection: #ffffff33;
-  --text-success: #44cf6e;
-  --text-warning: #e9973f;
+  --text-success: #a5d18c;
+  --text-warning: #fbb36c;
   --titlebar-background: #161721;
   --titlebar-background-focused: #0d0d15;
   --titlebar-border-color: transparent;
@@ -1000,7 +1014,7 @@ h6 {
 }
 
 .callout {
-  --callout-color: 2, 122, 255;
+  --callout-color: 86, 174, 214;
   --callout-icon: lucide-pencil;
   background-color: #1d1f2e;
   border: 1px solid #4a4e62fb;
@@ -1039,42 +1053,42 @@ h6 {
 }
 
 .callout[data-callout="tip"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: 111, 210, 194;
   --callout-icon: lucide-flame;
 }
 
 .callout[data-callout="warning"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: 251, 179, 108;
   --callout-icon: lucide-alert-triangle;
 }
 
 .callout[data-callout="danger"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: 228, 111, 125;
   --callout-icon: lucide-zap;
 }
 
 .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: 111, 210, 194;
   --callout-icon: lucide-clipboard-list;
 }
 
 .callout[data-callout="todo"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: 86, 174, 214;
   --callout-icon: lucide-check-circle-2;
 }
 
 .callout[data-callout="question"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: 251, 179, 108;
   --callout-icon: help-circle;
 }
 
 .callout[data-callout="info"] {
-  --callout-color: 2, 122, 255;
+  --callout-color: 86, 174, 214;
   --callout-icon: lucide-info;
 }
 
 .callout[data-callout="success"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: 165, 209, 140;
   --callout-icon: lucide-check;
 }
 
@@ -1084,82 +1098,82 @@ h6 {
 }
 
 .callout[data-callout="example"] {
-  --callout-color: 168, 130, 255;
+  --callout-color: 181, 132, 199;
   --callout-icon: lucide-list;
 }
 
 .callout[data-callout="bug"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: 228, 111, 125;
   --callout-icon: lucide-bug;
 }
 
 .callout[data-callout="summary"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: 111, 210, 194;
   --callout-icon: lucide-clipboard-list;
 }
 
 .callout[data-callout="tldr"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: 111, 210, 194;
   --callout-icon: lucide-clipboard-list;
 }
 
 .callout[data-callout="important"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: 111, 210, 194;
   --callout-icon: lucide-flame;
 }
 
 .callout[data-callout="hint"] {
-  --callout-color: 83, 223, 221;
+  --callout-color: 111, 210, 194;
   --callout-icon: lucide-flame;
 }
 
 .callout[data-callout="check"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: 165, 209, 140;
   --callout-icon: lucide-check;
 }
 
 .callout[data-callout="done"] {
-  --callout-color: 68, 207, 110;
+  --callout-color: 165, 209, 140;
   --callout-icon: lucide-check;
 }
 
 .callout[data-callout="help"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: 251, 179, 108;
   --callout-icon: help-circle;
 }
 
 .callout[data-callout="faq"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: 251, 179, 108;
   --callout-icon: help-circle;
 }
 
 .callout[data-callout="caution"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: 251, 179, 108;
   --callout-icon: lucide-alert-triangle;
 }
 
 .callout[data-callout="attention"] {
-  --callout-color: 233, 151, 63;
+  --callout-color: 251, 179, 108;
   --callout-icon: lucide-alert-triangle;
 }
 
 .callout[data-callout="failure"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: 228, 111, 125;
   --callout-icon: lucide-x;
 }
 
 .callout[data-callout="error"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: 228, 111, 125;
   --callout-icon: lucide-zap;
 }
 
 .callout[data-callout="fail"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: 228, 111, 125;
   --callout-icon: lucide-x;
 }
 
 .callout[data-callout="missing"] {
-  --callout-color: 251, 70, 76;
+  --callout-color: 228, 111, 125;
   --callout-icon: lucide-x;
 }
 
@@ -1221,7 +1235,7 @@ h6 {
 
 .popover {
   background-color: #14141e;
-  border: 1px solid transparent;
+  border: 1px solid light-dark(#3b3f56, #3b3f56);
   border-radius: 26px;
   box-shadow:
     0px 1px 2px #0000001f,
@@ -1292,7 +1306,7 @@ a.tag {
 input[type="search"] {
   -webkit-app-region: no-drag;
   background: transparent;
-  border: 1px solid transparent;
+  border: 1px solid light-dark(#3b3f56, #3b3f56);
   border-radius: 5px;
   color: #b1b7cc;
   font-family: inherit;
@@ -1510,7 +1524,7 @@ svg.svg-icon {
 }
 
 .clickable-icon.mod-warning {
-  color: #fb464c;
+  color: #e46f7d;
 }
 
 .clickable-icon.mod-filled svg {
@@ -1596,11 +1610,11 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-tag {
-  color: #44cf6e;
+  color: #a5d18c;
 }
 
 .graph-view.color-fill-attachment {
-  color: #e0de71;
+  color: #ffde73;
 }
 
 .graph-view.color-fill-unresolved {
@@ -1669,6 +1683,10 @@ svg.svg-icon {
 }
 
 .theme-dark {
+  --accent-h: 41;
+  --accent-l: 100%;
+  --accent-s: 100%;
+  --background-modifier-border: #3b3f56;
   --background-modifier-box-shadow: #0000004d;
   --background-modifier-cover: #0a0a0a66;
   --background-modifier-form-field: #3a435d;
@@ -1677,35 +1695,48 @@ svg.svg-icon {
   --color-accent-1: hsl(38, 102%, 115%);
   --color-accent-2: hsl(36, 105%, 129%);
   --color-accent-hsl: 41, 100%, 100%;
-  --color-base-00: #1e1e1e;
-  --color-base-05: #212121;
-  --color-base-10: #242424;
-  --color-base-100: #dadada;
-  --color-base-20: #262626;
-  --color-base-25: #2a2a2a;
-  --color-base-30: #363636;
-  --color-base-35: #3f3f3f;
-  --color-base-40: #555555;
-  --color-base-50: #666666;
-  --color-base-60: #999999;
-  --color-base-70: #b3b3b3;
-  --color-blue: #027aff;
-  --color-blue-rgb: 2, 122, 255;
-  --color-cyan: #53dfdd;
-  --color-cyan-rgb: 83, 223, 221;
-  --color-green: #44cf6e;
-  --color-green-rgb: 68, 207, 110;
-  --color-orange: #e9973f;
-  --color-orange-rgb: 233, 151, 63;
-  --color-pink: #fa99cd;
-  --color-pink-rgb: 250, 153, 205;
-  --color-purple: #a882ff;
-  --color-purple-rgb: 168, 130, 255;
-  --color-red: #fb464c;
-  --color-red-rgb: 251, 70, 76;
-  --color-yellow: #e0de71;
-  --color-yellow-rgb: 224, 222, 113;
-  --highlight-mix-blend-mode: darken;
+  --color-base-00: #2a3141;
+  --color-base-05: #252b3a;
+  --color-base-10: #222a38;
+  --color-base-100: #cdd1df;
+  --color-base-20: #262b3b;
+  --color-base-25: #313952;
+  --color-base-30: #1d232f;
+  --color-base-35: #3b445d;
+  --color-base-40: #515b71;
+  --color-base-50: #5f6980;
+  --color-base-60: #080b17;
+  --color-base-70: #8890a6;
+  --color-blue: #56aed6;
+  --color-blue-rgb: 86, 174, 214;
+  --color-cyan: #6fd2c2;
+  --color-cyan-rgb: 111, 210, 194;
+  --color-green: #a5d18c;
+  --color-green-rgb: 165, 209, 140;
+  --color-orange: #fbb36c;
+  --color-orange-rgb: 251, 179, 108;
+  --color-pink: #ff94c8;
+  --color-pink-rgb: 255, 148, 200;
+  --color-purple: #b584c7;
+  --color-purple-rgb: 181, 132, 199;
+  --color-red: #e46f7d;
+  --color-red-rgb: 228, 111, 125;
+  --color-yellow: #ffde73;
+  --color-yellow-rgb: 255, 222, 115;
+  --font-cursive: "Merienda";
+  --font-headings: "Merienda";
+  --font-interface-theme: "Avenir", "Avenir Next";
+  --font-sans: "Avenir", "Avenir Next";
+  --font-serif: "Bookerly";
+  --font-text-theme: "Bookerly", "Source Han Serif", "Noto Serif JP";
+  --glow-color: #ffffff;
+  --heading-font: "Merienda";
+  --highlight-mix-blend-mode: lighten;
+  --inline-title-font:
+    "Hatolie", "??", "Bookerly", "Source Han Serif", "Noto Serif JP",
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
     0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
@@ -1726,10 +1757,15 @@ svg.svg-icon {
   --shadow-s:
     0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
   --text-accent: hsl(38, 102%, 115%);
+  --text-on-accent: #14141e;
   --text-selection: #ffffff54;
 }
 
 .theme-light {
+  --accent-h: 41;
+  --accent-l: 100%;
+  --accent-s: 100%;
+  --background-modifier-border: #3b3f56;
   --background-modifier-box-shadow: #0000001a;
   --background-modifier-cover: #dcdcdc66;
   --background-secondary-alt: #1a242d;
@@ -1737,48 +1773,62 @@ svg.svg-icon {
   --color-accent-1: hsl(40, 101%, 107.5%);
   --color-accent-2: hsl(38, 102%, 115%);
   --color-accent-hsl: 41, 100%, 100%;
-  --color-base-00: #ffffff;
-  --color-base-05: #fcfcfc;
-  --color-base-10: #fafafa;
-  --color-base-100: #222222;
-  --color-base-20: #f6f6f6;
-  --color-base-25: #e3e3e3;
-  --color-base-30: #e0e0e0;
-  --color-base-35: #d4d4d4;
-  --color-base-40: #bdbdbd;
-  --color-base-50: #ababab;
-  --color-base-60: #707070;
-  --color-base-70: #5c5c5c;
-  --color-blue: #086ddd;
-  --color-blue-rgb: 8, 109, 221;
-  --color-cyan: #00bfbc;
-  --color-cyan-rgb: 0, 191, 188;
-  --color-green: #08b94e;
-  --color-green-rgb: 8, 185, 78;
-  --color-orange: #ec7500;
-  --color-orange-rgb: 236, 117, 0;
-  --color-pink: #d53984;
-  --color-pink-rgb: 213, 57, 132;
-  --color-purple: #7852ee;
-  --color-purple-rgb: 120, 82, 238;
-  --color-red: #e93147;
-  --color-red-rgb: 233, 49, 71;
-  --color-yellow: #e0ac00;
-  --color-yellow-rgb: 224, 172, 0;
-  --highlight-mix-blend-mode: darken;
+  --color-base-00: #2a3141;
+  --color-base-05: #252b3a;
+  --color-base-10: #222a38;
+  --color-base-100: #cdd1df;
+  --color-base-20: #262b3b;
+  --color-base-25: #313952;
+  --color-base-30: #1d232f;
+  --color-base-35: #3b445d;
+  --color-base-40: #515b71;
+  --color-base-50: #5f6980;
+  --color-base-60: #080b17;
+  --color-base-70: #8890a6;
+  --color-blue: #56aed6;
+  --color-blue-rgb: 86, 174, 214;
+  --color-cyan: #6fd2c2;
+  --color-cyan-rgb: 111, 210, 194;
+  --color-green: #a5d18c;
+  --color-green-rgb: 165, 209, 140;
+  --color-orange: #fbb36c;
+  --color-orange-rgb: 251, 179, 108;
+  --color-pink: #ff94c8;
+  --color-pink-rgb: 255, 148, 200;
+  --color-purple: #b584c7;
+  --color-purple-rgb: 181, 132, 199;
+  --color-red: #e46f7d;
+  --color-red-rgb: 228, 111, 125;
+  --color-yellow: #ffde73;
+  --color-yellow-rgb: 255, 222, 115;
+  --font-cursive: "Merienda";
+  --font-headings: "Merienda";
+  --font-interface-theme: "Avenir", "Avenir Next";
+  --font-sans: "Avenir", "Avenir Next";
+  --font-serif: "Bookerly";
+  --font-text-theme: "Bookerly", "Source Han Serif", "Noto Serif JP";
+  --glow-color: #ffffff;
+  --heading-font: "Merienda";
+  --highlight-mix-blend-mode: lighten;
+  --inline-title-font:
+    "Hatolie", "??", "Bookerly", "Source Han Serif", "Noto Serif JP",
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
   --input-shadow:
     inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008,
     0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
   --input-shadow-hover:
     inset 0 0 0 1px #0000002b, 0 2px 3px 0 #0000001a, 0 1px 1.5px 0 #00000008,
     0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
-  --mono-rgb-0: 255, 255, 255;
-  --mono-rgb-100: 0, 0, 0;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
   --shadow-l:
     0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
     0px 30px 90px #00000033;
   --shadow-s:
     0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
+  --text-on-accent: #14141e;
 }
 
 .mod-sidedock {

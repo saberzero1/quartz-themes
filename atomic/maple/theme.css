@@ -30147,12 +30147,14 @@ body #calendar-container .day {
   backdrop-filter: blur(var(--size-2-3));
 }
 
+/*
 .excalidraw .popover {
-  animation: op var(--animation);
-  background-color: hsl(var(--background-secondary-hsl));
   box-shadow: none;
+  background-color: hsl(var(--background-secondary-hsl)) !important;
+  animation: op var(--animation) !important;
 }
 
+*/
 .excalidraw .popover ul {
   border-radius: var(--radius-m);
   box-shadow: var(--shadow-s);
@@ -31135,10 +31137,10 @@ body.setting-group-title
   width: var(--size-4-1);
 }
 
+/* :not(.excalidraw) .popover, */
 :is(
   .menu,
   .prompt,
-  :not(.excalidraw) .popover,
   .modal,
   .modal-bg,
   .document-search-container,
@@ -31147,12 +31149,14 @@ body.setting-group-title
   animation: op var(--animation);
 }
 
+/*
 body.modal-animation :is(.prompt, .popover, .modal) {
   animation:
     op var(--animation),
     bounce var(--animation);
 }
 
+*/
 @keyframes op {
   30% {
     opacity: 0.7;

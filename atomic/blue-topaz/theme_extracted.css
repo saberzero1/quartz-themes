@@ -120,6 +120,10 @@
   --checklist-color-5: light-dark(#ffe0b2ab, #a4620086);
   --checklist-color-6: light-dark(#ffcdd2ab, #ab100586);
   --checklist-color-7: light-dark(#e1bee7ab, #7f1f9086);
+  --code-active-line-background-color: light-dark(
+    var(--activeline-background),
+    var(--activeline-background)
+  );
   --code-atom: #f78c6c;
   --code-attribute: #c792ea;
   --code-attribute-in-comment: #c792ea;
@@ -740,7 +744,10 @@ body {
   --cloze-decoration-color: red;
   --cloze-decoration-color-2: var(--theme-color);
   --cloze-decoration-color-3: var(--theme-color);
-  --code-active-line-background-color: var(--activeline-background);
+  --code-active-line-background-color: light-dark(
+    var(--activeline-background),
+    var(--activeline-background)
+  );
   --code-atom: var(--orange-1);
   --code-attribute: var(--code-function);
   --code-background: var(--background-code);
@@ -2721,6 +2728,7 @@ svg.svg-icon {
   --checklist-color-5: #a4620086;
   --checklist-color-6: #ab100586;
   --checklist-color-7: #7f1f9086;
+  --code-active-line-background-color: var(--activeline-background);
   --code-normal: #d0d0d0;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
@@ -3099,6 +3107,7 @@ svg.svg-icon {
   --checklist-color-5: #ffe0b2ab;
   --checklist-color-6: #ffcdd2ab;
   --checklist-color-7: #e1bee7ab;
+  --code-active-line-background-color: var(--activeline-background);
   --code-normal: #000000;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(

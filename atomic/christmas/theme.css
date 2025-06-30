@@ -1647,9 +1647,8 @@ body {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
-  --background-accent: #b5aa29;
   --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
-  --background-modifier-border: rgba(0, 0, 0, 0.25);
+  --background-modifier-border: var(--color-base-30);
   --background-modifier-border-focus: var(--color-base-40);
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-error: var(--color-red);
@@ -1660,9 +1659,9 @@ body {
   --background-modifier-message: rgba(0, 0, 0, 0.9);
   --background-modifier-success: var(--color-green);
   --background-modifier-success-rgb: var(--color-green-rgb);
-  --background-primary: #35674d;
-  --background-primary-alt: #2c5640;
-  --background-secondary: #a23227;
+  --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
+  --background-secondary: var(--color-base-20);
   --background-secondary-alt: light-dark(
     var(--color-base-05),
     var(--color-base-30)
@@ -2029,10 +2028,9 @@ body {
   --input-height: 30px;
   --input-placeholder-color: var(--text-faint);
   --input-radius: 5px;
-  --interactive-accent: #ffbf00;
-  --interactive-accent-hover: #d0a011;
+  --interactive-accent: var(--color-accent-1);
+  --interactive-accent-hover: var(--color-accent-2);
   --interactive-accent-hsl: var(--color-accent-hsl);
-  --interactive-accent-rgb: 255, 191, 0;
   --interactive-hover: var(--color-base-10);
   --interactive-normal: var(--color-base-00);
   --italic-color: inherit;
@@ -2356,17 +2354,17 @@ body {
   --tag-radius: 2em;
   --tag-size: var(--font-smaller);
   --tag-weight: inherit;
-  --text-accent: #f2f2f2;
-  --text-accent-hover: #ffffff;
+  --text-accent: var(--color-accent);
+  --text-accent-hover: var(--color-accent-2);
   --text-error: var(--color-red);
-  --text-faint: #c5c5c5;
-  --text-highlight-bg: #b5aa29;
+  --text-faint: var(--color-base-50);
+  --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: #f2f2f2;
-  --text-normal: #f2f2f2;
-  --text-on-accent: #000000;
+  --text-muted: var(--color-base-70);
+  --text-normal: var(--color-base-100);
+  --text-on-accent: white;
   --text-on-accent-inverted: black;
-  --text-selection: rgba(44, 86, 64, 0.99);
+  --text-selection: hsla(var(--color-accent-hsl), 0.2);
   --text-success: var(--color-green);
   --text-warning: var(--color-orange);
   --titlebar-background: var(--background-secondary);
@@ -19247,7 +19245,24 @@ body:not(.is-phone)
 }
 
 body.theme-dark {
+  --background-accent: #b5aa29;
+  --background-modifier-border: rgba(0, 0, 0, 0.25);
+  --background-primary: #35674d;
+  --background-primary-alt: #2c5640;
+  --background-secondary: #a23227;
+  --background-secondary-alt: #952e24;
   --canvas-color: 126, 126, 126;
+  --interactive-accent: #ffbf00;
+  --interactive-accent-hover: #d0a011;
+  --interactive-accent-rgb: 255, 191, 0;
+  --text-accent: #f2f2f2;
+  --text-accent-hover: #ffffff;
+  --text-faint: #c5c5c5;
+  --text-highlight-bg: #b5aa29;
+  --text-muted: #f2f2f2;
+  --text-normal: #f2f2f2;
+  --text-on-accent: #000000;
+  --text-selection: rgba(44, 86, 64, 0.99);
 }
 
 .canvas-wrapper {
@@ -23615,6 +23630,26 @@ input.mobile-vault-chooser-field-input {
   color: var(--text-muted);
   font-size: var(--font-ui-smaller);
   line-height: var(--line-height-normal);
+}
+
+body.theme-light {
+  --background-accent: #b5aa29;
+  --background-modifier-border: rgba(0, 0, 0, 0.25);
+  --background-primary: #35674d;
+  --background-primary-alt: #2c5640;
+  --background-secondary: #a23227;
+  --background-secondary-alt: #952e24;
+  --interactive-accent: #ffbf00;
+  --interactive-accent-hover: #d0a011;
+  --interactive-accent-rgb: 255, 191, 0;
+  --text-accent: #f2f2f2;
+  --text-accent-hover: #ffffff;
+  --text-faint: #c5c5c5;
+  --text-highlight-bg: #b5aa29;
+  --text-muted: #f2f2f2;
+  --text-normal: #f2f2f2;
+  --text-on-accent: #000000;
+  --text-selection: rgba(44, 86, 64, 0.99);
 }
 
 .markdown-preview-view code {

@@ -24,6 +24,8 @@
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
+  --interactive-accent: light-dark(#00aaad, #00aaad);
+  --interactive-accent-hover: light-dark(#00aaad, #00aaad);
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
   --page-border: 9px solid transparent;
@@ -34,6 +36,8 @@
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
   --spreadHorizontalWrapped-margin-LR: -3.5px;
+  --text-accent: light-dark(#00aaad, #00aaad);
+  --text-accent-hover: light-dark(#00aaad, #00aaad);
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
@@ -79,7 +83,7 @@ body {
   --bases-table-cell-background-active: #111827;
   --bases-table-cell-background-disabled: #00000080;
   --bases-table-cell-radius-active: 2px;
-  --bases-table-cell-shadow-active: 0 0 0 2px #8a5cf5;
+  --bases-table-cell-shadow-active: 0 0 0 2px #00aaad;
   --bases-table-column-border-width: 1px;
   --bases-table-column-max-width: 300;
   --bases-table-column-min-width: 40;
@@ -101,7 +105,7 @@ body {
   --bases-table-text-size: 0.875em;
   --bases-table-white-space: nowrap;
   --blockquote-background-color: transparent;
-  --blockquote-border-color: #8a5cf5;
+  --blockquote-border-color: #00aaad;
   --blockquote-border-thickness: 2px;
   --blockquote-color: inherit;
   --blockquote-font-style: normal;
@@ -148,8 +152,8 @@ body {
   --caret-color: #d1d5db;
   --checkbox-border-color: #4b5563;
   --checkbox-border-color-hover: #b3b3b3;
-  --checkbox-color: #8a5cf5;
-  --checkbox-color-hover: #a68af9;
+  --checkbox-color: #00aaad;
+  --checkbox-color-hover: #00aaad;
   --checkbox-margin-inline-start: 0.85em;
   --checkbox-marker-color: #111827;
   --checkbox-radius: 4px;
@@ -175,7 +179,7 @@ body {
   --code-value: #a882ff;
   --code-white-space: pre-wrap;
   --collapse-icon-color: #4b5563;
-  --collapse-icon-color-collapsed: #a68af9;
+  --collapse-icon-color-collapsed: #00aaad;
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
   --color-accent-1: light-dark(#9873f7, #a68af9);
   --color-accent-2: light-dark(#a68af9, #c5b6fc);
@@ -207,7 +211,7 @@ body {
   --dialog-width: 560px;
   --direction: 1;
   --divider-color: transparent;
-  --divider-color-hover: #8a5cf5;
+  --divider-color-hover: #00aaad;
   --divider-vertical-height: calc(100% - 40px);
   --divider-width: 1px;
   --divider-width-hover: 3px;
@@ -224,7 +228,7 @@ body {
     0 0 0 1px transparent, inset 0 0 0 1px transparent;
   --embed-border-bottom: none;
   --embed-border-end: none;
-  --embed-border-start: 2px solid #8a5cf5;
+  --embed-border-start: 2px solid #00aaad;
   --embed-border-top: none;
   --embed-canvas-max-height: 400px;
   --embed-font-style: inherit;
@@ -311,7 +315,7 @@ body {
   --graph-line: #3f3f3f;
   --graph-node: #b3b3b3;
   --graph-node-attachment: #e0de71;
-  --graph-node-focused: #a68af9;
+  --graph-node-focused: #00aaad;
   --graph-node-tag: #44cf6e;
   --graph-node-unresolved: #4b5563;
   --graph-text: #d1d5db;
@@ -363,7 +367,7 @@ body {
   --hr-color: transparent;
   --hr-thickness: 2px;
   --icon-color: #b3b3b3;
-  --icon-color-active: #a68af9;
+  --icon-color-active: #00aaad;
   --icon-color-focused: #d1d5db;
   --icon-color-hover: #b3b3b3;
   --icon-l: 18px;
@@ -404,8 +408,8 @@ body {
   --input-height: 30px;
   --input-placeholder-color: #4b5563;
   --input-radius: 5px;
-  --interactive-accent: #00aaad;
-  --interactive-accent-hover: #00aaad;
+  --interactive-accent: light-dark(#00aaad, #00aaad);
+  --interactive-accent-hover: light-dark(#00aaad, #00aaad);
   --interactive-accent-hsl: 258, 88%, 66%;
   --interactive-hover: #111;
   --interactive-normal: #000;
@@ -423,17 +427,17 @@ body {
   --layer-tooltip: 70;
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;
-  --link-color: #a68af9;
+  --link-color: #00aaad;
   --link-color-hover: #00aaad;
   --link-decoration: underline;
   --link-decoration-hover: underline;
   --link-decoration-thickness: auto;
-  --link-external-color: #a68af9;
+  --link-external-color: #00aaad;
   --link-external-color-hover: #00aaad;
   --link-external-decoration: underline;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
-  --link-unresolved-color: #a68af9;
+  --link-unresolved-color: #00aaad;
   --link-unresolved-decoration-color: #8a5cf54d;
   --link-unresolved-decoration-style: solid;
   --link-unresolved-filter: none;
@@ -448,7 +452,7 @@ body {
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
   --list-marker-color: #4b5563;
-  --list-marker-color-collapsed: #a68af9;
+  --list-marker-color-collapsed: #00aaad;
   --list-marker-color-hover: #b3b3b3;
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
@@ -534,7 +538,7 @@ body {
   --nav-item-children-padding-start: 4px;
   --nav-item-color: #b3b3b3;
   --nav-item-color-active: #d1d5db;
-  --nav-item-color-highlighted: #a68af9;
+  --nav-item-color-highlighted: #00aaad;
   --nav-item-color-hover: #d1d5db;
   --nav-item-color-selected: #d1d5db;
   --nav-item-padding: 4px 8px 4px 24px;
@@ -560,7 +564,7 @@ body {
   --pill-color: #b3b3b3;
   --pill-color-hover: #d1d5db;
   --pill-color-remove: #4b5563;
-  --pill-color-remove-hover: #a68af9;
+  --pill-color-remove-hover: #00aaad;
   --pill-decoration: none;
   --pill-decoration-hover: none;
   --pill-focus-left-adjust: -4px;
@@ -674,7 +678,7 @@ body {
   --tab-text-color-focused: #b3b3b3;
   --tab-text-color-focused-active: #b3b3b3;
   --tab-text-color-focused-active-current: #d1d5db;
-  --tab-text-color-focused-highlighted: #a68af9;
+  --tab-text-color-focused-highlighted: #00aaad;
   --tab-width: 200px;
   --table-add-button-background: transparent;
   --table-add-button-border-color: transparent;
@@ -689,7 +693,7 @@ body {
   --table-column-max-width: none;
   --table-column-min-width: 6ch;
   --table-drag-handle-background: transparent;
-  --table-drag-handle-background-active: #8a5cf5;
+  --table-drag-handle-background-active: #00aaad;
   --table-drag-handle-color: #4b5563;
   --table-drag-handle-color-active: #d1d5db;
   --table-header-background: transparent;
@@ -707,7 +711,7 @@ body {
   --table-row-last-border-width: 1px;
   --table-selection: #8a5cf51a;
   --table-selection-blend-mode: darken;
-  --table-selection-border-color: #8a5cf5;
+  --table-selection-border-color: #00aaad;
   --table-selection-border-radius: 4px;
   --table-selection-border-width: 2px;
   --table-text-color: inherit;
@@ -718,8 +722,8 @@ body {
   --tag-border-color: #8a5cf526;
   --tag-border-color-hover: #8a5cf526;
   --tag-border-width: 0px;
-  --tag-color: #a68af9;
-  --tag-color-hover: #a68af9;
+  --tag-color: #00aaad;
+  --tag-color-hover: #00aaad;
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-padding-x: 0.65em;
@@ -727,8 +731,8 @@ body {
   --tag-radius: 2em;
   --tag-size: 0.875em;
   --tag-weight: inherit;
-  --text-accent: #00aaad;
-  --text-accent-hover: #00aaad;
+  --text-accent: light-dark(#00aaad, #00aaad);
+  --text-accent-hover: light-dark(#00aaad, #00aaad);
   --text-error: #fb464c;
   --text-faint: #666666;
   --text-highlight-bg: #ffd00066;
@@ -770,7 +774,7 @@ body {
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: #111827;
-  caret-color: #a68af9;
+  caret-color: #00aaad;
   color: #d1d5db;
   contain: initial;
   font-family:
@@ -1247,7 +1251,7 @@ a.tag {
   background-color: #8a5cf533;
   border: 0px solid #8a5cf526;
   border-radius: 2em;
-  color: #a68af9;
+  color: #00aaad;
   font-size: 0.875em;
   font-weight: inherit;
   line-height: 1;
@@ -1292,7 +1296,7 @@ input[type="search"] {
 
 .nav-file-icon {
   align-items: center;
-  color: #8a5cf5;
+  color: #00aaad;
   display: inline-flex;
   margin-inline-end: 6px;
   opacity: 1;
@@ -1394,13 +1398,13 @@ input[type="search"] {
 }
 
 .tree-item-self.is-being-dragged {
-  background-color: #8a5cf5;
+  background-color: light-dark(#00aaad, #00aaad);
   color: #d1d5db;
 }
 
 .tree-item-self .tree-item-icon {
   align-items: center;
-  color: #8a5cf5;
+  color: #00aaad;
   display: flex;
   flex: 0 0 auto;
   justify-content: center;
@@ -1480,7 +1484,7 @@ svg.svg-icon {
 }
 
 .clickable-icon.mod-filled svg {
-  fill: #8a5cf5;
+  fill: #00aaad;
 }
 
 .setting-item-control .clickable-icon {
@@ -1503,7 +1507,7 @@ svg.svg-icon {
 
 .clickable-icon.is-active {
   background-color: #8a5cf526;
-  color: #a68af9;
+  color: #00aaad;
   opacity: 0.65;
 }
 
@@ -1512,7 +1516,7 @@ svg.svg-icon {
   align-items: center;
   background-color: transparent;
   border-radius: 4px;
-  color: #8a5cf5;
+  color: #00aaad;
   cursor: pointer;
   display: flex;
   height: auto;
@@ -1558,7 +1562,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-focused {
-  color: #a68af9;
+  color: #00aaad;
 }
 
 .graph-view.color-fill-tag {
@@ -1604,7 +1608,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-circle {
-  color: #a68af9;
+  color: #00aaad;
 }
 
 .graph-view.color-line {
@@ -1616,11 +1620,11 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-highlight {
-  color: #8a5cf5;
+  color: light-dark(#00aaad, #00aaad);
 }
 
 .graph-view.color-line-highlight {
-  color: #8a5cf5;
+  color: light-dark(#00aaad, #00aaad);
 }
 
 .graph-controls {
@@ -1685,8 +1689,8 @@ svg.svg-icon {
   --input-shadow-hover:
     inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
     0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
-  --interactive-accent: #8a5cf5;
-  --interactive-accent-hover: #a68af9;
+  --interactive-accent: #00aaad;
+  --interactive-accent-hover: #00aaad;
   --interactive-accent-rgb: #d1d5db;
   --interactive-before: #374151;
   --interactive-hover: #3f3f3f;
@@ -1703,7 +1707,8 @@ svg.svg-icon {
     0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
   --text-a: #d1d5db;
   --text-a-hover: #d1d5db;
-  --text-accent: #a68af9;
+  --text-accent: #00aaad;
+  --text-accent-hover: #00aaad;
   --text-faint: #4b5563;
   --text-highlight-bg: #374151;
   --text-link: #d1d5db;
@@ -1762,6 +1767,8 @@ svg.svg-icon {
   --input-shadow-hover:
     inset 0 0 0 1px #0000002b, 0 2px 3px 0 #0000001a, 0 1px 1.5px 0 #00000008,
     0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+  --interactive-accent: #00aaad;
+  --interactive-accent-hover: #00aaad;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
   --shadow-l:
@@ -1769,6 +1776,8 @@ svg.svg-icon {
     0px 30px 90px #00000033;
   --shadow-s:
     0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
+  --text-accent: #00aaad;
+  --text-accent-hover: #00aaad;
 }
 
 .mod-sidedock {

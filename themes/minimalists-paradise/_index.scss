@@ -1285,7 +1285,11 @@ body {
         & > input {
           background-color: light-dark(#9096a4, #000000);
           border: none;
-          border-bottom: 1px solid light-dark(#9096a4, #000000);
+          border-bottom: 1px solid
+            light-dark(
+              light-dark(#9096a4, #000000),
+              light-dark(#9096a4, #000000)
+            );
           border-radius: 0;
           font-size: 16px;
           height: 48px;

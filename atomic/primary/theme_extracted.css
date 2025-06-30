@@ -3955,7 +3955,6 @@ h6 {
 }
 
 .popover {
-  animation: var(--anim-popup);
   background-color: var(--background-primary);
   border: 1px solid var(--background-modifier-border);
   border-radius: var(--radius-m);

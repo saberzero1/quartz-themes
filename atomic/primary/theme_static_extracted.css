@@ -2541,7 +2541,6 @@ h6 {
 }
 
 .popover {
-  animation: none;
   background-color: light-dark(#f8f5f1, #2e261f);
   border: 1px solid transparent;
   border-radius: 8px;

@@ -269,12 +269,10 @@ body {
   --color-blue: light-dark(#086ddd, #027aff);
   --color-cyan: light-dark(#00bfbc, #53dfdd);
   --color-green: light-dark(#08b94e, #44cf6e);
-  --color-green-rgb: var(--wyrd-green-rgb);
   --color-orange: light-dark(#ec7500, #e9973f);
   --color-pink: light-dark(#d53984, #fa99cd);
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
-  --color-red-rgb: var(--wyrd-red-rgb);
   --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
@@ -804,8 +802,7 @@ body {
   --text-accent-hover: var(--color-accent-2);
   --text-error: var(--color-red);
   --text-faint: light-dark(var(--color-base-60), var(--color-base-40));
-  --text-highlight-bg: rgba(var(--wyrd-yellow-rgb), 0.7);
-  --text-highlight-bg-active: rgba(var(--wyrd-yellow-light-rgb), 0.8);
+  --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: light-dark(var(--color-base-50), var(--color-base-50));
   --text-normal: light-dark(var(--color-base-40), var(--color-base-60));
@@ -1793,21 +1790,21 @@ svg.svg-icon {
   --color-base-50: var(--wyrd-base-70);
   --color-base-60: var(--wyrd-base-80);
   --color-base-70: var(--wyrd-base-90);
-  --color-blue: #027aff;
+  --color-blue: var(--wyrd-blue);
   --color-blue-rgb: 2, 122, 255;
-  --color-cyan: #53dfdd;
+  --color-cyan: var(--wyrd-cyan);
   --color-cyan-rgb: 83, 223, 221;
-  --color-green: #44cf6e;
-  --color-green-rgb: 68, 207, 110;
-  --color-orange: #e9973f;
+  --color-green: var(--wyrd-green);
+  --color-green-rgb: var(--wyrd-green-rgb);
+  --color-orange: var(--wyrd-orange);
   --color-orange-rgb: 233, 151, 63;
-  --color-pink: #fa99cd;
+  --color-pink: var(--wyrd-pink);
   --color-pink-rgb: 250, 153, 205;
-  --color-purple: #a882ff;
+  --color-purple: var(--wyrd-purple);
   --color-purple-rgb: 168, 130, 255;
-  --color-red: #fb464c;
-  --color-red-rgb: 251, 70, 76;
-  --color-yellow: #e0de71;
+  --color-red: var(--wyrd-red);
+  --color-red-rgb: var(--wyrd-red-rgb);
+  --color-yellow: var(--wyrd-yellow);
   --color-yellow-rgb: 224, 222, 113;
   --highlight-mix-blend-mode: darken;
   --input-shadow:
@@ -1834,6 +1831,8 @@ svg.svg-icon {
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-accent: var(--color-accent-1);
   --text-faint: var(--color-base-40);
+  --text-highlight-bg: rgba(var(--wyrd-yellow-rgb), 0.7);
+  --text-highlight-bg-active: rgba(var(--wyrd-yellow-light-rgb), 0.8);
   --text-muted: var(--color-base-50);
   --text-normal: var(--color-base-60);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
@@ -1867,21 +1866,21 @@ svg.svg-icon {
   --color-base-50: var(--wyrd-base-30);
   --color-base-60: var(--wyrd-base-20);
   --color-base-70: var(--wyrd-base-10);
-  --color-blue: #086ddd;
+  --color-blue: var(--wyrd-blue);
   --color-blue-rgb: 8, 109, 221;
-  --color-cyan: #00bfbc;
+  --color-cyan: var(--wyrd-cyan);
   --color-cyan-rgb: 0, 191, 188;
-  --color-green: #08b94e;
-  --color-green-rgb: 8, 185, 78;
-  --color-orange: #ec7500;
+  --color-green: var(--wyrd-green);
+  --color-green-rgb: var(--wyrd-green-rgb);
+  --color-orange: var(--wyrd-orange);
   --color-orange-rgb: 236, 117, 0;
-  --color-pink: #d53984;
+  --color-pink: var(--wyrd-pink);
   --color-pink-rgb: 213, 57, 132;
-  --color-purple: #7852ee;
+  --color-purple: var(--wyrd-purple);
   --color-purple-rgb: 120, 82, 238;
-  --color-red: #e93147;
-  --color-red-rgb: 233, 49, 71;
-  --color-yellow: #e0ac00;
+  --color-red: var(--wyrd-red);
+  --color-red-rgb: var(--wyrd-red-rgb);
+  --color-yellow: var(--wyrd-yellow);
   --color-yellow-rgb: 224, 172, 0;
   --highlight-mix-blend-mode: darken;
   --input-shadow:
@@ -1901,6 +1900,8 @@ svg.svg-icon {
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --text-faint: var(--color-base-60);
+  --text-highlight-bg: rgba(var(--wyrd-yellow-rgb), 0.7);
+  --text-highlight-bg-active: rgba(var(--wyrd-yellow-light-rgb), 0.8);
   --text-muted: var(--color-base-50);
   --text-normal: var(--color-base-40);
 }

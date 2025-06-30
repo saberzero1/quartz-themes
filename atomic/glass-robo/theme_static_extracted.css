@@ -1226,7 +1226,6 @@ h6 {
 }
 
 .popover {
-  animation: 0.3s pop cubic-bezier(0.17, 0.89, 0.32, 1.27);
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 8px;

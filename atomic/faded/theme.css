@@ -11240,9 +11240,6 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .popover.hover-popover {
   --callout-blend-mode: normal;
-  animation:
-    FadeInWithDelay 3s ease-in forwards,
-    disablePointerTillVisible 3s ease-in forwards;
   justify-content: stretch;
   max-height: 800px;
   max-width: 80vw;

@@ -978,6 +978,7 @@
   --tag-7-default: light-dark(#fadec9, #854c1d);
   --tag-8-default: light-dark(#eee0da, #5a5a5a);
   --tag-9-default: light-dark(#e3e2e0, #603b2c);
+  --text-highlight-bg: light-dark(#89632a, #89632a);
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
@@ -2285,7 +2286,7 @@ body {
   --text-accent-hover: #61b4ee;
   --text-error: #ff7369;
   --text-faint: #707070;
-  --text-highlight-bg: #89632a;
+  --text-highlight-bg: light-dark(#89632a, #89632a);
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: #a0a0a0;
   --text-normal: #dadada;
@@ -2418,6 +2419,7 @@ body {
   --tag-7-default: #fadec9;
   --tag-8-default: #eee0da;
   --tag-9-default: #e3e2e0;
+  --text-highlight-bg: #89632a;
 }
 
 .theme-dark {
@@ -2494,6 +2496,7 @@ body {
   --tag-8-default: #5a5a5a;
   --tag-9-default: #603b2c;
   --text-accent: #439ee8;
+  --text-highlight-bg: #89632a;
   --text-selection: #2282e254;
 }
 
@@ -2768,7 +2771,10 @@ body.is-translucent {
 }
 
 .is-flashing {
-  background-color: #59563b;
+  background-color: light-dark(
+    light-dark(#fdecc8, #89632a),
+    light-dark(#fdecc8, #89632a)
+  );
   border-radius: 3px;
   color: #ffffffe6;
   mix-blend-mode: lighten;
@@ -5654,7 +5660,10 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
 }
 
 .community-item .suggestion-highlight {
-  background-color: #59563b;
+  background-color: light-dark(
+    light-dark(#fdecc8, #89632a),
+    light-dark(#fdecc8, #89632a)
+  );
 }
 
 @media (hover: hover) {
@@ -15811,7 +15820,10 @@ em {
 }
 
 .markdown-rendered mark {
-  background-color: #59563b;
+  background-color: light-dark(
+    light-dark(#fdecc8, #89632a),
+    light-dark(#fdecc8, #89632a)
+  );
   color: #ffffffe6;
   padding: 0px 3px 2px 3px;
 }
@@ -15821,12 +15833,18 @@ em {
 }
 
 .cm-s-obsidian span.cm-formatting-highlight {
-  background-color: #59563b;
+  background-color: light-dark(
+    light-dark(#fdecc8, #89632a),
+    light-dark(#fdecc8, #89632a)
+  );
   color: #ffffffe6;
 }
 
 .cm-s-obsidian span.cm-highlight {
-  background-color: #59563b;
+  background-color: light-dark(
+    light-dark(#fdecc8, #89632a),
+    light-dark(#fdecc8, #89632a)
+  );
   color: #ffffffe6;
 }
 
@@ -18349,7 +18367,10 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .search-result-file-matched-text {
-  background-color: #59563b;
+  background-color: light-dark(
+    light-dark(#fdecc8, #89632a),
+    light-dark(#fdecc8, #89632a)
+  );
   color: #ffffffe6;
 }
 

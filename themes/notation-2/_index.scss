@@ -47,6 +47,8 @@ html[saved-theme="light"] {
   }
   --mono-rgb-100: 0, 0, 0;
   --mono-rgb-100: 0, 0, 0;
+
+  --text-highlight-bg: #89632a;
 }
 
 @font-face {
@@ -141,6 +143,7 @@ html[saved-theme="light"] {
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
+  --text-highlight-bg: light-dark(#89632a, #89632a);
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
   --text-faint: var(--color-base-50);
@@ -266,7 +269,7 @@ body {
   --text-accent: #2282e2;
   --text-accent-hover: #61b4ee;
   --text-faint: #707070;
-  --text-highlight-bg: #89632a;
+  --text-highlight-bg: light-dark(#89632a, #89632a);
   --text-muted: #a0a0a0;
   --text-normal: #dadada;
   -webkit-tap-highlight-color: #ffffff00;
@@ -1252,7 +1255,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: #59563b;
+            background-color: light-dark(#fdecc8, #89632a);
             color: #ffffffe6;
             padding: 0px 3px 2px 3px;
           }

@@ -6,6 +6,7 @@
   --blurple-inverted: light-dark(#f8f9fd, #f8f9fd);
   --blurple-inverted-active: light-dark(#e3e7f8, #e3e7f8);
   --blurple-st: light-dark(#7289da80, #7289da80);
+  --brand-500: light-dark(#7289da, #7289da);
   --brand-experiment: light-dark(#7289da, #7289da);
   --brand-experiment-05a: light-dark(#7289da0d, #7289da0d);
   --brand-experiment-100: light-dark(#f8f9fd, #f8f9fd);
@@ -412,6 +413,7 @@
   --d8ylGv: 34.5, 100%, 7.8%;
   --dtm-08-dm-list-tab-icon-background: light-dark(#0008, #0004);
   --green: light-dark(#43b581, #43b581);
+  --green-360: light-dark(#43b581, #43b581);
   --green-active: light-dark(#369167, #369167);
   --green-hover: light-dark(#3ca374, #3ca374);
   --green-inverted: light-dark(#f6fbf9, #f6fbf9);
@@ -422,7 +424,12 @@
   --page-border: 9px solid transparent;
   --page-margin: 1px auto -8px;
   --pdfViewer-padding-bottom: 0;
+  --premium-tier-2-pink-for-gradients: light-dark(#b473f5, #b473f5);
+  --premium-tier-2-pink-for-gradients-2: light-dark(#cb83cf, #cb83cf);
+  --premium-tier-2-purple-for-gradients: light-dark(#e292aa, #e292aa);
+  --premium-tier-2-purple-for-gradients-2: light-dark(#cb83cf, #cb83cf);
   --red: light-dark(#f04747, #f04747);
+  --red-400: light-dark(#f04747, #f04747);
   --red-active: light-dark(#c03939, #c03939);
   --red-hover: light-dark(#d84040, #d84040);
   --red-inverted: light-dark(#fef6f6, #fef6f6);
@@ -432,6 +439,9 @@
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
   --spreadHorizontalWrapped-margin-LR: -3.5px;
+  --status-green-600: light-dark(#43b581, #43b581);
+  --status-red-500: light-dark(#f04747, #f04747);
+  --status-yellow-500: light-dark(#faa61a, #faa61a);
   --viewer-container-height: 0;
   --window-background:
     linear-gradient(to right, #ffffff66, #0000001a, #ffffff33), #4580c4;
@@ -484,6 +494,8 @@
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
   --yellow: light-dark(#faa61a, #faa61a);
+  --yellow-300: light-dark(#faa61a, #faa61a);
+  --yellow-360: light-dark(#faa61a, #faa61a);
   --yellow-hover: light-dark(#e19517, #e19517);
   --yellow-inverted: light-dark(#fffbf4, #fffbf4);
   --yellow-inverted-active: light-dark(#feedd1, #feedd1);
@@ -588,7 +600,7 @@ body {
   --bold-modifier: 200;
   --bold-weight: 800;
   --border-width: 1px;
-  --brand-500: #7289da;
+  --brand-500: light-dark(#7289da, #7289da);
   --brand-experiment: light-dark(#7289da, #7289da);
   --brand-experiment-05a: light-dark(#7289da0d, #7289da0d);
   --brand-experiment-100: light-dark(#f8f9fd, #f8f9fd);
@@ -849,7 +861,7 @@ body {
   --graph-node-unresolved: #753ff3;
   --graph-text: #a3a5aa;
   --green: light-dark(#43b581, #43b581);
-  --green-360: #43b581;
+  --green-360: light-dark(#43b581, #43b581);
   --green-active: light-dark(#369167, #369167);
   --green-hover: light-dark(#3ca374, #3ca374);
   --green-inverted: light-dark(#f6fbf9, #f6fbf9);
@@ -1175,14 +1187,10 @@ body {
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
   --popover-width: 450px;
-  --premium-tier-2-pink-for-gradients: #b473f5;
-  --premium-tier-2-pink-for-gradients-2: #cb83cf;
-  --premium-tier-2-pink-for-gradients-2-hsl: 296.8, 44.2%, 66.3%;
-  --premium-tier-2-pink-for-gradients-hsl: 270, 86.7%, 70.6%;
-  --premium-tier-2-purple-for-gradients: #e292aa;
-  --premium-tier-2-purple-for-gradients-2: #cb83cf;
-  --premium-tier-2-purple-for-gradients-2-hsl: 296.8, 44.2%, 66.3%;
-  --premium-tier-2-purple-for-gradients-hsl: 342, 58%, 72.9%;
+  --premium-tier-2-pink-for-gradients: light-dark(#b473f5, #b473f5);
+  --premium-tier-2-pink-for-gradients-2: light-dark(#cb83cf, #cb83cf);
+  --premium-tier-2-purple-for-gradients: light-dark(#e292aa, #e292aa);
+  --premium-tier-2-purple-for-gradients-2: light-dark(#cb83cf, #cb83cf);
   --prompt-border-color: #545961;
   --prompt-border-width: 0.5pt;
   --prompt-input-height: 40px;
@@ -1194,7 +1202,7 @@ body {
   --radius-s: 0px;
   --radius-xl: 0px;
   --red: light-dark(#f04747, #f04747);
-  --red-400: #f04747;
+  --red-400: light-dark(#f04747, #f04747);
   --red-active: light-dark(#c03939, #c03939);
   --red-hover: light-dark(#d84040, #d84040);
   --red-inverted: light-dark(#fef6f6, #fef6f6);
@@ -1259,9 +1267,9 @@ body {
   --status-bar-position: fixed;
   --status-bar-radius: 0px 0 0 0;
   --status-bar-text-color: #b3b3b3;
-  --status-green-600: #43b581;
-  --status-red-500: #f04747;
-  --status-yellow-500: #faa61a;
+  --status-green-600: light-dark(#43b581, #43b581);
+  --status-red-500: light-dark(#f04747, #f04747);
+  --status-yellow-500: light-dark(#faa61a, #faa61a);
   --swatch-height: 24px;
   --swatch-radius: 14px;
   --swatch-shadow: inset 0 0 0 1px #ffffff26;
@@ -1403,8 +1411,8 @@ body {
   --vault-profile-font-weight: 500;
   --workspace-background-translucent: #00000099;
   --yellow: light-dark(#faa61a, #faa61a);
-  --yellow-300: #faa61a;
-  --yellow-360: #faa61a;
+  --yellow-300: light-dark(#faa61a, #faa61a);
+  --yellow-360: light-dark(#faa61a, #faa61a);
   --yellow-hover: light-dark(#e19517, #e19517);
   --yellow-inverted: light-dark(#fffbf4, #fffbf4);
   --yellow-inverted-active: light-dark(#feedd1, #feedd1);
@@ -2295,6 +2303,7 @@ svg.svg-icon {
   --blurple-inverted: #f8f9fd;
   --blurple-inverted-active: #e3e7f8;
   --blurple-st: #7289da80;
+  --brand-500: #7289da;
   --brand-experiment: #7289da;
   --brand-experiment-05a: #7289da0d;
   --brand-experiment-100: #f8f9fd;
@@ -2465,6 +2474,7 @@ svg.svg-icon {
   --editorStackWidth: 200px;
   --fileHeight: 14px;
   --green: #43b581;
+  --green-360: #43b581;
   --green-active: #369167;
   --green-hover: #3ca374;
   --green-inverted: #f6fbf9;
@@ -2488,7 +2498,16 @@ svg.svg-icon {
   --outlineLevelWidth: 40px;
   --pdf-shadow: 0 0 0 1px #555555;
   --pdf-thumbnail-shadow: 0 0 0 1px #555555;
+  --premium-tier-2-pink-for-gradients: #b473f5;
+  --premium-tier-2-pink-for-gradients-2: #cb83cf;
+  --premium-tier-2-pink-for-gradients-2-hsl: 296.8, 44.2%, 66.3%;
+  --premium-tier-2-pink-for-gradients-hsl: 270, 86.7%, 70.6%;
+  --premium-tier-2-purple-for-gradients: #e292aa;
+  --premium-tier-2-purple-for-gradients-2: #cb83cf;
+  --premium-tier-2-purple-for-gradients-2-hsl: 296.8, 44.2%, 66.3%;
+  --premium-tier-2-purple-for-gradients-hsl: 342, 58%, 72.9%;
   --red: #f04747;
+  --red-400: #f04747;
   --red-active: #c03939;
   --red-hover: #d84040;
   --red-inverted: #fef6f6;
@@ -2501,6 +2520,9 @@ svg.svg-icon {
     0px 30px 90px #00000033;
   --shadow-s:
     0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+  --status-green-600: #43b581;
+  --status-red-500: #f04747;
+  --status-yellow-500: #faa61a;
   --tabHeightEditor: 30px;
   --tabHeightEditorStack: 40px;
   --tabHeightSidebar: 30px;
@@ -2510,6 +2532,8 @@ svg.svg-icon {
   --text-selection: #8a5cf554;
   --titlebarOffset: 160px;
   --yellow: #faa61a;
+  --yellow-300: #faa61a;
+  --yellow-360: #faa61a;
   --yellow-hover: #e19517;
   --yellow-inverted: #fffbf4;
   --yellow-inverted-active: #feedd1;
@@ -2525,6 +2549,7 @@ svg.svg-icon {
   --blurple-inverted: #f8f9fd;
   --blurple-inverted-active: #e3e7f8;
   --blurple-st: #7289da80;
+  --brand-500: #7289da;
   --brand-experiment: #7289da;
   --brand-experiment-05a: #7289da0d;
   --brand-experiment-100: #f8f9fd;
@@ -2684,6 +2709,7 @@ svg.svg-icon {
   --dtm-08-worse-profile-popout-custom-status-header-text-shadow: 0 1px 1px
     #ffffff;
   --green: #43b581;
+  --green-360: #43b581;
   --green-active: #369167;
   --green-hover: #3ca374;
   --green-inverted: #f6fbf9;
@@ -2697,7 +2723,16 @@ svg.svg-icon {
     0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
+  --premium-tier-2-pink-for-gradients: #b473f5;
+  --premium-tier-2-pink-for-gradients-2: #cb83cf;
+  --premium-tier-2-pink-for-gradients-2-hsl: 296.8, 44.2%, 66.3%;
+  --premium-tier-2-pink-for-gradients-hsl: 270, 86.7%, 70.6%;
+  --premium-tier-2-purple-for-gradients: #e292aa;
+  --premium-tier-2-purple-for-gradients-2: #cb83cf;
+  --premium-tier-2-purple-for-gradients-2-hsl: 296.8, 44.2%, 66.3%;
+  --premium-tier-2-purple-for-gradients-hsl: 342, 58%, 72.9%;
   --red: #f04747;
+  --red-400: #f04747;
   --red-active: #c03939;
   --red-hover: #d84040;
   --red-inverted: #fef6f6;
@@ -2707,7 +2742,12 @@ svg.svg-icon {
     0px 30px 90px #00000033;
   --shadow-s:
     0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
+  --status-green-600: #43b581;
+  --status-red-500: #f04747;
+  --status-yellow-500: #faa61a;
   --yellow: #faa61a;
+  --yellow-300: #faa61a;
+  --yellow-360: #faa61a;
   --yellow-hover: #e19517;
   --yellow-inverted: #fffbf4;
   --yellow-inverted-active: #feedd1;

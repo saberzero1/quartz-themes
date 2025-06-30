@@ -23,9 +23,9 @@ html[saved-theme="dark"] {
     color: var(--shiki-dark);
   }
   --mono-rgb-100: 255, 255, 255;
-  --text-accent: #faa271;
+  --text-accent: #669961;
   --mono-rgb-100: 255, 255, 255;
-  --text-accent: #faa271;
+  --text-accent: #669961;
 }
 
 :root[saved-theme="light"],
@@ -151,6 +151,12 @@ html[saved-theme="light"] {
 }
 
 :root {
+  --background-modifier-border: light-dark(#262625, #262625);
+  --background-modifier-border-focus: light-dark(#3f758f, #3f758f);
+  --background-modifier-border-hover: light-dark(#262625, #262625);
+  --background-modifier-hover: light-dark(#8e8c8b29, #8e8c8b29);
+  --background-primary: light-dark(#000000, #000000);
+  --background-primary-alt: light-dark(#161616, #161616);
   --code-comment: light-dark(#aabfc9, #aabfc9);
   --code-function: light-dark(#f68d45, #feb871);
   --code-important: light-dark(hsl(268deg, 57%, 66%), hsl(268deg, 57%, 66%));
@@ -179,6 +185,10 @@ html[saved-theme="light"] {
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
+  --text-faint: light-dark(#3a3838, #3a3838);
+  --text-highlight-bg: light-dark(#669961b3, #669961b3);
+  --text-muted: light-dark(#8e8c8b, #8e8c8b);
+  --text-normal: light-dark(#c7c5c2, #c7c5c2);
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
   --text-faint: var(--color-base-50);
@@ -215,12 +225,12 @@ html {
   font-size: 16px;
 }
 body {
-  --background-modifier-border: #262625;
-  --background-modifier-border-focus: #3f758f;
-  --background-modifier-border-hover: #262625;
-  --background-modifier-hover: #8e8c8b29;
-  --background-primary: #000000;
-  --background-primary-alt: #161616;
+  --background-modifier-border: light-dark(#262625, #262625);
+  --background-modifier-border-focus: light-dark(#3f758f, #3f758f);
+  --background-modifier-border-hover: light-dark(#262625, #262625);
+  --background-modifier-hover: light-dark(#8e8c8b29, #8e8c8b29);
+  --background-primary: light-dark(#000000, #000000);
+  --background-primary-alt: light-dark(#161616, #161616);
   --bold-color: inherit;
   --bold-weight: 600;
   --checkbox-border-color: #aabfc9;
@@ -242,7 +252,7 @@ body {
   --code-tag: light-dark(#c54128, #f35a37);
   --code-value: light-dark(hsl(268deg, 57%, 66%), hsl(268deg, 57%, 66%));
   --collapse-icon-color: #aabfc9;
-  --collapse-icon-color-collapsed: #faa271;
+  --collapse-icon-color-collapsed: #669961;
   --color-accent-2: light-dark(#faa271, #fdba9a);
   --color-accent-hsl: light-dark(24.4, 90.8%, 61.8%, 24.4, 90.8%, 61.8%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
@@ -292,8 +302,8 @@ body {
   --italic-color: inherit;
   --link-color: #669961;
   --link-color-hover: #669961;
-  --link-external-color: #faa271;
-  --link-external-color-hover: #fdba9a;
+  --link-external-color: #669961;
+  --link-external-color-hover: #669961;
   --link-external-filter: none;
   --link-weight: 600;
   --p-spacing: 1rem;
@@ -303,23 +313,23 @@ body {
   --tag-border-color: #66996126;
   --tag-border-color-hover: #66996140;
   --tag-border-width: 0px;
-  --tag-color: #faa271;
-  --tag-color-hover: #faa271;
+  --tag-color: #669961;
+  --tag-color-hover: #669961;
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-radius: 2em;
   --tag-weight: inherit;
-  --text-accent: #f68d45;
-  --text-accent-hover: #fdba9a;
-  --text-faint: #3a3838;
-  --text-highlight-bg: #669961b3;
-  --text-muted: #8e8c8b;
-  --text-normal: #c7c5c2;
+  --text-accent: #669961;
+  --text-accent-hover: #669961;
+  --text-faint: light-dark(#3a3838, #3a3838);
+  --text-highlight-bg: light-dark(#669961b3, #669961b3);
+  --text-muted: light-dark(#8e8c8b, #8e8c8b);
+  --text-normal: light-dark(#c7c5c2, #c7c5c2);
   -webkit-font-smoothing: subpixel-antialiased;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: #fdfefe;
-  caret-color: #faa271;
+  caret-color: #669961;
   color: #c7c5c2;
   contain: initial;
   font-family:
@@ -1063,7 +1073,7 @@ body {
     background-color: #fafafa;
     border: 0px solid transparent;
     border-radius: 4px;
-    color: #90a4ae;
+    color: light-dark(#aabfc9, #aabfc9);
     font-family:
       "??", "SF Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
       monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
@@ -1470,7 +1480,7 @@ body {
                 background-color: transparent;
                 color: #c7c5c2;
                 &.match-tag {
-                  color: #faa271;
+                  color: #669961;
                 }
               }
             }

@@ -1,9 +1,11 @@
 :root {
   --a-row: light-dark(#00000008, #0003);
+  --active-line-color: light-dark(#f84935, #f84935);
   --alt-heading-color: light-dark(#5460ab, #8c96d9);
   --b-row: light-dark(#00000014, #00000059);
   --background-secondary-alt: light-dark(#292929, #655b53);
   --bg-hue: light-dark(230, 230);
+  --bold-color: light-dark(#d85f0e, #d85f0e);
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
   --color-accent-1: light-dark(#9873f7, #a68af9);
   --color-accent-2: light-dark(#a68af9, #c5b6fc);
@@ -29,9 +31,20 @@
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
+  --hotkey-color: light-dark(#b8ba26, #b8ba26);
   --hover-accent: light-dark(#dc388f, #ed5aa8);
+  --inline-code-color: light-dark(#b8ba26, #b8ba26);
   --interactive-accent: light-dark(#108189, #108189);
+  --interactive-accent-hover: light-dark(#d85f0e, #d85f0e);
+  --interactive-accent-hsl: light-dark(358 100% 31%, 358 100% 31%);
+  --interactive-hover: light-dark(#3b3735, #3b3735);
+  --interactive-normal: light-dark(#1f1f1f, #1f1f1f);
+  --italic-color: light-dark(#d85f0e, #d85f0e);
   --keyboard-height: 0px;
+  --link-color: light-dark(#f84935, #f84935);
+  --link-color-hover: light-dark(#d85f0e, #d85f0e);
+  --link-external-color: light-dark(#f84935, #f84935);
+  --link-external-color-hover: light-dark(#d85f0e, #d85f0e);
   --link-unresolved-color: light-dark(#6fb74e, #6fb74e);
   --loading-icon-delay: 400ms;
   --page-border: 9px solid transparent;
@@ -44,6 +57,15 @@
   --search-match-color: light-dark(#fe811b, #fabd2e);
   --secondary-accent: light-dark(#c67e3f, #da975d);
   --spreadHorizontalWrapped-margin-LR: -3.5px;
+  --tag-color: light-dark(#b8ba26, #b8ba26);
+  --tag-color-hover: light-dark(#d85f0e, #d85f0e);
+  --text-accent: light-dark(#f84935, #f84935);
+  --text-accent-hover: light-dark(#d85f0e, #d85f0e);
+  --text-faint: light-dark(#a89985, #a89985);
+  --text-gray: light-dark(#bdaf93, #bdaf93);
+  --text-muted: light-dark(#655b53, #655b53);
+  --text-normal: light-dark(#d1d1d1, #d1d1d1);
+  --text-selection: light-dark(#432324, #432324);
   --titlebar-background: light-dark(#32302f, #292929);
   --titlebar-background-focused: light-dark(#32302f, #32302f);
   --viewer-container-height: 0;
@@ -60,7 +82,7 @@ body {
   --accent-h: 258;
   --accent-l: 66%;
   --accent-s: 88%;
-  --active-line-color: #f84935;
+  --active-line-color: light-dark(#f84935, #f84935);
   --alt-heading-color: light-dark(#5460ab, #8c96d9);
   --anim-duration-fast: 140ms;
   --anim-duration-moderate: 300ms;
@@ -136,7 +158,7 @@ body {
   --blockquote-border-thickness: 8px;
   --blockquote-color: inherit;
   --blockquote-font-style: normal;
-  --bold-color: #d85f0e;
+  --bold-color: light-dark(#d85f0e, #d85f0e);
   --bold-modifier: 200;
   --bold-weight: 800;
   --border-width: 1px;
@@ -206,7 +228,7 @@ body {
   --code-value: #d4879c;
   --code-white-space: pre-wrap;
   --collapse-icon-color: #a89985;
-  --collapse-icon-color-collapsed: #a68af9;
+  --collapse-icon-color-collapsed: #f84935;
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
   --color-accent-1: light-dark(#9873f7, #a68af9);
   --color-accent-2: light-dark(#a68af9, #c5b6fc);
@@ -341,7 +363,7 @@ body {
   --graph-line: #7d6f64;
   --graph-node: #655b53;
   --graph-node-attachment: #fabd2e;
-  --graph-node-focused: #a68af9;
+  --graph-node-focused: #f84935;
   --graph-node-tag: #b8ba26;
   --graph-node-unresolved: #a89985;
   --graph-text: #ebdbb2;
@@ -392,12 +414,12 @@ body {
   --heading-letter-spacing: 1.5px;
   --heading-scaling: 1;
   --heading-spacing: 0rem;
-  --hotkey-color: #b8ba26;
+  --hotkey-color: light-dark(#b8ba26, #b8ba26);
   --hover-accent: light-dark(#dc388f, #ed5aa8);
   --hr-color: #a89985;
   --hr-thickness: 2px;
   --icon-color: #655b53;
-  --icon-color-active: #a68af9;
+  --icon-color-active: #f84935;
   --icon-color-focused: #ebdbb2;
   --icon-color-hover: #d85f0e;
   --icon-font: "Material Icons (Filled)";
@@ -427,7 +449,7 @@ body {
   --indentation-guide-source-indent: 0.25em;
   --indentation-guide-width: 1.5px;
   --indentation-guide-width-active: 1.5px;
-  --inline-code-color: #b8ba26;
+  --inline-code-color: light-dark(#b8ba26, #b8ba26);
   --inline-title-color: #bdaf93;
   --inline-title-font: "Optima", "Recursive S";
   --inline-title-line-height: 1.2;
@@ -443,11 +465,11 @@ body {
   --input-placeholder-color: #a89985;
   --input-radius: 5px;
   --interactive-accent: light-dark(#108189, #108189);
-  --interactive-accent-hover: #d85f0e;
-  --interactive-accent-hsl: 358 100% 31%;
-  --interactive-hover: #3b3735;
-  --interactive-normal: #1f1f1f;
-  --italic-color: #d85f0e;
+  --interactive-accent-hover: light-dark(#d85f0e, #d85f0e);
+  --interactive-accent-hsl: light-dark(358 100% 31%, 358 100% 31%);
+  --interactive-hover: light-dark(#3b3735, #3b3735);
+  --interactive-normal: light-dark(#1f1f1f, #1f1f1f);
+  --italic-color: light-dark(#d85f0e, #d85f0e);
   --italic-weight: inherit;
   --layer-cover: 5;
   --layer-dragged-item: 80;
@@ -461,13 +483,13 @@ body {
   --layer-tooltip: 70;
   --line-height-normal: 1.5;
   --line-height-tight: 1.2;
-  --link-color: #a68af9;
-  --link-color-hover: #d85f0e;
+  --link-color: light-dark(#f84935, #f84935);
+  --link-color-hover: light-dark(#d85f0e, #d85f0e);
   --link-decoration: underline;
   --link-decoration-hover: underline;
   --link-decoration-thickness: auto;
-  --link-external-color: #a68af9;
-  --link-external-color-hover: #d85f0e;
+  --link-external-color: light-dark(#f84935, #f84935);
+  --link-external-color-hover: light-dark(#d85f0e, #d85f0e);
   --link-external-decoration: underline;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
@@ -486,7 +508,7 @@ body {
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
   --list-marker-color: #a89985;
-  --list-marker-color-collapsed: #a68af9;
+  --list-marker-color-collapsed: #f84935;
   --list-marker-color-hover: #655b53;
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
@@ -577,7 +599,7 @@ body {
   --nav-item-children-margin-start: 12px;
   --nav-item-children-padding-start: 4px;
   --nav-item-color: #655b53;
-  --nav-item-color-active: #a68af9;
+  --nav-item-color-active: #f84935;
   --nav-item-color-highlighted: #d85f0e;
   --nav-item-color-hover: #d85f0e;
   --nav-item-color-selected: #ebdbb2;
@@ -604,7 +626,7 @@ body {
   --pill-color: #655b53;
   --pill-color-hover: #ebdbb2;
   --pill-color-remove: #a89985;
-  --pill-color-remove-hover: #a68af9;
+  --pill-color-remove-hover: #f84935;
   --pill-decoration: none;
   --pill-decoration-hover: none;
   --pill-focus-left-adjust: -4px;
@@ -722,7 +744,7 @@ body {
   --tab-text-color-focused: #655b53;
   --tab-text-color-focused-active: #655b53;
   --tab-text-color-focused-active-current: #ebdbb2;
-  --tab-text-color-focused-highlighted: #a68af9;
+  --tab-text-color-focused-highlighted: #f84935;
   --tab-width: 200px;
   --table-add-button-background: transparent;
   --table-add-button-border-color: #4f4945;
@@ -766,8 +788,8 @@ body {
   --tag-border-color: #010000;
   --tag-border-color-hover: #010000;
   --tag-border-width: 0;
-  --tag-color: #b8ba26;
-  --tag-color-hover: #d85f0e;
+  --tag-color: light-dark(#b8ba26, #b8ba26);
+  --tag-color-hover: light-dark(#d85f0e, #d85f0e);
   --tag-decoration: none;
   --tag-decoration-hover: underline;
   --tag-padding-x: 0;
@@ -775,18 +797,18 @@ body {
   --tag-radius: 2em;
   --tag-size: 1em;
   --tag-weight: inherit;
-  --text-accent: #f84935;
-  --text-accent-hover: #d85f0e;
+  --text-accent: light-dark(#f84935, #f84935);
+  --text-accent-hover: light-dark(#d85f0e, #d85f0e);
   --text-error: #f84935;
-  --text-faint: #a89985;
-  --text-gray: #bdaf93;
+  --text-faint: light-dark(#a89985, #a89985);
+  --text-gray: light-dark(#bdaf93, #bdaf93);
   --text-highlight-bg: #ffd00066;
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: #655b53;
-  --text-normal: #d1d1d1;
+  --text-muted: light-dark(#655b53, #655b53);
+  --text-normal: light-dark(#d1d1d1, #d1d1d1);
   --text-on-accent: #fff;
   --text-on-accent-inverted: #000000;
-  --text-selection: #432324;
+  --text-selection: light-dark(#432324, #432324);
   --text-success: #b8ba26;
   --text-warning: #fe811b;
   --thin-border: 1px solid #a89985;
@@ -825,7 +847,7 @@ body {
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: #292929;
-  caret-color: #a68af9;
+  caret-color: #f84935;
   color: #ebdbb2;
   contain: initial;
   font-family:
@@ -998,7 +1020,7 @@ h6 {
 .markdown-rendered button.copy-code-button {
   background-color: transparent;
   box-shadow: none;
-  color: #655b53;
+  color: light-dark(light-dark(#5c5c5c, #b3b3b3), light-dark(#5c5c5c, #b3b3b3));
   font-family:
     "??",
     "Recursive S",
@@ -1049,7 +1071,7 @@ h6 {
   align-items: flex-start;
   background-color: #9e9e9e26;
   border-bottom: 1.5px solid #9e9e9e40;
-  color: #655b53;
+  color: light-dark(light-dark(#5c5c5c, #b3b3b3), light-dark(#5c5c5c, #b3b3b3));
   display: flex;
   font-size: 110%;
   gap: 4px;
@@ -1296,7 +1318,7 @@ input.prompt-input {
 
 .suggestion-item.is-selected {
   background-color: #32302f;
-  color: #a68af9;
+  color: #f84935;
 }
 
 .suggestion-highlight {
@@ -1312,7 +1334,7 @@ a.tag {
   background-color: #010000;
   border: 2px solid #a89985;
   border-radius: 0;
-  color: #ebdbb2;
+  color: light-dark(light-dark(#c67e3f, #da975d), light-dark(#c67e3f, #da975d));
   font-size: 0.875em;
   font-weight: inherit;
   line-height: 1;
@@ -1392,13 +1414,13 @@ input[type="search"] {
 
 .nav-file-title.is-active {
   background-color: #32302f;
-  color: #a68af9;
+  color: #f84935;
   font-weight: inherit;
 }
 
 .nav-folder-title.is-active {
   background-color: #32302f;
-  color: #a68af9;
+  color: #f84935;
   font-weight: inherit;
 }
 
@@ -1451,7 +1473,7 @@ input[type="search"] {
 
 .tree-item-self.is-active {
   background-color: #32302f;
-  color: #a68af9;
+  color: #f84935;
   font-weight: inherit;
 }
 
@@ -1496,7 +1518,7 @@ input[type="search"] {
 
 .tree-item-flair {
   border-radius: 0;
-  color: #a89985;
+  color: light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
   font-size: 12.8px;
   line-height: 1;
 }
@@ -1513,7 +1535,7 @@ input[type="search"] {
 }
 
 .tree-item-inner-subtext {
-  color: #a89985;
+  color: light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
   font-size: 85%;
 }
 
@@ -1556,7 +1578,7 @@ svg.svg-icon {
 
 .clickable-icon[aria-disabled="true"] {
   background-color: unset;
-  color: #655b53;
+  color: light-dark(light-dark(#5c5c5c, #b3b3b3), light-dark(#5c5c5c, #b3b3b3));
   opacity: 0.4;
 }
 
@@ -1570,7 +1592,7 @@ svg.svg-icon {
 
 .clickable-icon.is-active {
   background-color: #3b3735;
-  color: #a68af9;
+  color: #d85f0e;
   opacity: 0.65;
 }
 
@@ -1590,7 +1612,7 @@ svg.svg-icon {
 }
 
 .view-header-title-parent .view-header-breadcrumb-separator {
-  color: #a89985;
+  color: light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
   padding: 2px 1px;
 }
 
@@ -1625,7 +1647,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-focused {
-  color: #a68af9;
+  color: #f84935;
 }
 
 .graph-view.color-fill-tag {
@@ -1642,27 +1664,27 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-1 {
-  color: #655b53;
+  color: light-dark(light-dark(#5c5c5c, #b3b3b3), light-dark(#5c5c5c, #b3b3b3));
 }
 
 .graph-view.color-fill-2 {
-  color: #655b53;
+  color: light-dark(light-dark(#5c5c5c, #b3b3b3), light-dark(#5c5c5c, #b3b3b3));
 }
 
 .graph-view.color-fill-3 {
-  color: #655b53;
+  color: light-dark(light-dark(#5c5c5c, #b3b3b3), light-dark(#5c5c5c, #b3b3b3));
 }
 
 .graph-view.color-fill-4 {
-  color: #655b53;
+  color: light-dark(light-dark(#5c5c5c, #b3b3b3), light-dark(#5c5c5c, #b3b3b3));
 }
 
 .graph-view.color-fill-5 {
-  color: #655b53;
+  color: light-dark(light-dark(#5c5c5c, #b3b3b3), light-dark(#5c5c5c, #b3b3b3));
 }
 
 .graph-view.color-fill-6 {
-  color: #655b53;
+  color: light-dark(light-dark(#5c5c5c, #b3b3b3), light-dark(#5c5c5c, #b3b3b3));
 }
 
 .graph-view.color-arrow {
@@ -1671,7 +1693,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-circle {
-  color: #a68af9;
+  color: #f84935;
 }
 
 .graph-view.color-line {
@@ -1703,6 +1725,7 @@ svg.svg-icon {
 
 .theme-dark {
   --a-row: #0003;
+  --active-line-color: #f84935;
   --alt-heading-color: #8c96d9;
   --b-row: #00000059;
   --background-modifier-box-shadow: #0000004d;
@@ -1711,6 +1734,7 @@ svg.svg-icon {
   --background-secondary-alt: #655b53;
   --bg-hue: 230;
   --bg-sat: 15%;
+  --bold-color: #d85f0e;
   --color-accent: #18c1cd;
   --color-accent-1: #a68af9;
   --color-accent-2: #c5b6fc;
@@ -1747,7 +1771,9 @@ svg.svg-icon {
   --highlight-hue-1: 50;
   --highlight-mix-blend-mode: darken;
   --highlight-sla-values: 85% 40%/40%;
+  --hotkey-color: #b8ba26;
   --hover-accent: #ed5aa8;
+  --inline-code-color: #b8ba26;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
     0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
@@ -1755,9 +1781,15 @@ svg.svg-icon {
     inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
     0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
   --interactive-accent: #108189;
-  --interactive-accent-hover: #a68af9;
-  --interactive-hover: #7d6f64;
-  --interactive-normal: #655b53;
+  --interactive-accent-hover: #d85f0e;
+  --interactive-accent-hsl: 358 100% 31%;
+  --interactive-hover: #3b3735;
+  --interactive-normal: #1f1f1f;
+  --italic-color: #d85f0e;
+  --link-color: #f84935;
+  --link-color-hover: #d85f0e;
+  --link-external-color: #f84935;
+  --link-external-color-hover: #d85f0e;
   --link-unresolved-color: #6fb74e;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
@@ -1770,8 +1802,15 @@ svg.svg-icon {
     0px 30px 90px #00000033;
   --shadow-s:
     0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
-  --text-accent: #a68af9;
-  --text-selection: #010101;
+  --tag-color: #b8ba26;
+  --tag-color-hover: #d85f0e;
+  --text-accent: #f84935;
+  --text-accent-hover: #d85f0e;
+  --text-faint: #a89985;
+  --text-gray: #bdaf93;
+  --text-muted: #655b53;
+  --text-normal: #d1d1d1;
+  --text-selection: #432324;
   --titlebar-background: #292929;
   --titlebar-background-focused: #32302f;
   --vim-cursor-bg: #000;
@@ -1782,6 +1821,7 @@ svg.svg-icon {
 
 .theme-light {
   --a-row: #00000008;
+  --active-line-color: #f84935;
   --alt-heading-color: #5460ab;
   --b-row: #00000014;
   --background-modifier-box-shadow: #0000001a;
@@ -1789,6 +1829,7 @@ svg.svg-icon {
   --background-secondary-alt: #292929;
   --bg-hue: 230;
   --bg-sat: 25%;
+  --bold-color: #d85f0e;
   --color-accent: #1396a0;
   --color-accent-1: #9873f7;
   --color-accent-2: #a68af9;
@@ -1825,7 +1866,9 @@ svg.svg-icon {
   --highlight-hue-1: 50;
   --highlight-mix-blend-mode: darken;
   --highlight-sla-values: 85% 70%/40%;
+  --hotkey-color: #b8ba26;
   --hover-accent: #dc388f;
+  --inline-code-color: #b8ba26;
   --input-shadow:
     inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008,
     0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
@@ -1833,6 +1876,15 @@ svg.svg-icon {
     inset 0 0 0 1px #0000002b, 0 2px 3px 0 #0000001a, 0 1px 1.5px 0 #00000008,
     0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
   --interactive-accent: #108189;
+  --interactive-accent-hover: #d85f0e;
+  --interactive-accent-hsl: 358 100% 31%;
+  --interactive-hover: #3b3735;
+  --interactive-normal: #1f1f1f;
+  --italic-color: #d85f0e;
+  --link-color: #f84935;
+  --link-color-hover: #d85f0e;
+  --link-external-color: #f84935;
+  --link-external-color-hover: #d85f0e;
   --link-unresolved-color: #6fb74e;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
@@ -1843,6 +1895,15 @@ svg.svg-icon {
     0px 30px 90px #00000033;
   --shadow-s:
     0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
+  --tag-color: #b8ba26;
+  --tag-color-hover: #d85f0e;
+  --text-accent: #f84935;
+  --text-accent-hover: #d85f0e;
+  --text-faint: #a89985;
+  --text-gray: #bdaf93;
+  --text-muted: #655b53;
+  --text-normal: #d1d1d1;
+  --text-selection: #432324;
   --titlebar-background: #32302f;
   --titlebar-background-focused: #32302f;
   --vim-cursor-bg: #404040;

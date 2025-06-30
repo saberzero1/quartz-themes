@@ -22,10 +22,12 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
+
+  --checkbox-color-hover: #f8f8f299;
   --mono-rgb-100: 255, 255, 255;
-  --text-accent: #a68af9;
+
+  --checkbox-color-hover: #f8f8f299;
   --mono-rgb-100: 255, 255, 255;
-  --text-accent: #a68af9;
 }
 
 :root[saved-theme="light"],
@@ -43,7 +45,11 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
+
+  --checkbox-color-hover: #f8f8f299;
   --mono-rgb-100: 0, 0, 0;
+
+  --checkbox-color-hover: #f8f8f299;
   --mono-rgb-100: 0, 0, 0;
 }
 
@@ -186,6 +192,9 @@ html[saved-theme="light"] {
 }
 
 :root {
+  --background-primary: light-dark(#21212c, #21212c);
+  --background-primary-alt: light-dark(#1c1d26, #1c1d26);
+  --code-normal: light-dark(#df80ff, #df80ff);
   --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
@@ -204,6 +213,16 @@ html[saved-theme="light"] {
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
+  --hr-color: light-dark(#ffca80, #ffca80);
+  --link-color: light-dark(#ffca80, #ffca80);
+  --link-color-hover: light-dark(#ffeacc, #ffeacc);
+  --link-external-color: light-dark(#8bff80, #8bff80);
+  --link-external-color-hover: light-dark(#d0ffcc, #d0ffcc);
+  --text-accent: light-dark(#ff80c0, #ff80c0);
+  --text-accent-hover: light-dark(#ffcce6, #ffcce6);
+  --text-faint: light-dark(#f8f8f299, #f8f8f299);
+  --text-highlight-bg: light-dark(#ffff801a, #ffff801a);
+  --text-normal: light-dark(#f8f8f2, #f8f8f2);
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
   --text-faint: var(--color-base-50);
@@ -240,18 +259,18 @@ html {
   font-size: 16px;
 }
 body {
-  --background-modifier-border: transparent;
-  --background-modifier-border-focus: transparent;
-  --background-modifier-border-hover: transparent;
+  --background-modifier-border: #363636;
+  --background-modifier-border-focus: #555555;
+  --background-modifier-border-hover: #3f3f3f;
   --background-modifier-hover: #ffffff11;
-  --background-primary: #21212c;
-  --background-primary-alt: #1c1d26;
+  --background-primary: light-dark(#21212c, #21212c);
+  --background-primary-alt: light-dark(#1c1d26, #1c1d26);
   --bold-color: inherit;
   --bold-weight: 800;
   --checkbox-border-color: #f8f8f299;
   --checkbox-border-color-hover: #f8f8f299;
-  --checkbox-color: #8a5cf5;
-  --checkbox-color-hover: #f8f8f299;
+  --checkbox-color: #ff80c0;
+  --checkbox-color-hover: #ffca80;
   --checkbox-marker-color: #21212c;
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
@@ -260,14 +279,14 @@ body {
   --code-function: #e0de71;
   --code-important: #e9973f;
   --code-keyword: #fa99cd;
-  --code-normal: #df80ff;
+  --code-normal: light-dark(#df80ff, #df80ff);
   --code-property: #53dfdd;
   --code-punctuation: #f8f8f299;
   --code-string: #44cf6e;
   --code-tag: #fb464c;
   --code-value: #a882ff;
   --collapse-icon-color: #f8f8f299;
-  --collapse-icon-color-collapsed: #a68af9;
+  --collapse-icon-color-collapsed: #ff80c0;
   --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
@@ -302,17 +321,17 @@ body {
   --h1-color: inherit;
   --h1-font: inherit;
   --h3-line-height: 1.3;
-  --hr-color: #ffca80;
+  --hr-color: light-dark(#ffca80, #ffca80);
   --hr-thickness: 2px;
   --icon-color: #f8f8f299;
   --inline-title-color: inherit;
   --inline-title-font: inherit;
   --interactive-accent-hsl: 258, 88%, 66%;
   --italic-color: inherit;
-  --link-color: #ffca80;
-  --link-color-hover: #ffeacc;
-  --link-external-color: #8bff80;
-  --link-external-color-hover: #d0ffcc;
+  --link-color: light-dark(#ffca80, #ffca80);
+  --link-color-hover: light-dark(#ffeacc, #ffeacc);
+  --link-external-color: light-dark(#8bff80, #8bff80);
+  --link-external-color-hover: light-dark(#d0ffcc, #d0ffcc);
   --link-external-filter: none;
   --link-weight: 600;
   --p-spacing: 1rem;
@@ -322,22 +341,22 @@ body {
   --tag-border-color: #8a5cf526;
   --tag-border-color-hover: #8a5cf526;
   --tag-border-width: 0px;
-  --tag-color: #a68af9;
-  --tag-color-hover: #a68af9;
+  --tag-color: #ff80c0;
+  --tag-color-hover: #ff80c0;
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-radius: 2em;
   --tag-weight: inherit;
-  --text-accent: #ff80c0;
-  --text-accent-hover: #ffcce6;
-  --text-faint: #f8f8f299;
-  --text-highlight-bg: #ffff801a;
-  --text-muted: #f8f8f299;
-  --text-normal: #f8f8f2;
+  --text-accent: light-dark(#ff80c0, #ff80c0);
+  --text-accent-hover: light-dark(#ffcce6, #ffcce6);
+  --text-faint: light-dark(#f8f8f299, #f8f8f299);
+  --text-highlight-bg: light-dark(#ffff801a, #ffff801a);
+  --text-muted: #b3b3b3;
+  --text-normal: light-dark(#f8f8f2, #f8f8f2);
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: #21212c;
-  caret-color: #a68af9;
+  caret-color: #ff80c0;
   color: #f8f8f2;
   contain: initial;
   font-family:
@@ -1018,7 +1037,7 @@ body {
     background-color: #1c1d26;
     border: 0px solid transparent;
     border-radius: 4px;
-    color: #df80ff;
+    color: light-dark(#df80ff, #df80ff);
     font-family:
       "??", "Fira Code", monospace, ui-monospace, SFMono-Regular,
       "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono",
@@ -1116,7 +1135,7 @@ body {
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
-        color: #8a5cf5;
+        color: #ff80c0;
         text-overflow: ellipsis;
         position: relative;
         & > svg {

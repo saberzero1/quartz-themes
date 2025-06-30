@@ -932,9 +932,9 @@
 
 :root {
   --accent-color: light-dark(#81a1c1, #81a1c1);
-  --accent-h: light-dark(210, 210);
-  --accent-l: light-dark(63%, 63%);
-  --accent-s: light-dark(34%, 34%);
+  --accent-h: light-dark(210, light-dark(210, 210));
+  --accent-l: light-dark(63%, light-dark(63%, 63%));
+  --accent-s: light-dark(34%, light-dark(34%, 34%));
   --background-secondary-alt: light-dark(#ffffff, #d8dee9);
   --color-accent: light-dark(#81a1c1, #81a1c1);
   --color-accent-1: light-dark(#90aec9, #a0bbd1);
@@ -1642,9 +1642,9 @@
 
 body {
   --accent-color: light-dark(#81a1c1, #81a1c1);
-  --accent-h: light-dark(210, 210);
-  --accent-l: light-dark(63%, 63%);
-  --accent-s: light-dark(34%, 34%);
+  --accent-h: light-dark(210, light-dark(210, 210));
+  --accent-l: light-dark(63%, light-dark(63%, 63%));
+  --accent-s: light-dark(34%, light-dark(34%, 34%));
   --anim-duration-fast: 140ms;
   --anim-duration-moderate: 300ms;
   --anim-duration-none: 0;
@@ -1794,20 +1794,14 @@ body {
   --color-base-50: light-dark(#ababab, #666666);
   --color-base-60: light-dark(#707070, #999999);
   --color-base-70: light-dark(#5c5c5c, #b3b3b3);
-  --color-blue: #6199bf;
-  --color-blue-rgb: 97, 153, 191;
+  --color-blue: light-dark(#086ddd, #027aff);
   --color-cyan: light-dark(#00bfbc, #53dfdd);
-  --color-green: #a3be8c;
-  --color-green-rgb: 163, 190, 140;
-  --color-orange: #d08770;
-  --color-orange-rgb: 208, 135, 112;
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
   --color-pink: light-dark(#d53984, #fa99cd);
-  --color-purple: #b48ead;
-  --color-purple-rgb: 180, 142, 173;
-  --color-red: #bf616a;
-  --color-red-rgb: 191, 97, 106;
-  --color-yellow: #ebcb8b;
-  --color-yellow-rgb: 235, 203, 139;
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -2943,12 +2937,28 @@ body.is-translucent {
 .is-flashing {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      ),
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      )
     ),
     light-dark(
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      ),
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      )
     )
   );
   border-radius: 4px;
@@ -4468,12 +4478,28 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 .inline-title {
   color: light-dark(
     light-dark(
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      ),
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      )
     ),
     light-dark(
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      ),
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      )
     )
   );
   margin-block-end: 0.5em;
@@ -4509,22 +4535,54 @@ body:not(.show-view-header):not(.is-phone) .view-header {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     )
   );
@@ -4557,22 +4615,54 @@ body:not(.show-view-header):not(.is-phone) .view-header {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     )
   );
@@ -4605,22 +4695,54 @@ body:not(.show-view-header):not(.is-phone) .view-header {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     )
   );
@@ -4653,22 +4775,54 @@ body:not(.show-view-header):not(.is-phone) .view-header {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     )
   );
@@ -4700,22 +4854,54 @@ body:not(.show-view-header):not(.is-phone) .view-header {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     )
   );
@@ -4747,22 +4933,54 @@ body:not(.show-view-header):not(.is-phone) .view-header {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     )
   );
@@ -4894,12 +5112,28 @@ body:not(.show-inline-title) .inline-title:not([data-level]) {
   border-bottom: 2px solid
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     );
   box-sizing: border-box;
@@ -6124,12 +6358,28 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
 .community-item .suggestion-highlight {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      ),
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      )
     ),
     light-dark(
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      ),
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      )
     )
   );
 }
@@ -6684,12 +6934,28 @@ body:not(.is-mobile)
   border-top: 2px solid
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     );
   display: flex;
@@ -7128,12 +7394,28 @@ body.is-phone .view-header-nav-buttons {
   border-bottom: 2px solid
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     );
   display: flex;
@@ -7297,12 +7579,28 @@ body.is-phone .view-header-nav-buttons {
   box-shadow: 0 0 0 2px
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     );
   color: #67819a;
@@ -7313,12 +7611,28 @@ body.is-phone .view-header-nav-buttons {
     inset 0 0 0 2px
       light-dark(
         light-dark(
-          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+          hsl(
+            light-dark(210, light-dark(210, 210)),
+            light-dark(34%, light-dark(34%, 34%)),
+            light-dark(63%, light-dark(63%, 63%))
+          ),
+          hsl(
+            light-dark(210, light-dark(210, 210)),
+            light-dark(34%, light-dark(34%, 34%)),
+            light-dark(63%, light-dark(63%, 63%))
+          )
         ),
         light-dark(
-          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+          hsl(
+            light-dark(210, light-dark(210, 210)),
+            light-dark(34%, light-dark(34%, 34%)),
+            light-dark(63%, light-dark(63%, 63%))
+          ),
+          hsl(
+            light-dark(210, light-dark(210, 210)),
+            light-dark(34%, light-dark(34%, 34%)),
+            light-dark(63%, light-dark(63%, 63%))
+          )
         )
       ),
     0 0 0 0 #ffffff;
@@ -7329,12 +7643,28 @@ body.is-phone .view-header-nav-buttons {
     inset 0 0 0 2px
       light-dark(
         light-dark(
-          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+          hsl(
+            light-dark(210, light-dark(210, 210)),
+            light-dark(34%, light-dark(34%, 34%)),
+            light-dark(63%, light-dark(63%, 63%))
+          ),
+          hsl(
+            light-dark(210, light-dark(210, 210)),
+            light-dark(34%, light-dark(34%, 34%)),
+            light-dark(63%, light-dark(63%, 63%))
+          )
         ),
         light-dark(
-          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+          hsl(
+            light-dark(210, light-dark(210, 210)),
+            light-dark(34%, light-dark(34%, 34%)),
+            light-dark(63%, light-dark(63%, 63%))
+          ),
+          hsl(
+            light-dark(210, light-dark(210, 210)),
+            light-dark(34%, light-dark(34%, 34%)),
+            light-dark(63%, light-dark(63%, 63%))
+          )
         )
       ),
     0 0 0 0 #ffffff;
@@ -7885,12 +8215,28 @@ body > .workspace-split {
     -1px 0 0 0
       light-dark(
         light-dark(
-          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+          hsl(
+            light-dark(210, light-dark(210, 210)),
+            light-dark(34%, light-dark(34%, 34%)),
+            light-dark(63%, light-dark(63%, 63%))
+          ),
+          hsl(
+            light-dark(210, light-dark(210, 210)),
+            light-dark(34%, light-dark(34%, 34%)),
+            light-dark(63%, light-dark(63%, 63%))
+          )
         ),
         light-dark(
-          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-          hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+          hsl(
+            light-dark(210, light-dark(210, 210)),
+            light-dark(34%, light-dark(34%, 34%)),
+            light-dark(63%, light-dark(63%, 63%))
+          ),
+          hsl(
+            light-dark(210, light-dark(210, 210)),
+            light-dark(34%, light-dark(34%, 34%)),
+            light-dark(63%, light-dark(63%, 63%))
+          )
         )
       ),
     -8px 0 8px 0 #0000000d;
@@ -10338,8 +10684,16 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .modal .modal-nav-action.mod-cta {
   color: light-dark(
-    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    hsl(
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%))
+    ),
+    hsl(
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%))
+    )
   );
   font-weight: 600;
   inset-inline-end: 0;
@@ -14168,22 +14522,54 @@ h1 {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     )
   );
@@ -14216,22 +14602,54 @@ h2 {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     )
   );
@@ -14264,22 +14682,54 @@ h3 {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     )
   );
@@ -14312,22 +14762,54 @@ h4 {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     )
   );
@@ -14360,22 +14842,54 @@ h5 {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     )
   );
@@ -14408,22 +14922,54 @@ h6 {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     )
   );
@@ -14456,22 +15002,54 @@ h6 {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     )
   );
@@ -14510,22 +15088,54 @@ h1 a {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     )
   );
@@ -14564,22 +15174,54 @@ h2 a {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     )
   );
@@ -14618,22 +15260,54 @@ h3 a {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     )
   );
@@ -14672,22 +15346,54 @@ h4 a {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     )
   );
@@ -14726,22 +15432,54 @@ h5 a {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     )
   );
@@ -14801,22 +15539,54 @@ h6 a {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     )
   );
@@ -14847,22 +15617,54 @@ h6 a {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     )
   );
@@ -14917,22 +15719,54 @@ h6 a {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     )
   );
@@ -14963,22 +15797,54 @@ h6 a {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     )
   );
@@ -15033,22 +15899,54 @@ h6 a {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     )
   );
@@ -15079,22 +15977,54 @@ h6 a {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     )
   );
@@ -15149,22 +16079,54 @@ h6 a {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     )
   );
@@ -15194,22 +16156,54 @@ h6 a {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     )
   );
@@ -15263,22 +16257,54 @@ h6 a {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     )
   );
@@ -15308,22 +16334,54 @@ h6 a {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     )
   );
@@ -15377,22 +16435,54 @@ h6 a {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     )
   );
@@ -15423,22 +16513,54 @@ h6 a {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     )
   );
@@ -15759,15 +16881,31 @@ ol > li {
 
 ol > li::marker {
   color: light-dark(
-    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    hsl(
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%))
+    ),
+    hsl(
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%))
+    )
   );
 }
 
 ul > li::marker {
   color: light-dark(
-    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    hsl(
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%))
+    ),
+    hsl(
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%))
+    )
   );
 }
 
@@ -15870,8 +17008,16 @@ ul > li.is-collapsed::marker {
 
 .cm-s-obsidian .cm-formatting-list {
   color: light-dark(
-    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    hsl(
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%))
+    ),
+    hsl(
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%))
+    )
   );
 }
 
@@ -15944,14 +17090,30 @@ ul > li.is-collapsed::marker {
 
 .list-bullet:after {
   background-color: light-dark(
-    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    hsl(
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%))
+    ),
+    hsl(
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%))
+    )
   );
   border: none;
   border-radius: 50%;
   color: light-dark(
-    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    hsl(
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%))
+    ),
+    hsl(
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%))
+    )
   );
   content: "\200B";
   height: 0.3em;
@@ -17265,12 +18427,28 @@ em {
 .markdown-rendered mark {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      ),
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      )
     ),
     light-dark(
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      ),
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      )
     )
   );
   color: #47586a;
@@ -17283,12 +18461,28 @@ em {
 .cm-s-obsidian span.cm-formatting-highlight {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      ),
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      )
     ),
     light-dark(
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      ),
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      )
     )
   );
   color: #47586a;
@@ -17297,12 +18491,28 @@ em {
 .cm-s-obsidian span.cm-highlight {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      ),
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      )
     ),
     light-dark(
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      ),
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      )
     )
   );
   color: #47586a;
@@ -17504,22 +18714,54 @@ em {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       ),
       light-dark(
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-        hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        ),
+        hsl(
+          light-dark(210, light-dark(210, 210)),
+          light-dark(34%, light-dark(34%, 34%)),
+          light-dark(63%, light-dark(63%, 63%))
+        )
       )
     )
   );
@@ -19877,12 +21119,28 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 .search-result-file-matched-text {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      ),
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      )
     ),
     light-dark(
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      ),
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      )
     )
   );
   color: #47586a;
@@ -20913,19 +22171,27 @@ body.theme-dark {
 .canvas-selection {
   background-color: hsla(
     light-dark(
-      light-dark(210, 210),
-      light-dark(34%, 34%),
-      light-dark(63%, 63%),
-      light-dark(210, 210),
-      light-dark(34%, 34%),
-      light-dark(63%, 63%)
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%)),
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%))
     ),
     0.1
   );
   border: 2px solid
     light-dark(
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      ),
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      )
     );
   pointer-events: none;
   position: absolute;
@@ -20935,23 +22201,23 @@ body.theme-dark {
 .canvas-selection.mod-group-selection {
   background-color: hsla(
     light-dark(
-      light-dark(210, 210),
-      light-dark(34%, 34%),
-      light-dark(63%, 63%),
-      light-dark(210, 210),
-      light-dark(34%, 34%),
-      light-dark(63%, 63%)
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%)),
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%))
     ),
     0.03
   );
   border-color: hsla(
     light-dark(
-      light-dark(210, 210),
-      light-dark(34%, 34%),
-      light-dark(63%, 63%),
-      light-dark(210, 210),
-      light-dark(34%, 34%),
-      light-dark(63%, 63%)
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%)),
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%))
     ),
     0.3
   );
@@ -21030,8 +22296,16 @@ body.theme-dark {
 @media (hover: hover) {
   .canvas-card-menu .canvas-card-menu-button:hover {
     color: light-dark(
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      ),
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      )
     );
   }
 }
@@ -21104,8 +22378,16 @@ body.theme-dark {
 
 .canvas-control-item.is-active {
   color: light-dark(
-    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    hsl(
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%))
+    ),
+    hsl(
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%))
+    )
   );
 }
 
@@ -21276,8 +22558,16 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 
 .canvas-node.is-selected .canvas-node-container {
   border-color: light-dark(
-    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    hsl(
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%))
+    ),
+    hsl(
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%))
+    )
   );
   box-shadow:
     0px 0.5px 1px 0.5px #0000001a,
@@ -21286,8 +22576,16 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 
 .canvas-node.is-focused .canvas-node-container {
   border-color: light-dark(
-    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    hsl(
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%))
+    ),
+    hsl(
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%))
+    )
   );
   box-shadow:
     0px 0.5px 1px 0.5px #0000001a,
@@ -21346,19 +22644,27 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 .canvas-node.is-dummy .canvas-node-container {
   background-color: hsla(
     light-dark(
-      light-dark(210, 210),
-      light-dark(34%, 34%),
-      light-dark(63%, 63%),
-      light-dark(210, 210),
-      light-dark(34%, 34%),
-      light-dark(63%, 63%)
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%)),
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%))
     ),
     0.2
   );
   border: 4px solid
     light-dark(
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      ),
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      )
     );
   box-shadow: 0px 2px 10px #00000026;
 }
@@ -21634,8 +22940,16 @@ body.is-mobile .canvas-node-resizer {
   background-color: #ffffff;
   border: 2px solid
     light-dark(
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      ),
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      )
     );
   border-radius: 3px;
   display: block;
@@ -21651,8 +22965,16 @@ body.is-mobile .canvas-node-resizer {
   background-color: #ffffff;
   border: 2px solid
     light-dark(
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      ),
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      )
     );
   border-radius: 3px;
   display: block;
@@ -21668,8 +22990,16 @@ body.is-mobile .canvas-node-resizer {
   background-color: #ffffff;
   border: 2px solid
     light-dark(
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      ),
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      )
     );
   border-radius: 3px;
   display: block;
@@ -21685,8 +23015,16 @@ body.is-mobile .canvas-node-resizer {
   background-color: #ffffff;
   border: 2px solid
     light-dark(
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      ),
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      )
     );
   border-radius: 3px;
   display: block;
@@ -21725,8 +23063,16 @@ body.is-mobile .canvas-node-resizer {
 
 .canvas-node-connection-point::after {
   background-color: light-dark(
-    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    hsl(
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%))
+    ),
+    hsl(
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%))
+    )
   );
   border: 3px solid transparent;
   border-radius: 50%;
@@ -21762,16 +23108,32 @@ body.is-mobile .canvas-node-resizer {
 
 .canvas-snaps line {
   stroke: light-dark(
-    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    hsl(
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%))
+    ),
+    hsl(
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%))
+    )
   );
   stroke-width: 1px;
 }
 
 .canvas-snaps circle {
   fill: light-dark(
-    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    hsl(
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%))
+    ),
+    hsl(
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%))
+    )
   );
 }
 
@@ -22007,19 +23369,27 @@ body.is-mobile .canvas-node-resizer {
 .canvas-placeholder-message {
   background: hsla(
     light-dark(
-      light-dark(210, 210),
-      light-dark(34%, 34%),
-      light-dark(63%, 63%),
-      light-dark(210, 210),
-      light-dark(34%, 34%),
-      light-dark(63%, 63%)
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%)),
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%))
     ),
     0.1
   );
   border-radius: 8px;
   color: light-dark(
-    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-    hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+    hsl(
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%))
+    ),
+    hsl(
+      light-dark(210, light-dark(210, 210)),
+      light-dark(34%, light-dark(34%, 34%)),
+      light-dark(63%, light-dark(63%, 63%))
+    )
   );
   font-size: 19.2px;
   line-height: 1.5;
@@ -22066,8 +23436,16 @@ body.is-mobile .canvas-node-resizer {
 .canvas-cursor {
   border: 5px solid
     light-dark(
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%)),
-      hsl(light-dark(210, 210), light-dark(34%, 34%), light-dark(63%, 63%))
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      ),
+      hsl(
+        light-dark(210, light-dark(210, 210)),
+        light-dark(34%, light-dark(34%, 34%)),
+        light-dark(63%, light-dark(63%, 63%))
+      )
     );
   border-radius: 5px;
   height: 1px;

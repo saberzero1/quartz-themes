@@ -1,5 +1,16 @@
 :root {
+  --background-accent: light-dark(#232136, #232136);
+  --background-modifier-border: light-dark(#e0def4, #e0def4);
+  --background-modifier-error: light-dark(#eb6f92, #eb6f92);
+  --background-modifier-error-hover: light-dark(#eb6f92, #eb6f92);
+  --background-modifier-success: light-dark(#3e8fb0, #3e8fb0);
+  --background-primary: light-dark(#232136, #232136);
+  --background-primary-alt: light-dark(#2a273f, #2a273f);
+  --background-secondary: light-dark(#312f44, #312f44);
   --background-secondary-alt: light-dark(#212121, #363636);
+  --blockquote-border: light-dark(#eb6f92, #eb6f92);
+  --border-color: light-dark(#2b2727, #2b2727);
+  --code-block: light-dark(#9ccfd8, #9ccfd8);
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
   --color-accent-1: light-dark(#9873f7, #a68af9);
   --color-accent-2: light-dark(#a68af9, #c5b6fc);
@@ -37,17 +48,43 @@
   --font-size-side-dock: 15px;
   --font-size-side-dock-title: 18px;
   --font-size-status-bar: 15px;
+  --inline-code: light-dark(#c4a7e7, #c4a7e7);
+  --interactive-accent: light-dark(#f6c177, #f6c177);
+  --interactive-accent-hover: light-dark(#ea9a97, #ea9a97);
+  --interactive-hover: light-dark(#ea9a97, #ea9a97);
+  --interactive-normal: light-dark(#f6c177, #f6c177);
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
   --page-border: 9px solid transparent;
   --page-margin: 1px auto -8px;
   --pdfViewer-padding-bottom: 0;
+  --pre-code: light-dark(#312f44, #312f44);
   --safe-area-inset-bottom: env(safe-area-inset-bottom);
   --safe-area-inset-left: env(safe-area-inset-left);
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
+  --scrollbar-active-thumb-bg: light-dark(#232136, #232136);
+  --scrollbar-bg: light-dark(#232136, #232136);
+  --scrollbar-thumb-bg: light-dark(#232136, #232136);
   --spreadHorizontalWrapped-margin-LR: -3.5px;
+  --text-accent: light-dark(#c4a7e7, #c4a7e7);
+  --text-accent-hover: light-dark(#9ccfd8, #9ccfd8);
+  --text-error: light-dark(#eb6f92, #eb6f92);
+  --text-error-hover: light-dark(#eb6f92, #eb6f92);
+  --text-faint: light-dark(#eb6f92, #eb6f92);
+  --text-highlight-bg: light-dark(#312f44, #312f44);
+  --text-muted: light-dark(#e0def4, #e0def4);
+  --text-normal: light-dark(#e0def4, #e0def4);
+  --text-on-accent: light-dark(#c4a7e7, #c4a7e7);
+  --text-selection: light-dark(#6272a4, #6272a4);
+  --text-title-h1: light-dark(#eb6f92, #eb6f92);
+  --text-title-h2: light-dark(#c4a7e7, #c4a7e7);
+  --text-title-h3: light-dark(#ea9a97, #ea9a97);
+  --text-title-h4: light-dark(#f6c177, #f6c177);
+  --text-title-h5: light-dark(#3e8fb0, #3e8fb0);
+  --text-title-h6: light-dark(#9ccfd8, #9ccfd8);
   --viewer-container-height: 0;
+  --vim-cursor: light-dark(#ea9a97, #ea9a97);
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
 }
@@ -65,25 +102,22 @@ body {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
-  --background-accent: #232136;
+  --background-accent: light-dark(#232136, #232136);
   --background-modifier-active-hover: #8a5cf526;
-  --background-modifier-border: #e0def4;
+  --background-modifier-border: light-dark(#e0def4, #e0def4);
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;
-  --background-modifier-box-shadow: #0000004d;
-  --background-modifier-cover: #00000099;
-  --background-modifier-error: #eb6f92;
-  --background-modifier-error-hover: #eb6f92;
-  --background-modifier-error-rgb: 61, 0, 0;
-  --background-modifier-form-field: #00000033;
-  --background-modifier-form-field-highlighted: #00000080;
+  --background-modifier-error: light-dark(#eb6f92, #eb6f92);
+  --background-modifier-error-hover: light-dark(#eb6f92, #eb6f92);
+  --background-modifier-error-rgb: 251, 70, 76;
+  --background-modifier-form-field: #000;
   --background-modifier-hover: #ffffff11;
   --background-modifier-message: #000000e6;
-  --background-modifier-success: #3e8fb0;
+  --background-modifier-success: light-dark(#3e8fb0, #3e8fb0);
   --background-modifier-success-rgb: 68, 207, 110;
-  --background-primary: #232136;
-  --background-primary-alt: #2a273f;
-  --background-secondary: #312f44;
+  --background-primary: light-dark(#232136, #232136);
+  --background-primary-alt: light-dark(#2a273f, #2a273f);
+  --background-secondary: light-dark(#312f44, #312f44);
   --background-secondary-alt: light-dark(#212121, #363636);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
@@ -96,7 +130,7 @@ body {
   --bases-table-cell-background-active: #232136;
   --bases-table-cell-background-disabled: #00000080;
   --bases-table-cell-radius-active: 2px;
-  --bases-table-cell-shadow-active: 0 0 0 2px #8a5cf5;
+  --bases-table-cell-shadow-active: 0 0 0 2px #f6c177;
   --bases-table-column-border-width: 1px;
   --bases-table-column-max-width: 300;
   --bases-table-column-min-width: 40;
@@ -118,15 +152,15 @@ body {
   --bases-table-text-size: 0.875em;
   --bases-table-white-space: nowrap;
   --blockquote-background-color: transparent;
-  --blockquote-border: #eb6f92;
-  --blockquote-border-color: #8a5cf5;
+  --blockquote-border: light-dark(#eb6f92, #eb6f92);
+  --blockquote-border-color: #f6c177;
   --blockquote-border-thickness: 2px;
   --blockquote-color: inherit;
   --blockquote-font-style: normal;
   --bold-color: inherit;
   --bold-modifier: 200;
   --bold-weight: 800;
-  --border-color: #2b2727;
+  --border-color: light-dark(#2b2727, #2b2727);
   --border-width: 1px;
   --button-radius: 5px;
   --callout-blend-mode: darken;
@@ -167,8 +201,8 @@ body {
   --caret-color: #e0def4;
   --checkbox-border-color: #eb6f92;
   --checkbox-border-color-hover: #e0def4;
-  --checkbox-color: #8a5cf5;
-  --checkbox-color-hover: #a68af9;
+  --checkbox-color: #f6c177;
+  --checkbox-color-hover: #ea9a97;
   --checkbox-margin-inline-start: 0.85em;
   --checkbox-marker-color: #232136;
   --checkbox-radius: 4px;
@@ -177,7 +211,7 @@ body {
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: 4px;
   --code-background: #2a273f;
-  --code-block: #9ccfd8;
+  --code-block: light-dark(#9ccfd8, #9ccfd8);
   --code-border-color: transparent;
   --code-border-width: 0px;
   --code-comment: #eb6f92;
@@ -195,7 +229,7 @@ body {
   --code-value: #a882ff;
   --code-white-space: pre-wrap;
   --collapse-icon-color: #eb6f92;
-  --collapse-icon-color-collapsed: #a68af9;
+  --collapse-icon-color-collapsed: #c4a7e7;
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
   --color-accent-1: light-dark(#9873f7, #a68af9);
   --color-accent-2: light-dark(#a68af9, #c5b6fc);
@@ -227,7 +261,7 @@ body {
   --dialog-width: 560px;
   --direction: 1;
   --divider-color: transparent;
-  --divider-color-hover: #8a5cf5;
+  --divider-color-hover: #f6c177;
   --divider-vertical-height: calc(100% - 40px);
   --divider-width: 1px;
   --divider-width-hover: 3px;
@@ -244,7 +278,7 @@ body {
     0 0 0 1px transparent, inset 0 0 0 1px transparent;
   --embed-border-bottom: none;
   --embed-border-end: none;
-  --embed-border-start: 2px solid #8a5cf5;
+  --embed-border-start: 2px solid #f6c177;
   --embed-border-top: none;
   --embed-canvas-max-height: 400px;
   --embed-font-style: inherit;
@@ -331,7 +365,7 @@ body {
   --graph-line: #3f3f3f;
   --graph-node: #e0def4;
   --graph-node-attachment: #e0de71;
-  --graph-node-focused: #a68af9;
+  --graph-node-focused: #c4a7e7;
   --graph-node-tag: #44cf6e;
   --graph-node-unresolved: #eb6f92;
   --graph-text: #e0def4;
@@ -383,7 +417,7 @@ body {
   --hr-color: transparent;
   --hr-thickness: 2px;
   --icon-color: #e0def4;
-  --icon-color-active: #a68af9;
+  --icon-color-active: #c4a7e7;
   --icon-color-focused: #e0def4;
   --icon-color-hover: #e0def4;
   --icon-l: 18px;
@@ -410,7 +444,7 @@ body {
   --indentation-guide-source-indent: 0.25em;
   --indentation-guide-width: 1px;
   --indentation-guide-width-active: 1px;
-  --inline-code: #c4a7e7;
+  --inline-code: light-dark(#c4a7e7, #c4a7e7);
   --inline-title-color: inherit;
   --inline-title-font: inherit;
   --inline-title-line-height: 1.2;
@@ -425,12 +459,11 @@ body {
   --input-height: 30px;
   --input-placeholder-color: #eb6f92;
   --input-radius: 5px;
-  --interactive-accent: #f6c177;
-  --interactive-accent-hover: #ea9a97;
+  --interactive-accent: light-dark(#f6c177, #f6c177);
+  --interactive-accent-hover: light-dark(#ea9a97, #ea9a97);
   --interactive-accent-hsl: 258, 88%, 66%;
-  --interactive-accent-rgb: 123, 108, 217;
-  --interactive-hover: #ea9a97;
-  --interactive-normal: #f6c177;
+  --interactive-hover: light-dark(#ea9a97, #ea9a97);
+  --interactive-normal: light-dark(#f6c177, #f6c177);
   --italic-color: inherit;
   --italic-weight: inherit;
   --layer-cover: 5;
@@ -445,17 +478,17 @@ body {
   --layer-tooltip: 70;
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;
-  --link-color: #a68af9;
+  --link-color: #c4a7e7;
   --link-color-hover: #9ccfd8;
   --link-decoration: underline;
   --link-decoration-hover: underline;
   --link-decoration-thickness: auto;
-  --link-external-color: #a68af9;
+  --link-external-color: #c4a7e7;
   --link-external-color-hover: #9ccfd8;
   --link-external-decoration: underline;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
-  --link-unresolved-color: #a68af9;
+  --link-unresolved-color: #c4a7e7;
   --link-unresolved-decoration-color: #8a5cf54d;
   --link-unresolved-decoration-style: solid;
   --link-unresolved-filter: none;
@@ -470,7 +503,7 @@ body {
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
   --list-marker-color: #eb6f92;
-  --list-marker-color-collapsed: #a68af9;
+  --list-marker-color-collapsed: #c4a7e7;
   --list-marker-color-hover: #e0def4;
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
@@ -556,7 +589,7 @@ body {
   --nav-item-children-padding-start: 4px;
   --nav-item-color: #e0def4;
   --nav-item-color-active: #e0def4;
-  --nav-item-color-highlighted: #a68af9;
+  --nav-item-color-highlighted: #c4a7e7;
   --nav-item-color-hover: #e0def4;
   --nav-item-color-selected: #e0def4;
   --nav-item-padding: 4px 8px 4px 24px;
@@ -582,7 +615,7 @@ body {
   --pill-color: #e0def4;
   --pill-color-hover: #e0def4;
   --pill-color-remove: #eb6f92;
-  --pill-color-remove-hover: #a68af9;
+  --pill-color-remove-hover: #c4a7e7;
   --pill-decoration: none;
   --pill-decoration-hover: none;
   --pill-focus-left-adjust: -4px;
@@ -597,7 +630,7 @@ body {
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
   --popover-width: 450px;
-  --pre-code: #312f44;
+  --pre-code: light-dark(#312f44, #312f44);
   --prompt-border-color: #555555;
   --prompt-border-width: 0.5pt;
   --prompt-input-height: 40px;
@@ -612,9 +645,9 @@ body {
   --ribbon-background-collapsed: #232136;
   --ribbon-padding: 8px 4px 12px;
   --ribbon-width: 44px;
-  --scrollbar-active-thumb-bg: #232136;
-  --scrollbar-bg: #232136;
-  --scrollbar-thumb-bg: #232136;
+  --scrollbar-active-thumb-bg: light-dark(#232136, #232136);
+  --scrollbar-bg: light-dark(#232136, #232136);
+  --scrollbar-thumb-bg: light-dark(#232136, #232136);
   --search-clear-button-color: #e0def4;
   --search-clear-button-size: 13px;
   --search-icon-color: #e0def4;
@@ -697,7 +730,7 @@ body {
   --tab-text-color-focused: #e0def4;
   --tab-text-color-focused-active: #e0def4;
   --tab-text-color-focused-active-current: #e0def4;
-  --tab-text-color-focused-highlighted: #a68af9;
+  --tab-text-color-focused-highlighted: #c4a7e7;
   --tab-width: 200px;
   --table-add-button-background: transparent;
   --table-add-button-border-color: transparent;
@@ -712,7 +745,7 @@ body {
   --table-column-max-width: none;
   --table-column-min-width: 6ch;
   --table-drag-handle-background: transparent;
-  --table-drag-handle-background-active: #8a5cf5;
+  --table-drag-handle-background-active: #f6c177;
   --table-drag-handle-color: #eb6f92;
   --table-drag-handle-color-active: #c4a7e7;
   --table-header-background: transparent;
@@ -730,7 +763,7 @@ body {
   --table-row-last-border-width: 1px;
   --table-selection: #8a5cf51a;
   --table-selection-blend-mode: darken;
-  --table-selection-border-color: #8a5cf5;
+  --table-selection-border-color: #f6c177;
   --table-selection-border-radius: 4px;
   --table-selection-border-width: 2px;
   --table-text-color: inherit;
@@ -741,8 +774,8 @@ body {
   --tag-border-color: #8a5cf526;
   --tag-border-color-hover: #8a5cf526;
   --tag-border-width: 0px;
-  --tag-color: #a68af9;
-  --tag-color-hover: #a68af9;
+  --tag-color: #c4a7e7;
+  --tag-color-hover: #c4a7e7;
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-padding-x: 0.65em;
@@ -750,28 +783,28 @@ body {
   --tag-radius: 2em;
   --tag-size: 0.875em;
   --tag-weight: inherit;
-  --text-accent: #c4a7e7;
-  --text-accent-hover: #9ccfd8;
-  --text-error: #eb6f92;
-  --text-error-hover: #eb6f92;
-  --text-faint: #eb6f92;
-  --text-highlight-bg: #312f44;
+  --text-accent: light-dark(#c4a7e7, #c4a7e7);
+  --text-accent-hover: light-dark(#9ccfd8, #9ccfd8);
+  --text-error: light-dark(#eb6f92, #eb6f92);
+  --text-error-hover: light-dark(#eb6f92, #eb6f92);
+  --text-faint: light-dark(#eb6f92, #eb6f92);
+  --text-highlight-bg: light-dark(#312f44, #312f44);
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: #e0def4;
-  --text-normal: #e0def4;
-  --text-on-accent: #c4a7e7;
+  --text-muted: light-dark(#e0def4, #e0def4);
+  --text-normal: light-dark(#e0def4, #e0def4);
+  --text-on-accent: light-dark(#c4a7e7, #c4a7e7);
   --text-on-accent-inverted: #000000;
-  --text-selection: #6272a4;
+  --text-selection: light-dark(#6272a4, #6272a4);
   --text-success: #44cf6e;
-  --text-title-h1: #eb6f92;
-  --text-title-h2: #c4a7e7;
-  --text-title-h3: #ea9a97;
-  --text-title-h4: #f6c177;
-  --text-title-h5: #3e8fb0;
-  --text-title-h6: #9ccfd8;
+  --text-title-h1: light-dark(#eb6f92, #eb6f92);
+  --text-title-h2: light-dark(#c4a7e7, #c4a7e7);
+  --text-title-h3: light-dark(#ea9a97, #ea9a97);
+  --text-title-h4: light-dark(#f6c177, #f6c177);
+  --text-title-h5: light-dark(#3e8fb0, #3e8fb0);
+  --text-title-h6: light-dark(#9ccfd8, #9ccfd8);
   --text-warning: #e9973f;
   --titlebar-background: #312f44;
-  --titlebar-background-focused: #363636;
+  --titlebar-background-focused: #393552;
   --titlebar-border-color: transparent;
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;
@@ -795,14 +828,14 @@ body {
   --vault-profile-display: flex;
   --vault-profile-font-size: 14.992px;
   --vault-profile-font-weight: 500;
-  --vim-cursor: #ea9a97;
+  --vim-cursor: light-dark(#ea9a97, #ea9a97);
   --workspace-background-translucent: #00000099;
   --zoom-factor: 1;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background: #090f23;
-  background-color: #232136;
-  caret-color: #a68af9;
+  background-color: light-dark(#232136, #232136);
+  caret-color: #c4a7e7;
   color: #ffffff;
   contain: initial;
   font-family:
@@ -975,7 +1008,7 @@ h6 {
 .markdown-rendered button.copy-code-button {
   background-color: transparent;
   box-shadow: none;
-  color: #e0def4;
+  color: light-dark(#e0def4, #e0def4);
   font-family:
     "??",
     "??",
@@ -1218,8 +1251,8 @@ h6 {
 }
 
 .popover {
-  background-color: #312f44;
-  border: 1px solid #2b2727;
+  background-color: light-dark(#312f44, #312f44);
+  border: 1px solid light-dark(#2b2727, #2b2727);
   border-radius: 8px;
   box-shadow:
     0px 1px 2px #0000001f,
@@ -1232,7 +1265,7 @@ h6 {
 }
 
 .prompt {
-  background-color: #232136;
+  background-color: light-dark(#232136, #232136);
   border: 0.5pt solid #555555;
   border-radius: 12px;
   box-shadow:
@@ -1251,9 +1284,9 @@ h6 {
 }
 
 input.prompt-input {
-  background-color: #232136;
+  background-color: light-dark(#232136, #232136);
   border: none;
-  border-bottom: 1px solid #312f44;
+  border-bottom: 1px solid light-dark(#312f44, #312f44);
   border-radius: 0;
   font-size: 16px;
   height: 48px;
@@ -1271,15 +1304,15 @@ input.prompt-input {
 }
 
 .markdown-rendered mark {
-  background-color: #312f44;
-  color: #e0def4;
+  background-color: light-dark(#312f44, #312f44);
+  color: light-dark(#e0def4, #e0def4);
 }
 
 a.tag {
   background-color: #8a5cf533;
   border: 0px solid #8a5cf526;
   border-radius: 2em;
-  color: #9ccfd8;
+  color: light-dark(#9ccfd8, #9ccfd8);
   font-size: 0.875em;
   font-style: normal;
   font-weight: inherit;
@@ -1291,9 +1324,9 @@ a.tag {
 input[type="search"] {
   -webkit-app-region: no-drag;
   background: transparent;
-  border: 1px solid transparent;
+  border: 1px solid light-dark(#e0def4, #e0def4);
   border-radius: 5px;
-  color: #e0def4;
+  color: light-dark(#e0def4, #e0def4);
   font-family: inherit;
   font-size: 14.992px;
   height: 40px;
@@ -1325,7 +1358,7 @@ input[type="search"] {
 
 .nav-file-icon {
   align-items: center;
-  color: #8a5cf5;
+  color: #f6c177;
   display: inline-flex;
   margin-inline-end: 6px;
   opacity: 1;
@@ -1435,13 +1468,13 @@ input[type="search"] {
 }
 
 .tree-item-self.is-being-dragged {
-  background-color: #8a5cf5;
-  color: #c4a7e7;
+  background-color: light-dark(#f6c177, #f6c177);
+  color: light-dark(#c4a7e7, #c4a7e7);
 }
 
 .tree-item-self .tree-item-icon {
   align-items: center;
-  color: #8a5cf5;
+  color: #f6c177;
   display: flex;
   flex: 0 0 auto;
   justify-content: center;
@@ -1470,7 +1503,7 @@ input[type="search"] {
 
 .tree-item-flair {
   border-radius: 4px;
-  color: #eb6f92;
+  color: light-dark(#eb6f92, #eb6f92);
   font-size: 12.8px;
   line-height: 1;
 }
@@ -1487,7 +1520,7 @@ input[type="search"] {
 }
 
 .tree-item-inner-subtext {
-  color: #eb6f92;
+  color: light-dark(#eb6f92, #eb6f92);
   font-size: 85%;
 }
 
@@ -1517,11 +1550,11 @@ svg.svg-icon {
 }
 
 .clickable-icon.mod-warning {
-  color: #eb6f92;
+  color: light-dark(#eb6f92, #eb6f92);
 }
 
 .clickable-icon.mod-filled svg {
-  fill: #8a5cf5;
+  fill: #f6c177;
 }
 
 .setting-item-control .clickable-icon {
@@ -1530,7 +1563,7 @@ svg.svg-icon {
 
 .clickable-icon[aria-disabled="true"] {
   background-color: unset;
-  color: #e0def4;
+  color: light-dark(#e0def4, #e0def4);
   opacity: 0.4;
 }
 
@@ -1544,7 +1577,7 @@ svg.svg-icon {
 
 .clickable-icon.is-active {
   background-color: #8a5cf526;
-  color: #a68af9;
+  color: #ea9a97;
   opacity: 0.65;
 }
 
@@ -1553,7 +1586,7 @@ svg.svg-icon {
   align-items: center;
   background-color: transparent;
   border-radius: 4px;
-  color: #8a5cf5;
+  color: #f6c177;
   cursor: pointer;
   display: flex;
   height: auto;
@@ -1564,7 +1597,7 @@ svg.svg-icon {
 }
 
 .view-header-title-parent .view-header-breadcrumb-separator {
-  color: #eb6f92;
+  color: light-dark(#eb6f92, #eb6f92);
   padding: 2px 1px;
 }
 
@@ -1595,11 +1628,11 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill {
-  color: #e0def4;
+  color: light-dark(#e0def4, #e0def4);
 }
 
 .graph-view.color-fill-focused {
-  color: #a68af9;
+  color: #c4a7e7;
 }
 
 .graph-view.color-fill-tag {
@@ -1616,36 +1649,36 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-1 {
-  color: #e0def4;
+  color: light-dark(#e0def4, #e0def4);
 }
 
 .graph-view.color-fill-2 {
-  color: #e0def4;
+  color: light-dark(#e0def4, #e0def4);
 }
 
 .graph-view.color-fill-3 {
-  color: #e0def4;
+  color: light-dark(#e0def4, #e0def4);
 }
 
 .graph-view.color-fill-4 {
-  color: #e0def4;
+  color: light-dark(#e0def4, #e0def4);
 }
 
 .graph-view.color-fill-5 {
-  color: #e0def4;
+  color: light-dark(#e0def4, #e0def4);
 }
 
 .graph-view.color-fill-6 {
-  color: #e0def4;
+  color: light-dark(#e0def4, #e0def4);
 }
 
 .graph-view.color-arrow {
-  color: #e0def4;
+  color: light-dark(#e0def4, #e0def4);
   opacity: 0.5;
 }
 
 .graph-view.color-circle {
-  color: #a68af9;
+  color: light-dark(#c4a7e7, #c4a7e7);
 }
 
 .graph-view.color-line {
@@ -1653,19 +1686,19 @@ svg.svg-icon {
 }
 
 .graph-view.color-text {
-  color: #e0def4;
+  color: light-dark(#e0def4, #e0def4);
 }
 
 .graph-view.color-fill-highlight {
-  color: #a68af9;
+  color: light-dark(#c4a7e7, #c4a7e7);
 }
 
 .graph-view.color-line-highlight {
-  color: #a68af9;
+  color: light-dark(#c4a7e7, #c4a7e7);
 }
 
 .graph-controls {
-  background-color: #232136;
+  background-color: light-dark(#232136, #232136);
   border-radius: 8px;
   inset-inline-end: 12px;
   overflow: auto;
@@ -1676,10 +1709,23 @@ svg.svg-icon {
 }
 
 .theme-dark {
+  --background-accent: #232136;
+  --background-modifier-border: #e0def4;
   --background-modifier-box-shadow: #0000004d;
-  --background-modifier-cover: #0a0a0a66;
-  --background-modifier-form-field: #2a2a2a;
-  --background-secondary-alt: #363636;
+  --background-modifier-cover: #00000099;
+  --background-modifier-error: #eb6f92;
+  --background-modifier-error-hover: #eb6f92;
+  --background-modifier-error-rgb: 61, 0, 0;
+  --background-modifier-form-field: #00000033;
+  --background-modifier-form-field-highlighted: #00000080;
+  --background-modifier-success: #3e8fb0;
+  --background-primary: #232136;
+  --background-primary-alt: #2a273f;
+  --background-secondary: #312f44;
+  --background-secondary-alt: #393552;
+  --blockquote-border: #eb6f92;
+  --border-color: #2b2727;
+  --code-block: #9ccfd8;
   --color-accent: #8a5cf5;
   --color-accent-1: #a68af9;
   --color-accent-2: #c5b6fc;
@@ -1713,33 +1759,68 @@ svg.svg-icon {
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
   --highlight-mix-blend-mode: darken;
+  --inline-code: #c4a7e7;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
     0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
   --input-shadow-hover:
     inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
     0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
-  --interactive-accent: #8a5cf5;
-  --interactive-accent-hover: #a68af9;
-  --interactive-hover: #3f3f3f;
-  --interactive-normal: #363636;
+  --interactive-accent: #f6c177;
+  --interactive-accent-hover: #ea9a97;
+  --interactive-accent-rgb: 123, 108, 217;
+  --interactive-hover: #ea9a97;
+  --interactive-normal: #f6c177;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --pdf-shadow: 0 0 0 1px transparent;
   --pdf-thumbnail-shadow: 0 0 0 1px transparent;
+  --pre-code: #312f44;
+  --scrollbar-active-thumb-bg: #232136;
+  --scrollbar-bg: #232136;
+  --scrollbar-thumb-bg: #232136;
   --shadow-l:
     0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
     0px 30px 90px #00000033;
   --shadow-s:
     0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
-  --text-accent: #a68af9;
-  --text-selection: #8a5cf554;
+  --text-accent: #c4a7e7;
+  --text-accent-hover: #9ccfd8;
+  --text-error: #eb6f92;
+  --text-error-hover: #eb6f92;
+  --text-faint: #eb6f92;
+  --text-highlight-bg: #312f44;
+  --text-muted: #e0def4;
+  --text-normal: #e0def4;
+  --text-on-accent: #c4a7e7;
+  --text-selection: #6272a4;
+  --text-title-h1: #eb6f92;
+  --text-title-h2: #c4a7e7;
+  --text-title-h3: #ea9a97;
+  --text-title-h4: #f6c177;
+  --text-title-h5: #3e8fb0;
+  --text-title-h6: #9ccfd8;
+  --vim-cursor: #ea9a97;
 }
 
 .theme-light {
-  --background-modifier-box-shadow: #0000001a;
-  --background-modifier-cover: #dcdcdc66;
-  --background-secondary-alt: #212121;
+  --background-accent: #232136;
+  --background-modifier-border: #e0def4;
+  --background-modifier-box-shadow: #0000004d;
+  --background-modifier-cover: #00000099;
+  --background-modifier-error: #eb6f92;
+  --background-modifier-error-hover: #eb6f92;
+  --background-modifier-error-rgb: 61, 0, 0;
+  --background-modifier-form-field: #00000033;
+  --background-modifier-form-field-highlighted: #00000080;
+  --background-modifier-success: #3e8fb0;
+  --background-primary: #232136;
+  --background-primary-alt: #2a273f;
+  --background-secondary: #312f44;
+  --background-secondary-alt: #393552;
+  --blockquote-border: #eb6f92;
+  --border-color: #2b2727;
+  --code-block: #9ccfd8;
   --color-accent: #8a5cf5;
   --color-accent-1: #9873f7;
   --color-accent-2: #a68af9;
@@ -1773,19 +1854,46 @@ svg.svg-icon {
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
   --highlight-mix-blend-mode: darken;
+  --inline-code: #c4a7e7;
   --input-shadow:
     inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008,
     0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
   --input-shadow-hover:
     inset 0 0 0 1px #0000002b, 0 2px 3px 0 #0000001a, 0 1px 1.5px 0 #00000008,
     0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+  --interactive-accent: #f6c177;
+  --interactive-accent-hover: #ea9a97;
+  --interactive-accent-rgb: 123, 108, 217;
+  --interactive-hover: #ea9a97;
+  --interactive-normal: #f6c177;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
+  --pre-code: #312f44;
+  --scrollbar-active-thumb-bg: #232136;
+  --scrollbar-bg: #232136;
+  --scrollbar-thumb-bg: #232136;
   --shadow-l:
     0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
     0px 30px 90px #00000033;
   --shadow-s:
     0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
+  --text-accent: #c4a7e7;
+  --text-accent-hover: #9ccfd8;
+  --text-error: #eb6f92;
+  --text-error-hover: #eb6f92;
+  --text-faint: #eb6f92;
+  --text-highlight-bg: #312f44;
+  --text-muted: #e0def4;
+  --text-normal: #e0def4;
+  --text-on-accent: #c4a7e7;
+  --text-selection: #6272a4;
+  --text-title-h1: #eb6f92;
+  --text-title-h2: #c4a7e7;
+  --text-title-h3: #ea9a97;
+  --text-title-h4: #f6c177;
+  --text-title-h5: #3e8fb0;
+  --text-title-h6: #9ccfd8;
+  --vim-cursor: #ea9a97;
 }
 
 .mod-sidedock {
@@ -1803,16 +1911,16 @@ svg.svg-icon {
 }
 
 .workspace-tabs .workspace-leaf {
-  background-color: #312f44;
+  background-color: light-dark(#312f44, #312f44);
   height: 100%;
 }
 
 .workspace-split.mod-root {
-  background-color: #232136;
+  background-color: light-dark(#232136, #232136);
 }
 
 .workspace-split.mod-root .view-content {
-  background-color: #232136;
+  background-color: light-dark(#232136, #232136);
 }
 
 .workspace-leaf-resize-handle {

@@ -1,4 +1,21 @@
 :root {
+  --accent-1: light-dark(#ff00ff, #ff00ff);
+  --accent-1-muted: light-dark(#ff79c6, #ff79c6);
+  --accent-2: light-dark(#00ffff, #00ffff);
+  --accent-2-muted: light-dark(#8be9fd, #8be9fd);
+  --accent-3: light-dark(#00ff00, #00ff00);
+  --accent-3-muted: light-dark(#50fa7b, #50fa7b);
+  --accent-4: light-dark(#ffff00, #ffff00);
+  --accent-4-muted: light-dark(#ffb86c, #ffb86c);
+  --accent-5: light-dark(#ff0000, #ff0000);
+  --accent-5-muted: light-dark(#ff5555, #ff5555);
+  --accent-6: light-dark(#0000ff, #0000ff);
+  --accent-6-muted: light-dark(#bd93f9, #bd93f9);
+  --background-accent: light-dark(#000, #000);
+  --background-modifier-border: light-dark(var(--accent-2), var(--accent-2));
+  --background-primary: light-dark(#2b213a, #2b213a);
+  --background-primary-alt: light-dark(#171520, #171520);
+  --background-secondary: light-dark(#1a1836, #1a1836);
   --background-secondary-alt: light-dark(
     var(--color-base-05),
     var(--color-base-30)
@@ -59,6 +76,13 @@
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
+  --interactive-accent: light-dark(var(--accent-2), var(--accent-2));
+  --interactive-accent-hover: light-dark(
+    var(--accent-2-muted),
+    var(--accent-2-muted)
+  );
+  --interactive-hover: light-dark(var(--accent-2-muted), var(--accent-2-muted));
+  --interactive-normal: light-dark(var(--accent-2), var(--accent-2));
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
   --page-border: 9px solid transparent;
@@ -69,24 +93,30 @@
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
   --spreadHorizontalWrapped-margin-LR: -3.5px;
+  --text-accent: light-dark(#ff1690, #ff1690);
+  --text-accent-hover: light-dark(#7a6ae6, #7a6ae6);
+  --text-faint: light-dark(var(--accent-6-muted), var(--accent-6-muted));
+  --text-highlight-bg: light-dark(#ffd319, #ffd319);
+  --text-muted: light-dark(var(--accent-1-muted), var(--accent-1-muted));
+  --text-normal: light-dark(var(--accent-1), var(--accent-1));
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
 }
 
 body {
-  --accent-1: #ff00ff;
-  --accent-1-muted: #ff79c6;
-  --accent-2: #00ffff;
-  --accent-2-muted: #8be9fd;
-  --accent-3: #00ff00;
-  --accent-3-muted: #50fa7b;
-  --accent-4: #ffff00;
-  --accent-4-muted: #ffb86c;
-  --accent-5: #ff0000;
-  --accent-5-muted: #ff5555;
-  --accent-6: #0000ff;
-  --accent-6-muted: #bd93f9;
+  --accent-1: light-dark(#ff00ff, #ff00ff);
+  --accent-1-muted: light-dark(#ff79c6, #ff79c6);
+  --accent-2: light-dark(#00ffff, #00ffff);
+  --accent-2-muted: light-dark(#8be9fd, #8be9fd);
+  --accent-3: light-dark(#00ff00, #00ff00);
+  --accent-3-muted: light-dark(#50fa7b, #50fa7b);
+  --accent-4: light-dark(#ffff00, #ffff00);
+  --accent-4-muted: light-dark(#ffb86c, #ffb86c);
+  --accent-5: light-dark(#ff0000, #ff0000);
+  --accent-5-muted: light-dark(#ff5555, #ff5555);
+  --accent-6: light-dark(#0000ff, #0000ff);
+  --accent-6-muted: light-dark(#bd93f9, #bd93f9);
   --accent-h: 258;
   --accent-l: 66%;
   --accent-s: 88%;
@@ -99,9 +129,9 @@ body {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
-  --background-accent: #000;
+  --background-accent: light-dark(#000, #000);
   --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
-  --background-modifier-border: var(--accent-2);
+  --background-modifier-border: light-dark(var(--accent-2), var(--accent-2));
   --background-modifier-border-focus: var(--color-base-40);
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-error: var(--color-red);
@@ -112,9 +142,9 @@ body {
   --background-modifier-message: rgba(0, 0, 0, 0.9);
   --background-modifier-success: var(--color-green);
   --background-modifier-success-rgb: var(--color-green-rgb);
-  --background-primary: #2b213a;
-  --background-primary-alt: #171520;
-  --background-secondary: #1a1836;
+  --background-primary: light-dark(#2b213a, #2b213a);
+  --background-primary-alt: light-dark(#171520, #171520);
+  --background-secondary: light-dark(#1a1836, #1a1836);
   --background-secondary-alt: light-dark(
     var(--color-base-05),
     var(--color-base-30)
@@ -481,12 +511,14 @@ body {
   --input-height: 30px;
   --input-placeholder-color: var(--text-faint);
   --input-radius: 5px;
-  --interactive-accent: var(--accent-2);
-  --interactive-accent-hover: var(--accent-2-muted);
+  --interactive-accent: light-dark(var(--accent-2), var(--accent-2));
+  --interactive-accent-hover: light-dark(
+    var(--accent-2-muted),
+    var(--accent-2-muted)
+  );
   --interactive-accent-hsl: var(--color-accent-hsl);
-  --interactive-accent-rgb: 72, 54, 153;
-  --interactive-hover: var(--accent-2-muted);
-  --interactive-normal: var(--accent-2);
+  --interactive-hover: light-dark(var(--accent-2-muted), var(--accent-2-muted));
+  --interactive-normal: light-dark(var(--accent-2), var(--accent-2));
   --italic-color: inherit;
   --italic-weight: inherit;
   --layer-cover: 5;
@@ -670,9 +702,9 @@ body {
   --ribbon-background-collapsed: var(--background-primary);
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
   --ribbon-width: 44px;
-  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-  --scrollbar-bg: rgba(255, 255, 255, 0.05);
-  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2);
+  --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05);
+  --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1);
   --search-clear-button-color: var(--text-muted);
   --search-clear-button-size: 13px;
   --search-icon-color: var(--text-muted);
@@ -808,17 +840,17 @@ body {
   --tag-radius: 2em;
   --tag-size: var(--font-smaller);
   --tag-weight: inherit;
-  --text-accent: #ff1690;
-  --text-accent-hover: #7a6ae6;
+  --text-accent: light-dark(#ff1690, #ff1690);
+  --text-accent-hover: light-dark(#7a6ae6, #7a6ae6);
   --text-error: var(--color-red);
-  --text-faint: var(--accent-6-muted);
-  --text-highlight-bg: #ffd319;
+  --text-faint: light-dark(var(--accent-6-muted), var(--accent-6-muted));
+  --text-highlight-bg: light-dark(#ffd319, #ffd319);
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: var(--accent-1-muted);
-  --text-normal: var(--accent-1);
-  --text-on-accent: rgba(0, 0, 0, 0.8);
+  --text-muted: light-dark(var(--accent-1-muted), var(--accent-1-muted));
+  --text-normal: light-dark(var(--accent-1), var(--accent-1));
+  --text-on-accent: white;
   --text-on-accent-inverted: black;
-  --text-selection: rgba(0, 122, 255, 0.2);
+  --text-selection: hsla(var(--color-accent-hsl), 0.2);
   --text-success: var(--color-green);
   --text-warning: var(--color-orange);
   --titlebar-background: var(--background-secondary);
@@ -1695,10 +1727,27 @@ svg.svg-icon {
 }
 
 .theme-dark {
+  --accent-1: #ff00ff;
+  --accent-1-muted: #ff79c6;
+  --accent-2: #00ffff;
+  --accent-2-muted: #8be9fd;
+  --accent-3: #00ff00;
+  --accent-3-muted: #50fa7b;
+  --accent-4: #ffff00;
+  --accent-4-muted: #ffb86c;
+  --accent-5: #ff0000;
+  --accent-5-muted: #ff5555;
+  --accent-6: #0000ff;
+  --accent-6-muted: #bd93f9;
+  --background-accent: #000;
+  --background-modifier-border: var(--accent-2);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
   --background-modifier-form-field: var(--color-base-25);
-  --background-secondary-alt: var(--color-base-30);
+  --background-primary: #2b213a;
+  --background-primary-alt: #171520;
+  --background-secondary: #1a1836;
+  --background-secondary-alt: #242043;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -1748,28 +1797,55 @@ svg.svg-icon {
     inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --interactive-accent: var(--color-accent);
-  --interactive-accent-hover: var(--color-accent-1);
-  --interactive-hover: var(--color-base-35);
-  --interactive-normal: var(--color-base-30);
+  --interactive-accent: var(--accent-2);
+  --interactive-accent-hover: var(--accent-2-muted);
+  --interactive-accent-rgb: 72, 54, 153;
+  --interactive-hover: var(--accent-2-muted);
+  --interactive-normal: var(--accent-2);
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
-  --text-accent: var(--color-accent-1);
-  --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
+  --text-accent: #ff1690;
+  --text-accent-hover: #7a6ae6;
+  --text-faint: var(--accent-6-muted);
+  --text-highlight-bg: #ffd319;
+  --text-muted: var(--accent-1-muted);
+  --text-normal: var(--accent-1);
+  --text-on-accent: rgba(0, 0, 0, 0.8);
+  --text-selection: rgba(0, 122, 255, 0.2);
 }
 
 .theme-light {
+  --accent-1: #ff00ff;
+  --accent-1-muted: #ff79c6;
+  --accent-2: #00ffff;
+  --accent-2-muted: #8be9fd;
+  --accent-3: #00ff00;
+  --accent-3-muted: #50fa7b;
+  --accent-4: #ffff00;
+  --accent-4-muted: #ffb86c;
+  --accent-5: #ff0000;
+  --accent-5-muted: #ff5555;
+  --accent-6: #0000ff;
+  --accent-6-muted: #bd93f9;
+  --background-accent: #000;
+  --background-modifier-border: var(--accent-2);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-  --background-secondary-alt: var(--color-base-05);
+  --background-primary: #2b213a;
+  --background-primary-alt: #171520;
+  --background-secondary: #1a1836;
+  --background-secondary-alt: #242043;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -1819,14 +1895,30 @@ svg.svg-icon {
     inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
     0 0 0 0 transparent;
+  --interactive-accent: var(--accent-2);
+  --interactive-accent-hover: var(--accent-2-muted);
+  --interactive-accent-rgb: 72, 54, 153;
+  --interactive-hover: var(--accent-2-muted);
+  --interactive-normal: var(--accent-2);
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
+  --text-accent: #ff1690;
+  --text-accent-hover: #7a6ae6;
+  --text-faint: var(--accent-6-muted);
+  --text-highlight-bg: #ffd319;
+  --text-muted: var(--accent-1-muted);
+  --text-normal: var(--accent-1);
+  --text-on-accent: rgba(0, 0, 0, 0.8);
+  --text-selection: rgba(0, 122, 255, 0.2);
 }
 
 .mod-sidedock {

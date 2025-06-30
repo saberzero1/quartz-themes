@@ -1,4 +1,17 @@
 :root {
+  --accent-color-alt: light-dark(#fcfaff, #fcfaff);
+  --accent-color-alt2: light-dark(
+    hsl(258, 88%, 112.2%, 1),
+    hsl(258, 88%, 112.2%, 1)
+  );
+  --accent-color-bg_d: light-dark(#2e2e2e, #2e2e2e);
+  --accent-color-bg_dc: light-dark(#252525, #252525);
+  --accent-color-bright2: light-dark(#8a5cf503, #8a5cf503);
+  --accent-color-inverse: light-dark(
+    hsl(258, 88%, -1700%),
+    hsl(258, 88%, -1700%)
+  );
+  --accent-color-inverse2: light-dark(#ffffff, #ffffff);
   --background-primary: light-dark(#ffffff, #2e2e2e);
   --background-secondary: light-dark(#ffffff, #2e2e2e);
   --background-secondary-alt: light-dark(#212121, #363636);
@@ -42,37 +55,19 @@
 }
 
 body {
-  --accent-color-alt: #fcfaff;
-  --accent-color-alt2: hsl(258, 88%, 112.2%, 1);
-  --accent-color-bg: #ffffff;
-  --accent-color-bg_d: #2e2e2e;
-  --accent-color-bg_dc: #252525;
-  --accent-color-bg2: #ffffff;
-  --accent-color-bg2c: #ffffff;
-  --accent-color-bright: #8a5cf51a;
-  --accent-color-bright2: #8a5cf503;
-  --accent-color-hsl: #8a5cf5;
-  --accent-color-inverse: hsl(258, 88%, -1700%);
-  --accent-color-inverse2: #ffffff;
-  --accent-color-light01: #8a5cf503;
-  --accent-color-light02: #8a5cf505;
-  --accent-color-light03: #8a5cf508;
-  --accent-color-light04: #8a5cf50a;
-  --accent-color-light05: #8a5cf50d;
-  --accent-color-light06: #8a5cf50f;
-  --accent-color-light07: #8a5cf512;
-  --accent-color-light08: #8a5cf514;
-  --accent-color-light09: #8a5cf517;
-  --accent-color-light1: #8a5cf51a;
-  --accent-color-light10: #8a5cf5;
-  --accent-color-light2: #8a5cf533;
-  --accent-color-light3: #8a5cf54d;
-  --accent-color-light4: #8a5cf566;
-  --accent-color-light5: #8a5cf580;
-  --accent-color-light6: #8a5cf599;
-  --accent-color-light7: #8a5cf5b3;
-  --accent-color-light8: #8a5cf5cc;
-  --accent-color-light9: #8a5cf5e6;
+  --accent-color-alt: light-dark(#fcfaff, #fcfaff);
+  --accent-color-alt2: light-dark(
+    hsl(258, 88%, 112.2%, 1),
+    hsl(258, 88%, 112.2%, 1)
+  );
+  --accent-color-bg_d: light-dark(#2e2e2e, #2e2e2e);
+  --accent-color-bg_dc: light-dark(#252525, #252525);
+  --accent-color-bright2: light-dark(#8a5cf503, #8a5cf503);
+  --accent-color-inverse: light-dark(
+    hsl(258, 88%, -1700%),
+    hsl(258, 88%, -1700%)
+  );
+  --accent-color-inverse2: light-dark(#ffffff, #ffffff);
   --accent-h: 258;
   --accent-l: 66%;
   --accent-s: 88%;
@@ -208,7 +203,7 @@ body {
   --code-value: #a882ff;
   --code-white-space: pre-wrap;
   --collapse-icon-color: #666666;
-  --collapse-icon-color-collapsed: #a68af9;
+  --collapse-icon-color-collapsed: #8a5cf5;
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
   --color-accent-1: light-dark(#9873f7, #a68af9);
   --color-accent-2: light-dark(#a68af9, #c5b6fc);
@@ -344,7 +339,7 @@ body {
   --graph-line: #3f3f3f;
   --graph-node: #b3b3b3;
   --graph-node-attachment: #e0de71;
-  --graph-node-focused: #a68af9;
+  --graph-node-focused: #8a5cf5;
   --graph-node-tag: #44cf6e;
   --graph-node-unresolved: #666666;
   --graph-text: #dadada;
@@ -396,7 +391,7 @@ body {
   --hr-color: transparent;
   --hr-thickness: 2px;
   --icon-color: #b3b3b3;
-  --icon-color-active: #a68af9;
+  --icon-color-active: #8a5cf5;
   --icon-color-focused: #dadada;
   --icon-color-hover: #b3b3b3;
   --icon-l: 18px;
@@ -456,17 +451,17 @@ body {
   --layer-tooltip: 70;
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;
-  --link-color: #a68af9;
+  --link-color: #8a5cf5;
   --link-color-hover: #c5b6fc;
   --link-decoration: underline;
   --link-decoration-hover: underline;
   --link-decoration-thickness: auto;
-  --link-external-color: #a68af9;
+  --link-external-color: #8a5cf5;
   --link-external-color-hover: #c5b6fc;
   --link-external-decoration: underline;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
-  --link-unresolved-color: #a68af9;
+  --link-unresolved-color: #8a5cf5;
   --link-unresolved-decoration-color: #8a5cf54d;
   --link-unresolved-decoration-style: solid;
   --link-unresolved-filter: none;
@@ -481,7 +476,7 @@ body {
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
   --list-marker-color: #666666;
-  --list-marker-color-collapsed: #a68af9;
+  --list-marker-color-collapsed: #8a5cf5;
   --list-marker-color-hover: #b3b3b3;
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
@@ -567,7 +562,7 @@ body {
   --nav-item-children-padding-start: 4px;
   --nav-item-color: #b3b3b3;
   --nav-item-color-active: #dadada;
-  --nav-item-color-highlighted: #a68af9;
+  --nav-item-color-highlighted: #8a5cf5;
   --nav-item-color-hover: #dadada;
   --nav-item-color-selected: #dadada;
   --nav-item-padding: 4px 8px 4px 24px;
@@ -593,7 +588,7 @@ body {
   --pill-color: #b3b3b3;
   --pill-color-hover: #dadada;
   --pill-color-remove: #666666;
-  --pill-color-remove-hover: #a68af9;
+  --pill-color-remove-hover: #8a5cf5;
   --pill-decoration: none;
   --pill-decoration-hover: none;
   --pill-focus-left-adjust: -4px;
@@ -603,11 +598,11 @@ body {
   --pill-radius: 2em;
   --pill-weight: inherit;
   --popover-font-size: 16px;
-  --popover-height: 100%;
+  --popover-height: 400px;
   --popover-max-height: 95vh;
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
-  --popover-width: 100%;
+  --popover-width: 450px;
   --prompt-border-color: #555555;
   --prompt-border-width: 0.5pt;
   --prompt-input-height: 40px;
@@ -683,7 +678,7 @@ body {
   --tab-divider-color: #3f3f3f;
   --tab-font-size: 14.992px;
   --tab-font-weight: inherit;
-  --tab-max-width: 50%;
+  --tab-max-width: 320px;
   --tab-outline-color: #00000026;
   --tab-outline-width: 1px;
   --tab-radius: 5px;
@@ -707,7 +702,7 @@ body {
   --tab-text-color-focused: #b3b3b3;
   --tab-text-color-focused-active: #b3b3b3;
   --tab-text-color-focused-active-current: #dadada;
-  --tab-text-color-focused-highlighted: #a68af9;
+  --tab-text-color-focused-highlighted: #8a5cf5;
   --tab-width: 200px;
   --table-add-button-background: transparent;
   --table-add-button-border-color: transparent;
@@ -751,8 +746,8 @@ body {
   --tag-border-color: #8a5cf526;
   --tag-border-color-hover: #8a5cf526;
   --tag-border-width: 0px;
-  --tag-color: #a68af9;
-  --tag-color-hover: #a68af9;
+  --tag-color: #8a5cf5;
+  --tag-color-hover: #8a5cf5;
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-padding-x: 0.65em;
@@ -803,7 +798,7 @@ body {
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: #2e2e2e;
-  caret-color: #a68af9;
+  caret-color: #8a5cf5;
   color: #dadada;
   contain: initial;
   font-family:
@@ -1299,7 +1294,7 @@ a.tag {
   background-color: #8a5cf533;
   border: 0px solid #8a5cf526;
   border-radius: 2em;
-  color: #a68af9;
+  color: #8a5cf5;
   font-size: 0.875em;
   font-weight: inherit;
   line-height: 1;
@@ -1611,7 +1606,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-focused {
-  color: #a68af9;
+  color: #8a5cf5;
 }
 
 .graph-view.color-fill-tag {
@@ -1657,7 +1652,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-circle {
-  color: #a68af9;
+  color: #8a5cf5;
 }
 
 .graph-view.color-line {
@@ -1688,6 +1683,37 @@ svg.svg-icon {
 }
 
 .theme-dark {
+  --accent-color-alt: #fcfaff;
+  --accent-color-alt2: hsl(258, 88%, 112.2%, 1);
+  --accent-color-bg: #ffffff;
+  --accent-color-bg_d: #2e2e2e;
+  --accent-color-bg_dc: #252525;
+  --accent-color-bg2: #ffffff;
+  --accent-color-bg2c: #ffffff;
+  --accent-color-bright: #8a5cf51a;
+  --accent-color-bright2: #8a5cf503;
+  --accent-color-hsl: #8a5cf5;
+  --accent-color-inverse: hsl(258, 88%, -1700%);
+  --accent-color-inverse2: #ffffff;
+  --accent-color-light01: #8a5cf503;
+  --accent-color-light02: #8a5cf505;
+  --accent-color-light03: #8a5cf508;
+  --accent-color-light04: #8a5cf50a;
+  --accent-color-light05: #8a5cf50d;
+  --accent-color-light06: #8a5cf50f;
+  --accent-color-light07: #8a5cf512;
+  --accent-color-light08: #8a5cf514;
+  --accent-color-light09: #8a5cf517;
+  --accent-color-light1: #8a5cf51a;
+  --accent-color-light10: #8a5cf5;
+  --accent-color-light2: #8a5cf533;
+  --accent-color-light3: #8a5cf54d;
+  --accent-color-light4: #8a5cf566;
+  --accent-color-light5: #8a5cf580;
+  --accent-color-light6: #8a5cf599;
+  --accent-color-light7: #8a5cf5b3;
+  --accent-color-light8: #8a5cf5cc;
+  --accent-color-light9: #8a5cf5e6;
   --background-modifier-box-shadow: #0000004d;
   --background-modifier-cover: #0a0a0a66;
   --background-modifier-form-field: #2a2a2a;
@@ -1741,16 +1767,50 @@ svg.svg-icon {
   --mono-rgb-100: 255, 255, 255;
   --pdf-shadow: 0 0 0 1px transparent;
   --pdf-thumbnail-shadow: 0 0 0 1px transparent;
+  --popover-height: 100%;
+  --popover-width: 100%;
   --shadow-l:
     0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
     0px 30px 90px #00000033;
   --shadow-s:
     0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
-  --text-accent: #a68af9;
+  --tab-max-width: 50%;
+  --text-accent: #8a5cf5;
   --text-selection: #8a5cf554;
 }
 
 .theme-light {
+  --accent-color-alt: #fcfaff;
+  --accent-color-alt2: hsl(258, 88%, 112.2%, 1);
+  --accent-color-bg: #ffffff;
+  --accent-color-bg_d: #2e2e2e;
+  --accent-color-bg_dc: #252525;
+  --accent-color-bg2: #ffffff;
+  --accent-color-bg2c: #ffffff;
+  --accent-color-bright: #8a5cf51a;
+  --accent-color-bright2: #8a5cf503;
+  --accent-color-hsl: #8a5cf5;
+  --accent-color-inverse: hsl(258, 88%, -1700%);
+  --accent-color-inverse2: #ffffff;
+  --accent-color-light01: #8a5cf503;
+  --accent-color-light02: #8a5cf505;
+  --accent-color-light03: #8a5cf508;
+  --accent-color-light04: #8a5cf50a;
+  --accent-color-light05: #8a5cf50d;
+  --accent-color-light06: #8a5cf50f;
+  --accent-color-light07: #8a5cf512;
+  --accent-color-light08: #8a5cf514;
+  --accent-color-light09: #8a5cf517;
+  --accent-color-light1: #8a5cf51a;
+  --accent-color-light10: #8a5cf5;
+  --accent-color-light2: #8a5cf533;
+  --accent-color-light3: #8a5cf54d;
+  --accent-color-light4: #8a5cf566;
+  --accent-color-light5: #8a5cf580;
+  --accent-color-light6: #8a5cf599;
+  --accent-color-light7: #8a5cf5b3;
+  --accent-color-light8: #8a5cf5cc;
+  --accent-color-light9: #8a5cf5e6;
   --background-modifier-box-shadow: #0000001a;
   --background-modifier-cover: #dcdcdc66;
   --background-primary: #ffffff;
@@ -1797,11 +1857,15 @@ svg.svg-icon {
     0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
+  --popover-height: 100%;
+  --popover-width: 100%;
   --shadow-l:
     0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
     0px 30px 90px #00000033;
   --shadow-s:
     0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
+  --tab-max-width: 50%;
+  --text-accent: #8a5cf5;
 }
 
 .mod-sidedock {

@@ -955,8 +955,20 @@
   --aqua: light-dark(#0084bc, #56b6c2);
   --background-accent: light-dark(#fff, #000);
   --background-modifier-border: light-dark(#dbdbdc, #424958);
+  --background-modifier-border-focus: light-dark(
+    var(--interactive-hover),
+    var(--interactive-hover)
+  );
+  --background-modifier-border-hover: light-dark(
+    var(--interactive-hover),
+    var(--interactive-hover)
+  );
   --background-modifier-error: light-dark(#e68787, #3d0000);
   --background-modifier-error-hover: light-dark(#ff9494, #470000);
+  --background-modifier-message: light-dark(
+    var(--background-secondary-alt),
+    var(--background-secondary-alt)
+  );
   --background-modifier-success: light-dark(#a4e7c3, #539126);
   --background-primary: light-dark(#fafafa, #ddd8c7);
   --background-secondary: light-dark(#eaeaeb, #afaa96);
@@ -965,6 +977,11 @@
     var(--color-base-30)
   );
   --blue: light-dark(#3d74f6, var(--background-secondary-alt));
+  --checkbox-color: light-dark(var(--text-accent), var(--text-accent));
+  --checkbox-color-hover: light-dark(
+    var(--text-accent-hover),
+    var(--text-accent-hover)
+  );
   --color-accent: light-dark(
     hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
     hsl(var(--accent-h), var(--accent-s), var(--accent-l))
@@ -1021,9 +1038,14 @@
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
+  --drag-ghost-background: light-dark(
+    var(--background-secondary-alt),
+    var(--background-secondary-alt)
+  );
   --gray-1: light-dark(#383a42, #5c6370);
   --gray-2: light-dark(#383a42, #abb2bf);
   --green: light-dark(#4ea24c, #98c379);
+  --inline-title-weight: light-dark(var(--bold-weight), var(--bold-weight));
   --interactive-accent-hover: light-dark(
     hsl(
       var(--accent-h),
@@ -1040,18 +1062,45 @@
   --interactive-normal: light-dark(#eaeaeb, #a7957d);
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
+  --modal-border-color: light-dark(
+    var(--panel-border-color),
+    var(--panel-border-color)
+  );
+  --nav-item-background-active: light-dark(
+    var(--interactive-accent),
+    var(--interactive-accent)
+  );
+  --nav-item-color-active: light-dark(#ffffff, #ffffff);
   --orange: light-dark(#986800, #d19a66);
   --page-border: 9px solid transparent;
   --page-margin: 1px auto -8px;
   --panel-border-color: light-dark(#dbdbdc, #18191e);
   --pdfViewer-padding-bottom: 0;
+  --prompt-border-color: light-dark(
+    var(--panel-border-color),
+    var(--panel-border-color)
+  );
   --purple: light-dark(#a625a4, #c678dd);
   --red: light-dark(#e75545, #e06c75);
+  --ribbon-background: light-dark(
+    var(--background-primary),
+    var(--background-primary)
+  );
   --safe-area-inset-bottom: env(safe-area-inset-bottom);
   --safe-area-inset-left: env(safe-area-inset-left);
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
   --spreadHorizontalWrapped-margin-LR: -3.5px;
+  --tag-background: light-dark(
+    var(--background-primary-alt),
+    var(--background-primary-alt)
+  );
+  --tag-background-hover: light-dark(
+    var(--background-primary-alt),
+    var(--background-primary-alt)
+  );
+  --tag-color: light-dark(var(--black), var(--black));
+  --tag-color-hover: light-dark(var(--black), var(--black));
   --text-accent: light-dark(#1592ff, #4a473e);
   --text-accent-hover: light-dark(#097add, rgb(93, 66, 173));
   --text-error: light-dark(#e75545, #b11f2c);
@@ -1693,14 +1742,23 @@ body {
   --background-accent: light-dark(#fff, #000);
   --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
   --background-modifier-border: light-dark(#dbdbdc, #424958);
-  --background-modifier-border-focus: var(--interactive-hover);
-  --background-modifier-border-hover: var(--interactive-hover);
+  --background-modifier-border-focus: light-dark(
+    var(--interactive-hover),
+    var(--interactive-hover)
+  );
+  --background-modifier-border-hover: light-dark(
+    var(--interactive-hover),
+    var(--interactive-hover)
+  );
   --background-modifier-error: light-dark(#e68787, #3d0000);
   --background-modifier-error-hover: light-dark(#ff9494, #470000);
   --background-modifier-error-rgb: var(--color-red-rgb);
   --background-modifier-form-field: var(--color-base-00);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-message: var(--background-primary);
+  --background-modifier-message: light-dark(
+    var(--background-secondary-alt),
+    var(--background-secondary-alt)
+  );
   --background-modifier-success: light-dark(#a4e7c3, #539126);
   --background-modifier-success-rgb: var(--color-green-rgb);
   --background-primary: light-dark(#fafafa, #ddd8c7);
@@ -1792,8 +1850,11 @@ body {
   --caret-color: var(--text-normal);
   --checkbox-border-color: var(--text-faint);
   --checkbox-border-color-hover: var(--text-muted);
-  --checkbox-color: var(--text-accent);
-  --checkbox-color-hover: var(--text-accent-hover);
+  --checkbox-color: light-dark(var(--text-accent), var(--text-accent));
+  --checkbox-color-hover: light-dark(
+    var(--text-accent-hover),
+    var(--text-accent-hover)
+  );
   --checkbox-margin-inline-start: 0.85em;
   --checkbox-marker-color: var(--background-primary);
   --checkbox-radius: var(--radius-s);
@@ -1882,12 +1943,15 @@ body {
   --dialog-max-width: 80vw;
   --dialog-width: 560px;
   --direction: 1;
-  --divider-color: black;
+  --divider-color: var(--background-modifier-border);
   --divider-color-hover: var(--interactive-accent);
   --divider-vertical-height: calc(100% - var(--header-height));
   --divider-width: 1px;
   --divider-width-hover: 3px;
-  --drag-ghost-background: var(--background-secondary-alt);
+  --drag-ghost-background: light-dark(
+    var(--background-secondary-alt),
+    var(--background-secondary-alt)
+  );
   --drag-ghost-text-color: #fff;
   --dropdown-background: var(--interactive-normal);
   --dropdown-background-blend-mode: hard-light;
@@ -1906,7 +1970,7 @@ body {
   --embed-canvas-max-height: 400px;
   --embed-font-style: inherit;
   --embed-max-height: 4000px;
-  --embed-padding: 0 0 0 var(--size-4-4);
+  --embed-padding: 0 0 0 var(--size-4-6);
   --file-folding-offset: 24px;
   --file-header-border: var(--border-width) solid transparent;
   --file-header-font: var(--font-interface);
@@ -2069,7 +2133,7 @@ body {
   --inline-title-size: var(--h1-size);
   --inline-title-style: var(--h1-style);
   --inline-title-variant: var(--h1-variant);
-  --inline-title-weight: var(--bold-weight);
+  --inline-title-weight: light-dark(var(--bold-weight), var(--bold-weight));
   --input-border-width: 1px;
   --input-date-separator: var(--text-faint);
   --input-font-weight: var(--font-normal);
@@ -2108,12 +2172,12 @@ body {
   --line-height-tight: 1.3;
   --link-color: var(--text-accent);
   --link-color-hover: var(--text-accent-hover);
-  --link-decoration: none;
+  --link-decoration: underline;
   --link-decoration-hover: underline;
   --link-decoration-thickness: auto;
   --link-external-color: var(--text-accent);
   --link-external-color-hover: var(--text-accent-hover);
-  --link-external-decoration: none;
+  --link-external-decoration: underline;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
   --link-unresolved-color: var(--text-accent);
@@ -2186,7 +2250,10 @@ body {
   --metadata-sidebar-input-font-size: var(--font-ui-small);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
   --modal-background: var(--background-primary);
-  --modal-border-color: var(--panel-border-color);
+  --modal-border-color: light-dark(
+    var(--panel-border-color),
+    var(--panel-border-color)
+  );
   --modal-border-width: var(--border-width);
   --modal-community-sidebar-width: 280px;
   --modal-height: 85vh;
@@ -2205,13 +2272,16 @@ body {
   --nav-heading-weight-hover: var(--font-medium);
   --nav-indentation-guide-color: var(--indentation-guide-color);
   --nav-indentation-guide-width: var(--indentation-guide-width);
-  --nav-item-background-active: var(--interactive-accent);
+  --nav-item-background-active: light-dark(
+    var(--interactive-accent),
+    var(--interactive-accent)
+  );
   --nav-item-background-hover: var(--background-modifier-hover);
   --nav-item-background-selected: hsla(var(--color-accent-hsl), 0.15);
   --nav-item-children-margin-start: var(--size-4-3);
   --nav-item-children-padding-start: var(--size-2-2);
   --nav-item-color: var(--text-muted);
-  --nav-item-color-active: #ffffff;
+  --nav-item-color-active: light-dark(#ffffff, #ffffff);
   --nav-item-color-highlighted: var(--text-accent);
   --nav-item-color-hover: var(--text-normal);
   --nav-item-color-selected: var(--text-normal);
@@ -2257,7 +2327,10 @@ body {
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
   --popover-width: 450px;
-  --prompt-border-color: var(--panel-border-color);
+  --prompt-border-color: light-dark(
+    var(--panel-border-color),
+    var(--panel-border-color)
+  );
   --prompt-border-width: var(--border-width);
   --prompt-input-height: 40px;
   --prompt-max-height: 70vh;
@@ -2269,7 +2342,10 @@ body {
   --radius-s: 4px;
   --radius-xl: 16px;
   --red: light-dark(#e75545, #e06c75);
-  --ribbon-background: var(--background-primary);
+  --ribbon-background: light-dark(
+    var(--background-primary),
+    var(--background-primary)
+  );
   --ribbon-background-collapsed: var(--background-primary);
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
   --ribbon-width: 44px;
@@ -2335,7 +2411,7 @@ body {
   --tab-font-size: var(--font-ui-small);
   --tab-font-weight: inherit;
   --tab-max-width: 320px;
-  --tab-outline-color: black;
+  --tab-outline-color: var(--divider-color);
   --tab-outline-width: 1px;
   --tab-radius: var(--radius-s);
   --tab-radius-active: 6px 6px 0 0;
@@ -2397,18 +2473,24 @@ body {
   --table-text-color: inherit;
   --table-text-size: var(--font-text-size);
   --table-white-space: break-spaces;
-  --tag-background: var(--background-primary-alt);
-  --tag-background-hover: var(--background-primary-alt);
+  --tag-background: light-dark(
+    var(--background-primary-alt),
+    var(--background-primary-alt)
+  );
+  --tag-background-hover: light-dark(
+    var(--background-primary-alt),
+    var(--background-primary-alt)
+  );
   --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);
   --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);
   --tag-border-width: 0px;
-  --tag-color: var(--black);
-  --tag-color-hover: var(--black);
+  --tag-color: light-dark(var(--black), var(--black));
+  --tag-color-hover: light-dark(var(--black), var(--black));
   --tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-padding-x: 4px;
-  --tag-padding-y: 2px;
-  --tag-radius: 4px;
+  --tag-padding-x: 0.65em;
+  --tag-padding-y: 0.25em;
+  --tag-radius: 2em;
   --tag-size: var(--font-smaller);
   --tag-weight: inherit;
   --text-accent: light-dark(#1592ff, #4a473e);
@@ -2480,6 +2562,8 @@ body {
   --aqua: #0084bc;
   --background-accent: #fff;
   --background-modifier-border: #dbdbdc;
+  --background-modifier-border-focus: var(--interactive-hover);
+  --background-modifier-border-hover: var(--interactive-hover);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(0, 0, 0, 0.8);
   --background-modifier-error: #e68787;
@@ -2487,6 +2571,7 @@ body {
   --background-modifier-error-rgb: 230, 135, 135;
   --background-modifier-form-field: #fff;
   --background-modifier-form-field-highlighted: #fff;
+  --background-modifier-message: var(--background-secondary-alt);
   --background-modifier-success: #a4e7c3;
   --background-primary: #fafafa;
   --background-primary-alt: #eaeaeb;
@@ -2494,6 +2579,8 @@ body {
   --background-secondary-alt: #dbdbdc;
   --black: #ffffff;
   --blue: #3d74f6;
+  --checkbox-color: var(--text-accent);
+  --checkbox-color-hover: var(--text-accent-hover);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -2534,10 +2621,14 @@ body {
   --color-red-rgb: 233, 49, 71;
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
+  --divider-color: black;
+  --drag-ghost-background: var(--background-secondary-alt);
+  --embed-padding: 0 0 0 var(--size-4-4);
   --gray-1: #383a42;
   --gray-2: #383a42;
   --green: #4ea24c;
   --highlight-mix-blend-mode: darken;
+  --inline-title-weight: var(--bold-weight);
   --input-shadow:
     inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
@@ -2554,12 +2645,19 @@ body {
   --interactive-accent-rgb: 21, 146, 255;
   --interactive-hover: #dbdbdc;
   --interactive-normal: #eaeaeb;
+  --link-decoration: none;
+  --link-external-decoration: none;
+  --modal-border-color: var(--panel-border-color);
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
+  --nav-item-background-active: var(--interactive-accent);
+  --nav-item-color-active: #ffffff;
   --orange: #986800;
   --panel-border-color: #dbdbdc;
+  --prompt-border-color: var(--panel-border-color);
   --purple: #a625a4;
   --red: #e75545;
+  --ribbon-background: var(--background-primary);
   --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
   --scrollbar-bg: rgba(0, 0, 0, 0.05);
   --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
@@ -2569,6 +2667,14 @@ body {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
+  --tab-outline-color: black;
+  --tag-background: var(--background-primary-alt);
+  --tag-background-hover: var(--background-primary-alt);
+  --tag-color: var(--black);
+  --tag-color-hover: var(--black);
+  --tag-padding-x: 4px;
+  --tag-padding-y: 2px;
+  --tag-radius: 4px;
   --text-accent: #1592ff;
   --text-accent-hover: #097add;
   --text-error: #e75545;
@@ -2589,6 +2695,8 @@ body {
   --aqua: #56b6c2;
   --background-accent: #000;
   --background-modifier-border: #424958;
+  --background-modifier-border-focus: var(--interactive-hover);
+  --background-modifier-border-hover: var(--interactive-hover);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(0, 0, 0, 0.6);
   --background-modifier-error: #3d0000;
@@ -2602,6 +2710,7 @@ body {
     var(--accent-l),
     0.06
   );
+  --background-modifier-message: var(--background-secondary-alt);
   --background-modifier-success: #539126;
   --background-primary: #ddd8c7;
   --background-primary-alt: rgba(172, 167, 147, 255);
@@ -2622,6 +2731,8 @@ body {
   --callout-tip: var(--color-cyan-rgb);
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
+  --checkbox-color: var(--text-accent);
+  --checkbox-color-hover: var(--text-accent-hover);
   --code-background: rgba(255, 255, 255, 0.352);
   --code-keyword: rgb(188, 106, 124);
   --code-property: rgb(51, 77, 190);
@@ -2666,14 +2777,18 @@ body {
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
+  --divider-color: black;
   --divider-color-hover: #404754;
+  --drag-ghost-background: var(--background-secondary-alt);
   --dropdown-background: var(--interactive-normal);
+  --embed-padding: 0 0 0 var(--size-4-4);
   --gray-1: #5c6370;
   --gray-2: #abb2bf;
   --green: #98c379;
   --highlight-mix-blend-mode: darken;
   --icon-color: black;
   --indentation-guide-color: var(--interactive-accent);
+  --inline-title-weight: var(--bold-weight);
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
@@ -2691,18 +2806,25 @@ body {
   --interactive-hover: #aea395;
   --interactive-normal: #a7957d;
   --link-color: rgb(148, 3, 3);
+  --link-decoration: none;
   --link-external-color: rgb(46, 0, 184);
   --link-external-color-hover: red;
+  --link-external-decoration: none;
   --link-unresolved-color: rgb(57, 0, 0);
   --link-weight: 500;
+  --modal-border-color: var(--panel-border-color);
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
+  --nav-item-background-active: var(--interactive-accent);
+  --nav-item-color-active: #ffffff;
   --orange: #d19a66;
   --panel-border-color: #18191e;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+  --prompt-border-color: var(--panel-border-color);
   --purple: #c678dd;
   --red: #e06c75;
+  --ribbon-background: var(--background-primary);
   --scrollbar-active-thumb-bg: rgba(75, 70, 64, 0.9);
   --scrollbar-bg: rgba(255, 255, 255, 0.05);
   --scrollbar-thumb-bg: rgba(75, 70, 64, 0.7);
@@ -2712,6 +2834,14 @@ body {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
+  --tab-outline-color: black;
+  --tag-background: var(--background-primary-alt);
+  --tag-background-hover: var(--background-primary-alt);
+  --tag-color: var(--black);
+  --tag-color-hover: var(--black);
+  --tag-padding-x: 4px;
+  --tag-padding-y: 2px;
+  --tag-radius: 4px;
   --text-accent: #4a473e;
   --text-accent-hover: rgb(93, 66, 173);
   --text-error: #b11f2c;

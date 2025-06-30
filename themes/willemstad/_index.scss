@@ -23,9 +23,9 @@ html[saved-theme="dark"] {
     color: var(--shiki-dark);
   }
   --mono-rgb-100: 255, 255, 255;
-  --text-accent: #079d6b;
+  --text-accent: #00bd6e;
   --mono-rgb-100: 255, 255, 255;
-  --text-accent: #079d6b;
+  --text-accent: #00bd6e;
 }
 
 :root[saved-theme="light"],
@@ -9415,7 +9415,7 @@ body {
   --checkbox-border-color: #666666;
   --checkbox-border-color-hover: #b3b3b3;
   --checkbox-color: #078863;
-  --checkbox-color-hover: #079d6b;
+  --checkbox-color-hover: #00bd6e;
   --checkbox-marker-color: #fdfdfe;
   --checkbox-radius: 0.2rem;
   --checkbox-size: 16px;
@@ -9431,7 +9431,7 @@ body {
   --code-tag: #fb464c;
   --code-value: #a882ff;
   --collapse-icon-color: #666666;
-  --collapse-icon-color-collapsed: #079d6b;
+  --collapse-icon-color-collapsed: #00bd6e;
   --color-accent-2: light-dark(#079d6b, #05b373);
   --color-accent-hsl: light-dark(#078863, #078863);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
@@ -9473,10 +9473,10 @@ body {
   --inline-title-font: inherit;
   --interactive-accent-hsl: 163, 90%, 28%;
   --italic-color: inherit;
-  --link-color: #079d6b;
-  --link-color-hover: #05b373;
-  --link-external-color: #079d6b;
-  --link-external-color-hover: #05b373;
+  --link-color: #00bd6e;
+  --link-color-hover: #0d5459;
+  --link-external-color: #00bd6e;
+  --link-external-color-hover: #0d5459;
   --link-external-filter: none;
   --link-weight: 600;
   --p-spacing: 1rem;
@@ -9486,14 +9486,14 @@ body {
   --tag-border-color: #07886326;
   --tag-border-color-hover: #07886326;
   --tag-border-width: 0px;
-  --tag-color: #079d6b;
-  --tag-color-hover: #079d6b;
+  --tag-color: #00bd6e;
+  --tag-color-hover: #00bd6e;
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-radius: 2em;
   --tag-weight: inherit;
   --text-accent: #078863;
-  --text-accent-hover: #05b373;
+  --text-accent-hover: #0d5459;
   --text-faint: #666666;
   --text-highlight-bg: #ffd00066;
   --text-muted: #b3b3b3;
@@ -9502,7 +9502,7 @@ body {
   -webkit-user-select: none;
   background: none;
   background-color: #fdfdfe;
-  caret-color: #079d6b;
+  caret-color: #00bd6e;
   color: #dadada;
   contain: initial;
   font-family:
@@ -10434,10 +10434,7 @@ body {
         background-color: #fdfdfe;
         border: 0 solid #555555;
         border-radius: 0.6rem;
-        box-shadow:
-          0px 1.8px 7.3px #00000012,
-          0px 6.3px 24.7px #0000001d,
-          0px 30px 90px #00000033;
+        box-shadow: none;
         margin: 12vh auto;
         & > input {
           background-color: #fdfdfe;
@@ -10490,7 +10487,7 @@ body {
                 background-color: transparent;
                 color: #dadada;
                 &.match-tag {
-                  color: #079d6b;
+                  color: #00bd6e;
                 }
               }
             }
@@ -10555,10 +10552,7 @@ body {
     background-color: #fdfdfe;
     border: 1px solid transparent;
     border-radius: 0.4rem;
-    box-shadow:
-      0px 1px 2px #0000001f,
-      0px 3.4px 6.7px #0000002e,
-      0px 15px 30px #0000004d;
+    box-shadow: none;
     display: flex;
     max-height: 95vh;
     position: absolute;

@@ -952,6 +952,31 @@
   --accent-h: light-dark(145, 132);
   --accent-l: light-dark(17%, 83%);
   --accent-s: light-dark(100%, 79%);
+  --background-modifier-border: light-dark(
+    var(--color-base-30),
+    var(--color-base-30)
+  );
+  --background-modifier-border-focus: light-dark(
+    var(--color-base-40),
+    var(--color-base-40)
+  );
+  --background-modifier-border-hover: light-dark(
+    var(--color-base-30),
+    var(--color-base-30)
+  );
+  --background-modifier-form-field: light-dark(
+    var(--color-base-30),
+    var(--color-base-30)
+  );
+  --background-primary: light-dark(var(--color-base-20), var(--color-base-20));
+  --background-primary-alt: light-dark(
+    var(--color-base-30),
+    var(--color-base-30)
+  );
+  --background-secondary: light-dark(
+    var(--color-base-20),
+    var(--color-base-20)
+  );
   --background-secondary-alt: light-dark(
     var(--color-base-05),
     var(--color-base-30)
@@ -1013,6 +1038,8 @@
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
+  --interactive-hover: light-dark(var(--color-base-20), var(--color-base-20));
+  --interactive-normal: light-dark(var(--color-base-10), var(--color-base-10));
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
   --page-border: 9px solid transparent;
@@ -1023,6 +1050,8 @@
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
   --spreadHorizontalWrapped-margin-LR: -3.5px;
+  --text-accent: light-dark(var(--color-accent), var(--color-accent));
+  --text-accent-hover: light-dark(var(--color-accent-2), var(--color-accent-2));
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
@@ -1652,20 +1681,38 @@ body {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
-  --background-modifier-border: var(--color-base-30);
-  --background-modifier-border-focus: var(--color-base-40);
-  --background-modifier-border-hover: var(--color-base-30);
+  --background-modifier-border: light-dark(
+    var(--color-base-30),
+    var(--color-base-30)
+  );
+  --background-modifier-border-focus: light-dark(
+    var(--color-base-40),
+    var(--color-base-40)
+  );
+  --background-modifier-border-hover: light-dark(
+    var(--color-base-30),
+    var(--color-base-30)
+  );
   --background-modifier-error: var(--color-red);
   --background-modifier-error-hover: var(--color-red);
   --background-modifier-error-rgb: var(--color-red-rgb);
-  --background-modifier-form-field: var(--color-base-30);
+  --background-modifier-form-field: light-dark(
+    var(--color-base-30),
+    var(--color-base-30)
+  );
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-modifier-message: rgba(0, 0, 0, 0.9);
   --background-modifier-success: var(--color-green);
   --background-modifier-success-rgb: var(--color-green-rgb);
-  --background-primary: var(--color-base-20);
-  --background-primary-alt: var(--color-base-30);
-  --background-secondary: var(--color-base-20);
+  --background-primary: light-dark(var(--color-base-20), var(--color-base-20));
+  --background-primary-alt: light-dark(
+    var(--color-base-30),
+    var(--color-base-30)
+  );
+  --background-secondary: light-dark(
+    var(--color-base-20),
+    var(--color-base-20)
+  );
   --background-secondary-alt: light-dark(
     var(--color-base-05),
     var(--color-base-30)
@@ -2036,8 +2083,8 @@ body {
   --interactive-accent: var(--color-accent-1);
   --interactive-accent-hover: var(--color-accent-2);
   --interactive-accent-hsl: var(--color-accent-hsl);
-  --interactive-hover: var(--color-base-20);
-  --interactive-normal: var(--color-base-10);
+  --interactive-hover: light-dark(var(--color-base-20), var(--color-base-20));
+  --interactive-normal: light-dark(var(--color-base-10), var(--color-base-10));
   --italic-color: inherit;
   --italic-weight: inherit;
   --layer-cover: 5;
@@ -2359,8 +2406,8 @@ body {
   --tag-radius: 2em;
   --tag-size: var(--font-smaller);
   --tag-weight: inherit;
-  --text-accent: var(--color-accent);
-  --text-accent-hover: var(--color-accent-2);
+  --text-accent: light-dark(var(--color-accent), var(--color-accent));
+  --text-accent-hover: light-dark(var(--color-accent-2), var(--color-accent-2));
   --text-error: var(--color-red);
   --text-faint: var(--color-base-80);
   --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
@@ -2423,9 +2470,16 @@ body {
   --accent-h: 145;
   --accent-l: 17%;
   --accent-s: 100%;
+  --background-modifier-border: var(--color-base-30);
+  --background-modifier-border-focus: var(--color-base-40);
+  --background-modifier-border-hover: var(--color-base-30);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
-  --background-secondary-alt: var(--color-base-05);
+  --background-modifier-form-field: var(--color-base-30);
+  --background-primary: var(--color-base-20);
+  --background-primary-alt: var(--color-base-30);
+  --background-secondary: var(--color-base-20);
+  --background-secondary-alt: var(--color-base-30);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -2476,6 +2530,8 @@ body {
     inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
     0 0 0 0 transparent;
+  --interactive-hover: var(--color-base-20);
+  --interactive-normal: var(--color-base-10);
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
   --shadow-l:
@@ -2484,15 +2540,23 @@ body {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
+  --text-accent: var(--color-accent);
+  --text-accent-hover: var(--color-accent-2);
 }
 
 .theme-dark {
   --accent-h: 132;
   --accent-l: 83%;
   --accent-s: 79%;
+  --background-modifier-border: var(--color-base-30);
+  --background-modifier-border-focus: var(--color-base-40);
+  --background-modifier-border-hover: var(--color-base-30);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
-  --background-modifier-form-field: var(--color-base-25);
+  --background-modifier-form-field: var(--color-base-30);
+  --background-primary: var(--color-base-20);
+  --background-primary-alt: var(--color-base-30);
+  --background-secondary: var(--color-base-20);
   --background-secondary-alt: var(--color-base-30);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
@@ -2546,8 +2610,8 @@ body {
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
   --interactive-accent: var(--color-accent);
   --interactive-accent-hover: var(--color-accent-1);
-  --interactive-hover: var(--color-base-35);
-  --interactive-normal: var(--color-base-30);
+  --interactive-hover: var(--color-base-20);
+  --interactive-normal: var(--color-base-10);
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
@@ -2558,7 +2622,8 @@ body {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
-  --text-accent: var(--color-accent-1);
+  --text-accent: var(--color-accent);
+  --text-accent-hover: var(--color-accent-2);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
 }
 

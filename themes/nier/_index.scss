@@ -23,9 +23,11 @@ html[saved-theme="dark"] {
     color: var(--shiki-dark);
   }
   --mono-rgb-100: 255, 255, 255;
+  --tag-radius: 4px;
 
   --text-highlight-bg: #f0ece0;
   --mono-rgb-100: 255, 255, 255;
+  --tag-radius: 4px;
 
   --text-highlight-bg: #f0ece0;
 }
@@ -196,7 +198,11 @@ html[saved-theme="dark"] {
 
 :root {
   --background-modifier-border: light-dark(#dbdbdc, #424958);
+  --background-modifier-border-focus: light-dark(#aea395, #aea395);
+  --background-modifier-border-hover: light-dark(#aea395, #aea395);
   --background-primary: light-dark(#fafafa, #ddd8c7);
+  --checkbox-color: light-dark(#4a473e, #4a473e);
+  --checkbox-color-hover: light-dark(#5d42ad, #5d42ad);
   --color-accent-2: light-dark(#6c97d7, #89afe0);
   --color-accent-hsl: light-dark(#4c79cd, #4c79cd);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
@@ -215,6 +221,10 @@ html[saved-theme="dark"] {
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
+  --tag-background: light-dark(#aca793, #aca793);
+  --tag-background-hover: light-dark(#aca793, #aca793);
+  --tag-color: light-dark(#ffffff, #ffffff);
+  --tag-color-hover: light-dark(#ffffff, #ffffff);
   --text-accent: light-dark(#1592ff, #4a473e);
   --text-accent-hover: light-dark(#097add, #5d42ad);
   --text-faint: light-dark(#999999, #515663);
@@ -257,8 +267,8 @@ html {
 }
 body {
   --background-modifier-border: light-dark(#dbdbdc, #424958);
-  --background-modifier-border-focus: #aea395;
-  --background-modifier-border-hover: #aea395;
+  --background-modifier-border-focus: light-dark(#aea395, #aea395);
+  --background-modifier-border-hover: light-dark(#aea395, #aea395);
   --background-modifier-hover: #ffffff11;
   --background-primary: light-dark(#fafafa, #ddd8c7);
   --background-primary-alt: #111;
@@ -266,8 +276,8 @@ body {
   --bold-weight: 700;
   --checkbox-border-color: #515663;
   --checkbox-border-color-hover: #696868;
-  --checkbox-color: #4a473e;
-  --checkbox-color-hover: #5d42ad;
+  --checkbox-color: light-dark(#4a473e, #4a473e);
+  --checkbox-color-hover: light-dark(#5d42ad, #5d42ad);
   --checkbox-marker-color: #ddd8c7;
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
@@ -333,16 +343,16 @@ body {
   --link-weight: 500;
   --p-spacing: 1rem;
   --search-icon-color: #696868;
-  --tag-background: #aca793;
-  --tag-background-hover: #aca793;
+  --tag-background: light-dark(#aca793, #aca793);
+  --tag-background-hover: light-dark(#aca793, #aca793);
   --tag-border-color: #4c79cd26;
   --tag-border-color-hover: #4c79cd26;
   --tag-border-width: 0px;
-  --tag-color: #ffffff;
-  --tag-color-hover: #ffffff;
+  --tag-color: light-dark(#ffffff, #ffffff);
+  --tag-color-hover: light-dark(#ffffff, #ffffff);
   --tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-radius: 4px;
+  --tag-radius: 2em;
   --tag-weight: inherit;
   --text-accent: light-dark(#1592ff, #4a473e);
   --text-accent-hover: light-dark(#097add, #5d42ad);
@@ -1172,7 +1182,7 @@ body {
           &.active,
           &:hover {
             background-color: light-dark(#fcfcfc, #212121);
-            color: #ffffff;
+            color: light-dark(#ffffff, #ffffff);
             font-weight: inherit;
           }
           &[data-for$="/index"] {
@@ -1319,7 +1329,8 @@ body {
     & > .search-container {
       & > .search-space {
         background-color: light-dark(#fafafa, #ddd8c7);
-        border: 0.5pt solid #18191e;
+        border: 0.5pt solid
+          light-dark(light-dark(#dbdbdc, #18191e), light-dark(#dbdbdc, #18191e));
         border-radius: 12px;
         box-shadow:
           0px 1.8px 7.3px #00000012,

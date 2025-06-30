@@ -270,6 +270,14 @@
     var(--theme-color-baseLightened25),
     var(--theme-color-baseDarkened25)
   );
+  --theme-color-blueDarkened: light-dark(
+    hsl(from var(--color-blue) h calc(s * 1.5) calc(l * 0.5)),
+    hsl(from var(--color-blue) h calc(s * 1.5) calc(l * 0.5))
+  );
+  --theme-color-blueLightened: light-dark(
+    hsl(from var(--color-blue) h calc(s * 1.5) calc(l * 1.5)),
+    hsl(from var(--color-blue) h calc(s * 1.5) calc(l * 1.5))
+  );
   --theme-color-calendarDayBg: light-dark(
     var(--theme-color-lightenTransparent75),
     var(--theme-color-darkenTransparent50)
@@ -354,6 +362,14 @@
     var(--theme-color-baseLightened80),
     var(--theme-color-baseDarkened70)
   );
+  --theme-color-cyanDarkened: light-dark(
+    hsl(from var(--color-cyan) h calc(s * 1.5) calc(l * 0.5)),
+    hsl(from var(--color-cyan) h calc(s * 1.5) calc(l * 0.5))
+  );
+  --theme-color-cyanLightened: light-dark(
+    hsl(from var(--color-cyan) h calc(s * 1.5) calc(l * 1.5)),
+    hsl(from var(--color-cyan) h calc(s * 1.5) calc(l * 1.5))
+  );
   --theme-color-emptyStateBg: light-dark(
     var(--theme-color-baseLightened80),
     var(--theme-color-baseDarkened80)
@@ -365,6 +381,22 @@
   --theme-color-gradientCardsetTop: light-dark(
     var(--theme-color-baseTransparent12),
     var(--theme-color-baseTransparent06)
+  );
+  --theme-color-greenDarkened: light-dark(
+    hsl(from var(--color-green) h calc(s * 1.5) calc(l * 0.5)),
+    hsl(from var(--color-green) h calc(s * 1.5) calc(l * 0.5))
+  );
+  --theme-color-greenLightened: light-dark(
+    hsl(from var(--color-green) h calc(s * 1.5) calc(l * 1.5)),
+    hsl(from var(--color-green) h calc(s * 1.5) calc(l * 1.5))
+  );
+  --theme-color-greenTransparent25: light-dark(
+    hsl(from var(--color-green) h s l / 0.25),
+    hsl(from var(--color-green) h s l / 0.25)
+  );
+  --theme-color-greenTransparent75: light-dark(
+    hsl(from var(--color-green) h s l / 0.75),
+    hsl(from var(--color-green) h s l / 0.75)
   );
   --theme-color-hotkey: light-dark(
     var(--theme-color-base),
@@ -430,9 +462,57 @@
     var(--theme-color-baseDarkened80),
     var(--theme-color-baseLightened95)
   );
+  --theme-color-orangeDarkened: light-dark(
+    hsl(from var(--color-orange) h calc(s * 1.5) calc(l * 0.5)),
+    hsl(from var(--color-orange) h calc(s * 1.5) calc(l * 0.5))
+  );
+  --theme-color-orangeLightened: light-dark(
+    hsl(from var(--color-orange) h calc(s * 1.5) calc(l * 1.5)),
+    hsl(from var(--color-orange) h calc(s * 1.5) calc(l * 1.5))
+  );
+  --theme-color-orangeTransparent25: light-dark(
+    hsl(from var(--color-orange) h s l / 0.25),
+    hsl(from var(--color-orange) h s l / 0.25)
+  );
+  --theme-color-orangeTransparent75: light-dark(
+    hsl(from var(--color-orange) h s l / 0.75),
+    hsl(from var(--color-orange) h s l / 0.75)
+  );
+  --theme-color-pinkDarkened: light-dark(
+    hsl(from var(--color-pink) h calc(s * 1.5) calc(l * 0.5)),
+    hsl(from var(--color-pink) h calc(s * 1.5) calc(l * 0.5))
+  );
+  --theme-color-pinkLightened: light-dark(
+    hsl(from var(--color-pink) h calc(s * 1.5) calc(l * 1.5)),
+    hsl(from var(--color-pink) h calc(s * 1.5) calc(l * 1.5))
+  );
   --theme-color-promptInstructions: light-dark(
     var(--theme-color-baseDarkened40),
     var(--theme-color-baseLightened40)
+  );
+  --theme-color-purpleDarkened: light-dark(
+    hsl(from var(--color-purple) h calc(s * 1.5) calc(l * 0.5)),
+    hsl(from var(--color-purple) h calc(s * 1.5) calc(l * 0.5))
+  );
+  --theme-color-purpleLightened: light-dark(
+    hsl(from var(--color-purple) h calc(s * 1.5) calc(l * 1.5)),
+    hsl(from var(--color-purple) h calc(s * 1.5) calc(l * 1.5))
+  );
+  --theme-color-redDarkened: light-dark(
+    hsl(from var(--color-red) h calc(s * 1.5) calc(l * 0.5)),
+    hsl(from var(--color-red) h calc(s * 1.5) calc(l * 0.5))
+  );
+  --theme-color-redLightened: light-dark(
+    hsl(from var(--color-red) h calc(s * 1.5) calc(l * 1.5)),
+    hsl(from var(--color-red) h calc(s * 1.5) calc(l * 1.5))
+  );
+  --theme-color-redTransparent25: light-dark(
+    hsl(from var(--color-red) h s l / 0.25),
+    hsl(from var(--color-red) h s l / 0.25)
+  );
+  --theme-color-redTransparent75: light-dark(
+    hsl(from var(--color-red) h s l / 0.75),
+    hsl(from var(--color-red) h s l / 0.75)
   );
   --theme-color-settingsBg: light-dark(
     var(--theme-color-baseLightened80),
@@ -543,6 +623,22 @@
   --theme-color-warningBg: light-dark(
     var(--theme-color-baseLightened95),
     var(--theme-color-baseLightened95)
+  );
+  --theme-color-yellowDarkened: light-dark(
+    hsl(from var(--color-yellow) h calc(s * 1.5) calc(l * 0.5)),
+    hsl(from var(--color-yellow) h calc(s * 1.5) calc(l * 0.5))
+  );
+  --theme-color-yellowLightened: light-dark(
+    hsl(from var(--color-yellow) h calc(s * 1.5) calc(l * 1.5)),
+    hsl(from var(--color-yellow) h calc(s * 1.5) calc(l * 1.5))
+  );
+  --theme-color-yellowTransparent25: light-dark(
+    hsl(from var(--color-yellow) h s l / 0.25),
+    hsl(from var(--color-yellow) h s l / 0.25)
+  );
+  --theme-color-yellowTransparent75: light-dark(
+    hsl(from var(--color-yellow) h s l / 0.75),
+    hsl(from var(--color-yellow) h s l / 0.75)
   );
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
@@ -1584,11 +1680,13 @@ body {
     var(--theme-color-baseLightened25),
     var(--theme-color-baseDarkened25)
   );
-  --theme-color-blueDarkened: hsl(
-    from var(--color-blue) h calc(s * 1.5) calc(l * 0.5)
+  --theme-color-blueDarkened: light-dark(
+    hsl(from var(--color-blue) h calc(s * 1.5) calc(l * 0.5)),
+    hsl(from var(--color-blue) h calc(s * 1.5) calc(l * 0.5))
   );
-  --theme-color-blueLightened: hsl(
-    from var(--color-blue) h calc(s * 1.5) calc(l * 1.5)
+  --theme-color-blueLightened: light-dark(
+    hsl(from var(--color-blue) h calc(s * 1.5) calc(l * 1.5)),
+    hsl(from var(--color-blue) h calc(s * 1.5) calc(l * 1.5))
   );
   --theme-color-calendarBg: light-dark(
     var(--theme-color-baseLightened85),
@@ -1683,11 +1781,13 @@ body {
     var(--theme-color-baseLightened80),
     var(--theme-color-baseDarkened70)
   );
-  --theme-color-cyanDarkened: hsl(
-    from var(--color-cyan) h calc(s * 1.5) calc(l * 0.5)
+  --theme-color-cyanDarkened: light-dark(
+    hsl(from var(--color-cyan) h calc(s * 1.5) calc(l * 0.5)),
+    hsl(from var(--color-cyan) h calc(s * 1.5) calc(l * 0.5))
   );
-  --theme-color-cyanLightened: hsl(
-    from var(--color-cyan) h calc(s * 1.5) calc(l * 1.5)
+  --theme-color-cyanLightened: light-dark(
+    hsl(from var(--color-cyan) h calc(s * 1.5) calc(l * 1.5)),
+    hsl(from var(--color-cyan) h calc(s * 1.5) calc(l * 1.5))
   );
   --theme-color-darkenTransparent06: hsl(from black h s l / 0.06);
   --theme-color-darkenTransparent12: hsl(from black h s l / 0.12);
@@ -1712,14 +1812,22 @@ body {
     var(--theme-color-baseTransparent06)
   );
   --theme-color-graphViewBg: transparent;
-  --theme-color-greenDarkened: hsl(
-    from var(--color-green) h calc(s * 1.5) calc(l * 0.5)
+  --theme-color-greenDarkened: light-dark(
+    hsl(from var(--color-green) h calc(s * 1.5) calc(l * 0.5)),
+    hsl(from var(--color-green) h calc(s * 1.5) calc(l * 0.5))
   );
-  --theme-color-greenLightened: hsl(
-    from var(--color-green) h calc(s * 1.5) calc(l * 1.5)
+  --theme-color-greenLightened: light-dark(
+    hsl(from var(--color-green) h calc(s * 1.5) calc(l * 1.5)),
+    hsl(from var(--color-green) h calc(s * 1.5) calc(l * 1.5))
   );
-  --theme-color-greenTransparent25: hsl(from var(--color-green) h s l / 0.25);
-  --theme-color-greenTransparent75: hsl(from var(--color-green) h s l / 0.75);
+  --theme-color-greenTransparent25: light-dark(
+    hsl(from var(--color-green) h s l / 0.25),
+    hsl(from var(--color-green) h s l / 0.25)
+  );
+  --theme-color-greenTransparent75: light-dark(
+    hsl(from var(--color-green) h s l / 0.75),
+    hsl(from var(--color-green) h s l / 0.75)
+  );
   --theme-color-hotkey: light-dark(
     var(--theme-color-base),
     var(--theme-color-base)
@@ -1821,38 +1929,58 @@ body {
     var(--theme-color-baseDarkened80),
     var(--theme-color-baseLightened95)
   );
-  --theme-color-orangeDarkened: hsl(
-    from var(--color-orange) h calc(s * 1.5) calc(l * 0.5)
+  --theme-color-orangeDarkened: light-dark(
+    hsl(from var(--color-orange) h calc(s * 1.5) calc(l * 0.5)),
+    hsl(from var(--color-orange) h calc(s * 1.5) calc(l * 0.5))
   );
-  --theme-color-orangeLightened: hsl(
-    from var(--color-orange) h calc(s * 1.5) calc(l * 1.5)
+  --theme-color-orangeLightened: light-dark(
+    hsl(from var(--color-orange) h calc(s * 1.5) calc(l * 1.5)),
+    hsl(from var(--color-orange) h calc(s * 1.5) calc(l * 1.5))
   );
-  --theme-color-orangeTransparent25: hsl(from var(--color-orange) h s l / 0.25);
-  --theme-color-orangeTransparent75: hsl(from var(--color-orange) h s l / 0.75);
-  --theme-color-pinkDarkened: hsl(
-    from var(--color-pink) h calc(s * 1.5) calc(l * 0.5)
+  --theme-color-orangeTransparent25: light-dark(
+    hsl(from var(--color-orange) h s l / 0.25),
+    hsl(from var(--color-orange) h s l / 0.25)
   );
-  --theme-color-pinkLightened: hsl(
-    from var(--color-pink) h calc(s * 1.5) calc(l * 1.5)
+  --theme-color-orangeTransparent75: light-dark(
+    hsl(from var(--color-orange) h s l / 0.75),
+    hsl(from var(--color-orange) h s l / 0.75)
+  );
+  --theme-color-pinkDarkened: light-dark(
+    hsl(from var(--color-pink) h calc(s * 1.5) calc(l * 0.5)),
+    hsl(from var(--color-pink) h calc(s * 1.5) calc(l * 0.5))
+  );
+  --theme-color-pinkLightened: light-dark(
+    hsl(from var(--color-pink) h calc(s * 1.5) calc(l * 1.5)),
+    hsl(from var(--color-pink) h calc(s * 1.5) calc(l * 1.5))
   );
   --theme-color-promptInstructions: light-dark(
     var(--theme-color-baseDarkened40),
     var(--theme-color-baseLightened40)
   );
-  --theme-color-purpleDarkened: hsl(
-    from var(--color-purple) h calc(s * 1.5) calc(l * 0.5)
+  --theme-color-purpleDarkened: light-dark(
+    hsl(from var(--color-purple) h calc(s * 1.5) calc(l * 0.5)),
+    hsl(from var(--color-purple) h calc(s * 1.5) calc(l * 0.5))
   );
-  --theme-color-purpleLightened: hsl(
-    from var(--color-purple) h calc(s * 1.5) calc(l * 1.5)
+  --theme-color-purpleLightened: light-dark(
+    hsl(from var(--color-purple) h calc(s * 1.5) calc(l * 1.5)),
+    hsl(from var(--color-purple) h calc(s * 1.5) calc(l * 1.5))
   );
-  --theme-color-redDarkened: hsl(
-    from var(--color-red) h calc(s * 1.5) calc(l * 0.5)
+  --theme-color-redDarkened: light-dark(
+    hsl(from var(--color-red) h calc(s * 1.5) calc(l * 0.5)),
+    hsl(from var(--color-red) h calc(s * 1.5) calc(l * 0.5))
   );
-  --theme-color-redLightened: hsl(
-    from var(--color-red) h calc(s * 1.5) calc(l * 1.5)
+  --theme-color-redLightened: light-dark(
+    hsl(from var(--color-red) h calc(s * 1.5) calc(l * 1.5)),
+    hsl(from var(--color-red) h calc(s * 1.5) calc(l * 1.5))
   );
-  --theme-color-redTransparent25: hsl(from var(--color-red) h s l / 0.25);
-  --theme-color-redTransparent75: hsl(from var(--color-red) h s l / 0.75);
+  --theme-color-redTransparent25: light-dark(
+    hsl(from var(--color-red) h s l / 0.25),
+    hsl(from var(--color-red) h s l / 0.25)
+  );
+  --theme-color-redTransparent75: light-dark(
+    hsl(from var(--color-red) h s l / 0.75),
+    hsl(from var(--color-red) h s l / 0.75)
+  );
   --theme-color-settingsBg: light-dark(
     var(--theme-color-baseLightened80),
     var(--theme-color-baseDarkened80)
@@ -1973,14 +2101,22 @@ body {
     var(--theme-color-baseLightened95),
     var(--theme-color-baseLightened95)
   );
-  --theme-color-yellowDarkened: hsl(
-    from var(--color-yellow) h calc(s * 1.5) calc(l * 0.5)
+  --theme-color-yellowDarkened: light-dark(
+    hsl(from var(--color-yellow) h calc(s * 1.5) calc(l * 0.5)),
+    hsl(from var(--color-yellow) h calc(s * 1.5) calc(l * 0.5))
   );
-  --theme-color-yellowLightened: hsl(
-    from var(--color-yellow) h calc(s * 1.5) calc(l * 1.5)
+  --theme-color-yellowLightened: light-dark(
+    hsl(from var(--color-yellow) h calc(s * 1.5) calc(l * 1.5)),
+    hsl(from var(--color-yellow) h calc(s * 1.5) calc(l * 1.5))
   );
-  --theme-color-yellowTransparent25: hsl(from var(--color-yellow) h s l / 0.25);
-  --theme-color-yellowTransparent75: hsl(from var(--color-yellow) h s l / 0.75);
+  --theme-color-yellowTransparent25: light-dark(
+    hsl(from var(--color-yellow) h s l / 0.25),
+    hsl(from var(--color-yellow) h s l / 0.25)
+  );
+  --theme-color-yellowTransparent75: light-dark(
+    hsl(from var(--color-yellow) h s l / 0.75),
+    hsl(from var(--color-yellow) h s l / 0.75)
+  );
   --theme-gradient-bottomToTop: linear-gradient(
     0deg,
     var(--theme-color-gradientBottom) 0%,
@@ -3010,21 +3146,21 @@ svg.svg-icon {
   --color-base-50: #666666;
   --color-base-60: #999999;
   --color-base-70: #b3b3b3;
-  --color-blue: #027aff;
+  --color-blue: hsl(from var(--theme-color-base) 219 s l);
   --color-blue-rgb: 2, 122, 255;
-  --color-cyan: #53dfdd;
+  --color-cyan: hsl(from var(--theme-color-base) 179 s l);
   --color-cyan-rgb: 83, 223, 221;
-  --color-green: #44cf6e;
+  --color-green: hsl(from var(--theme-color-base) 124 s l);
   --color-green-rgb: 68, 207, 110;
-  --color-orange: #e9973f;
+  --color-orange: hsl(from var(--theme-color-base) 27 s l);
   --color-orange-rgb: 233, 151, 63;
-  --color-pink: #fa99cd;
+  --color-pink: hsl(from var(--theme-color-base) 331 s l);
   --color-pink-rgb: 250, 153, 205;
-  --color-purple: #a882ff;
+  --color-purple: hsl(from var(--theme-color-base) 253 s l);
   --color-purple-rgb: 168, 130, 255;
-  --color-red: #fb464c;
+  --color-red: hsl(from var(--theme-color-base) 356 s l);
   --color-red-rgb: 251, 70, 76;
-  --color-yellow: #e0de71;
+  --color-yellow: hsl(from var(--theme-color-base) 57 s l);
   --color-yellow-rgb: 224, 222, 113;
   --empty-pane-color: var(--theme-color-baseDarkened70);
   --highlight-mix-blend-mode: darken;
@@ -3098,6 +3234,12 @@ svg.svg-icon {
   --theme-color-activeLineHighlight: var(--theme-color-baseTransparent12);
   --theme-color-audioRecordingActive: var(--theme-color-redLightened);
   --theme-color-blockId: var(--theme-color-baseDarkened25);
+  --theme-color-blueDarkened: hsl(
+    from var(--color-blue) h calc(s * 1.5) calc(l * 0.5)
+  );
+  --theme-color-blueLightened: hsl(
+    from var(--color-blue) h calc(s * 1.5) calc(l * 1.5)
+  );
   --theme-color-calendarDayBg: var(--theme-color-darkenTransparent50);
   --theme-color-communityItemBg: var(--theme-color-baseDarkened80);
   --theme-color-communityItemBgActive: var(--theme-color-base);
@@ -3119,6 +3261,12 @@ svg.svg-icon {
   --theme-color-controlTextHover: var(--theme-color-baseDarkened80);
   --theme-color-controlUIHover: var(--theme-color-baseDarkened70);
   --theme-color-controlUISelected: var(--theme-color-baseDarkened70);
+  --theme-color-cyanDarkened: hsl(
+    from var(--color-cyan) h calc(s * 1.5) calc(l * 0.5)
+  );
+  --theme-color-cyanLightened: hsl(
+    from var(--color-cyan) h calc(s * 1.5) calc(l * 1.5)
+  );
   --theme-color-emptyStateBg: var(--theme-color-baseDarkened80);
   --theme-color-gradientBottom: color-mix(
     in srgb,
@@ -3139,6 +3287,14 @@ svg.svg-icon {
     black calc(100% * (0.7 - 0.5 * var(--theme-value-gradientContrast)))
   );
   --theme-color-graphLine: white;
+  --theme-color-greenDarkened: hsl(
+    from var(--color-green) h calc(s * 1.5) calc(l * 0.5)
+  );
+  --theme-color-greenLightened: hsl(
+    from var(--color-green) h calc(s * 1.5) calc(l * 1.5)
+  );
+  --theme-color-greenTransparent25: hsl(from var(--color-green) h s l / 0.25);
+  --theme-color-greenTransparent75: hsl(from var(--color-green) h s l / 0.75);
   --theme-color-hotkey: var(--theme-color-base);
   --theme-color-inputBorder: var(--theme-color-baseLightened25);
   --theme-color-inputPlaceholder: var(--theme-color-base);
@@ -3155,7 +3311,35 @@ svg.svg-icon {
   --theme-color-navFileTagBorder: var(--theme-color-baseDarkened25);
   --theme-color-notice: var(--theme-color-baseDarkened90);
   --theme-color-noticeBg: var(--theme-color-baseLightened95);
+  --theme-color-orangeDarkened: hsl(
+    from var(--color-orange) h calc(s * 1.5) calc(l * 0.5)
+  );
+  --theme-color-orangeLightened: hsl(
+    from var(--color-orange) h calc(s * 1.5) calc(l * 1.5)
+  );
+  --theme-color-orangeTransparent25: hsl(from var(--color-orange) h s l / 0.25);
+  --theme-color-orangeTransparent75: hsl(from var(--color-orange) h s l / 0.75);
+  --theme-color-pinkDarkened: hsl(
+    from var(--color-pink) h calc(s * 1.5) calc(l * 0.5)
+  );
+  --theme-color-pinkLightened: hsl(
+    from var(--color-pink) h calc(s * 1.5) calc(l * 1.5)
+  );
   --theme-color-promptInstructions: var(--theme-color-baseLightened40);
+  --theme-color-purpleDarkened: hsl(
+    from var(--color-purple) h calc(s * 1.5) calc(l * 0.5)
+  );
+  --theme-color-purpleLightened: hsl(
+    from var(--color-purple) h calc(s * 1.5) calc(l * 1.5)
+  );
+  --theme-color-redDarkened: hsl(
+    from var(--color-red) h calc(s * 1.5) calc(l * 0.5)
+  );
+  --theme-color-redLightened: hsl(
+    from var(--color-red) h calc(s * 1.5) calc(l * 1.5)
+  );
+  --theme-color-redTransparent25: hsl(from var(--color-red) h s l / 0.25);
+  --theme-color-redTransparent75: hsl(from var(--color-red) h s l / 0.75);
   --theme-color-settingsBg: var(--theme-color-baseDarkened80);
   --theme-color-settingsBgStripe: var(--theme-color-baseDarkened90);
   --theme-color-settingsGroupBg: var(--theme-color-darkenTransparent50);
@@ -3202,6 +3386,14 @@ svg.svg-icon {
   --theme-color-textMeta: var(--theme-color-base);
   --theme-color-textSelected: var(--theme-color-baseDarkened80);
   --theme-color-warningBg: var(--theme-color-baseLightened95);
+  --theme-color-yellowDarkened: hsl(
+    from var(--color-yellow) h calc(s * 1.5) calc(l * 0.5)
+  );
+  --theme-color-yellowLightened: hsl(
+    from var(--color-yellow) h calc(s * 1.5) calc(l * 1.5)
+  );
+  --theme-color-yellowTransparent25: hsl(from var(--color-yellow) h s l / 0.25);
+  --theme-color-yellowTransparent75: hsl(from var(--color-yellow) h s l / 0.75);
   --theme-shadow-control: 0px 1px 2px
     hsl(
       var(--base-h),
@@ -3273,21 +3465,21 @@ svg.svg-icon {
   --color-base-50: #ababab;
   --color-base-60: #707070;
   --color-base-70: #5c5c5c;
-  --color-blue: #086ddd;
+  --color-blue: hsl(from var(--theme-color-base) 219 s l);
   --color-blue-rgb: 8, 109, 221;
-  --color-cyan: #00bfbc;
+  --color-cyan: hsl(from var(--theme-color-base) 179 s l);
   --color-cyan-rgb: 0, 191, 188;
-  --color-green: #08b94e;
+  --color-green: hsl(from var(--theme-color-base) 124 s l);
   --color-green-rgb: 8, 185, 78;
-  --color-orange: #ec7500;
+  --color-orange: hsl(from var(--theme-color-base) 27 s l);
   --color-orange-rgb: 236, 117, 0;
-  --color-pink: #d53984;
+  --color-pink: hsl(from var(--theme-color-base) 331 s l);
   --color-pink-rgb: 213, 57, 132;
-  --color-purple: #7852ee;
+  --color-purple: hsl(from var(--theme-color-base) 253 s l);
   --color-purple-rgb: 120, 82, 238;
-  --color-red: #e93147;
+  --color-red: hsl(from var(--theme-color-base) 356 s l);
   --color-red-rgb: 233, 49, 71;
-  --color-yellow: #e0ac00;
+  --color-yellow: hsl(from var(--theme-color-base) 57 s l);
   --color-yellow-rgb: 224, 172, 0;
   --empty-pane-color: var(--theme-color-baseDarkened70);
   --highlight-mix-blend-mode: darken;
@@ -3361,6 +3553,12 @@ svg.svg-icon {
   --theme-color-activeLineHighlight: var(--theme-color-baseTransparent12);
   --theme-color-audioRecordingActive: var(--theme-color-redDarkened);
   --theme-color-blockId: var(--theme-color-baseLightened25);
+  --theme-color-blueDarkened: hsl(
+    from var(--color-blue) h calc(s * 1.5) calc(l * 0.5)
+  );
+  --theme-color-blueLightened: hsl(
+    from var(--color-blue) h calc(s * 1.5) calc(l * 1.5)
+  );
   --theme-color-calendarDayBg: var(--theme-color-lightenTransparent75);
   --theme-color-communityItemBg: var(--theme-color-baseLightened80);
   --theme-color-communityItemBgActive: var(--theme-color-base);
@@ -3382,6 +3580,12 @@ svg.svg-icon {
   --theme-color-controlTextHover: var(--theme-color-baseLightened80);
   --theme-color-controlUIHover: var(--theme-color-baseLightened60);
   --theme-color-controlUISelected: var(--theme-color-baseLightened80);
+  --theme-color-cyanDarkened: hsl(
+    from var(--color-cyan) h calc(s * 1.5) calc(l * 0.5)
+  );
+  --theme-color-cyanLightened: hsl(
+    from var(--color-cyan) h calc(s * 1.5) calc(l * 1.5)
+  );
   --theme-color-emptyStateBg: var(--theme-color-baseLightened80);
   --theme-color-gradientBottom: color-mix(
     in srgb,
@@ -3412,6 +3616,14 @@ svg.svg-icon {
     white calc(100% * (0.5 + 0.5 * var(--theme-value-gradientContrast)))
   );
   --theme-color-graphLine: black;
+  --theme-color-greenDarkened: hsl(
+    from var(--color-green) h calc(s * 1.5) calc(l * 0.5)
+  );
+  --theme-color-greenLightened: hsl(
+    from var(--color-green) h calc(s * 1.5) calc(l * 1.5)
+  );
+  --theme-color-greenTransparent25: hsl(from var(--color-green) h s l / 0.25);
+  --theme-color-greenTransparent75: hsl(from var(--color-green) h s l / 0.75);
   --theme-color-hotkey: var(--theme-color-base);
   --theme-color-inputBorder: var(--theme-color-baseLightened25);
   --theme-color-inputPlaceholder: var(--theme-color-base);
@@ -3428,7 +3640,35 @@ svg.svg-icon {
   --theme-color-navFileTagBorder: var(--theme-color-base);
   --theme-color-notice: var(--theme-color-baseLightened95);
   --theme-color-noticeBg: var(--theme-color-baseDarkened80);
+  --theme-color-orangeDarkened: hsl(
+    from var(--color-orange) h calc(s * 1.5) calc(l * 0.5)
+  );
+  --theme-color-orangeLightened: hsl(
+    from var(--color-orange) h calc(s * 1.5) calc(l * 1.5)
+  );
+  --theme-color-orangeTransparent25: hsl(from var(--color-orange) h s l / 0.25);
+  --theme-color-orangeTransparent75: hsl(from var(--color-orange) h s l / 0.75);
+  --theme-color-pinkDarkened: hsl(
+    from var(--color-pink) h calc(s * 1.5) calc(l * 0.5)
+  );
+  --theme-color-pinkLightened: hsl(
+    from var(--color-pink) h calc(s * 1.5) calc(l * 1.5)
+  );
   --theme-color-promptInstructions: var(--theme-color-baseDarkened40);
+  --theme-color-purpleDarkened: hsl(
+    from var(--color-purple) h calc(s * 1.5) calc(l * 0.5)
+  );
+  --theme-color-purpleLightened: hsl(
+    from var(--color-purple) h calc(s * 1.5) calc(l * 1.5)
+  );
+  --theme-color-redDarkened: hsl(
+    from var(--color-red) h calc(s * 1.5) calc(l * 0.5)
+  );
+  --theme-color-redLightened: hsl(
+    from var(--color-red) h calc(s * 1.5) calc(l * 1.5)
+  );
+  --theme-color-redTransparent25: hsl(from var(--color-red) h s l / 0.25);
+  --theme-color-redTransparent75: hsl(from var(--color-red) h s l / 0.75);
   --theme-color-settingsBg: var(--theme-color-baseLightened80);
   --theme-color-settingsBgStripe: var(--theme-color-baseLightened95);
   --theme-color-settingsGroupBg: var(--theme-color-lightenTransparent50);
@@ -3475,6 +3715,14 @@ svg.svg-icon {
   --theme-color-textMeta: var(--theme-color-base);
   --theme-color-textSelected: var(--theme-color-baseLightened80);
   --theme-color-warningBg: var(--theme-color-baseLightened95);
+  --theme-color-yellowDarkened: hsl(
+    from var(--color-yellow) h calc(s * 1.5) calc(l * 0.5)
+  );
+  --theme-color-yellowLightened: hsl(
+    from var(--color-yellow) h calc(s * 1.5) calc(l * 1.5)
+  );
+  --theme-color-yellowTransparent25: hsl(from var(--color-yellow) h s l / 0.25);
+  --theme-color-yellowTransparent75: hsl(from var(--color-yellow) h s l / 0.75);
   --theme-shadow-control: 0 1px 2px
     hsl(
       var(--base-h),

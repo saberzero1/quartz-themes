@@ -56,6 +56,8 @@
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
+  --interactive-accent: light-dark(#00aaad, #00aaad);
+  --interactive-accent-hover: light-dark(#00aaad, #00aaad);
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
   --page-border: 9px solid transparent;
@@ -66,6 +68,8 @@
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
   --spreadHorizontalWrapped-margin-LR: -3.5px;
+  --text-accent: light-dark(#00aaad, #00aaad);
+  --text-accent-hover: light-dark(#00aaad, #00aaad);
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
@@ -462,8 +466,8 @@ body {
   --input-height: 30px;
   --input-placeholder-color: var(--text-faint);
   --input-radius: 5px;
-  --interactive-accent: #00aaad;
-  --interactive-accent-hover: #00aaad;
+  --interactive-accent: light-dark(#00aaad, #00aaad);
+  --interactive-accent-hover: light-dark(#00aaad, #00aaad);
   --interactive-accent-hsl: var(--color-accent-hsl);
   --interactive-hover: var(--color-base-10);
   --interactive-normal: var(--color-base-00);
@@ -788,8 +792,8 @@ body {
   --tag-radius: 2em;
   --tag-size: var(--font-smaller);
   --tag-weight: inherit;
-  --text-accent: #00aaad;
-  --text-accent-hover: #00aaad;
+  --text-accent: light-dark(#00aaad, #00aaad);
+  --text-accent-hover: light-dark(#00aaad, #00aaad);
   --text-error: var(--color-red);
   --text-faint: var(--color-base-50);
   --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
@@ -1723,8 +1727,8 @@ svg.svg-icon {
     inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --interactive-accent: var(--color-accent);
-  --interactive-accent-hover: var(--color-accent-1);
+  --interactive-accent: #00aaad;
+  --interactive-accent-hover: #00aaad;
   --interactive-accent-rgb: #d1d5db;
   --interactive-before: #374151;
   --interactive-hover: var(--color-base-35);
@@ -1742,7 +1746,8 @@ svg.svg-icon {
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-a: #d1d5db;
   --text-a-hover: #d1d5db;
-  --text-accent: var(--color-accent-1);
+  --text-accent: #00aaad;
+  --text-accent-hover: #00aaad;
   --text-faint: #4b5563;
   --text-highlight-bg: #374151;
   --text-link: #d1d5db;
@@ -1811,6 +1816,8 @@ svg.svg-icon {
     inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
     0 0 0 0 transparent;
+  --interactive-accent: #00aaad;
+  --interactive-accent-hover: #00aaad;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
   --shadow-l:
@@ -1819,6 +1826,8 @@ svg.svg-icon {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
+  --text-accent: #00aaad;
+  --text-accent-hover: #00aaad;
 }
 
 .mod-sidedock {

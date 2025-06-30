@@ -1,4 +1,7 @@
 :root {
+  --accent-h: light-dark(181, 181);
+  --accent-l: light-dark(35%, 35%);
+  --accent-s: light-dark(100%, 100%);
   --background-secondary-alt: light-dark(#f4f5f6, #9496ac66);
   --color-accent: light-dark(#7988ec, #7988ec);
   --color-accent-1: light-dark(#909ef0, #a7b5f3);
@@ -30,6 +33,7 @@
   --loading-icon-delay: 400ms;
   --page-border: 9px solid transparent;
   --page-margin: 1px auto -8px;
+  --panel-child: light-dark(#f1f2f3, #f1f2f3);
   --pdfViewer-padding-bottom: 0;
   --safe-area-inset-bottom: env(safe-area-inset-bottom);
   --safe-area-inset-left: env(safe-area-inset-left);
@@ -42,9 +46,9 @@
 }
 
 body {
-  --accent-h: 181;
-  --accent-l: 35%;
-  --accent-s: 100%;
+  --accent-h: light-dark(181, 181);
+  --accent-l: light-dark(35%, 35%);
+  --accent-s: light-dark(100%, 100%);
   --anim-duration-fast: 140ms;
   --anim-duration-moderate: 300ms;
   --anim-duration-none: 0;
@@ -594,7 +598,7 @@ body {
   --p-spacing: 1rem;
   --p-spacing-empty: 0rem;
   --page-transparency: 100%;
-  --panel-child: #f1f2f3;
+  --panel-child: light-dark(#f1f2f3, #f1f2f3);
   --pdf-background: #f7f7f8bf;
   --pdf-page-background: #f7f7f8bf;
   --pdf-shadow: 0 0 0 1px #0000000d, 0 2px 8px #0000001a;
@@ -816,8 +820,6 @@ body {
   --toggle-thumb-radius: 18px;
   --toggle-thumb-width: 18px;
   --toggle-width: 40px;
-  --vault-font: "Noto Emoji";
-  --vault-icon: "💎";
   --vault-name-font-size: 2em;
   --vault-name-font-weight: 700;
   --vault-profile-actions-display: flex;
@@ -1308,7 +1310,10 @@ input.prompt-input {
 
 .suggestion-highlight {
   background-color: transparent;
-  color: #7988ec;
+  color: light-dark(
+    hsl(light-dark(181, 181), light-dark(100%, 100%), light-dark(35%, 35%)),
+    hsl(light-dark(181, 181), light-dark(100%, 100%), light-dark(35%, 35%))
+  );
   font-weight: bold;
 }
 
@@ -1728,6 +1733,9 @@ svg.svg-icon {
 }
 
 .theme-dark {
+  --accent-h: 181;
+  --accent-l: 35%;
+  --accent-s: 100%;
   --background-modifier-border: #d9dde8;
   --background-modifier-box-shadow: #0000004d;
   --background-modifier-cover: #0a0a0a66;
@@ -1781,6 +1789,7 @@ svg.svg-icon {
   --interactive-normal: #9496ac66;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
+  --panel-child: #f1f2f3;
   --pdf-shadow: 0 0 0 1px #d9dde8;
   --pdf-thumbnail-shadow: 0 0 0 1px #d9dde8;
   --shadow-color: #00000033;
@@ -1793,9 +1802,14 @@ svg.svg-icon {
   --text-highlight-bg: #7988ec79;
   --text-highlight-bg-active: #ff800066;
   --text-selection: #7988ec40;
+  --vault-font: "Noto Emoji";
+  --vault-icon: "💎";
 }
 
 .theme-light {
+  --accent-h: 181;
+  --accent-l: 35%;
+  --accent-s: 100%;
   --background-modifier-box-shadow: #0000001a;
   --background-modifier-cover: #dcdcdc66;
   --background-secondary-alt: #f4f5f6;
@@ -1843,6 +1857,7 @@ svg.svg-icon {
     0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
+  --panel-child: #f1f2f3;
   --shadow-color: #ebebeb;
   --shadow-l:
     0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
@@ -1851,6 +1866,8 @@ svg.svg-icon {
     0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
   --text-highlight-bg: #ffc80075;
   --text-highlight-bg-active: #ff800066;
+  --vault-font: "Noto Emoji";
+  --vault-icon: "💎";
 }
 
 .mod-sidedock {

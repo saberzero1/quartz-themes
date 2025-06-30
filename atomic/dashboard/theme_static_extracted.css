@@ -1,5 +1,6 @@
 :root {
   --background-secondary-alt: light-dark(#f5ede3, #f5ede3);
+  --code-background: light-dark(#f5f4f4, #f5f4f4);
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
   --color-accent-1: light-dark(#9873f7, #a68af9);
   --color-accent-2: light-dark(#a68af9, #c5b6fc);
@@ -24,8 +25,12 @@
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
+  --icon-color: light-dark(#222222, #222222);
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
+  --nav-item-color: light-dark(#202430, #202430);
+  --nav-item-color-active: light-dark(#888888, #888888);
+  --nav-item-color-hover: light-dark(#222222, #222222);
   --page-border: 9px solid transparent;
   --page-margin: 1px auto -8px;
   --pdfViewer-padding-bottom: 0;
@@ -34,6 +39,7 @@
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
   --spreadHorizontalWrapped-margin-LR: -3.5px;
+  --tag-color-hover: light-dark(#999999, #999999);
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
@@ -157,7 +163,7 @@ body {
   --checklist-done-color: #434b56;
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: 5px;
-  --code-background: #f5f4f4;
+  --code-background: light-dark(#f5f4f4, #f5f4f4);
   --code-border-color: transparent;
   --code-border-width: 0px;
   --code-comment: #4e4d49;
@@ -362,7 +368,7 @@ body {
   --heading-spacing: 0rem;
   --hr-color: transparent;
   --hr-thickness: 3px;
-  --icon-color: #222222;
+  --icon-color: light-dark(#222222, #222222);
   --icon-color-active: #bfa58c;
   --icon-color-focused: #222;
   --icon-color-hover: #434b56;
@@ -532,10 +538,10 @@ body {
   --nav-item-background-selected: #8a5cf526;
   --nav-item-children-margin-start: 12px;
   --nav-item-children-padding-start: 4px;
-  --nav-item-color: #202430;
-  --nav-item-color-active: #888888;
+  --nav-item-color: light-dark(#202430, #202430);
+  --nav-item-color-active: light-dark(#888888, #888888);
   --nav-item-color-highlighted: #bfa58c;
-  --nav-item-color-hover: #222222;
+  --nav-item-color-hover: light-dark(#222222, #222222);
   --nav-item-color-selected: #222;
   --nav-item-padding: 4px 8px 4px 24px;
   --nav-item-parent-padding: 6px 8px 6px 24px;
@@ -647,7 +653,7 @@ body {
   --tab-background-active: #fafafa;
   --tab-container-background: #fafafa;
   --tab-curve: 6px;
-  --tab-divider-color: transparent;
+  --tab-divider-color: #f5ede3;
   --tab-font-size: 14.992px;
   --tab-font-weight: inherit;
   --tab-max-width: 320px;
@@ -713,13 +719,13 @@ body {
   --table-text-color: inherit;
   --table-text-size: 16px;
   --table-white-space: break-spaces;
-  --tag-background: transparent;
-  --tag-background-hover: transparent;
+  --tag-background: #8a5cf51a;
+  --tag-background-hover: #8a5cf533;
   --tag-border-color: #8a5cf526;
   --tag-border-color-hover: #8a5cf526;
   --tag-border-width: 0px;
   --tag-color: #bfa58c;
-  --tag-color-hover: #999999;
+  --tag-color-hover: light-dark(#999999, #999999);
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-padding-x: 0.65em;
@@ -731,7 +737,7 @@ body {
   --text-accent-hover: #c5b6fc;
   --text-error: #fb464c;
   --text-faint: #4e4d49;
-  --text-highlight-bg: transparent;
+  --text-highlight-bg: #ffd00066;
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: #434b56;
   --text-normal: #222;
@@ -920,7 +926,7 @@ h6 {
 }
 
 .markdown-rendered pre {
-  background-color: #f5f4f4;
+  background-color: light-dark(#f5f4f4, #f5f4f4);
   border: 0px solid transparent;
   border-radius: 5px;
   min-height: 38px;
@@ -932,7 +938,7 @@ h6 {
 
 .markdown-rendered code {
   -webkit-box-decoration-break: clone;
-  background-color: #f5f4f4;
+  background-color: light-dark(#f5f4f4, #f5f4f4);
   border: 0px solid transparent;
   border-radius: 5px;
   color: #222;
@@ -1304,7 +1310,7 @@ input[type="search"] {
 
 .nav-file-icon {
   align-items: center;
-  color: #8a5cf5;
+  color: light-dark(#222222, #222222);
   display: inline-flex;
   margin-inline-end: 6px;
   opacity: 1;
@@ -1313,7 +1319,7 @@ input[type="search"] {
 
 .nav-folder-title {
   border-radius: 5px;
-  color: #222;
+  color: light-dark(#202430, #202430);
   cursor: pointer;
   display: flex;
   font-size: 16px;
@@ -1325,7 +1331,7 @@ input[type="search"] {
 
 .nav-file-title {
   border-radius: 5px;
-  color: #222;
+  color: light-dark(#202430, #202430);
   cursor: pointer;
   display: flex;
   font-size: 16px;
@@ -1337,13 +1343,13 @@ input[type="search"] {
 
 .nav-file-title.is-active {
   background-color: none;
-  color: #888888;
+  color: light-dark(#888888, #888888);
   font-weight: inherit;
 }
 
 .nav-folder-title.is-active {
   background-color: none;
-  color: #888888;
+  color: light-dark(#888888, #888888);
   font-weight: inherit;
 }
 
@@ -1360,7 +1366,7 @@ input[type="search"] {
 .tree-item-self {
   align-items: baseline;
   border-radius: 5px;
-  color: #222;
+  color: light-dark(#202430, #202430);
   display: flex;
   font-size: 16px;
   font-weight: inherit;
@@ -1390,13 +1396,13 @@ input[type="search"] {
 
 .tree-item-self.is-clickable.mobile-tap {
   background-color: #f5ede3;
-  color: #222222;
+  color: light-dark(#222222, #222222);
   font-weight: inherit;
 }
 
 .tree-item-self.is-active {
   background-color: none;
-  color: #888888;
+  color: light-dark(#888888, #888888);
   font-weight: inherit;
 }
 
@@ -1412,7 +1418,7 @@ input[type="search"] {
 
 .tree-item-self .tree-item-icon {
   align-items: center;
-  color: #8a5cf5;
+  color: light-dark(#222222, #222222);
   display: flex;
   flex: 0 0 auto;
   justify-content: center;
@@ -1470,7 +1476,7 @@ input[type="search"] {
 }
 
 kbd {
-  background-color: #f5f4f4;
+  background-color: light-dark(#f5f4f4, #f5f4f4);
   border-radius: 5px;
   color: #222;
   font-family:
@@ -1492,7 +1498,7 @@ svg.svg-icon {
 }
 
 .clickable-icon.mod-filled svg {
-  fill: #8a5cf5;
+  fill: light-dark(#222222, #222222);
 }
 
 .setting-item-control .clickable-icon {
@@ -1524,7 +1530,7 @@ svg.svg-icon {
   align-items: center;
   background-color: transparent;
   border-radius: 5px;
-  color: #8a5cf5;
+  color: light-dark(#222222, #222222);
   cursor: pointer;
   display: flex;
   height: auto;
@@ -1651,6 +1657,7 @@ svg.svg-icon {
   --background-modifier-cover: #0a0a0a66;
   --background-modifier-form-field: #f5ede3;
   --background-secondary-alt: #f5ede3;
+  --code-background: #f5f4f4;
   --color-accent: #8a5cf5;
   --color-accent-1: #a68af9;
   --color-accent-2: #c5b6fc;
@@ -1684,6 +1691,7 @@ svg.svg-icon {
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
   --highlight-mix-blend-mode: darken;
+  --icon-color: #222222;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
     0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
@@ -1696,6 +1704,9 @@ svg.svg-icon {
   --interactive-normal: #f5ede3;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
+  --nav-item-color: #202430;
+  --nav-item-color-active: #888888;
+  --nav-item-color-hover: #222222;
   --pdf-shadow: 0 0 0 1px transparent;
   --pdf-thumbnail-shadow: 0 0 0 1px transparent;
   --shadow-l:
@@ -1703,7 +1714,12 @@ svg.svg-icon {
     0px 30px 90px #00000033;
   --shadow-s:
     0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
+  --tab-divider-color: transparent;
+  --tag-background: transparent;
+  --tag-background-hover: transparent;
+  --tag-color-hover: #999999;
   --text-accent: #a68af9;
+  --text-highlight-bg: transparent;
   --text-selection: #8a5cf554;
 }
 
@@ -1711,6 +1727,7 @@ svg.svg-icon {
   --background-modifier-box-shadow: #0000001a;
   --background-modifier-cover: #dcdcdc66;
   --background-secondary-alt: #f5ede3;
+  --code-background: #f5f4f4;
   --color-accent: #8a5cf5;
   --color-accent-1: #9873f7;
   --color-accent-2: #a68af9;
@@ -1744,6 +1761,7 @@ svg.svg-icon {
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
   --highlight-mix-blend-mode: darken;
+  --icon-color: #222222;
   --input-shadow:
     inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008,
     0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
@@ -1752,11 +1770,19 @@ svg.svg-icon {
     0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
+  --nav-item-color: #202430;
+  --nav-item-color-active: #888888;
+  --nav-item-color-hover: #222222;
   --shadow-l:
     0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
     0px 30px 90px #00000033;
   --shadow-s:
     0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
+  --tab-divider-color: transparent;
+  --tag-background: transparent;
+  --tag-background-hover: transparent;
+  --tag-color-hover: #999999;
+  --text-highlight-bg: transparent;
 }
 
 .mod-sidedock {

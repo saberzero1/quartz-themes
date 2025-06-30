@@ -949,10 +949,24 @@
 }
 
 :root {
+  --background-accent: light-dark(var(--rp-base), var(--rp-base));
+  --background-modifier-border: light-dark(
+    var(--rp-highlightMed),
+    var(--rp-highlightMed)
+  );
+  --background-modifier-error: light-dark(var(--rp-love), var(--rp-love));
+  --background-modifier-error-hover: light-dark(var(--rp-love), var(--rp-love));
+  --background-modifier-success: light-dark(var(--rp-pine), var(--rp-pine));
+  --background-primary: light-dark(var(--rp-surface), var(--rp-surface));
+  --background-primary-alt: light-dark(var(--rp-base), var(--rp-base));
+  --background-secondary: light-dark(var(--rp-base), var(--rp-base));
   --background-secondary-alt: light-dark(
     var(--color-base-05),
     var(--color-base-30)
   );
+  --blockquote-border: light-dark(var(--rp-love), var(--rp-love));
+  --border-color: light-dark(var(--rp-highlightMed), var(--rp-highlightMed));
+  --code-block: light-dark(var(--rp-foam), var(--rp-foam));
   --color-accent: light-dark(
     hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
     hsl(var(--accent-h), var(--accent-s), var(--accent-l))
@@ -1022,14 +1036,33 @@
   --font-size-side-dock: 15px;
   --font-size-side-dock-title: 18px;
   --font-size-status-bar: 15px;
+  --inline-code: light-dark(var(--rp-iris), var(--rp-iris));
+  --interactive-accent: light-dark(
+    var(--rp-highlightLow),
+    var(--rp-highlightLow)
+  );
+  --interactive-accent-active: light-dark(var(--rp-accent), var(--rp-accent));
+  --interactive-accent-hover: light-dark(var(--rp-accent), var(--rp-accent));
+  --interactive-hover: light-dark(
+    var(--rp-highlightLow),
+    var(--rp-highlightLow)
+  );
+  --interactive-normal: light-dark(var(--rp-overlay), var(--rp-overlay));
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
   --page-border: 9px solid transparent;
   --page-margin: 1px auto -8px;
   --pdfViewer-padding-bottom: 0;
+  --pre-code: light-dark(var(--rp-highlightLow), var(--rp-highlightLow));
   --rp-base: light-dark(#faf4ed, #191724);
   --rp-foam: light-dark(#56949f, #9ccfd8);
   --rp-gold: light-dark(#ea9d34, #f6c177);
+  --rp-h1: light-dark(var(--rp-love), var(--rp-love));
+  --rp-h2: light-dark(var(--rp-iris), var(--rp-iris));
+  --rp-h3: light-dark(var(--rp-rose), var(--rp-rose));
+  --rp-h4: light-dark(var(--rp-gold), var(--rp-gold));
+  --rp-h5: light-dark(var(--rp-foam), var(--rp-foam));
+  --rp-h6: light-dark(var(--rp-pine), var(--rp-pine));
   --rp-highlightHigh: light-dark(#cecacd, #524f67);
   --rp-highlightLow: light-dark(#f4ede8, #21202e);
   --rp-highlightMed: light-dark(#dfdad9, #403d52);
@@ -1046,8 +1079,25 @@
   --safe-area-inset-left: env(safe-area-inset-left);
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
+  --scrollbar-active-thumb-bg: light-dark(var(--rp-overlay), var(--rp-overlay));
+  --scrollbar-bg: light-dark(var(--rp-overlay), var(--rp-overlay));
+  --scrollbar-thumb-bg: light-dark(var(--rp-overlay), var(--rp-overlay));
   --spreadHorizontalWrapped-margin-LR: -3.5px;
+  --text-accent: light-dark(var(--rp-accent), var(--rp-accent));
+  --text-accent-hover: light-dark(var(--rp-accent), var(--rp-accent));
+  --text-error: light-dark(var(--rp-love), var(--rp-love));
+  --text-error-hover: light-dark(var(--rp-love), var(--rp-love));
+  --text-faint: light-dark(var(--rp-accent), var(--rp-accent));
+  --text-highlight-bg: light-dark(var(--rp-highlight), var(--rp-highlight));
+  --text-muted: light-dark(var(--rp-muted), var(--rp-muted));
+  --text-normal: light-dark(var(--rp-text), var(--rp-text));
+  --text-on-accent: light-dark(var(--rp-accent), var(--rp-accent));
+  --text-selection: light-dark(
+    var(--rp-highlightHigh),
+    var(--rp-highlightHigh)
+  );
   --viewer-container-height: 0;
+  --vim-cursor: light-dark(var(--rp-rose), var(--rp-rose));
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
 }
@@ -1675,25 +1725,25 @@ body {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
-  --background-accent: var(--rp-base);
+  --background-accent: light-dark(var(--rp-base), var(--rp-base));
   --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
-  --background-modifier-border: var(--rp-highlightMed);
+  --background-modifier-border: light-dark(
+    var(--rp-highlightMed),
+    var(--rp-highlightMed)
+  );
   --background-modifier-border-focus: var(--color-base-40);
   --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-  --background-modifier-cover: rgba(0, 0, 0, 0.6);
-  --background-modifier-error: var(--rp-love);
-  --background-modifier-error-hover: var(--rp-love);
+  --background-modifier-error: light-dark(var(--rp-love), var(--rp-love));
+  --background-modifier-error-hover: light-dark(var(--rp-love), var(--rp-love));
   --background-modifier-error-rgb: var(--color-red-rgb);
-  --background-modifier-form-field: rgba(0, 0, 0, 0.2);
-  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.5);
+  --background-modifier-form-field: var(--color-base-00);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-modifier-message: rgba(0, 0, 0, 0.9);
-  --background-modifier-success: var(--rp-pine);
+  --background-modifier-success: light-dark(var(--rp-pine), var(--rp-pine));
   --background-modifier-success-rgb: var(--color-green-rgb);
-  --background-primary: var(--rp-surface);
-  --background-primary-alt: var(--rp-base);
-  --background-secondary: var(--rp-base);
+  --background-primary: light-dark(var(--rp-surface), var(--rp-surface));
+  --background-primary-alt: light-dark(var(--rp-base), var(--rp-base));
+  --background-secondary: light-dark(var(--rp-base), var(--rp-base));
   --background-secondary-alt: light-dark(
     var(--color-base-05),
     var(--color-base-30)
@@ -1731,7 +1781,7 @@ body {
   --bases-table-text-size: var(--font-smaller);
   --bases-table-white-space: nowrap;
   --blockquote-background-color: transparent;
-  --blockquote-border: var(--rp-love);
+  --blockquote-border: light-dark(var(--rp-love), var(--rp-love));
   --blockquote-border-color: var(--interactive-accent);
   --blockquote-border-thickness: 2px;
   --blockquote-color: inherit;
@@ -1739,7 +1789,7 @@ body {
   --bold-color: inherit;
   --bold-modifier: 200;
   --bold-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --border-color: var(--rp-highlightMed);
+  --border-color: light-dark(var(--rp-highlightMed), var(--rp-highlightMed));
   --border-width: 1px;
   --button-radius: var(--input-radius);
   --callout-blend-mode: var(--highlight-mix-blend-mode);
@@ -1791,7 +1841,7 @@ body {
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: var(--radius-s);
   --code-background: var(--background-primary-alt);
-  --code-block: var(--rp-foam);
+  --code-block: light-dark(var(--rp-foam), var(--rp-foam));
   --code-border-color: var(--background-modifier-border);
   --code-border-width: 0px;
   --code-comment: var(--text-faint);
@@ -2049,7 +2099,7 @@ body {
   --indentation-guide-source-indent: 0.25em;
   --indentation-guide-width: 1px;
   --indentation-guide-width-active: 1px;
-  --inline-code: var(--rp-iris);
+  --inline-code: light-dark(var(--rp-iris), var(--rp-iris));
   --inline-title-color: var(--h1-color);
   --inline-title-font: var(--h1-font);
   --inline-title-line-height: var(--h1-line-height);
@@ -2064,12 +2114,18 @@ body {
   --input-height: 30px;
   --input-placeholder-color: var(--text-faint);
   --input-radius: 5px;
-  --interactive-accent: var(--rp-highlightLow);
-  --interactive-accent-active: var(--rp-accent);
-  --interactive-accent-hover: var(--rp-accent);
+  --interactive-accent: light-dark(
+    var(--rp-highlightLow),
+    var(--rp-highlightLow)
+  );
+  --interactive-accent-active: light-dark(var(--rp-accent), var(--rp-accent));
+  --interactive-accent-hover: light-dark(var(--rp-accent), var(--rp-accent));
   --interactive-accent-hsl: var(--color-accent-hsl);
-  --interactive-hover: var(--rp-highlightLow);
-  --interactive-normal: var(--rp-overlay);
+  --interactive-hover: light-dark(
+    var(--rp-highlightLow),
+    var(--rp-highlightLow)
+  );
+  --interactive-normal: light-dark(var(--rp-overlay), var(--rp-overlay));
   --italic-color: inherit;
   --italic-weight: inherit;
   --layer-cover: 5;
@@ -2236,7 +2292,7 @@ body {
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
   --popover-width: 450px;
-  --pre-code: var(--rp-highlightLow);
+  --pre-code: light-dark(var(--rp-highlightLow), var(--rp-highlightLow));
   --prompt-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
@@ -2257,12 +2313,12 @@ body {
   --rp-base: light-dark(#faf4ed, #191724);
   --rp-foam: light-dark(#56949f, #9ccfd8);
   --rp-gold: light-dark(#ea9d34, #f6c177);
-  --rp-h1: var(--rp-love);
-  --rp-h2: var(--rp-iris);
-  --rp-h3: var(--rp-rose);
-  --rp-h4: var(--rp-gold);
-  --rp-h5: var(--rp-foam);
-  --rp-h6: var(--rp-pine);
+  --rp-h1: light-dark(var(--rp-love), var(--rp-love));
+  --rp-h2: light-dark(var(--rp-iris), var(--rp-iris));
+  --rp-h3: light-dark(var(--rp-rose), var(--rp-rose));
+  --rp-h4: light-dark(var(--rp-gold), var(--rp-gold));
+  --rp-h5: light-dark(var(--rp-foam), var(--rp-foam));
+  --rp-h6: light-dark(var(--rp-pine), var(--rp-pine));
   --rp-highlightHigh: light-dark(#cecacd, #524f67);
   --rp-highlightLow: light-dark(#f4ede8, #21202e);
   --rp-highlightMed: light-dark(#dfdad9, #403d52);
@@ -2275,9 +2331,9 @@ body {
   --rp-subtle: light-dark(#797593, #908caa);
   --rp-surface: light-dark(#fffaf3, #1f1d2e);
   --rp-text: light-dark(#575279, #e0def4);
-  --scrollbar-active-thumb-bg: var(--rp-overlay);
-  --scrollbar-bg: var(--rp-overlay);
-  --scrollbar-thumb-bg: var(--rp-overlay);
+  --scrollbar-active-thumb-bg: light-dark(var(--rp-overlay), var(--rp-overlay));
+  --scrollbar-bg: light-dark(var(--rp-overlay), var(--rp-overlay));
+  --scrollbar-thumb-bg: light-dark(var(--rp-overlay), var(--rp-overlay));
   --search-clear-button-color: var(--text-muted);
   --search-clear-button-size: 13px;
   --search-icon-color: var(--text-muted);
@@ -2413,18 +2469,21 @@ body {
   --tag-radius: 2em;
   --tag-size: var(--font-smaller);
   --tag-weight: inherit;
-  --text-accent: var(--rp-accent);
-  --text-accent-hover: var(--rp-accent);
-  --text-error: var(--rp-love);
-  --text-error-hover: var(--rp-love);
-  --text-faint: var(--rp-accent);
-  --text-highlight-bg: var(--rp-highlight);
+  --text-accent: light-dark(var(--rp-accent), var(--rp-accent));
+  --text-accent-hover: light-dark(var(--rp-accent), var(--rp-accent));
+  --text-error: light-dark(var(--rp-love), var(--rp-love));
+  --text-error-hover: light-dark(var(--rp-love), var(--rp-love));
+  --text-faint: light-dark(var(--rp-accent), var(--rp-accent));
+  --text-highlight-bg: light-dark(var(--rp-highlight), var(--rp-highlight));
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: var(--rp-muted);
-  --text-normal: var(--rp-text);
-  --text-on-accent: var(--rp-accent);
+  --text-muted: light-dark(var(--rp-muted), var(--rp-muted));
+  --text-normal: light-dark(var(--rp-text), var(--rp-text));
+  --text-on-accent: light-dark(var(--rp-accent), var(--rp-accent));
   --text-on-accent-inverted: black;
-  --text-selection: var(--rp-highlightHigh);
+  --text-selection: light-dark(
+    var(--rp-highlightHigh),
+    var(--rp-highlightHigh)
+  );
   --text-success: var(--color-green);
   --text-warning: var(--color-orange);
   --titlebar-background: var(--background-secondary);
@@ -2452,7 +2511,7 @@ body {
   --vault-profile-display: flex;
   --vault-profile-font-size: var(--font-ui-small);
   --vault-profile-font-weight: var(--font-medium);
-  --vim-cursor: var(--rp-rose);
+  --vim-cursor: light-dark(var(--rp-rose), var(--rp-rose));
   --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
   --zoom-factor: 1;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
@@ -2477,9 +2536,22 @@ body {
 }
 
 .theme-light {
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
-  --background-modifier-cover: rgba(220, 220, 220, 0.4);
-  --background-secondary-alt: var(--color-base-05);
+  --background-accent: var(--rp-base);
+  --background-modifier-border: var(--rp-highlightMed);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: rgba(0, 0, 0, 0.6);
+  --background-modifier-error: var(--rp-love);
+  --background-modifier-error-hover: var(--rp-love);
+  --background-modifier-form-field: rgba(0, 0, 0, 0.2);
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.5);
+  --background-modifier-success: var(--rp-pine);
+  --background-primary: var(--rp-surface);
+  --background-primary-alt: var(--rp-base);
+  --background-secondary: var(--rp-base);
+  --background-secondary-alt: var(--rp-base);
+  --blockquote-border: var(--rp-love);
+  --border-color: var(--rp-highlightMed);
+  --code-block: var(--rp-foam);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -2521,6 +2593,7 @@ body {
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
   --highlight-mix-blend-mode: darken;
+  --inline-code: var(--rp-iris);
   --input-shadow:
     inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
@@ -2529,11 +2602,23 @@ body {
     inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
     0 0 0 0 transparent;
+  --interactive-accent: var(--rp-highlightLow);
+  --interactive-accent-active: var(--rp-accent);
+  --interactive-accent-hover: var(--rp-accent);
+  --interactive-hover: var(--rp-highlightLow);
+  --interactive-normal: var(--rp-overlay);
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
+  --pre-code: var(--rp-highlightLow);
   --rp-base: #faf4ed;
   --rp-foam: #56949f;
   --rp-gold: #ea9d34;
+  --rp-h1: var(--rp-love);
+  --rp-h2: var(--rp-iris);
+  --rp-h3: var(--rp-rose);
+  --rp-h4: var(--rp-gold);
+  --rp-h5: var(--rp-foam);
+  --rp-h6: var(--rp-pine);
   --rp-highlightHigh: #cecacd;
   --rp-highlightLow: #f4ede8;
   --rp-highlightMed: #dfdad9;
@@ -2546,19 +2631,45 @@ body {
   --rp-subtle: #797593;
   --rp-surface: #fffaf3;
   --rp-text: #575279;
+  --scrollbar-active-thumb-bg: var(--rp-overlay);
+  --scrollbar-bg: var(--rp-overlay);
+  --scrollbar-thumb-bg: var(--rp-overlay);
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
+  --text-accent: var(--rp-accent);
+  --text-accent-hover: var(--rp-accent);
+  --text-error: var(--rp-love);
+  --text-error-hover: var(--rp-love);
+  --text-faint: var(--rp-accent);
+  --text-highlight-bg: var(--rp-highlight);
+  --text-muted: var(--rp-muted);
+  --text-normal: var(--rp-text);
+  --text-on-accent: var(--rp-accent);
+  --text-selection: var(--rp-highlightHigh);
+  --vim-cursor: var(--rp-rose);
 }
 
 .theme-dark {
+  --background-accent: var(--rp-base);
+  --background-modifier-border: var(--rp-highlightMed);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-  --background-modifier-cover: rgba(10, 10, 10, 0.4);
-  --background-modifier-form-field: var(--color-base-25);
-  --background-secondary-alt: var(--color-base-30);
+  --background-modifier-cover: rgba(0, 0, 0, 0.6);
+  --background-modifier-error: var(--rp-love);
+  --background-modifier-error-hover: var(--rp-love);
+  --background-modifier-form-field: rgba(0, 0, 0, 0.2);
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.5);
+  --background-modifier-success: var(--rp-pine);
+  --background-primary: var(--rp-surface);
+  --background-primary-alt: var(--rp-base);
+  --background-secondary: var(--rp-base);
+  --background-secondary-alt: var(--rp-base);
+  --blockquote-border: var(--rp-love);
+  --border-color: var(--rp-highlightMed);
+  --code-block: var(--rp-foam);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -2600,6 +2711,7 @@ body {
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
   --highlight-mix-blend-mode: darken;
+  --inline-code: var(--rp-iris);
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
@@ -2608,17 +2720,25 @@ body {
     inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --interactive-accent: var(--color-accent);
-  --interactive-accent-hover: var(--color-accent-1);
-  --interactive-hover: var(--color-base-35);
-  --interactive-normal: var(--color-base-30);
+  --interactive-accent: var(--rp-highlightLow);
+  --interactive-accent-active: var(--rp-accent);
+  --interactive-accent-hover: var(--rp-accent);
+  --interactive-hover: var(--rp-highlightLow);
+  --interactive-normal: var(--rp-overlay);
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
+  --pre-code: var(--rp-highlightLow);
   --rp-base: #191724;
   --rp-foam: #9ccfd8;
   --rp-gold: #f6c177;
+  --rp-h1: var(--rp-love);
+  --rp-h2: var(--rp-iris);
+  --rp-h3: var(--rp-rose);
+  --rp-h4: var(--rp-gold);
+  --rp-h5: var(--rp-foam);
+  --rp-h6: var(--rp-pine);
   --rp-highlightHigh: #524f67;
   --rp-highlightLow: #21202e;
   --rp-highlightMed: #403d52;
@@ -2631,14 +2751,26 @@ body {
   --rp-subtle: #908caa;
   --rp-surface: #1f1d2e;
   --rp-text: #e0def4;
+  --scrollbar-active-thumb-bg: var(--rp-overlay);
+  --scrollbar-bg: var(--rp-overlay);
+  --scrollbar-thumb-bg: var(--rp-overlay);
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
-  --text-accent: var(--color-accent-1);
-  --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
+  --text-accent: var(--rp-accent);
+  --text-accent-hover: var(--rp-accent);
+  --text-error: var(--rp-love);
+  --text-error-hover: var(--rp-love);
+  --text-faint: var(--rp-accent);
+  --text-highlight-bg: var(--rp-highlight);
+  --text-muted: var(--rp-muted);
+  --text-normal: var(--rp-text);
+  --text-on-accent: var(--rp-accent);
+  --text-selection: var(--rp-highlightHigh);
+  --vim-cursor: var(--rp-rose);
 }
 
 iframe {

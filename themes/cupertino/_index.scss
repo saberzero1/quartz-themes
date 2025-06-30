@@ -1364,7 +1364,6 @@ body {
   /* POPOVER */
   .popover {
     -webkit-backdrop-filter: blur(16px);
-    animation: 140ms fadeInScale;
     backdrop-filter: blur(16px);
     background-color: rgba(0, 0, 0, 0.75);
     border: 1px solid transparent;

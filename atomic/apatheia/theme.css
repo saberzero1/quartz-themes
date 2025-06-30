@@ -25111,10 +25111,6 @@ For reference, check the Obsidian style settings repo
   animation: 0.2s fade cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.Fade.popover {
-  animation: 0.2s fade cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
 .Fade.prompt {
   animation: 0.2s fade cubic-bezier(0.645, 0.045, 0.355, 1);
 }

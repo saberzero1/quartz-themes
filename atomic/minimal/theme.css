@@ -989,6 +989,14 @@
     hsl(var(--base-h), var(--base-s), var(--base-l)),
     hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 2%))
   );
+  --chart-color-1: light-dark(var(--color-blue), var(--color-blue));
+  --chart-color-2: light-dark(var(--color-red), var(--color-red));
+  --chart-color-3: light-dark(var(--color-yellow), var(--color-yellow));
+  --chart-color-4: light-dark(var(--color-green), var(--color-green));
+  --chart-color-5: light-dark(var(--color-orange), var(--color-orange));
+  --chart-color-6: light-dark(var(--color-purple), var(--color-purple));
+  --chart-color-7: light-dark(var(--color-cyan), var(--color-cyan));
+  --chart-color-8: light-dark(var(--color-pink), var(--color-pink));
   --checkbox-color: light-dark(var(--ax3), var(--ax3));
   --code-normal: light-dark(var(--tx1), var(--tx1));
   --color-accent: light-dark(
@@ -1064,6 +1072,12 @@
       calc(var(--frame-background-l) + 25%)
     )
   );
+  --h1l: light-dark(var(--ui1), var(--ui1));
+  --h2l: light-dark(var(--ui1), var(--ui1));
+  --h3l: light-dark(var(--ui1), var(--ui1));
+  --h4l: light-dark(var(--ui1), var(--ui1));
+  --h5l: light-dark(var(--ui1), var(--ui1));
+  --h6l: light-dark(var(--ui1), var(--ui1));
   --hider-ribbon-display: none;
   --icon-color: light-dark(var(--tx2), var(--tx2));
   --icon-color-active: light-dark(var(--tx1), var(--tx1));
@@ -1079,6 +1093,8 @@
   --leaflet-buttons: light-dark(var(--bg1), var(--bg2));
   --list-marker-color: light-dark(var(--tx3), var(--tx3));
   --loading-icon-delay: 400ms;
+  --minimal-tab-text-color: light-dark(var(--tx2), var(--tx2));
+  --minimal-tab-text-color-active: light-dark(var(--tx1), var(--tx1));
   --mobile-sidebar-background: light-dark(var(--bg1), var(--bg1));
   --nav-collapse-icon-color: light-dark(var(--tx2), var(--tx2));
   --nav-collapse-icon-color-collapsed: light-dark(var(--tx2), var(--tx2));
@@ -1927,14 +1943,14 @@ body {
   --cards-mobile-width: 120px;
   --cards-padding: 1.2em;
   --caret-color: var(--text-normal);
-  --chart-color-1: var(--color-blue);
-  --chart-color-2: var(--color-red);
-  --chart-color-3: var(--color-yellow);
-  --chart-color-4: var(--color-green);
-  --chart-color-5: var(--color-orange);
-  --chart-color-6: var(--color-purple);
-  --chart-color-7: var(--color-cyan);
-  --chart-color-8: var(--color-pink);
+  --chart-color-1: light-dark(var(--color-blue), var(--color-blue));
+  --chart-color-2: light-dark(var(--color-red), var(--color-red));
+  --chart-color-3: light-dark(var(--color-yellow), var(--color-yellow));
+  --chart-color-4: light-dark(var(--color-green), var(--color-green));
+  --chart-color-5: light-dark(var(--color-orange), var(--color-orange));
+  --chart-color-6: light-dark(var(--color-purple), var(--color-purple));
+  --chart-color-7: light-dark(var(--color-cyan), var(--color-cyan));
+  --chart-color-8: light-dark(var(--color-pink), var(--color-pink));
   --chart-max-width: none;
   --chart-width: auto;
   --checkbox-border-color: var(--text-faint);
@@ -2019,21 +2035,13 @@ body {
   --color-base-60: light-dark(#707070, #999999);
   --color-base-70: light-dark(#5c5c5c, #b3b3b3);
   --color-blue: light-dark(#086ddd, #027aff);
-  --color-blue-rgb: 108, 153, 187;
   --color-cyan: light-dark(#00bfbc, #53dfdd);
-  --color-cyan-rgb: 115, 187, 178;
   --color-green: light-dark(#08b94e, #44cf6e);
-  --color-green-rgb: 168, 195, 115;
   --color-orange: light-dark(#ec7500, #e9973f);
-  --color-orange-rgb: 213, 118, 63;
   --color-pink: light-dark(#d53984, #fa99cd);
-  --color-pink-rgb: 176, 82, 121;
   --color-purple: light-dark(#7852ee, #a882ff);
-  --color-purple-rgb: 158, 134, 200;
   --color-red: light-dark(#e93147, #fb464c);
-  --color-red-rgb: 208, 66, 85;
   --color-yellow: light-dark(#e0ac00, #e0de71);
-  --color-yellow-rgb: 229, 181, 103;
   --container-chart-max-width: var(--max-width);
   --container-chart-width: var(--line-width);
   --container-dataview-table-width: var(--line-width);
@@ -2204,7 +2212,7 @@ body {
   --h1-style: normal;
   --h1-variant: normal;
   --h1-weight: 600;
-  --h1l: var(--ui1);
+  --h1l: light-dark(var(--ui1), var(--ui1));
   --h2-color: inherit;
   --h2-font: inherit;
   --h2-line-height: 1.2;
@@ -2212,7 +2220,7 @@ body {
   --h2-style: normal;
   --h2-variant: normal;
   --h2-weight: 600;
-  --h2l: var(--ui1);
+  --h2l: light-dark(var(--ui1), var(--ui1));
   --h3-color: inherit;
   --h3-font: inherit;
   --h3-line-height: 1.3;
@@ -2220,7 +2228,7 @@ body {
   --h3-style: normal;
   --h3-variant: normal;
   --h3-weight: 500;
-  --h3l: var(--ui1);
+  --h3l: light-dark(var(--ui1), var(--ui1));
   --h4-color: inherit;
   --h4-font: inherit;
   --h4-line-height: 1.4;
@@ -2228,7 +2236,7 @@ body {
   --h4-style: normal;
   --h4-variant: normal;
   --h4-weight: 500;
-  --h4l: var(--ui1);
+  --h4l: light-dark(var(--ui1), var(--ui1));
   --h5-color: inherit;
   --h5-font: inherit;
   --h5-line-height: var(--line-height-normal);
@@ -2236,7 +2244,7 @@ body {
   --h5-style: normal;
   --h5-variant: small-caps;
   --h5-weight: 500;
-  --h5l: var(--ui1);
+  --h5l: light-dark(var(--ui1), var(--ui1));
   --h6-color: inherit;
   --h6-font: inherit;
   --h6-line-height: var(--line-height-normal);
@@ -2244,7 +2252,7 @@ body {
   --h6-style: normal;
   --h6-variant: small-caps;
   --h6-weight: 400;
-  --h6l: var(--ui1);
+  --h6l: light-dark(var(--ui1), var(--ui1));
   --header-height: 40px;
   --heading-formatting: var(--text-faint);
   --heading-spacing: 2em;
@@ -2417,8 +2425,8 @@ body {
   --metadata-property-radius-hover: 6px;
   --metadata-sidebar-input-font-size: var(--font-ui-small);
   --metadata-sidebar-label-font-size: var(--font-ui-small);
-  --minimal-tab-text-color: var(--tx2);
-  --minimal-tab-text-color-active: var(--tx1);
+  --minimal-tab-text-color: light-dark(var(--tx2), var(--tx2));
+  --minimal-tab-text-color-active: light-dark(var(--tx1), var(--tx1));
   --mobile-left-sidebar-width: 280pt;
   --mobile-right-sidebar-width: 240pt;
   --mobile-sidebar-background: light-dark(var(--bg1), var(--bg1));
@@ -2791,6 +2799,14 @@ body {
   --bg2: hsl(var(--base-h), var(--base-s), var(--base-l));
   --bg3: hsla(var(--base-h), var(--base-s), calc(var(--base-l) - 50%), 0.12);
   --btn-shadow-color: rgba(0, 0, 0, 0.05);
+  --chart-color-1: var(--color-blue);
+  --chart-color-2: var(--color-red);
+  --chart-color-3: var(--color-yellow);
+  --chart-color-4: var(--color-green);
+  --chart-color-5: var(--color-orange);
+  --chart-color-6: var(--color-purple);
+  --chart-color-7: var(--color-cyan);
+  --chart-color-8: var(--color-pink);
   --checkbox-color: var(--ax3);
   --code-normal: var(--tx1);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
@@ -2817,22 +2833,22 @@ body {
   --color-base-50: #ababab;
   --color-base-60: #707070;
   --color-base-70: #5c5c5c;
-  --color-blue: #086ddd;
-  --color-blue-rgb: 8, 109, 221;
-  --color-cyan: #00bfbc;
-  --color-cyan-rgb: 0, 191, 188;
-  --color-green: #08b94e;
-  --color-green-rgb: 8, 185, 78;
-  --color-orange: #ec7500;
-  --color-orange-rgb: 236, 117, 0;
-  --color-pink: #d53984;
-  --color-pink-rgb: 213, 57, 132;
-  --color-purple: #7852ee;
-  --color-purple-rgb: 120, 82, 238;
-  --color-red: #e93147;
-  --color-red-rgb: 233, 49, 71;
-  --color-yellow: #e0ac00;
-  --color-yellow-rgb: 224, 172, 0;
+  --color-blue: #6c99bb;
+  --color-blue-rgb: 108, 153, 187;
+  --color-cyan: #73bbb2;
+  --color-cyan-rgb: 115, 187, 178;
+  --color-green: #a8c373;
+  --color-green-rgb: 168, 195, 115;
+  --color-orange: #d5763f;
+  --color-orange-rgb: 213, 118, 63;
+  --color-pink: #b05279;
+  --color-pink-rgb: 176, 82, 121;
+  --color-purple: #9e86c8;
+  --color-purple-rgb: 158, 134, 200;
+  --color-red: #d04255;
+  --color-red-rgb: 208, 66, 85;
+  --color-yellow: #e5b567;
+  --color-yellow-rgb: 229, 181, 103;
   --divider-color: var(--ui1);
   --frame-background-h: var(--accent-h);
   --frame-background-l: calc(var(--accent-l) + 30%);
@@ -2849,6 +2865,12 @@ body {
     calc(var(--frame-background-l) - 6.5%),
     1
   );
+  --h1l: var(--ui1);
+  --h2l: var(--ui1);
+  --h3l: var(--ui1);
+  --h4l: var(--ui1);
+  --h5l: var(--ui1);
+  --h6l: var(--ui1);
   --highlight-mix-blend-mode: darken;
   --hl1: hsla(var(--accent-h), 50%, calc(var(--base-l) - 20%), 30%);
   --hl2: rgba(255, 225, 0, 0.5);
@@ -2873,6 +2895,8 @@ body {
   --leaflet-borders: rgba(0, 0, 0, 0.1);
   --leaflet-buttons: var(--bg1);
   --list-marker-color: var(--tx3);
+  --minimal-tab-text-color: var(--tx2);
+  --minimal-tab-text-color-active: var(--tx1);
   --mobile-sidebar-background: var(--bg1);
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
@@ -2987,6 +3011,14 @@ body {
   --bg2: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 2%));
   --bg3: hsla(var(--base-h), var(--base-s), calc(var(--base-l) + 40%), 0.12);
   --btn-shadow-color: rgba(0, 0, 0, 0.2);
+  --chart-color-1: var(--color-blue);
+  --chart-color-2: var(--color-red);
+  --chart-color-3: var(--color-yellow);
+  --chart-color-4: var(--color-green);
+  --chart-color-5: var(--color-orange);
+  --chart-color-6: var(--color-purple);
+  --chart-color-7: var(--color-cyan);
+  --chart-color-8: var(--color-pink);
   --checkbox-color: var(--ax3);
   --code-normal: var(--tx1);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
@@ -3013,22 +3045,22 @@ body {
   --color-base-50: #666666;
   --color-base-60: #999999;
   --color-base-70: #b3b3b3;
-  --color-blue: #027aff;
-  --color-blue-rgb: 2, 122, 255;
-  --color-cyan: #53dfdd;
-  --color-cyan-rgb: 83, 223, 221;
-  --color-green: #44cf6e;
-  --color-green-rgb: 68, 207, 110;
-  --color-orange: #e9973f;
-  --color-orange-rgb: 233, 151, 63;
-  --color-pink: #fa99cd;
-  --color-pink-rgb: 250, 153, 205;
-  --color-purple: #a882ff;
-  --color-purple-rgb: 168, 130, 255;
-  --color-red: #fb464c;
-  --color-red-rgb: 251, 70, 76;
-  --color-yellow: #e0de71;
-  --color-yellow-rgb: 224, 222, 113;
+  --color-blue: #6c99bb;
+  --color-blue-rgb: 108, 153, 187;
+  --color-cyan: #73bbb2;
+  --color-cyan-rgb: 115, 187, 178;
+  --color-green: #a8c373;
+  --color-green-rgb: 168, 195, 115;
+  --color-orange: #d5763f;
+  --color-orange-rgb: 213, 118, 63;
+  --color-pink: #b05279;
+  --color-pink-rgb: 176, 82, 121;
+  --color-purple: #9e86c8;
+  --color-purple-rgb: 158, 134, 200;
+  --color-red: #d04255;
+  --color-red-rgb: 208, 66, 85;
+  --color-yellow: #e5b567;
+  --color-yellow-rgb: 229, 181, 103;
   --divider-color: var(--ui1);
   --frame-background-h: var(--accent-h);
   --frame-background-l: calc(var(--accent-l) - 25%);
@@ -3045,6 +3077,12 @@ body {
     calc(var(--frame-background-l) + 6.5%),
     1
   );
+  --h1l: var(--ui1);
+  --h2l: var(--ui1);
+  --h3l: var(--ui1);
+  --h4l: var(--ui1);
+  --h5l: var(--ui1);
+  --h6l: var(--ui1);
   --highlight-mix-blend-mode: darken;
   --hl1: hsla(var(--accent-h), 50%, 40%, 30%);
   --hl2: rgba(255, 177, 80, 0.3);
@@ -3069,6 +3107,8 @@ body {
   --leaflet-borders: rgba(255, 255, 255, 0.1);
   --leaflet-buttons: var(--bg2);
   --list-marker-color: var(--tx3);
+  --minimal-tab-text-color: var(--tx2);
+  --minimal-tab-text-color-active: var(--tx1);
   --mobile-sidebar-background: var(--bg1);
   --modal-border-color: var(--ui2);
   --mono-rgb-0: 0, 0, 0;

@@ -1239,7 +1239,6 @@ h6 {
 
 .popover {
   -webkit-backdrop-filter: blur(16px);
-  animation: var(--anim-duration-fast) fadeInScale;
   backdrop-filter: blur(16px);
   background-color: var(--workspace-background-translucent);
   border: 1px solid var(--background-modifier-border);

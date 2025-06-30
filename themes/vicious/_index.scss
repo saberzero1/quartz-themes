@@ -22,10 +22,20 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
+
+  --hr-thickness: 3px;
   --mono-rgb-100: 251, 252, 252;
 
+  --tag-border-color: transparent;
+  --tag-border-width: 1px;
+
   --text-accent: #f7ddb5;
+
+  --hr-thickness: 3px;
   --mono-rgb-100: 251, 252, 252;
+
+  --tag-border-color: transparent;
+  --tag-border-width: 1px;
 
   --text-accent: #f7ddb5;
 }
@@ -45,8 +55,18 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
+
+  --hr-thickness: 3px;
   --mono-rgb-100: 8, 9, 14;
+
+  --tag-border-color: transparent;
+  --tag-border-width: 1px;
+
+  --hr-thickness: 3px;
   --mono-rgb-100: 8, 9, 14;
+
+  --tag-border-color: transparent;
+  --tag-border-width: 1px;
 }
 
 @font-face {
@@ -236,6 +256,8 @@ html[saved-theme="light"] {
   --color-yellow: light-dark(#e0ac00, #e0de71);
   --hr-color: light-dark(#f1f2f5, #17181e);
   --icon-color: light-dark(#08090e, #fbfcfc);
+  --link-color: light-dark(#f18196, #f18196);
+  --tag-radius: light-dark(16px, 16px);
   --text-faint: light-dark(#818184, #68696c);
   --text-muted: light-dark(#818184, #818184);
   --text-normal: light-dark(#08090e, #fbfcfc);
@@ -338,13 +360,13 @@ body {
   --h1-font: inherit;
   --h3-line-height: 1.3;
   --hr-color: light-dark(#f1f2f5, #17181e);
-  --hr-thickness: 3px;
+  --hr-thickness: 2px;
   --icon-color: light-dark(#08090e, #fbfcfc);
   --inline-title-color: inherit;
   --inline-title-font: inherit;
   --interactive-accent-hsl: 39, 80%, 73%;
   --italic-color: inherit;
-  --link-color: #f18196;
+  --link-color: light-dark(#f18196, #f18196);
   --link-color-hover: #fdf2e4;
   --link-external-color: #f7ddb5;
   --link-external-color-hover: #fdf2e4;
@@ -354,14 +376,14 @@ body {
   --search-icon-color: #818184;
   --tag-background: #f1cb831a;
   --tag-background-hover: #f1cb8333;
-  --tag-border-color: transparent;
+  --tag-border-color: #f1cb8326;
   --tag-border-color-hover: #f1cb8326;
-  --tag-border-width: 1px;
+  --tag-border-width: 0px;
   --tag-color: #f7ddb5;
   --tag-color-hover: #f7ddb5;
   --tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-radius: 16px;
+  --tag-radius: light-dark(16px, 16px);
   --tag-weight: inherit;
   --text-accent: #f1cb83;
   --text-accent-hover: #fdf2e4;

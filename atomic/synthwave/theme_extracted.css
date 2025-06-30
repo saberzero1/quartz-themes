@@ -1,4 +1,12 @@
 :root {
+  --background-modifier-border: light-dark(#372b3d, #372b3d);
+  --background-modifier-error: light-dark(#8b0000, #8b0000);
+  --background-modifier-error-hover: light-dark(#580000, #580000);
+  --background-modifier-form-field: light-dark(#372b3d, #372b3d);
+  --background-modifier-success: light-dark(#7ee787, #7ee787);
+  --background-primary: light-dark(#262335, #262335);
+  --background-primary-alt: light-dark(#241b2f, #241b2f);
+  --background-secondary: light-dark(#241b2f, #241b2f);
   --background-secondary-alt: light-dark(
     var(--color-base-05),
     var(--color-base-30)
@@ -59,6 +67,11 @@
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
+  --interactive-accent: light-dark(#f97e72, #f97e72);
+  --interactive-accent-hover: light-dark(#ff7edb, #ff7edb);
+  --interactive-hover: light-dark(#745d9e, #745d9e);
+  --interactive-normal: light-dark(#614e83, #614e83);
+  --interactive-success: light-dark(#7ee787, #7ee787);
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
   --page-border: 9px solid transparent;
@@ -69,6 +82,16 @@
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
   --spreadHorizontalWrapped-margin-LR: -3.5px;
+  --text-accent: light-dark(#f97e72, #f97e72);
+  --text-accent-hover: light-dark(#ff7edb, #ff7edb);
+  --text-error-hover: light-dark(#ff0, #ff0);
+  --text-faint: light-dark(#706a76, #706a76);
+  --text-highlight-bg: light-dark(#d18616bb, #d18616bb);
+  --text-highlight-bg-active: light-dark(#d1861655, #d1861655);
+  --text-muted: light-dark(#a7a4ac, #a7a4ac);
+  --text-normal: light-dark(#fff, #fff);
+  --text-on-accent: light-dark(#fff, #fff);
+  --text-selection: light-dark(#ffffff20, #ffffff20);
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
@@ -88,22 +111,20 @@ body {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
-  --background-modifier-border: #372b3d;
+  --background-modifier-border: light-dark(#372b3d, #372b3d);
   --background-modifier-border-focus: var(--color-base-40);
   --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-box-shadow: none;
-  --background-modifier-cover: #171520d2;
-  --background-modifier-error: #8b0000;
-  --background-modifier-error-hover: #580000;
+  --background-modifier-error: light-dark(#8b0000, #8b0000);
+  --background-modifier-error-hover: light-dark(#580000, #580000);
   --background-modifier-error-rgb: var(--color-red-rgb);
-  --background-modifier-form-field: #372b3d;
+  --background-modifier-form-field: light-dark(#372b3d, #372b3d);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-modifier-message: rgba(0, 0, 0, 0.9);
-  --background-modifier-success: #7ee787;
+  --background-modifier-success: light-dark(#7ee787, #7ee787);
   --background-modifier-success-rgb: var(--color-green-rgb);
-  --background-primary: #262335;
-  --background-primary-alt: #241b2f;
-  --background-secondary: #241b2f;
+  --background-primary: light-dark(#262335, #262335);
+  --background-primary-alt: light-dark(#241b2f, #241b2f);
+  --background-secondary: light-dark(#241b2f, #241b2f);
   --background-secondary-alt: light-dark(
     var(--color-base-05),
     var(--color-base-30)
@@ -470,12 +491,12 @@ body {
   --input-height: 30px;
   --input-placeholder-color: var(--text-faint);
   --input-radius: 5px;
-  --interactive-accent: #f97e72;
-  --interactive-accent-hover: #ff7edb;
+  --interactive-accent: light-dark(#f97e72, #f97e72);
+  --interactive-accent-hover: light-dark(#ff7edb, #ff7edb);
   --interactive-accent-hsl: var(--color-accent-hsl);
-  --interactive-hover: #745d9e;
-  --interactive-normal: #614e83;
-  --interactive-success: #7ee787;
+  --interactive-hover: light-dark(#745d9e, #745d9e);
+  --interactive-normal: light-dark(#614e83, #614e83);
+  --interactive-success: light-dark(#7ee787, #7ee787);
   --italic-color: inherit;
   --italic-weight: inherit;
   --layer-cover: 5;
@@ -797,19 +818,19 @@ body {
   --tag-radius: 2em;
   --tag-size: var(--font-smaller);
   --tag-weight: inherit;
-  --text-accent: #f97e72;
-  --text-accent-hover: #ff7edb;
-  --text-error: red;
-  --text-error-hover: #ff0;
-  --text-faint: #706a76;
-  --text-highlight-bg: #d18616bb;
-  --text-highlight-bg-active: #d1861655;
+  --text-accent: light-dark(#f97e72, #f97e72);
+  --text-accent-hover: light-dark(#ff7edb, #ff7edb);
+  --text-error: var(--color-red);
+  --text-error-hover: light-dark(#ff0, #ff0);
+  --text-faint: light-dark(#706a76, #706a76);
+  --text-highlight-bg: light-dark(#d18616bb, #d18616bb);
+  --text-highlight-bg-active: light-dark(#d1861655, #d1861655);
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: #a7a4ac;
-  --text-normal: #fff;
-  --text-on-accent: #fff;
+  --text-muted: light-dark(#a7a4ac, #a7a4ac);
+  --text-normal: light-dark(#fff, #fff);
+  --text-on-accent: light-dark(#fff, #fff);
   --text-on-accent-inverted: black;
-  --text-selection: #ffffff20;
+  --text-selection: light-dark(#ffffff20, #ffffff20);
   --text-success: var(--color-green);
   --text-warning: var(--color-orange);
   --titlebar-background: var(--background-secondary);
@@ -1674,10 +1695,17 @@ svg.svg-icon {
 }
 
 .theme-dark {
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-  --background-modifier-cover: rgba(10, 10, 10, 0.4);
-  --background-modifier-form-field: var(--color-base-25);
-  --background-secondary-alt: var(--color-base-30);
+  --background-modifier-border: #372b3d;
+  --background-modifier-box-shadow: none;
+  --background-modifier-cover: #171520d2;
+  --background-modifier-error: #8b0000;
+  --background-modifier-error-hover: #580000;
+  --background-modifier-form-field: #372b3d;
+  --background-modifier-success: #7ee787;
+  --background-primary: #262335;
+  --background-primary-alt: #241b2f;
+  --background-secondary: #241b2f;
+  --background-secondary-alt: #262335;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -1727,10 +1755,11 @@ svg.svg-icon {
     inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --interactive-accent: var(--color-accent);
-  --interactive-accent-hover: var(--color-accent-1);
-  --interactive-hover: var(--color-base-35);
-  --interactive-normal: var(--color-base-30);
+  --interactive-accent: #f97e72;
+  --interactive-accent-hover: #ff7edb;
+  --interactive-hover: #745d9e;
+  --interactive-normal: #614e83;
+  --interactive-success: #7ee787;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
@@ -1741,14 +1770,31 @@ svg.svg-icon {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
-  --text-accent: var(--color-accent-1);
-  --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
+  --text-accent: #f97e72;
+  --text-accent-hover: #ff7edb;
+  --text-error: red;
+  --text-error-hover: #ff0;
+  --text-faint: #706a76;
+  --text-highlight-bg: #d18616bb;
+  --text-highlight-bg-active: #d1861655;
+  --text-muted: #a7a4ac;
+  --text-normal: #fff;
+  --text-on-accent: #fff;
+  --text-selection: #ffffff20;
 }
 
 .theme-light {
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
-  --background-modifier-cover: rgba(220, 220, 220, 0.4);
-  --background-secondary-alt: var(--color-base-05);
+  --background-modifier-border: #372b3d;
+  --background-modifier-box-shadow: none;
+  --background-modifier-cover: #171520d2;
+  --background-modifier-error: #8b0000;
+  --background-modifier-error-hover: #580000;
+  --background-modifier-form-field: #372b3d;
+  --background-modifier-success: #7ee787;
+  --background-primary: #262335;
+  --background-primary-alt: #241b2f;
+  --background-secondary: #241b2f;
+  --background-secondary-alt: #262335;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -1798,6 +1844,11 @@ svg.svg-icon {
     inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
     0 0 0 0 transparent;
+  --interactive-accent: #f97e72;
+  --interactive-accent-hover: #ff7edb;
+  --interactive-hover: #745d9e;
+  --interactive-normal: #614e83;
+  --interactive-success: #7ee787;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
   --shadow-l:
@@ -1806,6 +1857,17 @@ svg.svg-icon {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07);
+  --text-accent: #f97e72;
+  --text-accent-hover: #ff7edb;
+  --text-error: red;
+  --text-error-hover: #ff0;
+  --text-faint: #706a76;
+  --text-highlight-bg: #d18616bb;
+  --text-highlight-bg-active: #d1861655;
+  --text-muted: #a7a4ac;
+  --text-normal: #fff;
+  --text-on-accent: #fff;
+  --text-selection: #ffffff20;
 }
 
 .mod-sidedock {

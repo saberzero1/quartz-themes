@@ -952,13 +952,33 @@
   --background-1: light-dark(var(--vercel-gray-100), var(--vercel-gray-900));
   --background-2: light-dark(var(--vercel-gray-200), var(--vercel-gray-900));
   --background-3: light-dark(var(--vercel-gray-300), var(--vercel-gray-800));
+  --background-accent: light-dark(var(--accent-blue), var(--accent-blue));
+  --background-modifier-border: light-dark(var(--border-1), var(--border-1));
+  --background-modifier-error: light-dark(#ff0000, #ff0000);
+  --background-modifier-error-hover: light-dark(#ff3333, #ff3333);
+  --background-modifier-success: light-dark(
+    var(--vercel-blue-600),
+    var(--vercel-blue-600)
+  );
+  --background-primary: light-dark(var(--background-1), var(--background-1));
+  --background-primary-alt: light-dark(
+    var(--background-2),
+    var(--background-2)
+  );
+  --background-secondary: light-dark(var(--background-2), var(--background-2));
   --background-secondary-alt: light-dark(
     var(--color-base-05),
     var(--color-base-30)
   );
+  --blockquote-border: light-dark(
+    var(--vercel-blue-600),
+    var(--vercel-blue-600)
+  );
   --border-1: light-dark(var(--vercel-gray-200), var(--vercel-gray-700));
   --border-2: light-dark(var(--vercel-gray-300), var(--vercel-gray-600));
   --border-3: light-dark(var(--vercel-blue-600), var(--vercel-blue-600));
+  --border-color: light-dark(var(--border-1), var(--border-1));
+  --code-block: light-dark(var(--text-1), var(--text-1));
   --color-accent: light-dark(
     hsl(var(--accent-h), var(--accent-s), var(--accent-l)),
     hsl(var(--accent-h), var(--accent-s), var(--accent-l))
@@ -1035,10 +1055,34 @@
   --font-size-side-dock: 14px;
   --font-size-side-dock-title: 16px;
   --font-size-status-bar: 14px;
+  --heading-color-h1: light-dark(
+    var(--vercel-blue-500),
+    var(--vercel-blue-500)
+  );
+  --heading-color-h2: light-dark(
+    var(--vercel-blue-600),
+    var(--vercel-blue-600)
+  );
+  --heading-color-h3: light-dark(var(--text-1), var(--text-1));
+  --heading-color-h4: light-dark(var(--text-1), var(--text-1));
+  --heading-color-h5: light-dark(var(--text-1), var(--text-1));
+  --heading-color-h6: light-dark(var(--text-2), var(--text-2));
   --highlight-high: light-dark(var(--vercel-blue-300), var(--vercel-gray-600));
   --highlight-low: light-dark(var(--vercel-gray-200), var(--vercel-gray-800));
   --highlight-med: light-dark(var(--vercel-gray-300), var(--vercel-gray-700));
+  --inline-code: light-dark(var(--vercel-blue-600), var(--vercel-blue-600));
   --inline-code-bg: light-dark(var(--vercel-gray-200), var(--vercel-gray-800));
+  --interactive-accent: light-dark(var(--accent-blue), var(--accent-blue));
+  --interactive-accent-active: light-dark(
+    var(--vercel-blue-600),
+    var(--vercel-blue-600)
+  );
+  --interactive-accent-hover: light-dark(
+    var(--vercel-blue-500),
+    var(--vercel-blue-500)
+  );
+  --interactive-hover: light-dark(var(--highlight-low), var(--highlight-low));
+  --interactive-normal: light-dark(var(--background-2), var(--background-2));
   --keyboard-height: 0px;
   --link-color: light-dark(var(--vercel-blue-600), var(--vercel-blue-500));
   --link-color-hover: light-dark(
@@ -1049,14 +1093,35 @@
   --page-border: 9px solid transparent;
   --page-margin: 1px auto -8px;
   --pdfViewer-padding-bottom: 0;
+  --pre-code: light-dark(var(--background-2), var(--background-2));
   --safe-area-inset-bottom: env(safe-area-inset-bottom);
   --safe-area-inset-left: env(safe-area-inset-left);
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
+  --scrollbar-active-thumb-bg: light-dark(var(--border-2), var(--border-2));
+  --scrollbar-thumb-bg: light-dark(var(--border-1), var(--border-1));
   --spreadHorizontalWrapped-margin-LR: -3.5px;
   --text-1: light-dark(var(--vercel-gray-900), var(--vercel-gray-100));
   --text-2: light-dark(var(--vercel-gray-600), var(--vercel-gray-400));
-  --text-accent: light-dark(var(--vercel-blue-600), var(--vercel-blue-500));
+  --text-accent-hover: light-dark(
+    var(--link-color-hover),
+    var(--link-color-hover)
+  );
+  --text-error: light-dark(#ff0000, #ff0000);
+  --text-error-hover: light-dark(#ff3333, #ff3333);
+  --text-faint: light-dark(var(--text-2), var(--text-2));
+  --text-highlight-bg: light-dark(
+    var(--vercel-blue-300),
+    var(--vercel-blue-300)
+  );
+  --text-muted: light-dark(var(--text-2), var(--text-2));
+  --text-normal: light-dark(var(--text-1), var(--text-1));
+  --text-on-accent: light-dark(#ffffff, #ffffff);
+  --titlebar-background: light-dark(var(--background-1), var(--background-1));
+  --titlebar-background-focused: light-dark(
+    var(--background-2),
+    var(--background-2)
+  );
   --vercel-blue-100: #ffffff;
   --vercel-blue-200: #d6e4ff;
   --vercel-blue-300: #adc8ff;
@@ -1076,6 +1141,7 @@
   --vercel-gray-800: #111111;
   --vercel-gray-900: #000000;
   --viewer-container-height: 0;
+  --vim-cursor: light-dark(var(--vercel-blue-600), var(--vercel-blue-600));
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
 }
@@ -1706,25 +1772,28 @@ body {
   --background-1: light-dark(var(--vercel-gray-100), var(--vercel-gray-900));
   --background-2: light-dark(var(--vercel-gray-200), var(--vercel-gray-900));
   --background-3: light-dark(var(--vercel-gray-300), var(--vercel-gray-800));
-  --background-accent: var(--accent-blue);
+  --background-accent: light-dark(var(--accent-blue), var(--accent-blue));
   --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
-  --background-modifier-border: var(--border-1);
+  --background-modifier-border: light-dark(var(--border-1), var(--border-1));
   --background-modifier-border-focus: var(--color-base-40);
   --background-modifier-border-hover: var(--color-base-35);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
-  --background-modifier-cover: rgba(0, 0, 0, 0.4);
-  --background-modifier-error: #ff0000;
-  --background-modifier-error-hover: #ff3333;
+  --background-modifier-error: light-dark(#ff0000, #ff0000);
+  --background-modifier-error-hover: light-dark(#ff3333, #ff3333);
   --background-modifier-error-rgb: var(--color-red-rgb);
-  --background-modifier-form-field: rgba(0, 0, 0, 0.1);
-  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.2);
+  --background-modifier-form-field: var(--color-base-00);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-modifier-message: rgba(0, 0, 0, 0.9);
-  --background-modifier-success: var(--vercel-blue-600);
+  --background-modifier-success: light-dark(
+    var(--vercel-blue-600),
+    var(--vercel-blue-600)
+  );
   --background-modifier-success-rgb: var(--color-green-rgb);
-  --background-primary: var(--background-1);
-  --background-primary-alt: var(--background-2);
-  --background-secondary: var(--background-2);
+  --background-primary: light-dark(var(--background-1), var(--background-1));
+  --background-primary-alt: light-dark(
+    var(--background-2),
+    var(--background-2)
+  );
+  --background-secondary: light-dark(var(--background-2), var(--background-2));
   --background-secondary-alt: light-dark(
     var(--color-base-05),
     var(--color-base-30)
@@ -1762,7 +1831,10 @@ body {
   --bases-table-text-size: var(--font-smaller);
   --bases-table-white-space: nowrap;
   --blockquote-background-color: transparent;
-  --blockquote-border: var(--vercel-blue-600);
+  --blockquote-border: light-dark(
+    var(--vercel-blue-600),
+    var(--vercel-blue-600)
+  );
   --blockquote-border-color: var(--interactive-accent);
   --blockquote-border-thickness: 2px;
   --blockquote-color: inherit;
@@ -1773,7 +1845,7 @@ body {
   --border-1: light-dark(var(--vercel-gray-200), var(--vercel-gray-700));
   --border-2: light-dark(var(--vercel-gray-300), var(--vercel-gray-600));
   --border-3: light-dark(var(--vercel-blue-600), var(--vercel-blue-600));
-  --border-color: var(--border-1);
+  --border-color: light-dark(var(--border-1), var(--border-1));
   --border-width: 1px;
   --button-radius: var(--input-radius);
   --callout-blend-mode: var(--highlight-mix-blend-mode);
@@ -1825,7 +1897,7 @@ body {
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: var(--radius-s);
   --code-background: var(--background-primary-alt);
-  --code-block: var(--text-1);
+  --code-block: light-dark(var(--text-1), var(--text-1));
   --code-border-color: var(--background-modifier-border);
   --code-border-width: 0px;
   --code-comment: var(--text-faint);
@@ -2051,12 +2123,18 @@ body {
   --h6-variant: normal;
   --h6-weight: 600;
   --header-height: 40px;
-  --heading-color-h1: var(--vercel-blue-500);
-  --heading-color-h2: var(--vercel-blue-600);
-  --heading-color-h3: var(--text-1);
-  --heading-color-h4: var(--text-1);
-  --heading-color-h5: var(--text-1);
-  --heading-color-h6: var(--text-2);
+  --heading-color-h1: light-dark(
+    var(--vercel-blue-500),
+    var(--vercel-blue-500)
+  );
+  --heading-color-h2: light-dark(
+    var(--vercel-blue-600),
+    var(--vercel-blue-600)
+  );
+  --heading-color-h3: light-dark(var(--text-1), var(--text-1));
+  --heading-color-h4: light-dark(var(--text-1), var(--text-1));
+  --heading-color-h5: light-dark(var(--text-1), var(--text-1));
+  --heading-color-h6: light-dark(var(--text-2), var(--text-2));
   --heading-formatting: var(--text-faint);
   --heading-spacing: calc(var(--p-spacing) * 2.5);
   --highlight-high: light-dark(var(--vercel-blue-300), var(--vercel-gray-600));
@@ -2092,7 +2170,7 @@ body {
   --indentation-guide-source-indent: 0.25em;
   --indentation-guide-width: 1px;
   --indentation-guide-width-active: 1px;
-  --inline-code: var(--vercel-blue-600);
+  --inline-code: light-dark(var(--vercel-blue-600), var(--vercel-blue-600));
   --inline-code-bg: light-dark(var(--vercel-gray-200), var(--vercel-gray-800));
   --inline-title-color: var(--h1-color);
   --inline-title-font: var(--h1-font);
@@ -2108,12 +2186,18 @@ body {
   --input-height: 30px;
   --input-placeholder-color: var(--text-faint);
   --input-radius: 5px;
-  --interactive-accent: var(--accent-blue);
-  --interactive-accent-active: var(--vercel-blue-600);
-  --interactive-accent-hover: var(--vercel-blue-500);
+  --interactive-accent: light-dark(var(--accent-blue), var(--accent-blue));
+  --interactive-accent-active: light-dark(
+    var(--vercel-blue-600),
+    var(--vercel-blue-600)
+  );
+  --interactive-accent-hover: light-dark(
+    var(--vercel-blue-500),
+    var(--vercel-blue-500)
+  );
   --interactive-accent-hsl: var(--color-accent-hsl);
-  --interactive-hover: var(--highlight-low);
-  --interactive-normal: var(--background-2);
+  --interactive-hover: light-dark(var(--highlight-low), var(--highlight-low));
+  --interactive-normal: light-dark(var(--background-2), var(--background-2));
   --italic-color: inherit;
   --italic-weight: inherit;
   --layer-cover: 5;
@@ -2283,7 +2367,7 @@ body {
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
   --popover-width: 450px;
-  --pre-code: var(--background-2);
+  --pre-code: light-dark(var(--background-2), var(--background-2));
   --prompt-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
@@ -2301,9 +2385,9 @@ body {
   --ribbon-background-collapsed: var(--background-primary);
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
   --ribbon-width: 44px;
-  --scrollbar-active-thumb-bg: var(--border-2);
-  --scrollbar-bg: transparent;
-  --scrollbar-thumb-bg: var(--border-1);
+  --scrollbar-active-thumb-bg: light-dark(var(--border-2), var(--border-2));
+  --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05);
+  --scrollbar-thumb-bg: light-dark(var(--border-1), var(--border-1));
   --search-clear-button-color: var(--text-muted);
   --search-clear-button-size: 13px;
   --search-icon-color: var(--text-muted);
@@ -2441,22 +2525,31 @@ body {
   --tag-weight: inherit;
   --text-1: light-dark(var(--vercel-gray-900), var(--vercel-gray-100));
   --text-2: light-dark(var(--vercel-gray-600), var(--vercel-gray-400));
-  --text-accent: light-dark(var(--vercel-blue-600), var(--vercel-blue-500));
-  --text-accent-hover: var(--link-color-hover);
-  --text-error: #ff0000;
-  --text-error-hover: #ff3333;
-  --text-faint: var(--text-2);
-  --text-highlight-bg: var(--vercel-blue-300);
+  --text-accent: var(--color-accent);
+  --text-accent-hover: light-dark(
+    var(--link-color-hover),
+    var(--link-color-hover)
+  );
+  --text-error: light-dark(#ff0000, #ff0000);
+  --text-error-hover: light-dark(#ff3333, #ff3333);
+  --text-faint: light-dark(var(--text-2), var(--text-2));
+  --text-highlight-bg: light-dark(
+    var(--vercel-blue-300),
+    var(--vercel-blue-300)
+  );
   --text-highlight-bg-rgb: 255, 208, 0;
-  --text-muted: var(--text-2);
-  --text-normal: var(--text-1);
-  --text-on-accent: #ffffff;
+  --text-muted: light-dark(var(--text-2), var(--text-2));
+  --text-normal: light-dark(var(--text-1), var(--text-1));
+  --text-on-accent: light-dark(#ffffff, #ffffff);
   --text-on-accent-inverted: black;
-  --text-selection: rgba(77, 139, 249, 0.3);
+  --text-selection: hsla(var(--color-accent-hsl), 0.2);
   --text-success: var(--color-green);
   --text-warning: var(--color-orange);
-  --titlebar-background: var(--background-1);
-  --titlebar-background-focused: var(--background-2);
+  --titlebar-background: light-dark(var(--background-1), var(--background-1));
+  --titlebar-background-focused: light-dark(
+    var(--background-2),
+    var(--background-2)
+  );
   --titlebar-border-color: var(--background-modifier-border);
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;
@@ -2480,7 +2573,7 @@ body {
   --vault-profile-display: flex;
   --vault-profile-font-size: var(--font-ui-small);
   --vault-profile-font-weight: var(--font-medium);
-  --vim-cursor: var(--vercel-blue-600);
+  --vim-cursor: light-dark(var(--vercel-blue-600), var(--vercel-blue-600));
   --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
   --zoom-factor: 1;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
@@ -2508,12 +2601,25 @@ body {
   --background-1: var(--vercel-gray-100);
   --background-2: var(--vercel-gray-200);
   --background-3: var(--vercel-gray-300);
+  --background-accent: var(--accent-blue);
+  --background-modifier-border: var(--border-1);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
-  --background-modifier-cover: rgba(220, 220, 220, 0.4);
-  --background-secondary-alt: var(--color-base-05);
+  --background-modifier-cover: rgba(0, 0, 0, 0.4);
+  --background-modifier-error: #ff0000;
+  --background-modifier-error-hover: #ff3333;
+  --background-modifier-form-field: rgba(0, 0, 0, 0.1);
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.2);
+  --background-modifier-success: var(--vercel-blue-600);
+  --background-primary: var(--background-1);
+  --background-primary-alt: var(--background-2);
+  --background-secondary: var(--background-2);
+  --background-secondary-alt: var(--background-3);
+  --blockquote-border: var(--vercel-blue-600);
   --border-1: var(--vercel-gray-200);
   --border-2: var(--vercel-gray-300);
   --border-3: var(--vercel-blue-600);
+  --border-color: var(--border-1);
+  --code-block: var(--text-1);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 1),
@@ -2554,10 +2660,17 @@ body {
   --color-red-rgb: 233, 49, 71;
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
+  --heading-color-h1: var(--vercel-blue-500);
+  --heading-color-h2: var(--vercel-blue-600);
+  --heading-color-h3: var(--text-1);
+  --heading-color-h4: var(--text-1);
+  --heading-color-h5: var(--text-1);
+  --heading-color-h6: var(--text-2);
   --highlight-high: var(--vercel-blue-300);
   --highlight-low: var(--vercel-gray-200);
   --highlight-med: var(--vercel-gray-300);
   --highlight-mix-blend-mode: darken;
+  --inline-code: var(--vercel-blue-600);
   --inline-code-bg: var(--vercel-gray-200);
   --input-shadow:
     inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
@@ -2567,11 +2680,20 @@ body {
     inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
     0 0 0 0 transparent;
+  --interactive-accent: var(--accent-blue);
+  --interactive-accent-active: var(--vercel-blue-600);
+  --interactive-accent-hover: var(--vercel-blue-500);
+  --interactive-hover: var(--highlight-low);
+  --interactive-normal: var(--background-2);
   --link-color: var(--vercel-blue-600);
   --link-color-hover: var(--vercel-blue-700);
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
+  --pre-code: var(--background-2);
   --pre-code-bg: var(--vercel-gray-200);
+  --scrollbar-active-thumb-bg: var(--border-2);
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: var(--border-1);
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
@@ -2580,7 +2702,19 @@ body {
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --text-1: var(--vercel-gray-900);
   --text-2: var(--vercel-gray-600);
-  --text-accent: var(--vercel-blue-600);
+  --text-accent: var(--text-accent);
+  --text-accent-hover: var(--link-color-hover);
+  --text-error: #ff0000;
+  --text-error-hover: #ff3333;
+  --text-faint: var(--text-2);
+  --text-highlight-bg: var(--vercel-blue-300);
+  --text-muted: var(--text-2);
+  --text-normal: var(--text-1);
+  --text-on-accent: #ffffff;
+  --text-selection: rgba(77, 139, 249, 0.3);
+  --titlebar-background: var(--background-1);
+  --titlebar-background-focused: var(--background-2);
+  --vim-cursor: var(--vercel-blue-600);
 }
 
 .theme-dark {
@@ -2588,13 +2722,25 @@ body {
   --background-1: var(--vercel-gray-900);
   --background-2: var(--vercel-gray-900);
   --background-3: var(--vercel-gray-800);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-  --background-modifier-cover: rgba(10, 10, 10, 0.4);
-  --background-modifier-form-field: var(--color-base-25);
-  --background-secondary-alt: var(--color-base-30);
+  --background-accent: var(--accent-blue);
+  --background-modifier-border: var(--border-1);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-cover: rgba(0, 0, 0, 0.4);
+  --background-modifier-error: #ff0000;
+  --background-modifier-error-hover: #ff3333;
+  --background-modifier-form-field: rgba(0, 0, 0, 0.1);
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.2);
+  --background-modifier-success: var(--vercel-blue-600);
+  --background-primary: var(--background-1);
+  --background-primary-alt: var(--background-2);
+  --background-secondary: var(--background-2);
+  --background-secondary-alt: var(--background-3);
+  --blockquote-border: var(--vercel-blue-600);
   --border-1: var(--vercel-gray-700);
   --border-2: var(--vercel-gray-600);
   --border-3: var(--vercel-blue-600);
+  --border-color: var(--border-1);
+  --code-block: var(--text-1);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
     calc(var(--accent-h) - 3),
@@ -2635,10 +2781,17 @@ body {
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
+  --heading-color-h1: var(--vercel-blue-500);
+  --heading-color-h2: var(--vercel-blue-600);
+  --heading-color-h3: var(--text-1);
+  --heading-color-h4: var(--text-1);
+  --heading-color-h5: var(--text-1);
+  --heading-color-h6: var(--text-2);
   --highlight-high: var(--vercel-gray-600);
   --highlight-low: var(--vercel-gray-800);
   --highlight-med: var(--vercel-gray-700);
   --highlight-mix-blend-mode: darken;
+  --inline-code: var(--vercel-blue-600);
   --inline-code-bg: var(--vercel-gray-800);
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
@@ -2648,10 +2801,11 @@ body {
     inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --interactive-accent: var(--color-accent);
-  --interactive-accent-hover: var(--color-accent-1);
-  --interactive-hover: var(--color-base-35);
-  --interactive-normal: var(--color-base-30);
+  --interactive-accent: var(--accent-blue);
+  --interactive-accent-active: var(--vercel-blue-600);
+  --interactive-accent-hover: var(--vercel-blue-500);
+  --interactive-hover: var(--highlight-low);
+  --interactive-normal: var(--background-2);
   --link-color: var(--vercel-blue-500);
   --link-color-hover: var(--vercel-blue-600);
   --link-external-color: var(--vercel-gray-400);
@@ -2659,7 +2813,10 @@ body {
   --mono-rgb-100: 255, 255, 255;
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
-  --pre-code: var(--vercel-gray-500);
+  --pre-code: var(--background-2);
+  --scrollbar-active-thumb-bg: var(--border-2);
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: var(--border-1);
   --shadow-l:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
@@ -2668,8 +2825,19 @@ body {
     0px 15px 30px rgba(0, 0, 0, 0.3);
   --text-1: var(--vercel-gray-100);
   --text-2: var(--vercel-gray-400);
-  --text-accent: var(--vercel-blue-500);
-  --text-selection: hsla(var(--interactive-accent-hsl), 0.33);
+  --text-accent: var(--text-accent);
+  --text-accent-hover: var(--link-color-hover);
+  --text-error: #ff0000;
+  --text-error-hover: #ff3333;
+  --text-faint: var(--text-2);
+  --text-highlight-bg: var(--vercel-blue-300);
+  --text-muted: var(--text-2);
+  --text-normal: var(--text-1);
+  --text-on-accent: #ffffff;
+  --text-selection: rgba(77, 139, 249, 0.3);
+  --titlebar-background: var(--background-1);
+  --titlebar-background-focused: var(--background-2);
+  --vim-cursor: var(--vercel-blue-600);
 }
 
 iframe {

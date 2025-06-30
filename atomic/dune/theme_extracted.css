@@ -114,7 +114,16 @@
   --def-red: light-dark(var(--dark-red), var(--light-red));
   --frame-color-a: light-dark(#4a6cb0, #ff7029);
   --frame-color-b: light-dark(#4a6cb0, #ff7029);
-  --graph-fill-tag: light-dark(var(--interactive-accent), #ede4b7);
+  --graph-arrow: light-dark(var(--text-muted), var(--text-muted));
+  --graph-circle-fill: light-dark(var(--def-red), var(--def-red));
+  --graph-circle-fill-highlight: light-dark(
+    var(--interactive-accent),
+    var(--interactive-accent)
+  );
+  --graph-line-highlight: light-dark(
+    var(--interactive-accent),
+    var(--interactive-accent)
+  );
   --h1-color: var(--header-col);
   --h2-color: var(--header-col);
   --h3-color: var(--header-col);
@@ -534,14 +543,18 @@ body {
   --frame-color-a: light-dark(#4a6cb0, #ff7029);
   --frame-color-b: light-dark(#4a6cb0, #ff7029);
   --grabnote-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' style='fill: rgba(0, 0, 0, 1),transform: ,msFilter:,'%3E%3Cpath d='M7 7h4v4H7zm0 6h4v4H7zm6-6h4v4h-4zm0 6h4v4h-4z'%3E%3C/path%3E%3C/svg%3E");
-  --graph-arrow: var(--text-muted);
-  --graph-circle-fill: var(--def-red);
-  --graph-circle-fill-highlight: var(--interactive-accent);
-  --graph-circle-fill-unresolved: gray;
+  --graph-arrow: light-dark(var(--text-muted), var(--text-muted));
+  --graph-circle-fill: light-dark(var(--def-red), var(--def-red));
+  --graph-circle-fill-highlight: light-dark(
+    var(--interactive-accent),
+    var(--interactive-accent)
+  );
   --graph-controls-width: 240px;
-  --graph-fill-tag: light-dark(var(--interactive-accent), #ede4b7);
-  --graph-line: rgba(128, 128, 128);
-  --graph-line-highlight: var(--interactive-accent);
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus));
+  --graph-line-highlight: light-dark(
+    var(--interactive-accent),
+    var(--interactive-accent)
+  );
   --graph-node: var(--text-muted);
   --graph-node-attachment: var(--color-yellow);
   --graph-node-focused: var(--text-accent);
@@ -1979,8 +1992,13 @@ svg.svg-icon {
   --def-red: var(--light-red);
   --frame-color-a: #ff7029;
   --frame-color-b: #ff7029;
+  --graph-arrow: var(--text-muted);
+  --graph-circle-fill: var(--def-red);
+  --graph-circle-fill-highlight: var(--interactive-accent);
   --graph-circle-fill-unresolved: gray;
-  --graph-fill-tag: #ede4b7;
+  --graph-fill-tag: darkorange;
+  --graph-line: rgba(128, 128, 128);
+  --graph-line-highlight: var(--interactive-accent);
   --highlight-mix-blend-mode: darken;
   --hl-mark-blue: var(--dark-blue);
   --hl-mark-gray: var(--dark-gray);
@@ -2105,8 +2123,13 @@ svg.svg-icon {
   --def-red: var(--dark-red);
   --frame-color-a: #4a6cb0;
   --frame-color-b: #4a6cb0;
-  --graph-circle-fill-unresolved: dimgray;
-  --graph-fill-tag: var(--interactive-accent);
+  --graph-arrow: var(--text-muted);
+  --graph-circle-fill: var(--def-red);
+  --graph-circle-fill-highlight: var(--interactive-accent);
+  --graph-circle-fill-unresolved: gray;
+  --graph-fill-tag: darkorange;
+  --graph-line: rgba(128, 128, 128);
+  --graph-line-highlight: var(--interactive-accent);
   --highlight-mix-blend-mode: darken;
   --hl-mark-blue: var(--light-blue);
   --hl-mark-gray: var(--light-gray);

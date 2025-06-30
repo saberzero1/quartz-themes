@@ -2809,7 +2809,6 @@ iframe {
     width: 100%;
   }
   .popover {
-    animation: 0.3s pop cubic-bezier(0.17, 0.89, 0.32, 1.27);
     background-color: var(--background-primary);
     border: 1px solid var(--background-modifier-border);
     border-radius: var(--radius-m);

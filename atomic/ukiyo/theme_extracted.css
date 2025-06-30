@@ -84,6 +84,10 @@
   --spreadHorizontalWrapped-margin-LR: -3.5px;
   --text-highlight-bg: light-dark(#eac357, #926b22e6);
   --text-selection: light-dark(#c7a78683, #6154508f);
+  --titlebar-background-focused: light-dark(
+    var(--color-base-20),
+    var(--color-base-20)
+  );
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
@@ -822,7 +826,10 @@ body {
   --text-success: var(--color-green);
   --text-warning: var(--color-orange);
   --titlebar-background: var(--background-secondary);
-  --titlebar-background-focused: var(--color-base-20);
+  --titlebar-background-focused: light-dark(
+    var(--color-base-20),
+    var(--color-base-20)
+  );
   --titlebar-border-color: var(--background-modifier-border);
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;
@@ -1244,8 +1251,6 @@ h6 {
 }
 
 .popover {
-  animation: scale-up var(--hover-faster-animation-duration)
-    var(--cubic-animation);
   background-color: var(--background-primary);
   border: 1px solid var(--background-modifier-border);
   border-radius: var(--radius-m);
@@ -1705,11 +1710,7 @@ svg.svg-icon {
   --background-modifier-message: #281f1b;
   --background-secondary-alt: var(--color-base-30);
   --color-accent: #ba945f;
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 3),
-    calc(var(--accent-s) * 1.02),
-    calc(var(--accent-l) * 1.15)
-  );
+  --color-accent-1: var(--color-accent);
   --color-accent-2: #e0ba86;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #372d29;
@@ -1770,6 +1771,7 @@ svg.svg-icon {
   --text-accent: var(--color-accent-1);
   --text-highlight-bg: #926b22e6;
   --text-selection: #6154508f;
+  --titlebar-background-focused: var(--color-base-20);
 }
 
 .theme-light {
@@ -1780,11 +1782,7 @@ svg.svg-icon {
   --background-secondary-alt: var(--color-base-05);
   --code-background: var(--color-base-05);
   --color-accent: #800000;
-  --color-accent-1: hsl(
-    calc(var(--accent-h) - 1),
-    calc(var(--accent-s) * 1.01),
-    calc(var(--accent-l) * 1.075)
-  );
+  --color-accent-1: var(--color-accent);
   --color-accent-2: #a00000;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-base-00: #e1c4a6;
@@ -1838,6 +1836,7 @@ svg.svg-icon {
     0px 15px 30px rgba(0, 0, 0, 0.07);
   --text-highlight-bg: #eac357;
   --text-selection: #c7a78683;
+  --titlebar-background-focused: var(--color-base-20);
 }
 
 .mod-sidedock {

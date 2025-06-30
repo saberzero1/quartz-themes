@@ -25,11 +25,16 @@ html[saved-theme="dark"] {
 
   --active-bg: var(--nav-item-background-active);
   --mono-rgb-100: 255, 255, 255;
+
   --tag-background: hsla(17.5690607735deg, 80.4444444444%, 44.1176470588%, 0.2);
+
   --text-accent: hsl(calc(17.56906deg - 3), 82.05333%, 50.73529%);
+
   --active-bg: var(--nav-item-background-active);
   --mono-rgb-100: 255, 255, 255;
+
   --tag-background: hsla(17.5690607735deg, 80.4444444444%, 44.1176470588%, 0.2);
+
   --text-accent: hsl(calc(17.56906deg - 3), 82.05333%, 50.73529%);
 }
 
@@ -52,14 +57,14 @@ html[saved-theme="light"] {
   --active-bg: hsla(17.5690607735deg, 80.4444444444%, 44.1176470588%, 0.1);
   --mono-rgb-100: 0, 0, 0;
   --nav-item-background-active: var(--active-bg);
+
   --tag-background: hsla(17.5690607735deg, 80.4444444444%, 44.1176470588%, 0.1);
 
   --active-bg: hsla(17.5690607735deg, 80.4444444444%, 44.1176470588%, 0.1);
   --mono-rgb-100: 0, 0, 0;
   --nav-item-background-active: var(--active-bg);
-  --tag-background: hsla(17.5690607735deg, 80.4444444444%, 44.1176470588%, 0.1);
 
-  --text-normal: #657b83;
+  --tag-background: hsla(17.5690607735deg, 80.4444444444%, 44.1176470588%, 0.1);
 }
 
 @font-face {
@@ -223,8 +228,36 @@ html[saved-theme="light"] {
 }
 
 :root {
+  --background-modifier-border-focus: light-dark(
+    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%),
+    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%)
+  );
   --background-primary: light-dark(#fdf6e3, #002b36);
   --background-primary-alt: light-dark(#eee8d5, #073642);
+  --checkbox-border-color: light-dark(
+    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%),
+    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%)
+  );
+  --checkbox-border-color-hover: light-dark(
+    hsl(calc(17.56906deg - 3), 82.05333%, 50.73529%),
+    hsl(calc(17.56906deg - 3), 82.05333%, 50.73529%)
+  );
+  --code-comment: light-dark(#2aa198, #2aa198);
+  --code-function: light-dark(#268bd2, #268bd2);
+  --code-important: light-dark(#cb4b16, #cb4b16);
+  --code-keyword: light-dark(#859900, #859900);
+  --code-normal: light-dark(#839496, #839496);
+  --code-property: light-dark(
+    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%),
+    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%)
+  );
+  --code-punctuation: light-dark(
+    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%),
+    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%)
+  );
+  --code-string: light-dark(#2aa198, #2aa198);
+  --code-tag: light-dark(#dc322f, #dc322f);
+  --code-value: light-dark(#d33682, #d33682);
   --color-accent-2: light-dark(
     hsl(calc(17.56906deg - 3), 82.05333%, 50.73529%),
     hsl(calc(17.56906deg - 5), 84.46667%, 56.91176%)
@@ -253,7 +286,20 @@ html[saved-theme="light"] {
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
+  --h1-color: light-dark(#2aa198, #2aa198);
+  --link-color: light-dark(#268bd2, #268bd2);
+  --link-color-hover: light-dark(#002b36, #002b36);
+  --link-external-color: light-dark(#6c71c4, #6c71c4);
+  --link-external-color-hover: light-dark(#002b36, #002b36);
+  --tag-color: light-dark(
+    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%),
+    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%)
+  );
   --text-faint: light-dark(#93a1a1, #586e75);
+  --text-highlight-bg: light-dark(
+    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%),
+    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%)
+  );
   --text-muted: light-dark(#839496, #657b83);
   --text-normal: light-dark(#657b83, #839496);
   --text-normal: var(--color-base-100);
@@ -293,10 +339,9 @@ html {
 }
 body {
   --background-modifier-border: #073642;
-  --background-modifier-border-focus: hsl(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%
+  --background-modifier-border-focus: light-dark(
+    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%),
+    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%)
   );
   --background-modifier-border-hover: #073642;
   --background-modifier-hover: #ffffff11;
@@ -304,15 +349,13 @@ body {
   --background-primary-alt: light-dark(#eee8d5, #073642);
   --bold-color: inherit;
   --bold-weight: 800;
-  --checkbox-border-color: hsl(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%
+  --checkbox-border-color: light-dark(
+    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%),
+    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%)
   );
-  --checkbox-border-color-hover: hsl(
-    calc(17.56906deg - 3),
-    82.05333%,
-    50.73529%
+  --checkbox-border-color-hover: light-dark(
+    hsl(calc(17.56906deg - 3), 82.05333%, 50.73529%),
+    hsl(calc(17.56906deg - 3), 82.05333%, 50.73529%)
   );
   --checkbox-color: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%);
   --checkbox-color-hover: hsl(calc(17.56906deg - 3), 82.05333%, 50.73529%);
@@ -320,16 +363,22 @@ body {
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
   --code-background: #073642;
-  --code-comment: #53dfdd;
-  --code-function: #027aff;
-  --code-important: #e9973f;
-  --code-keyword: #44cf6e;
-  --code-normal: #839496;
-  --code-property: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%);
-  --code-punctuation: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%);
-  --code-string: #53dfdd;
-  --code-tag: #fb464c;
-  --code-value: #fa99cd;
+  --code-comment: light-dark(#2aa198, #2aa198);
+  --code-function: light-dark(#268bd2, #268bd2);
+  --code-important: light-dark(#cb4b16, #cb4b16);
+  --code-keyword: light-dark(#859900, #859900);
+  --code-normal: light-dark(#839496, #839496);
+  --code-property: light-dark(
+    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%),
+    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%)
+  );
+  --code-punctuation: light-dark(
+    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%),
+    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%)
+  );
+  --code-string: light-dark(#2aa198, #2aa198);
+  --code-tag: light-dark(#dc322f, #dc322f);
+  --code-value: light-dark(#d33682, #d33682);
   --collapse-icon-color: #586e75;
   --collapse-icon-color-collapsed: hsl(
     calc(17.56906deg - 3),
@@ -375,22 +424,22 @@ body {
     "Segoe UI Symbol", sans-serif;
   --font-weight: 400;
   --graph-line: #073642;
-  --graph-node-tag: #44cf6e;
+  --graph-node-tag: #859900;
   --graph-node-unresolved: #586e75;
-  --h1-color: #53dfdd;
+  --h1-color: light-dark(#2aa198, #2aa198);
   --h1-font: inherit;
   --h3-line-height: 1.3;
   --hr-color: transparent;
   --hr-thickness: 2px;
   --icon-color: #657b83;
-  --inline-title-color: #53dfdd;
+  --inline-title-color: #2aa198;
   --inline-title-font: inherit;
   --interactive-accent-hsl: 17.5690607735deg, 80.4444444444%, 44.1176470588%;
   --italic-color: inherit;
-  --link-color: #027aff;
-  --link-color-hover: #002b36;
-  --link-external-color: #a882ff;
-  --link-external-color-hover: #002b36;
+  --link-color: light-dark(#268bd2, #268bd2);
+  --link-color-hover: light-dark(#002b36, #002b36);
+  --link-external-color: light-dark(#6c71c4, #6c71c4);
+  --link-external-color-hover: light-dark(#002b36, #002b36);
   --link-external-filter: none;
   --link-weight: 600;
   --nav-item-background-active: #ffffff26;
@@ -416,7 +465,10 @@ body {
     0.15
   );
   --tag-border-width: 0px;
-  --tag-color: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%);
+  --tag-color: light-dark(
+    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%),
+    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%)
+  );
   --tag-color-hover: hsl(calc(17.56906deg - 3), 82.05333%, 50.73529%);
   --tag-decoration: none;
   --tag-decoration-hover: none;
@@ -425,14 +477,17 @@ body {
   --text-accent: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%);
   --text-accent-hover: hsl(calc(17.56906deg - 5), 84.46667%, 56.91176%);
   --text-faint: light-dark(#93a1a1, #586e75);
-  --text-highlight-bg: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%);
+  --text-highlight-bg: light-dark(
+    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%),
+    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%)
+  );
   --text-muted: light-dark(#839496, #657b83);
   --text-normal: light-dark(#657b83, #839496);
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: #002b36;
-
-  color: #839496;
+  background-color: light-dark(#fdf6e3, #fdf6e3);
+  caret-color: hsl(calc(17.56906deg - 3), 82.05333%, 50.73529%);
+  color: light-dark(#657b83, #657b83);
   contain: initial;
   font-family:
     "??",
@@ -494,7 +549,7 @@ body {
 :root,
 html {
   .callout {
-    --callout-color: 2, 122, 255;
+    --callout-color: 38, 139, 210;
     background-color: #9e9e9e1a;
     border-color: #9e9e9e40;
     border-radius: 4px;
@@ -510,175 +565,175 @@ html {
     overflow-x: auto;
     overflow-y: hidden;
     &[data-callout] {
-      --callout-color: 2, 122, 255;
+      --callout-color: 38, 139, 210;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="abstract"] {
-      --callout-color: 83, 223, 221;
+      --callout-color: 42, 161, 152;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="summary"] {
-      --callout-color: 83, 223, 221;
+      --callout-color: 42, 161, 152;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="tldr"] {
-      --callout-color: 83, 223, 221;
+      --callout-color: 42, 161, 152;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="info"] {
-      --callout-color: 2, 122, 255;
+      --callout-color: 38, 139, 210;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="todo"] {
-      --callout-color: 2, 122, 255;
+      --callout-color: 38, 139, 210;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="important"] {
-      --callout-color: 83, 223, 221;
+      --callout-color: 42, 161, 152;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="tip"] {
-      --callout-color: 83, 223, 221;
+      --callout-color: 42, 161, 152;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="hint"] {
-      --callout-color: 83, 223, 221;
+      --callout-color: 42, 161, 152;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="success"] {
-      --callout-color: 68, 207, 110;
+      --callout-color: 133, 153, 0;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="check"] {
-      --callout-color: 68, 207, 110;
+      --callout-color: 133, 153, 0;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="done"] {
-      --callout-color: 68, 207, 110;
+      --callout-color: 133, 153, 0;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="question"] {
-      --callout-color: 233, 151, 63;
+      --callout-color: 203, 75, 22;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="help"] {
-      --callout-color: 233, 151, 63;
+      --callout-color: 203, 75, 22;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="faq"] {
-      --callout-color: 233, 151, 63;
+      --callout-color: 203, 75, 22;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="warning"] {
-      --callout-color: 233, 151, 63;
+      --callout-color: 203, 75, 22;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="caution"] {
-      --callout-color: 233, 151, 63;
+      --callout-color: 203, 75, 22;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="attention"] {
-      --callout-color: 233, 151, 63;
+      --callout-color: 203, 75, 22;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="failure"] {
-      --callout-color: 251, 70, 76;
+      --callout-color: 220, 50, 47;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="fail"] {
-      --callout-color: 251, 70, 76;
+      --callout-color: 220, 50, 47;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="missing"] {
-      --callout-color: 251, 70, 76;
+      --callout-color: 220, 50, 47;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="danger"] {
-      --callout-color: 251, 70, 76;
+      --callout-color: 220, 50, 47;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="error"] {
-      --callout-color: 251, 70, 76;
+      --callout-color: 220, 50, 47;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="bug"] {
-      --callout-color: 251, 70, 76;
+      --callout-color: 220, 50, 47;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="example"] {
-      --callout-color: 168, 130, 255;
+      --callout-color: 108, 113, 196;
       background-color: #9e9e9e1a;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -731,7 +786,7 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: #002b36;
+  background-color: light-dark(#fdf6e3, #fdf6e3);
 
   @media all and ($mobile) {
     div.flex-component > div:has(> button.readermode) {
@@ -743,11 +798,11 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: #002b36;
+      background-color: light-dark(#fdf6e3, #fdf6e3);
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
-        background-color: #002b36;
+        background-color: light-dark(#fdf6e3, #fdf6e3);
         content: " ";
         display: block;
         height: 100%;
@@ -910,7 +965,10 @@ body {
   /* HEADINGS */
   h1 {
     --font-weight: 700;
-    color: #53dfdd;
+    color: light-dark(
+      light-dark(#00bfbc, #53dfdd),
+      light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd))
+    );
     font-family: inherit;
     font-size: 1.802em;
     font-style: normal;
@@ -930,7 +988,10 @@ body {
   h2.page-title a,
   h2 {
     --font-weight: 600;
-    color: #53dfdd;
+    color: light-dark(
+      light-dark(#00bfbc, #53dfdd),
+      light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd))
+    );
     font-family: inherit;
     font-size: 1.602em;
     font-style: normal;
@@ -947,7 +1008,10 @@ body {
   }
   h3 {
     --font-weight: 600;
-    color: #53dfdd;
+    color: light-dark(
+      light-dark(#00bfbc, #53dfdd),
+      light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd))
+    );
     font-family: inherit;
     font-size: 1.424em;
     font-style: normal;
@@ -964,7 +1028,10 @@ body {
   }
   h4 {
     --font-weight: 600;
-    color: #53dfdd;
+    color: light-dark(
+      light-dark(#00bfbc, #53dfdd),
+      light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd))
+    );
     font-family: inherit;
     font-size: 1.266em;
     font-style: normal;
@@ -981,7 +1048,10 @@ body {
   }
   h5 {
     --font-weight: 600;
-    color: #53dfdd;
+    color: light-dark(
+      light-dark(#00bfbc, #53dfdd),
+      light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd))
+    );
     font-family: inherit;
     font-size: 1.125em;
     font-style: normal;
@@ -998,7 +1068,10 @@ body {
   }
   h6 {
     --font-weight: 600;
-    color: #53dfdd;
+    color: light-dark(
+      light-dark(#00bfbc, #53dfdd),
+      light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd))
+    );
     font-family: inherit;
     font-size: 1em;
     font-style: normal;
@@ -1085,7 +1158,10 @@ body {
     background-color: #073642;
     border: 0px solid transparent;
     border-radius: 4px;
-    color: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%);
+    color: light-dark(
+      light-dark(#657b83, #657b83),
+      light-dark(light-dark(#657b83, #657b83), light-dark(#839496, #839496))
+    );
     font-family:
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1097,7 +1173,7 @@ body {
   .clipboard-button {
     background-color: transparent;
     box-shadow: none;
-    color: #657b83;
+    color: light-dark(#839496, #839496);
     font-family:
       "??",
       "??",
@@ -1134,13 +1210,16 @@ body {
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: #586e75;
+    color: light-dark(#93a1a1, #93a1a1);
   }
   /* BACKLINKS */
   .backlinks {
     h3 {
       --font-weight: 600;
-      color: #53dfdd;
+      color: light-dark(
+        light-dark(#00bfbc, #53dfdd),
+        light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd))
+      );
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1168,11 +1247,14 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: #53dfdd;
+      color: light-dark(
+        light-dark(#00bfbc, #53dfdd),
+        light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd))
+      );
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: #002b36;
+        background-color: light-dark(#fdf6e3, #fdf6e3);
         left: -1rem;
       }
       .folder-container {
@@ -1259,11 +1341,17 @@ body {
   }
   /* TOC */
   .toc {
-    color: #53dfdd;
+    color: light-dark(
+      light-dark(#00bfbc, #53dfdd),
+      light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd))
+    );
     button.toc-header {
       h3 {
         --font-weight: 600;
-        color: #53dfdd;
+        color: light-dark(
+          light-dark(#00bfbc, #53dfdd),
+          light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd))
+        );
         font-family: inherit;
         font-size: 1.424em;
         font-style: normal;
@@ -1274,7 +1362,10 @@ body {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
       }
-      color: #53dfdd;
+      color: light-dark(
+        light-dark(#00bfbc, #53dfdd),
+        light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd))
+      );
       color: inherit;
     }
     ul.toc-content.overflow {
@@ -1293,7 +1384,10 @@ body {
   .toc {
     h3 {
       --font-weight: 600;
-      color: #53dfdd;
+      color: light-dark(
+        light-dark(#00bfbc, #53dfdd),
+        light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd))
+      );
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1360,7 +1454,7 @@ body {
       background: transparent;
       border: 1px solid transparent;
       border-radius: 5px;
-      color: #839496;
+      color: light-dark(#657b83, #657b83);
       font-family: inherit;
       font-size: 14.992px;
       height: 40px;
@@ -1374,7 +1468,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: #002b36;
+        background-color: light-dark(#fdf6e3, #fdf6e3);
         border: 0.5pt solid #839496;
         border-radius: 12px;
         box-shadow:
@@ -1383,9 +1477,19 @@ body {
           0px 30px 90px #00000033;
         margin: 12vh auto;
         & > input {
-          background-color: #002b36;
+          background-color: light-dark(#fdf6e3, #fdf6e3);
           border: none;
-          border-bottom: 1px solid #002b36;
+          border-bottom: 1px solid
+            light-dark(
+              light-dark(
+                light-dark(#fdf6e3, #fdf6e3),
+                light-dark(#002b36, #002b36)
+              ),
+              light-dark(
+                light-dark(#fdf6e3, #fdf6e3),
+                light-dark(#002b36, #002b36)
+              )
+            );
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1398,7 +1502,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: #839496;
+          color: light-dark(#657b83, #657b83);
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1410,12 +1514,39 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: hsl(
-              17.5690607735deg,
-              80.4444444444%,
-              44.1176470588%
+            background-color: light-dark(
+              light-dark(
+                hsl(
+                  light-dark(17.5690607735deg, 17.5690607735deg),
+                  light-dark(80.4444444444%, 80.4444444444%),
+                  light-dark(44.1176470588%, 44.1176470588%)
+                ),
+                hsl(
+                  light-dark(17.5690607735deg, 17.5690607735deg),
+                  light-dark(80.4444444444%, 80.4444444444%),
+                  light-dark(44.1176470588%, 44.1176470588%)
+                )
+              ),
+              light-dark(
+                hsl(
+                  light-dark(17.5690607735deg, 17.5690607735deg),
+                  light-dark(80.4444444444%, 80.4444444444%),
+                  light-dark(44.1176470588%, 44.1176470588%)
+                ),
+                hsl(
+                  light-dark(17.5690607735deg, 17.5690607735deg),
+                  light-dark(80.4444444444%, 80.4444444444%),
+                  light-dark(44.1176470588%, 44.1176470588%)
+                )
+              )
             );
-            color: #002b36;
+            color: light-dark(
+              light-dark(#fdf6e3, #fdf6e3),
+              light-dark(
+                light-dark(#fdf6e3, #fdf6e3),
+                light-dark(#002b36, #002b36)
+              )
+            );
           }
           & > .preview-container {
             color: var(--text-normal);
@@ -1435,9 +1566,34 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: #839496;
+                color: light-dark(#657b83, #657b83);
                 &.match-tag {
-                  color: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%);
+                  color: light-dark(
+                    light-dark(
+                      hsl(
+                        light-dark(17.5690607735deg, 17.5690607735deg),
+                        light-dark(80.4444444444%, 80.4444444444%),
+                        light-dark(44.1176470588%, 44.1176470588%)
+                      ),
+                      hsl(
+                        light-dark(17.5690607735deg, 17.5690607735deg),
+                        light-dark(80.4444444444%, 80.4444444444%),
+                        light-dark(44.1176470588%, 44.1176470588%)
+                      )
+                    ),
+                    light-dark(
+                      hsl(
+                        light-dark(17.5690607735deg, 17.5690607735deg),
+                        light-dark(80.4444444444%, 80.4444444444%),
+                        light-dark(44.1176470588%, 44.1176470588%)
+                      ),
+                      hsl(
+                        light-dark(17.5690607735deg, 17.5690607735deg),
+                        light-dark(80.4444444444%, 80.4444444444%),
+                        light-dark(44.1176470588%, 44.1176470588%)
+                      )
+                    )
+                  );
                 }
               }
             }
@@ -1499,7 +1655,7 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: #002b36;
+    background-color: light-dark(#fdf6e3, #fdf6e3);
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow:
@@ -1517,7 +1673,7 @@ body {
     border: unset;
     & .popover-inner {
       border: 1px solid transparent;
-      background-color: #002b36;
+      background-color: light-dark(#fdf6e3, #fdf6e3);
 
       border-radius: 8px;
     }

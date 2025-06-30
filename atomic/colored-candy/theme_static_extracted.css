@@ -1,9 +1,22 @@
 :root {
+  --background-modifier-border: light-dark(#221d30, #221d30);
   --background-modifier-form-field: light-dark(#ffffff26, #ffffff26);
   --background-primary: light-dark(#b6a9d6, #372956);
   --background-primary-alt: light-dark(#a898cd, #3b2d5d);
   --background-secondary: light-dark(#9987c5, #423267);
   --background-secondary-alt: light-dark(#212121, #363636);
+  --blockquote-border-color: light-dark(
+    hsl(318, min(88%, 50%), min(66%, 40%)),
+    hsl(318, min(88%, 50%), min(66%, 40%))
+  );
+  --checkbox-color: light-dark(
+    hsl(318, min(88%, 50%), min(66%, 40%)),
+    hsl(318, min(88%, 50%), min(66%, 40%))
+  );
+  --checkbox-color-hover: light-dark(
+    hsl(315, calc(min(88%, 50%) * 1.02), calc(min(66%, 40%) * 1.15)),
+    hsl(315, calc(min(88%, 50%) * 1.02), calc(min(66%, 40%) * 1.15))
+  );
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
   --color-accent-1: light-dark(#9873f7, #a68af9);
   --color-accent-2: light-dark(#a68af9, #c5b6fc);
@@ -28,11 +41,26 @@
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
+  --divider-color: light-dark(#221d30, #221d30);
+  --divider-color-hover: light-dark(
+    hsl(198, 88%, max(66%, 50%)),
+    hsl(198, 88%, max(66%, 50%))
+  );
   --hr-color: light-dark(#e3dfec, #221d30);
+  --interactive-accent: light-dark(
+    hsl(318, min(88%, 50%), min(66%, 40%)),
+    hsl(318, min(88%, 50%), min(66%, 40%))
+  );
+  --interactive-accent-hover: light-dark(
+    hsl(315, calc(min(88%, 50%) * 1.02), calc(min(66%, 40%) * 1.15)),
+    hsl(315, calc(min(88%, 50%) * 1.02), calc(min(66%, 40%) * 1.15))
+  );
   --interactive-hover: light-dark(#e1dbf0, #221d30);
   --interactive-normal: light-dark(#d9d1eb, #292239);
   --keyboard-height: 0px;
   --loading-icon-delay: 400ms;
+  --modal-border-color: light-dark(#00000026, #00000026);
+  --nav-item-border-color: light-dark(#00000026, #00000026);
   --page-border: 9px solid transparent;
   --page-margin: 1px auto -8px;
   --pdfViewer-padding-bottom: 0;
@@ -40,7 +68,20 @@
   --safe-area-inset-left: env(safe-area-inset-left);
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-top: env(safe-area-inset-top);
+  --sidebar-left-border-color: light-dark(#00000026, #00000026);
   --spreadHorizontalWrapped-margin-LR: -3.5px;
+  --status-bar-border-color: light-dark(#00000026, #00000026);
+  --table-add-button-border-color: light-dark(#a9a1ba, #a9a1ba);
+  --table-border-color: light-dark(#a9a1ba, #a9a1ba);
+  --table-header-border-color: light-dark(#a9a1ba, #a9a1ba);
+  --table-selection-border-color: light-dark(
+    hsl(198, 88%, max(66%, 50%)),
+    hsl(198, 88%, max(66%, 50%))
+  );
+  --text-accent: light-dark(
+    hsl(198, 88%, max(66%, 50%)),
+    hsl(198, 88%, max(66%, 50%))
+  );
   --text-accent-hover: light-dark(
     hsl(195, 89.76%, calc(max(66%, 50%) * 1.15)),
     hsl(193, 92.4%, calc(max(66%, 50%) * 1.29))
@@ -48,6 +89,7 @@
   --text-faint: light-dark(#6e6090, #78699b);
   --text-muted: light-dark(#4f4861, #a9a1ba);
   --text-normal: light-dark(#212121, #d9d9d9);
+  --titlebar-border-color: light-dark(#00000026, #00000026);
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
@@ -56,12 +98,7 @@
 body {
   --accent-h: 258;
   --accent-l: 66%;
-  --accent-minus-120: 138;
-  --accent-minus-60: 198;
-  --accent-plus-120: 378;
-  --accent-plus-60: 318;
   --accent-s: 88%;
-  --accent-s-pastel: min(88%, 50%);
   --anim-duration-fast: 140ms;
   --anim-duration-moderate: 300ms;
   --anim-duration-none: 0;
@@ -72,7 +109,7 @@ body {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   --background-modifier-active-hover: #8a5cf526;
-  --background-modifier-border: #221d30;
+  --background-modifier-border: light-dark(#221d30, #221d30);
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;
   --background-modifier-error: #fb464c;
@@ -98,7 +135,8 @@ body {
   --bases-table-cell-background-active: #372956;
   --bases-table-cell-background-disabled: #00000080;
   --bases-table-cell-radius-active: 2px;
-  --bases-table-cell-shadow-active: 0 0 0 2px #8a5cf5;
+  --bases-table-cell-shadow-active: 0 0 0 2px
+    hsl(318, min(88%, 50%), min(66%, 40%));
   --bases-table-column-border-width: 1px;
   --bases-table-column-max-width: 300;
   --bases-table-column-min-width: 40;
@@ -119,11 +157,11 @@ body {
   --bases-table-row-height: 30px;
   --bases-table-text-size: 0.875em;
   --bases-table-white-space: nowrap;
-  --bg-l-modifier: 0%;
-  --bg-l-modifier-inverted: 0%;
-  --bg-s-modifier: 0%;
   --blockquote-background-color: transparent;
-  --blockquote-border-color: #8a5cf5;
+  --blockquote-border-color: light-dark(
+    hsl(318, min(88%, 50%), min(66%, 40%)),
+    hsl(318, min(88%, 50%), min(66%, 40%))
+  );
   --blockquote-border-thickness: 2px;
   --blockquote-color: inherit;
   --blockquote-font-style: normal;
@@ -170,8 +208,14 @@ body {
   --caret-color: #d9d9d9;
   --checkbox-border-color: #78699b;
   --checkbox-border-color-hover: #a9a1ba;
-  --checkbox-color: #8a5cf5;
-  --checkbox-color-hover: #a68af9;
+  --checkbox-color: light-dark(
+    hsl(318, min(88%, 50%), min(66%, 40%)),
+    hsl(318, min(88%, 50%), min(66%, 40%))
+  );
+  --checkbox-color-hover: light-dark(
+    hsl(315, calc(min(88%, 50%) * 1.02), calc(min(66%, 40%) * 1.15)),
+    hsl(315, calc(min(88%, 50%) * 1.02), calc(min(66%, 40%) * 1.15))
+  );
   --checkbox-margin-inline-start: 0.85em;
   --checkbox-marker-color: #372956;
   --checkbox-radius: 20px;
@@ -197,7 +241,7 @@ body {
   --code-value: #a882ff;
   --code-white-space: pre-wrap;
   --collapse-icon-color: #78699b;
-  --collapse-icon-color-collapsed: #a68af9;
+  --collapse-icon-color-collapsed: hsl(198, 88%, max(66%, 50%));
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
   --color-accent-1: light-dark(#9873f7, #a68af9);
   --color-accent-2: light-dark(#a68af9, #c5b6fc);
@@ -228,8 +272,11 @@ body {
   --dialog-max-width: 80vw;
   --dialog-width: 560px;
   --direction: 1;
-  --divider-color: #221d30;
-  --divider-color-hover: hsl(198, 88%, max(66%, 50%));
+  --divider-color: light-dark(#221d30, #221d30);
+  --divider-color-hover: light-dark(
+    hsl(198, 88%, max(66%, 50%)),
+    hsl(198, 88%, max(66%, 50%))
+  );
   --divider-vertical-height: calc(100% - 40px);
   --divider-width: 1px;
   --divider-width-hover: 3px;
@@ -246,7 +293,7 @@ body {
     0 0 0 1px transparent, inset 0 0 0 1px transparent;
   --embed-border-bottom: none;
   --embed-border-end: none;
-  --embed-border-start: 2px solid #8a5cf5;
+  --embed-border-start: 2px solid hsl(318, min(88%, 50%), min(66%, 40%));
   --embed-border-top: none;
   --embed-canvas-max-height: 400px;
   --embed-font-style: inherit;
@@ -333,7 +380,7 @@ body {
   --graph-line: #3f3f3f;
   --graph-node: #a9a1ba;
   --graph-node-attachment: #e0de71;
-  --graph-node-focused: #a68af9;
+  --graph-node-focused: hsl(198, 88%, max(66%, 50%));
   --graph-node-tag: #44cf6e;
   --graph-node-unresolved: #78699b;
   --graph-text: #d9d9d9;
@@ -385,7 +432,7 @@ body {
   --hr-color: light-dark(#e3dfec, #221d30);
   --hr-thickness: 2px;
   --icon-color: #a9a1ba;
-  --icon-color-active: #a68af9;
+  --icon-color-active: hsl(198, 88%, max(66%, 50%));
   --icon-color-focused: #d9d9d9;
   --icon-color-hover: #a9a1ba;
   --icon-l: 18px;
@@ -426,13 +473,13 @@ body {
   --input-height: 30px;
   --input-placeholder-color: #78699b;
   --input-radius: 20px;
-  --input-shadow: none;
-  --input-shadow-hover: none;
-  --interactive-accent: hsl(318, min(88%, 50%), min(66%, 40%));
-  --interactive-accent-hover: hsl(
-    315,
-    calc(min(88%, 50%) * 1.02),
-    calc(min(66%, 40%) * 1.15)
+  --interactive-accent: light-dark(
+    hsl(318, min(88%, 50%), min(66%, 40%)),
+    hsl(318, min(88%, 50%), min(66%, 40%))
+  );
+  --interactive-accent-hover: light-dark(
+    hsl(315, calc(min(88%, 50%) * 1.02), calc(min(66%, 40%) * 1.15)),
+    hsl(315, calc(min(88%, 50%) * 1.02), calc(min(66%, 40%) * 1.15))
   );
   --interactive-accent-hsl: 258, 88%, 66%;
   --interactive-hover: light-dark(#e1dbf0, #221d30);
@@ -451,17 +498,17 @@ body {
   --layer-tooltip: 70;
   --line-height-normal: 1.75em;
   --line-height-tight: 1.5em;
-  --link-color: #a68af9;
+  --link-color: hsl(198, 88%, max(66%, 50%));
   --link-color-hover: hsl(193, 92.4%, calc(max(66%, 50%) * 1.29));
   --link-decoration: underline;
   --link-decoration-hover: underline;
   --link-decoration-thickness: auto;
-  --link-external-color: #a68af9;
+  --link-external-color: hsl(198, 88%, max(66%, 50%));
   --link-external-color-hover: hsl(193, 92.4%, calc(max(66%, 50%) * 1.29));
   --link-external-decoration: underline;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
-  --link-unresolved-color: #a68af9;
+  --link-unresolved-color: hsl(198, 88%, max(66%, 50%));
   --link-unresolved-decoration-color: #8a5cf54d;
   --link-unresolved-decoration-style: solid;
   --link-unresolved-filter: none;
@@ -476,7 +523,7 @@ body {
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
   --list-marker-color: #78699b;
-  --list-marker-color-collapsed: #a68af9;
+  --list-marker-color-collapsed: hsl(198, 88%, max(66%, 50%));
   --list-marker-color-hover: #a9a1ba;
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
@@ -536,7 +583,7 @@ body {
   --metadata-sidebar-input-font-size: 14.992px;
   --metadata-sidebar-label-font-size: 14.992px;
   --modal-background: #372956;
-  --modal-border-color: #00000026;
+  --modal-border-color: light-dark(#00000026, #00000026);
   --modal-border-width: 0.5pt;
   --modal-community-sidebar-width: 280px;
   --modal-height: 85vh;
@@ -557,13 +604,13 @@ body {
   --nav-indentation-guide-width: 1px;
   --nav-item-background-active: #ffffff26;
   --nav-item-background-hover: #ffffff26;
-  --nav-item-background-selected: hsla(198, 88%, min(66%, 40%), 0.17);
-  --nav-item-border-color: #00000026;
+  --nav-item-background-selected: #8a5cf526;
+  --nav-item-border-color: light-dark(#00000026, #00000026);
   --nav-item-children-margin-start: 12px;
   --nav-item-children-padding-start: 4px;
   --nav-item-color: #a9a1ba;
   --nav-item-color-active: #d9d9d9;
-  --nav-item-color-highlighted: #a68af9;
+  --nav-item-color-highlighted: hsl(198, 88%, max(66%, 50%));
   --nav-item-color-hover: #d9d9d9;
   --nav-item-color-selected: #d9d9d9;
   --nav-item-padding: 4px 8px 4px 24px;
@@ -577,10 +624,10 @@ body {
   --p-spacing-empty: 0rem;
   --pdf-background: #372956;
   --pdf-page-background: #372956;
-  --pdf-shadow: none;
+  --pdf-shadow: 0 0 0 1px #0000000d, 0 2px 8px #0000001a;
   --pdf-sidebar-background: #372956;
   --pdf-spread-shadow: 0 0 0 1px #0000000d;
-  --pdf-thumbnail-shadow: none;
+  --pdf-thumbnail-shadow: 0 0 0 1px #00000026, 0 2px 8px #00000033;
   --pill-background: transparent;
   --pill-background-hover: transparent;
   --pill-border-color: transparent;
@@ -589,7 +636,7 @@ body {
   --pill-color: #a9a1ba;
   --pill-color-hover: #d9d9d9;
   --pill-color-remove: #78699b;
-  --pill-color-remove-hover: #a68af9;
+  --pill-color-remove-hover: hsl(198, 88%, max(66%, 50%));
   --pill-decoration: none;
   --pill-decoration-hover: none;
   --pill-focus-left-adjust: -4px;
@@ -626,7 +673,7 @@ body {
   --search-icon-color: #a9a1ba;
   --search-icon-size: 18px;
   --search-result-background: #372956;
-  --sidebar-left-border-color: #00000026;
+  --sidebar-left-border-color: light-dark(#00000026, #00000026);
   --sidebar-markdown-font-size: 14.4px;
   --sidebar-tab-text-display: none;
   --size-1-1: 1px;
@@ -660,7 +707,7 @@ body {
   --slider-track-background: transparent;
   --slider-track-height: 3px;
   --status-bar-background: #423267;
-  --status-bar-border-color: #00000026;
+  --status-bar-border-color: light-dark(#00000026, #00000026);
   --status-bar-border-width: 1px 0 0 1px;
   --status-bar-font-size: 12.8px;
   --status-bar-position: fixed;
@@ -668,7 +715,7 @@ body {
   --status-bar-text-color: #a9a1ba;
   --swatch-height: 24px;
   --swatch-radius: 14px;
-  --swatch-shadow: none;
+  --swatch-shadow: inset 0 0 0 1px #ffffff26;
   --swatch-width: 24px;
   --sync-avatar-color-1: #fb464c;
   --sync-avatar-color-2: #e9973f;
@@ -694,7 +741,7 @@ body {
   --tab-stacked-font-weight: 400;
   --tab-stacked-header-width: 40px;
   --tab-stacked-pane-width: 700px;
-  --tab-stacked-shadow: none;
+  --tab-stacked-shadow: -8px 0 8px 0 #0000000d;
   --tab-stacked-text-align: start;
   --tab-stacked-text-transform: rotate(0deg);
   --tab-stacked-text-writing-mode: vertical-lr;
@@ -709,13 +756,13 @@ body {
   --tab-text-color-focused: #a9a1ba;
   --tab-text-color-focused-active: #a9a1ba;
   --tab-text-color-focused-active-current: #d9d9d9;
-  --tab-text-color-focused-highlighted: #a68af9;
+  --tab-text-color-focused-highlighted: hsl(198, 88%, max(66%, 50%));
   --tab-width: 200px;
   --table-add-button-background: transparent;
-  --table-add-button-border-color: #a9a1ba;
+  --table-add-button-border-color: light-dark(#a9a1ba, #a9a1ba);
   --table-add-button-border-width: 1px;
   --table-background: transparent;
-  --table-border-color: #a9a1ba;
+  --table-border-color: light-dark(#a9a1ba, #a9a1ba);
   --table-border-width: 1px;
   --table-cell-vertical-alignment: top;
   --table-column-alt-background: transparent;
@@ -729,7 +776,7 @@ body {
   --table-drag-handle-color-active: #ffffff;
   --table-header-background: transparent;
   --table-header-background-hover: inherit;
-  --table-header-border-color: #a9a1ba;
+  --table-header-border-color: light-dark(#a9a1ba, #a9a1ba);
   --table-header-border-width: 1px;
   --table-header-color: #d9d9d9;
   --table-header-font: inherit;
@@ -740,21 +787,24 @@ body {
   --table-row-alt-background-hover: transparent;
   --table-row-background-hover: transparent;
   --table-row-last-border-width: 1px;
-  --table-selection: hsla(198, 88%, min(66%, 40%), 0.2);
+  --table-selection: #8a5cf51a;
   --table-selection-blend-mode: darken;
-  --table-selection-border-color: hsl(198, 88%, max(66%, 50%));
+  --table-selection-border-color: light-dark(
+    hsl(198, 88%, max(66%, 50%)),
+    hsl(198, 88%, max(66%, 50%))
+  );
   --table-selection-border-radius: 4px;
   --table-selection-border-width: 2px;
   --table-text-color: inherit;
   --table-text-size: 16px;
   --table-white-space: break-spaces;
-  --tag-background: hsla(198, 88%, min(66%, 40%), 0.25);
-  --tag-background-hover: hsla(198, 88%, min(66%, 40%), 0.35);
+  --tag-background: #8a5cf51a;
+  --tag-background-hover: #8a5cf533;
   --tag-border-color: #8a5cf526;
   --tag-border-color-hover: #8a5cf526;
   --tag-border-width: 0px;
-  --tag-color: #a68af9;
-  --tag-color-hover: #a68af9;
+  --tag-color: hsl(198, 88%, max(66%, 50%));
+  --tag-color-hover: hsl(198, 88%, max(66%, 50%));
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-padding-x: 0.65em;
@@ -762,25 +812,28 @@ body {
   --tag-radius: 2em;
   --tag-size: 0.875em;
   --tag-weight: inherit;
-  --text-accent: hsl(198, 88%, max(66%, 50%));
+  --text-accent: light-dark(
+    hsl(198, 88%, max(66%, 50%)),
+    hsl(198, 88%, max(66%, 50%))
+  );
   --text-accent-hover: light-dark(
     hsl(195, 89.76%, calc(max(66%, 50%) * 1.15)),
     hsl(193, 92.4%, calc(max(66%, 50%) * 1.29))
   );
   --text-error: #fb464c;
   --text-faint: light-dark(#6e6090, #78699b);
-  --text-highlight-bg: hsla(318, min(88%, 50%), min(66%, 40%), 0.6);
+  --text-highlight-bg: #ffd00066;
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: light-dark(#4f4861, #a9a1ba);
   --text-normal: light-dark(#212121, #d9d9d9);
   --text-on-accent: #ffffff;
   --text-on-accent-inverted: #000000;
-  --text-selection: hsla(198, 88%, min(66%, 40%), 0.25);
+  --text-selection: #8a5cf533;
   --text-success: #44cf6e;
   --text-warning: #e9973f;
   --titlebar-background: #423267;
   --titlebar-background-focused: #46356e;
-  --titlebar-border-color: #00000026;
+  --titlebar-border-color: light-dark(#00000026, #00000026);
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;
   --titlebar-text-color: #a9a1ba;
@@ -808,7 +861,7 @@ body {
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: #372956;
-  caret-color: #a68af9;
+  caret-color: hsl(198, 88%, max(66%, 50%));
   color: light-dark(#212121, #d9d9d9);
   contain: initial;
   font-family:
@@ -1286,7 +1339,7 @@ a.tag {
   background-color: #8a5cf533;
   border: 0px solid #8a5cf526;
   border-radius: 2em;
-  color: #a68af9;
+  color: hsl(198, 88%, max(66%, 50%));
   font-size: 0.875em;
   font-weight: inherit;
   line-height: 1;
@@ -1331,7 +1384,7 @@ input[type="search"] {
 
 .nav-file-icon {
   align-items: center;
-  color: #8a5cf5;
+  color: hsl(318, min(88%, 50%), min(66%, 40%));
   display: inline-flex;
   margin-inline-end: 6px;
   opacity: 1;
@@ -1433,13 +1486,13 @@ input[type="search"] {
 }
 
 .tree-item-self.is-being-dragged {
-  background-color: #8a5cf5;
+  background-color: hsl(318, min(88%, 50%), min(66%, 40%));
   color: #ffffff;
 }
 
 .tree-item-self .tree-item-icon {
   align-items: center;
-  color: #8a5cf5;
+  color: hsl(318, min(88%, 50%), min(66%, 40%));
   display: flex;
   flex: 0 0 auto;
   justify-content: center;
@@ -1519,7 +1572,7 @@ svg.svg-icon {
 }
 
 .clickable-icon.mod-filled svg {
-  fill: #8a5cf5;
+  fill: hsl(318, min(88%, 50%), min(66%, 40%));
 }
 
 .setting-item-control .clickable-icon {
@@ -1542,7 +1595,7 @@ svg.svg-icon {
 
 .clickable-icon.is-active {
   background-color: #8a5cf526;
-  color: #a68af9;
+  color: hsl(315, calc(min(88%, 50%) * 1.02), calc(min(66%, 40%) * 1.15));
   opacity: 0.65;
 }
 
@@ -1551,7 +1604,7 @@ svg.svg-icon {
   align-items: center;
   background-color: transparent;
   border-radius: 20px;
-  color: #8a5cf5;
+  color: hsl(318, min(88%, 50%), min(66%, 40%));
   cursor: pointer;
   display: flex;
   height: auto;
@@ -1597,7 +1650,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-focused {
-  color: #a68af9;
+  color: hsl(198, 88%, max(66%, 50%));
 }
 
 .graph-view.color-fill-tag {
@@ -1643,7 +1696,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-circle {
-  color: #a68af9;
+  color: hsl(198, 88%, max(66%, 50%));
 }
 
 .graph-view.color-line {
@@ -1655,11 +1708,11 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-highlight {
-  color: #8a5cf5;
+  color: hsl(318, min(88%, 50%), min(66%, 40%));
 }
 
 .graph-view.color-line-highlight {
-  color: #8a5cf5;
+  color: hsl(318, min(88%, 50%), min(66%, 40%));
 }
 
 .graph-controls {
@@ -1676,6 +1729,12 @@ svg.svg-icon {
 .theme-dark {
   --accent-l-closer: min(66%, 40%);
   --accent-l-readable: max(66%, 50%);
+  --accent-minus-120: 138;
+  --accent-minus-60: 198;
+  --accent-plus-120: 378;
+  --accent-plus-60: 318;
+  --accent-s-pastel: min(88%, 50%);
+  --background-modifier-border: #221d30;
   --background-modifier-border-hover: #292239;
   --background-modifier-box-shadow: #0000004d;
   --background-modifier-cover: #0a0a0a66;
@@ -1685,6 +1744,16 @@ svg.svg-icon {
   --background-primary-alt: #3b2d5d;
   --background-secondary: #423267;
   --background-secondary-alt: #46356e;
+  --bg-l-modifier: 0%;
+  --bg-l-modifier-inverted: 0%;
+  --bg-s-modifier: 0%;
+  --blockquote-border-color: hsl(318, min(88%, 50%), min(66%, 40%));
+  --checkbox-color: hsl(318, min(88%, 50%), min(66%, 40%));
+  --checkbox-color-hover: hsl(
+    315,
+    calc(min(88%, 50%) * 1.02),
+    calc(min(66%, 40%) * 1.15)
+  );
   --color-accent: #8a5cf5;
   --color-accent-1: #a68af9;
   --color-accent-2: #c5b6fc;
@@ -1717,38 +1786,62 @@ svg.svg-icon {
   --color-red-rgb: 251, 70, 76;
   --color-yellow: #e0de71;
   --color-yellow-rgb: 224, 222, 113;
+  --divider-color: #221d30;
+  --divider-color-hover: hsl(198, 88%, max(66%, 50%));
   --highlight-mix-blend-mode: darken;
   --hr-color: #221d30;
-  --input-shadow:
-    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 #00000026,
-    0 1px 1.5px 0 #0000001a, 0 1px 2px 0 #00000033, 0 0 0 0 transparent;
-  --input-shadow-hover:
-    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
-    0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
-  --interactive-accent: #8a5cf5;
-  --interactive-accent-hover: #a68af9;
+  --input-shadow: none;
+  --input-shadow-hover: none;
+  --interactive-accent: hsl(318, min(88%, 50%), min(66%, 40%));
+  --interactive-accent-hover: hsl(
+    315,
+    calc(min(88%, 50%) * 1.02),
+    calc(min(66%, 40%) * 1.15)
+  );
   --interactive-hover: #221d30;
   --interactive-normal: #292239;
+  --modal-border-color: #00000026;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
-  --pdf-shadow: 0 0 0 1px transparent;
-  --pdf-thumbnail-shadow: 0 0 0 1px transparent;
+  --nav-item-background-selected: hsla(198, 88%, min(66%, 40%), 0.17);
+  --nav-item-border-color: #00000026;
+  --pdf-shadow: none;
+  --pdf-thumbnail-shadow: none;
   --shadow-l:
     0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
     0px 30px 90px #00000033;
   --shadow-s:
     0px 1px 2px #0000001f, 0px 3.4px 6.7px #0000002e, 0px 15px 30px #0000004d;
-  --text-accent: #a68af9;
+  --sidebar-left-border-color: #00000026;
+  --status-bar-border-color: #00000026;
+  --swatch-shadow: none;
+  --tab-stacked-shadow: none;
+  --table-add-button-border-color: #a9a1ba;
+  --table-border-color: #a9a1ba;
+  --table-header-border-color: #a9a1ba;
+  --table-selection: hsla(198, 88%, min(66%, 40%), 0.2);
+  --table-selection-border-color: hsl(198, 88%, max(66%, 50%));
+  --tag-background: hsla(198, 88%, min(66%, 40%), 0.25);
+  --tag-background-hover: hsla(198, 88%, min(66%, 40%), 0.35);
+  --text-accent: hsl(198, 88%, max(66%, 50%));
   --text-accent-hover: hsl(193, 92.4%, calc(max(66%, 50%) * 1.29));
   --text-faint: #78699b;
+  --text-highlight-bg: hsla(318, min(88%, 50%), min(66%, 40%), 0.6);
   --text-muted: #a9a1ba;
   --text-normal: #d9d9d9;
-  --text-selection: #8a5cf554;
+  --text-selection: hsla(198, 88%, min(66%, 40%), 0.25);
+  --titlebar-border-color: #00000026;
 }
 
 .theme-light {
   --accent-l-closer: max(66%, 60%);
   --accent-l-readable: min(66%, 35%);
+  --accent-minus-120: 138;
+  --accent-minus-60: 198;
+  --accent-plus-120: 378;
+  --accent-plus-60: 318;
+  --accent-s-pastel: min(88%, 50%);
+  --background-modifier-border: #221d30;
   --background-modifier-border-hover: #d5cfe2;
   --background-modifier-box-shadow: #0000001a;
   --background-modifier-cover: #dcdcdc66;
@@ -1758,6 +1851,16 @@ svg.svg-icon {
   --background-primary-alt: #a898cd;
   --background-secondary: #9987c5;
   --background-secondary-alt: #8b75bd;
+  --bg-l-modifier: 0%;
+  --bg-l-modifier-inverted: 0%;
+  --bg-s-modifier: 0%;
+  --blockquote-border-color: hsl(318, min(88%, 50%), min(66%, 40%));
+  --checkbox-color: hsl(318, min(88%, 50%), min(66%, 40%));
+  --checkbox-color-hover: hsl(
+    315,
+    calc(min(88%, 50%) * 1.02),
+    calc(min(66%, 40%) * 1.15)
+  );
   --color-accent: #8a5cf5;
   --color-accent-1: #9873f7;
   --color-accent-2: #a68af9;
@@ -1790,27 +1893,51 @@ svg.svg-icon {
   --color-red-rgb: 233, 49, 71;
   --color-yellow: #e0ac00;
   --color-yellow-rgb: 224, 172, 0;
+  --divider-color: #221d30;
+  --divider-color-hover: hsl(198, 88%, max(66%, 50%));
   --highlight-mix-blend-mode: darken;
   --hr-color: #e3dfec;
-  --input-shadow:
-    inset 0 0 0 1px #0000001f, 0 2px 3px 0 #0000000d, 0 1px 1.5px 0 #00000008,
-    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
-  --input-shadow-hover:
-    inset 0 0 0 1px #0000002b, 0 2px 3px 0 #0000001a, 0 1px 1.5px 0 #00000008,
-    0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
+  --input-shadow: none;
+  --input-shadow-hover: none;
+  --interactive-accent: hsl(318, min(88%, 50%), min(66%, 40%));
+  --interactive-accent-hover: hsl(
+    315,
+    calc(min(88%, 50%) * 1.02),
+    calc(min(66%, 40%) * 1.15)
+  );
   --interactive-hover: #e1dbf0;
   --interactive-normal: #d9d1eb;
+  --modal-border-color: #00000026;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
+  --nav-item-background-selected: hsla(198, 88%, min(66%, 40%), 0.17);
+  --nav-item-border-color: #00000026;
+  --pdf-shadow: none;
+  --pdf-thumbnail-shadow: none;
   --shadow-l:
     0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
     0px 30px 90px #00000033;
   --shadow-s:
     0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
+  --sidebar-left-border-color: #00000026;
+  --status-bar-border-color: #00000026;
+  --swatch-shadow: none;
+  --tab-stacked-shadow: none;
+  --table-add-button-border-color: #a9a1ba;
+  --table-border-color: #a9a1ba;
+  --table-header-border-color: #a9a1ba;
+  --table-selection: hsla(198, 88%, min(66%, 40%), 0.2);
+  --table-selection-border-color: hsl(198, 88%, max(66%, 50%));
+  --tag-background: hsla(198, 88%, min(66%, 40%), 0.25);
+  --tag-background-hover: hsla(198, 88%, min(66%, 40%), 0.35);
+  --text-accent: hsl(198, 88%, max(66%, 50%));
   --text-accent-hover: hsl(195, 89.76%, calc(max(66%, 50%) * 1.15));
   --text-faint: #6e6090;
+  --text-highlight-bg: hsla(318, min(88%, 50%), min(66%, 40%), 0.6);
   --text-muted: #4f4861;
   --text-normal: #212121;
+  --text-selection: hsla(198, 88%, min(66%, 40%), 0.25);
+  --titlebar-border-color: #00000026;
 }
 
 .mod-sidedock {

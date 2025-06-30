@@ -206,18 +206,18 @@ html {
   font-size: 16px;
 }
 body {
-  --background-modifier-border: #ffffff24;
+  --background-modifier-border: #363636;
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;
   --background-modifier-hover: #ffffff11;
-  --background-primary: #2f3437;
-  --background-primary-alt: #3d4448;
+  --background-primary: #000;
+  --background-primary-alt: #111;
   --bold-color: inherit;
   --bold-weight: 800;
   --checkbox-border-color: #ffffff40;
   --checkbox-border-color-hover: #ffffff73;
-  --checkbox-color: #8a5cf5;
-  --checkbox-color-hover: #a68af9;
+  --checkbox-color: #2eaadc;
+  --checkbox-color-hover: #2eaadccc;
   --checkbox-marker-color: #2f3437;
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
@@ -233,7 +233,7 @@ body {
   --code-tag: #fb464c;
   --code-value: #a882ff;
   --collapse-icon-color: #ffffff40;
-  --collapse-icon-color-collapsed: #a68af9;
+  --collapse-icon-color-collapsed: #ffffff73;
   --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
@@ -268,16 +268,16 @@ body {
   --h1-color: inherit;
   --h1-font: inherit;
   --h3-line-height: 1.3;
-  --hr-color: transparent;
+  --hr-color: #ffffff24;
   --hr-thickness: 2px;
   --icon-color: #ffffff73;
   --inline-title-color: inherit;
   --inline-title-font: inherit;
   --interactive-accent-hsl: 258, 88%, 66%;
   --italic-color: inherit;
-  --link-color: #a68af9;
+  --link-color: #ffffff73;
   --link-color-hover: #ffffff73;
-  --link-external-color: #a68af9;
+  --link-external-color: #ffffff73;
   --link-external-color-hover: #ffffff73;
   --link-external-filter: none;
   --link-weight: 600;
@@ -288,23 +288,23 @@ body {
   --tag-border-color: #8a5cf526;
   --tag-border-color-hover: #8a5cf526;
   --tag-border-width: 0px;
-  --tag-color: #a68af9;
-  --tag-color-hover: #a68af9;
+  --tag-color: #ffffff73;
+  --tag-color-hover: #ffffff73;
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-radius: 2em;
   --tag-weight: inherit;
-  --text-accent: #ffffff73;
-  --text-accent-hover: #ffffff73;
-  --text-faint: #ffffff40;
+  --text-accent: #8a5cf5;
+  --text-accent-hover: #c5b6fc;
+  --text-faint: #666666;
   --text-highlight-bg: light-dark(#fbf3db, #59563b);
-  --text-muted: #ffffff73;
-  --text-normal: #ffffffe6;
+  --text-muted: #b3b3b3;
+  --text-normal: #dadada;
   -webkit-font-smoothing: auto;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: #2f3437;
-  caret-color: #a68af9;
+  caret-color: #ffffff73;
   color: #ffffffe6;
   contain: initial;
   font-family:
@@ -877,7 +877,7 @@ body {
   /* CODE */
   pre {
     background-color: #363c3f;
-    border: 0px solid transparent;
+    border: 0px solid #ffffff24;
     border-radius: 4px;
     min-height: 38px;
     overflow-x: auto;
@@ -944,7 +944,7 @@ body {
   code {
     -webkit-box-decoration-break: clone;
     background-color: #363c3f;
-    border: 0px solid transparent;
+    border: 0px solid #ffffff24;
     border-radius: 4px;
     color: #ffffffe6;
     font-family:
@@ -1038,7 +1038,7 @@ body {
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
-        color: #8a5cf5;
+        color: #2eaadc;
         text-overflow: ellipsis;
         position: relative;
         & > svg {
@@ -1217,8 +1217,8 @@ body {
       background: var(--button-secondary-bg-color);
       color: var(--button-secondary-fg-color);
       -webkit-app-region: no-drag;
-      background: transparent;
-      border: 1px solid transparent;
+      background: #ffffff24;
+      border: 1px solid #ffffff24;
       border-radius: 5px;
       color: #ffffffe6;
       font-family: inherit;
@@ -1356,7 +1356,7 @@ body {
   /* POPOVER */
   .popover {
     background-color: #2f3437;
-    border: 1px solid transparent;
+    border: 1px solid #ffffff24;
     border-radius: 8px;
     box-shadow:
       0px 1px 2px #0000001f,
@@ -1372,7 +1372,7 @@ body {
     background-color: unset;
     border: unset;
     & .popover-inner {
-      border: 1px solid transparent;
+      border: 1px solid #ffffff24;
       background-color: #2f3437;
 
       border-radius: 8px;
