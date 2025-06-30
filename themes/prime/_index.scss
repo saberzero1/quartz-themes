@@ -1288,6 +1288,7 @@ body {
       height: 40px;
       outline: none;
       padding: 4px 8px;
+      font-size: 1rem;
       svg {
         color: var(--search-icon-color, var(--text-muted, var(--darkgray)));
         stroke: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -1316,6 +1317,7 @@ body {
           margin-bottom: 0;
           border-bottom: none;
           background: transparent;
+          font-size: 1.1rem;
         }
         & > * {
           color: #0d1117;
