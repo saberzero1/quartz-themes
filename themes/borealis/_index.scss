@@ -1362,11 +1362,13 @@ body {
     position: fixed;
     z-index: 999;
     border: unset;
+    background-color: var(--background-primary);
     & .popover-inner {
       border: 1px solid light-dark(#f6f6f6, #141414);
       background-color: light-dark(#f6f6f6, #141414);
 
       border-radius: 8px;
+      background-color: var(--background-primary);
     }
   }
   /* BACKGROUNDS */

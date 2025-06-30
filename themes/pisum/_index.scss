@@ -1290,11 +1290,13 @@ body {
     position: fixed;
     z-index: 999;
     border: unset;
+    background-color: var(--background-primary);
     & .popover-inner {
       border: 1px solid light-dark(#504945, #504945);
       background-color: light-dark(#415358, #415358);
 
       border-radius: 8px;
+      background-color: var(--background-primary);
     }
   }
   /* BACKGROUNDS */
