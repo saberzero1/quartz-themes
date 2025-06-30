@@ -471,6 +471,7 @@ body {
   --quartz-text-highlight: var(--text-highlight-bg, var(--background-modifier-hover)) !important;
 
   //%%WORKSPACE BACKGROUND ROOT%%
+
   background-color: var(--background-primary);
   
   @media all and ($mobile) {
@@ -860,6 +861,8 @@ body {
       @media all and ($mobile) {
 
         //%%WORKSPACE BACKGROUND ROOT%%
+
+        background-color: var(--background-primary);
 
         left: -1rem;
       }
