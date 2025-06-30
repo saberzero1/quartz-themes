@@ -275,10 +275,7 @@ body {
   -webkit-font-smoothing: auto;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(
-    light-dark(#ffffff, #000000),
-    light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000))
-  );
+  background-color: light-dark(#ffffff, #000000);
   caret-color: #ffffff;
   color: light-dark(#000000, #ffffff);
   contain: initial;
@@ -565,10 +562,8 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: light-dark(
-    light-dark(#ffffff, #000000),
-    light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000))
-  );
+  background-color: light-dark(#ffffff, #000000);
+  background-color: var(--background-primary);
 
   @media all and ($mobile) {
     div.flex-component > div:has(> button.readermode) {
@@ -580,17 +575,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: light-dark(
-        light-dark(#ffffff, #000000),
-        light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000))
-      );
+      background-color: light-dark(#ffffff, #000000);
+      background-color: var(--background-primary);
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
-        background-color: light-dark(
-          light-dark(#ffffff, #000000),
-          light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000))
-        );
+        background-color: light-dark(#ffffff, #000000);
+        background-color: var(--background-primary);
         content: " ";
         display: block;
         height: 100%;
@@ -1001,10 +992,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: light-dark(
-          light-dark(#ffffff, #000000),
-          light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000))
-        );
+        background-color: light-dark(#ffffff, #000000);
         left: -1rem;
       }
       .folder-container {
@@ -1193,8 +1181,7 @@ body {
         light-dark(#ffffff, #000000),
         light-dark(#ffffff, #000000)
       );
-      border: 1px solid
-        light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
+      border: 1px solid light-dark(#000000, #ffffff);
       border-radius: 5px;
       color: light-dark(#000000, #ffffff);
       font-family: inherit;
@@ -1210,10 +1197,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: light-dark(
-          light-dark(#ffffff, #000000),
-          light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000))
-        );
+        background-color: light-dark(#ffffff, #000000);
         border: 0.5pt solid #555555;
         border-radius: 12px;
         box-shadow:
@@ -1222,25 +1206,9 @@ body {
           0px 30px 90px #00000033;
         margin: 12vh auto;
         & > input {
-          background-color: light-dark(
-            light-dark(#ffffff, #000000),
-            light-dark(
-              light-dark(#ffffff, #000000),
-              light-dark(#ffffff, #000000)
-            )
-          );
+          background-color: light-dark(#ffffff, #000000);
           border: none;
-          border-bottom: 1px solid
-            light-dark(
-              light-dark(
-                light-dark(#ffffff, #000000),
-                light-dark(#ffffff, #000000)
-              ),
-              light-dark(
-                light-dark(#ffffff, #000000),
-                light-dark(#ffffff, #000000)
-              )
-            );
+          border-bottom: 1px solid light-dark(#ffffff, #000000);
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1352,12 +1320,8 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: light-dark(
-      light-dark(#ffffff, #000000),
-      light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000))
-    );
-    border: 1px solid
-      light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
+    background-color: light-dark(#ffffff, #000000);
+    border: 1px solid light-dark(#000000, #ffffff);
     border-radius: 8px;
     box-shadow:
       0px 1px 2px #0000001f,
@@ -1373,12 +1337,8 @@ body {
     background-color: unset;
     border: unset;
     & .popover-inner {
-      border: 1px solid
-        light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
-      background-color: light-dark(
-        light-dark(#ffffff, #000000),
-        light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000))
-      );
+      border: 1px solid light-dark(#000000, #ffffff);
+      background-color: light-dark(#ffffff, #000000);
 
       border-radius: 8px;
     }

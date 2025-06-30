@@ -581,6 +581,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
   background-color: light-dark(light-dark(#f6f6f6, #262626), #282f3e);
+  background-color: var(--background-primary);
 
   @media all and ($mobile) {
     div.flex-component > div:has(> button.readermode) {
@@ -593,10 +594,12 @@ body {
     &.left:has(.explorer),
     &.right {
       background-color: light-dark(light-dark(#f6f6f6, #262626), #282f3e);
+      background-color: var(--background-primary);
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
         background-color: light-dark(light-dark(#f6f6f6, #262626), #282f3e);
+        background-color: var(--background-primary);
         content: " ";
         display: block;
         height: 100%;
@@ -1207,8 +1210,7 @@ body {
       color: var(--button-secondary-fg-color);
       -webkit-app-region: no-drag;
       background: #f6cd74;
-      border: 1px solid
-        light-dark(light-dark(#e0e0e0, #363636), light-dark(#222222, #dadada));
+      border: 1px solid light-dark(#e0e0e0, #363636);
       border-radius: 5px;
       color: #eff1f5;
       font-family: inherit;
@@ -1235,11 +1237,7 @@ body {
         & > input {
           background-color: light-dark(light-dark(#f6f6f6, #262626), #282f3e);
           border: none;
-          border-bottom: 1px solid
-            light-dark(
-              light-dark(#222222, #dadada),
-              light-dark(#222222, #dadada)
-            );
+          border-bottom: 1px solid light-dark(#222222, #dadada);
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1350,8 +1348,7 @@ body {
   /* POPOVER */
   .popover {
     background-color: light-dark(light-dark(#f6f6f6, #262626), #282f3e);
-    border: 1px solid
-      light-dark(light-dark(#e0e0e0, #363636), light-dark(#222222, #dadada));
+    border: 1px solid light-dark(#e0e0e0, #363636);
     border-radius: 8px;
     box-shadow:
       0px 1px 2px #0000001f,
@@ -1367,8 +1364,7 @@ body {
     background-color: unset;
     border: unset;
     & .popover-inner {
-      border: 1px solid
-        light-dark(light-dark(#e0e0e0, #363636), light-dark(#222222, #dadada));
+      border: 1px solid light-dark(#e0e0e0, #363636);
       background-color: light-dark(light-dark(#f6f6f6, #262626), #282f3e);
 
       border-radius: 8px;

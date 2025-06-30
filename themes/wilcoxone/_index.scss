@@ -573,6 +573,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
   background-color: light-dark(#e8eee7, #080e26);
+  background-color: var(--background-primary);
 
   @media all and ($mobile) {
     div.flex-component > div:has(> button.readermode) {
@@ -585,10 +586,12 @@ body {
     &.left:has(.explorer),
     &.right {
       background-color: light-dark(#e8eee7, #080e26);
+      background-color: var(--background-primary);
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
         background-color: light-dark(#e8eee7, #080e26);
+        background-color: var(--background-primary);
         content: " ";
         display: block;
         height: 100%;
@@ -1349,8 +1352,7 @@ body {
   /* POPOVER */
   .popover {
     background-color: light-dark(#95b2b0, #0f1734);
-    border: 1px solid
-      light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
+    border: 1px solid light-dark(#fcfcfc, #212121);
     border-radius: 0.25rem;
     box-shadow: 0 2px 8px #0000004d;
     display: flex;
@@ -1364,8 +1366,7 @@ body {
     background-color: unset;
     border: unset;
     & .popover-inner {
-      border: 1px solid
-        light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
+      border: 1px solid light-dark(#fcfcfc, #212121);
       background-color: light-dark(#95b2b0, #0f1734);
 
       border-radius: 0.25rem;

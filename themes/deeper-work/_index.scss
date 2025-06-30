@@ -577,6 +577,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
   background-color: light-dark(#0d1117, #0d1117);
+  background-color: var(--background-primary);
 
   @media all and ($mobile) {
     div.flex-component > div:has(> button.readermode) {
@@ -589,10 +590,12 @@ body {
     &.left:has(.explorer),
     &.right {
       background-color: light-dark(#0d1117, #0d1117);
+      background-color: var(--background-primary);
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
         background-color: light-dark(#0d1117, #0d1117);
+        background-color: var(--background-primary);
         content: " ";
         display: block;
         height: 100%;
@@ -755,8 +758,7 @@ body {
   /* HEADINGS */
   h1 {
     --font-weight: 700;
-    border-bottom: 2px solid
-      light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
+    border-bottom: 2px solid light-dark(#fcfcfc, #212121);
     color: inherit;
     font-family: inherit;
     font-size: 1.55rem;
@@ -778,8 +780,7 @@ body {
   h2.page-title a,
   h2 {
     --font-weight: 600;
-    border-bottom: 2px solid
-      light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
+    border-bottom: 2px solid light-dark(#fcfcfc, #212121);
     color: inherit;
     font-family: inherit;
     font-size: 1.4rem;

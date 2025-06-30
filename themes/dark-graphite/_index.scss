@@ -539,6 +539,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
   background-color: light-dark(#161719, #161719);
+  background-color: var(--background-primary);
 
   @media all and ($mobile) {
     div.flex-component > div:has(> button.readermode) {
@@ -551,10 +552,12 @@ body {
     &.left:has(.explorer),
     &.right {
       background-color: light-dark(#161719, #161719);
+      background-color: var(--background-primary);
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
         background-color: light-dark(#161719, #161719);
+        background-color: var(--background-primary);
         content: " ";
         display: block;
         height: 100%;
@@ -1174,8 +1177,7 @@ body {
         light-dark(#161719, #161719),
         light-dark(#161719, #161719)
       );
-      border: 1px solid
-        light-dark(light-dark(#949594, #949594), light-dark(#949594, #949594));
+      border: 1px solid light-dark(#949594, #949594);
       border-radius: 5px;
       color: light-dark(#d5d5d5, #d5d5d5);
       font-family: inherit;

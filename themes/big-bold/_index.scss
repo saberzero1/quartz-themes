@@ -1215,6 +1215,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
   background-color: #f7f7f8bf;
+  background-color: var(--background-primary);
 
   @media all and ($mobile) {
     div.flex-component > div:has(> button.readermode) {
@@ -1227,10 +1228,12 @@ body {
     &.left:has(.explorer),
     &.right {
       background-color: #f7f7f8bf;
+      background-color: var(--background-primary);
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
         background-color: #f7f7f8bf;
+        background-color: var(--background-primary);
         content: " ";
         display: block;
         height: 100%;
@@ -1900,16 +1903,8 @@ body {
           & .highlight {
             background-color: transparent;
             color: light-dark(
-              hsl(
-                light-dark(181, 181),
-                light-dark(100%, 100%),
-                light-dark(35%, 35%)
-              ),
-              hsl(
-                light-dark(181, 181),
-                light-dark(100%, 100%),
-                light-dark(35%, 35%)
-              )
+              light-dark(hsl(181, 100%, 35%), hsl(181, 100%, 35%)),
+              light-dark(hsl(181, 100%, 35%), hsl(181, 100%, 35%))
             );
             font-weight: bold;
             background-color: #ffd00066;

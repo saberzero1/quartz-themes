@@ -577,6 +577,7 @@ body {
     hsl(233deg 39% 12%) 50%,
     hsl(230deg 40% 14%) 100%
   );
+  background-color: var(--background-primary);
 
   @media all and ($mobile) {
     div.flex-component > div:has(> button.readermode) {
@@ -594,6 +595,7 @@ body {
         hsl(233deg 39% 12%) 50%,
         hsl(230deg 40% 14%) 100%
       );
+      background-color: var(--background-primary);
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
@@ -603,6 +605,7 @@ body {
           hsl(233deg 39% 12%) 50%,
           hsl(230deg 40% 14%) 100%
         );
+        background-color: var(--background-primary);
         content: " ";
         display: block;
         height: 100%;

@@ -723,6 +723,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
   background-color: rgba(25, 25, 46, 0.8);
+  background-color: var(--background-primary);
 
   @media all and ($mobile) {
     div.flex-component > div:has(> button.readermode) {
@@ -735,10 +736,12 @@ body {
     &.left:has(.explorer),
     &.right {
       background-color: rgba(25, 25, 46, 0.8);
+      background-color: var(--background-primary);
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
         background-color: rgba(25, 25, 46, 0.8);
+        background-color: var(--background-primary);
         content: " ";
         display: block;
         height: 100%;
@@ -1089,10 +1092,7 @@ body {
   }
   h6 {
     --font-weight: 600;
-    color: light-dark(
-      light-dark(#575279, #e0def4),
-      light-dark(light-dark(#575279, #e0def4), light-dark(#575279, #e0def4))
-    );
+    color: light-dark(#575279, #e0def4);
     font-family:
       "??",
       "??",

@@ -543,6 +543,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
   background-color: oklch(13.5% 0.01 279.29);
+  background-color: var(--background-primary);
 
   @media all and ($mobile) {
     div.flex-component > div:has(> button.readermode) {
@@ -555,10 +556,12 @@ body {
     &.left:has(.explorer),
     &.right {
       background-color: oklch(13.5% 0.01 279.29);
+      background-color: var(--background-primary);
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
         background-color: oklch(13.5% 0.01 279.29);
+        background-color: var(--background-primary);
         content: " ";
         display: block;
         height: 100%;

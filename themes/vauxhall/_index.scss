@@ -668,6 +668,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
   background-color: light-dark(#fcfcfc, #212121);
+  background-color: var(--background-primary);
 
   @media all and ($mobile) {
     div.flex-component > div:has(> button.readermode) {
@@ -680,10 +681,12 @@ body {
     &.left:has(.explorer),
     &.right {
       background-color: light-dark(#fcfcfc, #212121);
+      background-color: var(--background-primary);
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
         background-color: light-dark(#fcfcfc, #212121);
+        background-color: var(--background-primary);
         content: " ";
         display: block;
         height: 100%;
@@ -1325,11 +1328,7 @@ body {
         & > input {
           background-color: light-dark(#fcfcfc, #212121);
           border: none;
-          border-bottom: 1px solid
-            light-dark(
-              light-dark(#fcfcfc, #212121),
-              light-dark(#fcfcfc, #212121)
-            );
+          border-bottom: 1px solid light-dark(#fcfcfc, #212121);
           border-radius: 0;
           font-size: 16px;
           height: 48px;
