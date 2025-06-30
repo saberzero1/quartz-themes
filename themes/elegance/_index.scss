@@ -1339,7 +1339,6 @@ body {
     display: block;
     position: fixed;
     z-index: 999;
-    background-color: unset;
     border: unset;
     & .popover-inner {
       border: 1px solid var(--border-color);
