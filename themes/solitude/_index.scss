@@ -576,7 +576,7 @@ body {
       background-color: hsl(196, 11%, -1%);
       background-color: var(--background-secondary);
     }
-    @media all and ($tablet) {
+    @media all and not ($desktop) {
       &.right {
         background-color: hsl(196, 11%, -1%);
         background-color: var(--background-primary);

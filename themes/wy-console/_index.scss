@@ -2840,7 +2840,7 @@ body {
       background-color: #d7ddd9;
       background-color: var(--background-secondary);
     }
-    @media all and ($tablet) {
+    @media all and not ($desktop) {
       &.right {
         background-color: #d7ddd9;
         background-color: var(--background-primary);

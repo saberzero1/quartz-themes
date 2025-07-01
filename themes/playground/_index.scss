@@ -568,7 +568,7 @@ body {
       background-color: oklch(13.5% 0.01 279.29);
       background-color: var(--background-secondary);
     }
-    @media all and ($tablet) {
+    @media all and not ($desktop) {
       &.right {
         background-color: oklch(13.5% 0.01 279.29);
         background-color: var(--background-primary);

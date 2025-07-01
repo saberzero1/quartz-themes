@@ -599,7 +599,7 @@ body {
       background-color: light-dark(#e8eee7, #080e26);
       background-color: var(--background-secondary);
     }
-    @media all and ($tablet) {
+    @media all and not ($desktop) {
       &.right {
         background-color: light-dark(#e8eee7, #080e26);
         background-color: var(--background-primary);

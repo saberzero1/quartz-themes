@@ -755,7 +755,7 @@ body {
       background-color: rgba(25, 25, 46, 0.8);
       background-color: var(--background-secondary);
     }
-    @media all and ($tablet) {
+    @media all and not ($desktop) {
       &.right {
         background-color: rgba(25, 25, 46, 0.8);
         background-color: var(--background-primary);
