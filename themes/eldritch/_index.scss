@@ -664,7 +664,7 @@ body {
   background-color: light-dark(#212337, #212337);
   background-color: var(--background-primary);
 
-  @media all and ($mobile) {
+  @media all and not ($desktop) {
     div.flex-component > div:has(> button.readermode) {
       display: none;
     }
@@ -677,6 +677,12 @@ body {
       background-color: light-dark(#212337, #212337);
       background-color: var(--background-secondary);
     }
+    @media all and ($tablet) {
+      &.right {
+        background-color: light-dark(#212337, #212337);
+        background-color: var(--background-primary);
+      }
+    }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
         background-color: light-dark(#212337, #212337);
@@ -686,7 +692,13 @@ body {
         height: 100%;
         width: 1rem;
         left: -1rem;
+        top: 0;
         position: absolute;
+      }
+    }
+    @media all and ($tablet) {
+      &.left:has(.explorer):before {
+        padding-left: 1rem;
       }
     }
   }
@@ -1465,6 +1477,10 @@ body {
     background-color: var(--background-primary);
   }
   .page > #quartz-body {
+    .center {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
     .sidebar {
       background-color: var(--background-secondary);
     }
