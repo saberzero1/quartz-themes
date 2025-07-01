@@ -6,7 +6,7 @@ import {
 
 export const testMode = false;
 export const staticMode = true;
-export const themeToTest = "FastPpuccin";
+export const themeToTest = "AnuPpuccin";
 
 export const themes = getValueFromDictionary(
   readJsonFileAsDictionary(getCurrentFolder(), "themes.json"),
