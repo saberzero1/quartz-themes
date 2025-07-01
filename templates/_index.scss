@@ -974,8 +974,10 @@ body {
 
     //%%TOC H3 COLOR%%
 
-    button.toc-header
-    {
+    @media all and ($desktop) {
+      display: contents;
+    }
+    button.toc-header {
       h3 {
 
         //%%H3%%
