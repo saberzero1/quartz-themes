@@ -4,9 +4,15 @@
   --accent-s: 56%;
   --background-secondary-alt: light-dark(#212121, #1a1e24);
   --color-accent: light-dark(#5882d0, #5882d0);
-  --color-accent-1: light-dark(#6991d5, #7aa0db);
-  --color-accent-2: light-dark(#7aa0db, #99bae5);
-  --color-accent-hsl: light-dark(#5882d0, #5882d0);
+  --color-accent-1: light-dark(
+    hsl(218, 56.56%, 62.35%),
+    hsl(216, 57.12%, 66.7%)
+  );
+  --color-accent-2: light-dark(
+    hsl(216, 57.12%, 66.7%),
+    hsl(214, 58.8%, 74.82%)
+  );
+  --color-accent-hsl: light-dark(hsl(219, 56%, 58%), hsl(219, 56%, 58%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -152,7 +158,7 @@ body {
   --checkbox-border-color: #515663;
   --checkbox-border-color-hover: #888;
   --checkbox-color: #5882d0;
-  --checkbox-color-hover: #7aa0db;
+  --checkbox-color-hover: hsl(216, 57.12%, 66.7%);
   --checkbox-margin-inline-start: 0.85em;
   --checkbox-marker-color: #272b34;
   --checkbox-radius: 4px;
@@ -178,11 +184,17 @@ body {
   --code-value: #a882ff;
   --code-white-space: pre-wrap;
   --collapse-icon-color: #515663;
-  --collapse-icon-color-collapsed: #7aa0db;
+  --collapse-icon-color-collapsed: hsl(216, 57.12%, 66.7%);
   --color-accent: light-dark(#5882d0, #5882d0);
-  --color-accent-1: light-dark(#6991d5, #7aa0db);
-  --color-accent-2: light-dark(#7aa0db, #99bae5);
-  --color-accent-hsl: light-dark(#5882d0, #5882d0);
+  --color-accent-1: light-dark(
+    hsl(218, 56.56%, 62.35%),
+    hsl(216, 57.12%, 66.7%)
+  );
+  --color-accent-2: light-dark(
+    hsl(216, 57.12%, 66.7%),
+    hsl(214, 58.8%, 74.82%)
+  );
+  --color-accent-hsl: light-dark(hsl(219, 56%, 58%), hsl(219, 56%, 58%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -312,7 +324,7 @@ body {
   --graph-line: #224077;
   --graph-node: #888;
   --graph-node-attachment: #e0de71;
-  --graph-node-focused: #7aa0db;
+  --graph-node-focused: hsl(216, 57.12%, 66.7%);
   --graph-node-tag: #44cf6e;
   --graph-node-unresolved: #515663;
   --graph-text: #ffffff;
@@ -364,7 +376,7 @@ body {
   --hr-color: transparent;
   --hr-thickness: 2px;
   --icon-color: #888;
-  --icon-color-active: #7aa0db;
+  --icon-color-active: hsl(216, 57.12%, 66.7%);
   --icon-color-focused: #ffffff;
   --icon-color-hover: #888;
   --icon-l: 18px;
@@ -405,8 +417,8 @@ body {
   --input-height: 30px;
   --input-placeholder-color: #515663;
   --input-radius: 5px;
-  --interactive-accent: #7aa0db;
-  --interactive-accent-hover: #99bae5;
+  --interactive-accent: hsl(216, 57.12%, 66.7%);
+  --interactive-accent-hover: hsl(214, 58.8%, 74.82%);
   --interactive-accent-hsl: 219, 56%, 58%;
   --interactive-hover: #111;
   --interactive-normal: #000;
@@ -424,17 +436,17 @@ body {
   --layer-tooltip: 70;
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;
-  --link-color: #7aa0db;
-  --link-color-hover: #68bafd;
+  --link-color: hsl(216, 57.12%, 66.7%);
+  --link-color-hover: hsl(207, 97%, 70%);
   --link-decoration: underline;
   --link-decoration-hover: underline;
   --link-decoration-thickness: auto;
-  --link-external-color: #7aa0db;
-  --link-external-color-hover: #68bafd;
+  --link-external-color: hsl(216, 57.12%, 66.7%);
+  --link-external-color-hover: hsl(207, 97%, 70%);
   --link-external-decoration: underline;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
-  --link-unresolved-color: #7aa0db;
+  --link-unresolved-color: hsl(216, 57.12%, 66.7%);
   --link-unresolved-decoration-color: #5882d04d;
   --link-unresolved-decoration-style: solid;
   --link-unresolved-filter: none;
@@ -449,7 +461,7 @@ body {
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
   --list-marker-color: #515663;
-  --list-marker-color-collapsed: #7aa0db;
+  --list-marker-color-collapsed: hsl(216, 57.12%, 66.7%);
   --list-marker-color-hover: #888;
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
@@ -535,7 +547,7 @@ body {
   --nav-item-children-padding-start: 4px;
   --nav-item-color: #888;
   --nav-item-color-active: #ffffff;
-  --nav-item-color-highlighted: #7aa0db;
+  --nav-item-color-highlighted: hsl(216, 57.12%, 66.7%);
   --nav-item-color-hover: #ffffff;
   --nav-item-color-selected: #ffffff;
   --nav-item-padding: 4px 8px 4px 24px;
@@ -561,7 +573,7 @@ body {
   --pill-color: #888;
   --pill-color-hover: #ffffff;
   --pill-color-remove: #515663;
-  --pill-color-remove-hover: #7aa0db;
+  --pill-color-remove-hover: hsl(216, 57.12%, 66.7%);
   --pill-decoration: none;
   --pill-decoration-hover: none;
   --pill-focus-left-adjust: -4px;
@@ -675,7 +687,7 @@ body {
   --tab-text-color-focused: #888;
   --tab-text-color-focused-active: #888;
   --tab-text-color-focused-active-current: #ffffff;
-  --tab-text-color-focused-highlighted: #7aa0db;
+  --tab-text-color-focused-highlighted: hsl(216, 57.12%, 66.7%);
   --tab-width: 200px;
   --table-add-button-background: transparent;
   --table-add-button-border-color: transparent;
@@ -719,8 +731,8 @@ body {
   --tag-border-color: #5882d026;
   --tag-border-color-hover: #5882d026;
   --tag-border-width: 0px;
-  --tag-color: #7aa0db;
-  --tag-color-hover: #7aa0db;
+  --tag-color: hsl(216, 57.12%, 66.7%);
+  --tag-color-hover: hsl(216, 57.12%, 66.7%);
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-padding-x: 0.65em;
@@ -728,11 +740,11 @@ body {
   --tag-radius: 2em;
   --tag-size: 0.875em;
   --tag-weight: inherit;
-  --text-accent: #61afef;
-  --text-accent-color: #61afef;
+  --text-accent: hsl(207, 82%, 66%);
+  --text-accent-color: hsl(207, 82%, 66%);
   --text-accent-h: 207;
-  --text-accent-hover: #68bafd;
-  --text-accent-hover-color: #68bafd;
+  --text-accent-hover: hsl(207, 97%, 70%);
+  --text-accent-hover-color: hsl(207, 97%, 70%);
   --text-accent-hover-h: 207;
   --text-accent-hover-l: 70%;
   --text-accent-hover-s: 97%;
@@ -780,7 +792,7 @@ body {
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: #272b34;
-  caret-color: #7aa0db;
+  caret-color: hsl(216, 57.12%, 66.7%);
   color: #ffffff;
   contain: initial;
   font-family:
@@ -1515,7 +1527,7 @@ svg.svg-icon {
 
 .clickable-icon.is-active {
   background-color: #5882d026;
-  color: #7aa0db;
+  color: hsl(216, 57.12%, 66.7%);
   opacity: 0.65;
 }
 
@@ -1570,7 +1582,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-focused {
-  color: #7aa0db;
+  color: hsl(216, 57.12%, 66.7%);
 }
 
 .graph-view.color-fill-tag {
@@ -1616,7 +1628,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-circle {
-  color: #7aa0db;
+  color: hsl(216, 57.12%, 66.7%);
 }
 
 .graph-view.color-line {
@@ -1668,8 +1680,8 @@ svg.svg-icon {
   --background-secondary-alt: #1a1e24;
   --blue: #61afef;
   --color-accent: #5882d0;
-  --color-accent-1: #7aa0db;
-  --color-accent-2: #99bae5;
+  --color-accent-1: hsl(216, 57.12%, 66.7%);
+  --color-accent-2: hsl(214, 58.8%, 74.82%);
   --color-accent-hsl: 219, 56%, 58%;
   --color-base-00: #1e1e1e;
   --color-base-05: #212121;
@@ -1712,7 +1724,7 @@ svg.svg-icon {
     inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
     0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
   --interactive-accent: #5882d0;
-  --interactive-accent-hover: #7aa0db;
+  --interactive-accent-hover: hsl(216, 57.12%, 66.7%);
   --interactive-hover: #353b47;
   --interactive-normal: #20242b;
   --mono-rgb-0: 0, 0, 0;
@@ -1737,7 +1749,7 @@ svg.svg-icon {
   --table-header-background: #5882d0;
   --table-header-background-hover: #5882d0;
   --table-row-alt-background: transparent;
-  --text-accent: #7aa0db;
+  --text-accent: hsl(216, 57.12%, 66.7%);
   --text-error: #e16d76;
   --text-error-hover: #c9626a;
   --text-faint: #515663;
@@ -1755,8 +1767,8 @@ svg.svg-icon {
   --background-modifier-cover: #dcdcdc66;
   --background-secondary-alt: #212121;
   --color-accent: #5882d0;
-  --color-accent-1: #6991d5;
-  --color-accent-2: #7aa0db;
+  --color-accent-1: hsl(218, 56.56%, 62.35%);
+  --color-accent-2: hsl(216, 57.12%, 66.7%);
   --color-accent-hsl: 219, 56%, 58%;
   --color-base-00: #ffffff;
   --color-base-05: #fcfcfc;

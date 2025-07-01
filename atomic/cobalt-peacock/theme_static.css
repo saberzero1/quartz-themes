@@ -940,7 +940,7 @@
   --color-accent: light-dark(#0088ff, #0088ff);
   --color-accent-1: light-dark(hsl(207, 101%, 53.75%), hsl(205, 102%, 57.5%));
   --color-accent-2: light-dark(hsl(205, 102%, 57.5%), hsl(203, 105%, 64.5%));
-  --color-accent-hsl: light-dark(#0088ff, #0088ff);
+  --color-accent-hsl: light-dark(hsl(208, 100%, 50%), hsl(208, 100%, 50%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -1722,7 +1722,7 @@ body {
   --color-accent: light-dark(#0088ff, #0088ff);
   --color-accent-1: light-dark(hsl(207, 101%, 53.75%), hsl(205, 102%, 57.5%));
   --color-accent-2: light-dark(hsl(205, 102%, 57.5%), hsl(203, 105%, 64.5%));
-  --color-accent-hsl: light-dark(#0088ff, #0088ff);
+  --color-accent-hsl: light-dark(hsl(208, 100%, 50%), hsl(208, 100%, 50%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -19548,7 +19548,10 @@ body.theme-dark {
 }
 
 .canvas-selection {
-  background-color: hsla(light-dark(208, 100%, 50%, 208, 100%, 50%), 0.1);
+  background-color: hsla(
+    light-dark(hsl(208, 100%, 50%), hsl(208, 100%, 50%)),
+    0.1
+  );
   border: 2px solid light-dark(#0088ff, #0088ff);
   pointer-events: none;
   position: absolute;
@@ -19556,8 +19559,11 @@ body.theme-dark {
 }
 
 .canvas-selection.mod-group-selection {
-  background-color: hsla(light-dark(208, 100%, 50%, 208, 100%, 50%), 0.03);
-  border-color: hsla(light-dark(208, 100%, 50%, 208, 100%, 50%), 0.3);
+  background-color: hsla(
+    light-dark(hsl(208, 100%, 50%), hsl(208, 100%, 50%)),
+    0.03
+  );
+  border-color: hsla(light-dark(hsl(208, 100%, 50%), hsl(208, 100%, 50%)), 0.3);
   border-radius: 3px;
   border-width: 3px;
   pointer-events: initial;
@@ -19935,7 +19941,10 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 }
 
 .canvas-node.is-dummy .canvas-node-container {
-  background-color: hsla(light-dark(208, 100%, 50%, 208, 100%, 50%), 0.2);
+  background-color: hsla(
+    light-dark(hsl(208, 100%, 50%), hsl(208, 100%, 50%)),
+    0.2
+  );
   border: 4px solid light-dark(#0088ff, #0088ff);
   box-shadow: 0px 2px 10px #00000026;
 }
@@ -20557,7 +20566,7 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-placeholder-message {
-  background: hsla(light-dark(208, 100%, 50%, 208, 100%, 50%), 0.1);
+  background: hsla(light-dark(hsl(208, 100%, 50%), hsl(208, 100%, 50%)), 0.1);
   border-radius: 0px;
   color: light-dark(#0088ff, #0088ff);
   font-size: 19.2px;

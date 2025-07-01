@@ -1051,8 +1051,8 @@ body {
   /* BREADCRUMBS */
   .breadcrumbs-element p {
     color: light-dark(
-      light-dark(rgb(108, 111, 133), rgb(161, 168, 201)),
-      light-dark(rgb(108, 111, 133), rgb(161, 168, 201))
+      light-dark(108, 111, 133, 161, 168, 201),
+      rgb(light-dark(108, 111, 133, 161, 168, 201))
     );
   }
   /* BACKLINKS */

@@ -82,11 +82,11 @@
   --cyan: light-dark(#7dcfff, #7dcfff);
   --date-background-color: light-dark(#292e42, #292e42);
   --date-color: light-dark(#7aa2f7, #7aa2f7);
-  --default-font: '"JetBrains Mono", monospace, "Inter", sans-serif';
+  --default-font: "JetBrains Mono", monospace, "Inter", sans-serif;
   --embed-background: light-dark(#16161e, #16161e);
   --fg: light-dark(#c0caf5, #c0caf5);
   --fg_dark: light-dark(#a9b1d6, #a9b1d6);
-  --font-monospace: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
+  --font-monospace: "JetBrains Mono", monospace, "Source Code Pro", monospace;
   --graph-line: light-dark(#565f89, #565f89);
   --graph-node: light-dark(#c0caf5, #c0caf5);
   --graph-node-attachment: light-dark(#7aa2f7, #7aa2f7);
@@ -379,10 +379,9 @@ body {
   --file-folding-offset: 24px;
   --file-header-border: 0.5pt solid transparent;
   --file-header-font:
-    "??", "??", '"JetBrains Mono", monospace, "Inter", sans-serif',
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+    "??", "??", "JetBrains Mono", monospace, "Inter", sans-serif, ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --file-header-font-size: 14.992px;
   --file-header-font-weight: 400;
   --file-header-justify: center;
@@ -399,10 +398,9 @@ body {
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-interface:
-    "??", "??", '"JetBrains Mono", monospace, "Inter", sans-serif',
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+    "??", "??", "JetBrains Mono", monospace, "Inter", sans-serif, ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-override: "??";
   --font-interface-theme: "??";
   --font-light: 300;
@@ -629,10 +627,9 @@ body {
   --metadata-input-background-active: #ffffff26;
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
-    "??", "??", '"JetBrains Mono", monospace, "Inter", sans-serif',
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+    "??", "??", "JetBrains Mono", monospace, "Inter", sans-serif, ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: 28px;
   --metadata-input-longtext-lines: 3;
@@ -641,10 +638,9 @@ body {
   --metadata-label-background-active: #ffffff26;
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
-    "??", "??", '"JetBrains Mono", monospace, "Inter", sans-serif',
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+    "??", "??", "JetBrains Mono", monospace, "Inter", sans-serif, ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-label-font-size: 0.875em;
   --metadata-label-font-weight: inherit;
   --metadata-label-text-color: #a9b1d6;
@@ -942,7 +938,10 @@ body {
   font-family:
     "??",
     "??",
-    '"JetBrains Mono", monospace, "Inter", sans-serif',
+    "JetBrains Mono",
+    monospace,
+    "Inter",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -1092,7 +1091,7 @@ h6 {
   border: 0px solid transparent;
   border-radius: 4px;
   color: #c0caf5;
-  font-family: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
+  font-family: "JetBrains Mono", monospace, "Source Code Pro", monospace;
   font-size: 1em;
   padding: 0.15em 0.3em;
 }
@@ -1110,7 +1109,10 @@ h6 {
   font-family:
     "??",
     "??",
-    '"JetBrains Mono", monospace, "Inter", sans-serif',
+    "JetBrains Mono",
+    monospace,
+    "Inter",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -1629,7 +1631,7 @@ kbd {
   background-color: #24283b;
   border-radius: 4px;
   color: #c0caf5;
-  font-family: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
+  font-family: "JetBrains Mono", monospace, "Source Code Pro", monospace;
   font-size: 1em;
   padding: 0.1em 0.25em;
 }

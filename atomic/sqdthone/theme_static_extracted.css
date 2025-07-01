@@ -1525,7 +1525,7 @@ input.prompt-input {
   );
   color: hsl(
     light-dark(
-      light-dark(15, 20%, 88%, 15, 20%, 84%),
+      light-dark(hsl(15, 20%, 88%), hsl(15, 20%, 84%)),
       light-dark(15, 20%, 88%, 15, 20%, 84%)
     )
   );
@@ -1576,7 +1576,7 @@ input[type="search"] {
   border-radius: 4px;
   color: hsl(
     light-dark(
-      light-dark(160, 50%, 38%, 160, 50%, 46%),
+      light-dark(hsl(160, 50%, 38%), hsl(160, 50%, 46%)),
       light-dark(160, 50%, 38%, 160, 50%, 46%)
     )
   );
@@ -1826,7 +1826,7 @@ svg.svg-icon {
   );
   color: hsl(
     light-dark(
-      light-dark(15, 20%, 88%, 15, 20%, 84%),
+      light-dark(hsl(15, 20%, 88%), hsl(15, 20%, 84%)),
       light-dark(15, 20%, 88%, 15, 20%, 84%)
     )
   );
@@ -1903,7 +1903,7 @@ svg.svg-icon {
 .graph-view.color-fill-attachment {
   color: hsl(
     light-dark(
-      light-dark(160, 50%, 38%, 160, 50%, 46%),
+      light-dark(hsl(160, 50%, 38%), hsl(160, 50%, 46%)),
       light-dark(160, 50%, 38%, 160, 50%, 46%)
     )
   );

@@ -141,11 +141,11 @@
   --cyan: light-dark(rgb(var(--cyan_x)), rgb(var(--cyan_x)));
   --date-background-color: light-dark(var(--bg_highlight), var(--bg_highlight));
   --date-color: light-dark(var(--blue), var(--blue));
-  --default-font: '"JetBrains Mono", monospace, "Inter", sans-serif';
+  --default-font: "JetBrains Mono", monospace, "Inter", sans-serif;
   --embed-background: light-dark(var(--bg_dark), var(--bg_dark));
   --fg: light-dark(rgb(var(--fg_x)), rgb(var(--fg_x)));
   --fg_dark: light-dark(rgb(var(--fg_dark_x)), rgb(var(--fg_dark_x)));
-  --font-monospace: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
+  --font-monospace: "JetBrains Mono", monospace, "Source Code Pro", monospace;
   --graph-line: light-dark(var(--comment), var(--comment));
   --graph-node: light-dark(var(--fg), var(--fg));
   --graph-node-attachment: light-dark(var(--blue), var(--blue));

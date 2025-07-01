@@ -951,9 +951,9 @@
   --code-normal: light-dark(#d4c9b5, #d4c9b5);
   --code-string: light-dark(#fa99cd, #b0a38c);
   --color-accent: light-dark(#ebd6ad, #ebd6ad);
-  --color-accent-1: light-dark(#f1e2c6, #f7eede);
-  --color-accent-2: light-dark(#f7eede, hsl(35, 63%, 103.2%));
-  --color-accent-hsl: light-dark(#ebd6ad, #ebd6ad);
+  --color-accent-1: light-dark(hsl(39, 60.6%, 86%), hsl(37, 61.2%, 92%));
+  --color-accent-2: light-dark(hsl(37, 61.2%, 92%), hsl(35, 63%, 103.2%));
+  --color-accent-hsl: light-dark(hsl(40, 60%, 80%), hsl(40, 60%, 80%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -991,7 +991,7 @@
   --h5-color: light-dark(#fa99cd, #b0a38c);
   --h6-color: light-dark(#53dfdd, #b0a38c);
   --interactive-accent: light-dark(#ebd6ad, #ebd6ad);
-  --interactive-accent-hover: light-dark(#e0c285, #f7eede);
+  --interactive-accent-hover: light-dark(#e0c285, hsl(37, 61.2%, 92%));
   --italic-color: inherit;
   --keyboard-height: 0px;
   --line-height-normal: 1.5;
@@ -1027,7 +1027,7 @@
   --tab-text-color-focused: light-dark(#d4c9b5, #d4c9b5);
   --tab-text-color-focused-active: light-dark(#ff4500, #ff4500);
   --text-accent: light-dark(#ebd6ad, #ff4500);
-  --text-accent-hover: light-dark(#f7eede, #ff6347);
+  --text-accent-hover: light-dark(hsl(37, 61.2%, 92%), #ff6347);
   --text-faint: light-dark(#666666, #8c816d);
   --text-muted: light-dark(#999999, #b0a38c);
   --text-normal: light-dark(#dadada, #d4c9b5);
@@ -1753,7 +1753,7 @@ body {
   --checkbox-border-color: #8c816d;
   --checkbox-border-color-hover: #b0a38c;
   --checkbox-color: #ebd6ad;
-  --checkbox-color-hover: #f7eede;
+  --checkbox-color-hover: hsl(37, 61.2%, 92%);
   --checkbox-margin-inline-start: 0.85em;
   --checkbox-marker-color: #1c1c1c;
   --checkbox-radius: 4px;
@@ -1781,9 +1781,9 @@ body {
   --collapse-icon-color: #8c816d;
   --collapse-icon-color-collapsed: #ff4500;
   --color-accent: light-dark(#ebd6ad, #ebd6ad);
-  --color-accent-1: light-dark(#f1e2c6, #f7eede);
-  --color-accent-2: light-dark(#f7eede, hsl(35, 63%, 103.2%));
-  --color-accent-hsl: light-dark(#ebd6ad, #ebd6ad);
+  --color-accent-1: light-dark(hsl(39, 60.6%, 86%), hsl(37, 61.2%, 92%));
+  --color-accent-2: light-dark(hsl(37, 61.2%, 92%), hsl(35, 63%, 103.2%));
+  --color-accent-hsl: light-dark(hsl(40, 60%, 80%), hsl(40, 60%, 80%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -2009,7 +2009,7 @@ body {
   --input-placeholder-color: #8c816d;
   --input-radius: 5px;
   --interactive-accent: light-dark(#ebd6ad, #ebd6ad);
-  --interactive-accent-hover: light-dark(#e0c285, #f7eede);
+  --interactive-accent-hover: light-dark(#e0c285, hsl(37, 61.2%, 92%));
   --interactive-accent-hsl: 40, 60%, 80%;
   --interactive-hover: #111;
   --interactive-normal: #000;
@@ -2332,7 +2332,7 @@ body {
   --tag-size: 0.875em;
   --tag-weight: inherit;
   --text-accent: light-dark(#ebd6ad, #ff4500);
-  --text-accent-hover: light-dark(#f7eede, #ff6347);
+  --text-accent-hover: light-dark(hsl(37, 61.2%, 92%), #ff6347);
   --text-error: #fb464c;
   --text-faint: light-dark(#666666, #8c816d);
   --text-highlight-bg: #ffd00066;
@@ -2466,8 +2466,8 @@ body {
   --code-tag: #53dfdd;
   --code-value: #e0de71;
   --color-accent: #ebd6ad;
-  --color-accent-1: #f1e2c6;
-  --color-accent-2: #f7eede;
+  --color-accent-1: hsl(39, 60.6%, 86%);
+  --color-accent-2: hsl(37, 61.2%, 92%);
   --color-accent-hsl: 40, 60%, 80%;
   --color-base-00: #f5f8ff;
   --color-base-05: #e8eeff;
@@ -2632,7 +2632,7 @@ body {
   --tag-size: 14.992px;
   --tag-weight: 500;
   --text-accent: #ebd6ad;
-  --text-accent-hover: #f7eede;
+  --text-accent-hover: hsl(37, 61.2%, 92%);
   --text-faint: #666666;
   --text-highlight-bg: #e0de7180;
   --text-muted: #999999;
@@ -2678,7 +2678,7 @@ body {
   --code-normal: #d4c9b5;
   --code-string: #b0a38c;
   --color-accent: #ebd6ad;
-  --color-accent-1: #f7eede;
+  --color-accent-1: hsl(37, 61.2%, 92%);
   --color-accent-2: hsl(35, 63%, 103.2%);
   --color-accent-hsl: 40, 60%, 80%;
   --color-base-00: #1e1e1e;
@@ -2737,7 +2737,7 @@ body {
     inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
     0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
   --interactive-accent: #ebd6ad;
-  --interactive-accent-hover: #f7eede;
+  --interactive-accent-hover: hsl(37, 61.2%, 92%);
   --interactive-hover: #3f3f3f;
   --interactive-normal: #363636;
   --link-color: #ff4500;
@@ -8796,7 +8796,7 @@ svg.svg-icon {
 
 .clickable-icon.is-active {
   background-color: #ffffff1a;
-  color: #f7eede;
+  color: hsl(37, 61.2%, 92%);
   opacity: 0.65;
 }
 
@@ -16557,8 +16557,8 @@ em {
 }
 
 .view-action.mod-bookmarked {
-  --icon-color: #f7eede;
-  --icon-color-hover: #f7eede;
+  --icon-color: hsl(37, 61.2%, 92%);
+  --icon-color-hover: hsl(37, 61.2%, 92%);
 }
 
 .workspace-leaf-content:not([data-type="browser"]) .view-action.mod-bookmark {
@@ -19988,7 +19988,7 @@ body.theme-dark {
 }
 
 .canvas-selection {
-  background-color: hsla(light-dark(40, 60%, 80%, 40, 60%, 80%), 0.1);
+  background-color: hsla(light-dark(hsl(40, 60%, 80%), hsl(40, 60%, 80%)), 0.1);
   border: 2px solid light-dark(#ebd6ad, #ebd6ad);
   pointer-events: none;
   position: absolute;
@@ -19996,8 +19996,11 @@ body.theme-dark {
 }
 
 .canvas-selection.mod-group-selection {
-  background-color: hsla(light-dark(40, 60%, 80%, 40, 60%, 80%), 0.03);
-  border-color: hsla(light-dark(40, 60%, 80%, 40, 60%, 80%), 0.3);
+  background-color: hsla(
+    light-dark(hsl(40, 60%, 80%), hsl(40, 60%, 80%)),
+    0.03
+  );
+  border-color: hsla(light-dark(hsl(40, 60%, 80%), hsl(40, 60%, 80%)), 0.3);
   border-radius: 3px;
   border-width: 3px;
   pointer-events: initial;
@@ -20375,7 +20378,7 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 }
 
 .canvas-node.is-dummy .canvas-node-container {
-  background-color: hsla(light-dark(40, 60%, 80%, 40, 60%, 80%), 0.2);
+  background-color: hsla(light-dark(hsl(40, 60%, 80%), hsl(40, 60%, 80%)), 0.2);
   border: 4px solid light-dark(#ebd6ad, #ebd6ad);
   box-shadow: 0px 2px 10px #00000026;
 }
@@ -20997,7 +21000,7 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-placeholder-message {
-  background: hsla(light-dark(40, 60%, 80%, 40, 60%, 80%), 0.1);
+  background: hsla(light-dark(hsl(40, 60%, 80%), hsl(40, 60%, 80%)), 0.1);
   border-radius: 8px;
   color: light-dark(#ebd6ad, #ebd6ad);
   font-size: 19.2px;
@@ -21077,8 +21080,8 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .view-action.mod-webviewer {
-  --icon-color: #f7eede;
-  --icon-color-hover: #f7eede;
+  --icon-color: hsl(37, 61.2%, 92%);
+  --icon-color-hover: hsl(37, 61.2%, 92%);
 }
 
 .webviewer-container {
@@ -22329,8 +22332,8 @@ body.is-phone .suggestion-bg {
 
 .is-mobile .view-header-nav-buttons {
   --icon-color: #ebd6ad;
-  --icon-color-active: #f7eede;
-  --icon-color-focus: #f7eede;
+  --icon-color-active: hsl(37, 61.2%, 92%);
+  --icon-color-focus: hsl(37, 61.2%, 92%);
   --icon-color-hover: #ebd6ad;
   --icon-size: 24px;
   --icon-stroke: 1.75px;
@@ -22338,8 +22341,8 @@ body.is-phone .suggestion-bg {
 
 .is-mobile .view-header .view-action {
   --icon-color: #ebd6ad;
-  --icon-color-active: #f7eede;
-  --icon-color-focus: #f7eede;
+  --icon-color-active: hsl(37, 61.2%, 92%);
+  --icon-color-focus: hsl(37, 61.2%, 92%);
   --icon-color-hover: #ebd6ad;
   --icon-size: 24px;
   --icon-stroke: 1.75px;
@@ -22866,7 +22869,7 @@ body.is-tablet .workspace-drawer.mod-left .workspace-drawer-inner {
 .workspace-drawer .nav-buttons-container {
   --icon-color: #ebd6ad;
   --icon-color-active: #ebd6ad;
-  --icon-color-focus: #f7eede;
+  --icon-color-focus: hsl(37, 61.2%, 92%);
   --icon-color-hover: #ebd6ad;
   --icon-size: 24px;
   --icon-stroke: 1.75px;
@@ -23220,8 +23223,8 @@ body.is-tablet .workspace-drawer.mod-left .workspace-drawer-inner {
 
 body.is-tablet .sidebar-toggle-button {
   --icon-color: #ebd6ad;
-  --icon-color-active: #f7eede;
-  --icon-color-focus: #f7eede;
+  --icon-color-active: hsl(37, 61.2%, 92%);
+  --icon-color-focus: hsl(37, 61.2%, 92%);
   --icon-color-hover: #ebd6ad;
   --icon-size: 24px;
   --icon-stroke: 1.75px;
@@ -23500,8 +23503,8 @@ body.is-tablet .mobile-navbar {
 
 .mobile-navbar-actions {
   --icon-color: #ebd6ad;
-  --icon-color-active: #f7eede;
-  --icon-color-focus: #f7eede;
+  --icon-color-active: hsl(37, 61.2%, 92%);
+  --icon-color-focus: hsl(37, 61.2%, 92%);
   --icon-color-hover: #ebd6ad;
   --icon-size: 26px;
   --icon-stroke: 1.75px;
@@ -23796,8 +23799,8 @@ body.is-ios .mobile-tab-switcher-inner-scroll {
 
 .mobile-tab-switcher-menubar {
   --icon-color: #ebd6ad;
-  --icon-color-active: #f7eede;
-  --icon-color-focus: #f7eede;
+  --icon-color-active: hsl(37, 61.2%, 92%);
+  --icon-color-focus: hsl(37, 61.2%, 92%);
   --icon-color-hover: #ebd6ad;
   --icon-size: 26px;
   --icon-stroke: 1.75px;

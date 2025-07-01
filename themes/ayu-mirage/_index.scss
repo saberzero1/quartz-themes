@@ -1298,7 +1298,8 @@ body {
         light-dark(#171a23, #171a23),
         light-dark(#171a23, #171a23)
       );
-      border: 1px solid light-dark(#686e80, #686e80);
+      border: 1px solid
+        light-dark(light-dark(#686e80, #686e80), light-dark(#686e80, #686e80));
       border-radius: 5px;
       color: light-dark(#d1cec6, #d1cec6);
       font-family: inherit;

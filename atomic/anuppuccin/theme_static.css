@@ -943,9 +943,15 @@
   --background-secondary-alt: light-dark(#212121, rgb(inherit));
   --callout-title-padding: light-dark(8px, 8px);
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#9873f7, #a68af9);
-  --color-accent-2: light-dark(#a68af9, #c5b6fc);
-  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --color-accent-1: light-dark(
+    hsl(257, 88.88%, 70.95%),
+    hsl(255, 89.76%, 75.9%)
+  );
+  --color-accent-2: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
+  );
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -966,20 +972,20 @@
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
-  --ctp-base: light-dark(#eff1f5, #1e1e2e);
-  --ctp-blue: light-dark(#2a6ef5, #87b0f9);
-  --ctp-crust: light-dark(#dce0e8, #11111b);
-  --ctp-green: light-dark(#40a02b, #a6e3a1);
-  --ctp-mantle: light-dark(#e6e9ef, #181825);
-  --ctp-maroon: light-dark(#e64553, #eba0ac);
-  --ctp-mauve: light-dark(#8839ef, #cba6f7);
-  --ctp-peach: light-dark(#fe640b, #fab387);
-  --ctp-pink: light-dark(#ec83d0, #f5c2e7);
-  --ctp-red: light-dark(#d20f39, #f38ba8);
-  --ctp-sky: light-dark(#04a5e5, #89dceb);
-  --ctp-teal: light-dark(#179299, #94e2d5);
-  --ctp-text: light-dark(#4c4f69, #c6d0f5);
-  --ctp-yellow: light-dark(#e49320, #f9e2af);
+  --ctp-base: light-dark(rgb(239, 241, 245), rgb(30, 30, 46));
+  --ctp-blue: light-dark(rgb(42, 110, 245), rgb(135, 176, 249));
+  --ctp-crust: light-dark(rgb(220, 224, 232), rgb(17, 17, 27));
+  --ctp-green: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
+  --ctp-mantle: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
+  --ctp-maroon: light-dark(rgb(230, 69, 83), rgb(235, 160, 172));
+  --ctp-mauve: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
+  --ctp-peach: light-dark(rgb(254, 100, 11), rgb(250, 179, 135));
+  --ctp-pink: light-dark(rgb(236, 131, 208), rgb(245, 194, 231));
+  --ctp-red: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
+  --ctp-sky: light-dark(rgb(4, 165, 229), rgb(137, 220, 235));
+  --ctp-teal: light-dark(rgb(23, 146, 153), rgb(148, 226, 213));
+  --ctp-text: light-dark(rgb(76, 79, 105), rgb(198, 208, 245));
+  --ctp-yellow: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   --drag-ghost-background: inherit;
   --drag-ghost-text-color: inherit;
   --icon-color-focused: inherit;
@@ -1768,9 +1774,15 @@ body {
   --collapse-icon-color: rgb(inherit);
   --collapse-icon-color-collapsed: rgb(inherit);
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#9873f7, #a68af9);
-  --color-accent-2: light-dark(#a68af9, #c5b6fc);
-  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --color-accent-1: light-dark(
+    hsl(257, 88.88%, 70.95%),
+    hsl(255, 89.76%, 75.9%)
+  );
+  --color-accent-2: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
+  );
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -1794,20 +1806,20 @@ body {
   --colorful-frame-color: rgba(inherit, 1);
   --colorful-icon-color: rgb(inherit);
   --colorful-icon-color-alt: rgb(inherit);
-  --ctp-base: light-dark(#eff1f5, #1e1e2e);
-  --ctp-blue: light-dark(#2a6ef5, #87b0f9);
-  --ctp-crust: light-dark(#dce0e8, #11111b);
-  --ctp-green: light-dark(#40a02b, #a6e3a1);
-  --ctp-mantle: light-dark(#e6e9ef, #181825);
-  --ctp-maroon: light-dark(#e64553, #eba0ac);
-  --ctp-mauve: light-dark(#8839ef, #cba6f7);
-  --ctp-peach: light-dark(#fe640b, #fab387);
-  --ctp-pink: light-dark(#ec83d0, #f5c2e7);
-  --ctp-red: light-dark(#d20f39, #f38ba8);
-  --ctp-sky: light-dark(#04a5e5, #89dceb);
-  --ctp-teal: light-dark(#179299, #94e2d5);
-  --ctp-text: light-dark(#4c4f69, #c6d0f5);
-  --ctp-yellow: light-dark(#e49320, #f9e2af);
+  --ctp-base: light-dark(rgb(239, 241, 245), rgb(30, 30, 46));
+  --ctp-blue: light-dark(rgb(42, 110, 245), rgb(135, 176, 249));
+  --ctp-crust: light-dark(rgb(220, 224, 232), rgb(17, 17, 27));
+  --ctp-green: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
+  --ctp-mantle: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
+  --ctp-maroon: light-dark(rgb(230, 69, 83), rgb(235, 160, 172));
+  --ctp-mauve: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
+  --ctp-peach: light-dark(rgb(254, 100, 11), rgb(250, 179, 135));
+  --ctp-pink: light-dark(rgb(236, 131, 208), rgb(245, 194, 231));
+  --ctp-red: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
+  --ctp-sky: light-dark(rgb(4, 165, 229), rgb(137, 220, 235));
+  --ctp-teal: light-dark(rgb(23, 146, 153), rgb(148, 226, 213));
+  --ctp-text: light-dark(rgb(76, 79, 105), rgb(198, 208, 245));
+  --ctp-yellow: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -2446,8 +2458,8 @@ body {
   --blockquote-background-color: rgba(inherit, 0.5);
   --callout-title-padding: 8px;
   --color-accent: #8a5cf5;
-  --color-accent-1: #9873f7;
-  --color-accent-2: #a68af9;
+  --color-accent-1: hsl(257, 88.88%, 70.95%);
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-00: rgb(inherit);
   --color-base-05: #fcfcfc;
@@ -2570,8 +2582,8 @@ body {
   --blockquote-background-color: rgba(inherit, 0.5);
   --callout-title-padding: 8px;
   --color-accent: #8a5cf5;
-  --color-accent-1: #a68af9;
-  --color-accent-2: #c5b6fc;
+  --color-accent-1: hsl(255, 89.76%, 75.9%);
+  --color-accent-2: hsl(253, 92.4%, 85.14%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-00: rgb(inherit);
   --color-base-05: #212121;
@@ -8420,7 +8432,7 @@ button.mod-destructive {
 .diff-line.mod-left {
   background-color: rgba(
     light-dark(
-      light-dark(210, 15, 57, 243, 139, 168),
+      light-dark(rgb(210, 15, 57), rgb(243, 139, 168)),
       light-dark(210, 15, 57, 243, 139, 168)
     ),
     0.2
@@ -8430,7 +8442,7 @@ button.mod-destructive {
 .diff-line.mod-left .diff-changed {
   background-color: rgba(
     light-dark(
-      light-dark(210, 15, 57, 243, 139, 168),
+      light-dark(rgb(210, 15, 57), rgb(243, 139, 168)),
       light-dark(210, 15, 57, 243, 139, 168)
     ),
     0.4
@@ -8440,7 +8452,7 @@ button.mod-destructive {
 .diff-line.mod-right {
   background-color: rgba(
     light-dark(
-      light-dark(64, 160, 43, 166, 227, 161),
+      light-dark(rgb(64, 160, 43), rgb(166, 227, 161)),
       light-dark(64, 160, 43, 166, 227, 161)
     ),
     0.2
@@ -8450,7 +8462,7 @@ button.mod-destructive {
 .diff-line.mod-right .diff-changed {
   background-color: rgba(
     light-dark(
-      light-dark(64, 160, 43, 166, 227, 161),
+      light-dark(rgb(64, 160, 43), rgb(166, 227, 161)),
       light-dark(64, 160, 43, 166, 227, 161)
     ),
     0.4
@@ -8532,7 +8544,7 @@ button.mod-destructive {
 .document-search-input.mod-no-match {
   background-color: rgba(
     light-dark(
-      light-dark(210, 15, 57, 243, 139, 168),
+      light-dark(rgb(210, 15, 57), rgb(243, 139, 168)),
       light-dark(210, 15, 57, 243, 139, 168)
     ),
     0.2
@@ -8542,7 +8554,7 @@ button.mod-destructive {
 .document-replace-input.mod-no-match {
   background-color: rgba(
     light-dark(
-      light-dark(210, 15, 57, 243, 139, 168),
+      light-dark(rgb(210, 15, 57), rgb(243, 139, 168)),
       light-dark(210, 15, 57, 243, 139, 168)
     ),
     0.2
@@ -8553,7 +8565,7 @@ button.mod-destructive {
   .document-search-input.mod-no-match:hover {
     background-color: rgba(
       light-dark(
-        light-dark(210, 15, 57, 243, 139, 168),
+        light-dark(rgb(210, 15, 57), rgb(243, 139, 168)),
         light-dark(210, 15, 57, 243, 139, 168)
       ),
       0.2
@@ -8562,7 +8574,7 @@ button.mod-destructive {
   .document-replace-input.mod-no-match:hover {
     background-color: rgba(
       light-dark(
-        light-dark(210, 15, 57, 243, 139, 168),
+        light-dark(rgb(210, 15, 57), rgb(243, 139, 168)),
         light-dark(210, 15, 57, 243, 139, 168)
       ),
       0.2
@@ -8598,7 +8610,7 @@ button.mod-destructive {
 }
 
 .markdown-rendered .search-highlight > div {
-  background-color: rgba(light-dark(76, 79, 105, 198, 208, 245), 0.4);
+  background-color: rgba(light-dark(rgb(76, 79, 105), rgb(198, 208, 245)), 0.4);
   border-radius: 2px;
   box-shadow: none;
   mix-blend-mode: none;
@@ -8608,15 +8620,23 @@ button.mod-destructive {
 }
 
 .markdown-rendered .search-highlight > div.is-active {
-  background-color: rgba(light-dark(228, 147, 32, 249, 226, 175), 0.2);
-  box-shadow: 0 0 0px 2px rgba(light-dark(228, 147, 32, 249, 226, 175), 0.5);
+  background-color: rgba(
+    light-dark(rgb(228, 147, 32), rgb(249, 226, 175)),
+    0.2
+  );
+  box-shadow: 0 0 0px 2px
+    rgba(light-dark(rgb(228, 147, 32), rgb(249, 226, 175)), 0.5);
   opacity: 1;
 }
 
 .cm-s-obsidian span.obsidian-search-match-highlight {
-  background-color: rgba(light-dark(228, 147, 32, 249, 226, 175), 0.2);
+  background-color: rgba(
+    light-dark(rgb(228, 147, 32), rgb(249, 226, 175)),
+    0.2
+  );
   border-radius: 2px;
-  box-shadow: 0 0 0px 2px rgba(light-dark(228, 147, 32, 249, 226, 175), 0.5);
+  box-shadow: 0 0 0px 2px
+    rgba(light-dark(rgb(228, 147, 32), rgb(249, 226, 175)), 0.5);
   mix-blend-mode: none;
 }
 
@@ -11295,7 +11315,10 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 }
 
 .suggestion-item.is-selected {
-  background-color: rgba(light-dark(76, 79, 105, 198, 208, 245), 0.075);
+  background-color: rgba(
+    light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
+    0.075
+  );
 }
 
 .suggestion-item.mod-downranked {
@@ -18720,7 +18743,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 .file-tree .mod-new.is-selected {
   background-color: rgba(
     light-dark(
-      light-dark(64, 160, 43, 166, 227, 161),
+      light-dark(rgb(64, 160, 43), rgb(166, 227, 161)),
       light-dark(64, 160, 43, 166, 227, 161)
     ),
     0.2
@@ -18737,7 +18760,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 .file-tree .mod-deleted.is-selected {
   background-color: rgba(
     light-dark(
-      light-dark(210, 15, 57, 243, 139, 168),
+      light-dark(rgb(210, 15, 57), rgb(243, 139, 168)),
       light-dark(210, 15, 57, 243, 139, 168)
     ),
     0.2
@@ -18747,7 +18770,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 .file-tree .mod-to-delete.is-selected {
   background-color: rgba(
     light-dark(
-      light-dark(210, 15, 57, 243, 139, 168),
+      light-dark(rgb(210, 15, 57), rgb(243, 139, 168)),
       light-dark(210, 15, 57, 243, 139, 168)
     ),
     0.2
@@ -19502,7 +19525,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 .publish-upload-item:before {
   background-color: rgba(
     light-dark(
-      light-dark(64, 160, 43, 166, 227, 161),
+      light-dark(rgb(64, 160, 43), rgb(166, 227, 161)),
       light-dark(64, 160, 43, 166, 227, 161)
     ),
     0.2
@@ -19528,7 +19551,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 .publish-upload-item.mod-failed:before {
   background-color: rgba(
     light-dark(
-      light-dark(210, 15, 57, 243, 139, 168),
+      light-dark(rgb(210, 15, 57), rgb(243, 139, 168)),
       light-dark(210, 15, 57, 243, 139, 168)
     ),
     0.2
@@ -27538,7 +27561,7 @@ body:not(.anp-alternate-tab-toggle):not(.anp-disable-newtab-align)
   --icon-color: rgb(inherit);
   --icon-color-hover: rgb(inherit);
   --tab-text-color: rgb(inherit);
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.6);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.6);
 }
 
 .anp-depth-tab-toggle
@@ -27547,7 +27570,7 @@ body:not(.anp-alternate-tab-toggle):not(.anp-disable-newtab-align)
   .workspace-tab-header:not(.is-active)::before {
   box-shadow:
     inset 0 0 0 0.5pt transparent,
-    0 0 0 24px rgba(light-dark(230, 233, 239, 24, 24, 37), 0.6);
+    0 0 0 24px rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.6);
   clip-path: inset(50% 0px 0 50%);
 }
 
@@ -27557,7 +27580,7 @@ body:not(.anp-alternate-tab-toggle):not(.anp-disable-newtab-align)
   .workspace-tab-header:not(.is-active)::after {
   box-shadow:
     inset 0 0 0 0.5pt transparent,
-    0 0 0 24px rgba(light-dark(230, 233, 239, 24, 24, 37), 0.6);
+    0 0 0 24px rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.6);
   clip-path: inset(50% 50% 0 0px);
 }
 
@@ -28286,7 +28309,7 @@ body.anp-border-layout.is-popout-window .workspace {
   --callout-border-opacity: 0.4;
   --callout-border-width: 1px;
   --callout-padding: 0;
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.4);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.4);
 }
 
 .callout[data-callout-metadata*="anp-sleek"]:not(
@@ -28297,7 +28320,7 @@ body.anp-border-layout.is-popout-window .workspace {
   --callout-border-opacity: 0.4;
   --callout-border-width: 1px;
   --callout-padding: 0;
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.4);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.4);
 }
 
 .anp-callout-sleek
@@ -28638,7 +28661,7 @@ body.anp-border-layout.is-popout-window .workspace {
 
 .callout[data-callout="formula"] .callout-title {
   background-color: rgba(inherit, 0.05);
-  color: light-dark(#4c4f69, #c6d0f5);
+  color: light-dark(rgb(76, 79, 105), rgb(198, 208, 245));
 }
 
 .callout[data-callout="formula"] .callout-title .callout-icon {
@@ -30019,54 +30042,54 @@ table.dataview.table-view-table > tbody > tr:hover {
 .anp-table-toggle.anp-table-th-highlight
   .markdown-preview-view:not(.cards):not(.table-disable)
   th {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .anp-table-toggle.anp-table-th-highlight
   .markdown-preview-view.cards:not(.table-disable)
   table:not(.dataview)
   th {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .anp-table-toggle.anp-table-th-highlight
   .is-live-preview:not(.cards):not(.table-disable)
   th {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .anp-table-toggle.anp-table-th-highlight
   .is-live-preview.cards:not(.table-disable)
   table:not(.dataview)
   th {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .th-highlight.markdown-preview-view:not(.cards):not(.table-disable) th {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .th-highlight.markdown-preview-view.cards:not(.table-disable)
   table:not(.dataview)
   th {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .th-highlight.is-live-preview:not(.cards):not(.table-disable) th {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .th-highlight.is-live-preview.cards:not(.table-disable)
   table:not(.dataview)
   th {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .anp-table-toggle.anp-table-row-alt
   .markdown-preview-view:not(.cards):not(.table-disable)
   tr:nth-child(2n)
   td {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .anp-table-toggle.anp-table-row-alt
@@ -30074,14 +30097,14 @@ table.dataview.table-view-table > tbody > tr:hover {
   table:not(.dataview)
   tr:nth-child(2n)
   td {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .anp-table-toggle.anp-table-row-alt
   .is-live-preview:not(.cards):not(.table-disable)
   tr:nth-child(2n)
   td {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .anp-table-toggle.anp-table-row-alt
@@ -30089,38 +30112,38 @@ table.dataview.table-view-table > tbody > tr:hover {
   table:not(.dataview)
   tr:nth-child(2n)
   td {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .row-alt.markdown-preview-view:not(.cards):not(.table-disable)
   tr:nth-child(2n)
   td {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .row-alt.markdown-preview-view.cards:not(.table-disable)
   table:not(.dataview)
   tr:nth-child(2n)
   td {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .row-alt.is-live-preview:not(.cards):not(.table-disable) tr:nth-child(2n) td {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .row-alt.is-live-preview.cards:not(.table-disable)
   table:not(.dataview)
   tr:nth-child(2n)
   td {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .anp-table-toggle.anp-table-col-alt
   .markdown-preview-view:not(.cards):not(.table-disable)
   tr
   td:nth-child(2n) {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .anp-table-toggle.anp-table-col-alt
@@ -30128,14 +30151,14 @@ table.dataview.table-view-table > tbody > tr:hover {
   table:not(.dataview)
   tr
   td:nth-child(2n) {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .anp-table-toggle.anp-table-col-alt
   .is-live-preview:not(.cards):not(.table-disable)
   tr
   td:nth-child(2n) {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .anp-table-toggle.anp-table-col-alt
@@ -30143,89 +30166,89 @@ table.dataview.table-view-table > tbody > tr:hover {
   table:not(.dataview)
   tr
   td:nth-child(2n) {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .col-alt.markdown-preview-view:not(.cards):not(.table-disable)
   tr
   td:nth-child(2n) {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .col-alt.markdown-preview-view.cards:not(.table-disable)
   table:not(.dataview)
   tr
   td:nth-child(2n) {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .col-alt.is-live-preview:not(.cards):not(.table-disable) tr td:nth-child(2n) {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .col-alt.is-live-preview.cards:not(.table-disable)
   table:not(.dataview)
   tr
   td:nth-child(2n) {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .anp-table-toggle.anp-table-full
   .markdown-preview-view:not(.cards):not(.table-disable)
   td {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .anp-table-toggle.anp-table-full
   .markdown-preview-view.cards:not(.table-disable)
   table:not(.dataview)
   td {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .anp-table-toggle.anp-table-full
   .is-live-preview:not(.cards):not(.table-disable)
   td {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .anp-table-toggle.anp-table-full
   .is-live-preview.cards:not(.table-disable)
   table:not(.dataview)
   td {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .table-full.markdown-preview-view:not(.cards):not(.table-disable) td {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .table-full.markdown-preview-view.cards:not(.table-disable)
   table:not(.dataview)
   td {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .table-full.is-live-preview:not(.cards):not(.table-disable) td {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .table-full.is-live-preview.cards:not(.table-disable) table:not(.dataview) td {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .anp-table-toggle.anp-table-checkered
   .markdown-preview-view:not(.cards):not(.table-disable)
   tr
   td:nth-child(2n) {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .anp-table-toggle.anp-table-checkered
   .markdown-preview-view:not(.cards):not(.table-disable)
   tr:nth-child(2n)
   td {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .anp-table-toggle.anp-table-checkered
@@ -30233,7 +30256,7 @@ table.dataview.table-view-table > tbody > tr:hover {
   table:not(.dataview)
   tr
   td:nth-child(2n) {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .anp-table-toggle.anp-table-checkered
@@ -30241,21 +30264,21 @@ table.dataview.table-view-table > tbody > tr:hover {
   table:not(.dataview)
   tr:nth-child(2n)
   td {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .anp-table-toggle.anp-table-checkered
   .is-live-preview:not(.cards):not(.table-disable)
   tr
   td:nth-child(2n) {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .anp-table-toggle.anp-table-checkered
   .is-live-preview:not(.cards):not(.table-disable)
   tr:nth-child(2n)
   td {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .anp-table-toggle.anp-table-checkered
@@ -30263,7 +30286,7 @@ table.dataview.table-view-table > tbody > tr:hover {
   table:not(.dataview)
   tr
   td:nth-child(2n) {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .anp-table-toggle.anp-table-checkered
@@ -30271,14 +30294,14 @@ table.dataview.table-view-table > tbody > tr:hover {
   table:not(.dataview)
   tr:nth-child(2n)
   td {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .anp-table-toggle.anp-table-checkered
   .markdown-preview-view:not(.cards):not(.table-disable)
   tr:nth-child(2n)
   td:nth-child(2n) {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.5);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.5);
 }
 
 .anp-table-toggle.anp-table-checkered
@@ -30286,14 +30309,14 @@ table.dataview.table-view-table > tbody > tr:hover {
   table:not(.dataview)
   tr:nth-child(2n)
   td:nth-child(2n) {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.5);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.5);
 }
 
 .anp-table-toggle.anp-table-checkered
   .is-live-preview:not(.cards):not(.table-disable)
   tr:nth-child(2n)
   td:nth-child(2n) {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.5);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.5);
 }
 
 .anp-table-toggle.anp-table-checkered
@@ -30301,81 +30324,81 @@ table.dataview.table-view-table > tbody > tr:hover {
   table:not(.dataview)
   tr:nth-child(2n)
   td:nth-child(2n) {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.5);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.5);
 }
 
 .checkered.markdown-preview-view:not(.cards):not(.table-disable)
   tr
   td:nth-child(2n) {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .checkered.markdown-preview-view:not(.cards):not(.table-disable)
   tr:nth-child(2n)
   td {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .checkered.markdown-preview-view.cards:not(.table-disable)
   table:not(.dataview)
   tr
   td:nth-child(2n) {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .checkered.markdown-preview-view.cards:not(.table-disable)
   table:not(.dataview)
   tr:nth-child(2n)
   td {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .checkered.is-live-preview:not(.cards):not(.table-disable) tr td:nth-child(2n) {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .checkered.is-live-preview:not(.cards):not(.table-disable) tr:nth-child(2n) td {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .checkered.is-live-preview.cards:not(.table-disable)
   table:not(.dataview)
   tr
   td:nth-child(2n) {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .checkered.is-live-preview.cards:not(.table-disable)
   table:not(.dataview)
   tr:nth-child(2n)
   td {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.5);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.5);
 }
 
 .checkered.markdown-preview-view:not(.cards):not(.table-disable)
   tr:nth-child(2n)
   td:nth-child(2n) {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.5);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.5);
 }
 
 .checkered.markdown-preview-view.cards:not(.table-disable)
   table:not(.dataview)
   tr:nth-child(2n)
   td:nth-child(2n) {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.5);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.5);
 }
 
 .checkered.is-live-preview:not(.cards):not(.table-disable)
   tr:nth-child(2n)
   td:nth-child(2n) {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.5);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.5);
 }
 
 .checkered.is-live-preview.cards:not(.table-disable)
   table:not(.dataview)
   tr:nth-child(2n)
   td:nth-child(2n) {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.5);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.5);
 }
 
 .anp-table-auto.markdown-rendered:not(.cards):not(.table-disable) table {
@@ -30771,7 +30794,7 @@ body.rainbow-tags {
   )[data-callout="capacities-prop"]
   > .callout-title
   > .callout-title-inner {
-  color: rgba(light-dark(76, 79, 105, 198, 208, 245), 0.7);
+  color: rgba(light-dark(rgb(76, 79, 105), rgb(198, 208, 245)), 0.7);
   font-size: 80%;
 }
 
@@ -30781,7 +30804,7 @@ body.rainbow-tags {
   )[data-callout="capacities-prop"]
   > .callout-title
   > .callout-title-inner {
-  color: rgba(light-dark(76, 79, 105, 198, 208, 245), 0.7);
+  color: rgba(light-dark(rgb(76, 79, 105), rgb(198, 208, 245)), 0.7);
   font-size: 80%;
 }
 
@@ -31285,14 +31308,14 @@ body.anp-colorful-frame-icon-toggle-dark.theme-dark {
 .anp-colorful-frame.anp-fixed-status-bar.anp-card-layout
   .status-bar
   .status-bar-item.mod-clickable:hover {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
   color: rgb(inherit);
 }
 
 .anp-colorful-frame.anp-fixed-status-bar.anp-border-layout
   .status-bar
   .status-bar-item.mod-clickable:hover {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
   color: rgb(inherit);
 }
 
@@ -31301,7 +31324,7 @@ body.anp-colorful-frame-icon-toggle-dark.theme-dark {
   .workspace-tabs
   .workspace-tab-header:not(.is-active):hover
   .workspace-tab-header-inner {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
 }
 
 .anp-colorful-frame.anp-card-layout
@@ -31309,7 +31332,7 @@ body.anp-colorful-frame-icon-toggle-dark.theme-dark {
   .workspace-tabs
   .workspace-tab-header:not(.is-active):hover
   .workspace-tab-header-inner {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
 }
 
 .anp-colorful-frame:not(.anp-card-layout, .anp-border-layout)
@@ -31317,7 +31340,7 @@ body.anp-colorful-frame-icon-toggle-dark.theme-dark {
   .workspace-tabs.mod-top
   .workspace-tab-header:not(.is-active):hover
   .workspace-tab-header-inner {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
 }
 
 .anp-colorful-frame:not(.anp-card-layout, .anp-border-layout)
@@ -31325,7 +31348,7 @@ body.anp-colorful-frame-icon-toggle-dark.theme-dark {
   .workspace-tabs.mod-top
   .workspace-tab-header:not(.is-active):hover
   .workspace-tab-header-inner {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
 }
 
 .anp-colorful-frame.is-frameless.is-frameless:not(.is-hidden-frameless)
@@ -31845,28 +31868,28 @@ body.anp-colorful-frame-icon-toggle-dark.theme-dark {
   .mod-left-split
   .mod-top
   .workspace-tab-header.is-active {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
 }
 
 .anp-colorful-frame:not(.anp-card-layout, .anp-border-layout)
   .mod-right-split
   .mod-top
   .workspace-tab-header.is-active {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
 }
 
 .anp-colorful-frame:not(.anp-card-layout, .anp-border-layout)
   .mod-left-split
   .mod-top
   .workspace-tab-header.is-active:hover {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.3);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.3);
 }
 
 .anp-colorful-frame:not(.anp-card-layout, .anp-border-layout)
   .mod-right-split
   .mod-top
   .workspace-tab-header.is-active:hover {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.3);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.3);
 }
 
 .anp-colorful-frame:not(
@@ -31876,7 +31899,7 @@ body.anp-colorful-frame-icon-toggle-dark.theme-dark {
   .mod-left-split
   .mod-top
   .workspace-tab-header.is-active {
-  background-color: rgba(light-dark(76, 79, 105, 198, 208, 245), 0.3);
+  background-color: rgba(light-dark(rgb(76, 79, 105), rgb(198, 208, 245)), 0.3);
 }
 
 .anp-colorful-frame:not(
@@ -31886,7 +31909,7 @@ body.anp-colorful-frame-icon-toggle-dark.theme-dark {
   .mod-right-split
   .mod-top
   .workspace-tab-header.is-active {
-  background-color: rgba(light-dark(76, 79, 105, 198, 208, 245), 0.3);
+  background-color: rgba(light-dark(rgb(76, 79, 105), rgb(198, 208, 245)), 0.3);
 }
 
 .anp-colorful-frame:not(
@@ -31896,7 +31919,7 @@ body.anp-colorful-frame-icon-toggle-dark.theme-dark {
   .mod-left-split
   .mod-top
   .workspace-tab-header.is-active {
-  background-color: rgba(light-dark(76, 79, 105, 198, 208, 245), 0.3);
+  background-color: rgba(light-dark(rgb(76, 79, 105), rgb(198, 208, 245)), 0.3);
 }
 
 .anp-colorful-frame:not(
@@ -31906,7 +31929,7 @@ body.anp-colorful-frame-icon-toggle-dark.theme-dark {
   .mod-right-split
   .mod-top
   .workspace-tab-header.is-active {
-  background-color: rgba(light-dark(76, 79, 105, 198, 208, 245), 0.3);
+  background-color: rgba(light-dark(rgb(76, 79, 105), rgb(198, 208, 245)), 0.3);
 }
 
 .anp-colorful-frame:not(
@@ -32353,49 +32376,49 @@ body.anp-colorful-frame.anp-card-layout .workspace {
 .anp-colorful-frame.anp-card-layout
   .mod-right-split
   .workspace-tab-header.is-active {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
 }
 
 .anp-colorful-frame.anp-card-layout
   .mod-left-split
   .workspace-tab-header.is-active {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
 }
 
 .anp-colorful-frame.anp-card-layout
   .mod-right-split
   .workspace-tab-header.is-active:hover {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.3);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.3);
 }
 
 .anp-colorful-frame.anp-card-layout
   .mod-left-split
   .workspace-tab-header.is-active:hover {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.3);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.3);
 }
 
 .anp-colorful-frame.anp-card-layout.anp-colorful-frame-icon-toggle-light.theme-light
   .mod-right-split
   .workspace-tab-header.is-active {
-  background-color: rgba(light-dark(76, 79, 105, 198, 208, 245), 0.3);
+  background-color: rgba(light-dark(rgb(76, 79, 105), rgb(198, 208, 245)), 0.3);
 }
 
 .anp-colorful-frame.anp-card-layout.anp-colorful-frame-icon-toggle-light.theme-light
   .mod-left-split
   .workspace-tab-header.is-active {
-  background-color: rgba(light-dark(76, 79, 105, 198, 208, 245), 0.3);
+  background-color: rgba(light-dark(rgb(76, 79, 105), rgb(198, 208, 245)), 0.3);
 }
 
 .anp-colorful-frame.anp-card-layout.anp-colorful-frame-icon-toggle-dark.theme-dark
   .mod-right-split
   .workspace-tab-header.is-active {
-  background-color: rgba(light-dark(76, 79, 105, 198, 208, 245), 0.3);
+  background-color: rgba(light-dark(rgb(76, 79, 105), rgb(198, 208, 245)), 0.3);
 }
 
 .anp-colorful-frame.anp-card-layout.anp-colorful-frame-icon-toggle-dark.theme-dark
   .mod-left-split
   .workspace-tab-header.is-active {
-  background-color: rgba(light-dark(76, 79, 105, 198, 208, 245), 0.3);
+  background-color: rgba(light-dark(rgb(76, 79, 105), rgb(198, 208, 245)), 0.3);
 }
 
 .mod-top .workspace-tab-header-inner::after {
@@ -32470,13 +32493,13 @@ body.anp-colorful-frame.anp-border-layout .workspace-ribbon {
 body.anp-colorful-frame.anp-border-layout
   .workspace-ribbon
   .clickable-icon:hover {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
 }
 
 body.anp-colorful-frame.anp-border-layout
   .workspace-ribbon
   .clickable-icon:active {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.3);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.3);
 }
 
 body.anp-colorful-frame.anp-border-layout
@@ -32493,14 +32516,14 @@ body.anp-colorful-frame.anp-border-layout
   .workspace-tabs.mod-top
   .workspace-tab-header-container
   .clickable-icon:hover {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
 }
 
 body.anp-colorful-frame.anp-border-layout
   .workspace-tabs.mod-top
   .workspace-tab-header-container
   .clickable-icon:active {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.3);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.3);
 }
 
 body.anp-colorful-frame.anp-border-layout
@@ -32529,7 +32552,7 @@ body.anp-colorful-frame.anp-border-layout
   > .workspace-tab-header-container
   .workspace-tab-header:not(.is-active):hover
   .workspace-tab-header-inner {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
 }
 
 body.anp-colorful-frame.anp-border-layout
@@ -32538,7 +32561,7 @@ body.anp-colorful-frame.anp-border-layout
   > .workspace-tab-header-container
   .workspace-tab-header:not(.is-active):hover
   .workspace-tab-header-inner {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
 }
 
 body.anp-colorful-frame.anp-border-layout
@@ -32547,7 +32570,7 @@ body.anp-colorful-frame.anp-border-layout
   > .workspace-tab-header-container
   .workspace-tab-header.is-active
   .workspace-tab-header-inner {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.3);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.3);
 }
 
 body.anp-colorful-frame.anp-border-layout
@@ -32556,7 +32579,7 @@ body.anp-colorful-frame.anp-border-layout
   > .workspace-tab-header-container
   .workspace-tab-header.is-active
   .workspace-tab-header-inner {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.3);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.3);
 }
 
 body.anp-colorful-frame.anp-border-layout
@@ -32564,7 +32587,7 @@ body.anp-colorful-frame.anp-border-layout
   .workspace-tabs.mod-top
   > .workspace-tab-header-container
   .clickable-icon:hover {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
 }
 
 body.anp-colorful-frame.anp-border-layout
@@ -32572,7 +32595,7 @@ body.anp-colorful-frame.anp-border-layout
   .workspace-tabs.mod-top
   > .workspace-tab-header-container
   .clickable-icon:hover {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
 }
 
 body.anp-colorful-frame.anp-border-layout
@@ -32580,7 +32603,7 @@ body.anp-colorful-frame.anp-border-layout
   .workspace-tabs.mod-top
   > .workspace-tab-header-container
   .clickable-icon:active {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.3);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.3);
 }
 
 body.anp-colorful-frame.anp-border-layout
@@ -32588,7 +32611,7 @@ body.anp-colorful-frame.anp-border-layout
   .workspace-tabs.mod-top
   > .workspace-tab-header-container
   .clickable-icon:active {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.3);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.3);
 }
 
 body.anp-colorful-frame.anp-border-layout
@@ -34219,7 +34242,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   --bold-color: rgb(inherit);
   --italic-color: rgb(inherit);
   background-color: rgba(
-    light-dark(210, 15, 57, 243, 139, 168),
+    light-dark(rgb(210, 15, 57), rgb(243, 139, 168)),
     light-dark(0.5, 0.9)
   );
   border-radius: 3px 10px 10px 10px;
@@ -34236,7 +34259,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   --bold-color: rgb(inherit);
   --italic-color: rgb(inherit);
   background-color: rgba(
-    light-dark(254, 100, 11, 250, 179, 135),
+    light-dark(rgb(254, 100, 11), rgb(250, 179, 135)),
     light-dark(0.5, 0.9)
   );
   border-radius: 3px 10px 10px 10px;
@@ -34253,7 +34276,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   --bold-color: rgb(inherit);
   --italic-color: rgb(inherit);
   background-color: rgba(
-    light-dark(228, 147, 32, 249, 226, 175),
+    light-dark(rgb(228, 147, 32), rgb(249, 226, 175)),
     light-dark(0.5, 0.9)
   );
   border-radius: 3px 10px 10px 10px;
@@ -34270,7 +34293,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   --bold-color: rgb(inherit);
   --italic-color: rgb(inherit);
   background-color: rgba(
-    light-dark(64, 160, 43, 166, 227, 161),
+    light-dark(rgb(64, 160, 43), rgb(166, 227, 161)),
     light-dark(0.5, 0.9)
   );
   border-radius: 3px 10px 10px 10px;
@@ -34287,7 +34310,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   --bold-color: rgb(inherit);
   --italic-color: rgb(inherit);
   background-color: rgba(
-    light-dark(23, 146, 153, 148, 226, 213),
+    light-dark(rgb(23, 146, 153), rgb(148, 226, 213)),
     light-dark(0.5, 0.9)
   );
   border-radius: 3px 10px 10px 10px;
@@ -34304,7 +34327,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   --bold-color: rgb(inherit);
   --italic-color: rgb(inherit);
   background-color: rgba(
-    light-dark(4, 165, 229, 137, 220, 235),
+    light-dark(rgb(4, 165, 229), rgb(137, 220, 235)),
     light-dark(0.5, 0.9)
   );
   border-radius: 3px 10px 10px 10px;
@@ -34321,7 +34344,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   --bold-color: rgb(inherit);
   --italic-color: rgb(inherit);
   background-color: rgba(
-    light-dark(42, 110, 245, 135, 176, 249),
+    light-dark(rgb(42, 110, 245), rgb(135, 176, 249)),
     light-dark(0.5, 0.9)
   );
   border-radius: 3px 10px 10px 10px;
@@ -34338,7 +34361,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   --bold-color: rgb(inherit);
   --italic-color: rgb(inherit);
   background-color: rgba(
-    light-dark(136, 57, 239, 203, 166, 247),
+    light-dark(rgb(136, 57, 239), rgb(203, 166, 247)),
     light-dark(0.5, 0.9)
   );
   border-radius: 3px 10px 10px 10px;
@@ -34356,8 +34379,14 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   --italic-color: rgb(inherit);
   background: linear-gradient(
     to right,
-    rgba(light-dark(210, 15, 57, 243, 139, 168), light-dark(0.5, 0.9)),
-    rgba(light-dark(228, 147, 32, 249, 226, 175), light-dark(0.5, 0.9))
+    rgba(
+      light-dark(rgb(210, 15, 57), rgb(243, 139, 168)),
+      light-dark(0.5, 0.9)
+    ),
+    rgba(
+      light-dark(rgb(228, 147, 32), rgb(249, 226, 175)),
+      light-dark(0.5, 0.9)
+    )
   );
   border-radius: 3px 10px 10px 10px;
   color: light-dark(
@@ -34375,7 +34404,10 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   background: linear-gradient(
     to left,
     rgba(inherit, light-dark(0.5, 0.9)),
-    rgba(light-dark(136, 57, 239, 203, 166, 247), light-dark(0.5, 0.9))
+    rgba(
+      light-dark(rgb(136, 57, 239), rgb(203, 166, 247)),
+      light-dark(0.5, 0.9)
+    )
   );
   border-radius: 3px 10px 10px 10px;
   color: light-dark(
@@ -34478,43 +34510,43 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 }
 
 .anp-speech-bubble [data-task="0"]::selection {
-  background-color: rgba(light-dark(76, 79, 105, 198, 208, 245), 0.2);
+  background-color: rgba(light-dark(rgb(76, 79, 105), rgb(198, 208, 245)), 0.2);
 }
 
 .anp-speech-bubble [data-task="1"]::selection {
-  background-color: rgba(light-dark(76, 79, 105, 198, 208, 245), 0.2);
+  background-color: rgba(light-dark(rgb(76, 79, 105), rgb(198, 208, 245)), 0.2);
 }
 
 .anp-speech-bubble [data-task="2"]::selection {
-  background-color: rgba(light-dark(76, 79, 105, 198, 208, 245), 0.2);
+  background-color: rgba(light-dark(rgb(76, 79, 105), rgb(198, 208, 245)), 0.2);
 }
 
 .anp-speech-bubble [data-task="3"]::selection {
-  background-color: rgba(light-dark(76, 79, 105, 198, 208, 245), 0.2);
+  background-color: rgba(light-dark(rgb(76, 79, 105), rgb(198, 208, 245)), 0.2);
 }
 
 .anp-speech-bubble [data-task="4"]::selection {
-  background-color: rgba(light-dark(76, 79, 105, 198, 208, 245), 0.2);
+  background-color: rgba(light-dark(rgb(76, 79, 105), rgb(198, 208, 245)), 0.2);
 }
 
 .anp-speech-bubble [data-task="5"]::selection {
-  background-color: rgba(light-dark(76, 79, 105, 198, 208, 245), 0.2);
+  background-color: rgba(light-dark(rgb(76, 79, 105), rgb(198, 208, 245)), 0.2);
 }
 
 .anp-speech-bubble [data-task="6"]::selection {
-  background-color: rgba(light-dark(76, 79, 105, 198, 208, 245), 0.2);
+  background-color: rgba(light-dark(rgb(76, 79, 105), rgb(198, 208, 245)), 0.2);
 }
 
 .anp-speech-bubble [data-task="7"]::selection {
-  background-color: rgba(light-dark(76, 79, 105, 198, 208, 245), 0.2);
+  background-color: rgba(light-dark(rgb(76, 79, 105), rgb(198, 208, 245)), 0.2);
 }
 
 .anp-speech-bubble [data-task="8"]::selection {
-  background-color: rgba(light-dark(76, 79, 105, 198, 208, 245), 0.2);
+  background-color: rgba(light-dark(rgb(76, 79, 105), rgb(198, 208, 245)), 0.2);
 }
 
 .anp-speech-bubble [data-task="9"]::selection {
-  background-color: rgba(light-dark(76, 79, 105, 198, 208, 245), 0.2);
+  background-color: rgba(light-dark(rgb(76, 79, 105), rgb(198, 208, 245)), 0.2);
 }
 
 .theme-dark.anp-speech-bubble [data-task="0"] {
@@ -34598,53 +34630,53 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 }
 
 .theme-dark.anp-speech-bubble [data-task="0"]::selection {
-  background: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
+  background: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
 }
 
 .theme-dark.anp-speech-bubble [data-task="1"]::selection {
-  background: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
+  background: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
 }
 
 .theme-dark.anp-speech-bubble [data-task="2"]::selection {
-  background: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
+  background: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
 }
 
 .theme-dark.anp-speech-bubble [data-task="3"]::selection {
-  background: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
+  background: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
 }
 
 .theme-dark.anp-speech-bubble [data-task="4"]::selection {
-  background: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
+  background: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
 }
 
 .theme-dark.anp-speech-bubble [data-task="5"]::selection {
-  background: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
+  background: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
 }
 
 .theme-dark.anp-speech-bubble [data-task="6"]::selection {
-  background: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
+  background: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
 }
 
 .theme-dark.anp-speech-bubble [data-task="7"]::selection {
-  background: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
+  background: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
 }
 
 .theme-dark.anp-speech-bubble [data-task="8"]::selection {
-  background: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
+  background: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
 }
 
 .theme-dark.anp-speech-bubble [data-task="9"]::selection {
-  background: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
+  background: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
 }
 
 .anp-speech-bubble .is-live-preview [data-task="0"].cm-active {
@@ -35197,7 +35229,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   .nav-files-container
   > .nav-folder-children
   > .nav-file {
-  background-color: rgba(light-dark(76, 79, 105, 198, 208, 245), 1);
+  background-color: rgba(light-dark(rgb(76, 79, 105), rgb(198, 208, 245)), 1);
 }
 
 .anp-full-rainbow-color-toggle.anp-rainbow-file-toggle.theme-light
@@ -35220,7 +35252,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   > div
   > .nav-folder
   .nav-folder-title:hover {
-  background-color: rgba(light-dark(239, 241, 245, 30, 30, 46), 0.1);
+  background-color: rgba(light-dark(rgb(239, 241, 245), rgb(30, 30, 46)), 0.1);
 }
 
 .anp-full-rainbow-color-toggle:not(.is-grabbing)
@@ -35228,7 +35260,7 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   > div
   .nav-file
   .nav-file-title:hover {
-  background-color: rgba(light-dark(239, 241, 245, 30, 30, 46), 0.1);
+  background-color: rgba(light-dark(rgb(239, 241, 245), rgb(30, 30, 46)), 0.1);
 }
 
 .anp-full-rainbow-color-toggle:not(.is-grabbing)
@@ -35236,8 +35268,8 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   > div
   > .nav-folder
   .nav-file-title.is-active {
-  background-color: rgba(light-dark(239, 241, 245, 30, 30, 46), 0.2);
-  border-color: rgba(light-dark(239, 241, 245, 30, 30, 46), 0.2);
+  background-color: rgba(light-dark(rgb(239, 241, 245), rgb(30, 30, 46)), 0.2);
+  border-color: rgba(light-dark(rgb(239, 241, 245), rgb(30, 30, 46)), 0.2);
 }
 
 .anp-full-rainbow-color-toggle .nav-file {
@@ -35245,13 +35277,13 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 }
 
 .anp-full-rainbow-color-toggle .nav-file-title-content.is-being-renamed {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
   border-color: rgb(inherit);
   cursor: text;
 }
 
 .anp-full-rainbow-color-toggle .nav-folder-title-content.is-being-renamed {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
   border-color: rgb(inherit);
   cursor: text;
 }
@@ -35285,14 +35317,14 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   > div
   > .nav-folder
   .nav-folder-children {
-  border-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.4);
+  border-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.4);
 }
 
 .anp-full-rainbow-color-toggle
   .nav-files-container
   > div
   > .nav-file.has-focus {
-  background-color: rgba(light-dark(76, 79, 105, 198, 208, 245), 1);
+  background-color: rgba(light-dark(rgb(76, 79, 105), rgb(198, 208, 245)), 1);
   border-color: rgb(inherit);
   border-left: none;
 }
@@ -35453,7 +35485,8 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 
 .style-settings-heading:not([data-level="0"]) {
   border-bottom: none;
-  border-top: 1px solid rgba(light-dark(76, 79, 105, 198, 208, 245), 0.2);
+  border-top: 1px solid
+    rgba(light-dark(rgb(76, 79, 105), rgb(198, 208, 245)), 0.2);
 }
 
 .style-settings-heading:not([data-level="0"], .is-collapsed) {
@@ -35461,8 +35494,8 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 }
 
 .style-settings-heading:not([data-level="0"]) + .style-settings-container {
-  background-color: rgba(light-dark(220, 224, 232, 17, 17, 27), 0.3);
-  border: 1px solid rgba(light-dark(76, 79, 105, 198, 208, 245), 0.2);
+  background-color: rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.3);
+  border: 1px solid rgba(light-dark(rgb(76, 79, 105), rgb(198, 208, 245)), 0.2);
   border-radius: 4px;
   overflow-x: hidden;
   padding: 8px;
@@ -36312,7 +36345,10 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   padding-left: 0px;
   padding-right: 0px;
   text-decoration: underline;
-  text-decoration-color: rgba(light-dark(228, 147, 32, 249, 226, 175), 0.4);
+  text-decoration-color: rgba(
+    light-dark(rgb(228, 147, 32), rgb(249, 226, 175)),
+    0.4
+  );
   text-decoration-line: underline;
 }
 
@@ -36335,7 +36371,10 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
   padding-left: 8px;
   padding-right: 0px;
   text-decoration: underline;
-  text-decoration-color: rgba(light-dark(228, 147, 32, 249, 226, 175), 0.4);
+  text-decoration-color: rgba(
+    light-dark(rgb(228, 147, 32), rgb(249, 226, 175)),
+    0.4
+  );
   text-decoration-line: underline;
 }
 
@@ -36406,19 +36445,19 @@ body.anp-colorful-frame.anp-border-layout.anp-mini-tab-toggle
 }
 
 #cMenuModalBar {
-  border: 2px solid rgba(light-dark(220, 224, 232, 17, 17, 27), 0.2);
+  border: 2px solid rgba(light-dark(rgb(220, 224, 232), rgb(17, 17, 27)), 0.2);
 }
 
 #cMenuModalBar .cMenuCommandItem {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.4);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.4);
 }
 
 #cMenuModalBar .cMenuCommandItem:hover {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.6);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.6);
 }
 
 #cMenuModalBar button.cMenuCommandItem:hover {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 0.6);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 0.6);
 }
 
 .status-bar-item.plugin-obsidian-discordrpc {
@@ -36776,7 +36815,7 @@ body:not(.is-mobile):not(.anp-hide-status-bar) .kanban-plugin__board > div {
   --checkbox-size: 16px;
   --input-radius: 6px;
   --tag-color: rgb(inherit);
-  background-color: rgba(light-dark(239, 241, 245, 30, 30, 46), 1);
+  background-color: rgba(light-dark(rgb(239, 241, 245), rgb(30, 30, 46)), 1);
   border-width: 0;
   box-shadow: inset 0 0 0 1px transparent;
 }
@@ -36888,7 +36927,7 @@ body:not(.is-mobile):not(.anp-hide-status-bar) .kanban-plugin__board > div {
 }
 
 .kanban-plugin__lane {
-  background-color: rgba(light-dark(230, 233, 239, 24, 24, 37), 1);
+  background-color: rgba(light-dark(rgb(230, 233, 239), rgb(24, 24, 37)), 1);
   border-radius: 6px;
   border-width: 0;
   box-shadow: inset 0 0 0 1px transparent;

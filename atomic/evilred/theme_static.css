@@ -941,9 +941,15 @@
   );
   --code-block: light-dark(#cc0d0d, #cc0d0d);
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#9873f7, #a68af9);
-  --color-accent-2: light-dark(#a68af9, #c5b6fc);
-  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --color-accent-1: light-dark(
+    hsl(257, 88.88%, 70.95%),
+    hsl(255, 89.76%, 75.9%)
+  );
+  --color-accent-2: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
+  );
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -1652,7 +1658,7 @@ body {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   --background-modifier-active-hover: hsla(
-    light-dark(258, 88%, 66%, 258, 88%, 66%),
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
     0.15
   );
   --background-modifier-border: light-dark(#e4d1cf, #3d0404);
@@ -1754,7 +1760,10 @@ body {
   --checkbox-border-color: light-dark(#5c1818, #ff8a8a);
   --checkbox-border-color-hover: light-dark(#3d0404, #e4d1cf);
   --checkbox-color: light-dark(#b50505, #b50505);
-  --checkbox-color-hover: light-dark(#9873f7, #a68af9);
+  --checkbox-color-hover: light-dark(
+    hsl(257, 88.88%, 70.95%),
+    hsl(255, 89.76%, 75.9%)
+  );
   --checkbox-margin-inline-start: 0.85em;
   --checkbox-marker-color: light-dark(#e4d1cf, #390000);
   --checkbox-radius: 4px;
@@ -1783,9 +1792,15 @@ body {
   --collapse-icon-color: light-dark(#5c1818, #ff8a8a);
   --collapse-icon-color-collapsed: light-dark(#f3ad6b, #f3ad6b);
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#9873f7, #a68af9);
-  --color-accent-2: light-dark(#a68af9, #c5b6fc);
-  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --color-accent-1: light-dark(
+    hsl(257, 88.88%, 70.95%),
+    hsl(255, 89.76%, 75.9%)
+  );
+  --color-accent-2: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
+  );
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -2023,8 +2038,11 @@ body {
   --input-placeholder-color: light-dark(#5c1818, #ff8a8a);
   --input-radius: 5px;
   --interactive-accent: light-dark(#b50505, #b50505);
-  --interactive-accent-hover: light-dark(#a68af9, #c5b6fc);
-  --interactive-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --interactive-accent-hover: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
+  );
+  --interactive-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --interactive-accent-rgb: light-dark(#f3ad6b, #f3ad6b);
   --interactive-before: light-dark(#ff8a8a, #5c1818);
   --interactive-hover: #111;
@@ -2044,18 +2062,24 @@ body {
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;
   --link-color: light-dark(#f3ad6b, #f3ad6b);
-  --link-color-hover: light-dark(#a68af9, #c5b6fc);
+  --link-color-hover: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
+  );
   --link-decoration: underline;
   --link-decoration-hover: underline;
   --link-decoration-thickness: auto;
   --link-external-color: light-dark(#f3ad6b, #f3ad6b);
-  --link-external-color-hover: light-dark(#a68af9, #c5b6fc);
+  --link-external-color-hover: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
+  );
   --link-external-decoration: underline;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
   --link-unresolved-color: light-dark(#f3ad6b, #f3ad6b);
   --link-unresolved-decoration-color: hsla(
-    light-dark(258, 88%, 66%, 258, 88%, 66%),
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
     0.3
   );
   --link-unresolved-decoration-style: solid;
@@ -2153,7 +2177,7 @@ body {
   --nav-item-background-active: #ffffff26;
   --nav-item-background-hover: #ffffff26;
   --nav-item-background-selected: hsla(
-    light-dark(258, 88%, 66%, 258, 88%, 66%),
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
     0.15
   );
   --nav-item-children-margin-start: 12px;
@@ -2336,7 +2360,10 @@ body {
   --table-row-even: light-dark(#edeff2, #2b303b);
   --table-row-last-border-width: 1px;
   --table-row-odd: light-dark(#f9fafb, #333a47);
-  --table-selection: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.1);
+  --table-selection: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.1
+  );
   --table-selection-blend-mode: darken;
   --table-selection-border-color: light-dark(#b50505, #b50505);
   --table-selection-border-radius: 4px;
@@ -2344,11 +2371,20 @@ body {
   --table-text-color: inherit;
   --table-text-size: 16px;
   --table-white-space: break-spaces;
-  --tag-background: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.1);
-  --tag-background-hover: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.2);
-  --tag-border-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+  --tag-background: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.1
+  );
+  --tag-background-hover: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.2
+  );
+  --tag-border-color: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.15
+  );
   --tag-border-color-hover: hsla(
-    light-dark(258, 88%, 66%, 258, 88%, 66%),
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
     0.15
   );
   --tag-border-width: 0px;
@@ -2365,7 +2401,10 @@ body {
   --text-a: light-dark(#ff9cfa, #ff9cfa);
   --text-a-hover: light-dark(#cc0d0d, #81a1c1);
   --text-accent: light-dark(#f3ad6b, #f3ad6b);
-  --text-accent-hover: light-dark(#a68af9, #c5b6fc);
+  --text-accent-hover: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
+  );
   --text-error: light-dark(#e93147, #fb464c);
   --text-faint: light-dark(#5c1818, #ff8a8a);
   --text-highlight-bg: #ffd00066;
@@ -2458,8 +2497,8 @@ body {
   --background-secondary-alt: #e4d1cf;
   --code-block: #cc0d0d;
   --color-accent: #8a5cf5;
-  --color-accent-1: #9873f7;
-  --color-accent-2: #a68af9;
+  --color-accent-1: hsl(257, 88.88%, 70.95%);
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-00: #ffffff;
   --color-base-05: #fcfcfc;
@@ -2546,8 +2585,8 @@ body {
   --background-secondary-alt: #3d0404;
   --code-block: #cc0d0d;
   --color-accent: #8a5cf5;
-  --color-accent-1: #a68af9;
-  --color-accent-2: #c5b6fc;
+  --color-accent-1: hsl(255, 89.76%, 75.9%);
+  --color-accent-2: hsl(253, 92.4%, 85.14%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-00: #1e1e1e;
   --color-base-05: #212121;
@@ -2586,7 +2625,10 @@ body {
     inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
     0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
   --interactive-accent: #b50505;
-  --interactive-accent-hover: light-dark(#9873f7, #a68af9);
+  --interactive-accent-hover: light-dark(
+    hsl(257, 88.88%, 70.95%),
+    hsl(255, 89.76%, 75.9%)
+  );
   --interactive-accent-rgb: #f3ad6b;
   --interactive-before: #5c1818;
   --interactive-hover: light-dark(#d4d4d4, #3f3f3f);
@@ -3195,7 +3237,10 @@ body:not(.is-mobile) .app-container {
 }
 
 .drag-ghost-hidden:before {
-  background-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.3);
+  background-color: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.3
+  );
   border-radius: 5px;
   bottom: 0;
   content: " ";
@@ -3425,7 +3470,10 @@ body:not(.is-mobile) .app-container {
 }
 
 .markdown-source-view.mod-cm6 .cm-table-widget th.is-selected::after {
-  background-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.1);
+  background-color: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.1
+  );
   border: 0px solid light-dark(#b50505, #b50505);
   bottom: -1px;
   content: "";
@@ -3440,7 +3488,10 @@ body:not(.is-mobile) .app-container {
 }
 
 .markdown-source-view.mod-cm6 .cm-table-widget td.is-selected::after {
-  background-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.1);
+  background-color: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.1
+  );
   border: 0px solid light-dark(#b50505, #b50505);
   bottom: -1px;
   content: "";
@@ -3501,7 +3552,10 @@ body:not(.is-mobile) .app-container {
 }
 
 .markdown-source-view.mod-cm6 .cm-table-widget.is-selected table::after {
-  background-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.1);
+  background-color: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.1
+  );
   bottom: -1px;
   content: "";
   display: block;
@@ -3914,7 +3968,7 @@ body:not(.is-mobile) .app-container {
 }
 
 .empty-state-action.mobile-tap {
-  color: light-dark(#a68af9, #c5b6fc);
+  color: light-dark(hsl(255, 89.76%, 75.9%), hsl(253, 92.4%, 85.14%));
 }
 
 .feedback-banner-container {
@@ -4303,7 +4357,10 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 }
 
 .view-header.is-highlighted:after {
-  background-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.5);
+  background-color: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.5
+  );
   content: " ";
   height: 100%;
   inset-inline-start: 0;
@@ -5920,7 +5977,10 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
 }
 
 .community-item .flair {
-  --flair-background: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+  --flair-background: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.15
+  );
   --flair-color: light-dark(#f3ad6b, #f3ad6b);
   margin-inline-start: 4px;
   top: -1px;
@@ -6593,7 +6653,10 @@ body:not(.is-mobile)
 }
 
 .workspace-leaf.is-highlighted:before {
-  background-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.25);
+  background-color: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.25
+  );
   content: " ";
   height: 100%;
   inset-inline-start: 0;
@@ -7153,22 +7216,34 @@ body.is-phone .view-header-nav-buttons {
   .mod-root
     .workspace-tab-header.is-active
     .workspace-tab-header-status-icon.mod-linked:hover {
-    background-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+    background-color: hsla(
+      light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+      0.15
+    );
   }
   .mod-root
     .workspace-tab-header.is-active
     .workspace-tab-header-inner-close-button.mod-linked:hover {
-    background-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+    background-color: hsla(
+      light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+      0.15
+    );
   }
   .mod-root
     .workspace-tab-header.is-active
     .workspace-tab-header-status-icon.mod-pinned:hover {
-    background-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+    background-color: hsla(
+      light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+      0.15
+    );
   }
   .mod-root
     .workspace-tab-header.is-active
     .workspace-tab-header-inner-close-button.mod-pinned:hover {
-    background-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+    background-color: hsla(
+      light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+      0.15
+    );
   }
 }
 
@@ -7871,12 +7946,18 @@ button.mod-cta {
 }
 
 button.mod-cta.mobile-tap {
-  background-color: light-dark(#9873f7, #a68af9);
+  background-color: light-dark(
+    hsl(257, 88.88%, 70.95%),
+    hsl(255, 89.76%, 75.9%)
+  );
 }
 
 @media (hover: hover) {
   button.mod-cta:hover {
-    background-color: light-dark(#9873f7, #a68af9);
+    background-color: light-dark(
+      hsl(257, 88.88%, 70.95%),
+      hsl(255, 89.76%, 75.9%)
+    );
   }
 }
 
@@ -7958,13 +8039,19 @@ button.mod-destructive {
 
 @media (hover: hover) {
   .card.u-clickable:hover {
-    background-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.1);
+    background-color: hsla(
+      light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+      0.1
+    );
     border: 1px solid light-dark(#b50505, #b50505);
   }
 }
 
 .card.is-selected {
-  background-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.2);
+  background-color: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.2
+  );
   border: 1px solid light-dark(#b50505, #b50505);
 }
 
@@ -8694,14 +8781,20 @@ svg.svg-icon {
 }
 
 .clickable-icon.is-active {
-  background-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
-  color: light-dark(#9873f7, #a68af9);
+  background-color: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.15
+  );
+  color: light-dark(hsl(257, 88.88%, 70.95%), hsl(255, 89.76%, 75.9%));
   opacity: 0.65;
 }
 
 @media (hover: hover) {
   .clickable-icon.is-active:hover {
-    background-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+    background-color: hsla(
+      light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+      0.15
+    );
   }
 }
 
@@ -9616,11 +9709,11 @@ select.mod-hidden {
 }
 
 .notice-cta:hover {
-  color: light-dark(#a68af9, #c5b6fc);
+  color: light-dark(hsl(255, 89.76%, 75.9%), hsl(253, 92.4%, 85.14%));
 }
 
 .notice-cta.mobile-tap {
-  color: light-dark(#a68af9, #c5b6fc);
+  color: light-dark(hsl(255, 89.76%, 75.9%), hsl(253, 92.4%, 85.14%));
 }
 
 .menu {
@@ -10145,7 +10238,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
   --icon-stroke: 2px;
   align-items: center;
   background-color: transparent;
-  border: 0 solid hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+  border: 0 solid hsla(light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)), 0.15);
   border-radius: 2em;
   color: light-dark(#e93147, #fb464c);
   cursor: pointer;
@@ -10174,8 +10267,12 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 @media (hover: hover) {
   .multi-select-pill:hover {
-    background-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.2);
-    border: 0 solid hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+    background-color: hsla(
+      light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+      0.2
+    );
+    border: 0 solid
+      hsla(light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)), 0.15);
     color: light-dark(#f3ad6b, #f3ad6b);
     text-decoration: none;
   }
@@ -11264,7 +11361,7 @@ body:not(.is-phone) .vertical-tab-header-group-items {
 }
 
 .tree-item-self.is-being-dragged-over {
-  background: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.1);
+  background: hsla(light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)), 0.1);
   color: light-dark(#f3ad6b, #f3ad6b);
 }
 
@@ -11334,12 +11431,18 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover {
 }
 
 body:not(.is-grabbing) .tree-item-self.is-selected:hover {
-  background-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+  background-color: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.15
+  );
   color: light-dark(#290202, #fdf8ec);
 }
 
 .tree-item-self.is-selected {
-  background-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+  background-color: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.15
+  );
   color: light-dark(#290202, #fdf8ec);
 }
 
@@ -13201,7 +13304,10 @@ iframe.external-embed {
 }
 
 .metadata-container:focus-within .metadata-property.is-selected {
-  background-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+  background-color: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.15
+  );
   color: light-dark(#290202, #fdf8ec);
 }
 
@@ -13300,11 +13406,11 @@ iframe.external-embed {
 }
 
 .metadata-error-cta.mobile-tap {
-  color: light-dark(#a68af9, #c5b6fc);
+  color: light-dark(hsl(255, 89.76%, 75.9%), hsl(253, 92.4%, 85.14%));
 }
 
 .metadata-error-cta:hover {
-  color: light-dark(#a68af9, #c5b6fc);
+  color: light-dark(hsl(255, 89.76%, 75.9%), hsl(253, 92.4%, 85.14%));
 }
 
 .metadata-input-text {
@@ -13654,11 +13760,20 @@ input.metadata-property-key-input:focus {
 }
 
 .metadata-property[data-property-key="tags"] .multi-select-pill {
-  --pill-background: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.2);
-  --pill-background-hover: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.2);
-  --pill-border-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+  --pill-background: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.2
+  );
+  --pill-background-hover: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.2
+  );
+  --pill-border-color: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.15
+  );
   --pill-border-color-hover: hsla(
-    light-dark(258, 88%, 66%, 258, 88%, 66%),
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
     0.15
   );
   --pill-border-width: 0px;
@@ -13915,7 +14030,7 @@ input.metadata-property-key-input:focus {
 
 @media (hover: hover) {
   .metadata-link-inner:hover {
-    color: light-dark(#a68af9, #c5b6fc);
+    color: light-dark(hsl(255, 89.76%, 75.9%), hsl(253, 92.4%, 85.14%));
     text-decoration-line: underline;
   }
   .metadata-link-inner:hover ~ .metadata-link-flair {
@@ -15021,12 +15136,14 @@ ul > li.is-collapsed::marker {
 
 li.is-collapsed .list-bullet:after {
   background-color: light-dark(#f3ad6b, #f3ad6b);
-  box-shadow: 0 0 0 4px hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+  box-shadow: 0 0 0 4px
+    hsla(light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)), 0.15);
 }
 
 .is-collapsed ~ .cm-formatting-list .list-bullet:after {
   background-color: light-dark(#f3ad6b, #f3ad6b);
-  box-shadow: 0 0 0 4px hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+  box-shadow: 0 0 0 4px
+    hsla(light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)), 0.15);
 }
 
 .markdown-source-view.mod-cm6.is-live-preview
@@ -15063,45 +15180,53 @@ li.is-collapsed .list-bullet:after {
   }
   li.is-collapsed .list-collapse-indicator:hover ~ .list-bullet:after {
     background-color: light-dark(#f3ad6b, #f3ad6b);
-    box-shadow: 0 0 0 4px hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+    box-shadow: 0 0 0 4px
+      hsla(light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)), 0.15);
   }
   li.is-collapsed .cm-fold-indicator:hover ~ .list-bullet:after {
     background-color: light-dark(#f3ad6b, #f3ad6b);
-    box-shadow: 0 0 0 4px hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+    box-shadow: 0 0 0 4px
+      hsla(light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)), 0.15);
   }
   .list-collapse-indicator:hover.is-collapsed ~ .list-bullet:after {
     background-color: light-dark(#f3ad6b, #f3ad6b);
-    box-shadow: 0 0 0 4px hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+    box-shadow: 0 0 0 4px
+      hsla(light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)), 0.15);
   }
   .cm-fold-indicator:hover.is-collapsed ~ .list-bullet:after {
     background-color: light-dark(#f3ad6b, #f3ad6b);
-    box-shadow: 0 0 0 4px hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+    box-shadow: 0 0 0 4px
+      hsla(light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)), 0.15);
   }
   li.is-collapsed
     .list-collapse-indicator:hover
     ~ .cm-formatting-list
     .list-bullet:after {
     background-color: light-dark(#f3ad6b, #f3ad6b);
-    box-shadow: 0 0 0 4px hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+    box-shadow: 0 0 0 4px
+      hsla(light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)), 0.15);
   }
   li.is-collapsed
     .cm-fold-indicator:hover
     ~ .cm-formatting-list
     .list-bullet:after {
     background-color: light-dark(#f3ad6b, #f3ad6b);
-    box-shadow: 0 0 0 4px hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+    box-shadow: 0 0 0 4px
+      hsla(light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)), 0.15);
   }
   .list-collapse-indicator:hover.is-collapsed
     ~ .cm-formatting-list
     .list-bullet:after {
     background-color: light-dark(#f3ad6b, #f3ad6b);
-    box-shadow: 0 0 0 4px hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+    box-shadow: 0 0 0 4px
+      hsla(light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)), 0.15);
   }
   .cm-fold-indicator:hover.is-collapsed
     ~ .cm-formatting-list
     .list-bullet:after {
     background-color: light-dark(#f3ad6b, #f3ad6b);
-    box-shadow: 0 0 0 4px hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+    box-shadow: 0 0 0 4px
+      hsla(light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)), 0.15);
   }
 }
 
@@ -15171,7 +15296,7 @@ a.mobile-tap {
 
 @media (hover: hover) {
   .external-link:hover {
-    color: light-dark(#a68af9, #c5b6fc);
+    color: light-dark(hsl(255, 89.76%, 75.9%), hsl(253, 92.4%, 85.14%));
     text-decoration-line: underline;
   }
 }
@@ -15206,11 +15331,11 @@ a.mobile-tap {
 
 @media (hover: hover) {
   .metadata-property-value .internal-link:hover {
-    color: light-dark(#a68af9, #c5b6fc);
+    color: light-dark(hsl(255, 89.76%, 75.9%), hsl(253, 92.4%, 85.14%));
     text-decoration-line: underline;
   }
   .markdown-rendered .internal-link:hover {
-    color: light-dark(#a68af9, #c5b6fc);
+    color: light-dark(hsl(255, 89.76%, 75.9%), hsl(253, 92.4%, 85.14%));
     text-decoration-line: underline;
   }
 }
@@ -15227,7 +15352,10 @@ a.mobile-tap {
   color: light-dark(#f3ad6b, #f3ad6b);
   filter: none;
   opacity: 0.7;
-  text-decoration-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.3);
+  text-decoration-color: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.3
+  );
   text-decoration-style: solid;
 }
 
@@ -15235,21 +15363,30 @@ a.mobile-tap {
   color: light-dark(#f3ad6b, #f3ad6b);
   filter: none;
   opacity: 0.7;
-  text-decoration-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.3);
+  text-decoration-color: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.3
+  );
   text-decoration-style: solid;
 }
 
 @media (hover: hover) {
   .metadata-property-value .internal-link.is-unresolved:hover {
-    color: light-dark(#a68af9, #c5b6fc);
+    color: light-dark(hsl(255, 89.76%, 75.9%), hsl(253, 92.4%, 85.14%));
     opacity: 1;
-    text-decoration-color: light-dark(#a68af9, #c5b6fc);
+    text-decoration-color: light-dark(
+      hsl(255, 89.76%, 75.9%),
+      hsl(253, 92.4%, 85.14%)
+    );
     text-decoration-line: underline;
   }
   .markdown-rendered .internal-link.is-unresolved:hover {
-    color: light-dark(#a68af9, #c5b6fc);
+    color: light-dark(hsl(255, 89.76%, 75.9%), hsl(253, 92.4%, 85.14%));
     opacity: 1;
-    text-decoration-color: light-dark(#a68af9, #c5b6fc);
+    text-decoration-color: light-dark(
+      hsl(255, 89.76%, 75.9%),
+      hsl(253, 92.4%, 85.14%)
+    );
     text-decoration-line: underline;
   }
 }
@@ -15262,7 +15399,7 @@ a.mobile-tap {
 
 @media (hover: hover) {
   .cm-s-obsidian span.cm-hmd-internal-link:hover {
-    color: light-dark(#a68af9, #c5b6fc);
+    color: light-dark(hsl(255, 89.76%, 75.9%), hsl(253, 92.4%, 85.14%));
     text-decoration-line: underline;
   }
 }
@@ -15278,7 +15415,7 @@ a.mobile-tap {
 
 @media (hover: hover) {
   .cm-s-obsidian span.cm-link:hover {
-    color: light-dark(#a68af9, #c5b6fc);
+    color: light-dark(hsl(255, 89.76%, 75.9%), hsl(253, 92.4%, 85.14%));
     text-decoration-line: underline;
   }
 }
@@ -15301,11 +15438,11 @@ a.mobile-tap {
 
 @media (hover: hover) {
   .cm-s-obsidian span.cm-formatting-link.cm-url:hover {
-    color: light-dark(#a68af9, #c5b6fc);
+    color: light-dark(hsl(255, 89.76%, 75.9%), hsl(253, 92.4%, 85.14%));
     text-decoration-line: underline;
   }
   .cm-s-obsidian span.cm-url:hover {
-    color: light-dark(#a68af9, #c5b6fc);
+    color: light-dark(hsl(255, 89.76%, 75.9%), hsl(253, 92.4%, 85.14%));
     text-decoration-line: underline;
   }
 }
@@ -15357,15 +15494,21 @@ a.mobile-tap {
 
 @media (hover: hover) {
   .markdown-source-view.mod-cm6 .is-unresolved:hover {
-    color: light-dark(#a68af9, #c5b6fc);
+    color: light-dark(hsl(255, 89.76%, 75.9%), hsl(253, 92.4%, 85.14%));
     opacity: 1;
-    text-decoration-color: light-dark(#a68af9, #c5b6fc);
+    text-decoration-color: light-dark(
+      hsl(255, 89.76%, 75.9%),
+      hsl(253, 92.4%, 85.14%)
+    );
   }
 }
 
 .markdown-source-view.mod-cm6 .is-unresolved .cm-underline {
   color: light-dark(#f3ad6b, #f3ad6b);
-  text-decoration-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.3);
+  text-decoration-color: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.3
+  );
   text-decoration-line: underline;
   text-decoration-style: solid;
 }
@@ -15407,11 +15550,11 @@ body.is-mobile .markdown-source-view.mod-cm6 .cm-underline {
 
 @media (hover: hover) {
   .markdown-source-view.mod-cm6 .cm-link .cm-underline:hover {
-    color: light-dark(#a68af9, #c5b6fc);
+    color: light-dark(hsl(255, 89.76%, 75.9%), hsl(253, 92.4%, 85.14%));
     text-decoration-line: underline;
   }
   .markdown-source-view.mod-cm6 .cm-url .cm-underline:hover {
-    color: light-dark(#a68af9, #c5b6fc);
+    color: light-dark(hsl(255, 89.76%, 75.9%), hsl(253, 92.4%, 85.14%));
     text-decoration-line: underline;
   }
 }
@@ -16231,7 +16374,8 @@ a.tag {
     light-dark(#fcfcfc, #212121),
     light-dark(#e0e0e0, #363636)
   );
-  border: 0px solid hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+  border: 0px solid
+    hsla(light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)), 0.15);
   border-radius: 4px;
   color: light-dark(#81a1c1, #b50505);
   font-size: 0.875em;
@@ -16247,7 +16391,8 @@ a.tag {
       light-dark(#fcfcfc, #212121),
       light-dark(#e0e0e0, #363636)
     );
-    border: 0px solid hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+    border: 0px solid
+      hsla(light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)), 0.15);
     border-radius: 4px;
     color: light-dark(#81a1c1, #b50505);
     padding: 2px 4px;
@@ -16256,8 +16401,12 @@ a.tag {
 }
 
 .cm-hashtag {
-  background-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.2);
-  border: 0px solid hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+  background-color: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.2
+  );
+  border: 0px solid
+    hsla(light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)), 0.15);
   border-inline-end: none;
   border-inline-start: none;
   color: light-dark(#f3ad6b, #f3ad6b);
@@ -16272,7 +16421,7 @@ a.tag {
   border-end-start-radius: 2em;
   border-inline-end: none;
   border-inline-start: 0px solid
-    hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+    hsla(light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)), 0.15);
   border-start-start-radius: 2em;
   padding-inline-start: 0.65em;
 }
@@ -16280,7 +16429,7 @@ a.tag {
 .cm-hashtag.cm-hashtag-end {
   border-end-end-radius: 2em;
   border-inline-end: 0px solid
-    hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+    hsla(light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)), 0.15);
   border-inline-start: none;
   border-start-end-radius: 2em;
   padding-inline-end: 0.65em;
@@ -16345,8 +16494,11 @@ input[type="checkbox"]:checked {
 
 @media (hover: hover) {
   input[type="checkbox"]:checked:hover {
-    background-color: light-dark(#9873f7, #a68af9);
-    border-color: light-dark(#9873f7, #a68af9);
+    background-color: light-dark(
+      hsl(257, 88.88%, 70.95%),
+      hsl(255, 89.76%, 75.9%)
+    );
+    border-color: light-dark(hsl(257, 88.88%, 70.95%), hsl(255, 89.76%, 75.9%));
   }
 }
 
@@ -16475,9 +16627,15 @@ strong {
   --background-secondary: light-dark(#fdf8ec, #290202);
   --code-block: light-dark(#cc0d0d, #cc0d0d);
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#9873f7, #a68af9);
-  --color-accent-2: light-dark(#a68af9, #c5b6fc);
-  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --color-accent-1: light-dark(
+    hsl(257, 88.88%, 70.95%),
+    hsl(255, 89.76%, 75.9%)
+  );
+  --color-accent-2: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
+  );
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -16728,8 +16886,11 @@ em {
 }
 
 .view-action.mod-bookmarked {
-  --icon-color: light-dark(#9873f7, #a68af9);
-  --icon-color-hover: light-dark(#9873f7, #a68af9);
+  --icon-color: light-dark(hsl(257, 88.88%, 70.95%), hsl(255, 89.76%, 75.9%));
+  --icon-color-hover: light-dark(
+    hsl(257, 88.88%, 70.95%),
+    hsl(255, 89.76%, 75.9%)
+  );
 }
 
 .workspace-leaf-content:not([data-type="browser"]) .view-action.mod-bookmark {
@@ -17815,7 +17976,7 @@ em {
 }
 
 .nav-folder.is-being-dragged-over {
-  background: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.1);
+  background: hsla(light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)), 0.1);
   border-radius: 4px;
 }
 
@@ -17893,22 +18054,34 @@ body:not(.is-grabbing) .nav-folder-title.is-active:hover {
 }
 
 body:not(.is-grabbing) .nav-file-title.is-selected:hover {
-  background-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+  background-color: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.15
+  );
   color: light-dark(#290202, #fdf8ec);
 }
 
 body:not(.is-grabbing) .nav-folder-title.is-selected:hover {
-  background-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+  background-color: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.15
+  );
   color: light-dark(#290202, #fdf8ec);
 }
 
 .nav-file-title.is-selected {
-  background-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+  background-color: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.15
+  );
   color: light-dark(#290202, #fdf8ec);
 }
 
 .nav-folder-title.is-selected {
-  background-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+  background-color: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.15
+  );
   color: light-dark(#290202, #fdf8ec);
 }
 
@@ -18005,11 +18178,14 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .file-tree .mod-changed.is-selected {
-  background-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.2);
+  background-color: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.2
+  );
 }
 
 .file-tree .mod-changed .tree-item-flair {
-  color: light-dark(#a68af9, #c5b6fc);
+  color: light-dark(hsl(255, 89.76%, 75.9%), hsl(253, 92.4%, 85.14%));
 }
 
 .file-tree .mod-new.is-selected {
@@ -18659,13 +18835,13 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 @media (hover: hover) {
   .publish-section-header-text:hover {
-    color: light-dark(#a68af9, #c5b6fc);
+    color: light-dark(hsl(255, 89.76%, 75.9%), hsl(253, 92.4%, 85.14%));
   }
   .publish-section-header-toggle-collapsed-button:hover {
-    color: light-dark(#a68af9, #c5b6fc);
+    color: light-dark(hsl(255, 89.76%, 75.9%), hsl(253, 92.4%, 85.14%));
   }
   .publish-section-header-action:hover {
-    color: light-dark(#a68af9, #c5b6fc);
+    color: light-dark(hsl(255, 89.76%, 75.9%), hsl(253, 92.4%, 85.14%));
   }
 }
 
@@ -20189,7 +20365,10 @@ body.theme-dark {
 }
 
 .canvas-selection {
-  background-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.1);
+  background-color: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.1
+  );
   border: 2px solid light-dark(#8a5cf5, #8a5cf5);
   pointer-events: none;
   position: absolute;
@@ -20197,8 +20376,11 @@ body.theme-dark {
 }
 
 .canvas-selection.mod-group-selection {
-  background-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.03);
-  border-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.3);
+  background-color: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.03
+  );
+  border-color: hsla(light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)), 0.3);
   border-radius: 3px;
   border-width: 3px;
   pointer-events: initial;
@@ -20576,7 +20758,10 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 }
 
 .canvas-node.is-dummy .canvas-node-container {
-  background-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.2);
+  background-color: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.2
+  );
   border: 4px solid light-dark(#8a5cf5, #8a5cf5);
   box-shadow: 0px 2px 10px #00000026;
 }
@@ -21198,7 +21383,7 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-placeholder-message {
-  background: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.1);
+  background: hsla(light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)), 0.1);
   border-radius: 8px;
   color: light-dark(#8a5cf5, #8a5cf5);
   font-size: 19.2px;
@@ -21278,8 +21463,11 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .view-action.mod-webviewer {
-  --icon-color: light-dark(#9873f7, #a68af9);
-  --icon-color-hover: light-dark(#9873f7, #a68af9);
+  --icon-color: light-dark(hsl(257, 88.88%, 70.95%), hsl(255, 89.76%, 75.9%));
+  --icon-color-hover: light-dark(
+    hsl(257, 88.88%, 70.95%),
+    hsl(255, 89.76%, 75.9%)
+  );
 }
 
 .webviewer-container {
@@ -21935,7 +22123,10 @@ body.is-screenshotting *::-webkit-scrollbar {
   --mobile-sidebar-background: light-dark(#fdf8ec, #290202);
   --search-result-background: light-dark(#fdf8ec, #290202);
   --settings-home-background: light-dark(#e4d1cf, #390000);
-  --tag-background: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.2);
+  --tag-background: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.2
+  );
 }
 
 .is-tablet {
@@ -22526,8 +22717,14 @@ body.is-phone .suggestion-bg {
 
 .is-mobile .view-header-nav-buttons {
   --icon-color: light-dark(#b50505, #b50505);
-  --icon-color-active: light-dark(#9873f7, #a68af9);
-  --icon-color-focus: light-dark(#9873f7, #a68af9);
+  --icon-color-active: light-dark(
+    hsl(257, 88.88%, 70.95%),
+    hsl(255, 89.76%, 75.9%)
+  );
+  --icon-color-focus: light-dark(
+    hsl(257, 88.88%, 70.95%),
+    hsl(255, 89.76%, 75.9%)
+  );
   --icon-color-hover: light-dark(#b50505, #b50505);
   --icon-size: 24px;
   --icon-stroke: 1.75px;
@@ -22535,8 +22732,14 @@ body.is-phone .suggestion-bg {
 
 .is-mobile .view-header .view-action {
   --icon-color: light-dark(#b50505, #b50505);
-  --icon-color-active: light-dark(#9873f7, #a68af9);
-  --icon-color-focus: light-dark(#9873f7, #a68af9);
+  --icon-color-active: light-dark(
+    hsl(257, 88.88%, 70.95%),
+    hsl(255, 89.76%, 75.9%)
+  );
+  --icon-color-focus: light-dark(
+    hsl(257, 88.88%, 70.95%),
+    hsl(255, 89.76%, 75.9%)
+  );
   --icon-color-hover: light-dark(#b50505, #b50505);
   --icon-size: 24px;
   --icon-stroke: 1.75px;
@@ -23063,7 +23266,10 @@ body.is-tablet .workspace-drawer.mod-left .workspace-drawer-inner {
 .workspace-drawer .nav-buttons-container {
   --icon-color: light-dark(#b50505, #b50505);
   --icon-color-active: light-dark(#b50505, #b50505);
-  --icon-color-focus: light-dark(#9873f7, #a68af9);
+  --icon-color-focus: light-dark(
+    hsl(257, 88.88%, 70.95%),
+    hsl(255, 89.76%, 75.9%)
+  );
   --icon-color-hover: light-dark(#b50505, #b50505);
   --icon-size: 24px;
   --icon-stroke: 1.75px;
@@ -23417,8 +23623,14 @@ body.is-tablet .workspace-drawer.mod-left .workspace-drawer-inner {
 
 body.is-tablet .sidebar-toggle-button {
   --icon-color: light-dark(#b50505, #b50505);
-  --icon-color-active: light-dark(#9873f7, #a68af9);
-  --icon-color-focus: light-dark(#9873f7, #a68af9);
+  --icon-color-active: light-dark(
+    hsl(257, 88.88%, 70.95%),
+    hsl(255, 89.76%, 75.9%)
+  );
+  --icon-color-focus: light-dark(
+    hsl(257, 88.88%, 70.95%),
+    hsl(255, 89.76%, 75.9%)
+  );
   --icon-color-hover: light-dark(#b50505, #b50505);
   --icon-size: 24px;
   --icon-stroke: 1.75px;
@@ -23697,8 +23909,14 @@ body.is-tablet .mobile-navbar {
 
 .mobile-navbar-actions {
   --icon-color: light-dark(#b50505, #b50505);
-  --icon-color-active: light-dark(#9873f7, #a68af9);
-  --icon-color-focus: light-dark(#9873f7, #a68af9);
+  --icon-color-active: light-dark(
+    hsl(257, 88.88%, 70.95%),
+    hsl(255, 89.76%, 75.9%)
+  );
+  --icon-color-focus: light-dark(
+    hsl(257, 88.88%, 70.95%),
+    hsl(255, 89.76%, 75.9%)
+  );
   --icon-color-hover: light-dark(#b50505, #b50505);
   --icon-size: 26px;
   --icon-stroke: 1.75px;
@@ -24012,8 +24230,14 @@ body.is-ios .mobile-tab-switcher-inner-scroll {
 
 .mobile-tab-switcher-menubar {
   --icon-color: light-dark(#b50505, #b50505);
-  --icon-color-active: light-dark(#9873f7, #a68af9);
-  --icon-color-focus: light-dark(#9873f7, #a68af9);
+  --icon-color-active: light-dark(
+    hsl(257, 88.88%, 70.95%),
+    hsl(255, 89.76%, 75.9%)
+  );
+  --icon-color-focus: light-dark(
+    hsl(257, 88.88%, 70.95%),
+    hsl(255, 89.76%, 75.9%)
+  );
   --icon-color-hover: light-dark(#b50505, #b50505);
   --icon-size: 26px;
   --icon-stroke: 1.75px;

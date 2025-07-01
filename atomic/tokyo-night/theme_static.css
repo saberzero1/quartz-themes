@@ -1014,11 +1014,11 @@
   --cyan: light-dark(#7dcfff, #7dcfff);
   --date-background-color: light-dark(#292e42, #292e42);
   --date-color: light-dark(#7aa2f7, #7aa2f7);
-  --default-font: '"JetBrains Mono", monospace, "Inter", sans-serif';
+  --default-font: "JetBrains Mono", monospace, "Inter", sans-serif;
   --embed-background: light-dark(#16161e, #16161e);
   --fg: light-dark(#c0caf5, #c0caf5);
   --fg_dark: light-dark(#a9b1d6, #a9b1d6);
-  --font-monospace: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
+  --font-monospace: "JetBrains Mono", monospace, "Source Code Pro", monospace;
   --graph-line: light-dark(#565f89, #565f89);
   --graph-node: light-dark(#c0caf5, #c0caf5);
   --graph-node-attachment: light-dark(#7aa2f7, #7aa2f7);
@@ -1917,10 +1917,9 @@ body {
   --file-folding-offset: 24px;
   --file-header-border: 0.5pt solid transparent;
   --file-header-font:
-    "??", "??", '"JetBrains Mono", monospace, "Inter", sans-serif',
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+    "??", "??", "JetBrains Mono", monospace, "Inter", sans-serif, ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --file-header-font-size: 14.992px;
   --file-header-font-weight: 400;
   --file-header-justify: center;
@@ -1937,10 +1936,9 @@ body {
   --font-extrabold: 800;
   --font-extralight: 200;
   --font-interface:
-    "??", "??", '"JetBrains Mono", monospace, "Inter", sans-serif',
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+    "??", "??", "JetBrains Mono", monospace, "Inter", sans-serif, ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-interface-override: "??";
   --font-interface-theme: "??";
   --font-light: 300;
@@ -2167,10 +2165,9 @@ body {
   --metadata-input-background-active: #ffffff26;
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
-    "??", "??", '"JetBrains Mono", monospace, "Inter", sans-serif',
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+    "??", "??", "JetBrains Mono", monospace, "Inter", sans-serif, ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: 28px;
   --metadata-input-longtext-lines: 3;
@@ -2179,10 +2176,9 @@ body {
   --metadata-label-background-active: #ffffff26;
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
-    "??", "??", '"JetBrains Mono", monospace, "Inter", sans-serif',
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif;
+    "??", "??", "JetBrains Mono", monospace, "Inter", sans-serif, ui-sans-serif,
+    -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-label-font-size: 0.875em;
   --metadata-label-font-weight: inherit;
   --metadata-label-text-color: #a9b1d6;
@@ -2480,7 +2476,10 @@ body {
   font-family:
     "??",
     "??",
-    '"JetBrains Mono", monospace, "Inter", sans-serif',
+    "JetBrains Mono",
+    monospace,
+    "Inter",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -4634,7 +4633,10 @@ body:not(.show-view-header):not(.is-phone) .view-header {
   font-family:
     "??",
     "??",
-    '"JetBrains Mono", monospace, "Inter", sans-serif',
+    "JetBrains Mono",
+    monospace,
+    "Inter",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -5677,7 +5679,7 @@ input {
 .setting-item-description code {
   border-radius: 4px;
   bottom: 1px;
-  font-family: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
+  font-family: "JetBrains Mono", monospace, "Source Code Pro", monospace;
   font-size: 0.875em;
   padding: 0 3px 2px 3px;
   position: relative;
@@ -5712,7 +5714,7 @@ input {
 }
 
 .setting-item-control.mod-hotkey input {
-  font-family: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
+  font-family: "JetBrains Mono", monospace, "Source Code Pro", monospace;
   font-size: 0.875em;
 }
 
@@ -5742,8 +5744,8 @@ input {
   border-radius: 4px;
   display: flex;
   font-family:
-    -apple-system, BlinkMacSystemFont,
-    '"JetBrains Mono", monospace, "Source Code Pro", monospace';
+    -apple-system, BlinkMacSystemFont, "JetBrains Mono", monospace,
+    "Source Code Pro", monospace;
   font-size: 14.992px;
   gap: 4px;
   padding: 2px 4px 2px 8px;
@@ -10015,7 +10017,7 @@ select.mod-hidden {
 }
 
 .debug-textarea {
-  font-family: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
+  font-family: "JetBrains Mono", monospace, "Source Code Pro", monospace;
   height: 100%;
   max-height: 80vh;
   min-height: 50vh;
@@ -10449,7 +10451,10 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
   font-family:
     "??",
     "??",
-    '"JetBrains Mono", monospace, "Inter", sans-serif',
+    "JetBrains Mono",
+    monospace,
+    "Inter",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -11105,7 +11110,10 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
   font-family:
     "??",
     "??",
-    '"JetBrains Mono", monospace, "Inter", sans-serif',
+    "JetBrains Mono",
+    monospace,
+    "Inter",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -11133,7 +11141,10 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
   font-family:
     "??",
     "??",
-    '"JetBrains Mono", monospace, "Inter", sans-serif',
+    "JetBrains Mono",
+    monospace,
+    "Inter",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -11752,7 +11763,10 @@ audio::-webkit-media-controls-current-time-display {
   font-family:
     "??",
     "??",
-    '"JetBrains Mono", monospace, "Inter", sans-serif',
+    "JetBrains Mono",
+    monospace,
+    "Inter",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -11770,7 +11784,10 @@ audio::-webkit-media-controls-time-remaining-display {
   font-family:
     "??",
     "??",
-    '"JetBrains Mono", monospace, "Inter", sans-serif',
+    "JetBrains Mono",
+    monospace,
+    "Inter",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -11788,7 +11805,7 @@ kbd {
   background-color: #24283b;
   border-radius: 4px;
   color: #c0caf5;
-  font-family: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
+  font-family: "JetBrains Mono", monospace, "Source Code Pro", monospace;
   font-size: 1em;
   padding: 0.1em 0.25em;
 }
@@ -12377,7 +12394,7 @@ kbd {
   border: 0px solid transparent;
   border-radius: 4px;
   color: #c0caf5;
-  font-family: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
+  font-family: "JetBrains Mono", monospace, "Source Code Pro", monospace;
   font-size: 1em;
   padding: 0.15em 0.3em;
 }
@@ -12410,7 +12427,7 @@ kbd {
 .cm-s-obsidian .cm-inline-code {
   border-color: transparent;
   border-style: solid;
-  font-family: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
+  font-family: "JetBrains Mono", monospace, "Source Code Pro", monospace;
 }
 
 .cm-s-obsidian .cm-inline-code:not(.cm-formatting) {
@@ -12480,7 +12497,10 @@ kbd {
   font-family:
     "??",
     "??",
-    '"JetBrains Mono", monospace, "Inter", sans-serif',
+    "JetBrains Mono",
+    monospace,
+    "Inter",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -12527,7 +12547,10 @@ kbd {
   font-family:
     "??",
     "??",
-    '"JetBrains Mono", monospace, "Inter", sans-serif',
+    "JetBrains Mono",
+    monospace,
+    "Inter",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -12585,7 +12608,7 @@ kbd {
 .cm-s-obsidian .HyperMD-codeblock {
   clear: left;
   direction: ltr;
-  font-family: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
+  font-family: "JetBrains Mono", monospace, "Source Code Pro", monospace;
   font-size: 1em;
 }
 
@@ -12638,7 +12661,7 @@ code[class*="language-"] {
   background: none;
   color: #c0caf5;
   direction: ltr;
-  font-family: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
+  font-family: "JetBrains Mono", monospace, "Source Code Pro", monospace;
   hyphens: none;
   line-height: 1.5;
   text-align: left;
@@ -13319,7 +13342,10 @@ iframe.external-embed {
   font-family:
     "??",
     "??",
-    '"JetBrains Mono", monospace, "Inter", sans-serif',
+    "JetBrains Mono",
+    monospace,
+    "Inter",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -13340,7 +13366,10 @@ iframe.external-embed {
   font-family:
     "??",
     "??",
-    '"JetBrains Mono", monospace, "Inter", sans-serif',
+    "JetBrains Mono",
+    monospace,
+    "Inter",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -13427,7 +13456,10 @@ iframe.external-embed {
   font-family:
     "??",
     "??",
-    '"JetBrains Mono", monospace, "Inter", sans-serif',
+    "JetBrains Mono",
+    monospace,
+    "Inter",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -13674,7 +13706,10 @@ input[type="checkbox"].metadata-input-checkbox {
   font-family:
     "??",
     "??",
-    '"JetBrains Mono", monospace, "Inter", sans-serif',
+    "JetBrains Mono",
+    monospace,
+    "Inter",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -13850,7 +13885,10 @@ input.metadata-property-key-input:focus {
   font-family:
     "??",
     "??",
-    '"JetBrains Mono", monospace, "Inter", sans-serif',
+    "JetBrains Mono",
+    monospace,
+    "Inter",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -14728,7 +14766,7 @@ hr {
   color: #999;
   cursor: pointer;
   display: inline-block;
-  font-family: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
+  font-family: "JetBrains Mono", monospace, "Source Code Pro", monospace;
   font-size: 67%;
   margin: 0 0.5em;
   padding: 0 0.2em;
@@ -14742,7 +14780,7 @@ hr {
   color: #999;
   cursor: pointer;
   display: inline-block;
-  font-family: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
+  font-family: "JetBrains Mono", monospace, "Source Code Pro", monospace;
   font-size: 67%;
   margin: 0 0.5em;
   padding: 0 0.2em;
@@ -15645,33 +15683,33 @@ body.is-mobile .markdown-source-view.mod-cm6 .cm-underline {
 
 .cm-s-obsidian .HyperMD-hr {
   clear: left;
-  font-family: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
+  font-family: "JetBrains Mono", monospace, "Source Code Pro", monospace;
 }
 
 .cm-s-obsidian .cm-hmd-frontmatter {
-  font-family: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
+  font-family: "JetBrains Mono", monospace, "Source Code Pro", monospace;
 }
 
 .cm-s-obsidian .cm-hmd-orgmode-markup {
-  font-family: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
+  font-family: "JetBrains Mono", monospace, "Source Code Pro", monospace;
 }
 
 .cm-s-obsidian .cm-formatting-code {
-  font-family: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
+  font-family: "JetBrains Mono", monospace, "Source Code Pro", monospace;
 }
 
 .cm-s-obsidian .cm-math {
-  font-family: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
+  font-family: "JetBrains Mono", monospace, "Source Code Pro", monospace;
 }
 
 .cm-s-obsidian span.hmd-fold-math-placeholder {
-  font-family: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
+  font-family: "JetBrains Mono", monospace, "Source Code Pro", monospace;
   font-size: 1em;
   font-style: italic;
 }
 
 .cm-s-obsidian .hmd-fold-html kbd {
-  font-family: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
+  font-family: "JetBrains Mono", monospace, "Source Code Pro", monospace;
 }
 
 .cm-s-obsidian span.cm-hmd-toc {
@@ -16062,7 +16100,7 @@ mjx-container {
 }
 
 .cm-s-obsidian .HyperMD-table-row {
-  font-family: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
+  font-family: "JetBrains Mono", monospace, "Source Code Pro", monospace;
   font-size: 1em;
   overflow-wrap: normal;
   white-space: pre;
@@ -16326,7 +16364,7 @@ ul > li.task-list-item[data-task="X"] {
 .cm-s-obsidian span.cm-formatting-task {
   background-size: 1em;
   color: #a9b1d6;
-  font-family: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
+  font-family: "JetBrains Mono", monospace, "Source Code Pro", monospace;
   height: 1em;
   line-height: 1em;
   min-width: 1em;
@@ -17987,7 +18025,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 .file-recovery-text {
   background-color: #1a1b26;
   flex: 1 0 0;
-  font-family: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
+  font-family: "JetBrains Mono", monospace, "Source Code Pro", monospace;
   font-size: 16px;
   padding: 24px;
   resize: none;
@@ -19736,7 +19774,7 @@ button.sync-history-button {
   border-radius: 4px;
   color: #a9b1d6;
   flex-grow: 1;
-  font-family: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
+  font-family: "JetBrains Mono", monospace, "Source Code Pro", monospace;
   font-size: 12.8px;
   overflow: auto;
   overflow-y: auto;
@@ -23898,7 +23936,7 @@ body.is-tablet .mobile-navbar {
   align-items: center;
   color: #a9b1d6;
   display: flex;
-  font-family: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
+  font-family: "JetBrains Mono", monospace, "Source Code Pro", monospace;
   font-size: 16px;
   justify-content: center;
   min-width: 50px;

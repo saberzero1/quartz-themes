@@ -4,9 +4,9 @@
   --accent-s: 83%;
   --background-secondary-alt: light-dark(#212121, #27272a);
   --color-accent: light-dark(#f5a494, #f5a494);
-  --color-accent-1: light-dark(#f8b9ae, #fbcfc9);
-  --color-accent-2: light-dark(#fbcfc9, #fffcfc);
-  --color-accent-hsl: light-dark(#f5a494, #f5a494);
+  --color-accent-1: light-dark(hsl(9, 83.83%, 82.775%), hsl(7, 84.66%, 88.55%));
+  --color-accent-2: light-dark(hsl(7, 84.66%, 88.55%), hsl(5, 87.15%, 99.33%));
+  --color-accent-hsl: light-dark(hsl(10, 83%, 77%), hsl(10, 83%, 77%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -152,7 +152,7 @@ body {
   --checkbox-border-color: #8b8693;
   --checkbox-border-color-hover: #9f9ca6;
   --checkbox-color: #f5a494;
-  --checkbox-color-hover: #fbcfc9;
+  --checkbox-color-hover: hsl(7, 84.66%, 88.55%);
   --checkbox-margin-inline-start: 0.85em;
   --checkbox-marker-color: #161617;
   --checkbox-radius: 2px;
@@ -178,11 +178,11 @@ body {
   --code-value: #aca1cf;
   --code-white-space: pre-wrap;
   --collapse-icon-color: #8b8693;
-  --collapse-icon-color-collapsed: #fbcfc9;
+  --collapse-icon-color-collapsed: hsl(7, 84.66%, 88.55%);
   --color-accent: light-dark(#f5a494, #f5a494);
-  --color-accent-1: light-dark(#f8b9ae, #fbcfc9);
-  --color-accent-2: light-dark(#fbcfc9, #fffcfc);
-  --color-accent-hsl: light-dark(#f5a494, #f5a494);
+  --color-accent-1: light-dark(hsl(9, 83.83%, 82.775%), hsl(7, 84.66%, 88.55%));
+  --color-accent-2: light-dark(hsl(7, 84.66%, 88.55%), hsl(5, 87.15%, 99.33%));
+  --color-accent-hsl: light-dark(hsl(10, 83%, 77%), hsl(10, 83%, 77%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -322,7 +322,7 @@ body {
   --graph-line: #3f3f3f;
   --graph-node: #9f9ca6;
   --graph-node-attachment: #e6b99d;
-  --graph-node-focused: #fbcfc9;
+  --graph-node-focused: hsl(7, 84.66%, 88.55%);
   --graph-node-tag: #90b99f;
   --graph-node-unresolved: #8b8693;
   --graph-text: #c9c7cd;
@@ -416,7 +416,7 @@ body {
   --input-placeholder-color: #8b8693;
   --input-radius: 4px;
   --interactive-accent: #f5a494;
-  --interactive-accent-hover: #fffcfc;
+  --interactive-accent-hover: hsl(5, 87.15%, 99.33%);
   --interactive-accent-hsl: 10, 83%, 77%;
   --interactive-hover: #111;
   --interactive-normal: #000;
@@ -439,16 +439,16 @@ body {
   --link-accent-l: 70%;
   --link-accent-s: 44%;
   --link-color: #91a1d4;
-  --link-color-hover: #fffcfc;
+  --link-color-hover: hsl(5, 87.15%, 99.33%);
   --link-decoration: underline;
   --link-decoration-hover: underline;
   --link-decoration-thickness: auto;
-  --link-external-color: #fbcfc9;
-  --link-external-color-hover: #fffcfc;
+  --link-external-color: hsl(7, 84.66%, 88.55%);
+  --link-external-color-hover: hsl(5, 87.15%, 99.33%);
   --link-external-decoration: underline;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
-  --link-unresolved-color: #fbcfc9;
+  --link-unresolved-color: hsl(7, 84.66%, 88.55%);
   --link-unresolved-decoration-color: #f5a4944d;
   --link-unresolved-decoration-style: solid;
   --link-unresolved-filter: none;
@@ -463,7 +463,7 @@ body {
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
   --list-marker-color: #8b8693;
-  --list-marker-color-collapsed: #fbcfc9;
+  --list-marker-color-collapsed: hsl(7, 84.66%, 88.55%);
   --list-marker-color-hover: #9f9ca6;
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
@@ -553,7 +553,7 @@ body {
   --nav-item-children-padding-start: 4px;
   --nav-item-color: #9f9ca6;
   --nav-item-color-active: #f5a191;
-  --nav-item-color-highlighted: #fbcfc9;
+  --nav-item-color-highlighted: hsl(7, 84.66%, 88.55%);
   --nav-item-color-hover: #f5a191;
   --nav-item-color-selected: #f5a191;
   --nav-item-padding: 4px 8px 4px 24px;
@@ -579,7 +579,7 @@ body {
   --pill-color: #9f9ca6;
   --pill-color-hover: #c9c7cd;
   --pill-color-remove: #8b8693;
-  --pill-color-remove-hover: #fbcfc9;
+  --pill-color-remove-hover: hsl(7, 84.66%, 88.55%);
   --pill-decoration: none;
   --pill-decoration-hover: none;
   --pill-focus-left-adjust: -4px;
@@ -701,7 +701,7 @@ body {
   --tab-text-color-focused: #9f9ca6;
   --tab-text-color-focused-active: #9f9ca6;
   --tab-text-color-focused-active-current: #c9c7cd;
-  --tab-text-color-focused-highlighted: #fbcfc9;
+  --tab-text-color-focused-highlighted: hsl(7, 84.66%, 88.55%);
   --tab-width: 200px;
   --table-add-button-background: transparent;
   --table-add-button-border-color: transparent;
@@ -745,8 +745,8 @@ body {
   --tag-border-color: #f5a49426;
   --tag-border-color-hover: #f5a49426;
   --tag-border-width: 0px;
-  --tag-color: #fbcfc9;
-  --tag-color-hover: #fbcfc9;
+  --tag-color: hsl(7, 84.66%, 88.55%);
+  --tag-color-hover: hsl(7, 84.66%, 88.55%);
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-padding-x: 0.65em;
@@ -755,7 +755,7 @@ body {
   --tag-size: 0.875em;
   --tag-weight: inherit;
   --text-accent: #f5a494;
-  --text-accent-hover: #fffcfc;
+  --text-accent-hover: hsl(5, 87.15%, 99.33%);
   --text-error: #ea83a5;
   --text-faint: #8b8693;
   --text-highlight-bg: #e6b99d80;
@@ -797,7 +797,7 @@ body {
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: #161617;
-  caret-color: #fbcfc9;
+  caret-color: hsl(7, 84.66%, 88.55%);
   color: #c9c7cd;
   contain: initial;
   font-family:
@@ -1274,7 +1274,7 @@ a.tag {
   background-color: #f5a49433;
   border: 0px solid #f5a49426;
   border-radius: 2em;
-  color: #fbcfc9;
+  color: hsl(7, 84.66%, 88.55%);
   font-size: 0.875em;
   font-weight: inherit;
   line-height: 1;
@@ -1530,7 +1530,7 @@ svg.svg-icon {
 
 .clickable-icon.is-active {
   background-color: #313134;
-  color: #fbcfc9;
+  color: hsl(7, 84.66%, 88.55%);
   opacity: 0.65;
 }
 
@@ -1585,7 +1585,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-focused {
-  color: #fbcfc9;
+  color: hsl(7, 84.66%, 88.55%);
 }
 
 .graph-view.color-fill-tag {
@@ -1631,7 +1631,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-circle {
-  color: #fbcfc9;
+  color: hsl(7, 84.66%, 88.55%);
 }
 
 .graph-view.color-line {
@@ -1690,8 +1690,8 @@ svg.svg-icon {
   --code-tag: #ea83a5;
   --code-value: #aca1cf;
   --color-accent: #f5a494;
-  --color-accent-1: #fbcfc9;
-  --color-accent-2: #fffcfc;
+  --color-accent-1: hsl(7, 84.66%, 88.55%);
+  --color-accent-2: hsl(5, 87.15%, 99.33%);
   --color-accent-hsl: 10, 83%, 77%;
   --color-base-00: #1e1e1e;
   --color-base-05: #212121;
@@ -1740,7 +1740,7 @@ svg.svg-icon {
     inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
     0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
   --interactive-accent: #f5a494;
-  --interactive-accent-hover: #fbcfc9;
+  --interactive-accent-hover: hsl(7, 84.66%, 88.55%);
   --interactive-hover: #3f3f3f;
   --interactive-normal: #363636;
   --italic-color: #e29eca;
@@ -1780,7 +1780,7 @@ svg.svg-icon {
   --tab-radius-active: 4px;
   --table-background: #27272a4d;
   --table-header-background: #27272acc;
-  --text-accent: #fbcfc9;
+  --text-accent: hsl(7, 84.66%, 88.55%);
   --text-error: #ea83a5;
   --text-faint: #8b8693;
   --text-highlight-bg: #e6b99d80;
@@ -1798,8 +1798,8 @@ svg.svg-icon {
   --background-modifier-cover: #dcdcdc66;
   --background-secondary-alt: #212121;
   --color-accent: #f5a494;
-  --color-accent-1: #f8b9ae;
-  --color-accent-2: #fbcfc9;
+  --color-accent-1: hsl(9, 83.83%, 82.775%);
+  --color-accent-2: hsl(7, 84.66%, 88.55%);
   --color-accent-hsl: 10, 83%, 77%;
   --color-base-00: #ffffff;
   --color-base-05: #fcfcfc;

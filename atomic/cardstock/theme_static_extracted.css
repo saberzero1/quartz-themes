@@ -6,12 +6,18 @@
   --background-modifier-border-hover: light-dark(#c43131, #c43131);
   --background-modifier-error: light-dark(#c95454, #c95454);
   --background-modifier-error-hover: light-dark(#c43131, #c43131);
-  --background-modifier-error-rgb: light-dark(#c95454, #c95454);
+  --background-modifier-error-rgb: light-dark(
+    rgb(201, 84, 84),
+    rgb(201, 84, 84)
+  );
   --background-modifier-form-field: light-dark(#ffffff, #2f2a27);
   --background-modifier-hover: light-dark(#f0eae2, #2f2a27);
   --background-modifier-message: light-dark(#c95454, #c95454);
   --background-modifier-success: light-dark(#c95454, #c95454);
-  --background-modifier-success-rgb: light-dark(#c95454, #c95454);
+  --background-modifier-success-rgb: light-dark(
+    rgb(201, 84, 84),
+    rgb(201, 84, 84)
+  );
   --background-primary: light-dark(#ffffff, #2f2a27);
   --background-primary-alt: light-dark(#f0eae2, #38312e);
   --background-secondary: light-dark(#ffffff, #2f2a27);
@@ -19,9 +25,15 @@
   --beige: #f0eae2;
   --border-width: 1px;
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#9873f7, #a68af9);
-  --color-accent-2: light-dark(#a68af9, #c5b6fc);
-  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --color-accent-1: light-dark(
+    hsl(257, 88.88%, 70.95%),
+    hsl(255, 89.76%, 75.9%)
+  );
+  --color-accent-2: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
+  );
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -126,12 +138,18 @@ body {
   --background-modifier-border-hover: light-dark(#c43131, #c43131);
   --background-modifier-error: light-dark(#c95454, #c95454);
   --background-modifier-error-hover: light-dark(#c43131, #c43131);
-  --background-modifier-error-rgb: light-dark(#c95454, #c95454);
+  --background-modifier-error-rgb: light-dark(
+    rgb(201, 84, 84),
+    rgb(201, 84, 84)
+  );
   --background-modifier-form-field: light-dark(#ffffff, #2f2a27);
   --background-modifier-hover: light-dark(#f0eae2, #2f2a27);
   --background-modifier-message: light-dark(#c95454, #c95454);
   --background-modifier-success: light-dark(#c95454, #c95454);
-  --background-modifier-success-rgb: light-dark(#c95454, #c95454);
+  --background-modifier-success-rgb: light-dark(
+    rgb(201, 84, 84),
+    rgb(201, 84, 84)
+  );
   --background-primary: light-dark(#ffffff, #2f2a27);
   --background-primary-alt: light-dark(#f0eae2, #38312e);
   --background-secondary: light-dark(#ffffff, #2f2a27);
@@ -245,9 +263,15 @@ body {
   --collapse-icon-color: #949494;
   --collapse-icon-color-collapsed: #c95454;
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#9873f7, #a68af9);
-  --color-accent-2: light-dark(#a68af9, #c5b6fc);
-  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --color-accent-1: light-dark(
+    hsl(257, 88.88%, 70.95%),
+    hsl(255, 89.76%, 75.9%)
+  );
+  --color-accent-2: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
+  );
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -1718,8 +1742,8 @@ svg.svg-icon {
   --background-secondary-alt: #38312e;
   --callout-blend-mode: normal;
   --color-accent: #8a5cf5;
-  --color-accent-1: #a68af9;
-  --color-accent-2: #c5b6fc;
+  --color-accent-1: hsl(255, 89.76%, 75.9%);
+  --color-accent-2: hsl(253, 92.4%, 85.14%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-00: #1e1e1e;
   --color-base-05: #212121;
@@ -1818,8 +1842,8 @@ svg.svg-icon {
   --background-secondary-alt: #f0eae2;
   --code-background: #f8f5f1;
   --color-accent: #8a5cf5;
-  --color-accent-1: #9873f7;
-  --color-accent-2: #a68af9;
+  --color-accent-1: hsl(257, 88.88%, 70.95%);
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-00: #ffffff;
   --color-base-05: #fcfcfc;

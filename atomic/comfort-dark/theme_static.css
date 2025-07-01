@@ -936,9 +936,9 @@
   --accent-s: 50%;
   --background-secondary-alt: light-dark(#212121, #262626);
   --color-accent: light-dark(#bf9540, #bf9540);
-  --color-accent-1: light-dark(#c59b4d, #caa05b);
-  --color-accent-2: light-dark(#caa05b, #d4ac75);
-  --color-accent-hsl: light-dark(#bf9540, #bf9540);
+  --color-accent-1: light-dark(hsl(39, 50.5%, 53.75%), hsl(37, 51%, 57.5%));
+  --color-accent-2: light-dark(hsl(37, 51%, 57.5%), hsl(35, 52.5%, 64.5%));
+  --color-accent-hsl: light-dark(hsl(40, 50%, 50%), hsl(40, 50%, 50%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -1690,7 +1690,7 @@ body {
   --checkbox-border-color: #a09b80;
   --checkbox-border-color-hover: #b3b3b3;
   --checkbox-color: #bf9540;
-  --checkbox-color-hover: #caa05b;
+  --checkbox-color-hover: hsl(37, 51%, 57.5%);
   --checkbox-margin-inline-start: 0.85em;
   --checkbox-marker-color: #222222;
   --checkbox-radius: 50%;
@@ -1718,9 +1718,9 @@ body {
   --collapse-icon-color: #a09b80;
   --collapse-icon-color-collapsed: #59a2c5;
   --color-accent: light-dark(#bf9540, #bf9540);
-  --color-accent-1: light-dark(#c59b4d, #caa05b);
-  --color-accent-2: light-dark(#caa05b, #d4ac75);
-  --color-accent-hsl: light-dark(#bf9540, #bf9540);
+  --color-accent-1: light-dark(hsl(39, 50.5%, 53.75%), hsl(37, 51%, 57.5%));
+  --color-accent-2: light-dark(hsl(37, 51%, 57.5%), hsl(35, 52.5%, 64.5%));
+  --color-accent-hsl: light-dark(hsl(40, 50%, 50%), hsl(40, 50%, 50%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -1960,8 +1960,8 @@ body {
   --input-height: 30px;
   --input-placeholder-color: #a09b80;
   --input-radius: 5px;
-  --interactive-accent: #caa05b;
-  --interactive-accent-hover: #d4ac75;
+  --interactive-accent: hsl(37, 51%, 57.5%);
+  --interactive-accent-hover: hsl(35, 52.5%, 64.5%);
   --interactive-accent-hsl: 40, 50%, 50%;
   --interactive-hover: #111;
   --interactive-normal: #000;
@@ -2293,7 +2293,7 @@ body {
   --tag-size: 0.875em;
   --tag-weight: inherit;
   --text-accent: #bf9540;
-  --text-accent-hover: #d4ac75;
+  --text-accent-hover: hsl(35, 52.5%, 64.5%);
   --text-error: #fb464c;
   --text-faint: #666666;
   --text-highlight-bg: #ffd00066;
@@ -2379,8 +2379,8 @@ body {
   --background-modifier-cover: #dcdcdc66;
   --background-secondary-alt: #212121;
   --color-accent: #bf9540;
-  --color-accent-1: #c59b4d;
-  --color-accent-2: #caa05b;
+  --color-accent-1: hsl(39, 50.5%, 53.75%);
+  --color-accent-2: hsl(37, 51%, 57.5%);
   --color-accent-hsl: 40, 50%, 50%;
   --color-base-00: #ffffff;
   --color-base-05: #fcfcfc;
@@ -2460,8 +2460,8 @@ body {
   --code-value: #b5cea8;
   --code-variable: #8cdcfe;
   --color-accent: #bf9540;
-  --color-accent-1: #caa05b;
-  --color-accent-2: #d4ac75;
+  --color-accent-1: hsl(37, 51%, 57.5%);
+  --color-accent-2: hsl(35, 52.5%, 64.5%);
   --color-accent-hsl: 40, 50%, 50%;
   --color-base-00: #1e1e1e;
   --color-base-05: #212121;
@@ -2509,7 +2509,7 @@ body {
     inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
     0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
   --interactive-accent: #bf9540;
-  --interactive-accent-hover: #caa05b;
+  --interactive-accent-hover: hsl(37, 51%, 57.5%);
   --interactive-hover: #3f3f3f;
   --interactive-normal: #363636;
   --mono-rgb-0: 0, 0, 0;
@@ -7740,12 +7740,12 @@ button.mod-cta {
 }
 
 button.mod-cta.mobile-tap {
-  background-color: #caa05b;
+  background-color: hsl(37, 51%, 57.5%);
 }
 
 @media (hover: hover) {
   button.mod-cta:hover {
-    background-color: #caa05b;
+    background-color: hsl(37, 51%, 57.5%);
   }
 }
 
@@ -8561,7 +8561,7 @@ svg.svg-icon {
 
 .clickable-icon.is-active {
   background-color: #bf954026;
-  color: #caa05b;
+  color: hsl(37, 51%, 57.5%);
   opacity: 0.65;
 }
 
@@ -15978,8 +15978,8 @@ input[type="checkbox"]:checked {
 
 @media (hover: hover) {
   input[type="checkbox"]:checked:hover {
-    background-color: #caa05b;
-    border-color: #caa05b;
+    background-color: hsl(37, 51%, 57.5%);
+    border-color: hsl(37, 51%, 57.5%);
   }
 }
 
@@ -16287,8 +16287,8 @@ em {
 }
 
 .view-action.mod-bookmarked {
-  --icon-color: #caa05b;
-  --icon-color-hover: #caa05b;
+  --icon-color: hsl(37, 51%, 57.5%);
+  --icon-color-hover: hsl(37, 51%, 57.5%);
 }
 
 .workspace-leaf-content:not([data-type="browser"]) .view-action.mod-bookmark {
@@ -19709,7 +19709,7 @@ body.theme-dark {
 }
 
 .canvas-selection {
-  background-color: hsla(light-dark(40, 50%, 50%, 40, 50%, 50%), 0.1);
+  background-color: hsla(light-dark(hsl(40, 50%, 50%), hsl(40, 50%, 50%)), 0.1);
   border: 2px solid light-dark(#bf9540, #bf9540);
   pointer-events: none;
   position: absolute;
@@ -19717,8 +19717,11 @@ body.theme-dark {
 }
 
 .canvas-selection.mod-group-selection {
-  background-color: hsla(light-dark(40, 50%, 50%, 40, 50%, 50%), 0.03);
-  border-color: hsla(light-dark(40, 50%, 50%, 40, 50%, 50%), 0.3);
+  background-color: hsla(
+    light-dark(hsl(40, 50%, 50%), hsl(40, 50%, 50%)),
+    0.03
+  );
+  border-color: hsla(light-dark(hsl(40, 50%, 50%), hsl(40, 50%, 50%)), 0.3);
   border-radius: 3px;
   border-width: 3px;
   pointer-events: initial;
@@ -20096,7 +20099,7 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 }
 
 .canvas-node.is-dummy .canvas-node-container {
-  background-color: hsla(light-dark(40, 50%, 50%, 40, 50%, 50%), 0.2);
+  background-color: hsla(light-dark(hsl(40, 50%, 50%), hsl(40, 50%, 50%)), 0.2);
   border: 4px solid light-dark(#bf9540, #bf9540);
   box-shadow: 0px 2px 10px #00000026;
 }
@@ -20718,7 +20721,7 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-placeholder-message {
-  background: hsla(light-dark(40, 50%, 50%, 40, 50%, 50%), 0.1);
+  background: hsla(light-dark(hsl(40, 50%, 50%), hsl(40, 50%, 50%)), 0.1);
   border-radius: 8px;
   color: light-dark(#bf9540, #bf9540);
   font-size: 19.2px;
@@ -20798,8 +20801,8 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .view-action.mod-webviewer {
-  --icon-color: #caa05b;
-  --icon-color-hover: #caa05b;
+  --icon-color: hsl(37, 51%, 57.5%);
+  --icon-color-hover: hsl(37, 51%, 57.5%);
 }
 
 .webviewer-container {
@@ -22038,8 +22041,8 @@ body.is-phone .suggestion-bg {
 
 .is-mobile .view-header-nav-buttons {
   --icon-color: #bf9540;
-  --icon-color-active: #caa05b;
-  --icon-color-focus: #caa05b;
+  --icon-color-active: hsl(37, 51%, 57.5%);
+  --icon-color-focus: hsl(37, 51%, 57.5%);
   --icon-color-hover: #bf9540;
   --icon-size: 24px;
   --icon-stroke: 1.75px;
@@ -22047,8 +22050,8 @@ body.is-phone .suggestion-bg {
 
 .is-mobile .view-header .view-action {
   --icon-color: #bf9540;
-  --icon-color-active: #caa05b;
-  --icon-color-focus: #caa05b;
+  --icon-color-active: hsl(37, 51%, 57.5%);
+  --icon-color-focus: hsl(37, 51%, 57.5%);
   --icon-color-hover: #bf9540;
   --icon-size: 24px;
   --icon-stroke: 1.75px;
@@ -22575,7 +22578,7 @@ body.is-tablet .workspace-drawer.mod-left .workspace-drawer-inner {
 .workspace-drawer .nav-buttons-container {
   --icon-color: #bf9540;
   --icon-color-active: #bf9540;
-  --icon-color-focus: #caa05b;
+  --icon-color-focus: hsl(37, 51%, 57.5%);
   --icon-color-hover: #bf9540;
   --icon-size: 24px;
   --icon-stroke: 1.75px;
@@ -22929,8 +22932,8 @@ body.is-tablet .workspace-drawer.mod-left .workspace-drawer-inner {
 
 body.is-tablet .sidebar-toggle-button {
   --icon-color: #bf9540;
-  --icon-color-active: #caa05b;
-  --icon-color-focus: #caa05b;
+  --icon-color-active: hsl(37, 51%, 57.5%);
+  --icon-color-focus: hsl(37, 51%, 57.5%);
   --icon-color-hover: #bf9540;
   --icon-size: 24px;
   --icon-stroke: 1.75px;
@@ -23209,8 +23212,8 @@ body.is-tablet .mobile-navbar {
 
 .mobile-navbar-actions {
   --icon-color: #bf9540;
-  --icon-color-active: #caa05b;
-  --icon-color-focus: #caa05b;
+  --icon-color-active: hsl(37, 51%, 57.5%);
+  --icon-color-focus: hsl(37, 51%, 57.5%);
   --icon-color-hover: #bf9540;
   --icon-size: 26px;
   --icon-stroke: 1.75px;
@@ -23506,8 +23509,8 @@ body.is-ios .mobile-tab-switcher-inner-scroll {
 
 .mobile-tab-switcher-menubar {
   --icon-color: #bf9540;
-  --icon-color-active: #caa05b;
-  --icon-color-focus: #caa05b;
+  --icon-color-active: hsl(37, 51%, 57.5%);
+  --icon-color-focus: hsl(37, 51%, 57.5%);
   --icon-color-hover: #bf9540;
   --icon-size: 26px;
   --icon-stroke: 1.75px;

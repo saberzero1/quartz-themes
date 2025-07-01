@@ -225,7 +225,7 @@ html[saved-theme="dark"] {
   --background-primary: light-dark(#2240, #002240);
   --background-secondary: light-dark(#d9c9ff, #011627);
   --color-accent-2: light-dark(hsl(205, 102%, 57.5%), hsl(203, 105%, 64.5%));
-  --color-accent-hsl: light-dark(#0088ff, #0088ff);
+  --color-accent-hsl: light-dark(hsl(208, 100%, 50%), hsl(208, 100%, 50%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -312,7 +312,7 @@ body {
   --collapse-icon-color: #666666;
   --collapse-icon-color-collapsed: hsl(205, 102%, 57.5%);
   --color-accent-2: light-dark(hsl(205, 102%, 57.5%), hsl(203, 105%, 64.5%));
-  --color-accent-hsl: light-dark(#0088ff, #0088ff);
+  --color-accent-hsl: light-dark(hsl(208, 100%, 50%), hsl(208, 100%, 50%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);

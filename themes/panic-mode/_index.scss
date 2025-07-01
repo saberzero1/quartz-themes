@@ -1218,7 +1218,8 @@ body {
       color: var(--button-secondary-fg-color);
       -webkit-app-region: no-drag;
       background: transparent;
-      border: 1px solid light-dark(#a1a1a1, #a1a1a1);
+      border: 1px solid
+        light-dark(light-dark(#a1a1a1, #a1a1a1), light-dark(#a1a1a1, #a1a1a1));
       border-radius: 5px;
       color: light-dark(#e0e2d5, #e0e2d5);
       font-family: inherit;

@@ -4,9 +4,9 @@
   --accent-s: 50%;
   --background-secondary-alt: light-dark(#212121, #262626);
   --color-accent: light-dark(#bf9540, #bf9540);
-  --color-accent-1: light-dark(#c59b4d, #caa05b);
-  --color-accent-2: light-dark(#caa05b, #d4ac75);
-  --color-accent-hsl: light-dark(#bf9540, #bf9540);
+  --color-accent-1: light-dark(hsl(39, 50.5%, 53.75%), hsl(37, 51%, 57.5%));
+  --color-accent-2: light-dark(hsl(37, 51%, 57.5%), hsl(35, 52.5%, 64.5%));
+  --color-accent-hsl: light-dark(hsl(40, 50%, 50%), hsl(40, 50%, 50%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -152,7 +152,7 @@ body {
   --checkbox-border-color: #a09b80;
   --checkbox-border-color-hover: #b3b3b3;
   --checkbox-color: #bf9540;
-  --checkbox-color-hover: #caa05b;
+  --checkbox-color-hover: hsl(37, 51%, 57.5%);
   --checkbox-margin-inline-start: 0.85em;
   --checkbox-marker-color: #222222;
   --checkbox-radius: 50%;
@@ -180,9 +180,9 @@ body {
   --collapse-icon-color: #a09b80;
   --collapse-icon-color-collapsed: #59a2c5;
   --color-accent: light-dark(#bf9540, #bf9540);
-  --color-accent-1: light-dark(#c59b4d, #caa05b);
-  --color-accent-2: light-dark(#caa05b, #d4ac75);
-  --color-accent-hsl: light-dark(#bf9540, #bf9540);
+  --color-accent-1: light-dark(hsl(39, 50.5%, 53.75%), hsl(37, 51%, 57.5%));
+  --color-accent-2: light-dark(hsl(37, 51%, 57.5%), hsl(35, 52.5%, 64.5%));
+  --color-accent-hsl: light-dark(hsl(40, 50%, 50%), hsl(40, 50%, 50%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -422,8 +422,8 @@ body {
   --input-height: 30px;
   --input-placeholder-color: #a09b80;
   --input-radius: 5px;
-  --interactive-accent: #caa05b;
-  --interactive-accent-hover: #d4ac75;
+  --interactive-accent: hsl(37, 51%, 57.5%);
+  --interactive-accent-hover: hsl(35, 52.5%, 64.5%);
   --interactive-accent-hsl: 40, 50%, 50%;
   --interactive-hover: #111;
   --interactive-normal: #000;
@@ -755,7 +755,7 @@ body {
   --tag-size: 0.875em;
   --tag-weight: inherit;
   --text-accent: #bf9540;
-  --text-accent-hover: #d4ac75;
+  --text-accent-hover: hsl(35, 52.5%, 64.5%);
   --text-error: #fb464c;
   --text-faint: #666666;
   --text-highlight-bg: #ffd00066;
@@ -1548,7 +1548,7 @@ svg.svg-icon {
 
 .clickable-icon.is-active {
   background-color: #bf954026;
-  color: #caa05b;
+  color: hsl(37, 51%, 57.5%);
   opacity: 0.65;
 }
 
@@ -1713,8 +1713,8 @@ svg.svg-icon {
   --code-value: #b5cea8;
   --code-variable: #8cdcfe;
   --color-accent: #bf9540;
-  --color-accent-1: #caa05b;
-  --color-accent-2: #d4ac75;
+  --color-accent-1: hsl(37, 51%, 57.5%);
+  --color-accent-2: hsl(35, 52.5%, 64.5%);
   --color-accent-hsl: 40, 50%, 50%;
   --color-base-00: #1e1e1e;
   --color-base-05: #212121;
@@ -1762,7 +1762,7 @@ svg.svg-icon {
     inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 #0000004d,
     0 1px 1.5px 0 #00000033, 0 1px 2px 0 #00000066, 0 0 0 0 transparent;
   --interactive-accent: #bf9540;
-  --interactive-accent-hover: #caa05b;
+  --interactive-accent-hover: hsl(37, 51%, 57.5%);
   --interactive-hover: #3f3f3f;
   --interactive-normal: #363636;
   --mono-rgb-0: 0, 0, 0;
@@ -1805,8 +1805,8 @@ svg.svg-icon {
   --background-modifier-cover: #dcdcdc66;
   --background-secondary-alt: #212121;
   --color-accent: #bf9540;
-  --color-accent-1: #c59b4d;
-  --color-accent-2: #caa05b;
+  --color-accent-1: hsl(39, 50.5%, 53.75%);
+  --color-accent-2: hsl(37, 51%, 57.5%);
   --color-accent-hsl: 40, 50%, 50%;
   --color-base-00: #ffffff;
   --color-base-05: #fcfcfc;

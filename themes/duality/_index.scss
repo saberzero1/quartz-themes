@@ -265,8 +265,8 @@ html[saved-theme="light"] {
   --code-keyword: light-dark(#a882ff, #ff4500);
   --code-normal: light-dark(#d4c9b5, #d4c9b5);
   --code-string: light-dark(#fa99cd, #b0a38c);
-  --color-accent-2: light-dark(#f7eede, hsl(35, 63%, 103.2%));
-  --color-accent-hsl: light-dark(#ebd6ad, #ebd6ad);
+  --color-accent-2: light-dark(hsl(37, 61.2%, 92%), hsl(35, 63%, 103.2%));
+  --color-accent-hsl: light-dark(hsl(40, 60%, 80%), hsl(40, 60%, 80%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -291,7 +291,7 @@ html[saved-theme="light"] {
   --link-external-color: light-dark(#44cf6e, #ff4500);
   --p-spacing: 16px;
   --text-accent: light-dark(#ebd6ad, #ff4500);
-  --text-accent-hover: light-dark(#f7eede, #ff6347);
+  --text-accent-hover: light-dark(hsl(37, 61.2%, 92%), #ff6347);
   --text-faint: light-dark(#666666, #8c816d);
   --text-muted: light-dark(#999999, #b0a38c);
   --text-normal: light-dark(#dadada, #d4c9b5);
@@ -346,7 +346,7 @@ body {
   --checkbox-border-color: #8c816d;
   --checkbox-border-color-hover: #b0a38c;
   --checkbox-color: #ebd6ad;
-  --checkbox-color-hover: #f7eede;
+  --checkbox-color-hover: hsl(37, 61.2%, 92%);
   --checkbox-marker-color: #1c1c1c;
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
@@ -363,8 +363,8 @@ body {
   --code-value: #a882ff;
   --collapse-icon-color: #8c816d;
   --collapse-icon-color-collapsed: #ff4500;
-  --color-accent-2: light-dark(#f7eede, hsl(35, 63%, 103.2%));
-  --color-accent-hsl: light-dark(#ebd6ad, #ebd6ad);
+  --color-accent-2: light-dark(hsl(37, 61.2%, 92%), hsl(35, 63%, 103.2%));
+  --color-accent-hsl: light-dark(hsl(40, 60%, 80%), hsl(40, 60%, 80%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -429,7 +429,7 @@ body {
   --tag-radius: 2em;
   --tag-weight: inherit;
   --text-accent: light-dark(#ebd6ad, #ff4500);
-  --text-accent-hover: light-dark(#f7eede, #ff6347);
+  --text-accent-hover: light-dark(hsl(37, 61.2%, 92%), #ff6347);
   --text-faint: light-dark(#666666, #8c816d);
   --text-highlight-bg: #ffd00066;
   --text-muted: light-dark(#999999, #b0a38c);

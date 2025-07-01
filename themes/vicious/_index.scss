@@ -29,7 +29,7 @@ html[saved-theme="dark"] {
   --tag-border-color: transparent;
   --tag-border-width: 1px;
 
-  --text-accent: #f7ddb5;
+  --text-accent: hsl(36, 81.6%, 83.95%);
 
   --hr-thickness: 3px;
   --mono-rgb-100: 251, 252, 252;
@@ -37,7 +37,7 @@ html[saved-theme="dark"] {
   --tag-border-color: transparent;
   --tag-border-width: 1px;
 
-  --text-accent: #f7ddb5;
+  --text-accent: hsl(36, 81.6%, 83.95%);
 }
 
 :root[saved-theme="light"],
@@ -238,8 +238,8 @@ html[saved-theme="light"] {
   --code-background: light-dark(#f1f2f5, #17181e);
   --collapse-icon-color: light-dark(#68696c, #4f5053);
   --collapse-icon-color-collapsed: light-dark(#08090e, #fbfcfc);
-  --color-accent-2: light-dark(#f7ddb5, #fdf2e4);
-  --color-accent-hsl: light-dark(#f1cb83, #f1cb83);
+  --color-accent-2: light-dark(hsl(36, 81.6%, 83.95%), hsl(34, 84%, 94.17%));
+  --color-accent-hsl: light-dark(hsl(39, 80%, 73%), hsl(39, 80%, 73%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -315,7 +315,7 @@ body {
   --checkbox-border-color: light-dark(#818184, #818184);
   --checkbox-border-color-hover: #818184;
   --checkbox-color: #f1cb83;
-  --checkbox-color-hover: #f7ddb5;
+  --checkbox-color-hover: hsl(36, 81.6%, 83.95%);
   --checkbox-marker-color: #08090e;
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
@@ -332,8 +332,8 @@ body {
   --code-value: #ab8beb;
   --collapse-icon-color: light-dark(#68696c, #4f5053);
   --collapse-icon-color-collapsed: light-dark(#08090e, #fbfcfc);
-  --color-accent-2: light-dark(#f7ddb5, #fdf2e4);
-  --color-accent-hsl: light-dark(#f1cb83, #f1cb83);
+  --color-accent-2: light-dark(hsl(36, 81.6%, 83.95%), hsl(34, 84%, 94.17%));
+  --color-accent-hsl: light-dark(hsl(39, 80%, 73%), hsl(39, 80%, 73%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -379,9 +379,9 @@ body {
   --interactive-accent-hsl: 39, 80%, 73%;
   --italic-color: inherit;
   --link-color: light-dark(#f18196, #f18196);
-  --link-color-hover: #fdf2e4;
-  --link-external-color: #f7ddb5;
-  --link-external-color-hover: #fdf2e4;
+  --link-color-hover: hsl(34, 84%, 94.17%);
+  --link-external-color: hsl(36, 81.6%, 83.95%);
+  --link-external-color-hover: hsl(34, 84%, 94.17%);
   --link-external-filter: none;
   --link-weight: 600;
   --p-spacing: 1rem;
@@ -391,14 +391,14 @@ body {
   --tag-border-color: #f1cb8326;
   --tag-border-color-hover: #f1cb8326;
   --tag-border-width: 0px;
-  --tag-color: #f7ddb5;
-  --tag-color-hover: #f7ddb5;
+  --tag-color: hsl(36, 81.6%, 83.95%);
+  --tag-color-hover: hsl(36, 81.6%, 83.95%);
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-radius: light-dark(16px, 16px);
   --tag-weight: inherit;
   --text-accent: #f1cb83;
-  --text-accent-hover: #fdf2e4;
+  --text-accent-hover: hsl(34, 84%, 94.17%);
   --text-faint: light-dark(#818184, #68696c);
   --text-highlight-bg: #68696c66;
   --text-muted: light-dark(#818184, #818184);
@@ -406,7 +406,7 @@ body {
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: light-dark(#fbfcfc, #08090e);
-  caret-color: #f7ddb5;
+  caret-color: hsl(36, 81.6%, 83.95%);
   color: light-dark(#08090e, #fbfcfc);
   contain: initial;
   font-family:

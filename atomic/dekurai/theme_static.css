@@ -936,9 +936,15 @@
   --accent-s: 73%;
   --background-secondary-alt: light-dark(#212121, #0e1315);
   --color-accent: light-dark(#127352, #127352);
-  --color-accent-1: light-dark(#137c57, #138559);
-  --color-accent-2: light-dark(#138559, #149760);
-  --color-accent-hsl: light-dark(#127352, #127352);
+  --color-accent-1: light-dark(
+    hsl(159, 73.73%, 27.95%),
+    hsl(157, 74.46%, 29.9%)
+  );
+  --color-accent-2: light-dark(
+    hsl(157, 74.46%, 29.9%),
+    hsl(155, 76.65%, 33.54%)
+  );
+  --color-accent-hsl: light-dark(hsl(160, 73%, 26%), hsl(160, 73%, 26%));
   --color-base-00: light-dark(#ffffff, #141a1f);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #101519);
@@ -1722,9 +1728,15 @@ body {
   --collapse-icon-color: #666666;
   --collapse-icon-color-collapsed: #0cc084;
   --color-accent: light-dark(#127352, #127352);
-  --color-accent-1: light-dark(#137c57, #138559);
-  --color-accent-2: light-dark(#138559, #149760);
-  --color-accent-hsl: light-dark(#127352, #127352);
+  --color-accent-1: light-dark(
+    hsl(159, 73.73%, 27.95%),
+    hsl(157, 74.46%, 29.9%)
+  );
+  --color-accent-2: light-dark(
+    hsl(157, 74.46%, 29.9%),
+    hsl(155, 76.65%, 33.54%)
+  );
+  --color-accent-hsl: light-dark(hsl(160, 73%, 26%), hsl(160, 73%, 26%));
   --color-base-00: light-dark(#ffffff, #141a1f);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #101519);
@@ -1951,8 +1963,8 @@ body {
   --input-height: 30px;
   --input-placeholder-color: #666666;
   --input-radius: 5px;
-  --interactive-accent: #138559;
-  --interactive-accent-hover: #149760;
+  --interactive-accent: hsl(157, 74.46%, 29.9%);
+  --interactive-accent-hover: hsl(155, 76.65%, 33.54%);
   --interactive-accent-hsl: 160, 73%, 26%;
   --interactive-hover: #111;
   --interactive-normal: #000;
@@ -2277,7 +2289,7 @@ body {
   --tag-size: 0.875em;
   --tag-weight: inherit;
   --text-accent: #127352;
-  --text-accent-hover: #149760;
+  --text-accent-hover: hsl(155, 76.65%, 33.54%);
   --text-error: #fb464c;
   --text-faint: #666666;
   --text-highlight-bg: #ffd00066;
@@ -2359,8 +2371,8 @@ body {
   --background-modifier-cover: #dcdcdc66;
   --background-secondary-alt: #212121;
   --color-accent: #127352;
-  --color-accent-1: #137c57;
-  --color-accent-2: #138559;
+  --color-accent-1: hsl(159, 73.73%, 27.95%);
+  --color-accent-2: hsl(157, 74.46%, 29.9%);
   --color-accent-hsl: 160, 73%, 26%;
   --color-base-00: #ffffff;
   --color-base-05: #fcfcfc;
@@ -2425,8 +2437,8 @@ body {
   --bold-weight: 600;
   --code-normal: #7095c2;
   --color-accent: #127352;
-  --color-accent-1: #138559;
-  --color-accent-2: #149760;
+  --color-accent-1: hsl(157, 74.46%, 29.9%);
+  --color-accent-2: hsl(155, 76.65%, 33.54%);
   --color-accent-hsl: 160, 73%, 26%;
   --color-base-00: #141a1f;
   --color-base-05: #212121;
@@ -19548,7 +19560,10 @@ body.theme-dark {
 }
 
 .canvas-selection {
-  background-color: hsla(light-dark(160, 73%, 26%, 160, 73%, 26%), 0.1);
+  background-color: hsla(
+    light-dark(hsl(160, 73%, 26%), hsl(160, 73%, 26%)),
+    0.1
+  );
   border: 2px solid light-dark(#127352, #127352);
   pointer-events: none;
   position: absolute;
@@ -19556,8 +19571,11 @@ body.theme-dark {
 }
 
 .canvas-selection.mod-group-selection {
-  background-color: hsla(light-dark(160, 73%, 26%, 160, 73%, 26%), 0.03);
-  border-color: hsla(light-dark(160, 73%, 26%, 160, 73%, 26%), 0.3);
+  background-color: hsla(
+    light-dark(hsl(160, 73%, 26%), hsl(160, 73%, 26%)),
+    0.03
+  );
+  border-color: hsla(light-dark(hsl(160, 73%, 26%), hsl(160, 73%, 26%)), 0.3);
   border-radius: 3px;
   border-width: 3px;
   pointer-events: initial;
@@ -19935,7 +19953,10 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 }
 
 .canvas-node.is-dummy .canvas-node-container {
-  background-color: hsla(light-dark(160, 73%, 26%, 160, 73%, 26%), 0.2);
+  background-color: hsla(
+    light-dark(hsl(160, 73%, 26%), hsl(160, 73%, 26%)),
+    0.2
+  );
   border: 4px solid light-dark(#127352, #127352);
   box-shadow: 0px 2px 10px #00000026;
 }
@@ -20557,7 +20578,7 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-placeholder-message {
-  background: hsla(light-dark(160, 73%, 26%, 160, 73%, 26%), 0.1);
+  background: hsla(light-dark(hsl(160, 73%, 26%), hsl(160, 73%, 26%)), 0.1);
   border-radius: 8px;
   color: light-dark(#127352, #127352);
   font-size: 19.2px;

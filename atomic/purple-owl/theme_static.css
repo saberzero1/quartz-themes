@@ -935,11 +935,14 @@
   --accent-h: 14;
   --accent-l: 70%;
   --accent-s: 90%;
-  --background-modifier-accent: light-dark(#ac8cf8, #530ff0);
-  --background-modifier-border: light-dark(#bb7ae6, #03243e);
-  --background-modifier-border-focus: light-dark(#9c3eda, #ecc48d);
-  --background-modifier-border-hover: light-dark(#ad60e1, #c792ea);
-  --background-modifier-form-field: light-dark(#d5aeef, #2a2a2a);
+  --background-modifier-accent: light-dark(
+    hsl(258, 88%, 76%),
+    hsl(258, 88%, 50%)
+  );
+  --background-modifier-border: light-dark(hsl(276, 68%, 69%), #03243e);
+  --background-modifier-border-focus: light-dark(hsl(276, 68%, 55%), #ecc48d);
+  --background-modifier-border-hover: light-dark(hsl(276, 68%, 63%), #c792ea);
+  --background-modifier-form-field: light-dark(hsl(276, 68%, 81%), #2a2a2a);
   --background-secondary: light-dark(#f78c6c, #021d33);
   --background-secondary-alt: light-dark(#212121, #363636);
   --background-tertiary: light-dark(#03243e, #082632);
@@ -951,9 +954,15 @@
   --border-width: 1px;
   --border-width-alt: 1px;
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#9873f7, #a68af9);
-  --color-accent-2: light-dark(#a68af9, #c5b6fc);
-  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --color-accent-1: light-dark(
+    hsl(257, 88.88%, 70.95%),
+    hsl(255, 89.76%, 75.9%)
+  );
+  --color-accent-2: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
+  );
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -998,7 +1007,7 @@
   --h6: 0.85em;
   --h6-weight: 400;
   --icon-muted: 0.4;
-  --interactive-accent: light-dark(#ac8cf8, #c792ea);
+  --interactive-accent: light-dark(hsl(258, 88%, 76%), #c792ea);
   --keyboard-height: 0px;
   --line-height: 1.5;
   --line-width: 40rem;
@@ -1009,7 +1018,7 @@
   --page-border: 9px solid transparent;
   --page-margin: 1px auto -8px;
   --pdfViewer-padding-bottom: 0;
-  --quote-opening-modifier: light-dark(#b269e2, #48146b);
+  --quote-opening-modifier: light-dark(hsl(276, 68%, 65%), hsl(276, 68%, 25%));
   --safe-area-inset-bottom: env(safe-area-inset-bottom);
   --safe-area-inset-left: env(safe-area-inset-left);
   --safe-area-inset-right: env(safe-area-inset-right);
@@ -1018,7 +1027,7 @@
   --text:
     "Monaspace Argon", "monolisa", menlo, SFMono-Regular, Consolas, monospace;
   --text-accent: light-dark(#8a5cf5, #ecc48d);
-  --text-accent-hover: light-dark(#672cf2, #c792ea);
+  --text-accent-hover: light-dark(hsl(258, 88%, 56%), #c792ea);
   --text-editor:
     "Monaspace Argon", "monolisa", menlo, SFMono-Regular, Consolas, monospace;
   --text-muted: light-dark(#03243e, #c792ea);
@@ -1647,15 +1656,18 @@ body {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
-  --background-modifier-accent: light-dark(#ac8cf8, #530ff0);
+  --background-modifier-accent: light-dark(
+    hsl(258, 88%, 76%),
+    hsl(258, 88%, 50%)
+  );
   --background-modifier-active-hover: #8a5cf526;
-  --background-modifier-border: light-dark(#bb7ae6, #03243e);
-  --background-modifier-border-focus: light-dark(#9c3eda, #ecc48d);
-  --background-modifier-border-hover: light-dark(#ad60e1, #c792ea);
+  --background-modifier-border: light-dark(hsl(276, 68%, 69%), #03243e);
+  --background-modifier-border-focus: light-dark(hsl(276, 68%, 55%), #ecc48d);
+  --background-modifier-border-hover: light-dark(hsl(276, 68%, 63%), #c792ea);
   --background-modifier-error: #fb464c;
   --background-modifier-error-hover: #fb464c;
   --background-modifier-error-rgb: 251, 70, 76;
-  --background-modifier-form-field: light-dark(#d5aeef, #2a2a2a);
+  --background-modifier-form-field: light-dark(hsl(276, 68%, 81%), #2a2a2a);
   --background-modifier-hover: #ffffff11;
   --background-modifier-message: #000000e6;
   --background-modifier-success: #44cf6e;
@@ -1754,7 +1766,7 @@ body {
   --checklist-done-color: #c792ea;
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: 4px;
-  --code-background: #bf83e7;
+  --code-background: hsl(276, 68%, 71%);
   --code-border-color: #03243e;
   --code-border-width: 0px;
   --code-comment: #c792ea97;
@@ -1774,9 +1786,15 @@ body {
   --collapse-icon-color: #c792ea97;
   --collapse-icon-color-collapsed: #ecc48d;
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#9873f7, #a68af9);
-  --color-accent-2: light-dark(#a68af9, #c5b6fc);
-  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --color-accent-1: light-dark(
+    hsl(257, 88.88%, 70.95%),
+    hsl(255, 89.76%, 75.9%)
+  );
+  --color-accent-2: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
+  );
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -2004,8 +2022,8 @@ body {
   --input-height: 30px;
   --input-placeholder-color: #c792ea97;
   --input-radius: 5px;
-  --interactive-accent: light-dark(#ac8cf8, #c792ea);
-  --interactive-accent-hover: #c5b6fc;
+  --interactive-accent: light-dark(hsl(258, 88%, 76%), #c792ea);
+  --interactive-accent-hover: hsl(253, 92.4%, 85.14%);
   --interactive-accent-hsl: 258, 88%, 66%;
   --interactive-hover: #111;
   --interactive-normal: #000;
@@ -2182,7 +2200,7 @@ body {
   --prompt-max-height: 70vh;
   --prompt-max-width: 80vw;
   --prompt-width: 700px;
-  --quote-opening-modifier: light-dark(#b269e2, #48146b);
+  --quote-opening-modifier: light-dark(hsl(276, 68%, 65%), hsl(276, 68%, 25%));
   --radius-l: 12px;
   --radius-m: 8px;
   --radius-s: 4px;
@@ -2330,7 +2348,7 @@ body {
   --tag-size: 0.875em;
   --tag-weight: inherit;
   --text-accent: light-dark(#8a5cf5, #ecc48d);
-  --text-accent-hover: light-dark(#672cf2, #c792ea);
+  --text-accent-hover: light-dark(hsl(258, 88%, 56%), #c792ea);
   --text-error: #fb464c;
   --text-faint: #666666;
   --text-highlight-bg: #ffd00066;
@@ -2394,14 +2412,14 @@ body {
 
 .theme-light {
   --background-match-highlight: #8f77c533;
-  --background-modifier-accent: #ac8cf8;
-  --background-modifier-border: #bb7ae6;
-  --background-modifier-border-focus: #9c3eda;
-  --background-modifier-border-hover: #ad60e1;
+  --background-modifier-accent: hsl(258, 88%, 76%);
+  --background-modifier-border: hsl(276, 68%, 69%);
+  --background-modifier-border-focus: hsl(276, 68%, 55%);
+  --background-modifier-border-hover: hsl(276, 68%, 63%);
   --background-modifier-box-shadow: #0000001a;
-  --background-modifier-cover: #bd7ee7b3;
-  --background-modifier-form-field: #d5aeef;
-  --background-modifier-form-field-highlighted: #dab6f1;
+  --background-modifier-cover: hsla(276, 68%, 70%, 0.7);
+  --background-modifier-form-field: hsl(276, 68%, 81%);
+  --background-modifier-form-field-highlighted: hsl(276, 68%, 83%);
   --background-primary: #ffffff;
   --background-primary-alt: #c792ea;
   --background-secondary: #f78c6c;
@@ -2410,8 +2428,8 @@ body {
   --background-translucent: #ffffffd9;
   --background-transparent: #c894eb00;
   --color-accent: #8a5cf5;
-  --color-accent-1: #9873f7;
-  --color-accent-2: #a68af9;
+  --color-accent-1: hsl(257, 88.88%, 70.95%);
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-00: #ffffff;
   --color-base-05: #fcfcfc;
@@ -2449,31 +2467,31 @@ body {
   --input-shadow-hover:
     inset 0 0 0 1px #0000002b, 0 2px 3px 0 #0000001a, 0 1px 1.5px 0 #00000008,
     0 1px 2px 0 #0000000a, 0 0 0 0 transparent;
-  --interactive-accent: #ac8cf8;
-  --interactive-accent-hover: #8a5cf5;
+  --interactive-accent: hsl(258, 88%, 76%);
+  --interactive-accent-hover: hsl(258, 88%, 66%);
   --interactive-accent-rgb: 220, 220, 220;
   --mono-rgb-0: 255, 255, 255;
   --mono-rgb-100: 0, 0, 0;
-  --quote-opening-modifier: #b269e2;
+  --quote-opening-modifier: hsl(276, 68%, 65%);
   --shadow-l:
     0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
     0px 30px 90px #00000033;
   --shadow-s:
     0px 1px 2px #00000007, 0px 3.4px 6.7px #0000000b, 0px 15px 30px #00000012;
   --text-accent: #8a5cf5;
-  --text-accent-hover: #672cf2;
+  --text-accent-hover: hsl(258, 88%, 56%);
   --text-faint: #03243e80;
   --text-highlight-bg: #ffe00080;
   --text-highlight-bg-active: #0000001a;
   --text-muted: #03243e;
   --text-normal: #c792ea;
   --text-on-accent: #ffffff;
-  --text-selection: #7553c64d;
+  --text-selection: hsla(258, 50%, 55%, 30%);
 }
 
 .theme-dark {
   --background-match-highlight: #8f77c533;
-  --background-modifier-accent: #530ff0;
+  --background-modifier-accent: hsl(258, 88%, 50%);
   --background-modifier-border: #03243e;
   --background-modifier-border-focus: #ecc48d;
   --background-modifier-border-hover: #c792ea;
@@ -2488,8 +2506,8 @@ body {
   --background-translucent: #2b0c40d9;
   --background-transparent: #2b0c4000;
   --color-accent: #8a5cf5;
-  --color-accent-1: #a68af9;
-  --color-accent-2: #c5b6fc;
+  --color-accent-1: hsl(255, 89.76%, 75.9%);
+  --color-accent-2: hsl(253, 92.4%, 85.14%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-00: #1e1e1e;
   --color-base-05: #212121;
@@ -2536,7 +2554,7 @@ body {
   --mono-rgb-100: 255, 255, 255;
   --pdf-shadow: 0 0 0 1px #03243e;
   --pdf-thumbnail-shadow: 0 0 0 1px #03243e;
-  --quote-opening-modifier: #48146b;
+  --quote-opening-modifier: hsl(276, 68%, 25%);
   --shadow-l:
     0px 1.8px 7.3px #00000012, 0px 6.3px 24.7px #0000001d,
     0px 30px 90px #00000033;
@@ -11443,7 +11461,7 @@ audio {
 }
 
 audio::-webkit-media-controls-enclosure {
-  background-color: #bf83e7;
+  background-color: hsl(276, 68%, 71%);
   border: 1px solid light-dark(#bb7ae6, #03243e);
   border-radius: 7px;
 }
@@ -11485,7 +11503,7 @@ audio::-webkit-media-controls-time-remaining-display {
 }
 
 kbd {
-  background-color: #bf83e7;
+  background-color: hsl(276, 68%, 71%);
   border-radius: 4px;
   color: #abb2bf;
   font-family:
@@ -12072,7 +12090,7 @@ kbd {
 
 .markdown-rendered code {
   -webkit-box-decoration-break: clone;
-  background-color: #bf83e7;
+  background-color: hsl(276, 68%, 71%);
   border: 0px solid #03243e;
   border-radius: 4px;
   color: #abb2bf;
@@ -12084,7 +12102,7 @@ kbd {
 
 .cm-s-obsidian span.cm-inline-code {
   -webkit-box-decoration-break: clone;
-  background-color: #bf83e7;
+  background-color: hsl(276, 68%, 71%);
   color: #abb2bf;
   font-size: 1em;
   vertical-align: baseline;
@@ -12099,7 +12117,7 @@ kbd {
   span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(
     .obsidian-search-match-highlight
   ) {
-  background-color: #bf83e7;
+  background-color: hsl(276, 68%, 71%);
   vertical-align: baseline;
 }
 
@@ -12151,7 +12169,7 @@ kbd {
 }
 
 .markdown-rendered pre {
-  background-color: #bf83e7;
+  background-color: hsl(276, 68%, 71%);
   border: 0px solid #03243e;
   border-radius: 4px;
   min-height: 38px;
@@ -12309,7 +12327,7 @@ kbd {
 }
 
 .cm-s-obsidian div.HyperMD-codeblock-bg {
-  background-color: #bf83e7;
+  background-color: hsl(276, 68%, 71%);
   border-color: #03243e;
   border-style: solid;
   border-width: 0px 0px 0px 0px;
@@ -12318,7 +12336,7 @@ kbd {
 }
 
 .cm-s-obsidian div.HyperMD-codeblock-begin-bg {
-  background-color: #bf83e7;
+  background-color: hsl(276, 68%, 71%);
   border-color: #03243e;
   border-style: solid;
   border-top-left-radius: 4px;
@@ -12327,7 +12345,7 @@ kbd {
 }
 
 .cm-s-obsidian div.HyperMD-codeblock-end-bg {
-  background-color: #bf83e7;
+  background-color: hsl(276, 68%, 71%);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   border-color: #03243e;
@@ -12695,7 +12713,7 @@ code[class*="language-"] {
 }
 
 .file-embed {
-  background-color: #bf83e7;
+  background-color: hsl(276, 68%, 71%);
   border-radius: 8px;
   display: flex;
   justify-content: center;
@@ -14436,7 +14454,7 @@ hr {
 }
 
 .cm-s-obsidian .hmd-fold-html-stub {
-  background-color: #bf83e7;
+  background-color: hsl(276, 68%, 71%);
   border: 1px solid #999;
   border-radius: 5px;
   color: light-dark(#03243e, #c792ea);
@@ -14451,7 +14469,7 @@ hr {
 }
 
 .cm-s-obsidian .hmd-fold-code-stub {
-  background-color: #bf83e7;
+  background-color: hsl(276, 68%, 71%);
   border: 1px solid #999;
   border-radius: 5px;
   color: light-dark(#03243e, #c792ea);
@@ -16770,7 +16788,7 @@ em {
 }
 
 .bases-query-container .filter-group .filter-group {
-  background-color: #bf83e7;
+  background-color: hsl(276, 68%, 71%);
   border: 1px solid #03243e;
   border-radius: 8px;
   padding: 6px;
@@ -17998,7 +18016,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .graph-color-group.drag-ghost {
-  background-color: #bf83e7;
+  background-color: hsl(276, 68%, 71%);
   border: none;
   box-shadow: none;
   display: flex;
@@ -19806,7 +19824,7 @@ body.theme-dark {
 }
 
 .canvas-selection {
-  background-color: hsla(light-dark(14, 90%, 70%, 14, 90%, 70%), 0.1);
+  background-color: hsla(light-dark(hsl(14, 90%, 70%), hsl(14, 90%, 70%)), 0.1);
   border: 2px solid light-dark(#f78e6e, #f78e6e);
   pointer-events: none;
   position: absolute;
@@ -19814,8 +19832,11 @@ body.theme-dark {
 }
 
 .canvas-selection.mod-group-selection {
-  background-color: hsla(light-dark(14, 90%, 70%, 14, 90%, 70%), 0.03);
-  border-color: hsla(light-dark(14, 90%, 70%, 14, 90%, 70%), 0.3);
+  background-color: hsla(
+    light-dark(hsl(14, 90%, 70%), hsl(14, 90%, 70%)),
+    0.03
+  );
+  border-color: hsla(light-dark(hsl(14, 90%, 70%), hsl(14, 90%, 70%)), 0.3);
   border-radius: 3px;
   border-width: 3px;
   pointer-events: initial;
@@ -20193,7 +20214,7 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 }
 
 .canvas-node.is-dummy .canvas-node-container {
-  background-color: hsla(light-dark(14, 90%, 70%, 14, 90%, 70%), 0.2);
+  background-color: hsla(light-dark(hsl(14, 90%, 70%), hsl(14, 90%, 70%)), 0.2);
   border: 4px solid light-dark(#f78e6e, #f78e6e);
   box-shadow: 0px 2px 10px #00000026;
 }
@@ -20815,7 +20836,7 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-placeholder-message {
-  background: hsla(light-dark(14, 90%, 70%, 14, 90%, 70%), 0.1);
+  background: hsla(light-dark(hsl(14, 90%, 70%), hsl(14, 90%, 70%)), 0.1);
   border-radius: 8px;
   color: light-dark(#f78e6e, #f78e6e);
   font-size: 19.2px;
@@ -21635,7 +21656,7 @@ body.is-mobile.keyboard-animating .app-container {
 }
 
 .is-mobile .empty-state-action {
-  background-color: #bf83e7;
+  background-color: hsl(276, 68%, 71%);
   border-radius: 6px;
   font-size: 16px;
   margin: 12px 0;
@@ -23770,7 +23791,7 @@ body.is-ios .mobile-tab-switcher-inner-scroll {
 .mobile-tab .mobile-tab-pin {
   --icon-size: 20px;
   align-items: center;
-  background-color: #bf83e7;
+  background-color: hsl(276, 68%, 71%);
   border-radius: 16px;
   color: light-dark(#fab49e, #c792ea);
   display: flex;
@@ -23786,7 +23807,7 @@ body.is-ios .mobile-tab-switcher-inner-scroll {
 .mobile-tab .close-button {
   --icon-size: 20px;
   align-items: center;
-  background-color: #bf83e7;
+  background-color: hsl(276, 68%, 71%);
   border-radius: 16px;
   display: flex;
   height: 24px;
@@ -24170,7 +24191,7 @@ input.mobile-vault-chooser-field-input {
 }
 
 .mobile-vault-chooser-load-callout {
-  background-color: #bf83e7;
+  background-color: hsl(276, 68%, 71%);
   border-radius: 8px;
   padding: 16px 24px;
   text-align: start;
@@ -24195,7 +24216,7 @@ input.mobile-vault-chooser-field-input {
 .theme-light.minimal-light-contrast
   .workspace-fake-target-overlay.is-in-sidebar {
   --background-match-highlight: #8f77c533;
-  --background-modifier-accent: #530ff0;
+  --background-modifier-accent: hsl(258, 88%, 50%);
   --background-modifier-border: #03243e;
   --background-modifier-border-focus: #ecc48d;
   --background-modifier-border-hover: #c792ea;
@@ -24212,7 +24233,7 @@ input.mobile-vault-chooser-field-input {
   --interactive-accent: #c792ea;
   --interactive-accent-hover: #8d43be;
   --interactive-accent-rgb: 66, 66, 66;
-  --quote-opening-modifier: #48146b;
+  --quote-opening-modifier: hsl(276, 68%, 25%);
   --text-accent: #ecc48d;
   --text-accent-hover: #c792ea;
   --text-code: #c792ea;
@@ -24227,7 +24248,7 @@ input.mobile-vault-chooser-field-input {
 
 .theme-light.minimal-light-contrast .titlebar {
   --background-match-highlight: #8f77c533;
-  --background-modifier-accent: #530ff0;
+  --background-modifier-accent: hsl(258, 88%, 50%);
   --background-modifier-border: #03243e;
   --background-modifier-border-focus: #ecc48d;
   --background-modifier-border-hover: #c792ea;
@@ -24244,7 +24265,7 @@ input.mobile-vault-chooser-field-input {
   --interactive-accent: #c792ea;
   --interactive-accent-hover: #8d43be;
   --interactive-accent-rgb: 66, 66, 66;
-  --quote-opening-modifier: #48146b;
+  --quote-opening-modifier: hsl(276, 68%, 25%);
   --text-accent: #ecc48d;
   --text-accent-hover: #c792ea;
   --text-code: #c792ea;
@@ -24259,7 +24280,7 @@ input.mobile-vault-chooser-field-input {
 
 .theme-light.minimal-light-contrast .status-bar {
   --background-match-highlight: #8f77c533;
-  --background-modifier-accent: #530ff0;
+  --background-modifier-accent: hsl(258, 88%, 50%);
   --background-modifier-border: #03243e;
   --background-modifier-border-focus: #ecc48d;
   --background-modifier-border-hover: #c792ea;
@@ -24276,7 +24297,7 @@ input.mobile-vault-chooser-field-input {
   --interactive-accent: #c792ea;
   --interactive-accent-hover: #8d43be;
   --interactive-accent-rgb: 66, 66, 66;
-  --quote-opening-modifier: #48146b;
+  --quote-opening-modifier: hsl(276, 68%, 25%);
   --text-accent: #ecc48d;
   --text-accent-hover: #c792ea;
   --text-code: #c792ea;
@@ -24291,7 +24312,7 @@ input.mobile-vault-chooser-field-input {
 
 .theme-light.minimal-light-contrast .workspace-ribbon.mod-left {
   --background-match-highlight: #8f77c533;
-  --background-modifier-accent: #530ff0;
+  --background-modifier-accent: hsl(258, 88%, 50%);
   --background-modifier-border: #03243e;
   --background-modifier-border-focus: #ecc48d;
   --background-modifier-border-hover: #c792ea;
@@ -24308,7 +24329,7 @@ input.mobile-vault-chooser-field-input {
   --interactive-accent: #c792ea;
   --interactive-accent-hover: #8d43be;
   --interactive-accent-rgb: 66, 66, 66;
-  --quote-opening-modifier: #48146b;
+  --quote-opening-modifier: hsl(276, 68%, 25%);
   --text-accent: #ecc48d;
   --text-accent-hover: #c792ea;
   --text-code: #c792ea;
@@ -24323,7 +24344,7 @@ input.mobile-vault-chooser-field-input {
 
 .theme-light.minimal-light-contrast .mod-left-split {
   --background-match-highlight: #8f77c533;
-  --background-modifier-accent: #530ff0;
+  --background-modifier-accent: hsl(258, 88%, 50%);
   --background-modifier-border: #03243e;
   --background-modifier-border-focus: #ecc48d;
   --background-modifier-border-hover: #c792ea;
@@ -24340,7 +24361,7 @@ input.mobile-vault-chooser-field-input {
   --interactive-accent: #c792ea;
   --interactive-accent-hover: #8d43be;
   --interactive-accent-rgb: 66, 66, 66;
-  --quote-opening-modifier: #48146b;
+  --quote-opening-modifier: hsl(276, 68%, 25%);
   --text-accent: #ecc48d;
   --text-accent-hover: #c792ea;
   --text-code: #c792ea;
@@ -24355,7 +24376,7 @@ input.mobile-vault-chooser-field-input {
 
 .theme-light.minimal-light-contrast.is-mobile .workspace-drawer.mod-left {
   --background-match-highlight: #8f77c533;
-  --background-modifier-accent: #530ff0;
+  --background-modifier-accent: hsl(258, 88%, 50%);
   --background-modifier-border: #03243e;
   --background-modifier-border-focus: #ecc48d;
   --background-modifier-border-hover: #c792ea;
@@ -24372,7 +24393,7 @@ input.mobile-vault-chooser-field-input {
   --interactive-accent: #c792ea;
   --interactive-accent-hover: #8d43be;
   --interactive-accent-rgb: 66, 66, 66;
-  --quote-opening-modifier: #48146b;
+  --quote-opening-modifier: hsl(276, 68%, 25%);
   --text-accent: #ecc48d;
   --text-accent-hover: #c792ea;
   --text-code: #c792ea;
@@ -24391,7 +24412,7 @@ input.mobile-vault-chooser-field-input {
 
 .theme-light.minimal-light-tonal {
   --background-primary: #c894eb;
-  --background-primary-alt: #bf83e7;
+  --background-primary-alt: hsl(276, 68%, 71%);
   --background-translucent: #c894ebd9;
 }
 
@@ -27232,11 +27253,11 @@ ul {
 }
 
 .theme-light :not(pre) > code[class*="language-"] {
-  background-color: #bf83e7;
+  background-color: hsl(276, 68%, 71%);
 }
 
 .theme-light pre[class*="language-"] {
-  background-color: #bf83e7;
+  background-color: hsl(276, 68%, 71%);
   text-shadow: none;
 }
 
@@ -27267,7 +27288,7 @@ ul {
 }
 
 .theme-dark.minimal-dark-black .popover {
-  background: #bf83e7;
+  background: hsl(276, 68%, 71%);
 }
 
 .popover .markdown-embed-link {

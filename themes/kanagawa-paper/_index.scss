@@ -106,8 +106,11 @@ html[saved-theme="light"] {
   --background-primary-alt: light-dark(#e7dba0, #181616);
   --background-secondary: light-dark(#dcd5ac, #1d1c19);
   --bold-color: light-dark(#545464, #c5c9c5);
-  --color-accent-2: light-dark(#a68af9, #c5b6fc);
-  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --color-accent-2: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
+  );
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -193,7 +196,10 @@ body {
   --checkbox-border-color: light-dark(#8a8980, #9e9b93);
   --checkbox-border-color-hover: light-dark(#5c5c5c, #b3b3b3);
   --checkbox-color: var(--interactive-accent);
-  --checkbox-color-hover: light-dark(#9873f7, #a68af9);
+  --checkbox-color-hover: light-dark(
+    hsl(257, 88.88%, 70.95%),
+    hsl(255, 89.76%, 75.9%)
+  );
   --checkbox-marker-color: light-dark(#f2ecbc, #181616);
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
@@ -211,8 +217,11 @@ body {
   --code-value: light-dark(#7852ee, #a882ff);
   --collapse-icon-color: light-dark(#8a8980, #9e9b93);
   --collapse-icon-color-collapsed: var(--text-accent);
-  --color-accent-2: light-dark(#a68af9, #c5b6fc);
-  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --color-accent-2: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
+  );
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -259,21 +268,36 @@ body {
   --inline-title-color: inherit;
   --inline-title-font: inherit;
   --interactive-accent: light-dark(var(--lotusBlue3), #8ba4b0);
-  --interactive-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --interactive-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --italic-color: inherit;
   --link-color: var(--text-accent);
-  --link-color-hover: light-dark(#a68af9, #c5b6fc);
+  --link-color-hover: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
+  );
   --link-external-color: var(--text-accent);
-  --link-external-color-hover: light-dark(#a68af9, #c5b6fc);
+  --link-external-color-hover: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
+  );
   --link-external-filter: none;
   --link-weight: 600;
   --p-spacing: 1rem;
   --search-icon-color: light-dark(#5c5c5c, #b3b3b3);
-  --tag-background: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.1);
-  --tag-background-hover: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.2);
-  --tag-border-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+  --tag-background: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.1
+  );
+  --tag-background-hover: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.2
+  );
+  --tag-border-color: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.15
+  );
   --tag-border-color-hover: hsla(
-    light-dark(258, 88%, 66%, 258, 88%, 66%),
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
     0.15
   );
   --tag-border-width: 0px;
@@ -286,7 +310,10 @@ body {
   --text-a: light-dark(var(--lotusTeal1), #949fb5);
   --text-a-hover: light-dark(var(--lotusRed), #a292a3);
   --text-accent: light-dark(var(--lotusGreen), #87a987);
-  --text-accent-hover: light-dark(#a68af9, #c5b6fc);
+  --text-accent-hover: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
+  );
   --text-faint: light-dark(#8a8980, #9e9b93);
   --text-highlight-bg: light-dark(var(--lotusBlue2), #393836);
   --text-muted: light-dark(#5c5c5c, #b3b3b3);

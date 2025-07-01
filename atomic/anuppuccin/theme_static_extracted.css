@@ -11,9 +11,15 @@
   --background-secondary-alt: light-dark(#212121, rgb(inherit));
   --callout-title-padding: light-dark(8px, 8px);
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#9873f7, #a68af9);
-  --color-accent-2: light-dark(#a68af9, #c5b6fc);
-  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --color-accent-1: light-dark(
+    hsl(257, 88.88%, 70.95%),
+    hsl(255, 89.76%, 75.9%)
+  );
+  --color-accent-2: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
+  );
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -34,20 +40,20 @@
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
-  --ctp-base: light-dark(#eff1f5, #1e1e2e);
-  --ctp-blue: light-dark(#2a6ef5, #87b0f9);
-  --ctp-crust: light-dark(#dce0e8, #11111b);
-  --ctp-green: light-dark(#40a02b, #a6e3a1);
-  --ctp-mantle: light-dark(#e6e9ef, #181825);
-  --ctp-maroon: light-dark(#e64553, #eba0ac);
-  --ctp-mauve: light-dark(#8839ef, #cba6f7);
-  --ctp-peach: light-dark(#fe640b, #fab387);
-  --ctp-pink: light-dark(#ec83d0, #f5c2e7);
-  --ctp-red: light-dark(#d20f39, #f38ba8);
-  --ctp-sky: light-dark(#04a5e5, #89dceb);
-  --ctp-teal: light-dark(#179299, #94e2d5);
-  --ctp-text: light-dark(#4c4f69, #c6d0f5);
-  --ctp-yellow: light-dark(#e49320, #f9e2af);
+  --ctp-base: light-dark(rgb(239, 241, 245), rgb(30, 30, 46));
+  --ctp-blue: light-dark(rgb(42, 110, 245), rgb(135, 176, 249));
+  --ctp-crust: light-dark(rgb(220, 224, 232), rgb(17, 17, 27));
+  --ctp-green: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
+  --ctp-mantle: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
+  --ctp-maroon: light-dark(rgb(230, 69, 83), rgb(235, 160, 172));
+  --ctp-mauve: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
+  --ctp-peach: light-dark(rgb(254, 100, 11), rgb(250, 179, 135));
+  --ctp-pink: light-dark(rgb(236, 131, 208), rgb(245, 194, 231));
+  --ctp-red: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
+  --ctp-sky: light-dark(rgb(4, 165, 229), rgb(137, 220, 235));
+  --ctp-teal: light-dark(rgb(23, 146, 153), rgb(148, 226, 213));
+  --ctp-text: light-dark(rgb(76, 79, 105), rgb(198, 208, 245));
+  --ctp-yellow: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   --drag-ghost-background: inherit;
   --drag-ghost-text-color: inherit;
   --icon-color-focused: inherit;
@@ -230,9 +236,15 @@ body {
   --collapse-icon-color: rgb(inherit);
   --collapse-icon-color-collapsed: rgb(inherit);
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#9873f7, #a68af9);
-  --color-accent-2: light-dark(#a68af9, #c5b6fc);
-  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --color-accent-1: light-dark(
+    hsl(257, 88.88%, 70.95%),
+    hsl(255, 89.76%, 75.9%)
+  );
+  --color-accent-2: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
+  );
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -256,20 +268,20 @@ body {
   --colorful-frame-color: rgba(inherit, 1);
   --colorful-icon-color: rgb(inherit);
   --colorful-icon-color-alt: rgb(inherit);
-  --ctp-base: light-dark(#eff1f5, #1e1e2e);
-  --ctp-blue: light-dark(#2a6ef5, #87b0f9);
-  --ctp-crust: light-dark(#dce0e8, #11111b);
-  --ctp-green: light-dark(#40a02b, #a6e3a1);
-  --ctp-mantle: light-dark(#e6e9ef, #181825);
-  --ctp-maroon: light-dark(#e64553, #eba0ac);
-  --ctp-mauve: light-dark(#8839ef, #cba6f7);
-  --ctp-peach: light-dark(#fe640b, #fab387);
-  --ctp-pink: light-dark(#ec83d0, #f5c2e7);
-  --ctp-red: light-dark(#d20f39, #f38ba8);
-  --ctp-sky: light-dark(#04a5e5, #89dceb);
-  --ctp-teal: light-dark(#179299, #94e2d5);
-  --ctp-text: light-dark(#4c4f69, #c6d0f5);
-  --ctp-yellow: light-dark(#e49320, #f9e2af);
+  --ctp-base: light-dark(rgb(239, 241, 245), rgb(30, 30, 46));
+  --ctp-blue: light-dark(rgb(42, 110, 245), rgb(135, 176, 249));
+  --ctp-crust: light-dark(rgb(220, 224, 232), rgb(17, 17, 27));
+  --ctp-green: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
+  --ctp-mantle: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
+  --ctp-maroon: light-dark(rgb(230, 69, 83), rgb(235, 160, 172));
+  --ctp-mauve: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
+  --ctp-peach: light-dark(rgb(254, 100, 11), rgb(250, 179, 135));
+  --ctp-pink: light-dark(rgb(236, 131, 208), rgb(245, 194, 231));
+  --ctp-red: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
+  --ctp-sky: light-dark(rgb(4, 165, 229), rgb(137, 220, 235));
+  --ctp-teal: light-dark(rgb(23, 146, 153), rgb(148, 226, 213));
+  --ctp-text: light-dark(rgb(76, 79, 105), rgb(198, 208, 245));
+  --ctp-yellow: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -1424,7 +1436,10 @@ input.prompt-input {
 }
 
 .suggestion-item.is-selected {
-  background-color: rgba(light-dark(76, 79, 105, 198, 208, 245), 0.075);
+  background-color: rgba(
+    light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
+    0.075
+  );
 }
 
 .suggestion-highlight {
@@ -1869,8 +1884,8 @@ svg.svg-icon {
   --blockquote-background-color: rgba(inherit, 0.5);
   --callout-title-padding: 8px;
   --color-accent: #8a5cf5;
-  --color-accent-1: #a68af9;
-  --color-accent-2: #c5b6fc;
+  --color-accent-1: hsl(255, 89.76%, 75.9%);
+  --color-accent-2: hsl(253, 92.4%, 85.14%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-00: rgb(inherit);
   --color-base-05: #212121;
@@ -1999,8 +2014,8 @@ svg.svg-icon {
   --blockquote-background-color: rgba(inherit, 0.5);
   --callout-title-padding: 8px;
   --color-accent: #8a5cf5;
-  --color-accent-1: #9873f7;
-  --color-accent-2: #a68af9;
+  --color-accent-1: hsl(257, 88.88%, 70.95%);
+  --color-accent-2: hsl(255, 89.76%, 75.9%);
   --color-accent-hsl: 258, 88%, 66%;
   --color-base-00: rgb(inherit);
   --color-base-05: #fcfcfc;

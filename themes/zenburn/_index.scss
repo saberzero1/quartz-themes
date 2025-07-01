@@ -106,8 +106,11 @@ html[saved-theme="dark"] {
   --h1-color: var(--text-normal);
   --h2-color: var(--text-normal);
   --h3-color: var(--text-normal);
-  --color-accent-2: light-dark(#a68af9, #c5b6fc);
-  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --color-accent-2: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
+  );
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -195,8 +198,11 @@ body {
   --code-value: light-dark(#7852ee, #a882ff);
   --collapse-icon-color: #f8f5ed;
   --collapse-icon-color-collapsed: #f2777a;
-  --color-accent-2: light-dark(#a68af9, #c5b6fc);
-  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --color-accent-2: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
+  );
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -243,8 +249,11 @@ body {
   --icon-color: var(--text-muted);
   --inline-title-color: #dcbecd;
   --inline-title-font: inherit;
-  --interactive-accent-hover: light-dark(#a68af9, #c5b6fc);
-  --interactive-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --interactive-accent-hover: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
+  );
+  --interactive-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --italic-color: inherit;
   --link-color: #f2777a;
   --link-color-hover: var(--text-accent-hover);
@@ -254,11 +263,20 @@ body {
   --link-weight: 400;
   --p-spacing: 1rem;
   --search-icon-color: var(--text-muted);
-  --tag-background: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.1);
-  --tag-background-hover: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.2);
-  --tag-border-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+  --tag-background: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.1
+  );
+  --tag-background-hover: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.2
+  );
+  --tag-border-color: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.15
+  );
   --tag-border-color-hover: hsla(
-    light-dark(258, 88%, 66%, 258, 88%, 66%),
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
     0.15
   );
   --tag-border-width: 0px;
@@ -269,7 +287,10 @@ body {
   --tag-radius: 2em;
   --tag-weight: inherit;
   --text-accent: light-dark(#8a5cf5, #8a5cf5);
-  --text-accent-hover: light-dark(#a68af9, #c5b6fc);
+  --text-accent-hover: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
+  );
   --text-faint: light-dark(#ababab, #666666);
   --text-highlight-bg: #ffd00066;
   --text-muted: light-dark(#5c5c5c, #b3b3b3);

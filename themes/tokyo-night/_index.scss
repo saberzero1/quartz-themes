@@ -182,7 +182,7 @@ html[saved-theme="light"] {
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
-  --font-monospace: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
+  --font-monospace: "JetBrains Mono", monospace, "Source Code Pro", monospace;
   --graph-line: light-dark(#565f89, #565f89);
   --graph-node-tag: light-dark(#ff9e64, #ff9e64);
   --h1-color: light-dark(#ff757f, #ff757f);
@@ -347,7 +347,10 @@ body {
   font-family:
     "??",
     "??",
-    '"JetBrains Mono", monospace, "Inter", sans-serif',
+    "JetBrains Mono",
+    monospace,
+    "Inter",
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -1030,7 +1033,7 @@ body {
     border: 0px solid transparent;
     border-radius: 4px;
     color: #c0caf5;
-    font-family: '"JetBrains Mono", monospace, "Source Code Pro", monospace';
+    font-family: "JetBrains Mono", monospace, "Source Code Pro", monospace;
     font-size: 1em;
     padding: 0.15em 0.3em;
     background-color: var(--code-background);
@@ -1044,7 +1047,10 @@ body {
     font-family:
       "??",
       "??",
-      '"JetBrains Mono", monospace, "Inter", sans-serif',
+      "JetBrains Mono",
+      monospace,
+      "Inter",
+      sans-serif,
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
