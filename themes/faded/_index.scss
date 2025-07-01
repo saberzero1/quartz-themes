@@ -24,7 +24,7 @@ html[saved-theme="dark"] {
   }
 
   --checkbox-size: 15px;
-  --h1-color: inherit;
+
   --h1-font: inherit;
   --h3-line-height: 1.3;
 
@@ -42,7 +42,7 @@ html[saved-theme="dark"] {
   --text-highlight-bg: #ffd00066;
 
   --checkbox-size: 15px;
-  --h1-color: inherit;
+
   --h1-font: inherit;
   --h3-line-height: 1.3;
 
@@ -225,6 +225,7 @@ html[saved-theme="dark"] {
 }
 
 :root {
+  --h1-color: var(--text-normal);
   --background-primary: light-dark(#f2f3f3, #1a1e24);
   --background-primary-alt: light-dark(#e8eaeb, #14171b);
   --background-secondary: light-dark(#e8eaeb, #14171b);
@@ -290,6 +291,7 @@ html {
   font-size: 16px;
 }
 body {
+  --h1-color: var(--text-normal);
   --background-modifier-border: #363636;
   --background-modifier-border-focus: #555;
   --background-modifier-border-hover: #3f3f3f;

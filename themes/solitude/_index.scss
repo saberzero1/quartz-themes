@@ -98,6 +98,7 @@ html[saved-theme="dark"] {
 }
 
 :root {
+  --h1-color: var(--text-normal);
   --color-accent-2: light-dark(#ab9af5, #cdc5fa);
   --color-accent-hsl: light-dark(#8b6cef, #8b6cef);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
@@ -154,6 +155,7 @@ html {
   font-size: 16px;
 }
 body {
+  --h1-color: var(--text-normal);
   --background-modifier-border: #202628;
   --background-modifier-border-focus: #8b6cef;
   --background-modifier-border-hover: #5427e7;

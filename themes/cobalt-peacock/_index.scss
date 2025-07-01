@@ -27,7 +27,6 @@ html[saved-theme="dark"] {
   --checkbox-color: #ffee80;
   --checkbox-color-hover: #1f4662;
   --checkbox-marker-color: #002240;
-  --h1-color: #ff9d00;
   --hr-color: #0088ff;
   --interactive-accent-hsl: 208, 100%, 50%;
   --mono-rgb-100: 255, 255, 255;
@@ -44,7 +43,6 @@ html[saved-theme="dark"] {
   --checkbox-color: #ffee80;
   --checkbox-color-hover: #1f4662;
   --checkbox-marker-color: #002240;
-  --h1-color: #ff9d00;
   --hr-color: #0088ff;
   --interactive-accent-hsl: 208, 100%, 50%;
   --mono-rgb-100: 255, 255, 255;
@@ -223,6 +221,7 @@ html[saved-theme="dark"] {
 }
 
 :root {
+  --h1-color: var(--text-normal);
   --background-primary: light-dark(#2240, #002240);
   --background-secondary: light-dark(#d9c9ff, #011627);
   --color-accent-2: light-dark(hsl(205, 102%, 57.5%), hsl(203, 105%, 64.5%));
@@ -281,6 +280,7 @@ html {
   font-size: 16px;
 }
 body {
+  --h1-color: var(--text-normal);
   --background-modifier-border: #363636;
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;

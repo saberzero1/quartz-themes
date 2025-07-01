@@ -764,6 +764,7 @@ body {
 }
 
 :root {
+  --h1-color: var(--text-normal);
   --color-accent-2: light-dark(#a7b5f3, #d3dbfa);
   --color-accent-hsl: light-dark(#7988ec, #7988ec);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
@@ -820,6 +821,7 @@ html {
   font-size: 16px;
 }
 body {
+  --h1-color: var(--text-normal);
   --background-modifier-border: #9496ac66;
   --background-modifier-border-focus: #abaac5;
   --background-modifier-border-hover: #c4c6ca;

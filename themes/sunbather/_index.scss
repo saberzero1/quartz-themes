@@ -203,6 +203,7 @@ html[saved-theme="light"] {
 }
 
 :root {
+  --h1-color: var(--text-normal);
   --background-primary: light-dark(#ffffff, #050505);
   --background-secondary: light-dark(#050505, #050505);
   --code-background: light-dark(#ecebeb, #131313);
@@ -272,6 +273,7 @@ html {
   font-size: 16px;
 }
 body {
+  --h1-color: var(--text-normal);
   --background-modifier-border: #363636;
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;

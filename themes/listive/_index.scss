@@ -22,10 +22,8 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --h1-color: #e0e4eb;
   --mono-rgb-100: 255, 255, 255;
   --text-accent: #a68af9;
-  --h1-color: #e0e4eb;
   --mono-rgb-100: 255, 255, 255;
   --text-accent: #a68af9;
 }
@@ -45,9 +43,7 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --h1-color: #3c495d;
   --mono-rgb-100: 0, 0, 0;
-  --h1-color: #3c495d;
   --mono-rgb-100: 0, 0, 0;
 }
 
@@ -250,6 +246,7 @@ html[saved-theme="light"] {
 }
 
 :root {
+  --h1-color: var(--text-normal);
   --background-modifier-border: light-dark(#ada7a4, #585350);
   --background-primary: light-dark(#ebebeb, #333333);
   --background-secondary: light-dark(#cfc9cf, #433d43);
@@ -309,6 +306,7 @@ html {
   font-size: 16px;
 }
 body {
+  --h1-color: var(--text-normal);
   --background-modifier-border: light-dark(#ada7a4, #585350);
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;

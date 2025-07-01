@@ -24,11 +24,9 @@ html[saved-theme="light"] {
   }
 
   --bold-weight: 700;
-  --h1-color: #81a1c1;
   --mono-rgb-100: 0, 0, 0;
 
   --bold-weight: 700;
-  --h1-color: #81a1c1;
   --mono-rgb-100: 0, 0, 0;
 
   --text-normal: #47596a;
@@ -110,6 +108,7 @@ html[saved-theme="light"] {
 }
 
 :root {
+  --h1-color: var(--text-normal);
   --color-accent-2: light-dark(#a0bbd1, #bed2e0);
   --color-accent-hsl: light-dark(#81a1c1, #81a1c1);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
@@ -169,6 +168,7 @@ html {
   font-size: 16px;
 }
 body {
+  --h1-color: var(--text-normal);
   --background-modifier-border: #d8dee9;
   --background-modifier-border-focus: #d8dee9;
   --background-modifier-border-hover: #d8dee9;

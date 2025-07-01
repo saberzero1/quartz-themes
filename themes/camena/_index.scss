@@ -67,6 +67,7 @@ html[saved-theme="light"] {
 }
 
 :root {
+  --h1-color: var(--text-normal);
   --color-accent-2: light-dark(
     hsl(255, 89.76%, 75.9%),
     hsl(253, 92.4%, 85.14%)
@@ -126,6 +127,7 @@ html {
   font-size: 16px;
 }
 body {
+  --h1-color: var(--text-normal);
   --background-modifier-border: hsl(258, 29.33333%, 25%);
   --background-modifier-border-focus: hsl(258, 29.33333%, 35%);
   --background-modifier-border-hover: hsl(258, 29.33333%, 30%);

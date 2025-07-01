@@ -101,6 +101,11 @@ html[saved-theme="dark"] {
 }
 
 :root {
+  --h1-color: var(--text-normal);
+  --h3-color: var(--text-normal);
+  --h4-color: var(--text-normal);
+  --h5-color: var(--text-normal);
+  --h6-color: var(--text-normal);
   --background-modifier-border: light-dark(#21262d, #21262d);
   --background-primary: light-dark(#0d1117, #0d1117);
   --background-primary-alt: light-dark(#161b22, #161b22);
@@ -170,6 +175,11 @@ html {
   font-size: 16px;
 }
 body {
+  --h1-color: var(--text-normal);
+  --h3-color: var(--text-normal);
+  --h4-color: var(--text-normal);
+  --h5-color: var(--text-normal);
+  --h6-color: var(--text-normal);
   --background-modifier-border: light-dark(#21262d, #21262d);
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;

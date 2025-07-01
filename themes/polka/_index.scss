@@ -182,6 +182,7 @@ html[saved-theme="light"] {
 }
 
 :root {
+  --h1-color: var(--text-normal);
   --background-modifier-border: light-dark(
     hsla(221, 16.65%, 85%, 0.1),
     hsla(221, 16.65%, 85%, 0.1)
@@ -276,6 +277,7 @@ html {
   font-size: 16px;
 }
 body {
+  --h1-color: var(--text-normal);
   --background-modifier-border: light-dark(
     hsla(221, 16.65%, 85%, 0.1),
     hsla(221, 16.65%, 85%, 0.1)

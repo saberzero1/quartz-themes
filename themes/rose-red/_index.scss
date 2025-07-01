@@ -87,6 +87,7 @@ html[saved-theme="dark"] {
 /*# sourceMappingURL=/sm/59867498f0c78550f520215737c9482023c80e40e8ae270317f2a410e3fbae76.map */
 
 :root {
+  --h1-color: var(--text-normal);
   --background-primary: light-dark(
     linear-gradient(45deg, #240a00 0%, #79091f 35%, #030303 100%),
     linear-gradient(45deg, #240a00 0%, #79091f 35%, #030303 100%)
@@ -154,6 +155,7 @@ html {
   font-size: 16px;
 }
 body {
+  --h1-color: var(--text-normal);
   --background-modifier-border: #363636;
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #976262;

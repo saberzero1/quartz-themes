@@ -226,6 +226,7 @@ html[saved-theme="light"] {
 }
 
 :root {
+  --h1-color: var(--text-normal);
   --bold-color: light-dark(#000000, #cccccc);
   --bold-weight: calc(bold + 200);
   --checkbox-border-color: light-dark(#999999, #666666);
@@ -325,6 +326,7 @@ html {
   font-size: 16px;
 }
 body {
+  --h1-color: var(--text-normal);
   --background-modifier-border: #363636;
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;

@@ -77,6 +77,7 @@ html[saved-theme="dark"] {
 }
 
 :root {
+  --h1-color: var(--text-normal);
   --checkbox-color: light-dark(
     oklch(48.5% 0.106 161.65),
     oklch(74.5% 0.164 161.65)
@@ -141,6 +142,7 @@ html {
   font-size: 16px;
 }
 body {
+  --h1-color: var(--text-normal);
   --background-modifier-border: oklch(25.5% 0.021 279.29);
   --background-modifier-border-focus: oklch(61.5% 0.028 279.29);
   --background-modifier-border-hover: #3f3f3f;

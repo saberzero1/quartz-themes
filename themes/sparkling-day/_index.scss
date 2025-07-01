@@ -26,13 +26,11 @@ html[saved-theme="light"] {
   --checkbox-border-color-hover: #13c4a3;
   --checkbox-color-hover: #13c4a3;
   --checkbox-marker-color: #fcfcfc;
-  --h1-color: #375ba9;
   --mono-rgb-100: 0, 0, 0;
   --checkbox-border-color: #121019;
   --checkbox-border-color-hover: #13c4a3;
   --checkbox-color-hover: #13c4a3;
   --checkbox-marker-color: #fcfcfc;
-  --h1-color: #375ba9;
   --mono-rgb-100: 0, 0, 0;
 }
 
@@ -201,6 +199,7 @@ html[saved-theme="light"] {
 }
 
 :root {
+  --h1-color: var(--text-normal);
   --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
@@ -258,6 +257,7 @@ html {
   font-size: 16px;
 }
 body {
+  --h1-color: var(--text-normal);
   --background-modifier-border: #363636;
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;
