@@ -1324,6 +1324,8 @@ body {
           #1a0a091a 0 2px 4px,
           #1a0a091a 0 4px 8px,
           #1a0a091a 0 6px 12px;
+        color: var(--text-normal);
+        background-color: var(--background-secondary);
         margin: 12vh auto;
         & > input {
           background-color: #481b19;

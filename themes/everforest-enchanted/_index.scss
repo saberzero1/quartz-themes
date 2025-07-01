@@ -1348,6 +1348,8 @@ body {
         border: 0.5pt solid #555555;
         border-radius: 12px;
         box-shadow: 0 4px 14px -2px #00000066;
+        color: var(--text-normal);
+        background-color: var(--background-secondary);
         margin: 12vh auto;
         & > input {
           background-color: #fffbef;

@@ -1368,6 +1368,8 @@ body {
           0px 6.3px 24.7px #0000001d,
           0px 30px 90px #00000033,
           0 -1px 0 0 #555;
+        color: var(--text-normal);
+        background-color: var(--background-secondary);
         margin: 12vh auto;
         & > input {
           background-color: transparent;

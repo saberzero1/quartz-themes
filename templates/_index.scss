@@ -1094,6 +1094,8 @@ body {
           //%%SEARCH BORDER RADIUS%%
           //%%SEARCH SHADOW%%
 
+          color: var(--text-normal);
+          background-color: var(--background-secondary);
           margin: 12vh auto;
         & > input {
           //%%SEARCH INPUT%%
