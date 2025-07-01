@@ -165,7 +165,7 @@
       "fonts": []
     },
     "aura": {
-      "compatibility": ["checking", "collection"],
+      "compatibility": ["full", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
       "variations": [],

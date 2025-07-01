@@ -785,6 +785,7 @@ body {
         color: var(--color-red) !important;
       }
 
+      color: var(--code-normal);
       background-color: transparent; 
     }
   }
@@ -793,6 +794,7 @@ body {
 
     //%%CODE INLINE%%
 
+    color: var(--code-normal);
     background-color: var(--code-background);
   }
   .clipboard-button {

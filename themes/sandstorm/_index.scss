@@ -916,6 +916,7 @@ body {
         //color: var(--code-keyword) !important;
         color: var(--color-red) !important;
       }
+      color: var(--code-normal);
       background-color: transparent;
     }
   }
@@ -931,6 +932,7 @@ body {
       "Consolas", "Source Code Pro", monospace;
     font-size: 0.875em;
     padding: 0.1em 0.25em;
+    color: var(--code-normal);
     background-color: var(--code-background);
   }
   .clipboard-button {

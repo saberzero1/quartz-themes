@@ -1026,6 +1026,7 @@ body {
         //color: var(--code-keyword) !important;
         color: var(--color-red) !important;
       }
+      color: var(--code-normal);
       background-color: transparent;
     }
   }
@@ -1041,6 +1042,7 @@ body {
       "Source Code Pro", monospace;
     font-size: 0.9rem;
     padding: 3px 4px;
+    color: var(--code-normal);
     background-color: var(--code-background);
   }
   .clipboard-button {
