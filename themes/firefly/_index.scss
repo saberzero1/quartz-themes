@@ -686,8 +686,8 @@ body {
     }
     @media all and ($mobile) {
       &.left:has(.explorer) {
-        ::before,
-        ::after {
+        :before,
+        :after {
           background-color: #000;
           background-color: var(--background-secondary);
           content: " ";
@@ -697,16 +697,16 @@ body {
           top: 0;
           position: absolute;
         }
-        ::before {
+        :before {
           left: -1rem;
         }
-        ::after {
+        :after {
           right: -1rem;
         }
       }
     }
     @media all and ($tablet) {
-      &.left:has(.explorer)::before {
+      &.left:has(.explorer):before {
         padding-left: 1rem;
       }
     }
@@ -824,7 +824,7 @@ body {
   input[type="checkbox"]:focus-visible {
     box-shadow: 0 0 0 2px var(--background-modifier-border-focus);
   }
-  input[type="checkbox"]:checked::after {
+  input[type="checkbox"]:checked:after {
     content: "";
     top: -1.5px;
     inset-inline-start: -2px;
@@ -849,7 +849,7 @@ body {
       border-color: var(--checkbox-color-hover);
     }
   }
-  input[type="checkbox"][data-indeterminate="true"]:not(:checked)::after {
+  input[type="checkbox"][data-indeterminate="true"]:not(:checked):after {
     content: "";
     position: absolute;
     top: calc(var(--checkbox-size) / 2 - 2px);
@@ -1146,7 +1146,7 @@ body {
           opacity: 0.001;
           position: absolute;
         }
-        &::before {
+        &:before {
           width: 16px;
           height: 16px;
           min-width: 16px;
@@ -1160,12 +1160,12 @@ body {
           width: 100%;
         }
       }
-      li:has(> .folder-outer:not(.open)) > .folder-container::before {
+      li:has(> .folder-outer:not(.open)) > .folder-container:before {
         background: var(--collapse-icon-color-collapsed, var(--icon-color));
         mask-image: var(--folder-closed-icon);
         -webkit-mask-image: var(--folder-closed-icon);
       }
-      li:has(> .folder-outer.open) > .folder-container::before {
+      li:has(> .folder-outer.open) > .folder-container:before {
         background: var(--collapse-icon-color, var(--icon-color));
         mask-image: var(--folder-open-icon);
         -webkit-mask-image: var(--folder-open-icon);
@@ -1202,7 +1202,7 @@ body {
           }
           padding-inline-start: 0;
         }
-        > a::before {
+        > a:before {
           --file-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>');
           width: 16px;
           height: 16px;
