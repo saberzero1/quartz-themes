@@ -30,7 +30,6 @@ html[saved-theme="dark"] {
   --checkbox-color-hover: #4e72ff;
   --graph-line: #8b9bd8;
   --graph-node-tag: #2f459c;
-  --h1-color: #122886;
 
   --inline-title-color: #122886;
   --italic-color: #fcc200;
@@ -50,7 +49,6 @@ html[saved-theme="dark"] {
   --checkbox-color-hover: #4e72ff;
   --graph-line: #8b9bd8;
   --graph-node-tag: #2f459c;
-  --h1-color: #122886;
 
   --inline-title-color: #122886;
   --italic-color: #fcc200;
@@ -229,6 +227,7 @@ html[saved-theme="dark"] {
 }
 
 :root {
+  --h1-color: var(--text-normal);
   --color-accent-2: light-dark(#3555b6, #3e65ca);
   --color-accent-hsl: light-dark(#2f459d, #2f459d);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
@@ -285,6 +284,7 @@ html {
   font-size: 16px;
 }
 body {
+  --h1-color: var(--text-normal);
   --background-modifier-border: #363636;
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;

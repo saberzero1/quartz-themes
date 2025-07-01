@@ -208,6 +208,7 @@ html[saved-theme="light"] {
 }
 
 :root {
+  --h1-color: var(--text-normal);
   --checkbox-border-color-hover: light-dark(#62938e, #62938e);
   --color-accent-2: light-dark(#75a49d, #89b2ab);
   --color-accent-hsl: light-dark(#62938e, #62938e);
@@ -265,6 +266,7 @@ html {
   font-size: 16px;
 }
 body {
+  --h1-color: var(--text-normal);
   --background-modifier-border: #1e1e1e;
   --background-modifier-border-focus: #6c6c6e;
   --background-modifier-border-hover: #626365;

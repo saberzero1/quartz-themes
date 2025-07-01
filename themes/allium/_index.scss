@@ -22,11 +22,7 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-
-  --h1-color: #d8bcd8;
   --mono-rgb-100: 255, 255, 255;
-
-  --h1-color: #d8bcd8;
   --mono-rgb-100: 255, 255, 255;
 }
 
@@ -59,6 +55,7 @@ html[saved-theme="light"] {
 }
 
 :root {
+  --h1-color: var(--text-normal);
   --background-modifier-border: light-dark(#a32d7f36, #a32d7f36);
   --background-modifier-border-focus: light-dark(#a32d7f, #a32d7f);
   --background-modifier-border-hover: light-dark(#50125a94, #50125a94);
@@ -134,6 +131,7 @@ html {
   font-size: 16px;
 }
 body {
+  --h1-color: var(--text-normal);
   --background-modifier-border: light-dark(#a32d7f36, #a32d7f36);
   --background-modifier-border-focus: light-dark(#a32d7f, #a32d7f);
   --background-modifier-border-hover: light-dark(#50125a94, #50125a94);

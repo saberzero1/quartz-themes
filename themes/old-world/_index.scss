@@ -25,7 +25,6 @@ html[saved-theme="dark"] {
 
   --bold-color: #e29eca;
   --checkbox-radius: 2px;
-  --h1-color: #e6b99d;
   --hr-thickness: 3px;
   --italic-color: #e29eca;
   --mono-rgb-100: 255, 255, 255;
@@ -35,7 +34,6 @@ html[saved-theme="dark"] {
 
   --bold-color: #e29eca;
   --checkbox-radius: 2px;
-  --h1-color: #e6b99d;
   --hr-thickness: 3px;
   --italic-color: #e29eca;
   --mono-rgb-100: 255, 255, 255;
@@ -209,6 +207,7 @@ html[saved-theme="dark"] {
 }
 
 :root {
+  --h1-color: var(--text-normal);
   --color-accent-2: light-dark(#fbcfc9, #fffcfc);
   --color-accent-hsl: light-dark(#f5a494, #f5a494);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
@@ -265,6 +264,7 @@ html {
   font-size: 16px;
 }
 body {
+  --h1-color: var(--text-normal);
   --background-modifier-border: #363636;
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;

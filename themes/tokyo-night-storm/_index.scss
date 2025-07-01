@@ -31,7 +31,6 @@ html[saved-theme="dark"] {
   --checkbox-color-hover: rgb(86, 95, 137);
   --graph-line: rgb(86, 95, 137);
   --graph-node-tag: rgb(255, 158, 100);
-  --h1-color: rgb(255, 117, 127);
   --inline-title-color: rgb(187, 154, 247);
   --italic-color: hsl(202, 100%, 75%);
   --mono-rgb-100: 255, 255, 255;
@@ -49,7 +48,6 @@ html[saved-theme="dark"] {
   --checkbox-color-hover: rgb(86, 95, 137);
   --graph-line: rgb(86, 95, 137);
   --graph-node-tag: rgb(255, 158, 100);
-  --h1-color: rgb(255, 117, 127);
   --inline-title-color: rgb(187, 154, 247);
   --italic-color: hsl(202, 100%, 75%);
   --mono-rgb-100: 255, 255, 255;
@@ -175,6 +173,7 @@ html[saved-theme="dark"] {
 }
 
 :root {
+  --h1-color: var(--text-normal);
   --color-accent-2: light-dark(hsl(199, 102%, 86.25%), hsl(197, 105%, 96.75%));
   --color-accent-hsl: light-dark(hsl(202, 100%, 75%), hsl(202, 100%, 75%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
@@ -231,6 +230,7 @@ html {
   font-size: 16px;
 }
 body {
+  --h1-color: var(--text-normal);
   --background-modifier-border: #363636;
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;

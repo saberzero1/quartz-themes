@@ -613,6 +613,7 @@ body hr {
 }
 
 :root {
+  --h1-color: var(--text-normal);
   --accent-2: light-dark(#00ffff, #00ffff);
   --background-modifier-border: light-dark(#00ffff, #00ffff);
   --background-primary: light-dark(#2b213a, #2b213a);
@@ -680,6 +681,7 @@ html {
   font-size: 16px;
 }
 body {
+  --h1-color: var(--text-normal);
   --accent-2: light-dark(#00ffff, #00ffff);
   --background-modifier-border: light-dark(#00ffff, #00ffff);
   --background-modifier-border-focus: #555555;

@@ -24,9 +24,6 @@ html[saved-theme="dark"] {
   }
   --checkbox-color: var(--yellow);
   --code-block: var(--green);
-  --h1-color: #dcbecd;
-  --h2-color: var(--text-title-h2);
-  --h3-color: var(--text-title-h3);
   --interactive-accent-hover: var(--yellow);
   --mono-rgb-100: 255, 255, 255;
   --pre-code: var(--black);
@@ -42,13 +39,8 @@ html[saved-theme="dark"] {
   --text-accent-hover: var(--red);
 
   --text-highlight-bg: #6699cc;
-  --text-title-h2: var(--yellow);
-  --text-title-h3: var(--yellow);
   --checkbox-color: var(--yellow);
   --code-block: var(--green);
-  --h1-color: #dcbecd;
-  --h2-color: var(--text-title-h2);
-  --h3-color: var(--text-title-h3);
   --interactive-accent-hover: var(--yellow);
   --mono-rgb-100: 255, 255, 255;
   --pre-code: var(--black);
@@ -64,8 +56,6 @@ html[saved-theme="dark"] {
   --text-accent-hover: var(--red);
 
   --text-highlight-bg: #6699cc;
-  --text-title-h2: var(--yellow);
-  --text-title-h3: var(--yellow);
 }
 
 .darkmode {
@@ -113,6 +103,9 @@ html[saved-theme="dark"] {
 }
 
 :root {
+  --h1-color: var(--text-normal);
+  --h2-color: var(--text-normal);
+  --h3-color: var(--text-normal);
   --color-accent-2: light-dark(#a68af9, #c5b6fc);
   --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
@@ -169,6 +162,9 @@ html {
   font-size: 16px;
 }
 body {
+  --h1-color: var(--text-normal);
+  --h2-color: var(--text-normal);
+  --h3-color: var(--text-normal);
   --background-modifier-border: light-dark(#e0e0e0, #363636);
   --background-modifier-border-focus: light-dark(#bdbdbd, #555555);
   --background-modifier-border-hover: light-dark(#d4d4d4, #3f3f3f);

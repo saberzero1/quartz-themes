@@ -33,7 +33,6 @@ html[saved-theme="dark"] {
   --checkbox-radius: 4px;
   --graph-line: #7da0b3;
   --graph-node-tag: #f2a070;
-  --h1-color: #84bfcf;
   --italic-color: #84bfcf;
   --mono-rgb-100: 255, 255, 255;
   --tag-background: #d2a5c4;
@@ -55,7 +54,6 @@ html[saved-theme="dark"] {
   --checkbox-radius: 4px;
   --graph-line: #7da0b3;
   --graph-node-tag: #f2a070;
-  --h1-color: #84bfcf;
   --italic-color: #84bfcf;
   --mono-rgb-100: 255, 255, 255;
   --tag-background: #d2a5c4;
@@ -233,6 +231,7 @@ html[saved-theme="dark"] {
 }
 
 :root {
+  --h1-color: var(--text-normal);
   --color-accent-2: light-dark(#6697bf, #7eabca);
   --color-accent-hsl: light-dark(#4d80b3, #4d80b3);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
@@ -289,6 +288,7 @@ html {
   font-size: 16px;
 }
 body {
+  --h1-color: var(--text-normal);
   --background-modifier-border: #363636;
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;

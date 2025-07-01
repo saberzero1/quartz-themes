@@ -98,6 +98,7 @@ html[saved-theme="light"] {
 /*# sourceMappingURL=/sm/59867498f0c78550f520215737c9482023c80e40e8ae270317f2a410e3fbae76.map */
 
 :root {
+  --h1-color: var(--text-normal);
   --background-modifier-border: light-dark(#dfdbc8, #525c62);
   --background-primary: light-dark(#fdf6e3, #2f383e);
   --background-primary-alt: light-dark(#fdf6e3, #2f383e);
@@ -164,6 +165,7 @@ html {
   font-size: 16px;
 }
 body {
+  --h1-color: var(--text-normal);
   --background-modifier-border: light-dark(#dfdbc8, #525c62);
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;

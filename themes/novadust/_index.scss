@@ -31,7 +31,6 @@ html[saved-theme="dark"] {
   --graph-line: #303f51;
   --graph-node-tag: #5dcbc3;
   --graph-node-unresolved: #74859a;
-  --h1-color: #ff695d;
   --hr-color: #84dca1;
   --interactive-accent-hsl: hsl(202.5, 38.89%, 28.24%);
   --italic-color: #f8c260;
@@ -56,7 +55,6 @@ html[saved-theme="dark"] {
   --graph-line: #303f51;
   --graph-node-tag: #5dcbc3;
   --graph-node-unresolved: #74859a;
-  --h1-color: #ff695d;
   --hr-color: #84dca1;
   --interactive-accent-hsl: hsl(202.5, 38.89%, 28.24%);
   --italic-color: #f8c260;
@@ -239,6 +237,7 @@ html[saved-theme="dark"] {
 }
 
 :root {
+  --h1-color: var(--text-normal);
   --color-accent-2: light-dark(
     hsl(137, 57.12%, 79.35%),
     hsl(135, 58.8%, 89.01%)
@@ -298,6 +297,7 @@ html {
   font-size: 16px;
 }
 body {
+  --h1-color: var(--text-normal);
   --background-modifier-border: #363636;
   --background-modifier-border-focus: #555555;
   --background-modifier-border-hover: #3f3f3f;
