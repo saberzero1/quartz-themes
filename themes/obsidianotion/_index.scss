@@ -1342,6 +1342,7 @@ body {
           box-shadow: none;
         }
         & > .search-layout {
+          border-color: var(--background-modifier-border, var(--color-base-35));
           &.display-results {
             border-top-left-radius: 0;
             border-top-right-radius: 0;
@@ -1354,6 +1355,10 @@ body {
             color: var(--text-normal);
           }
           & > .results-container {
+            border-color: var(
+              --background-modifier-border,
+              var(--color-base-35)
+            );
             & .result-card {
               @media all and not ($mobile) {
                 display: flex;
