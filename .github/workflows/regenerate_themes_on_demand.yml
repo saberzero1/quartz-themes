@@ -58,6 +58,10 @@ jobs:
         run: npm run force-compile
       - name: "Force Format Themes"
         run: npm run force-format
+      - name: "Recompile Themes"
+        run: npm run compile
+      - name: "Format Themes"
+        run: npm run format
       - name: "Verify"
         run: npm run verify
       - name: "Push Themes"
