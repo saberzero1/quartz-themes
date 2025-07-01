@@ -310,8 +310,8 @@ body {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-user-select: none;
   background-color: light-dark(
-    hsl(light-dark(15, 20%, 92%, 300, 6%, 14%)),
-    hsl(light-dark(15, 20%, 92%, 300, 6%, 14%))
+    light-dark(hsl(15, 20%, 92%), hsl(300, 6%, 14%)),
+    light-dark(hsl(15, 20%, 92%), hsl(300, 6%, 14%))
   );
   caret-color: hsl(255, 89.76%, 75.9%);
   color: hsl(194, 14%, 40%);
@@ -601,8 +601,8 @@ body {
     var(--background-modifier-hover)
   ) !important;
   background-color: light-dark(
-    hsl(light-dark(15, 20%, 92%, 300, 6%, 14%)),
-    hsl(light-dark(15, 20%, 92%, 300, 6%, 14%))
+    light-dark(hsl(15, 20%, 92%), hsl(300, 6%, 14%)),
+    light-dark(hsl(15, 20%, 92%), hsl(300, 6%, 14%))
   );
   background-color: var(--background-primary);
   overflow: initial;
@@ -623,27 +623,27 @@ body {
     &.left:has(.explorer),
     &.right {
       background-color: light-dark(
-        hsl(light-dark(15, 20%, 92%, 300, 6%, 14%)),
-        hsl(light-dark(15, 20%, 92%, 300, 6%, 14%))
+        light-dark(hsl(15, 20%, 92%), hsl(300, 6%, 14%)),
+        light-dark(hsl(15, 20%, 92%), hsl(300, 6%, 14%))
       );
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
         background-color: light-dark(
-          hsl(light-dark(15, 20%, 92%, 300, 6%, 14%)),
-          hsl(light-dark(15, 20%, 92%, 300, 6%, 14%))
+          light-dark(hsl(15, 20%, 92%), hsl(300, 6%, 14%)),
+          light-dark(hsl(15, 20%, 92%), hsl(300, 6%, 14%))
         );
         background-color: var(--background-primary);
       }
     }
     @media all and ($mobile) {
       &.left:has(.explorer) {
-        :before,
+        :not(.folder-container):before,
         :after {
           background-color: light-dark(
-            hsl(light-dark(15, 20%, 92%, 300, 6%, 14%)),
-            hsl(light-dark(15, 20%, 92%, 300, 6%, 14%))
+            light-dark(hsl(15, 20%, 92%), hsl(300, 6%, 14%)),
+            light-dark(hsl(15, 20%, 92%), hsl(300, 6%, 14%))
           );
           background-color: var(--background-secondary);
           content: " ";
@@ -653,7 +653,7 @@ body {
           top: 0;
           position: absolute;
         }
-        :before {
+        :not(.folder-container):before {
           left: -1rem;
         }
         :after {
@@ -1086,8 +1086,8 @@ body {
     .explorer-content {
       @media all and ($mobile) {
         background-color: light-dark(
-          hsl(light-dark(15, 20%, 92%, 300, 6%, 14%)),
-          hsl(light-dark(15, 20%, 92%, 300, 6%, 14%))
+          light-dark(hsl(15, 20%, 92%), hsl(300, 6%, 14%)),
+          light-dark(hsl(15, 20%, 92%), hsl(300, 6%, 14%))
         );
         background-color: var(--background-secondary);
         left: -1rem;
@@ -1308,14 +1308,14 @@ body {
         margin: 12vh auto;
         & > input {
           background-color: light-dark(
-            hsl(light-dark(15, 20%, 92%, 300, 6%, 14%)),
-            hsl(light-dark(15, 20%, 92%, 300, 6%, 14%))
+            light-dark(hsl(15, 20%, 92%), hsl(300, 6%, 14%)),
+            light-dark(hsl(15, 20%, 92%), hsl(300, 6%, 14%))
           );
           border: none;
           border-bottom: 1px solid
             light-dark(
-              hsl(light-dark(15, 20%, 88%, 300, 6%, 18%)),
-              hsl(light-dark(15, 20%, 88%, 300, 6%, 18%))
+              light-dark(hsl(15, 20%, 88%), hsl(300, 6%, 18%)),
+              light-dark(hsl(15, 20%, 88%), hsl(300, 6%, 18%))
             );
           border-radius: 0;
           font-size: 16px;
@@ -1439,8 +1439,8 @@ body {
   /* POPOVER */
   .popover {
     background-color: light-dark(
-      hsl(light-dark(15, 20%, 92%, 300, 6%, 14%)),
-      hsl(light-dark(15, 20%, 92%, 300, 6%, 14%))
+      light-dark(hsl(15, 20%, 92%), hsl(300, 6%, 14%)),
+      light-dark(hsl(15, 20%, 92%), hsl(300, 6%, 14%))
     );
     border: 1px solid transparent;
     border-radius: 8px;
@@ -1460,8 +1460,8 @@ body {
     & .popover-inner {
       border: 1px solid transparent;
       background-color: light-dark(
-        hsl(light-dark(15, 20%, 92%, 300, 6%, 14%)),
-        hsl(light-dark(15, 20%, 92%, 300, 6%, 14%))
+        light-dark(hsl(15, 20%, 92%), hsl(300, 6%, 14%)),
+        light-dark(hsl(15, 20%, 92%), hsl(300, 6%, 14%))
       );
 
       border-radius: 8px;

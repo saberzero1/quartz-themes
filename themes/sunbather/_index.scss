@@ -697,7 +697,7 @@ body {
     }
     @media all and ($mobile) {
       &.left:has(.explorer) {
-        :before,
+        :not(.folder-container):before,
         :after {
           background-color: light-dark(#ffffff, #050505);
           background-color: var(--background-secondary);
@@ -708,7 +708,7 @@ body {
           top: 0;
           position: absolute;
         }
-        :before {
+        :not(.folder-container):before {
           left: -1rem;
         }
         :after {
@@ -1360,11 +1360,7 @@ body {
         & > input {
           background-color: light-dark(#ffffff, #050505);
           border: none;
-          border-bottom: 1px solid
-            light-dark(
-              light-dark(#ffffff, #050505),
-              light-dark(#ffffff, #050505)
-            );
+          border-bottom: 1px solid light-dark(#ffffff, #050505);
           border-radius: 0;
           font-size: 16px;
           height: 48px;

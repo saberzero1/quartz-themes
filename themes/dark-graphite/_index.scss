@@ -581,7 +581,7 @@ body {
     }
     @media all and ($mobile) {
       &.left:has(.explorer) {
-        :before,
+        :not(.folder-container):before,
         :after {
           background-color: light-dark(#161719, #161719);
           background-color: var(--background-secondary);
@@ -592,7 +592,7 @@ body {
           top: 0;
           position: absolute;
         }
-        :before {
+        :not(.folder-container):before {
           left: -1rem;
         }
         :after {
@@ -1223,8 +1223,7 @@ body {
         light-dark(#161719, #161719),
         light-dark(#161719, #161719)
       );
-      border: 1px solid
-        light-dark(light-dark(#949594, #949594), light-dark(#949594, #949594));
+      border: 1px solid light-dark(#949594, #949594);
       border-radius: 5px;
       color: light-dark(#d5d5d5, #d5d5d5);
       font-family: inherit;

@@ -1253,7 +1253,7 @@ body {
     }
     @media all and ($mobile) {
       &.left:has(.explorer) {
-        :before,
+        :not(.folder-container):before,
         :after {
           background-color: #f7f7f8bf;
           background-color: var(--background-secondary);
@@ -1264,7 +1264,7 @@ body {
           top: 0;
           position: absolute;
         }
-        :before {
+        :not(.folder-container):before {
           left: -1rem;
         }
         :after {
@@ -1953,16 +1953,8 @@ body {
           & .highlight {
             background-color: transparent;
             color: light-dark(
-              hsl(
-                light-dark(181, 181),
-                light-dark(100%, 100%),
-                light-dark(35%, 35%)
-              ),
-              hsl(
-                light-dark(181, 181),
-                light-dark(100%, 100%),
-                light-dark(35%, 35%)
-              )
+              light-dark(hsl(181, 100%, 35%), hsl(181, 100%, 35%)),
+              light-dark(hsl(181, 100%, 35%), hsl(181, 100%, 35%))
             );
             font-weight: bold;
             background-color: var(--quartz-text-highlight);
