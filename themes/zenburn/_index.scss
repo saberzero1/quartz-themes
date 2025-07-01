@@ -590,12 +590,12 @@ body {
     &.left:has(.explorer),
     &.right {
       background-color: #333333;
-      background-color: var(--background-primary);
+      background-color: var(--background-secondary);
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
         background-color: #333333;
-        background-color: var(--background-primary);
+        background-color: var(--background-secondary);
         content: " ";
         display: block;
         height: 100%;
@@ -1026,7 +1026,7 @@ body {
     .explorer-content {
       @media all and ($mobile) {
         background-color: #333333;
-        background-color: var(--background-primary);
+        background-color: var(--background-secondary);
         left: -1rem;
       }
       .folder-container {
@@ -1382,7 +1382,7 @@ body {
   }
   .page > #quartz-body {
     .sidebar {
-      background-color: var(--background-primary);
+      background-color: var(--background-secondary);
     }
   }
   /* TEXT */

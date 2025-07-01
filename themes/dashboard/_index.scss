@@ -205,6 +205,7 @@ html[saved-theme="light"] {
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
   --color-base-40: light-dark(#bdbdbd, #555555);
@@ -226,6 +227,7 @@ html[saved-theme="light"] {
 
   --background-primary: var(--color-base-00);
   --background-primary-alt: var(--color-base-10);
+  --background-secondary: var(--color-base-20);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-35);
@@ -262,6 +264,7 @@ body {
   --background-modifier-hover: #ffffff11;
   --background-primary: #fafafa;
   --background-primary-alt: #fafafa;
+  --background-secondary: #fafafa;
   --bold-color: inherit;
   --bold-weight: 800;
   --checkbox-border-color: #4e4d49;
@@ -289,6 +292,7 @@ body {
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
   --color-base-40: light-dark(#bdbdbd, #555555);
@@ -397,6 +401,7 @@ body {
   --text-faint: var(--color-base-50);
   --background-primary: var(--color-base-00);
   --background-primary-alt: var(--color-base-10);
+  --background-secondary: var(--color-base-20);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-35);
@@ -677,12 +682,12 @@ body {
     &.left:has(.explorer),
     &.right {
       background-color: #fafafa;
-      background-color: var(--background-primary);
+      background-color: var(--background-secondary);
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
         background-color: #fafafa;
-        background-color: var(--background-primary);
+        background-color: var(--background-secondary);
         content: " ";
         display: block;
         height: 100%;
@@ -1111,7 +1116,7 @@ body {
     .explorer-content {
       @media all and ($mobile) {
         background-color: #fafafa;
-        background-color: var(--background-primary);
+        background-color: var(--background-secondary);
         left: -1rem;
       }
       .folder-container {
@@ -1463,7 +1468,7 @@ body {
   }
   .page > #quartz-body {
     .sidebar {
-      background-color: var(--background-primary);
+      background-color: var(--background-secondary);
     }
   }
   /* TEXT */

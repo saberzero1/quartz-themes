@@ -213,11 +213,13 @@ html[saved-theme="light"] {
   --background-modifier-border-hover: light-dark(#979fa7, #979fa7);
   --background-primary: light-dark(#262521, #111);
   --background-primary-alt: light-dark(#5f5d54, #646b73);
+  --background-secondary: light-dark(#4c4a43, #1e1e1e);
   --color-accent-2: light-dark(hsl(220, 102%, 71.3%), hsl(218, 105%, 79.98%));
   --color-accent-hsl: light-dark(#3d74ff, #3d74ff);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
   --color-base-40: light-dark(#bdbdbd, #555555);
@@ -238,6 +240,7 @@ html[saved-theme="light"] {
 
   --background-primary: var(--color-base-00);
   --background-primary-alt: var(--color-base-10);
+  --background-secondary: var(--color-base-20);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-35);
@@ -274,6 +277,7 @@ body {
   --background-modifier-hover: #ffffff11;
   --background-primary: light-dark(#262521, #111);
   --background-primary-alt: light-dark(#5f5d54, #646b73);
+  --background-secondary: light-dark(#4c4a43, #1e1e1e);
   --bold-color: inherit;
   --bold-weight: 600;
   --checkbox-border-color: #adb5bd;
@@ -301,6 +305,7 @@ body {
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
   --color-base-40: light-dark(#bdbdbd, #555555);
@@ -400,6 +405,7 @@ body {
   --text-faint: var(--color-base-50);
   --background-primary: var(--color-base-00);
   --background-primary-alt: var(--color-base-10);
+  --background-secondary: var(--color-base-20);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-35);
@@ -682,12 +688,12 @@ body {
     &.left:has(.explorer),
     &.right {
       background-color: #f2f1ed;
-      background-color: var(--background-primary);
+      background-color: var(--background-secondary);
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
         background-color: #f2f1ed;
-        background-color: var(--background-primary);
+        background-color: var(--background-secondary);
         content: " ";
         display: block;
         height: 100%;
@@ -1114,7 +1120,7 @@ body {
     .explorer-content {
       @media all and ($mobile) {
         background-color: #f2f1ed;
-        background-color: var(--background-primary);
+        background-color: var(--background-secondary);
         left: -1rem;
       }
       .folder-container {
@@ -1469,7 +1475,7 @@ body {
   }
   .page > #quartz-body {
     .sidebar {
-      background-color: var(--background-primary);
+      background-color: var(--background-secondary);
     }
   }
   /* TEXT */
