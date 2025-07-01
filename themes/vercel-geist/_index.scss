@@ -609,7 +609,7 @@ body {
     }
     @media all and ($mobile) {
       &.left:has(.explorer) {
-        :before,
+        :not(.folder-container):before,
         :after {
           background-color: #ffffff;
           background-color: var(--background-secondary);
@@ -620,7 +620,7 @@ body {
           top: 0;
           position: absolute;
         }
-        :before {
+        :not(.folder-container):before {
           left: -1rem;
         }
         :after {
@@ -1246,8 +1246,7 @@ body {
       color: var(--button-secondary-fg-color);
       -webkit-app-region: no-drag;
       background: transparent;
-      border: 1px solid
-        light-dark(light-dark(#eaeaea, #333333), light-dark(#eaeaea, #333333));
+      border: 1px solid light-dark(#eaeaea, #333333);
       border-radius: 5px;
       color: light-dark(#000000, #ffffff);
       font-family: inherit;
@@ -1277,11 +1276,7 @@ body {
         & > input {
           background-color: #ffffff;
           border: none;
-          border-bottom: 1px solid
-            light-dark(
-              light-dark(#eaeaea, #000000),
-              light-dark(#eaeaea, #000000)
-            );
+          border-bottom: 1px solid light-dark(#eaeaea, #000000);
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1404,8 +1399,7 @@ body {
   /* POPOVER */
   .popover {
     background-color: #eaeaea;
-    border: 1px solid
-      light-dark(light-dark(#eaeaea, #333333), light-dark(#eaeaea, #333333));
+    border: 1px solid light-dark(#eaeaea, #333333);
     border-radius: 8px;
     box-shadow:
       0px 1px 2px #0000001f,
@@ -1421,8 +1415,7 @@ body {
     border: unset;
     background-color: var(--background-primary);
     & .popover-inner {
-      border: 1px solid
-        light-dark(light-dark(#eaeaea, #333333), light-dark(#eaeaea, #333333));
+      border: 1px solid light-dark(#eaeaea, #333333);
       background-color: #eaeaea;
 
       border-radius: 8px;

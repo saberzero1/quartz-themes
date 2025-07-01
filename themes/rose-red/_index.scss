@@ -616,7 +616,7 @@ body {
     }
     @media all and ($mobile) {
       &.left:has(.explorer) {
-        :before,
+        :not(.folder-container):before,
         :after {
           background-color: light-dark(
             linear-gradient(45deg, #240a00 0%, #79091f 35%, #030303 100%),
@@ -630,7 +630,7 @@ body {
           top: 0;
           position: absolute;
         }
-        :before {
+        :not(.folder-container):before {
           left: -1rem;
         }
         :after {
