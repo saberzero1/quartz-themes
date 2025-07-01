@@ -764,6 +764,7 @@ body {
     height: var(--checkbox-size);
     display: block;
     background-color: var(--checkbox-marker-color);
+    transform: rotate(45deg);
     mask-position: 52% 52%;
     mask-size: 65%;
     mask-repeat: no-repeat;
