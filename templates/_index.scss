@@ -80,6 +80,7 @@
 html {
   /* Ensure rem units are based on a 16px root font size */
   font-size: 16px;
+  font-family: var(--bodyFont);
 }
 
 body {
@@ -486,7 +487,7 @@ body {
 
   background-color: var(--background-primary);
   
-  @media all and not ($desktop) {
+  @media all and ($mobile) {
     div.flex-component > div:has(> button.readermode) {
       display: none;
     }
@@ -757,6 +758,7 @@ body {
   }
 
   /* CODE */
+  figure[data-rehype-pretty-code-figure] pre,
   pre {
 
     //%%PRE%%
@@ -1117,6 +1119,7 @@ body {
         & > .search-layout {
           border-color: var(--background-modifier-border, var(--color-base-35));
           &.display-results {
+            border-color: var(--background-modifier-border, var(--color-base-35));
             border-top-left-radius: 0;
             border-top-right-radius: 0;
           }
@@ -1131,6 +1134,7 @@ body {
           & > .results-container {
             border-color: var(--background-modifier-border, var(--color-base-35));
             & .result-card {
+              border-color: var(--background-modifier-border, var(--color-base-35));
               @media all and not ($mobile) {
                 display: flex;
                 &.no-match {

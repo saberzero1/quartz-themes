@@ -261,6 +261,7 @@ html[saved-theme="light"] {
 html {
   /* Ensure rem units are based on a 16px root font size */
   font-size: 16px;
+  font-family: var(--bodyFont);
 }
 body {
   --h1-color: var(--text-normal);
@@ -997,6 +998,7 @@ body {
     --link-weight: 600;
   }
   /* CODE */
+  figure[data-rehype-pretty-code-figure] pre,
   pre {
     background-color: #1c1d26;
     border: 0px solid transparent;
@@ -1413,6 +1415,10 @@ body {
         & > .search-layout {
           border-color: var(--background-modifier-border, var(--color-base-35));
           &.display-results {
+            border-color: var(
+              --background-modifier-border,
+              var(--color-base-35)
+            );
             border-top-left-radius: 0;
             border-top-right-radius: 0;
           }
@@ -1430,6 +1436,10 @@ body {
               var(--color-base-35)
             );
             & .result-card {
+              border-color: var(
+                --background-modifier-border,
+                var(--color-base-35)
+              );
               @media all and not ($mobile) {
                 display: flex;
                 &.no-match {
@@ -1624,6 +1634,7 @@ body {
 }
 /* FONT OVERRIDES */
 :root:root:root {
+  --bodyFont: var(--font-default) !important;
   --codeFont: var(--font-monospace, var(--font-default)) !important;
 }
 /* START CANVAS GRAPH WORKAROUND */
