@@ -1378,6 +1378,22 @@ body {
       padding-left: 1rem;
       padding-right: 1rem;
     }
+    @media all and ($tablet) {
+      .center,
+      .sidebar.right,
+      footer {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
+    @media all and ($mobile) {
+      .sidebar.left {
+        padding-left: 1rem;
+      }
+      .explorer:not(.collapsed) > .explorer-content {
+        padding-left: 2.5rem;
+      }
+    }
     .sidebar {
       background-color: var(--background-secondary);
     }
