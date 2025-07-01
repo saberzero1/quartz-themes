@@ -703,14 +703,14 @@ body {
   }
   input[type="checkbox"]:checked:after {
     content: "";
-    top: -1px;
-    inset-inline-start: -1px;
+    top: -1.5px;
+    inset-inline-start: -2px;
     position: absolute;
     width: var(--checkbox-size);
     height: var(--checkbox-size);
     display: block;
     background-color: var(--checkbox-marker-color);
-    transform: rotate(45deg);
+    transform: rotate(0deg);
     mask-position: 52% 52%;
     mask-size: 65%;
     mask-repeat: no-repeat;
