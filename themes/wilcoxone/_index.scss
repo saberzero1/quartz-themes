@@ -1415,7 +1415,8 @@ body {
   /* POPOVER */
   .popover {
     background-color: light-dark(#95b2b0, #0f1734);
-    border: 1px solid light-dark(#fcfcfc, #212121);
+    border: 1px solid
+      light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
     border-radius: 0.25rem;
     box-shadow: 0 2px 8px #0000004d;
     display: flex;
@@ -1429,7 +1430,8 @@ body {
     border: unset;
     background-color: var(--background-primary);
     & .popover-inner {
-      border: 1px solid light-dark(#fcfcfc, #212121);
+      border: 1px solid
+        light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
       background-color: light-dark(#95b2b0, #0f1734);
 
       border-radius: 0.25rem;

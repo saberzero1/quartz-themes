@@ -216,8 +216,11 @@ html[saved-theme="dark"] {
 
 :root {
   --h1-color: var(--text-normal);
-  --color-accent-2: light-dark(#138559, #149760);
-  --color-accent-hsl: light-dark(#127352, #127352);
+  --color-accent-2: light-dark(
+    hsl(157, 74.46%, 29.9%),
+    hsl(155, 76.65%, 33.54%)
+  );
+  --color-accent-hsl: light-dark(hsl(160, 73%, 26%), hsl(160, 73%, 26%));
   --color-base-00: light-dark(#ffffff, #141a1f);
   --color-base-10: light-dark(#fafafa, #101519);
   --color-base-100: light-dark(#222222, #dadada);
@@ -306,8 +309,11 @@ body {
   --code-value: #a882ff;
   --collapse-icon-color: #666666;
   --collapse-icon-color-collapsed: #0cc084;
-  --color-accent-2: light-dark(#138559, #149760);
-  --color-accent-hsl: light-dark(#127352, #127352);
+  --color-accent-2: light-dark(
+    hsl(157, 74.46%, 29.9%),
+    hsl(155, 76.65%, 33.54%)
+  );
+  --color-accent-hsl: light-dark(hsl(160, 73%, 26%), hsl(160, 73%, 26%));
   --color-base-00: light-dark(#ffffff, #141a1f);
   --color-base-10: light-dark(#fafafa, #101519);
   --color-base-100: light-dark(#222222, #dadada);
@@ -372,7 +378,7 @@ body {
   --tag-radius: 2em;
   --tag-weight: inherit;
   --text-accent: #127352;
-  --text-accent-hover: #149760;
+  --text-accent-hover: hsl(155, 76.65%, 33.54%);
   --text-faint: #666666;
   --text-highlight-bg: #ffd00066;
   --text-muted: #a7abaf;

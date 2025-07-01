@@ -99,8 +99,8 @@ html[saved-theme="light"] {
   --code-string: light-dark(#53dfdd, #53dfdd);
   --code-tag: light-dark(#fb464c, #fb464c);
   --code-value: light-dark(#027aff, #027aff);
-  --color-accent-2: light-dark(#f9958a, #fdbab6);
-  --color-accent-hsl: light-dark(#f5725b, #f5725b);
+  --color-accent-2: light-dark(hsl(6, 90.78%, 75.9%), hsl(4, 93.45%, 85.14%));
+  --color-accent-hsl: light-dark(hsl(9, 89%, 66%), hsl(9, 89%, 66%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -175,7 +175,7 @@ body {
   --checkbox-border-color: rgba(#fffcf4, 0.5);
   --checkbox-border-color-hover: rgba(#fffcf4, 0.8);
   --checkbox-color: #f5725b;
-  --checkbox-color-hover: #f9958a;
+  --checkbox-color-hover: hsl(6, 90.78%, 75.9%);
   --checkbox-marker-color: #282828;
   --checkbox-radius: 0;
   --checkbox-size: 16px;
@@ -192,8 +192,8 @@ body {
   --code-value: light-dark(#027aff, #027aff);
   --collapse-icon-color: rgba(#fffcf4, 0.5);
   --collapse-icon-color-collapsed: #ff8671;
-  --color-accent-2: light-dark(#f9958a, #fdbab6);
-  --color-accent-hsl: light-dark(#f5725b, #f5725b);
+  --color-accent-2: light-dark(hsl(6, 90.78%, 75.9%), hsl(4, 93.45%, 85.14%));
+  --color-accent-hsl: light-dark(hsl(9, 89%, 66%), hsl(9, 89%, 66%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -239,9 +239,9 @@ body {
   --interactive-accent-hsl: 9, 89%, 66%;
   --italic-color: inherit;
   --link-color: light-dark(#ff8671, #ff8671);
-  --link-color-hover: #fdbab6;
+  --link-color-hover: hsl(4, 93.45%, 85.14%);
   --link-external-color: #ff8671;
-  --link-external-color-hover: #fdbab6;
+  --link-external-color-hover: hsl(4, 93.45%, 85.14%);
   --link-external-filter: none;
   --link-weight: 400;
   --p-spacing: 1rem;
@@ -258,7 +258,7 @@ body {
   --tag-radius: 0.3em;
   --tag-weight: inherit;
   --text-accent: light-dark(#ff8671, #ff8671);
-  --text-accent-hover: #fdbab6;
+  --text-accent-hover: hsl(4, 93.45%, 85.14%);
   --text-faint: #666666;
   --text-highlight-bg: #ffd00066;
   --text-muted: #b3b3b3;

@@ -85,13 +85,16 @@ html[saved-theme="dark"] {
 
 :root {
   --h1-color: var(--text-normal);
-  --background-modifier-border: light-dark(#bb7ae6, #03243e);
-  --background-modifier-border-focus: light-dark(#9c3eda, #ecc48d);
-  --background-modifier-border-hover: light-dark(#ad60e1, #c792ea);
+  --background-modifier-border: light-dark(hsl(276, 68%, 69%), #03243e);
+  --background-modifier-border-focus: light-dark(hsl(276, 68%, 55%), #ecc48d);
+  --background-modifier-border-hover: light-dark(hsl(276, 68%, 63%), #c792ea);
   --background-secondary: light-dark(#f78c6c, #021d33);
   --bold-weight: 600;
-  --color-accent-2: light-dark(#a68af9, #c5b6fc);
-  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --color-accent-2: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
+  );
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -112,7 +115,7 @@ html[saved-theme="dark"] {
   --font-monospace:
     "Monaspace Argon", "monolisa", menlo, SFMono-Regular, Consolas, monospace;
   --text-accent: light-dark(#8a5cf5, #ecc48d);
-  --text-accent-hover: light-dark(#672cf2, #c792ea);
+  --text-accent-hover: light-dark(hsl(258, 88%, 56%), #c792ea);
   --text-muted: light-dark(#03243e, #c792ea);
   --text-normal: light-dark(#c792ea, #abb2bf);
   --text-normal: var(--color-base-100);
@@ -154,9 +157,9 @@ html {
 }
 body {
   --h1-color: var(--text-normal);
-  --background-modifier-border: light-dark(#bb7ae6, #03243e);
-  --background-modifier-border-focus: light-dark(#9c3eda, #ecc48d);
-  --background-modifier-border-hover: light-dark(#ad60e1, #c792ea);
+  --background-modifier-border: light-dark(hsl(276, 68%, 69%), #03243e);
+  --background-modifier-border-focus: light-dark(hsl(276, 68%, 55%), #ecc48d);
+  --background-modifier-border-hover: light-dark(hsl(276, 68%, 63%), #c792ea);
   --background-modifier-hover: #ffffff11;
   --background-primary: #000;
   --background-primary-alt: #111;
@@ -170,7 +173,7 @@ body {
   --checkbox-marker-color: #c894eb;
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --code-background: #bf83e7;
+  --code-background: hsl(276, 68%, 71%);
   --code-comment: #c792ea97;
   --code-function: #e0de71;
   --code-important: #e9973f;
@@ -183,8 +186,11 @@ body {
   --code-value: #a882ff;
   --collapse-icon-color: #c792ea97;
   --collapse-icon-color-collapsed: #ecc48d;
-  --color-accent-2: light-dark(#a68af9, #c5b6fc);
-  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --color-accent-2: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
+  );
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -249,7 +255,7 @@ body {
   --tag-radius: 2em;
   --tag-weight: inherit;
   --text-accent: light-dark(#8a5cf5, #ecc48d);
-  --text-accent-hover: light-dark(#672cf2, #c792ea);
+  --text-accent-hover: light-dark(hsl(258, 88%, 56%), #c792ea);
   --text-faint: #666666;
   --text-highlight-bg: #ffd00066;
   --text-muted: light-dark(#03243e, #c792ea);
@@ -862,7 +868,7 @@ body {
   /* CODE */
   figure[data-rehype-pretty-code-figure] pre,
   pre {
-    background-color: #bf83e7;
+    background-color: hsl(276, 68%, 71%);
     border: 0px solid #03243e;
     border-radius: 4px;
     min-height: 38px;
@@ -931,7 +937,7 @@ body {
   }
   code {
     -webkit-box-decoration-break: clone;
-    background-color: #bf83e7;
+    background-color: hsl(276, 68%, 71%);
     border: 0px solid #03243e;
     border-radius: 4px;
     color: #abb2bf;

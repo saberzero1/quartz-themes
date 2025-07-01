@@ -961,8 +961,8 @@ html[saved-theme="dark"] {
 
 :root {
   --h1-color: var(--text-normal);
-  --color-accent-2: light-dark(#caa05b, #d4ac75);
-  --color-accent-hsl: light-dark(#bf9540, #bf9540);
+  --color-accent-2: light-dark(hsl(37, 51%, 57.5%), hsl(35, 52.5%, 64.5%));
+  --color-accent-hsl: light-dark(hsl(40, 50%, 50%), hsl(40, 50%, 50%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -1031,7 +1031,7 @@ body {
   --checkbox-border-color: #a09b80;
   --checkbox-border-color-hover: #b3b3b3;
   --checkbox-color: #bf9540;
-  --checkbox-color-hover: #caa05b;
+  --checkbox-color-hover: hsl(37, 51%, 57.5%);
   --checkbox-marker-color: #222222;
   --checkbox-radius: 50%;
   --checkbox-size: 16px;
@@ -1048,8 +1048,8 @@ body {
   --code-value: #a882ff;
   --collapse-icon-color: #a09b80;
   --collapse-icon-color-collapsed: #59a2c5;
-  --color-accent-2: light-dark(#caa05b, #d4ac75);
-  --color-accent-hsl: light-dark(#bf9540, #bf9540);
+  --color-accent-2: light-dark(hsl(37, 51%, 57.5%), hsl(35, 52.5%, 64.5%));
+  --color-accent-hsl: light-dark(hsl(40, 50%, 50%), hsl(40, 50%, 50%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -1116,7 +1116,7 @@ body {
   --tag-radius: 2em;
   --tag-weight: inherit;
   --text-accent: #bf9540;
-  --text-accent-hover: #d4ac75;
+  --text-accent-hover: hsl(35, 52.5%, 64.5%);
   --text-faint: #666666;
   --text-highlight-bg: #ffd00066;
   --text-muted: #b3b3b3;

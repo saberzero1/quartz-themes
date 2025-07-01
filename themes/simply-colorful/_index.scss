@@ -1430,7 +1430,8 @@ body {
         light-dark(#fcfcfc, #212121),
         light-dark(#fcfcfc, #212121)
       );
-      border: 1px solid light-dark(#e3e3e3, #2a2a2a);
+      border: 1px solid
+        light-dark(light-dark(#e3e3e3, #2a2a2a), light-dark(#e3e3e3, #2a2a2a));
       border-radius: 5px;
       color: #dadada;
       font-family: inherit;
@@ -1460,7 +1461,11 @@ body {
         & > input {
           background-color: #ffffff;
           border: none;
-          border-bottom: 1px solid light-dark(#fcfcfc, #212121);
+          border-bottom: 1px solid
+            light-dark(
+              light-dark(#fcfcfc, #212121),
+              light-dark(#fcfcfc, #212121)
+            );
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1583,7 +1588,8 @@ body {
   /* POPOVER */
   .popover {
     background-color: #ffffff;
-    border: 1px solid light-dark(#e3e3e3, #2a2a2a);
+    border: 1px solid
+      light-dark(light-dark(#e3e3e3, #2a2a2a), light-dark(#e3e3e3, #2a2a2a));
     border-radius: 8px;
     box-shadow:
       0px 1px 2px #0000001f,
@@ -1599,7 +1605,8 @@ body {
     border: unset;
     background-color: var(--background-primary);
     & .popover-inner {
-      border: 1px solid light-dark(#e3e3e3, #2a2a2a);
+      border: 1px solid
+        light-dark(light-dark(#e3e3e3, #2a2a2a), light-dark(#e3e3e3, #2a2a2a));
       background-color: #ffffff;
 
       border-radius: 8px;

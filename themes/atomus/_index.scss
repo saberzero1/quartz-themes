@@ -23,11 +23,11 @@ html[saved-theme="dark"] {
     color: var(--shiki-dark);
   }
   --mono-rgb-100: 255, 255, 255;
-  --text-accent: #7aa0db;
+  --text-accent: hsl(216, 57.12%, 66.7%);
 
   --text-highlight-bg: #bdc3c71a;
   --mono-rgb-100: 255, 255, 255;
-  --text-accent: #7aa0db;
+  --text-accent: hsl(216, 57.12%, 66.7%);
 
   --text-highlight-bg: #bdc3c71a;
 }
@@ -198,8 +198,11 @@ html[saved-theme="dark"] {
 
 :root {
   --h1-color: var(--text-normal);
-  --color-accent-2: light-dark(#7aa0db, #99bae5);
-  --color-accent-hsl: light-dark(#5882d0, #5882d0);
+  --color-accent-2: light-dark(
+    hsl(216, 57.12%, 66.7%),
+    hsl(214, 58.8%, 74.82%)
+  );
+  --color-accent-hsl: light-dark(hsl(219, 56%, 58%), hsl(219, 56%, 58%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -268,7 +271,7 @@ body {
   --checkbox-border-color: #515663;
   --checkbox-border-color-hover: #888;
   --checkbox-color: #5882d0;
-  --checkbox-color-hover: #7aa0db;
+  --checkbox-color-hover: hsl(216, 57.12%, 66.7%);
   --checkbox-marker-color: #272b34;
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
@@ -284,9 +287,12 @@ body {
   --code-tag: #fb464c;
   --code-value: #a882ff;
   --collapse-icon-color: #515663;
-  --collapse-icon-color-collapsed: #7aa0db;
-  --color-accent-2: light-dark(#7aa0db, #99bae5);
-  --color-accent-hsl: light-dark(#5882d0, #5882d0);
+  --collapse-icon-color-collapsed: hsl(216, 57.12%, 66.7%);
+  --color-accent-2: light-dark(
+    hsl(216, 57.12%, 66.7%),
+    hsl(214, 58.8%, 74.82%)
+  );
+  --color-accent-hsl: light-dark(hsl(219, 56%, 58%), hsl(219, 56%, 58%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -328,10 +334,10 @@ body {
   --inline-title-font: inherit;
   --interactive-accent-hsl: 219, 56%, 58%;
   --italic-color: inherit;
-  --link-color: #7aa0db;
-  --link-color-hover: #68bafd;
-  --link-external-color: #7aa0db;
-  --link-external-color-hover: #68bafd;
+  --link-color: hsl(216, 57.12%, 66.7%);
+  --link-color-hover: hsl(207, 97%, 70%);
+  --link-external-color: hsl(216, 57.12%, 66.7%);
+  --link-external-color-hover: hsl(207, 97%, 70%);
   --link-external-filter: none;
   --link-weight: 600;
   --p-spacing: 1rem;
@@ -341,14 +347,14 @@ body {
   --tag-border-color: #5882d026;
   --tag-border-color-hover: #5882d026;
   --tag-border-width: 0px;
-  --tag-color: #7aa0db;
-  --tag-color-hover: #7aa0db;
+  --tag-color: hsl(216, 57.12%, 66.7%);
+  --tag-color-hover: hsl(216, 57.12%, 66.7%);
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-radius: 2em;
   --tag-weight: inherit;
-  --text-accent: #61afef;
-  --text-accent-hover: #68bafd;
+  --text-accent: hsl(207, 82%, 66%);
+  --text-accent-hover: hsl(207, 97%, 70%);
   --text-faint: #666666;
   --text-highlight-bg: #ffd00066;
   --text-muted: #b3b3b3;
@@ -357,7 +363,7 @@ body {
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: #272b34;
-  caret-color: #7aa0db;
+  caret-color: hsl(216, 57.12%, 66.7%);
   color: #ffffff;
   contain: initial;
   font-family:

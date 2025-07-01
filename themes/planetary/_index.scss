@@ -1268,7 +1268,11 @@ body {
         & > input {
           background-color: #fffefd;
           border: none;
-          border-bottom: 1px solid light-dark(#fdf9f5, #181716);
+          border-bottom: 1px solid
+            light-dark(
+              light-dark(#fdf9f5, #181716),
+              light-dark(#fdf9f5, #181716)
+            );
           border-radius: 0;
           font-size: 16px;
           height: 48px;

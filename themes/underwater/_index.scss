@@ -1138,7 +1138,10 @@ body {
   }
   h6 {
     --font-weight: 600;
-    color: light-dark(#575279, #e0def4);
+    color: light-dark(
+      light-dark(#575279, #e0def4),
+      light-dark(light-dark(#575279, #e0def4), light-dark(#575279, #e0def4))
+    );
     font-family:
       "??",
       "??",

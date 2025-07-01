@@ -104,8 +104,8 @@ html[saved-theme="light"] {
 
 :root {
   --h1-color: var(--text-normal);
-  --color-accent-2: light-dark(#9cbc4b, #adc761);
-  --color-accent-hsl: light-dark(#84a63f, #84a63f);
+  --color-accent-2: light-dark(hsl(77, 45.9%, 51.75%), hsl(75, 47.25%, 58.05%));
+  --color-accent-hsl: light-dark(hsl(80, 45%, 45%), hsl(80, 45%, 45%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -174,7 +174,7 @@ body {
   --checkbox-border-color: #3f3f3f;
   --checkbox-border-color-hover: #999999;
   --checkbox-color: #84a63f;
-  --checkbox-color-hover: #9cbc4b;
+  --checkbox-color-hover: hsl(77, 45.9%, 51.75%);
   --checkbox-marker-color: #111;
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
@@ -190,9 +190,9 @@ body {
   --code-tag: #fb464c;
   --code-value: #a882ff;
   --collapse-icon-color: #3f3f3f;
-  --collapse-icon-color-collapsed: #9cbc4b;
-  --color-accent-2: light-dark(#9cbc4b, #adc761);
-  --color-accent-hsl: light-dark(#84a63f, #84a63f);
+  --collapse-icon-color-collapsed: hsl(77, 45.9%, 51.75%);
+  --color-accent-2: light-dark(hsl(77, 45.9%, 51.75%), hsl(75, 47.25%, 58.05%));
+  --color-accent-hsl: light-dark(hsl(80, 45%, 45%), hsl(80, 45%, 45%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -237,10 +237,10 @@ body {
   --inline-title-font: "Crimson Pro";
   --interactive-accent-hsl: 80, 45%, 45%;
   --italic-color: inherit;
-  --link-color: #9cbc4b;
-  --link-color-hover: #adc761;
-  --link-external-color: #9cbc4b;
-  --link-external-color-hover: #adc761;
+  --link-color: hsl(77, 45.9%, 51.75%);
+  --link-color-hover: hsl(75, 47.25%, 58.05%);
+  --link-external-color: hsl(77, 45.9%, 51.75%);
+  --link-external-color-hover: hsl(75, 47.25%, 58.05%);
   --link-external-filter: none;
   --link-weight: 600;
   --p-spacing: 1rem;
@@ -250,14 +250,14 @@ body {
   --tag-border-color: #84a63f26;
   --tag-border-color-hover: #84a63f26;
   --tag-border-width: 0px;
-  --tag-color: #9cbc4b;
-  --tag-color-hover: #9cbc4b;
+  --tag-color: hsl(77, 45.9%, 51.75%);
+  --tag-color-hover: hsl(77, 45.9%, 51.75%);
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-radius: 2em;
   --tag-weight: inherit;
   --text-accent: #84a63f;
-  --text-accent-hover: #adc761;
+  --text-accent-hover: hsl(75, 47.25%, 58.05%);
   --text-faint: #666666;
   --text-highlight-bg: #ffd00066;
   --text-muted: #b3b3b3;
@@ -265,7 +265,7 @@ body {
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: #111;
-  caret-color: #9cbc4b;
+  caret-color: hsl(77, 45.9%, 51.75%);
   color: #dadada;
   contain: initial;
   font-family:
@@ -1335,7 +1335,7 @@ body {
                 background-color: transparent;
                 color: #dadada;
                 &.match-tag {
-                  color: #9cbc4b;
+                  color: hsl(77, 45.9%, 51.75%);
                 }
               }
             }

@@ -1953,8 +1953,16 @@ body {
           & .highlight {
             background-color: transparent;
             color: light-dark(
-              light-dark(hsl(181, 100%, 35%), hsl(181, 100%, 35%)),
-              light-dark(hsl(181, 100%, 35%), hsl(181, 100%, 35%))
+              hsl(
+                light-dark(181, 181),
+                light-dark(100%, 100%),
+                light-dark(35%, 35%)
+              ),
+              hsl(
+                light-dark(181, 181),
+                light-dark(100%, 100%),
+                light-dark(35%, 35%)
+              )
             );
             font-weight: bold;
             background-color: var(--quartz-text-highlight);

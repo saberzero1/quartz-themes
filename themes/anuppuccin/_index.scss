@@ -147,8 +147,11 @@ html[saved-theme="light"] {
   --background-primary: inherit;
   --background-primary-alt: inherit;
   --background-secondary: inherit;
-  --color-accent-2: light-dark(#a68af9, #c5b6fc);
-  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --color-accent-2: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
+  );
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -238,8 +241,11 @@ body {
   --code-value: inherit;
   --collapse-icon-color: inherit;
   --collapse-icon-color-collapsed: inherit;
-  --color-accent-2: light-dark(#a68af9, #c5b6fc);
-  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --color-accent-2: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
+  );
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -315,13 +321,13 @@ body {
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: light-dark(
-    light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
-    light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
+    light-dark(239, 241, 245, 30, 30, 46),
+    rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
   caret-color: inherit;
   color: light-dark(
-    light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
-    light-dark(rgb(76, 79, 105), rgb(198, 208, 245))
+    light-dark(76, 79, 105, 198, 208, 245),
+    rgb(light-dark(76, 79, 105, 198, 208, 245))
   );
   contain: initial;
   font-family:
@@ -623,8 +629,8 @@ body {
     var(--background-modifier-hover)
   ) !important;
   background-color: light-dark(
-    light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
-    light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
+    light-dark(239, 241, 245, 30, 30, 46),
+    rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
   background-color: var(--background-primary);
   overflow: initial;
@@ -645,16 +651,16 @@ body {
     &.left:has(.explorer),
     &.right {
       background-color: light-dark(
-        light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
-        light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
+        light-dark(239, 241, 245, 30, 30, 46),
+        rgb(light-dark(239, 241, 245, 30, 30, 46))
       );
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
         background-color: light-dark(
-          light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
-          light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
+          light-dark(239, 241, 245, 30, 30, 46),
+          rgb(light-dark(239, 241, 245, 30, 30, 46))
         );
         background-color: var(--background-primary);
       }
@@ -664,8 +670,8 @@ body {
         :before,
         :after {
           background-color: light-dark(
-            light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
-            light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
+            light-dark(239, 241, 245, 30, 30, 46),
+            rgb(light-dark(239, 241, 245, 30, 30, 46))
           );
           background-color: var(--background-secondary);
           content: " ";
@@ -1223,8 +1229,8 @@ body {
     .explorer-content {
       @media all and ($mobile) {
         background-color: light-dark(
-          light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
-          light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
+          light-dark(239, 241, 245, 30, 30, 46),
+          rgb(light-dark(239, 241, 245, 30, 30, 46))
         );
         background-color: var(--background-secondary);
         left: -1rem;
@@ -1447,8 +1453,8 @@ body {
       border: 1px solid transparent;
       border-radius: 6px;
       color: light-dark(
-        light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
-        light-dark(rgb(76, 79, 105), rgb(198, 208, 245))
+        light-dark(76, 79, 105, 198, 208, 245),
+        rgb(light-dark(76, 79, 105, 198, 208, 245))
       );
       font-family: inherit;
       font-size: 14.992px;
@@ -1464,8 +1470,8 @@ body {
     & > .search-container {
       & > .search-space {
         background-color: light-dark(
-          light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
-          light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
+          light-dark(239, 241, 245, 30, 30, 46),
+          rgb(light-dark(239, 241, 245, 30, 30, 46))
         );
         border: 0.5pt solid inherit;
         border-radius: 12px;
@@ -1479,14 +1485,14 @@ body {
         margin: 12vh auto;
         & > input {
           background-color: light-dark(
-            light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
-            light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
+            light-dark(239, 241, 245, 30, 30, 46),
+            rgb(light-dark(239, 241, 245, 30, 30, 46))
           );
           border: none;
           border-bottom: 1px solid
             light-dark(
-              light-dark(rgb(230, 233, 239), rgb(24, 24, 37)),
-              light-dark(rgb(230, 233, 239), rgb(24, 24, 37))
+              light-dark(230, 233, 239, 24, 24, 37),
+              rgb(light-dark(230, 233, 239, 24, 24, 37))
             );
           border-radius: 0;
           font-size: 16px;
@@ -1501,8 +1507,8 @@ body {
         }
         & > * {
           color: light-dark(
-            light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
-            light-dark(rgb(76, 79, 105), rgb(198, 208, 245))
+            light-dark(76, 79, 105, 198, 208, 245),
+            rgb(light-dark(76, 79, 105, 198, 208, 245))
           );
           background: transparent;
           margin-bottom: 0;
@@ -1544,16 +1550,16 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: light-dark(
-                  rgba(76, 79, 105, 0.075),
-                  rgba(198, 208, 245, 0.075)
+                background-color: rgba(
+                  light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
+                  0.075
                 );
               }
               & > ul > li > p {
                 background-color: transparent;
                 color: light-dark(
-                  light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
-                  light-dark(rgb(76, 79, 105), rgb(198, 208, 245))
+                  light-dark(76, 79, 105, 198, 208, 245),
+                  rgb(light-dark(76, 79, 105, 198, 208, 245))
                 );
                 &.match-tag {
                   color: inherit;
@@ -1619,8 +1625,8 @@ body {
   /* POPOVER */
   .popover {
     background-color: light-dark(
-      light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
-      light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
+      light-dark(239, 241, 245, 30, 30, 46),
+      rgb(light-dark(239, 241, 245, 30, 30, 46))
     );
     border: 1px solid transparent;
     border-radius: 8px;
@@ -1640,8 +1646,8 @@ body {
     & .popover-inner {
       border: 1px solid transparent;
       background-color: light-dark(
-        light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
-        light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
+        light-dark(239, 241, 245, 30, 30, 46),
+        rgb(light-dark(239, 241, 245, 30, 30, 46))
       );
 
       border-radius: 8px;

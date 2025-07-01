@@ -23,9 +23,9 @@ html[saved-theme="dark"] {
     color: var(--shiki-dark);
   }
   --mono-rgb-100: 255, 255, 255;
-  --text-accent: #c26e29;
+  --text-accent: hsl(27, 65.28%, 46%);
   --mono-rgb-100: 255, 255, 255;
-  --text-accent: #c26e29;
+  --text-accent: hsl(27, 65.28%, 46%);
 }
 
 .darkmode {
@@ -194,8 +194,8 @@ html[saved-theme="dark"] {
 
 :root {
   --h1-color: var(--text-normal);
-  --color-accent-2: light-dark(#c26e29, #d77631);
-  --color-accent-hsl: light-dark(#a76625, #a76625);
+  --color-accent-2: light-dark(hsl(27, 65.28%, 46%), hsl(25, 67.2%, 51.6%));
+  --color-accent-hsl: light-dark(hsl(30, 64%, 40%), hsl(30, 64%, 40%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -264,7 +264,7 @@ body {
   --checkbox-border-color: #666666;
   --checkbox-border-color-hover: #b5aea5;
   --checkbox-color: #a76625;
-  --checkbox-color-hover: #c26e29;
+  --checkbox-color-hover: hsl(27, 65.28%, 46%);
   --checkbox-marker-color: #2e2e2e;
   --checkbox-radius: 8px;
   --checkbox-size: 16px;
@@ -280,9 +280,9 @@ body {
   --code-tag: #fb464c;
   --code-value: #a882ff;
   --collapse-icon-color: #666666;
-  --collapse-icon-color-collapsed: #c26e29;
-  --color-accent-2: light-dark(#c26e29, #d77631);
-  --color-accent-hsl: light-dark(#a76625, #a76625);
+  --collapse-icon-color-collapsed: hsl(27, 65.28%, 46%);
+  --color-accent-2: light-dark(hsl(27, 65.28%, 46%), hsl(25, 67.2%, 51.6%));
+  --color-accent-hsl: light-dark(hsl(30, 64%, 40%), hsl(30, 64%, 40%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -327,10 +327,10 @@ body {
   --inline-title-font: inherit;
   --interactive-accent-hsl: 30, 64%, 40%;
   --italic-color: inherit;
-  --link-color: #c26e29;
-  --link-color-hover: #d77631;
-  --link-external-color: #c26e29;
-  --link-external-color-hover: #d77631;
+  --link-color: hsl(27, 65.28%, 46%);
+  --link-color-hover: hsl(25, 67.2%, 51.6%);
+  --link-external-color: hsl(27, 65.28%, 46%);
+  --link-external-color-hover: hsl(25, 67.2%, 51.6%);
   --link-external-filter: none;
   --link-weight: 600;
   --p-spacing: 1rem;
@@ -340,14 +340,14 @@ body {
   --tag-border-color: #a7662526;
   --tag-border-color-hover: #a7662526;
   --tag-border-width: 0px;
-  --tag-color: #c26e29;
-  --tag-color-hover: #c26e29;
+  --tag-color: hsl(27, 65.28%, 46%);
+  --tag-color-hover: hsl(27, 65.28%, 46%);
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-radius: 2em;
   --tag-weight: inherit;
   --text-accent: #a76625;
-  --text-accent-hover: #d77631;
+  --text-accent-hover: hsl(25, 67.2%, 51.6%);
   --text-faint: #666666;
   --text-highlight-bg: #ffd00066;
   --text-muted: #b5aea5;
@@ -355,7 +355,7 @@ body {
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: #2e2e2e;
-  caret-color: #c26e29;
+  caret-color: hsl(27, 65.28%, 46%);
   color: #e8ded1;
   contain: initial;
   font-family:
@@ -1409,7 +1409,7 @@ body {
                 background-color: transparent;
                 color: #e8ded1;
                 &.match-tag {
-                  color: #c26e29;
+                  color: hsl(27, 65.28%, 46%);
                 }
               }
             }
