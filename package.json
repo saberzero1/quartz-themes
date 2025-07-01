@@ -9,9 +9,11 @@
     "compile-all": "just compile-all",
     "compile-single": "just compile-single",
     "check": "just check",
+    "force-compile": "just force-compile",
+    "force-format": "just force-format",
     "format": "just format",
-    "update": "just update",
     "theme": "just theme",
+    "update": "just update",
     "verify": "just verify",
     "verify-ci": "just verify-ci"
   },

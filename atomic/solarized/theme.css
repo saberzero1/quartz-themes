@@ -949,9 +949,9 @@
 }
 
 :root {
-  --accent-h: light-dark(17.5690607735deg, 17.5690607735deg);
-  --accent-l: light-dark(44.1176470588%, 44.1176470588%);
-  --accent-s: light-dark(80.4444444444%, 80.4444444444%);
+  --accent-h: light-dark(18, 18);
+  --accent-l: light-dark(44%, 44%);
+  --accent-s: light-dark(80%, 80%);
   --background-modifier-border-focus: light-dark(
     var(--interactive-accent),
     var(--interactive-accent)
@@ -1715,9 +1715,9 @@
 /* Obsidian theme variables */
 /* ------------------------ */
 body {
-  --accent-h: light-dark(17.5690607735deg, 17.5690607735deg);
-  --accent-l: light-dark(44.1176470588%, 44.1176470588%);
-  --accent-s: light-dark(80.4444444444%, 80.4444444444%);
+  --accent-h: light-dark(18, 18);
+  --accent-l: light-dark(44%, 44%);
+  --accent-s: light-dark(80%, 80%);
   --anim-duration-fast: 140ms;
   --anim-duration-moderate: 300ms;
   --anim-duration-none: 0;
@@ -2533,9 +2533,9 @@ body {
 }
 
 .theme-light {
-  --accent-h: 17.5690607735deg;
-  --accent-l: 44.1176470588%;
-  --accent-s: 80.4444444444%;
+  --accent-h: 18;
+  --accent-l: 44%;
+  --accent-s: 80%;
   --active-bg: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
   --background-modifier-border-focus: var(--interactive-accent);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
@@ -2659,9 +2659,9 @@ body {
 }
 
 .theme-dark {
-  --accent-h: 17.5690607735deg;
-  --accent-l: 44.1176470588%;
-  --accent-s: 80.4444444444%;
+  --accent-h: 18;
+  --accent-l: 44%;
+  --accent-s: 80%;
   --active-bg: var(--nav-item-background-active);
   --background-modifier-border-focus: var(--interactive-accent);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);

@@ -569,29 +569,29 @@ export function generateFundingLinks(manifest) {
   */
 export function cleanRulesAfterRun(cssString) {
   // Small fixes for `light-dark()` functions
-  const lightDarkHSL = /light-dark\((\s*?(?:\d+,\s*[\d.]+%,\s*[\d.]+%)),(\s*?(?:\d+,\s*[\d.]+%,\s*[\d.]+%))\);/gms
-  const lightDarkRGB = /light-dark\((\s*?(?:\d{1,3}\s*?,\s*?){2}(?:\d{1,3}\s*?\s*?)),(\s*?(?:\d{1,3}\s*?,\s*?){2}(?:\d{1,3}\s*?\s*?))\);/gms
-  const lightDarkRGBA = /light-dark\((\s*?(?:\d{1,3}\s*?,\s*?){2}(?:\d{1,3}\s*?\s*?),\s*?[\d.]+%?),(\s*?(?:\d{1,3}\s*?,\s*?){2}(?:\d{1,3}\s*?\s*?),\s*?[\d.]+%?)\);/gms
-  const lightDarkInherit = /light-dark\(((?:\s*?\w+\()?inherit(?:\))?),\s*?((?:\s*?\w+\()?inherit(?:\))?)\s*?\);/gms
-  cssString = cssString.replaceAll(lightDarkHSL, "light-dark(hsl($1), hsl($2));")
-  cssString = cssString.replaceAll(lightDarkRGB, "light-dark(rgb($1), rgb($2));")
-  cssString = cssString.replaceAll(lightDarkRGBA, "light-dark(rgba($1), rgba($2));")
-  cssString = cssString.replaceAll(lightDarkInherit, "inherit;")
+  const lightDarkHSL = /light-dark\((\s*?(?:\d+,\s*[\d.]+%,\s*[\d.]+%)),(\s*?(?:\d+,\s*[\d.]+%,\s*[\d.]+%))\)(?=$|;|,)/gms
+  const lightDarkRGB = /light-dark\((\s*?(?:\d{1,3}\s*?,\s*?){2}(?:\d{1,3}\s*?\s*?)),(\s*?(?:\d{1,3}\s*?,\s*?){2}(?:\d{1,3}\s*?\s*?))\)(?=$|;|,)/gms
+  const lightDarkRGBA = /light-dark\((\s*?(?:\d{1,3}\s*?,\s*?){2}(?:\d{1,3}\s*?\s*?),\s*?[\d.]+%?),(\s*?(?:\d{1,3}\s*?,\s*?){2}(?:\d{1,3}\s*?\s*?),\s*?[\d.]+%?)\)(?=$|;|,)/gms
+  const lightDarkInherit = /light-dark\(((?:\s*?\w+\()?inherit(?:\))?),\s*?((?:\s*?\w+\()?inherit(?:\))?)\s*?\)(?=$|;|,)/gms
+  cssString = cssString.replaceAll(lightDarkHSL, "light-dark(hsl($1), hsl($2))")
+  cssString = cssString.replaceAll(lightDarkRGB, "light-dark(rgb($1), rgb($2))")
+  cssString = cssString.replaceAll(lightDarkRGBA, "light-dark(rgba($1), rgba($2))")
+  cssString = cssString.replaceAll(lightDarkInherit, "inherit")
 
   return cssString
 }
 
 export function cleanup(cssString) {
-  cssString = cssString.replaceAll(/^\s*?((?:background-|border-)?color:)\s*?rgba\(\s*?light-dark\((\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3})\s*?\),\s*?([\d\.\%]+)\s*?\)(?=$|;|,)/gms, "$1 light-dark(rgba($2, $3, $4, $8), rgba($5, $6, $7, $8));") // Fix light-dark(rgb) with 6 values
-  cssString = cssString.replaceAll(/(?<=^\s*?(?:(?:background-|border-)?color:\s*?)?)rgba\(\s*?light-dark\((\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3})\s*?\),\s*?([\d\.\%]+)\s*?\)(?=$|;|,)/gms, "$1 light-dark(rgba($2, $3, $4, $8), rgba($5, $6, $7, $8));") // Fix light-dark(rgb) with 6 values
-  cssString = cssString.replaceAll(/rgba\(((?:[\d\.]+,\s*){3,})([\d\.]+,\s*)([\d\.\%]+)\);/gms, "rgba($1$3);") // Fix rgba with more than 4 values
-  cssString = cssString.replaceAll(/rgba?\((\#[\da-fA-F]{3,8})\);/gms, "$1;") // Fix hex colors in rgba
-  cssString = cssString.replaceAll(/\#{2,}([\da-fA-F]{3,8});/gms, "#$1;") // Fix hex colors with more than 2 #
-  cssString = cssString.replaceAll(/rgba?\((light-dark\([^\)]+\))\);/gms, "$1;") // Fix light-dark() in rgba
-  cssString = cssString.replaceAll(/rgba?\((rgba?\([^\)]+\))\);/gms, "$1;") // Fix rgb(a) in rgba
-  cssString = cssString.replaceAll(/rgba?\((hsla?\([^\)]+\))\);/gms, "$1;") // Fix hsl(a) in rgba
-  cssString = cssString.replaceAll(/rgba?\(\s*?inherit\s*?(?:,\s*?[\d\.\%]+\s*?)?\);/gms, "inherit;")
-  cssString = cssString.replaceAll(/rgba?\(\s*?(oklch\([^\)]+\)),\s*?([\d\.\%]+)\)/gms, "color.change($1, \$alpha: $2);")
+  cssString = cssString.replaceAll(/^\s*?((?:background-|border-)?color:)\s*?rgba\(\s*?light-dark\((\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3})\s*?\),\s*?([\d\.\%]+)\s*?\)(?=$|;|,)/gms, "$1 light-dark(rgba($2, $3, $4, $8), rgba($5, $6, $7, $8))") // Fix light-dark(rgb) with 6 values
+  cssString = cssString.replaceAll(/(?<=^\s*?(?:(?:background-|border-)?color:\s*?)?)rgba\(\s*?light-dark\((\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3})\s*?\),\s*?([\d\.\%]+)\s*?\)(?=$|;|,)/gms, "$1 light-dark(rgba($2, $3, $4, $8), rgba($5, $6, $7, $8))") // Fix light-dark(rgb) with 6 values
+  cssString = cssString.replaceAll(/rgba\(((?:[\d\.]+,\s*){3,})([\d\.]+,\s*)([\d\.\%]+)\)(?=$|;|,)/gms, "rgba($1$3)") // Fix rgba with more than 4 values
+  cssString = cssString.replaceAll(/rgba?\((\#[\da-fA-F]{3,8})\)(?=$|;|,)/gms, "$1") // Fix hex colors in rgba
+  cssString = cssString.replaceAll(/\#{2,}([\da-fA-F]{3,8})(?=$|;|,)/gms, "#$1") // Fix hex colors with more than 2 #
+  cssString = cssString.replaceAll(/rgba?\((light-dark\([^\)]+\))\)(?=$|;|,)/gms, "$1") // Fix light-dark() in rgba
+  cssString = cssString.replaceAll(/rgba?\((rgba?\([^\)]+\))\)(?=$|;|,)/gms, "$1") // Fix rgb(a) in rgba
+  cssString = cssString.replaceAll(/rgba?\((hsla?\([^\)]+\))\)(?=$|;|,)/gms, "$1") // Fix hsl(a) in rgba
+  cssString = cssString.replaceAll(/rgba?\(\s*?inherit\s*?(?:,\s*?[\d\.\%]+\s*?)?\)(?=$|;|,)/gms, "inherit")
+  cssString = cssString.replaceAll(/rgba?\(\s*?(oklch\([^\)]+\)),\s*?([\d\.\%]+)\)(?=$|;|,)/gms, "color.change($1, \$alpha: $2)")
   cssString = cssString.replaceAll(/rgb\(\s*?(oklch\([^\)]+\))\)(?=$|;|,)/gms, "color.change($1)")
   cssString = cssString.replaceAll(/^\s*?caret-color: hsla?\((?:.*?\#[\da-fA-F]{3,8}.*?)\);$/gm, "")
   cssString = cssString.replaceAll(/^\s*?caret-color: hsla?\((?:.*?calc\(.*?deg.*?\).*?)\);$/gm, "")
@@ -601,6 +601,7 @@ export function cleanup(cssString) {
   cssString = cssString.replaceAll(/;\s*;/gms, ";") // Remove duplicate semicolons
 
   cssString = cssString.replaceAll(/^\s*?color:\s*?hsl\(light-dark\([^\#l\)]+(light-dark\(\#[\da-fA-F]{3,8},\s*?\#[\da-fA-F]{3,8}\))\)\)(?=$|;|,)/gms, "color: $1")
+  cssString = cssString.replaceAll(/(?<=^\s*?(?:(?:background-|border-)?color:\s*?)?)\s*?light-dark\((\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3}),\s*?(\d{1,3})\s*?\)(?=$|;|,)/gms, "light-dark(rgb($1, $2, $3), rgb($4, $5, $6))") // Fix light-dark(rgb) with 6 values
   cssString = cssString.replaceAll(/(?<=^\s*?(?:(?:background-|border-)?color:\s*?)?)(?:light-dark|hsl)\(\s*?(light-dark\([^\)]+\))\s*?\)\s*?,\s*?(light-dark\([^\)]+\))\s*?\)\s*?\)(?=$|;|,)/gms, "$1") // Fix light-dark(hsl) with 6 values
   cssString = cssString.replaceAll(/(?<=^\s*?(?:(?:background-|border-)?color:\s*?)?)hsl\(\s*?light-dark\(\s*?(light-dark\([^\)]+\))\s*?,\s*?(light-dark\([^\)]+\))\s*?\)\s*?\)(?=$|;|,)/gms, "$1") // Fix light-dark(hsl) with 6 values
   cssString = cssString.replaceAll(/(?<=solid\s*?)light-dark\(\#[\da-fA-F]{3,8},\s*?(light-dark\(\#[\da-fA-F]{3,8},\s*?\#[\da-fA-F]{3,8}\))(?=$|;|,)/gms, "$1")

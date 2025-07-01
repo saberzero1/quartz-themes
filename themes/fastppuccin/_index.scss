@@ -144,8 +144,11 @@ html[saved-theme="light"] {
   --background-modifier-border-focus: light-dark(#6d6b7d, #575269);
   --background-modifier-border-hover: light-dark(#575269, #2d2848);
   --background-primary-alt: light-dark(#1a1826, #1a1826);
-  --color-accent-2: light-dark(#a68af9, #c5b6fc);
-  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --color-accent-2: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
+  );
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -235,7 +238,7 @@ body {
   --collapse-icon-color: #beb3c1;
   --collapse-icon-color-collapsed: #b4befe;
   --color-accent-2: rgb(180, 190, 254 !important);
-  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);

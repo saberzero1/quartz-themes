@@ -2,15 +2,27 @@
   --anp-speech-bubble-opacity: light-dark(0.5, 0.9);
   --background-modifier-border-focus: light-dark(#6d6b7d, #575269);
   --background-modifier-border-hover: light-dark(#575269, #2d2848);
-  --background-modifier-error-rgb: light-dark(#f38ba8, #f38ba8);
-  --background-modifier-success-rgb: light-dark(#a6e3a1, #a6e3a1);
+  --background-modifier-error-rgb: light-dark(
+    rgb(243, 139, 168),
+    rgb(243, 139, 168)
+  );
+  --background-modifier-success-rgb: light-dark(
+    rgb(166, 227, 161),
+    rgb(166, 227, 161)
+  );
   --background-primary-alt: light-dark(#1a1826, #1a1826);
   --background-secondary-alt: light-dark(#212121, #2d2848);
   --callout-title-padding: light-dark(8px, 8px);
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
-  --color-accent-1: light-dark(#9873f7, #a68af9);
-  --color-accent-2: light-dark(#a68af9, #c5b6fc);
-  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --color-accent-1: light-dark(
+    hsl(257, 88.88%, 70.95%),
+    hsl(255, 89.76%, 75.9%)
+  );
+  --color-accent-2: light-dark(
+    hsl(255, 89.76%, 75.9%),
+    hsl(253, 92.4%, 85.14%)
+  );
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -31,33 +43,33 @@
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
-  --ctp-accent: light-dark(#f5e0dc, #f5e0dc);
-  --ctp-base: light-dark(#eff1f5, #1e1e2e);
-  --ctp-blue: light-dark(#2a6ef5, #87b0f9);
-  --ctp-crust: light-dark(#dce0e8, #11111b);
-  --ctp-flamingo: light-dark(#dd7878, #f2cdcd);
-  --ctp-green: light-dark(#40a02b, #a6e3a1);
-  --ctp-lavender: light-dark(#7287fd, #b4befe);
-  --ctp-mantle: light-dark(#e6e9ef, #181825);
-  --ctp-maroon: light-dark(#e64553, #eba0ac);
-  --ctp-mauve: light-dark(#8839ef, #cba6f7);
-  --ctp-overlay0: light-dark(#9ca0b0, #696d86);
-  --ctp-overlay1: light-dark(#8c8fa1, #7b819d);
-  --ctp-overlay2: light-dark(#7c7f93, #8e95b3);
-  --ctp-peach: light-dark(#fe640b, #fab387);
-  --ctp-pink: light-dark(#ec83d0, #f5c2e7);
-  --ctp-red: light-dark(#d20f39, #f38ba8);
-  --ctp-rosewater: light-dark(#de9584, #f5e0dc);
-  --ctp-sapphire: light-dark(#209fb5, #74c7ec);
-  --ctp-sky: light-dark(#04a5e5, #89dceb);
-  --ctp-subtext0: light-dark(#6c6f85, #a1a8c9);
-  --ctp-subtext1: light-dark(#5c5f77, #b3bcdf);
-  --ctp-surface0: light-dark(#ccd0da, #313244);
-  --ctp-surface1: light-dark(#bcc0cc, #43465a);
-  --ctp-surface2: light-dark(#acb0be, #565970);
-  --ctp-teal: light-dark(#179299, #94e2d5);
-  --ctp-text: light-dark(#4c4f69, #c6d0f5);
-  --ctp-yellow: light-dark(#e49320, #f9e2af);
+  --ctp-accent: light-dark(rgb(245, 224, 220), rgb(245, 224, 220));
+  --ctp-base: light-dark(rgb(239, 241, 245), rgb(30, 30, 46));
+  --ctp-blue: light-dark(rgb(42, 110, 245), rgb(135, 176, 249));
+  --ctp-crust: light-dark(rgb(220, 224, 232), rgb(17, 17, 27));
+  --ctp-flamingo: light-dark(rgb(221, 120, 120), rgb(242, 205, 205));
+  --ctp-green: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
+  --ctp-lavender: light-dark(rgb(114, 135, 253), rgb(180, 190, 254));
+  --ctp-mantle: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
+  --ctp-maroon: light-dark(rgb(230, 69, 83), rgb(235, 160, 172));
+  --ctp-mauve: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
+  --ctp-overlay0: light-dark(rgb(156, 160, 176), rgb(105, 109, 134));
+  --ctp-overlay1: light-dark(rgb(140, 143, 161), rgb(123, 129, 157));
+  --ctp-overlay2: light-dark(rgb(124, 127, 147), rgb(142, 149, 179));
+  --ctp-peach: light-dark(rgb(254, 100, 11), rgb(250, 179, 135));
+  --ctp-pink: light-dark(rgb(236, 131, 208), rgb(245, 194, 231));
+  --ctp-red: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
+  --ctp-rosewater: light-dark(rgb(222, 149, 132), rgb(245, 224, 220));
+  --ctp-sapphire: light-dark(rgb(32, 159, 181), rgb(116, 199, 236));
+  --ctp-sky: light-dark(rgb(4, 165, 229), rgb(137, 220, 235));
+  --ctp-subtext0: light-dark(rgb(108, 111, 133), rgb(161, 168, 201));
+  --ctp-subtext1: light-dark(rgb(92, 95, 119), rgb(179, 188, 223));
+  --ctp-surface0: light-dark(rgb(204, 208, 218), rgb(49, 50, 68));
+  --ctp-surface1: light-dark(rgb(188, 192, 204), rgb(67, 70, 90));
+  --ctp-surface2: light-dark(rgb(172, 176, 190), rgb(86, 89, 112));
+  --ctp-teal: light-dark(rgb(23, 146, 153), rgb(148, 226, 213));
+  --ctp-text: light-dark(rgb(76, 79, 105), rgb(198, 208, 245));
+  --ctp-yellow: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   --drag-ghost-background: light-dark(#d9e0ee, #d9e0ee);
   --drag-ghost-text-color: light-dark(#161320, #161320);
   --dropdown-background: light-dark(#d9e0ee26, #d9e0ee26);
@@ -83,7 +95,7 @@
   --text-accent-hover: light-dark(#b4befe, #b4befe);
   --text-error: light-dark(#f38ba8, #f38ba8);
   --text-faint: light-dark(#beb3c1, #beb3c1);
-  --text-muted-rgb: light-dark(#a79cb0, #a79cb0);
+  --text-muted-rgb: light-dark(rgb(167, 156, 176), rgb(167, 156, 176));
   --text-on-accent: light-dark(#1e1e2e, #1e1e2e);
   --text-success: light-dark(#a6e3a1, #a6e3a1);
   --titlebar-text-color-focused: light-dark(#b4befe, #b4befe);
@@ -121,12 +133,18 @@ body {
   --background-modifier-border-hover: light-dark(#575269, #2d2848);
   --background-modifier-error: #f38ba8;
   --background-modifier-error-hover: #f38ba8;
-  --background-modifier-error-rgb: light-dark(#f38ba8, #f38ba8);
+  --background-modifier-error-rgb: light-dark(
+    rgb(243, 139, 168),
+    rgb(243, 139, 168)
+  );
   --background-modifier-form-field: #000;
   --background-modifier-hover: #d9e0ee11;
   --background-modifier-message: #000000e6;
   --background-modifier-success: #a6e3a1;
-  --background-modifier-success-rgb: light-dark(#a6e3a1, #a6e3a1);
+  --background-modifier-success-rgb: light-dark(
+    rgb(166, 227, 161),
+    rgb(166, 227, 161)
+  );
   --background-primary: #1e1e2e;
   --background-primary-alt: light-dark(#1a1826, #1a1826);
   --background-secondary: #1a1826;
@@ -244,7 +262,7 @@ body {
   --color-accent: #b4befe;
   --color-accent-1: rgb(180, 190, 254 !important);
   --color-accent-2: rgb(180, 190, 254 !important);
-  --color-accent-hsl: light-dark(#8a5cf5, #8a5cf5);
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -265,33 +283,33 @@ body {
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
-  --ctp-accent: light-dark(#f5e0dc, #f5e0dc);
-  --ctp-base: light-dark(#eff1f5, #1e1e2e);
-  --ctp-blue: light-dark(#2a6ef5, #87b0f9);
-  --ctp-crust: light-dark(#dce0e8, #11111b);
-  --ctp-flamingo: light-dark(#dd7878, #f2cdcd);
-  --ctp-green: light-dark(#40a02b, #a6e3a1);
-  --ctp-lavender: light-dark(#7287fd, #b4befe);
-  --ctp-mantle: light-dark(#e6e9ef, #181825);
-  --ctp-maroon: light-dark(#e64553, #eba0ac);
-  --ctp-mauve: light-dark(#8839ef, #cba6f7);
-  --ctp-overlay0: light-dark(#9ca0b0, #696d86);
-  --ctp-overlay1: light-dark(#8c8fa1, #7b819d);
-  --ctp-overlay2: light-dark(#7c7f93, #8e95b3);
-  --ctp-peach: light-dark(#fe640b, #fab387);
-  --ctp-pink: light-dark(#ec83d0, #f5c2e7);
-  --ctp-red: light-dark(#d20f39, #f38ba8);
-  --ctp-rosewater: light-dark(#de9584, #f5e0dc);
-  --ctp-sapphire: light-dark(#209fb5, #74c7ec);
-  --ctp-sky: light-dark(#04a5e5, #89dceb);
-  --ctp-subtext0: light-dark(#6c6f85, #a1a8c9);
-  --ctp-subtext1: light-dark(#5c5f77, #b3bcdf);
-  --ctp-surface0: light-dark(#ccd0da, #313244);
-  --ctp-surface1: light-dark(#bcc0cc, #43465a);
-  --ctp-surface2: light-dark(#acb0be, #565970);
-  --ctp-teal: light-dark(#179299, #94e2d5);
-  --ctp-text: light-dark(#4c4f69, #c6d0f5);
-  --ctp-yellow: light-dark(#e49320, #f9e2af);
+  --ctp-accent: light-dark(rgb(245, 224, 220), rgb(245, 224, 220));
+  --ctp-base: light-dark(rgb(239, 241, 245), rgb(30, 30, 46));
+  --ctp-blue: light-dark(rgb(42, 110, 245), rgb(135, 176, 249));
+  --ctp-crust: light-dark(rgb(220, 224, 232), rgb(17, 17, 27));
+  --ctp-flamingo: light-dark(rgb(221, 120, 120), rgb(242, 205, 205));
+  --ctp-green: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
+  --ctp-lavender: light-dark(rgb(114, 135, 253), rgb(180, 190, 254));
+  --ctp-mantle: light-dark(rgb(230, 233, 239), rgb(24, 24, 37));
+  --ctp-maroon: light-dark(rgb(230, 69, 83), rgb(235, 160, 172));
+  --ctp-mauve: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
+  --ctp-overlay0: light-dark(rgb(156, 160, 176), rgb(105, 109, 134));
+  --ctp-overlay1: light-dark(rgb(140, 143, 161), rgb(123, 129, 157));
+  --ctp-overlay2: light-dark(rgb(124, 127, 147), rgb(142, 149, 179));
+  --ctp-peach: light-dark(rgb(254, 100, 11), rgb(250, 179, 135));
+  --ctp-pink: light-dark(rgb(236, 131, 208), rgb(245, 194, 231));
+  --ctp-red: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
+  --ctp-rosewater: light-dark(rgb(222, 149, 132), rgb(245, 224, 220));
+  --ctp-sapphire: light-dark(rgb(32, 159, 181), rgb(116, 199, 236));
+  --ctp-sky: light-dark(rgb(4, 165, 229), rgb(137, 220, 235));
+  --ctp-subtext0: light-dark(rgb(108, 111, 133), rgb(161, 168, 201));
+  --ctp-subtext1: light-dark(rgb(92, 95, 119), rgb(179, 188, 223));
+  --ctp-surface0: light-dark(rgb(204, 208, 218), rgb(49, 50, 68));
+  --ctp-surface1: light-dark(rgb(188, 192, 204), rgb(67, 70, 90));
+  --ctp-surface2: light-dark(rgb(172, 176, 190), rgb(86, 89, 112));
+  --ctp-teal: light-dark(rgb(23, 146, 153), rgb(148, 226, 213));
+  --ctp-text: light-dark(rgb(76, 79, 105), rgb(198, 208, 245));
+  --ctp-yellow: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   --cursor: default;
   --cursor-link: pointer;
   --dialog-max-height: 85vh;
@@ -829,7 +847,7 @@ body {
   --text-highlight-bg: #ffd00066;
   --text-highlight-bg-rgb: 255, 208, 0;
   --text-muted: #a79cb0;
-  --text-muted-rgb: light-dark(#a79cb0, #a79cb0);
+  --text-muted-rgb: light-dark(rgb(167, 156, 176), rgb(167, 156, 176));
   --text-normal: #d9e0ee;
   --text-on-accent: light-dark(#1e1e2e, #1e1e2e);
   --text-on-accent-inverted: #000000;
