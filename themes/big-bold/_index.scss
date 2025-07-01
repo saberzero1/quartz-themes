@@ -1901,6 +1901,8 @@ body {
         border: 0.5pt solid #abaac5;
         border-radius: 19px;
         box-shadow: none;
+        color: var(--text-normal);
+        background-color: var(--background-secondary);
         margin: 12vh auto;
         & > input {
           background-color: #f7f7f8bf;

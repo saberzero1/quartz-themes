@@ -6771,6 +6771,8 @@ body {
         border: none;
         border-radius: 15px;
         box-shadow: 0 0 10px 1px light-dark(#bebebe, #555555);
+        color: var(--text-normal);
+        background-color: var(--background-secondary);
         margin: 12vh auto;
         & > input {
           background-color: light-dark(#ffffff, #202020);

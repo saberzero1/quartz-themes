@@ -1346,6 +1346,8 @@ body {
         border: 3px solid light-dark(#e1e9f6, #252c36);
         border-radius: 0;
         box-shadow: 5px 5px 0 #e1e9f6;
+        color: var(--text-normal);
+        background-color: var(--background-secondary);
         margin: 12vh auto;
         & > input {
           background-color: #f8fbff;

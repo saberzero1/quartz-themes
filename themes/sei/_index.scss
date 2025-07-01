@@ -1357,6 +1357,8 @@ body {
         border: 0.3px solid rgba(255, 255, 255, 0.1);
         border-radius: 10px;
         box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        color: var(--text-normal);
+        background-color: var(--background-secondary);
         margin: 12vh auto;
         & > input {
           background-color: hsl(220, 0%, 0%);

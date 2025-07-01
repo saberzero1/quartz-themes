@@ -1215,6 +1215,8 @@ body {
           inset 0px 0px #1e1e1e,
           inset -2px -2px #000000,
           inset 2px 2px #808080;
+        color: var(--text-normal);
+        background-color: var(--background-secondary);
         margin: 12vh auto;
         & > input {
           background-color: #000;

@@ -10466,6 +10466,8 @@ body {
         border: 0 solid #555555;
         border-radius: 0.6rem;
         box-shadow: none;
+        color: var(--text-normal);
+        background-color: var(--background-secondary);
         margin: 12vh auto;
         & > input {
           background-color: #fdfdfe;

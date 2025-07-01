@@ -1218,6 +1218,8 @@ body {
         border: 0px solid #555555;
         border-radius: 12px;
         box-shadow: 0 5px 30px #00000026;
+        color: var(--text-normal);
+        background-color: var(--background-secondary);
         margin: 12vh auto;
         & > input {
           background: #c894eb;

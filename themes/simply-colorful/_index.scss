@@ -1436,6 +1436,8 @@ body {
           0px 1.8px 7.3px #00000012,
           0px 6.3px 24.7px #0000001d,
           0px 30px 90px #00000033;
+        color: var(--text-normal);
+        background-color: var(--background-secondary);
         margin: 12vh auto;
         & > input {
           background-color: #ffffff;
