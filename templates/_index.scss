@@ -480,6 +480,12 @@ body {
     }
   }
 
+  @media all and not ($mobile) {
+    .page > #quartz-body {
+      padding-left: 0;
+    }
+  }
+
   section,
   .page > #quartz-body .sidebar {
     &.left,
