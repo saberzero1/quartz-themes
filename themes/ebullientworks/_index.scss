@@ -1272,9 +1272,6 @@ body {
   /* TOC */
   .toc {
     color: #41b0b0;
-    @media all and ($desktop) {
-      display: contents;
-    }
     button.toc-header {
       h3 {
         --font-weight: 500;
