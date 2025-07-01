@@ -1225,6 +1225,7 @@ body {
   ) !important;
   background-color: #f7f7f8bf;
   background-color: var(--background-primary);
+  overflow-y: initial;
 
   @media all and ($mobile) {
     div.flex-component > div:has(> button.readermode) {
