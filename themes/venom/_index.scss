@@ -22,10 +22,16 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
+  --font-monospace:
+    "Consolas", "Fira Code", "Source Code Pro", "Droid Sans Mono", "Monoid",
+    "Arial", sans-serif;
   --mono-rgb-100: 255, 255, 255;
   --text-accent: #fff;
   --text-accent-hover: #b13d4c;
   --text-highlight-bg: #0c1520;
+  --font-monospace:
+    "Consolas", "Fira Code", "Source Code Pro", "Droid Sans Mono", "Monoid",
+    "Arial", sans-serif;
   --mono-rgb-100: 255, 255, 255;
   --text-accent: #fff;
   --text-accent-hover: #b13d4c;
@@ -308,6 +314,10 @@ body {
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
+  --font-monospace:
+    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace;
   --font-text:
     "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
@@ -1026,8 +1036,9 @@ body {
         //color: var(--code-keyword) !important;
         color: var(--color-red) !important;
       }
-      color: var(--code-normal);
       background-color: transparent;
+      color: var(--code-normal);
+      font-family: var(--codeFont, var(--font-monospace));
     }
   }
   code {
@@ -1042,8 +1053,9 @@ body {
     font-size: 15px;
     font-weight: bold;
     padding: 0.15em 0.3em;
-    color: var(--code-normal);
     background-color: var(--code-background);
+    color: var(--code-normal);
+    font-family: var(--codeFont, var(--font-monospace));
   }
   .clipboard-button {
     background-color: transparent;
@@ -1339,6 +1351,7 @@ body {
           0px 30px 90px #00000033;
         color: var(--text-normal);
         background-color: var(--background-secondary);
+        border-color: var(--background-modifier-border, var(--color-base-35));
         margin: 12vh auto;
         & > input {
           background-color: #1e303a;
@@ -1569,6 +1582,7 @@ body {
 }
 /* FONT OVERRIDES */
 :root:root:root {
+  --codeFont: var(--font-monospace, var(--font-default)) !important;
 }
 /* START CANVAS GRAPH WORKAROUND */
 /* START DARK GRAPH */

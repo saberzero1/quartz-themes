@@ -412,6 +412,10 @@ body {
   --font-default:
     system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-monospace:
+    "??", ui-monospace, Menlo, SFMono-Regular, Consolas, "Roboto Mono",
+    "Source Code Pro", monospace, ui-monospace, Menlo, SFMono-Regular, Consolas,
+    "Roboto Mono", "Source Code Pro", monospace;
   --font-text:
     "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui,
@@ -1123,8 +1127,9 @@ body {
         //color: var(--code-keyword) !important;
         color: var(--color-red) !important;
       }
-      color: var(--code-normal);
       background-color: transparent;
+      color: var(--code-normal);
+      font-family: var(--codeFont, var(--font-monospace));
     }
   }
   code {
@@ -1139,8 +1144,9 @@ body {
       Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-size: 1em;
     padding: 0.25em 0.5em;
-    color: var(--code-normal);
     background-color: var(--code-background);
+    color: var(--code-normal);
+    font-family: var(--codeFont, var(--font-monospace));
   }
   .clipboard-button {
     background-color: transparent;
@@ -1425,6 +1431,7 @@ body {
           0px 30px 90px #00000033;
         color: var(--text-normal);
         background-color: var(--background-secondary);
+        border-color: var(--background-modifier-border, var(--color-base-35));
         margin: 12vh auto;
         & > input {
           background-color: #000000;
@@ -1656,6 +1663,7 @@ body {
 }
 /* FONT OVERRIDES */
 :root:root:root {
+  --codeFont: var(--font-monospace, var(--font-default)) !important;
 }
 /* START CANVAS GRAPH WORKAROUND */
 /* START LIGHT GRAPH */

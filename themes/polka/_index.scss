@@ -348,6 +348,9 @@ body {
   --font-default:
     "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
     -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-monospace:
+    "??", "??", "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo,
+    SFMono-Regular, Consolas, "Source Code Pro", monospace;
   --font-text:
     "??", "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue",
     ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -1077,8 +1080,9 @@ body {
         //color: var(--code-keyword) !important;
         color: var(--color-red) !important;
       }
-      color: var(--code-normal);
       background-color: transparent;
+      color: var(--code-normal);
+      font-family: var(--codeFont, var(--font-monospace));
     }
   }
   code {
@@ -1092,8 +1096,9 @@ body {
       SFMono-Regular, Consolas, "Source Code Pro", monospace;
     font-size: 1em;
     padding: 0.15em 0.3em;
-    color: var(--code-normal);
     background-color: var(--code-background);
+    color: var(--code-normal);
+    font-family: var(--codeFont, var(--font-monospace));
   }
   .clipboard-button {
     background-color: transparent;
@@ -1391,6 +1396,7 @@ body {
           0px 30px 90px rgba(0, 0, 0, 0.2);
         color: var(--text-normal);
         background-color: var(--background-secondary);
+        border-color: var(--background-modifier-border, var(--color-base-35));
         margin: 12vh auto;
         & > input {
           background-color: hsl(221, 33.3%, 12.9%);
@@ -1623,6 +1629,7 @@ body {
 }
 /* FONT OVERRIDES */
 :root:root:root {
+  --codeFont: var(--font-monospace, var(--font-default)) !important;
 }
 /* START CANVAS GRAPH WORKAROUND */
 /* START LIGHT GRAPH */
