@@ -129,6 +129,7 @@ html[saved-theme="dark"] {
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
+  --font-monospace: "JetBrains Mono", "Consolas", monospace;
   --h3-color: light-dark(var(--h3456-color), var(--h3456-color));
   --h4-color: light-dark(var(--h3456-color), var(--h3456-color));
   --h5-color: light-dark(var(--h3456-color), var(--h3456-color));
@@ -233,6 +234,10 @@ body {
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
+  --font-monospace:
+    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace;
   --font-text:
     "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
@@ -963,8 +968,9 @@ body {
         //color: var(--code-keyword) !important;
         color: var(--color-red) !important;
       }
-      color: var(--code-normal);
       background-color: transparent;
+      color: var(--code-normal);
+      font-family: var(--codeFont, var(--font-monospace));
     }
   }
   code {
@@ -976,8 +982,9 @@ body {
     font-family: "JetBrains Mono", "Consolas", monospace;
     font-size: 1em;
     padding: 0.15em 0.3em;
-    color: var(--code-normal);
     background-color: var(--code-background);
+    color: var(--code-normal);
+    font-family: var(--codeFont, var(--font-monospace));
   }
   .clipboard-button {
     background-color: transparent;
@@ -1273,6 +1280,7 @@ body {
           0px 30px 90px #00000033;
         color: var(--text-normal);
         background-color: var(--background-secondary);
+        border-color: var(--background-modifier-border, var(--color-base-35));
         margin: 12vh auto;
         & > input {
           background-color: light-dark(#0d1117, #0d1117);
@@ -1503,6 +1511,7 @@ body {
 }
 /* FONT OVERRIDES */
 :root:root:root {
+  --codeFont: var(--font-monospace, var(--font-default)) !important;
 }
 /* START CANVAS GRAPH WORKAROUND */
 /* START DARK GRAPH */

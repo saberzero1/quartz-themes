@@ -816,8 +816,9 @@ body {
         color: var(--color-red) !important;
       }
 
-      color: var(--code-normal);
       background-color: transparent; 
+      color: var(--code-normal);
+      font-family: var(--codeFont, var(--font-monospace));
     }
   }
 
@@ -825,8 +826,9 @@ body {
 
     //%%CODE INLINE%%
 
-    color: var(--code-normal);
     background-color: var(--code-background);
+    color: var(--code-normal);
+    font-family: var(--codeFont, var(--font-monospace));
   }
   .clipboard-button {
 
@@ -1096,6 +1098,7 @@ body {
 
           color: var(--text-normal);
           background-color: var(--background-secondary);
+          border-color: var(--background-modifier-border, var(--color-base-35));
           margin: 12vh auto;
         & > input {
           //%%SEARCH INPUT%%
