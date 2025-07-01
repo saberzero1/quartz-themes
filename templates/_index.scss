@@ -488,14 +488,14 @@ body {
 
       //%%WORKSPACE BACKGROUND ROOT%%
 
-      background-color: var(--background-primary);
+      background-color: var(--background-secondary);
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
 
         //%%WORKSPACE BACKGROUND ROOT%%
 
-        background-color: var(--background-primary);
+        background-color: var(--background-secondary);
 
         content: " ";
         display: block;
@@ -865,7 +865,7 @@ body {
 
         //%%WORKSPACE BACKGROUND ROOT%%
 
-        background-color: var(--background-primary);
+        background-color: var(--background-secondary);
 
         left: -1rem;
       }
@@ -1192,7 +1192,7 @@ body {
   }
   .page > #quartz-body {
     .sidebar {
-      background-color: var(--background-primary);
+      background-color: var(--background-secondary);
     }
   }
 

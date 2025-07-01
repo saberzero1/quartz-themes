@@ -191,6 +191,7 @@ html[saved-theme="light"] {
   --background-modifier-hover: light-dark(#24262a, #24262a);
   --background-primary: light-dark(#24262a, #24262a);
   --background-primary-alt: light-dark(#202225, #202225);
+  --background-secondary: light-dark(#202225, #202225);
   --checkbox-color: light-dark(#fff, #fff);
   --code-normal: light-dark(#fbfbfb, #fbfbfb);
   --color-accent-2: light-dark(#7db8fa, #a8d3fd);
@@ -198,6 +199,7 @@ html[saved-theme="light"] {
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
   --color-base-40: light-dark(#bdbdbd, #555555);
@@ -224,6 +226,7 @@ html[saved-theme="light"] {
 
   --background-primary: var(--color-base-00);
   --background-primary-alt: var(--color-base-10);
+  --background-secondary: var(--color-base-20);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-35);
@@ -260,6 +263,7 @@ body {
   --background-modifier-hover: light-dark(#24262a, #24262a);
   --background-primary: light-dark(#24262a, #24262a);
   --background-primary-alt: light-dark(#202225, #202225);
+  --background-secondary: light-dark(#202225, #202225);
   --bold-color: inherit;
   --bold-weight: 600;
   --checkbox-border-color: #6c6e70;
@@ -287,6 +291,7 @@ body {
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
   --color-base-40: light-dark(#bdbdbd, #555555);
@@ -386,6 +391,7 @@ body {
   --text-faint: var(--color-base-50);
   --background-primary: var(--color-base-00);
   --background-primary-alt: var(--color-base-10);
+  --background-secondary: var(--color-base-20);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-35);
@@ -666,12 +672,12 @@ body {
     &.left:has(.explorer),
     &.right {
       background-color: #202225;
-      background-color: var(--background-primary);
+      background-color: var(--background-secondary);
     }
     @media all and ($mobile) {
       &.left:has(.explorer):before {
         background-color: #202225;
-        background-color: var(--background-primary);
+        background-color: var(--background-secondary);
         content: " ";
         display: block;
         height: 100%;
@@ -1100,7 +1106,7 @@ body {
     .explorer-content {
       @media all and ($mobile) {
         background-color: #202225;
-        background-color: var(--background-primary);
+        background-color: var(--background-secondary);
         left: -1rem;
       }
       .folder-container {
@@ -1467,7 +1473,7 @@ body {
   }
   .page > #quartz-body {
     .sidebar {
-      background-color: var(--background-primary);
+      background-color: var(--background-secondary);
     }
   }
   /* TEXT */
