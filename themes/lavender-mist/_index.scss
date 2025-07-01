@@ -2844,6 +2844,7 @@ body {
         //color: var(--code-keyword) !important;
         color: var(--color-red) !important;
       }
+      color: var(--code-normal);
       background-color: transparent;
     }
   }
@@ -2859,6 +2860,7 @@ body {
       "Source Code Pro", monospace;
     font-size: 1em;
     padding: 0.15em 0.3em;
+    color: var(--code-normal);
     background-color: var(--code-background);
   }
   .clipboard-button {

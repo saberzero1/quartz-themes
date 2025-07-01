@@ -6349,6 +6349,7 @@ body {
         //color: var(--code-keyword) !important;
         color: var(--color-red) !important;
       }
+      color: var(--code-normal);
       background-color: transparent;
     }
   }
@@ -6367,6 +6368,7 @@ body {
     font-size: 0.825em;
     padding: 0.15em 0.3em;
     text-align: start;
+    color: var(--code-normal);
     background-color: var(--code-background);
   }
   .clipboard-button {

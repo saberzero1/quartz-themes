@@ -966,6 +966,7 @@ body {
         //color: var(--code-keyword) !important;
         color: var(--color-red) !important;
       }
+      color: var(--code-normal);
       background-color: transparent;
     }
   }
@@ -981,6 +982,7 @@ body {
       "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     font-size: 0.875em;
     padding: 0.15em 0.3em;
+    color: var(--code-normal);
     background-color: var(--code-background);
   }
   .clipboard-button {

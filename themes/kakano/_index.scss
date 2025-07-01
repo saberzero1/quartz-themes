@@ -1098,6 +1098,7 @@ body {
         //color: var(--code-keyword) !important;
         color: var(--color-red) !important;
       }
+      color: var(--code-normal);
       background-color: transparent;
     }
   }
@@ -1113,6 +1114,7 @@ body {
       Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-size: 1em;
     padding: 0.25em 0.5em;
+    color: var(--code-normal);
     background-color: var(--code-background);
   }
   .clipboard-button {

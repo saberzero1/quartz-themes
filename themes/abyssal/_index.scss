@@ -1046,6 +1046,7 @@ body {
         //color: var(--code-keyword) !important;
         color: var(--color-red) !important;
       }
+      color: var(--code-normal);
       background-color: transparent;
     }
   }
@@ -1065,6 +1066,7 @@ body {
     font-size: 1em;
     font-weight: normal;
     padding: 0.2em 0.3em;
+    color: var(--code-normal);
     background-color: var(--code-background);
   }
   .clipboard-button {
