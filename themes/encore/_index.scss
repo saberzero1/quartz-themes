@@ -686,7 +686,7 @@ body {
       background-color: transparent;
       background-color: var(--background-secondary);
     }
-    @media all and ($tablet) {
+    @media all and not ($desktop) {
       &.right {
         background-color: transparent;
         background-color: var(--background-primary);

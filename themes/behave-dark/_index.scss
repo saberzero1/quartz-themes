@@ -676,7 +676,7 @@ body {
       background-color: #2c333d;
       background-color: var(--background-secondary);
     }
-    @media all and ($tablet) {
+    @media all and not ($desktop) {
       &.right {
         background-color: #2c333d;
         background-color: var(--background-primary);

@@ -2520,7 +2520,7 @@ body {
       background-color: #e7e9f3;
       background-color: var(--background-secondary);
     }
-    @media all and ($tablet) {
+    @media all and not ($desktop) {
       &.right {
         background-color: #e7e9f3;
         background-color: var(--background-primary);
