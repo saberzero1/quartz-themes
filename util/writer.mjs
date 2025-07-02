@@ -95,9 +95,10 @@ export async function prettierSCSS(scss) {
  * Splits combined CSS rules into individual rules.
  * @param {string} base - The CSS string to process.
  * @param {string} inject - The CSS string to inject.
+ * @param {string} [mode="both"] - The mode for processing CSS rules. Can be "dark", "light", or "both".
  * @return {string} The processed CSS string with combined rules split.
  */
-export function cleanCSS(base, inject) {
+export function cleanCSS(base, inject, mode = "both") {
   let result = `${base}\n${inject}`
   result = result.replace(/^@media screen and \(forced-colors: active\) \{.*?^\}$/gms, "") // Remove forced colors media queries
   result = result.replace(/^@container.*?^\}$/gms, "") // Remove container media queries
@@ -108,7 +109,7 @@ export function cleanCSS(base, inject) {
   // Append colorVariables to the end of `:root`
   const colorRootVariable = result.matchAll(/(^:root\s*?\{.*?^\}$)/gms);
   const colorRootVariableInject = combineIdenticalSelectors([...colorRootVariable].map(match => match[0]).join("\n").replace(/(^:root\s*?\{.*?)^\}$/gms, `$1\n${colorVariables}\n\}\n`))
-  // Append colorVarialbes to the end of `body`
+  // Append colorVariables to the end of `body`
   const colorBodyVariable = result.matchAll(/(^body\s*?\{.*?^\}$)/gms);
   const colorBodyVariableInject = combineIdenticalSelectors([...colorBodyVariable].map(match => match[0]).join("\n").replace(/(^body\s*?\{.*?)^\}$/gms, `$1\n${colorVariables}\n\}\n`))
   //result = result.replace(/(^body\s*?\{.*?)^\}$/gms, `$1\n${colorVariables}\n\}\n`)
@@ -117,7 +118,7 @@ export function cleanCSS(base, inject) {
   result = result.replace(/url\(\s*?(.+?)\s*?\);$/gms, (match, p1) => `url(${p1.replace(/\n/g, "")});`);
   // Remove all mask-image rules
   result = result.replace(/^\s*?(-webkit-)?mask-image:\s*?\w+\(.+?\);/gms, "");
-  result = splitCombinedRules(result)
+  result = splitCombinedRules(result, mode)
   result = combineIdenticalSelectors(result)
   result = removeEmptyRules(result)
   result = result.replace(/\n+/g, "\n") // Remove extra newlines
