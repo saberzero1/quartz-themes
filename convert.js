@@ -287,6 +287,12 @@ manifestCollection.forEach((manifest) => {
   );
 });
 manifestCollection.forEach((manifest) => {
+  const mode = isFullTheme(getValueFromDictionary(manifest, "name"))
+    ? "both"
+    : isDarkTheme(getValueFromDictionary(manifest, "name"))
+      ? "dark"
+      : "light";
+  console.log(`Processing theme: ${getTheme(manifest)} in ${mode} mode`);
   const themeNameLocal = getValueFromDictionary(manifest, "name");
   console.log(`Processing theme: ${themeNameLocal}`);
   if (args[0] === "ATOMIZE" || testMode) {
@@ -294,7 +300,7 @@ manifestCollection.forEach((manifest) => {
       if (!fs.existsSync(`./converted_app.css`)) {
         const obsidianCSS = fs.readFileSync("./app.css", "utf8");
         const overridesCSS = fs.readFileSync("./overrides_app.css", "utf8");
-        const result = cleanCSS(obsidianCSS, overridesCSS);
+        const result = cleanCSS(obsidianCSS, overridesCSS, mode);
         writePrettier(`./converted_app.css`, result, "utf8");
         // Static version
         writePrettier(
@@ -325,7 +331,11 @@ manifestCollection.forEach((manifest) => {
     const cssString = fs.readFileSync(cssFile, "utf8");
     const obsidianCSS = fs.readFileSync("./converted_app.css", "utf8");
 
-    let result = cleanCSS(obsidianCSS, splitCombinedRules(cssString));
+    let result = cleanCSS(
+      obsidianCSS,
+      splitCombinedRules(cssString, mode),
+      mode,
+    );
     let staticResult = generateStatic(result, themeNameLocal);
 
     // Theme variations (for style settings)

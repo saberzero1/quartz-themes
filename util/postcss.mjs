@@ -6,7 +6,7 @@ import * as postcss from "postcss"
  * @param {string} cssString - The CSS string to process.
  * @returns {string} The transformed CSS string with split rules.
  */
-export function splitCombinedRules(cssString) {
+export function splitCombinedRules(cssString, mode = "both") {
   const root = postcss.parse(cssString)
 
   root.walkRules((originalRule) => {
@@ -25,6 +25,18 @@ export function splitCombinedRules(cssString) {
           (originalRule.selectors[0] === "body.theme-light" && originalRule.selectors[1] === "body.theme-dark")
         ) {
           originalRule.selectors.push(["body"])
+        }
+      }
+      if (mode !== "both" && originalRule.selectors.length === 1) {
+        if (mode === "dark") {
+          if (originalRule.selectors[0] === ".theme-dark" || originalRule.selectors[0] === "body.theme-dark") {
+            originalRule.selectors.push("body")
+          }
+        }
+        if (mode === "light") {
+          if (originalRule.selectors[0] === ".theme-light" || originalRule.selectors[0] === "body.theme-light") {
+            originalRule.selectors.push("body")
+          }
         }
       }
       const parent = originalRule.parent
