@@ -16,6 +16,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "abate": {
@@ -24,6 +25,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["noto-sans"]
     },
     "abecedarium": {
@@ -32,6 +34,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "absolutegruv": {
@@ -40,6 +43,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "abyssal": {
@@ -50,6 +54,7 @@
         { "name": "colorful-headings", "injects": ["at-colorful-headings"] }
       ],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "adrenaline": {
@@ -58,6 +63,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "adwaita": {
@@ -66,6 +72,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["cantarell"]
     },
     "agate": {
@@ -74,6 +81,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": ["heading-colors"],
       "fonts": ["noto-serif", "pretendard", "noto-sans-kr", "itc-slimbach"]
     },
     "aged-whisky": {
@@ -82,6 +90,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "al-dente": {
@@ -90,6 +99,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["nunito-sans", "courier-prime", "bitter"]
     },
     "allium": {
@@ -98,6 +108,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["icons/its"]
     },
     "amoled-serenity": {
@@ -106,6 +117,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["bricolage-grotesque", "roboto", "montserrat"]
     },
     "anuppuccin": {
@@ -114,6 +126,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["noto-serif"]
     },
     "apatheia": {
@@ -122,6 +135,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["roboto"]
     },
     "apex": {
@@ -130,6 +144,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "arcane": {
@@ -138,6 +153,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["roboto"]
     },
     "atom": {
@@ -146,6 +162,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "atomus": {
@@ -154,6 +171,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "aura-dark": {
@@ -162,6 +180,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "aura": {
@@ -170,6 +189,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": [
         "ia-writer-mono",
         "ia-writer-duo",
@@ -183,6 +203,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["cabin", "quicksand"]
     },
     "aurora": {
@@ -191,6 +212,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "autotape": {
@@ -199,6 +221,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "ayu-light-mirage": {
@@ -207,6 +230,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["lora", "monaspace-neon"]
     },
     "ayu-mirage": {
@@ -215,6 +239,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["ia-writer-quattro-s", "monaco", "source-sans-pro"]
     },
     "base2tone": {
@@ -223,6 +248,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "behave-dark": {
@@ -231,6 +257,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "big-bold": {
@@ -239,6 +266,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": [
         "eb-garamond",
         "fira-code",
@@ -255,6 +283,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "blackbird": {
@@ -263,6 +292,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "blossom": {
@@ -271,6 +301,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "blue-topaz": {
@@ -279,6 +310,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["lucida-handwriting", "icons/boxicons"]
     },
     "bolt": {
@@ -287,6 +319,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["formular"]
     },
     "border": {
@@ -295,6 +328,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "borealis": {
@@ -303,6 +337,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["jetbrains-mono"]
     },
     "bossidian": {
@@ -311,6 +346,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "brainhack": {
@@ -319,6 +355,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["cascadia-mono"]
     },
     "brutalism": {
@@ -327,6 +364,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["archivo"]
     },
     "buena-vista": {
@@ -335,6 +373,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "camena": {
@@ -343,6 +382,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["avenir", "cascadia-code"]
     },
     "carbon": {
@@ -351,6 +391,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["ibm-plex-mono", "ibm-plex-sans"]
     },
     "cardstock": {
@@ -359,6 +400,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "catppuccin": {
@@ -367,6 +409,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["nunito-sans", "vollkorn"]
     },
     "celestial-night": {
@@ -375,6 +418,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["bookerly", "hatolie", "merienda"]
     },
     "charcoal": {
@@ -383,6 +427,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["ia-writer-quattro-s", "monaco", "source-sans-pro"]
     },
     "chiaroscuroflow": {
@@ -391,6 +436,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["manrope", "nunito-sans"]
     },
     "chime": {
@@ -399,6 +445,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": [
         "archivo",
         "arima",
@@ -413,6 +460,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "cobalt-peacock": {
@@ -421,6 +469,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "cocoa": {
@@ -429,6 +478,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["palatino"]
     },
     "colored-candy": {
@@ -437,6 +487,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "comfort-color-dark": {
@@ -445,6 +496,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "comfort-dark": {
@@ -453,6 +505,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["iosevka-web", "jetbrains-mono"]
     },
     "comfort-smooth": {
@@ -461,6 +514,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "comfort": {
@@ -469,6 +523,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "composer": {
@@ -477,6 +532,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "consolas": {
@@ -485,6 +541,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["inconsolata"]
     },
     "covert": {
@@ -493,6 +550,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "creature": {
@@ -501,6 +559,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["sf-mono"]
     },
     "creme-brulee": {
@@ -509,6 +568,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["merriweather-sans"]
     },
     "cupertino": {
@@ -517,6 +577,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["sf-pro-display"]
     },
     "cyber-glow": {
@@ -525,6 +586,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["ballet", "oxanium", "space-wham", "orbitron"]
     },
     "cybertron-shifted": {
@@ -533,6 +595,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["jetbrains-mono"]
     },
     "cybertron": {
@@ -541,6 +604,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["jetbrains-mono"]
     },
     "dark-castle": {
@@ -549,6 +613,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "dark-clarity": {
@@ -557,6 +622,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["noto-sans", "jetbrains-mono"]
     },
     "dark-graphite-pie": {
@@ -565,6 +631,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "dark-graphite": {
@@ -573,6 +640,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["ia-writer-quattro-s", "monaco"]
     },
     "dark-moss": {
@@ -581,6 +649,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "darkember": {
@@ -589,6 +658,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "darkyan": {
@@ -597,6 +667,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "dashboard": {
@@ -605,6 +676,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "dawn": {
@@ -613,6 +685,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "dayspring": {
@@ -621,6 +694,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["crimson-pro", "figtree"]
     },
     "deep-submerge": {
@@ -629,6 +703,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "deeper-work": {
@@ -637,6 +712,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["jetbrains-mono"]
     },
     "default": {
@@ -645,6 +721,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["flow-circular"]
     },
     "dekurai": {
@@ -653,6 +730,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "discordian": {
@@ -661,6 +739,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["catamaran"]
     },
     "dracula-for-obsidian": {
@@ -669,6 +748,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "dracula-gemini": {
@@ -677,6 +757,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "dracula-lyt": {
@@ -685,6 +766,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["monaco", "sf-mono"]
     },
     "dracula-official": {
@@ -693,6 +775,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "dracula-plus": {
@@ -701,6 +784,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["jetbrains-mono", "monaco"]
     },
     "dracula-slim": {
@@ -709,6 +793,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "duality": {
@@ -717,6 +802,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "dune": {
@@ -725,6 +811,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "dunite": {
@@ -733,6 +820,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "dust": {
@@ -741,6 +829,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["icons/material-icons", "fira-code"]
     },
     "dynamic-color": {
@@ -749,6 +838,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "ebullientworks": {
@@ -757,6 +847,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "eldritch": {
@@ -765,6 +856,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "elegance": {
@@ -773,6 +865,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["monaco"]
     },
     "emerald-echo": {
@@ -781,6 +874,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "encore": {
@@ -789,6 +883,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "enhanced-file-explorer-tree": {
@@ -797,6 +892,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "ethereon": {
@@ -805,6 +901,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "evangelion": {
@@ -813,6 +910,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "everblush": {
@@ -821,6 +919,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "everforest-enchanted": {
@@ -829,6 +928,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "everforest": {
@@ -837,6 +937,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["hack"]
     },
     "evergreen-shadow": {
@@ -845,6 +946,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["noto-sans-old-persian", "noto-serif-kr"]
     },
     "evilred": {
@@ -853,6 +955,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["hack"]
     },
     "faded": {
@@ -861,6 +964,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "fancy-a-story": {
@@ -869,6 +973,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": [
         "chakra-petch",
         "limelight",
@@ -884,6 +989,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["noto-serif"]
     },
     "feather": {
@@ -892,6 +998,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["jetbrains-mono"]
     },
     "firefly": {
@@ -900,6 +1007,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "flexcyon": {
@@ -908,6 +1016,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "flexoki-warm": {
@@ -916,6 +1025,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "flexoki": {
@@ -924,6 +1034,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "focus": {
@@ -932,6 +1043,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["jetbrains-mono"]
     },
     "frost": {
@@ -940,6 +1052,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["jetbrains-mono", "roboto"]
     },
     "fusion": {
@@ -948,6 +1061,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "garden-gnome-adwaita-gtk": {
@@ -956,6 +1070,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "gdct-dark": {
@@ -964,6 +1079,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["ia-writer-quattro-s", "monaco"]
     },
     "gdct": {
@@ -972,6 +1088,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["ia-writer-quattro-s", "monaco"]
     },
     "github-theme": {
@@ -980,6 +1097,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "githubdhc": {
@@ -988,6 +1106,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["fira-code", "noto-sans"]
     },
     "gitsidian": {
@@ -996,6 +1115,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "glass-robo": {
@@ -1004,6 +1124,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["figtree", "jetbrains-mono"]
     },
     "golden-topaz": {
@@ -1012,6 +1133,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["lucida-handwriting", "monaco"]
     },
     "green-nightmare": {
@@ -1020,6 +1142,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "gummy-revived": {
@@ -1028,6 +1151,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["peace-sans", "space-grotesk"]
     },
     "hackthebox": {
@@ -1036,6 +1160,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["open-sans"]
     },
     "handwriting-kalam": {
@@ -1044,6 +1169,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["courier-prime", "kalam"]
     },
     "halcyon": {
@@ -1052,6 +1178,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "heboric": {
@@ -1060,6 +1187,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "hipstersmoothie": {
@@ -1068,6 +1196,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "hojicha": {
@@ -1076,6 +1205,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "hulk": {
@@ -1084,6 +1214,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["monaco"]
     },
     "ia-writer": {
@@ -1092,6 +1223,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["ia-writer-duo"]
     },
     "ib-writer": {
@@ -1100,6 +1232,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["ia-writer-quattro"]
     },
     "iceberg": {
@@ -1108,6 +1241,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "improved-potato": {
@@ -1116,6 +1250,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "ink": {
@@ -1124,6 +1259,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "ion": {
@@ -1132,6 +1268,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "its-theme": {
@@ -1140,6 +1277,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["icons/its"]
     },
     "jotter": {
@@ -1148,6 +1286,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "kakano": {
@@ -1156,6 +1295,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["roboto", "sf-mono"]
     },
     "kanagawa-paper": {
@@ -1164,6 +1304,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["hack"]
     },
     "kanagawa": {
@@ -1172,6 +1313,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["hack"]
     },
     "kiwi-mono": {
@@ -1180,6 +1322,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["cascadia-mono"]
     },
     "kurokula": {
@@ -1188,6 +1331,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["atkinson-hyperlegible", "jetbrains-mono"]
     },
     "lagom": {
@@ -1196,6 +1340,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["formular"]
     },
     "latex": {
@@ -1204,6 +1349,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["computer-modern-bright"]
     },
     "lavender-mist": {
@@ -1212,6 +1358,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["noto-serif-kr"]
     },
     "lemons-theme": {
@@ -1220,6 +1367,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "lesswrong": {
@@ -1228,6 +1376,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "light-bright": {
@@ -1236,6 +1385,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["lato", "roboto", "work-sans"]
     },
     "listive": {
@@ -1244,6 +1394,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["courgette", "karla", "open-sans"]
     },
     "lorens": {
@@ -1252,6 +1403,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "lumines": {
@@ -1260,6 +1412,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "lyt-mode": {
@@ -1268,6 +1421,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["dm-mono", "dm-sans", "fira-code"]
     },
     "mado-11": {
@@ -1276,6 +1430,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "mado-miniflow": {
@@ -1284,6 +1439,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "magicuser": {
@@ -1292,6 +1448,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["jetbrains-mono"]
     },
     "mammoth": {
@@ -1300,6 +1457,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "maple": {
@@ -1308,6 +1466,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["maple-mono"]
     },
     "marathon": {
@@ -1316,6 +1475,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["inter"]
     },
     "material-3": {
@@ -1324,6 +1484,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["material"],
+      "fixes": [],
       "fonts": ["roboto"]
     },
     "material-flat": {
@@ -1332,6 +1493,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["material"],
+      "fixes": [],
       "fonts": ["roboto", "roboto-mono"]
     },
     "material-gruvbox": {
@@ -1340,6 +1502,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["material"],
+      "fixes": [],
       "fonts": []
     },
     "material-ocean": {
@@ -1348,6 +1511,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle", "material"],
+      "fixes": [],
       "fonts": []
     },
     "meridian": {
@@ -1356,6 +1520,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "micro-mike": {
@@ -1364,6 +1529,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "midnight-fjord": {
@@ -1372,6 +1538,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["finlandica"]
     },
     "midnight": {
@@ -1380,6 +1547,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "minimal-dark-coder": {
@@ -1388,6 +1556,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle", "minimal"],
+      "fixes": [],
       "fonts": []
     },
     "minimal-dracula": {
@@ -1396,6 +1565,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["minimal"],
+      "fixes": [],
       "fonts": []
     },
     "minimal-edge": {
@@ -1404,6 +1574,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["minimal"],
+      "fixes": [],
       "fonts": ["roboto"]
     },
     "minimal-red": {
@@ -1412,6 +1583,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle", "minimal"],
+      "fixes": [],
       "fonts": ["geist"]
     },
     "minimal-resources": {
@@ -1420,6 +1592,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle", "minimal"],
+      "fixes": [],
       "fonts": []
     },
     "minimal": {
@@ -1428,6 +1601,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["minimal"],
+      "fixes": [],
       "fonts": ["roboto"]
     },
     "minimalists-paradise": {
@@ -1436,6 +1610,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["fira-code"]
     },
     "mint-breeze": {
@@ -1444,6 +1619,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["noto-sans-old-persian", "noto-serif-kr"]
     },
     "mistymauve": {
@@ -1452,6 +1628,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["arvo", "permanent-marker"]
     },
     "modern-genz-vibedose": {
@@ -1460,6 +1637,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["jost", "satoshi", "syne", "jetbrains-mono"]
     },
     "mono-high-contrast": {
@@ -1468,6 +1646,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["fira-code"]
     },
     "mono-black-monochrome-charcoal": {
@@ -1476,6 +1655,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "monochroyou": {
@@ -1484,6 +1664,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "monokai": {
@@ -1492,6 +1673,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "moonlight": {
@@ -1500,6 +1682,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "mulled-wine": {
@@ -1508,6 +1691,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "muted-blue": {
@@ -1516,6 +1700,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "myst": {
@@ -1524,6 +1709,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["icons/material-symbols-outlined", "s-core-dream-3-light"]
     },
     "nebula": {
@@ -1532,6 +1718,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["montserrat"]
     },
     "neo": {
@@ -1540,6 +1727,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["jetbrains-mono"]
     },
     "neon-synthwave": {
@@ -1548,6 +1736,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "neovim": {
@@ -1556,6 +1745,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "neuborder": {
@@ -1564,6 +1754,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "neumorphism": {
@@ -1572,6 +1763,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "neutral-academia": {
@@ -1580,6 +1772,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["cormorant", "manrope"]
     },
     "nier": {
@@ -1588,6 +1781,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "nightfox": {
@@ -1596,6 +1790,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "nightingale": {
@@ -1604,6 +1799,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["inconsolata", "noto-sans"]
     },
     "nobb": {
@@ -1612,6 +1808,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "nordic": {
@@ -1620,6 +1817,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["deadhead-script", "gentium-book-basic", "norwester"]
     },
     "northern-sky": {
@@ -1628,6 +1826,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["finlandica"]
     },
     "notation-2": {
@@ -1636,6 +1835,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["lyons-serif", "ia-writer-duospace"]
     },
     "notation": {
@@ -1644,6 +1844,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["sf-mono"]
     },
     "notswift": {
@@ -1652,6 +1853,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["roboto", "sf-mono", "sf-pro-display"]
     },
     "novadust": {
@@ -1660,6 +1862,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "obsidian-boom": {
@@ -1668,6 +1871,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "obsidian-gruvbox": {
@@ -1676,6 +1880,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "obsidian-nord": {
@@ -1684,6 +1889,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "obsidian_ia": {
@@ -1692,6 +1898,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["ia-writer-mono", "ia-writer-quattro"]
     },
     "obsidian_vibrant": {
@@ -1700,6 +1907,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "obsidianite": {
@@ -1708,6 +1916,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["rubik", "space-mono"]
     },
     "obsidianotion": {
@@ -1716,6 +1925,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["fira-code", "ia-writer-quattro", "ibm-plex-sans"]
     },
     "obuntu": {
@@ -1724,6 +1934,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "oistnb": {
@@ -1732,6 +1943,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "old-world": {
@@ -1740,6 +1952,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "oldsidian-purple": {
@@ -1748,6 +1961,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "oledblack": {
@@ -1756,6 +1970,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "oliviers-theme": {
@@ -1764,6 +1979,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["ibm-plex-mono"]
     },
     "onenice": {
@@ -1772,6 +1988,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "ono-sendai": {
@@ -1780,6 +1997,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["cairo", "fira-code"]
     },
     "orange": {
@@ -1788,6 +2006,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "oreo": {
@@ -1796,6 +2015,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "origami": {
@@ -1804,6 +2024,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "origin": {
@@ -1812,6 +2033,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "overcast": {
@@ -1820,6 +2042,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "pale": {
@@ -1828,6 +2051,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "panic-mode": {
@@ -1836,6 +2060,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["ia-writer-quattro-s", "monaco"]
     },
     "parfait": {
@@ -1844,6 +2069,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "penumbra": {
@@ -1852,6 +2078,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "perso": {
@@ -1860,6 +2087,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "phoenix": {
@@ -1868,6 +2096,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["jetbrains-mono", "sf-pro-display"]
     },
     "pine-forest-berry": {
@@ -1876,6 +2105,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["inconsolata"]
     },
     "pink-topaz": {
@@ -1884,6 +2114,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["lucida-handwriting", "monaco"]
     },
     "pisum": {
@@ -1892,6 +2123,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["monaco"]
     },
     "planetary": {
@@ -1900,6 +2132,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["ibm-plex-sans"]
     },
     "playground": {
@@ -1908,6 +2141,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["bricolage-grotesque"]
     },
     "pln": {
@@ -1916,6 +2150,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "poimandres": {
@@ -1924,6 +2159,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "polka": {
@@ -1932,6 +2168,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["rubik", "ibm-plex-mono"]
     },
     "pomme-notes": {
@@ -1940,6 +2177,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "powered-by-lancer": {
@@ -1948,6 +2186,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["arimo", "anonymous-pro"]
     },
     "primary": {
@@ -1956,6 +2195,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["cascadia-code"]
     },
     "prime": {
@@ -1964,6 +2204,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "prism": {
@@ -1972,6 +2213,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["jetbrains-mono", "source-sans-3"]
     },
     "proper-dark": {
@@ -1980,6 +2222,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "protocolblue": {
@@ -1988,6 +2231,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "prussian-blue": {
@@ -1996,6 +2240,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "publisher": {
@@ -2004,6 +2249,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["lato"]
     },
     "pure": {
@@ -2012,6 +2258,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "purple-aurora": {
@@ -2020,6 +2267,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "purple-owl": {
@@ -2028,6 +2276,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["monaspace-argon"]
     },
     "pxld": {
@@ -2036,6 +2285,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "qlean": {
@@ -2044,6 +2294,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["ia-writer-mono", "noto-sans-jp"]
     },
     "quillcode": {
@@ -2052,6 +2303,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "red-graphite": {
@@ -2060,6 +2312,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["jetbrains-mono"]
     },
     "red-shadow": {
@@ -2068,6 +2321,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["fira-code", "montserrat"]
     },
     "refined-default": {
@@ -2076,6 +2330,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "reshi": {
@@ -2084,6 +2339,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["jetbrains-mono", "noto-sans"]
     },
     "retro-windows": {
@@ -2092,6 +2348,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "retronotes": {
@@ -2100,6 +2357,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["ibm-plex-mono"]
     },
     "retroos-98": {
@@ -2108,6 +2366,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["libre-franklin"]
     },
     "reverie": {
@@ -2116,6 +2375,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "rezin": {
@@ -2124,6 +2384,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "ribbons": {
@@ -2132,6 +2393,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["icons/its"]
     },
     "rift": {
@@ -2140,6 +2402,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "rmaki": {
@@ -2148,6 +2411,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["fira-code"]
     },
     "rose-pine-moon": {
@@ -2156,6 +2420,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "rose-pine-2": {
@@ -2164,6 +2429,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "rose-pine": {
@@ -2172,6 +2438,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "rose-red": {
@@ -2180,6 +2447,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["hack"]
     },
     "royal-velvet": {
@@ -2188,6 +2456,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["fira-sans", "fira-code"]
     },
     "sad-machine-druid": {
@@ -2196,6 +2465,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["hack"]
     },
     "sakurajima": {
@@ -2204,6 +2474,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "salem": {
@@ -2212,6 +2483,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "sanctum-reborn": {
@@ -2220,6 +2492,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["sf-mono"]
     },
     "sanctum": {
@@ -2228,6 +2501,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["sf-mono"]
     },
     "sandover": {
@@ -2236,6 +2510,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["special-elite"]
     },
     "sandstorm": {
@@ -2244,6 +2519,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["flow-circular"]
     },
     "sanguine": {
@@ -2252,6 +2528,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["slasher-film"]
     },
     "sea-glass": {
@@ -2260,6 +2537,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["euclid-circular-a", "hack"]
     },
     "seamless-view": {
@@ -2268,6 +2546,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "sei": {
@@ -2276,6 +2555,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "serenity": {
@@ -2284,6 +2564,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["ia-writer-duo", "ia-writer-mono", "ia-writer-quattro-s"]
     },
     "serif": {
@@ -2292,6 +2573,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "serika": {
@@ -2300,6 +2582,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "shade-sanctuary": {
@@ -2308,6 +2591,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["computer-modern-bright", "jetbrains-mono"]
     },
     "shadeflow": {
@@ -2316,6 +2600,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["geist", "geist-mono"]
     },
     "shiba-inu": {
@@ -2324,6 +2609,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "shimmering-focus": {
@@ -2332,6 +2618,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": [
         "ia-writer-quattro-s",
         "eb-garamond",
@@ -2346,6 +2633,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "simple": {
@@ -2354,6 +2642,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["ia-writer-quattro", "fira-code", "ibm-plex-sans"]
     },
     "simplicity": {
@@ -2362,6 +2651,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "simply-colorful": {
@@ -2370,6 +2660,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["roboto"]
     },
     "sodalite": {
@@ -2378,6 +2669,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "solarized": {
@@ -2386,6 +2678,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "soli-deo-gloria": {
@@ -2394,6 +2687,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["cormorant", "germania-one"]
     },
     "solitude": {
@@ -2402,6 +2696,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["fira-code"]
     },
     "soloing": {
@@ -2410,6 +2705,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "soothe": {
@@ -2418,6 +2714,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "space": {
@@ -2426,6 +2723,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["bai-jamjuree", "orbitron", "unbounded"]
     },
     "sparkling-day": {
@@ -2434,6 +2732,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "sparkling-night": {
@@ -2442,6 +2741,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "sparkling-wisdom": {
@@ -2450,6 +2750,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["flow-circular", "open-sans"]
     },
     "spectrum-blue": {
@@ -2458,6 +2759,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["jetbrains-mono", "roboto"]
     },
     "spectrumplus": {
@@ -2466,6 +2768,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["jetbrains-mono"]
     },
     "spectrum": {
@@ -2474,6 +2777,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["jetbrains-mono"]
     },
     "spring": {
@@ -2482,6 +2786,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["apercu-pro"]
     },
     "sqdthone": {
@@ -2490,6 +2795,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["cascadia-code", "source-sans-pro"]
     },
     "strict": {
@@ -2498,6 +2804,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "subtlegold": {
@@ -2506,6 +2813,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["flow-circular", "sf-mono"]
     },
     "suddha": {
@@ -2514,6 +2822,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["monaco", "roboto"]
     },
     "sunbather": {
@@ -2522,6 +2831,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["roboto"]
     },
     "synthwave-84": {
@@ -2530,6 +2840,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "synthwave": {
@@ -2538,6 +2849,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "terminal": {
@@ -2546,6 +2858,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["fira-code"]
     },
     "terminal2k": {
@@ -2554,6 +2867,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "terraflow": {
@@ -2562,6 +2876,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "theme-that-shall-not-be-named": {
@@ -2570,6 +2885,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "things-3": {
@@ -2578,6 +2894,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["formular"]
     },
     "things": {
@@ -2586,6 +2903,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["jetbrains-mono", "roboto"]
     },
     "tiniri": {
@@ -2594,6 +2912,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "tokyo-night-storm": {
@@ -2602,6 +2921,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["anonymous-pro", "jetbrains-mono"]
     },
     "tokyo-night": {
@@ -2610,6 +2930,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["jetbrains-mono"]
     },
     "tomorrow-night-bright": {
@@ -2618,6 +2939,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "tomorrow": {
@@ -2626,6 +2948,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "toms-theme": {
@@ -2634,6 +2957,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "trace-labs": {
@@ -2642,6 +2966,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "transient": {
@@ -2650,6 +2975,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "transparent": {
@@ -2658,6 +2984,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "typewriter": {
@@ -2666,6 +2993,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["ia-writer-mono", "ia-writer-quattro-s", "jetbrains-mono"]
     },
     "typomagical": {
@@ -2674,6 +3002,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["alegreya", "amiri", "bitter", "playfair-display", "spectral"]
     },
     "typora-vue": {
@@ -2682,6 +3011,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "ukiyo": {
@@ -2690,6 +3020,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["cmu-typewriter-text", "jetbrains-mono"]
     },
     "ultra-lobster": {
@@ -2698,6 +3029,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["nightingale", "monaspace-neon"]
     },
     "underwater": {
@@ -2706,6 +3038,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["lexend"]
     },
     "ursa": {
@@ -2714,6 +3047,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "vanilla-amoled-color": {
@@ -2722,6 +3056,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "vanilla-amoled": {
@@ -2730,6 +3065,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "vanilla-palettes": {
@@ -2738,6 +3074,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "vauxhall": {
@@ -2746,6 +3083,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "velvet-moon": {
@@ -2754,6 +3092,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["finlandica"]
     },
     "venom": {
@@ -2762,6 +3101,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "vercel-geist": {
@@ -2770,6 +3110,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["geist", "geist-mono"]
     },
     "vesper": {
@@ -2778,6 +3119,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "vibrant": {
@@ -2786,6 +3128,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "vicious": {
@@ -2794,6 +3137,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "violet-evening": {
@@ -2802,6 +3146,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "virgo": {
@@ -2810,6 +3155,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "vortex": {
@@ -2818,6 +3164,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["rubik"]
     },
     "w95": {
@@ -2826,6 +3173,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "wasp": {
@@ -2834,6 +3182,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "wikipedia": {
@@ -2842,6 +3191,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["archivo", "linux-libertine"]
     },
     "wilcoxone": {
@@ -2850,6 +3200,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["lato", "fira-code"]
     },
     "willemstad": {
@@ -2858,6 +3209,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": [
         "crimson-pro",
         "dm-mono",
@@ -2872,6 +3224,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["myriad-apple"]
     },
     "wiselight": {
@@ -2880,6 +3233,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["karla", "open-sans"]
     },
     "wombat": {
@@ -2888,6 +3242,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": []
     },
     "wy-console": {
@@ -2896,6 +3251,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["audiowide", "dotgothic16"]
     },
     "wyrd": {
@@ -2904,6 +3260,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["architects-daughter", "neucha", "space-mono"]
     },
     "yue": {
@@ -2912,6 +3269,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["jetbrains-mono", "roboto"]
     },
     "zario": {
@@ -2920,6 +3278,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": ["jetbrains-mono", "roboto"]
     },
     "zen": {
@@ -2928,6 +3287,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
+      "fixes": [],
       "fonts": []
     },
     "zenburn": {
@@ -2936,6 +3296,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": ["hide-toggle"],
+      "fixes": [],
       "fonts": ["inconsolata"]
     }
   }

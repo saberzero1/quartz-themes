@@ -29,6 +29,7 @@ import {
   generateFundingLinks,
   cleanRulesAfterRun,
   cleanup,
+  getFixes,
 } from "./util/util.mjs";
 import {
   extractStyleSettings,
@@ -115,6 +116,7 @@ if (folders.length === 1) {
 
 manifestCollection.forEach((manifest) => {
   ensureDirectoryExists(`./themes/${getTheme(manifest)}/extras/fonts/icons`);
+  ensureDirectoryExists(`./themes/${getTheme(manifest)}/extras/fix`);
   //ensureDirectoryExists(`./themes/${getTheme(manifest)}/callouts`)
   // INIT ONLY
   if (args[0] === "INIT") {
@@ -214,6 +216,16 @@ manifestCollection.forEach((manifest) => {
   );
 });
 
+manifestCollection.forEach((manifest) => {
+  const themeFixes = getFixes(getValueFromDictionary(manifest, "name"));
+  themeFixes.forEach((fix) => {
+    copyFileToDirectory(
+      `./extras/fix/${fix}.scss`,
+      `./themes/${getTheme(manifest)}/extras/fix`,
+    );
+  });
+});
+
 // STEP 5
 // README.md
 manifestCollection.forEach((manifest) => {
@@ -284,6 +296,19 @@ manifestCollection.forEach((manifest) => {
     `./themes/${getTheme(manifest)}/_index.scss`,
     `//%%EXTRAS%%`,
     extras,
+  );
+});
+manifestCollection.forEach((manifest) => {
+  const themeNameLocal = getValueFromDictionary(manifest, "name");
+  let fixes = "";
+  const themeFixes = getFixes(themeNameLocal);
+  themeFixes.forEach((extra) => {
+    fixes += `\n@use "extras/fix/${extra}.scss";`;
+  });
+  replaceInFile(
+    `./themes/${getTheme(manifest)}/_index.scss`,
+    `//%%FIXES%%`,
+    fixes,
   );
 });
 manifestCollection.forEach((manifest) => {
