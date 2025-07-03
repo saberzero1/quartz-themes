@@ -373,6 +373,16 @@ export function getExtras(theme) {
 }
 
 /**
+ * Gets fixes for a specific game
+ *
+ * @param {string} theme theme name
+ * @returns {string[]} Array of fixes to install.
+ */
+export function getFixes(theme) {
+  return themes[sanitizeFilenamePreservingEmojis(theme)]["fixes"]
+}
+
+/**
  * Gets extra fonts for a specific game
  *
  * @param {string} theme theme name
