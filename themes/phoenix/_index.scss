@@ -943,10 +943,6 @@ body {
     margin-block-start: 0rem;
     font-size: 1.75rem;
   }
-  h2.page-title,
-  h2.page-title a {
-    margin-block: 0;
-  }
   h2 a {
     --link-weight: 600;
     color: light-dark(#ea4f0d, #ea4f0d);
@@ -1027,6 +1023,22 @@ body {
     --link-weight: 600;
     color: light-dark(#27cac7, #27cac7);
     font-weight: 500;
+  }
+  h1,
+  h1 a,
+  h2.page-title,
+  h2.page-title a,
+  h2,
+  h2 a,
+  h3,
+  h3 a,
+  h4,
+  h4 a,
+  h5,
+  h5 a,
+  h6,
+  h6 a {
+    margin-block: 0;
   }
   /* CODE */
   figure[data-rehype-pretty-code-figure] pre,
