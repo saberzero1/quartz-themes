@@ -614,6 +614,9 @@ body {
         :not(.folder-container):before {
           left: -1rem;
         }
+        a.folder-title:before {
+          height: unset;
+        }
         :after {
           right: -1rem;
         }
@@ -1112,6 +1115,7 @@ body {
           padding: 4px 0 4px 8px;
           padding-left: 1.5em;
           color: inherit;
+          font-size: 1rem;
           &.active,
           &:hover {
             background: transparent;
@@ -1120,6 +1124,7 @@ body {
             border-radius: 4px;
             color: #a68af9;
             font-weight: inherit;
+            font-size: 1rem;
           }
           &[data-for$="/index"] {
             padding-inline-start: 8px;
