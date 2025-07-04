@@ -18,6 +18,9 @@
   --h5-color: var(--text-normal);
   --h6-color: var(--text-normal);
 
+  --nav-item-background-hover: var(--background-modifier-hover);
+  --nav-item-background-active: var(--background-modifier-hover);
+
   //%%ROOT%%
 
   --text-normal: var(--color-base-100);
@@ -90,6 +93,9 @@ body {
   --h4-color: var(--text-normal);
   --h5-color: var(--text-normal);
   --h6-color: var(--text-normal);
+
+  --nav-item-background-hover: var(--background-modifier-hover);
+  --nav-item-background-active: var(--background-modifier-hover);
 
   //%%BODY%%
 
@@ -999,6 +1005,7 @@ body {
           &:hover {
             font-size: 1rem;
             line-height: 1.5rem;
+            background-color: var(--nav-item-background-hover);
           }
           &[data-for$="/index"] {
             padding-inline-start: 0.5rem;

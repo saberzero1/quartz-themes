@@ -614,6 +614,7 @@ body hr {
 
 :root {
   --h1-color: var(--text-normal);
+  --nav-item-background-hover: var(--background-modifier-hover);
   --accent-2: light-dark(#00ffff, #00ffff);
   --background-modifier-border: light-dark(#00ffff, #00ffff);
   --background-primary: light-dark(#2b213a, #2b213a);
@@ -683,6 +684,7 @@ html {
 }
 body {
   --h1-color: var(--text-normal);
+  --nav-item-background-hover: var(--background-modifier-hover);
   --accent-2: light-dark(#00ffff, #00ffff);
   --background-modifier-border: light-dark(#00ffff, #00ffff);
   --background-modifier-border-focus: #555555;
@@ -765,6 +767,7 @@ body {
   --link-external-color-hover: #7a6ae6;
   --link-external-filter: none;
   --link-weight: 600;
+  --nav-item-background-hover: #ffffff26;
   --p-spacing: 1rem;
   --search-icon-color: #ff79c6;
   --tag-background: #8a5cf51a;
@@ -1668,6 +1671,7 @@ body {
           &:hover {
             font-size: 1rem;
             line-height: 1.5rem;
+            background-color: var(--nav-item-background-hover);
           }
           &[data-for$="/index"] {
             padding-inline-start: 0.5rem;

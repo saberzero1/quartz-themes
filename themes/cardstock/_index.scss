@@ -207,6 +207,7 @@ html[saved-theme="light"] {
 
 :root {
   --h1-color: var(--text-normal);
+  --nav-item-background-hover: var(--background-modifier-hover);
   --background-modifier-border: light-dark(#f0eae2, #38312e);
   --background-modifier-border-focus: light-dark(#c43131, #c43131);
   --background-modifier-border-hover: light-dark(#c43131, #c43131);
@@ -237,6 +238,7 @@ html[saved-theme="light"] {
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
   --interactive-accent-hsl: light-dark(0, 52, 55.9, 0, 52, 55.9);
+  --nav-item-background-hover: light-dark(#e6dbcc, #2f2a27);
   --text-accent: light-dark(#c95454, #c95454);
   --text-accent-hover: light-dark(#c43131, #c43131);
   --text-faint: light-dark(#949494, #949494);
@@ -282,6 +284,7 @@ html {
 }
 body {
   --h1-color: var(--text-normal);
+  --nav-item-background-hover: var(--background-modifier-hover);
   --background-modifier-border: light-dark(#f0eae2, #38312e);
   --background-modifier-border-focus: light-dark(#c43131, #c43131);
   --background-modifier-border-hover: light-dark(#c43131, #c43131);
@@ -360,6 +363,7 @@ body {
   --link-external-color-hover: #c43131;
   --link-external-filter: none;
   --link-weight: 600;
+  --nav-item-background-hover: light-dark(#e6dbcc, #2f2a27);
   --p-spacing: 1rem;
   --search-icon-color: #f0eae2;
   --tag-background: #c954541a;
@@ -1247,6 +1251,7 @@ body {
           &:hover {
             font-size: 1rem;
             line-height: 1.5rem;
+            background-color: var(--nav-item-background-hover);
           }
           &[data-for$="/index"] {
             padding-inline-start: 0.5rem;

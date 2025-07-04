@@ -78,6 +78,7 @@ html[saved-theme="dark"] {
 
 :root {
   --h1-color: var(--text-normal);
+  --nav-item-background-hover: var(--background-modifier-hover);
   --checkbox-color: light-dark(
     oklch(48.5% 0.106 161.65),
     oklch(74.5% 0.164 161.65)
@@ -144,6 +145,7 @@ html {
 }
 body {
   --h1-color: var(--text-normal);
+  --nav-item-background-hover: var(--background-modifier-hover);
   --background-modifier-border: oklch(25.5% 0.021 279.29);
   --background-modifier-border-focus: oklch(61.5% 0.028 279.29);
   --background-modifier-border-hover: #3f3f3f;
@@ -231,6 +233,7 @@ body {
   --link-external-color-hover: hsl(253, 92.4%, 85.14%);
   --link-external-filter: none;
   --link-weight: 650;
+  --nav-item-background-hover: oklch(25.5% 0.021 279.29);
   --p-spacing: 1rem;
   --search-icon-color: oklch(61.5% 0.028 279.29);
   --tag-background: oklch(35.5% 0.127 260.58);
@@ -1129,6 +1132,7 @@ body {
           &:hover {
             font-size: 1rem;
             line-height: 1.5rem;
+            background-color: var(--nav-item-background-hover);
           }
           &[data-for$="/index"] {
             padding-inline-start: 0.5rem;

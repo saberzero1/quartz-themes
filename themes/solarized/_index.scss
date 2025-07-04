@@ -22,15 +22,11 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-
-  --active-bg: var(--nav-item-background-active);
   --mono-rgb-100: 255, 255, 255;
 
   --tag-background: #ca4c1633;
 
   --text-accent: #e84e1a;
-
-  --active-bg: var(--nav-item-background-active);
   --mono-rgb-100: 255, 255, 255;
 
   --tag-background: #ca4c1633;
@@ -53,16 +49,10 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-
-  --active-bg: #ca4c161a;
   --mono-rgb-100: 0, 0, 0;
-  --nav-item-background-active: var(--active-bg);
 
   --tag-background: #ca4c161a;
-
-  --active-bg: #ca4c161a;
   --mono-rgb-100: 0, 0, 0;
-  --nav-item-background-active: var(--active-bg);
 
   --tag-background: #ca4c161a;
 }
@@ -229,6 +219,8 @@ html[saved-theme="light"] {
 
 :root {
   --h1-color: var(--text-normal);
+  --nav-item-background-hover: var(--background-modifier-hover);
+  --nav-item-background-active: var(--background-modifier-hover);
   --background-modifier-border-focus: light-dark(#ca4c16, #ca4c16);
   --background-primary: light-dark(#fdf6e3, #002b36);
   --background-primary-alt: light-dark(#eee8d5, #073642);
@@ -313,6 +305,8 @@ html {
 }
 body {
   --h1-color: var(--text-normal);
+  --nav-item-background-hover: var(--background-modifier-hover);
+  --nav-item-background-active: var(--background-modifier-hover);
   --background-modifier-border: #073642;
   --background-modifier-border-focus: light-dark(#ca4c16, #ca4c16);
   --background-modifier-border-hover: #073642;
@@ -395,6 +389,7 @@ body {
   --link-external-filter: none;
   --link-weight: 600;
   --nav-item-background-active: #ffffff26;
+  --nav-item-background-hover: #ffffff26;
   --p-spacing: 1rem;
   --search-icon-color: #657b83;
   --tag-background: #ca4c161a;
@@ -1284,6 +1279,7 @@ body {
           &:hover {
             font-size: 1rem;
             line-height: 1.5rem;
+            background-color: var(--nav-item-background-hover);
           }
           &[data-for$="/index"] {
             padding-inline-start: 0.5rem;
