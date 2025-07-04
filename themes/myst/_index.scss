@@ -1083,7 +1083,7 @@ body {
         position: relative;
         @media all and ($mobile) {
           padding-inline-start: 0.5rem;
-          padding-inline-end: 0.5rem;
+          padding-inline-end: 0rem;
           border-radius: 0.25rem;
         }
         & > svg {
@@ -1162,7 +1162,7 @@ body {
             padding-inline-start: 0.5rem;
             padding-inline-end: 0.5rem;
             &[data-for$="/index"] {
-              padding-inline-end: 0rem;
+              padding-inline-end: 0.5rem;
             }
           }
         }
