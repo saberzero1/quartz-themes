@@ -543,6 +543,9 @@ body {
         :not(.folder-container):before {
           left: -1rem;
         }
+        a.folder-title:before {
+          height: unset;
+        }
         :after {
           right: -1rem;
         }
@@ -975,12 +978,14 @@ body {
             //%%EXPLORER FILE TITLE%%
 
             color: inherit;
+            font-size: 1rem;
 
           &.active,
           &:hover {
 
             //%%EXPLORER FILE TITLE ACTIVE%%
 
+            font-size: 1rem;
           }
           &[data-for$="/index"] {
             padding-inline-start: 8px;
