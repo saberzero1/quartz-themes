@@ -1769,6 +1769,7 @@ body {
       overflow: visible;
       text-shadow: 0 0 0.5em light-dark(#00ff00, #00ff00);
       min-height: calc(2 * var(--p-spacing) + var(--h3-line-height));
+      margin-block: 0;
     }
   }
   /* ICONS */

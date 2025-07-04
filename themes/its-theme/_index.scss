@@ -1344,6 +1344,7 @@ body {
       word-break: keep-all;
       word-wrap: normal;
       min-height: calc(2 * var(--p-spacing) + var(--h3-line-height));
+      margin-block: 0;
     }
   }
   /* ICONS */

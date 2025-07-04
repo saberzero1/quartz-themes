@@ -1307,6 +1307,7 @@ body {
       text-shadow: 0 0 4px #201d23;
       z-index: 1;
       min-height: calc(2 * var(--p-spacing) + var(--h3-line-height));
+      margin-block: 0;
     }
   }
   /* ICONS */
