@@ -1074,6 +1074,8 @@ body {
           font-weight: inherit;
           font-size: 1rem;
           line-height: 1.5rem;
+          background-color: var(--nav-item-background-hover);
+          border-radius: 0.25rem;
         }
       }
       li:has(> .folder-outer:not(.open)) > .folder-container:before {
@@ -1114,10 +1116,11 @@ body {
           line-height: 1.5rem;
           padding: 6px 8px 6px 24px;
           &.active,
-          &:hover {
+          &:not(.folder-title):hover {
             font-size: 1rem;
             line-height: 1.5rem;
             background-color: var(--nav-item-background-hover);
+            border-radius: 0.25rem;
           }
           &[data-for$="/index"] {
             padding-inline-start: 0.5rem;
@@ -1125,6 +1128,7 @@ body {
           padding-inline-start: 0;
           @media all and ($mobile) {
             padding-inline-start: 0.5rem;
+            padding-inline-end: 0.5rem;
           }
         }
         > a:before {
