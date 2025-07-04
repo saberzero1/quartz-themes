@@ -1179,10 +1179,10 @@ body {
           position: absolute;
         }
         &:before {
-          width: 16px;
-          height: 16px;
-          min-width: 16px;
-          min-height: 16px;
+          width: 1rem;
+          height: 1rem;
+          min-width: 1rem;
+          min-height: 1rem;
           display: flex;
           align-self: center;
           background: var(--icon-color);
@@ -1243,6 +1243,7 @@ body {
           }
           &[data-for$="/index"] {
             padding-inline-start: 0.5rem;
+            padding-inline-end: 0;
           }
           padding-inline-start: 0;
           @media all and ($mobile) {
@@ -1252,17 +1253,17 @@ body {
         }
         > a:before {
           --file-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>');
-          width: 16px;
-          height: 16px;
-          min-width: 16px;
-          min-height: 16px;
+          width: 1rem;
+          height: 1rem;
+          min-width: 1rem;
+          min-height: 1rem;
           content: "";
           display: flex;
           align-self: center;
           background: var(--icon-color);
           mask-image: var(--file-icon);
           -webkit-mask-image: var(--file-icon);
-          margin-inline-end: 8px;
+          margin-inline-end: 0.5rem;
         }
       }
     }
