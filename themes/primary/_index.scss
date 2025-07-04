@@ -1358,6 +1358,18 @@ body {
         & > div {
           width: 100%;
         }
+        &:hover {
+          background-color: #00000020;
+          box-shadow:
+            inset 0px 0px 0px 1px #00000045,
+            inset 0px -2px 0px 2px #0000003d,
+            0px 2px 3px 0px #00000038;
+          color: #ab916d;
+          font-weight: inherit;
+          padding: 4px 8px 6px 24px;
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
       }
       li:has(> .folder-outer:not(.open)) > .folder-container:before {
         background: var(--collapse-icon-color-collapsed, var(--icon-color));
@@ -1393,17 +1405,12 @@ body {
             transform 140ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
           color: inherit;
           font-size: 1rem;
+          line-height: 1.5rem;
+          padding: 6px 8px 6px 24px;
           &.active,
           &:hover {
-            background-color: #00000020;
-            box-shadow:
-              inset 0px 0px 0px 1px #00000045,
-              inset 0px -2px 0px 2px #0000003d,
-              0px 2px 3px 0px #00000038;
-            color: #ab916d;
-            font-weight: inherit;
-            padding: 4px 8px 6px 24px;
             font-size: 1rem;
+            line-height: 1.5rem;
           }
           &[data-for$="/index"] {
             padding-inline-start: 8px;

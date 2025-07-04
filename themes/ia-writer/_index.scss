@@ -1091,6 +1091,17 @@ body {
         & > div {
           width: 100%;
         }
+        &:hover {
+          background-color: transparent;
+          border-left: 5px solid #8a5cf5;
+          border-radius: 0;
+          color: #ccc;
+          font-weight: inherit;
+          margin-left: -10px;
+          padding-left: 13px;
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
       }
       li:has(> .folder-outer:not(.open)) > .folder-container:before {
         background: var(--collapse-icon-color-collapsed, var(--icon-color));
@@ -1123,16 +1134,12 @@ body {
           padding: 6px 8px 6px 24px;
           color: inherit;
           font-size: 1rem;
+          line-height: 1.5rem;
+          padding: 6px 8px 6px 24px;
           &.active,
           &:hover {
-            background-color: transparent;
-            border-left: 5px solid #8a5cf5;
-            border-radius: 0;
-            color: #ccc;
-            font-weight: inherit;
-            margin-left: -10px;
-            padding-left: 13px;
             font-size: 1rem;
+            line-height: 1.5rem;
           }
           &[data-for$="/index"] {
             padding-inline-start: 8px;
