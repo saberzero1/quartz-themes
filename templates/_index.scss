@@ -953,6 +953,13 @@ body {
         & > div {
           width: 100%;
         }
+        &:hover {
+
+          //%%EXPLORER FILE TITLE ACTIVE%%
+
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
       }
       li:has(> .folder-outer:not(.open)) > .folder-container:before {
         background: var(--collapse-icon-color-collapsed, var(--icon-color));
@@ -975,17 +982,17 @@ body {
 
         a {
 
-            //%%EXPLORER FILE TITLE%%
+          //%%EXPLORER FILE TITLE%%
 
-            color: inherit;
-            font-size: 1rem;
+          color: inherit;
+          font-size: 1rem;
+          line-height: 1.5rem;
+          padding: 6px 8px 6px 24px;
 
           &.active,
           &:hover {
-
-            //%%EXPLORER FILE TITLE ACTIVE%%
-
             font-size: 1rem;
+            line-height: 1.5rem;
           }
           &[data-for$="/index"] {
             padding-inline-start: 8px;
