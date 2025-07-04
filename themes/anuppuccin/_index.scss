@@ -141,6 +141,7 @@ html[saved-theme="light"] {
 
 :root {
   --h1-color: var(--text-normal);
+  --nav-item-background-hover: var(--background-modifier-hover);
   --background-modifier-border: inherit;
   --background-modifier-border-focus: inherit;
   --background-modifier-border-hover: inherit;
@@ -212,6 +213,7 @@ html {
 }
 body {
   --h1-color: var(--text-normal);
+  --nav-item-background-hover: var(--background-modifier-hover);
   --background-modifier-border: inherit;
   --background-modifier-border-focus: inherit;
   --background-modifier-border-hover: inherit;
@@ -299,6 +301,7 @@ body {
   --link-external-color-hover: inherit;
   --link-external-filter: none;
   --link-weight: 600;
+  --nav-item-background-hover: inherit;
   --p-spacing: 1rem;
   --search-icon-color: inherit;
   --tag-background: #8a5cf51a;
@@ -1321,6 +1324,7 @@ body {
           &:hover {
             font-size: 1rem;
             line-height: 1.5rem;
+            background-color: var(--nav-item-background-hover);
           }
           &[data-for$="/index"] {
             padding-inline-start: 0.5rem;

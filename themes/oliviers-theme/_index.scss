@@ -105,6 +105,7 @@ html[saved-theme="light"] {
 
 :root {
   --h1-color: var(--text-normal);
+  --nav-item-background-hover: var(--background-modifier-hover);
   --color-accent-2: light-dark(#cc0199, hsl(313, 101.85%, 45.15%));
   --color-accent-hsl: light-dark(#b0037c, #b0037c);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
@@ -163,6 +164,7 @@ html {
 }
 body {
   --h1-color: var(--text-normal);
+  --nav-item-background-hover: var(--background-modifier-hover);
   --background-modifier-border: #333333;
   --background-modifier-border-focus: #d9af04;
   --background-modifier-border-hover: #333333;
@@ -247,6 +249,7 @@ body {
   --link-external-color-hover: #fd71d3;
   --link-external-filter: none;
   --link-weight: 600;
+  --nav-item-background-hover: #fd71d3;
   --p-spacing: 0.5em;
   --search-icon-color: #1a1a1a;
   --tag-background: #f2c204;
@@ -1137,6 +1140,7 @@ body {
           &:hover {
             font-size: 1rem;
             line-height: 1.5rem;
+            background-color: var(--nav-item-background-hover);
           }
           &[data-for$="/index"] {
             padding-inline-start: 0.5rem;
