@@ -573,7 +573,7 @@ body {
     }
     @media all and ($mobile) {
       &.left:has(.explorer) {
-        :not(.folder-container):before,
+        :not(.folder-container, a[data-for]):before,
         :after {
           background-color: #211f23;
           background-color: var(--background-secondary);
@@ -584,7 +584,7 @@ body {
           top: 0;
           position: absolute;
         }
-        :not(.folder-container):before {
+        :not(.folder-container, a[data-for]):before {
           left: -1rem;
         }
         a.folder-title:before {
@@ -1036,6 +1036,11 @@ body {
         color: #a32d7f;
         text-overflow: ellipsis;
         position: relative;
+        @media all and ($mobile) {
+          padding-inline-start: 0.5rem;
+          padding-inline-end: 0.5rem;
+          border-radius: 0.25rem;
+        }
         & > svg {
           opacity: 0.001;
           position: absolute;
@@ -1423,8 +1428,8 @@ body {
         padding-left: 1rem;
       }
       .explorer:not(.collapsed) > .explorer-content {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
         > .overflow {
           overflow-x: hidden;
         }
