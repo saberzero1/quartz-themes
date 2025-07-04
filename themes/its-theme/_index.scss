@@ -596,6 +596,12 @@ body {
   background-color: #f8fbff;
   background-color: var(--background-primary);
   overflow: initial;
+  @media all and ($desktop) {
+    background-color: var(--background-secondary);
+    > #quartz-root {
+      background-color: var(--background-primary);
+    }
+  }
 
   @media all and ($mobile) {
     div.flex-component > div:has(> button.readermode) {
@@ -853,6 +859,10 @@ body {
     word-break: keep-all;
     word-wrap: normal;
     font-size: 1.75rem;
+  }
+  h2.page-title,
+  h2.page-title a {
+    margin-block: 0;
   }
   h2 a {
     --link-weight: 500;

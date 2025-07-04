@@ -63,7 +63,7 @@
       "use_extended_syntax": false,
       "variations": [],
       "extras": [],
-      "fixes": [],
+      "fixes": ["heading-colors"],
       "fonts": []
     },
     "adwaita": {
