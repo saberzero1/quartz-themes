@@ -325,12 +325,13 @@ manifestCollection.forEach((manifest) => {
         const obsidianCSS = fs.readFileSync("./app.css", "utf8");
         const overridesCSS = fs.readFileSync("./overrides_app.css", "utf8");
         const result = cleanCSS(obsidianCSS, overridesCSS, mode, true);
-        writePrettier(`./converted_app.css`, result, "utf8");
+        writePrettier(`./converted_app.css`, result, "utf8", false);
         // Static version
         writePrettier(
           `./converted_app_static.css`,
           generateStatic(result, themeNameLocal),
           "utf8",
+          false,
         );
         // Write extracted version to speed up later processing
         const cssAtomicString = fs.readFileSync(`./converted_app.css`, "utf8");
@@ -338,11 +339,12 @@ manifestCollection.forEach((manifest) => {
         const staticExctractResult = extractCSS(
           generateStatic(cssAtomicString, themeNameLocal),
         );
-        writePrettier(`./converted_app_extracted.css`, extractResult, "utf8");
+        writePrettier(`./converted_app_extracted.css`, extractResult, "utf8", false);
         writePrettier(
           `./static_converted_app_extracted.css`,
           staticExctractResult,
           "utf8",
+          false,
         );
       }
     }
