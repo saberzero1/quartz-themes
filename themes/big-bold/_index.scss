@@ -23,10 +23,10 @@ html[saved-theme="dark"] {
     color: var(--shiki-dark);
   }
   --mono-rgb-100: 255, 255, 255;
-  --text-accent: #7089eb;
+  --text-accent: hsl(228, 75%, 68%);
   --text-highlight-bg: #7988ec79;
   --mono-rgb-100: 255, 255, 255;
-  --text-accent: #7089eb;
+  --text-accent: hsl(228, 75%, 68%);
   --text-highlight-bg: #7988ec79;
 }
 
@@ -766,8 +766,8 @@ body {
 :root {
   --h1-color: var(--text-normal);
   --nav-item-background-hover: var(--background-modifier-hover);
-  --color-accent-2: light-dark(#a7b5f3, #d3dbfa);
-  --color-accent-hsl: light-dark(#7988ec, #7988ec);
+  --color-accent-2: light-dark(hsl(229, 76.5%, 80.5%), hsl(227, 78.75%, 90.3%));
+  --color-accent-hsl: light-dark(hsl(232, 75%, 70%), hsl(232, 75%, 70%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -825,37 +825,40 @@ html {
 body {
   --h1-color: var(--text-normal);
   --nav-item-background-hover: var(--background-modifier-hover);
-  --background-modifier-border: #9496ac66;
-  --background-modifier-border-focus: #abaac5;
-  --background-modifier-border-hover: #c4c6ca;
-  --background-modifier-hover: #ffffff11;
-  --background-primary: #f7f7f8bf;
-  --background-primary-alt: #f1f2f3;
-  --background-secondary: #e5e6eb;
+  --background-modifier-border: light-dark(#9f9f9f66, #1f242d);
+  --background-modifier-border-focus: light-dark(#d7d7d7, #404b5e);
+  --background-modifier-border-hover: light-dark(#dedede, #384152);
+  --background-modifier-hover: light-dark(
+    rgba(0, 0, 0, 0.067),
+    rgba(255, 255, 255, 0.067)
+  );
+  --background-primary: light-dark(#ffffffbf, #1c2026bf);
+  --background-primary-alt: light-dark(#fdfdfd, #1e222a);
+  --background-secondary: light-dark(#f5f5f5, #212731);
   --bold-color: inherit;
   --bold-weight: 900;
-  --checkbox-border-color: #ff7272;
-  --checkbox-border-color-hover: #6d6b78;
+  --checkbox-border-color: light-dark(#c75f54, #ff4d3a);
+  --checkbox-border-color-hover: light-dark(#7f7f7f, #9aa3b7);
   --checkbox-color: transparent;
-  --checkbox-color-hover: #7089eb;
-  --checkbox-marker-color: #f7f7f8bf;
+  --checkbox-color-hover: hsl(228, 75%, 68%);
+  --checkbox-marker-color: light-dark(#ffffffbf, #1c2026bf);
   --checkbox-radius: 14px;
   --checkbox-size: 18px;
-  --code-background: #f1f2f3;
-  --code-comment: #787689;
-  --code-function: #dbca67;
-  --code-important: #ffa058;
-  --code-keyword: #e991c4;
-  --code-normal: #3e3a4f;
-  --code-property: #54bab6;
-  --code-punctuation: #6d6b78;
-  --code-string: #84cc7c;
-  --code-tag: #ff7272;
-  --code-value: #b78cda;
-  --collapse-icon-color: #787689;
-  --collapse-icon-color-collapsed: #7089eb;
-  --color-accent-2: light-dark(#a7b5f3, #d3dbfa);
-  --color-accent-hsl: light-dark(#7988ec, #7988ec);
+  --code-background: light-dark(#fdfdfd, #1e222a);
+  --code-comment: light-dark(#878787, #727d92);
+  --code-function: light-dark(#dca931, #e8c900);
+  --code-important: light-dark(#d08344, #f69c00);
+  --code-keyword: light-dark(#ac7aaa, #e66ab4);
+  --code-normal: light-dark(#252525, #c8d4e6);
+  --code-property: light-dark(#49a7ba, #00cecb);
+  --code-punctuation: light-dark(#7f7f7f, #9aa3b7);
+  --code-string: light-dark(#8fb26b, #7dcf2b);
+  --code-tag: light-dark(#c75f54, #ff4d3a);
+  --code-value: light-dark(#8076ad, #b45af5);
+  --collapse-icon-color: light-dark(#878787, #727d92);
+  --collapse-icon-color-collapsed: hsl(228, 75%, 68%);
+  --color-accent-2: light-dark(hsl(229, 76.5%, 80.5%), hsl(227, 78.75%, 90.3%));
+  --color-accent-hsl: light-dark(hsl(232, 75%, 70%), hsl(232, 75%, 70%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -878,54 +881,57 @@ body {
   --font-monospace: "DM Mono", monospace;
   --font-text: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   --font-weight: 400;
-  --graph-line: #c4c6ca;
-  --graph-node-tag: #84cc7c;
-  --graph-node-unresolved: #787689;
+  --graph-line: light-dark(#dedede, #384152);
+  --graph-node-tag: light-dark(#8fb26b, #7dcf2b);
+  --graph-node-unresolved: light-dark(#878787, #727d92);
   --h1-color: inherit;
   --h1-font:
     "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
     Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   --h3-line-height: 1.3;
-  --hr-color: #d9dde8;
+  --hr-color: light-dark(#efefef, #29313d);
   --hr-thickness: 2px;
-  --icon-color: #6d6b78;
-  --inline-title-color: #3e3a4f;
+  --icon-color: light-dark(#7f7f7f, #9aa3b7);
+  --inline-title-color: light-dark(#252525, #c8d4e6);
   --inline-title-font:
     "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
     Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   --interactive-accent-hsl: 232, 75%, 70%;
   --italic-color: inherit;
-  --link-color: #7089eb;
-  --link-color-hover: #8892f2;
-  --link-external-color: #7089eb;
-  --link-external-color-hover: #8892f2;
+  --link-color: hsl(228, 75%, 68%);
+  --link-color-hover: hsl(234, 80%, 74%);
+  --link-external-color: hsl(228, 75%, 68%);
+  --link-external-color-hover: hsl(234, 80%, 74%);
   --link-external-filter: none;
   --link-weight: 700;
-  --nav-item-background-hover: #ffffff26;
+  --nav-item-background-hover: light-dark(
+    rgba(0, 0, 0, 0.15),
+    rgba(255, 255, 255, 0.15)
+  );
   --p-spacing: 1rem;
-  --search-icon-color: #6d6b78;
+  --search-icon-color: light-dark(#7f7f7f, #9aa3b7);
   --tag-background: #7988ec1a;
   --tag-background-hover: #7988ec33;
   --tag-border-color: #7988ec26;
   --tag-border-color-hover: #7988ec26;
   --tag-border-width: 0px;
-  --tag-color: #7089eb;
-  --tag-color-hover: #7089eb;
+  --tag-color: hsl(228, 75%, 68%);
+  --tag-color-hover: hsl(228, 75%, 68%);
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-radius: 2em;
   --tag-weight: inherit;
   --text-accent: #7988ec;
-  --text-accent-hover: #8892f2;
-  --text-faint: #787689;
+  --text-accent-hover: hsl(234, 80%, 74%);
+  --text-faint: light-dark(#878787, #727d92);
   --text-highlight-bg: #ffd00066;
-  --text-muted: #6d6b78;
-  --text-normal: #3e3a4f;
+  --text-muted: light-dark(#7f7f7f, #9aa3b7);
+  --text-normal: light-dark(#252525, #c8d4e6);
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: #f7f7f8bf;
-  caret-color: #7089eb;
-  color: #3e3a4f;
+  background-color: light-dark(#ffffffbf, #1c2026bf);
+  caret-color: hsl(228, 75%, 68%);
+  color: light-dark(#252525, #c8d4e6);
   contain: initial;
   font-family:
     "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
@@ -1226,7 +1232,7 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: #f7f7f8bf;
+  background-color: light-dark(#ffffffbf, #1c2026bf);
   background-color: var(--background-primary);
   overflow: initial;
   @media all and ($desktop) {
@@ -1251,12 +1257,12 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: #f7f7f8bf;
+      background-color: light-dark(#ffffffbf, #1c2026bf);
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: #f7f7f8bf;
+        background-color: light-dark(#ffffffbf, #1c2026bf);
         background-color: var(--background-primary);
       }
     }
@@ -1264,7 +1270,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: #f7f7f8bf;
+          background-color: light-dark(#ffffffbf, #1c2026bf);
           background-color: var(--background-secondary);
           content: " ";
           display: block;
@@ -1444,7 +1450,7 @@ body {
   /* HEADINGS */
   h1 {
     --font-weight: 700;
-    color: #54bab6;
+    color: light-dark(#49a7ba, #00cecb);
     font-family:
       "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
       Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
@@ -1466,7 +1472,7 @@ body {
   h2.page-title a,
   h2 {
     --font-weight: 700;
-    color: #8391ed;
+    color: light-dark(#4e8aa6, #009be3);
     font-family:
       "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
       Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
@@ -1485,7 +1491,7 @@ body {
   }
   h3 {
     --font-weight: 700;
-    color: #b78cda;
+    color: light-dark(#8076ad, #b45af5);
     font-family:
       "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
       Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
@@ -1504,7 +1510,7 @@ body {
   }
   h4 {
     --font-weight: 700;
-    color: #e991c4;
+    color: light-dark(#ac7aaa, #e66ab4);
     font-family:
       "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
       Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
@@ -1523,7 +1529,7 @@ body {
   }
   h5 {
     --font-weight: 700;
-    color: #ff7272;
+    color: light-dark(#c75f54, #ff4d3a);
     font-family:
       "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
       Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
@@ -1542,7 +1548,7 @@ body {
   }
   h6 {
     --font-weight: 700;
-    color: #ffa058;
+    color: light-dark(#d08344, #f69c00);
     font-family:
       "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
       Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
@@ -1578,8 +1584,8 @@ body {
   /* CODE */
   figure[data-rehype-pretty-code-figure] pre,
   pre {
-    background-color: #f1f2f3;
-    border: 1px solid #d9dde8;
+    background-color: light-dark(#fdfdfd, #1e222a);
+    border: 1px solid light-dark(#efefef, #29313d);
     border-radius: 7px;
     box-shadow: none;
     min-height: 38px;
@@ -1648,10 +1654,10 @@ body {
   }
   code {
     -webkit-box-decoration-break: clone;
-    background-color: #f1f2f3;
-    border: 0px solid #d9dde8;
+    background-color: light-dark(#fdfdfd, #1e222a);
+    border: 0px solid light-dark(#efefef, #29313d);
     border-radius: 7px;
-    color: #3e3a4f;
+    color: light-dark(#252525, #c8d4e6);
     font-family: "DM Mono", monospace;
     font-size: 1em;
     line-height: 1em;
@@ -1663,7 +1669,7 @@ body {
   .clipboard-button {
     background-color: transparent;
     box-shadow: none;
-    color: #6d6b78;
+    color: light-dark(#7f7f7f, #9aa3b7);
     font-family:
       "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
     font-size: 12.8px;
@@ -1674,7 +1680,10 @@ body {
     position: absolute;
     top: 0;
     &:hover {
-      background-color: #ffffff26;
+      background-color: light-dark(
+        rgba(0, 0, 0, 0.15),
+        rgba(255, 255, 255, 0.15)
+      );
     }
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -1682,18 +1691,18 @@ body {
   }
   /* METADATA */
   .content-meta {
-    color: #3e3a4f;
+    color: light-dark(#252525, #c8d4e6);
     color: var(--text-normal);
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: #787689;
+    color: light-dark(#878787, #727d92);
   }
   /* BACKLINKS */
   .backlinks {
     h3 {
       --font-weight: 700;
-      color: #b78cda;
+      color: light-dark(#8076ad, #b45af5);
       font-family:
         "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
         Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
@@ -1707,7 +1716,7 @@ body {
       margin-block-start: 0rem;
     }
     ul li {
-      color: #3e3a4f;
+      color: light-dark(#252525, #c8d4e6);
       font-weight: 500;
     }
   }
@@ -1723,11 +1732,11 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: #8391ed;
+      color: light-dark(#4e8aa6, #009be3);
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: #f7f7f8bf;
+        background-color: light-dark(#ffffffbf, #1c2026bf);
         background-color: var(--background-secondary);
         left: -1rem;
       }
@@ -1762,7 +1771,7 @@ body {
         &:hover {
           background-color: transparent;
           border-left: 3px #7988ec solid;
-          color: #3e3a4f;
+          color: light-dark(#252525, #c8d4e6);
           font-weight: inherit;
           font-size: 1rem;
           line-height: 1.5rem;
@@ -1791,7 +1800,7 @@ body {
         position: relative;
         a {
           border-radius: 0px;
-          color: #3e3a4f;
+          color: light-dark(#252525, #c8d4e6);
           cursor: pointer;
           display: flex;
           font-size: 0.86em;
@@ -1845,11 +1854,11 @@ body {
   }
   /* TOC */
   .toc {
-    color: #b78cda;
+    color: light-dark(#8076ad, #b45af5);
     button.toc-header {
       h3 {
         --font-weight: 700;
-        color: #b78cda;
+        color: light-dark(#8076ad, #b45af5);
         font-family:
           "Merriweather Sans", "Book Antiqua", "Nunito Sans",
           "Noto Color Emoji", Inter, sans-serif, "Nunito Sans",
@@ -1864,13 +1873,13 @@ body {
         margin-block-start: 0rem;
         margin-block: 0;
       }
-      color: #b78cda;
+      color: light-dark(#8076ad, #b45af5);
       color: inherit;
     }
     ul.toc-content.overflow {
       li,
       li > a {
-        color: #3e3a4f;
+        color: light-dark(#252525, #c8d4e6);
         font-weight: inherit;
         font-size: 16px;
         color: inherit;
@@ -1883,7 +1892,7 @@ body {
   .toc {
     h3 {
       --font-weight: 700;
-      color: #b78cda;
+      color: light-dark(#8076ad, #b45af5);
       font-family:
         "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
         Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
@@ -1950,10 +1959,10 @@ body {
       background: var(--button-secondary-bg-color);
       color: var(--button-secondary-fg-color);
       -webkit-app-region: no-drag;
-      background: #d9dde8;
-      border: 1px solid #d9dde8;
+      background: light-dark(#efefef, #29313d);
+      border: 1px solid light-dark(#efefef, #29313d);
       border-radius: 5px;
-      color: #3e3a4f;
+      color: light-dark(#252525, #c8d4e6);
       font-family: inherit;
       font-size: 14.992px;
       height: 40px;
@@ -1967,8 +1976,8 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: #f7f7f8bf;
-        border: 0.5pt solid #abaac5;
+        background-color: light-dark(#ffffffbf, #1c2026bf);
+        border: 0.5pt solid light-dark(#d7d7d7, #404b5e);
         border-radius: 19px;
         box-shadow: none;
         color: var(--text-normal);
@@ -1976,9 +1985,9 @@ body {
         border-color: var(--background-modifier-border, var(--color-base-35));
         margin: 12vh auto;
         & > input {
-          background-color: #f7f7f8bf;
+          background-color: light-dark(#ffffffbf, #1c2026bf);
           border: none;
-          border-bottom: 1px solid #e5e6eb;
+          border-bottom: 1px solid light-dark(#f5f5f5, #212731);
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1991,7 +2000,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: #3e3a4f;
+          color: light-dark(#252525, #c8d4e6);
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -2008,10 +2017,7 @@ body {
           }
           & .highlight {
             background-color: transparent;
-            color: light-dark(
-              light-dark(hsl(181, 100%, 35%), hsl(181, 100%, 35%)),
-              light-dark(hsl(181, 100%, 35%), hsl(181, 100%, 35%))
-            );
+            color: light-dark(hsl(181, 100%, 35%), hsl(181, 100%, 35%));
             font-weight: bold;
             background-color: var(--quartz-text-highlight);
           }
@@ -2037,13 +2043,16 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: #ffffff26;
+                background-color: light-dark(
+                  rgba(0, 0, 0, 0.15),
+                  rgba(255, 255, 255, 0.15)
+                );
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: #3e3a4f;
+                color: light-dark(#252525, #c8d4e6);
                 &.match-tag {
-                  color: #7089eb;
+                  color: hsl(228, 75%, 68%);
                 }
               }
             }
@@ -2105,10 +2114,17 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: #f7f7f8bf;
-    border: 1px solid #d9dde8;
+    background-color: light-dark(#ffffffbf, #1c2026bf);
+    border: 1px solid light-dark(#efefef, #29313d);
     border-radius: 14px;
-    box-shadow: none;
+    box-shadow: light-dark(
+      0px 1px 2px #00000007,
+      0px 3.4px 6.7px #0000000b,
+      0px 15px 30px #00000012,
+      0px 1px 2px #0000001f,
+      0px 3.4px 6.7px #0000002e,
+      0px 15px 30px #0000004d
+    );
     display: flex;
     max-height: 95vh;
     position: absolute;
@@ -2119,8 +2135,8 @@ body {
     border: unset;
     background-color: var(--background-primary);
     & .popover-inner {
-      border: 1px solid #d9dde8;
-      background-color: #f7f7f8bf;
+      border: 1px solid light-dark(#efefef, #29313d);
+      background-color: light-dark(#ffffffbf, #1c2026bf);
 
       border-radius: 14px;
       background-color: var(--background-primary);
