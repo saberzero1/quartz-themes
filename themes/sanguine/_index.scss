@@ -506,7 +506,7 @@ body {
 html {
   .callout {
     --callout-color: 2, 122, 255;
-    background-color: #9e9e9e1a;
+    background-color: #232221;
     border-color: #9e9e9e40;
     border-radius: 4px;
     border-style: solid;
@@ -515,196 +515,196 @@ html {
     mix-blend-mode: normal;
     overflow: hidden;
     padding: 12px 24px 12px 12px;
-    background-color: #9e9e9e1a;
+    background-color: #232221;
     background-color: var(--bg);
     border-color: var(--border);
     overflow-x: auto;
     overflow-y: hidden;
     &[data-callout] {
       --callout-color: 2, 122, 255;
-      background-color: #9e9e9e1a;
+      background-color: #232221;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="abstract"] {
       --callout-color: 83, 223, 221;
-      background-color: #9e9e9e1a;
+      background-color: #232221;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="summary"] {
       --callout-color: 83, 223, 221;
-      background-color: #9e9e9e1a;
+      background-color: #232221;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="tldr"] {
       --callout-color: 83, 223, 221;
-      background-color: #9e9e9e1a;
+      background-color: #232221;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="info"] {
       --callout-color: 2, 122, 255;
-      background-color: #9e9e9e1a;
+      background-color: #232221;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="todo"] {
       --callout-color: 2, 122, 255;
-      background-color: #9e9e9e1a;
+      background-color: #232221;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="important"] {
       --callout-color: 83, 223, 221;
-      background-color: #9e9e9e1a;
+      background-color: #232221;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="tip"] {
       --callout-color: 83, 223, 221;
-      background-color: #9e9e9e1a;
+      background-color: #232221;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="hint"] {
       --callout-color: 83, 223, 221;
-      background-color: #9e9e9e1a;
+      background-color: #232221;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="success"] {
       --callout-color: 68, 207, 110;
-      background-color: #9e9e9e1a;
+      background-color: #232221;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="check"] {
       --callout-color: 68, 207, 110;
-      background-color: #9e9e9e1a;
+      background-color: #232221;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="done"] {
       --callout-color: 68, 207, 110;
-      background-color: #9e9e9e1a;
+      background-color: #232221;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="question"] {
       --callout-color: 233, 151, 63;
-      background-color: #9e9e9e1a;
+      background-color: #232221;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="help"] {
       --callout-color: 233, 151, 63;
-      background-color: #9e9e9e1a;
+      background-color: #232221;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="faq"] {
       --callout-color: 233, 151, 63;
-      background-color: #9e9e9e1a;
+      background-color: #232221;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="warning"] {
       --callout-color: 233, 151, 63;
-      background-color: #9e9e9e1a;
+      background-color: #232221;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="caution"] {
       --callout-color: 233, 151, 63;
-      background-color: #9e9e9e1a;
+      background-color: #232221;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="attention"] {
       --callout-color: 233, 151, 63;
-      background-color: #9e9e9e1a;
+      background-color: #232221;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="failure"] {
       --callout-color: 251, 70, 76;
-      background-color: #9e9e9e1a;
+      background-color: #232221;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="fail"] {
       --callout-color: 251, 70, 76;
-      background-color: #9e9e9e1a;
+      background-color: #232221;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="missing"] {
       --callout-color: 251, 70, 76;
-      background-color: #9e9e9e1a;
+      background-color: #232221;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="danger"] {
       --callout-color: 251, 70, 76;
-      background-color: #9e9e9e1a;
+      background-color: #232221;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="error"] {
       --callout-color: 251, 70, 76;
-      background-color: #9e9e9e1a;
+      background-color: #232221;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="bug"] {
       --callout-color: 251, 70, 76;
-      background-color: #9e9e9e1a;
+      background-color: #232221;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="example"] {
       --callout-color: 168, 130, 255;
-      background-color: #9e9e9e1a;
+      background-color: #232221;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="quote"] {
       --callout-color: 158, 158, 158;
-      background-color: #9e9e9e1a;
+      background-color: #232221;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
     }
     &[data-callout="cite"] {
       --callout-color: 158, 158, 158;
-      background-color: #9e9e9e1a;
+      background-color: #232221;
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       background: var(--bg);
@@ -721,13 +721,13 @@ html {
     background: var(--bg);
     & > .callout-title-inner > p {
       --font-weight: 800;
-      color: inherit;
+      color: #ff4949;
       font-weight: 600;
       color: var(--color);
     }
     .callout-title-inner {
       --font-weight: 800;
-      color: inherit;
+      color: #ff4949;
       font-weight: 600;
     }
   }
@@ -960,16 +960,18 @@ body {
   /* HEADINGS */
   h1 {
     --font-weight: 700;
-    color: inherit;
-    font-family: inherit;
-    font-size: 1.802em;
+    color: #d92926;
+    font-family: "Slasher Film", "Slasher Regular";
+    font-size: 1.75em;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
-    letter-spacing: -0.015em;
+    letter-spacing: 1.5px;
     line-height: 1.2;
     margin-block-end: 0rem;
     margin-block-start: 0rem;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
 
     font-size: 2rem;
   }
@@ -980,14 +982,14 @@ body {
   h2.page-title a,
   h2 {
     --font-weight: 600;
-    color: inherit;
-    font-family: inherit;
-    font-size: 1.602em;
+    color: #d92926;
+    font-family: "Slasher Film", "Slasher Regular";
+    font-size: 1.6em;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
-    letter-spacing: -0.015em;
-    line-height: 1.2;
+    letter-spacing: 1.5px;
+    line-height: 20px;
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     font-size: 1.75rem;
@@ -997,14 +999,14 @@ body {
   }
   h3 {
     --font-weight: 600;
-    color: inherit;
-    font-family: inherit;
-    font-size: 1.424em;
+    color: #d92926;
+    font-family: "Slasher Film", "Slasher Regular";
+    font-size: 1.45em;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
-    letter-spacing: -0.015em;
-    line-height: 1.3;
+    letter-spacing: 1.5px;
+    line-height: 20px;
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     font-size: 1.6rem;
@@ -1014,14 +1016,14 @@ body {
   }
   h4 {
     --font-weight: 600;
-    color: inherit;
-    font-family: inherit;
-    font-size: 1.266em;
+    color: #d92926;
+    font-family: "Slasher Film", "Slasher Regular";
+    font-size: 1.3em;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
-    letter-spacing: 0.015em;
-    line-height: 1.4;
+    letter-spacing: 1.5px;
+    line-height: 20px;
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     font-size: 1.4rem;
@@ -1031,14 +1033,14 @@ body {
   }
   h5 {
     --font-weight: 600;
-    color: inherit;
-    font-family: inherit;
-    font-size: 1.125em;
+    color: #d92926;
+    font-family: "Slasher Film", "Slasher Regular";
+    font-size: 1.15em;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
-    letter-spacing: 0.015em;
-    line-height: 1.5;
+    letter-spacing: 1.5px;
+    line-height: 20px;
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     font-size: 1.2rem;
@@ -1048,14 +1050,14 @@ body {
   }
   h6 {
     --font-weight: 600;
-    color: inherit;
-    font-family: inherit;
+    color: #d92926;
+    font-family: "Slasher Film", "Slasher Regular";
     font-size: 1em;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
-    letter-spacing: 0.015em;
-    line-height: 1.5;
+    letter-spacing: 1.5px;
+    line-height: 20px;
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     font-size: 1.1rem;
@@ -1199,14 +1201,14 @@ body {
   .backlinks {
     h3 {
       --font-weight: 600;
-      color: inherit;
-      font-family: inherit;
-      font-size: 1.424em;
+      color: #d92926;
+      font-family: "Slasher Film", "Slasher Regular";
+      font-size: 1.45em;
       font-style: normal;
       font-variant: normal;
       font-weight: 600;
-      letter-spacing: -0.015em;
-      line-height: 1.3;
+      letter-spacing: 1.5px;
+      line-height: 20px;
       margin-block-end: 0rem;
       margin-block-start: 0rem;
     }
@@ -1227,7 +1229,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: inherit;
+      color: #d92926;
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1345,23 +1347,23 @@ body {
   }
   /* TOC */
   .toc {
-    color: inherit;
+    color: #d92926;
     button.toc-header {
       h3 {
         --font-weight: 600;
-        color: inherit;
-        font-family: inherit;
-        font-size: 1.424em;
+        color: #d92926;
+        font-family: "Slasher Film", "Slasher Regular";
+        font-size: 1.45em;
         font-style: normal;
         font-variant: normal;
         font-weight: 600;
-        letter-spacing: -0.015em;
-        line-height: 1.3;
+        letter-spacing: 1.5px;
+        line-height: 20px;
         margin-block-end: 0rem;
         margin-block-start: 0rem;
         margin-block: 0;
       }
-      color: inherit;
+      color: #d92926;
       color: inherit;
     }
     ul.toc-content.overflow {
@@ -1380,14 +1382,14 @@ body {
   .toc {
     h3 {
       --font-weight: 600;
-      color: inherit;
-      font-family: inherit;
-      font-size: 1.424em;
+      color: #d92926;
+      font-family: "Slasher Film", "Slasher Regular";
+      font-size: 1.45em;
       font-style: normal;
       font-variant: normal;
       font-weight: 600;
-      letter-spacing: -0.015em;
-      line-height: 1.3;
+      letter-spacing: 1.5px;
+      line-height: 20px;
       margin-block-end: 0rem;
       margin-block-start: 0rem;
       min-height: calc(2 * var(--p-spacing) + var(--h3-line-height));

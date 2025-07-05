@@ -4,9 +4,9 @@ import {
   getCurrentFolder,
 } from "./util/util.mjs";
 
-export const testMode = false;
+export const testMode = true;
 export const staticMode = true;
-export const themeToTest = "AnuPpuccin";
+export const themeToTest = "Sanguine";
 
 export const themes = getValueFromDictionary(
   readJsonFileAsDictionary(getCurrentFolder(), "themes.json"),
@@ -31,11 +31,11 @@ export const usedRules = [
   "h5",
   "h6",
   // Code blocks
-  ".markdown-rendered pre",
-  ".markdown-rendered code",
-  ".markdown-rendered pre code",
-  ".markdown-rendered button.copy-code-button",
-  ".markdown-rendered button.copy-code-button:hover",
+  "pre",
+  "code",
+  "pre code",
+  "button.copy-code-button",
+  "button.copy-code-button:hover",
   // Callouts
   ".callout",
   ".callout-title",
@@ -83,7 +83,7 @@ export const usedRules = [
   "input.prompt-input",
   ".suggestion-item.is-selected",
   ".suggestion-highlight",
-  ".markdown-rendered mark",
+  "mark",
   "a.tag",
   'input[type="search"]',
   // Explorer

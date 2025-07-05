@@ -319,13 +319,12 @@ manifestCollection.forEach((manifest) => {
       : "light";
   console.log(`Processing theme: ${getTheme(manifest)} in ${mode} mode`);
   const themeNameLocal = getValueFromDictionary(manifest, "name");
-  console.log(`Processing theme: ${themeNameLocal}`);
   if (args[0] === "ATOMIZE" || testMode) {
     if (!testMode) {
       if (!fs.existsSync(`./converted_app.css`)) {
         const obsidianCSS = fs.readFileSync("./app.css", "utf8");
         const overridesCSS = fs.readFileSync("./overrides_app.css", "utf8");
-        const result = cleanCSS(obsidianCSS, overridesCSS, mode);
+        const result = cleanCSS(obsidianCSS, overridesCSS, mode, true);
         writePrettier(`./converted_app.css`, result, "utf8");
         // Static version
         writePrettier(

@@ -1,6 +1,6 @@
 import fs from "fs";
 import { applyRuleToString, ensureDirectoryExists } from "./util.mjs";
-import { getCombinedThemeVariables, combineIdenticalSelectors, removeEmptyRules, splitCombinedRules } from "./postcss.mjs";
+import { combineThemeVariables, getCombinedThemeVariables, combineIdenticalSelectors, removeEmptyRules, splitCombinedRules } from "./postcss.mjs";
 import { usedRules } from "./../config.mjs";
 import * as prettier from "prettier"
 
@@ -96,15 +96,28 @@ export async function prettierSCSS(scss) {
  * @param {string} base - The CSS string to process.
  * @param {string} inject - The CSS string to inject.
  * @param {string} [mode="both"] - The mode for processing CSS rules. Can be "dark", "light", or "both".
+ * @param {boolean} [extract=false] - Whether to extract the CSS rules per color mode.
  * @return {string} The processed CSS string with combined rules split.
  */
-export function cleanCSS(base, inject, mode = "both") {
+export function cleanCSS(base, inject, mode = "both", extract = false) {
   let result = `${base}\n${inject}`
+  const selectorsToRemove = [
+    ".markdown-rendered",
+    ".markdown-preview-view",
+  ];
   result = result.replace(/^@media screen and \(forced-colors: active\) \{.*?^\}$/gms, "") // Remove forced colors media queries
   result = result.replace(/^@container.*?^\}$/gms, "") // Remove container media queries
   result = result.replace(/^@scope.*?^\}$/gms, "") // Remove scope media queries
   result = result.replace(/^\.pdf-.*?\{.*?^\}/gms, "") // Remove PDF specific rules
   result = result.replace(/^\s*?color-scheme:\s*?(light|dark|normal);\s*?$/gms, "") // Remove color scheme rules
+  for (const selector of selectorsToRemove) {
+    const regex = new RegExp(`^\\s*?${selector}(?!\\s*?{)`, "gms");
+    result = result.replace(regex, ""); // Remove selectors that match the regex
+  }
+  if (extract) {
+    // Combine theme variables
+    result = combineThemeVariables(result);
+  }
   const colorVariables = getCombinedThemeVariables(result);
   // Append colorVariables to the end of `:root`
   const colorRootVariable = result.matchAll(/(^:root\s*?\{.*?^\}$)/gms);
@@ -191,22 +204,22 @@ export function writeIndex(themeName, themeCSS) {
   resultCSS = applyRuleToString(resultCSS, "h6", "//%%H6%%", themeCSS)
 
   // Code blocks
-  resultCSS = applyRuleToString(resultCSS, ".markdown-rendered pre", "//%%PRE%%", themeCSS)
+  resultCSS = applyRuleToString(resultCSS, "pre", "//%%PRE%%", themeCSS)
 
   // inline code
-  resultCSS = applyRuleToString(resultCSS, ".markdown-rendered code", "//%%CODE INLINE%%", themeCSS)
-  resultCSS = applyRuleToString(resultCSS, ".markdown-rendered pre code", "//%%CODE%%", themeCSS)
+  resultCSS = applyRuleToString(resultCSS, "code", "//%%CODE INLINE%%", themeCSS)
+  resultCSS = applyRuleToString(resultCSS, "pre code", "//%%CODE%%", themeCSS)
 
   // Code copy button
   resultCSS = applyRuleToString(
     resultCSS,
-    ".markdown-rendered button.copy-code-button",
+    "button.copy-code-button",
     "//%%CLIPBOARD BUTTON%%",
     themeCSS,
   )
   resultCSS = applyRuleToString(
     resultCSS,
-    ".markdown-rendered button.copy-code-button:hover",
+    "button.copy-code-button:hover",
     "//%%CLIPBOARD BUTTON HOVER%%",
     themeCSS,
   )
