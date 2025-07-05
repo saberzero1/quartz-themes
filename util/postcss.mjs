@@ -395,3 +395,66 @@ export function getCombinedThemeVariables(cssString, darkThemeSelector = ".theme
 
   return combinedVariablesString
 }
+
+/**
+ * Combine shared CSS custom properties into a single `light-dark` variable.
+ * This function processes the provided CSS string to extract and combine
+ * custom properties that are shared between light and dark themes.
+ * It identifies properties that are defined in both light and dark themes
+ * and combines them into a single variable for each property.
+ * This is done for each shared selector in the CSS string if a `.theme-light` and `.theme-dark` selector is present.
+ *
+ * @param {string} css - The CSS string to process.
+ * @return {string} The combined CSS custom properties as a string.
+ */
+export function combineThemeVariables(css) {
+  const darkThemeRules = getAllDarkThemeRules(css)
+  const lightThemeRules = getAllLightThemeRules(css)
+
+  // Combine the rules into a single pair for every color property that exists in both themes.
+  const combinedRules = {}
+  darkThemeRules.forEach((rule) => {
+    const [property, value] = rule.split(":").map((s) => s.trim())
+    if (property && value) {
+      combinedRules[property] = { dark: value, light: null }
+    }
+  })
+  lightThemeRules.forEach((rule) => {
+    const [property, value] = rule.split(":").map((s) => s.trim())
+    if (property && value) {
+      if (combinedRules[property]) {
+        combinedRules[property].light = value
+      } else {
+        combinedRules[property] = { dark: null, light: value }
+      }
+    }
+  })
+
+  // Create a new object to hold the combined variables
+  // We will use the `light-dark()` function to combine the variables
+  const combineLightDarkVariables = (rules, darkSelector, lightSelector) => {
+    const combinedVariables = {}
+
+    for (const [property, values] of Object.entries(rules)) {
+      if (values.dark && values.light) {
+        combinedVariables[property] = `light-dark(${values.light}, ${values.dark})`
+      } else if (values.dark) {
+        combinedVariables[property] = values.dark
+      } else if (values.light) {
+        combinedVariables[property] = values.light
+      }
+    }
+
+    // Convert the combined variables to a string
+    return Object.entries(combinedVariables)
+      .map(([key, value]) => `${darkSelector} ${key}: ${value};\n${lightSelector} ${key}: ${value};`)
+      .join("\n")
+  }
+
+  // Extract the combined theme variables
+  const properties = combineLightDarkVariables(combinedRules, ".theme-dark", ".theme-light")
+
+  // Turn the combined properties into a string
+  return properties ? `${css}\n\n:root,\nbody {\n${properties}\n}\n` : css
+
+}
