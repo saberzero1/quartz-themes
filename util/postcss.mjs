@@ -285,9 +285,11 @@ export function getAllDarkThemeRules(cssString) {
       // concat all declarations inside the rule
       const ruleString = rule.nodes
         .filter((node) => node.type === "decl")
-        .map((decl) => `${decl.prop}: ${decl.value}`)
-        .join(";\n")
-      darkThemeRules.push(ruleString)
+        .map((decl) => `${decl.prop}: ${decl.value};`)
+        .join("\n")
+      darkThemeRules.push(`:root {
+  ${ruleString}
+}\n`)
     }
     else if (rule.selector.includes(".theme-dark")) {
       const ruleString = rule.toString().split(".theme-dark").join("")
@@ -313,9 +315,11 @@ export function getAllLightThemeRules(cssString) {
       // concat all declarations inside the rule
       const ruleString = rule.nodes
         .filter((node) => node.type === "decl")
-        .map((decl) => `${decl.prop}: ${decl.value}`)
-        .join(";\n")
-      lightThemeRules.push(ruleString)
+        .map((decl) => `${decl.prop}: ${decl.value};`)
+        .join("\n")
+      lightThemeRules.push(`:root {
+  ${ruleString}
+}\n`)
     } else if (rule.selector.includes(".theme-light")) {
       const ruleString = rule.toString().split(".theme-light").join("")
       lightThemeRules.push(ruleString)
@@ -411,50 +415,45 @@ export function combineThemeVariables(css) {
   const darkThemeRules = getAllDarkThemeRules(css)
   const lightThemeRules = getAllLightThemeRules(css)
 
+  const splitDarkThemeRules = darkThemeRules.map(item => [item.split("{")[0].trim(), item.split("{")[1].replace("}", "").trim().split(/(?<=;)\n/).map(decl => decl.trim()).map(decl => decl.split(":").map(part => part.trim()))])
+  const splitLightThemeRules = lightThemeRules.map(item => [item.split("{")[0].trim(), item.split("{")[1].replace("}", "").trim().split(/(?<=;)\n/).map(decl => decl.trim()).map(decl => decl.split(":").map(part => part.trim()))])
+
+  const splitDarkThemeMap = new Map(splitDarkThemeRules)
+  const splitLightThemeMap = new Map(splitLightThemeRules)
+
+  console.log("Dark theme rules:", splitDarkThemeMap)
+  console.log("Light theme rules:", splitLightThemeMap)
+
   // Combine the rules into a single pair for every color property that exists in both themes.
-  const combinedRules = {}
-  darkThemeRules.forEach((rule) => {
-    const [property, value] = rule.split(":").map((s) => s.trim())
-    if (property && value) {
-      combinedRules[property] = { dark: value, light: null }
-    }
-  })
-  lightThemeRules.forEach((rule) => {
-    const [property, value] = rule.split(":").map((s) => s.trim())
-    if (property && value) {
-      if (combinedRules[property]) {
-        combinedRules[property].light = value
-      } else {
-        combinedRules[property] = { dark: null, light: value }
+  let result = "" 
+
+  for (const [selector, darkDeclarations] of splitDarkThemeMap) {
+    if (splitLightThemeMap.has(selector)) {
+      const lightDeclarations = splitLightThemeMap.get(selector)
+      const combinedDeclarations = []
+
+      // Combine declarations from both themes
+      for (const [prop, darkValue] of darkDeclarations) {
+        const lightValue = lightDeclarations.find(([lightProp]) => lightProp === prop)?.[1]
+        if (lightValue !== undefined && darkValue !== undefined && lightValue !== darkValue) {
+          // If both values exist, and they are not identical, combine them using the `light-dark()` function
+          combinedDeclarations.push([prop, `light-dark(${lightValue.endsWith(";") ? lightValue.slice(0, -1) : lightValue}, ${darkValue.endsWith(";") ? darkValue.slice(0, -1) : darkValue})`])
+        }
+      }
+      // Add the combined declarations to the result
+      if (combinedDeclarations.length > 0) {
+        result += `${selector} {\n`
+        combinedDeclarations.forEach(([prop, value]) => {
+          result += `  ${prop}: ${value};\n`
+        })
+        result += `}\n\n`
       }
     }
-  })
-
-  // Create a new object to hold the combined variables
-  // We will use the `light-dark()` function to combine the variables
-  const combineLightDarkVariables = (rules, darkSelector, lightSelector) => {
-    const combinedVariables = {}
-
-    for (const [property, values] of Object.entries(rules)) {
-      if (values.dark && values.light) {
-        combinedVariables[property] = `light-dark(${values.light}, ${values.dark})`
-      } else if (values.dark) {
-        combinedVariables[property] = values.dark
-      } else if (values.light) {
-        combinedVariables[property] = values.light
-      }
-    }
-
-    // Convert the combined variables to a string
-    return Object.entries(combinedVariables)
-      .map(([key, value]) => `${darkSelector} ${key}: ${value};\n${lightSelector} ${key}: ${value};`)
-      .join("\n")
   }
 
-  // Extract the combined theme variables
-  const properties = combineLightDarkVariables(combinedRules, ".theme-dark", ".theme-light")
+  console.log("Combined theme variables:", result)
 
   // Turn the combined properties into a string
-  return properties ? `${css}\n\n:root,\nbody {\n${properties}\n}\n` : css
+  return result !== "" ? `${css}\n\n${result}\n\n` : css
 
 }
