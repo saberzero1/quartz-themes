@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-and-test:
-    if: ${{ github.repository == 'saberzero1/quartz-themes' && (github.event_name != 'workflow_dispatch' || github.event.workflow_run.head_commit.message == 'FULL RECOMPILE') }}
+    if: ${{ github.repository == 'saberzero1/quartz-themes' && github.event_name != 'workflow_dispatch' && github.event.workflow_run.head_commit.message != 'FULL RECOMPILE' }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -37,7 +37,7 @@ jobs:
           git push
 
   full-rebuild:
-    if: ${{ github.repository == 'saberzero1/quartz-themes' && github.event_name == 'workflow_dispatch' }}
+    if: ${{ github.repository == 'saberzero1/quartz-themes' && (github.event_name == 'workflow_dispatch' || github.event.workflow_run.head_commit.message != 'FULL RECOMPILE') }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
