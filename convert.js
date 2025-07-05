@@ -339,7 +339,12 @@ manifestCollection.forEach((manifest) => {
         const staticExctractResult = extractCSS(
           generateStatic(cssAtomicString, themeNameLocal),
         );
-        writePrettier(`./converted_app_extracted.css`, extractResult, "utf8", false);
+        writePrettier(
+          `./converted_app_extracted.css`,
+          extractResult,
+          "utf8",
+          false,
+        );
         writePrettier(
           `./static_converted_app_extracted.css`,
           staticExctractResult,
