@@ -114,10 +114,6 @@ export function cleanCSS(base, inject, mode = "both", extract = false) {
     const regex = new RegExp(`^\\s*?${selector}(?!\\s*?{)`, "gms");
     result = result.replace(regex, ""); // Remove selectors that match the regex
   }
-  if (extract) {
-    // Combine theme variables
-    result = combineThemeVariables(result);
-  }
   const colorVariables = getCombinedThemeVariables(result);
   // Append colorVariables to the end of `:root`
   const colorRootVariable = result.matchAll(/(^:root\s*?\{.*?^\}$)/gms);
@@ -136,6 +132,11 @@ export function cleanCSS(base, inject, mode = "both", extract = false) {
   result = removeEmptyRules(result)
   result = result.replace(/\n+/g, "\n") // Remove extra newlines
   result = result.replace(/^\}$/gm, "}\n") // Add extra newlines between rules
+  if (extract) {
+    // Combine theme variables
+    result = combineThemeVariables(result);
+    cleanCSS(result, "", mode, false); // Recursively clean the CSS
+  }
   return result;
 }
 
