@@ -40,7 +40,15 @@ export async function writePrettier(file, content, encoding = "utf8") {
       content = prettierSCSS(content);
     }
   }*/
-  fs.writeFileSync(file, cleanup(content), encoding);
+  let compare = content
+  content = cleanup(content)
+
+  while (compare !== content) {
+    compare = content;
+    content = cleanup(content)
+  }
+
+  fs.writeFileSync(file, content, encoding);
 }
 
 /**
