@@ -1,0 +1,36 @@
+body.no-wrapped-dvtable-cell .dataview.table-view-table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+body.no-wrapped-dvtable-cell .dataview.table-view-table :is(th, td) {
+  white-space: nowrap;
+  overflow-x: auto;
+  text-overflow: ellipsis;
+}
+
+body.no-wrapped-dvtable-cell .dataview.table-view-table :is(th, td):hover {
+  text-overflow: clip;
+}
+
+body.no-wrapped-dvtable .block-language-dataview {
+  width: 100%;
+  margin: 0;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+body.no-wrapped-dvtable table.dataview th {
+  padding: 0 20px;
+  font-size: 1em;
+}
+
+body.no-wrapped-dvtable table.dataview tbody tr td:first-child {
+  font-size: 0.9em;
+}
+
+body.no-wrapped-dvtable table.dataview td:not(:first-child),
+body.no-wrapped-dvtable table.dataview tr > td:last-of-type {
+  font-size: 0.9em;
+  max-width: unset;
+}

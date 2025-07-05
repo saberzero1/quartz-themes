@@ -1,0 +1,13 @@
+:is(.markdown-preview-view, .is-live-preview) h6[data-heading],
+:is(.markdown-preview-view, .is-live-preview) .HyperMD-header-6,
+:is(.markdown-preview-view, .is-live-preview) h6[data-heading],
+:is(.markdown-preview-view, .is-live-preview) .HyperMD-header-6 {
+  --h6-background: var(--background);
+  --h6-color: var(--illusion-header-text);
+  --h6-padding: var(--illusion-header-padding);
+  --h6-border-line-height: var(--illusion-border-line-height);
+  --h6-shadow: var(--illusion-box-shadow);
+  --header-arrow-icon-size: var(--illusion-header-arrow-icon-size);
+  --header-arrow-icon-color: var(--illusion-header-text);
+  --collapse-icon-color-collapsed: var(--accent-text);
+}

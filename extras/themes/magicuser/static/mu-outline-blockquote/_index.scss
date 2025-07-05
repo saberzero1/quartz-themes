@@ -1,0 +1,20 @@
+body.mu-outline-blockquote .markdown-reading-view div > blockquote {
+  outline: 1px solid var(--mu-blockquote-border);
+}
+
+body.mu-outline-blockquote .cm-line:not(.HyperMD-quote) + .HyperMD-quote {
+  border-top: 1px solid var(--mu-blockquote-border);
+  border-right: 1px solid var(--mu-blockquote-border);
+  border-left: 1px solid var(--mu-blockquote-border);
+}
+
+body.mu-outline-blockquote .HyperMD-quote + .HyperMD-quote {
+  border-right: 1px solid var(--mu-blockquote-border);
+  border-left: 1px solid var(--mu-blockquote-border);
+  border-top: 0;
+  border-bottom: 0;
+}
+
+body.mu-outline-blockquote .HyperMD-quote + .cm-line:not(.HyperMD-quote) {
+  border-top: 1px solid var(--mu-blockquote-border) !important;
+}

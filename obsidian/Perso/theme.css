@@ -24,7 +24,12 @@
   --link-external-decoration-hover: underline;
 
   --text-highlight-bg: rgba(255, 242, 0, 0.848); /*Search Matches*/
-  --text-highlight-bg-active: rgba(255, 128, 0, 0.4); /*Active Search Match (Preview Mode)*/
+  --text-highlight-bg-active: rgba(
+    255,
+    128,
+    0,
+    0.4
+  ); /*Active Search Match (Preview Mode)*/
   --text-selection: rgba(255, 223, 106, 0.99); /*Text Selections*/
 
   --interactive-normal: #f2f3f5; /*Button background Color*/

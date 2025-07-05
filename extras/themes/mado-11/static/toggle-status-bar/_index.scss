@@ -1,0 +1,18 @@
+body:is(:not(.css-settings-manager), .toggle-status-bar) .status-bar {
+  bottom: -50px;
+}
+
+body.toggle-sync-button.toggle-status-bar .status-bar-item.plugin-sync {
+  bottom: 54px;
+  right: 5px;
+  position: absolute;
+  padding: var(--button-padding-icon);
+}
+
+body.toggle-sync-button.toggle-status-bar .status-bar-item.plugin-sync:hover {
+  filter: brightness(0.8);
+}
+
+body.toggle-sync-button.toggle-status-bar .status-bar-item .svg-icon {
+  --icon-size: var(--icon-l);
+}

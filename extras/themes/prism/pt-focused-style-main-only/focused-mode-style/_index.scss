@@ -1,0 +1,46 @@
+body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window)
+  .status-bar,
+body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window)
+  .workspace-ribbon,
+body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window)
+  .view-header,
+body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window)
+  .workspace-split.mod-root
+  .workspace-tab-header-container,
+body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window)
+  .workspace-split.mod-horizontal.mod-left-split,
+body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window)
+  .workspace-split.mod-horizontal.mod-right-split,
+body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window)
+  .workspace-ribbon.mod-left.is-collapsed,
+body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window)
+  .workspace-ribbon.mod-right.is-collapsed,
+body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window)
+  .mobile-navbar {
+  opacity: var(--fade-away-opacity);
+  transition: opacity 250ms;
+  transition-delay: var(--fade-away-delay);
+}
+
+body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window)
+  .status-bar:hover,
+body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window)
+  .workspace-ribbon:hover,
+body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window)
+  .view-header:hover,
+body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window)
+  .workspace-split.mod-root
+  .workspace-tab-header-container:hover,
+body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window)
+  .workspace-split.mod-horizontal.mod-left-split:hover,
+body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window)
+  .workspace-split.mod-horizontal.mod-right-split:hover,
+body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window)
+  .workspace-ribbon.mod-left.is-collapsed:hover,
+body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window)
+  .workspace-ribbon.mod-right.is-collapsed:hover,
+body.pt-focused-mode.pt-focused-style-main-only:not(.is-popout-window)
+  .mobile-navbar:hover {
+  opacity: unset;
+  transition: opacity 50ms;
+}

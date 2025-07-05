@@ -1,0 +1,6 @@
+body:not(.is-mobile):is(:not(.css-settings-manager), )
+  .workspace-split.mod-horizontal:is(.mod-left-split, .mod-right-split)
+  .workspace-tab-header-container-inner {
+  opacity: 0;
+  transition: opacity 0.15s;
+}

@@ -1,0 +1,7 @@
+body.fancy-mermaid .edgeLabel:not(:empty) {
+  background-color: var(--background-primary);
+  color: var(--text-normal);
+  border: 1px solid var(--divider-color);
+  border-radius: var(--radius-m);
+  padding: 2px;
+}

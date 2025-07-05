@@ -1,0 +1,19 @@
+.theme-rounded
+  .workspace
+  .mod-root
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner {
+  background: var(--background-primary) !important;
+  margin-right: 5px;
+  border-radius: 7px;
+  z-index: 2;
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.08) !important;
+}
+.theme-rounded
+  .workspace
+  .mod-root
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-title {
+  color: var(--text-normal) !important;
+  font-weight: 400 !important;
+}

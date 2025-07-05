@@ -1,0 +1,18 @@
+.simple-border .markdown-rendered mark {
+  border-radius: 4px;
+}
+
+.simple-border
+  a:is(
+    [href="#red"],
+    [href="#rot"],
+    [href="#green"],
+    [href="#grün"],
+    [href="#blue"],
+    [href="#blau"],
+    [href="#gray"],
+    [href="#grau"]
+  )
+  + mark {
+  border-radius: 4px;
+}

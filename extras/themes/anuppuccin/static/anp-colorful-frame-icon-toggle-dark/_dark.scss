@@ -1,0 +1,63 @@
+body.theme-dark {
+  --colorful-icon-color: var(--text-normal);
+  --colorful-icon-color-alt: var(--text-muted);
+}
+
+.anp-colorful-frame:not(.anp-card-layout, .anp-border-layout).theme-dark
+  .mod-left-split
+  .mod-top
+  .workspace-tab-header.is-active,
+.anp-colorful-frame:not(.anp-card-layout, .anp-border-layout).theme-dark
+  .mod-right-split
+  .mod-top
+  .workspace-tab-header.is-active {
+  background-color: rgba(var(--ctp-text), 0.3);
+}
+
+.anp-colorful-frame.anp-card-layout:not(.anp-card-layout-filebrowser).theme-dark
+  .workspace-leaf-content[data-type="file-explorer"] {
+  --tab-text-color: var(--text-normal);
+  --tab-text-color-focused: var(--text-normal);
+  --tab-text-color-focused-active: var(--text-normal);
+  --tab-text-color-focused-highlighted: var(--text-normal);
+  --tab-text-color-focused-active-current: var(--text-normal);
+  --icon-color: var(--text-normal);
+  --icon-color-hover: var(--text-normal);
+  --icon-color-active: var(--text-normal);
+  --icon-color-focused: var(--text-normal);
+}
+
+.anp-colorful-frame.anp-card-layout.theme-dark {
+  --tab-text-color: var(--text-faint);
+  --tab-text-color-active: var(--text-muted);
+  --tab-text-color-focused: var(--text-muted);
+  --tab-text-color-focused-active: var(--text-muted);
+  --tab-text-color-focused-highlighted: var(--text-accent);
+  --tab-text-color-focused-active-current: var(--text-normal);
+  --icon-color: var(--text-muted);
+  --icon-color-hover: var(--text-muted);
+  --icon-color-active: var(--text-accent);
+  --icon-color-focused: var(--text-normal);
+}
+
+.anp-colorful-frame.anp-card-layout.is-focused.theme-dark
+  .mod-left-split
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon,
+.anp-colorful-frame.anp-card-layout.is-focused.theme-dark
+  .mod-right-split
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon {
+  color: var(--text-normal);
+}
+
+.anp-colorful-frame.anp-card-layout.theme-dark
+  .mod-right-split
+  .workspace-tab-header.is-active,
+.anp-colorful-frame.anp-card-layout.theme-dark
+  .mod-left-split
+  .workspace-tab-header.is-active {
+  background-color: rgba(var(--ctp-text), 0.3);
+}

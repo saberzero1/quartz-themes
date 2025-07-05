@@ -1,0 +1,10 @@
+body.center-table-header
+  .markdown-source-view.is-live-preview
+  .cm-table-widget
+  .table-wrapper:has(> table)
+  table
+  th,
+body.center-table-header .markdown-rendered div:has(> table) table th,
+body.center-table-header .style-settings-container div:has(> table) table th {
+  text-align: center;
+}

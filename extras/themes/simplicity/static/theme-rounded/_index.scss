@@ -1,0 +1,58 @@
+.theme-rounded .workspace-tab-header-container {
+  border-bottom: none !important;
+}
+
+.theme-rounded .workspace .mod-root .workspace-tab-header::after,
+.theme-rounded .workspace-split.mod-root .workspace-tab-header::before,
+.theme-rounded .workspace .mod-root .workspace-tab-header-inner::after {
+  display: none;
+}
+
+.theme-rounded
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-title,
+.theme-rounded .workspace-tab-header .workspace-tab-header-inner-title:hover {
+  color: var(--color-accent) !important;
+}
+
+.theme-rounded .workspace-tab-container {
+  border-radius: 30px;
+  border-top: 13px solid transparent !important;
+  border-right: 13px solid transparent !important;
+  border-bottom: 18px solid transparent !important;
+  border-left: 13px solid transparent !important;
+}
+
+.theme-rounded .mod-root .mod-stacked .workspace-tab-header {
+  border-radius: 20px 0px 0px 20px !important;
+}
+
+.theme-rounded .workspace-leaf-resize-handle {
+  border-color: transparent !important;
+}
+
+.nav-1 .nav-file-title {
+  border-top: 1px solid
+    hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.2);
+}
+
+.other-active-tab.theme-rounded
+  .workspace
+  .mod-root
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner {
+  background: var(--background-primary) !important;
+  margin-right: 5px;
+  border-radius: 7px;
+  z-index: 2;
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.08) !important;
+}
+
+.other-active-tab.theme-rounded
+  .workspace
+  .mod-root
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-title {
+  color: var(--text-normal) !important;
+  font-weight: 400 !important;
+}

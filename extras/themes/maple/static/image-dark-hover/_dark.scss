@@ -1,0 +1,8 @@
+body.image-dark-hover img {
+  filter: brightness(0.7);
+  transition: var(--animation);
+}
+
+body.image-dark-hover img:hover {
+  filter: brightness(0.85);
+}

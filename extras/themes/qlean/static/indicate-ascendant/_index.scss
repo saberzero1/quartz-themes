@@ -1,0 +1,7 @@
+body.indicate-ascendant
+  .tree-item:has(.tree-item-self:hover):not(.mod-root)
+  > .tree-item-self:not(.is-active) {
+  background-color: var(--nav-item-background-hover);
+  border-radius: 0.125em;
+  opacity: 0.8;
+}

@@ -1,0 +1,27 @@
+:root,
+body {
+  --high: #cccc00;
+  --low: #4c4e52;
+  --text-normal: var(--high);
+  --text-faint: var(--high);
+  --text-muted: var(--high);
+  --background-primary: black;
+  --background-primary-alt: var(--low);
+  --background-secondary: black;
+  --background-secondary-alt: black;
+  --background-modifier-border: var(--high);
+  --text-on-accent: black;
+  --color-base-30: var(--low);
+  --color-base-35: var(--high);
+  --color-red: var(--high);
+  --color-orange: var(--high);
+  --color-yellow-light: var(--high);
+  --color-yellow-dark: var(--high);
+  --color-green: var(--high);
+  --color-purple: var(--high);
+  --color-sea-green: var(--high);
+  --color-cyan: var(--high);
+  --color-frost: var(--high);
+  --color-blue: var(--high);
+  --color-salmon: var(--high);
+}

@@ -34,7 +34,9 @@
   --black: #000000;
 
   /* Background Colors */
-  --background-primary: var(--green-deep); /* Background of Edit/Preview Windows, and Graph. */
+  --background-primary: var(
+    --green-deep
+  ); /* Background of Edit/Preview Windows, and Graph. */
   --background-primary-alt: var(
     --silver-deep
   ); /* The divider between all windows, the title bar of the active note, background of the graph options, background of code blocks */
@@ -49,7 +51,9 @@
   --text-accent: var(
     --brass-light
   ); /* Text color for links and tags - includes links in the settings */
-  --text-accent-hover: var(--brass-base); /* Text color when you mouseover/hover links and tags */
+  --text-accent-hover: var(
+    --brass-base
+  ); /* Text color when you mouseover/hover links and tags */
   --text-normal: var(
     --silver-light
   ); /* The default text color in the editor/preview, and the text color of the selected file in the File Explorer */
@@ -60,9 +64,19 @@
   --text-faint: #666; /* Text color for items checked off of a todo list */
   --text-error: #ff3333; /* Error text color, as seen in Settings -> About -> Hardware Acceleration. Do not recommend changing. */
   --text-error-hover: #990000; /* Unknown */
-  --text-highlight-bg: rgba(139, 128, 108, 0.4); /* Highlighted text background color. "Mark" == */
+  --text-highlight-bg: rgba(
+    139,
+    128,
+    108,
+    0.4
+  ); /* Highlighted text background color. "Mark" == */
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4); /* Unknown */
-  --text-selection: rgba(63, 54, 36, 0.99); /* Background color when you select a bunch of text */
+  --text-selection: rgba(
+    63,
+    54,
+    36,
+    0.99
+  ); /* Background color when you select a bunch of text */
   --text-on-accent: var(
     --silver-light
   ); /* Text and icon color on the top/title bar. Text color on buttons in settings. */
@@ -104,7 +118,8 @@
   --interactive-accent: var(
     --green-dark
   ); /* The background color for the notification pop-up when clicking the "copy" button on a code block. Background color for buttons in settings. Border color for selective/active drop down menus and text fields. Background of selected theme when managing themes. Color of bar underlining active window. */
-  --interactive-accent-rgb: 97, 97, 97; /* The color of the divider between windows when you mouse over them to resize them. */
+  --interactive-accent-rgb:
+    97, 97, 97; /* The color of the divider between windows when you mouse over them to resize them. */
   --interactive-accent-hover: var(
     --green-deep
   ); /* Background text when mousing over buttons in settings */
@@ -121,7 +136,12 @@
     237,
     0.05
   ); /* Background color of the entire scroll bar. Incredibly faint. */
-  --scrollbar-thumb-bg: rgba(238, 237, 237, 0.1); /* The color of the scroll bar position marker. */
+  --scrollbar-thumb-bg: rgba(
+    238,
+    237,
+    237,
+    0.1
+  ); /* The color of the scroll bar position marker. */
   --highlight-mix-blend-mode: lighten;
 }
 

@@ -1,0 +1,4 @@
+html .mod-windows.disableRightTitlebarOffset .mod-right-split,
+html .mod-linux.disableRightTitlebarOffset .mod-right-split {
+  --frame-right-space: 0px;
+}

@@ -1,0 +1,18 @@
+.anp-kanban-search-full .kanban-plugin__search-wrapper {
+  padding: 10px;
+}
+
+.anp-kanban-search-full
+  .kanban-plugin__search-wrapper
+  .kanban-plugin__filter-input {
+  flex: 1;
+}
+
+.anp-kanban-search-full .kanban-plugin__search-wrapper .clickable-icon {
+  position: absolute;
+  right: calc(1em - 2px);
+}
+
+.anp-kanban-search-full .kanban-plugin__search-wrapper .kanban-plugin__icon {
+  display: flex;
+}

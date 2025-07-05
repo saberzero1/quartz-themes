@@ -1,0 +1,22 @@
+.horizontal-tab-content,
+.horizontal-tab-nav-item,
+.modal.mod-settings .vertical-tab-content-container,
+.vertical-tab-content,
+.vertical-tab-header,
+.vertical-tab-nav-item {
+  background-color: var(--background-secondary-translucent) !important;
+}
+.modal-bg,
+.modal.mod-settings {
+  background-color: var(--background-secondary-translucent) !important;
+  backdrop-filter: blur(0) !important;
+}
+.modal,
+.modal.mod-settings,
+.vertical-tab-content {
+  background-color: transparent !important;
+}
+.vertical-tab-nav-item.is-active {
+  color: var(--text-normal) !important;
+  font-weight: bolder;
+}

@@ -1,0 +1,11 @@
+.immersive-canvas .canvas-card-menu,
+.immersive-canvas .canvas-controls {
+  opacity: 0;
+  transition: opacity var(--anim-out);
+}
+
+.immersive-canvas .canvas-card-menu:hover,
+.immersive-canvas .canvas-controls:hover {
+  opacity: 1;
+  transition: opacity var(--anim-in);
+}

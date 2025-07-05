@@ -1,0 +1,233 @@
+.lightPalette-beige.darkPalette-default.accentColor-darkMode-shade,
+.lightPalette-lightBeige.darkPalette-default.accentColor-darkMode-shade,
+.darkPalette-beige.accentColor-darkMode-shade {
+  --accent-h: 37 !important;
+  --accent-s: 92% !important;
+  --accent-l: 30% !important;
+  --color-accent-1: #e39109 !important;
+  --color-accent-2: #915d06 !important;
+  --color-accent-3: #503303 !important;
+  --OT-color-on-accent-2: #fbd79b !important;
+  --OT-color-muted-on-accent-1: #915d06 !important;
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 17%);
+}
+.lightPalette-blue.darkPalette-default.accentColor-darkMode-shade,
+.darkPalette-blue.accentColor-darkMode-shade {
+  --accent-h: 210 !important;
+  --accent-s: 93% !important;
+  --accent-l: 38% !important;
+  --color-accent-1: #419cf8 !important;
+  --color-accent-2: #0872dc !important;
+  --color-accent-3: #06509a !important;
+  --OT-color-muted-on-accent-1: #021d38 !important;
+  --OT-color-on-accent-1: #e5f1fe !important;
+  --OT-color-on-accent-2: #e5f1fe !important;
+  --OT-color-on-accent-3: #b4d8fc !important;
+  /*    --OT-view-header-title-no-focus-color:    #0761BB; */
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 18%);
+}
+.lightPalette-Brown.darkPalette-default.accentColor-darkMode-shade,
+.darkPalette-brown.accentColor-darkMode-shade {
+  --accent-h: 28 !important;
+  --accent-s: 80% !important;
+  --accent-l: 20% !important;
+  --color-accent-1: #e67819 !important;
+  --color-accent-2: #8a480f !important;
+  --color-accent-3: #5c300a !important;
+  /*    --OT-color-on-accent-1:            #E39451    !important; */
+  --OT-color-muted-on-accent-1: #5c300a !important;
+  /*    --OT-color-on-accent-2:            #fff    !important; */
+  /*    --OT-color-on-accent-3:            #fff    !important; */
+}
+.lightPalette-OBSIDIAN.darkPalette-default.accentColor-darkMode-shade,
+.lightPalette-artDeco.darkPalette-default.accentColor-darkMode-shade,
+.darkPalette-OBSIDIAN.accentColor-darkMode-shade,
+.darkPalette-black.accentColor-darkMode-shade {
+  --accent-h: 254 !important;
+  --accent-s: 80% !important;
+  --accent-l: 68% !important;
+  --color-accent-1: #a38bf2 !important;
+  --color-accent-2: var(--obsidian-violet) !important;
+  --color-accent-3: #4216ce !important;
+  --OT-color-on-accent-1: white !important;
+  --OT-color-on-accent-2: white !important;
+  --OT-color-muted-on-accent-1: #4e1fe7 !important;
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 45%);
+}
+.lightPalette-green.darkPalette-default.accentColor-darkMode-shade,
+.darkPalette-green.accentColor-darkMode-shade {
+  --accent-h: 141 !important;
+  --accent-s: 70% !important;
+  --accent-l: 30% !important;
+  --color-accent-1: #24ca5d !important;
+  --color-accent-2: #17823c !important;
+  --color-accent-3: #0f5728 !important;
+  --OT-color-muted-on-accent-1: #12652f !important;
+  --OT-color-on-accent-2: #9aedb7 !important;
+}
+.lightPalette-icy.darkPalette-default.accentColor-darkMode-shade,
+.darkPalette-icy.accentColor-darkMode-shade {
+  --accent-h: 214 !important;
+  --accent-s: 80% !important;
+  --accent-l: 30% !important;
+  --color-accent-1: #1662c7 !important;
+  --color-accent-2: #0c356b !important;
+  --color-accent-3: #0f448a !important;
+  --OT-color-on-accent-1: white;
+  --OT-color-muted-on-accent-1: #a3c6f5 !important;
+  /*    --OT-view-header-title-focus-color:    #85B4F1; */
+  --OT-view-header-title-no-focus-color: #297be7;
+  --OT-button-ON-bg: var(--color-accent-1);
+  --OT-button-cta-background-normal: #5697ed;
+  --OT-button-cta-text-normal: #08264d;
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 30%);
+}
+.darkPalette-LYT.accentColor-darkMode-shade {
+  --accent-h: 264 !important;
+  --accent-s: 46% !important;
+  --accent-l: 61% !important;
+  --OT-color-on-accent-1: var(--color-base-05);
+  --OT-color-on-accent-2: var(--color-base-05);
+  --OT-button-ON-bg: var(--color-accent-2);
+}
+.lightPalette-metallicBlue.darkPalette-default.accentColor-darkMode-shade,
+.darkPalette-metallicBlue.accentColor-darkMode-shade {
+  --accent-h: 206 !important;
+  --accent-s: 57% !important;
+  --accent-l: 40% !important;
+  --color-accent-1: #3586c0 !important;
+  --color-accent-2: #1f4e70 !important;
+  --color-accent-3: #1b4563 !important;
+  --OT-color-on-accent-1: #c2dcee !important;
+  --OT-color-muted-on-accent-1: #0d202d !important;
+  --OT-button-ON-bg: var(--color-accent-1);
+  --OT-button-cta-background-normal: #2e73a5;
+  --OT-button-cta-text-normal: #091620;
+  --OT-view-header-title-no-focus-color: #83888d;
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 50%);
+}
+.lightPalette-paradiso.darkPalette-default.accentColor-darkMode-shade,
+.lightPalette-pistachio.darkPalette-default.accentColor-darkMode-shade,
+.darkPalette-oliveGreen.accentColor-darkMode-shade {
+  --accent-h: 62 !important;
+  --accent-s: 50% !important;
+  --accent-l: 35% !important;
+  --color-accent-1: #b5b93e !important;
+  --color-accent-2: #6d6f36 !important;
+  --color-accent-3: #777929 !important;
+  --OT-color-on-accent-1: #1e1f0f !important;
+  --OT-color-muted-on-accent-1: #57582b !important;
+  --OT-color-on-accent-2: #f8f9ec !important;
+  /*    --OT-color-on-accent-3:                    #fff    !important; */
+  --OT-button-ON-bg: var(--color-accent-1);
+  --OT-button-cta-background-normal: #adb05b;
+  --OT-view-header-title-no-focus-color: #9c9f36;
+}
+.lightPalette-parchment.darkPalette-default.accentColor-darkMode-shade,
+.darkPalette-parchment.accentColor-darkMode-shade {
+  --accent-h: 31 !important;
+  --accent-s: 70% !important;
+  --accent-l: 20% !important;
+  --color-accent-1: #da8226 !important;
+  --color-accent-2: #bc7120 !important;
+  --color-accent-3: #915719 !important;
+  --OT-color-on-accent-1: #f8e6d3;
+  --OT-color-muted-on-accent-1: #57340f !important;
+  --OT-color-on-accent-2: #faeee2 !important;
+  /*    --OT-color-on-accent-3:            #fff    !important; */
+  --OT-button-ON-bg: var(--color-accent-1);
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 10%);
+}
+.lightPalette-red.darkPalette-default.accentColor-darkMode-shade,
+.darkPalette-red.accentColor-darkMode-shade {
+  --accent-h: 350 !important;
+  --accent-s: 92% !important;
+  --accent-l: 36% !important;
+  --color-accent-1: #e1092e !important;
+  --color-accent-2: #b00724 !important;
+  --color-accent-3: #651220 !important;
+  --OT-color-on-accent-1: #fddae0 !important;
+  --OT-color-muted-on-accent-1: #4e0310 !important;
+  --OT-color-on-accent-2: #fedae0 !important;
+  --OT-color-on-accent-3: #fb99aa !important;
+  --OT-view-header-title-no-focus-color: #821729;
+  --OT-button-OFF-bg: #660415;
+}
+.lightPalette-solarized.darkPalette-default.accentColor-darkMode-shade,
+.darkPalette-solarized.accentColor-darkMode-shade {
+  --accent-h: 180 !important;
+  --accent-s: 7% !important;
+  --accent-l: 45% !important;
+  --color-accent-1: var(--solarized-base0) !important;
+  --color-accent-2: var(--solarized-base00) !important;
+  --color-accent-3: var(--solarized-base02) !important;
+  --OT-color-on-accent-1: var(--solarized-base2) !important;
+  --OT-color-muted-on-accent-1: var(--solarized-base02) !important;
+  --OT-color-on-accent-2: var(--solarized-base03) !important;
+  --OT-color-on-accent-3: var(--solarized-base2) !important;
+  --OT-button-cta-text-normal: var(--solarized-base03);
+  --OT-button-ON-bg: var(--color-accent-1);
+}
+.lightPalette-stone.darkPalette-default.accentColor-darkMode-shade,
+.darkPalette-stone.accentColor-darkMode-shade {
+  --accent-h: 30 !important;
+  --accent-s: 6% !important;
+  --accent-l: 50% !important;
+  --color-accent-1: #b5aea8 !important;
+  --color-accent-2: #615952 !important;
+  --color-accent-3: #58514a !important;
+  --OT-color-on-accent-1: #211e1b !important;
+  --OT-color-muted-on-accent-1: #58514a !important;
+  --OT-color-on-accent-2: #e3e1e0 !important;
+  --OT-color-on-accent-3: #e3e1e0 !important;
+  --OT-button-cta-background-normal: #8e847a;
+  --OT-button-ON-bg: #7d7369;
+}
+.lightPalette-Victorian-1.darkPalette-default.accentColor-darkMode-shade,
+.darkPalette-victorian.accentColor-darkMode-shade {
+  --accent-h: 132 !important;
+  --accent-s: 100% !important;
+  --accent-l: 30% !important;
+  --color-accent-1: #00dd2d !important;
+  --color-accent-2: #009920 !important;
+  --color-accent-3: #00881c !important;
+  --OT-color-on-accent-1: #00330a !important;
+  --OT-color-muted-on-accent-1: #007718 !important;
+  /*    --OT-color-on-accent-2:                #fff    !important; */
+  /*    --OT-color-on-accent-3:                #fff    !important; */
+  --OT-button-ON-bg: var(--color-accent-1);
+  --OT-button-cta-background-normal: #00bb26;
+}
+.lightPalette-violet.darkPalette-default.accentColor-darkMode-shade,
+.darkPalette-violet.accentColor-darkMode-shade {
+  --accent-h: 264 !important;
+  --accent-s: 40% !important;
+  --accent-l: 40% !important;
+  --color-accent-1: #ac94d1 !important;
+  --color-accent-2: #5e3d8f !important;
+  --color-accent-3: #4e3377 !important;
+  --OT-color-on-accent-1: #170f24 !important;
+  --OT-color-muted-on-accent-1: #3f295f !important;
+  --OT-color-on-accent-2: #d8c5f4 !important;
+  --OT-color-on-accent-3: #c8b7e1 !important;
+  --OT-button-ON-bg: var(--color-accent-1);
+  --OT-button-cta-background-normal: #9a7cc7;
+  --OT-button-cta-text-normal: #27193c;
+  /*    --OT-view-header-title-focus-color:        #AC94D1; */
+  /*    --OT-view-header-title-no-focus-color:    #8864BD; */
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 30%);
+}
+.lightPalette-yellow.darkPalette-default.accentColor-darkMode-shade,
+.darkPalette-yellow.accentColor-darkMode-shade {
+  --accent-h: 48 !important;
+  --accent-s: 97% !important;
+  --accent-l: 25% !important;
+  --color-accent-1: #fbcb0c !important;
+  --color-accent-2: #c09a03 !important;
+  --color-accent-3: #6d5802 !important;
+  /*    --OT-color-on-accent-1:                    #fff    !important; */
+  --OT-color-muted-on-accent-1: #7e6502 !important;
+  --OT-color-on-accent-2: #fffae5 !important;
+  /*    --OT-color-on-accent-3:                    #fff    !important; */
+  /*    --OT-view-header-title-no-focus-color:    #9E7F02; */
+}

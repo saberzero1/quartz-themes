@@ -1,0 +1,4 @@
+body h1 {
+  border-block-end: calc((var(--h1-weight) - 200) / 100 * 1px) solid
+    var(--h1-color);
+}

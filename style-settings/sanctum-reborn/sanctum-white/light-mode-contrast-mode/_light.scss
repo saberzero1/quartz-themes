@@ -1,0 +1,56 @@
+.sanctum-white {
+  --color-accent-rgb: var(--custom-accent-color);
+  --background: rgb(var(--gray-10));
+  --background-hover: rgba(var(--gray-50), 0.12);
+  --background-active: rgba(var(--gray-50), 0.32);
+  --background-selected: rgba(var(--gray-50), 0.2);
+  --background-selected-hover: rgba(var(--gray-50), 0.32);
+  --background-inverse: rgb(var(--gray-80));
+  --background-inverse-hover: rgba(var(--gray-70), 0.5);
+  --layer-1: rgb(var(--white));
+  --layer-2: rgb(var(--gray-10));
+  --layer-hover-1: rgb(var(--gray-10));
+  --layer-hover-2: rgba(var(--gray-20), 0.5);
+  --layer-active-1: rgb(var(--gray-30));
+  --layer-active-2: rgb(var(--gray-30));
+  --layer-selected-1: rgb(var(--gray-20));
+  --layer-selected-2: rgb(var(--gray-20));
+  --layer-selected-hover-1: rgba(var(--gray-30), 0.5);
+  --layer-selected-hover-2: rgba(var(--gray-30), 0.5);
+  --field-1: rgb(var(--white));
+  --field-hover-1: rgb(var(--gray-20));
+  --border-subtle-0: rgb(var(--gray-20));
+  --border-subtle-1: rgb(var(--gray-20));
+  --border-subtle-2: rgb(var(--gray-20));
+  --border-subtle-selected-1: rgb(var(--gray-30));
+  --border-subtle-selected-2: rgb(var(--gray-30));
+  --border-strong-1: rgb(var(--gray-50));
+  --border-strong-2: rgb(var(--gray-50));
+  --border-inverse: rgb(var(--gray-100));
+  --text-code: var(--pink-60);
+  --text-primary: rgb(var(--gray-100));
+  --text-secondary: rgb(var(--gray-70));
+  --text-placeholder: rgb(var(--gray-40));
+  --icon-primary: rgb(var(--gray-100));
+  --icon-secondary: rgb(var(--gray-70));
+  --icon-on-color: rgb(var(--white));
+  --icon-inverse: rgb(var(--white));
+  --focus: var(--cyan-60);
+  --focus-inset: rgb(var(--white));
+  --focus-inverse: rgb(var(--white));
+  --interactive: rgb(var(--color-accent-rgb));
+  --highlight: rgba(var(--color-accent-rgb), 0.7);
+  --overlay: rgba(var(--gray-100), 0.5);
+}
+.sanctum-white:not(.use-custom-accent) {
+  --color-accent-rgb: var(--color-accent-rgb-l);
+}
+.sanctum-white {
+  --background: rgb(var(--white));
+  --layer-1: rgb(var(--gray-10));
+  --layer-2: rgb(var(--white));
+  --layer-hover-1: rgba(var(--gray-20), 0.5);
+  --highlight: rgba(var(--color-accent-rgb), 0.7);
+  --field-1: rgb(var(--gray-10));
+  --field-hover-1: rgb(var(--white));
+}

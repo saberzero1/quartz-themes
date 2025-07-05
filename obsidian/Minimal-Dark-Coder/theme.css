@@ -14,7 +14,10 @@
 }
 
 .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title,
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+.is-focused
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-title {
   color: #ff1493;
 }
 .markdown-preview-view a {

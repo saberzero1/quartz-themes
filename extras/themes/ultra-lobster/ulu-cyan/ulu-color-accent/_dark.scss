@@ -1,0 +1,37 @@
+.ulu-cyan {
+  --color-accent: hsl(var(--color-cyan-hsl));
+  --color-accent-rgb: var(--color-cyan-rgb);
+  --color-accent-hsl: var(--color-cyan-hsl);
+  --color-accent-1: var(--color-green);
+  --color-accent-1-rgb: var(--color-green-rgb);
+}
+
+.ulu-accent-bg-d.ulu-cyan {
+  --color-base-00: #060606;
+  --color-base-20: #0f1111;
+  --gradient-bg-primary: linear-gradient(
+    135deg,
+    #262626 20.62%,
+    #060606 90.72%
+  ) !important;
+  --gradient-bg-secondary: linear-gradient(
+    135deg,
+    #2b2b2b 20.62%,
+    #0f1111 90.72%
+  ) !important;
+}
+
+.ulu-accent-bg-lowcon-d.ulu-cyan {
+  --color-base-00: #0f1111;
+  --color-base-20: #0f1111;
+  --gradient-bg-primary: linear-gradient(
+    135deg,
+    #0f1111 20.62%,
+    #0f1111 90.72%
+  ) !important;
+  --gradient-bg-secondary: linear-gradient(
+    135deg,
+    #0f1111 20.62%,
+    #0f1111 90.72%
+  ) !important;
+}

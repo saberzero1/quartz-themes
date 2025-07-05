@@ -1,0 +1,8 @@
+.cards table.dataview > tbody > tr,
+.cards table.dataview > tbody > tr {
+  background-color: rgba(var(--pln-cards-color-rgb), 0.4) !important;
+  border-top: 4px solid rgb(var(--pln-cards-color-rgb)) !important;
+  border-left: 2px solid rgb(var(--pln-cards-color-rgb)) !important;
+  border-right: none !important;
+  border-bottom: none !important;
+}

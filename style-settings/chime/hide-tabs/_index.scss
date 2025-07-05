@@ -1,0 +1,8 @@
+.workspace-tab-header-container {
+  opacity: 0;
+}
+.workspace-tab-header-container:hover {
+  opacity: 1;
+  transition: opacity 0.23s ease-in-out;
+  transition-delay: 0ms;
+}

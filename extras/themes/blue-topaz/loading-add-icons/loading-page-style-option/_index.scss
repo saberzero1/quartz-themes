@@ -1,0 +1,27 @@
+body:not(.default-loading-page).loading-add-icons .progress-bar-message {
+  all: initial;
+  font-size: var(--font-size-loading-add);
+  color: var(--loading-add-text-color);
+  animation: 1.5s infinite alternate;
+  animation-name: gradientChange, moving;
+}
+
+body:not(.default-loading-page).loading-add-icons
+  .progress-bar-message::before {
+  all: initial;
+  color: var(--loading-add-text-color);
+  content: var(--loading-text-before);
+  animation: 2s infinite alternate;
+  animation-name: gradientChange;
+}
+
+body:not(.default-loading-page).loading-add-icons .progress-bar-message::after {
+  all: initial;
+  color: var(--loading-add-text-color);
+  content: var(--loading-text-after);
+  animation: 2s infinite alternate;
+  animation-name: gradientChange;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  will-change: transform;
+}

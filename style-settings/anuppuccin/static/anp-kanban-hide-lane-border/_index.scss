@@ -1,0 +1,15 @@
+.kanban-plugin__lane,
+.kanban-plugin__lane-header-wrapper,
+.kanban-plugin__item-button-wrapper,
+.kanban-plugin__item-form {
+  border-width: 0;
+  box-shadow: none;
+}
+.kanban-plugin__lane-items {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.kanban-plugin__lane-setting-wrapper {
+  border-bottom-width: 0;
+  padding-top: 6px;
+}

@@ -1,0 +1,13 @@
+body
+  .markdown-source-view.mod-cm6.is-readable-line-width
+  .cm-contentContainer
+  > div:is(.embedded-backlinks)
+  > div {
+  max-width: 100%;
+}
+body
+  .markdown-preview-view
+  .markdown-preview-sizer.markdown-preview-sizer
+  > div:is(.embedded-backlinks) {
+  max-width: 100% !important;
+}

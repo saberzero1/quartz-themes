@@ -37,9 +37,18 @@
   background: var(--background-secondary);
 }
 
-.theme-dark .workspace-tab-header.is-active .workspace-tab-header-inner-icon svg,
-.theme-dark .workspace-tab-header.is-active:hover .workspace-tab-header-inner-icon svg,
-.theme-dark .workspace-tab-header.is-active:active .workspace-tab-header-inner-icon svg {
+.theme-dark
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon
+  svg,
+.theme-dark
+  .workspace-tab-header.is-active:hover
+  .workspace-tab-header-inner-icon
+  svg,
+.theme-dark
+  .workspace-tab-header.is-active:active
+  .workspace-tab-header-inner-icon
+  svg {
   color: #af3943;
 }
 

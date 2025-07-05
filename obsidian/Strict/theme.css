@@ -829,7 +829,10 @@ pre {
 /* Embed containers: PDFs (page specified) */
 /* ======================================== */
 /* Disable scrollbar */
-.pdf-embed[src*="#page="] > .pdf-container > .pdf-content-container > .pdf-viewer-container {
+.pdf-embed[src*="#page="]
+  > .pdf-container
+  > .pdf-content-container
+  > .pdf-viewer-container {
   overflow: hidden;
   /* Disable scrolling when clicking on top or bottom of the page (this also disables text-selection) */
   pointer-events: none;
@@ -853,20 +856,20 @@ pre {
 
 /* TODO: Add ability to resize container (from code below only decrease size working right now) */
 /*.pdf-embed[src*="#page="] {*/
-/*	resize: both;*/
+/*    resize: both;*/
 /*}*/
 /*.pdf-embed[src*="#page="]::-webkit-resizer {*/
-/*	background-color: green;*/
-/*	text-indent: -9999px;*/
-/*	line-height: 0; !* Collapse the original line *!*/
+/*    background-color: green;*/
+/*    text-indent: -9999px;*/
+/*    line-height: 0; !* Collapse the original line *!*/
 /*}*/
 /*.pdf-embed[src*="#page="]::after {*/
-/*	content: "Resize ->";*/
-/*	text-indent: 0;*/
-/*	display: block;*/
-/*	line-height: initial; !* New content takes up original line height *!*/
-/*	text-align: right;*/
-/*	padding-right: 24px;*/
+/*    content: "Resize ->";*/
+/*    text-indent: 0;*/
+/*    display: block;*/
+/*    line-height: initial; !* New content takes up original line height *!*/
+/*    text-align: right;*/
+/*    padding-right: 24px;*/
 /*}*/
 /* ======================================== */
 
@@ -961,7 +964,10 @@ body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
 }
 
 /* Remove extra empty line for math blocks in preview edit mode */
-.cm-s-obsidian .HyperMD-list-line.HyperMD-list-line-nobullet:has(+ .math-block > mjx-container) {
+.cm-s-obsidian
+  .HyperMD-list-line.HyperMD-list-line-nobullet:has(
+    + .math-block > mjx-container
+  ) {
   display: none;
 }
 /* ======================================== */

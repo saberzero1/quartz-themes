@@ -123,16 +123,28 @@ body .app-container .mod-left-split .workspace-tab-header-container:hover {
   opacity: 1;
 }
 
-body .app-container .mod-left-split .workspace-tab-container .nav-buttons-container {
+body
+  .app-container
+  .mod-left-split
+  .workspace-tab-container
+  .nav-buttons-container {
   transition: all 0.3s linear;
   opacity: 0;
 }
 
-body .app-container .mod-left-split .workspace-tab-container .nav-buttons-container:hover {
+body
+  .app-container
+  .mod-left-split
+  .workspace-tab-container
+  .nav-buttons-container:hover {
   opacity: 1;
 }
 
-body .app-container .mod-root .mod-top:not(.mod-stacked) .workspace-tab-header-container {
+body
+  .app-container
+  .mod-root
+  .mod-top:not(.mod-stacked)
+  .workspace-tab-header-container {
   transition: all 0.3s linear;
   opacity: 0;
   width: 666px;
@@ -146,7 +158,11 @@ body .app-container .mod-root .mod-top:not(.mod-stacked) .workspace-tab-header-c
   border-width: 0;
 }
 
-body .app-container .mod-root .mod-top:not(.mod-stacked) .workspace-tab-header-container:hover {
+body
+  .app-container
+  .mod-root
+  .mod-top:not(.mod-stacked)
+  .workspace-tab-header-container:hover {
   opacity: 1;
 }
 
@@ -168,7 +184,12 @@ body
   z-index: 99;
 }
 
-body .app-container .mod-root .mod-top:not(.mod-stacked) .workspace-tab-header-container ::after {
+body
+  .app-container
+  .mod-root
+  .mod-top:not(.mod-stacked)
+  .workspace-tab-header-container
+  ::after {
   display: none;
 }
 
@@ -241,24 +262,44 @@ body .app-container .mod-root .workspace-tab-container .view-header:hover {
   opacity: 1;
 }
 
-body .app-container .mod-root .workspace-tab-container .view-header .view-header-nav-buttons {
+body
+  .app-container
+  .mod-root
+  .workspace-tab-container
+  .view-header
+  .view-header-nav-buttons {
   position: absolute;
   left: 10px;
   top: 10px;
   z-index: 99;
 }
 
-body .app-container .mod-root .workspace-tab-container .view-header .view-header-title-container {
+body
+  .app-container
+  .mod-root
+  .workspace-tab-container
+  .view-header
+  .view-header-title-container {
   opacity: 0;
 }
 
-body .app-container .mod-root .workspace-tab-container .view-header .view-actions {
+body
+  .app-container
+  .mod-root
+  .workspace-tab-container
+  .view-header
+  .view-actions {
   position: absolute;
   top: 10px;
   right: 10px;
 }
 
-body .app-container .mod-root .workspace-tab-container .view-content .metadata-container {
+body
+  .app-container
+  .mod-root
+  .workspace-tab-container
+  .view-content
+  .metadata-container {
   transition: all 0.2s linear;
   margin-bottom: 28px;
 }

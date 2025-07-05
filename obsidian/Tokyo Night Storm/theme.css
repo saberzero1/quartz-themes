@@ -61,8 +61,8 @@ with a few modifications to make it work with the Tokyo Night Storm.
   --red1: rgb(var(--red1_x));
   --unknown: #ffffff;
 
-  --external-link-filter: invert(35%) sepia(28%) saturate(681%) hue-rotate(192deg) brightness(94%)
-    contrast(85%);
+  --external-link-filter: invert(35%) sepia(28%) saturate(681%)
+    hue-rotate(192deg) brightness(94%) contrast(85%);
 }
 
 .theme-dark {

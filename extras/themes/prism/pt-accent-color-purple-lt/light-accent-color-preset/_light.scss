@@ -1,0 +1,9 @@
+body.pt-accent-color-purple-lt {
+  --interactive-accent-base-hsl: var(--color-purple-base-hsl);
+  --interactive-accent-tint-hsl: var(--color-purple-tint-hsl);
+  --interactive-accent-text-hsl: var(--color-purple-text-hsl);
+  --interactive-accent-base: var(--color-purple-base);
+  --interactive-accent-tint: var(--color-purple-tint);
+  --interactive-accent-text: var(--color-purple-text);
+  --interactive-accent-hover: var(--color-purple-tint);
+}

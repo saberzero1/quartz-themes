@@ -1,0 +1,46 @@
+,
+.theme-dark {
+  --outer-bar: var(--note);
+  --dark-sidebar: var(--note);
+  --side-bar: var(--note);
+  --note: #1a1e24;
+  --note-rgb: 26, 30, 36;
+  --accent-color: "";
+  --accent: #546078;
+  --lite-accent: #aab3ca;
+  --dark-accent: #394151;
+  --deep-dark-accent: var(--note);
+  --accent2-lite: var(--text-dl);
+  --headers: var(--text);
+  --code-text: var(--text);
+  --i-at: var(--text-faint);
+  --inactive: #586477;
+  --tag-text: var(--accent2-lite);
+  --code-bg: #232831;
+  --aside-bg: var(--note);
+  --embed-bg: var(--note);
+  --tag: var(--note);
+  --folder: var(--text-dl);
+  --file-icon-color: #aab3ca;
+  --th: var(--note);
+  --td: #06080c50;
+  --table: var(--bg);
+  --outline: #0b0f13;
+  --highlight: rgba(81, 100, 122, 0.6);
+  --hvr: rgba(87, 113, 156, 0.4);
+  --hvr-active: rgba(101, 124, 156, 0.4);
+  --graph-bg: var(--outer-bar);
+  --graph-lines: #363c4950;
+  --graph-node: var(--fg);
+  --graph-fill: var(--headers);
+  --graph-404: #727e93;
+  --graph-img: #6b90ad;
+  --graph-tag: black;
+  --graph-focused: var(--text-highlight-bg-active);
+  --theme-rainbow-1: var(--graph-404);
+  --theme-rainbow-2: var(--accent);
+  --theme-rainbow-3: var(--dark-accent);
+  --theme-rainbow-4: var(--code-bg);
+  --theme-rainbow-5: var(--td);
+  --theme-rainbow-6: var(--graph-tag);
+}

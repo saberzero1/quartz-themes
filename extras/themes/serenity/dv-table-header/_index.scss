@@ -1,0 +1,10 @@
+.dv-table-header .table-view-table {
+  --table-header-background: var(--background-secondary);
+  --table-header-background-hover: var(--background-secondary);
+}
+
+.dv-table-header .table-view-table thead > tr > th {
+  border: 1px solid var(--background-modifier-border);
+  background-color: var(--table-header-background) !important;
+  font-weight: var(--table-header-weight);
+}

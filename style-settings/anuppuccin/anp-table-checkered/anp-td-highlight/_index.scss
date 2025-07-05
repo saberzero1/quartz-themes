@@ -1,0 +1,64 @@
+.anp-table-toggle.anp-table-checkered
+  .markdown-preview-view:not(.cards):not(.table-disable)
+  tr
+  td:nth-child(2n),
+.anp-table-toggle.anp-table-checkered
+  .markdown-preview-view:not(.cards):not(.table-disable)
+  tr:nth-child(2n)
+  td,
+.anp-table-toggle.anp-table-checkered
+  .markdown-preview-view.cards:not(.table-disable)
+  table:not(.dataview)
+  tr
+  td:nth-child(2n),
+.anp-table-toggle.anp-table-checkered
+  .markdown-preview-view.cards:not(.table-disable)
+  table:not(.dataview)
+  tr:nth-child(2n)
+  td,
+.anp-table-toggle.anp-table-checkered
+  .is-live-preview:not(.cards):not(.table-disable)
+  tr
+  td:nth-child(2n),
+.anp-table-toggle.anp-table-checkered
+  .is-live-preview:not(.cards):not(.table-disable)
+  tr:nth-child(2n)
+  td,
+.anp-table-toggle.anp-table-checkered
+  .is-live-preview.cards:not(.table-disable)
+  table:not(.dataview)
+  tr
+  td:nth-child(2n),
+.anp-table-toggle.anp-table-checkered
+  .is-live-preview.cards:not(.table-disable)
+  table:not(.dataview)
+  tr:nth-child(2n)
+  td {
+  background-color: rgba(
+    var(--ctp-mantle),
+    var(--anp-table-highlight-opacity, 0.5)
+  );
+}
+.anp-table-toggle.anp-table-checkered
+  .markdown-preview-view:not(.cards):not(.table-disable)
+  tr:nth-child(2n)
+  td:nth-child(2n),
+.anp-table-toggle.anp-table-checkered
+  .markdown-preview-view.cards:not(.table-disable)
+  table:not(.dataview)
+  tr:nth-child(2n)
+  td:nth-child(2n),
+.anp-table-toggle.anp-table-checkered
+  .is-live-preview:not(.cards):not(.table-disable)
+  tr:nth-child(2n)
+  td:nth-child(2n),
+.anp-table-toggle.anp-table-checkered
+  .is-live-preview.cards:not(.table-disable)
+  table:not(.dataview)
+  tr:nth-child(2n)
+  td:nth-child(2n) {
+  background-color: rgba(
+    var(--ctp-crust),
+    var(--anp-table-highlight-opacity, 0.5)
+  );
+}

@@ -1,0 +1,15 @@
+body.callout-on {
+  --callout-radius: 0;
+  --callout-border-width: 0;
+  --callout-padding: 0 1em;
+}
+
+body.callout-on .callout {
+  border-left: 0.25em solid var(--color-base-30);
+  background-color: transparent;
+  color: var(--text-muted);
+}
+
+body.callout-on .callout-content p {
+  margin: 0.1em 0;
+}

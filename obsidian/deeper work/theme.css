@@ -235,7 +235,7 @@ settings:
 }
 
 /*---------------------------------------
-	Documents: Text Properties
+    Documents: Text Properties
   ---------------------------------------*/
 
 /* Monospace */
@@ -255,7 +255,7 @@ body {
 }
 
 /*---------------------------------------
-	Documents: Text / Headings
+    Documents: Text / Headings
   ---------------------------------------*/
 
 /* Headings */
@@ -355,7 +355,7 @@ hr {
 }
 
 /*---------------------------------------
-	Documents: Math
+    Documents: Math
   ---------------------------------------*/
 
 /* Math */
@@ -386,7 +386,7 @@ mjx-container[jax="CHTML"] {
 }
 
 /*---------------------------------------
-	Documents: Code
+    Documents: Code
   ---------------------------------------*/
 
 /* Code blocks */
@@ -550,7 +550,7 @@ pre.line-numbers > code {
 }
 
 /*---------------------------------------
-	Documents: Callouts / Quotes
+    Documents: Callouts / Quotes
   ---------------------------------------*/
 
 .callout {
@@ -589,7 +589,7 @@ body .markdown-preview-view blockquote {
 }
 
 /*---------------------------------------
-	Documents: Tables / Images / Files
+    Documents: Tables / Images / Files
   ---------------------------------------*/
 
 /* Tables */
@@ -620,7 +620,7 @@ th {
 }
 
 /*---------------------------------------
-	Graph
+    Graph
   ---------------------------------------*/
 
 .graph-view.color-fill-attachment {
@@ -632,7 +632,7 @@ th {
 }
 
 /*---------------------------------------
-	Interface Elements
+    Interface Elements
   ---------------------------------------*/
 
 .titlebar {
@@ -704,7 +704,7 @@ th {
 /* Tab Headers */
 .mod-stacked .workspace-tab-header {
   /* background-color: var(--color-gray-8) !important;
-	box-shadow: rgba(0, 0, 0, 0.1) -20px 0 10px 0 !important; */
+    box-shadow: rgba(0, 0, 0, 0.1) -20px 0 10px 0 !important; */
   box-shadow:
     rgba(0, 0, 0, 0.2) -20px 0 20px 10px,
     -1px 0 0 0 var(--tab-outline-color),

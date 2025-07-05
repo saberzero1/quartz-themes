@@ -1,0 +1,44 @@
+.theme-dark
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container-inner
+  .workspace-tab-header {
+  background-color: var(--background-primary);
+}
+.theme-dark
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container-inner
+  .workspace-tab-header:hover,
+.theme-light
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container-inner
+  .workspace-tab-header {
+  background-color: var(--background-secondary);
+}
+.theme-dark
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container-inner
+  .workspace-tab-header:hover
+  * {
+  transition: background-color var(--hover-animation-duration) ease-in-out;
+  background-color: var(--background-secondary);
+}
+.color-scheme-golden-book:not(.separate-color-scheme)
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container-inner
+  .workspace-tab-header {
+  color: #460c0c;
+  --tab-text-color-focused-active-current: #460c0c;
+}
+.separate-color-scheme.dm-color-scheme-golden-book
+  .workspace-split.mod-vertical.mod-root
+  .workspace-tabs
+  .workspace-tab-header-container-inner
+  .workspace-tab-header {
+  color: #460c0c;
+  --tab-text-color-focused-active-current: #460c0c;
+}

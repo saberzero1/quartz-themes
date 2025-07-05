@@ -1,0 +1,4 @@
+body :is(.nav-file-title-content, .nav-folder-title-content) {
+  overflow: visible;
+  white-space: pre-wrap;
+}

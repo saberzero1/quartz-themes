@@ -232,8 +232,11 @@ body {
   --radius-m: 26px;
   --radius-l: 30px;
   --radius-xl: 45px;
-  --glow-effect-s: 0px 0px 20px rgba(255, 255, 255, 0.535), 0px 0px 5px rgba(93, 182, 255, 0.586);
-  --glow-effect-m: 0px 0px 30px rgb(255, 255, 255), 0px 0px 10px rgba(93, 182, 255, 0.577);
+  --glow-effect-s:
+    0px 0px 20px rgba(255, 255, 255, 0.535),
+    0px 0px 5px rgba(93, 182, 255, 0.586);
+  --glow-effect-m:
+    0px 0px 30px rgb(255, 255, 255), 0px 0px 10px rgba(93, 182, 255, 0.577);
 }
 
 .inline-title,
@@ -393,7 +396,8 @@ blockquote,
   margin: 1.8em auto !important;
   border-radius: 2em;
   padding: 1em 1.5em 1em 2em !important;
-  border-left: var(--blockquote-border-color) var(--blockquote-border-thickness) solid;
+  border-left: var(--blockquote-border-color) var(--blockquote-border-thickness)
+    solid;
   font-weight: 300;
   text-align: justify;
   background-color: var(--blockquote-background-color);

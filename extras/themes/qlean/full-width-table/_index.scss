@@ -1,0 +1,18 @@
+body.full-width-table
+  .markdown-source-view.is-live-preview
+  .cm-table-widget
+  .table-wrapper:has(> table),
+body.full-width-table .markdown-rendered div:has(> table),
+body.full-width-table .style-settings-container div:has(> table) {
+  width: 100%;
+}
+
+body.full-width-table
+  .markdown-source-view.is-live-preview
+  .cm-table-widget
+  .table-wrapper:has(> table)
+  > table,
+body.full-width-table .markdown-rendered div:has(> table) > table,
+body.full-width-table .style-settings-container div:has(> table) > table {
+  width: 100%;
+}

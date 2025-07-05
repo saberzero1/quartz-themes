@@ -1,0 +1,28 @@
+.list-d-c-d .HyperMD-list-line-1 .cm-formatting-list-ul .list-bullet::after {
+}
+.list-d-c-d
+  :is(
+    .HyperMD-list-line-2,
+    .HyperMD-list-line-4,
+    .HyperMD-list-line-6,
+    .HyperMD-list-line-8
+  )
+  .cm-formatting-list-ul
+  .list-bullet::after {
+  width: calc(0.3rem - 1px);
+  height: calc(0.3rem - 1px);
+  outline: 1px solid;
+  background-color: transparent;
+}
+.list-d-c-d .markdown-rendered ul.has-list-bullet,
+.list-d-c-d .markdown-rendered ul ul ul.has-list-bullet,
+.list-d-c-d .markdown-rendered ul ul ul ul ul.has-list-bullet,
+.list-d-c-d .markdown-rendered ul ul ul ul ul ul ul.has-list-bullet {
+  list-style-type: disc;
+}
+.list-d-c-d .markdown-rendered ul ul.has-list-bullet,
+.list-d-c-d .markdown-rendered ul ul ul ul.has-list-bullet,
+.list-d-c-d .markdown-rendered ul ul ul ul ul ul.has-list-bullet,
+.list-d-c-d .markdown-rendered ul ul ul ul ul ul ul ul.has-list-bullet {
+  list-style-type: circle;
+}

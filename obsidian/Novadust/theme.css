@@ -171,7 +171,9 @@
   --tab-radius: 5px;
   --tab-radius-active: 5px;
   --tab-curve: none; /*la mierdecilla de la curva de las tabs activas*/
-  --tab-text-color: var(--washed-blue); /*para cuando sales, las tabs no activas*/
+  --tab-text-color: var(
+    --washed-blue
+  ); /*para cuando sales, las tabs no activas*/
 
   /*LINKS*/
 

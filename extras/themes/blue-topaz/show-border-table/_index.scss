@@ -1,0 +1,5 @@
+body.show-border-table
+  :is(.markdown-preview-view, .markdown-rendered)
+  :is(th, td) {
+  border: 1px solid var(--table-border-color);
+}

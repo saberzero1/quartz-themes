@@ -1,0 +1,39 @@
+.style-default.headers-low {
+  --color-text-title: var(--color-purple);
+  --color-text-h1: var(--color-cyan);
+  --color-text-h2: var(--color-cyan);
+  --color-text-h3: var(--color-cyan);
+  --color-text-h4: var(--color-cyan);
+  --color-text-h5: var(--color-cyan);
+  --color-text-h6: var(--color-cyan);
+}
+
+.style-custom.headers-low {
+  --color-text-title: var(--color-purple);
+  --color-text-h1: var(--color-cyan);
+  --color-text-h2: var(--color-cyan);
+  --color-text-h3: var(--color-cyan);
+  --color-text-h4: var(--color-cyan);
+  --color-text-h5: var(--color-cyan);
+  --color-text-h6: var(--color-cyan);
+}
+
+.style-colorless.headers-low {
+  --color-text-title: var(--color-pink);
+  --color-text-h1: var(--color-pink);
+  --color-text-h2: var(--color-pink);
+  --color-text-h3: var(--color-pink);
+  --color-text-h4: var(--color-pink);
+  --color-text-h5: var(--color-pink);
+  --color-text-h6: var(--color-pink);
+}
+
+.style-solar.headers-low {
+  --color-text-title: var(--color-base-5);
+  --color-text-h1: var(--color-base-5);
+  --color-text-h2: var(--color-base-5);
+  --color-text-h3: var(--color-base-5);
+  --color-text-h4: var(--color-base-5);
+  --color-text-h5: var(--color-base-5);
+  --color-text-h6: var(--color-base-5);
+}

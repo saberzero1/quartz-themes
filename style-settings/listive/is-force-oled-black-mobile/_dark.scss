@@ -1,0 +1,14 @@
+.is-mobile.theme-dark {
+  --background-primary: black;
+  --background-primary-alt: hsl(0, 0%, 8%);
+  --background-modifier-cover: #1a1a1a;
+  --background-secondary: hsl(0, 0%, 16%);
+  --background-secondary-alt: hsl(0, 0%, 12%);
+  --background-accent: hsl(300, 20%, 15%);
+  --background-accent-alt: hsl(0, 0%, 20%);
+  --color-base-100: hsl(0, 0%, 78%);
+  /* original dark-theme base-100 is hsl(0, 0%, 85%), for font color */
+  /* my custom variables */
+  --background-modifier-backlinks: hsl(0, 0%, 12%);
+  /* for backlinks, 12% lighter than primary, special for oled black */
+}

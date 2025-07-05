@@ -1,0 +1,14 @@
+body.background-notebook-liked-switch.notebook-liked-markdown-page-dotted-notebook-2
+  .markdown-preview-view.markdown-rendered,
+body.background-notebook-liked-switch.notebook-liked-markdown-page-dotted-notebook-2
+  .cm-s-obsidian
+  .cm-scroller {
+  background: var(--bg-color-notebook);
+  background-image:
+    radial-gradient(var(--dotted-notebook-dot-color) 10%, transparent 0),
+    radial-gradient(var(--dotted-notebook-dot-color) 10%, transparent 0);
+  background-size: 30px 30px;
+  background-position:
+    0 0,
+    15px 15px;
+}

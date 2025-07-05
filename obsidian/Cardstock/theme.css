@@ -174,8 +174,9 @@ html,
 body {
   font-size: 20px !important;
   color: var(--text-normal);
-  --font-headings: "Source Serif Pro", "Source Serif 4", "Source Serif", "Rockwell", "New York",
-    serif;
+  --font-headings:
+    "Source Serif Pro", "Source Serif 4", "Source Serif", "Rockwell",
+    "New York", serif;
   --font-text: "DM Sans", "Avenir Next", "Avenir", sans-serif;
   --font-monospace: MonoLisa, "Source Code Pro", monospace;
 
@@ -288,7 +289,9 @@ body {
     opacity 200ms ease-in-out;
 }
 
-.mod-root .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
+.mod-root
+  .workspace-tab-header:not(.is-active):hover
+  .workspace-tab-header-inner {
   top: 3px;
   background: var(--background-primary-alt);
   opacity: 1;
@@ -311,12 +314,18 @@ body {
   color: var(--red);
 }
 
-.is-focused .workspace-leaf.mod-active .view-header .clickable-icon:hover[aria-disabled="false"] {
+.is-focused
+  .workspace-leaf.mod-active
+  .view-header
+  .clickable-icon:hover[aria-disabled="false"] {
   background: var(--beige);
   cursor: pointer;
 }
 
-.is-focused .workspace-leaf.mod-active .view-header .clickable-icon[aria-disabled="true"] {
+.is-focused
+  .workspace-leaf.mod-active
+  .view-header
+  .clickable-icon[aria-disabled="true"] {
   color: var(--text-muted);
   cursor: not-allowed;
 }

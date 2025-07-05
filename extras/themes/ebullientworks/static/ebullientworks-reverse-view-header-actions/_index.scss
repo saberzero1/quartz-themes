@@ -1,0 +1,63 @@
+.ebullientworks-reverse-view-header-actions
+  .popover.hover-editor
+  .popover-content
+  .workspace-leaf-content
+  .view-header,
+.ebullientworks-reverse-view-header-actions .workspace-tabs .view-header {
+  margin: 0;
+}
+
+.ebullientworks-reverse-view-header-actions
+  .popover.hover-editor
+  .popover-content
+  .workspace-leaf-content
+  .view-header
+  > .view-header-icon,
+.ebullientworks-reverse-view-header-actions
+  .workspace-tabs
+  .view-header
+  > .view-header-icon {
+  order: 0;
+}
+
+.ebullientworks-reverse-view-header-actions
+  .popover.hover-editor
+  .popover-content
+  .workspace-leaf-content
+  .view-header
+  > .view-actions,
+.ebullientworks-reverse-view-header-actions
+  .workspace-tabs
+  .view-header
+  > .view-actions {
+  order: 0;
+  flex-direction: row-reverse;
+  padding: 0 var(--size-2-3);
+}
+
+.ebullientworks-reverse-view-header-actions
+  .popover.hover-editor
+  .popover-content
+  .workspace-leaf-content
+  .view-header
+  > .view-header-nav-buttons,
+.ebullientworks-reverse-view-header-actions
+  .workspace-tabs
+  .view-header
+  > .view-header-nav-buttons {
+  order: 1;
+}
+
+.ebullientworks-reverse-view-header-actions
+  .popover.hover-editor
+  .popover-content
+  .workspace-leaf-content
+  .view-header
+  > .view-header-title-container,
+.ebullientworks-reverse-view-header-actions
+  .workspace-tabs
+  .view-header
+  > .view-header-title-container {
+  order: 1;
+  justify-content: flex-start;
+}

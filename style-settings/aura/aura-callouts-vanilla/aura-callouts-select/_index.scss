@@ -1,0 +1,16 @@
+.aura-callouts.aura-callouts-vanilla .callout {
+  border-radius: var(--callout-radius);
+  padding: 0;
+}
+.aura-callouts.aura-callouts-vanilla .callout .callout-title {
+  padding: 10px;
+  background-color: var(--callout-color);
+}
+.aura-callouts.aura-callouts-vanilla .callout .callout-content {
+  padding-left: 20px;
+  background-color: var(--background-primary-alt);
+}
+.aura-callouts.aura-callouts-vanilla .callout .callout-title,
+.aura-callouts.aura-callouts-vanilla .callout .callout-content {
+  border-left: var(--size-2-3) solid rgb(var(--callout-color));
+}

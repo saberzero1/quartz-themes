@@ -1,0 +1,17 @@
+body
+  :is(.markdown-preview-view, .markdown-rendered)
+  .internal-link.is-unresolved
+  > *,
+body * > .internal-link.is-unresolved,
+body
+  .markdown-source-view.mod-cm6
+  .cm-hmd-internal-link
+  .is-unresolved
+  .cm-underline,
+body .markdown-source-view.mod-cm6 .is-unresolved .cm-underline,
+body
+  :is(.markdown-preview-view, .markdown-rendered)
+  .internal-link.is-unresolved,
+body .cm-hmd-internal-link .is-unresolved .cm-underline {
+  text-decoration: none !important;
+}

@@ -1,0 +1,7 @@
+body.list-no-border ul > li:not(.task-list-item) {
+  border-left: none !important;
+}
+
+body.list-no-border ol > li {
+  border-left: none !important;
+}

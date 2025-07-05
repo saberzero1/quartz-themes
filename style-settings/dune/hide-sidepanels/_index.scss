@@ -1,0 +1,46 @@
+.titlebar-button-container.mod-right:not(:hover),
+.mod-left-split .workspace-tab-header-container-inner:not(:hover),
+.mod-right-split .workspace-tab-header-container-inner:not(:hover),
+.workspace-tab-header-container-inner:not(:hover) {
+  opacity: 0;
+  transition: opacity 4s ease-in-out;
+}
+.side-dock-actions:not(:hover),
+.workspace-sidedock-vault-profile:not(:hover)
+  :is(.workspace-drawer-vault-actions, .workspace-drawer-vault-switcher) {
+  opacity: 0;
+  transition: opacity 4s ease-in-out;
+}
+.workspace-split.mod-right-split
+  .workspace-tabs:not(.mod-top)
+  .workspace-tab-header-container,
+.workspace-split.mod-left-split
+  .workspace-tabs:not(.mod-top)
+  .workspace-tab-header-container {
+  border-top: 0;
+}
+.sidebar-toggle-button.mod-left:not(:hover),
+.sidebar-toggle-button.mod-right:not(:hover),
+.workspace-split.mod-right-split .nav-header:not(:hover),
+:is(.workspace-tab-header-new-tab, .workspace-tab-header-tab-list):not(:hover) {
+  opacity: 0.3;
+  transition: opacity 4s ease-in-out;
+}
+.workspace-split.mod-left-split .workspace-leaf-content > *:not(:hover),
+.workspace-split.mod-right-split .workspace-leaf-content > *:not(:hover) {
+  opacity: 0;
+  transition: opacity 4s ease-in-out;
+}
+.workspace-split.mod-vertical.mod-root .workspace-tab-header-container {
+  background: var(--background-primary);
+}
+.workspace-split.mod-right-split .workspace-tab-header-container {
+  background: linear-gradient(270deg, transparent, var(--background-primary));
+}
+.workspace-split.mod-left-split .workspace-tab-header-container {
+  background: linear-gradient(270deg, var(--background-primary), transparent);
+}
+.view-header:not(:hover) {
+  opacity: 0.3;
+  transition: opacity 4s linear;
+}

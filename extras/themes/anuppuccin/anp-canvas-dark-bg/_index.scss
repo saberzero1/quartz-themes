@@ -1,0 +1,12 @@
+.anp-canvas-dark-bg .canvas-wrapper {
+  background-color: var(--background-secondary);
+}
+
+.anp-canvas-dark-bg .canvas-controls button,
+.anp-canvas-dark-bg .canvas-card-menu {
+  background-color: var(--background-primary);
+}
+
+.anp-canvas-dark-bg .canvas-card-menu .canvas-card-menu-button svg {
+  fill: var(--background-primary);
+}

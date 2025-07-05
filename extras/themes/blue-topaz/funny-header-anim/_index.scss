@@ -1,0 +1,117 @@
+body.funny-header-anim
+  .is-live-preview
+  .cm-line
+  > :is(.cm-header, .cm-widgetBuffer)
+  + .cm-header,
+body.clutter-free-headings
+  .cm-line
+  > :is(.cm-header, .cm-widgetBuffer)
+  + .cm-header {
+  display: inline-block;
+}
+
+body.funny-header-anim
+  .is-live-preview
+  .cm-line:not(.cm-active)
+  :is(.cm-header, .cm-widgetBuffer)
+  + .cm-header,
+body.clutter-free-headings
+  .cm-line:not(.cm-active)
+  :is(.cm-header, .cm-widgetBuffer)
+  + .cm-header,
+body.funny-header-anim
+  .is-live-preview
+  .cm-line:not(.cm-active)
+  :is(.cm-header, .cm-widgetBuffer)
+  + .cm-header
+  ~ *,
+body.clutter-free-headings
+  .cm-line:not(.cm-active)
+  :is(.cm-header, .cm-widgetBuffer)
+  + .cm-header
+  ~ * {
+  transform: translateX(0ch);
+  transition: transform 333ms;
+}
+
+body.funny-header-anim
+  .is-live-preview
+  .cm-active
+  :is(.cm-header, .cm-widgetBuffer)
+  + .cm-header,
+body.clutter-free-headings :is(.cm-header, .cm-widgetBuffer) + .cm-header,
+body.funny-header-anim
+  .is-live-preview
+  .cm-active
+  :is(.cm-header, .cm-widgetBuffer)
+  + .cm-header
+  ~ *,
+body.clutter-free-headings :is(.cm-header, .cm-widgetBuffer) + .cm-header ~ * {
+  transition: transform 333ms;
+  transform: translateX(30px);
+}
+
+body.funny-header-anim
+  .is-live-preview
+  .cm-active
+  :is(.cm-header)
+  + .cm-widgetBuffer
+  + .cm-html-embed,
+body.clutter-free-headings
+  .cm-active
+  :is(.cm-header)
+  + .cm-widgetBuffer
+  + .cm-html-embed {
+  transition: margin-left 500ms;
+  margin-left: 30px;
+}
+
+body.funny-header-anim
+  .is-live-preview
+  .cm-active
+  :is(.cm-header, .cm-widgetBuffer)
+  + .cm-bracket,
+body.clutter-free-headings
+  .cm-active
+  :is(.cm-header, .cm-widgetBuffer)
+  + .cm-bracket {
+  transition: margin-left 333ms;
+  margin-left: 30px;
+}
+
+body.funny-header-anim
+  .is-live-preview
+  .cm-line:not(.cm-active)
+  .cm-header:first-of-type,
+body.clutter-free-headings .cm-line:not(.cm-active) .cm-header:first-of-type {
+  display: none;
+  opacity: 0;
+}
+
+body.funny-header-anim
+  .is-live-preview
+  .cm-active
+  .cm-formatting-header
+  + .cm-header,
+body.clutter-free-headings .cm-active .cm-formatting-header + .cm-header {
+  margin-left: -30px;
+}
+
+body.funny-header-anim
+  .is-live-preview
+  .cm-active
+  .cm-formatting-header
+  ~ .cm-foldPlaceholder,
+body.clutter-free-headings
+  .cm-active
+  .cm-formatting-header
+  ~ .cm-foldPlaceholderr {
+  transition: margin-left 333ms;
+  margin-left: 30px;
+}
+
+body.funny-header-anim .is-live-preview .cm-active .cm-header:first-of-type,
+body.clutter-free-headings .cm-active .cm-header:first-of-type {
+  transform: translateX(0ch);
+  animation: opac 333ms;
+}

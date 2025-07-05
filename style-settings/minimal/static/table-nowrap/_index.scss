@@ -1,0 +1,11 @@
+:root,
+body {
+  --table-white-space: nowrap;
+}
+-first table tbody > tr > td:first-child,
+-first table thead > tr > th:first-child {
+  --table-white-space: nowrap;
+}
+.table-wrap {
+  --table-white-space: normal;
+}

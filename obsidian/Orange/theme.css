@@ -102,7 +102,11 @@
     --table-header-background: #f0f0f0; /* Light grey for table headers */
     --table-background: #ffffff; /* White for table body */
     --table-header-weight: bold;
-    --table-header-color: hsl(30, 61%, 30%); /* Darker shade of the accent for contrast */
+    --table-header-color: hsl(
+      30,
+      61%,
+      30%
+    ); /* Darker shade of the accent for contrast */
     --table-header-size: 24px;
     --table-text-size: 18px;
     --table-add-button-color: hsl(30, 61%, 30%); /* Darker for visibility */

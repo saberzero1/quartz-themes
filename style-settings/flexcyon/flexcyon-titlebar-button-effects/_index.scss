@@ -1,0 +1,16 @@
+body .titlebar-button.mod-minimize:hover {
+  color: var(--color-cyan);
+}
+body .titlebar-button.mod-maximize:hover {
+  color: var(--color-blue);
+}
+body .titlebar-button.mod-close:hover {
+  color: var(--text-normal);
+}
+body .titlebar-button {
+  opacity: var(--dimmed);
+}
+body .titlebar-button:hover {
+  opacity: unset;
+  scale: var(--expand);
+}

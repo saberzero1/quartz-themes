@@ -1,0 +1,5 @@
+body.theme-setting-overrideClearUnusedImages {
+  .modal:has(.unused-images-logs) {
+    padding-bottom: 1em;
+  }
+}

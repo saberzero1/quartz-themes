@@ -1,0 +1,286 @@
+.custom-checkboxes [data-task="x"] input[type="checkbox"]:checked,
+.custom-checkboxes [data-task="x"][type="checkbox"]:checked {
+  --checkbox-color: rgb(var(--green));
+  --checkbox-color-hover: rgb(var(--green));
+}
+
+.custom-checkboxes [data-task="*"] input[type="checkbox"]:checked,
+.custom-checkboxes [data-task="*"][type="checkbox"]:checked,
+.custom-checkboxes [data-task="/"] input[type="checkbox"]:checked,
+.custom-checkboxes [data-task="/"][type="checkbox"]:checked,
+.custom-checkboxes [data-task="<"] input[type="checkbox"]:checked,
+.custom-checkboxes [data-task="<"][type="checkbox"]:checked,
+.custom-checkboxes [data-task=">"] input[type="checkbox"]:checked,
+.custom-checkboxes [data-task=">"][type="checkbox"]:checked,
+.custom-checkboxes [data-task="?"] input[type="checkbox"]:checked,
+.custom-checkboxes [data-task="?"][type="checkbox"]:checked,
+.custom-checkboxes [data-task="I"] input[type="checkbox"]:checked,
+.custom-checkboxes [data-task="I"][type="checkbox"]:checked,
+.custom-checkboxes [data-task="S"] input[type="checkbox"]:checked,
+.custom-checkboxes [data-task="S"][type="checkbox"]:checked,
+.custom-checkboxes [data-task="b"] input[type="checkbox"]:checked,
+.custom-checkboxes [data-task="b"][type="checkbox"]:checked,
+.custom-checkboxes [data-task="c"] input[type="checkbox"]:checked,
+.custom-checkboxes [data-task="c"][type="checkbox"]:checked,
+.custom-checkboxes [data-task="l"] input[type="checkbox"]:checked,
+.custom-checkboxes [data-task="l"][type="checkbox"]:checked,
+.custom-checkboxes [data-task="n"] input[type="checkbox"]:checked,
+.custom-checkboxes [data-task="n"][type="checkbox"]:checked,
+.custom-checkboxes [data-task="p"] input[type="checkbox"]:checked,
+.custom-checkboxes [data-task="p"][type="checkbox"]:checked,
+.custom-checkboxes [data-task="r"] input[type="checkbox"]:checked,
+.custom-checkboxes [data-task="s"] input[type="checkbox"]:checked {
+  --checkbox-color: transparent;
+  --checkbox-color-hover: transparent;
+  border-width: 0;
+}
+
+.custom-checkboxes [data-task=">"] input[type="checkbox"]:checked:after,
+.custom-checkboxes [data-task=">"][type="checkbox"]:checked:after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 470 '%3E%3Cpath d='M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h94.1L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135V328c0 13.3 10.7 24 24 24s24-10.7 24-24V168c0-13.3-10.7-24-24-24H160z'/%3E%3C/svg%3E");
+  -webkit-mask-size: contain;
+  background-color: rgb(var(--cyan));
+  left: 0;
+}
+
+.custom-checkboxes [data-task=">"] input[type="checkbox"]:checked:before,
+.custom-checkboxes [data-task=">"][type="checkbox"]:checked:before {
+  color: rgb(var(--cyan));
+  margin: 0 3px;
+  position: absolute;
+  left: calc(var(--checkbox-size) * 1);
+  font-weight: 700;
+}
+
+.custom-checkboxes [data-task="<"] input[type="checkbox"]:checked:after,
+.custom-checkboxes [data-task="<"][type="checkbox"]:checked:after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 444 502'%3E%3Cpath d='M152 64H296V24C296 10.75 306.7 0 320 0C333.3 0 344 10.75 344 24V64H384C419.3 64 448 92.65 448 128V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V128C0 92.65 28.65 64 64 64H104V24C104 10.75 114.7 0 128 0C141.3 0 152 10.75 152 24V64zM48 448C48 456.8 55.16 464 64 464H384C392.8 464 400 456.8 400 448V192H48V448z'/%3E%3C/svg%3E");
+  -webkit-mask-size: contain;
+  background-color: rgb(var(--turquoise));
+  left: 0;
+}
+
+.custom-checkboxes [data-task="<"] input[type="checkbox"]:checked:before,
+.custom-checkboxes [data-task="<"][type="checkbox"]:checked:before {
+  color: rgb(var(--turquoise));
+  margin: 0 3px;
+  position: absolute;
+  left: calc(var(--checkbox-size) * 1);
+  font-weight: 700;
+}
+
+.custom-checkboxes [data-task="!"] input[type="checkbox"]:checked,
+.custom-checkboxes [data-task="!"][type="checkbox"]:checked,
+.custom-checkboxes [data-task="i"] input[type="checkbox"]:checked,
+.custom-checkboxes [data-task="i"][type="checkbox"]:checked {
+  --checkbox-color: rgb(var(--orange));
+  --checkbox-color-hover: rgb(var(--orange));
+}
+
+.custom-checkboxes [data-task="!"] input[type="checkbox"]:checked:after,
+.custom-checkboxes [data-task="!"][type="checkbox"]:checked:after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 122 550'%3E%3Cpath d='M96 64c0-17.7-14.3-32-32-32S32 46.3 32 64V320c0 17.7 14.3 32 32 32s32-14.3 32-32V64zM64 480c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40s17.9 40 40 40z'/%3E%3C/svg%3E");
+  -webkit-mask-size: 20%;
+}
+
+.custom-checkboxes [data-task="!"] input[type="checkbox"]:checked:before,
+.custom-checkboxes [data-task="!"][type="checkbox"]:checked:before,
+.custom-checkboxes [data-task="-"] input[type="checkbox"]:checked:before,
+.custom-checkboxes [data-task="-"][type="checkbox"]:checked:before,
+.custom-checkboxes [data-task="c"] input[type="checkbox"]:checked:before,
+.custom-checkboxes [data-task="c"][type="checkbox"]:checked:before,
+.custom-checkboxes [data-task="i"] input[type="checkbox"]:checked:before,
+.custom-checkboxes [data-task="i"][type="checkbox"]:checked:before {
+  color: var(--checkbox-color);
+  margin: 0 3px;
+  position: absolute;
+  left: calc(var(--checkbox-size) * 1);
+  font-weight: 700;
+}
+
+.custom-checkboxes [data-task="-"] {
+  text-decoration: var(--checklist-done-decoration);
+  color: var(--checklist-done-color);
+}
+
+.custom-checkboxes [data-task="-"] input[type="checkbox"]:checked,
+.custom-checkboxes [data-task="-"][type="checkbox"]:checked {
+  --checkbox-color: rgb(var(--red));
+  --checkbox-color-hover: rgb(var(--red));
+}
+
+.custom-checkboxes [data-task="-"] input[type="checkbox"]:checked:after,
+.custom-checkboxes [data-task="-"][type="checkbox"]:checked:after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 530'%3E%3Cpath d='M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z'/%3E%3C/svg%3E");
+  -webkit-mask-size: 55%;
+}
+
+.custom-checkboxes [data-task="/"] input[type="checkbox"]:checked:after,
+.custom-checkboxes [data-task="/"][type="checkbox"]:checked:after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z'/%3E%3C/svg%3E");
+  -webkit-mask-size: contain;
+  background-color: rgb(var(--green));
+  left: 0;
+}
+
+.custom-checkboxes [data-task="/"] input[type="checkbox"]:checked:before,
+.custom-checkboxes [data-task="/"][type="checkbox"]:checked:before,
+.custom-checkboxes [data-task="S"] input[type="checkbox"]:checked:before,
+.custom-checkboxes [data-task="S"][type="checkbox"]:checked:before,
+.custom-checkboxes [data-task="p"] input[type="checkbox"]:checked:before,
+.custom-checkboxes [data-task="p"][type="checkbox"]:checked:before {
+  color: rgb(var(--green));
+  margin: 0 3px;
+  position: absolute;
+  left: calc(var(--checkbox-size) * 1);
+  font-weight: 700;
+}
+
+.custom-checkboxes [data-task="?"] input[type="checkbox"]:checked:after,
+.custom-checkboxes [data-task="?"][type="checkbox"]:checked:after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 179' version='1.1'%3E%3Cpath d='M 22.640 6.632 C 15.939 8.690, 8.886 15.824, 6.949 22.503 C 5.751 26.633, 5.500 38.514, 5.500 91 L 5.500 154.500 8.359 160.323 C 11.460 166.639, 16.745 171.265, 22.911 173.063 C 25.298 173.758, 48.615 174.007, 92.500 173.804 C 155.743 173.513, 158.625 173.419, 161.500 171.568 C 166.511 168.341, 170.073 164.704, 172.342 160.500 C 174.478 156.541, 174.503 155.858, 174.792 93.705 C 174.977 54.030, 174.709 28.880, 174.066 25.397 C 172.322 15.963, 165.208 8.466, 155.807 6.154 C 152.501 5.341, 132.856 5.021, 89.307 5.070 C 37.483 5.128, 26.715 5.380, 22.640 6.632 M 72.564 43.123 C 65.124 44.867, 58.092 52.842, 58.022 59.615 C 57.982 63.481, 61.727 67, 65.881 67 C 69.991 67, 71.779 65.891, 74.343 61.750 L 76.046 59 87.976 59 C 100.970 59, 104.518 59.944, 105.447 63.646 C 106.421 67.526, 104.509 69.604, 94.434 75.617 C 89.189 78.747, 84.246 82.238, 83.449 83.376 C 81.722 85.842, 81.548 92.914, 83.130 96.385 C 86.088 102.877, 96.867 101.553, 98.153 94.540 C 98.372 93.344, 101.499 90.811, 106.178 88.040 C 110.394 85.543, 114.842 82.600, 116.063 81.500 C 122.168 75.999, 123.935 62.981, 119.674 54.907 C 116.650 49.178, 110.395 44.465, 103.994 43.092 C 97.948 41.795, 78.146 41.815, 72.564 43.123 M 86.212 115.129 C 82.159 116.297, 79.009 121.125, 79.004 126.173 C 78.994 135.843, 91.548 140.543, 98.586 133.505 C 100.471 131.620, 101 130.033, 101 126.268 C 101 120.546, 99.053 117.338, 94.401 115.394 C 90.647 113.826, 90.721 113.828, 86.212 115.129' stroke='none' fill='%23142c4c' fill-rule='evenodd'/%3E%3C/svg%3E");
+  -webkit-mask-size: contain;
+  background-color: rgb(var(--sea));
+  left: 0;
+}
+
+.custom-checkboxes [data-task="?"] input[type="checkbox"]:checked:before,
+.custom-checkboxes [data-task="?"][type="checkbox"]:checked:before {
+  color: rgb(var(--sea));
+  margin: 0 3px;
+  position: absolute;
+  left: calc(var(--checkbox-size) * 1);
+  font-weight: 700;
+}
+
+.custom-checkboxes [data-task="*"] input[type="checkbox"]:checked:after,
+.custom-checkboxes [data-task="*"][type="checkbox"]:checked:after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z'/%3E%3C/svg%3E");
+  -webkit-mask-size: contain;
+  background-color: rgb(var(--yellow));
+  left: 0;
+}
+
+.custom-checkboxes [data-task="*"] input[type="checkbox"]:checked:before,
+.custom-checkboxes [data-task="*"][type="checkbox"]:checked:before {
+  color: rgb(var(--yellow));
+  margin: 0 3px;
+  position: absolute;
+  left: calc(var(--checkbox-size) * 1);
+  font-weight: 700;
+}
+
+.custom-checkboxes [data-task="n"] input[type="checkbox"]:checked:after,
+.custom-checkboxes [data-task="n"][type="checkbox"]:checked:after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath d='M32 32C32 14.3 46.3 0 64 0H320c17.7 0 32 14.3 32 32s-14.3 32-32 32H290.5l11.4 148.2c36.7 19.9 65.7 53.2 79.5 94.7l1 3c3.3 9.8 1.6 20.5-4.4 28.8s-15.7 13.3-26 13.3H32c-10.3 0-19.9-4.9-26-13.3s-7.7-19.1-4.4-28.8l1-3c13.8-41.5 42.8-74.8 79.5-94.7L93.5 64H64C46.3 64 32 49.7 32 32zM160 384h64v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V384z'/%3E%3C/svg%3E");
+  -webkit-mask-size: contain;
+  background-color: rgb(var(--lemon));
+  left: 0;
+}
+
+.custom-checkboxes [data-task="I"] input[type="checkbox"]:checked:before,
+.custom-checkboxes [data-task="I"][type="checkbox"]:checked:before,
+.custom-checkboxes [data-task="c"][type="checkbox"]:checked:before,
+.custom-checkboxes [data-task="n"] input[type="checkbox"]:checked:before,
+.custom-checkboxes [data-task="n"][type="checkbox"]:checked:before,
+.custom-checkboxes [data-task="s"] input[type="checkbox"]:checked:before {
+  color: rgb(var(--lemon));
+  margin: 0 3px;
+  position: absolute;
+  left: calc(var(--checkbox-size) * 1);
+  font-weight: 700;
+}
+
+.custom-checkboxes [data-task="l"] input[type="checkbox"]:checked:after,
+.custom-checkboxes [data-task="l"][type="checkbox"]:checked:after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath d='M320 144c0 79.5-64.5 144-144 144S32 223.5 32 144S96.5 0 176 0s144 64.5 144 144zM176 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM144 480V317.1c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32z'/%3E%3C/svg%3E");
+  -webkit-mask-size: contain;
+  background-color: rgb(var(--blue));
+  left: 0;
+}
+
+.custom-checkboxes [data-task="l"] input[type="checkbox"]:checked:before,
+.custom-checkboxes [data-task="l"][type="checkbox"]:checked:before {
+  color: rgb(var(--blue));
+  margin: 0 3px;
+  position: absolute;
+  left: calc(var(--checkbox-size) * 1);
+  font-weight: 700;
+}
+
+.custom-checkboxes [data-task="i"] input[type="checkbox"]:checked:after,
+.custom-checkboxes [data-task="i"][type="checkbox"]:checked:after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 512'%3E%3Cpath d='M144 80c0 26.5-21.5 48-48 48s-48-21.5-48-48s21.5-48 48-48s48 21.5 48 48zM0 224c0-17.7 14.3-32 32-32H96c17.7 0 32 14.3 32 32V448h32c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H64V256H32c-17.7 0-32-14.3-32-32z'/%3E%3C/svg%3E");
+  -webkit-mask-size: contain;
+}
+
+.custom-checkboxes [data-task="I"] input[type="checkbox"]:checked:after,
+.custom-checkboxes [data-task="I"][type="checkbox"]:checked:after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath d='M272 384c9.6-31.9 29.5-59.1 49.2-86.2l0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4l0 0c19.8 27.1 39.7 54.4 49.2 86.2H272zM192 512c44.2 0 80-35.8 80-80V416H112v16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z'/%3E%3C/svg%3E");
+  -webkit-mask-size: contain;
+  background-color: rgb(var(--lemon));
+  left: 0;
+}
+
+.custom-checkboxes [data-task="S"] input[type="checkbox"]:checked:after,
+.custom-checkboxes [data-task="S"][type="checkbox"]:checked:after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 170' version='1.1'%3E%3Cpath d='M 73.633 4.553 C 45.770 10.089, 24.575 26.633, 12.450 52.309 C 6.771 64.334, 5.500 70.677, 5.500 87 C 5.500 103.323, 6.771 109.666, 12.450 121.691 C 24.186 146.544, 45.625 163.776, 71.436 169.103 C 120.309 179.190, 166.043 146.223, 172.153 96.501 C 176.830 58.443, 153.240 20.809, 116.500 7.718 C 103.999 3.264, 86.587 1.978, 73.633 4.553 M 84.949 41.840 C 83.486 43.025, 82.467 45.215, 82.088 47.992 C 81.552 51.922, 81.154 52.423, 77.591 53.654 C 71.868 55.632, 67.487 59.363, 65.102 64.289 C 62.395 69.882, 62.453 75.464, 65.271 80.500 C 67.957 85.299, 75.837 89.608, 89.275 93.627 C 102.498 97.582, 106.049 101.456, 100.471 105.844 C 96.083 109.296, 91.116 109.441, 79.440 106.461 C 67.550 103.427, 64.583 103.831, 63.374 108.647 C 62.105 113.701, 64.649 116.208, 73.782 118.907 L 82 121.335 82.015 125.417 C 82.024 127.663, 82.361 129.995, 82.765 130.600 C 84.145 132.667, 87.955 134.049, 90.506 133.409 C 93.612 132.630, 95 130.244, 95 125.684 C 95 122.470, 95.286 122.163, 99.250 121.129 C 110.133 118.289, 116 111.429, 116 101.543 C 116 91.121, 109.966 85.821, 91.606 80.116 C 86.165 78.425, 80.652 76.347, 79.356 75.498 C 76.283 73.484, 76.365 70.645, 79.570 68.123 C 83.524 65.014, 90.182 64.441, 98.792 66.471 C 106.048 68.182, 106.286 68.177, 108.862 66.263 C 114.645 61.965, 111.226 54.875, 102.687 53.461 C 96.414 52.422, 95.002 51.369, 94.985 47.715 C 94.967 43.940, 94.279 42.709, 91.316 41.150 C 88.379 39.604, 87.607 39.688, 84.949 41.840' stroke='none' fill='%23132b4b' fill-rule='evenodd'/%3E%3C/svg%3E");
+  -webkit-mask-size: contain;
+  background-color: rgb(var(--green));
+  left: 0;
+}
+
+.custom-checkboxes [data-task="p"] input[type="checkbox"]:checked:after,
+.custom-checkboxes [data-task="p"][type="checkbox"]:checked:after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M313.4 32.9c26 5.2 42.9 30.5 37.7 56.5l-2.3 11.4c-5.3 26.7-15.1 52.1-28.8 75.2H464c26.5 0 48 21.5 48 48c0 25.3-19.5 46-44.3 47.9c7.7 8.5 12.3 19.8 12.3 32.1c0 23.4-16.8 42.9-38.9 47.1c4.4 7.2 6.9 15.8 6.9 24.9c0 21.3-13.9 39.4-33.1 45.6c.7 3.3 1.1 6.8 1.1 10.4c0 26.5-21.5 48-48 48H294.5c-19 0-37.5-5.6-53.3-16.1l-38.5-25.7C176 420.4 160 390.4 160 358.3V320 272 247.1c0-29.2 13.3-56.7 36-75l7.4-5.9c26.5-21.2 44.6-51 51.2-84.2l2.3-11.4c5.2-26 30.5-42.9 56.5-37.7zM32 192H96c17.7 0 32 14.3 32 32V448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32z'/%3E%3C/svg%3E");
+  -webkit-mask-size: contain;
+  background-color: rgb(var(--green));
+  left: 0;
+}
+
+.custom-checkboxes [data-task="c"] input[type="checkbox"]:checked:after,
+.custom-checkboxes [data-task="c"][type="checkbox"]:checked:after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M313.4 479.1c26-5.2 42.9-30.5 37.7-56.5l-2.3-11.4c-5.3-26.7-15.1-52.1-28.8-75.2H464c26.5 0 48-21.5 48-48c0-25.3-19.5-46-44.3-47.9c7.7-8.5 12.3-19.8 12.3-32.1c0-23.4-16.8-42.9-38.9-47.1c4.4-7.3 6.9-15.8 6.9-24.9c0-21.3-13.9-39.4-33.1-45.6c.7-3.3 1.1-6.8 1.1-10.4c0-26.5-21.5-48-48-48H294.5c-19 0-37.5 5.6-53.3 16.1L202.7 73.8C176 91.6 160 121.6 160 153.7V192v48 24.9c0 29.2 13.3 56.7 36 75l7.4 5.9c26.5 21.2 44.6 51 51.2 84.2l2.3 11.4c5.2 26 30.5 42.9 56.5 37.7zM32 320H96c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32H32C14.3 32 0 46.3 0 64V288c0 17.7 14.3 32 32 32z'/%3E%3C/svg%3E");
+  -webkit-mask-size: 100%;
+  background-color: rgb(var(--red));
+  left: 0;
+}
+
+.custom-checkboxes [data-task="b"] input[type="checkbox"]:checked:after,
+.custom-checkboxes [data-task="b"][type="checkbox"]:checked:after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z'/%3E%3C/svg%3E");
+  -webkit-mask-size: contain;
+  background-color: var(--color-accent);
+  left: 0;
+}
+
+.custom-checkboxes [data-task="b"] input[type="checkbox"]:checked:before,
+.custom-checkboxes [data-task="b"][type="checkbox"]:checked:before {
+  color: var(--color-accent);
+  margin: 0 3px;
+  position: absolute;
+  left: calc(var(--checkbox-size) * 1);
+  font-weight: 700;
+}
+
+.custom-checkboxes [data-task="c"][type="checkbox"]:checked:after,
+.custom-checkboxes [data-task="s"] input[type="checkbox"]:checked:after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 177 175' version='1.1'%3E%3Cpath d='M 40.344 3.037 C 30.953 4.904, 22.308 11.667, 17.923 20.577 L 15.500 25.500 15.500 86 C 15.500 145.687, 15.529 146.562, 17.637 151.122 C 20.705 157.757, 26.321 163.519, 32.839 166.720 L 38.500 169.500 100.250 169.779 L 162 170.059 162 159.529 L 162 149 156.500 149 L 151 149 151 138.500 L 151 128 156.508 128 L 162.015 128 161.758 65.250 L 161.500 2.500 103 2.356 C 70.825 2.276, 42.630 2.583, 40.344 3.037 M 57.195 49.750 L 57.500 54.500 93.500 54.500 L 129.500 54.500 129.805 49.750 L 130.110 45 93.500 45 L 56.890 45 57.195 49.750 M 57 70.500 L 57 75 93.500 75 L 130 75 130 70.500 L 130 66 93.500 66 L 57 66 57 70.500 M 42 129.273 C 40.625 129.956, 38.662 132.228, 37.638 134.320 C 35.970 137.728, 35.920 138.508, 37.163 141.812 C 39.877 149.030, 39.965 149.042, 87.500 148.754 L 129.500 148.500 129.785 138.250 L 130.070 128 87.285 128.015 C 55.215 128.026, 43.874 128.341, 42 129.273' stroke='none' fill='%23142b4b' fill-rule='evenodd'/%3E%3C/svg%3E");
+  -webkit-mask-size: 100%;
+  background-color: var(--color-accent);
+  left: 0;
+}
+
+.custom-checkboxes [data-task="c"][type="checkbox"]:checked:before,
+.custom-checkboxes [data-task="s"] input[type="checkbox"]:checked:before {
+  color: var(--color-accent);
+  left: calc(var(--checkbox-size) * 1);
+}
+
+.custom-checkboxes [data-task="c"][type="checkbox"]:checked:after,
+.custom-checkboxes [data-task="r"] input[type="checkbox"]:checked:after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath d='M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z'/%3E%3C/svg%3E");
+  -webkit-mask-size: 100%;
+  background-color: rgb(var(--lemon));
+  left: 0;
+}

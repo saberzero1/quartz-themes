@@ -1,0 +1,16 @@
+.ct-obsidian,
+.theme-dark.ct-obsidian {
+  --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
+  --background-secondary: var(--color-base-20);
+  --background-modifier-border: var(--color-base-30);
+  --background-modifier-border-hover: var(--color-base-35);
+  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
+  --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12);
+  --indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3);
+  --interactive-normal: var(--color-base-00);
+  --interactive-hover: var(--color-base-10);
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-50);
+}

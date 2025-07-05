@@ -1,0 +1,10 @@
+body .markdown-rendered mark,
+body .cm-s-obsidian span.cm-formatting-highlight,
+body .cm-s-obsidian span.cm-highlight,
+body .search-result-file-matched-text {
+  outline: 1px solid hsla(var(--highlight-hue), 90%, 50%, 0.85);
+  box-shadow: 0 0 10px hsla(var(--highlight-hue), 90%, 50%, 0.75);
+  padding: 0 0.15em;
+  border-radius: 0.2em;
+  border: none;
+}

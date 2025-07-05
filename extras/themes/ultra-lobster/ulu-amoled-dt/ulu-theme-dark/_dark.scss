@@ -1,0 +1,24 @@
+.ulu-amoled-dt {
+  --color-base-00: #0b0b0b;
+  --color-base-10: #2e2e2e;
+  --color-base-20: #000;
+  --color-base-25: #333;
+  --color-base-30: #3d3d3d;
+  --color-base-35: #515151;
+  --color-base-40: #6b6b6b;
+  --color-base-50: #949494;
+  --color-base-60: #a6a6a6;
+  --color-base-70: #cdcdcd;
+  --color-base-100: #fff;
+  --gradient-bg-primary: linear-gradient(
+    135deg,
+    #060606 20.62%,
+    #000 90.72%
+  ) !important;
+  --gradient-bg-secondary: linear-gradient(
+    135deg,
+    #030303 20.62%,
+    #000 90.72%
+  ) !important;
+  --background-modifier-border-alt: #131313 !important;
+}

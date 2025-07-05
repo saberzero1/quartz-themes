@@ -9,9 +9,11 @@
     "compile-all": "just compile-all",
     "compile-single": "just compile-single",
     "check": "just check",
+    "force-compile": "just force-atomize",
+    "force-format": "just force-format",
     "format": "just format",
-    "update": "just update",
     "theme": "just theme",
+    "update": "just update",
     "verify": "just verify",
     "verify-ci": "just verify-ci"
   },
@@ -34,12 +36,18 @@
   "homepage": "https://github.com/saberzero1/quartz-themes#readme",
   "devDependencies": {
     "css": "^3.0.0",
-    "prettier": "^3.3.3",
+    "prettier": "^3.5.3",
     "sass": "^1.79.3"
   },
   "dependencies": {
+    "@csstools/postcss-color-mix-function": "^3.0.10",
+    "@csstools/postcss-relative-color-syntax": "^3.0.10",
+    "js-yaml": "^4.1.0",
     "just-install": "^2.0.2",
     "postcss": "^8.5.3",
+    "postcss-calc": "^10.1.1",
+    "postcss-color-converter": "^1.2.1",
+    "postcss-custom-properties": "^14.0.6",
     "postcss-prune-var": "^1.1.2",
     "postcss-scss": "^4.0.9"
   }

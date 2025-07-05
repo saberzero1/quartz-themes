@@ -1,0 +1,14 @@
+body.justify-align
+  div[data-type="markdown"]
+  div.cm-line:not(.HyperMD-codeblock),
+body.justify-align
+  div[data-type="markdown"]
+  :is(.markdown-preview-view, .markdown-rendered) {
+  text-align: justify;
+  hyphens: auto;
+}
+
+body.justify-align .print *:not(blockquote) > p {
+  text-align: justify;
+  hyphens: auto;
+}

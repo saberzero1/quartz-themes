@@ -1,0 +1,12 @@
+.view-content .heading-collapse-indicator.collapse-indicator,
+.HyperMD-header .collapse-indicator {
+  opacity: 1 !important;
+  margin-right: 0.3em;
+}
+.view-content .heading-collapse-indicator.collapse-icon svg.svg-icon,
+.HyperMD-header .collapse-indicator svg.svg-icon {
+  width: 0.5em !important;
+  height: 0.5em !important;
+  stroke-width: 3px !important;
+  color: var(--text-faint) !important;
+}

@@ -1,0 +1,16 @@
+body.hide-status-off:not(.is-mobile) .status-bar:not(:hover) {
+  opacity: 0.3;
+  border-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+body.hide-status-off:not(.is-mobile)
+  .mod-sidedock.mod-right-split
+  .workspace-leaf-content
+  > .node-insert-event,
+body.hide-status-off:not(.is-mobile)
+  .mod-sidedock.mod-right-split
+  .workspace-leaf-content
+  > .view-content {
+  margin-bottom: 40px;
+}

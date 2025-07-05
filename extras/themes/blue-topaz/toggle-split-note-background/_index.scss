@@ -1,0 +1,16 @@
+body.toggle-split-note-background
+  .workspace-split.mod-horizontal:is(.mod-left-split, .mod-right-split)
+  .workspace-leaf-content
+  .markdown-rendered,
+body.toggle-split-note-background
+  .workspace-split.mod-horizontal:is(.mod-left-split, .mod-right-split)
+  .workspace-tab-container
+  .workspace-leaf-content
+  .cm-scroller,
+body.toggle-split-note-background
+  .workspace-split.mod-horizontal:is(.mod-left-split, .mod-right-split)
+  .workspace-tab-container
+  .workspace-leaf-content
+  .markdown-reading-view {
+  background: initial;
+}

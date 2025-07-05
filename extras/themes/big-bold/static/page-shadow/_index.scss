@@ -1,0 +1,33 @@
+.page-shadow .workspace-ribbon.is-collapsed {
+  padding-right: 0px !important;
+  padding-left: 0.1px !important;
+  z-index: 500;
+}
+
+.page-shadow:not(.floating-doc) .workspace,
+.page-shadow:not(.floating-doc) .workspace > .workspace-split,
+.page-shadow:not(.floating-doc) .workspace-ribbon,
+.page-shadow:not(.floating-doc) .workspace-ribbon::before,
+.page-shadow .vertical-tab-content,
+.page-shadow .vertical-tab-header,
+.floating-doc .view-content {
+  box-shadow: 0 0 70px var(--shadow-color) inset;
+}
+
+.is-focused:not(.floating-doc) .workspace-leaf.mod-active .view-header,
+.page-shadow:not(.floating-doc) .view-header,
+.page-shadow:not(.floating-doc) .workspace-leaf-content,
+.page-shadow:not(.floating-doc) .workspace-tab-container,
+.page-shadow:not(.floating-doc) .workspace-leaf.mod-active,
+.page-shadow:not(.floating-doc) .view-content {
+  background-color: transparent !important;
+}
+
+.page-shadow {
+  --ribbon-background-collapsed: var(--background-secondary);
+  --ribbon-background: transparent;
+}
+
+.page-shadow .workspace-ribbon.mod-left.is-collapsed:before {
+  background-color: var(--background-secondary) !important;
+}

@@ -1,0 +1,27 @@
+body .markdown-source-view.is-live-preview .media-embed:after,
+body .markdown-rendered .media-embed:after,
+body .style-settings-container .media-embed:after {
+  content: attr(alt);
+  font-family: var(--font-default);
+  font-size: 0.8em;
+  font-weight: 100;
+  color: var(--text-muted);
+  display: block;
+  width: 100%;
+  margin-top: 0.5em;
+}
+body-right .markdown-source-view.is-live-preview .media-embed:after,
+body-right .markdown-rendered .media-embed:after,
+body-right .style-settings-container .media-embed:after {
+  text-align: end;
+}
+body-left .markdown-source-view.is-live-preview .media-embed:after,
+body-left .markdown-rendered .media-embed:after,
+body-left .style-settings-container .media-embed:after {
+  text-align: start;
+}
+body-middle .markdown-source-view.is-live-preview .media-embed:after,
+body-middle .markdown-rendered .media-embed:after,
+body-middle .style-settings-container .media-embed:after {
+  text-align: center;
+}

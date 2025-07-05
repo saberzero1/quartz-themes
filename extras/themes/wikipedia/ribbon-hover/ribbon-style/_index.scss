@@ -1,0 +1,10 @@
+.ribbon-hover .workspace-ribbon.mod-left.is-collapsed:not(:hover) {
+  opacity: 0;
+  max-width: 0.1px;
+  min-width: 0px;
+  padding: 0px;
+}
+
+.ribbon-hover .workspace-ribbon.mod-left {
+  transition: 0.25s;
+}

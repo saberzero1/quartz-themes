@@ -1,0 +1,17 @@
+body.mu-outline-code .markdown-reading-view div > pre {
+  border: 1px solid var(--mu-code-block-border);
+}
+
+body.mu-outline-code .markdown-source-view .HyperMD-codeblock {
+  border-left: 1px solid var(--mu-code-block-border);
+  border-right: 1px solid var(--mu-code-block-border);
+}
+
+body.mu-outline-code .markdown-source-view div.HyperMD-codeblock-begin-bg {
+  border-top: 1px solid var(--mu-code-block-border);
+}
+
+body.mu-outline-code .markdown-source-view div.HyperMD-codeblock-end-bg {
+  border-top: 0;
+  border-bottom: 1px solid var(--mu-code-block-border);
+}

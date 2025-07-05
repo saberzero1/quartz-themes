@@ -1,0 +1,11 @@
+.shib-floating-animated-tab-toggle
+  .mod-horizontal:not(.mod-left-split):not(.mod-right-split)
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header-container-inner,
+.shib-floating-animated-tab-toggle
+  .mod-vertical:not(.mod-left-split):not(.mod-right-split)
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header-container-inner {
+  width: unset;
+  gap: var(--shib-floating-tab-gap, 10px);
+}

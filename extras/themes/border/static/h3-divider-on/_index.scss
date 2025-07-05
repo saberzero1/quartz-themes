@@ -1,0 +1,34 @@
+body.h3-divider-on
+  :is(
+    .markdown-preview-sizer > div > h3,
+    .markdown-rendered > h3,
+    .HyperMD-header-3
+  )::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  right: 0px;
+  opacity: 0.5;
+  bottom: 0;
+  background-image: linear-gradient(
+    to left,
+    var(--h3-accent-color) 30%,
+    transparent 70%
+  );
+}
+
+body.h3-divider-on h3::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  right: 0px;
+  opacity: 0.5;
+  bottom: 0;
+  background-image: linear-gradient(
+    to left,
+    var(--h3-accent-color) 30%,
+    transparent 70%
+  );
+}

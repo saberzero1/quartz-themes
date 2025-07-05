@@ -1,0 +1,6 @@
+body:is(:not(.css-settings-manager), )
+  .workspace-split.mod-horizontal.mod-right-split
+  .workspace-tabs.mod-top.mod-top-right-space
+  .workspace-tab-container {
+  margin-top: 37px;
+}

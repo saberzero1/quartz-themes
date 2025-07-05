@@ -1,0 +1,262 @@
+.lightPalette-beige.darkPalette-default.accentColor-darkMode-alternative-1,
+.lightPalette-lightBeige.darkPalette-default.accentColor-darkMode-alternative-1,
+.darkPalette-beige.accentColor-darkMode-alternative-1 {
+  --accent-h: 217 !important;
+  --accent-s: 92% !important;
+  --accent-l: 10% !important;
+  --color-accent-1: #335a99 !important;
+  --color-accent-2: #4071bf !important;
+  --color-accent-3: #1a2d4c !important;
+  --OT-color-on-accent-1: #e6ecf6 !important;
+  --OT-color-muted-on-accent-1: #a6bde1 !important;
+  --OT-color-on-accent-2: #d9e3f2 !important;
+  --OT-color-on-accent-3: #668dcc !important;
+}
+
+.lightPalette-blue.darkPalette-default.accentColor-darkMode-alternative-1,
+.darkPalette-blue.accentColor-darkMode-alternative-1 {
+  --accent-h: 30 !important;
+  --accent-s: 93% !important;
+  --accent-l: 30% !important;
+  --color-accent-1: #f78719 !important;
+  --color-accent-2: #c56507 !important;
+  --color-accent-3: #844404 !important;
+  --OT-color-on-accent-1: #fef6ef !important;
+  --OT-color-muted-on-accent-1: #522a03 !important;
+  --OT-color-on-accent-2: #fdddbd !important;
+  --OT-color-on-accent-3: #faba7c !important;
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 33%);
+}
+
+.lightPalette-Brown.darkPalette-default.accentColor-darkMode-alternative-1,
+.darkPalette-brown.accentColor-darkMode-alternative-1 {
+  --accent-h: 148 !important;
+  --accent-s: 80% !important;
+  --accent-l: 20% !important;
+  --color-accent-1: #66eea5 !important;
+  --color-accent-2: #0d7b40 !important;
+  --color-accent-3: #084d28 !important;
+  --OT-color-on-accent-1: #084d28 !important;
+  /*    --OT-color-muted-on-accent-1:        #fff    !important; */
+  --OT-color-on-accent-2: #b2f7d2 !important;
+  --OT-color-on-accent-3: #b2f7d2 !important;
+  --OT-button-ON-bg: var(--color-accent-1);
+}
+
+.lightPalette-OBSIDIAN.darkPalette-default.accentColor-darkMode-alternative-1,
+.lightPalette-artDeco.darkPalette-default.accentColor-darkMode-alternative-1,
+.darkPalette-OBSIDIAN.accentColor-darkMode-alternative-1,
+.darkPalette-black.accentColor-darkMode-alternative-1 {
+  --accent-h: 134 !important;
+  --accent-s: 40% !important;
+  --accent-l: 50% !important;
+  --color-accent-1: #28e855 !important;
+  --color-accent-2: #4db264 !important;
+  --color-accent-3: #24542f !important;
+  --OT-color-muted-on-accent-1: #24542f !important;
+  --OT-color-on-accent-2: #e0fce7 !important;
+  --OT-color-on-accent-3: #addbb7 !important;
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 22%);
+}
+
+.lightPalette-green.darkPalette-default.accentColor-darkMode-alternative-1,
+.darkPalette-green.accentColor-darkMode-alternative-1 {
+  --accent-h: 231 !important;
+  --accent-s: 70% !important;
+  --accent-l: 30% !important;
+  --color-accent-1: #445bde !important;
+  --color-accent-2: #2641d9 !important;
+  --color-accent-3: #1c309f !important;
+  --OT-color-on-accent-1: #ffffff !important;
+  --OT-color-muted-on-accent-1: #9eaaee !important;
+  --OT-color-on-accent-2: #c5ccf5 !important;
+  --OT-color-on-accent-3: #c5ccf5 !important;
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 33%);
+}
+
+.lightPalette-icy.darkPalette-default.accentColor-darkMode-alternative-1,
+.darkPalette-icy.accentColor-darkMode-alternative-1 {
+  --accent-h: 334 !important;
+  --accent-s: 80% !important;
+  --accent-l: 63% !important;
+  --color-accent-1: #a81353 !important;
+  --color-accent-2: #ec5797 !important;
+  --color-accent-3: #6b0c35 !important;
+  --OT-color-on-accent-1: #d6e8ff !important;
+  /*    --OT-color-muted-on-accent-1:    #fff    !important; */
+  --OT-color-on-accent-2: #d6e8ff !important;
+  /*    --OT-color-on-accent-3:            #fff    !important; */
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 33%);
+}
+
+.darkPalette-LYT.accentColor-darkMode-alternative-1 {
+  --accent-h: 194 !important;
+  --accent-s: 50% !important;
+  --accent-l: 40% !important;
+  --color-accent-1: #99cddd !important;
+  --color-accent-2: #338199 !important;
+  --color-accent-3: #19414d !important;
+  --OT-color-on-accent-1: var(--color-base-05);
+  --OT-color-muted-on-accent-1: #338199 !important;
+  --OT-color-on-accent-2: #cce6ee !important;
+  --OT-color-on-accent-3: #99cddd !important;
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 30%);
+}
+
+.lightPalette-metallicBlue.darkPalette-default.accentColor-darkMode-alternative-1,
+.darkPalette-metallicBlue.accentColor-darkMode-alternative-1 {
+  --accent-h: 86 !important;
+  --accent-s: 57% !important;
+  --accent-l: 20% !important;
+  --color-accent-1: #a1d35f !important;
+  --color-accent-2: #5c8525 !important;
+  --color-accent-3: #375016 !important;
+  /*    --OT-color-on-accent-1:                #fff    !important; */
+  --OT-color-muted-on-accent-1: #537821 !important;
+  --OT-color-on-accent-2: #e8f4d7 !important;
+  --OT-color-on-accent-3: #d0e9af !important;
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 30%);
+}
+
+.lightPalette-paradiso.darkPalette-default.accentColor-darkMode-alternative-1,
+.lightPalette-pistachio.darkPalette-default.accentColor-darkMode-alternative-1,
+.darkPalette-oliveGreen.accentColor-darkMode-alternative-1 {
+  --accent-h: 152 !important;
+  --accent-s: 50% !important;
+  --accent-l: 40% !important;
+  --color-accent-1: #73d0a4 !important;
+  --color-accent-2: #37a672 !important;
+  --color-accent-3: #226646 !important;
+  --OT-color-on-accent-1: #15402c !important;
+  --OT-color-muted-on-accent-1: #2f8c60 !important;
+  --OT-color-on-accent-2: #f2fbf7 !important;
+  --OT-color-on-accent-3: #8cd9b5 !important;
+  --OT-button-ON-bg: var(--color-accent-1);
+}
+
+.lightPalette-parchment.darkPalette-default.accentColor-darkMode-alternative-1,
+.darkPalette-parchment.accentColor-darkMode-alternative-1 {
+  --accent-h: 211 !important;
+  --accent-s: 71% !important;
+  --accent-l: 33% !important;
+  --color-accent-1: #257cda !important;
+  --color-accent-2: #195391 !important;
+  --color-accent-3: #07192c !important;
+  --OT-color-on-accent-1: var(--color-base-100) !important;
+  --OT-color-muted-on-accent-1: #144274 !important;
+  /*    --OT-color-on-accent-2:                #fff    !important; */
+  /*    --OT-color-on-accent-3:                #fff    !important; */
+  --OT-button-ON-bg: var(--color-accent-1);
+}
+
+.lightPalette-red.darkPalette-default.accentColor-darkMode-alternative-1,
+.darkPalette-red.accentColor-darkMode-alternative-1 {
+  --accent-h: 200 !important;
+  --accent-s: 80% !important;
+  --accent-l: 33% !important;
+  --color-accent-1: #47b5eb !important;
+  --color-accent-2: #116c99 !important;
+  --color-accent-3: #0a415c !important;
+  --OT-color-on-accent-1: #05202e !important;
+  --OT-color-muted-on-accent-1: #0f618a !important;
+  --OT-color-on-accent-2: #c5e5f5 !important;
+  --OT-color-on-accent-3: #e0f3fc !important;
+  --OT-button-ON-bg: var(--color-accent-1);
+}
+
+.lightPalette-solarized.darkPalette-default.accentColor-darkMode-alternative-1,
+.darkPalette-solarized.accentColor-darkMode-alternative-1 {
+  --accent-h: 205 !important;
+  --accent-s: 69% !important;
+  --accent-l: 49% !important;
+  --color-accent-1: var(--solarized-base2) !important;
+  --color-accent-2: var(--solarized-blue) !important;
+  --color-accent-3: var(--solarized-blue) !important;
+  --OT-color-on-accent-1: var(--solarized-base03) !important;
+  --OT-color-muted-on-accent-1: var(--solarized-base01) !important;
+  --OT-color-on-accent-2: var(--solarized-base02) !important;
+  --OT-color-on-accent-3: var(--solarized-base2) !important;
+  /*    --OT-view-header-title-focus-color:        var(--solarized-blue); */
+  --OT-button-cta-background-normal: var(--solarized-cyan);
+}
+
+.lightPalette-stone.darkPalette-default.accentColor-darkMode-alternative-1,
+.darkPalette-stone.accentColor-darkMode-alternative-1 {
+  --accent-h: 210 !important;
+  --accent-s: 50% !important;
+  --accent-l: 50% !important;
+  --color-accent-1: #a6bbd0 !important;
+  --color-accent-2: #597fa6 !important;
+  --color-accent-3: #2f4459 !important;
+  /*    --OT-color-on-accent-1:                #fff    !important; */
+  --OT-color-muted-on-accent-1: #597fa6 !important;
+  --OT-color-on-accent-2: #d3dde7 !important;
+  --OT-color-on-accent-3: #d3dde7 !important;
+  --OT-button-ON-bg: var(--color-accent-2);
+  --OT-button-cta-background-normal: #9bb2ca;
+  --OT-button-cta-text-normal: #1e2a37;
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 33%);
+}
+
+.lightPalette-sunnyMemos.accentColor-darkMode-alternative-1 {
+  --accent-h: 183 !important;
+  /*    c’est pour la sélection du texte qu’on explicite ici en HSL la couleur d’accentuation n°2    */
+  --accent-s: 100% !important;
+  --accent-l: 23% !important;
+  --color-accent-1: #004d51 !important;
+  --color-accent-2: #006d73 !important;
+  --color-accent-3: #00adb7 !important;
+  --OT-color-on-accent-1: #40f5ff !important;
+  /*    --OT-color-on-accent-2:    #000    !important; */
+  --OT-color-on-accent-3: #734000 !important;
+  /*    --OT-color-muted-on-accent-1:    grey; */
+}
+
+.lightPalette-Victorian-1.darkPalette-default.accentColor-darkMode-alternative-1,
+.darkPalette-victorian.accentColor-darkMode-alternative-1 {
+  --accent-h: 228 !important;
+  --accent-s: 100% !important;
+  --accent-l: 30% !important;
+  --color-accent-1: #0034ff !important;
+  --color-accent-2: #0022aa !important;
+  --color-accent-3: #001c88 !important;
+  --OT-color-on-accent-1: var(--color-base-100) !important;
+  /*    --OT-color-muted-on-accent-1:        #fff    !important; */
+  /*    --OT-color-on-accent-2:                #fff    !important; */
+  /*    --OT-color-on-accent-3:                #fff    !important; */
+  --OT-button-ON-bg: #88a0ff;
+  --OT-button-cta-background-normal: #1141ff;
+}
+
+.lightPalette-violet.darkPalette-default.accentColor-darkMode-alternative-1,
+.darkPalette-violet.accentColor-darkMode-alternative-1 {
+  --accent-h: 84 !important;
+  --accent-s: 50% !important;
+  --accent-l: 30% !important;
+  --color-accent-1: #9bc859 !important;
+  --color-accent-2: #5d802a !important;
+  --color-accent-3: #41591e !important;
+  /*    --OT-color-on-accent-1:            #D9EABF    !important; */
+  --OT-color-muted-on-accent-1: #4b6622 !important;
+  --OT-color-on-accent-2: #e0eecc !important;
+  --OT-color-on-accent-3: #d9eabf !important;
+  --OT-button-ON-bg: var(--color-accent-1);
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 33%);
+}
+
+.lightPalette-yellow.darkPalette-default.accentColor-darkMode-alternative-1,
+.darkPalette-yellow.accentColor-darkMode-alternative-1 {
+  --accent-h: 228 !important;
+  --accent-s: 97% !important;
+  --accent-l: 35% !important;
+  --color-accent-1: #0d3cfb !important;
+  --color-accent-2: #0325b0 !important;
+  --color-accent-3: #0329c1 !important;
+  --OT-color-on-accent-1: #var(--color-base-100) !important;
+  --OT-color-muted-on-accent-1: #a4b5fd !important;
+  /*    --OT-color-on-accent-2:                #fff    !important; */
+  /*    --OT-color-on-accent-3:                #fff    !important; */
+  --OT-button-ON-bg: var(--color-accent-1);
+  --OT-button-cta-background-normal: #5072fc;
+  --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 33%);
+}

@@ -1,0 +1,84 @@
+body [data-type="bookmarks"] .tree-item:nth-child(12n + 2) {
+  --nav-folder-collapse-color: var(--nav-folder-1-collapse-color);
+}
+body [data-type="bookmarks"] .tree-item:nth-child(12n + 3) {
+  --nav-folder-collapse-color: var(--nav-folder-2-collapse-color);
+}
+body [data-type="bookmarks"] .tree-item:nth-child(12n + 4) {
+  --nav-folder-collapse-color: var(--nav-folder-3-collapse-color);
+}
+body [data-type="bookmarks"] .tree-item:nth-child(12n + 5) {
+  --nav-folder-collapse-color: var(--nav-folder-4-collapse-color);
+}
+body [data-type="bookmarks"] .tree-item:nth-child(12n + 6) {
+  --nav-folder-collapse-color: var(--nav-folder-5-collapse-color);
+}
+body [data-type="bookmarks"] .tree-item:nth-child(12n + 7) {
+  --nav-folder-collapse-color: var(--nav-folder-6-collapse-color);
+}
+body [data-type="bookmarks"] .tree-item:nth-child(12n + 8) {
+  --nav-folder-collapse-color: var(--nav-folder-7-collapse-color);
+}
+body [data-type="bookmarks"] .tree-item:nth-child(12n + 9) {
+  --nav-folder-collapse-color: var(--nav-folder-8-collapse-color);
+}
+body [data-type="bookmarks"] .tree-item:nth-child(12n + 10) {
+  --nav-folder-collapse-color: var(--nav-folder-9-collapse-color);
+}
+body [data-type="bookmarks"] .tree-item:nth-child(12n + 11) {
+  --nav-folder-collapse-color: var(--nav-folder-10-collapse-color);
+}
+body [data-type="bookmarks"] .tree-item:nth-child(12n + 12) {
+  --nav-folder-collapse-color: var(--nav-folder-11-collapse-color);
+}
+body [data-type="bookmarks"] .tree-item:nth-child(12n + 13) {
+  --nav-folder-collapse-color: var(--nav-folder-12-collapse-color);
+}
+body .nav-files-container > div > .nav-folder:nth-child(12n + 2),
+body .nav-folder-children > .nav-folder:nth-child(12n + 2) {
+  --nav-folder-collapse-color: var(--nav-folder-1-collapse-color);
+}
+body .nav-files-container > div > .nav-folder:nth-child(12n + 3),
+body .nav-folder-children > .nav-folder:nth-child(12n + 3) {
+  --nav-folder-collapse-color: var(--nav-folder-2-collapse-color);
+}
+body .nav-files-container > div > .nav-folder:nth-child(12n + 4),
+body .nav-folder-children > .nav-folder:nth-child(12n + 4) {
+  --nav-folder-collapse-color: var(--nav-folder-3-collapse-color);
+}
+body .nav-files-container > div > .nav-folder:nth-child(12n + 5),
+body .nav-folder-children > .nav-folder:nth-child(12n + 5) {
+  --nav-folder-collapse-color: var(--nav-folder-4-collapse-color);
+}
+body .nav-files-container > div > .nav-folder:nth-child(12n + 6),
+body .nav-folder-children > .nav-folder:nth-child(12n + 6) {
+  --nav-folder-collapse-color: var(--nav-folder-5-collapse-color);
+}
+body .nav-files-container > div > .nav-folder:nth-child(12n + 7),
+body .nav-folder-children > .nav-folder:nth-child(12n + 7) {
+  --nav-folder-collapse-color: var(--nav-folder-6-collapse-color);
+}
+body .nav-files-container > div > .nav-folder:nth-child(12n + 8),
+body .nav-folder-children > .nav-folder:nth-child(12n + 8) {
+  --nav-folder-collapse-color: var(--nav-folder-7-collapse-color);
+}
+body .nav-files-container > div > .nav-folder:nth-child(12n + 9),
+body .nav-folder-children > .nav-folder:nth-child(12n + 9) {
+  --nav-folder-collapse-color: var(--nav-folder-8-collapse-color);
+}
+body .nav-files-container > div > .nav-folder:nth-child(12n + 10),
+body .nav-folder-children > .nav-folder:nth-child(12n + 10) {
+  --nav-folder-collapse-color: var(--nav-folder-9-collapse-color);
+}
+body .nav-files-container > div > .nav-folder:nth-child(12n + 11),
+body .nav-folder-children > .nav-folder:nth-child(12n + 11) {
+  --nav-folder-collapse-color: var(--nav-folder-10-collapse-color);
+}
+body .nav-files-container > div > .nav-folder:nth-child(12n + 12),
+body .nav-folder-children > .nav-folder:nth-child(12n + 12) {
+  --nav-folder-collapse-color: var(--nav-folder-11-collapse-color);
+}
+body .nav-files-container > div > .nav-folder:nth-child(12n + 13),
+body .nav-folder-children > .nav-folder:nth-child(12n + 13) {
+  --nav-folder-collapse-color: var(--nav-folder-12-collapse-color);
+}

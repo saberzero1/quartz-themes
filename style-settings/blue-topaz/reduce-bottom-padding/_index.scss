@@ -1,0 +1,7 @@
+body
+  .workspace-leaf-content[data-type="markdown"]
+  :is(.markdown-preview-view, .markdown-rendered)
+  .markdown-preview-sizer,
+body:not(.plugin-cm-typewriter-scroll) .cm-s-obsidian .cm-content {
+  padding-bottom: var(--bottom-padding-value) !important;
+}

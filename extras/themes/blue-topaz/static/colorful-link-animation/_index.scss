@@ -1,0 +1,5 @@
+body.colorful-link-animation
+  :is(.markdown-preview-view, .markdown-rendered)
+  a:hover {
+  animation: 2s colorful-link infinite;
+}

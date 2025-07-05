@@ -1,0 +1,14 @@
+.plain-data table.dataview.table-view-table,
+.plain-data .table-view-table > tbody > tr > td {
+  border: 0 !important;
+}
+.plain-data table.dataview.table-view-table th,
+.plain-data table.dataview.table-view-table tr,
+.plain-data table.dataview.table-view-table td {
+  background-color: transparent !important;
+}
+.plain-data table.dataview.table-view-table th.table-view-th {
+  color: var(--mu-table-th-foreground-main) !important;
+  background-color: var(--mu-table-th-background) !important;
+  border-bottom: 2px solid var(--mu-hr-color) !important;
+}

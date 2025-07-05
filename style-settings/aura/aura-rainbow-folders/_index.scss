@@ -1,0 +1,151 @@
+.nav-folder-title,
+.nav-folder-collapse-indicator,
+.tree-item.nav-folder
+  > .tree-item-children.nav-folder-children
+  > .tree-item.nav-file
+  > .tree-item-self.is-clickable.nav-file-title {
+  color: var(--text-on-accent-inverted);
+  --nav-collapse-icon-color: var(--text-on-accent-inverted);
+  --nav-collapse-icon-color-collapsed: var(--text-on-accent-inverted);
+  --nav-item-color: var(--text-on-accent-inverted);
+  --nav-item-color-hover: var(--text-on-accent-inverted);
+  --nav-item-color-highlighted: var(--text-on-accent-inverted);
+}
+.nav-file-tag {
+  color: rgb(var(--cpt-text));
+}
+.aura-card-layout:not(.aura-card-layout-fileexplorer)
+  .nav-files-container
+  > div
+  > .tree-item.nav-file {
+  background-color: rgb(var(--cpt-white));
+  border-radius: 5px;
+  border-color: rgb(var(--cpt-crust));
+}
+.nav-files-container > div > .tree-item.nav-folder:nth-child(8n + 2) {
+  background-color: rgb(var(--cpt-red));
+  border-color: rgb(var(--cpt-red));
+  border-radius: 5px;
+  margin-top: 2px;
+}
+.nav-files-container > div > .tree-item.nav-folder:nth-child(8n + 3) {
+  background-color: rgb(var(--cpt-orange));
+  border-color: rgb(var(--cpt-orange));
+  border-radius: 5px;
+  margin-top: 2px;
+}
+.nav-files-container > div > .tree-item.nav-folder:nth-child(8n + 4) {
+  background-color: rgb(var(--cpt-yellow));
+  border-color: rgb(var(--cpt-yellow));
+  border-radius: 5px;
+  margin-top: 2px;
+}
+.nav-files-container > div > .tree-item.nav-folder:nth-child(8n + 5) {
+  background-color: rgb(var(--cpt-green));
+  border-color: rgb(var(--cpt-green));
+  border-radius: 5px;
+  margin-top: 2px;
+}
+.nav-files-container > div > .tree-item.nav-folder:nth-child(8n + 6) {
+  background-color: rgb(var(--cpt-cyan));
+  border-color: rgb(var(--cpt-cyan));
+  border-radius: 5px;
+  margin-top: 2px;
+}
+.nav-files-container > div > .tree-item.nav-folder:nth-child(8n + 7) {
+  background-color: rgb(var(--cpt-blue));
+  border-color: rgb(var(--cpt-blue));
+  border-radius: 5px;
+  margin-top: 2px;
+}
+.nav-files-container > div > .tree-item.nav-folder:nth-child(8n + 8) {
+  background-color: rgb(var(--cpt-pink));
+  border-color: rgb(var(--cpt-pink));
+  border-radius: 5px;
+  margin-top: 2px;
+}
+.nav-files-container > div > .tree-item.nav-folder:nth-child(8n + 9) {
+  background-color: rgb(var(--cpt-purple));
+  border-color: rgb(var(--cpt-purple));
+  border-radius: 5px;
+  margin-top: 2px;
+}
+.aura-colorschemes-dark-mystical-nights
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(8n + 2) {
+  background-color: rgb(var(--cpt-pink));
+  border-color: rgb(var(--cpt-pink));
+  border-radius: 5px;
+  margin-top: 2px;
+}
+.aura-colorschemes-dark-mystical-nights
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(8n + 3) {
+  background-color: rgb(var(--cpt-purple));
+  border-color: rgb(var(--cpt-purple));
+  border-radius: 5px;
+  margin-top: 2px;
+}
+.aura-colorschemes-dark-mystical-nights
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(8n + 4) {
+  background-color: rgb(var(--cpt-blue));
+  border-color: rgb(var(--cpt-blue));
+  border-radius: 5px;
+  margin-top: 2px;
+}
+.aura-colorschemes-dark-mystical-nights
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(8n + 5) {
+  background-color: rgb(var(--cpt-cyan));
+  border-color: rgb(var(--cpt-cyan));
+  border-radius: 5px;
+  margin-top: 2px;
+}
+.aura-colorschemes-dark-mystical-nights
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(8n + 6) {
+  background-color: rgb(var(--cpt-orange));
+  border-color: rgb(var(--cpt-orange));
+  border-radius: 5px;
+  margin-top: 2px;
+}
+.aura-colorschemes-dark-mystical-nights
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(8n + 7) {
+  background-color: rgb(var(--cpt-green));
+  border-color: rgb(var(--cpt-green));
+  border-radius: 5px;
+  margin-top: 2px;
+}
+.aura-colorschemes-dark-mystical-nights
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(8n + 8) {
+  background-color: rgb(var(--cpt-red));
+  border-color: rgb(var(--cpt-red));
+  border-radius: 5px;
+  margin-top: 2px;
+}
+.aura-colorschemes-dark-mystical-nights
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(8n + 9) {
+  background-color: rgb(var(--cpt-purple));
+  border-color: rgb(var(--cpt-purple));
+  border-radius: 5px;
+  margin-top: 2px;
+}
+.aura-colorful-frame.aura-card-layout:not(.aura-card-layout-fileexplorer)
+  .mod-left-split
+  .nav-files-container
+  > div
+  > .tree-item.nav-folder {
+  border: 1px solid rgb(var(--cpt-crust));
+}

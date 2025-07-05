@@ -1,0 +1,28 @@
+body.bt-bubble-layout.color-scheme-options-simplicity-topaz:not(
+    .background-settings-workplace-background-image,
+    .background-image-settings-switch.background-image-settings-markdown-page-transparent
+  )
+  .workspace-split.mod-root
+  .workspace-tab-header.is-active {
+  background-color: var(--background-primary-alt);
+  box-shadow: none;
+}
+
+body.color-scheme-options-simplicity-topaz:not(
+    .background-settings-workplace-background-image,
+    .background-image-settings-switch.background-image-settings-markdown-page-transparent
+  )
+  .workspace-split.mod-root
+  .workspace-tab-header.is-active {
+  background: var(--background-primary);
+  --tab-background-active: var(--background-primary);
+}
+
+body.background-image-settings-switch.background-image-settings-markdown-page-transparent:not(
+    .toggle-nonoverlapping-bg
+  )
+  .workspace-split.mod-root
+  .workspace-tab-header.is-active {
+  background: transparent;
+  --tab-background-active: transparent;
+}

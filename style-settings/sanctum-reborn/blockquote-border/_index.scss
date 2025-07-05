@@ -1,0 +1,12 @@
+.markdown-rendered blockquote {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-top: var(--thickness) solid var(--color);
+  border-bottom: var(--thickness) solid var(--color);
+  border-left: none;
+}
+.markdown-rendered blockquote::before {
+  content: none;
+  width: 0;
+  background: none;
+}

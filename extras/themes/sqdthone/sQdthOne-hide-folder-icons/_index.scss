@@ -1,0 +1,22 @@
+.sQdthOne-hide-folder-icons .nav-folder-title-content {
+  margin-left: -15px !important;
+  padding-left: 0px !important;
+}
+
+.sQdthOne-hide-folder-icons
+  .nav-folder.is-collapsed
+  .nav-folder-title
+  .nav-folder-title-content::before {
+  -webkit-mask-image: url();
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+.sQdthOne-hide-folder-icons
+  .nav-folder
+  .nav-folder-title
+  .nav-folder-title-content::before {
+  -webkit-mask-image: url();
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}

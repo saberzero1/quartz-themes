@@ -1,0 +1,9 @@
+.markdown-rendered h2,
+.HyperMD-header-2 {
+  border-bottom: var(--hr-thickness) solid var(--background-modifier-border);
+  padding-bottom: 2px;
+}
+.anp-header-divider-color-toggle .markdown-rendered h2,
+.anp-header-divider-color-toggle .HyperMD-header-2 {
+  border-bottom-color: currentColor;
+}

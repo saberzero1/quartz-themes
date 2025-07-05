@@ -1,0 +1,38 @@
+body.theme-setting-differentiateBulletLevels {
+  .markdown-source-view.mod-cm6 .HyperMD-list-line-1 .list-bullet:after,
+  .markdown-preview-view .el-ul > ul > li > .list-bullet:after {
+    background-color: var(--list-marker-color);
+  }
+  .markdown-source-view.mod-cm6 .HyperMD-list-line-2 .list-bullet:after,
+  .markdown-preview-view .el-ul > ul > li > ul > li > .list-bullet:after {
+    background-color: transparent;
+  }
+  .markdown-source-view.mod-cm6 .HyperMD-list-line-3 .list-bullet:after,
+  .markdown-preview-view
+    .el-ul
+    > ul
+    > li
+    > ul
+    > li
+    > ul
+    > li
+    > .list-bullet:after {
+    border-radius: 0;
+    background-color: var(--list-marker-color);
+  }
+  .markdown-source-view.mod-cm6 .HyperMD-list-line-4 .list-bullet:after,
+  .markdown-preview-view
+    .el-ul
+    > ul
+    > li
+    > ul
+    > li
+    > ul
+    > li
+    > ul
+    > li
+    > .list-bullet:after {
+    border-radius: 0;
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,64 @@
+:root,
+body {
+  --animation-duration: 0.5s;
+  --margin-top: calc(var(--header-height));
+  --workspace-split-left-offset: var(--ribbon-width);
+}
+.smooth-mode {
+  --margin-top: calc(var(--header-height) + 5px);
+}
+.minimal-mode.sidebar-hide {
+  --workspace-split-left-offset: 0px;
+}
+,
+.minimal-mode.root-tabs-hover .workspace {
+  --margin-top-animation-delay: 0s;
+}
+.minimal-mode.root-tabs-hover
+  .workspace:has(
+    .workspace-tabs.mod-active.mod-top
+      .workspace-tab-header-container:not(:hover)
+  ) {
+  --margin-top: calc(var(--header-height) / 3);
+  --margin-top-animation-delay: 1s;
+}
+.minimal-mode.sidebar-hover
+  .workspace.is-left-sidedock-open:has(
+    .workspace-ribbon.side-dock-ribbon.mod-left:not(:hover)
+  ) {
+  --workspace-split-left-offset: 10px;
+}
+.workspace-ribbon.side-dock-ribbon.mod-left * {
+  transition: opacity var(--animation-duration) ease-in-out;
+}
+.workspace-split.mod-horizontal {
+  position: absolute;
+  height: calc(100% - var(--margin-top));
+  margin-top: var(--margin-top);
+  transition: margin-top var(--default-animation-duration) ease-in-out
+    var(--margin-top-animation-delay);
+  z-index: 10;
+}
+.workspace-split.mod-horizontal.is-sidedock-collapsed {
+  display: flex !important;
+  visibility: visible;
+  transition: all var(--animation-duration) !important;
+}
+.workspace-split.mod-horizontal.mod-left-split {
+  transition:
+    left var(--default-animation-duration) ease-in-out,
+    margin-top var(--default-animation-duration) ease-in-out
+      var(--margin-top-animation-delay);
+  left: var(--workspace-split-left-offset);
+  animation: workspace-split-left-slide-in var(--animation-duration);
+}
+.workspace-split.mod-horizontal.mod-left-split.is-sidedock-collapsed {
+  animation: workspace-split-left-slide-out var(--animation-duration);
+}
+.workspace-split.mod-horizontal.mod-right-split {
+  right: 0;
+  animation: workspace-split-right-slide-in var(--animation-duration);
+}
+.workspace-split.mod-horizontal.mod-right-split.is-sidedock-collapsed {
+  animation: workspace-split-right-slide-out var(--animation-duration);
+}

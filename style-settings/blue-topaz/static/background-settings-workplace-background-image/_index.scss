@@ -1,0 +1,166 @@
+body:not(
+    .is-mobile
+  ).background-image-settings-switch.background-image-settings-markdown-page-transparent.color-scheme-options-simplicity-topaz
+  .workspace-split.mod-root {
+  background-color: var(--simple-tran);
+}
+body.color-scheme-options-simplicity-topaz.is-frameless
+  .workspace-tab-header.is-active {
+  box-shadow: none;
+}
+body.color-scheme-options-simplicity-topaz
+  .workspace-tabs
+  .workspace-tab-header-container {
+  background-color: transparent;
+}
+body.color-scheme-options-simplicity-topaz
+  .mod-root
+  .workspace-tabs:not(.mod-top)
+  .workspace-tab-header-container-inner {
+  padding-bottom: 1px;
+}
+body div[data-type="thino_view"] .menu-btns-popup,
+body div[data-type="thino_view"] .selector-wrapper > .items-wrapper {
+  background-color: var(--bg-color-settings-3);
+  backdrop-filter: blur(10px);
+}
+body:is(.custom-thino-background, .thino-background-color)
+  div[data-type="thino_view"]
+  .view-content,
+body:is(.custom-thino-background, .thino-background-color)
+  div[data-type="thino_view"]
+  .view-header {
+  background: var(--bg-color-settings-0-1);
+}
+body .webpage-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -37px;
+  right: -15px;
+  bottom: 0;
+  left: -15px;
+}
+body .workspace-tab-header-container,
+body:not(.is-frameless)
+  .workspace-split.mod-root
+  .workspace-tab-header-container,
+body:not(.is-frameless) .mod-root .workspace-tabs .workspace-leaf,
+body .workspace {
+  background: transparent;
+}
+body .workspace-ribbon.mod-left:before,
+body .workspace-tabs {
+  background: var(--background-secondary);
+}
+body .workspace-tab-header::before {
+  clip-path: inset(50% 0 0 50%);
+  left: calc(var(--tab-curve) * -1.97);
+}
+body .workspace-tab-header::after {
+  clip-path: inset(50% 50% 0 0);
+  right: calc(var(--tab-curve) * -1.97);
+}
+body .nav-folder.mod-root > .nav-folder-title {
+  background-color: transparent;
+}
+body {
+  --tab-text-color-focused: var(--text-normal);
+  --titlebar-text-color-focused: var(--text-noraml);
+  --canvas-background: transparent;
+}
+body .titlebar {
+  z-index: 1;
+}
+body .side-dock-ribbon-tab,
+body .side-dock-ribbon-action:not(:hover) {
+  color: var(--text-normal);
+}
+body.is-mobile .workspace-split.mod-root {
+  background-color: transparent;
+}
+body.is-mobile:not(
+    :is(
+      .background-settings-workplace-waves-light,
+      .background-settings-workplace-waves2-light,
+      .background-settings-workplace-waves,
+      .background-settings-workplace-waves2
+    )
+  ) {
+  background-image: var(--theme-background);
+  background-size: cover;
+  opacity: 0.8;
+}
+body .workspace::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -37px;
+  right: 0px;
+  bottom: 0;
+  left: 0px;
+}
+body .workspace-tab-header-container {
+  border: none;
+}
+body .nav-folder.mod-root > .nav-folder-title {
+  background-color: transparent !important;
+}
+body.layout-style-options-default
+  .workspace-tab-container-before.is-before-active
+  .workspace-tab-header-inner,
+body.layout-style-options-default
+  .workspace-tab-container-after.is-after-active
+  .workspace-tab-header-inner,
+body.layout-style-options-default
+  .workspace-tab-header.is-before-active
+  .workspace-tab-header-inner,
+body.layout-style-options-default
+  .workspace-tab-header.is-after-active
+  .workspace-tab-header-inner,
+body.layout-style-options-default
+  .workspace-tab-container-before.is-before-active,
+body.layout-style-options-default
+  .workspace-tab-container-after.is-after-active,
+body.layout-style-options-default .workspace-tab-header.is-before-active,
+body.layout-style-options-default .workspace-tab-header.is-after-active {
+  background-color: transparent;
+}
+body.workspace > .workspace-leaf {
+  background-color: transparent;
+}
+body:not(.is-mobile) .workspace-tab-container-before.is-before-active,
+body:not(.is-mobile) .workspace-tab-container-after.is-after-active,
+body:not(.is-mobile) .workspace-tab-header.is-before-active,
+body:not(.is-mobile) .workspace-tab-header.is-after-active,
+body:not(.is-mobile)
+  .workspace-split.mod-right-split
+  .workspace-tabs
+  .workspace-leaf,
+body:not(.is-mobile)
+  .workspace-split.mod-left-split
+  .workspace-tabs
+  .workspace-leaf,
+body:not(.is-mobile) .workspace-leaf-resize-handle,
+body
+  .workspace-split.mod-horizontal:is(.mod-left-split, .mod-right-split)
+  .workspace-tab-header.is-active {
+  background-color: transparent;
+}
+body .workspace-split.mod-root .workspace-tab-header.is-active::before,
+body .workspace-split.mod-root .workspace-tab-header.is-active::after {
+  /* box-shadow: inset 0 0 0 var(--tab-outline-width) transparent, 0 0 0 calc(var(--tab-curve) * 4) var(--background-secondary); */
+}
+body:not(.color-scheme-options-simplicity-topaz)
+  .workspace-tabs.mod-active
+  .view-header,
+body .workspace-split.mod-root .view-content,
+body:not(.color-scheme-options-simplicity-topaz) .workspace-tabs .view-header {
+  background-color: transparent;
+}
+body .workspace-tab-header-container-inner {
+  margin: 6px -5px 0;
+}
+body .workspace-split:not(.mod-root) .workspace-tab-container {
+  background-color: var(--bt-background-split-container);
+}

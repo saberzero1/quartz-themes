@@ -1,0 +1,5 @@
+body.inline-title-toggle-underline .inline-title {
+  border-bottom: var(--inline-title-underline-width, 2px)
+    var(--inline-title-underline-style, solid)
+    var(--inline-title-underline-color, var(--h1-color));
+}

@@ -1,0 +1,28 @@
+.glass-robo-callouts .callout .callout-title {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sham-callouts .callout .callout-title {
+  display: grid;
+  justify-content: center;
+}
+.hama-callouts .callout .callout-title {
+  display: grid;
+  justify-content: center;
+  background: linear-gradient(
+    to left,
+    transparent 0%,
+    rgba(var(--callout-color), 0.1) 50%,
+    transparent 100%
+  );
+}
+.hama-callouts
+  .callout:has(> .callout-title .callout-title-inner:dir(rtl))
+  > .callout-title {
+  background: linear-gradient(
+    to left,
+    transparent 0%,
+    rgba(var(--callout-color), 0.1) 50%,
+    transparent 100%
+  );
+}

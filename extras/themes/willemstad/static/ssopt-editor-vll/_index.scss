@@ -1,0 +1,49 @@
+.ssopt-editor-vll {
+  /* preview */
+}
+
+.ssopt-editor-vll
+  .markdown-source-view.markdown-source-view.markdown-source-view.mod-cm6
+  .cm-contentContainer {
+  max-width: unset;
+}
+
+.ssopt-editor-vll
+  .markdown-source-view.markdown-source-view.markdown-source-view.mod-cm6
+  :is(.cm-content) {
+  /* I disabled this so that percentage widths are not wonky and affected by the line length setting */
+  max-width: var(--width-vll);
+  margin: auto;
+}
+
+.ssopt-editor-vll
+  .markdown-preview-view.markdown-preview-view
+  .markdown-preview-sizer {
+  max-width: var(--width-vll);
+  margin: auto;
+}
+
+.ssopt-editor-vll-title {
+  /* added the class so that it can only work when the editor is using the variable line length setting */
+}
+
+.ssopt-editor-vll-title .workspace-leaf-content[data-type="markdown"] {
+  /*
+  max-width: var(--width-vll);
+  margin: auto;
+  */
+  /* does not work */
+  /* does this work? */
+}
+
+.ssopt-editor-vll-title
+  .workspace-leaf-content[data-type="markdown"]
+  div.view-header {
+  box-sizing: border-box;
+  max-width: 100%;
+  --padding-math-vll: max(50% - 0.5 * var(--width-vll), var(--file-margins));
+  padding: 0 var(--padding-math-vll) 0 var(--padding-math-vll);
+  margin: 0;
+  /* margin needs to be removed for the padding to be correctly set to the above */
+  /* this is set in the padding instead, as a minimum size for things that do not need the line-length thing since it's smaller than that*/
+}

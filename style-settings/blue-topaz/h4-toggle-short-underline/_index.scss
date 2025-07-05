@@ -1,0 +1,6 @@
+body :is(.markdown-preview-view, .markdown-rendered) h4,
+body
+  .markdown-source-view.is-live-preview
+  .HyperMD-header.HyperMD-header-4.cm-line {
+  text-decoration: underline;
+}

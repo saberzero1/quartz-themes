@@ -1,0 +1,6 @@
+.aura-card-layout.aura-card-layout-fileexplorer
+  .workspace-split
+  .workspace-leaf-content[data-type="file-explorer"] {
+  background-color: var(--card-background-color);
+  border-width: 1px;
+}

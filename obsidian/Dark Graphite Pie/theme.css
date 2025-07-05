@@ -494,7 +494,8 @@ blockquote:before {
 /* ------- #### Reading mode --------------*/
 
 /* color and border of inline code (between the ticks) */
-.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code),
+.cm-s-obsidian
+  span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code),
 .markdown-preview-section code {
   background-color: var(--background-inline-code);
   border: 0px solid var(--border-inline-code);
@@ -520,7 +521,9 @@ blockquote:before {
 .workspace-tab-header.is-after-active .workspace-tab-header-inner {
   border-bottom-left-radius: 0px;
 }
-.workspace-split.mod-root > .workspace-leaf:first-of-type .workspace-leaf-content,
+.workspace-split.mod-root
+  > .workspace-leaf:first-of-type
+  .workspace-leaf-content,
 .workspace-split.mod-left-split .workspace-tabs .workspace-leaf {
   border-top-left-radius: 0px;
 }
