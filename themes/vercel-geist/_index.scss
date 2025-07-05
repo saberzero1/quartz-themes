@@ -1008,7 +1008,7 @@ body {
   .clipboard-button {
     background-color: transparent;
     box-shadow: none;
-    color: light-dark(#444444, #888888);
+    color: #444444;
     font-family:
       "??",
       "??",
@@ -1045,7 +1045,7 @@ body {
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: light-dark(#444444, #888888);
+    color: #444444;
   }
   /* BACKLINKS */
   .backlinks {
@@ -1302,9 +1302,10 @@ body {
       color: var(--button-secondary-fg-color);
       -webkit-app-region: no-drag;
       background: transparent;
-      border: 1px solid light-dark(#eaeaea, #333333);
+      border: 1px solid
+        light-dark(light-dark(#eaeaea, #333333), light-dark(#eaeaea, #333333));
       border-radius: 5px;
-      color: light-dark(#000000, #ffffff);
+      color: #000000;
       font-family: inherit;
       font-size: 14.992px;
       height: 40px;
@@ -1332,7 +1333,11 @@ body {
         & > input {
           background-color: #ffffff;
           border: none;
-          border-bottom: 1px solid light-dark(#eaeaea, #000000);
+          border-bottom: 1px solid
+            light-dark(
+              light-dark(#eaeaea, #000000),
+              light-dark(#eaeaea, #000000)
+            );
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1392,7 +1397,7 @@ body {
                 background-color: transparent;
                 color: light-dark(#000000, #ffffff);
                 &.match-tag {
-                  color: light-dark(#0051cc, #0070f3);
+                  color: #0051cc;
                 }
               }
             }
@@ -1455,7 +1460,8 @@ body {
   /* POPOVER */
   .popover {
     background-color: #eaeaea;
-    border: 1px solid light-dark(#eaeaea, #333333);
+    border: 1px solid
+      light-dark(light-dark(#eaeaea, #333333), light-dark(#eaeaea, #333333));
     border-radius: 8px;
     box-shadow:
       0px 1px 2px #0000001f,
@@ -1471,7 +1477,8 @@ body {
     border: unset;
     background-color: var(--background-primary);
     & .popover-inner {
-      border: 1px solid light-dark(#eaeaea, #333333);
+      border: 1px solid
+        light-dark(light-dark(#eaeaea, #333333), light-dark(#eaeaea, #333333));
       background-color: #eaeaea;
 
       border-radius: 8px;

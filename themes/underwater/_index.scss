@@ -425,7 +425,7 @@ body {
   -webkit-user-select: none;
   background-color: rgba(25, 25, 46, 0.8);
   caret-color: rgb(187, 163, 121);
-  color: light-dark(#575279, #e0def4);
+  color: #575279;
   contain: initial;
   font-family:
     "??",
@@ -1150,7 +1150,10 @@ body {
   }
   h6 {
     --font-weight: 600;
-    color: light-dark(#575279, #e0def4);
+    color: light-dark(
+      light-dark(#575279, #e0def4),
+      light-dark(light-dark(#575279, #e0def4), light-dark(#575279, #e0def4))
+    );
     font-family:
       "??",
       "??",
@@ -1274,7 +1277,7 @@ body {
     background-color: #faf4ed;
     border: 0px solid transparent;
     border-radius: 4px;
-    color: light-dark(#797593, #908caa);
+    color: #797593;
     font-family:
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1288,7 +1291,7 @@ body {
   .clipboard-button {
     background-color: transparent;
     box-shadow: none;
-    color: light-dark(#9893a5, #6e6a86);
+    color: #9893a5;
     font-family:
       "??",
       "Inter",
@@ -1338,7 +1341,7 @@ body {
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: light-dark(#9893a5, #6e6a86);
+    color: #9893a5;
   }
   /* BACKLINKS */
   .backlinks {
@@ -1403,7 +1406,7 @@ body {
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
-        color: light-dark(#575279, #e0def4);
+        color: #575279;
         text-overflow: ellipsis;
         position: relative;
         @media all and ($mobile) {
@@ -1459,7 +1462,7 @@ body {
         position: relative;
         a {
           border-radius: 4px;
-          color: light-dark(#575279, #e0def4);
+          color: #575279;
           cursor: pointer;
           display: flex;
           font-size: 12.8px;
@@ -1552,7 +1555,7 @@ body {
     ul.toc-content.overflow {
       li,
       li > a {
-        color: light-dark(#575279, #e0def4);
+        color: #575279;
         font-weight: inherit;
         font-size: 12.8px;
         color: inherit;
@@ -1656,7 +1659,7 @@ body {
       );
       border: 1px solid transparent;
       border-radius: 30px;
-      color: light-dark(#575279, #e0def4);
+      color: #575279;
       font-family: inherit;
       font-size: 14.992px;
       height: 40px;
@@ -1697,7 +1700,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: light-dark(#575279, #e0def4);
+          color: #575279;
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1743,7 +1746,7 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: light-dark(#575279, #e0def4);
+                color: #575279;
                 &.match-tag {
                   color: rgb(246, 173, 119);
                 }

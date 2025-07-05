@@ -53,8 +53,6 @@ html[saved-theme="light"] {
   --mono-rgb-100: 0, 0, 0;
 
   --text-highlight-bg: #ff9d00b3;
-
-  --text-normal: #a69ab1;
 }
 
 /* latin-ext */
@@ -311,7 +309,7 @@ body {
   -webkit-user-select: none;
   background-color: #111;
   caret-color: #a776e3;
-  color: light-dark(#bdbdbd, #555555);
+  color: #bdbdbd;
   contain: initial;
   font-family:
     "??",
@@ -829,7 +827,8 @@ body {
   /* HEADINGS */
   h1 {
     --font-weight: 700;
-    -webkit-text-stroke: 0.01rem light-dark(#ababab, #666666);
+    -webkit-text-stroke: 0.01rem
+      light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
     color: #9652da;
     font-family: "Architects Daughter", Neucha;
     font-size: 1.802em;
@@ -853,7 +852,8 @@ body {
   h2.page-title a,
   h2 {
     --font-weight: 600;
-    -webkit-text-stroke: 0.01rem light-dark(#ababab, #666666);
+    -webkit-text-stroke: 0.01rem
+      light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
     color: #df1278;
     font-family: "Architects Daughter", Neucha;
     font-size: 1.602em;
@@ -874,7 +874,8 @@ body {
   }
   h3 {
     --font-weight: 600;
-    -webkit-text-stroke: 0.01rem light-dark(#ababab, #666666);
+    -webkit-text-stroke: 0.01rem
+      light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
     color: #5e33cc;
     font-family: "Architects Daughter", Neucha;
     font-size: 1.424em;
@@ -895,7 +896,8 @@ body {
   }
   h4 {
     --font-weight: 600;
-    -webkit-text-stroke: 0.01rem light-dark(#ababab, #666666);
+    -webkit-text-stroke: 0.01rem
+      light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
     color: #3ca209;
     font-family: "Architects Daughter", Neucha;
     font-size: 1.266em;
@@ -916,7 +918,8 @@ body {
   }
   h5 {
     --font-weight: 600;
-    -webkit-text-stroke: 0.01rem light-dark(#ababab, #666666);
+    -webkit-text-stroke: 0.01rem
+      light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
     color: #00b87a;
     font-family: "Architects Daughter", Neucha;
     font-size: 1.125em;
@@ -937,7 +940,8 @@ body {
   }
   h6 {
     --font-weight: 600;
-    -webkit-text-stroke: 0.01rem light-dark(#ababab, #666666);
+    -webkit-text-stroke: 0.01rem
+      light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
     color: #006e85;
     font-family: "Architects Daughter", Neucha;
     font-size: 1em;
@@ -1061,7 +1065,7 @@ body {
   .clipboard-button {
     background-color: transparent;
     box-shadow: none;
-    color: light-dark(#ababab, #666666);
+    color: #ababab;
     font-family:
       "??",
       Neucha,
@@ -1098,13 +1102,14 @@ body {
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: light-dark(#707070, #999999);
+    color: #707070;
   }
   /* BACKLINKS */
   .backlinks {
     h3 {
       --font-weight: 600;
-      -webkit-text-stroke: 0.01rem light-dark(#ababab, #666666);
+      -webkit-text-stroke: 0.01rem
+        light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
       color: #5e33cc;
       font-family: "Architects Daughter", Neucha;
       font-size: 1.424em;
@@ -1258,7 +1263,8 @@ body {
     button.toc-header {
       h3 {
         --font-weight: 600;
-        -webkit-text-stroke: 0.01rem light-dark(#ababab, #666666);
+        -webkit-text-stroke: 0.01rem
+          light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
         color: #5e33cc;
         font-family: "Architects Daughter", Neucha;
         font-size: 1.424em;
@@ -1293,7 +1299,8 @@ body {
   .toc {
     h3 {
       --font-weight: 600;
-      -webkit-text-stroke: 0.01rem light-dark(#ababab, #666666);
+      -webkit-text-stroke: 0.01rem
+        light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
       color: #5e33cc;
       font-family: "Architects Daughter", Neucha;
       font-size: 1.424em;
@@ -1365,7 +1372,7 @@ body {
       background: transparent;
       border: 1px solid transparent;
       border-radius: 5px;
-      color: light-dark(#bdbdbd, #555555);
+      color: #bdbdbd;
       font-family: inherit;
       font-size: 14.992px;
       height: 40px;
@@ -1406,7 +1413,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: light-dark(#bdbdbd, #555555);
+          color: #bdbdbd;
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1451,7 +1458,7 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: light-dark(#bdbdbd, #555555);
+                color: #bdbdbd;
                 &.match-tag {
                   color: #a776e3;
                 }

@@ -396,7 +396,7 @@ body {
   -webkit-user-select: none;
   background-color: #fcfcfc;
   caret-color: #c86464;
-  color: light-dark(#5c5c5c, #b3b3b3);
+  color: #5c5c5c;
   contain: initial;
   font-family: "??", "??", "SF Pro", ui-sans-serif, sans-serif;
   font-size: 16px;
@@ -904,7 +904,7 @@ body {
   h1 {
     --font-weight: 700;
     border-bottom: 1px solid light-dark(#d4d4d4, #3f3f3f);
-    color: light-dark(#222222, #dadada);
+    color: #222222;
     font-family: "SF Pro", ui-sans-serif, sans-serif;
     font-size: 2rem;
     font-style: normal;
@@ -926,7 +926,7 @@ body {
   h2 {
     --font-weight: 600;
     border-bottom: 1px solid light-dark(#d4d4d4, #3f3f3f);
-    color: light-dark(#222222, #dadada);
+    color: #222222;
     font-family: "SF Pro", ui-sans-serif, sans-serif;
     font-size: 1.65rem;
     font-style: normal;
@@ -944,7 +944,7 @@ body {
   }
   h3 {
     --font-weight: 600;
-    color: light-dark(#444444, #d6d8dc);
+    color: #444444;
     font-family: "SF Pro", ui-sans-serif, sans-serif;
     font-size: 1.5rem;
     font-style: normal;
@@ -961,7 +961,7 @@ body {
   }
   h4 {
     --font-weight: 600;
-    color: light-dark(#444444, #d6d8dc);
+    color: #444444;
     font-family: "SF Pro", ui-sans-serif, sans-serif;
     font-size: 1.25rem;
     font-style: normal;
@@ -978,7 +978,7 @@ body {
   }
   h5 {
     --font-weight: 600;
-    color: light-dark(#444444, #d6d8dc);
+    color: #444444;
     font-family: "SF Pro", ui-sans-serif, sans-serif;
     font-size: 1.125rem;
     font-style: normal;
@@ -995,7 +995,7 @@ body {
   }
   h6 {
     --font-weight: 600;
-    color: light-dark(#444444, #d6d8dc);
+    color: #444444;
     font-family: "SF Pro", ui-sans-serif, sans-serif;
     font-size: 1rem;
     font-style: normal;
@@ -1101,7 +1101,7 @@ body {
     background-color: #f6f6f6;
     border: 0px solid transparent;
     border-radius: 3px;
-    color: light-dark(#444444, #d6d8dc);
+    color: #444444;
     font-family:
       "??", "??", "SF Mono", ui-monospace, "Cascadia Code", "Source Code Pro",
       Menlo, Consolas, "DejaVu Sans Mono", monospace;
@@ -1143,7 +1143,7 @@ body {
   .backlinks {
     h3 {
       --font-weight: 600;
-      color: light-dark(#444444, #d6d8dc);
+      color: #444444;
       font-family: "SF Pro", ui-sans-serif, sans-serif;
       font-size: 1.5rem;
       font-style: normal;
@@ -1171,7 +1171,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: light-dark(#222222, #dadada);
+      color: #222222;
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1209,7 +1209,7 @@ body {
         }
         &:hover {
           background-color: #c86464;
-          color: light-dark(#f6f6f6, #262626);
+          color: #f6f6f6;
           font-weight: inherit;
           font-size: 1rem;
           line-height: 1.5rem;
@@ -1289,11 +1289,11 @@ body {
   }
   /* TOC */
   .toc {
-    color: light-dark(#444444, #d6d8dc);
+    color: #444444;
     button.toc-header {
       h3 {
         --font-weight: 600;
-        color: light-dark(#444444, #d6d8dc);
+        color: #444444;
         font-family: "SF Pro", ui-sans-serif, sans-serif;
         font-size: 1.5rem;
         font-style: normal;
@@ -1305,7 +1305,7 @@ body {
         margin-block-start: 0rem;
         margin-block: 0;
       }
-      color: light-dark(#444444, #d6d8dc);
+      color: #444444;
       color: inherit;
     }
     ul.toc-content.overflow {
@@ -1324,7 +1324,7 @@ body {
   .toc {
     h3 {
       --font-weight: 600;
-      color: light-dark(#444444, #d6d8dc);
+      color: #444444;
       font-family: "SF Pro", ui-sans-serif, sans-serif;
       font-size: 1.5rem;
       font-style: normal;
@@ -1392,7 +1392,7 @@ body {
       background: transparent;
       border: 1px solid transparent;
       border-radius: 3px;
-      color: light-dark(#5c5c5c, #b3b3b3);
+      color: #5c5c5c;
       font-family: inherit;
       font-size: 14.992px;
       height: 40px;
@@ -1434,7 +1434,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: light-dark(#5c5c5c, #b3b3b3);
+          color: #5c5c5c;
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1479,9 +1479,9 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: light-dark(#5c5c5c, #b3b3b3);
+                color: #5c5c5c;
                 &.match-tag {
-                  color: light-dark(#fafafa, #242424);
+                  color: #fafafa;
                 }
               }
             }

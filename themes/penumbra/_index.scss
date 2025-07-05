@@ -960,7 +960,7 @@ body {
   /* HEADINGS */
   h1 {
     --font-weight: 700;
-    color: light-dark(#636363, #bebebe);
+    color: #636363;
     font-family: inherit;
     font-size: 1.802em;
     font-style: normal;
@@ -980,7 +980,7 @@ body {
   h2.page-title a,
   h2 {
     --font-weight: 600;
-    color: light-dark(#636363, #bebebe);
+    color: #636363;
     font-family: inherit;
     font-size: 1.602em;
     font-style: normal;
@@ -997,7 +997,7 @@ body {
   }
   h3 {
     --font-weight: 600;
-    color: light-dark(#636363, #bebebe);
+    color: #636363;
     font-family: inherit;
     font-size: 1.424em;
     font-style: normal;
@@ -1014,7 +1014,7 @@ body {
   }
   h4 {
     --font-weight: 600;
-    color: light-dark(#636363, #bebebe);
+    color: #636363;
     font-family: inherit;
     font-size: 1.266em;
     font-style: normal;
@@ -1031,7 +1031,7 @@ body {
   }
   h5 {
     --font-weight: 600;
-    color: light-dark(#636363, #bebebe);
+    color: #636363;
     font-family: inherit;
     font-size: 1.125em;
     font-style: normal;
@@ -1048,7 +1048,7 @@ body {
   }
   h6 {
     --font-weight: 600;
-    color: light-dark(#636363, #bebebe);
+    color: #636363;
     font-family: inherit;
     font-size: 1em;
     font-style: normal;
@@ -1154,7 +1154,7 @@ body {
     background-color: #f2e6d4;
     border: 0px solid transparent;
     border-radius: 4px;
-    color: light-dark(#8f8f8f, #8f8f8f);
+    color: #8f8f8f;
     font-family:
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1211,7 +1211,7 @@ body {
   .backlinks {
     h3 {
       --font-weight: 600;
-      color: light-dark(#636363, #bebebe);
+      color: #636363;
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1239,7 +1239,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: light-dark(#636363, #bebebe);
+      color: #636363;
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1250,7 +1250,7 @@ body {
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
-        color: light-dark(#8f8f8f, #8f8f8f);
+        color: #8f8f8f;
         text-overflow: ellipsis;
         position: relative;
         @media all and ($mobile) {
@@ -1306,7 +1306,7 @@ body {
         position: relative;
         a {
           border-radius: 4px;
-          color: light-dark(#8f8f8f, #8f8f8f);
+          color: #8f8f8f;
           cursor: pointer;
           display: flex;
           font-size: 16px;
@@ -1357,11 +1357,11 @@ body {
   }
   /* TOC */
   .toc {
-    color: light-dark(#636363, #bebebe);
+    color: #636363;
     button.toc-header {
       h3 {
         --font-weight: 600;
-        color: light-dark(#636363, #bebebe);
+        color: #636363;
         font-family: inherit;
         font-size: 1.424em;
         font-style: normal;
@@ -1373,13 +1373,13 @@ body {
         margin-block-start: 0rem;
         margin-block: 0;
       }
-      color: light-dark(#636363, #bebebe);
+      color: #636363;
       color: inherit;
     }
     ul.toc-content.overflow {
       li,
       li > a {
-        color: light-dark(#8f8f8f, #8f8f8f);
+        color: #8f8f8f;
         font-weight: inherit;
         font-size: 16px;
         color: inherit;
@@ -1392,7 +1392,7 @@ body {
   .toc {
     h3 {
       --font-weight: 600;
-      color: light-dark(#636363, #bebebe);
+      color: #636363;
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1475,7 +1475,8 @@ body {
     & > .search-container {
       & > .search-space {
         background-color: light-dark(#fff7ed, #303338);
-        border: 0.5pt solid light-dark(#bebebe, #f2e6d4);
+        border: 0.5pt solid
+          light-dark(light-dark(#bebebe, #f2e6d4), light-dark(#bebebe, #f2e6d4));
         border-radius: 12px;
         box-shadow:
           0px 1.8px 7.3px #00000012,
@@ -1548,7 +1549,7 @@ body {
                 background-color: transparent;
                 color: light-dark(#8f8f8f, #8f8f8f);
                 &.match-tag {
-                  color: light-dark(#92963a, #92963a);
+                  color: #92963a;
                 }
               }
             }

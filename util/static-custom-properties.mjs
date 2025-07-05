@@ -27,7 +27,15 @@ export default function generateStaticCSS(cssString, themeName) {
     .css
   }
 
+  compareString = cssString
   cleanup(cssString)
+
+  while (cssString !== compareString) {
+    compareString = cssString
+
+    cleanup(cssString)
+  } 
+
   compareString = cssString
 
   cssString = postcss()

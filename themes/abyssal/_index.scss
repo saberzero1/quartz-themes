@@ -384,7 +384,7 @@ body {
   -webkit-user-select: none;
   background-color: #ffffff;
   caret-color: #3ca7dd;
-  color: light-dark(#5c5c5c, #b3b3b3);
+  color: #5c5c5c;
   contain: initial;
   font-family:
     "??",
@@ -1127,7 +1127,7 @@ body {
     );
     border: 0px solid transparent;
     border-radius: 4px;
-    color: light-dark(#e93147, #fb464c);
+    color: #e93147;
     font-family:
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1456,7 +1456,7 @@ body {
       background: transparent;
       border: 1px solid transparent;
       border-radius: 5px;
-      color: light-dark(#5c5c5c, #b3b3b3);
+      color: #5c5c5c;
       font-family: inherit;
       font-size: 14.992px;
       height: 40px;
@@ -1484,7 +1484,11 @@ body {
         & > input {
           background-color: #ffffff;
           border: none;
-          border-bottom: 1px solid light-dark(#fafafa, #242424);
+          border-bottom: 1px solid
+            light-dark(
+              light-dark(#fafafa, #242424),
+              light-dark(#ffffff, #1e1e1e)
+            );
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1497,7 +1501,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: light-dark(#5c5c5c, #b3b3b3);
+          color: #5c5c5c;
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1542,7 +1546,7 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: light-dark(#5c5c5c, #b3b3b3);
+                color: #5c5c5c;
                 &.match-tag {
                   color: #3ca7dd;
                 }

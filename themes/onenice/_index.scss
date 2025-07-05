@@ -1441,7 +1441,8 @@ body {
     & > .search-container {
       & > .search-space {
         background-color: light-dark(#e6e6e6, #1f2329);
-        border: 0.5pt solid light-dark(#50a14f, #8ebd6b);
+        border: 0.5pt solid
+          light-dark(light-dark(#50a14f, #8ebd6b), light-dark(#50a14f, #8ebd6b));
         border-radius: 12px;
         box-shadow:
           0px 1.8px 7.3px #00000012,
@@ -1514,7 +1515,7 @@ body {
                 background-color: transparent;
                 color: light-dark(#383a42, #dcddde);
                 &.match-tag {
-                  color: light-dark(#a626a4, #bf68d9);
+                  color: #a626a4;
                 }
               }
             }

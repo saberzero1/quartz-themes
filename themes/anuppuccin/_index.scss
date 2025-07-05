@@ -31,7 +31,7 @@ html[saved-theme="dark"] {
 
   --text-accent: inherit;
 
-  --text-highlight-bg: rgba(inherit, 0.2);
+  --text-highlight-bg: inherit;
 }
 
 :root[saved-theme="light"],
@@ -54,7 +54,7 @@ html[saved-theme="light"] {
   --text-highlight-bg: inherit;
   --mono-rgb-100: inherit;
 
-  --text-highlight-bg: rgba(inherit, 0.2);
+  --text-highlight-bg: inherit;
 }
 
 /* cyrillic-ext */
@@ -323,15 +323,9 @@ body {
   --text-normal: inherit;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(
-    light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
-    light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
-  );
+  background-color: light-dark(rgb(239, 241, 245), rgb(30, 30, 46));
   caret-color: inherit;
-  color: light-dark(
-    light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
-    light-dark(rgb(76, 79, 105), rgb(198, 208, 245))
-  );
+  color: light-dark(rgb(76, 79, 105), rgb(198, 208, 245));
   contain: initial;
   font-family:
     "??",
@@ -631,10 +625,7 @@ body {
     --text-highlight-bg,
     var(--background-modifier-hover)
   ) !important;
-  background-color: light-dark(
-    light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
-    light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
-  );
+  background-color: light-dark(rgb(239, 241, 245), rgb(30, 30, 46));
   background-color: var(--background-primary);
   overflow: initial;
   @media all and ($desktop) {
@@ -659,18 +650,12 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: light-dark(
-        light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
-        light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
-      );
+      background-color: light-dark(rgb(239, 241, 245), rgb(30, 30, 46));
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: light-dark(
-          light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
-          light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
-        );
+        background-color: light-dark(rgb(239, 241, 245), rgb(30, 30, 46));
         background-color: var(--background-primary);
       }
     }
@@ -678,10 +663,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: light-dark(
-            light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
-            light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
-          );
+          background-color: light-dark(rgb(239, 241, 245), rgb(30, 30, 46));
           background-color: var(--background-secondary);
           content: " ";
           display: block;
@@ -1256,10 +1238,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: light-dark(
-          light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
-          light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
-        );
+        background-color: light-dark(rgb(239, 241, 245), rgb(30, 30, 46));
         background-color: var(--background-secondary);
         left: -1rem;
       }
@@ -1508,10 +1487,7 @@ body {
       background: inherit;
       border: 1px solid transparent;
       border-radius: 6px;
-      color: light-dark(
-        light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
-        light-dark(rgb(76, 79, 105), rgb(198, 208, 245))
-      );
+      color: light-dark(rgb(76, 79, 105), rgb(198, 208, 245));
       font-family: inherit;
       font-size: 14.992px;
       height: 40px;
@@ -1525,10 +1501,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: light-dark(
-          light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
-          light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
-        );
+        background-color: light-dark(rgb(239, 241, 245), rgb(30, 30, 46));
         border: 0.5pt solid inherit;
         border-radius: 12px;
         box-shadow:
@@ -1540,15 +1513,12 @@ body {
         border-color: var(--background-modifier-border, var(--color-base-35));
         margin: 12vh auto;
         & > input {
-          background-color: light-dark(
-            light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
-            light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
-          );
+          background-color: light-dark(rgb(239, 241, 245), rgb(30, 30, 46));
           border: none;
           border-bottom: 1px solid
             light-dark(
-              light-dark(rgb(230, 233, 239), rgb(24, 24, 37)),
-              light-dark(rgb(230, 233, 239), rgb(24, 24, 37))
+              light-dark(230, 233, 239, 24, 24, 37),
+              light-dark(230, 233, 239, 24, 24, 37)
             );
           border-radius: 0;
           font-size: 16px;
@@ -1562,10 +1532,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: light-dark(
-            light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
-            light-dark(rgb(76, 79, 105), rgb(198, 208, 245))
-          );
+          color: light-dark(rgb(76, 79, 105), rgb(198, 208, 245));
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1613,10 +1580,7 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: light-dark(
-                  light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
-                  light-dark(rgb(76, 79, 105), rgb(198, 208, 245))
-                );
+                color: light-dark(rgb(76, 79, 105), rgb(198, 208, 245));
                 &.match-tag {
                   color: inherit;
                 }
@@ -1680,10 +1644,7 @@ body {
   }
   /* POPOVER */
   .popover {
-    background-color: light-dark(
-      light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
-      light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
-    );
+    background-color: light-dark(rgb(239, 241, 245), rgb(30, 30, 46));
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow:
@@ -1701,10 +1662,7 @@ body {
     background-color: var(--background-primary);
     & .popover-inner {
       border: 1px solid transparent;
-      background-color: light-dark(
-        light-dark(rgb(239, 241, 245), rgb(30, 30, 46)),
-        light-dark(rgb(239, 241, 245), rgb(30, 30, 46))
-      );
+      background-color: light-dark(rgb(239, 241, 245), rgb(30, 30, 46));
 
       border-radius: 8px;
       background-color: var(--background-primary);

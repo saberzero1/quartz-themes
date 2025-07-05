@@ -31,11 +31,11 @@ export const usedRules = [
   "h5",
   "h6",
   // Code blocks
-  "pre",
-  "code",
-  "pre code",
-  "button.copy-code-button",
-  "button.copy-code-button:hover",
+  ".markdown-rendered pre",
+  ".markdown-rendered code",
+  ".markdown-rendered pre code",
+  ".markdown-rendered button.copy-code-button",
+  ".markdown-rendered button.copy-code-button:hover",
   // Callouts
   ".callout",
   ".callout-title",
@@ -83,7 +83,7 @@ export const usedRules = [
   "input.prompt-input",
   ".suggestion-item.is-selected",
   ".suggestion-highlight",
-  "mark",
+  ".markdown-rendered mark",
   "a.tag",
   'input[type="search"]',
   // Explorer

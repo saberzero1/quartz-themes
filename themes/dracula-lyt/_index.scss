@@ -321,7 +321,7 @@ body {
   -webkit-user-select: none;
   background-color: #2d3039;
   caret-color: #b9c3df;
-  color: light-dark(#b9c3df, #b9c3df);
+  color: #b9c3df;
   contain: initial;
   font-family:
     "??",
@@ -1053,7 +1053,7 @@ body {
   .clipboard-button {
     background-color: transparent;
     box-shadow: none;
-    color: light-dark(#a0a7bb, #a0a7bb);
+    color: #a0a7bb;
     font-family:
       "??",
       "??",
@@ -1097,7 +1097,7 @@ body {
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: light-dark(#7c849c, #7c849c);
+    color: #7c849c;
   }
   /* BACKLINKS */
   .backlinks {
@@ -1361,9 +1361,10 @@ body {
         light-dark(#1e1f24, #1e1f24),
         light-dark(#1e1f24, #1e1f24)
       );
-      border: 1px solid light-dark(#343a4b, #343a4b);
+      border: 1px solid
+        light-dark(light-dark(#343a4b, #343a4b), light-dark(#343a4b, #343a4b));
       border-radius: 2px;
-      color: light-dark(#b9c3df, #b9c3df);
+      color: #b9c3df;
       font-family:
         "Abril Text",
         "Inter",
@@ -1403,7 +1404,11 @@ body {
           background: transparent;
           background-color: #2d3039;
           border: none;
-          border-bottom: 1px solid light-dark(#23242a, #23242a);
+          border-bottom: 1px solid
+            light-dark(
+              light-dark(#23242a, #23242a),
+              light-dark(#23242a, #23242a)
+            );
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1416,7 +1421,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: light-dark(#b9c3df, #b9c3df);
+          color: #b9c3df;
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1461,7 +1466,7 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: light-dark(#b9c3df, #b9c3df);
+                color: #b9c3df;
                 &.match-tag {
                   color: #b9c3df;
                 }
@@ -1526,7 +1531,8 @@ body {
   /* POPOVER */
   .popover {
     background-color: #2d3039;
-    border: 1px solid light-dark(#343a4b, #343a4b);
+    border: 1px solid
+      light-dark(light-dark(#343a4b, #343a4b), light-dark(#343a4b, #343a4b));
     border-radius: 8px;
     box-shadow:
       0px 1px 2px #0000001f,
@@ -1543,7 +1549,8 @@ body {
     border: unset;
     background-color: var(--background-primary);
     & .popover-inner {
-      border: 1px solid light-dark(#343a4b, #343a4b);
+      border: 1px solid
+        light-dark(light-dark(#343a4b, #343a4b), light-dark(#343a4b, #343a4b));
       background-color: #2d3039;
 
       border-radius: 8px;

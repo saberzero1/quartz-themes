@@ -1413,7 +1413,8 @@ body {
       color: var(--button-secondary-fg-color);
       -webkit-app-region: no-drag;
       background: #cccc00;
-      border: 1px solid light-dark(#d8dee9, #d8dee9);
+      border: 1px solid
+        light-dark(light-dark(#d8dee9, #d8dee9), light-dark(#4c566a, #4c566a));
       border-radius: 5px;
       color: #cccc00;
       font-family: inherit;
@@ -1443,7 +1444,11 @@ body {
         & > input {
           background-color: #f5f7f9;
           border: none;
-          border-bottom: 1px solid light-dark(#eceff4, #eceff4);
+          border-bottom: 1px solid
+            light-dark(
+              light-dark(#eceff4, #eceff4),
+              light-dark(#2e3440, #2e3440)
+            );
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1566,7 +1571,8 @@ body {
   /* POPOVER */
   .popover {
     background-color: #f5f7f9;
-    border: 1px solid light-dark(#d8dee9, #d8dee9);
+    border: 1px solid
+      light-dark(light-dark(#d8dee9, #d8dee9), light-dark(#4c566a, #4c566a));
     border-radius: 8px;
     box-shadow:
       0px 1px 2px #0000001f,
@@ -1582,7 +1588,8 @@ body {
     border: unset;
     background-color: var(--background-primary);
     & .popover-inner {
-      border: 1px solid light-dark(#d8dee9, #d8dee9);
+      border: 1px solid
+        light-dark(light-dark(#d8dee9, #d8dee9), light-dark(#4c566a, #4c566a));
       background-color: #f5f7f9;
 
       border-radius: 8px;

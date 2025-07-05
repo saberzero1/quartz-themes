@@ -359,6 +359,7 @@ manifestCollection.forEach((manifest) => {
       obsidianCSS,
       splitCombinedRules(cssString, mode),
       mode,
+      true,
     );
     let staticResult = generateStatic(result, themeNameLocal);
 

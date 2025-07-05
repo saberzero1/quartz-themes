@@ -395,7 +395,7 @@ body {
   -webkit-user-select: none;
   background-color: #fdf9f3;
   caret-color: #fad872;
-  color: light-dark(#2c292d, #2c292d);
+  color: #2c292d;
   contain: initial;
   font-family:
     "??",
@@ -913,7 +913,7 @@ body {
   /* HEADINGS */
   h1 {
     --font-weight: 700;
-    color: light-dark(#b3d97e, #b3d97e);
+    color: #b3d97e;
     font-family: inherit;
     font-size: 1.802em;
     font-style: normal;
@@ -933,7 +933,7 @@ body {
   h2.page-title a,
   h2 {
     --font-weight: 600;
-    color: light-dark(#61afef, #61afef);
+    color: #61afef;
     font-family: inherit;
     font-size: 1.602em;
     font-style: normal;
@@ -950,7 +950,7 @@ body {
   }
   h3 {
     --font-weight: 600;
-    color: light-dark(#f19d6d, #f19d6d);
+    color: #f19d6d;
     font-family: inherit;
     font-size: 1.424em;
     font-style: normal;
@@ -967,7 +967,7 @@ body {
   }
   h4 {
     --font-weight: 600;
-    color: light-dark(#a8a0ee, #a8a0ee);
+    color: #a8a0ee;
     font-family: inherit;
     font-size: 1.266em;
     font-style: normal;
@@ -984,7 +984,7 @@ body {
   }
   h5 {
     --font-weight: 600;
-    color: light-dark(#abb2bf, #abb2bf);
+    color: #abb2bf;
     font-family: inherit;
     font-size: 1.125em;
     font-style: normal;
@@ -1107,7 +1107,7 @@ body {
     background-color: #2c292d;
     border: 0px solid transparent;
     border-radius: 4px;
-    color: light-dark(#ffffff, #ffffff);
+    color: #ffffff;
     font-family:
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1121,7 +1121,7 @@ body {
   .clipboard-button {
     background-color: transparent;
     box-shadow: none;
-    color: light-dark(#5c6370, #5c6370);
+    color: #5c6370;
     font-family:
       "??",
       "??",
@@ -1158,13 +1158,13 @@ body {
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: light-dark(#f19d6d, #f19d6d);
+    color: #f19d6d;
   }
   /* BACKLINKS */
   .backlinks {
     h3 {
       --font-weight: 600;
-      color: light-dark(#f19d6d, #f19d6d);
+      color: #f19d6d;
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1192,7 +1192,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: light-dark(#61afef, #61afef);
+      color: #61afef;
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1203,7 +1203,7 @@ body {
       .folder-container {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
-        color: light-dark(#2c292d, #2c292d);
+        color: #2c292d;
         text-overflow: ellipsis;
         position: relative;
         @media all and ($mobile) {
@@ -1259,7 +1259,7 @@ body {
         position: relative;
         a {
           border-radius: 4px;
-          color: light-dark(#abb2bf, #abb2bf);
+          color: #abb2bf;
           cursor: pointer;
           display: flex;
           font-size: 16px;
@@ -1310,11 +1310,11 @@ body {
   }
   /* TOC */
   .toc {
-    color: light-dark(#f19d6d, #f19d6d);
+    color: #f19d6d;
     button.toc-header {
       h3 {
         --font-weight: 600;
-        color: light-dark(#f19d6d, #f19d6d);
+        color: #f19d6d;
         font-family: inherit;
         font-size: 1.424em;
         font-style: normal;
@@ -1326,13 +1326,13 @@ body {
         margin-block-start: 0rem;
         margin-block: 0;
       }
-      color: light-dark(#f19d6d, #f19d6d);
+      color: #f19d6d;
       color: inherit;
     }
     ul.toc-content.overflow {
       li,
       li > a {
-        color: light-dark(#abb2bf, #abb2bf);
+        color: #abb2bf;
         font-weight: inherit;
         font-size: 16px;
         color: inherit;
@@ -1345,7 +1345,7 @@ body {
   .toc {
     h3 {
       --font-weight: 600;
-      color: light-dark(#f19d6d, #f19d6d);
+      color: #f19d6d;
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1411,9 +1411,10 @@ body {
       color: var(--button-secondary-fg-color);
       -webkit-app-region: no-drag;
       background: transparent;
-      border: 1px solid light-dark(#5c6370, #5c6370);
+      border: 1px solid
+        light-dark(light-dark(#5c6370, #5c6370), light-dark(#5c6370, #5c6370));
       border-radius: 5px;
-      color: light-dark(#2c292d, #2c292d);
+      color: #2c292d;
       font-family: inherit;
       font-size: 14.992px;
       height: 40px;
@@ -1441,7 +1442,11 @@ body {
         & > input {
           background-color: #fdf9f3;
           border: none;
-          border-bottom: 1px solid light-dark(#fdf9f3, #282a3a);
+          border-bottom: 1px solid
+            light-dark(
+              light-dark(#fdf9f3, #282a3a),
+              light-dark(#fdf9f3, #282a3a)
+            );
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1454,7 +1459,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: light-dark(#2c292d, #2c292d);
+          color: #2c292d;
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1499,7 +1504,7 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: light-dark(#2c292d, #2c292d);
+                color: #2c292d;
                 &.match-tag {
                   color: #2c292d;
                 }
@@ -1564,7 +1569,8 @@ body {
   /* POPOVER */
   .popover {
     background-color: #fdf9f3;
-    border: 1px solid light-dark(#5c6370, #5c6370);
+    border: 1px solid
+      light-dark(light-dark(#5c6370, #5c6370), light-dark(#5c6370, #5c6370));
     border-radius: 8px;
     box-shadow:
       0px 1px 2px #0000001f,
@@ -1580,7 +1586,8 @@ body {
     border: unset;
     background-color: var(--background-primary);
     & .popover-inner {
-      border: 1px solid light-dark(#5c6370, #5c6370);
+      border: 1px solid
+        light-dark(light-dark(#5c6370, #5c6370), light-dark(#5c6370, #5c6370));
       background-color: #fdf9f3;
 
       border-radius: 8px;

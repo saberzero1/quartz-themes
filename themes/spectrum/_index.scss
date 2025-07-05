@@ -43,8 +43,6 @@ html[saved-theme="light"] {
   }
   --mono-rgb-100: 0, 0, 0;
   --mono-rgb-100: 0, 0, 0;
-
-  --text-highlight-bg: #e9b35f;
 }
 
 /* cyrillic-ext */
@@ -1344,7 +1342,11 @@ body {
         & > input {
           background-color: #f5f5f5;
           border: none;
-          border-bottom: 1px solid light-dark(#e2e2e2, #1b1b1b);
+          border-bottom: 1px solid
+            light-dark(
+              light-dark(#e2e2e2, #1b1b1b),
+              light-dark(#e2e2e2, #1b1b1b)
+            );
           border-radius: 0;
           font-size: 16px;
           height: 48px;

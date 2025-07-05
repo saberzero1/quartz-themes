@@ -292,7 +292,7 @@ body {
   -webkit-user-select: none;
   background-color: #fffefd;
   caret-color: #f55c51;
-  color: light-dark(#4a3827, #ffebd1);
+  color: #4a3827;
   contain: initial;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 16px;
@@ -1004,7 +1004,7 @@ body {
   .clipboard-button {
     background-color: transparent;
     box-shadow: none;
-    color: light-dark(#b29688, #807874);
+    color: #b29688;
     font-family:
       "??",
       "??",
@@ -1296,7 +1296,7 @@ body {
       background: transparent;
       border: 1px solid transparent;
       border-radius: 5px;
-      color: light-dark(#4a3827, #ffebd1);
+      color: #4a3827;
       font-family: inherit;
       font-size: 14.992px;
       height: 40px;
@@ -1324,7 +1324,11 @@ body {
         & > input {
           background-color: #fffefd;
           border: none;
-          border-bottom: 1px solid light-dark(#fdf9f5, #181716);
+          border-bottom: 1px solid
+            light-dark(
+              light-dark(#fdf9f5, #181716),
+              light-dark(#fdf9f5, #181716)
+            );
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1337,7 +1341,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: light-dark(#4a3827, #ffebd1);
+          color: #4a3827;
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1382,7 +1386,7 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: light-dark(#4a3827, #ffebd1);
+                color: #4a3827;
                 &.match-tag {
                   color: #f55c51;
                 }

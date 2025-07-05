@@ -274,9 +274,10 @@ function compareDeclarations(declA, declB) {
  * Extracts all CSS rules that apply to the dark theme (identified by the presence of ".theme-dark" in the selector).
  *
  * @param {string} cssString - The CSS string to process.
+ * @param {boolean} [wrapRoot=false] - If true, wraps the rules in a `:root` selector.
  * @returns {string[]} An array of strings, each representing a rule
  */
-export function getAllDarkThemeRules(cssString) {
+export function getAllDarkThemeRules(cssString, wrapRoot = false) {
   const root = postcss.parse(cssString)
   const darkThemeRules = []
 
@@ -287,9 +288,11 @@ export function getAllDarkThemeRules(cssString) {
         .filter((node) => node.type === "decl")
         .map((decl) => `${decl.prop}: ${decl.value};`)
         .join("\n")
-      darkThemeRules.push(`:root {
-  ${ruleString}
-}\n`)
+      if (wrapRoot) {
+        darkThemeRules.push(`:root {\n${ruleString}\n}\n`)
+      } else {
+        darkThemeRules.push(ruleString)
+      }
     }
     else if (rule.selector.includes(".theme-dark")) {
       const ruleString = rule.toString().split(".theme-dark").join("")
@@ -304,9 +307,10 @@ export function getAllDarkThemeRules(cssString) {
  * Extracts all CSS rules that apply to the light theme (identified by the presence of ".theme-light" in the selector).
  *
  * @param {string} cssString - The CSS string to process.
+ * @param {boolean} [wrapRoot=false] - If true, wraps the rules in a `:root` selector.
  * @returns {string[]} An array of strings, each representing a rule
  */
-export function getAllLightThemeRules(cssString) {
+export function getAllLightThemeRules(cssString, wrapRoot = false) {
   const root = postcss.parse(cssString)
   const lightThemeRules = []
 
@@ -317,9 +321,11 @@ export function getAllLightThemeRules(cssString) {
         .filter((node) => node.type === "decl")
         .map((decl) => `${decl.prop}: ${decl.value};`)
         .join("\n")
-      lightThemeRules.push(`:root {
-  ${ruleString}
-}\n`)
+      if (wrapRoot) {
+        lightThemeRules.push(`:root {\n${ruleString}\n}\n`)
+      } else {
+        lightThemeRules.push(ruleString)
+      }
     } else if (rule.selector.includes(".theme-light")) {
       const ruleString = rule.toString().split(".theme-light").join("")
       lightThemeRules.push(ruleString)
@@ -412,17 +418,14 @@ export function getCombinedThemeVariables(cssString, darkThemeSelector = ".theme
  * @return {string} The combined CSS custom properties as a string.
  */
 export function combineThemeVariables(css) {
-  const darkThemeRules = getAllDarkThemeRules(css)
-  const lightThemeRules = getAllLightThemeRules(css)
+  const darkThemeRules = getAllDarkThemeRules(css, true)
+  const lightThemeRules = getAllLightThemeRules(css, true)
 
   const splitDarkThemeRules = darkThemeRules.map(item => [item.split("{")[0].trim(), item.split("{")[1].replace("}", "").trim().split(/(?<=;)\n/).map(decl => decl.trim()).map(decl => decl.split(":").map(part => part.trim()))])
   const splitLightThemeRules = lightThemeRules.map(item => [item.split("{")[0].trim(), item.split("{")[1].replace("}", "").trim().split(/(?<=;)\n/).map(decl => decl.trim()).map(decl => decl.split(":").map(part => part.trim()))])
 
   const splitDarkThemeMap = new Map(splitDarkThemeRules)
   const splitLightThemeMap = new Map(splitLightThemeRules)
-
-  console.log("Dark theme rules:", splitDarkThemeMap)
-  console.log("Light theme rules:", splitLightThemeMap)
 
   // Combine the rules into a single pair for every color property that exists in both themes.
   let result = "" 
@@ -442,6 +445,11 @@ export function combineThemeVariables(css) {
       }
       // Add the combined declarations to the result
       if (combinedDeclarations.length > 0) {
+        if (selector.includes(":root")) {
+          combinedDeclarations.forEach(([prop, value]) => {
+            result += `  ${prop}: ${value};\n`
+          })
+        }
         result += `${selector} {\n`
         combinedDeclarations.forEach(([prop, value]) => {
           result += `  ${prop}: ${value};\n`
@@ -451,7 +459,7 @@ export function combineThemeVariables(css) {
     }
   }
 
-  console.log("Combined theme variables:", result)
+  result = result.replaceAll("undefined", "")
 
   // Turn the combined properties into a string
   return result !== "" ? `${css}\n\n${result}\n\n` : css

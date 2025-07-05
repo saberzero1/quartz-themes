@@ -791,7 +791,7 @@ body {
   -webkit-user-select: none;
   background-color: light-dark(#2b213a, #2b213a);
   caret-color: #00ffff;
-  color: light-dark(#ff00ff, #ff00ff);
+  color: #ff00ff;
   contain: initial;
   font-family:
     "??",
@@ -1529,7 +1529,7 @@ body {
   .clipboard-button {
     background-color: transparent;
     box-shadow: none;
-    color: light-dark(#ff79c6, #ff79c6);
+    color: #ff79c6;
     font-family:
       "??",
       "??",
@@ -1566,7 +1566,7 @@ body {
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: light-dark(#bd93f9, #bd93f9);
+    color: #bd93f9;
   }
   /* BACKLINKS */
   .backlinks {
@@ -1825,9 +1825,10 @@ body {
       color: var(--button-secondary-fg-color);
       -webkit-app-region: no-drag;
       background: transparent;
-      border: 1px solid light-dark(#00ffff, #00ffff);
+      border: 1px solid
+        light-dark(light-dark(#00ffff, #00ffff), light-dark(#00ffff, #00ffff));
       border-radius: 5px;
-      color: light-dark(#ff00ff, #ff00ff);
+      color: #ff00ff;
       font-family: inherit;
       font-size: 14.992px;
       height: 40px;
@@ -1868,7 +1869,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: light-dark(#ff00ff, #ff00ff);
+          color: #ff00ff;
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1913,7 +1914,7 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: light-dark(#ff00ff, #ff00ff);
+                color: #ff00ff;
                 &.match-tag {
                   color: light-dark(#ff00ff, #ff00ff);
                 }
@@ -1978,7 +1979,8 @@ body {
   /* POPOVER */
   .popover {
     background-color: light-dark(#2b213a, #2b213a);
-    border: 1px solid light-dark(#00ffff, #00ffff);
+    border: 1px solid
+      light-dark(light-dark(#00ffff, #00ffff), light-dark(#00ffff, #00ffff));
     border-radius: 8px;
     box-shadow:
       0px 1px 2px #0000001f,
@@ -1994,7 +1996,8 @@ body {
     border: unset;
     background-color: var(--background-primary);
     & .popover-inner {
-      border: 1px solid light-dark(#00ffff, #00ffff);
+      border: 1px solid
+        light-dark(light-dark(#00ffff, #00ffff), light-dark(#00ffff, #00ffff));
       background-color: light-dark(#2b213a, #2b213a);
 
       border-radius: 8px;

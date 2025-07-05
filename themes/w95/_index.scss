@@ -888,7 +888,7 @@ body {
   /* HEADINGS */
   h1 {
     --font-weight: 700;
-    color: light-dark(#34548a, #34548a);
+    color: #34548a;
     font-family: inherit;
     font-size: 1.4rem;
     font-style: normal;
@@ -908,7 +908,7 @@ body {
   h2.page-title a,
   h2 {
     --font-weight: 600;
-    color: light-dark(#34548a, #34548a);
+    color: #34548a;
     font-family: inherit;
     font-size: 1.3rem;
     font-style: normal;
@@ -925,7 +925,7 @@ body {
   }
   h3 {
     --font-weight: 600;
-    color: light-dark(#34548a, #34548a);
+    color: #34548a;
     font-family: inherit;
     font-size: 1.2rem;
     font-style: normal;
@@ -942,7 +942,7 @@ body {
   }
   h4 {
     --font-weight: 600;
-    color: light-dark(#34548a, #34548a);
+    color: #34548a;
     font-family: inherit;
     font-size: 1.1rem;
     font-style: normal;
@@ -959,7 +959,7 @@ body {
   }
   h5 {
     --font-weight: 600;
-    color: light-dark(#34548a, #34548a);
+    color: #34548a;
     font-family: inherit;
     font-size: 1rem;
     font-style: normal;
@@ -976,7 +976,7 @@ body {
   }
   h6 {
     --font-weight: 600;
-    color: light-dark(#34548a, #34548a);
+    color: #34548a;
     font-family: inherit;
     font-size: 0.9rem;
     font-style: normal;
@@ -1139,7 +1139,7 @@ body {
   .backlinks {
     h3 {
       --font-weight: 600;
-      color: light-dark(#34548a, #34548a);
+      color: #34548a;
       font-family: inherit;
       font-size: 1.2rem;
       font-style: normal;
@@ -1167,7 +1167,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: light-dark(#34548a, #34548a);
+      color: #34548a;
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1205,7 +1205,7 @@ body {
         }
         &:hover {
           background-color: light-dark(#00007b, #00007b);
-          color: light-dark(#ffffff, #ffffff);
+          color: #ffffff;
           font-weight: inherit;
           font-size: 1rem;
           line-height: 1.5rem;
@@ -1285,11 +1285,11 @@ body {
   }
   /* TOC */
   .toc {
-    color: light-dark(#34548a, #34548a);
+    color: #34548a;
     button.toc-header {
       h3 {
         --font-weight: 600;
-        color: light-dark(#34548a, #34548a);
+        color: #34548a;
         font-family: inherit;
         font-size: 1.2rem;
         font-style: normal;
@@ -1301,7 +1301,7 @@ body {
         margin-block-start: 0rem;
         margin-block: 0;
       }
-      color: light-dark(#34548a, #34548a);
+      color: #34548a;
       color: inherit;
     }
     ul.toc-content.overflow {
@@ -1320,7 +1320,7 @@ body {
   .toc {
     h3 {
       --font-weight: 600;
-      color: light-dark(#34548a, #34548a);
+      color: #34548a;
       font-family: inherit;
       font-size: 1.2rem;
       font-style: normal;
@@ -1386,7 +1386,8 @@ body {
       color: var(--button-secondary-fg-color);
       -webkit-app-region: no-drag;
       background: transparent;
-      border: 1px solid light-dark(#707070, #999999);
+      border: 1px solid
+        light-dark(light-dark(#707070, #999999), light-dark(#707070, #999999));
       border-radius: 5px;
       color: #181612;
       font-family: inherit;
@@ -1539,7 +1540,8 @@ body {
   /* POPOVER */
   .popover {
     background-color: light-dark(#bdbebd, #bdbebd);
-    border: 1px solid light-dark(#707070, #999999);
+    border: 1px solid
+      light-dark(light-dark(#707070, #999999), light-dark(#707070, #999999));
     border-radius: 8px;
     box-shadow:
       0px 1px 2px #00000007,
@@ -1555,7 +1557,8 @@ body {
     border: unset;
     background-color: var(--background-primary);
     & .popover-inner {
-      border: 1px solid light-dark(#707070, #999999);
+      border: 1px solid
+        light-dark(light-dark(#707070, #999999), light-dark(#707070, #999999));
       background-color: light-dark(#bdbebd, #bdbebd);
 
       border-radius: 8px;

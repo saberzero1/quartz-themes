@@ -1249,7 +1249,7 @@ body {
         position: relative;
         a {
           border-radius: 4px;
-          color: light-dark(#949494, #f0eae2);
+          color: #949494;
           cursor: pointer;
           display: flex;
           font-size: 16px;
@@ -1322,7 +1322,7 @@ body {
     ul.toc-content.overflow {
       li,
       li > a {
-        color: light-dark(#949494, #f0eae2);
+        color: #949494;
         font-weight: inherit;
         font-size: 16px;
         color: inherit;
