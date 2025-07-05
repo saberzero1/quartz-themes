@@ -913,7 +913,7 @@ body {
   h2.page-title a,
   h2 {
     --font-weight: 600;
-    color: light-dark(#08b94e, #44cf6e);
+    color: #08b94e;
     font-family: inherit;
     font-size: 1.5625em;
     font-style: normal;
@@ -930,7 +930,7 @@ body {
   }
   h3 {
     --font-weight: 600;
-    color: light-dark(#086ddd, #027aff);
+    color: #086ddd;
     font-family: inherit;
     font-size: 1.375em;
     font-style: normal;
@@ -981,7 +981,7 @@ body {
   }
   h6 {
     --font-weight: 600;
-    color: light-dark(#ec7500, #e9973f);
+    color: #ec7500;
     font-family: inherit;
     font-size: 1em;
     font-style: normal;
@@ -1147,7 +1147,7 @@ body {
   .backlinks {
     h3 {
       --font-weight: 600;
-      color: light-dark(#086ddd, #027aff);
+      color: #086ddd;
       font-family: inherit;
       font-size: 1.375em;
       font-style: normal;
@@ -1175,7 +1175,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: light-dark(#08b94e, #44cf6e);
+      color: #08b94e;
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1293,11 +1293,11 @@ body {
   }
   /* TOC */
   .toc {
-    color: light-dark(#086ddd, #027aff);
+    color: #086ddd;
     button.toc-header {
       h3 {
         --font-weight: 600;
-        color: light-dark(#086ddd, #027aff);
+        color: #086ddd;
         font-family: inherit;
         font-size: 1.375em;
         font-style: normal;
@@ -1309,7 +1309,7 @@ body {
         margin-block-start: 0rem;
         margin-block: 0;
       }
-      color: light-dark(#086ddd, #027aff);
+      color: #086ddd;
       color: inherit;
     }
     ul.toc-content.overflow {
@@ -1328,7 +1328,7 @@ body {
   .toc {
     h3 {
       --font-weight: 600;
-      color: light-dark(#086ddd, #027aff);
+      color: #086ddd;
       font-family: inherit;
       font-size: 1.375em;
       font-style: normal;
@@ -1424,7 +1424,11 @@ body {
         & > input {
           background-color: #fafafa;
           border: none;
-          border-bottom: 1px solid light-dark(#e3e3e3, #2a2a2a);
+          border-bottom: 1px solid
+            light-dark(
+              light-dark(#e3e3e3, #2a2a2a),
+              light-dark(#ffffff, #1e1e1e)
+            );
           border-radius: 0;
           font-size: 16px;
           height: 48px;

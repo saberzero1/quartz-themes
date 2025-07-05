@@ -1,5 +1,5 @@
 import fs from "fs";
-import { applyRuleToString, ensureDirectoryExists } from "./util.mjs";
+import { cleanup, applyRuleToString, ensureDirectoryExists } from "./util.mjs";
 import { combineThemeVariables, getCombinedThemeVariables, combineIdenticalSelectors, removeEmptyRules, splitCombinedRules } from "./postcss.mjs";
 import { usedRules } from "./../config.mjs";
 import * as prettier from "prettier"
@@ -40,7 +40,7 @@ export async function writePrettier(file, content, encoding = "utf8") {
       content = prettierSCSS(content);
     }
   }*/
-  fs.writeFileSync(file, content, encoding);
+  fs.writeFileSync(file, cleanup(content), encoding);
 }
 
 /**
@@ -101,19 +101,12 @@ export async function prettierSCSS(scss) {
  */
 export function cleanCSS(base, inject, mode = "both", extract = false) {
   let result = `${base}\n${inject}`
-  const selectorsToRemove = [
-    ".markdown-rendered",
-    ".markdown-preview-view",
-  ];
   result = result.replace(/^@media screen and \(forced-colors: active\) \{.*?^\}$/gms, "") // Remove forced colors media queries
   result = result.replace(/^@container.*?^\}$/gms, "") // Remove container media queries
   result = result.replace(/^@scope.*?^\}$/gms, "") // Remove scope media queries
   result = result.replace(/^\.pdf-.*?\{.*?^\}/gms, "") // Remove PDF specific rules
   result = result.replace(/^\s*?color-scheme:\s*?(light|dark|normal);\s*?$/gms, "") // Remove color scheme rules
-  for (const selector of selectorsToRemove) {
-    const regex = new RegExp(`^\\s*?${selector}(?!\\s*?{)`, "gms");
-    result = result.replace(regex, ""); // Remove selectors that match the regex
-  }
+
   const colorVariables = getCombinedThemeVariables(result);
   // Append colorVariables to the end of `:root`
   const colorRootVariable = result.matchAll(/(^:root\s*?\{.*?^\}$)/gms);
@@ -205,22 +198,22 @@ export function writeIndex(themeName, themeCSS) {
   resultCSS = applyRuleToString(resultCSS, "h6", "//%%H6%%", themeCSS)
 
   // Code blocks
-  resultCSS = applyRuleToString(resultCSS, "pre", "//%%PRE%%", themeCSS)
+  resultCSS = applyRuleToString(resultCSS, ".markdown-rendered pre", "//%%PRE%%", themeCSS)
 
   // inline code
-  resultCSS = applyRuleToString(resultCSS, "code", "//%%CODE INLINE%%", themeCSS)
-  resultCSS = applyRuleToString(resultCSS, "pre code", "//%%CODE%%", themeCSS)
+  resultCSS = applyRuleToString(resultCSS, ".markdown-rendered code", "//%%CODE INLINE%%", themeCSS)
+  resultCSS = applyRuleToString(resultCSS, ".markdown-rendered pre code", "//%%CODE%%", themeCSS)
 
   // Code copy button
   resultCSS = applyRuleToString(
     resultCSS,
-    "button.copy-code-button",
+    ".markdown-rendered button.copy-code-button",
     "//%%CLIPBOARD BUTTON%%",
     themeCSS,
   )
   resultCSS = applyRuleToString(
     resultCSS,
-    "button.copy-code-button:hover",
+    ".markdown-rendered button.copy-code-button:hover",
     "//%%CLIPBOARD BUTTON HOVER%%",
     themeCSS,
   )

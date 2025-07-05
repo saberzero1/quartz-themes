@@ -2543,7 +2543,7 @@ body {
   -webkit-user-select: none;
   background-color: #d7ddd9;
   caret-color: #99e5b5;
-  color: light-dark(#20542c, #99e5b5);
+  color: #20542c;
   contain: initial;
   font-family: "DotGothic16", "ModeSeven Regular";
   font-size: 16px;
@@ -3257,7 +3257,7 @@ body {
   .clipboard-button {
     background-color: transparent;
     box-shadow: none;
-    color: light-dark(#20542c, #99e5b5);
+    color: #20542c;
     font-family: "DotGothic16", "ModeSeven Regular";
     font-size: 12.8px;
     height: auto;
@@ -3280,7 +3280,7 @@ body {
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: light-dark(#20542c, #99e5b5);
+    color: #20542c;
   }
   /* BACKLINKS */
   .backlinks {
@@ -3352,7 +3352,7 @@ body {
         }
         &:hover {
           background-color: #86c66c;
-          color: light-dark(#20542c, #99e5b5);
+          color: #20542c;
           font-weight: bold;
           font-size: 1rem;
           line-height: 1.5rem;
@@ -3536,9 +3536,10 @@ body {
         light-dark(#c9d3cb, #020704),
         light-dark(#c9d3cb, #020704)
       );
-      border: 1px solid light-dark(#c9d3cb, #020704);
+      border: 1px solid
+        light-dark(light-dark(#c9d3cb, #020704), light-dark(#c9d3cb, #020704));
       border-radius: 5px;
-      color: light-dark(#20542c, #99e5b5);
+      color: #20542c;
       font-family: inherit;
       font-size: 14.992px;
       height: 40px;
@@ -3566,7 +3567,11 @@ body {
         & > input {
           background-color: #d7ddd9;
           border: none;
-          border-bottom: 1px solid light-dark(#d7ddd9, #0b1510);
+          border-bottom: 1px solid
+            light-dark(
+              light-dark(#d7ddd9, #0b1510),
+              light-dark(#d7ddd9, #0b1510)
+            );
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -3579,7 +3584,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: light-dark(#20542c, #99e5b5);
+          color: #20542c;
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -3624,7 +3629,7 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: light-dark(#20542c, #99e5b5);
+                color: #20542c;
                 &.match-tag {
                   color: #163f26;
                 }
@@ -3689,7 +3694,8 @@ body {
   /* POPOVER */
   .popover {
     background-color: #d7ddd9;
-    border: 1px solid light-dark(#c9d3cb, #020704);
+    border: 1px solid
+      light-dark(light-dark(#c9d3cb, #020704), light-dark(#c9d3cb, #020704));
     border-radius: 8px;
     box-shadow:
       0px 1px 2px #0000001f,
@@ -3705,7 +3711,8 @@ body {
     border: unset;
     background-color: var(--background-primary);
     & .popover-inner {
-      border: 1px solid light-dark(#c9d3cb, #020704);
+      border: 1px solid
+        light-dark(light-dark(#c9d3cb, #020704), light-dark(#c9d3cb, #020704));
       background-color: #d7ddd9;
 
       border-radius: 8px;

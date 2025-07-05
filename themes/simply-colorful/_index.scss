@@ -907,7 +907,7 @@ body {
       transparent
     );
     border-radius: 4px;
-    color: light-dark(#086ddd, #027aff);
+    color: #086ddd;
     font-family: inherit;
     font-size: 1.802em;
     font-style: normal;
@@ -936,7 +936,7 @@ body {
       transparent
     );
     border-radius: 4px;
-    color: light-dark(#7852ee, #a882ff);
+    color: #7852ee;
     font-family: inherit;
     font-size: 1.602em;
     font-style: normal;
@@ -962,7 +962,7 @@ body {
       transparent
     );
     border-radius: 4px;
-    color: light-dark(#d53984, #fa99cd);
+    color: #d53984;
     font-family: inherit;
     font-size: 1.424em;
     font-style: normal;
@@ -988,7 +988,7 @@ body {
       transparent
     );
     border-radius: 4px;
-    color: light-dark(#e93147, #fb464c);
+    color: #e93147;
     font-family: inherit;
     font-size: 1.266em;
     font-style: normal;
@@ -1014,7 +1014,7 @@ body {
       transparent
     );
     border-radius: 4px;
-    color: light-dark(#ec7500, #e9973f);
+    color: #ec7500;
     font-family: inherit;
     font-size: 1.125em;
     font-style: normal;
@@ -1040,7 +1040,7 @@ body {
       transparent
     );
     border-radius: 4px;
-    color: light-dark(#e0ac00, #e0de71);
+    color: #e0ac00;
     font-family: inherit;
     font-size: 1em;
     font-style: normal;
@@ -1213,7 +1213,7 @@ body {
         transparent
       );
       border-radius: 4px;
-      color: light-dark(#d53984, #fa99cd);
+      color: #d53984;
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1244,7 +1244,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: light-dark(#7852ee, #a882ff);
+      color: #7852ee;
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1362,7 +1362,7 @@ body {
   }
   /* TOC */
   .toc {
-    color: light-dark(#d53984, #fa99cd);
+    color: #d53984;
     button.toc-header {
       h3 {
         --font-weight: 700;
@@ -1373,7 +1373,7 @@ body {
           transparent
         );
         border-radius: 4px;
-        color: light-dark(#d53984, #fa99cd);
+        color: #d53984;
         font-family: inherit;
         font-size: 1.424em;
         font-style: normal;
@@ -1388,7 +1388,7 @@ body {
         transition: background-color 0.75s ease;
         margin-block: 0;
       }
-      color: light-dark(#d53984, #fa99cd);
+      color: #d53984;
       color: inherit;
     }
     ul.toc-content.overflow {
@@ -1414,7 +1414,7 @@ body {
         transparent
       );
       border-radius: 4px;
-      color: light-dark(#d53984, #fa99cd);
+      color: #d53984;
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1486,7 +1486,8 @@ body {
         light-dark(#fcfcfc, #212121),
         light-dark(#fcfcfc, #212121)
       );
-      border: 1px solid light-dark(#e3e3e3, #2a2a2a);
+      border: 1px solid
+        light-dark(light-dark(#e3e3e3, #2a2a2a), light-dark(#e3e3e3, #2a2a2a));
       border-radius: 5px;
       color: #dadada;
       font-family: inherit;
@@ -1516,7 +1517,11 @@ body {
         & > input {
           background-color: #ffffff;
           border: none;
-          border-bottom: 1px solid light-dark(#fcfcfc, #212121);
+          border-bottom: 1px solid
+            light-dark(
+              light-dark(#fcfcfc, #212121),
+              light-dark(#fcfcfc, #212121)
+            );
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1639,7 +1644,8 @@ body {
   /* POPOVER */
   .popover {
     background-color: #ffffff;
-    border: 1px solid light-dark(#e3e3e3, #2a2a2a);
+    border: 1px solid
+      light-dark(light-dark(#e3e3e3, #2a2a2a), light-dark(#e3e3e3, #2a2a2a));
     border-radius: 8px;
     box-shadow:
       0px 1px 2px #0000001f,
@@ -1655,7 +1661,8 @@ body {
     border: unset;
     background-color: var(--background-primary);
     & .popover-inner {
-      border: 1px solid light-dark(#e3e3e3, #2a2a2a);
+      border: 1px solid
+        light-dark(light-dark(#e3e3e3, #2a2a2a), light-dark(#e3e3e3, #2a2a2a));
       background-color: #ffffff;
 
       border-radius: 8px;

@@ -1279,7 +1279,8 @@ body {
         light-dark(#161719, #161719),
         light-dark(#161719, #161719)
       );
-      border: 1px solid light-dark(#949594, #949594);
+      border: 1px solid
+        light-dark(light-dark(#949594, #949594), light-dark(#949594, #949594));
       border-radius: 5px;
       color: light-dark(#d5d5d5, #d5d5d5);
       font-family: inherit;
@@ -1369,7 +1370,7 @@ body {
                 background-color: transparent;
                 color: light-dark(#d5d5d5, #d5d5d5);
                 &.match-tag {
-                  color: light-dark(#161719, #161719);
+                  color: #161719;
                 }
               }
             }

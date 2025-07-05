@@ -929,7 +929,7 @@ body {
   /* HEADINGS */
   h1 {
     --font-weight: 700;
-    color: light-dark(#7852ee, #a882ff);
+    color: #7852ee;
     font-family: inherit;
     font-size: 1.802em;
     font-style: normal;
@@ -949,7 +949,7 @@ body {
   h2.page-title a,
   h2 {
     --font-weight: 600;
-    color: light-dark(#086ddd, #027aff);
+    color: #086ddd;
     font-family: inherit;
     font-size: 1.602em;
     font-style: normal;
@@ -966,7 +966,7 @@ body {
   }
   h3 {
     --font-weight: 600;
-    color: light-dark(#08b94e, #44cf6e);
+    color: #08b94e;
     font-family: inherit;
     font-size: 1.424em;
     font-style: normal;
@@ -983,7 +983,7 @@ body {
   }
   h4 {
     --font-weight: 600;
-    color: light-dark(#e0ac00, #e0de71);
+    color: #e0ac00;
     font-family: inherit;
     font-size: 1.266em;
     font-style: normal;
@@ -1000,7 +1000,7 @@ body {
   }
   h5 {
     --font-weight: 600;
-    color: light-dark(#ec7500, #e9973f);
+    color: #ec7500;
     font-family: inherit;
     font-size: 1.125em;
     font-style: normal;
@@ -1017,7 +1017,7 @@ body {
   }
   h6 {
     --font-weight: 600;
-    color: light-dark(#e93147, #fb464c);
+    color: #e93147;
     font-family: inherit;
     font-size: 1em;
     font-style: normal;
@@ -1180,7 +1180,7 @@ body {
   .backlinks {
     h3 {
       --font-weight: 600;
-      color: light-dark(#08b94e, #44cf6e);
+      color: #08b94e;
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1208,7 +1208,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: light-dark(#086ddd, #027aff);
+      color: #086ddd;
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1326,11 +1326,11 @@ body {
   }
   /* TOC */
   .toc {
-    color: light-dark(#08b94e, #44cf6e);
+    color: #08b94e;
     button.toc-header {
       h3 {
         --font-weight: 600;
-        color: light-dark(#08b94e, #44cf6e);
+        color: #08b94e;
         font-family: inherit;
         font-size: 1.424em;
         font-style: normal;
@@ -1342,7 +1342,7 @@ body {
         margin-block-start: 0rem;
         margin-block: 0;
       }
-      color: light-dark(#08b94e, #44cf6e);
+      color: #08b94e;
       color: inherit;
     }
     ul.toc-content.overflow {
@@ -1361,7 +1361,7 @@ body {
   .toc {
     h3 {
       --font-weight: 600;
-      color: light-dark(#08b94e, #44cf6e);
+      color: #08b94e;
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;

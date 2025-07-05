@@ -901,7 +901,7 @@ body {
   /* HEADINGS */
   h1 {
     --font-weight: 700;
-    color: light-dark(#3bb2ce, #43cfea);
+    color: #3bb2ce;
     font-family: inherit;
     font-size: 1.802em;
     font-style: normal;
@@ -922,7 +922,7 @@ body {
   h2.page-title a,
   h2 {
     --font-weight: 600;
-    color: light-dark(#54b6f8, #54b6f8);
+    color: #54b6f8;
     font-family: inherit;
     font-size: 1.602em;
     font-style: normal;
@@ -939,7 +939,7 @@ body {
   }
   h3 {
     --font-weight: 600;
-    color: light-dark(#437cf3, #437cf3);
+    color: #437cf3;
     font-family: inherit;
     font-size: 1.424em;
     font-style: normal;
@@ -956,7 +956,7 @@ body {
   }
   h4 {
     --font-weight: 600;
-    color: light-dark(#6f51f4, #6f51f4);
+    color: #6f51f4;
     font-family: inherit;
     font-size: 1.266em;
     font-style: normal;
@@ -973,7 +973,7 @@ body {
   }
   h5 {
     --font-weight: 600;
-    color: light-dark(#9446f8, #9446f8);
+    color: #9446f8;
     font-family: inherit;
     font-size: 1.125em;
     font-style: normal;
@@ -990,7 +990,7 @@ body {
   }
   h6 {
     --font-weight: 600;
-    color: light-dark(#c952ed, #c952ed);
+    color: #c952ed;
     font-family: inherit;
     font-size: 1em;
     font-style: normal;
@@ -1153,7 +1153,7 @@ body {
   .backlinks {
     h3 {
       --font-weight: 600;
-      color: light-dark(#437cf3, #437cf3);
+      color: #437cf3;
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1181,7 +1181,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: light-dark(#54b6f8, #54b6f8);
+      color: #54b6f8;
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1238,7 +1238,8 @@ body {
         -webkit-mask-image: var(--folder-open-icon);
       }
       .folder-outer > ul.content {
-        border-inline-start: 1px solid light-dark(#e0e0e0, #363636);
+        border-inline-start: 1px solid
+          light-dark(light-dark(#e0e0e0, #363636), light-dark(#e0e0e0, #363636));
         margin-bottom: 1px;
         margin-inline-start: 12px;
         padding-inline-start: 4px;
@@ -1299,11 +1300,11 @@ body {
   }
   /* TOC */
   .toc {
-    color: light-dark(#437cf3, #437cf3);
+    color: #437cf3;
     button.toc-header {
       h3 {
         --font-weight: 600;
-        color: light-dark(#437cf3, #437cf3);
+        color: #437cf3;
         font-family: inherit;
         font-size: 1.424em;
         font-style: normal;
@@ -1315,7 +1316,7 @@ body {
         margin-block-start: 0rem;
         margin-block: 0;
       }
-      color: light-dark(#437cf3, #437cf3);
+      color: #437cf3;
       color: inherit;
     }
     ul.toc-content.overflow {
@@ -1334,7 +1335,7 @@ body {
   .toc {
     h3 {
       --font-weight: 600;
-      color: light-dark(#437cf3, #437cf3);
+      color: #437cf3;
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1433,7 +1434,11 @@ body {
         & > input {
           background-color: #fcfcfc;
           border: none;
-          border-bottom: 1px solid light-dark(#fcfcfc, #212121);
+          border-bottom: 1px solid
+            light-dark(
+              light-dark(#fcfcfc, #212121),
+              light-dark(#fcfcfc, #212121)
+            );
           border-radius: 0;
           font-size: 16px;
           height: 48px;

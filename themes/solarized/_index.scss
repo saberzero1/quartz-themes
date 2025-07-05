@@ -413,7 +413,7 @@ body {
   -webkit-user-select: none;
   background-color: #fdf6e3;
   caret-color: #e84e1a;
-  color: light-dark(#657b83, #657b83);
+  color: #657b83;
   contain: initial;
   font-family:
     "??",
@@ -931,7 +931,10 @@ body {
   /* HEADINGS */
   h1 {
     --font-weight: 700;
-    color: light-dark(#00bfbc, #53dfdd);
+    color: light-dark(
+      light-dark(#00bfbc, #53dfdd),
+      light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd))
+    );
     font-family: inherit;
     font-size: 1.802em;
     font-style: normal;
@@ -951,7 +954,10 @@ body {
   h2.page-title a,
   h2 {
     --font-weight: 600;
-    color: light-dark(#00bfbc, #53dfdd);
+    color: light-dark(
+      light-dark(#00bfbc, #53dfdd),
+      light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd))
+    );
     font-family: inherit;
     font-size: 1.602em;
     font-style: normal;
@@ -968,7 +974,10 @@ body {
   }
   h3 {
     --font-weight: 600;
-    color: light-dark(#00bfbc, #53dfdd);
+    color: light-dark(
+      light-dark(#00bfbc, #53dfdd),
+      light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd))
+    );
     font-family: inherit;
     font-size: 1.424em;
     font-style: normal;
@@ -985,7 +994,10 @@ body {
   }
   h4 {
     --font-weight: 600;
-    color: light-dark(#00bfbc, #53dfdd);
+    color: light-dark(
+      light-dark(#00bfbc, #53dfdd),
+      light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd))
+    );
     font-family: inherit;
     font-size: 1.266em;
     font-style: normal;
@@ -1002,7 +1014,10 @@ body {
   }
   h5 {
     --font-weight: 600;
-    color: light-dark(#00bfbc, #53dfdd);
+    color: light-dark(
+      light-dark(#00bfbc, #53dfdd),
+      light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd))
+    );
     font-family: inherit;
     font-size: 1.125em;
     font-style: normal;
@@ -1019,7 +1034,10 @@ body {
   }
   h6 {
     --font-weight: 600;
-    color: light-dark(#00bfbc, #53dfdd);
+    color: light-dark(
+      light-dark(#00bfbc, #53dfdd),
+      light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd))
+    );
     font-family: inherit;
     font-size: 1em;
     font-style: normal;
@@ -1125,7 +1143,10 @@ body {
     background-color: #073642;
     border: 0px solid transparent;
     border-radius: 4px;
-    color: light-dark(#657b83, #657b83);
+    color: light-dark(
+      light-dark(#657b83, #657b83),
+      light-dark(light-dark(#657b83, #657b83), light-dark(#839496, #839496))
+    );
     font-family:
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1139,7 +1160,7 @@ body {
   .clipboard-button {
     background-color: transparent;
     box-shadow: none;
-    color: light-dark(#839496, #839496);
+    color: #839496;
     font-family:
       "??",
       "??",
@@ -1176,13 +1197,16 @@ body {
   }
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: light-dark(#93a1a1, #93a1a1);
+    color: #93a1a1;
   }
   /* BACKLINKS */
   .backlinks {
     h3 {
       --font-weight: 600;
-      color: light-dark(#00bfbc, #53dfdd);
+      color: light-dark(
+        light-dark(#00bfbc, #53dfdd),
+        light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd))
+      );
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1210,7 +1234,10 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: light-dark(#00bfbc, #53dfdd);
+      color: light-dark(
+        light-dark(#00bfbc, #53dfdd),
+        light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd))
+      );
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1328,11 +1355,17 @@ body {
   }
   /* TOC */
   .toc {
-    color: light-dark(#00bfbc, #53dfdd);
+    color: light-dark(
+      light-dark(#00bfbc, #53dfdd),
+      light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd))
+    );
     button.toc-header {
       h3 {
         --font-weight: 600;
-        color: light-dark(#00bfbc, #53dfdd);
+        color: light-dark(
+          light-dark(#00bfbc, #53dfdd),
+          light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd))
+        );
         font-family: inherit;
         font-size: 1.424em;
         font-style: normal;
@@ -1344,7 +1377,10 @@ body {
         margin-block-start: 0rem;
         margin-block: 0;
       }
-      color: light-dark(#00bfbc, #53dfdd);
+      color: light-dark(
+        light-dark(#00bfbc, #53dfdd),
+        light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd))
+      );
       color: inherit;
     }
     ul.toc-content.overflow {
@@ -1363,7 +1399,10 @@ body {
   .toc {
     h3 {
       --font-weight: 600;
-      color: light-dark(#00bfbc, #53dfdd);
+      color: light-dark(
+        light-dark(#00bfbc, #53dfdd),
+        light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd))
+      );
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1431,7 +1470,7 @@ body {
       background: transparent;
       border: 1px solid transparent;
       border-radius: 5px;
-      color: light-dark(#657b83, #657b83);
+      color: #657b83;
       font-family: inherit;
       font-size: 14.992px;
       height: 40px;
@@ -1459,7 +1498,17 @@ body {
         & > input {
           background-color: #fdf6e3;
           border: none;
-          border-bottom: 1px solid light-dark(#fdf6e3, #fdf6e3);
+          border-bottom: 1px solid
+            light-dark(
+              light-dark(
+                light-dark(#fdf6e3, #fdf6e3),
+                light-dark(#002b36, #002b36)
+              ),
+              light-dark(
+                light-dark(#fdf6e3, #fdf6e3),
+                light-dark(#002b36, #002b36)
+              )
+            );
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -1472,7 +1521,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: light-dark(#657b83, #657b83);
+          color: #657b83;
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1517,7 +1566,7 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                color: light-dark(#657b83, #657b83);
+                color: #657b83;
                 &.match-tag {
                   color: light-dark(
                     light-dark(

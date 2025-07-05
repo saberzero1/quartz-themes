@@ -1432,7 +1432,11 @@ body {
         & > input {
           background-color: #f2f1ed;
           border: none;
-          border-bottom: 1px solid light-dark(#e5e3dc, #4c4a43);
+          border-bottom: 1px solid
+            light-dark(
+              light-dark(#e5e3dc, #4c4a43),
+              light-dark(#f6f6f6, #262626)
+            );
           border-radius: 0;
           font-size: 16px;
           height: 48px;
