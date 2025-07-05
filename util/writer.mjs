@@ -29,9 +29,10 @@ return extractResult;
  * @param {string} file - The path to the CSS or SCSS file.
  * @param {string} content - The CSS or SCSS content to write to the file.
  * @param {string} [encoding="utf8"] - The encoding to use when writing the file.
+ * @param {string} [clean=true]
  * @return {void} Writes the formatted content to the specified file.
  */
-export async function writePrettier(file, content, encoding = "utf8") {
+export async function writePrettier(file, content, encoding = "utf8", clean = true) {
   /*const extension = file.split(".").pop();
   if (extension === "css" || extension === "scss") {
     if (extension === "css") {
@@ -40,12 +41,14 @@ export async function writePrettier(file, content, encoding = "utf8") {
       content = prettierSCSS(content);
     }
   }*/
-  let compare = content
-  content = cleanup(content)
-
-  while (compare !== content) {
-    compare = content;
+  if (clean) {
+    let compare = content
     content = cleanup(content)
+
+    while (compare !== content) {
+      compare = content;
+      content = cleanup(content)
+    }
   }
 
   fs.writeFileSync(file, content, encoding);
