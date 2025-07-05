@@ -9,7 +9,7 @@
     "compile-all": "just compile-all",
     "compile-single": "just compile-single",
     "check": "just check",
-    "force-compile": "just force-compile",
+    "force-compile": "just force-atomize",
     "force-format": "just force-format",
     "format": "just format",
     "theme": "just theme",
