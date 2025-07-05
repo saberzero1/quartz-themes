@@ -475,7 +475,8 @@ export function applyRuleToString(sourceString, ruleSelector, targetText, inputC
       throw new Error(`No declarations found for selector: ${ruleSelector}`)
     }
   } catch (error) {
-    throw new Error(`Unable to apply rule to file: ${error.message}`)
+    return replaceInString(sourceString, targetText, `/* Unable to apply rule: ${error.message} */`)
+    //throw new Error(`Unable to apply rule to file: ${error.message}`)
   }
 }
 
