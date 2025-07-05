@@ -467,12 +467,6 @@ export function applyRuleToFile(filePath, ruleSelector, targetText, inputCSS, ru
 export function applyRuleToString(sourceString, ruleSelector, targetText, inputCSS, ruleToExtract = "") {
   try {
     // Find the rule declarations for the specified selector
-    if (ruleSelector.includes(".markdown-rendered")) {
-      const alternativeRuleDeclarations = getRuleOccurences(inputCSS, ruleSelector.replace(".markdown-rendered").trim(), ruleToExtract)
-      if (alternativeRuleDeclarations) {
-        return replaceInString(sourceString, targetText, `${alternativeRuleDeclarations}\n\n`)
-      }
-    }
     const ruleDeclarations = getRuleOccurences(inputCSS, ruleSelector, ruleToExtract)
     if (ruleDeclarations) {
       // Apply the rule declarations to the specified file
