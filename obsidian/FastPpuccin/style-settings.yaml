@@ -1,0 +1,289 @@
+name: FastPpuccin Theme settings
+id: fastppuccin-theme-settings
+settings:
+  - id: about-info-text
+    title: About this theme
+    description: "This is a high-performance clone of the famous [AnuPpuccin](https://github.com/AnubisNekhet/AnuPpuccin) theme (GPL-3.0)"
+    type: info-text
+    markdown: true
+  - id: extended-colors-info-text
+    title: Extended Colorschemes
+    description: "This theme supports the extended colorschemes from the AnuPpuccin theme. You can find the snippet here: [AnuPpuccin Themes Extended](https://github.com/AnubisNekhet/AnuPpuccin/blob/main/snippets/extended-colorschemes.css)"
+    type: info-text
+    markdown: true
+  - id: rainbow-folders-info-text
+    title: Rainbow Folders
+    description: "To use AnuPpuccin's Rainbow Folders, download the snippet from [here](https://github.com/LostViking09/obsidian-fastppuccin/blob/master/snippets/custom-rainbow-colors.css). It also supports [Custom Rainbow Colors](https://github.com/AnubisNekhet/AnuPpuccin/blob/main/snippets/custom-rainbow-colors.css) from AnuPpuccin."
+    type: info-text
+    markdown: true
+  - id: fastppuccin-colorsettings-header
+    title: Color settings
+    description: Set colorschemes and other color settings.
+    type: heading
+    level: 1
+    collapsed: true
+  - id: anuppuccin-theme-light
+    title: Light Theme Flavor
+    description: Extended colorschemes override this setting.
+    type: class-select
+    allowEmpty: false
+    default: ctp-latte
+    options:
+      - label: Latte
+        value: ctp-latte
+      - label: Rosé Pine
+        value: ctp-rosepine-light
+  - id: anuppuccin-theme-dark
+    title: Dark Theme Flavor
+    description: Extended colorschemes override this setting.
+    type: class-select
+    allowEmpty: false
+    default: ctp-mocha
+    options:
+      - label: Frappe
+        value: ctp-frappe
+      - label: Macchiato
+        value: ctp-macchiato
+      - label: Mocha
+        value: ctp-mocha
+      - label: Mocha Old
+        value: ctp-mocha-old
+  - id: anuppuccin-light-theme-accents
+    title: Custom Light Theme Accent
+    description: Select your preferred light theme accent (Defaults to dark theme accent if left empty)
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+      - label: Rosewater
+        value: ctp-accent-light-rosewater
+      - label: Flamingo
+        value: ctp-accent-light-flamingo
+      - label: Pink
+        value: ctp-accent-light-pink
+      - label: Mauve
+        value: ctp-accent-light-mauve
+      - label: Red
+        value: ctp-accent-light-red
+      - label: Maroon
+        value: ctp-accent-light-maroon
+      - label: Peach
+        value: ctp-accent-light-peach
+      - label: Yellow
+        value: ctp-accent-light-yellow
+      - label: Green
+        value: ctp-accent-light-green
+      - label: Teal
+        value: ctp-accent-light-teal
+      - label: Sky
+        value: ctp-accent-light-sky
+      - label: Sapphire
+        value: ctp-accent-light-sapphire
+      - label: Blue
+        value: ctp-accent-light-blue
+      - label: Lavender
+        value: ctp-accent-light-lavender
+  - id: anuppuccin-theme-accents
+    title: Custom Dark Theme Accent
+    description: Select your preferred accent color from the palette (Empty means theme default)
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+      - label: Rosewater
+        value: ctp-accent-rosewater
+      - label: Flamingo
+        value: ctp-accent-flamingo
+      - label: Pink
+        value: ctp-accent-pink
+      - label: Mauve
+        value: ctp-accent-mauve
+      - label: Red
+        value: ctp-accent-red
+      - label: Maroon
+        value: ctp-accent-maroon
+      - label: Peach
+        value: ctp-accent-peach
+      - label: Yellow
+        value: ctp-accent-yellow
+      - label: Green
+        value: ctp-accent-green
+      - label: Teal
+        value: ctp-accent-teal
+      - label: Sky
+        value: ctp-accent-sky
+      - label: Sapphire
+        value: ctp-accent-sapphire
+      - label: Blue
+        value: ctp-accent-blue
+      - label: Lavender
+        value: ctp-accent-lavender
+  - id: file-title-color
+    title: File Name title color
+    type: class-select
+    allowEmpty: false
+    default: inline-title-normal
+    options:
+      - label: Normal
+        value: inline-title-normal
+      - label: Muted
+        value: inline-title-muted
+      - label: Accent
+        value: inline-title-accent
+      - label: H1
+        value: inline-title-h1
+  - id: callout-title-force-default
+    title: Force Default Callout Title Color
+    description: Useful if the title is unreadable.
+    type: class-toggle
+    default: false
+  - id: fastppuccin-decor-header
+    title: Text Decoration
+    description: Set colors for bold, italic, and highlight text decorations.
+    type: heading
+    level: 1
+    collapsed: true
+  - id: anp-decoration-toggle
+    title: Enable Decoration Colors
+    type: class-toggle
+  - id: anp-bold-custom
+    title: Bold Color
+    type: class-select
+    allowEmpty: false
+    default: anp-bold-red
+    options:
+      - label: None
+        value: none
+      - label: Rosewater
+        value: anp-bold-rosewater
+      - label: Flamingo
+        value: anp-bold-flamingo
+      - label: Pink
+        value: anp-bold-pink
+      - label: Mauve
+        value: anp-bold-mauve
+      - label: Red
+        value: anp-bold-red
+      - label: Maroon
+        value: anp-bold-maroon
+      - label: Peach
+        value: anp-bold-peach
+      - label: Yellow
+        value: anp-bold-yellow
+      - label: Green
+        value: anp-bold-green
+      - label: Teal
+        value: anp-bold-teal
+      - label: Sky
+        value: anp-bold-sky
+      - label: Sapphire
+        value: anp-bold-sapphire
+      - label: Blue
+        value: anp-bold-blue
+      - label: Lavender
+        value: anp-bold-lavender
+  - id: anp-italic-custom
+    title: Italic Color
+    type: class-select
+    allowEmpty: false
+    default: anp-italic-green
+    options:
+      - label: None
+        value: none
+      - label: Rosewater
+        value: anp-italic-rosewater
+      - label: Flamingo
+        value: anp-italic-flamingo
+      - label: Pink
+        value: anp-italic-pink
+      - label: Mauve
+        value: anp-italic-mauve
+      - label: Red
+        value: anp-italic-red
+      - label: Maroon
+        value: anp-italic-maroon
+      - label: Peach
+        value: anp-italic-peach
+      - label: Yellow
+        value: anp-italic-yellow
+      - label: Green
+        value: anp-italic-green
+      - label: Teal
+        value: anp-italic-teal
+      - label: Sky
+        value: anp-italic-sky
+      - label: Sapphire
+        value: anp-italic-sapphire
+      - label: Blue
+        value: anp-italic-blue
+      - label: Lavender
+        value: anp-italic-lavender
+  - id: anp-highlight-custom
+    title: Highlight Color
+    type: class-select
+    allowEmpty: false
+    default: anp-highlight-yellow
+    options:
+      - label: Rosewater
+        value: anp-highlight-rosewater
+      - label: Flamingo
+        value: anp-highlight-flamingo
+      - label: Pink
+        value: anp-highlight-pink
+      - label: Mauve
+        value: anp-highlight-mauve
+      - label: Red
+        value: anp-highlight-red
+      - label: Maroon
+        value: anp-highlight-maroon
+      - label: Peach
+        value: anp-highlight-peach
+      - label: Yellow
+        value: anp-highlight-yellow
+      - label: Green
+        value: anp-highlight-green
+      - label: Teal
+        value: anp-highlight-teal
+      - label: Sky
+        value: anp-highlight-sky
+      - label: Sapphire
+        value: anp-highlight-sapphire
+      - label: Blue
+        value: anp-highlight-blue
+      - label: Lavender
+        value: anp-highlight-lavender
+  - id: fastppuccin-features-header
+    title: Features
+    description: Enable or disable features.
+    type: heading
+    level: 1
+    collapsed: true
+
+  - id: anp-custom-checkboxes
+    title: Custom Checkboxes
+    type: class-toggle
+    default: true
+  - id: anp-file-icons
+    title: Enable file icons
+    type: class-toggle
+    default: true
+  - id: colored-headers
+    title: Colored Headings (H1-H5)
+    type: class-toggle
+    default: true
+  - id: file-ext-label-right
+    title: Align File Extension Labels to RIGHT
+    type: class-toggle
+    default: true
+  - id: anp-alternate-tab-toggle
+    title: Safari Tabs
+    type: class-toggle
+    default: true
+  - id: hide-external-link-icon
+    title: Hide External Link Icon
+    type: class-toggle
+    default: true
+  - id: toggle-table-transition
+    title: Table Hover Transition effect
+    type: class-toggle
+    default: true

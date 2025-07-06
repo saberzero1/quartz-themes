@@ -1,0 +1,84 @@
+name: Cupertino
+id: cupertino
+settings:
+  - id: cupertino-desc
+    description: Most of the settings are for **turning off** Cupertino customizations. You don't need to change anything if you want to keep all default Cupertino optimizations.
+    type: info-text
+    markdown: true
+  - id: active-line-off
+    title: Disable active editing line highlight
+    type: class-toggle
+  - id: center-tabs-off
+    title: Disable centered tabs
+    type: class-toggle
+  - id: hide-frontmatter-off
+    title: Disable compact properties
+    type: class-toggle
+  - id: mode-highlight-off
+    title: Disable editing mode indicator
+    type: class-toggle
+  - id: hide-embed-title-off
+    title: Disable hiding embed title
+    type: class-toggle
+  - id: clean-link-off
+    title: Disable clean link style
+    type: class-toggle
+  - id: full-width-off
+    title: Disable full width elements
+    type: class-toggle
+  - id: compact-mode
+    title: Compact list view
+    type: class-toggle
+  - id: desktop-header
+    title: Desktop
+    type: heading
+    level: 1
+  - id: accented-frame-opacity
+    title: Accented window
+    description: Higher value might impact contrast.
+    type: variable-number-slider
+    default: 0
+    min: 0
+    max: 100
+    step: 5
+  - id: windows-mode-off
+    title: Disable Windows mode
+    description: Turn off Fluent styling on Windows.
+    type: class-toggle
+  - id: hide-nav-header-off
+    title: Disable compact panel actions
+    type: class-toggle
+  - id: hide-status-off
+    title: Disable compact status bar
+    type: class-toggle
+  - id: image-zoom-off
+    title: Disable image zoom
+    type: class-toggle
+  - id: blur-effect-off
+    title: Reduce transparency
+    type: class-toggle
+  - id: tablet-header
+    title: Tablet
+    type: heading
+    level: 1
+  - id: tablet-menu-off
+    title: Disable tablet menu theming
+    description: Turn off custom context menu styling on tablet.
+    type: class-toggle
+  - id: mobile-header
+    title: Mobile
+    type: heading
+    level: 1
+  - id: transparent-nav-off
+    title: Prioritize editor stability
+    description: Turn off transparency effect on editor header and bottom bar.
+    type: class-toggle
+  - id: ios-style-header
+    title: iOS style header (Experimental)
+    type: class-toggle
+  - id: quick-mode-switch-off
+    title: Disable quick mode switch
+    type: class-toggle
+  - id: hide-tabs-count-off
+    title: Show tabs count
+    type: class-toggle

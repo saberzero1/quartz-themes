@@ -1,0 +1,178 @@
+name: Rosé Pine Themes
+id: rosé-pine-theme-settings
+settings:
+  - id: rosé-pine-theme
+    title: Theme variants
+    description: Select your preferred theme, Rosé Pine Moon is enabled by setting light mode on
+    type: class-select
+    allowEmpty: false
+    default: rose-norm
+    options:
+      - label: "Rosé Pine"
+        value: rose-norm
+      - label: "Rosé Pine Moon"
+        value: rose-moon
+  - id: rosé-pine-theme-accents
+    title: Theme accent
+    description: Select your preferred accent
+    type: class-select
+    allowEmpty: false
+    default: rp-accent-full
+    options:
+      - label: Full palette
+        value: rp-accent-full
+      - label: Love
+        value: rp-accent-love
+      - label: Rose
+        value: rp-accent-rose
+      - label: Gold
+        value: rp-accent-gold
+      - label: Iris
+        value: rp-accent-iris
+      - label: Pine
+        value: rp-accent-pine
+      - label: Foam
+        value: rp-accent-foam
+  #name: "Rose Pine Header Colours"
+  #id: rose-pine-headers
+  - id: rp-h1
+    title: H1 colour
+    description: Select your H1 colour
+    type: variable-select
+    allowEmpty: false
+    default: var(--rp-love)
+    options:
+      - label: Love
+        value: var(--rp-love)
+      - label: Rose
+        value: var(--rp-rose)
+      - label: Gold
+        value: var(--rp-gold)
+      - label: Iris
+        value: var(--rp-iris)
+      - label: Pine
+        value: var(--rp-pine)
+      - label: Foam
+        value: var(--rp-foam)
+  - id: rp-h2
+    title: H2 colour
+    description: Select your H2 colour
+    type: variable-select
+    allowEmpty: false
+    default: var(--rp-iris)
+    options:
+      - label: Love
+        value: var(--rp-love)
+      - label: Rose
+        value: var(--rp-rose)
+      - label: Gold
+        value: var(--rp-gold)
+      - label: Iris
+        value: var(--rp-iris)
+      - label: Pine
+        value: var(--rp-pine)
+      - label: Foam
+        value: var(--rp-foam)
+  - id: rp-h3
+    title: H3 colour
+    description: Select your H3 colour
+    type: variable-select
+    allowEmpty: false
+    default: var(--rp-rose)
+    options:
+      - label: Love
+        value: var(--rp-love)
+      - label: Rose
+        value: var(--rp-rose)
+      - label: Gold
+        value: var(--rp-gold)
+      - label: Iris
+        value: var(--rp-iris)
+      - label: Pine
+        value: var(--rp-pine)
+      - label: Foam
+        value: var(--rp-foam)
+  - id: rp-h4
+    title: H4 colour
+    description: Select your H4 colour
+    type: variable-select
+    allowEmpty: false
+    default: var(--rp-gold)
+    options:
+      - label: Love
+        value: var(--rp-love)
+      - label: Rose
+        value: var(--rp-rose)
+      - label: Gold
+        value: var(--rp-gold)
+      - label: Iris
+        value: var(--rp-iris)
+      - label: Pine
+        value: var(--rp-pine)
+      - label: Foam
+        value: var(--rp-foam)
+  - id: rp-h5
+    title: H5 colour
+    description: Select your H5 colour
+    type: variable-select
+    allowEmpty: false
+    default: var(--rp-foam)
+    options:
+      - label: Love
+        value: var(--rp-love)
+      - label: Rose
+        value: var(--rp-rose)
+      - label: Gold
+        value: var(--rp-gold)
+      - label: Iris
+        value: var(--rp-iris)
+      - label: Pine
+        value: var(--rp-pine)
+      - label: Foam
+        value: var(--rp-foam)
+  - id: rp-h6
+    title: H6 colour
+    description: Select your H6 colour
+    type: variable-select
+    allowEmpty: false
+    default: var(--rp-pine)
+    options:
+      - label: Love
+        value: var(--rp-love)
+      - label: Rose
+        value: var(--rp-rose)
+      - label: Gold
+        value: var(--rp-gold)
+      - label: Iris
+        value: var(--rp-iris)
+      - label: Pine
+        value: var(--rp-pine)
+      - label: Foam
+        value: var(--rp-foam)
+  #name: "Rose Pine Misc Config"
+  #id: rose-pine-misc
+  - id: rp-highlight
+    title: Highlight Colour
+    description: Select your highlighted colour
+    type: variable-select
+    allowEmpty: false
+    default: var(--rp-highlightHigh)
+    options:
+      - label: Low
+        value: var(--rp-highlightLow)
+      - label: Med
+        value: var(--rp-highlightMed)
+      - label: High
+        value: var(--rp-highlightHigh)
+      - label: Love
+        value: var(--rp-love)
+      - label: Rose
+        value: var(--rp-rose)
+      - label: Gold
+        value: var(--rp-gold)
+      - label: Iris
+        value: var(--rp-iris)
+      - label: Pine
+        value: var(--rp-pine)
+      - label: Foam
+        value: var(--rp-foam)

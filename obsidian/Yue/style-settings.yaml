@@ -1,0 +1,275 @@
+name: Yue Theme
+id: yue-style
+settings:
+  - id: features
+    title: Features
+    type: heading
+    level: 2
+    collapsed: true
+  - title: Black mobile background
+    description: Change mobile editor background to default theme black
+    id: mobile-black-background
+    type: class-toggle
+    default: false
+  - title: Disable mobile floating-action button
+    description: Revert placement of edit/preview button to default in header (mobile)
+    id: floating-button-off
+    type: class-toggle
+    default: false
+  - id: link-decoration
+    title: Underline internal links
+    description: Show underlines on internal links
+    type: variable-select
+    default: Underline
+    options:
+      - Underline
+      - None
+  - id: link-external-decoration
+    title: Underline external links
+    description: Show underlines on external links
+    type: variable-select
+    default: Underline
+    options:
+      - Underline
+      - None
+  - id: custom-fonts
+    title: Typography
+    type: heading
+    level: 2
+    collapsed: true
+  - id: default-font-color
+    title: Default font colors
+    description: Use the default font color styling for bold, italics, and quotes
+    type: class-toggle
+    default: false
+  - id: text-highlight-bg-l
+    title: Highlight color (light)
+    type: variable-color
+    format: rgb
+    default: "rgba(255, 208, 0, 0.4)"
+  - id: text-highlight-bg-d
+    title: Highlight color (dark)
+    type: variable-color
+    format: rgb
+    default: "rgba(255, 208, 0, 0.4)"
+  - id: strong-color
+    title: Bold font color
+    type: variable-color
+    format: hex
+    default: "#FF82B2"
+  - id: em-color
+    title: Italics font color
+    type: variable-color
+    format: hex
+    default: "#FF82B2"
+  - id: quote-color
+    title: Blockquotes font color
+    type: variable-color
+    format: hex
+    default: "#3EB4BF"
+  - id: code-normal
+    title: Inline code blocks font color (Light mode)
+    type: variable-color
+    format: hex
+    default: "#BEC6CF"
+  - id: code-color-d
+    title: Inline code blocks font color (Dark mode)
+    type: variable-color
+    format: hex
+    default: "#555E68"
+  - id: tag-background-color-l
+    title: Tag background color (Light mode)
+    type: variable-color
+    format: hex
+    default: "#BDE1D3"
+  - id: tag-font-color-l
+    title: Tag font color (Light mode)
+    type: variable-color
+    format: hex
+    default: "#1D694B"
+  - id: tag-background-color-d
+    title: Tag background color (Dark mode)
+    type: variable-color
+    format: hex
+    default: "#1D694B"
+  - id: tag-font-color-d
+    title: Tag font color (Dark mode)
+    type: variable-color
+    format: hex
+    default: "#FFFFFF"
+  - id: headings
+    title: Headings
+    type: heading
+    level: 2
+    collapsed: true
+  - id: level-1-headings
+    title: Level 1 Headings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h1-size
+    title: H1 font size
+    description: Accepts any CSS font-size value
+    type: variable-text
+    default: 1.7em
+  - id: h1-weight
+    title: H1 font weight
+    description: Accepts numbers representing the CSS font-weight
+    type: variable-number
+    default: 700
+  - id: h1-text-color-lt
+    title: Light theme H1 color
+    type: variable-color
+    format: hex
+    default: "#2E80F2"
+  - id: h1-text-color-dt
+    title: Dark theme H1 color
+    type: variable-color
+    format: hex
+    default: "#2E80F2"
+  - id: level-2-headings
+    title: Level 2 Headings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h2-size
+    title: H2 font size
+    description: Accepts any CSS font-size value
+    type: variable-text
+    default: 1.5em
+  - id: h2-weight
+    title: H2 font weight
+    description: Accepts numbers representing the CSS font-weight
+    type: variable-number
+    default: 700
+  - id: h2-text-color-lt
+    title: Light theme H2 color
+    type: variable-color
+    format: hex
+    default: "#2E80F2"
+  - id: h2-text-color-dt
+    title: Dark theme H2 color
+    type: variable-color
+    format: hex
+    default: "#2E80F2"
+  - id: h2-underline
+    title: H2 underline
+    description: Toggle H2 underline (border-bottom)
+    type: class-toggle
+    default: true
+  - id: level-3-headings
+    title: Level 3 Headings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h3-size
+    title: H3 font size
+    description: Accepts any CSS font-size value
+    type: variable-text
+    default: 1.2em
+  - id: h3-weight
+    title: H3 font weight
+    description: Accepts numbers representing the CSS font-weight
+    type: variable-number
+    default: 600
+  - id: h3-text-color-lt
+    title: Light theme H3 color
+    type: variable-color
+    format: hex
+    default: "#2E80F2"
+  - id: h3-text-color-dt
+    title: Dark theme H3 color
+    type: variable-color
+    format: hex
+    default: "#2E80F2"
+  - id: level-4-headings
+    title: Level 4 Headings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h4-size
+    title: H4 font size
+    description: Accepts any CSS font-size value
+    type: variable-text
+    default: 1.1em
+  - id: h4-weight
+    title: H4 font weight
+    description: Accepts numbers representing the CSS font-weight
+    type: variable-number
+    default: 500
+  - id: h4-text-color-lt
+    title: Light theme H4 color
+    type: variable-color
+    format: hex
+    default: "#2E80F2"
+  - id: h4-text-color-dt
+    title: Dark theme H4 color
+    type: variable-color
+    format: hex
+    default: "#2E80F2"
+  - id: h4-transform
+    title: H4 transform
+    description: Transform the H4 heading text
+    type: variable-select
+    default: uppercase
+    options:
+      - label: Uppercase
+        value: uppercase
+      - label: None
+        value: none
+  - id: level-5-headings
+    title: Level 5 Headings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h5-size
+    title: H5 font size
+    description: Accepts any CSS font-size value
+    type: variable-text
+    default: 1em
+  - id: h5-weight
+    title: H5 font weight
+    description: Accepts numbers representing the CSS font-weight
+    type: variable-number
+    default: 500
+  - id: h5-text-color-lt
+    title: Light theme H5 color
+    type: variable-color
+    format: hex
+    default: "#2E80F2"
+  - id: h5-text-color-dt
+    title: Dark theme H5 color
+    type: variable-color
+    format: hex
+    default: "#2E80F2"
+  - id: level-6-headings
+    title: Level 6 Headings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h6-size
+    title: H6 font size
+    description: Accepts any CSS font-size value
+    type: variable-text
+    default: 0.9em
+  - id: h6-weight
+    title: H6 font weight
+    description: Accepts numbers representing the CSS font-weight
+    type: variable-number
+    default: 400
+  - id: h6-text-color-lt
+    title: Light theme H6 color
+    type: variable-color
+    format: hex
+    default: "#2E80F2"
+  - id: h6-text-color-dt
+    title: Dark theme H6 color
+    type: variable-color
+    format: hex
+    default: "#2E80F2"
+  - id: credits
+    title: Credits
+    type: heading
+    description: Created with ❤︎ by Gixo. Forked from Things theme.
+    level: 2
+    collapsed: true

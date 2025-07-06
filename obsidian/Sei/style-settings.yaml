@@ -1,0 +1,27 @@
+name: Sei
+id: sei
+settings:
+  - id: sei-header-desktop-tablet
+    title: Desktop & Tablet
+    type: heading
+    level: 1
+    collapsed: false
+  - id: sei-accented-frame-opacity
+    title: Accented window frame
+    description: Higher value reduces overall interface contrast.
+    type: variable-number-slider
+    default: 0
+    min: 0
+    max: 100
+    step: 5
+  - id: sei-header-headings
+    title: Headings
+    type: heading
+    level: 2
+    collapsed: false
+  - id: sei-remove-divider-inline-title
+    title: Remove divider line below Inline title
+    type: class-toggle
+  - id: sei-remove-divider-h1
+    title: Remove divider line below H1
+    type: class-toggle

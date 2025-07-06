@@ -1,0 +1,147 @@
+name: Dracula Plus Theme
+id: obsidian-default-theme
+settings:
+  - id: heading-colors-background
+    title: Background Colors
+    type: heading
+    level: 1
+    collapsed: true
+  - id: background-primary
+    title: Background Primary
+    description: Primary Color
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#00000033"
+    default-dark: "#ffffff33"
+  - id: pre-code
+    title: Code Block
+    description: Code Block
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#00000033"
+    default-dark: "#ffffff33"
+  - id: background-secondary
+    title: Background Secondary
+    description: Collaps Panel
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#00000033"
+    default-dark: "#ffffff33"
+  - id: background-secondary-alt
+    title: Background Secondary (alt)
+    description: Top Border
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#00000033"
+    default-dark: "#ffffff33"
+  - id: divider-color
+    title: "Background Modifier: Border"
+    description: Border Modifer
+    type: variable-themed-color
+    opacity: true
+    format: rgb
+    default-light: "#00000033"
+    default-dark: "#ffffff33"
+  - id: background-modifier-form-field
+    title: "Background Modifier: Form Field"
+    type: variable-themed-color
+    opacity: true
+    format: rgb
+    default-light: "#00000033"
+    default-dark: "#ffffff33"
+  - id: color-user-request
+    title: "File Tree"
+    description: file naviagtion file title
+    type: variable-themed-color
+    opacity: true
+    format: rgb
+    default-light: "#00000033"
+    default-dark: "#ffffff33"
+  - id: indentation-guide-color
+    title: "File Tree: Indentation"
+    description: Indentation
+    type: variable-themed-color
+    opacity: true
+    format: rgb
+    default-light: "#00000033"
+    default-dark: "#ffffff33"
+  - id: heading-colors-scrollbar
+    title: Scrollbar Colors
+    type: heading
+    level: 1
+    collapsed: true
+  - id: scrollbar-thumb-bg
+    title: "Scrollbar: Thumb Background"
+    type: variable-themed-color
+    opacity: true
+    format: rgb
+    default-light: "#0000001a"
+    default-dark: "#ffffff1a"
+  - id: scrollbar-active-thumb-bg
+    title: "Scrollbar: Active Thumb Background"
+    type: variable-themed-color
+    opacity: true
+    format: rgb
+    default-light: "#00000033"
+    default-dark: "#ffffff33"
+  - id: heading-colors
+    title: Heading Colors
+    type: heading
+    level: 1
+    collapsed: true
+  - id: text-title-h1
+    title: Custom H1 Color
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#00000033"
+    default-dark: "#ffffff33"
+  - id: text-title-h2
+    title: Custom H2 Color
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#00000033"
+    default-dark: "#ffffff33"
+  - id: text-title-h3
+    title: Custom H3 Color
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#00000033"
+    default-dark: "#ffffff33"
+  - id: text-title-h4
+    title: Custom H4 Color
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#00000033"
+    default-dark: "#ffffff33"
+  - id: text-title-h5
+    title: Custom H5 Color
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#00000033"
+    default-dark: "#ffffff33"
+  - id: text-title-h6
+    title: Custom H6 Color
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#00000033"
+    default-dark: "#ffffff33"
+  - id: feature-toggles
+    title: Feature Toggles
+    type: heading
+    level: 1
+    collapsed: true
+  - id: enable-alternative-checkboxes
+    title: Enable Alternative Checkboxes
+    description: Disable this if you are using your own implementation via a CSS Snippet.
+    default: true
+    type: class-toggle

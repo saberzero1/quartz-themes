@@ -1,0 +1,28 @@
+name: Royal Velvet
+id: royal-velvet
+settings:
+  - id: inline-document-title-color
+    title: Inline Document Title Color
+    description: Change the color of the inline document title to match another heading or a custom hue.
+    type: class-select
+    allowEmpty: false
+    default: doc-title-h1
+    options:
+      - label: Disabled
+        value: doc-title-disable
+      - label: Accent Color (hue)
+        value: doc-title-accent
+      - label: Rainbow
+        value: doc-title-rainbow
+      - label: Heading 1
+        value: doc-title-h1
+      - label: Heading 2
+        value: doc-title-h2
+      - label: Heading 3
+        value: doc-title-h3
+      - label: Heading 4
+        value: doc-title-h4
+      - label: Heading 5
+        value: doc-title-h5
+      - label: Heading 6
+        value: doc-title-h6

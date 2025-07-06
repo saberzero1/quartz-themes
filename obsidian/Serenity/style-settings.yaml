@@ -1,0 +1,1789 @@
+name: Serenity
+id: serenity-theme
+settings:
+  - id: colors-heading
+    title: Colors
+    type: heading
+    level: 2
+    collapsed: true
+  - id: color-scheme-select
+    title: Color Scheme
+    type: class-select
+    allowEmpty: false
+    default: theme-normal
+    options:
+      - label: Obsidian
+        value: theme-normal
+      - label: Ayu
+        value: theme-ayu-s
+      - label: Catppuccin
+        value: theme-catpp
+      - label: Nord
+        value: theme-nord-s
+      - label: Solarized
+        value: theme-solarized-s
+      - label: Rose Pine
+        value: theme-rose-pine
+      - label: Everforest
+        value: theme-everforest
+
+      - label: Gruvbox
+        value: theme-gruvbox-s
+  - id: color-accent-class-select
+    title: Accent Color
+    type: class-select
+    default: Auto
+    options:
+      - label: Auto
+        value: auto-accent
+      - label: Red
+        value: red-accent
+      - label: Orange
+        value: orange-accent
+      - label: Yellow
+        value: yellow-accent
+      - label: Green
+        value: green-accent
+      - label: Cyan
+        value: cyan-accent
+      - label: Blue
+        value: blue-accent
+      - label: Purple
+        value: purple-accent
+      - label: Pink
+        value: pink-accent
+  - id: contrast-light
+    title: Light Mode Contrast
+    type: class-select
+    default: medium-contrast-light
+    options:
+      - label: Low Contrast
+        value: low-contrast-light
+      - label: Medium Contrast
+        value: medium-contrast-light
+      - label: High Contrast
+        value: high-contrast-light
+  - id: contrast-dark
+    title: Dark Mode Contrast
+    type: class-select
+    default: medium-contrast-dark
+    options:
+      - label: Low Contrast
+        value: low-contrast-dark
+      - label: Medium Contrast
+        value: medium-contrast-dark
+      - label: High Contrast
+        value: high-contrast-dark
+      - label: Jet Black
+        value: true-black-dark
+  - title: Flat Color Mode
+    id: flat-mode
+    description: Make the appearance flat and less colorful. Optimal for hiding elements and increasing focus!
+    type: class-toggle
+    default: true
+  - id: advanced-heading
+    title: Advanced
+    type: heading
+    level: 3
+    collapsed: true
+  - id: custom-color-scheme-heading-light
+    title: Custom Light Theme
+    type: heading
+    level: 4
+    collapsed: true
+  - id: custom-color-scheme-light
+    title: Use Custom Light Theme
+    type: class-toggle
+    default: false
+  - id: custom-theme-tint-l
+    title: Base Tint
+    type: variable-number-slider
+    min: 0
+    max: 360
+    step: 1
+    default: 15
+  - id: custom-theme-sat-l
+    title: Base Saturation
+    type: variable-number-slider
+    min: 0
+    format: "%"
+    max: 100
+    step: 0.25
+    default: 100
+  - id: custom-base-c-l
+    title: Base Brightness
+    type: variable-number-slider
+    min: 0
+    format: "%"
+    max: 100
+    step: 0.25
+    default: 99
+  - id: custom-theme-tint-secondary-l
+    title: Secondary Tint
+    type: variable-number-slider
+    min: 0
+    max: 360
+    step: 1
+    default: 15
+  - id: custom-theme-sat-secondary-l
+    title: Secondary Saturation
+    type: variable-number-slider
+    min: 0
+    format: "%"
+    max: 100
+    step: 0.25
+    default: 77
+  - id: custom-c-20-l
+    title: Secondary Brightness
+    type: variable-number-slider
+    min: 0
+    format: "%"
+    max: 100
+    step: 0.25
+    default: 97
+  - id: custom-theme-tint-text-l
+    title: Text Tint
+    type: variable-number-slider
+    min: 0
+    max: 360
+    step: 1
+    default: 205
+  - id: custom-theme-sat-text-l
+    title: Text Saturation
+    type: variable-number-slider
+    min: 0
+    format: "%"
+    max: 100
+    step: 0.25
+    default: 25
+  - id: custom-text-c-l
+    title: Text Contrast
+    type: variable-number-slider
+    min: 0
+    format: "%"
+    max: 100
+    step: 0.25
+    default: 43
+  - id: custom-border-c-l
+    title: Border Contrast
+    type: variable-number-slider
+    min: 0
+    format: "%"
+    max: 100
+    step: 0.25
+    default: 82
+  - id: custom-color-scheme-heading-dark
+    title: Custom Dark Theme
+    type: heading
+    level: 4
+    collapsed: true
+  - id: custom-color-scheme-dark
+    title: Use Custom Dark Theme
+    type: class-toggle
+    default: false
+  - id: custom-theme-tint-d
+    title: Base Tint
+    type: variable-number-slider
+    min: 0
+    max: 360
+    step: 1
+    default: 223
+  - id: custom-theme-sat-d
+    title: Base Saturation
+    type: variable-number-slider
+    min: 0
+    format: "%"
+    max: 100
+    step: 0.25
+    default: 63
+  - id: custom-base-c-d
+    title: Base Brightness
+    type: variable-number-slider
+    min: 0
+    format: "%"
+    max: 100
+    step: 0.25
+    default: 9
+  - id: custom-theme-tint-secondary-d
+    title: Secondary Tint
+    type: variable-number-slider
+    min: 0
+    max: 360
+    step: 1
+    default: 225
+  - id: custom-theme-sat-secondary-d
+    title: Secondary Saturation
+    type: variable-number-slider
+    min: 0
+    format: "%"
+    max: 100
+    step: 0.25
+    default: 50
+  - id: custom-c-20-d
+    title: Secondary Brightness
+    type: variable-number-slider
+    min: 0
+    format: "%"
+    max: 100
+    step: 0.25
+    default: 13
+  - id: custom-theme-tint-text-d
+    title: Text Tint
+    type: variable-number-slider
+    min: 0
+    max: 360
+    step: 1
+    default: 223
+  - id: custom-theme-sat-text-d
+    title: Text Saturation
+    type: variable-number-slider
+    min: 0
+    format: "%"
+    max: 100
+    step: 0.25
+    default: 19
+  - id: custom-text-c-d
+    title: Text Contrast
+    type: variable-number-slider
+    min: 0
+    format: "%"
+    max: 100
+    step: 0.25
+    default: 73
+  - id: custom-border-c-d
+    title: Border Contrast
+    type: variable-number-slider
+    min: 0
+    format: "%"
+    max: 100
+    step: 0.25
+    default: 31
+  - id: file-explorer-heading
+    title: File Explorer
+    type: heading
+    level: 2
+    collapsed: true
+  - id: hide-vault-title
+    title: Hide Vault Tite
+    type: class-toggle
+    default: true
+  - id: hide-folder-notes
+    title: Hide Folder Notes
+    description: Disguise folder notes instead of rendering them as links (AidenLx's Folder Note Plug-In)
+    type: class-toggle
+    default: false
+  - id: prominent-folders
+    title: Bold Folders
+    description: Make folders more distinguishable from files.
+    type: class-toggle
+    default: false
+  - id: hide-folder-arrows
+    title: Hide Folder Collapse Indicators
+    type: class-toggle
+    default: false
+  - id: link-file
+    title: Link-Like Files
+    type: class-toggle
+    default: true
+    description: Make files in the file explorer look like links.
+  - id: file-font-size
+    title: File Font Size
+    type: variable-select
+    default: var(--font-ui-small)
+    options:
+      - label: Small
+        value: var(--font-ui-small)
+      - label: Smaller
+        value: var(--font-ui-smaller)
+      - label: Smallest
+        value: 10px
+  - id: wrap-files
+    title: Wrap File Titles
+    type: class-toggle
+    default: false
+  - id: file-explorer-class-select
+    title: File Explorer Style
+    type: class-select
+    default: file-explorer-normal
+    options:
+      - label: Default
+        value: file-explorer-normal
+      - label: Cards
+        value: file-explorer-cards
+      - label: List
+        value: file-explorer-list
+  - id: markdown-heading
+    title: Markdown
+    type: heading
+    level: 2
+    collapsed: true
+  - id: file-line-width
+    title: Readable Line Length (Reading Mode)
+    type: variable-text
+    default: 700px
+  - id: editing-file-line-width
+    title: Readable Line Length (Edit Mode)
+    type: variable-text
+    default: var(--file-line-width)
+  - id: font-preview-view
+    title: Edit Mode Font
+    type: variable-select
+    default: var(--font-secondary)
+    options:
+      - label: Default Font
+        value: var(--font-text)
+      - label: Secondary Font
+        value: var(--font-secondary)
+      - label: Monospace Font
+        value: var(--font-monospace)
+  - id: pure-md
+    title: Pure Markdown Mode
+    description: Remove as many WYSIWYG elements as possible in source mode.
+    type: class-toggle
+    default: true
+  - id: text-heading
+    title: Text
+    type: heading
+    level: 2
+    collapsed: true
+
+  - id: paragraphs-heading
+    title: Paragraphs
+    type: heading
+    level: 3
+    collapsed: true
+  - id: line-height-normal
+    title: Line Height
+    type: variable-text
+    default: "1.75"
+  - id: p-margin
+    title: Paragraph Margin
+    description: The spacing between paragraphs.
+    default: "20px"
+    type: variable-text
+  - id: even-p
+    title: Even Paragraphs
+    type: class-toggle
+    description: Make paragraphs evenly spaced (any <br> element is treated like a new line).
+    default: false
+  - id: indent-p
+    title: Indent Paragraphs
+    type: class-toggle
+    default: false
+  - id: justify-p
+    title: Justify Paragraphs
+    type: class-toggle
+    default: false
+  - id: p-indent
+    title: Paragraph Indent
+    description: Control the degree of indentation on a paragraph (requires Indent Paragraphs to be toggled on.)
+    type: variable-text
+    default: "15px"
+  - id: fonts-heading
+    title: Fonts
+    type: heading
+    level: 3
+    collapsed: true
+  - id: fonts-source
+    title: Fonts Source
+    type: class-select
+    default: font-bundle
+    options:
+      - label: Use Font Bundles (Presets)
+        value: font-bundle
+      - label: Select Fonts
+        value: font-select
+      - label: Use a System Font
+        value: custom-font
+
+  - id: font-bundle-select
+    title: Font Bundle
+    type: class-select
+    description: Choose a combination of fonts. NOTE - some fonts may not work offline.
+    default: ia-font
+    options:
+      - label: Austere
+        value: austere-font
+      - label: iA Writer
+        value: ia-font
+      - label: Google
+        value: google-font
+      - label: Gothic
+        value: gothic-font
+      - label: Obsidian
+        value: obsidian-font
+      - label: Serif
+        value: serif-font
+      - label: Robust
+        value: robust-font
+      - label: Round
+        value: cursive-font
+      - label: Handwritten
+        value: handwritten-font
+      - label: Web
+        value: web-font
+  - id: font-default-select
+    title: Default Font
+    type: variable-select
+    default: "iA Writer Quattro S"
+    options:
+      - Inter
+      - "Alegreya"
+      - "Almarai"
+      - "Anonymous Pro"
+      - "Anuphan"
+      - "Assistant"
+      - "Avenir Next"
+      - "Barlow"
+      - "Bitter"
+      - "Cabin"
+      - "Chivo Mono"
+      - "Comfortaa"
+      - "Courgette"
+      - "Courier Prime"
+      - "Cousine"
+      - "DM Sans"
+      - "Domine"
+      - "Edu TAS Beginner"
+      - "Figtree"
+      - "Fira Code"
+      - "Fira Sans Extra Condensed"
+      - "Fira Sans"
+      - "Heebo"
+      - "IBM Plex Serif"
+      - "Inconsolata"
+      - "Inter"
+      - "Jost"
+      - "Kalam"
+      - "Karla"
+      - "Lato"
+      - "Lexend"
+      - "Libre Baskerville"
+      - "Lobster Two"
+      - "Lora"
+      - "Martel"
+      - "Merriweather Sans"
+      - "Montserrat"
+      - "Mulish"
+      - "Nanum Gothic Coding"
+      - "Nanum Gothic"
+      - "Nanum Myeongjo"
+      - "Noto Sans Mono"
+      - "Noto Sans"
+      - "Outfit"
+      - "Overpass"
+      - "PT Sans"
+      - "PT Serif"
+      - "Poppins"
+      - "Questrial"
+      - "Quicksand"
+      - "Red Hat Mono"
+      - "Roboto Condensed"
+      - "Roboto Mono"
+      - "Roboto Slab"
+      - "Roboto"
+      - "Rubik"
+      - "Sawarabi Mincho"
+      - "Schibsted Grotesk"
+      - "Sono"
+      - "Source Sans Pro"
+      - "Source Serif Pro"
+      - "Special Elite"
+      - "Spectral"
+      - "Spinnaker"
+      - "Spline Sans Mono"
+      - "Spline Sans"
+      - "Spline Sans"
+      - "Stoke"
+      - "Tajawal"
+      - "Titillium Web"
+      - "Trykker"
+      - "Ubuntu Condensed"
+      - "Ubuntu"
+      - "Varela Round"
+      - "Vollkorn"
+      - "Work Sans"
+      - "Ysabeau"
+      - "Zilla Slab"
+      - "iA Writer Duo S"
+      - "iA Writer Mono S"
+      - "iA Writer Quattro S"
+      - "DotGothic16"
+      - "Exo"
+      - "Klee One"
+      - "Rubik Dirt"
+  - id: font-secondary-select
+    title: Secondary Font
+    type: variable-select
+    default: "iA Writer Duo S"
+    options:
+      - var(--font-text)
+      - "Alegreya"
+      - "Almarai"
+      - "Anonymous Pro"
+      - "Anuphan"
+      - "Assistant"
+      - "Avenir Next"
+      - "Barlow"
+      - "Bitter"
+      - "Cabin"
+      - "Chivo Mono"
+      - "Comfortaa"
+      - "Courgette"
+      - "Courier Prime"
+      - "Cousine"
+      - "DM Sans"
+      - "Domine"
+      - "Edu TAS Beginner"
+      - "Figtree"
+      - "Fira Code"
+      - "Fira Sans Extra Condensed"
+      - "Fira Sans"
+      - "Heebo"
+      - "IBM Plex Serif"
+      - "Inconsolata"
+      - "Inter"
+      - "Jost"
+      - "Kalam"
+      - "Karla"
+      - "Lato"
+      - "Lexend"
+      - "Libre Baskerville"
+      - "Lobster Two"
+      - "Lora"
+      - "Martel"
+      - "Merriweather Sans"
+      - "Montserrat"
+      - "Mulish"
+      - "Nanum Gothic Coding"
+      - "Nanum Gothic"
+      - "Nanum Myeongjo"
+      - "Noto Sans Mono"
+      - "Noto Sans"
+      - "Outfit"
+      - "Overpass"
+      - "PT Sans"
+      - "PT Serif"
+      - "Poppins"
+      - "Questrial"
+      - "Quicksand"
+      - "Red Hat Mono"
+      - "Roboto Condensed"
+      - "Roboto Mono"
+      - "Roboto Slab"
+      - "Roboto"
+      - "Rubik"
+      - "Schibsted Grotesk"
+      - "Sawarabi Mincho"
+      - "Sono"
+      - "Source Sans Pro"
+      - "Source Serif Pro"
+      - "Special Elite"
+      - "Spectral"
+      - "Spinnaker"
+      - "Spline Sans Mono"
+      - "Spline Sans"
+      - "Spline Sans"
+      - "Stoke"
+      - "Tajawal"
+      - "Titillium Web"
+      - "Trykker"
+      - "Ubuntu Condensed"
+      - "Ubuntu"
+      - "Varela Round"
+      - "Vollkorn"
+      - "Work Sans"
+      - "Ysabeau"
+      - "Zilla Slab"
+      - "iA Writer Duo S"
+      - "iA Writer Mono S"
+      - "iA Writer Quattro S"
+      - "DotGothic16"
+      - "Exo"
+      - "Klee One"
+      - "Rubik Dirt"
+  - id: font-monospace-select
+    title: Monospace Font
+    type: variable-select
+    default: "iA Writer Mono S"
+    options:
+      - "Anonymous Pro"
+      - "Barlow"
+      - "Chivo Mono"
+      - "Courier Prime"
+      - "Cousine"
+      - "Fira Code"
+      - "Inconsolata"
+      - "Nanum Gothic Coding"
+      - "Noto Sans Mono"
+      - "Red Hat Mono"
+      - "Roboto Mono"
+      - "Sono"
+      - "Special Elite"
+      - "Spline Sans Mono"
+      - "Titillium Web"
+      - "Ubuntu Condensed"
+      - "Ubuntu"
+      - "iA Writer Duo S"
+      - "iA Writer Mono S"
+      - "iA Writer Quattro S"
+      - "DotGothic16"
+      - "Exo"
+  - id: font-default-custom
+    title: Custom Font Default
+    type: variable-text
+    default: "iA Writer Quattro S"
+  - id: font-secondary-custom
+    title: Custom Font Secondary
+    type: variable-text
+    default: "iA Writer Duo S"
+  - id: font-monospace-custom
+    title: Custom Font Monospace
+    type: variable-text
+    default: "iA Writer Mono S"
+  - id: font-weight-default
+    title: Font Weight
+    type: variable-number-slider
+    default: 400
+    step: 50
+    min: 100
+    max: 900
+  - id: letter-spacing
+    title: Letter Spacing
+    type: variable-number-slider
+    default: 0
+    step: 0.1
+    min: 0
+    max: 2
+    format: px
+
+  - id: bold-italic-colors-heading
+    title: Bold & Italic Colors
+    type: heading
+    level: 3
+    collapsed: true
+  - id: bold-color
+    title: Bold Color
+    default: var(--text-normal)
+    type: variable-select
+    options:
+      - label: accent
+        value: var(--color-accent-1)
+      - label: red
+        value: var(--color-red)
+      - label: orange
+        value: var(--color-orange)
+      - label: yellow
+        value: var(--color-yellow)
+      - label: green
+        value: var(--color-green)
+      - label: cyan
+        value: var(--color-cyan)
+      - label: blue
+        value: var(--color-blue)
+      - label: purple
+        value: var(--color-purple)
+      - label: pink
+        value: var(--color-pink)
+      - label: faint
+        value: var(--text-faint)
+      - label: muted
+        value: var(--text-muted)
+      - label: normal
+        value: var(--text-normal)
+  - id: italic-color
+    title: italic Color
+    default: var(--text-normal)
+    type: variable-select
+    options:
+      - label: accent
+        value: var(--color-accent-1)
+      - label: red
+        value: var(--color-red)
+      - label: orange
+        value: var(--color-orange)
+      - label: yellow
+        value: var(--color-yellow)
+      - label: green
+        value: var(--color-green)
+      - label: cyan
+        value: var(--color-cyan)
+      - label: blue
+        value: var(--color-blue)
+      - label: purple
+        value: var(--color-purple)
+      - label: pink
+        value: var(--color-pink)
+      - label: faint
+        value: var(--text-faint)
+      - label: muted
+        value: var(--text-muted)
+      - label: normal
+        value: var(--text-normal)
+  - id: headings-heading
+    title: Headings
+    type: heading
+    collapsed: true
+    level: 2
+  - id: colorful-headings-s
+    title: Colorful Headings
+    type: class-toggle
+    default: false
+  - id: show-collapse-indicators
+    title: Show Collapse Indicators
+    type: class-toggle
+    description: Always show collapse indicators for headings.
+    default: false
+  - id: heading-syntax
+    title: Heading Markers in Edit Mode
+    description: Show heading level indicators in edit mode.
+    type: class-toggle
+    default: false
+  - id: h-font-s
+    title: Heading Font
+    description: The font used for all headings unless individually specified.
+    default: var(--font-text)
+    type: variable-select
+    options:
+      - label: Default Font
+        value: var(--font-text)
+      - label: Secondary Font
+        value: var(--font-secondary)
+      - label: Monospace Font
+        value: var(--font-monospace)
+  - id: h-weight-s
+    title: Heading Weight
+    description: The weight used for all headings unless individually specified.
+    default: "600"
+    type: variable-text
+  - id: h-align-s
+    title: Heading Alignment
+    description: The alignment used for all headings unless individually specified.
+    default: left
+    type: variable-select
+    options:
+      - left
+      - right
+      - center
+  - id: h1-heading
+    title: Heading 1
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h1-size
+    title: Font Size
+    type: variable-text
+    default: 1.4em
+  - id: h1-font
+    title: Font family
+    type: variable-select
+    default: var(--h-font-s)
+    options:
+      - label: Heading Font
+        value: var(--h-font-s)
+      - label: Default Font
+        value: var(--font-text)
+      - label: Secondary Font
+        value: var(--font-secondary)
+      - label: Monospace Font
+        value: var(--font-monospace)
+  - id: h1-style
+    title: Style
+    type: variable-select
+    default: Normal
+    options:
+      - Normal
+      - Italic
+  - id: h1-variant
+    title: Variant
+    type: variable-select
+    default: Normal
+    options:
+      - Normal
+      - Small-caps
+      - All-small-caps
+  - id: h1-weight
+    title: Weight
+    type: variable-select
+    default: var(--h-weight-s)
+    options:
+      - label: Default Heading Weight
+        value: var(--h-weight-s)
+      - label: Black
+        value: 900
+      - label: Extra Bold
+        value: 800
+      - label: Bold
+        value: 700
+      - label: Semi Bold
+        value: 600
+      - label: Medium
+        value: 500
+      - label: Normal
+        value: 400
+      - label: Light
+        value: 300
+  - id: h1-align
+    title: Alignment
+    default: var(--h-align-s)
+    type: variable-select
+    options:
+      - label: Default
+        value: var(--h-align-s)
+      - label: Left
+        value: left
+      - label: Right
+        value: right
+      - label: Center
+        value: center
+  - id: h1-bottom-border
+    title: Bottom Border
+    type: class-toggle
+    default: true
+  - id: h2-heading
+    title: Heading 2
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h2-size
+    title: Font Size
+    type: variable-text
+    default: 1.22em
+  - id: h2-style
+    title: Style
+    type: variable-select
+    default: Normal
+    options:
+      - Normal
+      - Italic
+  - id: h2-variant
+    title: Variant
+    type: variable-select
+    default: Normal
+    options:
+      - Normal
+      - Small-caps
+      - All-small-caps
+  - id: h2-weight
+    title: Weight
+    type: variable-select
+    default: var(--h-weight-s)
+    options:
+      - label: Default Heading Weight
+        value: var(--h-weight-s)
+      - label: Black
+        value: 900
+      - label: Extra Bold
+        value: 800
+      - label: Bold
+        value: 700
+      - label: Semi Bold
+        value: 600
+      - label: Medium
+        value: 500
+      - label: Normal
+        value: 400
+      - label: Light
+        value: 300
+  - id: h2-align
+    title: Alignment
+    default: var(--h-align-s)
+    type: variable-select
+    options:
+      - label: Default
+        value: var(--h-align-s)
+      - label: Left
+        value: left
+      - label: Right
+        value: right
+      - label: Center
+        value: center
+  - id: h2-bottom-border
+    title: Bottom Border
+    type: class-toggle
+    default: false
+  - id: h3-heading
+    title: Heading 3
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h3-size
+    title: Font Size
+    type: variable-text
+    default: 1.17em
+  - id: h3-font
+    title: Font family
+    type: variable-select
+    default: var(--h-font-s)
+    options:
+      - label: Heading Font
+        value: var(--h-font-s)
+      - label: Default Font
+        value: var(--font-text)
+      - label: Secondary Font
+        value: var(--font-secondary)
+      - label: Monospace Font
+        value: var(--font-monospace)
+  - id: h3-style
+    title: Style
+    type: variable-select
+    default: Normal
+    options:
+      - Normal
+      - Italic
+  - id: h3-variant
+    title: Variant
+    type: variable-select
+    default: Normal
+    options:
+      - Normal
+      - Small-caps
+      - All-small-caps
+  - id: h3-weight
+    title: Weight
+    type: variable-select
+    default: var(--h-weight-s)
+    options:
+      - label: Default Heading Weight
+        value: var(--h-weight-s)
+      - label: Black
+        value: 900
+      - label: Extra Bold
+        value: 800
+      - label: Bold
+        value: 700
+      - label: Semi Bold
+        value: 600
+      - label: Medium
+        value: 500
+      - label: Normal
+        value: 400
+      - label: Light
+        value: 300
+  - id: h3-align
+    title: Alignment
+    default: var(--h-align-s)
+    type: variable-select
+    options:
+      - label: Default
+        value: var(--h-align-s)
+      - label: Left
+        value: left
+      - label: Right
+        value: right
+      - label: Center
+        value: center
+  - id: h3-bottom-border
+    title: Bottom Border
+    type: class-toggle
+    default: false
+  - id: h4-heading
+    title: Heading 4
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h4-size
+    title: Font Size
+    type: variable-text
+    default: 1.1em
+  - id: h4-font
+    title: Font family
+    type: variable-select
+    default: var(--h-font-s)
+    options:
+      - label: Heading Font
+        value: var(--h-font-s)
+      - label: Default Font
+        value: var(--font-text)
+      - label: Secondary Font
+        value: var(--font-secondary)
+      - label: Monospace Font
+        value: var(--font-monospace)
+  - id: h4-style
+    title: Style
+    type: variable-select
+    default: Normal
+    options:
+      - Normal
+      - Italic
+  - id: h4-variant
+    title: Variant
+    type: variable-select
+    default: Normal
+    options:
+      - Normal
+      - Small-caps
+      - All-small-caps
+  - id: h4-weight
+    title: Weight
+    type: variable-select
+    default: var(--h-weight-s)
+    options:
+      - label: Default Heading Weight
+        value: var(--h-weight-s)
+      - label: Black
+        value: 900
+      - label: Extra Bold
+        value: 800
+      - label: Bold
+        value: 700
+      - label: Semi Bold
+        value: 600
+      - label: Medium
+        value: 500
+      - label: Normal
+        value: 400
+      - label: Light
+        value: 300
+  - id: h4-align
+    title: Alignment
+    default: var(--h-align-s)
+    type: variable-select
+    options:
+      - label: Default
+        value: var(--h-align-s)
+      - label: Left
+        value: left
+      - label: Right
+        value: right
+      - label: Center
+        value: center
+  - id: h4-bottom-border
+    title: Bottom Border
+    type: class-toggle
+    default: false
+  - id: h5-heading
+    title: Heading 5
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h5-size
+    title: Font Size
+    type: variable-text
+    default: 1.04em
+  - id: h5-font
+    title: Font family
+    type: variable-select
+    default: var(--h-font-s)
+    options:
+      - label: Heading Font
+        value: var(--h-font-s)
+      - label: Default Font
+        value: var(--font-text)
+      - label: Secondary Font
+        value: var(--font-secondary)
+      - label: Monospace Font
+        value: var(--font-monospace)
+  - id: h5-style
+    title: Style
+    type: variable-select
+    default: Normal
+    options:
+      - Normal
+      - Italic
+  - id: h5-variant
+    title: Variant
+    type: variable-select
+    default: Normal
+    options:
+      - Normal
+      - Small-caps
+      - All-small-caps
+  - id: h5-weight
+    title: Weight
+    type: variable-select
+    default: var(--h-weight-s)
+    options:
+      - label: Default Heading Weight
+        value: var(--h-weight-s)
+      - label: Black
+        value: 900
+      - label: Extra Bold
+        value: 800
+      - label: Bold
+        value: 700
+      - label: Semi Bold
+        value: 600
+      - label: Medium
+        value: 500
+      - label: Normal
+        value: 400
+      - label: Light
+        value: 300
+  - id: h5-align
+    title: Alignment
+    default: var(--h-align-s)
+    type: variable-select
+    options:
+      - label: Default
+        value: var(--h-align-s)
+      - label: Left
+        value: left
+      - label: Right
+        value: right
+      - label: Center
+        value: center
+  - id: h5-bottom-border
+    title: Bottom Border
+    type: class-toggle
+    default: false
+  - id: h6-heading
+    title: Heading 6
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h6-size
+    title: Font Size
+    type: variable-text
+    default: 1em
+  - id: h6-font
+    title: Font family
+    type: variable-select
+    default: var(--h-font-s)
+    options:
+      - label: Heading Font
+        value: var(--h-font-s)
+      - label: Default Font
+        value: var(--font-text)
+      - label: Secondary Font
+        value: var(--font-secondary)
+      - label: Monospace Font
+        value: var(--font-monospace)
+  - id: h6-style
+    title: Style
+    type: variable-select
+    default: Italic
+    options:
+      - Normal
+      - Italic
+  - id: h6-variant
+    title: Variant
+    type: variable-select
+    default: Normal
+    options:
+      - Normal
+      - Small-caps
+      - All-small-caps
+  - id: h6-weight
+    title: Weight
+    type: variable-select
+    default: var(--h-weight-s)
+    options:
+      - label: Default Heading Weight
+        value: var(--h-weight-s)
+      - label: Black
+        value: 900
+      - label: Extra Bold
+        value: 800
+      - label: Bold
+        value: 700
+      - label: Semi Bold
+        value: 600
+      - label: Medium
+        value: 500
+      - label: Normal
+        value: 400
+      - label: Light
+        value: 300
+  - id: h6-align
+    title: Alignment
+    default: var(--h-align-s)
+    type: variable-select
+    options:
+      - label: Default
+        value: var(--h-align-s)
+      - label: Left
+        value: left
+      - label: Right
+        value: right
+      - label: Center
+        value: center
+  - id: h6-bottom-border
+    title: Bottom Border
+    type: class-toggle
+    default: false
+  - id: inline-title-heading
+    title: Inline Title
+    type: heading
+    collapsed: true
+    level: 2
+  - id: inline-title-size
+    title: Font Size
+    type: variable-select
+    default: calc(var(--h1-size) + 0.5em)
+    options:
+      - label: Calculated
+        value: calc(var(--h1-size) + 0.5em)
+      - label: Tiny
+        value: var(--font-text-size)
+      - label: Small
+        value: 1.5em;
+      - label: Medium
+        value: 1.8em
+      - label: Big
+        value: 2.5em
+      - label: Huge
+        value: 3.1em
+  - id: inline-title-align
+    title: Text Align
+    type: variable-select
+    default: center
+    options:
+      - left
+      - center
+      - right
+
+  - id: inline-title-style
+    title: Style
+    type: variable-select
+    default: Normal
+    options:
+      - Normal
+      - Italic
+  - id: inline-title-variant
+    title: Variant
+    type: variable-select
+    default: Normal
+    options:
+      - Normal
+      - Small-caps
+      - All-small-caps
+  - id: inline-title-weight
+    title: Font Weight
+    default: "700"
+    type: variable-text
+  - id: properties-heading
+    title: Properties
+    type: heading
+    collapsed: true
+    level: 2
+  - id: normal-prop
+    title: Turn off Properties Hover Style
+    description: Enable to turn off automatic hover folding and unfolding of the properties and restore the behaviour of the Default Theme
+    type: class-toggle
+    default: false
+  - id: links-heading
+    title: Links
+    type: heading
+    collapsed: true
+    level: 2
+  - id: link-font
+    title: Link Font
+    type: variable-text
+    default: var(--font-secondary)
+    description: Secondary font by default. You can reference other fonts with var(--font-text), var(--font-monospace), 'Noto Sans', and so on and so forth.
+  - id: link-glow-effect-in-dark-mode
+    title: Link Glow Effect in Dark Mode
+    type: class-select
+    default: active-only
+    options:
+      - value: active-only
+        label: When Typing Links
+      - value: active-line-link-glow
+        label: On Active Line/Sentence
+      - value: link-glow
+        label: All Links
+  - id: tags-heading
+    title: Tags
+    type: heading
+    level: 2
+    collapsed: true
+  - id: tag-opacity
+    title: Tag Opacity
+    type: variable-text
+    default: "0.25"
+  - id: tag-opacity-hover
+    title: Tag Opacity (hover)
+    type: variable-text
+    default: "0.2"
+  - id: tag-radius
+    title: Tag Radius
+    type: variable-text
+    default: var(--radius-s)
+  - id: images-heading
+    title: Images
+    type: heading
+    level: 2
+    collapsed: true
+  - id: img-captions
+    type: class-toggle
+    title: Captions
+    description: Image alts appear as captions. Alts containing a hashtag (#) will remain hidden. NOTE - This only works for internal images.
+  - id: img-side-margins
+    title: Image Alignment
+    type: variable-select
+    allowEmpty: false
+    default: auto
+    options:
+      - label: Center
+        value: auto
+      - label: Left
+        value: "0"
+  - id: embeds-heading
+    title: Embeds
+    type: heading
+    level: 2
+    collapsed: true
+  - id: embeds-style
+    title: Embed Style
+    type: class-select
+    default: embed-normal
+    options:
+      - label: Default
+        value: embed-normal
+      - label: Card
+        value: card-embed
+  - id: hide-embed-title
+    title: Hide Embed Title
+    type: class-toggle
+    default: false
+  - id: hide-embed-icon
+    title: Hide Embed Link Icon
+    type: class-toggle
+    default: false
+  - id: embed-max-height
+    title: Max Embed Height
+    description: The height limit for an embed. When an embed reaches this limit, scrolling is required to view the rest of it.
+    type: variable-text
+    default: 4000px
+  - id: checkboxes-heading
+    title: Checkboxes
+    type: heading
+    level: 2
+    collapsed: true
+  - id: checkbox-radius
+    title: Checkbox Radius
+    type: variable-text
+    default: 60px
+  - id: speech-bubbles-heading
+    title: Speech Bubbles
+    description: Credit - AnuPpuccin Theme by Anubis
+    type: heading
+    collapsed: true
+    level: 3
+  - id: speech-align
+    title: Alternate Speechbox Alignment
+    type: class-toggle
+    default: true
+  - id: speech-opacity
+    title: Speech Bubble Opacity
+    type: variable-text
+    default: "0.5"
+  - id: speech-color
+    title: Speech Bubble Color
+    type: variable-select
+    default: var(--text-normal)
+    options:
+      - label: Inverted
+        value: var(--background-primary)
+      - label: Normal
+        value: var(--text-normal)
+  - id: tables-heading
+    title: Tables
+    type: heading
+    level: 2
+    collapsed: true
+  - id: table-white-space
+    title: White Space
+    type: variable-select
+    default: normal
+    options:
+      - normal
+      - pre
+  - id: table-column-max-width
+    title: Max Column Width
+    type: variable-text
+    default: none
+  - id: alternate-table-rows
+    title: Alternating Table Row Colors
+    type: class-toggle
+    default: false
+  - id: alternate-table-columns
+    title: Alternating Table Column Colors
+    type: class-toggle
+    default: false
+  - id: table-row-num
+    title: Row Numbers
+    type: class-toggle
+    default: false
+  - id: dataview-tables-heading
+    title: Dataview Tables
+    type: heading
+    level: 3
+    collapsed: true
+  - id: dv-table-text-align
+    title: Dataview Table Text Alignment
+    type: variable-select
+    default: left
+    options:
+      - left
+      - center
+      - right
+      - justified
+  - id: dv-table-white-space
+    title: Dataview Table White Space
+    type: variable-select
+    default: normal
+    options:
+      - normal
+      - pre
+  - id: dv-alternate-table-rows
+    title: Dataview Alternating Row Colors
+    type: class-toggle
+    default: false
+  - id: dv-alternate-table-columns
+    title: Dataview Alternating Column Colors
+    type: class-toggle
+    default: false
+  - id: dv-table-borders
+    title: Dataview Table Borders
+    type: class-toggle
+    default: false
+  - id: dv-table-header
+    title: Dataview Normal Table Header
+    type: class-toggle
+    default: false
+  - id: backlinks-heading
+    title: Backlinks
+    type: heading
+    level: 2
+    collapsed: true
+  - id: simple-backlinks
+    title: Simplified Backlinks
+    description: Shimmering Focus inspired backlinks pane that shows backlinks as a simple list.
+    type: class-toggle
+    default: true
+  - id: focus-mode-settings-heading
+    title: Focus Mode Settings
+    description: control behaviours intended to promote focus, such as inactive lines and panes fading out.
+    type: heading
+    level: 2
+    collapsed: true
+  - id: active-line-heading
+    title: Active Line
+    type: heading
+    level: 3
+    collapsed: true
+  - id: active-line-highlight
+    title: Fade out Inactive Lines in Edit Mode
+    description: Have the current line fully visible when writing. Everything else will be faded out.
+    type: class-toggle
+    default: true
+  - id: line-effect-select
+    title: Show Active Line Effects In...
+    type: class-select
+    default: none
+    options:
+      - label: Both Source and Live Preview modes
+        value: none
+      - label: Live Preview only
+        value: source-line-effect
+      - label: Source Mode only
+        value: preview-line-effect
+  - id: inactive-line-opacity
+    title: Inactive Line Opacity
+    description: control the opacity of inactive lines in edit mode (enable the setting above to see effect).
+    type: variable-text
+    default: "0.4"
+  - id: inactive-line-blur
+    title: Inactive Line Blur
+    type: variable-number-slider
+    default: 0
+    min: 0
+    max: 4
+    format: px
+    step: 0.5
+  - id: active-line-size
+    title: Active Line Font Size
+    type: variable-text
+    default: inherit
+    description: Change the font size of the active line.
+  - id: opacity-hover
+    title: Clarify Text on Hover
+    description: When this is enabled, hovering over text while in edit mode will remove the opacity and blur effects as if the text under the cursor were the active line.
+    type: class-toggle
+    default: false
+  - id: active-panes-heading
+    title: Active Panes
+    type: heading
+    level: 3
+    collapsed: true
+  - id: active-pane-highlight
+    title: Fade out Inactive Panes
+    description: Only the active pane will be at full opacity
+    default: true
+    type: class-toggle
+  - id: inactive-pane-opacity
+    title: Inactive Pane Opacity
+    description: control the opacity of inactive panes
+    default: "0.55"
+    type: variable-text
+  - id: inactive-pane-blur
+    title: Inactive Pane Blur
+    default: 0
+    format: px
+    type: variable-number-slider
+    min: 0
+    max: 4
+    step: 0.5
+  - id: folders-and-files-heading
+    title: Folders and Files
+    type: heading
+    level: 3
+    collapsed: true
+  - id: folder-focus
+    title: Folder Focus
+    description: (Experimental) Focus on the folder that holds the active file.
+    type: class-toggle
+    default: false
+  - id: hidden-elements-heading
+    title: Hidden Elements
+    description: Hide or unhide other workspace elements until hovered over with the mouse.
+    type: heading
+    level: 3
+    collapsed: true
+  - id: hide-ribbon
+    title: Hide Sidebar Ribbon
+    type: class-toggle
+    default: true
+  - id: hide-file-tabs
+    title: Hide File Explorer Tabs
+    type: class-toggle
+    default: true
+  - id: hide-file-buttons
+    title: Hide File Explorer Buttons
+    type: class-toggle
+    default: true
+  - id: hide-tabs
+    title: Hide Workspace Tabs
+    type: class-toggle
+    default: true
+  - id: hide-close-tab
+    title: Hide Close Tab Button
+    type: class-toggle
+    default: true
+  - id: hide-titlebar-buttons
+    title: Hide Window Buttons
+    type: class-toggle
+    default: true
+  - id: hide-view-header
+    title: Hide View Header
+    type: class-toggle
+    default: true
+  - id: hide-status-bar
+    title: Hide Status Bar
+    type: class-toggle
+    default: true
+  - id: hide-backlinks
+    title: Hide Backlinks Pane in Edit Mode
+    type: class-toggle
+    default: true
+  - id: hide-inline-title
+    title: Hide Inline Title (Reading Mode)
+    type: class-toggle
+    default: false
+  - id: hide-inline-title-editing
+    title: Hide Inline Title (Edit Mode)
+    type: class-toggle
+    default: false
+  - id: hide-frontmatter-s
+    title: Hide Frontmatter
+    type: class-toggle
+    default: false
+  - id: animations-heading
+    title: Animations
+    type: heading
+    level: 3
+    collapsed: true
+  - id: opacity-hide
+    title: Opacity Transitions Only
+    description: Animations that would typically move elements around (like hiding the tab bar) are reduced to opacity animations only. This means only the opacity will be affected; no actual movements.
+    type: class-toggle
+    default: false
+  - id: animations-off
+    title: Turn off Animations
+    type: class-toggle
+    default: false
+    description: Turn off all animation transitions. May improve performance on E-ink or displays with low refresh rates.
+  - id: serenity-mode-heading
+    title: Serenity Mode
+    type: heading
+    level: 3
+    collapsed: true
+  - id: serenity-mode
+    title: Enable Serenity Mode
+    description: Hide EVERYTHING on screen except the note you're working on. WARNING - You will only be able to exit editing mode with the Edit/Reading mode toggle hotkey (CTRL + E).
+    type: class-toggle
+    default: false
+  - id: serenity-mode-select
+    title: Only Use Serenity Mode in...
+    type: class-select
+    default: serenity-both
+    options:
+      - label: Live Preview
+        value: serenity-lp
+      - label: Source Mode
+        value: serenity-src
+      - label: Live Preview AND Source Mode
+        value: serenity-both
+  - id: serenity-mode-font-size
+    title: Font Size in Serenity Mode
+    description: To keep the font size dynamic and unchanged, type "var(--font-text-size)"
+    type: variable-text
+    default: "18px"
+  - id: pure-serenity-light
+    title: Pure Serenity - Light Mode
+    description: Change the light mode colors to be a dim shade of grey in edit mode, ignoring the theme.
+    type: class-toggle
+    default: false
+  - id: pure-serenity-dark
+    title: Pure Serenity - Dark Mode
+    description: Change the dark mode colors to be pure black and white in edit mode, ignoring the theme.
+    type: class-toggle
+    default: false
+  - id: pure-serenity-invert-light
+    title: Invert Edit Mode Colors in Light Mode
+    type: class-toggle
+    default: false
+  - id: pure-serenity-invert-dark
+    title: Invert Edit Mode Colors in Dark Mode
+    type: class-toggle
+    default: false
+  - id: plugins-heading
+    title: Plug-Ins
+    type: heading
+    level: 2
+    collapsed: true
+  - id: dataview-heading
+    title: Dataview
+    type: heading
+    level: 3
+    collapsed: true
+  - id: font-inline-field
+    title: Standalone Inline Fields Font
+    description: The font used for inline fields with hidden keys (fields wrapped in parentheses).
+    type: variable-select
+    default: var(--font-text)
+    options:
+      - label: Default
+        value: inherit
+      - label: Secondary Font
+        value: var(--font-secondary)
+      - label: Monospace Font
+        value: var(--font-monospace)
+  - id: inline-field-size
+    title: Font Size for Standalone Inline Fields
+    type: variable-select
+    default: inherit
+    options:
+      - label: Inherit
+        value: inherit
+      - label: Small
+        value: var(--font-small)
+      - label: Smaller
+        value: var(--font-smaller)
+      - label: Smallest
+        value: var(--font-smallest)
+  - id: icon-folder-heading
+    title: Icon Folder
+    type: heading
+    level: 3
+    collapsed: true
+  - id: colorful-folder-icons
+    title: Use accent color for folder icons
+    type: class-toggle
+    default: false
+  - id: ninja-cursor-heading
+    title: Ninja Cursor
+    type: heading
+    level: 3
+    collapsed: true
+  - id: iA-cursor
+    title: Custom Cursor Styling
+    description: iA-Writer-esque cursor styling
+    type: class-toggle
+    default: true
+  - id: cursor-tween
+    title: Tween Cursor Animation
+    description: Give the blinking cursor a smooth opacity transition.
+    type: class-toggle
+    default: false
+  - id: cursor-glow
+    title: Glowing Cursor in Dark Mode
+    type: class-toggle
+    default: true
+  - id: cursor-width
+    title: Cursor Thickness
+    description: Control the cursor thickness
+    type: variable-number-slider
+    default: 2.5
+    min: 0.5
+    max: 4
+    format: px
+    step: 0.5
+  - id: cursor-color
+    title: Cursor Color
+    type: variable-select
+    default: var(--interactive-accent)
+    allowEmpty: false
+    options:
+      - label: Interactive Accent
+        value: var(--interactive-accent)
+      - label: Red
+        value: var(--color-red)
+      - label: Orange
+        value: var(--color-orange)
+      - label: Cyan
+        value: var(--color-cyan)
+      - label: Blue
+        value: var(--color-blue)
+      - label: Purple
+        value: var(--color-purple)
+      - label: Pink
+        value: var(--color-pink)
+      - label: Faint Text
+        value: var(--text-faint)
+      - label: Muted Text
+        value: var(--text-muted)
+      - label: Text
+        value: var(--text-normal)
+  - id: MAKEmd-heading
+    title: MAKE.md
+    type: heading
+    level: 3
+    collapsed: true
+  - id: hover-context
+    title: Hide Inline Contexts until Hover
+    type: class-toggle
+    default: true
+  - id: 2hop-links-plus-heading
+    title: 2Hop Links Plus
+    type: heading
+    level: 3
+    collapsed: true
+  - id: clean-twohop
+    title: Clean 2Hop Links
+    description: A more minimalistic view for 2Hop Links.
+    type: class-toggle
+    default: false
+  - id: modals-heading
+    title: Modals
+    type: heading
+    level: 2
+    collapsed: true
+  - id: status-bar-style
+    title: Status Bar Style
+    type: class-select
+    default: default
+    options:
+      - label: Default
+        value: default
+      - label: Center
+        value: status-bar-center
+      - label: Full-width
+        value: status-bar-full-width
+  - id: compact-settings
+    title: Compact Settings
+    description: credit - therazam (https://github.com/Bluemoondragon07/Obsidian-Serenity/issues/1)
+    type: class-toggle
+    default: false

@@ -1,0 +1,41 @@
+name: Lumines Theme
+id: lumines-theme
+settings:
+  - id: folder-title-color
+
+    title: Folder title color
+    title.ru: Цвет названий папок
+
+    description: Select a color for folder titles
+    description.ru: Выберите цвет для названий папок
+
+    type: class-select
+    allowEmpty: false
+    default: folder-title-accent
+    options:
+      - label: Accent
+        value: folder-title-accent
+      - label: Red
+        value: folder-title-red
+      - label: Orange
+        value: folder-title-orange
+      - label: Yellow
+        value: folder-title-yellow
+      - label: Lime
+        value: folder-title-lime
+      - label: Green
+        value: folder-title-green
+      - label: Cyan
+        value: folder-title-cyan
+      - label: Sky
+        value: folder-title-sky
+      - label: Blue
+        value: folder-title-blue
+      - label: Indigo
+        value: folder-title-indigo
+      - label: Violet
+        value: folder-title-violet
+      - label: Pink
+        value: folder-title-pink
+      - label: Purple
+        value: folder-title-purple

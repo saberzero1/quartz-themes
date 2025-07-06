@@ -8806,7 +8806,6 @@ body:is(.is-focused, :not(.is-focused))
 .workspace-tab-header.is-active[data-type="kanban"] {
   --tab-background-active: var(--background-primary);
 }
-/*!
 /* @settings
 
 name: Sanctum

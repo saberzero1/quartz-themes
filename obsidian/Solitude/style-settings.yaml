@@ -1,0 +1,62 @@
+name: Solitude
+id: solitude
+settings:
+  - id: colors
+    title: Colors
+    type: heading
+    level: 1
+    collapsed: true
+  - id: color-base
+    title: Adjust base color
+    description: Adjusts the color of all backgrounds
+    type: variable-color
+    format: hsl-split
+    default: "#"
+  - id: text-normal
+    title: Adjust normal text color
+    type: variable-color
+    format: hex
+    default: "#"
+  - id: text-muted
+    title: Adjust muted text color
+    type: variable-color
+    format: hex
+    default: "#"
+  - id: text-faint
+    title: Adjust faint text color
+    type: variable-color
+    format: hex
+    default: "#"
+  - id: features
+    title: Features
+    type: heading
+    level: 1
+    collapsed: true
+  - id: theme-font-active
+    title: Deactivate Custom Font
+    description: Deactivate the default font provided by the theme
+    type: class-toggle
+    default: false
+  - id: deactivate-window-border
+    title: Deactivate window border
+    description: Deactivate the border around non-maximized windows
+    type: class-toggle
+    default: false
+  - id: show-file-first-letter
+    title: Show first letter in side panel tab icon of a file
+    type: class-toggle
+    default: true
+  - id: has-custom-background
+    title: Activate custom background
+    description: If you want to replace the default image with your own image, then go to the github repository of this theme and get the "Custom Background" snippet, which can be found in the snippets directory.
+    type: class-toggle
+    default: false
+  - id: panel-spacing
+    title: Adjust panel spacing
+    description: Adjusts the spacing in between the panels, when a custom background is used
+    type: variable-number-slider
+    format: px
+    default: 6
+    min: 0
+    max: 50
+    step: 1

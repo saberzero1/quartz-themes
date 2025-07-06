@@ -3653,7 +3653,9 @@ body
   font-size: 0.7em;
   position: relative;
   left: -3em;
-} /* @settings
+}
+
+/* @settings
 name: Shimmering Focus
 id: shimmering-focus
 collapsed: false

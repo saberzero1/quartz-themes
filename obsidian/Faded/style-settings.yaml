@@ -1,0 +1,120 @@
+name: Faded Theme - Miscellaneous Options
+id: test
+settings:
+  - id: fonts
+    title: Font
+    description: Change Font
+    type: class-select
+    allowEmpty: false
+    default: font-Cuprum
+    options:
+      - label: Cuprum (Faded Defualt)
+        value: font-Cuprum
+      - label: Kreon
+        value: font-Kreon
+      - label: Roboto Condensed
+        value: font-Roboto-Condensed
+      - label: Gemunu Libre
+        value: font-Gemunu-Libre
+      - label: (Obsidian Defualt)
+        value: none
+  - id: Gradient-Bullet-Point-Lines
+    title: Gradient Bullet Point Lines
+    description: Adds a gradient to bullet point lines
+    type: class-select
+    allowEmpty: false
+    default: none
+    options:
+      - label: Enabled
+        value: gradientBulletPointLines
+      - label: Disabled
+        value: none
+  - id: Check-List-Strikeout
+    title: Check List Strikeout (In Development)
+    description: Adds a strikeout to checked Items
+    type: class-select
+    allowEmpty: false
+    default: none
+    options:
+      - label: Enabled
+        value: none
+      - label: Disabled
+        value: checkListStrikeout
+  - id: Header-Icons
+    title: Header Icons
+    description: Adds Icons To Headers
+    type: class-select
+    allowEmpty: false
+    default: headerIcons
+    options:
+      - label: Enabled
+        value: headerIcons
+      - label: Disabled
+        value: none
+  - id: Folder-Icons
+    title: Folder Icons
+    description: Adds Icons To Folders
+    type: class-select
+    allowEmpty: false
+    default: folderIcons
+    options:
+      - label: Enabled
+        value: folderIcons
+      - label: Disabled
+        value: none
+  - id: File-Icons
+    title: File Icons
+    description: Adds Icons To Files
+    type: class-select
+    allowEmpty: false
+    default: fileIcons
+    options:
+      - label: Enabled
+        value: fileIcons
+      - label: Disabled
+        value: none
+  - id: Vault-Title
+    title: Custom Vault Title
+    description: Enabled/Disabled Custom Style For Vault Title
+    type: class-select
+    allowEmpty: false
+    default: vaultTitle
+    options:
+      - label: Enabled
+        value: vaultTitle
+      - label: Disabled
+        value: none
+  #name: Faded Theme - Sliding Panes Options
+  #id: Faded-Theme-Sliding-Panes-Options
+  - id: Enable-Stacked-Panes
+    title: Enable Stacked Panes
+    description: Enable to allow panes/pages to stack side by side - "Requires restart if restored to defualt"
+    type: class-select
+    allowEmpty: false
+    default: stackedPanes
+    options:
+      - label: Enabled
+        value: stackedPanes
+      - label: Disabled
+        value:
+
+  - id: Minimum-Page-Width
+    title: Minimum Page Width
+    description: The minimum allowed width of a page
+    type: variable-number-slider
+    default: 700
+    format: px
+    min: 300
+    max: 1920
+    step: 20
+  #name: Faded Theme - Alternate Themes
+  #id: Faded-Theme-Alternate-Themes
+  - id: Red-Accent-1-Dark
+    title: Red-Accent-1-Dark
+    type: variable-select
+    default: pie
+    format: hex
+    options:
+      - ffffff
+      - 963232
+      - f0f066
