@@ -137,9 +137,17 @@ export function cleanCSS(base, inject, mode = "both", extract = false) {
   result = result.replace(/\n+/g, "\n") // Remove extra newlines
   result = result.replace(/^\}$/gm, "}\n") // Add extra newlines between rules
   if (extract) {
-    // Combine theme variables
+    const bak = result;
     result = combineThemeVariables(result);
-    cleanCSS(result, "", mode, false); // Recursively clean the CSS
+    try {
+      // Combine theme variables
+      cleanCSS(result, "", mode, false); // Recursively clean the CSS
+    }
+    catch (error) {
+      console.log("Error combining theme variables:", error);
+      result = bak; // Fallback to the original result if an error occurs
+      cleanCSS(result, "", mode, false); // Recursively clean the CSS
+    }
   }
   return result;
 }
