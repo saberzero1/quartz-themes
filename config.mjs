@@ -4,7 +4,7 @@ import {
   getCurrentFolder,
 } from "./util/util.mjs";
 
-export const testMode = true;
+export const testMode = false;
 export const staticMode = true;
 export const themeToTest = "Oliviers Theme";
 
