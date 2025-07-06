@@ -1,0 +1,69 @@
+name: "Sandover Theme"
+id: sandover-theme-settings
+settings:
+  - id: theme-info
+    title: "A theme for composing digital manuscripts of all kinds."
+    description:
+      "if you see an issue or have a suggestion, see the github page: <https://github.com/eliz-abeth/sandover>
+      or buy me a coffee. :) https://ko-fi.com/eliz0beth <br>
+      Themed colors for your reference:     <br>
+      red: #ff394d    <br>
+      orange: #ff5400    <br>
+      yellow: #ffd77d    <br>
+      yellow-light: #ffe5a7    <br>
+      green: #ace099    <br>
+      cyan: #a6e6e3    <br>
+      blue: #537791    <br>
+      sandover-purple: #c585cc    <br>
+      pink: #fc62a2    <br>
+      salmon: #ff8671    <br>
+      salmon-lighter: #ffa99a <br>
+      light background: #fffcf4 <br>
+      dark backround: #a6e6e3"
+    markdown: true
+    type: info-text
+    level: 0
+
+  - id: sandover-general-settings
+    title: general settings
+    type: heading
+    level: 1
+    collapsed: true
+  - id: blockquote-color
+    title: Blockquote text color
+    description: Change blockquote color from default blue.
+    type: variable-themed-color
+    format: hex
+    default-light: "#537791"
+    default-dark: "#a6e6e3"
+  - id: background-primary
+    title: background primary color
+    type: variable-themed-color
+    format: hex
+    default-light: "#fffcf4"
+    default-dark: "#282828"
+  - id: ribbon-background
+    title: ribbon background color
+    type: variable-color
+    format: hex
+    default-light: "#fffcf4"
+    default-dark: "#282828"
+  - id: line-height
+    title: line height
+    type: variable-number
+    default: 1.5
+  - id: h1-color
+    title: heading 1 color
+    type: variable-color
+    format: hex
+    default: #c585cc
+  - id: text-accent
+    title: text accent
+    type: variable-color
+    format: hex
+    default: #ff8671
+  - id: text-highlight-bg
+    title: highlight background color
+    type: variable-color
+    format: hex
+    default: #ffe5a7

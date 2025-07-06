@@ -1,0 +1,472 @@
+name: Prime
+id: prime
+settings:
+  - id: icon-color
+    title: Icon color
+    description: Change the color of icons
+    type: class-select
+    allowEmpty: false
+    default: icon-default
+    options:
+      - label: Default
+        value: icon-default
+      - label: Purple
+        value: icon-purple
+      - label: Yellow
+        value: icon-yellow
+      - label: Pink
+        value: icon-pink
+      - label: Green
+        value: icon-green
+      - label: Orange
+        value: icon-orange
+      - label: Blue
+        value: icon-blue
+  - id: heading-no-color
+    title: Remove color in headings
+    description: Make each heading the same color
+    type: class-toggle
+    default: false
+  - id: disable-file-and-folder-icons
+    title: Remove file and folder icons
+    description: Don't use icons for files and folders in the navigation pane
+    type: class-toggle
+    default: false
+  - id: hide-header-title
+    title: Hide header title
+    type: class-toggle
+    default: false
+  - id: hide-status-bar
+    title: Hide status bar
+    type: class-toggle
+    default: false
+  - id: highlight-active-line
+    title: Highlight active line
+    type: class-toggle
+    default: false
+  - id: heading-colors-header
+    title: Heading Colors
+    description: Change the color of headings
+    type: heading
+    level: 1
+    collapsed: true
+  - id: h1
+    title: H1
+    type: heading
+    level: 2
+    collapsed: true
+  - id: h1-choose-color-default
+    title: Choose a default color
+    type: class-select
+    allowEmpty: false
+    default: h1-purple
+    options:
+      - label: None
+        value: h1-color-default-none
+      - label: Purple
+        value: h1-purple
+      - label: Blue
+        value: h1-blue
+      - label: Green
+        value: h1-green
+      - label: Yellow
+        value: h1-yellow
+      - label: Orange
+        value: h1-orange
+      - label: Pink
+        value: h1-pink
+  - id: h1-color-custom
+    title: Choose a custom color
+    description: ❗️ Make sure that 'None' is selected from the 'Choose a default color' option!
+    type: variable-color
+    default: "#"
+    format: hex
+  - id: h2
+    title: H2
+    type: heading
+    level: 2
+    collapsed: true
+  - id: h2-choose-color-default
+    title: Choose a default color
+    type: class-select
+    allowEmpty: false
+    default: h2-blue
+    options:
+      - label: None
+        value: h2-color-default-none
+      - label: Purple
+        value: h2-purple
+      - label: Blue
+        value: h2-blue
+      - label: Green
+        value: h2-green
+      - label: Yellow
+        value: h2-yellow
+      - label: Orange
+        value: h2-orange
+      - label: Pink
+        value: h2-pink
+  - id: h2-color-custom
+    title: Choose a custom color
+    description: ❗️ Make sure that 'None' is selected from the 'Choose a default color' option!
+    type: variable-color
+    default: "#"
+    format: hex
+  - id: h3
+    title: H3
+    type: heading
+    level: 2
+    collapsed: true
+  - id: h3-choose-color-default
+    title: Choose a default color
+    type: class-select
+    allowEmpty: false
+    default: h3-green
+    options:
+      - label: None
+        value: h3-color-default-none
+      - label: Purple
+        value: h3-purple
+      - label: Blue
+        value: h3-blue
+      - label: Green
+        value: h3-green
+      - label: Yellow
+        value: h3-yellow
+      - label: Orange
+        value: h3-orange
+      - label: Pink
+        value: h3-pink
+  - id: h3-color-custom
+    title: Choose a custom color
+    description: ❗️ Make sure that 'None' is selected from the 'Choose a default color' option!
+    type: variable-color
+    default: "#"
+    format: hex
+  - id: h4
+    title: H4
+    type: heading
+    level: 2
+    collapsed: true
+  - id: h4-choose-color-default
+    title: Choose a default color
+    type: class-select
+    allowEmpty: false
+    default: h4-yellow
+    options:
+      - label: None
+        value: h4-color-default-none
+      - label: Purple
+        value: h4-purple
+      - label: Blue
+        value: h4-blue
+      - label: Green
+        value: h4-green
+      - label: Yellow
+        value: h4-yellow
+      - label: Orange
+        value: h4-orange
+      - label: Pink
+        value: h4-pink
+  - id: h4-color-custom
+    title: Choose a custom color
+    description: ❗️ Make sure that 'None' is selected from the 'Choose a default color' option!
+    type: variable-color
+    default: "#"
+    format: hex
+  - id: h5
+    title: H5
+    type: heading
+    level: 2
+    collapsed: true
+  - id: h5-choose-color-default
+    title: Choose a default color
+    type: class-select
+    allowEmpty: false
+    default: h5-orange
+    options:
+      - label: None
+        value: h5-color-default-none
+      - label: Purple
+        value: h5-purple
+      - label: Blue
+        value: h5-blue
+      - label: Green
+        value: h5-green
+      - label: Yellow
+        value: h5-yellow
+      - label: Orange
+        value: h5-orange
+      - label: Pink
+        value: h5-pink
+  - id: h5-color-custom
+    title: Choose a custom color
+    description: ❗️ Make sure that 'None' is selected from the 'Choose a default color' option!
+    type: variable-color
+    default: "#"
+    format: hex
+  - id: h6
+    title: H6
+    type: heading
+    level: 2
+    collapsed: true
+  - id: h6-choose-color-default
+    title: Choose a default color
+    type: class-select
+    allowEmpty: false
+    default: h6-pink
+    options:
+      - label: None
+        value: h6-color-default-none
+      - label: Purple
+        value: h6-purple
+      - label: Blue
+        value: h6-blue
+      - label: Green
+        value: h6-green
+      - label: Yellow
+        value: h6-yellow
+      - label: Orange
+        value: h6-orange
+      - label: Pink
+        value: h6-pink
+  - id: h6-color-custom
+    title: Choose a custom color
+    description: ❗️ Make sure that 'None' is selected from the 'Choose a default color' option!
+    type: variable-color
+    default: "#"
+    format: hex
+  - id: text-decoration-colors-header
+    title: Text Decoration Colors
+    description: Change the colors of bold, italic, and highlighted text
+    type: heading
+    level: 1
+    collapsed: true
+  - id: bold
+    title: Bold text
+    type: heading
+    level: 2
+    collapsed: true
+  - id: bold-choose-color-default
+    title: Choose a default color
+    type: class-select
+    allowEmpty: false
+    default: bold-color-default-none
+    options:
+      - label: None
+        value: bold-color-default-none
+      - label: Purple
+        value: bold-purple
+      - label: Blue
+        value: bold-blue
+      - label: Green
+        value: bold-green
+      - label: Yellow
+        value: bold-yellow
+      - label: Orange
+        value: bold-orange
+      - label: Pink
+        value: bold-pink
+  - id: bold-color-custom
+    title: Choose a custom color
+    description: ❗️ Make sure that 'None' is selected from the 'Choose a default color' option!
+    type: variable-color
+    default: "#"
+    format: hex
+  - id: italic
+    title: Italic text
+    type: heading
+    level: 2
+    collapsed: true
+  - id: italic-choose-color-default
+    title: Choose a default color
+    type: class-select
+    allowEmpty: false
+    default: italic-color-default-none
+    options:
+      - label: None
+        value: italic-color-default-none
+      - label: Purple
+        value: italic-purple
+      - label: Blue
+        value: italic-blue
+      - label: Green
+        value: italic-green
+      - label: Yellow
+        value: italic-yellow
+      - label: Orange
+        value: italic-orange
+      - label: Pink
+        value: italic-pink
+  - id: italic-color-custom
+    title: Choose a custom color
+    description: ❗️ Make sure that 'None' is selected from the 'Choose a default color' option!
+    type: variable-color
+    default: "#"
+    format: hex
+  - id: highlighted-text
+    title: Highlighted text
+    type: heading
+    level: 2
+    collapsed: true
+  - id: highlight-choose-color-default
+    title: Choose a background color
+    description: ❗️ Make sure that 'Custom colors' is disabled.
+    type: class-select
+    allowEmpty: false
+    default: highlight-color-default-none
+    options:
+      - label: Default
+        value: highlight-color-default-none
+      - label: Purple
+        value: highlight-bg-purple
+      - label: Blue
+        value: highlight-bg-blue
+      - label: Green
+        value: highlight-bg-green
+      - label: Yellow
+        value: highlight-bg-yellow
+      - label: Orange
+        value: highlight-bg-orange
+      - label: Pink
+        value: highlight-bg-pink
+  - id: highlighted-text-custom
+    title: Custom colors
+    type: heading
+    level: 3
+    collapsed: true
+  - id: highlight-enable-color-custom
+    title: Enable custom colors
+    description: Choose your own colors for highlighted text
+    type: class-toggle
+    default: false
+  - id: highlight-color-custom-bg
+    title: Background color
+    type: variable-color
+    default: "#"
+    format: hex
+  - id: highlight-color-custom-text
+    title: Text color
+    type: variable-color
+    default: "#"
+    format: hex
+  - id: syntax-highlighting-header
+    title: Syntax Highlighting Options
+    description: Choose a syntax highlighting theme for code blocks
+    type: heading
+    level: 1
+    collapsed: true
+  - id: syntax-highlight-theme-dark
+    title: Dark Theme
+    description: Select syntax highlighting for dark theme
+    type: class-select
+    allowEmpty: false
+    default: dracula
+    options:
+      - label: Dracula
+        value: dracula
+      - label: One Dark
+        value: one-dark-dark
+      - label: Catppuccin Frappé
+        value: catppuccin-frappe-for-dark
+      - label: Catppuccin Macchiato
+        value: catppuccin-macchiato
+      - label: Catppuccin Mocha
+        value: catppuccin-mocha
+      - label: Halcyon
+        value: halcyon
+      - label: GitHub Dark
+        value: github-dark
+      - label: Tokyo Night
+        value: tokyo-night
+  - id: syntax-highlight-theme-light
+    title: Light Theme
+    description: Select syntax highlighting for light theme
+    type: class-select
+    allowEmpty: false
+    default: material-lighter
+    options:
+      - label: Material Lighter
+        value: material-lighter
+      - label: One Dark (Light)
+        value: one-dark-light
+      - label: Catppuccin Frappé
+        value: catppuccin-frappe-for-light
+      - label: Catppuccin Latte
+        value: catppuccin-latte
+      - label: GitHub Light
+        value: github-light
+      - label: Tokyo Night Light
+        value: tokyo-night-light
+  - id: accent-color-header
+    title: Interactive Accent Color
+    description: Change the background color for accented interactive elements
+    type: heading
+    level: 1
+    collapsed: true
+  - id: accent-color
+    title: Accent color
+    description: Change the accent color
+    type: class-select
+    allowEmpty: false
+    default: accent-default
+    options:
+      - label: Purple
+        value: accent-default
+      - label: Yellow
+        value: accent-yellow
+      - label: Pink
+        value: accent-pink
+      - label: Green
+        value: accent-green
+      - label: Orange
+        value: accent-orange
+      - label: Blue
+        value: accent-blue
+  - id: preserve-link-color-on-accent-change
+    title: Use the default color for links
+    description: Keep the default purple color for links when changing the accent color
+    type: class-toggle
+    default: true
+  - id: tweaks-header
+    title: Tweaks
+    type: heading
+    level: 1
+    collapsed: true
+  - id: blockquote-italic
+    title: Use italic font for blockquotes in edit mode
+    type: class-toggle
+    default: false
+  - id: green-alternative-color
+    title: Use alternative color for green in dark mode
+    description: Default green color may be indistinguishable from blue in dark mode
+    type: class-toggle
+    default: false
+  - id: styled-scrollbars
+    title: Use styled scrollbars
+    description: Replace native scrollbars
+    type: class-toggle
+    default: false
+  - id: alternative-checkboxes
+    title: Use alternative checkboxes
+    description: Disable this if you are using your own implementation via a CSS Snippet.
+    default: true
+    type: class-toggle
+  - id: callout-emojis-heading
+    title: Callouts with Emoji Support ✨
+    type: heading
+    level: 1
+  - id: callout-emojis
+    description: You can download the [Callout Emojis snippet](https://github.com/rivea0/obsidian-prime-snippets/blob/main/callout-emojis.css) to add emojis as icons to your callouts.
+    type: info-text
+    level: 1
+    markdown: true
+  - id: gradient-frames-heading
+    title: Gradient Frames ✨
+    type: heading
+    level: 1
+  - id: gradient-frames
+    description: You can download the [Gradient Frames snippet](https://github.com/rivea0/obsidian-prime-snippets/blob/main/gradient-frames.css) to add gradient colors to your Obsidian window.
+    type: info-text
+    level: 1
+    markdown: true

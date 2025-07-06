@@ -1,0 +1,3148 @@
+name: Primary Theme Settings
+id: primary-theme
+settings:
+  - id: readme-guide
+    type: heading
+    level: 1
+    collapsed: true
+    title: How To Use
+  - id: readme-content
+    type: info-text
+    markdown: true
+    description: 📚 Visit the [Full Guide](https://primary-theme.github.io/) for the complete documentation including theme features, font guides, customization guide and more
+  - id: readme-content
+    type: info-text
+    markdown: true
+    description: 🎯 Check out the [Roadmap](https://git.new/primary/project-tracker) to get a view of Primary's Development
+  - id: readme-content
+    type: info-text
+    markdown: true
+    description: 📮 Subscribe to [Primary Theme Updates](https://primarytheme.substack.com/subscribe) to get notified of Primary updates, new features, and goodies right in your inbox!
+  - id: interface
+    type: heading
+    level: 1
+    collapsed: true
+    title: Interface
+  - id: interface_typography
+    type: heading
+    level: 2
+    collapsed: true
+    title: Typography
+  - id: readme-content
+    type: info-text
+    markdown: true
+    description: ⚙️ To change fonts, go to Settings → Appearance → Font, and select the font you want to use (must be installed in your system).
+  - id: readme-content
+    type: info-text
+    markdown: true
+    description: 🌿 Primary v1.0 user? Want to use the original Karla font? Read the [Karla Font Guide](https://primary-theme.github.io/guides/font-recommendations/karla/) to learn how to get back into using it.
+  - id: readme-content
+    type: info-text
+    markdown: true
+    description: 🌸 Visit the [Font Recommendation Guide](https://primary-theme.github.io/guides/font-recommendations/overview/) for more curated font options for Primary! The guide includes a setup tutorial.
+  - id: typography_features
+    type: heading
+    level: 3
+    collapsed: true
+    title: Font Features
+  - id: readme-content
+    type: info-text
+    markdown: true
+    description: Some fonts offer stylistic alternates to glyphs of their fonts. This can be activated via a CSS property called font feature settings. `1` means "feature is turned on", and `0` means "feature is turned off".
+  - id: readme-content
+    type: info-text
+    markdown: true
+    description: This setting is quite technical so if you aren't sure how to use it please refer to the [MDN guide on font-feature-settings](https://developer.mozilla.org/en-US/docs/Web/CSS/font-feature-settings). <br><br> Not all fonts offer the same stylistic alternates so it's best to check out your font's respective manuals or specifications.
+  - id: interface-font-feature
+    type: variable-text
+    title: Interface Font's Feature Settings
+    default: '"calt" 1, "case" 0, "ccmp" 1, "ss03" 1, "cv01" 1, "cv05" 1, "cv06" 1, "cv08" 0, "cv11" 1, "cv12" 0, "cv13" 0'
+  - id: text-font-feature
+    type: variable-text
+    title: Text Font's Feature Settings
+    default: '"calt" 1, "case" 0, "ccmp" 1, "ss03" 1, "cv01" 1, "cv05" 1, "cv06" 1, "cv08" 0, "cv11" 1, "cv12" 0, "cv13" 0'
+  - id: monospace-font-feature
+    type: variable-text
+    title: Monospace Font's Feature Settings
+    default: '"calt" 1, "ss01" 1, "ss02" 1, "ss03" 1, "ss05" 1, "ss19" 1, "zero" 1'
+  - id: typography_sizes
+    type: heading
+    level: 3
+    collapsed: true
+    title: Interface Font Sizes
+  - id: readme-content
+    type: info-text
+    markdown: true
+    description: This section targets interface font sizes, meaning text that is not in the markdown editor. To change the size of the editor text, please use Obsidian's built-in setting. You can find this under Settings → Appearance → Font Size.
+  - id: font-ui-smallest
+    type: variable-number
+    title: Smallest UI Font Size
+    description: Acceptable font size unit is only in px.
+    default: 11
+    format: px
+  - id: font-ui-smaller
+    type: variable-number
+    title: Smaller UI Font Size
+    description: Acceptable font size unit is only in px.
+    default: 12
+    format: px
+  - id: font-ui-small
+    type: variable-number
+    title: Small UI Font Size
+    description: Acceptable font size unit is only in px.
+    default: 13
+    format: px
+  - id: font-ui-medium
+    type: variable-number
+    title: Medium UI Font Size
+    description: Acceptable font size unit is only in px.
+    default: 15
+    format: px
+  - id: font-ui-large
+    type: variable-number
+    title: Large UI Font Size
+    description: Acceptable font size unit is only in px.
+    default: 20
+    format: px
+  - id: typography_weight
+    type: heading
+    level: 3
+    collapsed: true
+    title: Font Weight
+  - id: readme-content
+    type: info-text
+    markdown: true
+    description: ☝️ By default with Inter, the font is a little bit thin. To increase readability, I increased the base font weight for each category by 50. If you decide to use your own font, the options below are good to use if you find the font you're using a bit too thick. You can bring them back down by 50 to use the original defaults weights.
+  - id: font-thin
+    type: variable-number
+    title: Thin Font Weight
+    default: 150
+  - id: font-extralight
+    type: variable-number
+    title: Extralight Font Weight
+    default: 250
+  - id: font-light
+    type: variable-number
+    title: Light Font Weight
+    default: 350
+  - id: font-normal
+    type: variable-number
+    title: Normal Font Weight
+    default: 450
+  - id: font-medium
+    type: variable-number
+    title: Medium Font Weight
+    default: 550
+  - id: font-semibold
+    type: variable-number
+    title: Semibold Font Weight
+    default: 650
+  - id: font-bold
+    type: variable-number
+    title: Bold Font Weight
+    default: 750
+  - id: font-extrabold
+    type: variable-number
+    title: Extrabold Font Weight
+    default: 850
+  - id: font-black
+    type: variable-number
+    title: Black Font Weight
+    default: 900
+  - id: bold-modifier
+    type: variable-number
+    title: Bold Modifier
+    description: This is an addend to Normal Font Weight for certain interface components that Obsidian wanted to turn into bold.
+    default: 200
+  - id: interface_animations
+    type: heading
+    level: 2
+    collapsed: true
+    title: Animations and Effects
+  - id: zero-tab-anim
+    type: class-toggle
+    title: Remove Jumpy Tab Animations
+  - id: zero-popup-popdown
+    type: class-toggle
+    title: Remove Popup and Pop Down Animations
+  - id: zero-popup-blur
+    type: class-toggle
+    title: Remove Popup Background Blur
+    description: This removes the background blur when opening the Settings, Command Palette, Quick Switcher, and other pop up boxes.This is a good option to toggle on if you are experiencing unreconcilable buggy-ness and visual issues with Primary. You may also toggle this on if you don't prefer the background blur, or just need some performance boost (especially for bigger vaults).
+  - id: interface_ribbon
+    type: heading
+    level: 2
+    collapsed: true
+    title: Ribbon
+  - id: ribbon_styles
+    type: class-select
+    title: Ribbon Style
+    allowEmpty: false
+    default: ribbon-default
+    options:
+      - label: Docked
+        value: ribbon-default
+      - label: Slide Out on Hover
+        value: ribbon-slideout
+  - id: ribbon-background
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Ribbon Background Color
+    default-light: "hsla(34, 34%, 90%, 1)"
+    default-dark: "hsla(31, 17%, 12%, 1)"
+  - id: ribbon-border-width
+    type: variable-text
+    title: Ribbon Border Width
+    description: If you want to remove the border, set this to 0px.
+    default: 1px
+  - id: ribbon-border-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Ribbon Border Color
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(30, 22%, 18%, 1)"
+  - id: ribbon-radius
+    type: variable-text
+    title: Ribbon Top Right Border Roundness
+    description: The roundness value's order goes top left, top right, bottom right, bottom left.
+    default: 0px 12px 12px 0px
+  - id: ribbon-width
+    type: variable-number
+    title: Ribbon Width
+    description: Adjust your ribbon's width. Unit is in px only.
+    default: 44
+    format: px
+  - id: ribbon-icon
+    type: variable-number
+    title: Ribbon Icon Size
+    description: Adjust your ribbon's icon size. Unit is in px only.
+    default: 15
+    format: px
+  - id: ribbon-icon-spacing
+    type: variable-number
+    title: Ribbon Icons Spacing
+    description: Adjust the top and bottom space between your ribbon's icons.
+    default: 4
+    format: px
+  - id: interface_editor
+    type: heading
+    level: 2
+    collapsed: true
+    title: Editor
+  - id: interface_editor-bg
+    type: class-select
+    title: Editor Background Type
+    allowEmpty: false
+    default: editor-bg-default
+    options:
+      - label: Plain Color
+        value: editor-bg-default
+      - label: Line Grid
+        value: editor-bgpattern-linegrid
+      - label: Dot Grid
+        value: editor-bgpattern-dotgrid
+  - id: editor-bg-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Editor Background Color
+    description: Sets the size of the grid, dotted grid, or image
+    default-light: "hsla(35, 36%, 96%, 1)"
+    default-dark: "hsla(30, 19%, 14%, 1)"
+  - id: editor-bgpattern-size
+    type: variable-text
+    title: Editor Background Size for Pattern Background
+    description: Sets the size of the line grid or dot grid
+    default: 50px 50px
+  - id: editor-bgpattern-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Editor Background's Pattern Color
+    description: Only available for line grid or dot grid background types. Sets the color of the line grid, dot grid. For line grid, it will take the color input and reduce it to 30% opacity.
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(31, 27%, 24%, 1)"
+  - id: editor-border-width
+    type: variable-text
+    title: Editor Border Width
+    default: 1px
+  - id: editor-border-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Editor Border Color
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(28, 22%, 18%, 1)"
+  - id: editor-file-header
+    type: class-select
+    title: File Header
+    default: file-header-default
+    options:
+      - label: Always Show
+        value: file-header-default
+      - label: Hide Full File Header (Shows when Hovered)
+        value: file-header-hover
+      - label: Hide Title on File Header (Shows when Hovered)
+        value: file-header-title-hover
+  - id: file-header-border-width
+    type: variable-text
+    title: File Header Border Width
+    default: 1px
+  - id: file-header-border-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: File Header Border Color
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(28, 22%, 18%, 1)"
+  - id: file-line-width
+    type: variable-text
+    title: File Readable Line Width
+    description: You may use any CSS units like em, rem, ch, px.
+    default: 700px
+  - id: gutter-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Gutter Number Text Color
+    default-light: "hsla(36, 37%, 75%, 1)"
+    default-dark: "hsla(31, 27%, 27%, 1)"
+  - id: gutter-color-active
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Active Line Gutter Number Text Color
+    default-light: "hsla(31, 23%, 50%, 1)"
+    default-dark: "hsla(34, 24%, 40%, 1)"
+  - id: active-line-highlight
+    type: class-toggle
+    title: Toggle Active Line Highlighting
+    description: Adds background color to active line.
+  - id: active-line-bg
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Active Line Background Color
+    description: Only works when Active Line Highlighting is turned on.
+    default-light: "hsla(36, 38%, 98%, 1)"
+    default-dark: "hsla(33, 20%, 16%, 1)"
+  - id: interface_status-bar
+    type: heading
+    level: 2
+    collapsed: true
+    title: Status Bar
+  - id: interface_status-bar-style
+    type: class-select
+    title: Status Bar Style
+    allowEmpty: false
+    default: sb-default
+    options:
+      - label: On Top
+        value: sb-default
+      - label: Visible Full Length
+        value: sb-style-full
+      - label: Slide Up Full Length
+        value: sb-style-slideupfull
+      - label: Slide Out
+        value: sb-style-slideout
+      - label: Floating
+        value: sb-style-floating
+  - id: interface_status-bar-item-display
+    type: class-select
+    title: Status Bar Item Visibility
+    allowEmpty: false
+    default: sb-item-default
+    options:
+      - label: Show Everything
+        value: sb-item-default
+      - label: Sync Only
+        value: sb-sync-only
+      - label: Word Count Only
+        value: sb-word-count-only
+  - id: status-bar-background
+    type: variable-themed-color
+    title: Status Bar Background
+    format: hsl
+    opacity: true
+    default-light: "hsla(34, 34%, 90%, 1)"
+    default-dark: "hsla(31, 17%, 12%, 1)"
+  - id: status-bar-border-width
+    type: variable-text
+    title: Status Bar Border Width
+    description: Set this to 0px if you wish to remove the status bar's border. The border width value's order goes top, right, bottom, left. The default value corresponds the roundness for the On Top style. Applying 1 value means that value is applied to all sides.
+    default: 1px
+  - id: status-bar-radius
+    type: variable-text
+    title: Status Bar Border Roundness
+    description: The roundness value's order goes top left, top right, bottom right, bottom left. The default value corresponds the roundness for the On Top style. Applying 1 value means that value is applied to all corners.
+    default: 12px 0px 0px 12px
+  - id: status-bar-floating-opacity
+    type: variable-number-slider
+    title: Floating Style - Status Bar Opacity at Rest
+    description: Sets the opacity of the status bar at rest if Floating Status Bar style is chosen. Range goes from 0 being transparent, until 1 being completely visible.
+    min: 0
+    max: 1
+    step: 0.1
+    default: 0.5
+  - id: status-bar-floating-opacity-hover
+    type: variable-number-slider
+    title: Floating Style - Status Bar Opacity on Hover
+    description: Sets the opacity of the status bar when hovering it if Floating Status Bar style is chosen. Range goes from 0 being transparent, until 1 being completely visible.
+    min: 0
+    max: 1
+    step: 0.1
+    default: 1
+  - id: components
+    type: heading
+    level: 1
+    collapsed: true
+    title: Components
+  - id: comp_progress
+    type: heading
+    level: 2
+    collapsed: true
+    title: Progress
+  - id: progress-bar-width
+    type: variable-text
+    title: Progress Bar Width
+    default: 220px
+  - id: progress-bar-height
+    type: variable-text
+    title: Progress Bar Height
+    default: 8px
+  - id: progress-background
+    type: variable-themed-color
+    title: Progress Background Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(34, 34%, 90%, 1)"
+    default-dark: "hsla(31, 17%, 12%, 1)"
+  - id: progress-border-width
+    type: variable-text
+    title: Progress Border Widths
+    description: Applied to the background bar and the value bar.
+    default: 1px
+  - id: progress-bar-outline
+    type: variable-themed-color
+    title: Progress Bar Border Color
+    format: hsl
+    opacity: true
+    default-light: "rgba(0, 0, 0, 0.1)"
+    default-dark: "rgba(255, 255, 255, 0.1)"
+  - id: progress-value-radius
+    type: variable-text
+    title: Progress Inner Value Roundness
+    description: Takes in the progress bar's height by default, creating rounded corners. If you want straight corners put 0px.
+    default: 8px
+  - id: progress-value-outline
+    type: variable-themed-color
+    title: Progress Inner Value Border Color
+    format: hsl
+    opacity: true
+    default-light: "rgba(0, 0, 0, 0.18)"
+    default-dark: "rgba(255, 255, 255, 0.21)"
+  - id: progress-color-1
+    type: variable-themed-color
+    title: Progress Color 1
+    description: Color for values 0% to 39%
+    format: hsl
+    opacity: true
+    default-light: "hsla(4, 72%, 55%, 1)"
+    default-dark: "hsla(4, 88%, 61%, 1)"
+  - id: progress-color-2
+    type: variable-themed-color
+    title: Progress Color 1
+    description: Color for values 40% to 59%
+    format: hsl
+    opacity: true
+    default-light: "hsla(21, 81%, 59%, 1)"
+    default-dark: "hsla(22, 82%, 47%, 1)"
+  - id: progress-color-3
+    type: variable-themed-color
+    title: Progress Color 1
+    description: Color for values 60% to 79%
+    format: hsl
+    opacity: true
+    default-light: "hsla(43, 83%, 57%, 1)"
+    default-dark: "hsla(40, 78%, 48%, 1)"
+  - id: progress-color-4
+    type: variable-themed-color
+    title: Progress Color 1
+    description: Color for values 80% to 99%
+    format: hsl
+    opacity: true
+    default-light: "hsla(149, 49%, 39%, 1)"
+    default-dark: "hsla(154, 74%, 26%, 1)"
+  - id: readme-content
+    type: info-text
+    markdown: true
+    description: If you want the color for progress bars valued at 100% to be a solid color, set the same color for each of the three below.
+  - id: progress-gradient-1
+    type: variable-themed-color
+    title: Progress 100% Leftmost Color
+    description: Leftmost color in the gradient for value 100%.
+    format: hsl
+    opacity: true
+    default-light: "hsla(3, 59%, 64%, 1)"
+    default-dark: "hsla(4, 88%, 61%, 1)"
+  - id: progress-gradient-2
+    type: variable-themed-color
+    title: Progress 100% Middle Color
+    description: Middle color in the gradient for value 100%
+    format: hsl
+    opacity: true
+    default-light: "hsla(43, 71%, 67%, 1)"
+    default-dark: "hsla(42, 79%, 51%, 1)"
+  - id: progress-gradient-3
+    type: variable-themed-color
+    title: Progress 100% Rightmost Color
+    description: Rightmost color in the gradient for value 100%
+    format: hsl
+    opacity: true
+    default-light: "hsla(197, 39%, 56%, 1)"
+    default-dark: "hsla(194, 59%, 56%, 1)"
+  - id: notes-files
+    type: heading
+    level: 1
+    collapsed: true
+    title: Notes and Files
+  - id: nf_header
+    type: heading
+    level: 2
+    collapsed: true
+    title: Heading
+  - id: readme-content
+    type: info-text
+    markdown: true
+    description: 🎨 Visit the [Header Presets](https://primary-theme.github.io/guides/overview/) section in the Full Guide to import the Settings.
+  - id: readme-content
+    type: info-text
+    markdown: true
+    description: 📖 The settings are based on CSS styling capabilities.
+  - id: nf_header-1
+    type: heading
+    level: 3
+    collapsed: true
+    title: Heading 1
+  - id: h1-size
+    type: variable-text
+    title: Font Size
+    default: 1.802em
+  - id: h1-font
+    type: variable-text
+    title: Font Family
+    default: Inter
+    quotes: true
+  - id: h1-weight
+    type: variable-number
+    title: Font Weight
+    default: 650
+  - id: h1-style
+    type: variable-text
+    title: Font Style
+    default: normal
+  - id: h1-text-align
+    type: variable-text
+    title: Text Alignment
+    description: You may choose from left, center, or right.
+    default: left
+  - id: h1-letter-spacing
+    type: variable-text
+    title: Letter Spacing
+    default: 0px
+  - id: h1-text-transform
+    type: variable-select
+    title: Text Transform
+    default: normal
+    options:
+      - label: Normal
+        value: normal
+      - label: Capitalize 1st letter of Each Word
+        value: capitalize
+      - label: All Lowercase
+        value: lowercase
+      - label: All Uppercase
+        value: uppercase
+  - id: h1-line-height
+    type: variable-number
+    title: Line Height
+    description: Sets the spacing between multiple lines of text of the heading. You can use units such as px, em, rem as well.
+    default: 1.2
+  - id: h1-color
+    type: variable-themed-color
+    title: Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(33, 54%, 17%, 1)"
+    default-dark: "hsla(32, 48%, 85%, 1)"
+  - id: h1-bg-color
+    type: variable-themed-color
+    title: Background Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(0, 0%, 0%, 0)"
+    default-dark: "hsla(0, 0%, 0%, 0)"
+  - id: h1-vt-align-center
+    type: class-toggle
+    title: Vertically Align Header to Center
+    description: If you add a background color, Obsidian has some spacing at the top for each header. Turning this on will ensure the heading has equal spacing for both top and bottom, aligning it correctly.
+  - id: h1-border-width
+    type: variable-text
+    title: Border Thickness
+    description: You may also have different thickness per side in the order of top, right, bottom, right (i.e. 5px 2px 3px 4px).
+    default: 0px
+  - id: h1-border-style
+    type: variable-text
+    title: Border Style
+    description: You may choose from solid, dashed, dotted, and double. Same with thickness, you can have different styles per side.
+    default: solid
+  - id: h1-border-top-color
+    type: variable-themed-color
+    title: Top Border Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(28, 22%, 18%, 1)"
+  - id: h1-border-right-color
+    type: variable-themed-color
+    title: Right Border Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(28, 22%, 18%, 1)"
+  - id: h1-border-bottom-color
+    type: variable-themed-color
+    title: Bottom Border Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(28, 22%, 18%, 1)"
+  - id: h1-border-left-color
+    type: variable-themed-color
+    title: Left Border Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(28, 22%, 18%, 1)"
+  - id: h1-border-radius
+    type: variable-text
+    title: Roundness
+    description: Add rounding to your headings. Best to use with a background color. If you'd like to have different roundness for each corner, you can set one in the order of top-left, top-right, bottom-right, bottom-left (i.e. 4px 2px 6px 3px).
+    default: 0px
+  - id: nf_header-2
+    type: heading
+    level: 3
+    collapsed: true
+    title: Heading 2
+  - id: h2-size
+    type: variable-text
+    title: Font Size
+    default: 1.602em
+  - id: h2-font
+    type: variable-text
+    title: Font Family
+    default: Inter
+    quotes: true
+  - id: h2-weight
+    type: variable-number
+    title: Font Weight
+    default: 650
+  - id: h2-style
+    type: variable-text
+    title: Font Style
+    default: normal
+  - id: h2-text-align
+    type: variable-text
+    title: Text Alignment
+    description: You may choose from left, center, or right.
+    default: left
+  - id: h2-letter-spacing
+    type: variable-text
+    title: Letter Spacing
+    default: 0px
+  - id: h2-text-transform
+    type: variable-select
+    title: Text Transform
+    default: normal
+    options:
+      - label: Normal
+        value: normal
+      - label: Capitalize 1st letter of Each Word
+        value: capitalize
+      - label: All Lowercase
+        value: lowercase
+      - label: All Uppercase
+        value: uppercase
+  - id: h2-line-height
+    type: variable-number
+    title: Line Height
+    description: Sets the spacing between multiple lines of text of the heading. You can use units such as px, em, rem as well.
+    default: 1.2
+  - id: h2-color
+    type: variable-themed-color
+    title: Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(33, 54%, 17%, 1)"
+    default-dark: "hsla(32, 48%, 85%, 1)"
+  - id: h2-bg-color
+    type: variable-themed-color
+    title: Background Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(0, 0%, 0%, 0)"
+    default-dark: "hsla(0, 0%, 0%, 0)"
+  - id: h2-vt-align-center
+    type: class-toggle
+    title: Vertically Align Header to Center
+    description: If you add a background color, Obsidian has some spacing at the top for each header. Turning this on will ensure the heading has equal spacing for both top and bottom, aligning it correctly.
+  - id: h2-border-width
+    type: variable-text
+    title: Border Thickness
+    description: You may also have different thickness per side in the order of top, right, bottom, right (i.e. 5px 2px 3px 4px).
+    default: 0px
+  - id: h2-border-style
+    type: variable-text
+    title: Border Style
+    description: You may choose from solid, dashed, dotted, and double. Same with thickness, you can have different styles per side.
+    default: solid
+  - id: h2-border-top-color
+    type: variable-themed-color
+    title: Top Border Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(28, 22%, 18%, 1)"
+  - id: h2-border-right-color
+    type: variable-themed-color
+    title: Right Border Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(28, 22%, 18%, 1)"
+  - id: h2-border-bottom-color
+    type: variable-themed-color
+    title: Bottom Border Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(28, 22%, 18%, 1)"
+  - id: h2-border-left-color
+    type: variable-themed-color
+    title: Left Border Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(28, 22%, 18%, 1)"
+  - id: h2-border-radius
+    type: variable-text
+    title: Roundness
+    description: Add rounding to your headings. Best to use with a background color. If you'd like to have different roundness for each corner, you can set one in the order of top-left, top-right, bottom-right, bottom-left (i.e. 4px 2px 6px 3px).
+    default: 0px
+  - id: nf_header-3
+    type: heading
+    level: 3
+    collapsed: true
+    title: Heading 3
+  - id: h3-size
+    type: variable-text
+    title: Font Size
+    default: 1.424em
+  - id: h3-font
+    type: variable-text
+    title: Font Family
+    default: Inter
+    quotes: true
+  - id: h3-weight
+    type: variable-number
+    title: Font Weight
+    default: 650
+  - id: h3-style
+    type: variable-text
+    title: Font Style
+    default: normal
+  - id: h3-text-align
+    type: variable-text
+    title: Text Alignment
+    description: You may choose from left, center, or right.
+    default: left
+  - id: h3-letter-spacing
+    type: variable-text
+    title: Letter Spacing
+    default: 0px
+  - id: h3-text-transform
+    type: variable-select
+    title: Text Transform
+    default: normal
+    options:
+      - label: Normal
+        value: normal
+      - label: Capitalize 1st letter of Each Word
+        value: capitalize
+      - label: All Lowercase
+        value: lowercase
+      - label: All Uppercase
+        value: uppercase
+  - id: h3-line-height
+    type: variable-number
+    title: Line Height
+    description: Sets the spacing between multiple lines of text of the heading. You can use units such as px, em, rem as well.
+    default: 1.3
+  - id: h3-color
+    type: variable-themed-color
+    title: Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(33, 54%, 17%, 1)"
+    default-dark: "hsla(32, 48%, 85%, 1)"
+  - id: h3-bg-color
+    type: variable-themed-color
+    title: Background Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(0, 0%, 0%, 0)"
+    default-dark: "hsla(0, 0%, 0%, 0)"
+  - id: h3-vt-align-center
+    type: class-toggle
+    title: Vertically Align Header to Center
+    description: If you add a background color, Obsidian has some spacing at the top for each header. Turning this on will ensure the heading has equal spacing for both top and bottom, aligning it correctly.
+  - id: h3-border-width
+    type: variable-text
+    title: Border Thickness
+    description: You may also have different thickness per side in the order of top, right, bottom, right (i.e. 5px 2px 3px 4px).
+    default: 0px
+  - id: h3-border-style
+    type: variable-text
+    title: Border Style
+    description: You may choose from solid, dashed, dotted, and double. Same with thickness, you can have different styles per side.
+    default: solid
+  - id: h3-border-top-color
+    type: variable-themed-color
+    title: Top Border Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(28, 22%, 18%, 1)"
+  - id: h3-border-right-color
+    type: variable-themed-color
+    title: Right Border Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(28, 22%, 18%, 1)"
+  - id: h3-border-bottom-color
+    type: variable-themed-color
+    title: Bottom Border Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(28, 22%, 18%, 1)"
+  - id: h3-border-left-color
+    type: variable-themed-color
+    title: Left Border Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(28, 22%, 18%, 1)"
+  - id: h3-border-radius
+    type: variable-text
+    title: Roundness
+    description: Add rounding to your headings. Best to use with a background color. If you'd like to have different roundness for each corner, you can set one in the order of top-left, top-right, bottom-right, bottom-left (i.e. 4px 2px 6px 3px).
+    default: 0px
+  - id: nf_header-4
+    type: heading
+    level: 3
+    collapsed: true
+    title: Heading 4
+  - id: h4-size
+    type: variable-text
+    title: Font Size
+    default: 1.266em
+  - id: h4-font
+    type: variable-text
+    title: Font Family
+    default: Inter
+    quotes: true
+  - id: h4-weight
+    type: variable-number
+    title: Font Weight
+    default: 650
+  - id: h4-style
+    type: variable-text
+    title: Font Style
+    default: normal
+  - id: h4-text-align
+    type: variable-text
+    title: Text Alignment
+    description: You may choose from left, center, or right.
+    default: left
+  - id: h4-letter-spacing
+    type: variable-text
+    title: Letter Spacing
+    default: 0px
+  - id: h4-text-transform
+    type: variable-select
+    title: Text Transform
+    default: normal
+    options:
+      - label: Normal
+        value: normal
+      - label: Capitalize 1st letter of Each Word
+        value: capitalize
+      - label: All Lowercase
+        value: lowercase
+      - label: All Uppercase
+        value: uppercase
+  - id: h4-line-height
+    type: variable-number
+    title: Line Height
+    description: Sets the spacing between multiple lines of text of the heading. You can use units such as px, em, rem as well.
+    default: 1.4
+  - id: h4-color
+    type: variable-themed-color
+    title: Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(33, 54%, 17%, 1)"
+    default-dark: "hsla(32, 48%, 85%, 1)"
+  - id: h4-bg-color
+    type: variable-themed-color
+    title: Background Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(0, 0%, 0%, 0)"
+    default-dark: "hsla(0, 0%, 0%, 0)"
+  - id: h4-vt-align-center
+    type: class-toggle
+    title: Vertically Align Header to Center
+    description: If you add a background color, Obsidian has some spacing at the top for each header. Turning this on will ensure the heading has equal spacing for both top and bottom, aligning it correctly.
+  - id: h4-border-width
+    type: variable-text
+    title: Border Thickness
+    description: You may also have different thickness per side in the order of top, right, bottom, right (i.e. 5px 2px 3px 4px).
+    default: 0px
+  - id: h4-border-style
+    type: variable-text
+    title: Border Style
+    description: You may choose from solid, dashed, dotted, and double. Same with thickness, you can have different styles per side.
+    default: solid
+  - id: h4-border-top-color
+    type: variable-themed-color
+    title: Top Border Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(28, 22%, 18%, 1)"
+  - id: h4-border-right-color
+    type: variable-themed-color
+    title: Right Border Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(28, 22%, 18%, 1)"
+  - id: h4-border-bottom-color
+    type: variable-themed-color
+    title: Bottom Border Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(28, 22%, 18%, 1)"
+  - id: h4-border-left-color
+    type: variable-themed-color
+    title: Left Border Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(28, 22%, 18%, 1)"
+  - id: h4-border-radius
+    type: variable-text
+    title: Roundness
+    description: Add rounding to your headings. Best to use with a background color. If you'd like to have different roundness for each corner, you can set one in the order of top-left, top-right, bottom-right, bottom-left (i.e. 4px 2px 6px 3px).
+    default: 0px
+  - id: nf_header-5
+    type: heading
+    level: 3
+    collapsed: true
+    title: Heading 5
+  - id: h5-size
+    type: variable-text
+    title: Font Size
+    default: 1.125em
+  - id: h5-font
+    type: variable-text
+    title: Font Family
+    default: Inter
+    quotes: true
+  - id: h5-weight
+    type: variable-number
+    title: Font Weight
+    default: 650
+  - id: h5-style
+    type: variable-text
+    title: Font Style
+    default: normal
+  - id: h5-text-align
+    type: variable-text
+    title: Text Alignment
+    description: You may choose from left, center, or right.
+    default: left
+  - id: h5-letter-spacing
+    type: variable-text
+    title: Letter Spacing
+    default: 0px
+  - id: h5-text-transform
+    type: variable-select
+    title: Text Transform
+    default: normal
+    options:
+      - label: Normal
+        value: normal
+      - label: Capitalize 1st letter of Each Word
+        value: capitalize
+      - label: All Lowercase
+        value: lowercase
+      - label: All Uppercase
+        value: uppercase
+  - id: h5-line-height
+    type: variable-number
+    title: Line Height
+    description: Sets the spacing between multiple lines of text of the heading. You can use units such as px, em, rem as well.
+    default: 1
+  - id: h5-color
+    type: variable-themed-color
+    title: Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(33, 54%, 17%, 1)"
+    default-dark: "hsla(32, 48%, 85%, 1)"
+  - id: h5-bg-color
+    type: variable-themed-color
+    title: Background Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(0, 0%, 0%, 0)"
+    default-dark: "hsla(0, 0%, 0%, 0)"
+  - id: h5-vt-align-center
+    type: class-toggle
+    title: Vertically Align Header to Center
+    description: If you add a background color, Obsidian has some spacing at the top for each header. Turning this on will ensure the heading has equal spacing for both top and bottom, aligning it correctly.
+  - id: h5-border-width
+    type: variable-text
+    title: Border Thickness
+    description: You may also have different thickness per side in the order of top, right, bottom, right (i.e. 5px 2px 3px 4px).
+    default: 0px
+  - id: h5-border-style
+    type: variable-text
+    title: Border Style
+    description: You may choose from solid, dashed, dotted, and double. Same with thickness, you can have different styles per side.
+    default: solid
+  - id: h5-border-top-color
+    type: variable-themed-color
+    title: Top Border Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(28, 22%, 18%, 1)"
+  - id: h5-border-right-color
+    type: variable-themed-color
+    title: Right Border Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(28, 22%, 18%, 1)"
+  - id: h5-border-bottom-color
+    type: variable-themed-color
+    title: Bottom Border Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(28, 22%, 18%, 1)"
+  - id: h5-border-left-color
+    type: variable-themed-color
+    title: Left Border Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(28, 22%, 18%, 1)"
+  - id: h5-border-radius
+    type: variable-text
+    title: Roundness
+    description: Add rounding to your headings. Best to use with a background color. If you'd like to have different roundness for each corner, you can set one in the order of top-left, top-right, bottom-right, bottom-left (i.e. 4px 2px 6px 3px).
+    default: 0px
+  - id: nf_header-6
+    type: heading
+    level: 3
+    collapsed: true
+    title: Heading 6
+  - id: h6-size
+    type: variable-text
+    title: Font Size
+    default: 1em
+  - id: h6-font
+    type: variable-text
+    title: Font Family
+    default: Inter
+    quotes: true
+  - id: h6-weight
+    type: variable-number
+    title: Font Weight
+    default: 650
+  - id: h6-style
+    type: variable-text
+    title: Font Style
+    default: normal
+  - id: h6-text-align
+    type: variable-text
+    title: Text Alignment
+    description: You may choose from left, center, or right.
+    default: left
+  - id: h6-letter-spacing
+    type: variable-text
+    title: Letter Spacing
+    default: 0px
+  - id: h6-text-transform
+    type: variable-select
+    title: Text Transform
+    default: normal
+    options:
+      - label: Normal
+        value: normal
+      - label: Capitalize 1st letter of Each Word
+        value: capitalize
+      - label: All Lowercase
+        value: lowercase
+      - label: All Uppercase
+        value: uppercase
+  - id: h6-line-height
+    type: variable-number
+    title: Line Height
+    description: Sets the spacing between multiple lines of text of the heading. You can use units such as px, em, rem as well.
+    default: 1
+  - id: h6-color
+    type: variable-themed-color
+    title: Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(33, 54%, 17%, 1)"
+    default-dark: "hsla(32, 48%, 85%, 1)"
+  - id: h6-bg-color
+    type: variable-themed-color
+    title: Background Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(0, 0%, 0%, 0)"
+    default-dark: "hsla(0, 0%, 0%, 0)"
+  - id: h6-vt-align-center
+    type: class-toggle
+    title: Vertically Align Header to Center
+    description: If you add a background color, Obsidian has some spacing at the top for each header. Turning this on will ensure the heading has equal spacing for both top and bottom, aligning it correctly.
+  - id: h6-border-width
+    type: variable-text
+    title: Border Thickness
+    description: You may also have different thickness per side in the order of top, right, bottom, right (i.e. 5px 2px 3px 4px).
+    default: 0px
+  - id: h6-border-style
+    type: variable-text
+    title: Border Style
+    description: You may choose from solid, dashed, dotted, and double. Same with thickness, you can have different styles per side.
+    default: solid
+  - id: h6-border-top-color
+    type: variable-themed-color
+    title: Top Border Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(28, 22%, 18%, 1)"
+  - id: h6-border-right-color
+    type: variable-themed-color
+    title: Right Border Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(28, 22%, 18%, 1)"
+  - id: h6-border-bottom-color
+    type: variable-themed-color
+    title: Bottom Border Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(28, 22%, 18%, 1)"
+  - id: h6-border-left-color
+    type: variable-themed-color
+    title: Left Border Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(28, 22%, 18%, 1)"
+  - id: h6-border-radius
+    type: variable-text
+    title: Roundness
+    description: Add rounding to your headings. Best to use with a background color. If you'd like to have different roundness for each corner, you can set one in the order of top-left, top-right, bottom-right, bottom-left (i.e. 4px 2px 6px 3px).
+    default: 0px
+  - id: nf_emphasis
+    type: heading
+    level: 2
+    collapsed: true
+    title: Emphasis
+  - id: bold-color
+    type: variable-themed-color
+    title: Bold Text Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(4, 56%, 48%, 1)"
+    default-dark: "hsla(4, 88%, 61%, 1)"
+  - id: bold-weight
+    type: variable-number
+    title: Bold Text Weight
+    default: 750
+  - id: italic-color
+    type: variable-themed-color
+    title: Italic Text Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(200, 64%, 37%, 1)"
+    default-dark: "hsla(194, 59%, 56%, 1)"
+  - id: strikethrough-color
+    type: variable-themed-color
+    title: Strikethrough Text Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(34, 29%, 60%, 1)"
+    default-dark: "hsla(34, 24%, 40%, 1)"
+  - id: underline-color
+    type: variable-themed-color
+    title: Underlined Text Color
+    description: Not natively supported in markdown, but underline can be activated with HTML.
+    format: hsl
+    opacity: true
+    default-light: "hsla(31, 45%, 24%, 1)"
+    default-dark: "hsla(34, 39%, 74%, 1)"
+  - id: underline-decoration-opacity
+    type: variable-text
+    title: Underlined Text Line Opacity
+    description: Not natively supported in markdown, but underline can be activated with HTML. If used, you can set the underline's line opacity from 0% (no line visibility) to 100% (full color visibility). The color is taken from the underline's text color.
+    default: 22%
+  - id: bold-italic-color
+    type: variable-themed-color
+    title: Bold + Italic Text Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(33, 54%, 17%, 1)"
+    default-dark: "hsla(32, 48%, 85%, 1)"
+  - id: bold-italic-weight
+    type: variable-number
+    title: Bold + Italic Text Weight
+    default: 625
+  - id: bold-italic-strikethrough-color
+    type: variable-themed-color
+    title: Bold + Italic + Strikethrough Text Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(31, 23%, 50%, 1)"
+    default-dark: "hsla(35, 27%, 55%, 1)"
+  - id: nf_highlight
+    type: heading
+    level: 2
+    collapsed: true
+    title: Highlight
+  - id: normal-highlight-color
+    type: variable-themed-color
+    title: Highlight Text Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(31, 45%, 24%, 1)"
+    default-dark: "hsla(34, 39%, 74%, 1)"
+  - id: normal-highlight-bg
+    type: variable-themed-color
+    title: Highlight Background Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(44, 100%, 50%, 0.2)"
+    default-dark: "hsla(44, 100%, 50%, 0.2)"
+  - id: bold-highlight-color
+    type: variable-themed-color
+    title: Bold + Highlight Text Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(31, 45%, 24%, 1)"
+    default-dark: "hsla(34, 39%, 74%, 1)"
+  - id: bold-highlight-bg
+    type: variable-themed-color
+    title: Bold + Highlight Background Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(350, 84%, 63%, 0.2)"
+    default-dark: "hsla(350, 84%, 63%, 0.2)"
+  - id: italic-highlight-color
+    type: variable-themed-color
+    title: Italic + Highlight Text Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(31, 45%, 24%, 1)"
+    default-dark: "hsla(34, 39%, 74%, 1)"
+  - id: italic-highlight-bg
+    type: variable-themed-color
+    title: Italic + Highlight Background Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(186, 64%, 46%, 0.2)"
+    default-dark: "hsla(186, 64%, 46%, 0.2)"
+  - id: strikethrough-highlight-color
+    type: variable-themed-color
+    title: Strikethrough + Highlight Text Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(34, 29%, 60%, 1)"
+    default-dark: "hsla(34, 24%, 40%, 1)"
+  - id: strikethrough-highlight-bg
+    type: variable-themed-color
+    title: Strikethrough + Highlight Background Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(44, 100%, 50%, 0.2)"
+    default-dark: "hsla(44, 100%, 50%, 0.2)"
+  - id: bold-italic-highlight-color
+    type: variable-themed-color
+    title: Bold + Italic + Highlight Text Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(31, 45%, 24%, 1)"
+    default-dark: "hsla(34, 39%, 74%, 1)"
+  - id: bold-italic-highlight-bg
+    type: variable-themed-color
+    title: Bold + Italic + Highlight Background Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(74, 69%, 44%, 0.2)"
+    default-dark: "hsla(74, 69%, 44%, 0.2)"
+  - id: nf_link
+    type: heading
+    level: 2
+    collapsed: true
+    title: Link
+  - id: link-underline-offset
+    type: variable-text
+    title: All Links Underline Offset
+    description: This changes how far the underline is from the base of the link's letters.
+    default: 2px
+  - id: link-decoration-thickness
+    type: variable-text
+    title: All Links Underline Thickness
+    default: 1.5px
+  - id: link-decoration-opacity
+    type: variable-text
+    title: Link Underline Opacity
+    description: Set from 0% (no underline visibility) to 100% (full underline color visibility). Underline color inherits the Link's color.
+    default: 22%
+  - id: no-decor-link
+    type: class-toggle
+    title: Remove Link Underline
+  - id: link-opacity-active
+    type: variable-number
+    title: Link Opacity when Pressed
+    default: 0.5
+  - id: nf_link
+    type: heading
+    level: 3
+    collapsed: true
+    title: Non-markdown Links
+    description: Links that appear outside of notes
+  - id: link-unresolved-color
+    type: variable-themed-color
+    title: Non-markdown Links Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(4, 59%, 64%, 1)"
+    default-dark: "hsla(4, 91%, 67%, 1)"
+  - id: link-unresolved-color
+    type: variable-themed-color
+    title: Non-markdown Links Color when Hovered
+    format: hsl
+    opacity: true
+    default-light: "hsla(4, 72%, 55%, 1)"
+    default-dark: "hsla(5, 94%, 73%, 1)"
+  - id: nf_link
+    type: heading
+    level: 3
+    collapsed: true
+    title: Unresolved Links
+  - id: link-unresolved-color
+    type: variable-themed-color
+    title: Unresolved Links Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(34, 29%, 60%, 1)"
+    default-dark: "hsla(34, 24%, 40%, 1)"
+  - id: link-unresolved-color
+    type: variable-themed-color
+    title: Unresolved Links Color when Hovered
+    format: hsl
+    opacity: true
+    default-light: "hsla(34, 37%, 70%, 1)"
+    default-dark: "hsla(35, 27%, 55%, 1)"
+  - id: link-unresolved-opacity
+    type: variable-number
+    title: Unresolved Link Opacity
+    description: Choose a number between 0 to 1.
+    default: 1
+  - id: nf_link
+    type: heading
+    level: 3
+    collapsed: true
+    title: Resolved Links
+  - id: link-color
+    type: variable-themed-color
+    title: Resolved Links Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(40, 79%, 47%, 1)"
+    default-dark: "hsla(42, 79%, 51%, 1)"
+  - id: link-color
+    type: variable-themed-color
+    title: Resolved Links Color when Hovered
+    format: hsl
+    opacity: true
+    default-light: "hsla(43, 83%, 57%, 1)"
+    default-dark: "hsla(43, 69%, 63%, 1)"
+  - id: nf_link
+    type: heading
+    level: 3
+    collapsed: true
+    title: External Links
+  - id: link-external-color
+    type: variable-themed-color
+    title: External Links Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(149, 50%, 39%, 1)"
+    default-dark: "hsla(154, 57%, 42%, 1)"
+  - id: link-external-color
+    type: variable-themed-color
+    title: External Links Color when Hovered
+    format: hsl
+    opacity: true
+    default-light: "hsla(148, 48%, 47%, 1)"
+    default-dark: "hsla(152, 51%, 54%, 1)"
+  - id: nf_blockquotes
+    type: heading
+    level: 2
+    collapsed: true
+    title: Blockquotes
+  - id: blockquote-border-thickness
+    type: variable-text
+    title: Blockquote Border Thickness
+    default: 2px
+  - id: blockquote-border-color
+    type: variable-themed-color
+    title: Blockquote Border Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(28, 22%, 18%, 1)"
+  - id: blockquote-background-color
+    type: variable-themed-color
+    title: Blockquote Background Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(36, 38%, 98%, 1)"
+    default-dark: "hsla(29, 16%, 12%, 1)"
+  - id: nf_list
+    type: heading
+    level: 2
+    collapsed: true
+    title: List
+  - id: indentation-guide-reading-indent
+    type: variable-number
+    format: em
+    title: Reading Mode – Indentation Line Guide Indent
+    description: Might require some customization if you change fonts. Unit is in em.
+    default: -0.85
+  - id: indentation-guide-editing-indent
+    type: variable-number
+    format: em
+    title: Live Preview Mode – Indentation Line Guide Indent
+    description: Might require some customization if you change fonts. Unit is in em.
+    default: 0.975
+  - id: indentation-guide-source-indent
+    type: variable-number
+    format: em
+    title: Source Mode – Indentation Line Guide Indent
+    description: Might require some customization if you change fonts. Unit is in em.
+    default: 0.25
+  - id: list-marker-color
+    type: variable-themed-color
+    title: List Marker Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(34, 29%, 60%, 1)"
+    default-dark: "hsla(34, 24%, 40%, 1)"
+  - id: list-marker-color-hover
+    type: variable-themed-color
+    title: List Marker Color when Hovered
+    format: hsl
+    opacity: true
+    default-light: "hsla(35, 28%, 40%, 1)"
+    default-dark: "hsla(34, 31%, 68%, 1)"
+  - id: list-marker-color
+    type: variable-themed-color
+    title: List Marker Color when Collapsed
+    format: hsl
+    opacity: true
+    default-light: "hsla(31, 23%, 50%, 1)"
+    default-dark: "hsla(35, 27%, 55%, 1)"
+  - id: nf-checkbox
+    type: heading
+    level: 2
+    collapsed: true
+    title: Checkbox
+  - id: checklist-bg
+    type: variable-themed-color
+    title: Unchecked Background Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(36, 38%, 98%, 1)"
+    default-dark: "hsla(30, 17%, 13%, 1)"
+  - id: checkbox-color
+    type: variable-themed-color
+    title: Checked Background Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(149, 50%, 39%, 1)"
+    default-dark: "hsla(154, 75%, 26%, 1)"
+  - id: checkbox-color-hover
+    type: variable-themed-color
+    title: Checked Background Color when Hovered
+    format: hsl
+    opacity: true
+    default-light: "hsla(148, 48%, 47%, 1)"
+    default-dark: "hsla(155, 78%, 29%, 1)"
+  - id: checkbox-marker-color
+    type: variable-themed-color
+    title: Checked Item's Check Icon Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(0, 0%, 100%, 1)"
+    default-dark: "hsla(0, 0%, 100%, 1)"
+  - id: checklist-done-color
+    type: variable-themed-color
+    title: Checked Text Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(34, 29%, 60%, 1)"
+    default-dark: "hsla(34, 24%, 40%, 1)"
+  - id: checklist-done-decoration
+    type: variable-text
+    title: Checked Text Decoration (causes Strikethrough)
+    description: Text decoration for checked items default at "line-through". If you would like to remove the strikethrough for checked items, put "none".
+    default: "line-through"
+  - id: checkbox-radius
+    type: variable-text
+    title: Checkbox Border Radius
+    description: Changes the roundness of the checkbox. You may use other units such as %, em, or rem. If you want circular checkboxes, put "100%". If you want squircle checkboxes, put "5px" or "6px". If you want square checkboxes, put "2px" or "0".
+    default: "4px"
+  - id: nf-checkbox-icons
+    type: heading
+    level: 2
+    collapsed: true
+    title: Checkbox Icons
+  - id: inprogress-chbx-color
+    type: variable-themed-color
+    title: In Progress [/] Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(34, 82%, 57%, 1)"
+    default-dark: "hsla(31, 85%, 59%, 1)"
+  - id: inprogress-chbx-color-hover
+    type: variable-themed-color
+    title: In Progress [/] Color when Hovered
+    format: hsl
+    opacity: true
+    default-light: "hsla(34, 82%, 64%, 1)"
+    default-dark: "hsla(32, 95%, 65%, 1)"
+  - id: resched-chbx-color
+    type: variable-themed-color
+    title: Reschedule [>] Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(178, 18%, 59%, 1)"
+    default-dark: "hsla(178, 19%, 55%, 1)"
+  - id: sched-chbx-color
+    type: variable-themed-color
+    title: Schedule or Date [<] Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(32, 10%, 68%, 1)"
+    default-dark: "hsla(32, 10%, 58%, 1)"
+  - id: important-chbx-color
+    type: variable-themed-color
+    title: Important [!] Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(17, 83%, 52%, 1)"
+    default-dark: "hsla(17, 83%, 47%)"
+  - id: important-chbx-icon-color
+    type: variable-themed-color
+    title: Important [!] Inner Icon Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(180, 0%, 100%, 1)"
+    default-dark: "hsla(180, 0%, 100%, 1)"
+  - id: important-chbx-radius
+    type: variable-text
+    title: Important [!] Border Radius
+    description: Changes the roundness of the checkbox. You may use other units such as px, em, or rem.
+    default: "100%"
+  - id: cancelled-chbx-color
+    type: variable-themed-color
+    title: Cancelled [-] Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(32, 10%, 68%, 1)"
+    default-dark: "hsla(32, 10%, 58%, 1)"
+  - id: cancelled-chbx-text-color
+    type: variable-themed-color
+    title: Cancelled [-] Text Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(34, 29%, 60%, 1)"
+    default-dark: "hsla(34, 24%, 40%, 1)"
+  - id: cancelled-chbx-text-decoration
+    type: variable-text
+    title: Cancelled [-] Text Decoration (causes Strikethrough)
+    description: Text decoration for items marked [-] default at "line-through". If you would like to remove the strikethrough, put "none".
+    default: "line-through"
+  - id: question-chbx-color
+    type: variable-themed-color
+    title: Question [?] Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(281, 33%, 54%, 1)"
+    default-dark: "hsla(281, 37%, 54%, 1)"
+  - id: question-chbx-icon-color
+    type: variable-themed-color
+    title: Question [?] Inner Icon Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(180, 0%, 100%, 1)"
+    default-dark: "hsla(180, 0%, 100%, 1)"
+  - id: star-chbx-color
+    type: variable-themed-color
+    title: Star [*] Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(40, 93%, 51%, 1)"
+    default-dark: "hsla(40, 95%, 46%, 1)"
+  - id: star-chbx-icon-color
+    type: variable-themed-color
+    title: Star [*] Inner Icon Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(180, 0%, 100%, 1)"
+    default-dark: "hsla(180, 0%, 100%, 1)"
+  - id: note-chbx-color
+    type: variable-themed-color
+    title: Note [n] Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(8, 51%, 53%, 1)"
+    default-dark: "hsla(8, 51%, 53%, 1)"
+  - id: location-chbx-color
+    type: variable-themed-color
+    title: Location [l] Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(0, 56%, 48%, 1)"
+    default-dark: "hsla(0, 56%, 48%, 1)"
+  - id: info-chbx-color
+    type: variable-themed-color
+    title: Info [i] Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(178, 29%, 45%, 1)"
+    default-dark: "hsla(178, 31%, 41%, 1)"
+  - id: info-chbx-icon-color
+    type: variable-themed-color
+    title: Info [i] Inner Icon Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(180, 0%, 100%, 1)"
+    default-dark: "hsla(180, 0%, 100%, 1)"
+  - id: amount-chbx-color
+    type: variable-themed-color
+    title: Amount [S] Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(152, 42%, 41%, 1)"
+    default-dark: "hsla(152, 46%, 38%, 1)"
+  - id: amount-chbx-icon-color
+    type: variable-themed-color
+    title: Amount [S] Inner Icon Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(180, 0%, 100%, 1)"
+    default-dark: "hsla(180, 0%, 100%, 1)"
+  - id: amount-chbx-radius
+    type: variable-text
+    title: Amount [S] Border Radius
+    description: Changes the roundness of the checkbox. You may use other units such as px, em, or rem.
+    default: "100%"
+  - id: quote-chbx-color
+    type: variable-themed-color
+    title: Quote ["] Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(206, 47%, 48%, 1)"
+    default-dark: "hsla(206, 47%, 48%, 1)"
+  - id: quote-chbx-icon-color
+    type: variable-themed-color
+    title: Quote ["] Inner Icon Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(180, 0%, 100%, 1)"
+    default-dark: "hsla(180, 0%, 100%, 1)"
+  - id: idea-chbx-color
+    type: variable-themed-color
+    title: Idea [I] Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(30, 72%, 62%, 1)"
+    default-dark: "hsla(30, 72%, 62%, 1)"
+  - id: pro-chbx-color
+    type: variable-themed-color
+    title: Pro [p] Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(149, 34%, 44%, 1)"
+    default-dark: "hsla(149, 36%, 47%, 1)"
+  - id: con-chbx-color
+    type: variable-themed-color
+    title: Con [c] Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(12, 62%, 45%, 1)"
+    default-dark: "hsla(12, 64%, 47%, 1)"
+  - id: bookmark-chbx-color
+    type: variable-themed-color
+    title: Bookmark [b] Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(21, 81%, 59%, 1)"
+    default-dark: "hsla(21, 81%, 54%, 1)"
+  - id: up-chbx-color
+    type: variable-themed-color
+    title: Up Trend Line [u] Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(146, 37%, 49%, 1)"
+    default-dark: "hsla(146, 38%, 51%, 1)"
+  - id: down-chbx-color
+    type: variable-themed-color
+    title: Down Trend Line [d] Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(4, 56%, 48%, 1)"
+    default-dark: "hsla(4, 56%, 54%, 1)"
+  - id: law-chbx-color
+    type: variable-themed-color
+    title: Rule or Law [r] Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(34, 34%, 52%, 1)"
+    default-dark: "hsla(34, 34%, 52%, 1)"
+  - id: language-chbx-color
+    type: variable-themed-color
+    title: Language or Translate [L] Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(7, 59%, 64%, 1)"
+    default-dark: "hsla(7, 63%, 62%, 1)"
+  - id: clock-chbx-color
+    type: variable-themed-color
+    title: Time or Clock [t] Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(210, 39%, 49%, 1)"
+    default-dark: "hsla(210, 39%, 52%, 1)"
+  - id: telephone-chbx-color
+    type: variable-themed-color
+    title: Telephone [T] Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(148, 47%, 47%, 1)"
+    default-dark: "hsla(148, 48%, 42%, 1)"
+  - id: nf_media
+    type: heading
+    level: 2
+    collapsed: true
+    title: Media
+  - id: embed-media-border-radius
+    type: variable-text
+    title: Media Border Radius
+    description: Set border radius size for media (images, audio, video)
+    default: 8px
+  - id: nf_note-embed
+    type: heading
+    level: 2
+    collapsed: true
+    title: Note Embed
+  - id: readme-content
+    type: info-text
+    markdown: true
+    description: 🎨 Visit the [Note Embed Presets](https://primary-theme.github.io/presets/note-embed) in the Full Guide and check if you have any preferred ready-to-go style presets there, or if you want some inspiration on styling your embeds.
+  - id: embed-max-height
+    type: variable-text
+    title: Note Embed Max Height
+    description: If you embed very long notes, you can change the max height so that each embed is scrollable. You can also set this by line-height using the unit rlh, or other CSS supported units. Recommended values are 20rlh and 40rlh.
+    default: 4000px
+  - id: embed-background
+    type: variable-themed-color
+    title: Note Embed Background Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(39, 39%, 94%, 1)"
+    default-dark: "hsla(31, 19%, 14%, 1)"
+  - id: nf_note-embed-title
+    type: heading
+    level: 3
+    collapsed: true
+    title: Note Embed Title
+  - id: embed-hide-title
+    type: class-toggle
+    title: Hide Note Embed Title
+    description: Hide the note's title when embedding notes.
+  - id: embed-title-font-size
+    type: variable-text
+    title: Note Embed Title Font Size
+    description: You can use any CSS supported units. By default takes in the editor's font size based in the Obsidian Settings.
+    default: 12px
+  - id: embed-title-font-weight
+    type: variable-number
+    title: Note Embed Title Font Weight
+    default: 500
+  - id: embed-title-text-transform
+    type: variable-text
+    title: Note Embed Title Text Transform
+    description: Based on CSS. If you want the note embed title to be in all uppercase, put uppercase. Other options include capitalize and lowercase.
+    default: none
+  - id: embed-title-letter-spacing
+    type: variable-text
+    title: Note Embed Title Letter Spacing
+    description: You can use numbers and CSS units.
+    default: normal
+  - id: embed-title-color
+    type: variable-themed-color
+    title: Note Embed Title Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(31, 23%, 50%, 1)"
+    default-dark: "hsla(34, 24%, 40%, 1)"
+  - id: embed-title-border-width
+    type: variable-text
+    title: Note Embed Title Bottom Border Width
+    description: If you'd like to remove the border, set this to 0px.
+    default: 1px
+  - id: embed-title-border-style
+    type: variable-text
+    title: Note Embed Title Bottom Border Style
+    description: Other options include dashed, dotted, and double.
+    default: solid
+  - id: embed-title-border-color
+    type: variable-themed-color
+    title: Note Embed Title Border Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(34, 24%, 40%, 1)"
+  - id: embed-title-margin-bottom
+    type: variable-text
+    title: Note Embed Title Bottom Margin Size
+    default: 8px
+  - id: nf_note-embed-border
+    type: heading
+    level: 3
+    collapsed: true
+    title: Note Embed Border
+  - id: embed-border-radius
+    type: variable-text
+    title: Note Embed Border Radius
+    description: You can also have different radiuses per side. Just write them in the CSS format of top left, top right, bottom right, bottom left. i.e. 2px, 8px, 12px, 0px.
+    default: 12px
+  - id: nf_note-embed-border
+    type: heading
+    level: 4
+    collapsed: true
+    title: Note Embed Top Border
+  - id: embed-border-top-width
+    type: variable-text
+    title: Note Embed Top Border Width
+    description: If you'd like to remove the border, set this to 0px.
+    default: 1px
+  - id: embed-border-top-style
+    type: variable-text
+    title: Note Embed Top Border Style
+    description: Other options include dashed, dotted, and double.
+    default: solid
+  - id: embed-border-top-color
+    type: variable-themed-color
+    title: Note Embed Top Border Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(34, 24%, 40%, 1)"
+  - id: nf_note-embed-border
+    type: heading
+    level: 4
+    collapsed: true
+    title: Note Embed Right Border
+  - id: embed-border-end-width
+    type: variable-text
+    title: Note Embed Right Border Width
+    description: If you'd like to remove the border, set this to 0px.
+    default: 1px
+  - id: embed-border-end-style
+    type: variable-text
+    title: Note Embed Right Border Style
+    description: Other options include dashed, dotted, and double.
+    default: solid
+  - id: embed-border-end-color
+    type: variable-themed-color
+    title: Note Embed Right Border Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(34, 24%, 40%, 1)"
+  - id: nf_note-embed-border
+    type: heading
+    level: 4
+    collapsed: true
+    title: Note Embed Bottom Border
+  - id: embed-border-bottom-width
+    type: variable-text
+    title: Note Embed Bottom Border Width
+    description: If you'd like to remove the border, set this to 0px.
+    default: 1px
+  - id: embed-border-bottom-style
+    type: variable-text
+    title: Note Embed Bottom Border Style
+    description: Other options include dashed, dotted, and double.
+    default: solid
+  - id: embed-border-bottom-color
+    type: variable-themed-color
+    title: Note Embed Bottom Border Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(34, 24%, 40%, 1)"
+  - id: nf_note-embed-border
+    type: heading
+    level: 4
+    collapsed: true
+    title: Note Embed Left Border
+  - id: embed-border-start-width
+    type: variable-text
+    title: Note Embed Left Border Width
+    description: If you'd like to remove the border, set this to 0px.
+    default: 1px
+  - id: embed-border-start-style
+    type: variable-text
+    title: Note Embed Left Border Style
+    description: Other options include dashed, dotted, and double.
+    default: solid
+  - id: embed-border-start-color
+    type: variable-themed-color
+    title: Note Embed Left Border Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(34, 24%, 40%, 1)"
+  - id: canvas
+    type: heading
+    level: 1
+    collapsed: true
+    title: Canvas
+  - id: canvas-dot-pattern
+    type: variable-themed-color
+    title: Canvas Dot Pattern Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(31, 27%, 24%, 1)"
+  - id: canvas-card-label-color
+    type: variable-themed-color
+    title: Canvas Card Label Color
+    format: hsl
+    opacity: true
+    default-light: "hsla(34, 29%, 60%, 1)"
+    default-dark: "hsla(34, 24%, 40%, 1)"
+  - id: canvas-color
+    type: variable-themed-color
+    title: Canvas Color 1
+    format: rgb-values
+    opacity: false
+    default-light: "rgb(182, 175, 166)"
+    default-dark: "rgb(182, 175, 166)"
+  - id: canvas-color-1
+    type: variable-themed-color
+    title: Canvas Color 2
+    format: rgb-values
+    opacity: false
+    default-light: "rgb(223, 90, 90)"
+    default-dark: "rgb(223, 90, 90)"
+  - id: canvas-color-2
+    type: variable-themed-color
+    title: Canvas Color 3
+    format: rgb-values
+    opacity: false
+    default-light: "rgb(231, 130, 63)"
+    default-dark: "rgb(231, 130, 63)"
+  - id: canvas-color-3
+    type: variable-themed-color
+    title: Canvas Color 4
+    format: rgb-values
+    opacity: false
+    default-light: "rgb(248, 197, 46)"
+    default-dark: "rgb(248, 197, 46)"
+  - id: canvas-color-4
+    type: variable-themed-color
+    title: Canvas Color 5
+    format: rgb-values
+    opacity: false
+    default-light: "rgb(87, 185, 132)"
+    default-dark: "rgb(87, 185, 132)"
+  - id: canvas-color-5
+    type: variable-themed-color
+    title: Canvas Color 6
+    format: rgb-values
+    opacity: false
+    default-light: "rgb(99, 164, 198)"
+    default-dark: "rgb(99, 164, 198)"
+  - id: canvas-color-6
+    type: variable-themed-color
+    title: Canvas Color 7
+    format: rgb-values
+    opacity: false
+    default-light: "rgb(135, 106, 193)"
+    default-dark: "rgb(135, 106, 193)"
+  - id: file-explorer
+    type: heading
+    level: 1
+    collapsed: true
+    title: File Explorer & Bookmarks
+  - id: readme-content
+    type: info-text
+    markdown: true
+    description: 🎨 Out of the box, the toggles below affect both file explorer and bookmark folders. If you'd like them to be different colors, head down over to the **Bookmarks** section, turn on `Custom Bookmarks Folders` and set your desired colors.
+  - id: alt-folder-icons
+    type: class-toggle
+    title: Toggle using Folders as Collapse Indicators
+    description: Use folders as collapse indicators instead of chevrons.
+  - id: colorful-folders_text
+    type: class-toggle
+    title: Toggle Colored Folder Text
+    description: Adds colors to the name text of the folder. When hovered, folder background is colored.
+  - id: colorful-folders_collapse-indicator
+    type: class-toggle
+    title: Toggle Colored Folder Collapse Indicators
+    description: Adds color to the collapse indicators of the folders.
+  - id: colorful-folders_background
+    type: class-toggle
+    title: Toggle Colored Folder Backgrounds
+    description: Adds background color to folders.
+  - id: colorful-folders_indentation-guide
+    type: class-toggle
+    title: Toggle Colored Folder Colored Indentation Guide
+    description: Colors folder's indentation guide based on parent folder's color.
+  - id: colorful-folders_inherit-color
+    type: class-toggle
+    title: Toggle to Inherit Parent Folder Colors
+    description: The color cycles through up to 12 colors for both top level folders and subfolders by default. If you would like subfolders to be colored based on their top level folder colors, toggle this on.
+  - id: readme-content
+    type: info-text
+    markdown: true
+    description: 🔄 Folder Colors are setup to cycle through up to 12 colors. At default, it cycles through only 6 colors that I've set up to repeat. Feel free to color them as you wish.
+  - id: readme-content
+    type: info-text
+    markdown: true
+    description: 🎨 The collapse indicator and indentation guide colors take in the color of the text color. If you don't want the hassle of changing these two other nuances, you can just change the text color. <br><br> Same goes for background color when hovered, you can focus on just changing the background color and leave the hovered color and it will adjust accordingly.
+  - id: file-explorer_folder
+    type: heading
+    level: 2
+    collapsed: true
+    title: Folder 1
+  - id: nav-folder-1-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 1 Text Color
+    default-light: "hsla(4, 56%, 48%, 1)"
+    default-dark: "hsla(4, 88%, 61%, 1)"
+  - id: nav-folder-1-collapse-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 1 Collapse Indicator Color
+    default-light: "hsla(4, 56%, 48%, 0.5)"
+    default-dark: "hsla(4, 88%, 61%, 0.5)"
+  - id: nav-folder-1-bg-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 1 Background Color
+    default-light: "hsla(350, 84%, 63%, 0.12)"
+    default-dark: "hsla(350, 84%, 63%, 0.12)"
+  - id: nav-folder-1-bg-color-hover
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 1 Background Color when Hovered
+    default-light: "hsla(350, 84%, 63%, 0.084)"
+    default-dark: "hsla(350, 84%, 63%, 0.084)"
+  - id: nav-folder-1-indent-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 1 Indentation Guide Color
+    default-light: "hsla(4, 56%, 48%, 0.25)"
+    default-dark: "hsla(4, 88%, 61%, 0.25)"
+  - id: file-explorer_folder
+    type: heading
+    level: 2
+    collapsed: true
+    title: Folder 2
+  - id: nav-folder-2-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 2 Text Color
+    default-light: "hsla(18, 69%, 50%, 1)"
+    default-dark: "hsla(24, 84%, 50%, 1)"
+  - id: nav-folder-2-collapse-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 2 Collapse Indicator Color
+    default-light: "hsla(18, 69%, 50%, 0.5)"
+    default-dark: "hsla(24, 84%, 50%, 0.5)"
+  - id: nav-folder-2-bg-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 2 Background Color
+    default-light: "hsla(27, 100%, 50%, 0.12)"
+    default-dark: "hsla(27, 100%, 50%, 0.12)"
+  - id: nav-folder-2-bg-color-hover
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 2 Background Color when Hovered
+    default-light: "hsla(27, 100%, 50%, 0.084)"
+    default-dark: "hsla(27, 100%, 50%, 0.084)"
+  - id: nav-folder-2-indent-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 2 Indentation Guide Color
+    default-light: "hsla(18, 69%, 50%, 0.25)"
+    default-dark: "hsla(24, 84%, 50%, 0.25)"
+  - id: file-explorer_folder
+    type: heading
+    level: 2
+    collapsed: true
+    title: Folder 3
+  - id: nav-folder-3-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 3 Text Color
+    default-light: "hsla(40, 98%, 36%, 1)"
+    default-dark: "hsla(42, 79%, 51%, 1)"
+  - id: nav-folder-3-collapse-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 3 Collapse Indicator Color
+    default-light: "hsla(40, 98%, 36%, 0.5)"
+    default-dark: "hsla(42, 79%, 51%, 0.5)"
+  - id: nav-folder-3-bg-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 3 Background Color
+    default-light: "hsla(44, 100%, 50%, 0.12)"
+    default-dark: "hsla(44, 100%, 50%, 0.12)"
+  - id: nav-folder-3-bg-color-hover
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 3 Background Color when Hovered
+    default-light: "hsla(44, 100%, 50%, 0.084)"
+    default-dark: "hsla(44, 100%, 50%, 0.084)"
+  - id: nav-folder-3-indent-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 3 Indentation Guide Color
+    default-light: "hsla(40, 98%, 36%, 0.25)"
+    default-dark: "hsla(42, 79%, 51%, 0.25)"
+  - id: file-explorer_folder
+    type: heading
+    level: 2
+    collapsed: true
+    title: Folder 4
+  - id: nav-folder-4-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 4 Text Color
+    default-light: "hsla(153, 65%, 29%, 1)"
+    default-dark: "hsla(154, 57%, 42%, 1)"
+  - id: nav-folder-4-collapse-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 4 Collapse Indicator Color
+    default-light: "hsla(153, 65%, 29%, 0.5)"
+    default-dark: "hsla(154, 57%, 42%, 0.5)"
+  - id: nav-folder-4-bg-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 4 Background Color
+    default-light: "hsla(74, 69%, 44%, 0.12)"
+    default-dark: "hsla(74, 69%, 44%, 0.12)"
+  - id: nav-folder-4-bg-color-hover
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 4 Background Color when Hovered
+    default-light: "hsla(74, 69%, 44%, 0.084)"
+    default-dark: "hsla(74, 69%, 44%, 0.084)"
+  - id: nav-folder-4-indent-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 4 Indentation Guide Color
+    default-light: "hsla(153, 65%, 29%, 0.25)"
+    default-dark: "hsla(154, 57%, 42%, 0.25)"
+  - id: file-explorer_folder
+    type: heading
+    level: 2
+    collapsed: true
+    title: Folder 5
+  - id: nav-folder-5-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 5 Text Color
+    default-light: "hsla(200, 64%, 37%, 1)"
+    default-dark: "hsla(194, 59%, 56%, 1)"
+  - id: nav-folder-5-collapse-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 5 Collapse Indicator Color
+    default-light: "hsla(200, 64%, 37%, 0.5)"
+    default-dark: "hsla(194, 59%, 56%, 0.5)"
+  - id: nav-folder-5-bg-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 5 Background Color
+    default-light: "hsla(186, 64%, 46%, 0.12)"
+    default-dark: "hsla(186, 64%, 46%, 0.12)"
+  - id: nav-folder-5-bg-color-hover
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 5 Background Color when Hovered
+    default-light: "hsla(186, 64%, 46%, 0.084)"
+    default-dark: "hsla(186, 64%, 46%, 0.084)"
+  - id: nav-folder-5-indent-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 5 Indentation Guide Color
+    default-light: "hsla(200, 64%, 37%, 0.25)"
+    default-dark: "hsla(194, 59%, 56%, 0.25)"
+  - id: file-explorer_folder
+    type: heading
+    level: 2
+    collapsed: true
+    title: Folder 6
+  - id: nav-folder-6-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 6 Text Color
+    default-light: "hsla(275, 37%, 43%, 1)"
+    default-dark: "hsla(242, 52%, 69%, 1)"
+  - id: nav-folder-6-collapse-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 6 Collapse Indicator Color
+    default-light: "hsla(275, 37%, 43%, 0.5)"
+    default-dark: "hsla(242, 52%, 69%, 0.5)"
+  - id: nav-folder-6-bg-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 6 Background Color
+    default-light: "hsla(236, 100%, 72%, 0.12)"
+    default-dark: "hsla(236, 100%, 72%, 0.12)"
+  - id: nav-folder-6-bg-color-hover
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 6 Background Color when Hovered
+    default-light: "hsla(236, 100%, 72%, 0.084)"
+    default-dark: "hsla(236, 100%, 72%, 0.084)"
+  - id: nav-folder-6-indent-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 6 Indentation Guide Color
+    default-light: "hsla(275, 37%, 43%, 0.25)"
+    default-dark: "hsla(242, 52%, 69%, 0.25)"
+  - id: file-explorer_folder
+    type: heading
+    level: 2
+    collapsed: true
+    title: Folder 7
+  - id: nav-folder-7-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 7 Text Color
+    default-light: "hsla(4, 56%, 48%, 1)"
+    default-dark: "hsla(4, 88%, 61%, 1)"
+  - id: nav-folder-7-collapse-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 7 Collapse Indicator Color
+    default-light: "hsla(4, 56%, 48%, 0.5)"
+    default-dark: "hsla(4, 88%, 61%, 0.5)"
+  - id: nav-folder-7-bg-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 7 Background Color
+    default-light: "hsla(350, 84%, 63%, 0.12)"
+    default-dark: "hsla(350, 84%, 63%, 0.12)"
+  - id: nav-folder-7-bg-color-hover
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 7 Background Color when Hovered
+    default-light: "hsla(350, 84%, 63%, 0.084)"
+    default-dark: "hsla(350, 84%, 63%, 0.084)"
+  - id: nav-folder-7-indent-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 7 Indentation Guide Color
+    default-light: "hsla(4, 56%, 48%, 0.25)"
+    default-dark: "hsla(4, 88%, 61%, 0.25)"
+  - id: file-explorer_folder
+    type: heading
+    level: 2
+    collapsed: true
+    title: Folder 8
+  - id: nav-folder-8-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 8 Text Color
+    default-light: "hsla(18, 69%, 50%, 1)"
+    default-dark: "hsla(24, 84%, 50%, 1)"
+  - id: nav-folder-8-collapse-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 8 Collapse Indicator Color
+    default-light: "hsla(18, 69%, 50%, 0.5)"
+    default-dark: "hsla(24, 84%, 50%, 0.5)"
+  - id: nav-folder-8-bg-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 8 Background Color
+    default-light: "hsla(27, 100%, 50%, 0.12)"
+    default-dark: "hsla(27, 100%, 50%, 0.12)"
+  - id: nav-folder-8-bg-color-hover
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 8 Background Color when Hovered
+    default-light: "hsla(27, 100%, 50%, 0.084)"
+    default-dark: "hsla(27, 100%, 50%, 0.084)"
+  - id: nav-folder-8-indent-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 8 Indentation Guide Color
+    default-light: "hsla(18, 69%, 50%, 0.25)"
+    default-dark: "hsla(24, 84%, 50%, 0.25)"
+  - id: file-explorer_folder
+    type: heading
+    level: 2
+    collapsed: true
+    title: Folder 9
+  - id: nav-folder-9-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 9 Text Color
+    default-light: "hsla(40, 98%, 36%, 1)"
+    default-dark: "hsla(42, 79%, 51%, 1)"
+  - id: nav-folder-9-collapse-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 9 Collapse Indicator Color
+    default-light: "hsla(40, 98%, 36%, 0.5)"
+    default-dark: "hsla(42, 79%, 51%, 0.5)"
+  - id: nav-folder-9-bg-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 9 Background Color
+    default-light: "hsla(44, 100%, 50%, 0.12)"
+    default-dark: "hsla(44, 100%, 50%, 0.12)"
+  - id: nav-folder-9-bg-color-hover
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 9 Background Color when Hovered
+    default-light: "hsla(44, 100%, 50%, 0.084)"
+    default-dark: "hsla(44, 100%, 50%, 0.084)"
+  - id: nav-folder-9-indent-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 9 Indentation Guide Color
+    default-light: "hsla(40, 98%, 36%, 0.25)"
+    default-dark: "hsla(42, 79%, 51%, 0.25)"
+  - id: file-explorer_folder
+    type: heading
+    level: 2
+    collapsed: true
+    title: Folder 10
+  - id: nav-folder-10-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 10 Text Color
+    default-light: "hsla(153, 65%, 29%, 1)"
+    default-dark: "hsla(154, 57%, 42%, 1)"
+  - id: nav-folder-10-collapse-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 10 Collapse Indicator Color
+    default-light: "hsla(153, 65%, 29%, 0.5)"
+    default-dark: "hsla(154, 57%, 42%, 0.5)"
+  - id: nav-folder-10-bg-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 10 Background Color
+    default-light: "hsla(74, 69%, 44%, 0.12)"
+    default-dark: "hsla(74, 69%, 44%, 0.12)"
+  - id: nav-folder-10-bg-color-hover
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 10 Background Color when Hovered
+    default-light: "hsla(74, 69%, 44%, 0.084)"
+    default-dark: "hsla(74, 69%, 44%, 0.084)"
+  - id: nav-folder-10-indent-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 10 Indentation Guide Color
+    default-light: "hsla(153, 65%, 29%, 0.25)"
+    default-dark: "hsla(154, 57%, 42%, 0.25)"
+  - id: file-explorer_folder
+    type: heading
+    level: 2
+    collapsed: true
+    title: Folder 11
+  - id: nav-folder-11-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 11 Text Color
+    default-light: "hsla(200, 64%, 37%, 1)"
+    default-dark: "hsla(194, 59%, 56%, 1)"
+  - id: nav-folder-11-collapse-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 11 Collapse Indicator Color
+    default-light: "hsla(200, 64%, 37%, 0.5)"
+    default-dark: "hsla(194, 59%, 56%, 0.5)"
+  - id: nav-folder-11-bg-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 11 Background Color
+    default-light: "hsla(186, 64%, 46%, 0.12)"
+    default-dark: "hsla(186, 64%, 46%, 0.12)"
+  - id: nav-folder-11-bg-color-hover
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 11 Background Color when Hovered
+    default-light: "hsla(186, 64%, 46%, 0.084)"
+    default-dark: "hsla(186, 64%, 46%, 0.084)"
+  - id: nav-folder-11-indent-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 11 Indentation Guide Color
+    default-light: "hsla(200, 64%, 37%, 0.25)"
+    default-dark: "hsla(194, 59%, 56%, 0.25)"
+  - id: file-explorer_folder
+    type: heading
+    level: 2
+    collapsed: true
+    title: Folder 12
+  - id: nav-folder-12-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 12 Text Color
+    default-light: "hsla(275, 37%, 43%, 1)"
+    default-dark: "hsla(242, 52%, 69%, 1)"
+  - id: nav-folder-12-collapse-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 12 Collapse Indicator Color
+    default-light: "hsla(275, 37%, 43%, 0.5)"
+    default-dark: "hsla(242, 52%, 69%, 0.5)"
+  - id: nav-folder-12-bg-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 12 Background Color
+    default-light: "hsla(236, 100%, 72%, 0.12)"
+    default-dark: "hsla(236, 100%, 72%, 0.12)"
+  - id: nav-folder-12-bg-color-hover
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 12 Background Color when Hovered
+    default-light: "hsla(236, 100%, 72%, 0.084)"
+    default-dark: "hsla(236, 100%, 72%, 0.084)"
+  - id: nav-folder-12-indent-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 12 Indentation Guide Color
+    default-light: "hsla(275, 37%, 43%, 0.25)"
+    default-dark: "hsla(242, 52%, 69%, 0.25)"
+  - id: bookmarks
+    type: heading
+    level: 2
+    collapsed: true
+    title: Bookmarks Folders
+  - id: colorful-folders_different-bookmark-colors
+    type: class-toggle
+    title: Custom Bookmarks Folders
+    description: By default, File Explorer and Bookmarks share the same colors when the colorful folders toggles are turned on. If you'd like a different color for the Bookmarks folders, toggle this on and set your preferred colors below. Just like File Explorer, customization goes up to 12 folders and cycles through them.
+  - id: bookmark_folder
+    type: heading
+    level: 3
+    collapsed: true
+    title: Folder 1
+  - id: bookmark-folder-1-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 1 Text Color
+    default-light: "hsla(4, 56%, 48%, 1)"
+    default-dark: "hsla(4, 88%, 61%, 1)"
+  - id: bookmark-folder-1-collapse-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 1 Collapse Indicator Color
+    default-light: "hsla(4, 56%, 48%, 0.5)"
+    default-dark: "hsla(4, 88%, 61%, 0.5)"
+  - id: bookmark-folder-1-bg-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 1 Background Color
+    default-light: "hsla(350, 84%, 63%, 0.12)"
+    default-dark: "hsla(350, 84%, 63%, 0.12)"
+  - id: bookmark-folder-1-bg-color-hover
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 1 Background Color when Hovered
+    default-light: "hsla(350, 84%, 63%, 0.084)"
+    default-dark: "hsla(350, 84%, 63%, 0.084)"
+  - id: bookmark-folder-1-indent-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 1 Indentation Guide Color
+    default-light: "hsla(4, 56%, 48%, 0.25)"
+    default-dark: "hsla(4, 88%, 61%, 0.25)"
+  - id: bookmark_folder
+    type: heading
+    level: 3
+    collapsed: true
+    title: Folder 2
+  - id: bookmark-folder-2-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 2 Text Color
+    default-light: "hsla(18, 69%, 50%, 1)"
+    default-dark: "hsla(24, 84%, 50%, 1)"
+  - id: bookmark-folder-2-collapse-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 2 Collapse Indicator Color
+    default-light: "hsla(18, 69%, 50%, 0.5)"
+    default-dark: "hsla(24, 84%, 50%, 0.5)"
+  - id: bookmark-folder-2-bg-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 2 Background Color
+    default-light: "hsla(27, 100%, 50%, 0.12)"
+    default-dark: "hsla(27, 100%, 50%, 0.12)"
+  - id: bookmark-folder-2-bg-color-hover
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 2 Background Color when Hovered
+    default-light: "hsla(27, 100%, 50%, 0.084)"
+    default-dark: "hsla(27, 100%, 50%, 0.084)"
+  - id: bookmark-folder-2-indent-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 2 Indentation Guide Color
+    default-light: "hsla(18, 69%, 50%, 0.25)"
+    default-dark: "hsla(24, 84%, 50%, 0.25)"
+  - id: bookmark_folder
+    type: heading
+    level: 3
+    collapsed: true
+    title: Folder 3
+  - id: bookmark-folder-3-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 3 Text Color
+    default-light: "hsla(40, 98%, 36%, 1)"
+    default-dark: "hsla(42, 79%, 51%, 1)"
+  - id: bookmark-folder-3-collapse-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 3 Collapse Indicator Color
+    default-light: "hsla(40, 98%, 36%, 0.5)"
+    default-dark: "hsla(42, 79%, 51%, 0.5)"
+  - id: bookmark-folder-3-bg-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 3 Background Color
+    default-light: "hsla(44, 100%, 50%, 0.12)"
+    default-dark: "hsla(44, 100%, 50%, 0.12)"
+  - id: bookmark-folder-3-bg-color-hover
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 3 Background Color when Hovered
+    default-light: "hsla(44, 100%, 50%, 0.084)"
+    default-dark: "hsla(44, 100%, 50%, 0.084)"
+  - id: bookmark-folder-3-indent-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 3 Indentation Guide Color
+    default-light: "hsla(40, 98%, 36%, 0.25)"
+    default-dark: "hsla(42, 79%, 51%, 0.25)"
+  - id: bookmark_folder
+    type: heading
+    level: 3
+    collapsed: true
+    title: Folder 4
+  - id: bookmark-folder-4-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 4 Text Color
+    default-light: "hsla(153, 65%, 29%, 1)"
+    default-dark: "hsla(154, 57%, 42%, 1)"
+  - id: bookmark-folder-4-collapse-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 4 Collapse Indicator Color
+    default-light: "hsla(153, 65%, 29%, 0.5)"
+    default-dark: "hsla(154, 57%, 42%, 0.5)"
+  - id: bookmark-folder-4-bg-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 4 Background Color
+    default-light: "hsla(74, 69%, 44%, 0.12)"
+    default-dark: "hsla(74, 69%, 44%, 0.12)"
+  - id: bookmark-folder-4-bg-color-hover
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 4 Background Color when Hovered
+    default-light: "hsla(74, 69%, 44%, 0.084)"
+    default-dark: "hsla(74, 69%, 44%, 0.084)"
+  - id: bookmark-folder-4-indent-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 4 Indentation Guide Color
+    default-light: "hsla(153, 65%, 29%, 0.25)"
+    default-dark: "hsla(154, 57%, 42%, 0.25)"
+  - id: bookmark_folder
+    type: heading
+    level: 3
+    collapsed: true
+    title: Folder 5
+  - id: bookmark-folder-5-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 5 Text Color
+    default-light: "hsla(200, 64%, 37%, 1)"
+    default-dark: "hsla(194, 59%, 56%, 1)"
+  - id: bookmark-folder-5-collapse-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 5 Collapse Indicator Color
+    default-light: "hsla(200, 64%, 37%, 0.5)"
+    default-dark: "hsla(194, 59%, 56%, 0.5)"
+  - id: bookmark-folder-5-bg-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 5 Background Color
+    default-light: "hsla(186, 64%, 46%, 0.12)"
+    default-dark: "hsla(186, 64%, 46%, 0.12)"
+  - id: bookmark-folder-5-bg-color-hover
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 5 Background Color when Hovered
+    default-light: "hsla(186, 64%, 46%, 0.084)"
+    default-dark: "hsla(186, 64%, 46%, 0.084)"
+  - id: bookmark-folder-5-indent-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 5 Indentation Guide Color
+    default-light: "hsla(200, 64%, 37%, 0.25)"
+    default-dark: "hsla(194, 59%, 56%, 0.25)"
+  - id: bookmark_folder
+    type: heading
+    level: 3
+    collapsed: true
+    title: Folder 6
+  - id: bookmark-folder-6-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 6 Text Color
+    default-light: "hsla(275, 37%, 43%, 1)"
+    default-dark: "hsla(242, 52%, 69%, 1)"
+  - id: bookmark-folder-6-collapse-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 6 Collapse Indicator Color
+    default-light: "hsla(275, 37%, 43%, 0.5)"
+    default-dark: "hsla(242, 52%, 69%, 0.5)"
+  - id: bookmark-folder-6-bg-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 6 Background Color
+    default-light: "hsla(236, 100%, 72%, 0.12)"
+    default-dark: "hsla(236, 100%, 72%, 0.12)"
+  - id: bookmark-folder-6-bg-color-hover
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 6 Background Color when Hovered
+    default-light: "hsla(236, 100%, 72%, 0.084)"
+    default-dark: "hsla(236, 100%, 72%, 0.084)"
+  - id: bookmark-folder-6-indent-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 6 Indentation Guide Color
+    default-light: "hsla(275, 37%, 43%, 0.25)"
+    default-dark: "hsla(242, 52%, 69%, 0.25)"
+  - id: bookmark_folder
+    type: heading
+    level: 3
+    collapsed: true
+    title: Folder 7
+  - id: bookmark-folder-7-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 7 Text Color
+    default-light: "hsla(4, 56%, 48%, 1)"
+    default-dark: "hsla(4, 88%, 61%, 1)"
+  - id: bookmark-folder-7-collapse-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 7 Collapse Indicator Color
+    default-light: "hsla(4, 56%, 48%, 0.5)"
+    default-dark: "hsla(4, 88%, 61%, 0.5)"
+  - id: bookmark-folder-7-bg-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 7 Background Color
+    default-light: "hsla(350, 84%, 63%, 0.12)"
+    default-dark: "hsla(350, 84%, 63%, 0.12)"
+  - id: bookmark-folder-7-bg-color-hover
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 7 Background Color when Hovered
+    default-light: "hsla(350, 84%, 63%, 0.084)"
+    default-dark: "hsla(350, 84%, 63%, 0.084)"
+  - id: bookmark-folder-7-indent-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 7 Indentation Guide Color
+    default-light: "hsla(4, 56%, 48%, 0.25)"
+    default-dark: "hsla(4, 88%, 61%, 0.25)"
+  - id: bookmark_folder
+    type: heading
+    level: 3
+    collapsed: true
+    title: Folder 8
+  - id: bookmark-folder-8-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 8 Text Color
+    default-light: "hsla(18, 69%, 50%, 1)"
+    default-dark: "hsla(24, 84%, 50%, 1)"
+  - id: bookmark-folder-8-collapse-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 8 Collapse Indicator Color
+    default-light: "hsla(18, 69%, 50%, 0.5)"
+    default-dark: "hsla(24, 84%, 50%, 0.5)"
+  - id: bookmark-folder-8-bg-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 8 Background Color
+    default-light: "hsla(27, 100%, 50%, 0.12)"
+    default-dark: "hsla(27, 100%, 50%, 0.12)"
+  - id: bookmark-folder-8-bg-color-hover
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 8 Background Color when Hovered
+    default-light: "hsla(27, 100%, 50%, 0.084)"
+    default-dark: "hsla(27, 100%, 50%, 0.084)"
+  - id: bookmark-folder-8-indent-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 8 Indentation Guide Color
+    default-light: "hsla(18, 69%, 50%, 0.25)"
+    default-dark: "hsla(24, 84%, 50%, 0.25)"
+  - id: bookmark_folder
+    type: heading
+    level: 3
+    collapsed: true
+    title: Folder 9
+  - id: bookmark-folder-9-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 9 Text Color
+    default-light: "hsla(40, 98%, 36%, 1)"
+    default-dark: "hsla(42, 79%, 51%, 1)"
+  - id: bookmark-folder-9-collapse-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 9 Collapse Indicator Color
+    default-light: "hsla(40, 98%, 36%, 0.5)"
+    default-dark: "hsla(42, 79%, 51%, 0.5)"
+  - id: bookmark-folder-9-bg-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 9 Background Color
+    default-light: "hsla(44, 100%, 50%, 0.12)"
+    default-dark: "hsla(44, 100%, 50%, 0.12)"
+  - id: bookmark-folder-9-bg-color-hover
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 9 Background Color when Hovered
+    default-light: "hsla(44, 100%, 50%, 0.084)"
+    default-dark: "hsla(44, 100%, 50%, 0.084)"
+  - id: bookmark-folder-9-indent-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 9 Indentation Guide Color
+    default-light: "hsla(40, 98%, 36%, 0.25)"
+    default-dark: "hsla(42, 79%, 51%, 0.25)"
+  - id: bookmark_folder
+    type: heading
+    level: 3
+    collapsed: true
+    title: Folder 10
+  - id: bookmark-folder-10-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 10 Text Color
+    default-light: "hsla(153, 65%, 29%, 1)"
+    default-dark: "hsla(154, 57%, 42%, 1)"
+  - id: bookmark-folder-10-collapse-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 10 Collapse Indicator Color
+    default-light: "hsla(153, 65%, 29%, 0.5)"
+    default-dark: "hsla(154, 57%, 42%, 0.5)"
+  - id: bookmark-folder-10-bg-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 10 Background Color
+    default-light: "hsla(74, 69%, 44%, 0.12)"
+    default-dark: "hsla(74, 69%, 44%, 0.12)"
+  - id: bookmark-folder-10-bg-color-hover
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 10 Background Color when Hovered
+    default-light: "hsla(74, 69%, 44%, 0.084)"
+    default-dark: "hsla(74, 69%, 44%, 0.084)"
+  - id: bookmark-folder-10-indent-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 10 Indentation Guide Color
+    default-light: "hsla(153, 65%, 29%, 0.25)"
+    default-dark: "hsla(154, 57%, 42%, 0.25)"
+  - id: bookmark_folder
+    type: heading
+    level: 3
+    collapsed: true
+    title: Folder 11
+  - id: bookmark-folder-11-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 11 Text Color
+    default-light: "hsla(200, 64%, 37%, 1)"
+    default-dark: "hsla(194, 59%, 56%, 1)"
+  - id: bookmark-folder-11-collapse-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 11 Collapse Indicator Color
+    default-light: "hsla(200, 64%, 37%, 0.5)"
+    default-dark: "hsla(194, 59%, 56%, 0.5)"
+  - id: bookmark-folder-11-bg-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 11 Background Color
+    default-light: "hsla(186, 64%, 46%, 0.12)"
+    default-dark: "hsla(186, 64%, 46%, 0.12)"
+  - id: bookmark-folder-11-bg-color-hover
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 11 Background Color when Hovered
+    default-light: "hsla(186, 64%, 46%, 0.084)"
+    default-dark: "hsla(186, 64%, 46%, 0.084)"
+  - id: bookmark-folder-11-indent-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 11 Indentation Guide Color
+    default-light: "hsla(200, 64%, 37%, 0.25)"
+    default-dark: "hsla(194, 59%, 56%, 0.25)"
+  - id: bookmark_folder
+    type: heading
+    level: 3
+    collapsed: true
+    title: Folder 12
+  - id: bookmark-folder-12-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 12 Text Color
+    default-light: "hsla(275, 37%, 43%, 1)"
+    default-dark: "hsla(242, 52%, 69%, 1)"
+  - id: bookmark-folder-12-collapse-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 12 Collapse Indicator Color
+    default-light: "hsla(275, 37%, 43%, 0.5)"
+    default-dark: "hsla(242, 52%, 69%, 0.5)"
+  - id: bookmark-folder-12-bg-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 12 Background Color
+    default-light: "hsla(236, 100%, 72%, 0.12)"
+    default-dark: "hsla(236, 100%, 72%, 0.12)"
+  - id: bookmark-folder-12-bg-color-hover
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 12 Background Color when Hovered
+    default-light: "hsla(236, 100%, 72%, 0.084)"
+    default-dark: "hsla(236, 100%, 72%, 0.084)"
+  - id: bookmark-folder-12-indent-color
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Folder 12 Indentation Guide Color
+    default-light: "hsla(275, 37%, 43%, 0.25)"
+    default-dark: "hsla(242, 52%, 69%, 0.25)"
+  - id: graph
+    type: heading
+    level: 1
+    collapsed: true
+    title: Graph
+  - id: graph-node
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Resolved Note Node Color
+    description: Color of existing notes
+    default-light: "hsla(202, 66%, 48%, 1)"
+    default-dark: "hsla(197, 48%, 49%, 1)"
+  - id: graph-node-unresolved
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Unresolved Note Node Color
+    description: Color of notes that don't exist (unresolved backlinks)
+    default-light: "hsla(43, 83%, 57%, 1)"
+    default-dark: "hsla(42, 79%, 51%, 1)"
+  - id: graph-node-unresolved-opacity
+    type: variable-number
+    title: Unresolved Note Node Opacity
+    description: Opacity of nodes that don't exist (unresolved backlinks). Use a number that is less than or equal to 1, but more than or equal to 0.
+    default: 1
+  - id: graph-node-tag
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Tag Node Color
+    default-light: "hsla(4, 72%, 55%, 1)"
+    default-dark: "hsla(4, 88%, 61%, 1)"
+  - id: graph-node-attachment
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Attachment Node Color
+    default-light: "hsla(148, 30%, 65%, 1)"
+    default-dark: "hsla(155, 78%, 29%, 1)"
+  - id: graph-node-focused
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Active File Node Color
+    default-light: "hsla(31, 45%, 24%, 1)"
+    default-dark: "hsla(34, 39%, 74%, 1)"
+  - id: graph-node-highlight-fill
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Hovered Node Color
+    default-light: "hsla(31, 23%, 50%, 1)"
+    default-dark: "hsla(34, 31%, 68%, 1)"
+  - id: graph-node-highlight-line
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Hovered Node Line Color
+    default-light: "hsla(34, 37%, 70%, 1)"
+    default-dark: "hsla(33, 27%, 30%, 1)"
+  - id: graph-text
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Text Color
+    default-light: "hsla(34, 29%, 60%, 1)"
+    default-dark: "hsla(28, 22%, 18%, 1)"
+  - id: graph-line
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Line Color
+    default-light: "hsla(37, 38%, 83%, 1)"
+    default-dark: "hsla(37, 38%, 83%, 1)"
+  - id: graph-arrow
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    title: Arrow Color
+    default-light: "hsla(31, 23%, 50%, 1)"
+    default-dark: "hsla(34, 24%, 40%, 1)"
+  - id: advanced
+    type: heading
+    level: 1
+    collapsed: true
+    title: Advanced
+  - id: readme-content
+    type: info-text
+    markdown: true
+    description: 🚧 Coming soon!
+  - id: readme-support
+    type: heading
+    level: 1
+    collapsed: true
+    title: Support Primary's Development
+  - id: readme-content
+    type: info-text
+    markdown: true
+    title: 💗 Make a Donation on Ko-fi
+    description: Support development by subscribing monthly or making a one-time donation at [Primary's Ko-fi Page](https://ko-fi.com/ceciliamay).
+  - id: readme-content
+    type: info-text
+    markdown: true
+    title: ⭐ Star the Theme on Github
+    description: Visit [Primary's Github Page](https://git.new/primary/obsidian) and consider starring the theme to show your appreciation!
+  - id: readme-content
+    type: info-text
+    markdown: true
+    title: 🐛 Submit an Issue or Feature Request!
+    description: Visit [Primary's Github Issue Page](https://git.new/primary/obsidian) to submit an issue or feature request. <br> No Github account? Send me a message through [Twitter](https://x.com/ceciliamay_) or directly via [Email](mailto:contact.ceciliamay@gmail.com)

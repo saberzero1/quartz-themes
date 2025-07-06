@@ -1,0 +1,318 @@
+name: Jotter
+id: jotter
+settings:
+  - id: interface
+    title: Interface
+    type: heading
+    level: 2
+    collapsed: true
+  - id: wrap-titles
+    title: Wrap titles
+    title.fr: Explorateur de fichiers
+    description: Show the full name of files in the explorer (no ellipsis)
+    description.fr: Montrer les noms complets des fichiers dans l'explorateur (pas d'ellipses)
+    type: class-toggle
+    default: false
+  - id: border_style
+    title: Border style
+    title.fr: Bordures
+    type: class-select
+    allowEmpty: false
+    default: border-visible
+    options:
+      - label: Invisible
+        value: border-invisible
+      - label: Visible
+        value: border-visible
+  - id: colorful-tooltips
+    title: Colorful tooltips
+    title.fr: Infobulles colorées
+    description: When enabled, tooltips will have the same background color as your accent color
+    description.fr: Activer pour que les infobulles soient de la même couleur que la couleur d'accentuation
+    type: class-toggle
+    default: true
+  - id: color-scheme
+    title: Additional color themes
+    title.fr: Palettes de couleurs
+    type: class-select
+    allowEmpty: false
+    default: ct-jotter
+    options:
+      - label: Jotter
+        value: ct-jotter
+      - label: Reporter
+        value: ct-reporter
+      - label: Explorer
+        value: ct-explorer
+      - label: Keeper
+        value: ct-keeper
+      - label: Undercover
+        value: ct-undercover
+      - label: Obsidian
+        value: ct-obsidian
+  - id: accent-colors
+    title: Accent Colors
+    title.fr: Couleurs d'accentuation
+    type: heading
+    level: 2
+    collapsed: true
+  - id: predefined-accent-color
+    title: Enable predefined accent colors
+    title.fr: Activer les couleurs d'accentuations prédéfinies
+    description: Enable to pick your accent color from the following list (when disabled, you'll be able to pick your accent color from the Appearance tab, as usual)
+    description.fr: Activer pour pouvoir choisir sa couleur d'accentuation depuis la liste ci-dessous (quand désactivé, vous pourrez choisir votre couleur dans la section Apparence, comme d'habitude)
+    type: class-toggle
+    default: true
+  - id: predefined-accent-colors
+    title: Accent colors
+    title.fr: Couleurs prédéfinies
+    description: Handpicked accent colors you can choose from
+    description.fr: Une liste de couleurs que vous pouvez utiliser pour vos accentuations
+    type: class-select
+    allowEmpty: false
+    default: accent-ultramarine
+    options:
+      - label: Rust
+        value: accent-rust
+      - label: Vermilion
+        value: accent-vermilion
+      - label: Pumpkin
+        value: accent-pumpkin
+      - label: Mustard
+        value: accent-mustard
+      - label: Jade
+        value: accent-jade
+      - label: Forest
+        value: accent-forest
+      - label: Turquoise
+        value: accent-turquoise
+      - label: Ultramarine
+        value: accent-ultramarine
+      - label: Denim
+        value: accent-denim
+      - label: Mauve
+        value: accent-mauve
+      - label: Wine
+        value: accent-wine
+      - label: Bubblegum
+        value: accent-bubblegum
+      - label: Slate
+        value: accent-slate
+  - id: editor
+    title: Editor
+    title.fr: Editeur
+    type: heading
+    level: 2
+    collapsed: true
+  - id: active-line-highlight
+    title: Active line highlight
+    title.fr: Surligner la ligne active
+    type: class-toggle
+    default: false
+  - id: hide-note-title
+    title: Hide note title
+    title.fr: Cacher le titre du document dans l'éditeur
+    type: class-toggle
+    default: false
+  - id: heading
+    title: Headings
+    title.fr: Titres
+    type: heading
+    level: 2
+    collapsed: true
+  - id: styling-headings
+    title: Styling
+    title.fr: Style
+    type: heading
+    level: 3
+    collapsed: true
+  - title: H2 underline
+    title.fr: Soulignement des H2
+    id: h2-underline
+    description: Toggle H2 underline
+    description.fr: Activer ou désactiver le soulignement
+    type: class-toggle
+    default: false
+  - title: H3 italics
+    title.fr: Italique des H3
+    id: h3-italics
+    description: Toggle H3 italics
+    description.fr: Activer ou désactiver l'italique
+    type: class-toggle
+    default: true
+  - title: H5 uppercase
+    title.fr: Majuscules des H5
+    id: h5-uppercase
+    description: Toggle H5 uppercase
+    description.fr: Activer ou désactiver les majuscules
+    type: class-toggle
+    default: true
+  - title: H6 uppercase
+    title.fr: Majuscules des H6
+    id: h6-uppercase
+    description: Toggle H6 uppercase
+    description.fr: Activer ou désactiver les majuscules
+    type: class-toggle
+    default: true
+  - id: colors-headings
+    title: Colors
+    title.fr: Couleurs
+    type: heading
+    level: 3
+    collapsed: true
+  - title: H1 color
+    title.fr: Couleur H1
+    id: h1-color
+    type: variable-color
+    format: hex
+    default: "#"
+  - title: H2 color
+    title.fr: Couleur H2
+    id: h2-color
+    type: variable-color
+    format: hex
+    default: "#"
+  - title: H3 color
+    title.fr: Couleur H3
+    id: h3-color
+    type: variable-color
+    format: hex
+    default: "#"
+  - title: H4 color
+    title.fr: Couleur H4
+    id: h4-color
+    type: variable-color
+    format: hex
+    default: "#"
+  - title: H5 color
+    title.fr: Couleur H5
+    id: h5-color
+    type: variable-color
+    format: hex
+    default: "#"
+  - title: H6 color
+    title.fr: Couleur H6
+    id: h6-color
+    type: variable-color
+    format: hex
+    default: "#"
+  - id: sizes-headings
+    title: Size
+    title.fr: Taille
+    type: heading
+    level: 3
+    collapsed: true
+  - title: H1 size
+    title.fr: Taille H1
+    id: h1-size
+    type: variable-number
+    default: 1.3
+    format: em
+  - title: H2 size
+    title.fr: Taille H2
+    id: h2-size
+    type: variable-number
+    default: 1.2
+    format: em
+  - title: H3 size
+    title.fr: Taille H3
+    id: h3-size
+    type: variable-number
+    default: 1.1
+    format: em
+  - title: H4 size
+    title.fr: Taille H4
+    id: h4-size
+    type: variable-number
+    default: 1
+    format: em
+  - title: H5 size
+    title.fr: Taille H5
+    id: h5-size
+    type: variable-number
+    default: .85
+    format: em
+  - title: H6 size
+    title.fr: Taille H6
+    id: h6-size
+    type: variable-number
+    default: .75
+    format: em
+  - id: typography
+    title: Typography
+    title.fr: Typographie
+    type: heading
+    level: 2
+    collapsed: true
+  - id: italic-text-typography
+    title: Italic text
+    title.fr: Texte en italique
+    type: heading
+    level: 3
+    collapsed: true
+  - id: em-color
+    title: Italics color
+    title.fr: Couleur des italiques
+    type: variable-color
+    format: hex
+    default: "#"
+  - id: em-underline
+    title: Italics underline
+    title.fr: Soulignement des italiques
+    description: Toggle italics underline
+    description.fr: Activer ou désactiver le soulignement des textes en italiques
+    type: class-toggle
+    default: false
+  - id: italic-underline-color
+    title: Italics underline color
+    title.fr: Couleur du soulignement
+    description: Change italics underline color
+    description.fr: Changer la couleur du soulignement
+    type: variable-color
+    format: hex
+    default: "var(--yellow)"
+  - id: bold-text-typography
+    title: Bold text
+    title.fr: Texte en gras
+    type: heading
+    level: 3
+    collapsed: true
+  - id: strong-color
+    title: Bold font color
+    title.fr: Couleur texte gras
+    type: variable-color
+    format: hex
+    default: "#"
+  - id: bold-underline
+    title: Bold underline
+    title.fr: Soulignement texte gras
+    description: Toggle bold underline
+    description.fr: Activer ou désactiver le soulignement des texte en gras
+    type: class-toggle
+    default: true
+  - id: bold-underline-color
+    title: Bold underline color
+    title.fr: Couleur du soulignement
+    description: Change bold underline color (dy default, it is set to be the same as your accent color)
+    description.fr: Changer la couleur du soulignement (par défaut, la couleur sera la même que celle de la couleur d'accentuation)
+    type: variable-color
+    format: hex
+    default: "var(--text-accent)"
+  - id: custom-links
+    title: Hyperlinks
+    title.fr: Hyperliens
+    type: heading
+    level: 3
+    collapsed: true
+  - title: Internal links
+    title.fr: Liens internes
+    id: link-color
+    type: variable-color
+    format: hex
+    default: "var(--text-accent)"
+  - title: External links
+    title.fr: Liens externes
+    id: link-external-color
+    type: variable-color
+    format: hex
+    default: "var(--text-accent)"

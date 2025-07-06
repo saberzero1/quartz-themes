@@ -37,7 +37,8 @@
   "devDependencies": {
     "css": "^3.0.0",
     "prettier": "^3.5.3",
-    "sass": "^1.79.3"
+    "sass": "^1.79.3",
+    "typescript": "^5.8.3"
   },
   "dependencies": {
     "@csstools/postcss-color-mix-function": "^3.0.10",
@@ -49,6 +50,7 @@
     "postcss-color-converter": "^1.2.1",
     "postcss-custom-properties": "^14.0.6",
     "postcss-prune-var": "^1.1.2",
-    "postcss-scss": "^4.0.9"
+    "postcss-scss": "^4.0.9",
+    "ts-node": "^10.9.2"
   }
 }

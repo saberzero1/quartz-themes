@@ -1,0 +1,148 @@
+name: Notation 2
+id: notation-2-theme
+settings:
+  - id: notation-colors
+    title: Use Notation Colors
+    description: By default, this theme tries to stick to Notion's color palette as strictly as possible. Toggle this setting to use the softer color scheme used in deathau's original Notation.
+    type: class-toggle
+    addCommand: true
+    default: true
+  - id: workspace-settings
+    title: Workspace
+    type: heading
+    level: 2
+    collapsed: true
+  - id: hide-new-folder
+    title: Hide 'New Folder' Button
+    type: class-toggle
+    default: false
+  - id: hide-other-icons
+    title: Hide other Nav Buttons in File Explorer
+    type: class-toggle
+    default: false
+    description: Hide the 'Sort' and 'Collapse All' buttons in the file explorer.
+  - id: notation-titlebar
+    title: Notation Titlebar
+    description: Show the nifty floating titlebar in deathau's original Notation theme.
+    type: class-toggle
+    default: true
+  - id: headings-heading
+    title: Heading Colors
+    type: heading
+    collapsed: true
+    level: 2
+  - id: heading-colors-bg
+    title: Background Colors
+    description: Add some flair to your files by giving headings colorful backgrounds.
+    type: class-select
+    allowEmpty: false
+    default: headings-default
+    options:
+      - label: Default
+        value: headings-default
+      - label: Red
+        value: headings-red
+      - label: Orange
+        value: headings-orange
+      - label: Yellow
+        value: headings-yellow
+      - label: Green
+        value: headings-green
+      - label: Blue
+        value: headings-blue
+      - label: Purple
+        value: headings-purple
+      - label: Pink
+        value: headings-pink
+      - label: Brown
+        value: headings-brown
+      - label: Grey
+        value: headings-gray
+      - label: Rainbow
+        value: headings-rainbow
+  - id: heading-colors
+    title: Text Colors
+    description: Choose the text color for headings.
+    type: class-select
+    allowEmpty: false
+    default: headings-default-text
+    options:
+      - label: Default
+        value: headings-default-text
+      - label: Red
+        value: headings-red-text
+      - label: Orange
+        value: headings-orange-text
+      - label: Yellow
+        value: headings-yellow-text
+      - label: Green
+        value: headings-green-text
+      - label: Blue
+        value: headings-blue-text
+      - label: Purple
+        value: headings-purple-text
+      - label: Pink
+        value: headings-pink-text
+      - label: Brown
+        value: headings-brown-text
+      - label: Grey
+        value: headings-gray-text
+      - label: Rainbow
+        value: headings-rainbow-text
+  - id: fonts-heading
+    title: Default Font
+    type: heading
+    level: 2
+    collapsed: true
+  - id: font-select
+    title: Font Family
+    descripton: This is the font that will be used by default throughout the theme. You can still override this per-note using the `sans`, `serif`, and `mono` css classes.
+    allowEmpty: false
+    type: class-select
+    default: default-sans
+    options:
+      - label: Sans
+        value: default-sans
+      - label: Serif
+        value: default-serif
+      - label: Mono
+        value: default-mono
+  - id: paragraph-heading
+    title: Paragraph Spacing
+    type: heading
+    level: 2
+    collapsed: true
+  - id: custom-line-height
+    title: Line Height
+    type: variable-text
+    default: 1.5em
+  - id: wys
+    title: WYSIWYG Effect
+    description: Treats any newline like a paragraph in reading mode; a few tweaks to heading margins.
+    type: class-toggle
+    default: false
+  - id: banners-heading
+    title: Note Cover Images
+    type: heading
+    level: 2
+    collapsed: true
+  - id: banner-type-select
+    title: Banner Style
+    type: class-select
+    allowEmpty: false
+    default: banner-default
+    options:
+      - label: Default
+        value: banner-default
+      - label: Gradient
+        value: banner-gradient
+      - label: Neon
+        value: banner-glow
+  - id: banner-size
+    title: Banner Height
+    type: variable-number-slider
+    default: 200
+    min: 175
+    max: 240
+    step: 5
+    format: px

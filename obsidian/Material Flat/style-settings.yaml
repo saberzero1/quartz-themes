@@ -1,0 +1,122 @@
+name: Material Flat
+id: title
+settings:
+  - id: patch-header
+    title: Behaviour
+    type: heading
+    level: 2
+    collapsed: true
+  - id: hide-toolbar-desktop
+    title: Hide left toolbar with left panel (Desktop)
+    description: Hides the left toolbar ("ribbon") when the left panel is closed. (Windows & Linux Only)
+    type: class-toggle
+    default: true
+  - id: more-drag-desktop
+    title: Drag window more easily (Desktop)
+    description: Allows you to drag the window by the tab title bar (if enabled) as well as the left sidebar (ribbon). Recommended to leave on unless you have issues.
+    type: class-toggle
+    default: true
+  - id: tab-drag-desktop
+    title: Drag window with active tab (Desktop)
+    description: When on, dragging an active tab will drag the entire window, instead of the tab itself.
+    type: class-toggle
+    default: false
+  - id: pen-mode
+    title: Pen Mode (for Excalidraw)
+    description: Currently only applies to Excalidraw plugin in tray mode. Moves the toolbar to the left for easier access, and hides the welcome splash.
+    type: class-toggle
+    default: true
+  - id: appearance-header
+    title: Appearance
+    type: heading
+    level: 2
+    collapsed: true
+  - id: vibrant
+    title: Increase Accent Color Vibrancy
+    description: Lets the fully saturated accent through on certain elements. May cause readability problems, depending on chosen accent color.
+    type: class-toggle
+    default: false
+  - id: dim-light-mode
+    title: Dim Light Mode
+    description: Uses a slightly tinted grey in light mode, instead of pure white, for backgrounds.
+    type: class-toggle
+    default: false
+  - id: space-above-document
+    title: Add scroll space above document
+    description: Adds some space above documents, so you can scroll them a little further down. Similar to Dropbox Paper.
+    type: class-toggle
+    default: true
+  - id: disable-tooltip-animation
+    title: Disable tooltip animation
+    description: Disables the "pop-out" animation on tooltips.
+    type: class-toggle
+    default: false
+  - id: enable-mica
+    title: Enable transparency support (Desktop)
+    description: Make parts of the main window translucent. Use instead of built-in transparency option. Both mac and windows require native frame to be set to system for this to work. Windows additionally requires Mica for Everyone, with the following settings for obsidian - Titlebar Color System, Backdrop Type Mica, Extend Frame into Client Area On
+    type: class-toggle
+    default: false
+  - id: win-menu
+    title: Native Windows Right-Click Menus (Desktop)
+    description: Makes right-click menus on Windows look like Windows 11 native menus.
+    type: class-toggle
+    default: true
+  - id: no-top-space
+    title: Remove top padding (Desktop)
+    description: Removes the bit of space above the tabs.
+    type: class-toggle
+    default: true
+  - id: hide-sidebar-header
+    title: Hide sidebar header (Mobile)
+    description: Hides the header that appears at the top of the left sidebar on mobile. This will remove the buttons for opening settings and switching vaults, so you'll have to do those using the command palette.
+    type: class-toggle
+    default: false
+  - id: button-shapes-mobile
+    title: Button shapes (Mobile)
+    description: Displays many buttons on mobile as 'chips' with a distinct background. Turn off for a more minimal style and tighter spacing.
+    type: class-toggle
+    default: true
+  - id: font-header
+    title: Fonts
+    type: heading
+    level: 2
+    collapsed: true
+  - id: font-preview
+    title: Preview Font
+    description: Used in preview mode
+    type: variable-text
+    default: Roboto, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  - id: font-editor
+    title: Editor Font
+    description: Used in editor mode
+    type: variable-text
+    default: Roboto,"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Microsoft YaHei Light",sans-serif;
+  - id: font-monospace
+    title: Monospace Font
+    description: Used in code
+    type: variable-text
+    default: Menlo,"Roboto Mono",monospace,SFMono-Regular,Consolas;
+  - id: fab-header
+    title: Floating Action Button settings
+    type: heading
+    level: 2
+    collapsed: true
+  - id: fab-enabled-mobile
+    title: Enable FAB (Mobile)
+    description: Displays a floating button in the bottom right, on phones. Tab title bar must be on!
+    type: class-toggle
+    default: true
+  - id: fab-enabled-desktop
+    title: Enable FAB (Desktop)
+    description: Displays a floating button in the bottom right, on computers. Tab title bar must be on! (May not be visible in horizontally split views)
+    type: class-toggle
+    default: true
+  - id: hide-buttons-mobile
+    title: Hide tab-status-bar buttons on mobile
+    description: Hides buttons in the optional tab status bar, excluding the one used for the FAB. (Useful with Commander plugin)
+    type: class-toggle
+    default: true
+  - id: custom-page-header
+    title: Customizable FAB action
+    description: Uses the first button in the optional tab status bar for the FAB. Set an item of your choice to appear first using the Commander plugin to customize the FAB action.
+    type: class-toggle

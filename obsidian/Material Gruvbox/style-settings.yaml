@@ -1,0 +1,332 @@
+name: Gruvbox Material Color Overrides
+id: gruvbox-material-theme-override
+settings:
+  - id: section-dark
+    title: Dark Theme
+    type: heading
+    level: 2
+    collapsed: true
+
+  - id: dark0-hard
+    title: Dark 0 Hard
+    type: variable-color
+    format: rgb
+    default: "#1d2021"
+    alt-format:
+      - id: dark0-hard-x
+        format: hex
+
+  - id: dark0
+    title: Dark 0
+    type: variable-color
+    format: rgb
+    default: "#282828"
+    alt-format:
+      - id: dark0-x
+        format: hex
+
+  - id: dark0-soft
+    title: Dark 0 Soft
+    type: variable-color
+    format: rgb
+    default: "#282828"
+    alt-format:
+      - id: dark0-soft-x
+        format: hex
+
+  - id: dark1
+    title: Dark 1
+    type: variable-color
+    format: rgb
+    default: "#3c3836"
+    alt-format:
+      - id: dark1-x
+        format: hex
+
+  - id: dark2
+    title: Dark 2
+    type: variable-color
+    format: rgb
+    default: "#504945"
+    alt-format:
+      - id: dark2-x
+        format: hex
+
+  - id: dark3
+    title: Dark 3
+    type: variable-color
+    format: rgb
+    default: "#665c54"
+    alt-format:
+      - id: dark3-x
+        format: hex
+
+  - id: dark4
+    title: Dark 4
+    type: variable-color
+    format: rgb
+    default: "#7c6f64"
+    alt-format:
+      - id: dark4-x
+        format: hex
+
+  - id: section-light
+    title: Light Theme
+    type: heading
+    level: 2
+    collapsed: true
+
+  - id: light0-hard
+    title: Light 0 Hard
+    type: variable-color
+    format: rgb
+    default: "#f9f5d7"
+    alt-format:
+      - id: light0-hard-x
+        format: hex
+
+  - id: light0
+    title: Light 0
+    type: variable-color
+    format: rgb
+    default: "#fbf1c7"
+    alt-format:
+      - id: light0-x
+        format: hex
+
+  - id: light0-soft
+    title: Light 0 Soft
+    type: variable-color
+    format: rgb
+    default: "#f2e5bc"
+    alt-format:
+      - id: light0-soft-x
+        format: hex
+
+  - id: light1
+    title: Light 1
+    type: variable-color
+    format: rgb
+    default: "#ebdbb2"
+    alt-format:
+      - id: light1-x
+        format: hex
+
+  - id: light2
+    title: Light 2
+    type: variable-color
+    format: rgb
+    default: "#d5c4a1"
+    alt-format:
+      - id: light2-x
+        format: hex
+
+  - id: light3
+    title: Light 3
+    type: variable-color
+    format: rgb
+    default: "#bdae93"
+    alt-format:
+      - id: light3-x
+        format: hex
+
+  - id: light4
+    title: Light 4
+    type: variable-color
+    format: rgb
+    default: "#a89984"
+    alt-format:
+      - id: light4-x
+        format: hex
+
+  - id: section-general
+    title: General Colors
+    type: heading
+    level: 2
+    collapsed: false
+
+  - id: gray
+    title: Gray
+    type: variable-color
+    format: rgb
+    default: "#928374"
+    alt-format:
+      - id: gray-x
+        format: hex
+
+  - id: section-general-text
+    title: Text Colors
+    type: heading
+    level: 3
+    collapsed: true
+
+  - id: dark-text
+    title: Dark Text
+    type: variable-color
+    format: rgb
+    default: "#654735"
+    alt-format:
+      - id: dark-text-x
+        format: hex
+
+  - id: dark-text-faint
+    title: Dark Text Faint
+    type: variable-color
+    format: rgb
+    default: "#b37e5d"
+
+  - id: dark-text-muted
+    title: Dark Text Muted
+    type: variable-color
+    format: rgb
+    default: "#73513c"
+    alt-format:
+      - id: dark-text-muted-x
+        format: hex
+
+  - id: light-text
+    title: Light Text
+    type: variable-color
+    format: rgb
+    default: "#d4be98"
+    alt-format:
+      - id: light-text-x
+        format: hex
+
+  - id: light-text-faint
+    title: Light Text Faint
+    type: variable-color
+    format: rgb
+    default: "#b37e5d"
+    alt-format:
+      - id: light-text-faint-x
+        format: hex
+
+  - id: light-text-muted
+    title: Light Text Muted
+    type: variable-color
+    format: rgb
+    default: "#73513c"
+    alt-format:
+      - id: light-text-muted-x
+        format: hex
+
+  - id: section-general-neutral
+    title: Neutral Colors
+    type: heading
+    level: 3
+    collapsed: true
+
+  - id: neutral-red
+    title: Red
+    type: variable-color
+    format: rgb
+    default: "#ea6962"
+    alt-format:
+      - id: neutral-red-x
+        format: hex
+
+  - id: neutral-green
+    title: Green
+    type: variable-color
+    format: rgb
+    default: "#a9b665"
+    alt-format:
+      - id: neutral-green-x
+        format: hex
+
+  - id: neutral-yellow
+    title: Yellow
+    type: variable-color
+    format: rgb
+    default: "#e78a4e"
+    alt-format:
+      - id: neutral-yellow-x
+        format: hex
+
+  - id: neutral-blue
+    title: Blue
+    type: variable-color
+    format: rgb
+    default: "#7daea3"
+    alt-format:
+      - id: neutral-blue-x
+        format: hex
+
+  - id: neutral-purple
+    title: Purple
+    type: variable-color
+    format: rgb
+    default: "#d3869b"
+    alt-format:
+      - id: neutral-purple-x
+        format: hex
+
+  - id: neutral-aqua
+    title: Aqua
+    type: variable-color
+    format: rgb
+    default: "#89b482"
+    alt-format:
+      - id: neutral-aqua-x
+        format: hex
+
+  - id: section-general-faded
+    title: Faded Colors
+    type: heading
+    level: 3
+    collapsed: true
+
+  - id: faded-red
+    title: Red
+    type: variable-color
+    format: rgb
+    default: "#c14a4a"
+    alt-format:
+      - id: faded-red-x
+        format: hex
+
+  - id: faded-green
+    title: Green
+    type: variable-color
+    format: rgb
+    default: "#6c782e"
+    alt-format:
+      - id: faded-green-x
+        format: hex
+
+  - id: faded-yellow
+    title: Yellow
+    type: variable-color
+    format: rgb
+    default: "#c35e0a"
+    alt-format:
+      - id: faded-yellow-x
+        format: hex
+
+  - id: faded-blue
+    title: Blue
+    type: variable-color
+    format: rgb
+    default: "#45707a"
+    alt-format:
+      - id: faded-blue-x
+        format: hex
+
+  - id: faded-purple
+    title: Purple
+    type: variable-color
+    format: rgb
+    default: "#945e80"
+    alt-format:
+      - id: faded-purple-x
+        format: hex
+
+  - id: faded-aqua
+    title: Aqua
+    type: variable-color
+    format: rgb
+    default: "#4c7a5d"
+    alt-format:
+      - id: faded-aqua-x
+        format: hex

@@ -1,0 +1,128 @@
+name: Dark Clarity Theme
+id: obsidian-theme-dark-clarity
+settings:
+  - id: my-info-text
+    title: Dark Clarity Theme
+    description: "> 一款 obsidian 的主题 > 主要以 **高辨识度**、且 h1~h6 标题 **有主题色** 为主 > 参考 Dark Moss Theme 部分作为基底，并且进行了多处优化： > - 多款配色选择 > - 浅色模式时的配色 > - 优化辨识度（粗体明显、图片边框、引用块去斜体）> - 更多可选的优化功能（左边栏横向滚动、左边栏文件夹配色）"
+    type: info-text
+    markdown: true
+  - id: h1
+    title: 主题配色选择
+    type: heading
+    level: 1
+    collapsed: false
+  - id: main-theme
+    title: 主题配色（标题、高亮等）
+    description:
+    type: class-select
+    allowEmpty: true
+    default: theme-genshin-sangonomiya-kokomi1
+    options:
+      - label: 原神-心海1
+        value: theme-genshin-sangonomiya-kokomi1
+      - label: 原神-心海2
+        value: theme-genshin-sangonomiya-kokomi2
+      - label: 原神-妮露
+        value: theme-genshin-nilou
+      - label: 原神-甘雨
+        value: theme-genshin-甘雨
+      - label: 原神-神里绫华
+        value: theme-genshin-神里绫华
+      - label: 原神-可莉
+        value: theme-genshin-可莉
+      - label: 原神-希格雯
+        value: theme-genshin-希格雯
+      - label: 原神-砂糖
+        value: theme-genshin-砂糖
+      - label: 新海诚-铃芽之旅
+        value: theme-suzume-no-tojimari
+      - label: 周杰伦-叶惠美
+        value: theme-jay
+      - label: Nord-Aurora
+        value: theme-Nord-Aurora
+      - label: 荧光彩虹
+        value: theme-rainbow
+      - label: 制作中...
+        value: theme-testing
+  - id: secondary-theme
+    title: 副配色（超链、tag 等）
+    description:
+    type: class-select
+    allowEmpty: true
+    default: secondary-theme-green-blue
+    options:
+      - label: DarkMoss（蓝+墨绿）
+        value: secondary-theme-green-blue
+      - label: Nord 配套（霜冻蓝）
+        value: secondary-theme-Nord
+      - label: 制作中...
+        value: secondary-theme-testing
+  - id: code-theme
+    title: 代码配色（代码高亮方案）
+    description:
+    type: class-select
+    allowEmpty: true
+    default: code-theme-jetbrains
+    options:
+      - label: jetbrains 同款配色
+        value: code-theme-jetbrains
+      - label: from BlueTopaz-default
+        value: code-theme-BlueTopaz-default
+      - label: from BlueTopaz-material-palenight
+        value: code-theme-BlueTopaz-material-palenight
+      - label: from BlueTopaz-solarized
+        value: code-theme-BlueTopaz-solarized
+      - label: from BlueTopaz-Gruvbox-dark
+        value: code-theme-BlueTopaz-Gruvbox-dark
+      - label: from BlueTopaz-dracula
+        value: code-theme-BlueTopaz-dracula
+      - label: from BlueTopaz-monokai
+        value: code-theme-BlueTopaz-monokai
+      - label: from BlueTopaz-sublime
+        value: code-theme-BlueTopaz-sublime
+      - label: 制作中...
+        value: code-theme-testing
+  - id: h2
+    title: 可选项
+    type: heading
+    level: 1
+    collapsed: false
+  - id: left-highlight
+    title: 左边栏-高亮
+    description: 是否开启左边栏(文件列表)的选中文件引导线高亮功能
+    default: false
+    type: class-toggle
+  - id: left-roll
+    title: 左边栏-横向滚动
+    description: 是否开启左边栏(文件列表)的横向滚动条功能，使长文本完全显示
+    default: true
+    type: class-toggle
+  - id: left-roll-min-width
+    title: 左边栏-横向滚动-最小宽度
+    description: 横向滚动子元素的最小宽度
+    type: variable-number-slider
+    default: 250
+    min: 0
+    max: 1000
+    step: 1
+    format: px
+  - id: folder-color11
+    title: 左边栏-文件夹配色
+    description: 是否开启左边栏（文件列表）的文件夹配色
+    type: class-select
+    allowEmpty: false
+    default: folder-off
+    options:
+      - folder-off
+      - folder-simple
+      - folder-theme-follow
+      - folder-theme-sailkites-rainbow
+      - folder-theme-coloured-folders
+  - id: folder-alpha
+    title: 左边栏-文件夹配色-透明度
+    description: 用于配置文件夹配色的透明度
+    type: variable-number-slider
+    default: 0.2
+    min: 0.01
+    max: 1
+    step: 0.01

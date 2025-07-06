@@ -1,0 +1,14 @@
+name: Aura Version
+id: aura-theme-settings
+settings:
+  - id: aura-theme-dark
+    title: Softness
+    description: Select your preferred Aura variation
+    type: class-select
+    allowEmpty: false
+    default: aura-dark
+    options:
+      - label: Aura Dark
+        value: aura-dark
+      - label: Aura Soft Dark
+        value: aura-soft

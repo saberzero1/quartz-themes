@@ -1,0 +1,456 @@
+name: Everforest Enchanted
+id: everforest-enchanted-theme
+collapsed: false
+settings:
+  - id: test-main-description
+    title: Welcome!
+    description: |
+      Use these settings to adjust basic extra settings or various extra elements of the theme. Visit the [GitHub Repo](https://github.com/FireIsGood/obsidian-everforest-enchanted) for more information.
+    type: info-text
+    markdown: true
+  - id: editor-settings
+    title: Editor
+    description: Folders, line length, line numbers, menu modal blur
+    type: heading
+    level: 1
+    collapsed: true
+  - id: folder-settings
+    title: Folders
+    type: heading
+    level: 2
+    collapsed: true
+  - id: highlighted-folders
+    title: Enable highlighted active folders
+    description: Adds a background on opened folders.
+    type: class-toggle
+  - id: line-length-settings
+    title: Line Length
+    type: heading
+    level: 2
+    collapsed: true
+  - id: readable-line-length-custom
+    title: Line length
+    description: Sets a custom readable line width in pixels.
+    type: variable-number
+    default: 700
+    format: px
+  - id: wide-width-readable-line-length-custom
+    title: Wide Line length
+    description: Sets a custom readable line width for the CSS class "wide-width" in pixels.
+    type: variable-number
+    default: 1000
+    format: px
+  - id: gutter-settings
+    title: Line Numbers
+    type: heading
+    level: 2
+    collapsed: true
+  - id: stacked-panes-gutter-disable-float
+    title: Disable stacked tabs floating line numbers
+    description: Disables custom line number floating in the stacked tab mode. This makes the line numbers shift over the content in stacked tabs. Use this if your panes are too thin to show them.
+    type: class-toggle
+  - id: menu-blur-settings
+    title: Menu modals
+    type: heading
+    level: 2
+    collapsed: true
+  - id: disable-menu-animations
+    title: Disable menu animations
+    description: Disables the floating-up animation of modal menus (e.g. settings, command palette).
+    type: class-toggle
+  - id: enable-menu-blur
+    title: Enable menu blur
+    description: Blur the content behind modal menus (e.g. settings, command palette).
+    type: class-toggle
+  - id: menu-blur-radius
+    title: Menu blur radius
+    description: The amount to blur in pixels.
+    type: variable-number
+    default: 5
+    format: px
+  - id: vim-cursor-settings
+    title: Vim
+    type: heading
+    level: 2
+    collapsed: true
+  - id: vim-curor-animate
+    title: Animate vim cursor
+    description: Adds an animation when moving the vim cursor.
+    type: class-toggle
+  - id: vim-cursor-speed
+    title: Vim cursor speed
+    description: Speed at which the cursor will move
+    type: variable-select
+    default: var(--anim-duration-superfast)
+    options:
+      - label: FTL
+        value: 30ms
+      - label: Light speed
+        value: 45ms
+      - label: Fast
+        value: 55ms
+      - label: Normal
+        value: var(--anim-duration-superfast)
+      - label: Slow
+        value: var(--anim-duration-fast)
+      - label: Very slow
+        value: var(--anim-duration-moderate)
+      - label: Snail speed
+        value: var(--anim-duration-slow)
+      - label: Molases in January
+        value: 1000ms
+      - label: 0 degrees kelvin
+        value: 5s
+      - label: The seconds hand of the analogue clock in your least favorite middle school class
+        value: 20s
+      - label: Zeno's paradox
+        value: 60s
+  - id: element-settings
+    title: Elements
+    description: Canvas, headers, image embeds, links, lists, math blocks, tables
+    type: heading
+    level: 1
+    collapsed: true
+  - id: canvas-settings
+    title: Canvas
+    type: heading
+    level: 2
+    collapsed: true
+  - id: canvas-dot-size
+    title: Canvas - Background dot size
+    description: The size of dots on the canvas. It starts breaking past 10.
+    type: variable-number
+    default: 0.7
+    format: px
+  - id: header-settings
+    title: Headers
+    type: heading
+    level: 2
+    collapsed: true
+  - id: h1-settings
+    title: Header 1 settings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h1-underline
+    title: Headers - h1 underline
+    description: Enable h1 underline.
+    type: class-toggle
+    default: false
+  - id: h1-underline-style
+    title: Headers - h1 underline style
+    description: Change style of the h1 underline
+    type: variable-select
+    default: solid
+    options:
+      - label: Solid
+        value: solid
+      - label: Dotted
+        value: dotted
+      - label: Dashed
+        value: dashed
+  - id: h2-settings
+    title: Header 2 settings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h2-underline
+    title: Headers - H2 underline
+    description: Enable h2 underline.
+    type: class-toggle
+    default: false
+  - id: h2-underline-style
+    title: Headers - H2 underline style
+    description: Change style of the h2 underline
+    type: variable-select
+    default: solid
+    options:
+      - label: Solid
+        value: solid
+      - label: Dotted
+        value: dotted
+      - label: Dashed
+        value: dashed
+  - id: h3-settings
+    title: Header 3 settings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h3-underline
+    title: Headers - h3 underline
+    description: Enable h3 underline.
+    type: class-toggle
+    default: false
+  - id: h3-underline-style
+    title: Headers - h3 underline style
+    description: Change style of the h3 underline
+    type: variable-select
+    default: solid
+    options:
+      - label: Solid
+        value: solid
+      - label: Dotted
+        value: dotted
+      - label: Dashed
+        value: dashed
+  - id: h4-settings
+    title: Header 4 settings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h4-underline
+    title: Headers - h4 underline
+    description: Enable h4 underline.
+    type: class-toggle
+    default: false
+  - id: h4-underline-style
+    title: Headers - h4 underline style
+    description: Change style of the h4 underline
+    type: variable-select
+    default: solid
+    options:
+      - label: Solid
+        value: solid
+      - label: Dotted
+        value: dotted
+      - label: Dashed
+        value: dashed
+  - id: h5-settings
+    title: Header 5 settings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h5-underline
+    title: Headers - h5 underline
+    description: Enable h5 underline.
+    type: class-toggle
+    default: false
+  - id: h5-underline-style
+    title: Headers - h5 underline style
+    description: Change style of the h5 underline
+    type: variable-select
+    default: solid
+    options:
+      - label: Solid
+        value: solid
+      - label: Dotted
+        value: dotted
+      - label: Dashed
+        value: dashed
+  - id: h6-settings
+    title: Header 6 settings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h6-underline
+    title: Headers - h6 underline
+    description: Enable h6 underline.
+    type: class-toggle
+    default: false
+  - id: h6-underline-style
+    title: Headers - h6 underline style
+    description: Change style of the h6 underline
+    type: variable-select
+    default: solid
+    options:
+      - label: Solid
+        value: solid
+      - label: Dotted
+        value: dotted
+      - label: Dashed
+        value: dashed
+  - id: image-embed-settings
+    title: Image Embeds
+    type: heading
+    level: 2
+    collapsed: true
+  - id: image-embed-enable-zoom
+    title: Image Embeds - Enable zoom
+    description: Enable zooming in on images by clicking on them. Just like minimal! Note that mobile Obsidian already has this.
+    type: class-toggle
+  - id: image-embed-no-drag
+    title: Image Embeds - Disable dragging
+    description: Stop zoomed images from being dragged around. This breaks the blur keyword.
+    type: class-toggle
+  - id: image-embed-stretch
+    title: Image Embeds - Stretch all images to fit the full width
+    description: Makes all images stretch to fit the full width by default. Added as an option to revert behavior.
+    type: class-toggle
+  - id: link-settings
+    title: Links
+    type: heading
+    level: 2
+    collapsed: true
+  - id: external-link-remove-icon
+    title: Links - Remove external link icon
+    description: Removes the link icon from external links.
+    type: class-toggle
+  - id: list-settings
+    title: Lists
+    type: heading
+    level: 2
+    collapsed: true
+  - id: list-indent-custom
+    title: Lists - List indent size
+    description: The size of list item indents. The default value set here of 28px mimics the appearance of editing mode. If you want a more default experience, the default theme uses 2.25em which is essentially 36px. Currently does not work as intended due to JS changes in Obsidian 1.5 which is sad... There are technically workarounds but they would not be very clean.
+    type: variable-number
+    default: 28
+    format: px
+  - id: math-settings
+    title: Math blocks
+    type: heading
+    level: 2
+    collapsed: true
+  - id: disable-math-outline
+    title: Math blocks - Disable outline
+    description: Removes the outline around math blocks.
+    type: class-toggle
+  - id: table-settings
+    title: Tables
+    type: heading
+    level: 2
+    collapsed: true
+  - id: centered-tables
+    title: Tables - Center alignment
+    description: Aligns tables to the center.
+    type: class-toggle
+  - id: full-width-tables
+    title: Tables - Full width
+    description: Makes tables fit the full width.
+    type: class-toggle
+  - id: rounded-tables
+    title: Tables - Rounded corners
+    description: Adds a rounded effect to table corners. Automatically disabled when a table has rowspan as it is not possible to guarantee the correct corners are rounded.
+    type: class-toggle
+  - id: rounded-tables-radius
+    title: Tables - Rounded corners radius
+    description: The corner radius of rounded tables. You may need to reload tabs to see the effect.
+    type: variable-number
+    default: 8
+    format: px
+  - id: extra-appearance-settings
+    title: Extras
+    description: Background images, Stacked panes with a count, visual parity between modes
+    type: heading
+    level: 1
+    collapsed: true
+  - id: background-image
+    title: Background Image
+    type: heading
+    level: 2
+    collapsed: true
+  - id: background-image-description
+    title: Info
+    description: |
+      Adds background images. This is easiest to do with an external URL. If you want to use local images for offline access, you'll have to use a snippet. Check the [GitHub Repo documentation](https://github.com/FireIsGood/obsidian-everforest-enchanted/blob/main/custom_background_image.md) for more information.
+    type: info-text
+    markdown: true
+  - id: background-image-enabled
+    title: Background Image
+    description: Enables the background image.
+    type: class-toggle
+  - id: background-image-dark-url
+    title: Dark Mode Background URL
+    description: Set an online background image.
+    type: variable-text
+    default: url("http://")
+  - id: background-image-light-url
+    title: Light Mode Background URL
+    description: Set an online background image.
+    type: variable-text
+    default: url("http://")
+  - id: background-image-position
+    title: Background Position
+    description: Change where the image is centered.
+    type: variable-select
+    default: center
+    options:
+      - label: Center
+        value: center
+      - label: Top
+        value: top
+      - label: Bottom
+        value: bottom
+      - label: Left
+        value: left
+      - label: Right
+        value: right
+      - label: Top Left
+        value: top left
+      - label: Top Right
+        value: top right
+      - label: Bottom Left
+        value: bottom left
+      - label: Bottom Right
+        value: bottom right
+  - id: pane-opacity
+    title: Pane Opacity
+    description: How opaque page backgrounds are.
+    type: variable-number-slider
+    default: 0.85
+    min: 0
+    max: 1
+    step: 0.05
+  - id: ui-opacity
+    title: UI Opacity
+    description: How opaque UI backgrounds are.
+    type: variable-number-slider
+    default: 0.85
+    min: 0
+    max: 1
+    step: 0.05
+  - id: tab-opacity
+    title: Tab Opacity
+    description: How opaque STACKED TAB backgrounds are.
+    type: variable-number-slider
+    default: 0.85
+    min: 0
+    max: 1
+    step: 0.05
+  - id: background-image-fun
+    title: Fun Settings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: background-image-pane-view
+    title: Pane view
+    description: Changes pages to be panes on a transparent background. BEST USED WITH UI OPACITY 0!
+    type: class-toggle
+  - id: custom-stacked-panes
+    title: Stacked Pane Count
+    type: heading
+    level: 2
+    collapsed: true
+  - id: custom-stacked-panes-description
+    title: Info
+    description: |
+      This setting turns stacked panes from a pixel width to a number visible on screen at once. Check the [GitHub Repo documentation](https://github.com/FireIsGood/obsidian-everforest-enchanted/blob/main/custom_stacked_panes.md) for more information.
+    type: info-text
+    markdown: true
+  - id: custom-stacked-panes-enabled
+    title: Custom Stacked Panes
+    description: Changes stacked panes to fit a certain number on screen instead of using pixel values.
+    type: class-toggle
+  - id: custom-stacked-panes-count
+    title: Pane Count
+    description: The number of panes to show up at once.
+    type: variable-number-slider
+    default: 2
+    min: 1
+    max: 5
+    step: 1
+  - id: visual-parity
+    title: Visual Parity
+    type: heading
+    level: 2
+    collapsed: true
+  - id: visual-parity-description
+    title: Info
+    description: |
+      Changes reading mode to match editing mode visually. This mainly modifies the sizes of margins and makes the top element not have margin to simulare how it works in editing mode.
+    type: info-text
+    markdown: true
+  - id: visual-parity-enabled
+    title: Visual Parity
+    description: Enables visual parity.
+    type: class-toggle

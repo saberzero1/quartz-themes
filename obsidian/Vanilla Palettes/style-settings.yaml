@@ -1,0 +1,69 @@
+name: Chameleon Theme
+id: obsidian-chameleon-theme
+settings:
+  - id: color-schemes-light
+    title: Light Color Scheme
+    description: Light Color Scheme picker
+    type: class-select
+    allowEmpty: false
+    default: color-scheme-rose-pine-dawn
+    options:
+      - label: Catppuccin Latte
+        value: color-scheme-catppuccin-latte
+      - label: Gruvbox Light Soft
+        value: color-scheme-gruvbox-soft
+      - label: Gruvbox Light Medium
+        value: color-scheme-gruvbox-medium
+      - label: Gruvbox Light Hard
+        value: color-scheme-gruvbox-hard
+      - label: Horizon Bright
+        value: color-scheme-horizon-bright
+      - label: Kanagawa Lotus
+        value: color-scheme-kanagawa-lotus
+      - label: Tokyo Night Day
+        value: color-scheme-tokyo-night-day
+      - label: Rosé Pine Dawn
+        value: color-scheme-rose-pine-dawn
+  - id: color-schemes-dark
+    title: Dark Color Scheme
+    description: Dark Color Scheme picker
+    type: class-select
+    allowEmpty: false
+    default: color-scheme-nord
+    options:
+      - label: Atom One Dark
+        value: color-scheme-atom-one-dark
+      - label: Catppuccin Frappe
+        value: color-scheme-catppuccin-frappe
+      - label: Catppuccin Macchiato
+        value: color-scheme-catppuccin-macchiato
+      - label: Catppuccin Mocha
+        value: color-scheme-catppuccin-mocha
+      - label: Dracula
+        value: color-scheme-dracula
+      - label: Dracula Soft
+        value: color-scheme-dracula-soft
+      - label: Gruvbox Dark Soft
+        value: color-scheme-gruvbox-soft
+      - label: Gruvbox Dark Medium
+        value: color-scheme-gruvbox-medium
+      - label: Gruvbox Dark Hard
+        value: color-scheme-gruvbox-hard
+      - label: Horizon
+        value: color-scheme-horizon
+      - label: Kanagawa Dragon
+        value: color-scheme-kanagawa-dragon
+      - label: Kanagawa Wave
+        value: color-scheme-kanagawa-wave
+      - label: Nord
+        value: color-scheme-nord
+      - label: Rosé Pine
+        value: color-scheme-rose-pine
+      - label: Rosé Pine Moon
+        value: color-scheme-rose-pine-moon
+      - label: Tokyo Night
+        value: color-scheme-tokyo-night
+      - label: Tokyo Night Moon
+        value: color-scheme-tokyo-night-moon
+      - label: Tokyo Night Storm
+        value: color-scheme-tokyo-night-storm

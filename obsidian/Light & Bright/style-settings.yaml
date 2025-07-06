@@ -1,0 +1,23 @@
+name: Light & Bright
+id: light-and-bright-theme
+settings:
+  - id: light-theme-settings
+    title: Light Mode Color Scheme
+    type: class-select
+    allowEmpty: false
+    default: theme-default
+    options:
+      - label: Balanced
+        value: theme-default
+      - label: Bright
+        value: theme-alternate
+  - id: dark-theme-settings
+    title: Dark Mode Color Scheme
+    type: class-select
+    allowEmpty: false
+    default: dark-theme-default
+    options:
+      - label: Moderate
+        value: dark-theme-default
+      - label: Dark
+        value: dark-theme-alternate

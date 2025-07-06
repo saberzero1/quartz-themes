@@ -1,0 +1,192 @@
+name: Borealis
+id: obsidian-borealis
+settings:
+  - id: heading-colors-text
+    title: Colors
+    type: heading
+    level: 1
+    collapsed: true
+  - id: color-primary
+    title: "Color primary"
+    description: Used for accent, faint, interactive, bold, tags, button, checkbox and callout
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#a1f98f"
+    default-dark: "#a1f98f"
+  - id: color-secondary
+    title: "Color secondary"
+    description: Used for italic, button, callout and blockquote
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#e78ff9"
+    default-dark: "#e78ff9"
+  - id: rgb-primary
+    title: "Color primary (RGB)"
+    description: Used for tags, button, callout and properties
+    type: variable-themed-color
+    opacity: false
+    format: rgb-values
+    default-light: "rgb(34, 176, 67)"
+    default-dark: "rgb(161, 249, 143)"
+  - id: rgb-secondary
+    title: "Color secondary (RGB)"
+    description: Used for button, callout and blockquote
+    type: variable-themed-color
+    opacity: false
+    format: rgb-values
+    default-light: "rgb(231, 143, 249)"
+    default-dark: "rgb(176, 33, 142)"
+  - id: text-normal
+    title: "Text: Normal"
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#141414"
+    default-dark: "#d1d1d1"
+  - id: text-muted
+    title: "Text: Muted"
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#888888"
+    default-dark: "#999999"
+  - id: text-faint
+    title: "Text: Faint"
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#21b043"
+    default-dark: "#a1f98f"
+  - id: text-error
+    title: "Text: Error"
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#CF6679"
+    default-dark: "#ff2f00"
+  - id: text-error-hover
+    title: "Text: Error (hover)"
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#CF6679"
+    default-dark: "#ff2f00"
+  - id: heading-colors-background
+    title: Backgrounds
+    type: heading
+    level: 1
+    collapsed: true
+  - id: background-primary
+    title: Background Primary
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#f6f6f6"
+    default-dark: "#141414"
+  - id: background-primary-alt
+    title: Background Primary (alt)
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#f0f0f0"
+    default-dark: "#191919"
+  - id: background-secondary
+    title: Background Secondary
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#f6f6f6"
+    default-dark: "#141414"
+  - id: background-secondary-alt
+    title: Background Secondary (alt)
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#f6f6f6"
+    default-dark: "#141414"
+  - id: background-modifier-border
+    title: "Background Modifier: Border"
+    type: variable-themed-color
+    opacity: true
+    format: rgb
+    default-light: "#f6f6f6"
+    default-dark: "#141414"
+  - id: background-modifier-form-field
+    title: "Background Modifier: Form Field"
+    type: variable-themed-color
+    opacity: true
+    format: rgb
+    default-light: "#f6f6f6"
+    default-dark: "#141414"
+  - id: background-modifier-form-field-highlighted
+    title: "Background Modifier: Form Field (highlighted)"
+    type: variable-themed-color
+    opacity: true
+    format: rgb
+    default-light: "#f6f6f6"
+    default-dark: "#141414"
+  - id: heading-fonts
+    title: Fonts
+    type: heading
+    level: 1
+    collapsed: true
+  - id: default-font
+    title: Base Font
+    type: variable-text
+    default: '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif'
+  - id: mermaid-font
+    title: Mermaid Font
+    type: variable-text
+    default: '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif'
+  - id: reveal-font
+    title: Reveal Font
+    type: variable-text
+    default: '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif'
+  - id: font-monospace
+    title: Monospace Font
+    description: Used for codeblocks, tables, etc.
+    type: variable-text
+    default: '"Source Code Pro", monospace'
+  - id: font-heading
+    title: Heading Font
+    description: Used for heading.
+    type: variable-text
+    default: '"JetBrains Mono", monospace'
+  - id: checkboxes
+    title: Checkboxes
+    type: heading
+    level: 1
+    collapsed: true
+  - id: enable-alternative-checkboxes
+    title: Enable alternative checkboxes
+    description: Disable this if you are using your own implementation via a CSS Snippet
+    default: true
+    type: class-toggle
+  - id: syntax-highlighting
+    title: Syntax Highlighting
+    type: heading
+    level: 1
+    collapsed: true
+  - id: syntax-highlighting
+    title: Syntax Highlighting
+    description: Used for styling code block
+    type: class-select
+    allowEmpty: false
+    default: sh1
+    options:
+      - label: Aurora
+        value: sh1
+      - label: GitHub Dark Default
+        value: sh2
+      - label: a11y Dark
+        value: sh3
+      - label: Atom One Dark
+        value: sh4
+      - label: Monokai Sublime
+        value: sh5
+      - label: Tokyo Night Dark
+        value: sh6
+      - label: Tomorrow Night Bright
+        value: sh7

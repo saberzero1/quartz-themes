@@ -1,0 +1,27 @@
+name: Obsidian Terminal Style Settings
+id: a-unique-id
+settings:
+  - id: colors
+    title: Colors
+    type: heading
+    level: 1
+    collapsed: false
+  - id: the-color
+    title: Accent Color
+    type: variable-color
+    format: hex
+    alt-format:
+      - id: the-color-rgb
+        format: rgb
+    default: "#15d00d"
+  - id: the-background-color
+    title: Background Color
+    type: variable-color
+    format: hex
+    default: "#000000"
+
+  - id: prompts
+    title: Prompts (Not Supported Yet)
+    type: heading
+    level: 1
+    collapsed: false

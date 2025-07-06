@@ -1,0 +1,171 @@
+name: Polka Theme
+id: polka
+settings:
+  - id: ss-light-customization
+    title: Light Mode Colors
+    type: heading
+    level: 2
+    collapsed: true
+  - id: ss-light-h
+    title: Background Hue
+    description: Cycle through the color wheel to select a base for background colors. In light mode, you'll need to reduce the default Background Lightness to see a big difference (0-360).
+    type: variable-number-slider
+    default: 0
+    min: 0
+    max: 360
+    step: 1
+  - id: ss-light-s
+    title: Background Saturation
+    description: Set the saturation level of background colors (0-10).
+    type: variable-number-slider
+    default: 3.92
+    format: "%"
+    min: 0
+    max: 10
+    step: 0.01
+  - id: ss-light-l
+    title: Background Lightness
+    description: Set the lightness level of background colors. In light mode, this has a lower limit to prevent you from accidentally making the interface illegible. Switch to dark mode to go darker (0-10).
+    type: variable-number-slider
+    default: 9.86
+    format: "%"
+    min: 0
+    max: 10
+    step: 0.01
+  - id: ss-light-contrast
+    title: Background Contrast
+    description: Set the contrast level of the secondary background color. If you want to remove the secondary color entirely, use the switch below (0-10).
+    type: variable-number-slider
+    default: 0
+    format: "%"
+    min: 0
+    max: 10
+    step: 0.01
+  - id: ss-light-zero-contrast
+    title: Background Zero Contrast Mode
+    description: Choose whether to use only the primary background color.
+    type: class-toggle
+  - id: ss-light-text-main
+    title: Main Text Color
+    description: Select a color for main text.
+    type: variable-color
+    opacity: false
+    format: rgb-values
+    default: "#000000"
+  - id: ss-light-highlights
+    title: Yellow Text Highlights
+    description: Choose whether to use a generic yellow for text highlights instead of your accent color.
+    type: class-toggle
+  - id: ss-dark-customization
+    title: Dark Mode Colors
+    type: heading
+    level: 2
+    collapsed: true
+  - id: ss-dark-h
+    title: Background Hue
+    description: Cycle through the color wheel to select a base for background colors (0-360).
+    type: variable-number-slider
+    default: 221
+    min: 0
+    max: 360
+    step: 1
+  - id: ss-dark-s
+    title: Background Saturation
+    description: Set the saturation level of background colors (0-10).
+    type: variable-number-slider
+    default: 3.33
+    format: "%"
+    min: 0
+    max: 10
+    step: 0.01
+  - id: ss-dark-l
+    title: Background Lightness
+    description: Set the lightness level of background colors. In dark mode, this has an upper limit to prevent you from accidentally making the interface illegible. Switch to light mode to go lighter (0-10).
+    type: variable-number-slider
+    default: 2.58
+    format: "%"
+    min: 0
+    max: 10
+    step: 0.01
+  - id: ss-dark-contrast
+    title: Background Contrast
+    description: Set the contrast level of the secondary background color. If you want to remove the secondary color entirely, use the switch below (0-10).
+    type: variable-number-slider
+    default: 0.73
+    format: "%"
+    min: 0
+    max: 10
+    step: 0.01
+  - id: ss-dark-zero-contrast
+    title: Background Zero Contrast Mode
+    description: Choose whether to use only the primary background color.
+    type: class-toggle
+  - id: ss-dark-text-main
+    title: Text Color
+    description: Select a color for main text.
+    type: variable-color
+    opacity: false
+    format: rgb-values
+    default: "#FAF7F5"
+  - id: ss-dark-highlights
+    title: Yellow Text Highlights
+    description: Choose whether to use a generic yellow for text highlights instead of your accent color.
+    type: class-toggle
+  - id: ss-content-styles
+    title: Content Styles
+    type: heading
+    level: 2
+    collapsed: true
+  - id: ss-codeblock-color-scheme
+    title: Codeblock Color Scheme
+    description: Style your codeblocks independently by selecting a dedicated color scheme.
+    type: class-select
+    allowEmpty: false
+    default: polka-code-colors
+    options:
+      - label: Dracula (dark)
+        value: dracula-code-colors
+      - label: Gruvbox (light & dark)
+        value: gruvbox-code-colors
+      - label: Nord (dark)
+        value: nord-code-colors
+      - label: One (light & dark)
+        value: one-code-colors
+      - label: Polka (dark)
+        value: polka-code-colors
+      - label: Solarized (light & dark)
+        value: solarized-code-colors
+  - id: ss-border-radius
+    title: Roundness
+    description: Set the roundness level for corners of text blocks, boxes, buttons and menus (0-1).
+    type: variable-number-slider
+    default: 0.1
+    format: px
+    min: 0
+    max: 1
+    step: 0.05
+  - id: ss-round-checkboxes
+    title: Circular Checkboxes
+    description: Choose whether to use circular checkboxes instead of square ones.
+    type: class-toggle
+  - id: ss-table-monospace
+    title: Monospace Font in Tables
+    description: Choose whether to use a monospace font in tables (excluding headers). This can be useful if your body font doesn't have tabular (i.e. evenly-spaced) numbers.
+    type: class-toggle
+  - id: ss-embed-borders
+    title: Remove File Embed Styling
+    description: Choose whether to remove the styling that distinguishes file embeds from the rest of a note.
+    type: class-toggle
+  - id: ss-tab-outline
+    title: Remove Tab Outline
+    description: Choose whether to remove the accent color from the tab outline.
+    type: class-toggle
+  - id: ss-polka-dots
+    title: Remove Polka Dots
+    description: Choose whether to turn off the dots in the ribbon.
+    type: class-toggle
+  - id: ss-info
+    title: Fonts and Accents
+    description: Looking to customize your font choices or accent color? Go to `Appearance` in the main menu.
+    type: info-text
+    markdown: true
