@@ -35,6 +35,7 @@ import {
   extractStyleSettings,
   extractClassToggleCss,
   replaceVariableValue,
+  extractStyleSettingsFromFile,
 } from "./util/postcss-style-settings.mjs";
 import { themes, staticMode, themeToTest, testMode } from "./config.mjs";
 import { prune } from "./util/prune-unused.mjs";
@@ -371,163 +372,161 @@ manifestCollection.forEach((manifest) => {
     let staticResult = generateStatic(result, themeNameLocal);
 
     // Theme variations (for style settings)
-    const styleSettings = extractStyleSettings(cssString);
+    //const styleSettings = extractStyleSettings(cssString);
+    const styleSettings = extractStyleSettingsFromFile(
+      `./obsidian/${getValueFromDictionary(manifest, "name")}/style-settings.yaml`,
+    );
     if (styleSettings && styleSettings.length > 0) {
+      console.log(`Foundt ${styleSettings.length} style settings sets`);
       ensureDirectoryExists(`./style-settings/${getTheme(manifest)}`);
       // Clear out all subfolders of the style settings
       clearDirectories(`./extras/themes/${getTheme(manifest)}`);
       clearDirectories(`./style-settings/${getTheme(manifest)}`);
       // Extract style settings from the main theme
-      styleSettings.forEach((styleSettingsSet) => {
-        const styleSets = styleSettingsSet["settings"];
-        styleSets.forEach((style) => {
-          let styleRulesCSS = ["", "", ""];
-          let staticStyleRulesCSS = ["", "", ""];
-          const ignoreStyleTypes = ["heading", "info-text"];
+      styleSettings.forEach((style) => {
+        let styleRulesCSS = ["", "", ""];
+        let staticStyleRulesCSS = ["", "", ""];
+        const ignoreStyleTypes = ["heading", "info-text"];
 
-          if (ignoreStyleTypes.includes(style["type"])) {
-            // Skip styles that are not relevant for CSS generation
-            console.warn(
-              `Skipping style setting: ${style["id"]} of type ${style["type"]}`,
-            );
-            return;
-          }
-
-          console.log(
-            `Processing style setting: ${style["id"]} of type ${style["type"]}`,
+        if (ignoreStyleTypes.includes(style["type"])) {
+          // Skip styles that are not relevant for CSS generation
+          console.warn(
+            `Skipping style setting: ${style["id"]} of type ${style["type"]}`,
           );
+          return;
+        }
 
-          // Write the style setting to the CSS string
-          if (style["type"] === "variable-text") {
-            // Use the default text
-            // Replace all lines with variable in the CSS string
-            result = replaceVariableValue(
-              result,
-              style["id"],
-              (style["quotes"] ?? false)
-                ? `'${style["default"]}'`
-                : style["default"],
-            );
-            staticResult = replaceVariableValue(
-              staticResult,
-              style["id"],
-              (style["quotes"] ?? false)
-                ? `'${style["default"]}'`
-                : style["default"],
-            );
-          } else if (style["type"] === "variable-number") {
-            // Use the default number
-            // Replace all lines with variable in the CSS string
-            result = replaceVariableValue(
-              result,
-              style["id"],
-              style["default"] + (style["format"] ?? ""),
-            );
-            staticResult = replaceVariableValue(
-              staticResult,
-              style["id"],
-              style["default"] + (style["format"] ?? ""),
-            );
-          } else if (style["type"] === "variable-number-slider") {
-            // Use the default number
-            // Replace all lines with variable in the CSS string
-            result = replaceVariableValue(
-              result,
-              style["id"],
-              style["default"] + (style["format"] ?? ""),
-            );
-            staticResult = replaceVariableValue(
-              staticResult,
-              style["id"],
-              style["default"] + (style["format"] ?? ""),
-            );
-          } else if (style["type"] === "variable-select") {
-            // Use the default select value
-            // Replace all lines with variable in the CSS string
-            result = replaceVariableValue(
-              result,
-              style["id"],
-              style["default"] + (style["format"] ?? ""),
-            );
-            staticResult = replaceVariableValue(
-              staticResult,
-              style["id"],
-              style["default"] + (style["format"] ?? ""),
-            );
-          } else if (style["type"] === "variable-color") {
-            // Use the default color
-            // Replace all lines with variable in the CSS string
-            result = replaceVariableValue(
-              result,
-              style["id"],
-              style["default"] + (style["format"] ?? ""),
-            );
-            staticResult = replaceVariableValue(
-              staticResult,
-              style["id"],
-              style["default"] + (style["format"] ?? ""),
-            );
-          } else if (style["type"] === "variable-themed-color") {
-            // Use the default themed colors
-            // This is a special case where we need to handle both light and dark themes
-            // for this, we use the `light-dark()` function in the CSS
-            result = replaceVariableValue(
-              result,
-              style["id"],
-              `light-dark(${style["default-light"]}, ${style["default-dark"]})`,
-            );
-            staticResult = replaceVariableValue(
-              staticResult,
-              style["id"],
-              `light-dark(${style["default-light"]}, ${style["default-dark"]})`,
-            );
-          } else if (style["type"] === "class-toggle") {
-            // Extract the class toggle CSS
-            styleRulesCSS = extractClassToggleCss(cssString, style["id"]);
-            writeStyleSettings(styleRulesCSS, getTheme(manifest), style["id"]);
-            staticStyleRulesCSS = extractClassToggleCss(cssString, style["id"]);
-            writeStyleSettings(
-              staticStyleRulesCSS,
-              getTheme(manifest),
-              style["id"],
-              "static",
-            );
-          } else if (style["type"] === "class-select") {
-            // Extract the class for every option in the select
-            const classSelectOptions = style["options"];
-            classSelectOptions.forEach((option) => {
-              const className = option["value"];
-              if (className) {
-                styleRulesCSS = extractClassToggleCss(cssString, className);
-                writeStyleSettings(
-                  styleRulesCSS,
-                  getTheme(manifest),
-                  style["id"],
-                  className,
-                );
-                staticStyleRulesCSS = extractClassToggleCss(
-                  cssString,
-                  className,
-                );
-                writeStyleSettings(
-                  staticStyleRulesCSS,
-                  getTheme(manifest),
-                  style["id"],
-                  className,
-                  "static",
-                );
-              } else {
-                console.warn(
-                  `No class name specified for option: ${JSON.stringify(option)}`,
-                );
-              }
-            });
-          } else {
-            console.warn(
-              `Unknown style setting type: ${variationRules[style["id"]]["type"]} for ${style["id"]}`,
-            );
-          }
-        });
+        console.log(
+          `Processing style setting: ${style["id"]} of type ${style["type"]}`,
+        );
+
+        // Write the style setting to the CSS string
+        if (style["type"] === "variable-text") {
+          // Use the default text
+          // Replace all lines with variable in the CSS string
+          result = replaceVariableValue(
+            result,
+            style["id"],
+            (style["quotes"] ?? false)
+              ? `'${style["default"]}'`
+              : style["default"],
+          );
+          staticResult = replaceVariableValue(
+            staticResult,
+            style["id"],
+            (style["quotes"] ?? false)
+              ? `'${style["default"]}'`
+              : style["default"],
+          );
+        } else if (style["type"] === "variable-number") {
+          // Use the default number
+          // Replace all lines with variable in the CSS string
+          result = replaceVariableValue(
+            result,
+            style["id"],
+            style["default"] + (style["format"] ?? ""),
+          );
+          staticResult = replaceVariableValue(
+            staticResult,
+            style["id"],
+            style["default"] + (style["format"] ?? ""),
+          );
+        } else if (style["type"] === "variable-number-slider") {
+          // Use the default number
+          // Replace all lines with variable in the CSS string
+          result = replaceVariableValue(
+            result,
+            style["id"],
+            style["default"] + (style["format"] ?? ""),
+          );
+          staticResult = replaceVariableValue(
+            staticResult,
+            style["id"],
+            style["default"] + (style["format"] ?? ""),
+          );
+        } else if (style["type"] === "variable-select") {
+          // Use the default select value
+          // Replace all lines with variable in the CSS string
+          result = replaceVariableValue(
+            result,
+            style["id"],
+            style["default"] + (style["format"] ?? ""),
+          );
+          staticResult = replaceVariableValue(
+            staticResult,
+            style["id"],
+            style["default"] + (style["format"] ?? ""),
+          );
+        } else if (style["type"] === "variable-color") {
+          // Use the default color
+          // Replace all lines with variable in the CSS string
+          result = replaceVariableValue(
+            result,
+            style["id"],
+            style["default"] + (style["format"] ?? ""),
+          );
+          staticResult = replaceVariableValue(
+            staticResult,
+            style["id"],
+            style["default"] + (style["format"] ?? ""),
+          );
+        } else if (style["type"] === "variable-themed-color") {
+          // Use the default themed colors
+          // This is a special case where we need to handle both light and dark themes
+          // for this, we use the `light-dark()` function in the CSS
+          result = replaceVariableValue(
+            result,
+            style["id"],
+            `light-dark(${style["default-light"]}, ${style["default-dark"]})`,
+          );
+          staticResult = replaceVariableValue(
+            staticResult,
+            style["id"],
+            `light-dark(${style["default-light"]}, ${style["default-dark"]})`,
+          );
+        } else if (style["type"] === "class-toggle") {
+          // Extract the class toggle CSS
+          styleRulesCSS = extractClassToggleCss(cssString, style["id"]);
+          writeStyleSettings(styleRulesCSS, getTheme(manifest), style["id"]);
+          staticStyleRulesCSS = extractClassToggleCss(cssString, style["id"]);
+          writeStyleSettings(
+            staticStyleRulesCSS,
+            getTheme(manifest),
+            style["id"],
+            "static",
+          );
+        } else if (style["type"] === "class-select") {
+          // Extract the class for every option in the select
+          const classSelectOptions = style["options"];
+          classSelectOptions.forEach((option) => {
+            const className = option["value"];
+            if (className) {
+              styleRulesCSS = extractClassToggleCss(cssString, className);
+              writeStyleSettings(
+                styleRulesCSS,
+                getTheme(manifest),
+                style["id"],
+                className,
+              );
+              staticStyleRulesCSS = extractClassToggleCss(cssString, className);
+              writeStyleSettings(
+                staticStyleRulesCSS,
+                getTheme(manifest),
+                style["id"],
+                className,
+                "static",
+              );
+            } else {
+              console.warn(
+                `No class name specified for option: ${JSON.stringify(option)}`,
+              );
+            }
+          });
+        } else {
+          console.warn(
+            `Unknown style setting type: ${variationRules[style["id"]]["type"]} for ${style["id"]}`,
+          );
+        }
       });
     }
 

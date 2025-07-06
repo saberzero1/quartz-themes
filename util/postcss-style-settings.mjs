@@ -1,6 +1,7 @@
 import yaml from "js-yaml"
 import postcss from "postcss"
 import { endsWithAnyOf } from "./util.mjs"
+import fs from "fs"
 
 String.prototype.endsWithAnyOf = endsWithAnyOf
 
@@ -43,6 +44,24 @@ export function extractStyleSettings(cssString) {
   return blocks
     .map(parseSettingsYaml)
     .filter(Boolean)
+}
+
+/**
+ * Extracts style settings from a YAML file.
+ *
+ * @param {string} filePath - The path to the YAML file
+ * @returns {object[]} Array of settings objects
+ * @throws {Error} If the file cannot be read or parsed
+ */
+export function extractStyleSettingsFromFile(filePath) {
+  try {
+    const yamlString = fs.readFileSync(filePath, 'utf8')
+    const settings = yaml.load(yamlString)
+    return settings && Array.isArray(settings.settings) ? settings.settings : []
+  } catch (e) {
+    console.error(`Failed to read or parse file ${filePath}:`, e)
+    return []
+  }
 }
 
 /**

@@ -41,12 +41,11 @@ export async function writePrettier(file, content, encoding = "utf8", clean = tr
       content = prettierSCSS(content);
     }
   }*/
-  let idx = 0;
   if (clean) {
     let compare = content
     content = cleanup(content)
 
-    while (compare !== content && idx < 100) {
+    while (compare !== content) {
       compare = content;
       content = cleanup(content)
       idx += 1;
