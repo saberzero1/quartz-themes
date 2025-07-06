@@ -48,7 +48,6 @@ export async function writePrettier(file, content, encoding = "utf8", clean = tr
     while (compare !== content) {
       compare = content;
       content = cleanup(content)
-      idx += 1;
     }
   }
 
@@ -113,6 +112,10 @@ export async function prettierSCSS(scss) {
  */
 export function cleanCSS(base, inject, mode = "both", extract = false) {
   let result = `${base}\n${inject}`
+
+  // Remove comments
+  result = result.replace(/\/\*.*?\*\//gms, "")
+
   result = result.replace(/^@media screen and \(forced-colors: active\) \{.*?^\}$/gms, "") // Remove forced colors media queries
   result = result.replace(/^@container.*?^\}$/gms, "") // Remove container media queries
   result = result.replace(/^@scope.*?^\}$/gms, "") // Remove scope media queries
