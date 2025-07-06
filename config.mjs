@@ -4,9 +4,9 @@ import {
   getCurrentFolder,
 } from "./util/util.mjs";
 
-export const testMode = false;
+export const testMode = true;
 export const staticMode = true;
-export const themeToTest = "Big & Bold";
+export const themeToTest = "Oliviers Theme";
 
 export const themes = getValueFromDictionary(
   readJsonFileAsDictionary(getCurrentFolder(), "themes.json"),
