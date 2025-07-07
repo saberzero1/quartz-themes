@@ -1,9 +1,0 @@
-body.color-scheme-options-simplicity-topaz.bt-bubble-layout.bt-bubble-not-file-tree:not(
-    .background-settings-workplace-background-image
-  )
-  .workspace-leaf-content:is(
-    [data-type="file-explorer"],
-    [data-type="mk-file-view"]
-  ) {
-  background-color: var(--background-primary-alt);
-}

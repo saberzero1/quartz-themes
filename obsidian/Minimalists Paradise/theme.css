@@ -663,7 +663,7 @@ SOFTWARE.
 
   .cm-s-obsidian span.cm-property {
     color: var(--syntax-property);
-    /* métodos chamados via obj.metodo() */
+    /* metodos chamados via obj.metodo() */
     font-style: italic;
   }
 

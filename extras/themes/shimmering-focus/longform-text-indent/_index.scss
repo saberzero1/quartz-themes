@@ -1,8 +1,0 @@
-.longform-text-indent div:has(> p) + div > p {
-  text-indent: 1.5em;
-  margin-top: 0;
-}
-
-.longform-text-indent div:has(+ div > p) > p {
-  margin-bottom: 0;
-}

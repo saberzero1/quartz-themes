@@ -1,9 +1,0 @@
-.add-link-space
-  a:is(
-    a.external-link,
-    a.internal-link,
-    .markdown-source-view .cm-underline
-  ):not(h1 a, h2 a, h3 a, h4 a, h5 a, h6 a) {
-  padding-left: 4px;
-  padding-right: 4px;
-}

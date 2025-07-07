@@ -176,7 +176,6 @@ body {
   --list-bullet-end-padding: 1.4rem;
   --file-line-width: calc(var(--editor-width) * 1px);
   --nav-item-children-padding-start: 1px;
-  --window-font-size: 15;
   --mac-window-opacity: 0.15;
   --win-bg-image-url: url("https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
   --input-radius: 14px;
@@ -184,7 +183,6 @@ body {
 }
 
 body.is-mobile {
-  --window-font-size: calc(var(--window-font-size) * 0.9);
   --input-radius: 20px;
   --safe-area-inset-bottom: env(safe-area-inset-bottom);
 }
@@ -418,7 +416,7 @@ body.is-mobile .nav-file-title {
 .tree-item-inner.nav-file-title-content,
 .workspace .mod-root .workspace-tab-header-inner-title,
 .tree-item-inner-text {
-  font-size: calc(var(--window-font-size) * 1px) !important;
+  font-size: 15px !important;
   /* font-family: 'number-font' !important; */
 }
 

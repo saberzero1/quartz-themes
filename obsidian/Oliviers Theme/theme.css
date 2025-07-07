@@ -2,7 +2,7 @@
             Olivier’s Theme
 
             01.04.2023    VERSION 1 !
-                            Les settings ont été traduits en anglais.                            1.0.0
+                            Les settings ont ete traduits en anglais.                            1.0.0
             19.04.2023    Corrected the popover “preview” of a non existing note                    1.0.1
             20.04.2023    Added a class toggle to optionally set the paper background also in
                         Live Preview mode                                                        1.1.0
@@ -215,26 +215,26 @@
 
 --------------------------------------------------------------------------------------------------------
 
-Bookmarks:    OpSpl01:    Définition des couleurs
-                        Déclarations générales
+Bookmarks:    OpSpl01:    Definition des couleurs
+                        Declarations generales
             OpSpl02:    Themes variables “--OT-…”
             OpSpl03:    Initialisation des variables globales
             OpSpl04:        Accent colors
             OpSpl05:        Other variables: dimensions, spacings, borders, etc.
             OpSpl06:        Text selection tuning for light and dark mode. Tuning of the red in dark mode
-            OpSpl07:    Définition des palettes pour le mode “light”
-            OpSpl08:    Définition des palettes pour le mode “dark”
-            OpSpl09:    Définition des “Accent Colors”, pour les palettes “light”
-            OpSpl10:    Définition des “Accent Colors”, pour les palettes “dark”
-            OpSpl11:    Définition des couleurs du texte normal et des H1, H3 et H5
-            OpSpl12:    Définition des couleurs des “Properties pills”
-            OpSpl13:    Définition des couleurs pour le “highlight”
-            OpSpl14:    Définition des couleurs pour le fond du panneau d’édition
-            OpSpl15:    Définition de la couleur du texte en mode d’édition
-            OpSpl16:    Définition de l’icône en haut à droite d’un panneau d’édition
+            OpSpl07:    Definition des palettes pour le mode “light”
+            OpSpl08:    Definition des palettes pour le mode “dark”
+            OpSpl09:    Definition des “Accent Colors”, pour les palettes “light”
+            OpSpl10:    Definition des “Accent Colors”, pour les palettes “dark”
+            OpSpl11:    Definition des couleurs du texte normal et des H1, H3 et H5
+            OpSpl12:    Definition des couleurs des “Properties pills”
+            OpSpl13:    Definition des couleurs pour le “highlight”
+            OpSpl14:    Definition des couleurs pour le fond du panneau d’edition
+            OpSpl15:    Definition de la couleur du texte en mode d’edition
+            OpSpl16:    Definition de l’icône en haut à droite d’un panneau d’edition
             OpSpl17:    basic typography of the EDIT mode: font size, line length and line height
-            OpSpl18:    Les headings en mode d’édition
-            OpSpl19:    La fonte du mode d’édition
+            OpSpl18:    Les headings en mode d’edition
+            OpSpl19:    La fonte du mode d’edition
                         La fonte “monospaced”
             OpSpl20:    Autres ajustements:
                             les crochets des “tasks”
@@ -242,7 +242,7 @@ Bookmarks:    OpSpl01:    Définition des couleurs
                             les pastilles indicatives sur la feuille de publication
                             YAML metadata
                             les petits boutons sur la feuille de publication
-                            l’édition des fichiers dans la “nav bar”
+                            l’edition des fichiers dans la “nav bar”
             OpSpl21:    Les sidebars
             OpSpl22:    Suggestions pannels and prompts
             OpSpl23:    Adaptations pour le plugin “File Info”
@@ -276,7 +276,7 @@ Bookmarks:    OpSpl01:    Définition des couleurs
             OpSpl47        Calendar plugin
             OpSpl48        Other interface elements
             OpSpl49        Empty pane
-            OpSpl50        Mise en évidence du texte trouvé (“search match”) dans les panneaux d’édition
+            OpSpl50        Mise en evidence du texte trouve (“search match”) dans les panneaux d’edition
             OpSpl51        Vertical Tabs plugin
             OpSpl52        Floating TOC plugin
             OpSpl53        Text selection when it takes the accent color
@@ -298,7 +298,7 @@ Bookmarks:    OpSpl01:    Définition des couleurs
 *******************************************************************/
 
 /*    Bookmark    OpSpl01    */
-/* —————————————————————————————— Définition des couleurs —————————————————————————————— */
+/* —————————————————————————————— Definition des couleurs —————————————————————————————— */
 :root {
   --obsidian-violet: hsl(258, 88%, 66%);
   --favorite-blue: #0f056b;
@@ -309,17 +309,17 @@ Bookmarks:    OpSpl01:    Définition des couleurs
   --sky-blue: #24d3ff;
 
   --stabilo-bleu-clair: #bbe4f3;
-  --stabilo-bleu-foncé: #39afdc;
+  --stabilo-bleu-fonce: #39afdc;
   --stabilo-jaune-clair: #fbedb5;
-  --stabilo-jaune-foncé: #f1e740;
+  --stabilo-jaune-fonce: #f1e740;
   --stabilo-orange-clair: #ffbf80; /*    #F4A384;    */
-  --stabilo-orange-foncé: #f39539;
+  --stabilo-orange-fonce: #f39539;
   --stabilo-rose-clair: #f4a5b6; /*    #EA93BE;    */
-  --stabilo-rose-foncé: #e85267;
+  --stabilo-rose-fonce: #e85267;
   --stabilo-vert-clair: #b4dbc5;
-  --stabilo-vert-foncé: #01c083;
+  --stabilo-vert-fonce: #01c083;
   --stabilo-violet-clair: #ad89be;
-  --stabilo-violet-foncé: #d72f83;
+  --stabilo-violet-fonce: #d72f83;
 
   --solarized-base03: #002b36;
   --solarized-base02: #073642;
@@ -337,15 +337,15 @@ Bookmarks:    OpSpl01:    Définition des couleurs
   --solarized-blue: #268bd2;
   --solarized-cyan: #2aa198;
   --solarized-green: #859900;
-} /* -------------------- ↑ définition des couleurs ↑ --------------------    */
+} /* -------------------- ↑ definition des couleurs ↑ --------------------    */
 
 /*    Bookmark    OpSpl02    */
-/* —————————————————————————————— OpSpl Déclarations générales —————————————————————————————— */
+/* —————————————————————————————— OpSpl Declarations generales —————————————————————————————— */
 body {
   /* ---------- Theme’s variables ----------    */
-  /*    Parce que les valeurs par défaut des variables gérées par le plugin “Style Settings”
-        ne sont pas automatiquement appliquées quand on change de thème, il est judicieux
-        de définir ici leurs valeurs par défaut. Elles sont ici dans le même ordre que dans les “Settings”.    */
+  /*    Parce que les valeurs par defaut des variables gerees par le plugin “Style Settings”
+        ne sont pas automatiquement appliquees quand on change de thème, il est judicieux
+        de definir ici leurs valeurs par defaut. Elles sont ici dans le même ordre que dans les “Settings”.    */
   --OT-UI-font-size: 15px;
   --OT-readingMode-text-size: 17px;
   --OT-readingMode-line-width: 42em;
@@ -399,7 +399,7 @@ body {
   --OT-setting-item-name: var(--color-base-100);
   --OT-sidebarTab-background-active-hover: var(--color-accent-1);
   --OT-sidebarTab-background-active: var(--color-accent-2);
-  --OT-stabilo-mark: var(--stabilo-jaune-foncé);
+  --OT-stabilo-mark: var(--stabilo-jaune-fonce);
   --OT-stabilo-text: var(--text-normal);
   --OT-syntax-markers: var(--color-base-50);
   --OT-tab-background-active-hover: var(--color-accent-1);
@@ -426,7 +426,7 @@ body {
     --color-accent-1
   ); /*    le fond des “tooltips”    */
   --background-modifier-success-rgb:
-    106, 245, 161; /* pour les progress bars, je préfère une nuance de vert un peu plus claire */
+    106, 245, 161; /* pour les progress bars, je prefère une nuance de vert un peu plus claire */
   --background-modifier-success: rgb(106, 245, 161);
   --background-modifier-active-hover: var(--color-accent-1);
 
@@ -516,15 +516,15 @@ body {
   --metadata-border-width: 0;
   --metadata-divider-color: var(
     --color-base-35
-  ); /*    le filet de séparation des différentes valeurs                */
+  ); /*    le filet de separation des differentes valeurs                */
   --metadata-divider-width: 1;
   --metadata-label-text-color: var(--color-base-70);
   --metadata-label-background-active: var(
     --background-modifier-form-field
-  ); /*    le fond d’un label en train d’être édité                */
+  ); /*    le fond d’un label en train d’être edite                */
   --metadata-input-background-active: var(
     --metadata-label-background-active
-  ); /*    le fond d’une valeur en train d’être éditée                */
+  ); /*    le fond d’une valeur en train d’être editee                */
 
   --nav-item-color: var(--OT-color-on-base-20);
   --nav-item-color-hover: var(--OT-color-on-accent-1);
@@ -535,8 +535,8 @@ body {
   --nav-item-background-selected: var(--color-accent-3);
   --nav-item-background-hover: var(--color-accent-1);
   --nav-collapse-icon-color: var(--nav-indentation-guide-color);
-  --nav-collapse-icon-color-collapsed: red; /*    version 1.8.10: pas utilisé    */
-  /*    je ne redéfinis pas les --nav-heading-…    */
+  --nav-collapse-icon-color-collapsed: red; /*    version 1.8.10: pas utilise    */
+  /*    je ne redefinis pas les --nav-heading-…    */
 
   --pill-color-hover: var(--OT-color-on-accent-1);
   --pill-background-hover: var(--color-accent-1);
@@ -549,7 +549,7 @@ body {
   --status-bar-background: var(--color-accent-2);
   --status-bar-border-color: red;
   --status-bar-font-size: var(--font-ui-small);
-  --status-bar-border-width: 1px 0 0 1px; /*    un fin bord en haut de la status bar pour la faire ressortir du fond, quand elle a la même couleur (c’était un problème, parfois, quand le sidepannel de droite était ouvert) */
+  --status-bar-border-width: 1px 0 0 1px; /*    un fin bord en haut de la status bar pour la faire ressortir du fond, quand elle a la même couleur (c’etait un problème, parfois, quand le sidepannel de droite etait ouvert) */
   /*    --status-bar-radius:        0 0 0 0; */
 
   --tab-text-color: var(--color-base-50);
@@ -563,7 +563,7 @@ body {
   --tab-stacked-text-transform: rotate(180deg);
 
   --table-background: var(--OT-table-background);
-  --table-column-alt-background: undefined;
+  --table-column-alt-background: transparent;
   --table-header-background-hover: transparent; /*    var(--table-header-background);    */
   --table-header-color: var(--h3-color);
   --table-row-alt-background-hover: transparent; /*    var(--table-background);    */
@@ -576,11 +576,11 @@ body {
 
   --tab-container-background: var(--color-base-05);
 
-  /*    --text-muted:                var(--color-base-50);            je me suis quelque peu égaré, le jour où j’avais décidé de rendre encore plus faible le texte “muted”. */
+  /*    --text-muted:                var(--color-base-50);            je me suis quelque peu egare, le jour où j’avais decide de rendre encore plus faible le texte “muted”. */
   --text-on-accent: var(--OT-color-on-accent-1);
   --text-on-accent-inverted: var(
     --color-accent-1
-  ); /*    dans "app.css" il est défini comme “black”. Utilisé dans le canvas    */
+  ); /*    dans "app.css" il est defini comme “black”. Utilise dans le canvas    */
   --text-accent: var(--color-accent-2);
   --text-accent-hover: var(--OT-color-on-accent-1);
   --interactive-normal: var(--color-accent-3);
@@ -667,16 +667,16 @@ body {
 
   --list-bullet-size: 0.4em;
   --list-indent: 1.3em;
-  --list-spacing: 0rem; /*    reset, afin de pouvoir décider de mes réglages persos ci-dessous    */
+  --list-spacing: 0rem; /*    reset, afin de pouvoir decider de mes reglages persos ci-dessous    */
   --list-spacing-below: 0.8rem; /*    en-dessous du bloc constituant une liste    */
-  --list-spacing-1: 0.3rem; /*    pas utilisé; mais au cas où…    */
+  --list-spacing-1: 0.3rem; /*    pas utilise; mais au cas où…    */
   --list-spacing-2: 0.3rem; /*    en-dessous du dernier item du 2ème niveau de liste    */
   --list-spacing-3: 0.2rem; /*    en-dessous du dernier item du 3ème niveau de liste    */
 
   --metadata-border-radius: 7px;
   --metadata-label-font-weight: var(--font-semibold);
   --metadata-padding: 0;
-  --metadata-property-padding: 0em 0em 0em 0.3em; /*    verticalement: compact; horizontalement: les lignes de séparation ne vont pas tout à fait jusqu’au bord de la boîte. Je trouve cela plus plaisant.    */
+  --metadata-property-padding: 0em 0em 0em 0.3em; /*    verticalement: compact; horizontalement: les lignes de separation ne vont pas tout à fait jusqu’au bord de la boîte. Je trouve cela plus plaisant.    */
 
   --modal-height: 88vh;
   --modal-max-height: 98vh;
@@ -699,7 +699,7 @@ body {
 }
 
 /*    Bookmark    OpSpl06    */
-/*    la sélection du texte prend la couleur de l’accentuation, avec une luminosité adaptée aux modes “light” et “dark”    */
+/*    la selection du texte prend la couleur de l’accentuation, avec une luminosite adaptee aux modes “light” et “dark”    */
 .theme-light {
   --OT-text-selection-background: hsl(var(--accent-h), var(--accent-s), 85%);
   --OT-text-selection-color: var(--text-normal);
@@ -709,13 +709,13 @@ body {
   --OT-text-selection-color: var(--text-normal);
   --OT-kbd: white;
   --OT-kbd-background: #6d6d6d;
-  /*    je trouve le rouge un peu trop «pétant» → je corrige    */
+  /*    je trouve le rouge un peu trop «petant» → je corrige    */
   --color-red-rgb: 199, 56, 60;
   --color-red: #ef5547;
   --background-modifier-form-field: var(--color-base-00);
 }
 
-/* -------------------- ↑ OpSpl Déclarations générales -------------------- ↑ */
+/* -------------------- ↑ OpSpl Declarations generales -------------------- ↑ */
 
 /*    Bookmark    OpSpl07    */
 /* —————————————————————————————— OpSpl Color Schemes —————————————————————————————— */
@@ -873,7 +873,7 @@ body {
 
   --OT-color-on-base-20: #0760ba;
   --OT-metadata-background: #f4f5f6;
-  --OT-setting-item-description: #529dff; /*    le texte descriptif complémentaire dans le panneau des Settings    */
+  --OT-setting-item-description: #529dff; /*    le texte descriptif complementaire dans le panneau des Settings    */
   --OT-table-background: #f4f9ff;
   --OT-table-header-background: #e2eefe;
   --OT-table-alt-background: #ebf0f6;
@@ -951,7 +951,7 @@ body {
   --OT-color-muted-on-base-20: #7fb5dc;
   --OT-nav-folder-title-color: var(--OT-color-muted-on-base-20);
   --OT-search-settings-item-name: var(--OT-color-on-base-20);
-  --OT-setting-item-description: #3676a4; /*    le texte descriptif complémentaire dans le panneau des Settings    */
+  --OT-setting-item-description: #3676a4; /*    le texte descriptif complementaire dans le panneau des Settings    */
 } /*    ↑ lightPalette-metallicBlue ↑    */
 /*    ----------------------------------------------    */
 .theme-light.lightPalette-Orange {
@@ -1162,7 +1162,7 @@ body {
   --accent-s: 76% !important;
   --accent-l: 65% !important;
 
-  --OT-stabilo-mark: var(--stabilo-orange-foncé);
+  --OT-stabilo-mark: var(--stabilo-orange-fonce);
   --OT-stabilo-text: var(--color-base-00);
 
   --OT-table-header-background: #ffd7a6;
@@ -1388,7 +1388,7 @@ body {
   --OT-color-muted-on-base-20: #1faf52;
 
   --OT-stabilo-text: #24514c !important;
-  --OT-stabilo-mark: var(--stabilo-vert-foncé);
+  --OT-stabilo-mark: var(--stabilo-vert-fonce);
 
   --OT-table-background: #051c0e;
   --OT-table-header-background: var(--color-base-05);
@@ -1622,7 +1622,7 @@ body {
 .theme-dark.lightPalette-sunnyMemos.darkPalette-default {
   --OT-theme-reference-color: #512d00;
   --color-base-00: #402400; /*    --background-primary    —    fond des fiches        */
-  --color-base-20: #512d00; /*    --background-secondary    —     fond des panneaux latéraux    */
+  --color-base-20: #512d00; /*    --background-secondary    —     fond des panneaux lateraux    */
   --color-base-05: #402400; /*    --background-secondary-alt    — en-têtes de tables et des panneaux    */
   --color-base-10: yellow; /*    --background-primary-alt    */
   --color-base-35: #955300; /*    bordures            */
@@ -1641,7 +1641,7 @@ body {
   --color-accent-1: #5c370a !important;
   --color-accent-3: #c77816 !important;
 
-  --OT-stabilo-mark: var(--stabilo-orange-foncé);
+  --OT-stabilo-mark: var(--stabilo-orange-fonce);
   --OT-stabilo-text: #734000;
   --OT-table-background: #2f1a00;
   /*    --OT-table-header-background:    #1E1100; */
@@ -3013,7 +3013,7 @@ body {
 }
 
 .theme-dark.lightPalette-sunnyMemos.accentColor-darkMode-alternative-1 {
-  --accent-h: 183 !important; /*    c’est pour la sélection du texte qu’on explicite ici en HSL la couleur d’accentuation n°2    */
+  --accent-h: 183 !important; /*    c’est pour la selection du texte qu’on explicite ici en HSL la couleur d’accentuation n°2    */
   --accent-s: 100% !important;
   --accent-l: 23% !important;
   --color-accent-1: #004d51 !important;
@@ -3025,7 +3025,7 @@ body {
   /*    --OT-color-muted-on-accent-1:    grey; */
 }
 .theme-dark.lightPalette-sunnyMemos.accentColor-darkMode-alternative-2 {
-  --accent-h: 243 !important; /*    c’est pour la sélection du texte qu’on explicite ici en HSL la couleur d’accentuation n°2    */
+  --accent-h: 243 !important; /*    c’est pour la selection du texte qu’on explicite ici en HSL la couleur d’accentuation n°2    */
   --accent-s: 100% !important;
   --accent-l: 36% !important;
   --color-accent-1: #060073 !important;
@@ -3697,27 +3697,27 @@ body {
   --OT-stabilo-text: #e2d6e8 !important;
 }
 .highlight-color-strongBlue {
-  --OT-stabilo-mark: var(--stabilo-bleu-foncé) !important;
+  --OT-stabilo-mark: var(--stabilo-bleu-fonce) !important;
   --OT-stabilo-text: #bbe4f3 !important;
 }
 .highlight-color-strongYellow {
-  --OT-stabilo-mark: var(--stabilo-jaune-foncé) !important;
+  --OT-stabilo-mark: var(--stabilo-jaune-fonce) !important;
   /*    --OT-stabilo-text:    #987B08;    */
 }
 .highlight-color-strongOrange {
-  --OT-stabilo-mark: var(--stabilo-orange-foncé) !important;
+  --OT-stabilo-mark: var(--stabilo-orange-fonce) !important;
   --OT-stabilo-text: #fdefe1 !important;
 }
 .highlight-color-strongRose {
-  --OT-stabilo-mark: var(--stabilo-rose-foncé) !important;
+  --OT-stabilo-mark: var(--stabilo-rose-fonce) !important;
   --OT-stabilo-text: #f5cce0 !important;
 }
 .highlight-color-strongGreen {
-  --OT-stabilo-mark: var(--stabilo-vert-foncé) !important;
+  --OT-stabilo-mark: var(--stabilo-vert-fonce) !important;
   --OT-stabilo-text: #8ffedb !important;
 }
 .highlight-color-strongViolet {
-  --OT-stabilo-mark: var(--stabilo-violet-foncé) !important;
+  --OT-stabilo-mark: var(--stabilo-violet-fonce) !important;
   --OT-stabilo-text: #f5cce0 !important;
 }
 /*    --------------------------------------------------    */
@@ -3746,27 +3746,27 @@ body {
   --OT-stabilo-text: #432c4f !important;
 }
 .theme-dark.highlight-color-dark-strongBlue {
-  --OT-stabilo-mark: var(--stabilo-bleu-foncé) !important;
+  --OT-stabilo-mark: var(--stabilo-bleu-fonce) !important;
   --OT-stabilo-text: var(--text-normal) !important;
 }
 .theme-dark.highlight-color-dark-strongYellow {
-  --OT-stabilo-mark: var(--stabilo-jaune-foncé) !important;
+  --OT-stabilo-mark: var(--stabilo-jaune-fonce) !important;
   --OT-stabilo-text: #2a280b !important;
 }
 .theme-dark.highlight-color-dark-strongOrange {
-  --OT-stabilo-mark: var(--stabilo-orange-foncé) !important;
+  --OT-stabilo-mark: var(--stabilo-orange-fonce) !important;
   --OT-stabilo-text: var(--color-base-00) !important;
 }
 .theme-dark.highlight-color-dark-strongRose {
-  --OT-stabilo-mark: var(--stabilo-rose-foncé) !important;
+  --OT-stabilo-mark: var(--stabilo-rose-fonce) !important;
   --OT-stabilo-text: var(--color-base-00) !important;
 }
 .theme-dark.highlight-color-dark-strongGreen {
-  --OT-stabilo-mark: var(--stabilo-vert-foncé) !important;
+  --OT-stabilo-mark: var(--stabilo-vert-fonce) !important;
   --OT-stabilo-text: var(--color-base-00) !important;
 }
 .theme-dark.highlight-color-dark-strongViolet {
-  --OT-stabilo-mark: var(--stabilo-violet-foncé) !important;
+  --OT-stabilo-mark: var(--stabilo-violet-fonce) !important;
   --OT-stabilo-text: var(--text-normal) !important;
 }
 
@@ -4592,14 +4592,14 @@ p,
 }
 
 /* ----- OpSpl Checkbox -----
-    j’épaissis quelque peu le bord de la checkbox */
+    j’epaissis quelque peu le bord de la checkbox */
 input[type="checkbox"] {
   border: 2px solid var(--checkbox-border-color);
 }
 
 /*    Bookmark    OpSpl16    */
 /* —————————————————————————————— OpSpl Editing mode —————————————————————————————— */
-/* ---------- icône indiquant le mode “édition”, en haut à gauche du panneau d’édition ----------
+/* ---------- icône indiquant le mode “edition”, en haut à gauche du panneau d’edition ----------
     Let’s display an icon in the top left corner of the edit panel */
 .markdown-source-view.mod-cm6 .cm-editor:before {
   /*    couleur de la pastille:    #222976    */
@@ -5477,7 +5477,7 @@ input[type="checkbox"] {
   top: 0;
   right: 0;
 }
-/*    ------------------------- ↑ icône indiquant le mode “édition”, en haut à gauche du panneau d’édition ↑ -------------------------    */
+/*    ------------------------- ↑ icône indiquant le mode “edition”, en haut à gauche du panneau d’edition ↑ -------------------------    */
 
 /*    Bookmark    OpSpl17    */
 /* ---------- basic typography of the EDIT mode ---------- */
@@ -5560,7 +5560,7 @@ input[type="checkbox"] {
 .markdown-source-view.mod-cm6 .cm-line.HyperMD-table-row {
   line-height: 1.1em;
 }
-/*    en mode “Edit, RAW” également, je trouve judicieux que le code soit sur son propre fond    */
+/*    en mode “Edit, RAW” egalement, je trouve judicieux que le code soit sur son propre fond    */
 .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
   background-color: var(--code-background);
 }
@@ -5613,17 +5613,17 @@ input[type="checkbox"] {
     background-color: var(--color-accent-1);
   }
 }
-/*    édition des fichiers dans la “nav bar”    */
+/*    edition des fichiers dans la “nav bar”    */
 .tree-item-self.is-being-renamed:focus-within {
   color: var(--color-base-100);
   background-color: var(--color-base-00);
 }
-/*    certains indicateurs dans le modal de sélection des Themes    */
+/*    certains indicateurs dans le modal de selection des Themes    */
 .flair.mod-pop {
   color: var(--OT-color-on-accent-2);
   background-color: var(--color-accent-2);
 }
-/*    je ne sais pas pourquoi le plugin “Note Status” rend invisible ce bouton ⭢ je le rétablis    */
+/*    je ne sais pas pourquoi le plugin “Note Status” rend invisible ce bouton ⭢ je le retablis    */
 .search-input-clear-button,
 .note-status-search-clear-button {
   opacity: 1;
@@ -5668,7 +5668,7 @@ input[type="checkbox"] {
   }
 }
 
-/*    liste de sélection, dans la barre latérale des settings    */
+/*    liste de selection, dans la barre laterale des settings    */
 body:not(.is-phone) .horizontal-tab-nav-item.is-active,
 body:not(.is-phone) .vertical-tab-nav-item.is-active {
   color: var(--nav-item-color-active);
@@ -5686,7 +5686,7 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active:hover {
   color: var(--OT-button-text-hover);
   background-color: var(--OT-button-background-hover);
 }
-/*    settings: outils de sélection avec un curseur (sliders)    */
+/*    settings: outils de selection avec un curseur (sliders)    */
 input[type="range"] {
   background-color: var(--color-accent-2);
 }
@@ -5700,7 +5700,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
 /*    Bookmark    OpSpl22    */
 /*    panneaux de suggestions et prompts    */
 .suggestion-container {
-  /*    le texte général des container de sélection    */
+  /*    le texte general des container de selection    */
   color: var(--OT-menu-text-color);
   background-color: var(--OT-menu-background);
 }
@@ -5708,7 +5708,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
   color: var(--OT-color-on-accent-1);
 }
 .suggestion-item.mod-complex .suggestion-note {
-  /*    le texte complémentaire dans les containers de sélection    */
+  /*    le texte complementaire dans les containers de selection    */
   /*    color:    cyan;    */ /*    var(--OT-color-muted-on-base-20);    */
 }
 .suggestion-item.mod-complex.is-selected .suggestion-note,
@@ -5733,7 +5733,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
     color: var(--OT-color-muted-on-accent-1);
   }
 }
-/*    panneau de réglage des résultats de la recherche    */
+/*    panneau de reglage des resultats de la recherche    */
 .search-params .setting-item-name {
   color: var(--OT-search-settings-item-name);
 }
@@ -5804,7 +5804,7 @@ input.prompt-input {
 }
 body:not(.is-grabbing) .tree-item-self.is-active:hover,
 .tree-item-self.is-active:hover {
-  /*    pour que ce qui est sélectionné soit visiblement survolé    */
+  /*    pour que ce qui est selectionne soit visiblement survole    */
   color: var(--OT-color-on-accent-1);
   background-color: var(--color-accent-1);
 }
@@ -5874,7 +5874,7 @@ body:not(.is-grabbing) .nav-folder-title.is-active:hover {
   background-color: var(--color-accent-2);
 }
 
-/* amélioration de la lisibilité de la liste des backlinks */
+/* amelioration de la lisibilite de la liste des backlinks */
 .search-result-file-match {
   color: var(--text-normal); /* au lieu de `--text-muted` */
 }
@@ -6108,7 +6108,7 @@ body:not(.is-grabbing) .nav-folder-title.is-active:hover {
 
 /*    Bookmark    OpSpl25    */
 /*    —————————————————————————————— OpSpl Tables —————————————————————————————— */
-/*    la table dans son entier; quelques ajustements que je trouve judicieux, qui font partie de mon “par défaut”    */
+/*    la table dans son entier; quelques ajustements que je trouve judicieux, qui font partie de mon “par defaut”    */
 .cm-embed-block.markdown-rendered .block-language-dataview,
 .markdown-rendered table,
 .markdown-rendered .table-view-table {
@@ -6143,7 +6143,7 @@ td .cm-editor .cm-line {
   border: 1px dotted;
 }
 
-/*    la ligne d’en-tête, dans mes deux styles améliorés    */
+/*    la ligne d’en-tête, dans mes deux styles ameliores    */
 .OT-tables-custom .markdown-rendered thead tr,
 .OT-tables-tinted-rows .markdown-rendered thead tr {
   --table-header-size: 1em;
@@ -6192,16 +6192,16 @@ td .cm-editor .cm-line {
   padding-top: 0.5em;
 }
 /* Suppression du “breadcrumb” dans la title bar (titre des panneaux),
-    car, sur les écrans de portables, il prend trop de place.
-    Je préfère l’indication dans la status bar, via le plugin “Show Current File Path”*/
+    car, sur les ecrans de portables, il prend trop de place.
+    Je prefère l’indication dans la status bar, via le plugin “Show Current File Path”*/
 .view-header-title-parent .view-header-breadcrumb,
 .view-header-title-parent .view-header-breadcrumb-separator {
   display: none;
 }
 
-/* mise en évidence du panneau qui a le focus */
+/* mise en evidence du panneau qui a le focus */
 /* J’ai agrandi, via une variable, la taille du titre des panneaux qui n’ont pas le focus.
-    Mais je diminue l’intensité de la couleur du texte.        */
+    Mais je diminue l’intensite de la couleur du texte.        */
 .view-header-title {
   color: var(--OT-view-header-title-no-focus-color);
   letter-spacing: 0.02em !important; /* à cause du “bold”    */
@@ -6246,7 +6246,7 @@ td .cm-editor .cm-line {
   background-color: var(--color-accent-2);
 }
 
-/*    le hovering des en-têtes, tel qu’il est défini dans “app.css” ne me plaît pas.    */
+/*    le hovering des en-têtes, tel qu’il est defini dans “app.css” ne me plaît pas.    */
 @media (hover: hover) {
   .workspace-tab-header.is-active .workspace-tab-header-status-icon:hover,
   .workspace-tab-header.is-active
@@ -6307,7 +6307,7 @@ td .cm-editor .cm-line {
   border-top: none;
   border-bottom: none;
 }
-/*    suppression du filet horizontal en bas des panneaux qui se trouvent dans les sidebars; la mise en évidence de la tab bar suffit    */
+/*    suppression du filet horizontal en bas des panneaux qui se trouvent dans les sidebars; la mise en evidence de la tab bar suffit    */
 .workspace-split.mod-left-split .view-content,
 .workspace-split.mod-right-split .view-content {
   border-bottom: none;
@@ -6426,7 +6426,7 @@ button {
   background-color: var(--OT-button-background-normal); /*    nothing    */
 }
 button:not(.clickable-icon) {
-  /*    boutons affichés par "Metadata Menu" à côté des properties qu’il gère    */
+  /*    boutons affiches par "Metadata Menu" à côte des properties qu’il gère    */
   /*    background-color:    var(--OT-button-background-normal);    /*    interactive-normal    */
 }
 @media (hover: hover) {
@@ -6607,7 +6607,7 @@ button.mod-muted {
   color: var(--OT-color-on-accent-1);
   background-color: var(--color-accent-1);
 }
-/*    pour annuler l’effet de ces sélecteurs dans “app.css”    */
+/*    pour annuler l’effet de ces selecteurs dans “app.css”    */
 .mod-left-split
   .workspace-tab-header.has-active-menu
   .workspace-tab-header-inner-icon,
@@ -6654,7 +6654,7 @@ button.mod-muted {
 }
 /*    -------------------- ↑ Sidebar tabs -------------------- ↑ */
 
-/*    ———————————————————— Menu déroulant ———————————————    */
+/*    ———————————————————— Menu deroulant ———————————————    */
 .menu {
   color: var(--OT-menu-text-color);
   background-color: var(--OT-menu-background);
@@ -6677,7 +6677,7 @@ button.mod-muted {
     color: var(--OT-color-on-accent-1);
   }
 }
-/*    -------------------- ↑ Menu déroulant -------------------- ↑ */
+/*    -------------------- ↑ Menu deroulant -------------------- ↑ */
 
 /*    Bookmark    OpSpl28    */
 /* —————————————————————————————— OpSpl Settings pannel —————————————————————————————— */
@@ -6688,7 +6688,7 @@ button.mod-muted {
   margin-bottom: 0;
 }
 
-/* L’espacement vertical de la liste des différents “tabs” dans la colonne de gauche du panneau des “Settings” */
+/* L’espacement vertical de la liste des differents “tabs” dans la colonne de gauche du panneau des “Settings” */
 .horizontal-tab-nav-item,
 .vertical-tab-nav-item {
   padding: var(--OT-nav-item-vertical-padding) var(--size-4-2);
@@ -6707,7 +6707,7 @@ button.mod-muted {
 .community-modal-controls .u-muted {
   color: var(--OT-color-muted-on-base-20);
 }
-/* Les petits titres introduisant les différentes sections dans le panneau “settings”.
+/* Les petits titres introduisant les differentes sections dans le panneau “settings”.
     (et dans d’autres “modal dialogues”, je pense)*/
 .vertical-tab-header-group-title {
   font-variant: small-caps;
@@ -6738,7 +6738,7 @@ body:not(.is-phone) .community-item.is-selected:hover .community-item-updated {
     border: 3px solid var(--background-modifier-border-hover);
   }
 }
-/*    -------------------- suppression du réglage de la couleur “accent” dans les settings --------------------    */
+/*    -------------------- suppression du reglage de la couleur “accent” dans les settings --------------------    */
 .mod-settings
   .vertical-tab-content
   > .setting-item:nth-child(2)
@@ -6772,12 +6772,12 @@ body:not(.is-phone) .community-item.is-selected:hover .community-item-updated {
   color: var(--text-normal);
 }
 /*    l’indicateur “active” ou “installed” dans la carte du thème, quand on navigue avec les thèmes en colonne et
-    le panneau qui affiche le readme, quand le thème est sélectionné    */
+    le panneau qui affiche le readme, quand le thème est selectionne    */
 body:not(.is-phone) .community-item.is-selected .flair,
 body:not(.is-phone) .community-item.is-selected:hover .flair {
   color: var(
     --OT-color-on-accent-3
-  ); /*    dans mon thème, le thème sélectionné a comme fond la valeur `--color-accent-3`    */
+  ); /*    dans mon thème, le thème selectionne a comme fond la valeur `--color-accent-3`    */
   background-color: transparent;
 }
 /*    -------------------- ↑ Settings pannel -------------------- ↑ */
@@ -6791,7 +6791,7 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
   padding: 0;
   margin: 0;
 }
-/*    bord traitillé à gauche des transcludes    */
+/*    bord traitille à gauche des transcludes    */
 .markdown-preview-view .markdown-embed {
   border-left: 1px dotted var(--color-accent-1);
 }
@@ -6819,7 +6819,7 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
 .markdown-preview-view audio,
 .markdown-preview-view video {
   /*    position:        relative;    */
-  display: block; /* nécessaire pour centrer horizontalement les images; side effect: on perd les images «inline»; ce n’est pas forcément un défaut! (09.01.2021)    */
+  display: block; /* necessaire pour centrer horizontalement les images; side effect: on perd les images «inline»; ce n’est pas forcement un defaut! (09.01.2021)    */
   margin-left: auto;
   margin-right: auto;
 }
@@ -6879,7 +6879,7 @@ img {
   background-color: transparent;
 }
 
-/*    complément au snippet “MCL Gallery Cards”, version 0.9.2    */
+/*    complement au snippet “MCL Gallery Cards”, version 0.9.2    */
 div[data-embed-type="image"].el-embed-image.el-p {
   margin-block-end: 1.2rem;
 }
@@ -6916,7 +6916,7 @@ div:not(.cm-callout):not(.HyperMD-list-line).image-embed img {
     margin-right:    var(--OT-callout-gallery-gap);
 }*/
 
-/* Pour que le logo en signature ne soit pas encadré d’un filet ni ne soit ombré    */
+/* Pour que le logo en signature ne soit pas encadre d’un filet ni ne soit ombre    */
 .signature {
   border: none !important;
   box-shadow: none !important;
@@ -7073,8 +7073,8 @@ div:not(.cm-callout):not(.HyperMD-list-line).image-embed img {
 }
 
 /* Heading 1 au milieu de la fiche, c’est-à-dire suivant
-    une ligne horizontale, ou un paragraphe, ou une liste non-numéroté,
-    ou une liste numérotée */
+    une ligne horizontale, ou un paragraphe, ou une liste non-numerote,
+    ou une liste numerotee */
 .markdown-preview-view div[data-tag-name="hr"] + div > h1,
 .markdown-preview-view div[data-tag-name="p"] + div > h1,
 .markdown-preview-view div[data-tag-name="ul"] + div > h1,
@@ -7082,7 +7082,7 @@ div:not(.cm-callout):not(.HyperMD-list-line).image-embed img {
   --heading-spacing: 3rem;
 }
 
-/* Titres de niveau 2 ou 3 suivant immédiatement un titre de niveau supérieur */
+/* Titres de niveau 2 ou 3 suivant immediatement un titre de niveau superieur */
 .markdown-preview-view div[data-tag-name="h1"] + div > h2,
 .markdown-preview-view div[data-tag-name="h1"] + div > h3,
 .markdown-preview-view div[data-tag-name="h2"] + div > h3 {
@@ -7094,7 +7094,7 @@ div:not(.cm-callout):not(.HyperMD-list-line).image-embed img {
 /* —————————————————————————————— Headings to my taste —————————————————————————————— */
 /*    Pour mettre les headings à mon goût:
 
-    * amélioration des espacements verticaux
+    * amelioration des espacements verticaux
     * couleurs
     * interligne
     * filet sous les H1 et les H2
@@ -7200,20 +7200,20 @@ body.headings-scaling-major-third {
 }
 
 /*    Au-dessus des titres de niveau 1, je ne met pas d’espace vertical, car ils viennent, en principe, au haut de la fiche.
-    Pour les autres situations, c’est réglé à l’aide du plugin “Contextual typography”, ci-dessus.
+    Pour les autres situations, c’est regle à l’aide du plugin “Contextual typography”, ci-dessus.
 */
 .cm-header-1,
 .markdown-preview-section h1,
 .markdown-rendered h1 {
-  letter-spacing: 0.01em; /* à cause de la graisse et des petites capitales, pour améliorer la lisibilité */
+  letter-spacing: 0.01em; /* à cause de la graisse et des petites capitales, pour ameliorer la lisibilite */
   margin-bottom: 1em;
 }
 
 .cm-header-2,
 .markdown-preview-section h2,
 .markdown-rendered h2 {
-  letter-spacing: 0.02em; /* à cause de la graisse et des petites capitales, pour améliorer la lisibilité */
-  line-height: 1em; /* vu qu’on est en petites capitales, cela n’a pas de sens que les lignes soient plus écartées que tant */
+  letter-spacing: 0.02em; /* à cause de la graisse et des petites capitales, pour ameliorer la lisibilite */
+  line-height: 1em; /* vu qu’on est en petites capitales, cela n’a pas de sens que les lignes soient plus ecartees que tant */
   --heading-spacing: 1.618em;
   margin-bottom: 1em;
 }
@@ -7269,8 +7269,8 @@ markdown-rendered h6 {
 }
 
 /*     Quand des headings de niveau 3 à 6 suivent directement une ligne horizontale,
-    je préfère qu’ils soient plus proches de la ligne. Si j’utilise une ligne à cet endroit-là,
-    c’est justement pour avoir une variante de la séparation visuelle. */
+    je prefère qu’ils soient plus proches de la ligne. Si j’utilise une ligne à cet endroit-là,
+    c’est justement pour avoir une variante de la separation visuelle. */
 .markdown-preview-view div[data-tag-name="hr"] + div > h3,
 .markdown-preview-view div[data-tag-name="hr"] + div > h4,
 .markdown-preview-view div[data-tag-name="hr"] + div > h5,
@@ -7286,7 +7286,7 @@ body .kanban-plugin {
   background-image: none !important;
   background-color: var(
     --background-primary
-  ); /* je préfère au gris d’origine    */
+  ); /* je prefère au gris d’origine    */
 }
 
 body .kanban-plugin__markdown-preview-view {
@@ -7362,7 +7362,7 @@ body:not(.is-mobile) .kanban-plugin__grow-wrap > textarea:focus {
   color: white;
   background-color: var(--link-unresolved-color);
 }
-/* ---------- liens survolés ---------- */
+/* ---------- liens survoles ---------- */
 a:hover,
 .external-link:hover,
 .markdown-rendered .internal-link:hover,
@@ -7373,14 +7373,14 @@ a:hover,
   background-color: var(--color-accent-1);
 }
 @media (hover: hover) {
-  /*    lien inexistant survolé    */
+  /*    lien inexistant survole    */
   .metadata-container .internal-link.is-unresolved:hover,
   .markdown-rendered .internal-link.is-unresolved:hover {
     color: white;
     background-color: var(--link-unresolved-color);
   }
 }
-/* ---------- Lien vers une image inexistante survolé  */
+/* ---------- Lien vers une image inexistante survole  */
 @media (hover: hover) {
   .file-embed.mod-empty-attachment:hover,
   .file-embed.mod-generic:hover,
@@ -7414,12 +7414,12 @@ a:hover,
 .cm-s-obsidian span.cm-formatting-link {
   color: var(
     --OT-syntax-markers
-  ); /*    À l’origine, c’était du “text-faint” et ça    m’ennuyait beaucoup, car il y en avait partout, du “text-faint”!    */
+  ); /*    À l’origine, c’etait du “text-faint” et ça    m’ennuyait beaucoup, car il y en avait partout, du “text-faint”!    */
   font-weight: var(--font-extralight);
   font-size: 0.8em;
 }
 
-/* le texte marqué au Stabilo, entre les paires de “==”; je lui ajoute un peu d’espace horizontal pour respirer    */
+/* le texte marque au Stabilo, entre les paires de “==”; je lui ajoute un peu d’espace horizontal pour respirer    */
 .markdown-preview-view mark {
   padding: 0px 4px;
 }
@@ -7430,7 +7430,7 @@ a:hover,
   padding: 0.1em 0.1em;
   font-weight: var(--font-medium);
 }
-/* ----- formatage des puces et numéros des listes, en général -----    */
+/* ----- formatage des puces et numeros des listes, en general -----    */
 ol > li::marker,
 ul > li::marker,
 .cm-s-obsidian .cm-formatting-list {
@@ -7440,21 +7440,21 @@ ul > li::marker,
   font-variant-numeric: tabular-nums;
 }
 
-/* la couleur des puces et des numéros de listes: en “edit mode”, je leur donne la couleur des liens    */
+/* la couleur des puces et des numeros de listes: en “edit mode”, je leur donne la couleur des liens    */
 .markdown-source-view.mod-cm6 .cm-scroller {
   --list-marker-color: var(--link-color);
 }
 
-/* Numéros et puces des listes, en “edit mode” */
+/* Numeros et puces des listes, en “edit mode” */
 .cm-s-obsidian span.cm-formatting-list {
   font-weight: 700; /*    je force à un niveau qui me convient    */
 }
 .markdown-source-view.mod-cm6 .cm-formatting-list-ul {
-  /*    les astérisques    */
+  /*    les asterisques    */
   vertical-align: -0.2em;
 }
 .list-bullet {
-  /*    les puces sont ajustées différemment    */
+  /*    les puces sont ajustees differemment    */
   vertical-align: 0.15em;
 }
 /* -------------------- ↑ Syntax markers ↑ -------------------- */
@@ -7776,7 +7776,7 @@ kbd {
 /*    -------------------- ↑ Empty pannel ↑    -------------------- */
 
 /*    Bookmark    OpSpl50    */
-/*    ———————————————————— Mise en évidence du texte trouvé (“search match”) dans les panneaux d’édition    ———————————————————— */
+/*    ———————————————————— Mise en evidence du texte trouve (“search match”) dans les panneaux d’edition    ———————————————————— */
 /* Read */
 .markdown-rendered .search-highlight > div {
   box-shadow: 0 0 0px 1px var(--color-accent-2);
@@ -8031,7 +8031,7 @@ body[data-recent-notes-density="compact"]
 .wideInputPromptInputEl {
   font-family: var(--editor-font-family);
 }
-/*    pour afficher plus grand le texte dans la boite de dialogue de saisie, quand l’écran est suffisamment grand    */
+/*    pour afficher plus grand le texte dans la boite de dialogue de saisie, quand l’ecran est suffisamment grand    */
 @media screen and (min-width: 781px) {
   .wideInputPromptInputEl {
     /*        font-size:        var(--font-ui-large); */
@@ -8071,7 +8071,7 @@ body[data-recent-notes-density="compact"]
   color: var(--OT-stabilo-text);
   background-color: var(--OT-stabilo-mark);
 }
-/*    séparons visuellement les résultats, fiche par fiche    */
+/*    separons visuellement les resultats, fiche par fiche    */
 .svelte-lazy {
   border-top: 1px dotted var(--color-base-100);
   border-bottom: 1px dotted var(--color-base-100);
@@ -8453,7 +8453,7 @@ input[type="number"]::placeholder {
 .workspace-ribbon.mod-left.is-collapsed .clickable-icon {
   color: var(--OT-ribbon-icon-color-sidebar-is-collapsed);
 }
-/*    pour afficher un filet de séparation entre le ruban et le panneau de gauche, dans les thèmes qui le requièrent    */
+/*    pour afficher un filet de separation entre le ruban et le panneau de gauche, dans les thèmes qui le requièrent    */
 .lightPalette-metallicBlue .workspace-ribbon {
   border-right: var(--divider-width) solid var(--color-base-00);
 }
@@ -8511,7 +8511,7 @@ settings:
     -
         id:            OT-general-settings
         title:        GENERAL settings
-        title.fr:    Réglages GÉNÉRAUX
+        title.fr:    Reglages GÉNÉRAUX
         title.en:    GENERAL SETTINGS
         type:        heading
         level:        2
@@ -8527,14 +8527,14 @@ settings:
     -
             id:            OT-filesNavigator-spacing
             title:        Spacing for the files listing in sidepannels and the settings list in settings pane
-            title.fr:    Listing des fichiers dans les panneaux latéraux.
+            title.fr:    Listing des fichiers dans les panneaux lateraux.
             type:        class-select
             allowEmpty:    false
             default:    filesNavigator-spacing-medium
             options:
                 -
                     label:        Tight
-                    label.fr:    Serré
+                    label.fr:    Serre
                     value:        filesNavigator-spacing-compact
                 -
                     label:        Medium
@@ -8553,7 +8553,7 @@ settings:
             title:        Scaling of the headings and subheadings
             title.fr:    Accroissement des titres et intertitres
             description:    Different ways of increasing the size of headings from H6 to H1. By default, a choice “generous but not too much”
-            description.fr: Différentes façons de grader la taille des H1 à H6. Par défaut, un choix généreux, mais pas trop.
+            description.fr: Differentes façons de grader la taille des H1 à H6. Par defaut, un choix genereux, mais pas trop.
             type:         class-select
             allowEmpty: false
             default:     headings-scaling-OpSpl
@@ -8700,9 +8700,9 @@ settings:
     -
              id:                OT-tab-title-highlighted
              title:            Highlight current tab
-             title.fr:        Tab courant mis en évidence
+             title.fr:        Tab courant mis en evidence
              description:    Highlight the name of the current note in the tab title
-             description.fr:    Met en évidence sur le tab le nom de la fiche courante
+             description.fr:    Met en evidence sur le tab le nom de la fiche courante
              type:             class-toggle
              default:         false
     -
@@ -8716,26 +8716,26 @@ settings:
         title:        LIGHT MODE colors
         title.fr:        Couleurs en mode “LIGHT”
         description:    Colors for the “Light” base color scheme.
-        description.fr:    Réglages pour le mode «normal».
+        description.fr:    Reglages pour le mode «normal».
         type:        heading
         level:        2
         collapsed:    true
     -
             id:            OT-lightPalette
             title:        General palette
-            title.fr:    Palette générale
+            title.fr:    Palette generale
             description:    If you want the original black and white theme, choose “Default for Obsidian”.
-            description.fr:    « Par défaut » signifie les gris neutres et le noir d’Obsidian « nature ».
+            description.fr:    « Par defaut » signifie les gris neutres et le noir d’Obsidian « nature ».
             type:        class-select
             allowEmpty:    false
             default:    lightPalette-lightBeige
             options:
                 -
                     label:        Default for Obsidian
-                    label.fr:    Par défaut
+                    label.fr:    Par defaut
                     value:        lightPalette-OBSIDIAN
                 -
-                    label:        Art déco
+                    label:        Art deco
                     value:        lightPalette-artDeco
                 -
                     label:        Beige
@@ -8750,7 +8750,7 @@ settings:
                     value:        lightPalette-blue
                 -
                     label:        metallic Blue
-                    label.fr:    Bleu métal
+                    label.fr:    Bleu metal
                     value:        lightPalette-metallicBlue
                 -
                     label:        Green
@@ -8762,7 +8762,7 @@ settings:
                     value:        lightPalette-pistachio
                 -
                     label:        Icy
-                    label.fr:    Glacé
+                    label.fr:    Glace
                     value:        lightPalette-icy
                 -
                     label:        Orange
@@ -8806,7 +8806,7 @@ settings:
             options:
                 -
                     label:        Coordinated
-                    label.fr:    Coordonnée
+                    label.fr:    Coordonnee
                     value:        accentColor-lightMode-shade
                 -
                     label:    Alternative 1
@@ -8819,14 +8819,14 @@ settings:
             title:            Text color for body text.
             title.fr:        Couleur du texte des fiches.
             description:    “Default” means the color associated with the above choosen general palette.
-            description.fr:    « Par défaut » signifie la couleur associée à la palette générale choisie ci-dessus.
+            description.fr:    « Par defaut » signifie la couleur associee à la palette generale choisie ci-dessus.
             type:        class-select
             allowEmpty:    false
             default:    textColor-lightMode-default
             options:
                 -
                     label:        Default
-                    label.fr:    Par défaut
+                    label.fr:    Par defaut
                     value:        textColor-lightMode-default
                 -
                     label:        Amber
@@ -8950,7 +8950,7 @@ settings:
             title:        Notes background in “reading mode”.
             title.fr:    Fond des fiches en mode «Lecture / Consultation»
             description:    Different kinds of paper are available. “None” keeps the plain background determined by the palette.
-            description.fr: Un fond uni ou un choix de fonds structurés.
+            description.fr: Un fond uni ou un choix de fonds structures.
             type:         class-select
             allowEmpty:     false
             default:     pb-lm-none
@@ -9018,14 +9018,14 @@ settings:
         title:            Text color in writing/editing mode.
         title.fr:        Couleur du texte en mode «Écriture / Édition»
         description:    “Default” means the same color as in reading mode.
-        description.fr:    « Par défaut » signifie la même couleur qu’en mode «Lecture / Consultation».
+        description.fr:    « Par defaut » signifie la même couleur qu’en mode «Lecture / Consultation».
         type:            class-select
         allowEmpty:        false
         default:        inkColor-lightMode-default
         options:
             -
                 label:        Default
-                label.fr:    Par défaut
+                label.fr:    Par defaut
                 value:        inkColor-lightMode-default
             -
                 label:        Amber
@@ -9100,7 +9100,7 @@ settings:
                 value:        inkColor-lightMode-red
             -
                 label:        dark Red
-                label.fr:    Rouge foncé
+                label.fr:    Rouge fonce
                 value:        inkColor-lightMode-darkRed
             -
                 label:        Rose
@@ -9153,14 +9153,14 @@ settings:
         title:            Note background in writing/editing mode.
         title.fr:        Couleur du fond de page en mode «Écriture / Édition»
         description:    “Default” means the background associated with the above chosen palette.
-        description.fr:    Par défaut, le fond déterminé par la palette générale choisie ci-dessus.
+        description.fr:    Par defaut, le fond determine par la palette generale choisie ci-dessus.
         type:        class-select
         allowEmpty:    false
         default:    editingBackgroundColor-lightMode-default
         options:
             -
                 label:        Default
-                label.fr:    Par défaut
+                label.fr:    Par defaut
                 value:        editingBackgroundColor-lightMode-default
             -
                 label:        Beige
@@ -9239,7 +9239,7 @@ settings:
     -
             id:            OT-Light-pillsColor
             title:        Color of the pills inside the Properties pannel
-            title.fr:    Couleur des “pills” dans le panneau des propriétés
+            title.fr:    Couleur des “pills” dans le panneau des proprietes
             type:        class-select
             allowEmpty:    false
             default:    OT-Light-pills-color-accent
@@ -9277,14 +9277,14 @@ settings:
             title:            Highlighting color
             title.fr:        Couleur du « Stabilo »
             description:    “Default” chooses a color associated with the current general mood.
-            description.fr:    « Par défaut » signifie une couleur associée à l’ambiance générale courante.
+            description.fr:    « Par defaut » signifie une couleur associee à l’ambiance generale courante.
             type:            class-select
             allowEmpty:        false
             default:        highlight-color-default
             options:
                 -
                     label:        Default
-                    label.fr:    Par défaut
+                    label.fr:    Par defaut
                     value:        highlight-color-default
                 -
                     label:        light Blue
@@ -9292,7 +9292,7 @@ settings:
                     value:        highlight-color-lightBlue
                 -
                     label:        dark Blue
-                    label.fr:    Bleu foncé
+                    label.fr:    Bleu fonce
                     value:        highlight-color-strongBlue
                 -
                     label:        light Green
@@ -9300,7 +9300,7 @@ settings:
                     value:        highlight-color-lightGreen
                 -
                     label:        dark Green
-                    label.fr:    Vert foncé
+                    label.fr:    Vert fonce
                     value:        highlight-color-strongGreen
                 -
                     label:        light Orange
@@ -9308,7 +9308,7 @@ settings:
                     value:        highlight-color-lightOrange
                 -
                     label:        dark Orange
-                    label.fr:    Orange foncé
+                    label.fr:    Orange fonce
                     value:        highlight-color-strongOrange
                 -
                     label:        light Rose
@@ -9316,7 +9316,7 @@ settings:
                     value:        highlight-color-lightRose
                 -
                     label:        dark Rose
-                    label.fr:    Rose foncé
+                    label.fr:    Rose fonce
                     value:        highlight-color-strongRose
                 -
                     label:        light Violet
@@ -9324,7 +9324,7 @@ settings:
                     value:        highlight-color-lightViolet
                 -
                     label:        dark Violet
-                    label.fr:    Violet foncé
+                    label.fr:    Violet fonce
                     value:        highlight-color-strongViolet
                 -
                     label:        classic Yellow
@@ -9332,7 +9332,7 @@ settings:
                     value:        highlight-color-lightYellow
                 -
                     label:        dark Yellow
-                    label.fr:    Jaune foncé
+                    label.fr:    Jaune fonce
                     value:        highlight-color-strongYellow
     -
         id:                OT-DARK-mode-settings
@@ -9342,13 +9342,13 @@ settings:
         level:            2
         collapsed:        true
         description:    Colors for the “Dark” base color scheme.
-        description.fr:    Réglages pour le mode «sombre».
+        description.fr:    Reglages pour le mode «sombre».
     -
             id:                OT-darkPalette
             title:            General palette
-            title.fr:        Palette générale
+            title.fr:        Palette generale
             description:    By default, we have a dark version of the “light mode” palette. It is however possible to choose a different palette for the “dark mode”.
-            description.fr:    Par défaut, la version «sombre» de la palette choisie en “Light”. On peut cependant en choisir ici une différente pour le mode “Dark”.
+            description.fr:    Par defaut, la version «sombre» de la palette choisie en “Light”. On peut cependant en choisir ici une differente pour le mode “Dark”.
             type:            class-select
             allowEmpty:        false
             default:        darkPalette-default
@@ -9370,7 +9370,7 @@ settings:
                     value:        darkPalette-blue
                 -
                     label:        metallic Blue
-                    label.fr:    Bleu métallique
+                    label.fr:    Bleu metallique
                     value:        darkPalette-metallicBlue
                 -
                     label:        Brown
@@ -9386,7 +9386,7 @@ settings:
                     value:        darkPalette-oliveGreen
                 -
                     label:        Icy
-                    label.fr:    Glacé
+                    label.fr:    Glace
                     value:        darkPalette-icy
                 -
                     label:        LYT
@@ -9433,7 +9433,7 @@ settings:
             options:
                 -
                     label:        Coordinated
-                    label.fr:    Coordonnée
+                    label.fr:    Coordonnee
                     value:        accentColor-darkMode-shade
                 -
                     label:        Alternative 1
@@ -9452,7 +9452,7 @@ settings:
             options:
                 -
                     label:        Default
-                    label.fr:    Par défaut
+                    label.fr:    Par defaut
                     value:        textColor-darkMode-default
                 -
                     label:        Amber
@@ -9502,7 +9502,7 @@ settings:
                     value:        textColor-darkMode-green
                 -
                     label:        emerald Green
-                    label.fr:    Vert émeraude
+                    label.fr:    Vert emeraude
                     value:        textColor-darkMode-emerald
                 -
                     label:        terminal Green
@@ -9569,7 +9569,7 @@ settings:
         title:            Notes background in “reading mode”.
         title.fr:        Fond des fiches en mode «Lecture / Consultation».
         description:    Different kinds of paper are available. “None” keeps the plain background determined by the palette.
-        description.fr: Un fond uni ou un choix de fonds structurés.
+        description.fr: Un fond uni ou un choix de fonds structures.
         type:             class-select
         allowEmpty:     false
         default:         pb-dm-none
@@ -9635,16 +9635,16 @@ settings:
     -
         id:                OT-inkColor-darkMode
         title:            Text color in writing/editing mode
-        title.fr:        Couleur du texte en mode «Écriture / édition»
+        title.fr:        Couleur du texte en mode «Écriture / edition»
         description:    “Default” means the same color as in reading mode.
-        description.fr:    « Par défaut » signifie la même couleur qu’en mode «Lecture / Consultation».
+        description.fr:    « Par defaut » signifie la même couleur qu’en mode «Lecture / Consultation».
         type:            class-select
         allowEmpty:        false
         default:        inkColor-darkMode-default
         options:
             -
                 label:        Default
-                label.fr:    Par défaut
+                label.fr:    Par defaut
                 value:        inkColor-darkMode-default
             -
                 label:        Amber
@@ -9765,16 +9765,16 @@ settings:
     -
             id:                OT-editingBackgroundColor-darkMode
             title:            Note background in writing/editing mode
-            title.fr:        Couleur du fond de page en mode «Écriture / édition»
+            title.fr:        Couleur du fond de page en mode «Écriture / edition»
             description:    “Default” means the background associated with the above chosen dark palette.
-            description.fr:    Par défaut, le fond déterminé par la palette générale choisie ci-dessus.
+            description.fr:    Par defaut, le fond determine par la palette generale choisie ci-dessus.
             type:            class-select
             allowEmpty:        false
             default:        editingBackgroundColor-darkMode-default
             options:
                 -
                     label:        Default
-                    label.fr:    Par défaut
+                    label.fr:    Par defaut
                     value:        editingBackgroundColor-darkMode-default
                 -
                     label:        Beige
@@ -9853,7 +9853,7 @@ settings:
     -
             id:            OT-Dark-pillsColor
             title:        Color of the pills inside the Properties pannel
-            title.fr:    Couleur des “pills” dans le panneau des propriétés
+            title.fr:    Couleur des “pills” dans le panneau des proprietes
             type:        class-select
             allowEmpty:    false
             default:    OT-Dark-pills-color-accent
@@ -9891,14 +9891,14 @@ settings:
             title:            Highlighting color
             title.fr:        Couleur du « Stabilo »
             description:    “Default” chooses a color associated with the above chosen dark palette.
-            description.fr:    « Par défaut » signifie une couleur associée à l’ambiance générale courante.
+            description.fr:    « Par defaut » signifie une couleur associee à l’ambiance generale courante.
             type:            class-select
             allowEmpty:        false
             default:        highlight-color-dark-default
             options:
                 -
                     label:        Default
-                    label.fr:    Par défaut
+                    label.fr:    Par defaut
                     value:        highlight-color-dark-default
                 -
                     label:        light Blue
@@ -9906,7 +9906,7 @@ settings:
                     value:        highlight-color-dark-lightBlue
                 -
                     label:        dark Blue
-                    label.fr:    Bleu foncé
+                    label.fr:    Bleu fonce
                     value:        highlight-color-dark-strongBlue
                 -
                     label:        light Green
@@ -9914,7 +9914,7 @@ settings:
                     value:        highlight-color-dark-lightGreen
                 -
                     label:        dark Green
-                    label.fr:    Vert foncé
+                    label.fr:    Vert fonce
                     value:        highlight-color-dark-strongGreen
                 -
                     label:        light Orange
@@ -9922,7 +9922,7 @@ settings:
                     value:        highlight-color-dark-lightOrange
                 -
                     label:        dark Orange
-                    label.fr:    Orange foncé
+                    label.fr:    Orange fonce
                     value:        highlight-color-dark-strongOrange
                 -
                     label:        light Pink
@@ -9930,7 +9930,7 @@ settings:
                     value:        highlight-color-dark-lightRose
                 -
                     label:        dark Pink
-                    label.fr:    Rose foncé
+                    label.fr:    Rose fonce
                     value:        highlight-color-dark-strongRose
                 -
                     label:        light Violet
@@ -9938,7 +9938,7 @@ settings:
                     value:        highlight-color-dark-lightViolet
                 -
                     label:        dark Violet
-                    label.fr:    Violet foncé
+                    label.fr:    Violet fonce
                     value:        highlight-color-dark-strongViolet
                 -
                     label:        classic Yellow
@@ -9946,7 +9946,7 @@ settings:
                     value:        highlight-color-dark-lightYellow
                 -
                     label:        dark Yellow
-                    label.fr:    Jaune foncé
+                    label.fr:    Jaune fonce
                     value:        highlight-color-dark-strongYellow
     -
         id:                OT-READING-mode-settings
@@ -9981,7 +9981,7 @@ settings:
             id:             OT-tables-style
             title:            Tables
             description:    Three different styles for tables.
-            description.fr:    Différents styles de tables. Par défaut, le modèle « Obsidian nature ».
+            description.fr:    Differents styles de tables. Par defaut, le modèle « Obsidian nature ».
             type:            class-select
             allowEmpty:        false
             default:        OT-tables-tinted-rows
@@ -9992,16 +9992,16 @@ settings:
                     value:        OT-tables-native
                 -
                     label:        Improved
-                    label.fr:    Améliorées
+                    label.fr:    Ameliorees
                     value:        OT-tables-custom
                 -
                     label:        Alternate row backgrounds
-                    label.fr:    Avec fonds alternés
+                    label.fr:    Avec fonds alternes
                     value:        OT-tables-tinted-rows
     -
             id:            OT-images-rendering
             title:        How do you prefer your images?
-            title.fr:    Comment préférez-vous vos images?
+            title.fr:    Comment preferez-vous vos images?
             type:        class-select
             allowEmpty:    false
             default:    images-with-shadow
@@ -10033,15 +10033,15 @@ settings:
     -
             id:                OT-editMode-font
             title:            Typeface
-            title.fr:        Police d’écriture
+            title.fr:        Police d’ecriture
             description:    “Default” chooses the same font as for reading. Reading font is chosen in the Appearance panel of the Settings.
-            description.fr:    Par défaut, la même qu’en mode LECTURE.
+            description.fr:    Par defaut, la même qu’en mode LECTURE.
             type:            variable-select
             default:        var(--font-text)
             options:
                 -
                     label:        Default
-                    label.fr:    Par défaut
+                    label.fr:    Par defaut
                     value:        var(--font-text)
                 -
                     label:    American Typewriter
@@ -10233,7 +10233,7 @@ settings:
             title:            Line length [em]
             title.fr:        Longueur de la ligne [em]
             description:    By default, you get longer lines than plain Obsidian.
-            description.fr:    Par défaut, une valeur un peu plus généreuse que le « défaut » d’Obsidian.
+            description.fr:    Par defaut, une valeur un peu plus genereuse que le « defaut » d’Obsidian.
             type:            variable-number
             default:        44
             format:            em

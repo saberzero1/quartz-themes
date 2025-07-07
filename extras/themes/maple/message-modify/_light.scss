@@ -1,9 +1,0 @@
-body.message-modify:not(.color-active-default).theme-light {
-  --background-modifier-message: hsl(
-    var(
-      --setting-message-bg,
-      calc(var(--accent-h) + 60) calc(var(--accent-s) - 12%)
-        calc(var(--accent-l) + 4%)
-    )
-  );
-}

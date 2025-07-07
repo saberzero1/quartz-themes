@@ -10,15 +10,8 @@
 body {
   --font-default: "Libre Franklin", "Win95Font", "Inter", "Rubik", "Segoe UI";
   --header-height: 35px;
-  --maximize: url(
-    data:image/svg + xml,
-    charset=utf-8,
-    %3Csvgwidth="9"height="9"fill="none"xmlns="http://www.w3.org/2000/svg"%3E%3Cpathfill-rule="evenodd"clip-rule="evenodd"d="M9 0H0v9h9V0zM8 2H1v6h7V2z"fill="%23000"/%3E%3C/svg%3E
-  );
-  --minimize: url(
-    data:image/svg + xml,
-    %3Csvgwidth="6"height="2"fill="none"xmlns="http://www.w3.org/2000/svg"%3E%3Cpathfill="%23000"d="M0 0h6v2H0z"/%3E%3C/svg%3E
-  );
+  --maximize: url('data:image/svg + xml,charset=utf-8,%3Csvgwidth="9"height="9"fill="none"xmlns="http://www.w3.org/2000/svg"%3E%3Cpathfill-rule="evenodd"clip-rule="evenodd"d="M9 0H0v9h9V0zM8 2H1v6h7V2z"fill="%23000"/%3E%3C/svg%3E');
+  --minimize: url('data:image/svg + xml,%3Csvgwidth="6"height="2"fill="none"xmlns="http://www.w3.org/2000/svg"%3E%3Cpathfill="%23000"d="M0 0h6v2H0z"/%3E%3C/svg%3E');
 }
 
 .is-mobile {

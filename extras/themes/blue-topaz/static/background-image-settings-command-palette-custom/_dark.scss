@@ -1,7 +1,0 @@
-body.background-image-settings-command-palette-switch:not(
-    .background-image-settings-command-palette-same-as-workplace
-  ).theme-dark
-  .modal-container
-  .prompt::before {
-  background-image: var(--background-command-palette-theme-dark-custom);
-}

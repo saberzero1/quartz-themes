@@ -1,7 +1,0 @@
-body .cm-fat-cursor {
-  transition:
-    left var(--vim-cursor-speed, var(--anim-duration-superfast))
-      cubic-bezier(0.39, 0.575, 0.565, 1),
-    top var(--vim-cursor-speed, var(--anim-duration-superfast))
-      cubic-bezier(0.39, 0.575, 0.565, 1);
-}

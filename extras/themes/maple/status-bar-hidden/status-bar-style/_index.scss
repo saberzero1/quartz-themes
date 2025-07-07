@@ -1,9 +1,0 @@
-body.status-bar-enable.status-bar-hidden .status-bar {
-  opacity: 0;
-  transition-delay: var(--animation-delay);
-}
-
-body.status-bar-enable.status-bar-hidden .status-bar:hover {
-  transition-delay: 0s;
-  opacity: 1;
-}

@@ -1,6 +1,0 @@
-s .image-embed::after {
-  content: attr(alt);
-  color: var(--inactive, var(--faint-text));
-  display: block;
-  text-align: center;
-}

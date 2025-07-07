@@ -941,7 +941,7 @@
     hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)),
     hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29))
   );
-  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
+  --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -1737,7 +1737,7 @@ body {
     hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)),
     hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29))
   );
-  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
+  --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -2509,266 +2509,219 @@ iframe {
   display: none;
 }
 
-@font-face {
-  font-family: "Avenir Next";
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-  src: url(public/fonts/94f2f163d4b698242fef.otf);
+font-family: "Avenir Next";
+font-weight: normal;
+font-style: normal;
+font-display: swap;
+src: url(public/fonts/94f2f163d4b698242fef.otf);
+font-family: "Inter";
+font-style: normal;
+font-weight: 200;
+font-display: swap;
+src: url(public/fonts/72505e6a122c6acd5471.woff2) format("woff2");
+font-family: "Inter";
+font-style: normal;
+font-weight: 300;
+font-display: swap;
+src: url(public/fonts/2d5198822ab091ce4305.woff2) format("woff2");
+font-family: "Inter";
+font-weight: 400;
+font-style: normal;
+font-display: swap;
+src: url(public/fonts/c8ba52b05a9ef10f4758.woff2);
+font-family: "Inter";
+font-weight: 400;
+font-style: italic;
+font-display: swap;
+src: url(public/fonts/cb10ffd7684cd9836a05.woff2);
+font-family: "Inter";
+font-weight: 500;
+font-style: normal;
+font-display: swap;
+src: url(public/fonts/293fd13dbca5a3e450ef.woff2);
+font-family: "Inter";
+font-weight: 500;
+font-style: italic;
+font-display: swap;
+src: url(public/fonts/085cb93e613ba3d40d2b.woff2);
+font-family: "Inter";
+font-weight: 600;
+font-style: normal;
+font-display: swap;
+src: url(public/fonts/b5f0f109bc88052d4000.woff2);
+font-family: "Inter";
+font-weight: 800;
+font-style: normal;
+font-display: swap;
+src: url(public/fonts/cbe0ae49c52c920fd563.woff2);
+font-family: "Inter";
+font-weight: 800;
+font-style: italic;
+font-display: swap;
+src: url(public/fonts/535a6cf662596b3bd6a6.woff2);
+font-family: "Source Code Pro";
+font-weight: normal;
+font-style: normal;
+font-display: swap;
+src: url(public/fonts/70cc7ff27245e82ad414.ttf);
+font-family: "Source Code Pro";
+font-weight: normal;
+font-style: italic;
+font-display: swap;
+src: url(public/fonts/454577c22304619db035.ttf);
+font-family: "Source Code Pro";
+font-weight: bold;
+font-style: normal;
+font-display: swap;
+src: url(public/fonts/52ac8f3034507f1d9e53.ttf);
+font-family: "Source Code Pro";
+font-weight: bold;
+font-style: italic;
+font-display: swap;
+src: url(public/fonts/05b618077343fbbd92b7.ttf);
+font-family: "Flow Circular";
+font-display: swap;
+src: url(public/fonts/4bb6ac751d1c5478ff3a.woff2);
+font-family: "??";
+unicode-range: U+0;
+html {
+  contain: initial;
+  height: 100%;
+  margin: 0;
+  overflow: auto;
+  overscroll-behavior: none;
+  padding: 0;
+  padding-top: 0;
+  width: 100%;
 }
 
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 200;
-  font-display: swap;
-  src: url(public/fonts/72505e6a122c6acd5471.woff2) format("woff2");
+.titlebar {
+  -webkit-app-region: drag;
+  background-color: #000;
+  border-bottom: 0px solid transparent;
+  display: flex;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
 }
 
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(public/fonts/2d5198822ab091ce4305.woff2) format("woff2");
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
 }
 
-@font-face {
-  font-family: "Inter";
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: url(public/fonts/c8ba52b05a9ef10f4758.woff2);
+.progress-bar {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px;
+  position: relative;
+  width: 100%;
 }
 
-@font-face {
-  font-family: "Inter";
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-  src: url(public/fonts/cb10ffd7684cd9836a05.woff2);
+.popover {
+  background-color: #000;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  box-shadow:
+    0px 1px 2px #0000001f,
+    0px 3.4px 6.7px #0000002e,
+    0px 15px 30px #0000004d;
+  display: flex;
+  max-height: 95vh;
+  position: absolute;
+  z-index: 30;
 }
 
-@font-face {
-  font-family: "Inter";
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-  src: url(public/fonts/293fd13dbca5a3e450ef.woff2);
+.markdown-embed-link {
+  --icon-size: 18px;
+  --icon-stroke: 2px;
+  align-items: center;
+  border-radius: 4px;
+  color: #8a5cf5;
+  cursor: default;
+  display: flex;
+  inset-inline-end: 4px;
+  opacity: 1;
+  padding: 4px;
+  position: absolute;
+  top: 4px;
 }
 
-@font-face {
-  font-family: "Inter";
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-  src: url(public/fonts/085cb93e613ba3d40d2b.woff2);
+.suggestion-container {
+  align-self: stretch;
+  background-color: #000;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  box-shadow:
+    0px 1px 2px #0000001f,
+    0px 3.4px 6.7px #0000002e,
+    0px 15px 30px #0000004d;
+  display: flex;
+  flex-direction: column;
+  max-height: 300px;
+  max-width: 500px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 60;
 }
 
-@font-face {
-  font-family: "Inter";
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-  src: url(public/fonts/b5f0f109bc88052d4000.woff2);
+body > :not(.print) {
+  display: none;
 }
-
-@font-face {
-  font-family: "Inter";
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-  src: url(public/fonts/cbe0ae49c52c920fd563.woff2);
+.print .markdown-preview-view {
+  -webkit-print-color-adjust: exact;
+  color: initial;
 }
-
-@font-face {
-  font-family: "Inter";
-  font-weight: 800;
-  font-style: italic;
-  font-display: swap;
-  src: url(public/fonts/535a6cf662596b3bd6a6.woff2);
+.print .markdown-preview-view mark {
+  color: initial;
 }
-
-@font-face {
-  font-family: "Source Code Pro";
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-  src: url(public/fonts/70cc7ff27245e82ad414.ttf);
+.print .markdown-preview-view .metadata-container {
+  display: none;
 }
-
-@font-face {
-  font-family: "Source Code Pro";
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-  src: url(public/fonts/454577c22304619db035.ttf);
+.print .markdown-preview-view .markdown-embed-content {
+  max-height: none;
+  overflow: visible;
 }
-
-@font-face {
-  font-family: "Source Code Pro";
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-  src: url(public/fonts/52ac8f3034507f1d9e53.ttf);
+.print .markdown-preview-view .callout-content {
+  display: inherit;
 }
-
-@font-face {
-  font-family: "Source Code Pro";
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-  src: url(public/fonts/05b618077343fbbd92b7.ttf);
+.print .external-link {
+  background: none;
+  padding-right: 0;
 }
-
-@font-face {
-  font-family: "Flow Circular";
-  font-display: swap;
-  src: url(public/fonts/4bb6ac751d1c5478ff3a.woff2);
+* {
+  box-sizing: border-box;
+  text-shadow: none;
 }
-
-@font-face {
-  font-family: "??";
-  unicode-range: U+0;
+webview {
+  display: none;
 }
-
-@media print {
-  html {
-    contain: initial;
-    height: 100%;
-    margin: 0;
-    overflow: auto;
-    overscroll-behavior: none;
-    padding: 0;
-    padding-top: 0;
-    width: 100%;
-  }
-  .titlebar {
-    -webkit-app-region: drag;
-    background-color: #000;
-    border-bottom: 0px solid transparent;
-    display: flex;
-    left: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-  }
-  .app-container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-  }
-  .progress-bar {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 8px;
-    position: relative;
-    width: 100%;
-  }
-  .popover {
-    background-color: #000;
-    border: 1px solid transparent;
-    border-radius: 8px;
-    box-shadow:
-      0px 1px 2px #0000001f,
-      0px 3.4px 6.7px #0000002e,
-      0px 15px 30px #0000004d;
-    display: flex;
-    max-height: 95vh;
-    position: absolute;
-    z-index: 30;
-  }
-  .markdown-embed-link {
-    --icon-size: 18px;
-    --icon-stroke: 2px;
-    align-items: center;
-    border-radius: 4px;
-    color: #8a5cf5;
-    cursor: default;
-    display: flex;
-    inset-inline-end: 4px;
-    opacity: 1;
-    padding: 4px;
-    position: absolute;
-    top: 4px;
-  }
-  .suggestion-container {
-    align-self: stretch;
-    background-color: #000;
-    border: 1px solid transparent;
-    border-radius: 8px;
-    box-shadow:
-      0px 1px 2px #0000001f,
-      0px 3.4px 6.7px #0000002e,
-      0px 15px 30px #0000004d;
-    display: flex;
-    flex-direction: column;
-    max-height: 300px;
-    max-width: 500px;
-    overflow: hidden;
-    position: absolute;
-    z-index: 60;
-  }
-  body > :not(.print) {
-    display: none;
-  }
-  .print .markdown-preview-view {
-    -webkit-print-color-adjust: exact;
-    color: initial;
-  }
-  .print .markdown-preview-view mark {
-    color: initial;
-  }
-  .print .markdown-preview-view .metadata-container {
-    display: none;
-  }
-  .print .markdown-preview-view .markdown-embed-content {
-    max-height: none;
-    overflow: visible;
-  }
-  .print .markdown-preview-view .callout-content {
-    display: inherit;
-  }
-  .print .external-link {
-    background: none;
-    padding-right: 0;
-  }
-  * {
-    box-sizing: border-box;
-    text-shadow: none;
-  }
-  webview {
-    display: none;
-  }
-  ::-webkit-scrollbar {
-    display: none;
-  }
+::-webkit-scrollbar {
+  display: none;
 }
-
 body.is-translucent {
   background-color: transparent;
 }
 
-@keyframes node-inserted {
-  from {
-    --link-color: #e9973f;
-    color: #e9973f;
-    inset-inline-start: -80%;
-    outline-color: #fff;
-    transform: rotate(0deg);
-    width: 80%;
-  }
-  to {
-    inset-inline-start: 110%;
-    outline-color: #000;
-    transform: rotate(360deg);
-    width: 10%;
-  }
+from {
+  --link-color: #e9973f;
+  color: #e9973f;
+  inset-inline-start: -80%;
+  outline-color: #fff;
+  transform: rotate(0deg);
+  width: 80%;
 }
-
+to {
+  inset-inline-start: 110%;
+  outline-color: #000;
+  transform: rotate(360deg);
+  width: 10%;
+}
 .node-insert-event {
   animation-duration: 0.01s;
   animation-name: node-inserted;
@@ -10987,17 +10940,14 @@ body:not(.is-phone) .vertical-tab-header-group-items {
   pointer-events: none;
 }
 
-@keyframes pop-down {
-  20% {
-    opacity: 0.7;
-    transform: translateY(-50%) scale(1.02);
-  }
-  40% {
-    opacity: 1;
-    transform: translateY(-50%) scale(1.05);
-  }
+20% {
+  opacity: 0.7;
+  transform: translateY(-50%) scale(1.02);
 }
-
+40% {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.05);
+}
 .tree-item-self {
   align-items: baseline;
   border-radius: 4px;
@@ -12432,32 +12382,31 @@ code[class*="language-"] {
   }
 }
 
-@media print {
-  .pdf-embed:not(.canvas-node-content) {
-    align-items: center;
-    border: none;
-    justify-content: center;
-    max-height: 80vh;
-  }
-  .pdf-embed:not(.canvas-node-content) .pdf-container {
-    display: none;
-  }
-  .pdf-embed:not(.canvas-node-content) .pdf-toolbar {
-    display: none;
-  }
-  .pdf-embed:not(.canvas-node-content) .canvasWrapper {
-    border: 1px solid transparent;
-    border-radius: 4px;
-    max-height: 100%;
-    overflow: hidden;
-    width: fit-content;
-  }
-  .pdf-embed:not(.canvas-node-content) canvas {
-    height: auto;
-    width: 100%;
-  }
+.pdf-embed:not(.canvas-node-content) {
+  align-items: center;
+  border: none;
+  justify-content: center;
+  max-height: 80vh;
+}
+.pdf-embed:not(.canvas-node-content) .pdf-container {
+  display: none;
 }
 
+.pdf-embed:not(.canvas-node-content) .pdf-toolbar {
+  display: none;
+}
+
+.pdf-embed:not(.canvas-node-content) .canvasWrapper {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  max-height: 100%;
+  overflow: hidden;
+  width: fit-content;
+}
+.pdf-embed:not(.canvas-node-content) canvas {
+  height: auto;
+  width: 100%;
+}
 .markdown-embed {
   background-color: inherit;
   border-bottom: none;
@@ -18371,17 +18320,14 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
   background-color: initial;
 }
 
-@keyframes progress-bar {
-  5% {
-    left: 0;
-    width: 0;
-  }
-  95% {
-    right: 0;
-    width: 0;
-  }
+5% {
+  left: 0;
+  width: 0;
 }
-
+95% {
+  right: 0;
+  width: 0;
+}
 .search-empty-state {
   color: #666666;
   font-size: calc(16px * 0.937);

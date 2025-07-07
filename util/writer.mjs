@@ -121,6 +121,7 @@ export function cleanCSS(base, inject, mode = "both", extract = false) {
   result = result.replace(/^@scope.*?^\}$/gms, "") // Remove scope media queries
   result = result.replace(/^\.pdf-.*?\{.*?^\}/gms, "") // Remove PDF specific rules
   result = result.replace(/^\s*?color-scheme:\s*?(light|dark|normal);\s*?$/gms, "") // Remove color scheme rules
+  result = result.replace(/^\s*?@\w+?\s*?[\w-]*?\s*?\{(.*?)^\}$/gms, "$1") // Remove all @rules
 
   const colorVariables = getCombinedThemeVariables(result);
   // Append colorVariables to the end of `:root`

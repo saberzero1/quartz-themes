@@ -1,8 +1,0 @@
-body.theme-light input[data-task="/"]:checked,
-body.theme-dark input[data-task="/"]:checked,
-body.theme-light li[data-task="/"] > input:checked,
-body.theme-dark li[data-task="/"] > input:checked,
-body.theme-light li[data-task="/"] > p > input:checked,
-body.theme-dark li[data-task="/"] > p > input:checked {
-  background: var(--text-faint);
-}

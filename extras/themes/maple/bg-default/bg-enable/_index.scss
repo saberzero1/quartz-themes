@@ -1,9 +1,0 @@
-body.bg-default .setting-item[data-id="setting-bg-color"] {
-  display: none;
-}
-
-body.bg-default
-  .setting-item[data-id="setting-bg-color"]
-  + .style-settings-container {
-  display: none;
-}

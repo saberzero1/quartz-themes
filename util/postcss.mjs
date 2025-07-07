@@ -11,6 +11,7 @@ export function splitCombinedRules(cssString, mode = "both") {
 
   root.walkRules((originalRule) => {
     if (originalRule.selectors && originalRule.selectors.length > 1) {
+      /*
       if (originalRule.selectors.length === 2) {
         // Check if the selectors are ".theme-dark" and ".theme-light"
         // if these are the only selectors, we replace both selectors with 'body'
@@ -39,6 +40,7 @@ export function splitCombinedRules(cssString, mode = "both") {
           }
         }
       }
+      */
       const parent = originalRule.parent
       const newRules = []
 

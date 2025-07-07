@@ -1,7 +1,0 @@
-body:not(.is-mobile).card-layout-open-dark.theme-dark
-  .mod-root:has(.workspace-tabs + .workspace-tabs)
-  .workspace-tabs.mod-active
-  .workspace-tab-container {
-  outline-offset: 0px;
-  outline: 2px solid var(--color-accent-3);
-}

@@ -1,7 +1,0 @@
-body:is(:not(.css-settings-manager), )
-  .workspace-split.mod-vertical.mod-root
-  .workspace-tabs:not(.mod-stacked)
-  .workspace-leaf-content:not([data-type="pdf"])
-  .view-content {
-  animation: 0.2s slide-up forwards;
-}

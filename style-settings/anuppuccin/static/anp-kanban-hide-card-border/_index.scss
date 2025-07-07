@@ -1,9 +1,0 @@
-.kanban-plugin__item:not(:hover) {
-  box-shadow: none;
-}
-.kanban-plugin__item.is-search-hit {
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-}
-.anp-kanban-hide-cards .kanban-plugin__item.is-search-hit {
-  box-shadow: none;
-}

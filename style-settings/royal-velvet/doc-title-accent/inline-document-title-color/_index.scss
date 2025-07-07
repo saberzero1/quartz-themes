@@ -1,7 +1,0 @@
-body.doc-title-accent .inline-title {
-  background-image: linear-gradient(
-    var(--gradientDegree),
-    hsl(calc(var(--accent-h) + 30), var(--primary-sat), var(--primary-lit)) 0,
-    hsl(calc(var(--accent-h) - 30), var(--primary-sat), var(--primary-lit)) 100%
-  );
-}
