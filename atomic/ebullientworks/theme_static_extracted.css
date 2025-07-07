@@ -1731,10 +1731,7 @@ input[type="search"] {
 }
 
 kbd {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-radius: 4px;
   color: #9fbbd8;
   font-family:

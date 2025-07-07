@@ -1257,10 +1257,7 @@ input.prompt-input {
 }
 
 .markdown-rendered mark {
-  background-color: light-dark(
-    light-dark(#fdecc8, #89632a),
-    light-dark(#fdecc8, #89632a)
-  );
+  background-color: #fdecc8;
   color: #ffffffe6;
   padding: 0px 3px 2px 3px;
 }

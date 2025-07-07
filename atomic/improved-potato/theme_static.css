@@ -2636,10 +2636,7 @@ iframe {
   }
   .titlebar {
     -webkit-app-region: drag;
-    background-color: light-dark(
-      light-dark(#fafafa, #242424),
-      light-dark(#e3e3e3, #2a2a2a)
-    );
+    background-color: #fafafa;
     border-bottom: 0px solid transparent;
     display: flex;
     left: 0;
@@ -3969,10 +3966,7 @@ body.is-focused .workspace-tabs.mod-top {
 }
 
 .is-hidden-frameless:not(.is-fullscreen) .titlebar-button-container.mod-right {
-  background-color: light-dark(
-    light-dark(#fafafa, #242424),
-    light-dark(#e3e3e3, #2a2a2a)
-  );
+  background-color: #fafafa;
 }
 
 .is-hidden-frameless:not(.is-fullscreen).is-focused
@@ -4473,10 +4467,7 @@ body:not(.show-inline-title) .inline-title:not([data-level]) {
 
 .workspace-ribbon.mod-left:before {
   -webkit-app-region: drag;
-  background-color: light-dark(
-    light-dark(#fafafa, #242424),
-    light-dark(#e3e3e3, #2a2a2a)
-  );
+  background-color: #fafafa;
   border-bottom: 0.5pt solid #00000026;
   box-sizing: border-box;
   content: " ";
@@ -7697,10 +7688,7 @@ button.mod-destructive {
 }
 
 .card {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid transparent;
   border-radius: 4px;
   display: flex;
@@ -10120,10 +10108,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   cursor: default;
   text-align: center;
 }
@@ -11288,27 +11273,18 @@ kbd {
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .findbarOpen .pdf-viewer-container {
@@ -23890,7 +23866,7 @@ body:not(.default-font-color) span:not(.cm-highlight).cm-em {
 }
 
 div.cm-gutter.cm-lineNumbers {
-  color: light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
+  color: #ababab;
 }
 
 body.fancy-mark-current-line div.cm-gutter.cm-lineNumbers .cm-active {

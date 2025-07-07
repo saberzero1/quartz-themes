@@ -1027,10 +1027,7 @@
   --theme-color-contentItemBg: light-dark(#ffffff80, #00000033);
   --theme-color-contentItemBgActive: light-dark(#82807d, #82807d);
   --theme-color-contentItemBgHover: light-dark(#ffffff40, #0000001a);
-  --theme-color-controlActive: light-dark(
-    light-dark(#272725, #cdcccb),
-    light-dark(#272725, #cdcccb)
-  );
+  --theme-color-controlActive: light-dark(#272725, #cdcccb);
   --theme-color-controlBg: light-dark(#f9f9f8, #62605e);
   --theme-color-controlBgHover: light-dark(#82807d, #82807d);
   --theme-color-controlBgLowWeight: light-dark(
@@ -2519,10 +2516,7 @@ body {
   --theme-color-contentItemBgActive: light-dark(#82807d, #82807d);
   --theme-color-contentItemBgHover: light-dark(#ffffff40, #0000001a);
   --theme-color-control: light-dark(#272725, #cdcccb);
-  --theme-color-controlActive: light-dark(
-    light-dark(#272725, #cdcccb),
-    light-dark(#272725, #cdcccb)
-  );
+  --theme-color-controlActive: light-dark(#272725, #cdcccb);
   --theme-color-controlBg: light-dark(#f9f9f8, #62605e);
   --theme-color-controlBgHover: light-dark(#82807d, #82807d);
   --theme-color-controlBgLowWeight: light-dark(
@@ -8576,10 +8570,7 @@ button.mod-destructive {
 }
 
 .card {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid #62605e;
   border-radius: 4px;
   display: flex;
@@ -11207,10 +11198,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   cursor: default;
   text-align: center;
 }
@@ -12362,27 +12350,18 @@ kbd {
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .findbarOpen .pdf-viewer-container {
@@ -16013,7 +15992,7 @@ a.mobile-tap {
 
 .cm-s-obsidian
   span.cm-footref.cm-inline-footnote.cm-formatting-inline-footnote {
-  color: #827f7d;
+  color: #a1a09d;
 }
 
 .cm-s-obsidian span.cm-footref.cm-hmd-barelink.cm-formatting {
@@ -26286,6 +26265,11 @@ body.theme-setting-highlightActiveLine {
 body.theme-setting-differentiateBulletLevels {
   background-color: transparent;
   border-radius: 0;
+}
+
+.cm-s-obsidian
+  span.cm-footref.cm-inline-footnote.cm-formatting-inline-footnote {
+  color: #827f7d;
 }
 
 .modal.mod-settings .setting-item-heading {

@@ -59,7 +59,7 @@
     hsl(210, 61.2%, 77.05%)
   );
   --color-accent-2: light-dark(hsl(210, 61.2%, 77.05%), hsl(208, 63%, 86.43%));
-  --color-accent-hsl: light-dark(hsl(213, 60%, 67%), hsl(213, 60%, 67%));
+  --color-accent-hsl: light-dark(213, 60%, 67%, 213, 60%, 67%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -631,7 +631,7 @@ body {
     hsl(210, 61.2%, 77.05%)
   );
   --color-accent-2: light-dark(hsl(210, 61.2%, 77.05%), hsl(208, 63%, 86.43%));
-  --color-accent-hsl: light-dark(hsl(213, 60%, 67%), hsl(213, 60%, 67%));
+  --color-accent-hsl: light-dark(213, 60%, 67%, 213, 60%, 67%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -1575,7 +1575,7 @@ body {
   -webkit-user-select: none;
   background-color: rgba(25, 25, 46, 0.8);
   caret-color: rgb(187, 163, 121);
-  color: light-dark(light-dark(#575279, #e0def4), light-dark(#575279, #e0def4));
+  color: #575279;
   contain: initial;
   font-family:
     "??",
@@ -1816,7 +1816,7 @@ h5 {
 h6 {
   --font-weight: 600;
   color: light-dark(
-    light-dark(light-dark(#575279, #e0def4), light-dark(#575279, #e0def4)),
+    light-dark(#575279, #e0def4),
     light-dark(light-dark(#575279, #e0def4), light-dark(#575279, #e0def4))
   );
   font-family:
@@ -1849,10 +1849,7 @@ h6 {
 }
 
 .markdown-rendered pre {
-  background-color: light-dark(
-    light-dark(#faf4ed, #191724),
-    light-dark(#faf4ed, #191724)
-  );
+  background-color: #faf4ed;
   border: 0px solid transparent;
   border-radius: 4px;
   min-height: 38px;
@@ -1864,13 +1861,10 @@ h6 {
 
 .markdown-rendered code {
   -webkit-box-decoration-break: clone;
-  background-color: light-dark(
-    light-dark(#faf4ed, #191724),
-    light-dark(#faf4ed, #191724)
-  );
+  background-color: #faf4ed;
   border: 0px solid transparent;
   border-radius: 4px;
-  color: light-dark(light-dark(#797593, #908caa), light-dark(#797593, #908caa));
+  color: #797593;
   font-family:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1888,7 +1882,7 @@ h6 {
 .markdown-rendered button.copy-code-button {
   background-color: transparent;
   box-shadow: none;
-  color: light-dark(light-dark(#9893a5, #6e6a86), light-dark(#9893a5, #6e6a86));
+  color: #9893a5;
   font-family:
     "??",
     "Inter",
@@ -2206,7 +2200,7 @@ input.prompt-input {
 
 .markdown-rendered mark {
   background-color: rgba(246, 173, 119, 0.2);
-  color: light-dark(light-dark(#575279, #e0def4), light-dark(#575279, #e0def4));
+  color: #575279;
 }
 
 a.tag {
@@ -2229,7 +2223,7 @@ input[type="search"] {
   );
   border: 1px solid transparent;
   border-radius: 30px;
-  color: light-dark(light-dark(#575279, #e0def4), light-dark(#575279, #e0def4));
+  color: #575279;
   font-family: inherit;
   font-size: 14.992px;
   height: 40px;
@@ -2261,7 +2255,7 @@ input[type="search"] {
 
 .nav-file-icon {
   align-items: center;
-  color: light-dark(light-dark(#575279, #e0def4), light-dark(#575279, #e0def4));
+  color: #575279;
   display: inline-flex;
   margin-inline-end: 6px;
   opacity: 1;
@@ -2270,7 +2264,7 @@ input[type="search"] {
 
 .nav-folder-title {
   border-radius: 4px;
-  color: light-dark(light-dark(#575279, #e0def4), light-dark(#575279, #e0def4));
+  color: #575279;
   cursor: pointer;
   display: flex;
   font-size: 12.8px;
@@ -2282,7 +2276,7 @@ input[type="search"] {
 
 .nav-file-title {
   border-radius: 4px;
-  color: light-dark(light-dark(#575279, #e0def4), light-dark(#575279, #e0def4));
+  color: #575279;
   cursor: pointer;
   display: flex;
   font-size: 12.8px;
@@ -2317,7 +2311,7 @@ input[type="search"] {
 .tree-item-self {
   align-items: baseline;
   border-radius: 4px;
-  color: light-dark(light-dark(#575279, #e0def4), light-dark(#575279, #e0def4));
+  color: #575279;
   display: flex;
   font-size: 12.8px;
   font-weight: inherit;
@@ -2348,7 +2342,7 @@ input[type="search"] {
 
 .tree-item-self.is-clickable.mobile-tap {
   background-color: rgba(255, 255, 255, 0.15);
-  color: light-dark(light-dark(#797593, #908caa), light-dark(#797593, #908caa));
+  color: #797593;
   font-weight: inherit;
 }
 
@@ -2370,7 +2364,7 @@ input[type="search"] {
 
 .tree-item-self .tree-item-icon {
   align-items: center;
-  color: light-dark(light-dark(#575279, #e0def4), light-dark(#575279, #e0def4));
+  color: #575279;
   display: flex;
   flex: 0 0 auto;
   justify-content: center;
@@ -2399,7 +2393,7 @@ input[type="search"] {
 
 .tree-item-flair {
   border-radius: 4px;
-  color: light-dark(light-dark(#9893a5, #6e6a86), light-dark(#9893a5, #6e6a86));
+  color: #9893a5;
   font-size: 12.8px;
   line-height: 1;
 }
@@ -2416,7 +2410,7 @@ input[type="search"] {
 }
 
 .tree-item-inner-subtext {
-  color: light-dark(light-dark(#9893a5, #6e6a86), light-dark(#9893a5, #6e6a86));
+  color: #9893a5;
   font-size: 85%;
 }
 
@@ -2428,12 +2422,9 @@ input[type="search"] {
 }
 
 kbd {
-  background-color: light-dark(
-    light-dark(#faf4ed, #191724),
-    light-dark(#faf4ed, #191724)
-  );
+  background-color: #faf4ed;
   border-radius: 4px;
-  color: light-dark(light-dark(#797593, #908caa), light-dark(#797593, #908caa));
+  color: #797593;
   font-family:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -2449,7 +2440,7 @@ svg.svg-icon {
 }
 
 .clickable-icon.mod-warning {
-  color: light-dark(light-dark(#e93147, #fb464c), light-dark(#e93147, #fb464c));
+  color: #e93147;
 }
 
 .clickable-icon.mod-filled svg {
@@ -2462,7 +2453,7 @@ svg.svg-icon {
 
 .clickable-icon[aria-disabled="true"] {
   background-color: unset;
-  color: light-dark(light-dark(#9893a5, #6e6a86), light-dark(#9893a5, #6e6a86));
+  color: #9893a5;
   opacity: 0.4;
 }
 
@@ -2485,7 +2476,7 @@ svg.svg-icon {
   align-items: center;
   background-color: transparent;
   border-radius: 8px;
-  color: light-dark(light-dark(#575279, #e0def4), light-dark(#575279, #e0def4));
+  color: #575279;
   cursor: pointer;
   display: flex;
   height: auto;
@@ -2496,7 +2487,7 @@ svg.svg-icon {
 }
 
 .view-header-title-parent .view-header-breadcrumb-separator {
-  color: light-dark(light-dark(#9893a5, #6e6a86), light-dark(#9893a5, #6e6a86));
+  color: #9893a5;
   padding: 2px 1px;
 }
 
@@ -2528,7 +2519,7 @@ svg.svg-icon {
 
 .graph-view.color-fill {
   color: light-dark(
-    light-dark(light-dark(#575279, #e0def4), light-dark(#575279, #e0def4)),
+    light-dark(#575279, #e0def4),
     light-dark(light-dark(#575279, #e0def4), light-dark(#575279, #e0def4))
   );
 }
@@ -2547,38 +2538,38 @@ svg.svg-icon {
 
 .graph-view.color-fill-unresolved {
   color: light-dark(
-    light-dark(light-dark(#9893a5, #6e6a86), light-dark(#9893a5, #6e6a86)),
+    light-dark(#9893a5, #6e6a86),
     light-dark(light-dark(#9893a5, #6e6a86), light-dark(#9893a5, #6e6a86))
   );
   opacity: 0.5;
 }
 
 .graph-view.color-fill-1 {
-  color: light-dark(light-dark(#9893a5, #6e6a86), light-dark(#9893a5, #6e6a86));
+  color: #9893a5;
 }
 
 .graph-view.color-fill-2 {
-  color: light-dark(light-dark(#9893a5, #6e6a86), light-dark(#9893a5, #6e6a86));
+  color: #9893a5;
 }
 
 .graph-view.color-fill-3 {
-  color: light-dark(light-dark(#9893a5, #6e6a86), light-dark(#9893a5, #6e6a86));
+  color: #9893a5;
 }
 
 .graph-view.color-fill-4 {
-  color: light-dark(light-dark(#9893a5, #6e6a86), light-dark(#9893a5, #6e6a86));
+  color: #9893a5;
 }
 
 .graph-view.color-fill-5 {
-  color: light-dark(light-dark(#9893a5, #6e6a86), light-dark(#9893a5, #6e6a86));
+  color: #9893a5;
 }
 
 .graph-view.color-fill-6 {
-  color: light-dark(light-dark(#9893a5, #6e6a86), light-dark(#9893a5, #6e6a86));
+  color: #9893a5;
 }
 
 .graph-view.color-arrow {
-  color: light-dark(light-dark(#575279, #e0def4), light-dark(#575279, #e0def4));
+  color: #575279;
   opacity: 0.5;
 }
 

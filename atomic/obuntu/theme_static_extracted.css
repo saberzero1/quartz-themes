@@ -1644,7 +1644,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-line-highlight {
-  color: rgb(light-dark(#df7a16, #df7a16));
+  color: light-dark(#df7a16, #df7a16);
 }
 
 .graph-controls {
@@ -1846,10 +1846,7 @@ svg.svg-icon {
 
 .workspace-leaf-resize-handle {
   -webkit-app-region: no-drag;
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-color: #00000026;
   border-top: 0;
   border-width: 0.5pt;

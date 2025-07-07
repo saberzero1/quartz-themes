@@ -936,7 +936,7 @@
   --color-accent: light-dark(#8b6cef, #8b6cef);
   --color-accent-1: light-dark(#9b83f2, #ab9af5);
   --color-accent-2: light-dark(#ab9af5, #cdc5fa);
-  --color-accent-hsl: light-dark(#8b6cef, #8b6cef);
+  --color-accent-hsl: light-dark(254, 80%, 68%, 254, 80%, 68%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -1732,7 +1732,7 @@ body {
   --color-accent: light-dark(#8b6cef, #8b6cef);
   --color-accent-1: light-dark(#9b83f2, #ab9af5);
   --color-accent-2: light-dark(#ab9af5, #cdc5fa);
-  --color-accent-hsl: light-dark(#8b6cef, #8b6cef);
+  --color-accent-hsl: light-dark(254, 80%, 68%, 254, 80%, 68%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -7702,10 +7702,7 @@ button.mod-destructive {
 }
 
 .card {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid transparent;
   border-radius: 4px;
   display: flex;
@@ -10163,10 +10160,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   cursor: default;
   text-align: center;
 }
@@ -11327,27 +11321,18 @@ kbd {
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .findbarOpen .pdf-viewer-container {
@@ -22662,10 +22647,7 @@ body.is-tablet .workspace-drawer.mod-left .workspace-drawer-inner {
 
 .workspace-drawer-active-tab-header {
   align-items: center;
-  background-color: light-dark(
-    light-dark(#e3e3e3, #2a2a2a),
-    light-dark(#e3e3e3, #2a2a2a)
-  );
+  background-color: #e3e3e3;
   border-radius: 8px;
   display: flex;
   margin: 0 12px 4px;
@@ -24687,10 +24669,7 @@ a.external-link[href*="reactjs.org"]::before {
 }
 
 .kanban-plugin__lane {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 button.kanban-plugin__new-item-button {

@@ -1,9 +1,0 @@
-body:not(.is-mobile).hide-help
-  .workspace-drawer-vault-actions
-  .clickable-icon:first-child {
-  display: none;
-}
-
-body:not(.is-mobile).hide-settings .workspace-drawer-vault-actions {
-  display: none !important;
-}

@@ -8081,10 +8081,7 @@ button.mod-destructive {
 }
 
 .card {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid light-dark(#d2cfc5, #4a473e);
   border-radius: 4px;
   display: flex;
@@ -10550,10 +10547,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   cursor: default;
   text-align: center;
 }
@@ -11728,27 +11722,18 @@ kbd {
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .findbarOpen .pdf-viewer-container {
@@ -12219,7 +12204,7 @@ kbd {
 
 .callout-title {
   align-items: flex-start;
-  color: rgb(#573d84);
+  color: #573d84;
   display: flex;
   font-size: inherit;
   gap: 4px;
@@ -12244,7 +12229,7 @@ kbd {
 }
 
 .callout-icon .svg-icon {
-  color: rgb(#573d84);
+  color: #573d84;
 }
 
 .callout-icon::after {
@@ -13996,7 +13981,7 @@ input.metadata-property-key-input:focus {
 }
 
 .metadata-link-inner {
-  color: light-dark(light-dark(#ae4e36, #ae4e36), light-dark(#ae4e36, #ae4e36));
+  color: #ae4e36;
   cursor: default;
   overflow: hidden;
   text-decoration-line: underline;
@@ -15185,7 +15170,7 @@ li.is-collapsed .list-bullet:after {
 
 a {
   --font-weight: 600;
-  color: light-dark(light-dark(#ae4e36, #ae4e36), light-dark(#ae4e36, #ae4e36));
+  color: #ae4e36;
   cursor: default;
   font-weight: 600;
   outline: none;
@@ -15243,7 +15228,7 @@ a.mobile-tap {
 }
 
 .metadata-property-value .internal-link {
-  color: light-dark(light-dark(#ae4e36, #ae4e36), light-dark(#ae4e36, #ae4e36));
+  color: #ae4e36;
   cursor: default;
   text-decoration-line: underline;
   transition: opacity 0.15s ease-in-out;
@@ -15254,7 +15239,7 @@ a.mobile-tap {
   border-bottom: none;
   border-radius: 0;
   box-shadow: none;
-  color: light-dark(light-dark(#ae4e36, #ae4e36), light-dark(#ae4e36, #ae4e36));
+  color: #ae4e36;
   cursor: default;
   padding: 0;
   text-decoration: none;
@@ -15315,7 +15300,7 @@ a.mobile-tap {
 
 .cm-s-obsidian span.cm-hmd-internal-link {
   --font-weight: 600;
-  color: light-dark(light-dark(#ae4e36, #ae4e36), light-dark(#ae4e36, #ae4e36));
+  color: #ae4e36;
   font-weight: 600;
 }
 
@@ -24772,7 +24757,7 @@ input.mobile-vault-chooser-field-input {
   background: #d9775614;
   border-bottom: 1px solid transparent;
   border-radius: 6px;
-  color: light-dark(light-dark(#ae4e36, #ae4e36), light-dark(#ae4e36, #ae4e36));
+  color: #ae4e36;
   padding: 0 4px;
   text-decoration: none;
   transition:

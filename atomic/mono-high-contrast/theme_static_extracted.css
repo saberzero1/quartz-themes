@@ -819,11 +819,11 @@ body {
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: light-dark(
-    light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000)),
+    light-dark(#ffffff, #000000),
     light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000))
   );
   caret-color: #ffffff;
-  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
+  color: #000000;
   contain: initial;
   font-family: "Fira Code", "FuraMono Nerd Font", monospace;
   font-size: 16px;
@@ -865,7 +865,7 @@ h6 a {
 
 h1 {
   --font-weight: 700;
-  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
+  color: #000000;
   font-family: inherit;
   font-size: 1.802em;
   font-style: normal;
@@ -879,7 +879,7 @@ h1 {
 
 h2 {
   --font-weight: 600;
-  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
+  color: #000000;
   font-family: inherit;
   font-size: 1.602em;
   font-style: normal;
@@ -893,7 +893,7 @@ h2 {
 
 h3 {
   --font-weight: 600;
-  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
+  color: #000000;
   font-family: inherit;
   font-size: 1.424em;
   font-style: normal;
@@ -907,7 +907,7 @@ h3 {
 
 h4 {
   --font-weight: 600;
-  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
+  color: #000000;
   font-family: inherit;
   font-size: 1.266em;
   font-style: normal;
@@ -921,7 +921,7 @@ h4 {
 
 h5 {
   --font-weight: 600;
-  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
+  color: #000000;
   font-family: inherit;
   font-size: 1.125em;
   font-style: normal;
@@ -935,7 +935,7 @@ h5 {
 
 h6 {
   --font-weight: 600;
-  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
+  color: #000000;
   font-family: inherit;
   font-size: 1em;
   font-style: normal;
@@ -963,7 +963,7 @@ h6 {
   background-color: light-dark(#eeeeee, #111111);
   border: 0px solid transparent;
   border-radius: 0;
-  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
+  color: #000000;
   font-family:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -981,7 +981,7 @@ h6 {
 .markdown-rendered button.copy-code-button {
   background-color: transparent;
   box-shadow: none;
-  color: light-dark(light-dark(#666666, #999999), light-dark(#666666, #999999));
+  color: #666666;
   font-family: "Fira Code", "FuraMono Nerd Font", monospace;
   font-size: 12.8px;
   height: auto;
@@ -1211,7 +1211,7 @@ h6 {
 
 .popover {
   background-color: light-dark(
-    light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000)),
+    light-dark(#ffffff, #000000),
     light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000))
   );
   border: 1px solid
@@ -1229,7 +1229,7 @@ h6 {
 
 .prompt {
   background-color: light-dark(
-    light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000)),
+    light-dark(#ffffff, #000000),
     light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000))
   );
   border: 0.5pt solid #555555;
@@ -1251,7 +1251,7 @@ h6 {
 
 input.prompt-input {
   background-color: light-dark(
-    light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000)),
+    light-dark(#ffffff, #000000),
     light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000))
   );
   border: none;
@@ -1277,12 +1277,9 @@ input.prompt-input {
 }
 
 .markdown-rendered mark {
-  background-color: light-dark(
-    light-dark(#000000, #ffffff),
-    light-dark(#ffffff, #000000)
-  );
+  background-color: #000000;
   border-radius: 0;
-  color: light-dark(light-dark(#ffffff, #000000), light-dark(#000000, #ffffff));
+  color: #ffffff;
   padding: 4px;
 }
 
@@ -1307,7 +1304,7 @@ input[type="search"] {
   border: 1px solid
     light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
   border-radius: 5px;
-  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
+  color: #000000;
   font-family: inherit;
   font-size: 14.992px;
   height: 40px;
@@ -1339,7 +1336,7 @@ input[type="search"] {
 
 .nav-file-icon {
   align-items: center;
-  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
+  color: #000000;
   display: inline-flex;
   margin-inline-end: 6px;
   opacity: 1;
@@ -1348,7 +1345,7 @@ input[type="search"] {
 
 .nav-folder-title {
   border-radius: 4px;
-  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
+  color: #000000;
   cursor: pointer;
   display: flex;
   font-size: 16px;
@@ -1360,7 +1357,7 @@ input[type="search"] {
 
 .nav-file-title {
   border-radius: 4px;
-  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
+  color: #000000;
   cursor: pointer;
   display: flex;
   font-size: 16px;
@@ -1395,7 +1392,7 @@ input[type="search"] {
 .tree-item-self {
   align-items: baseline;
   border-radius: 4px;
-  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
+  color: #000000;
   display: flex;
   font-size: 16px;
   font-weight: inherit;
@@ -1441,16 +1438,13 @@ input[type="search"] {
 }
 
 .tree-item-self.is-being-dragged {
-  background-color: light-dark(
-    light-dark(#aaaaaa, #555555),
-    light-dark(#aaaaaa, #555555)
-  );
-  color: light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000));
+  background-color: #aaaaaa;
+  color: #ffffff;
 }
 
 .tree-item-self .tree-item-icon {
   align-items: center;
-  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
+  color: #000000;
   display: flex;
   flex: 0 0 auto;
   justify-content: center;
@@ -1479,7 +1473,7 @@ input[type="search"] {
 
 .tree-item-flair {
   border-radius: 4px;
-  color: light-dark(light-dark(#666666, #999999), light-dark(#666666, #999999));
+  color: #666666;
   font-size: 12.8px;
   line-height: 1;
 }
@@ -1496,7 +1490,7 @@ input[type="search"] {
 }
 
 .tree-item-inner-subtext {
-  color: light-dark(light-dark(#666666, #999999), light-dark(#666666, #999999));
+  color: #666666;
   font-size: 85%;
 }
 
@@ -1510,7 +1504,7 @@ input[type="search"] {
 kbd {
   background-color: light-dark(#eeeeee, #111111);
   border-radius: 4px;
-  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
+  color: #000000;
   font-family:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1526,7 +1520,7 @@ svg.svg-icon {
 }
 
 .clickable-icon.mod-warning {
-  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
+  color: #000000;
 }
 
 .clickable-icon.mod-filled svg {
@@ -1539,7 +1533,7 @@ svg.svg-icon {
 
 .clickable-icon[aria-disabled="true"] {
   background-color: unset;
-  color: light-dark(light-dark(#666666, #999999), light-dark(#666666, #999999));
+  color: #666666;
   opacity: 0.4;
 }
 
@@ -1562,7 +1556,7 @@ svg.svg-icon {
   align-items: center;
   background-color: transparent;
   border-radius: 4px;
-  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
+  color: #000000;
   cursor: pointer;
   display: flex;
   height: auto;
@@ -1573,7 +1567,7 @@ svg.svg-icon {
 }
 
 .view-header-title-parent .view-header-breadcrumb-separator {
-  color: light-dark(light-dark(#666666, #999999), light-dark(#666666, #999999));
+  color: #666666;
   padding: 2px 1px;
 }
 
@@ -1604,7 +1598,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill {
-  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
+  color: #000000;
 }
 
 .graph-view.color-fill-focused {
@@ -1625,57 +1619,57 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-1 {
-  color: light-dark(light-dark(#666666, #999999), light-dark(#666666, #999999));
+  color: #666666;
 }
 
 .graph-view.color-fill-2 {
-  color: light-dark(light-dark(#666666, #999999), light-dark(#666666, #999999));
+  color: #666666;
 }
 
 .graph-view.color-fill-3 {
-  color: light-dark(light-dark(#666666, #999999), light-dark(#666666, #999999));
+  color: #666666;
 }
 
 .graph-view.color-fill-4 {
-  color: light-dark(light-dark(#666666, #999999), light-dark(#666666, #999999));
+  color: #666666;
 }
 
 .graph-view.color-fill-5 {
-  color: light-dark(light-dark(#666666, #999999), light-dark(#666666, #999999));
+  color: #666666;
 }
 
 .graph-view.color-fill-6 {
-  color: light-dark(light-dark(#666666, #999999), light-dark(#666666, #999999));
+  color: #666666;
 }
 
 .graph-view.color-arrow {
-  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
+  color: #000000;
   opacity: 0.5;
 }
 
 .graph-view.color-circle {
-  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
+  color: #000000;
 }
 
 .graph-view.color-line {
-  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
+  color: #000000;
 }
 
 .graph-view.color-text {
-  color: light-dark(light-dark(#000000, #ffffff), light-dark(#000000, #ffffff));
+  color: #000000;
 }
 
 .graph-view.color-fill-highlight {
-  color: light-dark(light-dark(#aaaaaa, #555555), light-dark(#aaaaaa, #555555));
+  color: #aaaaaa;
 }
 
 .graph-view.color-line-highlight {
-  color: light-dark(light-dark(#aaaaaa, #555555), light-dark(#aaaaaa, #555555));
+  color: #aaaaaa;
 }
 
 .graph-controls {
   background-color: light-dark(
-    light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000)),
+    light-dark(#ffffff, #000000),
     light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000))
   );
   border-radius: 8px;
@@ -1915,7 +1909,7 @@ svg.svg-icon {
 
 .workspace-tabs .workspace-leaf {
   background-color: light-dark(
-    light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000)),
+    light-dark(#ffffff, #000000),
     light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000))
   );
   height: 100%;
@@ -1923,14 +1917,14 @@ svg.svg-icon {
 
 .workspace-split.mod-root {
   background-color: light-dark(
-    light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000)),
+    light-dark(#ffffff, #000000),
     light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000))
   );
 }
 
 .workspace-split.mod-root .view-content {
   background-color: light-dark(
-    light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000)),
+    light-dark(#ffffff, #000000),
     light-dark(light-dark(#ffffff, #000000), light-dark(#ffffff, #000000))
   );
 }

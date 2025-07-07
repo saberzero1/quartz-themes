@@ -1339,10 +1339,7 @@ input.prompt-input {
 }
 
 a.tag {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 0px solid #8a5cf526;
   border-radius: 4px;
   color: light-dark(#9bdead, #9bdead);

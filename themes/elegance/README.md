@@ -3,6 +3,7 @@
 - Theme: Elegance
 - Author: <a href="https://github.com/Victologo/elegance-theme" target="_blank" rel="noopener noreferrer">Victologo</a>
 
+
 ## Preview
 
 [Open live preview](https://quartz-themes.github.io/elegance/)
@@ -31,7 +32,7 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 
 ### Manual install
 
-Copy [\_index.scss](./_index.scss) into your Quartz repository's `quartz/styles/themes/` directory. (Create the `themes` directory if it does not exist.)
+Copy [_index.scss](./_index.scss) into your Quartz repository's `quartz/styles/themes/` directory. (Create the `themes` directory if it does not exist.)
 
 Then, add the following to your `quartz/styles/custom.scss` file after the `@use "base";` line:
 

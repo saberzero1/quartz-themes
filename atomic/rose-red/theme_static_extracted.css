@@ -17,7 +17,7 @@
   --color-accent: light-dark(#52fa7c, #52fa7c);
   --color-accent-1: light-dark(#69fb8b, #81fc9a);
   --color-accent-2: light-dark(#81fc9a, #adfebb);
-  --color-accent-hsl: light-dark(#52fa7c, #52fa7c);
+  --color-accent-hsl: light-dark(135, 94%, 65%, 135, 94%, 65%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -273,7 +273,7 @@ body {
   --color-accent: light-dark(#52fa7c, #52fa7c);
   --color-accent-1: light-dark(#69fb8b, #81fc9a);
   --color-accent-2: light-dark(#81fc9a, #adfebb);
-  --color-accent-hsl: light-dark(#52fa7c, #52fa7c);
+  --color-accent-hsl: light-dark(135, 94%, 65%, 135, 94%, 65%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -1368,10 +1368,7 @@ h6 {
 }
 
 .popover {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid transparent;
   border-radius: 8px;
   box-shadow:

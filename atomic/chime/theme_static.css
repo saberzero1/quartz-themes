@@ -7645,10 +7645,7 @@ button.mod-destructive {
 }
 
 .card {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#f6f6f6, #262626)
-  );
+  background-color: #fcfcfc;
   border: 1px solid #323130;
   border-radius: 4px;
   display: flex;
@@ -8221,7 +8218,7 @@ h6:hover .collapse-indicator {
 }
 
 .collapse-icon svg.svg-icon {
-  color: rgb(inherit);
+  color: inherit;
   height: 10px;
   stroke-width: 4px;
   transition: transform 100ms ease-in-out;
@@ -10068,10 +10065,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#f6f6f6, #262626)
-  );
+  background-color: #fcfcfc;
   cursor: default;
   text-align: center;
 }
@@ -11228,27 +11222,18 @@ kbd {
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#f6f6f6, #262626)
-  );
+  background-color: #fcfcfc;
   filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#f6f6f6, #262626)
-  );
+  background-color: #fcfcfc;
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#f6f6f6, #262626)
-  );
+  background-color: #fcfcfc;
 }
 
 .findbarOpen .pdf-viewer-container {
@@ -23714,7 +23699,6 @@ input.mobile-vault-chooser-field-input {
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
-
 .custom-font-toggle {
   --font-default: var(--custom-font), sans-serif;
 }
@@ -26813,33 +26797,33 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
 }
 
 .folder-rainbow-titles .nav-folder-title {
-  --nav-collapse-icon-color: rgb(inherit);
-  --nav-collapse-icon-color-collapsed: rgb(inherit);
-  color: rgb(inherit);
+  --nav-collapse-icon-color: inherit;
+  --nav-collapse-icon-color-collapsed: inherit;
+  color: inherit;
 }
 
 .folder-rainbow-backgrounds .nav-folder-title {
   --nav-collapse-icon-color: #ffffffcf;
   --nav-collapse-icon-color-collapsed: #ffffffcf;
-  background-color: rgba(inherit, 0.3);
+  background-color: inherit;
   color: inherit;
 }
 
 .folder-rainbow-backgrounds.theme-crystal .nav-folder-title {
-  --nav-collapse-icon-color: rgb(inherit);
-  --nav-collapse-icon-color-collapsed: rgb(inherit);
-  background-color: rgba(inherit, 0.13);
-  border: 0.25px solid rgb(inherit);
-  color: rgb(inherit);
+  --nav-collapse-icon-color: inherit;
+  --nav-collapse-icon-color-collapsed: inherit;
+  background-color: inherit;
+  border: 0.25px solid inherit;
+  color: inherit;
   margin-bottom: 5px;
 }
 
 .folder-rainbow-backgrounds.theme-ash-old .nav-folder-title {
-  --nav-collapse-icon-color: rgb(inherit);
-  --nav-collapse-icon-color-collapsed: rgb(inherit);
-  background-color: rgba(inherit, 0.13);
-  border: 0.25px solid rgb(inherit);
-  color: rgb(inherit);
+  --nav-collapse-icon-color: inherit;
+  --nav-collapse-icon-color-collapsed: inherit;
+  background-color: inherit;
+  border: 0.25px solid inherit;
+  color: inherit;
   margin-bottom: 5px;
 }
 
@@ -26877,7 +26861,7 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
 
 .folder-rainbow-backgrounds .nav-folder.mod-root .nav-folder .nav-file-title {
   --rainbow-folder-color: inherit;
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .cards.table-100 table.dataview tbody {
@@ -27090,11 +27074,7 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
 }
 
 .cards table.dataview thead:before {
-  background-image: url(
-    data:image/svg + xml,
-    utf8,
-    <svgxmlns="http://www.w3.org/2000/svg"fill="none"viewBox="0 0 100 100"><pathfill="white"d="M49.792 33.125l-5.892 5.892L33.333 28.45V83.333H25V28.45L14.438 39.017L8.542 33.125L29.167 12.5l20.625 20.625zm41.667 33.75L70.833 87.5l-20.625 -20.625l5.892 -5.892l10.571 10.567L66.667 16.667h8.333v54.883l10.567 -10.567l5.892 5.892z"></path></svg>
-  );
+  background-image: url('data:image/svg + xml,utf8,<svgxmlns="http://www.w3.org/2000/svg"fill="none"viewBox="0 0 100 100"><pathfill="white"d="M49.792 33.125l-5.892 5.892L33.333 28.45V83.333H25V28.45L14.438 39.017L8.542 33.125L29.167 12.5l20.625 20.625zm41.667 33.75L70.833 87.5l-20.625 -20.625l5.892 -5.892l10.571 10.567L66.667 16.667h8.333v54.883l10.567 -10.567l5.892 5.892z"></path></svg>');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 32px;
@@ -27114,11 +27094,7 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
 }
 
 .theme-light .cards table.dataview thead:before {
-  background-image: url(
-    data:image/svg + xml,
-    utf8,
-    <svgxmlns="http://www.w3.org/2000/svg"fill="none"viewBox="0 0 100 100"><pathfill="black"d="M49.792 33.125l-5.892 5.892L33.333 28.45V83.333H25V28.45L14.438 39.017L8.542 33.125L29.167 12.5l20.625 20.625zm41.667 33.75L70.833 87.5l-20.625 -20.625l5.892 -5.892l10.571 10.567L66.667 16.667h8.333v54.883l10.567 -10.567l5.892 5.892z"></path></svg>
-  );
+  background-image: url('data:image/svg + xml,utf8,<svgxmlns="http://www.w3.org/2000/svg"fill="none"viewBox="0 0 100 100"><pathfill="black"d="M49.792 33.125l-5.892 5.892L33.333 28.45V83.333H25V28.45L14.438 39.017L8.542 33.125L29.167 12.5l20.625 20.625zm41.667 33.75L70.833 87.5l-20.625 -20.625l5.892 -5.892l10.571 10.567L66.667 16.667h8.333v54.883l10.567 -10.567l5.892 5.892z"></path></svg>');
 }
 
 .cards table.dataview thead:hover:before {
@@ -27295,10 +27271,7 @@ body:not(.colorful-headings):not(.colorful-headings-alt) {
 }
 
 .database-plugin__row-shadow {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#f6f6f6, #262626)
-  );
+  background-color: #fcfcfc;
 }
 
 .hide-buttons.classic-layout {

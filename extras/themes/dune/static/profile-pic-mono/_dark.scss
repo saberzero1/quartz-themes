@@ -1,9 +1,0 @@
-.profile-pic-mono:is(.is-mobile.theme-dark)
-  .workspace-drawer.mod-left
-  .workspace-drawer-header-name::before,
-.theme-dark
-  .nav-folder.mod-root
-  > .nav-folder-title
-  > .nav-folder-title-content::after {
-  filter: invert(1);
-}

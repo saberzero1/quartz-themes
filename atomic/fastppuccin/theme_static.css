@@ -3132,7 +3132,7 @@ body:not(.is-mobile) .app-container {
   background: #b4befe;
   border: 0;
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
   width: auto;
@@ -3154,14 +3154,14 @@ body:not(.is-mobile) .app-container {
 
 .cm-negative {
   color: light-dark(
-    rgb(light-dark(210, 15, 57, 243, 139, 168)),
+    light-dark(210, 15, 57, 243, 139, 168),
     rgb(light-dark(210, 15, 57, 243, 139, 168))
   );
 }
 
 .cm-positive {
   color: light-dark(
-    rgb(light-dark(64, 160, 43, 166, 227, 161)),
+    light-dark(64, 160, 43, 166, 227, 161),
     rgb(light-dark(64, 160, 43, 166, 227, 161))
   );
 }
@@ -3172,7 +3172,7 @@ body:not(.is-mobile) .app-container {
 
 .cm-invalidchar {
   color: light-dark(
-    rgb(light-dark(210, 15, 57, 243, 139, 168)),
+    light-dark(210, 15, 57, 243, 139, 168),
     rgb(light-dark(210, 15, 57, 243, 139, 168))
   );
 }
@@ -3215,13 +3215,13 @@ body:not(.is-mobile) .app-container {
 
 .drag-ghost {
   background-color: light-dark(
-    rgb(light-dark(76, 79, 105, 198, 208, 245)),
+    light-dark(76, 79, 105, 198, 208, 245),
     rgb(light-dark(76, 79, 105, 198, 208, 245))
   );
   border-radius: 4px;
   box-shadow: 0 2px 8px #0000004d;
   color: light-dark(
-    rgb(light-dark(220, 224, 232, 17, 17, 27)),
+    light-dark(220, 224, 232, 17, 17, 27),
     rgb(light-dark(220, 224, 232, 17, 17, 27))
   );
   font-size: 14.992px;
@@ -3419,7 +3419,7 @@ body:not(.is-mobile) .app-container {
   background-color: transparent;
   border-right: none;
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   flex: 0 0 auto;
@@ -3709,7 +3709,7 @@ body:not(.is-mobile) .app-container {
   border: 1px solid transparent;
   border-top: none;
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   cursor: s-resize;
@@ -3734,7 +3734,7 @@ body:not(.is-mobile) .app-container {
   border: 1px solid transparent;
   border-inline-start: none;
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   cursor: e-resize;
@@ -4394,7 +4394,7 @@ body.is-frameless .modal {
 
 .pane-empty {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   font-size: 14.992px;
@@ -4508,7 +4508,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .view-header-title-parent .view-header-breadcrumb-separator {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   padding: 2px 1px;
@@ -5408,7 +5408,7 @@ input {
 
 .modal.mod-plugin-debug .startup-desc {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   font-size: 12.8px;
@@ -5558,7 +5558,7 @@ input {
 .setting-item-control.mod-hotkey input:focus {
   background-color: #b4befe;
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
 }
@@ -5593,7 +5593,7 @@ input {
 .setting-hotkey.has-conflict {
   background-color: #f38ba8;
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
 }
@@ -5607,7 +5607,7 @@ input {
 .setting-hotkey.mod-active {
   background-color: #b4befe;
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
 }
@@ -5642,7 +5642,7 @@ input {
   .setting-delete-hotkey:hover {
     background-color: #f38ba8;
     color: light-dark(
-      rgb(light-dark(239, 241, 245, 30, 30, 46)),
+      light-dark(239, 241, 245, 30, 30, 46),
       rgb(light-dark(239, 241, 245, 30, 30, 46))
     );
   }
@@ -5651,7 +5651,7 @@ input {
 .setting-add-hotkey-button {
   border-radius: 4px;
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   cursor: pointer;
@@ -5662,7 +5662,7 @@ input {
 .setting-restore-hotkey-button {
   border-radius: 4px;
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   cursor: pointer;
@@ -5947,7 +5947,7 @@ body:not(.is-phone) .community-item.is-selected {
   background-color: #b4befe;
   border-color: #b4befe;
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
 }
@@ -5956,14 +5956,14 @@ body:not(.is-phone) .community-item.is-selected:hover {
   background-color: #b4befe;
   border-color: #b4befe;
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
 }
 
 body:not(.is-phone) .community-item.is-selected .community-item-author {
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
   opacity: 0.8;
@@ -5971,7 +5971,7 @@ body:not(.is-phone) .community-item.is-selected .community-item-author {
 
 body:not(.is-phone) .community-item.is-selected:hover .community-item-author {
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
   opacity: 0.8;
@@ -5979,7 +5979,7 @@ body:not(.is-phone) .community-item.is-selected:hover .community-item-author {
 
 body:not(.is-phone) .community-item.is-selected .community-item-repo {
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
   opacity: 0.8;
@@ -5987,7 +5987,7 @@ body:not(.is-phone) .community-item.is-selected .community-item-repo {
 
 body:not(.is-phone) .community-item.is-selected:hover .community-item-repo {
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
   opacity: 0.8;
@@ -5995,7 +5995,7 @@ body:not(.is-phone) .community-item.is-selected:hover .community-item-repo {
 
 body:not(.is-phone) .community-item.is-selected .community-item-downloads {
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
   opacity: 0.8;
@@ -6005,7 +6005,7 @@ body:not(.is-phone)
   .community-item.is-selected:hover
   .community-item-downloads {
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
   opacity: 0.8;
@@ -6013,7 +6013,7 @@ body:not(.is-phone)
 
 body:not(.is-phone) .community-item.is-selected .community-item-updated {
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
   opacity: 0.8;
@@ -6021,7 +6021,7 @@ body:not(.is-phone) .community-item.is-selected .community-item-updated {
 
 body:not(.is-phone) .community-item.is-selected:hover .community-item-updated {
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
   opacity: 0.8;
@@ -6060,7 +6060,7 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
 @media (hover: hover) {
   .community-item:hover {
     border-color: light-dark(
-      rgb(light-dark(172, 176, 190, 86, 89, 112)),
+      light-dark(172, 176, 190, 86, 89, 112),
       rgb(light-dark(188, 192, 204, 67, 70, 90))
     );
   }
@@ -6144,7 +6144,7 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
 
 .community-item-screenshot .placeholder-icon .svg-icon {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   height: 32px;
@@ -6672,7 +6672,7 @@ body:not(.is-mobile)
   --icon-stroke: 2px;
   align-items: center;
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   display: flex;
@@ -7962,7 +7962,7 @@ button {
 
 button:not(.clickable-icon) {
   background-color: light-dark(
-    rgb(light-dark(204, 208, 218, 49, 50, 68)),
+    light-dark(204, 208, 218, 49, 50, 68),
     rgb(light-dark(204, 208, 218, 49, 50, 68))
   );
   box-shadow: none;
@@ -7971,7 +7971,7 @@ button:not(.clickable-icon) {
 
 button:not(.clickable-icon).mobile-tap {
   background-color: light-dark(
-    rgb(light-dark(188, 192, 204, 67, 70, 90)),
+    light-dark(188, 192, 204, 67, 70, 90),
     rgb(light-dark(188, 192, 204, 67, 70, 90))
   );
   box-shadow: none;
@@ -7980,7 +7980,7 @@ button:not(.clickable-icon).mobile-tap {
 @media (hover: hover) {
   button:hover {
     background-color: light-dark(
-      rgb(light-dark(188, 192, 204, 67, 70, 90)),
+      light-dark(188, 192, 204, 67, 70, 90),
       rgb(light-dark(188, 192, 204, 67, 70, 90))
     );
     box-shadow: none;
@@ -7990,7 +7990,7 @@ button:not(.clickable-icon).mobile-tap {
 button:focus-visible {
   box-shadow: 0 0 0 3px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
 }
@@ -8052,7 +8052,7 @@ button.mod-cta.mobile-tap {
 button.mod-cta:focus-visible {
   box-shadow: 0 0 0 3px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
 }
@@ -8092,10 +8092,7 @@ button.mod-destructive {
 }
 
 .card {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid transparent;
   border-radius: 4px;
   display: flex;
@@ -8222,7 +8219,7 @@ button.mod-destructive {
 
 .list-item.mod-empty {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   font-size: 14.992px;
@@ -8268,7 +8265,7 @@ button.mod-destructive {
 
 .list-item-desc {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   display: flex;
@@ -8579,11 +8576,11 @@ select {
   background-blend-mode: hard-light;
   background-color: light-dark(
     light-dark(
-      rgb(light-dark(204, 208, 218, 49, 50, 68)),
+      light-dark(204, 208, 218, 49, 50, 68),
       rgb(light-dark(204, 208, 218, 49, 50, 68))
     ),
     light-dark(
-      rgb(light-dark(204, 208, 218, 49, 50, 68)),
+      light-dark(204, 208, 218, 49, 50, 68),
       rgb(light-dark(204, 208, 218, 49, 50, 68))
     )
   );
@@ -8616,11 +8613,11 @@ select {
   background-blend-mode: hard-light;
   background-color: light-dark(
     light-dark(
-      rgb(light-dark(204, 208, 218, 49, 50, 68)),
+      light-dark(204, 208, 218, 49, 50, 68),
       rgb(light-dark(204, 208, 218, 49, 50, 68))
     ),
     light-dark(
-      rgb(light-dark(204, 208, 218, 49, 50, 68)),
+      light-dark(204, 208, 218, 49, 50, 68),
       rgb(light-dark(204, 208, 218, 49, 50, 68))
     )
   );
@@ -8661,7 +8658,7 @@ select {
 select:focus {
   box-shadow: 0 0 0px 3px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
   outline: none;
@@ -8670,7 +8667,7 @@ select:focus {
 .dropdown:focus {
   box-shadow: 0 0 0px 3px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
   outline: none;
@@ -8880,7 +8877,7 @@ h6:hover .collapse-indicator {
   background-color: transparent;
   border: none;
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   margin-inline-start: 8px;
@@ -9037,7 +9034,7 @@ svg.svg-icon {
 
 .clickable-icon.mod-warning {
   color: light-dark(
-    rgb(light-dark(210, 15, 57, 243, 139, 168)),
+    light-dark(210, 15, 57, 243, 139, 168),
     rgb(light-dark(210, 15, 57, 243, 139, 168))
   );
 }
@@ -9087,7 +9084,7 @@ svg.svg-icon {
 .text-icon-button:focus-visible {
   box-shadow: 0 0 0px 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
   outline: none;
@@ -9325,7 +9322,7 @@ input[type="number"] {
 @media (hover: hover) {
   textarea:hover {
     border-color: light-dark(
-      rgb(light-dark(172, 176, 190, 86, 89, 112)),
+      light-dark(172, 176, 190, 86, 89, 112),
       rgb(light-dark(188, 192, 204, 67, 70, 90))
     );
     transition:
@@ -9334,7 +9331,7 @@ input[type="number"] {
   }
   input.metadata-input-text:hover {
     border-color: light-dark(
-      rgb(light-dark(172, 176, 190, 86, 89, 112)),
+      light-dark(172, 176, 190, 86, 89, 112),
       rgb(light-dark(188, 192, 204, 67, 70, 90))
     );
     transition:
@@ -9343,7 +9340,7 @@ input[type="number"] {
   }
   input[type="date"]:hover {
     border-color: light-dark(
-      rgb(light-dark(172, 176, 190, 86, 89, 112)),
+      light-dark(172, 176, 190, 86, 89, 112),
       rgb(light-dark(188, 192, 204, 67, 70, 90))
     );
     transition:
@@ -9352,7 +9349,7 @@ input[type="number"] {
   }
   input[type="datetime-local"]:hover {
     border-color: light-dark(
-      rgb(light-dark(172, 176, 190, 86, 89, 112)),
+      light-dark(172, 176, 190, 86, 89, 112),
       rgb(light-dark(188, 192, 204, 67, 70, 90))
     );
     transition:
@@ -9361,7 +9358,7 @@ input[type="number"] {
   }
   input[type="text"]:hover {
     border-color: light-dark(
-      rgb(light-dark(172, 176, 190, 86, 89, 112)),
+      light-dark(172, 176, 190, 86, 89, 112),
       rgb(light-dark(188, 192, 204, 67, 70, 90))
     );
     transition:
@@ -9370,7 +9367,7 @@ input[type="number"] {
   }
   input[type="search"]:hover {
     border-color: light-dark(
-      rgb(light-dark(172, 176, 190, 86, 89, 112)),
+      light-dark(172, 176, 190, 86, 89, 112),
       rgb(light-dark(188, 192, 204, 67, 70, 90))
     );
     transition:
@@ -9379,7 +9376,7 @@ input[type="number"] {
   }
   input[type="email"]:hover {
     border-color: light-dark(
-      rgb(light-dark(172, 176, 190, 86, 89, 112)),
+      light-dark(172, 176, 190, 86, 89, 112),
       rgb(light-dark(188, 192, 204, 67, 70, 90))
     );
     transition:
@@ -9388,7 +9385,7 @@ input[type="number"] {
   }
   input[type="password"]:hover {
     border-color: light-dark(
-      rgb(light-dark(172, 176, 190, 86, 89, 112)),
+      light-dark(172, 176, 190, 86, 89, 112),
       rgb(light-dark(188, 192, 204, 67, 70, 90))
     );
     transition:
@@ -9397,7 +9394,7 @@ input[type="number"] {
   }
   input[type="number"]:hover {
     border-color: light-dark(
-      rgb(light-dark(172, 176, 190, 86, 89, 112)),
+      light-dark(172, 176, 190, 86, 89, 112),
       rgb(light-dark(188, 192, 204, 67, 70, 90))
     );
     transition:
@@ -9408,12 +9405,12 @@ input[type="number"] {
 
 textarea:active {
   border-color: light-dark(
-    rgb(light-dark(156, 160, 176, 105, 109, 134)),
+    light-dark(156, 160, 176, 105, 109, 134),
     rgb(light-dark(172, 176, 190, 86, 89, 112))
   );
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
   transition:
@@ -9423,12 +9420,12 @@ textarea:active {
 
 input.metadata-input-text:active {
   border-color: light-dark(
-    rgb(light-dark(156, 160, 176, 105, 109, 134)),
+    light-dark(156, 160, 176, 105, 109, 134),
     rgb(light-dark(172, 176, 190, 86, 89, 112))
   );
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
   transition:
@@ -9438,12 +9435,12 @@ input.metadata-input-text:active {
 
 input[type="date"]:active {
   border-color: light-dark(
-    rgb(light-dark(156, 160, 176, 105, 109, 134)),
+    light-dark(156, 160, 176, 105, 109, 134),
     rgb(light-dark(172, 176, 190, 86, 89, 112))
   );
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
   transition:
@@ -9453,12 +9450,12 @@ input[type="date"]:active {
 
 input[type="datetime-local"]:active {
   border-color: light-dark(
-    rgb(light-dark(156, 160, 176, 105, 109, 134)),
+    light-dark(156, 160, 176, 105, 109, 134),
     rgb(light-dark(172, 176, 190, 86, 89, 112))
   );
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
   transition:
@@ -9468,12 +9465,12 @@ input[type="datetime-local"]:active {
 
 input[type="text"]:active {
   border-color: light-dark(
-    rgb(light-dark(156, 160, 176, 105, 109, 134)),
+    light-dark(156, 160, 176, 105, 109, 134),
     rgb(light-dark(172, 176, 190, 86, 89, 112))
   );
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
   transition:
@@ -9483,12 +9480,12 @@ input[type="text"]:active {
 
 input[type="search"]:active {
   border-color: light-dark(
-    rgb(light-dark(156, 160, 176, 105, 109, 134)),
+    light-dark(156, 160, 176, 105, 109, 134),
     rgb(light-dark(172, 176, 190, 86, 89, 112))
   );
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
   transition:
@@ -9498,12 +9495,12 @@ input[type="search"]:active {
 
 input[type="email"]:active {
   border-color: light-dark(
-    rgb(light-dark(156, 160, 176, 105, 109, 134)),
+    light-dark(156, 160, 176, 105, 109, 134),
     rgb(light-dark(172, 176, 190, 86, 89, 112))
   );
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
   transition:
@@ -9513,12 +9510,12 @@ input[type="email"]:active {
 
 input[type="password"]:active {
   border-color: light-dark(
-    rgb(light-dark(156, 160, 176, 105, 109, 134)),
+    light-dark(156, 160, 176, 105, 109, 134),
     rgb(light-dark(172, 176, 190, 86, 89, 112))
   );
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
   transition:
@@ -9528,12 +9525,12 @@ input[type="password"]:active {
 
 input[type="number"]:active {
   border-color: light-dark(
-    rgb(light-dark(156, 160, 176, 105, 109, 134)),
+    light-dark(156, 160, 176, 105, 109, 134),
     rgb(light-dark(172, 176, 190, 86, 89, 112))
   );
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
   transition:
@@ -9543,12 +9540,12 @@ input[type="number"]:active {
 
 textarea:focus {
   border-color: light-dark(
-    rgb(light-dark(156, 160, 176, 105, 109, 134)),
+    light-dark(156, 160, 176, 105, 109, 134),
     rgb(light-dark(172, 176, 190, 86, 89, 112))
   );
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
   transition:
@@ -9558,12 +9555,12 @@ textarea:focus {
 
 input.metadata-input-text:focus {
   border-color: light-dark(
-    rgb(light-dark(156, 160, 176, 105, 109, 134)),
+    light-dark(156, 160, 176, 105, 109, 134),
     rgb(light-dark(172, 176, 190, 86, 89, 112))
   );
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
   transition:
@@ -9573,12 +9570,12 @@ input.metadata-input-text:focus {
 
 input[type="date"]:focus {
   border-color: light-dark(
-    rgb(light-dark(156, 160, 176, 105, 109, 134)),
+    light-dark(156, 160, 176, 105, 109, 134),
     rgb(light-dark(172, 176, 190, 86, 89, 112))
   );
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
   transition:
@@ -9588,12 +9585,12 @@ input[type="date"]:focus {
 
 input[type="datetime-local"]:focus {
   border-color: light-dark(
-    rgb(light-dark(156, 160, 176, 105, 109, 134)),
+    light-dark(156, 160, 176, 105, 109, 134),
     rgb(light-dark(172, 176, 190, 86, 89, 112))
   );
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
   transition:
@@ -9603,12 +9600,12 @@ input[type="datetime-local"]:focus {
 
 input[type="text"]:focus {
   border-color: light-dark(
-    rgb(light-dark(156, 160, 176, 105, 109, 134)),
+    light-dark(156, 160, 176, 105, 109, 134),
     rgb(light-dark(172, 176, 190, 86, 89, 112))
   );
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
   transition:
@@ -9618,12 +9615,12 @@ input[type="text"]:focus {
 
 input[type="search"]:focus {
   border-color: light-dark(
-    rgb(light-dark(156, 160, 176, 105, 109, 134)),
+    light-dark(156, 160, 176, 105, 109, 134),
     rgb(light-dark(172, 176, 190, 86, 89, 112))
   );
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
   transition:
@@ -9633,12 +9630,12 @@ input[type="search"]:focus {
 
 input[type="email"]:focus {
   border-color: light-dark(
-    rgb(light-dark(156, 160, 176, 105, 109, 134)),
+    light-dark(156, 160, 176, 105, 109, 134),
     rgb(light-dark(172, 176, 190, 86, 89, 112))
   );
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
   transition:
@@ -9648,12 +9645,12 @@ input[type="email"]:focus {
 
 input[type="password"]:focus {
   border-color: light-dark(
-    rgb(light-dark(156, 160, 176, 105, 109, 134)),
+    light-dark(156, 160, 176, 105, 109, 134),
     rgb(light-dark(172, 176, 190, 86, 89, 112))
   );
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
   transition:
@@ -9663,12 +9660,12 @@ input[type="password"]:focus {
 
 input[type="number"]:focus {
   border-color: light-dark(
-    rgb(light-dark(156, 160, 176, 105, 109, 134)),
+    light-dark(156, 160, 176, 105, 109, 134),
     rgb(light-dark(172, 176, 190, 86, 89, 112))
   );
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
   transition:
@@ -9679,7 +9676,7 @@ input[type="number"]:focus {
 textarea:focus-visible {
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
 }
@@ -9687,7 +9684,7 @@ textarea:focus-visible {
 input.metadata-input-text:focus-visible {
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
 }
@@ -9695,7 +9692,7 @@ input.metadata-input-text:focus-visible {
 input[type="date"]:focus-visible {
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
 }
@@ -9703,7 +9700,7 @@ input[type="date"]:focus-visible {
 input[type="datetime-local"]:focus-visible {
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
 }
@@ -9711,7 +9708,7 @@ input[type="datetime-local"]:focus-visible {
 input[type="text"]:focus-visible {
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
 }
@@ -9719,7 +9716,7 @@ input[type="text"]:focus-visible {
 input[type="search"]:focus-visible {
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
 }
@@ -9727,7 +9724,7 @@ input[type="search"]:focus-visible {
 input[type="email"]:focus-visible {
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
 }
@@ -9735,7 +9732,7 @@ input[type="email"]:focus-visible {
 input[type="password"]:focus-visible {
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
 }
@@ -9743,7 +9740,7 @@ input[type="password"]:focus-visible {
 input[type="number"]:focus-visible {
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
 }
@@ -9984,7 +9981,7 @@ input[type="range"]::-webkit-slider-thumb {
 input[type="range"]::-webkit-slider-thumb:hover {
   background: #ffffff;
   border-color: light-dark(
-    rgb(light-dark(156, 160, 176, 105, 109, 134)),
+    light-dark(156, 160, 176, 105, 109, 134),
     rgb(light-dark(172, 176, 190, 86, 89, 112))
   );
   box-shadow:
@@ -9996,7 +9993,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
 input[type="range"]::-webkit-slider-thumb:active {
   background: #ffffff;
   border-color: light-dark(
-    rgb(light-dark(156, 160, 176, 105, 109, 134)),
+    light-dark(156, 160, 176, 105, 109, 134),
     rgb(light-dark(172, 176, 190, 86, 89, 112))
   );
   box-shadow:
@@ -10017,7 +10014,7 @@ body:not(.is-mobile) input[type="range"]:focus::-webkit-slider-thumb {
 
 body:not(.is-mobile) input[type="range"]:focus-visible::-webkit-slider-thumb {
   border-color: light-dark(
-    rgb(light-dark(156, 160, 176, 105, 109, 134)),
+    light-dark(156, 160, 176, 105, 109, 134),
     rgb(light-dark(172, 176, 190, 86, 89, 112))
   );
   box-shadow:
@@ -10025,7 +10022,7 @@ body:not(.is-mobile) input[type="range"]:focus-visible::-webkit-slider-thumb {
     0 2px 3px 0px #00000033,
     0 0 0px 2px
       light-dark(
-        rgb(light-dark(156, 160, 176, 105, 109, 134)),
+        light-dark(156, 160, 176, 105, 109, 134),
         rgb(light-dark(172, 176, 190, 86, 89, 112))
       );
 }
@@ -10058,7 +10055,7 @@ input[type="color"]::-webkit-color-swatch {
       inset 0 0 0 1px #d9e0ee40,
       0 0 0 3px
         light-dark(
-          rgb(light-dark(172, 176, 190, 86, 89, 112)),
+          light-dark(172, 176, 190, 86, 89, 112),
           rgb(light-dark(188, 192, 204, 67, 70, 90))
         );
   }
@@ -10069,7 +10066,7 @@ input[type="color"]:focus-visible::-webkit-color-swatch {
     none,
     0 0 0 3px
       light-dark(
-        rgb(light-dark(156, 160, 176, 105, 109, 134)),
+        light-dark(156, 160, 176, 105, 109, 134),
         rgb(light-dark(172, 176, 190, 86, 89, 112))
       );
 }
@@ -10079,7 +10076,7 @@ input[type="color"]:focus::-webkit-color-swatch {
     none,
     0 0 0 3px
       light-dark(
-        rgb(light-dark(156, 160, 176, 105, 109, 134)),
+        light-dark(156, 160, 176, 105, 109, 134),
         rgb(light-dark(172, 176, 190, 86, 89, 112))
       );
 }
@@ -10251,7 +10248,7 @@ select.mod-hidden {
 
 .menu-item-desc {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   font-size: 0.8em;
@@ -10271,14 +10268,14 @@ select.mod-hidden {
 
 .menu-item.is-warning:not(.is-disabled) {
   color: light-dark(
-    rgb(light-dark(210, 15, 57, 243, 139, 168)),
+    light-dark(210, 15, 57, 243, 139, 168),
     rgb(light-dark(210, 15, 57, 243, 139, 168))
   );
 }
 
 .menu-item.is-warning:not(.is-disabled).selected {
   color: light-dark(
-    rgb(light-dark(210, 15, 57, 243, 139, 168)),
+    light-dark(210, 15, 57, 243, 139, 168),
     rgb(light-dark(210, 15, 57, 243, 139, 168))
   );
 }
@@ -10294,7 +10291,7 @@ select.mod-hidden {
 
 .menu-item.is-disabled {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   cursor: default;
@@ -10312,21 +10309,21 @@ select.mod-hidden {
 
 .menu-item.is-warning .menu-item-icon {
   color: light-dark(
-    rgb(light-dark(210, 15, 57, 243, 139, 168)),
+    light-dark(210, 15, 57, 243, 139, 168),
     rgb(light-dark(210, 15, 57, 243, 139, 168))
   );
 }
 
 .menu-item.is-disabled .menu-item-icon {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
 }
 
 .menu-item-icon .mod-submenu {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
 }
@@ -10403,7 +10400,7 @@ select.mod-hidden {
   background-color: #1a1826;
   border: 0.5pt solid
     light-dark(
-      rgb(light-dark(204, 208, 218, 49, 50, 68)),
+      light-dark(204, 208, 218, 49, 50, 68),
       rgb(light-dark(204, 208, 218, 49, 50, 68))
     );
   border-radius: 12px;
@@ -10578,7 +10575,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 .message.mod-success {
   background-color: #a6e3a1;
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
 }
@@ -10594,7 +10591,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 .message.mod-error {
   background-color: #f38ba8;
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
 }
@@ -10605,14 +10602,14 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .mod-warning {
   color: light-dark(
-    rgb(light-dark(210, 15, 57, 243, 139, 168)),
+    light-dark(210, 15, 57, 243, 139, 168),
     rgb(light-dark(210, 15, 57, 243, 139, 168))
   );
 }
 
 .mod-success {
   color: light-dark(
-    rgb(light-dark(64, 160, 43, 166, 227, 161)),
+    light-dark(64, 160, 43, 166, 227, 161),
     rgb(light-dark(64, 160, 43, 166, 227, 161))
   );
 }
@@ -10751,12 +10748,12 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
   box-shadow:
     0 0 0 1px
       light-dark(
-        rgb(light-dark(156, 160, 176, 105, 109, 134)),
+        light-dark(156, 160, 176, 105, 109, 134),
         rgb(light-dark(172, 176, 190, 86, 89, 112))
       ),
     inset 0 0 0 1px
       light-dark(
-        rgb(light-dark(156, 160, 176, 105, 109, 134)),
+        light-dark(156, 160, 176, 105, 109, 134),
         rgb(light-dark(172, 176, 190, 86, 89, 112))
       );
   content: "";
@@ -10850,12 +10847,12 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .popover.hover-popover.is-editing {
   border-color: light-dark(
-    rgb(light-dark(156, 160, 176, 105, 109, 134)),
+    light-dark(156, 160, 176, 105, 109, 134),
     rgb(light-dark(172, 176, 190, 86, 89, 112))
   );
   outline: 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     )
     solid;
@@ -10965,10 +10962,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   cursor: default;
   text-align: center;
 }
@@ -11380,7 +11374,7 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 
 .suggestion-empty-suggestion {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
 }
@@ -11558,7 +11552,7 @@ body:not(.is-phone) .horizontal-tab-nav-item.is-active {
   --icon-color: #1e1e2e;
   background-color: #b4befe;
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
 }
@@ -11568,7 +11562,7 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
   --icon-color: #1e1e2e;
   background-color: #b4befe;
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
 }
@@ -11636,7 +11630,7 @@ body:not(.is-phone) .vertical-tab-header-group-items {
 
 .vertical-tab-header-group-title {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   font-size: 12.8px;
@@ -11662,7 +11656,7 @@ body:not(.is-phone) .vertical-tab-header-group-items {
 .checkbox-container {
   -webkit-app-region: no-drag;
   background-color: light-dark(
-    rgb(light-dark(172, 176, 190, 86, 89, 112)),
+    light-dark(172, 176, 190, 86, 89, 112),
     rgb(light-dark(188, 192, 204, 67, 70, 90))
   );
   border-radius: 26px;
@@ -11675,7 +11669,7 @@ body:not(.is-phone) .vertical-tab-header-group-items {
   height: 30px;
   outline: 0 solid
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
   position: relative;
@@ -11697,7 +11691,7 @@ body:not(.is-phone) .vertical-tab-header-group-items {
 .checkbox-container:focus-within {
   outline: 2px solid
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
 }
@@ -11764,7 +11758,7 @@ body:not(.is-phone) .vertical-tab-header-group-items {
 .checkbox-container.mod-small:focus-within {
   outline: 2px solid
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
 }
@@ -11797,7 +11791,7 @@ body:not(.is-phone) .vertical-tab-header-group-items {
 .tooltip.mod-error {
   background-color: #f38ba8;
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
   width: 200px;
@@ -11906,7 +11900,7 @@ body:not(.is-phone) .vertical-tab-header-group-items {
 .tree-item-self.has-active-menu {
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
 }
@@ -11914,7 +11908,7 @@ body:not(.is-phone) .vertical-tab-header-group-items {
 .tree-item-self.is-being-renamed {
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
   flex-grow: 1;
@@ -11985,7 +11979,7 @@ body:not(.is-grabbing) .tree-item-self.is-selected:hover {
 body:not(.is-grabbing) .tree-item-self.is-being-dragged:hover {
   background-color: #b4befe;
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
 }
@@ -11993,21 +11987,21 @@ body:not(.is-grabbing) .tree-item-self.is-being-dragged:hover {
 .tree-item-self.is-being-dragged {
   background-color: #b4befe;
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
 }
 
 body:not(.is-grabbing) .tree-item-self.is-being-dragged:hover .tree-item-icon {
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
 }
 
 .tree-item-self.is-being-dragged .tree-item-icon {
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
 }
@@ -12015,7 +12009,7 @@ body:not(.is-grabbing) .tree-item-self.is-being-dragged:hover .tree-item-icon {
 body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
 }
@@ -12058,7 +12052,7 @@ body:not(.is-phone)
 .tree-item-flair {
   border-radius: 4px;
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   font-size: 12.8px;
@@ -12078,7 +12072,7 @@ body:not(.is-phone)
 
 .tree-item-inner-subtext {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   font-size: 85%;
@@ -12117,7 +12111,7 @@ audio {
 
 audio::-webkit-media-controls-enclosure {
   background-color: light-dark(
-    rgb(light-dark(230, 233, 239, 24, 24, 37)),
+    light-dark(230, 233, 239, 24, 24, 37),
     rgb(light-dark(230, 233, 239, 24, 24, 37))
   );
   border: 1px solid transparent;
@@ -12196,27 +12190,18 @@ kbd {
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .findbarOpen .pdf-viewer-container {
@@ -12507,7 +12492,7 @@ kbd {
 
 .cm-s-obsidian span.cm-formatting-quote {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
 }
@@ -13396,7 +13381,7 @@ code[class*="language-"] {
 
 .file-embed {
   background-color: light-dark(
-    rgb(light-dark(230, 233, 239, 24, 24, 37)),
+    light-dark(230, 233, 239, 24, 24, 37),
     rgb(light-dark(230, 233, 239, 24, 24, 37))
   );
   border-radius: 8px;
@@ -13618,7 +13603,7 @@ iframe.external-embed {
 
 .footnote-backref {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   display: inline-block;
@@ -13661,7 +13646,7 @@ iframe.external-embed {
 
 .cm-s-obsidian .cm-line.HyperMD-footnote span.cm-hmd-footnote.cm-formatting {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
 }
@@ -13696,7 +13681,7 @@ iframe.external-embed {
 
 .markdown-rendered .frontmatter.mod-failed .mod-error {
   color: light-dark(
-    rgb(light-dark(210, 15, 57, 243, 139, 168)),
+    light-dark(210, 15, 57, 243, 139, 168),
     rgb(light-dark(210, 15, 57, 243, 139, 168))
   );
   font-size: 0.875em;
@@ -13843,7 +13828,7 @@ iframe.external-embed {
 .metadata-properties-heading:focus:before {
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
 }
@@ -13884,7 +13869,7 @@ iframe.external-embed {
 
 .metadata-error-title {
   color: light-dark(
-    rgb(light-dark(210, 15, 57, 243, 139, 168)),
+    light-dark(210, 15, 57, 243, 139, 168),
     rgb(light-dark(210, 15, 57, 243, 139, 168))
   );
   font-size: max(14.992px, 1em);
@@ -13966,7 +13951,7 @@ iframe.external-embed {
 
 .is-mobile.is-ios .metadata-input-text.mod-datetime.is-empty::before {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   content: attr(placeholder);
@@ -13974,7 +13959,7 @@ iframe.external-embed {
 
 .is-mobile.is-ios .metadata-input-text.mod-date.is-empty::before {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   content: attr(placeholder);
@@ -14428,7 +14413,7 @@ input.metadata-property-key-input:focus {
 
 .metadata-property-value.mod-external-link:not(:placeholder-shown) {
   text-decoration-color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   text-decoration-line: underline;
@@ -14516,18 +14501,18 @@ input.metadata-property-key-input:focus {
 
 .cm-hmd-frontmatter .is-invalid {
   color: light-dark(
-    rgb(light-dark(210, 15, 57, 243, 139, 168)),
+    light-dark(210, 15, 57, 243, 139, 168),
     rgb(light-dark(210, 15, 57, 243, 139, 168))
   );
 }
 
 .cm-hmd-frontmatter .error-marker {
   background-color: light-dark(
-    rgb(light-dark(210, 15, 57, 243, 139, 168)),
+    light-dark(210, 15, 57, 243, 139, 168),
     rgb(light-dark(210, 15, 57, 243, 139, 168))
   );
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
 }
@@ -14858,7 +14843,7 @@ h6 a {
 
 .cm-formatting-header {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
 }
@@ -15218,7 +15203,7 @@ hr {
 
 .cm-s-obsidian .hmd-fold-html-stub {
   background-color: light-dark(
-    rgb(light-dark(230, 233, 239, 24, 24, 37)),
+    light-dark(230, 233, 239, 24, 24, 37),
     rgb(light-dark(230, 233, 239, 24, 24, 37))
   );
   border: 1px solid #999;
@@ -15238,7 +15223,7 @@ hr {
 
 .cm-s-obsidian .hmd-fold-code-stub {
   background-color: light-dark(
-    rgb(light-dark(230, 233, 239, 24, 24, 37)),
+    light-dark(230, 233, 239, 24, 24, 37),
     rgb(light-dark(230, 233, 239, 24, 24, 37))
   );
   border: 1px solid #999;
@@ -15387,7 +15372,7 @@ hr {
 
 .internal-query .internal-query-header-icon {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   display: flex;
@@ -15930,35 +15915,35 @@ a.mobile-tap {
 .cm-s-obsidian
   span.cm-footref.cm-inline-footnote.cm-formatting-inline-footnote {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
 }
 
 .cm-s-obsidian span.cm-footref.cm-hmd-barelink.cm-formatting {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
 }
 
 .cm-s-obsidian span.cm-formatting-image {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
 }
 
 .cm-s-obsidian span.cm-formatting-link-string {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
 }
 
 .cm-s-obsidian span.cm-formatting-link {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
 }
@@ -16228,7 +16213,7 @@ body.is-mobile .markdown-source-view.mod-cm6 .cm-underline {
 
 .cm-s-obsidian span.cm-hmd-escape-backslash {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
 }
@@ -16661,14 +16646,14 @@ mjx-container {
 
 .cm-s-obsidian .HyperMD-table-row span.cm-hmd-table-sep {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
 }
 
 .cm-s-obsidian .HyperMD-table-row-1 {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
 }
@@ -16814,7 +16799,7 @@ input[type="checkbox"]:focus {
 input[type="checkbox"]:focus-visible {
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
 }
@@ -17013,7 +16998,7 @@ em {
 
 .cm-s-obsidian span.cm-error {
   color: light-dark(
-    rgb(light-dark(210, 15, 57, 243, 139, 168)),
+    light-dark(210, 15, 57, 243, 139, 168),
     rgb(light-dark(210, 15, 57, 243, 139, 168))
   );
 }
@@ -17377,7 +17362,7 @@ em {
 
 .bases-toolbar-menu-item.mod-destructive {
   color: light-dark(
-    rgb(light-dark(210, 15, 57, 243, 139, 168)),
+    light-dark(210, 15, 57, 243, 139, 168),
     rgb(light-dark(210, 15, 57, 243, 139, 168))
   );
 }
@@ -17385,7 +17370,7 @@ em {
 .bases-toolbar-menu-item.mod-hidden {
   --icon-color: #beb3c1;
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
 }
@@ -17408,7 +17393,7 @@ em {
 .bases-toolbar-menu-item.is-selected input[type="checkbox"] {
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
 }
@@ -17455,7 +17440,7 @@ em {
 .bases-toolbar-menu-item:not(.mod-destructive)
   .bases-toolbar-menu-item-info-icon.mod-error {
   color: light-dark(
-    rgb(light-dark(210, 15, 57, 243, 139, 168)),
+    light-dark(210, 15, 57, 243, 139, 168),
     rgb(light-dark(210, 15, 57, 243, 139, 168))
   );
 }
@@ -17576,7 +17561,7 @@ em {
 
 .bases-query-container .filter-group .filter-group {
   background-color: light-dark(
-    rgb(light-dark(230, 233, 239, 24, 24, 37)),
+    light-dark(230, 233, 239, 24, 24, 37),
     rgb(light-dark(230, 233, 239, 24, 24, 37))
   );
   border: light-dark(1px, 1px) solid transparent;
@@ -17640,7 +17625,7 @@ em {
 
 .bases-query-container .filter-group .filter-row .filter-row-error {
   color: light-dark(
-    rgb(light-dark(210, 15, 57, 243, 139, 168)),
+    light-dark(210, 15, 57, 243, 139, 168),
     rgb(light-dark(210, 15, 57, 243, 139, 168))
   );
   font-size: 12.8px;
@@ -17719,7 +17704,7 @@ em {
   --metadata-property-box-shadow: 0 0 0 1px #2d2848;
   align-items: center;
   background-color: light-dark(
-    rgb(light-dark(204, 208, 218, 49, 50, 68)),
+    light-dark(204, 208, 218, 49, 50, 68),
     rgb(light-dark(204, 208, 218, 49, 50, 68))
   );
   display: flex;
@@ -17789,7 +17774,7 @@ em {
 
 .query-toolbar .mod-error {
   color: light-dark(
-    rgb(light-dark(210, 15, 57, 243, 139, 168)),
+    light-dark(210, 15, 57, 243, 139, 168),
     rgb(light-dark(210, 15, 57, 243, 139, 168))
   );
 }
@@ -18358,7 +18343,7 @@ body:not(.is-grabbing) .nav-folder-title.is-selected:hover {
 body:not(.is-grabbing) .nav-file-title.is-being-dragged {
   background-color: #b4befe;
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
 }
@@ -18366,7 +18351,7 @@ body:not(.is-grabbing) .nav-file-title.is-being-dragged {
 body:not(.is-grabbing) .nav-folder-title.is-being-dragged {
   background-color: #b4befe;
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
 }
@@ -18374,7 +18359,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged {
 .nav-file-title.is-being-dragged {
   background-color: #b4befe;
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
 }
@@ -18382,7 +18367,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged {
 .nav-folder-title.is-being-dragged {
   background-color: #b4befe;
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
 }
@@ -18391,7 +18376,7 @@ body:not(.is-grabbing)
   .nav-file-title.is-being-dragged
   .tree-item-icon.collapse-icon {
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
 }
@@ -18400,21 +18385,21 @@ body:not(.is-grabbing)
   .nav-folder-title.is-being-dragged
   .tree-item-icon.collapse-icon {
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
 }
 
 .nav-file-title.is-being-dragged .tree-item-icon.collapse-icon {
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
 }
 
 .nav-folder-title.is-being-dragged .tree-item-icon.collapse-icon {
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
 }
@@ -18463,7 +18448,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .file-tree .tree-item-flair {
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
   line-height: 1;
@@ -18507,7 +18492,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .file-tree .mod-new .tree-item-flair {
   color: light-dark(
-    rgb(light-dark(64, 160, 43, 166, 227, 161)),
+    light-dark(64, 160, 43, 166, 227, 161),
     rgb(light-dark(64, 160, 43, 166, 227, 161))
   );
 }
@@ -18534,14 +18519,14 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .file-tree .mod-deleted .tree-item-flair {
   color: light-dark(
-    rgb(light-dark(210, 15, 57, 243, 139, 168)),
+    light-dark(210, 15, 57, 243, 139, 168),
     rgb(light-dark(210, 15, 57, 243, 139, 168))
   );
 }
 
 .file-tree .mod-to-delete .tree-item-flair {
   color: light-dark(
-    rgb(light-dark(210, 15, 57, 243, 139, 168)),
+    light-dark(210, 15, 57, 243, 139, 168),
     rgb(light-dark(210, 15, 57, 243, 139, 168))
   );
   display: none;
@@ -18598,7 +18583,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 .file-recovery-list-item-header.is-active {
   background-color: #b4befe;
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
 }
@@ -18606,14 +18591,14 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 .file-recovery-list-item-header.is-active:hover {
   background-color: #b4befe;
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
 }
 
 .file-recovery-list-item-header.is-active .u-muted {
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
   opacity: 0.8;
@@ -18621,7 +18606,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .file-recovery-list-item-header.is-active:hover .u-muted {
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
   opacity: 0.8;
@@ -18877,7 +18862,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .graph-color-group.drag-ghost {
   background-color: light-dark(
-    rgb(light-dark(230, 233, 239, 24, 24, 37)),
+    light-dark(230, 233, 239, 24, 24, 37),
     rgb(light-dark(230, 233, 239, 24, 24, 37))
   );
   border: none;
@@ -19144,7 +19129,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .publish-section-header-toggle-collapsed-button {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   cursor: pointer;
@@ -19155,7 +19140,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .publish-section-header-action {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   cursor: pointer;
@@ -19322,7 +19307,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .publish-upload-item.mod-failed {
   color: light-dark(
-    rgb(light-dark(210, 15, 57, 243, 139, 168)),
+    light-dark(210, 15, 57, 243, 139, 168),
     rgb(light-dark(210, 15, 57, 243, 139, 168))
   );
 }
@@ -19339,7 +19324,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .publish-upload-item.mod-completed {
   color: light-dark(
-    rgb(light-dark(64, 160, 43, 166, 227, 161)),
+    light-dark(64, 160, 43, 166, 227, 161),
     rgb(light-dark(64, 160, 43, 166, 227, 161))
   );
 }
@@ -19387,7 +19372,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .tree-item.mod-custom-nav.hidden .tree-item-self {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
 }
@@ -19487,7 +19472,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .search-input-suggest-button {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   cursor: pointer;
@@ -19611,7 +19596,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .search-empty-state {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   font-size: 14.992px;
@@ -19644,7 +19629,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .search-info-more-matches {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
 }
@@ -19688,7 +19673,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 .search-result-hover-button {
   border-radius: 4px;
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   display: flex;
@@ -19753,7 +19738,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 .search-result-file-match-destination-file {
   background-color: light-dark(
-    rgb(light-dark(204, 208, 218, 49, 50, 68)),
+    light-dark(204, 208, 218, 49, 50, 68),
     rgb(light-dark(204, 208, 218, 49, 50, 68))
   );
   border-radius: 4px;
@@ -19770,7 +19755,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
   .search-result-file-match:hover
     .search-result-file-match-destination-file:hover {
     background-color: light-dark(
-      rgb(light-dark(188, 192, 204, 67, 70, 90)),
+      light-dark(188, 192, 204, 67, 70, 90),
       rgb(light-dark(188, 192, 204, 67, 70, 90))
     );
     box-shadow: none;
@@ -19782,7 +19767,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
   --icon-size: 14px;
   --icon-stroke: 2px;
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   display: flex;
@@ -19805,7 +19790,7 @@ body:not(.is-phone)
   border-radius: 4px;
   box-shadow: inset 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
 }
@@ -19816,7 +19801,7 @@ body:not(.is-phone)
   border-radius: 4px;
   box-shadow: inset 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
 }
@@ -19974,7 +19959,7 @@ body:not(.is-phone)
 
 .slides-close-btn {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   cursor: pointer;
@@ -20038,7 +20023,7 @@ body:not(.is-phone)
 
 .vault-list-item-desc {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
 }
@@ -20073,7 +20058,7 @@ body:not(.is-phone)
 
 .sync-status-icon.mod-success {
   color: light-dark(
-    rgb(light-dark(64, 160, 43, 166, 227, 161)),
+    light-dark(64, 160, 43, 166, 227, 161),
     rgb(light-dark(64, 160, 43, 166, 227, 161))
   );
 }
@@ -20084,7 +20069,7 @@ body:not(.is-phone)
 
 .sync-status-icon.mod-error {
   color: light-dark(
-    rgb(light-dark(210, 15, 57, 243, 139, 168)),
+    light-dark(210, 15, 57, 243, 139, 168),
     rgb(light-dark(210, 15, 57, 243, 139, 168))
   );
 }
@@ -20139,7 +20124,7 @@ body:not(.is-phone)
   --nav-collapse-icon-color: #1e1e2e;
   background-color: #b4befe;
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
 }
@@ -20148,14 +20133,14 @@ body:not(.is-phone)
   --nav-collapse-icon-color: #1e1e2e;
   background-color: #b4befe;
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
 }
 
 .sync-history-list-item-header.is-active .u-muted {
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
   opacity: 0.8;
@@ -20163,7 +20148,7 @@ body:not(.is-phone)
 
 .sync-history-list-item-header.is-active:hover .u-muted {
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
   opacity: 0.8;
@@ -20222,7 +20207,7 @@ body:not(.is-phone)
   border: 1px solid #d9e0ee33;
   border-radius: 50%;
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
   display: flex;
@@ -20307,7 +20292,7 @@ body:not(.is-phone)
   .version-group-item.is-active
   .u-muted {
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
   opacity: 0.8;
@@ -20318,7 +20303,7 @@ body:not(.is-phone)
   .version-group-item.is-active:hover
   .u-muted {
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
   opacity: 0.8;
@@ -20526,7 +20511,7 @@ button.sync-history-button {
 
 .modal.mod-sync-log .sync-log-container .list-item.mod-error {
   color: light-dark(
-    rgb(light-dark(210, 15, 57, 243, 139, 168)),
+    light-dark(210, 15, 57, 243, 139, 168),
     rgb(light-dark(210, 15, 57, 243, 139, 168))
   );
 }
@@ -20624,7 +20609,7 @@ button.sync-history-button {
 
 .recent-changes-container .more-button {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   justify-content: center;
@@ -20643,7 +20628,7 @@ button.sync-history-button {
 .tag-pane-tag.is-active {
   background-color: #b4befe;
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
 }
@@ -20657,7 +20642,7 @@ button.sync-history-button {
   .tag-pane-tag.is-active:hover {
     background-color: #b4befe;
     color: light-dark(
-      rgb(light-dark(239, 241, 245, 30, 30, 46)),
+      light-dark(239, 241, 245, 30, 30, 46),
       rgb(light-dark(239, 241, 245, 30, 30, 46))
     );
   }
@@ -20681,7 +20666,7 @@ body:not(.is-phone)
   border-radius: 4px;
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
 }
@@ -20940,7 +20925,7 @@ body.theme-dark {
   --icon-stroke: 2px;
   align-items: center;
   background-color: light-dark(
-    rgb(light-dark(204, 208, 218, 49, 50, 68)),
+    light-dark(204, 208, 218, 49, 50, 68),
     rgb(light-dark(204, 208, 218, 49, 50, 68))
   );
   border-bottom: 1px solid transparent;
@@ -20963,7 +20948,7 @@ body.theme-dark {
 @media (hover: hover) {
   .canvas-control-item:hover {
     background-color: light-dark(
-      rgb(light-dark(188, 192, 204, 67, 70, 90)),
+      light-dark(188, 192, 204, 67, 70, 90),
       rgb(light-dark(188, 192, 204, 67, 70, 90))
     );
     color: #d9e0ee;
@@ -20976,7 +20961,7 @@ body.theme-dark {
 
 .canvas-control-item.is-disabled svg {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
 }
@@ -21286,7 +21271,7 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-group-label {
 .canvas-node-group.is-themed
   .canvas-group-label:not([contenteditable="true"]).mod-foreground-light {
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
 }
@@ -21782,7 +21767,7 @@ body.is-mobile .canvas-node-resizer {
   .canvas-color-picker-item.canvas-color-picker-custom:not(.is-active):hover {
     box-shadow: 0 0 0 2px
       light-dark(
-        rgb(light-dark(172, 176, 190, 86, 89, 112)),
+        light-dark(172, 176, 190, 86, 89, 112),
         rgb(light-dark(188, 192, 204, 67, 70, 90))
       );
   }
@@ -22116,7 +22101,7 @@ textarea.webviewer-adblock-lists {
   background-color: transparent;
   box-shadow: 0 0 0 2px
     light-dark(
-      rgb(light-dark(156, 160, 176, 105, 109, 134)),
+      light-dark(156, 160, 176, 105, 109, 134),
       rgb(light-dark(172, 176, 190, 86, 89, 112))
     );
 }
@@ -22246,7 +22231,7 @@ textarea.webviewer-adblock-lists {
 .help-options-container .setting-icon .svg-icon {
   --icon-size: 48px;
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   stroke-width: 1px;
@@ -22372,7 +22357,7 @@ textarea.webviewer-adblock-lists {
 
 .setting-item.mod-change-language .setting-item-name {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   cursor: pointer;
@@ -22432,7 +22417,7 @@ textarea.webviewer-adblock-lists {
   .recent-vaults-list-item:hover {
     background-color: #d9e0ee26;
     color: light-dark(
-      rgb(light-dark(239, 241, 245, 30, 30, 46)),
+      light-dark(239, 241, 245, 30, 30, 46),
       rgb(light-dark(239, 241, 245, 30, 30, 46))
     );
   }
@@ -22461,7 +22446,7 @@ textarea.webviewer-adblock-lists {
 
 .recent-vaults-list-item-option-button {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   height: 30px;
@@ -22661,7 +22646,7 @@ body.is-mobile.keyboard-animating .app-container {
 
 .is-mobile .empty-state-action {
   background-color: light-dark(
-    rgb(light-dark(230, 233, 239, 24, 24, 37)),
+    light-dark(230, 233, 239, 24, 24, 37),
     rgb(light-dark(230, 233, 239, 24, 24, 37))
   );
   border-radius: 5px;
@@ -22953,7 +22938,7 @@ body.is-phone .suggestion-bg {
 
 .mobile-onboarding .form-field-help {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   font-size: 14.992px;
@@ -23015,7 +23000,7 @@ body.is-phone .suggestion-bg {
 
 .mobile-onboarding-feature-table .feature-cell.is-enabled {
   color: light-dark(
-    rgb(light-dark(64, 160, 43, 166, 227, 161)),
+    light-dark(64, 160, 43, 166, 227, 161),
     rgb(light-dark(64, 160, 43, 166, 227, 161))
   );
   font-size: 12.8px;
@@ -23058,7 +23043,7 @@ body.is-phone .suggestion-bg {
 
 .mobile-onboarding-radio-option:focus {
   border-color: light-dark(
-    rgb(light-dark(156, 160, 176, 105, 109, 134)),
+    light-dark(156, 160, 176, 105, 109, 134),
     rgb(light-dark(172, 176, 190, 86, 89, 112))
   );
 }
@@ -23078,7 +23063,7 @@ body.is-phone .suggestion-bg {
   background-color: #a6e3a14d;
   border-radius: 12px;
   color: light-dark(
-    rgb(light-dark(64, 160, 43, 166, 227, 161)),
+    light-dark(64, 160, 43, 166, 227, 161),
     rgb(light-dark(64, 160, 43, 166, 227, 161))
   );
   display: inline-block;
@@ -23584,7 +23569,7 @@ body.is-phone .suggestion-bg {
 
 .is-phone .mod-community-plugin .community-item .community-item-updated {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   display: none;
@@ -23593,7 +23578,7 @@ body.is-phone .suggestion-bg {
 
 .is-phone .mod-community-plugin .community-item .community-item-downloads {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   grid-column: 2 / 2;
@@ -23655,7 +23640,7 @@ body.is-phone .suggestion-bg {
 
 .mobile-option-setting-item-remove-icon {
   color: light-dark(
-    rgb(light-dark(210, 15, 57, 243, 139, 168)),
+    light-dark(210, 15, 57, 243, 139, 168),
     rgb(light-dark(210, 15, 57, 243, 139, 168))
   );
   display: flex;
@@ -23663,7 +23648,7 @@ body.is-phone .suggestion-bg {
 
 .mobile-option-setting-item-add-icon {
   color: light-dark(
-    rgb(light-dark(64, 160, 43, 166, 227, 161)),
+    light-dark(64, 160, 43, 166, 227, 161),
     rgb(light-dark(64, 160, 43, 166, 227, 161))
   );
   display: flex;
@@ -23889,7 +23874,7 @@ body.is-tablet .workspace-drawer.mod-left .workspace-drawer-inner {
   --icon-stroke: 2.25px;
   align-items: center;
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   display: flex;
@@ -23933,7 +23918,7 @@ body.is-tablet .workspace-drawer.mod-left .workspace-drawer-inner {
 
 .workspace-drawer-action-icon {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
 }
@@ -23984,7 +23969,7 @@ body.is-tablet .workspace-drawer.mod-left .workspace-drawer-inner {
   --icon-size: 18px;
   --icon-stroke: 2px;
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   margin-inline-start: auto;
@@ -24128,7 +24113,7 @@ body.is-tablet .sidebar-toggle-button.mod-left {
 
 .is-phone .menu-grabber {
   background: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   border-radius: 16px;
@@ -24190,11 +24175,11 @@ body.is-tablet .sidebar-toggle-button.mod-left {
 
 .is-mobile button.mod-warning {
   background-color: light-dark(
-    rgb(light-dark(204, 208, 218, 49, 50, 68)),
+    light-dark(204, 208, 218, 49, 50, 68),
     rgb(light-dark(204, 208, 218, 49, 50, 68))
   );
   color: light-dark(
-    rgb(light-dark(210, 15, 57, 243, 139, 168)),
+    light-dark(210, 15, 57, 243, 139, 168),
     rgb(light-dark(210, 15, 57, 243, 139, 168))
   );
   font-weight: 800;
@@ -24560,7 +24545,7 @@ body.is-tablet .mobile-navbar {
 .pull-action.mod-activated {
   background-color: #b4befe;
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
 }
@@ -24732,7 +24717,7 @@ body.is-ios .mobile-tab-switcher-inner-scroll {
   --icon-stroke: 2px;
   align-items: center;
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   display: flex;
@@ -24792,7 +24777,7 @@ body.is-ios .mobile-tab-switcher-inner-scroll {
   --icon-size: 20px;
   align-items: center;
   background-color: light-dark(
-    rgb(light-dark(230, 233, 239, 24, 24, 37)),
+    light-dark(230, 233, 239, 24, 24, 37),
     rgb(light-dark(230, 233, 239, 24, 24, 37))
   );
   border-radius: 16px;
@@ -24811,7 +24796,7 @@ body.is-ios .mobile-tab-switcher-inner-scroll {
   --icon-size: 20px;
   align-items: center;
   background-color: light-dark(
-    rgb(light-dark(230, 233, 239, 24, 24, 37)),
+    light-dark(230, 233, 239, 24, 24, 37),
     rgb(light-dark(230, 233, 239, 24, 24, 37))
   );
   border-radius: 16px;
@@ -24866,7 +24851,7 @@ body.is-ios .mobile-tab-switcher-inner-scroll {
   border-radius: 16px;
   box-shadow: 0 0 0 1px #d9e0ee0d;
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   display: flex;
@@ -25115,7 +25100,7 @@ body.is-ios .mobile-tab-switcher-inner-scroll {
 
 .mobile-vault-chooser-version {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   font-size: 14.992px;
@@ -25196,7 +25181,7 @@ input.mobile-vault-chooser-field-input {
 
 .mobile-vault-chooser-load-callout {
   background-color: light-dark(
-    rgb(light-dark(230, 233, 239, 24, 24, 37)),
+    light-dark(230, 233, 239, 24, 24, 37),
     rgb(light-dark(230, 233, 239, 24, 24, 37))
   );
   border-radius: 8px;
@@ -25243,7 +25228,7 @@ input.mobile-vault-chooser-field-input {
 
   )
   .setting-item-name {
-  color: rgb(light-dark(136, 57, 239, 203, 166, 247));
+  color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
 }
 
 body.theme-light {
@@ -26004,7 +25989,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task="?"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(254, 100, 11, 250, 179, 135));
+  background-color: light-dark(rgb(254, 100, 11), rgb(250, 179, 135));
   left: 0px;
 }
 
@@ -26013,18 +25998,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(254, 100, 11, 250, 179, 135));
+  background-color: light-dark(rgb(254, 100, 11), rgb(250, 179, 135));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="?"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(254, 100, 11, 250, 179, 135));
+  background-color: light-dark(rgb(254, 100, 11), rgb(250, 179, 135));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="?"] > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(254, 100, 11, 250, 179, 135));
+  color: light-dark(rgb(254, 100, 11), rgb(250, 179, 135));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26035,7 +26020,7 @@ body.theme-light {
   [data-task="?"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(254, 100, 11, 250, 179, 135));
+  color: light-dark(rgb(254, 100, 11), rgb(250, 179, 135));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26043,7 +26028,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="?"][type="checkbox"]:checked:before {
-  color: rgb(light-dark(254, 100, 11, 250, 179, 135));
+  color: light-dark(rgb(254, 100, 11), rgb(250, 179, 135));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26132,7 +26117,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task="b"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   left: 0px;
 }
 
@@ -26141,18 +26126,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="b"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="b"] > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26163,7 +26148,7 @@ body.theme-light {
   [data-task="b"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26171,7 +26156,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="b"][type="checkbox"]:checked:before {
-  color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26198,7 +26183,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task="I"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  background-color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   left: 0px;
 }
 
@@ -26207,18 +26192,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  background-color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="I"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  background-color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="I"] > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26229,7 +26214,7 @@ body.theme-light {
   [data-task="I"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26237,7 +26222,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="I"][type="checkbox"]:checked:before {
-  color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26264,7 +26249,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task="p"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  background-color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   left: 0px;
 }
 
@@ -26273,18 +26258,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  background-color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="p"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  background-color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="p"] > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26295,7 +26280,7 @@ body.theme-light {
   [data-task="p"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26303,7 +26288,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="p"][type="checkbox"]:checked:before {
-  color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26330,7 +26315,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task="c"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: 100%;
-  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   left: 0px;
 }
 
@@ -26339,13 +26324,13 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: 100%;
-  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="c"][type="checkbox"]:checked:after {
   -webkit-mask-size: 100%;
-  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   left: 0px;
 }
 
@@ -26396,7 +26381,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task="i"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(42, 110, 245, 135, 176, 249));
+  background-color: light-dark(rgb(42, 110, 245), rgb(135, 176, 249));
   left: 0px;
 }
 
@@ -26405,18 +26390,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(42, 110, 245, 135, 176, 249));
+  background-color: light-dark(rgb(42, 110, 245), rgb(135, 176, 249));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="i"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(42, 110, 245, 135, 176, 249));
+  background-color: light-dark(rgb(42, 110, 245), rgb(135, 176, 249));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="i"] > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(42, 110, 245, 135, 176, 249));
+  color: light-dark(rgb(42, 110, 245), rgb(135, 176, 249));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26427,7 +26412,7 @@ body.theme-light {
   [data-task="i"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(42, 110, 245, 135, 176, 249));
+  color: light-dark(rgb(42, 110, 245), rgb(135, 176, 249));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26435,7 +26420,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="i"][type="checkbox"]:checked:before {
-  color: rgb(light-dark(42, 110, 245, 135, 176, 249));
+  color: light-dark(rgb(42, 110, 245), rgb(135, 176, 249));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26462,7 +26447,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task="l"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(136, 57, 239, 203, 166, 247));
+  background-color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
   left: 0px;
 }
 
@@ -26471,18 +26456,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(136, 57, 239, 203, 166, 247));
+  background-color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="l"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(136, 57, 239, 203, 166, 247));
+  background-color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="l"] > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(136, 57, 239, 203, 166, 247));
+  color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26493,7 +26478,7 @@ body.theme-light {
   [data-task="l"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(136, 57, 239, 203, 166, 247));
+  color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26501,7 +26486,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="l"][type="checkbox"]:checked:before {
-  color: rgb(light-dark(136, 57, 239, 203, 166, 247));
+  color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26528,7 +26513,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task="*"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  background-color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   left: 0px;
 }
 
@@ -26537,18 +26522,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  background-color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="*"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  background-color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="*"] > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26559,7 +26544,7 @@ body.theme-light {
   [data-task="*"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26567,7 +26552,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="*"][type="checkbox"]:checked:before {
-  color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26594,7 +26579,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task="n"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(230, 69, 83, 235, 160, 172));
+  background-color: light-dark(rgb(230, 69, 83), rgb(235, 160, 172));
   left: 0px;
 }
 
@@ -26603,18 +26588,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(230, 69, 83, 235, 160, 172));
+  background-color: light-dark(rgb(230, 69, 83), rgb(235, 160, 172));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="n"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(230, 69, 83, 235, 160, 172));
+  background-color: light-dark(rgb(230, 69, 83), rgb(235, 160, 172));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="n"] > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(230, 69, 83, 235, 160, 172));
+  color: light-dark(rgb(230, 69, 83), rgb(235, 160, 172));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26625,7 +26610,7 @@ body.theme-light {
   [data-task="n"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(230, 69, 83, 235, 160, 172));
+  color: light-dark(rgb(230, 69, 83), rgb(235, 160, 172));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26633,7 +26618,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="n"][type="checkbox"]:checked:before {
-  color: rgb(light-dark(230, 69, 83, 235, 160, 172));
+  color: light-dark(rgb(230, 69, 83), rgb(235, 160, 172));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26660,7 +26645,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task="S"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  background-color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   left: 0px;
 }
 
@@ -26669,18 +26654,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  background-color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="S"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  background-color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="S"] > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26691,7 +26676,7 @@ body.theme-light {
   [data-task="S"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26699,7 +26684,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="S"][type="checkbox"]:checked:before {
-  color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26709,19 +26694,19 @@ body.theme-light {
 .anp-custom-checkboxes [data-task="/"] > input[type="checkbox"]:checked {
   --checkbox-color: #beb3c14d;
   --checkbox-color-hover: #beb3c14d;
-  border-color: rgb(light-dark(108, 111, 133, 161, 168, 201));
+  border-color: light-dark(rgb(108, 111, 133), rgb(161, 168, 201));
 }
 
 .anp-custom-checkboxes [data-task="/"] > p > input[type="checkbox"]:checked {
   --checkbox-color: #beb3c14d;
   --checkbox-color-hover: #beb3c14d;
-  border-color: rgb(light-dark(108, 111, 133, 161, 168, 201));
+  border-color: light-dark(rgb(108, 111, 133), rgb(161, 168, 201));
 }
 
 .anp-custom-checkboxes [data-task="/"][type="checkbox"]:checked {
   --checkbox-color: #beb3c14d;
   --checkbox-color-hover: #beb3c14d;
-  border-color: rgb(light-dark(108, 111, 133, 161, 168, 201));
+  border-color: light-dark(rgb(108, 111, 133), rgb(161, 168, 201));
 }
 
 .anp-custom-checkboxes [data-task="/"] > input[type="checkbox"]:checked:after {
@@ -26740,7 +26725,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="/"] > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(108, 111, 133, 161, 168, 201));
+  color: light-dark(rgb(108, 111, 133), rgb(161, 168, 201));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26751,7 +26736,7 @@ body.theme-light {
   [data-task="/"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(108, 111, 133, 161, 168, 201));
+  color: light-dark(rgb(108, 111, 133), rgb(161, 168, 201));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26759,7 +26744,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="/"][type="checkbox"]:checked:before {
-  color: rgb(light-dark(108, 111, 133, 161, 168, 201));
+  color: light-dark(rgb(108, 111, 133), rgb(161, 168, 201));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26786,7 +26771,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task="<"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(23, 146, 153, 148, 226, 213));
+  background-color: light-dark(rgb(23, 146, 153), rgb(148, 226, 213));
   left: 0px;
 }
 
@@ -26795,18 +26780,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(23, 146, 153, 148, 226, 213));
+  background-color: light-dark(rgb(23, 146, 153), rgb(148, 226, 213));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="<"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(23, 146, 153, 148, 226, 213));
+  background-color: light-dark(rgb(23, 146, 153), rgb(148, 226, 213));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="<"] > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(23, 146, 153, 148, 226, 213));
+  color: light-dark(rgb(23, 146, 153), rgb(148, 226, 213));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26817,7 +26802,7 @@ body.theme-light {
   [data-task="<"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(23, 146, 153, 148, 226, 213));
+  color: light-dark(rgb(23, 146, 153), rgb(148, 226, 213));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26825,7 +26810,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="<"][type="checkbox"]:checked:before {
-  color: rgb(light-dark(23, 146, 153, 148, 226, 213));
+  color: light-dark(rgb(23, 146, 153), rgb(148, 226, 213));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26852,7 +26837,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task=">"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(32, 159, 181, 116, 199, 236));
+  background-color: light-dark(rgb(32, 159, 181), rgb(116, 199, 236));
   left: 0px;
 }
 
@@ -26861,18 +26846,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(32, 159, 181, 116, 199, 236));
+  background-color: light-dark(rgb(32, 159, 181), rgb(116, 199, 236));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task=">"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(32, 159, 181, 116, 199, 236));
+  background-color: light-dark(rgb(32, 159, 181), rgb(116, 199, 236));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task=">"] > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(32, 159, 181, 116, 199, 236));
+  color: light-dark(rgb(32, 159, 181), rgb(116, 199, 236));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26883,7 +26868,7 @@ body.theme-light {
   [data-task=">"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(32, 159, 181, 116, 199, 236));
+  color: light-dark(rgb(32, 159, 181), rgb(116, 199, 236));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26891,7 +26876,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task=">"][type="checkbox"]:checked:before {
-  color: rgb(light-dark(32, 159, 181, 116, 199, 236));
+  color: light-dark(rgb(32, 159, 181), rgb(116, 199, 236));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26918,7 +26903,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task='"'] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(108, 111, 133, 161, 168, 201));
+  background-color: light-dark(rgb(108, 111, 133), rgb(161, 168, 201));
   left: 0px;
 }
 
@@ -26927,18 +26912,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(108, 111, 133, 161, 168, 201));
+  background-color: light-dark(rgb(108, 111, 133), rgb(161, 168, 201));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task='"'][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(108, 111, 133, 161, 168, 201));
+  background-color: light-dark(rgb(108, 111, 133), rgb(161, 168, 201));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task='"'] > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(108, 111, 133, 161, 168, 201));
+  color: light-dark(rgb(108, 111, 133), rgb(161, 168, 201));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26949,7 +26934,7 @@ body.theme-light {
   [data-task='"']
   > p
   > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(108, 111, 133, 161, 168, 201));
+  color: light-dark(rgb(108, 111, 133), rgb(161, 168, 201));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26957,7 +26942,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task='"'][type="checkbox"]:checked:before {
-  color: rgb(light-dark(108, 111, 133, 161, 168, 201));
+  color: light-dark(rgb(108, 111, 133), rgb(161, 168, 201));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -26984,7 +26969,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task="u"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  background-color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   left: 0px;
 }
 
@@ -26993,18 +26978,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  background-color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="u"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  background-color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="u"] > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27015,7 +27000,7 @@ body.theme-light {
   [data-task="u"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27023,7 +27008,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="u"][type="checkbox"]:checked:before {
-  color: rgb(light-dark(64, 160, 43, 166, 227, 161));
+  color: light-dark(rgb(64, 160, 43), rgb(166, 227, 161));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27050,7 +27035,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task="d"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   left: 0px;
 }
 
@@ -27059,18 +27044,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="d"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="d"] > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27081,7 +27066,7 @@ body.theme-light {
   [data-task="d"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27089,7 +27074,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="d"][type="checkbox"]:checked:before {
-  color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27116,7 +27101,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task="f"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   left: 0px;
 }
 
@@ -27125,18 +27110,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="f"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  background-color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="f"] > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27147,7 +27132,7 @@ body.theme-light {
   [data-task="f"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27155,7 +27140,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="f"][type="checkbox"]:checked:before {
-  color: rgb(light-dark(210, 15, 57, 243, 139, 168));
+  color: light-dark(rgb(210, 15, 57), rgb(243, 139, 168));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27182,7 +27167,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task="k"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  background-color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   left: 0px;
 }
 
@@ -27191,18 +27176,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  background-color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="k"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  background-color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="k"] > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27213,7 +27198,7 @@ body.theme-light {
   [data-task="k"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27221,7 +27206,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="k"][type="checkbox"]:checked:before {
-  color: rgb(light-dark(228, 147, 32, 249, 226, 175));
+  color: light-dark(rgb(228, 147, 32), rgb(249, 226, 175));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27248,7 +27233,7 @@ body.theme-light {
 
 .anp-custom-checkboxes [data-task="w"] > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(136, 57, 239, 203, 166, 247));
+  background-color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
   left: 0px;
 }
 
@@ -27257,18 +27242,18 @@ body.theme-light {
   > p
   > input[type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(136, 57, 239, 203, 166, 247));
+  background-color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="w"][type="checkbox"]:checked:after {
   -webkit-mask-size: contain;
-  background-color: rgb(light-dark(136, 57, 239, 203, 166, 247));
+  background-color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
   left: 0px;
 }
 
 .anp-custom-checkboxes [data-task="w"] > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(136, 57, 239, 203, 166, 247));
+  color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27279,7 +27264,7 @@ body.theme-light {
   [data-task="w"]
   > p
   > input[type="checkbox"]:checked:before {
-  color: rgb(light-dark(136, 57, 239, 203, 166, 247));
+  color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27287,7 +27272,7 @@ body.theme-light {
 }
 
 .anp-custom-checkboxes [data-task="w"][type="checkbox"]:checked:before {
-  color: rgb(light-dark(136, 57, 239, 203, 166, 247));
+  color: light-dark(rgb(136, 57, 239), rgb(203, 166, 247));
   font-weight: bold;
   left: 17px;
   margin: 0 3px;
@@ -27682,7 +27667,7 @@ body.toggle-table-transition
   .workspace-tab-header.is-active
   .workspace-tab-header-inner-title {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
 }
@@ -27693,7 +27678,7 @@ body.toggle-table-transition
   .workspace-tab-header.is-active
   .workspace-tab-header-inner {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
 }
@@ -27704,7 +27689,7 @@ body.toggle-table-transition
   .workspace-tab-header.is-active
   .workspace-tab-header-inner-close-button {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
 }
@@ -27715,7 +27700,7 @@ body.toggle-table-transition
   .workspace-tab-header.is-active
   .workspace-tab-header-inner-icon {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
 }
@@ -27725,7 +27710,7 @@ body.toggle-table-transition
   .workspace-tabs:not(.mod-stacked)
   .workspace-tab-header.is-active
   .workspace-tab-header-inner:hover {
-  background-color: rgba(light-dark(rgb(188, 192, 204), rgb(67, 70, 90)), 0.4);
+  background-color: light-dark(rgba(188, 192, 204, 0.4), rgba(67, 70, 90, 0.4));
 }
 
 .anp-alternate-tab-toggle

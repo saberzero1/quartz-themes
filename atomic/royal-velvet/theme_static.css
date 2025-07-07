@@ -4781,7 +4781,7 @@ body:not(.show-ribbon) .workspace-ribbon {
 
 .workspace-ribbon {
   background-color: light-dark(
-    light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636)),
+    light-dark(#fcfcfc, #212121),
     light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636))
   );
   border-right: 0.5pt solid #00000026;
@@ -4798,7 +4798,7 @@ body:not(.show-ribbon) .workspace-ribbon {
 
 .workspace-ribbon.mod-left.is-collapsed {
   background-color: light-dark(
-    light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636)),
+    light-dark(#fcfcfc, #212121),
     light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636))
   );
   border-right-color: #00000026;
@@ -8011,10 +8011,7 @@ button.mod-destructive {
 }
 
 .card {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid transparent;
   border-radius: 4px;
   display: flex;
@@ -10447,10 +10444,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   cursor: default;
   text-align: center;
 }
@@ -11625,27 +11619,18 @@ kbd {
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .findbarOpen .pdf-viewer-container {
@@ -24401,6 +24386,7 @@ body:not([class*="doc-title"]) .inline-title {
   background-clip: text;
   background-image: linear-gradient(135deg, #ff80c0 0, #ffca80 100%);
 }
+
 .cm-header-2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -24414,6 +24400,7 @@ body.doc-title-h2 .inline-title {
   background-clip: text;
   background-image: linear-gradient(135deg, #ffca80 0, #ffff80 100%);
 }
+
 .cm-header-3 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -24427,6 +24414,7 @@ body.doc-title-h3 .inline-title {
   background-clip: text;
   background-image: linear-gradient(135deg, #ffff80 0, #8bff80 100%);
 }
+
 .cm-header-4 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -24440,6 +24428,7 @@ body.doc-title-h4 .inline-title {
   background-clip: text;
   background-image: linear-gradient(135deg, #8bff80 0, #80ffea 100%);
 }
+
 .cm-header-5 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -24453,6 +24442,7 @@ body.doc-title-h5 .inline-title {
   background-clip: text;
   background-image: linear-gradient(135deg, #80ffea 0, #9580ff 100%);
 }
+
 .cm-header-6 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -24466,7 +24456,6 @@ body.doc-title-h6 .inline-title {
   background-clip: text;
   background-image: linear-gradient(135deg, #9580ff 0, #ff80c0 100%);
 }
-
 span.cm-em.cm-inline-code {
   color: #80ffea;
 }

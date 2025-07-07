@@ -6396,7 +6396,7 @@ body:not(.is-mobile)
   .workspace-drawer-vault-switcher {
   align-items: center;
   border-radius: 4px;
-  color: light-dark(light-dark(#fffefb, #fffefb), light-dark(#fffefb, #fffefb));
+  color: #fffefb;
   display: flex;
   flex-grow: 1;
   gap: 8px;
@@ -7860,10 +7860,7 @@ button.mod-destructive {
 }
 
 .card {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid transparent;
   border-radius: 4px;
   display: flex;
@@ -10068,10 +10065,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .modal .modal-nav-action.mod-cta {
-  color: light-dark(
-    hsl(light-dark(43.5, 0), light-dark(47.6%, 0%), light-dark(49.4%, 78.8%)),
-    hsl(light-dark(43.5, 0), light-dark(47.6%, 0%), light-dark(49.4%, 78.8%))
-  );
+  color: light-dark(hsl(43.5, 47.6%, 49.4%), hsl(43.5, 47.6%, 49.4%));
   font-weight: 600;
   inset-inline-end: 0;
 }
@@ -10364,10 +10358,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   cursor: default;
   text-align: center;
 }
@@ -11542,27 +11533,18 @@ kbd {
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .findbarOpen .pdf-viewer-container {
@@ -19948,10 +19930,7 @@ body.theme-dark {
 
 @media (hover: hover) {
   .canvas-card-menu .canvas-card-menu-button:hover {
-    color: light-dark(
-      hsl(light-dark(43.5, 0), light-dark(47.6%, 0%), light-dark(49.4%, 78.8%)),
-      hsl(light-dark(43.5, 0), light-dark(47.6%, 0%), light-dark(49.4%, 78.8%))
-    );
+    color: light-dark(hsl(43.5, 47.6%, 49.4%), hsl(43.5, 47.6%, 49.4%));
   }
 }
 
@@ -19996,10 +19975,7 @@ body.theme-dark {
   --icon-size: 18px;
   --icon-stroke: 2px;
   align-items: center;
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-bottom: 1px solid transparent;
   border-radius: 0;
   box-shadow: none;
@@ -20025,10 +20001,7 @@ body.theme-dark {
 }
 
 .canvas-control-item.is-active {
-  color: light-dark(
-    hsl(light-dark(43.5, 0), light-dark(47.6%, 0%), light-dark(49.4%, 78.8%)),
-    hsl(light-dark(43.5, 0), light-dark(47.6%, 0%), light-dark(49.4%, 78.8%))
-  );
+  color: light-dark(hsl(43.5, 47.6%, 49.4%), hsl(43.5, 47.6%, 49.4%));
 }
 
 .canvas-control-item.is-disabled svg {
@@ -20197,20 +20170,14 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 }
 
 .canvas-node.is-selected .canvas-node-container {
-  border-color: light-dark(
-    hsl(light-dark(43.5, 0), light-dark(47.6%, 0%), light-dark(49.4%, 78.8%)),
-    hsl(light-dark(43.5, 0), light-dark(47.6%, 0%), light-dark(49.4%, 78.8%))
-  );
+  border-color: light-dark(hsl(43.5, 47.6%, 49.4%), hsl(43.5, 47.6%, 49.4%));
   box-shadow:
     0px 0.5px 1px 0.5px #0000001a,
     0 0 0 2px #a681aa;
 }
 
 .canvas-node.is-focused .canvas-node-container {
-  border-color: light-dark(
-    hsl(light-dark(43.5, 0), light-dark(47.6%, 0%), light-dark(49.4%, 78.8%)),
-    hsl(light-dark(43.5, 0), light-dark(47.6%, 0%), light-dark(49.4%, 78.8%))
-  );
+  border-color: light-dark(hsl(43.5, 47.6%, 49.4%), hsl(43.5, 47.6%, 49.4%));
   box-shadow:
     0px 0.5px 1px 0.5px #0000001a,
     0 0 0 2px #a681aa;
@@ -20647,8 +20614,8 @@ body.is-mobile .canvas-node-resizer {
 
 .canvas-node-connection-point::after {
   background-color: light-dark(
-    hsl(light-dark(43.5, 0), light-dark(47.6%, 0%), light-dark(49.4%, 78.8%)),
-    hsl(light-dark(43.5, 0), light-dark(47.6%, 0%), light-dark(49.4%, 78.8%))
+    hsl(43.5, 47.6%, 49.4%),
+    hsl(43.5, 47.6%, 49.4%)
   );
   border: 3px solid transparent;
   border-radius: 50%;
@@ -20939,10 +20906,7 @@ body.is-mobile .canvas-node-resizer {
     0.1
   );
   border-radius: 8px;
-  color: light-dark(
-    hsl(light-dark(43.5, 0), light-dark(47.6%, 0%), light-dark(49.4%, 78.8%)),
-    hsl(light-dark(43.5, 0), light-dark(47.6%, 0%), light-dark(49.4%, 78.8%))
-  );
+  color: light-dark(hsl(43.5, 47.6%, 49.4%), hsl(43.5, 47.6%, 49.4%));
   font-size: 14.4px;
   line-height: 1.5;
   max-width: 70vw;

@@ -7894,10 +7894,7 @@ button {
 }
 
 button:not(.clickable-icon) {
-  background-color: light-dark(
-    light-dark(#d1dfff, #001122),
-    light-dark(#d1dfff, #001122)
-  );
+  background-color: #d1dfff;
   box-shadow: none;
   color: #e12828;
 }
@@ -8011,10 +8008,7 @@ button.mod-destructive {
 }
 
 .card {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid #282828;
   border-radius: 4px;
   display: flex;
@@ -10446,10 +10440,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   cursor: default;
   text-align: center;
 }
@@ -11561,27 +11552,18 @@ kbd {
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .findbarOpen .pdf-viewer-container {
@@ -16790,10 +16772,7 @@ em {
   --metadata-label-width: 7em;
   --metadata-property-box-shadow: 0 0 0 1px #8b6cef33;
   align-items: center;
-  background-color: light-dark(
-    light-dark(#d1dfff, #001122),
-    light-dark(#d1dfff, #001122)
-  );
+  background-color: #d1dfff;
   display: flex;
   width: 100%;
 }
@@ -18647,10 +18626,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .search-result-file-match-destination-file {
-  background-color: light-dark(
-    light-dark(#d1dfff, #001122),
-    light-dark(#d1dfff, #001122)
-  );
+  background-color: #d1dfff;
   border-radius: 4px;
   box-shadow: none;
   color: #353535;
@@ -19752,10 +19728,7 @@ body.theme-dark {
   --icon-size: 18px;
   --icon-stroke: 2px;
   align-items: center;
-  background-color: light-dark(
-    light-dark(#d1dfff, #001122),
-    light-dark(#d1dfff, #001122)
-  );
+  background-color: #d1dfff;
   border-bottom: 1px solid #282828;
   border-radius: 0;
   box-shadow: none;
@@ -22926,10 +22899,7 @@ body.is-tablet .sidebar-toggle-button.mod-left {
 }
 
 .is-mobile button.mod-warning {
-  background-color: light-dark(
-    light-dark(#d1dfff, #001122),
-    light-dark(#d1dfff, #001122)
-  );
+  background-color: #d1dfff;
   color: #e12828;
   font-weight: 1000;
 }

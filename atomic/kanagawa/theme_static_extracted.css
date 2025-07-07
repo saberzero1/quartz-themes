@@ -6,10 +6,7 @@
   --background-primary: light-dark(#f2efe9, #1f1f28);
   --background-primary-alt: light-dark(#e7dba0, #1f1f28);
   --background-secondary: light-dark(#f8f8f8, #181820);
-  --background-secondary-alt: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  --background-secondary-alt: #fcfcfc;
   --boatYellow1: #938056;
   --boatYellow2: #c0a36e;
   --bold-color: light-dark(#545464, #ebdbb2);
@@ -228,10 +225,7 @@ body {
   --background-primary: light-dark(#f2efe9, #1f1f28);
   --background-primary-alt: light-dark(#e7dba0, #1f1f28);
   --background-secondary: light-dark(#f8f8f8, #181820);
-  --background-secondary-alt: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  --background-secondary-alt: #fcfcfc;
   --bases-embed-border: 1px solid light-dark(#9fb5c9, #658594);
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -1514,10 +1508,7 @@ input.prompt-input {
 }
 
 a.tag {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 0px solid
     hsla(light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)), 0.15);
   border-radius: 4px;

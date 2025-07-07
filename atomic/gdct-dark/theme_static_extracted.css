@@ -1365,17 +1365,14 @@ input.prompt-input {
 }
 
 a.tag {
-  background-color: light-dark(
-    light-dark(#6f6f6f, #6f6f6f),
-    light-dark(#6f6f6f, #6f6f6f)
-  );
+  background-color: #6f6f6f;
   border: 0px solid #8a5cf526;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-radius: 2em;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  color: light-dark(light-dark(#313030, #313030), light-dark(#313030, #313030));
+  color: #313030;
   font-family: var(--font-family);
   font-size: 1em;
   font-style: normal;
@@ -1545,7 +1542,7 @@ input[type="search"] {
 
 .tree-item-self.is-being-dragged {
   background-color: #0000001a;
-  color: light-dark(light-dark(#fffdf9, #fffdf9), light-dark(#fffdf9, #fffdf9));
+  color: #fffdf9;
 }
 
 .tree-item-self .tree-item-icon {
@@ -1705,7 +1702,7 @@ svg.svg-icon {
 
 .graph-view.color-fill {
   color: light-dark(
-    light-dark(light-dark(#6f6f6f, #6f6f6f), light-dark(#6f6f6f, #6f6f6f)),
+    light-dark(#6f6f6f, #6f6f6f),
     light-dark(light-dark(#6f6f6f, #6f6f6f), light-dark(#6f6f6f, #6f6f6f))
   );
 }
@@ -1758,31 +1755,31 @@ svg.svg-icon {
 
 .graph-view.color-circle {
   color: light-dark(
-    light-dark(light-dark(#6f6f6f, #6f6f6f), light-dark(#6f6f6f, #6f6f6f)),
+    light-dark(#6f6f6f, #6f6f6f),
     light-dark(light-dark(#6f6f6f, #6f6f6f), light-dark(#6f6f6f, #6f6f6f))
   );
 }
 
 .graph-view.color-line {
-  color: light-dark(light-dark(#4c535a, #4c535a), light-dark(#4c535a, #4c535a));
+  color: #4c535a;
 }
 
 .graph-view.color-text {
-  color: light-dark(light-dark(#fffdf9, #fffdf9), light-dark(#fffdf9, #fffdf9));
+  color: #fffdf9;
   font-size: 2em;
   font-weight: 600;
 }
 
 .graph-view.color-fill-highlight {
   color: light-dark(
-    light-dark(light-dark(#6f6f6f, #6f6f6f), light-dark(#6f6f6f, #6f6f6f)),
+    light-dark(#6f6f6f, #6f6f6f),
     light-dark(light-dark(#6f6f6f, #6f6f6f), light-dark(#6f6f6f, #6f6f6f))
   );
 }
 
 .graph-view.color-line-highlight {
   color: light-dark(
-    light-dark(light-dark(#6f6f6f, #6f6f6f), light-dark(#6f6f6f, #6f6f6f)),
+    light-dark(#6f6f6f, #6f6f6f),
     light-dark(light-dark(#6f6f6f, #6f6f6f), light-dark(#6f6f6f, #6f6f6f))
   );
 }

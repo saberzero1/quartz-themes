@@ -1390,7 +1390,7 @@ input[type="search"] {
 
 .nav-folder-title {
   border-radius: 4px;
-  color: light-dark(light-dark(#949494, #f0eae2), light-dark(#949494, #f0eae2));
+  color: #949494;
   cursor: pointer;
   display: flex;
   font-size: 16px;
@@ -1402,7 +1402,7 @@ input[type="search"] {
 
 .nav-file-title {
   border-radius: 4px;
-  color: light-dark(light-dark(#949494, #f0eae2), light-dark(#949494, #f0eae2));
+  color: #949494;
   cursor: pointer;
   display: flex;
   font-size: 16px;
@@ -1437,7 +1437,7 @@ input[type="search"] {
 .tree-item-self {
   align-items: baseline;
   border-radius: 4px;
-  color: light-dark(light-dark(#949494, #f0eae2), light-dark(#949494, #f0eae2));
+  color: #949494;
   display: flex;
   font-size: 16px;
   font-weight: inherit;

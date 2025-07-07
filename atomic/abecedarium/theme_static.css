@@ -3991,10 +3991,7 @@ body.is-frameless.is-hidden-frameless.starter .titlebar {
   --icon-stroke: 1.75px;
   --tab-container-background: #131517;
   -webkit-app-region: no-drag;
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   display: flex;
   height: 35px;
   justify-content: center;
@@ -4651,10 +4648,7 @@ body:not(.show-ribbon) .workspace-ribbon {
 }
 
 .workspace-ribbon.is-collapsed {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .side-dock-settings {
@@ -6027,10 +6021,7 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
 }
 
 .status-bar {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-color: #00000026;
   border-radius: 8px 0 0 0;
   border-style: solid;
@@ -6791,10 +6782,7 @@ body.is-phone .view-header-nav-buttons {
 }
 
 .workspace-tab-header-container {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-bottom: 0px;
   display: flex;
   flex: 0 0 auto;
@@ -7828,10 +7816,7 @@ button.mod-destructive {
 }
 
 .card {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid light-dark(#ddd, #282931);
   border-radius: 4px;
   display: flex;
@@ -10266,10 +10251,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   cursor: default;
   text-align: center;
 }
@@ -11484,27 +11466,18 @@ kbd {
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .findbarOpen .pdf-viewer-container {
@@ -11757,10 +11730,7 @@ kbd {
 }
 
 .markdown-rendered blockquote {
-  background-color: light-dark(
-    light-dark(#f0f2f5, #171717),
-    light-dark(#f2f3f5, #1c1f24)
-  );
+  background-color: #f0f2f5;
   border-inline-start: 2px solid #3378e0;
   color: inherit;
   font-style: normal;
@@ -11817,10 +11787,7 @@ kbd {
 }
 
 .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
-  background-color: light-dark(
-    light-dark(#f0f2f5, #171717),
-    light-dark(#f2f3f5, #1c1f24)
-  );
+  background-color: #f0f2f5;
   font-style: var(--blockquote-style);
 }
 
@@ -17392,10 +17359,7 @@ em {
 
 .nav-file-tag {
   align-self: center;
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-radius: 4px;
   font-size: 9px;
   font-weight: 600;
@@ -18466,10 +18430,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .search-input-container input {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   display: block;
   padding-inline-start: 36px;
   padding-left: 36px;
@@ -24300,10 +24261,7 @@ input.mobile-vault-chooser-field-input {
 }
 
 .tag-pane-tag-count {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-radius: 3px;
   font-size: 0.9em;
   line-height: 1.3em;

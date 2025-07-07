@@ -938,10 +938,7 @@
   --background-primary: light-dark(#f2ecbc, #181616);
   --background-primary-alt: light-dark(#e7dba0, #181616);
   --background-secondary: light-dark(#dcd5ac, #1d1c19);
-  --background-secondary-alt: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  --background-secondary-alt: #fcfcfc;
   --boatYellow1: #938056;
   --boatYellow2: #c0a36e;
   --bold-color: light-dark(#545464, #c5c9c5);
@@ -1725,10 +1722,7 @@ body {
   --background-primary: light-dark(#f2ecbc, #181616);
   --background-primary-alt: light-dark(#e7dba0, #181616);
   --background-secondary: light-dark(#dcd5ac, #1d1c19);
-  --background-secondary-alt: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  --background-secondary-alt: #fcfcfc;
   --bases-embed-border: 1px solid var(--background-modifier-border);
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -2865,10 +2859,7 @@ iframe {
   }
   .titlebar {
     -webkit-app-region: drag;
-    background-color: light-dark(
-      light-dark(#fcfcfc, #212121),
-      light-dark(#e0e0e0, #363636)
-    );
+    background-color: #fcfcfc;
     border-bottom: 0px solid var(--titlebar-border-color);
     display: flex;
     left: 0;
@@ -6759,10 +6750,7 @@ body:not(.is-mobile)
 }
 
 .workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-bottom-style: solid;
   border-bottom-width: 0.5pt;
   bottom: 0;
@@ -6773,10 +6761,7 @@ body:not(.is-mobile)
 }
 
 .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-inline-end-style: solid;
   border-inline-end-width: 0.5pt;
   bottom: 0;
@@ -6787,10 +6772,7 @@ body:not(.is-mobile)
 }
 
 .workspace-split.mod-left-split > .workspace-leaf-resize-handle {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-inline-end-style: solid;
   border-inline-end-width: 0.5pt;
   bottom: 0;
@@ -6803,10 +6785,7 @@ body:not(.is-mobile)
 }
 
 .workspace-split.mod-right-split > .workspace-leaf-resize-handle {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-inline-start-style: solid;
   border-inline-start-width: 0.5pt;
   bottom: 0;
@@ -8063,10 +8042,7 @@ button.mod-destructive {
 }
 
 .card {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid var(--background-modifier-border);
   border-radius: 4px;
   display: flex;
@@ -10521,10 +10497,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   cursor: default;
   text-align: center;
 }
@@ -11267,10 +11240,7 @@ body:not(.is-phone) .vertical-tab-header-group-items {
 }
 
 .checkbox-container:after {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-radius: 26px;
   box-shadow: 0 1px 2px #00000026;
   content: "";
@@ -11717,27 +11687,18 @@ kbd {
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .findbarOpen .pdf-viewer-container {
@@ -16427,10 +16388,7 @@ mjx-container {
 }
 
 a.tag {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 0px solid
     hsla(light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)), 0.15);
   border-radius: 4px;
@@ -16444,10 +16402,7 @@ a.tag {
 
 @media (hover: hover) {
   a.tag:hover {
-    background-color: light-dark(
-      light-dark(#fcfcfc, #212121),
-      light-dark(#e0e0e0, #363636)
-    );
+    background-color: #fcfcfc;
     border: 0px solid
       hsla(light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)), 0.15);
     border-radius: 4px;
@@ -24925,10 +24880,7 @@ thead {
 }
 
 .cm-hashtag-begin {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-bottom-left-radius: 4px;
   border-top-left-radius: 4px;
   color: var(--text-tag);
@@ -24937,10 +24889,7 @@ thead {
 }
 
 .cm-hashtag-end {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
   color: var(--text-tag);
@@ -25087,12 +25036,12 @@ thead {
 }
 
 .mod-cta {
-  color: light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
+  color: #fcfcfc;
   font-weight: 600;
 }
 
 .mod-cta a {
-  color: light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
+  color: #fcfcfc;
   font-weight: 600;
 }
 

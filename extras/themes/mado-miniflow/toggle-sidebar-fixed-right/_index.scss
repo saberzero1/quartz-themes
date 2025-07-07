@@ -1,5 +1,0 @@
-body:is(:not(.css-settings-manager), .toggle-sidebar-fixed-right)
-  .mod-right-split
-  .workspace-leaf-content {
-  max-width: var(--sidebar-size-right);
-}

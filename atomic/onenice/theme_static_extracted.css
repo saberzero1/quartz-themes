@@ -1339,13 +1339,10 @@ input.prompt-input {
 }
 
 a.tag {
-  background-color: light-dark(
-    light-dark(#e1e1e1, #181b20),
-    light-dark(#e1e1e1, #181b20)
-  );
+  background-color: #e1e1e1;
   border: 0px solid #8a9a5b26;
   border-radius: 40px;
-  color: light-dark(light-dark(#a626a4, #bf68d9), light-dark(#a626a4, #bf68d9));
+  color: #a626a4;
   font-size: 0.875em;
   font-weight: inherit;
   line-height: 1;

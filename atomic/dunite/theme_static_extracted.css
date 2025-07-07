@@ -6,7 +6,7 @@
   --color-accent: light-dark(#6f804d, #6f804d);
   --color-accent-1: light-dark(#798952, #839357);
   --color-accent-2: light-dark(#839357, #95a463);
-  --color-accent-hsl: light-dark(#6f804d, #6f804d);
+  --color-accent-hsl: light-dark(79, 25%, 40%, 79, 25%, 40%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -186,7 +186,7 @@ body {
   --color-accent: light-dark(#6f804d, #6f804d);
   --color-accent-1: light-dark(#798952, #839357);
   --color-accent-2: light-dark(#839357, #95a463);
-  --color-accent-hsl: light-dark(#6f804d, #6f804d);
+  --color-accent-hsl: light-dark(79, 25%, 40%, 79, 25%, 40%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -1404,15 +1404,15 @@ input[type="search"] {
 .tree-item-self.is-being-dragged {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 .tree-item-self .tree-item-icon {
@@ -1635,12 +1635,12 @@ svg.svg-icon {
 .graph-view.color-fill-highlight {
   color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
 }
@@ -1648,12 +1648,12 @@ svg.svg-icon {
 .graph-view.color-line-highlight {
   color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
 }

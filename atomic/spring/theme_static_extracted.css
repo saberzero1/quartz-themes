@@ -1621,7 +1621,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-unresolved {
-  color: light-dark(light-dark(#f0f0f0, #171717), light-dark(#228b22, #556b2f));
+  color: #f0f0f0;
   opacity: 0.5;
 }
 

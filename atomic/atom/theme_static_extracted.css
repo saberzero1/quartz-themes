@@ -1319,13 +1319,10 @@ input.prompt-input {
 }
 
 a.tag {
-  background-color: light-dark(
-    light-dark(#eaeaeb, #20242b),
-    light-dark(#eaeaeb, #20242b)
-  );
+  background-color: #eaeaeb;
   border: 0px solid #4c79cd26;
   border-radius: 4px;
-  color: light-dark(light-dark(#e35649, #e5c07b), light-dark(#e35649, #e5c07b));
+  color: #e35649;
   font-size: 0.875em;
   font-weight: inherit;
   line-height: 1;

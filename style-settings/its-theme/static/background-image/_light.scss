@@ -1,9 +1,0 @@
-.theme-light {
-  --shadow: #0e0f1530;
-}
-body:is(.theme-dark, .theme-light) .workspace {
-  background: var(--url);
-  background-repeat: no-repeat;
-  background-position: var(--width) var(--height);
-  background-size: cover;
-}

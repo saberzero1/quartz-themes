@@ -2985,10 +2985,7 @@ body.is-translucent {
 @keyframes node-inserted {
   from {
     --link-color: #ba9155;
-    color: light-dark(
-      light-dark(#e0ac00, #e0de71),
-      light-dark(#e0ac00, #e0de71)
-    );
+    color: #e0ac00;
     inset-inline-start: -80%;
     outline-color: #fff;
     transform: rotate(0deg);
@@ -3176,11 +3173,11 @@ body:not(.is-mobile) .app-container {
 }
 
 .cm-negative {
-  color: light-dark(light-dark(#e93147, #fb464c), light-dark(#e93147, #fb464c));
+  color: #e93147;
 }
 
 .cm-positive {
-  color: light-dark(light-dark(#08b94e, #44cf6e), light-dark(#08b94e, #44cf6e));
+  color: #08b94e;
 }
 
 .cm-strikethrough {
@@ -3188,7 +3185,7 @@ body:not(.is-mobile) .app-container {
 }
 
 .cm-invalidchar {
-  color: light-dark(light-dark(#e93147, #fb464c), light-dark(#e93147, #fb464c));
+  color: #e93147;
 }
 
 .cm-searching {
@@ -4529,7 +4526,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h1 {
   --font-weight: 700;
-  color: light-dark(light-dark(#7852ee, #a882ff), light-dark(#7852ee, #a882ff));
+  color: #7852ee;
   font-family: inherit;
   font-size: 1.802em;
   font-style: normal;
@@ -4543,7 +4540,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h2 {
   --font-weight: 600;
-  color: light-dark(light-dark(#086ddd, #027aff), light-dark(#086ddd, #027aff));
+  color: #086ddd;
   font-family: inherit;
   font-size: 1.602em;
   font-style: normal;
@@ -4557,7 +4554,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h3 {
   --font-weight: 600;
-  color: light-dark(light-dark(#08b94e, #44cf6e), light-dark(#08b94e, #44cf6e));
+  color: #08b94e;
   font-family: inherit;
   font-size: 1.424em;
   font-style: normal;
@@ -4571,7 +4568,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h4 {
   --font-weight: 600;
-  color: light-dark(light-dark(#e0ac00, #e0de71), light-dark(#e0ac00, #e0de71));
+  color: #e0ac00;
   font-family: inherit;
   font-size: 1.266em;
   font-style: normal;
@@ -4584,7 +4581,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h5 {
   --font-weight: 600;
-  color: light-dark(light-dark(#ec7500, #e9973f), light-dark(#ec7500, #e9973f));
+  color: #ec7500;
   font-family: inherit;
   font-size: 1.125em;
   font-style: normal;
@@ -4597,7 +4594,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h6 {
   --font-weight: 600;
-  color: light-dark(light-dark(#e93147, #fb464c), light-dark(#e93147, #fb464c));
+  color: #e93147;
   font-family: inherit;
   font-size: 1em;
   font-style: normal;
@@ -7930,10 +7927,7 @@ button.mod-destructive {
 }
 
 .card {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid transparent;
   border-radius: 4px;
   display: flex;
@@ -8737,7 +8731,7 @@ svg.svg-icon {
 }
 
 .clickable-icon.mod-warning {
-  color: light-dark(light-dark(#e93147, #fb464c), light-dark(#e93147, #fb464c));
+  color: #e93147;
 }
 
 .clickable-icon.mod-filled svg {
@@ -9708,11 +9702,11 @@ select.mod-hidden {
 }
 
 .menu-item.is-warning:not(.is-disabled) {
-  color: light-dark(light-dark(#e93147, #fb464c), light-dark(#e93147, #fb464c));
+  color: #e93147;
 }
 
 .menu-item.is-warning:not(.is-disabled).selected {
-  color: light-dark(light-dark(#e93147, #fb464c), light-dark(#e93147, #fb464c));
+  color: #e93147;
 }
 
 .menu-item.is-label {
@@ -9740,7 +9734,7 @@ select.mod-hidden {
 }
 
 .menu-item.is-warning .menu-item-icon {
-  color: light-dark(light-dark(#e93147, #fb464c), light-dark(#e93147, #fb464c));
+  color: #e93147;
 }
 
 .menu-item.is-disabled .menu-item-icon {
@@ -10014,11 +10008,11 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .mod-warning {
-  color: light-dark(light-dark(#e93147, #fb464c), light-dark(#e93147, #fb464c));
+  color: #e93147;
 }
 
 .mod-success {
-  color: light-dark(light-dark(#08b94e, #44cf6e), light-dark(#08b94e, #44cf6e));
+  color: #08b94e;
 }
 
 .mod-file-rename .rename-textarea {
@@ -10353,10 +10347,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   cursor: default;
   text-align: center;
 }
@@ -11521,27 +11512,18 @@ kbd {
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .findbarOpen .pdf-viewer-container {
@@ -12988,7 +12970,7 @@ iframe.external-embed {
 }
 
 .markdown-rendered .frontmatter.mod-failed .mod-error {
-  color: light-dark(light-dark(#e93147, #fb464c), light-dark(#e93147, #fb464c));
+  color: #e93147;
   font-size: 0.875em;
 }
 
@@ -13169,7 +13151,7 @@ iframe.external-embed {
 }
 
 .metadata-error-title {
-  color: light-dark(light-dark(#e93147, #fb464c), light-dark(#e93147, #fb464c));
+  color: #e93147;
   font-size: max(14.992px, 1em);
   font-weight: 500;
 }
@@ -13452,7 +13434,7 @@ input.metadata-property-key-input:focus {
   --icon-size: 18px;
   align-items: center;
   bottom: 2px;
-  color: light-dark(light-dark(#e0ac00, #e0de71), light-dark(#e0ac00, #e0de71));
+  color: #e0ac00;
   display: flex;
   inset-inline-end: 2px;
   position: absolute;
@@ -13462,10 +13444,7 @@ input.metadata-property-key-input:focus {
 @media (hover: hover) {
   .metadata-property-warning-icon:hover {
     background-color: #e9973f26;
-    color: light-dark(
-      light-dark(#e0ac00, #e0de71),
-      light-dark(#e0ac00, #e0de71)
-    );
+    color: #e0ac00;
   }
 }
 
@@ -13681,7 +13660,7 @@ input.metadata-property-key-input:focus {
 }
 
 .metadata-property-value .mod-unknown {
-  color: light-dark(light-dark(#e0ac00, #e0de71), light-dark(#e0ac00, #e0de71));
+  color: #e0ac00;
   font-size: 14.992px;
   overflow: hidden;
   padding: 4px 8px;
@@ -13753,14 +13732,11 @@ input.metadata-property-key-input:focus {
 }
 
 .cm-hmd-frontmatter .is-invalid {
-  color: light-dark(light-dark(#e93147, #fb464c), light-dark(#e93147, #fb464c));
+  color: #e93147;
 }
 
 .cm-hmd-frontmatter .error-marker {
-  background-color: light-dark(
-    light-dark(#e93147, #fb464c),
-    light-dark(#e93147, #fb464c)
-  );
+  background-color: #e93147;
   color: #ffffff;
 }
 
@@ -13886,7 +13862,7 @@ input.metadata-property-key-input:focus {
 
 h1 {
   --font-weight: 700;
-  color: light-dark(light-dark(#7852ee, #a882ff), light-dark(#7852ee, #a882ff));
+  color: #7852ee;
   font-family: inherit;
   font-size: 1.802em;
   font-style: normal;
@@ -13900,7 +13876,7 @@ h1 {
 
 h2 {
   --font-weight: 600;
-  color: light-dark(light-dark(#086ddd, #027aff), light-dark(#086ddd, #027aff));
+  color: #086ddd;
   font-family: inherit;
   font-size: 1.602em;
   font-style: normal;
@@ -13914,7 +13890,7 @@ h2 {
 
 h3 {
   --font-weight: 600;
-  color: light-dark(light-dark(#08b94e, #44cf6e), light-dark(#08b94e, #44cf6e));
+  color: #08b94e;
   font-family: inherit;
   font-size: 1.424em;
   font-style: normal;
@@ -13928,7 +13904,7 @@ h3 {
 
 h4 {
   --font-weight: 600;
-  color: light-dark(light-dark(#e0ac00, #e0de71), light-dark(#e0ac00, #e0de71));
+  color: #e0ac00;
   font-family: inherit;
   font-size: 1.266em;
   font-style: normal;
@@ -13942,7 +13918,7 @@ h4 {
 
 h5 {
   --font-weight: 600;
-  color: light-dark(light-dark(#ec7500, #e9973f), light-dark(#ec7500, #e9973f));
+  color: #ec7500;
   font-family: inherit;
   font-size: 1.125em;
   font-style: normal;
@@ -13956,7 +13932,7 @@ h5 {
 
 h6 {
   --font-weight: 600;
-  color: light-dark(light-dark(#e93147, #fb464c), light-dark(#e93147, #fb464c));
+  color: #e93147;
   font-family: inherit;
   font-size: 1em;
   font-style: normal;
@@ -13970,7 +13946,7 @@ h6 {
 
 .markdown-rendered h1 {
   --font-weight: 700;
-  color: light-dark(light-dark(#7852ee, #a882ff), light-dark(#7852ee, #a882ff));
+  color: #7852ee;
   font-family: inherit;
   font-size: 1.802em;
   font-style: normal;
@@ -13990,7 +13966,7 @@ h1 a {
 
 .markdown-rendered h2 {
   --font-weight: 600;
-  color: light-dark(light-dark(#086ddd, #027aff), light-dark(#086ddd, #027aff));
+  color: #086ddd;
   font-family: inherit;
   font-size: 1.602em;
   font-style: normal;
@@ -14010,7 +13986,7 @@ h2 a {
 
 .markdown-rendered h3 {
   --font-weight: 600;
-  color: light-dark(light-dark(#08b94e, #44cf6e), light-dark(#08b94e, #44cf6e));
+  color: #08b94e;
   font-family: inherit;
   font-size: 1.424em;
   font-style: normal;
@@ -14030,7 +14006,7 @@ h3 a {
 
 .markdown-rendered h4 {
   --font-weight: 600;
-  color: light-dark(light-dark(#e0ac00, #e0de71), light-dark(#e0ac00, #e0de71));
+  color: #e0ac00;
   font-family: inherit;
   font-size: 1.266em;
   font-style: normal;
@@ -14050,7 +14026,7 @@ h4 a {
 
 .markdown-rendered h5 {
   --font-weight: 600;
-  color: light-dark(light-dark(#ec7500, #e9973f), light-dark(#ec7500, #e9973f));
+  color: #ec7500;
   font-family: inherit;
   font-size: 1.125em;
   font-style: normal;
@@ -14070,7 +14046,7 @@ h5 a {
 
 .markdown-rendered h6 {
   --font-weight: 600;
-  color: light-dark(light-dark(#e93147, #fb464c), light-dark(#e93147, #fb464c));
+  color: #e93147;
   font-family: inherit;
   font-size: 1em;
   font-style: normal;
@@ -14111,7 +14087,7 @@ h6 a {
 
 .HyperMD-header-1 {
   --font-weight: 700;
-  color: light-dark(light-dark(#7852ee, #a882ff), light-dark(#7852ee, #a882ff));
+  color: #7852ee;
   font-family: inherit;
   font-size: 1.802em;
   font-style: normal;
@@ -14123,7 +14099,7 @@ h6 a {
 
 .HyperMD-list-line .cm-header-1 {
   --font-weight: 700;
-  color: light-dark(light-dark(#7852ee, #a882ff), light-dark(#7852ee, #a882ff));
+  color: #7852ee;
   font-family: inherit;
   font-size: 1.802em;
   font-style: normal;
@@ -14159,7 +14135,7 @@ h6 a {
 
 .HyperMD-header-2 {
   --font-weight: 600;
-  color: light-dark(light-dark(#086ddd, #027aff), light-dark(#086ddd, #027aff));
+  color: #086ddd;
   font-family: inherit;
   font-size: 1.602em;
   font-style: normal;
@@ -14171,7 +14147,7 @@ h6 a {
 
 .HyperMD-list-line .cm-header-2 {
   --font-weight: 600;
-  color: light-dark(light-dark(#086ddd, #027aff), light-dark(#086ddd, #027aff));
+  color: #086ddd;
   font-family: inherit;
   font-size: 1.602em;
   font-style: normal;
@@ -14207,7 +14183,7 @@ h6 a {
 
 .HyperMD-header-3 {
   --font-weight: 600;
-  color: light-dark(light-dark(#08b94e, #44cf6e), light-dark(#08b94e, #44cf6e));
+  color: #08b94e;
   font-family: inherit;
   font-size: 1.424em;
   font-style: normal;
@@ -14219,7 +14195,7 @@ h6 a {
 
 .HyperMD-list-line .cm-header-3 {
   --font-weight: 600;
-  color: light-dark(light-dark(#08b94e, #44cf6e), light-dark(#08b94e, #44cf6e));
+  color: #08b94e;
   font-family: inherit;
   font-size: 1.424em;
   font-style: normal;
@@ -14255,7 +14231,7 @@ h6 a {
 
 .HyperMD-header-4 {
   --font-weight: 600;
-  color: light-dark(light-dark(#e0ac00, #e0de71), light-dark(#e0ac00, #e0de71));
+  color: #e0ac00;
   font-family: inherit;
   font-size: 1.266em;
   font-style: normal;
@@ -14266,7 +14242,7 @@ h6 a {
 
 .HyperMD-list-line .cm-header-4 {
   --font-weight: 600;
-  color: light-dark(light-dark(#e0ac00, #e0de71), light-dark(#e0ac00, #e0de71));
+  color: #e0ac00;
   font-family: inherit;
   font-size: 1.266em;
   font-style: normal;
@@ -14301,7 +14277,7 @@ h6 a {
 
 .HyperMD-header-5 {
   --font-weight: 600;
-  color: light-dark(light-dark(#ec7500, #e9973f), light-dark(#ec7500, #e9973f));
+  color: #ec7500;
   font-family: inherit;
   font-size: 1.125em;
   font-style: normal;
@@ -14312,7 +14288,7 @@ h6 a {
 
 .HyperMD-list-line .cm-header-5 {
   --font-weight: 600;
-  color: light-dark(light-dark(#ec7500, #e9973f), light-dark(#ec7500, #e9973f));
+  color: #ec7500;
   font-family: inherit;
   font-size: 1.125em;
   font-style: normal;
@@ -14347,7 +14323,7 @@ h6 a {
 
 .HyperMD-header-6 {
   --font-weight: 600;
-  color: light-dark(light-dark(#e93147, #fb464c), light-dark(#e93147, #fb464c));
+  color: #e93147;
   font-family: inherit;
   font-size: 1em;
   font-style: normal;
@@ -14359,7 +14335,7 @@ h6 a {
 
 .HyperMD-list-line .cm-header-6 {
   --font-weight: 600;
-  color: light-dark(light-dark(#e93147, #fb464c), light-dark(#e93147, #fb464c));
+  color: #e93147;
   font-family: inherit;
   font-size: 1em;
   font-style: normal;
@@ -16191,7 +16167,7 @@ em {
 }
 
 .cm-s-obsidian span.cm-error {
-  color: light-dark(light-dark(#e93147, #fb464c), light-dark(#e93147, #fb464c));
+  color: #e93147;
 }
 
 .outgoing-link-pane {
@@ -16364,7 +16340,7 @@ em {
 }
 
 .bases-header .title {
-  color: light-dark(light-dark(#086ddd, #027aff), light-dark(#086ddd, #027aff));
+  color: #086ddd;
   font-size: 1.602em;
 }
 
@@ -16552,7 +16528,7 @@ em {
 }
 
 .bases-toolbar-menu-item.mod-destructive {
-  color: light-dark(light-dark(#e93147, #fb464c), light-dark(#e93147, #fb464c));
+  color: #e93147;
 }
 
 .bases-toolbar-menu-item.mod-hidden {
@@ -16620,7 +16596,7 @@ em {
 
 .bases-toolbar-menu-item:not(.mod-destructive)
   .bases-toolbar-menu-item-info-icon.mod-error {
-  color: light-dark(light-dark(#e93147, #fb464c), light-dark(#e93147, #fb464c));
+  color: #e93147;
 }
 
 .bases-toolbar-menu-item .bases-toolbar-menu-item-info-icon {
@@ -16799,7 +16775,7 @@ em {
 }
 
 .bases-query-container .filter-group .filter-row .filter-row-error {
-  color: light-dark(light-dark(#e93147, #fb464c), light-dark(#e93147, #fb464c));
+  color: #e93147;
   font-size: 12.8px;
 }
 
@@ -16942,7 +16918,7 @@ em {
 }
 
 .query-toolbar .mod-error {
-  color: light-dark(light-dark(#e93147, #fb464c), light-dark(#e93147, #fb464c));
+  color: #e93147;
 }
 
 .query-toolbar-menu {
@@ -17611,7 +17587,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .file-tree .mod-new .tree-item-flair {
-  color: light-dark(light-dark(#08b94e, #44cf6e), light-dark(#08b94e, #44cf6e));
+  color: #08b94e;
 }
 
 .file-tree .mod-deleted.is-selected {
@@ -17623,11 +17599,11 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .file-tree .mod-deleted .tree-item-flair {
-  color: light-dark(light-dark(#e93147, #fb464c), light-dark(#e93147, #fb464c));
+  color: #e93147;
 }
 
 .file-tree .mod-to-delete .tree-item-flair {
-  color: light-dark(light-dark(#e93147, #fb464c), light-dark(#e93147, #fb464c));
+  color: #e93147;
   display: none;
 }
 
@@ -18339,7 +18315,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .publish-upload-item.mod-failed {
-  color: light-dark(light-dark(#e93147, #fb464c), light-dark(#e93147, #fb464c));
+  color: #e93147;
 }
 
 .publish-upload-item.mod-failed:before {
@@ -18347,7 +18323,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .publish-upload-item.mod-completed {
-  color: light-dark(light-dark(#08b94e, #44cf6e), light-dark(#08b94e, #44cf6e));
+  color: #08b94e;
 }
 
 .publish-upload-item.mod-completed > * {
@@ -19040,7 +19016,7 @@ body:not(.is-phone)
 }
 
 .sync-status-icon.mod-success {
-  color: light-dark(light-dark(#08b94e, #44cf6e), light-dark(#08b94e, #44cf6e));
+  color: #08b94e;
 }
 
 .sync-status-icon.mod-working {
@@ -19048,7 +19024,7 @@ body:not(.is-phone)
 }
 
 .sync-status-icon.mod-error {
-  color: light-dark(light-dark(#e93147, #fb464c), light-dark(#e93147, #fb464c));
+  color: #e93147;
 }
 
 .sync-status-icon.mod-spin svg {
@@ -19466,7 +19442,7 @@ button.sync-history-button {
 }
 
 .modal.mod-sync-log .sync-log-container .list-item.mod-error {
-  color: light-dark(light-dark(#e93147, #fb464c), light-dark(#e93147, #fb464c));
+  color: #e93147;
 }
 
 .sync-file-tree-container {
@@ -21897,7 +21873,7 @@ body.is-phone .suggestion-bg {
 }
 
 .mobile-onboarding-feature-table .feature-cell.is-enabled {
-  color: light-dark(light-dark(#08b94e, #44cf6e), light-dark(#08b94e, #44cf6e));
+  color: #08b94e;
   font-size: 12.8px;
 }
 
@@ -21954,7 +21930,7 @@ body.is-phone .suggestion-bg {
   align-self: baseline;
   background-color: #44cf6e4d;
   border-radius: 12px;
-  color: light-dark(light-dark(#08b94e, #44cf6e), light-dark(#08b94e, #44cf6e));
+  color: #08b94e;
   display: inline-block;
   margin-left: auto;
   padding: 4px 8px;
@@ -22522,12 +22498,12 @@ body.is-phone .suggestion-bg {
 }
 
 .mobile-option-setting-item-remove-icon {
-  color: light-dark(light-dark(#e93147, #fb464c), light-dark(#e93147, #fb464c));
+  color: #e93147;
   display: flex;
 }
 
 .mobile-option-setting-item-add-icon {
-  color: light-dark(light-dark(#08b94e, #44cf6e), light-dark(#08b94e, #44cf6e));
+  color: #08b94e;
   display: flex;
 }
 
@@ -23040,7 +23016,7 @@ body.is-tablet .sidebar-toggle-button.mod-left {
 
 .is-mobile button.mod-warning {
   background-color: #ffffff26;
-  color: light-dark(light-dark(#e93147, #fb464c), light-dark(#e93147, #fb464c));
+  color: #e93147;
   font-weight: 800;
 }
 

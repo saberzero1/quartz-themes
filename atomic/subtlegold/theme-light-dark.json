@@ -1,0 +1,157 @@
+{
+  "body": {
+    "--background-nav": { "light": "rgba(41, 44, 46, 255)", "dark": null },
+    "--background-nav-alt": { "light": "rgba(58, 62, 63, 255)", "dark": null },
+    "--background-primary": { "light": "rgba(250, 250, 250)", "dark": null },
+    "--code-block-background": { "light": "#ffff", "dark": null },
+    "--code-block-border": { "light": "#92a1a17a", "dark": null },
+    "--golden-brown": { "light": "#d6ba7c", "dark": null },
+    "--interactive-accent": { "light": "#d6ba7c", "dark": null },
+    "--interactive-accent-hover": { "light": "#d6ba7c", "dark": null },
+    "--interactive-accent-rgb": { "light": "#d6ba7c", "dark": null },
+    "--list-color": { "light": "#d6ba7c", "dark": null },
+    "--text-accent": { "light": "#d6ba7c", "dark": null },
+    "--text-accent-hover": { "light": "#d6ba7c", "dark": null },
+    "--text-faint": { "light": "rgba(150, 150, 150, 255)", "dark": null },
+    "--text-highlight-bg": { "light": "#dbaa205e", "dark": null },
+    "--text-nav": { "light": "rgba(190, 190, 190, 255)", "dark": null },
+    "--text-nav-selected": {
+      "light": "rgba(255, 255, 255, 255)",
+      "dark": null
+    },
+    "--text-normal": { "light": "rgba(44, 44, 44, 255)", "dark": null },
+    "--canvas-color": { "light": null, "dark": "126, 126, 126" }
+  },
+  ".notice progress[value]::-webkit-progress-bar": {
+    "background-color": { "light": "#262626", "dark": null },
+    "box-shadow": { "light": "inset 0px 0px 0px 1px #363636", "dark": null }
+  },
+  ".setting-hotkey.has-conflict": {
+    "background-color": "var(--background-modifier-error)",
+    "color": "var(--text-on-accent)"
+  },
+  ".dropdown": { "background-image": { "light": null, "dark": "url(\"data" } },
+  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation input": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation textarea": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed .popupWrapper > div": {
+    "background-color": {
+      "light": null,
+      "dark": "var(--background-secondary-alt)"
+    },
+    "filter": {
+      "light": null,
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4)) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
+    }
+  },
+  ".pdf-container.mod-themed .popupWrapper > div::after": {
+    "background-color": {
+      "light": null,
+      "dark": "var(--background-secondary-alt)"
+    }
+  },
+  ".pdf-container.mod-themed .popupContent:empty + .popupMeta": {
+    "background-color": {
+      "light": null,
+      "dark": "var(--background-secondary-alt)"
+    }
+  },
+  ".mermaid > svg": {
+    "filter": {
+      "light": null,
+      "dark": "invert(100%) hue-rotate(180deg) saturate(1.25)"
+    }
+  },
+  ".canvas-card-menu": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".canvas-card-menu .canvas-card-menu-button svg": {
+    "fill": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".is-mobile": {
+    "--background-modifier-cover": {
+      "light": null,
+      "dark": "rgba(0, 0, 0, 0.5)"
+    },
+    "--background-modifier-form-field": {
+      "light": null,
+      "dark": "var(--background-modifier-border)"
+    },
+    "--background-modifier-hover": {
+      "light": null,
+      "dark": "rgba(var(--mono-rgb-100), 0.15)"
+    },
+    "--color-base-00": { "light": null, "dark": "#000" },
+    "--color-base-10": { "light": null, "dark": "#111" },
+    "--color-base-20": { "light": null, "dark": "#1e1e1e" },
+    "--modal-background": {
+      "light": null,
+      "dark": "var(--background-secondary)"
+    },
+    "--search-result-background": {
+      "light": null,
+      "dark": "var(--background-secondary)"
+    },
+    "--settings-home-background": {
+      "light": null,
+      "dark": "var(--background-primary)"
+    },
+    "--tag-background": {
+      "light": null,
+      "dark": "hsla(var(--interactive-accent-hsl), 0.2)"
+    }
+  },
+  ".is-tablet": {
+    "--interactive-normal": {
+      "light": null,
+      "dark": "var(--background-modifier-border)"
+    },
+    "--titlebar-background": {
+      "light": null,
+      "dark": "var(--background-primary)"
+    },
+    "--titlebar-background-focused": {
+      "light": null,
+      "dark": "var(--background-primary)"
+    }
+  },
+  ".is-tablet .community-item": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".is-tablet .vertical-tab-content": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".workspace-drawer-inner": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".is-mobile .prompt": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".is-mobile .prompt input.prompt-input": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".is-tablet .suggestion-container": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".is-phone .modal.mod-settings": {
+    "background-color": { "light": null, "dark": "var(--background-primary)" }
+  },
+  ".is-phone .modal.mod-settings .vertical-tab-header": {
+    "background-color": { "light": null, "dark": "var(--background-primary)" }
+  },
+  ".is-phone .modal.mod-settings .vertical-tab-nav-item": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".is-phone .modal.mod-settings .vertical-tab-header-title": {
+    "background-color": { "light": null, "dark": "var(--background-primary)" }
+  },
+  ".workspace-drawer": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".workspace-drawer-active-tab-container.is-fullscreen": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  }
+}

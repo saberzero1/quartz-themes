@@ -14,7 +14,7 @@
   --color-accent: light-dark(#a1f990, #a1f990);
   --color-accent-1: light-dark(#bafbab, #d3fdc7);
   --color-accent-2: light-dark(#d3fdc7, #fcfffc);
-  --color-accent-hsl: light-dark(#a1f990, #a1f990);
+  --color-accent-hsl: light-dark(110, 90%, 77%, 110, 90%, 77%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -215,7 +215,7 @@ body {
   --color-accent: light-dark(#a1f990, #a1f990);
   --color-accent-1: light-dark(#bafbab, #d3fdc7);
   --color-accent-2: light-dark(#d3fdc7, #fcfffc);
-  --color-accent-hsl: light-dark(#a1f990, #a1f990);
+  --color-accent-hsl: light-dark(110, 90%, 77%, 110, 90%, 77%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -1444,10 +1444,7 @@ input[type="search"] {
 }
 
 .tree-item-self.is-being-dragged {
-  background-color: light-dark(
-    light-dark(#21b043, #a1f98f),
-    light-dark(#21b043, #a1f98f)
-  );
+  background-color: #21b043;
   color: light-dark(#f6f6f6, #141414);
 }
 
@@ -1482,7 +1479,7 @@ input[type="search"] {
 
 .tree-item-flair {
   border-radius: 4px;
-  color: light-dark(light-dark(#21b043, #a1f98f), light-dark(#21b043, #a1f98f));
+  color: #21b043;
   font-size: 12.8px;
   line-height: 1;
 }
@@ -1499,7 +1496,7 @@ input[type="search"] {
 }
 
 .tree-item-inner-subtext {
-  color: light-dark(light-dark(#21b043, #a1f98f), light-dark(#21b043, #a1f98f));
+  color: #21b043;
   font-size: 85%;
 }
 
@@ -1576,7 +1573,7 @@ svg.svg-icon {
 }
 
 .view-header-title-parent .view-header-breadcrumb-separator {
-  color: light-dark(light-dark(#21b043, #a1f98f), light-dark(#21b043, #a1f98f));
+  color: #21b043;
   padding: 2px 1px;
 }
 
@@ -1669,11 +1666,11 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-highlight {
-  color: light-dark(light-dark(#21b043, #a1f98f), light-dark(#21b043, #a1f98f));
+  color: #21b043;
 }
 
 .graph-view.color-line-highlight {
-  color: light-dark(light-dark(#21b043, #a1f98f), light-dark(#21b043, #a1f98f));
+  color: #21b043;
 }
 
 .graph-controls {

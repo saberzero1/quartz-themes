@@ -1,8 +1,0 @@
-body.no-rounded-corners-highlight .cm-s-obsidian span.cm-highlight,
-body.no-rounded-corners-highlight
-  :is(.markdown-preview-view, .markdown-rendered)
-  mark {
-  border-radius: 0;
-  padding: 0;
-  margin: 0;
-}

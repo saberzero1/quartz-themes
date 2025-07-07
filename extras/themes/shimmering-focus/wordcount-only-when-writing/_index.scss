@@ -1,6 +1,0 @@
-.wordcount-only-when-writing:not(.is-mobile)
-  .horizontal-main-container:not(:has(:is(.writing, .longform-leaf)))
-  + .status-bar
-  :is(.plugin-word-count, .plugin-better-word-count) {
-  display: none;
-}

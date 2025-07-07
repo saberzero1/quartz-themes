@@ -7650,10 +7650,7 @@ button.mod-destructive {
 }
 
 .card {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid transparent;
   border-radius: 4px;
   display: flex;
@@ -10083,10 +10080,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   cursor: default;
   text-align: center;
 }
@@ -11251,27 +11245,18 @@ kbd {
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .findbarOpen .pdf-viewer-container {
@@ -19407,16 +19392,8 @@ body.theme-dark {
   --interactive-normal: #1e2537;
   --list-marker-color: #9093a2;
   --list-marker-color-collapsed: #9093a2;
-  --lucide-minus: url(
-    data:image/svg + xml,
-    utf8,
-    %3Csvgxmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"%3E%3Clinex1="5"y1="12"x2="19"y2="12"%3E%3C/line%3E%3C/svg%3E
-  );
-  --lucide-x: url(
-    data:image/svg + xml,
-    utf8,
-    %3Csvgxmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"%3E%3Clinex1="18"y1="6"x2="6"y2="18"%3E%3C/line%3E%3Clinex1="6"y1="6"x2="18"y2="18"%3E%3C/line%3E%3C/svg%3E
-  );
+  --lucide-minus: url('data:image/svg + xml,utf8,%3Csvgxmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"%3E%3Clinex1="5"y1="12"x2="19"y2="12"%3E%3C/line%3E%3C/svg%3E');
+  --lucide-x: url('data:image/svg + xml,utf8,%3Csvgxmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"%3E%3Clinex1="18"y1="6"x2="6"y2="18"%3E%3C/line%3E%3Clinex1="6"y1="6"x2="18"y2="18"%3E%3C/line%3E%3C/svg%3E');
   --modal-background: #0f111a;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;
@@ -23864,16 +23841,8 @@ body.is-mobile.theme-dark {
   --interactive-normal: #1e2537;
   --list-marker-color: #9093a2;
   --list-marker-color-collapsed: #9093a2;
-  --lucide-minus: url(
-    data:image/svg + xml,
-    utf8,
-    %3Csvgxmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"%3E%3Clinex1="5"y1="12"x2="19"y2="12"%3E%3C/line%3E%3C/svg%3E
-  );
-  --lucide-x: url(
-    data:image/svg + xml,
-    utf8,
-    %3Csvgxmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"%3E%3Clinex1="18"y1="6"x2="6"y2="18"%3E%3C/line%3E%3Clinex1="6"y1="6"x2="18"y2="18"%3E%3C/line%3E%3C/svg%3E
-  );
+  --lucide-minus: url('data:image/svg + xml,utf8,%3Csvgxmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"%3E%3Clinex1="5"y1="12"x2="19"y2="12"%3E%3C/line%3E%3C/svg%3E');
+  --lucide-x: url('data:image/svg + xml,utf8,%3Csvgxmlns="http://www.w3.org/2000/svg"width="24"height="24"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"%3E%3Clinex1="18"y1="6"x2="6"y2="18"%3E%3C/line%3E%3Clinex1="6"y1="6"x2="18"y2="18"%3E%3C/line%3E%3C/svg%3E');
   --modal-background: #0f111a;
   --mono-rgb-0: 0, 0, 0;
   --mono-rgb-100: 255, 255, 255;

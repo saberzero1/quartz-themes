@@ -1,6 +1,0 @@
-body.bt-colorful-indentation-lines.bt-indentation-line-image
-  :is(ul, ol)
-  :is(ul, ol)::before {
-  border-right-color: var(--bt-connected-indent-line-color) !important;
-  border-image: var(--bt-indentation-line-image) 10;
-}

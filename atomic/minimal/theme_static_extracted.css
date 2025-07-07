@@ -1737,7 +1737,7 @@ svg.svg-icon {
 }
 
 .clickable-icon.mod-warning {
-  color: light-dark(light-dark(#e93147, #fb464c), light-dark(#e93147, #fb464c));
+  color: #e93147;
 }
 
 .clickable-icon.mod-filled svg {

@@ -8135,10 +8135,7 @@ button.mod-destructive {
 }
 
 .card {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid transparent;
   border-radius: 4px;
   display: flex;
@@ -10018,7 +10015,7 @@ select.mod-hidden {
 }
 
 .modal-bg {
-  background-color: rgba(light-dark(rgb(251, 252, 252), rgb(8, 9, 14)), 1);
+  background-color: light-dark(rgba(251, 252, 252, 1), rgba(8, 9, 14, 1));
   height: 100%;
   inset-inline-start: 0;
   left: 0;
@@ -10274,10 +10271,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .modal .modal-nav-action.mod-cta {
-  color: light-dark(
-    hsl(light-dark(39, 39), light-dark(80%, 80%), light-dark(73%, 73%)),
-    hsl(light-dark(39, 39), light-dark(80%, 80%), light-dark(73%, 73%))
-  );
+  color: light-dark(hsl(39, 80%, 73%), hsl(39, 80%, 73%));
   font-weight: 600;
   inset-inline-end: 0;
 }
@@ -10568,10 +10562,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   cursor: default;
   text-align: center;
 }
@@ -11740,27 +11731,18 @@ kbd {
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .findbarOpen .pdf-viewer-container {
@@ -11831,7 +11813,7 @@ kbd {
 }
 
 .textLayer .mod-focused {
-  background-color: rgb(light-dark(129, 129, 132, 104, 105, 108));
+  background-color: light-dark(rgb(129, 129, 132), rgb(104, 105, 108));
   border-radius: 4px;
   box-sizing: content-box;
   margin: -4px;
@@ -11843,9 +11825,9 @@ kbd {
 }
 
 .annotationLayer .mod-focused {
-  background-color: rgba(
-    light-dark(rgb(129, 129, 132), rgb(104, 105, 108)),
-    0.1
+  background-color: light-dark(
+    rgba(129, 129, 132, 0.1),
+    rgba(104, 105, 108, 0.1)
   );
   border: 4px solid
     rgba(light-dark(rgb(129, 129, 132), rgb(104, 105, 108)), 0.8);
@@ -13385,9 +13367,9 @@ iframe.external-embed {
 }
 
 .metadata-error-container {
-  background-color: rgba(
-    light-dark(rgb(241, 129, 150), rgb(241, 129, 150)),
-    0.1
+  background-color: light-dark(
+    rgba(241, 129, 150, 0.1),
+    rgba(241, 129, 150, 0.1)
   );
   border-radius: 8px;
   padding: 4px 8px;
@@ -20102,10 +20084,7 @@ body.theme-dark {
 
 @media (hover: hover) {
   .canvas-card-menu .canvas-card-menu-button:hover {
-    color: light-dark(
-      hsl(light-dark(39, 39), light-dark(80%, 80%), light-dark(73%, 73%)),
-      hsl(light-dark(39, 39), light-dark(80%, 80%), light-dark(73%, 73%))
-    );
+    color: light-dark(hsl(39, 80%, 73%), hsl(39, 80%, 73%));
   }
 }
 
@@ -20176,10 +20155,7 @@ body.theme-dark {
 }
 
 .canvas-control-item.is-active {
-  color: light-dark(
-    hsl(light-dark(39, 39), light-dark(80%, 80%), light-dark(73%, 73%)),
-    hsl(light-dark(39, 39), light-dark(80%, 80%), light-dark(73%, 73%))
-  );
+  color: light-dark(hsl(39, 80%, 73%), hsl(39, 80%, 73%));
 }
 
 .canvas-control-item.is-disabled svg {
@@ -20348,20 +20324,14 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 }
 
 .canvas-node.is-selected .canvas-node-container {
-  border-color: light-dark(
-    hsl(light-dark(39, 39), light-dark(80%, 80%), light-dark(73%, 73%)),
-    hsl(light-dark(39, 39), light-dark(80%, 80%), light-dark(73%, 73%))
-  );
+  border-color: light-dark(hsl(39, 80%, 73%), hsl(39, 80%, 73%));
   box-shadow:
     0px 0.5px 1px 0.5px #0000001a,
     0 0 0 2px #f1cb83;
 }
 
 .canvas-node.is-focused .canvas-node-container {
-  border-color: light-dark(
-    hsl(light-dark(39, 39), light-dark(80%, 80%), light-dark(73%, 73%)),
-    hsl(light-dark(39, 39), light-dark(80%, 80%), light-dark(73%, 73%))
-  );
+  border-color: light-dark(hsl(39, 80%, 73%), hsl(39, 80%, 73%));
   box-shadow:
     0px 0.5px 1px 0.5px #0000001a,
     0 0 0 2px #f1cb83;
@@ -20797,10 +20767,7 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-node-connection-point::after {
-  background-color: light-dark(
-    hsl(light-dark(39, 39), light-dark(80%, 80%), light-dark(73%, 73%)),
-    hsl(light-dark(39, 39), light-dark(80%, 80%), light-dark(73%, 73%))
-  );
+  background-color: light-dark(hsl(39, 80%, 73%), hsl(39, 80%, 73%));
   border: 3px solid transparent;
   border-radius: 50%;
   box-sizing: border-box;
@@ -21090,10 +21057,7 @@ body.is-mobile .canvas-node-resizer {
     0.1
   );
   border-radius: 8px;
-  color: light-dark(
-    hsl(light-dark(39, 39), light-dark(80%, 80%), light-dark(73%, 73%)),
-    hsl(light-dark(39, 39), light-dark(80%, 80%), light-dark(73%, 73%))
-  );
+  color: light-dark(hsl(39, 80%, 73%), hsl(39, 80%, 73%));
   font-size: 19.2px;
   line-height: 1.5;
   max-width: 70vw;
@@ -24957,7 +24921,7 @@ pre.svelte-a9juqy {
 
 .bwc-section-count {
   background-color: light-dark(#f1f2f5, #17181e);
-  color: light-dark(light-dark(#818184, #818184), light-dark(#818184, #818184));
+  color: #818184;
 }
 
 .nav-file .nav-file-title[data-path] {
@@ -25136,7 +25100,7 @@ table.table-view-table {
 }
 
 .callout-style-03 .callout-content {
-  background: rgb(light-dark(#08090e, #fbfcfc));
+  background: light-dark(#08090e, #fbfcfc);
   border-top: 1px solid light-dark(#fbfcfc, #08090e);
   color: light-dark(#fbfcfc, #08090e);
   padding: 8px 16px;
@@ -25182,7 +25146,7 @@ table.table-view-table {
 }
 
 .callout-style-04 .callout-content {
-  background: rgba(light-dark(225, 226, 233, 41, 42, 47));
+  background: light-dark(225, 226, 233, 41, 42, 47);
   border-top: 1px solid #8be3eba3;
   color: #fbfcfc;
   padding: 8px 16px;
@@ -26441,7 +26405,7 @@ body:not(.vibrant-folders)
   > .nav-folder-children
   > .nav-folder
   .nav-folder-title {
-  color: rgba(#fbfcfc);
+  color: #fbfcfc;
 }
 
 .theme-dark
@@ -26449,18 +26413,18 @@ body:not(.vibrant-folders)
   > .nav-folder-children
   > .nav-folder
   .nav-file-title {
-  color: rgba(#fbfcfc);
+  color: #fbfcfc;
 }
 
 .theme-dark .nav-folder.mod-root .collapse-icon svg.svg-icon {
-  color: rgba(#fbfcfc);
+  color: #fbfcfc;
 }
 
 .theme-dark
   .workspace-leaf-content[data-type="file-explorer"]
   .tree-item-self
   .tree-item-icon {
-  color: rgba(#fbfcfc);
+  color: #fbfcfc;
 }
 
 .theme-light

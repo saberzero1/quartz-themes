@@ -1786,7 +1786,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill {
-  color: light-dark(light-dark(#db3434, #ff8080), light-dark(#db3434, #ff8080));
+  color: #db3434;
 }
 
 .graph-view.color-fill-focused {

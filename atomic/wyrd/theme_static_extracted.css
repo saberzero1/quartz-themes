@@ -834,7 +834,7 @@ body {
   -webkit-user-select: none;
   background-color: #111;
   caret-color: #a776e3;
-  color: light-dark(light-dark(#bdbdbd, #555555), light-dark(#707070, #999999));
+  color: #bdbdbd;
   contain: initial;
   font-family:
     "??",
@@ -1036,7 +1036,7 @@ h6 {
 .markdown-rendered button.copy-code-button {
   background-color: transparent;
   box-shadow: none;
-  color: light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
+  color: #ababab;
   font-family:
     "??",
     Neucha,
@@ -1337,7 +1337,7 @@ input.prompt-input {
   border-bottom-right-radius: 0.6rem;
   border-top-left-radius: 0.6rem;
   border-top-right-radius: 0.3rem;
-  color: light-dark(light-dark(#bdbdbd, #555555), light-dark(#707070, #999999));
+  color: #bdbdbd;
   padding: 0 0.15rem;
   transition: ease-in-out background-color 0.25s;
 }
@@ -1359,7 +1359,7 @@ input[type="search"] {
   background: transparent;
   border: 1px solid transparent;
   border-radius: 5px;
-  color: light-dark(light-dark(#bdbdbd, #555555), light-dark(#707070, #999999));
+  color: #bdbdbd;
   font-family: inherit;
   font-size: 14.992px;
   height: 40px;
@@ -1528,7 +1528,7 @@ input[type="search"] {
 
 .tree-item-flair {
   border-radius: 4px;
-  color: light-dark(light-dark(#707070, #999999), light-dark(#bdbdbd, #555555));
+  color: #707070;
   font-size: 12.8px;
   line-height: 1;
 }
@@ -1545,7 +1545,7 @@ input[type="search"] {
 }
 
 .tree-item-inner-subtext {
-  color: light-dark(light-dark(#707070, #999999), light-dark(#bdbdbd, #555555));
+  color: #707070;
   font-size: 85%;
 }
 
@@ -1588,7 +1588,7 @@ svg.svg-icon {
 
 .clickable-icon[aria-disabled="true"] {
   background-color: unset;
-  color: light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
+  color: #ababab;
   opacity: 0.4;
 }
 
@@ -1622,7 +1622,7 @@ svg.svg-icon {
 }
 
 .view-header-title-parent .view-header-breadcrumb-separator {
-  color: light-dark(light-dark(#707070, #999999), light-dark(#bdbdbd, #555555));
+  color: #707070;
   padding: 2px 1px;
 }
 
@@ -1674,31 +1674,31 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-1 {
-  color: light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
+  color: #ababab;
 }
 
 .graph-view.color-fill-2 {
-  color: light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
+  color: #ababab;
 }
 
 .graph-view.color-fill-3 {
-  color: light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
+  color: #ababab;
 }
 
 .graph-view.color-fill-4 {
-  color: light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
+  color: #ababab;
 }
 
 .graph-view.color-fill-5 {
-  color: light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
+  color: #ababab;
 }
 
 .graph-view.color-fill-6 {
-  color: light-dark(light-dark(#ababab, #666666), light-dark(#ababab, #666666));
+  color: #ababab;
 }
 
 .graph-view.color-arrow {
-  color: light-dark(light-dark(#bdbdbd, #555555), light-dark(#707070, #999999));
+  color: #bdbdbd;
   opacity: 0.5;
 }
 

@@ -945,7 +945,7 @@
     hsl(230, 102%, 100.05%),
     hsl(228, 105%, 112.23%)
   );
-  --color-accent-hsl: light-dark(#bdc4ff, #bdc4ff);
+  --color-accent-hsl: light-dark(233, 100%, 87%, 233, 100%, 87%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -1760,7 +1760,7 @@ body {
     hsl(230, 102%, 100.05%),
     hsl(228, 105%, 112.23%)
   );
-  --color-accent-hsl: light-dark(#bdc4ff, #bdc4ff);
+  --color-accent-hsl: light-dark(233, 100%, 87%, 233, 100%, 87%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -6125,7 +6125,7 @@ body:not(.is-fullscreen) .status-bar {
 
 .titlebar-button-container {
   background-color: transparent;
-  color: light-dark(light-dark(#ffffff, #e2f0f0), light-dark(#4a6363, #b0cccc));
+  color: #ffffff;
   display: flex;
   position: absolute;
   top: 0;
@@ -6797,10 +6797,7 @@ body.is-phone .view-header-nav-buttons {
   --icon-color-active: #d8e2ee;
   --icon-color-focused: #d8e2ee;
   --icon-color-hover: #d8e2ee;
-  background-color: light-dark(
-    light-dark(#00696b, #15b9bc),
-    light-dark(#ffffff, #034747)
-  );
+  background-color: #00696b;
   border: none;
   border-bottom: 0.5pt solid #00000026;
   display: flex;
@@ -7836,10 +7833,7 @@ button.mod-destructive {
 }
 
 .card {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid transparent;
   border-radius: 4px;
   display: flex;
@@ -9969,10 +9963,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .modal .modal-nav-action.mod-cta {
-  color: light-dark(
-    hsl(light-dark(181, 181), light-dark(100%, 80%), light-dark(21%, 41%)),
-    hsl(light-dark(181, 181), light-dark(100%, 80%), light-dark(21%, 41%))
-  );
+  color: light-dark(hsl(181, 100%, 21%), hsl(181, 100%, 21%));
   font-weight: 600;
   inset-inline-end: 0;
 }
@@ -10265,10 +10256,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   cursor: default;
   text-align: center;
 }
@@ -11455,27 +11443,18 @@ kbd {
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .findbarOpen .pdf-viewer-container {
@@ -19823,10 +19802,7 @@ body.theme-dark {
 
 @media (hover: hover) {
   .canvas-card-menu .canvas-card-menu-button:hover {
-    color: light-dark(
-      hsl(light-dark(181, 181), light-dark(100%, 80%), light-dark(21%, 41%)),
-      hsl(light-dark(181, 181), light-dark(100%, 80%), light-dark(21%, 41%))
-    );
+    color: light-dark(hsl(181, 100%, 21%), hsl(181, 100%, 21%));
   }
 }
 
@@ -19897,10 +19873,7 @@ body.theme-dark {
 }
 
 .canvas-control-item.is-active {
-  color: light-dark(
-    hsl(light-dark(181, 181), light-dark(100%, 80%), light-dark(21%, 41%)),
-    hsl(light-dark(181, 181), light-dark(100%, 80%), light-dark(21%, 41%))
-  );
+  color: light-dark(hsl(181, 100%, 21%), hsl(181, 100%, 21%));
 }
 
 .canvas-control-item.is-disabled svg {
@@ -20069,20 +20042,14 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 }
 
 .canvas-node.is-selected .canvas-node-container {
-  border-color: light-dark(
-    hsl(light-dark(181, 181), light-dark(100%, 80%), light-dark(21%, 41%)),
-    hsl(light-dark(181, 181), light-dark(100%, 80%), light-dark(21%, 41%))
-  );
+  border-color: light-dark(hsl(181, 100%, 21%), hsl(181, 100%, 21%));
   box-shadow:
     0px 0.5px 1px 0.5px #0000001a,
     0 0 0 2px #bdc4ff;
 }
 
 .canvas-node.is-focused .canvas-node-container {
-  border-color: light-dark(
-    hsl(light-dark(181, 181), light-dark(100%, 80%), light-dark(21%, 41%)),
-    hsl(light-dark(181, 181), light-dark(100%, 80%), light-dark(21%, 41%))
-  );
+  border-color: light-dark(hsl(181, 100%, 21%), hsl(181, 100%, 21%));
   box-shadow:
     0px 0.5px 1px 0.5px #0000001a,
     0 0 0 2px #bdc4ff;
@@ -20518,10 +20485,7 @@ body.is-mobile .canvas-node-resizer {
 }
 
 .canvas-node-connection-point::after {
-  background-color: light-dark(
-    hsl(light-dark(181, 181), light-dark(100%, 80%), light-dark(21%, 41%)),
-    hsl(light-dark(181, 181), light-dark(100%, 80%), light-dark(21%, 41%))
-  );
+  background-color: light-dark(hsl(181, 100%, 21%), hsl(181, 100%, 21%));
   border: 3px solid transparent;
   border-radius: 50%;
   box-sizing: border-box;
@@ -20811,10 +20775,7 @@ body.is-mobile .canvas-node-resizer {
     0.1
   );
   border-radius: 1.1em;
-  color: light-dark(
-    hsl(light-dark(181, 181), light-dark(100%, 80%), light-dark(21%, 41%)),
-    hsl(light-dark(181, 181), light-dark(100%, 80%), light-dark(21%, 41%))
-  );
+  color: light-dark(hsl(181, 100%, 21%), hsl(181, 100%, 21%));
   font-size: 19.2px;
   line-height: 1.5;
   max-width: 70vw;
@@ -22831,10 +22792,7 @@ body.is-tablet .workspace-drawer.mod-left .workspace-drawer-inner {
 
 .workspace-drawer-header {
   align-items: flex-start;
-  background-color: light-dark(
-    light-dark(#00696b, #15b9bc),
-    light-dark(#ffffff, #034747)
-  );
+  background-color: #00696b;
   display: flex;
   padding: 8px 20px 0 20px;
 }
@@ -22868,7 +22826,7 @@ body.is-tablet .workspace-drawer.mod-left .workspace-drawer-inner {
 }
 
 .workspace-drawer-header-name-text {
-  color: light-dark(light-dark(#ffffff, #e2f0f0), light-dark(#4a6363, #b0cccc));
+  color: #ffffff;
   font-size: 16px;
   font-weight: 600;
   overflow: hidden;
@@ -24319,14 +24277,11 @@ svg.lucide-clipboard-list {
 }
 
 .restore-ribbon .workspace-ribbon::before {
-  background-color: light-dark(
-    light-dark(#00696b, #15b9bc),
-    light-dark(#ffffff, #034747)
-  );
+  background-color: #00696b;
 }
 
 .restore-ribbon .workspace-ribbon * {
-  color: light-dark(light-dark(#ffffff, #e2f0f0), light-dark(#4a6363, #b0cccc));
+  color: #ffffff;
 }
 
 body:not(.restore-ribbon) .workspace-ribbon {
@@ -24729,11 +24684,11 @@ th {
 }
 
 .workspace-tabs:not(.mod-stacked) .workspace-tab-header-inner-close-button {
-  color: light-dark(light-dark(#ffffff, #e2f0f0), light-dark(#4a6363, #b0cccc));
+  color: #ffffff;
 }
 
 .workspace-tabs .metadata-menu.fileclass-icon {
-  color: light-dark(light-dark(#ffffff, #e2f0f0), light-dark(#4a6363, #b0cccc));
+  color: #ffffff;
 }
 
 body:not(.is-mobile)
@@ -24864,7 +24819,7 @@ body:not(.is-phone) .workspace-drawer-active-tab-header {
 
 .workspace-drawer-header-name::before {
   background-color: currentColor;
-  color: light-dark(light-dark(#ffffff, #e2f0f0), light-dark(#4a6363, #b0cccc));
+  color: #ffffff;
   content: "";
   display: block;
   height: 22px;

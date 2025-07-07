@@ -1248,10 +1248,7 @@ h6 {
 .popover {
   -webkit-font-smoothing: none;
   -webkit-text-stroke: 0px;
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid light-dark(#914a29, #28b0ff);
   border-radius: 0px;
   box-shadow: 3px 3px 1px light-dark(#914a29, #28b0ff);
@@ -1266,10 +1263,7 @@ h6 {
 }
 
 .prompt {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 0.5pt solid #555555;
   border-radius: 8px;
   box-shadow:
@@ -1352,10 +1346,7 @@ input[type="search"] {
 
 .nav-file-tag {
   align-self: center;
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-radius: 4px;
   color: light-dark(#912771, #d39f2f);
   font-size: 9px;
@@ -1943,10 +1934,7 @@ svg.svg-icon {
 }
 
 .workspace-tabs .workspace-leaf {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   height: 100%;
 }
 
@@ -1960,10 +1948,7 @@ svg.svg-icon {
 
 .workspace-leaf-resize-handle {
   -webkit-app-region: no-drag;
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-color: #00000026;
   border-top: 0;
   border-width: 0.5pt;

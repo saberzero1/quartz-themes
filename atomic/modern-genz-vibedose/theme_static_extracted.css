@@ -793,10 +793,7 @@ body {
   --zoom-factor: 1;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(
-    light-dark(#fff, #101010),
-    light-dark(#fff, #101010)
-  );
+  background-color: #fff;
   caret-color: #a68af9;
   color: #dadada;
   contain: initial;
@@ -1215,10 +1212,7 @@ h6 {
 }
 
 .popover {
-  background-color: light-dark(
-    light-dark(#fff, #101010),
-    light-dark(#fff, #101010)
-  );
+  background-color: #fff;
   border: 1px solid transparent;
   border-radius: 8px;
   box-shadow:
@@ -1232,10 +1226,7 @@ h6 {
 }
 
 .prompt {
-  background-color: light-dark(
-    light-dark(#fff, #101010),
-    light-dark(#fff, #101010)
-  );
+  background-color: #fff;
   border: 0.5pt solid #555555;
   border-radius: 12px;
   box-shadow:
@@ -1254,10 +1245,7 @@ h6 {
 }
 
 input.prompt-input {
-  background-color: light-dark(
-    light-dark(#fff, #101010),
-    light-dark(#fff, #101010)
-  );
+  background-color: #fff;
   border: none;
   border-bottom: 1px solid light-dark(#fff, #101010);
   border-radius: 0;
@@ -1663,10 +1651,7 @@ svg.svg-icon {
 }
 
 .graph-controls {
-  background-color: light-dark(
-    light-dark(#fff, #101010),
-    light-dark(#fff, #101010)
-  );
+  background-color: #fff;
   border-radius: 8px;
   inset-inline-end: 12px;
   overflow: auto;
@@ -1850,17 +1835,11 @@ svg.svg-icon {
 }
 
 .workspace-split.mod-root {
-  background-color: light-dark(
-    light-dark(#fff, #101010),
-    light-dark(#fff, #101010)
-  );
+  background-color: #fff;
 }
 
 .workspace-split.mod-root .view-content {
-  background-color: light-dark(
-    light-dark(#fff, #101010),
-    light-dark(#fff, #101010)
-  );
+  background-color: #fff;
 }
 
 .workspace-leaf-resize-handle {

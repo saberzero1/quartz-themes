@@ -13,7 +13,7 @@
     hsl(230, 102%, 100.05%),
     hsl(228, 105%, 112.23%)
   );
-  --color-accent-hsl: light-dark(#bdc4ff, #bdc4ff);
+  --color-accent-hsl: light-dark(233, 100%, 87%, 233, 100%, 87%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -222,7 +222,7 @@ body {
     hsl(230, 102%, 100.05%),
     hsl(228, 105%, 112.23%)
   );
-  --color-accent-hsl: light-dark(#bdc4ff, #bdc4ff);
+  --color-accent-hsl: light-dark(233, 100%, 87%, 233, 100%, 87%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);

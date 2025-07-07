@@ -22,7 +22,7 @@ This theme is designed to be used with the Style Settings plugin.
 
 MIT License
 
-Copyright (c) 2021-2022 José Daniel Mourão (jdanielmourao)
+Copyright (c) 2021-2022 Jose Daniel Mourão (jdanielmourao)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -4765,11 +4765,7 @@ body:not(.no-sanctum-icons) svg.lucide-star-off {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M11.45 11.22 1.28 12.7l7.36 7.17L6.9 30l9.1-4.78V2l-4.55 9.22z'/%3E%3Cpath fill='none' d='M0 0h32v32H0z' data-name='&lt,Transparent Rectangle&gt,'/%3E%3C/svg%3E");
 }
 body:not(.no-sanctum-icons) svg.dice-glyph {
-  -webkit-mask-image: url(
-    data:image/svg + xml,
-    utf8,
-    <svgxmlns="http://www.w3.org/2000/svg"fill="none"viewBox="0 0 100 100"><pathfill="red"d="M79.167 12.5H20.833c-4.596 0 -8.333 3.738 -8.333 8.333v58.333c0 4.596 3.738 8.333 8.333 8.333h58.333c4.596 0 8.333 -3.738 8.333 -8.333V20.833c0 -4.596 -3.738 -8.333 -8.333 -8.333zM20.833 79.167V20.833h58.333l0.008 58.333H20.833z M39.583 33.333A6.25 6.25 0 0 1 33.333 39.583A6.25 6.25 0 0 1 27.083 33.333A6.25 6.25 0 0 1 39.583 33.333z M56.25 50A6.25 6.25 0 0 1 50 56.25A6.25 6.25 0 0 1 43.75 50A6.25 6.25 0 0 1 56.25 50z M72.917 66.667A6.25 6.25 0 0 1 66.667 72.917A6.25 6.25 0 0 1 60.417 66.667A6.25 6.25 0 0 1 72.917 66.667z"></path></svg>
-  );
+  -webkit-mask-image: url('data:image/svg + xml,utf8,<svgxmlns="http://www.w3.org/2000/svg"fill="none"viewBox="0 0 100 100"><pathfill="red"d="M79.167 12.5H20.833c-4.596 0 -8.333 3.738 -8.333 8.333v58.333c0 4.596 3.738 8.333 8.333 8.333h58.333c4.596 0 8.333 -3.738 8.333 -8.333V20.833c0 -4.596 -3.738 -8.333 -8.333 -8.333zM20.833 79.167V20.833h58.333l0.008 58.333H20.833z M39.583 33.333A6.25 6.25 0 0 1 33.333 39.583A6.25 6.25 0 0 1 27.083 33.333A6.25 6.25 0 0 1 39.583 33.333z M56.25 50A6.25 6.25 0 0 1 50 56.25A6.25 6.25 0 0 1 43.75 50A6.25 6.25 0 0 1 56.25 50z M72.917 66.667A6.25 6.25 0 0 1 66.667 72.917A6.25 6.25 0 0 1 60.417 66.667A6.25 6.25 0 0 1 72.917 66.667z"></path></svg>');
 }
 body:not(.no-sanctum-icons) svg.dice {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M22.59 19.41 26.17 23h-6.62l-4.37-7 4.37-7h6.62l-3.58 3.59L24 14l6-6-6-6-1.41 1.41L26.17 7h-6.62a2 2 0 0 0-1.69.94L14 14.11l-3.86-6.17A2 2 0 0 0 8.45 7H2v2h6.45l4.37 7-4.37 7H2v2h6.45a2 2 0 0 0 1.69-.94L14 17.89l3.86 6.17a2 2 0 0 0 1.69.94h6.62l-3.58 3.59L24 30l6-6-6-6Z'/%3E%3Cpath fill='none' d='M0 0h32v32H0z' data-name='&lt,Transparent Rectangle&gt,'/%3E%3C/svg%3E");
@@ -5115,11 +5111,7 @@ body:not(.no-sanctum-icons) svg.lucide-menu {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M4 6h24v2H4zm0 18h24v2H4zm0-12h24v2H4zm0 6h24v2H4z'/%3E%3Cpath fill='none' d='M0 0h32v32H0z' data-name='&lt,Transparent Rectangle&gt,'/%3E%3C/svg%3E");
 }
 body:not(.no-sanctum-icons) svg.lucide-calendar-plus {
-  -webkit-mask-image: url(
-    data:image/svg + xml,
-    utf8,
-    <svgxmlns="http://www.w3.org/2000/svg"fill="none"viewBox="0 0 100 100"><pathfill="red"d="M33.333 62.5L45.833 62.5 45.833 75 54.167 75 54.167 62.5 66.667 62.5 66.667 54.167 54.167 54.167 54.167 41.667 45.833 41.667 45.833 54.167 33.333 54.167z M79.167 16.667h-8.333V8.333h-8.333v8.333H37.5V8.333H29.167v8.333H20.833C16.238 16.667 12.5 20.404 12.5 25v8.333v50c0 4.596 3.738 8.333 8.333 8.333h58.333c4.596 0 8.333 -3.738 8.333 -8.333V33.333V25C87.5 20.404 83.763 16.667 79.167 16.667zM79.175 83.333H20.833V33.333h58.333L79.175 83.333z"></path></svg>
-  );
+  -webkit-mask-image: url('data:image/svg + xml,utf8,<svgxmlns="http://www.w3.org/2000/svg"fill="none"viewBox="0 0 100 100"><pathfill="red"d="M33.333 62.5L45.833 62.5 45.833 75 54.167 75 54.167 62.5 66.667 62.5 66.667 54.167 54.167 54.167 54.167 41.667 45.833 41.667 45.833 54.167 33.333 54.167z M79.167 16.667h-8.333V8.333h-8.333v8.333H37.5V8.333H29.167v8.333H20.833C16.238 16.667 12.5 20.404 12.5 25v8.333v50c0 4.596 3.738 8.333 8.333 8.333h58.333c4.596 0 8.333 -3.738 8.333 -8.333V33.333V25C87.5 20.404 83.763 16.667 79.167 16.667zM79.175 83.333H20.833V33.333h58.333L79.175 83.333z"></path></svg>');
 }
 body:not(.no-sanctum-icons) svg.lucide-calendar {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M26 4h-4V2h-2v2h-8V2h-2v2H6c-1.1 0-2 .9-2 2v20c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 22H6V12h20v14zm0-16H6V6h4v2h2V6h8v2h2V6h4v4z'/%3E%3Cpath fill='none' d='M0 0h32v32H0z'/%3E%3C/svg%3E");
@@ -5176,11 +5168,7 @@ body:not(.no-sanctum-icons) svg.lucide-wrench {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M12.1 2a9.8 9.8 0 0 0-5.4 1.6l6.4 6.4a2.1 2.1 0 0 1 .2 3 2.1 2.1 0 0 1-3-.2L3.7 6.4A9.84 9.84 0 0 0 2 12.1a10.14 10.14 0 0 0 10.1 10.1 10.9 10.9 0 0 0 2.6-.3l6.7 6.7a5 5 0 0 0 7.1-7.1l-6.7-6.7a10.9 10.9 0 0 0 .3-2.6A10 10 0 0 0 12.1 2Zm8 10.1a7.61 7.61 0 0 1-.3 2.1l-.3 1.1.8.8 6.7 6.7a2.88 2.88 0 0 1 .9 2.1A2.72 2.72 0 0 1 27 27a2.9 2.9 0 0 1-4.2 0l-6.7-6.7-.8-.8-1.1.3a7.61 7.61 0 0 1-2.1.3 8.27 8.27 0 0 1-5.7-2.3A7.63 7.63 0 0 1 4 12.1a8.33 8.33 0 0 1 .3-2.2l4.4 4.4a4.14 4.14 0 0 0 5.9.2 4.14 4.14 0 0 0-.2-5.9L10 4.2a6.45 6.45 0 0 1 2-.3 8.27 8.27 0 0 1 5.7 2.3 8.49 8.49 0 0 1 2.4 5.9Z'/%3E%3Cpath fill='none' d='M0 0h32v32H0z' data-name='&lt,Transparent Rectangle&gt,'/%3E%3C/svg%3E");
 }
 body:not(.no-sanctum-icons) svg.lucide-calendar-minus {
-  -webkit-mask-image: url(
-    data:image/svg + xml,
-    utf8,
-    <svgxmlns="http://www.w3.org/2000/svg"fill="none"viewBox="0 0 100 100"><pathfill="red"d="M33.333 54.167H66.667V62.5H33.333z M79.167 16.667h-8.333V8.333h-8.333v8.333H37.5V8.333H29.167v8.333H20.833C16.238 16.667 12.5 20.404 12.5 25v8.333v50c0 4.596 3.738 8.333 8.333 8.333h58.333c4.596 0 8.333 -3.738 8.333 -8.333V33.333V25C87.5 20.404 83.763 16.667 79.167 16.667zM79.175 83.333H20.833V33.333h58.333L79.175 83.333z"></path></svg>
-  );
+  -webkit-mask-image: url('data:image/svg + xml,utf8,<svgxmlns="http://www.w3.org/2000/svg"fill="none"viewBox="0 0 100 100"><pathfill="red"d="M33.333 54.167H66.667V62.5H33.333z M79.167 16.667h-8.333V8.333h-8.333v8.333H37.5V8.333H29.167v8.333H20.833C16.238 16.667 12.5 20.404 12.5 25v8.333v50c0 4.596 3.738 8.333 8.333 8.333h58.333c4.596 0 8.333 -3.738 8.333 -8.333V33.333V25C87.5 20.404 83.763 16.667 79.167 16.667zM79.175 83.333H20.833V33.333h58.333L79.175 83.333z"></path></svg>');
 }
 body:not(.no-sanctum-icons) svg.lucide-glasses {
   transform: translateY(1px) scale(1.1) translateX(-1.5px);

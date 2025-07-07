@@ -3907,10 +3907,7 @@ body.is-focused .workspace-tabs.mod-top {
 
 .is-hidden-frameless:not(.is-fullscreen).is-focused
   .titlebar-button-container.mod-right {
-  background-color: light-dark(
-    light-dark(#f6f6f6, #262626),
-    light-dark(#f6f6f6, #262626)
-  );
+  background-color: #f6f6f6;
 }
 
 .titlebar-button.mod-logo:hover .logo-wireframe {
@@ -7586,10 +7583,7 @@ button.mod-destructive {
 }
 
 .card {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid transparent;
   border-radius: 4px;
   display: flex;
@@ -9997,10 +9991,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   cursor: default;
   text-align: center;
 }
@@ -11107,27 +11098,18 @@ kbd {
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .findbarOpen .pdf-viewer-container {
@@ -23424,7 +23406,6 @@ input.mobile-vault-chooser-field-input {
 }
 
 @charset "UTF-8";
-
 @keyframes slow-fade-out {
   80% {
     height: 30px;
@@ -24544,10 +24525,7 @@ body * {
 .modal.mod-settings
   .vertical-tab-header-group-items
   .vertical-tab-nav-item.is-active {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   color: var(--backgorund-modifier-border);
   font-weight: 700;
 }
@@ -24726,18 +24704,12 @@ ul ul ul ul ul ul ul ul ul ul .list-bullet::after {
 }
 
 button:not(.mod-cta) {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-radius: 4px;
 }
 
 button:not(.mod-cta):hover {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .theme-dark button:hover {
@@ -24765,19 +24737,13 @@ button:not(.mod-cta):hover {
 }
 
 select.dropdown {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-radius: 4px;
   transition: filter 100ms ease-in-out;
 }
 
 select.dropdown:hover {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .workspace-split.mod-vertical.mod-root .document-search-container {
@@ -26831,10 +26797,7 @@ div:has(.callout[data-callout-metadata*="$pop"])
 .color-scheme-golden-book:not(.separate-color-scheme).theme-dark
   .suggestion-container.mod-search-suggestion
   .suggestion-item.is-selected {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .color-scheme-golden-book:not(.separate-color-scheme).theme-dark
@@ -27173,10 +27136,7 @@ div:has(.callout[data-callout-metadata*="$pop"])
 .separate-color-scheme.dm-color-scheme-golden-book.theme-dark
   .suggestion-container.mod-search-suggestion
   .suggestion-item.is-selected {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .separate-color-scheme.dm-color-scheme-golden-book.theme-dark

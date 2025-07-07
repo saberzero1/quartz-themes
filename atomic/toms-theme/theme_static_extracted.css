@@ -924,7 +924,7 @@ h6 {
 .markdown-rendered button.copy-code-button {
   background-color: transparent;
   box-shadow: none;
-  color: light-dark(light-dark(#08b94e, #44cf6e), light-dark(#08b94e, #44cf6e));
+  color: #08b94e;
   font-family: "??", "??", "??", Courier, monospace;
   font-size: 12.8px;
   height: auto;
@@ -1361,10 +1361,7 @@ input[type="search"] {
 }
 
 .tree-item-self.is-being-dragged {
-  background-color: light-dark(
-    light-dark(#08b94e, #44cf6e),
-    light-dark(#08b94e, #44cf6e)
-  );
+  background-color: #08b94e;
   color: #306850;
 }
 
@@ -1456,7 +1453,7 @@ svg.svg-icon {
 
 .clickable-icon[aria-disabled="true"] {
   background-color: unset;
-  color: light-dark(light-dark(#08b94e, #44cf6e), light-dark(#08b94e, #44cf6e));
+  color: #08b94e;
   opacity: 0.4;
 }
 
@@ -1542,27 +1539,27 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-1 {
-  color: light-dark(light-dark(#08b94e, #44cf6e), light-dark(#08b94e, #44cf6e));
+  color: #08b94e;
 }
 
 .graph-view.color-fill-2 {
-  color: light-dark(light-dark(#08b94e, #44cf6e), light-dark(#08b94e, #44cf6e));
+  color: #08b94e;
 }
 
 .graph-view.color-fill-3 {
-  color: light-dark(light-dark(#08b94e, #44cf6e), light-dark(#08b94e, #44cf6e));
+  color: #08b94e;
 }
 
 .graph-view.color-fill-4 {
-  color: light-dark(light-dark(#08b94e, #44cf6e), light-dark(#08b94e, #44cf6e));
+  color: #08b94e;
 }
 
 .graph-view.color-fill-5 {
-  color: light-dark(light-dark(#08b94e, #44cf6e), light-dark(#08b94e, #44cf6e));
+  color: #08b94e;
 }
 
 .graph-view.color-fill-6 {
-  color: light-dark(light-dark(#08b94e, #44cf6e), light-dark(#08b94e, #44cf6e));
+  color: #08b94e;
 }
 
 .graph-view.color-arrow {
@@ -1583,11 +1580,11 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-highlight {
-  color: light-dark(light-dark(#08b94e, #44cf6e), light-dark(#08b94e, #44cf6e));
+  color: #08b94e;
 }
 
 .graph-view.color-line-highlight {
-  color: light-dark(light-dark(#08b94e, #44cf6e), light-dark(#08b94e, #44cf6e));
+  color: #08b94e;
 }
 
 .graph-controls {

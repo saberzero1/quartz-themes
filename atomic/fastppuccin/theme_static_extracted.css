@@ -1510,7 +1510,7 @@ input[type="search"] {
 .tree-item-self.is-being-dragged {
   background-color: #b4befe;
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
 }
@@ -1547,7 +1547,7 @@ input[type="search"] {
 .tree-item-flair {
   border-radius: 4px;
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   font-size: 12.8px;
@@ -1567,7 +1567,7 @@ input[type="search"] {
 
 .tree-item-inner-subtext {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   font-size: 85%;
@@ -1600,7 +1600,7 @@ svg.svg-icon {
 
 .clickable-icon.mod-warning {
   color: light-dark(
-    rgb(light-dark(210, 15, 57, 243, 139, 168)),
+    light-dark(210, 15, 57, 243, 139, 168),
     rgb(light-dark(210, 15, 57, 243, 139, 168))
   );
 }
@@ -1650,7 +1650,7 @@ svg.svg-icon {
 
 .view-header-title-parent .view-header-breadcrumb-separator {
   color: light-dark(
-    rgb(light-dark(108, 111, 133, 161, 168, 201)),
+    light-dark(108, 111, 133, 161, 168, 201),
     rgb(light-dark(108, 111, 133, 161, 168, 201))
   );
   padding: 2px 1px;

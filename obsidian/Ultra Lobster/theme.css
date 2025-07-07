@@ -5410,10 +5410,7 @@ input[type="checkbox"]:checked::after {
   -webkit-mask-position: 52% 52%;
   -webkit-mask-size: 100%;
   -webkit-mask-repeat: no-repeat;
-  -webkit-mask-image: url(
-    data:image/svg + xml,
-    %3Csvgxmlns="http://www.w3.org/2000/svg"class="icon icon-tabler icon-tabler-check"width="24"height="24"viewBox="0 0 24 24"stroke-width="2"stroke="currentColor"fill="none"stroke-linecap="round"stroke-linejoin="round"%3E%3Cpathstroke="none"d="M0 0h24v24H0z"fill="none"%3E%3C/path%3E%3Cpathd="M5 12l5 5l10 -10"%3E%3C/path%3E%3C/svg%3E
-  );
+  -webkit-mask-image: url('data:image/svg + xml,%3Csvgxmlns="http://www.w3.org/2000/svg"class="icon icon-tabler icon-tabler-check"width="24"height="24"viewBox="0 0 24 24"stroke-width="2"stroke="currentColor"fill="none"stroke-linecap="round"stroke-linejoin="round"%3E%3Cpathstroke="none"d="M0 0h24v24H0z"fill="none"%3E%3C/path%3E%3Cpathd="M5 12l5 5l10 -10"%3E%3C/path%3E%3C/svg%3E');
   transition: 700ms;
 }
 

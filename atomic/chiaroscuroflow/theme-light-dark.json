@@ -1,0 +1,279 @@
+{
+  "body": {
+    "--background-primary": { "light": "rgb(255, 250, 205)", "dark": null },
+    "--background-secondary": {
+      "light": "var(--background-secondary-light, rgb(240, 240, 240))",
+      "dark": null
+    },
+    "--code-background": {
+      "light": "var(--code-background-light, rgb(255, 255, 255))",
+      "dark": null
+    },
+    "--math-background": {
+      "light": "var(--code-background-light, rgb(255, 255, 255))",
+      "dark": null
+    },
+    "--text-normal": { "light": "#0c0909", "dark": null },
+    "--canvas-color": { "light": null, "dark": "126, 126, 126" }
+  },
+  ".notice progress[value]::-webkit-progress-bar": {
+    "background-color": { "light": "#262626", "dark": null },
+    "box-shadow": { "light": "inset 0px 0px 0px 1px #363636", "dark": null }
+  },
+  ".workspace-leaf-content[data-type=\"markdown\"]": {
+    "background": "none",
+    "background-image": {
+      "light": "radial-gradient(circle at 30% 30%, #ffdab9, transparent 60%), radial-gradient(circle at 70% 70%, #fffacd, transparent 60%), radial-gradient(circle at 50% 50%, #f08080, transparent 60%), radial-gradient(circle at 50% 50%, #b0e0e6, transparent 60%), radial-gradient(circle at 30% 70%, #98ff98, transparent 60%), radial-gradient(circle at 70% 30%, #add8e6, transparent 60%), radial-gradient(circle at 60% 40%, #e6e6fa, transparent 60%), radial-gradient(circle at 40% 60%, #ffb6c1, transparent 60%)",
+      "dark": "radial-gradient(circle at 30% 30%, #19123fff, transparent 60%), radial-gradient(circle at 70% 70%, #483d8b, transparent 60%), radial-gradient(circle at 50% 50%, #191970, transparent 60%), radial-gradient(circle at 50% 50%, #8b008b, transparent 60%), radial-gradient(circle at 30% 70%, #008b8b, transparent 60%), radial-gradient(circle at 70% 30%, #2f4f4f, transparent 60%), radial-gradient(circle at 60% 40%, #556b2f, transparent 60%), radial-gradient(circle at 40% 60%, #696969, transparent 60%)"
+    }
+  },
+  ".markdown-preview-view": {
+    "background": "none",
+    "background-color": {
+      "light": "var(--code-background-light)",
+      "dark": "var(--code-background-dark)"
+    },
+    "background-image": {
+      "light": "radial-gradient(circle at 30% 30%, #ffdab9, transparent 60%), radial-gradient(circle at 70% 70%, #fffacd, transparent 60%), radial-gradient(circle at 50% 50%, #f08080, transparent 60%), radial-gradient(circle at 50% 50%, #b0e0e6, transparent 60%), radial-gradient(circle at 30% 70%, #98ff98, transparent 60%), radial-gradient(circle at 70% 30%, #add8e6, transparent 60%), radial-gradient(circle at 60% 40%, #e6e6fa, transparent 60%), radial-gradient(circle at 40% 60%, #ffb6c1, transparent 60%)",
+      "dark": "radial-gradient(circle at 30% 30%, #19123fff, transparent 60%), radial-gradient(circle at 70% 70%, #483d8b, transparent 60%), radial-gradient(circle at 50% 50%, #191970, transparent 60%), radial-gradient(circle at 50% 50%, #8b008b, transparent 60%), radial-gradient(circle at 30% 70%, #008b8b, transparent 60%), radial-gradient(circle at 70% 30%, #2f4f4f, transparent 60%), radial-gradient(circle at 60% 40%, #556b2f, transparent 60%), radial-gradient(circle at 40% 60%, #696969, transparent 60%)"
+    },
+    "color": "var(--text-normal)"
+  },
+  ".view-content": {
+    "background": "none",
+    "background-image": {
+      "light": "radial-gradient(circle at 30% 30%, #ffdab9, transparent 60%), radial-gradient(circle at 70% 70%, #fffacd, transparent 60%), radial-gradient(circle at 50% 50%, #f08080, transparent 60%), radial-gradient(circle at 50% 50%, #b0e0e6, transparent 60%), radial-gradient(circle at 30% 70%, #98ff98, transparent 60%), radial-gradient(circle at 70% 30%, #add8e6, transparent 60%), radial-gradient(circle at 60% 40%, #e6e6fa, transparent 60%), radial-gradient(circle at 40% 60%, #ffb6c1, transparent 60%)",
+      "dark": "radial-gradient(circle at 30% 30%, #19123fff, transparent 60%), radial-gradient(circle at 70% 70%, #483d8b, transparent 60%), radial-gradient(circle at 50% 50%, #191970, transparent 60%), radial-gradient(circle at 50% 50%, #8b008b, transparent 60%), radial-gradient(circle at 30% 70%, #008b8b, transparent 60%), radial-gradient(circle at 70% 30%, #2f4f4f, transparent 60%), radial-gradient(circle at 60% 40%, #556b2f, transparent 60%), radial-gradient(circle at 40% 60%, #696969, transparent 60%)"
+    }
+  },
+  ".workspace-split.mod-vertical": { "background": "none" },
+  ".workspace-split.mod-horizontal": { "background": "none" },
+  ".workspace-leaf-content": { "background": "none" },
+  ".workspace-tab-header-container": {
+    "background-color": {
+      "light": "rgba(255, 255, 255, 0.7)",
+      "dark": "rgba(0, 0, 0, 0.3)"
+    }
+  },
+  ".workspace-tab-header.is-active": {
+    "background-color": {
+      "light": "rgba(255, 255, 255, 0.7)",
+      "dark": "rgba(0, 0, 0, 0.3)"
+    }
+  },
+  ".cm-s-obsidian": { "color": "var(--text-normal)" },
+  "h1": {
+    "color": {
+      "light": "var(--heading-color-light)",
+      "dark": "var(--heading-color-dark)"
+    },
+    "font-family": "var(--heading-font)",
+    "font-size": "2.5em",
+    "font-weight": "800",
+    "margin-bottom": "0.5em",
+    "text-shadow": {
+      "light": "1px 1px 2px rgba(0, 0, 0, 0.1)",
+      "dark": "1px 1px 2px rgba(0, 0, 0, 0.5)"
+    }
+  },
+  "h2": {
+    "color": {
+      "light": "var(--heading-color-light)",
+      "dark": "var(--heading-color-dark)"
+    },
+    "font-family": "var(--heading-font)",
+    "font-size": "1.75em",
+    "font-weight": "800",
+    "margin-bottom": "0.5em",
+    "text-shadow": {
+      "light": "1px 1px 2px rgba(0, 0, 0, 0.1)",
+      "dark": "1px 1px 2px rgba(0, 0, 0, 0.5)"
+    }
+  },
+  "h3": {
+    "color": {
+      "light": "var(--heading-color-light)",
+      "dark": "var(--heading-color-dark)"
+    },
+    "font-family": "var(--heading-font)",
+    "font-size": "1.5em",
+    "font-weight": "800",
+    "margin-bottom": "0.5em",
+    "text-shadow": {
+      "light": "1px 1px 2px rgba(0, 0, 0, 0.1)",
+      "dark": "1px 1px 2px rgba(0, 0, 0, 0.5)"
+    }
+  },
+  "h4": {
+    "color": {
+      "light": "var(--heading-color-light)",
+      "dark": "var(--heading-color-dark)"
+    },
+    "font-family": "var(--heading-font)",
+    "font-size": "1.25em",
+    "font-weight": "800",
+    "margin-bottom": "0.5em",
+    "text-shadow": {
+      "light": "1px 1px 2px rgba(0, 0, 0, 0.1)",
+      "dark": "1px 1px 2px rgba(0, 0, 0, 0.5)"
+    }
+  },
+  "h5": {
+    "color": {
+      "light": "var(--heading-color-light)",
+      "dark": "var(--heading-color-dark)"
+    },
+    "font-family": "var(--heading-font)",
+    "font-size": "1em",
+    "font-weight": "800",
+    "margin-bottom": "0.5em",
+    "text-shadow": {
+      "light": "1px 1px 2px rgba(0, 0, 0, 0.1)",
+      "dark": "1px 1px 2px rgba(0, 0, 0, 0.5)"
+    }
+  },
+  "h6": {
+    "color": {
+      "light": "var(--heading-color-light)",
+      "dark": "var(--heading-color-dark)"
+    },
+    "font-family": "var(--heading-font)",
+    "font-size": "0.75em",
+    "font-weight": "800",
+    "margin-bottom": "0.5em",
+    "text-shadow": {
+      "light": "1px 1px 2px rgba(0, 0, 0, 0.1)",
+      "dark": "1px 1px 2px rgba(0, 0, 0, 0.5)"
+    }
+  },
+  ".cm-s-obsidian HyperMD-codeblock": {
+    "background-color": {
+      "light": "var(--code-background-light)",
+      "dark": "var(--code-background-dark)"
+    }
+  },
+  ".markdown-preview-view .math-block": {
+    "background-color": {
+      "light": "var(--code-background-light)",
+      "dark": "var(--code-background-dark)"
+    }
+  },
+  ".dropdown": { "background-image": { "light": null, "dark": "url(\"data" } },
+  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation input": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation textarea": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed .popupWrapper > div": {
+    "background-color": {
+      "light": null,
+      "dark": "var(--background-secondary-alt)"
+    },
+    "filter": {
+      "light": null,
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4)) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
+    }
+  },
+  ".pdf-container.mod-themed .popupWrapper > div::after": {
+    "background-color": {
+      "light": null,
+      "dark": "var(--background-secondary-alt)"
+    }
+  },
+  ".pdf-container.mod-themed .popupContent:empty + .popupMeta": {
+    "background-color": {
+      "light": null,
+      "dark": "var(--background-secondary-alt)"
+    }
+  },
+  ".mermaid > svg": {
+    "filter": {
+      "light": null,
+      "dark": "invert(100%) hue-rotate(180deg) saturate(1.25)"
+    }
+  },
+  ".canvas-card-menu": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".canvas-card-menu .canvas-card-menu-button svg": {
+    "fill": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".is-mobile": {
+    "--background-modifier-cover": {
+      "light": null,
+      "dark": "rgba(0, 0, 0, 0.5)"
+    },
+    "--background-modifier-form-field": {
+      "light": null,
+      "dark": "var(--background-modifier-border)"
+    },
+    "--background-modifier-hover": {
+      "light": null,
+      "dark": "rgba(var(--mono-rgb-100), 0.15)"
+    },
+    "--background-modifier-message": {
+      "light": null,
+      "dark": "var(--background-secondary)"
+    },
+    "--color-base-00": { "light": null, "dark": "#000" },
+    "--color-base-10": { "light": null, "dark": "#111" },
+    "--color-base-20": { "light": null, "dark": "#1e1e1e" },
+    "--mobile-sidebar-background": {
+      "light": null,
+      "dark": "var(--background-secondary)"
+    },
+    "--search-result-background": {
+      "light": null,
+      "dark": "var(--background-secondary)"
+    },
+    "--settings-home-background": {
+      "light": null,
+      "dark": "var(--background-primary)"
+    },
+    "--tag-background": {
+      "light": null,
+      "dark": "hsla(var(--interactive-accent-hsl), 0.2)"
+    }
+  },
+  ".is-tablet": {
+    "--interactive-hover": {
+      "light": null,
+      "dark": "var(--background-modifier-border-hover)"
+    },
+    "--interactive-normal": {
+      "light": null,
+      "dark": "var(--background-modifier-border)"
+    },
+    "--modal-background": {
+      "light": null,
+      "dark": "var(--background-secondary)"
+    },
+    "--titlebar-background": {
+      "light": null,
+      "dark": "var(--background-primary)"
+    },
+    "--titlebar-background-focused": {
+      "light": null,
+      "dark": "var(--background-primary)"
+    }
+  },
+  ".is-tablet .community-item": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".is-tablet .vertical-tab-content": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".workspace-drawer-inner": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".is-mobile .prompt": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".is-mobile .prompt input.prompt-input": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".is-tablet .suggestion-container": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  }
+}

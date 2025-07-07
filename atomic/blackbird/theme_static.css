@@ -3751,7 +3751,7 @@ body:not(.is-mobile) .app-container {
 }
 
 .empty-state-action {
-  color: light-dark(light-dark(#020832, #e92741), light-dark(#020832, #e92741));
+  color: #020832;
   cursor: pointer;
   line-height: 36px;
 }
@@ -5360,11 +5360,11 @@ input {
 }
 
 .setting-add-hotkey-button.mod-active {
-  color: light-dark(light-dark(#020832, #e92741), light-dark(#020832, #e92741));
+  color: #020832;
 }
 
 .setting-restore-hotkey-button.mod-active {
-  color: light-dark(light-dark(#020832, #e92741), light-dark(#020832, #e92741));
+  color: #020832;
 }
 
 @media (hover: hover) {
@@ -7082,7 +7082,7 @@ body > .workspace-split {
 .mod-root .workspace-tab-header-status-icon {
   --icon-size: 14px;
   --icon-stroke: 2px;
-  color: light-dark(light-dark(#020832, #e92741), light-dark(#020832, #e92741));
+  color: #020832;
 }
 
 .mod-root .workspace-tab-header-inner-icon {
@@ -7873,7 +7873,7 @@ button.mod-destructive {
 }
 
 .u-pop {
-  color: light-dark(light-dark(#020832, #e92741), light-dark(#020832, #e92741));
+  color: #020832;
   font-weight: 600;
 }
 
@@ -7925,10 +7925,7 @@ button.mod-destructive {
 
 @media (hover: hover) {
   .diff-collapsed:hover {
-    color: light-dark(
-      light-dark(#020832, #e92741),
-      light-dark(#020832, #e92741)
-    );
+    color: #020832;
   }
 }
 
@@ -9380,7 +9377,7 @@ select.mod-hidden {
 
 .notice-cta {
   align-items: center;
-  color: light-dark(light-dark(#020832, #e92741), light-dark(#020832, #e92741));
+  color: #020832;
   display: flex;
   white-space: nowrap;
 }
@@ -11326,7 +11323,7 @@ kbd {
 
 .is-phone .pdf-findbar .pdf-toolbar-button {
   background-color: transparent;
-  color: light-dark(light-dark(#020832, #e92741), light-dark(#020832, #e92741));
+  color: #020832;
   flex-grow: 0;
   flex-shrink: 0;
   height: auto;
@@ -12680,10 +12677,7 @@ iframe.external-embed {
 
 @media (hover: hover) {
   .footnote-backref:hover {
-    color: light-dark(
-      light-dark(#020832, #e92741),
-      light-dark(#020832, #e92741)
-    );
+    color: #020832;
     text-decoration: none;
   }
 }
@@ -12921,7 +12915,7 @@ iframe.external-embed {
 }
 
 .metadata-error-cta {
-  color: light-dark(light-dark(#020832, #e92741), light-dark(#020832, #e92741));
+  color: #020832;
   cursor: pointer;
   font-size: 14.992px;
   font-weight: 500;
@@ -15274,7 +15268,7 @@ mjx-container {
 }
 
 .cm-s-obsidian span.cm-formatting-math {
-  color: light-dark(light-dark(#020832, #e92741), light-dark(#020832, #e92741));
+  color: #020832;
   font-weight: inherit;
 }
 
@@ -23220,7 +23214,7 @@ body.is-tablet .mobile-navbar {
 }
 
 .mobile-toolbar-floating-options .mobile-toolbar-option {
-  color: light-dark(light-dark(#020832, #e92741), light-dark(#020832, #e92741));
+  color: #020832;
   min-width: 50px;
 }
 

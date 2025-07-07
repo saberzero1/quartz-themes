@@ -814,10 +814,7 @@ body {
   --zoom-factor: 1;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#ffffff, #1e1e1e)
-  );
+  background-color: #fcfcfc;
   caret-color: #a68af9;
   color: #f0f0f0;
   contain: initial;
@@ -875,7 +872,7 @@ h6 a {
 
 h1 {
   --font-weight: 700;
-  color: light-dark(light-dark(#3bb2ce, #43cfea), light-dark(#3bb2ce, #43cfea));
+  color: #3bb2ce;
   font-family: inherit;
   font-size: 1.802em;
   font-style: normal;
@@ -890,7 +887,7 @@ h1 {
 
 h2 {
   --font-weight: 600;
-  color: light-dark(light-dark(#54b6f8, #54b6f8), light-dark(#54b6f8, #54b6f8));
+  color: #54b6f8;
   font-family: inherit;
   font-size: 1.602em;
   font-style: normal;
@@ -904,7 +901,7 @@ h2 {
 
 h3 {
   --font-weight: 600;
-  color: light-dark(light-dark(#437cf3, #437cf3), light-dark(#437cf3, #437cf3));
+  color: #437cf3;
   font-family: inherit;
   font-size: 1.424em;
   font-style: normal;
@@ -918,7 +915,7 @@ h3 {
 
 h4 {
   --font-weight: 600;
-  color: light-dark(light-dark(#6f51f4, #6f51f4), light-dark(#6f51f4, #6f51f4));
+  color: #6f51f4;
   font-family: inherit;
   font-size: 1.266em;
   font-style: normal;
@@ -932,7 +929,7 @@ h4 {
 
 h5 {
   --font-weight: 600;
-  color: light-dark(light-dark(#9446f8, #9446f8), light-dark(#9446f8, #9446f8));
+  color: #9446f8;
   font-family: inherit;
   font-size: 1.125em;
   font-style: normal;
@@ -946,7 +943,7 @@ h5 {
 
 h6 {
   --font-weight: 600;
-  color: light-dark(light-dark(#c952ed, #c952ed), light-dark(#c952ed, #c952ed));
+  color: #c952ed;
   font-family: inherit;
   font-size: 1em;
   font-style: normal;
@@ -959,10 +956,7 @@ h6 {
 }
 
 .markdown-rendered pre {
-  background-color: light-dark(
-    light-dark(#e0e0e0, #363636),
-    light-dark(#e3e3e3, #2a2a2a)
-  );
+  background-color: #e0e0e0;
   border: 0px solid #292929;
   border-radius: 4px;
   min-height: 38px;
@@ -974,10 +968,7 @@ h6 {
 
 .markdown-rendered code {
   -webkit-box-decoration-break: clone;
-  background-color: light-dark(
-    light-dark(#e0e0e0, #363636),
-    light-dark(#e3e3e3, #2a2a2a)
-  );
+  background-color: #e0e0e0;
   border: 0px solid #292929;
   border-radius: 4px;
   color: #f0f0f0;
@@ -1024,10 +1015,7 @@ h6 {
 }
 
 .markdown-rendered button.copy-code-button:hover {
-  background-color: light-dark(
-    light-dark(#d4d4d4, #3f3f3f),
-    light-dark(#d4d4d4, #3f3f3f)
-  );
+  background-color: #d4d4d4;
 }
 
 .callout {
@@ -1244,10 +1232,7 @@ h6 {
 }
 
 .popover {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#ffffff, #1e1e1e)
-  );
+  background-color: #fcfcfc;
   border: 1px solid #292929;
   border-radius: 8px;
   box-shadow:
@@ -1261,10 +1246,7 @@ h6 {
 }
 
 .prompt {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#ffffff, #1e1e1e)
-  );
+  background-color: #fcfcfc;
   border: 0.5pt solid #292929;
   border-radius: 12px;
   box-shadow:
@@ -1283,10 +1265,7 @@ h6 {
 }
 
 input.prompt-input {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#ffffff, #1e1e1e)
-  );
+  background-color: #fcfcfc;
   border: none;
   border-bottom: 1px solid
     light-dark(light-dark(#fcfcfc, #212121), light-dark(#fcfcfc, #212121));
@@ -1299,10 +1278,7 @@ input.prompt-input {
 }
 
 .suggestion-item.is-selected {
-  background-color: light-dark(
-    light-dark(#d4d4d4, #3f3f3f),
-    light-dark(#d4d4d4, #3f3f3f)
-  );
+  background-color: #d4d4d4;
 }
 
 .suggestion-highlight {
@@ -1353,10 +1329,7 @@ input[type="search"] {
 
 .nav-file-tag {
   align-self: center;
-  background-color: light-dark(
-    light-dark(#d4d4d4, #3f3f3f),
-    light-dark(#d4d4d4, #3f3f3f)
-  );
+  background-color: #d4d4d4;
   border-radius: 4px;
   font-size: 9px;
   font-weight: 600;
@@ -1536,10 +1509,7 @@ input[type="search"] {
 }
 
 kbd {
-  background-color: light-dark(
-    light-dark(#e0e0e0, #363636),
-    light-dark(#e3e3e3, #2a2a2a)
-  );
+  background-color: #e0e0e0;
   border-radius: 4px;
   color: #f0f0f0;
   font-family:
@@ -1705,10 +1675,7 @@ svg.svg-icon {
 }
 
 .graph-controls {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#ffffff, #1e1e1e)
-  );
+  background-color: #fcfcfc;
   border-radius: 8px;
   inset-inline-end: 12px;
   overflow: auto;
@@ -1927,25 +1894,16 @@ svg.svg-icon {
 }
 
 .workspace-tabs .workspace-leaf {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#fcfcfc, #212121)
-  );
+  background-color: #fcfcfc;
   height: 100%;
 }
 
 .workspace-split.mod-root {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#ffffff, #1e1e1e)
-  );
+  background-color: #fcfcfc;
 }
 
 .workspace-split.mod-root .view-content {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#ffffff, #1e1e1e)
-  );
+  background-color: #fcfcfc;
 }
 
 .workspace-leaf-resize-handle {

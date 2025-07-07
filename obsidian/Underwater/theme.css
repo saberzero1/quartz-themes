@@ -255,7 +255,7 @@
   --color-base-100: var(--text);
 }
 
-.theme-light /*Rosé Pine dawn*/ {
+.theme-light /*Rose Pine dawn*/ {
   /*PALETTE*/
   --love-rgb: 180, 99, 122;
   --gold-rgb: 234, 157, 52;
@@ -525,7 +525,7 @@
   --accent-l: 38%;
   --color-accent-hsl: 201, 48%, 38%; /*pine*/
 }
-.theme-dark /*Rosé Pine*/ {
+.theme-dark /*Rose Pine*/ {
   /*PALETTE*/
   --love-rgb: 235, 111, 146;
   --gold-rgb: 246, 193, 119;
@@ -2412,10 +2412,10 @@ settings:
         default: rose-pine
         options:
             - 
-               label: Rosé pine
+               label: Rose pine
                value: rose-pine
             -
-               label: Rosé pine moon
+               label: Rose pine moon
                value: rose-pine-moon
             -
                label: Nord
@@ -2452,7 +2452,7 @@ settings:
         default: rose-pine-dawn
         options:
             -
-               label: Rosé pine dawn
+               label: Rose pine dawn
                value: rose-pine-dawn
             -
                label: Nord

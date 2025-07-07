@@ -1,0 +1,44 @@
+{
+  ".messageBar": [
+    {
+      "property": "--message-bar-close-button-active-bg-color",
+      "value": "ButtonText"
+    },
+    {
+      "property": "--message-bar-close-button-border",
+      "value": "1px solid ButtonText"
+    },
+    { "property": "--message-bar-close-button-border-radius", "value": "4px" },
+    { "property": "--message-bar-close-button-color", "value": "ButtonText" },
+    {
+      "property": "--message-bar-close-button-color-hover",
+      "value": "HighlightText"
+    },
+    {
+      "property": "--message-bar-close-button-focus-bg-color",
+      "value": "ButtonText"
+    },
+    {
+      "property": "--message-bar-close-button-hover-bg-color",
+      "value": "ButtonText"
+    },
+    { "property": "-moz-user-select", "value": "none" },
+    { "property": "-webkit-user-select", "value": "none" },
+    { "property": "align-items", "value": "center" },
+    { "property": "background", "value": "var(--message-bar-bg-color)" },
+    {
+      "property": "border",
+      "value": "1px solid var(--message-bar-border-color)"
+    },
+    { "property": "border-radius", "value": "4px" },
+    { "property": "color", "value": "var(--message-bar-fg-color)" },
+    { "property": "display", "value": "flex" },
+    { "property": "flex-direction", "value": "column" },
+    { "property": "gap", "value": "8px" },
+    { "property": "justify-content", "value": "center" },
+    { "property": "padding", "value": "8px 8px 8px 16px" },
+    { "property": "position", "value": "relative" },
+    { "property": "user-select", "value": "none" },
+    { "property": "} .messageBar > div" }
+  ]
+}

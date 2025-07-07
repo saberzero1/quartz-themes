@@ -1258,7 +1258,7 @@
   --color-accent: light-dark(#4e3e2d, #4e3e2d);
   --color-accent-1: light-dark(#544230, #5a4533);
   --color-accent-2: light-dark(#5a4533, #654c39);
-  --color-accent-hsl: light-dark(#4e3e2d, #4e3e2d);
+  --color-accent-hsl: light-dark(31, 27%, 24%, 31, 27%, 24%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -2666,7 +2666,7 @@ body {
   --color-accent: light-dark(#4e3e2d, #4e3e2d);
   --color-accent-1: light-dark(#544230, #5a4533);
   --color-accent-2: light-dark(#5a4533, #654c39);
-  --color-accent-hsl: light-dark(#4e3e2d, #4e3e2d);
+  --color-accent-hsl: light-dark(31, 27%, 24%, 31, 27%, 24%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -6870,12 +6870,12 @@ body:not(.is-mobile) .app-container {
 .empty-state-action {
   color: light-dark(
     light-dark(
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
     ),
     light-dark(
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
     )
   );
   cursor: pointer;
@@ -8737,12 +8737,12 @@ input {
 .setting-add-hotkey-button.mod-active {
   color: light-dark(
     light-dark(
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
     ),
     light-dark(
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
     )
   );
 }
@@ -8750,12 +8750,12 @@ input {
 .setting-restore-hotkey-button.mod-active {
   color: light-dark(
     light-dark(
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
     ),
     light-dark(
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
     )
   );
 }
@@ -10361,22 +10361,22 @@ body.is-phone .view-header-nav-buttons {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
       ),
       light-dark(
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
       ),
       light-dark(
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
       )
     )
   );
@@ -10389,22 +10389,22 @@ body.is-phone .view-header-nav-buttons {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
       ),
       light-dark(
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
       ),
       light-dark(
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
       )
     )
   );
@@ -10416,22 +10416,22 @@ body.is-phone .view-header-nav-buttons {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
       ),
       light-dark(
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
       ),
       light-dark(
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
       )
     )
   );
@@ -10443,22 +10443,22 @@ body.is-phone .view-header-nav-buttons {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
       ),
       light-dark(
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
       ),
       light-dark(
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
       )
     )
   );
@@ -10470,22 +10470,22 @@ body.is-phone .view-header-nav-buttons {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
       ),
       light-dark(
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
       ),
       light-dark(
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
       )
     )
   );
@@ -10497,22 +10497,22 @@ body.is-phone .view-header-nav-buttons {
   color: light-dark(
     light-dark(
       light-dark(
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
       ),
       light-dark(
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
       )
     ),
     light-dark(
       light-dark(
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
       ),
       light-dark(
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
       )
     )
   );
@@ -10565,10 +10565,7 @@ body.is-phone .view-header-nav-buttons {
 }
 
 .workspace-tab-header.is-active {
-  background-color: light-dark(
-    light-dark(#f8f5f1, #2e261f),
-    light-dark(#f8f5f1, #2e261f)
-  );
+  background-color: #f8f5f1;
   box-shadow: 0 0 0 0.5pt transparent;
   color: #ab916d;
 }
@@ -10838,12 +10835,12 @@ body > .workspace-split {
   --icon-stroke: 2px;
   color: light-dark(
     light-dark(
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
     ),
     light-dark(
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
     )
   );
 }
@@ -11569,10 +11566,7 @@ button.mod-destructive {
 }
 
 .card {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid transparent;
   border-radius: 4px;
   display: flex;
@@ -11877,12 +11871,12 @@ button.mod-destructive {
 .u-pop {
   color: light-dark(
     light-dark(
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
     ),
     light-dark(
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
     )
   );
   font-weight: 650;
@@ -11938,12 +11932,12 @@ button.mod-destructive {
   .diff-collapsed:hover {
     color: light-dark(
       light-dark(
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
       ),
       light-dark(
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
       )
     );
   }
@@ -12062,12 +12056,12 @@ button.mod-destructive {
   box-shadow: 0 0 0px 3px
     light-dark(
       light-dark(
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
       ),
       light-dark(
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
       )
     );
   opacity: 1;
@@ -12078,12 +12072,12 @@ button.mod-destructive {
   box-shadow: 0 0 0px 3px
     light-dark(
       light-dark(
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
       ),
       light-dark(
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
       )
     );
   mix-blend-mode: darken;
@@ -13659,12 +13653,12 @@ select.mod-hidden {
   align-items: center;
   color: light-dark(
     light-dark(
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
     ),
     light-dark(
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
     )
   );
   display: flex;
@@ -14169,8 +14163,8 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .modal .modal-nav-action.mod-cta {
   color: light-dark(
-    hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-    hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+    light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+    light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
   );
   font-weight: 650;
   inset-inline-end: 0;
@@ -14474,10 +14468,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   cursor: default;
   text-align: center;
 }
@@ -16255,27 +16246,18 @@ kbd {
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .findbarOpen .pdf-viewer-container {
@@ -16315,12 +16297,12 @@ kbd {
   background-color: transparent;
   color: light-dark(
     light-dark(
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
     ),
     light-dark(
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
     )
   );
   flex-grow: 0;
@@ -17758,12 +17740,12 @@ iframe.external-embed {
   .footnote-backref:hover {
     color: light-dark(
       light-dark(
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
       ),
       light-dark(
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-        hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+        light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
       )
     );
     text-decoration: none;
@@ -18051,12 +18033,12 @@ iframe.external-embed {
 .metadata-error-cta {
   color: light-dark(
     light-dark(
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
     ),
     light-dark(
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
     )
   );
   cursor: pointer;
@@ -20594,12 +20576,12 @@ mjx-container {
 .cm-s-obsidian span.cm-formatting-math {
   color: light-dark(
     light-dark(
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
     ),
     light-dark(
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
     )
   );
   font-weight: inherit;
@@ -25415,7 +25397,7 @@ body.theme-dark {
   --shadow-stationary: 0px 0.5px 1px 0.5px #0000001a;
   --zoom-multiplier: 1;
   background-color: light-dark(
-    light-dark(light-dark(#f8f5f1, #2e261f), light-dark(#f8f5f1, #2e261f)),
+    light-dark(#f8f5f1, #2e261f),
     light-dark(light-dark(#f8f5f1, #2e261f), light-dark(#f8f5f1, #2e261f))
   );
   contain: strict;
@@ -25511,8 +25493,8 @@ body.theme-dark {
   );
   border: 2px solid
     light-dark(
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
     );
   pointer-events: none;
   position: absolute;
@@ -25617,8 +25599,8 @@ body.theme-dark {
 @media (hover: hover) {
   .canvas-card-menu .canvas-card-menu-button:hover {
     color: light-dark(
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
     );
   }
 }
@@ -25695,8 +25677,8 @@ body.theme-dark {
 
 .canvas-control-item.is-active {
   color: light-dark(
-    hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-    hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+    light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+    light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
   );
 }
 
@@ -25867,8 +25849,8 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 
 .canvas-node.is-selected .canvas-node-container {
   border-color: light-dark(
-    hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-    hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+    light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+    light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
   );
   box-shadow:
     0px 0.5px 1px 0.5px #0000001a,
@@ -25877,8 +25859,8 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 
 .canvas-node.is-focused .canvas-node-container {
   border-color: light-dark(
-    hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-    hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+    light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+    light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
   );
   box-shadow:
     0px 0.5px 1px 0.5px #0000001a,
@@ -25948,8 +25930,8 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
   );
   border: 4px solid
     light-dark(
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
     );
   box-shadow: 0px 2px 10px #00000026;
 }
@@ -26225,8 +26207,8 @@ body.is-mobile .canvas-node-resizer {
   background-color: light-dark(#f8f5f1, #2e261f);
   border: 2px solid
     light-dark(
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
     );
   border-radius: 3px;
   display: block;
@@ -26242,8 +26224,8 @@ body.is-mobile .canvas-node-resizer {
   background-color: light-dark(#f8f5f1, #2e261f);
   border: 2px solid
     light-dark(
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
     );
   border-radius: 3px;
   display: block;
@@ -26259,8 +26241,8 @@ body.is-mobile .canvas-node-resizer {
   background-color: light-dark(#f8f5f1, #2e261f);
   border: 2px solid
     light-dark(
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
     );
   border-radius: 3px;
   display: block;
@@ -26276,8 +26258,8 @@ body.is-mobile .canvas-node-resizer {
   background-color: light-dark(#f8f5f1, #2e261f);
   border: 2px solid
     light-dark(
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
     );
   border-radius: 3px;
   display: block;
@@ -26316,8 +26298,8 @@ body.is-mobile .canvas-node-resizer {
 
 .canvas-node-connection-point::after {
   background-color: light-dark(
-    hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-    hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+    light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+    light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
   );
   border: 3px solid transparent;
   border-radius: 50%;
@@ -26353,16 +26335,16 @@ body.is-mobile .canvas-node-resizer {
 
 .canvas-snaps line {
   stroke: light-dark(
-    hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-    hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+    light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+    light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
   );
   stroke-width: 1px;
 }
 
 .canvas-snaps circle {
   fill: light-dark(
-    hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-    hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+    light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+    light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
   );
 }
 
@@ -26612,8 +26594,8 @@ body.is-mobile .canvas-node-resizer {
   );
   border-radius: 8px;
   color: light-dark(
-    hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-    hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+    light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+    light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
   );
   font-size: 19.2px;
   line-height: 1.5;
@@ -26660,8 +26642,8 @@ body.is-mobile .canvas-node-resizer {
 .canvas-cursor {
   border: 5px solid
     light-dark(
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
     );
   border-radius: 5px;
   height: 1px;
@@ -29598,12 +29580,12 @@ body.is-tablet .mobile-navbar {
 .mobile-toolbar-floating-options .mobile-toolbar-option {
   color: light-dark(
     light-dark(
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
     ),
     light-dark(
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%)),
-      hsl(light-dark(31, 31), light-dark(23%, 27%), light-dark(50%, 24%))
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%)),
+      light-dark(hsl(31, 23%, 50%), hsl(31, 27%, 24%))
     )
   );
   min-width: 50px;

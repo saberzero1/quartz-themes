@@ -818,10 +818,7 @@ body {
   --zoom-factor: 1;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(
-    light-dark(#fafafa, #242424),
-    light-dark(#e3e3e3, #2a2a2a)
-  );
+  background-color: #fafafa;
   caret-color: #84ab3f;
   color: #dadada;
   contain: initial;
@@ -893,7 +890,7 @@ h1 {
 
 h2 {
   --font-weight: 600;
-  color: light-dark(light-dark(#08b94e, #44cf6e), light-dark(#e0ac00, #e0de71));
+  color: #08b94e;
   font-family: inherit;
   font-size: 1.5625em;
   font-style: normal;
@@ -907,7 +904,7 @@ h2 {
 
 h3 {
   --font-weight: 600;
-  color: light-dark(light-dark(#086ddd, #027aff), light-dark(#086ddd, #027aff));
+  color: #086ddd;
   font-family: inherit;
   font-size: 1.375em;
   font-style: normal;
@@ -949,7 +946,7 @@ h5 {
 
 h6 {
   --font-weight: 600;
-  color: light-dark(light-dark(#ec7500, #e9973f), light-dark(#7852ee, #a882ff));
+  color: #ec7500;
   font-family: inherit;
   font-size: 1em;
   font-style: normal;
@@ -1242,10 +1239,7 @@ h6 {
 }
 
 .popover {
-  background-color: light-dark(
-    light-dark(#fafafa, #242424),
-    light-dark(#e3e3e3, #2a2a2a)
-  );
+  background-color: #fafafa;
   border: 1px solid transparent;
   border-radius: 8px;
   box-shadow:
@@ -1259,10 +1253,7 @@ h6 {
 }
 
 .prompt {
-  background-color: light-dark(
-    light-dark(#fafafa, #242424),
-    light-dark(#e3e3e3, #2a2a2a)
-  );
+  background-color: #fafafa;
   border: 0.5pt solid #555555;
   border-radius: 12px;
   box-shadow:
@@ -1281,10 +1272,7 @@ h6 {
 }
 
 input.prompt-input {
-  background-color: light-dark(
-    light-dark(#fafafa, #242424),
-    light-dark(#e3e3e3, #2a2a2a)
-  );
+  background-color: #fafafa;
   border: none;
   border-bottom: 1px solid
     light-dark(light-dark(#e3e3e3, #2a2a2a), light-dark(#ffffff, #1e1e1e));
@@ -1691,10 +1679,7 @@ svg.svg-icon {
 }
 
 .graph-controls {
-  background-color: light-dark(
-    light-dark(#fafafa, #242424),
-    light-dark(#e3e3e3, #2a2a2a)
-  );
+  background-color: #fafafa;
   border-radius: 8px;
   inset-inline-end: 12px;
   overflow: auto;
@@ -1914,25 +1899,16 @@ svg.svg-icon {
 }
 
 .workspace-tabs .workspace-leaf {
-  background-color: light-dark(
-    light-dark(#e3e3e3, #2a2a2a),
-    light-dark(#ffffff, #1e1e1e)
-  );
+  background-color: #e3e3e3;
   height: 100%;
 }
 
 .workspace-split.mod-root {
-  background-color: light-dark(
-    light-dark(#fafafa, #242424),
-    light-dark(#e3e3e3, #2a2a2a)
-  );
+  background-color: #fafafa;
 }
 
 .workspace-split.mod-root .view-content {
-  background-color: light-dark(
-    light-dark(#fafafa, #242424),
-    light-dark(#e3e3e3, #2a2a2a)
-  );
+  background-color: #fafafa;
 }
 
 .workspace-leaf-resize-handle {

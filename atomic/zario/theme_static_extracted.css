@@ -14,7 +14,7 @@
   --color-accent: light-dark(#4d8ce6, #4d8ce6);
   --color-accent-1: light-dark(#609be9, #73acec);
   --color-accent-2: light-dark(#73acec, #98c5f3);
-  --color-accent-hsl: light-dark(#4d8ce6, #4d8ce6);
+  --color-accent-hsl: light-dark(215, 75%, 60%, 215, 75%, 60%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -219,7 +219,7 @@ body {
   --color-accent: light-dark(#4d8ce6, #4d8ce6);
   --color-accent-1: light-dark(#609be9, #73acec);
   --color-accent-2: light-dark(#73acec, #98c5f3);
-  --color-accent-hsl: light-dark(#4d8ce6, #4d8ce6);
+  --color-accent-hsl: light-dark(215, 75%, 60%, 215, 75%, 60%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -1936,10 +1936,7 @@ svg.svg-icon {
 .workspace-leaf-resize-handle {
   -webkit-app-region: no-drag;
   background-color: transparent;
-  border-color: light-dark(
-    light-dark(#e9eaec, #020409),
-    light-dark(#e9eaec, #020409)
-  );
+  border-color: #e9eaec;
   border-top: 0;
   border-width: 0.5pt;
   margin: 0;

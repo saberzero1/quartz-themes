@@ -1,9 +1,0 @@
-body.bt-colorful-indentation-lines.bt-indentation-line-gradient ul ul::before,
-body.bt-colorful-indentation-lines.bt-indentation-line-gradient ol ol::before {
-  border-right-color: var(--bt-connected-indent-line-color) !important;
-  border-image: linear-gradient(
-      var(--bt-indentation-gradient-color-1),
-      var(--bt-indentation-gradient-color-2)
-    )
-    10;
-}

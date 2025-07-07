@@ -3163,11 +3163,7 @@ body:not(.is-mobile) .app-container {
   --table-background: transparent;
   background: transparent;
   background-color: #9f50e1;
-  background-image: url(
-    data:image/svg + xml,
-    utf8,
-    <svgxmlns="http://www.w3.org/2000/svg"width="20"height="20"viewBox="0 0 24 24"fill="red"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"class="lucide lucide-bug"><pathd="m8 2 1.88 1.88"/><pathd="M14.12 3.88 16 2"/><pathd="M9 7.13v-1a3.003 3.003 0 1 1 6 0v1"/><pathd="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6"/><pathd="M12 20v-9"/><pathd="M6.53 9C4.6 8.8 3 7.1 3 5"/><pathd="M6 13H2"/><pathd="M3 21c0-2.1 1.7-3.9 3.8-4"/><pathd="M20.97 5c0 2.1-1.6 3.8-3.5 4"/><pathd="M22 13h-4"/><pathd="M17.2 17c2.1.1 3.8 1.9 3.8 4"/></svg>
-  );
+  background-image: url('data:image/svg + xml,utf8,<svgxmlns="http://www.w3.org/2000/svg"width="20"height="20"viewBox="0 0 24 24"fill="red"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"class="lucide lucide-bug"><pathd="m8 2 1.88 1.88"/><pathd="M14.12 3.88 16 2"/><pathd="M9 7.13v-1a3.003 3.003 0 1 1 6 0v1"/><pathd="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6"/><pathd="M12 20v-9"/><pathd="M6.53 9C4.6 8.8 3 7.1 3 5"/><pathd="M6 13H2"/><pathd="M3 21c0-2.1 1.7-3.9 3.8-4"/><pathd="M20.97 5c0 2.1-1.6 3.8-3.5 4"/><pathd="M22 13h-4"/><pathd="M17.2 17c2.1.1 3.8 1.9 3.8 4"/></svg>');
   background-repeat: none;
   border: none;
   border-bottom: 1px solid #39274c;
@@ -4667,11 +4663,7 @@ body:not(.show-inline-title) .inline-title:not([data-level]) {
   --table-background: transparent;
   background: transparent;
   background-color: #9f50e1;
-  background-image: url(
-    data:image/svg + xml,
-    utf8,
-    <svgxmlns="http://www.w3.org/2000/svg"width="20"height="20"viewBox="0 0 24 24"fill="red"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"class="lucide lucide-bug"><pathd="m8 2 1.88 1.88"/><pathd="M14.12 3.88 16 2"/><pathd="M9 7.13v-1a3.003 3.003 0 1 1 6 0v1"/><pathd="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6"/><pathd="M12 20v-9"/><pathd="M6.53 9C4.6 8.8 3 7.1 3 5"/><pathd="M6 13H2"/><pathd="M3 21c0-2.1 1.7-3.9 3.8-4"/><pathd="M20.97 5c0 2.1-1.6 3.8-3.5 4"/><pathd="M22 13h-4"/><pathd="M17.2 17c2.1.1 3.8 1.9 3.8 4"/></svg>
-  );
+  background-image: url('data:image/svg + xml,utf8,<svgxmlns="http://www.w3.org/2000/svg"width="20"height="20"viewBox="0 0 24 24"fill="red"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"class="lucide lucide-bug"><pathd="m8 2 1.88 1.88"/><pathd="M14.12 3.88 16 2"/><pathd="M9 7.13v-1a3.003 3.003 0 1 1 6 0v1"/><pathd="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6"/><pathd="M12 20v-9"/><pathd="M6.53 9C4.6 8.8 3 7.1 3 5"/><pathd="M6 13H2"/><pathd="M3 21c0-2.1 1.7-3.9 3.8-4"/><pathd="M20.97 5c0 2.1-1.6 3.8-3.5 4"/><pathd="M22 13h-4"/><pathd="M17.2 17c2.1.1 3.8 1.9 3.8 4"/></svg>');
   background-repeat: none;
   border: none;
   border-bottom: 1px solid #39274c;
@@ -8030,10 +8022,7 @@ button.mod-destructive {
 }
 
 .card {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid light-dark(#2c1c42, #2c1c42);
   border-radius: 4px;
   display: flex;
@@ -10490,10 +10479,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   cursor: default;
   text-align: center;
 }
@@ -11658,27 +11644,18 @@ kbd {
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .findbarOpen .pdf-viewer-container {
@@ -12145,7 +12122,7 @@ kbd {
 
 .callout-title {
   align-items: flex-start;
-  color: rgb(#201430);
+  color: #201430;
   display: flex;
   font-size: inherit;
   gap: 4px;
@@ -12170,7 +12147,7 @@ kbd {
 }
 
 .callout-icon .svg-icon {
-  color: rgb(#201430);
+  color: #201430;
 }
 
 .callout-icon::after {
@@ -24417,11 +24394,7 @@ blockquote {
   --table-background: transparent;
   background: transparent;
   background-color: #9f50e1;
-  background-image: url(
-    data:image/svg + xml,
-    utf8,
-    <svgxmlns="http://www.w3.org/2000/svg"width="20"height="20"viewBox="0 0 24 24"fill="red"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"class="lucide lucide-bug"><pathd="m8 2 1.88 1.88"/><pathd="M14.12 3.88 16 2"/><pathd="M9 7.13v-1a3.003 3.003 0 1 1 6 0v1"/><pathd="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6"/><pathd="M12 20v-9"/><pathd="M6.53 9C4.6 8.8 3 7.1 3 5"/><pathd="M6 13H2"/><pathd="M3 21c0-2.1 1.7-3.9 3.8-4"/><pathd="M20.97 5c0 2.1-1.6 3.8-3.5 4"/><pathd="M22 13h-4"/><pathd="M17.2 17c2.1.1 3.8 1.9 3.8 4"/></svg>
-  );
+  background-image: url('data:image/svg + xml,utf8,<svgxmlns="http://www.w3.org/2000/svg"width="20"height="20"viewBox="0 0 24 24"fill="red"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"class="lucide lucide-bug"><pathd="m8 2 1.88 1.88"/><pathd="M14.12 3.88 16 2"/><pathd="M9 7.13v-1a3.003 3.003 0 1 1 6 0v1"/><pathd="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6"/><pathd="M12 20v-9"/><pathd="M6.53 9C4.6 8.8 3 7.1 3 5"/><pathd="M6 13H2"/><pathd="M3 21c0-2.1 1.7-3.9 3.8-4"/><pathd="M20.97 5c0 2.1-1.6 3.8-3.5 4"/><pathd="M22 13h-4"/><pathd="M17.2 17c2.1.1 3.8 1.9 3.8 4"/></svg>');
   background-repeat: none;
   border: none;
   border-bottom: 1px solid #39274c;

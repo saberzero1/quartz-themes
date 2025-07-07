@@ -1,0 +1,613 @@
+{
+  "body": {
+    "--background-default": { "light": "#a5aaae", "dark": null },
+    "--background-primary": { "light": "#9096a4", "dark": null },
+    "--background-primary-alt": {
+      "light": "var(--background-primary)",
+      "dark": null
+    },
+    "--background-secondary": {
+      "light": "var(--background-primary)",
+      "dark": null
+    },
+    "--background-secondary-alt": {
+      "light": "var(--background-primary)",
+      "dark": null
+    },
+    "--blockquote-bg": { "light": "#a5aaae", "dark": null },
+    "--blockquote-border-color": { "light": "#252525c3", "dark": null },
+    "--blockquote-radius": { "light": "8px", "dark": null },
+    "--blockquote-text": { "light": "inherit", "dark": null },
+    "--card-bg": { "light": "#9096a4", "dark": null },
+    "--card-border-color": { "light": "#25252586", "dark": null },
+    "--card-shadow": {
+      "light": "rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 10px 0px",
+      "dark": null
+    },
+    "--caret-color": { "light": "var(--text-color)", "dark": null },
+    "--citation-bg": { "light": "var(--color-accent)", "dark": null },
+    "--color-panel": { "light": "#a5aab6", "dark": null },
+    "--custom-color-accent-light": { "light": "#a0a6a7", "dark": null },
+    "--external-link-text-shadow": {
+      "light": "1px 1px 2px var(--color-accent)",
+      "dark": null
+    },
+    "--graph-bg": { "light": "#a5aaae", "dark": null },
+    "--graph-line-color": { "light": "#6767672c", "dark": null },
+    "--icon-color": { "light": "var(--card-border-color)", "dark": null },
+    "--tab-background-active": { "light": "rgba(0, 0, 0, 0.08)", "dark": null },
+    "--table-header-background": {
+      "light": "var(--color-accent)",
+      "dark": null
+    },
+    "--text-color": { "light": "#000000", "dark": null },
+    "--canvas-color": { "light": null, "dark": "126, 126, 126" }
+  },
+  ".notice progress[value]::-webkit-progress-bar": {
+    "background-color": { "light": "#262626", "dark": null },
+    "box-shadow": { "light": "inset 0px 0px 0px 1px #363636", "dark": null }
+  },
+  ".custom-color-accent-light-toggle": {
+    "--color-accent": {
+      "light": "var(--custom-color-accent-light)",
+      "dark": null
+    }
+  },
+  ".colored-headers.colored-headers-grey": {
+    "--header-1": { "light": "#2c313a", "dark": "#474e5c" },
+    "--header-2": { "light": "#3d4450", "dark": "#5e6573" },
+    "--header-3": { "light": "#4f5867", "dark": "#787f8d" },
+    "--header-4": { "light": "#61707f", "dark": "#979daa" },
+    "--header-5": { "light": "#7a8a99", "dark": "#b7bcc9" },
+    "--header-6": { "light": "#95a5b2", "dark": "#d8dce6" }
+  },
+  ".colored-headers.colored-headers-blue": {
+    "--header-1": { "light": "#1e3a5f", "dark": "#58b6e7" },
+    "--header-2": { "light": "#29527a", "dark": "#4c9dcc" },
+    "--header-3": { "light": "#356b95", "dark": "#4184b0" },
+    "--header-4": { "light": "#4184b0", "dark": "#356b95" },
+    "--header-5": { "light": "#4c9dcc", "dark": "#29527a" },
+    "--header-6": { "light": "#58b6e7", "dark": "#1e3a5f" }
+  },
+  ".colored-headers.colored-headers-custom": {
+    "--header-1-custom": { "light": "#2c313a", "dark": "#474e5c" },
+    "--header-2-custom": { "light": "#3d4450", "dark": "#5e6573" },
+    "--header-3-custom": { "light": "#4f5867", "dark": "#787f8d" },
+    "--header-4-custom": { "light": "#61707f", "dark": "#979daa" },
+    "--header-5-custom": { "light": "#7a8a99", "dark": "#b7bcc9" },
+    "--header-6-custom": { "light": "#95a5b2", "dark": "#d8dce6" }
+  },
+  ".colored-headers.colored-headers-purple": {
+    "--header-1": { "light": "#3d2c4f", "dark": "#9272cc" },
+    "--header-2": { "light": "#4e3a66", "dark": "#8064b3" },
+    "--header-3": { "light": "#5e4880", "dark": "#6f5699" },
+    "--header-4": { "light": "#6f5699", "dark": "#5e4880" },
+    "--header-5": { "light": "#8064b3", "dark": "#4e3a66" },
+    "--header-6": { "light": "#9272cc", "dark": "#3d2c4f" }
+  },
+  ".colored-headers.colored-headers-green": {
+    "--header-1": { "light": "#2c4f3d", "dark": "#72cc92" },
+    "--header-2": { "light": "#3a664e", "dark": "#64b380" },
+    "--header-3": { "light": "#48805e", "dark": "#56996f" },
+    "--header-4": { "light": "#56996f", "dark": "#48805e" },
+    "--header-5": { "light": "#64b380", "dark": "#3a664e" },
+    "--header-6": { "light": "#72cc92", "dark": "#2c4f3d" }
+  },
+  ".colored-headers.colored-headers-orange": {
+    "--header-1": { "light": "#4f392c", "dark": "#cc9972" },
+    "--header-2": { "light": "#664c3a", "dark": "#b38664" },
+    "--header-3": { "light": "#805f48", "dark": "#997256" },
+    "--header-4": { "light": "#997256", "dark": "#805f48" },
+    "--header-5": { "light": "#b38664", "dark": "#664c3a" },
+    "--header-6": { "light": "#cc9972", "dark": "#4f392c" }
+  },
+  ".colored-headers.colored-headers-red": {
+    "--header-1": { "light": "#c1001f", "dark": "#ff5c5c" },
+    "--header-2": { "light": "#d90429", "dark": "#ff4141" },
+    "--header-3": "#f02c2c",
+    "--header-4": { "light": "#ff4141", "dark": "#d90429" },
+    "--header-5": { "light": "#ff5c5c", "dark": "#c1001f" },
+    "--header-6": { "light": "#ff7b7b", "dark": "#960018" }
+  },
+  ".colored-headers.colored-headers-pink": {
+    "--header-1": { "light": "#5f2c4f", "dark": "#e76dcc" },
+    "--header-2": { "light": "#7a3966", "dark": "#cc60b3" },
+    "--header-3": { "light": "#954680", "dark": "#b05399" },
+    "--header-4": { "light": "#b05399", "dark": "#954680" },
+    "--header-5": { "light": "#cc60b3", "dark": "#7a3966" },
+    "--header-6": { "light": "#e76dcc", "dark": "#5f2c4f" }
+  },
+  ".extended-light-color-schemes-toggle.leaf": {
+    "--background-default": { "light": "#809d9b", "dark": null },
+    "--background-modifier-border": {
+      "light": "var(--card-border-color)",
+      "dark": null
+    },
+    "--background-primary": { "light": "#627f7d", "dark": null },
+    "--background-primary-alt": {
+      "light": "var(--background-primary)",
+      "dark": null
+    },
+    "--background-secondary": {
+      "light": "var(--background-primary)",
+      "dark": null
+    },
+    "--background-secondary-alt": {
+      "light": "var(--background-primary)",
+      "dark": null
+    },
+    "--blockquote-bg": { "light": "var(--background-default)", "dark": null },
+    "--blockquote-border-color": { "light": "#090b0b", "dark": null },
+    "--blockquote-radius": { "light": "8px", "dark": null },
+    "--card-bg": { "light": "#627f7d", "dark": null },
+    "--card-border-color": { "light": "#090b0b84", "dark": null },
+    "--caret-color": { "light": "var(--text-color)", "dark": null },
+    "--citation-bg": { "light": "var(--color-accent)", "dark": null },
+    "--color-panel": { "light": "#809d9b", "dark": null },
+    "--custom-color-accent-light": { "light": "#475c5a", "dark": null },
+    "--graph-bg": { "light": "var(--background-default)", "dark": null },
+    "--graph-line-color": { "light": "#090b0b2c", "dark": null },
+    "--icon-color": { "light": "var(--card-border-color)", "dark": null },
+    "--tab-background-active": {
+      "light": "rgba(255, 255, 255, 0.1)",
+      "dark": null
+    },
+    "--table-header-background": {
+      "light": "var(--color-accent)",
+      "dark": null
+    },
+    "--text-color": { "light": "#0c0c0c", "dark": null }
+  },
+  ".extended-light-color-schemes-toggle.sky": {
+    "--background-default": { "light": "#5a6f87", "dark": null },
+    "--background-modifier-border": {
+      "light": "var(--card-border-color)",
+      "dark": null
+    },
+    "--background-primary": { "light": "#495b6e", "dark": null },
+    "--background-primary-alt": {
+      "light": "var(--background-primary)",
+      "dark": null
+    },
+    "--background-secondary": {
+      "light": "var(--background-primary)",
+      "dark": null
+    },
+    "--background-secondary-alt": {
+      "light": "var(--background-primary)",
+      "dark": null
+    },
+    "--blockquote-bg": { "light": "var(--background-default)", "dark": null },
+    "--blockquote-border-color": { "light": "#080a0c", "dark": null },
+    "--blockquote-radius": { "light": "8px", "dark": null },
+    "--card-bg": { "light": "#495b6e", "dark": null },
+    "--card-border-color": { "light": "#080a0c84", "dark": null },
+    "--caret-color": { "light": "var(--text-color)", "dark": null },
+    "--citation-bg": { "light": "var(--color-accent)", "dark": null },
+    "--color-panel": { "light": "#5a6f87", "dark": null },
+    "--custom-color-accent-light": { "light": "#415262", "dark": null },
+    "--graph-bg": { "light": "var(--background-default)", "dark": null },
+    "--graph-line-color": { "light": "#080a0c2c", "dark": null },
+    "--icon-color": { "light": "var(--card-border-color)", "dark": null },
+    "--tab-background-active": {
+      "light": "rgba(255, 255, 255, 0.1)",
+      "dark": null
+    },
+    "--table-header-background": {
+      "light": "var(--color-accent)",
+      "dark": null
+    },
+    "--text-color": { "light": "#0c0c0c", "dark": null }
+  },
+  ".extended-light-color-schemes-toggle.fog": {
+    "--background-default": { "light": "#5e6871", "dark": null },
+    "--background-modifier-border": {
+      "light": "var(--card-border-color)",
+      "dark": null
+    },
+    "--background-primary": { "light": "#4c555d", "dark": null },
+    "--background-primary-alt": {
+      "light": "var(--background-primary)",
+      "dark": null
+    },
+    "--background-secondary-alt": {
+      "light": "var(--background-secondary)",
+      "dark": null
+    },
+    "--blockquote-bg": { "light": "var(--background-default)", "dark": null },
+    "--blockquote-border-color": { "light": "#101010", "dark": null },
+    "--card-bg": { "light": "#4c555d", "dark": null },
+    "--card-border-color": { "light": "#10101084", "dark": null },
+    "--caret-color": { "light": "var(--text-color)", "dark": null },
+    "--citation-bg": { "light": "var(--color-accent)", "dark": null },
+    "--color-panel": { "light": "#5e6871", "dark": null },
+    "--custom-color-accent-light": { "light": "#3c444c", "dark": null },
+    "--graph-bg": { "light": "var(--background-default)", "dark": null },
+    "--graph-line-color": { "light": "#1010102c", "dark": null },
+    "--icon-color": { "light": "var(--card-border-color)", "dark": null },
+    "--tab-background-active": {
+      "light": "rgba(255, 255, 255, 0.1)",
+      "dark": null
+    },
+    "--table-header-background": {
+      "light": "var(--color-accent)",
+      "dark": null
+    },
+    "--text-color": { "light": "#101010", "dark": null }
+  },
+  ".extended-light-color-schemes-toggle.red-desert": {
+    "--background-default": { "light": "#6a5f6a", "dark": null },
+    "--background-modifier-border": {
+      "light": "var(--card-border-color)",
+      "dark": null
+    },
+    "--background-primary": { "light": "#5a505a", "dark": null },
+    "--background-primary-alt": {
+      "light": "var(--background-primary)",
+      "dark": null
+    },
+    "--background-secondary-alt": {
+      "light": "var(--background-secondary)",
+      "dark": null
+    },
+    "--blockquote-bg": { "light": "var(--background-default)", "dark": null },
+    "--blockquote-border-color": { "light": "#101010", "dark": null },
+    "--card-bg": { "light": "#5a505a", "dark": null },
+    "--card-border-color": { "light": "#10101084", "dark": null },
+    "--caret-color": { "light": "var(--text-color)", "dark": null },
+    "--citation-bg": { "light": "var(--color-accent)", "dark": null },
+    "--color-panel": { "light": "#6a5f6a", "dark": null },
+    "--custom-color-accent-light": { "light": "#443c44", "dark": null },
+    "--graph-bg": { "light": "var(--background-default)", "dark": null },
+    "--graph-line-color": { "light": "#1010102c", "dark": null },
+    "--icon-color": { "light": "var(--card-border-color)", "dark": null },
+    "--tab-background-active": {
+      "light": "rgba(255, 255, 255, 0.1)",
+      "dark": null
+    },
+    "--table-header-background": {
+      "light": "var(--color-accent)",
+      "dark": null
+    },
+    "--text-color": { "light": "#101010", "dark": null }
+  },
+  ".extended-light-color-schemes-toggle.violet-haze": {
+    "--background-default": { "light": "#9584ae", "dark": null },
+    "--background-modifier-border": {
+      "light": "var(--card-border-color)",
+      "dark": null
+    },
+    "--background-primary": { "light": "#8776a5", "dark": null },
+    "--background-primary-alt": {
+      "light": "var(--background-primary)",
+      "dark": null
+    },
+    "--background-secondary-alt": {
+      "light": "var(--background-secondary)",
+      "dark": null
+    },
+    "--blockquote-bg": { "light": "var(--background-default)", "dark": null },
+    "--blockquote-border-color": { "light": "#101010", "dark": null },
+    "--card-bg": { "light": "#8776a5", "dark": null },
+    "--card-border-color": { "light": "#10101084", "dark": null },
+    "--caret-color": { "light": "var(--text-color)", "dark": null },
+    "--citation-bg": { "light": "var(--color-accent)", "dark": null },
+    "--color-panel": { "light": "#9584ae", "dark": null },
+    "--custom-color-accent-light": { "light": "#62497c", "dark": null },
+    "--graph-bg": { "light": "var(--background-default)", "dark": null },
+    "--graph-line-color": { "light": "#1010102c", "dark": null },
+    "--icon-color": { "light": "var(--card-border-color)", "dark": null },
+    "--tab-background-active": {
+      "light": "rgba(255, 255, 255, 0.1)",
+      "dark": null
+    },
+    "--table-header-background": {
+      "light": "var(--color-accent)",
+      "dark": null
+    },
+    "--text-color": { "light": "#101010", "dark": null }
+  },
+  ".dropdown": { "background-image": { "light": null, "dark": "url(\"data" } },
+  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation input": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation textarea": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed .popupWrapper > div": {
+    "background-color": {
+      "light": null,
+      "dark": "var(--background-secondary-alt)"
+    },
+    "filter": {
+      "light": null,
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4)) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
+    }
+  },
+  ".pdf-container.mod-themed .popupWrapper > div::after": {
+    "background-color": {
+      "light": null,
+      "dark": "var(--background-secondary-alt)"
+    }
+  },
+  ".pdf-container.mod-themed .popupContent:empty + .popupMeta": {
+    "background-color": {
+      "light": null,
+      "dark": "var(--background-secondary-alt)"
+    }
+  },
+  ".mermaid > svg": {
+    "filter": {
+      "light": null,
+      "dark": "invert(100%) hue-rotate(180deg) saturate(1.25)"
+    }
+  },
+  ".canvas-card-menu": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".canvas-card-menu .canvas-card-menu-button svg": {
+    "fill": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".is-mobile": {
+    "--background-modifier-cover": {
+      "light": null,
+      "dark": "rgba(0, 0, 0, 0.5)"
+    },
+    "--background-modifier-form-field": {
+      "light": null,
+      "dark": "var(--background-modifier-border)"
+    },
+    "--background-modifier-hover": {
+      "light": null,
+      "dark": "rgba(var(--mono-rgb-100), 0.15)"
+    },
+    "--background-modifier-message": {
+      "light": null,
+      "dark": "var(--background-secondary)"
+    },
+    "--color-base-00": { "light": null, "dark": "#000" },
+    "--color-base-10": { "light": null, "dark": "#111" },
+    "--color-base-20": { "light": null, "dark": "#1e1e1e" },
+    "--mobile-sidebar-background": {
+      "light": null,
+      "dark": "var(--background-secondary)"
+    },
+    "--search-result-background": {
+      "light": null,
+      "dark": "var(--background-secondary)"
+    },
+    "--settings-home-background": {
+      "light": null,
+      "dark": "var(--background-primary)"
+    },
+    "--tag-background": {
+      "light": null,
+      "dark": "hsla(var(--interactive-accent-hsl), 0.2)"
+    }
+  },
+  ".is-tablet": {
+    "--interactive-hover": {
+      "light": null,
+      "dark": "var(--background-modifier-border-hover)"
+    },
+    "--interactive-normal": {
+      "light": null,
+      "dark": "var(--background-modifier-border)"
+    },
+    "--modal-background": {
+      "light": null,
+      "dark": "var(--background-secondary)"
+    },
+    "--titlebar-background": {
+      "light": null,
+      "dark": "var(--background-primary)"
+    },
+    "--titlebar-background-focused": {
+      "light": null,
+      "dark": "var(--background-primary)"
+    }
+  },
+  ".is-tablet .community-item": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".is-tablet .vertical-tab-content": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".workspace-drawer-inner": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".is-mobile .prompt": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".is-mobile .prompt input.prompt-input": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".is-tablet .suggestion-container": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".custom-color-accent-dark-toggle": {
+    "--color-accent": {
+      "light": null,
+      "dark": "var(--custom-color-accent-dark)"
+    }
+  },
+  ".extended-dark-color-schemes-toggle.abyss": {
+    "--background-default": { "light": null, "dark": "#10081e" },
+    "--background-modifier-border": {
+      "light": null,
+      "dark": "var(--card-border-color)"
+    },
+    "--background-primary": { "light": null, "dark": "#080212" },
+    "--background-primary-alt": {
+      "light": null,
+      "dark": "var(--background-primary)"
+    },
+    "--background-secondary": {
+      "light": null,
+      "dark": "var(--background-primary)"
+    },
+    "--background-secondary-alt": {
+      "light": null,
+      "dark": "var(--background-primary)"
+    },
+    "--blockquote-bg": { "light": null, "dark": "#10081e" },
+    "--blockquote-border-color": { "light": null, "dark": "#300c6e" },
+    "--blockquote-radius": { "light": null, "dark": "8px" },
+    "--blockquote-text": { "light": null, "dark": "inherit" },
+    "--card-bg": { "light": null, "dark": "#080212" },
+    "--card-border-color": { "light": null, "dark": "#805cbe84" },
+    "--card-shadow": {
+      "light": null,
+      "dark": "0 3px 8px rgba(97, 97, 97, 0.15)"
+    },
+    "--caret-color": { "light": null, "dark": "var(--text-color)" },
+    "--citation-bg": { "light": null, "dark": "var(--color-accent)" },
+    "--color-panel": { "light": null, "dark": "#10081e" },
+    "--custom-color-accent-dark": { "light": null, "dark": "#341961" },
+    "--graph-bg": { "light": null, "dark": "#100425" },
+    "--graph-line-color": { "light": null, "dark": "var(--card-border-color)" },
+    "--icon-color": { "light": null, "dark": "var(--card-border-color)" },
+    "--tab-background-active": {
+      "light": null,
+      "dark": "rgba(255, 255, 255, 0.1)"
+    },
+    "--table-header-background": {
+      "light": null,
+      "dark": "var(--color-accent)"
+    },
+    "--text-color": { "light": null, "dark": "#ffffff" }
+  },
+  ".extended-dark-color-schemes-toggle.atlantic": {
+    "--background-default": { "light": null, "dark": "#101b2d" },
+    "--background-modifier-border": {
+      "light": null,
+      "dark": "var(--card-border-color)"
+    },
+    "--background-primary": { "light": null, "dark": "#0b121e" },
+    "--background-primary-alt": {
+      "light": null,
+      "dark": "var(--background-primary)"
+    },
+    "--background-secondary": {
+      "light": null,
+      "dark": "var(--background-primary)"
+    },
+    "--background-secondary-alt": {
+      "light": null,
+      "dark": "var(--background-primary)"
+    },
+    "--blockquote-bg": { "light": null, "dark": "#101b2d" },
+    "--blockquote-border-color": { "light": null, "dark": "#134667" },
+    "--blockquote-radius": { "light": null, "dark": "8px" },
+    "--blockquote-text": { "light": null, "dark": "inherit" },
+    "--card-bg": { "light": null, "dark": "#0b121e" },
+    "--card-border-color": { "light": null, "dark": "#2d5e7f84" },
+    "--card-shadow": {
+      "light": null,
+      "dark": "0 3px 8px rgba(97, 97, 97, 0.15)"
+    },
+    "--caret-color": { "light": null, "dark": "var(--text-color)" },
+    "--citation-bg": { "light": null, "dark": "var(--color-accent)" },
+    "--color-panel": { "light": null, "dark": "#101b2d" },
+    "--custom-color-accent-dark": { "light": null, "dark": "#003566" },
+    "--graph-bg": { "light": null, "dark": "#101b2d" },
+    "--graph-line-color": { "light": null, "dark": "var(--card-border-color)" },
+    "--icon-color": { "light": null, "dark": "var(--card-border-color)" },
+    "--tab-background-active": {
+      "light": null,
+      "dark": "rgba(255, 255, 255, 0.1)"
+    },
+    "--table-header-background": {
+      "light": null,
+      "dark": "var(--color-accent)"
+    },
+    "--text-color": { "light": null, "dark": "#f0f0f0" }
+  },
+  ".extended-dark-color-schemes-toggle.moss": {
+    "--background-default": { "light": null, "dark": "#0a150c" },
+    "--background-modifier-border": {
+      "light": null,
+      "dark": "var(--card-border-color)"
+    },
+    "--background-primary": { "light": null, "dark": "#070d08" },
+    "--background-primary-alt": {
+      "light": null,
+      "dark": "var(--background-primary)"
+    },
+    "--background-secondary": {
+      "light": null,
+      "dark": "var(--background-primary)"
+    },
+    "--background-secondary-alt": {
+      "light": null,
+      "dark": "var(--background-primary)"
+    },
+    "--blockquote-bg": { "light": null, "dark": "#0a150c" },
+    "--blockquote-border-color": { "light": null, "dark": "#214528" },
+    "--blockquote-radius": { "light": null, "dark": "8px" },
+    "--blockquote-text": { "light": null, "dark": "inherit" },
+    "--card-bg": { "light": null, "dark": "#070d08" },
+    "--card-border-color": { "light": null, "dark": "#48745084" },
+    "--card-shadow": {
+      "light": null,
+      "dark": "0 3px 8px rgba(97, 97, 97, 0.15)"
+    },
+    "--caret-color": { "light": null, "dark": "var(--text-color)" },
+    "--citation-bg": { "light": null, "dark": "var(--color-accent)" },
+    "--color-panel": { "light": null, "dark": "#0a150c" },
+    "--custom-color-accent-dark": { "light": null, "dark": "#2e6038" },
+    "--graph-bg": { "light": null, "dark": "#0a150c" },
+    "--graph-line-color": { "light": null, "dark": "var(--card-border-color)" },
+    "--icon-color": { "light": null, "dark": "var(--card-border-color)" },
+    "--tab-background-active": {
+      "light": null,
+      "dark": "rgba(255, 255, 255, 0.1)"
+    },
+    "--table-header-background": {
+      "light": null,
+      "dark": "var(--color-accent)"
+    },
+    "--text-color": { "light": null, "dark": "#f0f0f0" }
+  },
+  ".extended-dark-color-schemes-toggle.onyx": {
+    "--background-default": { "light": null, "dark": "#0f161a" },
+    "--background-modifier-border": {
+      "light": null,
+      "dark": "var(--card-border-color)"
+    },
+    "--background-primary": { "light": null, "dark": "#050a0c" },
+    "--background-primary-alt": {
+      "light": null,
+      "dark": "var(--background-primary)"
+    },
+    "--background-secondary": {
+      "light": null,
+      "dark": "var(--background-primary)"
+    },
+    "--background-secondary-alt": {
+      "light": null,
+      "dark": "var(--background-primary)"
+    },
+    "--blockquote-bg": { "light": null, "dark": "var(--background-default)" },
+    "--blockquote-border-color": { "light": null, "dark": "#263740" },
+    "--blockquote-radius": { "light": null, "dark": "8px" },
+    "--card-bg": { "light": null, "dark": "#050a0c" },
+    "--card-border-color": { "light": null, "dark": "#4d687684" },
+    "--caret-color": { "light": null, "dark": "var(--text-color)" },
+    "--citation-bg": { "light": null, "dark": "var(--color-accent)" },
+    "--color-panel": { "light": null, "dark": "#0f161a" },
+    "--custom-color-accent-dark": { "light": null, "dark": "#2f424c" },
+    "--graph-bg": { "light": null, "dark": "var(--background-default)" },
+    "--graph-line-color": { "light": null, "dark": "var(--card-border-color)" },
+    "--icon-color": { "light": null, "dark": "var(--card-border-color)" },
+    "--tab-background-active": {
+      "light": null,
+      "dark": "rgba(255, 255, 255, 0.1)"
+    },
+    "--table-header-background": {
+      "light": null,
+      "dark": "var(--color-accent)"
+    },
+    "--text-color": { "light": null, "dark": "#f0f0f0" }
+  }
+}

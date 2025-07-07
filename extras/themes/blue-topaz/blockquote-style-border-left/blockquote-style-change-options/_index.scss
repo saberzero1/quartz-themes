@@ -1,7 +1,0 @@
-body.blockquote-style-border-left
-  :is(.markdown-preview-view, .markdown-rendered)
-  blockquote {
-  border-left: 3px solid var(--theme-color-translucent-04);
-  background-color: transparent;
-  border-radius: 0;
-}

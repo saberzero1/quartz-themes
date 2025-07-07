@@ -17,7 +17,7 @@
   --color-accent: light-dark(#3d74ff, #3d74ff);
   --color-accent-1: light-dark(hsl(222, 101%, 66.65%), hsl(220, 102%, 71.3%));
   --color-accent-2: light-dark(hsl(220, 102%, 71.3%), hsl(218, 105%, 79.98%));
-  --color-accent-hsl: light-dark(#3d74ff, #3d74ff);
+  --color-accent-hsl: light-dark(223, 100%, 62%, 223, 100%, 62%);
   --color-ash-100: light-dark(#f9f8f6, #131311);
   --color-ash-1000: light-dark(#bebaa7, #bebaa7);
   --color-ash-200: light-dark(#f2f1ed, #262521);
@@ -308,7 +308,7 @@ body {
   --color-accent: light-dark(#3d74ff, #3d74ff);
   --color-accent-1: light-dark(hsl(222, 101%, 66.65%), hsl(220, 102%, 71.3%));
   --color-accent-2: light-dark(hsl(220, 102%, 71.3%), hsl(218, 105%, 79.98%));
-  --color-accent-hsl: light-dark(#3d74ff, #3d74ff);
+  --color-accent-hsl: light-dark(223, 100%, 62%, 223, 100%, 62%);
   --color-ash-100: light-dark(#f9f8f6, #131311);
   --color-ash-1000: light-dark(#bebaa7, #bebaa7);
   --color-ash-200: light-dark(#f2f1ed, #262521);
@@ -975,10 +975,7 @@ body {
   --zoom-factor: 1;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(
-    light-dark(#f2f1ed, #262521),
-    light-dark(#fafafa, #242424)
-  );
+  background-color: #f2f1ed;
   caret-color: #2a66ff;
   color: #f1f3f5;
   contain: initial;
@@ -1397,10 +1394,7 @@ h6 {
 }
 
 .popover {
-  background-color: light-dark(
-    light-dark(#f2f1ed, #262521),
-    light-dark(#fafafa, #242424)
-  );
+  background-color: #f2f1ed;
   border: 1px solid transparent;
   border-radius: 6px;
   box-shadow:
@@ -1414,10 +1408,7 @@ h6 {
 }
 
 .prompt {
-  background-color: light-dark(
-    light-dark(#f2f1ed, #262521),
-    light-dark(#fafafa, #242424)
-  );
+  background-color: #f2f1ed;
   border: 0.5pt solid #adb5bd;
   border-radius: 12px;
   box-shadow:
@@ -1436,10 +1427,7 @@ h6 {
 }
 
 input.prompt-input {
-  background-color: light-dark(
-    light-dark(#f2f1ed, #262521),
-    light-dark(#fafafa, #242424)
-  );
+  background-color: #f2f1ed;
   border: none;
   border-bottom: 1px solid
     light-dark(light-dark(#e5e3dc, #4c4a43), light-dark(#f6f6f6, #262626));
@@ -1845,10 +1833,7 @@ svg.svg-icon {
 }
 
 .graph-controls {
-  background-color: light-dark(
-    light-dark(#f2f1ed, #262521),
-    light-dark(#fafafa, #242424)
-  );
+  background-color: #f2f1ed;
   border-radius: 6px;
   inset-inline-end: 12px;
   overflow: auto;
@@ -2166,25 +2151,16 @@ svg.svg-icon {
 }
 
 .workspace-tabs .workspace-leaf {
-  background-color: light-dark(
-    light-dark(#f2f1ed, #262521),
-    light-dark(#fafafa, #242424)
-  );
+  background-color: #f2f1ed;
   height: 100%;
 }
 
 .workspace-split.mod-root {
-  background-color: light-dark(
-    light-dark(#f2f1ed, #262521),
-    light-dark(#fafafa, #242424)
-  );
+  background-color: #f2f1ed;
 }
 
 .workspace-split.mod-root .view-content {
-  background-color: light-dark(
-    light-dark(#f2f1ed, #262521),
-    light-dark(#fafafa, #242424)
-  );
+  background-color: #f2f1ed;
 }
 
 .workspace-leaf-resize-handle {

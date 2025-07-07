@@ -4313,7 +4313,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h1 {
   --font-weight: 00;
-  color: light-dark(light-dark(#686868, #dddddd), light-dark(#686868, #dddddd));
+  color: #686868;
   font-family: "Peace Sans";
   font-size: 1.802em;
   font-style: normal;
@@ -4327,7 +4327,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h2 {
   --font-weight: 00;
-  color: light-dark(light-dark(#686868, #dddddd), light-dark(#686868, #dddddd));
+  color: #686868;
   font-family: "Peace Sans";
   font-size: 1.602em;
   font-style: normal;
@@ -4341,7 +4341,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h3 {
   --font-weight: 000;
-  color: light-dark(light-dark(#686868, #dddddd), light-dark(#686868, #dddddd));
+  color: #686868;
   font-family: "Peace Sans";
   font-size: 1.424em;
   font-style: normal;
@@ -4355,7 +4355,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h4 {
   --font-weight: 00;
-  color: light-dark(light-dark(#686868, #dddddd), light-dark(#686868, #dddddd));
+  color: #686868;
   font-family: "Peace Sans";
   font-size: 1.266em;
   font-style: normal;
@@ -4368,7 +4368,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h5 {
   --font-weight: 00;
-  color: light-dark(light-dark(#686868, #dddddd), light-dark(#686868, #dddddd));
+  color: #686868;
   font-family: "Peace Sans";
   font-size: 1.125em;
   font-style: normal;
@@ -4381,7 +4381,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 
 .inline-title h6 {
   --font-weight: 00;
-  color: light-dark(light-dark(#686868, #dddddd), light-dark(#686868, #dddddd));
+  color: #686868;
   font-family: "Peace Sans";
   font-size: 1em;
   font-style: normal;
@@ -7749,10 +7749,7 @@ button.mod-destructive {
 }
 
 .card {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid transparent;
   border-radius: 4px;
   display: flex;
@@ -10195,10 +10192,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   cursor: default;
   text-align: center;
 }
@@ -11377,27 +11371,18 @@ kbd {
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .findbarOpen .pdf-viewer-container {
@@ -13753,7 +13738,7 @@ input.metadata-property-key-input:focus {
 h1 {
   --font-weight: 00;
   --gradient-header: #dddddd, #cbcbcb, #bec4ff;
-  color: light-dark(light-dark(#686868, #dddddd), light-dark(#686868, #dddddd));
+  color: #686868;
   font-family: "Peace Sans";
   font-size: 1.802em;
   font-style: normal;
@@ -13768,7 +13753,7 @@ h1 {
 h2 {
   --font-weight: 00;
   --gradient-header: #dddddd, #cbcbcb, #9ac0ff;
-  color: light-dark(light-dark(#686868, #dddddd), light-dark(#686868, #dddddd));
+  color: #686868;
   font-family: "Peace Sans";
   font-size: 1.602em;
   font-style: normal;
@@ -13783,7 +13768,7 @@ h2 {
 h3 {
   --font-weight: 000;
   --gradient-header: #dddddd, #cbcbcb, #b999e8;
-  color: light-dark(light-dark(#686868, #dddddd), light-dark(#686868, #dddddd));
+  color: #686868;
   font-family: "Peace Sans";
   font-size: 1.424em;
   font-style: normal;
@@ -13798,7 +13783,7 @@ h3 {
 h4 {
   --font-weight: 00;
   --gradient-header: #dddddd, #cbcbcb, #f088ca;
-  color: light-dark(light-dark(#686868, #dddddd), light-dark(#686868, #dddddd));
+  color: #686868;
   font-family: "Peace Sans";
   font-size: 1.266em;
   font-style: normal;
@@ -13813,7 +13798,7 @@ h4 {
 h5 {
   --font-weight: 00;
   --gradient-header: #dddddd, #cbcbcb, #8e91eb;
-  color: light-dark(light-dark(#686868, #dddddd), light-dark(#686868, #dddddd));
+  color: #686868;
   font-family: "Peace Sans";
   font-size: 1.125em;
   font-style: normal;
@@ -13828,7 +13813,7 @@ h5 {
 h6 {
   --font-weight: 00;
   --gradient-header: #dddddd, #cbcbcb, #e990eb;
-  color: light-dark(light-dark(#686868, #dddddd), light-dark(#686868, #dddddd));
+  color: #686868;
   font-family: "Peace Sans";
   font-size: 1em;
   font-style: normal;
@@ -13842,7 +13827,7 @@ h6 {
 
 .markdown-rendered h1 {
   --font-weight: 00;
-  color: light-dark(light-dark(#686868, #dddddd), light-dark(#686868, #dddddd));
+  color: #686868;
   font-family: "Peace Sans";
   font-size: 1.802em;
   font-style: normal;
@@ -13862,7 +13847,7 @@ h1 a {
 
 .markdown-rendered h2 {
   --font-weight: 00;
-  color: light-dark(light-dark(#686868, #dddddd), light-dark(#686868, #dddddd));
+  color: #686868;
   font-family: "Peace Sans";
   font-size: 1.602em;
   font-style: normal;
@@ -13882,7 +13867,7 @@ h2 a {
 
 .markdown-rendered h3 {
   --font-weight: 000;
-  color: light-dark(light-dark(#686868, #dddddd), light-dark(#686868, #dddddd));
+  color: #686868;
   font-family: "Peace Sans";
   font-size: 1.424em;
   font-style: normal;
@@ -13902,7 +13887,7 @@ h3 a {
 
 .markdown-rendered h4 {
   --font-weight: 00;
-  color: light-dark(light-dark(#686868, #dddddd), light-dark(#686868, #dddddd));
+  color: #686868;
   font-family: "Peace Sans";
   font-size: 1.266em;
   font-style: normal;
@@ -13922,7 +13907,7 @@ h4 a {
 
 .markdown-rendered h5 {
   --font-weight: 00;
-  color: light-dark(light-dark(#686868, #dddddd), light-dark(#686868, #dddddd));
+  color: #686868;
   font-family: "Peace Sans";
   font-size: 1.125em;
   font-style: normal;
@@ -13942,7 +13927,7 @@ h5 a {
 
 .markdown-rendered h6 {
   --font-weight: 00;
-  color: light-dark(light-dark(#686868, #dddddd), light-dark(#686868, #dddddd));
+  color: #686868;
   font-family: "Peace Sans";
   font-size: 1em;
   font-style: normal;
@@ -13983,7 +13968,7 @@ h6 a {
 
 .HyperMD-header-1 {
   --font-weight: 00;
-  color: light-dark(light-dark(#686868, #dddddd), light-dark(#686868, #dddddd));
+  color: #686868;
   font-family: "Peace Sans";
   font-size: 1.802em;
   font-style: normal;
@@ -13995,7 +13980,7 @@ h6 a {
 
 .HyperMD-list-line .cm-header-1 {
   --font-weight: 00;
-  color: light-dark(light-dark(#686868, #dddddd), light-dark(#686868, #dddddd));
+  color: #686868;
   font-family: "Peace Sans";
   font-size: 1.802em;
   font-style: normal;
@@ -14031,7 +14016,7 @@ h6 a {
 
 .HyperMD-header-2 {
   --font-weight: 00;
-  color: light-dark(light-dark(#686868, #dddddd), light-dark(#686868, #dddddd));
+  color: #686868;
   font-family: "Peace Sans";
   font-size: 1.602em;
   font-style: normal;
@@ -14043,7 +14028,7 @@ h6 a {
 
 .HyperMD-list-line .cm-header-2 {
   --font-weight: 00;
-  color: light-dark(light-dark(#686868, #dddddd), light-dark(#686868, #dddddd));
+  color: #686868;
   font-family: "Peace Sans";
   font-size: 1.602em;
   font-style: normal;
@@ -14079,7 +14064,7 @@ h6 a {
 
 .HyperMD-header-3 {
   --font-weight: 000;
-  color: light-dark(light-dark(#686868, #dddddd), light-dark(#686868, #dddddd));
+  color: #686868;
   font-family: "Peace Sans";
   font-size: 1.424em;
   font-style: normal;
@@ -14091,7 +14076,7 @@ h6 a {
 
 .HyperMD-list-line .cm-header-3 {
   --font-weight: 000;
-  color: light-dark(light-dark(#686868, #dddddd), light-dark(#686868, #dddddd));
+  color: #686868;
   font-family: "Peace Sans";
   font-size: 1.424em;
   font-style: normal;
@@ -14127,7 +14112,7 @@ h6 a {
 
 .HyperMD-header-4 {
   --font-weight: 00;
-  color: light-dark(light-dark(#686868, #dddddd), light-dark(#686868, #dddddd));
+  color: #686868;
   font-family: "Peace Sans";
   font-size: 1.266em;
   font-style: normal;
@@ -14138,7 +14123,7 @@ h6 a {
 
 .HyperMD-list-line .cm-header-4 {
   --font-weight: 00;
-  color: light-dark(light-dark(#686868, #dddddd), light-dark(#686868, #dddddd));
+  color: #686868;
   font-family: "Peace Sans";
   font-size: 1.266em;
   font-style: normal;
@@ -14173,7 +14158,7 @@ h6 a {
 
 .HyperMD-header-5 {
   --font-weight: 00;
-  color: light-dark(light-dark(#686868, #dddddd), light-dark(#686868, #dddddd));
+  color: #686868;
   font-family: "Peace Sans";
   font-size: 1.125em;
   font-style: normal;
@@ -14184,7 +14169,7 @@ h6 a {
 
 .HyperMD-list-line .cm-header-5 {
   --font-weight: 00;
-  color: light-dark(light-dark(#686868, #dddddd), light-dark(#686868, #dddddd));
+  color: #686868;
   font-family: "Peace Sans";
   font-size: 1.125em;
   font-style: normal;
@@ -14219,7 +14204,7 @@ h6 a {
 
 .HyperMD-header-6 {
   --font-weight: 00;
-  color: light-dark(light-dark(#686868, #dddddd), light-dark(#686868, #dddddd));
+  color: #686868;
   font-family: "Peace Sans";
   font-size: 1em;
   font-style: normal;
@@ -14231,7 +14216,7 @@ h6 a {
 
 .HyperMD-list-line .cm-header-6 {
   --font-weight: 00;
-  color: light-dark(light-dark(#686868, #dddddd), light-dark(#686868, #dddddd));
+  color: #686868;
   font-family: "Peace Sans";
   font-size: 1em;
   font-style: normal;
@@ -16319,7 +16304,7 @@ em {
 }
 
 .bases-header .title {
-  color: light-dark(light-dark(#686868, #dddddd), light-dark(#686868, #dddddd));
+  color: #686868;
   font-size: 1.602em;
 }
 

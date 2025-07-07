@@ -95,10 +95,7 @@
   --theme-color-contentItemBg: light-dark(#ffffff80, #00000033);
   --theme-color-contentItemBgActive: light-dark(#82807d, #82807d);
   --theme-color-contentItemBgHover: light-dark(#ffffff40, #0000001a);
-  --theme-color-controlActive: light-dark(
-    light-dark(#272725, #cdcccb),
-    light-dark(#272725, #cdcccb)
-  );
+  --theme-color-controlActive: light-dark(#272725, #cdcccb);
   --theme-color-controlBg: light-dark(#f9f9f8, #62605e);
   --theme-color-controlBgHover: light-dark(#82807d, #82807d);
   --theme-color-controlBgLowWeight: light-dark(
@@ -981,10 +978,7 @@ body {
   --theme-color-contentItemBgActive: light-dark(#82807d, #82807d);
   --theme-color-contentItemBgHover: light-dark(#ffffff40, #0000001a);
   --theme-color-control: light-dark(#272725, #cdcccb);
-  --theme-color-controlActive: light-dark(
-    light-dark(#272725, #cdcccb),
-    light-dark(#272725, #cdcccb)
-  );
+  --theme-color-controlActive: light-dark(#272725, #cdcccb);
   --theme-color-controlBg: light-dark(#f9f9f8, #62605e);
   --theme-color-controlBgHover: light-dark(#82807d, #82807d);
   --theme-color-controlBgLowWeight: light-dark(

@@ -1,7 +1,0 @@
-body .workspace-split.mod-vertical.mod-root .view-header {
-  opacity: 0;
-  transition: opacity 0.15s;
-}
-body .workspace-split.mod-vertical.mod-root .view-header:focus-within {
-  opacity: 1;
-}

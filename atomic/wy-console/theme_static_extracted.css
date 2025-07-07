@@ -970,12 +970,9 @@ body {
   --zoom-factor: 1;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(
-    light-dark(#d7ddd9, #0b1510),
-    light-dark(#d7ddd9, #0b1510)
-  );
+  background-color: #d7ddd9;
   caret-color: #99e5b5;
-  color: light-dark(light-dark(#20542c, #99e5b5), light-dark(#20542c, #99e5b5));
+  color: #20542c;
   contain: initial;
   font-family: "DotGothic16", "ModeSeven Regular";
   font-size: 16px;
@@ -1135,7 +1132,7 @@ h6 {
 .markdown-rendered button.copy-code-button {
   background-color: transparent;
   box-shadow: none;
-  color: light-dark(light-dark(#20542c, #99e5b5), light-dark(#20542c, #99e5b5));
+  color: #20542c;
   font-family: "DotGothic16", "ModeSeven Regular";
   font-size: 12.8px;
   height: auto;
@@ -1147,10 +1144,7 @@ h6 {
 }
 
 .markdown-rendered button.copy-code-button:hover {
-  background-color: light-dark(
-    light-dark(#86c66c, #163f26),
-    light-dark(#86c66c, #163f26)
-  );
+  background-color: #86c66c;
 }
 
 .callout {
@@ -1367,10 +1361,7 @@ h6 {
 }
 
 .popover {
-  background-color: light-dark(
-    light-dark(#d7ddd9, #0b1510),
-    light-dark(#d7ddd9, #0b1510)
-  );
+  background-color: #d7ddd9;
   border: 1px solid
     light-dark(light-dark(#c9d3cb, #020704), light-dark(#c9d3cb, #020704));
   border-radius: 8px;
@@ -1385,10 +1376,7 @@ h6 {
 }
 
 .prompt {
-  background-color: light-dark(
-    light-dark(#d7ddd9, #0b1510),
-    light-dark(#d7ddd9, #0b1510)
-  );
+  background-color: #d7ddd9;
   border: 0.5pt solid #555555;
   border-radius: 12px;
   box-shadow:
@@ -1407,10 +1395,7 @@ h6 {
 }
 
 input.prompt-input {
-  background-color: light-dark(
-    light-dark(#d7ddd9, #0b1510),
-    light-dark(#d7ddd9, #0b1510)
-  );
+  background-color: #d7ddd9;
   border: none;
   border-bottom: 1px solid
     light-dark(light-dark(#d7ddd9, #0b1510), light-dark(#d7ddd9, #0b1510));
@@ -1423,10 +1408,7 @@ input.prompt-input {
 }
 
 .suggestion-item.is-selected {
-  background-color: light-dark(
-    light-dark(#86c66c, #163f26),
-    light-dark(#86c66c, #163f26)
-  );
+  background-color: #86c66c;
 }
 
 .suggestion-highlight {
@@ -1435,7 +1417,7 @@ input.prompt-input {
 
 .markdown-rendered mark {
   background-color: #ffd00066;
-  color: light-dark(light-dark(#20542c, #99e5b5), light-dark(#20542c, #99e5b5));
+  color: #20542c;
 }
 
 a.tag {
@@ -1460,7 +1442,7 @@ input[type="search"] {
   border: 1px solid
     light-dark(light-dark(#c9d3cb, #020704), light-dark(#c9d3cb, #020704));
   border-radius: 5px;
-  color: light-dark(light-dark(#20542c, #99e5b5), light-dark(#20542c, #99e5b5));
+  color: #20542c;
   font-family: inherit;
   font-size: 14.992px;
   height: 40px;
@@ -1469,10 +1451,7 @@ input[type="search"] {
 }
 
 .nav-files-container {
-  background-color: light-dark(
-    light-dark(#c9d3cb, #020704),
-    light-dark(#c9d3cb, #020704)
-  );
+  background-color: #c9d3cb;
   flex-grow: 1;
   overflow-x: hidden;
   overflow-y: auto;
@@ -1483,10 +1462,7 @@ input[type="search"] {
 
 .nav-file-tag {
   align-self: center;
-  background-color: light-dark(
-    light-dark(#86c66c, #163f26),
-    light-dark(#86c66c, #163f26)
-  );
+  background-color: #86c66c;
   border-radius: 4px;
   font-size: 9px;
   font-weight: 600;
@@ -1531,11 +1507,8 @@ input[type="search"] {
 }
 
 .nav-file-title.is-active {
-  background-color: light-dark(
-    light-dark(#86c66c, #163f26),
-    light-dark(#86c66c, #163f26)
-  );
-  color: light-dark(light-dark(#20542c, #99e5b5), light-dark(#20542c, #99e5b5));
+  background-color: #86c66c;
+  color: #20542c;
   font-weight: bold;
 }
 
@@ -1604,11 +1577,8 @@ input[type="search"] {
 }
 
 .tree-item-self.is-being-dragged {
-  background-color: light-dark(
-    light-dark(#437a41, #3fff8c),
-    light-dark(#437a41, #3fff8c)
-  );
-  color: light-dark(light-dark(#c9d3cb, #020704), light-dark(#c9d3cb, #020704));
+  background-color: #437a41;
+  color: #c9d3cb;
 }
 
 .tree-item-self .tree-item-icon {
@@ -1642,7 +1612,7 @@ input[type="search"] {
 
 .tree-item-flair {
   border-radius: 4px;
-  color: light-dark(light-dark(#20542c, #99e5b5), light-dark(#20542c, #99e5b5));
+  color: #20542c;
   font-size: 12.8px;
   line-height: 1;
 }
@@ -1659,7 +1629,7 @@ input[type="search"] {
 }
 
 .tree-item-inner-subtext {
-  color: light-dark(light-dark(#20542c, #99e5b5), light-dark(#20542c, #99e5b5));
+  color: #20542c;
   font-size: 85%;
 }
 
@@ -1689,7 +1659,7 @@ svg.svg-icon {
 }
 
 .clickable-icon.mod-warning {
-  color: light-dark(light-dark(#0457e5, #ffd303), light-dark(#0457e5, #ffd303));
+  color: #0457e5;
 }
 
 .clickable-icon.mod-filled svg {
@@ -1702,7 +1672,7 @@ svg.svg-icon {
 
 .clickable-icon[aria-disabled="true"] {
   background-color: unset;
-  color: light-dark(light-dark(#20542c, #99e5b5), light-dark(#20542c, #99e5b5));
+  color: #20542c;
   opacity: 0.4;
 }
 
@@ -1715,10 +1685,7 @@ svg.svg-icon {
 }
 
 .clickable-icon.is-active {
-  background-color: light-dark(
-    light-dark(#86c66c, #163f26),
-    light-dark(#86c66c, #163f26)
-  );
+  background-color: #86c66c;
   color: #99e5b5;
   opacity: 0.65;
 }
@@ -1739,7 +1706,7 @@ svg.svg-icon {
 }
 
 .view-header-title-parent .view-header-breadcrumb-separator {
-  color: light-dark(light-dark(#20542c, #99e5b5), light-dark(#20542c, #99e5b5));
+  color: #20542c;
   padding: 2px 1px;
 }
 
@@ -1791,31 +1758,31 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-1 {
-  color: light-dark(light-dark(#20542c, #99e5b5), light-dark(#20542c, #99e5b5));
+  color: #20542c;
 }
 
 .graph-view.color-fill-2 {
-  color: light-dark(light-dark(#20542c, #99e5b5), light-dark(#20542c, #99e5b5));
+  color: #20542c;
 }
 
 .graph-view.color-fill-3 {
-  color: light-dark(light-dark(#20542c, #99e5b5), light-dark(#20542c, #99e5b5));
+  color: #20542c;
 }
 
 .graph-view.color-fill-4 {
-  color: light-dark(light-dark(#20542c, #99e5b5), light-dark(#20542c, #99e5b5));
+  color: #20542c;
 }
 
 .graph-view.color-fill-5 {
-  color: light-dark(light-dark(#20542c, #99e5b5), light-dark(#20542c, #99e5b5));
+  color: #20542c;
 }
 
 .graph-view.color-fill-6 {
-  color: light-dark(light-dark(#20542c, #99e5b5), light-dark(#20542c, #99e5b5));
+  color: #20542c;
 }
 
 .graph-view.color-arrow {
-  color: light-dark(light-dark(#20542c, #99e5b5), light-dark(#20542c, #99e5b5));
+  color: #20542c;
   opacity: 0.5;
 }
 
@@ -1832,18 +1799,15 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-highlight {
-  color: light-dark(light-dark(#437a41, #3fff8c), light-dark(#437a41, #3fff8c));
+  color: #437a41;
 }
 
 .graph-view.color-line-highlight {
-  color: light-dark(light-dark(#437a41, #3fff8c), light-dark(#437a41, #3fff8c));
+  color: #437a41;
 }
 
 .graph-controls {
-  background-color: light-dark(
-    light-dark(#d7ddd9, #0b1510),
-    light-dark(#d7ddd9, #0b1510)
-  );
+  background-color: #d7ddd9;
   border-radius: 8px;
   inset-inline-end: 12px;
   overflow: auto;
@@ -2078,25 +2042,16 @@ svg.svg-icon {
 }
 
 .workspace-tabs .workspace-leaf {
-  background-color: light-dark(
-    light-dark(#d7ddd9, #0b1510),
-    light-dark(#d7ddd9, #0b1510)
-  );
+  background-color: #d7ddd9;
   height: 100%;
 }
 
 .workspace-split.mod-root {
-  background-color: light-dark(
-    light-dark(#d7ddd9, #0b1510),
-    light-dark(#d7ddd9, #0b1510)
-  );
+  background-color: #d7ddd9;
 }
 
 .workspace-split.mod-root .view-content {
-  background-color: light-dark(
-    light-dark(#d7ddd9, #0b1510),
-    light-dark(#d7ddd9, #0b1510)
-  );
+  background-color: #d7ddd9;
 }
 
 .workspace-leaf-resize-handle {

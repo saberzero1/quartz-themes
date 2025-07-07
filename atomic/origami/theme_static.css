@@ -5653,7 +5653,7 @@ body:not(.is-phone) .community-item.is-selected .community-item-downloads {
 body:not(.is-phone)
   .community-item.is-selected:hover
   .community-item-downloads {
-  color: #c5c5c5;
+  color: #ffffff;
   opacity: 0.8;
 }
 
@@ -7747,10 +7747,7 @@ button.mod-destructive {
 }
 
 .card {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid transparent;
   border-radius: 4px;
   display: flex;
@@ -10163,10 +10160,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   cursor: default;
   text-align: center;
 }
@@ -11357,27 +11351,18 @@ kbd {
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .findbarOpen .pdf-viewer-container {
@@ -25448,7 +25433,7 @@ body:not(.is-phone)
 
 .workspace-ribbon.mod-left .sidebar-toggle-button:hover .clickable-icon {
   border: 0;
-  color: light-dark(light-dark(#ffffff, #1e1e1e), light-dark(#ffffff, #1e1e1e));
+  color: #ffffff;
 }
 
 .sidebar-toggle-button .clickable-icon:hover {
@@ -25667,6 +25652,12 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active:hover {
 
 body:not(.is-phone) .vertical-tab-nav-item:hover {
   background: #000000;
+}
+
+body:not(.is-phone)
+  .community-item.is-selected:hover
+  .community-item-downloads {
+  color: #c5c5c5;
 }
 
 .modal:not(.is-phone) {

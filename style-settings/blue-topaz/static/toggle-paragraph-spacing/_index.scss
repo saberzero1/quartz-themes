@@ -1,5 +1,0 @@
-body :is(.markdown-preview-view, .markdown-rendered) p > br {
-  content: " ";
-  margin-top: calc((var(--paragraph-spacing) - 1) * 1em);
-  display: block;
-}

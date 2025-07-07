@@ -833,12 +833,9 @@ body {
   --zoom-factor: 1;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(
-    light-dark(#fdf6e3, #fdf6e3),
-    light-dark(#002b36, #002b36)
-  );
+  background-color: #fdf6e3;
   caret-color: #e84e1a;
-  color: light-dark(light-dark(#657b83, #657b83), light-dark(#839496, #839496));
+  color: #657b83;
   contain: initial;
   font-family:
     "??",
@@ -895,7 +892,7 @@ h6 a {
 h1 {
   --font-weight: 700;
   color: light-dark(
-    light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd)),
+    light-dark(#00bfbc, #53dfdd),
     light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd))
   );
   font-family: inherit;
@@ -912,7 +909,7 @@ h1 {
 h2 {
   --font-weight: 600;
   color: light-dark(
-    light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd)),
+    light-dark(#00bfbc, #53dfdd),
     light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd))
   );
   font-family: inherit;
@@ -929,7 +926,7 @@ h2 {
 h3 {
   --font-weight: 600;
   color: light-dark(
-    light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd)),
+    light-dark(#00bfbc, #53dfdd),
     light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd))
   );
   font-family: inherit;
@@ -946,7 +943,7 @@ h3 {
 h4 {
   --font-weight: 600;
   color: light-dark(
-    light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd)),
+    light-dark(#00bfbc, #53dfdd),
     light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd))
   );
   font-family: inherit;
@@ -963,7 +960,7 @@ h4 {
 h5 {
   --font-weight: 600;
   color: light-dark(
-    light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd)),
+    light-dark(#00bfbc, #53dfdd),
     light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd))
   );
   font-family: inherit;
@@ -980,7 +977,7 @@ h5 {
 h6 {
   --font-weight: 600;
   color: light-dark(
-    light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd)),
+    light-dark(#00bfbc, #53dfdd),
     light-dark(light-dark(#00bfbc, #53dfdd), light-dark(#00bfbc, #53dfdd))
   );
   font-family: inherit;
@@ -1011,7 +1008,7 @@ h6 {
   border: 0px solid transparent;
   border-radius: 4px;
   color: light-dark(
-    light-dark(light-dark(#657b83, #657b83), light-dark(#839496, #839496)),
+    light-dark(#657b83, #657b83),
     light-dark(light-dark(#657b83, #657b83), light-dark(#839496, #839496))
   );
   font-family:
@@ -1031,7 +1028,7 @@ h6 {
 .markdown-rendered button.copy-code-button {
   background-color: transparent;
   box-shadow: none;
-  color: light-dark(light-dark(#839496, #839496), light-dark(#657b83, #657b83));
+  color: #839496;
   font-family:
     "??",
     "??",
@@ -1274,10 +1271,7 @@ h6 {
 }
 
 .popover {
-  background-color: light-dark(
-    light-dark(#fdf6e3, #fdf6e3),
-    light-dark(#002b36, #002b36)
-  );
+  background-color: #fdf6e3;
   border: 1px solid transparent;
   border-radius: 8px;
   box-shadow:
@@ -1291,10 +1285,7 @@ h6 {
 }
 
 .prompt {
-  background-color: light-dark(
-    light-dark(#fdf6e3, #fdf6e3),
-    light-dark(#002b36, #002b36)
-  );
+  background-color: #fdf6e3;
   border: 0.5pt solid #839496;
   border-radius: 12px;
   box-shadow:
@@ -1313,10 +1304,7 @@ h6 {
 }
 
 input.prompt-input {
-  background-color: light-dark(
-    light-dark(#fdf6e3, #fdf6e3),
-    light-dark(#002b36, #002b36)
-  );
+  background-color: #fdf6e3;
   border: none;
   border-bottom: 1px solid
     light-dark(
@@ -1351,7 +1339,7 @@ input.prompt-input {
     )
   );
   color: light-dark(
-    light-dark(light-dark(#fdf6e3, #fdf6e3), light-dark(#002b36, #002b36)),
+    light-dark(#fdf6e3, #fdf6e3),
     light-dark(light-dark(#fdf6e3, #fdf6e3), light-dark(#002b36, #002b36))
   );
 }
@@ -1382,7 +1370,7 @@ input[type="search"] {
   background: transparent;
   border: 1px solid transparent;
   border-radius: 5px;
-  color: light-dark(light-dark(#657b83, #657b83), light-dark(#839496, #839496));
+  color: #657b83;
   font-family: inherit;
   font-size: 14.992px;
   height: 40px;
@@ -1527,7 +1515,7 @@ input[type="search"] {
     )
   );
   color: light-dark(
-    light-dark(light-dark(#fdf6e3, #fdf6e3), light-dark(#002b36, #002b36)),
+    light-dark(#fdf6e3, #fdf6e3),
     light-dark(light-dark(#fdf6e3, #fdf6e3), light-dark(#002b36, #002b36))
   );
 }
@@ -1563,7 +1551,7 @@ input[type="search"] {
 
 .tree-item-flair {
   border-radius: 4px;
-  color: light-dark(light-dark(#93a1a1, #93a1a1), light-dark(#586e75, #586e75));
+  color: #93a1a1;
   font-size: 12.8px;
   line-height: 1;
 }
@@ -1580,7 +1568,7 @@ input[type="search"] {
 }
 
 .tree-item-inner-subtext {
-  color: light-dark(light-dark(#93a1a1, #93a1a1), light-dark(#586e75, #586e75));
+  color: #93a1a1;
   font-size: 85%;
 }
 
@@ -1595,7 +1583,7 @@ kbd {
   background-color: #073642;
   border-radius: 4px;
   color: light-dark(
-    light-dark(light-dark(#657b83, #657b83), light-dark(#839496, #839496)),
+    light-dark(#657b83, #657b83),
     light-dark(light-dark(#657b83, #657b83), light-dark(#839496, #839496))
   );
   font-family:
@@ -1626,7 +1614,7 @@ svg.svg-icon {
 
 .clickable-icon[aria-disabled="true"] {
   background-color: unset;
-  color: light-dark(light-dark(#839496, #839496), light-dark(#657b83, #657b83));
+  color: #839496;
   opacity: 0.4;
 }
 
@@ -1660,7 +1648,7 @@ svg.svg-icon {
 }
 
 .view-header-title-parent .view-header-breadcrumb-separator {
-  color: light-dark(light-dark(#93a1a1, #93a1a1), light-dark(#586e75, #586e75));
+  color: #93a1a1;
   padding: 2px 1px;
 }
 
@@ -1712,31 +1700,31 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-1 {
-  color: light-dark(light-dark(#839496, #839496), light-dark(#657b83, #657b83));
+  color: #839496;
 }
 
 .graph-view.color-fill-2 {
-  color: light-dark(light-dark(#839496, #839496), light-dark(#657b83, #657b83));
+  color: #839496;
 }
 
 .graph-view.color-fill-3 {
-  color: light-dark(light-dark(#839496, #839496), light-dark(#657b83, #657b83));
+  color: #839496;
 }
 
 .graph-view.color-fill-4 {
-  color: light-dark(light-dark(#839496, #839496), light-dark(#657b83, #657b83));
+  color: #839496;
 }
 
 .graph-view.color-fill-5 {
-  color: light-dark(light-dark(#839496, #839496), light-dark(#657b83, #657b83));
+  color: #839496;
 }
 
 .graph-view.color-fill-6 {
-  color: light-dark(light-dark(#839496, #839496), light-dark(#657b83, #657b83));
+  color: #839496;
 }
 
 .graph-view.color-arrow {
-  color: light-dark(light-dark(#657b83, #657b83), light-dark(#839496, #839496));
+  color: #657b83;
   opacity: 0.5;
 }
 
@@ -1779,10 +1767,7 @@ svg.svg-icon {
 }
 
 .graph-controls {
-  background-color: light-dark(
-    light-dark(#fdf6e3, #fdf6e3),
-    light-dark(#002b36, #002b36)
-  );
+  background-color: #fdf6e3;
   border-radius: 8px;
   inset-inline-end: 12px;
   overflow: auto;
@@ -2045,24 +2030,18 @@ svg.svg-icon {
 
 .workspace-tabs .workspace-leaf {
   background-color: light-dark(
-    light-dark(light-dark(#fdf6e3, #fdf6e3), light-dark(#002b36, #002b36)),
+    light-dark(#fdf6e3, #fdf6e3),
     light-dark(light-dark(#fdf6e3, #fdf6e3), light-dark(#002b36, #002b36))
   );
   height: 100%;
 }
 
 .workspace-split.mod-root {
-  background-color: light-dark(
-    light-dark(#fdf6e3, #fdf6e3),
-    light-dark(#002b36, #002b36)
-  );
+  background-color: #fdf6e3;
 }
 
 .workspace-split.mod-root .view-content {
-  background-color: light-dark(
-    light-dark(#fdf6e3, #fdf6e3),
-    light-dark(#002b36, #002b36)
-  );
+  background-color: #fdf6e3;
 }
 
 .workspace-leaf-resize-handle {

@@ -1,0 +1,181 @@
+{
+  "body": {
+    "--background-modifier-border": {
+      "light": "var(--orange-darker)",
+      "dark": null
+    },
+    "--background-primary": { "light": "var(--off-white)", "dark": null },
+    "--background-secondary": { "light": "var(--white)", "dark": null },
+    "--background-tertiary": { "light": "var(--light-gray)", "dark": null },
+    "--interactive-accent": { "light": "var(--orange-light)", "dark": null },
+    "--interactive-hover": { "light": "var(--orange-medium)", "dark": null },
+    "--interactive-normal": { "light": "var(--orange-dark)", "dark": null },
+    "--text-faint": { "light": "var(--light-gray)", "dark": null },
+    "--text-muted": { "light": "var(--medium-gray)", "dark": null },
+    "--text-normal": { "light": "var(--true-black)", "dark": null },
+    "--canvas-color": { "light": null, "dark": "126, 126, 126" }
+  },
+  ".notice progress[value]::-webkit-progress-bar": {
+    "background-color": { "light": "#262626", "dark": null },
+    "box-shadow": { "light": "inset 0px 0px 0px 1px #363636", "dark": null }
+  },
+  ".dropdown": { "background-image": { "light": null, "dark": "url(\"data" } },
+  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation input": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation textarea": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed .popupWrapper > div": {
+    "background-color": {
+      "light": null,
+      "dark": "var(--background-secondary-alt)"
+    },
+    "filter": {
+      "light": null,
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4)) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
+    }
+  },
+  ".pdf-container.mod-themed .popupWrapper > div::after": {
+    "background-color": {
+      "light": null,
+      "dark": "var(--background-secondary-alt)"
+    }
+  },
+  ".pdf-container.mod-themed .popupContent:empty + .popupMeta": {
+    "background-color": {
+      "light": null,
+      "dark": "var(--background-secondary-alt)"
+    }
+  },
+  ".mermaid > svg": {
+    "filter": {
+      "light": null,
+      "dark": "invert(100%) hue-rotate(180deg) saturate(1.25)"
+    }
+  },
+  ".canvas-card-menu": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".canvas-card-menu .canvas-card-menu-button svg": {
+    "fill": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".is-mobile": {
+    "--background-modifier-cover": {
+      "light": null,
+      "dark": "rgba(0, 0, 0, 0.5)"
+    },
+    "--background-modifier-form-field": {
+      "light": null,
+      "dark": "var(--background-modifier-border)"
+    },
+    "--background-modifier-hover": {
+      "light": null,
+      "dark": "rgba(var(--mono-rgb-100), 0.15)"
+    },
+    "--background-modifier-message": {
+      "light": null,
+      "dark": "var(--background-secondary)"
+    },
+    "--color-base-00": { "light": null, "dark": "#000" },
+    "--color-base-10": { "light": null, "dark": "#111" },
+    "--color-base-20": { "light": null, "dark": "#1e1e1e" },
+    "--mobile-sidebar-background": {
+      "light": null,
+      "dark": "var(--background-secondary)"
+    },
+    "--search-result-background": {
+      "light": null,
+      "dark": "var(--background-secondary)"
+    },
+    "--settings-home-background": {
+      "light": null,
+      "dark": "var(--background-primary)"
+    },
+    "--tag-background": {
+      "light": null,
+      "dark": "hsla(var(--interactive-accent-hsl), 0.2)"
+    }
+  },
+  ".is-tablet": {
+    "--interactive-hover": {
+      "light": null,
+      "dark": "var(--background-modifier-border-hover)"
+    },
+    "--interactive-normal": {
+      "light": null,
+      "dark": "var(--background-modifier-border)"
+    },
+    "--modal-background": {
+      "light": null,
+      "dark": "var(--background-secondary)"
+    },
+    "--titlebar-background": {
+      "light": null,
+      "dark": "var(--background-primary)"
+    },
+    "--titlebar-background-focused": {
+      "light": null,
+      "dark": "var(--background-primary)"
+    }
+  },
+  ".is-tablet .community-item": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".is-tablet .vertical-tab-content": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".workspace-drawer-inner": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".is-mobile .prompt": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".is-mobile .prompt input.prompt-input": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".is-tablet .suggestion-container": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  "h1": {
+    "text-shadow": { "light": null, "dark": "0 0 5px var(--orange-light)" }
+  },
+  "h2": {
+    "text-shadow": { "light": null, "dark": "0 0 5px var(--orange-light)" }
+  },
+  "h3": {
+    "text-shadow": { "light": null, "dark": "0 0 5px var(--orange-light)" }
+  },
+  "h4": {
+    "text-shadow": { "light": null, "dark": "0 0 5px var(--orange-light)" }
+  },
+  "h5": {
+    "text-shadow": { "light": null, "dark": "0 0 5px var(--orange-light)" }
+  },
+  "h6": {
+    "text-shadow": { "light": null, "dark": "0 0 5px var(--orange-light)" }
+  },
+  ".tag": {
+    "box-shadow": { "light": null, "dark": "0 0 5px var(--orange-dark)" }
+  },
+  "button": {
+    "box-shadow": { "light": null, "dark": "0 0 5px var(--orange-dark)" }
+  },
+  ".workspace::after": {
+    "animation": { "light": null, "dark": "flicker 0.15s infinite" },
+    "background": {
+      "light": null,
+      "dark": "linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient( 90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06) )"
+    },
+    "background-size": { "light": null, "dark": "100% 2px, 3px 100%" },
+    "bottom": { "light": null, "dark": "0" },
+    "content": { "light": null, "dark": "\" \"" },
+    "display": { "light": null, "dark": "block" },
+    "left": { "light": null, "dark": "0" },
+    "pointer-events": { "light": null, "dark": "none" },
+    "position": { "light": null, "dark": "fixed" },
+    "right": { "light": null, "dark": "0" },
+    "top": { "light": null, "dark": "0" },
+    "z-index": { "light": null, "dark": "2" }
+  }
+}

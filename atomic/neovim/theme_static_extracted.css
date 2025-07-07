@@ -785,10 +785,7 @@ body {
   --zoom-factor: 1;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(
-    light-dark(#f6f6f6, #262626),
-    light-dark(#f6f6f6, #262626)
-  );
+  background-color: #f6f6f6;
   caret-color: #b1f6bf;
   color: #c4c6cd;
   contain: initial;
@@ -1205,10 +1202,7 @@ h6 {
 }
 
 .popover {
-  background-color: light-dark(
-    light-dark(#f6f6f6, #262626),
-    light-dark(#f6f6f6, #262626)
-  );
+  background-color: #f6f6f6;
   border: 1px solid
     light-dark(light-dark(#e0e0e0, #363636), light-dark(#e0e0e0, #363636));
   border-radius: 6px;
@@ -1223,10 +1217,7 @@ h6 {
 }
 
 .prompt {
-  background-color: light-dark(
-    light-dark(#f6f6f6, #262626),
-    light-dark(#f6f6f6, #262626)
-  );
+  background-color: #f6f6f6;
   border: 0.5pt solid #2c2e33;
   border-radius: 8px;
   box-shadow:
@@ -1245,10 +1236,7 @@ h6 {
 }
 
 input.prompt-input {
-  background-color: light-dark(
-    light-dark(#f6f6f6, #262626),
-    light-dark(#f6f6f6, #262626)
-  );
+  background-color: #f6f6f6;
   border: none;
   border-bottom: 1px solid
     light-dark(light-dark(#f6f6f6, #262626), light-dark(#f6f6f6, #262626));
@@ -1658,10 +1646,7 @@ svg.svg-icon {
 }
 
 .graph-controls {
-  background-color: light-dark(
-    light-dark(#f6f6f6, #262626),
-    light-dark(#f6f6f6, #262626)
-  );
+  background-color: #f6f6f6;
   border-radius: 6px;
   inset-inline-end: 12px;
   overflow: auto;
@@ -1825,25 +1810,16 @@ svg.svg-icon {
 }
 
 .workspace-tabs .workspace-leaf {
-  background-color: light-dark(
-    light-dark(#f6f6f6, #262626),
-    light-dark(#f6f6f6, #262626)
-  );
+  background-color: #f6f6f6;
   height: 100%;
 }
 
 .workspace-split.mod-root {
-  background-color: light-dark(
-    light-dark(#f6f6f6, #262626),
-    light-dark(#f6f6f6, #262626)
-  );
+  background-color: #f6f6f6;
 }
 
 .workspace-split.mod-root .view-content {
-  background-color: light-dark(
-    light-dark(#f6f6f6, #262626),
-    light-dark(#f6f6f6, #262626)
-  );
+  background-color: #f6f6f6;
 }
 
 .workspace-leaf-resize-handle {

@@ -2852,10 +2852,7 @@ iframe {
   }
   .titlebar {
     -webkit-app-region: drag;
-    background-color: light-dark(
-      light-dark(#fcfcfc, #212121),
-      light-dark(#e0e0e0, #363636)
-    );
+    background-color: #fcfcfc;
     border-bottom: 0px solid transparent;
     display: flex;
     left: 0;
@@ -3968,15 +3965,12 @@ body:not(.is-mobile) .app-container {
 
 @media (hover: hover) {
   .empty-state-action:hover {
-    color: light-dark(
-      light-dark(#58a6ff, #58a6ff),
-      light-dark(#58a6ff, #58a6ff)
-    );
+    color: #58a6ff;
   }
 }
 
 .empty-state-action.mobile-tap {
-  color: light-dark(light-dark(#58a6ff, #58a6ff), light-dark(#58a6ff, #58a6ff));
+  color: #58a6ff;
 }
 
 .feedback-banner-container {
@@ -4897,10 +4891,7 @@ body:not(.show-ribbon) .workspace-ribbon {
 
 .tooltip {
   animation: pop-down 200ms forwards ease-in-out;
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-radius: 4px;
   box-shadow: 0 2px 8px #0000004d;
   color: light-dark(#6e7681, #6e7681);
@@ -7906,10 +7897,7 @@ button.mod-destructive {
 }
 
 .card {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid light-dark(#21262d, #21262d);
   border-radius: 4px;
   display: flex;
@@ -9603,11 +9591,11 @@ select.mod-hidden {
 }
 
 .notice-cta:hover {
-  color: light-dark(light-dark(#58a6ff, #58a6ff), light-dark(#58a6ff, #58a6ff));
+  color: #58a6ff;
 }
 
 .notice-cta.mobile-tap {
-  color: light-dark(light-dark(#58a6ff, #58a6ff), light-dark(#58a6ff, #58a6ff));
+  color: #58a6ff;
 }
 
 .menu {
@@ -10326,10 +10314,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   cursor: default;
   text-align: center;
 }
@@ -10680,17 +10665,11 @@ body.styled-scrollbars ::-webkit-scrollbar-thumb {
 
 body.styled-scrollbars ::-webkit-scrollbar-thumb:active {
   -webkit-border-radius: 12px;
-  background-color: light-dark(
-    light-dark(#388bfd, #388bfd),
-    light-dark(#388bfd, #388bfd)
-  );
+  background-color: #388bfd;
 }
 
 body.styled-scrollbars ::-webkit-scrollbar-thumb:hover {
-  background-color: light-dark(
-    light-dark(#388bfd, #388bfd),
-    light-dark(#388bfd, #388bfd)
-  );
+  background-color: #388bfd;
 }
 
 body.styled-scrollbars ::-webkit-scrollbar-corner {
@@ -11498,27 +11477,18 @@ kbd {
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .findbarOpen .pdf-viewer-container {
@@ -13157,11 +13127,11 @@ iframe.external-embed {
 }
 
 .metadata-error-cta.mobile-tap {
-  color: light-dark(light-dark(#58a6ff, #58a6ff), light-dark(#58a6ff, #58a6ff));
+  color: #58a6ff;
 }
 
 .metadata-error-cta:hover {
-  color: light-dark(light-dark(#58a6ff, #58a6ff), light-dark(#58a6ff, #58a6ff));
+  color: #58a6ff;
 }
 
 .metadata-input-text {
@@ -17560,7 +17530,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .file-tree .mod-changed .tree-item-flair {
-  color: light-dark(light-dark(#58a6ff, #58a6ff), light-dark(#58a6ff, #58a6ff));
+  color: #58a6ff;
 }
 
 .file-tree .mod-new.is-selected {
@@ -18181,22 +18151,13 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 
 @media (hover: hover) {
   .publish-section-header-text:hover {
-    color: light-dark(
-      light-dark(#58a6ff, #58a6ff),
-      light-dark(#58a6ff, #58a6ff)
-    );
+    color: #58a6ff;
   }
   .publish-section-header-toggle-collapsed-button:hover {
-    color: light-dark(
-      light-dark(#58a6ff, #58a6ff),
-      light-dark(#58a6ff, #58a6ff)
-    );
+    color: #58a6ff;
   }
   .publish-section-header-action:hover {
-    color: light-dark(
-      light-dark(#58a6ff, #58a6ff),
-      light-dark(#58a6ff, #58a6ff)
-    );
+    color: #58a6ff;
   }
 }
 

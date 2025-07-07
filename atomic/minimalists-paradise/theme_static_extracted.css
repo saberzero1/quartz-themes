@@ -1423,10 +1423,7 @@ input[type="search"] {
 
 .nav-file-icon {
   align-items: center;
-  color: light-dark(
-    light-dark(#25252586, #4d4d4f84),
-    light-dark(#25252586, #4d4d4f84)
-  );
+  color: #25252586;
   display: inline-flex;
   margin-inline-end: 6px;
   opacity: 1;
@@ -1534,10 +1531,7 @@ input[type="search"] {
 
 .tree-item-self .tree-item-icon {
   align-items: center;
-  color: light-dark(
-    light-dark(#25252586, #4d4d4f84),
-    light-dark(#25252586, #4d4d4f84)
-  );
+  color: #25252586;
   display: flex;
   flex: 0 0 auto;
   justify-content: center;
@@ -1652,10 +1646,7 @@ svg.svg-icon {
   align-items: center;
   background-color: transparent;
   border-radius: 4px;
-  color: light-dark(
-    light-dark(#25252586, #4d4d4f84),
-    light-dark(#25252586, #4d4d4f84)
-  );
+  color: #25252586;
   cursor: pointer;
   display: flex;
   height: auto;
@@ -1950,10 +1941,7 @@ svg.svg-icon {
 }
 
 .workspace-tabs .workspace-leaf {
-  background-color: light-dark(
-    light-dark(#9096a4, #000000),
-    light-dark(#9096a4, #000000)
-  );
+  background-color: #9096a4;
   height: 100%;
 }
 

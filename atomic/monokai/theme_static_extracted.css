@@ -844,12 +844,9 @@ body {
   -webkit-font-smoothing: auto;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(
-    light-dark(#fdf9f3, #1e1f2b),
-    light-dark(#fdf9f3, #1e1f2b)
-  );
+  background-color: #fdf9f3;
   caret-color: #fad872;
-  color: light-dark(light-dark(#2c292d, #2c292d), light-dark(#ffffff, #ffffff));
+  color: #2c292d;
   contain: initial;
   font-family:
     "??",
@@ -905,7 +902,7 @@ h6 a {
 
 h1 {
   --font-weight: 700;
-  color: light-dark(light-dark(#b3d97e, #b3d97e), light-dark(#b3d97e, #b3d97e));
+  color: #b3d97e;
   font-family: inherit;
   font-size: 1.802em;
   font-style: normal;
@@ -919,7 +916,7 @@ h1 {
 
 h2 {
   --font-weight: 600;
-  color: light-dark(light-dark(#61afef, #61afef), light-dark(#61afef, #61afef));
+  color: #61afef;
   font-family: inherit;
   font-size: 1.602em;
   font-style: normal;
@@ -933,7 +930,7 @@ h2 {
 
 h3 {
   --font-weight: 600;
-  color: light-dark(light-dark(#f19d6d, #f19d6d), light-dark(#f19d6d, #f19d6d));
+  color: #f19d6d;
   font-family: inherit;
   font-size: 1.424em;
   font-style: normal;
@@ -947,7 +944,7 @@ h3 {
 
 h4 {
   --font-weight: 600;
-  color: light-dark(light-dark(#a8a0ee, #a8a0ee), light-dark(#a8a0ee, #a8a0ee));
+  color: #a8a0ee;
   font-family: inherit;
   font-size: 1.266em;
   font-style: normal;
@@ -961,7 +958,7 @@ h4 {
 
 h5 {
   --font-weight: 600;
-  color: light-dark(light-dark(#abb2bf, #abb2bf), light-dark(#abb2bf, #abb2bf));
+  color: #abb2bf;
   font-family: inherit;
   font-size: 1.125em;
   font-style: normal;
@@ -988,10 +985,7 @@ h6 {
 }
 
 .markdown-rendered pre {
-  background-color: light-dark(
-    light-dark(#2c292d, #2c292d),
-    light-dark(#2c292d, #2c292d)
-  );
+  background-color: #2c292d;
   border: 0px solid transparent;
   border-radius: 4px;
   min-height: 38px;
@@ -1003,13 +997,10 @@ h6 {
 
 .markdown-rendered code {
   -webkit-box-decoration-break: clone;
-  background-color: light-dark(
-    light-dark(#2c292d, #2c292d),
-    light-dark(#2c292d, #2c292d)
-  );
+  background-color: #2c292d;
   border: 0px solid transparent;
   border-radius: 4px;
-  color: light-dark(light-dark(#ffffff, #ffffff), light-dark(#ffffff, #ffffff));
+  color: #ffffff;
   font-family:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1027,7 +1018,7 @@ h6 {
 .markdown-rendered button.copy-code-button {
   background-color: transparent;
   box-shadow: none;
-  color: light-dark(light-dark(#5c6370, #5c6370), light-dark(#abb2bf, #abb2bf));
+  color: #5c6370;
   font-family:
     "??",
     "??",
@@ -1270,10 +1261,7 @@ h6 {
 }
 
 .popover {
-  background-color: light-dark(
-    light-dark(#fdf9f3, #1e1f2b),
-    light-dark(#fdf9f3, #1e1f2b)
-  );
+  background-color: #fdf9f3;
   border: 1px solid
     light-dark(light-dark(#5c6370, #5c6370), light-dark(#5c6370, #5c6370));
   border-radius: 8px;
@@ -1288,10 +1276,7 @@ h6 {
 }
 
 .prompt {
-  background-color: light-dark(
-    light-dark(#fdf9f3, #1e1f2b),
-    light-dark(#fdf9f3, #1e1f2b)
-  );
+  background-color: #fdf9f3;
   border: 0.5pt solid #555555;
   border-radius: 12px;
   box-shadow:
@@ -1310,10 +1295,7 @@ h6 {
 }
 
 input.prompt-input {
-  background-color: light-dark(
-    light-dark(#fdf9f3, #1e1f2b),
-    light-dark(#fdf9f3, #1e1f2b)
-  );
+  background-color: #fdf9f3;
   border: none;
   border-bottom: 1px solid
     light-dark(light-dark(#fdf9f3, #282a3a), light-dark(#fdf9f3, #282a3a));
@@ -1334,18 +1316,12 @@ input.prompt-input {
 }
 
 .markdown-rendered mark {
-  background-color: light-dark(
-    light-dark(#fad872, #fad872),
-    light-dark(#fad872, #fad872)
-  );
-  color: light-dark(light-dark(#2c292d, #2c292d), light-dark(#ffffff, #ffffff));
+  background-color: #fad872;
+  color: #2c292d;
 }
 
 a.tag {
-  background-color: light-dark(
-    light-dark(#fdf9f3, #282a3a),
-    light-dark(#fdf9f3, #282a3a)
-  );
+  background-color: #fdf9f3;
   border: 0px solid #8a5cf526;
   border-radius: 4px;
   color: #2c292d;
@@ -1362,7 +1338,7 @@ input[type="search"] {
   border: 1px solid
     light-dark(light-dark(#5c6370, #5c6370), light-dark(#5c6370, #5c6370));
   border-radius: 5px;
-  color: light-dark(light-dark(#2c292d, #2c292d), light-dark(#ffffff, #ffffff));
+  color: #2c292d;
   font-family: inherit;
   font-size: 14.992px;
   height: 40px;
@@ -1394,7 +1370,7 @@ input[type="search"] {
 
 .nav-file-icon {
   align-items: center;
-  color: light-dark(light-dark(#2c292d, #2c292d), light-dark(#a8a0ee, #a8a0ee));
+  color: #2c292d;
   display: inline-flex;
   margin-inline-end: 6px;
   opacity: 1;
@@ -1404,7 +1380,7 @@ input[type="search"] {
 .nav-folder-title {
   border: 1px solid transparent;
   border-radius: 4px;
-  color: light-dark(light-dark(#2c292d, #2c292d), light-dark(#fad872, #fad872));
+  color: #2c292d;
   cursor: pointer;
   display: flex;
   font-size: 16px;
@@ -1416,7 +1392,7 @@ input[type="search"] {
 
 .nav-file-title {
   border-radius: 4px;
-  color: light-dark(light-dark(#abb2bf, #abb2bf), light-dark(#abb2bf, #abb2bf));
+  color: #abb2bf;
   cursor: pointer;
   display: flex;
   font-size: 16px;
@@ -1451,7 +1427,7 @@ input[type="search"] {
 .tree-item-self {
   align-items: baseline;
   border-radius: 4px;
-  color: light-dark(light-dark(#abb2bf, #abb2bf), light-dark(#abb2bf, #abb2bf));
+  color: #abb2bf;
   display: flex;
   font-size: 16px;
   font-weight: inherit;
@@ -1497,16 +1473,13 @@ input[type="search"] {
 }
 
 .tree-item-self.is-being-dragged {
-  background-color: light-dark(
-    light-dark(#2c292d, #2c292d),
-    light-dark(#fad872, #fad872)
-  );
-  color: light-dark(light-dark(#fdf9f3, #1e1f2b), light-dark(#fdf9f3, #1e1f2b));
+  background-color: #2c292d;
+  color: #fdf9f3;
 }
 
 .tree-item-self .tree-item-icon {
   align-items: center;
-  color: light-dark(light-dark(#2c292d, #2c292d), light-dark(#a8a0ee, #a8a0ee));
+  color: #2c292d;
   display: flex;
   flex: 0 0 auto;
   justify-content: center;
@@ -1535,7 +1508,7 @@ input[type="search"] {
 
 .tree-item-flair {
   border-radius: 4px;
-  color: light-dark(light-dark(#f19d6d, #f19d6d), light-dark(#fad872, #fad872));
+  color: #f19d6d;
   font-size: 12.8px;
   line-height: 1;
 }
@@ -1552,7 +1525,7 @@ input[type="search"] {
 }
 
 .tree-item-inner-subtext {
-  color: light-dark(light-dark(#f19d6d, #f19d6d), light-dark(#fad872, #fad872));
+  color: #f19d6d;
   font-size: 85%;
 }
 
@@ -1564,12 +1537,9 @@ input[type="search"] {
 }
 
 kbd {
-  background-color: light-dark(
-    light-dark(#2c292d, #2c292d),
-    light-dark(#2c292d, #2c292d)
-  );
+  background-color: #2c292d;
   border-radius: 4px;
-  color: light-dark(light-dark(#ffffff, #ffffff), light-dark(#ffffff, #ffffff));
+  color: #ffffff;
   font-family:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1585,7 +1555,7 @@ svg.svg-icon {
 }
 
 .clickable-icon.mod-warning {
-  color: light-dark(light-dark(#ef6f89, #ef6f89), light-dark(#ef6f89, #ef6f89));
+  color: #ef6f89;
 }
 
 .clickable-icon.mod-filled svg {
@@ -1598,7 +1568,7 @@ svg.svg-icon {
 
 .clickable-icon[aria-disabled="true"] {
   background-color: unset;
-  color: light-dark(light-dark(#5c6370, #5c6370), light-dark(#abb2bf, #abb2bf));
+  color: #5c6370;
   opacity: 0.4;
 }
 
@@ -1621,7 +1591,7 @@ svg.svg-icon {
   align-items: center;
   background-color: transparent;
   border-radius: 4px;
-  color: light-dark(light-dark(#2c292d, #2c292d), light-dark(#a8a0ee, #a8a0ee));
+  color: #2c292d;
   cursor: pointer;
   display: flex;
   height: auto;
@@ -1632,7 +1602,7 @@ svg.svg-icon {
 }
 
 .view-header-title-parent .view-header-breadcrumb-separator {
-  color: light-dark(light-dark(#f19d6d, #f19d6d), light-dark(#fad872, #fad872));
+  color: #f19d6d;
   padding: 2px 1px;
 }
 
@@ -1684,31 +1654,31 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-1 {
-  color: light-dark(light-dark(#5c6370, #5c6370), light-dark(#abb2bf, #abb2bf));
+  color: #5c6370;
 }
 
 .graph-view.color-fill-2 {
-  color: light-dark(light-dark(#5c6370, #5c6370), light-dark(#abb2bf, #abb2bf));
+  color: #5c6370;
 }
 
 .graph-view.color-fill-3 {
-  color: light-dark(light-dark(#5c6370, #5c6370), light-dark(#abb2bf, #abb2bf));
+  color: #5c6370;
 }
 
 .graph-view.color-fill-4 {
-  color: light-dark(light-dark(#5c6370, #5c6370), light-dark(#abb2bf, #abb2bf));
+  color: #5c6370;
 }
 
 .graph-view.color-fill-5 {
-  color: light-dark(light-dark(#5c6370, #5c6370), light-dark(#abb2bf, #abb2bf));
+  color: #5c6370;
 }
 
 .graph-view.color-fill-6 {
-  color: light-dark(light-dark(#5c6370, #5c6370), light-dark(#abb2bf, #abb2bf));
+  color: #5c6370;
 }
 
 .graph-view.color-arrow {
-  color: light-dark(light-dark(#2c292d, #2c292d), light-dark(#ffffff, #ffffff));
+  color: #2c292d;
   opacity: 0.5;
 }
 
@@ -1725,18 +1695,15 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-highlight {
-  color: light-dark(light-dark(#2c292d, #2c292d), light-dark(#fad872, #fad872));
+  color: #2c292d;
 }
 
 .graph-view.color-line-highlight {
-  color: light-dark(light-dark(#2c292d, #2c292d), light-dark(#fad872, #fad872));
+  color: #2c292d;
 }
 
 .graph-controls {
-  background-color: light-dark(
-    light-dark(#fdf9f3, #1e1f2b),
-    light-dark(#fdf9f3, #1e1f2b)
-  );
+  background-color: #fdf9f3;
   border-radius: 8px;
   inset-inline-end: 12px;
   overflow: auto;
@@ -2005,25 +1972,16 @@ svg.svg-icon {
 }
 
 .workspace-tabs .workspace-leaf {
-  background-color: light-dark(
-    light-dark(#fdf9f3, #282a3a),
-    light-dark(#fdf9f3, #282a3a)
-  );
+  background-color: #fdf9f3;
   height: 100%;
 }
 
 .workspace-split.mod-root {
-  background-color: light-dark(
-    light-dark(#fdf9f3, #1e1f2b),
-    light-dark(#fdf9f3, #1e1f2b)
-  );
+  background-color: #fdf9f3;
 }
 
 .workspace-split.mod-root .view-content {
-  background-color: light-dark(
-    light-dark(#fdf9f3, #1e1f2b),
-    light-dark(#fdf9f3, #1e1f2b)
-  );
+  background-color: #fdf9f3;
 }
 
 .workspace-leaf-resize-handle {

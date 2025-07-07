@@ -1100,7 +1100,7 @@ h6 a {
 
 h1 {
   --font-weight: 700;
-  color: hsl(light-dark(226, 40%, 44%, light-dark(#e93147, #fb464c)));
+  color: light-dark(#e93147, #fb464c);
   font-family: "Tahoma", serif;
   font-size: 3em;
   font-style: normal;
@@ -1125,7 +1125,7 @@ h1 {
 
 h2 {
   --font-weight: 600;
-  color: hsl(light-dark(226, 40%, 48%, light-dark(#ec7500, #e9973f)));
+  color: light-dark(#ec7500, #e9973f);
   font-family: "Tahoma", serif;
   font-size: 30px;
   font-style: normal;
@@ -1139,7 +1139,7 @@ h2 {
 
 h3 {
   --font-weight: 600;
-  color: hsl(light-dark(226, 40%, 52%, 226, 40%, 44%));
+  color: light-dark(hsl(226, 40%, 52%), hsl(226, 40%, 44%));
   font-family: "Tahoma", serif;
   font-size: 27px;
   font-style: normal;
@@ -1153,7 +1153,7 @@ h3 {
 
 h4 {
   --font-weight: 600;
-  color: hsl(light-dark(226, 40%, 56%, 226, 40%, 48%));
+  color: light-dark(hsl(226, 40%, 56%), hsl(226, 40%, 48%));
   font-family: "Tahoma", serif;
   font-size: 24px;
   font-style: normal;
@@ -1167,7 +1167,7 @@ h4 {
 
 h5 {
   --font-weight: 600;
-  color: hsl(light-dark(226, 40%, 60%, 226, 40%, 52%));
+  color: light-dark(hsl(226, 40%, 60%), hsl(226, 40%, 52%));
   font-family: "Tahoma", serif;
   font-size: 21px;
   font-style: normal;
@@ -1181,7 +1181,7 @@ h5 {
 
 h6 {
   --font-weight: 600;
-  color: hsl(light-dark(226, 40%, 64%, 226, 40%, 56%));
+  color: light-dark(hsl(226, 40%, 64%), hsl(226, 40%, 56%));
   font-family: "Tahoma", serif;
   font-size: 18px;
   font-style: normal;
@@ -1473,14 +1473,14 @@ h6 {
 }
 
 .prompt {
-  background-color: hsl(light-dark(15, 20%, 84%, 300, 6%, 22%));
+  background-color: light-dark(hsl(15, 20%, 84%), hsl(300, 6%, 22%));
   border: 0.5pt solid #555555;
   border-radius: 12px;
   box-shadow:
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
     0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
-  color: hsl(light-dark(300, 6%, 14%, 160, 50%, 38%));
+  color: light-dark(hsl(300, 6%, 14%), hsl(160, 50%, 38%));
   display: flex;
   flex-direction: column;
   max-height: 70vh;
@@ -1520,9 +1520,7 @@ input.prompt-input {
 }
 
 .markdown-rendered mark {
-  background-color: hsl(
-    light-dark(light-dark(#ec7500, #e9973f), light-dark(#ec7500, #e9973f))
-  );
+  background-color: light-dark(#ec7500, #e9973f);
   color: hsl(
     light-dark(
       light-dark(hsl(15, 20%, 88%), hsl(15, 20%, 84%)),
@@ -1532,12 +1530,10 @@ input.prompt-input {
 }
 
 a.tag {
-  background-color: hsl(
-    light-dark(light-dark(#e0ac00, #e0de71), light-dark(#e0ac00, #e0de71))
-  );
+  background-color: light-dark(#e0ac00, #e0de71);
   border: none;
   border-radius: 25px;
-  color: hsl(light-dark(15, 20%, 92%, 300, 6%, 14%));
+  color: light-dark(hsl(15, 20%, 92%), hsl(300, 6%, 14%));
   font-size: 0.875em;
   font-weight: 500;
   line-height: 1;
@@ -1550,7 +1546,7 @@ a.tag {
 
 input[type="search"] {
   -webkit-app-region: no-drag;
-  background: hsl(light-dark(15, 20%, 88%, 300, 6%, 18%));
+  background: light-dark(hsl(15, 20%, 88%), hsl(300, 6%, 18%));
   border: 1px solid transparent;
   border-radius: 5px;
   color: hsl(194, 14%, 40%);
@@ -1623,18 +1619,14 @@ input[type="search"] {
 }
 
 .nav-file-title.is-active {
-  background-color: hsl(light-dark(15, 20%, 96%, 300, 6%, 10%));
-  color: hsl(
-    light-dark(light-dark(#ec7500, #e9973f), light-dark(#ec7500, #e9973f))
-  );
+  background-color: light-dark(hsl(15, 20%, 96%), hsl(300, 6%, 10%));
+  color: light-dark(#ec7500, #e9973f);
   font-weight: inherit;
 }
 
 .nav-folder-title.is-active {
-  background-color: hsl(light-dark(15, 20%, 96%, 300, 6%, 10%));
-  color: hsl(
-    light-dark(light-dark(#ec7500, #e9973f), light-dark(#ec7500, #e9973f))
-  );
+  background-color: light-dark(hsl(15, 20%, 96%), hsl(300, 6%, 10%));
+  color: light-dark(#ec7500, #e9973f);
   font-weight: inherit;
 }
 
@@ -1688,7 +1680,7 @@ input[type="search"] {
 }
 
 .tree-item-self.is-active {
-  background-color: hsl(light-dark(15, 20%, 96%, 300, 6%, 10%));
+  background-color: light-dark(hsl(15, 20%, 96%), hsl(300, 6%, 10%));
   border: solid 1px hsl(light-dark(15, 20%, 88%, 300, 6%, 18%));
   color: hsl(194, 14%, 40%);
   font-weight: inherit;
@@ -1758,7 +1750,7 @@ input[type="search"] {
 
 .tree-item-children {
   border-bottom-left-radius: 1%;
-  border-color: hsl(light-dark(300, 6%, 30%, 168, 50%, 54%));
+  border-color: light-dark(hsl(300, 6%, 30%), hsl(168, 50%, 54%));
   border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
   margin-bottom: 1px;
   margin-inline-start: 12px;
@@ -1798,9 +1790,7 @@ svg.svg-icon {
   border-color: transparent;
   border-radius: 5px;
   border-style: solid;
-  color: hsl(
-    light-dark(light-dark(#086ddd, #027aff), light-dark(#086ddd, #027aff))
-  );
+  color: light-dark(#086ddd, #027aff);
   padding: 4px;
   padding-left: 8px;
   padding-right: 8px;
@@ -1821,9 +1811,7 @@ svg.svg-icon {
 }
 
 .clickable-icon.is-active {
-  background-color: hsl(
-    light-dark(light-dark(#ec7500, #e9973f), light-dark(#ec7500, #e9973f))
-  );
+  background-color: light-dark(#ec7500, #e9973f);
   color: hsl(
     light-dark(
       light-dark(hsl(15, 20%, 88%), hsl(15, 20%, 84%)),
@@ -1841,9 +1829,7 @@ svg.svg-icon {
   border-radius: 5px;
   border-style: solid;
   box-shadow: none;
-  color: hsl(
-    light-dark(light-dark(#086ddd, #027aff), light-dark(#086ddd, #027aff))
-  );
+  color: light-dark(#086ddd, #027aff);
   cursor: pointer;
   display: flex;
   height: auto;
@@ -1889,15 +1875,11 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-focused {
-  color: hsl(
-    light-dark(light-dark(#ec7500, #e9973f), light-dark(#ec7500, #e9973f))
-  );
+  color: light-dark(#ec7500, #e9973f);
 }
 
 .graph-view.color-fill-tag {
-  color: hsl(
-    light-dark(light-dark(#e0ac00, #e0de71), light-dark(#e0ac00, #e0de71))
-  );
+  color: light-dark(#e0ac00, #e0de71);
 }
 
 .graph-view.color-fill-attachment {
@@ -1910,9 +1892,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-unresolved {
-  color: hsl(
-    light-dark(light-dark(#e93147, #fb464c), light-dark(#e93147, #fb464c))
-  );
+  color: light-dark(#e93147, #fb464c);
   opacity: 0.5;
 }
 
@@ -1941,7 +1921,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-arrow {
-  color: hsl(light-dark(300, 6%, 30%, 168, 50%, 54%));
+  color: light-dark(hsl(300, 6%, 30%), hsl(168, 50%, 54%));
   opacity: 0.5;
 }
 
@@ -1950,21 +1930,19 @@ svg.svg-icon {
 }
 
 .graph-view.color-line {
-  color: hsl(light-dark(15, 20%, 84%, 300, 6%, 22%));
+  color: light-dark(hsl(15, 20%, 84%), hsl(300, 6%, 22%));
 }
 
 .graph-view.color-text {
-  color: hsl(light-dark(300, 6%, 14%, 160, 50%, 38%));
+  color: light-dark(hsl(300, 6%, 14%), hsl(160, 50%, 38%));
 }
 
 .graph-view.color-fill-highlight {
-  color: hsl(
-    light-dark(light-dark(#7852ee, #a882ff), light-dark(#7852ee, #a882ff))
-  );
+  color: light-dark(#7852ee, #a882ff);
 }
 
 .graph-view.color-line-highlight {
-  color: hsl(light-dark(15, 20%, 76%, 300, 6%, 30%));
+  color: light-dark(hsl(15, 20%, 76%), hsl(300, 6%, 30%));
 }
 
 .graph-controls {

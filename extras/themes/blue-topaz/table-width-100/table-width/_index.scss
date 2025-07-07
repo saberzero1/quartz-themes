@@ -1,5 +1,0 @@
-body.table-width-100
-  :is(.markdown-preview-section, .markdown-rendered)
-  table:not(.dataview.table-view-table) {
-  width: 100%;
-}

@@ -1,6 +1,0 @@
-body :is(.markdown-preview-view, .markdown-rendered) .markdown-embed-content {
-  padding-right: 0;
-  max-height: var(--embed-content-height);
-  max-width: 100%;
-  overflow: auto;
-}

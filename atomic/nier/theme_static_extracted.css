@@ -1476,19 +1476,13 @@ input[type="search"] {
 }
 
 .nav-file-title.is-active {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   color: light-dark(#ffffff, #ffffff);
   font-weight: inherit;
 }
 
 .nav-folder-title.is-active {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   color: light-dark(#ffffff, #ffffff);
   font-weight: inherit;
 }

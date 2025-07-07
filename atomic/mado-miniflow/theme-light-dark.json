@@ -1,0 +1,385 @@
+{
+  "body": {
+    "--color-accent-1": {
+      "light": "hsl( calc(var(--accent-h) - 0), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 10%) )",
+      "dark": null
+    },
+    "--color-accent-2": {
+      "light": "hsl( calc(var(--accent-h) - 0), calc(var(--accent-s) - 0%), calc(var(--accent-l) - 5%) )",
+      "dark": null
+    },
+    "--color-base-00": {
+      "light": "hsla( calc(var(--bgcolor-h) - 0), calc(var(--bgcolor-s) - 0%), calc(var(--bgcolor-l) - 0%), 1 )",
+      "dark": null
+    },
+    "--color-base-00-0": {
+      "light": "hsla( calc(var(--bgcolor-h) - 27), calc(var(--bgcolor-s) - 12%), calc(var(--bgcolor-l) + 2%), 1 )",
+      "dark": null
+    },
+    "--color-base-00-0-trans": {
+      "light": "hsla( calc(var(--bgcolor-h) - 20), calc(var(--bgcolor-s) - 12%), calc(var(--bgcolor-l) + 2%), 0.5 )",
+      "dark": null
+    },
+    "--color-base-00-trans": {
+      "light": "hsla( calc(var(--bgcolor-h) - 0), calc(var(--bgcolor-s) - 0%), calc(var(--bgcolor-l) - 0%), 0.5 )",
+      "dark": null
+    },
+    "--color-base-05": {
+      "light": "hsla( calc(var(--bgcolor-h) + 3), calc(var(--bgcolor-s) - 28%), calc(var(--bgcolor-l) - 7%), 1 )",
+      "dark": null
+    },
+    "--color-base-10": {
+      "light": "hsla( calc(var(--bgcolor-h) + 6), calc(var(--bgcolor-s) - 6%), calc(var(--bgcolor-l) - 4%), 1 )",
+      "dark": null
+    },
+    "--color-base-100": { "light": "hsla(0, 0%, 13%, 1)", "dark": null },
+    "--color-base-20": {
+      "light": "hsla( calc(var(--bgcolor-h) + 9), calc(var(--bgcolor-s) - 0%), calc(var(--bgcolor-l) - 2%), 1 )",
+      "dark": null
+    },
+    "--color-base-20-0": {
+      "light": "hsla( calc(var(--bgcolor-h) + 3), calc(var(--bgcolor-s) - 27%), calc(var(--bgcolor-l) - 7%), 0.1 )",
+      "dark": null
+    },
+    "--color-base-20-trans": {
+      "light": "hsla( calc(var(--bgcolor-h) + 6), calc(var(--bgcolor-s) - 8%), calc(var(--bgcolor-l) - 2%), 0.5 )",
+      "dark": null
+    },
+    "--color-base-35": { "light": "hsla(210, 15%, 73%, 1)", "dark": null },
+    "--color-base-50": { "light": "hsla(217, 15%, 73%, 1)", "dark": null },
+    "--color-base-70": { "light": "hsla(218, 19%, 39%, 1)", "dark": null },
+    "--color-base-hover": {
+      "light": "var(--color-base-shadow-hover)",
+      "dark": null
+    },
+    "--color-base-shadow": {
+      "light": "hsla(212, 17%, 80%, 0.2)",
+      "dark": null
+    },
+    "--color-base-shadow-hover": {
+      "light": "hsla(212, 17%, 80%, 0.3)",
+      "dark": null
+    },
+    "--color-highlight": { "light": "var(--text-normal)", "dark": null },
+    "--color-italic": { "light": "hsla(215, 43%, 63%, 1)", "dark": null },
+    "--color-muted": { "light": "var(--color-base-70)", "dark": null },
+    "--color-red": { "light": "hsla(365, 85%, 55%, 1)", "dark": null },
+    "--canvas-color": { "light": null, "dark": "126, 126, 126" }
+  },
+  ".notice progress[value]::-webkit-progress-bar": {
+    "background-color": { "light": "#262626", "dark": null },
+    "box-shadow": { "light": "inset 0px 0px 0px 1px #363636", "dark": null }
+  },
+  ".is-mobile": {
+    "--color-accent-1": {
+      "light": "hsl( calc(var(--accent-h) - 0), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 10%) )",
+      "dark": "hsl( calc(var(--accent-h) - 3), calc(var(--accent-s) - 13%), calc(var(--accent-l) - 3%) )"
+    },
+    "--color-accent-2": {
+      "light": "hsl( calc(var(--accent-h) - 0), calc(var(--accent-s) - 0%), calc(var(--accent-l) - 5%) )",
+      "dark": "hsl( calc(var(--accent-h) - 0), calc(var(--accent-s) + 7%), calc(var(--accent-l) + 2%) )"
+    },
+    "--color-base-00": "hsla( calc(var(--bgcolor-h) - 0), calc(var(--bgcolor-s) - 0%), calc(var(--bgcolor-l) - 0%), 1 )",
+    "--color-base-00-0": {
+      "light": "hsla( calc(var(--bgcolor-h) - 27), calc(var(--bgcolor-s) - 12%), calc(var(--bgcolor-l) + 2%), 1 )",
+      "dark": "hsla( calc(var(--bgcolor-h) - 0), calc(var(--bgcolor-s) - 0%), calc(var(--bgcolor-l) + 3%), 0.9 )"
+    },
+    "--color-base-00-0-trans": {
+      "light": "hsla( calc(var(--bgcolor-h) - 20), calc(var(--bgcolor-s) - 12%), calc(var(--bgcolor-l) + 2%), 0.5 )",
+      "dark": "hsla( calc(var(--bgcolor-h) - 0), calc(var(--bgcolor-s) - 0%), calc(var(--bgcolor-l) + 3%), 0.5 )"
+    },
+    "--color-base-00-trans": "hsla( calc(var(--bgcolor-h) - 0), calc(var(--bgcolor-s) - 0%), calc(var(--bgcolor-l) - 0%), 0.5 )",
+    "--color-base-05": {
+      "light": "hsla( calc(var(--bgcolor-h) + 3), calc(var(--bgcolor-s) - 28%), calc(var(--bgcolor-l) - 7%), 1 )",
+      "dark": "hsla( calc(var(--bgcolor-h) - 8), calc(var(--bgcolor-s) - 0%), calc(var(--bgcolor-l) - 9%), 0.5 )"
+    },
+    "--color-base-10": {
+      "light": "hsla( calc(var(--bgcolor-h) + 6), calc(var(--bgcolor-s) - 6%), calc(var(--bgcolor-l) - 4%), 1 )",
+      "dark": "hsla( calc(var(--bgcolor-h) - 1), calc(var(--bgcolor-s) + 7%), calc(var(--bgcolor-l) - 4%), 1 )"
+    },
+    "--color-base-100": {
+      "light": "hsla(0, 0%, 13%, 1)",
+      "dark": "hsla(0, 0%, 73%, 1)"
+    },
+    "--color-base-20": {
+      "light": "hsla( calc(var(--bgcolor-h) + 9), calc(var(--bgcolor-s) - 0%), calc(var(--bgcolor-l) - 2%), 1 )",
+      "dark": "hsla( calc(var(--bgcolor-h) - 1), calc(var(--bgcolor-s) + 7%), calc(var(--bgcolor-l) - 4%), 1 )"
+    },
+    "--color-base-20-0": {
+      "light": "hsla( calc(var(--bgcolor-h) + 3), calc(var(--bgcolor-s) - 27%), calc(var(--bgcolor-l) - 7%), 0.1 )",
+      "dark": "hsla( calc(var(--bgcolor-h) - 0), calc(var(--bgcolor-s) - 7%), calc(var(--bgcolor-l) - 9%), 0.1 )"
+    },
+    "--color-base-20-trans": {
+      "light": "hsla( calc(var(--bgcolor-h) + 6), calc(var(--bgcolor-s) - 8%), calc(var(--bgcolor-l) - 2%), 0.5 )",
+      "dark": "hsla( calc(var(--bgcolor-h) - 1), calc(var(--bgcolor-s) + 7%), calc(var(--bgcolor-l) - 4%), 0.5 )"
+    },
+    "--color-base-35": {
+      "light": "hsla(210, 15%, 73%, 1)",
+      "dark": "hsla(210, 15%, 33%, 1)"
+    },
+    "--color-base-50": {
+      "light": "hsla(217, 15%, 73%, 1)",
+      "dark": "hsla(217, 18%, 50%, 0.7)"
+    },
+    "--color-base-70": {
+      "light": "hsla(218, 19%, 39%, 1)",
+      "dark": "hsl(218, 17%, 58%)"
+    },
+    "--color-base-hover": {
+      "light": "var(--color-base-shadow-hover)",
+      "dark": "var(--color-base-05)"
+    },
+    "--color-base-shadow": {
+      "light": "hsla(212, 17%, 80%, 0.2)",
+      "dark": "hsla(207, 10%, 10%, 0.1)"
+    },
+    "--color-base-shadow-hover": {
+      "light": "hsla(212, 17%, 80%, 0.3)",
+      "dark": "hsla(212, 17%, 0%, 0.3)"
+    },
+    "--color-highlight": {
+      "light": "var(--text-normal)",
+      "dark": "hsla(45, 63%, 63%, 1)"
+    },
+    "--color-italic": {
+      "light": "hsla(215, 43%, 63%, 1)",
+      "dark": "hsla(215, 33%, 60%, 1)"
+    },
+    "--color-muted": {
+      "light": "var(--color-base-70)",
+      "dark": "hsl(218, 17%, 62%)"
+    },
+    "--color-red": {
+      "light": "hsla(365, 85%, 55%, 1)",
+      "dark": "hsla(365, 90%, 65%, 1)"
+    },
+    "--bgcolor-h": { "light": null, "dark": "215" },
+    "--bgcolor-l": { "light": null, "dark": "19%" },
+    "--bgcolor-s": { "light": null, "dark": "17%" },
+    "--color-accent": {
+      "light": null,
+      "dark": "hsl( calc(var(--accent-h) - 0), calc(var(--accent-s) + 13%), calc(var(--accent-l) + 3%) )"
+    },
+    "--color-base-30": { "light": null, "dark": "hsla(215, 22%, 13%, 1)" },
+    "--text-highlight-bg": { "light": null, "dark": "hsla(45, 53%, 53%, 1)" }
+  },
+  ".is-tablet": {
+    "--color-accent-1": {
+      "light": "hsl( calc(var(--accent-h) - 0), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 10%) )",
+      "dark": "hsl( calc(var(--accent-h) - 3), calc(var(--accent-s) - 13%), calc(var(--accent-l) - 3%) )"
+    },
+    "--color-accent-2": {
+      "light": "hsl( calc(var(--accent-h) - 0), calc(var(--accent-s) - 0%), calc(var(--accent-l) - 5%) )",
+      "dark": "hsl( calc(var(--accent-h) - 0), calc(var(--accent-s) + 7%), calc(var(--accent-l) + 2%) )"
+    },
+    "--color-base-00": "hsla( calc(var(--bgcolor-h) - 0), calc(var(--bgcolor-s) - 0%), calc(var(--bgcolor-l) - 0%), 1 )",
+    "--color-base-00-0": {
+      "light": "hsla( calc(var(--bgcolor-h) - 27), calc(var(--bgcolor-s) - 12%), calc(var(--bgcolor-l) + 2%), 1 )",
+      "dark": "hsla( calc(var(--bgcolor-h) - 0), calc(var(--bgcolor-s) - 0%), calc(var(--bgcolor-l) + 3%), 0.9 )"
+    },
+    "--color-base-00-0-trans": {
+      "light": "hsla( calc(var(--bgcolor-h) - 20), calc(var(--bgcolor-s) - 12%), calc(var(--bgcolor-l) + 2%), 0.5 )",
+      "dark": "hsla( calc(var(--bgcolor-h) - 0), calc(var(--bgcolor-s) - 0%), calc(var(--bgcolor-l) + 3%), 0.5 )"
+    },
+    "--color-base-00-trans": "hsla( calc(var(--bgcolor-h) - 0), calc(var(--bgcolor-s) - 0%), calc(var(--bgcolor-l) - 0%), 0.5 )",
+    "--color-base-05": {
+      "light": "hsla( calc(var(--bgcolor-h) + 3), calc(var(--bgcolor-s) - 28%), calc(var(--bgcolor-l) - 7%), 1 )",
+      "dark": "hsla( calc(var(--bgcolor-h) - 8), calc(var(--bgcolor-s) - 0%), calc(var(--bgcolor-l) - 9%), 0.5 )"
+    },
+    "--color-base-10": {
+      "light": "hsla( calc(var(--bgcolor-h) + 6), calc(var(--bgcolor-s) - 6%), calc(var(--bgcolor-l) - 4%), 1 )",
+      "dark": "hsla( calc(var(--bgcolor-h) - 1), calc(var(--bgcolor-s) + 7%), calc(var(--bgcolor-l) - 4%), 1 )"
+    },
+    "--color-base-100": {
+      "light": "hsla(0, 0%, 13%, 1)",
+      "dark": "hsla(0, 0%, 73%, 1)"
+    },
+    "--color-base-20": {
+      "light": "hsla( calc(var(--bgcolor-h) + 9), calc(var(--bgcolor-s) - 0%), calc(var(--bgcolor-l) - 2%), 1 )",
+      "dark": "hsla( calc(var(--bgcolor-h) - 1), calc(var(--bgcolor-s) + 7%), calc(var(--bgcolor-l) - 4%), 1 )"
+    },
+    "--color-base-20-0": {
+      "light": "hsla( calc(var(--bgcolor-h) + 3), calc(var(--bgcolor-s) - 27%), calc(var(--bgcolor-l) - 7%), 0.1 )",
+      "dark": "hsla( calc(var(--bgcolor-h) - 0), calc(var(--bgcolor-s) - 7%), calc(var(--bgcolor-l) - 9%), 0.1 )"
+    },
+    "--color-base-20-trans": {
+      "light": "hsla( calc(var(--bgcolor-h) + 6), calc(var(--bgcolor-s) - 8%), calc(var(--bgcolor-l) - 2%), 0.5 )",
+      "dark": "hsla( calc(var(--bgcolor-h) - 1), calc(var(--bgcolor-s) + 7%), calc(var(--bgcolor-l) - 4%), 0.5 )"
+    },
+    "--color-base-35": {
+      "light": "hsla(210, 15%, 73%, 1)",
+      "dark": "hsla(210, 15%, 33%, 1)"
+    },
+    "--color-base-50": {
+      "light": "hsla(217, 15%, 73%, 1)",
+      "dark": "hsla(217, 18%, 50%, 0.7)"
+    },
+    "--color-base-70": {
+      "light": "hsla(218, 19%, 39%, 1)",
+      "dark": "hsl(218, 17%, 58%)"
+    },
+    "--color-base-hover": {
+      "light": "var(--color-base-shadow-hover)",
+      "dark": "var(--color-base-05)"
+    },
+    "--color-base-shadow": {
+      "light": "hsla(212, 17%, 80%, 0.2)",
+      "dark": "hsla(207, 10%, 10%, 0.1)"
+    },
+    "--color-base-shadow-hover": {
+      "light": "hsla(212, 17%, 80%, 0.3)",
+      "dark": "hsla(212, 17%, 0%, 0.3)"
+    },
+    "--color-highlight": {
+      "light": "var(--text-normal)",
+      "dark": "hsla(45, 63%, 63%, 1)"
+    },
+    "--color-italic": {
+      "light": "hsla(215, 43%, 63%, 1)",
+      "dark": "hsla(215, 33%, 60%, 1)"
+    },
+    "--color-muted": {
+      "light": "var(--color-base-70)",
+      "dark": "hsl(218, 17%, 62%)"
+    },
+    "--color-red": {
+      "light": "hsla(365, 85%, 55%, 1)",
+      "dark": "hsla(365, 90%, 65%, 1)"
+    },
+    "--bgcolor-h": { "light": null, "dark": "215" },
+    "--bgcolor-l": { "light": null, "dark": "19%" },
+    "--bgcolor-s": { "light": null, "dark": "17%" },
+    "--color-accent": {
+      "light": null,
+      "dark": "hsl( calc(var(--accent-h) - 0), calc(var(--accent-s) + 13%), calc(var(--accent-l) + 3%) )"
+    },
+    "--color-base-30": { "light": null, "dark": "hsla(215, 22%, 13%, 1)" },
+    "--text-highlight-bg": { "light": null, "dark": "hsla(45, 53%, 53%, 1)" }
+  },
+  ":is(.THT-underline": {
+    "--color-highlight": { "light": "var(--color-yellow)", "dark": null },
+    "--text-highlight-bg": { "light": "hsla(45, 53%, 73%, 1)", "dark": null }
+  },
+  "body.THT-underline-light :is(   mark": {
+    "background": { "light": "none", "dark": null },
+    "border-bottom": {
+      "light": "2px solid var(--text-highlight-bg)",
+      "dark": null
+    },
+    "color": { "light": "var(--color-highlight)", "dark": null }
+  },
+  ".themed-color-wrapper > div .pickr-reset button:hover": {
+    "background-color": {
+      "light": "var(--color-base-shadow-hover)",
+      "dark": "var(--color-base-05)"
+    }
+  },
+  ".dropdown": { "background-image": { "light": null, "dark": "url(\"data" } },
+  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation input": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation textarea": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed .popupWrapper > div": {
+    "background-color": {
+      "light": null,
+      "dark": "var(--background-secondary-alt)"
+    },
+    "filter": {
+      "light": null,
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4)) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
+    }
+  },
+  ".pdf-container.mod-themed .popupWrapper > div::after": {
+    "background-color": {
+      "light": null,
+      "dark": "var(--background-secondary-alt)"
+    }
+  },
+  ".pdf-container.mod-themed .popupContent:empty + .popupMeta": {
+    "background-color": {
+      "light": null,
+      "dark": "var(--background-secondary-alt)"
+    }
+  },
+  ".mermaid > svg": {
+    "filter": {
+      "light": null,
+      "dark": "invert(100%) hue-rotate(180deg) saturate(1.25)"
+    }
+  },
+  ".canvas-card-menu": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".canvas-card-menu .canvas-card-menu-button svg": {
+    "fill": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".is-tablet .community-item": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".is-tablet .vertical-tab-content": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".workspace-drawer-inner": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".is-mobile .prompt": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".is-mobile .prompt input.prompt-input": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".is-tablet .suggestion-container": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ":is(.THT-background": {
+    "--color-highlight": { "light": null, "dark": "hsla(45, 53%, 13%, 1)" }
+  },
+  "body.theme-red-sky": {
+    "--accent-h": { "light": null, "dark": "0" },
+    "--accent-l": { "light": null, "dark": "57%" },
+    "--accent-s": { "light": null, "dark": "73%" }
+  },
+  "body.theme-violette": {
+    "--accent-h": { "light": null, "dark": "255" },
+    "--accent-l": { "light": null, "dark": "68%" },
+    "--accent-s": { "light": null, "dark": "73%" }
+  },
+  "body.theme-greenery": {
+    "--accent-h": { "light": null, "dark": "125" },
+    "--accent-l": { "light": null, "dark": "38%" },
+    "--accent-s": { "light": null, "dark": "81%" }
+  },
+  "body.theme-yellowish": {
+    "--accent-h": { "light": null, "dark": "47" },
+    "--accent-l": { "light": null, "dark": "50%" },
+    "--accent-s": { "light": null, "dark": "85%" }
+  },
+  "body.theme-deep-blue": {
+    "--accent-h": { "light": null, "dark": "229" },
+    "--accent-l": { "light": null, "dark": "63%" },
+    "--accent-s": { "light": null, "dark": "78%" }
+  },
+  "body.theme-grayscale": {
+    "--accent-h": { "light": null, "dark": "224" },
+    "--accent-l": { "light": null, "dark": "63%" },
+    "--accent-s": { "light": null, "dark": "12%" }
+  },
+  "body:not(.css-settings-manager) :is(   mark": {
+    "background": { "light": null, "dark": "none" },
+    "border-bottom": {
+      "light": null,
+      "dark": "2px solid var(--text-highlight-bg)"
+    },
+    "color": { "light": null, "dark": "var(--color-highlight)" }
+  },
+  "body.THT-underline-dark :is(   mark": {
+    "background": { "light": null, "dark": "none" },
+    "border-bottom": {
+      "light": null,
+      "dark": "2px solid var(--text-highlight-bg)"
+    },
+    "color": { "light": null, "dark": "var(--color-highlight)" }
+  }
+}

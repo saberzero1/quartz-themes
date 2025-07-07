@@ -987,10 +987,7 @@ h6 {
 }
 
 .markdown-rendered button.copy-code-button:hover {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .callout {

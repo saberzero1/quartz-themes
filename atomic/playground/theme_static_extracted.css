@@ -1334,8 +1334,8 @@ h6 {
 .callout {
   --callout-color: oklch(48.5% 0.173 260.58);
   --callout-icon: lucide-pencil;
-  background-color: rgba(oklch(48.5% 0.039 279.29), 0.1);
-  border-color: rgba(oklch(48.5% 0.039 279.29), 0.25);
+  background-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.1);
+  border-color: color.change(oklch(48.5% 0.039 279.29), $alpha: 0.25);
   border-radius: 8px;
   border-style: solid;
   border-width: 0px;
@@ -1347,7 +1347,7 @@ h6 {
 
 .callout-title {
   align-items: flex-start;
-  color: rgb(oklch(48.5% 0.039 279.29));
+  color: color.change(oklch(48.5% 0.039 279.29));
   display: flex;
   font-size: inherit;
   gap: 4px;
@@ -1508,7 +1508,7 @@ h6 {
 }
 
 .callout-icon .svg-icon {
-  color: rgb(oklch(48.5% 0.039 279.29));
+  color: color.change(oklch(48.5% 0.039 279.29));
 }
 
 .callout-icon::after {

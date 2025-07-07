@@ -945,7 +945,7 @@
   --color-accent-1: light-dark(#808bc9, #909cd0);
   --color-accent-2: light-dark(#909cd0, #adb8de);
   --color-accent-3: light-dark(#686d90, #777c9c);
-  --color-accent-hsl: light-dark(#707bc2, #707bc2);
+  --color-accent-hsl: light-dark(232, 40%, 60%, 232, 40%, 60%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -1883,7 +1883,7 @@ body {
   --color-accent-1: light-dark(#808bc9, #909cd0);
   --color-accent-2: light-dark(#909cd0, #adb8de);
   --color-accent-3: light-dark(#686d90, #777c9c);
-  --color-accent-hsl: light-dark(#707bc2, #707bc2);
+  --color-accent-hsl: light-dark(232, 40%, 60%, 232, 40%, 60%);
   --color-activated-tab-header-dark: #d3d5de;
   --color-activated-tab-header-light: #d3d5de;
   --color-base-00: light-dark(#ffffff, #1e1e1e);
@@ -8154,10 +8154,7 @@ button.mod-destructive {
 }
 
 .card {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid #363636;
   border-radius: 4px;
   display: flex;
@@ -10596,10 +10593,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   cursor: default;
   text-align: center;
 }
@@ -11784,27 +11778,18 @@ kbd {
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .findbarOpen .pdf-viewer-container {
@@ -24366,14 +24351,17 @@ body:not(.border-focus-mode)
   ) {
   display: none;
 }
+
 body:not(.inline-title-color-customized)
   .setting-item[data-id="inline-title-color"] {
   display: none;
 }
+
 body:not(.background-underlying-Color-light)
   .setting-item[data-id="background-underlying-light"] {
   display: none;
 }
+
 body:not(.background-underlying-CSS-light)
   .setting-item:is(
     [data-id="background-underlying-CSS-light"],
@@ -24381,10 +24369,12 @@ body:not(.background-underlying-CSS-light)
   ) {
   display: none;
 }
+
 body:not(.background-underlying-Color-dark)
   .setting-item[data-id="background-underlying-dark"] {
   display: none;
 }
+
 body:not(.background-underlying-CSS-dark)
   .setting-item:is(
     [data-id="background-underlying-CSS-dark"],
@@ -24392,495 +24382,619 @@ body:not(.background-underlying-CSS-dark)
   ) {
   display: none;
 }
+
 body.mod-root-split-background-primary-light
   .setting-item[data-id="background-mod-root-split-light"] {
   display: none;
 }
+
 body.mod-root-split-background-primary-light
   .setting-item[data-id="background-mod-root-CSS-light"] {
   display: none;
 }
+
 body.mod-root-split-background-primary-light
   .setting-item[data-id="background-mod-root-CSS-blend-mode-light"] {
   display: none;
 }
+
 body.mod-root-split-background-primary-light
   .setting-item[data-id="background-mod-root-CSS-backdrop-filter-light"] {
   display: none;
 }
+
 body.mod-root-split-background-secondary-light
   .setting-item[data-id="background-mod-root-split-light"] {
   display: none;
 }
+
 body.mod-root-split-background-secondary-light
   .setting-item[data-id="background-mod-root-CSS-light"] {
   display: none;
 }
+
 body.mod-root-split-background-secondary-light
   .setting-item[data-id="background-mod-root-CSS-blend-mode-light"] {
   display: none;
 }
+
 body.mod-root-split-background-secondary-light
   .setting-item[data-id="background-mod-root-CSS-backdrop-filter-light"] {
   display: none;
 }
+
 body.mod-root-split-background-transparent-light
   .setting-item[data-id="background-mod-root-split-light"] {
   display: none;
 }
+
 body.mod-root-split-background-transparent-light
   .setting-item[data-id="background-mod-root-CSS-light"] {
   display: none;
 }
+
 body.mod-root-split-background-transparent-light
   .setting-item[data-id="background-mod-root-CSS-blend-mode-light"] {
   display: none;
 }
+
 body.mod-root-split-background-transparent-light
   .setting-item[data-id="background-mod-root-CSS-backdrop-filter-light"] {
   display: none;
 }
+
 body.mod-root-split-background-CSS-light
   .setting-item[data-id="background-mod-root-split-light"] {
   display: none;
 }
+
 body.mod-root-split-background-customize-light
   .setting-item[data-id="background-mod-root-CSS-light"] {
   display: none;
 }
+
 body.mod-root-split-background-customize-light
   .setting-item[data-id="background-mod-root-CSS-blend-mode-light"] {
   display: none;
 }
+
 body.mod-root-split-background-customize-light
   .setting-item[data-id="background-mod-root-CSS-backdrop-filter-light"] {
   display: none;
 }
+
 body.mod-root-split-background-primary-dark
   .setting-item[data-id="background-mod-root-split-dark"] {
   display: none;
 }
+
 body.mod-root-split-background-primary-dark
   .setting-item[data-id="background-mod-root-CSS-dark"] {
   display: none;
 }
+
 body.mod-root-split-background-primary-dark
   .setting-item[data-id="background-mod-root-CSS-blend-mode-dark"] {
   display: none;
 }
+
 body.mod-root-split-background-primary-dark
   .setting-item[data-id="background-mod-root-CSS-backdrop-filter-dark"] {
   display: none;
 }
+
 body.mod-root-split-background-secondary-dark
   .setting-item[data-id="background-mod-root-split-dark"] {
   display: none;
 }
+
 body.mod-root-split-background-secondary-dark
   .setting-item[data-id="background-mod-root-CSS-dark"] {
   display: none;
 }
+
 body.mod-root-split-background-secondary-dark
   .setting-item[data-id="background-mod-root-CSS-blend-mode-dark"] {
   display: none;
 }
+
 body.mod-root-split-background-secondary-dark
   .setting-item[data-id="background-mod-root-CSS-backdrop-filter-dark"] {
   display: none;
 }
+
 body.mod-root-split-background-transparent-dark
   .setting-item[data-id="background-mod-root-split-dark"] {
   display: none;
 }
+
 body.mod-root-split-background-transparent-dark
   .setting-item[data-id="background-mod-root-CSS-dark"] {
   display: none;
 }
+
 body.mod-root-split-background-transparent-dark
   .setting-item[data-id="background-mod-root-CSS-blend-mode-dark"] {
   display: none;
 }
+
 body.mod-root-split-background-transparent-dark
   .setting-item[data-id="background-mod-root-CSS-backdrop-filter-dark"] {
   display: none;
 }
+
 body.mod-root-split-background-CSS-dark
   .setting-item[data-id="background-mod-root-split-dark"] {
   display: none;
 }
+
 body.mod-root-split-background-customize-dark
   .setting-item[data-id="background-mod-root-CSS-dark"] {
   display: none;
 }
+
 body.mod-root-split-background-customize-dark
   .setting-item[data-id="background-mod-root-CSS-blend-mode-dark"] {
   display: none;
 }
+
 body.mod-root-split-background-customize-dark
   .setting-item[data-id="background-mod-root-CSS-backdrop-filter-dark"] {
   display: none;
 }
+
 body.mod-left-split-background-primary-light
   .setting-item[data-id="background-mod-left-split-light"] {
   display: none;
 }
+
 body.mod-left-split-background-primary-light
   .setting-item[data-id="background-mod-left-CSS-light"] {
   display: none;
 }
+
 body.mod-left-split-background-primary-light
   .setting-item[data-id="background-mod-left-CSS-blend-mode-light"] {
   display: none;
 }
+
 body.mod-left-split-background-primary-light
   .setting-item[data-id="background-mod-left-CSS-backdrop-filter-light"] {
   display: none;
 }
+
 body.mod-left-split-background-secondary-light
   .setting-item[data-id="background-mod-left-split-light"] {
   display: none;
 }
+
 body.mod-left-split-background-secondary-light
   .setting-item[data-id="background-mod-left-CSS-light"] {
   display: none;
 }
+
 body.mod-left-split-background-secondary-light
   .setting-item[data-id="background-mod-left-CSS-blend-mode-light"] {
   display: none;
 }
+
 body.mod-left-split-background-secondary-light
   .setting-item[data-id="background-mod-left-CSS-backdrop-filter-light"] {
   display: none;
 }
+
 body.mod-left-split-background-transparent-light
   .setting-item[data-id="background-mod-left-split-light"] {
   display: none;
 }
+
 body.mod-left-split-background-transparent-light
   .setting-item[data-id="background-mod-left-CSS-light"] {
   display: none;
 }
+
 body.mod-left-split-background-transparent-light
   .setting-item[data-id="background-mod-left-CSS-blend-mode-light"] {
   display: none;
 }
+
 body.mod-left-split-background-transparent-light
   .setting-item[data-id="background-mod-left-CSS-backdrop-filter-light"] {
   display: none;
 }
+
 body.mod-left-split-background-CSS-light
   .setting-item[data-id="background-mod-left-split-light"] {
   display: none;
 }
+
 body.mod-left-split-background-customize-light
   .setting-item[data-id="background-mod-left-CSS-light"] {
   display: none;
 }
+
 body.mod-left-split-background-customize-light
   .setting-item[data-id="background-mod-left-CSS-blend-mode-light"] {
   display: none;
 }
+
 body.mod-left-split-background-customize-light
   .setting-item[data-id="background-mod-left-CSS-backdrop-filter-light"] {
   display: none;
 }
+
 body.mod-left-split-background-primary-dark
   .setting-item[data-id="background-mod-left-split-dark"] {
   display: none;
 }
+
 body.mod-left-split-background-primary-dark
   .setting-item[data-id="background-mod-left-CSS-dark"] {
   display: none;
 }
+
 body.mod-left-split-background-primary-dark
   .setting-item[data-id="background-mod-left-CSS-blend-mode-dark"] {
   display: none;
 }
+
 body.mod-left-split-background-primary-dark
   .setting-item[data-id="background-mod-left-CSS-backdrop-filter-dark"] {
   display: none;
 }
+
 body.mod-left-split-background-secondary-dark
   .setting-item[data-id="background-mod-left-split-dark"] {
   display: none;
 }
+
 body.mod-left-split-background-secondary-dark
   .setting-item[data-id="background-mod-left-CSS-dark"] {
   display: none;
 }
+
 body.mod-left-split-background-secondary-dark
   .setting-item[data-id="background-mod-left-CSS-blend-mode-dark"] {
   display: none;
 }
+
 body.mod-left-split-background-secondary-dark
   .setting-item[data-id="background-mod-left-CSS-backdrop-filter-dark"] {
   display: none;
 }
+
 body.mod-left-split-background-transparent-dark
   .setting-item[data-id="background-mod-left-split-dark"] {
   display: none;
 }
+
 body.mod-left-split-background-transparent-dark
   .setting-item[data-id="background-mod-left-CSS-dark"] {
   display: none;
 }
+
 body.mod-left-split-background-transparent-dark
   .setting-item[data-id="background-mod-left-CSS-blend-mode-dark"] {
   display: none;
 }
+
 body.mod-left-split-background-transparent-dark
   .setting-item[data-id="background-mod-left-CSS-backdrop-filter-dark"] {
   display: none;
 }
+
 body.mod-left-split-background-CSS-dark
   .setting-item[data-id="background-mod-left-split-dark"] {
   display: none;
 }
+
 body.mod-left-split-background-customize-dark
   .setting-item[data-id="background-mod-left-CSS-dark"] {
   display: none;
 }
+
 body.mod-left-split-background-customize-dark
   .setting-item[data-id="background-mod-left-CSS-blend-mode-dark"] {
   display: none;
 }
+
 body.mod-left-split-background-customize-dark
   .setting-item[data-id="background-mod-left-CSS-backdrop-filter-dark"] {
   display: none;
 }
+
 body.mod-right-split-background-primary-light
   .setting-item[data-id="background-mod-right-split-light"] {
   display: none;
 }
+
 body.mod-right-split-background-primary-light
   .setting-item[data-id="background-mod-right-CSS-light"] {
   display: none;
 }
+
 body.mod-right-split-background-primary-light
   .setting-item[data-id="background-mod-right-CSS-blend-mode-light"] {
   display: none;
 }
+
 body.mod-right-split-background-primary-light
   .setting-item[data-id="background-mod-right-CSS-backdrop-filter-light"] {
   display: none;
 }
+
 body.mod-right-split-background-secondary-light
   .setting-item[data-id="background-mod-right-split-light"] {
   display: none;
 }
+
 body.mod-right-split-background-secondary-light
   .setting-item[data-id="background-mod-right-CSS-light"] {
   display: none;
 }
+
 body.mod-right-split-background-secondary-light
   .setting-item[data-id="background-mod-right-CSS-blend-mode-light"] {
   display: none;
 }
+
 body.mod-right-split-background-secondary-light
   .setting-item[data-id="background-mod-right-CSS-backdrop-filter-light"] {
   display: none;
 }
+
 body.mod-right-split-background-transparent-light
   .setting-item[data-id="background-mod-right-split-light"] {
   display: none;
 }
+
 body.mod-right-split-background-transparent-light
   .setting-item[data-id="background-mod-right-CSS-light"] {
   display: none;
 }
+
 body.mod-right-split-background-transparent-light
   .setting-item[data-id="background-mod-right-CSS-blend-mode-light"] {
   display: none;
 }
+
 body.mod-right-split-background-transparent-light
   .setting-item[data-id="background-mod-right-CSS-backdrop-filter-light"] {
   display: none;
 }
+
 body.mod-right-split-background-CSS-light
   .setting-item[data-id="background-mod-right-split-light"] {
   display: none;
 }
+
 body.mod-right-split-background-customize-light
   .setting-item[data-id="background-mod-right-CSS-light"] {
   display: none;
 }
+
 body.mod-right-split-background-customize-light
   .setting-item[data-id="background-mod-right-CSS-blend-mode-light"] {
   display: none;
 }
+
 body.mod-right-split-background-customize-light
   .setting-item[data-id="background-mod-right-CSS-backdrop-filter-light"] {
   display: none;
 }
+
 body.mod-right-split-background-primary-dark
   .setting-item[data-id="background-mod-right-split-dark"] {
   display: none;
 }
+
 body.mod-right-split-background-primary-dark
   .setting-item[data-id="background-mod-right-CSS-dark"] {
   display: none;
 }
+
 body.mod-right-split-background-primary-dark
   .setting-item[data-id="background-mod-right-CSS-blend-mode-dark"] {
   display: none;
 }
+
 body.mod-right-split-background-primary-dark
   .setting-item[data-id="background-mod-right-CSS-backdrop-filter-dark"] {
   display: none;
 }
+
 body.mod-right-split-background-secondary-dark
   .setting-item[data-id="background-mod-right-split-dark"] {
   display: none;
 }
+
 body.mod-right-split-background-secondary-dark
   .setting-item[data-id="background-mod-right-CSS-dark"] {
   display: none;
 }
+
 body.mod-right-split-background-secondary-dark
   .setting-item[data-id="background-mod-right-CSS-blend-mode-dark"] {
   display: none;
 }
+
 body.mod-right-split-background-secondary-dark
   .setting-item[data-id="background-mod-right-CSS-backdrop-filter-dark"] {
   display: none;
 }
+
 body.mod-right-split-background-transparent-dark
   .setting-item[data-id="background-mod-right-split-dark"] {
   display: none;
 }
+
 body.mod-right-split-background-transparent-dark
   .setting-item[data-id="background-mod-right-CSS-dark"] {
   display: none;
 }
+
 body.mod-right-split-background-transparent-dark
   .setting-item[data-id="background-mod-right-CSS-blend-mode-dark"] {
   display: none;
 }
+
 body.mod-right-split-background-transparent-dark
   .setting-item[data-id="background-mod-right-CSS-backdrop-filter-dark"] {
   display: none;
 }
+
 body.mod-right-split-background-CSS-dark
   .setting-item[data-id="background-mod-right-split-dark"] {
   display: none;
 }
+
 body.mod-right-split-background-customize-dark
   .setting-item[data-id="background-mod-right-CSS-dark"] {
   display: none;
 }
+
 body.mod-right-split-background-customize-dark
   .setting-item[data-id="background-mod-right-CSS-blend-mode-dark"] {
   display: none;
 }
+
 body.mod-right-split-background-customize-dark
   .setting-item[data-id="background-mod-right-CSS-backdrop-filter-dark"] {
   display: none;
 }
+
 body.activated-file-default-light
   .setting-item[data-id="color-activated-file-light"] {
   display: none;
 }
+
 body.activated-file-default-light
   .setting-item[data-id="border-radius-activated-file-light"] {
   display: none;
 }
+
 body.activated-file-default-light
   .setting-item[data-id="background-activated-file-light"] {
   display: none;
 }
+
 body.activated-file-default-light
   .setting-item[data-id="shadow-activated-file-light"] {
   display: none;
 }
+
 body.activated-file-accent-light
   .setting-item[data-id="color-activated-file-light"] {
   display: none;
 }
+
 body.activated-file-accent-light
   .setting-item[data-id="border-radius-activated-file-light"] {
   display: none;
 }
+
 body.activated-file-accent-light
   .setting-item[data-id="background-activated-file-light"] {
   display: none;
 }
+
 body.activated-file-accent-light
   .setting-item[data-id="shadow-activated-file-light"] {
   display: none;
 }
+
 body.activated-file-tab-style-light
   .setting-item[data-id="color-activated-file-light"] {
   display: none;
 }
+
 body.activated-file-tab-style-light
   .setting-item[data-id="border-radius-activated-file-light"] {
   display: none;
 }
+
 body.activated-file-tab-style-light
   .setting-item[data-id="background-activated-file-light"] {
   display: none;
 }
+
 body.activated-file-tab-style-light
   .setting-item[data-id="shadow-activated-file-light"] {
   display: none;
 }
+
 body.activated-file-default-dark
   .setting-item[data-id="color-activated-file-dark"] {
   display: none;
 }
+
 body.activated-file-default-dark
   .setting-item[data-id="border-radius-activated-file-dark"] {
   display: none;
 }
+
 body.activated-file-default-dark
   .setting-item[data-id="background-activated-file-dark"] {
   display: none;
 }
+
 body.activated-file-default-dark
   .setting-item[data-id="shadow-activated-file-dark"] {
   display: none;
 }
+
 body.activated-file-accent-dark
   .setting-item[data-id="color-activated-file-dark"] {
   display: none;
 }
+
 body.activated-file-accent-dark
   .setting-item[data-id="border-radius-activated-file-dark"] {
   display: none;
 }
+
 body.activated-file-accent-dark
   .setting-item[data-id="background-activated-file-dark"] {
   display: none;
 }
+
 body.activated-file-accent-dark
   .setting-item[data-id="shadow-activated-file-dark"] {
   display: none;
 }
+
 body.activated-file-tab-style-dark
   .setting-item[data-id="color-activated-file-dark"] {
   display: none;
 }
+
 body.activated-file-tab-style-dark
   .setting-item[data-id="border-radius-activated-file-dark"] {
   display: none;
 }
+
 body.activated-file-tab-style-dark
   .setting-item[data-id="background-activated-file-dark"] {
   display: none;
 }
+
 body.activated-file-tab-style-dark
   .setting-item[data-id="shadow-activated-file-dark"] {
   display: none;
 }
+
 body:not(.table-width-customized) .setting-item[data-id="table-width"] {
   display: none;
 }
+
 body.file-icon-remove .setting-item[data-id="colorful-folder"] {
   display: none;
 }
+
 body:not(.new-tab-image-customize) .setting-item[data-id="new-tab-image"] {
   display: none;
 }
+
 body:not(.line-hover-indicator)
   .setting-item:is(
     [data-id="hover-indicator-color"],
@@ -24889,6 +25003,7 @@ body:not(.line-hover-indicator)
   ) {
   display: none;
 }
+
 body:not(.codeblock-style-customize)
   .setting-item:is(
     [data-id="code-background-light"],
@@ -24909,6 +25024,7 @@ body:not(.codeblock-style-customize)
   ) {
   display: none;
 }
+
 body:not(.callout-style-customize)
   .setting-item:is(
     [data-id="callout-border-width"],
@@ -24925,6 +25041,7 @@ body:not(.callout-style-customize)
   ) {
   display: none;
 }
+
 body:not(.editor-grid-background-pattren)
   .setting-item:is(
     [data-id="grid-background-pattern-color"],
@@ -24932,6 +25049,7 @@ body:not(.editor-grid-background-pattren)
   ) {
   display: none;
 }
+
 .accent-color-override-light.theme-light
   .mod-settings
   .vertical-tab-content-container
@@ -24941,6 +25059,7 @@ body:not(.editor-grid-background-pattren)
   position: relative;
   visibility: hidden;
 }
+
 .accent-color-override-dark.theme-dark
   .mod-settings
   .vertical-tab-content-container
@@ -24950,6 +25069,7 @@ body:not(.editor-grid-background-pattren)
   position: relative;
   visibility: hidden;
 }
+
 .accent-color-override-light.theme-light
   .mod-settings
   .vertical-tab-content-container

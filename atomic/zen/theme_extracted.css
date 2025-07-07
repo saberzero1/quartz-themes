@@ -853,7 +853,6 @@ body {
   --vault-profile-font-size: var(--font-ui-small);
   --vault-profile-font-weight: var(--font-medium);
   --win-bg-image-url: url("https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-  --window-font-size: 15;
   --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
   --zoom-factor: 1;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
@@ -1361,7 +1360,7 @@ input[type="search"] {
   color: var(--nav-item-color);
   cursor: var(--cursor);
   display: flex;
-  font-size: calc(var(--window-font-size) * 1px);
+  font-size: 15px;
   font-weight: var(--nav-item-weight);
   line-height: var(--line-height-tight);
   margin-bottom: var(--size-2-1);
@@ -1492,14 +1491,14 @@ input[type="search"] {
 }
 
 .tree-item-inner {
-  font-size: calc(var(--window-font-size) * 1px);
+  font-size: 15px;
   overflow: hidden;
   unicode-bidi: plaintext;
   white-space: pre-wrap;
 }
 
 .tree-item-inner-text {
-  font-size: calc(var(--window-font-size) * 1px);
+  font-size: 15px;
   overflow: hidden;
   text-overflow: ellipsis;
 }

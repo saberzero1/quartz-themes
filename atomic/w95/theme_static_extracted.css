@@ -28,7 +28,7 @@
   --color-accent: light-dark(#00007a, #00007a);
   --color-accent-1: light-dark(hsl(239, 101%, 25.8%), hsl(237, 102%, 27.6%));
   --color-accent-2: light-dark(hsl(237, 102%, 27.6%), hsl(235, 105%, 30.96%));
-  --color-accent-hsl: light-dark(#00007a, #00007a);
+  --color-accent-hsl: light-dark(240, 100%, 24%, 240, 100%, 24%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -243,7 +243,7 @@ body {
   --color-accent: light-dark(#00007a, #00007a);
   --color-accent-1: light-dark(hsl(239, 101%, 25.8%), hsl(237, 102%, 27.6%));
   --color-accent-2: light-dark(hsl(237, 102%, 27.6%), hsl(235, 105%, 30.96%));
-  --color-accent-hsl: light-dark(#00007a, #00007a);
+  --color-accent-hsl: light-dark(240, 100%, 24%, 240, 100%, 24%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -897,7 +897,7 @@ h6 a {
 
 h1 {
   --font-weight: 700;
-  color: light-dark(light-dark(#34548a, #34548a), light-dark(#34548a, #34548a));
+  color: #34548a;
   font-family: inherit;
   font-size: 1.4rem;
   font-style: normal;
@@ -911,7 +911,7 @@ h1 {
 
 h2 {
   --font-weight: 600;
-  color: light-dark(light-dark(#34548a, #34548a), light-dark(#34548a, #34548a));
+  color: #34548a;
   font-family: inherit;
   font-size: 1.3rem;
   font-style: normal;
@@ -925,7 +925,7 @@ h2 {
 
 h3 {
   --font-weight: 600;
-  color: light-dark(light-dark(#34548a, #34548a), light-dark(#34548a, #34548a));
+  color: #34548a;
   font-family: inherit;
   font-size: 1.2rem;
   font-style: normal;
@@ -939,7 +939,7 @@ h3 {
 
 h4 {
   --font-weight: 600;
-  color: light-dark(light-dark(#34548a, #34548a), light-dark(#34548a, #34548a));
+  color: #34548a;
   font-family: inherit;
   font-size: 1.1rem;
   font-style: normal;
@@ -953,7 +953,7 @@ h4 {
 
 h5 {
   --font-weight: 600;
-  color: light-dark(light-dark(#34548a, #34548a), light-dark(#34548a, #34548a));
+  color: #34548a;
   font-family: inherit;
   font-size: 1rem;
   font-style: normal;
@@ -967,7 +967,7 @@ h5 {
 
 h6 {
   --font-weight: 600;
-  color: light-dark(light-dark(#34548a, #34548a), light-dark(#34548a, #34548a));
+  color: #34548a;
   font-family: inherit;
   font-size: 0.9rem;
   font-style: normal;
@@ -980,10 +980,7 @@ h6 {
 }
 
 .markdown-rendered pre {
-  background-color: light-dark(
-    light-dark(#ffffff, #ffffff),
-    light-dark(#ffffff, #ffffff)
-  );
+  background-color: #ffffff;
   border: 0px solid transparent;
   border-radius: 4px;
   min-height: 38px;
@@ -995,10 +992,7 @@ h6 {
 
 .markdown-rendered code {
   -webkit-box-decoration-break: clone;
-  background-color: light-dark(
-    light-dark(#ffffff, #ffffff),
-    light-dark(#ffffff, #ffffff)
-  );
+  background-color: #ffffff;
   border: 0px solid transparent;
   border-radius: 4px;
   color: #181612;
@@ -1347,10 +1341,7 @@ input[type="search"] {
 }
 
 .nav-files-container {
-  background-color: light-dark(
-    light-dark(#ffffff, #ffffff),
-    light-dark(#ffffff, #ffffff)
-  );
+  background-color: #ffffff;
   border: 4px ridge
     light-dark(light-dark(#ffffff, #ffffff), light-dark(#ffffff, #ffffff));
   border-right: 0;
@@ -1410,13 +1401,13 @@ input[type="search"] {
 
 .nav-file-title.is-active {
   background-color: light-dark(#00007b, #00007b);
-  color: light-dark(light-dark(#ffffff, #ffffff), light-dark(#ffffff, #ffffff));
+  color: #ffffff;
   font-weight: inherit;
 }
 
 .nav-folder-title.is-active {
   background-color: light-dark(#00007b, #00007b);
-  color: light-dark(light-dark(#ffffff, #ffffff), light-dark(#ffffff, #ffffff));
+  color: #ffffff;
   font-weight: inherit;
 }
 
@@ -1469,7 +1460,7 @@ input[type="search"] {
 
 .tree-item-self.is-active {
   background-color: light-dark(#00007b, #00007b);
-  color: light-dark(light-dark(#ffffff, #ffffff), light-dark(#ffffff, #ffffff));
+  color: #ffffff;
   font-weight: inherit;
 }
 
@@ -1479,10 +1470,7 @@ input[type="search"] {
 }
 
 .tree-item-self.is-being-dragged {
-  background-color: light-dark(
-    light-dark(#00007b, #00007b),
-    light-dark(#00007b, #00007b)
-  );
+  background-color: #00007b;
   color: #ffffff;
 }
 
@@ -1546,10 +1534,7 @@ input[type="search"] {
 }
 
 kbd {
-  background-color: light-dark(
-    light-dark(#ffffff, #ffffff),
-    light-dark(#ffffff, #ffffff)
-  );
+  background-color: #ffffff;
   border-radius: 4px;
   color: #181612;
   font-family:
@@ -1715,11 +1700,11 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-highlight {
-  color: light-dark(light-dark(#00007b, #00007b), light-dark(#00007b, #00007b));
+  color: #00007b;
 }
 
 .graph-view.color-line-highlight {
-  color: light-dark(light-dark(#00007b, #00007b), light-dark(#00007b, #00007b));
+  color: #00007b;
 }
 
 .graph-controls {
@@ -1949,10 +1934,7 @@ svg.svg-icon {
 }
 
 .workspace-split {
-  background-color: light-dark(
-    light-dark(#bdbebd, #bdbebd),
-    light-dark(#bdbebd, #bdbebd)
-  );
+  background-color: #bdbebd;
   display: flex;
   position: relative;
 }

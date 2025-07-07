@@ -941,7 +941,7 @@
   --color-accent: light-dark(#5a6ded, #5a6ded);
   --color-accent-1: light-dark(#6f82f0, #8599f3);
   --color-accent-2: light-dark(#8599f3, #adbdf8);
-  --color-accent-hsl: light-dark(#5a6ded, #5a6ded);
+  --color-accent-hsl: light-dark(232, 80%, 64%, 232, 80%, 64%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -1824,7 +1824,7 @@ body {
   --color-accent: light-dark(#5a6ded, #5a6ded);
   --color-accent-1: light-dark(#6f82f0, #8599f3);
   --color-accent-2: light-dark(#8599f3, #adbdf8);
-  --color-accent-hsl: light-dark(#5a6ded, #5a6ded);
+  --color-accent-hsl: light-dark(232, 80%, 64%, 232, 80%, 64%);
   --color-activated-tab-header-dark: #000000;
   --color-activated-tab-header-light: #000000;
   --color-base-00: light-dark(#ffffff, #1e1e1e);
@@ -4391,10 +4391,7 @@ body:not(.show-view-header):not(.is-phone) .view-header {
 }
 
 .view-header-title {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: none;
   border-radius: 6px;
   box-shadow:
@@ -7803,10 +7800,7 @@ button {
 }
 
 button:not(.clickable-icon) {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   box-shadow: none;
   color: #ff3333;
 }
@@ -7920,10 +7914,7 @@ button.mod-destructive {
 }
 
 .card {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid transparent;
   border-radius: 4px;
   display: flex;
@@ -9887,10 +9878,7 @@ body.styled-scrollbars .modal-close-button {
 }
 
 .modal-close-button {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-radius: 6px;
   box-shadow:
     4px 4px 8px #00000026,
@@ -10362,10 +10350,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   cursor: default;
   text-align: center;
 }
@@ -11554,27 +11539,18 @@ kbd {
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .findbarOpen .pdf-viewer-container {
@@ -16941,10 +16917,7 @@ em {
   --metadata-label-width: 7em;
   --metadata-property-box-shadow: 0 0 0 1px #3f3f3f;
   align-items: center;
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   display: flex;
   width: 100%;
 }
@@ -18846,10 +18819,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .search-result-file-match-destination-file {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-radius: 4px;
   box-shadow: none;
   color: #868ec1;
@@ -19966,10 +19936,7 @@ body.theme-dark {
   --icon-size: 18px;
   --icon-stroke: 2px;
   align-items: center;
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-bottom: 1px solid transparent;
   border-radius: 0;
   box-shadow:
@@ -23153,10 +23120,7 @@ body.is-tablet .sidebar-toggle-button.mod-left {
 }
 
 .is-mobile button.mod-warning {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   color: #ff3333;
   font-weight: 800;
 }
@@ -24173,10 +24137,7 @@ input.mobile-vault-chooser-field-input {
 }
 
 .view-header-nav-buttons button.clickable-icon {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-radius: 6px;
   box-shadow:
     4px 4px 8px #00000026,
@@ -24204,10 +24165,7 @@ input.mobile-vault-chooser-field-input {
 }
 
 .view-action {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-radius: 6px;
   box-shadow:
     4px 4px 8px #00000026,
@@ -24741,10 +24699,7 @@ h2::after {
 }
 
 .clickable-icon.setting-editor-extra-setting-button {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-radius: 6px;
   box-shadow:
     4px 4px 8px #00000026,
@@ -24807,10 +24762,7 @@ body:not(.is-mobile)
 }
 
 .clickable-icon.setting-add-hotkey-button {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-radius: 6px;
   box-shadow:
     4px 4px 8px #00000026,
@@ -24832,10 +24784,7 @@ body:not(.is-mobile)
 }
 
 .clickable-icon.setting-restore-hotkey-button {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-radius: 6px;
   box-shadow:
     4px 4px 8px #00000026,
@@ -24863,10 +24812,7 @@ body:not(.is-mobile)
 }
 
 .clickable-icon.graph-controls-button {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-radius: 6px;
   border-right: 20px;
   box-shadow:
@@ -24963,10 +24909,7 @@ body:not(.is-mobile)
 }
 
 .modal-setting-nav-bar div.clickable-icon {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-radius: 6px;
   box-shadow:
     4px 4px 8px #00000026,

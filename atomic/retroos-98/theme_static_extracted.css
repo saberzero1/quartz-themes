@@ -6,7 +6,7 @@
   --color-accent: light-dark(#031e5e, #031e5e);
   --color-accent-1: light-dark(#032266, #02286d);
   --color-accent-2: light-dark(#02286d, #01307c);
-  --color-accent-hsl: light-dark(#031e5e, #031e5e);
+  --color-accent-hsl: light-dark(222, 94%, 19%, 222, 94%, 19%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -183,7 +183,7 @@ body {
   --color-accent: light-dark(#031e5e, #031e5e);
   --color-accent-1: light-dark(#032266, #02286d);
   --color-accent-2: light-dark(#02286d, #01307c);
-  --color-accent-hsl: light-dark(#031e5e, #031e5e);
+  --color-accent-hsl: light-dark(222, 94%, 19%, 222, 94%, 19%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -447,11 +447,7 @@ body {
   --list-marker-color-hover: #b3b3b3;
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
-  --maximize: url(
-    data:image/svg + xml,
-    charset=utf-8,
-    %3Csvgwidth="9"height="9"fill="none"xmlns="http://www.w3.org/2000/svg"%3E%3Cpathfill-rule="evenodd"clip-rule="evenodd"d="M9 0H0v9h9V0zM8 2H1v6h7V2z"fill="%23000"/%3E%3C/svg%3E
-  );
+  --maximize: url('data:image/svg + xml,charset=utf-8,%3Csvgwidth="9"height="9"fill="none"xmlns="http://www.w3.org/2000/svg"%3E%3Cpathfill-rule="evenodd"clip-rule="evenodd"d="M9 0H0v9h9V0zM8 2H1v6h7V2z"fill="%23000"/%3E%3C/svg%3E');
   --menu-backdrop-filter: none;
   --menu-background: #1e1e1e;
   --menu-border-color: #3f3f3f;
@@ -505,10 +501,7 @@ body {
   --metadata-property-radius-hover: 6px;
   --metadata-sidebar-input-font-size: 14.992px;
   --metadata-sidebar-label-font-size: 14.992px;
-  --minimize: url(
-    data:image/svg + xml,
-    %3Csvgwidth="6"height="2"fill="none"xmlns="http://www.w3.org/2000/svg"%3E%3Cpathfill="%23000"d="M0 0h6v2H0z"/%3E%3C/svg%3E
-  );
+  --minimize: url('data:image/svg + xml,%3Csvgwidth="6"height="2"fill="none"xmlns="http://www.w3.org/2000/svg"%3E%3Cpathfill="%23000"d="M0 0h6v2H0z"/%3E%3C/svg%3E');
   --modal-background: #000;
   --modal-border-color: #555555;
   --modal-border-width: 0.5pt;
@@ -1371,8 +1364,8 @@ input[type="search"] {
 
 .tree-item-self.is-active {
   background: light-dark(
-    hsl(light-dark(222, 222), light-dark(94%, 94%), light-dark(19%, 19%)),
-    hsl(light-dark(222, 222), light-dark(94%, 94%), light-dark(19%, 19%))
+    light-dark(hsl(222, 94%, 19%), hsl(222, 94%, 19%)),
+    light-dark(hsl(222, 94%, 19%), hsl(222, 94%, 19%))
   );
   background-color: #ffffff26;
   border-radius: 0px;

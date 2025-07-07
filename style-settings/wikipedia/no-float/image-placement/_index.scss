@@ -1,7 +1,0 @@
-.no-float .markdown-rendered img,
-.no-float img ~ img {
-  float: none;
-  clear: none;
-  width: revert;
-  margin: 1em 0px;
-}

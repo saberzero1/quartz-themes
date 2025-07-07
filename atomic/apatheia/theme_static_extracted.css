@@ -2247,7 +2247,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-attachment {
-  color: light-dark(light-dark(#e0ac00, #e0de71), light-dark(#e0ac00, #e0de71));
+  color: #e0ac00;
 }
 
 .graph-view.color-fill-unresolved {

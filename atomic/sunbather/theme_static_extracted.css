@@ -938,7 +938,7 @@ h6 {
   background-color: light-dark(#ecebeb, #131313);
   border: 0px solid transparent;
   border-radius: 4px;
-  color: light-dark(light-dark(#262626, #d6d4d4), light-dark(#262626, #d6d4d4));
+  color: #262626;
   font-family:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1474,7 +1474,7 @@ input[type="search"] {
 kbd {
   background-color: light-dark(#ecebeb, #131313);
   border-radius: 4px;
-  color: light-dark(light-dark(#262626, #d6d4d4), light-dark(#262626, #d6d4d4));
+  color: #262626;
   font-family:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1825,10 +1825,7 @@ svg.svg-icon {
 }
 
 .workspace-tabs .workspace-leaf {
-  background-color: light-dark(
-    light-dark(#ffffff, #050505),
-    light-dark(#ffffff, #050505)
-  );
+  background-color: #ffffff;
   height: 100%;
 }
 

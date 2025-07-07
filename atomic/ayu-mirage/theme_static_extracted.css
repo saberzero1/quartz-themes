@@ -1540,7 +1540,7 @@ input[type="search"] {
 
 .tree-item-self.is-being-dragged {
   background-color: #3f455b;
-  color: light-dark(light-dark(#d1cec6, #d1cec6), light-dark(#d1cec6, #d1cec6));
+  color: #d1cec6;
 }
 
 .tree-item-self .tree-item-icon {
@@ -1753,11 +1753,11 @@ svg.svg-icon {
 }
 
 .graph-view.color-line {
-  color: light-dark(light-dark(#282c3c, #282c3c), light-dark(#282c3c, #282c3c));
+  color: #282c3c;
 }
 
 .graph-view.color-text {
-  color: light-dark(light-dark(#d1cec6, #d1cec6), light-dark(#d1cec6, #d1cec6));
+  color: #d1cec6;
   font-size: 2em;
   font-weight: 600;
 }

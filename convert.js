@@ -1,3 +1,4 @@
+import { format } from "./extensions/formatter.mjs";
 import {
   splitCombinedRules,
   combineIdenticalSelectors,
@@ -141,7 +142,6 @@ manifestCollection.forEach((manifest) => {
   copyFileToDirectory(
     `./templates/_index.scss`,
     `./themes/${getTheme(manifest)}`,
-    // INIT ONLY
   );
   // check if "./themes/${getTheme(manifest)}/_index.scss" exists
   // if it does not exist, copy the file
@@ -325,7 +325,11 @@ manifestCollection.forEach((manifest) => {
       if (!fs.existsSync(`./converted_app.css`)) {
         const obsidianCSS = fs.readFileSync("./app.css", "utf8");
         const overridesCSS = fs.readFileSync("./overrides_app.css", "utf8");
-        const result = cleanCSS(obsidianCSS, overridesCSS, mode, true);
+        //const result = cleanCSS(obsidianCSS, overridesCSS, mode, true);
+        const result = format(
+          cleanCSS(obsidianCSS, overridesCSS, mode, false),
+          "css",
+        );
         writePrettier(`./converted_app.css`, result, "utf8", false);
         // Static version
         writePrettier(
@@ -367,17 +371,21 @@ manifestCollection.forEach((manifest) => {
       obsidianCSS,
       splitCombinedRules(cssString, mode),
       mode,
-      true,
+      false,
     );
-    let staticResult = generateStatic(result, themeNameLocal);
+    //let staticResult = generateStatic(result, themeNameLocal);
 
     // Theme variations (for style settings)
     //const styleSettings = extractStyleSettings(cssString);
-    const styleSettings = extractStyleSettingsFromFile(
+    const styleSettings = fs.existsSync(
       `./obsidian/${getValueFromDictionary(manifest, "name")}/style-settings.yaml`,
-    );
+    )
+      ? extractStyleSettingsFromFile(
+          `./obsidian/${getValueFromDictionary(manifest, "name")}/style-settings.yaml`,
+        )
+      : [];
     if (styleSettings && styleSettings.length > 0) {
-      console.log(`Foundt ${styleSettings.length} style settings sets`);
+      console.log(`Found ${styleSettings.length} style settings sets`);
       ensureDirectoryExists(`./style-settings/${getTheme(manifest)}`);
       // Clear out all subfolders of the style settings
       clearDirectories(`./extras/themes/${getTheme(manifest)}`);
@@ -411,6 +419,7 @@ manifestCollection.forEach((manifest) => {
               ? `'${style["default"]}'`
               : style["default"],
           );
+          /*
           staticResult = replaceVariableValue(
             staticResult,
             style["id"],
@@ -418,6 +427,7 @@ manifestCollection.forEach((manifest) => {
               ? `'${style["default"]}'`
               : style["default"],
           );
+          */
         } else if (style["type"] === "variable-number") {
           // Use the default number
           // Replace all lines with variable in the CSS string
@@ -426,11 +436,13 @@ manifestCollection.forEach((manifest) => {
             style["id"],
             style["default"] + (style["format"] ?? ""),
           );
+          /*
           staticResult = replaceVariableValue(
             staticResult,
             style["id"],
             style["default"] + (style["format"] ?? ""),
           );
+          */
         } else if (style["type"] === "variable-number-slider") {
           // Use the default number
           // Replace all lines with variable in the CSS string
@@ -439,11 +451,13 @@ manifestCollection.forEach((manifest) => {
             style["id"],
             style["default"] + (style["format"] ?? ""),
           );
+          /*
           staticResult = replaceVariableValue(
             staticResult,
             style["id"],
             style["default"] + (style["format"] ?? ""),
           );
+          */
         } else if (style["type"] === "variable-select") {
           // Use the default select value
           // Replace all lines with variable in the CSS string
@@ -452,11 +466,13 @@ manifestCollection.forEach((manifest) => {
             style["id"],
             style["default"] + (style["format"] ?? ""),
           );
+          /*
           staticResult = replaceVariableValue(
             staticResult,
             style["id"],
             style["default"] + (style["format"] ?? ""),
           );
+          */
         } else if (style["type"] === "variable-color") {
           // Use the default color
           // Replace all lines with variable in the CSS string
@@ -465,11 +481,13 @@ manifestCollection.forEach((manifest) => {
             style["id"],
             style["default"] + (style["format"] ?? ""),
           );
+          /*
           staticResult = replaceVariableValue(
             staticResult,
             style["id"],
             style["default"] + (style["format"] ?? ""),
           );
+          */
         } else if (style["type"] === "variable-themed-color") {
           // Use the default themed colors
           // This is a special case where we need to handle both light and dark themes
@@ -479,15 +497,18 @@ manifestCollection.forEach((manifest) => {
             style["id"],
             `light-dark(${style["default-light"]}, ${style["default-dark"]})`,
           );
+          /*
           staticResult = replaceVariableValue(
             staticResult,
             style["id"],
             `light-dark(${style["default-light"]}, ${style["default-dark"]})`,
           );
+          */
         } else if (style["type"] === "class-toggle") {
           // Extract the class toggle CSS
           styleRulesCSS = extractClassToggleCss(cssString, style["id"]);
           writeStyleSettings(styleRulesCSS, getTheme(manifest), style["id"]);
+          /*
           staticStyleRulesCSS = extractClassToggleCss(cssString, style["id"]);
           writeStyleSettings(
             staticStyleRulesCSS,
@@ -495,6 +516,7 @@ manifestCollection.forEach((manifest) => {
             style["id"],
             "static",
           );
+          */
         } else if (style["type"] === "class-select") {
           // Extract the class for every option in the select
           const classSelectOptions = style["options"];
@@ -508,6 +530,7 @@ manifestCollection.forEach((manifest) => {
                 style["id"],
                 className,
               );
+              /*
               staticStyleRulesCSS = extractClassToggleCss(cssString, className);
               writeStyleSettings(
                 staticStyleRulesCSS,
@@ -516,6 +539,7 @@ manifestCollection.forEach((manifest) => {
                 className,
                 "static",
               );
+              */
             } else {
               console.warn(
                 `No class name specified for option: ${JSON.stringify(option)}`,
@@ -531,23 +555,30 @@ manifestCollection.forEach((manifest) => {
     }
 
     // Write the main theme CSS to the atomic file
-    writePrettier(atomicFile, result, "utf8");
+    writePrettier(atomicFile, format(result, "css"), "utf8");
     // Write the static custom properties to the atomic file
+    /*
     writePrettier(
       staticFile,
       generateStatic(staticResult, themeNameLocal),
       "utf8",
     );
+    */
     // Write extracted version to speed up later processing
+    /*
     const cssAtomicString = fs.readFileSync(atomicFile, "utf8");
     const extractResult = extractCSS(cssAtomicString);
     writePrettier(atomicExctractedFile, extractResult, "utf8");
+    */
     // Write extracted version of the static version to speed up later processing
+    /*
     const cssStaticString = fs.readFileSync(staticFile, "utf8");
     const staticExtractResult = extractCSS(cssStaticString);
     writePrettier(staticExctractedFile, staticExtractResult, "utf8");
+    */
   }
 
+  /*
   const useExtendedSyntax = staticMode
     ? getValueFromDictionary(manifest, "use_extended_syntax")
       ? "theme_static"
@@ -555,6 +586,8 @@ manifestCollection.forEach((manifest) => {
     : getValueFromDictionary(manifest, "use_extended_syntax")
       ? "theme"
       : "theme_extracted";
+      */
+  const useExtendedSyntax = "theme"; // Always use the extended syntax for now
   let themeName = getTheme(manifest);
   let themeCSS = fs.readFileSync(
     `${atomicFolder}/${themeName}/${useExtendedSyntax}.css`,

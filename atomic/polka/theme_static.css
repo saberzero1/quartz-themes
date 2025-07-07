@@ -6771,22 +6771,22 @@ body:not(.is-mobile)
 @media (hover: hover) {
   .workspace-leaf-resize-handle:hover {
     background-color: light-dark(
-      hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%)),
-      hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%))
+      light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%)),
+      light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%))
     );
     border-color: light-dark(
-      hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%)),
-      hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%))
+      light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%)),
+      light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%))
     );
   }
   .is-translucent .workspace-leaf-resize-handle:hover {
     background-color: light-dark(
-      hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%)),
-      hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%))
+      light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%)),
+      light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%))
     );
     border-color: light-dark(
-      hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%)),
-      hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%))
+      light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%)),
+      light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%))
     );
   }
 }
@@ -8020,12 +8020,12 @@ button.mod-cta {
 button.mod-cta.mobile-tap {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%)),
-      hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%))
+      light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%)),
+      light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%))
     ),
     light-dark(
-      hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%)),
-      hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%))
+      light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%)),
+      light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%))
     )
   );
 }
@@ -8034,12 +8034,12 @@ button.mod-cta.mobile-tap {
   button.mod-cta:hover {
     background-color: light-dark(
       light-dark(
-        hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%)),
-        hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%))
+        light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%)),
+        light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%))
       ),
       light-dark(
-        hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%)),
-        hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%))
+        light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%)),
+        light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%))
       )
     );
   }
@@ -8090,10 +8090,7 @@ button.mod-destructive {
 }
 
 .card {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid transparent;
   border-radius: 4px;
   display: flex;
@@ -10227,8 +10224,8 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .modal .modal-nav-action.mod-cta {
   color: light-dark(
-    hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%)),
-    hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%))
+    light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%)),
+    light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%))
   );
   font-weight: 600;
   inset-inline-end: 0;
@@ -10522,10 +10519,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   cursor: default;
   text-align: center;
 }
@@ -11719,27 +11713,18 @@ kbd {
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .findbarOpen .pdf-viewer-container {
@@ -13384,7 +13369,7 @@ iframe.external-embed {
 }
 
 .metadata-error-container {
-  background-color: rgba(light-dark(rgb(235, 0, 0), rgb(250, 30, 0)), 0.1);
+  background-color: light-dark(rgba(235, 0, 0, 0.1), rgba(250, 30, 0, 0.1));
   border-radius: 2px;
   padding: 4px 8px;
 }
@@ -19993,8 +19978,8 @@ body.theme-dark {
   );
   border: 2px solid
     light-dark(
-      hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%)),
-      hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%))
+      light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%)),
+      light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%))
     );
   pointer-events: none;
   position: absolute;
@@ -20099,8 +20084,8 @@ body.theme-dark {
 @media (hover: hover) {
   .canvas-card-menu .canvas-card-menu-button:hover {
     color: light-dark(
-      hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%)),
-      hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%))
+      light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%)),
+      light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%))
     );
   }
 }
@@ -20173,8 +20158,8 @@ body.theme-dark {
 
 .canvas-control-item.is-active {
   color: light-dark(
-    hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%)),
-    hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%))
+    light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%)),
+    light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%))
   );
 }
 
@@ -20345,8 +20330,8 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 
 .canvas-node.is-selected .canvas-node-container {
   border-color: light-dark(
-    hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%)),
-    hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%))
+    light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%)),
+    light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%))
   );
   box-shadow:
     0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1),
@@ -20355,8 +20340,8 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 
 .canvas-node.is-focused .canvas-node-container {
   border-color: light-dark(
-    hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%)),
-    hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%))
+    light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%)),
+    light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%))
   );
   box-shadow:
     0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1),
@@ -20426,8 +20411,8 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
   );
   border: 4px solid
     light-dark(
-      hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%)),
-      hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%))
+      light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%)),
+      light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%))
     );
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
 }
@@ -20703,8 +20688,8 @@ body.is-mobile .canvas-node-resizer {
   background-color: hsl(221, 33.3%, 12.9%);
   border: 2px solid
     light-dark(
-      hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%)),
-      hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%))
+      light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%)),
+      light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%))
     );
   border-radius: 3px;
   display: block;
@@ -20720,8 +20705,8 @@ body.is-mobile .canvas-node-resizer {
   background-color: hsl(221, 33.3%, 12.9%);
   border: 2px solid
     light-dark(
-      hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%)),
-      hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%))
+      light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%)),
+      light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%))
     );
   border-radius: 3px;
   display: block;
@@ -20737,8 +20722,8 @@ body.is-mobile .canvas-node-resizer {
   background-color: hsl(221, 33.3%, 12.9%);
   border: 2px solid
     light-dark(
-      hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%)),
-      hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%))
+      light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%)),
+      light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%))
     );
   border-radius: 3px;
   display: block;
@@ -20754,8 +20739,8 @@ body.is-mobile .canvas-node-resizer {
   background-color: hsl(221, 33.3%, 12.9%);
   border: 2px solid
     light-dark(
-      hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%)),
-      hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%))
+      light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%)),
+      light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%))
     );
   border-radius: 3px;
   display: block;
@@ -20794,8 +20779,8 @@ body.is-mobile .canvas-node-resizer {
 
 .canvas-node-connection-point::after {
   background-color: light-dark(
-    hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%)),
-    hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%))
+    light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%)),
+    light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%))
   );
   border: 3px solid transparent;
   border-radius: 50%;
@@ -20831,16 +20816,16 @@ body.is-mobile .canvas-node-resizer {
 
 .canvas-snaps line {
   stroke: light-dark(
-    hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%)),
-    hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%))
+    light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%)),
+    light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%))
   );
   stroke-width: 1px;
 }
 
 .canvas-snaps circle {
   fill: light-dark(
-    hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%)),
-    hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%))
+    light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%)),
+    light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%))
   );
 }
 
@@ -21087,8 +21072,8 @@ body.is-mobile .canvas-node-resizer {
   );
   border-radius: 4px;
   color: light-dark(
-    hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%)),
-    hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%))
+    light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%)),
+    light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%))
   );
   font-size: 19.2px;
   line-height: 1.25em;
@@ -21135,8 +21120,8 @@ body.is-mobile .canvas-node-resizer {
 .canvas-cursor {
   border: 5px solid
     light-dark(
-      hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%)),
-      hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%))
+      light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%)),
+      light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%))
     );
   border-radius: 5px;
   height: 1px;
@@ -24468,8 +24453,8 @@ table {
 
 .reveal .controls button {
   color: light-dark(
-    hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%)),
-    hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%))
+    light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%)),
+    light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%))
   );
 }
 
@@ -24678,8 +24663,8 @@ code.language-output {
 .oz-folder-contents {
   border-left: 1px solid
     light-dark(
-      hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%)),
-      hsl(light-dark(0, 189), light-dark(75%, 100%), light-dark(52%, 49%))
+      light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%)),
+      light-dark(hsl(0, 75%, 52%), hsl(189, 100%, 49%))
     );
 }
 

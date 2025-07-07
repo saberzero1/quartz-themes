@@ -865,7 +865,7 @@ body {
   -webkit-user-select: none;
   background-color: #211f23;
   caret-color: #d560b1;
-  color: light-dark(light-dark(#30222b, #d8bcd8), light-dark(#30222b, #d8bcd8));
+  color: #30222b;
   contain: initial;
   font-family:
     "??",
@@ -1019,10 +1019,7 @@ h6 {
   background-color: #111;
   border: 0px solid transparent;
   border-radius: 5px;
-  color: light-dark(
-    light-dark(#412438cd, #e499e4a2),
-    light-dark(#412438cd, #e499e4a2)
-  );
+  color: #412438cd;
   font-family:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1066,10 +1063,7 @@ h6 {
 }
 
 .markdown-rendered button.copy-code-button:hover {
-  background-color: light-dark(
-    light-dark(#a32d7f52, #a32d7f52),
-    light-dark(#a32d7f52, #a32d7f52)
-  );
+  background-color: #a32d7f52;
 }
 
 .callout {
@@ -1336,10 +1330,7 @@ input.prompt-input {
 }
 
 .suggestion-item.is-selected {
-  background-color: light-dark(
-    light-dark(#a32d7f52, #a32d7f52),
-    light-dark(#a32d7f52, #a32d7f52)
-  );
+  background-color: #a32d7f52;
 }
 
 .suggestion-highlight {
@@ -1347,11 +1338,8 @@ input.prompt-input {
 }
 
 .markdown-rendered mark {
-  background-color: light-dark(
-    light-dark(#a32d7f52, #a32d7f52),
-    light-dark(#a32d7f52, #a32d7f52)
-  );
-  color: light-dark(light-dark(#30222b, #d8bcd8), light-dark(#30222b, #d8bcd8));
+  background-color: #a32d7f52;
+  color: #30222b;
 }
 
 a.tag {
@@ -1375,7 +1363,7 @@ input[type="search"] {
       light-dark(#a32d7f36, #a32d7f36)
     );
   border-radius: 5px;
-  color: light-dark(light-dark(#30222b, #d8bcd8), light-dark(#30222b, #d8bcd8));
+  color: #30222b;
   font-family: inherit;
   font-size: 14.992px;
   height: 40px;
@@ -1394,10 +1382,7 @@ input[type="search"] {
 
 .nav-file-tag {
   align-self: center;
-  background-color: light-dark(
-    light-dark(#a32d7f52, #a32d7f52),
-    light-dark(#a32d7f52, #a32d7f52)
-  );
+  background-color: #a32d7f52;
   border-radius: 5px;
   font-size: 9px;
   font-weight: 600;
@@ -1419,7 +1404,7 @@ input[type="search"] {
 
 .nav-folder-title {
   border-radius: 5px;
-  color: light-dark(light-dark(#30222b, #d8bcd8), light-dark(#30222b, #d8bcd8));
+  color: #30222b;
   cursor: pointer;
   display: flex;
   font-size: 16px;
@@ -1431,7 +1416,7 @@ input[type="search"] {
 
 .nav-file-title {
   border-radius: 5px;
-  color: light-dark(light-dark(#30222b, #d8bcd8), light-dark(#30222b, #d8bcd8));
+  color: #30222b;
   cursor: pointer;
   display: flex;
   font-size: 16px;
@@ -1442,43 +1427,31 @@ input[type="search"] {
 }
 
 .nav-file-title.is-active {
-  background-color: light-dark(
-    light-dark(#a32d7f52, #a32d7f52),
-    light-dark(#a32d7f52, #a32d7f52)
-  );
-  color: light-dark(light-dark(#30222b, #d8bcd8), light-dark(#30222b, #d8bcd8));
+  background-color: #a32d7f52;
+  color: #30222b;
   font-weight: inherit;
 }
 
 .nav-folder-title.is-active {
-  background-color: light-dark(
-    light-dark(#a32d7f52, #a32d7f52),
-    light-dark(#a32d7f52, #a32d7f52)
-  );
-  color: light-dark(light-dark(#30222b, #d8bcd8), light-dark(#30222b, #d8bcd8));
+  background-color: #a32d7f52;
+  color: #30222b;
   font-weight: inherit;
 }
 
 .nav-file-title.is-selected {
-  background-color: light-dark(
-    light-dark(#a32d7f36, #a32d7f36),
-    light-dark(#a32d7f36, #a32d7f36)
-  );
+  background-color: #a32d7f36;
   color: #d8bcd8;
 }
 
 .nav-folder-title.is-selected {
-  background-color: light-dark(
-    light-dark(#a32d7f36, #a32d7f36),
-    light-dark(#a32d7f36, #a32d7f36)
-  );
+  background-color: #a32d7f36;
   color: #d8bcd8;
 }
 
 .tree-item-self {
   align-items: baseline;
   border-radius: 5px;
-  color: light-dark(light-dark(#30222b, #d8bcd8), light-dark(#30222b, #d8bcd8));
+  color: #30222b;
   display: flex;
   font-size: 16px;
   font-weight: inherit;
@@ -1507,36 +1480,24 @@ input[type="search"] {
 }
 
 .tree-item-self.is-clickable.mobile-tap {
-  background-color: light-dark(
-    light-dark(#a32d7f52, #a32d7f52),
-    light-dark(#a32d7f52, #a32d7f52)
-  );
-  color: light-dark(light-dark(#30222b, #d8bcd8), light-dark(#30222b, #d8bcd8));
+  background-color: #a32d7f52;
+  color: #30222b;
   font-weight: inherit;
 }
 
 .tree-item-self.is-active {
-  background-color: light-dark(
-    light-dark(#a32d7f52, #a32d7f52),
-    light-dark(#a32d7f52, #a32d7f52)
-  );
-  color: light-dark(light-dark(#30222b, #d8bcd8), light-dark(#30222b, #d8bcd8));
+  background-color: #a32d7f52;
+  color: #30222b;
   font-weight: inherit;
 }
 
 .tree-item-self.is-selected {
-  background-color: light-dark(
-    light-dark(#a32d7f36, #a32d7f36),
-    light-dark(#a32d7f36, #a32d7f36)
-  );
+  background-color: #a32d7f36;
   color: #d8bcd8;
 }
 
 .tree-item-self.is-being-dragged {
-  background-color: light-dark(
-    light-dark(#a32d7f, #a32d7f),
-    light-dark(#a32d7f, #a32d7f)
-  );
+  background-color: #a32d7f;
   color: #ffffff;
 }
 
@@ -1606,10 +1567,7 @@ input[type="search"] {
 kbd {
   background-color: #111;
   border-radius: 5px;
-  color: light-dark(
-    light-dark(#412438cd, #e499e4a2),
-    light-dark(#412438cd, #e499e4a2)
-  );
+  color: #412438cd;
   font-family:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1651,11 +1609,8 @@ svg.svg-icon {
 }
 
 .clickable-icon.is-active {
-  background-color: light-dark(
-    light-dark(#a32d7f52, #a32d7f52),
-    light-dark(#a32d7f52, #a32d7f52)
-  );
-  color: light-dark(light-dark(#30222b, #d8bcd8), light-dark(#30222b, #d8bcd8));
+  background-color: #a32d7f52;
+  color: #30222b;
   opacity: 0.65;
 }
 
@@ -1711,7 +1666,7 @@ svg.svg-icon {
 
 .graph-view.color-fill-focused {
   color: light-dark(
-    light-dark(light-dark(#d560b1, #d560b1), light-dark(#d560b1, #d560b1)),
+    light-dark(#d560b1, #d560b1),
     light-dark(light-dark(#d560b1, #d560b1), light-dark(#d560b1, #d560b1))
   );
 }
@@ -1757,34 +1712,34 @@ svg.svg-icon {
 }
 
 .graph-view.color-arrow {
-  color: light-dark(light-dark(#30222b, #d8bcd8), light-dark(#30222b, #d8bcd8));
+  color: #30222b;
   opacity: 0.5;
 }
 
 .graph-view.color-circle {
   color: light-dark(
-    light-dark(light-dark(#d560b1, #d560b1), light-dark(#d560b1, #d560b1)),
+    light-dark(#d560b1, #d560b1),
     light-dark(light-dark(#d560b1, #d560b1), light-dark(#d560b1, #d560b1))
   );
 }
 
 .graph-view.color-line {
-  color: light-dark(light-dark(#d4d4d4, #3f3f3f), light-dark(#d4d4d4, #3f3f3f));
+  color: #d4d4d4;
 }
 
 .graph-view.color-text {
   color: light-dark(
-    light-dark(light-dark(#30222b, #d8bcd8), light-dark(#30222b, #d8bcd8)),
+    light-dark(#30222b, #d8bcd8),
     light-dark(light-dark(#30222b, #d8bcd8), light-dark(#30222b, #d8bcd8))
   );
 }
 
 .graph-view.color-fill-highlight {
-  color: light-dark(light-dark(#a32d7f, #a32d7f), light-dark(#a32d7f, #a32d7f));
+  color: #a32d7f;
 }
 
 .graph-view.color-line-highlight {
-  color: light-dark(light-dark(#a32d7f, #a32d7f), light-dark(#a32d7f, #a32d7f));
+  color: #a32d7f;
 }
 
 .graph-controls {
@@ -2137,10 +2092,7 @@ svg.svg-icon {
 .workspace-leaf-resize-handle {
   -webkit-app-region: no-drag;
   background-color: transparent;
-  border-color: light-dark(
-    light-dark(#a32d7f36, #a32d7f36),
-    light-dark(#a32d7f36, #a32d7f36)
-  );
+  border-color: #a32d7f36;
   border-top: 0;
   border-width: 0.5pt;
   margin: 0;

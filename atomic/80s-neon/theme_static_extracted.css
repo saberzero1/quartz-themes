@@ -811,7 +811,7 @@ body {
   -webkit-user-select: none;
   background-color: light-dark(#2b213a, #2b213a);
   caret-color: #00ffff;
-  color: light-dark(light-dark(#ff00ff, #ff00ff), light-dark(#ff00ff, #ff00ff));
+  color: #ff00ff;
   contain: initial;
   font-family:
     "??",
@@ -995,7 +995,7 @@ h6 {
 .markdown-rendered button.copy-code-button {
   background-color: transparent;
   box-shadow: none;
-  color: light-dark(light-dark(#ff79c6, #ff79c6), light-dark(#ff79c6, #ff79c6));
+  color: #ff79c6;
   font-family:
     "??",
     "??",
@@ -1293,7 +1293,7 @@ input.prompt-input {
 
 .markdown-rendered mark {
   background-color: light-dark(#ffd319, #ffd319);
-  color: light-dark(light-dark(#ff00ff, #ff00ff), light-dark(#ff00ff, #ff00ff));
+  color: #ff00ff;
 }
 
 a.tag {
@@ -1314,7 +1314,7 @@ input[type="search"] {
   border: 1px solid
     light-dark(light-dark(#00ffff, #00ffff), light-dark(#00ffff, #00ffff));
   border-radius: 5px;
-  color: light-dark(light-dark(#ff00ff, #ff00ff), light-dark(#ff00ff, #ff00ff));
+  color: #ff00ff;
   font-family: inherit;
   font-size: 14.992px;
   height: 40px;
@@ -1448,10 +1448,7 @@ input[type="search"] {
 }
 
 .tree-item-self.is-being-dragged {
-  background-color: light-dark(
-    light-dark(#00ffff, #00ffff),
-    light-dark(#00ffff, #00ffff)
-  );
+  background-color: #00ffff;
   color: #000000cc;
 }
 
@@ -1486,7 +1483,7 @@ input[type="search"] {
 
 .tree-item-flair {
   border-radius: 4px;
-  color: light-dark(light-dark(#bd93f9, #bd93f9), light-dark(#bd93f9, #bd93f9));
+  color: #bd93f9;
   font-size: 12.8px;
   line-height: 1;
 }
@@ -1503,7 +1500,7 @@ input[type="search"] {
 }
 
 .tree-item-inner-subtext {
-  color: light-dark(light-dark(#bd93f9, #bd93f9), light-dark(#bd93f9, #bd93f9));
+  color: #bd93f9;
   font-size: 85%;
 }
 
@@ -1546,7 +1543,7 @@ svg.svg-icon {
 
 .clickable-icon[aria-disabled="true"] {
   background-color: unset;
-  color: light-dark(light-dark(#ff79c6, #ff79c6), light-dark(#ff79c6, #ff79c6));
+  color: #ff79c6;
   opacity: 0.4;
 }
 
@@ -1580,7 +1577,7 @@ svg.svg-icon {
 }
 
 .view-header-title-parent .view-header-breadcrumb-separator {
-  color: light-dark(light-dark(#bd93f9, #bd93f9), light-dark(#bd93f9, #bd93f9));
+  color: #bd93f9;
   padding: 2px 1px;
 }
 
@@ -1632,27 +1629,27 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-1 {
-  color: light-dark(light-dark(#ff79c6, #ff79c6), light-dark(#ff79c6, #ff79c6));
+  color: #ff79c6;
 }
 
 .graph-view.color-fill-2 {
-  color: light-dark(light-dark(#ff79c6, #ff79c6), light-dark(#ff79c6, #ff79c6));
+  color: #ff79c6;
 }
 
 .graph-view.color-fill-3 {
-  color: light-dark(light-dark(#ff79c6, #ff79c6), light-dark(#ff79c6, #ff79c6));
+  color: #ff79c6;
 }
 
 .graph-view.color-fill-4 {
-  color: light-dark(light-dark(#ff79c6, #ff79c6), light-dark(#ff79c6, #ff79c6));
+  color: #ff79c6;
 }
 
 .graph-view.color-fill-5 {
-  color: light-dark(light-dark(#ff79c6, #ff79c6), light-dark(#ff79c6, #ff79c6));
+  color: #ff79c6;
 }
 
 .graph-view.color-fill-6 {
-  color: light-dark(light-dark(#ff79c6, #ff79c6), light-dark(#ff79c6, #ff79c6));
+  color: #ff79c6;
 }
 
 .graph-view.color-arrow {
@@ -1673,11 +1670,11 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-highlight {
-  color: light-dark(light-dark(#00ffff, #00ffff), light-dark(#00ffff, #00ffff));
+  color: #00ffff;
 }
 
 .graph-view.color-line-highlight {
-  color: light-dark(light-dark(#00ffff, #00ffff), light-dark(#00ffff, #00ffff));
+  color: #00ffff;
 }
 
 .graph-controls {

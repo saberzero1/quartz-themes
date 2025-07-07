@@ -907,10 +907,7 @@ body {
   --zoom-factor: 1;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(
-    light-dark(#fffbff, #1c1b1e),
-    light-dark(#fffbff, #1c1b1e)
-  );
+  background-color: #fffbff;
   caret-color: #653cc3;
   color: #111;
   contain: initial;
@@ -1338,10 +1335,7 @@ h6 {
 }
 
 .popover {
-  background-color: light-dark(
-    light-dark(#fffbff, #1c1b1e),
-    light-dark(#fffbff, #1c1b1e)
-  );
+  background-color: #fffbff;
   border: 1px solid transparent;
   border-radius: 8px;
   box-shadow:
@@ -1355,10 +1349,7 @@ h6 {
 }
 
 .prompt {
-  background-color: light-dark(
-    light-dark(#fffbff, #1c1b1e),
-    light-dark(#fffbff, #1c1b1e)
-  );
+  background-color: #fffbff;
   border: 0.5pt solid #555555;
   border-radius: 12px;
   box-shadow:
@@ -1377,10 +1368,7 @@ h6 {
 }
 
 input.prompt-input {
-  background-color: light-dark(
-    light-dark(#fffbff, #1c1b1e),
-    light-dark(#fffbff, #1c1b1e)
-  );
+  background-color: #fffbff;
   border: none;
   border-bottom: 1px solid #e8e1f9;
   border-radius: 0;
@@ -1561,10 +1549,7 @@ input[type="search"] {
 }
 
 .tree-item-self.is-being-dragged {
-  background-color: light-dark(
-    light-dark(#5f4bbd, #cabeff),
-    light-dark(#5f4bbd, #cabeff)
-  );
+  background-color: #5f4bbd;
   color: #f2f1f4;
 }
 
@@ -1789,18 +1774,15 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-highlight {
-  color: light-dark(light-dark(#5f4bbd, #cabeff), light-dark(#5f4bbd, #cabeff));
+  color: #5f4bbd;
 }
 
 .graph-view.color-line-highlight {
-  color: light-dark(light-dark(#5f4bbd, #cabeff), light-dark(#5f4bbd, #cabeff));
+  color: #5f4bbd;
 }
 
 .graph-controls {
-  background-color: light-dark(
-    light-dark(#fffbff, #1c1b1e),
-    light-dark(#fffbff, #1c1b1e)
-  );
+  background-color: #fffbff;
   border-radius: 8px;
   inset-inline-end: 12px;
   overflow: auto;
@@ -2086,17 +2068,11 @@ svg.svg-icon {
 }
 
 .workspace-split.mod-root {
-  background-color: light-dark(
-    light-dark(#fffbff, #1c1b1e),
-    light-dark(#fffbff, #1c1b1e)
-  );
+  background-color: #fffbff;
 }
 
 .workspace-split.mod-root .view-content {
-  background-color: light-dark(
-    light-dark(#fffbff, #1c1b1e),
-    light-dark(#fffbff, #1c1b1e)
-  );
+  background-color: #fffbff;
 }
 
 .workspace-leaf-resize-handle {

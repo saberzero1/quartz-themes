@@ -866,10 +866,7 @@ body {
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background: light-dark(#faf4ed, #191724);
-  background-color: light-dark(
-    light-dark(#fffaf3, #1f1d2e),
-    light-dark(#fffaf3, #1f1d2e)
-  );
+  background-color: #fffaf3;
   caret-color: #eb6f92;
   color: light-dark(#575279, #e0def4);
   contain: initial;
@@ -1043,7 +1040,7 @@ h6 {
 .markdown-rendered button.copy-code-button {
   background-color: transparent;
   box-shadow: none;
-  color: light-dark(light-dark(#9893a5, #6e6a86), light-dark(#9893a5, #6e6a86));
+  color: #9893a5;
   font-family:
     "??",
     "??",
@@ -1286,10 +1283,7 @@ h6 {
 }
 
 .popover {
-  background-color: light-dark(
-    light-dark(#faf4ed, #191724),
-    light-dark(#faf4ed, #191724)
-  );
+  background-color: #faf4ed;
   border: 1px solid
     light-dark(light-dark(#dfdad9, #403d52), light-dark(#dfdad9, #403d52));
   border-radius: 8px;
@@ -1304,10 +1298,7 @@ h6 {
 }
 
 .prompt {
-  background-color: light-dark(
-    light-dark(#fffaf3, #1f1d2e),
-    light-dark(#fffaf3, #1f1d2e)
-  );
+  background-color: #fffaf3;
   border: 0.5pt solid #555555;
   border-radius: 12px;
   box-shadow:
@@ -1326,10 +1317,7 @@ h6 {
 }
 
 input.prompt-input {
-  background-color: light-dark(
-    light-dark(#fffaf3, #1f1d2e),
-    light-dark(#fffaf3, #1f1d2e)
-  );
+  background-color: #fffaf3;
   border: none;
   border-bottom: 1px solid
     light-dark(light-dark(#faf4ed, #191724), light-dark(#faf4ed, #191724));
@@ -1351,7 +1339,7 @@ input.prompt-input {
 
 .markdown-rendered mark {
   background-color: var(--text-highlight-bg);
-  color: light-dark(light-dark(#575279, #e0def4), light-dark(#575279, #e0def4));
+  color: #575279;
 }
 
 a.tag {
@@ -1373,7 +1361,7 @@ input[type="search"] {
   border: 1px solid
     light-dark(light-dark(#dfdad9, #403d52), light-dark(#dfdad9, #403d52));
   border-radius: 5px;
-  color: light-dark(light-dark(#575279, #e0def4), light-dark(#575279, #e0def4));
+  color: #575279;
   font-family: inherit;
   font-size: 14.992px;
   height: 40px;
@@ -1515,10 +1503,7 @@ input[type="search"] {
 }
 
 .tree-item-self.is-being-dragged {
-  background-color: light-dark(
-    light-dark(#f4ede8, #21202e),
-    light-dark(#f4ede8, #21202e)
-  );
+  background-color: #f4ede8;
   color: #eb6f92;
 }
 
@@ -1600,7 +1585,7 @@ svg.svg-icon {
 }
 
 .clickable-icon.mod-warning {
-  color: light-dark(light-dark(#b4637a, #eb6f92), light-dark(#b4637a, #eb6f92));
+  color: #b4637a;
 }
 
 .clickable-icon.mod-filled svg {
@@ -1613,7 +1598,7 @@ svg.svg-icon {
 
 .clickable-icon[aria-disabled="true"] {
   background-color: unset;
-  color: light-dark(light-dark(#9893a5, #6e6a86), light-dark(#9893a5, #6e6a86));
+  color: #9893a5;
   opacity: 0.4;
 }
 
@@ -1699,27 +1684,27 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-1 {
-  color: light-dark(light-dark(#9893a5, #6e6a86), light-dark(#9893a5, #6e6a86));
+  color: #9893a5;
 }
 
 .graph-view.color-fill-2 {
-  color: light-dark(light-dark(#9893a5, #6e6a86), light-dark(#9893a5, #6e6a86));
+  color: #9893a5;
 }
 
 .graph-view.color-fill-3 {
-  color: light-dark(light-dark(#9893a5, #6e6a86), light-dark(#9893a5, #6e6a86));
+  color: #9893a5;
 }
 
 .graph-view.color-fill-4 {
-  color: light-dark(light-dark(#9893a5, #6e6a86), light-dark(#9893a5, #6e6a86));
+  color: #9893a5;
 }
 
 .graph-view.color-fill-5 {
-  color: light-dark(light-dark(#9893a5, #6e6a86), light-dark(#9893a5, #6e6a86));
+  color: #9893a5;
 }
 
 .graph-view.color-fill-6 {
-  color: light-dark(light-dark(#9893a5, #6e6a86), light-dark(#9893a5, #6e6a86));
+  color: #9893a5;
 }
 
 .graph-view.color-arrow {
@@ -1736,7 +1721,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-text {
-  color: light-dark(light-dark(#575279, #e0def4), light-dark(#575279, #e0def4));
+  color: #575279;
 }
 
 .graph-view.color-fill-highlight {
@@ -1748,10 +1733,7 @@ svg.svg-icon {
 }
 
 .graph-controls {
-  background-color: light-dark(
-    light-dark(#fffaf3, #1f1d2e),
-    light-dark(#fffaf3, #1f1d2e)
-  );
+  background-color: #fffaf3;
   border-radius: 8px;
   inset-inline-end: 12px;
   overflow: auto;
@@ -1992,25 +1974,16 @@ svg.svg-icon {
 }
 
 .workspace-tabs .workspace-leaf {
-  background-color: light-dark(
-    light-dark(#faf4ed, #191724),
-    light-dark(#faf4ed, #191724)
-  );
+  background-color: #faf4ed;
   height: 100%;
 }
 
 .workspace-split.mod-root {
-  background-color: light-dark(
-    light-dark(#fffaf3, #1f1d2e),
-    light-dark(#fffaf3, #1f1d2e)
-  );
+  background-color: #fffaf3;
 }
 
 .workspace-split.mod-root .view-content {
-  background-color: light-dark(
-    light-dark(#fffaf3, #1f1d2e),
-    light-dark(#fffaf3, #1f1d2e)
-  );
+  background-color: #fffaf3;
 }
 
 .workspace-leaf-resize-handle {

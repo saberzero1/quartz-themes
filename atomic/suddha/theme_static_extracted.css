@@ -1294,10 +1294,7 @@ h6 {
 }
 
 .prompt {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 0.5pt solid #555555;
   border-radius: 8px;
   box-shadow:
@@ -1543,10 +1540,7 @@ input[type="search"] {
 }
 
 .tree-item-flair {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-radius: 3px;
   color: light-dark(#999999, #4d4d4d);
   font-size: 8px;
@@ -1684,7 +1678,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-tag {
-  color: light-dark(light-dark(#666666, #8c8c8c), light-dark(#666666, #8c8c8c));
+  color: #666666;
 }
 
 .graph-view.color-fill-attachment {

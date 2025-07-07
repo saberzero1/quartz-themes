@@ -938,7 +938,7 @@
   --color-accent: light-dark(#6f804d, #6f804d);
   --color-accent-1: light-dark(#798952, #839357);
   --color-accent-2: light-dark(#839357, #95a463);
-  --color-accent-hsl: light-dark(#6f804d, #6f804d);
+  --color-accent-hsl: light-dark(79, 25%, 40%, 79, 25%, 40%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -1724,7 +1724,7 @@ body {
   --color-accent: light-dark(#6f804d, #6f804d);
   --color-accent-1: light-dark(#798952, #839357);
   --color-accent-2: light-dark(#839357, #95a463);
-  --color-accent-hsl: light-dark(#6f804d, #6f804d);
+  --color-accent-hsl: light-dark(79, 25%, 40%, 79, 25%, 40%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -2892,16 +2892,16 @@ body:not(.is-mobile) .app-container {
   animation: blink 1.06s steps(1) infinite;
   background: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
   border: 0;
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
   width: auto;
 }
 
@@ -3788,12 +3788,12 @@ body.is-phone .feedback-banner-container {
 .feedback-banner-dismiss-button {
   color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
   font-size: 12.8px;
@@ -3998,12 +3998,12 @@ body.is-frameless .modal {
   --icon-stroke: 1.75px;
   color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
   height: 32px;
@@ -4026,12 +4026,12 @@ body.is-frameless .modal {
   animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
   float: inline-start;
@@ -4117,12 +4117,12 @@ body.is-frameless .modal {
   animation: 1000ms ease-in-out 300ms infinite progress-bar;
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
   content: " ";
@@ -5289,15 +5289,15 @@ input {
 .setting-item-control.mod-hotkey input:focus {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 .setting-item-control select {
@@ -5329,7 +5329,7 @@ input {
 
 .setting-hotkey.has-conflict {
   background-color: #fb464c;
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 @media (hover: hover) {
@@ -5341,15 +5341,15 @@ input {
 .setting-hotkey.mod-active {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 .setting-hotkey.mod-empty {
@@ -5381,10 +5381,7 @@ input {
 @media (hover: hover) {
   .setting-delete-hotkey:hover {
     background-color: #fb464c;
-    color: light-dark(
-      light-dark(#222222, #dadada),
-      light-dark(#222222, #dadada)
-    );
+    color: #222222;
   }
 }
 
@@ -5584,12 +5581,12 @@ input {
 .setting-progress-bar-inner {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
   border-radius: 4px;
@@ -5663,90 +5660,90 @@ input {
 body:not(.is-phone) .community-item.is-selected {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
   border-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 body:not(.is-phone) .community-item.is-selected:hover {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
   border-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 body:not(.is-phone) .community-item.is-selected .community-item-author {
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
   opacity: 0.8;
 }
 
 body:not(.is-phone) .community-item.is-selected:hover .community-item-author {
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
   opacity: 0.8;
 }
 
 body:not(.is-phone) .community-item.is-selected .community-item-repo {
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
   opacity: 0.8;
 }
 
 body:not(.is-phone) .community-item.is-selected:hover .community-item-repo {
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
   opacity: 0.8;
 }
 
 body:not(.is-phone) .community-item.is-selected .community-item-downloads {
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
   opacity: 0.8;
 }
 
 body:not(.is-phone)
   .community-item.is-selected:hover
   .community-item-downloads {
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
   opacity: 0.8;
 }
 
 body:not(.is-phone) .community-item.is-selected .community-item-updated {
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
   opacity: 0.8;
 }
 
 body:not(.is-phone) .community-item.is-selected:hover .community-item-updated {
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
   opacity: 0.8;
 }
 
@@ -5837,12 +5834,12 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
   --icon-stroke: 2px;
   color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
   inset-inline-end: 12px;
@@ -6692,12 +6689,12 @@ body.is-phone .view-header-nav-buttons {
 .workspace-drop-overlay:before {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
   border-radius: 8px;
@@ -7744,12 +7741,12 @@ button.mod-cta {
   --text-color: #fcfbf1;
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
 }
@@ -7854,10 +7851,7 @@ button.mod-destructive {
 }
 
 .card {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid transparent;
   border-radius: 4px;
   display: flex;
@@ -7897,12 +7891,12 @@ button.mod-destructive {
     border: 1px solid
       light-dark(
         light-dark(
-          hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-          hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+          light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+          light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
         ),
         light-dark(
-          hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-          hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+          light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+          light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
         )
       );
   }
@@ -7913,12 +7907,12 @@ button.mod-destructive {
   border: 1px solid
     light-dark(
       light-dark(
-        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+        light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+        light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
       ),
       light-dark(
-        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+        light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+        light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
       )
     );
 }
@@ -7964,12 +7958,12 @@ button.mod-destructive {
 .changelog-item.mod-highlighted:before {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
 }
@@ -9946,7 +9940,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .message.mod-success {
   background-color: #44cf6e;
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 .message.mod-success a {
@@ -9959,7 +9953,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .message.mod-error {
   background-color: #fb464c;
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 .message.mod-error a {
@@ -10018,8 +10012,8 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .modal .modal-nav-action.mod-cta {
   color: light-dark(
-    hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-    hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+    light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+    light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
   );
   font-weight: 600;
   inset-inline-end: 0;
@@ -10309,10 +10303,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   cursor: default;
   text-align: center;
 }
@@ -10463,12 +10454,12 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 .notice progress[value]::-webkit-progress-value {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
   overflow: hidden;
@@ -10477,12 +10468,12 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 .markdown-preview-view progress[value]::-webkit-progress-value {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
   overflow: hidden;
@@ -10491,12 +10482,12 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 .markdown-rendered progress[value]::-webkit-progress-value {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
   overflow: hidden;
@@ -10505,12 +10496,12 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 .markdown-source-view.is-live-preview progress[value]::-webkit-progress-value {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
   overflow: hidden;
@@ -10564,12 +10555,12 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 .progress-bar-line {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
   height: 8px;
@@ -10581,12 +10572,12 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 .progress-bar-subline {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
   height: 8px;
@@ -10869,12 +10860,12 @@ body.styled-scrollbars ::-webkit-scrollbar-corner {
 .suggestion-item.mod-complex .suggestion-action {
   color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
   font-family:
@@ -10962,15 +10953,15 @@ body:not(.is-phone) .horizontal-tab-nav-item.is-active {
   --icon-color: #fcfbf1;
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 body:not(.is-phone) .vertical-tab-nav-item.is-active {
@@ -10978,15 +10969,15 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
   --icon-color: #fcfbf1;
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 .horizontal-tab-nav-item.mobile-tap {
@@ -11115,12 +11106,12 @@ body:not(.is-phone) .vertical-tab-header-group-items {
 .checkbox-container.is-enabled {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
 }
@@ -11203,7 +11194,7 @@ body:not(.is-phone) .vertical-tab-header-group-items {
 
 .tooltip.mod-error {
   background-color: #fb464c;
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
   width: 200px;
 }
 
@@ -11331,12 +11322,12 @@ body:not(.is-phone) .vertical-tab-header-group-items {
   box-shadow: 0 0 0 2px
     light-dark(
       light-dark(
-        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+        light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+        light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
       ),
       light-dark(
-        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+        light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+        light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
       )
     );
   color: #fcfbf1;
@@ -11391,37 +11382,37 @@ body:not(.is-grabbing) .tree-item-self.is-selected:hover {
 body:not(.is-grabbing) .tree-item-self.is-being-dragged:hover {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 .tree-item-self.is-being-dragged {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 body:not(.is-grabbing) .tree-item-self.is-being-dragged:hover .tree-item-icon {
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 .tree-item-self.is-being-dragged .tree-item-icon {
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
@@ -11434,12 +11425,12 @@ body:not(.is-phone)
   box-shadow: 0 0 0 2px
     light-dark(
       light-dark(
-        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+        light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+        light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
       ),
       light-dark(
-        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+        light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+        light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
       )
     );
 }
@@ -11507,12 +11498,12 @@ body:not(.is-phone)
   border: 2px solid
     light-dark(
       light-dark(
-        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+        light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+        light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
       ),
       light-dark(
-        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+        light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+        light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
       )
     );
   height: 0;
@@ -11615,27 +11606,18 @@ kbd {
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .findbarOpen .pdf-viewer-container {
@@ -13845,7 +13827,7 @@ input.metadata-property-key-input:focus {
 
 .cm-hmd-frontmatter .error-marker {
   background-color: #fb464c;
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 .metadata-input-longtext:focus {
@@ -15980,12 +15962,12 @@ mjx-container {
 .table-drag-target {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
   border-radius: 2px;
@@ -17602,77 +17584,77 @@ body:not(.is-grabbing) .nav-folder-title.is-selected:hover {
 body:not(.is-grabbing) .nav-file-title.is-being-dragged {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 body:not(.is-grabbing) .nav-folder-title.is-being-dragged {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 .nav-file-title.is-being-dragged {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 .nav-folder-title.is-being-dragged {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 body:not(.is-grabbing)
   .nav-file-title.is-being-dragged
   .tree-item-icon.collapse-icon {
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 body:not(.is-grabbing)
   .nav-folder-title.is-being-dragged
   .tree-item-icon.collapse-icon {
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 .nav-file-title.is-being-dragged .tree-item-icon.collapse-icon {
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 .nav-folder-title.is-being-dragged .tree-item-icon.collapse-icon {
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 body:not(.is-grabbing) .nav-file-title.is-being-dragged .nav-file-tag {
@@ -17718,7 +17700,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .file-tree .tree-item-flair {
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
   line-height: 1;
   padding: 2px 6px;
 }
@@ -17811,38 +17793,38 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 .file-recovery-list-item-header.is-active {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 .file-recovery-list-item-header.is-active:hover {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 .file-recovery-list-item-header.is-active .u-muted {
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
   opacity: 0.8;
 }
 
 .file-recovery-list-item-header.is-active:hover .u-muted {
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
   opacity: 0.8;
 }
 
@@ -17960,12 +17942,12 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 .graph-view.color-fill-highlight {
   color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
 }
@@ -17973,12 +17955,12 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 .graph-view.color-line-highlight {
   color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
 }
@@ -18191,12 +18173,12 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
   animation: 1000ms ease-in-out 300ms infinite progress-bar;
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
 }
@@ -18702,12 +18684,12 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
   animation: 1000ms ease-in-out 300ms infinite progress-bar;
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
 }
@@ -19006,12 +18988,12 @@ body:not(.is-phone)
   .search-results-info .dropdown:hover {
     color: light-dark(
       light-dark(
-        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+        light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+        light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
       ),
       light-dark(
-        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+        light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+        light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
       )
     );
   }
@@ -19238,12 +19220,12 @@ body:not(.is-phone)
 .sync-status-icon.mod-working {
   color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
 }
@@ -19302,39 +19284,39 @@ body:not(.is-phone)
   --nav-collapse-icon-color: #fcfbf1;
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 .sync-history-list-item-header.is-active:hover {
   --nav-collapse-icon-color: #fcfbf1;
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 .sync-history-list-item-header.is-active .u-muted {
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
   opacity: 0.8;
 }
 
 .sync-history-list-item-header.is-active:hover .u-muted {
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
   opacity: 0.8;
 }
 
@@ -19390,7 +19372,7 @@ body:not(.is-phone)
   align-items: center;
   border: 1px solid #ffffff33;
   border-radius: 50%;
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
   display: flex;
   height: 32px;
   justify-content: center;
@@ -19472,7 +19454,7 @@ body:not(.is-phone)
   .version-group-container
   .version-group-item.is-active
   .u-muted {
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
   opacity: 0.8;
 }
 
@@ -19480,7 +19462,7 @@ body:not(.is-phone)
   .version-group-container
   .version-group-item.is-active:hover
   .u-muted {
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
   opacity: 0.8;
 }
 
@@ -19797,15 +19779,15 @@ button.sync-history-button {
 .tag-pane-tag.is-active {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 .tag-pane-tag.is-active .tag-pane-tag-count {
@@ -19817,18 +19799,15 @@ button.sync-history-button {
   .tag-pane-tag.is-active:hover {
     background-color: light-dark(
       light-dark(
-        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+        light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+        light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
       ),
       light-dark(
-        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-        hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+        light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+        light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
       )
     );
-    color: light-dark(
-      light-dark(#222222, #dadada),
-      light-dark(#222222, #dadada)
-    );
+    color: #222222;
   }
 }
 
@@ -19984,8 +19963,8 @@ body.theme-dark {
   );
   border: 2px solid
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     );
   pointer-events: none;
   position: absolute;
@@ -20090,8 +20069,8 @@ body.theme-dark {
 @media (hover: hover) {
   .canvas-card-menu .canvas-card-menu-button:hover {
     color: light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     );
   }
 }
@@ -20164,8 +20143,8 @@ body.theme-dark {
 
 .canvas-control-item.is-active {
   color: light-dark(
-    hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-    hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+    light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+    light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
   );
 }
 
@@ -20336,8 +20315,8 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 
 .canvas-node.is-selected .canvas-node-container {
   border-color: light-dark(
-    hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-    hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+    light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+    light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
   );
   box-shadow:
     0px 0.5px 1px 0.5px #0000001a,
@@ -20346,8 +20325,8 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 
 .canvas-node.is-focused .canvas-node-container {
   border-color: light-dark(
-    hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-    hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+    light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+    light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
   );
   box-shadow:
     0px 0.5px 1px 0.5px #0000001a,
@@ -20417,8 +20396,8 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
   );
   border: 4px solid
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     );
   box-shadow: 0px 2px 10px #00000026;
 }
@@ -20497,12 +20476,12 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-group-label {
 
 .canvas-node-group.is-themed
   .canvas-group-label:not([contenteditable="true"]).mod-foreground-light {
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 .canvas-node-group.is-themed
   .canvas-group-label:not([contenteditable="true"]).mod-foreground-dark {
-  color: light-dark(light-dark(#fafafa, #242424), light-dark(#fafafa, #242424));
+  color: #fafafa;
 }
 
 .canvas-node-content {
@@ -20694,8 +20673,8 @@ body.is-mobile .canvas-node-resizer {
   background-color: #000;
   border: 2px solid
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     );
   border-radius: 3px;
   display: block;
@@ -20711,8 +20690,8 @@ body.is-mobile .canvas-node-resizer {
   background-color: #000;
   border: 2px solid
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     );
   border-radius: 3px;
   display: block;
@@ -20728,8 +20707,8 @@ body.is-mobile .canvas-node-resizer {
   background-color: #000;
   border: 2px solid
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     );
   border-radius: 3px;
   display: block;
@@ -20745,8 +20724,8 @@ body.is-mobile .canvas-node-resizer {
   background-color: #000;
   border: 2px solid
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     );
   border-radius: 3px;
   display: block;
@@ -20785,8 +20764,8 @@ body.is-mobile .canvas-node-resizer {
 
 .canvas-node-connection-point::after {
   background-color: light-dark(
-    hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-    hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+    light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+    light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
   );
   border: 3px solid transparent;
   border-radius: 50%;
@@ -20822,16 +20801,16 @@ body.is-mobile .canvas-node-resizer {
 
 .canvas-snaps line {
   stroke: light-dark(
-    hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-    hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+    light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+    light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
   );
   stroke-width: 1px;
 }
 
 .canvas-snaps circle {
   fill: light-dark(
-    hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-    hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+    light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+    light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
   );
 }
 
@@ -21078,8 +21057,8 @@ body.is-mobile .canvas-node-resizer {
   );
   border-radius: 8px;
   color: light-dark(
-    hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-    hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+    light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+    light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
   );
   font-size: 19.2px;
   line-height: 1.5;
@@ -21126,8 +21105,8 @@ body.is-mobile .canvas-node-resizer {
 .canvas-cursor {
   border: 5px solid
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     );
   border-radius: 5px;
   height: 1px;
@@ -21668,10 +21647,7 @@ textarea.webviewer-adblock-lists {
 @media (hover: hover) {
   .recent-vaults-list-item:hover {
     background-color: #ffffff26;
-    color: light-dark(
-      light-dark(#222222, #dadada),
-      light-dark(#222222, #dadada)
-    );
+    color: #222222;
   }
 }
 
@@ -21692,12 +21668,12 @@ textarea.webviewer-adblock-lists {
   background-color: #ffffff26;
   border-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
   cursor: text;
@@ -22168,12 +22144,12 @@ body.is-phone .suggestion-bg {
 .mobile-onboarding .logo {
   color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
 }
@@ -22306,12 +22282,12 @@ body.is-phone .suggestion-bg {
 .mobile-onboarding-radio-option.is-selected {
   border-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
 }
@@ -22360,12 +22336,12 @@ body.is-phone .suggestion-bg {
 .mobile-onboarding-radio-option.is-selected .mobile-onboarding-radio-button {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
 }
@@ -23154,12 +23130,12 @@ body.is-tablet .workspace-drawer.mod-left .workspace-drawer-inner {
   --icon-stroke: 1.75px;
   color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
   margin-inline-start: 12px;
@@ -23225,12 +23201,12 @@ body.is-tablet .workspace-drawer.mod-left .workspace-drawer-inner {
 .workspace-drawer-active-tab-icon:last-child {
   color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
 }
@@ -23693,12 +23669,12 @@ body.is-tablet .mobile-navbar {
   align-items: center;
   color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
   display: flex;
@@ -23812,15 +23788,15 @@ body.is-tablet .mobile-navbar {
 .pull-action.mod-activated {
   background-color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 .pull-down-action {
@@ -24037,12 +24013,12 @@ body.is-ios .mobile-tab-switcher-inner-scroll {
   border-radius: 16px;
   color: light-dark(
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     ),
     light-dark(
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%)),
-      hsl(light-dark(79, 79), light-dark(25%, 25%), light-dark(67%, 40%))
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%)),
+      light-dark(hsl(79, 25%, 67%), hsl(79, 25%, 40%))
     )
   );
   display: flex;

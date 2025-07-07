@@ -4101,18 +4101,12 @@ body.is-focused .workspace-ribbon.mod-left {
 
 body.is-focused .sidebar-toggle-button {
   --tab-container-background: rgb(53, 56, 67);
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 body.is-focused .workspace-tabs.mod-top {
   --tab-container-background: rgb(53, 56, 67);
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .is-hidden-frameless {
@@ -4182,10 +4176,7 @@ body.is-focused .workspace-tabs.mod-top {
 
 .is-hidden-frameless:not(.is-fullscreen).is-focused
   .titlebar-button-container.mod-right {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .titlebar-button.mod-logo:hover .logo-wireframe {
@@ -6130,10 +6121,7 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
 }
 
 .status-bar {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid rgba(255, 255, 255, 0.715);
   border-color: rgba(0, 0, 0, 0.15);
   border-radius: 7.5px;
@@ -7057,10 +7045,7 @@ body.is-phone .view-header-nav-buttons {
 }
 
 .workspace-tab-header.is-active {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   box-shadow: 0 0 0 0.5pt rgba(0, 0, 0, 0.15);
   color: rgb(255, 255, 255);
 }
@@ -7941,10 +7926,7 @@ button.mod-destructive {
 }
 
 .card {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid light-dark(rgb(67, 67, 67), rgb(102, 102, 102));
   border-radius: 4px;
   display: flex;
@@ -10403,10 +10385,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   cursor: default;
   text-align: center;
 }
@@ -11598,27 +11577,18 @@ kbd {
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .findbarOpen .pdf-viewer-container {
@@ -12117,7 +12087,7 @@ kbd {
 }
 
 .callout-icon .svg-icon {
-  color: rgb(rgba(103, 161, 149, 0.459));
+  color: rgba(103, 161, 149, 0.459);
 }
 
 .callout-icon::after {
@@ -15944,10 +15914,7 @@ mjx-container {
 }
 
 .markdown-rendered tbody tr > td:nth-child(2n + 2) {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .cm-html-embed tbody tr:last-child > td {
@@ -24420,10 +24387,7 @@ input.mobile-vault-chooser-field-input {
     transparent 61px,
     transparent 100%
   );
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-bottom: 3px solid light-dark(rgb(255, 184, 108), rgb(255, 184, 108));
   border-top: 0px;
   text-align: center;
@@ -24938,10 +24902,7 @@ body .workspace-split .workspace-tabs:not(.mod-stacked) .view-content {
 }
 
 sync-history-content-container {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
@@ -25614,20 +25575,14 @@ ul > li.task-list-item .task-list-item-checkbox {
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-name: cards_border;
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.21);
   color:;
   transition: box-shadow 0.15s linear;
 }
 
 .markdown-rendered tbody tr > td:nth-child(2n + 1) {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 :is(.markdown-preview-section, .markdown-rendered)
@@ -26127,10 +26082,7 @@ span.right img {
 }
 
 .cards table.dataview > tbody > tr {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 2px solid white;
   border-radius: 6px;
   display: flex;

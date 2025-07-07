@@ -814,10 +814,7 @@ body {
   --zoom-factor: 1;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(
-    light-dark(#f5f7f9, #f5f7f9),
-    light-dark(#3b4252, #3b4252)
-  );
+  background-color: #f5f7f9;
   border-left: 2px solid #d8dee9;
   border-right: 2px solid #d8dee9;
   border-top: 4px solid #d8dee9;
@@ -1244,10 +1241,7 @@ h6 {
 }
 
 .popover {
-  background-color: light-dark(
-    light-dark(#f5f7f9, #f5f7f9),
-    light-dark(#3b4252, #3b4252)
-  );
+  background-color: #f5f7f9;
   border: 1px solid
     light-dark(light-dark(#d8dee9, #d8dee9), light-dark(#4c566a, #4c566a));
   border-radius: 8px;
@@ -1262,10 +1256,7 @@ h6 {
 }
 
 .prompt {
-  background-color: light-dark(
-    light-dark(#f5f7f9, #f5f7f9),
-    light-dark(#3b4252, #3b4252)
-  );
+  background-color: #f5f7f9;
   border: 0.5pt solid #2e3440;
   border-radius: 12px;
   box-shadow:
@@ -1284,10 +1275,7 @@ h6 {
 }
 
 input.prompt-input {
-  background-color: light-dark(
-    light-dark(#f5f7f9, #f5f7f9),
-    light-dark(#3b4252, #3b4252)
-  );
+  background-color: #f5f7f9;
   border: none;
   border-bottom: 1px solid
     light-dark(light-dark(#eceff4, #eceff4), light-dark(#2e3440, #2e3440));
@@ -1554,7 +1542,7 @@ svg.svg-icon {
 }
 
 .clickable-icon.mod-warning {
-  color: light-dark(light-dark(#fc6e68, #fc6e68), light-dark(#fc6e68, #fc6e68));
+  color: #fc6e68;
 }
 
 .clickable-icon.mod-filled svg {
@@ -1702,10 +1690,7 @@ svg.svg-icon {
 }
 
 .graph-controls {
-  background-color: light-dark(
-    light-dark(#f5f7f9, #f5f7f9),
-    light-dark(#3b4252, #3b4252)
-  );
+  background-color: #f5f7f9;
   border-radius: 8px;
   inset-inline-end: 12px;
   overflow: auto;
@@ -1923,25 +1908,16 @@ svg.svg-icon {
 }
 
 .workspace-tabs .workspace-leaf {
-  background-color: light-dark(
-    light-dark(#eceff4, #eceff4),
-    light-dark(#2e3440, #2e3440)
-  );
+  background-color: #eceff4;
   height: 100%;
 }
 
 .workspace-split.mod-root {
-  background-color: light-dark(
-    light-dark(#f5f7f9, #f5f7f9),
-    light-dark(#3b4252, #3b4252)
-  );
+  background-color: #f5f7f9;
 }
 
 .workspace-split.mod-root .view-content {
-  background-color: light-dark(
-    light-dark(#f5f7f9, #f5f7f9),
-    light-dark(#3b4252, #3b4252)
-  );
+  background-color: #f5f7f9;
 }
 
 .workspace-leaf-resize-handle {

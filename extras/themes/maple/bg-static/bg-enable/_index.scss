@@ -1,6 +1,0 @@
-body.bg-static .workspace::before {
-  -webkit-mask-image: var(--setting-bg-static);
-  -webkit-mask-size: 300% 300px;
-  -webkit-mask-position: 88.5% -73px;
-  transform: rotateZ(180deg);
-}

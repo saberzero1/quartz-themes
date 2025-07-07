@@ -1352,17 +1352,14 @@ input.prompt-input {
 }
 
 a.tag {
-  background-color: light-dark(
-    light-dark(#27384b, #27384b),
-    light-dark(#27384b, #27384b)
-  );
+  background-color: #27384b;
   border: 0px solid #8a5cf526;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-radius: 2em;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  color: light-dark(light-dark(#fefefe, #fefefe), light-dark(#fefefe, #fefefe));
+  color: #fefefe;
   font-family: var(--font-family);
   font-size: 1em;
   font-style: normal;
@@ -1532,7 +1529,7 @@ input[type="search"] {
 
 .tree-item-self.is-being-dragged {
   background-color: #00000017;
-  color: light-dark(light-dark(#27384b, #27384b), light-dark(#27384b, #27384b));
+  color: #27384b;
 }
 
 .tree-item-self .tree-item-icon {
@@ -1691,7 +1688,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill {
-  color: light-dark(light-dark(#c15e50, #c15e50), light-dark(#c15e50, #c15e50));
+  color: #c15e50;
 }
 
 .graph-view.color-fill-focused {
@@ -1741,7 +1738,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-circle {
-  color: light-dark(light-dark(#c15e50, #c15e50), light-dark(#c15e50, #c15e50));
+  color: #c15e50;
 }
 
 .graph-view.color-line {
@@ -1749,17 +1746,17 @@ svg.svg-icon {
 }
 
 .graph-view.color-text {
-  color: light-dark(light-dark(#27384b, #27384b), light-dark(#27384b, #27384b));
+  color: #27384b;
   font-size: 2em;
   font-weight: 600;
 }
 
 .graph-view.color-fill-highlight {
-  color: light-dark(light-dark(#c15e50, #c15e50), light-dark(#c15e50, #c15e50));
+  color: #c15e50;
 }
 
 .graph-view.color-line-highlight {
-  color: light-dark(light-dark(#c15e50, #c15e50), light-dark(#c15e50, #c15e50));
+  color: #c15e50;
 }
 
 .graph-controls {

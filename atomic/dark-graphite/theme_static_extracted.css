@@ -1372,7 +1372,7 @@ a.tag {
   border-radius: 2em;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  color: light-dark(light-dark(#161719, #161719), light-dark(#161719, #161719));
+  color: #161719;
   font-family: var(--font-family);
   font-size: 1em;
   font-style: normal;
@@ -1543,7 +1543,7 @@ input[type="search"] {
 
 .tree-item-self.is-being-dragged {
   background-color: #0000001a;
-  color: light-dark(light-dark(#d5d5d5, #d5d5d5), light-dark(#d5d5d5, #d5d5d5));
+  color: #d5d5d5;
 }
 
 .tree-item-self .tree-item-icon {
@@ -1702,7 +1702,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill {
-  color: light-dark(light-dark(#666a6c, #666a6c), light-dark(#666a6c, #666a6c));
+  color: #666a6c;
 }
 
 .graph-view.color-fill-focused {
@@ -1752,25 +1752,25 @@ svg.svg-icon {
 }
 
 .graph-view.color-circle {
-  color: light-dark(light-dark(#666a6c, #666a6c), light-dark(#666a6c, #666a6c));
+  color: #666a6c;
 }
 
 .graph-view.color-line {
-  color: light-dark(light-dark(#4c535a, #4c535a), light-dark(#4c535a, #4c535a));
+  color: #4c535a;
 }
 
 .graph-view.color-text {
-  color: light-dark(light-dark(#d5d5d5, #d5d5d5), light-dark(#d5d5d5, #d5d5d5));
+  color: #d5d5d5;
   font-size: 2em;
   font-weight: 600;
 }
 
 .graph-view.color-fill-highlight {
-  color: light-dark(light-dark(#666a6c, #666a6c), light-dark(#666a6c, #666a6c));
+  color: #666a6c;
 }
 
 .graph-view.color-line-highlight {
-  color: light-dark(light-dark(#666a6c, #666a6c), light-dark(#666a6c, #666a6c));
+  color: #666a6c;
 }
 
 .graph-controls {

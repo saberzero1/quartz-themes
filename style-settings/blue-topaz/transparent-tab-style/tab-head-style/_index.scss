@@ -1,7 +1,0 @@
-body.transparent-tab-style
-  .workspace-split:not(.mod-left-split):not(.mod-right-split)
-  .workspace-tab-header-container-inner
-  .workspace-tab-header {
-  --tab-background-active: transparent;
-  --tab-outline-width: transparent;
-}

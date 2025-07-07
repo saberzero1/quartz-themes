@@ -122,25 +122,25 @@
 }
 
 /* @settings
-name: Rosé Pine Themes
-id: rosé-pine-theme-settings
+name: Rose Pine Themes
+id: rose-pine-theme-settings
 settings:
   -
-    id: rosé-pine-theme
+    id: rose-pine-theme
     title: Theme variants
-    description: Select your preferred theme, Rosé Pine Moon is enabled by setting light mode on
+    description: Select your preferred theme, Rose Pine Moon is enabled by setting light mode on
     type: class-select
     allowEmpty: false
     default: rose-norm
     options:
       -
-        label: 'Rosé Pine'
+        label: 'Rose Pine'
         value: rose-norm
       -
-        label: 'Rosé Pine Moon'
+        label: 'Rose Pine Moon'
         value: rose-moon
   -
-    id: rosé-pine-theme-accents
+    id: rose-pine-theme-accents
     title: Theme accent
     description: Select your preferred accent
     type: class-select

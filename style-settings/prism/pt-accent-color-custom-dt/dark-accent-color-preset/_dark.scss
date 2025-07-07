@@ -1,9 +1,0 @@
-body.pt-accent-color-custom-dt {
-  --interactive-accent-base-hsl: var(--color-accent-base-dt);
-  --interactive-accent-tint-hsl: var(--color-accent-tint-dt);
-  --interactive-accent-text-hsl: var(--color-accent-text-dt);
-  --interactive-accent-base: hsl(var(--color-accent-base-dt));
-  --interactive-accent-tint: hsl(var(--color-accent-tint-dt));
-  --interactive-accent-text: hsl(var(--color-accent-text-dt));
-  --interactive-accent-hover: hsl(var(--color-accent-tint-dt));
-}

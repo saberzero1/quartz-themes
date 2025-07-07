@@ -43,6 +43,7 @@
   "dependencies": {
     "@csstools/postcss-color-mix-function": "^3.0.10",
     "@csstools/postcss-relative-color-syntax": "^3.0.10",
+    "@prettier/sync": "github:prettier/sync",
     "js-yaml": "^4.1.0",
     "just-install": "^2.0.2",
     "postcss": "^8.5.3",

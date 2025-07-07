@@ -4702,10 +4702,7 @@ body:not(.show-ribbon) .workspace-ribbon {
 
 .workspace-ribbon {
   --titlebar-background: #262626;
-  background-color: light-dark(
-    light-dark(#f0e8e6, #262626),
-    light-dark(#f0e8e6, #262626)
-  );
+  background-color: #f0e8e6;
   border: none;
   border-right: 1pt solid #00000026;
   color: #959595;
@@ -7877,28 +7874,19 @@ button {
 }
 
 button:not(.clickable-icon) {
-  background-color: light-dark(
-    light-dark(#ffffff, #1e1e1e),
-    light-dark(#ffffff, #1e1e1e)
-  );
+  background-color: #ffffff;
   box-shadow: none;
   color: #ec3643;
 }
 
 button:not(.clickable-icon).mobile-tap {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#fcfcfc, #212121)
-  );
+  background-color: #fcfcfc;
   box-shadow: none;
 }
 
 @media (hover: hover) {
   button:hover {
-    background-color: light-dark(
-      light-dark(#fcfcfc, #212121),
-      light-dark(#fcfcfc, #212121)
-    );
+    background-color: #fcfcfc;
     box-shadow: none;
   }
 }
@@ -8002,10 +7990,7 @@ button.mod-destructive {
 }
 
 .card {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid light-dark(#00000026, light-dark(#ffffff, #1e1e1e));
   border-radius: 4px;
   display: flex;
@@ -10457,10 +10442,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   cursor: default;
   text-align: center;
 }
@@ -11612,7 +11594,7 @@ audio::-webkit-media-controls-time-remaining-display {
 kbd {
   background-color: light-dark(light-dark(#fcfcfc, #212121), #171818);
   border-radius: 2px;
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
   font-family:
     "??", "??", "SF Mono", SFMono-Regular, Menlo, Consolas, "Roboto Mono",
     "Source Code Pro", monospace;
@@ -11644,27 +11626,18 @@ kbd {
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .findbarOpen .pdf-viewer-container {
@@ -12268,7 +12241,7 @@ kbd {
   background-color: light-dark(light-dark(#fcfcfc, #212121), #171818);
   border: 0px solid transparent;
   border-radius: 2px;
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
   font-family:
     "??", "??", "SF Mono", SFMono-Regular, Menlo, Consolas, "Roboto Mono",
     "Source Code Pro", monospace;
@@ -12456,7 +12429,7 @@ kbd {
   border-right-color: light-dark(#e0e0e0, #363636);
   border-right-style: solid;
   border-right-width: 1px;
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
   min-width: 100%;
   width: fit-content;
 }
@@ -12497,11 +12470,11 @@ kbd {
 }
 
 .cm-s-obsidian .HyperMD-codeblock-begin {
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 .cm-s-obsidian .HyperMD-codeblock-end {
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 .cm-s-obsidian .HyperMD-codeblock span.cm-inline-code {
@@ -12543,7 +12516,7 @@ code[class*="language-"] {
   -ms-hyphens: none;
   -webkit-hyphens: none;
   background: none;
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
   direction: ltr;
   font-family:
     "??", "??", "SF Mono", SFMono-Regular, Menlo, Consolas, "Roboto Mono",
@@ -12577,19 +12550,19 @@ code[class*="language-"] {
 }
 
 .token.comment {
-  color: light-dark(light-dark(#707070, #999999), light-dark(#707070, #999999));
+  color: #707070;
 }
 
 .token.prolog {
-  color: light-dark(light-dark(#707070, #999999), light-dark(#707070, #999999));
+  color: #707070;
 }
 
 .token.doctype {
-  color: light-dark(light-dark(#707070, #999999), light-dark(#707070, #999999));
+  color: #707070;
 }
 
 .token.cdata {
-  color: light-dark(light-dark(#707070, #999999), light-dark(#707070, #999999));
+  color: #707070;
 }
 
 .token.namespace {
@@ -12705,11 +12678,11 @@ code[class*="language-"] {
 }
 
 .cm-inline-code {
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 .cm-math {
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 .cm-comment {
@@ -12719,7 +12692,7 @@ code[class*="language-"] {
 }
 
 .cm-meta {
-  color: light-dark(light-dark(#707070, #999999), light-dark(#707070, #999999));
+  color: #707070;
 }
 
 .cm-tag {
@@ -13988,10 +13961,7 @@ input.metadata-property-key-input:focus {
 
 @media (hover: hover) {
   .metadata-link-inner:hover {
-    color: light-dark(
-      light-dark(#222222, #dadada),
-      light-dark(#222222, #dadada)
-    );
+    color: #222222;
     text-decoration-line: underline;
   }
   .metadata-link-inner:hover ~ .metadata-link-flair {
@@ -15301,10 +15271,7 @@ a {
 
 @media (hover: hover) {
   a:hover {
-    color: light-dark(
-      light-dark(#222222, #dadada),
-      light-dark(#222222, #dadada)
-    );
+    color: #222222;
     text-decoration-line: underline;
   }
 }
@@ -15319,7 +15286,7 @@ a.mobile-tap {
   background-position-y: 0.25em;
   background-repeat: no-repeat;
   background-size: 0.825em;
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
   cursor: default;
   filter: none;
   padding-inline-end: 0.9em;
@@ -15368,10 +15335,7 @@ a.mobile-tap {
 
 @media (hover: hover) {
   .metadata-property-value .internal-link:hover {
-    color: light-dark(
-      light-dark(#222222, #dadada),
-      light-dark(#222222, #dadada)
-    );
+    color: #222222;
     text-decoration-line: underline;
   }
   .markdown-rendered .internal-link:hover {
@@ -15390,7 +15354,7 @@ a.mobile-tap {
 }
 
 .metadata-property-value .internal-link.is-unresolved {
-  color: light-dark(light-dark(#ea5a47, #ea5a47), light-dark(#ea5a47, #ea5a47));
+  color: #ea5a47;
   filter: none;
   opacity: 0.7;
   text-decoration-color: hsla(#ea5a47, 0.3);
@@ -15398,7 +15362,7 @@ a.mobile-tap {
 }
 
 .markdown-rendered .internal-link.is-unresolved {
-  color: light-dark(light-dark(#ea5a47, #ea5a47), light-dark(#ea5a47, #ea5a47));
+  color: #ea5a47;
   filter: none;
   opacity: 0.7;
   text-decoration-color: hsla(#ea5a47, 0.3);
@@ -15407,10 +15371,7 @@ a.mobile-tap {
 
 @media (hover: hover) {
   .metadata-property-value .internal-link.is-unresolved:hover {
-    color: light-dark(
-      light-dark(#222222, #dadada),
-      light-dark(#222222, #dadada)
-    );
+    color: #222222;
     opacity: 1;
     text-decoration-color: light-dark(
       light-dark(#222222, #dadada),
@@ -15419,10 +15380,7 @@ a.mobile-tap {
     text-decoration-line: underline;
   }
   .markdown-rendered .internal-link.is-unresolved:hover {
-    color: light-dark(
-      light-dark(#222222, #dadada),
-      light-dark(#222222, #dadada)
-    );
+    color: #222222;
     opacity: 1;
     text-decoration-color: light-dark(
       light-dark(#222222, #dadada),
@@ -15440,31 +15398,25 @@ a.mobile-tap {
 
 @media (hover: hover) {
   .cm-s-obsidian span.cm-hmd-internal-link:hover {
-    color: light-dark(
-      light-dark(#222222, #dadada),
-      light-dark(#222222, #dadada)
-    );
+    color: #222222;
     text-decoration: none;
     text-decoration-line: underline;
   }
 }
 
 .cm-s-obsidian span.cm-link {
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
   text-decoration: none;
   word-break: break-word;
 }
 
 .cm-s-obsidian span.cm-link a {
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
 }
 
 @media (hover: hover) {
   .cm-s-obsidian span.cm-link:hover {
-    color: light-dark(
-      light-dark(#222222, #dadada),
-      light-dark(#222222, #dadada)
-    );
+    color: #222222;
     text-decoration: none;
     text-decoration-line: underline;
   }
@@ -15488,17 +15440,11 @@ a.mobile-tap {
 
 @media (hover: hover) {
   .cm-s-obsidian span.cm-formatting-link.cm-url:hover {
-    color: light-dark(
-      light-dark(#222222, #dadada),
-      light-dark(#222222, #dadada)
-    );
+    color: #222222;
     text-decoration-line: underline;
   }
   .cm-s-obsidian span.cm-url:hover {
-    color: light-dark(
-      light-dark(#222222, #dadada),
-      light-dark(#222222, #dadada)
-    );
+    color: #222222;
     text-decoration-line: underline;
   }
 }
@@ -15543,17 +15489,14 @@ a.mobile-tap {
 }
 
 .markdown-source-view.mod-cm6 .is-unresolved {
-  color: light-dark(light-dark(#ea5a47, #ea5a47), light-dark(#ea5a47, #ea5a47));
+  color: #ea5a47;
   filter: none;
   opacity: 0.7;
 }
 
 @media (hover: hover) {
   .markdown-source-view.mod-cm6 .is-unresolved:hover {
-    color: light-dark(
-      light-dark(#222222, #dadada),
-      light-dark(#222222, #dadada)
-    );
+    color: #222222;
     opacity: 1;
     text-decoration-color: light-dark(
       light-dark(#222222, #dadada),
@@ -15563,7 +15506,7 @@ a.mobile-tap {
 }
 
 .markdown-source-view.mod-cm6 .is-unresolved .cm-underline {
-  color: light-dark(light-dark(#ea5a47, #ea5a47), light-dark(#ea5a47, #ea5a47));
+  color: #ea5a47;
   text-decoration-color: hsla(#ea5a47, 0.3);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -17270,10 +17213,7 @@ em {
   --metadata-label-width: 7em;
   --metadata-property-box-shadow: 0 0 0 1px #2f2f2f;
   align-items: center;
-  background-color: light-dark(
-    light-dark(#ffffff, #1e1e1e),
-    light-dark(#ffffff, #1e1e1e)
-  );
+  background-color: #ffffff;
   display: flex;
   width: 100%;
 }
@@ -19158,10 +19098,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .search-result-file-match-destination-file {
-  background-color: light-dark(
-    light-dark(#ffffff, #1e1e1e),
-    light-dark(#ffffff, #1e1e1e)
-  );
+  background-color: #ffffff;
   border-radius: 2px;
   box-shadow: none;
   color: #959595;
@@ -19175,10 +19112,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
   }
   .search-result-file-match:hover
     .search-result-file-match-destination-file:hover {
-    background-color: light-dark(
-      light-dark(#fcfcfc, #212121),
-      light-dark(#fcfcfc, #212121)
-    );
+    background-color: #fcfcfc;
     box-shadow: none;
     color: #e4e4e4;
   }
@@ -20282,10 +20216,7 @@ body.theme-dark {
   --icon-size: 18px;
   --icon-stroke: 2px;
   align-items: center;
-  background-color: light-dark(
-    light-dark(#ffffff, #1e1e1e),
-    light-dark(#ffffff, #1e1e1e)
-  );
+  background-color: #ffffff;
   border-bottom: 1px solid light-dark(#00000026, light-dark(#ffffff, #1e1e1e));
   border-radius: 0;
   box-shadow: none;
@@ -20305,10 +20236,7 @@ body.theme-dark {
 
 @media (hover: hover) {
   .canvas-control-item:hover {
-    background-color: light-dark(
-      light-dark(#fcfcfc, #212121),
-      light-dark(#fcfcfc, #212121)
-    );
+    background-color: #fcfcfc;
     color: #e4e4e4;
   }
 }
@@ -23494,10 +23422,7 @@ body.is-tablet .sidebar-toggle-button.mod-left {
 }
 
 .is-mobile button.mod-warning {
-  background-color: light-dark(
-    light-dark(#ffffff, #1e1e1e),
-    light-dark(#ffffff, #1e1e1e)
-  );
+  background-color: #ffffff;
   border-radius: 8px;
   border-width: 1px;
   color: light-dark(#ffffff, #1e1e1e);
@@ -25148,7 +25073,7 @@ input.mobile-vault-chooser-field-input {
 }
 
 .cm-comment.cm-hmd-codeblock {
-  color: light-dark(light-dark(#707070, #999999), light-dark(#707070, #999999));
+  color: #707070;
   font-size: 0.9em;
   font-style: italic;
 }
@@ -27039,7 +26964,7 @@ body:not(.is-grabbing) .nav-folder-title {
 }
 
 .cm-s-obsidian span.cm-hmd-internal-link .is-unresolved .cm-underline {
-  color: light-dark(light-dark(#ea5a47, #ea5a47), light-dark(#ea5a47, #ea5a47));
+  color: #ea5a47;
 }
 
 .cm-s-obsidian .cm-hmd-internal-link.cm-link-alias-pipe {

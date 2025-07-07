@@ -935,7 +935,7 @@
   --color-accent: light-dark(#70b8ff, #70b8ff);
   --color-accent-1: light-dark(hsl(209, 101%, 77.4%), hsl(207, 102%, 82.8%));
   --color-accent-2: light-dark(hsl(207, 102%, 82.8%), hsl(205, 105%, 92.88%));
-  --color-accent-hsl: light-dark(#70b8ff, #70b8ff);
+  --color-accent-hsl: light-dark(210, 100%, 72%, 210, 100%, 72%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -1732,7 +1732,7 @@ body {
   --color-accent: light-dark(#70b8ff, #70b8ff);
   --color-accent-1: light-dark(hsl(209, 101%, 77.4%), hsl(207, 102%, 82.8%));
   --color-accent-2: light-dark(hsl(207, 102%, 82.8%), hsl(205, 105%, 92.88%));
-  --color-accent-hsl: light-dark(#70b8ff, #70b8ff);
+  --color-accent-hsl: light-dark(210, 100%, 72%, 210, 100%, 72%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -7784,10 +7784,7 @@ button.mod-destructive {
 }
 
 .card {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid transparent;
   border-radius: 4px;
   display: flex;
@@ -10208,10 +10205,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   cursor: default;
   text-align: center;
 }
@@ -11401,27 +11395,18 @@ kbd {
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .findbarOpen .pdf-viewer-container {

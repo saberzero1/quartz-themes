@@ -803,12 +803,9 @@ body {
   --zoom-factor: 1;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#fcfcfc, #212121)
-  );
+  background-color: #fcfcfc;
   caret-color: #c86464;
-  color: light-dark(light-dark(#5c5c5c, #b3b3b3), light-dark(#5c5c5c, #b3b3b3));
+  color: #5c5c5c;
   contain: initial;
   font-family: "??", "??", "SF Pro", ui-sans-serif, sans-serif;
   font-size: 16px;
@@ -851,7 +848,7 @@ h6 a {
 h1 {
   --font-weight: 700;
   border-bottom: 1px solid light-dark(#d4d4d4, #3f3f3f);
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
   font-family: "SF Pro", ui-sans-serif, sans-serif;
   font-size: 2rem;
   font-style: normal;
@@ -867,7 +864,7 @@ h1 {
 h2 {
   --font-weight: 600;
   border-bottom: 1px solid light-dark(#d4d4d4, #3f3f3f);
-  color: light-dark(light-dark(#222222, #dadada), light-dark(#222222, #dadada));
+  color: #222222;
   font-family: "SF Pro", ui-sans-serif, sans-serif;
   font-size: 1.65rem;
   font-style: normal;
@@ -882,7 +879,7 @@ h2 {
 
 h3 {
   --font-weight: 600;
-  color: light-dark(light-dark(#444444, #d6d8dc), light-dark(#444444, #d6d8dc));
+  color: #444444;
   font-family: "SF Pro", ui-sans-serif, sans-serif;
   font-size: 1.5rem;
   font-style: normal;
@@ -896,7 +893,7 @@ h3 {
 
 h4 {
   --font-weight: 600;
-  color: light-dark(light-dark(#444444, #d6d8dc), light-dark(#444444, #d6d8dc));
+  color: #444444;
   font-family: "SF Pro", ui-sans-serif, sans-serif;
   font-size: 1.25rem;
   font-style: normal;
@@ -910,7 +907,7 @@ h4 {
 
 h5 {
   --font-weight: 600;
-  color: light-dark(light-dark(#444444, #d6d8dc), light-dark(#444444, #d6d8dc));
+  color: #444444;
   font-family: "SF Pro", ui-sans-serif, sans-serif;
   font-size: 1.125rem;
   font-style: normal;
@@ -924,7 +921,7 @@ h5 {
 
 h6 {
   --font-weight: 600;
-  color: light-dark(light-dark(#444444, #d6d8dc), light-dark(#444444, #d6d8dc));
+  color: #444444;
   font-family: "SF Pro", ui-sans-serif, sans-serif;
   font-size: 1rem;
   font-style: normal;
@@ -937,10 +934,7 @@ h6 {
 }
 
 .markdown-rendered pre {
-  background-color: light-dark(
-    light-dark(#f6f6f6, #262626),
-    light-dark(#fafafa, #242424)
-  );
+  background-color: #f6f6f6;
   border: 0px solid transparent;
   border-radius: 3px;
   min-height: 38px;
@@ -952,13 +946,10 @@ h6 {
 
 .markdown-rendered code {
   -webkit-box-decoration-break: clone;
-  background-color: light-dark(
-    light-dark(#f6f6f6, #262626),
-    light-dark(#fafafa, #242424)
-  );
+  background-color: #f6f6f6;
   border: 0px solid transparent;
   border-radius: 3px;
-  color: light-dark(light-dark(#444444, #d6d8dc), light-dark(#444444, #d6d8dc));
+  color: #444444;
   font-family:
     "??", "??", "SF Mono", ui-monospace, "Cascadia Code", "Source Code Pro",
     Menlo, Consolas, "DejaVu Sans Mono", monospace;
@@ -1206,10 +1197,7 @@ h6 {
 }
 
 .popover {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#fcfcfc, #212121)
-  );
+  background-color: #fcfcfc;
   border: 1px solid transparent;
   border-radius: 8px;
   box-shadow:
@@ -1223,10 +1211,7 @@ h6 {
 }
 
 .prompt {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#fcfcfc, #212121)
-  );
+  background-color: #fcfcfc;
   border: 0.15rem solid #c86464;
   border-radius: 12px;
   box-shadow:
@@ -1245,10 +1230,7 @@ h6 {
 }
 
 input.prompt-input {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#fcfcfc, #212121)
-  );
+  background-color: #fcfcfc;
   border: none;
   border-bottom: 1px solid light-dark(#fdf9f7, light-dark(#ffffff, #1e1e1e));
   border-radius: 0;
@@ -1269,14 +1251,14 @@ input.prompt-input {
 
 .markdown-rendered mark {
   background-color: #ffd00066;
-  color: light-dark(light-dark(#5c5c5c, #b3b3b3), light-dark(#5c5c5c, #b3b3b3));
+  color: #5c5c5c;
 }
 
 a.tag {
   background-color: #c86464;
   border: 0px solid #8a5cf526;
   border-radius: 3px;
-  color: light-dark(light-dark(#fafafa, #242424), light-dark(#222222, #dadada));
+  color: #fafafa;
   font-size: 0.875em;
   font-weight: inherit;
   line-height: 1;
@@ -1289,7 +1271,7 @@ input[type="search"] {
   background: transparent;
   border: 1px solid transparent;
   border-radius: 3px;
-  color: light-dark(light-dark(#5c5c5c, #b3b3b3), light-dark(#5c5c5c, #b3b3b3));
+  color: #5c5c5c;
   font-family: inherit;
   font-size: 14.992px;
   height: 40px;
@@ -1354,13 +1336,13 @@ input[type="search"] {
 
 .nav-file-title.is-active {
   background-color: #c86464;
-  color: light-dark(light-dark(#f6f6f6, #262626), light-dark(#444444, #d6d8dc));
+  color: #f6f6f6;
   font-weight: inherit;
 }
 
 .nav-folder-title.is-active {
   background-color: #c86464;
-  color: light-dark(light-dark(#f6f6f6, #262626), light-dark(#444444, #d6d8dc));
+  color: #f6f6f6;
   font-weight: inherit;
 }
 
@@ -1407,13 +1389,13 @@ input[type="search"] {
 
 .tree-item-self.is-clickable.mobile-tap {
   background-color: #c86464;
-  color: light-dark(light-dark(#f6f6f6, #262626), light-dark(#444444, #d6d8dc));
+  color: #f6f6f6;
   font-weight: inherit;
 }
 
 .tree-item-self.is-active {
   background-color: #c86464;
-  color: light-dark(light-dark(#f6f6f6, #262626), light-dark(#444444, #d6d8dc));
+  color: #f6f6f6;
   font-weight: inherit;
 }
 
@@ -1487,12 +1469,9 @@ input[type="search"] {
 }
 
 kbd {
-  background-color: light-dark(
-    light-dark(#f6f6f6, #262626),
-    light-dark(#fafafa, #242424)
-  );
+  background-color: #f6f6f6;
   border-radius: 3px;
-  color: light-dark(light-dark(#444444, #d6d8dc), light-dark(#444444, #d6d8dc));
+  color: #444444;
   font-family:
     "??", "??", "SF Mono", ui-monospace, "Cascadia Code", "Source Code Pro",
     Menlo, Consolas, "DejaVu Sans Mono", monospace;
@@ -1630,7 +1609,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-arrow {
-  color: light-dark(light-dark(#5c5c5c, #b3b3b3), light-dark(#5c5c5c, #b3b3b3));
+  color: #5c5c5c;
   opacity: 0.5;
 }
 
@@ -1655,10 +1634,7 @@ svg.svg-icon {
 }
 
 .graph-controls {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#fcfcfc, #212121)
-  );
+  background-color: #fcfcfc;
   border-radius: 8px;
   inset-inline-end: 12px;
   overflow: auto;
@@ -1896,17 +1872,11 @@ svg.svg-icon {
 }
 
 .workspace-split.mod-root {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#fcfcfc, #212121)
-  );
+  background-color: #fcfcfc;
 }
 
 .workspace-split.mod-root .view-content {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#fcfcfc, #212121)
-  );
+  background-color: #fcfcfc;
 }
 
 .workspace-leaf-resize-handle {

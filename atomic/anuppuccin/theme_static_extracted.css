@@ -8,7 +8,7 @@
   --background-primary: inherit;
   --background-primary-alt: inherit;
   --background-secondary: inherit;
-  --background-secondary-alt: light-dark(#212121, rgb(inherit));
+  --background-secondary-alt: light-dark(#212121, inherit);
   --callout-title-padding: light-dark(8px, 8px);
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
   --color-accent-1: light-dark(
@@ -83,7 +83,7 @@
   --viewer-container-height: 0;
   --xfa-focus-outline: auto;
   --xfa-unfocused-field-background: url("data:image/svg+xml,charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13),'/></svg>");
-  background-color: rgb(light-dark(239, 241, 245, 30, 30, 46));
+  background-color: light-dark(rgb(239, 241, 245), rgb(30, 30, 46));
 }
 
 body {
@@ -113,18 +113,18 @@ body {
   --background-modifier-border: inherit;
   --background-modifier-border-focus: inherit;
   --background-modifier-border-hover: inherit;
-  --background-modifier-error: rgb(inherit);
-  --background-modifier-error-hover: rgb(inherit);
+  --background-modifier-error: inherit;
+  --background-modifier-error-hover: inherit;
   --background-modifier-error-rgb: inherit;
   --background-modifier-form-field: #000;
-  --background-modifier-hover: rgba(inherit, 0.067);
+  --background-modifier-hover: inherit;
   --background-modifier-message: #000000e6;
-  --background-modifier-success: rgb(inherit);
+  --background-modifier-success: inherit;
   --background-modifier-success-rgb: inherit;
   --background-primary: inherit;
   --background-primary-alt: inherit;
   --background-secondary: inherit;
-  --background-secondary-alt: light-dark(#212121, rgb(inherit));
+  --background-secondary-alt: light-dark(#212121, inherit);
   --bases-embed-border: 1px solid transparent;
   --bases-embed-border-radius: 4px;
   --bases-filter-menu-width: 520px;
@@ -133,18 +133,18 @@ body {
   --bases-header-padding-end: 2px;
   --bases-header-padding-start: 2px;
   --bases-table-border-color: transparent;
-  --bases-table-cell-background-active: rgb(inherit);
+  --bases-table-cell-background-active: inherit;
   --bases-table-cell-background-disabled: #00000080;
   --bases-table-cell-radius-active: 2px;
-  --bases-table-cell-shadow-active: 0 0 0 2px rgb(inherit);
+  --bases-table-cell-shadow-active: 0 0 0 2px inherit;
   --bases-table-column-border-width: 1px;
   --bases-table-column-max-width: 300;
   --bases-table-column-min-width: 40;
   --bases-table-container-border-radius: 4px;
   --bases-table-container-border-width: 1px;
-  --bases-table-header-background: rgb(inherit);
-  --bases-table-header-background-hover: rgba(inherit, 0.075);
-  --bases-table-header-color: rgb(inherit);
+  --bases-table-header-background: inherit;
+  --bases-table-header-background-hover: inherit;
+  --bases-table-header-color: inherit;
   --bases-table-header-icon-display: flex;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -158,7 +158,7 @@ body {
   --bases-table-text-size: 0.875em;
   --bases-table-white-space: nowrap;
   --blockquote-background-color: transparent;
-  --blockquote-border-color: rgb(inherit);
+  --blockquote-border-color: inherit;
   --blockquote-border-thickness: 2px;
   --blockquote-color: inherit;
   --blockquote-font-style: normal;
@@ -192,8 +192,8 @@ body {
   --callout-title-weight: 800;
   --callout-todo: inherit;
   --callout-warning: inherit;
-  --canvas-background: rgb(inherit);
-  --canvas-card-label-color: rgb(inherit);
+  --canvas-background: inherit;
+  --canvas-card-label-color: inherit;
   --canvas-color: inherit;
   --canvas-color-1: inherit;
   --canvas-color-2: inherit;
@@ -201,40 +201,40 @@ body {
   --canvas-color-4: inherit;
   --canvas-color-5: inherit;
   --canvas-color-6: inherit;
-  --canvas-dot-pattern: rgb(inherit);
-  --card-background-color: rgb(inherit);
-  --card-foreground-color: rgb(inherit);
-  --caret-color: rgb(inherit);
-  --checkbox-border-color: rgb(inherit);
-  --checkbox-border-color-hover: rgb(inherit);
-  --checkbox-color: rgb(inherit);
-  --checkbox-color-hover: rgb(inherit);
+  --canvas-dot-pattern: inherit;
+  --card-background-color: inherit;
+  --card-foreground-color: inherit;
+  --caret-color: inherit;
+  --checkbox-border-color: inherit;
+  --checkbox-border-color-hover: inherit;
+  --checkbox-color: inherit;
+  --checkbox-color-hover: inherit;
   --checkbox-margin-inline-start: 0.85em;
-  --checkbox-marker-color: rgb(inherit);
+  --checkbox-marker-color: inherit;
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --checklist-done-color: rgb(inherit);
+  --checklist-done-color: inherit;
   --checklist-done-decoration: line-through;
   --clickable-icon-radius: 4px;
-  --code-background: rgb(inherit);
+  --code-background: inherit;
   --code-border-color: transparent;
   --code-border-width: 0px;
-  --code-comment: rgb(inherit);
-  --code-function: rgb(inherit);
-  --code-important: rgb(inherit);
-  --code-keyword: rgb(inherit);
-  --code-normal: rgb(inherit);
-  --code-operator: rgb(inherit);
-  --code-property: rgb(inherit);
-  --code-punctuation: rgb(inherit);
+  --code-comment: inherit;
+  --code-function: inherit;
+  --code-important: inherit;
+  --code-keyword: inherit;
+  --code-normal: inherit;
+  --code-operator: inherit;
+  --code-property: inherit;
+  --code-punctuation: inherit;
   --code-radius: 4px;
   --code-size: 0.875em;
-  --code-string: rgb(inherit);
-  --code-tag: rgb(inherit);
-  --code-value: rgb(inherit);
+  --code-string: inherit;
+  --code-tag: inherit;
+  --code-value: inherit;
   --code-white-space: pre-wrap;
-  --collapse-icon-color: rgb(inherit);
-  --collapse-icon-color-collapsed: rgb(inherit);
+  --collapse-icon-color: inherit;
+  --collapse-icon-color-collapsed: inherit;
   --color-accent: light-dark(#8a5cf5, #8a5cf5);
   --color-accent-1: light-dark(
     hsl(257, 88.88%, 70.95%),
@@ -265,9 +265,9 @@ body {
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
-  --colorful-frame-color: rgba(inherit, 1);
-  --colorful-icon-color: rgb(inherit);
-  --colorful-icon-color-alt: rgb(inherit);
+  --colorful-frame-color: inherit;
+  --colorful-icon-color: inherit;
+  --colorful-icon-color-alt: inherit;
   --ctp-base: light-dark(rgb(239, 241, 245), rgb(30, 30, 46));
   --ctp-blue: light-dark(rgb(42, 110, 245), rgb(135, 176, 249));
   --ctp-crust: light-dark(rgb(220, 224, 232), rgb(17, 17, 27));
@@ -289,15 +289,15 @@ body {
   --dialog-width: 560px;
   --direction: 1;
   --divider-color: transparent;
-  --divider-color-hover: rgb(inherit);
+  --divider-color-hover: inherit;
   --divider-vertical-height: calc(100% - 40px);
   --divider-width: 1px;
   --divider-width-hover: 3px;
   --drag-ghost-background: inherit;
   --drag-ghost-text-color: inherit;
-  --dropdown-background: rgba(inherit, 0.075);
+  --dropdown-background: inherit;
   --dropdown-background-blend-mode: hard-light;
-  --dropdown-background-hover: rgb(inherit);
+  --dropdown-background-hover: inherit;
   --dropdown-background-position: right 0.5em top 50%, 0 0;
   --dropdown-background-size: 1em auto, 100%;
   --dropdown-padding: 0 1.9em 0 0.8em;
@@ -306,7 +306,7 @@ body {
     0 0 0 1px transparent, inset 0 0 0 1px transparent;
   --embed-border-bottom: none;
   --embed-border-end: none;
-  --embed-border-start: 2px solid rgb(inherit);
+  --embed-border-start: 2px solid inherit;
   --embed-border-top: none;
   --embed-canvas-max-height: 400px;
   --embed-font-style: inherit;
@@ -323,8 +323,8 @@ body {
   --file-header-justify: center;
   --file-line-width: 700px;
   --file-margins: 32px;
-  --flair-background: rgba(inherit, 0.075);
-  --flair-color: rgb(inherit);
+  --flair-background: inherit;
+  --flair-color: inherit;
   --font-black: 900;
   --font-bold: 700;
   --font-default:
@@ -379,8 +379,8 @@ body {
   --footnote-divider-color-active: transparent;
   --footnote-divider-width: 1px;
   --footnote-gap: 4px;
-  --footnote-id-color: rgb(inherit);
-  --footnote-id-color-no-occurrences: rgb(inherit);
+  --footnote-id-color: inherit;
+  --footnote-id-color-no-occurrences: inherit;
   --footnote-id-delimiter: ".";
   --footnote-input-background: transparent;
   --footnote-input-background-active: transparent;
@@ -390,13 +390,13 @@ body {
   --footnote-radius: 4px;
   --footnote-size: 0.875em;
   --graph-controls-width: 240px;
-  --graph-line: rgb(inherit);
-  --graph-node: rgb(inherit);
-  --graph-node-attachment: rgb(inherit);
-  --graph-node-focused: rgb(inherit);
-  --graph-node-tag: rgb(inherit);
-  --graph-node-unresolved: rgb(inherit);
-  --graph-text: rgb(inherit);
+  --graph-line: inherit;
+  --graph-node: inherit;
+  --graph-node-attachment: inherit;
+  --graph-node-focused: inherit;
+  --graph-node-tag: inherit;
+  --graph-node-unresolved: inherit;
+  --graph-text: inherit;
   --h1-color: inherit;
   --h1-font: inherit;
   --h1-line-height: 1.2;
@@ -440,14 +440,14 @@ body {
   --h6-variant: normal;
   --h6-weight: 600;
   --header-height: 40px;
-  --heading-formatting: rgb(inherit);
+  --heading-formatting: inherit;
   --heading-spacing: 0rem;
   --hr-color: transparent;
   --hr-thickness: 2px;
-  --icon-color: rgb(inherit);
-  --icon-color-active: rgb(inherit);
+  --icon-color: inherit;
+  --icon-color-active: inherit;
   --icon-color-focused: inherit;
-  --icon-color-hover: rgb(inherit);
+  --icon-color-hover: inherit;
   --icon-l: 18px;
   --icon-l-stroke-width: 1.75px;
   --icon-m: 18px;
@@ -465,14 +465,14 @@ body {
   --icon-xs-stroke-width: 2px;
   --indent-size: 4;
   --indent-unit: 0.5625em;
-  --indentation-guide-color: rgba(inherit, 0.12);
-  --indentation-guide-color-active: rgba(inherit, 0.3);
+  --indentation-guide-color: inherit;
+  --indentation-guide-color-active: inherit;
   --indentation-guide-editing-indent: 0.85em;
   --indentation-guide-reading-indent: -0.85em;
   --indentation-guide-source-indent: 0.25em;
   --indentation-guide-width: 1px;
   --indentation-guide-width-active: 1px;
-  --inline-title-color: rgb(inherit);
+  --inline-title-color: inherit;
   --inline-title-font:
     "??", "??", "??", "??", "??", ui-sans-serif, -apple-system,
     BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
@@ -484,13 +484,13 @@ body {
   --inline-title-variant: normal;
   --inline-title-weight: 600;
   --input-border-width: 1px;
-  --input-date-separator: rgb(inherit);
+  --input-date-separator: inherit;
   --input-font-weight: 400;
   --input-height: 30px;
-  --input-placeholder-color: rgb(inherit);
+  --input-placeholder-color: inherit;
   --input-radius: 5px;
-  --interactive-accent: rgb(inherit);
-  --interactive-accent-hover: rgba(inherit, 0.9);
+  --interactive-accent: inherit;
+  --interactive-accent-hover: inherit;
   --interactive-accent-hsl: 258, 88%, 66%;
   --interactive-hover: inherit;
   --interactive-normal: inherit;
@@ -509,17 +509,17 @@ body {
   --layer-tooltip: 70;
   --line-height-normal: 1.5;
   --line-height-tight: 1.3;
-  --link-color: rgb(inherit);
-  --link-color-hover: rgb(inherit);
+  --link-color: inherit;
+  --link-color-hover: inherit;
   --link-decoration: underline;
   --link-decoration-hover: underline;
   --link-decoration-thickness: auto;
-  --link-external-color: rgb(inherit);
-  --link-external-color-hover: rgb(inherit);
+  --link-external-color: inherit;
+  --link-external-color-hover: inherit;
   --link-external-decoration: underline;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
-  --link-unresolved-color: rgb(inherit);
+  --link-unresolved-color: inherit;
   --link-unresolved-decoration-color: #8a5cf54d;
   --link-unresolved-decoration-style: solid;
   --link-unresolved-filter: none;
@@ -533,20 +533,19 @@ body {
   --list-indent: 2.25em;
   --list-indent-editing: 0.75em;
   --list-indent-source: 0;
-  --list-marker-color: rgb(inherit);
-  --list-marker-color-collapsed: rgb(inherit);
-  --list-marker-color-hover: rgb(inherit);
+  --list-marker-color: inherit;
+  --list-marker-color-collapsed: inherit;
+  --list-marker-color-hover: inherit;
   --list-numbered-style: decimal;
   --list-spacing: 0.075em;
   --menu-backdrop-filter: none;
-  --menu-background: rgb(inherit);
-  --menu-border-color: rgb(inherit);
+  --menu-background: inherit;
+  --menu-border-color: inherit;
   --menu-border-width: 1px;
   --menu-padding: 6px;
   --menu-radius: 8px;
   --menu-shadow:
-    0px 1px 2px rgba(inherit, 0.121), 0px 3.4px 6.7px rgba(inherit, 0.179),
-    0px 15px 30px rgba(inherit, 0.3);
+    0px 1px 2px inherit, 0px 3.4px 6.7px inherit, 0px 15px 30px inherit;
   --metadata-background: transparent;
   --metadata-border-color: transparent;
   --metadata-border-radius: 0;
@@ -559,7 +558,7 @@ body {
   --metadata-divider-width: 0;
   --metadata-gap: 3px;
   --metadata-input-background: transparent;
-  --metadata-input-background-active: rgba(inherit, 0.075);
+  --metadata-input-background-active: inherit;
   --metadata-input-background-hover: transparent;
   --metadata-input-font:
     "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
@@ -568,9 +567,9 @@ body {
   --metadata-input-font-size: 0.875em;
   --metadata-input-height: 28px;
   --metadata-input-longtext-lines: 3;
-  --metadata-input-text-color: rgb(inherit);
+  --metadata-input-text-color: inherit;
   --metadata-label-background: transparent;
-  --metadata-label-background-active: rgba(inherit, 0.075);
+  --metadata-label-background-active: inherit;
   --metadata-label-background-hover: transparent;
   --metadata-label-font:
     "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
@@ -578,23 +577,23 @@ body {
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --metadata-label-font-size: 0.875em;
   --metadata-label-font-weight: inherit;
-  --metadata-label-text-color: rgb(inherit);
-  --metadata-label-text-color-hover: rgb(inherit);
+  --metadata-label-text-color: inherit;
+  --metadata-label-text-color-hover: inherit;
   --metadata-label-width: 9em;
   --metadata-max-width: none;
   --metadata-padding: 8px 0;
   --metadata-property-background: transparent;
-  --metadata-property-background-active: rgba(inherit, 0.075);
+  --metadata-property-background-active: inherit;
   --metadata-property-background-hover: transparent;
-  --metadata-property-box-shadow-focus: 0 0 0 2px rgb(inherit);
-  --metadata-property-box-shadow-hover: 0 0 0 1px rgb(inherit);
+  --metadata-property-box-shadow-focus: 0 0 0 2px inherit;
+  --metadata-property-box-shadow-hover: 0 0 0 1px inherit;
   --metadata-property-padding: 0;
   --metadata-property-radius: 6px;
   --metadata-property-radius-focus: 6px;
   --metadata-property-radius-hover: 6px;
   --metadata-sidebar-input-font-size: 14.992px;
   --metadata-sidebar-label-font-size: 14.992px;
-  --modal-background: rgb(inherit);
+  --modal-background: inherit;
   --modal-border-color: inherit;
   --modal-border-width: 0.5pt;
   --modal-community-sidebar-width: 280px;
@@ -604,26 +603,26 @@ body {
   --modal-max-width-narrow: 800px;
   --modal-radius: 12px;
   --modal-width: 90vw;
-  --nav-collapse-icon-color: rgb(inherit);
-  --nav-collapse-icon-color-collapsed: rgb(inherit);
-  --nav-heading-color: rgb(inherit);
-  --nav-heading-color-collapsed: rgb(inherit);
-  --nav-heading-color-collapsed-hover: rgb(inherit);
-  --nav-heading-color-hover: rgb(inherit);
+  --nav-collapse-icon-color: inherit;
+  --nav-collapse-icon-color-collapsed: inherit;
+  --nav-heading-color: inherit;
+  --nav-heading-color-collapsed: inherit;
+  --nav-heading-color-collapsed-hover: inherit;
+  --nav-heading-color-hover: inherit;
   --nav-heading-weight: 500;
   --nav-heading-weight-hover: 500;
-  --nav-indentation-guide-color: rgba(inherit, 0.12);
+  --nav-indentation-guide-color: inherit;
   --nav-indentation-guide-width: 1px;
-  --nav-item-background-active: rgba(inherit, 0.075);
-  --nav-item-background-hover: rgba(inherit, 0.075);
+  --nav-item-background-active: inherit;
+  --nav-item-background-hover: inherit;
   --nav-item-background-selected: #8a5cf526;
   --nav-item-children-margin-start: 12px;
   --nav-item-children-padding-start: 4px;
-  --nav-item-color: rgb(inherit);
-  --nav-item-color-active: rgb(inherit);
-  --nav-item-color-highlighted: rgb(inherit);
-  --nav-item-color-hover: rgb(inherit);
-  --nav-item-color-selected: rgb(inherit);
+  --nav-item-color: inherit;
+  --nav-item-color-active: inherit;
+  --nav-item-color-highlighted: inherit;
+  --nav-item-color-hover: inherit;
+  --nav-item-color-selected: inherit;
   --nav-item-padding: 4px 8px 4px 24px;
   --nav-item-parent-padding: 6px 8px 6px 24px;
   --nav-item-size: 14.992px;
@@ -633,22 +632,22 @@ body {
   --nav-item-white-space: pre;
   --p-spacing: 1rem;
   --p-spacing-empty: 0rem;
-  --pdf-background: rgb(inherit);
+  --pdf-background: inherit;
   --pdf-dark-opacity: 1;
-  --pdf-page-background: rgb(inherit);
+  --pdf-page-background: inherit;
   --pdf-shadow: 0 0 0 1px #00000026, 0 2px 8px transparent;
-  --pdf-sidebar-background: rgb(inherit);
+  --pdf-sidebar-background: inherit;
   --pdf-spread-shadow: 0 0 0 1px #0000000d;
   --pdf-thumbnail-shadow: 0 0 0 1px #00000026, 0 2px 8px transparent;
   --pill-background: transparent;
   --pill-background-hover: transparent;
   --pill-border-color: transparent;
-  --pill-border-color-hover: rgb(inherit);
+  --pill-border-color-hover: inherit;
   --pill-border-width: 0.5pt;
-  --pill-color: rgb(inherit);
-  --pill-color-hover: rgb(inherit);
-  --pill-color-remove: rgb(inherit);
-  --pill-color-remove-hover: rgb(inherit);
+  --pill-color: inherit;
+  --pill-color-hover: inherit;
+  --pill-color-remove: inherit;
+  --pill-color-remove-hover: inherit;
   --pill-decoration: none;
   --pill-decoration-hover: none;
   --pill-focus-left-adjust: -4px;
@@ -663,7 +662,7 @@ body {
   --popover-pdf-height: 400px;
   --popover-pdf-width: 450px;
   --popover-width: 450px;
-  --prompt-border-color: rgb(inherit);
+  --prompt-border-color: inherit;
   --prompt-border-width: 0.5pt;
   --prompt-input-height: 40px;
   --prompt-max-height: 70vh;
@@ -673,18 +672,18 @@ body {
   --radius-m: 8px;
   --radius-s: 4px;
   --radius-xl: 16px;
-  --ribbon-background: rgb(inherit);
-  --ribbon-background-collapsed: rgb(inherit);
+  --ribbon-background: inherit;
+  --ribbon-background-collapsed: inherit;
   --ribbon-padding: 8px 4px 12px;
   --ribbon-width: 44px;
-  --scrollbar-active-thumb-bg: rgba(inherit, 0.2);
-  --scrollbar-bg: rgba(inherit, 0.05);
-  --scrollbar-thumb-bg: rgba(inherit, 0.1);
-  --search-clear-button-color: rgb(inherit);
+  --scrollbar-active-thumb-bg: inherit;
+  --scrollbar-bg: inherit;
+  --scrollbar-thumb-bg: inherit;
+  --search-clear-button-color: inherit;
   --search-clear-button-size: 13px;
-  --search-icon-color: rgb(inherit);
+  --search-icon-color: inherit;
   --search-icon-size: 18px;
-  --search-result-background: rgb(inherit);
+  --search-result-background: inherit;
   --sidebar-markdown-font-size: 14.4px;
   --sidebar-tab-text-display: none;
   --size-2-1: 2px;
@@ -704,7 +703,7 @@ body {
   --size-4-9: 36px;
   --slider-s-thumb-position: -5px;
   --slider-s-thumb-size: 15px;
-  --slider-thumb-border-color: rgb(inherit);
+  --slider-thumb-border-color: inherit;
   --slider-thumb-border-width: 1px;
   --slider-thumb-height: 18px;
   --slider-thumb-radius: 50%;
@@ -712,33 +711,33 @@ body {
   --slider-thumb-y: -6px;
   --slider-track-background: transparent;
   --slider-track-height: 3px;
-  --status-bar-background: rgb(inherit);
+  --status-bar-background: inherit;
   --status-bar-border-color: transparent;
   --status-bar-border-width: 1px 0 0 1px;
   --status-bar-font-size: 12.8px;
   --status-bar-position: fixed;
   --status-bar-radius: 8px 0 0 0;
-  --status-bar-text-color: rgb(inherit);
+  --status-bar-text-color: inherit;
   --swatch-height: 24px;
   --swatch-radius: 14px;
-  --swatch-shadow: inset 0 0 0 1px rgba(inherit, 0.15);
+  --swatch-shadow: inset 0 0 0 1px inherit;
   --swatch-width: 24px;
-  --sync-avatar-color-1: rgb(inherit);
-  --sync-avatar-color-2: rgb(inherit);
-  --sync-avatar-color-3: rgb(inherit);
-  --sync-avatar-color-4: rgb(inherit);
-  --sync-avatar-color-5: rgb(inherit);
-  --sync-avatar-color-6: rgb(inherit);
-  --sync-avatar-color-7: rgb(inherit);
-  --sync-avatar-color-8: rgb(inherit);
+  --sync-avatar-color-1: inherit;
+  --sync-avatar-color-2: inherit;
+  --sync-avatar-color-3: inherit;
+  --sync-avatar-color-4: inherit;
+  --sync-avatar-color-5: inherit;
+  --sync-avatar-color-6: inherit;
+  --sync-avatar-color-7: inherit;
+  --sync-avatar-color-8: inherit;
   --sync-avatar-color-current-user: transparent;
-  --tab-background-active: rgb(inherit);
-  --tab-container-background: rgb(inherit);
+  --tab-background-active: inherit;
+  --tab-container-background: inherit;
   --tab-curve: 6px;
-  --tab-divider-color: rgb(inherit);
+  --tab-divider-color: inherit;
   --tab-font-size: 14.992px;
   --tab-font-weight: inherit;
-  --tab-inactive-color: rgb(inherit);
+  --tab-inactive-color: inherit;
   --tab-max-width: 320px;
   --tab-outline-color: transparent;
   --tab-outline-width: 1px;
@@ -752,18 +751,18 @@ body {
   --tab-stacked-text-align: start;
   --tab-stacked-text-transform: rotate(0deg);
   --tab-stacked-text-writing-mode: vertical-lr;
-  --tab-switcher-background: rgb(inherit);
-  --tab-switcher-menubar-background: rgb(inherit);
+  --tab-switcher-background: inherit;
+  --tab-switcher-menubar-background: inherit;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px #00000033;
   --tab-switcher-preview-radius: 16px;
-  --tab-switcher-preview-shadow: 0 0 0 1px rgba(inherit, 0.05);
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(inherit);
-  --tab-text-color: rgb(inherit);
-  --tab-text-color-active: rgb(inherit);
-  --tab-text-color-focused: rgb(inherit);
-  --tab-text-color-focused-active: rgb(inherit);
-  --tab-text-color-focused-active-current: rgb(inherit);
-  --tab-text-color-focused-highlighted: rgb(inherit);
+  --tab-switcher-preview-shadow: 0 0 0 1px inherit;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px inherit;
+  --tab-text-color: inherit;
+  --tab-text-color-active: inherit;
+  --tab-text-color-focused: inherit;
+  --tab-text-color-focused-active: inherit;
+  --tab-text-color-focused-active-current: inherit;
+  --tab-text-color-focused-highlighted: inherit;
   --tab-width: 200px;
   --table-add-button-background: transparent;
   --table-add-button-border-color: transparent;
@@ -778,14 +777,14 @@ body {
   --table-column-max-width: none;
   --table-column-min-width: 6ch;
   --table-drag-handle-background: transparent;
-  --table-drag-handle-background-active: rgb(inherit);
-  --table-drag-handle-color: rgb(inherit);
-  --table-drag-handle-color-active: rgb(inherit);
+  --table-drag-handle-background-active: inherit;
+  --table-drag-handle-color: inherit;
+  --table-drag-handle-color-active: inherit;
   --table-header-background: transparent;
   --table-header-background-hover: inherit;
   --table-header-border-color: transparent;
   --table-header-border-width: 1px;
-  --table-header-color: rgb(inherit);
+  --table-header-color: inherit;
   --table-header-font: inherit;
   --table-header-size: 16px;
   --table-header-weight: 800;
@@ -796,7 +795,7 @@ body {
   --table-row-last-border-width: 1px;
   --table-selection: #8a5cf51a;
   --table-selection-blend-mode: none;
-  --table-selection-border-color: rgb(inherit);
+  --table-selection-border-color: inherit;
   --table-selection-border-radius: 4px;
   --table-selection-border-width: 2px;
   --table-text-color: inherit;
@@ -807,8 +806,8 @@ body {
   --tag-border-color: #8a5cf526;
   --tag-border-color-hover: #8a5cf526;
   --tag-border-width: 0px;
-  --tag-color: rgb(inherit);
-  --tag-color-hover: rgb(inherit);
+  --tag-color: inherit;
+  --tag-color-hover: inherit;
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-padding-x: 0.65em;
@@ -816,8 +815,8 @@ body {
   --tag-radius: 2em;
   --tag-size: 0.875em;
   --tag-weight: inherit;
-  --text-accent: rgb(inherit);
-  --text-accent-hover: rgba(inherit, 0.9);
+  --text-accent: inherit;
+  --text-accent-hover: inherit;
   --text-error: inherit;
   --text-faint: inherit;
   --text-highlight-bg: #ffd00066;
@@ -829,13 +828,13 @@ body {
   --text-on-accent-inverted: #000000;
   --text-selection: #8a5cf533;
   --text-success: inherit;
-  --text-warning: rgb(inherit);
-  --titlebar-background: rgb(inherit);
-  --titlebar-background-focused: rgb(inherit);
+  --text-warning: inherit;
+  --titlebar-background: inherit;
+  --titlebar-background-focused: inherit;
   --titlebar-border-color: transparent;
   --titlebar-border-width: 0px;
   --titlebar-height: 30px;
-  --titlebar-text-color: rgb(inherit);
+  --titlebar-text-color: inherit;
   --titlebar-text-color-focused: inherit;
   --titlebar-text-weight: 700;
   --toggle-border-width: 2px;
@@ -850,22 +849,22 @@ body {
   --toggle-thumb-width: 18px;
   --toggle-width: 40px;
   --vault-profile-actions-display: flex;
-  --vault-profile-color: rgb(inherit);
-  --vault-profile-color-hover: rgb(inherit);
+  --vault-profile-color: inherit;
+  --vault-profile-color-hover: inherit;
   --vault-profile-display: flex;
   --vault-profile-font-size: 14.992px;
   --vault-profile-font-weight: 500;
-  --workspace-background-translucent: rgba(inherit, 0.6);
+  --workspace-background-translucent: inherit;
   --zoom-factor: 1;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
   background-color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
-  caret-color: rgb(inherit);
+  caret-color: inherit;
   color: light-dark(
-    rgb(light-dark(76, 79, 105, 198, 208, 245)),
+    light-dark(76, 79, 105, 198, 208, 245),
     rgb(light-dark(76, 79, 105, 198, 208, 245))
   );
   contain: initial;
@@ -923,7 +922,7 @@ h6 a {
 
 h1 {
   --font-weight: 600;
-  color: rgb(inherit);
+  color: inherit;
   font-family:
     "??",
     "??",
@@ -953,7 +952,7 @@ h1 {
 
 h2 {
   --font-weight: 600;
-  color: rgb(inherit);
+  color: inherit;
   font-family:
     "??",
     "??",
@@ -983,7 +982,7 @@ h2 {
 
 h3 {
   --font-weight: 600;
-  color: rgb(inherit);
+  color: inherit;
   font-family:
     "??",
     "??",
@@ -1013,7 +1012,7 @@ h3 {
 
 h4 {
   --font-weight: 600;
-  color: rgb(inherit);
+  color: inherit;
   font-family:
     "??",
     "??",
@@ -1043,7 +1042,7 @@ h4 {
 
 h5 {
   --font-weight: 600;
-  color: rgb(inherit);
+  color: inherit;
   font-family:
     "??",
     "??",
@@ -1073,7 +1072,7 @@ h5 {
 
 h6 {
   --font-weight: 600;
-  color: rgb(inherit);
+  color: inherit;
   font-family:
     "??",
     "??",
@@ -1102,7 +1101,7 @@ h6 {
 }
 
 .markdown-rendered pre {
-  background-color: rgb(inherit);
+  background-color: inherit;
   border: 0px solid transparent;
   border-radius: 4px;
   min-height: 38px;
@@ -1114,10 +1113,10 @@ h6 {
 
 .markdown-rendered code {
   -webkit-box-decoration-break: clone;
-  background-color: rgb(inherit);
+  background-color: inherit;
   border: 0px solid transparent;
   border-radius: 4px;
-  color: rgb(inherit);
+  color: inherit;
   font-family:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1133,9 +1132,9 @@ h6 {
 }
 
 .markdown-rendered button.copy-code-button {
-  background-color: rgb(light-dark(220, 224, 232, 17, 17, 27));
+  background-color: light-dark(rgb(220, 224, 232), rgb(17, 17, 27));
   box-shadow: none;
-  color: rgb(inherit);
+  color: inherit;
   font-family:
     "??",
     "??",
@@ -1161,14 +1160,14 @@ h6 {
 }
 
 .markdown-rendered button.copy-code-button:hover {
-  background-color: rgba(inherit, 0.075);
+  background-color: inherit;
 }
 
 .callout {
   --callout-color: inherit;
   --callout-icon: lucide-pencil;
-  background-color: rgba(inherit, 0.1);
-  border-color: rgba(inherit, 0.4);
+  background-color: inherit;
+  border-color: inherit;
   border-radius: 4px;
   border-style: solid;
   border-width: 1px;
@@ -1180,7 +1179,7 @@ h6 {
 
 .callout-title {
   align-items: flex-start;
-  color: rgb(inherit);
+  color: inherit;
   display: flex;
   font-size: inherit;
   gap: 4px;
@@ -1341,7 +1340,7 @@ h6 {
 }
 
 .callout-icon .svg-icon {
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .callout-icon::after {
@@ -1367,7 +1366,7 @@ h6 {
 }
 
 .metadata-input-longtext {
-  color: rgb(inherit);
+  color: inherit;
   cursor: text;
   flex-grow: 1;
   font-size: 14.992px;
@@ -1379,15 +1378,15 @@ h6 {
 
 .popover {
   background-color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
   border: 1px solid transparent;
   border-radius: 8px;
   box-shadow:
-    0px 1px 2px rgba(inherit, 0.121),
-    0px 3.4px 6.7px rgba(inherit, 0.179),
-    0px 15px 30px rgba(inherit, 0.3);
+    0px 1px 2px inherit,
+    0px 3.4px 6.7px inherit,
+    0px 15px 30px inherit;
   display: flex;
   max-height: 95vh;
   position: absolute;
@@ -1396,15 +1395,15 @@ h6 {
 
 .prompt {
   background-color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
-  border: 0.5pt solid rgb(inherit);
+  border: 0.5pt solid inherit;
   border-radius: 12px;
   box-shadow:
-    0px 1.8px 7.3px rgba(inherit, 0.071),
-    0px 6.3px 24.7px rgba(inherit, 0.112),
-    0px 30px 90px rgba(inherit, 0.2);
+    0px 1.8px 7.3px inherit,
+    0px 6.3px 24.7px inherit,
+    0px 30px 90px inherit;
   display: flex;
   flex-direction: column;
   max-height: 70vh;
@@ -1418,13 +1417,13 @@ h6 {
 
 input.prompt-input {
   background-color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
   border: none;
   border-bottom: 1px solid
     light-dark(
-      rgb(light-dark(230, 233, 239, 24, 24, 37)),
+      light-dark(230, 233, 239, 24, 24, 37),
       rgb(light-dark(230, 233, 239, 24, 24, 37))
     );
   border-radius: 0;
@@ -1436,9 +1435,9 @@ input.prompt-input {
 }
 
 .suggestion-item.is-selected {
-  background-color: rgba(
-    light-dark(rgb(76, 79, 105), rgb(198, 208, 245)),
-    0.075
+  background-color: light-dark(
+    rgba(76, 79, 105, 0.075),
+    rgba(198, 208, 245, 0.075)
   );
 }
 
@@ -1447,18 +1446,18 @@ input.prompt-input {
 }
 
 .markdown-rendered mark {
-  background-color: rgba(inherit, 0.2);
+  background-color: inherit;
   color: light-dark(
-    rgb(light-dark(76, 79, 105, 198, 208, 245)),
+    light-dark(76, 79, 105, 198, 208, 245),
     rgb(light-dark(76, 79, 105, 198, 208, 245))
   );
 }
 
 a.tag {
   background-color: transparent;
-  border: 0 solid rgba(inherit, 0.15);
+  border: 0 solid inherit;
   border-radius: 2em;
-  color: rgb(inherit);
+  color: inherit;
   font-size: reset;
   font-weight: inherit;
   line-height: 1;
@@ -1468,11 +1467,11 @@ a.tag {
 
 input[type="search"] {
   -webkit-app-region: no-drag;
-  background: rgb(inherit);
+  background: inherit;
   border: 1px solid transparent;
   border-radius: 6px;
   color: light-dark(
-    rgb(light-dark(76, 79, 105, 198, 208, 245)),
+    light-dark(76, 79, 105, 198, 208, 245),
     rgb(light-dark(76, 79, 105, 198, 208, 245))
   );
   font-family: inherit;
@@ -1493,7 +1492,7 @@ input[type="search"] {
 
 .nav-file-tag {
   align-self: center;
-  background-color: rgba(inherit, 0.075);
+  background-color: inherit;
   border-radius: 4px;
   font-size: 9px;
   font-weight: 600;
@@ -1506,7 +1505,7 @@ input[type="search"] {
 
 .nav-file-icon {
   align-items: center;
-  color: rgba(inherit, 1);
+  color: inherit;
   display: inline-flex;
   margin-inline-end: 6px;
   opacity: 1;
@@ -1515,7 +1514,7 @@ input[type="search"] {
 
 .nav-folder-title {
   border-radius: 4px;
-  color: rgb(inherit);
+  color: inherit;
   cursor: pointer;
   display: flex;
   font-size: 16px;
@@ -1527,7 +1526,7 @@ input[type="search"] {
 
 .nav-file-title {
   border-radius: 4px;
-  color: rgb(inherit);
+  color: inherit;
   cursor: pointer;
   display: flex;
   font-size: 16px;
@@ -1538,31 +1537,31 @@ input[type="search"] {
 }
 
 .nav-file-title.is-active {
-  background-color: rgba(inherit, 0.1);
-  color: rgb(inherit);
+  background-color: inherit;
+  color: inherit;
   font-weight: inherit;
 }
 
 .nav-folder-title.is-active {
-  background-color: rgba(inherit, 0.1);
-  color: rgb(inherit);
+  background-color: inherit;
+  color: inherit;
   font-weight: inherit;
 }
 
 .nav-file-title.is-selected {
-  background-color: rgba(inherit, 0.2);
-  color: rgb(inherit);
+  background-color: inherit;
+  color: inherit;
 }
 
 .nav-folder-title.is-selected {
-  background-color: rgba(inherit, 0.2);
-  color: rgb(inherit);
+  background-color: inherit;
+  color: inherit;
 }
 
 .tree-item-self {
   align-items: baseline;
   border-radius: 4px;
-  color: rgb(inherit);
+  color: inherit;
   display: flex;
   font-size: 16px;
   font-weight: inherit;
@@ -1591,33 +1590,33 @@ input[type="search"] {
 }
 
 .tree-item-self.is-clickable.mobile-tap {
-  background-color: rgba(inherit, 0.1);
-  color: rgb(inherit);
+  background-color: inherit;
+  color: inherit;
   font-weight: inherit;
 }
 
 .tree-item-self.is-active {
-  background-color: rgba(inherit, 0.1);
-  color: rgb(inherit);
+  background-color: inherit;
+  color: inherit;
   font-weight: inherit;
 }
 
 .tree-item-self.is-selected {
-  background-color: rgba(inherit, 0.2);
-  color: rgb(inherit);
+  background-color: inherit;
+  color: inherit;
 }
 
 .tree-item-self.is-being-dragged {
-  background-color: rgb(inherit);
+  background-color: inherit;
   color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
 }
 
 .tree-item-self .tree-item-icon {
   align-items: center;
-  color: rgba(inherit, 1);
+  color: inherit;
   display: flex;
   flex: 0 0 auto;
   justify-content: center;
@@ -1646,7 +1645,7 @@ input[type="search"] {
 
 .tree-item-flair {
   border-radius: 4px;
-  color: rgb(inherit);
+  color: inherit;
   font-size: 12.8px;
   line-height: 1;
 }
@@ -1664,21 +1663,21 @@ input[type="search"] {
 }
 
 .tree-item-inner-subtext {
-  color: rgb(inherit);
+  color: inherit;
   font-size: 85%;
 }
 
 .tree-item-children {
-  border-inline-start: 1px solid rgba(inherit, 0.4);
+  border-inline-start: 1px solid inherit;
   margin-bottom: 1px;
   margin-inline-start: 12px;
   padding-inline-start: 4px;
 }
 
 kbd {
-  background-color: rgb(inherit);
+  background-color: inherit;
   border-radius: 4px;
-  color: rgb(inherit);
+  color: inherit;
   font-family:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1695,13 +1694,13 @@ svg.svg-icon {
 
 .clickable-icon.mod-warning {
   color: light-dark(
-    rgb(light-dark(210, 15, 57, 243, 139, 168)),
+    light-dark(210, 15, 57, 243, 139, 168),
     rgb(light-dark(210, 15, 57, 243, 139, 168))
   );
 }
 
 .clickable-icon.mod-filled svg {
-  fill: rgba(inherit, 1);
+  fill: inherit;
 }
 
 .setting-item-control .clickable-icon {
@@ -1710,7 +1709,7 @@ svg.svg-icon {
 
 .clickable-icon[aria-disabled="true"] {
   background-color: unset;
-  color: rgb(inherit);
+  color: inherit;
   opacity: 0.4;
 }
 
@@ -1723,8 +1722,8 @@ svg.svg-icon {
 }
 
 .clickable-icon.is-active {
-  background-color: rgba(inherit, 0.15);
-  color: rgb(inherit);
+  background-color: inherit;
+  color: inherit;
   opacity: 0.65;
 }
 
@@ -1733,7 +1732,7 @@ svg.svg-icon {
   align-items: center;
   background-color: transparent;
   border-radius: 4px;
-  color: rgba(inherit, 1);
+  color: inherit;
   cursor: pointer;
   display: flex;
   height: auto;
@@ -1744,7 +1743,7 @@ svg.svg-icon {
 }
 
 .view-header-title-parent .view-header-breadcrumb-separator {
-  color: rgb(inherit);
+  color: inherit;
   padding: 2px 1px;
 }
 
@@ -1762,7 +1761,7 @@ svg.svg-icon {
 }
 
 .backlink-pane > .tree-item-self {
-  color: rgb(inherit);
+  color: inherit;
   padding-inline-start: 8px;
 }
 
@@ -1771,85 +1770,85 @@ svg.svg-icon {
 }
 
 .backlink-pane > .tree-item-self.is-clickable.is-collapsed {
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .graph-view.color-fill {
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .graph-view.color-fill-focused {
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .graph-view.color-fill-tag {
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .graph-view.color-fill-attachment {
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .graph-view.color-fill-unresolved {
-  color: rgb(inherit);
+  color: inherit;
   opacity: 0.5;
 }
 
 .graph-view.color-fill-1 {
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .graph-view.color-fill-2 {
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .graph-view.color-fill-3 {
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .graph-view.color-fill-4 {
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .graph-view.color-fill-5 {
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .graph-view.color-fill-6 {
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .graph-view.color-arrow {
   color: light-dark(
-    rgb(light-dark(76, 79, 105, 198, 208, 245)),
+    light-dark(76, 79, 105, 198, 208, 245),
     rgb(light-dark(76, 79, 105, 198, 208, 245))
   );
   opacity: 0.5;
 }
 
 .graph-view.color-circle {
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .graph-view.color-line {
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .graph-view.color-text {
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .graph-view.color-fill-highlight {
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .graph-view.color-line-highlight {
-  color: rgb(inherit);
+  color: inherit;
 }
 
 .graph-controls {
   background-color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
   border-radius: 8px;
@@ -1863,57 +1862,57 @@ svg.svg-icon {
 
 .theme-dark {
   --anp-speech-bubble-opacity: 0.9;
-  --background-modifier-border: rgb(inherit);
-  --background-modifier-border-focus: rgb(inherit);
-  --background-modifier-border-hover: rgb(inherit);
+  --background-modifier-border: inherit;
+  --background-modifier-border-focus: inherit;
+  --background-modifier-border-hover: inherit;
   --background-modifier-box-shadow: #0000004d;
-  --background-modifier-cover: rgba(inherit, 0.4);
-  --background-modifier-error: rgba(inherit, 1);
-  --background-modifier-error-hover: rgba(inherit, 0.9);
+  --background-modifier-cover: inherit;
+  --background-modifier-error: inherit;
+  --background-modifier-error-hover: inherit;
   --background-modifier-error-rgb: inherit;
-  --background-modifier-form-field: rgba(inherit, 0.3);
-  --background-modifier-hover: rgba(inherit, 0.075);
-  --background-modifier-message: rgba(inherit, 0.9);
-  --background-modifier-success: rgba(inherit, 1);
-  --background-modifier-success-hover: rgba(inherit, 0.9);
+  --background-modifier-form-field: inherit;
+  --background-modifier-hover: inherit;
+  --background-modifier-message: inherit;
+  --background-modifier-success: inherit;
+  --background-modifier-success-hover: inherit;
   --background-modifier-success-rgb: inherit;
-  --background-primary: rgb(inherit);
-  --background-primary-alt: rgb(inherit);
-  --background-secondary: rgb(inherit);
-  --background-secondary-alt: rgb(inherit);
-  --blockquote-background-color: rgba(inherit, 0.5);
+  --background-primary: inherit;
+  --background-primary-alt: inherit;
+  --background-secondary: inherit;
+  --background-secondary-alt: inherit;
+  --blockquote-background-color: inherit;
   --callout-title-padding: 8px;
   --color-accent: #8a5cf5;
   --color-accent-1: hsl(255, 89.76%, 75.9%);
   --color-accent-2: hsl(253, 92.4%, 85.14%);
   --color-accent-hsl: 258, 88%, 66%;
-  --color-base-00: rgb(inherit);
+  --color-base-00: inherit;
   --color-base-05: #212121;
-  --color-base-10: rgb(inherit);
-  --color-base-100: rgb(inherit);
-  --color-base-20: rgb(inherit);
-  --color-base-25: rgb(inherit);
-  --color-base-30: rgb(inherit);
-  --color-base-35: rgb(inherit);
-  --color-base-40: rgb(inherit);
-  --color-base-50: rgb(inherit);
-  --color-base-60: rgb(inherit);
-  --color-base-70: rgb(inherit);
-  --color-blue: rgb(inherit);
+  --color-base-10: inherit;
+  --color-base-100: inherit;
+  --color-base-20: inherit;
+  --color-base-25: inherit;
+  --color-base-30: inherit;
+  --color-base-35: inherit;
+  --color-base-40: inherit;
+  --color-base-50: inherit;
+  --color-base-60: inherit;
+  --color-base-70: inherit;
+  --color-blue: inherit;
   --color-blue-rgb: inherit;
-  --color-cyan: rgb(inherit);
+  --color-cyan: inherit;
   --color-cyan-rgb: inherit;
-  --color-green: rgb(inherit);
+  --color-green: inherit;
   --color-green-rgb: inherit;
-  --color-orange: rgb(inherit);
+  --color-orange: inherit;
   --color-orange-rgb: inherit;
-  --color-pink: rgb(inherit);
+  --color-pink: inherit;
   --color-pink-rgb: inherit;
-  --color-purple: rgb(inherit);
+  --color-purple: inherit;
   --color-purple-rgb: inherit;
-  --color-red: rgb(inherit);
+  --color-red: inherit;
   --color-red-rgb: inherit;
-  --color-yellow: rgb(inherit);
+  --color-yellow: inherit;
   --color-yellow-rgb: inherit;
   --ctp-base: 30, 30, 46;
   --ctp-blue: 135, 176, 249;
@@ -1941,109 +1940,105 @@ svg.svg-icon {
   --ctp-teal: 148, 226, 213;
   --ctp-text: 198, 208, 245;
   --ctp-yellow: 249, 226, 175;
-  --drag-ghost-background: rgb(inherit);
-  --drag-ghost-text-color: rgb(inherit);
+  --drag-ghost-background: inherit;
+  --drag-ghost-text-color: inherit;
   --embed-block-shadow-hover: none;
   --highlight-mix-blend-mode: none;
-  --icon-color-focused: rgb(inherit);
+  --icon-color-focused: inherit;
   --input-shadow:
-    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 rgba(inherit, 0.15),
-    0 1px 1.5px 0 rgba(inherit, 0.1), 0 1px 2px 0 rgba(inherit, 0.2),
-    0 0 0 0 transparent;
+    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 inherit,
+    0 1px 1.5px 0 inherit, 0 1px 2px 0 inherit, 0 0 0 0 transparent;
   --input-shadow-hover:
-    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 rgba(inherit, 0.3),
-    0 1px 1.5px 0 rgba(inherit, 0.2), 0 1px 2px 0 rgba(inherit, 0.4),
-    0 0 0 0 transparent;
-  --interactive-accent: rgb(inherit);
-  --interactive-accent-hover: rgb(inherit);
-  --interactive-hover: rgb(inherit);
-  --interactive-normal: rgb(inherit);
-  --interactive-success: rgb(inherit);
+    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 inherit,
+    0 1px 1.5px 0 inherit, 0 1px 2px 0 inherit, 0 0 0 0 transparent;
+  --interactive-accent: inherit;
+  --interactive-accent-hover: inherit;
+  --interactive-hover: inherit;
+  --interactive-normal: inherit;
+  --interactive-success: inherit;
   --max-width-image: 90%;
   --min-width-image: 50%;
-  --modal-border-color: rgb(inherit);
+  --modal-border-color: inherit;
   --mono-rgb-0: inherit;
   --mono-rgb-100: inherit;
-  --nav-indentation-guide-color: rgba(inherit, 0.4);
+  --nav-indentation-guide-color: inherit;
   --pdf-shadow: 0 0 0 1px transparent;
   --pdf-thumbnail-shadow: 0 0 0 1px transparent;
   --shadow-l:
-    0px 1.8px 7.3px rgba(inherit, 0.071), 0px 6.3px 24.7px rgba(inherit, 0.112),
-    0px 30px 90px rgba(inherit, 0.2);
+    0px 1.8px 7.3px inherit, 0px 6.3px 24.7px inherit, 0px 30px 90px inherit;
   --shadow-s:
-    0px 1px 2px rgba(inherit, 0.121), 0px 3.4px 6.7px rgba(inherit, 0.179),
-    0px 15px 30px rgba(inherit, 0.3);
+    0px 1px 2px inherit, 0px 3.4px 6.7px inherit, 0px 15px 30px inherit;
   --table-border-width: 1px;
-  --text-accent: rgb(inherit);
-  --text-error: rgb(inherit);
-  --text-error-hover: rgba(inherit, 0.8);
-  --text-faint: rgb(inherit);
-  --text-highlight-bg: rgba(inherit, 0.2);
-  --text-highlight-bg-active: rgba(inherit, 0.4);
-  --text-muted: rgb(inherit);
+  --text-accent: inherit;
+  --text-error: inherit;
+  --text-error-hover: inherit;
+  --text-faint: inherit;
+  --text-highlight-bg: inherit;
+  --text-highlight-bg-active: inherit;
+  --text-muted: inherit;
   --text-muted-rgb: inherit;
-  --text-normal: rgb(inherit);
-  --text-on-accent: rgb(inherit);
+  --text-normal: inherit;
+  --text-on-accent: inherit;
   --text-selection: #8a5cf554;
-  --text-success: rgb(inherit);
-  --titlebar-text-color-focused: rgb(inherit);
+  --text-success: inherit;
+  --titlebar-text-color-focused: inherit;
   --width-image-gallery: 200px;
-  --workspace-background-translucent: rgba(inherit, 0.6);
+  --workspace-background-translucent: inherit;
 }
 
 .theme-light {
   --anp-speech-bubble-opacity: 0.5;
-  --background-modifier-border: rgb(inherit);
-  --background-modifier-border-focus: rgb(inherit);
-  --background-modifier-border-hover: rgb(inherit);
+  --background-modifier-border: inherit;
+  --background-modifier-border-focus: inherit;
+  --background-modifier-border-hover: inherit;
   --background-modifier-box-shadow: #0000001a;
   --background-modifier-cover: #00000022;
-  --background-modifier-error: rgba(inherit, 1);
-  --background-modifier-error-hover: rgba(inherit, 0.9);
+  --background-modifier-error: inherit;
+  --background-modifier-error-hover: inherit;
   --background-modifier-error-rgb: inherit;
-  --background-modifier-form-field: rgba(inherit, 0.3);
-  --background-modifier-hover: rgba(inherit, 0.075);
-  --background-modifier-message: rgba(inherit, 0.9);
-  --background-modifier-success: rgba(inherit, 1);
-  --background-modifier-success-hover: rgba(inherit, 0.9);
+  --background-modifier-form-field: inherit;
+  --background-modifier-hover: inherit;
+  --background-modifier-message: inherit;
+  --background-modifier-success: inherit;
+  --background-modifier-success-hover: inherit;
   --background-modifier-success-rgb: inherit;
-  --background-primary: rgb(inherit);
-  --background-primary-alt: rgb(inherit);
-  --background-secondary: rgb(inherit);
-  --background-secondary-alt: rgb(inherit);
-  --blockquote-background-color: rgba(inherit, 0.5);
+  --background-primary: inherit;
+  --background-primary-alt: inherit;
+  --background-secondary: inherit;
+  --background-secondary-alt: inherit;
+  --blockquote-background-color: inherit;
   --callout-title-padding: 8px;
   --color-accent: #8a5cf5;
   --color-accent-1: hsl(257, 88.88%, 70.95%);
   --color-accent-2: hsl(255, 89.76%, 75.9%);
   --color-accent-hsl: 258, 88%, 66%;
-  --color-base-00: rgb(inherit);
+  --color-base-00: inherit;
   --color-base-05: #fcfcfc;
-  --color-base-10: rgb(inherit);
-  --color-base-100: rgb(inherit);
-  --color-base-20: rgb(inherit);
-  --color-base-25: rgb(inherit);
-  --color-base-30: rgb(inherit);
-  --color-base-35: rgb(inherit);
-  --color-base-40: rgb(inherit);
-  --color-base-50: rgb(inherit);
-  --color-base-60: rgb(inherit);
-  --color-base-70: rgb(inherit);
-  --color-blue: rgb(inherit);
+  --color-base-10: inherit;
+  --color-base-100: inherit;
+  --color-base-20: inherit;
+  --color-base-25: inherit;
+  --color-base-30: inherit;
+  --color-base-35: inherit;
+  --color-base-40: inherit;
+  --color-base-50: inherit;
+  --color-base-60: inherit;
+  --color-base-70: inherit;
+  --color-blue: inherit;
   --color-blue-rgb: inherit;
-  --color-cyan: rgb(inherit);
+  --color-cyan: inherit;
   --color-cyan-rgb: inherit;
-  --color-green: rgb(inherit);
+  --color-green: inherit;
   --color-green-rgb: inherit;
-  --color-orange: rgb(inherit);
+  --color-orange: inherit;
   --color-orange-rgb: inherit;
-  --color-pink: rgb(inherit);
+  --color-pink: inherit;
   --color-pink-rgb: inherit;
-  --color-purple: rgb(inherit);
+  --color-purple: inherit;
   --color-purple-rgb: inherit;
-  --color-red: rgb(inherit);
+  --color-red: inherit;
   --color-red-rgb: inherit;
-  --color-yellow: rgb(inherit);
+  --color-yellow: inherit;
   --color-yellow-rgb: inherit;
   --ctp-base: 239, 241, 245;
   --ctp-blue: 42, 110, 245;
@@ -2071,67 +2066,63 @@ svg.svg-icon {
   --ctp-teal: 23, 146, 153;
   --ctp-text: 76, 79, 105;
   --ctp-yellow: 228, 147, 32;
-  --drag-ghost-background: rgb(inherit);
-  --drag-ghost-text-color: rgb(inherit);
+  --drag-ghost-background: inherit;
+  --drag-ghost-text-color: inherit;
   --embed-block-shadow-hover: none;
   --highlight-mix-blend-mode: none;
-  --icon-color-focused: rgb(inherit);
+  --icon-color-focused: inherit;
   --input-shadow:
-    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 rgba(inherit, 0.15),
-    0 1px 1.5px 0 rgba(inherit, 0.1), 0 1px 2px 0 rgba(inherit, 0.2),
-    0 0 0 0 transparent;
+    inset 0 0.5px 0.5px 0.5px #ffffff17, 0 2px 4px 0 inherit,
+    0 1px 1.5px 0 inherit, 0 1px 2px 0 inherit, 0 0 0 0 transparent;
   --input-shadow-hover:
-    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 rgba(inherit, 0.3),
-    0 1px 1.5px 0 rgba(inherit, 0.2), 0 1px 2px 0 rgba(inherit, 0.4),
-    0 0 0 0 transparent;
-  --interactive-hover: rgb(inherit);
-  --interactive-normal: rgb(inherit);
-  --interactive-success: rgb(inherit);
+    inset 0 0.5px 1px 0.5px #ffffff29, 0 2px 3px 0 inherit,
+    0 1px 1.5px 0 inherit, 0 1px 2px 0 inherit, 0 0 0 0 transparent;
+  --interactive-hover: inherit;
+  --interactive-normal: inherit;
+  --interactive-success: inherit;
   --max-width-image: 90%;
   --min-width-image: 50%;
-  --modal-border-color: rgb(inherit);
+  --modal-border-color: inherit;
   --mono-rgb-0: inherit;
   --mono-rgb-100: inherit;
-  --nav-indentation-guide-color: rgba(inherit, 0.4);
+  --nav-indentation-guide-color: inherit;
   --shadow-l:
-    0px 1.8px 7.3px rgba(inherit, 0.071), 0px 6.3px 24.7px rgba(inherit, 0.112),
-    0px 30px 90px rgba(inherit, 0.2);
+    0px 1.8px 7.3px inherit, 0px 6.3px 24.7px inherit, 0px 30px 90px inherit;
   --shadow-s:
-    0px 1px 2px rgba(inherit, 0.121), 0px 3.4px 6.7px rgba(inherit, 0.179),
-    0px 15px 30px rgba(inherit, 0.3);
+    0px 1px 2px inherit, 0px 3.4px 6.7px inherit, 0px 15px 30px inherit;
   --table-border-width: 1px;
-  --text-error: rgb(inherit);
-  --text-error-hover: rgba(inherit, 0.8);
-  --text-faint: rgb(inherit);
-  --text-highlight-bg: rgba(inherit, 0.2);
-  --text-highlight-bg-active: rgba(inherit, 0.4);
-  --text-muted: rgb(inherit);
+  --text-error: inherit;
+  --text-error-hover: inherit;
+  --text-faint: inherit;
+  --text-highlight-bg: inherit;
+  --text-highlight-bg-active: inherit;
+  --text-muted: inherit;
   --text-muted-rgb: inherit;
-  --text-normal: rgb(inherit);
-  --text-on-accent: rgb(inherit);
-  --text-success: rgb(inherit);
-  --titlebar-text-color-focused: rgb(inherit);
+  --text-normal: inherit;
+  --text-on-accent: inherit;
+  --text-success: inherit;
+  --titlebar-text-color-focused: inherit;
   --width-image-gallery: 200px;
-  --workspace-background-translucent: rgba(inherit, 0.6);
+  --workspace-background-translucent: inherit;
 }
 
 .mod-sidedock {
-  --bases-table-header-background: rgb(inherit);
+  --bases-table-header-background: inherit;
 }
 
 .workspace-split {
-  background-color: rgb(inherit);
+  background-color: inherit;
   display: flex;
   position: relative;
 }
 
 .workspace-tabs.mod-top {
-  --tab-container-background: rgba(inherit, 1);
+  --tab-container-background: inherit;
 }
 
 .workspace-tabs .workspace-leaf {
   background-color: light-dark(
-    rgb(light-dark(230, 233, 239, 24, 24, 37)),
+    light-dark(230, 233, 239, 24, 24, 37),
     rgb(light-dark(230, 233, 239, 24, 24, 37))
   );
   height: 100%;
@@ -2139,14 +2130,14 @@ svg.svg-icon {
 
 .workspace-split.mod-root {
   background-color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
 }
 
 .workspace-split.mod-root .view-content {
   background-color: light-dark(
-    rgb(light-dark(239, 241, 245, 30, 30, 46)),
+    light-dark(239, 241, 245, 30, 30, 46),
     rgb(light-dark(239, 241, 245, 30, 30, 46))
   );
 }

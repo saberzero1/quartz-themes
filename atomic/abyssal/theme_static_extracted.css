@@ -843,12 +843,9 @@ body {
   --zoom-factor: 1;
   -webkit-tap-highlight-color: #ffffff00;
   -webkit-user-select: none;
-  background-color: light-dark(
-    light-dark(#ffffff, #1e1e1e),
-    light-dark(#f6f6f6, #262626)
-  );
+  background-color: #ffffff;
   caret-color: #3ca7dd;
-  color: light-dark(light-dark(#5c5c5c, #b3b3b3), light-dark(#222222, #dadada));
+  color: #5c5c5c;
   contain: initial;
   font-family:
     "??",
@@ -1031,7 +1028,7 @@ h6 {
   );
   border: 0px solid transparent;
   border-radius: 4px;
-  color: light-dark(light-dark(#e93147, #fb464c), light-dark(#ec7500, #e9973f));
+  color: #e93147;
   font-family:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1295,10 +1292,7 @@ h6 {
 }
 
 .popover {
-  background-color: light-dark(
-    light-dark(#ffffff, #1e1e1e),
-    light-dark(#f6f6f6, #262626)
-  );
+  background-color: #ffffff;
   border: 1px solid transparent;
   border-radius: 8px;
   box-shadow:
@@ -1312,10 +1306,7 @@ h6 {
 }
 
 .prompt {
-  background-color: light-dark(
-    light-dark(#ffffff, #1e1e1e),
-    light-dark(#f6f6f6, #262626)
-  );
+  background-color: #ffffff;
   border: 0.5pt solid #1e3038;
   border-radius: 12px;
   box-shadow:
@@ -1334,10 +1325,7 @@ h6 {
 }
 
 input.prompt-input {
-  background-color: light-dark(
-    light-dark(#ffffff, #1e1e1e),
-    light-dark(#f6f6f6, #262626)
-  );
+  background-color: #ffffff;
   border: none;
   border-bottom: 1px solid
     light-dark(light-dark(#fafafa, #242424), light-dark(#ffffff, #1e1e1e));
@@ -1359,7 +1347,7 @@ input.prompt-input {
 
 .markdown-rendered mark {
   background-color: #ffd00066;
-  color: light-dark(light-dark(#5c5c5c, #b3b3b3), light-dark(#222222, #dadada));
+  color: #5c5c5c;
 }
 
 a.tag {
@@ -1379,7 +1367,7 @@ input[type="search"] {
   background: transparent;
   border: 1px solid transparent;
   border-radius: 5px;
-  color: light-dark(light-dark(#5c5c5c, #b3b3b3), light-dark(#222222, #dadada));
+  color: #5c5c5c;
   font-family: inherit;
   font-size: 14.992px;
   height: 40px;
@@ -1682,15 +1670,15 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-tag {
-  color: light-dark(light-dark(#08b94e, #44cf6e), light-dark(#08b94e, #44cf6e));
+  color: #08b94e;
 }
 
 .graph-view.color-fill-attachment {
-  color: light-dark(light-dark(#e0ac00, #e0de71), light-dark(#e0ac00, #e0de71));
+  color: #e0ac00;
 }
 
 .graph-view.color-fill-unresolved {
-  color: light-dark(light-dark(#e0e0e0, #363636), light-dark(#707070, #999999));
+  color: #e0e0e0;
   opacity: 0.5;
 }
 
@@ -1719,7 +1707,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-arrow {
-  color: light-dark(light-dark(#5c5c5c, #b3b3b3), light-dark(#222222, #dadada));
+  color: #5c5c5c;
   opacity: 0.5;
 }
 
@@ -1733,7 +1721,7 @@ svg.svg-icon {
 
 .graph-view.color-text {
   color: light-dark(
-    light-dark(light-dark(#5c5c5c, #b3b3b3), light-dark(#222222, #dadada)),
+    light-dark(#5c5c5c, #b3b3b3),
     light-dark(light-dark(#5c5c5c, #b3b3b3), light-dark(#222222, #dadada))
   );
 }
@@ -1747,10 +1735,7 @@ svg.svg-icon {
 }
 
 .graph-controls {
-  background-color: light-dark(
-    light-dark(#ffffff, #1e1e1e),
-    light-dark(#f6f6f6, #262626)
-  );
+  background-color: #ffffff;
   border-radius: 8px;
   inset-inline-end: 12px;
   overflow: auto;
@@ -2031,25 +2016,16 @@ svg.svg-icon {
 }
 
 .workspace-tabs .workspace-leaf {
-  background-color: light-dark(
-    light-dark(#fafafa, #242424),
-    light-dark(#ffffff, #1e1e1e)
-  );
+  background-color: #fafafa;
   height: 100%;
 }
 
 .workspace-split.mod-root {
-  background-color: light-dark(
-    light-dark(#ffffff, #1e1e1e),
-    light-dark(#f6f6f6, #262626)
-  );
+  background-color: #ffffff;
 }
 
 .workspace-split.mod-root .view-content {
-  background-color: light-dark(
-    light-dark(#ffffff, #1e1e1e),
-    light-dark(#f6f6f6, #262626)
-  );
+  background-color: #ffffff;
 }
 
 .workspace-leaf-resize-handle {

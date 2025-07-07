@@ -2627,10 +2627,7 @@ iframe {
   }
   .titlebar {
     -webkit-app-region: drag;
-    background-color: light-dark(
-      light-dark(#ffffff, #1d1f21),
-      light-dark(#ffffff, #1d1f21)
-    );
+    background-color: #ffffff;
     border-bottom: 0px solid transparent;
     display: flex;
     left: 0;
@@ -3960,18 +3957,12 @@ body.is-focused .workspace-tabs.mod-top {
 }
 
 .is-hidden-frameless:not(.is-fullscreen) .titlebar-button-container.mod-right {
-  background-color: light-dark(
-    light-dark(#ffffff, #1d1f21),
-    light-dark(#ffffff, #1d1f21)
-  );
+  background-color: #ffffff;
 }
 
 .is-hidden-frameless:not(.is-fullscreen).is-focused
   .titlebar-button-container.mod-right {
-  background-color: light-dark(
-    light-dark(#efefef, #282a2e),
-    light-dark(#efefef, #282a2e)
-  );
+  background-color: #efefef;
 }
 
 .titlebar-button.mod-logo:hover .logo-wireframe {
@@ -4467,10 +4458,7 @@ body:not(.show-inline-title) .inline-title:not([data-level]) {
 
 .workspace-ribbon.mod-left:before {
   -webkit-app-region: drag;
-  background-color: light-dark(
-    light-dark(#ffffff, #1d1f21),
-    light-dark(#ffffff, #1d1f21)
-  );
+  background-color: #ffffff;
   border-bottom: 0.5pt solid #00000026;
   box-sizing: border-box;
   content: " ";
@@ -4490,10 +4478,7 @@ body:not(.show-ribbon) .workspace-ribbon {
 }
 
 .workspace-ribbon {
-  background-color: light-dark(
-    light-dark(#efefef, #282a2e),
-    light-dark(#efefef, #282a2e)
-  );
+  background-color: #efefef;
   border-right: 0.5pt solid light-dark(#cecece, #181a1e);
   color: light-dark(#8e908c, #969896);
   display: flex;
@@ -4508,7 +4493,7 @@ body:not(.show-ribbon) .workspace-ribbon {
 
 .workspace-ribbon.mod-left.is-collapsed {
   background-color: light-dark(
-    light-dark(light-dark(#efefef, #282a2e), light-dark(#efefef, #282a2e)),
+    light-dark(#efefef, #282a2e),
     light-dark(light-dark(#efefef, #282a2e), light-dark(#efefef, #282a2e))
   );
   border-right-color: light-dark(#cecece, #181a1e);
@@ -7697,10 +7682,7 @@ button.mod-destructive {
 }
 
 .card {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid transparent;
   border-radius: 4px;
   display: flex;
@@ -10120,10 +10102,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   cursor: default;
   text-align: center;
 }
@@ -11288,27 +11267,18 @@ kbd {
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .findbarOpen .pdf-viewer-container {

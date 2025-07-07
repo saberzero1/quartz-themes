@@ -7811,10 +7811,7 @@ button.mod-destructive {
 }
 
 .card {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid light-dark(#f0eae2, #38312e);
   border-radius: 4px;
   display: flex;
@@ -8027,19 +8024,19 @@ button.mod-destructive {
 }
 
 .diff-line.mod-left {
-  background-color: rgba(light-dark(rgb(201, 84, 84), rgb(201, 84, 84)), 0.2);
+  background-color: light-dark(rgba(201, 84, 84, 0.2), rgba(201, 84, 84, 0.2));
 }
 
 .diff-line.mod-left .diff-changed {
-  background-color: rgba(light-dark(rgb(201, 84, 84), rgb(201, 84, 84)), 0.4);
+  background-color: light-dark(rgba(201, 84, 84, 0.4), rgba(201, 84, 84, 0.4));
 }
 
 .diff-line.mod-right {
-  background-color: rgba(light-dark(rgb(201, 84, 84), rgb(201, 84, 84)), 0.2);
+  background-color: light-dark(rgba(201, 84, 84, 0.2), rgba(201, 84, 84, 0.2));
 }
 
 .diff-line.mod-right .diff-changed {
-  background-color: rgba(light-dark(rgb(201, 84, 84), rgb(201, 84, 84)), 0.4);
+  background-color: light-dark(rgba(201, 84, 84, 0.4), rgba(201, 84, 84, 0.4));
 }
 
 .diff-collapsed {
@@ -8112,19 +8109,25 @@ button.mod-destructive {
 }
 
 .document-search-input.mod-no-match {
-  background-color: rgba(light-dark(rgb(201, 84, 84), rgb(201, 84, 84)), 0.2);
+  background-color: light-dark(rgba(201, 84, 84, 0.2), rgba(201, 84, 84, 0.2));
 }
 
 .document-replace-input.mod-no-match {
-  background-color: rgba(light-dark(rgb(201, 84, 84), rgb(201, 84, 84)), 0.2);
+  background-color: light-dark(rgba(201, 84, 84, 0.2), rgba(201, 84, 84, 0.2));
 }
 
 @media (hover: hover) {
   .document-search-input.mod-no-match:hover {
-    background-color: rgba(light-dark(rgb(201, 84, 84), rgb(201, 84, 84)), 0.2);
+    background-color: light-dark(
+      rgba(201, 84, 84, 0.2),
+      rgba(201, 84, 84, 0.2)
+    );
   }
   .document-replace-input.mod-no-match:hover {
-    background-color: rgba(light-dark(rgb(201, 84, 84), rgb(201, 84, 84)), 0.2);
+    background-color: light-dark(
+      rgba(201, 84, 84, 0.2),
+      rgba(201, 84, 84, 0.2)
+    );
   }
 }
 
@@ -10238,10 +10241,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   cursor: default;
   text-align: center;
 }
@@ -11120,7 +11120,7 @@ body:not(.is-phone) .vertical-tab-header-group-items {
 .tree-item-self {
   align-items: baseline;
   border-radius: 4px;
-  color: light-dark(light-dark(#949494, #f0eae2), light-dark(#949494, #f0eae2));
+  color: #949494;
   display: flex;
   font-size: 16px;
   font-weight: inherit;
@@ -11404,27 +11404,18 @@ kbd {
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .findbarOpen .pdf-viewer-container {
@@ -17247,7 +17238,7 @@ em {
 
 .nav-folder-title {
   border-radius: 4px;
-  color: light-dark(light-dark(#949494, #f0eae2), light-dark(#949494, #f0eae2));
+  color: #949494;
   cursor: pointer;
   display: flex;
   font-size: 16px;
@@ -17259,7 +17250,7 @@ em {
 
 .nav-file-title {
   border-radius: 4px;
-  color: light-dark(light-dark(#949494, #f0eae2), light-dark(#949494, #f0eae2));
+  color: #949494;
   cursor: pointer;
   display: flex;
   font-size: 16px;
@@ -17427,7 +17418,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .file-tree .mod-new.is-selected {
-  background-color: rgba(light-dark(rgb(201, 84, 84), rgb(201, 84, 84)), 0.2);
+  background-color: light-dark(rgba(201, 84, 84, 0.2), rgba(201, 84, 84, 0.2));
 }
 
 .file-tree .mod-new .tree-item-flair {
@@ -17435,11 +17426,11 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .file-tree .mod-deleted.is-selected {
-  background-color: rgba(light-dark(rgb(201, 84, 84), rgb(201, 84, 84)), 0.2);
+  background-color: light-dark(rgba(201, 84, 84, 0.2), rgba(201, 84, 84, 0.2));
 }
 
 .file-tree .mod-to-delete.is-selected {
-  background-color: rgba(light-dark(rgb(201, 84, 84), rgb(201, 84, 84)), 0.2);
+  background-color: light-dark(rgba(201, 84, 84, 0.2), rgba(201, 84, 84, 0.2));
 }
 
 .file-tree .mod-deleted .tree-item-flair {
@@ -18130,7 +18121,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .publish-upload-item:before {
-  background-color: rgba(light-dark(rgb(201, 84, 84), rgb(201, 84, 84)), 0.2);
+  background-color: light-dark(rgba(201, 84, 84, 0.2), rgba(201, 84, 84, 0.2));
   border-radius: 4px;
   content: " ";
   height: 100%;
@@ -18147,7 +18138,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .publish-upload-item.mod-failed:before {
-  background-color: rgba(light-dark(rgb(201, 84, 84), rgb(201, 84, 84)), 0.2);
+  background-color: light-dark(rgba(201, 84, 84, 0.2), rgba(201, 84, 84, 0.2));
 }
 
 .publish-upload-item.mod-completed {
@@ -19028,7 +19019,7 @@ body:not(.is-phone)
 
 .sync-history-list-item .version-group-container .version-group-item {
   border-radius: 4px;
-  color: light-dark(light-dark(#949494, #f0eae2), light-dark(#949494, #f0eae2));
+  color: #949494;
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.3;

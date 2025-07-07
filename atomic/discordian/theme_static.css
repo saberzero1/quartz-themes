@@ -4607,10 +4607,7 @@ body:not(.show-ribbon) .workspace-ribbon {
 }
 
 .workspace-ribbon.mod-left.is-collapsed {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-right-color: #00000026;
   transition: background-color 250ms 95ms ease-in-out;
 }
@@ -4624,10 +4621,7 @@ body:not(.show-ribbon) .workspace-ribbon {
 }
 
 .workspace-ribbon.is-collapsed {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .side-dock-settings {
@@ -5456,10 +5450,7 @@ input {
   align-items: center;
   align-self: flex-end;
   background-color: #ffffff26;
-  border-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  border-color: #fcfcfc;
   border-radius: 4px;
   display: flex;
   font-family:
@@ -6079,10 +6070,7 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
 }
 
 .status-bar {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-color: #00000026;
   border-radius: 8px 0 0 0;
   border-style: solid;
@@ -7757,10 +7745,7 @@ button {
     color 0.17s ease;
   align-items: center;
   border: 0;
-  border-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  border-color: #fcfcfc;
   border-radius: 5px;
   color: #fb464c;
   cursor: pointer;
@@ -7903,10 +7888,7 @@ button.mod-destructive {
 }
 
 .card {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid transparent;
   border-radius: 4px;
   display: flex;
@@ -8327,10 +8309,7 @@ select {
     1.2em auto,
     100%;
   border: 1px solid #20222580;
-  border-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  border-color: #fcfcfc;
   border-radius: 6px;
   box-shadow: none;
   box-sizing: border-box;
@@ -8964,10 +8943,7 @@ input[type="text"] {
   background: transparent;
   background-color: #212326;
   border: 1px solid transparent;
-  border-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  border-color: #fcfcfc;
   border-radius: 4px;
   color: #8d9196;
   font-family:
@@ -8988,10 +8964,7 @@ input[type="search"] {
   background: transparent;
   background-color: #212326;
   border: 1px solid transparent;
-  border-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  border-color: #fcfcfc;
   border-radius: 4px;
   color: #8d9196;
   font-family:
@@ -9012,10 +8985,7 @@ input[type="email"] {
   background: transparent;
   background-color: #212326;
   border: 1px solid transparent;
-  border-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  border-color: #fcfcfc;
   border-radius: 4px;
   color: #8d9196;
   font-family:
@@ -9036,10 +9006,7 @@ input[type="password"] {
   background: transparent;
   background-color: #212326;
   border: 1px solid transparent;
-  border-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  border-color: #fcfcfc;
   border-radius: 4px;
   color: #8d9196;
   font-family:
@@ -9060,10 +9027,7 @@ input[type="number"] {
   background: transparent;
   background-color: #212326;
   border: 1px solid transparent;
-  border-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  border-color: #fcfcfc;
   border-radius: 4px;
   color: #8d9196;
   font-family:
@@ -10447,10 +10411,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   cursor: default;
   text-align: center;
 }
@@ -11677,27 +11638,18 @@ kbd {
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .findbarOpen .pdf-viewer-container {
@@ -17877,10 +17829,7 @@ em {
 
 .nav-file-tag {
   align-self: center;
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-radius: 4px;
   font-size: 9px;
   font-weight: 600;
@@ -24740,10 +24689,7 @@ body.theme-dark:not(.discordian-theme) .modal-container {
 }
 
 .splash-brand-name {
-  border-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  border-color: #fcfcfc;
   font-family:
     Catamaran,
     Helvetica Neue,
@@ -24754,10 +24700,7 @@ body.theme-dark:not(.discordian-theme) .modal-container {
 }
 
 .suggestion-hotkey {
-  border-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  border-color: #fcfcfc;
   font-family:
     Catamaran,
     Helvetica Neue,
@@ -25413,10 +25356,7 @@ div.popover.hover-popover .markdown-preview-view h6 {
 .mod-root .graph-controls::-webkit-scrollbar-track {
   background-color: #36393f;
   border: 0 solid transparent;
-  border-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  border-color: #fcfcfc;
   border-radius: 0;
 }
 
@@ -25483,10 +25423,7 @@ div.popover.hover-popover .markdown-preview-view h6 {
 }
 
 .workspace-ribbon.mod-right.is-collapsed {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .workspace-tab-header:hover {
@@ -25537,11 +25474,8 @@ div.popover.hover-popover .markdown-preview-view h6 {
 }
 
 .side-dock-panels-container {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
-  color: light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
+  background-color: #fcfcfc;
+  color: #fcfcfc;
   font-size: 13px;
 }
 
@@ -25722,10 +25656,7 @@ body:not(.is-grabbing) .nav-file-title.is-active {
 }
 
 .search-result-file-title .pane-list-item-ending-flair {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-radius: 3px;
   font-size: 12px;
   line-height: 12px;
@@ -26483,10 +26414,7 @@ pre.frontmatter[class*="language-"] {
 }
 
 .modal:not(.mod-settings) .modal-title {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   font-size: 22px;

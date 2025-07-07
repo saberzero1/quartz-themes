@@ -25001,13 +25001,11 @@ input.mobile-vault-chooser-field-input {
   background: #23242a;
   color: #eff1f5;
 }
-
 .tree-item-icon.collapse-icon {
   margin: 0px 0px 0px -10px;
   padding: 0px 0px 0px 0px;
   position: 6px 6px 0px 0px;
 }
-
 .nav-folder-title[data-path="/"] {
   font-family: "DM Mono", "Fira Code", Courier, monospace;
   justify-content: left;

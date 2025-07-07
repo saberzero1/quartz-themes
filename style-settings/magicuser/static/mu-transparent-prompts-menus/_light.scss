@@ -1,4 +1,0 @@
-body:not(.is-mobile) div:is(.graph-controls, .modal, .prompt, .menu) {
-  background-color: rgba(255, 255, 255, var(--mu-transparency-menus-level));
-  backdrop-filter: blur(var(--mu-transparency-blur-level));
-}

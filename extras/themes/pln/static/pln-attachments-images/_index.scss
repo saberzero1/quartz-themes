@@ -1,5 +1,0 @@
-&.pln-attachments-images .nav-file:has([data-path$=".jpg"]),
-&.pln-attachments-images .nav-file:has([data-path$=".jpeg"]),
-&.pln-attachments-images .nav-file:has([data-path$=".png"]) {
-  display: contents !important;
-}

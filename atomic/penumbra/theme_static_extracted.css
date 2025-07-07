@@ -958,7 +958,7 @@ h6 a {
 
 h1 {
   --font-weight: 700;
-  color: light-dark(light-dark(#636363, #bebebe), light-dark(#636363, #bebebe));
+  color: #636363;
   font-family: inherit;
   font-size: 1.802em;
   font-style: normal;
@@ -972,7 +972,7 @@ h1 {
 
 h2 {
   --font-weight: 600;
-  color: light-dark(light-dark(#636363, #bebebe), light-dark(#636363, #bebebe));
+  color: #636363;
   font-family: inherit;
   font-size: 1.602em;
   font-style: normal;
@@ -986,7 +986,7 @@ h2 {
 
 h3 {
   --font-weight: 600;
-  color: light-dark(light-dark(#636363, #bebebe), light-dark(#636363, #bebebe));
+  color: #636363;
   font-family: inherit;
   font-size: 1.424em;
   font-style: normal;
@@ -1000,7 +1000,7 @@ h3 {
 
 h4 {
   --font-weight: 600;
-  color: light-dark(light-dark(#636363, #bebebe), light-dark(#636363, #bebebe));
+  color: #636363;
   font-family: inherit;
   font-size: 1.266em;
   font-style: normal;
@@ -1014,7 +1014,7 @@ h4 {
 
 h5 {
   --font-weight: 600;
-  color: light-dark(light-dark(#636363, #bebebe), light-dark(#636363, #bebebe));
+  color: #636363;
   font-family: inherit;
   font-size: 1.125em;
   font-style: normal;
@@ -1028,7 +1028,7 @@ h5 {
 
 h6 {
   --font-weight: 600;
-  color: light-dark(light-dark(#636363, #bebebe), light-dark(#636363, #bebebe));
+  color: #636363;
   font-family: inherit;
   font-size: 1em;
   font-style: normal;
@@ -1041,10 +1041,7 @@ h6 {
 }
 
 .markdown-rendered pre {
-  background-color: light-dark(
-    light-dark(#f2e6d4, #24272b),
-    light-dark(#f2e6d4, #24272b)
-  );
+  background-color: #f2e6d4;
   border: 0px solid transparent;
   border-radius: 4px;
   min-height: 38px;
@@ -1056,13 +1053,10 @@ h6 {
 
 .markdown-rendered code {
   -webkit-box-decoration-break: clone;
-  background-color: light-dark(
-    light-dark(#f2e6d4, #24272b),
-    light-dark(#f2e6d4, #24272b)
-  );
+  background-color: #f2e6d4;
   border: 0px solid transparent;
   border-radius: 4px;
-  color: light-dark(light-dark(#8f8f8f, #8f8f8f), light-dark(#8f8f8f, #8f8f8f));
+  color: #8f8f8f;
   font-family:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1382,13 +1376,10 @@ input.prompt-input {
 }
 
 a.tag {
-  background-color: light-dark(
-    light-dark(#fff7ed, #303338),
-    light-dark(#fff7ed, #303338)
-  );
+  background-color: #fff7ed;
   border: 0px solid #fff6eb26;
   border-radius: 4px;
-  color: light-dark(light-dark(#92963a, #92963a), light-dark(#92963a, #92963a));
+  color: #92963a;
   font-size: 0.875em;
   font-weight: inherit;
   line-height: 1;
@@ -1433,7 +1424,7 @@ input[type="search"] {
 
 .nav-file-icon {
   align-items: center;
-  color: light-dark(light-dark(#8f8f8f, #8f8f8f), light-dark(#8f8f8f, #8f8f8f));
+  color: #8f8f8f;
   display: inline-flex;
   margin-inline-end: 6px;
   opacity: 1;
@@ -1442,7 +1433,7 @@ input[type="search"] {
 
 .nav-folder-title {
   border-radius: 4px;
-  color: light-dark(light-dark(#8f8f8f, #8f8f8f), light-dark(#8f8f8f, #8f8f8f));
+  color: #8f8f8f;
   cursor: pointer;
   display: flex;
   font-size: 16px;
@@ -1454,7 +1445,7 @@ input[type="search"] {
 
 .nav-file-title {
   border-radius: 4px;
-  color: light-dark(light-dark(#8f8f8f, #8f8f8f), light-dark(#8f8f8f, #8f8f8f));
+  color: #8f8f8f;
   cursor: pointer;
   display: flex;
   font-size: 16px;
@@ -1465,19 +1456,13 @@ input[type="search"] {
 }
 
 .nav-file-title.is-active {
-  background-color: light-dark(
-    light-dark(#fffdfb, #f2e6d4),
-    light-dark(#fffdfb, #f2e6d4)
-  );
+  background-color: #fffdfb;
   color: var(--nav-item-color-active);
   font-weight: inherit;
 }
 
 .nav-folder-title.is-active {
-  background-color: light-dark(
-    light-dark(#fffdfb, #f2e6d4),
-    light-dark(#fffdfb, #f2e6d4)
-  );
+  background-color: #fffdfb;
   color: var(--nav-item-color-active);
   font-weight: inherit;
 }
@@ -1495,7 +1480,7 @@ input[type="search"] {
 .tree-item-self {
   align-items: baseline;
   border-radius: 4px;
-  color: light-dark(light-dark(#8f8f8f, #8f8f8f), light-dark(#8f8f8f, #8f8f8f));
+  color: #8f8f8f;
   display: flex;
   font-size: 16px;
   font-weight: inherit;
@@ -1525,15 +1510,12 @@ input[type="search"] {
 
 .tree-item-self.is-clickable.mobile-tap {
   background-color: #ffffff26;
-  color: light-dark(light-dark(#636363, #bebebe), light-dark(#636363, #bebebe));
+  color: #636363;
   font-weight: inherit;
 }
 
 .tree-item-self.is-active {
-  background-color: light-dark(
-    light-dark(#fffdfb, #f2e6d4),
-    light-dark(#fffdfb, #f2e6d4)
-  );
+  background-color: #fffdfb;
   color: var(--nav-item-color-active);
   font-weight: inherit;
 }
@@ -1550,7 +1532,7 @@ input[type="search"] {
 
 .tree-item-self .tree-item-icon {
   align-items: center;
-  color: light-dark(light-dark(#8f8f8f, #8f8f8f), light-dark(#8f8f8f, #8f8f8f));
+  color: #8f8f8f;
   display: flex;
   flex: 0 0 auto;
   justify-content: center;
@@ -1608,12 +1590,9 @@ input[type="search"] {
 }
 
 kbd {
-  background-color: light-dark(
-    light-dark(#f2e6d4, #24272b),
-    light-dark(#f2e6d4, #24272b)
-  );
+  background-color: #f2e6d4;
   border-radius: 4px;
-  color: light-dark(light-dark(#8f8f8f, #8f8f8f), light-dark(#8f8f8f, #8f8f8f));
+  color: #8f8f8f;
   font-family:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1665,7 +1644,7 @@ svg.svg-icon {
   align-items: center;
   background-color: transparent;
   border-radius: 4px;
-  color: light-dark(light-dark(#8f8f8f, #8f8f8f), light-dark(#8f8f8f, #8f8f8f));
+  color: #8f8f8f;
   cursor: pointer;
   display: flex;
   height: auto;
@@ -1707,7 +1686,7 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill {
-  color: light-dark(light-dark(#ca7081, #ca7081), light-dark(#ca7081, #ca7081));
+  color: #ca7081;
 }
 
 .graph-view.color-fill-focused {
@@ -1761,11 +1740,11 @@ svg.svg-icon {
 }
 
 .graph-view.color-line {
-  color: light-dark(light-dark(#bebebe, #636363), light-dark(#bebebe, #636363));
+  color: #bebebe;
 }
 
 .graph-view.color-text {
-  color: light-dark(light-dark(#636363, #bebebe), light-dark(#636363, #bebebe));
+  color: #636363;
 }
 
 .graph-view.color-fill-highlight {

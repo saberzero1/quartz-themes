@@ -1561,10 +1561,7 @@ input[type="search"] {
 }
 
 .tree-item-self.is-being-dragged {
-  background-color: light-dark(
-    hsl(light-dark(202, 202), light-dark(86%, 100%), light-dark(43%, 75%)),
-    hsl(light-dark(202, 202), light-dark(86%, 100%), light-dark(43%, 75%))
-  );
+  background-color: light-dark(hsl(202, 86%, 43%), hsl(202, 86%, 43%));
   color: #1a1b26;
 }
 
@@ -1783,17 +1780,11 @@ svg.svg-icon {
 }
 
 .graph-view.color-fill-highlight {
-  color: light-dark(
-    hsl(light-dark(202, 202), light-dark(86%, 100%), light-dark(43%, 75%)),
-    hsl(light-dark(202, 202), light-dark(86%, 100%), light-dark(43%, 75%))
-  );
+  color: light-dark(hsl(202, 86%, 43%), hsl(202, 86%, 43%));
 }
 
 .graph-view.color-line-highlight {
-  color: light-dark(
-    hsl(light-dark(202, 202), light-dark(86%, 100%), light-dark(43%, 75%)),
-    hsl(light-dark(202, 202), light-dark(86%, 100%), light-dark(43%, 75%))
-  );
+  color: light-dark(hsl(202, 86%, 43%), hsl(202, 86%, 43%));
 }
 
 .graph-controls {

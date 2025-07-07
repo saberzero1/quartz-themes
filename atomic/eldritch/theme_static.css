@@ -945,7 +945,7 @@
   --color-accent: light-dark(#52fa7c, #52fa7c);
   --color-accent-1: light-dark(#69fb8b, #81fc9a);
   --color-accent-2: light-dark(#81fc9a, #adfebb);
-  --color-accent-hsl: light-dark(#52fa7c, #52fa7c);
+  --color-accent-hsl: light-dark(135, 94%, 65%, 135, 94%, 65%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -1754,7 +1754,7 @@ body {
   --color-accent: light-dark(#52fa7c, #52fa7c);
   --color-accent-1: light-dark(#69fb8b, #81fc9a);
   --color-accent-2: light-dark(#81fc9a, #adfebb);
-  --color-accent-hsl: light-dark(#52fa7c, #52fa7c);
+  --color-accent-hsl: light-dark(135, 94%, 65%, 135, 94%, 65%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -4606,10 +4606,7 @@ body:not(.show-ribbon) .workspace-ribbon {
 }
 
 .workspace-ribbon.mod-left.is-collapsed {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-right-color: #00000026;
   transition: background-color 250ms 95ms ease-in-out;
 }
@@ -4623,10 +4620,7 @@ body:not(.show-ribbon) .workspace-ribbon {
 }
 
 .workspace-ribbon.is-collapsed {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .side-dock-settings {
@@ -6008,10 +6002,7 @@ body:not(.is-phone) .community-item.is-selected:hover .flair {
 }
 
 .status-bar {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border-color: #00000026;
   border-radius: 8px 0 0 0;
   border-style: solid;
@@ -7689,28 +7680,19 @@ button {
 }
 
 button:not(.clickable-icon) {
-  background-color: light-dark(
-    light-dark(#e0e0e0, #363636),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #e0e0e0;
   box-shadow: none;
   color: #fb464c;
 }
 
 button:not(.clickable-icon).mobile-tap {
-  background-color: light-dark(
-    light-dark(#d4d4d4, #3f3f3f),
-    light-dark(#d4d4d4, #3f3f3f)
-  );
+  background-color: #d4d4d4;
   box-shadow: none;
 }
 
 @media (hover: hover) {
   button:hover {
-    background-color: light-dark(
-      light-dark(#d4d4d4, #3f3f3f),
-      light-dark(#d4d4d4, #3f3f3f)
-    );
+    background-color: #d4d4d4;
     box-shadow: none;
   }
 }
@@ -7813,10 +7795,7 @@ button.mod-destructive {
 }
 
 .card {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid transparent;
   border-radius: 4px;
   display: flex;
@@ -9975,8 +9954,8 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 
 .modal .modal-nav-action.mod-cta {
   color: light-dark(
-    hsl(light-dark(135, 135), light-dark(94%, 94%), light-dark(65%, 65%)),
-    hsl(light-dark(135, 135), light-dark(94%, 94%), light-dark(65%, 65%))
+    light-dark(hsl(135, 94%, 65%), hsl(135, 94%, 65%)),
+    light-dark(hsl(135, 94%, 65%), hsl(135, 94%, 65%))
   );
   font-weight: 600;
   inset-inline-end: 0;
@@ -10269,10 +10248,7 @@ body:not(.is-mobile) .modal-button-container .mod-secondary {
 }
 
 .popover.hover-popover > .markdown-embed[data-type="footnote"].mod-empty {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   cursor: default;
   text-align: center;
 }
@@ -11439,27 +11415,18 @@ kbd {
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   filter: drop-shadow(0px 0px 1px light-dark(#707070, #999999))
     drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))
     drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .theme-dark .pdf-container.mod-themed .popupWrapper > div::after {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .theme-dark .pdf-container.mod-themed .popupContent:empty + .popupMeta {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .findbarOpen .pdf-viewer-container {
@@ -16811,10 +16778,7 @@ em {
   --metadata-label-width: 7em;
   --metadata-property-box-shadow: 0 0 0 1px #3f3f3f;
   align-items: center;
-  background-color: light-dark(
-    light-dark(#e0e0e0, #363636),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #e0e0e0;
   display: flex;
   width: 100%;
 }
@@ -18688,10 +18652,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
 }
 
 .search-result-file-match-destination-file {
-  background-color: light-dark(
-    light-dark(#e0e0e0, #363636),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #e0e0e0;
   border-radius: 4px;
   box-shadow: none;
   color: #bababa;
@@ -18705,10 +18666,7 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged .nav-file-tag {
   }
   .search-result-file-match:hover
     .search-result-file-match-destination-file:hover {
-    background-color: light-dark(
-      light-dark(#d4d4d4, #3f3f3f),
-      light-dark(#d4d4d4, #3f3f3f)
-    );
+    background-color: #d4d4d4;
     box-shadow: none;
     color: light-dark(#ebfafa, #ebfafa);
   }
@@ -19695,8 +19653,8 @@ body.theme-dark {
   );
   border: 2px solid
     light-dark(
-      hsl(light-dark(135, 135), light-dark(94%, 94%), light-dark(65%, 65%)),
-      hsl(light-dark(135, 135), light-dark(94%, 94%), light-dark(65%, 65%))
+      light-dark(hsl(135, 94%, 65%), hsl(135, 94%, 65%)),
+      light-dark(hsl(135, 94%, 65%), hsl(135, 94%, 65%))
     );
   pointer-events: none;
   position: absolute;
@@ -19801,8 +19759,8 @@ body.theme-dark {
 @media (hover: hover) {
   .canvas-card-menu .canvas-card-menu-button:hover {
     color: light-dark(
-      hsl(light-dark(135, 135), light-dark(94%, 94%), light-dark(65%, 65%)),
-      hsl(light-dark(135, 135), light-dark(94%, 94%), light-dark(65%, 65%))
+      light-dark(hsl(135, 94%, 65%), hsl(135, 94%, 65%)),
+      light-dark(hsl(135, 94%, 65%), hsl(135, 94%, 65%))
     );
   }
 }
@@ -19848,10 +19806,7 @@ body.theme-dark {
   --icon-size: 18px;
   --icon-stroke: 2px;
   align-items: center;
-  background-color: light-dark(
-    light-dark(#e0e0e0, #363636),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #e0e0e0;
   border-bottom: 1px solid transparent;
   border-radius: 0;
   box-shadow: none;
@@ -19871,18 +19826,15 @@ body.theme-dark {
 
 @media (hover: hover) {
   .canvas-control-item:hover {
-    background-color: light-dark(
-      light-dark(#d4d4d4, #3f3f3f),
-      light-dark(#d4d4d4, #3f3f3f)
-    );
+    background-color: #d4d4d4;
     color: light-dark(#ebfafa, #ebfafa);
   }
 }
 
 .canvas-control-item.is-active {
   color: light-dark(
-    hsl(light-dark(135, 135), light-dark(94%, 94%), light-dark(65%, 65%)),
-    hsl(light-dark(135, 135), light-dark(94%, 94%), light-dark(65%, 65%))
+    light-dark(hsl(135, 94%, 65%), hsl(135, 94%, 65%)),
+    light-dark(hsl(135, 94%, 65%), hsl(135, 94%, 65%))
   );
 }
 
@@ -20053,8 +20005,8 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 
 .canvas-node.is-selected .canvas-node-container {
   border-color: light-dark(
-    hsl(light-dark(135, 135), light-dark(94%, 94%), light-dark(65%, 65%)),
-    hsl(light-dark(135, 135), light-dark(94%, 94%), light-dark(65%, 65%))
+    light-dark(hsl(135, 94%, 65%), hsl(135, 94%, 65%)),
+    light-dark(hsl(135, 94%, 65%), hsl(135, 94%, 65%))
   );
   box-shadow:
     0px 0.5px 1px 0.5px #0000001a,
@@ -20063,8 +20015,8 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
 
 .canvas-node.is-focused .canvas-node-container {
   border-color: light-dark(
-    hsl(light-dark(135, 135), light-dark(94%, 94%), light-dark(65%, 65%)),
-    hsl(light-dark(135, 135), light-dark(94%, 94%), light-dark(65%, 65%))
+    light-dark(hsl(135, 94%, 65%), hsl(135, 94%, 65%)),
+    light-dark(hsl(135, 94%, 65%), hsl(135, 94%, 65%))
   );
   box-shadow:
     0px 0.5px 1px 0.5px #0000001a,
@@ -20134,8 +20086,8 @@ body:not(.is-ios) .canvas-wrapper.mod-animating .canvas-node-label {
   );
   border: 4px solid
     light-dark(
-      hsl(light-dark(135, 135), light-dark(94%, 94%), light-dark(65%, 65%)),
-      hsl(light-dark(135, 135), light-dark(94%, 94%), light-dark(65%, 65%))
+      light-dark(hsl(135, 94%, 65%), hsl(135, 94%, 65%)),
+      light-dark(hsl(135, 94%, 65%), hsl(135, 94%, 65%))
     );
   box-shadow: 0px 2px 10px #00000026;
 }
@@ -20411,8 +20363,8 @@ body.is-mobile .canvas-node-resizer {
   background-color: light-dark(#212337, #212337);
   border: 2px solid
     light-dark(
-      hsl(light-dark(135, 135), light-dark(94%, 94%), light-dark(65%, 65%)),
-      hsl(light-dark(135, 135), light-dark(94%, 94%), light-dark(65%, 65%))
+      light-dark(hsl(135, 94%, 65%), hsl(135, 94%, 65%)),
+      light-dark(hsl(135, 94%, 65%), hsl(135, 94%, 65%))
     );
   border-radius: 3px;
   display: block;
@@ -20428,8 +20380,8 @@ body.is-mobile .canvas-node-resizer {
   background-color: light-dark(#212337, #212337);
   border: 2px solid
     light-dark(
-      hsl(light-dark(135, 135), light-dark(94%, 94%), light-dark(65%, 65%)),
-      hsl(light-dark(135, 135), light-dark(94%, 94%), light-dark(65%, 65%))
+      light-dark(hsl(135, 94%, 65%), hsl(135, 94%, 65%)),
+      light-dark(hsl(135, 94%, 65%), hsl(135, 94%, 65%))
     );
   border-radius: 3px;
   display: block;
@@ -20445,8 +20397,8 @@ body.is-mobile .canvas-node-resizer {
   background-color: light-dark(#212337, #212337);
   border: 2px solid
     light-dark(
-      hsl(light-dark(135, 135), light-dark(94%, 94%), light-dark(65%, 65%)),
-      hsl(light-dark(135, 135), light-dark(94%, 94%), light-dark(65%, 65%))
+      light-dark(hsl(135, 94%, 65%), hsl(135, 94%, 65%)),
+      light-dark(hsl(135, 94%, 65%), hsl(135, 94%, 65%))
     );
   border-radius: 3px;
   display: block;
@@ -20462,8 +20414,8 @@ body.is-mobile .canvas-node-resizer {
   background-color: light-dark(#212337, #212337);
   border: 2px solid
     light-dark(
-      hsl(light-dark(135, 135), light-dark(94%, 94%), light-dark(65%, 65%)),
-      hsl(light-dark(135, 135), light-dark(94%, 94%), light-dark(65%, 65%))
+      light-dark(hsl(135, 94%, 65%), hsl(135, 94%, 65%)),
+      light-dark(hsl(135, 94%, 65%), hsl(135, 94%, 65%))
     );
   border-radius: 3px;
   display: block;
@@ -20502,8 +20454,8 @@ body.is-mobile .canvas-node-resizer {
 
 .canvas-node-connection-point::after {
   background-color: light-dark(
-    hsl(light-dark(135, 135), light-dark(94%, 94%), light-dark(65%, 65%)),
-    hsl(light-dark(135, 135), light-dark(94%, 94%), light-dark(65%, 65%))
+    light-dark(hsl(135, 94%, 65%), hsl(135, 94%, 65%)),
+    light-dark(hsl(135, 94%, 65%), hsl(135, 94%, 65%))
   );
   border: 3px solid transparent;
   border-radius: 50%;
@@ -20539,16 +20491,16 @@ body.is-mobile .canvas-node-resizer {
 
 .canvas-snaps line {
   stroke: light-dark(
-    hsl(light-dark(135, 135), light-dark(94%, 94%), light-dark(65%, 65%)),
-    hsl(light-dark(135, 135), light-dark(94%, 94%), light-dark(65%, 65%))
+    light-dark(hsl(135, 94%, 65%), hsl(135, 94%, 65%)),
+    light-dark(hsl(135, 94%, 65%), hsl(135, 94%, 65%))
   );
   stroke-width: 1px;
 }
 
 .canvas-snaps circle {
   fill: light-dark(
-    hsl(light-dark(135, 135), light-dark(94%, 94%), light-dark(65%, 65%)),
-    hsl(light-dark(135, 135), light-dark(94%, 94%), light-dark(65%, 65%))
+    light-dark(hsl(135, 94%, 65%), hsl(135, 94%, 65%)),
+    light-dark(hsl(135, 94%, 65%), hsl(135, 94%, 65%))
   );
 }
 
@@ -20795,8 +20747,8 @@ body.is-mobile .canvas-node-resizer {
   );
   border-radius: 8px;
   color: light-dark(
-    hsl(light-dark(135, 135), light-dark(94%, 94%), light-dark(65%, 65%)),
-    hsl(light-dark(135, 135), light-dark(94%, 94%), light-dark(65%, 65%))
+    light-dark(hsl(135, 94%, 65%), hsl(135, 94%, 65%)),
+    light-dark(hsl(135, 94%, 65%), hsl(135, 94%, 65%))
   );
   font-size: 19.2px;
   line-height: 1.5;
@@ -20843,8 +20795,8 @@ body.is-mobile .canvas-node-resizer {
 .canvas-cursor {
   border: 5px solid
     light-dark(
-      hsl(light-dark(135, 135), light-dark(94%, 94%), light-dark(65%, 65%)),
-      hsl(light-dark(135, 135), light-dark(94%, 94%), light-dark(65%, 65%))
+      light-dark(hsl(135, 94%, 65%), hsl(135, 94%, 65%)),
+      light-dark(hsl(135, 94%, 65%), hsl(135, 94%, 65%))
     );
   border-radius: 5px;
   height: 1px;
@@ -22922,10 +22874,7 @@ body.is-tablet .workspace-drawer.mod-left .workspace-drawer-inner {
 
 .workspace-drawer-active-tab-header {
   align-items: center;
-  background-color: light-dark(
-    light-dark(#e3e3e3, #2a2a2a),
-    light-dark(#e3e3e3, #2a2a2a)
-  );
+  background-color: #e3e3e3;
   border-radius: 8px;
   display: flex;
   margin: 0 12px 4px;
@@ -23109,10 +23058,7 @@ body.is-tablet .sidebar-toggle-button.mod-left {
 }
 
 .is-mobile button.mod-warning {
-  background-color: light-dark(
-    light-dark(#e0e0e0, #363636),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #e0e0e0;
   color: #fb464c;
   font-weight: 800;
 }
@@ -24240,10 +24186,7 @@ thead {
 }
 
 .table {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
   border: 1px solid light-dark(#323449, #323449);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -24290,11 +24233,8 @@ thead {
 }
 
 .side-dock-panels-container {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
-  color: light-dark(light-dark(#fcfcfc, #212121), light-dark(#e0e0e0, #363636));
+  background-color: #fcfcfc;
+  color: #fcfcfc;
 }
 
 .file-view-actions a {
@@ -24331,10 +24271,7 @@ thead {
 }
 
 .nav-action-button.is-active {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .search-result-file-title {
@@ -24445,10 +24382,7 @@ mark {
 }
 
 .workspace-ribbon.mod-right.is-collapsed {
-  background-color: light-dark(
-    light-dark(#fcfcfc, #212121),
-    light-dark(#e0e0e0, #363636)
-  );
+  background-color: #fcfcfc;
 }
 
 .markdown-preview-view .task-list-item-checkbox:checked::before {

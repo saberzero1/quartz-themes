@@ -10,7 +10,7 @@
   --color-accent-1: light-dark(#5db7db, #6fc3e0);
   --color-accent-2: light-dark(#6fc3e0, #8fd5e8);
   --color-accent-faint: light-dark(#30aadf, #3891b7);
-  --color-accent-hsl: light-dark(#4cadd6, #4cadd6);
+  --color-accent-hsl: light-dark(198, 63%, 57%, 198, 63%, 57%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
@@ -205,7 +205,7 @@ body {
   --color-accent-1: light-dark(#5db7db, #6fc3e0);
   --color-accent-2: light-dark(#6fc3e0, #8fd5e8);
   --color-accent-faint: light-dark(#30aadf, #3891b7);
-  --color-accent-hsl: light-dark(#4cadd6, #4cadd6);
+  --color-accent-hsl: light-dark(198, 63%, 57%, 198, 63%, 57%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-05: light-dark(#fcfcfc, #212121);
   --color-base-10: light-dark(#fafafa, #242424);
