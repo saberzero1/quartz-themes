@@ -121,5 +121,16 @@ export function prune(scssString) {
     }
   }
 
+  // Clean up any remaining empty rules or declarations
+  root.walkRules((rule) => {
+    if (rule.nodes && rule.nodes.length === 0) {
+      rule.remove();
+    } else {
+      rule.nodes = rule.nodes.filter((node) => {
+        return !(node.type === "decl" && node.value.trim() === "");
+      });
+    }
+  });
+
   return root.toString(scssSyntax);
 }
