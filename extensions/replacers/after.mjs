@@ -8,24 +8,27 @@ import {
   getFixes,
   getValueFromDictionary,
 } from "../../util/util.mjs";
-import { readFileSync } from "fs";
+import { readFileSync, writeFileSync } from "fs";
+import { format } from "../formatter.mjs";
 
 export default function replaceAfter(manifestCollection) {
   manifestCollection.forEach((manifest) => {
     const theme = getTheme(manifest);
     const filePath = `./themes/${theme}/_index.scss`;
+    const darkFilePath = `./themes/${theme}/_dark.scss`;
+    const lightFilePath = `./themes/${theme}/_light.scss`;
     const json = JSON.parse(
       readFileSync(`./atomic/${theme}/theme-static.json`, "utf8"),
     );
     const mapping = [
-      { selector: ":root", declaration: null },
-      { selector: "body", declaration: null },
+      { selector: ":root", declaration: "" },
+      { selector: "body", declaration: "" },
       { selector: "body", declaration: "color" },
-      { selector: ".callout", declaration: null },
+      { selector: ".callout", declaration: "" },
       { selector: ".callout", declaration: "background-color" },
-      { selector: ".callout-title", declaration: null },
-      { selector: ".callout-title-inner", declaration: null },
-      { selector: ".callout-content", declaration: null },
+      { selector: ".callout-title", declaration: "" },
+      { selector: ".callout-title-inner", declaration: "" },
+      { selector: ".callout-content", declaration: "" },
       { selector: ".callout", declaration: "background-color" },
       { selector: ".callout", declaration: "--callout-color" },
       {
@@ -57,7 +60,7 @@ export default function replaceAfter(manifestCollection) {
         declaration: "--callout-color",
       },
       {
-        selector: `.callout[data-callout="info"]`,
+        selector: `.callout[data-callout="hint"]`,
         declaration: "--callout-color",
       },
       {
@@ -66,7 +69,7 @@ export default function replaceAfter(manifestCollection) {
       },
       {
         selector: `.callout[data-callout="check"]`,
-        declaraation: "--callout-color",
+        declaration: "--callout-color",
       },
       {
         selector: `.callout[data-callout="done"]`,
@@ -81,7 +84,7 @@ export default function replaceAfter(manifestCollection) {
         declaration: "--callout-color",
       },
       {
-        selector: `callout[data-callout="faq"]`,
+        selector: `.callout[data-callout="faq"]`,
         declaration: "--callout-color",
       },
       {
@@ -133,7 +136,7 @@ export default function replaceAfter(manifestCollection) {
         declaration: "--callout-color",
       },
       { selector: ".metadata-input-longtext", declaration: "color" },
-      { selector: ".popover", declaration: null },
+      { selector: ".popover", declaration: "" },
       { selector: ".popover", declaration: "background-color" },
       { selector: ".popover", declaration: "border" },
       { selector: ".popover", declaration: "border-radius" },
@@ -141,14 +144,14 @@ export default function replaceAfter(manifestCollection) {
       { selector: ".prompt", declaration: "border" },
       { selector: ".prompt", declaration: "border-radius" },
       { selector: ".prompt", declaration: "box-shadow" },
-      { selector: "input.prompt-input", declaration: null },
+      { selector: "input.prompt-input", declaration: "" },
       {
         selector: ".suggestion-item.is-selected",
         declaration: "background-color",
       },
-      { selector: ".suggestion-highlight", declaration: null },
+      { selector: ".suggestion-highlight", declaration: "" },
       { selector: "a.tag", declaration: "color" },
-      { selector: `input[type="search"]`, declaration: null },
+      { selector: `input[type="search"]`, declaration: "" },
       {
         selector: ".backlink-pane > .tree-item-self .tree-item-inner",
         declaration: "font-weight",
@@ -160,35 +163,36 @@ export default function replaceAfter(manifestCollection) {
       { selector: ".tree-item-self", declaration: "font-weight" },
       { selector: ".tree-item-self", declaration: "font-size" },
       { selector: ".tree-item-self .tree-item-icon", declaration: "color" },
-      { selector: ".tree-item-children", declaration: null },
-      { selector: ".nav-file-title.is-active", declaration: null },
-      { selector: ".nav-file-title", declaration: null },
+      { selector: ".tree-item-children", declaration: "" },
+      { selector: ".nav-file-title.is-active", declaration: "" },
+      { selector: ".nav-file-title", declaration: "" },
       {
         selector: ".view-header-title-parent .view-header-breadcrumb-separator",
         declaration: "color",
       },
       {
         selector: ".markdown-rendered button.copy-code-button",
-        declaration: null,
+        declaration: "",
       },
       {
         selector: ".markdown-rendered button.copy-code-button:hover",
-        declaration: null,
+        declaration: "",
       },
-      { selector: ".markdown-rendered pre code", declaration: null },
-      { selector: ".markdown-rendered code", declaration: null },
-      { selector: "h1", declaration: null },
-      { selector: "h2", declaration: null },
-      { selector: "h3", declaration: null },
-      { selector: "h4", declaration: null },
-      { selector: "h5", declaration: null },
-      { selector: "h6", declaration: null },
-      { selector: "h1 a", declaration: null },
-      { selector: "h2 a", declaration: null },
-      { selector: "h3 a", declaration: null },
-      { selector: "h4 a", declaration: null },
-      { selector: "h5 a", declaration: null },
-      { selector: "h6 a", declaration: null },
+      { selector: ".markdown-rendered pre", declaration: "" },
+      { selector: ".markdown-rendered pre code", declaration: "" },
+      { selector: ".markdown-rendered code", declaration: "" },
+      { selector: "h1", declaration: "" },
+      { selector: "h2", declaration: "" },
+      { selector: "h3", declaration: "" },
+      { selector: "h4", declaration: "" },
+      { selector: "h5", declaration: "" },
+      { selector: "h6", declaration: "" },
+      { selector: "h1 a", declaration: "" },
+      { selector: "h2 a", declaration: "" },
+      { selector: "h3 a", declaration: "" },
+      { selector: "h4 a", declaration: "" },
+      { selector: "h5 a", declaration: "" },
+      { selector: "h6 a", declaration: "" },
       {
         selector: ".workspace-split.mod-root",
         declaration: "background-color",
@@ -202,26 +206,58 @@ export default function replaceAfter(manifestCollection) {
         getValueFromJSON(json, selector, declaration),
       );
     });
+
+    if (isDarkTheme(theme)) {
+      replaceInFile(
+        darkFilePath,
+        target(".theme-dark", ""),
+        getValueFromJSON(json, ".theme-dark", ""),
+      );
+    }
+
+    if (isLightTheme(theme)) {
+      replaceInFile(
+        lightFilePath,
+        target(".theme-light", ""),
+        getValueFromJSON(json, ".theme-light", ""),
+      );
+    }
+
+    let fixes = "";
+    const themeFixes = getFixes(theme);
+    themeFixes.forEach((extra) => {
+      fixes += `\n@use "extras/fix/${extra}.scss";`;
+    });
+
+    const fileContent = readFileSync(filePath, "utf8");
+    const updatedContent = fileContent.replace(
+      target("/\/\/%%FIXES%%/g"),
+      fixes,
+    );
+    const cleanedContent = updatedContent.split("\n").slice(0, -3).join("\n");
+    writeFileSync(filePath, format(cleanedContent, "scss"), "utf8");
+
+    console.log(
+      `Replaced after variables in ${theme} theme for ${manifest.name}`,
+    );
   });
 }
 
-function target(selector, declaration = null) {
-  if (declaration) {
+function target(selector, declaration = "") {
+  if (declaration && declaration.length > 0) {
     return `//%%${selector}%${declaration}%%`;
   }
   return `//%%${selector}%%`;
 }
 
-function getValueFromJSON(json, selector, declaration = null) {
+function getValueFromJSON(json, selector, declaration = "") {
   if (json && json[selector]) {
-    return jsonObjectToString(
-      declaration ? json[selector][declaration] : json[selector],
-    );
+    return jsonObjectToString(json[selector], declaration);
   }
   return "";
 }
 
-function jsonObjectToString(jsonObject) {
+function jsonObjectToString(jsonObject, declaration = "") {
   return Object.entries(jsonObject)
     .map(([key, value]) => `${value.property}: ${value.value};`)
     .join("\n");

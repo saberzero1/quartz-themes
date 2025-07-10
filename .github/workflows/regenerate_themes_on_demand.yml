@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-and-test:
-    if: ${{ github.repository == 'saberzero1/quartz-themes' && !(github.event_name == 'workflow_dispatch' || github.event.workflow_run.head_commit.message == 'FULL RECOMPILE') }}
+    if: ${{ github.repository == 'saberzero1/quartz-themes' }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -25,7 +25,7 @@ jobs:
       - name: "Install npm dependencies"
         run: npm ci
       - name: "Recompile Themes"
-        run: npm run compile
+        run: npm run json-compile-full
       - name: "Format Themes"
         run: npm run format
       - name: "Push Themes"
@@ -34,40 +34,4 @@ jobs:
           git config --local user.email 'quartz-themes-bot@emilebangma.com'
           git add .
           git commit -m "chore: Rebuild Themes" || exit 0
-          git push
-
-  full-rebuild:
-    if: ${{ github.repository == 'saberzero1/quartz-themes' && (github.event_name == 'workflow_dispatch' || github.event.workflow_run.head_commit.message != 'FULL RECOMPILE') }}
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-      - name: "Install just"
-        run: npm i just-install
-      - name: "Install npm dependencies"
-        run: npm ci
-      - name: "Force Recompile Themes"
-        run: npm run force-compile
-      - name: "Force Format Themes"
-        run: npm run force-format
-      - name: "Recompile Themes"
-        run: npm run compile
-      - name: "Format Themes"
-        run: npm run format
-      - name: "Verify"
-        run: npm run verify
-      - name: "Push Themes"
-        run: |
-          git config --local user.name 'Quartz Themes Bot'
-          git config --local user.email 'quartz-themes-bot@emilebangma.com'
-          git add .
-          git commit -m "chore: Full Rebuild Themes" || exit 0
           git push

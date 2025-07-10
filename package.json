@@ -15,7 +15,9 @@
     "theme": "just theme",
     "update": "just update",
     "verify": "just verify",
-    "verify-ci": "just verify-ci"
+    "verify-ci": "just verify-ci",
+    "json-compile": "just json-compile",
+    "json-compile-full": "just json-compile-full"
   },
   "repository": {
     "type": "git",

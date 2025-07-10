@@ -1608,7 +1608,7 @@
     },
     {
       "property": "--bases-table-header-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     {
       "property": "--bases-table-row-background-hover",
@@ -1627,7 +1627,7 @@
     { "property": "--bold-modifier", "value": "200" },
     {
       "property": "--bold-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "--border-width", "value": "1px" },
     { "property": "--button-radius", "value": "5px" },
@@ -2032,7 +2032,7 @@
     { "property": "--link-unresolved-opacity", "value": "0.7" },
     {
       "property": "--link-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "--list-bullet-border", "value": "none" },
     { "property": "--list-bullet-end-padding", "value": "1.3rem" },
@@ -2374,7 +2374,7 @@
     { "property": "--table-header-size", "value": "16px" },
     {
       "property": "--table-header-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "--table-line-height", "value": "1.3" },
     { "property": "--table-row-alt-background", "value": "transparent" },
@@ -4252,7 +4252,7 @@
     { "property": "font-variant", "value": "normal" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "letter-spacing", "value": "-0.015em" },
     { "property": "line-height", "value": "1.2" },
@@ -4268,7 +4268,7 @@
     { "property": "font-variant", "value": "normal" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "letter-spacing", "value": "-0.015em" },
     { "property": "line-height", "value": "1.2" },
@@ -4284,7 +4284,7 @@
     { "property": "font-variant", "value": "normal" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "letter-spacing", "value": "-0.015em" },
     { "property": "line-height", "value": "1.3" },
@@ -4300,7 +4300,7 @@
     { "property": "font-variant", "value": "normal" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "line-height", "value": "1.4" },
     { "property": "margin-block-end", "value": "0" },
@@ -4315,7 +4315,7 @@
     { "property": "font-variant", "value": "normal" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "line-height", "value": "1.5" },
     { "property": "margin-block-end", "value": "0" },
@@ -4330,7 +4330,7 @@
     { "property": "font-variant", "value": "normal" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "letter-spacing", "value": "0.015em" },
     { "property": "line-height", "value": "1.5" },
@@ -8543,7 +8543,7 @@
   ".prompt-instruction-command": [
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--font-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--font-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "margin-inline-end", "value": "4px" }
   ],
@@ -9594,7 +9594,7 @@
     { "property": "color", "value": "inherit" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     }
   ],
   ".callout-fold": [
@@ -9992,7 +9992,7 @@
     { "property": "font-size", "value": "16px" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "gap", "value": "4px" },
     { "property": "padding", "value": "0 0 8px 0" },
@@ -10766,7 +10766,7 @@
     { "property": "font-variant", "value": "normal" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "letter-spacing", "value": "-0.015em" },
     { "property": "line-height", "value": "1.2" },
@@ -10782,7 +10782,7 @@
     { "property": "font-variant", "value": "normal" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "letter-spacing", "value": "-0.015em" },
     { "property": "line-height", "value": "1.3" },
@@ -10798,7 +10798,7 @@
     { "property": "font-variant", "value": "normal" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "letter-spacing", "value": "0.015em" },
     { "property": "line-height", "value": "1.4" },
@@ -10814,7 +10814,7 @@
     { "property": "font-variant", "value": "normal" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "letter-spacing", "value": "0.015em" },
     { "property": "line-height", "value": "1.5" },
@@ -10831,7 +10831,7 @@
     { "property": "font-variant", "value": "normal" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "letter-spacing", "value": "-0.015em" },
     { "property": "line-height", "value": "1.2" },
@@ -10847,7 +10847,7 @@
     { "property": "font-variant", "value": "normal" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "letter-spacing", "value": "0.015em" },
     { "property": "line-height", "value": "1.5" },
@@ -10863,7 +10863,7 @@
     { "property": "font-variant", "value": "normal" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "letter-spacing", "value": "-0.015em" },
     { "property": "line-height", "value": "1.2" }
@@ -10883,7 +10883,7 @@
     { "property": "font-variant", "value": "normal" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "letter-spacing", "value": "-0.015em" },
     { "property": "line-height", "value": "1.2" }
@@ -10903,7 +10903,7 @@
     { "property": "font-variant", "value": "normal" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "letter-spacing", "value": "-0.015em" },
     { "property": "line-height", "value": "1.3" }
@@ -10923,7 +10923,7 @@
     { "property": "font-variant", "value": "normal" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "letter-spacing", "value": "0.015em" },
     { "property": "line-height", "value": "1.4" }
@@ -10943,7 +10943,7 @@
     { "property": "font-variant", "value": "normal" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "letter-spacing", "value": "0.015em" },
     { "property": "line-height", "value": "1.5" }
@@ -10963,7 +10963,7 @@
     { "property": "font-variant", "value": "normal" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "letter-spacing", "value": "0.015em" },
     { "property": "line-height", "value": "1.5" }
@@ -10987,7 +10987,7 @@
     { "property": "font-variant", "value": "normal" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "letter-spacing", "value": "-0.015em" },
     { "property": "line-height", "value": "1.2" }
@@ -11001,7 +11001,7 @@
     { "property": "font-variant", "value": "normal" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "letter-spacing", "value": "-0.015em" },
     { "property": "line-height", "value": "1.2" }
@@ -11029,7 +11029,7 @@
     { "property": "font-variant", "value": "normal" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "letter-spacing", "value": "-0.015em" },
     { "property": "line-height", "value": "1.2" }
@@ -11043,7 +11043,7 @@
     { "property": "font-variant", "value": "normal" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "letter-spacing", "value": "-0.015em" },
     { "property": "line-height", "value": "1.2" }
@@ -11071,7 +11071,7 @@
     { "property": "font-variant", "value": "normal" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "letter-spacing", "value": "-0.015em" },
     { "property": "line-height", "value": "1.3" }
@@ -11085,7 +11085,7 @@
     { "property": "font-variant", "value": "normal" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "letter-spacing", "value": "-0.015em" },
     { "property": "line-height", "value": "1.3" }
@@ -11113,7 +11113,7 @@
     { "property": "font-variant", "value": "normal" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "line-height", "value": "1.4" }
   ],
@@ -11126,7 +11126,7 @@
     { "property": "font-variant", "value": "normal" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "line-height", "value": "1.4" }
   ],
@@ -11153,7 +11153,7 @@
     { "property": "font-variant", "value": "normal" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "line-height", "value": "1.5" }
   ],
@@ -11166,7 +11166,7 @@
     { "property": "font-variant", "value": "normal" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "line-height", "value": "1.5" }
   ],
@@ -11193,7 +11193,7 @@
     { "property": "font-variant", "value": "normal" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "letter-spacing", "value": "0.015em" },
     { "property": "line-height", "value": "1.5" }
@@ -11207,7 +11207,7 @@
     { "property": "font-variant", "value": "normal" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "letter-spacing", "value": "0.015em" },
     { "property": "line-height", "value": "1.5" }
@@ -12019,7 +12019,7 @@
     { "property": "font-size", "value": "16px" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--font-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--font-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "line-height", "value": "1.3" },
     { "property": "max-width", "value": "none" },
@@ -12035,7 +12035,7 @@
     { "property": "font-size", "value": "16px" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--font-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--font-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "line-height", "value": "1.3" },
     { "property": "max-width", "value": "none" },
@@ -12434,7 +12434,7 @@
     { "property": "color", "value": "inherit" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     }
   ],
   "strong": [
@@ -12498,7 +12498,7 @@
   ".cm-strong.cm-em": [
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     }
   ],
   ".cm-s-obsidian span.cm-error": [{ "property": "color", "value": "#fb464c" }],
@@ -13123,7 +13123,7 @@
     { "property": "font-size", "value": "0.875em" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--font-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--font-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "gap", "value": "4px" },
     { "property": "padding-inline-end", "value": "8px" },
@@ -14811,7 +14811,7 @@
     { "property": "flex-grow", "value": "1" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--font-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--font-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "overflow", "value": "hidden" }
   ],
@@ -17636,7 +17636,7 @@
     { "property": "color", "value": "#fb464c" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     }
   ],
   ".is-phone .modal": [
@@ -17846,7 +17846,7 @@
     { "property": "font-size", "value": "calc(32px * 0.55)" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--font-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--font-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "height", "value": "100%" },
     { "property": "justify-content", "value": "center" },
@@ -18977,7 +18977,7 @@
     { "property": "color", "value": "inherit" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "padding-inline-end", "value": "0px" },
     { "property": "text-decoration", "value": "none" }
@@ -18994,7 +18994,7 @@
     { "property": "color", "value": "inherit" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "padding-inline-end", "value": "0px" },
     { "property": "text-decoration", "value": "none" }
@@ -19015,7 +19015,7 @@
     { "property": "color", "value": "inherit" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "padding-inline-end", "value": "0px" },
     { "property": "text-decoration", "value": "none" }
@@ -19036,7 +19036,7 @@
     { "property": "color", "value": "inherit" },
     {
       "property": "font-weight",
-      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
+      "value": "calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(var(--callout-title-weight) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200) + 200)"
     },
     { "property": "padding-inline-end", "value": "0px" },
     { "property": "text-decoration", "value": "none" }

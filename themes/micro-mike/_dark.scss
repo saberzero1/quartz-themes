@@ -1,6 +1,5 @@
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
-
   color-scheme: dark;
 
   .callout {
@@ -16,6 +15,531 @@ html[saved-theme="dark"] {
     color: var(--shiki-dark);
   }
 
-//%%DARK%%
-
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: rgba(10, 10, 10, 0.4);
+  --background-modifier-form-field: hsl(
+    216,
+    calc(var(--saturation-factor, 1) * 11.4%),
+    17.3%
+  );
+  --background-secondary-alt: hsl(
+    218.2,
+    calc(var(--saturation-factor, 1) * 9.1%),
+    23.7%
+  );
+  --blurple: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%);
+  --blurple-active: hsl(226.3, calc(var(--saturation-factor, 1) * 33.9%), 52%);
+  --blurple-hover: hsl(227.1, calc(var(--saturation-factor, 1) * 44.1%), 58.6%);
+  --blurple-inverted: hsl(
+    228,
+    calc(var(--saturation-factor, 1) * 55.6%),
+    98.2%
+  );
+  --blurple-inverted-active: hsl(
+    228.6,
+    calc(var(--saturation-factor, 1) * 60%),
+    93.1%
+  );
+  --blurple-st: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.5
+  );
+  --brand-500: hsl(226.7, calc(var(--saturation-factor, 1) * 58.4%), 65.1%);
+  --brand-experiment: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%
+  );
+  --brand-experiment-05a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.05
+  );
+  --brand-experiment-100: hsl(
+    228,
+    calc(var(--saturation-factor, 1) * 55.6%),
+    98.2%
+  );
+  --brand-experiment-10a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.1
+  );
+  --brand-experiment-130: hsl(
+    228,
+    calc(var(--saturation-factor, 1) * 62.5%),
+    96.9%
+  );
+  --brand-experiment-15a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.15
+  );
+  --brand-experiment-160: hsl(
+    228,
+    calc(var(--saturation-factor, 1) * 60%),
+    95.1%
+  );
+  --brand-experiment-200: hsl(
+    228.6,
+    calc(var(--saturation-factor, 1) * 60%),
+    93.1%
+  );
+  --brand-experiment-20a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.2
+  );
+  --brand-experiment-230: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 57.4%),
+    90.8%
+  );
+  --brand-experiment-25a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.25
+  );
+  --brand-experiment-260: hsl(
+    225.9,
+    calc(var(--saturation-factor, 1) * 58.6%),
+    88.6%
+  );
+  --brand-experiment-300: hsl(
+    226.8,
+    calc(var(--saturation-factor, 1) * 57.7%),
+    86.1%
+  );
+  --brand-experiment-30a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.3
+  );
+  --brand-experiment-330: hsl(
+    226.9,
+    calc(var(--saturation-factor, 1) * 59.1%),
+    81.8%
+  );
+  --brand-experiment-35a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.35
+  );
+  --brand-experiment-360: hsl(
+    227.3,
+    calc(var(--saturation-factor, 1) * 57.9%),
+    77.6%
+  );
+  --brand-experiment-400: hsl(
+    226.3,
+    calc(var(--saturation-factor, 1) * 58%),
+    72%
+  );
+  --brand-experiment-40a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.4
+  );
+  --brand-experiment-430: hsl(
+    226.5,
+    calc(var(--saturation-factor, 1) * 58.2%),
+    70%
+  );
+  --brand-experiment-45a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.45
+  );
+  --brand-experiment-460: hsl(
+    226.9,
+    calc(var(--saturation-factor, 1) * 58.5%),
+    67.8%
+  );
+  --brand-experiment-500: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%
+  );
+  --brand-experiment-50a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.5
+  );
+  --brand-experiment-530: hsl(
+    226.6,
+    calc(var(--saturation-factor, 1) * 45.2%),
+    59.2%
+  );
+  --brand-experiment-55a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.55
+  );
+  --brand-experiment-560: hsl(
+    226.6,
+    calc(var(--saturation-factor, 1) * 35.3%),
+    52.7%
+  );
+  --brand-experiment-600: hsl(
+    227.1,
+    calc(var(--saturation-factor, 1) * 31%),
+    44.3%
+  );
+  --brand-experiment-60a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.6
+  );
+  --brand-experiment-630: hsl(
+    226.2,
+    calc(var(--saturation-factor, 1) * 31.3%),
+    38.2%
+  );
+  --brand-experiment-65a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.65
+  );
+  --brand-experiment-660: hsl(
+    226.4,
+    calc(var(--saturation-factor, 1) * 31%),
+    33.5%
+  );
+  --brand-experiment-700: hsl(
+    226.8,
+    calc(var(--saturation-factor, 1) * 30.8%),
+    26.1%
+  );
+  --brand-experiment-70a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.7
+  );
+  --brand-experiment-730: hsl(
+    227.7,
+    calc(var(--saturation-factor, 1) * 31.2%),
+    24.5%
+  );
+  --brand-experiment-75a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.75
+  );
+  --brand-experiment-760: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 31.6%),
+    22.4%
+  );
+  --brand-experiment-800: hsl(
+    226.5,
+    calc(var(--saturation-factor, 1) * 31.3%),
+    19.4%
+  );
+  --brand-experiment-80a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.8
+  );
+  --brand-experiment-830: hsl(
+    225,
+    calc(var(--saturation-factor, 1) * 31.6%),
+    14.9%
+  );
+  --brand-experiment-85a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.85
+  );
+  --brand-experiment-860: hsl(
+    225,
+    calc(var(--saturation-factor, 1) * 32%),
+    9.8%
+  );
+  --brand-experiment-900: hsl(
+    228,
+    calc(var(--saturation-factor, 1) * 29.4%),
+    3.3%
+  );
+  --brand-experiment-90a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.9
+  );
+  --brand-experiment-95a: hsl(
+    226.7,
+    calc(var(--saturation-factor, 1) * 58.4%),
+    65.1%,
+    0.95
+  );
+  --color-accent: hsl(258, 88%, 66%);
+  --color-accent-1: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --color-accent-hsl: 258, 88%, 66%;
+  --color-base-00: #1e1e1e;
+  --color-base-05: #212121;
+  --color-base-10: #242424;
+  --color-base-100: #dadada;
+  --color-base-20: #262626;
+  --color-base-25: #2a2a2a;
+  --color-base-30: #363636;
+  --color-base-35: #3f3f3f;
+  --color-base-40: #555555;
+  --color-base-50: #666666;
+  --color-base-60: #999999;
+  --color-base-70: #b3b3b3;
+  --color-blue: #027aff;
+  --color-blue-rgb: 2, 122, 255;
+  --color-cyan: #53dfdd;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-green: #44cf6e;
+  --color-green-rgb: 68, 207, 110;
+  --color-orange: #e9973f;
+  --color-orange-rgb: 233, 151, 63;
+  --color-pink: #fa99cd;
+  --color-pink-rgb: 250, 153, 205;
+  --color-purple: #a882ff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-red: #fb464c;
+  --color-red-rgb: 251, 70, 76;
+  --color-yellow: #e0de71;
+  --color-yellow-rgb: 224, 222, 113;
+  --colorIntensity: 1;
+  --colorIntensityBevel: 1;
+  --d8i-fwd: url("data:image/png, base64, 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");
+  --dashboardHeight: 40px;
+  --dragHeight: 10px;
+  --dtm-08-card-style1-bg: linear-gradient(
+    hsl(218.2, calc(var(--saturation-factor, 1) * 10.5%), 20.6%),
+    hsl(216, calc(var(--saturation-factor, 1) * 11.4%), 17.3%) 50%,
+    hsl(220, calc(var(--saturation-factor, 1) * 12.3%), 14.3%) 50%,
+    hsl(216, calc(var(--saturation-factor, 1) * 11.4%), 17.3%)
+  );
+  --dtm-08-card-style1-bs:
+    0 1px 3px #0008, 0 0 0 1px #000b, inset 0 0 0 1px #fff2, inset 0 1px #fff3;
+  --dtm-08-card-style1a-bg: linear-gradient(
+    hsl(216, calc(var(--saturation-factor, 1) * 11.4%), 17.3%),
+    hsl(220, calc(var(--saturation-factor, 1) * 12.3%), 14.3%) 50%,
+    hsl(217.5, calc(var(--saturation-factor, 1) * 13.8%), 11.4%) 50%,
+    hsl(220, calc(var(--saturation-factor, 1) * 12.3%), 14.3%)
+  );
+  --dtm-08-card-style1a-bs:
+    inset 0 2px 8px #000b, 0 0 0 1px #0004, 0 2px #fff2, inset 0 1px 1px #0006;
+  --dtm-08-card-style1h-bg: linear-gradient(
+    hsl(218.2, calc(var(--saturation-factor, 1) * 9.1%), 23.7%),
+    hsl(218.2, calc(var(--saturation-factor, 1) * 10.5%), 20.6%) 50%,
+    hsl(216, calc(var(--saturation-factor, 1) * 11.4%), 17.3%) 50%,
+    hsl(218.2, calc(var(--saturation-factor, 1) * 10.5%), 20.6%)
+  );
+  --dtm-08-card-style1h-bs:
+    0 1px 6px #000b, 0 0 0 1px #000b, inset 0 0 0 1px #fff2, inset 0 1px #fff3;
+  --dtm-08-card-style1i-bg: linear-gradient(
+    hsl(220, calc(var(--saturation-factor, 1) * 12.3%), 14.3%),
+    hsl(216, calc(var(--saturation-factor, 1) * 11.4%), 17.3%) 50%,
+    hsl(218.2, calc(var(--saturation-factor, 1) * 10.5%), 20.6%) 50%,
+    hsl(218.2, calc(var(--saturation-factor, 1) * 9.1%), 23.7%)
+  );
+  --dtm-08-card-style1i-bs: inset 0 1px 4px #0008, 0 0 0 1px #0004, 0 2px #fff2;
+  --dtm-08-card-style2i-bs:
+    0 1px rgba(255 255 255/0.2), inset 0 1px 6px rgba(0 0 0/0.5),
+    inset 0 0 0 1px rgba(0 0 0/0.25);
+  --dtm-08-dm-list-tab-icon-background: #0004;
+  --dtm-08-dm-list-tab-icon-color: inherit;
+  --dtm-08-dm-list-tab-icon-shadow: 0 1px #fff2, inset 0 1px 2px #0008;
+  --dtm-08-emoji-tooltip-bottom-background: linear-gradient(
+    hsl(216, calc(var(--saturation-factor, 1) * 11.4%), 17.3%),
+    hsl(220, calc(var(--saturation-factor, 1) * 12.3%), 14.3%)
+  );
+  --dtm-08-emoji-tooltip-bottom-shadow: inset 0 1px #0008, inset 0 2px #fff2;
+  --dtm-08-emoji-tooltip-shadow: 0 0 0 1px #000b, 0 1px 4px #0008;
+  --dtm-08-emoji-tooltip-top-background: linear-gradient(
+    hsl(220, calc(var(--saturation-factor, 1) * 8.7%), 27.1%),
+    hsl(218.2, calc(var(--saturation-factor, 1) * 10.5%), 20.6%)
+  );
+  --dtm-08-emoji-tooltip-top-shadow: inset 0 1px #fff3;
+  --dtm-08-message-hover-bg: linear-gradient(
+    #0002,
+    #0001 50%,
+    #0003 50%,
+    #0002
+  );
+  --dtm-08-right-sidebar-separator-line: linear-gradient(
+    to right,
+    #0000,
+    #000b
+  );
+  --dtm-08-tab-active-bg: linear-gradient(
+    hsl(217.5, calc(var(--saturation-factor, 1) * 13.8%), 11.4%),
+    hsl(220, calc(var(--saturation-factor, 1) * 13%), 9%) 50%,
+    hsl(220, calc(var(--saturation-factor, 1) * 12.3%), 14.3%) 50%,
+    hsl(216, calc(var(--saturation-factor, 1) * 11.4%), 17.3%)
+  );
+  --dtm-08-tab-active-bs: inset 0 1px 3px #0008, 0 0 0 1px #000b;
+  --dtm-08-tab-hover-bg: linear-gradient(
+    hsl(218.2, calc(var(--saturation-factor, 1) * 9.1%), 23.7%),
+    hsl(218.2, calc(var(--saturation-factor, 1) * 10.5%), 20.6%) 50%,
+    hsl(216, calc(var(--saturation-factor, 1) * 11.4%), 17.3%) 50%,
+    hsl(220, calc(var(--saturation-factor, 1) * 12.3%), 14.3%)
+  );
+  --dtm-08-tab-hover-bs: inset 0 1px #fff3, 0 0 0 1px #000b, 0 1px 2px #0008;
+  --dtm-08-tab-selected-bg: linear-gradient(
+    hsl(216.9, calc(var(--saturation-factor, 1) * 7.2%), 35.5%),
+    hsl(220, calc(var(--saturation-factor, 1) * 8.7%), 27.1%) 50%,
+    hsl(218.2, calc(var(--saturation-factor, 1) * 10.5%), 20.6%) 50%,
+    hsl(216, calc(var(--saturation-factor, 1) * 11.4%), 17.3%)
+  );
+  --dtm-08-tab-selected-bs: inset 0 1px #fff2, 0 0 0 1px #000b;
+  --dtm-08-tabs-bg: linear-gradient(
+    hsl(220, calc(var(--saturation-factor, 1) * 12.3%), 14.3%),
+    hsl(216, calc(var(--saturation-factor, 1) * 11.4%), 17.3%) 50%,
+    hsl(218.2, calc(var(--saturation-factor, 1) * 9.1%), 23.7%) 50%,
+    hsl(220, calc(var(--saturation-factor, 1) * 8.7%), 27.1%)
+  );
+  --dtm-08-tabs-bs:
+    inset 0 1px 4px #000b, 0 0 0 1px #000b, 0 2px #fff4, 0 0 0 2px #fff1;
+  --dtm-08-worse-profile-popout-custom-status-box-background: linear-gradient(
+    #0003,
+    #0006
+  );
+  --dtm-08-worse-profile-popout-custom-status-box-shadow:
+    inset 0 0 0 1px #fff1, inset 0 1px #fff2, 0 0 0 1px #0008, 0 1px 4px #0004;
+  --dtm-08-worse-profile-popout-custom-status-header-text-shadow: 0 1px 2pxrgba
+    (0, 0, 0, 0.5);
+  --editorSize: 700px;
+  --editorStackWidth: 200px;
+  --fileHeight: 14px;
+  --green: hsl(152.6, calc(var(--saturation-factor, 1) * 46%), 48.6%);
+  --green-360: hsl(152.6, calc(var(--saturation-factor, 1) * 46%), 48.6%);
+  --green-active: hsl(152.3, calc(var(--saturation-factor, 1) * 45.7%), 39%);
+  --green-hover: hsl(152.6, calc(var(--saturation-factor, 1) * 46.2%), 43.7%);
+  --green-inverted: hsl(156, calc(var(--saturation-factor, 1) * 38.5%), 97.5%);
+  --green-inverted-active: hsl(
+    153.9,
+    calc(var(--saturation-factor, 1) * 43.4%),
+    89.6%
+  );
+  --handleSize: 16px;
+  --highlight-mix-blend-mode: darken;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
+  --interactive-accent: hsl(258, 88%, 66%);
+  --interactive-accent-hover: hsl(
+    calc(258 - 3),
+    calc(88% * 1.02),
+    calc(66% * 1.15)
+  );
+  --interactive-hover: hsl(
+    220,
+    calc(var(--saturation-factor, 1) * 8.7%),
+    27.1%
+  );
+  --interactive-normal: hsl(
+    218.2,
+    calc(var(--saturation-factor, 1) * 9.1%),
+    23.7%
+  );
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --outlineDashPos: 8px;
+  --outlineHeight: 16px;
+  --outlineLevelWidth: 40px;
+  --pdf-shadow: 0 0 0 1px #555555;
+  --pdf-thumbnail-shadow: 0 0 0 1px #555555;
+  --premium-tier-2-pink-for-gradients: hsl(
+    270,
+    calc(var(--saturation-factor, 1) * 86.7%),
+    70.6%
+  );
+  --premium-tier-2-pink-for-gradients-2: hsl(
+    296.8,
+    calc(var(--saturation-factor, 1) * 44.2%),
+    66.3%
+  );
+  --premium-tier-2-pink-for-gradients-2-hsl:
+    296.8, calc(var(--saturation-factor, 1) * 44.2%), 66.3%;
+  --premium-tier-2-pink-for-gradients-hsl:
+    270, calc(var(--saturation-factor, 1) * 86.7%), 70.6%;
+  --premium-tier-2-purple-for-gradients: hsl(
+    342,
+    calc(var(--saturation-factor, 1) * 58%),
+    72.9%
+  );
+  --premium-tier-2-purple-for-gradients-2: hsl(
+    296.8,
+    calc(var(--saturation-factor, 1) * 44.2%),
+    66.3%
+  );
+  --premium-tier-2-purple-for-gradients-2-hsl:
+    296.8, calc(var(--saturation-factor, 1) * 44.2%), 66.3%;
+  --premium-tier-2-purple-for-gradients-hsl:
+    342, calc(var(--saturation-factor, 1) * 58%), 72.9%;
+  --red: hsl(0, calc(var(--saturation-factor, 1) * 84.9%), 61%);
+  --red-400: hsl(0, calc(var(--saturation-factor, 1) * 84.9%), 61%);
+  --red-active: hsl(0, calc(var(--saturation-factor, 1) * 54.2%), 48.8%);
+  --red-hover: hsl(0, calc(var(--saturation-factor, 1) * 66.1%), 54.9%);
+  --red-inverted: hsl(0, calc(var(--saturation-factor, 1) * 80%), 98%);
+  --red-inverted-active: hsl(0, calc(var(--saturation-factor, 1) * 85%), 92.2%);
+  --ribbonButtonHeight: 40px;
+  --ribbonWidth: 40px;
+  --scrollBarSize: 24px;
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --status-green-600: hsl(
+    152.6,
+    calc(var(--saturation-factor, 1) * 46%),
+    48.6%
+  );
+  --status-red-500: hsl(0, calc(var(--saturation-factor, 1) * 84.9%), 61%);
+  --status-yellow-500: hsl(
+    37.5,
+    calc(var(--saturation-factor, 1) * 95.7%),
+    54.1%
+  );
+  --tabHeightEditor: 30px;
+  --tabHeightEditorStack: 40px;
+  --tabHeightSidebar: 30px;
+  --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --text-normal: #a3a5aa;
+  --text-on-accent: white;
+  --text-selection: hsla(258, 88%, 66%, 0.33);
+  --titlebarOffset: 160px;
+  --yellow: hsl(37.5, calc(var(--saturation-factor, 1) * 95.7%), 54.1%);
+  --yellow-300: hsl(37.5, calc(var(--saturation-factor, 1) * 95.7%), 54.1%);
+  --yellow-360: hsl(37.5, calc(var(--saturation-factor, 1) * 95.7%), 54.1%);
+  --yellow-hover: hsl(37.4, calc(var(--saturation-factor, 1) * 81.5%), 48.6%);
+  --yellow-inverted: hsl(38.2, calc(var(--saturation-factor, 1) * 100%), 97.8%);
+  --yellow-inverted-active: hsl(
+    37.3,
+    calc(var(--saturation-factor, 1) * 95.7%),
+    90.8%
+  );
 }
