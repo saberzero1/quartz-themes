@@ -25,6 +25,8 @@ import combineLightDarkInJson from "./extensions/parsers/combine-light-dark-in-j
 import injectJSON from "./extensions/parsers/merge-json.mjs";
 import replaceStaticProperties from "./extensions/parsers/static.mjs";
 import combineThemeCSSWithObsidianCSS from "./extensions/parsers/combine-theme-css-with-obsidian-css.mjs";
+import flattenTheme from "./extensions/flatten-theme.mjs";
+import updateMiscFiles from "./extensions/update-misc-files.mjs";
 
 const manifestCollection = getManifestCollection();
 
@@ -51,3 +53,7 @@ if (fullMode) {
 }
 
 replaceAfter(manifestCollection);
+
+flattenTheme();
+
+updateMiscFiles(manifestCollection);

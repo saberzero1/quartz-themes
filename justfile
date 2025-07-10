@@ -87,6 +87,12 @@ test-compile:
 compile-single $theme:
   node convert.js -- $theme
 
+json-compile:
+  node main.js
+
+json-compile-full:
+  node main.js --full
+
 [doc('Update themes')]
 update:
   git pull

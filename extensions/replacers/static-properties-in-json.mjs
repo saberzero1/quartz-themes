@@ -13,7 +13,7 @@ export default function burnDownCssVariables(cssJson) {
   const processedJson = JSON.parse(JSON.stringify(cssJson));
 
   // Add a safety limit to prevent true infinite loops in unforeseen edge cases.
-  const MAX_ITERATIONS = 100;
+  const MAX_ITERATIONS = 5;
   let iterations = 0;
 
   while (iterations < MAX_ITERATIONS) {

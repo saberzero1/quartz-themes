@@ -8555,10 +8555,12 @@ body:not(.is-phone):not(.inline-title-divider-remove)
   border-top: 1px solid var(--divider-color);
 }
 
+/*
 .markdown-rendered > :is(h1, h2, h3, h4, h5, h6),
 .markdown-preview-sizer > div > :is(h1, h2, h3, h4, h5, h6) {
   position: relative;
 }
+*/
 
 body:not(.heading-indicator-off)
   .markdown-preview-view
@@ -8583,6 +8585,7 @@ body:not(.heading-indicator-off)
   text-indent: 9px;
 }
 
+/*
 @media print {
   :is(h1, h2, h3, h4, h5, h6) {
     position: relative;
@@ -8592,6 +8595,7 @@ body:not(.heading-indicator-off)
     text-indent: 9px;
   }
 }
+*/
 
 /* h1 */
 h1,
@@ -9410,6 +9414,7 @@ body {
 
 /*general*/
 
+/*
 .line-hover-indicator
   .workspace-leaf-content:is(
     [data-type="markdown"],
@@ -9419,6 +9424,7 @@ body {
   > div:not(:has(.collapse-indicator, .mk-header)) {
   position: relative;
 }
+*/
 
 .line-hover-indicator
   .workspace-leaf-content[data-type="markdown"]

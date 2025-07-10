@@ -1,107 +1,841 @@
-/* Quartz imports */
-@use "../variables.scss" as *;
-
-/* quartz themes */
+@use "sass:color";
+@use "sass:list";
 @use "sass:map";
 @use "sass:meta";
 @use "sass:string";
-@use "sass:list";
-@use "sass:color";
+/* Quartz imports */
+@use "../variables.scss" as *;
+/* quartz themes */
 
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
+  color-scheme: dark;
 
-@use "dark";
-@use "light";
-@use "extras";
-@use "extras/fonts/eb-garamond.scss";
-@use "extras/fonts/fira-code.scss";
-@use "extras/fonts/merriweather-sans.scss";
-@use "extras/fonts/noto-serif.scss";
-@use "extras/fonts/noto-color-emoji.scss";
-@use "extras/fonts/noto-emoji.scss";
-@use "extras/fonts/nunito-sans.scss";
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+  --background-modifier-border: #d9dde8;
+  --color-accent-2: hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%));
+  --color-accent-hsl: 232, 75%, 70%;
+  --color-base-00: hsla(216, 16%, 13%, 75%);
+  --color-base-10: hsl(216, 17%, 14%);
+  --color-base-100: #c8d4e6;
+  --color-base-20: hsl(216, 19%, 16%);
+  --color-base-30: hsl(218, 18%, 15%);
+  --color-base-35: hsl(218, 19%, 27%);
+  --color-base-40: hsl(218, 19%, 31%);
+  --color-base-50: hsl(219, 13%, 51%);
+  --color-base-70: hsl(220, 17%, 66%);
+  --color-blue: #009be3;
+  --color-cyan: #00cecb;
+  --color-green: #7dcf2b;
+  --color-orange: #f69c00;
+  --color-pink: #e66ab4;
+  --color-purple: #b45af5;
+  --color-red: #ff4d3a;
+  --color-yellow: #e8c900;
+  --mono-rgb-100: 255, 255, 255;
+  --text-accent: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  --text-highlight-bg: hsla(232, 75%, 70%, 0.475);
+}
+
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  color-scheme: light;
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+  --color-accent-2: hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%));
+  --color-accent-hsl: 232, 75%, 70%;
+  --color-base-00: hsla(0, 0%, 100%, 75%);
+  --color-base-10: #fdfdfd;
+  --color-base-100: #252525;
+  --color-base-20: hsl(0, 0%, 96%);
+  --color-base-30: #9f9f9f66;
+  --color-base-35: #dedede;
+  --color-base-40: #d7d7d7;
+  --color-base-50: #878787;
+  --color-base-70: #7f7f7f;
+  --color-blue: #4e8aa6;
+  --color-cyan: #49a7ba;
+  --color-green: #8fb26b;
+  --color-orange: #d08344;
+  --color-pink: #ac7aaa;
+  --color-purple: #8076ad;
+  --color-red: #c75f54;
+  --color-yellow: #dca931;
+  --mono-rgb-100: 0, 0, 0;
+  --text-highlight-bg: rgba(255, 200, 0, 0.459);
+}
+
+/* cyrillic-ext */
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ebgaramond/v30/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkCY9_WamXgHlIbvw.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ebgaramond/v30/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkAI9_WamXgHlIbvw.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ebgaramond/v30/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkCI9_WamXgHlIbvw.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ebgaramond/v30/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkB49_WamXgHlIbvw.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ebgaramond/v30/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkC49_WamXgHlIbvw.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ebgaramond/v30/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkCo9_WamXgHlIbvw.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ebgaramond/v30/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkBI9_WamXgHlI.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJV37NuzlojwUKaJO.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVT7NuzlojwUKaJO.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVz7NuzlojwUKaJO.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVP7NuzlojwUKaJO.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJV77NuzlojwUKaJO.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVD7NuzlojwUKQ.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/merriweathersans/v26/2-cO9IRs1JiJN1FRAMjTN5zd9vgsFF_5asQTb6hZ2JKZou4VhOsHzRRXnKOrnx4.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* vietnamese */
+@font-face {
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/merriweathersans/v26/2-cO9IRs1JiJN1FRAMjTN5zd9vgsFF_5asQTb6hZ2JKZou4VhusHzRRXnKOrnx4.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/merriweathersans/v26/2-cO9IRs1JiJN1FRAMjTN5zd9vgsFF_5asQTb6hZ2JKZou4Vh-sHzRRXnKOrnx4.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/merriweathersans/v26/2-cO9IRs1JiJN1FRAMjTN5zd9vgsFF_5asQTb6hZ2JKZou4ViesHzRRXnKOr.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/notoserif/v28/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCTyscKpKrCzi0iNaA.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/notoserif/v28/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCTw8cKpKrCzi0iNaA.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/notoserif/v28/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCTy8cKpKrCzi0iNaA.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/notoserif/v28/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCTxMcKpKrCzi0iNaA.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/notoserif/v28/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCTyMcKpKrCzi0iNaA.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/notoserif/v28/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCTyccKpKrCzi0iNaA.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/notoserif/v28/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCTx8cKpKrCzi0i.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+
+/* [0] */
+@font-face {
+  font-family: "Noto Color Emoji";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.0.woff2)
+    format("woff2");
+  unicode-range: U+1f1e6-1f1ff;
+}
+/* [1] */
+@font-face {
+  font-family: "Noto Color Emoji";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.1.woff2)
+    format("woff2");
+  unicode-range:
+    U+200d, U+2620, U+26a7, U+fe0f, U+1f308, U+1f38c, U+1f3c1, U+1f3f3-1f3f4,
+    U+1f6a9, U+e0062-e0063, U+e0065, U+e0067, U+e006c, U+e006e, U+e0073-e0074,
+    U+e0077, U+e007f;
+}
+/* [2] */
+@font-face {
+  font-family: "Noto Color Emoji";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.2.woff2)
+    format("woff2");
+  unicode-range:
+    U+23, U+2a, U+30-39, U+a9, U+ae, U+200d, U+203c, U+2049, U+20e3, U+2122,
+    U+2139, U+2194-2199, U+21a9-21aa, U+23cf, U+23e9-23ef, U+23f8-23fa, U+24c2,
+    U+25aa-25ab, U+25b6, U+25c0, U+25fb-25fe, U+2611, U+2622-2623, U+2626,
+    U+262a, U+262e-262f, U+2638, U+2640, U+2642, U+2648-2653, U+2660, U+2663,
+    U+2665-2666, U+2668, U+267b, U+267e-267f, U+2695, U+269b-269c, U+26a0,
+    U+26a7, U+26aa-26ab, U+26ce, U+26d4, U+2705, U+2714, U+2716, U+271d, U+2721,
+    U+2733-2734, U+2747, U+274c, U+274e, U+2753-2755, U+2757, U+2764,
+    U+2795-2797, U+27a1, U+27b0, U+27bf, U+2934-2935, U+2b05-2b07, U+2b1b-2b1c,
+    U+2b55, U+3030, U+303d, U+3297, U+3299, U+fe0f, U+1f170-1f171,
+    U+1f17e-1f17f, U+1f18e, U+1f191-1f19a, U+1f201-1f202, U+1f21a, U+1f22f,
+    U+1f232-1f23a, U+1f250-1f251, U+1f310, U+1f3a6, U+1f3b5-1f3b6, U+1f3bc,
+    U+1f3e7, U+1f441, U+1f499-1f49c, U+1f49f-1f4a0, U+1f4a2, U+1f4ac-1f4ad,
+    U+1f4b1-1f4b2, U+1f4b9, U+1f4db, U+1f4f2-1f4f6, U+1f500-1f50a, U+1f515,
+    U+1f518-1f524, U+1f52f-1f53d, U+1f549, U+1f54e, U+1f5a4, U+1f5e8, U+1f5ef,
+    U+1f6ab, U+1f6ad-1f6b1, U+1f6b3, U+1f6b7-1f6bc, U+1f6be, U+1f6c2-1f6c5,
+    U+1f6d0-1f6d1, U+1f6d7, U+1f6dc, U+1f7e0-1f7eb, U+1f7f0, U+1f90d-1f90e,
+    U+1f9e1, U+1fa75-1fa77, U+1faaf;
+}
+/* [3] */
+@font-face {
+  font-family: "Noto Color Emoji";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.3.woff2)
+    format("woff2");
+  unicode-range:
+    U+231a-231b, U+2328, U+23f0-23f3, U+2602, U+260e, U+2692, U+2694,
+    U+2696-2697, U+2699, U+26b0-26b1, U+26cf, U+26d1, U+26d3, U+2702, U+2709,
+    U+270f, U+2712, U+fe0f, U+1f302, U+1f321, U+1f392-1f393, U+1f3a9, U+1f3bd,
+    U+1f3ee, U+1f3f7, U+1f3fa, U+1f451-1f462, U+1f484, U+1f489-1f48a,
+    U+1f48c-1f48e, U+1f4a1, U+1f4a3, U+1f4b0, U+1f4b3-1f4b8, U+1f4bb-1f4da,
+    U+1f4dc-1f4f1, U+1f4ff, U+1f50b-1f514, U+1f516-1f517, U+1f526-1f529,
+    U+1f52c-1f52e, U+1f550-1f567, U+1f56f-1f570, U+1f576, U+1f587,
+    U+1f58a-1f58d, U+1f5a5, U+1f5a8, U+1f5b1-1f5b2, U+1f5c2-1f5c4,
+    U+1f5d1-1f5d3, U+1f5dc-1f5de, U+1f5e1, U+1f5f3, U+1f6aa, U+1f6ac, U+1f6bd,
+    U+1f6bf, U+1f6c1, U+1f6cb, U+1f6cd-1f6cf, U+1f6d2, U+1f6e0-1f6e1, U+1f6f0,
+    U+1f97b-1f97f, U+1f9af, U+1f9ba, U+1f9e2-1f9e6, U+1f9ea-1f9ec,
+    U+1f9ee-1f9f4, U+1f9f7-1f9ff, U+1fa71-1fa74, U+1fa79-1fa7b, U+1fa86,
+    U+1fa91-1fa93, U+1fa96, U+1fa99-1faa0, U+1faa2-1faa7, U+1faaa-1faae;
+}
+/* [4] */
+@font-face {
+  font-family: "Noto Color Emoji";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.4.woff2)
+    format("woff2");
+  unicode-range:
+    U+265f, U+26bd-26be, U+26f3, U+26f8, U+fe0f, U+1f004, U+1f0cf,
+    U+1f380-1f384, U+1f386-1f38b, U+1f38d-1f391, U+1f396-1f397, U+1f399-1f39b,
+    U+1f39e-1f39f, U+1f3a3-1f3a5, U+1f3a7-1f3a9, U+1f3ab-1f3b4, U+1f3b7-1f3bb,
+    U+1f3bd-1f3c0, U+1f3c5-1f3c6, U+1f3c8-1f3c9, U+1f3cf-1f3d3, U+1f3f8-1f3f9,
+    U+1f47e, U+1f4e2, U+1f4f7-1f4fd, U+1f52b, U+1f579, U+1f58c-1f58d, U+1f5bc,
+    U+1f6f7, U+1f6f9, U+1f6fc, U+1f93f, U+1f941, U+1f945, U+1f947-1f94f,
+    U+1f9e7-1f9e9, U+1f9f5-1f9f6, U+1fa70-1fa71, U+1fa80-1fa81, U+1fa83-1fa85,
+    U+1fa87-1fa88, U+1fa94-1fa95, U+1fa97-1fa98, U+1faa1, U+1faa9;
+}
+/* [5] */
+@font-face {
+  font-family: "Noto Color Emoji";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.5.woff2)
+    format("woff2");
+  unicode-range:
+    U+2693, U+26e9-26ea, U+26f1-26f2, U+26f4-26f5, U+26fa, U+26fd, U+2708,
+    U+fe0f, U+1f301, U+1f303, U+1f306-1f307, U+1f309, U+1f310, U+1f3a0-1f3a2,
+    U+1f3aa, U+1f3cd-1f3ce, U+1f3d5, U+1f3d7-1f3db, U+1f3df-1f3e6,
+    U+1f3e8-1f3ed, U+1f3ef-1f3f0, U+1f488, U+1f492, U+1f4ba, U+1f54b-1f54d,
+    U+1f5fa-1f5ff, U+1f680-1f6a2, U+1f6a4-1f6a8, U+1f6b2, U+1f6d1,
+    U+1f6d5-1f6d6, U+1f6dd-1f6df, U+1f6e2-1f6e5, U+1f6e9, U+1f6eb-1f6ec,
+    U+1f6f3-1f6f6, U+1f6f8, U+1f6fa-1f6fb, U+1f9bc-1f9bd, U+1f9ed, U+1f9f3,
+    U+1fa7c;
+}
+/* [6] */
+@font-face {
+  font-family: "Noto Color Emoji";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.6.woff2)
+    format("woff2");
+  unicode-range:
+    U+2615, U+fe0f, U+1f32d-1f330, U+1f336, U+1f33d, U+1f345-1f37f, U+1f382,
+    U+1f52a, U+1f942-1f944, U+1f950-1f96f, U+1f99e, U+1f9aa, U+1f9c0-1f9cb,
+    U+1fad0-1fadb;
+}
+/* [7] */
+@font-face {
+  font-family: "Noto Color Emoji";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.7.woff2)
+    format("woff2");
+  unicode-range:
+    U+200d, U+2600-2601, U+2603-2604, U+2614, U+2618, U+26a1, U+26c4-26c5,
+    U+26c8, U+26f0, U+2728, U+2744, U+2b1b, U+2b50, U+fe0f, U+1f300,
+    U+1f304-1f305, U+1f308, U+1f30a-1f30f, U+1f311-1f321, U+1f324-1f32c,
+    U+1f331-1f335, U+1f337-1f33c, U+1f33e-1f344, U+1f3d4, U+1f3d6,
+    U+1f3dc-1f3de, U+1f3f5, U+1f400-1f43f, U+1f490, U+1f4a7, U+1f4ab, U+1f4ae,
+    U+1f525, U+1f54a, U+1f573, U+1f577-1f578, U+1f648-1f64a, U+1f940,
+    U+1f980-1f9ae, U+1f9ba, U+1fa90, U+1faa8, U+1fab0-1fabd, U+1fabf,
+    U+1face-1facf, U+1fae7;
+}
+/* [8] */
+@font-face {
+  font-family: "Noto Color Emoji";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.8.woff2)
+    format("woff2");
+  unicode-range:
+    U+200d, U+2640, U+2642, U+2695-2696, U+26f7, U+26f9, U+2708, U+2764, U+fe0f,
+    U+1f33e, U+1f373, U+1f37c, U+1f384-1f385, U+1f393, U+1f3a4, U+1f3a8,
+    U+1f3c2-1f3c4, U+1f3c7, U+1f3ca-1f3cc, U+1f3eb, U+1f3ed, U+1f3fb-1f3ff,
+    U+1f466-1f478, U+1f47c, U+1f481-1f483, U+1f486-1f487, U+1f48b, U+1f48f,
+    U+1f491, U+1f4bb-1f4bc, U+1f527, U+1f52c, U+1f574-1f575, U+1f57a,
+    U+1f645-1f647, U+1f64b, U+1f64d-1f64e, U+1f680, U+1f692, U+1f6a3,
+    U+1f6b4-1f6b6, U+1f6c0, U+1f6cc, U+1f91d, U+1f926, U+1f930-1f931,
+    U+1f934-1f93a, U+1f93c-1f93e, U+1f977, U+1f9af-1f9b3, U+1f9b8-1f9b9,
+    U+1f9bc-1f9bd, U+1f9cc-1f9cf, U+1f9d1-1f9df, U+1fa82, U+1fac3-1fac5;
+}
+/* [9] */
+@font-face {
+  font-family: "Noto Color Emoji";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.9.woff2)
+    format("woff2");
+  unicode-range:
+    U+200d, U+261d, U+2620, U+2639-263a, U+2665, U+270a-270d, U+2728,
+    U+2763-2764, U+2b50, U+fe0f, U+1f31a-1f31f, U+1f32b, U+1f383, U+1f389,
+    U+1f3fb-1f3ff, U+1f440-1f450, U+1f463-1f465, U+1f479-1f47b, U+1f47d-1f480,
+    U+1f485, U+1f48b-1f48c, U+1f493-1f49f, U+1f4a4-1f4a6, U+1f4a8-1f4ab,
+    U+1f4af, U+1f525, U+1f573, U+1f590, U+1f595-1f596, U+1f5a4, U+1f5e3,
+    U+1f600-1f644, U+1f648-1f64a, U+1f64c, U+1f64f, U+1f90c-1f925,
+    U+1f927-1f92f, U+1f932-1f933, U+1f970-1f976, U+1f978-1f97a, U+1f9a0,
+    U+1f9b4-1f9b7, U+1f9bb, U+1f9be-1f9bf, U+1f9d0, U+1f9e0-1f9e1,
+    U+1fa75-1fa79, U+1fac0-1fac2, U+1fae0-1fae6, U+1fae8, U+1faf0-1faf8;
+}
+/* [10] */
+@font-face {
+  font-family: "Noto Color Emoji";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.10.woff2)
+    format("woff2");
+  unicode-range:
+    U+200d, U+2194-2195, U+2640, U+2642, U+26d3, U+27a1, U+fe0f, U+1f344,
+    U+1f34b, U+1f3c3, U+1f3fb-1f3ff, U+1f426, U+1f468-1f469, U+1f4a5, U+1f525,
+    U+1f642, U+1f6b6, U+1f7e9, U+1f7eb, U+1f9af, U+1f9bc-1f9bd, U+1f9ce,
+    U+1f9d1-1f9d2;
+}
+/* [11] */
+@font-face {
+  font-family: "Noto Color Emoji";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.11.woff2)
+    format("woff2");
+  unicode-range: U+1fa89, U+1fa8f, U+1fabe, U+1fac6, U+1fadc, U+1fadf, U+1fae9;
+}
+
+/* [0] */
+@font-face {
+  font-family: "Noto Emoji";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.0.woff2)
+    format("woff2");
+  unicode-range: U+1f1e6-1f1ff;
+}
+/* [1] */
+@font-face {
+  font-family: "Noto Emoji";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.1.woff2)
+    format("woff2");
+  unicode-range:
+    U+200d, U+2620, U+26a7, U+fe0f, U+1f308, U+1f38c, U+1f3c1, U+1f3f3-1f3f4,
+    U+1f6a9, U+e0062-e0063, U+e0065, U+e0067, U+e006c, U+e006e, U+e0073-e0074,
+    U+e0077, U+e007f;
+}
+/* [2] */
+@font-face {
+  font-family: "Noto Emoji";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.2.woff2)
+    format("woff2");
+  unicode-range:
+    U+23, U+2a, U+30-39, U+a9, U+ae, U+200d, U+203c, U+2049, U+20e3, U+2122,
+    U+2139, U+2194-2199, U+21a9-21aa, U+23cf, U+23e9-23ef, U+23f8-23fa, U+24c2,
+    U+25aa-25ab, U+25b6, U+25c0, U+25fb-25fe, U+2611, U+2622-2623, U+2626,
+    U+262a, U+262e-262f, U+2638, U+2640, U+2642, U+2648-2653, U+2660, U+2663,
+    U+2665-2666, U+2668, U+267b, U+267e-267f, U+2695, U+269b-269c, U+26a0,
+    U+26a7, U+26aa-26ab, U+26ce, U+26d4, U+2705, U+2714, U+2716, U+271d, U+2721,
+    U+2733-2734, U+2747, U+274c, U+274e, U+2753-2755, U+2757, U+2764,
+    U+2795-2797, U+27a1, U+27b0, U+27bf, U+2934-2935, U+2b05-2b07, U+2b1b-2b1c,
+    U+2b55, U+3030, U+303d, U+3297, U+3299, U+fe0f, U+1f170-1f171,
+    U+1f17e-1f17f, U+1f18e, U+1f191-1f19a, U+1f201-1f202, U+1f21a, U+1f22f,
+    U+1f232-1f23a, U+1f250-1f251, U+1f310, U+1f3a6, U+1f3b5-1f3b6, U+1f3bc,
+    U+1f3e7, U+1f441, U+1f499-1f49c, U+1f49f-1f4a0, U+1f4a2, U+1f4ac-1f4ad,
+    U+1f4b1-1f4b2, U+1f4b9, U+1f4db, U+1f4f2-1f4f6, U+1f500-1f50a, U+1f515,
+    U+1f518-1f524, U+1f52f-1f53d, U+1f549, U+1f54e, U+1f5a4, U+1f5e8, U+1f5ef,
+    U+1f6ab, U+1f6ad-1f6b1, U+1f6b3, U+1f6b7-1f6bc, U+1f6be, U+1f6c2-1f6c5,
+    U+1f6d0-1f6d1, U+1f6d7, U+1f6dc, U+1f7e0-1f7eb, U+1f7f0, U+1f90d-1f90e,
+    U+1f9e1, U+1fa75-1fa77, U+1faaf;
+}
+/* [3] */
+@font-face {
+  font-family: "Noto Emoji";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.3.woff2)
+    format("woff2");
+  unicode-range:
+    U+231a-231b, U+2328, U+23f0-23f3, U+2602, U+260e, U+2692, U+2694,
+    U+2696-2697, U+2699, U+26b0-26b1, U+26cf, U+26d1, U+26d3, U+2702, U+2709,
+    U+270f, U+2712, U+fe0f, U+1f302, U+1f321, U+1f392-1f393, U+1f3a9, U+1f3bd,
+    U+1f3ee, U+1f3f7, U+1f3fa, U+1f451-1f462, U+1f484, U+1f489-1f48a,
+    U+1f48c-1f48e, U+1f4a1, U+1f4a3, U+1f4b0, U+1f4b3-1f4b8, U+1f4bb-1f4da,
+    U+1f4dc-1f4f1, U+1f4ff, U+1f50b-1f514, U+1f516-1f517, U+1f526-1f529,
+    U+1f52c-1f52e, U+1f550-1f567, U+1f56f-1f570, U+1f576, U+1f587,
+    U+1f58a-1f58d, U+1f5a5, U+1f5a8, U+1f5b1-1f5b2, U+1f5c2-1f5c4,
+    U+1f5d1-1f5d3, U+1f5dc-1f5de, U+1f5e1, U+1f5f3, U+1f6aa, U+1f6ac, U+1f6bd,
+    U+1f6bf, U+1f6c1, U+1f6cb, U+1f6cd-1f6cf, U+1f6d2, U+1f6e0-1f6e1, U+1f6f0,
+    U+1f97b-1f97f, U+1f9af, U+1f9ba, U+1f9e2-1f9e6, U+1f9ea-1f9ec,
+    U+1f9ee-1f9f4, U+1f9f7-1f9ff, U+1fa71-1fa74, U+1fa79-1fa7b, U+1fa86,
+    U+1fa91-1fa93, U+1fa96, U+1fa99-1faa0, U+1faa2-1faa7, U+1faaa-1faae;
+}
+/* [4] */
+@font-face {
+  font-family: "Noto Emoji";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.4.woff2)
+    format("woff2");
+  unicode-range:
+    U+265f, U+26bd-26be, U+26f3, U+26f8, U+fe0f, U+1f004, U+1f0cf,
+    U+1f380-1f384, U+1f386-1f38b, U+1f38d-1f391, U+1f396-1f397, U+1f399-1f39b,
+    U+1f39e-1f39f, U+1f3a3-1f3a5, U+1f3a7-1f3a9, U+1f3ab-1f3b4, U+1f3b7-1f3bb,
+    U+1f3bd-1f3c0, U+1f3c5-1f3c6, U+1f3c8-1f3c9, U+1f3cf-1f3d3, U+1f3f8-1f3f9,
+    U+1f47e, U+1f4e2, U+1f4f7-1f4fd, U+1f52b, U+1f579, U+1f58c-1f58d, U+1f5bc,
+    U+1f6f7, U+1f6f9, U+1f6fc, U+1f93f, U+1f941, U+1f945, U+1f947-1f94f,
+    U+1f9e7-1f9e9, U+1f9f5-1f9f6, U+1fa70-1fa71, U+1fa80-1fa81, U+1fa83-1fa85,
+    U+1fa87-1fa88, U+1fa94-1fa95, U+1fa97-1fa98, U+1faa1, U+1faa9;
+}
+/* [5] */
+@font-face {
+  font-family: "Noto Emoji";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.5.woff2)
+    format("woff2");
+  unicode-range:
+    U+2693, U+26e9-26ea, U+26f1-26f2, U+26f4-26f5, U+26fa, U+26fd, U+2708,
+    U+fe0f, U+1f301, U+1f303, U+1f306-1f307, U+1f309, U+1f310, U+1f3a0-1f3a2,
+    U+1f3aa, U+1f3cd-1f3ce, U+1f3d5, U+1f3d7-1f3db, U+1f3df-1f3e6,
+    U+1f3e8-1f3ed, U+1f3ef-1f3f0, U+1f488, U+1f492, U+1f4ba, U+1f54b-1f54d,
+    U+1f5fa-1f5ff, U+1f680-1f6a2, U+1f6a4-1f6a8, U+1f6b2, U+1f6d1,
+    U+1f6d5-1f6d6, U+1f6dd-1f6df, U+1f6e2-1f6e5, U+1f6e9, U+1f6eb-1f6ec,
+    U+1f6f3-1f6f6, U+1f6f8, U+1f6fa-1f6fb, U+1f9bc-1f9bd, U+1f9ed, U+1f9f3,
+    U+1fa7c;
+}
+/* [6] */
+@font-face {
+  font-family: "Noto Emoji";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.6.woff2)
+    format("woff2");
+  unicode-range:
+    U+2615, U+fe0f, U+1f32d-1f330, U+1f336, U+1f33d, U+1f345-1f37f, U+1f382,
+    U+1f52a, U+1f942-1f944, U+1f950-1f96f, U+1f99e, U+1f9aa, U+1f9c0-1f9cb,
+    U+1fad0-1fadb;
+}
+/* [7] */
+@font-face {
+  font-family: "Noto Emoji";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.7.woff2)
+    format("woff2");
+  unicode-range:
+    U+200d, U+2600-2601, U+2603-2604, U+2614, U+2618, U+26a1, U+26c4-26c5,
+    U+26c8, U+26f0, U+2728, U+2744, U+2b1b, U+2b50, U+fe0f, U+1f300,
+    U+1f304-1f305, U+1f308, U+1f30a-1f30f, U+1f311-1f321, U+1f324-1f32c,
+    U+1f331-1f335, U+1f337-1f33c, U+1f33e-1f344, U+1f3d4, U+1f3d6,
+    U+1f3dc-1f3de, U+1f3f5, U+1f400-1f43f, U+1f490, U+1f4a7, U+1f4ab, U+1f4ae,
+    U+1f525, U+1f54a, U+1f573, U+1f577-1f578, U+1f648-1f64a, U+1f940,
+    U+1f980-1f9ae, U+1f9ba, U+1fa90, U+1faa8, U+1fab0-1fabd, U+1fabf,
+    U+1face-1facf, U+1fae7;
+}
+/* [8] */
+@font-face {
+  font-family: "Noto Emoji";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.8.woff2)
+    format("woff2");
+  unicode-range:
+    U+200d, U+2640, U+2642, U+2695-2696, U+26f7, U+26f9, U+2708, U+2764, U+fe0f,
+    U+1f33e, U+1f373, U+1f37c, U+1f384-1f385, U+1f393, U+1f3a4, U+1f3a8,
+    U+1f3c2-1f3c4, U+1f3c7, U+1f3ca-1f3cc, U+1f3eb, U+1f3ed, U+1f3fb-1f3ff,
+    U+1f466-1f478, U+1f47c, U+1f481-1f483, U+1f486-1f487, U+1f48b, U+1f48f,
+    U+1f491, U+1f4bb-1f4bc, U+1f527, U+1f52c, U+1f574-1f575, U+1f57a,
+    U+1f645-1f647, U+1f64b, U+1f64d-1f64e, U+1f680, U+1f692, U+1f6a3,
+    U+1f6b4-1f6b6, U+1f6c0, U+1f6cc, U+1f91d, U+1f926, U+1f930-1f931,
+    U+1f934-1f93a, U+1f93c-1f93e, U+1f977, U+1f9af-1f9b3, U+1f9b8-1f9b9,
+    U+1f9bc-1f9bd, U+1f9cc-1f9cf, U+1f9d1-1f9df, U+1fa82, U+1fac3-1fac5;
+}
+/* [9] */
+@font-face {
+  font-family: "Noto Emoji";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.9.woff2)
+    format("woff2");
+  unicode-range:
+    U+200d, U+261d, U+2620, U+2639-263a, U+2665, U+270a-270d, U+2728,
+    U+2763-2764, U+2b50, U+fe0f, U+1f31a-1f31f, U+1f32b, U+1f383, U+1f389,
+    U+1f3fb-1f3ff, U+1f440-1f450, U+1f463-1f465, U+1f479-1f47b, U+1f47d-1f480,
+    U+1f485, U+1f48b-1f48c, U+1f493-1f49f, U+1f4a4-1f4a6, U+1f4a8-1f4ab,
+    U+1f4af, U+1f525, U+1f573, U+1f590, U+1f595-1f596, U+1f5a4, U+1f5e3,
+    U+1f600-1f644, U+1f648-1f64a, U+1f64c, U+1f64f, U+1f90c-1f925,
+    U+1f927-1f92f, U+1f932-1f933, U+1f970-1f976, U+1f978-1f97a, U+1f9a0,
+    U+1f9b4-1f9b7, U+1f9bb, U+1f9be-1f9bf, U+1f9d0, U+1f9e0-1f9e1,
+    U+1fa75-1fa79, U+1fac0-1fac2, U+1fae0-1fae6, U+1fae8, U+1faf0-1faf8;
+}
+/* [10] */
+@font-face {
+  font-family: "Noto Emoji";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.10.woff2)
+    format("woff2");
+  unicode-range:
+    U+200d, U+2194-2195, U+2640, U+2642, U+26d3, U+27a1, U+fe0f, U+1f344,
+    U+1f34b, U+1f3c3, U+1f3fb-1f3ff, U+1f426, U+1f468-1f469, U+1f4a5, U+1f525,
+    U+1f642, U+1f6b6, U+1f7e9, U+1f7eb, U+1f9af, U+1f9bc-1f9bd, U+1f9ce,
+    U+1f9d1-1f9d2;
+}
+/* [11] */
+@font-face {
+  font-family: "Noto Emoji";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.11.woff2)
+    format("woff2");
+  unicode-range: U+1fa89, U+1fa8f, U+1fabe, U+1fac6, U+1fadc, U+1fadf, U+1fae9;
+}
+
+/* cyrillic-ext */
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4G1ilXvlUlIfM0qh1d65g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4G1ilXt1UlIfM0qh1d65g.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4G1ilXvFUlIfM0qh1d65g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4G1ilXvVUlIfM0qh1d65g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4G1ilXs1UlIfM0qh1d.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
 
 :root {
   --h1-color: var(--text-normal);
-  --h2-color: var(--text-normal);
-  --h3-color: var(--text-normal);
-  --h4-color: var(--text-normal);
-  --h5-color: var(--text-normal);
-  --h6-color: var(--text-normal);
 
   --nav-item-background-hover: var(--background-modifier-hover);
-  --nav-item-background-active: var(--background-modifier-hover);
-
-  --background-secondary-alt: light-dark(hsl(210, 10%, 96%), #9496ac66);
---color-accent: light-dark(hsl(232, 75%, 70%), hsl(232, 75%, 70%));
---color-accent-1: light-dark(hsl(calc(232 - 1), calc(75% * 1.01), calc(70% * 1.075)), hsl(calc(232 - 3), calc(75% * 1.02), calc(70% * 1.15)));
---color-accent-2: light-dark(hsl(calc(232 - 3), calc(75% * 1.02), calc(70% * 1.15)), hsl(calc(232 - 5), calc(75% * 1.05), calc(70% * 1.29)));
---color-accent-hsl: light-dark(232, 75%, 70%, 232, 75%, 70%);
---color-base-00: light-dark(#ffffff, #1e1e1e);
---color-base-05: light-dark(#fcfcfc, #212121);
---color-base-10: light-dark(#fafafa, #242424);
---color-base-100: light-dark(#222222, #dadada);
---color-base-20: light-dark(#f6f6f6, #262626);
---color-base-25: light-dark(#e3e3e3, #2a2a2a);
---color-base-30: light-dark(#e0e0e0, #363636);
---color-base-35: light-dark(#d4d4d4, #3f3f3f);
---color-base-40: light-dark(#bdbdbd, #555555);
---color-base-50: light-dark(#ababab, #666666);
---color-base-60: light-dark(#707070, #999999);
---color-base-70: light-dark(#5c5c5c, #b3b3b3);
---color-blue: light-dark(#086ddd, #027aff);
---color-cyan: light-dark(#00bfbc, #53dfdd);
---color-green: light-dark(#08b94e, #44cf6e);
---color-orange: light-dark(#ec7500, #e9973f);
---color-pink: light-dark(#d53984, #fa99cd);
---color-purple: light-dark(#7852ee, #a882ff);
---color-red: light-dark(#e93147, #fb464c);
---color-yellow: light-dark(#e0ac00, #e0de71);
---keyboard-height: 0px;
---loading-icon-delay: 400ms;
---page-border: 9px solid transparent;
---page-margin: 1px auto -8px;
---pdfViewer-padding-bottom: 0;
---safe-area-inset-bottom: env(safe-area-inset-bottom);
---safe-area-inset-left: env(safe-area-inset-left);
---safe-area-inset-right: env(safe-area-inset-right);
---safe-area-inset-top: env(safe-area-inset-top);
---spreadHorizontalWrapped-margin-LR: -3.5px;
---viewer-container-height: 0;
---xfa-focus-outline: auto;
---xfa-unfocused-field-background: url("data:image/svg+xml, charset=UTF-8, <svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13), '/></svg>");
+  --color-accent-2: light-dark(
+    hsl(calc(232 - 3), calc(75% * 1.02), calc(70% * 1.15)),
+    hsl(calc(232 - 5), calc(75% * 1.05), calc(70% * 1.29))
+  );
+  --color-accent-hsl: light-dark(232, 75%, 70%, 232, 75%, 70%);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
   --text-faint: var(--color-base-50);
-  
+
   --background-primary: var(--color-base-00);
   --background-primary-alt: var(--color-base-10);
   --background-secondary: var(--color-base-20);
-  --background-secondary-alt: var(--color-base-05);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-border-focus: var(--color-base-40);
-  --background-modifier-error-rgb: var(--color-red-rgb);
-  --background-modifier-error: var(--color-red);
-  --background-modifier-error-hover: var(--color-red);
-  --background-modifier-success-rgb: var(--color-green-rgb);
-  --background-modifier-success: var(--color-green);
 
   --button-secondary-bg-color: transparent;
   --button-secondary-fg-color: var(--text-primary-color);
-
-  --code-border-color: var(--background-modifier-border);
-  --code-radius: var(--radius-s);
-  --code-size: var(--font-smaller);
   --code-background: var(--background-primary-alt);
   --code-normal: var(--text-normal);
   --code-comment: var(--text-faint);
   --code-function: var(--color-yellow);
   --code-important: var(--color-orange);
   --code-keyword: var(--color-pink);
-  --code-operator: var(--color-red);
   --code-property: var(--color-cyan);
   --code-punctuation: var(--text-muted);
   --code-string: var(--color-green);
@@ -109,42 +843,149 @@
   --code-value: var(--color-purple);
 
   --icon-color: var(--text-muted);
-  --icon-color-hover: var(--text-muted);
-  --icon-color-active: var(--text-accent);
-  --icon-color-focused: var(--text-normal);
 
   --link-color: var(--text-accent);
   --link-color-hover: var(--text-accent-hover);
   --link-weight: var(--font-weight);
   --link-external-color: var(--text-accent);
   --link-external-color-hover: var(--text-accent-hover);
-  --link-external-decoration: underline;
-  --link-external-decoration-hover: underline;
-  --link-unresolved-color: var(--text-accent);
-  --link-unresolved-decoration-style: solid;
-  --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3);
 
   --quartz-themes-title-font-size: 1.75rem;
 }
-
 html {
   /* Ensure rem units are based on a 16px root font size */
   font-size: 16px;
   font-family: var(--bodyFont);
 }
-
 body {
   --h1-color: var(--text-normal);
-  --h2-color: var(--text-normal);
-  --h3-color: var(--text-normal);
-  --h4-color: var(--text-normal);
-  --h5-color: var(--text-normal);
-  --h6-color: var(--text-normal);
 
   --nav-item-background-hover: var(--background-modifier-hover);
-  --nav-item-background-active: var(--background-modifier-hover);
-
-  //%%body%%
+  --background-modifier-border: #9496ac66;
+  --background-modifier-border-focus: hsl(242, 19%, 72%);
+  --background-modifier-border-hover: hsl(220, 5%, 78%);
+  --background-modifier-hover: rgba(255, 255, 255, 0.067);
+  --background-primary: hsla(237, 10%, 97%, 75%);
+  --background-primary-alt: hsl(220, 9%, 95%);
+  --background-secondary: hsl(229, 14%, 91%);
+  --bold-color: inherit;
+  --bold-weight: calc(700 + 200);
+  --checkbox-border-color: rgb(255, 114, 114);
+  --checkbox-border-color-hover: #6d6b78;
+  --checkbox-color: transparent;
+  --checkbox-color-hover: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  --checkbox-marker-color: hsla(237, 10%, 97%, 75%);
+  --checkbox-radius: 14px;
+  --checkbox-size: 18px;
+  --code-background: hsl(220, 9%, 95%);
+  --code-comment: #787689;
+  --code-function: rgb(219, 202, 103);
+  --code-important: rgb(255, 160, 88);
+  --code-keyword: rgb(233, 145, 196);
+  --code-normal: #3e3a4f;
+  --code-property: rgb(84, 186, 182);
+  --code-punctuation: #6d6b78;
+  --code-string: rgb(132, 204, 124);
+  --code-tag: rgb(255, 114, 114);
+  --code-value: rgb(183, 140, 218);
+  --collapse-icon-color: #787689;
+  --collapse-icon-color-collapsed: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  --color-accent-2: light-dark(
+    hsl(calc(232 - 3), calc(75% * 1.02), calc(70% * 1.15)),
+    hsl(calc(232 - 5), calc(75% * 1.05), calc(70% * 1.29))
+  );
+  --color-accent-hsl: light-dark(232, 75%, 70%, 232, 75%, 70%);
+  --color-base-00: light-dark(#ffffff, #1e1e1e);
+  --color-base-10: light-dark(#fafafa, #242424);
+  --color-base-100: light-dark(#222222, #dadada);
+  --color-base-20: light-dark(#f6f6f6, #262626);
+  --color-base-30: light-dark(#e0e0e0, #363636);
+  --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+  --color-base-40: light-dark(#bdbdbd, #555555);
+  --color-base-50: light-dark(#ababab, #666666);
+  --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+  --color-blue: light-dark(#086ddd, #027aff);
+  --color-cyan: light-dark(#00bfbc, #53dfdd);
+  --color-green: light-dark(#08b94e, #44cf6e);
+  --color-orange: light-dark(#ec7500, #e9973f);
+  --color-pink: light-dark(#d53984, #fa99cd);
+  --color-purple: light-dark(#7852ee, #a882ff);
+  --color-red: light-dark(#e93147, #fb464c);
+  --color-yellow: light-dark(#e0ac00, #e0de71);
+  --cursor-link: pointer;
+  --font-default: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --font-monospace: "DM Mono", monospace;
+  --font-text: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --font-weight: 400;
+  --graph-line: var(--color-base-35, hsl(242, 19%, 72%));
+  --graph-node-tag: rgb(132, 204, 124);
+  --graph-node-unresolved: #787689;
+  --h1-color: inherit;
+  --h1-font:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --h3-line-height: 1.3;
+  --hr-color: #d9dde8;
+  --hr-thickness: 2px;
+  --icon-color: #6d6b78;
+  --inline-title-color: #3e3a4f;
+  --inline-title-font:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  --interactive-accent-hsl: 232, 75%, 70%;
+  --italic-color: inherit;
+  --link-color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  --link-color-hover: hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%));
+  --link-external-color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  --link-external-color-hover: hsl(
+    calc(232 + 2),
+    calc(75% + 5%),
+    calc(70% + 4%)
+  );
+  --link-external-filter: none;
+  --link-weight: var(--link-weight);
+  --nav-item-background-hover: rgba(255, 255, 255, 0.15);
+  --nav-item-children-margin-start: 12px;
+  --nav-item-children-padding-start: 4px;
+  --p-spacing: 1rem;
+  --search-icon-color: #6d6b78;
+  --tag-background: hsla(232, 75%, 70%, 0.1);
+  --tag-background-hover: hsla(232, 75%, 70%, 0.2);
+  --tag-border-color: hsla(232, 75%, 70%, 0.15);
+  --tag-border-color-hover: hsla(232, 75%, 70%, 0.15);
+  --tag-border-width: 0px;
+  --tag-color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  --tag-color-hover: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  --tag-decoration: none;
+  --tag-decoration-hover: none;
+  --tag-radius: 2em;
+  --tag-weight: inherit;
+  --text-accent: hsl(232, 75%, 70%);
+  --text-accent-hover: hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%));
+  --text-faint: #787689;
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-muted: #6d6b78;
+  --text-normal: #3e3a4f;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-user-select: none;
+  background-color: hsla(237, 10%, 97%, 75%);
+  caret-color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  color: #3e3a4f;
+  contain: initial;
+  font-family:
+    "??", "??", var(--default-font, "??"), "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif;
+  font-size: 16px;
+  height: 100%;
+  line-height: 1.3;
+  margin: 0;
+  overflow: auto;
+  overscroll-behavior: none;
+  padding: 0;
+  padding-top: 0;
+  text-rendering: optimizeLegibility;
+  user-select: none;
+  width: 100%;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -154,63 +995,65 @@ body {
   --background-primary-alt: var(--color-base-10);
   --background-secondary: var(--color-base-20);
   --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
-  --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
   --background-modifier-border: var(--color-base-30);
   --background-modifier-border-hover: var(--color-base-35);
   --background-modifier-border-focus: var(--color-base-40);
-  --background-modifier-error-rgb: var(--color-red-rgb);
-  --background-modifier-error: var(--color-red);
-  --background-modifier-error-hover: var(--color-red);
-  --background-modifier-success-rgb: var(--color-green-rgb);
 
   --button-secondary-bg-color: transparent;
   --button-secondary-fg-color: var(--text-primary-color);
-
-  --code-border-color: var(--background-modifier-border);
-  --code-radius: var(--radius-s);
-  --code-size: var(--font-smaller);
   --code-background: var(--background-primary-alt);
   --code-normal: var(--text-normal);
   --code-comment: var(--text-faint);
   --code-function: var(--color-yellow);
   --code-important: var(--color-orange);
   --code-keyword: var(--color-pink);
-  --code-operator: var(--color-red);
   --code-property: var(--color-cyan);
   --code-punctuation: var(--text-muted);
   --code-string: var(--color-green);
   --code-tag: var(--color-red);
   --code-value: var(--color-purple);
 
-  --background-modifier-success: var(--color-green);
-
   --icon-color: var(--text-muted);
-  --icon-color-hover: var(--text-muted);
-  --icon-color-active: var(--text-accent);
-  --icon-color-focused: var(--text-normal);
 
   --link-color: var(--text-accent);
   --link-color-hover: var(--text-accent-hover);
   --link-weight: var(--font-weight);
   --link-external-color: var(--text-accent);
   --link-external-color-hover: var(--text-accent-hover);
-  --link-external-decoration: underline;
-  --link-external-decoration-hover: underline;
-  --link-unresolved-color: var(--text-accent);
-  --link-unresolved-decoration-style: solid;
-  --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3);
 
   --quartz-themes-title-font-size: 1.75rem;
 }
-
 /* CALLOUTS */
 :root,
 html {
   .callout {
+    --callout-color: 131, 145, 237;
+    background-color: #9496ac66;
+    border: 1px solid rgba(158, 158, 158, 0.35);
+    border-color: rgba(158, 158, 158, 0.25);
+    border-radius: 14px;
+    border-style: solid;
+    border-width: 0px;
+    margin: calc(2em * 0.4) auto;
+    max-width: 700px;
+    min-width: 320px;
+    mix-blend-mode: normal;
+    overflow: hidden;
+    padding: 0;
 
-    //%%CALLOUT%%
-
-    //%%CALLOUT BACKGROUND%%
+    --callout-color: 131, 145, 237;
+    background-color: #9496ac66;
+    border: 1px solid rgba(158, 158, 158, 0.35);
+    border-color: rgba(158, 158, 158, 0.25);
+    border-radius: 14px;
+    border-style: solid;
+    border-width: 0px;
+    margin: calc(2em * 0.4) auto;
+    max-width: 700px;
+    min-width: 320px;
+    mix-blend-mode: normal;
+    overflow: hidden;
+    padding: 0;
 
     background-color: var(--bg);
     border-color: var(--border);
@@ -218,325 +1061,653 @@ html {
     overflow-x: auto;
     overflow-y: hidden;
 
-    --callout-icon-note: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="2" x2="22" y2="6"></line><path d="M7.5 20.5 19 9l-4-4L3.5 16.5 2 22z"></path></svg>');
-    --callout-icon-abstract: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><path d="M12 11h4"></path><path d="M12 16h4"></path><path d="M8 11h.01"></path><path d="M8 16h.01"></path></svg>');
-    --callout-icon-info: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>');
-    --callout-icon-todo: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>');
-    --callout-icon-tip: url('data:image/svg+xml; utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg> ');
-    --callout-icon-success: url('data:image/svg+xml; utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> ');
-    --callout-icon-question: url('data:image/svg+xml; utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg> ');
-    --callout-icon-warning: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>');
-    --callout-icon-failure: url('data:image/svg+xml; utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg> ');
-    --callout-icon-danger: url('data:image/svg+xml; utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg> ');
-    --callout-icon-bug: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="14" x="8" y="6" rx="4"></rect><path d="m19 7-3 2"></path><path d="m5 7 3 2"></path><path d="m19 19-3-2"></path><path d="m5 19 3-2"></path><path d="M20 13h-4"></path><path d="M4 13h4"></path><path d="m10 4 1 2"></path><path d="m14 4-1 2"></path></svg>');
-    --callout-icon-example: url('data:image/svg+xml; utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg> ');
-    --callout-icon-quote: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path></svg>');
-    --callout-icon-fold: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpolyline points="6 9 12 15 18 9"%3E%3C/polyline%3E%3C/svg%3E');
-
     &[data-callout] {
-      //%%CALLOUT NOTE%%
+      --callout-color: 131, 145, 237;
+      background-color: #9496ac66;
+      border: 1px solid rgba(158, 158, 158, 0.35);
+      border-color: rgba(158, 158, 158, 0.25);
+      border-radius: 14px;
+      border-style: solid;
+      border-width: 0px;
+      margin: calc(2em * 0.4) auto;
+      max-width: 700px;
+      min-width: 320px;
+      mix-blend-mode: normal;
+      overflow: hidden;
+      padding: 0;
 
-      //%%CALLOUT BACKGROUND%%
+      --callout-color: 131, 145, 237;
+      background-color: #9496ac66;
+      border: 1px solid rgba(158, 158, 158, 0.35);
+      border-color: rgba(158, 158, 158, 0.25);
+      border-radius: 14px;
+      border-style: solid;
+      border-width: 0px;
+      margin: calc(2em * 0.4) auto;
+      max-width: 700px;
+      min-width: 320px;
+      mix-blend-mode: normal;
+      overflow: hidden;
+      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
-      --callout-icon: var(--callout-icon-note);
       background: var(--bg);
     }
     &[data-callout="abstract"] {
-      //%%CALLOUT ABSTRACT%%
+      --callout-color: 132, 204, 124;
 
-      //%%CALLOUT BACKGROUND%%
+      --callout-color: 131, 145, 237;
+      background-color: #9496ac66;
+      border: 1px solid rgba(158, 158, 158, 0.35);
+      border-color: rgba(158, 158, 158, 0.25);
+      border-radius: 14px;
+      border-style: solid;
+      border-width: 0px;
+      margin: calc(2em * 0.4) auto;
+      max-width: 700px;
+      min-width: 320px;
+      mix-blend-mode: normal;
+      overflow: hidden;
+      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
-      --callout-icon: var(--callout-icon-abstract);
       background: var(--bg);
     }
     &[data-callout="summary"] {
-      //%%CALLOUT SUMMARY%%
+      --callout-color: 132, 204, 124;
 
-      //%%CALLOUT BACKGROUND%%
+      --callout-color: 131, 145, 237;
+      background-color: #9496ac66;
+      border: 1px solid rgba(158, 158, 158, 0.35);
+      border-color: rgba(158, 158, 158, 0.25);
+      border-radius: 14px;
+      border-style: solid;
+      border-width: 0px;
+      margin: calc(2em * 0.4) auto;
+      max-width: 700px;
+      min-width: 320px;
+      mix-blend-mode: normal;
+      overflow: hidden;
+      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
-      --callout-icon: var(--callout-icon-abstract);
       background: var(--bg);
     }
     &[data-callout="tldr"] {
-      //%%CALLOUT TLDR%%
+      --callout-color: 132, 204, 124;
 
-      //%%CALLOUT BACKGROUND%%
+      --callout-color: 131, 145, 237;
+      background-color: #9496ac66;
+      border: 1px solid rgba(158, 158, 158, 0.35);
+      border-color: rgba(158, 158, 158, 0.25);
+      border-radius: 14px;
+      border-style: solid;
+      border-width: 0px;
+      margin: calc(2em * 0.4) auto;
+      max-width: 700px;
+      min-width: 320px;
+      mix-blend-mode: normal;
+      overflow: hidden;
+      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
-      --callout-icon: var(--callout-icon-abstract);
       background: var(--bg);
     }
     &[data-callout="info"] {
-      //%%CALLOUT INFO%%
+      --callout-color: 131, 145, 237;
 
-      //%%CALLOUT BACKGROUND%%
+      --callout-color: 131, 145, 237;
+      background-color: #9496ac66;
+      border: 1px solid rgba(158, 158, 158, 0.35);
+      border-color: rgba(158, 158, 158, 0.25);
+      border-radius: 14px;
+      border-style: solid;
+      border-width: 0px;
+      margin: calc(2em * 0.4) auto;
+      max-width: 700px;
+      min-width: 320px;
+      mix-blend-mode: normal;
+      overflow: hidden;
+      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
-      --callout-icon: var(--callout-icon-info);
       background: var(--bg);
     }
     &[data-callout="todo"] {
-      //%%CALLOUT TODO%%
+      --callout-color: 131, 145, 237;
 
-      //%%CALLOUT BACKGROUND%%
+      --callout-color: 131, 145, 237;
+      background-color: #9496ac66;
+      border: 1px solid rgba(158, 158, 158, 0.35);
+      border-color: rgba(158, 158, 158, 0.25);
+      border-radius: 14px;
+      border-style: solid;
+      border-width: 0px;
+      margin: calc(2em * 0.4) auto;
+      max-width: 700px;
+      min-width: 320px;
+      mix-blend-mode: normal;
+      overflow: hidden;
+      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
-      --callout-icon: var(--callout-icon-todo);
       background: var(--bg);
     }
     &[data-callout="important"] {
-      //%%CALLOUT IMPORTANT%%
+      --callout-color: 84, 186, 182;
 
-      //%%CALLOUT BACKGROUND%%
+      --callout-color: 131, 145, 237;
+      background-color: #9496ac66;
+      border: 1px solid rgba(158, 158, 158, 0.35);
+      border-color: rgba(158, 158, 158, 0.25);
+      border-radius: 14px;
+      border-style: solid;
+      border-width: 0px;
+      margin: calc(2em * 0.4) auto;
+      max-width: 700px;
+      min-width: 320px;
+      mix-blend-mode: normal;
+      overflow: hidden;
+      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
-      --callout-icon: var(--callout-icon-tip);
       background: var(--bg);
     }
     &[data-callout="tip"] {
-      //%%CALLOUT TIP%%
+      --callout-color: 219, 202, 103;
 
-      //%%CALLOUT BACKGROUND%%
+      --callout-color: 131, 145, 237;
+      background-color: #9496ac66;
+      border: 1px solid rgba(158, 158, 158, 0.35);
+      border-color: rgba(158, 158, 158, 0.25);
+      border-radius: 14px;
+      border-style: solid;
+      border-width: 0px;
+      margin: calc(2em * 0.4) auto;
+      max-width: 700px;
+      min-width: 320px;
+      mix-blend-mode: normal;
+      overflow: hidden;
+      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
-      --callout-icon: var(--callout-icon-tip);
       background: var(--bg);
     }
     &[data-callout="hint"] {
-      //%%CALLOUT HINT%%
+      --callout-color: 219, 202, 103;
 
-      //%%CALLOUT BACKGROUND%%
+      --callout-color: 131, 145, 237;
+      background-color: #9496ac66;
+      border: 1px solid rgba(158, 158, 158, 0.35);
+      border-color: rgba(158, 158, 158, 0.25);
+      border-radius: 14px;
+      border-style: solid;
+      border-width: 0px;
+      margin: calc(2em * 0.4) auto;
+      max-width: 700px;
+      min-width: 320px;
+      mix-blend-mode: normal;
+      overflow: hidden;
+      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
-      --callout-icon: var(--callout-icon-tip);
       background: var(--bg);
     }
     &[data-callout="success"] {
-      //%%CALLOUT SUCCESS%%
+      --callout-color: 132, 204, 124;
 
-      //%%CALLOUT BACKGROUND%%
+      --callout-color: 131, 145, 237;
+      background-color: #9496ac66;
+      border: 1px solid rgba(158, 158, 158, 0.35);
+      border-color: rgba(158, 158, 158, 0.25);
+      border-radius: 14px;
+      border-style: solid;
+      border-width: 0px;
+      margin: calc(2em * 0.4) auto;
+      max-width: 700px;
+      min-width: 320px;
+      mix-blend-mode: normal;
+      overflow: hidden;
+      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
-      --callout-icon: var(--callout-icon-success);
       background: var(--bg);
     }
     &[data-callout="check"] {
-      //%%CALLOUT CHECK%%
+      --callout-color: 132, 204, 124;
 
-      //%%CALLOUT BACKGROUND%%
+      --callout-color: 131, 145, 237;
+      background-color: #9496ac66;
+      border: 1px solid rgba(158, 158, 158, 0.35);
+      border-color: rgba(158, 158, 158, 0.25);
+      border-radius: 14px;
+      border-style: solid;
+      border-width: 0px;
+      margin: calc(2em * 0.4) auto;
+      max-width: 700px;
+      min-width: 320px;
+      mix-blend-mode: normal;
+      overflow: hidden;
+      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
-      --callout-icon: var(--callout-icon-success);
       background: var(--bg);
     }
     &[data-callout="done"] {
-      //%%CALLOUT DONE%%
+      --callout-color: 132, 204, 124;
 
-      //%%CALLOUT BACKGROUND%%
+      --callout-color: 131, 145, 237;
+      background-color: #9496ac66;
+      border: 1px solid rgba(158, 158, 158, 0.35);
+      border-color: rgba(158, 158, 158, 0.25);
+      border-radius: 14px;
+      border-style: solid;
+      border-width: 0px;
+      margin: calc(2em * 0.4) auto;
+      max-width: 700px;
+      min-width: 320px;
+      mix-blend-mode: normal;
+      overflow: hidden;
+      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
-      --callout-icon: var(--callout-icon-success);
       background: var(--bg);
     }
     &[data-callout="question"] {
-      //%%CALLOUT QUESTION%%
+      --callout-color: 219, 202, 103;
 
-      //%%CALLOUT BACKGROUND%%
+      --callout-color: 131, 145, 237;
+      background-color: #9496ac66;
+      border: 1px solid rgba(158, 158, 158, 0.35);
+      border-color: rgba(158, 158, 158, 0.25);
+      border-radius: 14px;
+      border-style: solid;
+      border-width: 0px;
+      margin: calc(2em * 0.4) auto;
+      max-width: 700px;
+      min-width: 320px;
+      mix-blend-mode: normal;
+      overflow: hidden;
+      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
-      --callout-icon: var(--callout-icon-question);
       background: var(--bg);
     }
     &[data-callout="help"] {
-      //%%CALLOUT HELP%%
+      --callout-color: 219, 202, 103;
 
-      //%%CALLOUT BACKGROUND%%
+      --callout-color: 131, 145, 237;
+      background-color: #9496ac66;
+      border: 1px solid rgba(158, 158, 158, 0.35);
+      border-color: rgba(158, 158, 158, 0.25);
+      border-radius: 14px;
+      border-style: solid;
+      border-width: 0px;
+      margin: calc(2em * 0.4) auto;
+      max-width: 700px;
+      min-width: 320px;
+      mix-blend-mode: normal;
+      overflow: hidden;
+      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
-      --callout-icon: var(--callout-icon-question);
       background: var(--bg);
     }
     &[data-callout="faq"] {
-      //%%CALLOUT FAQ%%
+      --callout-color: 219, 202, 103;
 
-      //%%CALLOUT BACKGROUND%%
+      --callout-color: 131, 145, 237;
+      background-color: #9496ac66;
+      border: 1px solid rgba(158, 158, 158, 0.35);
+      border-color: rgba(158, 158, 158, 0.25);
+      border-radius: 14px;
+      border-style: solid;
+      border-width: 0px;
+      margin: calc(2em * 0.4) auto;
+      max-width: 700px;
+      min-width: 320px;
+      mix-blend-mode: normal;
+      overflow: hidden;
+      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
-      --callout-icon: var(--callout-icon-question);
       background: var(--bg);
     }
     &[data-callout="warning"] {
-      //%%CALLOUT WARNING%%
+      --callout-color: 255, 160, 88;
 
-      //%%CALLOUT BACKGROUND%%
+      --callout-color: 131, 145, 237;
+      background-color: #9496ac66;
+      border: 1px solid rgba(158, 158, 158, 0.35);
+      border-color: rgba(158, 158, 158, 0.25);
+      border-radius: 14px;
+      border-style: solid;
+      border-width: 0px;
+      margin: calc(2em * 0.4) auto;
+      max-width: 700px;
+      min-width: 320px;
+      mix-blend-mode: normal;
+      overflow: hidden;
+      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
-      --callout-icon: var(--callout-icon-warning);
       background: var(--bg);
     }
     &[data-callout="caution"] {
-      //%%CALLOUT CAUTION%%
+      --callout-color: 255, 160, 88;
 
-      //%%CALLOUT BACKGROUND%%
+      --callout-color: 131, 145, 237;
+      background-color: #9496ac66;
+      border: 1px solid rgba(158, 158, 158, 0.35);
+      border-color: rgba(158, 158, 158, 0.25);
+      border-radius: 14px;
+      border-style: solid;
+      border-width: 0px;
+      margin: calc(2em * 0.4) auto;
+      max-width: 700px;
+      min-width: 320px;
+      mix-blend-mode: normal;
+      overflow: hidden;
+      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
-      --callout-icon: var(--callout-icon-warning);
       background: var(--bg);
     }
     &[data-callout="attention"] {
-      //%%CALLOUT ATTENTION%%
+      --callout-color: 255, 160, 88;
 
-      //%%CALLOUT BACKGROUND%%
+      --callout-color: 131, 145, 237;
+      background-color: #9496ac66;
+      border: 1px solid rgba(158, 158, 158, 0.35);
+      border-color: rgba(158, 158, 158, 0.25);
+      border-radius: 14px;
+      border-style: solid;
+      border-width: 0px;
+      margin: calc(2em * 0.4) auto;
+      max-width: 700px;
+      min-width: 320px;
+      mix-blend-mode: normal;
+      overflow: hidden;
+      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
-      --callout-icon: var(--callout-icon-warning);
       background: var(--bg);
     }
     &[data-callout="failure"] {
-      //%%CALLOUT FAILURE%%
+      --callout-color: 255, 114, 114;
 
-      //%%CALLOUT BACKGROUND%%
+      --callout-color: 131, 145, 237;
+      background-color: #9496ac66;
+      border: 1px solid rgba(158, 158, 158, 0.35);
+      border-color: rgba(158, 158, 158, 0.25);
+      border-radius: 14px;
+      border-style: solid;
+      border-width: 0px;
+      margin: calc(2em * 0.4) auto;
+      max-width: 700px;
+      min-width: 320px;
+      mix-blend-mode: normal;
+      overflow: hidden;
+      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
-      --callout-icon: var(--callout-icon-failure);
       background: var(--bg);
     }
     &[data-callout="fail"] {
-      //%%CALLOUT FAIL%%
+      --callout-color: 255, 114, 114;
 
-      //%%CALLOUT BACKGROUND%%
+      --callout-color: 131, 145, 237;
+      background-color: #9496ac66;
+      border: 1px solid rgba(158, 158, 158, 0.35);
+      border-color: rgba(158, 158, 158, 0.25);
+      border-radius: 14px;
+      border-style: solid;
+      border-width: 0px;
+      margin: calc(2em * 0.4) auto;
+      max-width: 700px;
+      min-width: 320px;
+      mix-blend-mode: normal;
+      overflow: hidden;
+      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
-      --callout-icon: var(--callout-icon-failure);
       background: var(--bg);
     }
     &[data-callout="missing"] {
-      //%%CALLOUT MISSING%%
+      --callout-color: 255, 114, 114;
 
-      //%%CALLOUT BACKGROUND%%
+      --callout-color: 131, 145, 237;
+      background-color: #9496ac66;
+      border: 1px solid rgba(158, 158, 158, 0.35);
+      border-color: rgba(158, 158, 158, 0.25);
+      border-radius: 14px;
+      border-style: solid;
+      border-width: 0px;
+      margin: calc(2em * 0.4) auto;
+      max-width: 700px;
+      min-width: 320px;
+      mix-blend-mode: normal;
+      overflow: hidden;
+      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
-      --callout-icon: var(--callout-icon-failure);
       background: var(--bg);
     }
     &[data-callout="danger"] {
-      //%%CALLOUT DANGER%%
+      --callout-color: 255, 160, 88;
 
-      //%%CALLOUT BACKGROUND%%
+      --callout-color: 131, 145, 237;
+      background-color: #9496ac66;
+      border: 1px solid rgba(158, 158, 158, 0.35);
+      border-color: rgba(158, 158, 158, 0.25);
+      border-radius: 14px;
+      border-style: solid;
+      border-width: 0px;
+      margin: calc(2em * 0.4) auto;
+      max-width: 700px;
+      min-width: 320px;
+      mix-blend-mode: normal;
+      overflow: hidden;
+      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
-      --callout-icon: var(--callout-icon-danger);
       background: var(--bg);
     }
     &[data-callout="error"] {
-      //%%CALLOUT ERROR%%
+      --callout-color: 255, 160, 88;
 
-      //%%CALLOUT BACKGROUND%%
+      --callout-color: 131, 145, 237;
+      background-color: #9496ac66;
+      border: 1px solid rgba(158, 158, 158, 0.35);
+      border-color: rgba(158, 158, 158, 0.25);
+      border-radius: 14px;
+      border-style: solid;
+      border-width: 0px;
+      margin: calc(2em * 0.4) auto;
+      max-width: 700px;
+      min-width: 320px;
+      mix-blend-mode: normal;
+      overflow: hidden;
+      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
-      --callout-icon: var(--callout-icon-danger);
       background: var(--bg);
     }
     &[data-callout="bug"] {
-      //%%CALLOUT BUG%%
+      --callout-color: 233, 145, 196;
 
-      //%%CALLOUT BACKGROUND%%
+      --callout-color: 131, 145, 237;
+      background-color: #9496ac66;
+      border: 1px solid rgba(158, 158, 158, 0.35);
+      border-color: rgba(158, 158, 158, 0.25);
+      border-radius: 14px;
+      border-style: solid;
+      border-width: 0px;
+      margin: calc(2em * 0.4) auto;
+      max-width: 700px;
+      min-width: 320px;
+      mix-blend-mode: normal;
+      overflow: hidden;
+      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
-      --callout-icon: var(--callout-icon-bug);
       background: var(--bg);
     }
     &[data-callout="example"] {
-      //%%CALLOUT EXAMPLE%%
+      --callout-color: 183, 140, 218;
 
-      //%%CALLOUT BACKGROUND%%
+      --callout-color: 131, 145, 237;
+      background-color: #9496ac66;
+      border: 1px solid rgba(158, 158, 158, 0.35);
+      border-color: rgba(158, 158, 158, 0.25);
+      border-radius: 14px;
+      border-style: solid;
+      border-width: 0px;
+      margin: calc(2em * 0.4) auto;
+      max-width: 700px;
+      min-width: 320px;
+      mix-blend-mode: normal;
+      overflow: hidden;
+      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
-      --callout-icon: var(--callout-icon-example);
       background: var(--bg);
     }
     &[data-callout="quote"] {
-      //%%CALLOUT QUOTE%%
+      --callout-color: 158, 158, 158;
+      clear: right;
+      display: flexbox;
+      float: right;
+      height: flex;
+      margin: 1em;
+      max-width: 35%;
+      min-width: 20%;
+      width: flex;
 
-      //%%CALLOUT BACKGROUND%%
+      --callout-color: 131, 145, 237;
+      background-color: #9496ac66;
+      border: 1px solid rgba(158, 158, 158, 0.35);
+      border-color: rgba(158, 158, 158, 0.25);
+      border-radius: 14px;
+      border-style: solid;
+      border-width: 0px;
+      margin: calc(2em * 0.4) auto;
+      max-width: 700px;
+      min-width: 320px;
+      mix-blend-mode: normal;
+      overflow: hidden;
+      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
-      --callout-icon: var(--callout-icon-quote);
       background: var(--bg);
     }
     &[data-callout="cite"] {
-      //%%CALLOUT CITE%%
+      --callout-color: 158, 158, 158;
+      clear: right;
+      display: flexbox;
+      float: right;
+      height: flex;
+      margin: 1em;
+      max-width: 35%;
+      min-width: 20%;
+      width: flex;
 
-      //%%CALLOUT BACKGROUND%%
+      --callout-color: 131, 145, 237;
+      background-color: #9496ac66;
+      border: 1px solid rgba(158, 158, 158, 0.35);
+      border-color: rgba(158, 158, 158, 0.25);
+      border-radius: 14px;
+      border-style: solid;
+      border-width: 0px;
+      margin: calc(2em * 0.4) auto;
+      max-width: 700px;
+      min-width: 320px;
+      mix-blend-mode: normal;
+      overflow: hidden;
+      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
-      --callout-icon: var(--callout-icon-quote);
       background: var(--bg);
     }
   }
 
   .callout-title {
-    
-    //%%CALLOUT TITLE%%
+    align-items: flex-start;
+    background-color: rgba(158, 158, 158, 0.08);
+    color: rgb(158, 158, 158);
+    display: flex;
+    font-size: inherit;
+    gap: 4px;
+    line-height: 1.3;
+    margin: 0px auto;
+    padding: 12px;
+    width: 100%;
 
     background: var(--bg);
 
     & > .callout-title-inner > p {
-
-      //%%CALLOUT TITLE INNER%%
+      --font-weight: calc(var(--font-weight) + 200);
+      color: inherit;
+      display: block;
+      font-size: 1.25em;
+      font-weight: 400;
+      margin: auto;
+      width: fit-content;
 
       color: var(--color);
     }
 
     .callout-title-inner {
-
-      //%%CALLOUT TITLE INNER%%
-
+      --font-weight: calc(var(--font-weight) + 200);
+      color: inherit;
+      display: block;
+      font-size: 1.25em;
+      font-weight: 400;
+      margin: auto;
+      width: fit-content;
     }
-
   }
 
   & > .callout-content {
-    
-    //%%CALLOUT CONTENT%%
-
+    background-color: transparent;
+    overflow-x: auto;
+    padding: 0;
   }
 }
-
 body {
-  --quartz-text-highlight: var(--text-highlight-bg, var(--background-modifier-hover)) !important;
+  --quartz-text-highlight: var(
+    --text-highlight-bg,
+    var(--background-modifier-hover)
+  ) !important;
 
-  //%%WORKSPACE BACKGROUND ROOT%%
+  background-color: hsla(237, 10%, 97%, 75%);
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -547,7 +1718,7 @@ body {
       background-color: var(--background-primary);
     }
   }
-  
+
   @media all and ($mobile) {
     div.flex-component > div:has(> button.readermode) {
       display: none;
@@ -565,14 +1736,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-
-      //%%WORKSPACE BACKGROUND ROOT%%
+      background-color: hsla(237, 10%, 97%, 75%);
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        //%%WORKSPACE BACKGROUND ROOT%%
+        background-color: hsla(237, 10%, 97%, 75%);
 
         background-color: var(--background-primary);
       }
@@ -581,8 +1751,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-
-          //%%WORKSPACE BACKGROUND ROOT%%
+          background-color: hsla(237, 10%, 97%, 75%);
 
           background-color: var(--background-secondary);
 
@@ -636,16 +1805,22 @@ body {
     }
     &.internal {
       color: var(--text-a, var(--link-color));
-      background-color: color-mix(in srgb, var(--text-a, var(--link-color)), #0000 85%);
+      background-color: color-mix(
+        in srgb,
+        var(--text-a, var(--link-color)),
+        #0000 85%
+      );
       &.tag-link {
         --highlight-fallback: 258, 88%, 66%;
-        --textHighlight-fallback: 255, 208, 0;
         color: var(--tag-color, var(--text-accent));
         text-decoration: var(--tag-decoration, none);
         background-color: var(
           --tag-background,
           hsla(
-            var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))),
+            var(
+              --interactive-accent-hsl,
+              var(--color-accent-hsl, var(--highlight-fallback))
+            ),
             0.1
           )
         );
@@ -761,72 +1936,126 @@ body {
 
   /* HEADINGS */
   h1 {
+    --font-weight: 700;
+    color: rgb(84, 186, 182);
+    font-family:
+      "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+      Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    line-height: 1.2;
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
 
-    //%%H1%%
-  
     font-size: 2rem;
   }
   h1 a {
-
-    //%%H1 A%%
-
+    --link-weight: 700;
   }
   h2.page-title,
   h2.page-title a,
   h2 {
-
-    //%%H2%%
+    --font-weight: 700;
+    color: rgb(131, 145, 237);
+    font-family:
+      "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+      Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+    font-size: 2.35em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    line-height: 1.2;
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
 
     font-size: 1.75rem;
   }
   h2 a {
-
-    //%%H2 A%%
-
+    --link-weight: 700;
   }
   h3 {
-
-    //%%H3%%
+    --font-weight: 700;
+    color: rgb(183, 140, 218);
+    font-family:
+      "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+      Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+    font-size: 2em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    line-height: 1.3;
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
 
     font-size: 1.6rem;
   }
   h3 a {
-
-    //%%H3 A%%
-
+    --link-weight: 700;
   }
   h4 {
-
-    //%%H4%%
+    --font-weight: 700;
+    color: rgb(233, 145, 196);
+    font-family:
+      "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+      Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+    font-size: 1.75em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    letter-spacing: 0.015em;
+    line-height: 1.4;
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
 
     font-size: 1.4rem;
   }
   h4 a {
-
-    //%%H4 A%%
-
+    --link-weight: 700;
   }
   h5 {
-
-    //%%H5%%
+    --font-weight: 700;
+    color: rgb(255, 114, 114);
+    font-family:
+      "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+      Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+    font-size: 1.5em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    letter-spacing: 0.015em;
+    line-height: 1.5;
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
 
     font-size: 1.2rem;
   }
   h5 a {
-
-    //%%H5 A%%
-
+    --link-weight: 700;
   }
   h6 {
-
-    //%%H6%%
+    --font-weight: 700;
+    color: rgb(255, 160, 88);
+    font-family:
+      "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+      Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+    font-size: 1.25em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    letter-spacing: 0.015em;
+    line-height: 1.5;
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
 
     font-size: 1.1rem;
   }
   h6 a {
-
-    //%%H6 A%%
-
+    --link-weight: 700;
   }
   h1,
   h1 a,
@@ -848,14 +2077,22 @@ body {
   /* CODE */
   figure[data-rehype-pretty-code-figure] pre,
   pre {
-
-    //%%PRE%%
+    background-color: hsl(220, 9%, 95%);
+    border: 1px solid #d9dde8;
+    border-radius: 7px;
+    box-shadow: none;
+    min-height: 38px;
+    overflow-x: auto;
+    padding: 2em;
+    position: relative;
+    white-space: pre-wrap;
 
     background-color: var(--code-background);
     white-space: pre;
     & > code {
-
-      //%%CODE%%
+      background-color: transparent;
+      border: none;
+      padding: 0;
 
       span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
         //color: var(--code-value) !important;
@@ -906,29 +2143,41 @@ body {
         color: var(--color-red) !important;
       }
 
-      background-color: transparent; 
+      background-color: transparent;
       color: var(--code-normal);
       font-family: var(--codeFont, var(--font-monospace));
     }
   }
 
   code {
-
-    //%%CODE INLINE%%
+    -webkit-box-decoration-break: clone;
+    background-color: hsl(220, 9%, 95%);
+    border: 0px solid #d9dde8;
+    border-radius: 7px;
+    color: #3e3a4f;
+    font-family: "DM Mono", monospace;
+    font-size: 1em;
+    line-height: 1em;
+    padding: 0.15em 0.3em;
 
     background-color: var(--code-background);
     color: var(--code-normal);
     font-family: var(--codeFont, var(--font-monospace));
   }
   .clipboard-button {
-
-    //%%CLIPBOARD BUTTON%%
-
-    &:hover {
-
-      //%%CLIPBOARD BUTTON HOVER%%
-
-    }
+    background-color: transparent;
+    box-shadow: none;
+    color: #6d6b78;
+    font-family:
+      "??", "??", var(--default-font, "??"), "Nunito Sans", "Noto Color Emoji",
+      Inter, sans-serif;
+    font-size: calc(16px * 0.8);
+    height: auto;
+    inset-inline-end: 0;
+    margin: 6px;
+    padding: 6px 8px;
+    position: absolute;
+    top: 0;
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
     }
@@ -936,35 +2185,48 @@ body {
 
   /* METADATA */
   .content-meta {
-
-    //%%CONTENT META%%
+    color: #3e3a4f;
+    cursor: text;
+    flex-grow: 1;
+    font-size: calc(16px * 0.937);
+    max-height: 300px;
+    padding: 4px 8px;
+    unicode-bidi: plaintext;
+    white-space: pre-wrap;
 
     color: var(--text-normal);
   }
 
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-
-    //%%BREADCRUMB SEPARATOR COLOR%%
-    
+    color: #787689;
+    padding: 2px 1px;
   }
 
   /* BACKLINKS */
   .backlinks {
     h3 {
-
-      //%%H3%%
-
+      --font-weight: 700;
+      color: rgb(183, 140, 218);
+      font-family:
+        "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+        Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+      font-size: 2em;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      line-height: 1.3;
+      margin-block-end: 0rem;
+      margin-block-start: 0rem;
     }
 
     ul li {
+      color: #3e3a4f;
+      padding-inline-start: 8px;
 
-      //%%BACKLINK COLOR%%
-
-      //%%BACKLINK WEIGHT%%
-
+      font-weight: 500;
     }
-
   }
 
   /* EXPLORER */
@@ -979,14 +2241,23 @@ body {
     }
     button.explorer-toggle,
     h2 {
-
-      //%%EXPLORER BUTTON HEADING COLOR%%
-
+      --font-weight: 700;
+      color: rgb(131, 145, 237);
+      font-family:
+        "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+        Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+      font-size: 2.35em;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      line-height: 1.2;
+      margin-block-end: 0rem;
+      margin-block-start: 0rem;
     }
     .explorer-content {
       @media all and ($mobile) {
-
-        //%%WORKSPACE BACKGROUND ROOT%%
+        background-color: hsla(237, 10%, 97%, 75%);
 
         background-color: var(--background-secondary);
 
@@ -997,7 +2268,15 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        //%%EXPLORER FOLDER ICON COLOR%%
+        align-items: center;
+        color: hsl(232, 75%, 70%);
+        display: flex;
+        flex: 0 0 auto;
+        justify-content: center;
+        margin-inline-start: calc(-1 * 20px);
+        opacity: 1;
+        position: absolute;
+        width: 16px;
 
         text-overflow: ellipsis;
         position: relative;
@@ -1019,14 +2298,16 @@ body {
           display: flex;
           align-self: center;
           background: var(--icon-color);
-          content: '';
+          content: "";
         }
         & > div {
           width: 100%;
         }
         &:hover {
-
-          //%%EXPLORER FILE TITLE ACTIVE%%
+          background-color: transparent;
+          border-left: 3px hsl(232, 75%, 70%) solid;
+          color: #3e3a4f;
+          font-weight: inherit;
 
           font-size: 1rem;
           line-height: 1.5rem;
@@ -1045,17 +2326,34 @@ body {
         -webkit-mask-image: var(--folder-open-icon);
       }
       .folder-outer > ul.content {
-
-        //%%EXPLORER FOLDER CONTENT%%
-
+        border-inline-start: 0px solidtransparent;
+        margin-bottom: 1px;
+        margin-inline-start: var(
+          --nav-item-children-margin-start,
+          var(--nav-item-children-margin-left)
+        );
+        padding-inline-start: var(
+          --nav-item-children-padding-start,
+          var(--nav-item-children-padding-left)
+        );
       }
       ul.explorer-ul li {
         text-overflow: ellipsis;
         position: relative;
 
         a {
-
-          //%%EXPLORER FILE TITLE%%
+          border-radius: 0px;
+          color: #3e3a4f;
+          cursor: pointer;
+          display: flex;
+          font-size: 0.86em;
+          font-weight: 300;
+          line-height: 1.3;
+          margin-bottom: 2px;
+          padding: 6px 8px 6px24px;
+          padding-bottom: 6.6px;
+          padding-top: 6.6px;
+          transition: font-size 65ms;
 
           color: inherit;
           font-size: 1rem;
@@ -1089,7 +2387,7 @@ body {
           height: 1rem;
           min-width: 1rem;
           min-height: 1rem;
-          content: '';
+          content: "";
           display: flex;
           align-self: center;
           background: var(--icon-color);
@@ -1103,31 +2401,59 @@ body {
 
   /* TOC */
   .toc {
-
-    //%%TOC H3 COLOR%%
+    --font-weight: 700;
+    color: rgb(183, 140, 218);
+    font-family:
+      "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+      Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+    font-size: 2em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    line-height: 1.3;
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
 
     button.toc-header {
       h3 {
-
-        //%%H3%%
+        --font-weight: 700;
+        color: rgb(183, 140, 218);
+        font-family:
+          "Merriweather Sans", "Book Antiqua", "Nunito Sans",
+          "Noto Color Emoji", Inter, sans-serif, "Nunito Sans",
+          "Noto Color Emoji", Inter, sans-serif;
+        font-size: 2em;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 700;
+        letter-spacing: -0.015em;
+        line-height: 1.3;
+        margin-block-end: 0rem;
+        margin-block-start: 0rem;
 
         margin-block: 0;
       }
 
-      //%%TOC H3 COLOR%%
+      --font-weight: 700;
+      color: rgb(183, 140, 218);
+      font-family:
+        "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+        Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+      font-size: 2em;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      line-height: 1.3;
+      margin-block-end: 0rem;
+      margin-block-start: 0rem;
 
       color: inherit;
     }
     ul.toc-content.overflow {
       li,
       li > a {
-      
-        //%%TOC ITEM COLOR%%
-
-        //%%TOC ITEM FONT WEIGHT%%
-
-        //%%TOC ITEM FONT SIZE%%
-
         color: inherit;
       }
     }
@@ -1138,8 +2464,19 @@ body {
   .graph,
   .toc {
     h3 {
-
-      //%%H3%%
+      --font-weight: 700;
+      color: rgb(183, 140, 218);
+      font-family:
+        "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+        Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+      font-size: 2em;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      line-height: 1.3;
+      margin-block-end: 0rem;
+      margin-block-start: 0rem;
 
       min-height: calc(2 * var(--p-spacing) + var(--h3-line-height));
       margin-block: 0;
@@ -1152,7 +2489,7 @@ body {
       display: none;
     }
     /* lucide book-open icon */
-    --readermode-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJvb2stb3Blbi1pY29uIGx1Y2lkZS1ib29rLW9wZW4iPjxwYXRoIGQ9Ik0xMiA3djE0Ii8+PHBhdGggZD0iTTMgMThhMSAxIDAgMCAxLTEtMVY0YTEgMSAwIDAgMSAxLTFoNWE0IDQgMCAwIDEgNCA0IDQgNCAwIDAgMSA0LTRoNWExIDEgMCAwIDEgMSAxdjEzYTEgMSAwIDAgMS0xIDFoLTZhMyAzIDAgMCAwLTMgMyAzIDMgMCAwIDAtMy0zeiIvPjwvc3ZnPg==');
+    --readermode-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJvb2stb3Blbi1pY29uIGx1Y2lkZS1ib29rLW9wZW4iPjxwYXRoIGQ9Ik0xMiA3djE0Ii8+PHBhdGggZD0iTTMgMThhMSAxIDAgMCAxLTEtMVY0YTEgMSAwIDAgMSAxLTFoNWE0IDQgMCAwIDEgNCA0IDQgNCAwIDAgMSA0LTRoNWExIDEgMCAwIDEgMSAxdjEzYTEgMSAwIDAgMS0xIDFoLTZhMyAzIDAgMCAwLTMgMyAzIDMgMCAwIDAtMy0zeiIvPjwvc3ZnPg==");
     background: var(--icon-color) !important;
     mask-image: var(--readermode-icon);
     -webkit-mask-image: var(--readermode-icon);
@@ -1165,7 +2502,7 @@ body {
       display: none;
     }
     /* lucide git-fork icon */
-    --graph-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWdpdC1mb3JrLWljb24gbHVjaWRlLWdpdC1mb3JrIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjE4IiByPSIzIi8+PGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjMiLz48Y2lyY2xlIGN4PSIxOCIgY3k9IjYiIHI9IjMiLz48cGF0aCBkPSJNMTggOXYyYzAgLjYtLjQgMS0xIDFIN2MtLjYgMC0xLS40LTEtMVY5Ii8+PHBhdGggZD0iTTEyIDEydjMiLz48L3N2Zz4=');
+    --graph-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWdpdC1mb3JrLWljb24gbHVjaWRlLWdpdC1mb3JrIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjE4IiByPSIzIi8+PGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjMiLz48Y2lyY2xlIGN4PSIxOCIgY3k9IjYiIHI9IjMiLz48cGF0aCBkPSJNMTggOXYyYzAgLjYtLjQgMS0xIDFIN2MtLjYgMC0xLS40LTEtMVY5Ii8+PHBhdGggZD0iTTEyIDEydjMiLz48L3N2Zz4=");
     background: var(--icon-color) !important;
     mask-image: var(--graph-icon);
     -webkit-mask-image: var(--graph-icon);
@@ -1178,9 +2515,9 @@ body {
       display: none !important;
     }
     /* lucide moon icon */
-    --moon-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLW1vb24taWNvbiBsdWNpZGUtbW9vbiI+PHBhdGggZD0iTTEyIDNhNiA2IDAgMCAwIDkgOSA5IDkgMCAxIDEtOS05WiIvPjwvc3ZnPg==');
+    --moon-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLW1vb24taWNvbiBsdWNpZGUtbW9vbiI+PHBhdGggZD0iTTEyIDNhNiA2IDAgMCAwIDkgOSA5IDkgMCAxIDEtOS05WiIvPjwvc3ZnPg==");
     /* lucide sun icon */
-    --sun-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXN1bi1pY29uIGx1Y2lkZS1zdW4iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjQiLz48cGF0aCBkPSJNMTIgMnYyIi8+PHBhdGggZD0iTTEyIDIwdjIiLz48cGF0aCBkPSJtNC45MyA0LjkzIDEuNDEgMS40MSIvPjxwYXRoIGQ9Im0xNy42NiAxNy42NiAxLjQxIDEuNDEiLz48cGF0aCBkPSJNMiAxMmgyIi8+PHBhdGggZD0iTTIwIDEyaDIiLz48cGF0aCBkPSJtNi4zNCAxNy42Ni0xLjQxIDEuNDEiLz48cGF0aCBkPSJtMTkuMDcgNC45My0xLjQxIDEuNDEiLz48L3N2Zz4=');
+    --sun-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXN1bi1pY29uIGx1Y2lkZS1zdW4iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjQiLz48cGF0aCBkPSJNMTIgMnYyIi8+PHBhdGggZD0iTTEyIDIwdjIiLz48cGF0aCBkPSJtNC45MyA0LjkzIDEuNDEgMS40MSIvPjxwYXRoIGQ9Im0xNy42NiAxNy42NiAxLjQxIDEuNDEiLz48cGF0aCBkPSJNMiAxMmgyIi8+PHBhdGggZD0iTTIwIDEyaDIiLz48cGF0aCBkPSJtNi4zNCAxNy42Ni0xLjQxIDEuNDEiLz48cGF0aCBkPSJtMTkuMDcgNC45My0xLjQxIDEuNDEiLz48L3N2Zz4=");
     background: var(--icon-color) !important;
     width: 24px;
     height: 24px;
@@ -1201,7 +2538,16 @@ body {
       background: var(--button-secondary-bg-color);
       color: var(--button-secondary-fg-color);
 
-      //%%SEARCH BUTTON%%
+      -webkit-app-region: no-drag;
+      background: #d9dde8;
+      border: 1px solid #d9dde8;
+      border-radius: 5px;
+      color: #3e3a4f;
+      font-family: inherit;
+      font-size: calc(16px * 0.937);
+      height: 40px;
+      outline: none;
+      padding: 4px 8px;
 
       font-size: 1rem;
       svg {
@@ -1211,17 +2557,80 @@ body {
     }
     & > .search-container {
       & > .search-space {
-          //%%SEARCH BACKGROUND COLOR%%
-          //%%SEARCH BORDER%%
-          //%%SEARCH BORDER RADIUS%%
-          //%%SEARCH SHADOW%%
+        animation: slide-down 0.25s;
+        background-color: hsla(237, 10%, 97%, 75%);
+        border: 0.5pt solid var(--color-base-40, hsl(242, 19%, 72%));
+        border-radius: 19px;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+        max-height: 70vh;
+        max-width: 80vw;
+        overflow: hidden;
+        position: absolute;
+        top: 80px;
+        width: 700px;
+        z-index: 1;
 
-          color: var(--text-normal);
-          background-color: var(--background-secondary);
-          border-color: var(--background-modifier-border, var(--color-base-35));
-          margin: 12vh auto;
+        animation: slide-down 0.25s;
+        background-color: hsla(237, 10%, 97%, 75%);
+        border: 0.5pt solid var(--color-base-40, hsl(242, 19%, 72%));
+        border-radius: 19px;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+        max-height: 70vh;
+        max-width: 80vw;
+        overflow: hidden;
+        position: absolute;
+        top: 80px;
+        width: 700px;
+        z-index: 1;
+
+        animation: slide-down 0.25s;
+        background-color: hsla(237, 10%, 97%, 75%);
+        border: 0.5pt solid var(--color-base-40, hsl(242, 19%, 72%));
+        border-radius: 19px;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+        max-height: 70vh;
+        max-width: 80vw;
+        overflow: hidden;
+        position: absolute;
+        top: 80px;
+        width: 700px;
+        z-index: 1;
+
+        animation: slide-down 0.25s;
+        background-color: hsla(237, 10%, 97%, 75%);
+        border: 0.5pt solid var(--color-base-40, hsl(242, 19%, 72%));
+        border-radius: 19px;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+        max-height: 70vh;
+        max-width: 80vw;
+        overflow: hidden;
+        position: absolute;
+        top: 80px;
+        width: 700px;
+        z-index: 1;
+
+        color: var(--text-normal);
+        background-color: var(--background-secondary);
+        border-color: var(--background-modifier-border, var(--color-base-35));
+        margin: 12vh auto;
         & > input {
-          //%%SEARCH INPUT%%
+          background-color: hsla(237, 10%, 97%, 75%);
+          border: none;
+          border-bottom: 1px solid hsl(229, 14%, 91%);
+          border-radius: 0;
+          font-size: 16px;
+          height: 48px;
+          padding: 24px;
+          padding-inline-end: 48px;
+          width: 100%;
 
           margin-bottom: 0;
           border-bottom: none;
@@ -1229,7 +2638,147 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          //%%BODY COLOR%%
+          --background-modifier-border: #9496ac66;
+          --background-modifier-border-focus: hsl(242, 19%, 72%);
+          --background-modifier-border-hover: hsl(220, 5%, 78%);
+          --background-modifier-hover: rgba(255, 255, 255, 0.067);
+          --background-primary: hsla(237, 10%, 97%, 75%);
+          --background-primary-alt: hsl(220, 9%, 95%);
+          --background-secondary: hsl(229, 14%, 91%);
+          --bold-color: inherit;
+          --bold-weight: calc(700 + 200);
+          --checkbox-border-color: rgb(255, 114, 114);
+          --checkbox-border-color-hover: #6d6b78;
+          --checkbox-color: transparent;
+          --checkbox-color-hover: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+          --checkbox-marker-color: hsla(237, 10%, 97%, 75%);
+          --checkbox-radius: 14px;
+          --checkbox-size: 18px;
+          --code-background: hsl(220, 9%, 95%);
+          --code-comment: #787689;
+          --code-function: rgb(219, 202, 103);
+          --code-important: rgb(255, 160, 88);
+          --code-keyword: rgb(233, 145, 196);
+          --code-normal: #3e3a4f;
+          --code-property: rgb(84, 186, 182);
+          --code-punctuation: #6d6b78;
+          --code-string: rgb(132, 204, 124);
+          --code-tag: rgb(255, 114, 114);
+          --code-value: rgb(183, 140, 218);
+          --collapse-icon-color: #787689;
+          --collapse-icon-color-collapsed: hsl(
+            calc(232 - 4),
+            75%,
+            calc(70% - 2%)
+          );
+          --color-accent-2: light-dark(
+            hsl(calc(232 - 3), calc(75% * 1.02), calc(70% * 1.15)),
+            hsl(calc(232 - 5), calc(75% * 1.05), calc(70% * 1.29))
+          );
+          --color-accent-hsl: light-dark(232, 75%, 70%, 232, 75%, 70%);
+          --color-base-00: light-dark(#ffffff, #1e1e1e);
+          --color-base-10: light-dark(#fafafa, #242424);
+          --color-base-100: light-dark(#222222, #dadada);
+          --color-base-20: light-dark(#f6f6f6, #262626);
+          --color-base-30: light-dark(#e0e0e0, #363636);
+          --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+          --color-base-40: light-dark(#bdbdbd, #555555);
+          --color-base-50: light-dark(#ababab, #666666);
+          --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+          --color-blue: light-dark(#086ddd, #027aff);
+          --color-cyan: light-dark(#00bfbc, #53dfdd);
+          --color-green: light-dark(#08b94e, #44cf6e);
+          --color-orange: light-dark(#ec7500, #e9973f);
+          --color-pink: light-dark(#d53984, #fa99cd);
+          --color-purple: light-dark(#7852ee, #a882ff);
+          --color-red: light-dark(#e93147, #fb464c);
+          --color-yellow: light-dark(#e0ac00, #e0de71);
+          --cursor-link: pointer;
+          --font-default: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+          --font-monospace: "DM Mono", monospace;
+          --font-text:
+            "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+          --font-weight: 400;
+          --graph-line: var(--color-base-35, hsl(242, 19%, 72%));
+          --graph-node-tag: rgb(132, 204, 124);
+          --graph-node-unresolved: #787689;
+          --h1-color: inherit;
+          --h1-font:
+            "Merriweather Sans", "Book Antiqua", "Nunito Sans",
+            "Noto Color Emoji", Inter, sans-serif, "Nunito Sans",
+            "Noto Color Emoji", Inter, sans-serif;
+          --h3-line-height: 1.3;
+          --hr-color: #d9dde8;
+          --hr-thickness: 2px;
+          --icon-color: #6d6b78;
+          --inline-title-color: #3e3a4f;
+          --inline-title-font:
+            "Merriweather Sans", "Book Antiqua", "Nunito Sans",
+            "Noto Color Emoji", Inter, sans-serif, "Nunito Sans",
+            "Noto Color Emoji", Inter, sans-serif;
+          --interactive-accent-hsl: 232, 75%, 70%;
+          --italic-color: inherit;
+          --link-color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+          --link-color-hover: hsl(
+            calc(232 + 2),
+            calc(75% + 5%),
+            calc(70% + 4%)
+          );
+          --link-external-color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+          --link-external-color-hover: hsl(
+            calc(232 + 2),
+            calc(75% + 5%),
+            calc(70% + 4%)
+          );
+          --link-external-filter: none;
+          --link-weight: var(--link-weight);
+          --nav-item-background-hover: rgba(255, 255, 255, 0.15);
+          --nav-item-children-margin-start: 12px;
+          --nav-item-children-padding-start: 4px;
+          --p-spacing: 1rem;
+          --search-icon-color: #6d6b78;
+          --tag-background: hsla(232, 75%, 70%, 0.1);
+          --tag-background-hover: hsla(232, 75%, 70%, 0.2);
+          --tag-border-color: hsla(232, 75%, 70%, 0.15);
+          --tag-border-color-hover: hsla(232, 75%, 70%, 0.15);
+          --tag-border-width: 0px;
+          --tag-color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+          --tag-color-hover: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+          --tag-decoration: none;
+          --tag-decoration-hover: none;
+          --tag-radius: 2em;
+          --tag-weight: inherit;
+          --text-accent: hsl(232, 75%, 70%);
+          --text-accent-hover: hsl(
+            calc(232 + 2),
+            calc(75% + 5%),
+            calc(70% + 4%)
+          );
+          --text-faint: #787689;
+          --text-highlight-bg: rgba(255, 208, 0, 0.4);
+          --text-muted: #6d6b78;
+          --text-normal: #3e3a4f;
+          -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+          -webkit-user-select: none;
+          background-color: hsla(237, 10%, 97%, 75%);
+          caret-color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+          color: #3e3a4f;
+          contain: initial;
+          font-family:
+            "??", "??", var(--default-font, "??"), "Nunito Sans",
+            "Noto Color Emoji", Inter, sans-serif;
+          font-size: 16px;
+          height: 100%;
+          line-height: 1.3;
+          margin: 0;
+          overflow: auto;
+          overscroll-behavior: none;
+          padding: 0;
+          padding-top: 0;
+          text-rendering: optimizeLegibility;
+          user-select: none;
+          width: 100%;
+
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1237,22 +2786,33 @@ body {
         & > .search-layout {
           border-color: var(--background-modifier-border, var(--color-base-35));
           &.display-results {
-            border-color: var(--background-modifier-border, var(--color-base-35));
+            border-color: var(
+              --background-modifier-border,
+              var(--color-base-35)
+            );
             border-top-left-radius: 0;
             border-top-right-radius: 0;
           }
           & .highlight {
-            //%%SEARCH HIGHLIGHT%%
+            background-color: transparent;
+            color: hsl(232, 75%, 70%);
+            font-weight: bold;
 
-            background-color: var(--quartz-text-highlight)
+            background-color: var(--quartz-text-highlight);
           }
           & > .preview-container {
             color: var(--text-normal);
           }
           & > .results-container {
-            border-color: var(--background-modifier-border, var(--color-base-35));
+            border-color: var(
+              --background-modifier-border,
+              var(--color-base-35)
+            );
             & .result-card {
-              border-color: var(--background-modifier-border, var(--color-base-35));
+              border-color: var(
+                --background-modifier-border,
+                var(--color-base-35)
+              );
               @media all and not ($mobile) {
                 display: flex;
                 &.no-match {
@@ -1262,13 +2822,167 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                //%%SEARCH RESULT HOVER BACKGROUND%%
+                background-color: rgba(255, 255, 255, 0.15);
               }
               & > ul > li > p {
                 background-color: transparent;
-                //%%BODY COLOR%%
+                --background-modifier-border: #9496ac66;
+                --background-modifier-border-focus: hsl(242, 19%, 72%);
+                --background-modifier-border-hover: hsl(220, 5%, 78%);
+                --background-modifier-hover: rgba(255, 255, 255, 0.067);
+                --background-primary: hsla(237, 10%, 97%, 75%);
+                --background-primary-alt: hsl(220, 9%, 95%);
+                --background-secondary: hsl(229, 14%, 91%);
+                --bold-color: inherit;
+                --bold-weight: calc(700 + 200);
+                --checkbox-border-color: rgb(255, 114, 114);
+                --checkbox-border-color-hover: #6d6b78;
+                --checkbox-color: transparent;
+                --checkbox-color-hover: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+                --checkbox-marker-color: hsla(237, 10%, 97%, 75%);
+                --checkbox-radius: 14px;
+                --checkbox-size: 18px;
+                --code-background: hsl(220, 9%, 95%);
+                --code-comment: #787689;
+                --code-function: rgb(219, 202, 103);
+                --code-important: rgb(255, 160, 88);
+                --code-keyword: rgb(233, 145, 196);
+                --code-normal: #3e3a4f;
+                --code-property: rgb(84, 186, 182);
+                --code-punctuation: #6d6b78;
+                --code-string: rgb(132, 204, 124);
+                --code-tag: rgb(255, 114, 114);
+                --code-value: rgb(183, 140, 218);
+                --collapse-icon-color: #787689;
+                --collapse-icon-color-collapsed: hsl(
+                  calc(232 - 4),
+                  75%,
+                  calc(70% - 2%)
+                );
+                --color-accent-2: light-dark(
+                  hsl(calc(232 - 3), calc(75% * 1.02), calc(70% * 1.15)),
+                  hsl(calc(232 - 5), calc(75% * 1.05), calc(70% * 1.29))
+                );
+                --color-accent-hsl: light-dark(232, 75%, 70%, 232, 75%, 70%);
+                --color-base-00: light-dark(#ffffff, #1e1e1e);
+                --color-base-10: light-dark(#fafafa, #242424);
+                --color-base-100: light-dark(#222222, #dadada);
+                --color-base-20: light-dark(#f6f6f6, #262626);
+                --color-base-30: light-dark(#e0e0e0, #363636);
+                --color-base-35: light-dark(#d4d4d4, #3f3f3f);
+                --color-base-40: light-dark(#bdbdbd, #555555);
+                --color-base-50: light-dark(#ababab, #666666);
+                --color-base-70: light-dark(#5c5c5c, #b3b3b3);
+                --color-blue: light-dark(#086ddd, #027aff);
+                --color-cyan: light-dark(#00bfbc, #53dfdd);
+                --color-green: light-dark(#08b94e, #44cf6e);
+                --color-orange: light-dark(#ec7500, #e9973f);
+                --color-pink: light-dark(#d53984, #fa99cd);
+                --color-purple: light-dark(#7852ee, #a882ff);
+                --color-red: light-dark(#e93147, #fb464c);
+                --color-yellow: light-dark(#e0ac00, #e0de71);
+                --cursor-link: pointer;
+                --font-default:
+                  "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+                --font-monospace: "DM Mono", monospace;
+                --font-text:
+                  "??", "??", "Nunito Sans", "Noto Color Emoji", Inter,
+                  sans-serif;
+                --font-weight: 400;
+                --graph-line: var(--color-base-35, hsl(242, 19%, 72%));
+                --graph-node-tag: rgb(132, 204, 124);
+                --graph-node-unresolved: #787689;
+                --h1-color: inherit;
+                --h1-font:
+                  "Merriweather Sans", "Book Antiqua", "Nunito Sans",
+                  "Noto Color Emoji", Inter, sans-serif, "Nunito Sans",
+                  "Noto Color Emoji", Inter, sans-serif;
+                --h3-line-height: 1.3;
+                --hr-color: #d9dde8;
+                --hr-thickness: 2px;
+                --icon-color: #6d6b78;
+                --inline-title-color: #3e3a4f;
+                --inline-title-font:
+                  "Merriweather Sans", "Book Antiqua", "Nunito Sans",
+                  "Noto Color Emoji", Inter, sans-serif, "Nunito Sans",
+                  "Noto Color Emoji", Inter, sans-serif;
+                --interactive-accent-hsl: 232, 75%, 70%;
+                --italic-color: inherit;
+                --link-color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+                --link-color-hover: hsl(
+                  calc(232 + 2),
+                  calc(75% + 5%),
+                  calc(70% + 4%)
+                );
+                --link-external-color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+                --link-external-color-hover: hsl(
+                  calc(232 + 2),
+                  calc(75% + 5%),
+                  calc(70% + 4%)
+                );
+                --link-external-filter: none;
+                --link-weight: var(--link-weight);
+                --nav-item-background-hover: rgba(255, 255, 255, 0.15);
+                --nav-item-children-margin-start: 12px;
+                --nav-item-children-padding-start: 4px;
+                --p-spacing: 1rem;
+                --search-icon-color: #6d6b78;
+                --tag-background: hsla(232, 75%, 70%, 0.1);
+                --tag-background-hover: hsla(232, 75%, 70%, 0.2);
+                --tag-border-color: hsla(232, 75%, 70%, 0.15);
+                --tag-border-color-hover: hsla(232, 75%, 70%, 0.15);
+                --tag-border-width: 0px;
+                --tag-color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+                --tag-color-hover: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+                --tag-decoration: none;
+                --tag-decoration-hover: none;
+                --tag-radius: 2em;
+                --tag-weight: inherit;
+                --text-accent: hsl(232, 75%, 70%);
+                --text-accent-hover: hsl(
+                  calc(232 + 2),
+                  calc(75% + 5%),
+                  calc(70% + 4%)
+                );
+                --text-faint: #787689;
+                --text-highlight-bg: rgba(255, 208, 0, 0.4);
+                --text-muted: #6d6b78;
+                --text-normal: #3e3a4f;
+                -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+                -webkit-user-select: none;
+                background-color: hsla(237, 10%, 97%, 75%);
+                caret-color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+                color: #3e3a4f;
+                contain: initial;
+                font-family:
+                  "??", "??", var(--default-font, "??"), "Nunito Sans",
+                  "Noto Color Emoji", Inter, sans-serif;
+                font-size: 16px;
+                height: 100%;
+                line-height: 1.3;
+                margin: 0;
+                overflow: auto;
+                overscroll-behavior: none;
+                padding: 0;
+                padding-top: 0;
+                text-rendering: optimizeLegibility;
+                user-select: none;
+                width: 100%;
+
                 &.match-tag {
-                  //%%SEARCH RESULT TAG COLOR%%
+                  background-color: #9496ac66;
+                  border: 0.8px solid vaR(--background-modifier-border);
+                  border-radius: vaR(--radius-s);
+                  color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+                  font-family:
+                    "Merriweather Sans", "Book Antiqua", "Nunito Sans",
+                    "Noto Color Emoji", Inter, sans-serif, "Nunito Sans",
+                    "Noto Color Emoji", Inter, sans-serif, "Noto Color Emoji";
+                  font-size: 1em;
+                  font-weight: inherit;
+                  line-height: 1;
+                  padding: 2px 4px;
+                  text-decoration: none;
                 }
               }
             }
@@ -1281,15 +2995,22 @@ body {
   /* PAGE TITLE */
   .page-title,
   .page-title a {
-    color: var(--inline-title-color, var(--h1-color, var(--link-color, var(--darkgray))));
-    font-family: var(--inline-title-font, var(--h1-font, var(--font-text, inherit)));
+    color: var(
+      --inline-title-color,
+      var(--h1-color, var(--link-color, var(--darkgray)))
+    );
+    font-family: var(
+      --inline-title-font,
+      var(--h1-font, var(--font-text, inherit))
+    );
     font-size: var(--quartz-themes-title-font-size, 1.75rem);
   }
 
   /* GRAPH */
   .graph {
     & > .graph-outer {
-      border: 1px solid var(--background-modifier-border-hover, var(--color-base-35));
+      border: 1px solid
+        var(--background-modifier-border-hover, var(--color-base-35));
       --background-modifier-border-focus: var(--color-base-40);
       & > .global-graph-icon {
         color: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -1300,7 +3021,8 @@ body {
     }
     & > .global-graph-outer {
       & > .global-graph-container {
-        border: 1px solid var(--background-modifier-border-hover, var(--color-base-35));
+        border: 1px solid
+          var(--background-modifier-border-hover, var(--color-base-35));
         background-color: var(--background-primary);
       }
     }
@@ -1310,7 +3032,10 @@ body {
   hr {
     border: none;
     border-top: var(--hr-thickness, 2px) solid;
-    border-color: var(--hr-color, var(--background-modifier-border, var(--lightgray)));
+    border-color: var(
+      --hr-color,
+      var(--background-modifier-border, var(--lightgray))
+    );
   }
 
   details.toc {
@@ -1325,8 +3050,14 @@ body {
 
   /* POPOVER */
   .popover {
-    
-    //%%POPOVER%%
+    background-color: hsla(237, 10%, 97%, 75%);
+    border: 1px solid #d9dde8;
+    border-radius: 14px;
+    box-shadow: none;
+    display: flex;
+    max-height: 95vh;
+    position: absolute;
+    z-index: 30;
 
     display: block;
     position: fixed;
@@ -1334,12 +3065,32 @@ body {
     border: unset;
     background-color: var(--background-primary);
     & .popover-inner {
+      background-color: hsla(237, 10%, 97%, 75%);
+      border: 1px solid #d9dde8;
+      border-radius: 14px;
+      box-shadow: none;
+      display: flex;
+      max-height: 95vh;
+      position: absolute;
+      z-index: 30;
 
-      //%%POPOVER BORDER%%
+      background-color: hsla(237, 10%, 97%, 75%);
+      border: 1px solid #d9dde8;
+      border-radius: 14px;
+      box-shadow: none;
+      display: flex;
+      max-height: 95vh;
+      position: absolute;
+      z-index: 30;
 
-      //%%POPOVER BACKGROUND%%
-      
-      //%%POPOVER BORDER RADIUS%%
+      background-color: hsla(237, 10%, 97%, 75%);
+      border: 1px solid #d9dde8;
+      border-radius: 14px;
+      box-shadow: none;
+      display: flex;
+      max-height: 95vh;
+      position: absolute;
+      z-index: 30;
 
       background-color: var(--background-primary);
     }
@@ -1369,7 +3120,7 @@ body {
       .sidebar.left {
         padding-left: 1rem;
       }
-      .explorer:not(.collapsed)>.explorer-content {
+      .explorer:not(.collapsed) > .explorer-content {
         padding-left: 1rem;
         padding-right: 1rem;
         > .overflow {
@@ -1429,39 +3180,27 @@ body {
   user-select: text;
   -webkit-user-select: text;
 }
-
 :root[saved-theme="light"] {
   button.darkmode {
     mask-image: var(--sun-icon);
     -webkit-mask-image: var(--sun-icon);
   }
 }
-
 :root[saved-theme="dark"] {
   button.darkmode {
     mask-image: var(--moon-icon);
     -webkit-mask-image: var(--moon-icon);
   }
 }
-
 /* FONT OVERRIDES */
 :root:root:root {
-  --titleFont: var(--inline-title-font, var(--h1-font, var(--font-default))) !important;
-  --headerFont: var(--font-interface, var(--font-default)) !important;
   --bodyFont: var(--font-default) !important;
   --codeFont: var(--font-monospace, var(--font-default)) !important;
 }
-
 /* START CANVAS GRAPH WORKAROUND */
-
 /* START LIGHT GRAPH */
 :root:root[saved-theme="light"] {
   --highlight-fallback: 258, 88%, 66%;
-  --textHighlight-fallback: 255, 208, 0;
-  --light: var(
-    --graph-node,
-    var(--text-muted, var(--background-primary, var(--color-base-00, #ffffff)))
-  ) !important;
   --lightgray: var(
     --graph-line,
     var(
@@ -1472,51 +3211,25 @@ body {
       )
     )
   ) !important;
-  --gray: var(
-    --graph-node,
-    var(
-      --text-muted,
-      var(
-        --graph-text,
-        var(--text-normal, var(--checkbox-border-color, var(--text-faint, #ababab)))
-      )
-    )
-  ) !important;
   --darkgray: var(
     --graph-node-unresolved,
     var(--text-faint, var(--text-normal, var(--color-base-100, #222222)))
-  ) !important;
-  --dark: var(--h1-color, var(--text-faint, #ababab)) !important;
-  --secondary: var(
-    --graph-node-focused,
-    var(--text-accent, var(--link-color, var(--text-accent, var(--color-accent, #8a5cf5))))
   ) !important;
   --tertiary: var(
     --graph-node-tag,
     var(
       --color-green,
-      var(--link-color-hover, var(--text-accent-hover, var(--color-accent-2, #a386f9)))
+      var(
+        --link-color-hover,
+        var(--text-accent-hover, var(--color-accent-2, #a386f9))
+      )
     )
-  ) !important;
-  --highlight: var(
-    --tag-background,
-    hsla(var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))), 0.1)
-  ) !important;
-  --textHighlight: var(
-    --text-highlight-bg,
-    rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
   ) !important;
 }
 /* END LIGHT GRAPH */
-
 /* START DARK GRAPH */
 :root:root[saved-theme="dark"] {
   --highlight-fallback: 258, 88%, 66%;
-  --textHighlight-fallback: 255, 208, 0;
-  --light: var(
-    --graph-node,
-    var(--text-muted, var(--background-primary, var(--color-base-00, #1e1e1e)))
-  ) !important;
   --lightgray: var(
     --graph-line,
     var(
@@ -1527,44 +3240,20 @@ body {
       )
     )
   ) !important;
-  --gray: var(
-    --graph-node,
-    var(
-      --text-muted,
-      var(
-        --graph-text,
-        var(--text-normal, var(--checkbox-border-color, var(--text-faint, #666666)))
-      )
-    )
-  ) !important;
   --darkgray: var(
     --graph-node-unresolved,
     var(--text-faint, var(--text-normal, var(--color-base-100, #dadada)))
-  ) !important;
-  --dark: var(--h1-color, var(--text-faint, #666666)) !important;
-  --secondary: var(
-    --graph-node-focused,
-    var(--text-accent, var(--link-color, var(--text-accent, var(--color-accent-1, #a386f9))))
   ) !important;
   --tertiary: var(
     --graph-node-tag,
     var(
       --color-green,
-      var(--link-color-hover, var(--text-accent-hover, var(--color-accent-2, #c5b6fc)))
+      var(
+        --link-color-hover,
+        var(--text-accent-hover, var(--color-accent-2, #c5b6fc))
+      )
     )
-  ) !important;
-  --highlight: var(
-    --tag-background,
-    hsla(var(--interactive-accent-hsl, var(--color-accent-hsl, var(--highlight-fallback))), 0.2)
-  ) !important;
-  --textHighlight: var(
-    --text-highlight-bg,
-    rgba(var(--text-highlight-bg-rgb, var(--textHighlight-fallback)), 0.4)
   ) !important;
 }
 /* END DARK GRAPH */
-
 /* END CANVAS GRAPH WORKAROUND */
-
-,
-
