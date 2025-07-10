@@ -23,6 +23,9 @@ export default function combineLightDarkInJson(manifestCollection) {
       `./atomic/${theme}/theme-light-dark.json`,
       format(JSON.stringify(appLightDark), "json"),
     );
+    console.log(
+      `Combined light and dark theme JSON for ${theme} into theme-light-dark.json`,
+    );
   });
 }
 

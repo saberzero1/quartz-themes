@@ -7,22 +7,23 @@ import { format } from "../formatter.mjs";
 
 import stripComments from "../packages/strip-css-comments.mjs";
 
-export function convert(css) {
-  // Remove comments
-  // css = stripComments(css);
+export function convert(css, fullMode = false) {
+  if (fullMode) {
+    // Remove comments
+    css = stripComments(css);
 
-  // Split combined rules into individual declarations
-  // css = splitCombinedRules(css);
+    // Split combined rules into individual declarations
+    css = splitCombinedRules(css);
 
-  // Combine identical selectors
-  // css = combineIdenticalSelectors(css);
+    // Combine identical selectors
+    css = combineIdenticalSelectors(css);
 
-  // Remove empty rules
-  // css = removeEmptyRules(css);
+    // Remove empty rules
+    css = removeEmptyRules(css);
 
-  // Format
-  // css = format(css, "css");
-
+    // Format
+    css = format(css, "css");
+  }
   // Convert to JSON dictionary format
   const jsonDictionary = {};
   css.split("\n\n").forEach((rule) => {
@@ -42,14 +43,19 @@ export function convert(css) {
       const declarationList = declarations
         .trim()
         .split(/(?<!\+\s*?xml|\+\s*?png);/g)
-        .map((d) => d.replaceAll("\n", " "))
+        .map((d) => d.replaceAll("\n", ""))
+        .map((d) => d.replaceAll(",", ", "))
         .map((d) => d.replaceAll(/\s+/g, " "))
         .map((d) => d.trim())
         .filter(Boolean);
       const declarationPairsList = declarationList.map((declaration) => {
-        const [property, value] = declaration
-          .split(":", 2)
-          .map((s) => s.trim());
+        const propertyValue = declaration.split(":").map((s) => s.trim());
+        const [property, value] =
+          propertyValue.length === 2
+            ? propertyValue
+            : propertyValue.length > 2
+              ? [propertyValue[0], propertyValue.slice(1).join(":")]
+              : [propertyValue[0], ""];
         return { property, value };
       });
       selectorList.forEach((selector) => {

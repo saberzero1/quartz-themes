@@ -7,9 +7,9 @@ import {
   getExtras,
   getFixes,
 } from "../util/util.mjs";
-import { existsSync } from "fs";
+import { existsSync, renameSync } from "fs";
 
-export function copyFiles(manifestCollection) {
+export function copyFiles(manifestCollection, fullMode = true) {
   manifestCollection.forEach((manifest) => {
     const theme = getTheme(manifest);
 
