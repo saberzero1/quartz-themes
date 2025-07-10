@@ -28904,14 +28904,6 @@ body:not(.is-phone):not(.inline-title-divider-remove)
   padding-bottom: var(--size-4-3);
 }
 
-.markdown-rendered > :is(h1, h2, h3, h4, h5, h6) {
-  position: relative;
-}
-
-.markdown-preview-sizer > div > :is(h1, h2, h3, h4, h5, h6) {
-  position: relative;
-}
-
 body:not(.heading-indicator-off)
   .markdown-preview-view
   .heading-collapse-indicator {
@@ -28938,12 +28930,6 @@ body:not(.heading-indicator-off)
   text-indent: 9px;
 }
 
-:is(h1, h2, h3, h4, h5, h6) {
-  position: relative;
-}
-body:not(.heading-indicator-off) :is(h1, h2, h3, h4, h5, h6) {
-  text-indent: 9px;
-}
 .inline-title[data-level="1"] {
   text-transform: var(--h1-text-transform);
 }
@@ -29827,16 +29813,6 @@ a:not(
   .cm-line.cm-active.HyperMD-codeblock-end-bg {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-}
-
-.line-hover-indicator
-  .workspace-leaf-content:is(
-    [data-type="markdown"],
-    [data-type="webviewer"]
-  ):not(:has(.document-search-container))
-  .markdown-preview-sizer
-  > div:not(:has(.collapse-indicator, .mk-header)) {
-  position: relative;
 }
 
 .line-hover-indicator

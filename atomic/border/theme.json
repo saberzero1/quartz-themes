@@ -12419,60 +12419,62 @@
     { "property": "margin-top", "value": "var(--heading-spacing)" }
   ],
   "h2": [
-    { "property": "position", "value": "relative" },
-    {
-      "property": "}body",
-      "value": "not(.heading-indicator-off):is(h1, h2, h3, h4, h5, h6) {text-indent:9px"
-    },
-    {
-      "property": "}.inline-title[data-level=\"1\"] {text-transform",
-      "value": "var(--h1-text-transform)"
-    }
+    { "property": "--font-weight", "value": "var(--h2-weight)" },
+    { "property": "color", "value": "var(--h2-color)" },
+    { "property": "font-family", "value": "var(--h2-font)" },
+    { "property": "font-size", "value": "var(--h2-size)" },
+    { "property": "font-style", "value": "var(--h2-style)" },
+    { "property": "font-variant", "value": "var(--h2-variant)" },
+    { "property": "font-weight", "value": "var(--font-weight)" },
+    { "property": "letter-spacing", "value": "-0.015em" },
+    { "property": "line-height", "value": "var(--h2-line-height)" },
+    { "property": "margin-block-end", "value": "var(--p-spacing)" },
+    { "property": "margin-block-start", "value": "var(--p-spacing)" },
+    { "property": "text-transform", "value": "var(--h2-text-transform)" }
   ],
   "h3": [
-    { "property": "position", "value": "relative" },
-    {
-      "property": "}body",
-      "value": "not(.heading-indicator-off):is(h1, h2, h3, h4, h5, h6) {text-indent:9px"
-    },
-    {
-      "property": "}.inline-title[data-level=\"1\"] {text-transform",
-      "value": "var(--h1-text-transform)"
-    }
+    { "property": "--font-weight", "value": "var(--h3-weight)" },
+    { "property": "color", "value": "var(--h3-color)" },
+    { "property": "font-family", "value": "var(--h3-font)" },
+    { "property": "font-size", "value": "var(--h3-size)" },
+    { "property": "font-style", "value": "var(--h3-style)" },
+    { "property": "font-variant", "value": "var(--h3-variant)" },
+    { "property": "font-weight", "value": "var(--font-weight)" },
+    { "property": "letter-spacing", "value": "-0.015em" },
+    { "property": "line-height", "value": "var(--h3-line-height)" },
+    { "property": "margin-block-end", "value": "var(--p-spacing)" },
+    { "property": "margin-block-start", "value": "var(--p-spacing)" },
+    { "property": "text-transform", "value": "var(--h3-text-transform)" }
   ],
   "h4": [
-    { "property": "position", "value": "relative" },
-    {
-      "property": "}body",
-      "value": "not(.heading-indicator-off):is(h1, h2, h3, h4, h5, h6) {text-indent:9px"
-    },
-    {
-      "property": "}.inline-title[data-level=\"1\"] {text-transform",
-      "value": "var(--h1-text-transform)"
-    }
+    { "property": "--font-weight", "value": "var(--h4-weight)" },
+    { "property": "color", "value": "var(--h4-color)" },
+    { "property": "font-family", "value": "var(--h4-font)" },
+    { "property": "font-size", "value": "var(--h4-size)" },
+    { "property": "font-style", "value": "var(--h4-style)" },
+    { "property": "font-variant", "value": "var(--h4-variant)" },
+    { "property": "font-weight", "value": "var(--font-weight)" },
+    { "property": "letter-spacing", "value": "0.015em" },
+    { "property": "line-height", "value": "var(--h4-line-height)" },
+    { "property": "margin-block-end", "value": "var(--p-spacing)" },
+    { "property": "margin-block-start", "value": "var(--p-spacing)" },
+    { "property": "text-transform", "value": "var(--h4-text-transform)" }
   ],
   "h5": [
-    { "property": "position", "value": "relative" },
-    {
-      "property": "}body",
-      "value": "not(.heading-indicator-off):is(h1, h2, h3, h4, h5, h6) {text-indent:9px"
-    },
-    {
-      "property": "}.inline-title[data-level=\"1\"] {text-transform",
-      "value": "var(--h1-text-transform)"
-    }
+    { "property": "--font-weight", "value": "var(--h5-weight)" },
+    { "property": "color", "value": "var(--h5-color)" },
+    { "property": "font-family", "value": "var(--h5-font)" },
+    { "property": "font-size", "value": "var(--h5-size)" },
+    { "property": "font-style", "value": "var(--h5-style)" },
+    { "property": "font-variant", "value": "var(--h5-variant)" },
+    { "property": "font-weight", "value": "var(--font-weight)" },
+    { "property": "letter-spacing", "value": "0.015em" },
+    { "property": "line-height", "value": "var(--h5-line-height)" },
+    { "property": "margin-block-end", "value": "var(--p-spacing)" },
+    { "property": "margin-block-start", "value": "var(--p-spacing)" },
+    { "property": "text-transform", "value": "var(--h5-text-transform)" }
   ],
-  "h6)": [
-    { "property": "position", "value": "relative" },
-    {
-      "property": "}body",
-      "value": "not(.heading-indicator-off):is(h1, h2, h3, h4, h5, h6) {text-indent:9px"
-    },
-    {
-      "property": "}.inline-title[data-level=\"1\"] {text-transform",
-      "value": "var(--h1-text-transform)"
-    }
-  ],
+  "h6)": [{ "property": "margin-top", "value": "var(--heading-spacing)" }],
   "h1": [
     { "property": "--font-weight", "value": "var(--h1-weight)" },
     { "property": "color", "value": "var(--h1-color)" },
@@ -24286,28 +24288,14 @@
     { "property": "margin-bottom", "value": "var(--size-4-3)" },
     { "property": "padding-bottom", "value": "var(--size-4-3)" }
   ],
-  ".markdown-rendered > :is(h1": [
-    { "property": "position", "value": "relative" }
-  ],
-  ".markdown-preview-sizer > div > :is(h1": [
-    { "property": "position", "value": "relative" }
-  ],
   "body:not(.heading-indicator-off": [
     {
       "property": ".markdown-preview-sizer> div>",
       "value": "is(h1, h2, h3, h4, h5, h6) {text-indent:9px"
     }
   ],
-  ":is(h1": [
-    { "property": "position", "value": "relative" },
-    {
-      "property": "}body",
-      "value": "not(.heading-indicator-off):is(h1, h2, h3, h4, h5, h6) {text-indent:9px"
-    },
-    {
-      "property": "}.inline-title[data-level=\"1\"] {text-transform",
-      "value": "var(--h1-text-transform)"
-    }
+  ".inline-title[data-level=\"1\"]": [
+    { "property": "text-transform", "value": "var(--h1-text-transform)" }
   ],
   ".h1-color-designated": [
     { "property": "--h1-color", "value": "var(--h1-accent-color)" }
