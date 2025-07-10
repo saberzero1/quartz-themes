@@ -1,7 +1,35 @@
 {
   "body": {
+    "--background-modifier-box-shadow": {
+      "light": "rgba(0, 0, 0, 0.1)",
+      "dark": null
+    },
+    "--background-modifier-cover": {
+      "light": "rgba(220, 220, 220, 0.4)",
+      "dark": null
+    },
+    "--background-secondary-alt": {
+      "light": "var(--color-base-05)",
+      "dark": null
+    },
     "--chalk-grey": { "light": "#686868", "dark": null },
     "--chalk-grey-accent": { "light": "#636363", "dark": null },
+    "--color-accent": {
+      "light": "hsl(var(--accent-h), var(--accent-s), var(--accent-l))",
+      "dark": null
+    },
+    "--color-accent-1": {
+      "light": "hsl(calc(var(--accent-h) - 1), calc(var(--accent-s) * 1.01), calc(var(--accent-l) * 1.075))",
+      "dark": null
+    },
+    "--color-accent-2": {
+      "light": "hsl(calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15))",
+      "dark": null
+    },
+    "--color-accent-hsl": {
+      "light": "var(--accent-h), var(--accent-s), var(--accent-l)",
+      "dark": null
+    },
     "--color-base-00": { "light": "#fff", "dark": null },
     "--color-base-05": { "light": "#fcfcfc", "dark": null },
     "--color-base-10": { "light": "#fafafa", "dark": null },
@@ -14,6 +42,22 @@
     "--color-base-50": { "light": "#ababab", "dark": null },
     "--color-base-60": { "light": "#707070", "dark": null },
     "--color-base-70": { "light": "#5a5a5a", "dark": null },
+    "--color-blue": { "light": "#086ddd", "dark": null },
+    "--color-blue-rgb": { "light": "8, 109, 221", "dark": null },
+    "--color-cyan": { "light": "#00bfbc", "dark": null },
+    "--color-cyan-rgb": { "light": "0, 191, 188", "dark": null },
+    "--color-green": { "light": "#08b94e", "dark": null },
+    "--color-green-rgb": { "light": "8, 185, 78", "dark": null },
+    "--color-orange": { "light": "#ec7500", "dark": null },
+    "--color-orange-rgb": { "light": "236, 117, 0", "dark": null },
+    "--color-pink": { "light": "#d53984", "dark": null },
+    "--color-pink-rgb": { "light": "213, 57, 132", "dark": null },
+    "--color-purple": { "light": "#7852ee", "dark": null },
+    "--color-purple-rgb": { "light": "120, 82, 238", "dark": null },
+    "--color-red": { "light": "#e93147", "dark": null },
+    "--color-red-rgb": { "light": "233, 49, 71", "dark": null },
+    "--color-yellow": { "light": "#e0ac00", "dark": null },
+    "--color-yellow-rgb": { "light": "224, 172, 0", "dark": null },
     "--h1-color": { "light": "var(--chalk-grey)", "dark": null },
     "--h1-gradient-accent": { "light": "#5968fb", "dark": null },
     "--h2-color": { "light": "var(--chalk-grey)", "dark": null },
@@ -26,6 +70,25 @@
     "--h5-gradient-accent": { "light": "#262cda", "dark": null },
     "--h6-color": { "light": "var(--chalk-grey)", "dark": null },
     "--h6-gradient-accent": { "light": "#f21bf6", "dark": null },
+    "--highlight-mix-blend-mode": { "light": "darken", "dark": null },
+    "--input-shadow": {
+      "light": "inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent",
+      "dark": null
+    },
+    "--input-shadow-hover": {
+      "light": "inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent",
+      "dark": null
+    },
+    "--mono-rgb-0": { "light": "255, 255, 255", "dark": null },
+    "--mono-rgb-100": { "light": "0, 0, 0", "dark": null },
+    "--shadow-l": {
+      "light": "0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2)",
+      "dark": null
+    },
+    "--shadow-s": {
+      "light": "0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07)",
+      "dark": null
+    },
     "--canvas-color": { "light": null, "dark": "126, 126, 126" }
   },
   ".notice progress[value]::-webkit-progress-bar": {
@@ -35,46 +98,45 @@
   ".workspace-tab-header": { "color": "var(--text-muted)" },
   ".canvas-node.is-themed.mod-canvas-color-1 .canvas-node-content": {
     "background-image": {
-      "light": "linear-gradient( 45deg, hsl(0deg 87% 79%) 0%, hsl(360deg 87% 78%) 21%, hsl(360deg 87% 77%) 30%, hsl(359deg 87% 75%) 39%, hsl(359deg 87% 74%) 46%, hsl(359deg 87% 73%) 54%, hsl(359deg 86% 72%) 61%, hsl(358deg 86% 71%) 69%, hsl(358deg 86% 70%) 79%, hsl(358deg 85% 68%) 100% )",
-      "dark": "linear-gradient( 45deg, hsl(15deg 82% 54%) 0%, hsl(14deg 83% 54%) 11%, hsl(14deg 83% 53%) 22%, hsl(13deg 84% 53%) 33%, hsl(13deg 84% 53%) 44%, hsl(12deg 85% 53%) 56%, hsl(11deg 85% 53%) 67%, hsl(11deg 86% 52%) 78%, hsl(10deg 86% 52%) 89%, hsl(9deg 87% 52%) 100% )"
+      "light": "linear-gradient(45deg, hsl(0deg 87% 79%) 0%, hsl(360deg 87% 78%) 21%, hsl(360deg 87% 77%) 30%, hsl(359deg 87% 75%) 39%, hsl(359deg 87% 74%) 46%, hsl(359deg 87% 73%) 54%, hsl(359deg 86% 72%) 61%, hsl(358deg 86% 71%) 69%, hsl(358deg 86% 70%) 79%, hsl(358deg 85% 68%) 100%)",
+      "dark": "linear-gradient(45deg, hsl(15deg 82% 54%) 0%, hsl(14deg 83% 54%) 11%, hsl(14deg 83% 53%) 22%, hsl(13deg 84% 53%) 33%, hsl(13deg 84% 53%) 44%, hsl(12deg 85% 53%) 56%, hsl(11deg 85% 53%) 67%, hsl(11deg 86% 52%) 78%, hsl(10deg 86% 52%) 89%, hsl(9deg 87% 52%) 100%)"
     }
   },
   ".canvas-node.is-themed.mod-canvas-color-2 .canvas-node-content": {
     "background-image": {
-      "light": "linear-gradient( 45deg, hsl(16deg 100% 76%) 0%, hsl(20deg 100% 76%) 21%, hsl(23deg 100% 76%) 30%, hsl(27deg 100% 77%) 39%, hsl(30deg 100% 77%) 46%, hsl(34deg 100% 77%) 54%, hsl(37deg 100% 78%) 61%, hsl(41deg 100% 79%) 69%, hsl(45deg 100% 80%) 79%, hsl(49deg 100% 81%) 100% )",
-      "dark": "linear-gradient( 45deg, hsl(29deg 82% 54%) 0%, hsl(28deg 83% 53%) 11%, hsl(28deg 83% 53%) 22%, hsl(27deg 84% 53%) 33%, hsl(26deg 84% 53%) 44%, hsl(25deg 85% 53%) 56%, hsl(25deg 85% 52%) 67%, hsl(24deg 86% 52%) 78%, hsl(23deg 86% 52%) 89%, hsl(22deg 87% 52%) 100% )"
+      "light": "linear-gradient(45deg, hsl(16deg 100% 76%) 0%, hsl(20deg 100% 76%) 21%, hsl(23deg 100% 76%) 30%, hsl(27deg 100% 77%) 39%, hsl(30deg 100% 77%) 46%, hsl(34deg 100% 77%) 54%, hsl(37deg 100% 78%) 61%, hsl(41deg 100% 79%) 69%, hsl(45deg 100% 80%) 79%, hsl(49deg 100% 81%) 100%)",
+      "dark": "linear-gradient(45deg, hsl(29deg 82% 54%) 0%, hsl(28deg 83% 53%) 11%, hsl(28deg 83% 53%) 22%, hsl(27deg 84% 53%) 33%, hsl(26deg 84% 53%) 44%, hsl(25deg 85% 53%) 56%, hsl(25deg 85% 52%) 67%, hsl(24deg 86% 52%) 78%, hsl(23deg 86% 52%) 89%, hsl(22deg 87% 52%) 100%)"
     }
   },
   ".canvas-node.is-themed.mod-canvas-color-3 .canvas-node-content": {
     "background-image": {
-      "light": "linear-gradient( 45deg, hsl(60deg 89% 72%) 0%, hsl(59deg 91% 73%) 21%, hsl(57deg 92% 74%) 30%, hsl(56deg 94% 76%) 39%, hsl(55deg 96% 77%) 46%, hsl(53deg 97% 78%) 54%, hsl(52deg 98% 79%) 61%, hsl(51deg 99% 80%) 69%, hsl(50deg 100% 80%) 79%, hsl(49deg 100% 81%) 100% )",
-      "dark": "linear-gradient( 45deg, hsl(44deg 82% 54%) 0%, hsl(44deg 83% 54%) 11%, hsl(45deg 83% 53%) 22%, hsl(45deg 84% 53%) 33%, hsl(46deg 84% 53%) 44%, hsl(46deg 85% 53%) 56%, hsl(47deg 85% 53%) 67%, hsl(47deg 86% 53%) 78%, hsl(48deg 86% 52%) 89%, hsl(48deg 87% 52%) 100% )"
+      "light": "linear-gradient(45deg, hsl(60deg 89% 72%) 0%, hsl(59deg 91% 73%) 21%, hsl(57deg 92% 74%) 30%, hsl(56deg 94% 76%) 39%, hsl(55deg 96% 77%) 46%, hsl(53deg 97% 78%) 54%, hsl(52deg 98% 79%) 61%, hsl(51deg 99% 80%) 69%, hsl(50deg 100% 80%) 79%, hsl(49deg 100% 81%) 100%)",
+      "dark": "linear-gradient(45deg, hsl(44deg 82% 54%) 0%, hsl(44deg 83% 54%) 11%, hsl(45deg 83% 53%) 22%, hsl(45deg 84% 53%) 33%, hsl(46deg 84% 53%) 44%, hsl(46deg 85% 53%) 56%, hsl(47deg 85% 53%) 67%, hsl(47deg 86% 53%) 78%, hsl(48deg 86% 52%) 89%, hsl(48deg 87% 52%) 100%)"
     }
   },
   ".canvas-node.is-themed.mod-canvas-color-4 .canvas-node-content": {
     "background-image": {
-      "light": "linear-gradient( 45deg, hsl(99deg 75% 75%) 0%, hsl(103deg 75% 77%) 21%, hsl(108deg 75% 79%) 30%, hsl(113deg 76% 81%) 39%, hsl(119deg 76% 83%) 46%, hsl(124deg 77% 84%) 54%, hsl(129deg 79% 85%) 61%, hsl(133deg 80% 86%) 69%, hsl(137deg 81% 86%) 79%, hsl(141deg 81% 87%) 100% )",
-      "dark": "linear-gradient( 45deg, hsl(98deg 32% 45%) 0%, hsl(101deg 31% 44%) 11%, hsl(104deg 30% 43%) 22%, hsl(108deg 29% 41%) 33%, hsl(112deg 28% 40%) 44%, hsl(116deg 27% 39%) 56%, hsl(120deg 26% 37%) 67%, hsl(124deg 27% 35%) 78%, hsl(128deg 28% 33%) 89%, hsl(132deg 29% 31%) 100% )"
+      "light": "linear-gradient(45deg, hsl(99deg 75% 75%) 0%, hsl(103deg 75% 77%) 21%, hsl(108deg 75% 79%) 30%, hsl(113deg 76% 81%) 39%, hsl(119deg 76% 83%) 46%, hsl(124deg 77% 84%) 54%, hsl(129deg 79% 85%) 61%, hsl(133deg 80% 86%) 69%, hsl(137deg 81% 86%) 79%, hsl(141deg 81% 87%) 100%)",
+      "dark": "linear-gradient(45deg, hsl(98deg 32% 45%) 0%, hsl(101deg 31% 44%) 11%, hsl(104deg 30% 43%) 22%, hsl(108deg 29% 41%) 33%, hsl(112deg 28% 40%) 44%, hsl(116deg 27% 39%) 56%, hsl(120deg 26% 37%) 67%, hsl(124deg 27% 35%) 78%, hsl(128deg 28% 33%) 89%, hsl(132deg 29% 31%) 100%)"
     }
   },
   ".canvas-node.is-themed.mod-canvas-color-5 .canvas-node-content": {
     "background-image": {
-      "light": "linear-gradient( 45deg, hsl(187deg 100% 89%) 0%, hsl(187deg 100% 87%) 21%, hsl(187deg 100% 85%) 30%, hsl(187deg 100% 83%) 39%, hsl(187deg 100% 81%) 46%, hsl(187deg 100% 79%) 54%, hsl(187deg 100% 77%) 61%, hsl(186deg 100% 75%) 69%, hsl(186deg 100% 72%) 79%, hsl(186deg 100% 69%) 100% )",
-      "dark": "linear-gradient( 45deg, hsl(218deg 82% 54%) 0%, hsl(218deg 83% 53%) 11%, hsl(218deg 85% 52%) 22%, hsl(219deg 85% 51%) 33%, hsl(219deg 86% 51%) 44%, hsl(220deg 87% 50%) 56%, hsl(221deg 87% 50%) 67%, hsl(223deg 87% 51%) 78%, hsl(224deg 87% 51%) 89%, hsl(227deg 87% 52%) 100% )"
+      "light": "linear-gradient(45deg, hsl(187deg 100% 89%) 0%, hsl(187deg 100% 87%) 21%, hsl(187deg 100% 85%) 30%, hsl(187deg 100% 83%) 39%, hsl(187deg 100% 81%) 46%, hsl(187deg 100% 79%) 54%, hsl(187deg 100% 77%) 61%, hsl(186deg 100% 75%) 69%, hsl(186deg 100% 72%) 79%, hsl(186deg 100% 69%) 100%)",
+      "dark": "linear-gradient(45deg, hsl(218deg 82% 54%) 0%, hsl(218deg 83% 53%) 11%, hsl(218deg 85% 52%) 22%, hsl(219deg 85% 51%) 33%, hsl(219deg 86% 51%) 44%, hsl(220deg 87% 50%) 56%, hsl(221deg 87% 50%) 67%, hsl(223deg 87% 51%) 78%, hsl(224deg 87% 51%) 89%, hsl(227deg 87% 52%) 100%)"
     }
   },
   ".canvas-node.is-themed.mod-canvas-color-6 .canvas-node-content": {
     "background-image": {
-      "light": "linear-gradient( 45deg, hsl(298deg 68% 90%) 0%, hsl(287deg 68% 89%) 21%, hsl(277deg 68% 89%) 30%, hsl(267deg 67% 88%) 39%, hsl(258deg 65% 87%) 46%, hsl(249deg 63% 87%) 54%, hsl(240deg 61% 86%) 61%, hsl(232deg 62% 83%) 69%, hsl(225deg 62% 81%) 79%, hsl(220deg 61% 79%) 100% )",
-      "dark": "linear-gradient( 45deg, hsl(308deg 33% 41%) 0%, hsl(308deg 35% 41%) 11%, hsl(308deg 37% 40%) 22%, hsl(308deg 40% 39%) 33%, hsl(308deg 42% 39%) 44%, hsl(308deg 45% 38%) 56%, hsl(308deg 47% 37%) 67%, hsl(308deg 51% 36%) 78%, hsl(308deg 54% 35%) 89%, hsl(308deg 58% 35%) 100% )"
+      "light": "linear-gradient(45deg, hsl(298deg 68% 90%) 0%, hsl(287deg 68% 89%) 21%, hsl(277deg 68% 89%) 30%, hsl(267deg 67% 88%) 39%, hsl(258deg 65% 87%) 46%, hsl(249deg 63% 87%) 54%, hsl(240deg 61% 86%) 61%, hsl(232deg 62% 83%) 69%, hsl(225deg 62% 81%) 79%, hsl(220deg 61% 79%) 100%)",
+      "dark": "linear-gradient(45deg, hsl(308deg 33% 41%) 0%, hsl(308deg 35% 41%) 11%, hsl(308deg 37% 40%) 22%, hsl(308deg 40% 39%) 33%, hsl(308deg 42% 39%) 44%, hsl(308deg 45% 38%) 56%, hsl(308deg 47% 37%) 67%, hsl(308deg 51% 36%) 78%, hsl(308deg 54% 35%) 89%, hsl(308deg 58% 35%) 100%)"
     }
   },
-  ".dropdown": { "background-image": { "light": null, "dark": "url(\"data" } },
-  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation input": {
-    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
-  },
-  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation textarea": {
-    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  ".dropdown": {
+    "background-image": {
+      "light": null,
+      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+    }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -83,7 +145,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4)) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {

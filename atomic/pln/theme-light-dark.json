@@ -15,11 +15,35 @@
     "--b3": { "light": "#4c566a", "dark": null },
     "--b3-rgb": { "light": "76, 86, 106", "dark": null },
     "--background-modifier-border": { "light": "var(--w0)", "dark": null },
+    "--background-modifier-box-shadow": {
+      "light": "rgba(0, 0, 0, 0.1)",
+      "dark": null
+    },
+    "--background-modifier-cover": {
+      "light": "rgba(220, 220, 220, 0.4)",
+      "dark": null
+    },
     "--background-primary": { "light": "var(--w3)", "dark": null },
     "--background-primary-alt": { "light": "var(--w2)", "dark": null },
     "--background-secondary": { "light": "var(--w2)", "dark": null },
     "--background-secondary-alt": { "light": "var(--w1)", "dark": null },
     "--bold-weight": { "light": "var(--font-bold)", "dark": null },
+    "--color-accent": {
+      "light": "hsl(var(--accent-h), var(--accent-s), var(--accent-l))",
+      "dark": null
+    },
+    "--color-accent-1": {
+      "light": "hsl(calc(var(--accent-h) - 1), calc(var(--accent-s) * 1.01), calc(var(--accent-l) * 1.075))",
+      "dark": null
+    },
+    "--color-accent-2": {
+      "light": "hsl(calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15))",
+      "dark": null
+    },
+    "--color-accent-hsl": {
+      "light": "var(--accent-h), var(--accent-s), var(--accent-l)",
+      "dark": null
+    },
     "--color-base-00": { "light": "var(--w2)", "dark": null },
     "--color-base-05": { "light": "var(--w2)", "dark": null },
     "--color-base-10": { "light": "var(--w1)", "dark": null },
@@ -42,6 +66,8 @@
     "--color-green-rgb": { "light": "163, 190, 140", "dark": null },
     "--color-orange": { "light": "#d08770", "dark": null },
     "--color-orange-rgb": { "light": "208, 135, 112", "dark": null },
+    "--color-pink": { "light": "#d53984", "dark": null },
+    "--color-pink-rgb": { "light": "213, 57, 132", "dark": null },
     "--color-purple": { "light": "#b48ead", "dark": null },
     "--color-purple-rgb": { "light": "180, 142, 173", "dark": null },
     "--color-red": { "light": "#bf616a", "dark": null },
@@ -57,6 +83,25 @@
     "--color-yellow-light-rgb": { "light": "235, 203, 139", "dark": null },
     "--color-yellow-rgb": {
       "light": "var(--color-yellow-dark-rgb)",
+      "dark": null
+    },
+    "--highlight-mix-blend-mode": { "light": "darken", "dark": null },
+    "--input-shadow": {
+      "light": "inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent",
+      "dark": null
+    },
+    "--input-shadow-hover": {
+      "light": "inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent",
+      "dark": null
+    },
+    "--mono-rgb-0": { "light": "255, 255, 255", "dark": null },
+    "--mono-rgb-100": { "light": "0, 0, 0", "dark": null },
+    "--shadow-l": {
+      "light": "0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2)",
+      "dark": null
+    },
+    "--shadow-s": {
+      "light": "0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07)",
       "dark": null
     },
     "--text-accent": { "light": "var(--color-accent)", "dark": null },
@@ -126,14 +171,16 @@
     "--callout-color": { "light": "var(--b3-rgb)", "dark": "var(--w0-rgb)" }
   },
   ".cards table.dataview thead:before": {
-    "background-image": { "light": "url('data", "dark": null }
+    "background-image": {
+      "light": "url('data:image/svg + xml, utf8, <svgxmlns=\"http://www.w3.org/2000/svg\"fill=\"none\"viewBox=\"0 0 100 100\"><pathfill=\"black\"d=\"M49.792 33.125l-5.892 5.892L33.333 28.45V83.333H25V28.45L14.438 39.017L8.542 33.125L29.167 12.5l20.625 20.625zm41.667 33.75L70.833 87.5l-20.625 -20.625l5.892 -5.892l10.571 10.567L66.667 16.667h8.333v54.883l10.567 -10.567l5.892 5.892z\"></path></svg>')",
+      "dark": null
+    }
   },
-  ".dropdown": { "background-image": { "light": null, "dark": "url(\"data" } },
-  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation input": {
-    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
-  },
-  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation textarea": {
-    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  ".dropdown": {
+    "background-image": {
+      "light": null,
+      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+    }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -142,7 +189,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4)) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {

@@ -75,24 +75,12 @@
     "--adwaita-window-fg-color": {
       "light": "rgba(0, 0, 0, 0.8)",
       "dark": "#ffffff"
-    }
+    },
+    "--canvas-color": { "light": null, "dark": "126, 126, 126" }
   },
   ".notice progress[value]::-webkit-progress-bar": {
     "background-color": { "light": "#262626", "dark": null },
     "box-shadow": { "light": "inset 0px 0px 0px 1px #363636", "dark": null }
-  },
-  ".adwaita-colors-never ).mod-linux": {
-    "--background-modifier-hover": { "light": "#f0f0f0", "dark": "#323232" },
-    "--icon-color": { "light": "#939393", "dark": "#929292" },
-    "--icon-color-focused": { "light": "#939393", "dark": "#929292" },
-    "--icon-color-hover": { "light": "#939393", "dark": "#929292" },
-    "--tab-text-color": { "light": "#939393", "dark": "#929292" },
-    "--tab-text-color-focused": { "light": "#939393", "dark": "#8a8a8a" },
-    "--tab-text-color-focused-active-current": {
-      "light": "#939393",
-      "dark": "#8a8a8a"
-    },
-    "--titlebar-text-color": { "light": "#8c8c8c", "dark": "#919191" }
   },
   "body.adwaita-colors-always": {
     "--background-modifier-hover": { "light": "#f0f0f0", "dark": "#323232" },
@@ -120,33 +108,20 @@
     },
     "--titlebar-text-color": { "light": "#8c8c8c", "dark": "#919191" }
   },
-  ".adwaita-colors-never ).mod-linux.is-focused .workspace-tabs.mod-top .workspace-tab-header-container": {
-    "--background-modifier-hover": { "light": "#d8d8d8", "dark": "#464646" }
-  },
-  ".adwaita-colors-never ).mod-linux.is-focused .sidebar-toggle-button": {
-    "--background-modifier-hover": { "light": "#d8d8d8", "dark": "#464646" }
-  },
-  "body.adwaita-colors-always.is-focused .workspace-tabs.mod-top .workspace-tab-header-container": {
-    "--background-modifier-hover": { "light": "#d8d8d8", "dark": "#464646" }
+  "body.adwaita-colors-always.is-focuse": {
+    ".workspace-tabs.mod-top.workspace-tab-header-container {--background-modifier-hover": {
+      "light": "#d8d8d8",
+      "dark": "#464646"
+    }
   },
   "body.adwaita-colors-always.is-focused .sidebar-toggle-button": {
     "--background-modifier-hover": { "light": "#d8d8d8", "dark": "#464646" }
   },
-  "body.adwaita-colors-linux-only.mod-linux.is-focused .workspace-tabs.mod-top .workspace-tab-header-container": {
-    "--background-modifier-hover": { "light": "#d8d8d8", "dark": "#464646" }
-  },
-  "body.adwaita-colors-linux-only.mod-linux.is-focused .sidebar-toggle-button": {
-    "--background-modifier-hover": { "light": "#d8d8d8", "dark": "#464646" }
-  },
-  ".adwaita-mod-never ).mod-linux": {
-    "--adwaita-mod-background": { "light": "#efefef", "dark": "#2e2e2e" },
-    "--adwaita-mod-background-active": {
-      "light": "#b3b3b3",
-      "dark": "#6e6e6e"
-    },
-    "--adwaita-mod-background-focus": { "light": "#d8d8d8", "dark": "#444444" },
-    "--adwaita-mod-background-hover": { "light": "#cfcfcf", "dark": "#4f4f4f" },
-    "--adwaita-mod-foreground": { "light": "#949494", "dark": "#929292" }
+  "body.adwaita-colors-linux-only.mod-linux.is-focuse": {
+    ".sidebar-toggle-button {--background-modifier-hover": {
+      "light": "#d8d8d8",
+      "dark": "#464646"
+    }
   },
   "body.adwaita-mod-always": {
     "--adwaita-mod-background": { "light": "#efefef", "dark": "#2e2e2e" },
@@ -168,17 +143,11 @@
     "--adwaita-mod-background-hover": { "light": "#cfcfcf", "dark": "#4f4f4f" },
     "--adwaita-mod-foreground": { "light": "#949494", "dark": "#929292" }
   },
-  ".adwaita-tabs-never ).mod-linux": {
-    "--tab-background-active": { "light": "#f0f0f0", "dark": "#323232" }
-  },
   "body.adwaita-tabs-always": {
     "--tab-background-active": { "light": "#f0f0f0", "dark": "#323232" }
   },
   "body.adwaita-tabs-linux-only.mod-linux": {
     "--tab-background-active": { "light": "#f0f0f0", "dark": "#323232" }
-  },
-  ".adwaita-tabs-never ).mod-linux.is-focused": {
-    "--tab-background-active": { "light": "#d8d8d8", "dark": "#464646" }
   },
   "body.adwaita-tabs-always.is-focused": {
     "--tab-background-active": { "light": "#d8d8d8", "dark": "#464646" }
@@ -186,12 +155,11 @@
   "body.adwaita-tabs-linux-only.mod-linux.is-focused": {
     "--tab-background-active": { "light": "#d8d8d8", "dark": "#464646" }
   },
-  ".dropdown": { "background-image": { "light": null, "dark": "url(\"data" } },
-  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation input": {
-    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
-  },
-  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation textarea": {
-    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  ".dropdown": {
+    "background-image": {
+      "light": null,
+      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+    }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -200,7 +168,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4)) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {

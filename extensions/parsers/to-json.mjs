@@ -8,11 +8,13 @@ export default function toJSON(manifestCollection) {
   const defaultObsidianCSS = format(readFileSync("./app.css", "utf-8"), "css");
   writeFileSync("./app.css", defaultObsidianCSS);
 
-  const defaultObsidianJSON = convert(defaultObsidianCSS);
+  /*
+  const defaultObsidianJSON = convert(defaultObsidianCSS, true);
   writeFileSync(
     "./app.json",
     format(JSON.stringify(defaultObsidianJSON), "json"),
   );
+  */
 
   manifestCollection.forEach((manifest) => {
     const theme = getTheme(manifest);
@@ -24,7 +26,10 @@ export default function toJSON(manifestCollection) {
         "utf-8",
       );
     } else {*/
-    const cssContent = readFileSync(`./atomic/${theme}/theme.css`, "utf-8");
+    const cssContent = readFileSync(
+      `./atomic/${theme}/obsidian-plus-theme.css`,
+      "utf-8",
+    );
     /*}
     const formattedCSS = format(stripComments(cssContent), "css");
     if (formattedCSS !== cssContent) {
@@ -34,8 +39,9 @@ export default function toJSON(manifestCollection) {
     console.log(`Converting theme: ${theme}`);*/
     const jsonContent = convert(cssContent);
     writeFileSync(
-      `./themes/${theme}/theme.json`,
+      `./atomic/${theme}/theme.json`,
       format(JSON.stringify(jsonContent), "json"),
     );
+    console.log(`Converted theme: ${theme} to JSON`);
   });
 }

@@ -1,6 +1,34 @@
 {
   "body": {
+    "--background-modifier-box-shadow": {
+      "light": "rgba(0, 0, 0, 0.1)",
+      "dark": null
+    },
+    "--background-modifier-cover": {
+      "light": "rgba(220, 220, 220, 0.4)",
+      "dark": null
+    },
+    "--background-secondary-alt": {
+      "light": "var(--color-base-05)",
+      "dark": null
+    },
     "--background-tertiary": { "light": "hsl(1, 100%, 100%)", "dark": null },
+    "--color-accent": {
+      "light": "hsl(var(--accent-h), var(--accent-s), var(--accent-l))",
+      "dark": null
+    },
+    "--color-accent-1": {
+      "light": "hsl(calc(var(--accent-h) - 1), calc(var(--accent-s) * 1.01), calc(var(--accent-l) * 1.075))",
+      "dark": null
+    },
+    "--color-accent-2": {
+      "light": "hsl(calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15))",
+      "dark": null
+    },
+    "--color-accent-hsl": {
+      "light": "var(--accent-h), var(--accent-s), var(--accent-l)",
+      "dark": null
+    },
     "--color-base-00": {
       "light": "hsl(calc(0 + var(--accent-h)), 100%, 99.5%)",
       "dark": null
@@ -26,7 +54,7 @@
       "dark": null
     },
     "--color-base-30": {
-      "light": "hsl( calc(0 + var(--accent-h)), calc(var(--accent-s) - 55%), 89% )",
+      "light": "hsl(calc(0 + var(--accent-h)), calc(var(--accent-s) - 55%), 89%)",
       "dark": null
     },
     "--color-base-35": {
@@ -34,7 +62,7 @@
       "dark": null
     },
     "--color-base-40": {
-      "light": "hsl( calc(0 + var(--accent-h)), calc(var(--accent-s) - 15%), 86% )",
+      "light": "hsl(calc(0 + var(--accent-h)), calc(var(--accent-s) - 15%), 86%)",
       "dark": null
     },
     "--color-base-50": {
@@ -71,6 +99,25 @@
     "--h4-color": { "light": "var(--h1-color)", "dark": null },
     "--h5-color": { "light": "var(--h1-color)", "dark": null },
     "--h6-color": { "light": "var(--h1-color)", "dark": null },
+    "--highlight-mix-blend-mode": { "light": "darken", "dark": null },
+    "--input-shadow": {
+      "light": "inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent",
+      "dark": null
+    },
+    "--input-shadow-hover": {
+      "light": "inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent",
+      "dark": null
+    },
+    "--mono-rgb-0": { "light": "255, 255, 255", "dark": null },
+    "--mono-rgb-100": { "light": "0, 0, 0", "dark": null },
+    "--shadow-l": {
+      "light": "0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2)",
+      "dark": null
+    },
+    "--shadow-s": {
+      "light": "0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07)",
+      "dark": null
+    },
     "--text-faint": {
       "light": "hsl(var(--accent-h), 20%, 63%, 65%)",
       "dark": null
@@ -83,7 +130,10 @@
     "box-shadow": { "light": "inset 0px 0px 0px 1px #363636", "dark": null }
   },
   ".cards table.dataview thead:before": {
-    "background-image": { "light": "url('data", "dark": null }
+    "background-image": {
+      "light": "url('data:image/svg + xml, utf8, <svgxmlns=\"http://www.w3.org/2000/svg\"fill=\"none\"viewBox=\"0 0 100 100\"><pathfill=\"black\"d=\"M49.792 33.125l-5.892 5.892L33.333 28.45V83.333H25V28.45L14.438 39.017L8.542 33.125L29.167 12.5l20.625 20.625zm41.667 33.75L70.833 87.5l-20.625 -20.625l5.892 -5.892l10.571 10.567L66.667 16.667h8.333v54.883l10.567 -10.567l5.892 5.892z\"></path></svg>')",
+      "dark": null
+    }
   },
   ".theme-default": {
     "--background-tertiary": { "light": "hsl(1, 100%, 100%)", "dark": null },
@@ -112,7 +162,7 @@
       "dark": null
     },
     "--color-base-30": {
-      "light": "hsl( calc(0 + var(--accent-h)), calc(var(--accent-s) - 55%), 89% )",
+      "light": "hsl(calc(0 + var(--accent-h)), calc(var(--accent-s) - 55%), 89%)",
       "dark": null
     },
     "--color-base-35": {
@@ -120,7 +170,7 @@
       "dark": null
     },
     "--color-base-40": {
-      "light": "hsl( calc(0 + var(--accent-h)), calc(var(--accent-s) - 15%), 86% )",
+      "light": "hsl(calc(0 + var(--accent-h)), calc(var(--accent-s) - 15%), 86%)",
       "dark": null
     },
     "--color-base-50": {
@@ -182,7 +232,7 @@
       "dark": null
     },
     "--color-base-20": {
-      "light": "hsl( calc(0 + var(--accent-h)), calc(var(--accent-s) - 5%), calc(95% - calc(var(--accent-l) / 100)) )",
+      "light": "hsl(calc(0 + var(--accent-h)), calc(var(--accent-s) - 5%), calc(95% - calc(var(--accent-l) / 100)))",
       "dark": null
     },
     "--color-base-25": {
@@ -190,7 +240,7 @@
       "dark": null
     },
     "--color-base-30": {
-      "light": "hsl( calc(0 + var(--accent-h)), calc(var(--accent-s) - 55%), 89% )",
+      "light": "hsl(calc(0 + var(--accent-h)), calc(var(--accent-s) - 55%), 89%)",
       "dark": null
     },
     "--color-base-35": {
@@ -198,7 +248,7 @@
       "dark": null
     },
     "--color-base-40": {
-      "light": "hsl( calc(0 + var(--accent-h)), calc(var(--accent-s) - 15%), 86% )",
+      "light": "hsl(calc(0 + var(--accent-h)), calc(var(--accent-s) - 15%), 86%)",
       "dark": null
     },
     "--color-base-50": {
@@ -225,12 +275,11 @@
     },
     "--text-muted": { "light": "hsl(var(--accent-h), 20%, 50%)", "dark": null }
   },
-  ".dropdown": { "background-image": { "light": null, "dark": "url(\"data" } },
-  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation input": {
-    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
-  },
-  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation textarea": {
-    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  ".dropdown": {
+    "background-image": {
+      "light": null,
+      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+    }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -239,7 +288,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4)) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {

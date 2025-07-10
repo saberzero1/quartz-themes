@@ -1,5 +1,13 @@
 {
   "body": {
+    "--background-modifier-box-shadow": {
+      "light": "rgba(0, 0, 0, 0.1)",
+      "dark": null
+    },
+    "--background-modifier-cover": {
+      "light": "rgba(220, 220, 220, 0.4)",
+      "dark": null
+    },
     "--background-modifier-form-field": {
       "light": "var(--color-base-20)",
       "dark": null
@@ -10,10 +18,30 @@
     },
     "--background-primary": { "light": "var(--color-base-05)", "dark": null },
     "--background-secondary": { "light": "var(--color-base-05)", "dark": null },
+    "--background-secondary-alt": {
+      "light": "var(--color-base-05)",
+      "dark": null
+    },
     "--black": { "light": "#000", "dark": null },
     "--blue": { "light": "#437cf3", "dark": null },
     "--blue-violet": { "light": "#6f51f4", "dark": null },
     "--code-background": { "light": "var(--color-base-30)", "dark": null },
+    "--color-accent": {
+      "light": "hsl(var(--accent-h), var(--accent-s), var(--accent-l))",
+      "dark": null
+    },
+    "--color-accent-1": {
+      "light": "hsl(calc(var(--accent-h) - 1), calc(var(--accent-s) * 1.01), calc(var(--accent-l) * 1.075))",
+      "dark": null
+    },
+    "--color-accent-2": {
+      "light": "hsl(calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15))",
+      "dark": null
+    },
+    "--color-accent-hsl": {
+      "light": "var(--accent-h), var(--accent-s), var(--accent-l)",
+      "dark": null
+    },
     "--color-base-00": {
       "light": "color-mix(in srgb, var(--vauxhall-bg) 25%, var(--white))",
       "dark": null
@@ -27,7 +55,7 @@
       "dark": null
     },
     "--color-base-100": {
-      "light": "color-mix( in srgb, var(--vauxhall-bg) 0%, var(--vauxhall-fg) )",
+      "light": "color-mix(in srgb, var(--vauxhall-bg) 0%, var(--vauxhall-fg))",
       "dark": null
     },
     "--color-base-20": {
@@ -39,37 +67,45 @@
       "dark": null
     },
     "--color-base-30": {
-      "light": "color-mix( in srgb, var(--vauxhall-bg) 90%, var(--vauxhall-fg) )",
+      "light": "color-mix(in srgb, var(--vauxhall-bg) 90%, var(--vauxhall-fg))",
       "dark": null
     },
     "--color-base-35": {
-      "light": "color-mix( in srgb, var(--vauxhall-bg) 95%, var(--vauxhall-fg) )",
+      "light": "color-mix(in srgb, var(--vauxhall-bg) 95%, var(--vauxhall-fg))",
       "dark": null
     },
     "--color-base-40": {
-      "light": "color-mix( in srgb, var(--vauxhall-bg) 80%, var(--vauxhall-fg) )",
+      "light": "color-mix(in srgb, var(--vauxhall-bg) 80%, var(--vauxhall-fg))",
       "dark": null
     },
     "--color-base-50": {
-      "light": "color-mix( in srgb, var(--vauxhall-bg) 60%, var(--vauxhall-fg) )",
+      "light": "color-mix(in srgb, var(--vauxhall-bg) 60%, var(--vauxhall-fg))",
       "dark": null
     },
     "--color-base-60": {
-      "light": "color-mix( in srgb, var(--vauxhall-bg) 60%, var(--vauxhall-fg) )",
+      "light": "color-mix(in srgb, var(--vauxhall-bg) 60%, var(--vauxhall-fg))",
       "dark": null
     },
     "--color-base-70": {
-      "light": "color-mix( in srgb, var(--vauxhall-bg) 30%, var(--vauxhall-fg) )",
+      "light": "color-mix(in srgb, var(--vauxhall-bg) 30%, var(--vauxhall-fg))",
       "dark": null
     },
     "--color-blue": { "light": "var(--blue)", "dark": null },
+    "--color-blue-rgb": { "light": "8, 109, 221", "dark": null },
     "--color-cyan": { "light": "var(--cool-cyan)", "dark": null },
+    "--color-cyan-rgb": { "light": "0, 191, 188", "dark": null },
     "--color-green": { "light": "var(--mint)", "dark": null },
+    "--color-green-rgb": { "light": "8, 185, 78", "dark": null },
     "--color-orange": { "light": "#fa9f50", "dark": null },
+    "--color-orange-rgb": { "light": "236, 117, 0", "dark": null },
     "--color-pink": { "light": "var(--magenta)", "dark": null },
+    "--color-pink-rgb": { "light": "213, 57, 132", "dark": null },
     "--color-purple": { "light": "var(--violet)", "dark": null },
+    "--color-purple-rgb": { "light": "120, 82, 238", "dark": null },
     "--color-red": { "light": "var(--hot-red)", "dark": null },
+    "--color-red-rgb": { "light": "233, 49, 71", "dark": null },
     "--color-yellow": { "light": "#ffd85e", "dark": null },
+    "--color-yellow-rgb": { "light": "224, 172, 0", "dark": null },
     "--cool-cyan": { "light": "#3bb2ce", "dark": null },
     "--cool-gray": { "light": "#515768", "dark": null },
     "--cyan": { "light": "#47c1cd", "dark": null },
@@ -79,6 +115,7 @@
     "--h4-color": { "light": "var(--blue-violet)", "dark": null },
     "--h5-color": { "light": "var(--violet)", "dark": null },
     "--h6-color": { "light": "var(--purple)", "dark": null },
+    "--highlight-mix-blend-mode": { "light": "darken", "dark": null },
     "--hot-red": { "light": "#e3365e", "dark": null },
     "--hue-bg": { "light": "238", "dark": null },
     "--hue-fg": { "light": "255", "dark": null },
@@ -90,12 +127,22 @@
       "light": "var(--color-base-35)",
       "dark": null
     },
+    "--input-shadow": {
+      "light": "inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent",
+      "dark": null
+    },
+    "--input-shadow-hover": {
+      "light": "inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent",
+      "dark": null
+    },
     "--light-blue": { "light": "#54b6f8", "dark": null },
     "--lum": { "light": "11%", "dark": null },
     "--lum-bg": { "light": "95%", "dark": null },
     "--lum-fg": { "light": "50%", "dark": null },
     "--magenta": { "light": "#e54f9b", "dark": null },
     "--mint": { "light": "#47cc91", "dark": null },
+    "--mono-rgb-0": { "light": "255, 255, 255", "dark": null },
+    "--mono-rgb-100": { "light": "0, 0, 0", "dark": null },
     "--nav-indentation-guide-color": {
       "light": "var(--color-base-30)",
       "dark": null
@@ -103,12 +150,20 @@
     "--purple": { "light": "#c952ed", "dark": null },
     "--sat-bg": { "light": "60%", "dark": null },
     "--sat-fg": { "light": "100%", "dark": null },
+    "--shadow-l": {
+      "light": "0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2)",
+      "dark": null
+    },
+    "--shadow-s": {
+      "light": "0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07)",
+      "dark": null
+    },
     "--text-highlight-bg": {
       "light": "color-mix(in srgb, var(--h1-color) 25%, transparent)",
       "dark": null
     },
     "--text-highlight-bg-active": {
-      "light": "color-mix( in srgb, var(--h1-color) 25%, transparent )",
+      "light": "color-mix(in srgb, var(--h1-color) 25%, transparent)",
       "dark": null
     },
     "--text-normal": {
@@ -136,12 +191,11 @@
     "background-color": { "light": "#262626", "dark": null },
     "box-shadow": { "light": "inset 0px 0px 0px 1px #363636", "dark": null }
   },
-  ".dropdown": { "background-image": { "light": null, "dark": "url(\"data" } },
-  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation input": {
-    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
-  },
-  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation textarea": {
-    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  ".dropdown": {
+    "background-image": {
+      "light": null,
+      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+    }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -150,7 +204,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4)) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {

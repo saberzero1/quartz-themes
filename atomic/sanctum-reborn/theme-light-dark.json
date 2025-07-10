@@ -30,6 +30,10 @@
       "light": "var(--border-subtle-1)",
       "dark": null
     },
+    "--background-modifier-box-shadow": {
+      "light": "rgba(0, 0, 0, 0.1)",
+      "dark": null
+    },
     "--background-modifier-cover": {
       "light": "var(--background-hover)",
       "dark": null
@@ -103,12 +107,41 @@
     "--color-accent": { "light": "var(--interactive)", "dark": null },
     "--color-accent-1": { "light": "var(--interactive)", "dark": null },
     "--color-accent-2": { "light": "var(--interactive)", "dark": null },
+    "--color-accent-hsl": {
+      "light": "var(--accent-h), var(--accent-s), var(--accent-l)",
+      "dark": null
+    },
     "--color-accent-rgb": {
       "light": "var(--custom-accent-color)",
       "dark": null
     },
+    "--color-base-00": { "light": "#ffffff", "dark": null },
+    "--color-base-05": { "light": "#fcfcfc", "dark": null },
+    "--color-base-10": { "light": "#fafafa", "dark": null },
+    "--color-base-100": { "light": "#222222", "dark": null },
+    "--color-base-20": { "light": "#f6f6f6", "dark": null },
+    "--color-base-25": { "light": "#e3e3e3", "dark": null },
+    "--color-base-30": { "light": "#e0e0e0", "dark": null },
+    "--color-base-35": { "light": "#d4d4d4", "dark": null },
+    "--color-base-40": { "light": "#bdbdbd", "dark": null },
+    "--color-base-50": { "light": "#ababab", "dark": null },
+    "--color-base-60": { "light": "#707070", "dark": null },
+    "--color-base-70": { "light": "#5c5c5c", "dark": null },
+    "--color-blue": { "light": "#086ddd", "dark": null },
+    "--color-blue-rgb": { "light": "8, 109, 221", "dark": null },
+    "--color-cyan": { "light": "#00bfbc", "dark": null },
+    "--color-cyan-rgb": { "light": "0, 191, 188", "dark": null },
+    "--color-green": { "light": "#08b94e", "dark": null },
     "--color-green-rgb": { "light": "102, 153, 97", "dark": null },
+    "--color-orange": { "light": "#ec7500", "dark": null },
+    "--color-orange-rgb": { "light": "236, 117, 0", "dark": null },
+    "--color-pink": { "light": "#d53984", "dark": null },
+    "--color-pink-rgb": { "light": "213, 57, 132", "dark": null },
+    "--color-purple": { "light": "#7852ee", "dark": null },
+    "--color-purple-rgb": { "light": "120, 82, 238", "dark": null },
+    "--color-red": { "light": "#e93147", "dark": null },
     "--color-red-rgb": { "light": "197, 65, 40", "dark": null },
+    "--color-yellow": { "light": "#e0ac00", "dark": null },
     "--color-yellow-rgb": { "light": "243, 189, 79", "dark": null },
     "--field-1": { "light": "rgb(var(--white))", "dark": null },
     "--field-hover-1": { "light": "rgb(var(--gray-20))", "dark": null },
@@ -119,6 +152,7 @@
       "light": "rgba(var(--color-accent-rgb), 0.7)",
       "dark": null
     },
+    "--highlight-mix-blend-mode": { "light": "darken", "dark": null },
     "--icon-inverse": { "light": "rgb(var(--white))", "dark": null },
     "--icon-on-color": { "light": "rgb(var(--white))", "dark": null },
     "--icon-primary": { "light": "rgb(var(--gray-100))", "dark": null },
@@ -156,8 +190,18 @@
       "light": "rgba(var(--gray-30), 0.5)",
       "dark": null
     },
+    "--mono-rgb-0": { "light": "255, 255, 255", "dark": null },
+    "--mono-rgb-100": { "light": "0, 0, 0", "dark": null },
     "--overlay": { "light": "rgba(var(--gray-100), 0.5)", "dark": null },
     "--shadow-color": { "light": "0deg 5% 59%", "dark": null },
+    "--shadow-l": {
+      "light": "0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2)",
+      "dark": null
+    },
+    "--shadow-s": {
+      "light": "0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07)",
+      "dark": null
+    },
     "--text-code": { "light": "var(--pink-60)", "dark": null },
     "--text-error": { "light": "var(--red)", "dark": null },
     "--text-faint": { "light": "var(--text-placeholder)", "dark": null },
@@ -449,9 +493,6 @@
   "body.is-translucent": {
     "--icon-color": { "light": "var(--text-muted)", "dark": null }
   },
-  ".workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header": {
-    "--shadow-color": { "light": "60deg 5% 59%", "dark": "0deg 0% 1%" }
-  },
   ".tooltip": {
     "--shadow-color": { "light": "60deg 5% 59%", "dark": "0deg 0% 1%" },
     "box-shadow": {
@@ -459,7 +500,12 @@
       "dark": "inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09), 0 0.5px 0.5px hsl(var(--shadow-color) / 43%), 0 1.5px 1.6px -1px hsl(var(--shadow-color) / 40%), 0 4px 4.2px -2px hsl(var(--shadow-color) / 36%), 0 10.1px 10.6px -3px hsl(var(--shadow-color) / 32%)"
     }
   },
-  ".dropdown": { "background-image": "url(\"data" },
+  ".dropdown": {
+    "background-image": {
+      "light": "url(\"data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='icon' opacity='0.4' x='0px' y='0px' viewBox='0 0 32 32' style='enable-background:new 0 0 32 32, ' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:none, %7D%0A%3C/style%3E%3Cpolygon points='16, 22 6, 12 7.4, 10.6 16, 19.2 24.6, 10.6 26, 12 '/%3E%3Crect id='_x3C_Transparent_Rectangle_x3E_' class='st0' width='32' height='32'/%3E%3C/svg%3E\")",
+      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='icon' fill='white' opacity='0.4' x='0px' y='0px' viewBox='0 0 32 32' style='enable-background:new 0 0 32 32, ' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:none, %7D%0A%3C/style%3E%3Cpolygon points='16, 22 6, 12 7.4, 10.6 16, 19.2 24.6, 10.6 26, 12 '/%3E%3Crect id='_x3C_Transparent_Rectangle_x3E_' class='st0' width='32' height='32'/%3E%3C/svg%3E\")"
+    }
+  },
   ".nord p > code": {
     "--code-background": { "light": "#e5e9f0", "dark": "#2e3440" },
     "--code-normal": { "light": "#3b4252", "dark": "#e5e9f0" },
@@ -1244,9 +1290,6 @@
   ".one-dark pre:not(.frontmatter) .token.attr-value": {
     "color": { "light": "#50a14f", "dark": "#98c379" }
   },
-  ".one-dark pre:not(.frontmatter) .token.attr-value > .token.punctuation": {
-    "color": { "light": "#50a14f", "dark": "#98c379" }
-  },
   ".one-dark .HyperMD-codeblock .cm-builtin": {
     "color": { "light": "#50a14f", "dark": "#98c379" }
   },
@@ -1275,9 +1318,6 @@
     "color": { "light": "#50a14f", "dark": "#98c379" }
   },
   ".one-dark .HyperMD-codeblock .token.attr-value": {
-    "color": { "light": "#50a14f", "dark": "#98c379" }
-  },
-  ".one-dark .HyperMD-codeblock .token.attr-value > .token.punctuation": {
     "color": { "light": "#50a14f", "dark": "#98c379" }
   },
   ".one-dark p > code .cm-operator": {
@@ -1361,24 +1401,6 @@
   ".one-dark .HyperMD-codeblock .token.url": {
     "color": { "light": "#0184bc", "dark": "#56b6c2" }
   },
-  ".one-dark p > code .token.attr-value > .token.punctuation.attr-equals": {
-    "color": { "light": "#383a42", "dark": "#abb2bf" }
-  },
-  ".one-dark p > code .token.special-attr > .token.attr-value > .token.value.css": {
-    "color": { "light": "#383a42", "dark": "#abb2bf" }
-  },
-  ".one-dark pre:not(.frontmatter) .token.attr-value > .token.punctuation.attr-equals": {
-    "color": { "light": "#383a42", "dark": "#abb2bf" }
-  },
-  ".one-dark pre:not(.frontmatter) .token.special-attr > .token.attr-value > .token.value.css": {
-    "color": { "light": "#383a42", "dark": "#abb2bf" }
-  },
-  ".one-dark .HyperMD-codeblock .token.attr-value > .token.punctuation.attr-equals": {
-    "color": { "light": "#383a42", "dark": "#abb2bf" }
-  },
-  ".one-dark .HyperMD-codeblock .token.special-attr > .token.attr-value > .token.value.css": {
-    "color": { "light": "#383a42", "dark": "#abb2bf" }
-  },
   ".one-dark p > code .language-css .token.selector": {
     "color": { "light": "#e45649", "dark": "#e06c75" }
   },
@@ -1406,22 +1428,10 @@
   ".one-dark pre:not(.frontmatter) .language-css .token.function": {
     "color": { "light": "#0184bc", "dark": "#56b6c2" }
   },
-  ".one-dark pre:not(.frontmatter) .language-css .token.url > .token.function": {
-    "color": { "light": "#0184bc", "dark": "#56b6c2" }
-  },
   ".one-dark .HyperMD-codeblock .language-css .token.function": {
     "color": { "light": "#0184bc", "dark": "#56b6c2" }
   },
-  ".one-dark .HyperMD-codeblock .language-css .token.url > .token.function": {
-    "color": { "light": "#0184bc", "dark": "#56b6c2" }
-  },
   ".one-dark p > code .language-css .token.url > .token.string.url": {
-    "color": { "light": "#50a14f", "dark": "#98c379" }
-  },
-  ".one-dark pre:not(.frontmatter) .language-css .token.url > .token.string.url": {
-    "color": { "light": "#50a14f", "dark": "#98c379" }
-  },
-  ".one-dark .HyperMD-codeblock .language-css .token.url > .token.string.url": {
     "color": { "light": "#50a14f", "dark": "#98c379" }
   },
   ".one-dark p > code .language-css .token.important": {
@@ -1433,32 +1443,14 @@
   ".one-dark pre:not(.frontmatter) .language-css .token.important": {
     "color": { "light": "#a626a4", "dark": "#c678dd" }
   },
-  ".one-dark pre:not(.frontmatter) .language-css .token.atrule .token.rule": {
-    "color": { "light": "#a626a4", "dark": "#c678dd" }
-  },
   ".one-dark .HyperMD-codeblock .language-css .token.important": {
-    "color": { "light": "#a626a4", "dark": "#c678dd" }
-  },
-  ".one-dark .HyperMD-codeblock .language-css .token.atrule .token.rule": {
     "color": { "light": "#a626a4", "dark": "#c678dd" }
   },
   ".one-dark p > code .language-javascript .token.operator": {
     "color": { "light": "#a626a4", "dark": "#c678dd" }
   },
-  ".one-dark pre:not(.frontmatter) .language-javascript .token.operator": {
-    "color": { "light": "#a626a4", "dark": "#c678dd" }
-  },
   ".one-dark .HyperMD-codeblock .language-javascript .token.operator": {
     "color": { "light": "#a626a4", "dark": "#c678dd" }
-  },
-  ".one-dark p > code .language-javascript .token.template-string > .token.interpolation > .token.interpolation-punctuation.punctuation": {
-    "color": { "light": "#ca1243", "dark": "#be5046" }
-  },
-  ".one-dark pre:not(.frontmatter) .language-javascript .token.template-string > .token.interpolation > .token.interpolation-punctuation.punctuation": {
-    "color": { "light": "#ca1243", "dark": "#be5046" }
-  },
-  ".one-dark .HyperMD-codeblock .language-javascript .token.template-string > .token.interpolation > .token.interpolation-punctuation.punctuation": {
-    "color": { "light": "#ca1243", "dark": "#be5046" }
   },
   ".one-dark p > code .language-json .token.operator": {
     "color": { "light": "#383a42", "dark": "#abb2bf" }
@@ -1484,34 +1476,13 @@
   ".one-dark p > code .language-markdown .token.url > .token.operator": {
     "color": { "light": "#383a42", "dark": "#abb2bf" }
   },
-  ".one-dark p > code .language-markdown .token.url-reference.url > .token.string": {
-    "color": { "light": "#383a42", "dark": "#abb2bf" }
-  },
   ".one-dark pre:not(.frontmatter) .language-markdown .token.url": {
-    "color": { "light": "#383a42", "dark": "#abb2bf" }
-  },
-  ".one-dark pre:not(.frontmatter) .language-markdown .token.url > .token.operator": {
-    "color": { "light": "#383a42", "dark": "#abb2bf" }
-  },
-  ".one-dark pre:not(.frontmatter) .language-markdown .token.url-reference.url > .token.string": {
     "color": { "light": "#383a42", "dark": "#abb2bf" }
   },
   ".one-dark .HyperMD-codeblock .language-markdown .token.url": {
     "color": { "light": "#383a42", "dark": "#abb2bf" }
   },
-  ".one-dark .HyperMD-codeblock .language-markdown .token.url > .token.operator": {
-    "color": { "light": "#383a42", "dark": "#abb2bf" }
-  },
-  ".one-dark .HyperMD-codeblock .language-markdown .token.url-reference.url > .token.string": {
-    "color": { "light": "#383a42", "dark": "#abb2bf" }
-  },
   ".one-dark p > code .language-markdown .token.url > .token.content": {
-    "color": { "light": "#4078f2", "dark": "#61afef" }
-  },
-  ".one-dark pre:not(.frontmatter) .language-markdown .token.url > .token.content": {
-    "color": { "light": "#4078f2", "dark": "#61afef" }
-  },
-  ".one-dark .HyperMD-codeblock .language-markdown .token.url > .token.content": {
     "color": { "light": "#4078f2", "dark": "#61afef" }
   },
   ".one-dark p > code .language-markdown .token.url > .token.url": {
@@ -1520,103 +1491,23 @@
   ".one-dark p > code .language-markdown .token.url-reference.url": {
     "color": { "light": "#0184bc", "dark": "#56b6c2" }
   },
-  ".one-dark pre:not(.frontmatter) .language-markdown .token.url > .token.url": {
-    "color": { "light": "#0184bc", "dark": "#56b6c2" }
-  },
-  ".one-dark pre:not(.frontmatter) .language-markdown .token.url-reference.url": {
-    "color": { "light": "#0184bc", "dark": "#56b6c2" }
-  },
-  ".one-dark .HyperMD-codeblock .language-markdown .token.url > .token.url": {
-    "color": { "light": "#0184bc", "dark": "#56b6c2" }
-  },
-  ".one-dark .HyperMD-codeblock .language-markdown .token.url-reference.url": {
-    "color": { "light": "#0184bc", "dark": "#56b6c2" }
-  },
-  ".one-dark p > code .language-markdown .token.blockquote.punctuation": {
-    "color": { "light": "#a0a1a7", "dark": "#5c6370" },
-    "font-style": "italic"
-  },
   ".one-dark p > code .language-markdown .token.hr.punctuation": {
-    "color": { "light": "#a0a1a7", "dark": "#5c6370" },
-    "font-style": "italic"
-  },
-  ".one-dark pre:not(.frontmatter) .language-markdown .token.blockquote.punctuation": {
-    "color": { "light": "#a0a1a7", "dark": "#5c6370" },
-    "font-style": "italic"
-  },
-  ".one-dark pre:not(.frontmatter) .language-markdown .token.hr.punctuation": {
-    "color": { "light": "#a0a1a7", "dark": "#5c6370" },
-    "font-style": "italic"
-  },
-  ".one-dark .HyperMD-codeblock .language-markdown .token.blockquote.punctuation": {
-    "color": { "light": "#a0a1a7", "dark": "#5c6370" },
-    "font-style": "italic"
-  },
-  ".one-dark .HyperMD-codeblock .language-markdown .token.hr.punctuation": {
     "color": { "light": "#a0a1a7", "dark": "#5c6370" },
     "font-style": "italic"
   },
   ".one-dark p > code .language-markdown .token.code-snippet": {
     "color": { "light": "#50a14f", "dark": "#98c379" }
   },
-  ".one-dark pre:not(.frontmatter) .language-markdown .token.code-snippet": {
-    "color": { "light": "#50a14f", "dark": "#98c379" }
-  },
-  ".one-dark .HyperMD-codeblock .language-markdown .token.code-snippet": {
-    "color": { "light": "#50a14f", "dark": "#98c379" }
-  },
   ".one-dark p > code .language-markdown .token.bold .token.content": {
-    "color": { "light": "#b76b01", "dark": "#d19a66" }
-  },
-  ".one-dark pre:not(.frontmatter) .language-markdown .token.bold .token.content": {
-    "color": { "light": "#b76b01", "dark": "#d19a66" }
-  },
-  ".one-dark .HyperMD-codeblock .language-markdown .token.bold .token.content": {
     "color": { "light": "#b76b01", "dark": "#d19a66" }
   },
   ".one-dark p > code .language-markdown .token.italic .token.content": {
     "color": { "light": "#a626a4", "dark": "#c678dd" }
   },
-  ".one-dark pre:not(.frontmatter) .language-markdown .token.italic .token.content": {
-    "color": { "light": "#a626a4", "dark": "#c678dd" }
-  },
-  ".one-dark .HyperMD-codeblock .language-markdown .token.italic .token.content": {
-    "color": { "light": "#a626a4", "dark": "#c678dd" }
-  },
   ".one-dark p > code .language-markdown .token.strike .token.content": {
     "color": { "light": "#e45649", "dark": "#e06c75" }
   },
-  ".one-dark p > code .language-markdown .token.strike .token.punctuation": {
-    "color": { "light": "#e45649", "dark": "#e06c75" }
-  },
   ".one-dark p > code .language-markdown .token.list.punctuation": {
-    "color": { "light": "#e45649", "dark": "#e06c75" }
-  },
-  ".one-dark p > code .language-markdown .token.title.important > .token.punctuation": {
-    "color": { "light": "#e45649", "dark": "#e06c75" }
-  },
-  ".one-dark pre:not(.frontmatter) .language-markdown .token.strike .token.content": {
-    "color": { "light": "#e45649", "dark": "#e06c75" }
-  },
-  ".one-dark pre:not(.frontmatter) .language-markdown .token.strike .token.punctuation": {
-    "color": { "light": "#e45649", "dark": "#e06c75" }
-  },
-  ".one-dark pre:not(.frontmatter) .language-markdown .token.list.punctuation": {
-    "color": { "light": "#e45649", "dark": "#e06c75" }
-  },
-  ".one-dark pre:not(.frontmatter) .language-markdown .token.title.important > .token.punctuation": {
-    "color": { "light": "#e45649", "dark": "#e06c75" }
-  },
-  ".one-dark .HyperMD-codeblock .language-markdown .token.strike .token.content": {
-    "color": { "light": "#e45649", "dark": "#e06c75" }
-  },
-  ".one-dark .HyperMD-codeblock .language-markdown .token.strike .token.punctuation": {
-    "color": { "light": "#e45649", "dark": "#e06c75" }
-  },
-  ".one-dark .HyperMD-codeblock .language-markdown .token.list.punctuation": {
-    "color": { "light": "#e45649", "dark": "#e06c75" }
-  },
-  ".one-dark .HyperMD-codeblock .language-markdown .token.title.important > .token.punctuation": {
     "color": { "light": "#e45649", "dark": "#e06c75" }
   },
   ".one-dark p > code .token.bold": { "font-weight": "bold" },
@@ -3135,12 +3026,6 @@
   ".suggestion-container": {
     "--shadow-color": { "light": "60deg 5% 59%", "dark": "0deg 0% 1%" }
   },
-  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation input": {
-    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
-  },
-  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation textarea": {
-    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
-  },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
       "light": null,
@@ -3148,7 +3033,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4)) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {
@@ -3500,11 +3385,15 @@
   ".checkbox-container": {
     "--shadow-color": { "light": null, "dark": "0deg 0% 1%" }
   },
-  "body.enable-alternative-checkboxes li[data-task=\"<\"] input[type=\"checkbox\"]:checked::after": {
-    "background-color": { "light": null, "dark": "var(--lavender)" }
+  ".one-dark .HyperMD-codeblock .token.attr-value > .token.punctuation": {
+    "color": { "light": null, "dark": "#98c379" }
   },
-  "body.enable-alternative-checkboxes input[type=\"checkbox\"][data-task=\"<\"]::after": {
-    "background-color": { "light": null, "dark": "var(--lavender)" }
+  ".one-dark p > code .language-markdown .token.blockquote.punctuation": {
+    "color": { "light": null, "dark": "#5c6370" },
+    "font-style": { "light": null, "dark": "italic" }
+  },
+  ".one-dark .HyperMD-codeblock .language-markdown .token.code-snippet": {
+    "color": { "light": null, "dark": "#98c379" }
   },
   ".solarized p > code .namespace": {
     "opacity": { "light": null, "dark": "0.7" }

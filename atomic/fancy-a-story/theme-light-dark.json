@@ -17,116 +17,12 @@
     "--note-accent-5-s": { "light": "82.6%", "dark": "85%" },
     "--note-accent-6-h": { "light": "194.8", "dark": "192" },
     "--note-accent-6-l": { "light": "16.3%", "dark": "28%" },
-    "--note-accent-6-s": { "light": "83.1%", "dark": "56%" }
+    "--note-accent-6-s": { "light": "83.1%", "dark": "56%" },
+    "--canvas-color": { "light": null, "dark": "126, 126, 126" }
   },
   ".notice progress[value]::-webkit-progress-bar": {
     "background-color": { "light": "#262626", "dark": null },
     "box-shadow": { "light": "inset 0px 0px 0px 1px #363636", "dark": null }
-  },
-  "@charset \"UTF-8\";\n.is-mobile": {
-    "--color-base-00": { "light": "#e7e7e7", "dark": null },
-    "--color-base-05": {
-      "light": "color-mix( in var(--color-space), var(--color-base-00), var(--color-base-100) 05% )",
-      "dark": null
-    },
-    "--color-base-10": {
-      "light": "color-mix( in var(--color-space), var(--color-base-00), var(--color-base-100) 10% )",
-      "dark": null
-    },
-    "--color-base-100": { "light": "#000000", "dark": null },
-    "--color-base-20": {
-      "light": "color-mix( in var(--color-space), var(--color-base-00), var(--color-base-100) 15% )",
-      "dark": null
-    },
-    "--color-base-25": {
-      "light": "color-mix( in var(--color-space), var(--color-base-00), var(--color-base-100) 25% )",
-      "dark": null
-    },
-    "--color-base-30": {
-      "light": "color-mix( in var(--color-space), var(--color-base-00), var(--color-base-100) 20% )",
-      "dark": null
-    },
-    "--color-base-35": {
-      "light": "color-mix( in var(--color-space), var(--color-base-00), var(--color-base-100) 35% )",
-      "dark": null
-    },
-    "--color-base-40": {
-      "light": "color-mix( in var(--color-space), var(--color-base-00), var(--color-base-100) 40% )",
-      "dark": null
-    },
-    "--color-base-50": {
-      "light": "color-mix( in var(--color-space), var(--color-base-00), var(--color-base-100) 50% )",
-      "dark": null
-    },
-    "--color-base-60": {
-      "light": "color-mix( in var(--color-space), var(--color-base-00), var(--color-base-100) 60% )",
-      "dark": null
-    },
-    "--color-base-70": {
-      "light": "color-mix( in var(--color-space), var(--color-base-00), var(--color-base-100) 70% )",
-      "dark": null
-    },
-    "--color-blue": { "light": "#323296", "dark": null },
-    "--color-blue-hover": {
-      "light": "color-mix( in srgb, var(--color-blue), rgb(var(--mono-rgb-0)) 20% )",
-      "dark": null
-    },
-    "--color-blue-rgb": { "light": "50, 50, 150", "dark": null },
-    "--color-brown": { "light": "#632006", "dark": null },
-    "--color-brown-hover": {
-      "light": "color-mix( in srgb, var(--color-brown), rgb(var(--mono-rgb-0)) 20% )",
-      "dark": null
-    },
-    "--color-brown-rgb": { "light": "99, 32, 6", "dark": null },
-    "--color-cyan": { "light": "#319191", "dark": null },
-    "--color-cyan-hover": {
-      "light": "color-mix( in srgb, var(--color-cyan), rgb(var(--mono-rgb-0)) 20% )",
-      "dark": null
-    },
-    "--color-cyan-rgb": { "light": "49, 145, 145", "dark": null },
-    "--color-gray": { "light": "#4d4d4d", "dark": null },
-    "--color-gray-hover": {
-      "light": "color-mix( in srgb, var(--color-gray), rgb(var(--mono-rgb-0)) 20% )",
-      "dark": null
-    },
-    "--color-gray-rgb": { "light": "77, 77, 77", "dark": null },
-    "--color-green": { "light": "#0d610d", "dark": null },
-    "--color-green-hover": {
-      "light": "color-mix( in srgb, var(--color-green), rgb(var(--mono-rgb-0)) 20% )",
-      "dark": null
-    },
-    "--color-green-rgb": { "light": "13, 97, 13", "dark": null },
-    "--color-orange": { "light": "#be6900", "dark": null },
-    "--color-orange-hover": {
-      "light": "color-mix( in srgb, var(--color-orange), rgb(var(--mono-rgb-0)) 20% )",
-      "dark": null
-    },
-    "--color-orange-rgb": { "light": "190, 105, 0", "dark": null },
-    "--color-pink": { "light": "#e43eba", "dark": null },
-    "--color-pink-hover": {
-      "light": "color-mix( in srgb, var(--color-pink), rgb(var(--mono-rgb-0)) 20% )",
-      "dark": null
-    },
-    "--color-pink-rgb": { "light": "228, 62, 186", "dark": null },
-    "--color-purple": { "light": "#641c7a", "dark": null },
-    "--color-purple-hover": {
-      "light": "color-mix( in srgb, var(--color-purple), rgb(var(--mono-rgb-0)) 20% )",
-      "dark": null
-    },
-    "--color-purple-rgb": { "light": "100, 28, 122", "dark": null },
-    "--color-red": { "light": "#b13030", "dark": null },
-    "--color-red-hover": {
-      "light": "color-mix( in srgb, var(--color-red), rgb(var(--mono-rgb-0)) 20% )",
-      "dark": null
-    },
-    "--color-red-rgb": { "light": "177, 48, 48", "dark": null },
-    "--color-space": { "light": "srgb-linear", "dark": null },
-    "--color-yellow": { "light": "#d4b815", "dark": null },
-    "--color-yellow-hover": {
-      "light": "color-mix( in srgb, var(--color-yellow), rgb(var(--mono-rgb-0)) 20% )",
-      "dark": null
-    },
-    "--color-yellow-rgb": { "light": "212, 184, 21", "dark": null }
   },
   ".is-mobile.fas-custom-light": {
     "--color-base-00": { "light": "var(--custom-color-base-00)", "dark": null },
@@ -690,22 +586,20 @@
     "--middle-color": { "light": "hsl(87.0967741935, 70%, 40%)", "dark": null },
     "--middle-color-complement": { "light": "#5f1fad", "dark": null }
   },
-  ".callout[data-callout=\"pinned\"]:not([data-callout-metadata~=\"dark\"])": {
-    "--callout-border-opacity": { "light": "0.15", "dark": null },
-    "--callout-border-width": { "light": "1px", "dark": null }
-  },
   ".callout[data-callout=\"screen\"]": {
     "--callout-color": { "light": "33, 162, 58", "dark": "68, 207, 110" }
   },
   ".workspace-leaf-content[data-type=\"pdf\"] .page": {
-    "mix-blend-mode": { "light": "var(--pdf-blend-mode-light)", "dark": null }
+    "mix-blend-mode": {
+      "light": "var(--pdf-blend-mode-light)",
+      "dark": "var(--pdf-blend-mode-dark)"
+    }
   },
   ".pdf-embed .page": {
     "mix-blend-mode": {
       "light": "var(--pdf-blend-mode-light)",
       "dark": "var(--pdf-blend-mode-dark)"
-    },
-    "filter": { "light": null, "dark": "invert(1)" }
+    }
   },
   ".workspace-tabs.mod-stacked": {
     "--tab-color": {
@@ -725,20 +619,11 @@
       "dark": "-10px 0 10px rgba(0, 0, 0, 0.2)"
     }
   },
-  "body:not(.fas-custom-light) .style-settings-container [data-id=\"custom-color-base-00\"]": {
-    "opacity": { "light": "0.5", "dark": null },
-    "pointer-events": { "light": "none", "dark": null }
-  },
-  "body:not(.fas-custom-light) .style-settings-container [data-id=\"custom-color-base-100\"]": {
-    "opacity": { "light": "0.5", "dark": null },
-    "pointer-events": { "light": "none", "dark": null }
-  },
-  ".dropdown": { "background-image": { "light": null, "dark": "url(\"data" } },
-  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation input": {
-    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
-  },
-  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation textarea": {
-    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  ".dropdown": {
+    "background-image": {
+      "light": null,
+      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+    }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -747,7 +632,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4)) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {
@@ -775,109 +660,141 @@
     "fill": { "light": null, "dark": "var(--background-secondary)" }
   },
   ".is-mobile": {
+    "--background-modifier-cover": {
+      "light": null,
+      "dark": "rgba(0, 0, 0, 0.5)"
+    },
+    "--background-modifier-form-field": {
+      "light": null,
+      "dark": "var(--background-modifier-border)"
+    },
+    "--background-modifier-hover": {
+      "light": null,
+      "dark": "rgba(var(--mono-rgb-100), 0.15)"
+    },
+    "--background-modifier-message": {
+      "light": null,
+      "dark": "var(--background-secondary)"
+    },
     "--color-base-00": { "light": null, "dark": "#1f1f1f" },
     "--color-base-05": {
       "light": null,
-      "dark": "color-mix( in var(--color-space), var(--color-base-00), var(--color-base-100) 05% )"
+      "dark": "color-mix(in var(--color-space), var(--color-base-00), var(--color-base-100) 05%)"
     },
     "--color-base-10": {
       "light": null,
-      "dark": "color-mix( in var(--color-space), var(--color-base-00), var(--color-base-100) 10% )"
+      "dark": "color-mix(in var(--color-space), var(--color-base-00), var(--color-base-100) 10%)"
     },
     "--color-base-100": { "light": null, "dark": "#d9d9d9" },
     "--color-base-20": {
       "light": null,
-      "dark": "color-mix( in var(--color-space), var(--color-base-00), var(--color-base-100) 15% )"
+      "dark": "color-mix(in var(--color-space), var(--color-base-00), var(--color-base-100) 15%)"
     },
     "--color-base-25": {
       "light": null,
-      "dark": "color-mix( in var(--color-space), var(--color-base-00), var(--color-base-100) 25% )"
+      "dark": "color-mix(in var(--color-space), var(--color-base-00), var(--color-base-100) 25%)"
     },
     "--color-base-30": {
       "light": null,
-      "dark": "color-mix( in var(--color-space), var(--color-base-00), var(--color-base-100) 20% )"
+      "dark": "color-mix(in var(--color-space), var(--color-base-00), var(--color-base-100) 20%)"
     },
     "--color-base-35": {
       "light": null,
-      "dark": "color-mix( in var(--color-space), var(--color-base-00), var(--color-base-100) 35% )"
+      "dark": "color-mix(in var(--color-space), var(--color-base-00), var(--color-base-100) 35%)"
     },
     "--color-base-40": {
       "light": null,
-      "dark": "color-mix( in var(--color-space), var(--color-base-00), var(--color-base-100) 40% )"
+      "dark": "color-mix(in var(--color-space), var(--color-base-00), var(--color-base-100) 40%)"
     },
     "--color-base-50": {
       "light": null,
-      "dark": "color-mix( in var(--color-space), var(--color-base-00), var(--color-base-100) 50% )"
+      "dark": "color-mix(in var(--color-space), var(--color-base-00), var(--color-base-100) 50%)"
     },
     "--color-base-60": {
       "light": null,
-      "dark": "color-mix( in var(--color-space), var(--color-base-00), var(--color-base-100) 60% )"
+      "dark": "color-mix(in var(--color-space), var(--color-base-00), var(--color-base-100) 60%)"
     },
     "--color-base-70": {
       "light": null,
-      "dark": "color-mix( in var(--color-space), var(--color-base-00), var(--color-base-100) 70% )"
+      "dark": "color-mix(in var(--color-space), var(--color-base-00), var(--color-base-100) 70%)"
     },
     "--color-blue": { "light": null, "dark": "#6795e9" },
     "--color-blue-hover": {
       "light": null,
-      "dark": "color-mix( in srgb, var(--color-blue), rgb(var(--mono-rgb-0)) 20% )"
+      "dark": "color-mix(in srgb, var(--color-blue), rgb(var(--mono-rgb-0)) 20%)"
     },
     "--color-blue-rgb": { "light": null, "dark": "103, 149, 233" },
     "--color-brown": { "light": null, "dark": "#8d6540" },
     "--color-brown-hover": {
       "light": null,
-      "dark": "color-mix( in srgb, var(--color-brown), rgb(var(--mono-rgb-0)) 20% )"
+      "dark": "color-mix(in srgb, var(--color-brown), rgb(var(--mono-rgb-0)) 20%)"
     },
     "--color-brown-rgb": { "light": null, "dark": "141, 101, 64" },
     "--color-cyan": { "light": null, "dark": "#7be2e2" },
     "--color-cyan-hover": {
       "light": null,
-      "dark": "color-mix( in srgb, var(--color-cyan), rgb(var(--mono-rgb-0)) 20% )"
+      "dark": "color-mix(in srgb, var(--color-cyan), rgb(var(--mono-rgb-0)) 20%)"
     },
     "--color-cyan-rgb": { "light": null, "dark": "123, 226, 226" },
     "--color-gray": { "light": null, "dark": "#bdbdbd" },
     "--color-gray-hover": {
       "light": null,
-      "dark": "color-mix( in srgb, var(--color-gray), rgb(var(--mono-rgb-0)) 20% )"
+      "dark": "color-mix(in srgb, var(--color-gray), rgb(var(--mono-rgb-0)) 20%)"
     },
     "--color-gray-rgb": { "light": null, "dark": "189, 189, 189" },
     "--color-green": { "light": null, "dark": "#60db60" },
     "--color-green-hover": {
       "light": null,
-      "dark": "color-mix( in srgb, var(--color-green), rgb(var(--mono-rgb-0)) 20% )"
+      "dark": "color-mix(in srgb, var(--color-green), rgb(var(--mono-rgb-0)) 20%)"
     },
     "--color-green-rgb": { "light": null, "dark": "96, 219, 96" },
     "--color-orange": { "light": null, "dark": "#eea444" },
     "--color-orange-hover": {
       "light": null,
-      "dark": "color-mix( in srgb, var(--color-orange), rgb(var(--mono-rgb-0)) 20% )"
+      "dark": "color-mix(in srgb, var(--color-orange), rgb(var(--mono-rgb-0)) 20%)"
     },
     "--color-orange-rgb": { "light": null, "dark": "238, 164, 68" },
     "--color-pink": { "light": null, "dark": "#f7bdf8" },
     "--color-pink-hover": {
       "light": null,
-      "dark": "color-mix( in srgb, var(--color-pink), rgb(var(--mono-rgb-0)) 20% )"
+      "dark": "color-mix(in srgb, var(--color-pink), rgb(var(--mono-rgb-0)) 20%)"
     },
     "--color-pink-rgb": { "light": null, "dark": "247, 189, 248" },
     "--color-purple": { "light": null, "dark": "#c48bf3" },
     "--color-purple-hover": {
       "light": null,
-      "dark": "color-mix( in srgb, var(--color-purple), rgb(var(--mono-rgb-0)) 20% )"
+      "dark": "color-mix(in srgb, var(--color-purple), rgb(var(--mono-rgb-0)) 20%)"
     },
     "--color-purple-rgb": { "light": null, "dark": "196, 139, 243" },
     "--color-red": { "light": null, "dark": "#f06565" },
     "--color-red-hover": {
       "light": null,
-      "dark": "color-mix( in srgb, var(--color-red), rgb(var(--mono-rgb-0)) 20% )"
+      "dark": "color-mix(in srgb, var(--color-red), rgb(var(--mono-rgb-0)) 20%)"
     },
     "--color-red-rgb": { "light": null, "dark": "240, 101, 101" },
     "--color-space": { "light": null, "dark": "srgb-linear" },
     "--color-yellow": { "light": null, "dark": "yellow" },
     "--color-yellow-hover": {
       "light": null,
-      "dark": "color-mix( in srgb, var(--color-yellow), rgb(var(--mono-rgb-0)) 20% )"
+      "dark": "color-mix(in srgb, var(--color-yellow), rgb(var(--mono-rgb-0)) 20%)"
     },
-    "--color-yellow-rgb": { "light": null, "dark": "255, 255, 0" }
+    "--color-yellow-rgb": { "light": null, "dark": "255, 255, 0" },
+    "--mobile-sidebar-background": {
+      "light": null,
+      "dark": "var(--background-secondary)"
+    },
+    "--search-result-background": {
+      "light": null,
+      "dark": "var(--background-secondary)"
+    },
+    "--settings-home-background": {
+      "light": null,
+      "dark": "var(--background-primary)"
+    },
+    "--tag-background": {
+      "light": null,
+      "dark": "hsla(var(--interactive-accent-hsl), 0.2)"
+    }
   },
   ".is-tablet": {
     "--interactive-hover": {
@@ -1554,37 +1471,10 @@
     },
     "--middle-color-complement": { "light": null, "dark": "#e0b852" }
   },
-  ".callout[data-callout=\"autopsy\"] .callout[data-callout=\"body\"] ul.contains-task-list::before": {
-    "filter": { "light": null, "dark": "invert(1)" }
-  },
-  ".fas-bg-textures .workspace-leaf-content[data-type=\"file-explorer\"]::before": {
-    "mix-blend-mode": {
-      "light": null,
-      "dark": "var(--file-explorer-decoration-blend-dark)"
-    }
-  },
   ".fas-bg-textures .mod-sidedock .workspace-leaf": {
     "background-blend-mode": {
       "light": null,
       "dark": "normal, var(--sidebar-texture-blend-dark)"
     }
-  },
-  "[class*=\"footer-img\"]   > .markdown-preview-section   > div:nth-last-child(1 of div.el-p)": {
-    "background-color": { "light": null, "dark": "white" },
-    "mix-blend-mode": { "light": null, "dark": "screen" }
-  },
-  "[class*=\"footer-img\"]   > .markdown-preview-section   > div:nth-last-child(1 of div.el-p)   p": {
-    "background-color": {
-      "light": null,
-      "dark": "rgb( from var(--footer-img-color) calc(255 - r) calc(255 - g) calc(255 - b) )"
-    }
-  },
-  "body:not(.fas-custom-dark) .style-settings-container [data-id=\"custom-color-base-00\"]": {
-    "opacity": { "light": null, "dark": "0.5" },
-    "pointer-events": { "light": null, "dark": "none" }
-  },
-  "body:not(.fas-custom-dark) .style-settings-container [data-id=\"custom-color-base-100\"]": {
-    "opacity": { "light": null, "dark": "0.5" },
-    "pointer-events": { "light": null, "dark": "none" }
   }
 }

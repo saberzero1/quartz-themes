@@ -1,9 +1,10 @@
 {
   "body": {
     "--text-highlight-bg": {
-      "light": "hsla( var(--accent-h), var(--accent-s), var(--accent-l), 0.1 )",
-      "dark": "hsla( var(--accent-h), var(--accent-s), var(--accent-l), 0.4 )"
-    }
+      "light": "hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1)",
+      "dark": "hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.4)"
+    },
+    "--canvas-color": { "light": null, "dark": "126, 126, 126" }
   },
   ".notice progress[value]::-webkit-progress-bar": {
     "background-color": { "light": "#262626", "dark": null },
@@ -22,42 +23,38 @@
     "--background-primary": "var(--color-base-00)",
     "--background-secondary": "var(--color-base-00)"
   },
-  ".theme-rounded .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active": {
-    "background-color": { "light": "transparent", "dark": null },
-    "box-shadow": { "light": "none", "dark": null }
-  },
   ".theme-rounded .workspace-tab-header-container": {
     "background-color": { "light": "transparent", "dark": null },
     "box-shadow": { "light": "none", "dark": null }
   },
   ".theme-rounded .workspace-ribbon.mod-left": {
-    "background-color": "hsla( var(--accent-h), var(--accent-s), var(--accent-l), 0.05 )",
+    "background-color": "hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.05)",
     "border-right": "none",
     "box-shadow": { "light": "none", "dark": null }
   },
   ".theme-rounded .workspace-ribbon.mod-left:before": {
     "background-color": {
-      "light": "hsla( var(--accent-h), var(--accent-s), var(--accent-l), 0.05 )",
+      "light": "hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.05)",
       "dark": null
     }
   },
   ".theme-rounded .workspace-tabs:not(.mod-stacked) .workspace-leaf": {
     "border": {
-      "light": "1px solid hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.22)",
+      "light": "1px solidhsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.22)",
       "dark": null
     },
     "border-radius": { "light": "25px", "dark": null }
   },
   ".theme-rounded .workspace-split": {
     "background-color": {
-      "light": "hsla( var(--accent-h), var(--accent-s), var(--accent-l), 0.06 )",
+      "light": "hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.06)",
       "dark": null
     }
   },
   "body.nav-1 .tree-item-self.is-active": {
     "background-color": {
-      "light": "hsla( var(--accent-h), var(--accent-s), var(--accent-s), 0.1 )",
-      "dark": "hsla( var(--accent-h), var(--accent-s), var(--accent-s), 0.04 )"
+      "light": "hsla(var(--accent-h), var(--accent-s), var(--accent-s), 0.1)",
+      "dark": "hsla(var(--accent-h), var(--accent-s), var(--accent-s), 0.04)"
     },
     "border-radius": "0px",
     "border-right": "5px solid var(--color-accent)",
@@ -66,8 +63,8 @@
   },
   "body.nav-1 .tree-item-self:hover": {
     "background-color": {
-      "light": "hsla( var(--accent-h), var(--accent-s), var(--accent-s), 0.1 )",
-      "dark": "hsla( var(--accent-h), var(--accent-s), var(--accent-s), 0.04 )"
+      "light": "hsla(var(--accent-h), var(--accent-s), var(--accent-s), 0.1)",
+      "dark": "hsla(var(--accent-h), var(--accent-s), var(--accent-s), 0.04)"
     },
     "border-radius": "0px",
     "color": "var(--color-accent)",
@@ -78,44 +75,43 @@
   },
   ".cm-s-obsidian span.cm-hmd-internal-link:hover": {
     "background-color": {
-      "light": "hsla( var(--accent-h), var(--accent-s), var(--accent-l), 0.08 )",
-      "dark": "hsla( var(--accent-h), var(--accent-s), var(--accent-l), 0.3 )"
+      "light": "hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.08)",
+      "dark": "hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.3)"
     },
     "transition": "0.2s"
   },
   "a.internal-link:hover": {
     "background-color": {
-      "light": "hsla( var(--accent-h), var(--accent-s), var(--accent-l), 0.08 )",
-      "dark": "hsla( var(--accent-h), var(--accent-s), var(--accent-l), 0.3 )"
+      "light": "hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.08)",
+      "dark": "hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.3)"
     },
     "transition": "0.2s"
   },
   ".cm-link:hover": {
     "background-color": {
-      "light": "hsla( var(--accent-h), var(--accent-s), var(--accent-l), 0.08 )",
-      "dark": "hsla( var(--accent-h), var(--accent-s), var(--accent-l), 0.3 )"
+      "light": "hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.08)",
+      "dark": "hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.3)"
     },
     "transition": "0.2s"
   },
   ".external-link:hover": {
     "background-color": {
-      "light": "hsla( var(--accent-h), var(--accent-s), var(--accent-l), 0.08 )",
-      "dark": "hsla( var(--accent-h), var(--accent-s), var(--accent-l), 0.3 )"
+      "light": "hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.08)",
+      "dark": "hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.3)"
     },
     "transition": "0.2s"
   },
   ".search-result-file-matched-text": {
     "background-color": {
-      "light": "hsla( var(--accent-h), var(--accent-s), var(--accent-l), 0.08 )",
-      "dark": "hsla( var(--accent-h), var(--accent-s), var(--accent-l), 0.3 )"
+      "light": "hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.08)",
+      "dark": "hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.3)"
     }
   },
-  ".dropdown": { "background-image": { "light": null, "dark": "url(\"data" } },
-  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation input": {
-    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
-  },
-  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation textarea": {
-    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  ".dropdown": {
+    "background-image": {
+      "light": null,
+      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+    }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -124,7 +120,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4)) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {
@@ -235,57 +231,53 @@
   ":not(.theme-black": {
     "background-color": {
       "light": null,
-      "dark": "hsl( var(--accent-h), var(--accent-s), calc(var(--accent-l) * 0.25) )"
+      "dark": "hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) * 0.25))"
     }
   },
-  ".is-hidden-frameless:not(   .is-fullscreen": {
-    "background-color": {
+  ".is-hidden-frameless:not": {
+    ".is-fullscreen, .theme-black, .theme-rounded).workspace-tabs.mod-top-left-space.workspace-tab-header-container": {
       "light": null,
-      "dark": "hsl( var(--accent-h), var(--accent-s), calc(var(--accent-l) * 0.25) )"
+      "dark": "before {background-color:hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) * 0.25))"
     }
   },
   ".theme-rounded:not(.theme-black)": {
     "--background-primary": {
       "light": null,
-      "dark": "hsla( var(--accent-h), var(--accent-s), var(--accent-l), 0.01 )"
+      "dark": "hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.01)"
     }
   },
   ".theme-rounded .mod-root .workspace-tab-header.is-active": {
     "background-color": { "light": null, "dark": "transparent" },
     "box-shadow": { "light": null, "dark": "none" }
   },
-  ".theme-rounded:not(.theme-black) .workspace-split.mod-root .view-content": {
-    "background-color": { "light": null, "dark": "transparent" },
-    "box-shadow": { "light": null, "dark": "none" }
+  ".theme-rounded:not(.theme-black": {
+    ".mod-root.workspace-tabs.workspace-leaf {background-color": {
+      "light": null,
+      "dark": "hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.06)"
+    }
   },
   ".theme-rounded:not(.theme-black) .workspace-tab-header-container": {
     "background-color": {
       "light": null,
-      "dark": "hsla( var(--accent-h), var(--accent-s), var(--accent-l), 0.06 )"
-    }
-  },
-  ".theme-rounded:not(.theme-black) .mod-root .workspace-tabs .workspace-leaf": {
-    "background-color": {
-      "light": null,
-      "dark": "hsla( var(--accent-h), var(--accent-s), var(--accent-l), 0.06 )"
+      "dark": "hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.06)"
     }
   },
   ".theme-rounded:not(.theme-black) .workspace-ribbon.mod-left:before": {
     "background-color": {
       "light": null,
-      "dark": "hsla( var(--accent-h), var(--accent-s), var(--accent-l), 0.05 )"
+      "dark": "hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.05)"
     }
   },
   ".theme-rounded.theme-black .workspace-ribbon.mod-left:before": {
     "background-color": {
       "light": null,
-      "dark": "hsla( var(--accent-h), var(--accent-s), var(--accent-l), 0.05 )"
+      "dark": "hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.05)"
     }
   },
   ".theme-rounded:not(.theme-black) .workspace-ribbon.mod-left": {
     "background-color": {
       "light": null,
-      "dark": "hsla( var(--accent-h), var(--accent-s), var(--accent-l), 0.06 )"
+      "dark": "hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.06)"
     }
   },
   ".theme-rounded.theme-black .workspace-tab-header.is-active": {
@@ -306,11 +298,14 @@
   ".theme-rounded.theme-black .workspace-split": {
     "background-color": {
       "light": null,
-      "dark": "hsla( var(--accent-h), var(--accent-s), var(--accent-l), 0.05 )"
+      "dark": "hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.05)"
     }
   },
-  ".theme-rounded.theme-black .workspace-tabs:not(.mod-stacked) .workspace-tab-header-container": {
-    "background-color": { "light": null, "dark": "transparent" }
+  ".theme-rounded.theme-blac": {
+    ".workspace-tabs": {
+      "light": null,
+      "dark": "not(.mod-stacked).workspace-tab-header-container {background-color:transparent"
+    }
   },
   ".theme-black:not(.theme-rounded) .workspace-ribbon.mod-left": {
     "background-color": { "light": null, "dark": "#111" }
@@ -318,7 +313,7 @@
   ".theme-black": {
     "--nav-item-background-hover": {
       "light": null,
-      "dark": "hsla( var(--accent-h), var(--accent-s), var(--accent-l), 0.03 )"
+      "dark": "hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.03)"
     }
   }
 }

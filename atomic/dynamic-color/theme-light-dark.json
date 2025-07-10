@@ -16,6 +16,14 @@
       "light": "var(--md-sys-color-outline)",
       "dark": null
     },
+    "--background-modifier-box-shadow": {
+      "light": "rgba(0, 0, 0, 0.1)",
+      "dark": null
+    },
+    "--background-modifier-cover": {
+      "light": "rgba(220, 220, 220, 0.4)",
+      "dark": null
+    },
     "--background-modifier-error": {
       "light": "var(--md-sys-color-error-container)",
       "dark": null
@@ -85,6 +93,50 @@
       "light": "var(--md-sys-color-on-surface)",
       "dark": null
     },
+    "--color-accent": {
+      "light": "hsl(var(--accent-h), var(--accent-s), var(--accent-l))",
+      "dark": null
+    },
+    "--color-accent-1": {
+      "light": "hsl(calc(var(--accent-h) - 1), calc(var(--accent-s) * 1.01), calc(var(--accent-l) * 1.075))",
+      "dark": null
+    },
+    "--color-accent-2": {
+      "light": "hsl(calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15))",
+      "dark": null
+    },
+    "--color-accent-hsl": {
+      "light": "var(--accent-h), var(--accent-s), var(--accent-l)",
+      "dark": null
+    },
+    "--color-base-00": { "light": "#ffffff", "dark": null },
+    "--color-base-05": { "light": "#fcfcfc", "dark": null },
+    "--color-base-10": { "light": "#fafafa", "dark": null },
+    "--color-base-100": { "light": "#222222", "dark": null },
+    "--color-base-20": { "light": "#f6f6f6", "dark": null },
+    "--color-base-25": { "light": "#e3e3e3", "dark": null },
+    "--color-base-30": { "light": "#e0e0e0", "dark": null },
+    "--color-base-35": { "light": "#d4d4d4", "dark": null },
+    "--color-base-40": { "light": "#bdbdbd", "dark": null },
+    "--color-base-50": { "light": "#ababab", "dark": null },
+    "--color-base-60": { "light": "#707070", "dark": null },
+    "--color-base-70": { "light": "#5c5c5c", "dark": null },
+    "--color-blue": { "light": "#086ddd", "dark": null },
+    "--color-blue-rgb": { "light": "8, 109, 221", "dark": null },
+    "--color-cyan": { "light": "#00bfbc", "dark": null },
+    "--color-cyan-rgb": { "light": "0, 191, 188", "dark": null },
+    "--color-green": { "light": "#08b94e", "dark": null },
+    "--color-green-rgb": { "light": "8, 185, 78", "dark": null },
+    "--color-orange": { "light": "#ec7500", "dark": null },
+    "--color-orange-rgb": { "light": "236, 117, 0", "dark": null },
+    "--color-pink": { "light": "#d53984", "dark": null },
+    "--color-pink-rgb": { "light": "213, 57, 132", "dark": null },
+    "--color-purple": { "light": "#7852ee", "dark": null },
+    "--color-purple-rgb": { "light": "120, 82, 238", "dark": null },
+    "--color-red": { "light": "#e93147", "dark": null },
+    "--color-red-rgb": { "light": "233, 49, 71", "dark": null },
+    "--color-yellow": { "light": "#e0ac00", "dark": null },
+    "--color-yellow-rgb": { "light": "224, 172, 0", "dark": null },
     "--divider-color": {
       "light": "var(--md-sys-color-outline-variant)",
       "dark": null
@@ -130,6 +182,7 @@
     "--h4-color": { "light": "var(--md-sys-color-on-surface)", "dark": null },
     "--h5-color": { "light": "var(--md-sys-color-on-surface)", "dark": null },
     "--h6-color": { "light": "var(--md-sys-color-on-surface)", "dark": null },
+    "--highlight-mix-blend-mode": { "light": "darken", "dark": null },
     "--hr-color": {
       "light": "var(--md-sys-color-outline-variant)",
       "dark": null
@@ -137,6 +190,14 @@
     "--hue": { "light": "var(--accent-h, 278)", "dark": null },
     "--inline-title-color": {
       "light": "var(--md-sys-color-on-surface)",
+      "dark": null
+    },
+    "--input-shadow": {
+      "light": "inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent",
+      "dark": null
+    },
+    "--input-shadow-hover": {
+      "light": "inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent",
       "dark": null
     },
     "--interactive-accent": {
@@ -168,7 +229,7 @@
       "dark": null
     },
     "--md-ref-palette-error-100": {
-      "light": "hsl( var(--error-hue) var(--error-saturation) 100% )",
+      "light": "hsl(var(--error-hue) var(--error-saturation) 100%)",
       "dark": null
     },
     "--md-ref-palette-error-12": {
@@ -268,543 +329,543 @@
       "dark": null
     },
     "--md-ref-palette-neutral-0": {
-      "light": "hsl( var(--neutral-hue) var(--neutral-saturation) 0% )",
+      "light": "hsl(var(--neutral-hue) var(--neutral-saturation) 0%)",
       "dark": null
     },
     "--md-ref-palette-neutral-10": {
-      "light": "hsl( var(--neutral-hue) var(--neutral-saturation) 10% )",
+      "light": "hsl(var(--neutral-hue) var(--neutral-saturation) 10%)",
       "dark": null
     },
     "--md-ref-palette-neutral-100": {
-      "light": "hsl( var(--neutral-hue) var(--neutral-saturation) 100% )",
+      "light": "hsl(var(--neutral-hue) var(--neutral-saturation) 100%)",
       "dark": null
     },
     "--md-ref-palette-neutral-12": {
-      "light": "hsl( var(--neutral-hue) var(--neutral-saturation) 12% )",
+      "light": "hsl(var(--neutral-hue) var(--neutral-saturation) 12%)",
       "dark": null
     },
     "--md-ref-palette-neutral-17": {
-      "light": "hsl( var(--neutral-hue) var(--neutral-saturation) 17% )",
+      "light": "hsl(var(--neutral-hue) var(--neutral-saturation) 17%)",
       "dark": null
     },
     "--md-ref-palette-neutral-20": {
-      "light": "hsl( var(--neutral-hue) var(--neutral-saturation) 20% )",
+      "light": "hsl(var(--neutral-hue) var(--neutral-saturation) 20%)",
       "dark": null
     },
     "--md-ref-palette-neutral-22": {
-      "light": "hsl( var(--neutral-hue) var(--neutral-saturation) 22% )",
+      "light": "hsl(var(--neutral-hue) var(--neutral-saturation) 22%)",
       "dark": null
     },
     "--md-ref-palette-neutral-24": {
-      "light": "hsl( var(--neutral-hue) var(--neutral-saturation) 24% )",
+      "light": "hsl(var(--neutral-hue) var(--neutral-saturation) 24%)",
       "dark": null
     },
     "--md-ref-palette-neutral-25": {
-      "light": "hsl( var(--neutral-hue) var(--neutral-saturation) 25% )",
+      "light": "hsl(var(--neutral-hue) var(--neutral-saturation) 25%)",
       "dark": null
     },
     "--md-ref-palette-neutral-30": {
-      "light": "hsl( var(--neutral-hue) var(--neutral-saturation) 30% )",
+      "light": "hsl(var(--neutral-hue) var(--neutral-saturation) 30%)",
       "dark": null
     },
     "--md-ref-palette-neutral-35": {
-      "light": "hsl( var(--neutral-hue) var(--neutral-saturation) 35% )",
+      "light": "hsl(var(--neutral-hue) var(--neutral-saturation) 35%)",
       "dark": null
     },
     "--md-ref-palette-neutral-4": {
-      "light": "hsl( var(--neutral-hue) var(--neutral-saturation) 4% )",
+      "light": "hsl(var(--neutral-hue) var(--neutral-saturation) 4%)",
       "dark": null
     },
     "--md-ref-palette-neutral-40": {
-      "light": "hsl( var(--neutral-hue) var(--neutral-saturation) 40% )",
+      "light": "hsl(var(--neutral-hue) var(--neutral-saturation) 40%)",
       "dark": null
     },
     "--md-ref-palette-neutral-5": {
-      "light": "hsl( var(--neutral-hue) var(--neutral-saturation) 5% )",
+      "light": "hsl(var(--neutral-hue) var(--neutral-saturation) 5%)",
       "dark": null
     },
     "--md-ref-palette-neutral-50": {
-      "light": "hsl( var(--neutral-hue) var(--neutral-saturation) 50% )",
+      "light": "hsl(var(--neutral-hue) var(--neutral-saturation) 50%)",
       "dark": null
     },
     "--md-ref-palette-neutral-6": {
-      "light": "hsl( var(--neutral-hue) var(--neutral-saturation) 6% )",
+      "light": "hsl(var(--neutral-hue) var(--neutral-saturation) 6%)",
       "dark": null
     },
     "--md-ref-palette-neutral-60": {
-      "light": "hsl( var(--neutral-hue) var(--neutral-saturation) 60% )",
+      "light": "hsl(var(--neutral-hue) var(--neutral-saturation) 60%)",
       "dark": null
     },
     "--md-ref-palette-neutral-70": {
-      "light": "hsl( var(--neutral-hue) var(--neutral-saturation) 70% )",
+      "light": "hsl(var(--neutral-hue) var(--neutral-saturation) 70%)",
       "dark": null
     },
     "--md-ref-palette-neutral-80": {
-      "light": "hsl( var(--neutral-hue) var(--neutral-saturation) 80% )",
+      "light": "hsl(var(--neutral-hue) var(--neutral-saturation) 80%)",
       "dark": null
     },
     "--md-ref-palette-neutral-87": {
-      "light": "hsl( var(--neutral-hue) var(--neutral-saturation) 87% )",
+      "light": "hsl(var(--neutral-hue) var(--neutral-saturation) 87%)",
       "dark": null
     },
     "--md-ref-palette-neutral-90": {
-      "light": "hsl( var(--neutral-hue) var(--neutral-saturation) 90% )",
+      "light": "hsl(var(--neutral-hue) var(--neutral-saturation) 90%)",
       "dark": null
     },
     "--md-ref-palette-neutral-92": {
-      "light": "hsl( var(--neutral-hue) var(--neutral-saturation) 92% )",
+      "light": "hsl(var(--neutral-hue) var(--neutral-saturation) 92%)",
       "dark": null
     },
     "--md-ref-palette-neutral-94": {
-      "light": "hsl( var(--neutral-hue) var(--neutral-saturation) 94% )",
+      "light": "hsl(var(--neutral-hue) var(--neutral-saturation) 94%)",
       "dark": null
     },
     "--md-ref-palette-neutral-95": {
-      "light": "hsl( var(--neutral-hue) var(--neutral-saturation) 95% )",
+      "light": "hsl(var(--neutral-hue) var(--neutral-saturation) 95%)",
       "dark": null
     },
     "--md-ref-palette-neutral-96": {
-      "light": "hsl( var(--neutral-hue) var(--neutral-saturation) 96% )",
+      "light": "hsl(var(--neutral-hue) var(--neutral-saturation) 96%)",
       "dark": null
     },
     "--md-ref-palette-neutral-98": {
-      "light": "hsl( var(--neutral-hue) var(--neutral-saturation) 98% )",
+      "light": "hsl(var(--neutral-hue) var(--neutral-saturation) 98%)",
       "dark": null
     },
     "--md-ref-palette-neutral-99": {
-      "light": "hsl( var(--neutral-hue) var(--neutral-saturation) 99% )",
+      "light": "hsl(var(--neutral-hue) var(--neutral-saturation) 99%)",
       "dark": null
     },
     "--md-ref-palette-neutral-variant-0": {
-      "light": "hsl( var(--neutral-variant-hue) var(--neutral-variant-saturation) 0% )",
+      "light": "hsl(var(--neutral-variant-hue) var(--neutral-variant-saturation) 0%)",
       "dark": null
     },
     "--md-ref-palette-neutral-variant-10": {
-      "light": "hsl( var(--neutral-variant-hue) var(--neutral-variant-saturation) 10% )",
+      "light": "hsl(var(--neutral-variant-hue) var(--neutral-variant-saturation) 10%)",
       "dark": null
     },
     "--md-ref-palette-neutral-variant-100": {
-      "light": "hsl( var(--neutral-variant-hue) var(--neutral-variant-saturation) 100% )",
+      "light": "hsl(var(--neutral-variant-hue) var(--neutral-variant-saturation) 100%)",
       "dark": null
     },
     "--md-ref-palette-neutral-variant-12": {
-      "light": "hsl( var(--neutral-variant-hue) var(--neutral-variant-saturation) 12% )",
+      "light": "hsl(var(--neutral-variant-hue) var(--neutral-variant-saturation) 12%)",
       "dark": null
     },
     "--md-ref-palette-neutral-variant-17": {
-      "light": "hsl( var(--neutral-variant-hue) var(--neutral-variant-saturation) 17% )",
+      "light": "hsl(var(--neutral-variant-hue) var(--neutral-variant-saturation) 17%)",
       "dark": null
     },
     "--md-ref-palette-neutral-variant-20": {
-      "light": "hsl( var(--neutral-variant-hue) var(--neutral-variant-saturation) 20% )",
+      "light": "hsl(var(--neutral-variant-hue) var(--neutral-variant-saturation) 20%)",
       "dark": null
     },
     "--md-ref-palette-neutral-variant-22": {
-      "light": "hsl( var(--neutral-variant-hue) var(--neutral-variant-saturation) 22% )",
+      "light": "hsl(var(--neutral-variant-hue) var(--neutral-variant-saturation) 22%)",
       "dark": null
     },
     "--md-ref-palette-neutral-variant-24": {
-      "light": "hsl( var(--neutral-variant-hue) var(--neutral-variant-saturation) 24% )",
+      "light": "hsl(var(--neutral-variant-hue) var(--neutral-variant-saturation) 24%)",
       "dark": null
     },
     "--md-ref-palette-neutral-variant-25": {
-      "light": "hsl( var(--neutral-variant-hue) var(--neutral-variant-saturation) 25% )",
+      "light": "hsl(var(--neutral-variant-hue) var(--neutral-variant-saturation) 25%)",
       "dark": null
     },
     "--md-ref-palette-neutral-variant-30": {
-      "light": "hsl( var(--neutral-variant-hue) var(--neutral-variant-saturation) 30% )",
+      "light": "hsl(var(--neutral-variant-hue) var(--neutral-variant-saturation) 30%)",
       "dark": null
     },
     "--md-ref-palette-neutral-variant-35": {
-      "light": "hsl( var(--neutral-variant-hue) var(--neutral-variant-saturation) 35% )",
+      "light": "hsl(var(--neutral-variant-hue) var(--neutral-variant-saturation) 35%)",
       "dark": null
     },
     "--md-ref-palette-neutral-variant-4": {
-      "light": "hsl( var(--neutral-variant-hue) var(--neutral-variant-saturation) 4% )",
+      "light": "hsl(var(--neutral-variant-hue) var(--neutral-variant-saturation) 4%)",
       "dark": null
     },
     "--md-ref-palette-neutral-variant-40": {
-      "light": "hsl( var(--neutral-variant-hue) var(--neutral-variant-saturation) 40% )",
+      "light": "hsl(var(--neutral-variant-hue) var(--neutral-variant-saturation) 40%)",
       "dark": null
     },
     "--md-ref-palette-neutral-variant-5": {
-      "light": "hsl( var(--neutral-variant-hue) var(--neutral-variant-saturation) 5% )",
+      "light": "hsl(var(--neutral-variant-hue) var(--neutral-variant-saturation) 5%)",
       "dark": null
     },
     "--md-ref-palette-neutral-variant-50": {
-      "light": "hsl( var(--neutral-variant-hue) var(--neutral-variant-saturation) 50% )",
+      "light": "hsl(var(--neutral-variant-hue) var(--neutral-variant-saturation) 50%)",
       "dark": null
     },
     "--md-ref-palette-neutral-variant-6": {
-      "light": "hsl( var(--neutral-variant-hue) var(--neutral-variant-saturation) 6% )",
+      "light": "hsl(var(--neutral-variant-hue) var(--neutral-variant-saturation) 6%)",
       "dark": null
     },
     "--md-ref-palette-neutral-variant-60": {
-      "light": "hsl( var(--neutral-variant-hue) var(--neutral-variant-saturation) 60% )",
+      "light": "hsl(var(--neutral-variant-hue) var(--neutral-variant-saturation) 60%)",
       "dark": null
     },
     "--md-ref-palette-neutral-variant-70": {
-      "light": "hsl( var(--neutral-variant-hue) var(--neutral-variant-saturation) 70% )",
+      "light": "hsl(var(--neutral-variant-hue) var(--neutral-variant-saturation) 70%)",
       "dark": null
     },
     "--md-ref-palette-neutral-variant-80": {
-      "light": "hsl( var(--neutral-variant-hue) var(--neutral-variant-saturation) 80% )",
+      "light": "hsl(var(--neutral-variant-hue) var(--neutral-variant-saturation) 80%)",
       "dark": null
     },
     "--md-ref-palette-neutral-variant-87": {
-      "light": "hsl( var(--neutral-variant-hue) var(--neutral-variant-saturation) 87% )",
+      "light": "hsl(var(--neutral-variant-hue) var(--neutral-variant-saturation) 87%)",
       "dark": null
     },
     "--md-ref-palette-neutral-variant-90": {
-      "light": "hsl( var(--neutral-variant-hue) var(--neutral-variant-saturation) 90% )",
+      "light": "hsl(var(--neutral-variant-hue) var(--neutral-variant-saturation) 90%)",
       "dark": null
     },
     "--md-ref-palette-neutral-variant-92": {
-      "light": "hsl( var(--neutral-variant-hue) var(--neutral-variant-saturation) 92% )",
+      "light": "hsl(var(--neutral-variant-hue) var(--neutral-variant-saturation) 92%)",
       "dark": null
     },
     "--md-ref-palette-neutral-variant-94": {
-      "light": "hsl( var(--neutral-variant-hue) var(--neutral-variant-saturation) 94% )",
+      "light": "hsl(var(--neutral-variant-hue) var(--neutral-variant-saturation) 94%)",
       "dark": null
     },
     "--md-ref-palette-neutral-variant-95": {
-      "light": "hsl( var(--neutral-variant-hue) var(--neutral-variant-saturation) 95% )",
+      "light": "hsl(var(--neutral-variant-hue) var(--neutral-variant-saturation) 95%)",
       "dark": null
     },
     "--md-ref-palette-neutral-variant-96": {
-      "light": "hsl( var(--neutral-variant-hue) var(--neutral-variant-saturation) 96% )",
+      "light": "hsl(var(--neutral-variant-hue) var(--neutral-variant-saturation) 96%)",
       "dark": null
     },
     "--md-ref-palette-neutral-variant-98": {
-      "light": "hsl( var(--neutral-variant-hue) var(--neutral-variant-saturation) 98% )",
+      "light": "hsl(var(--neutral-variant-hue) var(--neutral-variant-saturation) 98%)",
       "dark": null
     },
     "--md-ref-palette-neutral-variant-99": {
-      "light": "hsl( var(--neutral-variant-hue) var(--neutral-variant-saturation) 99% )",
+      "light": "hsl(var(--neutral-variant-hue) var(--neutral-variant-saturation) 99%)",
       "dark": null
     },
     "--md-ref-palette-primary-0": {
-      "light": "hsl( var(--primary-hue) var(--primary-saturation) 0% )",
+      "light": "hsl(var(--primary-hue) var(--primary-saturation) 0%)",
       "dark": null
     },
     "--md-ref-palette-primary-10": {
-      "light": "hsl( var(--primary-hue) var(--primary-saturation) 10% )",
+      "light": "hsl(var(--primary-hue) var(--primary-saturation) 10%)",
       "dark": null
     },
     "--md-ref-palette-primary-100": {
-      "light": "hsl( var(--primary-hue) var(--primary-saturation) 100% )",
+      "light": "hsl(var(--primary-hue) var(--primary-saturation) 100%)",
       "dark": null
     },
     "--md-ref-palette-primary-12": {
-      "light": "hsl( var(--primary-hue) var(--primary-saturation) 12% )",
+      "light": "hsl(var(--primary-hue) var(--primary-saturation) 12%)",
       "dark": null
     },
     "--md-ref-palette-primary-17": {
-      "light": "hsl( var(--primary-hue) var(--primary-saturation) 17% )",
+      "light": "hsl(var(--primary-hue) var(--primary-saturation) 17%)",
       "dark": null
     },
     "--md-ref-palette-primary-20": {
-      "light": "hsl( var(--primary-hue) var(--primary-saturation) 20% )",
+      "light": "hsl(var(--primary-hue) var(--primary-saturation) 20%)",
       "dark": null
     },
     "--md-ref-palette-primary-22": {
-      "light": "hsl( var(--primary-hue) var(--primary-saturation) 22% )",
+      "light": "hsl(var(--primary-hue) var(--primary-saturation) 22%)",
       "dark": null
     },
     "--md-ref-palette-primary-24": {
-      "light": "hsl( var(--primary-hue) var(--primary-saturation) 24% )",
+      "light": "hsl(var(--primary-hue) var(--primary-saturation) 24%)",
       "dark": null
     },
     "--md-ref-palette-primary-25": {
-      "light": "hsl( var(--primary-hue) var(--primary-saturation) 25% )",
+      "light": "hsl(var(--primary-hue) var(--primary-saturation) 25%)",
       "dark": null
     },
     "--md-ref-palette-primary-30": {
-      "light": "hsl( var(--primary-hue) var(--primary-saturation) 30% )",
+      "light": "hsl(var(--primary-hue) var(--primary-saturation) 30%)",
       "dark": null
     },
     "--md-ref-palette-primary-35": {
-      "light": "hsl( var(--primary-hue) var(--primary-saturation) 35% )",
+      "light": "hsl(var(--primary-hue) var(--primary-saturation) 35%)",
       "dark": null
     },
     "--md-ref-palette-primary-4": {
-      "light": "hsl( var(--primary-hue) var(--primary-saturation) 4% )",
+      "light": "hsl(var(--primary-hue) var(--primary-saturation) 4%)",
       "dark": null
     },
     "--md-ref-palette-primary-40": {
-      "light": "hsl( var(--primary-hue) var(--primary-saturation) 40% )",
+      "light": "hsl(var(--primary-hue) var(--primary-saturation) 40%)",
       "dark": null
     },
     "--md-ref-palette-primary-5": {
-      "light": "hsl( var(--primary-hue) var(--primary-saturation) 5% )",
+      "light": "hsl(var(--primary-hue) var(--primary-saturation) 5%)",
       "dark": null
     },
     "--md-ref-palette-primary-50": {
-      "light": "hsl( var(--primary-hue) var(--primary-saturation) 50% )",
+      "light": "hsl(var(--primary-hue) var(--primary-saturation) 50%)",
       "dark": null
     },
     "--md-ref-palette-primary-6": {
-      "light": "hsl( var(--primary-hue) var(--primary-saturation) 6% )",
+      "light": "hsl(var(--primary-hue) var(--primary-saturation) 6%)",
       "dark": null
     },
     "--md-ref-palette-primary-60": {
-      "light": "hsl( var(--primary-hue) var(--primary-saturation) 60% )",
+      "light": "hsl(var(--primary-hue) var(--primary-saturation) 60%)",
       "dark": null
     },
     "--md-ref-palette-primary-70": {
-      "light": "hsl( var(--primary-hue) var(--primary-saturation) 70% )",
+      "light": "hsl(var(--primary-hue) var(--primary-saturation) 70%)",
       "dark": null
     },
     "--md-ref-palette-primary-80": {
-      "light": "hsl( var(--primary-hue) var(--primary-saturation) 80% )",
+      "light": "hsl(var(--primary-hue) var(--primary-saturation) 80%)",
       "dark": null
     },
     "--md-ref-palette-primary-87": {
-      "light": "hsl( var(--primary-hue) var(--primary-saturation) 87% )",
+      "light": "hsl(var(--primary-hue) var(--primary-saturation) 87%)",
       "dark": null
     },
     "--md-ref-palette-primary-90": {
-      "light": "hsl( var(--primary-hue) var(--primary-saturation) 90% )",
+      "light": "hsl(var(--primary-hue) var(--primary-saturation) 90%)",
       "dark": null
     },
     "--md-ref-palette-primary-92": {
-      "light": "hsl( var(--primary-hue) var(--primary-saturation) 92% )",
+      "light": "hsl(var(--primary-hue) var(--primary-saturation) 92%)",
       "dark": null
     },
     "--md-ref-palette-primary-94": {
-      "light": "hsl( var(--primary-hue) var(--primary-saturation) 94% )",
+      "light": "hsl(var(--primary-hue) var(--primary-saturation) 94%)",
       "dark": null
     },
     "--md-ref-palette-primary-95": {
-      "light": "hsl( var(--primary-hue) var(--primary-saturation) 95% )",
+      "light": "hsl(var(--primary-hue) var(--primary-saturation) 95%)",
       "dark": null
     },
     "--md-ref-palette-primary-96": {
-      "light": "hsl( var(--primary-hue) var(--primary-saturation) 96% )",
+      "light": "hsl(var(--primary-hue) var(--primary-saturation) 96%)",
       "dark": null
     },
     "--md-ref-palette-primary-98": {
-      "light": "hsl( var(--primary-hue) var(--primary-saturation) 98% )",
+      "light": "hsl(var(--primary-hue) var(--primary-saturation) 98%)",
       "dark": null
     },
     "--md-ref-palette-primary-99": {
-      "light": "hsl( var(--primary-hue) var(--primary-saturation) 99% )",
+      "light": "hsl(var(--primary-hue) var(--primary-saturation) 99%)",
       "dark": null
     },
     "--md-ref-palette-secondary-0": {
-      "light": "hsl( var(--secondary-hue) var(--secondary-saturation) 0% )",
+      "light": "hsl(var(--secondary-hue) var(--secondary-saturation) 0%)",
       "dark": null
     },
     "--md-ref-palette-secondary-10": {
-      "light": "hsl( var(--secondary-hue) var(--secondary-saturation) 10% )",
+      "light": "hsl(var(--secondary-hue) var(--secondary-saturation) 10%)",
       "dark": null
     },
     "--md-ref-palette-secondary-100": {
-      "light": "hsl( var(--secondary-hue) var(--secondary-saturation) 100% )",
+      "light": "hsl(var(--secondary-hue) var(--secondary-saturation) 100%)",
       "dark": null
     },
     "--md-ref-palette-secondary-12": {
-      "light": "hsl( var(--secondary-hue) var(--secondary-saturation) 12% )",
+      "light": "hsl(var(--secondary-hue) var(--secondary-saturation) 12%)",
       "dark": null
     },
     "--md-ref-palette-secondary-17": {
-      "light": "hsl( var(--secondary-hue) var(--secondary-saturation) 17% )",
+      "light": "hsl(var(--secondary-hue) var(--secondary-saturation) 17%)",
       "dark": null
     },
     "--md-ref-palette-secondary-20": {
-      "light": "hsl( var(--secondary-hue) var(--secondary-saturation) 20% )",
+      "light": "hsl(var(--secondary-hue) var(--secondary-saturation) 20%)",
       "dark": null
     },
     "--md-ref-palette-secondary-22": {
-      "light": "hsl( var(--secondary-hue) var(--secondary-saturation) 22% )",
+      "light": "hsl(var(--secondary-hue) var(--secondary-saturation) 22%)",
       "dark": null
     },
     "--md-ref-palette-secondary-24": {
-      "light": "hsl( var(--secondary-hue) var(--secondary-saturation) 24% )",
+      "light": "hsl(var(--secondary-hue) var(--secondary-saturation) 24%)",
       "dark": null
     },
     "--md-ref-palette-secondary-25": {
-      "light": "hsl( var(--secondary-hue) var(--secondary-saturation) 25% )",
+      "light": "hsl(var(--secondary-hue) var(--secondary-saturation) 25%)",
       "dark": null
     },
     "--md-ref-palette-secondary-30": {
-      "light": "hsl( var(--secondary-hue) var(--secondary-saturation) 30% )",
+      "light": "hsl(var(--secondary-hue) var(--secondary-saturation) 30%)",
       "dark": null
     },
     "--md-ref-palette-secondary-35": {
-      "light": "hsl( var(--secondary-hue) var(--secondary-saturation) 35% )",
+      "light": "hsl(var(--secondary-hue) var(--secondary-saturation) 35%)",
       "dark": null
     },
     "--md-ref-palette-secondary-4": {
-      "light": "hsl( var(--secondary-hue) var(--secondary-saturation) 4% )",
+      "light": "hsl(var(--secondary-hue) var(--secondary-saturation) 4%)",
       "dark": null
     },
     "--md-ref-palette-secondary-40": {
-      "light": "hsl( var(--secondary-hue) var(--secondary-saturation) 40% )",
+      "light": "hsl(var(--secondary-hue) var(--secondary-saturation) 40%)",
       "dark": null
     },
     "--md-ref-palette-secondary-5": {
-      "light": "hsl( var(--secondary-hue) var(--secondary-saturation) 5% )",
+      "light": "hsl(var(--secondary-hue) var(--secondary-saturation) 5%)",
       "dark": null
     },
     "--md-ref-palette-secondary-50": {
-      "light": "hsl( var(--secondary-hue) var(--secondary-saturation) 50% )",
+      "light": "hsl(var(--secondary-hue) var(--secondary-saturation) 50%)",
       "dark": null
     },
     "--md-ref-palette-secondary-6": {
-      "light": "hsl( var(--secondary-hue) var(--secondary-saturation) 6% )",
+      "light": "hsl(var(--secondary-hue) var(--secondary-saturation) 6%)",
       "dark": null
     },
     "--md-ref-palette-secondary-60": {
-      "light": "hsl( var(--secondary-hue) var(--secondary-saturation) 60% )",
+      "light": "hsl(var(--secondary-hue) var(--secondary-saturation) 60%)",
       "dark": null
     },
     "--md-ref-palette-secondary-70": {
-      "light": "hsl( var(--secondary-hue) var(--secondary-saturation) 70% )",
+      "light": "hsl(var(--secondary-hue) var(--secondary-saturation) 70%)",
       "dark": null
     },
     "--md-ref-palette-secondary-80": {
-      "light": "hsl( var(--secondary-hue) var(--secondary-saturation) 80% )",
+      "light": "hsl(var(--secondary-hue) var(--secondary-saturation) 80%)",
       "dark": null
     },
     "--md-ref-palette-secondary-87": {
-      "light": "hsl( var(--secondary-hue) var(--secondary-saturation) 87% )",
+      "light": "hsl(var(--secondary-hue) var(--secondary-saturation) 87%)",
       "dark": null
     },
     "--md-ref-palette-secondary-90": {
-      "light": "hsl( var(--secondary-hue) var(--secondary-saturation) 90% )",
+      "light": "hsl(var(--secondary-hue) var(--secondary-saturation) 90%)",
       "dark": null
     },
     "--md-ref-palette-secondary-92": {
-      "light": "hsl( var(--secondary-hue) var(--secondary-saturation) 92% )",
+      "light": "hsl(var(--secondary-hue) var(--secondary-saturation) 92%)",
       "dark": null
     },
     "--md-ref-palette-secondary-94": {
-      "light": "hsl( var(--secondary-hue) var(--secondary-saturation) 94% )",
+      "light": "hsl(var(--secondary-hue) var(--secondary-saturation) 94%)",
       "dark": null
     },
     "--md-ref-palette-secondary-95": {
-      "light": "hsl( var(--secondary-hue) var(--secondary-saturation) 95% )",
+      "light": "hsl(var(--secondary-hue) var(--secondary-saturation) 95%)",
       "dark": null
     },
     "--md-ref-palette-secondary-96": {
-      "light": "hsl( var(--secondary-hue) var(--secondary-saturation) 96% )",
+      "light": "hsl(var(--secondary-hue) var(--secondary-saturation) 96%)",
       "dark": null
     },
     "--md-ref-palette-secondary-98": {
-      "light": "hsl( var(--secondary-hue) var(--secondary-saturation) 98% )",
+      "light": "hsl(var(--secondary-hue) var(--secondary-saturation) 98%)",
       "dark": null
     },
     "--md-ref-palette-secondary-99": {
-      "light": "hsl( var(--secondary-hue) var(--secondary-saturation) 99% )",
+      "light": "hsl(var(--secondary-hue) var(--secondary-saturation) 99%)",
       "dark": null
     },
     "--md-ref-palette-tertiary-0": {
-      "light": "hsl( var(--tertiary-hue) var(--tertiary-saturation) 0% )",
+      "light": "hsl(var(--tertiary-hue) var(--tertiary-saturation) 0%)",
       "dark": null
     },
     "--md-ref-palette-tertiary-10": {
-      "light": "hsl( var(--tertiary-hue) var(--tertiary-saturation) 10% )",
+      "light": "hsl(var(--tertiary-hue) var(--tertiary-saturation) 10%)",
       "dark": null
     },
     "--md-ref-palette-tertiary-100": {
-      "light": "hsl( var(--tertiary-hue) var(--tertiary-saturation) 100% )",
+      "light": "hsl(var(--tertiary-hue) var(--tertiary-saturation) 100%)",
       "dark": null
     },
     "--md-ref-palette-tertiary-12": {
-      "light": "hsl( var(--tertiary-hue) var(--tertiary-saturation) 12% )",
+      "light": "hsl(var(--tertiary-hue) var(--tertiary-saturation) 12%)",
       "dark": null
     },
     "--md-ref-palette-tertiary-17": {
-      "light": "hsl( var(--tertiary-hue) var(--tertiary-saturation) 17% )",
+      "light": "hsl(var(--tertiary-hue) var(--tertiary-saturation) 17%)",
       "dark": null
     },
     "--md-ref-palette-tertiary-20": {
-      "light": "hsl( var(--tertiary-hue) var(--tertiary-saturation) 20% )",
+      "light": "hsl(var(--tertiary-hue) var(--tertiary-saturation) 20%)",
       "dark": null
     },
     "--md-ref-palette-tertiary-22": {
-      "light": "hsl( var(--tertiary-hue) var(--tertiary-saturation) 22% )",
+      "light": "hsl(var(--tertiary-hue) var(--tertiary-saturation) 22%)",
       "dark": null
     },
     "--md-ref-palette-tertiary-24": {
-      "light": "hsl( var(--tertiary-hue) var(--tertiary-saturation) 24% )",
+      "light": "hsl(var(--tertiary-hue) var(--tertiary-saturation) 24%)",
       "dark": null
     },
     "--md-ref-palette-tertiary-25": {
-      "light": "hsl( var(--tertiary-hue) var(--tertiary-saturation) 25% )",
+      "light": "hsl(var(--tertiary-hue) var(--tertiary-saturation) 25%)",
       "dark": null
     },
     "--md-ref-palette-tertiary-30": {
-      "light": "hsl( var(--tertiary-hue) var(--tertiary-saturation) 30% )",
+      "light": "hsl(var(--tertiary-hue) var(--tertiary-saturation) 30%)",
       "dark": null
     },
     "--md-ref-palette-tertiary-35": {
-      "light": "hsl( var(--tertiary-hue) var(--tertiary-saturation) 35% )",
+      "light": "hsl(var(--tertiary-hue) var(--tertiary-saturation) 35%)",
       "dark": null
     },
     "--md-ref-palette-tertiary-4": {
-      "light": "hsl( var(--tertiary-hue) var(--tertiary-saturation) 4% )",
+      "light": "hsl(var(--tertiary-hue) var(--tertiary-saturation) 4%)",
       "dark": null
     },
     "--md-ref-palette-tertiary-40": {
-      "light": "hsl( var(--tertiary-hue) var(--tertiary-saturation) 40% )",
+      "light": "hsl(var(--tertiary-hue) var(--tertiary-saturation) 40%)",
       "dark": null
     },
     "--md-ref-palette-tertiary-5": {
-      "light": "hsl( var(--tertiary-hue) var(--tertiary-saturation) 5% )",
+      "light": "hsl(var(--tertiary-hue) var(--tertiary-saturation) 5%)",
       "dark": null
     },
     "--md-ref-palette-tertiary-50": {
-      "light": "hsl( var(--tertiary-hue) var(--tertiary-saturation) 50% )",
+      "light": "hsl(var(--tertiary-hue) var(--tertiary-saturation) 50%)",
       "dark": null
     },
     "--md-ref-palette-tertiary-6": {
-      "light": "hsl( var(--tertiary-hue) var(--tertiary-saturation) 6% )",
+      "light": "hsl(var(--tertiary-hue) var(--tertiary-saturation) 6%)",
       "dark": null
     },
     "--md-ref-palette-tertiary-60": {
-      "light": "hsl( var(--tertiary-hue) var(--tertiary-saturation) 60% )",
+      "light": "hsl(var(--tertiary-hue) var(--tertiary-saturation) 60%)",
       "dark": null
     },
     "--md-ref-palette-tertiary-70": {
-      "light": "hsl( var(--tertiary-hue) var(--tertiary-saturation) 70% )",
+      "light": "hsl(var(--tertiary-hue) var(--tertiary-saturation) 70%)",
       "dark": null
     },
     "--md-ref-palette-tertiary-80": {
-      "light": "hsl( var(--tertiary-hue) var(--tertiary-saturation) 80% )",
+      "light": "hsl(var(--tertiary-hue) var(--tertiary-saturation) 80%)",
       "dark": null
     },
     "--md-ref-palette-tertiary-87": {
-      "light": "hsl( var(--tertiary-hue) var(--tertiary-saturation) 87% )",
+      "light": "hsl(var(--tertiary-hue) var(--tertiary-saturation) 87%)",
       "dark": null
     },
     "--md-ref-palette-tertiary-90": {
-      "light": "hsl( var(--tertiary-hue) var(--tertiary-saturation) 90% )",
+      "light": "hsl(var(--tertiary-hue) var(--tertiary-saturation) 90%)",
       "dark": null
     },
     "--md-ref-palette-tertiary-92": {
-      "light": "hsl( var(--tertiary-hue) var(--tertiary-saturation) 92% )",
+      "light": "hsl(var(--tertiary-hue) var(--tertiary-saturation) 92%)",
       "dark": null
     },
     "--md-ref-palette-tertiary-94": {
-      "light": "hsl( var(--tertiary-hue) var(--tertiary-saturation) 94% )",
+      "light": "hsl(var(--tertiary-hue) var(--tertiary-saturation) 94%)",
       "dark": null
     },
     "--md-ref-palette-tertiary-95": {
-      "light": "hsl( var(--tertiary-hue) var(--tertiary-saturation) 95% )",
+      "light": "hsl(var(--tertiary-hue) var(--tertiary-saturation) 95%)",
       "dark": null
     },
     "--md-ref-palette-tertiary-96": {
-      "light": "hsl( var(--tertiary-hue) var(--tertiary-saturation) 96% )",
+      "light": "hsl(var(--tertiary-hue) var(--tertiary-saturation) 96%)",
       "dark": null
     },
     "--md-ref-palette-tertiary-98": {
-      "light": "hsl( var(--tertiary-hue) var(--tertiary-saturation) 98% )",
+      "light": "hsl(var(--tertiary-hue) var(--tertiary-saturation) 98%)",
       "dark": null
     },
     "--md-ref-palette-tertiary-99": {
-      "light": "hsl( var(--tertiary-hue) var(--tertiary-saturation) 99% )",
+      "light": "hsl(var(--tertiary-hue) var(--tertiary-saturation) 99%)",
       "dark": null
     },
     "--md-sys-color-background": {
@@ -999,6 +1060,8 @@
       "light": "var(--md-ref-palette-tertiary-80)",
       "dark": null
     },
+    "--mono-rgb-0": { "light": "255, 255, 255", "dark": null },
+    "--mono-rgb-100": { "light": "0, 0, 0", "dark": null },
     "--neutral-hue": { "light": "var(--hue)", "dark": null },
     "--neutral-saturation": { "light": "4%", "dark": null },
     "--neutral-variant-hue": { "light": "var(--hue)", "dark": null },
@@ -1043,6 +1106,14 @@
     },
     "--secondary-hue": { "light": "var(--hue)", "dark": null },
     "--secondary-saturation": { "light": "16%", "dark": null },
+    "--shadow-l": {
+      "light": "0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2)",
+      "dark": null
+    },
+    "--shadow-s": {
+      "light": "0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07)",
+      "dark": null
+    },
     "--slider-thumb-radius": { "light": "36px", "dark": null },
     "--status-bar-background": {
       "light": "var(--md-sys-color-primary-container)",
@@ -1134,12 +1205,11 @@
     "background-color": { "light": "#262626", "dark": null },
     "box-shadow": { "light": "inset 0px 0px 0px 1px #363636", "dark": null }
   },
-  ".dropdown": { "background-image": { "light": null, "dark": "url(\"data" } },
-  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation input": {
-    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
-  },
-  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation textarea": {
-    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  ".dropdown": {
+    "background-image": {
+      "light": null,
+      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+    }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -1148,7 +1218,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4)) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {

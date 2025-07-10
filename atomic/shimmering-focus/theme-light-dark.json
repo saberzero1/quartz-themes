@@ -188,14 +188,17 @@
       "dark": "hsl(var(--bg-hue-dark) 10% 5%)"
     }
   },
-  ":not(.show-sidebar-header-buttons) :is(.mod-left-split": {
-    "background-color": { "light": "var(--bg2)", "dark": null }
+  ":not(.show-sidebar-header-buttons": {
+    "": {
+      "light": "is(.mod-left-split, .mod-right-split).workspace-tabs:not(.mod-top).workspace-tab-header-container:not(:hover) {background-color:var(--bg2)",
+      "dark": null
+    }
   },
-  ".active-line-background .cm-active.cm-line:not(.HyperMD-quote": {
-    "background-color": { "light": "var(--bg3)", "dark": "var(--bg4)" }
-  },
-  ".link-favicon:is([data-host^=\"github\\.com\"]": {
-    "filter": { "light": "invert(0.2)", "dark": null }
+  ".active-line-backgroun": {
+    ".cm-active.cm-line": {
+      "light": "not(.HyperMD-quote, .HyperMD-codeblock) {background-color:var(--bg3)",
+      "dark": "not(.HyperMD-quote, .HyperMD-codeblock) {background-color:var(--bg4)"
+    }
   },
   ".kanban-plugin__lane-header-wrapper": {
     "background-color": { "light": "var(--bg6)", "dark": null },
@@ -208,12 +211,11 @@
     "background-color": { "light": "var(--bg3)", "dark": "var(--bg5)" },
     "border": { "light": "var(--thin-border)", "dark": "1px solid var(--bg1)" }
   },
-  ".dropdown": { "background-image": { "light": null, "dark": "url(\"data" } },
-  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation input": {
-    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
-  },
-  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation textarea": {
-    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  ".dropdown": {
+    "background-image": {
+      "light": null,
+      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+    }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -222,7 +224,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4)) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {
@@ -328,11 +330,5 @@
   },
   ".colorscheme-grubox :is(.nav-file-title": {
     "color": { "light": null, "dark": "var(--color-base-85)" }
-  },
-  ".vertical-tab-header-group:nth-last-child(3) .vertical-tab-header-group-items .vertical-tab-nav-item:is(:nth-child(4)": {
-    "text-shadow": {
-      "light": null,
-      "dark": "var(--readability-text-shadow-dark)"
-    }
   }
 }

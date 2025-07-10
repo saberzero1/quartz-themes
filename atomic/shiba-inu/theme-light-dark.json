@@ -157,7 +157,7 @@
       "light": "var(--color-white)",
       "dark": "var(--background-primary-alt)"
     },
-    "background-image": "url(\"data",
+    "background-image": "url(\"data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='292.4' height='292.4' viewBox='0 0 512 512' version='1.1'%3E%3Cpath d='' stroke='none' fill='%23787474' fill-rule='evenodd'/%3E%3Cpath d='M 43 101.567 C 23.371 105.817, 6.617 122.017, 1.489 141.703 C -0.419 149.028, -0.419 161.972, 1.489 169.297 C 5.349 184.116, 0.342 178.636, 114.844 293.362 C 183.630 362.282, 222.579 400.593, 226.458 403.146 C 243.573 414.414, 268.427 414.414, 285.542 403.146 C 289.417 400.595, 328.442 362.222, 397.192 293.362 C 500.204 190.185, 502.975 187.310, 506.464 180 C 508.432 175.875, 510.317 170.803, 510.653 168.728 C 510.988 166.653, 511.654 164.714, 512.131 164.419 C 512.609 164.124, 513 159.607, 513 154.382 C 513 149.157, 512.606 145.125, 512.125 145.423 C 511.644 145.720, 510.978 144.284, 510.646 142.232 C 508.623 129.718, 494.926 112.472, 482 106.161 C 474.893 102.691, 464.053 100.035, 457 100.035 C 450.005 100.035, 439.142 102.678, 432 106.118 C 426.058 108.980, 418.222 116.515, 340.750 193.861 L 256 278.473 171.250 193.861 C 93.778 116.515, 85.942 108.980, 80 106.118 C 68.101 100.387, 55.568 98.845, 43 101.567 M 0.365 155.500 C 0.368 161, 0.536 163.122, 0.738 160.216 C 0.941 157.311, 0.939 152.811, 0.734 150.216 C 0.528 147.622, 0.363 150, 0.365 155.500' stroke='none' fill='%23747474' fill-rule='evenodd'/%3E%3C/svg%3E\")",
     "border": {
       "light": "1px solid rgba(100, 100, 100, 0.5)",
       "dark": "1px solid rgba(0, 0, 0, 0.5)"
@@ -230,10 +230,10 @@
       "dark": "0 -1px 5px 0 rgba(0, 0, 0, 0.3) inset"
     }
   },
-  "body.buttons-workspace-style:not(.buttons-plugin-style) .workspace button": {
-    "-webkit-box-shadow": {
+  "body.buttons-workspace-style:not(.buttons-plugin-style": {
+    ".workspacebutton {-webkit-box-shadow": {
       "light": "0 -1px 6px -1px rgba(118, 118, 118, 0.4) inset",
-      "dark": "0 -1px 5px 0 rgba(0, 0, 0, 0.4) inset"
+      "dark": null
     },
     "border": {
       "light": "1px solid rgba(100, 100, 100, 0.3)",
@@ -244,9 +244,13 @@
       "light": "0 -1px 6px -1px rgba(172, 172, 172, 0.4) inset",
       "dark": "0 -1px 5px 0 rgba(0, 0, 0, 0.4) inset"
     },
-    "-moz-box-shadow": {
+    ".workspacebutton {-moz-box-shadow": {
       "light": null,
       "dark": "0 -1px 5px 0 rgba(0, 0, 0, 0.3) inset"
+    },
+    "-webkit-box-shadow": {
+      "light": null,
+      "dark": "0 -1px 5px 0 rgba(0, 0, 0, 0.4) inset"
     }
   },
   "body.buttons-workspace-style .graph-controls button:active": {
@@ -273,42 +277,12 @@
       "dark": "0 0 0 2px rgba(0, 0, 0, 0.15) inset, 0 1px 1px 0 rgba(0, 0, 0, 0.1)"
     }
   },
-  ".modal .modal-content .vertical-tab-header-group-items .vertical-tab-nav-item.is-active": {
-    "border": {
-      "light": "1px solid rgba(100, 100, 100, 0.3)",
-      "dark": "1px solid rgba(0, 0, 0, 0.3)"
-    },
-    "box-shadow": {
-      "light": "0 -1px 2px 0 rgba(100, 100, 100, 0.15) inset, 0 1px 4px 0 rgba(100, 100, 100, 0.25)",
-      "dark": "0 -1px 2px 0 rgba(0, 0, 0, 0.2) inset, 0 1px 4px 0 rgba(0, 0, 0, 0.3)"
-    },
-    "color": { "light": "var(--color-white)", "dark": "var(--color-black)" }
-  },
   ".dropdown:hover": {
     "box-shadow": {
       "light": "inset 0 0 0 1px rgba(100, 100, 100, 0.12), 0 2px 3px 0 rgba(100, 100, 100, 0.25), 0 1px 1.5px 0 rgba(100, 100, 100, 0.03), 0 1px 2px 0 rgba(100, 100, 100, 0.04), 0 0 0 0 transparent",
       "dark": null
     },
     "background-color": { "light": null, "dark": "var(--interactive-hover)" }
-  },
-  ".modal .modal-content .vertical-tab-header-group-items .vertical-tab-nav-item:active": {
-    "background": {
-      "light": "var(--interactive-hover)",
-      "dark": "var(--background-secondary-alt)"
-    },
-    "color": {
-      "light": "var(--text-muted)",
-      "dark": "var(--interactive-accent)"
-    }
-  },
-  ".modal .modal-content .vertical-tab-header-group-items .vertical-tab-nav-item:nth-child(3n + 1).is-active": {
-    "background": "var(--color-accent)"
-  },
-  ".modal .modal-content .vertical-tab-header-group-items .vertical-tab-nav-item:nth-child(3n + 2).is-active": {
-    "background": "var(--color-accent)"
-  },
-  ".modal .modal-content .vertical-tab-header-group-items .vertical-tab-nav-item:nth-child(3n + 3).is-active": {
-    "background": "var(--color-accent)"
   },
   ".checkbox-container": {
     "-webkit-box-shadow": {
@@ -333,27 +307,10 @@
     "background": "var(--color-accent)",
     "border": { "light": "1px solid var(--background-primary)", "dark": null }
   },
-  ".shib-callout-toggle.shib-callout-style-4.shib-callout-toggle.shib-callout-style-4 .callout": {
-    "box-shadow": {
-      "light": "0 2px 6px 0 rgba(0, 0, 0, 0.1)",
-      "dark": "0 2px 6px 0 rgba(0, 0, 0, 0.2)"
-    }
-  },
   ".shib-callout-toggle.shib-callout-style-4 .callout-title": {
     "background": "rgba(var(--callout-color), 0.2)",
     "cursor": { "light": "pointer", "dark": null },
     "padding": { "light": "var(--callout-title-padding)", "dark": null }
-  },
-  ".shib-callout-toggle.shib-callout-style-4 .callout-title .callout-icon": {
-    "border-radius": "10px",
-    "filter": { "light": "brightness(0.75)", "dark": "brightness(1)" }
-  },
-  ".shib-callout-toggle.shib-callout-style-4 .callout.is-collapsed:not(.is-collapsed) .callout-title": {
-    "box-shadow": {
-      "light": "0 -1px 0 0 rgba(0, 0, 0, 0.05) inset",
-      "dark": "0 -1px 0 0 rgba(0, 0, 0, 0.175) inset"
-    },
-    "padding": "0"
   },
   ".shib-callout-toggle.shib-callout-style-4 .callout-fold": {
     "filter": { "light": "brightness(0.75)", "dark": "brightness(1)" }
@@ -372,8 +329,11 @@
     "--italic-color": { "light": "var(--text-normal)", "dark": null },
     "color": { "light": "var(--text-normal)", "dark": null }
   },
-  ".shib-callout-toggle.shib-callout-default .callout:not(.is-collapsible) .callout-title-inner": {
-    "--bold-color": { "light": "var(--text-normal)", "dark": null },
+  ".shib-callout-toggle.shib-callout-defaul": {
+    ".callout": {
+      "light": "not(.is-collapsible).callout-title-inner {--bold-color:var(--text-normal)",
+      "dark": null
+    },
     "--italic-color": { "light": "var(--text-normal)", "dark": null },
     "color": { "light": "var(--text-normal)", "dark": null }
   },
@@ -391,7 +351,7 @@
     "--color-d-progress-10": { "light": null, "dark": "hsl(200, 56%, 60%)" },
     "--color-d-progress-100": {
       "light": null,
-      "dark": "linear-gradient( 45deg, #2990ff95, #3df9ff95, #e46dff95 )"
+      "dark": "linear-gradient(45deg, #2990ff95, #3df9ff95, #e46dff95)"
     },
     "--color-d-progress-20": { "light": null, "dark": "hsl(176, 74%, 57%)" },
     "--color-d-progress-30": { "light": null, "dark": "hsl(162, 30%, 53%)" },
@@ -460,57 +420,63 @@
     "background": { "light": "var(--color-l-progress-100)", "dark": null }
   },
   ".shib-workspace-background-image-toggle.background-settings-workplace-theme-light-cute-town-l": {
-    "--cute-town-l": { "light": "url(\"https", "dark": null },
+    "--cute-town-l": {
+      "light": "url(\"https://github.com/faroukx/aesthetic-wallpapers/blob/main/shibainu/cute-town.png?raw=true\")",
+      "dark": null
+    },
     "--shib-background-image": { "light": "var(--cute-town-l)", "dark": null }
   },
   ".shib-workspace-background-image-toggle.background-settings-workplace-theme-light-japan": {
-    "--japan": { "light": "url(\"https", "dark": null },
+    "--japan": {
+      "light": "url(\"https://i.redd.it/7lnk3bmktpv81.jpg\")",
+      "dark": null
+    },
     "--shib-background-image": { "light": "var(--japan)", "dark": null }
   },
   ".shib-workspace-background-image-toggle.background-settings-workplace-theme-light-robot": {
-    "--robot": { "light": "url(\"https", "dark": null },
+    "--robot": {
+      "light": "url(\"https://github.com/faroukx/aesthetic-wallpapers/blob/main/shibainu/robot.jpg?raw=true\")",
+      "dark": null
+    },
     "--shib-background-image": { "light": "var(--robot)", "dark": null }
   },
   ".shib-workspace-background-image-toggle.background-settings-workplace-theme-light-neocity": {
-    "--neocity": { "light": "url(\"https", "dark": null },
+    "--neocity": {
+      "light": "url(\"https://github.com/faroukx/aesthetic-wallpapers/blob/main/shibainu/neocity.png?raw=true\")",
+      "dark": null
+    },
     "--shib-background-image": { "light": "var(--neocity)", "dark": null }
   },
   ".shib-workspace-background-image-toggle.background-settings-workplace-theme-light-custom-option": {
     "--shib-background-image": {
-      "light": "var( --background-settings-workplace-theme-light-custom )",
+      "light": "var(--background-settings-workplace-theme-light-custom)",
       "dark": null
     }
   },
-  "body.toggle-bg-panel-page:is(.shib-card-layout) :is(   .nav-files-container": {
-    "border-radius": "var(--shib-card-radius, var(--radius-xl))",
+  "body.toggle-bg-panel-page:is(.shib-card-layout": {
+    "": "is(.nav-files-container, .file-tree-plugin-view, [data-type=\"search\"], [data-type=\"starred\"], [data-type=\"recent-files\"])::before {border-radius:var(--shib-card-radius, var(--radius-xl))",
     "opacity": "var(--panel-page-opacity)"
   },
-  "body.toggle-bg-panel-page:not(.shib-card-layout) :is(   .nav-files-container": {
-    "opacity": "var(--panel-page-opacity)"
+  "body.toggle-bg-panel-page:not(.shib-card-layout": {
+    "": "is(.nav-files-container, .file-tree-plugin-view, [data-type=\"search\"], [data-type=\"starred\"], [data-type=\"recent-files\"])::before {opacity:var(--panel-page-opacity)"
   },
   "body.toggle-bg-panel-page.panel-page-bg-theme-light-space": {
     "--panel-page-background-url-theme": {
-      "light": "url(\"https",
+      "light": "url(\"https://i.pinimg.com/originals/52/e5/6f/52e56fb927b170294ccc035f02c6477d.jpg\")",
       "dark": null
     }
   },
   "body.toggle-bg-panel-page.panel-page-bg-theme-light-paradise": {
     "--panel-page-background-url-theme": {
-      "light": "url(\"https",
+      "light": "url(\"https://www.enjpg.com/img/2020/summer-aesthetic-wallpaper-iphone-15.jpg\")",
       "dark": null
     }
   },
   "body.toggle-bg-panel-page.panel-page-bg-theme-light-custom": {
     "--panel-page-background-url-theme": {
-      "light": "var( --background-panel-page-theme-light-custom )",
+      "light": "var(--background-panel-page-theme-light-custom)",
       "dark": null
     }
-  },
-  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation input": {
-    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
-  },
-  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation textarea": {
-    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -519,7 +485,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4)) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {
@@ -727,9 +693,6 @@
     "--violet": { "light": null, "dark": "196, 167, 231" },
     "--yellow": { "light": null, "dark": "249, 226, 175" }
   },
-  ".modal .modal-content .vertical-tab-header-group-items .vertical-tab-nav-item:hover": {
-    "background": { "light": null, "dark": "var(--interactive-hover)" }
-  },
   "body.buttons-plugin-style button.btn_pink": {
     "background": { "light": null, "dark": "0 0" },
     "border": { "light": null, "dark": "1px solid" },
@@ -797,41 +760,65 @@
     "--text-normal": { "light": null, "dark": "#d4d4d4" }
   },
   ".shib-workspace-background-image-toggle.background-settings-workplace-theme-dark-cute-town-d": {
-    "--cute-town-d": { "light": null, "dark": "url(https" },
+    "--cute-town-d": {
+      "light": null,
+      "dark": "url(https://github.com/faroukx/aesthetic-wallpapers/blob/main/shibainu/cute-town-dark%20(2).png?raw=true)"
+    },
     "--shib-background-image": { "light": null, "dark": "var(--cute-town-d)" }
   },
   ".shib-workspace-background-image-toggle.background-settings-workplace-theme-dark-in-the-sky": {
-    "--in-the-sky": { "light": null, "dark": "url(\"https" },
+    "--in-the-sky": {
+      "light": null,
+      "dark": "url(\"https://github.com/faroukx/aesthetic-wallpapers/blob/main/shibainu/in-the-sky.jpg?raw=true\")"
+    },
     "--shib-background-image": { "light": null, "dark": "var(--in-the-sky)" }
   },
   ".shib-workspace-background-image-toggle.background-settings-workplace-theme-dark-tokyo": {
     "--shib-background-image": { "light": null, "dark": "var(--tokyo)" },
-    "--tokyo": { "light": null, "dark": "url(\"https" }
+    "--tokyo": {
+      "light": null,
+      "dark": "url(\"https://github.com/faroukx/aesthetic-wallpapers/blob/main/shibainu/tokyo.jpeg?raw=true\")"
+    }
   },
   ".shib-workspace-background-image-toggle.background-settings-workplace-theme-dark-thunder": {
     "--shib-background-image": { "light": null, "dark": "var(--thunder)" },
-    "--thunder": { "light": null, "dark": "url(\"https" }
+    "--thunder": {
+      "light": null,
+      "dark": "url(\"https://github.com/faroukx/aesthetic-wallpapers/blob/main/shibainu/thunder.jpg?raw=true\")"
+    }
   },
   ".shib-workspace-background-image-toggle.background-settings-workplace-theme-dark-lofi": {
-    "--lofi": { "light": null, "dark": "url(\"https" },
+    "--lofi": {
+      "light": null,
+      "dark": "url(\"https://raw.githubusercontent.com/D3Ext/aesthetic-wallpapers/main/images/bici.jpg\")"
+    },
     "--shib-background-image": { "light": null, "dark": "var(--lofi)" }
   },
   ".shib-workspace-background-image-toggle.background-settings-workplace-theme-dark-lofi2": {
-    "--lofi2": { "light": null, "dark": "url(\"https" },
+    "--lofi2": {
+      "light": null,
+      "dark": "url(\"https://raw.githubusercontent.com/D3Ext/aesthetic-wallpapers/main/images/nord-street.png\")"
+    },
     "--shib-background-image": { "light": null, "dark": "var(--lofi2)" }
   },
   ".shib-workspace-background-image-toggle.background-settings-workplace-theme-dark-lofi3": {
-    "--lofi3": { "light": null, "dark": "url(\"https" },
+    "--lofi3": {
+      "light": null,
+      "dark": "url(\"https://raw.githubusercontent.com/D3Ext/aesthetic-wallpapers/main/images/room.jpg\")"
+    },
     "--shib-background-image": { "light": null, "dark": "var(--lofi3)" }
   },
   ".shib-workspace-background-image-toggle.background-settings-workplace-theme-dark-lofi4": {
-    "--lofi4": { "light": null, "dark": "url(\"https" },
+    "--lofi4": {
+      "light": null,
+      "dark": "url(\"https://github.com/faroukx/aesthetic-wallpapers/blob/main/shibainu/lofi4.jpg?raw=true\")"
+    },
     "--shib-background-image": { "light": null, "dark": "var(--lofi4)" }
   },
   ".shib-workspace-background-image-toggle.background-settings-workplace-theme-dark-custom-option": {
     "--shib-background-image": {
       "light": null,
-      "dark": "var( --background-settings-workplace-theme-dark-custom )"
+      "dark": "var(--background-settings-workplace-theme-dark-custom)"
     }
   },
   ".shib-workspace-background-image-toggle.background-settings-markdown-page-custom-option": {
@@ -843,25 +830,25 @@
   "body.toggle-bg-panel-page.panel-page-bg-theme-dark-robot": {
     "--panel-page-background-url-theme": {
       "light": null,
-      "dark": "url(\"https"
+      "dark": "url(\"https://github.com/faroukx/aesthetic-wallpapers/blob/main/shibainu/robot.jpeg?raw=true\")"
     }
   },
   "body.toggle-bg-panel-page.panel-page-bg-theme-dark-paradise": {
     "--panel-page-background-url-theme": {
       "light": null,
-      "dark": "url(\"https"
+      "dark": "url(\"https://github.com/faroukx/aesthetic-wallpapers/blob/main/shibainu/paradise2.jpeg?raw=true\")"
     }
   },
   "body.toggle-bg-panel-page.panel-page-bg-theme-dark-apple": {
     "--panel-page-background-url-theme": {
       "light": null,
-      "dark": "url(\"https"
+      "dark": "url(\"https://github.com/faroukx/aesthetic-wallpapers/blob/main/shibainu/iphone.jpeg?raw=true\")"
     }
   },
   "body.toggle-bg-panel-page.panel-page-bg-theme-dark-custom": {
     "--panel-page-background-url-theme": {
       "light": null,
-      "dark": "var( --background-panel-page-theme-dark-custom )"
+      "dark": "var(--background-panel-page-theme-dark-custom)"
     }
   }
 }

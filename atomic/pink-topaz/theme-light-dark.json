@@ -47,7 +47,51 @@
     "--calendar-week-background-color": { "light": "#ffdece", "dark": null },
     "--calendar-week-color": { "light": "#f5a7a2", "dark": null },
     "--calendar-week-hover": { "light": "#ffdece", "dark": null },
+    "--color-accent": {
+      "light": "hsl(var(--accent-h), var(--accent-s), var(--accent-l))",
+      "dark": null
+    },
+    "--color-accent-1": {
+      "light": "hsl(calc(var(--accent-h) - 1), calc(var(--accent-s) * 1.01), calc(var(--accent-l) * 1.075))",
+      "dark": null
+    },
+    "--color-accent-2": {
+      "light": "hsl(calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15))",
+      "dark": null
+    },
+    "--color-accent-hsl": {
+      "light": "var(--accent-h), var(--accent-s), var(--accent-l)",
+      "dark": null
+    },
+    "--color-base-00": { "light": "#ffffff", "dark": null },
+    "--color-base-05": { "light": "#fcfcfc", "dark": null },
+    "--color-base-10": { "light": "#fafafa", "dark": null },
+    "--color-base-100": { "light": "#222222", "dark": null },
+    "--color-base-20": { "light": "#f6f6f6", "dark": null },
+    "--color-base-25": { "light": "#e3e3e3", "dark": null },
+    "--color-base-30": { "light": "#e0e0e0", "dark": null },
+    "--color-base-35": { "light": "#d4d4d4", "dark": null },
+    "--color-base-40": { "light": "#bdbdbd", "dark": null },
+    "--color-base-50": { "light": "#ababab", "dark": null },
+    "--color-base-60": { "light": "#707070", "dark": null },
+    "--color-base-70": { "light": "#5c5c5c", "dark": null },
+    "--color-blue": { "light": "#086ddd", "dark": null },
+    "--color-blue-rgb": { "light": "8, 109, 221", "dark": null },
+    "--color-cyan": { "light": "#00bfbc", "dark": null },
+    "--color-cyan-rgb": { "light": "0, 191, 188", "dark": null },
+    "--color-green": { "light": "#08b94e", "dark": null },
+    "--color-green-rgb": { "light": "8, 185, 78", "dark": null },
+    "--color-orange": { "light": "#ec7500", "dark": null },
+    "--color-orange-rgb": { "light": "236, 117, 0", "dark": null },
+    "--color-pink": { "light": "#d53984", "dark": null },
+    "--color-pink-rgb": { "light": "213, 57, 132", "dark": null },
+    "--color-purple": { "light": "#7852ee", "dark": null },
+    "--color-purple-rgb": { "light": "120, 82, 238", "dark": null },
+    "--color-red": { "light": "#e93147", "dark": null },
+    "--color-red-rgb": { "light": "233, 49, 71", "dark": null },
     "--color-specification": { "light": "#fd355a", "dark": null },
+    "--color-yellow": { "light": "#e0ac00", "dark": null },
+    "--color-yellow-rgb": { "light": "224, 172, 0", "dark": null },
     "--darkblue": { "light": "#5981f0", "dark": null },
     "--darkgreen": { "light": "#004f2d", "dark": null },
     "--day-planner-dot": { "light": "#ffdece", "dark": null },
@@ -84,6 +128,15 @@
     "--h5-color": { "light": "#f39ba0", "dark": null },
     "--h6-color": { "light": "#f39ba0", "dark": null },
     "--header-color": { "light": "#f5a7a2", "dark": null },
+    "--highlight-mix-blend-mode": { "light": "darken", "dark": null },
+    "--input-shadow": {
+      "light": "inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent",
+      "dark": null
+    },
+    "--input-shadow-hover": {
+      "light": "inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent",
+      "dark": null
+    },
     "--interactive-accent": { "light": "#f5a7a2", "dark": null },
     "--interactive-accent-hover": { "light": "#fd355a", "dark": null },
     "--interactive-accent-rgb": { "light": "#fd355a", "dark": null },
@@ -100,6 +153,8 @@
     "--mark-highlight": { "light": "#fd355a", "dark": null },
     "--mermaid-active-task-color": { "light": "#f5a7a2", "dark": null },
     "--mermaid-seq-dia-color": { "light": "#ffdece", "dark": null },
+    "--mono-rgb-0": { "light": "255, 255, 255", "dark": null },
+    "--mono-rgb-100": { "light": "0, 0, 0", "dark": null },
     "--note-cloze": { "light": "#fd355a", "dark": null },
     "--note-important": { "light": "#fd355a", "dark": null },
     "--orange": { "light": "#f19c79", "dark": null },
@@ -109,6 +164,14 @@
     "--red-1": { "light": "#980000", "dark": null },
     "--search-result-file-title-color": { "light": "#980000", "dark": null },
     "--search-text": { "light": "#37291a", "dark": null },
+    "--shadow-l": {
+      "light": "0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2)",
+      "dark": null
+    },
+    "--shadow-s": {
+      "light": "0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07)",
+      "dark": null
+    },
     "--stag1": { "light": "#fd355a", "dark": null },
     "--stag2": { "light": "#fd355a", "dark": null },
     "--stag3": { "light": "#fd355a", "dark": null },
@@ -172,12 +235,6 @@
     "font-size": "var(--font-size-edit-code)",
     "text-align": "start"
   },
-  ".cm-s-obsidian span.cm-math:not(.cm-formatting-math-begin):not(.cm-formatting-math-end)": {
-    "color": { "light": "#ee5f00", "dark": "#fff" },
-    "font-family": "var(--font-family-preview-edit-code)",
-    "font-size": "var(--font-size-edit-code)",
-    "text-align": "start"
-  },
   ".markdown-preview-view code": {
     "color": { "light": "#ee5f00", "dark": "#fff" },
     "font-family": "var(--font-family-preview-edit-code)",
@@ -194,7 +251,7 @@
     "background-color": "#f55454",
     "background-image": {
       "light": "linear-gradient(270deg, #40b3ff 0%, #0065b8 80%)",
-      "dark": "linear-gradient( 120deg, #11a0ff 0%, #f0d040 100% )"
+      "dark": "linear-gradient(120deg, #11a0ff 0%, #f0d040 100%)"
     }
   },
   ".cm-strong.cm-em.cm-overlay": {
@@ -203,20 +260,8 @@
     "background-color": "#f55454",
     "background-image": {
       "light": "linear-gradient(270deg, #40b3ff 0%, #0065b8 80%)",
-      "dark": "linear-gradient( 120deg, #11a0ff 0%, #f0d040 100% )"
+      "dark": "linear-gradient(120deg, #11a0ff 0%, #f0d040 100%)"
     }
-  },
-  "div.CodeMirror-activeline .CodeMirror-line span.cm-formatting.cm-formatting-strong.cm-strong": {
-    "color": { "light": "var(--orange)", "dark": "var(--text-accent)" },
-    "opacity": "1"
-  },
-  "div.CodeMirror-activeline .CodeMirror-line span.cm-formatting.cm-formatting-em.cm-em": {
-    "color": { "light": "var(--orange)", "dark": "var(--text-orange)" },
-    "opacity": "1"
-  },
-  "div.CodeMirror-activeline .CodeMirror-line span.cm-formatting.cm-formatting-strong.cm-em.cm-strong": {
-    "color": { "light": "var(--orange)", "dark": "var(--green)" },
-    "opacity": "1"
   },
   ":not(pre) > code[class*=\"language-\"]": {
     "background": {
@@ -295,12 +340,11 @@
     "color": { "light": "#708090", "dark": "rgb(228, 220, 220)" }
   },
   ".comment": { "font-size": "0.9em", "font-weight": "450" },
-  ".dropdown": { "background-image": { "light": null, "dark": "url(\"data" } },
-  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation input": {
-    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
-  },
-  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation textarea": {
-    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  ".dropdown": {
+    "background-image": {
+      "light": null,
+      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+    }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -309,7 +353,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4)) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {
@@ -436,6 +480,7 @@
     "color": { "light": null, "dark": "#ae6ce7" }
   },
   ".cm-s-obsidian pre.HyperMD-codeblock span.cm-variable-3": {
-    "color": { "light": null, "dark": "#ae6ce7" }
+    "color": { "light": null, "dark": "#ae6ce7" },
+    "}": { "light": null, "dark": "" }
   }
 }

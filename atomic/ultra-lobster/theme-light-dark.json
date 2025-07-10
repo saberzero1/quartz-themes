@@ -26,11 +26,11 @@
       "dark": null
     },
     "--color-accent-1": {
-      "light": "hsl( var(--accent-h) var(--accent-s) calc(var(--accent-l) + 2.5%) )",
+      "light": "hsl(var(--accent-h) var(--accent-s) calc(var(--accent-l) + 2.5%))",
       "dark": null
     },
     "--color-accent-2": {
-      "light": "hsl( var(--accent-h) var(--accent-s) calc(var(--accent-l) + 5%) )",
+      "light": "hsl(var(--accent-h) var(--accent-s) calc(var(--accent-l) + 5%))",
       "dark": null
     },
     "--color-accent-hsl": {
@@ -75,11 +75,11 @@
     "--color-yellow-rgb": { "light": "224, 172, 0", "dark": null },
     "--conOp": { "light": "rgb(0 0 0 / 30%)", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #fff 1.62%, #f5f5f5 50.72% )",
+      "light": "linear-gradient(135deg, #fff 1.62%, #f5f5f5 50.72%)",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f3f3f3 1.62%, #e6e6e6 50.72% )",
+      "light": "linear-gradient(135deg, #f3f3f3 1.62%, #e6e6e6 50.72%)",
       "dark": null
     },
     "--highlight-mix-blend-mode": { "light": "darken", "dark": null },
@@ -113,8 +113,7 @@
       "light": "rgb(255 128 0 / 40%)",
       "dark": null
     },
-    "--text-on-button": { "light": "var(--text-normal)", "dark": null },
-    "color-scheme": { "light": "light", "dark": null }
+    "--text-on-button": { "light": "var(--text-normal)", "dark": null }
   },
   ".notice progress[value]::-webkit-progress-bar": {
     "background-color": { "light": "#262626", "dark": null },
@@ -164,17 +163,16 @@
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #e6dcd0 1.62%, #e1d4c6 50.72% )",
+      "light": "linear-gradient(135deg, #e6dcd0 1.62%, #e1d4c6 50.72%)",
       "dark": null
     },
     "--gradient-bg-tertiary": {
-      "light": "linear-gradient( 135deg, #e4f1f7 30.62%, #d0e6f1 90.72% )",
+      "light": "linear-gradient(135deg, #e4f1f7 30.62%, #d0e6f1 90.72%)",
       "dark": null
     },
     "--highlight-mix-blend-mode": { "light": "darken", "dark": null },
     "--mono-rgb-0": { "light": "255, 255, 255", "dark": null },
-    "--mono-rgb-100": { "light": "0, 0, 0", "dark": null },
-    "color-scheme": { "light": "light", "dark": null }
+    "--mono-rgb-100": { "light": "0, 0, 0", "dark": null }
   },
   ".ulu-arch-l": {
     "--background-modifier-border-alt": { "light": "#475276", "dark": null },
@@ -223,13 +221,12 @@
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #2b2b2b 1.62%, #272727 50.72% )",
+      "light": "linear-gradient(135deg, #2b2b2b 1.62%, #272727 50.72%)",
       "dark": null
     },
     "--highlight-mix-blend-mode": { "light": "darken", "dark": null },
     "--mono-rgb-0": { "light": "255, 255, 255", "dark": null },
-    "--mono-rgb-100": { "light": "0, 0, 0", "dark": null },
-    "color-scheme": { "light": "light", "dark": null }
+    "--mono-rgb-100": { "light": "0, 0, 0", "dark": null }
   },
   ".ulu-shark-l": {
     "--background-modifier-border-alt": { "light": "#fff", "dark": null },
@@ -275,20 +272,22 @@
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f9effb 1.62%, #f3e4f7 50.72% )",
+      "light": "linear-gradient(135deg, #f9effb 1.62%, #f3e4f7 50.72%)",
       "dark": null
     },
     "--gradient-bg-tertiary": {
-      "light": "linear-gradient( 135deg, #e4f1f7 30.62%, #d0e6f1 90.72% )",
+      "light": "linear-gradient(135deg, #e4f1f7 30.62%, #d0e6f1 90.72%)",
       "dark": null
     },
     "--highlight-mix-blend-mode": { "light": "darken", "dark": null },
     "--mono-rgb-0": { "light": "255, 255, 255", "dark": null },
-    "--mono-rgb-100": { "light": "0, 0, 0", "dark": null },
-    "color-scheme": { "light": "light", "dark": null }
+    "--mono-rgb-100": { "light": "0, 0, 0", "dark": null }
   },
-  ".ulu-shark-l.ulu-prop-card .markdown-source-view.is-live-preview.show-properties .metadata-container": {
-    "background": { "light": "var(--gradient-bg-tertiary)", "dark": null },
+  ".ulu-shark-l.ulu-prop-car": {
+    ".markdown-source-view.is-live-preview.show-properties.metadata-container {background": {
+      "light": "var(--gradient-bg-tertiary)",
+      "dark": null
+    },
     "border": {
       "light": "1px solid var(--background-modifier-border-alt)",
       "dark": null
@@ -342,13 +341,12 @@
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f6f6f6 1.62%, #f6f6f6 50.72% )",
+      "light": "linear-gradient(135deg, #f6f6f6 1.62%, #f6f6f6 50.72%)",
       "dark": null
     },
     "--highlight-mix-blend-mode": { "light": "darken", "dark": null },
     "--mono-rgb-0": { "light": "255, 255, 255", "dark": null },
-    "--mono-rgb-100": { "light": "0, 0, 0", "dark": null },
-    "color-scheme": { "light": "light", "dark": null }
+    "--mono-rgb-100": { "light": "0, 0, 0", "dark": null }
   },
   ".ulu-light-l": {
     "--background-modifier-border-alt": { "light": "#fff", "dark": null },
@@ -390,17 +388,16 @@
     "--color-yellow-hsl": { "light": "37, 82%, 61%", "dark": null },
     "--color-yellow-rgb": { "light": "237, 174, 73", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #fefefe 1.62%, #fdfbf1 50.72% )",
+      "light": "linear-gradient(135deg, #fefefe 1.62%, #fdfbf1 50.72%)",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f6f3ea 1.62%, #f1edde 50.72% )",
+      "light": "linear-gradient(135deg, #f6f3ea 1.62%, #f1edde 50.72%)",
       "dark": null
     },
     "--highlight-mix-blend-mode": { "light": "darken", "dark": null },
     "--mono-rgb-0": { "light": "255, 255, 255", "dark": null },
-    "--mono-rgb-100": { "light": "0, 0, 0", "dark": null },
-    "color-scheme": { "light": "light", "dark": null }
+    "--mono-rgb-100": { "light": "0, 0, 0", "dark": null }
   },
   ".ulu-solar-lt": {
     "--accent-h": { "light": "175.5", "dark": null },
@@ -444,11 +441,11 @@
     "--color-yellow-hsl": { "light": "45.4, 100%, 35.5%", "dark": null },
     "--color-yellow-rgb": { "light": "203, 75, 22", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #fefaf1 1.62%, #fdf6e3 50.72% )",
+      "light": "linear-gradient(135deg, #fefaf1 1.62%, #fdf6e3 50.72%)",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f0ebdb 1.62%, #eee8d5 50.72% )",
+      "light": "linear-gradient(135deg, #f0ebdb 1.62%, #eee8d5 50.72%)",
       "dark": null
     }
   },
@@ -493,11 +490,11 @@
     "--color-yellow-hsl": { "light": "42.3, 78.3%, 60.2%", "dark": null },
     "--color-yellow-rgb": { "light": "233, 186, 74", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #e5dcdc 1.62%, #dacdcd 50.72% )",
+      "light": "linear-gradient(135deg, #e5dcdc 1.62%, #dacdcd 50.72%)",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #dacdcd 1.62%, #cebdbd 50.72% )",
+      "light": "linear-gradient(135deg, #dacdcd 1.62%, #cebdbd 50.72%)",
       "dark": null
     }
   },
@@ -541,17 +538,16 @@
     "--color-yellow-hsl": { "light": "36, 65%, 70%", "dark": null },
     "--color-yellow-rgb": { "light": "228, 188, 127", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #e5e3dc 1.62%, #dad7cd 50.72% )",
+      "light": "linear-gradient(135deg, #e5e3dc 1.62%, #dad7cd 50.72%)",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #d9dacd 1.62%, #cdcebd 50.72% )",
+      "light": "linear-gradient(135deg, #d9dacd 1.62%, #cdcebd 50.72%)",
       "dark": null
     },
     "--highlight-mix-blend-mode": { "light": "darken", "dark": null },
     "--mono-rgb-0": { "light": "255, 255, 255", "dark": null },
-    "--mono-rgb-100": { "light": "0, 0, 0", "dark": null },
-    "color-scheme": { "light": "light", "dark": null }
+    "--mono-rgb-100": { "light": "0, 0, 0", "dark": null }
   },
   ".ulu-blue-l": {
     "--background-modifier-border-alt": { "light": "#a6d6f2", "dark": null },
@@ -569,17 +565,16 @@
     "--color-base-60": { "light": "#34414e", "dark": null },
     "--color-base-70": { "light": "#1a1f23", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #c0d8e8 1.62%, #b7cddc 50.72% )",
+      "light": "linear-gradient(135deg, #c0d8e8 1.62%, #b7cddc 50.72%)",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #c7d5e1 1.62%, #b3c6d6 50.72% )",
+      "light": "linear-gradient(135deg, #c7d5e1 1.62%, #b3c6d6 50.72%)",
       "dark": null
     },
     "--highlight-mix-blend-mode": { "light": "darken", "dark": null },
     "--mono-rgb-0": { "light": "255, 255, 255", "dark": null },
-    "--mono-rgb-100": { "light": "0, 0, 0", "dark": null },
-    "color-scheme": { "light": "light", "dark": null }
+    "--mono-rgb-100": { "light": "0, 0, 0", "dark": null }
   },
   ".ulu-purple-l": {
     "--background-modifier-border-alt": { "light": "#b18aae", "dark": null },
@@ -596,17 +591,16 @@
     "--color-base-60": { "light": "#4e3448", "dark": null },
     "--color-base-70": { "light": "#231a21", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #e0d3e0 1.62%, #dacdda 50.72% )",
+      "light": "linear-gradient(135deg, #e0d3e0 1.62%, #dacdda 50.72%)",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #dacdda 1.62%, #cebdce 50.72% )",
+      "light": "linear-gradient(135deg, #dacdda 1.62%, #cebdce 50.72%)",
       "dark": null
     },
     "--highlight-mix-blend-mode": { "light": "darken", "dark": null },
     "--mono-rgb-0": { "light": "255, 255, 255", "dark": null },
-    "--mono-rgb-100": { "light": "0, 0, 0", "dark": null },
-    "color-scheme": { "light": "light", "dark": null }
+    "--mono-rgb-100": { "light": "0, 0, 0", "dark": null }
   },
   ".ulu-gruvbox-lt": {
     "--accent-h": { "light": "13", "dark": null },
@@ -649,11 +643,11 @@
     "--color-yellow-hsl": { "light": "36.5, 80.1%, 39.4%", "dark": null },
     "--color-yellow-rgb": { "light": "181, 118, 20", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #fdf6de 1.62%, #fbf1c7 50.72% )",
+      "light": "linear-gradient(135deg, #fdf6de 1.62%, #fbf1c7 50.72%)",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f2e8ce 1.62%, #ebdbb2 50.72% )",
+      "light": "linear-gradient(135deg, #f2e8ce 1.62%, #ebdbb2 50.72%)",
       "dark": null
     }
   },
@@ -698,11 +692,11 @@
     "--color-yellow-hsl": { "light": "42.3, 78.3%, 60.2%", "dark": null },
     "--color-yellow-rgb": { "light": "233, 186, 74", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #dce1e5 1.62%, #cdd5da 50.72% )",
+      "light": "linear-gradient(135deg, #dce1e5 1.62%, #cdd5da 50.72%)",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #cad2d8 1.62%, #bdc6ce 50.72% )",
+      "light": "linear-gradient(135deg, #cad2d8 1.62%, #bdc6ce 50.72%)",
       "dark": null
     }
   },
@@ -748,17 +742,16 @@
     "--color-yellow-hsl": { "light": "43, 74%, 66%", "dark": null },
     "--color-yellow-rgb": { "light": "233, 196, 106", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #ffffff 1.62%, #f8f9fa 50.72% )",
+      "light": "linear-gradient(135deg, #ffffff 1.62%, #f8f9fa 50.72%)",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f6f7f9 1.62%, #f1f3f5 50.72% )",
+      "light": "linear-gradient(135deg, #f6f7f9 1.62%, #f1f3f5 50.72%)",
       "dark": null
     },
     "--highlight-mix-blend-mode": { "light": "darken", "dark": null },
     "--mono-rgb-0": { "light": "255, 255, 255", "dark": null },
-    "--mono-rgb-100": { "light": "0, 0, 0", "dark": null },
-    "color-scheme": { "light": "light", "dark": null }
+    "--mono-rgb-100": { "light": "0, 0, 0", "dark": null }
   },
   ".ulu-red": {
     "--color-accent": "hsl(var(--color-red-hsl))",
@@ -821,11 +814,11 @@
     "--color-base-00": { "light": "#fdfbfb", "dark": null },
     "--color-base-20": { "light": "#f5f2f2", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #fff 20.62%, #fdfbfb 90.72% )",
+      "light": "linear-gradient(135deg, #fff 20.62%, #fdfbfb 90.72%)",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f8f6f6 20.62%, #f5f2f2 90.72% )",
+      "light": "linear-gradient(135deg, #f8f6f6 20.62%, #f5f2f2 90.72%)",
       "dark": null
     }
   },
@@ -834,11 +827,11 @@
     "--color-base-00": { "light": "#fcfcfc", "dark": null },
     "--color-base-20": { "light": "#f0f5f0", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #fff 20.62%, #fcfcfc 90.72% )",
+      "light": "linear-gradient(135deg, #fff 20.62%, #fcfcfc 90.72%)",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f8f6f6 20.62%, #f0f5f0 90.72% )",
+      "light": "linear-gradient(135deg, #f8f6f6 20.62%, #f0f5f0 90.72%)",
       "dark": null
     }
   },
@@ -847,11 +840,11 @@
     "--color-base-00": { "light": "#fcfcfa", "dark": null },
     "--color-base-20": { "light": "#f6f3ed", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #fff 20.62%, #fcfcfa 90.72% )",
+      "light": "linear-gradient(135deg, #fff 20.62%, #fcfcfa 90.72%)",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f8f6f6 20.62%, #f6f3ed 90.72% )",
+      "light": "linear-gradient(135deg, #f8f6f6 20.62%, #f6f3ed 90.72%)",
       "dark": null
     }
   },
@@ -860,11 +853,11 @@
     "--color-base-00": { "light": "#fcfcf8", "dark": null },
     "--color-base-20": { "light": "#f5f4e6", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #fff 20.62%, #fcfcf8 90.72% )",
+      "light": "linear-gradient(135deg, #fff 20.62%, #fcfcf8 90.72%)",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f8f6f6 20.62%, #f5f4e6 90.72% )",
+      "light": "linear-gradient(135deg, #f8f6f6 20.62%, #f5f4e6 90.72%)",
       "dark": null
     }
   },
@@ -873,11 +866,11 @@
     "--color-base-00": { "light": "#f9fcfc", "dark": null },
     "--color-base-20": { "light": "#ecf6f6", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #fff 20.62%, #f9fcfc 90.72% )",
+      "light": "linear-gradient(135deg, #fff 20.62%, #f9fcfc 90.72%)",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f8f6f6 20.62%, #ecf6f6 90.72% )",
+      "light": "linear-gradient(135deg, #f8f6f6 20.62%, #ecf6f6 90.72%)",
       "dark": null
     }
   },
@@ -886,11 +879,11 @@
     "--color-base-00": { "light": "#fbfcfc", "dark": null },
     "--color-base-20": { "light": "#f1f5f5", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #fff 20.62%, #fbfcfc 90.72% )",
+      "light": "linear-gradient(135deg, #fff 20.62%, #fbfcfc 90.72%)",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f8f6f6 20.62%, #f1f5f5 90.72% )",
+      "light": "linear-gradient(135deg, #f8f6f6 20.62%, #f1f5f5 90.72%)",
       "dark": null
     }
   },
@@ -899,11 +892,11 @@
     "--color-base-00": { "light": "#fcfcfb", "dark": null },
     "--color-base-20": { "light": "#f5f3f2", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #fff 20.62%, #fcfcfb 90.72% )",
+      "light": "linear-gradient(135deg, #fff 20.62%, #fcfcfb 90.72%)",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f8f6f6 20.62%, #f5f3f2 90.72% )",
+      "light": "linear-gradient(135deg, #f8f6f6 20.62%, #f5f3f2 90.72%)",
       "dark": null
     }
   },
@@ -912,11 +905,11 @@
     "--color-base-00": { "light": "#fcfcfb", "dark": null },
     "--color-base-20": { "light": "#f5f3f1", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #fff 20.62%, #fcfcfb 90.72% )",
+      "light": "linear-gradient(135deg, #fff 20.62%, #fcfcfb 90.72%)",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f8f6f6 20.62%, #f5f3f1 90.72% )",
+      "light": "linear-gradient(135deg, #f8f6f6 20.62%, #f5f3f1 90.72%)",
       "dark": null
     }
   },
@@ -925,11 +918,11 @@
     "--color-base-00": { "light": "#f3f3f3", "dark": null },
     "--color-base-20": { "light": "#f3f3f3", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #f3f3f3 20.62%, #f3f3f3 90.72% )",
+      "light": "linear-gradient(135deg, #f3f3f3 20.62%, #f3f3f3 90.72%)",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f3f3f3 20.62%, #f3f3f3 90.72% )",
+      "light": "linear-gradient(135deg, #f3f3f3 20.62%, #f3f3f3 90.72%)",
       "dark": null
     }
   },
@@ -938,11 +931,11 @@
     "--color-base-00": { "light": "#fff", "dark": null },
     "--color-base-20": { "light": "#fff", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #fff 20.62%, #fff 90.72% )",
+      "light": "linear-gradient(135deg, #fff 20.62%, #fff 90.72%)",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #fff 20.62%, #fff 90.72% )",
+      "light": "linear-gradient(135deg, #fff 20.62%, #fff 90.72%)",
       "dark": null
     }
   },
@@ -955,11 +948,11 @@
     "--color-base-00": { "light": "#f5f2f2", "dark": null },
     "--color-base-20": { "light": "#f5f2f2", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #f5f2f2 20.62%, #f5f2f2 90.72% )",
+      "light": "linear-gradient(135deg, #f5f2f2 20.62%, #f5f2f2 90.72%)",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f5f2f2 20.62%, #f5f2f2 90.72% )",
+      "light": "linear-gradient(135deg, #f5f2f2 20.62%, #f5f2f2 90.72%)",
       "dark": null
     }
   },
@@ -967,11 +960,11 @@
     "--color-base-00": { "light": "#f0f5f0", "dark": null },
     "--color-base-20": { "light": "#f0f5f0", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #f0f5f0 20.62%, #f0f5f0 90.72% )",
+      "light": "linear-gradient(135deg, #f0f5f0 20.62%, #f0f5f0 90.72%)",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f0f5f0 20.62%, #f0f5f0 90.72% )",
+      "light": "linear-gradient(135deg, #f0f5f0 20.62%, #f0f5f0 90.72%)",
       "dark": null
     }
   },
@@ -980,11 +973,11 @@
     "--color-base-00": { "light": "#f6f3ed", "dark": null },
     "--color-base-20": { "light": "#f6f3ed", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #f6f3ed 20.62%, #f6f3ed 90.72% )",
+      "light": "linear-gradient(135deg, #f6f3ed 20.62%, #f6f3ed 90.72%)",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f6f3ed 20.62%, #f6f3ed 90.72% )",
+      "light": "linear-gradient(135deg, #f6f3ed 20.62%, #f6f3ed 90.72%)",
       "dark": null
     }
   },
@@ -993,11 +986,11 @@
     "--color-base-00": { "light": "#f5f4e6", "dark": null },
     "--color-base-20": { "light": "#f5f4e6", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #f5f4e6 20.62%, #f5f4e6 90.72% )",
+      "light": "linear-gradient(135deg, #f5f4e6 20.62%, #f5f4e6 90.72%)",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f5f4e6 20.62%, #f5f4e6 90.72% )",
+      "light": "linear-gradient(135deg, #f5f4e6 20.62%, #f5f4e6 90.72%)",
       "dark": null
     }
   },
@@ -1006,11 +999,11 @@
     "--color-base-00": { "light": "#ecf6f6", "dark": null },
     "--color-base-20": { "light": "#ecf6f6", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #ecf6f6 20.62%, #ecf6f6 90.72% )",
+      "light": "linear-gradient(135deg, #ecf6f6 20.62%, #ecf6f6 90.72%)",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #ecf6f6 20.62%, #ecf6f6 90.72% )",
+      "light": "linear-gradient(135deg, #ecf6f6 20.62%, #ecf6f6 90.72%)",
       "dark": null
     }
   },
@@ -1019,11 +1012,11 @@
     "--color-base-00": { "light": "#f1f5f5", "dark": null },
     "--color-base-20": { "light": "#f1f5f5", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #f1f5f5 20.62%, #f1f5f5 90.72% )",
+      "light": "linear-gradient(135deg, #f1f5f5 20.62%, #f1f5f5 90.72%)",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f1f5f5 20.62%, #f1f5f5 90.72% )",
+      "light": "linear-gradient(135deg, #f1f5f5 20.62%, #f1f5f5 90.72%)",
       "dark": null
     }
   },
@@ -1032,11 +1025,11 @@
     "--color-base-00": { "light": "#f5f3f2", "dark": null },
     "--color-base-20": { "light": "#f5f3f2", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #f5f3f2 20.62%, #f5f3f2 90.72% )",
+      "light": "linear-gradient(135deg, #f5f3f2 20.62%, #f5f3f2 90.72%)",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f5f3f2 20.62%, #f5f3f2 90.72% )",
+      "light": "linear-gradient(135deg, #f5f3f2 20.62%, #f5f3f2 90.72%)",
       "dark": null
     }
   },
@@ -1045,11 +1038,11 @@
     "--color-base-00": { "light": "#f5f3f1", "dark": null },
     "--color-base-20": { "light": "#f5f3f1", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #f5f3f1 20.62%, #f5f3f1 90.72% )",
+      "light": "linear-gradient(135deg, #f5f3f1 20.62%, #f5f3f1 90.72%)",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f5f3f1 20.62%, #f5f3f1 90.72% )",
+      "light": "linear-gradient(135deg, #f5f3f1 20.62%, #f5f3f1 90.72%)",
       "dark": null
     }
   },
@@ -1075,168 +1068,6 @@
       "dark": "var(--text-on-accent)"
     },
     "--color-callout-yellow": { "light": "#ffffe0", "dark": "#4c5026" }
-  },
-  ".ulu-canvas-fancycolor10 .canvas-node.is-themed.mod-canvas-color-1 .canvas-node-content": {
-    "background-image": {
-      "light": "linear-gradient( 45deg, hsl(0deg 87% 79%) 0%, hsl(360deg 87% 78%) 21%, hsl(360deg 87% 77%) 30%, hsl(359deg 87% 75%) 39%, hsl(359deg 87% 74%) 46%, hsl(359deg 87% 73%) 54%, hsl(359deg 86% 72%) 61%, hsl(358deg 86% 71%) 69%, hsl(358deg 86% 70%) 79%, hsl(358deg 85% 68%) 100% )",
-      "dark": "linear-gradient( 45deg, hsl(15deg 82% 54%) 0%, hsl(14deg 83% 54%) 11%, hsl(14deg 83% 53%) 22%, hsl(13deg 84% 53%) 33%, hsl(13deg 84% 53%) 44%, hsl(12deg 85% 53%) 56%, hsl(11deg 85% 53%) 67%, hsl(11deg 86% 52%) 78%, hsl(10deg 86% 52%) 89%, hsl(9deg 87% 52%) 100% )"
-    }
-  },
-  ".ulu-canvas-fancycolor11 .canvas-node.is-themed.mod-canvas-color-2 .canvas-node-content": {
-    "background-image": {
-      "light": "linear-gradient( 135deg, hsl(16deg 100% 76%) 0%, hsl(20deg 100% 76%) 21%, hsl(23deg 100% 76%) 30%, hsl(27deg 100% 77%) 39%, hsl(30deg 100% 77%) 46%, hsl(34deg 100% 77%) 54%, hsl(37deg 100% 78%) 61%, hsl(41deg 100% 79%) 69%, hsl(45deg 100% 80%) 79%, hsl(49deg 100% 81%) 100% )",
-      "dark": "linear-gradient( 135deg, hsl(29deg 82% 54%) 0%, hsl(28deg 83% 53%) 11%, hsl(28deg 83% 53%) 22%, hsl(27deg 84% 53%) 33%, hsl(26deg 84% 53%) 44%, hsl(25deg 85% 53%) 56%, hsl(25deg 85% 52%) 67%, hsl(24deg 86% 52%) 78%, hsl(23deg 86% 52%) 89%, hsl(22deg 87% 52%) 100% )"
-    }
-  },
-  ".ulu-canvas-fancycolor12 .canvas-node.is-themed.mod-canvas-color-3 .canvas-node-content": {
-    "background-image": {
-      "light": "linear-gradient( 135deg, hsl(60deg 89% 72%) 0%, hsl(59deg 91% 73%) 21%, hsl(57deg 92% 74%) 30%, hsl(56deg 94% 76%) 39%, hsl(55deg 96% 77%) 46%, hsl(53deg 97% 78%) 54%, hsl(52deg 98% 79%) 61%, hsl(51deg 99% 80%) 69%, hsl(50deg 100% 80%) 79%, hsl(49deg 100% 81%) 100% )",
-      "dark": "linear-gradient( 135deg, hsl(44deg 82% 54%) 0%, hsl(44deg 83% 54%) 11%, hsl(45deg 83% 53%) 22%, hsl(45deg 84% 53%) 33%, hsl(46deg 84% 53%) 44%, hsl(46deg 85% 53%) 56%, hsl(47deg 85% 53%) 67%, hsl(47deg 86% 53%) 78%, hsl(48deg 86% 52%) 89%, hsl(48deg 87% 52%) 100% )"
-    }
-  },
-  ".ulu-canvas-fancycolor13 .canvas-node.is-themed.mod-canvas-color-4 .canvas-node-content": {
-    "background-image": {
-      "light": "linear-gradient( 135deg, hsl(99deg 75% 75%) 0%, hsl(103deg 75% 77%) 21%, hsl(108deg 75% 79%) 30%, hsl(113deg 76% 81%) 39%, hsl(119deg 76% 83%) 46%, hsl(124deg 77% 84%) 54%, hsl(129deg 79% 85%) 61%, hsl(133deg 80% 86%) 69%, hsl(137deg 81% 86%) 79%, hsl(141deg 81% 87%) 100% )",
-      "dark": "linear-gradient( 135deg, hsl(98deg 32% 45%) 0%, hsl(101deg 31% 44%) 11%, hsl(104deg 30% 43%) 22%, hsl(108deg 29% 41%) 33%, hsl(112deg 28% 40%) 44%, hsl(116deg 27% 39%) 56%, hsl(120deg 26% 37%) 67%, hsl(124deg 27% 35%) 78%, hsl(128deg 28% 33%) 89%, hsl(132deg 29% 31%) 100% )"
-    }
-  },
-  ".ulu-canvas-fancycolor14 .canvas-node.is-themed.mod-canvas-color-5 .canvas-node-content": {
-    "background-image": {
-      "light": "linear-gradient( 135deg, hsl(187deg 100% 89%) 0%, hsl(187deg 100% 87%) 21%, hsl(187deg 100% 85%) 30%, hsl(187deg 100% 83%) 39%, hsl(187deg 100% 81%) 46%, hsl(187deg 100% 79%) 54%, hsl(187deg 100% 77%) 61%, hsl(186deg 100% 75%) 69%, hsl(186deg 100% 72%) 79%, hsl(186deg 100% 69%) 100% )",
-      "dark": "linear-gradient( 135deg, hsl(218deg 82% 54%) 0%, hsl(218deg 83% 53%) 11%, hsl(218deg 85% 52%) 22%, hsl(219deg 85% 51%) 33%, hsl(219deg 86% 51%) 44%, hsl(220deg 87% 50%) 56%, hsl(221deg 87% 50%) 67%, hsl(223deg 87% 51%) 78%, hsl(224deg 87% 51%) 89%, hsl(227deg 87% 52%) 100% )"
-    }
-  },
-  ".ulu-canvas-fancycolor15 .canvas-node.is-themed.mod-canvas-color-6 .canvas-node-content": {
-    "background-image": {
-      "light": "linear-gradient( 135deg, hsl(298deg 68% 90%) 0%, hsl(287deg 68% 89%) 21%, hsl(277deg 68% 89%) 30%, hsl(267deg 67% 88%) 39%, hsl(258deg 65% 87%) 46%, hsl(249deg 63% 87%) 54%, hsl(240deg 61% 86%) 61%, hsl(232deg 62% 83%) 69%, hsl(225deg 62% 81%) 79%, hsl(220deg 61% 79%) 100% )",
-      "dark": "linear-gradient( 135deg, hsl(308deg 33% 41%) 0%, hsl(308deg 35% 41%) 11%, hsl(308deg 37% 40%) 22%, hsl(308deg 40% 39%) 33%, hsl(308deg 42% 39%) 44%, hsl(308deg 45% 38%) 56%, hsl(308deg 47% 37%) 67%, hsl(308deg 51% 36%) 78%, hsl(308deg 54% 35%) 89%, hsl(308deg 58% 35%) 100% )"
-    }
-  },
-  ".ulu-canvas-fancycolor20 .canvas-node.is-themed.mod-canvas-color-1 .canvas-node-content": {
-    "background": { "light": "rgb(240 105 78)", "dark": "rgb(49 42 61)" }
-  },
-  ".ulu-canvas-fancycolor20 .canvas-node.is-themed.mod-canvas-color-1 .canvas-node-content .markdown-preview-view .inline-title": {
-    "color": { "light": "rgb(227 222 221)", "dark": "rgb(213 98 66)" }
-  },
-  ".ulu-canvas-fancycolor20 .canvas-node.is-themed.mod-canvas-color-1 .canvas-node-content .markdown-preview-view": {
-    "color": { "light": "rgb(227 222 221)", "dark": "rgb(213 98 66)" }
-  },
-  ".ulu-canvas-fancycolor21 .canvas-node.is-themed.mod-canvas-color-2 .canvas-node-content": {
-    "background": { "light": "rgb(229 193 114)", "dark": "rgb(37 60 88)" }
-  },
-  ".ulu-canvas-fancycolor21 .canvas-node.is-themed.mod-canvas-color-2 .canvas-node-content .markdown-preview-view .inline-title": {
-    "color": { "light": "rgb(52 68 69)", "dark": "rgb(228 110 71)" }
-  },
-  ".ulu-canvas-fancycolor21 .canvas-node.is-themed.mod-canvas-color-2 .canvas-node-content .markdown-preview-view": {
-    "color": { "light": "rgb(52 68 69)", "dark": "rgb(228 110 71)" }
-  },
-  ".ulu-canvas-fancycolor22 .canvas-node.is-themed.mod-canvas-color-3 .canvas-node-content": {
-    "background": { "light": "rgb(239 227 119)", "dark": "rgb(56 61 71)" }
-  },
-  ".ulu-canvas-fancycolor22 .canvas-node.is-themed.mod-canvas-color-3 .canvas-node-content .markdown-preview-view .inline-title": {
-    "color": { "light": "rgb(63 27 117)", "dark": "rgb(201 173 116)" }
-  },
-  ".ulu-canvas-fancycolor22 .canvas-node.is-themed.mod-canvas-color-3 .canvas-node-content .markdown-preview-view": {
-    "color": { "light": "rgb(63 27 117)", "dark": "rgb(201 173 116)" }
-  },
-  ".ulu-canvas-fancycolor23 .canvas-node.is-themed.mod-canvas-color-4 .canvas-node-content": {
-    "background": { "light": "rgb(50 159 130)", "dark": "rgb(45 51 62)" }
-  },
-  ".ulu-canvas-fancycolor23 .canvas-node.is-themed.mod-canvas-color-4 .canvas-node-content .markdown-preview-view .inline-title": {
-    "color": { "light": "rgb(230 208 112)", "dark": "rgb(125 166 80)" }
-  },
-  ".ulu-canvas-fancycolor23 .canvas-node.is-themed.mod-canvas-color-4 .canvas-node-content .markdown-preview-view": {
-    "color": { "light": "rgb(230 208 112)", "dark": "rgb(125 166 80)" }
-  },
-  ".ulu-canvas-fancycolor24 .canvas-node.is-themed.mod-canvas-color-5 .canvas-node-content": {
-    "background": { "light": "rgb(98 106 221)", "dark": "rgb(57 83 100)" }
-  },
-  ".ulu-canvas-fancycolor24 .canvas-node.is-themed.mod-canvas-color-5 .canvas-node-content .markdown-preview-view .inline-title": {
-    "color": { "light": "rgb(240 214 202)", "dark": "rgb(129 188 250)" }
-  },
-  ".ulu-canvas-fancycolor24 .canvas-node.is-themed.mod-canvas-color-5 .canvas-node-content .markdown-preview-view": {
-    "color": { "light": "rgb(240 214 202)", "dark": "rgb(129 188 250)" }
-  },
-  ".ulu-canvas-fancycolor25 .canvas-node.is-themed.mod-canvas-color-6 .canvas-node-content": {
-    "background": { "light": "rgb(249 220 195)", "dark": "rgb(55 53 76)" }
-  },
-  ".ulu-canvas-fancycolor25 .canvas-node.is-themed.mod-canvas-color-6 .canvas-node-content .markdown-preview-view .inline-title": {
-    "color": { "light": "rgb(123 136 208)", "dark": "rgb(167 233 216)" }
-  },
-  ".ulu-canvas-fancycolor25 .canvas-node.is-themed.mod-canvas-color-6 .canvas-node-content .markdown-preview-view": {
-    "color": { "light": "rgb(123 136 208)", "dark": "rgb(167 233 216)" }
-  },
-  ".ulu-gummy-canvas1 .canvas-node.is-themed.mod-canvas-color-1 .canvas-node-content": {
-    "background-image": {
-      "light": "linear-gradient( 45deg, hsl(0deg 87% 79%) 0%, hsl(360deg 87% 78%) 21%, hsl(360deg 87% 77%) 30%, hsl(359deg 87% 75%) 39%, hsl(359deg 87% 74%) 46%, hsl(359deg 87% 73%) 54%, hsl(359deg 86% 72%) 61%, hsl(358deg 86% 71%) 69%, hsl(358deg 86% 70%) 79%, hsl(358deg 85% 68%) 100% )",
-      "dark": "linear-gradient( 45deg, hsl(15deg 82% 54%) 0%, hsl(14deg 83% 54%) 11%, hsl(14deg 83% 53%) 22%, hsl(13deg 84% 53%) 33%, hsl(13deg 84% 53%) 44%, hsl(12deg 85% 53%) 56%, hsl(11deg 85% 53%) 67%, hsl(11deg 86% 52%) 78%, hsl(10deg 86% 52%) 89%, hsl(9deg 87% 52%) 100% )"
-    }
-  },
-  ".ulu-gummy-canvas2 .canvas-node.is-themed.mod-canvas-color-2 .canvas-node-content": {
-    "background-image": {
-      "light": "linear-gradient( 45deg, hsl(16deg 100% 76%) 0%, hsl(20deg 100% 76%) 21%, hsl(23deg 100% 76%) 30%, hsl(27deg 100% 77%) 39%, hsl(30deg 100% 77%) 46%, hsl(34deg 100% 77%) 54%, hsl(37deg 100% 78%) 61%, hsl(41deg 100% 79%) 69%, hsl(45deg 100% 80%) 79%, hsl(49deg 100% 81%) 100% )",
-      "dark": "linear-gradient( 45deg, hsl(29deg 82% 54%) 0%, hsl(28deg 83% 53%) 11%, hsl(28deg 83% 53%) 22%, hsl(27deg 84% 53%) 33%, hsl(26deg 84% 53%) 44%, hsl(25deg 85% 53%) 56%, hsl(25deg 85% 52%) 67%, hsl(24deg 86% 52%) 78%, hsl(23deg 86% 52%) 89%, hsl(22deg 87% 52%) 100% )"
-    }
-  },
-  ".ulu-gummy-canvas3 .canvas-node.is-themed.mod-canvas-color-3 .canvas-node-content": {
-    "background-image": {
-      "light": "linear-gradient( 45deg, hsl(60deg 89% 72%) 0%, hsl(59deg 91% 73%) 21%, hsl(57deg 92% 74%) 30%, hsl(56deg 94% 76%) 39%, hsl(55deg 96% 77%) 46%, hsl(53deg 97% 78%) 54%, hsl(52deg 98% 79%) 61%, hsl(51deg 99% 80%) 69%, hsl(50deg 100% 80%) 79%, hsl(49deg 100% 81%) 100% )",
-      "dark": "linear-gradient( 45deg, hsl(44deg 82% 54%) 0%, hsl(44deg 83% 54%) 11%, hsl(45deg 83% 53%) 22%, hsl(45deg 84% 53%) 33%, hsl(46deg 84% 53%) 44%, hsl(46deg 85% 53%) 56%, hsl(47deg 85% 53%) 67%, hsl(47deg 86% 53%) 78%, hsl(48deg 86% 52%) 89%, hsl(48deg 87% 52%) 100% )"
-    }
-  },
-  ".ulu-gummy-canvas4 .canvas-node.is-themed.mod-canvas-color-4 .canvas-node-content": {
-    "background-image": {
-      "light": "linear-gradient( 45deg, hsl(99deg 75% 75%) 0%, hsl(103deg 75% 77%) 21%, hsl(108deg 75% 79%) 30%, hsl(113deg 76% 81%) 39%, hsl(119deg 76% 83%) 46%, hsl(124deg 77% 84%) 54%, hsl(129deg 79% 85%) 61%, hsl(133deg 80% 86%) 69%, hsl(137deg 81% 86%) 79%, hsl(141deg 81% 87%) 100% )",
-      "dark": "linear-gradient( 45deg, hsl(98deg 32% 45%) 0%, hsl(101deg 31% 44%) 11%, hsl(104deg 30% 43%) 22%, hsl(108deg 29% 41%) 33%, hsl(112deg 28% 40%) 44%, hsl(116deg 27% 39%) 56%, hsl(120deg 26% 37%) 67%, hsl(124deg 27% 35%) 78%, hsl(128deg 28% 33%) 89%, hsl(132deg 29% 31%) 100% )"
-    }
-  },
-  ".ulu-gummy-canvas5 .canvas-node.is-themed.mod-canvas-color-5 .canvas-node-content": {
-    "background-image": {
-      "light": "linear-gradient( 45deg, hsl(187deg 100% 89%) 0%, hsl(187deg 100% 87%) 21%, hsl(187deg 100% 85%) 30%, hsl(187deg 100% 83%) 39%, hsl(187deg 100% 81%) 46%, hsl(187deg 100% 79%) 54%, hsl(187deg 100% 77%) 61%, hsl(186deg 100% 75%) 69%, hsl(186deg 100% 72%) 79%, hsl(186deg 100% 69%) 100% )",
-      "dark": "linear-gradient( 45deg, hsl(218deg 82% 54%) 0%, hsl(218deg 83% 53%) 11%, hsl(218deg 85% 52%) 22%, hsl(219deg 85% 51%) 33%, hsl(219deg 86% 51%) 44%, hsl(220deg 87% 50%) 56%, hsl(221deg 87% 50%) 67%, hsl(223deg 87% 51%) 78%, hsl(224deg 87% 51%) 89%, hsl(227deg 87% 52%) 100% )"
-    }
-  },
-  ".ulu-gummy-canvas6 .canvas-node.is-themed.mod-canvas-color-6 .canvas-node-content": {
-    "background-image": {
-      "light": "linear-gradient( 45deg, hsl(298deg 68% 90%) 0%, hsl(287deg 68% 89%) 21%, hsl(277deg 68% 89%) 30%, hsl(267deg 67% 88%) 39%, hsl(258deg 65% 87%) 46%, hsl(249deg 63% 87%) 54%, hsl(240deg 61% 86%) 61%, hsl(232deg 62% 83%) 69%, hsl(225deg 62% 81%) 79%, hsl(220deg 61% 79%) 100% )",
-      "dark": "linear-gradient( 45deg, hsl(308deg 33% 41%) 0%, hsl(308deg 35% 41%) 11%, hsl(308deg 37% 40%) 22%, hsl(308deg 40% 39%) 33%, hsl(308deg 42% 39%) 44%, hsl(308deg 45% 38%) 56%, hsl(308deg 47% 37%) 67%, hsl(308deg 51% 36%) 78%, hsl(308deg 54% 35%) 89%, hsl(308deg 58% 35%) 100% )"
-    }
-  },
-  ".ulu-gradient-canvas1  .canvas-node.is-themed.mod-canvas-color-1 .canvas-node-content": {
-    "background-image": {
-      "light": "linear-gradient( 45deg, hsl(0deg 87% 79%) 0%, hsl(360deg 87% 78%) 21%, hsl(360deg 87% 77%) 30%, hsl(359deg 87% 75%) 39%, hsl(359deg 87% 74%) 46%, hsl(359deg 87% 73%) 54%, hsl(359deg 86% 72%) 61%, hsl(358deg 86% 71%) 69%, hsl(358deg 86% 70%) 79%, hsl(358deg 85% 68%) 100% )",
-      "dark": "linear-gradient( 45deg, hsl(18deg 88% 66%) 0%, hsl(17deg 88% 65%) 21%, hsl(16deg 87% 63%) 30%, hsl(15deg 86% 62%) 39%, hsl(14deg 85% 60%) 46%, hsl(13deg 85% 59%) 54%, hsl(11deg 84% 57%) 61%, hsl(10deg 83% 56%) 69%, hsl(8deg 82% 55%) 79%, hsl(6deg 81% 54%) 100% )"
-    }
-  },
-  ".ulu-gradient-canvas2  .canvas-node.is-themed.mod-canvas-color-2 .canvas-node-content": {
-    "background-image": {
-      "light": "linear-gradient( 45deg, hsl(16deg 100% 76%) 0%, hsl(20deg 100% 76%) 21%, hsl(23deg 100% 76%) 30%, hsl(27deg 100% 77%) 39%, hsl(30deg 100% 77%) 46%, hsl(34deg 100% 77%) 54%, hsl(37deg 100% 78%) 61%, hsl(41deg 100% 79%) 69%, hsl(45deg 100% 80%) 79%, hsl(49deg 100% 81%) 100% )",
-      "dark": "linear-gradient( 45deg, hsl(23deg 92% 71%) 0%, hsl(21deg 93% 71%) 21%, hsl(18deg 93% 71%) 30%, hsl(16deg 93% 72%) 39%, hsl(14deg 93% 72%) 46%, hsl(11deg 93% 72%) 54%, hsl(9deg 92% 73%) 61%, hsl(6deg 91% 73%) 69%, hsl(3deg 89% 73%) 79%, hsl(0deg 87% 73%) 100% )"
-    }
-  },
-  ".ulu-gradient-canvas3  .canvas-node.is-themed.mod-canvas-color-3 .canvas-node-content": {
-    "background-image": {
-      "light": "linear-gradient( 45deg, hsl(60deg 89% 72%) 0%, hsl(59deg 91% 73%) 21%, hsl(57deg 92% 74%) 30%, hsl(56deg 94% 76%) 39%, hsl(55deg 96% 77%) 46%, hsl(53deg 97% 78%) 54%, hsl(52deg 98% 79%) 61%, hsl(51deg 99% 80%) 69%, hsl(50deg 100% 80%) 79%, hsl(49deg 100% 81%) 100% )",
-      "dark": "linear-gradient( 45deg, hsl(46deg 95% 56%) 0%, hsl(44deg 95% 55%) 21%, hsl(43deg 94% 54%) 30%, hsl(41deg 94% 53%) 39%, hsl(39deg 93% 53%) 46%, hsl(37deg 92% 53%) 54%, hsl(35deg 91% 52%) 61%, hsl(34deg 89% 52%) 69%, hsl(32deg 88% 52%) 79%, hsl(29deg 86% 52%) 100% )"
-    }
-  },
-  ".ulu-gradient-canvas4  .canvas-node.is-themed.mod-canvas-color-4 .canvas-node-content": {
-    "background-image": {
-      "light": "linear-gradient( 45deg, hsl(99deg 75% 75%) 0%, hsl(103deg 75% 77%) 21%, hsl(108deg 75% 79%) 30%, hsl(113deg 76% 81%) 39%, hsl(119deg 76% 83%) 46%, hsl(124deg 77% 84%) 54%, hsl(129deg 79% 85%) 61%, hsl(133deg 80% 86%) 69%, hsl(137deg 81% 86%) 79%, hsl(141deg 81% 87%) 100% )",
-      "dark": "linear-gradient( 45deg, hsl(145deg 84% 73%) 0%, hsl(145deg 78% 71%) 21%, hsl(146deg 74% 68%) 30%, hsl(146deg 70% 66%) 39%, hsl(146deg 67% 63%) 46%, hsl(147deg 64% 60%) 54%, hsl(148deg 61% 57%) 61%, hsl(148deg 60% 55%) 69%, hsl(149deg 58% 52%) 79%, hsl(150deg 61% 48%) 100% )"
-    }
-  },
-  ".ulu-gradient-canvas5  .canvas-node.is-themed.mod-canvas-color-5 .canvas-node-content": {
-    "background-image": {
-      "light": "linear-gradient( 45deg, hsl(187deg 100% 89%) 0%, hsl(187deg 100% 87%) 21%, hsl(187deg 100% 85%) 30%, hsl(187deg 100% 83%) 39%, hsl(187deg 100% 81%) 46%, hsl(187deg 100% 79%) 54%, hsl(187deg 100% 77%) 61%, hsl(186deg 100% 75%) 69%, hsl(186deg 100% 72%) 79%, hsl(186deg 100% 69%) 100% )",
-      "dark": "linear-gradient( 45deg, hsl(210deg 90% 80%) 0%, hsl(211deg 91% 77%) 21%, hsl(212deg 92% 74%) 30%, hsl(212deg 93% 71%) 39%, hsl(213deg 93% 68%) 46%, hsl(213deg 93% 65%) 54%, hsl(213deg 92% 61%) 61%, hsl(213deg 91% 58%) 69%, hsl(213deg 90% 54%) 79%, hsl(212deg 93% 49%) 100% )"
-    }
-  },
-  ".ulu-gradient-canvas6  .canvas-node.is-themed.mod-canvas-color-6 .canvas-node-content": {
-    "background-image": {
-      "light": "linear-gradient( 45deg, hsl(298deg 68% 90%) 0%, hsl(287deg 68% 89%) 21%, hsl(277deg 68% 89%) 30%, hsl(267deg 67% 88%) 39%, hsl(258deg 65% 87%) 46%, hsl(249deg 63% 87%) 54%, hsl(240deg 61% 86%) 61%, hsl(232deg 62% 83%) 69%, hsl(225deg 62% 81%) 79%, hsl(220deg 61% 79%) 100% )",
-      "dark": "linear-gradient( 45deg, hsl(276deg 91% 79%) 0%, hsl(274deg 88% 77%) 21%, hsl(272deg 85% 75%) 30%, hsl(270deg 83% 74%) 39%, hsl(267deg 81% 72%) 46%, hsl(265deg 79% 71%) 54%, hsl(262deg 78% 69%) 61%, hsl(260deg 76% 68%) 69%, hsl(257deg 75% 66%) 79%, hsl(254deg 74% 65%) 100% )"
-    }
   },
   ".ulu-nt-callouts": {
     "--color-callout-blue": { "light": "#def1ff", "dark": "#263850" },
@@ -1276,12 +1107,11 @@
     },
     "color": { "light": "var(--text-normal)", "dark": null }
   },
-  ".dropdown": { "background-image": { "light": null, "dark": "url(\"data" } },
-  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation input": {
-    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
-  },
-  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation textarea": {
-    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  ".dropdown": {
+    "background-image": {
+      "light": null,
+      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+    }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -1290,7 +1120,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4)) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {
@@ -1394,107 +1224,6 @@
   ".is-tablet .suggestion-container": {
     "background-color": { "light": null, "dark": "var(--background-secondary)" }
   },
-  ".ulu-spotlight-d": {
-    "--accent-h": { "light": null, "dark": "14" },
-    "--accent-l": { "light": null, "dark": "73%" },
-    "--accent-s": { "light": null, "dark": "100%" },
-    "--background-modifier-border-alt": { "light": null, "dark": "#161f2c" },
-    "--background-modifier-box-shadow": {
-      "light": null,
-      "dark": "rgba(0, 0, 0, 0.3)"
-    },
-    "--background-modifier-cover": {
-      "light": null,
-      "dark": "rgba(10, 10, 10, 0.4)"
-    },
-    "--background-modifier-form-field": {
-      "light": null,
-      "dark": "var(--color-base-25)"
-    },
-    "--background-secondary-alt": {
-      "light": null,
-      "dark": "var(--color-base-30)"
-    },
-    "--color-accent": {
-      "light": null,
-      "dark": "hsl(var(--accent-h), var(--accent-s), var(--accent-l))"
-    },
-    "--color-accent-1": {
-      "light": null,
-      "dark": "hsl( var(--accent-h), var(--accent-s), calc(var(--accent-l) - 3.8%) )"
-    },
-    "--color-accent-2": {
-      "light": null,
-      "dark": "hsl( var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.8%) )"
-    },
-    "--color-accent-hsl": {
-      "light": null,
-      "dark": "var(--accent-h), var(--accent-s), var(--accent-l)"
-    },
-    "--color-base-00": { "light": null, "dark": "#212733" },
-    "--color-base-10": { "light": null, "dark": "#272c36" },
-    "--color-base-100": { "light": null, "dark": "#ff9473" },
-    "--color-base-20": { "light": null, "dark": "#1a1f28" },
-    "--color-base-25": { "light": null, "dark": "#2c3139" },
-    "--color-base-30": { "light": null, "dark": "#121924" },
-    "--color-base-35": { "light": null, "dark": "#2c3139" },
-    "--color-base-40": { "light": null, "dark": "#2c3139" },
-    "--color-base-50": { "light": null, "dark": "#85adbb" },
-    "--color-base-60": { "light": null, "dark": "#85adbb" },
-    "--color-base-70": { "light": null, "dark": "#e6e6e6" },
-    "--color-blue": { "light": null, "dark": "#027aff" },
-    "--color-blue-rgb": { "light": null, "dark": "2, 122, 255" },
-    "--color-cyan": { "light": null, "dark": "#53dfdd" },
-    "--color-cyan-rgb": { "light": null, "dark": "83, 223, 221" },
-    "--color-green": { "light": null, "dark": "#44cf6e" },
-    "--color-green-rgb": { "light": null, "dark": "68, 207, 110" },
-    "--color-orange": { "light": null, "dark": "#e9973f" },
-    "--color-orange-rgb": { "light": null, "dark": "233, 151, 63" },
-    "--color-pink": { "light": null, "dark": "#fa99cd" },
-    "--color-pink-rgb": { "light": null, "dark": "250, 153, 205" },
-    "--color-purple": { "light": null, "dark": "#a882ff" },
-    "--color-purple-rgb": { "light": null, "dark": "168, 130, 255" },
-    "--color-red": { "light": null, "dark": "#fb464c" },
-    "--color-red-rgb": { "light": null, "dark": "251, 70, 76" },
-    "--color-yellow": { "light": null, "dark": "#e0de71" },
-    "--color-yellow-rgb": { "light": null, "dark": "224, 222, 113" },
-    "--gradient-bg-primary": {
-      "light": null,
-      "dark": "linear-gradient(135deg, #262d3b 1.62%, #212733 50.72%)"
-    },
-    "--gradient-bg-secondary": {
-      "light": null,
-      "dark": "linear-gradient( 135deg, #1e242e 1.62%, #1a1f28 50.72% )"
-    },
-    "--highlight-mix-blend-mode": { "light": null, "dark": "lighten" },
-    "--input-shadow": {
-      "light": null,
-      "dark": "inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09), 0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent"
-    },
-    "--input-shadow-hover": {
-      "light": null,
-      "dark": "inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16), 0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent"
-    },
-    "--interactive-hover": { "light": null, "dark": "var(--color-base-35)" },
-    "--interactive-normal": { "light": null, "dark": "var(--color-base-30)" },
-    "--mono-rgb-0": { "light": null, "dark": "0, 0, 0" },
-    "--mono-rgb-100": { "light": null, "dark": "255, 255, 255" },
-    "--shadow-l": {
-      "light": null,
-      "dark": "0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2)"
-    },
-    "--shadow-s": { "light": null, "dark": "none" },
-    "--text-highlight-bg": { "light": null, "dark": "rgba(255, 208, 0, 0.4)" },
-    "--text-highlight-bg-active": {
-      "light": null,
-      "dark": "rgba(255, 128, 0, 0.4)"
-    },
-    "--text-selection": {
-      "light": null,
-      "dark": "hsla(var(--interactive-accent-hsl), 0.25)"
-    },
-    "color-scheme": { "light": null, "dark": "dark" }
-  },
   ".ulu-soft-d": {
     "--background-modifier-border-alt": { "light": null, "dark": "#54504a" },
     "--canvas-color": { "light": null, "dark": "245, 245, 245" },
@@ -1539,12 +1268,11 @@
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #413d3a 1.62%, #393633 50.72% )"
+      "dark": "linear-gradient(135deg, #413d3a 1.62%, #393633 50.72%)"
     },
     "--highlight-mix-blend-mode": { "light": null, "dark": "lighten" },
     "--mono-rgb-0": { "light": null, "dark": "0, 0, 0" },
-    "--mono-rgb-100": { "light": null, "dark": "255, 255, 255" },
-    "color-scheme": { "light": null, "dark": "dark" }
+    "--mono-rgb-100": { "light": null, "dark": "255, 255, 255" }
   },
   ".ulu-arch-d": {
     "--canvas-color": { "light": null, "dark": "245, 245, 245" },
@@ -1585,8 +1313,7 @@
     "--color-yellow-rgb": { "light": null, "dark": "137, 116, 74" },
     "--highlight-mix-blend-mode": { "light": null, "dark": "lighten" },
     "--mono-rgb-0": { "light": null, "dark": "0, 0, 0" },
-    "--mono-rgb-100": { "light": null, "dark": "255, 255, 255" },
-    "color-scheme": { "light": null, "dark": "dark" }
+    "--mono-rgb-100": { "light": null, "dark": "255, 255, 255" }
   },
   ".ulu-shark-d": {
     "--background-modifier-border-alt": { "light": null, "dark": "#9c7b9c" },
@@ -1632,25 +1359,24 @@
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #332f37 1.62%, #252228 50.72% )"
+      "dark": "linear-gradient(135deg, #332f37 1.62%, #252228 50.72%)"
     },
     "--gradient-bg-tertiary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #8e718e 30.62%, #836383 90.72% )"
+      "dark": "linear-gradient(135deg, #8e718e 30.62%, #836383 90.72%)"
     },
     "--highlight-mix-blend-mode": { "light": null, "dark": "lighten" },
     "--mono-rgb-0": { "light": null, "dark": "0, 0, 0" },
-    "--mono-rgb-100": { "light": null, "dark": "255, 255, 255" },
-    "color-scheme": { "light": null, "dark": "dark" }
-  },
-  ".ulu-shark-d .mod-root .workspace-tabs .workspace-leaf:not(.is-mobile)": {
-    "border": { "light": null, "dark": "1px solid #3f3a45" }
+    "--mono-rgb-100": { "light": null, "dark": "255, 255, 255" }
   },
   ".ulu-shark-d .modal:not(.is-mobile)": {
     "border": { "light": null, "dark": "1px solid #3f3a45" }
   },
-  ".ulu-shark-d.ulu-prop-card .markdown-source-view.is-live-preview.show-properties .metadata-container": {
-    "background": { "light": null, "dark": "var(--gradient-bg-tertiary)" },
+  ".ulu-shark-d.ulu-prop-car": {
+    ".markdown-source-view.is-live-preview.show-properties.metadata-container {background": {
+      "light": null,
+      "dark": "var(--gradient-bg-tertiary)"
+    },
     "border": {
       "light": null,
       "dark": "1px solid var(--background-modifier-border-alt)"
@@ -1691,8 +1417,7 @@
     "--color-yellow-rgb": { "light": null, "dark": "224, 222, 113" },
     "--highlight-mix-blend-mode": { "light": null, "dark": "lighten" },
     "--mono-rgb-0": { "light": null, "dark": "0, 0, 0" },
-    "--mono-rgb-100": { "light": null, "dark": "255, 255, 255" },
-    "color-scheme": { "light": null, "dark": "dark" }
+    "--mono-rgb-100": { "light": null, "dark": "255, 255, 255" }
   },
   ".ulu-solar-dt": {
     "--accent-h": { "light": null, "dark": "1" },
@@ -1736,11 +1461,11 @@
     "--color-yellow-rgb": { "light": null, "dark": "203, 75, 22" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #08404e 1.62%, #073642 50.72% )"
+      "dark": "linear-gradient(135deg, #08404e 1.62%, #073642 50.72%)"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #003947 1.62%, #002b36 50.72% )"
+      "dark": "linear-gradient(135deg, #003947 1.62%, #002b36 50.72%)"
     }
   },
   ".ulu-red-d": {
@@ -1784,11 +1509,11 @@
     "--color-yellow-rgb": { "light": null, "dark": "233, 191, 85" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #221b1b 1.62%, #171212 50.72% )"
+      "dark": "linear-gradient(135deg, #221b1b 1.62%, #171212 50.72%)"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #191515 1.62%, #110e0e 50.72% )"
+      "dark": "linear-gradient(135deg, #191515 1.62%, #110e0e 50.72%)"
     }
   },
   ".ulu-green-d": {
@@ -1831,16 +1556,15 @@
     "--color-yellow-rgb": { "light": null, "dark": "228, 188, 127" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #1d2522 1.62%, #121715 50.72% )"
+      "dark": "linear-gradient(135deg, #1d2522 1.62%, #121715 50.72%)"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #151918 1.62%, #0e1110 50.72% )"
+      "dark": "linear-gradient(135deg, #151918 1.62%, #0e1110 50.72%)"
     },
     "--highlight-mix-blend-mode": { "light": null, "dark": "lighten" },
     "--mono-rgb-0": { "light": null, "dark": "0, 0, 0" },
-    "--mono-rgb-100": { "light": null, "dark": "255, 255, 255" },
-    "color-scheme": { "light": null, "dark": "dark" }
+    "--mono-rgb-100": { "light": null, "dark": "255, 255, 255" }
   },
   ".ulu-blue-d": {
     "--background-modifier-border-alt": { "light": null, "dark": "#34464e" },
@@ -1857,16 +1581,15 @@
     "--color-base-70": { "light": null, "dark": "#bdc4ce" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #17242c 1.62%, #121517 50.72% )"
+      "dark": "linear-gradient(135deg, #17242c 1.62%, #121517 50.72%)"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #0b1114 1.62%, #0e1011 50.72% )"
+      "dark": "linear-gradient(135deg, #0b1114 1.62%, #0e1011 50.72%)"
     },
     "--highlight-mix-blend-mode": { "light": null, "dark": "lighten" },
     "--mono-rgb-0": { "light": null, "dark": "0, 0, 0" },
-    "--mono-rgb-100": { "light": null, "dark": "255, 255, 255" },
-    "color-scheme": { "light": null, "dark": "dark" }
+    "--mono-rgb-100": { "light": null, "dark": "255, 255, 255" }
   },
   ".ulu-purple-d": {
     "--background-modifier-border-alt": { "light": null, "dark": "#44344e" },
@@ -1883,16 +1606,15 @@
     "--color-base-70": { "light": null, "dark": "#c6bdce" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #201d25 1.62%, #141217 50.72% )"
+      "dark": "linear-gradient(135deg, #201d25 1.62%, #141217 50.72%)"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #221e24 1.62%, #100e11 50.72% )"
+      "dark": "linear-gradient(135deg, #221e24 1.62%, #100e11 50.72%)"
     },
     "--highlight-mix-blend-mode": { "light": null, "dark": "lighten" },
     "--mono-rgb-0": { "light": null, "dark": "0, 0, 0" },
-    "--mono-rgb-100": { "light": null, "dark": "255, 255, 255" },
-    "color-scheme": { "light": null, "dark": "dark" }
+    "--mono-rgb-100": { "light": null, "dark": "255, 255, 255" }
   },
   ".ulu-gruvbox-dt": {
     "--accent-h": { "light": null, "dark": "75" },
@@ -1935,11 +1657,11 @@
     "--color-yellow-rgb": { "light": null, "dark": "215, 153, 33" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #313131 1.62%, #282828 50.72% )"
+      "dark": "linear-gradient(135deg, #313131 1.62%, #282828 50.72%)"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #3c3a39 1.62%, #32302f 50.72% )"
+      "dark": "linear-gradient(135deg, #3c3a39 1.62%, #32302f 50.72%)"
     }
   },
   ".ulu-lobstertime-dt": {
@@ -2023,16 +1745,15 @@
     "--color-yellow-rgb": { "light": null, "dark": "147, 136, 92" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #121212 1.62%, #050505 50.72% )"
+      "dark": "linear-gradient(135deg, #121212 1.62%, #050505 50.72%)"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #0f0f0f 1.62%, #000000 50.72% )"
+      "dark": "linear-gradient(135deg, #0f0f0f 1.62%, #000000 50.72%)"
     },
     "--highlight-mix-blend-mode": { "light": null, "dark": "lighten" },
     "--mono-rgb-0": { "light": null, "dark": "0, 0, 0" },
-    "--mono-rgb-100": { "light": null, "dark": "255, 255, 255" },
-    "color-scheme": { "light": null, "dark": "dark" }
+    "--mono-rgb-100": { "light": null, "dark": "255, 255, 255" }
   },
   ".ulu-blueprint-d": {
     "--background-modifier-border-alt": { "light": null, "dark": "#fff" },
@@ -2074,16 +1795,15 @@
     "--color-yellow-rgb": { "light": null, "dark": "137, 116, 74" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #0074bd 1.62%, #0069aa 50.72% )"
+      "dark": "linear-gradient(135deg, #0074bd 1.62%, #0069aa 50.72%)"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #003f7a 1.62%, #00396d 50.72% )"
+      "dark": "linear-gradient(135deg, #003f7a 1.62%, #00396d 50.72%)"
     },
     "--highlight-mix-blend-mode": { "light": null, "dark": "lighten" },
     "--mono-rgb-0": { "light": null, "dark": "0, 0, 0" },
-    "--mono-rgb-100": { "light": null, "dark": "255, 255, 255" },
-    "color-scheme": { "light": null, "dark": "dark" }
+    "--mono-rgb-100": { "light": null, "dark": "255, 255, 255" }
   },
   ".ulu-control-d": {
     "--background-modifier-border-alt": { "light": null, "dark": "#353841" },
@@ -2128,17 +1848,16 @@
     "--color-yellow-rgb": { "light": null, "dark": "230, 230, 103" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #2f343c 1.62%, #262a30 50.72% )"
+      "dark": "linear-gradient(135deg, #2f343c 1.62%, #262a30 50.72%)"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #262a31 1.62%, #1e2126 50.72% )"
+      "dark": "linear-gradient(135deg, #262a31 1.62%, #1e2126 50.72%)"
     },
     "--highlight-mix-blend-mode": { "light": null, "dark": "lighten" },
     "--mono-rgb-0": { "light": null, "dark": "0, 0, 0" },
     "--mono-rgb-100": { "light": null, "dark": "255, 255, 255" },
-    "--text-on-accent": { "light": null, "dark": "var(--color-base-00)" },
-    "color-scheme": { "light": null, "dark": "dark" }
+    "--text-on-accent": { "light": null, "dark": "var(--color-base-00)" }
   },
   ".ulu-end-d": {
     "--background-modifier-border-alt": { "light": null, "dark": "#1a1a1a" },
@@ -2156,17 +1875,16 @@
     "--color-base-70": { "light": null, "dark": "#d9d2c4" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #0d0d0d 1.62%, #0a0a0a 50.72% )"
+      "dark": "linear-gradient(135deg, #0d0d0d 1.62%, #0a0a0a 50.72%)"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #141414 1.62%, #080808 50.72% )"
+      "dark": "linear-gradient(135deg, #141414 1.62%, #080808 50.72%)"
     },
     "--highlight-mix-blend-mode": { "light": null, "dark": "lighten" },
     "--mono-rgb-0": { "light": null, "dark": "0, 0, 0" },
     "--mono-rgb-100": { "light": null, "dark": "255, 255, 255" },
-    "--text-on-accent": { "light": null, "dark": "var(--color-base-00)" },
-    "color-scheme": { "light": null, "dark": "dark" }
+    "--text-on-accent": { "light": null, "dark": "var(--color-base-00)" }
   },
   ".ulu-dracula-dt": {
     "--accent-h": { "light": null, "dark": "1" },
@@ -2210,11 +1928,11 @@
     "--color-yellow-rgb": { "light": null, "dark": "241, 250, 140" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #2e303e 1.62%, #282a36 50.72% )"
+      "dark": "linear-gradient(135deg, #2e303e 1.62%, #282a36 50.72%)"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #20252c 1.62%, #1a1e24 50.72% )"
+      "dark": "linear-gradient(135deg, #20252c 1.62%, #1a1e24 50.72%)"
     }
   },
   ".ulu-lyt-dt": {
@@ -2258,11 +1976,11 @@
     "--color-yellow-rgb": { "light": null, "dark": "242, 204, 143" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #2a2b32 1.62%, #23242a 50.72% )"
+      "dark": "linear-gradient(135deg, #2a2b32 1.62%, #23242a 50.72%)"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #363a45 1.62%, #2d3039 50.72% )"
+      "dark": "linear-gradient(135deg, #363a45 1.62%, #2d3039 50.72%)"
     }
   },
   ".ulu-lord-d": {
@@ -2308,23 +2026,22 @@
     "--color-yellow-rgb": { "light": null, "dark": "230, 230, 103" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #0b281e 1.62%, #081c15 50.72% )"
+      "dark": "linear-gradient(135deg, #0b281e 1.62%, #081c15 50.72%)"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #1f4d39 1.62%, #1b4332 50.72% )"
+      "dark": "linear-gradient(135deg, #1f4d39 1.62%, #1b4332 50.72%)"
     },
     "--highlight-mix-blend-mode": { "light": null, "dark": "lighten" },
     "--mono-rgb-0": { "light": null, "dark": "0, 0, 0" },
     "--mono-rgb-100": { "light": null, "dark": "255, 255, 255" },
-    "--text-on-accent": { "light": null, "dark": "var(--color-base-00)" },
-    "color-scheme": { "light": null, "dark": "dark" }
+    "--text-on-accent": { "light": null, "dark": "var(--color-base-00)" }
   },
   ".ulu-gradient-d": {
     "--background-modifier-border-alt": { "light": null, "dark": "#40916c" },
     "--background-primary": {
       "light": null,
-      "dark": "linear-gradient( 0deg, hsl(244deg 41% 8%) 0%, hsl(233deg 39% 12%) 50%, hsl(230deg 40% 14%) 100% )"
+      "dark": "linear-gradient(0deg, hsl(244deg 41% 8%) 0%, hsl(233deg 39% 12%) 50%, hsl(230deg 40% 14%) 100%)"
     },
     "--color-accent": { "light": null, "dark": "hsl(50 100% 55%)" },
     "--color-accent-hsl": { "light": null, "dark": "50, 100%, 55%" },
@@ -2342,17 +2059,16 @@
     "--color-base-70": { "light": null, "dark": "#d3d1eb" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, rgba(9, 9, 9, 0.5) 20.62%, rgba(0, 0, 0, 0.5) 90.72% )"
+      "dark": "linear-gradient(135deg, rgba(9, 9, 9, 0.5) 20.62%, rgba(0, 0, 0, 0.5) 90.72%)"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #1e5e6c 20.62%, #601e6c 90.72% )"
+      "dark": "linear-gradient(135deg, #1e5e6c 20.62%, #601e6c 90.72%)"
     },
     "--highlight-mix-blend-mode": { "light": null, "dark": "lighten" },
     "--mono-rgb-0": { "light": null, "dark": "0, 0, 0" },
     "--mono-rgb-100": { "light": null, "dark": "255, 255, 255" },
-    "--text-on-accent": { "light": null, "dark": "var(--color-base-00)" },
-    "color-scheme": { "light": null, "dark": "dark" }
+    "--text-on-accent": { "light": null, "dark": "var(--color-base-00)" }
   },
   ".ulu-gradient-d .modal:not(.is-mobile)": {
     "background": { "light": null, "dark": "var(--gradient-bg-secondary)" }
@@ -2372,11 +2088,11 @@
     "--color-base-70": { "light": null, "dark": "#cdcdcd" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #060606 20.62%, #000 90.72% )"
+      "dark": "linear-gradient(135deg, #060606 20.62%, #000 90.72%)"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #030303 20.62%, #000 90.72% )"
+      "dark": "linear-gradient(135deg, #030303 20.62%, #000 90.72%)"
     }
   },
   ".ulu-accent-bg-d.ulu-red": {
@@ -2384,11 +2100,11 @@
     "--color-base-20": { "light": null, "dark": "#130f0f" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #262626 20.62%, #050404 90.72% )"
+      "dark": "linear-gradient(135deg, #262626 20.62%, #050404 90.72%)"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #2b2b2b 20.62%, #130f0f 90.72% )"
+      "dark": "linear-gradient(135deg, #2b2b2b 20.62%, #130f0f 90.72%)"
     }
   },
   ".ulu-accent-bg-d.ulu-green": {
@@ -2396,11 +2112,11 @@
     "--color-base-20": { "light": null, "dark": "#101110" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #262626 20.62%, #050505 90.72% )"
+      "dark": "linear-gradient(135deg, #262626 20.62%, #050505 90.72%)"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #2b2b2b 20.62%, #101110 90.72% )"
+      "dark": "linear-gradient(135deg, #2b2b2b 20.62%, #101110 90.72%)"
     }
   },
   ".ulu-accent-bg-d.ulu-orange": {
@@ -2408,11 +2124,11 @@
     "--color-base-20": { "light": null, "dark": "#110f0d" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #262626 20.62%, #050404 90.72% )"
+      "dark": "linear-gradient(135deg, #262626 20.62%, #050404 90.72%)"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #2b2b2b 20.62%, #110f0d 90.72% )"
+      "dark": "linear-gradient(135deg, #2b2b2b 20.62%, #110f0d 90.72%)"
     }
   },
   ".ulu-accent-bg-d.ulu-yellow": {
@@ -2420,11 +2136,11 @@
     "--color-base-20": { "light": null, "dark": "#13110f" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #262626 20.62%, #050404 90.72% )"
+      "dark": "linear-gradient(135deg, #262626 20.62%, #050404 90.72%)"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #2b2b2b 20.62%, #13110f 90.72% )"
+      "dark": "linear-gradient(135deg, #2b2b2b 20.62%, #13110f 90.72%)"
     }
   },
   ".ulu-accent-bg-d.ulu-cyan": {
@@ -2432,11 +2148,11 @@
     "--color-base-20": { "light": null, "dark": "#0f1111" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #262626 20.62%, #060606 90.72% )"
+      "dark": "linear-gradient(135deg, #262626 20.62%, #060606 90.72%)"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #2b2b2b 20.62%, #0f1111 90.72% )"
+      "dark": "linear-gradient(135deg, #2b2b2b 20.62%, #0f1111 90.72%)"
     }
   },
   ".ulu-accent-bg-d.ulu-blue": {
@@ -2444,11 +2160,11 @@
     "--color-base-20": { "light": null, "dark": "#0c0f18" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #262626 20.62%, #040508 90.72% )"
+      "dark": "linear-gradient(135deg, #262626 20.62%, #040508 90.72%)"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #2b2b2b 20.62%, #0c0f18 90.72% )"
+      "dark": "linear-gradient(135deg, #2b2b2b 20.62%, #0c0f18 90.72%)"
     }
   },
   ".ulu-accent-bg-d.ulu-purple": {
@@ -2456,11 +2172,11 @@
     "--color-base-20": { "light": null, "dark": "#111112" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #262626 20.62%, #050505 90.72% )"
+      "dark": "linear-gradient(135deg, #262626 20.62%, #050505 90.72%)"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #2b2b2b 20.62%, #111112 90.72% )"
+      "dark": "linear-gradient(135deg, #2b2b2b 20.62%, #111112 90.72%)"
     }
   },
   ".ulu-accent-bg-d.ulu-pink": {
@@ -2468,11 +2184,11 @@
     "--color-base-20": { "light": null, "dark": "#130e0f" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #262626 20.62%, #060505 90.72% )"
+      "dark": "linear-gradient(135deg, #262626 20.62%, #060505 90.72%)"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #2b2b2b 20.62%, #130e0f 90.72% )"
+      "dark": "linear-gradient(135deg, #2b2b2b 20.62%, #130e0f 90.72%)"
     }
   },
   ".ulu-con-d": {
@@ -2480,11 +2196,11 @@
     "--color-base-20": { "light": null, "dark": "#171717" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #171717 20.62%, #171717 90.72% )"
+      "dark": "linear-gradient(135deg, #171717 20.62%, #171717 90.72%)"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #171717 20.62%, #171717 90.72% )"
+      "dark": "linear-gradient(135deg, #171717 20.62%, #171717 90.72%)"
     }
   },
   ".ulu-super-con-d": {
@@ -2492,11 +2208,11 @@
     "--color-base-20": { "light": null, "dark": "#000" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #000 20.62%, #000 90.72% )"
+      "dark": "linear-gradient(135deg, #000 20.62%, #000 90.72%)"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #000 20.62%, #000 90.72% )"
+      "dark": "linear-gradient(135deg, #000 20.62%, #000 90.72%)"
     }
   },
   ".ulu-custom-d": {
@@ -2508,11 +2224,11 @@
     "--color-base-20": { "light": null, "dark": "#130f0f" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #130f0f 20.62%, #130f0f 90.72% )"
+      "dark": "linear-gradient(135deg, #130f0f 20.62%, #130f0f 90.72%)"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #130f0f 20.62%, #130f0f 90.72% )"
+      "dark": "linear-gradient(135deg, #130f0f 20.62%, #130f0f 90.72%)"
     }
   },
   ".ulu-accent-bg-lowcon-d.ulu-green": {
@@ -2520,11 +2236,11 @@
     "--color-base-20": { "light": null, "dark": "#101110" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #101110 20.62%, #101110 90.72% )"
+      "dark": "linear-gradient(135deg, #101110 20.62%, #101110 90.72%)"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #101110 20.62%, #101110 90.72% )"
+      "dark": "linear-gradient(135deg, #101110 20.62%, #101110 90.72%)"
     }
   },
   ".ulu-accent-bg-lowcon-d.ulu-orange": {
@@ -2532,11 +2248,11 @@
     "--color-base-20": { "light": null, "dark": "#110f0d" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #110f0d 20.62%, #110f0d 90.72% )"
+      "dark": "linear-gradient(135deg, #110f0d 20.62%, #110f0d 90.72%)"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #110f0d 20.62%, #110f0d 90.72% )"
+      "dark": "linear-gradient(135deg, #110f0d 20.62%, #110f0d 90.72%)"
     }
   },
   ".ulu-accent-bg-lowcon-d.ulu-yellow": {
@@ -2544,11 +2260,11 @@
     "--color-base-20": { "light": null, "dark": "#13110f" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #13110f 20.62%, #13110f 90.72% )"
+      "dark": "linear-gradient(135deg, #13110f 20.62%, #13110f 90.72%)"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #13110f 20.62%, #13110f 90.72% )"
+      "dark": "linear-gradient(135deg, #13110f 20.62%, #13110f 90.72%)"
     }
   },
   ".ulu-accent-bg-lowcon-d.ulu-cyan": {
@@ -2556,11 +2272,11 @@
     "--color-base-20": { "light": null, "dark": "#0f1111" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #0f1111 20.62%, #0f1111 90.72% )"
+      "dark": "linear-gradient(135deg, #0f1111 20.62%, #0f1111 90.72%)"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #0f1111 20.62%, #0f1111 90.72% )"
+      "dark": "linear-gradient(135deg, #0f1111 20.62%, #0f1111 90.72%)"
     }
   },
   ".ulu-cono-accent-bg-d.ulu-blue": {
@@ -2568,11 +2284,11 @@
     "--color-base-20": { "light": null, "dark": "#0c0f18" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #0c0f18 20.62%, #0c0f18 90.72% )"
+      "dark": "linear-gradient(135deg, #0c0f18 20.62%, #0c0f18 90.72%)"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #0c0f18 20.62%, #0c0f18 90.72% )"
+      "dark": "linear-gradient(135deg, #0c0f18 20.62%, #0c0f18 90.72%)"
     }
   },
   ".ulu-accent-bg-lowcon-d.ulu-purple": {
@@ -2580,11 +2296,11 @@
     "--color-base-20": { "light": null, "dark": "#111112" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #111112 20.62%, #111112 90.72% )"
+      "dark": "linear-gradient(135deg, #111112 20.62%, #111112 90.72%)"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #111112 20.62%, #111112 90.72% )"
+      "dark": "linear-gradient(135deg, #111112 20.62%, #111112 90.72%)"
     }
   },
   ".ul.ulu-con-accent-bg-d.ulu-pink": {
@@ -2592,66 +2308,12 @@
     "--color-base-20": { "light": null, "dark": "#130e0f" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #130e0f 20.62%, #130e0f 90.72% )"
+      "dark": "linear-gradient(135deg, #130e0f 20.62%, #130e0f 90.72%)"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #130e0f 20.62%, #130e0f 90.72% )"
+      "dark": "linear-gradient(135deg, #130e0f 20.62%, #130e0f 90.72%)"
     }
-  },
-  ".ulu-canvas-fancycolor10 .canvas-node.is-themed.mod-canvas-color-1 .canvas-node-content p": {
-    "color": { "light": null, "dark": "white" }
-  },
-  ".ulu-canvas-fancycolor11 .canvas-node.is-themed.mod-canvas-color-2 .canvas-node-content p": {
-    "color": { "light": null, "dark": "white" }
-  },
-  ".ulu-canvas-fancycolor12 .canvas-node.is-themed.mod-canvas-color-3 .canvas-node-content p": {
-    "color": { "light": null, "dark": "white" }
-  },
-  ".ulu-canvas-fancycolor13 .canvas-node.is-themed.mod-canvas-color-4 .canvas-node-content p": {
-    "color": { "light": null, "dark": "white" }
-  },
-  ".ulu-canvas-fancycolor14 .canvas-node.is-themed.mod-canvas-color-5 .canvas-node-content p": {
-    "color": { "light": null, "dark": "white" }
-  },
-  ".ulu-canvas-fancycolor15 .canvas-node.is-themed.mod-canvas-color-6 .canvas-node-content p": {
-    "color": { "light": null, "dark": "white" }
-  },
-  ".ulu-gummy-canvas1 .canvas-node.is-themed.mod-canvas-color-1 .canvas-node-content p": {
-    "color": { "light": null, "dark": "white" }
-  },
-  ".ulu-gummy-canvas2 .canvas-node.is-themed.mod-canvas-color-2 .canvas-node-content p": {
-    "color": { "light": null, "dark": "white" }
-  },
-  ".ulu-gummy-canvas3 .canvas-node.is-themed.mod-canvas-color-3 .canvas-node-content p": {
-    "color": { "light": null, "dark": "white" }
-  },
-  ".ulu-gummy-canvas4 .canvas-node.is-themed.mod-canvas-color-4 .canvas-node-content p": {
-    "color": { "light": null, "dark": "white" }
-  },
-  ".ulu-gummy-canvas5 .canvas-node.is-themed.mod-canvas-color-5 .canvas-node-content p": {
-    "color": { "light": null, "dark": "white" }
-  },
-  ".ulu-gummy-canvas6 .canvas-node.is-themed.mod-canvas-color-6 .canvas-node-content p": {
-    "color": { "light": null, "dark": "white" }
-  },
-  ".ulu-gradient-canvas1  .canvas-node.is-themed.mod-canvas-color-1 .canvas-node-content p": {
-    "color": { "light": null, "dark": "var(--text-on-accent)" }
-  },
-  ".ulu-gradient-canvas2  .canvas-node.is-themed.mod-canvas-color-2 .canvas-node-content p": {
-    "color": { "light": null, "dark": "var(--text-on-accent)" }
-  },
-  ".ulu-gradient-canvas3  .canvas-node.is-themed.mod-canvas-color-3 .canvas-node-content p": {
-    "color": { "light": null, "dark": "var(--text-on-accent)" }
-  },
-  ".ulu-gradient-canvas4  .canvas-node.is-themed.mod-canvas-color-4 .canvas-node-content p": {
-    "color": { "light": null, "dark": "var(--text-on-accent)" }
-  },
-  ".ulu-gradient-canvas5  .canvas-node.is-themed.mod-canvas-color-5 .canvas-node-content p": {
-    "color": { "light": null, "dark": "var(--text-on-accent)" }
-  },
-  ".ulu-gradient-canvas6  .canvas-node.is-themed.mod-canvas-color-6 .canvas-node-content p": {
-    "color": { "light": null, "dark": "var(--text-on-accent)" }
   },
   ".ulu-prop-card .text-icon-button": {
     "color": { "light": null, "dark": "var(--text-normal)" }

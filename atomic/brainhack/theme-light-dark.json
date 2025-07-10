@@ -1,140 +1,211 @@
 {
   "body": {
     "--accent-color-alt": {
-      "light": "hsl( var(--accento-h, var(--accent-h)), calc(1 * var(--accento-s, var(--accent-s))), calc(1.5 * var(--accento-l, var(--accent-l))), 1 )",
+      "light": "hsl(var(--accento-h, var(--accent-h)), calc(1 * var(--accento-s, var(--accent-s))), calc(1.5 * var(--accento-l, var(--accent-l))), 1)",
       "dark": null
     },
     "--accent-color-alt2": {
-      "light": "hsl( var(--accento-h, var(--accent-h)), calc(1 * var(--accento-s), var(--accent-s)), calc(1.7 * var(--accento-l, var(--accent-l))), 1 )",
+      "light": "hsl(var(--accento-h, var(--accent-h)), calc(1 * var(--accento-s), var(--accent-s)), calc(1.7 * var(--accento-l, var(--accent-l))), 1)",
       "dark": null
     },
     "--accent-color-bg": {
-      "light": "hsl( var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), 98%, 1 )",
+      "light": "hsl(var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), 98%, 1)",
       "dark": null
     },
     "--accent-color-bg_d": {
-      "light": "hsl( var(--accento-h, var(--accent-h)), calc(0.1 * var(--accento-s, var(--accent-s))), 10%, 1 )",
+      "light": "hsl(var(--accento-h, var(--accent-h)), calc(0.1 * var(--accento-s, var(--accent-s))), 10%, 1)",
       "dark": null
     },
     "--accent-color-bg_dc": {
-      "light": "hsl( var(--accento-h, var(--accent-h)), calc(0.1 * var(--accento-s, var(--accent-s))), 15%, 1 )",
+      "light": "hsl(var(--accento-h, var(--accent-h)), calc(0.1 * var(--accento-s, var(--accent-s))), 15%, 1)",
       "dark": null
     },
     "--accent-color-bg2": {
-      "light": "hsl( var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), 85%, 1 )",
+      "light": "hsl(var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), 85%, 1)",
       "dark": null
     },
     "--accent-color-bg2c": {
-      "light": "hsl( var(--accento-h, var(--accent-h)), var(--accent-s, var(--accent-s)), 85%, 1 )",
+      "light": "hsl(var(--accento-h, var(--accent-h)), var(--accent-s, var(--accent-s)), 85%, 1)",
       "dark": null
     },
     "--accent-color-bright": {
-      "light": "hsla( var(--accento-h, var(--accent-h)), calc(1 * var(--accento-s, var(--accent-s))), calc(1 * var(--accento-l, var(--accent-l))), 0.1 )",
+      "light": "hsla(var(--accento-h, var(--accent-h)), calc(1 * var(--accento-s, var(--accent-s))), calc(1 * var(--accento-l, var(--accent-l))), 0.1)",
       "dark": null
     },
     "--accent-color-bright2": {
-      "light": "hsl( var(--accento-h, var(--accent-h)), calc(1 * var(--accento-s, var(--accent-s))), calc(1 * var(--accento-l, var(--accent-l))), 0.01 )",
+      "light": "hsl(var(--accento-h, var(--accent-h)), calc(1 * var(--accento-s, var(--accent-s))), calc(1 * var(--accento-l, var(--accent-l))), 0.01)",
       "dark": null
     },
     "--accent-color-h1": {
-      "light": "hsl( var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), calc(calc(var(--accento-l, var(--accent-l)) - 49%) * -100) )",
+      "light": "hsl(var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), calc(calc(var(--accento-l, var(--accent-l)) - 49%) * -100))",
       "dark": null
     },
     "--accent-color-hsl": {
-      "light": "hsla( var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)) )",
+      "light": "hsla(var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)))",
       "dark": null
     },
     "--accent-color-inverse2": {
-      "light": "hsl( var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), calc(calc(var(--accento-l, var(--accent-l)) - 67%) * -100) )",
+      "light": "hsl(var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), calc(calc(var(--accento-l, var(--accent-l)) - 67%) * -100))",
       "dark": null
     },
     "--accent-color-light01": {
-      "light": "hsla( var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.01 )",
+      "light": "hsla(var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.01)",
       "dark": null
     },
     "--accent-color-light02": {
-      "light": "hsla( var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.02 )",
+      "light": "hsla(var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.02)",
       "dark": null
     },
     "--accent-color-light03": {
-      "light": "hsla( var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.03 )",
+      "light": "hsla(var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.03)",
       "dark": null
     },
     "--accent-color-light04": {
-      "light": "hsla( var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.04 )",
+      "light": "hsla(var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.04)",
       "dark": null
     },
     "--accent-color-light05": {
-      "light": "hsla( var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.05 )",
+      "light": "hsla(var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.05)",
       "dark": null
     },
     "--accent-color-light06": {
-      "light": "hsla( var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.06 )",
+      "light": "hsla(var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.06)",
       "dark": null
     },
     "--accent-color-light07": {
-      "light": "hsla( var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.07 )",
+      "light": "hsla(var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.07)",
       "dark": null
     },
     "--accent-color-light08": {
-      "light": "hsla( var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.08 )",
+      "light": "hsla(var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.08)",
       "dark": null
     },
     "--accent-color-light09": {
-      "light": "hsla( var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.09 )",
+      "light": "hsla(var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.09)",
       "dark": null
     },
     "--accent-color-light1": {
-      "light": "hsla( var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.1 )",
+      "light": "hsla(var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.1)",
       "dark": null
     },
     "--accent-color-light10": {
-      "light": "hsla( var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 1 )",
+      "light": "hsla(var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 1)",
       "dark": null
     },
     "--accent-color-light2": {
-      "light": "hsla( var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.2 )",
+      "light": "hsla(var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.2)",
       "dark": null
     },
     "--accent-color-light3": {
-      "light": "hsla( var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.3 )",
+      "light": "hsla(var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.3)",
       "dark": null
     },
     "--accent-color-light4": {
-      "light": "hsla( var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.4 )",
+      "light": "hsla(var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.4)",
       "dark": null
     },
     "--accent-color-light5": {
-      "light": "hsla( var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.5 )",
+      "light": "hsla(var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.5)",
       "dark": null
     },
     "--accent-color-light6": {
-      "light": "hsla( var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.6 )",
+      "light": "hsla(var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.6)",
       "dark": null
     },
     "--accent-color-light7": {
-      "light": "hsla( var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.7 )",
+      "light": "hsla(var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.7)",
       "dark": null
     },
     "--accent-color-light8": {
-      "light": "hsla( var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.8 )",
+      "light": "hsla(var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.8)",
       "dark": null
     },
     "--accent-color-light9": {
-      "light": "hsla( var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.9 )",
+      "light": "hsla(var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)), 0.9)",
+      "dark": null
+    },
+    "--background-modifier-box-shadow": {
+      "light": "rgba(0, 0, 0, 0.1)",
+      "dark": null
+    },
+    "--background-modifier-cover": {
+      "light": "rgba(220, 220, 220, 0.4)",
       "dark": null
     },
     "--background-primary": { "light": "var(--accent-color-bg)", "dark": null },
     "--background-secondary": { "light": "rgb(255, 255, 255)", "dark": null },
-    "--color-accent": {
-      "light": "hsla( var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)) )",
+    "--background-secondary-alt": {
+      "light": "var(--color-base-05)",
       "dark": null
     },
+    "--color-accent": {
+      "light": "hsla(var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)))",
+      "dark": null
+    },
+    "--color-accent-1": {
+      "light": "hsl(calc(var(--accent-h) - 1), calc(var(--accent-s) * 1.01), calc(var(--accent-l) * 1.075))",
+      "dark": null
+    },
+    "--color-accent-2": {
+      "light": "hsl(calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15))",
+      "dark": null
+    },
+    "--color-accent-hsl": {
+      "light": "var(--accent-h), var(--accent-s), var(--accent-l)",
+      "dark": null
+    },
+    "--color-base-00": { "light": "#ffffff", "dark": null },
+    "--color-base-05": { "light": "#fcfcfc", "dark": null },
+    "--color-base-10": { "light": "#fafafa", "dark": null },
+    "--color-base-100": { "light": "#222222", "dark": null },
+    "--color-base-20": { "light": "#f6f6f6", "dark": null },
+    "--color-base-25": { "light": "#e3e3e3", "dark": null },
+    "--color-base-30": { "light": "#e0e0e0", "dark": null },
+    "--color-base-35": { "light": "#d4d4d4", "dark": null },
+    "--color-base-40": { "light": "#bdbdbd", "dark": null },
+    "--color-base-50": { "light": "#ababab", "dark": null },
+    "--color-base-60": { "light": "#707070", "dark": null },
+    "--color-base-70": { "light": "#5c5c5c", "dark": null },
+    "--color-blue": { "light": "#086ddd", "dark": null },
+    "--color-blue-rgb": { "light": "8, 109, 221", "dark": null },
+    "--color-cyan": { "light": "#00bfbc", "dark": null },
+    "--color-cyan-rgb": { "light": "0, 191, 188", "dark": null },
+    "--color-green": { "light": "#08b94e", "dark": null },
+    "--color-green-rgb": { "light": "8, 185, 78", "dark": null },
+    "--color-orange": { "light": "#ec7500", "dark": null },
+    "--color-orange-rgb": { "light": "236, 117, 0", "dark": null },
+    "--color-pink": { "light": "#d53984", "dark": null },
+    "--color-pink-rgb": { "light": "213, 57, 132", "dark": null },
+    "--color-purple": { "light": "#7852ee", "dark": null },
+    "--color-purple-rgb": { "light": "120, 82, 238", "dark": null },
+    "--color-red": { "light": "#e93147", "dark": null },
+    "--color-red-rgb": { "light": "233, 49, 71", "dark": null },
+    "--color-yellow": { "light": "#e0ac00", "dark": null },
+    "--color-yellow-rgb": { "light": "224, 172, 0", "dark": null },
+    "--highlight-mix-blend-mode": { "light": "darken", "dark": null },
+    "--input-shadow": {
+      "light": "inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent",
+      "dark": null
+    },
+    "--input-shadow-hover": {
+      "light": "inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent",
+      "dark": null
+    },
+    "--mono-rgb-0": { "light": "255, 255, 255", "dark": null },
+    "--mono-rgb-100": { "light": "0, 0, 0", "dark": null },
     "--popover-height": { "light": "1250px", "dark": null },
     "--popover-width": { "light": "1050px", "dark": null },
+    "--shadow-l": {
+      "light": "0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2)",
+      "dark": null
+    },
+    "--shadow-s": {
+      "light": "0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07)",
+      "dark": null
+    },
     "--tab-max-width": { "light": "35%", "dark": null },
     "--text-accent": {
-      "light": "hsla( var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)) )",
+      "light": "hsla(var(--accento-h, var(--accent-h)), var(--accento-s, var(--accent-s)), var(--accento-l, var(--accent-l)))",
       "dark": null
     },
     "background-color": { "light": "white", "dark": null },
@@ -175,7 +246,7 @@
   },
   ".is-frameless.is-hidden-frameless .titlebar:before": {
     "background-color": "transparent",
-    "background-image": "url(\"data",
+    "background-image": "url(\"data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")",
     "background-repeat": "repeat",
     "background-size": "182px",
     "content": "\"\"",
@@ -192,7 +263,7 @@
   },
   "div.app-container:before": {
     "background-color": "transparent",
-    "background-image": "url(\"data",
+    "background-image": "url(\"data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")",
     "background-repeat": "repeat",
     "background-size": "182px",
     "content": "\"\"",
@@ -209,24 +280,7 @@
   },
   ".titlebar-button-container:before": {
     "background-color": "transparent",
-    "background-image": "url(\"data",
-    "background-repeat": "repeat",
-    "background-size": "182px",
-    "content": "\"\"",
-    "height": "100%",
-    "left": "0",
-    "opacity": {
-      "light": "var(--noise-opacity-lm, 0.5)",
-      "dark": "var(--noise-opacity-dm, 0.1)"
-    },
-    "pointer-events": "none",
-    "position": "absolute",
-    "top": "0",
-    "width": "100%"
-  },
-  ".workspace-split.mod-left-split .workspace-sidedock-vault-profile:before": {
-    "background-color": "transparent",
-    "background-image": "url(\"data",
+    "background-image": "url(\"data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")",
     "background-repeat": "repeat",
     "background-size": "182px",
     "content": "\"\"",
@@ -243,58 +297,7 @@
   },
   ".workspace-leaf:before": {
     "background-color": "transparent",
-    "background-image": "url(\"data",
-    "background-repeat": "repeat",
-    "background-size": "182px",
-    "content": "\"\"",
-    "height": "100%",
-    "left": "0",
-    "opacity": {
-      "light": "var(--noise-opacity-lm, 0.5)",
-      "dark": "var(--noise-opacity-dm, 0.1)"
-    },
-    "pointer-events": "none",
-    "position": "absolute",
-    "top": "0",
-    "width": "100%"
-  },
-  "div.workspace-split.mod-horizontal.mod-sidedock.mod-right-split > div.workspace-tabs.mod-top.mod-top-right-space > div.workspace-tab-container > div > div:before": {
-    "background-color": "transparent",
-    "background-image": "url(\"data",
-    "background-repeat": "repeat",
-    "background-size": "182px",
-    "content": "\"\"",
-    "height": "100%",
-    "left": "0",
-    "opacity": {
-      "light": "var(--noise-opacity-lm, 0.5)",
-      "dark": "var(--noise-opacity-dm, 0.1)"
-    },
-    "pointer-events": "none",
-    "position": "absolute",
-    "top": "0",
-    "width": "100%"
-  },
-  "div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-container > div > div:before": {
-    "background-color": "transparent",
-    "background-image": "url(\"data",
-    "background-repeat": "repeat",
-    "background-size": "182px",
-    "content": "\"\"",
-    "height": "100%",
-    "left": "0",
-    "opacity": {
-      "light": "var(--noise-opacity-lm, 0.5)",
-      "dark": "var(--noise-opacity-dm, 0.1)"
-    },
-    "pointer-events": "none",
-    "position": "absolute",
-    "top": "0",
-    "width": "100%"
-  },
-  ".mod-macos .workspace-tab-header-container:not(.workspace-split):before": {
-    "background-color": "transparent",
-    "background-image": "url(\"data",
+    "background-image": "url(\"data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")",
     "background-repeat": "repeat",
     "background-size": "182px",
     "content": "\"\"",
@@ -311,8 +314,8 @@
   },
   ".markdown-rendered h1": {
     "background-image": {
-      "light": "linear-gradient(var(--accent-color-light2), var(--accent-color-light6)), url(\"data",
-      "dark": "linear-gradient(var(--accent-color-light6), var(--accent-color-light10)), url(\"data"
+      "light": "linear-gradient(var(--accent-color-light2), var(--accent-color-light6)), url(\"data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")",
+      "dark": "linear-gradient(var(--accent-color-light6), var(--accent-color-light10)), url(\"data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")"
     },
     "background-repeat": "repeat",
     "background-size": "182px",
@@ -323,8 +326,8 @@
   },
   "div.HyperMD-header.HyperMD-header-1.cm-line": {
     "background-image": {
-      "light": "linear-gradient(var(--accent-color-light2), var(--accent-color-light6)), url(\"data",
-      "dark": "linear-gradient(var(--accent-color-light6), var(--accent-color-light10)), url(\"data"
+      "light": "linear-gradient(var(--accent-color-light2), var(--accent-color-light6)), url(\"data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")",
+      "dark": "linear-gradient(var(--accent-color-light6), var(--accent-color-light10)), url(\"data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")"
     },
     "background-repeat": "repeat",
     "background-size": "182px",
@@ -428,8 +431,8 @@
       "dark": "animated-syntax 5s linear infinite"
     },
     "background": {
-      "light": "linear-gradient( 0deg, var(--accent-color-alt), black, var(--accent-color-alt) )",
-      "dark": "linear-gradient( 0deg, var(--accent-color-light10), white, var(--accent-color-light10) )"
+      "light": "linear-gradient(0deg, var(--accent-color-alt), black, var(--accent-color-alt))",
+      "dark": "linear-gradient(0deg, var(--accent-color-light10), white, var(--accent-color-light10))"
     },
     "background-clip": "text",
     "background-size": "100% 200%",
@@ -442,8 +445,8 @@
       "dark": "animated-syntax 5s linear infinite"
     },
     "background": {
-      "light": "linear-gradient( 0deg, var(--accent-color-alt), black, var(--accent-color-alt) )",
-      "dark": "linear-gradient( 0deg, var(--accent-color-light10), white, var(--accent-color-light10) )"
+      "light": "linear-gradient(0deg, var(--accent-color-alt), black, var(--accent-color-alt))",
+      "dark": "linear-gradient(0deg, var(--accent-color-light10), white, var(--accent-color-light10))"
     },
     "background-clip": "text",
     "background-size": "100% 200%",
@@ -456,22 +459,13 @@
       "dark": "animated-syntax 5s linear infinite"
     },
     "background": {
-      "light": "linear-gradient( 0deg, var(--accent-color-alt), black, var(--accent-color-alt) )",
-      "dark": "linear-gradient( 0deg, var(--accent-color-light10), white, var(--accent-color-light10) )"
+      "light": "linear-gradient(0deg, var(--accent-color-alt), black, var(--accent-color-alt))",
+      "dark": "linear-gradient(0deg, var(--accent-color-light10), white, var(--accent-color-light10))"
     },
     "background-clip": "text",
     "background-size": "100% 200%",
     "color": "transparent",
     "font-weight": "900"
-  },
-  ".tooltip": {
-    "backdrop-filter": "blur(100px)",
-    "background-color": {
-      "light": "var(--accent-color-bg)",
-      "dark": "var(--accent-color-bg_d)"
-    },
-    "border-radius": "10px",
-    "color": { "light": "black", "dark": "white" }
   },
   "div.menu": {
     "background-color": {
@@ -500,23 +494,12 @@
       "dark": "animated-selection 15s linear infinite"
     },
     "background": {
-      "light": "linear-gradient( -90deg, var(--accent-color-light10), var(--accent-color-light1), var(--accent-color-light10) )",
-      "dark": "linear-gradient( -90deg, var(--accent-color-light10), rgb(255, 255, 255), var(--accent-color-light10) )"
+      "light": "linear-gradient(-90deg, var(--accent-color-light10), var(--accent-color-light1), var(--accent-color-light10))",
+      "dark": "linear-gradient(-90deg, var(--accent-color-light10), rgb(255, 255, 255), var(--accent-color-light10))"
     },
     "background-size": "200% 200%",
     "font-weight": "900",
     "color": { "light": null, "dark": "black" }
-  },
-  "div.app-container > div.horizontal-main-container > div > div.workspace-ribbon.side-dock-ribbon.mod-left": {
-    "background-color": "transparent",
-    "border": "0px"
-  },
-  "div.app-container > div.horizontal-main-container > div > div.workspace-ribbon.side-dock-ribbon.mod-left > div.sidebar-toggle-button.mod-left": {
-    "background-color": {
-      "light": "var(--accent-color-bg)",
-      "dark": "var(--accent-color-bg_d)"
-    },
-    "border": "0px"
   },
   ".workspace-tab-header-container:not(.workspace-split)": {
     "align-items": "center",
@@ -543,10 +526,10 @@
   ".callout": {
     "--callout-border-opacity": "0.8",
     "--callout-border-width": "0.05rem",
-    "background-color": "var( --accent-color-light01, var(--callout-background-color, #f5f5f5) )",
+    "background-color": "var(--accent-color-light01, var(--callout-background-color, #f5f5f5))",
     "border-color": "var(--accent-color-light9)",
     "border-radius": "8px",
-    "box-shadow": "0 0 5px var(--accent-color-bg2, var(--callout-background-color, #f5f5f5))",
+    "box-shadow": "0 0 5pxvar(--accent-color-bg2, var(--callout-background-color, #f5f5f5))",
     "color": {
       "light": "var(--callout-title-color, #000000)",
       "dark": "var(--callout-title-color, white)"
@@ -585,32 +568,6 @@
     "filter": { "light": "grayscale(1)", "dark": "invert(1) grayscale(100%)" },
     "mix-blend-mode": { "light": null, "dark": "screen" }
   },
-  ".canvas-wrapper:not(.mod-readonly) .canvas-node-content.markdown-embed > .markdown-embed-content > .markdown-preview-view": {
-    "background-color": {
-      "light": "var(--accent-color-bg)",
-      "dark": "var(--accent-color-bg_d)"
-    }
-  },
-  ".canvas-wrapper:not(.mod-readonly) .canvas-node:not(.is-editing) .canvas-node-container": {
-    "background": {
-      "light": "var(--accent-color-bg)",
-      "dark": "var(--accent-color-bg_d)"
-    }
-  },
-  ".canvas-wrapper:not(.mod-readonly) .canvas-node:not(.is-editing) .canvas-node-container:before": {
-    "background-color": "transparent",
-    "background-image": "url(\"data",
-    "background-repeat": "repeat",
-    "background-size": "182px",
-    "content": "\"\"",
-    "height": "100%",
-    "left": "0",
-    "opacity": { "light": "0.3", "dark": "0.1" },
-    "pointer-events": "none",
-    "position": "absolute",
-    "top": "0",
-    "width": "100%"
-  },
   ".canvas-node": {
     "border-radius": "10px",
     "box-shadow": {
@@ -618,12 +575,11 @@
       "dark": "0 0 10px rgba(0, 0, 0, 0.748)"
     }
   },
-  ".dropdown": { "background-image": { "light": null, "dark": "url(\"data" } },
-  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation input": {
-    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
-  },
-  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation textarea": {
-    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  ".dropdown": {
+    "background-image": {
+      "light": null,
+      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+    }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -632,7 +588,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4)) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {
@@ -735,5 +691,11 @@
   },
   ".is-tablet .suggestion-container": {
     "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".tooltip": {
+    "backdrop-filter": { "light": null, "dark": "blur(100px)" },
+    "background-color": { "light": null, "dark": "var(--accent-color-bg_d)" },
+    "border-radius": { "light": null, "dark": "10px" },
+    "color": { "light": null, "dark": "white" }
   }
 }

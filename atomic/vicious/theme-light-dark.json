@@ -3,6 +3,10 @@
     "--accent-h": { "light": "39", "dark": null },
     "--accent-l": { "light": "73%", "dark": null },
     "--accent-s": { "light": "80%", "dark": null },
+    "--background-modifier-box-shadow": {
+      "light": "rgba(0, 0, 0, 0.1)",
+      "dark": null
+    },
     "--background-modifier-cover": {
       "light": "rgba(var(--000-RGB), 1)",
       "dark": null
@@ -45,6 +49,22 @@
     "--code-radius": { "light": "var(--radius-m)", "dark": null },
     "--collapse-icon-color": { "light": "var(--400)", "dark": null },
     "--collapse-icon-color-collapsed": { "light": "var(--800)", "dark": null },
+    "--color-accent": {
+      "light": "hsl(var(--accent-h), var(--accent-s), var(--accent-l))",
+      "dark": null
+    },
+    "--color-accent-1": {
+      "light": "hsl(calc(var(--accent-h) - 1), calc(var(--accent-s) * 1.01), calc(var(--accent-l) * 1.075))",
+      "dark": null
+    },
+    "--color-accent-2": {
+      "light": "hsl(calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15))",
+      "dark": null
+    },
+    "--color-accent-hsl": {
+      "light": "var(--accent-h), var(--accent-s), var(--accent-l)",
+      "dark": null
+    },
     "--color-base-00": { "light": "var(--000)", "dark": null },
     "--color-base-05": { "light": "var(--000)", "dark": null },
     "--color-base-10": { "light": "var(--100)", "dark": null },
@@ -91,12 +111,21 @@
     "--h6-size": { "light": "1.8em", "dark": null },
     "--heading-count-bg-color": { "light": "var(--100)", "dark": null },
     "--heading-count-color": { "light": "var(--text-muted)", "dark": null },
+    "--highlight-mix-blend-mode": { "light": "darken", "dark": null },
     "--hr-color": { "light": "var(--100)", "dark": null },
     "--hr-thickness": { "light": "3px", "dark": null },
     "--icon-color": { "light": "var(--800)", "dark": null },
     "--indent-use-default": { "light": "3.5ch", "dark": null },
     "--indentation-guide-width": { "light": "0px", "dark": null },
     "--input-color": { "light": "var(--000)", "dark": null },
+    "--input-shadow": {
+      "light": "inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent",
+      "dark": null
+    },
+    "--input-shadow-hover": {
+      "light": "inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent",
+      "dark": null
+    },
     "--interactive-hover": { "light": "var(--200)", "dark": null },
     "--interactive-normal": { "light": "var(--000)", "dark": null },
     "--line-highlight-color": {
@@ -125,7 +154,15 @@
     "--ribbon-padding": { "light": "16px 0 0px 0", "dark": null },
     "--ribbon-width": { "light": "48px", "dark": null },
     "--select-color": { "light": "var(--200)", "dark": null },
+    "--shadow-l": {
+      "light": "0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2)",
+      "dark": null
+    },
     "--shadow-open-tabs": { "light": "var(--000)", "dark": null },
+    "--shadow-s": {
+      "light": "0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07)",
+      "dark": null
+    },
     "--side-dock-color": { "light": "var(--100)", "dark": null },
     "--tab-container-background": { "light": "var(--000)", "dark": null },
     "--tab-outline-color": { "light": "transparent", "dark": null },
@@ -158,11 +195,11 @@
     "--vicious-indent-8": { "light": "var(--C008)", "dark": null },
     "--vicious-indent-9": { "light": "var(--C009)", "dark": null },
     "--vicious-indent-bg-size": {
-      "light": "calc( var(--vicious-color-count) * var(--vicious-indent-width) ) 1px",
+      "light": "calc(var(--vicious-color-count) * var(--vicious-indent-width))1px",
       "dark": null
     },
     "--vicious-indent-colorful-bg": {
-      "light": "linear-gradient( to right, var(--vicious-indent-1) 0 var(--vicious-line-width), transparent var(--vicious-line-width) calc(1 * var(--vicious-indent-width)), var(--vicious-indent-2) calc(1 * var(--vicious-indent-width)) calc(1 * var(--vicious-indent-width) + var(--vicious-line-width)), transparent calc(1 * var(--vicious-indent-width) + var(--vicious-line-width)) calc(2 * var(--vicious-indent-width)), var(--vicious-indent-3) calc(2 * var(--vicious-indent-width)) calc(2 * var(--vicious-indent-width) + var(--vicious-line-width)), transparent calc(2 * var(--vicious-indent-width) + var(--vicious-line-width)) calc(3 * var(--vicious-indent-width)), var(--vicious-indent-4) calc(3 * var(--vicious-indent-width)) calc(3 * var(--vicious-indent-width) + var(--vicious-line-width)), transparent calc(3 * var(--vicious-indent-width) + var(--vicious-line-width)) calc(4 * var(--vicious-indent-width)), var(--vicious-indent-5) calc(4 * var(--vicious-indent-width)) calc(4 * var(--vicious-indent-width) + var(--vicious-line-width)), transparent calc(4 * var(--vicious-indent-width) + var(--vicious-line-width)) calc(5 * var(--vicious-indent-width)), var(--vicious-indent-6) calc(5 * var(--vicious-indent-width)) calc(5 * var(--vicious-indent-width) + var(--vicious-line-width)), transparent calc(5 * var(--vicious-indent-width) + var(--vicious-line-width)) calc(6 * var(--vicious-indent-width)), var(--vicious-indent-7) calc(6 * var(--vicious-indent-width)) calc(6 * var(--vicious-indent-width) + var(--vicious-line-width)), transparent calc(6 * var(--vicious-indent-width) + var(--vicious-line-width)) calc(7 * var(--vicious-indent-width)), var(--vicious-indent-8) calc(7 * var(--vicious-indent-width)) calc(7 * var(--vicious-indent-width) + var(--vicious-line-width)), transparent calc(7 * var(--vicious-indent-width) + var(--vicious-line-width)) calc(8 * var(--vicious-indent-width)), var(--vicious-indent-9) calc(8 * var(--vicious-indent-width)) calc(8 * var(--vicious-indent-width) + var(--vicious-line-width)), transparent calc(8 * var(--vicious-indent-width) + var(--vicious-line-width)) calc(9 * var(--vicious-indent-width)), var(--vicious-indent-10) calc(9 * var(--vicious-indent-width)) calc(9 * var(--vicious-indent-width) + var(--vicious-line-width)), transparent calc(9 * var(--vicious-indent-width) + var(--vicious-line-width)) calc(10 * var(--vicious-indent-width)), var(--vicious-indent-11) calc(10 * var(--vicious-indent-width)) calc(10 * var(--vicious-indent-width) + var(--vicious-line-width)), transparent calc(7 * var(--vicious-indent-width) + var(--vicious-line-width)) calc(8 * var(--vicious-indent-width)) )",
+      "light": "linear-gradient(to right, var(--vicious-indent-1) 0 var(--vicious-line-width), transparent var(--vicious-line-width) calc(1 * var(--vicious-indent-width)), var(--vicious-indent-2) calc(1 * var(--vicious-indent-width))calc(1 * var(--vicious-indent-width) + var(--vicious-line-width)), transparentcalc(1 * var(--vicious-indent-width) + var(--vicious-line-width))calc(2 * var(--vicious-indent-width)), var(--vicious-indent-3) calc(2 * var(--vicious-indent-width))calc(2 * var(--vicious-indent-width) + var(--vicious-line-width)), transparentcalc(2 * var(--vicious-indent-width) + var(--vicious-line-width))calc(3 * var(--vicious-indent-width)), var(--vicious-indent-4) calc(3 * var(--vicious-indent-width))calc(3 * var(--vicious-indent-width) + var(--vicious-line-width)), transparentcalc(3 * var(--vicious-indent-width) + var(--vicious-line-width))calc(4 * var(--vicious-indent-width)), var(--vicious-indent-5) calc(4 * var(--vicious-indent-width))calc(4 * var(--vicious-indent-width) + var(--vicious-line-width)), transparentcalc(4 * var(--vicious-indent-width) + var(--vicious-line-width))calc(5 * var(--vicious-indent-width)), var(--vicious-indent-6) calc(5 * var(--vicious-indent-width))calc(5 * var(--vicious-indent-width) + var(--vicious-line-width)), transparentcalc(5 * var(--vicious-indent-width) + var(--vicious-line-width))calc(6 * var(--vicious-indent-width)), var(--vicious-indent-7) calc(6 * var(--vicious-indent-width))calc(6 * var(--vicious-indent-width) + var(--vicious-line-width)), transparentcalc(6 * var(--vicious-indent-width) + var(--vicious-line-width))calc(7 * var(--vicious-indent-width)), var(--vicious-indent-8) calc(7 * var(--vicious-indent-width))calc(7 * var(--vicious-indent-width) + var(--vicious-line-width)), transparentcalc(7 * var(--vicious-indent-width) + var(--vicious-line-width))calc(8 * var(--vicious-indent-width)), var(--vicious-indent-9) calc(8 * var(--vicious-indent-width))calc(8 * var(--vicious-indent-width) + var(--vicious-line-width)), transparentcalc(8 * var(--vicious-indent-width) + var(--vicious-line-width))calc(9 * var(--vicious-indent-width)), var(--vicious-indent-10) calc(9 * var(--vicious-indent-width))calc(9 * var(--vicious-indent-width) + var(--vicious-line-width)), transparentcalc(9 * var(--vicious-indent-width) + var(--vicious-line-width))calc(10 * var(--vicious-indent-width)), var(--vicious-indent-11) calc(10 * var(--vicious-indent-width))calc(10 * var(--vicious-indent-width) + var(--vicious-line-width)), transparentcalc(7 * var(--vicious-indent-width) + var(--vicious-line-width))calc(8 * var(--vicious-indent-width)))",
       "dark": null
     },
     "--vicious-indent-font-family": {
@@ -182,8 +219,8 @@
     "background-color": { "light": "#262626", "dark": null },
     "box-shadow": { "light": "inset 0px 0px 0px 1px #363636", "dark": null }
   },
-  "body:is(.vibrant-folders) .nav-files-container > div > .nav-folder .nav-folder-children": {
-    "border-color": {
+  "body:is(.vibrant-folders": {
+    ".nav-files-container> div> .nav-folder.nav-folder-children {border-color": {
       "light": "rgba(var(--800-RGB), 1)",
       "dark": "rgba(var(--000-RGB), 1)"
     }
@@ -191,34 +228,10 @@
   ".nav-folder.mod-root .nav-folder.nav-folder .nav-folder": {
     "--colorful": "none"
   },
-  ".nav-folder.mod-root > .nav-folder-children > .nav-folder .nav-folder-title": {
-    "color": {
-      "light": "rgba(var(--600-RGB))",
-      "dark": "rgba(var(--text-color))"
-    }
-  },
-  ".nav-folder.mod-root > .nav-folder-children > .nav-folder .nav-file-title": {
-    "color": {
-      "light": "rgba(var(--600-RGB))",
-      "dark": "rgba(var(--text-color))"
-    }
-  },
   ".nav-folder.mod-root .collapse-icon svg.svg-icon": {
     "color": {
       "light": "rgba(var(--600-RGB))",
       "dark": "rgba(var(--text-color))"
-    }
-  },
-  ".workspace-leaf-content[data-type=\"file-explorer\"] .tree-item-self .tree-item-icon": {
-    "color": {
-      "light": "rgba(var(--600-RGB))",
-      "dark": "rgba(var(--text-color))"
-    }
-  },
-  ".tree-item-children .nav-folder-children > .nav-file .nav-file-title[data-path]::before": {
-    "background-color": {
-      "light": "rgba(var(--600-RGB))",
-      "dark": "rgba(var(--800-RGB))"
     }
   },
   ".nav-folder.mod-root > .nav-folder-children > .nav-folder": {
@@ -238,15 +251,11 @@
     "border-radius": "var(--radius-m)",
     "color": { "light": "var(--600)", "dark": "var(--800)" }
   },
-  ".workspace-leaf-content[data-type=\"bookmarks\"] .tree-item-self .tree-item-icon": {
-    "color": { "light": "rgba(var(--600-RGB))", "dark": "rgba(var(--800-RGB))" }
-  },
-  ".dropdown": { "background-image": { "light": null, "dark": "url(\"data" } },
-  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation input": {
-    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
-  },
-  ".pdf-container.mod-themed .annotationLayer .textWidgetAnnotation textarea": {
-    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  ".dropdown": {
+    "background-image": {
+      "light": null,
+      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+    }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -255,7 +264,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4)) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4))drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {
@@ -385,8 +394,5 @@
   },
   ".cm-s-obsidian pre.HyperMD-codeblock .cm-def": {
     "color": { "light": null, "dark": "var(--C009)" }
-  },
-  ".nav-folder.mod-root > .nav-folder-children > .nav-file > .tree-item-self.is-clickable.nav-file-title > .nav-file-tag": {
-    "color": { "light": null, "dark": "var(--text-muted)" }
   }
 }
