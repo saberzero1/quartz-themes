@@ -272,12 +272,12 @@ body {
   --checkbox-marker-color: inherit;
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --code-background: var(--anp-code-bg-color, rgb(inherit));
+  --code-background: var(--anp-code-bg-color, inherit);
   --code-comment: inherit;
   --code-function: inherit;
   --code-important: inherit;
   --code-keyword: inherit;
-  --code-normal: var(--anp-code-text-color, rgb(inherit));
+  --code-normal: var(--anp-code-text-color, inherit);
   --code-property: inherit;
   --code-punctuation: inherit;
   --code-string: inherit;
@@ -321,7 +321,7 @@ body {
     "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif;
   --font-weight: 400;
-  --graph-line: var(--color-base-35, rgb(inherit));
+  --graph-line: var(--color-base-35, inherit);
   --graph-node-tag: inherit;
   --graph-node-unresolved: inherit;
   --h1-color: inherit;
@@ -1456,7 +1456,7 @@ body {
   /* CODE */
   figure[data-rehype-pretty-code-figure] pre,
   pre {
-    background-color: var(--anp-code-bg-color, rgb(inherit));
+    background-color: var(--anp-code-bg-color, inherit);
     border: 0px solid transparent;
     border-radius: 4px;
     min-height: 38px;
@@ -1529,10 +1529,10 @@ body {
 
   code {
     -webkit-box-decoration-break: clone;
-    background-color: var(--anp-code-bg-color, rgb(inherit));
+    background-color: var(--anp-code-bg-color, inherit);
     border: 0px solid transparent;
     border-radius: 4px;
-    color: var(--anp-code-text-color, rgb(inherit));
+    color: var(--anp-code-text-color, inherit);
     font-family:
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1689,7 +1689,7 @@ body {
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
         align-items: center;
-        color: var(--anp-full-rainbow-text-inverted, rgb(inherit));
+        color: var(--anp-full-rainbow-text-inverted, inherit);
         display: flex;
         flex: 0 0 auto;
         justify-content: center;
@@ -2029,7 +2029,7 @@ body {
     & > .search-container {
       & > .search-space {
         background-color: inherit;
-        border: 0.5pt solid var(--color-base-40, rgb(inherit));
+        border: 0.5pt solid var(--color-base-40, inherit);
         border-radius: 12px;
         box-shadow:
           0px 1.8px 7.3px inherit,
@@ -2046,7 +2046,7 @@ body {
         z-index: 1;
 
         background-color: inherit;
-        border: 0.5pt solid var(--color-base-40, rgb(inherit));
+        border: 0.5pt solid var(--color-base-40, inherit);
         border-radius: 12px;
         box-shadow:
           0px 1.8px 7.3px inherit,
@@ -2063,7 +2063,7 @@ body {
         z-index: 1;
 
         background-color: inherit;
-        border: 0.5pt solid var(--color-base-40, rgb(inherit));
+        border: 0.5pt solid var(--color-base-40, inherit);
         border-radius: 12px;
         box-shadow:
           0px 1.8px 7.3px inherit,
@@ -2080,7 +2080,7 @@ body {
         z-index: 1;
 
         background-color: inherit;
-        border: 0.5pt solid var(--color-base-40, rgb(inherit));
+        border: 0.5pt solid var(--color-base-40, inherit);
         border-radius: 12px;
         box-shadow:
           0px 1.8px 7.3px inherit,
@@ -2133,12 +2133,12 @@ body {
           --checkbox-marker-color: inherit;
           --checkbox-radius: 4px;
           --checkbox-size: 16px;
-          --code-background: var(--anp-code-bg-color, rgb(inherit));
+          --code-background: var(--anp-code-bg-color, inherit);
           --code-comment: inherit;
           --code-function: inherit;
           --code-important: inherit;
           --code-keyword: inherit;
-          --code-normal: var(--anp-code-text-color, rgb(inherit));
+          --code-normal: var(--anp-code-text-color, inherit);
           --code-property: inherit;
           --code-punctuation: inherit;
           --code-string: inherit;
@@ -2185,7 +2185,7 @@ body {
             system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
             "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
           --font-weight: 400;
-          --graph-line: var(--color-base-35, rgb(inherit));
+          --graph-line: var(--color-base-35, inherit);
           --graph-node-tag: inherit;
           --graph-node-unresolved: inherit;
           --h1-color: inherit;
@@ -2324,12 +2324,12 @@ body {
                 --checkbox-marker-color: inherit;
                 --checkbox-radius: 4px;
                 --checkbox-size: 16px;
-                --code-background: var(--anp-code-bg-color, rgb(inherit));
+                --code-background: var(--anp-code-bg-color, inherit);
                 --code-comment: inherit;
                 --code-function: inherit;
                 --code-important: inherit;
                 --code-keyword: inherit;
-                --code-normal: var(--anp-code-text-color, rgb(inherit));
+                --code-normal: var(--anp-code-text-color, inherit);
                 --code-property: inherit;
                 --code-punctuation: inherit;
                 --code-string: inherit;
@@ -2376,7 +2376,7 @@ body {
                   system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
                   "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
                 --font-weight: 400;
-                --graph-line: var(--color-base-35, rgb(inherit));
+                --graph-line: var(--color-base-35, inherit);
                 --graph-node-tag: inherit;
                 --graph-node-unresolved: inherit;
                 --h1-color: inherit;
