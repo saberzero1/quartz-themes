@@ -623,5 +623,7 @@ export function cleanup(cssString) {
 
   cssString = cssString.replaceAll(/(?<=^\s*?(?:(?:(?:(?:background-|border-)?color)|\-\-[a-zA-Z\d\-]+):\s*?))light-dark\(\s*?hsl\(\s*?light-dark\(([^,]+),[^\)]+\),\s*?light-dark\(([^,]+),[^\)]+\),\s*?light-dark\(([^,]+),[^\)]+\)\s*?\),\s*?hsl\(\s*?light-dark\(([^,]+),[^\)]+\),\s*?light-dark\(([^,]+),[^\)]+\),\s*?light-dark\(([^,]+),[^\)]+\)\s*?\)\s*?\)(?=$|;|,)/gms, "light-dark(hsl($1, $2, $3), hsl($4, $5, $6))") // Fix light-dark(hsl) with 6 values
 
+  cssString = cssString.replaceAll(/rgba?\(inherit\)/gms, "inherit") // Fix rgba(inherit) to inherit
+
   return cssString
 }
