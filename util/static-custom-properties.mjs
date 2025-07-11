@@ -8,7 +8,7 @@ import { cleanup, cleanRulesAfterRun } from "./util.mjs"
 
 export default function generateStaticCSS(cssString, themeName) {
   // TODO: investigate why Shiba Inu theme is not working with colors
-  const skipColors = ["Shiba Inu", "Oliviers Theme"]
+  //const skipColors = ["Shiba Inu", "Oliviers Theme"]
 
   cssString = cssString.replace(/\/\*.*?\*\//gms, "")
   let compareString = cssString
@@ -90,7 +90,7 @@ export default function generateStaticCSS(cssString, themeName) {
 
   const result = cleanRulesAfterRun(cssString)
 
-  if (skipColors.includes(themeName)) return result
+  //if (skipColors.includes(themeName)) return result
 
   try {
     cssString = colors(cssString)
