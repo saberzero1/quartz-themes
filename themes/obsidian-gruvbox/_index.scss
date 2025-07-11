@@ -678,16 +678,7 @@ html {
     overflow: hidden;
     padding: 12px 24px 12px12px;
 
-    --callout-color: var(--neutral-blue_x);
     background-color: rgba(var(--gray_x), 0.2);
-    border-color: rgba(var(--gray_x), 0.4);
-    border-radius: 4px;
-    border-style: solid;
-    border-width: 1px;
-    margin: 1em 0;
-    mix-blend-mode: normal;
-    overflow: hidden;
-    padding: 12px 24px 12px12px;
 
     background-color: var(--bg);
     border-color: var(--border);
@@ -697,26 +688,8 @@ html {
 
     &[data-callout] {
       --callout-color: var(--neutral-blue_x);
-      background-color: rgba(var(--gray_x), 0.2);
-      border-color: rgba(var(--gray_x), 0.4);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
-      --callout-color: var(--neutral-blue_x);
       background-color: rgba(var(--gray_x), 0.2);
-      border-color: rgba(var(--gray_x), 0.4);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -725,16 +698,7 @@ html {
     &[data-callout="abstract"] {
       --callout-color: var(--neutral-aqua_x);
 
-      --callout-color: var(--neutral-blue_x);
       background-color: rgba(var(--gray_x), 0.2);
-      border-color: rgba(var(--gray_x), 0.4);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -743,16 +707,7 @@ html {
     &[data-callout="summary"] {
       --callout-color: var(--neutral-aqua_x);
 
-      --callout-color: var(--neutral-blue_x);
       background-color: rgba(var(--gray_x), 0.2);
-      border-color: rgba(var(--gray_x), 0.4);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -761,16 +716,7 @@ html {
     &[data-callout="tldr"] {
       --callout-color: var(--neutral-aqua_x);
 
-      --callout-color: var(--neutral-blue_x);
       background-color: rgba(var(--gray_x), 0.2);
-      border-color: rgba(var(--gray_x), 0.4);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -779,16 +725,7 @@ html {
     &[data-callout="info"] {
       --callout-color: var(--neutral-blue_x);
 
-      --callout-color: var(--neutral-blue_x);
       background-color: rgba(var(--gray_x), 0.2);
-      border-color: rgba(var(--gray_x), 0.4);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -797,16 +734,7 @@ html {
     &[data-callout="todo"] {
       --callout-color: var(--neutral-blue_x);
 
-      --callout-color: var(--neutral-blue_x);
       background-color: rgba(var(--gray_x), 0.2);
-      border-color: rgba(var(--gray_x), 0.4);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -815,16 +743,7 @@ html {
     &[data-callout="important"] {
       --callout-color: var(--neutral-aqua_x);
 
-      --callout-color: var(--neutral-blue_x);
       background-color: rgba(var(--gray_x), 0.2);
-      border-color: rgba(var(--gray_x), 0.4);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -833,16 +752,7 @@ html {
     &[data-callout="tip"] {
       --callout-color: var(--neutral-aqua_x);
 
-      --callout-color: var(--neutral-blue_x);
       background-color: rgba(var(--gray_x), 0.2);
-      border-color: rgba(var(--gray_x), 0.4);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -851,16 +761,7 @@ html {
     &[data-callout="hint"] {
       --callout-color: var(--neutral-aqua_x);
 
-      --callout-color: var(--neutral-blue_x);
       background-color: rgba(var(--gray_x), 0.2);
-      border-color: rgba(var(--gray_x), 0.4);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -869,16 +770,7 @@ html {
     &[data-callout="success"] {
       --callout-color: var(--neutral-green_x);
 
-      --callout-color: var(--neutral-blue_x);
       background-color: rgba(var(--gray_x), 0.2);
-      border-color: rgba(var(--gray_x), 0.4);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -887,16 +779,7 @@ html {
     &[data-callout="check"] {
       --callout-color: var(--neutral-green_x);
 
-      --callout-color: var(--neutral-blue_x);
       background-color: rgba(var(--gray_x), 0.2);
-      border-color: rgba(var(--gray_x), 0.4);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -905,16 +788,7 @@ html {
     &[data-callout="done"] {
       --callout-color: var(--neutral-green_x);
 
-      --callout-color: var(--neutral-blue_x);
       background-color: rgba(var(--gray_x), 0.2);
-      border-color: rgba(var(--gray_x), 0.4);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -923,16 +797,7 @@ html {
     &[data-callout="question"] {
       --callout-color: var(--neutral-yellow_x);
 
-      --callout-color: var(--neutral-blue_x);
       background-color: rgba(var(--gray_x), 0.2);
-      border-color: rgba(var(--gray_x), 0.4);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -941,16 +806,7 @@ html {
     &[data-callout="help"] {
       --callout-color: var(--neutral-yellow_x);
 
-      --callout-color: var(--neutral-blue_x);
       background-color: rgba(var(--gray_x), 0.2);
-      border-color: rgba(var(--gray_x), 0.4);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -959,16 +815,7 @@ html {
     &[data-callout="faq"] {
       --callout-color: var(--neutral-yellow_x);
 
-      --callout-color: var(--neutral-blue_x);
       background-color: rgba(var(--gray_x), 0.2);
-      border-color: rgba(var(--gray_x), 0.4);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -977,16 +824,7 @@ html {
     &[data-callout="warning"] {
       --callout-color: var(--neutral-orange_x);
 
-      --callout-color: var(--neutral-blue_x);
       background-color: rgba(var(--gray_x), 0.2);
-      border-color: rgba(var(--gray_x), 0.4);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -995,16 +833,7 @@ html {
     &[data-callout="caution"] {
       --callout-color: var(--neutral-orange_x);
 
-      --callout-color: var(--neutral-blue_x);
       background-color: rgba(var(--gray_x), 0.2);
-      border-color: rgba(var(--gray_x), 0.4);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1013,16 +842,7 @@ html {
     &[data-callout="attention"] {
       --callout-color: var(--neutral-orange_x);
 
-      --callout-color: var(--neutral-blue_x);
       background-color: rgba(var(--gray_x), 0.2);
-      border-color: rgba(var(--gray_x), 0.4);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1031,16 +851,7 @@ html {
     &[data-callout="failure"] {
       --callout-color: var(--neutral-red_x);
 
-      --callout-color: var(--neutral-blue_x);
       background-color: rgba(var(--gray_x), 0.2);
-      border-color: rgba(var(--gray_x), 0.4);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1049,16 +860,7 @@ html {
     &[data-callout="fail"] {
       --callout-color: var(--neutral-red_x);
 
-      --callout-color: var(--neutral-blue_x);
       background-color: rgba(var(--gray_x), 0.2);
-      border-color: rgba(var(--gray_x), 0.4);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1067,16 +869,7 @@ html {
     &[data-callout="missing"] {
       --callout-color: var(--neutral-red_x);
 
-      --callout-color: var(--neutral-blue_x);
       background-color: rgba(var(--gray_x), 0.2);
-      border-color: rgba(var(--gray_x), 0.4);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1085,16 +878,7 @@ html {
     &[data-callout="danger"] {
       --callout-color: var(--neutral-red_x);
 
-      --callout-color: var(--neutral-blue_x);
       background-color: rgba(var(--gray_x), 0.2);
-      border-color: rgba(var(--gray_x), 0.4);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1103,16 +887,7 @@ html {
     &[data-callout="error"] {
       --callout-color: var(--neutral-red_x);
 
-      --callout-color: var(--neutral-blue_x);
       background-color: rgba(var(--gray_x), 0.2);
-      border-color: rgba(var(--gray_x), 0.4);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1121,16 +896,7 @@ html {
     &[data-callout="bug"] {
       --callout-color: var(--neutral-red_x);
 
-      --callout-color: var(--neutral-blue_x);
       background-color: rgba(var(--gray_x), 0.2);
-      border-color: rgba(var(--gray_x), 0.4);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1139,16 +905,7 @@ html {
     &[data-callout="example"] {
       --callout-color: var(--neutral-purple_x);
 
-      --callout-color: var(--neutral-blue_x);
       background-color: rgba(var(--gray_x), 0.2);
-      border-color: rgba(var(--gray_x), 0.4);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1157,16 +914,7 @@ html {
     &[data-callout="quote"] {
       --callout-color: var(--gray_x);
 
-      --callout-color: var(--neutral-blue_x);
       background-color: rgba(var(--gray_x), 0.2);
-      border-color: rgba(var(--gray_x), 0.4);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1175,16 +923,7 @@ html {
     &[data-callout="cite"] {
       --callout-color: var(--gray_x);
 
-      --callout-color: var(--neutral-blue_x);
       background-color: rgba(var(--gray_x), 0.2);
-      border-color: rgba(var(--gray_x), 0.4);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1710,13 +1449,6 @@ body {
   /* METADATA */
   .content-meta {
     color: rgb(var(--light0_x));
-    cursor: text;
-    flex-grow: 1;
-    font-size: calc(16px * 0.937);
-    max-height: 300px;
-    padding: 4px 8px;
-    unicode-bidi: plaintext;
-    white-space: pre-wrap;
 
     color: var(--text-normal);
   }
@@ -1724,7 +1456,6 @@ body {
   /* BREADCRUMBS */
   .breadcrumbs-element p {
     color: rgb(var(--light1_x));
-    padding: 2px 1px;
   }
 
   /* BACKLINKS */
@@ -1745,7 +1476,6 @@ body {
 
     ul li {
       color: rgb(var(--light0_x));
-      padding-inline-start: 8px;
 
       font-weight: 500;
     }
@@ -1763,17 +1493,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      --font-weight: 600;
       color: rgb(var(--neutral-yellow_x));
-      font-family: inherit;
-      font-size: 1.602em;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 600;
-      letter-spacing: -0.015em;
-      line-height: 1.2;
-      margin-block-end: 0rem;
-      margin-block-start: 0rem;
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1788,15 +1508,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        align-items: center;
         color: hsl(12, 107%, 32%);
-        display: flex;
-        flex: 0 0 auto;
-        justify-content: center;
-        margin-inline-start: calc(-1 * 20px);
-        opacity: 1;
-        position: absolute;
-        width: 16px;
 
         text-overflow: ellipsis;
         position: relative;
@@ -1917,17 +1629,7 @@ body {
 
   /* TOC */
   .toc {
-    --font-weight: 600;
     color: rgb(var(--neutral-green_x));
-    font-family: inherit;
-    font-size: 1.424em;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 600;
-    letter-spacing: -0.015em;
-    line-height: 1.3;
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
 
     button.toc-header {
       h3 {
@@ -1946,17 +1648,7 @@ body {
         margin-block: 0;
       }
 
-      --font-weight: 600;
       color: rgb(var(--neutral-green_x));
-      font-family: inherit;
-      font-size: 1.424em;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 600;
-      letter-spacing: -0.015em;
-      line-height: 1.3;
-      margin-block-end: 0rem;
-      margin-block-start: 0rem;
 
       color: inherit;
     }
@@ -2065,72 +1757,15 @@ body {
     & > .search-container {
       & > .search-space {
         background-color: rgb(var(--dark0_x));
-        border: 0.5pt solid var(--color-base-40, #555555);
-        border-radius: 12px;
-        box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-          0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
 
-        background-color: rgb(var(--dark0_x));
         border: 0.5pt solid var(--color-base-40, #555555);
-        border-radius: 12px;
-        box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-          0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
 
-        background-color: rgb(var(--dark0_x));
-        border: 0.5pt solid var(--color-base-40, #555555);
         border-radius: 12px;
-        box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-          0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
 
-        background-color: rgb(var(--dark0_x));
-        border: 0.5pt solid var(--color-base-40, #555555);
-        border-radius: 12px;
         box-shadow:
           0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
           0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
           0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
 
         color: var(--text-normal);
         background-color: var(--background-secondary);
@@ -2153,196 +1788,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          --background-modifier-border: light-dark(
-            rgb(var(--light2_x)),
-            rgb(var(--dark1_x))
-          );
-          --background-modifier-border-focus: #555555;
-          --background-modifier-border-hover: #3f3f3f;
-          --background-modifier-hover: rgba(255, 255, 255, 0.067);
-          --background-primary: light-dark(
-            rgb(var(--light0-hard_x)),
-            rgb(var(--dark0_x))
-          );
-          --background-primary-alt: light-dark(
-            rgb(var(--light0-hard_x)),
-            rgb(var(--dark0_x))
-          );
-          --background-secondary: light-dark(
-            rgb(var(--light1_x)),
-            rgb(var(--dark0-hard_x))
-          );
-          --bold-color: light-dark(
-            rgb(var(--neutral-yellow_x)),
-            rgb(var(--neutral-yellow_x))
-          );
-          --bold-weight: 600;
-          --checkbox-border-color: light-dark(
-            rgb(var(--light4_x)),
-            rgb(var(--light4_x))
-          );
-          --checkbox-border-color-hover: light-dark(
-            rgb(var(--light4_x)),
-            rgb(var(--light4_x))
-          );
-          --checkbox-color: light-dark(
-            rgb(var(--light4_x)),
-            rgb(var(--light4_x))
-          );
-          --checkbox-color-hover: light-dark(
-            rgb(var(--light4_x)),
-            rgb(var(--light4_x))
-          );
-          --checkbox-marker-color: rgb(var(--dark0_x));
-          --checkbox-radius: 0;
-          --checkbox-size: 16px;
-          --code-background: light-dark(
-            rgb(var(--light1_x)),
-            rgb(var(--dark1_x))
-          );
-          --code-comment: rgb(var(--light1_x));
-          --code-function: rgb(var(--neutral-yellow_x));
-          --code-important: rgb(var(--neutral-orange_x));
-          --code-keyword: rgb(var(--bright-purple_x));
-          --code-normal: light-dark(
-            rgb(var(--bright-blue_x)),
-            rgb(var(--bright-blue_x))
-          );
-          --code-property: rgb(var(--neutral-blue_x));
-          --code-punctuation: rgb(var(--light2_x));
-          --code-string: rgb(var(--neutral-green_x));
-          --code-tag: rgb(var(--neutral-red_x));
-          --code-value: rgb(var(--neutral-purple_x));
-          --collapse-icon-color: rgb(var(--light1_x));
-          --collapse-icon-color-collapsed: rgb(var(--neutral-orange_x));
-          --color-accent-2: light-dark(
-            hsl(calc(12 - 3), calc(107% * 1.02), calc(32% * 1.15)),
-            hsl(calc(12 - 5), calc(107% * 1.05), calc(32% * 1.29))
-          );
-          --color-accent-hsl: light-dark(12, 107%, 32%, 12, 107%, 32%);
-          --color-base-00: light-dark(#ffffff, #1e1e1e);
-          --color-base-10: light-dark(#fafafa, #242424);
-          --color-base-100: light-dark(#222222, #dadada);
-          --color-base-20: light-dark(#f6f6f6, #262626);
-          --color-base-30: light-dark(#e0e0e0, #363636);
-          --color-base-35: light-dark(#d4d4d4, #3f3f3f);
-          --color-base-40: light-dark(#bdbdbd, #555555);
-          --color-base-50: light-dark(#ababab, #666666);
-          --color-base-70: light-dark(#5c5c5c, #b3b3b3);
-          --cursor-link: pointer;
-          --font-default:
-            ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-            "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-            "Segoe UI Symbol", sans-serif;
-          --font-monospace:
-            "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono",
-            "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
-            "Consolas", "Source Code Pro", monospace;
-          --font-text:
-            "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-            system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-            "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-          --font-weight: 400;
-          --graph-line: light-dark(rgb(var(--light1_x)), rgb(var(--dark2_x)));
-          --graph-node-tag: light-dark(
-            rgb(var(--neutral-red_x)),
-            rgb(var(--neutral-red_x))
-          );
-          --graph-node-unresolved: rgb(var(--light1_x));
-          --h1-color: light-dark(
-            rgb(var(--neutral-red_x)),
-            rgb(var(--neutral-red_x))
-          );
-          --h1-font: inherit;
-          --h3-line-height: 1.3;
-          --hr-color: transparent;
-          --hr-thickness: 2px;
-          --icon-color: rgb(var(--light2_x));
-          --inline-title-color: light-dark(
-            rgb(var(--bright-yellow_x)),
-            rgb(var(--bright-yellow_x))
-          );
-          --inline-title-font: inherit;
-          --interactive-accent-hsl: 12, 107%, 32%;
-          --italic-color: light-dark(
-            rgb(var(--neutral-yellow_x)),
-            rgb(var(--neutral-yellow_x))
-          );
-          --link-color: rgb(var(--neutral-orange_x));
-          --link-color-hover: rgb(var(--bright-aqua_x));
-          --link-external-color: rgb(var(--neutral-orange_x));
-          --link-external-color-hover: rgb(var(--bright-aqua_x));
-          --link-external-filter: none;
-          --link-weight: var(--link-weight);
-          --nav-item-background-hover: rgba(255, 255, 255, 0.15);
-          --nav-item-children-margin-start: 12px;
-          --nav-item-children-padding-start: 4px;
-          --p-spacing: 1rem;
-          --search-icon-color: rgb(var(--light2_x));
-          --tag-background: light-dark(
-            rgb(var(--light1_x)),
-            rgb(var(--dark2_x))
-          );
-          --tag-background-hover: hsla(12, 107%, 32%, 0.2);
-          --tag-border-color: hsla(12, 107%, 32%, 0.15);
-          --tag-border-color-hover: hsla(12, 107%, 32%, 0.15);
-          --tag-border-width: 0px;
-          --tag-color: light-dark(
-            rgb(var(--neutral-aqua_x)),
-            rgb(var(--bright-aqua_x))
-          );
-          --tag-color-hover: rgb(var(--neutral-orange_x));
-          --tag-decoration: none;
-          --tag-decoration-hover: underline;
-          --tag-radius: 0.5em;
-          --tag-weight: inherit;
-          --text-accent: light-dark(
-            rgb(var(--neutral-orange_x)),
-            rgb(var(--neutral-orange_x))
-          );
-          --text-accent-hover: light-dark(
-            rgb(var(--bright-aqua_x)),
-            rgb(var(--bright-aqua_x))
-          );
-          --text-faint: light-dark(rgb(var(--dark3_x)), rgb(var(--light1_x)));
-          --text-highlight-bg: light-dark(
-            rgb(var(--bright-yellow_x)),
-            rgb(var(--neutral-yellow_x))
-          );
-          --text-muted: light-dark(rgb(var(--dark2_x)), rgb(var(--light2_x)));
-          --text-normal: light-dark(rgb(var(--dark0_x)), rgb(var(--light0_x)));
-          -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-          -webkit-user-select: none;
-          background-color: rgb(var(--dark0_x));
-          caret-color: rgb(var(--neutral-orange_x));
           color: rgb(var(--light0_x));
-          contain: initial;
-          font-family:
-            "??",
-            "??",
-            var(--default-font, "??"),
-            ui-sans-serif,
-            -apple-system,
-            BlinkMacSystemFont,
-            system-ui,
-            "Segoe UI",
-            Roboto,
-            "Inter",
-            "Apple Color Emoji",
-            "Segoe UI Emoji",
-            "Segoe UI Symbol",
-            sans-serif;
-          font-size: 16px;
-          height: 100%;
-          line-height: 1.3;
-          margin: 0;
-          overflow: auto;
-          overscroll-behavior: none;
-          padding: 0;
-          padding-top: 0;
-          text-rendering: optimizeLegibility;
-          user-select: none;
-          width: 100%;
 
           background: transparent;
           margin-bottom: 0;
@@ -2390,219 +1836,11 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                --background-modifier-border: light-dark(
-                  rgb(var(--light2_x)),
-                  rgb(var(--dark1_x))
-                );
-                --background-modifier-border-focus: #555555;
-                --background-modifier-border-hover: #3f3f3f;
-                --background-modifier-hover: rgba(255, 255, 255, 0.067);
-                --background-primary: light-dark(
-                  rgb(var(--light0-hard_x)),
-                  rgb(var(--dark0_x))
-                );
-                --background-primary-alt: light-dark(
-                  rgb(var(--light0-hard_x)),
-                  rgb(var(--dark0_x))
-                );
-                --background-secondary: light-dark(
-                  rgb(var(--light1_x)),
-                  rgb(var(--dark0-hard_x))
-                );
-                --bold-color: light-dark(
-                  rgb(var(--neutral-yellow_x)),
-                  rgb(var(--neutral-yellow_x))
-                );
-                --bold-weight: 600;
-                --checkbox-border-color: light-dark(
-                  rgb(var(--light4_x)),
-                  rgb(var(--light4_x))
-                );
-                --checkbox-border-color-hover: light-dark(
-                  rgb(var(--light4_x)),
-                  rgb(var(--light4_x))
-                );
-                --checkbox-color: light-dark(
-                  rgb(var(--light4_x)),
-                  rgb(var(--light4_x))
-                );
-                --checkbox-color-hover: light-dark(
-                  rgb(var(--light4_x)),
-                  rgb(var(--light4_x))
-                );
-                --checkbox-marker-color: rgb(var(--dark0_x));
-                --checkbox-radius: 0;
-                --checkbox-size: 16px;
-                --code-background: light-dark(
-                  rgb(var(--light1_x)),
-                  rgb(var(--dark1_x))
-                );
-                --code-comment: rgb(var(--light1_x));
-                --code-function: rgb(var(--neutral-yellow_x));
-                --code-important: rgb(var(--neutral-orange_x));
-                --code-keyword: rgb(var(--bright-purple_x));
-                --code-normal: light-dark(
-                  rgb(var(--bright-blue_x)),
-                  rgb(var(--bright-blue_x))
-                );
-                --code-property: rgb(var(--neutral-blue_x));
-                --code-punctuation: rgb(var(--light2_x));
-                --code-string: rgb(var(--neutral-green_x));
-                --code-tag: rgb(var(--neutral-red_x));
-                --code-value: rgb(var(--neutral-purple_x));
-                --collapse-icon-color: rgb(var(--light1_x));
-                --collapse-icon-color-collapsed: rgb(var(--neutral-orange_x));
-                --color-accent-2: light-dark(
-                  hsl(calc(12 - 3), calc(107% * 1.02), calc(32% * 1.15)),
-                  hsl(calc(12 - 5), calc(107% * 1.05), calc(32% * 1.29))
-                );
-                --color-accent-hsl: light-dark(12, 107%, 32%, 12, 107%, 32%);
-                --color-base-00: light-dark(#ffffff, #1e1e1e);
-                --color-base-10: light-dark(#fafafa, #242424);
-                --color-base-100: light-dark(#222222, #dadada);
-                --color-base-20: light-dark(#f6f6f6, #262626);
-                --color-base-30: light-dark(#e0e0e0, #363636);
-                --color-base-35: light-dark(#d4d4d4, #3f3f3f);
-                --color-base-40: light-dark(#bdbdbd, #555555);
-                --color-base-50: light-dark(#ababab, #666666);
-                --color-base-70: light-dark(#5c5c5c, #b3b3b3);
-                --cursor-link: pointer;
-                --font-default:
-                  ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-                  "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-                  "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-                --font-monospace:
-                  "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono",
-                  "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo,
-                  Monaco, "Consolas", "Source Code Pro", monospace;
-                --font-text:
-                  "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-                  system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-                  "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-                --font-weight: 400;
-                --graph-line: light-dark(
-                  rgb(var(--light1_x)),
-                  rgb(var(--dark2_x))
-                );
-                --graph-node-tag: light-dark(
-                  rgb(var(--neutral-red_x)),
-                  rgb(var(--neutral-red_x))
-                );
-                --graph-node-unresolved: rgb(var(--light1_x));
-                --h1-color: light-dark(
-                  rgb(var(--neutral-red_x)),
-                  rgb(var(--neutral-red_x))
-                );
-                --h1-font: inherit;
-                --h3-line-height: 1.3;
-                --hr-color: transparent;
-                --hr-thickness: 2px;
-                --icon-color: rgb(var(--light2_x));
-                --inline-title-color: light-dark(
-                  rgb(var(--bright-yellow_x)),
-                  rgb(var(--bright-yellow_x))
-                );
-                --inline-title-font: inherit;
-                --interactive-accent-hsl: 12, 107%, 32%;
-                --italic-color: light-dark(
-                  rgb(var(--neutral-yellow_x)),
-                  rgb(var(--neutral-yellow_x))
-                );
-                --link-color: rgb(var(--neutral-orange_x));
-                --link-color-hover: rgb(var(--bright-aqua_x));
-                --link-external-color: rgb(var(--neutral-orange_x));
-                --link-external-color-hover: rgb(var(--bright-aqua_x));
-                --link-external-filter: none;
-                --link-weight: var(--link-weight);
-                --nav-item-background-hover: rgba(255, 255, 255, 0.15);
-                --nav-item-children-margin-start: 12px;
-                --nav-item-children-padding-start: 4px;
-                --p-spacing: 1rem;
-                --search-icon-color: rgb(var(--light2_x));
-                --tag-background: light-dark(
-                  rgb(var(--light1_x)),
-                  rgb(var(--dark2_x))
-                );
-                --tag-background-hover: hsla(12, 107%, 32%, 0.2);
-                --tag-border-color: hsla(12, 107%, 32%, 0.15);
-                --tag-border-color-hover: hsla(12, 107%, 32%, 0.15);
-                --tag-border-width: 0px;
-                --tag-color: light-dark(
-                  rgb(var(--neutral-aqua_x)),
-                  rgb(var(--bright-aqua_x))
-                );
-                --tag-color-hover: rgb(var(--neutral-orange_x));
-                --tag-decoration: none;
-                --tag-decoration-hover: underline;
-                --tag-radius: 0.5em;
-                --tag-weight: inherit;
-                --text-accent: light-dark(
-                  rgb(var(--neutral-orange_x)),
-                  rgb(var(--neutral-orange_x))
-                );
-                --text-accent-hover: light-dark(
-                  rgb(var(--bright-aqua_x)),
-                  rgb(var(--bright-aqua_x))
-                );
-                --text-faint: light-dark(
-                  rgb(var(--dark3_x)),
-                  rgb(var(--light1_x))
-                );
-                --text-highlight-bg: light-dark(
-                  rgb(var(--bright-yellow_x)),
-                  rgb(var(--neutral-yellow_x))
-                );
-                --text-muted: light-dark(
-                  rgb(var(--dark2_x)),
-                  rgb(var(--light2_x))
-                );
-                --text-normal: light-dark(
-                  rgb(var(--dark0_x)),
-                  rgb(var(--light0_x))
-                );
-                -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-                -webkit-user-select: none;
-                background-color: rgb(var(--dark0_x));
-                caret-color: rgb(var(--neutral-orange_x));
+
                 color: rgb(var(--light0_x));
-                contain: initial;
-                font-family:
-                  "??",
-                  "??",
-                  var(--default-font, "??"),
-                  ui-sans-serif,
-                  -apple-system,
-                  BlinkMacSystemFont,
-                  system-ui,
-                  "Segoe UI",
-                  Roboto,
-                  "Inter",
-                  "Apple Color Emoji",
-                  "Segoe UI Emoji",
-                  "Segoe UI Symbol",
-                  sans-serif;
-                font-size: 16px;
-                height: 100%;
-                line-height: 1.3;
-                margin: 0;
-                overflow: auto;
-                overscroll-behavior: none;
-                padding: 0;
-                padding-top: 0;
-                text-rendering: optimizeLegibility;
-                user-select: none;
-                width: 100%;
 
                 &.match-tag {
-                  background-color: hsla(12, 107%, 32%, 0.2);
-                  border: 0px solid hsla(12, 107%, 32%, 0.15);
-                  border-radius: 0.5em;
                   color: rgb(var(--bright-aqua_x));
-                  font-size: 0.875em;
-                  font-weight: inherit;
-                  line-height: 1;
-                  padding: 0.2em 0.5em;
-                  text-decoration: none;
                 }
               }
             }
@@ -2688,41 +1926,11 @@ body {
     border: unset;
     background-color: var(--background-primary);
     & .popover-inner {
-      background-color: rgb(var(--dark0_x));
       border: 1px solid transparent;
-      border-radius: 8px;
-      box-shadow:
-        0px 1px 2px rgba(0, 0, 0, 0.121),
-        0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-        0px 15px 30px rgba(0, 0, 0, 0.3);
-      display: flex;
-      max-height: 95vh;
-      position: absolute;
-      z-index: 30;
 
       background-color: rgb(var(--dark0_x));
-      border: 1px solid transparent;
-      border-radius: 8px;
-      box-shadow:
-        0px 1px 2px rgba(0, 0, 0, 0.121),
-        0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-        0px 15px 30px rgba(0, 0, 0, 0.3);
-      display: flex;
-      max-height: 95vh;
-      position: absolute;
-      z-index: 30;
 
-      background-color: rgb(var(--dark0_x));
-      border: 1px solid transparent;
       border-radius: 8px;
-      box-shadow:
-        0px 1px 2px rgba(0, 0, 0, 0.121),
-        0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-        0px 15px 30px rgba(0, 0, 0, 0.3);
-      display: flex;
-      max-height: 95vh;
-      position: absolute;
-      z-index: 30;
 
       background-color: var(--background-primary);
     }
