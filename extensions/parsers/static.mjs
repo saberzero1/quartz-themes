@@ -26,6 +26,9 @@ export default function replaceStaticProperties(manifestCollection) {
       outputData = result[0];
       iterations += result[1];
     }
+
+    outputData = ensureBalancedParentheses(outputData);
+
     writeFileSync(
       outputFile,
       format(JSON.stringify(outputData, null, 2), "json"),
@@ -33,4 +36,54 @@ export default function replaceStaticProperties(manifestCollection) {
     );
     console.log(`Replaced static properties in JSON for theme: ${theme}`);
   });
+}
+
+function ensureBalancedParentheses(jsonObject) {
+  // JSON object structure:
+  // "key": [
+  //   {
+  //     "property": "some-property",
+  //     "value": "some-value (with potentially unbalanced parentheses"
+  //   }
+  // ]
+  const resultObject = {};
+  for (const key in jsonObject) {
+    // rewrite this based on the structure of the JSON object:
+    /*if (typeof jsonObject[key] === "string") {
+      // Check for unbalanced parentheses in the string value.
+      const openParentheses = (jsonObject[key].match(/\(/g) || []).length;
+      const closeParentheses = (jsonObject[key].match(/\)/g) || []).length;
+
+      // If unbalanced, add a closing parenthesis at the end.
+      if (openParentheses > closeParentheses) {
+        jsonObject[key] += ")".repeat(openParentheses - closeParentheses);
+      }
+    } else if (
+      typeof jsonObject[key] === "object" &&
+      jsonObject[key] !== null
+    ) {
+      // Recursively ensure balanced parentheses in nested objects.
+      ensureBalancedParentheses(jsonObject[key]);
+    }*/
+    if (Array.isArray(jsonObject[key])) {
+      resultObject[key] = jsonObject[key].map((item) => {
+        if (typeof item === "object" && item !== null) {
+          // Ensure balanced parentheses in the 'value' property.
+          if (item.value) {
+            const openParentheses = (item.value.match(/\(/g) || []).length;
+            const closeParentheses = (item.value.match(/\)/g) || []).length;
+            if (openParentheses > closeParentheses) {
+              item.value += ")".repeat(openParentheses - closeParentheses);
+            }
+          }
+          return item;
+        }
+        return item; // Return the item as is if it's not an object.
+      });
+    } else {
+      resultObject[key] = jsonObject[key]; // Keep other types unchanged.
+    }
+  }
+
+  return jsonObject;
 }

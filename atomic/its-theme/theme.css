@@ -27522,7 +27522,7 @@ body:not(.list-default-bullet) .dataview.dataview.table-view-table ul {
   padding-inline-start: 0;
 }
 
-body:is(.theme-dark, .theme-light) {
+body.theme-dark, body.theme-light {
   --he-popover-border-radius: var(--radius-s);
   --he-text-on-accent-active: var(--headers);
   --he-text-on-accent-inactive: var(--text);

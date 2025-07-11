@@ -13661,10 +13661,9 @@
     { "property": "text-shadow", "value": "none" }
   ],
   ".cm-s-obsidian .hmd-inactive-line.HyperMD-table-row-1 > span": [
-    { "property": "background", "value": "url(data:image/png" },
     {
-      "property": "base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAQAAAAziH6sAAAADklEQVR42mOc+Z9x5n8ACTkDM4ikM1IAAAAASUVORK5CYII=)repeat-x 0px center",
-      "value": ""
+      "property": "background",
+      "value": "url(data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAQAAAAziH6sAAAADklEQVR42mOc+Z9x5n8ACTkDM4ikM1IAAAAASUVORK5CYII=)repeat-x 0px center"
     },
     {
       "property": "}.cm-s-obsidian .hmd-inactive-line.HyperMD-table-row span.cm-hmd-table-sep {color",

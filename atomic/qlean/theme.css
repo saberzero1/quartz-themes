@@ -23459,7 +23459,7 @@ input.mobile-vault-chooser-field-input {
 }
 
 @charset "UTF-8";
-body:is(.theme-light, .theme-dark) {
+body.theme-dark, body.theme-light {
   --accent-color-dark-hue-default: 254;
   --accent-color-dark-lightness-default: 68%;
   --accent-color-dark-saturation-default: 80%;
@@ -23775,7 +23775,7 @@ body:is(.theme-light, .theme-dark) {
   --text-selection: rgb(163 163 163 / 0.2);
 }
 
-body:is(.theme-light, .theme-dark).theme-light {
+body.theme-dark, body.theme-light.theme-light {
   --background-modifier-active-hover: #d4d4d4;
   --background-modifier-border-focus: #d4d4d4;
   --background-modifier-error-rgb: #ef4444;
@@ -23829,55 +23829,55 @@ body:is(.theme-light, .theme-dark).theme-light {
   --titlebar-not-focused: #b3b3b3;
 }
 
-body:is(.theme-light, .theme-dark).theme-light.accent-color-bw-dark {
+body.theme-dark, body.theme-light.theme-light.accent-color-bw-dark {
   --color-h: 0;
   --color-l: 10%;
   --color-s: 0%;
 }
 
-body:is(.theme-light, .theme-dark).theme-light.accent-color-sage-light {
+body.theme-dark, body.theme-light.theme-light.accent-color-sage-light {
   --color-h: 84;
   --color-l: 45%;
   --color-s: 20%;
 }
 
-body:is(.theme-light, .theme-dark).theme-light.accent-color-blue-light {
+body.theme-dark, body.theme-light.theme-light.accent-color-blue-light {
   --color-h: 211;
   --color-l: 58%;
   --color-s: 49%;
 }
 
-body:is(.theme-light, .theme-dark).theme-light.accent-color-peach-light {
+body.theme-dark, body.theme-light.theme-light.accent-color-peach-light {
   --color-h: 0;
   --color-l: 65%;
   --color-s: 37%;
 }
 
-body:is(.theme-light, .theme-dark).theme-light.accent-color-beige-light {
+body.theme-dark, body.theme-light.theme-light.accent-color-beige-light {
   --color-h: 30;
   --color-l: 58%;
   --color-s: 34%;
 }
 
-body:is(.theme-light, .theme-dark).theme-light.accent-color-pink-light {
+body.theme-dark, body.theme-light.theme-light.accent-color-pink-light {
   --color-h: 324;
   --color-l: 52%;
   --color-s: 36%;
 }
 
-body:is(.theme-light, .theme-dark).theme-light.accent-color-purple-light {
+body.theme-dark, body.theme-light.theme-light.accent-color-purple-light {
   --color-h: 289;
   --color-l: 55%;
   --color-s: 32%;
 }
 
-body:is(.theme-light, .theme-dark).theme-light.custom-accent-color {
+body.theme-dark, body.theme-light.theme-light.custom-accent-color {
   --color-h: var(--accent-color-light-hue-default);
   --color-l: var(--accent-color-light-lightness-default);
   --color-s: var(--accent-color-light-saturation-default);
 }
 
-body:is(.theme-light, .theme-dark).theme-dark {
+body.theme-dark, body.theme-light.theme-dark {
   --background-modifier-active-hover: #404040;
   --background-modifier-border-focus: #404040;
   --background-modifier-error-rgb: #ef4444;
@@ -23931,55 +23931,55 @@ body:is(.theme-light, .theme-dark).theme-dark {
   --titlebar-not-focused: #4c4c4d;
 }
 
-body:is(.theme-light, .theme-dark).theme-dark.accent-color-bw-dark {
+body.theme-dark, body.theme-light.theme-dark.accent-color-bw-dark {
   --color-h: 0;
   --color-l: 90%;
   --color-s: 0%;
 }
 
-body:is(.theme-light, .theme-dark).theme-dark.accent-color-sage-dark {
+body.theme-dark, body.theme-light.theme-dark.accent-color-sage-dark {
   --color-h: 88;
   --color-l: 69%;
   --color-s: 23%;
 }
 
-body:is(.theme-light, .theme-dark).theme-dark.accent-color-blue-dark {
+body.theme-dark, body.theme-light.theme-dark.accent-color-blue-dark {
   --color-h: 207;
   --color-l: 73%;
   --color-s: 47%;
 }
 
-body:is(.theme-light, .theme-dark).theme-dark.accent-color-peach-dark {
+body.theme-dark, body.theme-light.theme-dark.accent-color-peach-dark {
   --color-h: 0;
   --color-l: 65%;
   --color-s: 37%;
 }
 
-body:is(.theme-light, .theme-dark).theme-dark.accent-color-beige-dark {
+body.theme-dark, body.theme-light.theme-dark.accent-color-beige-dark {
   --color-h: 50;
   --color-l: 91%;
   --color-s: 100%;
 }
 
-body:is(.theme-light, .theme-dark).theme-dark.accent-color-pink-dark {
+body.theme-dark, body.theme-light.theme-dark.accent-color-pink-dark {
   --color-h: 0;
   --color-l: 91%;
   --color-s: 100%;
 }
 
-body:is(.theme-light, .theme-dark).theme-dark.accent-color-purple-dark {
+body.theme-dark, body.theme-light.theme-dark.accent-color-purple-dark {
   --color-h: 269;
   --color-l: 85%;
   --color-s: 59%;
 }
 
-body:is(.theme-light, .theme-dark).theme-dark.custom-accent-color {
+body.theme-dark, body.theme-light.theme-dark.custom-accent-color {
   --color-h: var(--accent-color-dark-hue-default);
   --color-l: var(--accent-color-dark-lightness-default);
   --color-s: var(--accent-color-dark-saturation-default);
 }
 
-body:is(.theme-light, .theme-dark).colorful-headers {
+body.theme-dark, body.theme-light.colorful-headers {
   --h1-color: var(--color-accent-h1);
   --h2-color: var(--color-accent-h1);
   --h3-color: var(--color-accent-h1);
@@ -23988,7 +23988,7 @@ body:is(.theme-light, .theme-dark).colorful-headers {
   --h6-color: var(--color-accent-h1);
 }
 
-body:is(.theme-light, .theme-dark).colorful-headers.header-color-gradient {
+body.theme-dark, body.theme-light.colorful-headers.header-color-gradient {
   --h1-color: var(--color-gradient-h1);
   --h2-color: var(--color-gradient-h2);
   --h3-color: var(--color-gradient-h3);

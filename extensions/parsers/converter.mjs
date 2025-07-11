@@ -4,25 +4,13 @@ import {
   removeEmptyRules,
 } from "../../util/postcss.mjs";
 import { format } from "../formatter.mjs";
-
 import stripComments from "../packages/strip-css-comments.mjs";
+import createStatic from "../../util/static-custom-properties.mjs";
 
 export function convert(css, fullMode = false) {
   if (fullMode) {
-    // Remove comments
-    css = stripComments(css);
-
-    // Split combined rules into individual declarations
-    css = splitCombinedRules(css);
-
-    // Combine identical selectors
-    css = combineIdenticalSelectors(css);
-
-    // Remove empty rules
-    css = removeEmptyRules(css);
-
-    // Format
-    css = format(css, "css");
+    // Preprocess the CSS
+    css = preprocessCSS(css);
   }
   // Convert to JSON dictionary format
   const jsonDictionary = {};
@@ -42,7 +30,9 @@ export function convert(css, fullMode = false) {
       }
       const declarationList = declarations
         .trim()
-        .split(/(?<!\+\s*?xml|\+\s*?png);/g)
+        .split(
+          /(?<![\+\/]\s*?(?:xml|png|octet-stream|woff2?|vnd\.ms-opentype|ttf|otf));/g,
+        )
         .map((d) => d.replaceAll("\n", ""))
         .map((d) => d.replaceAll(",", ", "))
         .map((d) => d.replaceAll(/\s+/g, " "))
@@ -67,4 +57,32 @@ export function convert(css, fullMode = false) {
   });
 
   return jsonDictionary;
+}
+
+export function preprocessCSS(css, index = 0) {
+  const current = css;
+
+  // Remove comments
+  css = stripComments(css);
+
+  // Split combined rules into individual declarations
+  css = splitCombinedRules(css);
+
+  // Combine identical selectors
+  css = combineIdenticalSelectors(css);
+
+  // Remove empty rules
+  css = removeEmptyRules(css);
+
+  // Format
+  css = format(css, "css");
+
+  // Process CSS with PostCSS plugins
+  css = createStatic(css);
+
+  if (css === current || index >= 25) {
+    return css;
+  }
+
+  return preprocessCSS(css, index + 1);
 }

@@ -673,7 +673,7 @@ pre.language-jsx {
 
 /* change first column bold color to match header color in both modes */
 .markdown-rendered td:first-child {
-  --bold-color: inherent;
+  --bold-color: inherit;
 }
 
 /* match list bullet points inside tables in both modes */

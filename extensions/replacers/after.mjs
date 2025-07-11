@@ -258,13 +258,16 @@ function getValueFromJSON(json, selector, declaration = "") {
 }
 
 function jsonObjectToString(jsonObject, declaration = "") {
+  let result = "";
   if (declaration.length > 0) {
-    return Object.entries(jsonObject)
+    result = Object.entries(jsonObject)
       .filter(([key, value]) => value.property === declaration)
       .map(([key, value]) => `${value.property}: ${value.value};`)
       .join("\n");
+  } else {
+    result = Object.entries(jsonObject)
+      .map(([key, value]) => `${value.property}: ${value.value};`)
+      .join("\n");
   }
-  return Object.entries(jsonObject)
-    .map(([key, value]) => `${value.property}: ${value.value};`)
-    .join("\n");
+  return result;
 }

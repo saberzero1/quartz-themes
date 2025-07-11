@@ -30954,7 +30954,7 @@ body:not(.tasks) li[data-task="-"].task-list-item.is-checked {
   --callout-title-size: inherit;
 }
 
-body:is(.theme-light, .theme-dark)
+body.theme-dark, body.theme-light
   .callout:is([data-callout-metadata*="style-3"], [data-callout*="style-3"]) {
   --callout-border-opacity: 1;
   --callout-border-width: 0 0 0 4px;

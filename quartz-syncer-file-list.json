@@ -164,7 +164,7 @@
   "material-gruvbox": ["/README.md", "/_index.scss"],
   "material-ocean": ["/README.md", "/_index.scss"],
   "meridian": ["/README.md", "/_index.scss"],
-  "micro-mike": ["/README.md", "/_dark.scss", "/_index.scss"],
+  "micro-mike": ["/README.md", "/_index.scss"],
   "midnight": ["/README.md", "/_index.scss"],
   "midnight-fjord": ["/README.md", "/_index.scss"],
   "minimal": ["/README.md", "/_index.scss"],

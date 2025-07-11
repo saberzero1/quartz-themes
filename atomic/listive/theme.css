@@ -23578,7 +23578,7 @@ src: url("data:application/octet-stream,base64,AAEAAAAQAQAABAAAR0RFRiMZHS0AAAJAA
   display: none;
 }
 
-body:is(.theme-dark, .theme-light) {
+body.theme-dark, body.theme-light {
   --background-active-line: var(--background-accent-alt);
   --divider-color: var(--background-primary);
   --divider-width: 0px;
