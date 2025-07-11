@@ -190,7 +190,7 @@ html[saved-theme="light"] {
     hsl(calc(41 - 3), calc(88% * 1.02), calc(71% * 1.15)),
     hsl(calc(41 - 5), calc(88% * 1.05), calc(71% * 1.29))
   );
-  --color-accent-hsl: light-dark(hsl(41, 88%, 71%), hsl(41, 88%, 71%));
+  --color-accent-hsl: light-dark(41, 88%, 71%, 41, 88%, 71%);
   --color-blue: light-dark(#086ddd, #027aff);
   --color-cyan: light-dark(#00bfbc, #53dfdd);
   --color-green: light-dark(#08b94e, #44cf6e);
@@ -306,7 +306,7 @@ body {
     hsl(calc(41 - 3), calc(88% * 1.02), calc(71% * 1.15)),
     hsl(calc(41 - 5), calc(88% * 1.05), calc(71% * 1.29))
   );
-  --color-accent-hsl: light-dark(hsl(41, 88%, 71%), hsl(41, 88%, 71%));
+  --color-accent-hsl: light-dark(41, 88%, 71%, 41, 88%, 71%);
   --color-blue: light-dark(#086ddd, #027aff);
   --color-cyan: light-dark(#00bfbc, #53dfdd);
   --color-green: light-dark(#08b94e, #44cf6e);
@@ -1997,7 +1997,7 @@ body {
             hsl(calc(41 - 3), calc(88% * 1.02), calc(71% * 1.15)),
             hsl(calc(41 - 5), calc(88% * 1.05), calc(71% * 1.29))
           );
-          --color-accent-hsl: light-dark(hsl(41, 88%, 71%), hsl(41, 88%, 71%));
+          --color-accent-hsl: light-dark(41, 88%, 71%, 41, 88%, 71%);
           --color-blue: light-dark(#086ddd, #027aff);
           --color-cyan: light-dark(#00bfbc, #53dfdd);
           --color-green: light-dark(#08b94e, #44cf6e);
@@ -2217,10 +2217,7 @@ body {
                   hsl(calc(41 - 3), calc(88% * 1.02), calc(71% * 1.15)),
                   hsl(calc(41 - 5), calc(88% * 1.05), calc(71% * 1.29))
                 );
-                --color-accent-hsl: light-dark(
-                  hsl(41, 88%, 71%),
-                  hsl(41, 88%, 71%)
-                );
+                --color-accent-hsl: light-dark(41, 88%, 71%, 41, 88%, 71%);
                 --color-blue: light-dark(#086ddd, #027aff);
                 --color-cyan: light-dark(#00bfbc, #53dfdd);
                 --color-green: light-dark(#08b94e, #44cf6e);

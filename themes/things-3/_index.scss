@@ -103,7 +103,7 @@ html[saved-theme="light"] {
   --nav-item-background-hover: var(--background-modifier-hover);
   --background-primary: light-dark(#ffffff, #000000);
   --background-secondary: light-dark(#f9fafb, #000000);
-  --color-accent-hsl: light-dark(hsl(213, 100%, 70%), hsl(213, 100%, 70%));
+  --color-accent-hsl: light-dark(213, 100%, 70%, 213, 100%, 70%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -205,7 +205,7 @@ body {
     calc(100% * 1.02),
     calc(70% * 1.15)
   );
-  --color-accent-hsl: light-dark(hsl(213, 100%, 70%), hsl(213, 100%, 70%));
+  --color-accent-hsl: light-dark(213, 100%, 70%, 213, 100%, 70%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -1912,10 +1912,7 @@ body {
             calc(100% * 1.02),
             calc(70% * 1.15)
           );
-          --color-accent-hsl: light-dark(
-            hsl(213, 100%, 70%),
-            hsl(213, 100%, 70%)
-          );
+          --color-accent-hsl: light-dark(213, 100%, 70%, 213, 100%, 70%);
           --color-base-00: light-dark(#ffffff, #1e1e1e);
           --color-base-10: light-dark(#fafafa, #242424);
           --color-base-100: light-dark(#222222, #dadada);
@@ -2125,10 +2122,7 @@ body {
                   calc(100% * 1.02),
                   calc(70% * 1.15)
                 );
-                --color-accent-hsl: light-dark(
-                  hsl(213, 100%, 70%),
-                  hsl(213, 100%, 70%)
-                );
+                --color-accent-hsl: light-dark(213, 100%, 70%, 213, 100%, 70%);
                 --color-base-00: light-dark(#ffffff, #1e1e1e);
                 --color-base-10: light-dark(#fafafa, #242424);
                 --color-base-100: light-dark(#222222, #dadada);

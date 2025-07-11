@@ -140,7 +140,7 @@ html[saved-theme="light"] {
     hsl(calc(318 - 3), calc(97% * 1.02), calc(35% * 1.15)),
     hsl(calc(318 - 5), calc(97% * 1.05), calc(35% * 1.29))
   );
-  --color-accent-hsl: light-dark(hsl(318, 97%, 35%), hsl(318, 97%, 35%));
+  --color-accent-hsl: light-dark(318, 97%, 35%, 318, 97%, 35%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -237,7 +237,7 @@ body {
     hsl(calc(318 - 3), calc(97% * 1.02), calc(35% * 1.15)),
     hsl(calc(318 - 5), calc(97% * 1.05), calc(35% * 1.29))
   );
-  --color-accent-hsl: light-dark(hsl(318, 97%, 35%), hsl(318, 97%, 35%));
+  --color-accent-hsl: light-dark(318, 97%, 35%, 318, 97%, 35%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -286,7 +286,7 @@ body {
   --interactive-accent-hsl: 318, 97%, 35%;
   --italic-color: inherit;
   --link-color: hsl(258, 88%, 66%);
-  --link-color-hover: #f2c204;
+  --link-color-hover: ##f2c204;
   --link-external-color: silver;
   --link-external-color-hover: #fd71d3;
   --link-external-filter: none;
@@ -302,13 +302,13 @@ body {
   --tag-border-color-hover: hsla(318, 97%, 35%, 0.15);
   --tag-border-width: 0px;
   --tag-color: #f2c204;
-  --tag-color-hover: #f2c204;
+  --tag-color-hover: ##f2c204;
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-radius: 2em;
   --tag-weight: inherit;
   --text-accent: #c10388;
-  --text-accent-hover: #f2c204;
+  --text-accent-hover: ##f2c204;
   --text-faint: #9e7f02;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-muted: #f2c204;
@@ -1818,10 +1818,7 @@ body {
             hsl(calc(318 - 3), calc(97% * 1.02), calc(35% * 1.15)),
             hsl(calc(318 - 5), calc(97% * 1.05), calc(35% * 1.29))
           );
-          --color-accent-hsl: light-dark(
-            hsl(318, 97%, 35%),
-            hsl(318, 97%, 35%)
-          );
+          --color-accent-hsl: light-dark(318, 97%, 35%, 318, 97%, 35%);
           --color-base-00: light-dark(#ffffff, #1e1e1e);
           --color-base-10: light-dark(#fafafa, #242424);
           --color-base-100: light-dark(#222222, #dadada);
@@ -1870,7 +1867,7 @@ body {
           --interactive-accent-hsl: 318, 97%, 35%;
           --italic-color: inherit;
           --link-color: hsl(258, 88%, 66%);
-          --link-color-hover: #f2c204;
+          --link-color-hover: ##f2c204;
           --link-external-color: silver;
           --link-external-color-hover: #fd71d3;
           --link-external-filter: none;
@@ -1886,13 +1883,13 @@ body {
           --tag-border-color-hover: hsla(318, 97%, 35%, 0.15);
           --tag-border-width: 0px;
           --tag-color: #f2c204;
-          --tag-color-hover: #f2c204;
+          --tag-color-hover: ##f2c204;
           --tag-decoration: none;
           --tag-decoration-hover: none;
           --tag-radius: 2em;
           --tag-weight: inherit;
           --text-accent: #c10388;
-          --text-accent-hover: #f2c204;
+          --text-accent-hover: ##f2c204;
           --text-faint: #9e7f02;
           --text-highlight-bg: rgba(255, 208, 0, 0.4);
           --text-muted: #f2c204;
@@ -1972,7 +1969,7 @@ body {
               &:focus,
               &.focus {
                 background-color: rgba(255, 255, 255, 0.15);
-                color: #f2c204;
+                color: ##f2c204;
               }
               & > ul > li > p {
                 background-color: transparent;
@@ -2009,10 +2006,7 @@ body {
                   hsl(calc(318 - 3), calc(97% * 1.02), calc(35% * 1.15)),
                   hsl(calc(318 - 5), calc(97% * 1.05), calc(35% * 1.29))
                 );
-                --color-accent-hsl: light-dark(
-                  hsl(318, 97%, 35%),
-                  hsl(318, 97%, 35%)
-                );
+                --color-accent-hsl: light-dark(318, 97%, 35%, 318, 97%, 35%);
                 --color-base-00: light-dark(#ffffff, #1e1e1e);
                 --color-base-10: light-dark(#fafafa, #242424);
                 --color-base-100: light-dark(#222222, #dadada);
@@ -2061,7 +2055,7 @@ body {
                 --interactive-accent-hsl: 318, 97%, 35%;
                 --italic-color: inherit;
                 --link-color: hsl(258, 88%, 66%);
-                --link-color-hover: #f2c204;
+                --link-color-hover: ##f2c204;
                 --link-external-color: silver;
                 --link-external-color-hover: #fd71d3;
                 --link-external-filter: none;
@@ -2077,13 +2071,13 @@ body {
                 --tag-border-color-hover: hsla(318, 97%, 35%, 0.15);
                 --tag-border-width: 0px;
                 --tag-color: #f2c204;
-                --tag-color-hover: #f2c204;
+                --tag-color-hover: ##f2c204;
                 --tag-decoration: none;
                 --tag-decoration-hover: none;
                 --tag-radius: 2em;
                 --tag-weight: inherit;
                 --text-accent: #c10388;
-                --text-accent-hover: #f2c204;
+                --text-accent-hover: ##f2c204;
                 --text-faint: #9e7f02;
                 --text-highlight-bg: rgba(255, 208, 0, 0.4);
                 --text-muted: #f2c204;

@@ -103,7 +103,7 @@ html[saved-theme="light"] {
     hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)),
     hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29))
   );
-  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
+  --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -208,7 +208,7 @@ body {
     hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)),
     hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29))
   );
-  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
+  --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -885,7 +885,7 @@ html {
 
   .callout-title {
     align-items: flex-start;
-    color: #c7b89e;
+    color: rgb(#c7b89e);
     display: flex;
     font-size: calc(16px + 2px);
     gap: 4px;
@@ -1785,10 +1785,7 @@ body {
             hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)),
             hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29))
           );
-          --color-accent-hsl: light-dark(
-            hsl(258, 88%, 66%),
-            hsl(258, 88%, 66%)
-          );
+          --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
           --color-base-00: light-dark(#ffffff, #1e1e1e);
           --color-base-10: light-dark(#fafafa, #242424);
           --color-base-100: light-dark(#222222, #dadada);
@@ -2000,10 +1997,7 @@ body {
                   hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)),
                   hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29))
                 );
-                --color-accent-hsl: light-dark(
-                  hsl(258, 88%, 66%),
-                  hsl(258, 88%, 66%)
-                );
+                --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
                 --color-base-00: light-dark(#ffffff, #1e1e1e);
                 --color-base-10: light-dark(#fafafa, #242424);
                 --color-base-100: light-dark(#222222, #dadada);

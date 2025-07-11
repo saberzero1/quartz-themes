@@ -247,7 +247,7 @@ html[saved-theme="dark"] {
   --checkbox-color: light-dark(#d6ba7c, #d6ba7c);
   --checkbox-marker-color: light-dark(#d6ba7c, #d6ba7c);
   --checkbox-radius: light-dark(4px, 4px);
-  --interactive-accent-hsl: light-dark(hsl(254, 80%, 68%), hsl(254, 80%, 68%));
+  --interactive-accent-hsl: light-dark(254, 80%, 68%, 254, 80%, 68%);
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -348,7 +348,7 @@ body {
   --icon-color: #bababa;
   --inline-title-color: inherit;
   --inline-title-font: inherit;
-  --interactive-accent-hsl: light-dark(hsl(254, 80%, 68%), hsl(254, 80%, 68%));
+  --interactive-accent-hsl: light-dark(254, 80%, 68%, 254, 80%, 68%);
   --italic-color: inherit;
   --link-color: #d6ba7c;
   --link-color-hover: #ffdd93;
@@ -1943,10 +1943,7 @@ body {
           --icon-color: #bababa;
           --inline-title-color: inherit;
           --inline-title-font: inherit;
-          --interactive-accent-hsl: light-dark(
-            hsl(254, 80%, 68%),
-            hsl(254, 80%, 68%)
-          );
+          --interactive-accent-hsl: light-dark(254, 80%, 68%, 254, 80%, 68%);
           --italic-color: inherit;
           --link-color: #d6ba7c;
           --link-color-hover: #ffdd93;
@@ -2095,8 +2092,12 @@ body {
                 --inline-title-color: inherit;
                 --inline-title-font: inherit;
                 --interactive-accent-hsl: light-dark(
-                  hsl(254, 80%, 68%),
-                  hsl(254, 80%, 68%)
+                  254,
+                  80%,
+                  68%,
+                  254,
+                  80%,
+                  68%
                 );
                 --italic-color: inherit;
                 --link-color: #d6ba7c;

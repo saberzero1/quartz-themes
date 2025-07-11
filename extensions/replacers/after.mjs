@@ -7,8 +7,6 @@ import {
   getFonts,
   getFixes,
   getValueFromDictionary,
-  cleanRulesAfterRun,
-  cleanup,
 } from "../../util/util.mjs";
 import { readFileSync, writeFileSync } from "fs";
 import { format } from "../formatter.mjs";
@@ -237,11 +235,7 @@ export default function replaceAfter(manifestCollection) {
       fixes,
     );
     const cleanedContent = updatedContent.split("\n").slice(0, -3).join("\n");
-    writeFileSync(
-      filePath,
-      format(cleanup(cleanRulesAfterRun(cleanedContent)), "scss"),
-      "utf8",
-    );
+    writeFileSync(filePath, format(cleanedContent, "scss"), "utf8");
 
     console.log(
       `Replaced after variables in ${theme} theme for ${manifest.name}`,
