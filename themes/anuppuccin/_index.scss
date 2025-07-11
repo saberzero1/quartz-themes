@@ -184,14 +184,14 @@ html[saved-theme="light"] {
   --h1-color: var(--text-normal);
 
   --nav-item-background-hover: var(--background-modifier-hover);
-  --background-modifier-border: light-dark(rgb(inherit), rgb(inherit));
-  --background-modifier-border-focus: light-dark(rgb(inherit), rgb(inherit));
-  --background-modifier-border-hover: light-dark(rgb(inherit), rgb(inherit));
+  --background-modifier-border: inherit;
+  --background-modifier-border-focus: inherit;
+  --background-modifier-border-hover: inherit;
   --color-accent-2: light-dark(
     hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)),
     hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29))
   );
-  --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -209,7 +209,7 @@ html[saved-theme="light"] {
   --color-purple: light-dark(#7852ee, #a882ff);
   --color-red: light-dark(#e93147, #fb464c);
   --color-yellow: light-dark(#e0ac00, #e0de71);
-  background-color: rgb(inherit);
+  background-color: inherit;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -256,40 +256,40 @@ body {
   --h1-color: var(--text-normal);
 
   --nav-item-background-hover: var(--background-modifier-hover);
-  --background-modifier-border: light-dark(rgb(inherit), rgb(inherit));
-  --background-modifier-border-focus: light-dark(rgb(inherit), rgb(inherit));
-  --background-modifier-border-hover: light-dark(rgb(inherit), rgb(inherit));
-  --background-modifier-hover: rgba(inherit, 0.067);
+  --background-modifier-border: inherit;
+  --background-modifier-border-focus: inherit;
+  --background-modifier-border-hover: inherit;
+  --background-modifier-hover: inherit;
   --background-primary: #000;
   --background-primary-alt: #111;
   --background-secondary: #1e1e1e;
   --bold-color: inherit;
   --bold-weight: calc(600 + 200);
-  --checkbox-border-color: rgb(inherit);
-  --checkbox-border-color-hover: rgb(inherit);
-  --checkbox-color: rgb(inherit);
-  --checkbox-color-hover: rgb(inherit);
-  --checkbox-marker-color: rgb(inherit);
+  --checkbox-border-color: inherit;
+  --checkbox-border-color-hover: inherit;
+  --checkbox-color: inherit;
+  --checkbox-color-hover: inherit;
+  --checkbox-marker-color: inherit;
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
   --code-background: var(--anp-code-bg-color, rgb(inherit));
-  --code-comment: rgb(inherit);
-  --code-function: rgb(inherit);
-  --code-important: rgb(inherit);
-  --code-keyword: rgb(inherit);
+  --code-comment: inherit;
+  --code-function: inherit;
+  --code-important: inherit;
+  --code-keyword: inherit;
   --code-normal: var(--anp-code-text-color, rgb(inherit));
-  --code-property: rgb(inherit);
-  --code-punctuation: rgb(inherit);
-  --code-string: rgb(inherit);
-  --code-tag: rgb(inherit);
-  --code-value: rgb(inherit);
-  --collapse-icon-color: rgb(inherit);
-  --collapse-icon-color-collapsed: rgb(inherit);
+  --code-property: inherit;
+  --code-punctuation: inherit;
+  --code-string: inherit;
+  --code-tag: inherit;
+  --code-value: inherit;
+  --collapse-icon-color: inherit;
+  --collapse-icon-color-collapsed: inherit;
   --color-accent-2: light-dark(
     hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)),
     hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29))
   );
-  --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -322,15 +322,15 @@ body {
     "Segoe UI Symbol", sans-serif;
   --font-weight: 400;
   --graph-line: var(--color-base-35, rgb(inherit));
-  --graph-node-tag: rgb(inherit);
-  --graph-node-unresolved: rgb(inherit);
+  --graph-node-tag: inherit;
+  --graph-node-unresolved: inherit;
   --h1-color: inherit;
   --h1-font: inherit;
   --h3-line-height: 1.3;
   --hr-color: transparent;
   --hr-thickness: 2px;
-  --icon-color: rgb(inherit);
-  --inline-title-color: rgb(inherit);
+  --icon-color: inherit;
+  --inline-title-color: inherit;
   --inline-title-font:
     var(--anp-editor-font-lp, "??"), "??", "??", "??",
     var(--default-font, "??"), ui-sans-serif, -apple-system, BlinkMacSystemFont,
@@ -338,39 +338,39 @@ body {
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --interactive-accent-hsl: 258, 88%, 66%;
   --italic-color: inherit;
-  --link-color: rgb(inherit);
-  --link-color-hover: rgb(inherit);
-  --link-external-color: rgb(inherit);
-  --link-external-color-hover: rgb(inherit);
+  --link-color: inherit;
+  --link-color-hover: inherit;
+  --link-external-color: inherit;
+  --link-external-color-hover: inherit;
   --link-external-filter: none;
   --link-weight: var(--link-weight);
-  --nav-item-background-hover: rgba(inherit, 0.15);
+  --nav-item-background-hover: inherit;
   --nav-item-children-margin-start: 12px;
   --nav-item-children-padding-start: 4px;
   --p-spacing: 1rem;
-  --search-icon-color: rgb(inherit);
+  --search-icon-color: inherit;
   --tag-background: hsla(258, 88%, 66%, 0.1);
   --tag-background-hover: hsla(258, 88%, 66%, 0.2);
   --tag-border-color: hsla(258, 88%, 66%, 0.15);
   --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
   --tag-border-width: 0px;
-  --tag-color: rgb(inherit);
-  --tag-color-hover: rgb(inherit);
+  --tag-color: inherit;
+  --tag-color-hover: inherit;
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-radius: 2em;
   --tag-weight: inherit;
-  --text-accent: rgb(inherit);
-  --text-accent-hover: rgba(inherit, 0.9);
-  --text-faint: rgb(inherit);
+  --text-accent: inherit;
+  --text-accent-hover: inherit;
+  --text-faint: inherit;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
-  --text-muted: rgb(inherit);
-  --text-normal: rgb(inherit);
+  --text-muted: inherit;
+  --text-normal: inherit;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-user-select: none;
-  background-color: rgb(inherit);
-  caret-color: rgb(inherit);
-  color: rgb(inherit);
+  background-color: inherit;
+  caret-color: inherit;
+  color: inherit;
   contain: initial;
   font-family:
     "??",
@@ -440,8 +440,8 @@ body {
 html {
   .callout {
     --callout-color: inherit;
-    background-color: rgba(inherit, 0.1);
-    border-color: rgba(inherit, 0.25);
+    background-color: inherit;
+    border-color: inherit;
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
@@ -451,8 +451,8 @@ html {
     padding: 12px 12px 12px24px;
 
     --callout-color: inherit;
-    background-color: rgba(inherit, 0.1);
-    border-color: rgba(inherit, 0.25);
+    background-color: inherit;
+    border-color: inherit;
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
@@ -469,8 +469,8 @@ html {
 
     &[data-callout] {
       --callout-color: inherit;
-      background-color: rgba(inherit, 0.1);
-      border-color: rgba(inherit, 0.25);
+      background-color: inherit;
+      border-color: inherit;
       border-radius: 4px;
       border-style: solid;
       border-width: 0px;
@@ -480,8 +480,8 @@ html {
       padding: 12px 12px 12px24px;
 
       --callout-color: inherit;
-      background-color: rgba(inherit, 0.1);
-      border-color: rgba(inherit, 0.25);
+      background-color: inherit;
+      border-color: inherit;
       border-radius: 4px;
       border-style: solid;
       border-width: 0px;
@@ -498,8 +498,8 @@ html {
       --callout-color: inherit;
 
       --callout-color: inherit;
-      background-color: rgba(inherit, 0.1);
-      border-color: rgba(inherit, 0.25);
+      background-color: inherit;
+      border-color: inherit;
       border-radius: 4px;
       border-style: solid;
       border-width: 0px;
@@ -516,8 +516,8 @@ html {
       --callout-color: inherit;
 
       --callout-color: inherit;
-      background-color: rgba(inherit, 0.1);
-      border-color: rgba(inherit, 0.25);
+      background-color: inherit;
+      border-color: inherit;
       border-radius: 4px;
       border-style: solid;
       border-width: 0px;
@@ -534,8 +534,8 @@ html {
       --callout-color: inherit;
 
       --callout-color: inherit;
-      background-color: rgba(inherit, 0.1);
-      border-color: rgba(inherit, 0.25);
+      background-color: inherit;
+      border-color: inherit;
       border-radius: 4px;
       border-style: solid;
       border-width: 0px;
@@ -552,8 +552,8 @@ html {
       --callout-color: inherit;
 
       --callout-color: inherit;
-      background-color: rgba(inherit, 0.1);
-      border-color: rgba(inherit, 0.25);
+      background-color: inherit;
+      border-color: inherit;
       border-radius: 4px;
       border-style: solid;
       border-width: 0px;
@@ -570,8 +570,8 @@ html {
       --callout-color: inherit;
 
       --callout-color: inherit;
-      background-color: rgba(inherit, 0.1);
-      border-color: rgba(inherit, 0.25);
+      background-color: inherit;
+      border-color: inherit;
       border-radius: 4px;
       border-style: solid;
       border-width: 0px;
@@ -588,8 +588,8 @@ html {
       --callout-color: inherit;
 
       --callout-color: inherit;
-      background-color: rgba(inherit, 0.1);
-      border-color: rgba(inherit, 0.25);
+      background-color: inherit;
+      border-color: inherit;
       border-radius: 4px;
       border-style: solid;
       border-width: 0px;
@@ -606,8 +606,8 @@ html {
       --callout-color: inherit;
 
       --callout-color: inherit;
-      background-color: rgba(inherit, 0.1);
-      border-color: rgba(inherit, 0.25);
+      background-color: inherit;
+      border-color: inherit;
       border-radius: 4px;
       border-style: solid;
       border-width: 0px;
@@ -624,8 +624,8 @@ html {
       --callout-color: inherit;
 
       --callout-color: inherit;
-      background-color: rgba(inherit, 0.1);
-      border-color: rgba(inherit, 0.25);
+      background-color: inherit;
+      border-color: inherit;
       border-radius: 4px;
       border-style: solid;
       border-width: 0px;
@@ -642,8 +642,8 @@ html {
       --callout-color: inherit;
 
       --callout-color: inherit;
-      background-color: rgba(inherit, 0.1);
-      border-color: rgba(inherit, 0.25);
+      background-color: inherit;
+      border-color: inherit;
       border-radius: 4px;
       border-style: solid;
       border-width: 0px;
@@ -660,8 +660,8 @@ html {
       --callout-color: inherit;
 
       --callout-color: inherit;
-      background-color: rgba(inherit, 0.1);
-      border-color: rgba(inherit, 0.25);
+      background-color: inherit;
+      border-color: inherit;
       border-radius: 4px;
       border-style: solid;
       border-width: 0px;
@@ -678,8 +678,8 @@ html {
       --callout-color: inherit;
 
       --callout-color: inherit;
-      background-color: rgba(inherit, 0.1);
-      border-color: rgba(inherit, 0.25);
+      background-color: inherit;
+      border-color: inherit;
       border-radius: 4px;
       border-style: solid;
       border-width: 0px;
@@ -696,8 +696,8 @@ html {
       --callout-color: inherit;
 
       --callout-color: inherit;
-      background-color: rgba(inherit, 0.1);
-      border-color: rgba(inherit, 0.25);
+      background-color: inherit;
+      border-color: inherit;
       border-radius: 4px;
       border-style: solid;
       border-width: 0px;
@@ -714,8 +714,8 @@ html {
       --callout-color: inherit;
 
       --callout-color: inherit;
-      background-color: rgba(inherit, 0.1);
-      border-color: rgba(inherit, 0.25);
+      background-color: inherit;
+      border-color: inherit;
       border-radius: 4px;
       border-style: solid;
       border-width: 0px;
@@ -732,8 +732,8 @@ html {
       --callout-color: inherit;
 
       --callout-color: inherit;
-      background-color: rgba(inherit, 0.1);
-      border-color: rgba(inherit, 0.25);
+      background-color: inherit;
+      border-color: inherit;
       border-radius: 4px;
       border-style: solid;
       border-width: 0px;
@@ -750,8 +750,8 @@ html {
       --callout-color: inherit;
 
       --callout-color: inherit;
-      background-color: rgba(inherit, 0.1);
-      border-color: rgba(inherit, 0.25);
+      background-color: inherit;
+      border-color: inherit;
       border-radius: 4px;
       border-style: solid;
       border-width: 0px;
@@ -768,8 +768,8 @@ html {
       --callout-color: inherit;
 
       --callout-color: inherit;
-      background-color: rgba(inherit, 0.1);
-      border-color: rgba(inherit, 0.25);
+      background-color: inherit;
+      border-color: inherit;
       border-radius: 4px;
       border-style: solid;
       border-width: 0px;
@@ -786,8 +786,8 @@ html {
       --callout-color: inherit;
 
       --callout-color: inherit;
-      background-color: rgba(inherit, 0.1);
-      border-color: rgba(inherit, 0.25);
+      background-color: inherit;
+      border-color: inherit;
       border-radius: 4px;
       border-style: solid;
       border-width: 0px;
@@ -804,8 +804,8 @@ html {
       --callout-color: inherit;
 
       --callout-color: inherit;
-      background-color: rgba(inherit, 0.1);
-      border-color: rgba(inherit, 0.25);
+      background-color: inherit;
+      border-color: inherit;
       border-radius: 4px;
       border-style: solid;
       border-width: 0px;
@@ -822,8 +822,8 @@ html {
       --callout-color: inherit;
 
       --callout-color: inherit;
-      background-color: rgba(inherit, 0.1);
-      border-color: rgba(inherit, 0.25);
+      background-color: inherit;
+      border-color: inherit;
       border-radius: 4px;
       border-style: solid;
       border-width: 0px;
@@ -840,8 +840,8 @@ html {
       --callout-color: inherit;
 
       --callout-color: inherit;
-      background-color: rgba(inherit, 0.1);
-      border-color: rgba(inherit, 0.25);
+      background-color: inherit;
+      border-color: inherit;
       border-radius: 4px;
       border-style: solid;
       border-width: 0px;
@@ -858,8 +858,8 @@ html {
       --callout-color: inherit;
 
       --callout-color: inherit;
-      background-color: rgba(inherit, 0.1);
-      border-color: rgba(inherit, 0.25);
+      background-color: inherit;
+      border-color: inherit;
       border-radius: 4px;
       border-style: solid;
       border-width: 0px;
@@ -876,8 +876,8 @@ html {
       --callout-color: inherit;
 
       --callout-color: inherit;
-      background-color: rgba(inherit, 0.1);
-      border-color: rgba(inherit, 0.25);
+      background-color: inherit;
+      border-color: inherit;
       border-radius: 4px;
       border-style: solid;
       border-width: 0px;
@@ -894,8 +894,8 @@ html {
       --callout-color: inherit;
 
       --callout-color: inherit;
-      background-color: rgba(inherit, 0.1);
-      border-color: rgba(inherit, 0.25);
+      background-color: inherit;
+      border-color: inherit;
       border-radius: 4px;
       border-style: solid;
       border-width: 0px;
@@ -912,8 +912,8 @@ html {
       --callout-color: inherit;
 
       --callout-color: inherit;
-      background-color: rgba(inherit, 0.1);
-      border-color: rgba(inherit, 0.25);
+      background-color: inherit;
+      border-color: inherit;
       border-radius: 4px;
       border-style: solid;
       border-width: 0px;
@@ -930,8 +930,8 @@ html {
       --callout-color: 158, 158, 158;
 
       --callout-color: inherit;
-      background-color: rgba(inherit, 0.1);
-      border-color: rgba(inherit, 0.25);
+      background-color: inherit;
+      border-color: inherit;
       border-radius: 4px;
       border-style: solid;
       border-width: 0px;
@@ -948,8 +948,8 @@ html {
       --callout-color: 158, 158, 158;
 
       --callout-color: inherit;
-      background-color: rgba(inherit, 0.1);
-      border-color: rgba(inherit, 0.25);
+      background-color: inherit;
+      border-color: inherit;
       border-radius: 4px;
       border-style: solid;
       border-width: 0px;
@@ -966,7 +966,7 @@ html {
 
   .callout-title {
     align-items: flex-start;
-    color: rgb(inherit);
+    color: inherit;
     display: flex;
     font-size: inherit;
     gap: 4px;
@@ -1002,7 +1002,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
 
-  background-color: rgb(inherit);
+  background-color: inherit;
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -1031,13 +1031,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: rgb(inherit);
+      background-color: inherit;
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: rgb(inherit);
+        background-color: inherit;
 
         background-color: var(--background-primary);
       }
@@ -1046,7 +1046,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: rgb(inherit);
+          background-color: inherit;
 
           background-color: var(--background-secondary);
 
@@ -1232,7 +1232,7 @@ body {
   /* HEADINGS */
   h1 {
     --font-weight: 600;
-    color: rgb(inherit);
+    color: inherit;
     font-family:
       var(--anp-editor-font-lp, "??"),
       "??",
@@ -1268,7 +1268,7 @@ body {
   h2.page-title a,
   h2 {
     --font-weight: 600;
-    color: rgb(inherit);
+    color: inherit;
     font-family:
       var(--anp-editor-font-lp, "??"),
       "??",
@@ -1302,7 +1302,7 @@ body {
   }
   h3 {
     --font-weight: 600;
-    color: rgb(inherit);
+    color: inherit;
     font-family:
       var(--anp-editor-font-lp, "??"),
       "??",
@@ -1336,7 +1336,7 @@ body {
   }
   h4 {
     --font-weight: 600;
-    color: rgb(inherit);
+    color: inherit;
     font-family:
       var(--anp-editor-font-lp, "??"),
       "??",
@@ -1370,7 +1370,7 @@ body {
   }
   h5 {
     --font-weight: 600;
-    color: rgb(inherit);
+    color: inherit;
     font-family:
       var(--anp-editor-font-lp, "??"),
       "??",
@@ -1404,7 +1404,7 @@ body {
   }
   h6 {
     --font-weight: 600;
-    color: rgb(inherit);
+    color: inherit;
     font-family:
       var(--anp-editor-font-lp, "??"),
       "??",
@@ -1545,9 +1545,9 @@ body {
     font-family: var(--codeFont, var(--font-monospace));
   }
   .clipboard-button {
-    background-color: rgb(inherit);
+    background-color: inherit;
     box-shadow: none;
-    color: rgb(inherit);
+    color: inherit;
     font-family:
       "??",
       "??",
@@ -1577,7 +1577,7 @@ body {
 
   /* METADATA */
   .content-meta {
-    color: rgb(inherit);
+    color: inherit;
     cursor: text;
     flex-grow: 1;
     font-size: calc(16px * 0.937);
@@ -1591,7 +1591,7 @@ body {
 
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: rgb(inherit);
+    color: inherit;
     padding: 2px 1px;
   }
 
@@ -1599,7 +1599,7 @@ body {
   .backlinks {
     h3 {
       --font-weight: 600;
-      color: rgb(inherit);
+      color: inherit;
       font-family:
         var(--anp-editor-font-lp, "??"),
         "??",
@@ -1628,7 +1628,7 @@ body {
     }
 
     ul li {
-      color: rgb(inherit);
+      color: inherit;
       padding-inline-start: 8px;
 
       font-weight: 500;
@@ -1648,7 +1648,7 @@ body {
     button.explorer-toggle,
     h2 {
       --font-weight: 600;
-      color: rgb(inherit);
+      color: inherit;
       font-family:
         var(--anp-editor-font-lp, "??"),
         "??",
@@ -1677,7 +1677,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: rgb(inherit);
+        background-color: inherit;
 
         background-color: var(--background-secondary);
 
@@ -1724,8 +1724,8 @@ body {
           width: 100%;
         }
         &:hover {
-          background-color: rgba(inherit, 0.15);
-          color: rgb(inherit);
+          background-color: inherit;
+          color: inherit;
           font-weight: inherit;
 
           font-size: 1rem;
@@ -1745,7 +1745,7 @@ body {
         -webkit-mask-image: var(--folder-open-icon);
       }
       .folder-outer > ul.content {
-        border-inline-start: 1px solidrgba(inherit, 0.4);
+        border-inline-start: 1px solidinherit;
         margin-bottom: 1px;
         margin-inline-start: var(
           --nav-item-children-margin-start,
@@ -1762,7 +1762,7 @@ body {
 
         a {
           border-radius: 4px;
-          color: rgb(inherit);
+          color: inherit;
           cursor: var(--anp-cursor, pointer);
           display: flex;
           font-size: 16px;
@@ -1818,7 +1818,7 @@ body {
   /* TOC */
   .toc {
     --font-weight: 600;
-    color: rgb(inherit);
+    color: inherit;
     font-family:
       var(--anp-editor-font-lp, "??"),
       "??",
@@ -1848,7 +1848,7 @@ body {
     button.toc-header {
       h3 {
         --font-weight: 600;
-        color: rgb(inherit);
+        color: inherit;
         font-family:
           var(--anp-editor-font-lp, "??"),
           "??",
@@ -1879,7 +1879,7 @@ body {
       }
 
       --font-weight: 600;
-      color: rgb(inherit);
+      color: inherit;
       font-family:
         var(--anp-editor-font-lp, "??"),
         "??",
@@ -1922,7 +1922,7 @@ body {
   .toc {
     h3 {
       --font-weight: 600;
-      color: rgb(inherit);
+      color: inherit;
       font-family:
         var(--anp-editor-font-lp, "??"),
         "??",
@@ -2010,10 +2010,10 @@ body {
       color: var(--button-secondary-fg-color);
 
       -webkit-app-region: no-drag;
-      background: rgb(inherit);
+      background: inherit;
       border: 1px solid transparent;
       border-radius: var(--anp-kanban-card-radius, 6px);
-      color: rgb(inherit);
+      color: inherit;
       font-family: inherit;
       font-size: calc(16px * 0.937);
       height: 40px;
@@ -2028,13 +2028,13 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: rgb(inherit);
+        background-color: inherit;
         border: 0.5pt solid var(--color-base-40, rgb(inherit));
         border-radius: 12px;
         box-shadow:
-          0px 1.8px 7.3px rgba(inherit, 0.071),
-          0px 6.3px 24.7px rgba(inherit, 0.112),
-          0px 30px 90px rgba(inherit, 0.2);
+          0px 1.8px 7.3px inherit,
+          0px 6.3px 24.7px inherit,
+          0px 30px 90px inherit;
         display: flex;
         flex-direction: column;
         max-height: 70vh;
@@ -2045,13 +2045,13 @@ body {
         width: 700px;
         z-index: 1;
 
-        background-color: rgb(inherit);
+        background-color: inherit;
         border: 0.5pt solid var(--color-base-40, rgb(inherit));
         border-radius: 12px;
         box-shadow:
-          0px 1.8px 7.3px rgba(inherit, 0.071),
-          0px 6.3px 24.7px rgba(inherit, 0.112),
-          0px 30px 90px rgba(inherit, 0.2);
+          0px 1.8px 7.3px inherit,
+          0px 6.3px 24.7px inherit,
+          0px 30px 90px inherit;
         display: flex;
         flex-direction: column;
         max-height: 70vh;
@@ -2062,13 +2062,13 @@ body {
         width: 700px;
         z-index: 1;
 
-        background-color: rgb(inherit);
+        background-color: inherit;
         border: 0.5pt solid var(--color-base-40, rgb(inherit));
         border-radius: 12px;
         box-shadow:
-          0px 1.8px 7.3px rgba(inherit, 0.071),
-          0px 6.3px 24.7px rgba(inherit, 0.112),
-          0px 30px 90px rgba(inherit, 0.2);
+          0px 1.8px 7.3px inherit,
+          0px 6.3px 24.7px inherit,
+          0px 30px 90px inherit;
         display: flex;
         flex-direction: column;
         max-height: 70vh;
@@ -2079,13 +2079,13 @@ body {
         width: 700px;
         z-index: 1;
 
-        background-color: rgb(inherit);
+        background-color: inherit;
         border: 0.5pt solid var(--color-base-40, rgb(inherit));
         border-radius: 12px;
         box-shadow:
-          0px 1.8px 7.3px rgba(inherit, 0.071),
-          0px 6.3px 24.7px rgba(inherit, 0.112),
-          0px 30px 90px rgba(inherit, 0.2);
+          0px 1.8px 7.3px inherit,
+          0px 6.3px 24.7px inherit,
+          0px 30px 90px inherit;
         display: flex;
         flex-direction: column;
         max-height: 70vh;
@@ -2101,9 +2101,9 @@ body {
         border-color: var(--background-modifier-border, var(--color-base-35));
         margin: 12vh auto;
         & > input {
-          background-color: rgb(inherit);
+          background-color: inherit;
           border: none;
-          border-bottom: 1px solid rgb(inherit);
+          border-bottom: 1px solid inherit;
           border-radius: 0;
           font-size: 16px;
           height: 48px;
@@ -2117,46 +2117,43 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          --background-modifier-border: light-dark(rgb(inherit), rgb(inherit));
-          --background-modifier-border-focus: light-dark(
-            rgb(inherit),
-            rgb(inherit)
-          );
-          --background-modifier-border-hover: light-dark(
-            rgb(inherit),
-            rgb(inherit)
-          );
-          --background-modifier-hover: rgba(inherit, 0.067);
+          --background-modifier-border: inherit;
+          --background-modifier-border-focus: inherit;
+          --background-modifier-border-hover: inherit;
+          --background-modifier-hover: inherit;
           --background-primary: #000;
           --background-primary-alt: #111;
           --background-secondary: #1e1e1e;
           --bold-color: inherit;
           --bold-weight: calc(600 + 200);
-          --checkbox-border-color: rgb(inherit);
-          --checkbox-border-color-hover: rgb(inherit);
-          --checkbox-color: rgb(inherit);
-          --checkbox-color-hover: rgb(inherit);
-          --checkbox-marker-color: rgb(inherit);
+          --checkbox-border-color: inherit;
+          --checkbox-border-color-hover: inherit;
+          --checkbox-color: inherit;
+          --checkbox-color-hover: inherit;
+          --checkbox-marker-color: inherit;
           --checkbox-radius: 4px;
           --checkbox-size: 16px;
           --code-background: var(--anp-code-bg-color, rgb(inherit));
-          --code-comment: rgb(inherit);
-          --code-function: rgb(inherit);
-          --code-important: rgb(inherit);
-          --code-keyword: rgb(inherit);
+          --code-comment: inherit;
+          --code-function: inherit;
+          --code-important: inherit;
+          --code-keyword: inherit;
           --code-normal: var(--anp-code-text-color, rgb(inherit));
-          --code-property: rgb(inherit);
-          --code-punctuation: rgb(inherit);
-          --code-string: rgb(inherit);
-          --code-tag: rgb(inherit);
-          --code-value: rgb(inherit);
-          --collapse-icon-color: rgb(inherit);
-          --collapse-icon-color-collapsed: rgb(inherit);
+          --code-property: inherit;
+          --code-punctuation: inherit;
+          --code-string: inherit;
+          --code-tag: inherit;
+          --code-value: inherit;
+          --collapse-icon-color: inherit;
+          --collapse-icon-color-collapsed: inherit;
           --color-accent-2: light-dark(
             hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)),
             hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29))
           );
-          --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
+          --color-accent-hsl: light-dark(
+            hsl(258, 88%, 66%),
+            hsl(258, 88%, 66%)
+          );
           --color-base-00: light-dark(#ffffff, #1e1e1e);
           --color-base-10: light-dark(#fafafa, #242424);
           --color-base-100: light-dark(#222222, #dadada);
@@ -2189,15 +2186,15 @@ body {
             "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
           --font-weight: 400;
           --graph-line: var(--color-base-35, rgb(inherit));
-          --graph-node-tag: rgb(inherit);
-          --graph-node-unresolved: rgb(inherit);
+          --graph-node-tag: inherit;
+          --graph-node-unresolved: inherit;
           --h1-color: inherit;
           --h1-font: inherit;
           --h3-line-height: 1.3;
           --hr-color: transparent;
           --hr-thickness: 2px;
-          --icon-color: rgb(inherit);
-          --inline-title-color: rgb(inherit);
+          --icon-color: inherit;
+          --inline-title-color: inherit;
           --inline-title-font:
             var(--anp-editor-font-lp, "??"), "??", "??", "??",
             var(--default-font, "??"), ui-sans-serif, -apple-system,
@@ -2205,39 +2202,39 @@ body {
             "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
           --interactive-accent-hsl: 258, 88%, 66%;
           --italic-color: inherit;
-          --link-color: rgb(inherit);
-          --link-color-hover: rgb(inherit);
-          --link-external-color: rgb(inherit);
-          --link-external-color-hover: rgb(inherit);
+          --link-color: inherit;
+          --link-color-hover: inherit;
+          --link-external-color: inherit;
+          --link-external-color-hover: inherit;
           --link-external-filter: none;
           --link-weight: var(--link-weight);
-          --nav-item-background-hover: rgba(inherit, 0.15);
+          --nav-item-background-hover: inherit;
           --nav-item-children-margin-start: 12px;
           --nav-item-children-padding-start: 4px;
           --p-spacing: 1rem;
-          --search-icon-color: rgb(inherit);
+          --search-icon-color: inherit;
           --tag-background: hsla(258, 88%, 66%, 0.1);
           --tag-background-hover: hsla(258, 88%, 66%, 0.2);
           --tag-border-color: hsla(258, 88%, 66%, 0.15);
           --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
           --tag-border-width: 0px;
-          --tag-color: rgb(inherit);
-          --tag-color-hover: rgb(inherit);
+          --tag-color: inherit;
+          --tag-color-hover: inherit;
           --tag-decoration: none;
           --tag-decoration-hover: none;
           --tag-radius: 2em;
           --tag-weight: inherit;
-          --text-accent: rgb(inherit);
-          --text-accent-hover: rgba(inherit, 0.9);
-          --text-faint: rgb(inherit);
+          --text-accent: inherit;
+          --text-accent-hover: inherit;
+          --text-faint: inherit;
           --text-highlight-bg: rgba(255, 208, 0, 0.4);
-          --text-muted: rgb(inherit);
-          --text-normal: rgb(inherit);
+          --text-muted: inherit;
+          --text-normal: inherit;
           -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
           -webkit-user-select: none;
-          background-color: rgb(inherit);
-          caret-color: rgb(inherit);
-          color: rgb(inherit);
+          background-color: inherit;
+          caret-color: inherit;
+          color: inherit;
           contain: initial;
           font-family:
             "??",
@@ -2307,53 +2304,47 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: rgba(inherit, 0.075);
+                background-color: inherit;
               }
               & > ul > li > p {
                 background-color: transparent;
-                --background-modifier-border: light-dark(
-                  rgb(inherit),
-                  rgb(inherit)
-                );
-                --background-modifier-border-focus: light-dark(
-                  rgb(inherit),
-                  rgb(inherit)
-                );
-                --background-modifier-border-hover: light-dark(
-                  rgb(inherit),
-                  rgb(inherit)
-                );
-                --background-modifier-hover: rgba(inherit, 0.067);
+                --background-modifier-border: inherit;
+                --background-modifier-border-focus: inherit;
+                --background-modifier-border-hover: inherit;
+                --background-modifier-hover: inherit;
                 --background-primary: #000;
                 --background-primary-alt: #111;
                 --background-secondary: #1e1e1e;
                 --bold-color: inherit;
                 --bold-weight: calc(600 + 200);
-                --checkbox-border-color: rgb(inherit);
-                --checkbox-border-color-hover: rgb(inherit);
-                --checkbox-color: rgb(inherit);
-                --checkbox-color-hover: rgb(inherit);
-                --checkbox-marker-color: rgb(inherit);
+                --checkbox-border-color: inherit;
+                --checkbox-border-color-hover: inherit;
+                --checkbox-color: inherit;
+                --checkbox-color-hover: inherit;
+                --checkbox-marker-color: inherit;
                 --checkbox-radius: 4px;
                 --checkbox-size: 16px;
                 --code-background: var(--anp-code-bg-color, rgb(inherit));
-                --code-comment: rgb(inherit);
-                --code-function: rgb(inherit);
-                --code-important: rgb(inherit);
-                --code-keyword: rgb(inherit);
+                --code-comment: inherit;
+                --code-function: inherit;
+                --code-important: inherit;
+                --code-keyword: inherit;
                 --code-normal: var(--anp-code-text-color, rgb(inherit));
-                --code-property: rgb(inherit);
-                --code-punctuation: rgb(inherit);
-                --code-string: rgb(inherit);
-                --code-tag: rgb(inherit);
-                --code-value: rgb(inherit);
-                --collapse-icon-color: rgb(inherit);
-                --collapse-icon-color-collapsed: rgb(inherit);
+                --code-property: inherit;
+                --code-punctuation: inherit;
+                --code-string: inherit;
+                --code-tag: inherit;
+                --code-value: inherit;
+                --collapse-icon-color: inherit;
+                --collapse-icon-color-collapsed: inherit;
                 --color-accent-2: light-dark(
                   hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)),
                   hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29))
                 );
-                --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
+                --color-accent-hsl: light-dark(
+                  hsl(258, 88%, 66%),
+                  hsl(258, 88%, 66%)
+                );
                 --color-base-00: light-dark(#ffffff, #1e1e1e);
                 --color-base-10: light-dark(#fafafa, #242424);
                 --color-base-100: light-dark(#222222, #dadada);
@@ -2386,15 +2377,15 @@ body {
                   "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
                 --font-weight: 400;
                 --graph-line: var(--color-base-35, rgb(inherit));
-                --graph-node-tag: rgb(inherit);
-                --graph-node-unresolved: rgb(inherit);
+                --graph-node-tag: inherit;
+                --graph-node-unresolved: inherit;
                 --h1-color: inherit;
                 --h1-font: inherit;
                 --h3-line-height: 1.3;
                 --hr-color: transparent;
                 --hr-thickness: 2px;
-                --icon-color: rgb(inherit);
-                --inline-title-color: rgb(inherit);
+                --icon-color: inherit;
+                --inline-title-color: inherit;
                 --inline-title-font:
                   var(--anp-editor-font-lp, "??"), "??", "??", "??",
                   var(--default-font, "??"), ui-sans-serif, -apple-system,
@@ -2403,39 +2394,39 @@ body {
                   sans-serif;
                 --interactive-accent-hsl: 258, 88%, 66%;
                 --italic-color: inherit;
-                --link-color: rgb(inherit);
-                --link-color-hover: rgb(inherit);
-                --link-external-color: rgb(inherit);
-                --link-external-color-hover: rgb(inherit);
+                --link-color: inherit;
+                --link-color-hover: inherit;
+                --link-external-color: inherit;
+                --link-external-color-hover: inherit;
                 --link-external-filter: none;
                 --link-weight: var(--link-weight);
-                --nav-item-background-hover: rgba(inherit, 0.15);
+                --nav-item-background-hover: inherit;
                 --nav-item-children-margin-start: 12px;
                 --nav-item-children-padding-start: 4px;
                 --p-spacing: 1rem;
-                --search-icon-color: rgb(inherit);
+                --search-icon-color: inherit;
                 --tag-background: hsla(258, 88%, 66%, 0.1);
                 --tag-background-hover: hsla(258, 88%, 66%, 0.2);
                 --tag-border-color: hsla(258, 88%, 66%, 0.15);
                 --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
                 --tag-border-width: 0px;
-                --tag-color: rgb(inherit);
-                --tag-color-hover: rgb(inherit);
+                --tag-color: inherit;
+                --tag-color-hover: inherit;
                 --tag-decoration: none;
                 --tag-decoration-hover: none;
                 --tag-radius: 2em;
                 --tag-weight: inherit;
-                --text-accent: rgb(inherit);
-                --text-accent-hover: rgba(inherit, 0.9);
-                --text-faint: rgb(inherit);
+                --text-accent: inherit;
+                --text-accent-hover: inherit;
+                --text-faint: inherit;
                 --text-highlight-bg: rgba(255, 208, 0, 0.4);
-                --text-muted: rgb(inherit);
-                --text-normal: rgb(inherit);
+                --text-muted: inherit;
+                --text-normal: inherit;
                 -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
                 -webkit-user-select: none;
-                background-color: rgb(inherit);
-                caret-color: rgb(inherit);
-                color: rgb(inherit);
+                background-color: inherit;
+                caret-color: inherit;
+                color: inherit;
                 contain: initial;
                 font-family:
                   "??",
@@ -2466,9 +2457,9 @@ body {
 
                 &.match-tag {
                   background-color: transparent;
-                  border: 0 solid rgba(inherit, 0.15);
+                  border: 0 solid inherit;
                   border-radius: 2em;
-                  color: rgb(inherit);
+                  color: inherit;
                   font-size: reset;
                   font-weight: inherit;
                   line-height: 1;
@@ -2541,13 +2532,13 @@ body {
 
   /* POPOVER */
   .popover {
-    background-color: rgb(inherit);
+    background-color: inherit;
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow:
-      0px 1px 2px rgba(inherit, 0.121),
-      0px 3.4px 6.7px rgba(inherit, 0.179),
-      0px 15px 30px rgba(inherit, 0.3);
+      0px 1px 2px inherit,
+      0px 3.4px 6.7px inherit,
+      0px 15px 30px inherit;
     display: flex;
     max-height: 95vh;
     position: absolute;
@@ -2559,37 +2550,37 @@ body {
     border: unset;
     background-color: var(--background-primary);
     & .popover-inner {
-      background-color: rgb(inherit);
+      background-color: inherit;
       border: 1px solid transparent;
       border-radius: 8px;
       box-shadow:
-        0px 1px 2px rgba(inherit, 0.121),
-        0px 3.4px 6.7px rgba(inherit, 0.179),
-        0px 15px 30px rgba(inherit, 0.3);
+        0px 1px 2px inherit,
+        0px 3.4px 6.7px inherit,
+        0px 15px 30px inherit;
       display: flex;
       max-height: 95vh;
       position: absolute;
       z-index: 30;
 
-      background-color: rgb(inherit);
+      background-color: inherit;
       border: 1px solid transparent;
       border-radius: 8px;
       box-shadow:
-        0px 1px 2px rgba(inherit, 0.121),
-        0px 3.4px 6.7px rgba(inherit, 0.179),
-        0px 15px 30px rgba(inherit, 0.3);
+        0px 1px 2px inherit,
+        0px 3.4px 6.7px inherit,
+        0px 15px 30px inherit;
       display: flex;
       max-height: 95vh;
       position: absolute;
       z-index: 30;
 
-      background-color: rgb(inherit);
+      background-color: inherit;
       border: 1px solid transparent;
       border-radius: 8px;
       box-shadow:
-        0px 1px 2px rgba(inherit, 0.121),
-        0px 3.4px 6.7px rgba(inherit, 0.179),
-        0px 15px 30px rgba(inherit, 0.3);
+        0px 1px 2px inherit,
+        0px 3.4px 6.7px inherit,
+        0px 15px 30px inherit;
       display: flex;
       max-height: 95vh;
       position: absolute;

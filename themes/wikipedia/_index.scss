@@ -138,7 +138,7 @@ html[saved-theme="light"] {
   --nav-item-background-hover: var(--background-modifier-hover);
 
   --background-modifier-border: light-dark(#a2a9b1, #dae1ea31);
-  --color-accent-hsl: light-dark(215, 79%, 50%, 215, 79%, 50%);
+  --color-accent-hsl: light-dark(hsl(215, 79%, 50%), hsl(215, 79%, 50%));
   --color-blue: light-dark(#086ddd, #027aff);
   --color-cyan: light-dark(#00bfbc, #53dfdd);
   --color-green: light-dark(#08b94e, #44cf6e);
@@ -234,7 +234,7 @@ body {
   --code-value: rgb(140, 63, 247);
   --collapse-icon-color: rgb(142, 148, 157);
   --collapse-icon-color-collapsed: hsl(215, 79%, calc(50% + 3.5%));
-  --color-accent-hsl: light-dark(215, 79%, 50%, 215, 79%, 50%);
+  --color-accent-hsl: light-dark(hsl(215, 79%, 50%), hsl(215, 79%, 50%));
   --color-blue: light-dark(#086ddd, #027aff);
   --color-cyan: light-dark(#00bfbc, #53dfdd);
   --color-green: light-dark(#08b94e, #44cf6e);
@@ -2083,7 +2083,10 @@ body {
           --code-value: rgb(140, 63, 247);
           --collapse-icon-color: rgb(142, 148, 157);
           --collapse-icon-color-collapsed: hsl(215, 79%, calc(50% + 3.5%));
-          --color-accent-hsl: light-dark(215, 79%, 50%, 215, 79%, 50%);
+          --color-accent-hsl: light-dark(
+            hsl(215, 79%, 50%),
+            hsl(215, 79%, 50%)
+          );
           --color-blue: light-dark(#086ddd, #027aff);
           --color-cyan: light-dark(#00bfbc, #53dfdd);
           --color-green: light-dark(#08b94e, #44cf6e);
@@ -2249,7 +2252,10 @@ body {
                   79%,
                   calc(50% + 3.5%)
                 );
-                --color-accent-hsl: light-dark(215, 79%, 50%, 215, 79%, 50%);
+                --color-accent-hsl: light-dark(
+                  hsl(215, 79%, 50%),
+                  hsl(215, 79%, 50%)
+                );
                 --color-blue: light-dark(#086ddd, #027aff);
                 --color-cyan: light-dark(#00bfbc, #53dfdd);
                 --color-green: light-dark(#08b94e, #44cf6e);

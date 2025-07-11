@@ -244,7 +244,7 @@ html[saved-theme="light"] {
     hsla(33, 54%, 17%, 1),
     hsla(32, 48%, 85%, 1)
   );
-  --interactive-accent-hsl: light-dark(31, 27%, 24%, 31, 27%, 24%);
+  --interactive-accent-hsl: light-dark(hsl(31, 27%, 24%), hsl(31, 27%, 24%));
   --italic-color: light-dark(hsla(200, 64%, 37%, 1), hsla(194, 59%, 56%, 1));
   --link-color: light-dark(hsla(40, 79%, 47%, 1), hsla(42, 79%, 51%, 1));
   --link-color-hover: light-dark(hsla(43, 83%, 57%, 1), hsla(43, 69%, 63%, 1));
@@ -405,7 +405,7 @@ body {
     hsla(32, 48%, 85%, 1)
   );
   --inline-title-font: inherit;
-  --interactive-accent-hsl: light-dark(31, 27%, 24%, 31, 27%, 24%);
+  --interactive-accent-hsl: light-dark(hsl(31, 27%, 24%), hsl(31, 27%, 24%));
   --italic-color: light-dark(hsla(200, 64%, 37%, 1), hsla(194, 59%, 56%, 1));
   --link-color: light-dark(hsla(40, 79%, 47%, 1), hsla(42, 79%, 51%, 1));
   --link-color-hover: light-dark(hsla(43, 83%, 57%, 1), hsla(43, 69%, 63%, 1));
@@ -2498,7 +2498,10 @@ body {
             hsla(32, 48%, 85%, 1)
           );
           --inline-title-font: inherit;
-          --interactive-accent-hsl: light-dark(31, 27%, 24%, 31, 27%, 24%);
+          --interactive-accent-hsl: light-dark(
+            hsl(31, 27%, 24%),
+            hsl(31, 27%, 24%)
+          );
           --italic-color: light-dark(
             hsla(200, 64%, 37%, 1),
             hsla(194, 59%, 56%, 1)
@@ -2764,12 +2767,8 @@ body {
                 );
                 --inline-title-font: inherit;
                 --interactive-accent-hsl: light-dark(
-                  31,
-                  27%,
-                  24%,
-                  31,
-                  27%,
-                  24%
+                  hsl(31, 27%, 24%),
+                  hsl(31, 27%, 24%)
                 );
                 --italic-color: light-dark(
                   hsla(200, 64%, 37%, 1),
