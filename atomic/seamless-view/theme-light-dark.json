@@ -21159,7 +21159,7 @@
   ],
   "span) > table": [{ "property": "margin", "value": "var(--size-4-4) 0" }],
   ".markdown-rendered td:first-child": [
-    { "property": "--bold-color", "value": "inherent" }
+    { "property": "--bold-color", "value": "inherit" }
   ],
   ".markdown-rendered .table-cell-wrapper .list-bullet": [
     { "property": "margin-inline-start", "value": "0" },

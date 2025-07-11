@@ -12267,11 +12267,11 @@
     { "property": "text-decoration", "value": "line-through" }
   ],
   "b": [
-    { "property": "color", "value": "inherent" },
+    { "property": "color", "value": "inherit" },
     { "property": "font-weight", "value": "calc(600 + 200)" }
   ],
   "strong": [
-    { "property": "color", "value": "inherent" },
+    { "property": "color", "value": "inherit" },
     { "property": "font-weight", "value": "calc(600 + 200)" }
   ],
   "b a": [{ "property": "font-weight", "value": "calc(600 + 200)" }],
@@ -12305,7 +12305,7 @@
     { "property": "color", "value": "inherit" }
   ],
   ".cm-strong": [
-    { "property": "color", "value": "inherent" },
+    { "property": "color", "value": "inherit" },
     { "property": "font-weight", "value": "calc(600 + 200)" }
   ],
   ".cm-strong a": [{ "property": "font-weight", "value": "calc(600 + 200)" }],
@@ -18614,7 +18614,7 @@
   ],
   "span) > table": [{ "property": "margin", "value": "16px 0" }],
   ".markdown-rendered td:first-child": [
-    { "property": "--bold-color", "value": "inherent" }
+    { "property": "--bold-color", "value": "inherit" }
   ],
   ".markdown-rendered .table-cell-wrapper .list-bullet": [
     { "property": "margin-inline-start", "value": "0" },

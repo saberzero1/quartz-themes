@@ -23894,7 +23894,7 @@ pre.language-jsx {
 }
 
 .markdown-rendered td:first-child {
-  --bold-color: inherent;
+  --bold-color: inherit;
 }
 
 .markdown-rendered .table-cell-wrapper .list-bullet {
