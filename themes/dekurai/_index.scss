@@ -233,7 +233,7 @@ html[saved-theme="dark"] {
     hsl(calc(160 - 3), calc(73% * 1.02), calc(26% * 1.15)),
     hsl(calc(160 - 5), calc(73% * 1.05), calc(26% * 1.29))
   );
-  --color-accent-hsl: light-dark(160, 73%, 26%, 160, 73%, 26%);
+  --color-accent-hsl: light-dark(hsl(160, 73%, 26%), hsl(160, 73%, 26%));
   --color-base-00: light-dark(#ffffff, hsl(205, 23%, 10%));
   --color-base-10: light-dark(#fafafa, hsl(205, 23%, 8%));
   --color-base-100: light-dark(#222222, #dadada);
@@ -334,7 +334,7 @@ body {
     hsl(calc(160 - 3), calc(73% * 1.02), calc(26% * 1.15)),
     hsl(calc(160 - 5), calc(73% * 1.05), calc(26% * 1.29))
   );
-  --color-accent-hsl: light-dark(160, 73%, 26%, 160, 73%, 26%);
+  --color-accent-hsl: light-dark(hsl(160, 73%, 26%), hsl(160, 73%, 26%));
   --color-base-00: light-dark(#ffffff, hsl(205, 23%, 10%));
   --color-base-10: light-dark(#fafafa, hsl(205, 23%, 8%));
   --color-base-100: light-dark(#222222, #dadada);
@@ -1999,7 +1999,10 @@ body {
             hsl(calc(160 - 3), calc(73% * 1.02), calc(26% * 1.15)),
             hsl(calc(160 - 5), calc(73% * 1.05), calc(26% * 1.29))
           );
-          --color-accent-hsl: light-dark(160, 73%, 26%, 160, 73%, 26%);
+          --color-accent-hsl: light-dark(
+            hsl(160, 73%, 26%),
+            hsl(160, 73%, 26%)
+          );
           --color-base-00: light-dark(#ffffff, hsl(205, 23%, 10%));
           --color-base-10: light-dark(#fafafa, hsl(205, 23%, 8%));
           --color-base-100: light-dark(#222222, #dadada);
@@ -2187,7 +2190,10 @@ body {
                   hsl(calc(160 - 3), calc(73% * 1.02), calc(26% * 1.15)),
                   hsl(calc(160 - 5), calc(73% * 1.05), calc(26% * 1.29))
                 );
-                --color-accent-hsl: light-dark(160, 73%, 26%, 160, 73%, 26%);
+                --color-accent-hsl: light-dark(
+                  hsl(160, 73%, 26%),
+                  hsl(160, 73%, 26%)
+                );
                 --color-base-00: light-dark(#ffffff, hsl(205, 23%, 10%));
                 --color-base-10: light-dark(#fafafa, hsl(205, 23%, 8%));
                 --color-base-100: light-dark(#222222, #dadada);

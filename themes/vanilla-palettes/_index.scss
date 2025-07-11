@@ -307,7 +307,7 @@ html[saved-theme="light"] {
     hsl(calc(265 - 3), calc(47% * 1.02), calc(51% * 1.15)),
     hsl(calc(265 - 5), calc(47% * 1.05), calc(51% * 1.29))
   );
-  --color-accent-hsl: light-dark(265, 47%, 51%, 265, 47%, 51%);
+  --color-accent-hsl: light-dark(hsl(265, 47%, 51%), hsl(265, 47%, 51%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -408,7 +408,7 @@ body {
     hsl(calc(265 - 3), calc(47% * 1.02), calc(51% * 1.15)),
     hsl(calc(265 - 5), calc(47% * 1.05), calc(51% * 1.29))
   );
-  --color-accent-hsl: light-dark(265, 47%, 51%, 265, 47%, 51%);
+  --color-accent-hsl: light-dark(hsl(265, 47%, 51%), hsl(265, 47%, 51%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -2077,7 +2077,10 @@ body {
             hsl(calc(265 - 3), calc(47% * 1.02), calc(51% * 1.15)),
             hsl(calc(265 - 5), calc(47% * 1.05), calc(51% * 1.29))
           );
-          --color-accent-hsl: light-dark(265, 47%, 51%, 265, 47%, 51%);
+          --color-accent-hsl: light-dark(
+            hsl(265, 47%, 51%),
+            hsl(265, 47%, 51%)
+          );
           --color-base-00: light-dark(#ffffff, #1e1e1e);
           --color-base-10: light-dark(#fafafa, #242424);
           --color-base-100: light-dark(#222222, #dadada);
@@ -2269,7 +2272,10 @@ body {
                   hsl(calc(265 - 3), calc(47% * 1.02), calc(51% * 1.15)),
                   hsl(calc(265 - 5), calc(47% * 1.05), calc(51% * 1.29))
                 );
-                --color-accent-hsl: light-dark(265, 47%, 51%, 265, 47%, 51%);
+                --color-accent-hsl: light-dark(
+                  hsl(265, 47%, 51%),
+                  hsl(265, 47%, 51%)
+                );
                 --color-base-00: light-dark(#ffffff, #1e1e1e);
                 --color-base-10: light-dark(#fafafa, #242424);
                 --color-base-100: light-dark(#222222, #dadada);

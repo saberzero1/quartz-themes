@@ -209,7 +209,7 @@ html[saved-theme="light"] {
     hsl(calc(228 - 3), calc(60% * 1.02), calc(60% * 1.15)),
     hsl(calc(228 - 5), calc(60% * 1.05), calc(60% * 1.29))
   );
-  --color-accent-hsl: light-dark(228, 60%, 60%, 228, 60%, 60%);
+  --color-accent-hsl: light-dark(hsl(228, 60%, 60%), hsl(228, 60%, 60%));
   --color-blue: light-dark(#086ddd, #027aff);
   --color-cyan: light-dark(#00bfbc, #53dfdd);
   --color-green: light-dark(#08b94e, #44cf6e);
@@ -304,7 +304,7 @@ body {
     hsl(calc(228 - 3), calc(60% * 1.02), calc(60% * 1.15)),
     hsl(calc(228 - 5), calc(60% * 1.05), calc(60% * 1.29))
   );
-  --color-accent-hsl: light-dark(228, 60%, 60%, 228, 60%, 60%);
+  --color-accent-hsl: light-dark(hsl(228, 60%, 60%), hsl(228, 60%, 60%));
   --color-blue: light-dark(#086ddd, #027aff);
   --color-cyan: light-dark(#00bfbc, #53dfdd);
   --color-green: light-dark(#08b94e, #44cf6e);
@@ -1971,7 +1971,10 @@ body {
             hsl(calc(228 - 3), calc(60% * 1.02), calc(60% * 1.15)),
             hsl(calc(228 - 5), calc(60% * 1.05), calc(60% * 1.29))
           );
-          --color-accent-hsl: light-dark(228, 60%, 60%, 228, 60%, 60%);
+          --color-accent-hsl: light-dark(
+            hsl(228, 60%, 60%),
+            hsl(228, 60%, 60%)
+          );
           --color-blue: light-dark(#086ddd, #027aff);
           --color-cyan: light-dark(#00bfbc, #53dfdd);
           --color-green: light-dark(#08b94e, #44cf6e);
@@ -2173,7 +2176,10 @@ body {
                   hsl(calc(228 - 3), calc(60% * 1.02), calc(60% * 1.15)),
                   hsl(calc(228 - 5), calc(60% * 1.05), calc(60% * 1.29))
                 );
-                --color-accent-hsl: light-dark(228, 60%, 60%, 228, 60%, 60%);
+                --color-accent-hsl: light-dark(
+                  hsl(228, 60%, 60%),
+                  hsl(228, 60%, 60%)
+                );
                 --color-blue: light-dark(#086ddd, #027aff);
                 --color-cyan: light-dark(#00bfbc, #53dfdd);
                 --color-green: light-dark(#08b94e, #44cf6e);

@@ -176,7 +176,7 @@ html[saved-theme="dark"] {
     hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)),
     hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29))
   );
-  --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -278,7 +278,7 @@ body {
     hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)),
     hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29))
   );
-  --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
+  --color-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --color-base-00: light-dark(#ffffff, #1e1e1e);
   --color-base-10: light-dark(#fafafa, #242424);
   --color-base-100: light-dark(#222222, #dadada);
@@ -321,7 +321,7 @@ body {
   --icon-color: hsl(224, 17%, 68%);
   --inline-title-color: inherit;
   --inline-title-font: inherit;
-  --interactive-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
+  --interactive-accent-hsl: light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%));
   --italic-color: inherit;
   --link-color: hsl(224, 37%, 80%);
   --link-color-hover: hsl(220, 23%, 95%);
@@ -334,11 +334,20 @@ body {
   --nav-item-children-padding-start: 4px;
   --p-spacing: 1rem;
   --search-icon-color: hsl(224, 17%, 68%);
-  --tag-background: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.1);
-  --tag-background-hover: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.2);
-  --tag-border-color: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+  --tag-background: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.1
+  );
+  --tag-background-hover: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.2
+  );
+  --tag-border-color: hsla(
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+    0.15
+  );
   --tag-border-color-hover: hsla(
-    light-dark(258, 88%, 66%, 258, 88%, 66%),
+    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
     0.15
   );
   --tag-border-width: 0px;
@@ -2037,7 +2046,10 @@ body {
             hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)),
             hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29))
           );
-          --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
+          --color-accent-hsl: light-dark(
+            hsl(258, 88%, 66%),
+            hsl(258, 88%, 66%)
+          );
           --color-base-00: light-dark(#ffffff, #1e1e1e);
           --color-base-10: light-dark(#fafafa, #242424);
           --color-base-100: light-dark(#222222, #dadada);
@@ -2080,7 +2092,10 @@ body {
           --icon-color: hsl(224, 17%, 68%);
           --inline-title-color: inherit;
           --inline-title-font: inherit;
-          --interactive-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
+          --interactive-accent-hsl: light-dark(
+            hsl(258, 88%, 66%),
+            hsl(258, 88%, 66%)
+          );
           --italic-color: inherit;
           --link-color: hsl(224, 37%, 80%);
           --link-color-hover: hsl(220, 23%, 95%);
@@ -2093,17 +2108,20 @@ body {
           --nav-item-children-padding-start: 4px;
           --p-spacing: 1rem;
           --search-icon-color: hsl(224, 17%, 68%);
-          --tag-background: hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.1);
+          --tag-background: hsla(
+            light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+            0.1
+          );
           --tag-background-hover: hsla(
-            light-dark(258, 88%, 66%, 258, 88%, 66%),
+            light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
             0.2
           );
           --tag-border-color: hsla(
-            light-dark(258, 88%, 66%, 258, 88%, 66%),
+            light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
             0.15
           );
           --tag-border-color-hover: hsla(
-            light-dark(258, 88%, 66%, 258, 88%, 66%),
+            light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
             0.15
           );
           --tag-border-width: 0px;
@@ -2239,7 +2257,10 @@ body {
                   hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)),
                   hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29))
                 );
-                --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
+                --color-accent-hsl: light-dark(
+                  hsl(258, 88%, 66%),
+                  hsl(258, 88%, 66%)
+                );
                 --color-base-00: light-dark(#ffffff, #1e1e1e);
                 --color-base-10: light-dark(#fafafa, #242424);
                 --color-base-100: light-dark(#222222, #dadada);
@@ -2286,12 +2307,8 @@ body {
                 --inline-title-color: inherit;
                 --inline-title-font: inherit;
                 --interactive-accent-hsl: light-dark(
-                  258,
-                  88%,
-                  66%,
-                  258,
-                  88%,
-                  66%
+                  hsl(258, 88%, 66%),
+                  hsl(258, 88%, 66%)
                 );
                 --italic-color: inherit;
                 --link-color: hsl(224, 37%, 80%);
@@ -2306,19 +2323,19 @@ body {
                 --p-spacing: 1rem;
                 --search-icon-color: hsl(224, 17%, 68%);
                 --tag-background: hsla(
-                  light-dark(258, 88%, 66%, 258, 88%, 66%),
+                  light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
                   0.1
                 );
                 --tag-background-hover: hsla(
-                  light-dark(258, 88%, 66%, 258, 88%, 66%),
+                  light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
                   0.2
                 );
                 --tag-border-color: hsla(
-                  light-dark(258, 88%, 66%, 258, 88%, 66%),
+                  light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
                   0.15
                 );
                 --tag-border-color-hover: hsla(
-                  light-dark(258, 88%, 66%, 258, 88%, 66%),
+                  light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
                   0.15
                 );
                 --tag-border-width: 0px;
@@ -2375,11 +2392,14 @@ body {
 
                 &.match-tag {
                   background-color: hsla(
-                    light-dark(258, 88%, 66%, 258, 88%, 66%),
+                    light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
                     0.2
                   );
                   border: 0px solid
-                    hsla(light-dark(258, 88%, 66%, 258, 88%, 66%), 0.15);
+                    hsla(
+                      light-dark(hsl(258, 88%, 66%), hsl(258, 88%, 66%)),
+                      0.15
+                    );
                   border-radius: 2em;
                   color: hsl(224, 37%, 80%);
                   font-size: 0.875em;
