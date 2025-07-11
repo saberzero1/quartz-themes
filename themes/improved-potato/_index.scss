@@ -244,7 +244,7 @@ html[saved-theme="light"] {
     hsl(calc(206 - 3), calc(92% * 1.02), calc(60% * 1.15)),
     hsl(calc(206 - 5), calc(92% * 1.05), calc(60% * 1.29))
   );
-  --color-accent-hsl: light-dark(hsl(206, 92%, 60%), hsl(206, 92%, 60%));
+  --color-accent-hsl: light-dark(206, 92%, 60%, 206, 92%, 60%);
   --color-blue: light-dark(#086ddd, #027aff);
   --color-cyan: light-dark(#00bfbc, rgb(51, 150, 148));
   --color-green: light-dark(#08b94e, #33a555);
@@ -340,7 +340,7 @@ body {
     hsl(calc(206 - 3), calc(92% * 1.02), calc(60% * 1.15)),
     hsl(calc(206 - 5), calc(92% * 1.05), calc(60% * 1.29))
   );
-  --color-accent-hsl: light-dark(hsl(206, 92%, 60%), hsl(206, 92%, 60%));
+  --color-accent-hsl: light-dark(206, 92%, 60%, 206, 92%, 60%);
   --color-blue: light-dark(#086ddd, #027aff);
   --color-cyan: light-dark(#00bfbc, rgb(51, 150, 148));
   --color-green: light-dark(#08b94e, #33a555);
@@ -2008,10 +2008,7 @@ body {
             hsl(calc(206 - 3), calc(92% * 1.02), calc(60% * 1.15)),
             hsl(calc(206 - 5), calc(92% * 1.05), calc(60% * 1.29))
           );
-          --color-accent-hsl: light-dark(
-            hsl(206, 92%, 60%),
-            hsl(206, 92%, 60%)
-          );
+          --color-accent-hsl: light-dark(206, 92%, 60%, 206, 92%, 60%);
           --color-blue: light-dark(#086ddd, #027aff);
           --color-cyan: light-dark(#00bfbc, rgb(51, 150, 148));
           --color-green: light-dark(#08b94e, #33a555);
@@ -2214,10 +2211,7 @@ body {
                   hsl(calc(206 - 3), calc(92% * 1.02), calc(60% * 1.15)),
                   hsl(calc(206 - 5), calc(92% * 1.05), calc(60% * 1.29))
                 );
-                --color-accent-hsl: light-dark(
-                  hsl(206, 92%, 60%),
-                  hsl(206, 92%, 60%)
-                );
+                --color-accent-hsl: light-dark(206, 92%, 60%, 206, 92%, 60%);
                 --color-blue: light-dark(#086ddd, #027aff);
                 --color-cyan: light-dark(#00bfbc, rgb(51, 150, 148));
                 --color-green: light-dark(#08b94e, #33a555);

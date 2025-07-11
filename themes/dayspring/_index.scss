@@ -126,7 +126,7 @@ html[saved-theme="light"] {
   --h1-color: var(--text-normal);
 
   --nav-item-background-hover: var(--background-modifier-hover);
-  --color-accent-hsl: light-dark(hsl(80, 45%, 45%), hsl(80, 45%, 45%));
+  --color-accent-hsl: light-dark(80, 45%, 45%, 80, 45%, 45%);
   --color-cyan: light-dark(#00bfbc, #53dfdd);
 
   --text-normal: var(--color-base-100);
@@ -207,7 +207,7 @@ body {
     calc(45% * 1.02),
     calc(45% * 1.15)
   );
-  --color-accent-hsl: light-dark(hsl(80, 45%, 45%), hsl(80, 45%, 45%));
+  --color-accent-hsl: light-dark(80, 45%, 45%, 80, 45%, 45%);
   --color-cyan: light-dark(#00bfbc, #53dfdd);
   --cursor-link: pointer;
   --font-default:
@@ -1880,7 +1880,7 @@ body {
             calc(45% * 1.02),
             calc(45% * 1.15)
           );
-          --color-accent-hsl: light-dark(hsl(80, 45%, 45%), hsl(80, 45%, 45%));
+          --color-accent-hsl: light-dark(80, 45%, 45%, 80, 45%, 45%);
           --color-cyan: light-dark(#00bfbc, #53dfdd);
           --cursor-link: pointer;
           --font-default:
@@ -2079,10 +2079,7 @@ body {
                   calc(45% * 1.02),
                   calc(45% * 1.15)
                 );
-                --color-accent-hsl: light-dark(
-                  hsl(80, 45%, 45%),
-                  hsl(80, 45%, 45%)
-                );
+                --color-accent-hsl: light-dark(80, 45%, 45%, 80, 45%, 45%);
                 --color-cyan: light-dark(#00bfbc, #53dfdd);
                 --cursor-link: pointer;
                 --font-default:

@@ -115,10 +115,7 @@ html[saved-theme="light"] {
     hsl(calc(196 - 3), calc(61.5% * 1.02), calc(20.4% * 1.15)),
     hsl(calc(196 - 5), calc(61.5% * 1.05), calc(20.4% * 1.29))
   );
-  --color-accent-hsl: light-dark(
-    hsl(196, 61.5%, 20.4%),
-    hsl(196, 61.5%, 20.4%)
-  );
+  --color-accent-hsl: light-dark(196, 61.5%, 20.4%, 196, 61.5%, 20.4%);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
   --color-base-40: light-dark(#bdbdbd, #555555);
@@ -215,10 +212,7 @@ body {
     hsl(calc(196 - 3), calc(61.5% * 1.02), calc(20.4% * 1.15)),
     hsl(calc(196 - 5), calc(61.5% * 1.05), calc(20.4% * 1.29))
   );
-  --color-accent-hsl: light-dark(
-    hsl(196, 61.5%, 20.4%),
-    hsl(196, 61.5%, 20.4%)
-  );
+  --color-accent-hsl: light-dark(196, 61.5%, 20.4%, 196, 61.5%, 20.4%);
   --color-base-30: light-dark(#e0e0e0, #363636);
   --color-base-35: light-dark(#d4d4d4, #3f3f3f);
   --color-base-40: light-dark(#bdbdbd, #555555);
@@ -1913,10 +1907,7 @@ body {
             hsl(calc(196 - 3), calc(61.5% * 1.02), calc(20.4% * 1.15)),
             hsl(calc(196 - 5), calc(61.5% * 1.05), calc(20.4% * 1.29))
           );
-          --color-accent-hsl: light-dark(
-            hsl(196, 61.5%, 20.4%),
-            hsl(196, 61.5%, 20.4%)
-          );
+          --color-accent-hsl: light-dark(196, 61.5%, 20.4%, 196, 61.5%, 20.4%);
           --color-base-30: light-dark(#e0e0e0, #363636);
           --color-base-35: light-dark(#d4d4d4, #3f3f3f);
           --color-base-40: light-dark(#bdbdbd, #555555);
@@ -2121,8 +2112,12 @@ body {
                   hsl(calc(196 - 5), calc(61.5% * 1.05), calc(20.4% * 1.29))
                 );
                 --color-accent-hsl: light-dark(
-                  hsl(196, 61.5%, 20.4%),
-                  hsl(196, 61.5%, 20.4%)
+                  196,
+                  61.5%,
+                  20.4%,
+                  196,
+                  61.5%,
+                  20.4%
                 );
                 --color-base-30: light-dark(#e0e0e0, #363636);
                 --color-base-35: light-dark(#d4d4d4, #3f3f3f);

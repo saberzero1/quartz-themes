@@ -251,7 +251,7 @@ html[saved-theme="light"] {
     hsl(calc(174 - 3), calc(20% * 1.02), calc(48% * 1.15)),
     hsl(calc(174 - 5), calc(20% * 1.05), calc(48% * 1.29))
   );
-  --color-accent-hsl: light-dark(hsl(174, 20%, 48%), hsl(174, 20%, 48%));
+  --color-accent-hsl: light-dark(174, 20%, 48%, 174, 20%, 48%);
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -342,7 +342,7 @@ body {
     hsl(calc(174 - 3), calc(20% * 1.02), calc(48% * 1.15)),
     hsl(calc(174 - 5), calc(20% * 1.05), calc(48% * 1.29))
   );
-  --color-accent-hsl: light-dark(hsl(174, 20%, 48%), hsl(174, 20%, 48%));
+  --color-accent-hsl: light-dark(174, 20%, 48%, 174, 20%, 48%);
   --cursor-link: pointer;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
@@ -1998,10 +1998,7 @@ body {
             hsl(calc(174 - 3), calc(20% * 1.02), calc(48% * 1.15)),
             hsl(calc(174 - 5), calc(20% * 1.05), calc(48% * 1.29))
           );
-          --color-accent-hsl: light-dark(
-            hsl(174, 20%, 48%),
-            hsl(174, 20%, 48%)
-          );
+          --color-accent-hsl: light-dark(174, 20%, 48%, 174, 20%, 48%);
           --cursor-link: pointer;
           --font-default:
             ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
@@ -2194,10 +2191,7 @@ body {
                   hsl(calc(174 - 3), calc(20% * 1.02), calc(48% * 1.15)),
                   hsl(calc(174 - 5), calc(20% * 1.05), calc(48% * 1.29))
                 );
-                --color-accent-hsl: light-dark(
-                  hsl(174, 20%, 48%),
-                  hsl(174, 20%, 48%)
-                );
+                --color-accent-hsl: light-dark(174, 20%, 48%, 174, 20%, 48%);
                 --cursor-link: pointer;
                 --font-default:
                   ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,

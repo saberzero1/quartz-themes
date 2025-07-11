@@ -624,6 +624,11 @@ export function cleanup(cssString) {
   cssString = cssString.replaceAll(/(?<=^\s*?(?:(?:(?:(?:background-|border-)?color)|\-\-[a-zA-Z\d\-]+):\s*?))light-dark\(\s*?hsl\(\s*?light-dark\(([^,]+),[^\)]+\),\s*?light-dark\(([^,]+),[^\)]+\),\s*?light-dark\(([^,]+),[^\)]+\)\s*?\),\s*?hsl\(\s*?light-dark\(([^,]+),[^\)]+\),\s*?light-dark\(([^,]+),[^\)]+\),\s*?light-dark\(([^,]+),[^\)]+\)\s*?\)\s*?\)(?=$|;|,)/gms, "light-dark(hsl($1, $2, $3), hsl($4, $5, $6))") // Fix light-dark(hsl) with 6 values
 
   cssString = cssString.replaceAll(/rgba?\(inherit\)/gms, "inherit") // Fix rgba(inherit) to inherit
+  cssString = cssString.replaceAll(/hsla\(hsl\((.*?)\),(.*?)\)/gms, "hsla($1, $2)") // Fix hsla(hsl(...)) to hsl(...)
+  cssString = cssString.replaceAll(/light-dark\(hsl\((.*?)\), hsl\((.*?)\),(.*?)\)/gms, "light-dark(hsla($1,$3), hsl($2,$3))") // Fix light-dark(hsl(...)) to hsl(...)
+  cssString = cssString.replaceAll(/rgba\((\d+) (\d+) (\d+), ([\d\.]+)\)/gms, "rgb($1, $2, $3, $4)") // Fix rgba to rgb
+
+  cssString = cssString.replaceAll("%%", "%") // Fix double percent signs
 
   return cssString
 }
