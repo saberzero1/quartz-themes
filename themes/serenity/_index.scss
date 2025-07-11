@@ -416,17 +416,7 @@ html {
     overflow: hidden;
     padding: 12px 24px 12px12px;
 
-    --callout-color: 92, 207, 230;
     background-color: rgba(242, 135, 121, 0.17);
-    border: 1px rgba(242, 135, 121, calc(1% + 10%)) solid;
-    border-color: rgba(242, 135, 121, 0.25);
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 0px;
-    margin: 1em 0;
-    mix-blend-mode: normal;
-    overflow: hidden;
-    padding: 12px 24px 12px12px;
 
     background-color: var(--bg);
     border-color: var(--border);
@@ -436,28 +426,8 @@ html {
 
     &[data-callout] {
       --callout-color: 92, 207, 230;
-      background-color: rgba(242, 135, 121, 0.17);
-      border: 1px rgba(242, 135, 121, calc(1% + 10%)) solid;
-      border-color: rgba(242, 135, 121, 0.25);
-      border-radius: 5px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
-      --callout-color: 92, 207, 230;
       background-color: rgba(242, 135, 121, 0.17);
-      border: 1px rgba(242, 135, 121, calc(1% + 10%)) solid;
-      border-color: rgba(242, 135, 121, 0.25);
-      border-radius: 5px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -466,17 +436,7 @@ html {
     &[data-callout="abstract"] {
       --callout-color: 149, 230, 203;
 
-      --callout-color: 92, 207, 230;
       background-color: rgba(242, 135, 121, 0.17);
-      border: 1px rgba(242, 135, 121, calc(1% + 10%)) solid;
-      border-color: rgba(242, 135, 121, 0.25);
-      border-radius: 5px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -485,17 +445,7 @@ html {
     &[data-callout="summary"] {
       --callout-color: 149, 230, 203;
 
-      --callout-color: 92, 207, 230;
       background-color: rgba(242, 135, 121, 0.17);
-      border: 1px rgba(242, 135, 121, calc(1% + 10%)) solid;
-      border-color: rgba(242, 135, 121, 0.25);
-      border-radius: 5px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -504,17 +454,7 @@ html {
     &[data-callout="tldr"] {
       --callout-color: 149, 230, 203;
 
-      --callout-color: 92, 207, 230;
       background-color: rgba(242, 135, 121, 0.17);
-      border: 1px rgba(242, 135, 121, calc(1% + 10%)) solid;
-      border-color: rgba(242, 135, 121, 0.25);
-      border-radius: 5px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -523,17 +463,7 @@ html {
     &[data-callout="info"] {
       --callout-color: 92, 207, 230;
 
-      --callout-color: 92, 207, 230;
       background-color: rgba(242, 135, 121, 0.17);
-      border: 1px rgba(242, 135, 121, calc(1% + 10%)) solid;
-      border-color: rgba(242, 135, 121, 0.25);
-      border-radius: 5px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -542,17 +472,7 @@ html {
     &[data-callout="todo"] {
       --callout-color: 92, 207, 230;
 
-      --callout-color: 92, 207, 230;
       background-color: rgba(242, 135, 121, 0.17);
-      border: 1px rgba(242, 135, 121, calc(1% + 10%)) solid;
-      border-color: rgba(242, 135, 121, 0.25);
-      border-radius: 5px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -561,17 +481,7 @@ html {
     &[data-callout="important"] {
       --callout-color: 242, 135, 121;
 
-      --callout-color: 92, 207, 230;
       background-color: rgba(242, 135, 121, 0.17);
-      border: 1px rgba(242, 135, 121, calc(1% + 10%)) solid;
-      border-color: rgba(242, 135, 121, 0.25);
-      border-radius: 5px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -580,17 +490,7 @@ html {
     &[data-callout="tip"] {
       --callout-color: 255, 209, 115;
 
-      --callout-color: 92, 207, 230;
       background-color: rgba(242, 135, 121, 0.17);
-      border: 1px rgba(242, 135, 121, calc(1% + 10%)) solid;
-      border-color: rgba(242, 135, 121, 0.25);
-      border-radius: 5px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -599,17 +499,7 @@ html {
     &[data-callout="hint"] {
       --callout-color: 149, 230, 203;
 
-      --callout-color: 92, 207, 230;
       background-color: rgba(242, 135, 121, 0.17);
-      border: 1px rgba(242, 135, 121, calc(1% + 10%)) solid;
-      border-color: rgba(242, 135, 121, 0.25);
-      border-radius: 5px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -618,17 +508,7 @@ html {
     &[data-callout="success"] {
       --callout-color: 213, 255, 128;
 
-      --callout-color: 92, 207, 230;
       background-color: rgba(242, 135, 121, 0.17);
-      border: 1px rgba(242, 135, 121, calc(1% + 10%)) solid;
-      border-color: rgba(242, 135, 121, 0.25);
-      border-radius: 5px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -637,17 +517,7 @@ html {
     &[data-callout="check"] {
       --callout-color: 213, 255, 128;
 
-      --callout-color: 92, 207, 230;
       background-color: rgba(242, 135, 121, 0.17);
-      border: 1px rgba(242, 135, 121, calc(1% + 10%)) solid;
-      border-color: rgba(242, 135, 121, 0.25);
-      border-radius: 5px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -656,17 +526,7 @@ html {
     &[data-callout="done"] {
       --callout-color: 213, 255, 128;
 
-      --callout-color: 92, 207, 230;
       background-color: rgba(242, 135, 121, 0.17);
-      border: 1px rgba(242, 135, 121, calc(1% + 10%)) solid;
-      border-color: rgba(242, 135, 121, 0.25);
-      border-radius: 5px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -675,17 +535,7 @@ html {
     &[data-callout="question"] {
       --callout-color: 255, 173, 102;
 
-      --callout-color: 92, 207, 230;
       background-color: rgba(242, 135, 121, 0.17);
-      border: 1px rgba(242, 135, 121, calc(1% + 10%)) solid;
-      border-color: rgba(242, 135, 121, 0.25);
-      border-radius: 5px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -694,17 +544,7 @@ html {
     &[data-callout="help"] {
       --callout-color: 255, 173, 102;
 
-      --callout-color: 92, 207, 230;
       background-color: rgba(242, 135, 121, 0.17);
-      border: 1px rgba(242, 135, 121, calc(1% + 10%)) solid;
-      border-color: rgba(242, 135, 121, 0.25);
-      border-radius: 5px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -713,17 +553,7 @@ html {
     &[data-callout="faq"] {
       --callout-color: 255, 173, 102;
 
-      --callout-color: 92, 207, 230;
       background-color: rgba(242, 135, 121, 0.17);
-      border: 1px rgba(242, 135, 121, calc(1% + 10%)) solid;
-      border-color: rgba(242, 135, 121, 0.25);
-      border-radius: 5px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -732,17 +562,7 @@ html {
     &[data-callout="warning"] {
       --callout-color: 255, 173, 102;
 
-      --callout-color: 92, 207, 230;
       background-color: rgba(242, 135, 121, 0.17);
-      border: 1px rgba(242, 135, 121, calc(1% + 10%)) solid;
-      border-color: rgba(242, 135, 121, 0.25);
-      border-radius: 5px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -751,17 +571,7 @@ html {
     &[data-callout="caution"] {
       --callout-color: 255, 173, 102;
 
-      --callout-color: 92, 207, 230;
       background-color: rgba(242, 135, 121, 0.17);
-      border: 1px rgba(242, 135, 121, calc(1% + 10%)) solid;
-      border-color: rgba(242, 135, 121, 0.25);
-      border-radius: 5px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -770,17 +580,7 @@ html {
     &[data-callout="attention"] {
       --callout-color: 255, 173, 102;
 
-      --callout-color: 92, 207, 230;
       background-color: rgba(242, 135, 121, 0.17);
-      border: 1px rgba(242, 135, 121, calc(1% + 10%)) solid;
-      border-color: rgba(242, 135, 121, 0.25);
-      border-radius: 5px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -789,17 +589,7 @@ html {
     &[data-callout="failure"] {
       --callout-color: 242, 135, 121;
 
-      --callout-color: 92, 207, 230;
       background-color: rgba(242, 135, 121, 0.17);
-      border: 1px rgba(242, 135, 121, calc(1% + 10%)) solid;
-      border-color: rgba(242, 135, 121, 0.25);
-      border-radius: 5px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -808,17 +598,7 @@ html {
     &[data-callout="fail"] {
       --callout-color: 242, 135, 121;
 
-      --callout-color: 92, 207, 230;
       background-color: rgba(242, 135, 121, 0.17);
-      border: 1px rgba(242, 135, 121, calc(1% + 10%)) solid;
-      border-color: rgba(242, 135, 121, 0.25);
-      border-radius: 5px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -827,17 +607,7 @@ html {
     &[data-callout="missing"] {
       --callout-color: 242, 135, 121;
 
-      --callout-color: 92, 207, 230;
       background-color: rgba(242, 135, 121, 0.17);
-      border: 1px rgba(242, 135, 121, calc(1% + 10%)) solid;
-      border-color: rgba(242, 135, 121, 0.25);
-      border-radius: 5px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -846,17 +616,7 @@ html {
     &[data-callout="danger"] {
       --callout-color: 242, 135, 121;
 
-      --callout-color: 92, 207, 230;
       background-color: rgba(242, 135, 121, 0.17);
-      border: 1px rgba(242, 135, 121, calc(1% + 10%)) solid;
-      border-color: rgba(242, 135, 121, 0.25);
-      border-radius: 5px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -865,17 +625,7 @@ html {
     &[data-callout="error"] {
       --callout-color: 242, 135, 121;
 
-      --callout-color: 92, 207, 230;
       background-color: rgba(242, 135, 121, 0.17);
-      border: 1px rgba(242, 135, 121, calc(1% + 10%)) solid;
-      border-color: rgba(242, 135, 121, 0.25);
-      border-radius: 5px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -884,17 +634,7 @@ html {
     &[data-callout="bug"] {
       --callout-color: 223, 191, 255;
 
-      --callout-color: 92, 207, 230;
       background-color: rgba(242, 135, 121, 0.17);
-      border: 1px rgba(242, 135, 121, calc(1% + 10%)) solid;
-      border-color: rgba(242, 135, 121, 0.25);
-      border-radius: 5px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -903,17 +643,7 @@ html {
     &[data-callout="example"] {
       --callout-color: 128, 191, 255;
 
-      --callout-color: 92, 207, 230;
       background-color: rgba(242, 135, 121, 0.17);
-      border: 1px rgba(242, 135, 121, calc(1% + 10%)) solid;
-      border-color: rgba(242, 135, 121, 0.25);
-      border-radius: 5px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -922,17 +652,7 @@ html {
     &[data-callout="quote"] {
       --callout-color: 158, 158, 158;
 
-      --callout-color: 92, 207, 230;
       background-color: rgba(242, 135, 121, 0.17);
-      border: 1px rgba(242, 135, 121, calc(1% + 10%)) solid;
-      border-color: rgba(242, 135, 121, 0.25);
-      border-radius: 5px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -941,17 +661,7 @@ html {
     &[data-callout="cite"] {
       --callout-color: 158, 158, 158;
 
-      --callout-color: 92, 207, 230;
       background-color: rgba(242, 135, 121, 0.17);
-      border: 1px rgba(242, 135, 121, calc(1% + 10%)) solid;
-      border-color: rgba(242, 135, 121, 0.25);
-      border-radius: 5px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1479,13 +1189,6 @@ body {
   /* METADATA */
   .content-meta {
     color: rgb(145, 189, 192);
-    cursor: text;
-    flex-grow: 1;
-    font-size: calc(17px * 0.937);
-    max-height: 300px;
-    padding: 4px 8px;
-    unicode-bidi: plaintext;
-    white-space: pre-wrap;
 
     color: var(--text-normal);
   }
@@ -1493,7 +1196,6 @@ body {
   /* BREADCRUMBS */
   .breadcrumbs-element p {
     color: rgb(73, 133, 149);
-    padding: 2px 1px;
   }
 
   /* BACKLINKS */
@@ -1514,7 +1216,6 @@ body {
 
     ul li {
       color: rgb(145, 189, 192);
-      padding-inline-start: 8px;
 
       font-weight: 500;
     }
@@ -1532,17 +1233,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      --font-weight: 600;
       color: #5ccfe6;
-      font-family: "iA Writer Duo S";
-      font-size: 1.51em;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 600;
-      letter-spacing: -0.015em;
-      line-height: 1.2;
-      margin-block-end: 0rem;
-      margin-block-start: 0rem;
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1557,15 +1248,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        align-items: center;
         color: #f4dbd6;
-        display: flex;
-        flex: 0 0 auto;
-        justify-content: center;
-        margin-inline-start: calc(-1 * 20px);
-        opacity: 1;
-        position: absolute;
-        width: 16px;
 
         text-overflow: ellipsis;
         position: relative;
@@ -1686,17 +1369,7 @@ body {
 
   /* TOC */
   .toc {
-    --font-weight: 600;
     color: rgb(213, 255, 128);
-    font-family: "iA Writer Duo S";
-    font-size: 1.35em;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 600;
-    letter-spacing: -0.015em;
-    line-height: 1.3;
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
 
     button.toc-header {
       h3 {
@@ -1715,17 +1388,7 @@ body {
         margin-block: 0;
       }
 
-      --font-weight: 600;
       color: rgb(213, 255, 128);
-      font-family: "iA Writer Duo S";
-      font-size: 1.35em;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 600;
-      letter-spacing: -0.015em;
-      line-height: 1.3;
-      margin-block-end: 0rem;
-      margin-block-start: 0rem;
 
       color: inherit;
     }
@@ -1833,93 +1496,20 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        animation: slide-up 0.3s ease;
         background-color: hsl(223, 22%, 1%);
-        border: 0.5pt solid
-          var(
-            --color-base-40,
-            hsl(0, calc(var(--custon-theme-sat-text-d) - 5%), calc(1% + 10%))
-          );
-        border-radius: 18px;
-        box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-          0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 40vw;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 30vw;
-        z-index: 1;
 
-        animation: slide-up 0.3s ease;
-        background-color: hsl(223, 22%, 1%);
         border: 0.5pt solid
           var(
             --color-base-40,
             hsl(0, calc(var(--custon-theme-sat-text-d) - 5%), calc(1% + 10%))
           );
-        border-radius: 18px;
-        box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-          0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 40vw;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 30vw;
-        z-index: 1;
 
-        animation: slide-up 0.3s ease;
-        background-color: hsl(223, 22%, 1%);
-        border: 0.5pt solid
-          var(
-            --color-base-40,
-            hsl(0, calc(var(--custon-theme-sat-text-d) - 5%), calc(1% + 10%))
-          );
         border-radius: 18px;
-        box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-          0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 40vw;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 30vw;
-        z-index: 1;
 
-        animation: slide-up 0.3s ease;
-        background-color: hsl(223, 22%, 1%);
-        border: 0.5pt solid
-          var(
-            --color-base-40,
-            hsl(0, calc(var(--custon-theme-sat-text-d) - 5%), calc(1% + 10%))
-          );
-        border-radius: 18px;
         box-shadow:
           0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
           0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
           0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 40vw;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 30vw;
-        z-index: 1;
 
         color: var(--text-normal);
         background-color: var(--background-secondary);
@@ -1942,145 +1532,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          --background-modifier-border: hsl(40, 60%, 75%);
-          --background-modifier-border-focus: hsl(0, 20%, 50%);
-          --background-modifier-border-hover: hsl(
-            40,
-            calc(22% + 5%),
-            50%,
-            0.18
-          );
-          --background-modifier-hover: rgba(255, 255, 255, 0.067);
-          --background-primary: hsl(223, 22%, 1%);
-          --background-primary-alt: hsl(40, calc(20% / 1.2), calc(1% + 15%));
-          --background-secondary: hsl(223, calc(25% * 1.2), calc(1% + 8%));
-          --bold-color: inherit;
-          --bold-weight: calc(600 + 200);
-          --checkbox-border-color: rgb(73, 133, 149);
-          --checkbox-border-color-hover: rgb(85, 148, 165);
-          --checkbox-color: #f4dbd6;
-          --checkbox-color-hover: rgb(223, 191, 255);
-          --checkbox-marker-color: hsl(223, 22%, 1%);
-          --checkbox-radius: 10px;
-          --checkbox-size: 17px;
-          --code-background: hsl(40, calc(20% / 1.2), calc(1% + 15%));
-          --code-comment: rgb(73, 133, 149);
-          --code-function: rgb(255, 209, 115);
-          --code-important: rgb(255, 173, 102);
-          --code-keyword: rgb(223, 191, 255);
-          --code-normal: rgb(145, 189, 192);
-          --code-property: rgb(149, 230, 203);
-          --code-punctuation: rgb(85, 148, 165);
-          --code-string: rgb(213, 255, 128);
-          --code-tag: rgb(242, 135, 121);
-          --code-value: rgb(128, 191, 255);
-          --collapse-icon-color: rgb(73, 133, 149);
-          --collapse-icon-color-collapsed: rgb(213, 255, 128);
-          --color-accent-2: light-dark(
-            hsl(calc(40 - 3), calc(100% * 1.02), calc(70% * 1.15)),
-            hsl(calc(40 - 5), calc(100% * 1.05), calc(70% * 1.29))
-          );
-          --color-accent-hsl: light-dark(40, 100%, 70%, 40, 100%, 70%);
-          --color-blue: light-dark(#086ddd, #027aff);
-          --color-cyan: light-dark(#00bfbc, #53dfdd);
-          --color-green: light-dark(#08b94e, #44cf6e);
-          --color-orange: light-dark(#ec7500, #e9973f);
-          --color-pink: light-dark(#d53984, #fa99cd);
-          --color-purple: light-dark(#7852ee, #a882ff);
-          --color-red: light-dark(#e93147, #fb464c);
-          --color-yellow: light-dark(#e0ac00, #e0de71);
-          --cursor-link: pointer;
-          --font-default:
-            ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-            "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-            "Segoe UI Symbol", sans-serif;
-          --font-monospace:
-            "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono",
-            "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
-            "Consolas", "Source Code Pro", monospace;
-          --font-text:
-            "??", "iA Writer Quattro S", ui-sans-serif, -apple-system,
-            BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
-            "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-          --font-weight: 400;
-          --graph-line: var(
-            --color-base-35,
-            hsl(0, calc(var(--custon-theme-sat-text-d) - 5%), calc(1% + 10%))
-          );
-          --graph-node-tag: rgb(213, 255, 128);
-          --graph-node-unresolved: rgb(73, 133, 149);
-          --h1-color: inherit;
-          --h1-font: inherit;
-          --h3-line-height: 1.3;
-          --hr-color: hsl(0, calc(10% - 5%), calc(1% + 10%));
-          --hr-thickness: 1px;
-          --icon-color: rgb(85, 148, 165);
-          --inline-title-color: rgb(128, 191, 255);
-          --inline-title-font: "iA Writer Duo S";
-          --interactive-accent-hsl: 193, 85%, 50%;
-          --italic-color: inherit;
-          --link-color: rgb(223, 191, 255);
-          --link-color-hover: rgba(223, 191, 255, 0.8);
-          --link-external-color: rgb(213, 255, 128);
-          --link-external-color-hover: rgba(223, 191, 255, 0.8);
-          --link-external-filter: none;
-          --link-weight: var(--link-weight);
-          --nav-item-background-hover: rgba(128, 191, 255, 0.25);
-          --nav-item-children-margin-start: 12px;
-          --nav-item-children-padding-start: 4px;
-          --p-spacing: 1rem;
-          --search-icon-color: rgb(85, 148, 165);
-          --tag-background: hsla(193, 85%, 50%, 0.1);
-          --tag-background-hover: hsla(193, 85%, 50%, 0.2);
-          --tag-border-color: hsla(193, 85%, 50%, 0.15);
-          --tag-border-color-hover: hsla(193, 85%, 50%, 0.15);
-          --tag-border-width: 0px;
-          --tag-color: rgb(213, 255, 128);
-          --tag-color-hover: rgb(213, 255, 128);
-          --tag-decoration: none;
-          --tag-decoration-hover: none;
-          --tag-radius: 5px;
-          --tag-weight: inherit;
-          --text-accent: rgb(223, 191, 255);
-          --text-accent-hover: rgba(223, 191, 255, 0.8);
-          --text-faint: #000000;
-          --text-highlight-bg: rgba(255, 208, 0, 0.4);
-          --text-muted: #000000;
-          --text-normal: #000000;
-          -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-          -webkit-user-select: none;
-          background-color: hsl(223, 22%, 1%);
-          caret-color: rgb(213, 255, 128);
           color: rgb(145, 189, 192);
-          contain: initial;
-          font-family:
-            "??",
-            "??",
-            var(--default-font, "??"),
-            ui-sans-serif,
-            -apple-system,
-            BlinkMacSystemFont,
-            system-ui,
-            "Segoe UI",
-            Roboto,
-            "Inter",
-            "Apple Color Emoji",
-            "Segoe UI Emoji",
-            "Segoe UI Symbol",
-            sans-serif;
-          font-size: 17px;
-          font-weight: 400;
-          height: 100%;
-          letter-spacing: var(--letter-spacing);
-          line-height: 1.3;
-          margin: 0;
-          overflow: auto;
-          overscroll-behavior: none;
-          padding: 0;
-          padding-top: 0;
-          text-rendering: optimizeLegibility;
-          user-select: none;
-          width: 100%;
 
           background: transparent;
           margin-bottom: 0;
@@ -2132,169 +1584,11 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                --background-modifier-border: hsl(40, 60%, 75%);
-                --background-modifier-border-focus: hsl(0, 20%, 50%);
-                --background-modifier-border-hover: hsl(
-                  40,
-                  calc(22% + 5%),
-                  50%,
-                  0.18
-                );
-                --background-modifier-hover: rgba(255, 255, 255, 0.067);
-                --background-primary: hsl(223, 22%, 1%);
-                --background-primary-alt: hsl(
-                  40,
-                  calc(20% / 1.2),
-                  calc(1% + 15%)
-                );
-                --background-secondary: hsl(
-                  223,
-                  calc(25% * 1.2),
-                  calc(1% + 8%)
-                );
-                --bold-color: inherit;
-                --bold-weight: calc(600 + 200);
-                --checkbox-border-color: rgb(73, 133, 149);
-                --checkbox-border-color-hover: rgb(85, 148, 165);
-                --checkbox-color: #f4dbd6;
-                --checkbox-color-hover: rgb(223, 191, 255);
-                --checkbox-marker-color: hsl(223, 22%, 1%);
-                --checkbox-radius: 10px;
-                --checkbox-size: 17px;
-                --code-background: hsl(40, calc(20% / 1.2), calc(1% + 15%));
-                --code-comment: rgb(73, 133, 149);
-                --code-function: rgb(255, 209, 115);
-                --code-important: rgb(255, 173, 102);
-                --code-keyword: rgb(223, 191, 255);
-                --code-normal: rgb(145, 189, 192);
-                --code-property: rgb(149, 230, 203);
-                --code-punctuation: rgb(85, 148, 165);
-                --code-string: rgb(213, 255, 128);
-                --code-tag: rgb(242, 135, 121);
-                --code-value: rgb(128, 191, 255);
-                --collapse-icon-color: rgb(73, 133, 149);
-                --collapse-icon-color-collapsed: rgb(213, 255, 128);
-                --color-accent-2: light-dark(
-                  hsl(calc(40 - 3), calc(100% * 1.02), calc(70% * 1.15)),
-                  hsl(calc(40 - 5), calc(100% * 1.05), calc(70% * 1.29))
-                );
-                --color-accent-hsl: light-dark(40, 100%, 70%, 40, 100%, 70%);
-                --color-blue: light-dark(#086ddd, #027aff);
-                --color-cyan: light-dark(#00bfbc, #53dfdd);
-                --color-green: light-dark(#08b94e, #44cf6e);
-                --color-orange: light-dark(#ec7500, #e9973f);
-                --color-pink: light-dark(#d53984, #fa99cd);
-                --color-purple: light-dark(#7852ee, #a882ff);
-                --color-red: light-dark(#e93147, #fb464c);
-                --color-yellow: light-dark(#e0ac00, #e0de71);
-                --cursor-link: pointer;
-                --font-default:
-                  ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-                  "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-                  "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-                --font-monospace:
-                  "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono",
-                  "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo,
-                  Monaco, "Consolas", "Source Code Pro", monospace;
-                --font-text:
-                  "??", "iA Writer Quattro S", ui-sans-serif, -apple-system,
-                  BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
-                  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-                  sans-serif;
-                --font-weight: 400;
-                --graph-line: var(
-                  --color-base-35,
-                  hsl(
-                    0,
-                    calc(var(--custon-theme-sat-text-d) - 5%),
-                    calc(1% + 10%)
-                  )
-                );
-                --graph-node-tag: rgb(213, 255, 128);
-                --graph-node-unresolved: rgb(73, 133, 149);
-                --h1-color: inherit;
-                --h1-font: inherit;
-                --h3-line-height: 1.3;
-                --hr-color: hsl(0, calc(10% - 5%), calc(1% + 10%));
-                --hr-thickness: 1px;
-                --icon-color: rgb(85, 148, 165);
-                --inline-title-color: rgb(128, 191, 255);
-                --inline-title-font: "iA Writer Duo S";
-                --interactive-accent-hsl: 193, 85%, 50%;
-                --italic-color: inherit;
-                --link-color: rgb(223, 191, 255);
-                --link-color-hover: rgba(223, 191, 255, 0.8);
-                --link-external-color: rgb(213, 255, 128);
-                --link-external-color-hover: rgba(223, 191, 255, 0.8);
-                --link-external-filter: none;
-                --link-weight: var(--link-weight);
-                --nav-item-background-hover: rgba(128, 191, 255, 0.25);
-                --nav-item-children-margin-start: 12px;
-                --nav-item-children-padding-start: 4px;
-                --p-spacing: 1rem;
-                --search-icon-color: rgb(85, 148, 165);
-                --tag-background: hsla(193, 85%, 50%, 0.1);
-                --tag-background-hover: hsla(193, 85%, 50%, 0.2);
-                --tag-border-color: hsla(193, 85%, 50%, 0.15);
-                --tag-border-color-hover: hsla(193, 85%, 50%, 0.15);
-                --tag-border-width: 0px;
-                --tag-color: rgb(213, 255, 128);
-                --tag-color-hover: rgb(213, 255, 128);
-                --tag-decoration: none;
-                --tag-decoration-hover: none;
-                --tag-radius: 5px;
-                --tag-weight: inherit;
-                --text-accent: rgb(223, 191, 255);
-                --text-accent-hover: rgba(223, 191, 255, 0.8);
-                --text-faint: #000000;
-                --text-highlight-bg: rgba(255, 208, 0, 0.4);
-                --text-muted: #000000;
-                --text-normal: #000000;
-                -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-                -webkit-user-select: none;
-                background-color: hsl(223, 22%, 1%);
-                caret-color: rgb(213, 255, 128);
+
                 color: rgb(145, 189, 192);
-                contain: initial;
-                font-family:
-                  "??",
-                  "??",
-                  var(--default-font, "??"),
-                  ui-sans-serif,
-                  -apple-system,
-                  BlinkMacSystemFont,
-                  system-ui,
-                  "Segoe UI",
-                  Roboto,
-                  "Inter",
-                  "Apple Color Emoji",
-                  "Segoe UI Emoji",
-                  "Segoe UI Symbol",
-                  sans-serif;
-                font-size: 17px;
-                font-weight: 400;
-                height: 100%;
-                letter-spacing: var(--letter-spacing);
-                line-height: 1.3;
-                margin: 0;
-                overflow: auto;
-                overscroll-behavior: none;
-                padding: 0;
-                padding-top: 0;
-                text-rendering: optimizeLegibility;
-                user-select: none;
-                width: 100%;
 
                 &.match-tag {
-                  background-color: hsl(calc(40 + 306), 50%, 60%, 0.25);
-                  border: 0px solid hsla(193, 85%, 50%, 0.15);
-                  border-radius: 5px;
                   color: rgb(213, 255, 128);
-                  font-size: 0.875em;
-                  font-weight: inherit;
-                  line-height: 1;
-                  padding: 2px 6px;
-                  text-decoration: none;
                 }
               }
             }
@@ -2380,41 +1674,11 @@ body {
     border: unset;
     background-color: var(--background-primary);
     & .popover-inner {
-      background-color: hsl(223, 22%, 1%);
       border: 1px solid hsl(0, 10%, calc(1% + 10%));
-      border-radius: 12px;
-      box-shadow:
-        0px 1px 2px rgba(0, 0, 0, 0.121),
-        0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-        0px 15px 30px rgba(0, 0, 0, 0.3);
-      display: flex;
-      max-height: 95vh;
-      position: absolute;
-      z-index: 30;
 
       background-color: hsl(223, 22%, 1%);
-      border: 1px solid hsl(0, 10%, calc(1% + 10%));
-      border-radius: 12px;
-      box-shadow:
-        0px 1px 2px rgba(0, 0, 0, 0.121),
-        0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-        0px 15px 30px rgba(0, 0, 0, 0.3);
-      display: flex;
-      max-height: 95vh;
-      position: absolute;
-      z-index: 30;
 
-      background-color: hsl(223, 22%, 1%);
-      border: 1px solid hsl(0, 10%, calc(1% + 10%));
       border-radius: 12px;
-      box-shadow:
-        0px 1px 2px rgba(0, 0, 0, 0.121),
-        0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-        0px 15px 30px rgba(0, 0, 0, 0.3);
-      display: flex;
-      max-height: 95vh;
-      position: absolute;
-      z-index: 30;
 
       background-color: var(--background-primary);
     }

@@ -614,24 +614,7 @@ html {
     overflow: hidden;
     padding: 0;
 
-    --callout-color: 2, 95, 200;
     background-color: rgba(158, 158, 158, 0.1);
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 4px;
-    border-color: rgba(158, 158, 158, 0.25);
-    border-left: 3px solid rgb(158, 158, 158);
-    border-radius: 4px;
-    border-style: solid;
-    border-top-left-radius: 0;
-    border-top-right-radius: 4px;
-    border-width: 0px;
-    box-shadow:
-      rgba(0, 0, 0, 0.16) 0 3px 6px,
-      rgba(0, 0, 0, 0.23) 0 3px 6px;
-    margin: 1em 0;
-    mix-blend-mode: normal;
-    overflow: hidden;
-    padding: 0;
 
     background-color: var(--bg);
     border-color: var(--border);
@@ -641,42 +624,8 @@ html {
 
     &[data-callout] {
       --callout-color: 2, 95, 200;
-      background-color: rgba(158, 158, 158, 0.1);
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 4px;
-      border-color: rgba(158, 158, 158, 0.25);
-      border-left: 3px solid rgb(158, 158, 158);
-      border-radius: 4px;
-      border-style: solid;
-      border-top-left-radius: 0;
-      border-top-right-radius: 4px;
-      border-width: 0px;
-      box-shadow:
-        rgba(0, 0, 0, 0.16) 0 3px 6px,
-        rgba(0, 0, 0, 0.23) 0 3px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
-      --callout-color: 2, 95, 200;
       background-color: rgba(158, 158, 158, 0.1);
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 4px;
-      border-color: rgba(158, 158, 158, 0.25);
-      border-left: 3px solid rgb(158, 158, 158);
-      border-radius: 4px;
-      border-style: solid;
-      border-top-left-radius: 0;
-      border-top-right-radius: 4px;
-      border-width: 0px;
-      box-shadow:
-        rgba(0, 0, 0, 0.16) 0 3px 6px,
-        rgba(0, 0, 0, 0.23) 0 3px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -685,24 +634,7 @@ html {
     &[data-callout="abstract"] {
       --callout-color: 0, 158, 155;
 
-      --callout-color: 2, 95, 200;
       background-color: rgba(158, 158, 158, 0.1);
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 4px;
-      border-color: rgba(158, 158, 158, 0.25);
-      border-left: 3px solid rgb(158, 158, 158);
-      border-radius: 4px;
-      border-style: solid;
-      border-top-left-radius: 0;
-      border-top-right-radius: 4px;
-      border-width: 0px;
-      box-shadow:
-        rgba(0, 0, 0, 0.16) 0 3px 6px,
-        rgba(0, 0, 0, 0.23) 0 3px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -711,24 +643,7 @@ html {
     &[data-callout="summary"] {
       --callout-color: 0, 158, 155;
 
-      --callout-color: 2, 95, 200;
       background-color: rgba(158, 158, 158, 0.1);
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 4px;
-      border-color: rgba(158, 158, 158, 0.25);
-      border-left: 3px solid rgb(158, 158, 158);
-      border-radius: 4px;
-      border-style: solid;
-      border-top-left-radius: 0;
-      border-top-right-radius: 4px;
-      border-width: 0px;
-      box-shadow:
-        rgba(0, 0, 0, 0.16) 0 3px 6px,
-        rgba(0, 0, 0, 0.23) 0 3px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -737,24 +652,7 @@ html {
     &[data-callout="tldr"] {
       --callout-color: 0, 158, 155;
 
-      --callout-color: 2, 95, 200;
       background-color: rgba(158, 158, 158, 0.1);
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 4px;
-      border-color: rgba(158, 158, 158, 0.25);
-      border-left: 3px solid rgb(158, 158, 158);
-      border-radius: 4px;
-      border-style: solid;
-      border-top-left-radius: 0;
-      border-top-right-radius: 4px;
-      border-width: 0px;
-      box-shadow:
-        rgba(0, 0, 0, 0.16) 0 3px 6px,
-        rgba(0, 0, 0, 0.23) 0 3px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -763,24 +661,7 @@ html {
     &[data-callout="info"] {
       --callout-color: 2, 95, 200;
 
-      --callout-color: 2, 95, 200;
       background-color: rgba(158, 158, 158, 0.1);
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 4px;
-      border-color: rgba(158, 158, 158, 0.25);
-      border-left: 3px solid rgb(158, 158, 158);
-      border-radius: 4px;
-      border-style: solid;
-      border-top-left-radius: 0;
-      border-top-right-radius: 4px;
-      border-width: 0px;
-      box-shadow:
-        rgba(0, 0, 0, 0.16) 0 3px 6px,
-        rgba(0, 0, 0, 0.23) 0 3px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -789,24 +670,7 @@ html {
     &[data-callout="todo"] {
       --callout-color: 2, 95, 200;
 
-      --callout-color: 2, 95, 200;
       background-color: rgba(158, 158, 158, 0.1);
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 4px;
-      border-color: rgba(158, 158, 158, 0.25);
-      border-left: 3px solid rgb(158, 158, 158);
-      border-radius: 4px;
-      border-style: solid;
-      border-top-left-radius: 0;
-      border-top-right-radius: 4px;
-      border-width: 0px;
-      box-shadow:
-        rgba(0, 0, 0, 0.16) 0 3px 6px,
-        rgba(0, 0, 0, 0.23) 0 3px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -815,24 +679,7 @@ html {
     &[data-callout="important"] {
       --callout-color: 0, 158, 155;
 
-      --callout-color: 2, 95, 200;
       background-color: rgba(158, 158, 158, 0.1);
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 4px;
-      border-color: rgba(158, 158, 158, 0.25);
-      border-left: 3px solid rgb(158, 158, 158);
-      border-radius: 4px;
-      border-style: solid;
-      border-top-left-radius: 0;
-      border-top-right-radius: 4px;
-      border-width: 0px;
-      box-shadow:
-        rgba(0, 0, 0, 0.16) 0 3px 6px,
-        rgba(0, 0, 0, 0.23) 0 3px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -841,24 +688,7 @@ html {
     &[data-callout="tip"] {
       --callout-color: 0, 158, 155;
 
-      --callout-color: 2, 95, 200;
       background-color: rgba(158, 158, 158, 0.1);
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 4px;
-      border-color: rgba(158, 158, 158, 0.25);
-      border-left: 3px solid rgb(158, 158, 158);
-      border-radius: 4px;
-      border-style: solid;
-      border-top-left-radius: 0;
-      border-top-right-radius: 4px;
-      border-width: 0px;
-      box-shadow:
-        rgba(0, 0, 0, 0.16) 0 3px 6px,
-        rgba(0, 0, 0, 0.23) 0 3px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -867,24 +697,7 @@ html {
     &[data-callout="hint"] {
       --callout-color: 0, 158, 155;
 
-      --callout-color: 2, 95, 200;
       background-color: rgba(158, 158, 158, 0.1);
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 4px;
-      border-color: rgba(158, 158, 158, 0.25);
-      border-left: 3px solid rgb(158, 158, 158);
-      border-radius: 4px;
-      border-style: solid;
-      border-top-left-radius: 0;
-      border-top-right-radius: 4px;
-      border-width: 0px;
-      box-shadow:
-        rgba(0, 0, 0, 0.16) 0 3px 6px,
-        rgba(0, 0, 0, 0.23) 0 3px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -893,24 +706,7 @@ html {
     &[data-callout="success"] {
       --callout-color: 1, 144, 59;
 
-      --callout-color: 2, 95, 200;
       background-color: rgba(158, 158, 158, 0.1);
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 4px;
-      border-color: rgba(158, 158, 158, 0.25);
-      border-left: 3px solid rgb(158, 158, 158);
-      border-radius: 4px;
-      border-style: solid;
-      border-top-left-radius: 0;
-      border-top-right-radius: 4px;
-      border-width: 0px;
-      box-shadow:
-        rgba(0, 0, 0, 0.16) 0 3px 6px,
-        rgba(0, 0, 0, 0.23) 0 3px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -919,24 +715,7 @@ html {
     &[data-callout="check"] {
       --callout-color: 1, 144, 59;
 
-      --callout-color: 2, 95, 200;
       background-color: rgba(158, 158, 158, 0.1);
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 4px;
-      border-color: rgba(158, 158, 158, 0.25);
-      border-left: 3px solid rgb(158, 158, 158);
-      border-radius: 4px;
-      border-style: solid;
-      border-top-left-radius: 0;
-      border-top-right-radius: 4px;
-      border-width: 0px;
-      box-shadow:
-        rgba(0, 0, 0, 0.16) 0 3px 6px,
-        rgba(0, 0, 0, 0.23) 0 3px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -945,24 +724,7 @@ html {
     &[data-callout="done"] {
       --callout-color: 1, 144, 59;
 
-      --callout-color: 2, 95, 200;
       background-color: rgba(158, 158, 158, 0.1);
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 4px;
-      border-color: rgba(158, 158, 158, 0.25);
-      border-left: 3px solid rgb(158, 158, 158);
-      border-radius: 4px;
-      border-style: solid;
-      border-top-left-radius: 0;
-      border-top-right-radius: 4px;
-      border-width: 0px;
-      box-shadow:
-        rgba(0, 0, 0, 0.16) 0 3px 6px,
-        rgba(0, 0, 0, 0.23) 0 3px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -971,24 +733,7 @@ html {
     &[data-callout="question"] {
       --callout-color: 193, 109, 24;
 
-      --callout-color: 2, 95, 200;
       background-color: rgba(158, 158, 158, 0.1);
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 4px;
-      border-color: rgba(158, 158, 158, 0.25);
-      border-left: 3px solid rgb(158, 158, 158);
-      border-radius: 4px;
-      border-style: solid;
-      border-top-left-radius: 0;
-      border-top-right-radius: 4px;
-      border-width: 0px;
-      box-shadow:
-        rgba(0, 0, 0, 0.16) 0 3px 6px,
-        rgba(0, 0, 0, 0.23) 0 3px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -997,24 +742,7 @@ html {
     &[data-callout="help"] {
       --callout-color: 193, 109, 24;
 
-      --callout-color: 2, 95, 200;
       background-color: rgba(158, 158, 158, 0.1);
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 4px;
-      border-color: rgba(158, 158, 158, 0.25);
-      border-left: 3px solid rgb(158, 158, 158);
-      border-radius: 4px;
-      border-style: solid;
-      border-top-left-radius: 0;
-      border-top-right-radius: 4px;
-      border-width: 0px;
-      box-shadow:
-        rgba(0, 0, 0, 0.16) 0 3px 6px,
-        rgba(0, 0, 0, 0.23) 0 3px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1023,24 +751,7 @@ html {
     &[data-callout="faq"] {
       --callout-color: 193, 109, 24;
 
-      --callout-color: 2, 95, 200;
       background-color: rgba(158, 158, 158, 0.1);
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 4px;
-      border-color: rgba(158, 158, 158, 0.25);
-      border-left: 3px solid rgb(158, 158, 158);
-      border-radius: 4px;
-      border-style: solid;
-      border-top-left-radius: 0;
-      border-top-right-radius: 4px;
-      border-width: 0px;
-      box-shadow:
-        rgba(0, 0, 0, 0.16) 0 3px 6px,
-        rgba(0, 0, 0, 0.23) 0 3px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1049,24 +760,7 @@ html {
     &[data-callout="warning"] {
       --callout-color: 193, 109, 24;
 
-      --callout-color: 2, 95, 200;
       background-color: rgba(158, 158, 158, 0.1);
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 4px;
-      border-color: rgba(158, 158, 158, 0.25);
-      border-left: 3px solid rgb(158, 158, 158);
-      border-radius: 4px;
-      border-style: solid;
-      border-top-left-radius: 0;
-      border-top-right-radius: 4px;
-      border-width: 0px;
-      box-shadow:
-        rgba(0, 0, 0, 0.16) 0 3px 6px,
-        rgba(0, 0, 0, 0.23) 0 3px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1075,24 +769,7 @@ html {
     &[data-callout="caution"] {
       --callout-color: 193, 109, 24;
 
-      --callout-color: 2, 95, 200;
       background-color: rgba(158, 158, 158, 0.1);
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 4px;
-      border-color: rgba(158, 158, 158, 0.25);
-      border-left: 3px solid rgb(158, 158, 158);
-      border-radius: 4px;
-      border-style: solid;
-      border-top-left-radius: 0;
-      border-top-right-radius: 4px;
-      border-width: 0px;
-      box-shadow:
-        rgba(0, 0, 0, 0.16) 0 3px 6px,
-        rgba(0, 0, 0, 0.23) 0 3px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1101,24 +778,7 @@ html {
     &[data-callout="attention"] {
       --callout-color: 193, 109, 24;
 
-      --callout-color: 2, 95, 200;
       background-color: rgba(158, 158, 158, 0.1);
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 4px;
-      border-color: rgba(158, 158, 158, 0.25);
-      border-left: 3px solid rgb(158, 158, 158);
-      border-radius: 4px;
-      border-style: solid;
-      border-top-left-radius: 0;
-      border-top-right-radius: 4px;
-      border-width: 0px;
-      box-shadow:
-        rgba(0, 0, 0, 0.16) 0 3px 6px,
-        rgba(0, 0, 0, 0.23) 0 3px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1127,24 +787,7 @@ html {
     &[data-callout="failure"] {
       --callout-color: 207, 30, 51;
 
-      --callout-color: 2, 95, 200;
       background-color: rgba(158, 158, 158, 0.1);
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 4px;
-      border-color: rgba(158, 158, 158, 0.25);
-      border-left: 3px solid rgb(158, 158, 158);
-      border-radius: 4px;
-      border-style: solid;
-      border-top-left-radius: 0;
-      border-top-right-radius: 4px;
-      border-width: 0px;
-      box-shadow:
-        rgba(0, 0, 0, 0.16) 0 3px 6px,
-        rgba(0, 0, 0, 0.23) 0 3px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1153,24 +796,7 @@ html {
     &[data-callout="fail"] {
       --callout-color: 207, 30, 51;
 
-      --callout-color: 2, 95, 200;
       background-color: rgba(158, 158, 158, 0.1);
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 4px;
-      border-color: rgba(158, 158, 158, 0.25);
-      border-left: 3px solid rgb(158, 158, 158);
-      border-radius: 4px;
-      border-style: solid;
-      border-top-left-radius: 0;
-      border-top-right-radius: 4px;
-      border-width: 0px;
-      box-shadow:
-        rgba(0, 0, 0, 0.16) 0 3px 6px,
-        rgba(0, 0, 0, 0.23) 0 3px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1179,24 +805,7 @@ html {
     &[data-callout="missing"] {
       --callout-color: 207, 30, 51;
 
-      --callout-color: 2, 95, 200;
       background-color: rgba(158, 158, 158, 0.1);
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 4px;
-      border-color: rgba(158, 158, 158, 0.25);
-      border-left: 3px solid rgb(158, 158, 158);
-      border-radius: 4px;
-      border-style: solid;
-      border-top-left-radius: 0;
-      border-top-right-radius: 4px;
-      border-width: 0px;
-      box-shadow:
-        rgba(0, 0, 0, 0.16) 0 3px 6px,
-        rgba(0, 0, 0, 0.23) 0 3px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1205,24 +814,7 @@ html {
     &[data-callout="danger"] {
       --callout-color: 207, 30, 51;
 
-      --callout-color: 2, 95, 200;
       background-color: rgba(158, 158, 158, 0.1);
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 4px;
-      border-color: rgba(158, 158, 158, 0.25);
-      border-left: 3px solid rgb(158, 158, 158);
-      border-radius: 4px;
-      border-style: solid;
-      border-top-left-radius: 0;
-      border-top-right-radius: 4px;
-      border-width: 0px;
-      box-shadow:
-        rgba(0, 0, 0, 0.16) 0 3px 6px,
-        rgba(0, 0, 0, 0.23) 0 3px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1231,24 +823,7 @@ html {
     &[data-callout="error"] {
       --callout-color: 207, 30, 51;
 
-      --callout-color: 2, 95, 200;
       background-color: rgba(158, 158, 158, 0.1);
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 4px;
-      border-color: rgba(158, 158, 158, 0.25);
-      border-left: 3px solid rgb(158, 158, 158);
-      border-radius: 4px;
-      border-style: solid;
-      border-top-left-radius: 0;
-      border-top-right-radius: 4px;
-      border-width: 0px;
-      box-shadow:
-        rgba(0, 0, 0, 0.16) 0 3px 6px,
-        rgba(0, 0, 0, 0.23) 0 3px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1257,24 +832,7 @@ html {
     &[data-callout="bug"] {
       --callout-color: 207, 30, 51;
 
-      --callout-color: 2, 95, 200;
       background-color: rgba(158, 158, 158, 0.1);
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 4px;
-      border-color: rgba(158, 158, 158, 0.25);
-      border-left: 3px solid rgb(158, 158, 158);
-      border-radius: 4px;
-      border-style: solid;
-      border-top-left-radius: 0;
-      border-top-right-radius: 4px;
-      border-width: 0px;
-      box-shadow:
-        rgba(0, 0, 0, 0.16) 0 3px 6px,
-        rgba(0, 0, 0, 0.23) 0 3px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1283,24 +841,7 @@ html {
     &[data-callout="example"] {
       --callout-color: 95, 56, 214;
 
-      --callout-color: 2, 95, 200;
       background-color: rgba(158, 158, 158, 0.1);
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 4px;
-      border-color: rgba(158, 158, 158, 0.25);
-      border-left: 3px solid rgb(158, 158, 158);
-      border-radius: 4px;
-      border-style: solid;
-      border-top-left-radius: 0;
-      border-top-right-radius: 4px;
-      border-width: 0px;
-      box-shadow:
-        rgba(0, 0, 0, 0.16) 0 3px 6px,
-        rgba(0, 0, 0, 0.23) 0 3px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1309,24 +850,7 @@ html {
     &[data-callout="quote"] {
       --callout-color: 158, 158, 158;
 
-      --callout-color: 2, 95, 200;
       background-color: rgba(158, 158, 158, 0.1);
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 4px;
-      border-color: rgba(158, 158, 158, 0.25);
-      border-left: 3px solid rgb(158, 158, 158);
-      border-radius: 4px;
-      border-style: solid;
-      border-top-left-radius: 0;
-      border-top-right-radius: 4px;
-      border-width: 0px;
-      box-shadow:
-        rgba(0, 0, 0, 0.16) 0 3px 6px,
-        rgba(0, 0, 0, 0.23) 0 3px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1335,24 +859,7 @@ html {
     &[data-callout="cite"] {
       --callout-color: 158, 158, 158;
 
-      --callout-color: 2, 95, 200;
       background-color: rgba(158, 158, 158, 0.1);
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 4px;
-      border-color: rgba(158, 158, 158, 0.25);
-      border-left: 3px solid rgb(158, 158, 158);
-      border-radius: 4px;
-      border-style: solid;
-      border-top-left-radius: 0;
-      border-top-right-radius: 4px;
-      border-width: 0px;
-      box-shadow:
-        rgba(0, 0, 0, 0.16) 0 3px 6px,
-        rgba(0, 0, 0, 0.23) 0 3px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1867,13 +1374,6 @@ body {
   /* METADATA */
   .content-meta {
     color: var(--color-scheme-custom-background-primary, #e1c4a6);
-    cursor: text;
-    flex-grow: 1;
-    font-size: calc(16px * 0.937);
-    max-height: 300px;
-    padding: 4px 8px;
-    unicode-bidi: plaintext;
-    white-space: pre-wrap;
 
     color: var(--text-normal);
   }
@@ -1881,7 +1381,6 @@ body {
   /* BREADCRUMBS */
   .breadcrumbs-element p {
     color: #ff4059;
-    padding: 2px 1px;
   }
 
   /* BACKLINKS */
@@ -1902,7 +1401,6 @@ body {
 
     ul li {
       color: var(--color-scheme-custom-background-primary, #e1c4a6);
-      padding-inline-start: 8px;
 
       font-weight: 500;
     }
@@ -1920,17 +1418,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      --font-weight: 600;
       color: inherit;
-      font-family: inherit;
-      font-size: 1.602em;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 600;
-      letter-spacing: -0.015em;
-      line-height: 1.2;
-      margin-block-end: 0rem;
-      margin-block-start: 0rem;
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1948,15 +1436,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        align-items: center;
         color: var(--color-scheme-custom-color-accent, #800000);
-        display: flex;
-        flex: 0 0 auto;
-        justify-content: center;
-        margin-inline-start: calc(-1 * 20px);
-        opacity: 1;
-        position: absolute;
-        width: 16px;
 
         text-overflow: ellipsis;
         position: relative;
@@ -2077,17 +1557,7 @@ body {
 
   /* TOC */
   .toc {
-    --font-weight: 600;
     color: inherit;
-    font-family: inherit;
-    font-size: 1.424em;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 600;
-    letter-spacing: -0.015em;
-    line-height: 1.3;
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
 
     button.toc-header {
       h3 {
@@ -2106,17 +1576,7 @@ body {
         margin-block: 0;
       }
 
-      --font-weight: 600;
       color: inherit;
-      font-family: inherit;
-      font-size: 1.424em;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 600;
-      letter-spacing: -0.015em;
-      line-height: 1.3;
-      margin-block-end: 0rem;
-      margin-block-start: 0rem;
 
       color: inherit;
     }
@@ -2227,105 +1687,23 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        animation: scale-up-downwards 150mscubic-bezier(0.175, 0.9, 0.3, 1.1);
         background-color: var(
           --color-scheme-custom-background-primary,
           #e1c4a6
         );
-        border: 0.5pt solid
-          var(
-            --color-base-40,
-            var(--color-scheme-custom-background-modifier-border-focus, #b4916a)
-          );
-        border-radius: 4px;
-        box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-          0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
 
-        animation: scale-up-downwards 150mscubic-bezier(0.175, 0.9, 0.3, 1.1);
-        background-color: var(
-          --color-scheme-custom-background-primary,
-          #e1c4a6
-        );
         border: 0.5pt solid
           var(
             --color-base-40,
             var(--color-scheme-custom-background-modifier-border-focus, #b4916a)
           );
-        border-radius: 4px;
-        box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-          0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
 
-        animation: scale-up-downwards 150mscubic-bezier(0.175, 0.9, 0.3, 1.1);
-        background-color: var(
-          --color-scheme-custom-background-primary,
-          #e1c4a6
-        );
-        border: 0.5pt solid
-          var(
-            --color-base-40,
-            var(--color-scheme-custom-background-modifier-border-focus, #b4916a)
-          );
         border-radius: 4px;
-        box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-          0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
 
-        animation: scale-up-downwards 150mscubic-bezier(0.175, 0.9, 0.3, 1.1);
-        background-color: var(
-          --color-scheme-custom-background-primary,
-          #e1c4a6
-        );
-        border: 0.5pt solid
-          var(
-            --color-base-40,
-            var(--color-scheme-custom-background-modifier-border-focus, #b4916a)
-          );
-        border-radius: 4px;
         box-shadow:
           0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
           0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
           0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
 
         color: var(--text-normal);
         background-color: var(--background-secondary);
@@ -2352,149 +1730,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          --background-modifier-border: var(
-            --color-scheme-custom-background-modifier-border,
-            #c6a57f
-          );
-          --background-modifier-border-focus: var(
-            --color-scheme-custom-background-modifier-border-focus,
-            #b4916a
-          );
-          --background-modifier-border-hover: var(
-            --color-scheme-custom-background-modifier-border-hover,
-            #a8865f
-          );
-          --background-modifier-hover: rgba(255, 255, 255, 0.067);
-          --background-primary: var(
-            --color-scheme-custom-background-primary,
-            #e1c4a6
-          );
-          --background-primary-alt: var(
-            --color-scheme-custom-background-primary-alt,
-            #daba97
-          );
-          --background-secondary: var(
-            --color-scheme-custom-background-secondary,
-            #dabb9a
-          );
-          --bold-color: inherit;
-          --bold-weight: calc(600 + 200);
-          --checkbox-border-color: #ff4059;
-          --checkbox-border-color-hover: #ff3c5d;
-          --checkbox-color: var(--color-scheme-custom-color-accent, #800000);
-          --checkbox-color-hover: var(
-            --color-scheme-custom-color-accent,
-            #800000
-          );
-          --checkbox-marker-color: var(
-            --color-scheme-custom-background-primary,
-            #e1c4a6
-          );
-          --checkbox-radius: 4px;
-          --checkbox-size: 16px;
-          --code-background: var(
-            --color-scheme-custom-background-primary-alt,
-            #daba97
-          );
-          --code-comment: #ff4059;
-          --code-function: #977400;
-          --code-important: #c16d18;
-          --code-keyword: #bf206d;
-          --code-normal: var(--color-scheme-custom-background-primary, #e1c4a6);
-          --code-property: #009e9b;
-          --code-punctuation: #ff3c5d;
-          --code-string: #01903b;
-          --code-tag: #cf1e33;
-          --code-value: #5f38d6;
-          --collapse-icon-color: #ff4059;
-          --collapse-icon-color-collapsed: var(
-            --color-scheme-custom-color-accent,
-            #800000
-          );
-          --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
-          --cursor-link: pointer;
-          --font-default: "CMU Typewriter Text";
-          --font-monospace: "??", "??", "JetBrains Mono";
-          --font-text: "??", "??", "CMU Typewriter Text";
-          --font-weight: 400;
-          --graph-line: var(
-            --color-base-35,
-            var(--color-scheme-custom-background-modifier-border-focus, #b4916a)
-          );
-          --graph-node-tag: #01903b;
-          --graph-node-unresolved: #ff4059;
-          --h1-color: inherit;
-          --h1-font: inherit;
-          --h3-line-height: 1.3;
-          --hr-color: transparent;
-          --hr-thickness: 2px;
-          --icon-color: #ff3c5d;
-          --inline-title-color: inherit;
-          --inline-title-font: inherit;
-          --interactive-accent-hsl: 258, 88%, 66%;
-          --italic-color: inherit;
-          --link-color: var(--color-scheme-custom-color-accent, #800000);
-          --link-color-hover: var(
-            --color-scheme-custom-color-accent-hover,
-            #a00000
-          );
-          --link-external-color: var(
-            --color-scheme-custom-color-accent,
-            #800000
-          );
-          --link-external-color-hover: var(
-            --color-scheme-custom-color-accent-hover,
-            #a00000
-          );
-          --link-external-filter: none;
-          --link-weight: var(--link-weight);
-          --nav-item-background-hover: #e6cfbd;
-          --nav-item-children-margin-start: 12px;
-          --nav-item-children-padding-start: 4px;
-          --p-spacing: 1rem;
-          --search-icon-color: #ff3c5d;
-          --tag-background: hsla(258, 88%, 66%, 0.1);
-          --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-          --tag-border-color: hsla(258, 88%, 66%, 0.15);
-          --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
-          --tag-border-width: 0px;
-          --tag-color: var(--color-scheme-custom-color-accent, #800000);
-          --tag-color-hover: var(--color-scheme-custom-color-accent, #800000);
-          --tag-decoration: none;
-          --tag-decoration-hover: none;
-          --tag-radius: 4px;
-          --tag-weight: inherit;
-          --text-accent: var(--color-scheme-custom-color-accent, #800000);
-          --text-accent-hover: var(
-            --color-scheme-custom-color-accent-hover,
-            #a00000
-          );
-          --text-faint: var(--color-scheme-custom-text-faint, #7a6d68);
-          --text-highlight-bg: light-dark(#eac357, #926b22e6);
-          --text-muted: var(--color-scheme-custom-text-muted, #5b4f4a);
-          --text-normal: var(--color-scheme-custom-text-normal, #5f4f49);
-          -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-          -webkit-user-select: none;
-          background-color: var(
-            --color-scheme-custom-background-primary,
-            #e1c4a6
-          );
-          caret-color: var(--color-scheme-custom-color-accent, #800000);
           color: var(--color-scheme-custom-background-primary, #e1c4a6);
-          contain: initial;
-          font-family:
-            "??", "??", var(--default-font, "??"), "CMU Typewriter Text";
-          font-size: 16px;
-          height: 100%;
-          line-height: 1.3;
-          margin: 0;
-          overflow: auto;
-          overscroll-behavior: none;
-          padding: 0;
-          padding-top: 0;
-          text-rendering: optimizeLegibility;
-          user-select: none;
-          width: 100%;
 
           background: transparent;
           margin-bottom: 0;
@@ -2541,172 +1777,11 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                --background-modifier-border: var(
-                  --color-scheme-custom-background-modifier-border,
-                  #c6a57f
-                );
-                --background-modifier-border-focus: var(
-                  --color-scheme-custom-background-modifier-border-focus,
-                  #b4916a
-                );
-                --background-modifier-border-hover: var(
-                  --color-scheme-custom-background-modifier-border-hover,
-                  #a8865f
-                );
-                --background-modifier-hover: rgba(255, 255, 255, 0.067);
-                --background-primary: var(
-                  --color-scheme-custom-background-primary,
-                  #e1c4a6
-                );
-                --background-primary-alt: var(
-                  --color-scheme-custom-background-primary-alt,
-                  #daba97
-                );
-                --background-secondary: var(
-                  --color-scheme-custom-background-secondary,
-                  #dabb9a
-                );
-                --bold-color: inherit;
-                --bold-weight: calc(600 + 200);
-                --checkbox-border-color: #ff4059;
-                --checkbox-border-color-hover: #ff3c5d;
-                --checkbox-color: var(
-                  --color-scheme-custom-color-accent,
-                  #800000
-                );
-                --checkbox-color-hover: var(
-                  --color-scheme-custom-color-accent,
-                  #800000
-                );
-                --checkbox-marker-color: var(
-                  --color-scheme-custom-background-primary,
-                  #e1c4a6
-                );
-                --checkbox-radius: 4px;
-                --checkbox-size: 16px;
-                --code-background: var(
-                  --color-scheme-custom-background-primary-alt,
-                  #daba97
-                );
-                --code-comment: #ff4059;
-                --code-function: #977400;
-                --code-important: #c16d18;
-                --code-keyword: #bf206d;
-                --code-normal: var(
-                  --color-scheme-custom-background-primary,
-                  #e1c4a6
-                );
-                --code-property: #009e9b;
-                --code-punctuation: #ff3c5d;
-                --code-string: #01903b;
-                --code-tag: #cf1e33;
-                --code-value: #5f38d6;
-                --collapse-icon-color: #ff4059;
-                --collapse-icon-color-collapsed: var(
-                  --color-scheme-custom-color-accent,
-                  #800000
-                );
-                --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
-                --cursor-link: pointer;
-                --font-default: "CMU Typewriter Text";
-                --font-monospace: "??", "??", "JetBrains Mono";
-                --font-text: "??", "??", "CMU Typewriter Text";
-                --font-weight: 400;
-                --graph-line: var(
-                  --color-base-35,
-                  var(
-                    --color-scheme-custom-background-modifier-border-focus,
-                    #b4916a
-                  )
-                );
-                --graph-node-tag: #01903b;
-                --graph-node-unresolved: #ff4059;
-                --h1-color: inherit;
-                --h1-font: inherit;
-                --h3-line-height: 1.3;
-                --hr-color: transparent;
-                --hr-thickness: 2px;
-                --icon-color: #ff3c5d;
-                --inline-title-color: inherit;
-                --inline-title-font: inherit;
-                --interactive-accent-hsl: 258, 88%, 66%;
-                --italic-color: inherit;
-                --link-color: var(--color-scheme-custom-color-accent, #800000);
-                --link-color-hover: var(
-                  --color-scheme-custom-color-accent-hover,
-                  #a00000
-                );
-                --link-external-color: var(
-                  --color-scheme-custom-color-accent,
-                  #800000
-                );
-                --link-external-color-hover: var(
-                  --color-scheme-custom-color-accent-hover,
-                  #a00000
-                );
-                --link-external-filter: none;
-                --link-weight: var(--link-weight);
-                --nav-item-background-hover: #e6cfbd;
-                --nav-item-children-margin-start: 12px;
-                --nav-item-children-padding-start: 4px;
-                --p-spacing: 1rem;
-                --search-icon-color: #ff3c5d;
-                --tag-background: hsla(258, 88%, 66%, 0.1);
-                --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-                --tag-border-color: hsla(258, 88%, 66%, 0.15);
-                --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
-                --tag-border-width: 0px;
-                --tag-color: var(--color-scheme-custom-color-accent, #800000);
-                --tag-color-hover: var(
-                  --color-scheme-custom-color-accent,
-                  #800000
-                );
-                --tag-decoration: none;
-                --tag-decoration-hover: none;
-                --tag-radius: 4px;
-                --tag-weight: inherit;
-                --text-accent: var(--color-scheme-custom-color-accent, #800000);
-                --text-accent-hover: var(
-                  --color-scheme-custom-color-accent-hover,
-                  #a00000
-                );
-                --text-faint: var(--color-scheme-custom-text-faint, #7a6d68);
-                --text-highlight-bg: light-dark(#eac357, #926b22e6);
-                --text-muted: var(--color-scheme-custom-text-muted, #5b4f4a);
-                --text-normal: var(--color-scheme-custom-text-normal, #5f4f49);
-                -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-                -webkit-user-select: none;
-                background-color: var(
-                  --color-scheme-custom-background-primary,
-                  #e1c4a6
-                );
-                caret-color: var(--color-scheme-custom-color-accent, #800000);
+
                 color: var(--color-scheme-custom-background-primary, #e1c4a6);
-                contain: initial;
-                font-family:
-                  "??", "??", var(--default-font, "??"), "CMU Typewriter Text";
-                font-size: 16px;
-                height: 100%;
-                line-height: 1.3;
-                margin: 0;
-                overflow: auto;
-                overscroll-behavior: none;
-                padding: 0;
-                padding-top: 0;
-                text-rendering: optimizeLegibility;
-                user-select: none;
-                width: 100%;
 
                 &.match-tag {
-                  background-color: hsla(258, 88%, 66%, 0.2);
-                  border: 0px solid hsla(258, 88%, 66%, 0.15);
-                  border-radius: 4px;
                   color: var(--color-scheme-custom-color-accent, #800000);
-                  font-size: 0.875em;
-                  font-weight: inherit;
-                  line-height: 1;
-                  padding: 0.25em 0.65em;
-                  text-decoration: none;
                 }
               }
             }
@@ -2792,41 +1867,11 @@ body {
     border: unset;
     background-color: var(--background-primary);
     & .popover-inner {
-      background-color: var(--color-scheme-custom-background-primary, #e1c4a6);
       border: 1px solid transparent;
-      border-radius: 8px;
-      box-shadow:
-        0px 1px 2px rgba(0, 0, 0, 0.121),
-        0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-        0px 15px 30px rgba(0, 0, 0, 0.3);
-      display: flex;
-      max-height: 95vh;
-      position: absolute;
-      z-index: 30;
 
       background-color: var(--color-scheme-custom-background-primary, #e1c4a6);
-      border: 1px solid transparent;
-      border-radius: 8px;
-      box-shadow:
-        0px 1px 2px rgba(0, 0, 0, 0.121),
-        0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-        0px 15px 30px rgba(0, 0, 0, 0.3);
-      display: flex;
-      max-height: 95vh;
-      position: absolute;
-      z-index: 30;
 
-      background-color: var(--color-scheme-custom-background-primary, #e1c4a6);
-      border: 1px solid transparent;
       border-radius: 8px;
-      box-shadow:
-        0px 1px 2px rgba(0, 0, 0, 0.121),
-        0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-        0px 15px 30px rgba(0, 0, 0, 0.3);
-      display: flex;
-      max-height: 95vh;
-      position: absolute;
-      z-index: 30;
 
       background-color: var(--background-primary);
     }

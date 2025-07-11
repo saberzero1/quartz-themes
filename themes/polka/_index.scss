@@ -640,18 +640,7 @@ html {
     overflow: hidden;
     padding: 0.75em;
 
-    --callout-color: rgb(250, 247, 245);
-    background: transparent;
     background-color: rgba(rgb(250, 247, 245), 0.1);
-    border: 2px dashed rgb(250, 247, 245);
-    border-color: rgba(rgb(250, 247, 245), 0.25);
-    border-radius: calc(0.1px * 20);
-    border-style: solid;
-    border-width: 0px;
-    margin: 1em 0;
-    mix-blend-mode: normal;
-    overflow: hidden;
-    padding: 0.75em;
 
     background-color: var(--bg);
     border-color: var(--border);
@@ -661,30 +650,8 @@ html {
 
     &[data-callout] {
       --callout-color: rgb(250, 247, 245);
-      background: transparent;
-      background-color: rgba(rgb(250, 247, 245), 0.1);
-      border: 2px dashed rgb(250, 247, 245);
-      border-color: rgba(rgb(250, 247, 245), 0.25);
-      border-radius: calc(0.1px * 20);
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0.75em;
 
-      --callout-color: rgb(250, 247, 245);
-      background: transparent;
       background-color: rgba(rgb(250, 247, 245), 0.1);
-      border: 2px dashed rgb(250, 247, 245);
-      border-color: rgba(rgb(250, 247, 245), 0.25);
-      border-radius: calc(0.1px * 20);
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0.75em;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -693,18 +660,7 @@ html {
     &[data-callout="abstract"] {
       --callout-color: rgb(250, 247, 245);
 
-      --callout-color: rgb(250, 247, 245);
-      background: transparent;
       background-color: rgba(rgb(250, 247, 245), 0.1);
-      border: 2px dashed rgb(250, 247, 245);
-      border-color: rgba(rgb(250, 247, 245), 0.25);
-      border-radius: calc(0.1px * 20);
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0.75em;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -713,18 +669,7 @@ html {
     &[data-callout="summary"] {
       --callout-color: rgb(250, 247, 245);
 
-      --callout-color: rgb(250, 247, 245);
-      background: transparent;
       background-color: rgba(rgb(250, 247, 245), 0.1);
-      border: 2px dashed rgb(250, 247, 245);
-      border-color: rgba(rgb(250, 247, 245), 0.25);
-      border-radius: calc(0.1px * 20);
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0.75em;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -733,18 +678,7 @@ html {
     &[data-callout="tldr"] {
       --callout-color: rgb(250, 247, 245);
 
-      --callout-color: rgb(250, 247, 245);
-      background: transparent;
       background-color: rgba(rgb(250, 247, 245), 0.1);
-      border: 2px dashed rgb(250, 247, 245);
-      border-color: rgba(rgb(250, 247, 245), 0.25);
-      border-radius: calc(0.1px * 20);
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0.75em;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -753,18 +687,7 @@ html {
     &[data-callout="info"] {
       --callout-color: rgb(250, 247, 245);
 
-      --callout-color: rgb(250, 247, 245);
-      background: transparent;
       background-color: rgba(rgb(250, 247, 245), 0.1);
-      border: 2px dashed rgb(250, 247, 245);
-      border-color: rgba(rgb(250, 247, 245), 0.25);
-      border-radius: calc(0.1px * 20);
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0.75em;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -773,18 +696,7 @@ html {
     &[data-callout="todo"] {
       --callout-color: rgb(0, 130, 255);
 
-      --callout-color: rgb(250, 247, 245);
-      background: transparent;
       background-color: rgba(rgb(250, 247, 245), 0.1);
-      border: 2px dashed rgb(250, 247, 245);
-      border-color: rgba(rgb(250, 247, 245), 0.25);
-      border-radius: calc(0.1px * 20);
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0.75em;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -793,18 +705,7 @@ html {
     &[data-callout="important"] {
       --callout-color: hsl(189, 100%, 49%);
 
-      --callout-color: rgb(250, 247, 245);
-      background: transparent;
       background-color: rgba(rgb(250, 247, 245), 0.1);
-      border: 2px dashed rgb(250, 247, 245);
-      border-color: rgba(rgb(250, 247, 245), 0.25);
-      border-radius: calc(0.1px * 20);
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0.75em;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -813,18 +714,7 @@ html {
     &[data-callout="tip"] {
       --callout-color: rgb(255, 220, 120);
 
-      --callout-color: rgb(250, 247, 245);
-      background: transparent;
       background-color: rgba(rgb(250, 247, 245), 0.1);
-      border: 2px dashed rgb(250, 247, 245);
-      border-color: rgba(rgb(250, 247, 245), 0.25);
-      border-radius: calc(0.1px * 20);
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0.75em;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -833,18 +723,7 @@ html {
     &[data-callout="hint"] {
       --callout-color: rgb(255, 220, 120);
 
-      --callout-color: rgb(250, 247, 245);
-      background: transparent;
       background-color: rgba(rgb(250, 247, 245), 0.1);
-      border: 2px dashed rgb(250, 247, 245);
-      border-color: rgba(rgb(250, 247, 245), 0.25);
-      border-radius: calc(0.1px * 20);
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0.75em;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -853,18 +732,7 @@ html {
     &[data-callout="success"] {
       --callout-color: rgb(0, 190, 0);
 
-      --callout-color: rgb(250, 247, 245);
-      background: transparent;
       background-color: rgba(rgb(250, 247, 245), 0.1);
-      border: 2px dashed rgb(250, 247, 245);
-      border-color: rgba(rgb(250, 247, 245), 0.25);
-      border-radius: calc(0.1px * 20);
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0.75em;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -873,18 +741,7 @@ html {
     &[data-callout="check"] {
       --callout-color: rgb(0, 190, 0);
 
-      --callout-color: rgb(250, 247, 245);
-      background: transparent;
       background-color: rgba(rgb(250, 247, 245), 0.1);
-      border: 2px dashed rgb(250, 247, 245);
-      border-color: rgba(rgb(250, 247, 245), 0.25);
-      border-radius: calc(0.1px * 20);
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0.75em;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -893,18 +750,7 @@ html {
     &[data-callout="done"] {
       --callout-color: rgb(0, 190, 0);
 
-      --callout-color: rgb(250, 247, 245);
-      background: transparent;
       background-color: rgba(rgb(250, 247, 245), 0.1);
-      border: 2px dashed rgb(250, 247, 245);
-      border-color: rgba(rgb(250, 247, 245), 0.25);
-      border-radius: calc(0.1px * 20);
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0.75em;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -913,18 +759,7 @@ html {
     &[data-callout="question"] {
       --callout-color: rgb(250, 247, 245);
 
-      --callout-color: rgb(250, 247, 245);
-      background: transparent;
       background-color: rgba(rgb(250, 247, 245), 0.1);
-      border: 2px dashed rgb(250, 247, 245);
-      border-color: rgba(rgb(250, 247, 245), 0.25);
-      border-radius: calc(0.1px * 20);
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0.75em;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -933,18 +768,7 @@ html {
     &[data-callout="help"] {
       --callout-color: rgb(250, 247, 245);
 
-      --callout-color: rgb(250, 247, 245);
-      background: transparent;
       background-color: rgba(rgb(250, 247, 245), 0.1);
-      border: 2px dashed rgb(250, 247, 245);
-      border-color: rgba(rgb(250, 247, 245), 0.25);
-      border-radius: calc(0.1px * 20);
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0.75em;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -953,18 +777,7 @@ html {
     &[data-callout="faq"] {
       --callout-color: rgb(250, 247, 245);
 
-      --callout-color: rgb(250, 247, 245);
-      background: transparent;
       background-color: rgba(rgb(250, 247, 245), 0.1);
-      border: 2px dashed rgb(250, 247, 245);
-      border-color: rgba(rgb(250, 247, 245), 0.25);
-      border-radius: calc(0.1px * 20);
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0.75em;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -973,18 +786,7 @@ html {
     &[data-callout="warning"] {
       --callout-color: rgb(220, 210, 0);
 
-      --callout-color: rgb(250, 247, 245);
-      background: transparent;
       background-color: rgba(rgb(250, 247, 245), 0.1);
-      border: 2px dashed rgb(250, 247, 245);
-      border-color: rgba(rgb(250, 247, 245), 0.25);
-      border-radius: calc(0.1px * 20);
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0.75em;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -993,18 +795,7 @@ html {
     &[data-callout="caution"] {
       --callout-color: rgb(220, 210, 0);
 
-      --callout-color: rgb(250, 247, 245);
-      background: transparent;
       background-color: rgba(rgb(250, 247, 245), 0.1);
-      border: 2px dashed rgb(250, 247, 245);
-      border-color: rgba(rgb(250, 247, 245), 0.25);
-      border-radius: calc(0.1px * 20);
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0.75em;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1013,18 +804,7 @@ html {
     &[data-callout="attention"] {
       --callout-color: rgb(220, 210, 0);
 
-      --callout-color: rgb(250, 247, 245);
-      background: transparent;
       background-color: rgba(rgb(250, 247, 245), 0.1);
-      border: 2px dashed rgb(250, 247, 245);
-      border-color: rgba(rgb(250, 247, 245), 0.25);
-      border-radius: calc(0.1px * 20);
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0.75em;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1033,18 +813,7 @@ html {
     &[data-callout="failure"] {
       --callout-color: rgb(250, 30, 0);
 
-      --callout-color: rgb(250, 247, 245);
-      background: transparent;
       background-color: rgba(rgb(250, 247, 245), 0.1);
-      border: 2px dashed rgb(250, 247, 245);
-      border-color: rgba(rgb(250, 247, 245), 0.25);
-      border-radius: calc(0.1px * 20);
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0.75em;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1053,18 +822,7 @@ html {
     &[data-callout="fail"] {
       --callout-color: rgb(250, 30, 0);
 
-      --callout-color: rgb(250, 247, 245);
-      background: transparent;
       background-color: rgba(rgb(250, 247, 245), 0.1);
-      border: 2px dashed rgb(250, 247, 245);
-      border-color: rgba(rgb(250, 247, 245), 0.25);
-      border-radius: calc(0.1px * 20);
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0.75em;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1073,18 +831,7 @@ html {
     &[data-callout="missing"] {
       --callout-color: rgb(250, 30, 0);
 
-      --callout-color: rgb(250, 247, 245);
-      background: transparent;
       background-color: rgba(rgb(250, 247, 245), 0.1);
-      border: 2px dashed rgb(250, 247, 245);
-      border-color: rgba(rgb(250, 247, 245), 0.25);
-      border-radius: calc(0.1px * 20);
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0.75em;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1093,18 +840,7 @@ html {
     &[data-callout="danger"] {
       --callout-color: rgb(250, 30, 0);
 
-      --callout-color: rgb(250, 247, 245);
-      background: transparent;
       background-color: rgba(rgb(250, 247, 245), 0.1);
-      border: 2px dashed rgb(250, 247, 245);
-      border-color: rgba(rgb(250, 247, 245), 0.25);
-      border-radius: calc(0.1px * 20);
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0.75em;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1113,18 +849,7 @@ html {
     &[data-callout="error"] {
       --callout-color: rgb(250, 30, 0);
 
-      --callout-color: rgb(250, 247, 245);
-      background: transparent;
       background-color: rgba(rgb(250, 247, 245), 0.1);
-      border: 2px dashed rgb(250, 247, 245);
-      border-color: rgba(rgb(250, 247, 245), 0.25);
-      border-radius: calc(0.1px * 20);
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0.75em;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1133,18 +858,7 @@ html {
     &[data-callout="bug"] {
       --callout-color: rgb(245, 0, 170);
 
-      --callout-color: rgb(250, 247, 245);
-      background: transparent;
       background-color: rgba(rgb(250, 247, 245), 0.1);
-      border: 2px dashed rgb(250, 247, 245);
-      border-color: rgba(rgb(250, 247, 245), 0.25);
-      border-radius: calc(0.1px * 20);
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0.75em;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1153,18 +867,7 @@ html {
     &[data-callout="example"] {
       --callout-color: rgb(250, 247, 245);
 
-      --callout-color: rgb(250, 247, 245);
-      background: transparent;
       background-color: rgba(rgb(250, 247, 245), 0.1);
-      border: 2px dashed rgb(250, 247, 245);
-      border-color: rgba(rgb(250, 247, 245), 0.25);
-      border-radius: calc(0.1px * 20);
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0.75em;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1173,18 +876,7 @@ html {
     &[data-callout="quote"] {
       --callout-color: rgb(250, 247, 245);
 
-      --callout-color: rgb(250, 247, 245);
-      background: transparent;
       background-color: rgba(rgb(250, 247, 245), 0.1);
-      border: 2px dashed rgb(250, 247, 245);
-      border-color: rgba(rgb(250, 247, 245), 0.25);
-      border-radius: calc(0.1px * 20);
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0.75em;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1193,18 +885,7 @@ html {
     &[data-callout="cite"] {
       --callout-color: rgb(250, 247, 245);
 
-      --callout-color: rgb(250, 247, 245);
-      background: transparent;
       background-color: rgba(rgb(250, 247, 245), 0.1);
-      border: 2px dashed rgb(250, 247, 245);
-      border-color: rgba(rgb(250, 247, 245), 0.25);
-      border-radius: calc(0.1px * 20);
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0.75em;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1737,13 +1418,6 @@ body {
   /* METADATA */
   .content-meta {
     color: rgb(250, 247, 245);
-    cursor: text;
-    flex-grow: 1;
-    font-size: calc(16px * 0.937);
-    max-height: 300px;
-    padding: 4px 8px;
-    unicode-bidi: plaintext;
-    white-space: pre-wrap;
 
     color: var(--text-normal);
   }
@@ -1751,7 +1425,6 @@ body {
   /* BREADCRUMBS */
   .breadcrumbs-element p {
     color: rgb(250, 247, 245);
-    padding: 2px 1px;
   }
 
   /* BACKLINKS */
@@ -1772,7 +1445,6 @@ body {
 
     ul li {
       color: rgb(250, 247, 245);
-      padding-inline-start: 8px;
 
       font-weight: 500;
     }
@@ -1790,17 +1462,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      --font-weight: 600;
       color: rgb(250, 247, 245);
-      font-family: inherit;
-      font-size: 1.375em;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 600;
-      letter-spacing: -0.015em;
-      line-height: 1.2;
-      margin-block-end: 0rem;
-      margin-block-start: 0rem;
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1815,15 +1477,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        align-items: center;
         color: hsl(189, 100%, 49%);
-        display: flex;
-        flex: 0 0 auto;
-        justify-content: center;
-        margin-inline-start: calc(-1 * 20px);
-        opacity: 1;
-        position: absolute;
-        width: 16px;
 
         text-overflow: ellipsis;
         position: relative;
@@ -1944,17 +1598,7 @@ body {
 
   /* TOC */
   .toc {
-    --font-weight: 600;
     color: rgb(250, 247, 245);
-    font-family: inherit;
-    font-size: 1.25em;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 600;
-    letter-spacing: -0.015em;
-    line-height: 1.3;
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
 
     button.toc-header {
       h3 {
@@ -1973,17 +1617,7 @@ body {
         margin-block: 0;
       }
 
-      --font-weight: 600;
       color: rgb(250, 247, 245);
-      font-family: inherit;
-      font-size: 1.25em;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 600;
-      letter-spacing: -0.015em;
-      line-height: 1.3;
-      margin-block-end: 0rem;
-      margin-block-start: 0rem;
 
       color: inherit;
     }
@@ -2092,72 +1726,15 @@ body {
     & > .search-container {
       & > .search-space {
         background-color: hsl(221, calc(3.33% * 10), calc(2.58% * 5));
-        border: 0.5pt solid hsla(221, calc(calc(3.33% * 10) * 0.5), 85%, 0.1);
-        border-radius: calc(calc(0.1px * 20) * 3);
-        box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-          0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
 
-        background-color: hsl(221, calc(3.33% * 10), calc(2.58% * 5));
         border: 0.5pt solid hsla(221, calc(calc(3.33% * 10) * 0.5), 85%, 0.1);
-        border-radius: calc(calc(0.1px * 20) * 3);
-        box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-          0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
 
-        background-color: hsl(221, calc(3.33% * 10), calc(2.58% * 5));
-        border: 0.5pt solid hsla(221, calc(calc(3.33% * 10) * 0.5), 85%, 0.1);
         border-radius: calc(calc(0.1px * 20) * 3);
-        box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-          0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
 
-        background-color: hsl(221, calc(3.33% * 10), calc(2.58% * 5));
-        border: 0.5pt solid hsla(221, calc(calc(3.33% * 10) * 0.5), 85%, 0.1);
-        border-radius: calc(calc(0.1px * 20) * 3);
         box-shadow:
           0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
           0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
           0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
 
         color: var(--text-normal);
         background-color: var(--background-secondary);
@@ -2180,189 +1757,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          --background-modifier-border: light-dark(
-            hsla(221, calc(calc(3.33% * 10) * 0.5), 85%, 0.1),
-            hsla(221, calc(calc(3.33% * 10) * 0.5), 85%, 0.1)
-          );
-          --background-modifier-border-focus: light-dark(
-            hsla(221, calc(calc(3.33% * 10) * 0.5), 85%, 0.1),
-            hsl(221, calc(3.33% * 10), calc(calc(2.58% * 5) - 4%))
-          );
-          --background-modifier-border-hover: light-dark(
-            hsla(221, calc(calc(3.33% * 10) * 0.5), 85%, 0.1),
-            hsla(221, calc(calc(3.33% * 10) * 0.5), 85%, 0.1)
-          );
-          --background-modifier-hover: light-dark(
-            hsla(221, calc(calc(3.33% * 10) * 0.5), 85%, 0.05),
-            hsla(221, calc(calc(3.33% * 10) * 0.5), 85%, 0.05)
-          );
-          --background-primary: light-dark(
-            hsl(221, calc(3.33% * 10), calc(2.58% * 5)),
-            hsl(221, calc(3.33% * 10), calc(2.58% * 5))
-          );
-          --background-primary-alt: light-dark(
-            hsl(221, calc(3.33% * 10), calc(2.58% * 5)),
-            rgb(10, 18, 30)
-          );
-          --background-secondary: light-dark(
-            hsl(
-              221,
-              calc(calc(3.33% * 10) * 0.875),
-              calc(calc(2.58% * 5) + 2% + calc(0.73% * 4.8))
-            ),
-            hsl(
-              221,
-              calc(calc(3.33% * 10) * 0.875),
-              calc(calc(2.58% * 5) + 2% + calc(0.73% * 4.8))
-            )
-          );
-          --bold-color: inherit;
-          --bold-weight: calc(600 + 200);
-          --checkbox-border-color: rgb(250, 247, 245);
-          --checkbox-border-color-hover: rgb(250, 247, 245);
-          --checkbox-color: hsl(189, 100%, 49%);
-          --checkbox-color-hover: hsl(189, 100%, 49%);
-          --checkbox-marker-color: hsl(221, calc(3.33% * 10), calc(2.58% * 5));
-          --checkbox-radius: calc(0.1px * 20);
-          --checkbox-size: 16px;
-          --code-background: rgb(10, 18, 30);
-          --code-comment: rgb(250, 247, 245);
-          --code-function: #b58900;
-          --code-important: #cb4b16;
-          --code-keyword: #d33682;
-          --code-normal: hsl(0, 0%, 89%);
-          --code-property: #2aa198;
-          --code-punctuation: #839496;
-          --code-string: #859900;
-          --code-tag: #dc322f;
-          --code-value: #6c71c4;
-          --collapse-icon-color: hsl(189, 100%, 49%);
-          --collapse-icon-color-collapsed: hsl(189, 100%, 49%);
-          --color-accent-2: light-dark(
-            hsl(calc(189 - 3), calc(100% * 1.02), calc(49% * 1.15)),
-            hsl(calc(189 - 5), calc(100% * 1.05), calc(49% * 1.29))
-          );
-          --color-accent-hsl: light-dark(189, 100%, 49%, 189, 100%, 49%);
-          --color-base-00: light-dark(#ffffff, #1e1e1e);
-          --color-base-10: light-dark(#fafafa, #242424);
-          --color-base-100: light-dark(#222222, #dadada);
-          --color-base-20: light-dark(#f6f6f6, #262626);
-          --color-base-30: light-dark(#e0e0e0, #363636);
-          --color-base-35: light-dark(#d4d4d4, #3f3f3f);
-          --color-base-40: light-dark(#bdbdbd, #555555);
-          --color-base-50: light-dark(#ababab, #666666);
-          --color-base-70: light-dark(#5c5c5c, #b3b3b3);
-          --color-blue: light-dark(#086ddd, #027aff);
-          --color-cyan: light-dark(#00bfbc, #53dfdd);
-          --color-green: light-dark(#08b94e, #44cf6e);
-          --color-orange: light-dark(#ec7500, #e9973f);
-          --color-pink: light-dark(#d53984, #fa99cd);
-          --color-purple: light-dark(#7852ee, #a882ff);
-          --color-red: light-dark(#e93147, #fb464c);
-          --color-yellow: light-dark(#e0ac00, #e0de71);
-          --cursor-link: pointer;
-          --font-default:
-            "Franklin Gothic Book", "Rubik", "Helvetica Neue", ui-sans-serif,
-            -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-          --font-monospace:
-            "??", "??", "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono",
-            Menlo, SFMono-Regular, Consolas, "Source Code Pro", monospace;
-          --font-text:
-            "??", "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue",
-            ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
-            sans-serif;
-          --font-weight: 400;
-          --graph-line: var(
-            --color-base-35,
-            hsl(221, calc(3.33% * 10), calc(calc(2.58% * 5) - 4%))
-          );
-          --graph-node-tag: #859900;
-          --graph-node-unresolved: rgb(250, 247, 245);
-          --h1-color: rgb(250, 247, 245);
-          --h1-font: inherit;
-          --h3-line-height: 1.3;
-          --hr-color: transparent;
-          --hr-thickness: 1px;
-          --icon-color: rgb(250, 247, 245);
-          --inline-title-color: rgb(250, 247, 245);
-          --inline-title-font: inherit;
-          --interactive-accent-hsl: 189, 100%, 49%;
-          --italic-color: inherit;
-          --link-color: hsl(189, 100%, 49%);
-          --link-color-hover: rgb(250, 247, 245);
-          --link-external-color: hsl(189, 100%, 49%);
-          --link-external-color-hover: rgb(250, 247, 245);
-          --link-external-filter: none;
-          --link-weight: var(--link-weight);
-          --nav-item-background-hover: hsla(
-            221,
-            calc(calc(3.33% * 10) * 0.5),
-            85%,
-            0.05
-          );
-          --nav-item-children-margin-start: 12px;
-          --nav-item-children-padding-start: 4px;
-          --p-spacing: 1rem;
-          --search-icon-color: rgb(250, 247, 245);
-          --tag-background: light-dark(
-            hsla(189, 100%, 49%, 0.1),
-            hsla(189, 100%, 49%, 0.1)
-          );
-          --tag-background-hover: light-dark(
-            hsla(189, 100%, 49%, 0.2),
-            hsla(189, 100%, 49%, 0.2)
-          );
-          --tag-border-color: hsla(189, 100%, 49%, 0.15);
-          --tag-border-color-hover: hsla(189, 100%, 49%, 0.15);
-          --tag-border-width: 0px;
-          --tag-color: hsl(189, 100%, 49%);
-          --tag-color-hover: hsl(189, 100%, 49%);
-          --tag-decoration: none;
-          --tag-decoration-hover: none;
-          --tag-radius: calc(calc(0.1px * 20) * 2);
-          --tag-weight: inherit;
-          --text-accent: hsl(189, 100%, 49%);
-          --text-accent-hover: light-dark(#000, rgb(250, 247, 245));
-          --text-faint: light-dark(rgb(250, 247, 245), rgb(250, 247, 245));
-          --text-highlight-bg: light-dark(rgb(250, 231, 75), rgb(220, 193, 45));
-          --text-muted: light-dark(rgb(250, 247, 245), rgb(250, 247, 245));
-          --text-normal: light-dark(rgb(0, 0, 0), rgb(250, 247, 245));
-          -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-          -webkit-user-select: none;
-          background-color: hsl(221, calc(3.33% * 10), calc(2.58% * 5));
-          caret-color: hsl(189, 100%, 49%);
           color: rgb(250, 247, 245);
-          contain: initial;
-          font-family:
-            "??",
-            "Franklin Gothic Book",
-            "Rubik",
-            "Helvetica Neue",
-            ui-sans-serif,
-            -apple-system,
-            BlinkMacSystemFont,
-            "Segoe UI",
-            sans-serif,
-            var(--default-font, "??"),
-            "Franklin Gothic Book",
-            "Rubik",
-            "Helvetica Neue",
-            ui-sans-serif,
-            -apple-system,
-            BlinkMacSystemFont,
-            "Segoe UI",
-            sans-serif;
-          font-size: 16px;
-          height: 100%;
-          line-height: 1.3;
-          margin: 0;
-          overflow: auto;
-          overscroll-behavior: none;
-          padding: 0;
-          padding-top: 0;
-          text-rendering: optimizeLegibility;
-          user-select: none;
-          width: 100%;
 
           background: transparent;
           margin-bottom: 0;
@@ -2411,215 +1806,11 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                --background-modifier-border: light-dark(
-                  hsla(221, calc(calc(3.33% * 10) * 0.5), 85%, 0.1),
-                  hsla(221, calc(calc(3.33% * 10) * 0.5), 85%, 0.1)
-                );
-                --background-modifier-border-focus: light-dark(
-                  hsla(221, calc(calc(3.33% * 10) * 0.5), 85%, 0.1),
-                  hsl(221, calc(3.33% * 10), calc(calc(2.58% * 5) - 4%))
-                );
-                --background-modifier-border-hover: light-dark(
-                  hsla(221, calc(calc(3.33% * 10) * 0.5), 85%, 0.1),
-                  hsla(221, calc(calc(3.33% * 10) * 0.5), 85%, 0.1)
-                );
-                --background-modifier-hover: light-dark(
-                  hsla(221, calc(calc(3.33% * 10) * 0.5), 85%, 0.05),
-                  hsla(221, calc(calc(3.33% * 10) * 0.5), 85%, 0.05)
-                );
-                --background-primary: light-dark(
-                  hsl(221, calc(3.33% * 10), calc(2.58% * 5)),
-                  hsl(221, calc(3.33% * 10), calc(2.58% * 5))
-                );
-                --background-primary-alt: light-dark(
-                  hsl(221, calc(3.33% * 10), calc(2.58% * 5)),
-                  rgb(10, 18, 30)
-                );
-                --background-secondary: light-dark(
-                  hsl(
-                    221,
-                    calc(calc(3.33% * 10) * 0.875),
-                    calc(calc(2.58% * 5) + 2% + calc(0.73% * 4.8))
-                  ),
-                  hsl(
-                    221,
-                    calc(calc(3.33% * 10) * 0.875),
-                    calc(calc(2.58% * 5) + 2% + calc(0.73% * 4.8))
-                  )
-                );
-                --bold-color: inherit;
-                --bold-weight: calc(600 + 200);
-                --checkbox-border-color: rgb(250, 247, 245);
-                --checkbox-border-color-hover: rgb(250, 247, 245);
-                --checkbox-color: hsl(189, 100%, 49%);
-                --checkbox-color-hover: hsl(189, 100%, 49%);
-                --checkbox-marker-color: hsl(
-                  221,
-                  calc(3.33% * 10),
-                  calc(2.58% * 5)
-                );
-                --checkbox-radius: calc(0.1px * 20);
-                --checkbox-size: 16px;
-                --code-background: rgb(10, 18, 30);
-                --code-comment: rgb(250, 247, 245);
-                --code-function: #b58900;
-                --code-important: #cb4b16;
-                --code-keyword: #d33682;
-                --code-normal: hsl(0, 0%, 89%);
-                --code-property: #2aa198;
-                --code-punctuation: #839496;
-                --code-string: #859900;
-                --code-tag: #dc322f;
-                --code-value: #6c71c4;
-                --collapse-icon-color: hsl(189, 100%, 49%);
-                --collapse-icon-color-collapsed: hsl(189, 100%, 49%);
-                --color-accent-2: light-dark(
-                  hsl(calc(189 - 3), calc(100% * 1.02), calc(49% * 1.15)),
-                  hsl(calc(189 - 5), calc(100% * 1.05), calc(49% * 1.29))
-                );
-                --color-accent-hsl: light-dark(189, 100%, 49%, 189, 100%, 49%);
-                --color-base-00: light-dark(#ffffff, #1e1e1e);
-                --color-base-10: light-dark(#fafafa, #242424);
-                --color-base-100: light-dark(#222222, #dadada);
-                --color-base-20: light-dark(#f6f6f6, #262626);
-                --color-base-30: light-dark(#e0e0e0, #363636);
-                --color-base-35: light-dark(#d4d4d4, #3f3f3f);
-                --color-base-40: light-dark(#bdbdbd, #555555);
-                --color-base-50: light-dark(#ababab, #666666);
-                --color-base-70: light-dark(#5c5c5c, #b3b3b3);
-                --color-blue: light-dark(#086ddd, #027aff);
-                --color-cyan: light-dark(#00bfbc, #53dfdd);
-                --color-green: light-dark(#08b94e, #44cf6e);
-                --color-orange: light-dark(#ec7500, #e9973f);
-                --color-pink: light-dark(#d53984, #fa99cd);
-                --color-purple: light-dark(#7852ee, #a882ff);
-                --color-red: light-dark(#e93147, #fb464c);
-                --color-yellow: light-dark(#e0ac00, #e0de71);
-                --cursor-link: pointer;
-                --font-default:
-                  "Franklin Gothic Book", "Rubik", "Helvetica Neue",
-                  ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
-                  sans-serif;
-                --font-monospace:
-                  "??", "??", "iA Writer Mono S", "IBM Plex Mono",
-                  "Roboto Mono", Menlo, SFMono-Regular, Consolas,
-                  "Source Code Pro", monospace;
-                --font-text:
-                  "??", "??", "Franklin Gothic Book", "Rubik", "Helvetica Neue",
-                  ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
-                  sans-serif;
-                --font-weight: 400;
-                --graph-line: var(
-                  --color-base-35,
-                  hsl(221, calc(3.33% * 10), calc(calc(2.58% * 5) - 4%))
-                );
-                --graph-node-tag: #859900;
-                --graph-node-unresolved: rgb(250, 247, 245);
-                --h1-color: rgb(250, 247, 245);
-                --h1-font: inherit;
-                --h3-line-height: 1.3;
-                --hr-color: transparent;
-                --hr-thickness: 1px;
-                --icon-color: rgb(250, 247, 245);
-                --inline-title-color: rgb(250, 247, 245);
-                --inline-title-font: inherit;
-                --interactive-accent-hsl: 189, 100%, 49%;
-                --italic-color: inherit;
-                --link-color: hsl(189, 100%, 49%);
-                --link-color-hover: rgb(250, 247, 245);
-                --link-external-color: hsl(189, 100%, 49%);
-                --link-external-color-hover: rgb(250, 247, 245);
-                --link-external-filter: none;
-                --link-weight: var(--link-weight);
-                --nav-item-background-hover: hsla(
-                  221,
-                  calc(calc(3.33% * 10) * 0.5),
-                  85%,
-                  0.05
-                );
-                --nav-item-children-margin-start: 12px;
-                --nav-item-children-padding-start: 4px;
-                --p-spacing: 1rem;
-                --search-icon-color: rgb(250, 247, 245);
-                --tag-background: light-dark(
-                  hsla(189, 100%, 49%, 0.1),
-                  hsla(189, 100%, 49%, 0.1)
-                );
-                --tag-background-hover: light-dark(
-                  hsla(189, 100%, 49%, 0.2),
-                  hsla(189, 100%, 49%, 0.2)
-                );
-                --tag-border-color: hsla(189, 100%, 49%, 0.15);
-                --tag-border-color-hover: hsla(189, 100%, 49%, 0.15);
-                --tag-border-width: 0px;
-                --tag-color: hsl(189, 100%, 49%);
-                --tag-color-hover: hsl(189, 100%, 49%);
-                --tag-decoration: none;
-                --tag-decoration-hover: none;
-                --tag-radius: calc(calc(0.1px * 20) * 2);
-                --tag-weight: inherit;
-                --text-accent: hsl(189, 100%, 49%);
-                --text-accent-hover: light-dark(#000, rgb(250, 247, 245));
-                --text-faint: light-dark(
-                  rgb(250, 247, 245),
-                  rgb(250, 247, 245)
-                );
-                --text-highlight-bg: light-dark(
-                  rgb(250, 231, 75),
-                  rgb(220, 193, 45)
-                );
-                --text-muted: light-dark(
-                  rgb(250, 247, 245),
-                  rgb(250, 247, 245)
-                );
-                --text-normal: light-dark(rgb(0, 0, 0), rgb(250, 247, 245));
-                -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-                -webkit-user-select: none;
-                background-color: hsl(221, calc(3.33% * 10), calc(2.58% * 5));
-                caret-color: hsl(189, 100%, 49%);
+
                 color: rgb(250, 247, 245);
-                contain: initial;
-                font-family:
-                  "??",
-                  "Franklin Gothic Book",
-                  "Rubik",
-                  "Helvetica Neue",
-                  ui-sans-serif,
-                  -apple-system,
-                  BlinkMacSystemFont,
-                  "Segoe UI",
-                  sans-serif,
-                  var(--default-font, "??"),
-                  "Franklin Gothic Book",
-                  "Rubik",
-                  "Helvetica Neue",
-                  ui-sans-serif,
-                  -apple-system,
-                  BlinkMacSystemFont,
-                  "Segoe UI",
-                  sans-serif;
-                font-size: 16px;
-                height: 100%;
-                line-height: 1.3;
-                margin: 0;
-                overflow: auto;
-                overscroll-behavior: none;
-                padding: 0;
-                padding-top: 0;
-                text-rendering: optimizeLegibility;
-                user-select: none;
-                width: 100%;
 
                 &.match-tag {
-                  background-color: hsla(189, 100%, 49%, 0.2);
-                  border: 0px solid hsla(189, 100%, 49%, 0.15);
-                  border-radius: calc(calc(0.1px * 20) * 2);
                   color: hsl(189, 100%, 49%);
-                  font-size: 0.875em;
-                  font-weight: inherit;
-                  line-height: 1;
-                  padding: 0.25em 0.65em;
-                  text-decoration: none;
                 }
               }
             }
@@ -2705,41 +1896,11 @@ body {
     border: unset;
     background-color: var(--background-primary);
     & .popover-inner {
-      background-color: hsl(221, calc(3.33% * 10), calc(2.58% * 5));
       border: 1px solid transparent;
-      border-radius: calc(calc(0.1px * 20) * 2);
-      box-shadow:
-        0px 1px 2px rgba(0, 0, 0, 0.121),
-        0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-        0px 15px 30px rgba(0, 0, 0, 0.3);
-      display: flex;
-      max-height: 95vh;
-      position: absolute;
-      z-index: 30;
 
       background-color: hsl(221, calc(3.33% * 10), calc(2.58% * 5));
-      border: 1px solid transparent;
-      border-radius: calc(calc(0.1px * 20) * 2);
-      box-shadow:
-        0px 1px 2px rgba(0, 0, 0, 0.121),
-        0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-        0px 15px 30px rgba(0, 0, 0, 0.3);
-      display: flex;
-      max-height: 95vh;
-      position: absolute;
-      z-index: 30;
 
-      background-color: hsl(221, calc(3.33% * 10), calc(2.58% * 5));
-      border: 1px solid transparent;
       border-radius: calc(calc(0.1px * 20) * 2);
-      box-shadow:
-        0px 1px 2px rgba(0, 0, 0, 0.121),
-        0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-        0px 15px 30px rgba(0, 0, 0, 0.3);
-      display: flex;
-      max-height: 95vh;
-      position: absolute;
-      z-index: 30;
 
       background-color: var(--background-primary);
     }

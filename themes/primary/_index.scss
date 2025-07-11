@@ -551,23 +551,11 @@ html {
     overflow: hidden;
     padding: 0;
 
-    --callout-color: 182, 196, 182;
     background-color: color-mix(
       in srgb,
       rgba(240, 180, 225) 32.5%,
       var(--background-primary)
     );
-    border-color: rgba(240, 180, 225, 0.1);
-    border-radius: 8px;
-    border-style: solid;
-    border-width: 0px;
-    box-shadow:
-      inset 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
-      0px 2px 6px 0px rgba(0, 0, 0, 0.28);
-    margin: 1em 0;
-    mix-blend-mode: normal;
-    overflow: hidden;
-    padding: 0;
 
     background-color: var(--bg);
     border-color: var(--border);
@@ -577,40 +565,12 @@ html {
 
     &[data-callout] {
       --callout-color: 182, 196, 182;
-      background-color: color-mix(
-        in srgb,
-        rgba(240, 180, 225) 32.5%,
-        var(--background-primary)
-      );
-      border-color: rgba(240, 180, 225, 0.1);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        inset 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
-        0px 2px 6px 0px rgba(0, 0, 0, 0.28);
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
-      --callout-color: 182, 196, 182;
       background-color: color-mix(
         in srgb,
         rgba(240, 180, 225) 32.5%,
         var(--background-primary)
       );
-      border-color: rgba(240, 180, 225, 0.1);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        inset 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
-        0px 2px 6px 0px rgba(0, 0, 0, 0.28);
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -619,23 +579,11 @@ html {
     &[data-callout="abstract"] {
       --callout-color: 34, 152, 225;
 
-      --callout-color: 182, 196, 182;
       background-color: color-mix(
         in srgb,
         rgba(240, 180, 225) 32.5%,
         var(--background-primary)
       );
-      border-color: rgba(240, 180, 225, 0.1);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        inset 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
-        0px 2px 6px 0px rgba(0, 0, 0, 0.28);
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -644,23 +592,11 @@ html {
     &[data-callout="summary"] {
       --callout-color: 234, 181, 52;
 
-      --callout-color: 182, 196, 182;
       background-color: color-mix(
         in srgb,
         rgba(240, 180, 225) 32.5%,
         var(--background-primary)
       );
-      border-color: rgba(240, 180, 225, 0.1);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        inset 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
-        0px 2px 6px 0px rgba(0, 0, 0, 0.28);
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -669,23 +605,11 @@ html {
     &[data-callout="tldr"] {
       --callout-color: 240, 180, 225;
 
-      --callout-color: 182, 196, 182;
       background-color: color-mix(
         in srgb,
         rgba(240, 180, 225) 32.5%,
         var(--background-primary)
       );
-      border-color: rgba(240, 180, 225, 0.1);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        inset 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
-        0px 2px 6px 0px rgba(0, 0, 0, 0.28);
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -694,23 +618,11 @@ html {
     &[data-callout="info"] {
       --callout-color: 71, 162, 187;
 
-      --callout-color: 182, 196, 182;
       background-color: color-mix(
         in srgb,
         rgba(240, 180, 225) 32.5%,
         var(--background-primary)
       );
-      border-color: rgba(240, 180, 225, 0.1);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        inset 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
-        0px 2px 6px 0px rgba(0, 0, 0, 0.28);
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -719,23 +631,11 @@ html {
     &[data-callout="todo"] {
       --callout-color: 58, 173, 252;
 
-      --callout-color: 182, 196, 182;
       background-color: color-mix(
         in srgb,
         rgba(240, 180, 225) 32.5%,
         var(--background-primary)
       );
-      border-color: rgba(240, 180, 225, 0.1);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        inset 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
-        0px 2px 6px 0px rgba(0, 0, 0, 0.28);
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -744,23 +644,11 @@ html {
     &[data-callout="important"] {
       --callout-color: 246, 113, 118;
 
-      --callout-color: 182, 196, 182;
       background-color: color-mix(
         in srgb,
         rgba(240, 180, 225) 32.5%,
         var(--background-primary)
       );
-      border-color: rgba(240, 180, 225, 0.1);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        inset 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
-        0px 2px 6px 0px rgba(0, 0, 0, 0.28);
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -769,23 +657,11 @@ html {
     &[data-callout="tip"] {
       --callout-color: 70, 206, 185;
 
-      --callout-color: 182, 196, 182;
       background-color: color-mix(
         in srgb,
         rgba(240, 180, 225) 32.5%,
         var(--background-primary)
       );
-      border-color: rgba(240, 180, 225, 0.1);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        inset 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
-        0px 2px 6px 0px rgba(0, 0, 0, 0.28);
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -794,23 +670,11 @@ html {
     &[data-callout="hint"] {
       --callout-color: 70, 206, 185;
 
-      --callout-color: 182, 196, 182;
       background-color: color-mix(
         in srgb,
         rgba(240, 180, 225) 32.5%,
         var(--background-primary)
       );
-      border-color: rgba(240, 180, 225, 0.1);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        inset 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
-        0px 2px 6px 0px rgba(0, 0, 0, 0.28);
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -819,23 +683,11 @@ html {
     &[data-callout="success"] {
       --callout-color: 87, 200, 83;
 
-      --callout-color: 182, 196, 182;
       background-color: color-mix(
         in srgb,
         rgba(240, 180, 225) 32.5%,
         var(--background-primary)
       );
-      border-color: rgba(240, 180, 225, 0.1);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        inset 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
-        0px 2px 6px 0px rgba(0, 0, 0, 0.28);
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -844,23 +696,11 @@ html {
     &[data-callout="check"] {
       --callout-color: 87, 200, 83;
 
-      --callout-color: 182, 196, 182;
       background-color: color-mix(
         in srgb,
         rgba(240, 180, 225) 32.5%,
         var(--background-primary)
       );
-      border-color: rgba(240, 180, 225, 0.1);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        inset 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
-        0px 2px 6px 0px rgba(0, 0, 0, 0.28);
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -869,23 +709,11 @@ html {
     &[data-callout="done"] {
       --callout-color: 87, 200, 83;
 
-      --callout-color: 182, 196, 182;
       background-color: color-mix(
         in srgb,
         rgba(240, 180, 225) 32.5%,
         var(--background-primary)
       );
-      border-color: rgba(240, 180, 225, 0.1);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        inset 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
-        0px 2px 6px 0px rgba(0, 0, 0, 0.28);
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -894,23 +722,11 @@ html {
     &[data-callout="question"] {
       --callout-color: 130, 190, 235;
 
-      --callout-color: 182, 196, 182;
       background-color: color-mix(
         in srgb,
         rgba(240, 180, 225) 32.5%,
         var(--background-primary)
       );
-      border-color: rgba(240, 180, 225, 0.1);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        inset 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
-        0px 2px 6px 0px rgba(0, 0, 0, 0.28);
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -919,23 +735,11 @@ html {
     &[data-callout="help"] {
       --callout-color: 250, 128, 96;
 
-      --callout-color: 182, 196, 182;
       background-color: color-mix(
         in srgb,
         rgba(240, 180, 225) 32.5%,
         var(--background-primary)
       );
-      border-color: rgba(240, 180, 225, 0.1);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        inset 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
-        0px 2px 6px 0px rgba(0, 0, 0, 0.28);
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -944,23 +748,11 @@ html {
     &[data-callout="faq"] {
       --callout-color: 130, 190, 235;
 
-      --callout-color: 182, 196, 182;
       background-color: color-mix(
         in srgb,
         rgba(240, 180, 225) 32.5%,
         var(--background-primary)
       );
-      border-color: rgba(240, 180, 225, 0.1);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        inset 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
-        0px 2px 6px 0px rgba(0, 0, 0, 0.28);
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -969,23 +761,11 @@ html {
     &[data-callout="warning"] {
       --callout-color: 255, 161, 32;
 
-      --callout-color: 182, 196, 182;
       background-color: color-mix(
         in srgb,
         rgba(240, 180, 225) 32.5%,
         var(--background-primary)
       );
-      border-color: rgba(240, 180, 225, 0.1);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        inset 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
-        0px 2px 6px 0px rgba(0, 0, 0, 0.28);
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -994,23 +774,11 @@ html {
     &[data-callout="caution"] {
       --callout-color: 255, 161, 32;
 
-      --callout-color: 182, 196, 182;
       background-color: color-mix(
         in srgb,
         rgba(240, 180, 225) 32.5%,
         var(--background-primary)
       );
-      border-color: rgba(240, 180, 225, 0.1);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        inset 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
-        0px 2px 6px 0px rgba(0, 0, 0, 0.28);
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1019,23 +787,11 @@ html {
     &[data-callout="attention"] {
       --callout-color: 255, 161, 32;
 
-      --callout-color: 182, 196, 182;
       background-color: color-mix(
         in srgb,
         rgba(240, 180, 225) 32.5%,
         var(--background-primary)
       );
-      border-color: rgba(240, 180, 225, 0.1);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        inset 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
-        0px 2px 6px 0px rgba(0, 0, 0, 0.28);
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1044,23 +800,11 @@ html {
     &[data-callout="failure"] {
       --callout-color: 226, 72, 86;
 
-      --callout-color: 182, 196, 182;
       background-color: color-mix(
         in srgb,
         rgba(240, 180, 225) 32.5%,
         var(--background-primary)
       );
-      border-color: rgba(240, 180, 225, 0.1);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        inset 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
-        0px 2px 6px 0px rgba(0, 0, 0, 0.28);
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1069,23 +813,11 @@ html {
     &[data-callout="fail"] {
       --callout-color: 226, 72, 86;
 
-      --callout-color: 182, 196, 182;
       background-color: color-mix(
         in srgb,
         rgba(240, 180, 225) 32.5%,
         var(--background-primary)
       );
-      border-color: rgba(240, 180, 225, 0.1);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        inset 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
-        0px 2px 6px 0px rgba(0, 0, 0, 0.28);
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1094,23 +826,11 @@ html {
     &[data-callout="missing"] {
       --callout-color: 226, 72, 86;
 
-      --callout-color: 182, 196, 182;
       background-color: color-mix(
         in srgb,
         rgba(240, 180, 225) 32.5%,
         var(--background-primary)
       );
-      border-color: rgba(240, 180, 225, 0.1);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        inset 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
-        0px 2px 6px 0px rgba(0, 0, 0, 0.28);
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1119,23 +839,11 @@ html {
     &[data-callout="danger"] {
       --callout-color: 226, 72, 86;
 
-      --callout-color: 182, 196, 182;
       background-color: color-mix(
         in srgb,
         rgba(240, 180, 225) 32.5%,
         var(--background-primary)
       );
-      border-color: rgba(240, 180, 225, 0.1);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        inset 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
-        0px 2px 6px 0px rgba(0, 0, 0, 0.28);
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1144,23 +852,11 @@ html {
     &[data-callout="error"] {
       --callout-color: 226, 72, 86;
 
-      --callout-color: 182, 196, 182;
       background-color: color-mix(
         in srgb,
         rgba(240, 180, 225) 32.5%,
         var(--background-primary)
       );
-      border-color: rgba(240, 180, 225, 0.1);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        inset 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
-        0px 2px 6px 0px rgba(0, 0, 0, 0.28);
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1169,23 +865,11 @@ html {
     &[data-callout="bug"] {
       --callout-color: 153, 93, 133;
 
-      --callout-color: 182, 196, 182;
       background-color: color-mix(
         in srgb,
         rgba(240, 180, 225) 32.5%,
         var(--background-primary)
       );
-      border-color: rgba(240, 180, 225, 0.1);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        inset 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
-        0px 2px 6px 0px rgba(0, 0, 0, 0.28);
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1194,23 +878,11 @@ html {
     &[data-callout="example"] {
       --callout-color: 216, 141, 130;
 
-      --callout-color: 182, 196, 182;
       background-color: color-mix(
         in srgb,
         rgba(240, 180, 225) 32.5%,
         var(--background-primary)
       );
-      border-color: rgba(240, 180, 225, 0.1);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        inset 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
-        0px 2px 6px 0px rgba(0, 0, 0, 0.28);
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1219,23 +891,11 @@ html {
     &[data-callout="quote"] {
       --callout-color: 173, 214, 171;
 
-      --callout-color: 182, 196, 182;
       background-color: color-mix(
         in srgb,
         rgba(240, 180, 225) 32.5%,
         var(--background-primary)
       );
-      border-color: rgba(240, 180, 225, 0.1);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        inset 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
-        0px 2px 6px 0px rgba(0, 0, 0, 0.28);
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1244,23 +904,11 @@ html {
     &[data-callout="cite"] {
       --callout-color: 237, 217, 162;
 
-      --callout-color: 182, 196, 182;
       background-color: color-mix(
         in srgb,
         rgba(240, 180, 225) 32.5%,
         var(--background-primary)
       );
-      border-color: rgba(240, 180, 225, 0.1);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        inset 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
-        0px 2px 6px 0px rgba(0, 0, 0, 0.28);
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1877,13 +1525,6 @@ body {
   /* METADATA */
   .content-meta {
     color: hsla(35, 27%, 55%, 1);
-    cursor: text;
-    flex-grow: 1;
-    font-size: 13px;
-    max-height: 300px;
-    padding: 4px 8px;
-    unicode-bidi: plaintext;
-    white-space: pre-wrap;
 
     color: var(--text-normal);
   }
@@ -1891,7 +1532,6 @@ body {
   /* BREADCRUMBS */
   .breadcrumbs-element p {
     color: transparent;
-    padding: 2px 1px;
   }
 
   /* BACKLINKS */
@@ -1922,10 +1562,6 @@ body {
 
     ul li {
       color: hsla(34, 24%, 46%, 1);
-      font-size: 11px;
-      letter-spacing: 0.1em;
-      padding-inline-start: 8px;
-      text-transform: uppercase;
 
       font-weight: 550;
     }
@@ -1943,27 +1579,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      --font-weight: 650;
-      background: transparent;
-      border-bottom-color: transparent;
-      border-left-color: transparent;
-      border-radius: 0px;
-      border-right-color: transparent;
-      border-style: solid;
-      border-top-color: transparent;
-      border-width: 0px;
       color: hsla(32, 48%, 85%, 1);
-      font-family: inherit;
-      font-size: 1.602em;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 650;
-      letter-spacing: unset;
-      line-height: 1.2;
-      margin-block-end: 0rem;
-      margin-block-start: 0rem;
-      text-align: left;
-      text-transform: normal;
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1978,15 +1594,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        align-items: center;
         color: hsla(34, 39%, 74%, 1);
-        display: flex;
-        flex: 0 0 auto;
-        justify-content: center;
-        margin-inline-start: calc(-1 * 20px);
-        opacity: 1;
-        position: absolute;
-        width: 16px;
 
         text-overflow: ellipsis;
         position: relative;
@@ -2115,27 +1723,7 @@ body {
 
   /* TOC */
   .toc {
-    --font-weight: 650;
-    background: transparent;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-    border-radius: 0px;
-    border-right-color: transparent;
-    border-style: solid;
-    border-top-color: transparent;
-    border-width: 0px;
     color: hsla(32, 48%, 85%, 1);
-    font-family: inherit;
-    font-size: 1.424em;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 650;
-    letter-spacing: unset;
-    line-height: 1.3;
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
-    text-align: left;
-    text-transform: normal;
 
     button.toc-header {
       h3 {
@@ -2164,27 +1752,7 @@ body {
         margin-block: 0;
       }
 
-      --font-weight: 650;
-      background: transparent;
-      border-bottom-color: transparent;
-      border-left-color: transparent;
-      border-radius: 0px;
-      border-right-color: transparent;
-      border-style: solid;
-      border-top-color: transparent;
-      border-width: 0px;
       color: hsla(32, 48%, 85%, 1);
-      font-family: inherit;
-      font-size: 1.424em;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 650;
-      letter-spacing: unset;
-      line-height: 1.3;
-      margin-block-end: 0rem;
-      margin-block-start: 0rem;
-      text-align: left;
-      text-transform: normal;
 
       color: inherit;
     }
@@ -2302,81 +1870,17 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        animation: none;
         background-color: var(--editor-bg-color);
-        border: 0.5pt solid
-          color-mix(in srgb, hsla(31, 27%, 25%, 1) 40%, hsla(28, 22%, 19%, 1));
-        border-radius: 12px;
-        box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.271),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.312),
-          0px 30px 90px rgba(0, 0, 0, 0.4);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
 
-        animation: none;
-        background-color: var(--editor-bg-color);
         border: 0.5pt solid
           color-mix(in srgb, hsla(31, 27%, 25%, 1) 40%, hsla(28, 22%, 19%, 1));
-        border-radius: 12px;
-        box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.271),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.312),
-          0px 30px 90px rgba(0, 0, 0, 0.4);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
 
-        animation: none;
-        background-color: var(--editor-bg-color);
-        border: 0.5pt solid
-          color-mix(in srgb, hsla(31, 27%, 25%, 1) 40%, hsla(28, 22%, 19%, 1));
         border-radius: 12px;
-        box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.271),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.312),
-          0px 30px 90px rgba(0, 0, 0, 0.4);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
 
-        animation: none;
-        background-color: var(--editor-bg-color);
-        border: 0.5pt solid
-          color-mix(in srgb, hsla(31, 27%, 25%, 1) 40%, hsla(28, 22%, 19%, 1));
-        border-radius: 12px;
         box-shadow:
           0px 1.8px 7.3px rgba(0, 0, 0, 0.271),
           0px 6.3px 24.7px rgba(0, 0, 0, 0.312),
           0px 30px 90px rgba(0, 0, 0, 0.4);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
 
         color: var(--text-normal);
         background-color: var(--background-secondary);
@@ -2400,218 +1904,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          --background-modifier-border: light-dark(
-            hsla(37, 38%, 83%, 1),
-            hsla(28, 22%, 19%, 1)
-          );
-          --background-modifier-border-focus: hsla(34, 24%, 46%, 1);
-          --background-modifier-border-hover: hsla(33, 27%, 33%, 1);
-          --background-modifier-hover: rgba(255, 255, 255, 0.067);
-          --background-primary: light-dark(
-            hsla(35, 36%, 96%, 1),
-            hsla(30, 19%, 15%, 1)
-          );
-          --background-primary-alt: light-dark(
-            hsla(35, 37%, 92%, 1),
-            hsla(30, 17%, 14%, 1)
-          );
-          --background-secondary: light-dark(
-            hsla(34, 34%, 90%, 1),
-            hsla(29, 16%, 13%, 1)
-          );
-          --bold-color: light-dark(hsla(4, 56%, 48%, 1), hsla(4, 88%, 61%, 1));
-          --bold-weight: 750;
-          --checkbox-border-color: light-dark(
-            hsla(37, 38%, 83%, 1),
-            hsla(31, 27%, 25%, 1)
-          );
-          --checkbox-border-color-hover: light-dark(
-            hsla(34, 37%, 70%, 1),
-            hsla(33, 27%, 33%, 1)
-          );
-          --checkbox-color: light-dark(
-            hsla(149, 50%, 39%, 1),
-            hsla(154, 75%, 26%, 1)
-          );
-          --checkbox-color-hover: light-dark(
-            hsla(148, 48%, 47%, 1),
-            hsla(155, 78%, 29%, 1)
-          );
-          --checkbox-marker-color: var(--editor-bg-color);
-          --checkbox-radius: 4px;
-          --checkbox-size: 16px;
-          --code-background: hsla(30, 17%, 14%, 1);
-          --code-comment: hsla(34, 24%, 46%, 1);
-          --code-function: rgb(225, 178, 67);
-          --code-important: rgb(203, 128, 53);
-          --code-keyword: rgb(180, 100, 100);
-          --code-normal: hsla(34, 39%, 74%, 1);
-          --code-property: rgb(70, 169, 180);
-          --code-punctuation: hsla(35, 27%, 55%, 1);
-          --code-string: rgb(80, 196, 101);
-          --code-tag: rgb(192, 78, 78);
-          --code-value: rgb(113, 97, 194);
-          --collapse-icon-color: light-dark(
-            hsla(34, 37%, 70%, 1),
-            hsla(33, 27%, 33%, 1)
-          );
-          --collapse-icon-color-collapsed: light-dark(
-            hsla(34, 37%, 70%, 1),
-            hsla(33, 27%, 33%, 1)
-          );
-          --cursor-link: pointer;
-          --editor-bg-color: light-dark(
-            var(--editor-bg-color),
-            var(--editor-bg-color)
-          );
-          --font-default:
-            ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-            "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-            "Segoe UI Symbol", sans-serif;
-          --font-monospace:
-            "??", "Cascadia Code", ui-monospace, SFMono-Regular,
-            "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono",
-            "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro",
-            monospace;
-          --font-text:
-            "??", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-            system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-            "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-          --font-weight: 450;
-          --graph-line: light-dark(transparent, transparent);
-          --graph-node-tag: light-dark(
-            hsla(4, 72%, 55%, 1),
-            hsla(4, 88%, 61%, 1)
-          );
-          --graph-node-unresolved: light-dark(
-            hsla(43, 83%, 57%, 1),
-            hsla(42, 79%, 51%, 1)
-          );
-          --h1-color: light-dark(hsla(33, 54%, 17%, 1), hsla(32, 48%, 85%, 1));
-          --h1-font: inherit;
-          --h3-line-height: 1.3;
-          --hr-color: transparent;
-          --hr-thickness: 1px;
-          --icon-color: hsla(35, 27%, 55%, 1);
-          --inline-title-color: light-dark(
-            hsla(33, 54%, 17%, 1),
-            hsla(32, 48%, 85%, 1)
-          );
-          --inline-title-font: inherit;
-          --interactive-accent-hsl: light-dark(31, 27%, 24%, 31, 27%, 24%);
-          --italic-color: light-dark(
-            hsla(200, 64%, 37%, 1),
-            hsla(194, 59%, 56%, 1)
-          );
-          --link-color: light-dark(
-            hsla(40, 79%, 47%, 1),
-            hsla(42, 79%, 51%, 1)
-          );
-          --link-color-hover: light-dark(
-            hsla(43, 83%, 57%, 1),
-            hsla(43, 69%, 63%, 1)
-          );
-          --link-external-color: light-dark(
-            hsla(149, 50%, 39%, 1),
-            hsla(154, 57%, 42%, 1)
-          );
-          --link-external-color-hover: light-dark(
-            hsla(148, 48%, 47%, 1),
-            hsla(152, 51%, 54%, 1)
-          );
-          --link-external-filter: none;
-          --link-weight: var(--link-weight);
-          --nav-item-background-hover: rgba(0, 0, 0, 0.3);
-          --nav-item-children-margin-start: 12px;
-          --nav-item-children-padding-start: 4px;
-          --p-spacing: 1rem;
-          --search-icon-color: light-dark(
-            hsla(34, 29%, 60%, 1),
-            hsla(34, 39%, 74%, 1)
-          );
-          --tag-background: hsla(31, 27%, 24%, 0.1);
-          --tag-background-hover: hsla(31, 27%, 24%, 0.2);
-          --tag-border-color: hsla(31, 27%, 24%, 0.15);
-          --tag-border-color-hover: hsla(31, 27%, 24%, 0.15);
-          --tag-border-width: 0px;
-          --tag-color: light-dark(
-            hsla(200, 64%, 37%, 1),
-            hsla(197, 48%, 49%, 1)
-          );
-          --tag-color-hover: light-dark(
-            hsla(202, 66%, 48%, 1),
-            hsla(194, 59%, 56%, 1)
-          );
-          --tag-decoration: none;
-          --tag-decoration-hover: none;
-          --tag-radius: 1em;
-          --tag-weight: inherit;
-          --text-accent: light-dark(hsl(31, 27%, 24%), hsl(31, 27%, 24%));
-          --text-accent-hover: light-dark(
-            hsl(calc(31 - 5), calc(27% * 1.16), calc(24% * 1.34)),
-            hsl(calc(31 - 5), calc(27% * 1.16), calc(24% * 1.34))
-          );
-          --text-faint: light-dark(
-            hsla(34, 29%, 60%, 1),
-            hsla(34, 24%, 46%, 1)
-          );
-          --text-highlight-bg: light-dark(
-            hsla(44, 100%, 50%, 0.2),
-            hsla(44, 100%, 50%, 0.2)
-          );
-          --text-muted: light-dark(
-            hsla(35, 28%, 40%, 1),
-            hsla(35, 27%, 55%, 1)
-          );
-          --text-normal: light-dark(
-            hsla(31, 45%, 24%, 1),
-            hsla(34, 39%, 74%, 1)
-          );
-          -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-          -webkit-user-select: none;
-          background-color: var(--editor-bg-color);
-          caret-color: hsla(34, 24%, 46%, 1);
           color: hsla(34, 39%, 74%, 1);
-          contain: initial;
-          font-family:
-            "??",
-            "Inter",
-            var(--default-font, "??"),
-            ui-sans-serif,
-            -apple-system,
-            BlinkMacSystemFont,
-            system-ui,
-            "Segoe UI",
-            Roboto,
-            "Inter",
-            "Apple Color Emoji",
-            "Segoe UI Emoji",
-            "Segoe UI Symbol",
-            sans-serif;
-          font-feature-settings:
-            "calt" 1,
-            "case" 0,
-            "ccmp" 1,
-            "ss03" 1,
-            "cv01" 1,
-            "cv05" 1,
-            "cv06" 1,
-            "cv08" 0,
-            "cv11" 1,
-            "cv12" 0,
-            "cv13" 0;
-          font-size: 15px;
-          font-weight: 450;
-          height: 100%;
-          line-height: 1.3;
-          margin: 0;
-          overflow: auto;
-          overscroll-behavior: none;
-          padding: 0;
-          padding-top: 0;
-          text-rendering: optimizeLegibility;
-          user-select: none;
-          width: 100%;
 
           background: transparent;
           margin-bottom: 0;
@@ -2658,245 +1951,11 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                --background-modifier-border: light-dark(
-                  hsla(37, 38%, 83%, 1),
-                  hsla(28, 22%, 19%, 1)
-                );
-                --background-modifier-border-focus: hsla(34, 24%, 46%, 1);
-                --background-modifier-border-hover: hsla(33, 27%, 33%, 1);
-                --background-modifier-hover: rgba(255, 255, 255, 0.067);
-                --background-primary: light-dark(
-                  hsla(35, 36%, 96%, 1),
-                  hsla(30, 19%, 15%, 1)
-                );
-                --background-primary-alt: light-dark(
-                  hsla(35, 37%, 92%, 1),
-                  hsla(30, 17%, 14%, 1)
-                );
-                --background-secondary: light-dark(
-                  hsla(34, 34%, 90%, 1),
-                  hsla(29, 16%, 13%, 1)
-                );
-                --bold-color: light-dark(
-                  hsla(4, 56%, 48%, 1),
-                  hsla(4, 88%, 61%, 1)
-                );
-                --bold-weight: 750;
-                --checkbox-border-color: light-dark(
-                  hsla(37, 38%, 83%, 1),
-                  hsla(31, 27%, 25%, 1)
-                );
-                --checkbox-border-color-hover: light-dark(
-                  hsla(34, 37%, 70%, 1),
-                  hsla(33, 27%, 33%, 1)
-                );
-                --checkbox-color: light-dark(
-                  hsla(149, 50%, 39%, 1),
-                  hsla(154, 75%, 26%, 1)
-                );
-                --checkbox-color-hover: light-dark(
-                  hsla(148, 48%, 47%, 1),
-                  hsla(155, 78%, 29%, 1)
-                );
-                --checkbox-marker-color: var(--editor-bg-color);
-                --checkbox-radius: 4px;
-                --checkbox-size: 16px;
-                --code-background: hsla(30, 17%, 14%, 1);
-                --code-comment: hsla(34, 24%, 46%, 1);
-                --code-function: rgb(225, 178, 67);
-                --code-important: rgb(203, 128, 53);
-                --code-keyword: rgb(180, 100, 100);
-                --code-normal: hsla(34, 39%, 74%, 1);
-                --code-property: rgb(70, 169, 180);
-                --code-punctuation: hsla(35, 27%, 55%, 1);
-                --code-string: rgb(80, 196, 101);
-                --code-tag: rgb(192, 78, 78);
-                --code-value: rgb(113, 97, 194);
-                --collapse-icon-color: light-dark(
-                  hsla(34, 37%, 70%, 1),
-                  hsla(33, 27%, 33%, 1)
-                );
-                --collapse-icon-color-collapsed: light-dark(
-                  hsla(34, 37%, 70%, 1),
-                  hsla(33, 27%, 33%, 1)
-                );
-                --cursor-link: pointer;
-                --editor-bg-color: light-dark(
-                  var(--editor-bg-color),
-                  var(--editor-bg-color)
-                );
-                --font-default:
-                  ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-                  "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-                  "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-                --font-monospace:
-                  "??", "Cascadia Code", ui-monospace, SFMono-Regular,
-                  "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono",
-                  "Liberation Mono", Menlo, Monaco, "Consolas",
-                  "Source Code Pro", monospace;
-                --font-text:
-                  "??", "Inter", ui-sans-serif, -apple-system,
-                  BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Inter",
-                  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-                  sans-serif;
-                --font-weight: 450;
-                --graph-line: light-dark(transparent, transparent);
-                --graph-node-tag: light-dark(
-                  hsla(4, 72%, 55%, 1),
-                  hsla(4, 88%, 61%, 1)
-                );
-                --graph-node-unresolved: light-dark(
-                  hsla(43, 83%, 57%, 1),
-                  hsla(42, 79%, 51%, 1)
-                );
-                --h1-color: light-dark(
-                  hsla(33, 54%, 17%, 1),
-                  hsla(32, 48%, 85%, 1)
-                );
-                --h1-font: inherit;
-                --h3-line-height: 1.3;
-                --hr-color: transparent;
-                --hr-thickness: 1px;
-                --icon-color: hsla(35, 27%, 55%, 1);
-                --inline-title-color: light-dark(
-                  hsla(33, 54%, 17%, 1),
-                  hsla(32, 48%, 85%, 1)
-                );
-                --inline-title-font: inherit;
-                --interactive-accent-hsl: light-dark(
-                  31,
-                  27%,
-                  24%,
-                  31,
-                  27%,
-                  24%
-                );
-                --italic-color: light-dark(
-                  hsla(200, 64%, 37%, 1),
-                  hsla(194, 59%, 56%, 1)
-                );
-                --link-color: light-dark(
-                  hsla(40, 79%, 47%, 1),
-                  hsla(42, 79%, 51%, 1)
-                );
-                --link-color-hover: light-dark(
-                  hsla(43, 83%, 57%, 1),
-                  hsla(43, 69%, 63%, 1)
-                );
-                --link-external-color: light-dark(
-                  hsla(149, 50%, 39%, 1),
-                  hsla(154, 57%, 42%, 1)
-                );
-                --link-external-color-hover: light-dark(
-                  hsla(148, 48%, 47%, 1),
-                  hsla(152, 51%, 54%, 1)
-                );
-                --link-external-filter: none;
-                --link-weight: var(--link-weight);
-                --nav-item-background-hover: rgba(0, 0, 0, 0.3);
-                --nav-item-children-margin-start: 12px;
-                --nav-item-children-padding-start: 4px;
-                --p-spacing: 1rem;
-                --search-icon-color: light-dark(
-                  hsla(34, 29%, 60%, 1),
-                  hsla(34, 39%, 74%, 1)
-                );
-                --tag-background: hsla(31, 27%, 24%, 0.1);
-                --tag-background-hover: hsla(31, 27%, 24%, 0.2);
-                --tag-border-color: hsla(31, 27%, 24%, 0.15);
-                --tag-border-color-hover: hsla(31, 27%, 24%, 0.15);
-                --tag-border-width: 0px;
-                --tag-color: light-dark(
-                  hsla(200, 64%, 37%, 1),
-                  hsla(197, 48%, 49%, 1)
-                );
-                --tag-color-hover: light-dark(
-                  hsla(202, 66%, 48%, 1),
-                  hsla(194, 59%, 56%, 1)
-                );
-                --tag-decoration: none;
-                --tag-decoration-hover: none;
-                --tag-radius: 1em;
-                --tag-weight: inherit;
-                --text-accent: light-dark(hsl(31, 27%, 24%), hsl(31, 27%, 24%));
-                --text-accent-hover: light-dark(
-                  hsl(calc(31 - 5), calc(27% * 1.16), calc(24% * 1.34)),
-                  hsl(calc(31 - 5), calc(27% * 1.16), calc(24% * 1.34))
-                );
-                --text-faint: light-dark(
-                  hsla(34, 29%, 60%, 1),
-                  hsla(34, 24%, 46%, 1)
-                );
-                --text-highlight-bg: light-dark(
-                  hsla(44, 100%, 50%, 0.2),
-                  hsla(44, 100%, 50%, 0.2)
-                );
-                --text-muted: light-dark(
-                  hsla(35, 28%, 40%, 1),
-                  hsla(35, 27%, 55%, 1)
-                );
-                --text-normal: light-dark(
-                  hsla(31, 45%, 24%, 1),
-                  hsla(34, 39%, 74%, 1)
-                );
-                -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-                -webkit-user-select: none;
-                background-color: var(--editor-bg-color);
-                caret-color: hsla(34, 24%, 46%, 1);
+
                 color: hsla(34, 39%, 74%, 1);
-                contain: initial;
-                font-family:
-                  "??",
-                  "Inter",
-                  var(--default-font, "??"),
-                  ui-sans-serif,
-                  -apple-system,
-                  BlinkMacSystemFont,
-                  system-ui,
-                  "Segoe UI",
-                  Roboto,
-                  "Inter",
-                  "Apple Color Emoji",
-                  "Segoe UI Emoji",
-                  "Segoe UI Symbol",
-                  sans-serif;
-                font-feature-settings:
-                  "calt" 1,
-                  "case" 0,
-                  "ccmp" 1,
-                  "ss03" 1,
-                  "cv01" 1,
-                  "cv05" 1,
-                  "cv06" 1,
-                  "cv08" 0,
-                  "cv11" 1,
-                  "cv12" 0,
-                  "cv13" 0;
-                font-size: 15px;
-                font-weight: 450;
-                height: 100%;
-                line-height: 1.3;
-                margin: 0;
-                overflow: auto;
-                overscroll-behavior: none;
-                padding: 0;
-                padding-top: 0;
-                text-rendering: optimizeLegibility;
-                user-select: none;
-                width: 100%;
 
                 &.match-tag {
-                  background-color: rgba(0, 0, 0, 0.3);
-                  border: 1px solid rgba(0, 0, 0, 0.25);
-                  border-radius: 1em;
-                  box-shadow: inset 0px -0.1em 0px 0px rgba(0, 0, 0, 0.2);
                   color: hsla(197, 48%, 49%, 1);
-                  font-size: 0.875em;
-                  font-weight: 550;
-                  line-height: 1;
-                  padding: 0.15em 0.6em;
-                  text-decoration: none;
-                  transition: 70ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
                 }
               }
             }
@@ -2982,41 +2041,11 @@ body {
     border: unset;
     background-color: var(--background-primary);
     & .popover-inner {
-      background-color: var(--editor-bg-color);
       border: 1px solid transparent;
-      border-radius: 8px;
-      box-shadow:
-        0px 1px 2px rgba(0, 0, 0, 0.228),
-        0px 3.4px 6.7px rgba(0, 0, 0, 0.242),
-        0px 15px 30px rgba(0, 0, 0, 0.27);
-      display: flex;
-      max-height: 95vh;
-      position: absolute;
-      z-index: 30;
 
       background-color: var(--editor-bg-color);
-      border: 1px solid transparent;
-      border-radius: 8px;
-      box-shadow:
-        0px 1px 2px rgba(0, 0, 0, 0.228),
-        0px 3.4px 6.7px rgba(0, 0, 0, 0.242),
-        0px 15px 30px rgba(0, 0, 0, 0.27);
-      display: flex;
-      max-height: 95vh;
-      position: absolute;
-      z-index: 30;
 
-      background-color: var(--editor-bg-color);
-      border: 1px solid transparent;
       border-radius: 8px;
-      box-shadow:
-        0px 1px 2px rgba(0, 0, 0, 0.228),
-        0px 3.4px 6.7px rgba(0, 0, 0, 0.242),
-        0px 15px 30px rgba(0, 0, 0, 0.27);
-      display: flex;
-      max-height: 95vh;
-      position: absolute;
-      z-index: 30;
 
       background-color: var(--background-primary);
     }

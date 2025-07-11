@@ -548,31 +548,7 @@ html {
     width: 70%;
     z-index: 1;
 
-    --callout-color: 8, 109, 221;
     background-color: rgba(158, 158, 158, 5%);
-    border: transparent;
-    border-color: rgba(158, 158, 158, 25%);
-    border-radius: 1em;
-    border-style: solid;
-    border-width: 0px;
-    box-shadow:
-      0 2px 1px rgba(0, 0, 0, 0.01),
-      0 4px 8px rgba(0, 0, 0, 0.01),
-      0 4px 8px rgba(0, 0, 0, 0.02),
-      0 2.3px 17.9px rgba(0, 0, 0, 0.03),
-      0 12px 33.4px rgba(0, 0, 0, 0.03),
-      0 20px 80px rgba(0, 0, 0, 0.02);
-    color: hsl(calc(0 + 258), 15%, 50%);
-    margin: 13px 0px;
-    margin-left: auto;
-    margin-right: auto;
-    mix-blend-mode: normal;
-    overflow: hidden;
-    padding: 17px 27px 17px 37px;
-    position: relative;
-    transition: transform 0.25s ease;
-    width: 70%;
-    z-index: 1;
 
     background-color: var(--bg);
     border-color: var(--border);
@@ -582,56 +558,8 @@ html {
 
     &[data-callout] {
       --callout-color: 8, 109, 221;
-      background-color: rgba(158, 158, 158, 5%);
-      border: transparent;
-      border-color: rgba(158, 158, 158, 25%);
-      border-radius: 1em;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        0 2px 1px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.02),
-        0 2.3px 17.9px rgba(0, 0, 0, 0.03),
-        0 12px 33.4px rgba(0, 0, 0, 0.03),
-        0 20px 80px rgba(0, 0, 0, 0.02);
-      color: hsl(calc(0 + 258), 15%, 50%);
-      margin: 13px 0px;
-      margin-left: auto;
-      margin-right: auto;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 17px 27px 17px 37px;
-      position: relative;
-      transition: transform 0.25s ease;
-      width: 70%;
-      z-index: 1;
 
-      --callout-color: 8, 109, 221;
       background-color: rgba(158, 158, 158, 5%);
-      border: transparent;
-      border-color: rgba(158, 158, 158, 25%);
-      border-radius: 1em;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        0 2px 1px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.02),
-        0 2.3px 17.9px rgba(0, 0, 0, 0.03),
-        0 12px 33.4px rgba(0, 0, 0, 0.03),
-        0 20px 80px rgba(0, 0, 0, 0.02);
-      color: hsl(calc(0 + 258), 15%, 50%);
-      margin: 13px 0px;
-      margin-left: auto;
-      margin-right: auto;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 17px 27px 17px 37px;
-      position: relative;
-      transition: transform 0.25s ease;
-      width: 70%;
-      z-index: 1;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -640,31 +568,7 @@ html {
     &[data-callout="abstract"] {
       --callout-color: 0, 191, 188;
 
-      --callout-color: 8, 109, 221;
       background-color: rgba(158, 158, 158, 5%);
-      border: transparent;
-      border-color: rgba(158, 158, 158, 25%);
-      border-radius: 1em;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        0 2px 1px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.02),
-        0 2.3px 17.9px rgba(0, 0, 0, 0.03),
-        0 12px 33.4px rgba(0, 0, 0, 0.03),
-        0 20px 80px rgba(0, 0, 0, 0.02);
-      color: hsl(calc(0 + 258), 15%, 50%);
-      margin: 13px 0px;
-      margin-left: auto;
-      margin-right: auto;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 17px 27px 17px 37px;
-      position: relative;
-      transition: transform 0.25s ease;
-      width: 70%;
-      z-index: 1;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -673,31 +577,7 @@ html {
     &[data-callout="summary"] {
       --callout-color: 0, 191, 188;
 
-      --callout-color: 8, 109, 221;
       background-color: rgba(158, 158, 158, 5%);
-      border: transparent;
-      border-color: rgba(158, 158, 158, 25%);
-      border-radius: 1em;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        0 2px 1px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.02),
-        0 2.3px 17.9px rgba(0, 0, 0, 0.03),
-        0 12px 33.4px rgba(0, 0, 0, 0.03),
-        0 20px 80px rgba(0, 0, 0, 0.02);
-      color: hsl(calc(0 + 258), 15%, 50%);
-      margin: 13px 0px;
-      margin-left: auto;
-      margin-right: auto;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 17px 27px 17px 37px;
-      position: relative;
-      transition: transform 0.25s ease;
-      width: 70%;
-      z-index: 1;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -706,31 +586,7 @@ html {
     &[data-callout="tldr"] {
       --callout-color: 0, 191, 188;
 
-      --callout-color: 8, 109, 221;
       background-color: rgba(158, 158, 158, 5%);
-      border: transparent;
-      border-color: rgba(158, 158, 158, 25%);
-      border-radius: 1em;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        0 2px 1px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.02),
-        0 2.3px 17.9px rgba(0, 0, 0, 0.03),
-        0 12px 33.4px rgba(0, 0, 0, 0.03),
-        0 20px 80px rgba(0, 0, 0, 0.02);
-      color: hsl(calc(0 + 258), 15%, 50%);
-      margin: 13px 0px;
-      margin-left: auto;
-      margin-right: auto;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 17px 27px 17px 37px;
-      position: relative;
-      transition: transform 0.25s ease;
-      width: 70%;
-      z-index: 1;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -739,31 +595,7 @@ html {
     &[data-callout="info"] {
       --callout-color: 8, 109, 221;
 
-      --callout-color: 8, 109, 221;
       background-color: rgba(158, 158, 158, 5%);
-      border: transparent;
-      border-color: rgba(158, 158, 158, 25%);
-      border-radius: 1em;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        0 2px 1px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.02),
-        0 2.3px 17.9px rgba(0, 0, 0, 0.03),
-        0 12px 33.4px rgba(0, 0, 0, 0.03),
-        0 20px 80px rgba(0, 0, 0, 0.02);
-      color: hsl(calc(0 + 258), 15%, 50%);
-      margin: 13px 0px;
-      margin-left: auto;
-      margin-right: auto;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 17px 27px 17px 37px;
-      position: relative;
-      transition: transform 0.25s ease;
-      width: 70%;
-      z-index: 1;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -772,31 +604,7 @@ html {
     &[data-callout="todo"] {
       --callout-color: 8, 109, 221;
 
-      --callout-color: 8, 109, 221;
       background-color: rgba(158, 158, 158, 5%);
-      border: transparent;
-      border-color: rgba(158, 158, 158, 25%);
-      border-radius: 1em;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        0 2px 1px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.02),
-        0 2.3px 17.9px rgba(0, 0, 0, 0.03),
-        0 12px 33.4px rgba(0, 0, 0, 0.03),
-        0 20px 80px rgba(0, 0, 0, 0.02);
-      color: hsl(calc(0 + 258), 15%, 50%);
-      margin: 13px 0px;
-      margin-left: auto;
-      margin-right: auto;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 17px 27px 17px 37px;
-      position: relative;
-      transition: transform 0.25s ease;
-      width: 70%;
-      z-index: 1;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -805,31 +613,7 @@ html {
     &[data-callout="important"] {
       --callout-color: 0, 191, 188;
 
-      --callout-color: 8, 109, 221;
       background-color: rgba(158, 158, 158, 5%);
-      border: transparent;
-      border-color: rgba(158, 158, 158, 25%);
-      border-radius: 1em;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        0 2px 1px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.02),
-        0 2.3px 17.9px rgba(0, 0, 0, 0.03),
-        0 12px 33.4px rgba(0, 0, 0, 0.03),
-        0 20px 80px rgba(0, 0, 0, 0.02);
-      color: hsl(calc(0 + 258), 15%, 50%);
-      margin: 13px 0px;
-      margin-left: auto;
-      margin-right: auto;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 17px 27px 17px 37px;
-      position: relative;
-      transition: transform 0.25s ease;
-      width: 70%;
-      z-index: 1;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -838,31 +622,7 @@ html {
     &[data-callout="tip"] {
       --callout-color: 0, 191, 188;
 
-      --callout-color: 8, 109, 221;
       background-color: rgba(158, 158, 158, 5%);
-      border: transparent;
-      border-color: rgba(158, 158, 158, 25%);
-      border-radius: 1em;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        0 2px 1px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.02),
-        0 2.3px 17.9px rgba(0, 0, 0, 0.03),
-        0 12px 33.4px rgba(0, 0, 0, 0.03),
-        0 20px 80px rgba(0, 0, 0, 0.02);
-      color: hsl(calc(0 + 258), 15%, 50%);
-      margin: 13px 0px;
-      margin-left: auto;
-      margin-right: auto;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 17px 27px 17px 37px;
-      position: relative;
-      transition: transform 0.25s ease;
-      width: 70%;
-      z-index: 1;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -871,31 +631,7 @@ html {
     &[data-callout="hint"] {
       --callout-color: 0, 191, 188;
 
-      --callout-color: 8, 109, 221;
       background-color: rgba(158, 158, 158, 5%);
-      border: transparent;
-      border-color: rgba(158, 158, 158, 25%);
-      border-radius: 1em;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        0 2px 1px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.02),
-        0 2.3px 17.9px rgba(0, 0, 0, 0.03),
-        0 12px 33.4px rgba(0, 0, 0, 0.03),
-        0 20px 80px rgba(0, 0, 0, 0.02);
-      color: hsl(calc(0 + 258), 15%, 50%);
-      margin: 13px 0px;
-      margin-left: auto;
-      margin-right: auto;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 17px 27px 17px 37px;
-      position: relative;
-      transition: transform 0.25s ease;
-      width: 70%;
-      z-index: 1;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -904,31 +640,7 @@ html {
     &[data-callout="success"] {
       --callout-color: 8, 185, 78;
 
-      --callout-color: 8, 109, 221;
       background-color: rgba(158, 158, 158, 5%);
-      border: transparent;
-      border-color: rgba(158, 158, 158, 25%);
-      border-radius: 1em;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        0 2px 1px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.02),
-        0 2.3px 17.9px rgba(0, 0, 0, 0.03),
-        0 12px 33.4px rgba(0, 0, 0, 0.03),
-        0 20px 80px rgba(0, 0, 0, 0.02);
-      color: hsl(calc(0 + 258), 15%, 50%);
-      margin: 13px 0px;
-      margin-left: auto;
-      margin-right: auto;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 17px 27px 17px 37px;
-      position: relative;
-      transition: transform 0.25s ease;
-      width: 70%;
-      z-index: 1;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -937,31 +649,7 @@ html {
     &[data-callout="check"] {
       --callout-color: 8, 185, 78;
 
-      --callout-color: 8, 109, 221;
       background-color: rgba(158, 158, 158, 5%);
-      border: transparent;
-      border-color: rgba(158, 158, 158, 25%);
-      border-radius: 1em;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        0 2px 1px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.02),
-        0 2.3px 17.9px rgba(0, 0, 0, 0.03),
-        0 12px 33.4px rgba(0, 0, 0, 0.03),
-        0 20px 80px rgba(0, 0, 0, 0.02);
-      color: hsl(calc(0 + 258), 15%, 50%);
-      margin: 13px 0px;
-      margin-left: auto;
-      margin-right: auto;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 17px 27px 17px 37px;
-      position: relative;
-      transition: transform 0.25s ease;
-      width: 70%;
-      z-index: 1;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -970,31 +658,7 @@ html {
     &[data-callout="done"] {
       --callout-color: 8, 185, 78;
 
-      --callout-color: 8, 109, 221;
       background-color: rgba(158, 158, 158, 5%);
-      border: transparent;
-      border-color: rgba(158, 158, 158, 25%);
-      border-radius: 1em;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        0 2px 1px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.02),
-        0 2.3px 17.9px rgba(0, 0, 0, 0.03),
-        0 12px 33.4px rgba(0, 0, 0, 0.03),
-        0 20px 80px rgba(0, 0, 0, 0.02);
-      color: hsl(calc(0 + 258), 15%, 50%);
-      margin: 13px 0px;
-      margin-left: auto;
-      margin-right: auto;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 17px 27px 17px 37px;
-      position: relative;
-      transition: transform 0.25s ease;
-      width: 70%;
-      z-index: 1;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1003,31 +667,7 @@ html {
     &[data-callout="question"] {
       --callout-color: 236, 117, 0;
 
-      --callout-color: 8, 109, 221;
       background-color: rgba(158, 158, 158, 5%);
-      border: transparent;
-      border-color: rgba(158, 158, 158, 25%);
-      border-radius: 1em;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        0 2px 1px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.02),
-        0 2.3px 17.9px rgba(0, 0, 0, 0.03),
-        0 12px 33.4px rgba(0, 0, 0, 0.03),
-        0 20px 80px rgba(0, 0, 0, 0.02);
-      color: hsl(calc(0 + 258), 15%, 50%);
-      margin: 13px 0px;
-      margin-left: auto;
-      margin-right: auto;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 17px 27px 17px 37px;
-      position: relative;
-      transition: transform 0.25s ease;
-      width: 70%;
-      z-index: 1;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1036,31 +676,7 @@ html {
     &[data-callout="help"] {
       --callout-color: 236, 117, 0;
 
-      --callout-color: 8, 109, 221;
       background-color: rgba(158, 158, 158, 5%);
-      border: transparent;
-      border-color: rgba(158, 158, 158, 25%);
-      border-radius: 1em;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        0 2px 1px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.02),
-        0 2.3px 17.9px rgba(0, 0, 0, 0.03),
-        0 12px 33.4px rgba(0, 0, 0, 0.03),
-        0 20px 80px rgba(0, 0, 0, 0.02);
-      color: hsl(calc(0 + 258), 15%, 50%);
-      margin: 13px 0px;
-      margin-left: auto;
-      margin-right: auto;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 17px 27px 17px 37px;
-      position: relative;
-      transition: transform 0.25s ease;
-      width: 70%;
-      z-index: 1;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1069,31 +685,7 @@ html {
     &[data-callout="faq"] {
       --callout-color: 236, 117, 0;
 
-      --callout-color: 8, 109, 221;
       background-color: rgba(158, 158, 158, 5%);
-      border: transparent;
-      border-color: rgba(158, 158, 158, 25%);
-      border-radius: 1em;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        0 2px 1px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.02),
-        0 2.3px 17.9px rgba(0, 0, 0, 0.03),
-        0 12px 33.4px rgba(0, 0, 0, 0.03),
-        0 20px 80px rgba(0, 0, 0, 0.02);
-      color: hsl(calc(0 + 258), 15%, 50%);
-      margin: 13px 0px;
-      margin-left: auto;
-      margin-right: auto;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 17px 27px 17px 37px;
-      position: relative;
-      transition: transform 0.25s ease;
-      width: 70%;
-      z-index: 1;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1102,31 +694,7 @@ html {
     &[data-callout="warning"] {
       --callout-color: 236, 117, 0;
 
-      --callout-color: 8, 109, 221;
       background-color: rgba(158, 158, 158, 5%);
-      border: transparent;
-      border-color: rgba(158, 158, 158, 25%);
-      border-radius: 1em;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        0 2px 1px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.02),
-        0 2.3px 17.9px rgba(0, 0, 0, 0.03),
-        0 12px 33.4px rgba(0, 0, 0, 0.03),
-        0 20px 80px rgba(0, 0, 0, 0.02);
-      color: hsl(calc(0 + 258), 15%, 50%);
-      margin: 13px 0px;
-      margin-left: auto;
-      margin-right: auto;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 17px 27px 17px 37px;
-      position: relative;
-      transition: transform 0.25s ease;
-      width: 70%;
-      z-index: 1;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1135,31 +703,7 @@ html {
     &[data-callout="caution"] {
       --callout-color: 236, 117, 0;
 
-      --callout-color: 8, 109, 221;
       background-color: rgba(158, 158, 158, 5%);
-      border: transparent;
-      border-color: rgba(158, 158, 158, 25%);
-      border-radius: 1em;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        0 2px 1px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.02),
-        0 2.3px 17.9px rgba(0, 0, 0, 0.03),
-        0 12px 33.4px rgba(0, 0, 0, 0.03),
-        0 20px 80px rgba(0, 0, 0, 0.02);
-      color: hsl(calc(0 + 258), 15%, 50%);
-      margin: 13px 0px;
-      margin-left: auto;
-      margin-right: auto;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 17px 27px 17px 37px;
-      position: relative;
-      transition: transform 0.25s ease;
-      width: 70%;
-      z-index: 1;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1168,31 +712,7 @@ html {
     &[data-callout="attention"] {
       --callout-color: 236, 117, 0;
 
-      --callout-color: 8, 109, 221;
       background-color: rgba(158, 158, 158, 5%);
-      border: transparent;
-      border-color: rgba(158, 158, 158, 25%);
-      border-radius: 1em;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        0 2px 1px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.02),
-        0 2.3px 17.9px rgba(0, 0, 0, 0.03),
-        0 12px 33.4px rgba(0, 0, 0, 0.03),
-        0 20px 80px rgba(0, 0, 0, 0.02);
-      color: hsl(calc(0 + 258), 15%, 50%);
-      margin: 13px 0px;
-      margin-left: auto;
-      margin-right: auto;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 17px 27px 17px 37px;
-      position: relative;
-      transition: transform 0.25s ease;
-      width: 70%;
-      z-index: 1;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1201,31 +721,7 @@ html {
     &[data-callout="failure"] {
       --callout-color: 233, 49, 71;
 
-      --callout-color: 8, 109, 221;
       background-color: rgba(158, 158, 158, 5%);
-      border: transparent;
-      border-color: rgba(158, 158, 158, 25%);
-      border-radius: 1em;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        0 2px 1px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.02),
-        0 2.3px 17.9px rgba(0, 0, 0, 0.03),
-        0 12px 33.4px rgba(0, 0, 0, 0.03),
-        0 20px 80px rgba(0, 0, 0, 0.02);
-      color: hsl(calc(0 + 258), 15%, 50%);
-      margin: 13px 0px;
-      margin-left: auto;
-      margin-right: auto;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 17px 27px 17px 37px;
-      position: relative;
-      transition: transform 0.25s ease;
-      width: 70%;
-      z-index: 1;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1234,31 +730,7 @@ html {
     &[data-callout="fail"] {
       --callout-color: 233, 49, 71;
 
-      --callout-color: 8, 109, 221;
       background-color: rgba(158, 158, 158, 5%);
-      border: transparent;
-      border-color: rgba(158, 158, 158, 25%);
-      border-radius: 1em;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        0 2px 1px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.02),
-        0 2.3px 17.9px rgba(0, 0, 0, 0.03),
-        0 12px 33.4px rgba(0, 0, 0, 0.03),
-        0 20px 80px rgba(0, 0, 0, 0.02);
-      color: hsl(calc(0 + 258), 15%, 50%);
-      margin: 13px 0px;
-      margin-left: auto;
-      margin-right: auto;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 17px 27px 17px 37px;
-      position: relative;
-      transition: transform 0.25s ease;
-      width: 70%;
-      z-index: 1;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1267,31 +739,7 @@ html {
     &[data-callout="missing"] {
       --callout-color: 233, 49, 71;
 
-      --callout-color: 8, 109, 221;
       background-color: rgba(158, 158, 158, 5%);
-      border: transparent;
-      border-color: rgba(158, 158, 158, 25%);
-      border-radius: 1em;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        0 2px 1px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.02),
-        0 2.3px 17.9px rgba(0, 0, 0, 0.03),
-        0 12px 33.4px rgba(0, 0, 0, 0.03),
-        0 20px 80px rgba(0, 0, 0, 0.02);
-      color: hsl(calc(0 + 258), 15%, 50%);
-      margin: 13px 0px;
-      margin-left: auto;
-      margin-right: auto;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 17px 27px 17px 37px;
-      position: relative;
-      transition: transform 0.25s ease;
-      width: 70%;
-      z-index: 1;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1300,31 +748,7 @@ html {
     &[data-callout="danger"] {
       --callout-color: 233, 49, 71;
 
-      --callout-color: 8, 109, 221;
       background-color: rgba(158, 158, 158, 5%);
-      border: transparent;
-      border-color: rgba(158, 158, 158, 25%);
-      border-radius: 1em;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        0 2px 1px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.02),
-        0 2.3px 17.9px rgba(0, 0, 0, 0.03),
-        0 12px 33.4px rgba(0, 0, 0, 0.03),
-        0 20px 80px rgba(0, 0, 0, 0.02);
-      color: hsl(calc(0 + 258), 15%, 50%);
-      margin: 13px 0px;
-      margin-left: auto;
-      margin-right: auto;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 17px 27px 17px 37px;
-      position: relative;
-      transition: transform 0.25s ease;
-      width: 70%;
-      z-index: 1;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1333,31 +757,7 @@ html {
     &[data-callout="error"] {
       --callout-color: 233, 49, 71;
 
-      --callout-color: 8, 109, 221;
       background-color: rgba(158, 158, 158, 5%);
-      border: transparent;
-      border-color: rgba(158, 158, 158, 25%);
-      border-radius: 1em;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        0 2px 1px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.02),
-        0 2.3px 17.9px rgba(0, 0, 0, 0.03),
-        0 12px 33.4px rgba(0, 0, 0, 0.03),
-        0 20px 80px rgba(0, 0, 0, 0.02);
-      color: hsl(calc(0 + 258), 15%, 50%);
-      margin: 13px 0px;
-      margin-left: auto;
-      margin-right: auto;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 17px 27px 17px 37px;
-      position: relative;
-      transition: transform 0.25s ease;
-      width: 70%;
-      z-index: 1;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1366,31 +766,7 @@ html {
     &[data-callout="bug"] {
       --callout-color: 233, 49, 71;
 
-      --callout-color: 8, 109, 221;
       background-color: rgba(158, 158, 158, 5%);
-      border: transparent;
-      border-color: rgba(158, 158, 158, 25%);
-      border-radius: 1em;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        0 2px 1px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.02),
-        0 2.3px 17.9px rgba(0, 0, 0, 0.03),
-        0 12px 33.4px rgba(0, 0, 0, 0.03),
-        0 20px 80px rgba(0, 0, 0, 0.02);
-      color: hsl(calc(0 + 258), 15%, 50%);
-      margin: 13px 0px;
-      margin-left: auto;
-      margin-right: auto;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 17px 27px 17px 37px;
-      position: relative;
-      transition: transform 0.25s ease;
-      width: 70%;
-      z-index: 1;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1399,31 +775,7 @@ html {
     &[data-callout="example"] {
       --callout-color: 120, 82, 238;
 
-      --callout-color: 8, 109, 221;
       background-color: rgba(158, 158, 158, 5%);
-      border: transparent;
-      border-color: rgba(158, 158, 158, 25%);
-      border-radius: 1em;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        0 2px 1px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.02),
-        0 2.3px 17.9px rgba(0, 0, 0, 0.03),
-        0 12px 33.4px rgba(0, 0, 0, 0.03),
-        0 20px 80px rgba(0, 0, 0, 0.02);
-      color: hsl(calc(0 + 258), 15%, 50%);
-      margin: 13px 0px;
-      margin-left: auto;
-      margin-right: auto;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 17px 27px 17px 37px;
-      position: relative;
-      transition: transform 0.25s ease;
-      width: 70%;
-      z-index: 1;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1432,31 +784,7 @@ html {
     &[data-callout="quote"] {
       --callout-color: 158, 158, 158;
 
-      --callout-color: 8, 109, 221;
       background-color: rgba(158, 158, 158, 5%);
-      border: transparent;
-      border-color: rgba(158, 158, 158, 25%);
-      border-radius: 1em;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        0 2px 1px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.02),
-        0 2.3px 17.9px rgba(0, 0, 0, 0.03),
-        0 12px 33.4px rgba(0, 0, 0, 0.03),
-        0 20px 80px rgba(0, 0, 0, 0.02);
-      color: hsl(calc(0 + 258), 15%, 50%);
-      margin: 13px 0px;
-      margin-left: auto;
-      margin-right: auto;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 17px 27px 17px 37px;
-      position: relative;
-      transition: transform 0.25s ease;
-      width: 70%;
-      z-index: 1;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1465,31 +793,7 @@ html {
     &[data-callout="cite"] {
       --callout-color: 158, 158, 158;
 
-      --callout-color: 8, 109, 221;
       background-color: rgba(158, 158, 158, 5%);
-      border: transparent;
-      border-color: rgba(158, 158, 158, 25%);
-      border-radius: 1em;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow:
-        0 2px 1px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.01),
-        0 4px 8px rgba(0, 0, 0, 0.02),
-        0 2.3px 17.9px rgba(0, 0, 0, 0.03),
-        0 12px 33.4px rgba(0, 0, 0, 0.03),
-        0 20px 80px rgba(0, 0, 0, 0.02);
-      color: hsl(calc(0 + 258), 15%, 50%);
-      margin: 13px 0px;
-      margin-left: auto;
-      margin-right: auto;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 17px 27px 17px 37px;
-      position: relative;
-      transition: transform 0.25s ease;
-      width: 70%;
-      z-index: 1;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1536,7 +840,6 @@ body {
   ) !important;
 
   background-color: (hsl(calc(0 + 258), 7%, 9%));
-  padding-bottom: 10px;
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -1566,14 +869,12 @@ body {
     &.left:has(.explorer),
     &.right {
       background-color: (hsl(calc(0 + 258), 7%, 9%));
-      padding-bottom: 10px;
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
         background-color: (hsl(calc(0 + 258), 7%, 9%));
-        padding-bottom: 10px;
 
         background-color: var(--background-primary);
       }
@@ -1583,7 +884,6 @@ body {
         :not(.folder-container, a[data-for]):before,
         :after {
           background-color: (hsl(calc(0 + 258), 7%, 9%));
-          padding-bottom: 10px;
 
           background-color: var(--background-secondary);
 
@@ -2013,13 +1313,6 @@ body {
   /* METADATA */
   .content-meta {
     color: hsl(calc(0 + 258), 15%, 75%);
-    cursor: text;
-    flex-grow: 1;
-    font-size: calc(16px * 0.937);
-    max-height: 300px;
-    padding: 4px 8px;
-    unicode-bidi: plaintext;
-    white-space: pre-wrap;
 
     color: var(--text-normal);
   }
@@ -2027,7 +1320,6 @@ body {
   /* BREADCRUMBS */
   .breadcrumbs-element p {
     color: hsl(258, 20%, 63%, 65%);
-    padding: 2px 1px;
   }
 
   /* BACKLINKS */
@@ -2048,7 +1340,6 @@ body {
 
     ul li {
       color: hsl(calc(0 + 258), 15%, 75%);
-      padding-inline-start: 8px;
 
       font-weight: 500;
     }
@@ -2066,26 +1357,11 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      --font-weight: 400;
-      border-bottom: 1px solid transparent;
       color: hsl(258, 10%, 25%);
-      font-family: "Work Sans";
-      font-size: 2em;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 400;
-      letter-spacing: -0.015em;
-      line-height: 1.6em;
-      margin-block-end: 0rem;
-      margin-block-start: 0rem;
-      margin-bottom: 0.6em;
-      overflow: hidden;
-      text-align: center;
     }
     .explorer-content {
       @media all and ($mobile) {
         background-color: (hsl(calc(0 + 258), 7%, 9%));
-        padding-bottom: 10px;
 
         background-color: var(--background-secondary);
 
@@ -2096,15 +1372,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        align-items: center;
         color: hsl(258, 88%, 66%);
-        display: flex;
-        flex: 0 0 auto;
-        justify-content: center;
-        margin-inline-start: calc(-1 * 20px);
-        opacity: 1;
-        position: absolute;
-        width: 16px;
 
         text-overflow: ellipsis;
         position: relative;
@@ -2225,17 +1493,7 @@ body {
 
   /* TOC */
   .toc {
-    --font-weight: 400;
     color: hsl(258, 10%, 25%);
-    font-family: inherit;
-    font-size: 1.424em;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    letter-spacing: -0.015em;
-    line-height: 1.3;
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
 
     button.toc-header {
       h3 {
@@ -2254,17 +1512,7 @@ body {
         margin-block: 0;
       }
 
-      --font-weight: 400;
       color: hsl(258, 10%, 25%);
-      font-family: inherit;
-      font-size: 1.424em;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 400;
-      letter-spacing: -0.015em;
-      line-height: 1.3;
-      margin-block-end: 0rem;
-      margin-block-start: 0rem;
 
       color: inherit;
     }
@@ -2373,72 +1621,15 @@ body {
     & > .search-container {
       & > .search-space {
         background-color: hsl(calc(0 + 258), 7%, 11.5%);
-        border: 0.5pt solid var(--color-base-40, hsl(calc(0 + 258), 16%, 12%));
-        border-radius: 12px;
-        box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-          0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
 
-        background-color: hsl(calc(0 + 258), 7%, 11.5%);
         border: 0.5pt solid var(--color-base-40, hsl(calc(0 + 258), 16%, 12%));
-        border-radius: 12px;
-        box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-          0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
 
-        background-color: hsl(calc(0 + 258), 7%, 11.5%);
-        border: 0.5pt solid var(--color-base-40, hsl(calc(0 + 258), 16%, 12%));
         border-radius: 12px;
-        box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-          0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
 
-        background-color: hsl(calc(0 + 258), 7%, 11.5%);
-        border: 0.5pt solid var(--color-base-40, hsl(calc(0 + 258), 16%, 12%));
-        border-radius: 12px;
         box-shadow:
           0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
           0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
           0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
 
         color: var(--text-normal);
         background-color: var(--background-secondary);
@@ -2461,154 +1652,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          --background-modifier-border: hsl(calc(0 + 258), 12%, 23%);
-          --background-modifier-border-focus: hsl(calc(0 + 258), 16%, 12%);
-          --background-modifier-border-hover: hsl(calc(0 + 258), 14%, 11%);
-          --background-modifier-hover: rgba(255, 255, 255, 0.067);
-          --background-primary: hsl(calc(0 + 258), 7%, 11.5%);
-          --background-primary-alt: hsl(calc(0 + 258), 11.5%, 18.5%);
-          --background-secondary: hsl(calc(0 + 258), 7%, 9%);
-          --bold-color: inherit;
-          --bold-weight: 600;
-          --checkbox-border-color: hsl(258, 20%, 63%, 65%);
-          --checkbox-border-color-hover: hsl(258, 20%, 50%);
-          --checkbox-color: hsl(258, 88%, 66%);
-          --checkbox-color-hover: hsl(
-            calc(258 - 3),
-            calc(88% * 1.02),
-            calc(66% * 1.15)
-          );
-          --checkbox-marker-color: hsl(calc(0 + 258), 7%, 11.5%);
-          --checkbox-radius: 100px;
-          --checkbox-size: 16px;
-          --code-background: hsl(calc(0 + 258), 11.5%, 18.5%);
-          --code-comment: hsl(258, 20%, 63%, 65%);
-          --code-function: #e0ac00;
-          --code-important: #ec7500;
-          --code-keyword: #d53984;
-          --code-normal: hsl(calc(0 + 258), 15%, 75%);
-          --code-property: #00bfbc;
-          --code-punctuation: hsl(258, 20%, 50%);
-          --code-string: #08b94e;
-          --code-tag: #e93147;
-          --code-value: #7852ee;
-          --collapse-icon-color: hsl(258, 20%, 63%, 65%);
-          --collapse-icon-color-collapsed: hsl(
-            calc(258 - 3),
-            calc(88% * 1.02),
-            calc(66% * 1.15)
-          );
-          --color-accent-2: light-dark(
-            hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)),
-            hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29))
-          );
-          --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
-          --color-base-00: light-dark(#ffffff, #1e1e1e);
-          --color-base-10: light-dark(#fafafa, #242424);
-          --color-base-100: light-dark(#222222, #dadada);
-          --color-base-20: light-dark(#f6f6f6, #262626);
-          --color-base-30: light-dark(#e0e0e0, #363636);
-          --color-base-35: light-dark(#d4d4d4, #3f3f3f);
-          --color-base-40: light-dark(#bdbdbd, #555555);
-          --color-base-50: light-dark(#ababab, #666666);
-          --color-base-70: light-dark(#5c5c5c, #b3b3b3);
-          --color-blue: light-dark(#086ddd, #027aff);
-          --color-cyan: light-dark(#00bfbc, #53dfdd);
-          --color-green: light-dark(#08b94e, #44cf6e);
-          --color-orange: light-dark(#ec7500, #e9973f);
-          --color-pink: light-dark(#d53984, #fa99cd);
-          --color-purple: light-dark(#7852ee, #a882ff);
-          --color-red: light-dark(#e93147, #fb464c);
-          --color-yellow: light-dark(#e0ac00, #e0de71);
-          --cursor-link: pointer;
-          --font-default: "Roboto", "Assistant", sans-serif;
-          --font-monospace:
-            "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono",
-            "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
-            "Consolas", "Source Code Pro", monospace;
-          --font-text: "??", "??", "Roboto", "Assistant", sans-serif;
-          --font-weight: 300;
-          --graph-line: var(--color-base-35, hsl(calc(0 + 258), 16%, 12%));
-          --graph-node-tag: #08b94e;
-          --graph-node-unresolved: hsl(258, 20%, 63%, 65%);
-          --h1-color: inherit;
-          --h1-font: "Lato";
-          --h3-line-height: 1.3;
-          --hr-color: transparent;
-          --hr-thickness: 2px;
-          --icon-color: hsl(258, 20%, 50%);
-          --inline-title-color: hsl(258, 10%, 25%);
-          --inline-title-font: "Lato";
-          --interactive-accent-hsl: 258, 88%, 66%;
-          --italic-color: inherit;
-          --link-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-          --link-color-hover: hsl(
-            calc(258 - 5),
-            calc(88% * 1.05),
-            calc(66% * 1.29)
-          );
-          --link-external-color: hsl(
-            calc(258 - 3),
-            calc(88% * 1.02),
-            calc(66% * 1.15)
-          );
-          --link-external-color-hover: hsl(
-            calc(258 - 5),
-            calc(88% * 1.05),
-            calc(66% * 1.29)
-          );
-          --link-external-filter: none;
-          --link-weight: var(--link-weight);
-          --nav-item-background-hover: rgba(255, 255, 255, 0.15);
-          --nav-item-children-margin-start: 12px;
-          --nav-item-children-padding-start: 4px;
-          --p-spacing: 1rem;
-          --search-icon-color: hsl(258, 20%, 50%);
-          --tag-background: hsla(258, 88%, 66%, 0.1);
-          --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-          --tag-border-color: hsla(258, 88%, 66%, 0.15);
-          --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
-          --tag-border-width: 0px;
-          --tag-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-          --tag-color-hover: hsl(
-            calc(258 - 3),
-            calc(88% * 1.02),
-            calc(66% * 1.15)
-          );
-          --tag-decoration: underline;
-          --tag-decoration-hover: none;
-          --tag-radius: 2em;
-          --tag-weight: inherit;
-          --text-accent: hsl(258, 88%, 66%);
-          --text-accent-hover: hsl(
-            calc(258 - 5),
-            calc(88% * 1.05),
-            calc(66% * 1.29)
-          );
-          --text-faint: hsl(calc(0 + 258), 18%, 35%);
-          --text-highlight-bg: rgba(255, 208, 0, 0.4);
-          --text-muted: hsl(calc(0 + 258), 15%, 50%);
-          --text-normal: hsl(calc(0 + 258), 15%, 75%);
-          -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-          -webkit-user-select: none;
-          background-color: hsl(calc(0 + 258), 7%, 11.5%);
-          caret-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
           color: hsl(calc(0 + 258), 15%, 75%);
-          contain: initial;
-          font-family:
-            "??", "??", var(--default-font, "??"), "Roboto", "Assistant",
-            sans-serif;
-          font-size: 16px;
-          height: 100%;
-          line-height: 1.3;
-          margin: 0;
-          overflow: auto;
-          overscroll-behavior: none;
-          padding: 0;
-          padding-top: 0;
-          text-rendering: optimizeLegibility;
-          user-select: none;
-          width: 100%;
 
           background: transparent;
           margin-bottom: 0;
@@ -2655,188 +1699,11 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                --background-modifier-border: hsl(calc(0 + 258), 12%, 23%);
-                --background-modifier-border-focus: hsl(
-                  calc(0 + 258),
-                  16%,
-                  12%
-                );
-                --background-modifier-border-hover: hsl(
-                  calc(0 + 258),
-                  14%,
-                  11%
-                );
-                --background-modifier-hover: rgba(255, 255, 255, 0.067);
-                --background-primary: hsl(calc(0 + 258), 7%, 11.5%);
-                --background-primary-alt: hsl(calc(0 + 258), 11.5%, 18.5%);
-                --background-secondary: hsl(calc(0 + 258), 7%, 9%);
-                --bold-color: inherit;
-                --bold-weight: 600;
-                --checkbox-border-color: hsl(258, 20%, 63%, 65%);
-                --checkbox-border-color-hover: hsl(258, 20%, 50%);
-                --checkbox-color: hsl(258, 88%, 66%);
-                --checkbox-color-hover: hsl(
-                  calc(258 - 3),
-                  calc(88% * 1.02),
-                  calc(66% * 1.15)
-                );
-                --checkbox-marker-color: hsl(calc(0 + 258), 7%, 11.5%);
-                --checkbox-radius: 100px;
-                --checkbox-size: 16px;
-                --code-background: hsl(calc(0 + 258), 11.5%, 18.5%);
-                --code-comment: hsl(258, 20%, 63%, 65%);
-                --code-function: #e0ac00;
-                --code-important: #ec7500;
-                --code-keyword: #d53984;
-                --code-normal: hsl(calc(0 + 258), 15%, 75%);
-                --code-property: #00bfbc;
-                --code-punctuation: hsl(258, 20%, 50%);
-                --code-string: #08b94e;
-                --code-tag: #e93147;
-                --code-value: #7852ee;
-                --collapse-icon-color: hsl(258, 20%, 63%, 65%);
-                --collapse-icon-color-collapsed: hsl(
-                  calc(258 - 3),
-                  calc(88% * 1.02),
-                  calc(66% * 1.15)
-                );
-                --color-accent-2: light-dark(
-                  hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15)),
-                  hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29))
-                );
-                --color-accent-hsl: light-dark(258, 88%, 66%, 258, 88%, 66%);
-                --color-base-00: light-dark(#ffffff, #1e1e1e);
-                --color-base-10: light-dark(#fafafa, #242424);
-                --color-base-100: light-dark(#222222, #dadada);
-                --color-base-20: light-dark(#f6f6f6, #262626);
-                --color-base-30: light-dark(#e0e0e0, #363636);
-                --color-base-35: light-dark(#d4d4d4, #3f3f3f);
-                --color-base-40: light-dark(#bdbdbd, #555555);
-                --color-base-50: light-dark(#ababab, #666666);
-                --color-base-70: light-dark(#5c5c5c, #b3b3b3);
-                --color-blue: light-dark(#086ddd, #027aff);
-                --color-cyan: light-dark(#00bfbc, #53dfdd);
-                --color-green: light-dark(#08b94e, #44cf6e);
-                --color-orange: light-dark(#ec7500, #e9973f);
-                --color-pink: light-dark(#d53984, #fa99cd);
-                --color-purple: light-dark(#7852ee, #a882ff);
-                --color-red: light-dark(#e93147, #fb464c);
-                --color-yellow: light-dark(#e0ac00, #e0de71);
-                --cursor-link: pointer;
-                --font-default: "Roboto", "Assistant", sans-serif;
-                --font-monospace:
-                  "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono",
-                  "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo,
-                  Monaco, "Consolas", "Source Code Pro", monospace;
-                --font-text: "??", "??", "Roboto", "Assistant", sans-serif;
-                --font-weight: 300;
-                --graph-line: var(
-                  --color-base-35,
-                  hsl(calc(0 + 258), 16%, 12%)
-                );
-                --graph-node-tag: #08b94e;
-                --graph-node-unresolved: hsl(258, 20%, 63%, 65%);
-                --h1-color: inherit;
-                --h1-font: "Lato";
-                --h3-line-height: 1.3;
-                --hr-color: transparent;
-                --hr-thickness: 2px;
-                --icon-color: hsl(258, 20%, 50%);
-                --inline-title-color: hsl(258, 10%, 25%);
-                --inline-title-font: "Lato";
-                --interactive-accent-hsl: 258, 88%, 66%;
-                --italic-color: inherit;
-                --link-color: hsl(
-                  calc(258 - 3),
-                  calc(88% * 1.02),
-                  calc(66% * 1.15)
-                );
-                --link-color-hover: hsl(
-                  calc(258 - 5),
-                  calc(88% * 1.05),
-                  calc(66% * 1.29)
-                );
-                --link-external-color: hsl(
-                  calc(258 - 3),
-                  calc(88% * 1.02),
-                  calc(66% * 1.15)
-                );
-                --link-external-color-hover: hsl(
-                  calc(258 - 5),
-                  calc(88% * 1.05),
-                  calc(66% * 1.29)
-                );
-                --link-external-filter: none;
-                --link-weight: var(--link-weight);
-                --nav-item-background-hover: rgba(255, 255, 255, 0.15);
-                --nav-item-children-margin-start: 12px;
-                --nav-item-children-padding-start: 4px;
-                --p-spacing: 1rem;
-                --search-icon-color: hsl(258, 20%, 50%);
-                --tag-background: hsla(258, 88%, 66%, 0.1);
-                --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-                --tag-border-color: hsla(258, 88%, 66%, 0.15);
-                --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
-                --tag-border-width: 0px;
-                --tag-color: hsl(
-                  calc(258 - 3),
-                  calc(88% * 1.02),
-                  calc(66% * 1.15)
-                );
-                --tag-color-hover: hsl(
-                  calc(258 - 3),
-                  calc(88% * 1.02),
-                  calc(66% * 1.15)
-                );
-                --tag-decoration: underline;
-                --tag-decoration-hover: none;
-                --tag-radius: 2em;
-                --tag-weight: inherit;
-                --text-accent: hsl(258, 88%, 66%);
-                --text-accent-hover: hsl(
-                  calc(258 - 5),
-                  calc(88% * 1.05),
-                  calc(66% * 1.29)
-                );
-                --text-faint: hsl(calc(0 + 258), 18%, 35%);
-                --text-highlight-bg: rgba(255, 208, 0, 0.4);
-                --text-muted: hsl(calc(0 + 258), 15%, 50%);
-                --text-normal: hsl(calc(0 + 258), 15%, 75%);
-                -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-                -webkit-user-select: none;
-                background-color: hsl(calc(0 + 258), 7%, 11.5%);
-                caret-color: hsl(
-                  calc(258 - 3),
-                  calc(88% * 1.02),
-                  calc(66% * 1.15)
-                );
+
                 color: hsl(calc(0 + 258), 15%, 75%);
-                contain: initial;
-                font-family:
-                  "??", "??", var(--default-font, "??"), "Roboto", "Assistant",
-                  sans-serif;
-                font-size: 16px;
-                height: 100%;
-                line-height: 1.3;
-                margin: 0;
-                overflow: auto;
-                overscroll-behavior: none;
-                padding: 0;
-                padding-top: 0;
-                text-rendering: optimizeLegibility;
-                user-select: none;
-                width: 100%;
 
                 &.match-tag {
-                  background-color: transparent;
-                  border: 0px solid hsla(258, 88%, 66%, 0.15);
-                  border-radius: 2em;
                   color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-                  font-size: 0.875em;
-                  font-weight: inherit;
-                  line-height: 1;
-                  padding: 1px 5px;
-                  text-decoration: underline;
                 }
               }
             }
@@ -2922,41 +1789,11 @@ body {
     border: unset;
     background-color: var(--background-primary);
     & .popover-inner {
-      background-color: hsl(calc(0 + 258), 7%, 11.5%);
       border: 1px solid transparent;
-      border-radius: 8px;
-      box-shadow:
-        0px 1px 2px rgba(0, 0, 0, 0.121),
-        0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-        0px 15px 30px rgba(0, 0, 0, 0.3);
-      display: flex;
-      max-height: 95vh;
-      position: absolute;
-      z-index: 30;
 
       background-color: hsl(calc(0 + 258), 7%, 11.5%);
-      border: 1px solid transparent;
-      border-radius: 8px;
-      box-shadow:
-        0px 1px 2px rgba(0, 0, 0, 0.121),
-        0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-        0px 15px 30px rgba(0, 0, 0, 0.3);
-      display: flex;
-      max-height: 95vh;
-      position: absolute;
-      z-index: 30;
 
-      background-color: hsl(calc(0 + 258), 7%, 11.5%);
-      border: 1px solid transparent;
       border-radius: 8px;
-      box-shadow:
-        0px 1px 2px rgba(0, 0, 0, 0.121),
-        0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-        0px 15px 30px rgba(0, 0, 0, 0.3);
-      display: flex;
-      max-height: 95vh;
-      position: absolute;
-      z-index: 30;
 
       background-color: var(--background-primary);
     }

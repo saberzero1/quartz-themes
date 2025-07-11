@@ -495,24 +495,7 @@ html {
     overflow: hidden;
     padding: 0;
 
-    --callout-color: 154, 153, 150;
-    --checkbox-color: rgb(181, 131, 90);
-    --checkbox-color-hover: rgba(181, 131, 90, 75%);
-    --h1-color: rgba(181, 131, 90, 75%);
-    --link-color: rgb(181, 131, 90);
-    --link-color-hover: rgba(181, 131, 90, 85%);
-    --link-external-color: rgb(181, 131, 90);
-    --link-external-color-hover: rgba(181, 131, 90, 85%);
     background-color: rgba(181, 131, 90, 0.1);
-    border-color: rgba(181, 131, 90, 0.25);
-    border-radius: 12px;
-    border-style: solid;
-    border-width: 0px;
-    box-shadow: #0002 0 2px 6px;
-    margin: 1em 0;
-    mix-blend-mode: normal;
-    overflow: hidden;
-    padding: 0;
 
     background-color: var(--bg);
     border-color: var(--border);
@@ -522,42 +505,8 @@ html {
 
     &[data-callout] {
       --callout-color: 154, 153, 150;
-      --checkbox-color: rgb(181, 131, 90);
-      --checkbox-color-hover: rgba(181, 131, 90, 75%);
-      --h1-color: rgba(181, 131, 90, 75%);
-      --link-color: rgb(181, 131, 90);
-      --link-color-hover: rgba(181, 131, 90, 85%);
-      --link-external-color: rgb(181, 131, 90);
-      --link-external-color-hover: rgba(181, 131, 90, 85%);
-      background-color: rgba(181, 131, 90, 0.1);
-      border-color: rgba(181, 131, 90, 0.25);
-      border-radius: 12px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow: #0002 0 2px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
-      --callout-color: 154, 153, 150;
-      --checkbox-color: rgb(181, 131, 90);
-      --checkbox-color-hover: rgba(181, 131, 90, 75%);
-      --h1-color: rgba(181, 131, 90, 75%);
-      --link-color: rgb(181, 131, 90);
-      --link-color-hover: rgba(181, 131, 90, 85%);
-      --link-external-color: rgb(181, 131, 90);
-      --link-external-color-hover: rgba(181, 131, 90, 85%);
       background-color: rgba(181, 131, 90, 0.1);
-      border-color: rgba(181, 131, 90, 0.25);
-      border-radius: 12px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow: #0002 0 2px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -566,24 +515,7 @@ html {
     &[data-callout="abstract"] {
       --callout-color: 52, 170, 180;
 
-      --callout-color: 154, 153, 150;
-      --checkbox-color: rgb(181, 131, 90);
-      --checkbox-color-hover: rgba(181, 131, 90, 75%);
-      --h1-color: rgba(181, 131, 90, 75%);
-      --link-color: rgb(181, 131, 90);
-      --link-color-hover: rgba(181, 131, 90, 85%);
-      --link-external-color: rgb(181, 131, 90);
-      --link-external-color-hover: rgba(181, 131, 90, 85%);
       background-color: rgba(181, 131, 90, 0.1);
-      border-color: rgba(181, 131, 90, 0.25);
-      border-radius: 12px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow: #0002 0 2px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -592,24 +524,7 @@ html {
     &[data-callout="summary"] {
       --callout-color: 52, 170, 180;
 
-      --callout-color: 154, 153, 150;
-      --checkbox-color: rgb(181, 131, 90);
-      --checkbox-color-hover: rgba(181, 131, 90, 75%);
-      --h1-color: rgba(181, 131, 90, 75%);
-      --link-color: rgb(181, 131, 90);
-      --link-color-hover: rgba(181, 131, 90, 85%);
-      --link-external-color: rgb(181, 131, 90);
-      --link-external-color-hover: rgba(181, 131, 90, 85%);
       background-color: rgba(181, 131, 90, 0.1);
-      border-color: rgba(181, 131, 90, 0.25);
-      border-radius: 12px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow: #0002 0 2px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -618,24 +533,7 @@ html {
     &[data-callout="tldr"] {
       --callout-color: 52, 170, 180;
 
-      --callout-color: 154, 153, 150;
-      --checkbox-color: rgb(181, 131, 90);
-      --checkbox-color-hover: rgba(181, 131, 90, 75%);
-      --h1-color: rgba(181, 131, 90, 75%);
-      --link-color: rgb(181, 131, 90);
-      --link-color-hover: rgba(181, 131, 90, 85%);
-      --link-external-color: rgb(181, 131, 90);
-      --link-external-color-hover: rgba(181, 131, 90, 85%);
       background-color: rgba(181, 131, 90, 0.1);
-      border-color: rgba(181, 131, 90, 0.25);
-      border-radius: 12px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow: #0002 0 2px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -644,24 +542,7 @@ html {
     &[data-callout="info"] {
       --callout-color: 53, 132, 228;
 
-      --callout-color: 154, 153, 150;
-      --checkbox-color: rgb(181, 131, 90);
-      --checkbox-color-hover: rgba(181, 131, 90, 75%);
-      --h1-color: rgba(181, 131, 90, 75%);
-      --link-color: rgb(181, 131, 90);
-      --link-color-hover: rgba(181, 131, 90, 85%);
-      --link-external-color: rgb(181, 131, 90);
-      --link-external-color-hover: rgba(181, 131, 90, 85%);
       background-color: rgba(181, 131, 90, 0.1);
-      border-color: rgba(181, 131, 90, 0.25);
-      border-radius: 12px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow: #0002 0 2px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -670,24 +551,7 @@ html {
     &[data-callout="todo"] {
       --callout-color: 53, 132, 228;
 
-      --callout-color: 154, 153, 150;
-      --checkbox-color: rgb(181, 131, 90);
-      --checkbox-color-hover: rgba(181, 131, 90, 75%);
-      --h1-color: rgba(181, 131, 90, 75%);
-      --link-color: rgb(181, 131, 90);
-      --link-color-hover: rgba(181, 131, 90, 85%);
-      --link-external-color: rgb(181, 131, 90);
-      --link-external-color-hover: rgba(181, 131, 90, 85%);
       background-color: rgba(181, 131, 90, 0.1);
-      border-color: rgba(181, 131, 90, 0.25);
-      border-radius: 12px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow: #0002 0 2px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -696,24 +560,7 @@ html {
     &[data-callout="important"] {
       --callout-color: 52, 170, 180;
 
-      --callout-color: 154, 153, 150;
-      --checkbox-color: rgb(181, 131, 90);
-      --checkbox-color-hover: rgba(181, 131, 90, 75%);
-      --h1-color: rgba(181, 131, 90, 75%);
-      --link-color: rgb(181, 131, 90);
-      --link-color-hover: rgba(181, 131, 90, 85%);
-      --link-external-color: rgb(181, 131, 90);
-      --link-external-color-hover: rgba(181, 131, 90, 85%);
       background-color: rgba(181, 131, 90, 0.1);
-      border-color: rgba(181, 131, 90, 0.25);
-      border-radius: 12px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow: #0002 0 2px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -722,24 +569,7 @@ html {
     &[data-callout="tip"] {
       --callout-color: 52, 170, 180;
 
-      --callout-color: 154, 153, 150;
-      --checkbox-color: rgb(181, 131, 90);
-      --checkbox-color-hover: rgba(181, 131, 90, 75%);
-      --h1-color: rgba(181, 131, 90, 75%);
-      --link-color: rgb(181, 131, 90);
-      --link-color-hover: rgba(181, 131, 90, 85%);
-      --link-external-color: rgb(181, 131, 90);
-      --link-external-color-hover: rgba(181, 131, 90, 85%);
       background-color: rgba(181, 131, 90, 0.1);
-      border-color: rgba(181, 131, 90, 0.25);
-      border-radius: 12px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow: #0002 0 2px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -748,24 +578,7 @@ html {
     &[data-callout="hint"] {
       --callout-color: 52, 170, 180;
 
-      --callout-color: 154, 153, 150;
-      --checkbox-color: rgb(181, 131, 90);
-      --checkbox-color-hover: rgba(181, 131, 90, 75%);
-      --h1-color: rgba(181, 131, 90, 75%);
-      --link-color: rgb(181, 131, 90);
-      --link-color-hover: rgba(181, 131, 90, 85%);
-      --link-external-color: rgb(181, 131, 90);
-      --link-external-color-hover: rgba(181, 131, 90, 85%);
       background-color: rgba(181, 131, 90, 0.1);
-      border-color: rgba(181, 131, 90, 0.25);
-      border-radius: 12px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow: #0002 0 2px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -774,24 +587,7 @@ html {
     &[data-callout="success"] {
       --callout-color: 51, 209, 122;
 
-      --callout-color: 154, 153, 150;
-      --checkbox-color: rgb(181, 131, 90);
-      --checkbox-color-hover: rgba(181, 131, 90, 75%);
-      --h1-color: rgba(181, 131, 90, 75%);
-      --link-color: rgb(181, 131, 90);
-      --link-color-hover: rgba(181, 131, 90, 85%);
-      --link-external-color: rgb(181, 131, 90);
-      --link-external-color-hover: rgba(181, 131, 90, 85%);
       background-color: rgba(181, 131, 90, 0.1);
-      border-color: rgba(181, 131, 90, 0.25);
-      border-radius: 12px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow: #0002 0 2px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -800,24 +596,7 @@ html {
     &[data-callout="check"] {
       --callout-color: 51, 209, 122;
 
-      --callout-color: 154, 153, 150;
-      --checkbox-color: rgb(181, 131, 90);
-      --checkbox-color-hover: rgba(181, 131, 90, 75%);
-      --h1-color: rgba(181, 131, 90, 75%);
-      --link-color: rgb(181, 131, 90);
-      --link-color-hover: rgba(181, 131, 90, 85%);
-      --link-external-color: rgb(181, 131, 90);
-      --link-external-color-hover: rgba(181, 131, 90, 85%);
       background-color: rgba(181, 131, 90, 0.1);
-      border-color: rgba(181, 131, 90, 0.25);
-      border-radius: 12px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow: #0002 0 2px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -826,24 +605,7 @@ html {
     &[data-callout="done"] {
       --callout-color: 51, 209, 122;
 
-      --callout-color: 154, 153, 150;
-      --checkbox-color: rgb(181, 131, 90);
-      --checkbox-color-hover: rgba(181, 131, 90, 75%);
-      --h1-color: rgba(181, 131, 90, 75%);
-      --link-color: rgb(181, 131, 90);
-      --link-color-hover: rgba(181, 131, 90, 85%);
-      --link-external-color: rgb(181, 131, 90);
-      --link-external-color-hover: rgba(181, 131, 90, 85%);
       background-color: rgba(181, 131, 90, 0.1);
-      border-color: rgba(181, 131, 90, 0.25);
-      border-radius: 12px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow: #0002 0 2px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -852,24 +614,7 @@ html {
     &[data-callout="question"] {
       --callout-color: 229, 165, 10;
 
-      --callout-color: 154, 153, 150;
-      --checkbox-color: rgb(181, 131, 90);
-      --checkbox-color-hover: rgba(181, 131, 90, 75%);
-      --h1-color: rgba(181, 131, 90, 75%);
-      --link-color: rgb(181, 131, 90);
-      --link-color-hover: rgba(181, 131, 90, 85%);
-      --link-external-color: rgb(181, 131, 90);
-      --link-external-color-hover: rgba(181, 131, 90, 85%);
       background-color: rgba(181, 131, 90, 0.1);
-      border-color: rgba(181, 131, 90, 0.25);
-      border-radius: 12px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow: #0002 0 2px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -878,24 +623,7 @@ html {
     &[data-callout="help"] {
       --callout-color: 229, 165, 10;
 
-      --callout-color: 154, 153, 150;
-      --checkbox-color: rgb(181, 131, 90);
-      --checkbox-color-hover: rgba(181, 131, 90, 75%);
-      --h1-color: rgba(181, 131, 90, 75%);
-      --link-color: rgb(181, 131, 90);
-      --link-color-hover: rgba(181, 131, 90, 85%);
-      --link-external-color: rgb(181, 131, 90);
-      --link-external-color-hover: rgba(181, 131, 90, 85%);
       background-color: rgba(181, 131, 90, 0.1);
-      border-color: rgba(181, 131, 90, 0.25);
-      border-radius: 12px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow: #0002 0 2px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -904,24 +632,7 @@ html {
     &[data-callout="faq"] {
       --callout-color: 229, 165, 10;
 
-      --callout-color: 154, 153, 150;
-      --checkbox-color: rgb(181, 131, 90);
-      --checkbox-color-hover: rgba(181, 131, 90, 75%);
-      --h1-color: rgba(181, 131, 90, 75%);
-      --link-color: rgb(181, 131, 90);
-      --link-color-hover: rgba(181, 131, 90, 85%);
-      --link-external-color: rgb(181, 131, 90);
-      --link-external-color-hover: rgba(181, 131, 90, 85%);
       background-color: rgba(181, 131, 90, 0.1);
-      border-color: rgba(181, 131, 90, 0.25);
-      border-radius: 12px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow: #0002 0 2px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -930,24 +641,7 @@ html {
     &[data-callout="warning"] {
       --callout-color: 255, 120, 0;
 
-      --callout-color: 154, 153, 150;
-      --checkbox-color: rgb(181, 131, 90);
-      --checkbox-color-hover: rgba(181, 131, 90, 75%);
-      --h1-color: rgba(181, 131, 90, 75%);
-      --link-color: rgb(181, 131, 90);
-      --link-color-hover: rgba(181, 131, 90, 85%);
-      --link-external-color: rgb(181, 131, 90);
-      --link-external-color-hover: rgba(181, 131, 90, 85%);
       background-color: rgba(181, 131, 90, 0.1);
-      border-color: rgba(181, 131, 90, 0.25);
-      border-radius: 12px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow: #0002 0 2px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -956,24 +650,7 @@ html {
     &[data-callout="caution"] {
       --callout-color: 255, 120, 0;
 
-      --callout-color: 154, 153, 150;
-      --checkbox-color: rgb(181, 131, 90);
-      --checkbox-color-hover: rgba(181, 131, 90, 75%);
-      --h1-color: rgba(181, 131, 90, 75%);
-      --link-color: rgb(181, 131, 90);
-      --link-color-hover: rgba(181, 131, 90, 85%);
-      --link-external-color: rgb(181, 131, 90);
-      --link-external-color-hover: rgba(181, 131, 90, 85%);
       background-color: rgba(181, 131, 90, 0.1);
-      border-color: rgba(181, 131, 90, 0.25);
-      border-radius: 12px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow: #0002 0 2px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -982,24 +659,7 @@ html {
     &[data-callout="attention"] {
       --callout-color: 255, 120, 0;
 
-      --callout-color: 154, 153, 150;
-      --checkbox-color: rgb(181, 131, 90);
-      --checkbox-color-hover: rgba(181, 131, 90, 75%);
-      --h1-color: rgba(181, 131, 90, 75%);
-      --link-color: rgb(181, 131, 90);
-      --link-color-hover: rgba(181, 131, 90, 85%);
-      --link-external-color: rgb(181, 131, 90);
-      --link-external-color-hover: rgba(181, 131, 90, 85%);
       background-color: rgba(181, 131, 90, 0.1);
-      border-color: rgba(181, 131, 90, 0.25);
-      border-radius: 12px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow: #0002 0 2px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1008,24 +668,7 @@ html {
     &[data-callout="failure"] {
       --callout-color: 237, 51, 59;
 
-      --callout-color: 154, 153, 150;
-      --checkbox-color: rgb(181, 131, 90);
-      --checkbox-color-hover: rgba(181, 131, 90, 75%);
-      --h1-color: rgba(181, 131, 90, 75%);
-      --link-color: rgb(181, 131, 90);
-      --link-color-hover: rgba(181, 131, 90, 85%);
-      --link-external-color: rgb(181, 131, 90);
-      --link-external-color-hover: rgba(181, 131, 90, 85%);
       background-color: rgba(181, 131, 90, 0.1);
-      border-color: rgba(181, 131, 90, 0.25);
-      border-radius: 12px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow: #0002 0 2px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1034,24 +677,7 @@ html {
     &[data-callout="fail"] {
       --callout-color: 237, 51, 59;
 
-      --callout-color: 154, 153, 150;
-      --checkbox-color: rgb(181, 131, 90);
-      --checkbox-color-hover: rgba(181, 131, 90, 75%);
-      --h1-color: rgba(181, 131, 90, 75%);
-      --link-color: rgb(181, 131, 90);
-      --link-color-hover: rgba(181, 131, 90, 85%);
-      --link-external-color: rgb(181, 131, 90);
-      --link-external-color-hover: rgba(181, 131, 90, 85%);
       background-color: rgba(181, 131, 90, 0.1);
-      border-color: rgba(181, 131, 90, 0.25);
-      border-radius: 12px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow: #0002 0 2px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1060,24 +686,7 @@ html {
     &[data-callout="missing"] {
       --callout-color: 237, 51, 59;
 
-      --callout-color: 154, 153, 150;
-      --checkbox-color: rgb(181, 131, 90);
-      --checkbox-color-hover: rgba(181, 131, 90, 75%);
-      --h1-color: rgba(181, 131, 90, 75%);
-      --link-color: rgb(181, 131, 90);
-      --link-color-hover: rgba(181, 131, 90, 85%);
-      --link-external-color: rgb(181, 131, 90);
-      --link-external-color-hover: rgba(181, 131, 90, 85%);
       background-color: rgba(181, 131, 90, 0.1);
-      border-color: rgba(181, 131, 90, 0.25);
-      border-radius: 12px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow: #0002 0 2px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1086,24 +695,7 @@ html {
     &[data-callout="danger"] {
       --callout-color: 237, 51, 59;
 
-      --callout-color: 154, 153, 150;
-      --checkbox-color: rgb(181, 131, 90);
-      --checkbox-color-hover: rgba(181, 131, 90, 75%);
-      --h1-color: rgba(181, 131, 90, 75%);
-      --link-color: rgb(181, 131, 90);
-      --link-color-hover: rgba(181, 131, 90, 85%);
-      --link-external-color: rgb(181, 131, 90);
-      --link-external-color-hover: rgba(181, 131, 90, 85%);
       background-color: rgba(181, 131, 90, 0.1);
-      border-color: rgba(181, 131, 90, 0.25);
-      border-radius: 12px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow: #0002 0 2px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1112,24 +704,7 @@ html {
     &[data-callout="error"] {
       --callout-color: 237, 51, 59;
 
-      --callout-color: 154, 153, 150;
-      --checkbox-color: rgb(181, 131, 90);
-      --checkbox-color-hover: rgba(181, 131, 90, 75%);
-      --h1-color: rgba(181, 131, 90, 75%);
-      --link-color: rgb(181, 131, 90);
-      --link-color-hover: rgba(181, 131, 90, 85%);
-      --link-external-color: rgb(181, 131, 90);
-      --link-external-color-hover: rgba(181, 131, 90, 85%);
       background-color: rgba(181, 131, 90, 0.1);
-      border-color: rgba(181, 131, 90, 0.25);
-      border-radius: 12px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow: #0002 0 2px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1138,24 +713,7 @@ html {
     &[data-callout="bug"] {
       --callout-color: 237, 51, 59;
 
-      --callout-color: 154, 153, 150;
-      --checkbox-color: rgb(181, 131, 90);
-      --checkbox-color-hover: rgba(181, 131, 90, 75%);
-      --h1-color: rgba(181, 131, 90, 75%);
-      --link-color: rgb(181, 131, 90);
-      --link-color-hover: rgba(181, 131, 90, 85%);
-      --link-external-color: rgb(181, 131, 90);
-      --link-external-color-hover: rgba(181, 131, 90, 85%);
       background-color: rgba(181, 131, 90, 0.1);
-      border-color: rgba(181, 131, 90, 0.25);
-      border-radius: 12px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow: #0002 0 2px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1164,24 +722,7 @@ html {
     &[data-callout="example"] {
       --callout-color: 192, 97, 203;
 
-      --callout-color: 154, 153, 150;
-      --checkbox-color: rgb(181, 131, 90);
-      --checkbox-color-hover: rgba(181, 131, 90, 75%);
-      --h1-color: rgba(181, 131, 90, 75%);
-      --link-color: rgb(181, 131, 90);
-      --link-color-hover: rgba(181, 131, 90, 85%);
-      --link-external-color: rgb(181, 131, 90);
-      --link-external-color-hover: rgba(181, 131, 90, 85%);
       background-color: rgba(181, 131, 90, 0.1);
-      border-color: rgba(181, 131, 90, 0.25);
-      border-radius: 12px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow: #0002 0 2px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1190,24 +731,7 @@ html {
     &[data-callout="quote"] {
       --callout-color: 181, 131, 90;
 
-      --callout-color: 154, 153, 150;
-      --checkbox-color: rgb(181, 131, 90);
-      --checkbox-color-hover: rgba(181, 131, 90, 75%);
-      --h1-color: rgba(181, 131, 90, 75%);
-      --link-color: rgb(181, 131, 90);
-      --link-color-hover: rgba(181, 131, 90, 85%);
-      --link-external-color: rgb(181, 131, 90);
-      --link-external-color-hover: rgba(181, 131, 90, 85%);
       background-color: rgba(181, 131, 90, 0.1);
-      border-color: rgba(181, 131, 90, 0.25);
-      border-radius: 12px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow: #0002 0 2px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1216,24 +740,7 @@ html {
     &[data-callout="cite"] {
       --callout-color: 181, 131, 90;
 
-      --callout-color: 154, 153, 150;
-      --checkbox-color: rgb(181, 131, 90);
-      --checkbox-color-hover: rgba(181, 131, 90, 75%);
-      --h1-color: rgba(181, 131, 90, 75%);
-      --link-color: rgb(181, 131, 90);
-      --link-color-hover: rgba(181, 131, 90, 85%);
-      --link-external-color: rgb(181, 131, 90);
-      --link-external-color-hover: rgba(181, 131, 90, 85%);
       background-color: rgba(181, 131, 90, 0.1);
-      border-color: rgba(181, 131, 90, 0.25);
-      border-radius: 12px;
-      border-style: solid;
-      border-width: 0px;
-      box-shadow: #0002 0 2px 6px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 0;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1746,13 +1253,6 @@ body {
   /* METADATA */
   .content-meta {
     color: #dadada;
-    cursor: text;
-    flex-grow: 1;
-    font-size: calc(16px * 0.937);
-    max-height: 300px;
-    padding: 4px 8px;
-    unicode-bidi: plaintext;
-    white-space: pre-wrap;
 
     color: var(--text-normal);
   }
@@ -1760,7 +1260,6 @@ body {
   /* BREADCRUMBS */
   .breadcrumbs-element p {
     color: #666666;
-    padding: 2px 1px;
   }
 
   /* BACKLINKS */
@@ -1781,7 +1280,6 @@ body {
 
     ul li {
       color: #dadada;
-      padding-inline-start: 8px;
 
       font-weight: 500;
     }
@@ -1799,17 +1297,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      --font-weight: 600;
       color: hsl(220, 3%, 12%);
-      font-family: inherit;
-      font-size: 1.602em;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 600;
-      letter-spacing: inherit;
-      line-height: 1.2;
-      margin-block-end: 0rem;
-      margin-block-start: 0rem;
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1824,15 +1312,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        align-items: center;
         color: hsla(0, 0%, 100%, 0.067);
-        display: flex;
-        flex: 0 0 auto;
-        justify-content: center;
-        margin-inline-start: calc(-1 * 20px);
-        opacity: 1;
-        position: absolute;
-        width: 16px;
 
         text-overflow: ellipsis;
         position: relative;
@@ -1953,17 +1433,7 @@ body {
 
   /* TOC */
   .toc {
-    --font-weight: 600;
     color: inherit;
-    font-family: inherit;
-    font-size: 1.424em;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 600;
-    letter-spacing: inherit;
-    line-height: 1.3;
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
 
     button.toc-header {
       h3 {
@@ -1982,17 +1452,7 @@ body {
         margin-block: 0;
       }
 
-      --font-weight: 600;
       color: inherit;
-      font-family: inherit;
-      font-size: 1.424em;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 600;
-      letter-spacing: inherit;
-      line-height: 1.3;
-      margin-block-end: 0rem;
-      margin-block-start: 0rem;
 
       color: inherit;
     }
@@ -2102,72 +1562,15 @@ body {
     & > .search-container {
       & > .search-space {
         background-color: hsl(220, 3%, 12%);
-        border: 0 solid var(--color-base-40, #555555);
-        border-radius: 12px;
-        box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-          0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
 
-        background-color: hsl(220, 3%, 12%);
         border: 0 solid var(--color-base-40, #555555);
-        border-radius: 12px;
-        box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-          0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
 
-        background-color: hsl(220, 3%, 12%);
-        border: 0 solid var(--color-base-40, #555555);
         border-radius: 12px;
-        box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-          0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
 
-        background-color: hsl(220, 3%, 12%);
-        border: 0 solid var(--color-base-40, #555555);
-        border-radius: 12px;
         box-shadow:
           0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
           0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
           0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
 
         color: var(--text-normal);
         background-color: var(--background-secondary);
@@ -2190,129 +1593,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          --background-modifier-border: #363636;
-          --background-modifier-border-focus: #555555;
-          --background-modifier-border-hover: #3f3f3f;
-          --background-modifier-hover: #8883;
-          --background-primary: light-dark(hsl(0, 0%, 98%), hsl(220, 3%, 12%));
-          --background-primary-alt: light-dark(
-            hsl(0, 0%, 95%),
-            hsl(290, 1%, 15%)
-          );
-          --background-secondary: light-dark(hsl(0, 0%, 92%), hsl(0, 0%, 19%));
-          --bold-color: inherit;
-          --bold-weight: calc(600 + 200);
-          --checkbox-border-color: #666666;
-          --checkbox-border-color-hover: #b3b3b3;
-          --checkbox-color: hsla(0, 0%, 100%, 0.067);
-          --checkbox-color-hover: hsl(
-            calc(213 - 3),
-            calc(88% * 1.02),
-            calc(66% * 1.15)
-          );
-          --checkbox-marker-color: hsl(220, 3%, 12%);
-          --checkbox-radius: 4px;
-          --checkbox-size: 16px;
-          --code-background: hsl(0, 0%, 19%);
-          --code-comment: #666666;
-          --code-function: #f6d32d;
-          --code-important: #ff7800;
-          --code-keyword: var(--pink-3);
-          --code-normal: #dadada;
-          --code-property: #34aab4;
-          --code-punctuation: #b3b3b3;
-          --code-string: #33d17a;
-          --code-tag: #e01b24;
-          --code-value: #9141ac;
-          --collapse-icon-color: #b3b3b3;
-          --collapse-icon-color-collapsed: #666666;
-          --color-accent-2: light-dark(
-            hsl(calc(213 - 3), calc(88% * 1.02), calc(66% * 1.15)),
-            hsl(calc(213 - 5), calc(88% * 1.05), calc(66% * 1.29))
-          );
-          --color-accent-hsl: light-dark(213, 88%, 66%, 213, 88%, 66%);
-          --color-base-00: light-dark(#ffffff, #1e1e1e);
-          --color-base-10: light-dark(#fafafa, #242424);
-          --color-base-100: light-dark(#222222, #dadada);
-          --color-base-20: light-dark(#f6f6f6, #262626);
-          --color-base-30: light-dark(#e0e0e0, #363636);
-          --color-base-35: light-dark(#d4d4d4, #3f3f3f);
-          --color-base-40: light-dark(#bdbdbd, #555555);
-          --color-base-50: light-dark(#ababab, #666666);
-          --color-base-70: light-dark(#5c5c5c, #b3b3b3);
-          --cursor-link: pointer;
-          --font-default:
-            ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-            "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-            "Segoe UI Symbol", sans-serif;
-          --font-monospace:
-            "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono",
-            "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
-            "Consolas", "Source Code Pro", monospace;
-          --font-text:
-            "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-            system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-            "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-          --font-weight: 400;
-          --graph-line: var(--color-base-35, #555555);
-          --graph-node-tag: #33d17a;
-          --graph-node-unresolved: #666666;
-          --h1-color: inherit;
-          --h1-font: inherit;
-          --h3-line-height: 1.3;
-          --hr-color: transparent;
-          --hr-thickness: 2px;
-          --icon-color: #dadada;
-          --inline-title-color: hsl(220, 3%, 12%);
-          --inline-title-font: inherit;
-          --interactive-accent-hsl: 213, 88%, 66%;
-          --italic-color: inherit;
-          --link-color: #dadada;
-          --link-color-hover: #dadada;
-          --link-external-color: #dadada;
-          --link-external-color-hover: #dadada;
-          --link-external-filter: none;
-          --link-weight: var(--link-weight);
-          --nav-item-background-hover: rgba(255, 255, 255, 0.15);
-          --nav-item-children-margin-start: 12px;
-          --nav-item-children-padding-start: 4px;
-          --p-spacing: 1rem;
-          --search-icon-color: #b3b3b3;
-          --tag-background: hsla(213, 88%, 66%, 0.1);
-          --tag-background-hover: hsla(213, 88%, 66%, 0.2);
-          --tag-border-color: hsla(213, 88%, 66%, 0.15);
-          --tag-border-color-hover: hsla(213, 88%, 66%, 0.15);
-          --tag-border-width: 0px;
-          --tag-color: #dadada;
-          --tag-color-hover: #dadada;
-          --tag-decoration: none;
-          --tag-decoration-hover: none;
-          --tag-radius: 2em;
-          --tag-weight: inherit;
-          --text-accent: light-dark(#1c71d8, #62a0ea);
-          --text-accent-hover: light-dark(#3584e4, #99c1f1);
-          --text-faint: #666666;
-          --text-highlight-bg: rgba(255, 208, 0, 0.4);
-          --text-muted: #b3b3b3;
-          --text-normal: #dadada;
-          -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-          -webkit-user-select: none;
-          background-color: hsl(220, 3%, 12%);
-          caret-color: #dadada;
           color: #dadada;
-          contain: initial;
-          font-family: system-ui;
-          font-size: 16px;
-          height: 100%;
-          line-height: 1.3;
-          margin: 0;
-          overflow: auto;
-          overscroll-behavior: none;
-          padding: 0;
-          padding-top: 0;
-          text-rendering: optimizeLegibility;
-          user-select: none;
-          width: 100%;
 
           background: transparent;
           margin-bottom: 0;
@@ -2359,146 +1640,11 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                --background-modifier-border: #363636;
-                --background-modifier-border-focus: #555555;
-                --background-modifier-border-hover: #3f3f3f;
-                --background-modifier-hover: #8883;
-                --background-primary: light-dark(
-                  hsl(0, 0%, 98%),
-                  hsl(220, 3%, 12%)
-                );
-                --background-primary-alt: light-dark(
-                  hsl(0, 0%, 95%),
-                  hsl(290, 1%, 15%)
-                );
-                --background-secondary: light-dark(
-                  hsl(0, 0%, 92%),
-                  hsl(0, 0%, 19%)
-                );
-                --bold-color: inherit;
-                --bold-weight: calc(600 + 200);
-                --checkbox-border-color: #666666;
-                --checkbox-border-color-hover: #b3b3b3;
-                --checkbox-color: hsla(0, 0%, 100%, 0.067);
-                --checkbox-color-hover: hsl(
-                  calc(213 - 3),
-                  calc(88% * 1.02),
-                  calc(66% * 1.15)
-                );
-                --checkbox-marker-color: hsl(220, 3%, 12%);
-                --checkbox-radius: 4px;
-                --checkbox-size: 16px;
-                --code-background: hsl(0, 0%, 19%);
-                --code-comment: #666666;
-                --code-function: #f6d32d;
-                --code-important: #ff7800;
-                --code-keyword: var(--pink-3);
-                --code-normal: #dadada;
-                --code-property: #34aab4;
-                --code-punctuation: #b3b3b3;
-                --code-string: #33d17a;
-                --code-tag: #e01b24;
-                --code-value: #9141ac;
-                --collapse-icon-color: #b3b3b3;
-                --collapse-icon-color-collapsed: #666666;
-                --color-accent-2: light-dark(
-                  hsl(calc(213 - 3), calc(88% * 1.02), calc(66% * 1.15)),
-                  hsl(calc(213 - 5), calc(88% * 1.05), calc(66% * 1.29))
-                );
-                --color-accent-hsl: light-dark(213, 88%, 66%, 213, 88%, 66%);
-                --color-base-00: light-dark(#ffffff, #1e1e1e);
-                --color-base-10: light-dark(#fafafa, #242424);
-                --color-base-100: light-dark(#222222, #dadada);
-                --color-base-20: light-dark(#f6f6f6, #262626);
-                --color-base-30: light-dark(#e0e0e0, #363636);
-                --color-base-35: light-dark(#d4d4d4, #3f3f3f);
-                --color-base-40: light-dark(#bdbdbd, #555555);
-                --color-base-50: light-dark(#ababab, #666666);
-                --color-base-70: light-dark(#5c5c5c, #b3b3b3);
-                --cursor-link: pointer;
-                --font-default:
-                  ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-                  "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-                  "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-                --font-monospace:
-                  "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono",
-                  "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo,
-                  Monaco, "Consolas", "Source Code Pro", monospace;
-                --font-text:
-                  "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-                  system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-                  "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-                --font-weight: 400;
-                --graph-line: var(--color-base-35, #555555);
-                --graph-node-tag: #33d17a;
-                --graph-node-unresolved: #666666;
-                --h1-color: inherit;
-                --h1-font: inherit;
-                --h3-line-height: 1.3;
-                --hr-color: transparent;
-                --hr-thickness: 2px;
-                --icon-color: #dadada;
-                --inline-title-color: hsl(220, 3%, 12%);
-                --inline-title-font: inherit;
-                --interactive-accent-hsl: 213, 88%, 66%;
-                --italic-color: inherit;
-                --link-color: #dadada;
-                --link-color-hover: #dadada;
-                --link-external-color: #dadada;
-                --link-external-color-hover: #dadada;
-                --link-external-filter: none;
-                --link-weight: var(--link-weight);
-                --nav-item-background-hover: rgba(255, 255, 255, 0.15);
-                --nav-item-children-margin-start: 12px;
-                --nav-item-children-padding-start: 4px;
-                --p-spacing: 1rem;
-                --search-icon-color: #b3b3b3;
-                --tag-background: hsla(213, 88%, 66%, 0.1);
-                --tag-background-hover: hsla(213, 88%, 66%, 0.2);
-                --tag-border-color: hsla(213, 88%, 66%, 0.15);
-                --tag-border-color-hover: hsla(213, 88%, 66%, 0.15);
-                --tag-border-width: 0px;
-                --tag-color: #dadada;
-                --tag-color-hover: #dadada;
-                --tag-decoration: none;
-                --tag-decoration-hover: none;
-                --tag-radius: 2em;
-                --tag-weight: inherit;
-                --text-accent: light-dark(#1c71d8, #62a0ea);
-                --text-accent-hover: light-dark(#3584e4, #99c1f1);
-                --text-faint: #666666;
-                --text-highlight-bg: rgba(255, 208, 0, 0.4);
-                --text-muted: #b3b3b3;
-                --text-normal: #dadada;
-                -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-                -webkit-user-select: none;
-                background-color: hsl(220, 3%, 12%);
-                caret-color: #dadada;
+
                 color: #dadada;
-                contain: initial;
-                font-family: system-ui;
-                font-size: 16px;
-                height: 100%;
-                line-height: 1.3;
-                margin: 0;
-                overflow: auto;
-                overscroll-behavior: none;
-                padding: 0;
-                padding-top: 0;
-                text-rendering: optimizeLegibility;
-                user-select: none;
-                width: 100%;
 
                 &.match-tag {
-                  background-color: hsla(213, 88%, 66%, 0.2);
-                  border: 0px solid hsla(213, 88%, 66%, 0.15);
-                  border-radius: 2em;
                   color: #dadada;
-                  font-size: 0.875em;
-                  font-weight: inherit;
-                  line-height: 1;
-                  padding: 0.25em 0.65em;
-                  text-decoration: none;
                 }
               }
             }
@@ -2584,41 +1730,11 @@ body {
     border: unset;
     background-color: var(--background-primary);
     & .popover-inner {
-      background-color: hsl(220, 3%, 12%);
       border: 1px solid transparent;
-      border-radius: 8px;
-      box-shadow:
-        0px 1px 2px rgba(0, 0, 0, 0.121),
-        0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-        0px 15px 30px rgba(0, 0, 0, 0.3);
-      display: flex;
-      max-height: 95vh;
-      position: absolute;
-      z-index: 30;
 
       background-color: hsl(220, 3%, 12%);
-      border: 1px solid transparent;
-      border-radius: 8px;
-      box-shadow:
-        0px 1px 2px rgba(0, 0, 0, 0.121),
-        0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-        0px 15px 30px rgba(0, 0, 0, 0.3);
-      display: flex;
-      max-height: 95vh;
-      position: absolute;
-      z-index: 30;
 
-      background-color: hsl(220, 3%, 12%);
-      border: 1px solid transparent;
       border-radius: 8px;
-      box-shadow:
-        0px 1px 2px rgba(0, 0, 0, 0.121),
-        0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-        0px 15px 30px rgba(0, 0, 0, 0.3);
-      display: flex;
-      max-height: 95vh;
-      position: absolute;
-      z-index: 30;
 
       background-color: var(--background-primary);
     }

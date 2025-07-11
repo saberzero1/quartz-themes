@@ -561,16 +561,7 @@ html {
     overflow: hidden;
     padding: 12px 24px 12px12px;
 
-    --callout-color: 145, 168, 110;
     background-color: rgba(223, 191, 116, 0.1);
-    border-color: rgba(223, 191, 116, 100%);
-    border-radius: 6px;
-    border-style: solid;
-    border-width: 1px;
-    margin: 1em 0;
-    mix-blend-mode: normal;
-    overflow: hidden;
-    padding: 12px 24px 12px12px;
 
     background-color: var(--bg);
     border-color: var(--border);
@@ -580,26 +571,8 @@ html {
 
     &[data-callout] {
       --callout-color: 145, 168, 110;
-      background-color: rgba(223, 191, 116, 0.1);
-      border-color: rgba(223, 191, 116, 100%);
-      border-radius: 6px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
-      --callout-color: 145, 168, 110;
       background-color: rgba(223, 191, 116, 0.1);
-      border-color: rgba(223, 191, 116, 100%);
-      border-radius: 6px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -608,16 +581,7 @@ html {
     &[data-callout="abstract"] {
       --callout-color: 223, 191, 116;
 
-      --callout-color: 145, 168, 110;
       background-color: rgba(223, 191, 116, 0.1);
-      border-color: rgba(223, 191, 116, 100%);
-      border-radius: 6px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -626,16 +590,7 @@ html {
     &[data-callout="summary"] {
       --callout-color: 223, 191, 116;
 
-      --callout-color: 145, 168, 110;
       background-color: rgba(223, 191, 116, 0.1);
-      border-color: rgba(223, 191, 116, 100%);
-      border-radius: 6px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -644,16 +599,7 @@ html {
     &[data-callout="tldr"] {
       --callout-color: 223, 191, 116;
 
-      --callout-color: 145, 168, 110;
       background-color: rgba(223, 191, 116, 0.1);
-      border-color: rgba(223, 191, 116, 100%);
-      border-radius: 6px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -662,16 +608,7 @@ html {
     &[data-callout="info"] {
       --callout-color: 123, 171, 212;
 
-      --callout-color: 145, 168, 110;
       background-color: rgba(223, 191, 116, 0.1);
-      border-color: rgba(223, 191, 116, 100%);
-      border-radius: 6px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -680,16 +617,7 @@ html {
     &[data-callout="todo"] {
       --callout-color: 123, 171, 212;
 
-      --callout-color: 145, 168, 110;
       background-color: rgba(223, 191, 116, 0.1);
-      border-color: rgba(223, 191, 116, 100%);
-      border-radius: 6px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -698,16 +626,7 @@ html {
     &[data-callout="important"] {
       --callout-color: 145, 168, 110;
 
-      --callout-color: 145, 168, 110;
       background-color: rgba(223, 191, 116, 0.1);
-      border-color: rgba(223, 191, 116, 100%);
-      border-radius: 6px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -716,16 +635,7 @@ html {
     &[data-callout="tip"] {
       --callout-color: 155, 122, 209;
 
-      --callout-color: 145, 168, 110;
       background-color: rgba(223, 191, 116, 0.1);
-      border-color: rgba(223, 191, 116, 100%);
-      border-radius: 6px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -734,16 +644,7 @@ html {
     &[data-callout="hint"] {
       --callout-color: 155, 122, 209;
 
-      --callout-color: 145, 168, 110;
       background-color: rgba(223, 191, 116, 0.1);
-      border-color: rgba(223, 191, 116, 100%);
-      border-radius: 6px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -752,16 +653,7 @@ html {
     &[data-callout="success"] {
       --callout-color: 145, 168, 110;
 
-      --callout-color: 145, 168, 110;
       background-color: rgba(223, 191, 116, 0.1);
-      border-color: rgba(223, 191, 116, 100%);
-      border-radius: 6px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -770,16 +662,7 @@ html {
     &[data-callout="check"] {
       --callout-color: 145, 168, 110;
 
-      --callout-color: 145, 168, 110;
       background-color: rgba(223, 191, 116, 0.1);
-      border-color: rgba(223, 191, 116, 100%);
-      border-radius: 6px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -788,16 +671,7 @@ html {
     &[data-callout="done"] {
       --callout-color: 145, 168, 110;
 
-      --callout-color: 145, 168, 110;
       background-color: rgba(223, 191, 116, 0.1);
-      border-color: rgba(223, 191, 116, 100%);
-      border-radius: 6px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -806,16 +680,7 @@ html {
     &[data-callout="question"] {
       --callout-color: 155, 122, 209;
 
-      --callout-color: 145, 168, 110;
       background-color: rgba(223, 191, 116, 0.1);
-      border-color: rgba(223, 191, 116, 100%);
-      border-radius: 6px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -824,16 +689,7 @@ html {
     &[data-callout="help"] {
       --callout-color: 155, 122, 209;
 
-      --callout-color: 145, 168, 110;
       background-color: rgba(223, 191, 116, 0.1);
-      border-color: rgba(223, 191, 116, 100%);
-      border-radius: 6px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -842,16 +698,7 @@ html {
     &[data-callout="faq"] {
       --callout-color: 155, 122, 209;
 
-      --callout-color: 145, 168, 110;
       background-color: rgba(223, 191, 116, 0.1);
-      border-color: rgba(223, 191, 116, 100%);
-      border-radius: 6px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -860,16 +707,7 @@ html {
     &[data-callout="warning"] {
       --callout-color: 142, 70, 70;
 
-      --callout-color: 145, 168, 110;
       background-color: rgba(223, 191, 116, 0.1);
-      border-color: rgba(223, 191, 116, 100%);
-      border-radius: 6px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -878,16 +716,7 @@ html {
     &[data-callout="caution"] {
       --callout-color: 142, 70, 70;
 
-      --callout-color: 145, 168, 110;
       background-color: rgba(223, 191, 116, 0.1);
-      border-color: rgba(223, 191, 116, 100%);
-      border-radius: 6px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -896,16 +725,7 @@ html {
     &[data-callout="attention"] {
       --callout-color: 142, 70, 70;
 
-      --callout-color: 145, 168, 110;
       background-color: rgba(223, 191, 116, 0.1);
-      border-color: rgba(223, 191, 116, 100%);
-      border-radius: 6px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -914,16 +734,7 @@ html {
     &[data-callout="failure"] {
       --callout-color: 142, 70, 70;
 
-      --callout-color: 145, 168, 110;
       background-color: rgba(223, 191, 116, 0.1);
-      border-color: rgba(223, 191, 116, 100%);
-      border-radius: 6px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -932,16 +743,7 @@ html {
     &[data-callout="fail"] {
       --callout-color: 142, 70, 70;
 
-      --callout-color: 145, 168, 110;
       background-color: rgba(223, 191, 116, 0.1);
-      border-color: rgba(223, 191, 116, 100%);
-      border-radius: 6px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -950,16 +752,7 @@ html {
     &[data-callout="missing"] {
       --callout-color: 142, 70, 70;
 
-      --callout-color: 145, 168, 110;
       background-color: rgba(223, 191, 116, 0.1);
-      border-color: rgba(223, 191, 116, 100%);
-      border-radius: 6px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -968,16 +761,7 @@ html {
     &[data-callout="danger"] {
       --callout-color: 142, 70, 70;
 
-      --callout-color: 145, 168, 110;
       background-color: rgba(223, 191, 116, 0.1);
-      border-color: rgba(223, 191, 116, 100%);
-      border-radius: 6px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -986,16 +770,7 @@ html {
     &[data-callout="error"] {
       --callout-color: 142, 70, 70;
 
-      --callout-color: 145, 168, 110;
       background-color: rgba(223, 191, 116, 0.1);
-      border-color: rgba(223, 191, 116, 100%);
-      border-radius: 6px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1004,16 +779,7 @@ html {
     &[data-callout="bug"] {
       --callout-color: 223, 191, 116;
 
-      --callout-color: 145, 168, 110;
       background-color: rgba(223, 191, 116, 0.1);
-      border-color: rgba(223, 191, 116, 100%);
-      border-radius: 6px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1022,16 +788,7 @@ html {
     &[data-callout="example"] {
       --callout-color: 155, 122, 209;
 
-      --callout-color: 145, 168, 110;
       background-color: rgba(223, 191, 116, 0.1);
-      border-color: rgba(223, 191, 116, 100%);
-      border-radius: 6px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1040,16 +797,7 @@ html {
     &[data-callout="quote"] {
       --callout-color: 223, 191, 116;
 
-      --callout-color: 145, 168, 110;
       background-color: rgba(223, 191, 116, 0.1);
-      border-color: rgba(223, 191, 116, 100%);
-      border-radius: 6px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1058,16 +806,7 @@ html {
     &[data-callout="cite"] {
       --callout-color: 223, 191, 116;
 
-      --callout-color: 145, 168, 110;
       background-color: rgba(223, 191, 116, 0.1);
-      border-color: rgba(223, 191, 116, 100%);
-      border-radius: 6px;
-      border-style: solid;
-      border-width: 1px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1576,13 +1315,6 @@ body {
   /* METADATA */
   .content-meta {
     color: #707070;
-    cursor: text;
-    flex-grow: 1;
-    font-size: 16px;
-    max-height: 300px;
-    padding: 4px 8px;
-    unicode-bidi: plaintext;
-    white-space: pre-wrap;
 
     color: var(--text-normal);
   }
@@ -1590,7 +1322,6 @@ body {
   /* BREADCRUMBS */
   .breadcrumbs-element p {
     color: #6a6a6a;
-    padding: 2px 1px;
   }
 
   /* BACKLINKS */
@@ -1611,7 +1342,6 @@ body {
 
     ul li {
       color: #9d9d9d;
-      padding-inline-start: 8px;
 
       font-weight: 500;
     }
@@ -1629,17 +1359,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      --font-weight: 650;
       color: #e0c252;
-      font-family: "Noto Sans", sans-serif;
-      font-size: 1.602em;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 650;
-      letter-spacing: -0.015em;
-      line-height: 1.2;
-      margin-block-end: 0rem;
-      margin-block-start: 0rem;
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1654,15 +1374,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        align-items: center;
         color: #778e55;
-        display: flex;
-        flex: 0 0 auto;
-        justify-content: center;
-        margin-inline-start: calc(-1 * 20px);
-        opacity: 1;
-        position: absolute;
-        width: 16px;
 
         text-overflow: ellipsis;
         position: relative;
@@ -1777,17 +1489,7 @@ body {
 
   /* TOC */
   .toc {
-    --font-weight: 650;
     color: #849e5f;
-    font-family: "Noto Sans", sans-serif;
-    font-size: 1.424em;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 650;
-    letter-spacing: -0.015em;
-    line-height: 1.3;
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
 
     button.toc-header {
       h3 {
@@ -1806,17 +1508,7 @@ body {
         margin-block: 0;
       }
 
-      --font-weight: 650;
       color: #849e5f;
-      font-family: "Noto Sans", sans-serif;
-      font-size: 1.424em;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 650;
-      letter-spacing: -0.015em;
-      line-height: 1.3;
-      margin-block-end: 0rem;
-      margin-block-start: 0rem;
 
       color: inherit;
     }
@@ -1925,72 +1617,15 @@ body {
     & > .search-container {
       & > .search-space {
         background-color: #252525;
-        border: 1px solid #9d9d9d;
-        border-radius: 0px;
-        box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-          0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
 
-        background-color: #252525;
         border: 1px solid #9d9d9d;
-        border-radius: 0px;
-        box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-          0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
 
-        background-color: #252525;
-        border: 1px solid #9d9d9d;
         border-radius: 0px;
-        box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-          0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
 
-        background-color: #252525;
-        border: 1px solid #9d9d9d;
-        border-radius: 0px;
         box-shadow:
           0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
           0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
           0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
 
         color: var(--text-normal);
         background-color: var(--background-secondary);
@@ -2013,113 +1648,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          --background-modifier-border: light-dark(#404040, #9d9d9d);
-          --background-modifier-border-focus: light-dark(#404040, #9d9d9d);
-          --background-modifier-border-hover: light-dark(#404040, #9d9d9d);
-          --background-modifier-hover: rgba(255, 255, 255, 0.067);
-          --background-primary: light-dark(#ececec, #252525);
-          --background-primary-alt: light-dark(#d7d7d7, #1f1f1f);
-          --background-secondary: light-dark(#e1e1e1, #1d1d1d);
-          --bold-color: light-dark(#596d3a, #778e55);
-          --bold-weight: 600;
-          --checkbox-border-color: light-dark(#596d3a, #778e55);
-          --checkbox-border-color-hover: light-dark(#596d3a, #778e55);
-          --checkbox-color: #778e55;
-          --checkbox-color-hover: light-dark(#d7d7d7, #1f1f1f);
-          --checkbox-marker-color: light-dark(#596d3a, #778e55);
-          --checkbox-radius: 50%;
-          --checkbox-size: 16px;
-          --code-background: #1d1d1d;
-          --code-comment: #6a6a6a;
-          --code-function: #7fbbb8;
-          --code-important: #7babd4;
-          --code-keyword: #9b7ad1;
-          --code-normal: #707070;
-          --code-property: #7babd4;
-          --code-punctuation: #b96b88;
-          --code-string: #91a86e;
-          --code-tag: #7fbbb8;
-          --code-value: #b96b88;
-          --collapse-icon-color: #6a6a6a;
-          --collapse-icon-color-collapsed: #778e55;
-          --color-accent-2: light-dark(
-            hsl(calc(84 - 3), calc(25% * 1.02), calc(66% * 1.15)),
-            hsl(calc(84 - 5), calc(25% * 1.05), calc(66% * 1.29))
-          );
-          --color-base-00: light-dark(#ffffff, #1e1e1e);
-          --color-base-10: light-dark(#fafafa, #242424);
-          --color-base-100: light-dark(#222222, #dadada);
-          --color-base-20: light-dark(#f6f6f6, #262626);
-          --color-base-30: light-dark(#e0e0e0, #363636);
-          --color-base-35: light-dark(#d4d4d4, #3f3f3f);
-          --color-base-40: light-dark(#bdbdbd, #555555);
-          --color-base-50: light-dark(#ababab, #666666);
-          --color-base-70: light-dark(#5c5c5c, #b3b3b3);
-          --cursor-link: pointer;
-          --font-default: "Noto Sans", sans-serif;
-          --font-monospace: "??", "??", "JetBrains Mono", monospace;
-          --font-text: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
-          --font-weight: 400;
-          --graph-line: light-dark(#c4c4c4, #333333);
-          --graph-node-tag: light-dark(#707070, #404040);
-          --graph-node-unresolved: light-dark(#151515, #c4c4c4);
-          --h1-color: light-dark(#596d3a, #778e55);
-          --h1-font: "Noto Sans", sans-serif;
-          --h3-line-height: 1.3;
-          --hr-color: light-dark(#c4c4c4, #333333);
-          --hr-thickness: 1px;
-          --icon-color: light-dark(#596d3a, #778e55);
-          --inline-title-color: #9d9d9d;
-          --inline-title-font: "Noto Sans", sans-serif;
-          --interactive-accent-hsl: #778e55;
-          --italic-color: light-dark(#6a6a6a, #ecd993);
-          --link-color: light-dark(#596d3a, #778e55);
-          --link-color-hover: light-dark(#303b1f, #9db27e);
-          --link-external-color: light-dark(#6a6a6a, #6a6a6a);
-          --link-external-color-hover: light-dark(#404040, #9d9d9d);
-          --link-external-filter: none;
-          --link-weight: var(--link-weight);
-          --nav-item-background-hover: #151515;
-          --nav-item-children-margin-start: 12px;
-          --nav-item-children-padding-start: 4px;
-          --p-spacing: 1rem;
-          --search-icon-color: light-dark(#596d3a, #778e55);
-          --tag-background: light-dark(#596d3a, #778e55);
-          --tag-background-hover: light-dark(#303b1f, #9db27e);
-          --tag-border-color: light-dark(#596d3a, #778e55);
-          --tag-border-color-hover: light-dark(#303b1f, #9db27e);
-          --tag-border-width: 2px;
-          --tag-color: #252525;
-          --tag-color-hover: #252525;
-          --tag-decoration: #252525;
-          --tag-decoration-hover: #252525;
-          --tag-radius: 6px;
-          --tag-weight: 400;
-          --text-accent: light-dark(#596d3a, #778e55);
-          --text-accent-hover: light-dark(#303b1f, #9db27e);
-          --text-faint: light-dark(#6a6a6a, #6a6a6a);
-          --text-highlight-bg: light-dark(#cdd3c3, #404040);
-          --text-muted: light-dark(#555555, #707070);
-          --text-normal: light-dark(#404040, #9d9d9d);
-          -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-          -webkit-user-select: none;
-          background-color: #252525;
-          caret-color: #778e55;
           color: #9d9d9d;
-          contain: initial;
-          font-family:
-            "??", "??", var(--default-font, "??"), "Noto Sans", sans-serif;
-          font-size: 16px;
-          height: 100%;
-          line-height: 1.3;
-          margin: 0;
-          overflow: auto;
-          overscroll-behavior: none;
-          padding: 0;
-          padding-top: 0;
-          text-rendering: optimizeLegibility;
-          user-select: none;
-          width: 100%;
 
           background: transparent;
           margin-bottom: 0;
@@ -2166,131 +1695,11 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                --background-modifier-border: light-dark(#404040, #9d9d9d);
-                --background-modifier-border-focus: light-dark(
-                  #404040,
-                  #9d9d9d
-                );
-                --background-modifier-border-hover: light-dark(
-                  #404040,
-                  #9d9d9d
-                );
-                --background-modifier-hover: rgba(255, 255, 255, 0.067);
-                --background-primary: light-dark(#ececec, #252525);
-                --background-primary-alt: light-dark(#d7d7d7, #1f1f1f);
-                --background-secondary: light-dark(#e1e1e1, #1d1d1d);
-                --bold-color: light-dark(#596d3a, #778e55);
-                --bold-weight: 600;
-                --checkbox-border-color: light-dark(#596d3a, #778e55);
-                --checkbox-border-color-hover: light-dark(#596d3a, #778e55);
-                --checkbox-color: #778e55;
-                --checkbox-color-hover: light-dark(#d7d7d7, #1f1f1f);
-                --checkbox-marker-color: light-dark(#596d3a, #778e55);
-                --checkbox-radius: 50%;
-                --checkbox-size: 16px;
-                --code-background: #1d1d1d;
-                --code-comment: #6a6a6a;
-                --code-function: #7fbbb8;
-                --code-important: #7babd4;
-                --code-keyword: #9b7ad1;
-                --code-normal: #707070;
-                --code-property: #7babd4;
-                --code-punctuation: #b96b88;
-                --code-string: #91a86e;
-                --code-tag: #7fbbb8;
-                --code-value: #b96b88;
-                --collapse-icon-color: #6a6a6a;
-                --collapse-icon-color-collapsed: #778e55;
-                --color-accent-2: light-dark(
-                  hsl(calc(84 - 3), calc(25% * 1.02), calc(66% * 1.15)),
-                  hsl(calc(84 - 5), calc(25% * 1.05), calc(66% * 1.29))
-                );
-                --color-base-00: light-dark(#ffffff, #1e1e1e);
-                --color-base-10: light-dark(#fafafa, #242424);
-                --color-base-100: light-dark(#222222, #dadada);
-                --color-base-20: light-dark(#f6f6f6, #262626);
-                --color-base-30: light-dark(#e0e0e0, #363636);
-                --color-base-35: light-dark(#d4d4d4, #3f3f3f);
-                --color-base-40: light-dark(#bdbdbd, #555555);
-                --color-base-50: light-dark(#ababab, #666666);
-                --color-base-70: light-dark(#5c5c5c, #b3b3b3);
-                --cursor-link: pointer;
-                --font-default: "Noto Sans", sans-serif;
-                --font-monospace: "??", "??", "JetBrains Mono", monospace;
-                --font-text:
-                  "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
-                --font-weight: 400;
-                --graph-line: light-dark(#c4c4c4, #333333);
-                --graph-node-tag: light-dark(#707070, #404040);
-                --graph-node-unresolved: light-dark(#151515, #c4c4c4);
-                --h1-color: light-dark(#596d3a, #778e55);
-                --h1-font: "Noto Sans", sans-serif;
-                --h3-line-height: 1.3;
-                --hr-color: light-dark(#c4c4c4, #333333);
-                --hr-thickness: 1px;
-                --icon-color: light-dark(#596d3a, #778e55);
-                --inline-title-color: #9d9d9d;
-                --inline-title-font: "Noto Sans", sans-serif;
-                --interactive-accent-hsl: #778e55;
-                --italic-color: light-dark(#6a6a6a, #ecd993);
-                --link-color: light-dark(#596d3a, #778e55);
-                --link-color-hover: light-dark(#303b1f, #9db27e);
-                --link-external-color: light-dark(#6a6a6a, #6a6a6a);
-                --link-external-color-hover: light-dark(#404040, #9d9d9d);
-                --link-external-filter: none;
-                --link-weight: var(--link-weight);
-                --nav-item-background-hover: #151515;
-                --nav-item-children-margin-start: 12px;
-                --nav-item-children-padding-start: 4px;
-                --p-spacing: 1rem;
-                --search-icon-color: light-dark(#596d3a, #778e55);
-                --tag-background: light-dark(#596d3a, #778e55);
-                --tag-background-hover: light-dark(#303b1f, #9db27e);
-                --tag-border-color: light-dark(#596d3a, #778e55);
-                --tag-border-color-hover: light-dark(#303b1f, #9db27e);
-                --tag-border-width: 2px;
-                --tag-color: #252525;
-                --tag-color-hover: #252525;
-                --tag-decoration: #252525;
-                --tag-decoration-hover: #252525;
-                --tag-radius: 6px;
-                --tag-weight: 400;
-                --text-accent: light-dark(#596d3a, #778e55);
-                --text-accent-hover: light-dark(#303b1f, #9db27e);
-                --text-faint: light-dark(#6a6a6a, #6a6a6a);
-                --text-highlight-bg: light-dark(#cdd3c3, #404040);
-                --text-muted: light-dark(#555555, #707070);
-                --text-normal: light-dark(#404040, #9d9d9d);
-                -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-                -webkit-user-select: none;
-                background-color: #252525;
-                caret-color: #778e55;
+
                 color: #9d9d9d;
-                contain: initial;
-                font-family:
-                  "??", "??", var(--default-font, "??"), "Noto Sans", sans-serif;
-                font-size: 16px;
-                height: 100%;
-                line-height: 1.3;
-                margin: 0;
-                overflow: auto;
-                overscroll-behavior: none;
-                padding: 0;
-                padding-top: 0;
-                text-rendering: optimizeLegibility;
-                user-select: none;
-                width: 100%;
 
                 &.match-tag {
-                  background-color: #778e55;
-                  border: 2px solid #778e55;
-                  border-radius: 6px;
                   color: #252525;
-                  font-size: 12px;
-                  font-weight: 400;
-                  line-height: 1;
-                  padding: 2px 2px;
-                  text-decoration: #252525;
                 }
               }
             }
@@ -2377,44 +1786,11 @@ body {
     border: unset;
     background-color: var(--background-primary);
     & .popover-inner {
-      background-color: #252525;
       border: 1px solid #9d9d9d;
-      border-radius: 6px;
-      box-shadow:
-        0px 1px 2px rgba(0, 0, 0, 0.121),
-        0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-        0px 15px 30px rgba(0, 0, 0, 0.3);
-      display: flex;
-      max-height: 95vh;
-      padding: 20px;
-      position: relative;
-      z-index: 30;
 
       background-color: #252525;
-      border: 1px solid #9d9d9d;
-      border-radius: 6px;
-      box-shadow:
-        0px 1px 2px rgba(0, 0, 0, 0.121),
-        0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-        0px 15px 30px rgba(0, 0, 0, 0.3);
-      display: flex;
-      max-height: 95vh;
-      padding: 20px;
-      position: relative;
-      z-index: 30;
 
-      background-color: #252525;
-      border: 1px solid #9d9d9d;
       border-radius: 6px;
-      box-shadow:
-        0px 1px 2px rgba(0, 0, 0, 0.121),
-        0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-        0px 15px 30px rgba(0, 0, 0, 0.3);
-      display: flex;
-      max-height: 95vh;
-      padding: 20px;
-      position: relative;
-      z-index: 30;
 
       background-color: var(--background-primary);
     }

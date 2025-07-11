@@ -494,16 +494,7 @@ html {
     overflow: hidden;
     padding: 12px 24px 12px12px;
 
-    --callout-color: 137, 180, 250;
     background-color: rgb(158, 158, 158, 10%);
-    border-color: rgb(158, 158, 158, 60%);
-    border-radius: 4px;
-    border-style: solid;
-    border-width: 0.25px;
-    margin: 1em 0;
-    mix-blend-mode: normal;
-    overflow: hidden;
-    padding: 12px 24px 12px12px;
 
     background-color: var(--bg);
     border-color: var(--border);
@@ -513,26 +504,8 @@ html {
 
     &[data-callout] {
       --callout-color: 137, 180, 250;
-      background-color: rgb(158, 158, 158, 10%);
-      border-color: rgb(158, 158, 158, 60%);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 0.25px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
-      --callout-color: 137, 180, 250;
       background-color: rgb(158, 158, 158, 10%);
-      border-color: rgb(158, 158, 158, 60%);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 0.25px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -541,16 +514,7 @@ html {
     &[data-callout="abstract"] {
       --callout-color: 116, 199, 236;
 
-      --callout-color: 137, 180, 250;
       background-color: rgb(158, 158, 158, 10%);
-      border-color: rgb(158, 158, 158, 60%);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 0.25px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -559,16 +523,7 @@ html {
     &[data-callout="summary"] {
       --callout-color: 116, 199, 236;
 
-      --callout-color: 137, 180, 250;
       background-color: rgb(158, 158, 158, 10%);
-      border-color: rgb(158, 158, 158, 60%);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 0.25px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -577,16 +532,7 @@ html {
     &[data-callout="tldr"] {
       --callout-color: 116, 199, 236;
 
-      --callout-color: 137, 180, 250;
       background-color: rgb(158, 158, 158, 10%);
-      border-color: rgb(158, 158, 158, 60%);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 0.25px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -595,16 +541,7 @@ html {
     &[data-callout="info"] {
       --callout-color: 137, 180, 250;
 
-      --callout-color: 137, 180, 250;
       background-color: rgb(158, 158, 158, 10%);
-      border-color: rgb(158, 158, 158, 60%);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 0.25px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -613,16 +550,7 @@ html {
     &[data-callout="todo"] {
       --callout-color: 137, 180, 250;
 
-      --callout-color: 137, 180, 250;
       background-color: rgb(158, 158, 158, 10%);
-      border-color: rgb(158, 158, 158, 60%);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 0.25px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -631,16 +559,7 @@ html {
     &[data-callout="important"] {
       --callout-color: 116, 199, 236;
 
-      --callout-color: 137, 180, 250;
       background-color: rgb(158, 158, 158, 10%);
-      border-color: rgb(158, 158, 158, 60%);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 0.25px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -649,16 +568,7 @@ html {
     &[data-callout="tip"] {
       --callout-color: 116, 199, 236;
 
-      --callout-color: 137, 180, 250;
       background-color: rgb(158, 158, 158, 10%);
-      border-color: rgb(158, 158, 158, 60%);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 0.25px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -667,16 +577,7 @@ html {
     &[data-callout="hint"] {
       --callout-color: 116, 199, 236;
 
-      --callout-color: 137, 180, 250;
       background-color: rgb(158, 158, 158, 10%);
-      border-color: rgb(158, 158, 158, 60%);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 0.25px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -685,16 +586,7 @@ html {
     &[data-callout="success"] {
       --callout-color: 166, 227, 161;
 
-      --callout-color: 137, 180, 250;
       background-color: rgb(158, 158, 158, 10%);
-      border-color: rgb(158, 158, 158, 60%);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 0.25px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -703,16 +595,7 @@ html {
     &[data-callout="check"] {
       --callout-color: 166, 227, 161;
 
-      --callout-color: 137, 180, 250;
       background-color: rgb(158, 158, 158, 10%);
-      border-color: rgb(158, 158, 158, 60%);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 0.25px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -721,16 +604,7 @@ html {
     &[data-callout="done"] {
       --callout-color: 166, 227, 161;
 
-      --callout-color: 137, 180, 250;
       background-color: rgb(158, 158, 158, 10%);
-      border-color: rgb(158, 158, 158, 60%);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 0.25px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -739,16 +613,7 @@ html {
     &[data-callout="question"] {
       --callout-color: 249, 226, 175;
 
-      --callout-color: 137, 180, 250;
       background-color: rgb(158, 158, 158, 10%);
-      border-color: rgb(158, 158, 158, 60%);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 0.25px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -757,16 +622,7 @@ html {
     &[data-callout="help"] {
       --callout-color: 249, 226, 175;
 
-      --callout-color: 137, 180, 250;
       background-color: rgb(158, 158, 158, 10%);
-      border-color: rgb(158, 158, 158, 60%);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 0.25px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -775,16 +631,7 @@ html {
     &[data-callout="faq"] {
       --callout-color: 249, 226, 175;
 
-      --callout-color: 137, 180, 250;
       background-color: rgb(158, 158, 158, 10%);
-      border-color: rgb(158, 158, 158, 60%);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 0.25px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -793,16 +640,7 @@ html {
     &[data-callout="warning"] {
       --callout-color: 250, 179, 135;
 
-      --callout-color: 137, 180, 250;
       background-color: rgb(158, 158, 158, 10%);
-      border-color: rgb(158, 158, 158, 60%);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 0.25px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -811,16 +649,7 @@ html {
     &[data-callout="caution"] {
       --callout-color: 250, 179, 135;
 
-      --callout-color: 137, 180, 250;
       background-color: rgb(158, 158, 158, 10%);
-      border-color: rgb(158, 158, 158, 60%);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 0.25px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -829,16 +658,7 @@ html {
     &[data-callout="attention"] {
       --callout-color: 250, 179, 135;
 
-      --callout-color: 137, 180, 250;
       background-color: rgb(158, 158, 158, 10%);
-      border-color: rgb(158, 158, 158, 60%);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 0.25px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -847,16 +667,7 @@ html {
     &[data-callout="failure"] {
       --callout-color: 243, 139, 168;
 
-      --callout-color: 137, 180, 250;
       background-color: rgb(158, 158, 158, 10%);
-      border-color: rgb(158, 158, 158, 60%);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 0.25px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -865,16 +676,7 @@ html {
     &[data-callout="fail"] {
       --callout-color: 243, 139, 168;
 
-      --callout-color: 137, 180, 250;
       background-color: rgb(158, 158, 158, 10%);
-      border-color: rgb(158, 158, 158, 60%);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 0.25px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -883,16 +685,7 @@ html {
     &[data-callout="missing"] {
       --callout-color: 243, 139, 168;
 
-      --callout-color: 137, 180, 250;
       background-color: rgb(158, 158, 158, 10%);
-      border-color: rgb(158, 158, 158, 60%);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 0.25px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -901,16 +694,7 @@ html {
     &[data-callout="danger"] {
       --callout-color: 243, 139, 168;
 
-      --callout-color: 137, 180, 250;
       background-color: rgb(158, 158, 158, 10%);
-      border-color: rgb(158, 158, 158, 60%);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 0.25px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -919,16 +703,7 @@ html {
     &[data-callout="error"] {
       --callout-color: 243, 139, 168;
 
-      --callout-color: 137, 180, 250;
       background-color: rgb(158, 158, 158, 10%);
-      border-color: rgb(158, 158, 158, 60%);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 0.25px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -937,16 +712,7 @@ html {
     &[data-callout="bug"] {
       --callout-color: 243, 139, 168;
 
-      --callout-color: 137, 180, 250;
       background-color: rgb(158, 158, 158, 10%);
-      border-color: rgb(158, 158, 158, 60%);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 0.25px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -955,16 +721,7 @@ html {
     &[data-callout="example"] {
       --callout-color: 203, 166, 247;
 
-      --callout-color: 137, 180, 250;
       background-color: rgb(158, 158, 158, 10%);
-      border-color: rgb(158, 158, 158, 60%);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 0.25px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -973,16 +730,7 @@ html {
     &[data-callout="quote"] {
       --callout-color: 158, 158, 158;
 
-      --callout-color: 137, 180, 250;
       background-color: rgb(158, 158, 158, 10%);
-      border-color: rgb(158, 158, 158, 60%);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 0.25px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -991,16 +739,7 @@ html {
     &[data-callout="cite"] {
       --callout-color: 158, 158, 158;
 
-      --callout-color: 137, 180, 250;
       background-color: rgb(158, 158, 158, 10%);
-      border-color: rgb(158, 158, 158, 60%);
-      border-radius: 4px;
-      border-style: solid;
-      border-width: 0.25px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1534,13 +1273,6 @@ body {
   /* METADATA */
   .content-meta {
     color: rgb(24, 24, 37);
-    cursor: text;
-    flex-grow: 1;
-    font-size: calc(16px * 0.937);
-    max-height: 300px;
-    padding: 4px 8px;
-    unicode-bidi: plaintext;
-    white-space: pre-wrap;
 
     color: var(--text-normal);
   }
@@ -1548,7 +1280,6 @@ body {
   /* BREADCRUMBS */
   .breadcrumbs-element p {
     color: rgb(69, 71, 90);
-    padding: 2px 1px;
   }
 
   /* BACKLINKS */
@@ -1569,7 +1300,6 @@ body {
 
     ul li {
       color: rgb(24, 24, 37);
-      padding-inline-start: 8px;
 
       font-weight: 500;
     }
@@ -1587,17 +1317,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      --font-weight: 600;
       color: rgb(var(--ctp-h2, 180, 190, 254));
-      font-family: inherit;
-      font-size: 1.6em;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 600;
-      letter-spacing: -0.015em;
-      line-height: 1.5;
-      margin-block-end: 0rem;
-      margin-block-start: 0rem;
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1612,15 +1332,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        align-items: center;
         color: rgb(24, 24, 37);
-        display: flex;
-        flex: 0 0 auto;
-        justify-content: center;
-        margin-inline-start: calc(-1 * 20px);
-        opacity: 1;
-        position: absolute;
-        width: 16px;
 
         text-overflow: ellipsis;
         position: relative;
@@ -1739,17 +1451,7 @@ body {
 
   /* TOC */
   .toc {
-    --font-weight: 600;
     color: rgb(var(--ctp-h3, 180, 190, 254));
-    font-family: inherit;
-    font-size: 1.37em;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 600;
-    letter-spacing: -0.015em;
-    line-height: 1.5;
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
 
     button.toc-header {
       h3 {
@@ -1768,17 +1470,7 @@ body {
         margin-block: 0;
       }
 
-      --font-weight: 600;
       color: rgb(var(--ctp-h3, 180, 190, 254));
-      font-family: inherit;
-      font-size: 1.37em;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 600;
-      letter-spacing: -0.015em;
-      line-height: 1.5;
-      margin-block-end: 0rem;
-      margin-block-start: 0rem;
 
       color: inherit;
     }
@@ -1887,69 +1579,15 @@ body {
     & > .search-container {
       & > .search-space {
         background-color: rgb(30, 30, 46);
+
         border: 0.5pt solid rgb(69, 71, 90);
+
         border-radius: 10px;
+
         box-shadow:
           0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
           0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
           0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
-        background-color: rgb(30, 30, 46);
-        border: 0.5pt solid rgb(69, 71, 90);
-        border-radius: 10px;
-        box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-          0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
-        background-color: rgb(30, 30, 46);
-        border: 0.5pt solid rgb(69, 71, 90);
-        border-radius: 10px;
-        box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-          0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
-        background-color: rgb(30, 30, 46);
-        border: 0.5pt solid rgb(69, 71, 90);
-        border-radius: 10px;
-        box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-          0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
 
         color: var(--text-normal);
         background-color: var(--background-secondary);
@@ -1972,153 +1610,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          --background-modifier-border: rgb(69, 71, 90);
-          --background-modifier-border-focus: rgb(108, 112, 134);
-          --background-modifier-border-hover: rgb(88, 91, 112);
-          --background-modifier-hover: rgb(205, 214, 244, 7.5%);
-          --background-primary: #000;
-          --background-primary-alt: #111;
-          --background-secondary: #1e1e1e;
-          --bold-color: inherit;
-          --bold-weight: 600;
-          --checkbox-border-color: rgb(69, 71, 90);
-          --checkbox-border-color-hover: rgb(166, 173, 200);
-          --checkbox-color: rgb(203, 166, 247);
-          --checkbox-color-hover: rgb(180, 190, 254);
-          --checkbox-marker-color: rgb(30, 30, 46);
-          --checkbox-radius: 4px;
-          --checkbox-size: 16px;
-          --code-background: rgb(24, 24, 37);
-          --code-comment: rgb(69, 71, 90);
-          --code-function: rgb(249, 226, 175);
-          --code-important: rgb(250, 179, 135);
-          --code-keyword: rgb(245, 194, 231);
-          --code-normal: rgb(166, 173, 200);
-          --code-property: rgb(137, 220, 235);
-          --code-punctuation: rgb(166, 173, 200);
-          --code-string: rgb(166, 227, 161);
-          --code-tag: rgb(243, 139, 168);
-          --code-value: rgb(180, 190, 254);
-          --collapse-icon-color: rgb(69, 71, 90);
-          --collapse-icon-color-collapsed: rgb(166, 173, 200);
-          --color-accent-2: light-dark(
-            hsl(calc(254 - 3), calc(80% * 1.02), calc(68% * 1.15)),
-            hsl(calc(254 - 5), calc(80% * 1.05), calc(68% * 1.29))
-          );
-          --color-accent-hsl: light-dark(254, 80%, 68%, 254, 80%, 68%);
-          --color-base-00: light-dark(#ffffff, #1e1e1e);
-          --color-base-10: light-dark(#fafafa, #242424);
-          --color-base-100: light-dark(#222222, #dadada);
-          --color-base-20: light-dark(#f6f6f6, #262626);
-          --color-base-30: light-dark(#e0e0e0, #363636);
-          --color-base-35: light-dark(#d4d4d4, #3f3f3f);
-          --color-base-40: light-dark(#bdbdbd, #555555);
-          --color-base-50: light-dark(#ababab, #666666);
-          --color-base-70: light-dark(#5c5c5c, #b3b3b3);
-          --color-blue: light-dark(#086ddd, #027aff);
-          --color-cyan: light-dark(#00bfbc, #53dfdd);
-          --color-green: light-dark(#08b94e, #44cf6e);
-          --color-orange: light-dark(#ec7500, #e9973f);
-          --color-pink: light-dark(#d53984, #fa99cd);
-          --color-purple: light-dark(#7852ee, #a882ff);
-          --color-red: light-dark(#e93147, #fb464c);
-          --color-yellow: light-dark(#e0ac00, #e0de71);
-          --cursor-link: pointer;
-          --font-default:
-            ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-            "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-            "Segoe UI Symbol", sans-serif;
-          --font-monospace:
-            "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono",
-            "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
-            "Consolas", "Source Code Pro", monospace;
-          --font-text:
-            "??", "Vollkorn", -apple-system, blinkmacsystemfont, "Segoe UI",
-            "Microsoft YaHei Light", roboto, inter, sans-serif, ui-sans-serif,
-            -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto,
-            "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-            sans-serif;
-          --font-weight: 400;
-          --graph-line: var(--color-base-35, rgb(108, 112, 134));
-          --graph-node-tag: rgb(166, 227, 161);
-          --graph-node-unresolved: rgb(69, 71, 90);
-          --h1-color: inherit;
-          --h1-font: inherit;
-          --h3-line-height: 1.5;
-          --hr-color: transparent;
-          --hr-thickness: 2px;
-          --icon-color: rgb(166, 173, 200);
-          --inline-title-color: rgb(var(--ctp-h1, 180, 190, 254));
-          --inline-title-font: inherit;
-          --interactive-accent-hsl: 254, 80%, 68%;
-          --italic-color: inherit;
-          --link-color: rgb(137, 180, 250);
-          --link-color-hover: rgb(137, 180, 250);
-          --link-external-color: rgb(148, 226, 213);
-          --link-external-color-hover: rgb(148, 226, 213);
-          --link-external-filter: none;
-          --link-weight: var(--link-weight);
-          --nav-item-background-hover: rgb(180, 190, 254);
-          --nav-item-children-margin-start: 12px;
-          --nav-item-children-padding-start: 4px;
-          --p-spacing: 1rem;
-          --search-icon-color: rgb(166, 173, 200);
-          --tag-background: transparent;
-          --tag-background-hover: 0;
-          --tag-border-color: hsl(254, 80%, 68%, 10%);
-          --tag-border-color-hover: hsl(254, 80%, 68%, 15%);
-          --tag-border-width: 0;
-          --tag-color: rgb(var(--ctp-tag-pill-color, 180, 190, 254));
-          --tag-color-hover: rgb(var(--ctp-tag-pill-color, 180, 190, 254));
-          --tag-decoration: none;
-          --tag-decoration-hover: underline;
-          --tag-radius: 0.8em;
-          --tag-weight: inherit;
-          --text-accent: rgb(180, 190, 254);
-          --text-accent-hover: rgb(180, 190, 254, 90%);
-          --text-faint: rgb(127, 132, 156);
-          --text-highlight-bg: rgba(255, 208, 0, 0.4);
-          --text-muted: rgb(166, 173, 200);
-          --text-normal: rgb(205, 214, 244);
-          -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-          -webkit-user-select: none;
-          background-color: rgb(30, 30, 46);
-          caret-color: rgb(180, 190, 254);
           color: rgb(24, 24, 37);
-          contain: initial;
-          font-family:
-            "??",
-            "Nunito Sans",
-            -apple-system,
-            blinkmacsystemfont,
-            "Segoe UI",
-            "Microsoft YaHei Light",
-            roboto,
-            inter,
-            sans-serif,
-            var(--default-font, "??"),
-            ui-sans-serif,
-            -apple-system,
-            BlinkMacSystemFont,
-            system-ui,
-            "Segoe UI",
-            Roboto,
-            "Inter",
-            "Apple Color Emoji",
-            "Segoe UI Emoji",
-            "Segoe UI Symbol",
-            sans-serif;
-          font-size: 16px;
-          height: 100%;
-          line-height: 1.25;
-          margin: 0;
-          overflow: auto;
-          overscroll-behavior: none;
-          padding: 0;
-          padding-top: 0;
-          text-rendering: optimizeLegibility;
-          user-select: none;
-          width: 100%;
 
           background: transparent;
           margin-bottom: 0;
@@ -2162,170 +1654,14 @@ body {
               &:focus,
               &.focus {
                 background-color: rgb(180, 190, 254);
-                color: rgb(24, 24, 37);
               }
               & > ul > li > p {
                 background-color: transparent;
-                --background-modifier-border: rgb(69, 71, 90);
-                --background-modifier-border-focus: rgb(108, 112, 134);
-                --background-modifier-border-hover: rgb(88, 91, 112);
-                --background-modifier-hover: rgb(205, 214, 244, 7.5%);
-                --background-primary: #000;
-                --background-primary-alt: #111;
-                --background-secondary: #1e1e1e;
-                --bold-color: inherit;
-                --bold-weight: 600;
-                --checkbox-border-color: rgb(69, 71, 90);
-                --checkbox-border-color-hover: rgb(166, 173, 200);
-                --checkbox-color: rgb(203, 166, 247);
-                --checkbox-color-hover: rgb(180, 190, 254);
-                --checkbox-marker-color: rgb(30, 30, 46);
-                --checkbox-radius: 4px;
-                --checkbox-size: 16px;
-                --code-background: rgb(24, 24, 37);
-                --code-comment: rgb(69, 71, 90);
-                --code-function: rgb(249, 226, 175);
-                --code-important: rgb(250, 179, 135);
-                --code-keyword: rgb(245, 194, 231);
-                --code-normal: rgb(166, 173, 200);
-                --code-property: rgb(137, 220, 235);
-                --code-punctuation: rgb(166, 173, 200);
-                --code-string: rgb(166, 227, 161);
-                --code-tag: rgb(243, 139, 168);
-                --code-value: rgb(180, 190, 254);
-                --collapse-icon-color: rgb(69, 71, 90);
-                --collapse-icon-color-collapsed: rgb(166, 173, 200);
-                --color-accent-2: light-dark(
-                  hsl(calc(254 - 3), calc(80% * 1.02), calc(68% * 1.15)),
-                  hsl(calc(254 - 5), calc(80% * 1.05), calc(68% * 1.29))
-                );
-                --color-accent-hsl: light-dark(254, 80%, 68%, 254, 80%, 68%);
-                --color-base-00: light-dark(#ffffff, #1e1e1e);
-                --color-base-10: light-dark(#fafafa, #242424);
-                --color-base-100: light-dark(#222222, #dadada);
-                --color-base-20: light-dark(#f6f6f6, #262626);
-                --color-base-30: light-dark(#e0e0e0, #363636);
-                --color-base-35: light-dark(#d4d4d4, #3f3f3f);
-                --color-base-40: light-dark(#bdbdbd, #555555);
-                --color-base-50: light-dark(#ababab, #666666);
-                --color-base-70: light-dark(#5c5c5c, #b3b3b3);
-                --color-blue: light-dark(#086ddd, #027aff);
-                --color-cyan: light-dark(#00bfbc, #53dfdd);
-                --color-green: light-dark(#08b94e, #44cf6e);
-                --color-orange: light-dark(#ec7500, #e9973f);
-                --color-pink: light-dark(#d53984, #fa99cd);
-                --color-purple: light-dark(#7852ee, #a882ff);
-                --color-red: light-dark(#e93147, #fb464c);
-                --color-yellow: light-dark(#e0ac00, #e0de71);
-                --cursor-link: pointer;
-                --font-default:
-                  ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-                  "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-                  "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-                --font-monospace:
-                  "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono",
-                  "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo,
-                  Monaco, "Consolas", "Source Code Pro", monospace;
-                --font-text:
-                  "??", "Vollkorn", -apple-system, blinkmacsystemfont,
-                  "Segoe UI", "Microsoft YaHei Light", roboto, inter,
-                  sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont,
-                  system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-                  "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-                --font-weight: 400;
-                --graph-line: var(--color-base-35, rgb(108, 112, 134));
-                --graph-node-tag: rgb(166, 227, 161);
-                --graph-node-unresolved: rgb(69, 71, 90);
-                --h1-color: inherit;
-                --h1-font: inherit;
-                --h3-line-height: 1.5;
-                --hr-color: transparent;
-                --hr-thickness: 2px;
-                --icon-color: rgb(166, 173, 200);
-                --inline-title-color: rgb(var(--ctp-h1, 180, 190, 254));
-                --inline-title-font: inherit;
-                --interactive-accent-hsl: 254, 80%, 68%;
-                --italic-color: inherit;
-                --link-color: rgb(137, 180, 250);
-                --link-color-hover: rgb(137, 180, 250);
-                --link-external-color: rgb(148, 226, 213);
-                --link-external-color-hover: rgb(148, 226, 213);
-                --link-external-filter: none;
-                --link-weight: var(--link-weight);
-                --nav-item-background-hover: rgb(180, 190, 254);
-                --nav-item-children-margin-start: 12px;
-                --nav-item-children-padding-start: 4px;
-                --p-spacing: 1rem;
-                --search-icon-color: rgb(166, 173, 200);
-                --tag-background: transparent;
-                --tag-background-hover: 0;
-                --tag-border-color: hsl(254, 80%, 68%, 10%);
-                --tag-border-color-hover: hsl(254, 80%, 68%, 15%);
-                --tag-border-width: 0;
-                --tag-color: rgb(var(--ctp-tag-pill-color, 180, 190, 254));
-                --tag-color-hover: rgb(
-                  var(--ctp-tag-pill-color, 180, 190, 254)
-                );
-                --tag-decoration: none;
-                --tag-decoration-hover: underline;
-                --tag-radius: 0.8em;
-                --tag-weight: inherit;
-                --text-accent: rgb(180, 190, 254);
-                --text-accent-hover: rgb(180, 190, 254, 90%);
-                --text-faint: rgb(127, 132, 156);
-                --text-highlight-bg: rgba(255, 208, 0, 0.4);
-                --text-muted: rgb(166, 173, 200);
-                --text-normal: rgb(205, 214, 244);
-                -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-                -webkit-user-select: none;
-                background-color: rgb(30, 30, 46);
-                caret-color: rgb(180, 190, 254);
+
                 color: rgb(24, 24, 37);
-                contain: initial;
-                font-family:
-                  "??",
-                  "Nunito Sans",
-                  -apple-system,
-                  blinkmacsystemfont,
-                  "Segoe UI",
-                  "Microsoft YaHei Light",
-                  roboto,
-                  inter,
-                  sans-serif,
-                  var(--default-font, "??"),
-                  ui-sans-serif,
-                  -apple-system,
-                  BlinkMacSystemFont,
-                  system-ui,
-                  "Segoe UI",
-                  Roboto,
-                  "Inter",
-                  "Apple Color Emoji",
-                  "Segoe UI Emoji",
-                  "Segoe UI Symbol",
-                  sans-serif;
-                font-size: 16px;
-                height: 100%;
-                line-height: 1.25;
-                margin: 0;
-                overflow: auto;
-                overscroll-behavior: none;
-                padding: 0;
-                padding-top: 0;
-                text-rendering: optimizeLegibility;
-                user-select: none;
-                width: 100%;
 
                 &.match-tag {
-                  background-color: rgb(180, 190, 254);
-                  border: 0px solid hsla(254, 80%, 68%, 0.15);
-                  border-radius: 2em;
                   color: rgb(24, 24, 37);
-                  font-size: 0.875em;
-                  font-weight: inherit;
-                  line-height: 1;
-                  padding: 0.25em 0.65em;
-                  text-decoration: none;
                 }
               }
             }
@@ -2411,41 +1747,11 @@ body {
     border: unset;
     background-color: var(--background-primary);
     & .popover-inner {
-      background-color: rgb(30, 30, 46);
       border: 1px solid transparent;
-      border-radius: 8px;
-      box-shadow:
-        0px 1px 2px rgba(0, 0, 0, 0.121),
-        0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-        0px 15px 30px rgba(0, 0, 0, 0.3);
-      display: flex;
-      max-height: 70vh;
-      position: absolute;
-      z-index: 30;
 
       background-color: rgb(30, 30, 46);
-      border: 1px solid transparent;
-      border-radius: 8px;
-      box-shadow:
-        0px 1px 2px rgba(0, 0, 0, 0.121),
-        0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-        0px 15px 30px rgba(0, 0, 0, 0.3);
-      display: flex;
-      max-height: 70vh;
-      position: absolute;
-      z-index: 30;
 
-      background-color: rgb(30, 30, 46);
-      border: 1px solid transparent;
       border-radius: 8px;
-      box-shadow:
-        0px 1px 2px rgba(0, 0, 0, 0.121),
-        0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-        0px 15px 30px rgba(0, 0, 0, 0.3);
-      display: flex;
-      max-height: 70vh;
-      position: absolute;
-      z-index: 30;
 
       background-color: var(--background-primary);
     }

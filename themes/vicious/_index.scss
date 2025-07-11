@@ -514,16 +514,7 @@ html {
     overflow: hidden;
     padding: 12px 24px 12px12px;
 
-    --callout-color: 251, 252, 252;
     background-color: rgba(139, 227, 235, 1);
-    border-color: rgba(139, 227, 235, 0.25);
-    border-radius: 8px;
-    border-style: solid;
-    border-width: 0px;
-    margin: 1em 0;
-    mix-blend-mode: normal;
-    overflow: hidden;
-    padding: 12px 24px 12px12px;
 
     background-color: var(--bg);
     border-color: var(--border);
@@ -533,26 +524,8 @@ html {
 
     &[data-callout] {
       --callout-color: 251, 252, 252;
-      background-color: rgba(139, 227, 235, 1);
-      border-color: rgba(139, 227, 235, 0.25);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
-      --callout-color: 251, 252, 252;
       background-color: rgba(139, 227, 235, 1);
-      border-color: rgba(139, 227, 235, 0.25);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -561,16 +534,7 @@ html {
     &[data-callout="abstract"] {
       --callout-color: 227, 235, 139;
 
-      --callout-color: 251, 252, 252;
       background-color: rgba(139, 227, 235, 1);
-      border-color: rgba(139, 227, 235, 0.25);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -579,16 +543,7 @@ html {
     &[data-callout="summary"] {
       --callout-color: 227, 235, 139;
 
-      --callout-color: 251, 252, 252;
       background-color: rgba(139, 227, 235, 1);
-      border-color: rgba(139, 227, 235, 0.25);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -597,16 +552,7 @@ html {
     &[data-callout="tldr"] {
       --callout-color: 227, 235, 139;
 
-      --callout-color: 251, 252, 252;
       background-color: rgba(139, 227, 235, 1);
-      border-color: rgba(139, 227, 235, 0.25);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -615,16 +561,7 @@ html {
     &[data-callout="info"] {
       --callout-color: 188, 241, 129;
 
-      --callout-color: 251, 252, 252;
       background-color: rgba(139, 227, 235, 1);
-      border-color: rgba(139, 227, 235, 0.25);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -633,16 +570,7 @@ html {
     &[data-callout="todo"] {
       --callout-color: 139, 227, 235;
 
-      --callout-color: 251, 252, 252;
       background-color: rgba(139, 227, 235, 1);
-      border-color: rgba(139, 227, 235, 0.25);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -651,16 +579,7 @@ html {
     &[data-callout="important"] {
       --callout-color: 141, 241, 129;
 
-      --callout-color: 251, 252, 252;
       background-color: rgba(139, 227, 235, 1);
-      border-color: rgba(139, 227, 235, 0.25);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -669,16 +588,7 @@ html {
     &[data-callout="tip"] {
       --callout-color: 241, 201, 129;
 
-      --callout-color: 251, 252, 252;
       background-color: rgba(139, 227, 235, 1);
-      border-color: rgba(139, 227, 235, 0.25);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -687,16 +597,7 @@ html {
     &[data-callout="hint"] {
       --callout-color: 241, 201, 129;
 
-      --callout-color: 251, 252, 252;
       background-color: rgba(139, 227, 235, 1);
-      border-color: rgba(139, 227, 235, 0.25);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -705,16 +606,7 @@ html {
     &[data-callout="success"] {
       --callout-color: 129, 241, 164;
 
-      --callout-color: 251, 252, 252;
       background-color: rgba(139, 227, 235, 1);
-      border-color: rgba(139, 227, 235, 0.25);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -723,16 +615,7 @@ html {
     &[data-callout="check"] {
       --callout-color: 129, 241, 164;
 
-      --callout-color: 251, 252, 252;
       background-color: rgba(139, 227, 235, 1);
-      border-color: rgba(139, 227, 235, 0.25);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -741,16 +624,7 @@ html {
     &[data-callout="done"] {
       --callout-color: 129, 241, 164;
 
-      --callout-color: 251, 252, 252;
       background-color: rgba(139, 227, 235, 1);
-      border-color: rgba(139, 227, 235, 0.25);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -759,16 +633,7 @@ html {
     &[data-callout="question"] {
       --callout-color: 241, 154, 129;
 
-      --callout-color: 251, 252, 252;
       background-color: rgba(139, 227, 235, 1);
-      border-color: rgba(139, 227, 235, 0.25);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -777,16 +642,7 @@ html {
     &[data-callout="help"] {
       --callout-color: 241, 154, 129;
 
-      --callout-color: 251, 252, 252;
       background-color: rgba(139, 227, 235, 1);
-      border-color: rgba(139, 227, 235, 0.25);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -795,16 +651,7 @@ html {
     &[data-callout="faq"] {
       --callout-color: 241, 154, 129;
 
-      --callout-color: 251, 252, 252;
       background-color: rgba(139, 227, 235, 1);
-      border-color: rgba(139, 227, 235, 0.25);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -813,16 +660,7 @@ html {
     &[data-callout="warning"] {
       --callout-color: 241, 129, 150;
 
-      --callout-color: 251, 252, 252;
       background-color: rgba(139, 227, 235, 1);
-      border-color: rgba(139, 227, 235, 0.25);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -831,16 +669,7 @@ html {
     &[data-callout="caution"] {
       --callout-color: 241, 129, 150;
 
-      --callout-color: 251, 252, 252;
       background-color: rgba(139, 227, 235, 1);
-      border-color: rgba(139, 227, 235, 0.25);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -849,16 +678,7 @@ html {
     &[data-callout="attention"] {
       --callout-color: 241, 129, 150;
 
-      --callout-color: 251, 252, 252;
       background-color: rgba(139, 227, 235, 1);
-      border-color: rgba(139, 227, 235, 0.25);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -867,16 +687,7 @@ html {
     &[data-callout="failure"] {
       --callout-color: 241, 129, 197;
 
-      --callout-color: 251, 252, 252;
       background-color: rgba(139, 227, 235, 1);
-      border-color: rgba(139, 227, 235, 0.25);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -885,16 +696,7 @@ html {
     &[data-callout="fail"] {
       --callout-color: 241, 129, 197;
 
-      --callout-color: 251, 252, 252;
       background-color: rgba(139, 227, 235, 1);
-      border-color: rgba(139, 227, 235, 0.25);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -903,16 +705,7 @@ html {
     &[data-callout="missing"] {
       --callout-color: 241, 129, 197;
 
-      --callout-color: 251, 252, 252;
       background-color: rgba(139, 227, 235, 1);
-      border-color: rgba(139, 227, 235, 0.25);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -921,16 +714,7 @@ html {
     &[data-callout="danger"] {
       --callout-color: 241, 129, 150;
 
-      --callout-color: 251, 252, 252;
       background-color: rgba(139, 227, 235, 1);
-      border-color: rgba(139, 227, 235, 0.25);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -939,16 +723,7 @@ html {
     &[data-callout="error"] {
       --callout-color: 241, 129, 150;
 
-      --callout-color: 251, 252, 252;
       background-color: rgba(139, 227, 235, 1);
-      border-color: rgba(139, 227, 235, 0.25);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -957,16 +732,7 @@ html {
     &[data-callout="bug"] {
       --callout-color: 241, 201, 129;
 
-      --callout-color: 251, 252, 252;
       background-color: rgba(139, 227, 235, 1);
-      border-color: rgba(139, 227, 235, 0.25);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -975,16 +741,7 @@ html {
     &[data-callout="example"] {
       --callout-color: 171, 139, 235;
 
-      --callout-color: 251, 252, 252;
       background-color: rgba(139, 227, 235, 1);
-      border-color: rgba(139, 227, 235, 0.25);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -993,16 +750,7 @@ html {
     &[data-callout="quote"] {
       --callout-color: 139, 227, 235;
 
-      --callout-color: 251, 252, 252;
       background-color: rgba(139, 227, 235, 1);
-      border-color: rgba(139, 227, 235, 0.25);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1011,16 +759,7 @@ html {
     &[data-callout="cite"] {
       --callout-color: 139, 227, 235;
 
-      --callout-color: 251, 252, 252;
       background-color: rgba(139, 227, 235, 1);
-      border-color: rgba(139, 227, 235, 0.25);
-      border-radius: 8px;
-      border-style: solid;
-      border-width: 0px;
-      margin: 1em 0;
-      mix-blend-mode: normal;
-      overflow: hidden;
-      padding: 12px 24px 12px12px;
 
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
@@ -1546,13 +1285,6 @@ body {
   /* METADATA */
   .content-meta {
     color: #fbfcfc;
-    cursor: text;
-    flex-grow: 1;
-    font-size: calc(16px * 0.937);
-    max-height: 300px;
-    padding: 4px 8px;
-    unicode-bidi: plaintext;
-    white-space: pre-wrap;
 
     color: var(--text-normal);
   }
@@ -1560,7 +1292,6 @@ body {
   /* BREADCRUMBS */
   .breadcrumbs-element p {
     color: #68696c;
-    padding: 2px 1px;
   }
 
   /* BACKLINKS */
@@ -1581,7 +1312,6 @@ body {
 
     ul li {
       color: #fbfcfc;
-      padding-inline-start: 8px;
 
       font-weight: 500;
     }
@@ -1599,17 +1329,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      --font-weight: 600;
       color: #f19a81;
-      font-family: inherit;
-      font-size: 1.8em;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 600;
-      letter-spacing: -0.015em;
-      line-height: 1.2;
-      margin-block-end: 0rem;
-      margin-block-start: 0rem;
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1624,15 +1344,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        align-items: center;
         color: #fbfcfc;
-        display: flex;
-        flex: 0 0 auto;
-        justify-content: center;
-        margin-inline-start: calc(-1 * 20px);
-        opacity: 1;
-        position: absolute;
-        width: 16px;
 
         text-overflow: ellipsis;
         position: relative;
@@ -1755,17 +1467,7 @@ body {
 
   /* TOC */
   .toc {
-    --font-weight: 600;
     color: #ebcb8b;
-    font-family: inherit;
-    font-size: 1.8em;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 600;
-    letter-spacing: -0.015em;
-    line-height: 1.3;
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
 
     button.toc-header {
       h3 {
@@ -1784,17 +1486,7 @@ body {
         margin-block: 0;
       }
 
-      --font-weight: 600;
       color: #ebcb8b;
-      font-family: inherit;
-      font-size: 1.8em;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 600;
-      letter-spacing: -0.015em;
-      line-height: 1.3;
-      margin-block-end: 0rem;
-      margin-block-start: 0rem;
 
       color: inherit;
     }
@@ -1904,72 +1596,15 @@ body {
     & > .search-container {
       & > .search-space {
         background-color: #08090e;
-        border: 0.5pt solid var(--color-base-40, #4f5053);
-        border-radius: 12px;
-        box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-          0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
 
-        background-color: #08090e;
         border: 0.5pt solid var(--color-base-40, #4f5053);
-        border-radius: 12px;
-        box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-          0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
 
-        background-color: #08090e;
-        border: 0.5pt solid var(--color-base-40, #4f5053);
         border-radius: 12px;
-        box-shadow:
-          0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-          0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-          0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
 
-        background-color: #08090e;
-        border: 0.5pt solid var(--color-base-40, #4f5053);
-        border-radius: 12px;
         box-shadow:
           0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
           0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
           0px 30px 90px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        max-height: 70vh;
-        max-width: 80vw;
-        overflow: hidden;
-        position: absolute;
-        top: 80px;
-        width: 700px;
-        z-index: 1;
 
         color: var(--text-normal);
         background-color: var(--background-secondary);
@@ -1992,151 +1627,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          --background-modifier-border: #292a2f;
-          --background-modifier-border-focus: #4f5053;
-          --background-modifier-border-hover: #4f5053;
-          --background-modifier-hover: light-dark(#f1f2f5, #17181e);
-          --background-primary: light-dark(#fbfcfc, #08090e);
-          --background-primary-alt: #111;
-          --background-secondary: light-dark(#fbfcfc, #08090e);
-          --bold-color: inherit;
-          --bold-weight: calc(600 + 200);
-          --checkbox-border-color: light-dark(#818184, #818184);
-          --checkbox-border-color-hover: #818184;
-          --checkbox-color: hsl(39, 80%, 73%);
-          --checkbox-color-hover: hsl(
-            calc(39 - 3),
-            calc(80% * 1.02),
-            calc(73% * 1.15)
-          );
-          --checkbox-marker-color: #08090e;
-          --checkbox-radius: 4px;
-          --checkbox-size: 16px;
-          --code-background: light-dark(#f1f2f5, #17181e);
-          --code-comment: #68696c;
-          --code-function: #ebcb8b;
-          --code-important: #f19a81;
-          --code-keyword: #ee81f1;
-          --code-normal: #fbfcfc;
-          --code-property: #8be3eb;
-          --code-punctuation: #818184;
-          --code-string: #81f1a4;
-          --code-tag: #f18196;
-          --code-value: #ab8beb;
-          --collapse-icon-color: light-dark(#68696c, #4f5053);
-          --collapse-icon-color-collapsed: light-dark(#08090e, #fbfcfc);
-          --color-accent-2: light-dark(
-            hsl(calc(39 - 3), calc(80% * 1.02), calc(73% * 1.15)),
-            hsl(calc(39 - 5), calc(80% * 1.05), calc(73% * 1.29))
-          );
-          --color-accent-hsl: light-dark(39, 80%, 73%, 39, 80%, 73%);
-          --cursor-link: pointer;
-          --font-default:
-            ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-            "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-            "Segoe UI Symbol", sans-serif;
-          --font-monospace:
-            "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono",
-            "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
-            "Consolas", "Source Code Pro", monospace;
-          --font-text:
-            "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-            system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-            "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-          --font-weight: 400;
-          --graph-line: var(--color-base-35, #4f5053);
-          --graph-node-tag: #81f1a4;
-          --graph-node-unresolved: #68696c;
-          --h1-color: inherit;
-          --h1-font: inherit;
-          --h3-line-height: 1.3;
-          --hr-color: light-dark(#f1f2f5, #17181e);
-          --hr-thickness: 2px;
-          --icon-color: light-dark(#08090e, #fbfcfc);
-          --inline-title-color: inherit;
-          --inline-title-font: inherit;
-          --interactive-accent-hsl: 39, 80%, 73%;
-          --italic-color: inherit;
-          --link-color: hsl(calc(39 - 3), calc(80% * 1.02), calc(73% * 1.15));
-          --link-color-hover: hsl(
-            calc(39 - 5),
-            calc(80% * 1.05),
-            calc(73% * 1.29)
-          );
-          --link-external-color: hsl(
-            calc(39 - 3),
-            calc(80% * 1.02),
-            calc(73% * 1.15)
-          );
-          --link-external-color-hover: hsl(
-            calc(39 - 5),
-            calc(80% * 1.05),
-            calc(73% * 1.29)
-          );
-          --link-external-filter: none;
-          --link-weight: var(--link-weight);
-          --nav-item-background-hover: rgba(251, 252, 252, 0.15);
-          --nav-item-children-margin-start: 12px;
-          --nav-item-children-padding-start: 4px;
-          --p-spacing: 1rem;
-          --search-icon-color: #818184;
-          --tag-background: hsla(39, 80%, 73%, 0.1);
-          --tag-background-hover: hsla(39, 80%, 73%, 0.2);
-          --tag-border-color: hsla(39, 80%, 73%, 0.15);
-          --tag-border-color-hover: hsla(39, 80%, 73%, 0.15);
-          --tag-border-width: 0px;
-          --tag-color: hsl(calc(39 - 3), calc(80% * 1.02), calc(73% * 1.15));
-          --tag-color-hover: hsl(
-            calc(39 - 3),
-            calc(80% * 1.02),
-            calc(73% * 1.15)
-          );
-          --tag-decoration: none;
-          --tag-decoration-hover: none;
-          --tag-radius: 2em;
-          --tag-weight: inherit;
-          --text-accent: hsl(39, 80%, 73%);
-          --text-accent-hover: hsl(
-            calc(39 - 5),
-            calc(80% * 1.05),
-            calc(73% * 1.29)
-          );
-          --text-faint: light-dark(#818184, #68696c);
-          --text-highlight-bg: rgba(104, 105, 108, 0.4);
-          --text-muted: light-dark(#818184, #818184);
-          --text-normal: light-dark(#08090e, #fbfcfc);
-          -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-          -webkit-user-select: none;
-          background-color: #08090e;
-          caret-color: hsl(calc(39 - 3), calc(80% * 1.02), calc(73% * 1.15));
           color: #fbfcfc;
-          contain: initial;
-          font-family:
-            "??",
-            "??",
-            var(--default-font, "??"),
-            ui-sans-serif,
-            -apple-system,
-            BlinkMacSystemFont,
-            system-ui,
-            "Segoe UI",
-            Roboto,
-            "Inter",
-            "Apple Color Emoji",
-            "Segoe UI Emoji",
-            "Segoe UI Symbol",
-            sans-serif;
-          font-size: 16px;
-          height: 100%;
-          line-height: 1.3;
-          margin: 0;
-          overflow: auto;
-          overscroll-behavior: none;
-          padding: 0;
-          padding-top: 0;
-          text-rendering: optimizeLegibility;
-          user-select: none;
-          width: 100%;
 
           background: transparent;
           margin-bottom: 0;
@@ -2183,177 +1674,11 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
-                --background-modifier-border: #292a2f;
-                --background-modifier-border-focus: #4f5053;
-                --background-modifier-border-hover: #4f5053;
-                --background-modifier-hover: light-dark(#f1f2f5, #17181e);
-                --background-primary: light-dark(#fbfcfc, #08090e);
-                --background-primary-alt: #111;
-                --background-secondary: light-dark(#fbfcfc, #08090e);
-                --bold-color: inherit;
-                --bold-weight: calc(600 + 200);
-                --checkbox-border-color: light-dark(#818184, #818184);
-                --checkbox-border-color-hover: #818184;
-                --checkbox-color: hsl(39, 80%, 73%);
-                --checkbox-color-hover: hsl(
-                  calc(39 - 3),
-                  calc(80% * 1.02),
-                  calc(73% * 1.15)
-                );
-                --checkbox-marker-color: #08090e;
-                --checkbox-radius: 4px;
-                --checkbox-size: 16px;
-                --code-background: light-dark(#f1f2f5, #17181e);
-                --code-comment: #68696c;
-                --code-function: #ebcb8b;
-                --code-important: #f19a81;
-                --code-keyword: #ee81f1;
-                --code-normal: #fbfcfc;
-                --code-property: #8be3eb;
-                --code-punctuation: #818184;
-                --code-string: #81f1a4;
-                --code-tag: #f18196;
-                --code-value: #ab8beb;
-                --collapse-icon-color: light-dark(#68696c, #4f5053);
-                --collapse-icon-color-collapsed: light-dark(#08090e, #fbfcfc);
-                --color-accent-2: light-dark(
-                  hsl(calc(39 - 3), calc(80% * 1.02), calc(73% * 1.15)),
-                  hsl(calc(39 - 5), calc(80% * 1.05), calc(73% * 1.29))
-                );
-                --color-accent-hsl: light-dark(39, 80%, 73%, 39, 80%, 73%);
-                --cursor-link: pointer;
-                --font-default:
-                  ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-                  "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-                  "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-                --font-monospace:
-                  "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono",
-                  "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo,
-                  Monaco, "Consolas", "Source Code Pro", monospace;
-                --font-text:
-                  "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-                  system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
-                  "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-                --font-weight: 400;
-                --graph-line: var(--color-base-35, #4f5053);
-                --graph-node-tag: #81f1a4;
-                --graph-node-unresolved: #68696c;
-                --h1-color: inherit;
-                --h1-font: inherit;
-                --h3-line-height: 1.3;
-                --hr-color: light-dark(#f1f2f5, #17181e);
-                --hr-thickness: 2px;
-                --icon-color: light-dark(#08090e, #fbfcfc);
-                --inline-title-color: inherit;
-                --inline-title-font: inherit;
-                --interactive-accent-hsl: 39, 80%, 73%;
-                --italic-color: inherit;
-                --link-color: hsl(
-                  calc(39 - 3),
-                  calc(80% * 1.02),
-                  calc(73% * 1.15)
-                );
-                --link-color-hover: hsl(
-                  calc(39 - 5),
-                  calc(80% * 1.05),
-                  calc(73% * 1.29)
-                );
-                --link-external-color: hsl(
-                  calc(39 - 3),
-                  calc(80% * 1.02),
-                  calc(73% * 1.15)
-                );
-                --link-external-color-hover: hsl(
-                  calc(39 - 5),
-                  calc(80% * 1.05),
-                  calc(73% * 1.29)
-                );
-                --link-external-filter: none;
-                --link-weight: var(--link-weight);
-                --nav-item-background-hover: rgba(251, 252, 252, 0.15);
-                --nav-item-children-margin-start: 12px;
-                --nav-item-children-padding-start: 4px;
-                --p-spacing: 1rem;
-                --search-icon-color: #818184;
-                --tag-background: hsla(39, 80%, 73%, 0.1);
-                --tag-background-hover: hsla(39, 80%, 73%, 0.2);
-                --tag-border-color: hsla(39, 80%, 73%, 0.15);
-                --tag-border-color-hover: hsla(39, 80%, 73%, 0.15);
-                --tag-border-width: 0px;
-                --tag-color: hsl(
-                  calc(39 - 3),
-                  calc(80% * 1.02),
-                  calc(73% * 1.15)
-                );
-                --tag-color-hover: hsl(
-                  calc(39 - 3),
-                  calc(80% * 1.02),
-                  calc(73% * 1.15)
-                );
-                --tag-decoration: none;
-                --tag-decoration-hover: none;
-                --tag-radius: 2em;
-                --tag-weight: inherit;
-                --text-accent: hsl(39, 80%, 73%);
-                --text-accent-hover: hsl(
-                  calc(39 - 5),
-                  calc(80% * 1.05),
-                  calc(73% * 1.29)
-                );
-                --text-faint: light-dark(#818184, #68696c);
-                --text-highlight-bg: rgba(104, 105, 108, 0.4);
-                --text-muted: light-dark(#818184, #818184);
-                --text-normal: light-dark(#08090e, #fbfcfc);
-                -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-                -webkit-user-select: none;
-                background-color: #08090e;
-                caret-color: hsl(
-                  calc(39 - 3),
-                  calc(80% * 1.02),
-                  calc(73% * 1.15)
-                );
+
                 color: #fbfcfc;
-                contain: initial;
-                font-family:
-                  "??",
-                  "??",
-                  var(--default-font, "??"),
-                  ui-sans-serif,
-                  -apple-system,
-                  BlinkMacSystemFont,
-                  system-ui,
-                  "Segoe UI",
-                  Roboto,
-                  "Inter",
-                  "Apple Color Emoji",
-                  "Segoe UI Emoji",
-                  "Segoe UI Symbol",
-                  sans-serif;
-                font-size: 16px;
-                height: 100%;
-                line-height: 1.3;
-                margin: 0;
-                overflow: auto;
-                overscroll-behavior: none;
-                padding: 0;
-                padding-top: 0;
-                text-rendering: optimizeLegibility;
-                user-select: none;
-                width: 100%;
 
                 &.match-tag {
-                  background-color: hsla(39, 80%, 73%, 0.2);
-                  border: none;
-                  border-radius: 16px;
-                  box-shadow: none;
                   color: #08090e;
-                  font-size: 0.875em;
-                  font-weight: inherit;
-                  line-height: 1;
-                  margin-left: 4px;
-                  padding: 0.16em 0.56em;
-                  text-decoration: none;
-                  transition: 0.4s;
                 }
               }
             }
@@ -2439,41 +1764,11 @@ body {
     border: unset;
     background-color: var(--background-primary);
     & .popover-inner {
-      background-color: #08090e;
       border: 1px solid transparent;
-      border-radius: 8px;
-      box-shadow:
-        0px 1px 2px rgba(0, 0, 0, 0.121),
-        0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-        0px 15px 30px rgba(0, 0, 0, 0.3);
-      display: flex;
-      max-height: 95vh;
-      position: absolute;
-      z-index: 30;
 
       background-color: #08090e;
-      border: 1px solid transparent;
-      border-radius: 8px;
-      box-shadow:
-        0px 1px 2px rgba(0, 0, 0, 0.121),
-        0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-        0px 15px 30px rgba(0, 0, 0, 0.3);
-      display: flex;
-      max-height: 95vh;
-      position: absolute;
-      z-index: 30;
 
-      background-color: #08090e;
-      border: 1px solid transparent;
       border-radius: 8px;
-      box-shadow:
-        0px 1px 2px rgba(0, 0, 0, 0.121),
-        0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-        0px 15px 30px rgba(0, 0, 0, 0.3);
-      display: flex;
-      max-height: 95vh;
-      position: absolute;
-      z-index: 30;
 
       background-color: var(--background-primary);
     }
