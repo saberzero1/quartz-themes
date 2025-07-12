@@ -962,7 +962,7 @@ body {
   h2 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background: linear-gradient(to right, #dddddd, #cbcbcb, #e990eb);
+    background-image: linear-gradient(to right, #dddddd, #cbcbcb, #e990eb);
     width: fit-content;
 
     font-size: 1.75rem;
@@ -973,7 +973,7 @@ body {
   h3 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background: linear-gradient(to right, #dddddd, #cbcbcb, #e990eb);
+    background-image: linear-gradient(to right, #dddddd, #cbcbcb, #e990eb);
     width: fit-content;
 
     font-size: 1.6rem;
@@ -984,7 +984,7 @@ body {
   h4 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background: linear-gradient(to right, #dddddd, #cbcbcb, #e990eb);
+    background-image: linear-gradient(to right, #dddddd, #cbcbcb, #e990eb);
     width: fit-content;
 
     font-size: 1.4rem;
@@ -995,7 +995,7 @@ body {
   h5 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background: linear-gradient(to right, #dddddd, #cbcbcb, #e990eb);
+    background-image: linear-gradient(to right, #dddddd, #cbcbcb, #e990eb);
     width: fit-content;
 
     font-size: 1.2rem;
@@ -1180,7 +1180,7 @@ body {
     h3 {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      background: linear-gradient(to right, #dddddd, #cbcbcb, #e990eb);
+      background-image: linear-gradient(to right, #dddddd, #cbcbcb, #e990eb);
       width: fit-content;
     }
 
@@ -1343,7 +1343,7 @@ body {
       h3 {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        background: linear-gradient(to right, #dddddd, #cbcbcb, #e990eb);
+        background-image: linear-gradient(to right, #dddddd, #cbcbcb, #e990eb);
         width: fit-content;
 
         margin-block: 0;
@@ -1366,7 +1366,7 @@ body {
     h3 {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      background: linear-gradient(to right, #dddddd, #cbcbcb, #e990eb);
+      background-image: linear-gradient(to right, #dddddd, #cbcbcb, #e990eb);
       width: fit-content;
 
       min-height: calc(2 * var(--p-spacing) + var(--h3-line-height));

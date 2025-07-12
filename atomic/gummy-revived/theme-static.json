@@ -10578,7 +10578,7 @@
     { "property": "-webkit-background-clip", "value": "text" },
     { "property": "-webkit-text-fill-color", "value": "transparent" },
     {
-      "property": "background",
+      "property": "background-image",
       "value": "linear-gradient(to right, #dddddd, #cbcbcb, #e990eb)"
     },
     { "property": "width", "value": "fit-content" }
@@ -10587,7 +10587,7 @@
     { "property": "-webkit-background-clip", "value": "text" },
     { "property": "-webkit-text-fill-color", "value": "transparent" },
     {
-      "property": "background",
+      "property": "background-image",
       "value": "linear-gradient(to right, #dddddd, #cbcbcb, #e990eb)"
     },
     { "property": "width", "value": "fit-content" }
@@ -10596,7 +10596,7 @@
     { "property": "-webkit-background-clip", "value": "text" },
     { "property": "-webkit-text-fill-color", "value": "transparent" },
     {
-      "property": "background",
+      "property": "background-image",
       "value": "linear-gradient(to right, #dddddd, #cbcbcb, #e990eb)"
     },
     { "property": "width", "value": "fit-content" }
@@ -10605,7 +10605,7 @@
     { "property": "-webkit-background-clip", "value": "text" },
     { "property": "-webkit-text-fill-color", "value": "transparent" },
     {
-      "property": "background",
+      "property": "background-image",
       "value": "linear-gradient(to right, #dddddd, #cbcbcb, #e990eb)"
     },
     { "property": "width", "value": "fit-content" }
@@ -10614,7 +10614,7 @@
     { "property": "-webkit-background-clip", "value": "text" },
     { "property": "-webkit-text-fill-color", "value": "transparent" },
     {
-      "property": "background",
+      "property": "background-image",
       "value": "linear-gradient(to right, #dddddd, #cbcbcb, #e990eb)"
     },
     { "property": "width", "value": "fit-content" }
@@ -18339,7 +18339,7 @@
     },
     { "property": "-webkit-text-fill-color", "value": "transparent" },
     {
-      "property": "background",
+      "property": "background-image",
       "value": "linear-gradient(to right, #dddddd, #cbcbcb, #e990eb)"
     },
     { "property": "width", "value": "fit-content" }
@@ -18348,7 +18348,7 @@
     { "property": "-webkit-background-clip", "value": "text" },
     { "property": "-webkit-text-fill-color", "value": "transparent" },
     {
-      "property": "background",
+      "property": "background-image",
       "value": "linear-gradient(to right, #dddddd, #cbcbcb, #e990eb)"
     },
     { "property": "width", "value": "fit-content" }

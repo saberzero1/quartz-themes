@@ -23745,14 +23745,14 @@ src: url("data:application/octet-stream,base64,AAEAAAAVAQAABABQQkFTRWUeXb0AAqugA
 .cm-header:not(.cm-formatting) {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background: linear-gradient(to right, var(--gradient-header));
+  background-image: linear-gradient(to right, var(--gradient-header));
   width: fit-content;
 }
 
 :is(h1, h2, h3, h4, h5, h6) {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background: linear-gradient(to right, var(--gradient-header));
+  background-image: linear-gradient(to right, var(--gradient-header));
   width: fit-content;
 }
 
