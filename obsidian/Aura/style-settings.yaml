@@ -1,0 +1,854 @@
+name: Aura
+id: aura
+level: 1
+settings:
+  - id: aura-colors-heading
+    title: Colors
+    description: Theme Accent, Colorschemes
+    type: heading
+    level: 1
+    collapsed: true
+  - id: cpt-accent
+    title: Theme Accent
+    description: Change the theme accent as you like
+    type: variable-select
+    allowEmpty: false
+    default: var(--cpt-aura)
+    options:
+      - label: Aura
+        value: var(--cpt-aura)
+      - label: Red
+        value: var(--cpt-red)
+      - label: Orange
+        value: var(--cpt-orange)
+      - label: Yellow
+        value: var(--cpt-yellow)
+      - label: Green
+        value: var(--cpt-green)
+      - label: Cyan
+        value: var(--cpt-cyan)
+      - label: Blue
+        value: var(--cpt-blue)
+      - label: Pink
+        value: var(--cpt-pink)
+      - label: Purple
+        value: var(--cpt-purple)
+  - id: aura-colorshemes-light
+    title: Light Theme Colorscheme
+    type: class-select
+    allowEmpty: false
+    default: default
+    options:
+      - label: Default
+        value: default
+      - label: Origin
+        value: aura-colorschemes-light-origin
+      - label: Nord
+        value: aura-colorschemes-light-nord
+      - label: Notion
+        value: aura-colorschemes-light-notion
+      - label: Rose Pine
+        value: aura-colorschemes-light-rose-pine
+      - label: Kanagawa
+        value: aura-colorschemes-light-kanagawa
+      - label: Gruvbox
+        value: aura-colorschemes-light-gruvbox
+      - label: Tokyonight
+        value: aura-colorschemes-light-tokyonight
+      - label: Solarized
+        value: aura-colorschemes-light-solarized
+  - id: aura-colorshemes-dark
+    title: Dark Theme Colorscheme
+    type: class-select
+    allowEmpty: false
+    default: default
+    options:
+      - label: Default
+        value: default
+      - label: Origin
+        value: aura-colorschemes-dark-origin
+      - label: Nord
+        value: aura-colorschemes-dark-nord
+      - label: Notion
+        value: aura-colorschemes-dark-notion
+      - label: Dracula
+        value: aura-colorschemes-dark-dracula
+      - label: Kanagawa
+        value: aura-colorschemes-dark-kanagawa
+      - label: Rose Pine
+        value: aura-colorschemes-dark-rose-pine
+      - label: Gruvbox
+        value: aura-colorschemes-dark-gruvbox
+      - label: Tokyonight
+        value: aura-colorschemes-dark-tokyonight
+      - label: Solarized
+        value: aura-colorschemes-dark-solarized
+      - label: Mystical Nights
+        value: aura-colorschemes-dark-mystical-nights
+
+  #---------- E D I T O R ----------
+  - id: aura-editor-heading
+    title: Editor
+    description: Active Line, Headings, Callouts, Checkbox and Rainbow Tags, etc...
+    type: heading
+    level: 1
+    collapsed: true
+  - id: aura-active-line
+    title: Active line highlight
+    type: class-select
+    allowEmpty: false
+    default: aura-no-highlight
+    options:
+      - label: None
+        value: aura-no-highlight
+      - label: Highlight
+        value: aura-active-line-highlight
+      - label: Highlight + Border
+        value: aura-active-line-highlight-border
+  - id: aura-text-heading
+    title: Text
+    type: heading
+    level: 2
+    collapsed: true
+  - id: font-default-custom
+    title: Custom Font Default
+    type: variable-text
+    default: "iA Writer Quattro S"
+  - id: font-secondary-custom
+    title: Custom Font Secondary
+    type: variable-text
+    default: "iA Writer Duo S"
+  - id: font-monospace-custom
+    title: Custom Font Monospace
+    type: variable-text
+    default: "iA Writer Mono S"
+  - id: bold-color
+    title: Bold Color
+    type: variable-select
+    default: rgb(var(--cpt-red))
+    options:
+      - label: Red
+        value: rgb(var(--cpt-red))
+      - label: Orange
+        value: rgb(var(--cpt-orange))
+      - label: Yellow
+        value: rgb(var(--cpt-yellow))
+      - label: Green
+        value: rgb(var(--cpt-green))
+      - label: Cyan
+        value: rgb(var(--cpt-cyan))
+      - label: Blue
+        value: rgb(var(--cpt-blue))
+      - label: Pink
+        value: rgb(var(--cpt-pink))
+      - label: Purple
+        value: rgb(var(--cpt-purple))
+  - id: italic-color
+    title: Italic Color
+    type: variable-select
+    default: rgb(var(--cpt-blue))
+    options:
+      - label: Red
+        value: rgb(var(--cpt-red))
+      - label: Orange
+        value: rgb(var(--cpt-orange))
+      - label: Yellow
+        value: rgb(var(--cpt-yellow))
+      - label: Green
+        value: rgb(var(--cpt-green))
+      - label: Cyan
+        value: rgb(var(--cpt-cyan))
+      - label: Blue
+        value: rgb(var(--cpt-blue))
+      - label: Pink
+        value: rgb(var(--cpt-pink))
+      - label: Purple
+        value: rgb(var(--cpt-purple))
+  - id: list-marker-color
+    title: List Marker Color
+    type: variable-select
+    default: rgb(var(--cpt-accent))
+    options:
+      - label: Aura
+        value: rgb(var(--cpt-accent))
+      - label: Red
+        value: rgb(var(--cpt-red))
+      - label: Orange
+        value: rgb(var(--cpt-orange))
+      - label: Yellow
+        value: rgb(var(--cpt-yellow))
+      - label: Green
+        value: rgb(var(--cpt-green))
+      - label: Cyan
+        value: rgb(var(--cpt-cyan))
+      - label: Blue
+        value: rgb(var(--cpt-blue))
+      - label: Pink
+        value: rgb(var(--cpt-pink))
+      - label: Purple
+        value: rgb(var(--cpt-purple))
+  - id: aura-neon-list
+    title: Neon List
+    type: class-toggle
+    default: false
+  - id: cpt-marker-shadow
+    title: List Marker Shadow Color
+    type: variable-select
+    default: rgb(var(--cpt-accent))
+    options:
+      - label: Aura
+        value: rgb(var(--cpt-accent))
+      - label: Red
+        value: rgb(var(--cpt-red))
+      - label: Orange
+        value: rgb(var(--cpt-orange))
+      - label: Yellow
+        value: rgb(var(--cpt-yellow))
+      - label: Green
+        value: rgb(var(--cpt-green))
+      - label: Cyan
+        value: rgb(var(--cpt-cyan))
+      - label: Blue
+        value: rgb(var(--cpt-blue))
+      - label: Pink
+        value: rgb(var(--cpt-pink))
+      - label: Purple
+        value: rgb(var(--cpt-purple))
+  - id: aura-headings-heading
+    title: Headings
+    type: heading
+    level: 2
+    collapsed: true
+  - id: aura-heading-color
+    title: Colored Heading
+    type: class-toggle
+    default: true
+  - id: aura-neon-headings
+    title: Neon Heading
+    type: class-toggle
+    default: false
+  - id: aura-h1-heading
+    title: H1 settings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h1-font
+    title: H1 Custom font
+    type: variable-text
+    default: Rubik
+  - id: h1-size
+    title: H1 size
+    type: variable-number
+    default: 2
+    format: em
+  - id: h1-weight
+    title: H1 weight
+    type: variable-number
+    default: 600
+  - id: h1-line-height
+    title: H1 line height
+    type: variable-number
+    default: 1
+  - id: aura-h1-color
+    title: H1 color
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+      - label: Red
+        value: aura-h1-red
+      - label: Orange
+        value: aura-h1-orange
+      - label: Yellow
+        value: aura-h1-yellow
+      - label: Green
+        value: aura-h1-green
+      - label: Cyan
+        value: aura-h1-cyan
+      - label: Blue
+        value: aura-h1-blue
+      - label: Pink
+        value: aura-h1-pink
+      - label: Purple
+        value: aura-h1-purple
+  - id: h1-color
+    title: Custom H1 Color
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#"
+    default-dark: "#"
+  - id: aura-h2-heading
+    title: H2 settings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h2-font
+    title: H2 Custom font
+    type: variable-text
+    default: Rubik
+  - id: h2-size
+    title: H2 size
+    type: variable-number
+    default: 1.75
+    format: em
+  - id: h2-weight
+    title: H2 weight
+    type: variable-number
+    default: 600
+  - id: h2-line-height
+    title: H2 line height
+    type: variable-number
+    default: 1
+  - id: aura-h2-color
+    title: H2 color
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+      - label: Red
+        value: aura-h2-red
+      - label: Orange
+        value: aura-h2-orange
+      - label: Yellow
+        value: aura-h2-yellow
+      - label: Green
+        value: aura-h2-green
+      - label: Cyan
+        value: aura-h2-cyan
+      - label: Blue
+        value: aura-h2-blue
+      - label: Pink
+        value: aura-h2-pink
+      - label: Purple
+        value: aura-h2-purple
+  - id: h2-color
+    title: Custom H2 Color
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#"
+    default-dark: "#"
+  - id: aura-h3-heading
+    title: H3 settings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h3-font
+    title: H3 Custom font
+    type: variable-text
+    default: Rubik
+  - id: h3-size
+    title: H3 size
+    type: variable-number
+    default: 1.5
+    format: em
+  - id: h3-weight
+    title: H3 weight
+    type: variable-number
+    default: 600
+  - id: h3-line-height
+    title: H3 line height
+    type: variable-number
+    default: 1
+  - id: aura-h3-color
+    title: H3 color
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+      - label: Red
+        value: aura-h3-red
+      - label: Orange
+        value: aura-h3-orange
+      - label: Yellow
+        value: aura-h3-yellow
+      - label: Green
+        value: aura-h3-green
+      - label: Cyan
+        value: aura-h3-cyan
+      - label: Blue
+        value: aura-h3-blue
+      - label: Pink
+        value: aura-h3-pink
+      - label: Purple
+        value: aura-h3-purple
+  - id: h3-color
+    title: Custom H3 Color
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#"
+    default-dark: "#"
+  - id: aura-h4-heading
+    title: H4 settings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h4-font
+    title: H4 Custom font
+    type: variable-text
+    default: Rubik
+  - id: h4-size
+    title: H4 size
+    type: variable-number
+    default: 1.25
+    format: em
+  - id: h4-weight
+    title: H4 weight
+    type: variable-number
+    default: 600
+  - id: h4-line-height
+    title: H4 line height
+    type: variable-number
+    default: 1
+  - id: aura-h4-color
+    title: H4 color
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+      - label: Red
+        value: aura-h4-red
+      - label: Orange
+        value: aura-h4-orange
+      - label: Yellow
+        value: aura-h4-yellow
+      - label: Green
+        value: aura-h4-green
+      - label: Cyan
+        value: aura-h4-cyan
+      - label: Blue
+        value: aura-h4-blue
+      - label: Pink
+        value: aura-h4-pink
+      - label: Purple
+        value: aura-h4-purple
+  - id: h4-color
+    title: Custom H4 Color
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#"
+    default-dark: "#"
+  - id: aura-h5-heading
+    title: H5 settings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h5-font
+    title: H5 Custom font
+    type: variable-text
+    default: Rubik
+  - id: h5-size
+    title: H5 size
+    type: variable-number
+    default: 1
+    format: em
+  - id: h5-weight
+    title: H5 weight
+    type: variable-number
+    default: 600
+  - id: h5-line-height
+    title: H5 line height
+    type: variable-number
+    default: 1
+  - id: aura-h5-color
+    title: H5 color
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+      - label: Red
+        value: aura-h5-red
+      - label: Orange
+        value: aura-h5-orange
+      - label: Yellow
+        value: aura-h5-yellow
+      - label: Green
+        value: aura-h5-green
+      - label: Cyan
+        value: aura-h5-cyan
+      - label: Blue
+        value: aura-h5-blue
+      - label: Pink
+        value: aura-h5-pink
+      - label: Purple
+        value: aura-h5-purple
+  - id: h5-color
+    title: Custom H5 Color
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#"
+    default-dark: "#"
+  - id: aura-h6-heading
+    title: H6 settings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h6-font
+    title: H6 Custom font
+    type: variable-text
+    default: Rubik
+  - id: h6-size
+    title: H6 size
+    type: variable-number
+    default: 1
+    format: em
+  - id: h6-weight
+    title: H6 weight
+    type: variable-number
+    default: 600
+  - id: h6-line-height
+    title: H6 line height
+    type: variable-number
+    default: 1
+  - id: aura-h6-color
+    title: H6 color
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+      - label: Red
+        value: aura-h6-red
+      - label: Orange
+        value: aura-h6-orange
+      - label: Yellow
+        value: aura-h6-yellow
+      - label: Green
+        value: aura-h6-green
+      - label: Cyan
+        value: aura-h6-cyan
+      - label: Blue
+        value: aura-h6-blue
+      - label: Pink
+        value: aura-h6-pink
+      - label: Purple
+        value: aura-h6-purple
+  - id: h6-color
+    title: Custom H6 Color
+    type: variable-themed-color
+    opacity: true
+    format: hex
+    default-light: "#"
+    default-dark: "#"
+
+  - id: aura-callouts-heading
+    title: Callouts
+    type: heading
+    level: 2
+    collapsed: true
+
+  - id: aura-callouts
+    title: Enable Callout Styling
+    type: class-toggle
+
+  - id: aura-callouts-select
+    title: Callout Styling
+    type: class-select
+    allowEmpty: false
+    default: default
+    options:
+      - label: Default
+        value: default
+      - label: Sleek
+        value: aura-callouts-sleek
+      - label: Vanilla
+        value: aura-callouts-vanilla
+      - label: Block
+        value: aura-callouts-block
+  - id: callout-radius
+    title: Callout Radius
+    type: variable-number
+    default: 4
+    format: px
+  - id: aura-custom-checkbox-heading
+    title: Checkbox
+    type: heading
+    level: 2
+    collapsed: true
+  - id: aura-custom-checkbox
+    title: Enable Custom Checkbox
+    description: Enable custom checkboxes for checkbox customization
+    default: true
+    type: class-toggle
+  - id: aura-css-classes-heading
+    title: CSS Classes
+    type: heading
+    level: 2
+    collapsed: true
+  - id: aura-css-classes
+    title: Toggle CSS Classes
+    description: Customize your notes with custom css classes
+    default: true
+    type: class-toggle
+  - id: aura-rainbow-tags-heading
+    title: Rainbow Tags
+    type: heading
+    level: 2
+    collapsed: true
+  - id: aura-rainbow-tags
+    title: Enable Rainbow Tags
+    description: Customize your tag with rainbow colors
+    type: class-toggle
+
+  #---------- L A Y O U T ----------
+  - id: aura-workspace-heading
+    title: Workspace
+    description: Layout, Background, Colorful frame, etc.
+    type: heading
+    level: 1
+    collapsed: true
+  - id: aura-layout-heading
+    title: Layout
+    type: heading
+    level: 2
+    collapsed: true
+  - id: aura-layout-select
+    title: Layout Style
+    type: class-select
+    allowEmpty: false
+    default: aura-default-layout
+    options:
+      - label: Default
+        value: aura-default-layout
+      - label: Cards
+        value: aura-card-layout
+      - label: Origin
+        value: aura-origin-layout
+  - id: aura-disable-borders
+    title: Disable borders
+    type: class-toggle
+  - id: tab-outline-color
+    title: Custom borders Color
+    type: variable-color
+    opacity: true
+    format: hex
+    default: "#"
+  - id: aura-sliding-tabs
+    title: Sliding Tabs
+    description: Make stacked tabs sliding again
+    type: class-toggle
+  - id: aura-card-heading
+    title: Card Layout
+    type: heading
+    level: 3
+    collapsed: true
+  - id: aura-card-radius
+    title: Card radius
+    description: Size unit is px
+    type: variable-number
+    default: 16
+    format: px
+  - id: aura-card-layout-padding
+    title: Card padding
+    description: Size unit is px
+    type: variable-number
+    default: 10
+    format: px
+  - id: aura-card-header-left-padding
+    title: Tab left padding
+    description: Size unit is px
+    type: variable-number
+    default: 20
+    format: px
+  - id: aura-card-shadows
+    title: Enable shadows for cards
+    type: class-toggle
+  - id: aura-card-layout-actions
+    title: Enable card format for left ribbon
+    type: class-toggle
+  - id: aura-card-layout-fileexplorer
+    title: Enable card format for file explorer
+    default: true
+    type: class-toggle
+  - id: aura-origin-heading
+    title: Origin Layout
+    type: heading
+    level: 3
+    collapsed: true
+  - id: tab-options
+    title: Tab Display
+    type: class-select
+    allowEmpty: false
+    default: aura-origin-tabs-default
+    options:
+      - label: Hide Tabs Completely
+        value: aura-origin-hide-tabs
+      - label: Show Tabs on Hover
+        value: aura-origin-tabs-default
+      - label: Show Tabs Completely
+        value: aura-origin-show-tabs
+
+  - id: aura-workspace-background-heading
+    title: Background
+    type: heading
+    level: 2
+    collapsed: true
+  - id: aura-workspace-background
+    title: Enable Backgound
+    description: Customize your workspace background by adding images to it (not compatible with colorful frames)
+    type: class-toggle
+  - id: aura-workspace-background-light-heading
+    title: Light Theme
+    type: heading
+    level: 3
+    collapsed: true
+  - id: aura-workspace-background-image-dark
+    title: Select Background Image
+    description: Customize your workspace background by adding images to it
+    type: class-select
+    allowEmpty: false
+    default: aura-workspace-background-image-lines
+    options:
+      - label: Lines
+        value: aura-workspace-background-image-lines
+      - label: Waves
+        value: aura-workspace-background-image-waves
+      - label: Water Waves
+        value: aura-workspace-background-image-waterwaves
+      - label: Custom
+        value: aura-workspace-background-image-custom
+  - id: aura-workspace-background-image-light-custom-option
+    title: Custom Workspace Background Image
+    description: Customize the background image. Use the default format below for an online image. Use the following format to point to a local file - url("app://local/D:/Pictures/Mountain.jpg").
+    type: variable-text
+    default: url("https://")
+  - id: aura-workspace-background-workspace-slider-light
+    title: Container opacity
+    type: variable-number-slider
+    min: 0
+    max: 1
+    step: 0.05
+    default: 0.4
+  - id: aura-workspace-background-blur-light
+    title: Background blur
+    type: variable-number-slider
+    min: 0
+    max: 20
+    step: 1
+    default: 5
+    format: px
+  - id: aura-workspace-background-brightness-light
+    title: Background brightness
+    type: variable-number-slider
+    min: 0
+    max: 1
+    step: 0.05
+    default: 0.7
+  - id: aura-workspace-background-dark-heading
+    title: Dark Theme
+    type: heading
+    level: 3
+    collapsed: true
+  - id: aura-workspace-background-image-dark
+    title: Select Background Image
+    description: Customize your workspace background by adding images to it
+    type: class-select
+    allowEmpty: false
+    default: aura-workspace-background-image-tokoyo
+    options:
+      - label: Tokoyo
+        value: aura-workspace-background-image-tokoyo
+      - label: Skyline
+        value: aura-workspace-background-image-skyline
+      - label: Spider Man Multiverse
+        value: aura-workspace-background-image-spiderman
+      - label: Neon Sunrise
+        value: aura-workspace-background-image-neonsunrise
+      - label: Custom
+        value: aura-workspace-background-image-custom
+  - id: aura-workspace-background-image-dark-custom-option
+    title: Custom Workspace Background Image
+    description: Customize the background image. Use the default format below for an online image. Use the following format to point to a local file - url("app://local/D:/Pictures/Mountain.jpg").
+    type: variable-text
+    default: url("https://")
+  - id: aura-workspace-background-workspace-slider-dark
+    title: Container opacity
+    type: variable-number-slider
+    min: 0
+    max: 1
+    step: 0.05
+    default: 0.4
+  - id: aura-workspace-background-blur-dark
+    title: Background blur
+    type: variable-number-slider
+    min: 0
+    max: 20
+    step: 1
+    default: 5
+    format: px
+  - id: aura-workspace-background-brightness-dark
+    title: Background brightness
+    type: variable-number-slider
+    min: 0
+    max: 1
+    step: 0.05
+    default: 0.7
+  - id: aura-file-explorer-heading
+    title: File Explorer
+    type: heading
+    level: 2
+    collapsed: true
+  - id: aura-file-icons
+    title: Enable File Icons
+    description: Customize your file icons
+    type: class-toggle
+  - id: aura-folder-icons
+    title: Enable folder Icons
+    description: Customize your folder icons
+    type: class-toggle
+  - id: aura-colorful-frame-heading
+    title: Colorful Frame
+    type: heading
+    level: 2
+    collapsed: true
+  - id: aura-colorful-frame
+    title: Enable Colorful Frame
+    description: This does not work with Transluent Window or Custom Background
+    type: class-toggle
+  - id: aura-colorful-frame-opacity
+    title: Colorful Frame Opacity
+    type: variable-number-slider
+    default: 1
+    min: 0
+    max: 1
+    step: 0.05
+  - id: aura-rainbow-folders-heading
+    title: Rainbow Folders
+    type: heading
+    level: 2
+    collapsed: true
+  - id: aura-rainbow-folders
+    title: Enable Rainbow Folders
+    description: Customize your folder colors
+    type: class-toggle
+
+  - id: aura-show-hide-elements-header
+    title: Show/Hide UI Elements
+    description: Toggle Visibility of UI Elements
+    type: heading
+    level: 1
+    collapsed: true
+  - id: aura-floating-titlebar
+    title: Floating Titlebar
+    type: class-toggle
+  - id: aura-floating-status-bar
+    title: Floating Status Bar
+    type: class-toggle
+  - id: aura-hide-status-bar
+    title: Hide Status Bar
+    type: class-toggle
+  - id: aura-scrollbar-toggle
+    title: Hide Scrollbar
+    type: class-toggle
+  - id: aura-toggle-metadata
+    title: Hide Metadata
+    type: class-toggle
+  - id: aura-tooltip-toggle
+    title: Hide Tooltips
+    type: class-toggle
+  - id: aura-vault-name-toggle
+    title: Hide Vault Name
+    type: class-toggle

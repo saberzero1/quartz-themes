@@ -1,0 +1,37 @@
+name: RetroNotes Settings
+id: retronotes-settings
+settings:
+  - id: retro-lm
+    title: Choose your light theme
+    type: class-select
+    allowEmpty: false
+    default: retro-lm-parchments
+    options:
+      - label: Parchments
+        value: retro-lm-parchments
+      - label: Ivory Pages
+        value: retro-lm-ivory-pages
+      - label: Sunny Memos
+        value: retro-lm-sunny-memos
+      - label: Vintage Papers
+        value: retro-lm-vintage-papers
+      - label: Mint Leafs
+        value: retro-lm-mint-leafs
+  - id: retro-dm
+    title: Choose your dark theme
+    type: class-select
+    allowEmpty: false
+    default: retro-dm-midnight-journal
+    options:
+      - label: Carbon Ink
+        value: retro-dm-carbon-ink
+      - label: Midnight Journal
+        value: retro-dm-midnight-journal
+      - label: Forest Green
+        value: retro-dm-forest-green
+      - label: Blueprint
+        value: retro-dm-blueprint
+      - label: Pinot Noir
+        value: retro-dm-pinot-noir
+      - label: Misty Mirage
+        value: retro-dm-misty-mirage

@@ -1,0 +1,234 @@
+name: Glass Robo theme settings
+id: glass-theme-settings
+collapsed: false
+settings:
+  # General
+  - id: general-settings
+    title: General settings
+    type: heading
+    level: 1
+    collapsed: true
+
+  - id: disable_fonts_settings
+    title: Glass Robo theme fonts
+    description: Disable Glass Robo theme fonts
+    type: class-toggle
+  - id: disable_stars_settings
+    title: Stars in the background
+    description: Disable Stars in the background
+    type: class-toggle
+  - id: disable_bold_gradient_settings
+    title: Disable bold gradient
+    description: make bold text just bold without gradient
+    type: class-toggle
+  - id: hide_navTreeArrow_settings
+    title: Hide nav tree arrow
+    description: Hide navigation tree green arrow (>)
+    type: class-toggle
+  - id: one_row_mobile_toolbar_settings
+    title: Mobile Toolbar Single Row Layout
+    description: Displays the toolbar in a single row ( just for mobile devices)
+    type: class-toggle
+  - id: glass-background-color-settings
+    title: App background color
+    type: variable-themed-color
+    description: Set app background color
+    allowEmpty: true
+    format: hex
+    opacity: false
+    default-light: "#fafafa"
+    default-dark: "#141414"
+  - id: theme-settings
+    title: Themes
+    type: heading
+    level: 1
+    collapsed: true
+  - id: themes-setting
+    title: Themes and colors
+    description: Select color schema
+    type: class-select
+    allowEmpty: false
+    default: glassRobo
+    options:
+      - label: Glass Robo
+        value: glassRobo
+      - label: Gruvbox
+        value: gruvbox
+      - label: Catppuccin
+        value: catppuccin
+      - label: Lorens
+        value: lorens
+      - label: Dracula
+        value: dracula
+      - label: One Dark
+        value: oneDark
+  - id: headers-settings
+    title: headers
+    type: heading
+    level: 1
+    collapsed: true
+  - id: headers-settin
+    title: Styling
+    description: Select headers style
+    type: class-select
+    allowEmpty: false
+    default: glass-robo-style-headers
+    options:
+      - label: No Style
+        value: no-style-headers
+      - label: Glass Robo
+        value: glass-robo-style-headers
+      - label: Lodi
+        value: lodi-style-headers
+      - label: test
+        value: test-style-headers
+      - label: Cross
+        value: cross-style-headers
+      - label: Voidraizer
+        value: voidraizer-style-headers
+      - label: Outline
+        value: outline-style-headers
+      - label: Dots
+        value: dots-style-headers
+      - label: Neat
+        value: neat-style-headers
+  - id: headers-color-settin
+    title: Colors
+    description: Select color schema for headers
+    type: class-select
+    allowEmpty: false
+    default: glass-robo-color-headers
+    options:
+      - label: No Color
+        value: no-color-headers
+      - label: Glass Robo
+        value: glass-robo-color-headers
+      - label: Lorens
+        value: lorens-color-headers
+
+  - id: callouts-settings
+    title: Callouts
+    type: heading
+    level: 1
+    collapsed: true
+  - id: callouts-settin
+    title: Callout styling
+    type: class-select
+    allowEmpty: false
+    default: "glass-robo-callouts"
+    options:
+      - label: Obsidian default
+        value: obsidian-callouts
+      - label: Glass Robo
+        value: glass-robo-callouts
+      - label: Lorens
+        value: lorens-callouts
+      - label: Glow
+        value: glow-callouts
+      - label: Idlib
+        value: idlib-callouts
+      - label: Draa
+        value: draa-callouts
+      - label: Raka
+        value: raka-callouts
+      - label: Ladak
+        value: ladak-callouts
+      - label: Sham
+        value: sham-callouts
+      - label: Hama
+        value: hama-callouts
+      - label: Gaza
+        value: gaza-callouts
+      - label: Halab
+        value: halab-callouts
+      - label: Dzor
+        value: dzor-callouts
+      - label: Hasaka
+        value: hasaka-callouts
+      - label: Tadmor
+        value: tadmor-callouts
+      - label: Homs
+        value: homs-callouts
+      - label: Gummy
+        value: gummy-callouts
+      - label: Wall
+        value: wall-callouts
+      - label: Loli
+        value: loli-callouts
+      - label: Swida
+        value: swida-callouts
+      - label: Tartus
+        value: tartus-callouts
+
+  - id: callout_center_settings
+    title: Centering callouts titles
+    description: works on (Glass Robo, Sham, Hama) themes.
+    type: class-toggle
+  - id: codeBlocks-settings
+    title: Code blocks
+    type: heading
+    level: 1
+    collapsed: true
+  - id: syntax-highlight-theme-dark
+    title: Code blocks styling
+    description: Select syntax highlighting for dark theme
+    type: class-select
+    allowEmpty: false
+    default: glassRoboCode
+    options:
+      - label: Glass Robo
+        value: glassRoboCode
+
+      - label: Dracula
+        value: dracula
+      - label: One Dark
+        value: one-dark-dark
+      - label: Catppuccin Frappé
+        value: catppuccin-frappe-for-dark
+      - label: Catppuccin Macchiato
+        value: catppuccin-macchiato
+      - label: Catppuccin Mocha
+        value: catppuccin-mocha
+      - label: Halcyon
+        value: halcyon
+      - label: GitHub Dark
+        value: github-dark
+      - label: Tokyo Night
+        value: tokyo-night
+  - id: autohide-settings
+    title: Auto hide
+    type: heading
+    level: 1
+    collapsed: true
+  - id: tab-autohide
+    title: Auto hide tab bar
+    type: class-toggle
+  - id: status-bar-autohide
+    title: Auto hide bottom status bar
+    type: class-toggle
+  - id: Ribbon-autohide
+    title: Auto hide left ribbon menu
+    type: class-toggle
+  # Credits
+
+  - id: glass-support-settings
+    title: Support Glass Robo theme
+    description: If you like the theme, here are some ways to support development
+    type: heading
+    level: 1
+    collapsed: true
+  - id: glass-url-donate
+    title: Buy Me a Coffee
+    description: "[https://www.buymeacoffee.com/lorens](https://www.buymeacoffee.com/lorens)"
+    type: info-text
+    markdown: true
+  - id: glass-url-star-repo
+    title: Star the Theme on GitHub
+    description: "[https://github.com/lorens-osman-dev/Glass-Robo](https://github.com/lorens-osman-dev/Glass-Robo)"
+    type: info-text
+    markdown: true
+  - id: glass-url-submit-issue
+    title: Submit an Issue on GitHub
+    description: "[https://github.com/lorens-osman-dev/Glass-Robo/issues](https://github.com/lorens-osman-dev/Glass-Robo/issues)"
+    type: info-text
+    markdown: true

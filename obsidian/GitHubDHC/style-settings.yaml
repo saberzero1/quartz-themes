@@ -1,0 +1,134 @@
+name: GitHubDHC theme settings
+id: id
+settings:
+  - # Colorblind
+
+    id: colorblind
+    title: Colorblind variants
+    type: heading
+    level: 1
+    collapsed: true
+  - id: colorblind_protan-deutan
+    title: Protanopia & Deuteranopia
+    type: class-toggle
+    default: off
+  - id: colorblind_tritan
+    title: Tritanopia
+    type: class-toggle
+    default: off
+  - # Callout Settings
+
+    id: callout
+    title: Callouts
+    type: heading
+    level: 1
+    collapsed: true
+  - id: callout-on
+    title: GitHub callout style
+    type: class-toggle
+    default: on
+  - # Headers Settings
+
+    id: headers
+    title: Headers colors
+    type: heading
+    level: 1
+    collapsed: true
+  - # All Headers
+
+    id: all-headers
+    title: All headers
+    type: heading
+    level: 3
+    collapsed: true
+  - id: headers-one-color
+    title: All headers are the same color
+    type: class-toggle
+    default: on
+  - id: h-color-theme
+    title: Header color
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#24292f"
+    default-dark: "#ffffff"
+  - # Particular Headers
+
+    id: particular headers
+    title: Particular headers
+    description: This settings won't work if `All headers are the same color` is ON
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h1-color-theme
+    title: h1 color
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#24292f"
+    default-dark: "#ffffff"
+  - id: h2-color-theme
+    title: h2 color
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#24292f"
+    default-dark: "#ffffff"
+  - id: h3-color-theme
+    title: h3 color
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#24292f"
+    default-dark: "#ffffff"
+  - id: h4-color-theme
+    title: h4 color
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#24292f"
+    default-dark: "#ffffff"
+  - id: h5-color-theme
+    title: h5 color
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#24292f"
+    default-dark: "#ffffff"
+  - id: h6-color-theme
+    title: h6 color
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#24292f"
+    default-dark: "#ffffff"
+  - # Kanban Settings
+
+    id: kanban
+    title: Kanban
+    type: heading
+    level: 1
+    collapsed: true
+  - id: kanban-variant
+    title: Kanban variant
+    description: Variations of Kanban styles
+    type: class-select
+    allowEmpty: false
+    default: kanban-full
+    options:
+      - label: GitHub projects style
+        value: kanban-full
+      - label: Minimal style
+        value: kanban-on
+      - label: Disable styles
+        value: kanban-off
+  - id: kanban-same-height-cards
+    title: Minimal height for cards
+    description: All cards will have the same initial height
+    type: class-toggle
+    default: on
+  - id: kanban-full-height-column
+    title: Full height lists
+    description:
+    type: class-toggle
+    default: on

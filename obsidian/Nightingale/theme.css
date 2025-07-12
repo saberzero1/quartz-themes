@@ -71,13 +71,16 @@ __Github repo: https://github.com/frank0713/nightingale-obsidian
 /* Font variables and settings */
 body {
   /* font family */
-  --default-font: "Avenir", "Avenir LT Std", Helvetica, Arial, "Amazon Ember", "Rubik", Roboto,
-    sans-serif, sans-serif;
+  --default-font:
+    "Avenir", "Avenir LT Std", Helvetica, Arial, "Amazon Ember", "Rubik",
+    Roboto, sans-serif, sans-serif;
   --default-font-size: 18px;
   --body-font-weight: 450;
-  --tag-font-family: "Microsoft Yahei", "SimSun", "Helvetica Neue", "Helvetica", sans-serif;
+  --tag-font-family:
+    "Microsoft Yahei", "SimSun", "Helvetica Neue", "Helvetica", sans-serif;
   --code-mono-font: "Incosolata", "Consolas";
-  --title-font: "Noto Sans", "Optima LT Std", "Microsoft Yahei", "Noto Sans SC", sans-serif;
+  --title-font:
+    "Noto Sans", "Optima LT Std", "Microsoft Yahei", "Noto Sans SC", sans-serif;
   /* font size & weight */
   /* text size=18px */
   --h1-size: 44px;
@@ -111,7 +114,11 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 0;
-  background-image: linear-gradient(170deg, var(--text-title-1) 0%, var(--text-title-2) 100%);
+  background-image: linear-gradient(
+    170deg,
+    var(--text-title-1) 0%,
+    var(--text-title-2) 100%
+  );
 }
 
 .markdown-preview-section h1,
@@ -130,7 +137,11 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 0;
-  background-image: linear-gradient(170deg, var(--text-title-1) 0%, var(--text-title-2) 100%);
+  background-image: linear-gradient(
+    170deg,
+    var(--text-title-1) 0%,
+    var(--text-title-2) 100%
+  );
 }
 
 body:not(.hd-indi) .is-live-preview .HyperMD-header:hover .cm-header-1::before {
@@ -141,7 +152,11 @@ body:not(.hd-indi) .is-live-preview .HyperMD-header:hover .cm-header-1::before {
   font-size: 10px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(0deg, var(--text-dim) 0%, var(--text-dim) 100%);
+  background-image: linear-gradient(
+    0deg,
+    var(--text-dim) 0%,
+    var(--text-dim) 100%
+  );
 }
 
 body:not(.hd-indi) .is-live-preview .HyperMD-header:hover .cm-header-2::before {
@@ -152,7 +167,11 @@ body:not(.hd-indi) .is-live-preview .HyperMD-header:hover .cm-header-2::before {
   font-size: 10px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(0deg, var(--text-dim) 0%, var(--text-dim) 100%);
+  background-image: linear-gradient(
+    0deg,
+    var(--text-dim) 0%,
+    var(--text-dim) 100%
+  );
 }
 
 body:not(.hd-indi) .is-live-preview .HyperMD-header:hover .cm-header-3::before {
@@ -163,7 +182,11 @@ body:not(.hd-indi) .is-live-preview .HyperMD-header:hover .cm-header-3::before {
   font-size: 10px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(0deg, var(--text-dim) 0%, var(--text-dim) 100%);
+  background-image: linear-gradient(
+    0deg,
+    var(--text-dim) 0%,
+    var(--text-dim) 100%
+  );
 }
 
 body:not(.hd-indi) .is-live-preview .HyperMD-header:hover .cm-header-4::before {
@@ -174,7 +197,11 @@ body:not(.hd-indi) .is-live-preview .HyperMD-header:hover .cm-header-4::before {
   font-size: 10px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(0deg, var(--text-dim) 0%, var(--text-dim) 100%);
+  background-image: linear-gradient(
+    0deg,
+    var(--text-dim) 0%,
+    var(--text-dim) 100%
+  );
 }
 
 body:not(.hd-indi) .is-live-preview .HyperMD-header:hover .cm-header-5::before {
@@ -185,7 +212,11 @@ body:not(.hd-indi) .is-live-preview .HyperMD-header:hover .cm-header-5::before {
   font-size: 10px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(0deg, var(--text-dim) 0%, var(--text-dim) 100%);
+  background-image: linear-gradient(
+    0deg,
+    var(--text-dim) 0%,
+    var(--text-dim) 100%
+  );
 }
 
 body:not(.hd-indi) .is-live-preview .HyperMD-header:hover .cm-header-6::before {
@@ -196,7 +227,11 @@ body:not(.hd-indi) .is-live-preview .HyperMD-header:hover .cm-header-6::before {
   font-size: 10px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(0deg, var(--text-dim) 0%, var(--text-dim) 100%);
+  background-image: linear-gradient(
+    0deg,
+    var(--text-dim) 0%,
+    var(--text-dim) 100%
+  );
 }
 
 /* Separator line */
@@ -215,7 +250,11 @@ strong {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 0;
-  background-image: linear-gradient(50deg, var(--text-accent) 0%, var(--text-sub-accent) 100%);
+  background-image: linear-gradient(
+    50deg,
+    var(--text-accent) 0%,
+    var(--text-sub-accent) 100%
+  );
 }
 
 /* <kbd> */
@@ -442,7 +481,12 @@ table {
     .cm-tag-Note,
     .cm-tag-Notes
   ),
-.cm-hashtag.cm-hashtag-end.cm-meta:is(.cm-tag-notes, .cm-tag-note, .cm-tag-Note, .cm-tag-Notes) {
+.cm-hashtag.cm-hashtag-end.cm-meta:is(
+    .cm-tag-notes,
+    .cm-tag-note,
+    .cm-tag-Note,
+    .cm-tag-Notes
+  ) {
   border: none;
   background-color: var(--nightingale-orange);
   color: var(--nightingale-darkblue);
@@ -464,7 +508,12 @@ table {
     .cm-tag-books,
     .cm-tag-Books
   ),
-.cm-hashtag.cm-hashtag-end.cm-meta:is(.cm-tag-book, .cm-tag-Book, .cm-tag-books, .cm-tag-Books) {
+.cm-hashtag.cm-hashtag-end.cm-meta:is(
+    .cm-tag-book,
+    .cm-tag-Book,
+    .cm-tag-books,
+    .cm-tag-Books
+  ) {
   border: none;
   background-color: var(--nightingale-brown);
   color: var(--text-noraml);
@@ -486,7 +535,12 @@ table {
     .cm-tag-Idea,
     .cm-tag-Ideas
   ),
-.cm-hashtag.cm-hashtag-end.cm-meta:is(.cm-tag-idea, .cm-tag-ideas, .cm-tag-Idea, .cm-tag-Ideas) {
+.cm-hashtag.cm-hashtag-end.cm-meta:is(
+    .cm-tag-idea,
+    .cm-tag-ideas,
+    .cm-tag-Idea,
+    .cm-tag-Ideas
+  ) {
   border: none;
   background-color: var(--nightingale-green);
   color: var(--nightingale-red);
@@ -738,8 +792,13 @@ li[data-task="-"] > p > input:checked {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-16 w-16' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
 }
 
-body:not(.tasks) .markdown-preview-view ul li[data-task="-"].task-list-item.is-checked,
-body:not(.tasks) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:is([data-task="-"]),
+body:not(.tasks)
+  .markdown-preview-view
+  ul
+  li[data-task="-"].task-list-item.is-checked,
+body:not(.tasks)
+  .markdown-source-view.mod-cm6
+  .HyperMD-task-line[data-task]:is([data-task="-"]),
 body:not(.tasks) li[data-task="-"].task-list-item.is-checked {
   color: var(--text-faint);
   text-decoration: line-through solid;
@@ -1105,7 +1164,9 @@ UI
 }
 
 /* folder child */
-.nav-folder-children .nav-folder.is-collapsed .nav-folder-title-content::before {
+.nav-folder-children
+  .nav-folder.is-collapsed
+  .nav-folder-title-content::before {
   content: "🗀";
 }
 

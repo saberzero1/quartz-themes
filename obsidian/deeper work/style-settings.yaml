@@ -1,0 +1,22 @@
+name: Deeper Work Theme
+id: deeper-work
+settings:
+  - id: text-properties
+    title: Text Properties
+    type: heading
+    level: 3
+  - id: line-height
+    title: Line Height
+    description: The line height of paragraph text
+    type: variable-number
+    default: 1.5
+  - id: h3456-color
+    title: Heading 3-6 Color
+    type: variable-color
+    format: hex
+    default: "#FC6DAB"
+  - id: inline-code-color
+    title: Inline Code Color
+    type: variable-color
+    format: hex
+    default: "#FC6DAB"

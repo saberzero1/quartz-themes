@@ -1,0 +1,10 @@
+name: Space
+id: obsidian-space
+settings:
+  - id: background-heading
+    title: Background
+    type: heading
+    level: 2
+  - id: background-image-toggle
+    title: Remove Image
+    type: class-toggle

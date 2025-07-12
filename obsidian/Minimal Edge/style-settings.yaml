@@ -1,0 +1,270 @@
+name: Minimal Edge
+id: minimal-edge-settings
+settings:
+  - id: main-theme
+    title: Interface
+    type: heading
+    level: 2
+    collapsed: true
+  - id: background-theme
+    title: Themes
+    type: class-select
+    allowEmpty: false
+    default: default-theme
+    options:
+      - label: Default
+        value: default-theme
+      - label: Warm
+        value: warm-theme
+      - label: Eclipse
+        value: eclipse-theme
+      - label: Vintage
+        value: vintage-theme
+      - label: Warm Amber
+        value: warm-amber-theme
+      - label: Rose
+        value: rose-theme
+
+  - id: font-style
+    title: Body Text Font
+    description: Choose the font family for your main text
+    type: variable-select
+    default: var(--font-text)
+    options:
+      - label: System Default
+        value: var(--font-text)
+      - label: Cursive
+        value: cursive
+      - label: Helvetica
+        value: Helvetica, Arial, sans-serif
+      - label: Georgia
+        value: Georgia, serif
+      - label: Monospace
+        value: monospace
+
+  - id: titlebar-button-style
+    title: Titlebar Button Style
+    type: class-select
+    description: change titlebar style(windows only)
+    allowEmpty: false
+    default: titlebar-default-style
+    options:
+      - label: Default
+        value: titlebar-default-style
+      - label: Minimal
+        value: titlebar-minimal-style
+      - label: Retro
+        value: titlebar-retro-style
+      - label: Vintage
+        value: titlebar-vintage-style
+  - id: file-explorer-icons-heading
+    title: File Explorer Icons
+    type: heading
+    level: 4
+    collapsed: false
+  - id: hide-folder-icons
+    title: Hide Folder Icons
+    description: Toggle visibility of folder icons in the file explorer
+    type: class-toggle
+    default: false
+  - id: hide-file-icons
+    title: Hide File Icons
+    description: Toggle visibility of file icons in the file explorer
+    type: class-toggle
+    default: false
+  - id: heading-styles
+    title: Heading Styles
+    type: heading
+    level: 4
+    collapsed: true
+
+  - id: heading-style-toggle
+    title: Heading Style Mode
+    type: class-select
+    allowEmpty: false
+    default: heading-style-none
+    options:
+      - label: None
+        value: heading-style-none
+      - label: Basic (All headings same color)
+        value: heading-style-basic
+      - label: Advanced (Individual heading colors)
+        value: heading-style-advanced
+
+  - id: basic-heading-settings
+    title: Basic Heading Settings
+    type: heading
+    level: 5
+    collapsed: true
+
+  - id: heading-color
+    title: Heading Color (Basic Mode)
+    description: Sets the color for all headings
+    type: variable-color
+    format: hex
+    default: "#333333"
+
+  - id: custom-heading-font
+    title: Custom Heading Font (Basic Mode)
+    description: Font family for all headings
+    type: variable-text
+    default: ""
+
+  - id: advanced-heading-settings
+    title: Advanced Heading Settings
+    type: heading
+    level: 5
+    collapsed: true
+
+  - id: h1-color
+    title: H1 Color
+    type: variable-color
+    format: hex
+    default: "#333333"
+
+  - id: custom-h1-font
+    title: Custom H1 Font
+    description: Font family for H1
+    type: variable-text
+    default: ""
+
+  - id: h2-color
+    title: H2 Color
+    type: variable-color
+    format: hex
+    default: "#444444"
+
+  - id: custom-h2-font
+    title: Custom H2 Font
+    description: Font family for H2
+    type: variable-text
+    default: ""
+
+  - id: h3-color
+    title: H3 Color
+    type: variable-color
+    format: hex
+    default: "#555555"
+
+  - id: custom-h3-font
+    title: Custom H3 Font
+    description: Font family for H3
+    type: variable-text
+    default: ""
+
+  - id: h4-color
+    title: H4 Color
+    type: variable-color
+    format: hex
+    default: "#666666"
+
+  - id: custom-h4-font
+    title: Custom H4 Font
+    description: Font family for H4
+    type: variable-text
+    default: ""
+
+  - id: h5-color
+    title: H5 Color
+    type: variable-color
+    format: hex
+    default: "#777777"
+
+  - id: custom-h5-font
+    title: Custom H5 Font
+    description: Font family for H5
+    type: variable-text
+    default: ""
+
+  - id: h6-color
+    title: H6 Color
+    type: variable-color
+    format: hex
+    default: "#888888"
+
+  - id: custom-h6-font
+    title: Custom H6 Font
+    description: Font family for H6
+    type: variable-text
+    default: ""
+
+  - id: border-style
+    title: Border Style
+    type: heading
+    level: 2
+    collapsed: true
+
+  - id: disable-border
+    title: Disable Borders
+    description: Toggle borders on or off
+    type: class-toggle
+    default: false
+
+  - id: border-radius
+    title: Border Radius
+    description: Set the border radius for elements
+    type: variable-number
+    default: 11
+    min: 0
+    max: 20
+    step: 1
+    format: px
+
+  - id: modal-settings
+    title: Modal Settings
+    type: heading
+    level: 2
+    collapsed: true
+
+  - id: enable-modal-blur
+    title: Enable Modal Background Blur
+    description: Toggle blur effect on modal backgrounds
+    type: class-toggle
+    default: true
+
+  - id: modal-blur-amount
+    title: Modal Background Blur Amount
+    description: Set the blur amount for modal backgrounds (in pixels)
+    type: variable-number
+    default: 3
+    min: 0
+    max: 10
+    step: 1
+    format: px
+
+  - id: enable-modal-animation
+    title: Enable Modal Animation
+    description: Toggle to turn off the modal animation
+    type: class-toggle
+    default: true
+
+  - id: ribbon-settings
+    title: Ribbon Style
+    type: heading
+    level: 2
+    collapsed: true
+
+  - id: ribbon-style
+    title: Ribbon Style
+    type: class-select
+    allowEmpty: false
+    default: ribbon-default-style
+    options:
+      - label: Default
+        value: ribbon-default-style
+      - label: Box
+        value: ribbon-box-style
+      - label: Edge
+        value: ribbon-edge-style
+
+  - id: support-header
+    title: Support
+    type: heading
+    level: 1
+    collapsed: false
+
+  - id: minimal-edge-support
+    level: 2
+    type: info-text
+    markdown: true
+    description: If you enjoy my work, consider supporting me by [buying me a coffee](https://buymeacoffee.com/el_haris) or starring the project on [GitHub](https://github.com/Elhary/Obsidian-Minimal-Edge). Your support is greatly appreciated!

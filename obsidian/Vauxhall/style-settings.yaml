@@ -1,0 +1,57 @@
+name: Vauxhall
+id: vauxhall
+settings:
+  - id: main-color
+    title: Main Color
+    description: "The main color influencing the interface colors."
+    type: class-select
+    default: vauxhall-indigo
+    options:
+      - label: Teal
+        value: vauxhall-teal
+      - label: Blue
+        value: vauxhall-blue
+      - label: Indigo
+        value: vauxhall-indigo
+      - label: Purple
+        value: vauxhall-purple
+      - label: Magenta
+        value: vauxhall-magenta
+      - label: Red
+        value: vauxhall-red
+      - label: White
+        value: vauxhall-white
+  - id: color-intensity
+    title: Color Intensity
+    description: "How intense the main color appears across the interface. (Dark Theme only)"
+    type: class-select
+    default: intensity-standard
+    options:
+      - label: Void
+        value: intensity-void
+      - label: Standard
+        value: intensity-standard
+      - label: Nebula
+        value: intensity-nebula
+  - id: header-color-type
+    title: Header Color Style
+    description: "How intense the main color appears across the interface."
+    type: class-select
+    default: headers-gradient-cyan-to-purple
+    options:
+      - label: Mono
+        value: headers-mono
+      - label: Mono Gradient
+        value: headers-mono-gradient
+      - label: Rainbow
+        value: headers-colorful
+      - label: Gradient (Mint/Blue)
+        value: headers-gradient-mint-to-blue
+      - label: Gradient (Cyan/Purple)
+        value: headers-gradient-cyan-to-purple
+      - label: Gradient (Blue/Red)
+        value: headers-gradient-blue-to-red
+  - id: h1-accent
+    title: Accent Color Main Header
+    description: "Apply the user's accent color to H1 headers."
+    type: class-toggle

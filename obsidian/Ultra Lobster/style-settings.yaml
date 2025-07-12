@@ -1,0 +1,607 @@
+name: "🦞 Ultra Lobster: Unity"
+id: ulu-theme-settings
+settings:
+  - id: theme-info
+    title: "an intentional writing space"
+    description: |
+      see an issue? want to suggest a feature? visit us on github: <https://github.com/7368697661/Ultra-Lobster>
+
+      This theme was made with 💖 by kneecaps.
+    markdown: true
+    type: info-text
+    level: 0
+
+  - id: ulu-subtheme
+    title: 0️⃣ subthemes
+    type: heading
+    level: 1
+    collapsed: true
+
+  - id: ulu-subtheme-selection
+    title: "🧱 base theme"
+    type: class-select
+    allowEmpty: true
+    default: ""
+    options:
+      - label: "📄 Origami"
+        value: ulu-origami
+      - label: "🏗️ working edits mk3"
+        value: ulu-we3
+      - label: "🏗️ gummy"
+        value: ulu-gummy
+
+  - id: ulu-color-accent
+    title: Custom Accent
+    description: Select from hand-picked & theme-adjusted accent colors
+    type: class-select
+    allowEmpty: false
+    default: "ulu-blue"
+    options:
+      - label: ❤️ Red
+        value: ulu-red
+      - label: 💚 Green
+        value: ulu-green
+      - label: 🧡 Orange
+        value: ulu-orange
+      - label: 💛 Yellow
+        value: ulu-yellow
+      - label: 🤍 Cyan
+        value: ulu-cyan
+      - label: 💙 Blue
+        value: ulu-blue
+      - label: 💜 Purple
+        value: ulu-purple
+      - label: 💖 Pink
+        value: ulu-pink
+
+  - id: ulu-theme-light
+    title: themes, light
+    type: class-select
+    allowEmpty: true
+    default: ""
+    options:
+      - label: 👁️ low contrast
+        value: ulu-con-l
+      - label: 🖤 fff/000
+        value: ulu-super-con-l
+      - label: 🖌️ accent tinted
+        value: ulu-accent-bg-l
+      - label: ⭕ accent tinted, low contrast
+        value: ulu-accent-bg-lowcon-l
+      - label: ❤️ sorcery
+        value: ulu-red-l
+      - label: 💚 eidolon
+        value: ulu-green-l
+      - label: 💙 shadow
+        value: ulu-blue-l
+      - label: 💜 umbra
+        value: ulu-purple-l
+      - label: 🧥 soft
+        value: ulu-soft-l
+      - label: 🌅 creation
+        value: ulu-light-l
+      - label: 🏳️‍⚧️ blahaj
+        value: ulu-shark-l
+      - label: ☀️ solarized
+        value: ulu-solar-lt
+      - label: 📦 gruvbox
+        value: ulu-gruvbox-lt
+      - label: 🦞 lobster-time
+        value: ulu-obplus-lt
+
+  - id: ulu-theme-dark
+    title: themes, dark
+    type: class-select
+    allowEmpty: true
+    default: ""
+    options:
+      - label: 👁️ low contrast
+        value: ulu-con-d
+      - label: 🖤 fff/000
+        value: ulu-super-con-d
+      - label: 🖌️ accent tinted
+        value: ulu-accent-bg-d
+      - label: ⭕ accent tinted, low contrast
+        value: ulu-accent-bg-lowcon-d
+      - label: ❤️ sorcery
+        value: ulu-red-d
+      - label: 💚 eidolon
+        value: ulu-green-d
+      - label: 💙 shadow
+        value: ulu-blue-d
+      - label: 💜 umbra
+        value: ulu-purple-d
+      - label: 🧥 soft
+        value: ulu-soft-d
+      - label: 🚨 CONTROL
+        value: ulu-control-d
+      - label: 🚧 blueprint [wip]
+        value: ulu-blueprint-d
+      - label: 🏳️‍⚧️ blahaj
+        value: ulu-shark-d
+      - label: ☀️ solarized
+        value: ulu-solar-dt
+      - label: 📦 gruvbox
+        value: ulu-gruvbox-dt
+      - label: 🦞 lobster-time
+        value: ulu-obplus-dt
+      - label: 🦇 dracula
+        value: ulu-dracula-dt
+      - label: 💭 linking Your Thinking
+        value: ulu-lyt-dt
+      - label: 🚧 gradient [wip]
+        value: ulu-gradient-d
+      - label: 👑 lord
+        value: ulu-lord-d
+      - label: 🚧 abaddon [wip]
+        value: ulu-end-d
+      - label: 🚦 spotlight
+        value: ulu-spotlight-d
+      - label: 🔪 Murder
+        value: ulu-amoled-dt
+
+  - id: ulu-cards-border
+    title: cards border disable
+    type: class-toggle
+
+  - id: ulu-cards-shadow
+    title: cards shadow disable
+    type: class-toggle
+
+  - id: ulu-radius
+    title: border radius
+    type: variable-select
+    allowEmpty: false
+    default: "medium"
+    options:
+      - label: None
+        value: 0
+      - label: small
+        value: var(--radius-s)
+      - label: medium
+        value: var(--radius-m)
+      - label: large
+        value: var(--radius-l)
+
+  - id: ulu-callouts
+    title: callout styling
+    type: class-select
+    allowEmpty: true
+    default: ""
+    options:
+      - label: gummy
+        value: ulu-gummy-callouts
+      - label: notyoutube
+        value: ulu-nt-callouts
+      - label: brutal
+        value: ulu-brutal-callouts
+      - label: soft
+        value: ulu-soft-callouts
+      - label: working edits mk3
+        value: ulu-we3-callout
+      - label: line
+        value: ulu-line-callouts
+
+  - id: ulu-codeblocks
+    title: codeblock styling
+    type: class-select
+    allowEmpty: true
+    default: ""
+    options:
+      - label: gummy
+        value: ulu-gummy-codeblock
+      - label: notosx
+        value: ulu-ntosx-codeblock
+
+  - id: ulu-border
+    title: border styling
+    type: class-select
+    allowEmpty: true
+    default: ""
+    options:
+      - label: no border
+        value: ulu-noborder
+      - label: dashed border
+        value: ulu-dborder
+
+  - id: ulu-prop-card
+    title: properties card
+    type: class-toggle
+
+  - id: ulu-notitle
+    title: disable vault title
+    type: class-toggle
+
+  - id: ulu-grad
+    title: Halo Gradient
+    description: Enable a WIP background animation inspired by soft grainy gradients and angel numbers
+    type: class-toggle
+
+  - id: ulu-bar
+    title: minimal status bar
+    description: hover to reveal the status bar
+    type: class-toggle
+  - id: ulu-list-distinct
+    title: top level lists
+    description: enable list header demarking 🚨 does not work in reading mode
+    type: class-toggle
+
+  - id: ulu-scrollbars
+    title: turn off scrollbars
+    type: class-toggle
+
+  - id: ulu-canvas
+    title: 🖼️ canvas settings
+    type: heading
+    level: 1
+    collapsed: true
+
+  - id: ulu-fancy-canvas-1
+    title: canvas styling, red
+    type: class-select
+    allowEmpty: true
+    default: ""
+    options:
+      - label: gradient
+        value: ulu-canvas-fancycolor10
+      - label: swiss coffee & nlackcurrant damask
+        value: ulu-canvas-fancycolor20
+      - label: gummy
+        value: ulu-gummy-canvas1
+      - label: gradient 2.0
+        value: ulu-gradient-canvas1
+
+  - id: ulu-fancy-canvas-2
+    title: danvas styling, orange
+    type: class-select
+    allowEmpty: true
+    default: ""
+    options:
+      - label: gradient
+        value: ulu-canvas-fancycolor11
+      - label: space equator & cloud burst
+        value: ulu-canvas-fancycolor21
+      - label: gummy
+        value: ulu-gummy-canvas2
+      - label: gradient 2.0
+        value: ulu-gradient-canvas2
+
+  - id: ulu-fancy-canvas-3
+    title: canvas styling, yellow
+    type: class-select
+    allowEmpty: true
+    default: ""
+    options:
+      - label: gradient
+        value: ulu-canvas-fancycolor12
+      - label: laser & meteorite
+        value: ulu-canvas-fancycolor22
+      - label: gummy
+        value: ulu-gummy-canvas3
+      - label: gradient 2.0
+        value: ulu-gradient-canvas3
+
+  - id: ulu-fancy-canvas-4
+    title: canvas styling, green
+    type: class-select
+    allowEmpty: true
+    default: ""
+    options:
+      - label: gradient
+        value: ulu-canvas-fancycolor13
+      - label: double green & lochinvar roy
+        value: ulu-canvas-fancycolor23
+      - label: gummy
+        value: ulu-gummy-canvas4
+      - label: gradient 2.0
+        value: ulu-gradient-canvas4
+
+  - id: ul-fancy-canvas-5
+    title: cnvas styling, cyan
+    type: class-select
+    allowEmpty: true
+    default: ""
+    options:
+      - label: gradient
+        value: ulu-canvas-fancycolor14
+      - label: havelock & malibu fiord
+        value: ulu-canvas-fancycolor24
+      - label: gummy
+        value: ulu-gummy-canvas5
+      - label: gradient 2.0
+        value: ulu-gradient-canvas5
+
+  - id: ulu-fancy-canvas-6
+    title: canvas styling, purple
+    type: class-select
+    allowEmpty: true
+    default: ""
+    options:
+      - label: gradient
+        value: ulu-canvas-fancycolor15
+      - label: martinique & honey
+        value: ulu-canvas-fancycolor25
+      - label: gummy
+        value: ulu-gummy-canvas6
+      - label: gradient 2.0
+        value: ulu-gradient-canvas6
+
+  - id: ulu-canvas-border0
+    title: disable border, red
+    type: class-toggle
+  - id: ulu-canvas-border1
+    title: disable border, orange
+    type: class-toggle
+  - id: ulu-canvas-border2
+    title: disable border, yellow
+    type: class-toggle
+  - id: ulu-canvas-border3
+    title: disable border, green
+    type: class-toggle
+  - id: ulu-canvas-border4
+    title: disable border, blue
+    type: class-toggle
+  - id: ulu-canvas-border5
+    title: disable border, purple
+    type: class-toggle
+
+  - id: ulu-typography
+    title: 📑 typography
+    type: heading
+    level: 1
+    collapsed: true
+
+  - id: ulu-font-general
+    title: editor font
+    type: variable-select
+    allowEmpty: false
+    default: "Satoshi"
+    options:
+      - "Monaspace"
+      - "Satoshi"
+      - "Getai"
+      - "Fraunces"
+      - "Nightingale"
+      - "TerminusTTF"
+      - "Aspekta"
+      - "General Sans"
+      - "IBM Plex Sans"
+      - "Inter"
+      - "Space Grotesk"
+      - "Lexend"
+      - "DobbinTextSF-Roman"
+      - "Eurostile"
+
+  - id: ulu-font-title
+    title: title type
+    type: variable-select
+    allowEmpty: false
+    default: "Monaspace"
+    options:
+      - "Monaspace"
+      - "Satoshi"
+      - "Getai"
+      - "Fraunces"
+      - "Nightingale"
+      - "TerminusTTF"
+      - "Aspekta"
+      - "General Sans"
+      - "IBM Plex Sans"
+      - "Inter"
+      - "Space Grotesk"
+
+  - id: responsive-text
+    title: text adjuster
+    description: 🚨 MUST BE A WHOLE / DECIMAL NUMBER such as 1 or 1.1. further scale can be changed via slider in appearance
+    type: variable-number
+    default: 1
+    format: em
+
+  - id: ulu-faintselect
+    title: accent text selection
+    type: class-toggle
+
+  - id: ulu-accent-title
+    title: accent Titles
+    type: class-toggle
+
+  - id: ulu-canvas-center
+    title: center canvas
+    description: center align text in canvas cards
+    type: class-toggle
+
+  - id: ulu-headings
+    title: ⌨️ heading settings
+    type: heading
+    level: 2
+    collapsed: true
+
+  - id: ulu-header-size
+    title: header size arrays
+    description: options for changing your header sizes
+    type: class-select
+    allowEmpty: true
+    options:
+      - label: opinionated
+        value: ulu-headings-opn
+      - label: descending
+        value: ulu-headings-dec
+      - label: flat
+        value: ulu-headings-flt
+
+  - id: ulu-colorfo-headings
+    title: rainbow headers
+    type: class-toggle
+
+  - id: ulu-header1-override
+    title: gader 1 size override
+    type: class-toggle
+
+  - id: ulu-header1-override-size
+    title: header 1 size override, size
+    type: variable-number
+    default: 1
+    format: em
+
+  - id: ulu-header1-type
+    title: header 1 typeface
+    type: variable-select
+    allowEmpty: true
+    default: ""
+    options:
+      - "Monaspace"
+      - "Satoshi"
+      - "Getai"
+      - "Fraunces"
+      - "Nightingale"
+      - "TerminusTTF"
+      - "Aspekta"
+      - "General Sans"
+      - "IBM Plex Sans"
+      - "Inter"
+      - "Space Grotesk"
+
+  - id: ulu-header2-type
+    title: header 2 typeface
+    type: variable-select
+    allowEmpty: true
+    default: ""
+    options:
+      - "Monaspace"
+      - "Satoshi"
+      - "Getai"
+      - "Fraunces"
+      - "Nightingale"
+      - "TerminusTTF"
+      - "Aspekta"
+      - "General Sans"
+      - "IBM Plex Sans"
+      - "Inter"
+      - "Space Grotesk"
+
+  - id: ulu-header3-type
+    title: header 3 typeface
+    type: variable-select
+    allowEmpty: true
+    default: ""
+    options:
+      - "Monaspace"
+      - "Satoshi"
+      - "Getai"
+      - "Fraunces"
+      - "Nightingale"
+      - "TerminusTTF"
+      - "Aspekta"
+      - "General Sans"
+      - "IBM Plex Sans"
+      - "Inter"
+      - "Space Grotesk"
+
+  - id: ulu-header4-type
+    title: header 4 typeface
+    type: variable-select
+    allowEmpty: true
+    default: ""
+    options:
+      - "Monaspace"
+      - "Satoshi"
+      - "Getai"
+      - "Fraunces"
+      - "Nightingale"
+      - "TerminusTTF"
+      - "Aspekta"
+      - "General Sans"
+      - "IBM Plex Sans"
+      - "Inter"
+      - "Space Grotesk"
+
+  - id: ulu-header5-type
+    title: header 5 typeface
+    type: variable-select
+    allowEmpty: true
+    default: ""
+    options:
+      - "Monaspace"
+      - "Satoshi"
+      - "Getai"
+      - "Fraunces"
+      - "Nightingale"
+      - "TerminusTTF"
+      - "Aspekta"
+      - "General Sans"
+      - "IBM Plex Sans"
+      - "Inter"
+      - "Space Grotesk"
+
+  - id: ulu-header6-type
+    title: header 6 typeface
+    type: variable-select
+    allowEmpty: true
+    default: ""
+    options:
+      - "Monaspace"
+      - "Satoshi"
+      - "Getai"
+      - "Fraunces"
+      - "Nightingale"
+      - "TerminusTTF"
+      - "Aspekta"
+      - "General Sans"
+      - "IBM Plex Sans"
+      - "Inter"
+      - "Space Grotesk"
+
+  - id: ulu-header-line-accent
+    title: header underline color
+    type: variable-select
+    allowEmpty: false
+    default: "monochrome"
+    options:
+      - label: monochrome
+        value: var(--background-modifier-border)
+      - label: accent
+        value: var(--color-accent)
+  - id: ulu-header-line-h1
+    title: header 1 underline
+    type: class-toggle
+  - id: ulu-header-line-h2
+    title: header 2 underline
+    type: class-toggle
+  - id: ulu-header-line-h3
+    title: header 3 underline
+    type: class-toggle
+  - id: ulu-header-line-h4
+    title: header 4 underline
+    type: class-toggle
+  - id: ulu-header-line-h5
+    title: header 5 underline
+    type: class-toggle
+  - id: ulu-header-line-h6
+    title: header 6 underline
+    type: class-toggle
+
+  - id: h1-weight
+    title: header 1 weight
+    description: Nightingale looks best at weight >500
+    type: variable-number
+    default: 900
+  - id: h2-weight
+    title: header 2 weight
+    type: variable-number
+    default: 800
+  - id: h3-weight
+    title: header 3 weight
+    type: variable-number
+    default: 700
+  - id: h4-weight
+    title: header 4 weight
+    type: variable-number
+    default: 700
+  - id: h5-weight
+    title: header 5 weight
+    type: variable-number
+    default: 600
+  - id: h6-weight
+    title: header 6 weight
+    type: variable-number
+    default: 600

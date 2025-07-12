@@ -1,0 +1,149 @@
+name: 🌐 Wikipedia
+id: wikipedia-theme
+settings:
+  - id: custom-accent
+    type: class-toggle
+    title: Use Custom Accent Color
+    default: false
+  - id: layout-heading
+    title: Layout
+    type: heading
+    level: 2
+    collapsed: true
+  - id: file-line-width
+    title: Readable Line Length
+    type: variable-text
+    description: This is how wide a note will appear when Readable Line Length is turned on. For most themes, this value is somewhere around 700px.
+    default: 100%
+  - id: ribbon-heading
+    title: Ribbon
+    type: heading
+    level: 3
+    collapsed: true
+  - id: ribbon-style
+    title: Ribbon Style
+    type: class-select
+    allowEmpty: false
+    default: ribbon-default
+    options:
+      - label: Always Show
+        value: ribbon-default
+      - label: Show on Hover
+        value: ribbon-hover
+      - label: Fully Hidden (will not show on hover; toggle using a hotkey or command palette)
+        value: ribbon-hide
+  - id: frontmatter-heading
+    title: Frontmatter
+    type: heading
+    level: 3
+    collapsed: true
+  - id: hide-frontmatter
+    title: Hide Frontmatter
+    type: class-toggle
+    default: false
+  - id: frontmatter-style
+    title: Frontmatter Style
+    default: frontmatter-default
+    type: class-select
+    options:
+      - label: Infobox
+        value: frontmatter-default
+      - label: Blockquote
+        value: frontmatter-blockquote
+  - id: typography-heading
+    title: Typography
+    type: heading
+    level: 2
+    collapsed: true
+  - id: headings-heading
+    title: Headings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: heading-6-heading
+    title: H6
+    type: heading
+    level: 4
+    collapsed: true
+  - id: special-h6
+    title: Infobox Header 6
+    type: class-toggle
+    description: Style Header 6 to be smaller and have a pale background, like the headings inside a Wikipedia infobox.
+    default: true
+  - id: infoboxes-heading
+    title: Callouts, Blockquotes, & Infoboxes
+    type: heading
+    level: 3
+    collapsed: true
+  - id: infobox-width
+    title: Infobox Width
+    description: This will affect the width of all components styled like Wikipedia infoboxes. Depending on your settings, these may include Info callouts, frontmatter, and images.
+    type: variable-text
+    default: 25%
+  - id: callouts-heading
+    title: Callouts
+    type: heading
+    level: 4
+    collapsed: true
+  - id: hide-callout-icons
+    type: class-toggle
+    title: Hide Callout Icons
+    default: false
+  - id: hide-callout-title
+    type: class-toggle
+    title: Hide Info Callout Title
+    default: false
+  - id: info-normal
+    title: Don't Render Info Callout as an Infobox
+    description: By default, the theme renders any Info callout as a Wikipedia infobox. Toggle this setting to render Info callouts like a regular callout instead.
+    type: class-toggle
+    default: false
+  - id: other-elements-heading
+    title: Misc
+    type: heading
+    level: 2
+    collapsed: true
+  - id: images-heading
+    title: Images
+    type: heading
+    level: 3
+    collapsed: true
+  - id: image-placement
+    title: Image Placement
+    type: class-select
+    description: Control where images are placed on the page
+    default: float-right
+    options:
+      - label: Don't Float
+        value: no-float
+      - label: Float Right (default)
+        value: float-right
+      - label: Float Left
+        value: float-left
+      - label: Center
+        value: float-center
+  - id: image-width
+    title: Image Width
+    type: variable-select
+    default: var(--infobox-width)
+    options:
+      - label: Unset
+        value: unset
+      - label: Infobox Width
+        value: var(--infobox-width)
+      - label: Custom
+        value: var(--img-width-custom)
+  - id: img-width-custom
+    title: Custom Image Width
+    type: variable-text
+    description: Examples - 300px, 9em
+    default: 300px
+
+  - id: img-max-width
+    default: 55
+    format: "%"
+    type: variable-number-slider
+    title: Image Max Width
+    description: Set a max width for images (percentage)
+    min: 25
+    max: 100

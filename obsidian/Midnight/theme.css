@@ -69,7 +69,9 @@ svg * {
   div > ul > li > .list-bullet::after {
     content: "\25CF";
   }
-  :is(.cm-fold-indicator:hover, *) ~ .cm-formatting.cm-formatting-list .list-bullet::after,
+  :is(.cm-fold-indicator:hover, *)
+    ~ .cm-formatting.cm-formatting-list
+    .list-bullet::after,
   .list-bullet::after {
     content: "\26AC";
     width: unset;
@@ -227,7 +229,8 @@ body {
   /* Callouts */
   --callout-border-width: 0px;
   --callout-border-opacity: 0.25;
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-radius: var(--radius-m);
   --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-title-color: inherit;
@@ -316,7 +319,8 @@ body {
   --embed-padding: 0 24px 0 var(--size-4-6);
   --embed-font-style: inherit;
   /* Blocks */
-  --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
+  --embed-block-shadow-hover:
+    0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border);
   /* File layout */
   --file-line-width: 750px;
@@ -514,7 +518,8 @@ body {
   --nav-item-background-hover: var(--color-muted-purple);
   --nav-item-background-active: var(--color-muted-purple);
   --nav-item-background-selected: hsla(var(--color-accent-hsl), 0.15);
-  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1) var(--size-4-6);
+  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
+    var(--size-4-6);
   --nav-item-parent-padding: var(--nav-item-padding);
   --nav-item-children-padding-left: var(--size-2-2);
   --nav-item-children-margin-left: var(--size-4-3);
@@ -574,7 +579,10 @@ body {
   --modal-max-height: 1000px;
   --modal-max-width-narrow: 800px;
   --modal-border-width: var(--border-width);
-  --modal-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+  --modal-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
   --modal-radius: var(--radius-l);
   --modal-community-sidebar-width: 280px;
   /* Multi-select pills */
@@ -602,7 +610,8 @@ body {
   --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
   --pdf-sidebar-background: var(--background-primary);
-  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+  --pdf-thumbnail-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
   /* Popovers - file previews */
   --popover-width: 550px;
   --popover-height: 530px;
@@ -616,7 +625,10 @@ body {
   --prompt-max-width: 80vw;
   --prompt-max-height: 70vh;
   --prompt-border-width: var(--border-width);
-  --prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus));
+  --prompt-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
   /* Radiuses */
   --radius-s: 4px;
   --radius-m: 8px;
@@ -692,9 +704,13 @@ body {
   --swatch-width: 24px;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15);
   /* Tabs */
-  --tab-background-active: var(--color-muted-purple); /* Current open tab background color. */
+  --tab-background-active: var(
+    --color-muted-purple
+  ); /* Current open tab background color. */
   --tab-text-color: var(--text-faint); /* Unfocused window, closed tab color. */
-  --tab-text-color-active: var(--text-muted); /* Unfocused window, open tab color. */
+  --tab-text-color-active: var(
+    --text-muted
+  ); /* Unfocused window, open tab color. */
   --tab-text-color-focused: var(
     --text-faint
   ); /* Close tab button & closed tab text color, unfocused window. */
@@ -869,12 +885,20 @@ body {
   --color-purple: #a882ff;
   --color-pink: #fa99cd;
   --color-base-00: var(--color-main-dark); /* Main UI color. */
-  --color-base-10: var(--color-secondary-dark); /* The background color of code. */
-  --color-base-20: var(--color-secondary-dark); /* Secondary color. "Non-main" UI. */
+  --color-base-10: var(
+    --color-secondary-dark
+  ); /* The background color of code. */
+  --color-base-20: var(
+    --color-secondary-dark
+  ); /* Secondary color. "Non-main" UI. */
   --color-base-25: #3c3c3c; /* Search & settings input field color. */
-  --color-base-30: var(--color-outline); /* Borders, settings buttons & focused window top color. */
+  --color-base-30: var(
+    --color-outline
+  ); /* Borders, settings buttons & focused window top color. */
   --color-base-35: #3f3f3f; /* Input fields, graph links, tab borders & button toggle-off color. */
-  --color-base-40: var(--color-light-blue); /* Selected borders. E.g. command palatte border. */
+  --color-base-40: var(
+    --color-light-blue
+  ); /* Selected borders. E.g. command palatte border. */
   --color-base-50: #666666; /* Numbered list, checkbox border, bullet point, onfocused window unselected tabs color. */
   --color-base-70: var(
     --text-faint
@@ -903,15 +927,19 @@ body {
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
     0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);

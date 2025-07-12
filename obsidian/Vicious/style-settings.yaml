@@ -1,0 +1,163 @@
+name: Vicious
+id: vicious
+settings:
+  - id: generalSettings
+    title: General Settings
+    type: heading
+    level: 2
+  - title: Disable Scrollbar
+    id: scrollbar-hide
+    type: class-toggle
+    default: true
+    description: Turn on if you want to hide the scrollbar
+
+  - title: Disable Vibrant Indent
+    id: vibrant-indents
+    type: class-toggle
+    default: false
+    description: Turn on if you want to hide the vibrant indent
+  - title: Disable Alternative Checkboxes
+    id: disable-alternative-checkboxes
+    description: Turn on if you are using your own implementation via a CSS Snippet.
+    default: false
+    type: class-toggle
+  - title: Disable Vibrant Folders
+    id: vibrant-folders
+    type: class-toggle
+    default: false
+    description: Turn on if you want to hide the vibrant folders
+  - id: callout Style
+    title: Callout Style
+    description: Select your preferred callout style
+    type: class-select
+    allowEmpty: false
+    default: callout-style-01
+    options:
+      - label: Default
+        value: callout-style-01
+      - label: Static
+        value: callout-style-04
+      - label: Vibrant
+        value: callout-style-02
+      - label: One Color
+        value: callout-style-03
+  - id: colors
+    title: Colors
+    type: heading
+    level: 2
+  - id: boldcolors
+    title: Bold Color
+    description: Select your preferred **BOLD** color
+    type: class-select
+    allowEmpty: false
+    default: bold-C002
+    options:
+      - label: Red
+        value: bold-C001
+      - label: Beach
+        value: bold-C002
+      - label: Gold
+        value: bold-C003
+      - label: Yellow
+        value: bold-C004
+      - label: Lime
+        value: bold-C005
+      - label: Green
+        value: bold-C006
+      - label: Turquoise
+        value: bold-C007
+      - label: Cyan
+        value: bold-C008
+      - label: Purple
+        value: bold-C009
+      - label: Violet
+        value: bold-C010
+      - label: Pink
+        value: bold-C011
+  - id: italicscolors
+    title: Italics Color
+    description: Select your preferred _ITALIC_ color
+    type: class-select
+    allowEmpty: false
+    default: itl-C003
+    options:
+      - label: Red
+        value: itl-C001
+      - label: Beach
+        value: itl-C002
+      - label: Gold
+        value: itl-C003
+      - label: Yellow
+        value: itl-C004
+      - label: Lime
+        value: itl-C005
+      - label: Green
+        value: itl-C006
+      - label: Turquoise
+        value: itl-C007
+      - label: Cyan
+        value: itl-C008
+      - label: Purple
+        value: itl-C009
+      - label: Violet
+        value: itl-C010
+      - label: Pink
+        value: itl-C011
+  - id: bold-italicscolors
+    title: Bold + Italics Color
+    description: Select your preferred **_BOLD+ITALIC_** color
+    type: class-select
+    allowEmpty: false
+    default: bld-itl-C001
+    options:
+      - label: Red
+        value: bld-itl-C001
+      - label: Beach
+        value: bld-itl-C002
+      - label: Gold
+        value: bld-itl-C003
+      - label: Yellow
+        value: bld-itl-C004
+      - label: Lime
+        value: bld-itl-C005
+      - label: Green
+        value: bld-itl-C006
+      - label: Turquoise
+        value: bld-itl-C007
+      - label: Cyan
+        value: bld-itl-C008
+      - label: Purple
+        value: bld-itl-C009
+      - label: Violet
+        value: bld-itl-C010
+      - label: Pink
+        value: bld-itl-C011
+  - id: highlightcolors
+    title: Highlight Color
+    description: Select your preferred highlight color
+    type: class-select
+    allowEmpty: false
+    default: highlight-C003
+    options:
+      - label: Red
+        value: highlight-C001
+      - label: Beach
+        value: highlight-C002
+      - label: Gold
+        value: highlight-C003
+      - label: Yellow
+        value: highlight-C004
+      - label: Lime
+        value: highlight-C005
+      - label: Green
+        value: highlight-C006
+      - label: Turquoise
+        value: highlight-C007
+      - label: Cyan
+        value: highlight-C008
+      - label: Purple
+        value: highlight-C009
+      - label: Violet
+        value: highlight-C010
+      - label: Pink
+        value: highlight-C011

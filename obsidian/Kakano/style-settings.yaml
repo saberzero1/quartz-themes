@@ -1,0 +1,361 @@
+name: Kakano Theme
+id: kakano-style
+settings:
+  - id: heading-baseColor
+    title: Base color
+    type: heading
+    level: 1
+    collapsed: false
+  - id: infoText-baseColor
+    description: "The Kakano theme uses a base color for each vault, and generates different shades and gradients from it. You can either select from one of the preset colors, or specify an exact color."
+    type: info-text
+    markdown: true
+  - id: theme-setting-predefinedBaseColor
+    title: "Preset base color"
+    description: "If you just want a quick color, choose one of these."
+    type: class-select
+    allowEmpty: true
+    default: theme-setting-baseColorPreset-kahurangi
+    options:
+      - label: "Use accent color"
+        value: theme-setting-baseColorPreset-accent
+      - label: "Whero – Red"
+        value: theme-setting-baseColorPreset-whero
+      - label: "Karaka – Orange"
+        value: theme-setting-baseColorPreset-karaka
+      - label: "Kōwhai – Yellow"
+        value: theme-setting-baseColorPreset-koowhai
+      - label: "Kākāriki – Green"
+        value: theme-setting-baseColorPreset-kaakaariki
+      - label: "Kārikiōrangi – Cyan"
+        value: theme-setting-baseColorPreset-kaarikioorangi
+      - label: "Kahurangi – Blue"
+        value: theme-setting-baseColorPreset-kahurangi
+      - label: "Waiporoporo – Purple"
+        value: theme-setting-baseColorPreset-waiporoporo
+      - label: "Māwhero – Pink"
+        value: theme-setting-baseColorPreset-maawhero
+      - label: "Mangu – Black"
+        value: theme-setting-baseColorPreset-mangu
+      - label: "Mā – White"
+        value: theme-setting-baseColorPreset-maa
+      - label: "Kiwikiwi – Grey"
+        value: theme-setting-baseColorPreset-kiwikiwi
+  - id: base
+    title: Exact base color
+    description: 'Set an exact base color. Make sure "Preset base color" is empty, and click Save to apply.'
+    type: variable-color
+    format: hsl-split
+    default: "#2176B0"
+  - id: heading-background
+    title: Background
+    type: heading
+    level: 1
+    collapsed: true
+  - id: theme-value-gradientContrast
+    title: "Background gradient contrast"
+    description: "Degree of contrast for background gradients. Set to zero for a flat background color."
+    type: variable-number-slider
+    default: 0.2
+    min: 0
+    max: 1
+    step: 0.1
+  - id: heading-customGradient
+    title: Custom Gradient
+    type: heading
+    level: 2
+    collapsed: true
+  - id: theme-setting-customGradient
+    title: "Use a custom gradient for the background"
+    description: "Kakano normally provides a smooth gradient background using the same hue as the base color. This setting overrides that so you can have a gradient with different hues top and bottom. Note that the colors you set here won't be used directly: they'll be lightened for light mode and darkened for dark mode."
+    type: class-toggle
+  - id: theme-color-customGradientBaseTop
+    title: Custom Gradient Top
+    description: "Base color for the top of the gradient"
+    type: variable-color
+    format: hsl
+    default: "#ff0000"
+  - id: theme-color-customGradientBaseBottom
+    title: Custom Gradient Bottom
+    description: "Base color for the bottom of the gradient"
+    type: variable-color
+    format: hsl
+    default: "#0000ff"
+  - id: heading-layout
+    title: Layout
+    type: heading
+    level: 2
+    collapsed: true
+  - id: theme-setting-fullWidthStatusBar
+    title: "Full width status bar"
+    description: "EXPERIMENTAL If you have many items in your status bar, you may find that it overflows onto the sidebars. This setting will push the main app workspace up so the status bar can use the full window width."
+    type: class-toggle
+  - id: heading-notes
+    title: Notes
+    type: heading
+    level: 1
+    collapsed: true
+  - id: theme-setting-lightModeNoteBg
+    title: "Light mode note background"
+    description: "In light mode, note backgrounds can be full white (default) or near white with a slight tint of the base color."
+    type: class-select
+    allowEmpty: false
+    default: theme-setting-lightModeNoteBgFullWhite
+    options:
+      - label: "Near white"
+        value: theme-setting-lightModeNoteBgNearWhite
+      - label: "Full white"
+        value: theme-setting-lightModeNoteBgFullWhite
+  - id: theme-value-darkModeNoteBg
+    title: "Dark mode note background"
+    description: "In dark mode, note backgrounds can be near black (default) or full black. Near black is a bit easier on the eyes. Full black will save a little energy on OLED screens which will switch back pixels completely off. And some people just like the way it looks."
+    type: class-select
+    allowEmpty: false
+    default: theme-value-darkModeNoteBgNearBlack
+    options:
+      - label: "Near black (less eye strain)"
+        value: theme-value-darkModeNoteBgNearBlack
+      - label: "Full black (OLED screen will switch pixels off)"
+        value: theme-value-darkModeNoteBgFullBlack
+  - id: theme-setting-distinguishNonContentTabs
+    title: "Distinguish non-editable tabs"
+    description: "Most tabs have content created by you (e.g. notes, canvases, kanban charts) but some aren't directly editable (e.g. graphs, calendars, maps). When this setting is on, the non-editable tabs are shaded differently when inactive."
+    default: true
+    type: class-toggle
+  - id: setting-properties-position
+    title: "Properties position"
+    description: "Place properties before or after your main note content. Note that this only applies to Live Preview mode."
+    type: class-select
+    allowEmpty: false
+    default: "setting-properties-position-above"
+    options:
+      - label: "Above main note content"
+        value: "setting-properties-position-above"
+      - label: "Below main note content"
+        value: "setting-properties-position-below"
+  - id: theme-setting-embeddedNoteTitleVisibility
+    title: "Embedded note titles"
+    description: "When a note is embedded in another note, show or hide the source note's title."
+    type: class-select
+    allowEmpty: false
+    default: theme-setting-embeddedNoteTitleVisibilityHover
+    options:
+      - label: "Always hidden"
+        value: theme-setting-embeddedNoteTitleVisibilityHide
+      - label: "Visible on hover"
+        value: theme-setting-embeddedNoteTitleVisibilityHover
+      - label: "Always visible"
+        value: theme-setting-embeddedNoteTitleVisibilityShow
+  - id: theme-setting-stickyEmbeddedLinks
+    title: "Embedded links scroll position"
+    description: "EXPERIMENTAL Embedded links can be placed at the below your content (so you scroll to the bottom to see them), or pinned so they stay visible as you scroll."
+    type: class-select
+    allowEmpty: false
+    default: "theme-setting-stickyEmbeddedLinks-off"
+    options:
+      - label: "Place below content (scroll down to view)"
+        value: "theme-setting-stickyEmbeddedLinks-off"
+      - label: "Pin (stay visible while content scrolls)"
+        value: "theme-setting-stickyEmbeddedLinks-on"
+  - id: heading-typographySettings
+    title: Typography
+    type: heading
+    level: 1
+    collapsed: true
+  - id: theme-setting-differentiateBulletLevels
+    title: "Style nested bullet levels differently"
+    description: "Show different bullets for different levels of nesting"
+    type: class-toggle
+    default: true
+  - id: heading-HeadingSettings
+    title: Headings
+    type: heading
+    level: 2
+    collapsed: false
+  - id: theme-setting-headingFont
+    title: Heading font
+    description: Font used for headings. Leave empty to use the same font as body text, as defined by `Text font` in `Appearance`.
+    type: variable-text
+    default: ""
+    quotes: true
+  - id: theme-setting-headingScaleFactor
+    title: "Heading scale factor – desktop/tablet"
+    description: "Scale factor for heading sizes. Larger numbers will increase the difference between different heading sizes, smaller numbers will decrease the difference."
+    type: class-select
+    allowEmpty: false
+    default: theme-setting-headingScaleFactor1point2
+    options:
+      - label: "1.067 - Minor Second"
+        value: theme-setting-headingScaleFactor1point067
+      - label: "1.125 - Major Second"
+        value: theme-setting-headingScaleFactor1point125
+      - label: "1.200 - Minor Third"
+        value: theme-setting-headingScaleFactor1point2
+      - label: "1.250 - Major Third"
+        value: theme-setting-headingScaleFactor1point25
+      - label: "1.333 - Perfect Fourth"
+        value: theme-setting-headingScaleFactor1point333
+      - label: "1.414 - Augmented Fourth"
+        value: theme-setting-headingScaleFactor1point414
+      - label: "1.500 - Perfect Fifth"
+        value: theme-setting-headingScaleFactor1point5
+      - label: "1.618 - Golden Ratio"
+        value: theme-setting-headingScaleFactor1point618
+  - id: theme-setting-headingScaleFactorPhone
+    title: "Heading scale factor – phone"
+    description: "Scale factor for heading sizes on smaller phone screens. With space at a premium, you'll usually want this to be smaller than the desktop scale factor"
+    type: class-select
+    allowEmpty: false
+    default: theme-setting-headingScaleFactorPhone1point125
+    options:
+      - label: "1.067 - Minor Second"
+        value: theme-setting-headingScaleFactorPhone1point067
+      - label: "1.125 - Major Second"
+        value: theme-setting-headingScaleFactorPhone1point125
+      - label: "1.200 - Minor Third"
+        value: theme-setting-headingScaleFactorPhone1point2
+      - label: "1.250 - Major Third"
+        value: theme-setting-headingScaleFactorPhone1point25
+      - label: "1.333 - Perfect Fourth"
+        value: theme-setting-headingScaleFactorPhone1point333
+      - label: "1.414 - Augmented Fourth"
+        value: theme-setting-headingScaleFactorPhone1point414
+      - label: "1.500 - Perfect Fifth"
+        value: theme-setting-headingScaleFactorPhone1point5
+      - label: "1.618 - Golden Ratio"
+        value: theme-setting-headingScaleFactorPhone1point618
+  - id: heading-lineWidthSettings
+    title: Line length
+    type: heading
+    level: 2
+    collapsed: false
+  - id: infoText-lineWidth
+    description: "Maximum line length in characters. 50-75 characters is often recommended for readability in languages with Latin scripts. 15-35 characters may be better for Chinese, Japanese and Korean characters. These settings apply when the **Readable line length** setting is enabled in **Editor**"
+    type: info-text
+    markdown: true
+  - id: theme-setting-lineWidth
+    title: "Line length for Live Preview and Source Mode"
+    description: ""
+    type: variable-number-slider
+    default: 60
+    min: 10
+    max: 120
+    step: 5
+  - id: theme-setting-lineWidthReadingView
+    title: "Line length for Reading View"
+    description: ""
+    type: variable-number-slider
+    default: 60
+    min: 10
+    max: 120
+    step: 5
+  - id: heading-editing
+    title: Editing
+    type: heading
+    level: 1
+    collapsed: true
+  - id: infoText-editing
+    description: "These settings apply to the **Live Preview** and **Source** modes, but not to the **Reading** mode."
+    type: info-text
+    markdown: true
+  - id: theme-setting-highlightActiveLine
+    title: "Highlight active line"
+    description: "Show a background color behind the active line while editing."
+    type: class-toggle
+  - id: theme-setting-codeBlockLineNumbers
+    title: "Line numbers in code blocks"
+    description: "Show line numbers in code blocks"
+    type: class-toggle
+    default: true
+  - id: heading-mobile
+    title: Mobile
+    type: heading
+    level: 1
+    collapsed: true
+  - id: theme-setting-mobileHorizontalPadding
+    title: "Mobile horizontal spacing"
+    description: "Width of space to the left and right of the note content. Set to zero if you'd like the note to extend to the full width, 0.5 or 1 if you'd like to see your background gradient."
+    type: variable-number-slider
+    default: 0.5
+    min: 0
+    max: 1
+    step: 0.25
+  - id: theme-setting-mobileCardsUI
+    title: "Mobile cards UI"
+    description: "EXPERIMENTAL Scale the main workspace down when there's a modal in the foreground, creating a 3D cards effect. Currently unfinished, but you can see it when you open a prompt."
+    type: class-toggle
+  - id: heading-compatibility
+    title: Compatibility
+    type: heading
+    level: 1
+    collapsed: true
+  - id: theme-setting-enableBuiltInAlternativeCheckboxes
+    title: "Enable built-in alternative checkboxes"
+    description: "Kakano provides styles for some common alternative checkbox states. Different themes have built-in support for different sets of alternative checkboxes, so some users may prefer to use their own CSS snippets that work across multiple themes. If you'd like to do this, you can disable Kakano's built-in alternative checkboxes to ensure that they don't clas with the snippet."
+    type: class-toggle
+    default: true
+  - id: infoText-alternativeCheckboxesReferenceSet
+    description: "> [!info] > The [Alternative Checkboxes Reference Set project](https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set) is working on standardising alternative checkboxes."
+    type: info-text
+    markdown: true
+  - id: heading-communityPlugins
+    title: Community Plugins
+    type: heading
+    level: 1
+    collapsed: true
+  - id: infoText-communityPlugins
+    description: "By default, Kakano changes the appearance of many community plugins to provide a more consistent appearance. If you prefer the standard appearance for a plugin you can disable Kakano's changes."
+    type: info-text
+    markdown: true
+  - id: theme-setting-overrideAdvancedTables
+    title: "Advanced Tables"
+    type: class-toggle
+    default: true
+  - id: theme-setting-overrideCalendar
+    title: "Calendar"
+    type: class-toggle
+    default: true
+  - id: theme-setting-overrideClearUnusedImages
+    title: "Clear Unused Images"
+    type: class-toggle
+    default: true
+  - id: theme-setting-overrideColumns
+    title: "Columns"
+    type: class-toggle
+    default: true
+  - id: theme-setting-overrideDataview
+    title: "Dataview"
+    type: class-toggle
+    default: true
+  - id: theme-setting-overrideExcalidraw
+    title: "Excalidraw"
+    type: class-toggle
+    default: true
+  - id: theme-setting-overrideFolderNote
+    title: "Folder Note"
+    type: class-toggle
+    default: true
+  - id: theme-setting-overrideJiraIssue
+    title: "Jira Issue"
+    type: class-toggle
+    default: true
+  - id: theme-setting-overrideKanban
+    title: "Kanban"
+    type: class-toggle
+    default: true
+  - id: theme-setting-overrideMapView
+    title: "Map View"
+    type: class-toggle
+    default: true
+  - id: theme-setting-overrideRecentFiles
+    title: "Recent Files"
+    type: class-toggle
+    default: true
+  - id: theme-setting-overrideTasks
+    title: "Tasks"
+    type: class-toggle
+    default: true
+  - id: theme-setting-overrideStyleSettings
+    title: "Style Settings"
+    type: class-toggle
+    default: true

@@ -202,7 +202,10 @@ span.math {
 /* Workspace Tabs */
 /**********************/
 
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title,
+.is-focused
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-title,
 .workspace-tab-header.is-active .workspace-tab-header-inner-title {
   color: var(--glow-color-class-green);
 }
@@ -1327,7 +1330,9 @@ li::marker {
 }
 
 /* Nick's Tiny Sliding Panes Tweaks */
-.workspace-split.mod-root > .workspace-leaf:last-of-type .workspace-leaf-content {
+.workspace-split.mod-root
+  > .workspace-leaf:last-of-type
+  .workspace-leaf-content {
   border-top-right-radius: 0px; /*instead of 6px*/
 }
 
@@ -1636,7 +1641,8 @@ mark {
   cursor: pointer;
 }
 
-.kanban-plugin__item-postfix-button.is-enabled.clickable-icon .kanban-plugin__icon {
+.kanban-plugin__item-postfix-button.is-enabled.clickable-icon
+  .kanban-plugin__icon {
   color: var(--glow-color-orange-param);
 }
 

@@ -1,0 +1,539 @@
+name: Listive Theme Settings
+id: listive-theme-settings
+settings:
+  - id: listive-theme
+    title: Listive theme identifier
+    type: class-toggle
+    default: true
+
+  - id: general-ui-scheme-title
+    title: General UI and Color Scheme
+    description: Theme variant, ui font size, line-height, note's width etc.
+    type: heading
+    level: 1
+    collapsed: true
+
+  - id: general-color-scheme-title
+    title: Color schemes
+    type: heading
+    level: 2
+    collapsed: false
+  - id: desktop-dark-theme-variant
+    title: Theme variant
+    description: Variations on a theme
+    type: class-select
+    allowEmpty: false
+    default: color-scheme-discord
+    options:
+      - label: Base
+        value: color-scheme-base
+      - label: Discord
+        value: color-scheme-discord
+      - label: OLED Black
+        value: oled-black
+  - id: is-force-oled-black-mobile
+    title: Force OLED Black theme for mobile
+    type: class-toggle
+    default: true
+
+  - id: general-ui-fonts-title
+    title: UI Fonts
+    type: heading
+    level: 2
+    collapsed: false
+  - id: font-ui-medium
+    title: UI Font Size
+    description: The maximum line width in rem units
+    type: variable-number-slider
+    default: 14
+    min: 10
+    max: 30
+    step: 1
+    format: px
+
+  - id: features-general-title
+    title: Note's General Look and Feel
+    type: heading
+    level: 2
+    collapsed: false
+  - id: file-line-width
+    title: Note pane max width
+    description: Use `cssClass:wide-page` in frontmatter for per note full width.
+    type: variable-text
+    default: 700px
+  - id: line-height-normal
+    title: Note line height
+    description: General line height. See Typography heading's and Outliner and List for list's.
+    type: variable-number
+    default: 1.35
+
+  - id: fab-title
+    title: Floating Action Button (FAB)
+    type: heading
+    level: 2
+    collapsed: true
+  - id: lst-fab-view-x
+    title: FAB button X-Axis Adjustment
+    type: variable-text
+    default: 2vw
+  - id: lst-disable-fab-view
+    title: Disable FAB Edit/View Button (mobile only)
+    type: class-toggle
+    default: false
+  - id: lst-fab-view-y
+    title: FAB Edit/View Button Y-Axis Adjustment
+    type: variable-text
+    default: 10vh
+  - id: fab-2nd-button-select
+    title: FAB 2nd Button Selection
+    description: Select which button for 2nd button or disable it
+    type: class-select
+    allowEmpty: false
+    default: lst-fab-b2-1
+    options:
+      - label: 1st Cmdr button
+        value: lst-fab-b2-1
+      - label: 2nd Cmdr button
+        value: lst-fab-b2-2
+      - label: Disable 2nd FAB
+        value: lst-disable-fab-b2
+  - id: lst-fab-b2-y
+    title: FAB 2nd Button Y-Axis Adjustment
+    type: variable-text
+    default: 30vh
+
+  - id: typography-headers-title
+    title: Typography - Headings / Headers
+    type: heading
+    level: 1
+    collapsed: true
+  - id: header-h1-title
+    title: H1
+    type: heading
+    level: 2
+    collapsed: true
+  - id: h1-font
+    title: H1 Font
+    type: variable-text
+    default: Courgette
+  - id: h1-size
+    title: H1 Font Size
+    type: variable-text
+    default: 1.60em
+  - id: h1-border-width
+    title: H1 Border Width
+    type: variable-text
+    default: 1px
+  - id: h1-color
+    title: H1 Color
+    type: variable-themed-color
+    format: hsl
+    default-light: "#"
+    default-dark: "#"
+  - id: header-h2-title
+    title: H2
+    type: heading
+    level: 2
+    collapsed: true
+  - id: h2-font
+    title: H2 Font
+    type: variable-text
+    default: Courgette
+  - id: h2-size
+    title: H2 Font Size
+    type: variable-text
+    default: 1.48em
+  - id: h2-border-width
+    title: H2 Border Width
+    type: variable-text
+    default: 1px
+  - id: h2-color
+    title: H2 Color
+    type: variable-themed-color
+    format: hsl
+    default-light: "#"
+    default-dark: "#"
+  - id: header-h3-title
+    title: H3
+    type: heading
+    level: 2
+    collapsed: true
+  - id: h3-font
+    title: H3 Font
+    type: variable-text
+    default: Karla
+  - id: h3-size
+    title: H3 Font Size
+    type: variable-text
+    default: 1.36em
+  - id: h3-border-width
+    title: H3 Border Width
+    type: variable-text
+    default: 0px
+  - id: h3-color
+    title: H3 Color
+    type: variable-themed-color
+    format: hsl
+    default-light: "#"
+    default-dark: "#"
+
+  - id: header-h4-title
+    title: H4
+    type: heading
+    level: 2
+    collapsed: true
+  - id: h4-font
+    title: H4 Font
+    type: variable-text
+    default: Karla
+  - id: h4-size
+    title: H4 Font Size
+    type: variable-text
+    default: 1.12em
+  - id: h4-color
+    title: H4 Color
+    type: variable-themed-color
+    format: hsl
+    default-light: "#"
+    default-dark: "#"
+
+  - id: header-h5-title
+    title: H5
+    type: heading
+    level: 2
+    collapsed: true
+  - id: h5-font
+    title: H5 Font
+    type: variable-text
+    default: Inter
+  - id: h5-size
+    title: H5 Font Size
+    type: variable-text
+    default: 1.00em
+  - id: h5-color
+    title: H5 Color
+    type: variable-themed-color
+    format: hsl
+    default-light: "#"
+    default-dark: "#"
+
+  - id: header-h6-title
+    title: H6
+    type: heading
+    level: 2
+    collapsed: true
+  - id: h6-font
+    title: H6 Font
+    type: variable-text
+    default: Inter
+  - id: h6-size
+    title: H6 Font Size
+    type: variable-text
+    default: 1.00em
+  - id: h6-color
+    title: H6 Color
+    type: variable-themed-color
+    format: hsl
+    default-light: "#"
+    default-dark: "#"
+
+  - id: listive-outliner-title
+    title: Outliner and List Customisation
+    description: Indentation guide, list embed, list style, etc.
+    type: heading
+    level: 1
+    collapsed: true
+  - id: lst-ig-adj-title
+    title: Relationship line adjustment
+    type: heading
+    level: 2
+    collapsed: true
+  - id: is-css-guide
+    title: Enable CSS based Relationship Line
+    description: Reading View only. Add is-css-guide class to the body element
+    type: class-toggle
+    default: true
+  - id: list-guide-adj
+    title: Relationship Line adjustment for desktop
+    description: Reading View only. Either enable toggle above or Editor > Show Indentation Guide
+    type: variable-text
+    default: 0px
+  - id: list-guide-adj-mobile
+    title: Relationship Line adjustment for mobile
+    description: Reading View only. Must enable toggle above
+    type: variable-text
+    default: 0px
+  - id: list-guide-outliner-adj
+    title: Outliner plugin vertical line adjustment
+    description: Editing View only.
+    type: variable-text
+    default: 0px
+
+  - id: list-style-title
+    title: List Bullet Style
+    type: heading
+    level: 2
+    collapsed: true
+  - id: list-style
+    title: List Bullet Style
+    description: Variations on a theme
+    type: class-select
+    allowEmpty: false
+    default: list-d-c-d
+    options:
+      - label: Disc-Disc
+        value: list-d-d-d
+      - label: Disc-Circle
+        value: list-d-c-d
+      - label: Disc-Circle-Square
+        value: list-d-c-s
+
+  - id: list-spacing-title
+    title: List Spacing - Indent and Line
+    type: heading
+    level: 2
+    collapsed: true
+  - id: list-indent-first
+    title: Indent spacing for 1st bullet
+    description: Reading View only. Left spacing for first li
+    type: variable-number
+    default: 1.6
+    format: em
+  - id: list-indent
+    title: Indent spacing for subsequent bullets
+    description: Editing and Reading View. Left spacing for subsequent li
+    type: variable-number
+    default: 1.6
+    format: em
+  - id: list-spacing
+    title: Line spacing for lists (ol and ul)
+    description: Top & bottom spacing between lists. See General UI and Typography for non list line height.
+    type: variable-number
+    default: 0.2
+    format: em
+
+  - id: list-embed-title
+    title: List Embed
+    description: Enable "seamless" embed when in list for all notes
+    type: heading
+    level: 2
+    collapsed: true
+  - id: list-embed-global
+    title: Enable List Embed vault-wide
+    type: class-toggle
+    default: false
+
+  - id: list-bt-title
+    title: Bullet Threading
+    type: heading
+    level: 2
+    collapsed: true
+  - id: lst-partial-bt
+    title: Enable Partial Bullet Threading
+    type: class-toggle
+    default: false
+
+  - id: features-title
+    title: Content Elements look and feel
+    description: Callout style, frontmatter, gutter, tabs style, etc.
+    type: heading
+    level: 1
+    collapsed: true
+
+  - id: alternate-checkboxes-title
+    title: Alternate Checkboxes
+    type: heading
+    level: 2
+    collapsed: true
+  - id: alt-checkbox-bg-content
+    title: Background Option
+    description: Only for non task related checkboxes
+    type: variable-select
+    allowEmpty: false
+    default: "''"
+    options:
+      - label: Enable
+        value: "''"
+      - label: Disable
+        value: none
+
+  - id: blockquote-title
+    title: Blockquote
+    type: heading
+    level: 2
+    collapsed: true
+  - id: blockquote-font-style
+    title: Blockquote Font Style
+    type: variable-select
+    allowEmpty: false
+    default: italic
+    options:
+      - label: Normal
+        value: normal
+      - label: Italic
+        value: italic
+
+  - id: callout-title
+    title: Callout
+    type: heading
+    level: 2
+    collapsed: true
+  - id: callout-style
+    title: Callout Style
+    type: class-select
+    allowEmpty: false
+    default: callout-style-icon-right
+    options:
+      - label: Original
+        value: callout-style-original
+      - label: Icon Top Right
+        value: callout-style-icon-right
+
+  - id: frontmatter-title
+    title: Frontmatter
+    type: heading
+    level: 2
+    collapsed: true
+  - id: frontmatter-style
+    title: Frontmatter Style
+    type: class-select
+    allowEmpty: false
+    default: lst-fm-compact
+    options:
+      - label: Compact
+        value: lst-fm-compact
+      - label: Standard
+        value: lst-fm-std
+  - id: lst-fm-lp-hide
+    title: Hide Frontmatter in LP
+    description: Hides frontmatter/YAML when line is not active. There's visual cues.
+    type: class-toggle
+    default: false
+
+  - id: gutter-title
+    title: Gutter "div"
+    type: heading
+    level: 2
+    collapsed: true
+  - id: gutter-display
+    title: Show/Hide Gutter
+    description: When "Show line number" option disabled
+    type: variable-select
+    allowEmpty: false
+    default: block
+    options:
+      - label: Show
+        value: block
+      - label: Hide
+        value: none
+
+  - id: lst-mathblock-title
+    title: Math block / Latex
+    type: heading
+    level: 2
+    collapsed: true
+  - id: math-block-list-align
+    title: Alignment of Math Block in List
+    type: variable-select
+    default: left
+    options:
+      - label: Left
+        value: left
+      - label: Center
+        value: center
+      - label: Right
+        value: right
+
+  - id: properties-title
+    title: Properties
+    description: Applies to in document only (not applicable to the side pane)
+    type: heading
+    level: 2
+    collapsed: true
+  - id: properties-style
+    title: Properties Style
+    type: class-select
+    allowEmpty: false
+    default: lst-prop-super-compact
+    options:
+      - label: Super Compact
+        value: lst-prop-super-compact
+      - label: Compact
+        value: lst-prop-compact
+      - label: Standard
+        value: lst-prop-std
+  - id: lst-prop-rv-noedit
+    title: Prevent Accidental Clicks in Reading View
+    description: Removes "x" button and disable checkbox state change
+    type: class-toggle
+    default: true
+  - id: metadata-background
+    title: Properties Background
+    type: variable-themed-color
+    format: hsl
+    default-light: "#"
+    default-dark: "#"
+  - id: metadata-label-width
+    title: Properties Label Width (in em)
+    type: variable-number
+    default: 8
+    format: em
+  - id: metadata-divider-width
+    title: Properties Divider Width (in px)
+    description: Bottom border for each Property
+    type: variable-number
+    default: 0
+    format: px
+
+  - id: tabs-title
+    title: Tabs
+    type: heading
+    level: 2
+    collapsed: true
+  - id: lst-tabs-style
+    title: Tabs UI Style
+    type: class-select
+    allowEmpty: false
+    default: lst-floating-tabs
+    options:
+      - label: Floating Pill
+        value: lst-floating-tabs
+      - label: Folder Tabs
+        value: lst-folder-tabs
+
+  - id: tag-title
+    title: Tags
+    type: heading
+    level: 2
+    collapsed: true
+  - id: tag-bg-accent-hsl
+    title: Tag Background Color
+    type: variable-color
+    opacity: false
+    format: hsl-values
+    default: "#"
+
+  - id: about-listive-title
+    title: About Listive
+    description: Documentation and support for the theme
+    type: heading
+    level: 1
+    collapsed: false
+  - id: lst-docs
+    title: Documentation for Listive
+    description: https://github.com/efemkay/obsidian-listive-theme
+    type: heading
+    level: 2
+    collapsed: true
+  - id: lst-support-donate
+    title: Support Listive Development @ Ko-Fi
+    description: https://ko-fi.com/efemkay
+    type: heading
+    level: 2
+    collapsed: true
+  - id: lst-support-repo
+    title: Star the project or submit issue
+    description: https://github.com/efemkay/obsidian-listive-theme
+    type: heading
+    level: 2
+    collapsed: true

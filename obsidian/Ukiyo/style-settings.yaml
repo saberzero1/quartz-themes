@@ -1,0 +1,319 @@
+name: Ukiyo Style Settings
+id: entry-point
+settings:
+  - id: modes
+    title: Modes
+    type: heading
+    level: 1
+    collapsed: true
+  - id: smooth-mode-title
+    title: Smooth mode
+    type: heading
+    level: 2
+    collapsed: true
+  - id: smooth-mode
+    title: Toggle mode
+    type: class-toggle
+    default: false
+  - id: minimal-mode-title
+    title: Minimal Mode
+    type: heading
+    level: 2
+    collapsed: true
+  - id: minimal-mode
+    title: Toggle mode
+    type: class-toggle
+    default: false
+  - id: minimal-sidebar
+    title: Sidebar
+    type: class-select
+    allowEmpty: false
+    default: sidebar-hide
+    options:
+      - label: Show
+        value: sidebar-show
+      - label: Hover
+        value: sidebar-hover
+      - label: Hide
+        value: sidebar-hide
+  - id: minimal-workspace-sides
+    title: Lateral Workspaces
+    type: heading
+    level: 3
+    collapsed: true
+  - id: minimal-workspace-sides-tabs
+    title: Tabs
+    type: class-select
+    allowEmpty: false
+    default: sides-tabs-hover
+    options:
+      - label: Show
+        value: sides-tabs-show
+      - label: Hover
+        value: sides-tabs-hover
+      - label: Hide
+        value: sides-tabs-hide
+  - id: minimal-workspace-nav-header
+    title: Nav header
+    type: class-select
+    allowEmpty: false
+    default: nav-header-hover
+    options:
+      - label: Show
+        value: nav-header-show
+      - label: Hover
+        value: nav-header-hover
+  - id: minimal-workspace-root
+    title: Workspace Root
+    type: heading
+    level: 3
+    collapsed: true
+  - id: minimal-workspace-root-tabs
+    title: Tabs
+    type: class-select
+    allowEmpty: false
+    default: root-tabs-hover
+    options:
+      - label: Show
+        value: root-tabs-show
+      - label: Hover
+        value: root-tabs-hover
+  - id: color-scheme
+    title: Color Scheme
+    type: heading
+    level: 1
+    collapsed: true
+  - id: color-scheme-selector
+    title: Select a color scheme
+    type: class-select
+    allowEmpty: false
+    default: color-scheme-default
+    options:
+      - label: Cozy typewritter
+        value: color-scheme-default
+      - label: Ukiyo
+        value: color-scheme-ukiyo
+      - label: Golden Coffee
+        value: color-scheme-golden-coffee
+      - label: Golden Book
+        value: color-scheme-golden-book
+      - label: Alchemy
+        value: color-scheme-alchemy
+      - label: Rose Shadow
+        value: color-scheme-rose-shadow
+      - label: Custom
+        value: color-scheme-custom
+  #-
+  #    id: separate-color-scheme
+  #    title: Customize each mode
+  #    description: Select a color scheme for each mode
+  #    type: class-toggle
+  #    default: false
+  - id: dark-mode-color-scheme-selector
+    title: Dark mode
+    type: class-select
+    allowEmpty: false
+    default: dm-color-scheme-default
+    options:
+      - label: Cozy typewritter
+        value: dm-color-scheme-default
+      - label: Ukiyo
+        value: dm-color-scheme-ukiyo
+      - label: Golden Coffee
+        value: dm-color-scheme-golden-coffee
+      - label: Golden Book
+        value: dm-color-scheme-golden-book
+      - label: Alchemy
+        value: dm-color-scheme-alchemy
+      - label: Rose Shadow
+        value: dm-color-scheme-rose-shadow
+      - label: Custom
+        value: dm-color-scheme-custom
+  - id: light-mode-color-scheme-selector
+    title: Light mode
+    type: class-select
+    allowEmpty: false
+    default: lm-color-scheme-default
+    options:
+      - label: Cozy typewritter
+        value: lm-color-scheme-default
+      - label: Ukiyo
+        value: lm-color-scheme-ukiyo
+      - label: Golden Coffee
+        value: lm-color-scheme-golden-coffee
+      - label: Alchemy
+        value: lm-color-scheme-alchemy
+      - label: Custom
+        value: lm-color-scheme-custom
+  - id: color-scheme-custom-container
+    title: Custom Color Scheme
+    type: heading
+    level: 2
+    collapsed: true
+  - id: color-scheme-custom-background-primary
+    title: Background primary
+    type: variable-themed-color
+    format: hex
+    opacity: true
+    default-dark: "#372d29"
+    default-light: "#e1c4a6"
+  - id: color-scheme-custom-background-secondary-alt
+    title: Background secondary
+    type: variable-themed-color
+    format: hex
+    opacity: true
+    default-dark: "#413632"
+    default-light: "#cbaa87"
+  - id: color-scheme-custom-background-primary-alt
+    title: Background primary alt
+    type: variable-themed-color
+    format: hex
+    opacity: true
+    default-dark: "#2b2723"
+    default-light: "#daba97"
+  - id: color-scheme-custom-background-secondary
+    title: Background secondary
+    type: variable-themed-color
+    format: hex
+    opacity: true
+    default-dark: "#413632"
+    default-light: "#dabb9a"
+  - id: color-scheme-custom-background-modifier-form-field
+    title: Background modifier form field
+    type: variable-themed-color
+    format: hex
+    opacity: true
+    default-dark: "#2b2723"
+    default-light: "#4c4743"
+  - id: color-scheme-custom-background-modifier-border
+    title: Background modifier border
+    type: variable-themed-color
+    format: hex
+    opacity: true
+    default-dark: "#504431"
+    default-light: "#c6a57f"
+  - id: color-scheme-custom-background-modifier-border-hover
+    title: Background modifier border hover
+    type: variable-themed-color
+    format: hex
+    opacity: true
+    default-dark: "#645743"
+    default-light: "#a8865f"
+  - id: color-scheme-custom-background-modifier-border-focus
+    title: Background modifier border focus
+    type: variable-themed-color
+    format: hex
+    opacity: true
+    default-dark: "#504431"
+    default-light: "#b4916a"
+  - id: color-scheme-custom-text-faint
+    title: Text faint
+    type: variable-themed-color
+    format: hex
+    opacity: true
+    default-dark: "#868074"
+    default-light: "#7a6d68"
+  - id: color-scheme-custom-text-muted
+    title: Text muted
+    type: variable-themed-color
+    format: hex
+    opacity: true
+    default-dark: "#b2a699"
+    default-light: "#5b4f4a"
+  - id: color-scheme-custom-text-normal
+    title: Text normal
+    type: variable-themed-color
+    format: hex
+    opacity: true
+    default-dark: "#ccc2b7"
+    default-light: "#5f4f49"
+  - id: color-scheme-custom-tooltip-notice-background-color
+    title: Tooltip + Notice Background color
+    type: variable-themed-color
+    format: hex
+    opacity: true
+    default-dark: "#281f1b"
+    default-light: "#d7b38d"
+  - id: color-scheme-custom-color-accent
+    title: Color accent
+    type: variable-themed-color
+    format: hex
+    opacity: true
+    default-dark: "#ba945f"
+    default-light: "#800000"
+  - id: color-scheme-custom-color-accent-hover
+    title: Color accent - Hover
+    type: variable-themed-color
+    format: hex
+    opacity: true
+    default-dark: "#e0ba86"
+    default-light: "#a00000"
+  - id: color-scheme-custom-activeline
+    title: Active line
+    type: variable-themed-color
+    format: hex
+    opacity: true
+    default-dark: "#51454140"
+    default-light: "#d4b4946a"
+  - id: color-scheme-custom-text-selection
+    title: Text selection
+    type: variable-themed-color
+    format: hex
+    opacity: true
+    default-dark: "#6154508f"
+    default-light: "#c7a78683"
+  - id: color-scheme-custom-bold
+    title: Bold
+    type: variable-themed-color
+    format: hex
+    opacity: true
+    default-dark: "#ba945f"
+    default-light: "#bd5757"
+  - id: color-scheme-custom-italic
+    title: Italic
+    type: variable-themed-color
+    format: hex
+    opacity: true
+    default-dark: "#e77a59"
+    default-light: "#ae612b"
+  - id: color-scheme-custom-highlight-bg
+    title: Highlight background
+    type: variable-themed-color
+    format: hex
+    opacity: true
+    default-dark: "#926b22e6"
+    default-light: "#eac357"
+  - id: color-scheme-custom-heading-formatting-color
+    title: Heading formatting color
+    type: variable-themed-color
+    format: hex
+    opacity: true
+    default-dark: "#c72626"
+    default-light: "#d34747"
+  - id: color-scheme-custom-in-between-background
+    title: In between background (Smooth mode)
+    type: variable-themed-color
+    format: hex
+    opacity: true
+    default-dark: "#2e2420"
+    default-light: "#d4af88"
+  - id: pop-callout
+    title: Pop Callout
+    type: heading
+    level: 1
+    collapsed: true
+  - id: pop-callout-slide-out-duration
+    title: Slide out duration
+    description: "Set to 0 to remove slide-out animation"
+    type: variable-number
+    default: 700
+    format: ms
+  - id: floating-sides-title
+    title: Floating Sides
+    type: heading
+    level: 1
+    collapsed: true
+  - id: floating-sides
+    title: Toggle floating sides
+    type: class-toggle
+    default: false

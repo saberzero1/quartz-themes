@@ -1,0 +1,140 @@
+name: Obsidianotion visual control settings
+id: custom-diegoeis-obsidianotion
+settings:
+  - id: Structure
+    title: Structure of components and areas
+    type: heading
+    level: 1
+  - id: width-body-content
+    title: Width of body content. Where you write and read.
+    type: variable-number
+    default: 700
+    format: px
+  - id: eis-small-pinned-tabs
+    title: Small Pinned Tabs
+    description: Pinned tabs get smaller
+    type: class-toggle
+  - id: eis-hide-ribbon
+    title: Hide Ribbon
+    description: Hiden ribbon left bar icons
+    type: class-toggle
+  - id: eis-small-font
+    title: Small font
+    description: When enabled, the fonts are more smaller to be more minimalistic.
+    type: class-toggle
+    default: true
+  - id: eis-showing-scrollbar
+    title: Show scrollbars
+    description: When activated scrollbars will be visible
+    type: class-toggle
+    default: false
+  - id: eis-with-icons
+    title: Show icons in sidebar
+    description: When activated files and folders icons will be visible
+    type: class-toggle
+    default: true
+  - id: eis-empty-bg
+    title: Show background in empty window
+    description: When activated will show a background in empty windows (new files)
+    type: class-toggle
+    default: false
+  - id: new-note-button-position-bottom
+    title: Enable default position of new note button
+    description: When enable, we put the new note button at the bottom of sidebar
+    type: class-toggle
+    default: true
+  - id: eis-font-family
+    title: Font size of headings and paragraphs
+    type: heading
+    level: 1
+  - id: font-default
+    title: Custom Body family
+    description: Font family of body text
+    type: variable-text
+    default: Inter, Helvetica Neue, Helvetica, Arial, sans-serif
+  - id: eis-font-type
+    title: Choose what type of font you want to use
+    description: These are beautyful fonts to write and read.
+    type: class-select
+    allowEmpty: false
+    default: eis-font-default
+    options:
+      - eis-font-default
+      - eis-font-ibm
+      - eis-font-iawriter-quattro
+  - id: Heading
+    title: Headers typograph
+    type: heading
+    level: 1
+  - id: size-h1
+    title: H1
+    description: Font size of H1
+    type: variable-number
+    default: 2
+    format: rem
+  - id: size-h2
+    title: H2
+    description: Font size of H2
+    type: variable-number
+    default: 1.7
+    format: rem
+  - id: size-h3
+    title: H3
+    description: Font size of H3
+    type: variable-number
+    default: 1.4
+    format: rem
+  - id: size-h4
+    title: H4
+    description: Font size of H4
+    type: variable-number
+    default: 1.2
+    format: rem
+  - id: size-h5
+    title: H5
+    description: Font size of H5
+    type: variable-number
+    default: 1.1
+    format: rem
+  - id: size-h6
+    title: H6
+    description: Font size of H6
+    type: variable-number
+    default: 1
+    format: rem
+  - id: font-paragraph
+    title: Body paragraph
+    description: Font size of body size
+    type: variable-number
+    default: 0.95
+    format: rem
+  - id: table-cell-fontsize
+    title: Table cell size
+    description: Font size of table cell
+    type: variable-number
+    default: 0.85
+    format: rem
+  - id: table-head-fontsize
+    title: Table Head size
+    description: Font size of table head cell
+    type: variable-number
+    default: 0.95
+    format: rem
+  - id: Colors
+    title: Colors
+    type: heading
+    level: 2
+  - id: heading-text-color
+    title: Headings colors
+    description: Titles text colors
+    type: variable-themed-color
+    format: hex
+    default-light: "#37352f"
+    default-dark: "#fff"
+  - id: sidebar-themed-bg
+    title: Colors of sidebar and tabbar
+    description: If you wanna change the light browser of Notion...
+    type: variable-themed-color
+    format: hex
+    default-light: "#F7F7F5"
+    default-dark: "#202020"

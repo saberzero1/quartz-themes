@@ -1,0 +1,712 @@
+name: Oreo Theme 🍪
+id: oreo-theme
+settings:
+  - id: general-settings
+    title: General Settings ⚙
+    title.zh: 常规设置 ⚙
+    type: heading
+    level: 2
+    collapsed: true
+  - id: button-radius
+    title: Button Radius
+    title.zh: 按钮圆角半径
+    type: variable-number
+    default: 10
+    format: px
+  - id: checkbox-radius
+    title: Checkbox Radius
+    title.zh: 复选框圆角半径
+    type: variable-number
+    default: 50
+    format: "%"
+  - id: checkbox-size
+    title: Checkbox Size
+    title.zh: 复选框大小
+    type: variable-number
+    default: 16
+    format: px
+  - id: checkbox-margin-inline-start
+    title: Checkbox Margin Inline Start
+    title.zh: 复选框起始内边距
+    type: variable-number
+    default: 8
+    format: px
+  - id: popover-width
+    title: Popover Width
+    title.zh: 弹出框宽度
+    type: variable-number
+    default: 300
+    format: px
+  - id: popover-height
+    title: Popover Height
+    title.zh: 弹出框高度
+    type: variable-text
+    default: auto
+  - id: popover-max-height
+    title: Popover Max Height
+    title.zh: 弹出框最大高度
+    type: variable-number
+    default: 400
+    format: px
+  - id: popover-font-size
+    title: Popover Font Size
+    title.zh: 弹出框字体大小
+    type: variable-number
+    default: 14
+    format: px
+  - id: popover-pdf-width
+    title: Popover PDF Width
+    title.zh: PDF 文件预览宽度
+    type: variable-number
+    default: 600
+    format: px
+  - id: popover-pdf-height
+    title: Popover PDF Height
+    title.zh: PDF 文件预览高度
+    type: variable-number
+    default: 800
+    format: px
+  - id: heading-spacing
+    title: Heading Spacing
+    title.zh: 头部间距
+    type: variable-number
+    default: 20
+    format: px
+  - id: heading-font-settings
+    title: Heading Font Settings 🖋️
+    title.zh: 标题字体设置 🖋️
+    type: heading
+    level: 2
+    collapsed: true
+  - id: h1-font
+    title: H1 Font
+    title.zh: H1 字体
+    type: variable-text
+    default: "Arial, sans-serif"
+  - id: h2-font
+    title: H2 Font
+    title.zh: H2 字体
+    type: variable-text
+    default: "Arial, sans-serif"
+  - id: h3-font
+    title: H3 Font
+    title.zh: H3 字体
+    type: variable-text
+    default: "Arial, sans-serif"
+  - id: h4-font
+    title: H4 Font
+    title.zh: H4 字体
+    type: variable-text
+    default: "Arial, sans-serif"
+  - id: h5-font
+    title: H5 Font
+    title.zh: H5 字体
+    type: variable-text
+    default: "Arial, sans-serif"
+  - id: h6-font
+    title: H6 Font
+    title.zh: H6 字体
+    type: variable-text
+    default: "Arial, sans-serif"
+  - id: heading-line-height-settings
+    title: Heading Line Height Settings 📏
+    title.zh: 标题行高设置 📏
+    type: heading
+    level: 2
+    collapsed: true
+  - id: h1-line-height
+    title: H1 Line Height
+    title.zh: H1 行高
+    type: variable-number
+    default: 1.5
+  - id: h2-line-height
+    title: H2 Line Height
+    title.zh: H2 行高
+    type: variable-number
+    default: 1.5
+  - id: h3-line-height
+    title: H3 Line Height
+    title.zh: H3 行高
+    type: variable-number
+    default: 1.5
+  - id: h4-line-height
+    title: H4 Line Height
+    title.zh: H4 行高
+    type: variable-number
+    default: 1.5
+  - id: h5-line-height
+    title: H5 Line Height
+    title.zh: H5 行高
+    type: variable-number
+    default: 1.5
+  - id: h6-line-height
+    title: H6 Line Height
+    title.zh: H6 行高
+    type: variable-number
+    default: 1.5
+  - id: heading-size-settings
+    title: Heading Size Settings 🔠
+    title.zh: 标题大小设置 🔠
+    type: heading
+    level: 2
+    collapsed: true
+  - id: h1-size
+    title: H1 Size
+    title.zh: H1 大小
+    type: variable-number
+    default: 2
+    format: em
+  - id: h2-size
+    title: H2 Size
+    title.zh: H2 大小
+    type: variable-number
+    default: 1.75
+    format: em
+  - id: h3-size
+    title: H3 Size
+    title.zh: H3 大小
+    type: variable-number
+    default: 1.5
+    format: em
+  - id: h4-size
+    title: H4 Size
+    title.zh: H4 大小
+    type: variable-number
+    default: 1.25
+    format: em
+  - id: h5-size
+    title: H5 Size
+    title.zh: H5 大小
+    type: variable-number
+    default: 1
+    format: em
+  - id: h6-size
+    title: H6 Size
+    title.zh: H6 大小
+    type: variable-number
+    default: 0.875
+    format: em
+  - id: heading-style-settings
+    title: Heading Style Settings 🖌️
+    title.zh: 标题样式设置 🖌️
+    type: heading
+    level: 2
+    collapsed: true
+  - id: h1-style
+    title: H1 Style
+    title.zh: H1 样式
+    type: variable-select
+    default: normal
+    options:
+      - normal
+      - italic
+  - id: h2-style
+    title: H2 Style
+    title.zh: H2 样式
+    type: variable-select
+    default: normal
+    options:
+      - normal
+      - italic
+  - id: h3-style
+    title: H3 Style
+    title.zh: H3 样式
+    type: variable-select
+    default: normal
+    options:
+      - normal
+      - italic
+  - id: h4-style
+    title: H4 Style
+    title.zh: H4 样式
+    type: variable-select
+    default: normal
+    options:
+      - normal
+      - italic
+  - id: h5-style
+    title: H5 Style
+    title.zh: H5 样式
+    type: variable-select
+    default: normal
+    options:
+      - normal
+      - italic
+  - id: h6-style
+    title: H6 Style
+    title.zh: H6 样式
+    type: variable-select
+    default: normal
+    options:
+      - normal
+      - italic
+  - id: heading-variant-settings
+    title: Heading Variant Settings 🏷️
+    title.zh: 标题变体设置 🏷️
+    type: heading
+    level: 2
+    collapsed: true
+  - id: h1-variant
+    title: H1 Variant
+    title.zh: H1 变体
+    type: variable-select
+    default: normal
+    options:
+      - normal
+      - small-caps
+  - id: h2-variant
+    title: H2 Variant
+    title.zh: H2 变体
+    type: variable-select
+    default: normal
+    options:
+      - normal
+      - small-caps
+  - id: h3-variant
+    title: H3 Variant
+    title.zh: H3 变体
+    type: variable-select
+    default: normal
+    options:
+      - normal
+      - small-caps
+  - id: h4-variant
+    title: H4 Variant
+    title.zh: H4 变体
+    type: variable-select
+    default: normal
+    options:
+      - normal
+      - small-caps
+  - id: h5-variant
+    title: H5 Variant
+    title.zh: H5 变体
+    type: variable-select
+    default: normal
+    options:
+      - normal
+      - small-caps
+  - id: h6-variant
+    title: H6 Variant
+    title.zh: H6 变体
+    type: variable-select
+    default: normal
+    options:
+      - normal
+      - small-caps
+  - id: heading-weight-settings
+    title: Heading Weight Settings 🏋️
+    title.zh: 标题粗细设置 🏋️
+    type: heading
+    level: 2
+    collapsed: true
+  - id: h1-weight
+    title: H1 Weight
+    title.zh: H1 粗细
+    type: variable-select
+    default: bold
+    options:
+      - normal
+      - bold
+  - id: h2-weight
+    title: H2 Weight
+    title.zh: H2 粗细
+    type: variable-select
+    default: bold
+    options:
+      - normal
+      - bold
+  - id: h3-weight
+    title: H3 Weight
+    title.zh: H3 粗细
+    type: variable-select
+    default: bold
+    options:
+      - normal
+      - bold
+  - id: h4-weight
+    title: H4 Weight
+    title.zh: H4 粗细
+    type: variable-select
+    default: bold
+    options:
+      - normal
+      - bold
+  - id: h5-weight
+    title: H5 Weight
+    title.zh: H5 粗细
+    type: variable-select
+    default: bold
+    options:
+      - normal
+      - bold
+  - id: h6-weight
+    title: H6 Weight
+    title.zh: H6 粗细
+    type: variable-select
+    default: bold
+    options:
+      - normal
+      - bold
+  - id: heading-formatting
+    title: Heading Formatting
+    title.zh: 标题格式
+    type: variable-color
+    default: "#888888"
+  - id: link-settings
+    title: Link Settings 🔗
+    title.zh: 链接设置 🔗
+    type: heading
+    level: 2
+    collapsed: true
+  - id: link-color
+    title: Link Color
+    title.zh: 链接颜色
+    type: variable-color
+    default: "#1e90ff"
+  - id: link-color-hover
+    title: Link Hover Color
+    title.zh: 链接悬停颜色
+    type: variable-color
+    default: "#1c86ee"
+  - id: link-decoration
+    title: Link Decoration
+    title.zh: 链接装饰
+    type: variable-select
+    default: underline
+    options:
+      - none
+      - underline
+  - id: link-decoration-hover
+    title: Link Hover Decoration
+    title.zh: 链接悬停装饰
+    type: variable-select
+    default: underline
+    options:
+      - none
+      - underline
+  - id: link-decoration-thickness
+    title: Link Decoration Thickness
+    title.zh: 链接装饰厚度
+    type: variable-number
+    default: 1
+    format: px
+  - id: link-weight
+    title: Link Weight
+    title.zh: 链接粗细
+    type: variable-select
+    default: normal
+    options:
+      - normal
+      - bold
+  - id: link-unresolved-color
+    title: Unresolved Link Color
+    title.zh: 未解析链接颜色
+    type: variable-color
+    default: "#ff4500"
+  - id: link-unresolved-opacity
+    title: Unresolved Link Opacity
+    title.zh: 未解析链接不透明度
+    type: variable-number
+    default: 0.7
+  - id: link-unresolved-filter
+    title: Unresolved Link Filter
+    title.zh: 未解析链接滤镜
+    type: variable-text
+    default: brightness(0.8)
+  - id: link-unresolved-decoration-style
+    title: Unresolved Link Decoration Style
+    title.zh: 未解析链接装饰样式
+    type: variable-select
+    default: dashed
+    options:
+      - none
+      - underline
+      - dashed
+      - dotted
+  - id: link-unresolved-decoration-color
+    title: Unresolved Link Decoration Color
+    title.zh: 未解析链接装饰颜色
+    type: variable-color
+    default: "#ff4500"
+  - id: link-external-color
+    title: External Link Color
+    title.zh: 外部链接颜色
+    type: variable-color
+    default: "#32cd32"
+  - id: link-external-color-hover
+    title: External Link Hover Color
+    title.zh: 外部链接悬停颜色
+    type: variable-color
+    default: "#2eb82e"
+  - id: link-external-decoration
+    title: External Link Decoration
+    title.zh: 外部链接装饰
+    type: variable-select
+    default: underline
+    options:
+      - none
+      - underline
+  - id: link-external-decoration-hover
+    title: External Link Hover Decoration
+    title.zh: 外部链接悬停装饰
+    type: variable-select
+    default: underline
+    options:
+      - none
+      - underline
+  - id: inline-title-settings
+    title: Inline Title Settings 🖋️
+    title.zh: 行内标题设置 🖋️
+    type: heading
+    level: 2
+    collapsed: true
+  - id: inline-title-color
+    title: Inline Title Color
+    title.zh: 行内标题颜色
+    type: variable-color
+    default: "#000000"
+  - id: inline-title-font
+    title: Inline Title Font
+    title.zh: 行内标题字体
+    type: variable-text
+    default: "Arial, sans-serif"
+  - id: inline-title-line-height
+    title: Inline Title Line Height
+    title.zh: 行内标题行高
+    type: variable-number
+    default: 1.5
+  - id: inline-title-size
+    title: Inline Title Size
+    title.zh: 行内标题大小
+    type: variable-number
+    default: 1.2
+    format: em
+  - id: inline-title-style
+    title: Inline Title Style
+    title.zh: 行内标题样式
+    type: variable-select
+    default: normal
+    options:
+      - normal
+      - italic
+  - id: inline-title-variant
+    title: Inline Title Variant
+    title.zh: 行内标题变体
+    type: variable-select
+    default: normal
+    options:
+      - normal
+      - small-caps
+  - id: inline-title-weight
+    title: Inline Title Weight
+    title.zh: 行内标题粗细
+    type: variable-select
+    default: bold
+    options:
+      - normal
+      - bold
+  - id: code-settings
+    title: Code Block Settings 💻
+    title.zh: 代码块设置 💻
+    type: heading
+    level: 2
+    collapsed: true
+  - id: code-background-dark
+    title: Dark Mode Code Background
+    title.zh: 暗模式下代码背景颜色
+    type: variable-color
+    default: "#2d2d2d"
+  - id: code-normal-dark
+    title: Dark Mode Code Normal Color
+    title.zh: 暗模式下非高亮语法颜色
+    type: variable-color
+    default: "#ffffff"
+  - id: code-comment-dark
+    title: Dark Mode Code Comment Color
+    title.zh: 暗模式下注释颜色
+    type: variable-color
+    default: "#999988"
+  - id: code-function-dark
+    title: Dark Mode Code Function Color
+    title.zh: 暗模式下函数颜色
+    type: variable-color
+    default: "#a6e22e"
+  - id: code-important-dark
+    title: Dark Mode Code Important Color
+    title.zh: 暗模式下重要内容, 正则表达式颜色
+    type: variable-color
+    default: "#f92672"
+  - id: code-keyword-dark
+    title: Dark Mode Code Keyword Color
+    title.zh: 暗模式下关键词颜色
+    type: variable-color
+    default: "#f92672"
+  - id: code-operator-dark
+    title: Dark Mode Code Operator Color
+    title.zh: 暗模式下操作符颜色
+    type: variable-color
+    default: "#f92672"
+  - id: code-property-dark
+    title: Dark Mode Code Property Color
+    title.zh: 暗模式下属性颜色
+    type: variable-color
+    default: "#66d9ef"
+  - id: code-punctuation-dark
+    title: Dark Mode Code Punctuation Color
+    title.zh: 暗模式下标点颜色
+    type: variable-color
+    default: "#ffffff"
+  - id: code-string-dark
+    title: Dark Mode Code String Color
+    title.zh: 暗模式下字符串颜色
+    type: variable-color
+    default: "#e6db74"
+  - id: code-tag-dark
+    title: Dark Mode Code Tag Color
+    title.zh: 暗模式下标签, 符号, 常量颜色
+    type: variable-color
+    default: "#a6e22e"
+  - id: code-value-dark
+    title: Dark Mode Code Value Color
+    title.zh: 暗模式下值颜色
+    type: variable-color
+    default: "#ae81ff"
+  - id: code-background-light
+    title: Light Mode Code Background
+    title.zh: 亮模式下代码背景颜色
+    type: variable-color
+    default: "#f5f5f5"
+  - id: code-normal-light
+    title: Light Mode Code Normal Color
+    title.zh: 亮模式下非高亮语法颜色
+    type: variable-color
+    default: "#000000"
+  - id: code-comment-light
+    title: Light Mode Code Comment Color
+    title.zh: 亮模式下注释颜色
+    type: variable-color
+    default: "#6a737d"
+  - id: code-function-light
+    title: Light Mode Code Function Color
+    title.zh: 亮模式下函数颜色
+    type: variable-color
+    default: "#6f42c1"
+  - id: code-important-light
+    title: Light Mode Code Important Color
+    title.zh: 亮模式下重要内容, 正则表达式颜色
+    type: variable-color
+    default: "#d73a49"
+  - id: code-keyword-light
+    title: Light Mode Code Keyword Color
+    title.zh: 亮模式下关键词颜色
+    type: variable-color
+    default: "#d73a49"
+  - id: code-operator-light
+    title: Light Mode Code Operator Color
+    title.zh: 亮模式下操作符颜色
+    type: variable-color
+    default: "#d73a49"
+  - id: code-property-light
+    title: Light Mode Code Property Color
+    title.zh: 亮模式下属性颜色
+    type: variable-color
+    default: "#005cc5"
+  - id: code-punctuation-light
+    title: Light Mode Code Punctuation Color
+    title.zh: 亮模式下标点颜色
+    type: variable-color
+    default: "#24292e"
+  - id: code-string-light
+    title: Light Mode Code String Color
+    title.zh: 亮模式下字符串颜色
+    type: variable-color
+    default: "#032f62"
+  - id: code-tag-light
+    title: Light Mode Code Tag Color
+    title.zh: 亮模式下标签, 符号, 常量颜色
+    type: variable-color
+    default: "#22863a"
+  - id: code-value-light
+    title: Light Mode Code Value Color
+    title.zh: 亮模式下值颜色
+    type: variable-color
+    default: "#b31d28"
+  - id: alternative-checkboxes
+    title: Alternative Checkboxes ✅
+    title.zh: 其他复选框样式 ✅
+    type: heading
+    level: 2
+    collapsed: true
+  - id: enable-alternative-checkboxes
+    title: Enable Alternative Checkboxes
+    title.zh: 启用其他复选框样式
+    description: Disable this if you are using your own implementation via a CSS Snippet.
+    description.zh: 如果您正在使用自己的 CSS 片段实现这一功能，请禁用此功能。
+    default: true
+    type: class-toggle
+  - id: expreiental-feature
+    title: Experimental Features 🧪
+    title.zh: 实验性功能 🧪
+    type: heading
+    level: 2
+    collapsed: true
+  - id: oreo-tab-style
+    title: Tab Style
+    title.zh: Tab样式
+    type: class-select
+    allowEmpty: false
+    default: oreo-default-tab
+    options:
+      - label: Default
+        value: oreo-default-tab
+      - label: Depth
+        value: oreo-depth-tab-toggle
+      - label: Minimalistic
+        value: oreo-mini-tab-toggle
+      - label: Safari-style (Animated)
+        value: oreo-alternate-tab-toggle
+      - label: Safari-style (Vanilla)
+        value: oreo-safari-tab-toggle
+  - id: Credits
+    title: Support Others 🎇
+    title.zh: 支持他人 🎇
+    description: This theme cannot have been made without the help of these people, please support them if you can!
+    description.zh: 这个主题的制作离不开这些人的帮助，如果你有能力，请支持他们！
+    type: heading
+    level: 2
+    collapsed: true
+  - id: anuppuccin-url-donate
+    title: anubisnekhet for different tabs
+    title.zh: anubisnekhet 不一样的tab界面
+    description: "Support link: [buy him a coffee](https://www.buymeacoffee.com/anubisnekhet)"
+    description.zh: "支持链接: [给他买杯咖啡](https://www.buymeacoffee.com/anubisnekhet)"
+    type: info-text
+    markdown: true
+  - id: kepano-url-donate
+    title: kepano for different check boxes
+    title.zh: kepano 不同的复选框样式
+    description: "Support link: [buy him a coffee](https://www.buymeacoffee.com/kepano)"
+    description.zh: "支持链接: [给他买杯咖啡](https://www.buymeacoffee.com/kepano)"
+    type: info-text
+    markdown: true
+  - id: Korcz-url-donate
+    title: Korcz for switching between checkboxes
+    title.zh: Korcz 切换复选框样式
+    description: "Support link: This kind man did not leave a support link, so here is his [Github homepage](https://github.com/damiankorcz)"
+    description.zh: "支持链接: 这位好心人并未留下赞助链接，请自行前往他的[Github主页](https://github.com/damiankorcz)"
+    type: info-text
+    markdown: true
+  - id: author-info
+    title: Author Information ℹ
+    title.zh: 作者信息 ℹ
+    type: heading
+    level: 2
+    collapsed: false
+  - id: author
+    title: Author
+    title.zh: 作者
+    type: info-text
+    description: "Oreo Theme created with ❤︎ by carols12352. Support at: BuyMeACoffee/(QAQ due to regional differences you cannot buy me a coffee, just enjoy the theme and provide feedback!)"
+    description.zh: "Oreo 主题由 carols12352 创建。支持请访问: BuyMeACoffee/(QAQ 因为地区政策原因你还不能给我买一杯咖啡，请享受主题并且及时给出反馈就好！)"
+    markdown: false

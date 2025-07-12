@@ -110,7 +110,11 @@ body,
   --link-accent-h: 226;
   --link-accent-s: 44%;
   --link-accent-l: 70%;
-  --link-accent: hsl(var(--link-accent-h), var(--link-accent-s), var(--link-accent-l));
+  --link-accent: hsl(
+    var(--link-accent-h),
+    var(--link-accent-s),
+    var(--link-accent-l)
+  );
   --link-color: var(--link-accent);
 
   /* code */
@@ -127,7 +131,7 @@ body,
   --code-tag: var(--color-red);
   --code-value: var(--color-purple);
 
-  /* table colors	 */
+  /* table colors     */
   --table-background: rgba(var(--primary-alt-rgb), 0.3);
   --table-header-background: rgba(var(--primary-alt-rgb), 0.8);
 

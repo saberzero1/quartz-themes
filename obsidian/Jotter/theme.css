@@ -586,7 +586,9 @@ body {
 }
 
 .view-header:hover .view-header-title-container,
-.workspace-tab-header-container:hover + .workspace-tab-container .view-header-title-container {
+.workspace-tab-header-container:hover
+  + .workspace-tab-container
+  .view-header-title-container {
   opacity: 1;
   transition: opacity 0.2s ease-in-out;
 }
@@ -729,7 +731,8 @@ mark {
   border-color: var(--text-accent);
 }
 
-.kanban-plugin__item-prefix-button-wrapper > input[type="checkbox"]:checked:after {
+.kanban-plugin__item-prefix-button-wrapper
+  > input[type="checkbox"]:checked:after {
   -webkit-mask-position: 30% 40%;
 }
 
@@ -830,7 +833,11 @@ table.dataview th > span,
 }
 
 .markdown-preview-view th,
-.markdown-source-view.mod-cm6 .dataview.table-view-table thead.table-view-thead tr th,
+.markdown-source-view.mod-cm6
+  .dataview.table-view-table
+  thead.table-view-thead
+  tr
+  th,
 .table-view-table > thead > tr > th {
   padding: 0.3em 0;
   border-color: var(--background-modifier-border);
@@ -912,7 +919,7 @@ settings:
     -    
         id: colorful-tooltips
         title: Colorful tooltips
-        title.fr: Infobulles colorées
+        title.fr: Infobulles colorees
         description: When enabled, tooltips will have the same background color as your accent color
         description.fr: Activer pour que les infobulles soient de la même couleur que la couleur d'accentuation
         type: class-toggle
@@ -953,15 +960,15 @@ settings:
     -  
         id: predefined-accent-color
         title: Enable predefined accent colors
-        title.fr: Activer les couleurs d'accentuations prédéfinies
+        title.fr: Activer les couleurs d'accentuations predefinies
         description: Enable to pick your accent color from the following list (when disabled, you'll be able to pick your accent color from the Appearance tab, as usual)
-        description.fr: Activer pour pouvoir choisir sa couleur d'accentuation depuis la liste ci-dessous (quand désactivé, vous pourrez choisir votre couleur dans la section Apparence, comme d'habitude)
+        description.fr: Activer pour pouvoir choisir sa couleur d'accentuation depuis la liste ci-dessous (quand desactive, vous pourrez choisir votre couleur dans la section Apparence, comme d'habitude)
         type: class-toggle
         default: true
     -
         id: predefined-accent-colors
         title: Accent colors
-        title.fr: Couleurs prédéfinies
+        title.fr: Couleurs predefinies
         description: Handpicked accent colors you can choose from
         description.fr: Une liste de couleurs que vous pouvez utiliser pour vos accentuations
         type: class-select
@@ -1023,7 +1030,7 @@ settings:
     -
         id: hide-note-title
         title: Hide note title
-        title.fr: Cacher le titre du document dans l'éditeur
+        title.fr: Cacher le titre du document dans l'editeur
         type: class-toggle
         default: false
     -
@@ -1045,7 +1052,7 @@ settings:
         title.fr: Soulignement des H2
         id: h2-underline
         description: Toggle H2 underline
-        description.fr: Activer ou désactiver le soulignement
+        description.fr: Activer ou desactiver le soulignement
         type: class-toggle
         default: false
     - 
@@ -1053,7 +1060,7 @@ settings:
         title.fr: Italique des H3
         id: h3-italics
         description: Toggle H3 italics
-        description.fr: Activer ou désactiver l'italique
+        description.fr: Activer ou desactiver l'italique
         type: class-toggle
         default: true
     -         
@@ -1061,7 +1068,7 @@ settings:
         title.fr: Majuscules des H5
         id: h5-uppercase
         description: Toggle H5 uppercase
-        description.fr: Activer ou désactiver les majuscules
+        description.fr: Activer ou desactiver les majuscules
         type: class-toggle
         default: true
     -         
@@ -1069,7 +1076,7 @@ settings:
         title.fr: Majuscules des H6
         id: h6-uppercase
         description: Toggle H6 uppercase
-        description.fr: Activer ou désactiver les majuscules
+        description.fr: Activer ou desactiver les majuscules
         type: class-toggle
         default: true
     -
@@ -1196,7 +1203,7 @@ settings:
         title: Italics underline
         title.fr: Soulignement des italiques
         description: Toggle italics underline
-        description.fr: Activer ou désactiver le soulignement des textes en italiques
+        description.fr: Activer ou desactiver le soulignement des textes en italiques
         type: class-toggle
         default: false
     -
@@ -1227,7 +1234,7 @@ settings:
         title: Bold underline
         title.fr: Soulignement texte gras
         description: Toggle bold underline
-        description.fr: Activer ou désactiver le soulignement des texte en gras
+        description.fr: Activer ou desactiver le soulignement des texte en gras
         type: class-toggle
         default: true
     -
@@ -1235,7 +1242,7 @@ settings:
         title: Bold underline color
         title.fr: Couleur du soulignement
         description: Change bold underline color (dy default, it is set to be the same as your accent color)
-        description.fr: Changer la couleur du soulignement (par défaut, la couleur sera la même que celle de la couleur d'accentuation)
+        description.fr: Changer la couleur du soulignement (par defaut, la couleur sera la même que celle de la couleur d'accentuation)
         type: variable-color
         format: hex
         default: 'var(--text-accent)'

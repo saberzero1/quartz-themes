@@ -1,0 +1,58 @@
+name: sQdthOne Extras
+id: sQdthOne-theme-settings
+settings:
+  - id: sQdthOne-theme-accents
+    title: Theme Modifiers
+    description: Select your preferred theme adjustment
+    type: class-select
+    allowEmpty: false
+    default: style-default
+    options:
+      - label: Default
+        value: style-default
+      - label: Solar
+        value: style-solar
+      - label: Colorless
+        value: style-colorless
+  - id: sQdthOne-header-contrast
+    title: Header Contrast
+    description: Modify the contrast between the different headers
+    type: class-select
+    allowEmpty: false
+    default: headers-default
+    options:
+      - label: Low Contrast
+        value: headers-low
+      - label: Default
+        value: headers-default
+      - label: High Contrast
+        value: headers-high
+  - id: sQdthOne-left-hand-close-tab
+    title: Left Close Tab Button
+    description: Moves the close tab button to the left side of the tab
+    type: class-toggle
+    allowEmpty: false
+    default: false
+  - id: sQdthOne-center-headers
+    title: Center Headers
+    description: Aligns all headers to center
+    type: class-toggle
+    allowEmpty: false
+    default: false
+  - id: sQdthOne-hide-view-header-title
+    title: Hide File Path & Title From Page Header
+    description: Hides the file path and file name from the header bar at the top of notes
+    type: class-toggle
+    allowEmpty: false
+    default: false
+  - id: sQdthOne-hide-folder-icons
+    title: Hide Folder Icons in File Navigator
+    description: Hides folder icons in the file navigator.
+    type: class-toggle
+    allowEmpty: false
+    default: false
+  - id: sQdthOne-disable-alternative-checkboxes
+    title: Disable Alternative Checkboxes
+    description: Toggle this if you are using your own implementation via a CSS Snippet.
+    default: false
+    type: class-toggle

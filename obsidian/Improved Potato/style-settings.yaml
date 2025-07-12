@@ -1,0 +1,283 @@
+name: Improved Potato Theme
+id: things-style
+settings:
+  - id: features
+    title: Features
+    type: heading
+    level: 2
+    collapsed: true
+  - title: Fancy code blocks
+    description: Enable fancy numbered code blocks
+    id: fancy-code
+    type: class-toggle
+    default: true
+  - title: Fancy mermaid diagrams
+    description: Enable styled names for connections in mermaid diagrams
+    id: fancy-mermaid
+    type: class-toggle
+    default: true
+  - title: Mark current line
+    description: Mark the current line in the editor
+    id: fancy-mark-current-line
+    type: class-toggle
+    default: true
+  - id: headings
+    title: Headings
+    type: heading
+    level: 2
+    collapsed: true
+  - id: level-1-headings
+    title: Level 1 Headings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h1-size
+    title: H1 font size
+    description: Accepts any CSS font-size value
+    type: variable-text
+    default: 1.7em
+  - id: h1-color
+    title: H1 color
+    type: variable-color
+    format: hex
+    default: "#"
+  - id: h1-underline
+    title: H1 underline
+    description: Toggle H1 underline (border-bottom)
+    type: class-toggle
+    default: false
+  - id: level-2-headings
+    title: Level 2 Headings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h2-size
+    title: H2 font size
+    description: Accepts any CSS font-size value
+    type: variable-text
+    default: 1.5em
+  - id: h2-color
+    title: H2 color
+    type: variable-color
+    format: hex
+    default: "#"
+  - id: h2-underline
+    title: H2 underline
+    description: Toggle H2 underline (border-bottom)
+    type: class-toggle
+    default: true
+  - id: level-3-headings
+    title: Level 3 Headings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h3-size
+    title: H3 font size
+    description: Accepts any CSS font-size value
+    type: variable-text
+    default: 1.2em
+  - id: h3-color
+    title: H3 color
+    type: variable-color
+    format: hex
+    default: "#3C94FF"
+  - id: h3-underline
+    title: H3 underline
+    description: Toggle H3 underline (border-bottom)
+    type: class-toggle
+    default: false
+  - id: level-4-headings
+    title: Level 4 Headings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h4-size
+    title: H4 font size
+    description: Accepts any CSS font-size value
+    type: variable-text
+    default: 1.1em
+  - id: h4-color
+    title: H4 color
+    type: variable-color
+    format: hex
+    default: "#FFD500"
+  - id: h4-underline
+    title: H4 underline
+    description: Toggle H4 underline (border-bottom)
+    type: class-toggle
+    default: false
+  - id: level-5-headings
+    title: Level 5 Headings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h5-size
+    title: H5 font size
+    description: Accepts any CSS font-size value
+    type: variable-text
+    default: 1em
+  - id: h5-color
+    title: H5 color
+    type: variable-color
+    format: hex
+    default: "#FF3C3C"
+  - id: h5-underline
+    title: H5 underline
+    description: Toggle H5 underline (border-bottom)
+    type: class-toggle
+    default: false
+  - id: level-6-headings
+    title: Level 6 Headings
+    type: heading
+    level: 3
+    collapsed: true
+  - id: h6-size
+    title: H6 font size
+    description: Accepts any CSS font-size value
+    type: variable-text
+    default: 0.9em
+  - id: h6-color
+    title: H6 color
+    type: variable-color
+    format: hex
+    default: "#B97CFF"
+  - id: h6-underline
+    title: H6 underline
+    description: Toggle H6 underline (border-bottom)
+    type: class-toggle
+    default: false
+  - id: colors
+    title: Other colors
+    type: heading
+    level: 2
+    collapsed: true
+  - id: divider-color
+    title: Divider color
+    type: variable-color
+    format: hex
+    default: "#656a74"
+  - id: line-number-color
+    title: Line number color
+    type: variable-color
+    format: hex
+    default-light: "#7b89a3"
+    default-dark: "#7886a1"
+  - id: current-line-number-color
+    title: Current line line number color
+    type: variable-color
+    format: hex
+    default: "#FFD500"
+  - id: color-text-today
+    title: Calendar plugin today color
+    type: variable-color
+    format: hex
+    default: "#ff3c7f"
+  - id: color-bases
+    title: Color bases
+    type: heading
+    level: 3
+    collapsed: true
+  - id: color-base-00
+    title: Color base 00
+    description: Main editor window
+    type: variable-color
+    format: hex
+    opacity: true
+    default-light: "#f6f7f9"
+    default-dark: "#171b21"
+  - id: color-base-10
+    title: Color base 10
+    description: Code blocks
+    type: variable-color
+    format: hex
+    opacity: true
+    default-light: "#e1e4ea"
+    default-dark: "#262c36"
+  - id: color-base-20
+    title: Color base 20
+    description: Side menu
+    type: variable-color
+    format: hex
+    opacity: true
+    default-light: "#e1e4ea"
+    default-dark: "#262c36"
+  - id: color-base-25
+    title: Color base 25
+    description: Top navigation bar, unfocused
+    type: variable-color
+    format: hex
+    opacity: true
+    default-light: "#ccd2db"
+    default-dark: "#303845"
+  - id: color-base-30
+    title: Color base 30
+    description: Top navigation bar, focused
+    type: variable-color
+    format: hex
+    opacity: true
+    default-light: "#b7bfcd"
+    default-dark: "#455063"
+  - id: color-base-35
+    title: Color base 35
+    type: variable-color
+    format: hex
+    opacity: true
+    default-light: "#a2acbe"
+    default-dark: "#546178"
+  - id: color-base-40
+    title: Color base 40
+    type: variable-color
+    format: hex
+    opacity: true
+    default-light: "#8d9ab0"
+    default-dark: "#647590"
+  - id: color-base-50
+    title: Color base 50
+    description: Unfocused text
+    type: variable-color
+    format: hex
+    opacity: true
+    default-light: "#7886a1"
+    default-dark: "#7b89a3"
+  - id: color-base-60
+    title: Color base 60
+    type: variable-color
+    format: hex
+    opacity: true
+    default-light: "#647590"
+    default-dark: "#939fb4"
+  - id: color-base-70
+    title: Color base 70
+    type: variable-color
+    format: hex
+    opacity: true
+    default-light: "#56647b"
+    default-dark: "#aeb7c7"
+  - id: color-base-100
+    title: Color base 100
+    type: variable-color
+    format: hex
+    opacity: true
+    default-light: "#485465"
+    default-dark: "#ccd2db"
+  - id: callouts
+    title: Callouts
+    type: heading
+    level: 2
+    collapsed: true
+  - id: callout-icon-c1
+    title: Callout Icon c1
+    type: variable-text
+    default: "lucide-scan"
+  - id: callout-icon-c2
+    title: Callout Icon c2
+    type: variable-text
+    default: "lucide-scan"
+  - id: callout-icon-c3
+    title: Callout Icon c3
+    type: variable-text
+    default: "lucide-scan"
+  - id: callout-icon-c4
+    title: Callout Icon c4
+    type: variable-text
+    default: "lucide-scan"

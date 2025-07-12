@@ -246,7 +246,8 @@
   /* 字体设置 */
   --font-interface-theme: "Arial", sans-serif; /* 用于UI元素的字体 */
   --font-text-theme: "Georgia", serif; /* 用于编辑器中文本的字体 */
-  --font-monospace-theme: "Courier New", monospace; /* 用于等宽内容的字体，如代码块和行内代码 */
+  --font-monospace-theme:
+    "Courier New", monospace; /* 用于等宽内容的字体，如代码块和行内代码 */
 
   /* 字体大小 */
   --font-text-size: 16px; /* 编辑器字体大小，由用户在外观设置中定义 */
@@ -272,7 +273,9 @@
   /* 文本格式化 */
   --font-weight: var(--font-normal); /* 常规文本粗细 */
   --bold-modifier: 200; /* 加粗文本的额外权重 */
-  --bold-weight: calc(var(--font-weight) + var(--bold-modifier)); /* 加粗文本的字体粗细 */
+  --bold-weight: calc(
+    var(--font-weight) + var(--bold-modifier)
+  ); /* 加粗文本的字体粗细 */
   --bold-color: #000000; /* 加粗文本颜色 */
   --italic-color: #000000; /* 斜体文本颜色 */
 
@@ -544,7 +547,12 @@ body {
   --titlebar-border-color: #cccccc; /* 亮模式下的标题栏边框颜色 */
   --titlebar-text-color: #000000; /* 亮模式下的标题栏文字颜色 */
   --titlebar-text-color-focused: #333333; /* 亮模式下聚焦窗口时的标题栏文字颜色 */
-  --workspace-background-translucent: rgba(240, 240, 240, 0.8); /* 半透明窗口背景颜色 */
+  --workspace-background-translucent: rgba(
+    240,
+    240,
+    240,
+    0.8
+  ); /* 半透明窗口背景颜色 */
 
   --bold-color: #000000; /* 亮模式下加粗文字颜色 */
   --italic-color: #000000;
@@ -716,7 +724,12 @@ body {
   --titlebar-border-color: #555555; /* 暗模式下的标题栏边框颜色 */
   --titlebar-text-color: #ffffff; /* 暗模式下的标题栏文字颜色 */
   --titlebar-text-color-focused: #dddddd; /* 暗模式下聚焦窗口时的标题栏文字颜色 */
-  --workspace-background-translucent: rgba(51, 51, 51, 0.8); /* 暗模式下半透明窗口背景颜色 */
+  --workspace-background-translucent: rgba(
+    51,
+    51,
+    51,
+    0.8
+  ); /* 暗模式下半透明窗口背景颜色 */
   --text-selection: #333333;
 
   --bold-color: #cccccc;
@@ -813,12 +826,15 @@ body.enable-alternative-checkboxes li[data-task="?"] > p > input:checked {
   border-color: var(--color-yellow);
   background-position: 50% 50%;
   background-size: 200% 90%;
-  background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"%3E%3Cpath fill="white" fill-rule="evenodd" d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215c0 1.344-.665 2.288-1.79 2.973c-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712c1.03-.632 1.397-1.135 1.397-2.028c0-.979-.758-1.698-1.926-1.698c-1.009 0-1.71.529-1.938 1.402c-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09c0-.618-.473-1.092-1.095-1.092c-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14Z"%2F%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg + xml,%3Csvgxmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"width="20"height="20"preserveAspectRatio="xMidYMid meet"viewBox="0 0 16 16"%3E%3Cpathfill="white"fill-rule="evenodd"d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215c0 1.344-.665 2.288-1.79 2.973c-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712c1.03-.632 1.397-1.135 1.397-2.028c0-.979-.758-1.698-1.926-1.698c-1.009 0-1.71.529-1.938 1.402c-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09c0-.618-.473-1.092-1.095-1.092c-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14Z"%2F%3E%3C%2Fsvg%3E');
 }
 body.enable-alternative-checkboxes.theme-dark input[data-task="?"]:checked,
 body.enable-alternative-checkboxes.theme-dark li[data-task="?"] > input:checked,
-body.enable-alternative-checkboxes.theme-dark li[data-task="?"] > p > input:checked {
-  background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"%3E%3Cpath fill="black" fill-opacity="0.8" fill-rule="evenodd" d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215c0 1.344-.665 2.288-1.79 2.973c-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712c1.03-.632 1.397-1.135 1.397-2.028c0-.979-.758-1.698-1.926-1.698c-1.009 0-1.71.529-1.938 1.402c-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09c0-.618-.473-1.092-1.095-1.092c-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14Z"%2F%3E%3C%2Fsvg%3E');
+body.enable-alternative-checkboxes.theme-dark
+  li[data-task="?"]
+  > p
+  > input:checked {
+  background-image: url('data:image/svg + xml,%3Csvgxmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"width="20"height="20"preserveAspectRatio="xMidYMid meet"viewBox="0 0 16 16"%3E%3Cpathfill="black"fill-opacity="0.8"fill-rule="evenodd"d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215c0 1.344-.665 2.288-1.79 2.973c-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712c1.03-.632 1.397-1.135 1.397-2.028c0-.979-.758-1.698-1.926-1.698c-1.009 0-1.71.529-1.938 1.402c-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09c0-.618-.473-1.092-1.095-1.092c-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14Z"%2F%3E%3C%2Fsvg%3E');
 }
 body.enable-alternative-checkboxes input[data-task="/"]:checked,
 body.enable-alternative-checkboxes li[data-task="/"] > input:checked,
@@ -859,15 +875,21 @@ body.enable-alternative-checkboxes li[data-task="“"] > p > input:checked {
   border-color: var(--color-cyan);
   background-size: 75%;
   background-repeat: no-repeat;
-  background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"%3E%3Cpath fill="white" d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10zm11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.318.142-.686.238-1.028.466c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.945c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10z"%2F%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg + xml,%3Csvgxmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"width="20"height="20"preserveAspectRatio="xMidYMid meet"viewBox="0 0 24 24"%3E%3Cpathfill="white"d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10zm11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.318.142-.686.238-1.028.466c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.945c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10z"%2F%3E%3C%2Fsvg%3E');
 }
 body.enable-alternative-checkboxes.theme-dark input[data-task='"']:checked,
 body.enable-alternative-checkboxes.theme-dark input[data-task="“"]:checked,
 body.enable-alternative-checkboxes.theme-dark li[data-task='"'] > input:checked,
-body.enable-alternative-checkboxes.theme-dark li[data-task='"'] > p > input:checked,
+body.enable-alternative-checkboxes.theme-dark
+  li[data-task='"']
+  > p
+  > input:checked,
 body.enable-alternative-checkboxes.theme-dark li[data-task="“"] > input:checked,
-body.enable-alternative-checkboxes.theme-dark li[data-task="“"] > p > input:checked {
-  background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"%3E%3Cpath fill="black" fill-opacity="0.7" d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10zm11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10z"%2F%3E%3C/svg%3E');
+body.enable-alternative-checkboxes.theme-dark
+  li[data-task="“"]
+  > p
+  > input:checked {
+  background-image: url('data:image/svg + xml,%3Csvgxmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"width="20"height="20"preserveAspectRatio="xMidYMid meet"viewBox="0 0 24 24"%3E%3Cpathfill="black"fill-opacity="0.7"d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10zm11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10z"%2F%3E%3C/svg%3E');
 }
 body.enable-alternative-checkboxes input[data-task="-"]:checked,
 body.enable-alternative-checkboxes li[data-task="-"] > input:checked,
@@ -882,7 +904,8 @@ body.enable-alternative-checkboxes:not(.tasks)
 body.enable-alternative-checkboxes:not(.tasks)
   .markdown-source-view.mod-cm6
   .HyperMD-task-line[data-task]:is([data-task="-"]),
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="-"].task-list-item.is-checked {
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="-"].task-list-item.is-checked {
   color: var(--text-faint);
   text-decoration: line-through solid var(--text-faint) 1px;
 }
@@ -906,12 +929,15 @@ body.enable-alternative-checkboxes li[data-task="i"] > p > input:checked {
   border-color: var(--color-blue);
   background-position: 50%;
   background-size: 100%;
-  background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"%3E%3Cpath fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M196 220h64v172"%2F%3E%3Cpath fill="none" stroke="white" stroke-linecap="round" stroke-miterlimit="10" stroke-width="40" d="M187 396h138"%2F%3E%3Cpath fill="white" d="M256 160a32 32 0 1 1 32-32a32 32 0 0 1-32 32Z"%2F%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg + xml,%3Csvgxmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"width="20"height="20"preserveAspectRatio="xMidYMid meet"viewBox="0 0 512 512"%3E%3Cpathfill="none"stroke="white"stroke-linecap="round"stroke-linejoin="round"stroke-width="40"d="M196 220h64v172"%2F%3E%3Cpathfill="none"stroke="white"stroke-linecap="round"stroke-miterlimit="10"stroke-width="40"d="M187 396h138"%2F%3E%3Cpathfill="white"d="M256 160a32 32 0 1 1 32-32a32 32 0 0 1-32 32Z"%2F%3E%3C%2Fsvg%3E');
 }
 body.enable-alternative-checkboxes.theme-dark input[data-task="i"]:checked,
 body.enable-alternative-checkboxes.theme-dark li[data-task="i"] > input:checked,
-body.enable-alternative-checkboxes.theme-dark li[data-task="i"] > p > input:checked {
-  background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"%3E%3Cpath fill="none" stroke="black" stroke-opacity="0.8" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M196 220h64v172"%2F%3E%3Cpath fill="none" stroke="black" stroke-opacity="0.8" stroke-linecap="round" stroke-miterlimit="10" stroke-width="40" d="M187 396h138"%2F%3E%3Cpath fill="black" fill-opacity="0.8" d="M256 160a32 32 0 1 1 32-32a32 32 0 0 1-32 32Z"%2F%3E%3C%2Fsvg%3E');
+body.enable-alternative-checkboxes.theme-dark
+  li[data-task="i"]
+  > p
+  > input:checked {
+  background-image: url('data:image/svg + xml,%3Csvgxmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"width="20"height="20"preserveAspectRatio="xMidYMid meet"viewBox="0 0 512 512"%3E%3Cpathfill="none"stroke="black"stroke-opacity="0.8"stroke-linecap="round"stroke-linejoin="round"stroke-width="40"d="M196 220h64v172"%2F%3E%3Cpathfill="none"stroke="black"stroke-opacity="0.8"stroke-linecap="round"stroke-miterlimit="10"stroke-width="40"d="M187 396h138"%2F%3E%3Cpathfill="black"fill-opacity="0.8"d="M256 160a32 32 0 1 1 32-32a32 32 0 0 1-32 32Z"%2F%3E%3C%2Fsvg%3E');
 }
 body.enable-alternative-checkboxes input[data-task="S"]:checked,
 body.enable-alternative-checkboxes li[data-task="S"] > input:checked,
@@ -920,12 +946,15 @@ body.enable-alternative-checkboxes li[data-task="S"] > p > input:checked {
   border-color: var(--color-green);
   background-color: var(--color-green);
   background-size: 100%;
-  background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"%3E%3Cpath fill="white" fill-rule="evenodd" d="M26 8a2 2 0 1 0-4 0v2a8 8 0 1 0 0 16v8a4.002 4.002 0 0 1-3.773-2.666a2 2 0 0 0-3.771 1.332A8.003 8.003 0 0 0 22 38v2a2 2 0 1 0 4 0v-2a8 8 0 1 0 0-16v-8a4.002 4.002 0 0 1 3.773 2.666a2 2 0 0 0 3.771-1.332A8.003 8.003 0 0 0 26 10V8Zm-4 6a4 4 0 0 0 0 8v-8Zm4 12v8a4 4 0 0 0 0-8Z" clip-rule="evenodd"%2F%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg + xml,%3Csvgxmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"width="20"height="20"preserveAspectRatio="xMidYMid meet"viewBox="0 0 48 48"%3E%3Cpathfill="white"fill-rule="evenodd"d="M26 8a2 2 0 1 0-4 0v2a8 8 0 1 0 0 16v8a4.002 4.002 0 0 1-3.773-2.666a2 2 0 0 0-3.771 1.332A8.003 8.003 0 0 0 22 38v2a2 2 0 1 0 4 0v-2a8 8 0 1 0 0-16v-8a4.002 4.002 0 0 1 3.773 2.666a2 2 0 0 0 3.771-1.332A8.003 8.003 0 0 0 26 10V8Zm-4 6a4 4 0 0 0 0 8v-8Zm4 12v8a4 4 0 0 0 0-8Z"clip-rule="evenodd"%2F%3E%3C%2Fsvg%3E');
 }
 body.enable-alternative-checkboxes.theme-dark input[data-task="S"]:checked,
 body.enable-alternative-checkboxes.theme-dark li[data-task="S"] > input:checked,
-body.enable-alternative-checkboxes.theme-dark li[data-task="S"] > p > input:checked {
-  background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"%3E%3Cpath fill-opacity="0.8" fill="black" fill-rule="evenodd" d="M26 8a2 2 0 1 0-4 0v2a8 8 0 1 0 0 16v8a4.002 4.002 0 0 1-3.773-2.666a2 2 0 0 0-3.771 1.332A8.003 8.003 0 0 0 22 38v2a2 2 0 1 0 4 0v-2a8 8 0 1 0 0-16v-8a4.002 4.002 0 0 1 3.773 2.666a2 2 0 0 0 3.771-1.332A8.003 8.003 0 0 0 26 10V8Zm-4 6a4 4 0 0 0 0 8v-8Zm4 12v8a4 4 0 0 0 0-8Z" clip-rule="evenodd"%3E%3C/path%3E%3C/svg%3E');
+body.enable-alternative-checkboxes.theme-dark
+  li[data-task="S"]
+  > p
+  > input:checked {
+  background-image: url('data:image/svg + xml,%3Csvgxmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"width="20"height="20"preserveAspectRatio="xMidYMid meet"viewBox="0 0 48 48"%3E%3Cpathfill-opacity="0.8"fill="black"fill-rule="evenodd"d="M26 8a2 2 0 1 0-4 0v2a8 8 0 1 0 0 16v8a4.002 4.002 0 0 1-3.773-2.666a2 2 0 0 0-3.771 1.332A8.003 8.003 0 0 0 22 38v2a2 2 0 1 0 4 0v-2a8 8 0 1 0 0-16v-8a4.002 4.002 0 0 1 3.773 2.666a2 2 0 0 0 3.771-1.332A8.003 8.003 0 0 0 26 10V8Zm-4 6a4 4 0 0 0 0 8v-8Zm4 12v8a4 4 0 0 0 0-8Z"clip-rule="evenodd"%3E%3C/path%3E%3C/svg%3E');
 }
 body.enable-alternative-checkboxes input[data-task="I"]:checked,
 body.enable-alternative-checkboxes li[data-task="I"] > input:checked,
@@ -1000,27 +1029,48 @@ body.enable-alternative-checkboxes li[data-task="D"] > p > input:checked {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='16' height='16'%3E%3Cpath d='M3.25 1A2.25 2.25 0 0 1 4 5.372v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.251 2.251 0 0 1 3.25 1Zm9.5 14a2.25 2.25 0 1 1 0-4.5 2.25 2.25 0 0 1 0 4.5ZM2.5 3.25a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0ZM3.25 12a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm9.5 0a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5ZM14 7.5a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0Zm0-4.25a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0Z'%3E%3C/path%3E%3C/svg%3E");
 }
 
-body.enable-alternative-checkboxes:not(.tasks) li[data-task=">"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="<"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="b"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="i"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="*"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="!"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="S"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="?"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="/"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task='"'].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="l"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="I"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="p"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="c"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="f"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="k"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="w"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="u"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="d"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="P"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="D"].task-list-item.is-checked {
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task=">"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="<"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="b"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="i"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="*"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="!"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="S"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="?"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="/"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task='"'].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="l"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="I"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="p"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="c"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="f"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="k"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="w"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="u"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="d"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="P"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="D"].task-list-item.is-checked {
   color: var(--text-normal);
 }
 
@@ -1163,7 +1213,8 @@ body.enable-alternative-checkboxes:not(.tasks) li[data-task="D"].task-list-item.
   background-color: var(--tab-background-inactive-hover);
 }
 
-.oreo-safari-tab-toggle:not(.oreo-disable-newtab-align) .workspace-tab-header-container-inner {
+.oreo-safari-tab-toggle:not(.oreo-disable-newtab-align)
+  .workspace-tab-header-container-inner {
   width: 100%;
 }
 
@@ -1215,8 +1266,12 @@ body.enable-alternative-checkboxes:not(.tasks) li[data-task="D"].task-list-item.
   padding-bottom: 0px;
 }
 
-.oreo-alternate-tab-toggle .workspace-tabs:not(.mod-stacked) .workspace-tab-header::before,
-.oreo-alternate-tab-toggle .workspace-tabs:not(.mod-stacked) .workspace-tab-header::after,
+.oreo-alternate-tab-toggle
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header::before,
+.oreo-alternate-tab-toggle
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header::after,
 .oreo-alternate-tab-toggle
   .workspace
   .mod-root
@@ -1270,7 +1325,10 @@ body.enable-alternative-checkboxes:not(.tasks) li[data-task="D"].task-list-item.
     background-color 150ms ease-in-out;
 }
 
-.oreo-alternate-tab-toggle .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header {
+.oreo-alternate-tab-toggle
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header {
   max-width: 200px;
   border: 1px solid var(--tab-divider-color);
 }
@@ -1284,7 +1342,9 @@ body.enable-alternative-checkboxes:not(.tasks) li[data-task="D"].task-list-item.
     background-color 150ms ease-in-out;
 }
 
-.oreo-alternate-tab-toggle .workspace-tabs:not(.mod-stacked) .workspace-tab-header:first-child {
+.oreo-alternate-tab-toggle
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header:first-child {
   margin-left: 0;
 }
 
@@ -1320,7 +1380,10 @@ body.enable-alternative-checkboxes:not(.tasks) li[data-task="D"].task-list-item.
   color: var(--tab-text-color);
 }
 
-.oreo-alternate-tab-toggle .workspace .mod-root .workspace-tab-header-inner::after {
+.oreo-alternate-tab-toggle
+  .workspace
+  .mod-root
+  .workspace-tab-header-inner::after {
   display: none;
 }
 
@@ -1415,7 +1478,10 @@ body.enable-alternative-checkboxes:not(.tasks) li[data-task="D"].task-list-item.
   .mod-active
   .workspace-tab-header.is-active
   .workspace-tab-header-inner-icon,
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+.is-focused
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-title {
   color: var(--tab-text-color-focused-highlighted);
 }
 
@@ -1476,28 +1542,46 @@ body.enable-alternative-checkboxes:not(.tasks) li[data-task="D"].task-list-item.
   --tab-text-color-focused-active-current: #000000; /* Oreo depth tab text */
   --tab-text-color-focused: #000000; /* Oreo depth tab text */
 }
-.oreo-depth-tab-toggle .workspace .mod-root .workspace-tab-header:not(.is-active) {
+.oreo-depth-tab-toggle
+  .workspace
+  .mod-root
+  .workspace-tab-header:not(.is-active) {
   --tab-text-color: #000000; /* Oreo depth tab text */
   --icon-color: #000000; /* Oreo depth tab text */
   --icon-color-hover: #000000; /* Oreo depth tab text */
   background-color: rgba(255, 255, 255, 0.6); /* Oreo mantle color */
 }
-.oreo-depth-tab-toggle .workspace .mod-root .workspace-tab-header:not(.is-active)::before,
-.oreo-depth-tab-toggle .workspace .mod-root .workspace-tab-header:not(.is-active)::after {
+.oreo-depth-tab-toggle
+  .workspace
+  .mod-root
+  .workspace-tab-header:not(.is-active)::before,
+.oreo-depth-tab-toggle
+  .workspace
+  .mod-root
+  .workspace-tab-header:not(.is-active)::after {
   box-shadow:
     inset 0 0 0 1px transparent,
     0 0 0 16px rgba(255, 255, 255, 0.6); /* Oreo shadow */
 }
-.oreo-depth-tab-toggle .workspace .mod-root .workspace-tab-header:not(.is-active)::after {
+.oreo-depth-tab-toggle
+  .workspace
+  .mod-root
+  .workspace-tab-header:not(.is-active)::after {
   clip-path: inset(50% 50% 0 0);
 }
-.oreo-depth-tab-toggle .workspace .mod-root .workspace-tab-header:not(.is-active)::before {
+.oreo-depth-tab-toggle
+  .workspace
+  .mod-root
+  .workspace-tab-header:not(.is-active)::before {
   clip-path: inset(50% 0 0 50%);
 }
 .oreo-depth-tab-toggle .workspace .mod-root .workspace-tab-header-inner::after {
   display: none;
 }
-.oreo-depth-tab-toggle .workspace .mod-root .workspace-tab-header-container-inner {
+.oreo-depth-tab-toggle
+  .workspace
+  .mod-root
+  .workspace-tab-header-container-inner {
   gap: 10px;
 }
 .oreo-depth-tab-toggle
@@ -1507,7 +1591,10 @@ body.enable-alternative-checkboxes:not(.tasks) li[data-task="D"].task-list-item.
   .workspace-tab-header-inner {
   background-color: transparent;
 }
-.oreo-depth-tab-toggle .workspace .mod-root .workspace-tab-header-inner-close-button:hover {
+.oreo-depth-tab-toggle
+  .workspace
+  .mod-root
+  .workspace-tab-header-inner-close-button:hover {
   background-color: #e8e8e8; /* Oreo hover background */
 }
 

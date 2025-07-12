@@ -38,7 +38,12 @@
   --text-highlight-bg: rgba(181, 118, 20, 0.5);
   --text-error: #800000;
   --text-error-hover: #990000;
-  --text-selection: rgba(89, 75, 95, 0.99); /* Chromium precess this color with alpha channel */
+  --text-selection: rgba(
+    89,
+    75,
+    95,
+    0.99
+  ); /* Chromium precess this color with alpha channel */
   --text-on-accent: #fbf1c7;
   --interactive-normal: #b57614;
   --interactive-hover: #fe8019;
@@ -505,7 +510,8 @@ code {
 /* in-line block for editor */
 .cm-s-obsidian span.cm-inline-code,
 .cm-s-obsidian span.cm-inline-code.cm-hmd-indented-code,
-.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code) {
+.cm-s-obsidian
+  span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code) {
   background-color: var(--pre-code-bg);
   color: var(--inline-code) !important;
   bottom: 0px !important;
@@ -823,7 +829,11 @@ thead {
 }
 
 .theme-dark .view-header-title-container:after {
-  background: linear-gradient(to bottom, transparent, var(--background-primary)) !important;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--background-primary)
+  ) !important;
 }
 
 .theme-dark .workspace-leaf.mod-active .view-header {
@@ -833,7 +843,11 @@ thead {
 }
 
 .workspace-leaf.mod-active .view-header-title-container:after {
-  background: linear-gradient(to bottom, transparent, var(--background-secondary-alt)) !important;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--background-secondary-alt)
+  ) !important;
 }
 
 .workspace-leaf.mod-active .view-header-title,
@@ -931,7 +945,11 @@ thead {
   height: 30px;
   top: unset;
   bottom: 0;
-  background: linear-gradient(to bottom, transparent, var(--background-primary)) !important;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--background-primary)
+  ) !important;
 }
 
 /* unset the title container height and swap padding */

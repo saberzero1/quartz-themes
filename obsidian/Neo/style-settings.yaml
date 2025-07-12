@@ -1,0 +1,72 @@
+id: neo-style
+name: Neo Theme
+settings:
+  - id: appearance
+    title: Appearance
+    type: heading
+    level: 2
+    collapsed: false
+  - id: theme-variant
+    title: Dark Theme variant
+    description: Variations of dark theme
+    type: class-select
+    allowEmpty: false
+    default: default
+    options:
+      - default
+      - darker
+  - id: accent-headings-off
+    title: White Headings
+    description: Use white for headings instead of accent color
+    type: class-toggle
+    default: false
+  - id: accent-affect-bg
+    title: Accent affect Background
+    description: Background colors follow Accent color (set in appearance settings)
+    type: class-toggle
+    default: false
+  - id: neutral-bg
+    title: Neutral Background colors
+    description: Remove colors from background
+    type: class-toggle
+    default: false
+  - id: no-kanban-styles
+    title: Disable kanban styles
+    description: Switch to kanban plugin default styles
+    type: class-toggle
+    default: false
+  - id: no-dv-table-border
+    title: Hide dataview table borders
+    description:
+    type: class-toggle
+    default: false
+  - id: table-auto-capitalization
+    title: Table headers capitalization
+    description: Title capitalize table headers
+    type: class-toggle
+    default: false
+  - id: features
+    title: Features
+    type: heading
+    level: 2
+    collapsed: false
+  - id: neo-tabs-off
+    title: Obsidian default tabs
+    description: Restore obsidian default tabs
+    type: class-toggle
+    default: false
+  - id: heading-indicator-off
+    title: Disable Heading Indicator
+    description: Do not show heading level indicator on hover
+    type: class-toggle
+    default: false
+  - id: active-line
+    title: Highlight active line
+    description: Change background color of current active line
+    type: class-toggle
+    default: false
+  - id: disable-alternative-checkboxes
+    title: Disable Alternative Checkboxes
+    description: Enable this if you are using your own implementation via a CSS Snippet.
+    type: class-toggle
+    default: false

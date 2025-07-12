@@ -10,12 +10,24 @@ settings:
         allowEmpty: false
         default: matcha
         options:
-            - matcha
-            - dreamscape
-            - peach
-            - pool
-            - strawberry
-            - vanilla
+            -
+                label: Matcha
+                value: matcha
+            -
+                label: Dreamscape
+                value: dreamscape
+            -
+                label: Matcha
+                value: peach
+            -
+                label: Pool
+                value: pool
+            -
+                label: Strawberry
+                value: strawberry
+            -
+                label: Vanilla
+                value: vanilla
 
 */
 
@@ -51,7 +63,11 @@ body {
   --toggle-thumb-radius: 5px;
 
   .workspace-leaf-content[data-type="markdown"] .view-content {
-    background-image: radial-gradient(circle at 1px 1px, #dddddd 1px, transparent 0);
+    background-image: radial-gradient(
+      circle at 1px 1px,
+      #dddddd 1px,
+      transparent 0
+    );
     background-size: 20px 20px;
   }
 
@@ -253,7 +269,8 @@ body.dreamscape {
 
   /* add a background to the whole sidebar */
   .mod-sidedock {
-    background: radial-gradient(
+    background:
+      radial-gradient(
         circle at top left,
         transparent 25%,
         #f6f1ff 25.5%,
@@ -328,7 +345,8 @@ body.peach {
 
   /* add a background to the whole sidebar */
   .mod-sidedock {
-    background: radial-gradient(
+    background:
+      radial-gradient(
         circle at top left,
         transparent 9%,
         #fde1cb 10%,
@@ -357,8 +375,20 @@ body.peach {
         transparent 16%
       ),
       radial-gradient(circle, transparent 25%, #fafafa 26%),
-      linear-gradient(45deg, transparent 46%, #fde1cb 47%, #fde1cb 52%, transparent 53%),
-      linear-gradient(135deg, transparent 46%, #fde1cb 47%, #fde1cb 52%, transparent 53%);
+      linear-gradient(
+        45deg,
+        transparent 46%,
+        #fde1cb 47%,
+        #fde1cb 52%,
+        transparent 53%
+      ),
+      linear-gradient(
+        135deg,
+        transparent 46%,
+        #fde1cb 47%,
+        #fde1cb 52%,
+        transparent 53%
+      );
     background-size: 1em 1em;
   }
 
@@ -417,8 +447,19 @@ body.pool {
 
   /* add a background to the whole sidebar */
   .mod-sidedock {
-    background: linear-gradient(-45deg, #dbf5fa99 20%, transparent 20% 80%, #dbf5fa99 80% 100%),
-      linear-gradient(45deg, #dbf5fa99 20%, transparent 20% 80%, #dbf5fa99 80% 100%),
+    background:
+      linear-gradient(
+        -45deg,
+        #dbf5fa99 20%,
+        transparent 20% 80%,
+        #dbf5fa99 80% 100%
+      ),
+      linear-gradient(
+        45deg,
+        #dbf5fa99 20%,
+        transparent 20% 80%,
+        #dbf5fa99 80% 100%
+      ),
       linear-gradient(-45deg, #fafafa 33%, transparent 33% 66%, #fafafa 66%),
       linear-gradient(45deg, transparent 33%, #dbf5fa 33% 66%, transparent 66%);
     background-size: 2em 2em;
@@ -479,7 +520,14 @@ body.strawberry {
 
   /* add a background to the whole sidebar */
   .mod-sidedock {
-    background: linear-gradient(25deg, #fafafa 40%, transparent 41%, transparent 59%, #fafafa 60%),
+    background:
+      linear-gradient(
+        25deg,
+        #fafafa 40%,
+        transparent 41%,
+        transparent 59%,
+        #fafafa 60%
+      ),
       linear-gradient(
         90deg,
         transparent 45%,

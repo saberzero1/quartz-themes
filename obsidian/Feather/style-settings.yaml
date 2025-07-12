@@ -1,0 +1,218 @@
+name: Feather
+id: feather-style
+settings:
+  - id: headings
+    title: Headings
+    type: heading
+    level: 2
+    collapsed: true
+  - id: h1
+    title: H1
+    type: heading
+    level: 3
+    collapsed: true
+
+  - id: h1-color
+    title: Color
+    description: color used
+    type: variable-color
+    format: hex
+    default: "#xffffff"
+  - id: h1-size
+    title: H1 font size
+    description: Accepts font-size value
+    type: variable-number
+    default: 2
+    format: rem
+  - id: h2
+    title: H2
+    type: heading
+    level: 3
+    collapsed: true
+
+  - id: h2-color
+    title: Color
+    description: color used
+    type: variable-color
+    format: hex
+    default: "#ffffff"
+  - id: h2-size
+    title: H2 font size
+    description: Accepts font-size value
+    type: variable-number
+    default: 1.8
+    format: rem
+  - id: h3
+    title: H3
+    type: heading
+    level: 3
+    collapsed: true
+
+  - id: h3-color
+    title: Color
+    description: color used
+    type: variable-color
+    format: hex
+    default: "#4da2f8"
+  - id: h3-size
+    title: H3 font size
+    description: Accepts font-size value
+    type: variable-number
+    default: 1.6
+    format: rem
+  - id: h4
+    title: H4
+    type: heading
+    level: 3
+    collapsed: true
+
+  - id: h4-color
+    title: Color
+    description: color used
+    type: variable-color
+    format: hex
+    default: "#ffc63c"
+  - id: h4-size
+    title: H4 font size
+    description: Accepts font-size value
+    type: variable-number
+    default: 1.4
+    format: rem
+  - id: h5
+    title: H5
+    type: heading
+    level: 3
+    collapsed: true
+
+  - id: h5-color
+    title: Color
+    description: color used
+    type: variable-color
+    format: hex
+    default: "#f03063"
+  - id: h5-size
+    title: H5 font size
+    description: Accepts font-size value
+    type: variable-number
+    default: 1.2
+    format: rem
+  - id: h6
+    title: H6
+    type: heading
+    level: 3
+    collapsed: true
+
+  - id: h6-color
+    title: Color
+    description: color used
+    type: variable-color
+    format: hex
+    default: "#895ef7"
+  - id: h6-size
+    title: H6 font size
+    description: Accepts font-size value
+    type: variable-number
+    default: 1
+    format: rem
+  - id: window
+    title: Window
+    type: heading
+    level: 2
+    collapsed: true
+  - id: color-base-00
+    title: Editor Window
+    description: Select Color
+    type: variable-color
+    format: hex
+    default: "#333547"
+  - id: color-base-20
+    title: Nav
+    description: Select Color
+    type: variable-color
+    format: hex
+    default: "#272835"
+  - id: titlebar-background-focused
+    title: Title Bar
+    description: Select Color
+    type: variable-color
+    format: hex
+    default: "#272835"
+  - id: icons
+    title: Icons
+    type: heading
+    level: 2
+    collapsed: true
+  - id: icon-color
+    title: Icon Color
+    description: Select Color
+    type: variable-color
+    format: hex
+    default: "#333547"
+  - id: icon-color-hover
+    title: Icon Color Hover
+    description: Select Color
+    type: variable-color
+    format: hex
+    default: "#272835"
+  - id: icon-color-active
+    title: Icon Color Active
+    description: Select Color
+    type: variable-color
+    format: hex
+    default: "#272835"
+  - id: icon-color-focused
+    title: Icon Color Focused
+    description: Select Color
+    type: variable-color
+    format: hex
+    default: "#333547"
+  - id: custom-fonts
+    title: Typography
+    type: heading
+    level: 2
+    collapsed: true
+  - id: default-font-color
+    title: Default font colors
+    description: Use the default font color styling for bold, italics, and quotes
+    type: class-toggle
+    default: false
+  - id: text-highlight-bg-l
+    title: Highlight color (light)
+    type: variable-color
+    format: rgb
+    default: "rgba(255, 208, 0, 0.4)"
+  - id: text-highlight-bg-d
+    title: Highlight color (dark)
+    type: variable-color
+    format: rgb
+    default: "rgba(255, 208, 0, 0.4)"
+  - id: strong-color
+    title: Bold font color
+    type: variable-color
+    format: hex
+    default: "#ff82b2"
+  - id: em-color
+    title: Italics font color
+    type: variable-color
+    format: hex
+    default: "#1fcbdc"
+  - id: quotes-color
+    title: Blockquotes font color
+    type: variable-color
+    format: hex
+    default: "#dadada"
+  - id: code-normal
+    title: Inline code blocks font color (Light mode)
+    type: variable-color
+    format: hex
+    default: "#222222"
+  - id: code-color-d
+    title: Inline code blocks font color (Dark mode)
+    type: variable-color
+    format: hex
+    default: "#dadada"
+  - id: font-interface-theme
+    title: Theme variant
+    description: Variations on a theme
+    type: variable-text
+    default: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Inter, Ubuntu, sans-serif

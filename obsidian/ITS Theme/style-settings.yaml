@@ -1,0 +1,2414 @@
+name: ITS Theme Settings
+id: ITS
+settings:
+  - id: info-text-SlRvb-ITS-Theme
+    type: info-text
+    title: "ITS Theme by SlRvb"
+    description: "ℹ [Guide / Docs](https://publish.obsidian.md/slrvb-docs/ITS+Theme/ITS+Theme) | ⚙ [Github](https://github.com/SlRvb/Obsidian--ITS-Theme) | ☕ [Support](https://ko-fi.com/slrvb)"
+    markdown: true
+  - id: its-theme
+    title: ITS Theme Class
+    type: class-toggle
+    default: true
+  #-
+  #    title: Class Test toggle
+  #    id: minimalist-workspace
+  #    type: class-toggle
+  - title: Workspace
+    id: ITS-Workspace
+    type: heading
+    level: 1
+    collapsed: true
+  - title: Sizes
+    id: ITS-Sizes
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+      - label: Readable
+        value: sizing-readable
+      - label: Minimized
+        value: sizing-mini
+      - label: Large
+        value: sizing-large
+  - title: Roundness
+    id: radius-s
+    type: variable-number-slider
+    default: 0
+    format: px
+    min: 0
+    max: 12
+    step: 1
+  - title: Resize Scrollbars
+    id: scrollbar-width
+    type: variable-number-slider
+    default: 12
+    format: px
+    min: 4
+    max: 15
+    step: 1
+  - title: Sizing
+    id: ITS-Sizing
+    type: heading
+    level: 2
+    collapsed: true
+  - title: Note Width
+    id: file-line-width
+    type: variable-number-slider
+    default: 700
+    format: px
+    min: 400
+    max: 1800
+    step: 100
+  #-
+  #    title: Titlebar Sizing
+  #    id: titlebar-height
+  #    type: variable-number-slider
+  #    default: 40
+  #    format: px
+  #    min: 20
+  #    max: 50
+  #    step: 10
+  - title: Tab Outline Height
+    id: tab-outline-width
+    type: variable-number-slider
+    default: 2
+    format: px
+    min: 0
+    max: 4
+    step: 1
+  - title: Status Bar Padding
+    id: status-bar-padding
+    type: variable-number-slider
+    default: 4
+    format: px
+    min: 0
+    max: 10
+    step: 1
+  - title: Status Bar Spacing
+    id: status-bar-gap
+    type: variable-number-slider
+    default: 4
+    format: px
+    min: 0
+    max: 10
+    step: 1
+  - title: Sidebar
+    id: ITS-Sizing-Sidebar
+    type: heading
+    level: 3
+    collapsed: true
+  - title: Sidebar Text Sizing
+    id: nav-item-size
+    type: variable-number-slider
+    default: 14
+    format: px
+    min: 10
+    max: 20
+    step: 1
+  - title: Sidebar Tab Icon Sizing
+    id: sidebar-tab-icon-size
+    type: variable-number-slider
+    default: 18
+    format: px
+    min: 10
+    max: 20
+    step: 1
+  - title: Sidebar Ribbon Width Sizing
+    id: ribbon-width
+    type: variable-number-slider
+    default: 40
+    format: px
+    min: 30
+    max: 50
+    step: 5
+  - title: Sidebar Ribbon Icon Sizing
+    id: ribbon-icon-size
+    type: variable-number-slider
+    default: 18
+    format: px
+    min: 10
+    max: 20
+    step: 1
+  - title: Sidebar Ribbon Icon Spacing
+    id: ribbon-icon-gap
+    type: variable-number-slider
+    default: 15
+    format: px
+    min: 1
+    max: 20
+    step: 1
+  - title: Notes
+    id: ITS-Note-Sizing
+    type: heading
+    level: 3
+    collapsed: true
+  - title: Note Title Size
+    id: file-header-font-size
+    type: variable-number-slider
+    default: 15
+    format: px
+    min: 10
+    max: 20
+    step: 1
+  - title: Note Breadcrumb Title Size
+    id: file-header-breadcrumb-font-size
+    type: variable-number-slider
+    default: 13.5
+    format: px
+    min: 10
+    max: 20
+    step: 1
+  - title: Inline Title Size
+    id: inline-title-size
+    type: variable-number-slider
+    default: 34
+    format: px
+    min: 10
+    max: 50
+    step: 1
+  - title: Popover
+    id: ITS-Sizing-Popover
+    type: heading
+    level: 3
+    collapsed: true
+  - title: Popover Width
+    id: popover-width
+    type: variable-number-slider
+    default: 450
+    format: px
+    min: 300
+    max: 1000
+    step: 100
+  - title: Popover Height
+    id: popover-height
+    type: variable-number-slider
+    default: 400
+    format: px
+    min: 300
+    max: 1000
+    step: 100
+  - title: Settings
+    id: ITS-Settings
+    type: heading
+    level: 3
+    collapsed: true
+  - title: Settings Menu Width
+    id: modal-width
+    type: variable-number-slider
+    default: 90
+    format: vw
+    min: 40
+    max: 100
+    step: 5
+  - title: Settings Menu Height
+    id: modal-height
+    type: variable-number-slider
+    default: 85
+    format: vh
+    min: 40
+    max: 100
+    step: 5
+  - title: Titlebar
+    id: ITS-Titlebar
+    type: heading
+    level: 2
+    collapsed: true
+  - title: Titlebar Colors
+    id: titlebar-colors
+    type: class-toggle
+  - title: Titlebar Bubbles
+    id: titlebar-bubbles
+    type: class-toggle
+  - title: Tabs
+    id: ITS-tabs
+    type: heading
+    level: 2
+    collapsed: true
+  - title: Tab Widths
+    id: tab-widths
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+      - label: Auto
+        value: tab-auto
+      - label: Wide
+        value: tab-wide
+  - title: Sidebar
+    id: ITS-Sidebar
+    type: heading
+    level: 2
+    collapsed: true
+  - title: Sidebar Tabs Styling
+    id: ITS-Sidebar-Styling
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+      - label: Wide
+        value: sidebar-tabs-wide
+      - label: Underline
+        value: sidebar-tabs-underline
+      - label: Overline
+        value: sidebar-tabs-overline
+      - label: Tabular
+        value: sidebar-tabs-tabular
+  - title: Bottom Navbar Buttons
+    id: navbar-bottom
+    type: class-toggle
+  - title: Sidebar Ribbon
+    id: ITS-Sidebar-Ribbon
+    type: heading
+    level: 3
+  - title: Floating Sidebar Ribbon
+    id: ITS-Sidebar-Ribbon-Float
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+      - label: Plain
+        value: sidebar-ribbon-float
+      - label: Minimized
+        value: sidebar-ribbon-mini-float
+  - title: Floating Sidebar Ribbon
+    id: ITS-Sidebar-Ribbon-Float-Position
+    type: class-select
+    default: sidebar-float-bottom
+    options:
+      - label: Bottom
+        value: sidebar-float-bottom
+      - label: Center
+        value: sidebar-float-center
+      - label: Top
+        value: sidebar-float-top
+
+  - title: File Explorer
+    id: ITS-File-Explorer
+    type: heading
+    level: 2
+    collapsed: true
+  - title: File Explorer Styling
+    id: file-explorer-flat
+    type: class-toggle
+  - title: Folder Arrows
+    id: ITS-folder-arrows
+    type: class-select
+    default: folder-arrow-hidden
+    options:
+      - label: Hidden
+        value: folder-arrow-hidden
+      - label: Display
+        value: folder-arrow-display
+      - label: Display On Hover
+        value: folder-arrow
+  - title: Disable Bold Folder & Hover
+    description: Remove bold styling from folders & hovering on items
+    id: file-explorer-boldless
+    type: class-toggle
+  - title: Disable Bold on Hover
+    description: Remove bold styling from hovering on items
+    id: file-explorer-boldless-hover
+    type: class-toggle
+  - title: Folder Icon
+    id: folder-icon
+    type: variable-text
+    default: '"\e801"'
+  - title: Folder Font Family
+    id: folder-f
+    type: variable-text
+    default: "its"
+  - title: File Icon
+    id: file-icon
+    type: variable-text
+    default: '"\e800"'
+  - title: File Font Family
+    id: file-f
+    type: variable-text
+    default: "its"
+  - title: Vault Title
+    description: Desktop only
+    id: ITS-Vault-Title
+    type: heading
+    level: 2
+    collapsed: true
+  - title: Vault Font
+    description: Vault Title fonts.
+    id: vault-font
+    type: variable-text
+    default: "'Calisto MT', 'Palatino Black', 'Book Antiqua', 'Georgia', 'Suez One', serif"
+  - title: Vault Title Size
+    id: vault-name-font-size
+    type: variable-number-slider
+    default: 20
+    format: px
+    min: 10
+    max: 25
+    step: 1
+  - title: Vault Title Font Weight
+    id: vault-name-font-weight
+    type: variable-number-slider
+    format: px
+    default: 900
+    min: 100
+    max: 900
+    step: 100
+  - title: Vault Title Color
+    id: vault-name-color
+    type: variable-themed-color
+    format: hex
+    default-dark: "#c14343"
+    default-light: "#c14343"
+  - title: Hide Vault Title
+    id: vault-title-none
+    type: class-toggle
+  - title: Add Vault Title Icon
+    id: vault-icon
+    type: class-toggle
+  - title: Vault Image
+    id: vault-icon-image
+    type: variable-text
+    default: "url()"
+  - title: Background Image
+    id: ITS-Background-Image
+    type: heading
+    level: 2
+    collapsed: true
+  - title: Background Image
+    description: Toggle to apply background image to vault
+    id: background-image
+    type: class-toggle
+  - title: Background Image
+    id: background-image-url
+    type: variable-text
+    default: "url()"
+  - title: Background Position Height
+    id: background-image-height
+    type: variable-number-slider
+    format: "%"
+    default: 50
+    min: 0
+    max: 100
+    step: 1
+  - title: Background Position Width
+    id: background-image-width
+    type: variable-number-slider
+    format: "%"
+    default: 50
+    min: 0
+    max: 100
+    step: 1
+  - title: Image Blur
+    id: background-image-blur
+    type: variable-number-slider
+    format: px
+    default: 11
+    min: 0
+    max: 20
+    step: 1
+  - title: Note Opacity
+    id: background-image-opacity
+    type: variable-number-slider
+    format: "%"
+    default: 90
+    min: 20
+    max: 100
+    step: 1
+  - title: Side Panel Opacity
+    id: background-image-sidebar-opacity
+    type: variable-number-slider
+    format: "%"
+    default: 90
+    min: 20
+    max: 100
+    step: 1
+  - title: Minimalist Workspace
+    description: Hide UI elements unless hovered over.
+    id: ITS-Minimalist-Workspace
+    type: heading
+    level: 2
+    collapsed: true
+  - title: Minimalist Workspace
+    description: Hide everything listed below with just 1 toggle
+    id: minimalist-workspace
+    type: class-toggle
+  - title: Hide Resize Handles
+    id: hide-resize-handle
+    type: class-toggle
+  - title: Hide Scrollbars
+    id: hide-scrollbar
+    type: class-toggle
+  - title: Hide Sidebar Ribbon
+    id: hide-sidebar-ribbon
+    type: class-toggle
+  - title: Hide Sidebar Ribbon Icons
+    id: hide-sidebar-ribbon-icons
+    type: class-toggle
+  - title: Hide Vault Name
+    id: hide-vault-name
+    type: class-toggle
+  - title: Hide Search/File Explorer Nav Icons
+    id: hide-nav-header
+    type: class-toggle
+  - title: Hide File Explorer Icons
+    id: hide-file-explorer-icons
+    type: class-toggle
+  - title: Hide App Title Bar
+    id: hide-titlebar
+    type: class-toggle
+  - title: Hide Status Bar
+    id: hide-status-bar
+    type: class-toggle
+  - title: Hide Outline Plugin Heading Icons
+    id: hide-outline-heading
+    type: class-toggle
+  - title: Hide Tabs
+    id: hide-titlebar-tab
+    type: class-toggle
+  - title: Hide Tab Outline
+    id: hide-tab-outline
+    type: class-toggle
+  - title: Hide Note Title Bar
+    id: hide-note-title
+    type: class-toggle
+  - title: Hide Note Title Bar Icons
+    id: hide-note-title-icons
+    type: class-toggle
+  #-
+  #    title: Hide Frontmatter
+  #    id: hide-frontmatter
+  #    type: class-toggle
+  - title: Note
+    id: ITS-Note
+    type: heading
+    level: 1
+    collapsed: true
+  - title: Document
+    description: Emulation of microsoft document look.
+    id: writing-document
+    type: class-toggle
+  - title: Paper Shadow
+    description: Vignette / paper burn option
+    id: paper
+    type: class-toggle
+  - title: Writing
+    description: Minimalistic/distraction free layout design for notes.
+    id: writing
+    type: class-toggle
+  - title: Disable Source View Styling
+    description: Undo sizing/style fixes to make source view look more like plain text
+    id: disable-source-styling
+    type: class-toggle
+  - title: Text
+    id: ITS-Text
+    type: heading
+    level: 2
+    collapsed: true
+  #   -
+  #        title: Note Text Size
+  #        description: Adjust size for text in notes.
+  #        id: font-text-size
+  #        type: variable-number-slider
+  #        default: 16
+  #        format: px
+  #        min: 10
+  #        max: 20
+  #        step: 1
+  - title: Justify Text
+    description: Justify preview and editor text
+    id: justified
+    type: class-toggle
+  - title: Font Ligatures
+    description: (Depends On Font) Text combines into symbols ie. - - > becomes -->.
+    id: lig
+    type: class-toggle
+  - title: Paragraph Spacing
+    description: Adjust spacing size for "paragraphs". Search "spacing" for more fine tuned adjustments.
+    id: p-spacing
+    type: variable-number-slider
+    default: 1
+    format: rem
+    min: 0
+    max: 2
+    step: 0.1
+  - title: Fonts
+    id: ITS-Fonts
+    type: heading
+    level: 3
+    collapsed: true
+  - title: Text Font
+    description: Changes text font for preview and edit mode.
+    id: default-font
+    type: variable-text
+    default: "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Microsoft YaHei Light', sans-serif"
+  - title: Monospace Font
+    id: font-monospace
+    type: variable-text
+    default: "'Fira Code Medium', 'Source Code Pro', monospace"
+  - title: Comments Font
+    id: comment-font
+    type: variable-text
+    default: "'Fira Code Medium'"
+  - title: Advanced Text Decoration
+    id: ITS-Text-Decoration
+    type: heading
+    level: 3
+    collapsed: true
+  - title: Bold Weight
+    id: bold-weight
+    type: variable-number-slider
+    default: 600
+    min: 100
+    max: 900
+    step: 100
+  - title: Bold Color
+    id: bold-color
+    type: variable-themed-color
+    format: hex
+    default-dark: "#bccad8"
+    default-light: "#697580"
+  - title: Italic Color
+    id: italic-color
+    type: variable-themed-color
+    format: hex
+    default-dark: "#bccad8"
+    default-light: "#697580"
+  - title: Strikethrough Text Color
+    id: strikethrough-color
+    type: variable-themed-color
+    format: hex
+    default-dark: "#bccad8"
+    default-light: "#697580"
+  - title: Strikethrough Line
+    id: strikethrough-line-thickness
+    type: variable-number-slider
+    default: 1
+    format: px
+    min: 1
+    max: 5
+    step: 1
+  - title: Strikethrough Line Color
+    id: strikethrough-line-color
+    type: variable-themed-color
+    format: hex
+    default-dark: "#bccad8"
+    default-light: "#697580"
+  - title: Images
+    id: ITS-Image
+    type: heading
+    level: 2
+    collapsed: true
+  - title: Live Preview Image Float
+    id: lp-img-float
+    type: class-toggle
+  - title: Center Images
+    description: Center ALL images, excluding those with |left or |right in them.
+    id: img-adj-center
+    type: class-toggle
+  - title: Clear Images
+    description: Push image under/over headings or horizontal lines
+    id: img-adj-clears
+    type: heading
+    level: 3
+    collapsed: false
+  - title: Image Captions with Alt Text
+    description: Make any alt text in image display as an image caption
+    id: image-caption
+    type: class-toggle
+  - title: Horizontal Lines
+    description: Push image under/over any horizontal lines
+    id: clear-hr
+    type: class-toggle
+  - title: Headings
+    description: Push image under/over all headings 1-6
+    id: clear-headings
+    type: class-toggle
+  - title: Heading Specific
+    description: Push image under/over some headings and not others
+    id: img-adj-clears-headings
+    type: heading
+    level: 4
+    collapsed: true
+  - title: Header 1
+    id: clear-heading-1
+    type: class-toggle
+  - title: Header 2
+    id: clear-heading-2
+    type: class-toggle
+  - title: Header 3
+    id: clear-heading-3
+    type: class-toggle
+  - title: Header 4
+    id: clear-heading-4
+    type: class-toggle
+  - title: Header 5
+    id: clear-heading-5
+    type: class-toggle
+  - title: Header 6
+    id: clear-heading-6
+    type: class-toggle
+  - title: Note Title
+    id: ITS-Note-Title
+    type: heading
+    level: 2
+    collapsed: true
+  - title: Note Title Styling
+    id: ITS-Note-Title-Styling
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+      - label: Note Title Gradient
+        value: file-header-gradient
+      - label: Note Title Underline
+        value: note-title-underline
+      - label: Note Title Overline
+        value: note-title-overline
+  - title: Inline Title Styling
+    id: Inline-Title-Styling
+    type: class-select
+    allowEmpty: true
+    default: Heading
+    options:
+      - label: Heading
+        value: inline-title-style-heading
+      - label: Text
+        value: inline-title-style-text
+  - title: Inline Title Specifics
+    id: ITS-Inline-Title
+    type: heading
+    level: 3
+    collapsed: true
+  - title: Inline Title Sizes
+    id: Inline-Title-Sizes
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+      - label: Small
+        value: inline-title-small
+      - label: Medium
+        value: inline-title-medium
+      - label: Large
+        value: inline-title-large
+  - title: Inline Title Fonts
+    id: inline-title-font
+    type: variable-text
+    default: "Calisto MT"
+  - title: Inline Title Font Weights
+    id: inline-title-weight
+    type: variable-number-slider
+    default: 700
+    min: 100
+    max: 900
+    step: 100
+  - title: Inline Title Positions
+    id: Inline-Title-Positions
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+      - label: Left
+        value: inline-title-position-left
+      - label: Center
+        value: inline-title-position-center
+      - label: Right
+        value: inline-title-position-right
+  - title: Headers
+    id: ITS-Headers
+    type: heading
+    level: 2
+    collapsed: true
+  - title: Headings
+    description: Heading and Vault Title fonts.
+    id: font
+    type: variable-text
+    default: "'Calisto MT', 'Palatino Black', 'Book Antiqua', 'Georgia', 'Suez One', serif"
+  - title: Header Font Weights
+    id: header-weight
+    type: variable-number-slider
+    default: 700
+    min: 100
+    max: 900
+    step: 100
+  - title: Header Underline Height
+    id: header-border-line-height
+    type: variable-number-slider
+    default: 4
+    format: px
+    min: 0
+    max: 8
+    step: 1
+  - title: Heading Spacing
+    description: Adjust header spacing
+    id: heading-spacing
+    type: variable-number-slider
+    default: 10
+    format: px
+    min: 0
+    max: 50
+    step: 10
+  - title: Header Positions
+    id: ITS-Header-positions
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+      - label: Left
+        value: headings-left
+      - label: Center
+        value: headings-center
+      - label: Right
+        value: headings-right
+  - title: Hide Header Underline
+    description: Hide ALL header underlines.
+    id: hide-header-underline
+    type: class-toggle
+  - title: Heading Indicators
+    id: heading-indicator
+    type: class-toggle
+  - title: Heading Styles
+    description: Heading styling.
+    id: ITS-Header-Styles
+    type: heading
+    level: 3
+    collapsed: false
+  - title: Center Header With Lines
+    description: Center ALL headings with lines on either side
+    id: hcl
+    type: class-toggle
+  - title: Header Color Override
+    description: Header color always applied over other markdown in the header
+    id: heading-color-override
+    type: class-toggle
+  - title: Illusion Theme Inspired Headings
+    id: illusion
+    type: class-toggle
+  - title: Advanced Heading Options
+    id: ITS-Advanced-Header
+    type: heading
+    level: 3
+    collapsed: true
+  - title: Heading Top Spacing
+    description: Adjust header spacing above the header. (Will not apply in LP)
+    id: heading-spacing-top
+    type: variable-number-slider
+    default: 10
+    format: px
+    min: 0
+    max: 50
+    step: 10
+  - title: Heading Bottom Spacing
+    description: Adjust header spacing below the header. (Will not apply in LP)
+    id: heading-spacing-bottom
+    type: variable-number-slider
+    default: 10
+    format: px
+    min: 0
+    max: 50
+    step: 10
+  - title: Header Font
+    id: ITS-Header-Fonts
+    type: heading
+    level: 4
+    collapsed: true
+  - title: Heading 1
+    id: h1-font
+    type: variable-text
+    default: '"Calisto MT"'
+  - title: Heading 2
+    id: h2-font
+    type: variable-text
+    default: '"Calisto MT"'
+  - title: Heading 3
+    id: h3-font
+    type: variable-text
+    default: '"Calisto MT"'
+  - title: Heading 4
+    id: h4-font
+    type: variable-text
+    default: '"Calisto MT"'
+  - title: Heading 5
+    id: h5-font
+    type: variable-text
+    default: '"Calisto MT"'
+  - title: Heading 6
+    id: h6-font
+    type: variable-text
+    default: '"Calisto MT"'
+  - title: Header Font Size
+    id: ITS-Header-Font-Size
+    type: heading
+    level: 4
+    collapsed: true
+  - title: Heading 1
+    id: h1-size
+    type: variable-number-slider
+    default: 34
+    format: px
+    min: 12
+    max: 40
+    step: 2
+  - title: Heading 2
+    id: h2-size
+    type: variable-number-slider
+    default: 30
+    format: px
+    min: 12
+    max: 40
+    step: 2
+  - title: Heading 3
+    id: h3-size
+    type: variable-number-slider
+    default: 26
+    format: px
+    min: 12
+    max: 40
+    step: 2
+  - title: Heading 4
+    id: h4-size
+    type: variable-number-slider
+    default: 24
+    format: px
+    min: 12
+    max: 40
+    step: 2
+  - title: Heading 5
+    id: h5-size
+    type: variable-number-slider
+    default: 20
+    format: px
+    min: 12
+    max: 40
+    step: 2
+  - title: Heading 6
+    id: h6-size
+    type: variable-number-slider
+    default: 18
+    format: px
+    min: 12
+    max: 40
+    step: 2
+  - title: Header Colors
+    id: ITS-Header-Colors
+    type: heading
+    level: 4
+    collapsed: true
+  - title: Heading 1 Color
+    id: h1-color
+    type: variable-themed-color
+    format: hex
+    default-dark: "#c14343"
+    default-light: "#c14343"
+  - title: Heading 2 Color
+    id: h2-color
+    type: variable-themed-color
+    format: hex
+    default-dark: "#c14343"
+    default-light: "#c14343"
+  - title: Heading 3 Color
+    id: h3-color
+    type: variable-themed-color
+    format: hex
+    default-dark: "#c14343"
+    default-light: "#c14343"
+  - title: Heading 4 Color
+    id: h4-color
+    type: variable-themed-color
+    format: hex
+    default-dark: "#c14343"
+    default-light: "#c14343"
+  - title: Heading 5 Color
+    id: h5-color
+    type: variable-themed-color
+    format: hex
+    default-dark: "#c14343"
+    default-light: "#c14343"
+  - title: Heading 6 Color
+    id: h6-color
+    type: variable-themed-color
+    format: hex
+    default-dark: "#c14343"
+    default-light: "#c14343"
+  - title: Header Alignment
+    id: ITS-Header-Alignment
+    type: heading
+    level: 4
+    collapsed: true
+  - title: Heading 1
+    id: h1-text-align
+    type: variable-select
+    allowEmpty: true
+    default: left
+    options:
+      - left
+      - center
+      - right
+  - title: Heading 2
+    id: h2-text-align
+    type: variable-select
+    allowEmpty: true
+    default: left
+    options:
+      - left
+      - center
+      - right
+  - title: Heading 3
+    id: h3-text-align
+    type: variable-select
+    allowEmpty: true
+    default: left
+    options:
+      - left
+      - center
+      - right
+  - title: Heading 4
+    id: h4-text-align
+    type: variable-select
+    allowEmpty: true
+    default: left
+    options:
+      - left
+      - center
+      - right
+  - title: Heading 5
+    id: h5-text-align
+    type: variable-select
+    allowEmpty: true
+    default: left
+    options:
+      - left
+      - center
+      - right
+  - title: Heading 6
+    id: h6-text-align
+    type: variable-select
+    allowEmpty: true
+    default: left
+    options:
+      - left
+      - center
+      - right
+  - title: Illusion Headings Specifics
+    id: ITS-illusion-headers
+    type: heading
+    level: 4
+    collapsed: true
+  - title: Illusion Heading 1
+    id: illusion-h1
+    type: class-toggle
+  - title: Illusion Heading 2
+    id: illusion-h2
+    type: class-toggle
+  - title: Illusion Heading 3
+    id: illusion-h3
+    type: class-toggle
+  - title: Illusion Heading 4
+    id: illusion-h4
+    type: class-toggle
+  - title: Illusion Heading 5
+    id: illusion-h5
+    type: class-toggle
+  - title: Illusion Heading 6
+    id: illusion-h6
+    type: class-toggle
+  - title: Advanced Heading Underlines
+    description: Specific adjustments to heading underlines.
+    id: ITS-Advanced-Header-Underlines
+    type: heading
+    level: 3
+    collapsed: true
+  - title: Underline Height
+    description: Resize specific heading underlines heights.
+    id: ITS-Header-Underlines-Height-Specific
+    type: heading
+    level: 5
+    collapsed: true
+  - title: H1 Underline Height
+    id: h1-border-line-height
+    type: variable-number-slider
+    default: 4
+    format: px
+    min: 0
+    max: 6
+    step: 1
+  - title: H2 Underline Height
+    id: h2-border-line-height
+    type: variable-number-slider
+    default: 4
+    format: px
+    min: 0
+    max: 6
+    step: 1
+  - title: H3 Underline Height
+    id: h3-border-line-height
+    type: variable-number-slider
+    default: 4
+    format: px
+    min: 0
+    max: 6
+    step: 1
+  - title: H4 Underline Height
+    id: h4-border-line-height
+    type: variable-number-slider
+    default: 4
+    format: px
+    min: 0
+    max: 6
+    step: 1
+  - title: H5 Underline Height
+    id: h5-border-line-height
+    type: variable-number-slider
+    default: 4
+    format: px
+    min: 0
+    max: 6
+    step: 1
+  - title: H6 Underline Height
+    id: h6-border-line-height
+    type: variable-number-slider
+    default: 4
+    format: px
+    min: 0
+    max: 6
+    step: 1
+  - title: Underline Width
+    description: Resize specific heading underlines widths.
+    id: ITS-Header-Underlines-Width-Specific
+    type: heading
+    level: 5
+    collapsed: true
+  - title: H1 Underline Width
+    id: h1-border-line-width
+    type: variable-number-slider
+    default: 100
+    format: "%"
+    min: 0
+    max: 100
+    step: 10
+  - title: H2 Underline Width
+    id: h2-border-line-width
+    type: variable-number-slider
+    default: 85
+    format: "%"
+    min: 0
+    max: 100
+    step: 10
+  - title: H3 Underline Width
+    id: h3-border-line-width
+    type: variable-number-slider
+    default: 65
+    format: "%"
+    min: 0
+    max: 100
+    step: 10
+  - title: H4 Underline Width
+    id: h4-border-line-width
+    type: variable-number-slider
+    default: 44
+    format: "%"
+    min: 0
+    max: 100
+    step: 10
+  - title: H5 Underline Width
+    id: h5-border-line-width
+    type: variable-number-slider
+    default: 25
+    format: "%"
+    min: 0
+    max: 100
+    step: 10
+  - title: H6 Underline Width
+    id: h6-border-line-width
+    type: variable-number-slider
+    default: 0
+    format: "%"
+    min: 0
+    max: 100
+    step: 10
+  - title: Hide Underlines
+    description: Remove specific heading underlines.
+    id: ITS-Header-Underlines-Hide-Specific
+    type: heading
+    level: 5
+    collapsed: true
+  - title: Hide H1 Underline
+    id: hide-header-underline-1
+    type: class-toggle
+    default: false
+  - title: Hide H2 Underline
+    id: hide-header-underline-2
+    type: class-toggle
+    default: false
+  - title: Hide H3 Underline
+    id: hide-header-underline-3
+    type: class-toggle
+    default: false
+  - title: Hide H4 Underline
+    id: hide-header-underline-4
+    type: class-toggle
+    default: false
+  - title: Hide H5 Underline
+    id: hide-header-underline-5
+    type: class-toggle
+    default: false
+  - title: Hide H6 Underline
+    id: hide-header-underline-6
+    type: class-toggle
+    default: false
+  - title: Underline Colors
+    description: Change colors for specific heading underlines.
+    id: ITS-Header-Underlines-Colors-Specific
+    type: heading
+    level: 5
+    collapsed: true
+  - title: Heading 1 Line Color
+    id: h1-border-line-color
+    type: variable-themed-color
+    format: hex
+    default-dark: "#912e2e"
+    default-light: "#bb5555"
+  - title: Heading 2 Line Color
+    id: h2-border-line-color
+    type: variable-themed-color
+    format: hex
+    default-dark: "#c14343"
+    default-light: "#c14343"
+  - title: Heading 3 Line Color
+    id: h3-border-line-color
+    type: variable-themed-color
+    format: hex
+    default-dark: "#bf5e5e"
+    default-light: "#ce6d6d"
+  - title: Heading 4 Line Color
+    id: h4-border-line-color
+    type: variable-themed-color
+    format: hex
+    default-dark: "#61afef"
+    default-light: "#5599d0"
+  - title: Heading 5 Line Color
+    id: h5-border-line-color
+    type: variable-themed-color
+    format: hex
+    default-dark: "#2f3b4d"
+    default-light: "#b5c2d8"
+  - title: Heading 6 Line Color
+    id: h6-border-line-color
+    type: variable-themed-color
+    format: hex
+    default-dark: "#2a2e35"
+    default-light: "#ccd6eb"
+  - title: Links
+    id: ITS-Links
+    type: heading
+    level: 2
+    collapsed: true
+  - title: Link Style
+    id: link-style
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+      - label: Underline
+        value: link-underline
+      - label: Notion Style
+        value: link-notion
+      - label: All Caps
+        value: link-caps
+  - title: Link Font
+    id: link-font
+    type: variable-text
+    default: '"Inter"'
+  - title: Exernal Links Font
+    id: link-external-font
+    type: variable-text
+    default: '"Inter"'
+  - title: Link Font Weights
+    id: link-weight
+    type: variable-number-slider
+    default: 500
+    min: 100
+    max: 900
+    step: 100
+  - title: Lists
+    id: ITS-Lists
+    type: heading
+    level: 2
+    collapsed: true
+  - title: Default Bullet Disc Shape
+    id: list-default-bullet
+    type: class-toggle
+  - title: Colorful Bullet Color
+    description: Toggle on to use colorful bullets
+    id: list-bullet-color
+    type: class-toggle
+  - title: Colorful Bullet Lines
+    description: Toggle on to use colorful bullet lines
+    id: list-lines-color
+    type: class-toggle
+  - title: Neon Lines
+    description: Toggle on for lines to have a neon glow effect
+    id: list-neon
+    type: class-toggle
+  - title: Lists / Bullet Adjustments
+    id: ITS-Lists-Lines
+    type: heading
+    level: 3
+    collapsed: true
+  - title: Bullet Shape
+    description: Add quotes around your new bullet. For example "~"
+    id: bullet
+    type: variable-text
+    default: "⬥"
+  - title: Bullet Shape Font
+    id: bullet-font
+    type: variable-text
+    default: '"ITS"'
+  - title: List Line Thickness
+    id: indentation-guide-width
+    type: variable-number-slider
+    default: 2
+    format: px
+    min: 0
+    max: 3
+    step: 1
+  - title: List Root Spacing
+    id: root-list-spacing
+    description: Adjust list margins (ul, ol)
+    type: variable-number-slider
+    default: 10
+    format: px
+    min: 1
+    max: 16
+    step: 1
+  - title: List Spacing
+    description: Adjust list item spacing (li)
+    id: list-spacing
+    type: variable-number-slider
+    default: 1
+    format: px
+    min: 1
+    max: 16
+    step: 1
+  - title: Original Bullet Lines
+    description: Lines appear beside bullet
+    id: list-bullet-side-lines
+    type: class-toggle
+  - title: Alternate Indentation Style
+    id: alternate-indent
+    type: class-toggle
+  - title: Remove Spaced List Styling
+    description: Remove spacing of all bullets if bullets are separated by a new line
+    id: disable-spaced-lists
+    type: class-toggle
+  - title: Checkboxes
+    id: Checkboxes
+    type: heading
+    level: 2
+    collapsed: true
+  - title: Disable Alternate Checkboxes
+    id: alt-chkbx-off
+    type: class-toggle
+  - title: Colorful Task Text
+    description: Add color to the text of the task.
+    id: check-color
+    type: class-toggle
+    default: true
+  - title: Colorful Task Backgrounds
+    description: Add color to the background of the task.
+    id: check-bg
+    type: class-toggle
+    default: true
+  - title: Normal Task Text
+    description: Reapply regular text color and font weight to the text of the task.
+    id: check-text
+    type: class-toggle
+  - title: Restore Checkbox Strike
+    id: check-strike
+    type: class-toggle
+  - title: Advanced Checkbox Strike
+    description: Strike for specific checkbox types.
+    id: Checkbox-Strike-Specific
+    type: heading
+    level: 5
+    collapsed: true
+  - title: "[x] Regular"
+    id: checkbox-strike-regular
+    type: class-toggle
+  - title: "[X] Checked"
+    id: checkbox-strike-checked
+    type: class-toggle
+  - title: "[-] Dropped"
+    id: checkbox-strike-dropped
+    type: class-toggle
+  - title: "[>] Forward"
+    id: checkbox-strike-frwd
+    type: class-toggle
+  - title: "[<] Migrated / Backward"
+    id: checkbox-strike-bkwd
+    type: class-toggle
+  - title: "[D] Defer / Date"
+    id: checkbox-strike-date
+    type: class-toggle
+  - title: "[?] Question"
+    id: checkbox-strike-q
+    type: class-toggle
+  - title: "[/] Half"
+    id: checkbox-strike-half
+    type: class-toggle
+  - title: "[+] Add"
+    id: checkbox-strike-add
+    type: class-toggle
+  - title: "[R] Research"
+    id: checkbox-strike-rsrch
+    type: class-toggle
+  - title: "[!] Important"
+    id: checkbox-strike-imp
+    type: class-toggle
+  - title: "[i] Idea"
+    id: checkbox-strike-idea
+    type: class-toggle
+  - title: "[B] Brainstorm"
+    id: checkbox-strike-brn
+    type: class-toggle
+  - title: "[P] Pro"
+    id: checkbox-strike-pro
+    type: class-toggle
+  - title: "[C] Con"
+    id: checkbox-strike-con
+    type: class-toggle
+  - title: "[Q] Quote"
+    id: checkbox-strike-quot
+    type: class-toggle
+  - title: "[N] Note"
+    id: checkbox-strike-brn
+    type: class-toggle
+  - title: "[b] Bookmark"
+    id: checkbox-strike-book
+    type: class-toggle
+  - title: "[I] Info"
+    id: checkbox-strike-info
+    type: class-toggle
+  - title: "[p] Paraphrase"
+    id: checkbox-strike-para
+    type: class-toggle
+  - title: Callouts
+    id: ITS-Callouts
+    type: heading
+    level: 2
+    collapsed: true
+  - title: Callout Styling
+    id: callout-style
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+      - label: Original Callout Styling
+        value: callout-original
+      - label: Callout Block Styling
+        value: callout-block
+      - label: Callout Alternate Line Styling
+        value: callout-alternate-line
+      - label: Callout Bordered Styling
+        value: callout-bordered
+      #-
+      #   label: Callout Outline Styling
+      #   value: callout-outline
+  - title: Disable ITS Quote Callout Styling
+    id: default-callout-quote
+    type: class-toggle
+  - title: Tags
+    id: Tags
+    type: heading
+    level: 2
+    collapsed: true
+  - title: Colored Text Tags
+    description: Tags appear as just colored text, no background color.
+    id: tag-text
+    type: class-toggle
+  - title: Tag Radius Style
+    id: ITS-Tag-Style
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+      - label: Bubble Tags
+        value: tag-bubble
+      - label: Notion Tags
+        value: tag-notion
+  - title: Outline Tags
+    id: tag-outline
+    type: class-toggle
+  - title: Tag Outline Border Size
+    id: tag-border-width
+    type: variable-number-slider
+    default: 2
+    format: px
+    min: 1
+    max: 4
+    step: 1
+  - title: Tag Font
+    id: tag-font
+    type: variable-text
+    default: '"Inter"'
+  - title: Tables
+    id: ITS-Tables
+    type: heading
+    level: 2
+    collapsed: true
+  - title: Alternating Background Colors
+    id: ITS-Table-Alt-Colors
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+      - label: Original Alternating Background
+        value: tables-alt-original
+      - label: No Alternating Backgrounds
+        value: tables-no-alt-background
+      - label: No Alt Column Background
+        value: tables-no-alt-column-background
+      - label: No Alt Row Background
+        value: tables-no-alt-row-background
+  - title: Table Styling
+    id: ITS-Table-Styling
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+      - label: Add Table Borders
+        value: tables-borders
+      - label: Dark and Bold First Column
+        value: table
+      - label: Wikipedia
+        value: tables-style-wikipedia
+  - title: Center Tables
+    description: Center tables to middle of page
+    id: tables-center
+    type: class-toggle
+  - title: Wide Table
+    description: Tables widened to touch ends of the page
+    id: tables-wide
+    type: class-toggle
+  - title: Unwrap Table
+    description: Unwrap tables in source mode
+    id: table-unwrap
+    type: class-toggle
+  - title: Disable Row Hover Highlight
+    id: tables-no-hover
+    type: class-toggle
+  - title: Table Header Adjustments
+    id: ITS-Table-Header-Adj
+    type: heading
+    level: 3
+    collapsed: true
+  - title: Table Header Height Padding
+    id: table-header-padding-y
+    type: variable-number-slider
+    format: px
+    default: 4
+    min: 0
+    max: 20
+    step: 1
+  - title: Table Header Width Padding
+    id: table-header-padding-x
+    type: variable-number-slider
+    format: px
+    default: 10
+    min: 0
+    max: 20
+    step: 1
+  - title: Table Header Font Size
+    id: table-header-size
+    type: variable-number-slider
+    format: px
+    default: 16
+    min: 12
+    max: 30
+    step: 1
+  - title: Table Header Font Weight
+    id: table-header-weight
+    type: variable-number-slider
+    default: 800
+    min: 100
+    max: 900
+    step: 100
+  - title: Table Cell Adjustments
+    id: ITS-Table-Cell-Adj
+    type: heading
+    level: 3
+    collapsed: true
+  - title: Table Cell Height Padding
+    id: table-cell-padding-y
+    type: variable-number-slider
+    format: px
+    default: 4
+    min: 0
+    max: 20
+    step: 1
+  - title: Table Cell Width Padding
+    id: table-cell-padding-x
+    type: variable-number-slider
+    format: px
+    default: 10
+    min: 0
+    max: 20
+    step: 1
+  - title: Table Cell Font Size
+    id: table-text-size
+    type: variable-number-slider
+    format: px
+    default: 16
+    min: 12
+    max: 30
+    step: 1
+  #-
+  #    title: Table Cell Font Weight
+  #    id: table-text-weight
+  #    type: variable-number-slider
+  #    default: 500
+  #    min: 100
+  #    max: 900
+  #    step: 100
+  - title: Horizontal Line
+    id: ITS-HR-Line
+    type: heading
+    level: 2
+    collapsed: true
+  - title: Horizontal Line Centered Vertically
+    id: hr-center-vertically
+    type: class-toggle
+  - title: Horizontal Line Height
+    id: hr-thickness
+    type: variable-number-slider
+    default: 2
+    format: px
+    min: 0
+    max: 5
+    step: 1
+  - title: Horizontal Line Width
+    id: hr-width
+    type: variable-number-slider
+    default: 100
+    format: "%"
+    min: 0
+    max: 100
+    step: 10
+  - title: Horizontal Line Width Auto
+    id: hr-width
+    type: class-toggle
+  - title: No Horizontal Line Symbol
+    description: Hide the horizontal Line Symbol entirely
+    id: hr-no-icon
+    type: class-toggle
+  - title: Horizontal Line Symbol
+    id: ITS-HR-Line-Symbol
+    type: heading
+    level: 3
+    collapsed: true
+  - title: Horizontal Line Symbol
+    description: Add quotations around symbol ("⚡"). Use the codepoint for symbols from supported font icons ("\e800").
+    id: hr-icon-symbol
+    type: variable-text
+    default: '"⚡"'
+  - title: Horizontal Line Symbol Fonts
+    description: Font Icons. Default font aligns emojis.
+    id: hr-icon-font
+    type: variable-select
+    default: its
+    options:
+      - its
+      - Material Icons Sharp
+      - remixicon
+      - fa5
+      - default-font
+  - title: Horizontal Line Symbol Padding
+    id: hr-icon-padding-x
+    type: variable-number-slider
+    default: 4
+    format: px
+    min: 0
+    max: 10
+    step: 1
+  - title: Embeds
+    id: ITS-Embeds
+    type: heading
+    level: 2
+    collapsed: true
+  - title: Clean Embeds
+    description: Embeds that look like they're part of the note.
+    id: embed-clean
+    type: class-toggle
+  - title: Dark Background Embeds
+    id: embed-dark-background
+    type: class-toggle
+  - title: Embed Heading Minified
+    description: Shrink embed headers
+    id: embed-mini-headers
+    type: class-toggle
+  - title: Canvas
+    id: ITS-Canvas
+    type: heading
+    level: 2
+    collapsed: true
+  - title: Canvas Cards Styling
+    id: canvas-cards
+    type: class-toggle
+  - title: Milanote Styling
+    id: canvas-milanote
+    type: class-toggle
+  - title: Canvas Arrow Coloful Text
+    id: canvas-arrow-text-color
+    description: Make text on canvas arrows match the color of the arrows
+    type: class-toggle
+  - title: Canvas Card Background Color Brightness
+    id: canvas-color-opacity
+    type: variable-number-slider
+    default: 0.07
+    format: ""
+    min: 0.04
+    max: 0.18
+    step: .02
+  - title: Properties / Metadata
+    id: ITS-Metadata
+    type: heading
+    level: 2
+    collapsed: true
+  - title: Metadata Key Font Size
+    id: metadata-label-font-size
+    type: variable-number-slider
+    default: .9
+    format: em
+    min: .4
+    max: 1.5
+    step: .1
+  - title: Metadata Value Font Size
+    id: metadata-input-font-size
+    type: variable-number-slider
+    default: .9
+    format: em
+    min: .4
+    max: 1.5
+    step: .1
+  - title: Metadata Key Width
+    id: metadata-label-width
+    type: variable-number-slider
+    default: 9
+    format: em
+    min: 8
+    max: 15
+    step: 1
+  - title: Metadata Colorful Label Styling
+    id: select
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+      - label: Text Color
+        value: metadata-label-text-color
+      - label: Label Background
+        value: metadata-label-background
+  - title: Metadata Value Background
+    id: metadata-value-background
+    type: class-toggle
+  - title: Metadata Title Positions
+    id: metadata-title-align
+    type: variable-select
+    allowEmpty: true
+    default: center
+    options:
+      - left
+      - center
+      - right
+  - title: Metadata Title No Icon
+    id: metadata-title-no-icon
+    type: class-toggle
+  - title: Colors
+    id: ITS-Colors
+    type: heading
+    level: 1
+    collapsed: true
+  - title: Text
+    id: ITS-Colors-Text
+    type: heading
+    level: 2
+    collapsed: true
+  - title: Text
+    id: text
+    type: variable-themed-color
+    format: hex
+    default-dark: "#bccad8"
+    default-light: "#697580"
+  - title: Soft Text
+    id: soft-text
+    type: variable-themed-color
+    format: hex
+    default-dark: "#aab3ca"
+    default-light: "#d04e4e"
+  - title: Faint Text
+    id: text-faint
+    type: variable-themed-color
+    format: hex
+    default-dark: "#4e5b6f"
+    default-light: "#4e5b6f"
+  - title: File Explorer Titles
+    description: File/Folder text color.
+    id: nav-item-color
+    type: variable-themed-color
+    format: hex
+    default-dark: "#aab3ca"
+    default-light: "#7e8ea3"
+  - title: "`<i></i>` Text"
+    description: "Html `<i></i>` text color."
+    id: i-at
+    type: variable-themed-color
+    format: hex
+    default-dark: "#bf5e5e"
+    default-light: "#c14343"
+  - title: "Math Text Color"
+    description: "Mathjax/Latex color change"
+    id: latex-color
+    type: variable-themed-color
+    format: hex
+    default-dark: "#e06c75"
+    default-light: "#a35158"
+  - title: Workspace
+    description: Recolor some UI colors
+    id: Workspace-Colors
+    type: heading
+    level: 2
+    collapsed: true
+  - title: Note
+    description: Note and sidebar colors.
+    id: note
+    type: variable-themed-color
+    format: hex
+    default-dark: "#1a1e24"
+    default-light: "#f8fbff"
+  - title: Outer Sidebar
+    id: outer-bar
+    type: variable-themed-color
+    format: hex
+    default-dark: "#0e0f15"
+    default-light: "#dfe7ef"
+  - title: Sidebar
+    description: Change only sidebar, right settings pane colors.
+    id: side-bar
+    type: variable-themed-color
+    format: hex
+    default-dark: "#1a1e24"
+    default-light: "#f8fbff"
+  - title: Dark Sidebar
+    description: Left settings bar, <i></i> background, graph background, and pane separator colors.
+    id: dark-sidebar
+    type: variable-themed-color
+    format: hex
+    default-dark: "#10161d"
+    default-light: "#7e8ea3"
+  - title: UI Elements
+    id: Workspace-Colors-Elements
+    type: heading
+    level: 3
+  - title: Button
+    id: bttn
+    type: variable-themed-color
+    format: hex
+    default-dark: "#7c2929"
+    default-light: "#c24747"
+  - title: Sidebar Active Icon Color
+    id: sidebar-icon-color-active
+    type: variable-themed-color
+    format: hex
+    default-dark: "#e5ebee"
+    default-light: "#e5ebee"
+  - title: Sidebar Hover Background Color
+    id: nav-item-background-hover
+    type: variable-themed-color
+    format: hex
+    default-dark: "#7c2929"
+    default-light: "#c24747"
+  - title: File Icon
+    description: File icon color.
+    id: file-icon-color
+    type: variable-themed-color
+    format: hex
+    default-dark: "#586477"
+    default-light: "#a6bbde"
+  - title: Folder Icon
+    description: Folder icon color.
+    id: folder
+    type: variable-themed-color
+    format: hex
+    default-dark: "#883737"
+    default-light: "#c14343"
+  - title: Folder Icon Open
+    description: Open folder icon color.
+    id: folder-open
+    type: variable-themed-color
+    format: hex
+    default-dark: "#e05858"
+    default-light: "#ce6d6d"
+  - title: Scrollbar FG Color
+    description: Scrollbar thumb/foreground color
+    id: scrollbar-thumb-bg
+    type: variable-themed-color
+    format: hex
+    opacity: true
+    default-dark: "#863737"
+    default-light: "rgba(134, 173, 218, 0.157)"
+  - title: Tab Stack Shadow
+    id: tab-stacked-shadow-color
+    type: variable-themed-color
+    format: rgba
+    opacity: true
+    default-dark: "#001c4a15"
+    default-light: "#001c4a15"
+  - title: Popover Background Color
+    id: popover-background
+    type: variable-themed-color
+    format: rgb
+    default-dark: "#1a1e24"
+    default-light: "#f8fbff"
+  - title: Note Elements
+    id: Note-Element-Colors
+    type: heading
+    level: 2
+    collapsed: true
+  - title: Headers / Headings
+    id: ITS-Colors-Headings
+    type: heading
+    level: 3
+  - title: Headings
+    description: Heading (Vault, etc) Color
+    id: headers
+    type: variable-themed-color
+    format: hex
+    default-dark: "#c14343"
+    default-light: "#d04e4e"
+  - title: Tags
+    id: ITS-Colors-Tags
+    type: heading
+    level: 3
+  - title: Tag Background
+    id: tag
+    type: variable-themed-color
+    format: hex
+    default-dark: "#571a1a"
+    default-light: "#c65656"
+  - title: Tag Text Color
+    id: tag-color
+    type: variable-themed-color
+    format: hex
+    default-dark: "#e5ebee"
+    default-light: "#e5ebee"
+  - title: Lists
+    id: ITS-Colors-Lists
+    type: heading
+    level: 3
+  - title: Bullet Color
+    id: list-marker-color
+    type: variable-themed-color
+    format: hex
+    default-dark: "#883737"
+    default-light: "#c14343"
+  - title: Number Color
+    id: list-numbered-color
+    type: variable-themed-color
+    format: hex
+    default-dark: "#883737"
+    default-light: "#c14343"
+  - title: List Line Color
+    id: indentation-guide-color
+    type: variable-themed-color
+    format: hex
+    default-dark: "#283846"
+    default-light: "#ccd6eb"
+  - title: Blockquote
+    id: ITS-Colors-Blockquotes
+    type: heading
+    level: 3
+  - title: Embed/Blockquote
+    description: Embed/Blockquote color.
+    id: embed-bg
+    type: variable-themed-color
+    format: hex
+    default-dark: "#10161d"
+    default-light: "#f1f5ff"
+  - title: Blockquote Border
+    description: Blockquote Border color.
+    id: blockquote-border-color
+    type: variable-themed-color
+    format: hex
+    default-dark: "#252c36"
+    default-light: "#dde4ef"
+  - title: Code
+    id: ITS-Colors-Code
+    type: heading
+    level: 3
+  - title: Code Background
+    id: code-bg
+    type: variable-themed-color
+    format: hex
+    default-dark: "#232831"
+    default-light: "#eef6ff"
+  - title: Code Text
+    id: code-text
+    type: variable-themed-color
+    format: hex
+    default-dark: "#fa4545"
+    default-light: "#ea4262"
+  - title: Horizontal Line
+    id: ITS-Colors-HR
+    type: heading
+    level: 3
+  - title: HR Border Line
+    id: hr
+    type: variable-themed-color
+    format: hex
+    default-dark: "#3c5274"
+    default-light: "#d6deea"
+  - title: HR Icon
+    id: hr-icon-color
+    type: variable-themed-color
+    format: hex
+    default-dark: "#883737"
+    default-light: "#c14343"
+  - title: Progress Bar
+    id: ITS-Colors-Progress-Bar
+    type: heading
+    level: 3
+  - title: Progress Bar Value Color
+    description: HTML <progress> value color
+    id: progress
+    type: variable-themed-color
+    format: hex
+    default-dark: "#863737"
+    default-light: "#912e2e"
+  - title: Progress Bar Background Color
+    description: HTML <progress> value color
+    id: progress
+    type: variable-themed-color
+    format: hex
+    default-dark: "#252c36"
+    default-light: "#e1e9f6"
+  - title: Tables
+    id: ITS-Colors-Tables
+    type: heading
+    level: 3
+  - title: Table Header BG Color
+    id: th
+    type: variable-themed-color
+    format: hex
+    default-dark: "#652121"
+    default-light: "#c14343"
+  - title: Table Header Text Color
+    id: th-text
+    type: variable-themed-color
+    format: hex
+    default-dark: "#e5ebee"
+    default-light: "#e5ebee"
+  - title: Table Header Text Edit Color
+    id: table-header-text-color
+    type: variable-themed-color
+    format: hex
+    default-dark: "#e06c75"
+    default-light: "#a35158"
+  - title: Table Alt Row Colors
+    description: Alternating row/column color for table.
+    id: td
+    type: variable-themed-color
+    format: rgb
+    opacity: true
+    default-dark: "#06080c60"
+    default-light: "#d0ddef62"
+  - title: Table Border Line Colors
+    id: table-border-color
+    type: variable-themed-color
+    format: hex
+    default-dark: "#3c5274"
+    default-light: "#d6deea"
+  - title: Other Elements
+    id: ITS-Colors-Others
+    type: heading
+    level: 3
+  - title: Comments
+    id: code-comment
+    type: variable-themed-color
+    format: hex
+    default-dark: "#4e5b6f"
+    default-light: "#4e5b6f"
+  - title: Footnotes
+    id: footnote
+    type: variable-themed-color
+    format: hex
+    default-dark: "#6e7e89"
+    default-light: "#8996a0"
+  - title: Aside Background Color
+    id: aside-bg
+    description: Aside background color and dark theme setting alternating setting item color.
+    type: variable-themed-color
+    format: hex
+    default-dark: "#11151d"
+    default-light: "#f1f5ff"
+  - title: Other
+    id: Other-Colors
+    type: heading
+    level: 2
+    collapsed: true
+  - title: Accent
+    id: accent
+    type: variable-themed-color
+    format: hex
+    default-dark: "#883737"
+    default-light: "#c14343"
+  - title: Lite Accent
+    id: lite-accent
+    type: variable-themed-color
+    format: hex
+    default-dark: "#e06c75"
+    default-light: "#a35158"
+  - title: Accent 2
+    id: accent2
+    type: variable-themed-color
+    format: hex
+    default-dark: "#3c5274"
+    default-light: "#d6deea"
+  - title: Lite Accent 2
+    description: Link color.
+    id: accent2-lite
+    type: variable-themed-color
+    format: hex
+    default-dark: "#61afef"
+    default-light: "#5599d0"
+  - title: Dark Accent
+    id: dark-accent
+    type: variable-themed-color
+    format: hex
+    default-dark: "#652121"
+    default-light: "#c35c5c"
+  - title: Deep Dark Accent
+    id: deep-dark-accent
+    type: variable-themed-color
+    format: hex
+    default-dark: "#3f1010"
+    default-light: "#2f1010"
+  - title: Inactive
+    description: Inactive note; file text; unresolved and external link, editor and external link hover; and mermaid text color.
+    id: inactive
+    type: variable-themed-color
+    format: hex
+    default-dark: "#586477"
+    default-light: "#a6bbde"
+  - title: Background
+    description: Scrollbar background color
+    id: bg
+    type: variable-themed-color
+    format: hex
+    default-dark: "#252c36"
+    default-light: "#dde4ef"
+  - title: Lines
+    description: Explorer, heading, input box, settings, frontmatter, and mermaidjs lines
+    id: lines
+    type: variable-themed-color
+    format: hex
+    default-dark: "#283846"
+    default-light: "#ccd6eb"
+  - title: Outline
+    id: outline
+    type: variable-themed-color
+    format: hex
+    default-dark: "#cfd7dd"
+    default-light: "#912e2e"
+  - title: Foreground
+    description: Active file selected title color, Graph Node Color, Kanban Plugin Button color.
+    id: fg
+    type: variable-themed-color
+    format: hex
+    default-dark: "#cfd7dd"
+    default-light: "#912e2e"
+  - title: Rainbows
+    id: ITS-Rainbows
+    type: heading
+    level: 2
+    collapsed: true
+  - title: Theme Rainbows
+    description: Illusion Header BG, Style Settings Colors, List Lines
+    id: ITS-Rainbows-Theme
+    type: heading
+    level: 3
+    collapsed: true
+  - title: Theme Rainbow 1
+    id: theme-rainbow-1
+    type: variable-themed-color
+    format: hex
+    default-dark: "#7c2929"
+    default-light: "#bb5555"
+  - title: Theme Rainbow 2
+    id: theme-rainbow-2
+    type: variable-themed-color
+    format: hex
+    default-dark: "#652121"
+    default-light: "#a53f3f"
+  - title: Theme Rainbow 3
+    id: theme-rainbow-3
+    type: variable-themed-color
+    format: hex
+    default-dark: "#471d1d"
+    default-light: "#862c2c"
+  - title: Theme Rainbow 4
+    id: theme-rainbow-4
+    type: variable-themed-color
+    format: hex
+    default-dark: "#381919"
+    default-light: "#662828"
+  - title: Theme Rainbow 5
+    id: theme-rainbow-5
+    type: variable-themed-color
+    format: hex
+    default-dark: "#424c61"
+    default-light: "#697795"
+  - title: Theme Rainbow 6
+    id: theme-rainbow-6
+    type: variable-themed-color
+    format: hex
+    default-dark: "#2e333d"
+    default-light: "#a4aec2"
+  - title: Rainbow
+    id: ITS-Rainbows-Rainbow
+    type: heading
+    level: 3
+  - title: Rainbow 1
+    id: theme-rainbow-1
+    type: variable-themed-color
+    format: hex
+    default-dark: "#b03a3a"
+    default-light: "#dd3c3c"
+  - title: Rainbow 2
+    id: theme-rainbow-2
+    type: variable-themed-color
+    format: hex
+    default-dark: "#d59929"
+    default-light: "#f1ab27"
+  - title: Rainbow 3
+    id: theme-rainbow-3
+    type: variable-themed-color
+    format: hex
+    default-dark: "#207a20"
+    default-light: "#118811"
+  - title: Rainbow 4
+    id: theme-rainbow-4
+    type: variable-themed-color
+    format: hex
+    default-dark: "#3232c5"
+    default-light: "#3333cc"
+  - title: Rainbow 5
+    id: theme-rainbow-5
+    type: variable-themed-color
+    format: hex
+    default-dark: "#7f307f"
+    default-light: "#a824a8"
+  - title: Rainbow 6
+    id: theme-rainbow-6
+    type: variable-themed-color
+    format: hex
+    default-dark: "#dd4794"
+    default-light: "#e83b94"
+  - title: Highlights
+    id: RGBA
+    type: heading
+    level: 2
+    collapsed: true
+  - title: Text Highlight
+    description: Markdown mark highlight color.
+    id: text-highlight-bg
+    type: variable-themed-color
+    format: rgb
+    opacity: true
+    default-dark: "#7a141466"
+    default-light: "rgba(229, 149, 149, 0.37)"
+  - title: Text Selection
+    description: Cursor selection highlight color.
+    id: highlight
+    type: variable-themed-color
+    format: rgb
+    opacity: true
+    default-dark: "#7a141466"
+    default-light: "rgba(229, 149, 149, 0.37)"
+  - title: Search Highlight
+    id: text-highlight-bg-active
+    type: variable-themed-color
+    format: rgb
+    opacity: true
+    default-dark: "#fd737340"
+    default-light: "#fd737340"
+  - title: Hover Color
+    id: hvr
+    type: variable-themed-color
+    format: rgb
+    opacity: true
+    default-dark: "rgba(168, 60, 60, 0.4)"
+    default-light: "rgba(255, 0, 0, 0.212)"
+  - title: Hover Active color
+    id: hvr-active
+    type: variable-themed-color
+    format: rgb
+    opacity: true
+    default-dark: "rgba(212, 47, 47, 0.4)"
+    default-light: "rgba(253, 115, 115, 0.4)"
+  #-
+  #    title: Search 2
+  #    description: Search match highlight and background transparent color for settings.
+  #    id: background-modifier-form-field-highlighted
+  #    type: variable-themed-color
+  #    format: rgb
+  #    opacity: true
+  #    default-dark: '#347bed22'
+  #    default-light: '#f0838322'
+  #-
+  #    title: Text Selection
+  #    description: Cursor dragged highlights
+  #    id: text-selection
+  #    type: variable-themed-color
+  #    format: rgb
+  #    opacity: true
+  #    default-dark: '#4d171746'
+  #    default-light: '#e5959537'
+  - title: Graph Colors
+    id: Graph
+    type: heading
+    level: 2
+    collapsed: true
+  - title: Graph Background
+    id: graph-bg
+    type: variable-themed-color
+    format: hex
+    default-dark: "#0b0f13"
+    default-light: "#eef3fd"
+  - title: Graph Lines
+    id: graph-lines
+    type: variable-themed-color
+    format: hex
+    default-dark: "#571a1a"
+    default-light: "#e4e7f8"
+  - title: Graph Node
+    id: graph-node
+    type: variable-themed-color
+    format: hex
+    default-dark: "#cfd7dd"
+    default-light: "#c14343"
+  - title: Graph Current Node
+    id: graph-focused
+    type: variable-themed-color
+    format: hex
+    opacity: true
+    default-dark: "#fd737366"
+    default-light: "#fd737366"
+  - title: Graph Attachment
+    id: graph-img
+    type: variable-themed-color
+    format: hex
+    default-dark: "#4c78cc"
+    default-light: "#4c78cc"
+  - title: Graph Tags
+    id: graph-tag
+    type: variable-themed-color
+    format: hex
+    default-dark: "#c14343"
+    default-light: "#000000"
+  - title: Plugins
+    id: ITS-Plugins
+    type: heading
+    level: 1
+    collapsed: true
+  - title: Disable ITS Styled Statblocks
+    id: default-statblock
+    type: class-toggle
+  - title: Breadcrumbs Box Style
+    id: breadcrumbs-block
+    type: class-toggle
+  - title: Meta Bind Auto Size Fields
+    id: metabind-auto
+    type: class-toggle
+  - title: Dataview
+    id: ITS-Plugins-Dataview
+    type: heading
+    level: 2
+    collapsed: true
+  - title: Dataview Regular Styled Tables
+    id: dataview-regular-table
+    type: class-toggle
+  - title: Auto Sized Dataview Tables
+    id: dataview-table-auto
+    type: class-toggle
+  - title: Kanban Adjustments
+    id: ITS-Plugins-Kanban
+    type: heading
+    level: 2
+    collapsed: true
+  - title: Boxed Style
+    id: kanban-boxed
+    type: class-toggle
+  - title: Minimal Style
+    id: kanban-minimal
+    type: class-toggle
+  - title: Kanban Center Titles
+    id: kanban-title-center
+    type: class-toggle
+  - title: Alternate Color Schemes
+    id: ITS-Alt-Color-Scheme
+    type: heading
+    level: 1
+    collapsed: true
+  - title: Accent Color
+    description: Use the Obsidian accent color picker in the Appearance tab as theme color
+    id: accent-color
+    type: class-toggle
+  - title: SlRvb Blue
+    id: slrvb-b
+    type: class-toggle
+  - title: SlRvb Gray
+    id: slrvb-g
+    type: class-toggle
+  - title: School Days
+    id: s-d
+    type: class-toggle
+  - title: TTRPG
+    id: select
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+      - label: SlRvb D&D
+        value: dnd
+      - label: WOTC/Beyond
+        value: wotc-beyond
+      - label: Pathfinder
+        value: pathfinder
+      - label: Pathfinder Remaster
+        value: pathfinder-remaster
+  - title: Tangerine Dunes
+    id: t-d
+    type: class-toggle
+  - title: Drowned
+    id: drwn
+    type: class-toggle
+  - title: Nord
+    id: nord
+    type: class-toggle
+  - title: Minimalist
+    id: mini
+    type: class-toggle
+  - title: Notion
+    id: notion
+    type: class-toggle
+  #    -
+  #        title: Nebula
+  #        id: nebula
+  #        type: class-toggle
+  #    -
+  #        title: Adventure
+  #        id: advt
+  #        type: class-toggle
+  - title: ITS Dark
+    id: its-d
+    type: class-toggle

@@ -1,0 +1,70 @@
+name: Gummy Revived
+id: winnerwind-gummy-revived
+settings:
+  - id: gradients-title
+    title: Gradients in Headings
+    type: heading
+    level: 3
+
+  - id: chalk-grey
+    title: Headings base color
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: "#686868"
+    default-dark: "#dddddd"
+
+  - id: chalk-grey-accent
+    title: Headings middle Color
+    type: variable-themed-color
+    format: hex
+    default-light: "#636363"
+    default-dark: "#cbcbcb"
+
+  - id: h1-gradient-accent
+    title: H1 Accent Colour
+    type: variable-themed-color
+    format: hex
+    opacity: true
+    default-light: "#5968fb"
+    default-dark: "#bec4ff"
+
+  - id: h2-gradient-accent
+    title: H2 Accent Colour
+    type: variable-themed-color
+    format: hex
+    opacity: true
+    default-light: "#3372ca"
+    default-dark: "#9ac0ff"
+
+  - id: h3-gradient-accent
+    title: H3 Accent Colour
+    type: variable-themed-color
+    format: hex
+    opacity: true
+    default-light: "#6f33ca"
+    default-dark: "#b999e8"
+
+  - id: h4-gradient-accent
+    title: H4 Accent Colour
+    type: variable-themed-color
+    format: hex
+    opacity: true
+    default-light: "#ca3393"
+    default-dark: "#f088ca"
+
+  - id: h5-gradient-accent
+    title: H5 Accent Colour
+    type: variable-themed-color
+    format: hex
+    opacity: true
+    default-light: "#262cda"
+    default-dark: "#8e91eb"
+
+  - id: h6-gradient-accent
+    title: H6 Accent Colour
+    type: variable-themed-color
+    format: hex
+    opacity: true
+    default-light: "#f21bf6"
+    default-dark: "#e990eb"

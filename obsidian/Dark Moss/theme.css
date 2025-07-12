@@ -70,7 +70,8 @@ body .modal {
   --text-title-h6: #ff3cd5;
 
   --font-weight-title: 600;
-  --font-monospace: "Consolas", "Fira Code", "Source Code Pro", "Droid Sans Mono", "Monoid",
+  --font-monospace:
+    "Consolas", "Fira Code", "Source Code Pro", "Droid Sans Mono", "Monoid",
     "Arial", sans-serif;
   --line-height-headers: 1;
   --file-line-width: 1000px;
@@ -262,7 +263,8 @@ code[class*="language-"] {
   }
   */
 /* width of content editor */
-.markdown-source-view.mod-cm6.is-readable-line-width:not(.is-rtl) .cm-contentContainer {
+.markdown-source-view.mod-cm6.is-readable-line-width:not(.is-rtl)
+  .cm-contentContainer {
   max-width: 1000px;
   /*  margin-right: auto; */
 }
@@ -271,7 +273,8 @@ code[class*="language-"] {
   max-width: 1000px;
 }
 
-.markdown-source-view.mod-cm6.is-line-wrap.is-readable-line-width .cm-line:not(.HyperMD-table-row) {
+.markdown-source-view.mod-cm6.is-line-wrap.is-readable-line-width
+  .cm-line:not(.HyperMD-table-row) {
   max-width: 1000px;
 }
 

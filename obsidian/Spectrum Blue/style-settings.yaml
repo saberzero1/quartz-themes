@@ -1,0 +1,22 @@
+name: Obsidian Ultima
+id: Obsidian_Ultima
+settings:
+  - id: body
+    title: Body
+    type: heading
+    level: 3
+  - id: font-text
+    title: Text Color
+    type: variable-color
+    format: hsl-split
+    default: "#007AFF"
+  - id: text_font
+    title: UI font
+    description: Font used for the user interface
+    type: variable-text
+    default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif
+  - id: eis-with-icons
+    title: Show icons in sidebar
+    description: When activated files and folders icons will be visible
+    type: class-toggle
+    default: true

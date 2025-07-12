@@ -1,0 +1,400 @@
+name: Minimalists Paradise
+id: mp-theme
+settings:
+  - id: color-accent-theme
+    title: theme color accent override
+    type: heading
+    level: 1
+    collapsed: true
+
+  - id: custom-color-accent-light-toggle
+    title: enable light theme color accent override?
+    type: class-toggle
+    default: false
+
+  - id: custom-color-accent-light
+    title: custom light theme color accent
+    type: variable-color
+    format: hex
+    default: "#a0a6a7"
+    condition:
+      - id: custom-color-accent-light-toggle
+        value: true
+
+  - id: custom-color-accent-dark-toggle
+    title: enable dark theme color accent override?
+    type: class-toggle
+    default: false
+
+  - id: custom-color-accent-dark
+    title: custom dark theme color accent
+    type: variable-color
+    format: hex
+    default: "#68686e"
+    condition:
+      - id: custom-color-accent-dark-toggle
+        value: true
+
+  - id: theme-colors
+    title: main colors
+    type: heading
+    level: 1
+    collapsed: true
+
+  - id: background-primary
+    title: primary background
+    type: variable-themed-color
+    format: hex
+    default-light: "#A5AAAE"
+    default-dark: "#000000"
+    variable: background-primary
+
+  - id: color-panel
+    title: cards background
+    type: variable-themed-color
+    format: hex
+    default-light: "#a5aab6"
+    default-dark: "#0c0c0c"
+    variable: color-panel
+
+  - id: card-border-color
+    title: card border color
+    type: variable-themed-color
+    format: hex
+    default-light: "#252525c3"
+    default-dark: "#4d4d4f"
+    variable: card-border-color
+
+  - id: colored-headers-title
+    title: colored headers
+    type: heading
+    level: 1
+    collapsed: true
+
+  - id: colored-headers
+    title: enable colored headers?
+    type: class-toggle
+    class: colored-headers
+    default: false
+
+  - id: colored-headers-scheme
+    title: header color scheme
+    type: class-select
+    default: colored-headers-grey
+    options:
+      - label: grey headers
+        value: colored-headers-grey
+      - label: blue headers
+        value: colored-headers-blue
+      - label: custom headers
+        value: colored-headers-custom
+      - label: purple headers
+        value: colored-headers-purple
+      - label: green headers
+        value: colored-headers-green
+      - label: orange headers
+        value: colored-headers-orange
+      - label: red headers
+        value: colored-headers-red
+      - label: pink headers
+        value: colored-headers-pink
+
+  - id: colored-headers-custom-configs
+    title: custom header colors
+    type: heading
+    level: 2
+    collapsed: true
+    condition:
+      - id: colored-headers-scheme
+        value: colored-headers-custom
+      - id: colored-headers-toggle
+        value: true
+    settings:
+      - id: header-1-custom
+        title: header 1 color
+        type: variable-themed-color
+        default-dark: #474E5C
+        default-light: #2C313A
+      - id: header-2-custom
+        title: header 2 color
+        type: variable-themed-color
+        default-dark: #5E6573
+        default-light: #3D4450
+      - id: header-3-custom
+        title: header 3 color
+        type: variable-themed-color
+        default-dark: #787F8D
+        default-light: #4F5867
+      - id: header-4-custom
+        title: header 4 color
+        type: variable-themed-color
+        default-dark: #979DAA
+        default-light: #61707F
+      - id: header-5-custom
+        title: header 5 color
+        type: variable-themed-color
+        default-dark: #B7BCC9
+        default-light: #7A8A99
+      - id: header-6-custom
+        title: header 6 color
+        type: variable-themed-color
+        default-dark: #D8DCE6
+        default-light: #95A5B2
+
+  - id: graph-view-style
+    title: graph view
+    type: heading
+    level: 1
+    collapsed: true
+
+  - id: graph-bg
+    title: graph view background
+    type: variable-themed-color
+    format: hex
+    default-light: "#a5aaae"
+    default-dark: "#0c0c0c"
+    variable: graph-bg
+
+  - id: graph-line-color
+    title: graph view line color
+    type: variable-themed-color
+    format: hex
+    default-light: "#6767672c"
+    default-dark: "#4d4d4f"
+    variable: graph-line-color
+
+  - id: syntax-colors
+    title: syntax colors
+    type: heading
+    level: 1
+    collapsed: true
+
+  - id: syntax-keyword
+    title: keywords (def, return, if...)
+    type: variable-themed-color
+    format: hex
+    default-dark: "#552B79"
+    default-light: "#552B79"
+    variable: syntax-keyword
+
+  - id: syntax-def
+    title: definitions (funções, etc)
+    type: variable-themed-color
+    format: hex
+    default-dark: "#69EED7"
+    default-light: "#69EED7"
+    variable: syntax-def
+
+  - id: syntax-variable
+    title: default variables
+    type: variable-themed-color
+    format: hex
+    default-dark: "#558FC7"
+    default-light: "#558FC7"
+    variable: syntax-variable
+
+  - id: syntax-variable-2
+    title: parameters and arguments
+    type: variable-themed-color
+    format: hex
+    default-dark: "#4186B6"
+    default-light: "#4186B6"
+    variable: syntax-variable-2
+
+  - id: syntax-variable-3
+    title: special variables and objects
+    type: variable-themed-color
+    format: hex
+    default-dark: "#C689E3"
+    default-light: "#C689E3"
+    variable: syntax-variable-3
+
+  - id: syntax-string
+    title: strings
+    type: variable-themed-color
+    format: hex
+    default-dark: "#BE4AA0"
+    default-light: "#BE4AA0"
+    variable: syntax-string
+
+  - id: syntax-number
+    title: numbers
+    type: variable-themed-color
+    format: hex
+    default-dark: "#9795EE"
+    default-light: "#9795EE"
+    variable: syntax-number
+
+  - id: syntax-comment
+    title: comments
+    type: variable-themed-color
+    format: hex
+    default-dark: "#16486D"
+    default-light: "#16486D"
+    variable: syntax-comment
+
+  - id: syntax-builtin
+    title: built-in functions (print, len...)
+    type: variable-themed-color
+    format: hex
+    default-dark: "#2D76E9"
+    default-light: "#2D76E9"
+    variable: syntax-builtin
+
+  - id: syntax-operator
+    title: operators (+, =, -...)
+    type: variable-themed-color
+    format: hex
+    default-dark: "#6852B3"
+    default-light: "#6852B3"
+    variable: syntax-operator
+
+  - id: syntax-property
+    title: properties (obj.metodo())
+    type: variable-themed-color
+    format: hex
+    default-dark: "#4A6BDB"
+    default-light: "#4A6BDB"
+    variable: syntax-property
+
+  - id: syntax-default-text
+    title: default text code color
+    type: variable-themed-color
+    format: hex
+    default-dark: "#eeeeee"
+    default-light: "#eeeeee"
+    variable: syntax-default-text
+
+  - id: syntax-border
+    title: code block border color
+    type: variable-themed-color
+    format: hex
+    default-dark: "#A0A6A7"
+    default-light: "#A0A6A7"
+    variable: syntax-border
+
+  # --- Font settings section ---
+  - id: font-settings
+    title: fonts
+    type: heading
+    level: 1
+    collapsed: true
+
+  - id: default-font
+    title: default font
+    type: variable-text
+    default: "'Times New Roman', Times, serif"
+    variable: default-font
+
+  - id: code-font
+    title: code font
+    type: variable-text
+    default: "'Fira Code', 'JetBrains Mono', monospace"
+    variable: code-font
+
+  - id: default-font-size
+    title: font size
+    type: variable-number-slider
+    default: 16
+    min: 10
+    max: 24
+    step: 1
+    format: px
+    variable: default-font-size
+
+  - id: blockquote-styles
+    title: blockquote styles
+    type: heading
+    level: 1
+    collapsed: true
+
+  - id: blockquote-bg
+    title: blockquote background color
+    type: variable-themed-color
+    format: hex
+    default-light: "#f9f9f9"
+    default-dark: "#0c0c0c"
+    variable: blockquote-bg
+
+  - id: blockquote-border-color
+    title: blockquote border color
+    type: variable-themed-color
+    format: hex
+    default-light: "#252525c3"
+    default-dark: "#4d4d4f"
+    variable: blockquote-border-color
+
+  - id: blockquote-text
+    title: blockquote text color
+    type: variable-themed-color
+    format: hex
+    default-light: "#000000"
+    default-dark: "#ffffff"
+    variable: blockquote-text
+
+  - id: blockquote-radius
+    title: blockquote border radius
+    type: variable-number-slider
+    default: 8
+    min: 0
+    max: 20
+    step: 1
+    format: px
+    variable: blockquote-radius
+
+  - id: citation-bg
+    title: citation background color
+    type: variable-themed-color
+    format: hex
+    default-light: "#68686e"
+    default-dark: "#68686e"
+    variable: citation-bg
+  #name: Minimalists Paradise Extended Color Schemes
+  #id: extended-color-schemes-mp
+  - id: extended-dark-color-schemes-toggle
+    title: enable extended dark color schemes?
+    description: enabling this will override the default dark color scheme with the one choosen below.
+    type: class-toggle
+    default: false
+
+  - id: extended-dark-color-schemes
+    title: extended dark color schemes
+    type: class-select
+    condition:
+      - id: extended-dark-color-schemes-toggle
+        value: true
+    default: onyx
+    options:
+      - label: atlantic
+        value: atlantic
+      - label: abyss
+        value: abyss
+      - label: moss
+        value: moss
+      - label: onyx
+        value: onyx
+
+  - id: extended-light-color-schemes-toggle
+    title: enable extended light color schemes?
+    description: enabling this will override the default light color scheme with the one choosen below.
+    type: class-toggle
+    default: false
+
+  - id: extended-light-color-schemes
+    title: extended light color schemes
+    type: class-select
+    condition:
+      - id: extended-light-color-schemes-toggle
+        value: true
+    default: leaf
+    options:
+      - label: leaf
+        value: leaf
+      - label: sky
+        value: sky
+      - label: fog
+        value: fog
+      - label: red desert
+        value: red-desert
+      - label: violet haze
+        value: violet-haze

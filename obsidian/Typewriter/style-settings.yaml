@@ -1,0 +1,15 @@
+name: Typewriter
+id: obsidian-typewriter
+settings:
+  - id: typewriter-editor
+    title: Editor
+    type: heading
+    level: 2
+  - id: shrink-formatting
+    title: Shrink & fade Markdown formatting symbols
+    type: class-toggle
+    default: on
+  - id: active-line-highlight
+    title: Highlight the active line
+    type: class-toggle
+    default: on

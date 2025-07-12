@@ -23,7 +23,8 @@ body {
   --background-modifier-hover: var(--color-user-request);
   --indentation-guide-color: #ffffff30;
   /*Fonts*/
-  --font-monospace-theme: "JetBrains Mono", "Fira Code", Menlo, SFMono-Regular, Consolas,
+  --font-monospace-theme:
+    "JetBrains Mono", "Fira Code", Menlo, SFMono-Regular, Consolas,
     "Roboto Mono", monospace;
 
   /*Headings*/
@@ -139,7 +140,10 @@ body {
   color: var(--interactive-accent);
 }
 
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+.is-focused
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-title {
   color: var(--interactive-accent);
 }
 
@@ -171,7 +175,8 @@ body {
   /* filter: brightness(75%) */
 }
 
-.nav-folder:not(.mod-root):not(.is-collapsed) .nav-folder-title-content::before {
+.nav-folder:not(.mod-root):not(.is-collapsed)
+  .nav-folder-title-content::before {
   -webkit-mask: var(--open-folder-icon);
 }
 
@@ -186,7 +191,9 @@ body {
   -webkit-mask-image: var(--file-icons-list);
 }
 
-.workspace-leaf-content[data-type="file-explorer"] .nav-file-title .nav-file-title-content::before {
+.workspace-leaf-content[data-type="file-explorer"]
+  .nav-file-title
+  .nav-file-title-content::before {
   margin-right: 4px;
   position: relative;
   content: " ";
@@ -582,10 +589,19 @@ thead {
 /***************************************/
 
 /* Completed checkboxes */
-body.enable-alternative-checkboxes .markdown-preview-view ul > li.task-list-item.is-checked,
-body.enable-alternative-checkboxes .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"],
-body.enable-alternative-checkboxes .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"],
-body.enable-alternative-checkboxes .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="M"] {
+body.enable-alternative-checkboxes
+  .markdown-preview-view
+  ul
+  > li.task-list-item.is-checked,
+body.enable-alternative-checkboxes
+  .markdown-source-view.mod-cm6
+  .HyperMD-task-line[data-task="x"],
+body.enable-alternative-checkboxes
+  .markdown-source-view.mod-cm6
+  .HyperMD-task-line[data-task="X"],
+body.enable-alternative-checkboxes
+  .markdown-source-view.mod-cm6
+  .HyperMD-task-line[data-task="M"] {
   text-decoration: none;
   color: var(--text-faint);
 }
@@ -732,7 +748,8 @@ body.enable-alternative-checkboxes:not(.tasks)
 body.enable-alternative-checkboxes:not(.tasks)
   .markdown-source-view.mod-cm6
   .HyperMD-task-line[data-task]:is([data-task="-"]),
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="-"].task-list-item.is-checked {
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="-"].task-list-item.is-checked {
   color: var(--text-faint);
   text-decoration: line-through solid var(--text-faint) 1px;
 }
@@ -757,7 +774,7 @@ body.enable-alternative-checkboxes input[data-task='"']:checked,
 body.enable-alternative-checkboxes li[data-task='"'] > input:checked,
 body.enable-alternative-checkboxes li[data-task='"'] > p > input:checked {
   border-color: var(--color-cyan);
-  -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"%3E%3Cpath fill="black" fill-opacity="0.7" d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.318.142-.686.238-1.028.466c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.945c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10zm11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10z"%2F%3E%3C%2Fsvg%3E');
+  -webkit-mask-image: url('data:image/svg + xml,%3Csvgxmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"width="20"height="20"preserveAspectRatio="xMidYMid meet"viewBox="0 0 24 24"%3E%3Cpathfill="black"fill-opacity="0.7"d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.318.142-.686.238-1.028.466c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.945c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10zm11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10z"%2F%3E%3C%2Fsvg%3E');
 }
 
 body.enable-alternative-checkboxes input[data-task="*"]:checked,
@@ -892,27 +909,48 @@ body.enable-alternative-checkboxes li[data-task="D"] > p > input:checked {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg' version='1.1' fill='none' stroke='%23000000' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Ccircle cy='12.5' cx='12.5' r='1.75'%3E%3C/circle%3E%3Ccircle cy='12.5' cx='3.5' r='1.75'%3E%3C/circle%3E%3Ccircle cy='3.5' cx='3.5' r='1.75'%3E%3C/circle%3E%3Cpath d='m7.75 2.75h.5m2.5 0h.5m1.5 2.5v-.5m0 3v.5m-9-2.5v4.5'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
 }
 
-body.enable-alternative-checkboxes:not(.tasks) li[data-task=">"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="<"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="b"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="i"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="*"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="!"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="S"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="?"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="/"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task='"'].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="l"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="I"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="p"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="c"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="f"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="k"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="w"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="u"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="d"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="P"].task-list-item.is-checked,
-body.enable-alternative-checkboxes:not(.tasks) li[data-task="D"].task-list-item.is-checked {
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task=">"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="<"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="b"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="i"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="*"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="!"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="S"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="?"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="/"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task='"'].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="l"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="I"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="p"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="c"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="f"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="k"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="w"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="u"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="d"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="P"].task-list-item.is-checked,
+body.enable-alternative-checkboxes:not(.tasks)
+  li[data-task="D"].task-list-item.is-checked {
   color: var(--text-normal);
 }
 
@@ -1065,7 +1103,11 @@ body.enable-alternative-checkboxes:not(.tasks) li[data-task="D"].task-list-item.
 }
 
 .theme-dark .view-header-title-container:after {
-  background: linear-gradient(to bottom, transparent, var(--background-primary)) !important;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--background-primary)
+  ) !important;
 }
 
 .theme-dark .workspace-leaf.mod-active .view-header {
@@ -1075,7 +1117,11 @@ body.enable-alternative-checkboxes:not(.tasks) li[data-task="D"].task-list-item.
 }
 
 .workspace-leaf.mod-active .view-header-title-container:after {
-  background: linear-gradient(to bottom, transparent, var(--background-secondary-alt)) !important;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--background-secondary-alt)
+  ) !important;
 }
 
 .workspace-leaf.mod-active .view-header-title,
@@ -1131,7 +1177,8 @@ ul .task-list-item ul::before {
 
 /* in-line block for editor */
 
-.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code) {
+.cm-s-obsidian
+  span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code) {
   background-color: var(--pre-code-bg);
   color: var(--inline-code) !important;
   bottom: 0px !important;
@@ -1372,5 +1419,4 @@ settings:
     description: Disable this if you are using your own implementation via a CSS Snippet.
     default: true
     type: class-toggle
-  -
 */

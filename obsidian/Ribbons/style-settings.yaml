@@ -1,0 +1,122 @@
+name: Alternate Checkboxes
+id: checkbox
+settings:
+  - title: Alternate Checkboxes by SlRvb
+    id: info-text-SlRvb-alt-checkbox
+    type: info-text
+    description: "[Alternate Checkbox Snippet Reference](https://publish.obsidian.md/slrvb-docs/ITS+Theme/Alternate+Checkboxes)"
+    markdown: true
+  - title: Colorful Task Text
+    description: Add color to the text of the task.
+    id: check-color
+    type: class-toggle
+  - title: Colorful Task Background
+    description: Add color to the background of the task.
+    id: check-bg
+    type: class-toggle
+  - title: Normal Task Text
+    description: Reapply regular text color to the text of the task.
+    id: check-text
+    type: class-toggle
+  - title: Checkbox Strikethrough
+    description: Restore default strike through
+    id: check-strike
+    type: class-toggle
+  #-
+  #    title: Checkbox Fixes
+  #    id: Checkbox-Fixes
+  #    type: heading
+  #    level: 2
+  #    collapsed: true
+  #-
+  #    title: Checkbox Padding Fix
+  #    description: Toggle off if checklists are misaligned for your current theme.
+  #    id: chck-pad
+  #    type: class-toggle
+  #    default: true
+  #-
+  #    title: Checkbox Height Adjustment (LP/P/R)
+  #    description: Preview/Reading Mode Icon adjustment slider.
+  #    id: chbx-pre-height
+  #    type: variable-number-slider
+  #    default: 0
+  #    format: px
+  #    min: -8
+  #    max: 8
+  #    step: 1
+  #-
+  #    title: Checkbox Height Adjustment (S)
+  #    description: Source Mode Icon adjustment slider.
+  #    id: chbx-ed-height
+  #    type: variable-number-slider
+  #    default: 4
+  #    format: px
+  #    min: -8
+  #    max: 8
+  #    step: 1
+  - title: Checkbox Strike Specific
+    id: Checkbox-Strike-Specific
+    type: heading
+    level: 2
+    collapsed: true
+
+  - title: "[x] Regular"
+    id: checkbox-strike-regular
+    type: class-toggle
+  - title: "[X] Checked"
+    id: checkbox-strike-checked
+    type: class-toggle
+  - title: "[-] Dropped"
+    id: checkbox-strike-dropped
+    type: class-toggle
+  - title: "[>] Forward"
+    id: checkbox-strike-frwd
+    type: class-toggle
+  - title: "[<] Migrated / Backward"
+    id: checkbox-strike-bkwd
+    type: class-toggle
+  - title: "[D] Defer / Date"
+    id: checkbox-strike-date
+    type: class-toggle
+  - title: "[?] Question"
+    id: checkbox-strike-q
+    type: class-toggle
+  - title: "[/] Half"
+    id: checkbox-strike-half
+    type: class-toggle
+  - title: "[+] Add"
+    id: checkbox-strike-add
+    type: class-toggle
+  - title: "[R] Research"
+    id: checkbox-strike-rsrch
+    type: class-toggle
+  - title: "[!] Important"
+    id: checkbox-strike-imp
+    type: class-toggle
+  - title: "[i] Idea"
+    id: checkbox-strike-idea
+    type: class-toggle
+  - title: "[B] Brainstorm"
+    id: checkbox-strike-brn
+    type: class-toggle
+  - title: "[P] Pro"
+    id: checkbox-strike-pro
+    type: class-toggle
+  - title: "[C] Con"
+    id: checkbox-strike-con
+    type: class-toggle
+  - title: "[Q] Quote"
+    id: checkbox-strike-quot
+    type: class-toggle
+  - title: "[N] Note"
+    id: checkbox-strike-brn
+    type: class-toggle
+  - title: "[b] Bookmark"
+    id: checkbox-strike-book
+    type: class-toggle
+  - title: "[I] Info"
+    id: checkbox-strike-info
+    type: class-toggle
+  - title: "[p] Paraphrase"
+    id: checkbox-strike-para
+    type: class-toggle

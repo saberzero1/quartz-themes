@@ -99,7 +99,8 @@ body {
   --bloom-size-s: calc(var(--bloom-size) / 3);
   --bloom-size-m: calc(var(--bloom-size) * 0.75);
   --bloom-drop: drop-shadow(0px 0px var(--bloom-size-s) var(--bloom-color));
-  --bloom-box: 0 0 var(--bloom-size-m) var(--bloom-size-m) hsla(var(--bloom-hsl), 0.3);
+  --bloom-box: 0 0 var(--bloom-size-m) var(--bloom-size-m)
+    hsla(var(--bloom-hsl), 0.3);
   --icon-bloom: var(--bloom-drop) var(--bloom-drop);
   --border-bloom: var(--bloom-box), var(--bloom-box) inset;
 }
@@ -172,7 +173,13 @@ h6 {
 
 :is(
     textarea,
-    input:is([type="text"], [type="search"], [type="email"], [type="password"], [type="number"])
+    input:is(
+        [type="text"],
+        [type="search"],
+        [type="email"],
+        [type="password"],
+        [type="number"]
+      )
   )::placeholder {
   color: hsl(var(--ion-hs), 40%);
 }
@@ -227,7 +234,11 @@ a,
   --callout-s: 100%;
   --callout-l-p: 63;
 }
-.callout:is([data-callout="abstract"], [data-callout="summary"], [data-callout="tldr"]) {
+.callout:is(
+    [data-callout="abstract"],
+    [data-callout="summary"],
+    [data-callout="tldr"]
+  ) {
   --callout-h: 198;
   --callout-s: 100%;
   --callout-l-p: 50;
@@ -237,27 +248,47 @@ a,
   --callout-s: 100%;
   --callout-l-p: 41;
 }
-.callout:is([data-callout="tip"], [data-callout="hint"], [data-callout="important"]) {
+.callout:is(
+    [data-callout="tip"],
+    [data-callout="hint"],
+    [data-callout="important"]
+  ) {
   --callout-h: 171;
   --callout-s: 100%;
   --callout-l-p: 37;
 }
-.callout:is([data-callout="success"], [data-callout="check"], [data-callout="done"]) {
+.callout:is(
+    [data-callout="success"],
+    [data-callout="check"],
+    [data-callout="done"]
+  ) {
   --callout-h: 144;
   --callout-s: 100%;
   --callout-l-p: 39;
 }
-.callout:is([data-callout="question"], [data-callout="help"], [data-callout="faq"]) {
+.callout:is(
+    [data-callout="question"],
+    [data-callout="help"],
+    [data-callout="faq"]
+  ) {
   --callout-h: 96;
   --callout-s: 81%;
   --callout-l-p: 47;
 }
-.callout:is([data-callout="warning"], [data-callout="caution"], [data-callout="attention"]) {
+.callout:is(
+    [data-callout="warning"],
+    [data-callout="caution"],
+    [data-callout="attention"]
+  ) {
   --callout-h: 34;
   --callout-s: 100%;
   --callout-l-p: 50;
 }
-.callout:is([data-callout="failure"], [data-callout="fail"], [data-callout="missing"]) {
+.callout:is(
+    [data-callout="failure"],
+    [data-callout="fail"],
+    [data-callout="missing"]
+  ) {
   --callout-h: 0;
   --callout-s: 100%;
   --callout-l-p: 66;

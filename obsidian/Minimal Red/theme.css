@@ -150,7 +150,9 @@ body .modal-bg {
 
 /* Side Bar */
 .sidebar-toggle-button.mod-left {
-  background-color: var(--red); /*Comment or remove this to remove the red square in the top right*/
+  background-color: var(
+    --red
+  ); /*Comment or remove this to remove the red square in the top right*/
   --component-title-color: var(--white);
 }
 

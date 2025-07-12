@@ -1,0 +1,64 @@
+name: Shade Sanctuary Settings
+id: colorthemes
+settings:
+  - id: main-color
+    title: Theme Color
+    description: "The domiannt color of your theme. (Dark Theme only)"
+    type: class-select
+    default: purple-mystic
+    options:
+      - label: Red
+        value: red-passion
+      - label: Orange
+        value: orange-sunset
+      - label: Yellow
+        value: yellow-glow
+      - label: Green
+        value: green-serenity
+      - label: Indigo
+        value: indigo-harmony
+      - label: Blue
+        value: blue-ocean
+      - label: Purple
+        value: purple-mystic
+      - label: White (Grayish)
+        value: white-dawn
+      - label: Black
+        value: black-night
+  - id: color-intensity
+    title: Intensity
+    description: "The intensity of the main color across your interface. (Dark Theme only)"
+    type: class-select
+    default: intensity-twilight
+    options:
+      - label: Abyss
+        value: intensity-abyss
+      - label: Twilight
+        value: intensity-twilight
+      - label: Dawn
+        value: intensity-dawn
+  - id: heading-fonts
+    title: Fonts
+    type: heading
+    level: 1
+    collapsed: true
+  - id: font-text
+    title: Text Font
+    description: Font used for text in the editor
+    type: variable-text
+    default: "Computer Modern"
+  - id: font-interface-theme
+    title: Interface Font
+    description: Font used for UI elements
+    type: variable-text
+    default: "Jetbrains Mono"
+  - id: font-monospace-theme
+    title: Monospace Font
+    description: Font used code blocks and inline code
+    type: variable-text
+    default: "Jetbrains Mono"
+  - id: font-callout-theme
+    title: Callout Font
+    description: Font used within callouts
+    type: variable-text
+    default: "Computer Modern"

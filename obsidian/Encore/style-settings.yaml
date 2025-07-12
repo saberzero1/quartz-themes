@@ -1,0 +1,266 @@
+name: Encore
+id: encore-settings
+settings:
+  - id: theme-dark
+    title: 🌚 Theme • Dark Mode
+    description: Theme used in dark mode
+    type: class-select
+    allowEmpty: false
+    default: encore-theme-dark
+    options:
+      - label: Obsidian Redux
+        value: encore-theme-dark
+      - label: Cobalt
+        value: encore-theme-dark-cobalt
+      - label: Mercury
+        value: encore-theme-dark-mercury
+      - label: Iron
+        value: encore-theme-dark-iron
+      - label: Carbon
+        value: encore-theme-dark-carbon
+      - label: Blackout
+        value: encore-theme-dark-blackout
+      - label: Obsidian
+        value: encore-theme-dark-obsidian
+      - label: Blue Slate
+        value: encore-theme-dark-slate
+      - label: Atom (One Dark)
+        value: encore-theme-dark-atom
+      - label: RGB
+        value: encore-theme-dark-rgb
+      - label: Material Ocean
+        value: encore-theme-dark-materialocean
+      - label: Flexoki
+        value: encore-theme-dark-flexoki
+      - label: Glass Royale
+        value: encore-theme-dark-glass-royale
+  - id: theme-light
+    title: 🌞 Theme • Light Mode
+    description: Theme used in light mode
+    type: class-select
+    allowEmpty: false
+    default: encore-theme-light
+    options:
+      - label: Obsidian Redux
+        value: encore-theme-light
+      - label: Sterling
+        value: encore-theme-light-sterling
+      - label: Atom (One Light)
+        value: encore-theme-light-atom
+  - id: colors
+    title: 🎨 Colors in Text
+    description: All of Encore's themes come with colors for headers, bold, italics, etc... Enable them here, or choose your own
+    type: class-select
+    allowEmpty: false
+    default: encore-colors-neutral
+    options:
+      - label: Neutral
+        value: encore-colors-neutral
+      - label: Colorful
+        value: encore-colors-colorful
+      - label: Custom
+        value: encore-colors-custom
+  - id: encore-translucency
+    title: 👑 Encore Translucency
+    description: Get that translucent aesthetic back in your vault.
+    type: class-toggle
+  - id: encore-translucency-category
+    title: 🖼️ Translucency Background
+    type: heading
+    level: 1
+    collapsed: true
+  - id: encore-translucency-description
+    title: About
+    type: info-text
+    description: "Make sure you've enabled **👑 Encore Translucency** above. Check out the **Glass Royale** theme (dark mode only) for some translucent workspaces!"
+    markdown: true
+  - id: encore-translucency-strength
+    title: Translucency Strength
+    description: Adjusts how visible the background is
+    type: variable-number-slider
+    default: 0.25
+    min: 0
+    max: 1
+    step: 0.05
+  - id: encore-translucency-background
+    title: Translucency Background
+    description: Pick a background to use in translucent mode.
+    type: class-select
+    allowEmpty: false
+    default: encore-bg-image
+    options:
+      - label: Custom Image
+        value: encore-bg-image
+      - label: Emerald
+        value: encore-bg-emerald
+      - label: Sapphire
+        value: encore-bg-sapphire
+      - label: 🎦 Frosty
+        value: encore-bg-frosty
+      - label: 🎦 Lava
+        value: encore-bg-lava
+      - label: 🎦 Dawn
+        value: encore-bg-dawn
+      - label: 🎦 Chromatic
+        value: encore-bg-chromatic
+      - label: 🎦 Prismatic
+        value: encore-bg-prismatic
+  - id: encore-translucency-image
+    title: Background Image
+    description: Used when "Translucency Background" is set to "Custom Image". Must be formatted as url("YOUR URL HERE")
+    type: variable-text
+    quotes: false
+    default: url("https://images.unsplash.com/photo-1707494966495-a2cc8c1dac1f?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+  - id: encore-translucency-blur-amount
+    title: Image Blur Amount
+    description: Adjust how strong the blur is on images
+    type: variable-number-slider
+    default: 10
+    min: 0
+    max: 20
+    step: 1
+
+  #########################################################
+  # Custom Colours
+
+  - id: custom-colours
+    title: 🖌️ Custom Colours
+    type: heading
+    level: 1
+    collapsed: true
+  - id: encore-custom-italic
+    title: Italic Text
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#000000"
+    default-dark: "#ffffff"
+  - id: encore-custom-bold
+    title: Bold Text
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#000000"
+    default-dark: "#ffffff"
+
+  - id: encore-custom-h1
+    title: Header One
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#000000"
+    default-dark: "#ffffff"
+  - id: encore-custom-h2
+    title: Header Two
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#000000"
+    default-dark: "#ffffff"
+  - id: encore-custom-h3
+    title: Header Three
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#000000"
+    default-dark: "#ffffff"
+  - id: encore-custom-h4
+    title: Header Four
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#000000"
+    default-dark: "#ffffff"
+  - id: encore-custom-h5
+    title: Header Five
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#000000"
+    default-dark: "#ffffff"
+  - id: encore-custom-h6
+    title: Header Six
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#000000"
+    default-dark: "#ffffff"
+
+  #########################################################
+  # Extras
+
+  - id: extras
+    title: 💎 Extras
+    type: heading
+    level: 1
+    collapsed: true
+  - id: encore-fancy-headers
+    title: ✨ Fancy View Headers
+    description: Make note contents flow under note view headers, with a nice blur effect. Disabled by default as it may cause issues with some plugins.
+    type: class-toggle
+  - id: encore-mobile-oled-mode
+    title: OLED Mode For Mobile
+    description: Enables true black for any color theme in Encore. If you're looking for a true black theme for all devices, try the Blackout color theme in Encore!
+    type: class-toggle
+  - id: encore-mobile-translucency
+    title: Mobile Translucency
+    description: Makes the mobile side panes ✨ fancy ✨ - disabled by default as it can hurt performance & battery life. Try decreasing blur amount to improve performance!
+    type: class-toggle
+  - id: encore-coloured-tooltip
+    title: Coloured Tooltip
+    description: Make tooltips stand out much more by applying your theme colour to the border
+    type: class-toggle
+  - id: encore-highlight-border
+    title: Highlighted Text Border
+    description: Make highlighted text stand out even more with a glowing border
+    type: class-toggle
+  - id: encore-bright-accent
+    title: Use Bright Accent Colour
+    description: Enable if you're using a bright accent color that is hard to read white text on. Will change text to be black.
+    type: class-toggle
+  - id: blur-amount
+    title: Blur Amount
+    description: Lowering the blur amount helps increase performance
+    type: class-select
+    allowEmpty: false
+    default: encore-blur-full
+    options:
+      - label: Full
+        value: encore-blur-full
+      - label: Less
+        value: encore-blur-less
+      - label: Off
+        value: encore-blur-off
+
+  #########################################################
+  # Feature Toggles
+
+  - id: feature-toggles
+    title: ⚙️ Feature Toggles
+    type: heading
+    level: 1
+    collapsed: true
+  - id: encore-disable-grain
+    title: Disable Grainy Background
+    description: Encore adds a subtle grain effect around the main workspace
+    type: class-toggle
+  - id: encore-disable-clickability-fix
+    title: Disable Clickability Fix
+    description: Encore makes it easier to click the edge of a document by adding some invisible padding. May cause issues if you have content that exceeds the width of your page. No effect on mobile version.
+    type: class-toggle
+  - id: encore-disable-logo-on-hr
+    title: Disable Logo on Horizontal Rule
+    description: Encore adds the Obsidian logo to horizontal ruled lines "---". Turn this on to revert to a simple line
+    type: class-toggle
+  - id: encore-no-calendar
+    title: Disable Calendar Integration
+    description: Encore makes some changes to Calendar. Turn this on to keep the default look
+    type: class-toggle
+  - id: encore-no-excalidraw
+    title: Disable Excalidraw Integration
+    description: Encore makes some changes to Excalidraw to integrate it better with Obsidian. Turn this on to revert to Excalidraw's default theme
+    type: class-toggle
+  - id: encore-no-makemd
+    title: Disable MAKE.md Integration
+    description: Encore makes some changes to MAKE.md to enhance its look and feel. Turn this on to disable
+    type: class-toggle

@@ -1,0 +1,827 @@
+name: Accent Color
+id: accent-color
+settings:
+  - id: accent-color-for-light-theme
+    title: Accent Color for Light Theme
+    title.zh: 浅色模式主题色
+    type: class-select
+    allowEmpty: false
+    default: accent-color-bw-light
+    options:
+      - label: Black & White
+        value: accent-color-bw-light
+      - label: Peach
+        value: accent-color-peach-light
+      - label: Beige
+        value: accent-color-beige-light
+      - label: Sage
+        value: accent-color-sage-light
+      - label: Blue
+        value: accent-color-blue-light
+      - label: Purple
+        value: accent-color-purple-light
+      - label: Pink
+        value: accent-color-pink-light
+  - id: accent-color-for-dark-theme
+    title: Accent Color for Dark Theme
+    title.zh: 深色模式主题色
+    type: class-select
+    allowEmpty: false
+    default: accent-color-bw-dark
+    options:
+      - label: Black & White
+        value: accent-color-bw-dark
+      - label: Peach
+        value: accent-color-peach-dark
+      - label: Beige
+        value: accent-color-beige-dark
+      - label: Sage
+        value: accent-color-sage-dark
+      - label: Blue
+        value: accent-color-blue-dark
+      - label: Purple
+        value: accent-color-purple-dark
+      - label: Pink
+        value: accent-color-pink-dark
+  - id: custom-accent-color
+    title: Custom Accent Color
+    title.zh: 自定义主题色
+    description: Selections above will be ignored if this toggle is on. (I know it's annoying but please bear with me.)
+    description.zh: 如果开启，上面的选择将被忽略。（反复强调别嫌啰嗦）
+    type: class-toggle
+    default: false
+  - id: custom-accent-color-for-light-theme
+    title: Custom Accent Color for Light Theme
+    title.zh: 浅色模式自定义主题色
+    type: heading
+    level: 1
+    collapsed: true
+  - id: accent-color-light-hue-default
+    title: Accent Color Hue for Light Theme
+    title.zh: 浅色模式主题色色相
+    description: Hover to preview.
+    description.zh: 鼠标悬停进行预览。
+    type: variable-number-slider
+    min: 0
+    max: 360
+    step: 1
+    default: 254
+  - id: accent-color-light-saturation-default
+    title: Accent Color Saturation for Light Theme (%)
+    title.zh: 浅色模式主题色饱和度（%）
+    description: The higher the value, the more vivid the color.
+    description.zh: 数值越高，颜色越鲜艳。
+    type: variable-number-slider
+    format: "%"
+    min: 0
+    max: 100
+    step: 1
+    default: 80
+  - id: accent-color-light-lightness-default
+    title: Accent Color Lightness for Light Theme (%)
+    title.zh: 浅色模式主题色亮度（%）
+    description: The higher the value, the lighter the color.
+    description.zh: 数值越高，颜色越亮。
+    type: variable-number-slider
+    format: "%"
+    min: 0
+    max: 100
+    step: 1
+    default: 68
+  - id: custom-accent-color-for-dark-theme
+    title: Custom Accent Color for Dark Theme
+    title.zh: 深色模式自定义主题色
+    type: heading
+    level: 1
+    collapsed: true
+  - id: accent-color-dark-hue-default
+    title: Accent Color Hue for Dark Theme
+    title.zh: 深色模式主题色色相
+    description: Hover to preview.
+    description.zh: 鼠标悬停进行预览。
+    type: variable-number-slider
+    min: 0
+    max: 360
+    step: 1
+    default: 254
+  - id: accent-color-dark-saturation-default
+    title: Accent Color Saturation for Dark Theme (%)
+    title.zh: 深色模式主题色饱和度（%）
+    description: The higher the value, the more vivid the color.
+    description.zh: 数值越高，颜色越鲜艳。
+    type: variable-number-slider
+    format: "%"
+    min: 0
+    max: 100
+    step: 1
+    default: 80
+  - id: accent-color-dark-lightness-default
+    title: Accent Color Lightness for Dark Theme (%)
+    title.zh: 深色模式主题色亮度（%）
+    description: The higher the value, the lighter the color.
+    description.zh: 数值越高，颜色越亮。
+    type: variable-number-slider
+    format: "%"
+    min: 0
+    max: 100
+    step: 1
+    default: 68
+
+  #name: Font & Text
+  #id: font
+  - id: font-family
+    title: Font Family
+    title.zh: 字体
+    type: heading
+    level: 1
+    collapsed: true
+  - id: font-text
+    title: Text Font Family
+    title.zh: 文本字体
+    description: This will be the default font for most of the text in editor except for math and code.
+    description.zh: 将会影响编辑器中除了数学公式和代码外的几乎所有文字。
+    type: variable-text
+    default: '"Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial", sans-serif'
+    allowEmpty: true
+  - id: font-header
+    title: Header Font
+    title.zh: 标题字体
+    description: Will be the same as text font if empty.
+    description.zh: 如果为空，将与文本字体相同。
+    type: variable-text
+    default: ""
+    allowEmpty: true
+  - id: font-monospace
+    title: Monospace Font
+    title.zh: 等宽字体
+    description: This will be the default font for code and tags in editor.
+    description.zh: 将会影响编辑器中的代码和标签等。
+    type: variable-text
+    default: "iawriter-mono, Nitti, Menlo, Courier, monospace"
+    allowEmpty: true
+  - id: font-interface-override
+    title: UI Font
+    title.zh: 界面字体
+    description: Will be Obsidian's default font if empty.
+    description.zh: 如果为空，将使用 Obsidian 的默认字体。
+    type: variable-text
+    default: ""
+    allowEmpty: true
+  - id: font-file-tree
+    title: File Tree Font
+    title.zh: 文件树字体
+    type: variable-text
+    default: ""
+    allowEmpty: true
+  - id: font-inline-title
+    title: Inline Title Font
+    title.zh: 页内标题字体
+    description: Will be the same as header font if empty.
+    description.zh: 如果为空，将与标题字体相同。
+    type: variable-text
+    default: ""
+    allowEmpty: true
+  - id: font-source-view
+    title: Source View Font
+    title.zh: 源码模式字体
+    description: Will be monospace font if empty.
+    description.zh: 如果为空，将使用等宽字体。
+    type: variable-text
+    default: ""
+    allowEmpty: true
+  - id: font-common-style
+    title: Common Style
+    title.zh: 通用样式
+    type: heading
+    level: 1
+    collapsed: true
+  - id: font-text-weight
+    title: Common Font Weight
+    title.zh: 通用字体粗细
+    description: Uasually makes difference at 100, 400, 700, 900 though depends on the font.
+    description.zh: 通常在 100、400、700、900 时会有明显区别，但取决于字体。
+    type: variable-number-slider
+    default: 400
+    min: 100
+    max: 900
+    step: 100
+  - id: strong-style
+    title: Strong Style
+    title.zh: 粗体样式
+    type: heading
+    level: 1
+    collapsed: true
+  - id: font-strong-color
+    title: Color for Strong
+    title.zh: 粗体字体颜色
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    default-light: hsl(0, 0%, 9%)
+    default-dark: hsl(0, 0%, 96%)
+  - id: font-strong-weight
+    title: Weight for Strong
+    title.zh: 粗体字重
+    description: Uasually makes difference at 100, 400, 700, 900 though depends on the font.
+    description.zh: 通常在 100、400、700、900 时会有明显区别，但取决于字体。
+    type: variable-number-slider
+    default: 900
+    min: 100
+    max: 900
+    step: 100
+  - id: font-strong-size
+    title: Size for Strong (em)
+    title.zh: 粗体字体大小（em）
+    description: Base on the font size inherited from its parent.
+    description.zh: 基于从父级继承的字体大小。
+    type: variable-number-slider
+    min: 0.5
+    max: 2
+    step: 0.1
+    format: em
+    default: 1
+  - id: custom-em-style
+    title: Emphasis Style (default italic)
+    title.zh: 强调样式（默认斜体）
+    type: heading
+    level: 1
+    collapsed: true
+  - id: font-em-color
+    title: Color for Emphasis
+    title.zh: 强调字体颜色
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    default-light: hsl(0, 0%, 25%)
+    default-dark: hsl(0, 0%, 83%)
+  - id: font-em-style
+    title: Font Style for Emphasis
+    title.zh: 强调样式
+    description: In case you want to make the text not italic.
+    description.zh: 万一你不喜欢斜体……
+    type: variable-select
+    default: italic
+    allowEmpty: false
+    options:
+      - label: Italic
+        value: italic
+      - label: Normal
+        value: normal
+  - id: font-em-weight
+    title: Weight for Emphasis
+    title.zh: 强调字重
+    description: Uasually makes difference at 100, 400, 700, 900 though depends on the font.
+    description.zh: 通常在 100、400、700、900 时会有明显区别，但取决于字体。
+    type: variable-number-slider
+    default: 400
+    min: 100
+    max: 900
+    step: 100
+  - id: font-em-size
+    title: Size for Emphasis (em)
+    title.zh: 强调字体大小（em）
+    description: Base on the font size inherited from its parent.
+    description.zh: 基于从父级继承的字体大小。
+    type: variable-number-slider
+    min: 0.5
+    max: 2
+    step: 0.1
+    format: em
+    default: 1
+  - id: custom-highlight-style
+    title: Highlight Style
+    title.zh: 高亮样式
+    type: heading
+    level: 1
+    collapsed: true
+  - id: font-highlight-cover-mode
+    title: Cover Mode for Highlight
+    title.zh: 高亮覆盖模式
+    type: class-toggle
+    default: false
+  - id: font-highlight-color
+    title: Color for Highlight
+    title.zh: 高亮字体颜色
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    default-light: hsl(0, 0%, 98%)
+    default-dark: hsl(0, 0%, 9%)
+  - id: font-highlight-weight
+    title: Weight for Highlight
+    title.zh: 高亮字重
+    description: Uasually makes difference at 100, 400, 700, 900 though depends on the font.
+    description.zh: 通常在 100、400、700、900 时会有明显区别，但取决于字体。
+    type: variable-number-slider
+    default: 400
+    min: 100
+    max: 900
+    step: 100
+  - id: font-highlight-size
+    title: Size for Highlight (em)
+    title.zh: 高亮字体大小（em）
+    description: Base on the font size inherited from its parent.
+    description.zh: 基于从父级继承的字体大小。
+    type: variable-number-slider
+    min: 0.5
+    max: 2
+    step: 0.1
+    format: em
+    default: 1
+  - id: font-highlight-bg-color
+    title: Background Color for Highlight
+    title.zh: 高亮背景颜色
+    description: Default values displayed are incorrect. Default values are accent color.
+    description.zh: 下面显示的默认值是不正确的，它的默认值是你在上面设置的主题色。
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    default-light: hsla(0, 0%, 0%, 0)
+    default-dark: hsla(0, 0%, 0%, 0)
+  - id: font-highlight-decoration-line
+    title: Decoration Position for Highlight
+    title.zh: 高亮装饰线位置
+    type: variable-select
+    default: none
+    allowEmpty: false
+    options:
+      - label: Underline
+        value: underline
+      - label: Overline
+        value: overline
+      - label: Line-through
+        value: line-through
+      - label: None
+        value: none
+  - id: font-highlight-decoration-style
+    title: Decoration Style for Highlight
+    title.zh: 高亮装饰线样式
+    type: variable-select
+    default: solid
+    allowEmpty: false
+    options:
+      - label: Solid
+        value: solid
+      - label: Double
+        value: double
+      - label: Dotted
+        value: dotted
+      - label: Dashed
+        value: dashed
+      - label: Wavy
+        value: wavy
+  - id: font-highlight-decoration-color
+    title: Decoration Color for Highlight
+    title.zh: 高亮装饰线颜色
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    default-light: hsla(0, 0%, 25%, 1)
+    default-dark: hsla(0, 0%, 83%, 1)
+  - id: font-highlight-decoration-width
+    title: Decoration Width for Highlight (px)
+    title.zh: 高亮装饰线宽度（px）
+    type: variable-number-slider
+    min: 1
+    max: 5
+    step: 1
+    format: px
+    default: 2
+  - id: font-highlight-decoration-offset
+    title: Underline Offset for Highlight (px)
+    title.zh: 高亮下划线偏移（px）
+    description: Only available for Underline.
+    description.zh: 仅对下划线有效。
+    type: variable-number-slider
+    min: -5
+    max: 10
+    step: 1
+    format: px
+    default: 6
+  - id: custom-underlined-style
+    title: Underlined Style
+    title.zh: 下划线样式
+    type: heading
+    level: 1
+    collapsed: true
+  - id: font-underlined-color
+    title: Color for Underlined
+    title.zh: 下划线字体颜色
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    default-light: hsl(0, 0%, 25%)
+    default-dark: hsl(0, 0%, 83%)
+  - id: font-underlined-weight
+    title: Weight for Underlined
+    title.zh: 下划线字重
+    description: Uasually makes difference at 100, 400, 700, 900 though depends on the font.
+    description.zh: 通常在 100、400、700、900 时会有明显区别，但取决于字体。
+    type: variable-number-slider
+    default: 400
+    min: 100
+    max: 900
+    step: 100
+  - id: font-underlined-size
+    title: Size for Underlined (em)
+    title.zh: 下划线字体大小（em）
+    description: Base on the font size inherited from its parent.
+    description.zh: 基于从父级继承的字体大小。
+    type: variable-number-slider
+    min: 0.5
+    max: 2
+    step: 0.1
+    format: em
+    default: 1
+  - id: font-underlined-decoration-style
+    title: Decoration Style for Underlined
+    title.zh: 下划线样式
+    type: variable-select
+    default: wavy
+    allowEmpty: false
+    options:
+      - label: Solid
+        value: solid
+      - label: Double
+        value: double
+      - label: Dotted
+        value: dotted
+      - label: Dashed
+        value: dashed
+      - label: Wavy
+        value: wavy
+  - id: font-underlined-decoration-color
+    title: Decoration Color for Underlined
+    title.zh: 下划线颜色
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    default-light: hsla(0, 0%, 25%, 1)
+    default-dark: hsla(0, 0%, 83%, 1)
+  - id: font-underlined-decoration-width
+    title: Decoration Width for Underlined (px)
+    title.zh: 下划线宽度（px）
+    type: variable-number-slider
+    min: 1
+    max: 5
+    step: 1
+    format: px
+    default: 2
+  - id: font-underlined-decoration-offset
+    title: Underline Offset for Underlined (px)
+    title.zh: 下划线偏移（px）
+    type: variable-number-slider
+    min: -5
+    max: 10
+    step: 1
+    format: px
+    default: 6
+  - id: custom-strikethrough-style
+    title: Strikethrough Style
+    title.zh: 删除线样式
+    type: heading
+    level: 1
+    collapsed: true
+  - id: font-strikethrough-color
+    title: Color for Strikethrough
+    title.zh: 删除线字体颜色
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    default-light: hsl(0, 0%, 45%)
+    default-dark: hsl(0, 0%, 45%)
+  - id: font-strikethrough-weight
+    title: Weight for Strikethrough
+    title.zh: 删除线字重
+    description: Uasually makes difference at 100, 400, 700, 900 though depends on the font.
+    description.zh: 通常在 100、400、700、900 时会有明显区别，但取决于字体。
+    type: variable-number-slider
+    default: 400
+    min: 100
+    max: 900
+    step: 100
+  - id: font-strikethrough-size
+    title: Size for Strikethrough (em)
+    title.zh: 删除线字体大小（em）
+    description: Base on the font size inherited from its parent.
+    description.zh: 基于从父级继承的字体大小。
+    type: variable-number-slider
+    min: 0.5
+    max: 2
+    step: 0.1
+    format: em
+    default: 1
+  - id: font-strikethrough-decoration-style
+    title: Decoration Style for Strikethrough
+    title.zh: 删除线样式
+    type: variable-select
+    default: solid
+    allowEmpty: false
+    options:
+      - label: Solid
+        value: solid
+      - label: Double
+        value: double
+      - label: Dotted
+        value: dotted
+      - label: Dashed
+        value: dashed
+      - label: Wavy
+        value: wavy
+  - id: font-strikethrough-decoration-color
+    title: Decoration Color for Strikethrough
+    title.zh: 删除线颜色
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    default-light: hsla(0, 0%, 45%, 1)
+    default-dark: hsla(0, 0%, 45%, 1)
+  - id: font-strikethrough-decoration-width
+    title: Decoration Width for Strikethrough (px)
+    title.zh: 删除线宽度（px）
+    type: variable-number-slider
+    min: 1
+    max: 5
+    step: 1
+    format: px
+    default: 2
+
+  #name: Elements
+  #id: elements
+  - id: header-style
+    title: Headers
+    title.zh: 标题
+    type: heading
+    level: 1
+    collapsed: true
+  - id: header-level-indicator
+    title: Header Level Indicator
+    title.zh: 标题层级指示器
+    description: If turned on, the collapse indicator will not be displayed and clicking the level indicator will fold or unfold the contents of a header.
+    description.zh: 如果开启，折叠指示器将不会显示，点击标题层级指示器将展开或折叠标题下的内容。
+    type: class-toggle
+    default: true
+  - id: header-hovering-underline
+    title: Header Hovering Underline
+    title.zh: 标题悬停下划线
+    type: class-select
+    allowEmpty: false
+    default: header-hovering-underline-grow
+    options:
+      - label: none
+        value: header-hovering-underline-none
+      - label: fade
+        value: header-hovering-underline-fade
+      - label: grow
+        value: header-hovering-underline-grow
+  - id: colorful-headers
+    title: Headers Coloring
+    title.zh: 标题着色
+    type: class-toggle
+    default: false
+  - id: header-color-gradient
+    title: Gradient Header Colors
+    title.zh: 渐变标题颜色
+    type: class-toggle
+    default: false
+  - id: tag-style
+    title: Tags
+    title.zh: 标签
+    type: heading
+    level: 1
+    collapsed: true
+  - id: custom-tag-color-fill
+    title: Tags Style
+    title.zh: 标签样式
+    type: class-select
+    default: tag-outline
+    options:
+      - label: Outline
+        value: tag-outline
+      - label: Fill
+        value: tag-fill
+  - id: tag-radius
+    title: Tags Border Radius (em)
+    title.zh: 标签圆角（em）
+    type: variable-number-slider
+    min: 0
+    max: 1
+    step: 0.1
+    format: em
+    default: 0
+  - id: checkbox-style
+    title: Checkboxes
+    title.zh: 复选框
+    type: heading
+    level: 1
+    collapsed: true
+  #-
+  #  id: enable-alternative-checkboxes
+  #  title: Enable Alternative Checkboxes
+  #  title.zh: 启用替代样式复选框
+  #  description: Disable this if you are using your own implementation via a CSS Snippet.
+  #  description.zh: 如果你在自己的 CSS 片段中实现了复选框样式，请关闭这个选项。
+  #  default: true
+  #  type: class-toggle
+  - id: checkbox-uppercase-set
+    title: Uppercase Set for Checkboxes
+    title.zh: 大写复选框集
+    type: class-select
+    default: checkbox-uppercase-set-social
+    options:
+      - label: Letter
+        value: checkbox-uppercase-set-letter
+      - label: Social
+        value: checkbox-uppercase-set-social
+  - id: circle-checkbox
+    title: Circle Checkboxes
+    title.zh: 圆形复选框
+    type: class-toggle
+    default: true
+  - id: callout-style
+    title: Callouts
+    title.zh: Callouts
+    type: heading
+    level: 1
+    collapsed: true
+  - id: callout-border
+    title: Callouts Border
+    title.zh: Callouts 边框
+    description: Enabling this along with `Dosg Ear` will be kind of weird but if you like it, go ahead.
+    description.zh: 同时启用这个选项和“折角”会有点奇怪……但如果你喜欢，就试试吧。
+    type: class-toggle
+    default: true
+  - id: colorful-callout-title
+    title: Colorful Callouts Title
+    title.zh: Callouts 标题着色
+    type: class-toggle
+    default: false
+  - id: callout-dogs-ear
+    title: Dog's Ear for Callouts⚠️
+    title.zh: Callouts 折角 ⚠️
+    description: It's kind of useless but we keeped this feature in case you like it. (It will be deprecated in the future.)
+    description.zh: 这个功能有点没用，但万一你喜欢呢？（未来会被弃用）
+    type: class-toggle
+    default: false
+  - id: callout-dogs-ear-size
+    title: Dog's Ear Size (em) ⚠️
+    title.zh: 折角大小（em）⚠️
+    type: variable-number-slider
+    min: 1
+    max: 10
+    step: 0.5
+    format: em
+    default: 2
+  - id: table-style
+    title: Tables
+    title.zh: 表格
+    type: heading
+    level: 1
+    collapsed: true
+  - id: center-table-header
+    title: Always Center Header Rows
+    title.zh: 始终居中表头行
+    description: If turned on, the header rows will always be centered.
+    description.zh: 如果开启，表头行将始终居中。
+    type: class-toggle
+    default: true
+  - id: full-width-table
+    title: Full Width Tables
+    title.zh: 全宽表格
+    type: class-toggle
+    default: true
+  - id: top-bottom-table-border
+    title: Top & Bottom Borders for Tables
+    title.zh: 表格上下边框
+    type: class-toggle
+    default: false
+  - id: embed-style
+    title: Embeds
+    title.zh: Embeds
+    type: heading
+    level: 1
+    collapsed: true
+  - id: embed-alt
+    title: Embeds Alt
+    title.zh: Embeds 图片别名
+    type: class-toggle
+    default: true
+  - id: embed-alt-position
+    title: Embeds Alt Position
+    title.zh: Embeds 别名位置
+    type: class-select
+    default: embed-alt-right
+    options:
+      - label: Left
+        value: embed-alt-left
+      - label: Middle
+        value: embed-alt-middle
+      - label: Right
+        value: embed-alt-right
+  #name: Tree
+  #id: tree
+  - id: static-style
+    title: Static Style
+    title.zh: 静态样式
+    type: heading
+    level: 1
+    collapsed: true
+  - id: file-tree-icons
+    title: File Tree Icons
+    title.zh: 文件树图标
+    type: class-toggle
+    default: true
+  - id: color-expanded-folder-indicator
+    title: Expanded Folder Indicator Coloring
+    title.zh: 展开文件夹指示器着色
+    type: class-toggle
+    default: true
+  - id: active-file-border
+    title: Active File Border
+    title.zh: 当前文件边框
+    type: class-toggle
+    default: true
+  - id: always-show-full-header-in-outline
+    title: Always Show Full Header in Outline
+    title.zh: 大纲中始终显示完整标题
+    type: class-toggle
+    default: false
+  - id: Dynamic Style
+    title: Dynamic Style
+    title.zh: 动态样式
+    type: heading
+    level: 1
+    collapsed: true
+  - id: indicate-child
+    title: Indicate Children When Hovering
+    title.zh: 悬停时指示子文件夹
+    type: class-toggle
+    default: true
+  - id: indicate-ascendant
+    title: Indicate Ascendants When Hovering
+    title.zh: 悬停时指示父文件夹
+    type: class-toggle
+    default: true
+  - id: opaque-expanded-folder
+    title: Opaque Expanded Folders
+    title.zh: 不透明展开文件夹
+    description: If turned on, the expanded folders will be less transparent.
+    description.zh: 如果开启，展开的文件夹将会更不透明。
+    type: class-toggle
+    default: true
+  #name: UI Style
+  #id: ui-style
+  - id: toggle-style
+    title: Toggles Style
+    title.zh: 开关样式
+    type: class-select
+    default: toggle-style-checkbox
+    options:
+      - label: default
+        value: toggle-style-default
+      - label: checkbox
+        value: toggle-style-checkbox
+  - id: glassmorphism-command-palette
+    title: Glassmorphism Command Palette
+    title.zh: 毛玻璃效果命令面板
+    type: class-toggle
+    default: true
+  #name: Focus Mode
+  #id: focus-mode
+  - id: fade-out-inactive-lines
+    title: Fade Out Inactive Lines
+    title.zh: 淡化非活动行
+    type: class-toggle
+    default: true
+  - id: inactive-opacity
+    title: Inactive Lines Opacity
+    title.zh: 非活动行透明度
+    type: variable-number-slider
+    min: 0
+    max: 1
+    step: 0.1
+    default: 0.3
+  - id: inactive-hover-opacity
+    title: Inactive Lines Opacity on Hover
+    title.zh: 悬停时透明度
+    type: variable-number-slider
+    min: 0
+    max: 1
+    step: 0.1
+    default: 0.8
+  - id: focus-transition-duration
+    title: Transition Duration for Hover (s)
+    title.zh: 过渡时长（秒）
+    type: variable-number-slider
+    format: s
+    min: 0
+    max: 1
+    step: 0.1
+    default: 0.2
+  - id: zen-mode
+    title: Zen Mode
+    title.zh: Zen 模式
+    description: Hide all UI elements except the editor.
+    description.zh: 隐藏除编辑器外的所有界面元素。
+    type: class-toggle
+    default: false

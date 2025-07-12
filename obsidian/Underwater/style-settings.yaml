@@ -1,0 +1,504 @@
+name: Underwater theme
+id: underwater-theme
+collapsed: false
+settings:
+  - id: my-info-text
+    title:
+    description: "💫 **Star the theme on Github: [Underwater on Github](https://github.com/Seniblue/Underwater)!** </br></br> ✨ Theme updates and new features: [Releases](https://github.com/Seniblue/Underwater/releases) </br></br> **💡** The theme looks nice with [Lexend](https://www.lexend.com/) font!"
+    type: info-text
+    markdown: true
+  - id: underwater-colors-dark
+    title: Dark theme
+    type: class-select
+    allowEmpty: false
+    default: rose-pine
+    options:
+      - label: Rosé pine
+        value: rose-pine
+      - label: Rosé pine moon
+        value: rose-pine-moon
+      - label: Nord
+        value: nord-dark
+      - label: Catppuccin mocha
+        value: catppuccin-mocha
+      - label: Everforest
+        value: everforest-dark
+      - label: Biscuit
+        value: biscuit-dark
+      - label: Obsidian default
+        value: obsidian-dark
+      - label: 🌊 Underwater Deep
+        value: uw-deep
+      - label: 🌊 Underwater Blue ocean
+        value: uw-ocean
+      - label: 🌊 Underwater Seaweed
+        value: uw-seaweed
+      - label: 🌊 Underwater Sand
+        value: uw-sand
+  - id: underwater-colors-light
+    title: Light Theme
+    type: class-select
+    allowEmpty: false
+    default: rose-pine-dawn
+    options:
+      - label: Rosé pine dawn
+        value: rose-pine-dawn
+      - label: Nord
+        value: nord-bright
+      - label: Catppuccin latte
+        value: catppuccin-latte
+      - label: Everforest
+        value: everforest-light
+      - label: Gruvbox
+        value: gruvbox-light
+      - label: Obsidian default
+        value: obsidian-light
+      - label: 🌊 Underwater Octopus
+        value: uw-octopus
+      - label: 🌊 Underwater Coral
+        value: uw-coral
+      - label: 🌊 Underwater Aqua
+        value: uw-aqua
+      - label: 🌊 Underwater Oyster
+        value: uw-oyster
+
+  # 🎨 Theme colors
+  - id: theme-colors
+    title: 🎨 Theme colors
+    type: heading
+    collapsed: true
+    level: 1
+  - id: foam-rgb
+    title: Foam
+    type: variable-themed-color
+    opacity: false
+    format: "rgb-values"
+    default-light: "#56949f"
+    default-dark: "#9ccfd8"
+  - id: pine-rgb
+    title: Pine
+    type: variable-themed-color
+    opacity: false
+    format: "rgb-values"
+    default-light: "#286983"
+    default-dark: "#31748f"
+  - id: iris-rgb
+    title: Iris
+    type: variable-themed-color
+    opacity: false
+    format: "rgb-values"
+    default-light: "#907aa9"
+    default-dark: "#c4a7e7"
+  - id: gold-rgb
+    title: Gold
+    type: variable-themed-color
+    opacity: false
+    format: "rgb-values"
+    default-light: "#ea9d34"
+    default-dark: "#f6c177"
+  - id: rose-rgb
+    title: Rose
+    type: variable-themed-color
+    opacity: false
+    format: "rgb-values"
+    default-light: "#d7827e"
+    default-dark: "#ebbcba"
+  - id: love-rgb
+    title: Love
+    type: variable-themed-color
+    opacity: false
+    format: "rgb-values"
+    default-light: "#b4637a"
+    default-dark: "#eb6f92"
+  - id: base
+    title: Base
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#faf4ed"
+    default-dark: "#191724"
+  - id: surface-rgb
+    title: Surface
+    type: variable-themed-color
+    opacity: false
+    format: "rgb-values"
+    default-light: "#fffaf3"
+    default-dark: "#1f1d2e"
+  - id: overlay
+    title: Overlay
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#f2e9e1"
+    default-dark: "#26233a"
+  - id: muted
+    title: Muted
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#9893a5"
+    default-dark: "#6e6a86"
+  - id: subtle
+    title: Subtle
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#797593"
+    default-dark: "#908caa"
+  - id: text
+    title: Text
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#575279"
+    default-dark: "#e0def4"
+  - id: highlight-low
+    title: Highlight low
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#f4ede8"
+    default-dark: "#21202e"
+  - id: highlight-med-rgb
+    title: Highlight med
+    type: variable-themed-color
+    opacity: false
+    format: "rgb-values"
+    default-light: "#dfdad9"
+    default-dark: "#403d52"
+  - id: highlight-high
+    title: Highlight high
+    type: variable-themed-color
+    opacity: false
+    format: hex
+    default-light: "#cecacd"
+    default-dark: "#524f67"
+
+  # ✏️ Editor colors
+  - id: editor-colors
+    title: ✏️ Editor colors
+    type: heading
+    collapsed: true
+    level: 1
+  - id: my-info-text
+    title:
+    type: info-text
+    description: 💡 You can tweak these values using theme variables (set in the previous "Theme Colors" section) like **`var(--pine)`** or color values like **`#8ec7e8`** (hex) or **`rgb(142, 199, 232)`** (rgb).
+    markdown: true
+  - id: bold-color
+    title: Bold
+    type: variable-text
+    default: var(--love)
+  - id: italic-color
+    title: Italic
+    type: variable-text
+    default: var(--foam)
+  - id: list-marker-color
+    title: List bullets
+    type: variable-text
+    default: var(--bold-color)
+  - id: text-highlight-bg
+    title: Highlight
+    type: variable-text
+    default: rgba(var(--gold-rgb), 0.2)
+  - id: underline-color
+    title: Underline
+    type: variable-text
+    default: var(--iris)
+  - id: strikethrough-color
+    title: Strikethrough
+    type: variable-text
+    default: var(--gold)
+  - id: latex-color
+    title: Math
+    type: variable-text
+    default: var(--gold)
+  - id: hr-color
+    title: Hr (divider)
+    type: variable-text
+    default: var(--highlight-med)
+  - id: table-header-background
+    title: Table header
+    type: variable-text
+    default: var(--iris)
+    description: Doesn't apply to "minimal" table
+  - id: uw-background
+    title: Workspace background color
+    type: variable-text
+    default: var(--overlay)
+
+  # Headers color
+  - id: headings-color
+    title: ✏️ HEADINGS color
+    type: heading
+    collapsed: true
+    level: 2
+  - id: inline-title-color
+    title: Inline title
+    type: variable-text
+    default: var(--foam)
+  - id: h1-color
+    title: H1
+    type: variable-text
+    default: var(--love)
+  - id: h2-color
+    title: H2
+    type: variable-text
+    default: var(--rose)
+  - id: h3-color
+    title: H3
+    type: variable-text
+    default: var(--gold)
+  - id: h4-color
+    title: H4
+    type: variable-text
+    default: var(--pine)
+  - id: h5-color
+    title: H5
+    type: variable-text
+    default: var(--iris)
+  - id: h6-color
+    title: H6
+    type: variable-text
+    default: var(--text-normal)
+
+  # 🔧 Settings
+  - id: settings
+    title: 🔧 Settings
+    type: heading
+    collapsed: true
+    level: 1
+  - id: callout
+    title: Callout style
+    type: class-select
+    allowEmpty: false
+    default: normal
+    options:
+      - label: Solid
+        value: callout-solid
+      - label: Classic
+        value: normal
+      - label: Outlined
+        value: callout-outlined
+      - label: Math
+        value: callout-math
+  - id: table
+    title: Table style
+    type: class-select
+    allowEmpty: false
+    default: normal
+    options:
+      - label: Normal
+        value: normal
+      - label: Minimal
+        value: table-minimal
+  - id: checkbox
+    title: Checkboxes style
+    type: class-select
+    allowEmpty: false
+    default: normal
+    options:
+      - label: Rounded
+        value: normal
+      - label: Circle
+        value: checkbox-circle
+  - id: tab-img
+    title: New tab image
+    description: Looks better with a small image
+    type: info-text
+    default: url("")
+  - id: vault-icon
+    title: Vault icon
+    type: class-select
+    allowEmpty: false
+    default: Moon
+    options:
+      - label: Moon
+        value: Moon
+      - label: School
+        value: vault-school
+      - label: Science
+        value: vault-science
+      - label: Brain
+        value: vault-brain
+      - label: Book
+        value: vault-book
+      - label: Plant
+        value: vault-plant
+      - label: Rocket
+        value: vault-rocket
+      - label: Dev
+        value: vault-dev
+
+  - id: headings-font
+    title: Specific font for headings
+    description: Just write the name of the font, or leave it blank for default font
+    type: variable-text
+    default: Default text font
+    quotes: true
+
+  # 🔍 Options
+  - id: options
+    title: 🔍 Options
+    type: heading
+    collapsed: true
+    level: 1
+  - id: no-h5
+    title: Disable h5 header centering
+    type: class-toggle
+    default: false
+  - id: no-animation
+    title: Disable slight image animation on hover
+    type: class-toggle
+    default: false
+  - id: no-button
+    title: Disable slight button zoom on hover
+    type: class-toggle
+    default: false
+  - id: no-links
+    title: Disable border around internal links
+    type: class-toggle
+    default: false
+  - id: visible-properties
+    title: Allow properties to be visible in reading mode as well
+    type: class-toggle
+    default: false
+  - id: no-checkboxes
+    title: Disable checkboxes
+    description: Disable this if you are using your own implementation via a CSS Snippet.
+    type: class-toggle
+    default: false
+  - id: no-click
+    title: Disable checkbox click (allows you to use checkboxes as bullets)
+    type: class-toggle
+    default: false
+  - id: no-activeline
+    title: Disable active line higlight
+    type: class-toggle
+    default: false
+  - id: no-tooltips
+    title: Remove tooltips
+    type: class-toggle
+    default: false
+  - id: no-scrollbar
+    title: Remove scrollbar in sidebars
+    type: class-toggle
+    default: false
+  - id: no-justify
+    title: Disable justified text
+    type: class-toggle
+    default: false
+  - id: no-pin
+    title: Disable smaller pinned tabs
+    type: class-toggle
+    default: false
+  - id: my-info-text
+    title:
+    type: info-text
+    description: "💡 You can set a hotkey for *Full focus mode* by going to **`Hotkeys`** (in the app settings), looking for **`Style settings: Toggle 🎯 Full focus mode`** and assigning your custom hotkey!"
+    markdown: true
+  - id: focus-mode
+    title: 🎯 Full focus mode
+    description: Removes tab bar, status bar, scrollbar, file header and properties heading. You can enable/disable it with a hotkey.
+    type: class-toggle
+    default: false
+    addCommand: true
+
+  # 🖼️ Background image
+  - id: bg-image
+    title: 🖼️ Background image
+    type: heading
+    collapsed: true
+    level: 1
+  - id: my-info-text
+    title:
+    type: info-text
+    description: "🎨 If you're looking for a custom **background color**, you can go to *`✏️ Editor colors`* → *`Workspace background color`*. </br> You can also enable the background image setting below and adjust the opacity of your custom color."
+    markdown: true
+  - id: workspace-bg
+    title: Enable background image
+    type: class-toggle
+    default: false
+  - id: bg-url
+    title: Background image url
+    type: info-text
+    default: url("")
+  - id: bg-opacity
+    title: Background opacity
+    type: variable-number-slider
+    default: 0.9
+    min: 0
+    max: 1
+    step: 0.1
+  - id: bg-blur
+    title: Background blur
+    type: variable-number-slider
+    default: 0
+    min: 0
+    max: 10
+    step: 1
+    format: px
+  - id: layout-opacity
+    title: Layout opacity
+    type: variable-number-slider
+    default: 0.8
+    min: 0
+    max: 1
+    step: 0.1
+
+  # 🧩 Plugins styling
+  - id: plugins
+    title: 🧩 Plugins styling
+    type: heading
+    collapsed: true
+    level: 1
+  - id: kanban
+    title: KANBAN board style
+    type: class-select
+    allowEmpty: false
+    default: normal
+    options:
+      - label: Colorful
+        value: normal
+      - label: Modern
+        value: kanban-modern
+  - id: dotted
+    title: Enable a dotted background for EXCALIDRAW drawings
+    type: class-toggle
+    default: false
+  - id: no-calendar
+    title: Disable CALENDAR styling
+    description: Weekends are highlighted
+    type: class-toggle
+    default: false
+  - id: seamless-dataview
+    title: Enable seamless DATAVIEW tables
+    description: Dataview tables have the same styling as markdown tables (note that you can also use the "seamless-dataview" cssclass)
+    type: class-toggle
+    default: false
+  - id: no-todoist
+    title: Disable TODOIST SYNC styling
+    type: class-toggle
+    default: false
+  - id: no-widgets
+    title: Disable WIDGETS styling
+    description: Colorful and smaller widgets
+    type: class-toggle
+    default: false
+  - id: no-pomodoro
+    title: Disable POMODORO TIMER styling
+    description: Round stroke
+    type: class-toggle
+    default: false
+  - id: no-cardboard
+    title: Disable CARDBOARD styling
+    type: class-toggle
+    default: false
+  - id: no-fta
+    title: Disable FILE TREE ALTERNATIVE styling
+    type: class-toggle
+    default: false
+  - id: tokei-plugin
+    title: Enable TOKEI styling
+    type: class-toggle
+    default: false

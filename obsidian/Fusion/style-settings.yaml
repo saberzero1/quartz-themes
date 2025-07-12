@@ -1,0 +1,33 @@
+name: Fusion
+id: fusion
+settings:
+  - id: colors
+    title: Colors
+    type: heading
+    level: 1
+  - id: theme-variant
+    title: Color scheme
+    type: class-select
+    allowEmpty: false
+    default: fusion-default
+    options:
+      - label: Blue (default)
+        value: fusion-default
+      - label: Black/White
+        value: fusion-black
+  - id: high-contrast-text
+    title: Increase text contrast
+    description: Use a brighter text color.
+    type: class-toggle
+  - id: hidden-elements
+    title: Hidden elements
+    type: heading
+    level: 1
+  - id: no-note-padding
+    title: Disable note padding
+    description: Removes the bottom padding from notes. (Hides scrollbar in short notes)
+    type: class-toggle
+  - id: show-view-header-title
+    title: Show view header title
+    description: Show view header title (while hovering).
+    type: class-toggle

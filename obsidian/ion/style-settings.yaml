@@ -1,0 +1,40 @@
+name: ion
+id: ion
+collapsed: false
+settings:
+  - id: colors
+    title: Colors
+    type: heading
+    level: 2
+  - id: base-d
+    title: Base color
+    type: variable-color
+    format: hsl-split-decimal
+    description: "Requires Style Settings v1.0.3+"
+    default: "#ecd2c6"
+  - id: code-base-l
+    title: Code base brightness
+    description: Brightness adjustment for syntax highlighting
+    type: variable-number-slider
+    default: 30
+    min: 0
+    max: 100
+    step: 1
+  - id: bloom
+    title: Bloom
+    type: heading
+    level: 2
+  - id: bloom-fct
+    title: Strength
+    type: variable-number-slider
+    default: .25
+    min: 0
+    max: 1
+    step: .05
+  - id: ion-threshold
+    title: Threshold
+    type: variable-number-slider
+    default: 80
+    min: 0
+    max: 100
+    step: 1

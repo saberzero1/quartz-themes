@@ -36,15 +36,22 @@ https://forum.obsidian.md/t/theme-shiba-inu/53395
   .workspace-tabs.mod-stacked
   .workspace-tab-container
   .workspace-tab-header,
-.is-translucent.shib-translucent-center:not(.is-fullscreen) .workspace-split.mod-root,
-.is-translucent.shib-translucent-center:not(.is-fullscreen) .workspace-split.mod-root .view-content,
+.is-translucent.shib-translucent-center:not(.is-fullscreen)
+  .workspace-split.mod-root,
+.is-translucent.shib-translucent-center:not(.is-fullscreen)
+  .workspace-split.mod-root
+  .view-content,
 .is-translucent.shib-translucent-center:not(.is-fullscreen) .workspace-tabs,
-.is-translucent.shib-translucent-center:not(.is-fullscreen) .workspace-tabs .workspace-leaf,
+.is-translucent.shib-translucent-center:not(.is-fullscreen)
+  .workspace-tabs
+  .workspace-leaf,
 .is-translucent.shib-translucent-left:not(.is-fullscreen)
   .mod-left-split
   .workspace-tab-header-container,
-.is-translucent.shib-translucent-left:not(.is-fullscreen) .workspace-ribbon.mod-left,
-.is-translucent.shib-translucent-left:not(.is-fullscreen) .workspace-ribbon.mod-left:before,
+.is-translucent.shib-translucent-left:not(.is-fullscreen)
+  .workspace-ribbon.mod-left,
+.is-translucent.shib-translucent-left:not(.is-fullscreen)
+  .workspace-ribbon.mod-left:before,
 .is-translucent.shib-translucent-right:not(.is-fullscreen)
   .mod-right-split
   .workspace-tab-header-container,
@@ -537,16 +544,24 @@ body {
   --color-base-60: rgb(var(--overlay2));
   --color-base-70: rgb(var(--subtext0));
   --color-base-100: rgb(var(--text));
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(var(--text), 0.09),
-    0 2px 4px 0 rgba(var(--exterior), 0.15), 0 1px 1.5px 0 rgba(var(--exterior), 0.1),
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(var(--text), 0.09),
+    0 2px 4px 0 rgba(var(--exterior), 0.15),
+    0 1px 1.5px 0 rgba(var(--exterior), 0.1),
     0 1px 2px 0 rgba(var(--exterior), 0.2), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(var(--text), 0.16),
-    0 2px 3px 0 rgba(var(--exterior), 0.3), 0 1px 1.5px 0 rgba(var(--exterior), 0.2),
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(var(--text), 0.16),
+    0 2px 3px 0 rgba(var(--exterior), 0.3),
+    0 1px 1.5px 0 rgba(var(--exterior), 0.2),
     0 1px 2px 0 rgba(var(--exterior), 0.4), 0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(var(--exterior), 0.121),
-    0px 3.4px 6.7px rgba(var(--exterior), 0.179), 0px 15px 30px rgba(var(--exterior), 0.3);
-  --shadow-l: 0px 1.8px 7.3px rgba(var(--exterior), 0.071),
-    0px 6.3px 24.7px rgba(var(--exterior), 0.112), 0px 30px 90px rgba(var(--exterior), 0.2);
+  --shadow-s:
+    0px 1px 2px rgba(var(--exterior), 0.121),
+    0px 3.4px 6.7px rgba(var(--exterior), 0.179),
+    0px 15px 30px rgba(var(--exterior), 0.3);
+  --shadow-l:
+    0px 1.8px 7.3px rgba(var(--exterior), 0.071),
+    0px 6.3px 24.7px rgba(var(--exterior), 0.112),
+    0px 30px 90px rgba(var(--exterior), 0.2);
   --color-accent-translucent-06: hsla(var(--interactive-accent-hsl), 0.6);
   --color-accent-translucent-04: hsla(var(--interactive-accent-hsl), 0.4);
   --color-accent-translucent-02: hsla(var(--interactive-accent-hsl), 0.2);
@@ -622,7 +637,10 @@ body.theme-dark {
 }
 
 body.is-translucent {
-  --workspace-background-translucent: rgba(var(--exterior), var(--shib-translucency-opacity));
+  --workspace-background-translucent: rgba(
+    var(--exterior),
+    var(--shib-translucency-opacity)
+  );
 }
 
 .is-translucent:not(.is-fullscreen) {
@@ -634,13 +652,22 @@ body.is-translucent {
 .is-translucent.shib-translucent-center:not(.is-fullscreen)
   .view-header-title-container:not(.mod-at-end):after,
 body .markdown-preview-view th,
-body .markdown-source-view.mod-cm6 .dataview.table-view-table thead.table-view-thead tr th,
+body
+  .markdown-source-view.mod-cm6
+  .dataview.table-view-table
+  thead.table-view-thead
+  tr
+  th,
 body .table-view-table > thead > tr > th {
   background-image: none;
 }
 
-.is-translucent .workspace-split.mod-left-split.is-sidedock-collapsed .workspace-tabs,
-.is-translucent .workspace-split.mod-right-split.is-sidedock-collapsed .workspace-tabs {
+.is-translucent
+  .workspace-split.mod-left-split.is-sidedock-collapsed
+  .workspace-tabs,
+.is-translucent
+  .workspace-split.mod-right-split.is-sidedock-collapsed
+  .workspace-tabs {
   visibility: hidden;
 }
 
@@ -654,11 +681,21 @@ body .table-view-table > thead > tr > th {
 
 .cm-formatting-link-string,
 .is-mobile .search-result-file-match-replace-button,
-.style-settings-container [data-level="1"].setting-item-heading .setting-item-name,
-.style-settings-container [data-level="2"].setting-item-heading .setting-item-name,
-.style-settings-container [data-level="3"].setting-item-heading .setting-item-name,
-.style-settings-container [data-level="4"].setting-item-heading .setting-item-name,
-.style-settings-container [data-level="5"].setting-item-heading .setting-item-name {
+.style-settings-container
+  [data-level="1"].setting-item-heading
+  .setting-item-name,
+.style-settings-container
+  [data-level="2"].setting-item-heading
+  .setting-item-name,
+.style-settings-container
+  [data-level="3"].setting-item-heading
+  .setting-item-name,
+.style-settings-container
+  [data-level="4"].setting-item-heading
+  .setting-item-name,
+.style-settings-container
+  [data-level="5"].setting-item-heading
+  .setting-item-name {
   color: var(--text-normal);
 }
 
@@ -752,9 +789,11 @@ span[alt="shib-embed"] .markdown-embed {
   background-color: rgb(var(--exterior));
 }
 
+/*
 .popover.hover-popover.is-loaded {
   animation: 0.2s fade;
 }
+*/
 
 .popover .markdown-embed-link {
   --icon-color: var(--text-normal);
@@ -772,18 +811,32 @@ span[alt="shib-embed"] .markdown-embed {
   background-color: var(--background-modifier-active-hover);
 }
 
-.shib-callout-toggle .callout[data-callout="quote"] .callout-title .callout-title-inner,
-.shib-callout-toggle.shib-callout-style-2 .callout.is-collapsible.is-collapsed .callout-content,
-.shib-callout-toggle.shib-callout-style-3 .callout.is-collapsible.is-collapsed .callout-content,
+.shib-callout-toggle
+  .callout[data-callout="quote"]
+  .callout-title
+  .callout-title-inner,
+.shib-callout-toggle.shib-callout-style-2
+  .callout.is-collapsible.is-collapsed
+  .callout-content,
+.shib-callout-toggle.shib-callout-style-3
+  .callout.is-collapsible.is-collapsed
+  .callout-content,
 .shib-codeblock-numbers .HyperMD-codeblock .cm-foldPlaceholder::before,
-.shib-floating-animated-tab-toggle .workspace .mod-root .workspace-tab-header-inner::after,
+.shib-floating-animated-tab-toggle
+  .workspace
+  .mod-root
+  .workspace-tab-header-inner::after,
 .shib-floating-animated-tab-toggle
   .workspace
   .mod-root
   .workspace-tabs:not(.mod-stacked)
   .workspace-tab-header-inner::after,
-.shib-floating-animated-tab-toggle .workspace-tabs:not(.mod-stacked) .workspace-tab-header::after,
-.shib-floating-animated-tab-toggle .workspace-tabs:not(.mod-stacked) .workspace-tab-header::before,
+.shib-floating-animated-tab-toggle
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header::after,
+.shib-floating-animated-tab-toggle
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header::before,
 .shib-floating-tab-toggle
   .workspace-split.mod-vertical.mod-root
   .workspace-tabs
@@ -810,7 +863,8 @@ span[alt="shib-embed"] .markdown-embed {
   .workspace-tab-header-container-inner
   .workspace-tab-header:not(.workspace-tab-header.is-active)
   ::after,
-.shib-workspace-background-image-toggle .view-header-title-container:not(.mod-at-end):after,
+.shib-workspace-background-image-toggle
+  .view-header-title-container:not(.mod-at-end):after,
 .style-settings-container:empty,
 body.hide-vault-title .nav-folder.mod-root > .nav-folder-title,
 body.shiba-clutter-free-headings
@@ -831,7 +885,9 @@ body.shiba-clutter-free-headings
   div:not(.cm-active).cm-line
   span:not(.cm-formatting-header).cm-header
   ~ span.cm-header::before,
-body:not(.shib-callout-toggle) .callout.is-collapsible.is-collapsed .callout-content,
+body:not(.shib-callout-toggle)
+  .callout.is-collapsible.is-collapsed
+  .callout-content,
 body:not(.shib-floating-animated-tab-toggle):not(.shib-disable-newtab-align)
   .workspace-split.mod-vertical
   .workspace-tab-header-spacer,
@@ -1158,7 +1214,10 @@ body:not(.shiba-remove-file-icons)
 
 .image-zoom :is(.HyperMD-list-line, ul) .image-embed.image-embed img:active,
 body.image-zoom:not(.is-mobile) .view-content .image-embed:active,
-body.image-zoom:not(.is-mobile) .view-content :is(.cm-editor, .markdown-preview-view) img:active {
+body.image-zoom:not(.is-mobile)
+  .view-content
+  :is(.cm-editor, .markdown-preview-view)
+  img:active {
   cursor: zoom-out;
   display: block;
   background: rgba(0, 0, 0, 0.5);
@@ -1183,7 +1242,9 @@ body.image-zoom:not(.is-mobile) .view-content :is(.cm-editor, .markdown-preview-
 }
 
 .theme-light .dropdown,
-body.dark-background-file:not(.shiba-remove-file-icons):not(.folder-style-change-options-colorful)
+body.dark-background-file:not(.shiba-remove-file-icons):not(
+    .folder-style-change-options-colorful
+  )
   .nav-file-title.is-active[data-path$=".md"]
   > .nav-file-title-content::before {
   background-color: var(--color-white);
@@ -1249,18 +1310,25 @@ body:not(.tag-default) .tag:not(.token):hover {
 }
 
 body:not(.font-family-change-to-default) .markdown-source-view,
-body:not(.font-family-change-to-default) .markdown-source-view.mod-cm6 .cm-scroller,
-body:not(.font-family-change-to-default) :is(.markdown-preview-view, .markdown-rendered) {
+body:not(.font-family-change-to-default)
+  .markdown-source-view.mod-cm6
+  .cm-scroller,
+body:not(.font-family-change-to-default)
+  :is(.markdown-preview-view, .markdown-rendered) {
   font-family: var(--font-text);
 }
 
-body.blockquote-style-outline :is(.markdown-preview-view, .markdown-rendered) blockquote {
+body.blockquote-style-outline
+  :is(.markdown-preview-view, .markdown-rendered)
+  blockquote {
   border: 1px solid var(--color-accent);
   background-color: rgba(var(--side), 0.3);
   border-radius: var(--radius-m);
 }
 
-body.blockquote-style-border-left :is(.markdown-preview-view, .markdown-rendered) blockquote {
+body.blockquote-style-border-left
+  :is(.markdown-preview-view, .markdown-rendered)
+  blockquote {
   border: 1px solid var(--color-accent);
   border-left: 4px solid var(--color-accent);
   background-color: rgba(var(--side), 0.3);
@@ -1268,14 +1336,18 @@ body.blockquote-style-border-left :is(.markdown-preview-view, .markdown-rendered
 }
 
 .is-mobile .workspace-drawer.mod-right,
-body.blockquote-style-quotation-mark .markdown-source-view.mod-cm6 .cm-blockquote-border:before,
+body.blockquote-style-quotation-mark
+  .markdown-source-view.mod-cm6
+  .cm-blockquote-border:before,
 body.blockquote-style-quotation-mark
   .markdown-source-view.mod-cm6.is-live-preview
   .HyperMD-quote:before {
   border-left: none;
 }
 
-body.blockquote-style-quotation-mark :is(.markdown-preview-view, .markdown-rendered) blockquote {
+body.blockquote-style-quotation-mark
+  :is(.markdown-preview-view, .markdown-rendered)
+  blockquote {
   color: var(--text-normal);
   box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
   padding-left: 35px;
@@ -1285,7 +1357,10 @@ body.blockquote-style-quotation-mark :is(.markdown-preview-view, .markdown-rende
   border-left-width: 0;
 }
 
-body.blockquote-style-quotation-mark :is(.markdown-preview-view, .markdown-rendered) blockquote p {
+body.blockquote-style-quotation-mark
+  :is(.markdown-preview-view, .markdown-rendered)
+  blockquote
+  p {
   position: relative;
   margin-left: 0.7em;
   margin-right: 0;
@@ -1665,37 +1740,49 @@ body.blockquote-style-quotation-mark
   --h6-color: rgb(var(--orange));
 }
 
-.shib-h1-underline .markdown-source-view.is-live-preview .HyperMD-header.HyperMD-header-1.cm-line,
+.shib-h1-underline
+  .markdown-source-view.is-live-preview
+  .HyperMD-header.HyperMD-header-1.cm-line,
 .shib-h1-underline :is(.markdown-preview-view, .markdown-rendered) h1 {
   border-bottom: var(--hr-thickness) solid var(--h1-color);
   padding-bottom: 2px;
 }
 
-.shib-h2-underline .markdown-source-view.is-live-preview .HyperMD-header.HyperMD-header-2.cm-line,
+.shib-h2-underline
+  .markdown-source-view.is-live-preview
+  .HyperMD-header.HyperMD-header-2.cm-line,
 .shib-h2-underline :is(.markdown-preview-view, .markdown-rendered) h2 {
   border-bottom: var(--hr-thickness) solid var(--h2-color);
   padding-bottom: 2px;
 }
 
-.shib-h3-underline .markdown-source-view.is-live-preview .HyperMD-header.HyperMD-header-3.cm-line,
+.shib-h3-underline
+  .markdown-source-view.is-live-preview
+  .HyperMD-header.HyperMD-header-3.cm-line,
 .shib-h3-underline :is(.markdown-preview-view, .markdown-rendered) h3 {
   border-bottom: var(--hr-thickness) solid var(--h3-color);
   padding-bottom: 2px;
 }
 
-.shib-h4-underline .markdown-source-view.is-live-preview .HyperMD-header.HyperMD-header-4.cm-line,
+.shib-h4-underline
+  .markdown-source-view.is-live-preview
+  .HyperMD-header.HyperMD-header-4.cm-line,
 .shib-h4-underline :is(.markdown-preview-view, .markdown-rendered) h4 {
   border-bottom: var(--hr-thickness) solid var(--h4-color);
   padding-bottom: 2px;
 }
 
-.shib-h5-underline .markdown-source-view.is-live-preview .HyperMD-header.HyperMD-header-5.cm-line,
+.shib-h5-underline
+  .markdown-source-view.is-live-preview
+  .HyperMD-header.HyperMD-header-5.cm-line,
 .shib-h5-underline :is(.markdown-preview-view, .markdown-rendered) h5 {
   border-bottom: var(--hr-thickness) solid var(--h5-color);
   padding-bottom: 2px;
 }
 
-.shib-h6-underline .markdown-source-view.is-live-preview .HyperMD-header.HyperMD-header-6.cm-line,
+.shib-h6-underline
+  .markdown-source-view.is-live-preview
+  .HyperMD-header.HyperMD-header-6.cm-line,
 .shib-h6-underline :is(.markdown-preview-view, .markdown-rendered) h6 {
   border-bottom: var(--hr-thickness) solid var(--h6-color);
   padding-bottom: 2px;
@@ -1930,7 +2017,10 @@ body:not(.shiba-remove-heading-indicator)
 }
 
 body:not(.shiba-remove-heading-indicator) .markdown-embed h1:hover::before,
-body:not(.shiba-remove-heading-indicator) .markdown-preview-view .callout-content h1:hover::before,
+body:not(.shiba-remove-heading-indicator)
+  .markdown-preview-view
+  .callout-content
+  h1:hover::before,
 body:not(.shiba-remove-heading-indicator) .popover h1:hover::before {
   content: "H1";
   position: absolute;
@@ -1943,7 +2033,10 @@ body:not(.shiba-remove-heading-indicator) .popover h1:hover::before {
 }
 
 body:not(.shiba-remove-heading-indicator) .markdown-embed h2:hover::before,
-body:not(.shiba-remove-heading-indicator) .markdown-preview-view .callout-content h2:hover::before,
+body:not(.shiba-remove-heading-indicator)
+  .markdown-preview-view
+  .callout-content
+  h2:hover::before,
 body:not(.shiba-remove-heading-indicator) .popover h2:hover::before {
   content: "H2";
   position: absolute;
@@ -1956,7 +2049,10 @@ body:not(.shiba-remove-heading-indicator) .popover h2:hover::before {
 }
 
 body:not(.shiba-remove-heading-indicator) .markdown-embed h3:hover::before,
-body:not(.shiba-remove-heading-indicator) .markdown-preview-view .callout-content h3:hover::before,
+body:not(.shiba-remove-heading-indicator)
+  .markdown-preview-view
+  .callout-content
+  h3:hover::before,
 body:not(.shiba-remove-heading-indicator) .popover h3:hover::before {
   content: "H3";
   position: absolute;
@@ -1969,7 +2065,10 @@ body:not(.shiba-remove-heading-indicator) .popover h3:hover::before {
 }
 
 body:not(.shiba-remove-heading-indicator) .markdown-embed h4:hover::before,
-body:not(.shiba-remove-heading-indicator) .markdown-preview-view .callout-content h4:hover::before,
+body:not(.shiba-remove-heading-indicator)
+  .markdown-preview-view
+  .callout-content
+  h4:hover::before,
 body:not(.shiba-remove-heading-indicator) .popover h4:hover::before {
   content: "H4";
   position: absolute;
@@ -1982,7 +2081,10 @@ body:not(.shiba-remove-heading-indicator) .popover h4:hover::before {
 }
 
 body:not(.shiba-remove-heading-indicator) .markdown-embed h5:hover::before,
-body:not(.shiba-remove-heading-indicator) .markdown-preview-view .callout-content h5:hover::before,
+body:not(.shiba-remove-heading-indicator)
+  .markdown-preview-view
+  .callout-content
+  h5:hover::before,
 body:not(.shiba-remove-heading-indicator) .popover h5:hover::before {
   content: "H5";
   position: absolute;
@@ -1995,7 +2097,10 @@ body:not(.shiba-remove-heading-indicator) .popover h5:hover::before {
 }
 
 body:not(.shiba-remove-heading-indicator) .markdown-embed h6:hover::before,
-body:not(.shiba-remove-heading-indicator) .markdown-preview-view .callout-content h6:hover::before,
+body:not(.shiba-remove-heading-indicator)
+  .markdown-preview-view
+  .callout-content
+  h6:hover::before,
 body:not(.shiba-remove-heading-indicator) .popover h6:hover::before {
   content: "H6";
   position: absolute;
@@ -2022,15 +2127,18 @@ body:not(.shiba-remove-heading-indicator)
   top: -1.25em;
 }
 
-:is(.markdown-preview-section, .markdown-rendered) table:not(.dataview.table-view-table) {
+:is(.markdown-preview-section, .markdown-rendered)
+  table:not(.dataview.table-view-table) {
   width: 100%;
   border-collapse: collapse;
   overflow: auto;
   margin: 20px auto;
 }
 
-:is(.markdown-preview-section, .markdown-rendered) table:not(.dataview.table-view-table):active,
-:is(.markdown-preview-section, .markdown-rendered) table:not(.dataview.table-view-table):hover {
+:is(.markdown-preview-section, .markdown-rendered)
+  table:not(.dataview.table-view-table):active,
+:is(.markdown-preview-section, .markdown-rendered)
+  table:not(.dataview.table-view-table):hover {
   overflow: hidden;
   resize: both !important;
 }
@@ -2055,8 +2163,14 @@ body:not(.default-unresolved-link)
 }
 
 body.link-underline-unresolved * > .internal-link.is-unresolved,
-body.link-underline-unresolved .cm-hmd-internal-link .is-unresolved .cm-underline,
-body.link-underline-unresolved .markdown-source-view.mod-cm6 .cm-hmd-internal-link .is-unresolved,
+body.link-underline-unresolved
+  .cm-hmd-internal-link
+  .is-unresolved
+  .cm-underline,
+body.link-underline-unresolved
+  .markdown-source-view.mod-cm6
+  .cm-hmd-internal-link
+  .is-unresolved,
 body.link-underline-unresolved .markdown-source-view.mod-cm6 .is-unresolved,
 body.link-underline-unresolved
   :is(.markdown-preview-view, .markdown-rendered)
@@ -2075,7 +2189,8 @@ body:not(.default-unresolved-link)
   opacity: 0.9;
 }
 
-:is(.markdown-preview-view, .markdown-rendered) .internal-link.is-unresolved:hover {
+:is(.markdown-preview-view, .markdown-rendered)
+  .internal-link.is-unresolved:hover {
   opacity: 1 !important;
 }
 
@@ -2099,7 +2214,10 @@ a.external-link {
 }
 
 body.link-underline-externa .markdown-source-view.mod-cm6 .cm-url .cm-underline,
-body.link-underline-external .markdown-source-view.mod-cm6 .cm-link .cm-underline,
+body.link-underline-external
+  .markdown-source-view.mod-cm6
+  .cm-link
+  .cm-underline,
 body.link-underline-external a.external-link,
 body:not(.link-underline-internal)
   .markdown-source-view.mod-cm6
@@ -2150,7 +2268,9 @@ body:not(.link-underline-internal)
 body.buttons-workspace-style.theme-light .graph-controls button,
 body.buttons-workspace-style.theme-light .modal button,
 body.buttons-workspace-style.theme-light .popover button,
-body.buttons-workspace-style.theme-light:not(.buttons-plugin-style) .workspace button {
+body.buttons-workspace-style.theme-light:not(.buttons-plugin-style)
+  .workspace
+  button {
   border: 1px solid rgba(100, 100, 100, 0.3);
   box-shadow: 0 -1px 6px -1px rgba(172, 172, 172, 0.4) inset;
   -webkit-box-shadow: 0 -1px 6px -1px rgba(118, 118, 118, 0.4) inset;
@@ -2169,7 +2289,9 @@ body.buttons-workspace-style.theme-light .workspace button:active {
 body.buttons-workspace-style.theme-dark .graph-controls button,
 body.buttons-workspace-style.theme-dark .modal button,
 body.buttons-workspace-style.theme-dark .popover button,
-body.buttons-workspace-style.theme-dark:not(.buttons-plugin-style) .workspace button {
+body.buttons-workspace-style.theme-dark:not(.buttons-plugin-style)
+  .workspace
+  button {
   border: 1px solid rgba(0, 0, 0, 0.43);
   box-shadow: 0 -1px 5px 0 rgba(0, 0, 0, 0.4) inset;
   -webkit-box-shadow: 0 -1px 5px 0 rgba(0, 0, 0, 0.4) inset;
@@ -2231,7 +2353,11 @@ body.buttons-workspace-style.theme-dark .workspace button:active {
   background-color: var(--interactive-hover);
 }
 
-.theme-light .modal .modal-content .vertical-tab-header-group-items .vertical-tab-nav-item:active {
+.theme-light
+  .modal
+  .modal-content
+  .vertical-tab-header-group-items
+  .vertical-tab-nav-item:active {
   color: var(--text-muted);
   background: var(--interactive-hover);
 }
@@ -2282,11 +2408,19 @@ body.buttons-workspace-style.theme-dark .workspace button:active {
   background: var(--color-accent);
 }
 
-.theme-dark .modal .modal-content .vertical-tab-header-group-items .vertical-tab-nav-item:hover {
+.theme-dark
+  .modal
+  .modal-content
+  .vertical-tab-header-group-items
+  .vertical-tab-nav-item:hover {
   background: var(--interactive-hover);
 }
 
-.theme-dark .modal .modal-content .vertical-tab-header-group-items .vertical-tab-nav-item:active {
+.theme-dark
+  .modal
+  .modal-content
+  .vertical-tab-header-group-items
+  .vertical-tab-nav-item:active {
   color: var(--interactive-accent);
   background: var(--background-secondary-alt);
 }
@@ -2449,22 +2583,26 @@ body:not(.shib-hide-scrollbars).shib-styled-scrollbars ::-webkit-scrollbar {
 }
 
 body:not(.native-scrollbars) ::-webkit-scrollbar:horizontal,
-body:not(.shib-hide-scrollbars).shib-styled-scrollbars ::-webkit-scrollbar:horizontal {
+body:not(.shib-hide-scrollbars).shib-styled-scrollbars
+  ::-webkit-scrollbar:horizontal {
   height: 11px;
 }
 
 body:not(.native-scrollbars) ::-webkit-scrollbar-corner,
-body:not(.shib-hide-scrollbars).shib-styled-scrollbars ::-webkit-scrollbar-corner {
+body:not(.shib-hide-scrollbars).shib-styled-scrollbars
+  ::-webkit-scrollbar-corner {
   background-color: transparent;
 }
 
 body:not(.native-scrollbars) ::-webkit-scrollbar-track,
-body:not(.shib-hide-scrollbars).shib-styled-scrollbars ::-webkit-scrollbar-track {
+body:not(.shib-hide-scrollbars).shib-styled-scrollbars
+  ::-webkit-scrollbar-track {
   background-color: transparent;
 }
 
 body:not(.native-scrollbars) ::-webkit-scrollbar-thumb,
-body:not(.shib-hide-scrollbars).shib-styled-scrollbars ::-webkit-scrollbar-thumb {
+body:not(.shib-hide-scrollbars).shib-styled-scrollbars
+  ::-webkit-scrollbar-thumb {
   background-clip: padding-box;
   border-radius: 20px;
   border: 3px solid transparent;
@@ -2472,8 +2610,13 @@ body:not(.shib-hide-scrollbars).shib-styled-scrollbars ::-webkit-scrollbar-thumb
   min-height: 45px;
 }
 
-body:not(.native-scrollbars) .mod-left-split .workspace-tabs ::-webkit-scrollbar-thumb:hover,
-body:not(.native-scrollbars) .modal .vertical-tab-header::-webkit-scrollbar-thumb:hover,
+body:not(.native-scrollbars)
+  .mod-left-split
+  .workspace-tabs
+  ::-webkit-scrollbar-thumb:hover,
+body:not(.native-scrollbars)
+  .modal
+  .vertical-tab-header::-webkit-scrollbar-thumb:hover,
 body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:hover,
 body:not(.shib-hide-scrollbars).shib-styled-scrollbars
   .mod-left-split
@@ -2482,12 +2625,18 @@ body:not(.shib-hide-scrollbars).shib-styled-scrollbars
 body:not(.shib-hide-scrollbars).shib-styled-scrollbars
   .modal
   .vertical-tab-header::-webkit-scrollbar-thumb:hover,
-body:not(.shib-hide-scrollbars).shib-styled-scrollbars ::-webkit-scrollbar-thumb:hover {
+body:not(.shib-hide-scrollbars).shib-styled-scrollbars
+  ::-webkit-scrollbar-thumb:hover {
   background-color: var(--background-modifier-border-hover);
 }
 
-body:not(.native-scrollbars) .mod-left-split .workspace-tabs ::-webkit-scrollbar-thumb:active,
-body:not(.native-scrollbars) .modal .vertical-tab-header::-webkit-scrollbar-thumb:active,
+body:not(.native-scrollbars)
+  .mod-left-split
+  .workspace-tabs
+  ::-webkit-scrollbar-thumb:active,
+body:not(.native-scrollbars)
+  .modal
+  .vertical-tab-header::-webkit-scrollbar-thumb:active,
 body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:active,
 body:not(.shib-hide-scrollbars).shib-styled-scrollbars
   .mod-left-split
@@ -2496,7 +2645,8 @@ body:not(.shib-hide-scrollbars).shib-styled-scrollbars
 body:not(.shib-hide-scrollbars).shib-styled-scrollbars
   .modal
   .vertical-tab-header::-webkit-scrollbar-thumb:active,
-body:not(.shib-hide-scrollbars).shib-styled-scrollbars ::-webkit-scrollbar-thumb:active {
+body:not(.shib-hide-scrollbars).shib-styled-scrollbars
+  ::-webkit-scrollbar-thumb:active {
   background-color: var(--background-modifier-border-focus);
 }
 
@@ -2519,7 +2669,9 @@ body:not(.shib-hide-scrollbars).shib-styled-scrollbars ::-webkit-scrollbar-thumb
 
 .shib-card-layout .workspace-split:not(.mod-root) .graph-controls,
 .shib-card-layout .workspace-split:not(.mod-root) .graph-controls.is-close,
-.shib-card-layout .workspace-split:not(.mod-root) .graph-controls:not(.is-close),
+.shib-card-layout
+  .workspace-split:not(.mod-root)
+  .graph-controls:not(.is-close),
 .workspace-leaf .graph-controls,
 .workspace-leaf .graph-controls.is-close,
 .workspace-leaf .graph-controls:not(.is-close) {
@@ -2530,7 +2682,8 @@ body:not(.shib-hide-scrollbars).shib-styled-scrollbars ::-webkit-scrollbar-thumb
 .shib-card-layout .workspace-tabs.mod-top,
 body.shib-card-layout {
   --tab-container-background: var(--card-background-color);
-  --file-header-border: var(--border-width) dotted var(--background-modifier-border);
+  --file-header-border: var(--border-width) dotted
+    var(--background-modifier-border);
 }
 
 body.is-focused.shib-card-layout,
@@ -2603,9 +2756,16 @@ body.is-focused.shib-card-layout .workspace-tabs.mod-top {
   background-color: var(--tab-container-background);
 }
 
-.shib-card-layout .workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle,
-.shib-card-layout .workspace-split.mod-left-split > .workspace-leaf-resize-handle,
-.shib-card-layout .workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+.shib-card-layout
+  .workspace-split.mod-horizontal
+  > *
+  > .workspace-leaf-resize-handle,
+.shib-card-layout
+  .workspace-split.mod-left-split
+  > .workspace-leaf-resize-handle,
+.shib-card-layout
+  .workspace-split.mod-right-split
+  > .workspace-leaf-resize-handle {
   border: 2px solid transparent;
 }
 
@@ -2624,7 +2784,9 @@ body.is-focused.shib-card-layout .workspace-tabs.mod-top {
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.05);
 }
 
-.shib-card-layout .workspace-split .workspace-leaf-content[data-type="file-explorer"] {
+.shib-card-layout
+  .workspace-split
+  .workspace-leaf-content[data-type="file-explorer"] {
   background-color: var(--tab-container-background);
   box-shadow: none;
   border-width: 0;
@@ -2921,7 +3083,9 @@ button.tiny:hover::before {
   padding: 3px 8px;
 }
 
-.is-mobile .workspace-leaf-content[data-type="file-explorer"] .nav-buttons-container {
+.is-mobile
+  .workspace-leaf-content[data-type="file-explorer"]
+  .nav-buttons-container {
   margin: 0 0 5px;
 }
 
@@ -2952,7 +3116,11 @@ button.tiny:hover::before {
   padding: 5px 3px 2px;
 }
 
-.is-mobile .workspace > .workspace-split > .workspace-leaf:first-of-type:last-of-type .view-header {
+.is-mobile
+  .workspace
+  > .workspace-split
+  > .workspace-leaf:first-of-type:last-of-type
+  .view-header {
   background: linear-gradient(
     120deg,
     var(--color-view-header-gradient-1) 0,
@@ -2977,7 +3145,10 @@ button.tiny:hover::before {
   font-size: 12px;
 }
 
-body:not(.default-icons) .is-mobile .cm-gutterElement > span[title="Fold line"]::before {
+body:not(.default-icons)
+  .is-mobile
+  .cm-gutterElement
+  > span[title="Fold line"]::before {
   content: "↓";
   font-size: 1rem;
   font-weight: 700;
@@ -2985,7 +3156,10 @@ body:not(.default-icons) .is-mobile .cm-gutterElement > span[title="Fold line"]:
   color: var(--text-accent);
 }
 
-body:not(.default-icons) .is-mobile .cm-gutterElement > span[title="Unfold line"]::before {
+body:not(.default-icons)
+  .is-mobile
+  .cm-gutterElement
+  > span[title="Unfold line"]::before {
   content: "→";
   font-size: 1rem;
   font-weight: 700;
@@ -2997,7 +3171,9 @@ body:not(.default-icons) .is-mobile .cm-gutterElement > span[title="Unfold line"
   color: var(--red);
 }
 
-body:not(.font-family-change-to-default).is-mobile .markdown-source-view.mod-cm6 .cm-scroller {
+body:not(.font-family-change-to-default).is-mobile
+  .markdown-source-view.mod-cm6
+  .cm-scroller {
   font-family: var(--font-text);
 }
 
@@ -3068,7 +3244,11 @@ body:not(.font-family-change-to-default).is-mobile .markdown-source-view.mod-cm6
   position: relative;
 }
 
-.is-mobile :is(.markdown-preview-view, .markdown-rendered).kanban-plugin__markdown-preview-view {
+.is-mobile
+  :is(
+    .markdown-preview-view,
+    .markdown-rendered
+  ).kanban-plugin__markdown-preview-view {
   padding: 0 5px;
 }
 
@@ -3086,16 +3266,33 @@ body:not(.font-family-change-to-default).is-mobile .markdown-source-view.mod-cm6
   border-bottom: 1px solid var(--cards-background-modifier-border) !important;
 }
 
-.minimal-cards-style .cards .table-view-table > tbody > tr > td:first-child span {
-  margin: 2px calc(var(--cards-padding) * 0.5) 0 calc(var(--cards-padding) * 0.5);
+.minimal-cards-style
+  .cards
+  .table-view-table
+  > tbody
+  > tr
+  > td:first-child
+  span {
+  margin: 2px calc(var(--cards-padding) * 0.5) 0
+    calc(var(--cards-padding) * 0.5);
 }
 
-.minimal-cards-style .cards .table-view-table > tbody > tr > td:first-child span a {
+.minimal-cards-style
+  .cards
+  .table-view-table
+  > tbody
+  > tr
+  > td:first-child
+  span
+  a {
   padding: 0 !important;
 }
 
 .cards:not([class*="cards-cols-"]) {
-  --cards-columns: repeat(auto-fit, minmax(var(--cards-min-width), var(--cards-max-width)));
+  --cards-columns: repeat(
+    auto-fit,
+    minmax(var(--cards-min-width), var(--cards-max-width))
+  );
 }
 
 .minimal-cards-style .cards table.dataview > tbody > tr {
@@ -3103,15 +3300,18 @@ body:not(.font-family-change-to-default).is-mobile .markdown-source-view.mod-cm6
 }
 
 .minimal-cards-style1 .cards table.dataview > tbody > tr {
-  border: var(--cards-border-width) solid var(--cards-background-modifier-border);
+  border: var(--cards-border-width) solid
+    var(--cards-background-modifier-border);
 }
 
 .minimal-cards-style2 .cards table.dataview > tbody > tr {
-  border: var(--cards-border-width) dashed var(--cards-background-modifier-border);
+  border: var(--cards-border-width) dashed
+    var(--cards-background-modifier-border);
 }
 
 .minimal-cards-style3 .cards table.dataview > tbody > tr {
-  border: var(--cards-border-width) dotted var(--cards-background-modifier-border);
+  border: var(--cards-border-width) dotted
+    var(--cards-background-modifier-border);
 }
 
 .callout-icon svg {
@@ -3149,18 +3349,27 @@ body:not(.shib-callout-toggle) .callout:not(.is-collapsible) {
 }
 
 .shib-callout-toggle.shib-callout-style-2 .callout .callout-content,
-.shib-callout-toggle.shib-callout-style-2 .callout:not(.is-collapsible) .callout-content,
+.shib-callout-toggle.shib-callout-style-2
+  .callout:not(.is-collapsible)
+  .callout-content,
 .shib-callout-toggle.shib-callout-style-3 .callout .callout-content,
-.shib-callout-toggle.shib-callout-style-3 .callout:not(.is-collapsible) .callout-content,
+.shib-callout-toggle.shib-callout-style-3
+  .callout:not(.is-collapsible)
+  .callout-content,
 body:not(.shib-callout-toggle) .callout .callout-content,
 body:not(.shib-callout-toggle) .callout:not(.is-collapsible) .callout-content {
-  padding: 0 var(--callout-title-padding) var(--callout-title-padding) var(--callout-title-padding);
+  padding: 0 var(--callout-title-padding) var(--callout-title-padding)
+    var(--callout-title-padding);
 }
 
 .shib-callout-toggle.shib-callout-style-2 .callout .callout-title,
-.shib-callout-toggle.shib-callout-style-2 .callout:not(.is-collapsible) .callout-title,
+.shib-callout-toggle.shib-callout-style-2
+  .callout:not(.is-collapsible)
+  .callout-title,
 .shib-callout-toggle.shib-callout-style-3 .callout .callout-title,
-.shib-callout-toggle.shib-callout-style-3 .callout:not(.is-collapsible) .callout-title,
+.shib-callout-toggle.shib-callout-style-3
+  .callout:not(.is-collapsible)
+  .callout-title,
 body:not(.shib-callout-toggle) .callout .callout-title,
 body:not(.shib-callout-toggle) .callout:not(.is-collapsible) .callout-title {
   background-color: rgba(var(--callout-color), 0 0.5);
@@ -3168,18 +3377,27 @@ body:not(.shib-callout-toggle) .callout:not(.is-collapsible) .callout-title {
   cursor: pointer;
 }
 
-.shib-callout-toggle.shib-callout-style-2 .callout .callout-title .callout-title-inner,
+.shib-callout-toggle.shib-callout-style-2
+  .callout
+  .callout-title
+  .callout-title-inner,
 .shib-callout-toggle.shib-callout-style-2
   .callout:not(.is-collapsible)
   .callout-title
   .callout-title-inner,
-.shib-callout-toggle.shib-callout-style-3 .callout .callout-title .callout-title-inner,
+.shib-callout-toggle.shib-callout-style-3
+  .callout
+  .callout-title
+  .callout-title-inner,
 .shib-callout-toggle.shib-callout-style-3
   .callout:not(.is-collapsible)
   .callout-title
   .callout-title-inner,
 body:not(.shib-callout-toggle) .callout .callout-title .callout-title-inner,
-body:not(.shib-callout-toggle) .callout:not(.is-collapsible) .callout-title .callout-title-inner {
+body:not(.shib-callout-toggle)
+  .callout:not(.is-collapsible)
+  .callout-title
+  .callout-title-inner {
   font-weight: 400;
 }
 
@@ -3194,8 +3412,8 @@ body:not(.shib-callout-toggle) .callout:not(.is-collapsible) {
 
 .shib-callout-toggle.shib-callout-style-3 .callout .callout-content,
 body:not(.shib-callout-toggle) .callout .callout-content {
-  padding: var(--callout-title-padding) var(--callout-title-padding) var(--callout-title-padding)
-    calc(var(--callout-title-padding) * 1.5);
+  padding: var(--callout-title-padding) var(--callout-title-padding)
+    var(--callout-title-padding) calc(var(--callout-title-padding) * 1.5);
   border-top: 1px solid rgba(var(--callout-color), 0.4);
 }
 
@@ -3211,13 +3429,21 @@ body:not(.shib-callout-toggle) .callout.is-collapsible .callout-fold {
   padding-right: 0;
 }
 
-.shib-callout-toggle.shib-callout-style-1 .callout.is-collapsible .callout-title-inner,
+.shib-callout-toggle.shib-callout-style-1
+  .callout.is-collapsible
+  .callout-title-inner,
 .shib-callout-toggle.shib-callout-style-2 .callout .callout-title-inner,
-.shib-callout-toggle.shib-callout-style-2 .callout.is-collapsible .callout-title-inner,
+.shib-callout-toggle.shib-callout-style-2
+  .callout.is-collapsible
+  .callout-title-inner,
 .shib-callout-toggle.shib-callout-style-3 .callout .callout-title-inner,
-.shib-callout-toggle.shib-callout-style-3 .callout.is-collapsible .callout-title-inner,
+.shib-callout-toggle.shib-callout-style-3
+  .callout.is-collapsible
+  .callout-title-inner,
 .shib-callout-toggle.shib-callout-style-4 .callout .callout-title-inner,
-.shib-callout-toggle.shib-callout-style-4 .callout.is-collapsible .callout-title-inner,
+.shib-callout-toggle.shib-callout-style-4
+  .callout.is-collapsible
+  .callout-title-inner,
 body:not(.shib-callout-toggle) .callout .callout-title-inner,
 body:not(.shib-callout-toggle) .callout.is-collapsible .callout-title-inner {
   flex-grow: var(--shib-callout-fold-position, unset);
@@ -3233,23 +3459,37 @@ body:not(.shib-callout-toggle) .callout.is-collapsible {
   --bold-weight: bolder;
 }
 
-.shib-callout-toggle.shib-callout-style-2 .callout.is-collapsible.is-collapsed .callout-title,
-.shib-callout-toggle.shib-callout-style-3 .callout.is-collapsible.is-collapsed .callout-title,
-body:not(.shib-callout-toggle) .callout.is-collapsible.is-collapsed .callout-title {
+.shib-callout-toggle.shib-callout-style-2
+  .callout.is-collapsible.is-collapsed
+  .callout-title,
+.shib-callout-toggle.shib-callout-style-3
+  .callout.is-collapsible.is-collapsed
+  .callout-title,
+body:not(.shib-callout-toggle)
+  .callout.is-collapsible.is-collapsed
+  .callout-title {
   background-color: rgba(var(--callout-color), 0.1);
   padding: var(--callout-title-padding);
   cursor: pointer;
 }
 
-.shib-callout-toggle.shib-callout-style-2 .callout.is-collapsible:not(.is-collapsed),
-.shib-callout-toggle.shib-callout-style-3 .callout.is-collapsible:not(.is-collapsed),
+.shib-callout-toggle.shib-callout-style-2
+  .callout.is-collapsible:not(.is-collapsed),
+.shib-callout-toggle.shib-callout-style-3
+  .callout.is-collapsible:not(.is-collapsed),
 body:not(.shib-callout-toggle) .callout.is-collapsible:not(.is-collapsed) {
   padding: 0 0 var(--callout-title-padding) 0;
 }
 
-.shib-callout-toggle.shib-callout-style-2 .callout.is-collapsible:not(.is-collapsed) .callout-title,
-.shib-callout-toggle.shib-callout-style-3 .callout.is-collapsible:not(.is-collapsed) .callout-title,
-body:not(.shib-callout-toggle) .callout.is-collapsible:not(.is-collapsed) .callout-title {
+.shib-callout-toggle.shib-callout-style-2
+  .callout.is-collapsible:not(.is-collapsed)
+  .callout-title,
+.shib-callout-toggle.shib-callout-style-3
+  .callout.is-collapsible:not(.is-collapsed)
+  .callout-title,
+body:not(.shib-callout-toggle)
+  .callout.is-collapsible:not(.is-collapsed)
+  .callout-title {
   background-color: rgba(var(--callout-color), 0.1);
   padding: var(--callout-title-padding);
   border-color: rgba(var(--callout-color), 0.4);
@@ -3259,14 +3499,20 @@ body:not(.shib-callout-toggle) .callout.is-collapsible:not(.is-collapsed) .callo
 .shib-callout-toggle.shib-callout-style-3
   .callout.is-collapsible:not(.is-collapsed)
   .callout-content,
-body:not(.shib-callout-toggle) .callout.is-collapsible:not(.is-collapsed) .callout-content {
+body:not(.shib-callout-toggle)
+  .callout.is-collapsible:not(.is-collapsed)
+  .callout-content {
   padding: var(--callout-title-padding) var(--callout-title-padding) 0
     calc(var(--callout-title-padding) * 1.5);
   border-top: 2px solid rgba(var(--callout-color), 0.4);
 }
 
-.shib-callout-toggle.shib-callout-style-2 .callout:not(.is-collapsible) .callout-title,
-.shib-callout-toggle.shib-callout-style-3 .callout:not(.is-collapsible) .callout-title,
+.shib-callout-toggle.shib-callout-style-2
+  .callout:not(.is-collapsible)
+  .callout-title,
+.shib-callout-toggle.shib-callout-style-3
+  .callout:not(.is-collapsible)
+  .callout-title,
 body:not(.shib-callout-toggle) .callout:not(.is-collapsible) .callout-title {
   background-color: rgba(var(--callout-color), 0.1);
   padding: var(--callout-title-padding);
@@ -3304,7 +3550,10 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   border-color: rgba(var(--callout-color), 0.4);
 }
 
-.shib-callout-toggle.shib-callout-style-1 .callout .callout-title:empty + .callout-content {
+.shib-callout-toggle.shib-callout-style-1
+  .callout
+  .callout-title:empty
+  + .callout-content {
   padding: 12px;
   border-top-style: solid;
   border-top-width: 1px;
@@ -3346,8 +3595,8 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
 }
 
 .shib-callout-toggle.shib-callout-style-2 .callout .callout-content {
-  padding: var(--callout-title-padding) var(--callout-title-padding) var(--callout-title-padding)
-    calc(var(--callout-title-padding) * 1.5);
+  padding: var(--callout-title-padding) var(--callout-title-padding)
+    var(--callout-title-padding) calc(var(--callout-title-padding) * 1.5);
   border-top: 1px dashed rgba(var(--callout-color), 0.4);
 }
 
@@ -3389,12 +3638,16 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   background: rgba(var(--callout-color), 0.2);
 }
 
-.shib-callout-toggle.shib-callout-style-4.theme-light .callout-title .callout-icon {
+.shib-callout-toggle.shib-callout-style-4.theme-light
+  .callout-title
+  .callout-icon {
   border-radius: 10px;
   filter: brightness(0.75);
 }
 
-.shib-callout-toggle.shib-callout-style-4.theme-dark .callout-title .callout-icon {
+.shib-callout-toggle.shib-callout-style-4.theme-dark
+  .callout-title
+  .callout-icon {
   border-radius: 10px;
   filter: brightness(1);
 }
@@ -3413,7 +3666,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.175) inset;
 }
 
-.shib-callout-toggle.shib-callout-style-4 .callout.is-collapsible:not(.is-collapsed) .callout-fold {
+.shib-callout-toggle.shib-callout-style-4
+  .callout.is-collapsible:not(.is-collapsed)
+  .callout-fold {
   padding-right: 0;
   color: rgba(var(--callout-color), 1);
 }
@@ -3471,7 +3726,10 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
 .shib-callout-toggle .callout-content > ol:first-child,
 .shib-callout-toggle .callout-content > p:first-child,
 .shib-callout-toggle .callout-content > ul:first-child,
-.shib-callout-toggle .callout[data-callout="quote"] .callout-content p:first-child {
+.shib-callout-toggle
+  .callout[data-callout="quote"]
+  .callout-content
+  p:first-child {
   margin-top: 0;
 }
 
@@ -3532,13 +3790,19 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   --callout-color: var(--accent);
 }
 
-.shib-callout-toggle .callout[data-callout="quote"] .callout-title .callout-icon,
-.shib-table-auto.markdown-rendered.cards:not(.table-disable) table:not(.dataview),
+.shib-callout-toggle
+  .callout[data-callout="quote"]
+  .callout-title
+  .callout-icon,
+.shib-table-auto.markdown-rendered.cards:not(.table-disable)
+  table:not(.dataview),
 .shib-table-auto.markdown-rendered:not(.cards):not(.table-disable) table,
 .shib-table-auto.shib-table-toggle
   .markdown-rendered.cards:not(.table-disable)
   table:not(.dataview),
-.shib-table-auto.shib-table-toggle .markdown-rendered:not(.cards):not(.table-disable) table {
+.shib-table-auto.shib-table-toggle
+  .markdown-rendered:not(.cards):not(.table-disable)
+  table {
   margin: 0 auto;
 }
 
@@ -3551,7 +3815,10 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   text-align: center;
 }
 
-.shib-callout-toggle .callout[data-callout="quote"] .callout-content p:last-child {
+.shib-callout-toggle
+  .callout[data-callout="quote"]
+  .callout-content
+  p:last-child {
   font-style: normal;
   color: rgb(var(--yellow, 153, 122, 0));
   text-align: right;
@@ -3651,19 +3918,27 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   padding-top: 32px;
 }
 
-.shib-floating-header.shib-custom-vault-folder-toggle .nav-folder.mod-root > .nav-folder-title {
+.shib-floating-header.shib-custom-vault-folder-toggle
+  .nav-folder.mod-root
+  > .nav-folder-title {
   padding-top: 6px;
 }
 
-.shib-floating-header.shib-custom-vault-folder-toggle .nav-folder.mod-root > .nav-folder-children {
+.shib-floating-header.shib-custom-vault-folder-toggle
+  .nav-folder.mod-root
+  > .nav-folder-children {
   padding-top: 45px;
 }
 
-.shib-floating-header.shib-custom-vault-shiba-toggle .nav-folder.mod-root > .nav-folder-title {
+.shib-floating-header.shib-custom-vault-shiba-toggle
+  .nav-folder.mod-root
+  > .nav-folder-title {
   padding-top: 10px;
 }
 
-.shib-floating-header.shib-custom-vault-shiba-toggle .nav-folder.mod-root > .nav-folder-children {
+.shib-floating-header.shib-custom-vault-shiba-toggle
+  .nav-folder.mod-root
+  > .nav-folder-children {
   padding-top: 50px;
 }
 
@@ -3672,13 +3947,17 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
 }
 
 .shib-codeblock-numbers
-  .HyperMD-codeblock.cm-line:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end) {
+  .HyperMD-codeblock.cm-line:not(.HyperMD-codeblock-begin):not(
+    .HyperMD-codeblock-end
+  ) {
   padding-left: 5em;
   position: relative;
 }
 
 .shib-codeblock-numbers
-  .HyperMD-codeblock.cm-line:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end)::before {
+  .HyperMD-codeblock.cm-line:not(.HyperMD-codeblock-begin):not(
+    .HyperMD-codeblock-end
+  )::before {
   align-items: flex-end;
   border-right: 1px solid var(--scrollbar-thumb-bg);
   color: var(--text-faint);
@@ -3700,29 +3979,45 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   .HyperMD-codeblock.cm-line.cm-active:not(.HyperMD-codeblock-begin):not(
     .HyperMD-codeblock-end
   )::before,
-.style-settings-heading[data-id="shiba-theme-settings-extended"] .setting-item-name,
+.style-settings-heading[data-id="shiba-theme-settings-extended"]
+  .setting-item-name,
 .style-settings-heading[data-id="shiba-theme-settings"] .setting-item-name {
   color: var(--color-accent);
 }
 
-.style-settings-container [data-level="1"].setting-item-heading.style-settings-heading,
-.style-settings-container [data-level="2"].setting-item-heading.style-settings-heading,
-.style-settings-container [data-level="3"].setting-item-heading.style-settings-heading,
-.style-settings-container [data-level="4"].setting-item-heading.style-settings-heading,
-.style-settings-container [data-level="5"].setting-item-heading.style-settings-heading {
+.style-settings-container
+  [data-level="1"].setting-item-heading.style-settings-heading,
+.style-settings-container
+  [data-level="2"].setting-item-heading.style-settings-heading,
+.style-settings-container
+  [data-level="3"].setting-item-heading.style-settings-heading,
+.style-settings-container
+  [data-level="4"].setting-item-heading.style-settings-heading,
+.style-settings-container
+  [data-level="5"].setting-item-heading.style-settings-heading {
   border-bottom: 1px solid rgba(var(--text), 0.2);
 }
 
 .style-settings-container
-  [data-level="1"].setting-item-heading.style-settings-heading:not(.is-collapsed),
+  [data-level="1"].setting-item-heading.style-settings-heading:not(
+    .is-collapsed
+  ),
 .style-settings-container
-  [data-level="2"].setting-item-heading.style-settings-heading:not(.is-collapsed),
+  [data-level="2"].setting-item-heading.style-settings-heading:not(
+    .is-collapsed
+  ),
 .style-settings-container
-  [data-level="3"].setting-item-heading.style-settings-heading:not(.is-collapsed),
+  [data-level="3"].setting-item-heading.style-settings-heading:not(
+    .is-collapsed
+  ),
 .style-settings-container
-  [data-level="4"].setting-item-heading.style-settings-heading:not(.is-collapsed),
+  [data-level="4"].setting-item-heading.style-settings-heading:not(
+    .is-collapsed
+  ),
 .style-settings-container
-  [data-level="5"].setting-item-heading.style-settings-heading:not(.is-collapsed) {
+  [data-level="5"].setting-item-heading.style-settings-heading:not(
+    .is-collapsed
+  ) {
   border-color: transparent;
   margin-bottom: 0;
 }
@@ -3748,7 +4043,8 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   border-color: hsla(var(--color-accent-hsl), 0.2);
 }
 
-.shiba-accent-style .style-settings-heading[data-id="shiba-theme-settings-extended"],
+.shiba-accent-style
+  .style-settings-heading[data-id="shiba-theme-settings-extended"],
 .shiba-accent-style .style-settings-heading[data-id="shiba-theme-settings"] {
   border-color: rgba(var(--color-accent), 0.2);
 }
@@ -3757,7 +4053,10 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   --h1-font: var(--interface-font);
 }
 
-.style-settings-heading:not([data-level="0"], [data-id="shiba-inu-support-header"])
+.style-settings-heading:not(
+    [data-level="0"],
+    [data-id="shiba-inu-support-header"]
+  )
   + .style-settings-container {
   border: 1px solid rgba(var(--text), 0.1);
   border-radius: var(--radius-s);
@@ -3793,19 +4092,27 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   flex-direction: row;
 }
 
-.shiba-color-folder-background.folder-colorful-one:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-one:not(
+    .shiba-color-folder-default
+  )
   .is-collapsed
   .nav-folder-collapse-indicator
   svg,
-.shiba-color-folder-background.folder-colorful-one:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-one:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-collapse-indicator
   svg,
-.shiba-color-folder-background.folder-colorful-one:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-one:not(
+    .shiba-color-folder-default
+  )
   .nav-folder.mod-root
   > .nav-folder-children
   > .nav-folder
   .nav-file-title,
-.shiba-color-folder-background.folder-colorful-one:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-one:not(
+    .shiba-color-folder-default
+  )
   .nav-folder.mod-root
   > .nav-folder-children
   > .nav-folder
@@ -3814,38 +4121,54 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   font-weight: 400;
 }
 
-.shiba-color-folder-background.folder-colorful-custom:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
   .nav-folder.mod-root
   .nav-folder
   .nav-folder,
-.shiba-color-folder-background.folder-colorful-five:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-five:not(
+    .shiba-color-folder-default
+  )
   .nav-folder.mod-root
   .nav-folder
   .nav-folder,
-.shiba-color-folder-background.folder-colorful-four:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-four:not(
+    .shiba-color-folder-default
+  )
   .nav-folder.mod-root
   .nav-folder
   .nav-folder,
-.shiba-color-folder-background.folder-colorful-one:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-one:not(
+    .shiba-color-folder-default
+  )
   .nav-folder.mod-root
   .nav-folder
   .nav-folder,
-.shiba-color-folder-background.folder-colorful-six:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-six:not(
+    .shiba-color-folder-default
+  )
   .nav-folder.mod-root
   .nav-folder
   .nav-folder,
-.shiba-color-folder-background.folder-colorful-three:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-three:not(
+    .shiba-color-folder-default
+  )
   .nav-folder.mod-root
   .nav-folder
   .nav-folder,
-.shiba-color-folder-background.folder-colorful-two:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-two:not(
+    .shiba-color-folder-default
+  )
   .nav-folder.mod-root
   .nav-folder
   .nav-folder {
   background-color: inherit;
 }
 
-.shiba-color-folder-background.folder-colorful-one:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-one:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 2) {
   background-color: rgba(var(--red), 0.3);
@@ -3854,7 +4177,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-one:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-one:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 3) {
   background-color: rgba(var(--lily), 0.3);
@@ -3863,7 +4188,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-one:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-one:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 4) {
   background-color: rgba(var(--orange), 0.3);
@@ -3872,7 +4199,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-one:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-one:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 5) {
   background-color: rgba(var(--yellow), 0.3);
@@ -3881,7 +4210,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-one:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-one:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 6) {
   background-color: rgba(var(--lemon), 0.3);
@@ -3890,7 +4221,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-one:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-one:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 7) {
   background-color: rgba(var(--green), 0.3);
@@ -3899,7 +4232,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-one:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-one:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 8) {
   background-color: rgba(var(--sea), 0.3);
@@ -3908,7 +4243,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-one:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-one:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 9) {
   background-color: rgba(var(--turquoise), 0.3);
@@ -3917,7 +4254,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-one:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-one:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 10) {
   background-color: rgba(var(--cyan), 0.3);
@@ -3926,7 +4265,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-one:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-one:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 11) {
   background-color: rgba(var(--blue), 0.3);
@@ -3935,104 +4276,152 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-custom:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
   .is-collapsed
   .nav-folder-collapse-indicator
   svg,
-.shiba-color-folder-background.folder-colorful-custom:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-collapse-indicator
   svg,
-.shiba-color-folder-background.folder-colorful-custom:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
   .nav-folder.mod-root
   > .nav-folder-children
   > .nav-folder
   .nav-file-title,
-.shiba-color-folder-background.folder-colorful-custom:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
   .nav-folder.mod-root
   > .nav-folder-children
   > .nav-folder
   .nav-folder-title,
-.shiba-color-folder-background.folder-colorful-five:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-five:not(
+    .shiba-color-folder-default
+  )
   .is-collapsed
   .nav-folder-collapse-indicator
   svg,
-.shiba-color-folder-background.folder-colorful-five:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-five:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-collapse-indicator
   svg,
-.shiba-color-folder-background.folder-colorful-five:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-five:not(
+    .shiba-color-folder-default
+  )
   .nav-folder.mod-root
   > .nav-folder-children
   > .nav-folder
   .nav-file-title,
-.shiba-color-folder-background.folder-colorful-five:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-five:not(
+    .shiba-color-folder-default
+  )
   .nav-folder.mod-root
   > .nav-folder-children
   > .nav-folder
   .nav-folder-title,
-.shiba-color-folder-background.folder-colorful-four:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-four:not(
+    .shiba-color-folder-default
+  )
   .is-collapsed
   .nav-folder-collapse-indicator
   svg,
-.shiba-color-folder-background.folder-colorful-four:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-four:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-collapse-indicator
   svg,
-.shiba-color-folder-background.folder-colorful-four:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-four:not(
+    .shiba-color-folder-default
+  )
   .nav-folder.mod-root
   > .nav-folder-children
   > .nav-folder
   .nav-file-title,
-.shiba-color-folder-background.folder-colorful-four:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-four:not(
+    .shiba-color-folder-default
+  )
   .nav-folder.mod-root
   > .nav-folder-children
   > .nav-folder
   .nav-folder-title,
-.shiba-color-folder-background.folder-colorful-six:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-six:not(
+    .shiba-color-folder-default
+  )
   .is-collapsed
   .nav-folder-collapse-indicator
   svg,
-.shiba-color-folder-background.folder-colorful-six:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-six:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-collapse-indicator
   svg,
-.shiba-color-folder-background.folder-colorful-six:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-six:not(
+    .shiba-color-folder-default
+  )
   .nav-folder.mod-root
   > .nav-folder-children
   > .nav-folder
   .nav-file-title,
-.shiba-color-folder-background.folder-colorful-six:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-six:not(
+    .shiba-color-folder-default
+  )
   .nav-folder.mod-root
   > .nav-folder-children
   > .nav-folder
   .nav-folder-title,
-.shiba-color-folder-background.folder-colorful-three:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-three:not(
+    .shiba-color-folder-default
+  )
   .is-collapsed
   .nav-folder-collapse-indicator
   svg,
-.shiba-color-folder-background.folder-colorful-three:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-three:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-collapse-indicator
   svg,
-.shiba-color-folder-background.folder-colorful-three:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-three:not(
+    .shiba-color-folder-default
+  )
   .nav-folder.mod-root
   > .nav-folder-children
   > .nav-folder
   .nav-file-title,
-.shiba-color-folder-background.folder-colorful-three:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-three:not(
+    .shiba-color-folder-default
+  )
   .nav-folder.mod-root
   > .nav-folder-children
   > .nav-folder
   .nav-folder-title,
-.shiba-color-folder-background.folder-colorful-two:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-two:not(
+    .shiba-color-folder-default
+  )
   .is-collapsed
   .nav-folder-collapse-indicator
   svg,
-.shiba-color-folder-background.folder-colorful-two:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-two:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-collapse-indicator
   svg,
-.shiba-color-folder-background.folder-colorful-two:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-two:not(
+    .shiba-color-folder-default
+  )
   .nav-folder.mod-root
   > .nav-folder-children
   > .nav-folder
   .nav-file-title,
-.shiba-color-folder-background.folder-colorful-two:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-two:not(
+    .shiba-color-folder-default
+  )
   .nav-folder.mod-root
   > .nav-folder-children
   > .nav-folder
@@ -4040,7 +4429,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   color: var(--nav-folder-title-color);
 }
 
-.shiba-color-folder-background.folder-colorful-two:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-two:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 2) {
   background-color: rgba(var(--red), 0.9);
@@ -4049,7 +4440,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-two:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-two:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 3) {
   background-color: rgba(var(--lily), 0.9);
@@ -4058,7 +4451,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-two:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-two:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 4) {
   background-color: rgba(var(--orange), 0.9);
@@ -4067,7 +4462,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-two:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-two:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 5) {
   background-color: rgba(var(--yellow), 0.9);
@@ -4076,7 +4473,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-two:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-two:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 6) {
   background-color: rgba(var(--lemon), 0.9);
@@ -4085,7 +4484,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-two:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-two:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 7) {
   background-color: rgba(var(--green), 0.9);
@@ -4094,13 +4495,19 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-three:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-three:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 2),
-.shiba-color-folder-background.folder-colorful-three:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-three:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 8),
-.shiba-color-folder-background.folder-colorful-two:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-two:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 8) {
   background-color: rgba(var(--sea), 0.9);
@@ -4109,13 +4516,19 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-three:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-three:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 3),
-.shiba-color-folder-background.folder-colorful-three:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-three:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 7),
-.shiba-color-folder-background.folder-colorful-two:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-two:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 9) {
   background-color: rgba(var(--turquoise), 0.9);
@@ -4124,19 +4537,29 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-three:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-three:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 11),
-.shiba-color-folder-background.folder-colorful-three:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-three:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 4),
-.shiba-color-folder-background.folder-colorful-three:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-three:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 6),
-.shiba-color-folder-background.folder-colorful-three:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-three:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 9),
-.shiba-color-folder-background.folder-colorful-two:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-two:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 10) {
   background-color: rgba(var(--cyan), 0.9);
@@ -4145,13 +4568,19 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-three:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-three:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 10),
-.shiba-color-folder-background.folder-colorful-three:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-three:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 5),
-.shiba-color-folder-background.folder-colorful-two:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-two:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 11) {
   background-color: rgba(var(--blue), 0.9);
@@ -4160,7 +4589,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-four:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-four:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 2) {
   background-color: #b67b66;
@@ -4169,7 +4600,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-four:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-four:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 3) {
   background-color: #d09d7b;
@@ -4178,10 +4611,14 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-four:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-four:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 11),
-.shiba-color-folder-background.folder-colorful-four:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-four:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 4) {
   background-color: #d3a984;
@@ -4190,10 +4627,14 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-four:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-four:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 10),
-.shiba-color-folder-background.folder-colorful-four:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-four:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 5) {
   background-color: #73a788;
@@ -4202,10 +4643,14 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-four:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-four:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 6),
-.shiba-color-folder-background.folder-colorful-four:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-four:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 9) {
   background-color: #478966;
@@ -4214,10 +4659,14 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-four:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-four:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 7),
-.shiba-color-folder-background.folder-colorful-four:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-four:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 8) {
   background-color: #135e45;
@@ -4226,10 +4675,14 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-five:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-five:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 2),
-.shiba-color-folder-background.folder-colorful-five:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-five:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 8) {
   background-color: #a68877;
@@ -4238,10 +4691,14 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-five:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-five:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 3),
-.shiba-color-folder-background.folder-colorful-five:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-five:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 9) {
   background-color: #b38f7a;
@@ -4250,10 +4707,14 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-five:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-five:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 10),
-.shiba-color-folder-background.folder-colorful-five:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-five:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 4) {
   background-color: #b99780;
@@ -4262,10 +4723,14 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-five:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-five:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 11),
-.shiba-color-folder-background.folder-colorful-five:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-five:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 5) {
   background-color: #c1a28a;
@@ -4274,7 +4739,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-five:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-five:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 6) {
   background-color: #cab199;
@@ -4283,7 +4750,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-five:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-five:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 7) {
   background-color: #d2bfa7;
@@ -4292,7 +4761,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-six:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-six:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 2) {
   background-color: #7779a6;
@@ -4301,7 +4772,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-six:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-six:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 3) {
   background-color: #897ab3;
@@ -4310,7 +4783,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-six:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-six:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 4) {
   background-color: #8780b9;
@@ -4319,7 +4794,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-six:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-six:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 5) {
   background-color: #998ac1;
@@ -4328,7 +4805,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-six:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-six:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 6) {
   background-color: #9d99ca;
@@ -4337,7 +4816,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-six:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-six:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 7) {
   background-color: #a8a7d2;
@@ -4346,7 +4827,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-six:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-six:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 8) {
   background-color: #7d77a6;
@@ -4355,7 +4838,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-six:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-six:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 9) {
   background-color: #827ab3;
@@ -4364,7 +4849,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-six:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-six:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 10) {
   background-color: #8080b9;
@@ -4373,7 +4860,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-six:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-six:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 11) {
   background-color: #908ac1;
@@ -4382,7 +4871,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-custom:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 2) {
   background-color: var(--folder-colorful-custom-color);
@@ -4391,7 +4882,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-custom:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 3) {
   background-color: var(--folder-colorful-custom-color2);
@@ -4400,7 +4893,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-custom:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 4) {
   background-color: var(--folder-colorful-custom-color3);
@@ -4409,7 +4904,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-custom:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 5) {
   background-color: var(--folder-colorful-custom-color4);
@@ -4418,7 +4915,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-custom:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 6) {
   background-color: var(--folder-colorful-custom-color5);
@@ -4427,7 +4926,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-custom:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 7) {
   background-color: var(--folder-colorful-custom-color6);
@@ -4436,7 +4937,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-custom:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 8) {
   background-color: var(--folder-colorful-custom-color7);
@@ -4445,7 +4948,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-custom:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 9) {
   background-color: var(--folder-colorful-custom-color8);
@@ -4454,7 +4959,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-custom:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 10) {
   background-color: var(--folder-colorful-custom-color9);
@@ -4463,7 +4970,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   margin-bottom: 2px;
 }
 
-.shiba-color-folder-background.folder-colorful-custom:not(.shiba-color-folder-default)
+.shiba-color-folder-background.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 11) {
   background-color: var(--folder-colorful-custom-color10);
@@ -4947,7 +5456,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   font-weight: 700;
 }
 
-.shiba-color-folder-title.folder-colorful-custom:not(.shiba-color-folder-default)
+.shiba-color-folder-title.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 2)
   .nav-folder-title {
@@ -4956,7 +5467,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   font-weight: 700;
 }
 
-.shiba-color-folder-title.folder-colorful-custom:not(.shiba-color-folder-default)
+.shiba-color-folder-title.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 3)
   .nav-folder-title {
@@ -4965,7 +5478,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   font-weight: 700;
 }
 
-.shiba-color-folder-title.folder-colorful-custom:not(.shiba-color-folder-default)
+.shiba-color-folder-title.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 4)
   .nav-folder-title {
@@ -4974,7 +5489,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   font-weight: 700;
 }
 
-.shiba-color-folder-title.folder-colorful-custom:not(.shiba-color-folder-default)
+.shiba-color-folder-title.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 5)
   .nav-folder-title {
@@ -4983,7 +5500,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   font-weight: 700;
 }
 
-.shiba-color-folder-title.folder-colorful-custom:not(.shiba-color-folder-default)
+.shiba-color-folder-title.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 6)
   .nav-folder-title {
@@ -4992,7 +5511,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   font-weight: 700;
 }
 
-.shiba-color-folder-title.folder-colorful-custom:not(.shiba-color-folder-default)
+.shiba-color-folder-title.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 7)
   .nav-folder-title {
@@ -5001,7 +5522,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   font-weight: 700;
 }
 
-.shiba-color-folder-title.folder-colorful-custom:not(.shiba-color-folder-default)
+.shiba-color-folder-title.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 8)
   .nav-folder-title {
@@ -5010,7 +5533,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   font-weight: 700;
 }
 
-.shiba-color-folder-title.folder-colorful-custom:not(.shiba-color-folder-default)
+.shiba-color-folder-title.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 9)
   .nav-folder-title {
@@ -5019,7 +5544,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   font-weight: 700;
 }
 
-.shiba-color-folder-title.folder-colorful-custom:not(.shiba-color-folder-default)
+.shiba-color-folder-title.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 10)
   .nav-folder-title {
@@ -5028,7 +5555,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
   font-weight: 700;
 }
 
-.shiba-color-folder-title.folder-colorful-custom:not(.shiba-color-folder-default)
+.shiba-color-folder-title.folder-colorful-custom:not(
+    .shiba-color-folder-default
+  )
   .nav-folder-children
   > .nav-folder:nth-child(10n + 11)
   .nav-folder-title {
@@ -5047,7 +5576,9 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
 
 .shib-transparent-setting-panel .horizontal-tab-content,
 .shib-transparent-setting-panel .horizontal-tab-nav-item,
-.shib-transparent-setting-panel .modal.mod-settings .vertical-tab-content-container,
+.shib-transparent-setting-panel
+  .modal.mod-settings
+  .vertical-tab-content-container,
 .shib-transparent-setting-panel .vertical-tab-content,
 .shib-transparent-setting-panel .vertical-tab-header,
 .shib-transparent-setting-panel .vertical-tab-nav-item {
@@ -5107,12 +5638,20 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
 .shib-translucent-setting-panel .horizontal-tab-nav-item,
 .shib-translucent-setting-panel .vertical-tab-nav-item,
 .shib-workspace-background-image-toggle .canvas-wrapper,
-.shib-workspace-background-image-toggle .is-focused .workspace-leaf.mod-active .view-header,
+.shib-workspace-background-image-toggle
+  .is-focused
+  .workspace-leaf.mod-active
+  .view-header,
 .shib-workspace-background-image-toggle
   .mod-macos.is-hidden-frameless:not(.is-popout-window)
   .sidebar-toggle-button.mod-right,
-.shib-workspace-background-image-toggle .mod-root .workspace-tabs .workspace-leaf,
-.shib-workspace-background-image-toggle .shib-card-layout .workspace-tab-header-container,
+.shib-workspace-background-image-toggle
+  .mod-root
+  .workspace-tabs
+  .workspace-leaf,
+.shib-workspace-background-image-toggle
+  .shib-card-layout
+  .workspace-tab-header-container,
 .shib-workspace-background-image-toggle
   .workspace-fake-target-overlay:not(.is-in-sidebar)
   .workspace-tabs
@@ -5120,10 +5659,11 @@ body:not(.shib-callout-toggle) .callout .list-collapse-indicator {
 .shib-workspace-background-image-toggle .workspace-split.mod-root,
 .shib-workspace-background-image-toggle.shib-canvas-dark-bg .canvas-wrapper,
 .shib-workspace-background-image-toggle.shib-card-layout .view-header,
-.shib-workspace-background-image-toggle.shib-card-layout .workspace-ribbon.mod-left:before,
-.shib-workspace-background-image-toggle:not(.shib-card-layout).mod-macos.is-hidden-frameless:not(
-    .is-popout-window
-  )
+.shib-workspace-background-image-toggle.shib-card-layout
+  .workspace-ribbon.mod-left:before,
+.shib-workspace-background-image-toggle:not(
+    .shib-card-layout
+  ).mod-macos.is-hidden-frameless:not(.is-popout-window)
   .sidebar-toggle-button.mod-right,
 body.layout-style-options-default.shib-workspace-background-image-toggle
   .workspace-tab-container-after.is-after-active,
@@ -5212,10 +5752,23 @@ input[type="range"]::-webkit-slider-thumb:hover {
   margin-top: -5px;
 }
 
-.shib-table-toggle .is-live-preview.cards:not(.table-disable) table:not(.dataview),
-.shib-table-toggle .is-live-preview.cards:not(.table-disable) table:not(.dataview) td,
-.shib-table-toggle .is-live-preview.cards:not(.table-disable) table:not(.dataview) th,
-.shib-table-toggle .is-live-preview.cards:not(.table-disable) table:not(.dataview) thead tr > th,
+.shib-table-toggle
+  .is-live-preview.cards:not(.table-disable)
+  table:not(.dataview),
+.shib-table-toggle
+  .is-live-preview.cards:not(.table-disable)
+  table:not(.dataview)
+  td,
+.shib-table-toggle
+  .is-live-preview.cards:not(.table-disable)
+  table:not(.dataview)
+  th,
+.shib-table-toggle
+  .is-live-preview.cards:not(.table-disable)
+  table:not(.dataview)
+  thead
+  tr
+  > th,
 .shib-table-toggle
   .is-live-preview.cards:not(.table-disable)
   table:not(.dataview)
@@ -5276,9 +5829,20 @@ input[type="range"]::-webkit-slider-thumb:hover {
   tr
   > th:last-child,
 .shib-table-toggle .markdown-preview-view:not(.cards):not(.table-disable) table,
-.shib-table-toggle .markdown-preview-view:not(.cards):not(.table-disable) table td,
-.shib-table-toggle .markdown-preview-view:not(.cards):not(.table-disable) table th,
-.shib-table-toggle .markdown-preview-view:not(.cards):not(.table-disable) table thead tr > th,
+.shib-table-toggle
+  .markdown-preview-view:not(.cards):not(.table-disable)
+  table
+  td,
+.shib-table-toggle
+  .markdown-preview-view:not(.cards):not(.table-disable)
+  table
+  th,
+.shib-table-toggle
+  .markdown-preview-view:not(.cards):not(.table-disable)
+  table
+  thead
+  tr
+  > th,
 .shib-table-toggle
   .markdown-preview-view:not(.cards):not(.table-disable)
   table
@@ -5294,8 +5858,16 @@ input[type="range"]::-webkit-slider-thumb:hover {
   border: var(--shib-table-thickness, 1px) solid var(--table-border-color);
 }
 
-.shib-table-toggle .is-live-preview.cards:not(.table-disable) table:not(.dataview) th,
-.shib-table-toggle .is-live-preview.cards:not(.table-disable) table:not(.dataview) thead tr > th,
+.shib-table-toggle
+  .is-live-preview.cards:not(.table-disable)
+  table:not(.dataview)
+  th,
+.shib-table-toggle
+  .is-live-preview.cards:not(.table-disable)
+  table:not(.dataview)
+  thead
+  tr
+  > th,
 .shib-table-toggle
   .is-live-preview.cards:not(.table-disable)
   table:not(.dataview)
@@ -5342,8 +5914,16 @@ input[type="range"]::-webkit-slider-thumb:hover {
   thead
   tr
   > th:last-child,
-.shib-table-toggle .markdown-preview-view:not(.cards):not(.table-disable) table th,
-.shib-table-toggle .markdown-preview-view:not(.cards):not(.table-disable) table thead tr > th,
+.shib-table-toggle
+  .markdown-preview-view:not(.cards):not(.table-disable)
+  table
+  th,
+.shib-table-toggle
+  .markdown-preview-view:not(.cards):not(.table-disable)
+  table
+  thead
+  tr
+  > th,
 .shib-table-toggle
   .markdown-preview-view:not(.cards):not(.table-disable)
   table
@@ -5359,7 +5939,10 @@ input[type="range"]::-webkit-slider-thumb:hover {
   text-align: var(--shib-table-align-th, center);
 }
 
-.shib-table-toggle .is-live-preview.cards:not(.table-disable) table:not(.dataview) td,
+.shib-table-toggle
+  .is-live-preview.cards:not(.table-disable)
+  table:not(.dataview)
+  td,
 .shib-table-toggle
   .markdown-preview-view.cards:not(.table-disable)
   table:not(.dataview)
@@ -5367,7 +5950,10 @@ input[type="range"]::-webkit-slider-thumb:hover {
   .is-live-preview:not(.cards):not(.table-disable)
   table
   td,
-.shib-table-toggle .markdown-preview-view:not(.cards):not(.table-disable) table td {
+.shib-table-toggle
+  .markdown-preview-view:not(.cards):not(.table-disable)
+  table
+  td {
   text-align: var(--shib-table-align-td, center);
 }
 
@@ -5455,23 +6041,36 @@ table.dataview.table-view-table > tbody > tr:hover {
   table
   tr:nth-child(2n)
   td,
-.shib-table-toggle.shib-td-full .is-live-preview.cards:not(.table-disable) table:not(.dataview) td,
-.shib-table-toggle.shib-td-full .is-live-preview:not(.cards:not(.table-disable)) table td,
+.shib-table-toggle.shib-td-full
+  .is-live-preview.cards:not(.table-disable)
+  table:not(.dataview)
+  td,
+.shib-table-toggle.shib-td-full
+  .is-live-preview:not(.cards:not(.table-disable))
+  table
+  td,
 .shib-table-toggle.shib-td-full
   .markdown-preview-view.cards:not(.table-disable)
   table:not(.dataview)
   td,
-.shib-table-toggle.shib-td-full .markdown-preview-view:not(.cards):not(.table-disable) table td,
+.shib-table-toggle.shib-td-full
+  .markdown-preview-view:not(.cards):not(.table-disable)
+  table
+  td,
 .shib-table-toggle.shib-th-highlight
   .is-live-preview.cards:not(.table-disable)
   table:not(.dataview)
   th,
-.shib-table-toggle.shib-th-highlight .is-live-preview:not(.cards):not(.table-disable) th,
+.shib-table-toggle.shib-th-highlight
+  .is-live-preview:not(.cards):not(.table-disable)
+  th,
 .shib-table-toggle.shib-th-highlight
   .markdown-preview-view.cards:not(.table-disable)
   table:not(.dataview)
   th,
-.shib-table-toggle.shib-th-highlight .markdown-preview-view:not(.cards):not(.table-disable) th {
+.shib-table-toggle.shib-th-highlight
+  .markdown-preview-view:not(.cards):not(.table-disable)
+  th {
   background-color: rgba(var(--side), var(--shib-table-highlight-opacity, 0.5));
 }
 
@@ -5495,10 +6094,14 @@ table.dataview.table-view-table > tbody > tr:hover {
   table
   tr:nth-child(2n)
   td:nth-child(2n) {
-  background-color: rgba(var(--exterior), var(--shib-table-highlight-opacity, 0.5));
+  background-color: rgba(
+    var(--exterior),
+    var(--shib-table-highlight-opacity, 0.5)
+  );
 }
 
-.shib-table-width.markdown-rendered.cards:not(.table-disable) table:not(.dataview),
+.shib-table-width.markdown-rendered.cards:not(.table-disable)
+  table:not(.dataview),
 .shib-table-width.markdown-rendered:not(.cards):not(.table-disable) table {
   width: var(--shib-table-width-pct);
 }
@@ -5506,7 +6109,9 @@ table.dataview.table-view-table > tbody > tr:hover {
 .shib-table-width.shib-table-toggle
   .markdown-rendered.cards:not(.table-disable)
   table:not(.dataview),
-.shib-table-width.shib-table-toggle .markdown-rendered:not(.cards):not(.table-disable) table {
+.shib-table-width.shib-table-toggle
+  .markdown-rendered:not(.cards):not(.table-disable)
+  table {
   width: var(--shib-table-width-pct);
   margin-left: calc(50% - var(--shib-table-width-pct) / 2);
   margin-right: calc(50% - var(--shib-table-width-pct) / 2);
@@ -5584,7 +6189,8 @@ body:not(.shib-floating-animated-tab-toggle):not(.shib-disable-newtab-align)
   box-shadow: none;
 }
 
-.shib-floating-tab-toggle:not(.shib-disable-newtab-align) .workspace-tab-header-container-inner {
+.shib-floating-tab-toggle:not(.shib-disable-newtab-align)
+  .workspace-tab-header-container-inner {
   width: 100%;
 }
 
@@ -5821,13 +6427,23 @@ body:not(.shib-floating-animated-tab-toggle):not(.shib-disable-newtab-align)
   align-items: center;
 }
 
-.shib-floating-animated-tab-toggle .sidebar-toggle-button.mod-left .clickable-icon,
-.shib-floating-animated-tab-toggle .sidebar-toggle-button.mod-right .clickable-icon {
+.shib-floating-animated-tab-toggle
+  .sidebar-toggle-button.mod-left
+  .clickable-icon,
+.shib-floating-animated-tab-toggle
+  .sidebar-toggle-button.mod-right
+  .clickable-icon {
   height: var(--tab-height);
 }
 
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+.is-focused
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon,
+.is-focused
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-title {
   color: var(--text);
   font-weight: 500;
 }
@@ -5948,7 +6564,12 @@ progress[value]::-webkit-progress-value {
   --color-d-progress-70: hsl(258, 75%, 54%);
   --color-d-progress-80: hsl(294, 86%, 55%);
   --color-d-progress-90: hsl(335, 55%, 59%);
-  --color-d-progress-100: linear-gradient(45deg, #2990ff95, #3df9ff95, #e46dff95);
+  --color-d-progress-100: linear-gradient(
+    45deg,
+    #2990ff95,
+    #3df9ff95,
+    #e46dff95
+  );
 }
 
 .theme-dark progress[value^="1"]::-webkit-progress-value {
@@ -5991,15 +6612,22 @@ progress[value]::-webkit-progress-value {
   background: var(--color-d-progress-100);
 }
 
-body:not(.remove-file-icons) .nav-file-title[data-path$=".canvas"] .nav-file-title-content::before {
+body:not(.remove-file-icons)
+  .nav-file-title[data-path$=".canvas"]
+  .nav-file-title-content::before {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23adb5bd' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='svg-icon lucide-layout-dashboard'%3E%3Crect x='3' y='3' width='7' height='9'%3E%3C/rect%3E%3Crect x='14' y='3' width='7' height='5'%3E%3C/rect%3E%3Crect x='14' y='12' width='7' height='9'%3E%3C/rect%3E%3Crect x='3' y='16' width='7' height='5'%3E%3C/rect%3E%3C/svg%3E");
 }
 
-body:not(.shiba-remove-file-icons) [data-type="starred"] .nav-file-icon .svg-icon {
+body:not(.shiba-remove-file-icons)
+  [data-type="starred"]
+  .nav-file-icon
+  .svg-icon {
   padding: 4px 0 0;
 }
 
-body:not(.shiba-remove-file-icons) .nav-file-title .nav-file-title-content::before {
+body:not(.shiba-remove-file-icons)
+  .nav-file-title
+  .nav-file-title-content::before {
   position: relative;
   content: "";
   display: inline-block;
@@ -6012,17 +6640,19 @@ body:not(.shiba-remove-file-icons) .nav-file-title .nav-file-title-content::befo
   background-repeat: no-repeat;
   background-position: center center;
   background-color: var(--interactive-accent);
-  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>');
+  -webkit-mask-image: url('data:image/svg + xml,utf8,<svgxmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"fill=""><pathd="M0 0h24v24H0V0z"fill="none"/><pathd="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>');
 }
 
 body:not(.shiba-remove-file-icons)
   .nav-file-title[data-path$=".pdf"]
   .nav-file-title-content::before {
-  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" ><path fill="none" d="M0 0h24v24H0z"/><path d="M12 16H8V8h4a4 4 0 1 1 0 8zm-2-6v4h2a2 2 0 1 0 0-4h-2zm5-6H5v16h14V8h-4V4zM3 2.992C3 2.444 3.447 2 3.999 2H16l5 5v13.993A1 1 0 0 1 20.007 22H3.993A1 1 0 0 1 3 21.008V2.992z"/></svg>');
+  -webkit-mask-image: url('data:image/svg + xml,utf8,<svgxmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"><pathfill="none"d="M0 0h24v24H0z"/><pathd="M12 16H8V8h4a4 4 0 1 1 0 8zm-2-6v4h2a2 2 0 1 0 0-4h-2zm5-6H5v16h14V8h-4V4zM3 2.992C3 2.444 3.447 2 3.999 2H16l5 5v13.993A1 1 0 0 1 20.007 22H3.993A1 1 0 0 1 3 21.008V2.992z"/></svg>');
   filter: hue-rotate(-45deg);
 }
 
-body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".pdf"] .nav-file-tag {
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".pdf"]
+  .nav-file-tag {
   background-color: var(--color-accent-translucent-01);
   color: var(--color-accent);
   filter: hue-rotate(-45deg);
@@ -6046,16 +6676,28 @@ body:not(.shiba-remove-file-icons)
 body:not(.shiba-remove-file-icons)
   .nav-file-title[data-path$=".svg"]
   .nav-file-title-content::before {
-  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" ><path d="M6 22h12a2 2 0 0 0 2-2V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2zm7-18 5 5h-5V4zm-4.5 7a1.5 1.5 0 1 1-.001 3.001A1.5 1.5 0 0 1 8.5 11zm.5 5 1.597 1.363L13 13l4 6H7l2-3z"></path></svg>');
+  -webkit-mask-image: url('data:image/svg + xml,utf8,<svgxmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"><pathd="M6 22h12a2 2 0 0 0 2-2V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2zm7-18 5 5h-5V4zm-4.5 7a1.5 1.5 0 1 1-.001 3.001A1.5 1.5 0 0 1 8.5 11zm.5 5 1.597 1.363L13 13l4 6H7l2-3z"></path></svg>');
   filter: hue-rotate(45deg);
 }
 
-body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".bmp"] .nav-file-tag,
-body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".gif"] .nav-file-tag,
-body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".jpeg"] .nav-file-tag,
-body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".jpg"] .nav-file-tag,
-body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".png"] .nav-file-tag,
-body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".svg"] .nav-file-tag {
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".bmp"]
+  .nav-file-tag,
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".gif"]
+  .nav-file-tag,
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".jpeg"]
+  .nav-file-tag,
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".jpg"]
+  .nav-file-tag,
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".png"]
+  .nav-file-tag,
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".svg"]
+  .nav-file-tag {
   background-color: var(--color-accent-translucent-01);
   color: var(--color-accent);
   filter: hue-rotate(45deg);
@@ -6076,15 +6718,25 @@ body:not(.shiba-remove-file-icons)
 body:not(.shiba-remove-file-icons)
   .nav-file-title[data-path$=".webm"]
   .nav-file-title-content::before {
-  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline><path d="m10 11 5 3-5 3v-6Z"></path></svg>');
+  -webkit-mask-image: url('data:image/svg + xml,utf8,<svgxmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><pathd="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polylinepoints="14 2 14 8 20 8"></polyline><pathd="m10 11 5 3-5 3v-6Z"></path></svg>');
   filter: hue-rotate(90deg);
 }
 
-body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".mkv"] .nav-file-tag,
-body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".mov"] .nav-file-tag,
-body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".mp4"] .nav-file-tag,
-body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".ogv"] .nav-file-tag,
-body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".webm"] .nav-file-tag {
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".mkv"]
+  .nav-file-tag,
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".mov"]
+  .nav-file-tag,
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".mp4"]
+  .nav-file-tag,
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".ogv"]
+  .nav-file-tag,
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".webm"]
+  .nav-file-tag {
   background-color: var(--color-accent-translucent-01);
   color: var(--color-accent);
   filter: hue-rotate(90deg);
@@ -6108,16 +6760,28 @@ body:not(.shiba-remove-file-icons)
 body:not(.shiba-remove-file-icons)
   .nav-file-title[data-path$=".wav"]
   .nav-file-title-content::before {
-  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 22h.5c.5 0 1-.2 1.4-.6.4-.4.6-.9.6-1.4V7.5L14.5 2H6c-.5 0-1 .2-1.4.6C4.2 3 4 3.5 4 4v3"></path><polyline points="14 2 14 8 20 8"></polyline><path d="M10 20v-1a2 2 0 1 1 4 0v1a2 2 0 1 1-4 0Z"></path><path d="M6 20v-1a2 2 0 1 0-4 0v1a2 2 0 1 0 4 0Z"></path><path d="M2 19v-3a6 6 0 0 1 12 0v3"></path></svg>');
+  -webkit-mask-image: url('data:image/svg + xml,utf8,<svgxmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><pathd="M17.5 22h.5c.5 0 1-.2 1.4-.6.4-.4.6-.9.6-1.4V7.5L14.5 2H6c-.5 0-1 .2-1.4.6C4.2 3 4 3.5 4 4v3"></path><polylinepoints="14 2 14 8 20 8"></polyline><pathd="M10 20v-1a2 2 0 1 1 4 0v1a2 2 0 1 1-4 0Z"></path><pathd="M6 20v-1a2 2 0 1 0-4 0v1a2 2 0 1 0 4 0Z"></path><pathd="M2 19v-3a6 6 0 0 1 12 0v3"></path></svg>');
   filter: hue-rotate(-90deg);
 }
 
-body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".3gp"] .nav-file-tag,
-body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".flac"] .nav-file-tag,
-body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".m4a"] .nav-file-tag,
-body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".mp3"] .nav-file-tag,
-body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".ogg"] .nav-file-tag,
-body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".wav"] .nav-file-tag {
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".3gp"]
+  .nav-file-tag,
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".flac"]
+  .nav-file-tag,
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".m4a"]
+  .nav-file-tag,
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".mp3"]
+  .nav-file-tag,
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".ogg"]
+  .nav-file-tag,
+body:not(.shiba-remove-file-icons)
+  .nav-file-title[data-path$=".wav"]
+  .nav-file-tag {
   background-color: var(--color-accent-translucent-01);
   color: var(--color-accent);
   filter: hue-rotate(-90deg);
@@ -6126,7 +6790,7 @@ body:not(.shiba-remove-file-icons) .nav-file-title[data-path$=".wav"] .nav-file-
 body:not(.shiba-remove-file-icons)
   .nav-file-title[data-path$=".excalidraw.md"]
   .nav-file-title-content::before {
-  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.404 2.998c-.757-.754-2.077-.751-2.828.005l-1.784 1.791L11.586 7H7a.998.998 0 0 0-.939.658l-4 11c-.133.365-.042.774.232 1.049l2 2a.997.997 0 0 0 1.049.232l11-4A.998.998 0 0 0 17 17v-4.586l2.207-2.207v-.001h.001L21 8.409c.378-.378.586-.881.585-1.415 0-.535-.209-1.038-.588-1.415l-2.593-2.581zm-3.111 8.295A.996.996 0 0 0 15 12v4.3l-9.249 3.363 4.671-4.671c.026.001.052.008.078.008A1.5 1.5 0 1 0 9 13.5c0 .026.007.052.008.078l-4.671 4.671L7.7 9H12c.266 0 .52-.105.707-.293L14.5 6.914 17.086 9.5l-1.793 1.793zm3.206-3.208-2.586-2.586 1.079-1.084 2.593 2.581-1.086 1.089z"></path></svg>');
+  -webkit-mask-image: url('data:image/svg + xml,utf8,<svgxmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"><pathd="M18.404 2.998c-.757-.754-2.077-.751-2.828.005l-1.784 1.791L11.586 7H7a.998.998 0 0 0-.939.658l-4 11c-.133.365-.042.774.232 1.049l2 2a.997.997 0 0 0 1.049.232l11-4A.998.998 0 0 0 17 17v-4.586l2.207-2.207v-.001h.001L21 8.409c.378-.378.586-.881.585-1.415 0-.535-.209-1.038-.588-1.415l-2.593-2.581zm-3.111 8.295A.996.996 0 0 0 15 12v4.3l-9.249 3.363 4.671-4.671c.026.001.052.008.078.008A1.5 1.5 0 1 0 9 13.5c0 .026.007.052.008.078l-4.671 4.671L7.7 9H12c.266 0 .52-.105.707-.293L14.5 6.914 17.086 9.5l-1.793 1.793zm3.206-3.208-2.586-2.586 1.079-1.084 2.593 2.581-1.086 1.089z"></path></svg>');
   filter: hue-rotate(135deg);
 }
 
@@ -6208,12 +6872,18 @@ body:not(.shiba-remove-file-icons)
   -webkit-mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.2929 5.29289C12.6834 4.90237 13.3166 4.90237 13.7071 5.29289L19.7071 11.2929C20.0976 11.6834 20.0976 12.3166 19.7071 12.7071L13.7071 18.7071C13.3166 19.0976 12.6834 19.0976 12.2929 18.7071C11.9024 18.3166 11.9024 17.6834 12.2929 17.2929L16.5858 13H5C4.44772 13 4 12.5523 4 12C4 11.4477 4.44772 11 5 11H16.5858L12.2929 6.70711C11.9024 6.31658 11.9024 5.68342 12.2929 5.29289Z' fill='%230F1729'/%3E%3C/svg%3E");
 }
 
-.shiba-toggle-indent-colors .nav-folder.mod-root .nav-folder > .nav-folder-children {
+.shiba-toggle-indent-colors
+  .nav-folder.mod-root
+  .nav-folder
+  > .nav-folder-children {
   transition: color 0.4s;
   border-color: rgba(var(--rainbow-folder-color), 0.5);
 }
 
-.shiba-toggle-indent-colors-accent .nav-folder.mod-root .nav-folder > .nav-folder-children {
+.shiba-toggle-indent-colors-accent
+  .nav-folder.mod-root
+  .nav-folder
+  > .nav-folder-children {
   transition: color 0.4s;
   border-color: rgba(var(--accent), 0.7);
 }
@@ -6258,8 +6928,14 @@ body:not(.shiba-remove-file-icons)
 
 .shib-workspace-background-image-toggle {
   --card-background-color: transparent;
-  --card-foreground-color: rgba(var(--base), var(--shib-custom-bg-card-fg-opacity, 0.4));
-  --tab-inactive-color: rgba(var(--side), var(--shib-custom-bg-card-fg-opacity, 0.4));
+  --card-foreground-color: rgba(
+    var(--base),
+    var(--shib-custom-bg-card-fg-opacity, 0.4)
+  );
+  --tab-inactive-color: rgba(
+    var(--side),
+    var(--shib-custom-bg-card-fg-opacity, 0.4)
+  );
   --code-background: var(--card-foreground-color);
 }
 
@@ -6282,12 +6958,16 @@ body:not(.shiba-remove-file-icons)
   .workspace-leaf.mod-active
   .view-header,
 .shib-workspace-background-image-toggle.shib-card-layout .workspace-ribbon,
-.shib-workspace-background-image-toggle.shib-card-layout .workspace-split.mod-root .view-content {
+.shib-workspace-background-image-toggle.shib-card-layout
+  .workspace-split.mod-root
+  .view-content {
   background: 0 0;
 }
 
-.shib-workspace-background-image-toggle.shib-alternate-tab-toggle .workspace-tabs:not(.mod-stacked),
-.shib-workspace-background-image-toggle.shib-safari-tab-toggle .workspace-tabs:not(.mod-stacked) {
+.shib-workspace-background-image-toggle.shib-alternate-tab-toggle
+  .workspace-tabs:not(.mod-stacked),
+.shib-workspace-background-image-toggle.shib-safari-tab-toggle
+  .workspace-tabs:not(.mod-stacked) {
   --tab-background: var(--tab-inactive-color);
   --tab-background-active: var(--card-foreground-color);
   --tab-background-inactive: var(--tab-inactive-color);
@@ -6299,20 +6979,28 @@ body:not(.shiba-remove-file-icons)
   background-color: var(--tab-inactive-color);
 }
 
-.shib-workspace-background-image-toggle .kanban-plugin .kanban-plugin__lane button:hover,
+.shib-workspace-background-image-toggle
+  .kanban-plugin
+  .kanban-plugin__lane
+  button:hover,
 .shib-workspace-background-image-toggle .kanban-plugin__item-content-wrapper,
 .shib-workspace-background-image-toggle .kanban-plugin__lane,
 .shib-workspace-background-image-toggle.is-focused:not(.shib-card-layout)
   .workspace-leaf.mod-active
   .view-header,
 .shib-workspace-background-image-toggle:not(.shib-card-layout) .view-header,
-.shib-workspace-background-image-toggle:not(.shib-card-layout) .workspace-ribbon,
-.shib-workspace-background-image-toggle:not(.shib-card-layout) .workspace-ribbon.mod-left:before,
+.shib-workspace-background-image-toggle:not(.shib-card-layout)
+  .workspace-ribbon,
+.shib-workspace-background-image-toggle:not(.shib-card-layout)
+  .workspace-ribbon.mod-left:before,
 .shib-workspace-background-image-toggle:not(.shib-card-layout)
   .workspace-split.mod-root
   .view-content,
-.shib-workspace-background-image-toggle:not(.shib-card-layout) .workspace-tab-header-container,
-.shib-workspace-background-image-toggle:not(.shib-card-layout) .workspace-tabs .workspace-leaf {
+.shib-workspace-background-image-toggle:not(.shib-card-layout)
+  .workspace-tab-header-container,
+.shib-workspace-background-image-toggle:not(.shib-card-layout)
+  .workspace-tabs
+  .workspace-leaf {
   background-color: var(--card-foreground-color);
 }
 
@@ -6376,7 +7064,9 @@ body:not(.shiba-remove-file-icons)
 }
 
 .shib-workspace-background-image-toggle.background-settings-workplace-theme-dark-cute-town-d.theme-dark {
-  --cute-town-d: url("https://github.com/faroukx/aesthetic-wallpapers/blob/main/shibainu/cute-town-dark%20(2).png?raw=true");
+  --cute-town-d: url(https://github.com/faroukx/aesthetic-wallpapers/blob/main/shibainu/cute-town-dark%20(
+      2
+    ).png?raw=true);
   --shib-background-image: var(--cute-town-d);
 }
 
@@ -6416,18 +7106,24 @@ body:not(.shiba-remove-file-icons)
 }
 
 .shib-workspace-background-image-toggle.background-settings-workplace-theme-light-custom-option.theme-light {
-  --shib-background-image: var(--background-settings-workplace-theme-light-custom);
+  --shib-background-image: var(
+    --background-settings-workplace-theme-light-custom
+  );
 }
 
 .shib-workspace-background-image-toggle.background-settings-workplace-theme-dark-custom-option.theme-dark {
-  --shib-background-image: var(--background-settings-workplace-theme-dark-custom);
+  --shib-background-image: var(
+    --background-settings-workplace-theme-dark-custom
+  );
 }
 
 .shib-workspace-background-image-toggle.background-settings-markdown-page-custom-option.theme-dark {
   --shib-background-image: var(--background-settings-markdown-page-custom);
 }
 
-body.hide-left-ribbon-retention-drawer:not(.shib-workspace-background-image-toggle)
+body.hide-left-ribbon-retention-drawer:not(
+    .shib-workspace-background-image-toggle
+  )
   .workspace-tabs.mod-top {
   background: var(--background-secondary-alt);
 }
@@ -6514,7 +7210,9 @@ body.toggle-bg-panel-page.panel-page-bg-theme-dark-apple.theme-dark {
 }
 
 body.toggle-bg-panel-page.panel-page-bg-theme-dark-custom.theme-dark {
-  --panel-page-background-url-theme: var(--background-panel-page-theme-dark-custom);
+  --panel-page-background-url-theme: var(
+    --background-panel-page-theme-dark-custom
+  );
 }
 
 body.toggle-bg-panel-page.panel-page-bg-theme-light-space.theme-light {
@@ -6526,7 +7224,9 @@ body.toggle-bg-panel-page.panel-page-bg-theme-light-paradise.theme-light {
 }
 
 body.toggle-bg-panel-page.panel-page-bg-theme-light-custom.theme-light {
-  --panel-page-background-url-theme: var(--background-panel-page-theme-light-custom);
+  --panel-page-background-url-theme: var(
+    --background-panel-page-theme-light-custom
+  );
 }
 
 .workspace-leaf-content[data-type="calendar"] .view-content {
