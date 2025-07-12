@@ -78,6 +78,31 @@ html[saved-theme="light"] {
   --mono-rgb-100: 0, 0, 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background: unset !important;
+  background-image: linear-gradient(
+    to right,
+    #dddddd,
+    #cbcbcb,
+    #e990eb
+  ) !important;
+}
+body {
+  figure[data-rehype-pretty-code-figure] pre,
+  pre {
+    box-shadow:
+      -24px 24px 69px -3px #8a5cf533,
+      24px -24px 69px -3px hsla(438, 88%, 66%, 0.13) !important;
+  }
+}
+
 @font-face {
   font-family: "Peace Sans";
   font-style: normal;
