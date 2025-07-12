@@ -1,0 +1,99 @@
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
+
+  color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
+  .theme-light { --mono-rgb-0: inherit;
+--mono-rgb-100: inherit;
+--color-red-rgb: inherit;
+--color-red: rgb(inherit);
+--color-green-rgb: inherit;
+--color-green: rgb(inherit);
+--color-orange-rgb: inherit;
+--color-orange: rgb(inherit);
+--color-yellow-rgb: inherit;
+--color-yellow: rgb(inherit);
+--color-cyan-rgb: inherit;
+--color-cyan: rgb(inherit);
+--color-blue-rgb: inherit;
+--color-blue: rgb(inherit);
+--color-purple-rgb: inherit;
+--color-purple: rgb(inherit);
+--color-pink-rgb: inherit;
+--color-pink: rgb(inherit);
+--color-base-00: rgb(inherit);
+--color-base-10: rgb(inherit);
+--color-base-20: rgb(inherit);
+--color-base-25: rgb(inherit);
+--color-base-30: rgb(inherit);
+--color-base-35: rgb(inherit);
+--color-base-40: rgb(inherit);
+--color-base-50: rgb(inherit);
+--color-base-60: rgb(inherit);
+--color-base-70: rgb(inherit);
+--color-base-100: rgb(inherit);
+--text-highlight-bg: rgba(inherit, 0.2);
+--text-highlight-bg-active: rgba(inherit, 0.4);
+--input-shadow: inset 0 0.5px 0.5px 0.5px #ffffff, 0 2px 4px 0 rgba(inherit, 0.15), 0 1px 1.5px 0 rgba(inherit, 0.1), 0 1px 2px 0 rgba(inherit, 0.2), 0 0 0 0 transparent;
+--input-shadow-hover: inset 0 0.5px 1px 0.5px #ffffff, 0 2px 3px 0 rgba(inherit, 0.3), 0 1px 1.5px 0 rgba(inherit, 0.2), 0 1px 2px 0 rgba(inherit, 0.4), 0 0 0 0 transparent;
+--shadow-s: 0px 1px 2px rgba(inherit, 0.121), 0px 3.4px 6.7px rgba(inherit, 0.179), 0px 15px 30px rgba(inherit, 0.3);
+--shadow-l: 0px 1.8px 7.3px rgba(inherit, 0.071), 0px 6.3px 24.7px rgba(inherit, 0.112), 0px 30px 90px rgba(inherit, 0.2);
+--background-primary: rgb(inherit);
+--background-primary-alt: rgb(inherit);
+--background-secondary: rgb(inherit);
+--background-secondary-alt: rgb(inherit);
+--background-modifier-hover: rgba(inherit, 0.075);
+--background-modifier-form-field: rgba(inherit, 0.3);
+--background-modifier-success: rgba(inherit, 1);
+--background-modifier-success-hover: rgba(inherit, 0.9);
+--background-modifier-success-rgb: inherit;
+--background-modifier-error: rgba(inherit, 1);
+--background-modifier-error-rgb: inherit;
+--background-modifier-error-hover: rgba(inherit, 0.9);
+--background-modifier-message: rgba(inherit, 0.9);
+--modal-border-color: rgb(inherit);
+--text-normal: rgb(inherit);
+--text-muted: rgb(inherit);
+--text-muted-rgb: inherit;
+--text-faint: rgb(inherit);
+--text-error: rgb(inherit);
+--text-error-hover: rgba(inherit, 0.8);
+--text-success: rgb(inherit);
+--text-on-accent: rgb(inherit);
+--interactive-normal: rgb(inherit);
+--interactive-hover: rgb(inherit);
+--interactive-success: rgb(inherit);
+--workspace-background-translucent: rgba(inherit, 0.6);
+--blockquote-background-color: rgba(inherit, 0.5);
+--width-image-gallery: 200px;
+--min-width-image: 50%;
+--max-width-image: 90%;
+--drag-ghost-background: rgb(inherit);
+--drag-ghost-text-color: rgb(inherit);
+--nav-indentation-guide-color: rgba(inherit, 0.4);
+--titlebar-text-color-focused: rgb(inherit);
+--callout-title-padding: 8px;
+--table-border-width: var(--anp-table-thickness, 1px);
+--icon-color-focused: rgb(inherit);
+--embed-block-shadow-hover: none;
+} .theme-dark.theme-dark { --canvas-color: inherit;
+} .theme-light.theme-light { --canvas-color: inherit;
+} body.theme-light { --anp-background-image: var(--anp-background-image-light);
+--anp-custom-bg-brightness: var(--anp-custom-bg-brightness-light);
+--anp-custom-bg-blur: var(--anp-custom-bg-blur-light);
+--anp-custom-bg-card-fg-opacity: var(--anp-custom-bg-card-fg-opacity-light);
+
+}

@@ -1,0 +1,31 @@
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+
+  color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
+  .theme-dark { --code-background: #f5f4f4;
+--icon-color: #222222;
+--nav-item-color: #202430;
+--nav-item-color-active: #888888;
+--nav-item-color-hover: #222222;
+--tab-divider-color: transparent !important;
+--tag-color-hover: #999999;
+--tag-background: transparent;
+--tag-background-hover: transparent;
+--text-highlight-bg: transparent;
+
+}
+

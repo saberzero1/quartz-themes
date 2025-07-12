@@ -1,0 +1,25 @@
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
+
+  color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
+  .theme-light { --h1-size: 2.2em;
+--h2-size: 2em;
+--h3-size: 1.85em;
+--h4-size: 1.6em;
+--h5-size: 1.47em;
+
+}

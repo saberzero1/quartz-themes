@@ -194,7 +194,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-note);
-      background: var(--bg);
+      /*background: var(--bg);*/
     }
     &[data-callout="abstract"] {
       //%%.callout[data-callout="abstract"]%--callout-color%%
@@ -204,7 +204,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-abstract);
-      background: var(--bg);
+      /*background: var(--bg);*/
     }
     &[data-callout="summary"] {
       //%%.callout[data-callout="summary"]%--callout-color%%
@@ -214,7 +214,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-abstract);
-      background: var(--bg);
+      /*background: var(--bg);*/
     }
     &[data-callout="tldr"] {
       //%%.callout[data-callout="tldr"]%--callout-color%%
@@ -224,7 +224,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-abstract);
-      background: var(--bg);
+      /*background: var(--bg);*/
     }
     &[data-callout="info"] {
       //%%.callout[data-callout="info"]%--callout-color%%
@@ -234,7 +234,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-info);
-      background: var(--bg);
+      /*background: var(--bg);*/
     }
     &[data-callout="todo"] {
       //%%.callout[data-callout="todo"]%--callout-color%%
@@ -244,7 +244,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-todo);
-      background: var(--bg);
+      /*background: var(--bg);*/
     }
     &[data-callout="important"] {
       //%%.callout[data-callout="important"]%--callout-color%%
@@ -254,7 +254,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-tip);
-      background: var(--bg);
+      /*background: var(--bg);*/
     }
     &[data-callout="tip"] {
       //%%.callout[data-callout="tip"]%--callout-color%%
@@ -264,7 +264,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-tip);
-      background: var(--bg);
+      /*background: var(--bg);*/
     }
     &[data-callout="hint"] {
       //%%.callout[data-callout="hint"]%--callout-color%%
@@ -274,7 +274,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-tip);
-      background: var(--bg);
+      /*background: var(--bg);*/
     }
     &[data-callout="success"] {
       //%%.callout[data-callout="success"]%--callout-color%%
@@ -284,7 +284,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-success);
-      background: var(--bg);
+      /*background: var(--bg);*/
     }
     &[data-callout="check"] {
       //%%.callout[data-callout="check"]%--callout-color%%
@@ -294,7 +294,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-success);
-      background: var(--bg);
+      /*background: var(--bg);*/
     }
     &[data-callout="done"] {
       //%%.callout[data-callout="done"]%--callout-color%%
@@ -304,7 +304,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-success);
-      background: var(--bg);
+      /*background: var(--bg);*/
     }
     &[data-callout="question"] {
       //%%.callout[data-callout="question"]%--callout-color%%
@@ -314,7 +314,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-question);
-      background: var(--bg);
+      /*background: var(--bg);*/
     }
     &[data-callout="help"] {
       //%%.callout[data-callout="help"]%--callout-color%%
@@ -324,7 +324,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-question);
-      background: var(--bg);
+      /*background: var(--bg);*/
     }
     &[data-callout="faq"] {
       //%%.callout[data-callout="faq"]%--callout-color%%
@@ -334,7 +334,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-question);
-      background: var(--bg);
+      /*background: var(--bg);*/
     }
     &[data-callout="warning"] {
       //%%.callout[data-callout="warning"]%--callout-color%%
@@ -344,7 +344,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-warning);
-      background: var(--bg);
+      /*background: var(--bg);*/
     }
     &[data-callout="caution"] {
       //%%.callout[data-callout="caution"]%--callout-color%%
@@ -354,7 +354,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-warning);
-      background: var(--bg);
+      /*background: var(--bg);*/
     }
     &[data-callout="attention"] {
       //%%.callout[data-callout="attention"]%--callout-color%%
@@ -364,7 +364,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-warning);
-      background: var(--bg);
+      /*background: var(--bg);*/
     }
     &[data-callout="failure"] {
       //%%.callout[data-callout="failure"]%--callout-color%%
@@ -374,7 +374,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-failure);
-      background: var(--bg);
+      /*background: var(--bg);*/
     }
     &[data-callout="fail"] {
       //%%.callout[data-callout="fail"]%--callout-color%%
@@ -384,7 +384,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-failure);
-      background: var(--bg);
+      /*background: var(--bg);*/
     }
     &[data-callout="missing"] {
       //%%.callout[data-callout="missing"]%--callout-color%%
@@ -394,7 +394,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-failure);
-      background: var(--bg);
+      /*background: var(--bg);*/
     }
     &[data-callout="danger"] {
       //%%.callout[data-callout="danger"]%--callout-color%%
@@ -404,7 +404,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-danger);
-      background: var(--bg);
+      /*background: var(--bg);*/
     }
     &[data-callout="error"] {
       //%%.callout[data-callout="error"]%--callout-color%%
@@ -414,7 +414,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-danger);
-      background: var(--bg);
+      /*background: var(--bg);*/
     }
     &[data-callout="bug"] {
       //%%.callout[data-callout="bug"]%--callout-color%%
@@ -424,7 +424,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-bug);
-      background: var(--bg);
+      /*background: var(--bg);*/
     }
     &[data-callout="example"] {
       //%%.callout[data-callout="example"]%--callout-color%%
@@ -434,7 +434,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-example);
-      background: var(--bg);
+      /*background: var(--bg);*/
     }
     &[data-callout="quote"] {
       //%%.callout[data-callout="quote"]%--callout-color%%
@@ -444,7 +444,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-quote);
-      background: var(--bg);
+      /*background: var(--bg);*/
     }
     &[data-callout="cite"] {
       //%%.callout[data-callout="cite"]%--callout-color%%
@@ -454,7 +454,7 @@ html {
       --color: rgb(var(--callout-color));
       --bg: rgba(var(--callout-color), 0.1);
       --callout-icon: var(--callout-icon-quote);
-      background: var(--bg);
+      /*background: var(--bg);*/
     }
   }
 
@@ -462,13 +462,13 @@ html {
     
     //%%.callout-title%%
 
-    background: var(--bg);
+    /*background: var(--bg);*/
 
     & > .callout-title-inner > p {
 
       //%%.callout-title-inner%%
 
-      color: var(--color);
+      /*color: var(--color);*/
     }
 
     .callout-title-inner {

@@ -1,0 +1,27 @@
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
+
+  color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
+  .theme-light, .intensity-twilight { --lum: 11%;
+} .intensity-dawn { --lum: 22%;
+--background-secondary: #ffffff !important;
+--titlebar-background-focused: color-mix(in srgb, var(--background) 40%, var(--black)) !important;
+--background-modifier-form-field: color-mix(in srgb, var(--background) 40%, var(--black)) !important;
+} .intensity-abyss { --lum: 0%;
+--background-modifier-border: color-mix(in srgb, var(--background) 80%, var(--foreground)) !important;
+
+}

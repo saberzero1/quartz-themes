@@ -1,0 +1,25 @@
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
+
+  color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
+  .theme-light { --accent-1: #ff00ff;
+--accent-2: #00ffff;
+--accent-3: #00ff00;
+--accent-4: #ffff00;
+--accent-5: #ff0000;
+
+}

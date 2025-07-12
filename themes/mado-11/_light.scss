@@ -1,0 +1,23 @@
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+
+  color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
+  .is-mobile.theme-light, .is-tablet.theme-light { --color-base-00: hsla( calc(var(--bgcolor-h)), calc(17%), calc(var(--bgcolor-l)), 1 );
+--color-base-10: hsla( calc(var(--bgcolor-h) + 6), calc(17% - 6%), calc(var(--bgcolor-l) - 4%), 1);
+
+}
+

@@ -1,0 +1,62 @@
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+
+  color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
+  .theme-light .theme-dark { --background-modifier-active-hover-alt: color-mix( in srgb, var(--theme-color-base), white 25%);
+--background-modifier-active-hover: color-mix( in srgb, var(--theme-color-base), white 60% );
+--background-modifier-border-focus: var(--theme-color-base);
+--background-modifier-border: color-mix( in srgb, var(--theme-color-base), white 25%);
+--background-modifier-hover: var(--theme-color-base);
+--blockquote-border-color: color-mix( in srgb, var(--theme-color-base), white 80% );
+--caret-color: hsl(var(--accent-h), 150%, 50%);
+--collapse-icon-color: var(--theme-color-base);
+--collapse-icon-color-collapsed: var(--theme-color-base);
+--empty-pane-color: color-mix( in srgb, var(--theme-color-base), black 70% );
+--icon-color-focused: white;
+--icon-color-hover: white;
+--icon-color: var(--theme-color-base);
+--modal-background: color-mix( in srgb, var(--theme-color-base), white 80% );
+--nav-collapse-icon-color-collapsed: var(--theme-color-baseTransparent75);
+--nav-collapse-icon-color: var(--theme-color-baseTransparent75);
+--nav-indentation-guide-color: hsl( from var(--theme-color-base) h s l / 0.25 );
+--nav-item-background-active: var(--theme-color-base);
+--nav-item-background-selected: hsl( from var(--theme-color-base) h s l / 0.25 );
+--nav-item-color-active: color-mix( in srgb, var(--theme-color-base), white 80% );
+--nav-item-color: color-mix( in srgb, var(--theme-color-base), black 80% );
+--nav-item-color-hover: white;
+--search-clear-button-color: var(--theme-color-base);
+--search-icon-color: var(--theme-color-base);
+--status-bar-text-color: black;
+--tab-background-active: var(--background-primary);
+--tab-background-inactive: color-mix( in srgb, var(--theme-color-base), white 80% );
+--tab-text-color: hsl( from var(--theme-color-base) h s l / 0.5 );
+--tab-text-color-active: hsl( from var(--theme-color-base) h s l / 0.5 );
+--tab-text-color-focused: var(--theme-color-baseDarkened25);
+--tab-text-color-focused-active: var(--theme-color-baseDarkened25);
+--tab-text-color-focused-highlighted: hsl( calc(var(--accent-h) - 3), calc(88% * 1.02), calc(var(--accent-l) * 1.15) );
+--tab-text-color-focused-active-current: color-mix( in srgb, var(--theme-color-base), white 60% );
+--tag-color: hsl( var(--accent-h), calc(88%), calc(var(--accent-l) * 0.9) );
+--tag-background: hsl( var(--accent-h), 88%, var(--accent-l), 0.15 );
+--text-normal: color-mix( in srgb, var(--theme-color-base), black 90%);
+--text-faint: color-mix( in srgb, var(--theme-color-base), black 70% );
+--background-prompt: color-mix( in srgb, var(--theme-color-base), white 95% );
+--interactive-accent: var(--theme-color-base);
+--interactive-accent-hover: var(--theme-color-base);
+--table-border-color: color-mix( in srgb, var(--theme-color-base), white 60% );
+
+}
+

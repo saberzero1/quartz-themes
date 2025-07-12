@@ -34,6 +34,8 @@ const inputParameters = process.argv.slice(2);
 
 const fullMode = inputParameters.includes("--full");
 
+const regenerateCSS = inputParameters.includes("--regenerate-css");
+
 clearDefaultDirectories(manifestCollection);
 createDefaultDirectories(manifestCollection);
 copyFiles(manifestCollection, fullMode);
@@ -41,7 +43,7 @@ copyFiles(manifestCollection, fullMode);
 replaceBefore(manifestCollection);
 
 if (fullMode) {
-  combineThemeCSSWithObsidianCSS(manifestCollection);
+  combineThemeCSSWithObsidianCSS(manifestCollection, regenerateCSS);
 
   toJSON(manifestCollection);
 

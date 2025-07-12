@@ -1,0 +1,47 @@
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
+
+  color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
+  .theme-light { --base03: #002b36;
+--base02: #073642;
+--base01: #586e75;
+--base00: #657b83;
+--base0: #839496;
+--base1: #93a1a1;
+--base2: #eee8d5;
+--base3: #fdf6e3;
+--color-yellow: #b58900;
+--color-yellow-rgb: 181, 137, 0;
+--color-orange: #cb4b16;
+--color-orange-rgb: 203, 75, 22;
+--color-red: #dc322f;
+--color-red-rgb: 220, 50, 47;
+--color-pink: #d33682;
+--color-pink-rgb: 211, 54, 130;
+--color-purple: #6c71c4;
+--color-purple-rgb: 108, 113, 196;
+--color-blue: #268bd2;
+--color-blue-rgb: 38, 139, 210;
+--color-cyan: #2aa198;
+--color-cyan-rgb: 42, 161, 152;
+--color-green: #859900;
+--color-green-rgb: 133, 153, 0;
+--accent-h: 18;
+--accent-s: 80%;
+--accent-l: 44%;
+
+}

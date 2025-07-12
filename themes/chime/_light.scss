@@ -1,0 +1,88 @@
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+
+  color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
+  .theme-default.theme-light { --accent-h: 323;
+--accent-s: 30%;
+--accent-l: 65%;
+color-scheme: light;
+--highlight-mix-blend-mode: darken;
+--mono-rgb-0: 255, 255, 255;
+--mono-rgb-100: 0, 0, 0;
+--color-red-rgb: 225, 120, 132;
+--color-red: #e17884;
+--color-green-rgb: 117, 194, 151;
+--color-green: #75c297;
+--color-orange-rgb: 241, 144, 112;
+--color-orange: #f19070;
+--color-yellow-rgb: 255, 168, 46;
+--color-yellow: #dcb46f;
+--color-cyan-rgb: 111, 210, 194;
+--color-cyan: #6fd2c2;
+--color-blue-rgb: 136, 198, 227;
+--color-blue: #88c6e3;
+--color-purple-rgb: 181, 132, 199;
+--color-purple: #b584c7;
+--color-pink-rgb: 220, 118, 167;
+--color-pink: #dc76a7;
+--color-base-00: #f8f3f2;
+--color-base-05: #faf3f1;
+--color-base-10: #f0e9e4;
+--color-base-20: #f4ebeb;
+--color-base-25: #d9c9ca;
+--color-base-30: #cec2c577;
+--color-base-35: #b5a7ac;
+--color-base-40: #b6a4b2;
+--color-base-50: #a391a3;
+--color-base-60: #867786;
+--color-base-70: #685a68;
+--color-base-100: #594f67;
+} .theme-dark, .theme-default.theme-dark { color-scheme: dark;
+--highlight-mix-blend-mode: lighten;
+--mono-rgb-0: 0, 0, 0;
+--mono-rgb-100: 255, 255, 255;
+--color-red-rgb: 225, 120, 132;
+--color-red: #e17884;
+--color-green-rgb: 117, 194, 151;
+--color-green: #75c297;
+--color-orange-rgb: 241, 144, 112;
+--color-orange: #f19070;
+--color-yellow-rgb: 255, 168, 46;
+--color-yellow: #dcb46f;
+--color-cyan-rgb: 111, 210, 194;
+--color-cyan: #6fd2c2;
+--color-blue-rgb: 136, 198, 227;
+--color-blue: #88c6e3;
+--color-purple-rgb: 181, 132, 199;
+--color-purple: #b584c7;
+--color-pink-rgb: 220, 118, 167;
+--color-pink: #dc76a7;
+--color-base-00: #3b3347;
+--color-base-10: #413b4e;
+--color-base-20: #2f2837;
+--color-base-25: #55546e;
+--color-base-30: #4e4560;
+--color-base-35: #545e76;
+--color-base-40: #626f86;
+--color-base-50: #7d7f95;
+--color-base-60: #678194;
+--color-base-70: #7f83a1;
+--color-base-100: #a0a7c4;
+--background-secondary-alt: #202020;
+
+}
+

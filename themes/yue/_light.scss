@@ -1,0 +1,36 @@
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+
+  color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
+  body.theme-light.is-mobile { color-scheme: light;
+--highlight-mix-blend-mode: darken;
+--mono-rgb-0: 255, 255, 255;
+--mono-rgb-100: 0, 0, 0;
+--color-red-rgb: 228, 55, 75;
+--color-red: #fb464c;
+--color-green-rgb: 68, 207, 110;
+--color-green: #6ea82c;
+--color-orange: #f39b35;
+--color-yellow: #ffda34;
+--color-cyan: #53dfdd;
+--color-blue: #0e86ff;
+--color-purple: #a06fca;
+--color-pink: #ec7db9;
+--color-base-00: #ffffff;
+
+}
+
