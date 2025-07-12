@@ -78,7 +78,7 @@ html[saved-theme="light"] {
   --mono-rgb-100: 0, 0, 0;
 }
 
-h1,
+/*h1,
 h2,
 h3,
 h4,
@@ -98,7 +98,7 @@ h6 a {
     #cbcbcb,
     #e990eb
   ) !important;
-}
+}*/
 body {
   figure[data-rehype-pretty-code-figure] pre,
   pre {
@@ -418,7 +418,7 @@ html {
 
     background-color: rgba(158, 158, 158, 0.1);
 
-    background-color: var(--bg);
+    /*background-color: var(--bg);*/
     border-color: var(--border);
 
     overflow-x: auto;
