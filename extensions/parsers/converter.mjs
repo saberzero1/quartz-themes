@@ -33,7 +33,7 @@ export function convert(css, fullMode = false) {
         .split(
           /(?<![\+\/]\s*?(?:xml|png|octet-stream|woff2?|vnd\.ms-opentype|ttf|otf));/g,
         )
-        .map((d) => d.replaceAll("\n", ""))
+        .map((d) => d.replaceAll("\n", " "))
         .map((d) => d.replaceAll(",", ", "))
         .map((d) => d.replaceAll(/\s+/g, " "))
         .map((d) => d.trim())

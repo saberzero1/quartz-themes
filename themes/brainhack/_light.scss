@@ -1,0 +1,24 @@
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+
+  color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
+  .theme-dark { --accent-color-hsl: hsla( var(--accento-h, var(--accent-h)), var(--accento-s, 88%), var(--accento-l, var(--accent-l)) );
+--color-accent: hsla( var(--accento-h, var(--accent-h)), var(--accento-s, 88%), var(--accento-l, var(--accent-l)) );
+--text-accent: hsla( var(--accento-h, var(--accent-h)), var(--accento-s, 88%), var(--accento-l, var(--accent-l)));
+
+}
+

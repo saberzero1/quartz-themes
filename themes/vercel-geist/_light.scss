@@ -1,0 +1,33 @@
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+
+  color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
+  .theme-dark { --background-primary: var(--vercel-gray-900);
+--background-primary-alt: var(--vercel-gray-900);
+--background-secondary: var(--vercel-gray-900);
+--background-secondary-alt: #333333;
+--background-accent: #00b8d9;
+--background-modifier-border: var(--border-1);
+--background-modifier-form-field: #000000;
+--background-modifier-form-field-highlighted: #000000;
+--background-modifier-box-shadow: #000000;
+--background-modifier-success: #0070f3;
+--background-modifier-error: #ff0000;
+--background-modifier-error-hover: #ff3333;
+
+}
+

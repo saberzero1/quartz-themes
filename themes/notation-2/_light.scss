@@ -1,0 +1,26 @@
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+
+  color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
+  .theme-dark { --text-highlight-bg: #89632a;
+} .markdown-rendered mark, .cm-highlight { padding: 0px 3px 2px 3px;
+} .markdown-preview-view pre > code { padding: 24px 6px 24px 10px;
+color: rgba(55, 53, 47, 0.9);
+display: block;
+
+}
+

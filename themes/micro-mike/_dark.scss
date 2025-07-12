@@ -1,0 +1,36 @@
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
+
+  color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
+  .theme-light { --status-red-500: hsl(0, calc(var(--saturation-factor, 1) * 84.9%), 61%);
+--status-yellow-500: hsl(37.5, calc(var(--saturation-factor, 1) * 95.7%), 54.1%);
+--status-green-600: hsl(152.6, calc(var(--saturation-factor, 1) * 46%), 48.6%);
+--red-400: hsl(0, calc(var(--saturation-factor, 1) * 84.9%), 61%);
+--yellow-300: hsl(37.5, calc(var(--saturation-factor, 1) * 95.7%), 54.1%);
+--yellow-360: hsl(37.5, calc(var(--saturation-factor, 1) * 95.7%), 54.1%);
+--green-360: hsl(152.6, calc(var(--saturation-factor, 1) * 46%), 48.6%);
+--brand-500: var(--blurple);
+--premium-tier-2-purple-for-gradients: hsl( 342, calc(var(--saturation-factor, 1) * 58%), 72.9% );
+--premium-tier-2-purple-for-gradients-hsl: 342, calc(var(--saturation-factor, 1) * 58%), 72.9%;
+--premium-tier-2-purple-for-gradients-2: hsl( 296.8, calc(var(--saturation-factor, 1) * 44.2%), 66.3% );
+--premium-tier-2-purple-for-gradients-2-hsl: 296.8, calc(var(--saturation-factor, 1) * 44.2%), 66.3%;
+--premium-tier-2-pink-for-gradients: hsl( 270, calc(var(--saturation-factor, 1) * 86.7%), 70.6% );
+--premium-tier-2-pink-for-gradients-hsl: 270, calc(var(--saturation-factor, 1) * 86.7%), 70.6%;
+--premium-tier-2-pink-for-gradients-2: hsl( 296.8, calc(var(--saturation-factor, 1) * 44.2%), 66.3% );
+--premium-tier-2-pink-for-gradients-2-hsl: 296.8, calc(var(--saturation-factor, 1) * 44.2%), 66.3%;
+
+}

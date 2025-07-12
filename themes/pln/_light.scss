@@ -1,0 +1,31 @@
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+
+  color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
+  .theme-dark { --color-red: #bf616a;
+--color-orange: #d08770;
+--color-yellow-light: #ebcb8b;
+--color-yellow-dark: #e4b860;
+--color-green: #a3be8c;
+--color-purple: #b48ead;
+--color-sea-green: #8fbcbb;
+--color-cyan: #88c0d0;
+--color-frost: #81a1c1;
+--color-blue: #5e81ac;
+
+}
+

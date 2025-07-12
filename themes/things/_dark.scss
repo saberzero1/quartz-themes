@@ -1,0 +1,62 @@
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
+
+  color-scheme: dark;
+
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-dark);
+  }
+
+  body.theme-dark.is-mobile { color-scheme: dark;
+--highlight-mix-blend-mode: lighten;
+--mono-rgb-0: 0, 0, 0;
+--mono-rgb-100: 255, 255, 255;
+--color-red-rgb: 251, 70, 76;
+--color-red: #fb464c;
+--color-green-rgb: 68, 207, 110;
+--color-green: #44cf6e;
+--color-orange: #e9973f;
+--color-yellow: #e0de71;
+--color-cyan: #53dfdd;
+--color-blue: #027aff;
+--color-purple: #a882ff;
+--color-pink: #fa99cd;
+--color-base-00: #1c2127;
+--color-base-10: #282c34;
+--color-base-20: #181c20;
+--color-base-25: #2c313c;
+--color-base-30: #35393e;
+--color-base-35: #3f3f3f;
+--color-base-40: #555;
+--color-base-50: #666;
+--color-base-60: #999;
+--color-base-70: #bababa;
+--color-base-100: #dadada;
+--color-accent-hsl: 215, 75%, var(--accent-l);
+--color-accent: hsl(215, 75%, var(--accent-l));
+--color-accent-1: hsl( 215, 75%, calc(var(--accent-l) - 3.8%) );
+--color-accent-2: hsl( 215, 75%, calc(var(--accent-l) + 3.8%) );
+--titlebar-background-focused: #282c34;
+--background-modifier-form-field: #2c313c;
+--background-secondary-alt: #35393e;
+--interactive-normal: #35393e;
+--interactive-hover: #3f3f3f;
+--text-highlight-bg-d: #ffd000;
+--text-highlight-bg: #ffd000;
+--text-highlight-bg-active: #ff8000;
+--text-selection: hsla(215, 75%, var(--accent-l), 0.25);
+--input-shadow: inset 0 0.5px 0.5px 0.5px #ffffff, 0 2px 4px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent;
+--input-shadow-hover: inset 0 0.5px 1px 0.5px #ffffff, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent;
+--shadow-s: 0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
+--shadow-l: ;
+
+}

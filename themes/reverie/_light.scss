@@ -1,0 +1,31 @@
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
+  --background-primary: #e7e7e7;
+  --background-primary-alt: #e7e7e7;
+  --background-secondary: #e3e3e3;
+  --background-secondary-alt: #bebebe;
+  --text-normal: #1a2023;
+  --text-faint: #665c54;
+  --text-title-h1: #1bb0b6;
+  --text-title-h2: #3fa7ab;
+  --text-title-h3: #458588;
+  --text-title-h4: #4b6667;
+  --text-title-h5: #3b4646;
+  --text-link: #458588;
+  --text-a-hover: #458588;
+}

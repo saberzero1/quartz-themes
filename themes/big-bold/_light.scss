@@ -1,0 +1,62 @@
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+
+  color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
+  .theme-dark { --vault-icon: "💎";
+--vault-font: "Noto Emoji";
+--accent-h: 181 !important;
+--accent-s: 100% !important;
+--accent-l: 35% !important;
+--panel-child: hsl(220, 9%, 95%);
+} .theme-light, .is-mobile.theme-light { --doc-bg: hsl(181, 20%, 95%);
+--shadow-color: hsl(0, 0%, 92%);
+--color-red-rgb: 255, 77, 58;
+--color-red: #c75f54;
+--color-green-rgb: 125, 207, 43;
+--color-green: #8fb26b;
+--color-orange-rgb: 246, 156, 0;
+--color-orange: #d08344;
+--color-yellow-rgb: 232, 201, 0;
+--color-yellow: #dca931;
+--color-cyan-rgb: 0, 206, 203;
+--color-cyan: #49a7ba;
+--color-blue-rgb: 0, 155, 227;
+--color-blue: #4e8aa6;
+--color-purple-rgb: 180, 90, 245;
+--color-purple: #8076ad;
+--color-pink-rgb: 230, 106, 180;
+--color-pink: #ac7aaa;
+--color-base-00: hsla(0, 0%, 100%, var(--page-transparency-custom));
+--color-base-05: #fcfcfc;
+--color-base-10: #fdfdfd;
+--color-base-20: hsl(0, 0%, 96%);
+--color-base-25: #efefef;
+--color-base-30: #9f9f9f66;
+--color-base-35: #dedede;
+--color-base-40: #d7d7d7;
+--color-base-50: #878787;
+--color-base-60: #939393;
+--color-base-70: #7f7f7f;
+--color-base-100: #252525;
+--text-highlight-bg: #ffd000;
+--text-highlight-bg-active: #ff8000;
+--color-accent-3: hsl( calc(232 !important + 35), 75% !important, calc(70% !important + 12%) );
+--color-accent-1: hsl( calc(232 !important - 4), 75% !important, calc(70% !important - 2%) );
+--color-accent-2: hsl( calc(232 !important + 2), calc(75% !important + 5%), calc(70% !important + 4%) );
+
+}
+

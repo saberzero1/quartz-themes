@@ -1,0 +1,33 @@
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+
+  color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
+
+  code[data-theme*=" "] {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+  }
+
+  .theme-light.default-light-theme { --text: 76, 79, 105;
+--subtext1: 92, 95, 119;
+--subtext0: 108, 111, 133;
+--overlay2: 76, 79, 105;
+--overlay1: 140, 143, 161;
+--overlay0: 156, 160, 176;
+--surface2: 221, 225, 238;
+--surface1: 188, 192, 204;
+--surface0: 221, 225, 238;
+--exterior: 254, 241, 241;
+--side: 243, 236, 243;
+--base: 252, 252, 252;
+
+}
+
