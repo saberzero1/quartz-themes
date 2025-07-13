@@ -40,6 +40,32 @@ html[saved-theme="dark"] {
   --color-cyan: rgb(var(--frost1_x));
   --color-blue: rgb(var(--frost3_x));
   --color-yellow: rgb(var(--yellow_x));
+  --color-orange: rgb(var(--orange_x));
+  --background-primary: rgb(var(--dark0_x));
+  --background-primary-alt: rgb(var(--dark0_x));
+  --background-secondary: rgb(var(--dark1_x));
+  --background-modifier-border: rgb(var(--dark2_x));
+  --text-normal: rgb(var(--light2_x));
+  --text-faint: rgb(var(--light0_x));
+  --text-muted: rgb(var(--light1_x));
+  --h1-color: rgb(var(--red_x));
+  --text-highlight-bg: rgb(var(--frost1_x));
+  --text-accent: rgb(var(--orange_x));
+  --text-accent-hover: rgb(var(--frost2_x));
+  --tag-color: rgb(var(--frost0_x));
+  --tag-background: rgb(var(--dark2_x));
+  --tag-background-hover: rgb(var(--dark1_x));
+  --inline-title-color: rgb(var(--yellow_x));
+  --bold-color: rgb(var(--yellow_x));
+  --italic-color: rgb(var(--yellow_x));
+  --checkbox-color: rgb(var(--frost0_x));
+  --checkbox-color-hover: rgb(var(--frost0_x));
+  --checkbox-border-color: rgb(var(--frost0_x));
+  --checkbox-border-color-hover: rgb(var(--frost0_x));
+  --code-normal: rgb(var(--frost1_x));
+  --code-background: rgb(var(--dark1_x));
+  --graph-line: rgb(var(--dark3_x));
+  --graph-node-tag: rgb(var(--red_x));
 }
 
 :root[saved-theme="light"],
@@ -75,6 +101,32 @@ html[saved-theme="light"] {
   --color-cyan: rgb(var(--frost1_x));
   --color-blue: rgb(var(--frost3_x));
   --color-yellow: rgb(var(--yellow_x));
+  --color-orange: rgb(var(--orange_x));
+  --background-primary: rgb(var(--light3_x));
+  --background-primary-alt: rgb(var(--light3_x));
+  --background-secondary: rgb(var(--light2_x));
+  --background-modifier-border: rgb(var(--light1_x));
+  --text-normal: rgb(var(--dark2_x));
+  --text-faint: rgb(var(--dark0_x));
+  --text-muted: rgb(var(--dark1_x));
+  --h1-color: rgb(var(--red_x));
+  --text-highlight-bg: rgb(var(--yellow_x));
+  --text-accent: rgb(var(--orange_x));
+  --text-accent-hover: rgb(var(--frost2_x));
+  --tag-color: rgb(var(--dark3_x));
+  --tag-background: rgb(var(--light1_x));
+  --tag-background-hover: rgb(var(--light0_x));
+  --inline-title-color: rgb(var(--yellow_x));
+  --bold-color: rgb(var(--green_x));
+  --italic-color: rgb(var(--green_x));
+  --checkbox-color: rgb(var(--frost2_x));
+  --checkbox-color-hover: rgb(var(--frost2_x));
+  --checkbox-border-color: rgb(var(--frost2_x));
+  --checkbox-border-color-hover: rgb(var(--frost2_x));
+  --code-normal: rgb(var(--frost1_x));
+  --code-background: rgb(var(--light2_x));
+  --graph-line: rgb(var(--light0_x));
+  --graph-node-tag: rgb(var(--red_x));
 }
 
 @font-face {
@@ -243,9 +295,12 @@ html[saved-theme="light"] {
   --nav-item-background-hover: var(--background-modifier-hover);
   --dark0_x: 46, 52, 64;
   --dark1_x: 59, 66, 82;
+  --dark2_x: 67, 76, 94;
+  --dark3_x: 76, 86, 106;
   --light0_x: 216, 222, 233;
   --light1_x: 229, 233, 240;
   --light2_x: 236, 239, 244;
+  --light3_x: 255, 255, 255;
   --frost0_x: 143, 188, 187;
   --frost1_x: 136, 192, 208;
   --frost2_x: 129, 161, 193;
@@ -303,7 +358,7 @@ body {
   --nav-item-background-hover: var(--background-modifier-hover);
   --bold-color: inherit;
   --checkbox-size: 16px;
-  --checkbox-marker-color: #000;
+  --checkbox-marker-color: rgb(var(--dark0_x));
   --checkbox-color: hsl(354, 42%, 56%);
   --checkbox-color-hover: hsl(
     calc(354 - 3),
@@ -316,7 +371,7 @@ body {
   --code-normal: rgb(var(--light2_x));
   --code-comment: rgb(var(--light0_x));
   --code-function: rgb(var(--yellow_x));
-  --code-important: var(--color-orange);
+  --code-important: rgb(var(--orange_x));
   --code-keyword: #fa99cd;
   --code-property: rgb(var(--frost1_x));
   --code-punctuation: rgb(var(--light1_x));
@@ -380,10 +435,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -407,7 +462,7 @@ body {
     sans-serif;
   line-height: 1.3;
   font-size: 16px;
-  background-color: #000;
+  background-color: rgb(var(--dark0_x));
   color: rgb(var(--light2_x));
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
@@ -417,6 +472,7 @@ body {
   --tag-decoration-hover: underline;
   --tag-radius: 0.5em;
   --bold-weight: 600;
+  --checkbox-radius: 0;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -624,7 +680,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
 
-  background-color: #000;
+  background-color: rgb(var(--dark0_x));
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -653,13 +709,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: #000;
+      background-color: rgb(var(--dark0_x));
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: #000;
+        background-color: rgb(var(--dark0_x));
 
         background-color: var(--background-primary);
       }
@@ -668,7 +724,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: #000;
+          background-color: rgb(var(--dark0_x));
 
           background-color: var(--background-secondary);
 
@@ -1156,7 +1212,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: #000;
+        background-color: rgb(var(--dark0_x));
 
         background-color: var(--background-secondary);
 
@@ -1421,7 +1477,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: #000;
+        background-color: rgb(var(--dark0_x));
 
         border: 0.5pt solid var(--color-base-40, rgba(var(--red_x), 0.6));
 
@@ -1440,7 +1496,7 @@ body {
           width: 100%;
           padding: 24px;
           padding-inline-end: 48px;
-          background-color: #000;
+          background-color: rgb(var(--dark0_x));
           font-size: 16px;
           border: none;
           height: 48px;
@@ -1573,7 +1629,7 @@ body {
 
   /* POPOVER */
   .popover {
-    background-color: #000;
+    background-color: rgb(var(--dark0_x));
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow:
@@ -1593,7 +1649,7 @@ body {
     & .popover-inner {
       border: 1px solid transparent;
 
-      background-color: #000;
+      background-color: rgb(var(--dark0_x));
 
       border-radius: 8px;
 

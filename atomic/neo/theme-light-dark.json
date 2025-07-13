@@ -17,11 +17,11 @@
     "--color-base-100": { "light": "#222222", "dark": null },
     "--background-modifier-box-shadow": { "light": "#000000", "dark": null },
     "--input-shadow": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--input-shadow-hover": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--shadow-s": {
@@ -223,15 +223,21 @@
   },
   ".cards table.dataview thead:before": {
     "background-image": {
-      "light": "url('data:image/svg + xml, utf8, <svgxmlns=\"http://www.w3.org/2000/svg\"fill=\"none\"viewBox=\"0 0 100 100\"><pathfill=\"black\"d=\"M49.792 33.125l-5.892 5.892L33.333 28.45V83.333H25V28.45L14.438 39.017L8.542 33.125L29.167 12.5l20.625 20.625zm41.667 33.75L70.833 87.5l-20.625 -20.625l5.892 -5.892l10.571 10.567L66.667 16.667h8.333v54.883l10.567 -10.567l5.892 5.892z\"></path></svg>')",
+      "light": "url('data:image/svg + xml,utf8,<svgxmlns=\"http://www.w3.org/2000/svg\"fill=\"none\"viewBox=\"0 0 100 100\"><pathfill=\"black\"d=\"M49.792 33.125l-5.892 5.892L33.333 28.45V83.333H25V28.45L14.438 39.017L8.542 33.125L29.167 12.5l20.625 20.625zm41.667 33.75L70.833 87.5l-20.625 -20.625l5.892 -5.892l10.571 10.567L66.667 16.667h8.333v54.883l10.567 -10.567l5.892 5.892z\"></path></svg>')",
       "dark": null
     }
   },
   ".dropdown": {
     "background-image": {
       "light": null,
-      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+      "dark": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
     }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  input": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  textarea": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -240,7 +246,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))\n    drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {

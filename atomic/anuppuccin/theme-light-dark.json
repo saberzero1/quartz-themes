@@ -43,7 +43,7 @@
       "dark": null
     },
     "--ctp-flamingo": {
-      "light": "var( --ctp-custom-flamingo, var(--ctp-ext-flamingo, 221, 120, 120) )",
+      "light": "var(\n    --ctp-custom-flamingo,\n    var(--ctp-ext-flamingo, 221, 120, 120)\n  )",
       "dark": null
     },
     "--ctp-green": {
@@ -51,7 +51,7 @@
       "dark": null
     },
     "--ctp-lavender": {
-      "light": "var( --ctp-custom-lavender, var(--ctp-ext-lavender, 114, 135, 253) )",
+      "light": "var(\n    --ctp-custom-lavender,\n    var(--ctp-ext-lavender, 114, 135, 253)\n  )",
       "dark": null
     },
     "--ctp-mantle": {
@@ -67,15 +67,15 @@
       "dark": null
     },
     "--ctp-overlay0": {
-      "light": "var( --ctp-custom-overlay0, var(--ctp-ext-overlay0, 156, 160, 176) )",
+      "light": "var(\n    --ctp-custom-overlay0,\n    var(--ctp-ext-overlay0, 156, 160, 176)\n  )",
       "dark": null
     },
     "--ctp-overlay1": {
-      "light": "var( --ctp-custom-overlay1, var(--ctp-ext-overlay1, 140, 143, 161) )",
+      "light": "var(\n    --ctp-custom-overlay1,\n    var(--ctp-ext-overlay1, 140, 143, 161)\n  )",
       "dark": null
     },
     "--ctp-overlay2": {
-      "light": "var( --ctp-custom-overlay2, var(--ctp-ext-overlay2, 124, 127, 147) )",
+      "light": "var(\n    --ctp-custom-overlay2,\n    var(--ctp-ext-overlay2, 124, 127, 147)\n  )",
       "dark": null
     },
     "--ctp-peach": {
@@ -91,11 +91,11 @@
       "dark": null
     },
     "--ctp-rosewater": {
-      "light": "var( --ctp-custom-rosewater, var(--ctp-ext-rosewater, 222, 149, 132) )",
+      "light": "var(\n    --ctp-custom-rosewater,\n    var(--ctp-ext-rosewater, 222, 149, 132)\n  )",
       "dark": null
     },
     "--ctp-sapphire": {
-      "light": "var( --ctp-custom-sapphire, var(--ctp-ext-sapphire, 32, 159, 181) )",
+      "light": "var(\n    --ctp-custom-sapphire,\n    var(--ctp-ext-sapphire, 32, 159, 181)\n  )",
       "dark": null
     },
     "--ctp-sky": {
@@ -103,23 +103,23 @@
       "dark": null
     },
     "--ctp-subtext0": {
-      "light": "var( --ctp-custom-subtext0, var(--ctp-ext-subtext0, 108, 111, 133) )",
+      "light": "var(\n    --ctp-custom-subtext0,\n    var(--ctp-ext-subtext0, 108, 111, 133)\n  )",
       "dark": null
     },
     "--ctp-subtext1": {
-      "light": "var( --ctp-custom-subtext1, var(--ctp-ext-subtext1, 92, 95, 119) )",
+      "light": "var(\n    --ctp-custom-subtext1,\n    var(--ctp-ext-subtext1, 92, 95, 119)\n  )",
       "dark": null
     },
     "--ctp-surface0": {
-      "light": "var( --ctp-custom-surface0, var(--ctp-ext-surface0, 204, 208, 218) )",
+      "light": "var(\n    --ctp-custom-surface0,\n    var(--ctp-ext-surface0, 204, 208, 218)\n  )",
       "dark": null
     },
     "--ctp-surface1": {
-      "light": "var( --ctp-custom-surface1, var(--ctp-ext-surface1, 188, 192, 204) )",
+      "light": "var(\n    --ctp-custom-surface1,\n    var(--ctp-ext-surface1, 188, 192, 204)\n  )",
       "dark": null
     },
     "--ctp-surface2": {
-      "light": "var( --ctp-custom-surface2, var(--ctp-ext-surface2, 172, 176, 190) )",
+      "light": "var(\n    --ctp-custom-surface2,\n    var(--ctp-ext-surface2, 172, 176, 190)\n  )",
       "dark": null
     },
     "--ctp-teal": {
@@ -149,7 +149,7 @@
       "dark": null
     },
     "--ctp-flamingo": {
-      "light": "var( --ctp-custom-flamingo, var(--ctp-ext-flamingo, 221, 120, 120) )",
+      "light": "var(\n    --ctp-custom-flamingo,\n    var(--ctp-ext-flamingo, 221, 120, 120)\n  )",
       "dark": null
     },
     "--ctp-green": {
@@ -157,7 +157,7 @@
       "dark": null
     },
     "--ctp-lavender": {
-      "light": "var( --ctp-custom-lavender, var(--ctp-ext-lavender, 114, 135, 253) )",
+      "light": "var(\n    --ctp-custom-lavender,\n    var(--ctp-ext-lavender, 114, 135, 253)\n  )",
       "dark": null
     },
     "--ctp-mantle": {
@@ -173,15 +173,15 @@
       "dark": null
     },
     "--ctp-overlay0": {
-      "light": "var( --ctp-custom-overlay0, var(--ctp-ext-overlay0, 156, 160, 176) )",
+      "light": "var(\n    --ctp-custom-overlay0,\n    var(--ctp-ext-overlay0, 156, 160, 176)\n  )",
       "dark": null
     },
     "--ctp-overlay1": {
-      "light": "var( --ctp-custom-overlay1, var(--ctp-ext-overlay1, 140, 143, 161) )",
+      "light": "var(\n    --ctp-custom-overlay1,\n    var(--ctp-ext-overlay1, 140, 143, 161)\n  )",
       "dark": null
     },
     "--ctp-overlay2": {
-      "light": "var( --ctp-custom-overlay2, var(--ctp-ext-overlay2, 124, 127, 147) )",
+      "light": "var(\n    --ctp-custom-overlay2,\n    var(--ctp-ext-overlay2, 124, 127, 147)\n  )",
       "dark": null
     },
     "--ctp-peach": {
@@ -197,11 +197,11 @@
       "dark": null
     },
     "--ctp-rosewater": {
-      "light": "var( --ctp-custom-rosewater, var(--ctp-ext-rosewater, 222, 149, 132) )",
+      "light": "var(\n    --ctp-custom-rosewater,\n    var(--ctp-ext-rosewater, 222, 149, 132)\n  )",
       "dark": null
     },
     "--ctp-sapphire": {
-      "light": "var( --ctp-custom-sapphire, var(--ctp-ext-sapphire, 32, 159, 181) )",
+      "light": "var(\n    --ctp-custom-sapphire,\n    var(--ctp-ext-sapphire, 32, 159, 181)\n  )",
       "dark": null
     },
     "--ctp-sky": {
@@ -209,23 +209,23 @@
       "dark": null
     },
     "--ctp-subtext0": {
-      "light": "var( --ctp-custom-subtext0, var(--ctp-ext-subtext0, 108, 111, 133) )",
+      "light": "var(\n    --ctp-custom-subtext0,\n    var(--ctp-ext-subtext0, 108, 111, 133)\n  )",
       "dark": null
     },
     "--ctp-subtext1": {
-      "light": "var( --ctp-custom-subtext1, var(--ctp-ext-subtext1, 92, 95, 119) )",
+      "light": "var(\n    --ctp-custom-subtext1,\n    var(--ctp-ext-subtext1, 92, 95, 119)\n  )",
       "dark": null
     },
     "--ctp-surface0": {
-      "light": "var( --ctp-custom-surface0, var(--ctp-ext-surface0, 204, 208, 218) )",
+      "light": "var(\n    --ctp-custom-surface0,\n    var(--ctp-ext-surface0, 204, 208, 218)\n  )",
       "dark": null
     },
     "--ctp-surface1": {
-      "light": "var( --ctp-custom-surface1, var(--ctp-ext-surface1, 188, 192, 204) )",
+      "light": "var(\n    --ctp-custom-surface1,\n    var(--ctp-ext-surface1, 188, 192, 204)\n  )",
       "dark": null
     },
     "--ctp-surface2": {
-      "light": "var( --ctp-custom-surface2, var(--ctp-ext-surface2, 172, 176, 190) )",
+      "light": "var(\n    --ctp-custom-surface2,\n    var(--ctp-ext-surface2, 172, 176, 190)\n  )",
       "dark": null
     },
     "--ctp-teal": {
@@ -255,7 +255,7 @@
       "dark": null
     },
     "--ctp-flamingo": {
-      "light": "var( --ctp-custom-flamingo, var(--ctp-ext-flamingo, 214, 129, 125) )",
+      "light": "var(\n    --ctp-custom-flamingo,\n    var(--ctp-ext-flamingo, 214, 129, 125)\n  )",
       "dark": null
     },
     "--ctp-green": {
@@ -263,7 +263,7 @@
       "dark": null
     },
     "--ctp-lavender": {
-      "light": "var( --ctp-custom-lavender, var(--ctp-ext-lavender, 144, 122, 169) )",
+      "light": "var(\n    --ctp-custom-lavender,\n    var(--ctp-ext-lavender, 144, 122, 169)\n  )",
       "dark": null
     },
     "--ctp-mantle": {
@@ -279,15 +279,15 @@
       "dark": null
     },
     "--ctp-overlay0": {
-      "light": "var( --ctp-custom-overlay0, var(--ctp-ext-overlay0, 161, 156, 173) )",
+      "light": "var(\n    --ctp-custom-overlay0,\n    var(--ctp-ext-overlay0, 161, 156, 173)\n  )",
       "dark": null
     },
     "--ctp-overlay1": {
-      "light": "var( --ctp-custom-overlay1, var(--ctp-ext-overlay1, 152, 147, 165) )",
+      "light": "var(\n    --ctp-custom-overlay1,\n    var(--ctp-ext-overlay1, 152, 147, 165)\n  )",
       "dark": null
     },
     "--ctp-overlay2": {
-      "light": "var( --ctp-custom-overlay2, var(--ctp-ext-overlay2, 128, 124, 153) )",
+      "light": "var(\n    --ctp-custom-overlay2,\n    var(--ctp-ext-overlay2, 128, 124, 153)\n  )",
       "dark": null
     },
     "--ctp-peach": {
@@ -303,11 +303,11 @@
       "dark": null
     },
     "--ctp-rosewater": {
-      "light": "var( --ctp-custom-rosewater, var(--ctp-ext-rosewater, 214, 129, 125) )",
+      "light": "var(\n    --ctp-custom-rosewater,\n    var(--ctp-ext-rosewater, 214, 129, 125)\n  )",
       "dark": null
     },
     "--ctp-sapphire": {
-      "light": "var( --ctp-custom-sapphire, var(--ctp-ext-sapphire, 40, 105, 131) )",
+      "light": "var(\n    --ctp-custom-sapphire,\n    var(--ctp-ext-sapphire, 40, 105, 131)\n  )",
       "dark": null
     },
     "--ctp-sky": {
@@ -315,23 +315,23 @@
       "dark": null
     },
     "--ctp-subtext0": {
-      "light": "var( --ctp-custom-subtext0, var(--ctp-ext-subtext0, 121, 117, 147) )",
+      "light": "var(\n    --ctp-custom-subtext0,\n    var(--ctp-ext-subtext0, 121, 117, 147)\n  )",
       "dark": null
     },
     "--ctp-subtext1": {
-      "light": "var( --ctp-custom-subtext1, var(--ctp-ext-subtext1, 97, 92, 132) )",
+      "light": "var(\n    --ctp-custom-subtext1,\n    var(--ctp-ext-subtext1, 97, 92, 132)\n  )",
       "dark": null
     },
     "--ctp-surface0": {
-      "light": "var( --ctp-custom-surface0, var(--ctp-ext-surface0, 220, 211, 203) )",
+      "light": "var(\n    --ctp-custom-surface0,\n    var(--ctp-ext-surface0, 220, 211, 203)\n  )",
       "dark": null
     },
     "--ctp-surface1": {
-      "light": "var( --ctp-custom-surface1, var(--ctp-ext-surface1, 209, 201, 194) )",
+      "light": "var(\n    --ctp-custom-surface1,\n    var(--ctp-ext-surface1, 209, 201, 194)\n  )",
       "dark": null
     },
     "--ctp-surface2": {
-      "light": "var( --ctp-custom-surface2, var(--ctp-ext-surface2, 202, 193, 185) )",
+      "light": "var(\n    --ctp-custom-surface2,\n    var(--ctp-ext-surface2, 202, 193, 185)\n  )",
       "dark": null
     },
     "--ctp-teal": {
@@ -361,7 +361,7 @@
       "dark": null
     },
     "--ctp-flamingo": {
-      "light": "var( --ctp-custom-flamingo, var(--ctp-ext-flamingo, 214, 129, 125) )",
+      "light": "var(\n    --ctp-custom-flamingo,\n    var(--ctp-ext-flamingo, 214, 129, 125)\n  )",
       "dark": null
     },
     "--ctp-green": {
@@ -369,7 +369,7 @@
       "dark": null
     },
     "--ctp-lavender": {
-      "light": "var( --ctp-custom-lavender, var(--ctp-ext-lavender, 144, 122, 169) )",
+      "light": "var(\n    --ctp-custom-lavender,\n    var(--ctp-ext-lavender, 144, 122, 169)\n  )",
       "dark": null
     },
     "--ctp-mantle": {
@@ -385,15 +385,15 @@
       "dark": null
     },
     "--ctp-overlay0": {
-      "light": "var( --ctp-custom-overlay0, var(--ctp-ext-overlay0, 161, 156, 173) )",
+      "light": "var(\n    --ctp-custom-overlay0,\n    var(--ctp-ext-overlay0, 161, 156, 173)\n  )",
       "dark": null
     },
     "--ctp-overlay1": {
-      "light": "var( --ctp-custom-overlay1, var(--ctp-ext-overlay1, 152, 147, 165) )",
+      "light": "var(\n    --ctp-custom-overlay1,\n    var(--ctp-ext-overlay1, 152, 147, 165)\n  )",
       "dark": null
     },
     "--ctp-overlay2": {
-      "light": "var( --ctp-custom-overlay2, var(--ctp-ext-overlay2, 128, 124, 153) )",
+      "light": "var(\n    --ctp-custom-overlay2,\n    var(--ctp-ext-overlay2, 128, 124, 153)\n  )",
       "dark": null
     },
     "--ctp-peach": {
@@ -409,11 +409,11 @@
       "dark": null
     },
     "--ctp-rosewater": {
-      "light": "var( --ctp-custom-rosewater, var(--ctp-ext-rosewater, 214, 129, 125) )",
+      "light": "var(\n    --ctp-custom-rosewater,\n    var(--ctp-ext-rosewater, 214, 129, 125)\n  )",
       "dark": null
     },
     "--ctp-sapphire": {
-      "light": "var( --ctp-custom-sapphire, var(--ctp-ext-sapphire, 40, 105, 131) )",
+      "light": "var(\n    --ctp-custom-sapphire,\n    var(--ctp-ext-sapphire, 40, 105, 131)\n  )",
       "dark": null
     },
     "--ctp-sky": {
@@ -421,23 +421,23 @@
       "dark": null
     },
     "--ctp-subtext0": {
-      "light": "var( --ctp-custom-subtext0, var(--ctp-ext-subtext0, 121, 117, 147) )",
+      "light": "var(\n    --ctp-custom-subtext0,\n    var(--ctp-ext-subtext0, 121, 117, 147)\n  )",
       "dark": null
     },
     "--ctp-subtext1": {
-      "light": "var( --ctp-custom-subtext1, var(--ctp-ext-subtext1, 97, 92, 132) )",
+      "light": "var(\n    --ctp-custom-subtext1,\n    var(--ctp-ext-subtext1, 97, 92, 132)\n  )",
       "dark": null
     },
     "--ctp-surface0": {
-      "light": "var( --ctp-custom-surface0, var(--ctp-ext-surface0, 220, 211, 203) )",
+      "light": "var(\n    --ctp-custom-surface0,\n    var(--ctp-ext-surface0, 220, 211, 203)\n  )",
       "dark": null
     },
     "--ctp-surface1": {
-      "light": "var( --ctp-custom-surface1, var(--ctp-ext-surface1, 209, 201, 194) )",
+      "light": "var(\n    --ctp-custom-surface1,\n    var(--ctp-ext-surface1, 209, 201, 194)\n  )",
       "dark": null
     },
     "--ctp-surface2": {
-      "light": "var( --ctp-custom-surface2, var(--ctp-ext-surface2, 202, 193, 185) )",
+      "light": "var(\n    --ctp-custom-surface2,\n    var(--ctp-ext-surface2, 202, 193, 185)\n  )",
       "dark": null
     },
     "--ctp-teal": {
@@ -552,9 +552,38 @@
     "background-color": { "light": "var(--background-primary)", "dark": null },
     "border-color": { "light": "var(--pdf-background)", "dark": null }
   },
+  ".callout:not([data-callout-metadata*=\"revert\"])\n  > .callout-title\n  > .callout-title-inner": {
+    "color": { "light": "var(--text-normal)", "dark": null }
+  },
   "body.anp-colorful-frame-icon-toggle-light": {
     "--colorful-icon-color": { "light": "var(--text-normal)", "dark": null },
     "--colorful-icon-color-alt": { "light": "var(--text-muted)", "dark": null }
+  },
+  ".anp-colorful-frame:not(.anp-card-layout):not(\n    .anp-border-layout\n  ).anp-colorful-frame-icon-toggle-light\n  .mod-left-split\n  .mod-top\n  .workspace-tab-header.is-active": {
+    "background-color": { "light": "rgba(var(--ctp-text), 0.3)", "dark": null }
+  },
+  ".anp-colorful-frame:not(.anp-card-layout):not(\n    .anp-border-layout\n  ).anp-colorful-frame-icon-toggle-light\n  .mod-right-split\n  .mod-top\n  .workspace-tab-header.is-active": {
+    "background-color": { "light": "rgba(var(--ctp-text), 0.3)", "dark": null }
+  },
+  ".anp-colorful-frame.anp-card-layout:not(\n    .anp-card-layout-filebrowser\n  ).anp-colorful-frame-icon-toggle-light\n  .workspace-leaf-content[data-type=\"file-explorer\"]": {
+    "--icon-color": { "light": "var(--text-normal)", "dark": null },
+    "--icon-color-active": { "light": "var(--text-normal)", "dark": null },
+    "--icon-color-focused": { "light": "var(--text-normal)", "dark": null },
+    "--icon-color-hover": { "light": "var(--text-normal)", "dark": null },
+    "--tab-text-color": { "light": "var(--text-normal)", "dark": null },
+    "--tab-text-color-focused": { "light": "var(--text-normal)", "dark": null },
+    "--tab-text-color-focused-active": {
+      "light": "var(--text-normal)",
+      "dark": null
+    },
+    "--tab-text-color-focused-active-current": {
+      "light": "var(--text-normal)",
+      "dark": null
+    },
+    "--tab-text-color-focused-highlighted": {
+      "light": "var(--text-normal)",
+      "dark": null
+    }
   },
   ".anp-colorful-frame.anp-card-layout.anp-colorful-frame-icon-toggle-light": {
     "--icon-color": { "light": "var(--text-muted)", "dark": null },
@@ -577,6 +606,30 @@
       "dark": null
     }
   },
+  ".anp-colorful-frame.anp-card-layout.is-focused:not(\n    .anp-colorful-frame-icon-toggle-light\n  )\n  .mod-left-split\n  .mod-active\n  .workspace-tab-header.is-active\n  .workspace-tab-header-inner-icon": {
+    "color": { "light": "var(--background-secondary-alt)", "dark": null }
+  },
+  ".anp-colorful-frame.anp-card-layout.is-focused:not(\n    .anp-colorful-frame-icon-toggle-light\n  )\n  .mod-right-split\n  .mod-active\n  .workspace-tab-header.is-active\n  .workspace-tab-header-inner-icon": {
+    "color": { "light": "var(--background-secondary-alt)", "dark": null }
+  },
+  ".anp-colorful-frame.anp-card-layout.is-focused.anp-colorful-frame-icon-toggle-light\n  .mod-left-split\n  .mod-active\n  .workspace-tab-header.is-active\n  .workspace-tab-header-inner-icon": {
+    "color": { "light": "var(--text-normal)", "dark": null }
+  },
+  ".anp-colorful-frame.anp-card-layout.is-focused.anp-colorful-frame-icon-toggle-light\n  .mod-right-split\n  .mod-active\n  .workspace-tab-header.is-active\n  .workspace-tab-header-inner-icon": {
+    "color": { "light": "var(--text-normal)", "dark": null }
+  },
+  ".anp-colorful-frame.anp-card-layout.anp-colorful-frame-icon-toggle-light\n  .mod-right-split\n  .workspace-tab-header.is-active": {
+    "background-color": { "light": "rgba(var(--ctp-text), 0.3)", "dark": null }
+  },
+  ".anp-colorful-frame.anp-card-layout.anp-colorful-frame-icon-toggle-light\n  .mod-left-split\n  .workspace-tab-header.is-active": {
+    "background-color": { "light": "rgba(var(--ctp-text), 0.3)", "dark": null }
+  },
+  ".anp-full-rainbow-color-toggle.anp-rainbow-file-toggle\n  .nav-files-container\n  > div\n  > .nav-file": {
+    "background-color": {
+      "light": "rgba(\n    var(--ctp-overlay1),\n    var(--anp-rainbow-folder-bg-opacity)\n  )",
+      "dark": null
+    }
+  },
   ".anp-full-rainbow-text-color-toggle-light": {
     "--anp-full-rainbow-text-inverted": {
       "light": "rgb(var(--ctp-text))",
@@ -586,8 +639,14 @@
   ".dropdown": {
     "background-image": {
       "light": null,
-      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+      "dark": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
     }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  input": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  textarea": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -596,7 +655,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))\n    drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {
@@ -712,7 +771,7 @@
     },
     "--ctp-flamingo": {
       "light": null,
-      "dark": "var( --ctp-custom-flamingo, var(--ctp-ext-flamingo, 238, 190, 190) )"
+      "dark": "var(\n    --ctp-custom-flamingo,\n    var(--ctp-ext-flamingo, 238, 190, 190)\n  )"
     },
     "--ctp-green": {
       "light": null,
@@ -720,7 +779,7 @@
     },
     "--ctp-lavender": {
       "light": null,
-      "dark": "var( --ctp-custom-lavender, var(--ctp-ext-lavender, 186, 187, 241) )"
+      "dark": "var(\n    --ctp-custom-lavender,\n    var(--ctp-ext-lavender, 186, 187, 241)\n  )"
     },
     "--ctp-mantle": {
       "light": null,
@@ -736,15 +795,15 @@
     },
     "--ctp-overlay0": {
       "light": null,
-      "dark": "var( --ctp-custom-overlay0, var(--ctp-ext-overlay0, 115, 120, 145) )"
+      "dark": "var(\n    --ctp-custom-overlay0,\n    var(--ctp-ext-overlay0, 115, 120, 145)\n  )"
     },
     "--ctp-overlay1": {
       "light": null,
-      "dark": "var( --ctp-custom-overlay1, var(--ctp-ext-overlay1, 131, 138, 164) )"
+      "dark": "var(\n    --ctp-custom-overlay1,\n    var(--ctp-ext-overlay1, 131, 138, 164)\n  )"
     },
     "--ctp-overlay2": {
       "light": null,
-      "dark": "var( --ctp-custom-overlay2, var(--ctp-ext-overlay2, 148, 155, 183) )"
+      "dark": "var(\n    --ctp-custom-overlay2,\n    var(--ctp-ext-overlay2, 148, 155, 183)\n  )"
     },
     "--ctp-peach": {
       "light": null,
@@ -760,11 +819,11 @@
     },
     "--ctp-rosewater": {
       "light": null,
-      "dark": "var( --ctp-custom-rosewater, var(--ctp-ext-rosewater, 242, 213, 207) )"
+      "dark": "var(\n    --ctp-custom-rosewater,\n    var(--ctp-ext-rosewater, 242, 213, 207)\n  )"
     },
     "--ctp-sapphire": {
       "light": null,
-      "dark": "var( --ctp-custom-sapphire, var(--ctp-ext-sapphire, 133, 193, 220) )"
+      "dark": "var(\n    --ctp-custom-sapphire,\n    var(--ctp-ext-sapphire, 133, 193, 220)\n  )"
     },
     "--ctp-sky": {
       "light": null,
@@ -772,23 +831,23 @@
     },
     "--ctp-subtext0": {
       "light": null,
-      "dark": "var( --ctp-custom-subtext0, var(--ctp-ext-subtext0, 165, 172, 201) )"
+      "dark": "var(\n    --ctp-custom-subtext0,\n    var(--ctp-ext-subtext0, 165, 172, 201)\n  )"
     },
     "--ctp-subtext1": {
       "light": null,
-      "dark": "var( --ctp-custom-subtext1, var(--ctp-ext-subtext1, 181, 189, 220) )"
+      "dark": "var(\n    --ctp-custom-subtext1,\n    var(--ctp-ext-subtext1, 181, 189, 220)\n  )"
     },
     "--ctp-surface0": {
       "light": null,
-      "dark": "var( --ctp-custom-surface0, var(--ctp-ext-surface0, 65, 69, 89) )"
+      "dark": "var(\n    --ctp-custom-surface0,\n    var(--ctp-ext-surface0, 65, 69, 89)\n  )"
     },
     "--ctp-surface1": {
       "light": null,
-      "dark": "var( --ctp-custom-surface1, var(--ctp-ext-surface1, 81, 86, 108) )"
+      "dark": "var(\n    --ctp-custom-surface1,\n    var(--ctp-ext-surface1, 81, 86, 108)\n  )"
     },
     "--ctp-surface2": {
       "light": null,
-      "dark": "var( --ctp-custom-surface2, var(--ctp-ext-surface2, 98, 103, 126) )"
+      "dark": "var(\n    --ctp-custom-surface2,\n    var(--ctp-ext-surface2, 98, 103, 126)\n  )"
     },
     "--ctp-teal": {
       "light": null,
@@ -818,7 +877,7 @@
     },
     "--ctp-flamingo": {
       "light": null,
-      "dark": "var( --ctp-custom-flamingo, var(--ctp-ext-flamingo, 238, 190, 190) )"
+      "dark": "var(\n    --ctp-custom-flamingo,\n    var(--ctp-ext-flamingo, 238, 190, 190)\n  )"
     },
     "--ctp-green": {
       "light": null,
@@ -826,7 +885,7 @@
     },
     "--ctp-lavender": {
       "light": null,
-      "dark": "var( --ctp-custom-lavender, var(--ctp-ext-lavender, 186, 187, 241) )"
+      "dark": "var(\n    --ctp-custom-lavender,\n    var(--ctp-ext-lavender, 186, 187, 241)\n  )"
     },
     "--ctp-mantle": {
       "light": null,
@@ -842,15 +901,15 @@
     },
     "--ctp-overlay0": {
       "light": null,
-      "dark": "var( --ctp-custom-overlay0, var(--ctp-ext-overlay0, 115, 120, 145) )"
+      "dark": "var(\n    --ctp-custom-overlay0,\n    var(--ctp-ext-overlay0, 115, 120, 145)\n  )"
     },
     "--ctp-overlay1": {
       "light": null,
-      "dark": "var( --ctp-custom-overlay1, var(--ctp-ext-overlay1, 131, 138, 164) )"
+      "dark": "var(\n    --ctp-custom-overlay1,\n    var(--ctp-ext-overlay1, 131, 138, 164)\n  )"
     },
     "--ctp-overlay2": {
       "light": null,
-      "dark": "var( --ctp-custom-overlay2, var(--ctp-ext-overlay2, 148, 155, 183) )"
+      "dark": "var(\n    --ctp-custom-overlay2,\n    var(--ctp-ext-overlay2, 148, 155, 183)\n  )"
     },
     "--ctp-peach": {
       "light": null,
@@ -866,11 +925,11 @@
     },
     "--ctp-rosewater": {
       "light": null,
-      "dark": "var( --ctp-custom-rosewater, var(--ctp-ext-rosewater, 242, 213, 207) )"
+      "dark": "var(\n    --ctp-custom-rosewater,\n    var(--ctp-ext-rosewater, 242, 213, 207)\n  )"
     },
     "--ctp-sapphire": {
       "light": null,
-      "dark": "var( --ctp-custom-sapphire, var(--ctp-ext-sapphire, 133, 193, 220) )"
+      "dark": "var(\n    --ctp-custom-sapphire,\n    var(--ctp-ext-sapphire, 133, 193, 220)\n  )"
     },
     "--ctp-sky": {
       "light": null,
@@ -878,23 +937,23 @@
     },
     "--ctp-subtext0": {
       "light": null,
-      "dark": "var( --ctp-custom-subtext0, var(--ctp-ext-subtext0, 165, 172, 201) )"
+      "dark": "var(\n    --ctp-custom-subtext0,\n    var(--ctp-ext-subtext0, 165, 172, 201)\n  )"
     },
     "--ctp-subtext1": {
       "light": null,
-      "dark": "var( --ctp-custom-subtext1, var(--ctp-ext-subtext1, 181, 189, 220) )"
+      "dark": "var(\n    --ctp-custom-subtext1,\n    var(--ctp-ext-subtext1, 181, 189, 220)\n  )"
     },
     "--ctp-surface0": {
       "light": null,
-      "dark": "var( --ctp-custom-surface0, var(--ctp-ext-surface0, 65, 69, 89) )"
+      "dark": "var(\n    --ctp-custom-surface0,\n    var(--ctp-ext-surface0, 65, 69, 89)\n  )"
     },
     "--ctp-surface1": {
       "light": null,
-      "dark": "var( --ctp-custom-surface1, var(--ctp-ext-surface1, 81, 86, 108) )"
+      "dark": "var(\n    --ctp-custom-surface1,\n    var(--ctp-ext-surface1, 81, 86, 108)\n  )"
     },
     "--ctp-surface2": {
       "light": null,
-      "dark": "var( --ctp-custom-surface2, var(--ctp-ext-surface2, 98, 103, 126) )"
+      "dark": "var(\n    --ctp-custom-surface2,\n    var(--ctp-ext-surface2, 98, 103, 126)\n  )"
     },
     "--ctp-teal": {
       "light": null,
@@ -924,7 +983,7 @@
     },
     "--ctp-flamingo": {
       "light": null,
-      "dark": "var( --ctp-custom-flamingo, var(--ctp-ext-flamingo, 240, 198, 198) )"
+      "dark": "var(\n    --ctp-custom-flamingo,\n    var(--ctp-ext-flamingo, 240, 198, 198)\n  )"
     },
     "--ctp-green": {
       "light": null,
@@ -932,7 +991,7 @@
     },
     "--ctp-lavender": {
       "light": null,
-      "dark": "var( --ctp-custom-lavender, var(--ctp-ext-lavender, 183, 189, 248) )"
+      "dark": "var(\n    --ctp-custom-lavender,\n    var(--ctp-ext-lavender, 183, 189, 248)\n  )"
     },
     "--ctp-mantle": {
       "light": null,
@@ -948,15 +1007,15 @@
     },
     "--ctp-overlay0": {
       "light": null,
-      "dark": "var( --ctp-custom-overlay0, var(--ctp-ext-overlay0, 108, 114, 141) )"
+      "dark": "var(\n    --ctp-custom-overlay0,\n    var(--ctp-ext-overlay0, 108, 114, 141)\n  )"
     },
     "--ctp-overlay1": {
       "light": null,
-      "dark": "var( --ctp-custom-overlay1, var(--ctp-ext-overlay1, 125, 132, 162) )"
+      "dark": "var(\n    --ctp-custom-overlay1,\n    var(--ctp-ext-overlay1, 125, 132, 162)\n  )"
     },
     "--ctp-overlay2": {
       "light": null,
-      "dark": "var( --ctp-custom-overlay2, var(--ctp-ext-overlay2, 143, 151, 183) )"
+      "dark": "var(\n    --ctp-custom-overlay2,\n    var(--ctp-ext-overlay2, 143, 151, 183)\n  )"
     },
     "--ctp-peach": {
       "light": null,
@@ -972,11 +1031,11 @@
     },
     "--ctp-rosewater": {
       "light": null,
-      "dark": "var( --ctp-custom-rosewater, var(--ctp-ext-rosewater, 244, 219, 214) )"
+      "dark": "var(\n    --ctp-custom-rosewater,\n    var(--ctp-ext-rosewater, 244, 219, 214)\n  )"
     },
     "--ctp-sapphire": {
       "light": null,
-      "dark": "var( --ctp-custom-sapphire, var(--ctp-ext-sapphire, 125, 196, 228) )"
+      "dark": "var(\n    --ctp-custom-sapphire,\n    var(--ctp-ext-sapphire, 125, 196, 228)\n  )"
     },
     "--ctp-sky": {
       "light": null,
@@ -984,23 +1043,23 @@
     },
     "--ctp-subtext0": {
       "light": null,
-      "dark": "var( --ctp-custom-subtext0, var(--ctp-ext-subtext0, 161, 170, 203) )"
+      "dark": "var(\n    --ctp-custom-subtext0,\n    var(--ctp-ext-subtext0, 161, 170, 203)\n  )"
     },
     "--ctp-subtext1": {
       "light": null,
-      "dark": "var( --ctp-custom-subtext1, var(--ctp-ext-subtext1, 179, 188, 224) )"
+      "dark": "var(\n    --ctp-custom-subtext1,\n    var(--ctp-ext-subtext1, 179, 188, 224)\n  )"
     },
     "--ctp-surface0": {
       "light": null,
-      "dark": "var( --ctp-custom-surface0, var(--ctp-ext-surface0, 54, 58, 79) )"
+      "dark": "var(\n    --ctp-custom-surface0,\n    var(--ctp-ext-surface0, 54, 58, 79)\n  )"
     },
     "--ctp-surface1": {
       "light": null,
-      "dark": "var( --ctp-custom-surface1, var(--ctp-ext-surface1, 72, 76, 100) )"
+      "dark": "var(\n    --ctp-custom-surface1,\n    var(--ctp-ext-surface1, 72, 76, 100)\n  )"
     },
     "--ctp-surface2": {
       "light": null,
-      "dark": "var( --ctp-custom-surface2, var(--ctp-ext-surface2, 90, 95, 120) )"
+      "dark": "var(\n    --ctp-custom-surface2,\n    var(--ctp-ext-surface2, 90, 95, 120)\n  )"
     },
     "--ctp-teal": {
       "light": null,
@@ -1030,7 +1089,7 @@
     },
     "--ctp-flamingo": {
       "light": null,
-      "dark": "var( --ctp-custom-flamingo, var(--ctp-ext-flamingo, 240, 198, 198) )"
+      "dark": "var(\n    --ctp-custom-flamingo,\n    var(--ctp-ext-flamingo, 240, 198, 198)\n  )"
     },
     "--ctp-green": {
       "light": null,
@@ -1038,7 +1097,7 @@
     },
     "--ctp-lavender": {
       "light": null,
-      "dark": "var( --ctp-custom-lavender, var(--ctp-ext-lavender, 183, 189, 248) )"
+      "dark": "var(\n    --ctp-custom-lavender,\n    var(--ctp-ext-lavender, 183, 189, 248)\n  )"
     },
     "--ctp-mantle": {
       "light": null,
@@ -1054,15 +1113,15 @@
     },
     "--ctp-overlay0": {
       "light": null,
-      "dark": "var( --ctp-custom-overlay0, var(--ctp-ext-overlay0, 108, 114, 141) )"
+      "dark": "var(\n    --ctp-custom-overlay0,\n    var(--ctp-ext-overlay0, 108, 114, 141)\n  )"
     },
     "--ctp-overlay1": {
       "light": null,
-      "dark": "var( --ctp-custom-overlay1, var(--ctp-ext-overlay1, 125, 132, 162) )"
+      "dark": "var(\n    --ctp-custom-overlay1,\n    var(--ctp-ext-overlay1, 125, 132, 162)\n  )"
     },
     "--ctp-overlay2": {
       "light": null,
-      "dark": "var( --ctp-custom-overlay2, var(--ctp-ext-overlay2, 143, 151, 183) )"
+      "dark": "var(\n    --ctp-custom-overlay2,\n    var(--ctp-ext-overlay2, 143, 151, 183)\n  )"
     },
     "--ctp-peach": {
       "light": null,
@@ -1078,11 +1137,11 @@
     },
     "--ctp-rosewater": {
       "light": null,
-      "dark": "var( --ctp-custom-rosewater, var(--ctp-ext-rosewater, 244, 219, 214) )"
+      "dark": "var(\n    --ctp-custom-rosewater,\n    var(--ctp-ext-rosewater, 244, 219, 214)\n  )"
     },
     "--ctp-sapphire": {
       "light": null,
-      "dark": "var( --ctp-custom-sapphire, var(--ctp-ext-sapphire, 125, 196, 228) )"
+      "dark": "var(\n    --ctp-custom-sapphire,\n    var(--ctp-ext-sapphire, 125, 196, 228)\n  )"
     },
     "--ctp-sky": {
       "light": null,
@@ -1090,23 +1149,23 @@
     },
     "--ctp-subtext0": {
       "light": null,
-      "dark": "var( --ctp-custom-subtext0, var(--ctp-ext-subtext0, 161, 170, 203) )"
+      "dark": "var(\n    --ctp-custom-subtext0,\n    var(--ctp-ext-subtext0, 161, 170, 203)\n  )"
     },
     "--ctp-subtext1": {
       "light": null,
-      "dark": "var( --ctp-custom-subtext1, var(--ctp-ext-subtext1, 179, 188, 224) )"
+      "dark": "var(\n    --ctp-custom-subtext1,\n    var(--ctp-ext-subtext1, 179, 188, 224)\n  )"
     },
     "--ctp-surface0": {
       "light": null,
-      "dark": "var( --ctp-custom-surface0, var(--ctp-ext-surface0, 54, 58, 79) )"
+      "dark": "var(\n    --ctp-custom-surface0,\n    var(--ctp-ext-surface0, 54, 58, 79)\n  )"
     },
     "--ctp-surface1": {
       "light": null,
-      "dark": "var( --ctp-custom-surface1, var(--ctp-ext-surface1, 72, 76, 100) )"
+      "dark": "var(\n    --ctp-custom-surface1,\n    var(--ctp-ext-surface1, 72, 76, 100)\n  )"
     },
     "--ctp-surface2": {
       "light": null,
-      "dark": "var( --ctp-custom-surface2, var(--ctp-ext-surface2, 90, 95, 120) )"
+      "dark": "var(\n    --ctp-custom-surface2,\n    var(--ctp-ext-surface2, 90, 95, 120)\n  )"
     },
     "--ctp-teal": {
       "light": null,
@@ -1136,7 +1195,7 @@
     },
     "--ctp-flamingo": {
       "light": null,
-      "dark": "var( --ctp-custom-flamingo, var(--ctp-ext-flamingo, 242, 205, 205) )"
+      "dark": "var(\n    --ctp-custom-flamingo,\n    var(--ctp-ext-flamingo, 242, 205, 205)\n  )"
     },
     "--ctp-green": {
       "light": null,
@@ -1144,7 +1203,7 @@
     },
     "--ctp-lavender": {
       "light": null,
-      "dark": "var( --ctp-custom-lavender, var(--ctp-ext-lavender, 180, 190, 254) )"
+      "dark": "var(\n    --ctp-custom-lavender,\n    var(--ctp-ext-lavender, 180, 190, 254)\n  )"
     },
     "--ctp-mantle": {
       "light": null,
@@ -1160,15 +1219,15 @@
     },
     "--ctp-overlay0": {
       "light": null,
-      "dark": "var( --ctp-custom-overlay0, var(--ctp-ext-overlay0, 105, 109, 134) )"
+      "dark": "var(\n    --ctp-custom-overlay0,\n    var(--ctp-ext-overlay0, 105, 109, 134)\n  )"
     },
     "--ctp-overlay1": {
       "light": null,
-      "dark": "var( --ctp-custom-overlay1, var(--ctp-ext-overlay1, 123, 129, 157) )"
+      "dark": "var(\n    --ctp-custom-overlay1,\n    var(--ctp-ext-overlay1, 123, 129, 157)\n  )"
     },
     "--ctp-overlay2": {
       "light": null,
-      "dark": "var( --ctp-custom-overlay2, var(--ctp-ext-overlay2, 142, 149, 179) )"
+      "dark": "var(\n    --ctp-custom-overlay2,\n    var(--ctp-ext-overlay2, 142, 149, 179)\n  )"
     },
     "--ctp-peach": {
       "light": null,
@@ -1184,11 +1243,11 @@
     },
     "--ctp-rosewater": {
       "light": null,
-      "dark": "var( --ctp-custom-rosewater, var(--ctp-ext-rosewater, 245, 224, 220) )"
+      "dark": "var(\n    --ctp-custom-rosewater,\n    var(--ctp-ext-rosewater, 245, 224, 220)\n  )"
     },
     "--ctp-sapphire": {
       "light": null,
-      "dark": "var( --ctp-custom-sapphire, var(--ctp-ext-sapphire, 116, 199, 236) )"
+      "dark": "var(\n    --ctp-custom-sapphire,\n    var(--ctp-ext-sapphire, 116, 199, 236)\n  )"
     },
     "--ctp-sky": {
       "light": null,
@@ -1196,23 +1255,23 @@
     },
     "--ctp-subtext0": {
       "light": null,
-      "dark": "var( --ctp-custom-subtext0, var(--ctp-ext-subtext0, 161, 168, 201) )"
+      "dark": "var(\n    --ctp-custom-subtext0,\n    var(--ctp-ext-subtext0, 161, 168, 201)\n  )"
     },
     "--ctp-subtext1": {
       "light": null,
-      "dark": "var( --ctp-custom-subtext1, var(--ctp-ext-subtext1, 179, 188, 223) )"
+      "dark": "var(\n    --ctp-custom-subtext1,\n    var(--ctp-ext-subtext1, 179, 188, 223)\n  )"
     },
     "--ctp-surface0": {
       "light": null,
-      "dark": "var( --ctp-custom-surface0, var(--ctp-ext-surface0, 49, 50, 68) )"
+      "dark": "var(\n    --ctp-custom-surface0,\n    var(--ctp-ext-surface0, 49, 50, 68)\n  )"
     },
     "--ctp-surface1": {
       "light": null,
-      "dark": "var( --ctp-custom-surface1, var(--ctp-ext-surface1, 67, 70, 90) )"
+      "dark": "var(\n    --ctp-custom-surface1,\n    var(--ctp-ext-surface1, 67, 70, 90)\n  )"
     },
     "--ctp-surface2": {
       "light": null,
-      "dark": "var( --ctp-custom-surface2, var(--ctp-ext-surface2, 86, 89, 112) )"
+      "dark": "var(\n    --ctp-custom-surface2,\n    var(--ctp-ext-surface2, 86, 89, 112)\n  )"
     },
     "--ctp-teal": {
       "light": null,
@@ -1242,7 +1301,7 @@
     },
     "--ctp-flamingo": {
       "light": null,
-      "dark": "var( --ctp-custom-flamingo, var(--ctp-ext-flamingo, 242, 205, 205) )"
+      "dark": "var(\n    --ctp-custom-flamingo,\n    var(--ctp-ext-flamingo, 242, 205, 205)\n  )"
     },
     "--ctp-green": {
       "light": null,
@@ -1250,7 +1309,7 @@
     },
     "--ctp-lavender": {
       "light": null,
-      "dark": "var( --ctp-custom-lavender, var(--ctp-ext-lavender, 180, 190, 254) )"
+      "dark": "var(\n    --ctp-custom-lavender,\n    var(--ctp-ext-lavender, 180, 190, 254)\n  )"
     },
     "--ctp-mantle": {
       "light": null,
@@ -1266,15 +1325,15 @@
     },
     "--ctp-overlay0": {
       "light": null,
-      "dark": "var( --ctp-custom-overlay0, var(--ctp-ext-overlay0, 105, 109, 134) )"
+      "dark": "var(\n    --ctp-custom-overlay0,\n    var(--ctp-ext-overlay0, 105, 109, 134)\n  )"
     },
     "--ctp-overlay1": {
       "light": null,
-      "dark": "var( --ctp-custom-overlay1, var(--ctp-ext-overlay1, 123, 129, 157) )"
+      "dark": "var(\n    --ctp-custom-overlay1,\n    var(--ctp-ext-overlay1, 123, 129, 157)\n  )"
     },
     "--ctp-overlay2": {
       "light": null,
-      "dark": "var( --ctp-custom-overlay2, var(--ctp-ext-overlay2, 142, 149, 179) )"
+      "dark": "var(\n    --ctp-custom-overlay2,\n    var(--ctp-ext-overlay2, 142, 149, 179)\n  )"
     },
     "--ctp-peach": {
       "light": null,
@@ -1290,11 +1349,11 @@
     },
     "--ctp-rosewater": {
       "light": null,
-      "dark": "var( --ctp-custom-rosewater, var(--ctp-ext-rosewater, 245, 224, 220) )"
+      "dark": "var(\n    --ctp-custom-rosewater,\n    var(--ctp-ext-rosewater, 245, 224, 220)\n  )"
     },
     "--ctp-sapphire": {
       "light": null,
-      "dark": "var( --ctp-custom-sapphire, var(--ctp-ext-sapphire, 116, 199, 236) )"
+      "dark": "var(\n    --ctp-custom-sapphire,\n    var(--ctp-ext-sapphire, 116, 199, 236)\n  )"
     },
     "--ctp-sky": {
       "light": null,
@@ -1302,23 +1361,23 @@
     },
     "--ctp-subtext0": {
       "light": null,
-      "dark": "var( --ctp-custom-subtext0, var(--ctp-ext-subtext0, 161, 168, 201) )"
+      "dark": "var(\n    --ctp-custom-subtext0,\n    var(--ctp-ext-subtext0, 161, 168, 201)\n  )"
     },
     "--ctp-subtext1": {
       "light": null,
-      "dark": "var( --ctp-custom-subtext1, var(--ctp-ext-subtext1, 179, 188, 223) )"
+      "dark": "var(\n    --ctp-custom-subtext1,\n    var(--ctp-ext-subtext1, 179, 188, 223)\n  )"
     },
     "--ctp-surface0": {
       "light": null,
-      "dark": "var( --ctp-custom-surface0, var(--ctp-ext-surface0, 49, 50, 68) )"
+      "dark": "var(\n    --ctp-custom-surface0,\n    var(--ctp-ext-surface0, 49, 50, 68)\n  )"
     },
     "--ctp-surface1": {
       "light": null,
-      "dark": "var( --ctp-custom-surface1, var(--ctp-ext-surface1, 67, 70, 90) )"
+      "dark": "var(\n    --ctp-custom-surface1,\n    var(--ctp-ext-surface1, 67, 70, 90)\n  )"
     },
     "--ctp-surface2": {
       "light": null,
-      "dark": "var( --ctp-custom-surface2, var(--ctp-ext-surface2, 86, 89, 112) )"
+      "dark": "var(\n    --ctp-custom-surface2,\n    var(--ctp-ext-surface2, 86, 89, 112)\n  )"
     },
     "--ctp-teal": {
       "light": null,
@@ -1348,7 +1407,7 @@
     },
     "--ctp-flamingo": {
       "light": null,
-      "dark": "var( --ctp-custom-flamingo, var(--ctp-ext-flamingo, 242, 205, 205) )"
+      "dark": "var(\n    --ctp-custom-flamingo,\n    var(--ctp-ext-flamingo, 242, 205, 205)\n  )"
     },
     "--ctp-green": {
       "light": null,
@@ -1356,7 +1415,7 @@
     },
     "--ctp-lavender": {
       "light": null,
-      "dark": "var( --ctp-custom-lavender, var(--ctp-ext-lavender, 180, 190, 254) )"
+      "dark": "var(\n    --ctp-custom-lavender,\n    var(--ctp-ext-lavender, 180, 190, 254)\n  )"
     },
     "--ctp-mantle": {
       "light": null,
@@ -1372,15 +1431,15 @@
     },
     "--ctp-overlay0": {
       "light": null,
-      "dark": "var( --ctp-custom-overlay0, var(--ctp-ext-overlay0, 109, 107, 125) )"
+      "dark": "var(\n    --ctp-custom-overlay0,\n    var(--ctp-ext-overlay0, 109, 107, 125)\n  )"
     },
     "--ctp-overlay1": {
       "light": null,
-      "dark": "var( --ctp-custom-overlay1, var(--ctp-ext-overlay1, 152, 139, 162) )"
+      "dark": "var(\n    --ctp-custom-overlay1,\n    var(--ctp-ext-overlay1, 152, 139, 162)\n  )"
     },
     "--ctp-overlay2": {
       "light": null,
-      "dark": "var( --ctp-custom-overlay2, var(--ctp-ext-overlay2, 167, 156, 176) )"
+      "dark": "var(\n    --ctp-custom-overlay2,\n    var(--ctp-ext-overlay2, 167, 156, 176)\n  )"
     },
     "--ctp-peach": {
       "light": null,
@@ -1396,11 +1455,11 @@
     },
     "--ctp-rosewater": {
       "light": null,
-      "dark": "var( --ctp-custom-rosewater, var(--ctp-ext-rosewater, 245, 224, 220) )"
+      "dark": "var(\n    --ctp-custom-rosewater,\n    var(--ctp-ext-rosewater, 245, 224, 220)\n  )"
     },
     "--ctp-sapphire": {
       "light": null,
-      "dark": "var( --ctp-custom-sapphire, var(--ctp-ext-sapphire, 116, 199, 236) )"
+      "dark": "var(\n    --ctp-custom-sapphire,\n    var(--ctp-ext-sapphire, 116, 199, 236)\n  )"
     },
     "--ctp-sky": {
       "light": null,
@@ -1408,23 +1467,23 @@
     },
     "--ctp-subtext0": {
       "light": null,
-      "dark": "var( --ctp-custom-subtext0, var(--ctp-ext-subtext0, 190, 179, 193) )"
+      "dark": "var(\n    --ctp-custom-subtext0,\n    var(--ctp-ext-subtext0, 190, 179, 193)\n  )"
     },
     "--ctp-subtext1": {
       "light": null,
-      "dark": "var( --ctp-custom-subtext1, var(--ctp-ext-subtext1, 211, 205, 214) )"
+      "dark": "var(\n    --ctp-custom-subtext1,\n    var(--ctp-ext-subtext1, 211, 205, 214)\n  )"
     },
     "--ctp-surface0": {
       "light": null,
-      "dark": "var( --ctp-custom-surface0, var(--ctp-ext-surface0, 48, 45, 65) )"
+      "dark": "var(\n    --ctp-custom-surface0,\n    var(--ctp-ext-surface0, 48, 45, 65)\n  )"
     },
     "--ctp-surface1": {
       "light": null,
-      "dark": "var( --ctp-custom-surface1, var(--ctp-ext-surface1, 45, 40, 72) )"
+      "dark": "var(\n    --ctp-custom-surface1,\n    var(--ctp-ext-surface1, 45, 40, 72)\n  )"
     },
     "--ctp-surface2": {
       "light": null,
-      "dark": "var( --ctp-custom-surface2, var(--ctp-ext-surface2, 87, 82, 105) )"
+      "dark": "var(\n    --ctp-custom-surface2,\n    var(--ctp-ext-surface2, 87, 82, 105)\n  )"
     },
     "--ctp-teal": {
       "light": null,
@@ -1454,7 +1513,7 @@
     },
     "--ctp-flamingo": {
       "light": null,
-      "dark": "var( --ctp-custom-flamingo, var(--ctp-ext-flamingo, 242, 205, 205) )"
+      "dark": "var(\n    --ctp-custom-flamingo,\n    var(--ctp-ext-flamingo, 242, 205, 205)\n  )"
     },
     "--ctp-green": {
       "light": null,
@@ -1462,7 +1521,7 @@
     },
     "--ctp-lavender": {
       "light": null,
-      "dark": "var( --ctp-custom-lavender, var(--ctp-ext-lavender, 180, 190, 254) )"
+      "dark": "var(\n    --ctp-custom-lavender,\n    var(--ctp-ext-lavender, 180, 190, 254)\n  )"
     },
     "--ctp-mantle": {
       "light": null,
@@ -1478,15 +1537,15 @@
     },
     "--ctp-overlay0": {
       "light": null,
-      "dark": "var( --ctp-custom-overlay0, var(--ctp-ext-overlay0, 109, 107, 125) )"
+      "dark": "var(\n    --ctp-custom-overlay0,\n    var(--ctp-ext-overlay0, 109, 107, 125)\n  )"
     },
     "--ctp-overlay1": {
       "light": null,
-      "dark": "var( --ctp-custom-overlay1, var(--ctp-ext-overlay1, 152, 139, 162) )"
+      "dark": "var(\n    --ctp-custom-overlay1,\n    var(--ctp-ext-overlay1, 152, 139, 162)\n  )"
     },
     "--ctp-overlay2": {
       "light": null,
-      "dark": "var( --ctp-custom-overlay2, var(--ctp-ext-overlay2, 167, 156, 176) )"
+      "dark": "var(\n    --ctp-custom-overlay2,\n    var(--ctp-ext-overlay2, 167, 156, 176)\n  )"
     },
     "--ctp-peach": {
       "light": null,
@@ -1502,11 +1561,11 @@
     },
     "--ctp-rosewater": {
       "light": null,
-      "dark": "var( --ctp-custom-rosewater, var(--ctp-ext-rosewater, 245, 224, 220) )"
+      "dark": "var(\n    --ctp-custom-rosewater,\n    var(--ctp-ext-rosewater, 245, 224, 220)\n  )"
     },
     "--ctp-sapphire": {
       "light": null,
-      "dark": "var( --ctp-custom-sapphire, var(--ctp-ext-sapphire, 116, 199, 236) )"
+      "dark": "var(\n    --ctp-custom-sapphire,\n    var(--ctp-ext-sapphire, 116, 199, 236)\n  )"
     },
     "--ctp-sky": {
       "light": null,
@@ -1514,23 +1573,23 @@
     },
     "--ctp-subtext0": {
       "light": null,
-      "dark": "var( --ctp-custom-subtext0, var(--ctp-ext-subtext0, 190, 179, 193) )"
+      "dark": "var(\n    --ctp-custom-subtext0,\n    var(--ctp-ext-subtext0, 190, 179, 193)\n  )"
     },
     "--ctp-subtext1": {
       "light": null,
-      "dark": "var( --ctp-custom-subtext1, var(--ctp-ext-subtext1, 211, 205, 214) )"
+      "dark": "var(\n    --ctp-custom-subtext1,\n    var(--ctp-ext-subtext1, 211, 205, 214)\n  )"
     },
     "--ctp-surface0": {
       "light": null,
-      "dark": "var( --ctp-custom-surface0, var(--ctp-ext-surface0, 48, 45, 65) )"
+      "dark": "var(\n    --ctp-custom-surface0,\n    var(--ctp-ext-surface0, 48, 45, 65)\n  )"
     },
     "--ctp-surface1": {
       "light": null,
-      "dark": "var( --ctp-custom-surface1, var(--ctp-ext-surface1, 45, 40, 72) )"
+      "dark": "var(\n    --ctp-custom-surface1,\n    var(--ctp-ext-surface1, 45, 40, 72)\n  )"
     },
     "--ctp-surface2": {
       "light": null,
-      "dark": "var( --ctp-custom-surface2, var(--ctp-ext-surface2, 87, 82, 105) )"
+      "dark": "var(\n    --ctp-custom-surface2,\n    var(--ctp-ext-surface2, 87, 82, 105)\n  )"
     },
     "--ctp-teal": {
       "light": null,
@@ -1578,6 +1637,32 @@
     "--colorful-icon-color": { "light": null, "dark": "var(--text-normal)" },
     "--colorful-icon-color-alt": { "light": null, "dark": "var(--text-muted)" }
   },
+  ".anp-colorful-frame:not(.anp-card-layout):not(\n    .anp-border-layout\n  ).anp-colorful-frame-icon-toggle-dark\n  .mod-left-split\n  .mod-top\n  .workspace-tab-header.is-active": {
+    "background-color": { "light": null, "dark": "rgba(var(--ctp-text), 0.3)" }
+  },
+  ".anp-colorful-frame:not(.anp-card-layout):not(\n    .anp-border-layout\n  ).anp-colorful-frame-icon-toggle-dark\n  .mod-right-split\n  .mod-top\n  .workspace-tab-header.is-active": {
+    "background-color": { "light": null, "dark": "rgba(var(--ctp-text), 0.3)" }
+  },
+  ".anp-colorful-frame.anp-card-layout:not(\n    .anp-card-layout-filebrowser\n  ).anp-colorful-frame-icon-toggle-dark\n  .workspace-leaf-content[data-type=\"file-explorer\"]": {
+    "--icon-color": { "light": null, "dark": "var(--text-normal)" },
+    "--icon-color-active": { "light": null, "dark": "var(--text-normal)" },
+    "--icon-color-focused": { "light": null, "dark": "var(--text-normal)" },
+    "--icon-color-hover": { "light": null, "dark": "var(--text-normal)" },
+    "--tab-text-color": { "light": null, "dark": "var(--text-normal)" },
+    "--tab-text-color-focused": { "light": null, "dark": "var(--text-normal)" },
+    "--tab-text-color-focused-active": {
+      "light": null,
+      "dark": "var(--text-normal)"
+    },
+    "--tab-text-color-focused-active-current": {
+      "light": null,
+      "dark": "var(--text-normal)"
+    },
+    "--tab-text-color-focused-highlighted": {
+      "light": null,
+      "dark": "var(--text-normal)"
+    }
+  },
   ".anp-colorful-frame.anp-card-layout.anp-colorful-frame-icon-toggle-dark": {
     "--icon-color": { "light": null, "dark": "var(--text-muted)" },
     "--icon-color-active": { "light": null, "dark": "var(--text-accent)" },
@@ -1599,74 +1684,92 @@
       "dark": "var(--text-accent)"
     }
   },
+  ".anp-colorful-frame.anp-card-layout.is-focused:not(\n    .anp-colorful-frame-icon-toggle-dark\n  )\n  .mod-left-split\n  .mod-active\n  .workspace-tab-header.is-active\n  .workspace-tab-header-inner-icon": {
+    "color": { "light": null, "dark": "var(--background-secondary-alt)" }
+  },
+  ".anp-colorful-frame.anp-card-layout.is-focused:not(\n    .anp-colorful-frame-icon-toggle-dark\n  )\n  .mod-right-split\n  .mod-active\n  .workspace-tab-header.is-active\n  .workspace-tab-header-inner-icon": {
+    "color": { "light": null, "dark": "var(--background-secondary-alt)" }
+  },
+  ".anp-colorful-frame.anp-card-layout.is-focused.anp-colorful-frame-icon-toggle-dark\n  .mod-left-split\n  .mod-active\n  .workspace-tab-header.is-active\n  .workspace-tab-header-inner-icon": {
+    "color": { "light": null, "dark": "var(--text-normal)" }
+  },
+  ".anp-colorful-frame.anp-card-layout.is-focused.anp-colorful-frame-icon-toggle-dark\n  .mod-right-split\n  .mod-active\n  .workspace-tab-header.is-active\n  .workspace-tab-header-inner-icon": {
+    "color": { "light": null, "dark": "var(--text-normal)" }
+  },
+  ".anp-colorful-frame.anp-card-layout.anp-colorful-frame-icon-toggle-dark\n  .mod-right-split\n  .workspace-tab-header.is-active": {
+    "background-color": { "light": null, "dark": "rgba(var(--ctp-text), 0.3)" }
+  },
+  ".anp-colorful-frame.anp-card-layout.anp-colorful-frame-icon-toggle-dark\n  .mod-left-split\n  .workspace-tab-header.is-active": {
+    "background-color": { "light": null, "dark": "rgba(var(--ctp-text), 0.3)" }
+  },
   ".anp-speech-bubble [data-task=\"0\"]": {
     "--text-normal": { "light": null, "dark": "var(--background-primary)" },
     "transition": {
       "light": null,
-      "dark": "background-color 0.2s, background 0.2s, border-radius 0.2s"
+      "dark": "background-color 0.2s,\n    background 0.2s,\n    border-radius 0.2s"
     }
   },
   ".anp-speech-bubble [data-task=\"1\"]": {
     "--text-normal": { "light": null, "dark": "var(--background-primary)" },
     "transition": {
       "light": null,
-      "dark": "background-color 0.2s, background 0.2s, border-radius 0.2s"
+      "dark": "background-color 0.2s,\n    background 0.2s,\n    border-radius 0.2s"
     }
   },
   ".anp-speech-bubble [data-task=\"2\"]": {
     "--text-normal": { "light": null, "dark": "var(--background-primary)" },
     "transition": {
       "light": null,
-      "dark": "background-color 0.2s, background 0.2s, border-radius 0.2s"
+      "dark": "background-color 0.2s,\n    background 0.2s,\n    border-radius 0.2s"
     }
   },
   ".anp-speech-bubble [data-task=\"3\"]": {
     "--text-normal": { "light": null, "dark": "var(--background-primary)" },
     "transition": {
       "light": null,
-      "dark": "background-color 0.2s, background 0.2s, border-radius 0.2s"
+      "dark": "background-color 0.2s,\n    background 0.2s,\n    border-radius 0.2s"
     }
   },
   ".anp-speech-bubble [data-task=\"4\"]": {
     "--text-normal": { "light": null, "dark": "var(--background-primary)" },
     "transition": {
       "light": null,
-      "dark": "background-color 0.2s, background 0.2s, border-radius 0.2s"
+      "dark": "background-color 0.2s,\n    background 0.2s,\n    border-radius 0.2s"
     }
   },
   ".anp-speech-bubble [data-task=\"5\"]": {
     "--text-normal": { "light": null, "dark": "var(--background-primary)" },
     "transition": {
       "light": null,
-      "dark": "background-color 0.2s, background 0.2s, border-radius 0.2s"
+      "dark": "background-color 0.2s,\n    background 0.2s,\n    border-radius 0.2s"
     }
   },
   ".anp-speech-bubble [data-task=\"6\"]": {
     "--text-normal": { "light": null, "dark": "var(--background-primary)" },
     "transition": {
       "light": null,
-      "dark": "background-color 0.2s, background 0.2s, border-radius 0.2s"
+      "dark": "background-color 0.2s,\n    background 0.2s,\n    border-radius 0.2s"
     }
   },
   ".anp-speech-bubble [data-task=\"7\"]": {
     "--text-normal": { "light": null, "dark": "var(--background-primary)" },
     "transition": {
       "light": null,
-      "dark": "background-color 0.2s, background 0.2s, border-radius 0.2s"
+      "dark": "background-color 0.2s,\n    background 0.2s,\n    border-radius 0.2s"
     }
   },
   ".anp-speech-bubble [data-task=\"8\"]": {
     "--text-normal": { "light": null, "dark": "var(--background-primary)" },
     "transition": {
       "light": null,
-      "dark": "background-color 0.2s, background 0.2s, border-radius 0.2s"
+      "dark": "background-color 0.2s,\n    background 0.2s,\n    border-radius 0.2s"
     }
   },
   ".anp-speech-bubble [data-task=\"9\"]": {
     "--text-normal": { "light": null, "dark": "var(--background-primary)" },
     "transition": {
       "light": null,
-      "dark": "background-color 0.2s, background 0.2s, border-radius 0.2s"
+      "dark": "background-color 0.2s,\n    background 0.2s,\n    border-radius 0.2s"
     }
   },
   ".anp-speech-bubble [data-task=\"0\"]::selection": {
@@ -1708,6 +1811,12 @@
   ".anp-speech-bubble [data-task=\"9\"]::selection": {
     "background": { "light": null, "dark": "rgba(var(--ctp-crust), 0.2)" },
     "background-color": { "light": null, "dark": "rgba(var(--ctp-crust), 0.2)" }
+  },
+  ".anp-full-rainbow-color-toggle.anp-rainbow-file-toggle\n  .nav-files-container\n  > .nav-folder-children\n  > .nav-file": {
+    "background-color": {
+      "light": null,
+      "dark": "rgba(var(--ctp-text), var(--anp-rainbow-folder-bg-opacity))"
+    }
   },
   ".anp-full-rainbow-text-color-toggle-dark": {
     "--anp-full-rainbow-text-inverted": {

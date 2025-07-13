@@ -9,11 +9,11 @@
       "dark": null
     },
     "--color-accent-1": {
-      "light": "hsl( calc(var(--accent-h) - 1), calc(var(--accent-s) * 1.01), calc(var(--accent-l) * 1.075) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 1),\n    calc(var(--accent-s) * 1.01),\n    calc(var(--accent-l) * 1.075)\n  )",
       "dark": null
     },
     "--color-accent-2": {
-      "light": "hsl( calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 3),\n    calc(var(--accent-s) * 1.02),\n    calc(var(--accent-l) * 1.15)\n  )",
       "dark": null
     },
     "--background-secondary-alt": {
@@ -23,11 +23,11 @@
     "--background-modifier-box-shadow": { "light": "#000000", "dark": null },
     "--background-modifier-cover": { "light": "#dcdcdc", "dark": null },
     "--input-shadow": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--input-shadow-hover": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--shadow-s": {
@@ -95,6 +95,27 @@
     "background-color": { "light": "#262626", "dark": null },
     "box-shadow": { "light": "inset 0px 0px 0px 1px #363636", "dark": null }
   },
+  "body.notation-colors": {
+    "--code": "#eb5757",
+    "--hue": "203",
+    "--interactive-accent-rgb": "46, 170, 220",
+    "--opacity-translucency": "0.7",
+    "--sat": "8%",
+    "--background-accent": "hsl(var(--hue), var(--sat), var(--L0))",
+    "--background-modifier-border": "rgba(var(--text-rgb), 0.14)",
+    "--background-primary": "hsl(var(--hue), var(--sat), var(--L1))",
+    "--background-primary-alt": "hsl(var(--hue), var(--sat), var(--L3))",
+    "--background-secondary": "hsl(var(--hue), var(--sat), var(--L2))",
+    "--background-secondary-alt": "hsl(var(--hue), var(--sat), var(--L3))",
+    "--interactive-accent": "rgb(var(--interactive-accent-rgb))",
+    "--interactive-accent-hover": "rgba(var(--interactive-accent-rgb), 0.8)",
+    "--text-accent": "rgba(var(--text-rgb), 0.45)",
+    "--text-accent-hover": "rgba(var(--text-rgb), 0.45)",
+    "--text-faint": "rgba(var(--text-rgb), 0.55)",
+    "--text-muted": "rgba(var(--text-rgb), 0.7)",
+    "--text-normal": "rgba(var(--text-rgb), 0.9)",
+    "--text-on-accent": "rgba(var(--text-rgb), 0.9)"
+  },
   ".notation-colors": {
     "--L0": "0%",
     "--L1": { "light": "100%", "dark": "20%" },
@@ -125,14 +146,19 @@
     "--color-blue-rgb": { "light": "221, 235, 241", "dark": "54, 73, 84" },
     "--color-purple-rgb": { "light": "234, 228, 242", "dark": "68, 63, 87" },
     "--color-pink-rgb": { "light": "244, 223, 235", "dark": "83, 59, 76" },
-    "--color-red-rgb": { "light": "251, 228, 228", "dark": "89, 65, 65" },
-    "}": { "light": null, "dark": "" }
+    "--color-red-rgb": { "light": "251, 228, 228", "dark": "89, 65, 65" }
   },
   ".dropdown": {
     "background-image": {
       "light": null,
-      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+      "dark": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
     }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  input": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  textarea": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -141,7 +167,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))\n    drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {
@@ -245,7 +271,7 @@
   ".embedded-backlinks .search-result-file-title::before": {
     "content": {
       "light": null,
-      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='1.5px' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='17' y1='7' x2='7' y2='17'%3E%3C/line%3E%3Cpolyline points='17 17 7 17 7 7'%3E%3C/polyline%3E%3C/svg%3E\")"
+      "dark": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='1.5px' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='17' y1='7' x2='7' y2='17'%3E%3C/line%3E%3Cpolyline points='17 17 7 17 7 7'%3E%3C/polyline%3E%3C/svg%3E\")"
     },
     "padding-right": { "light": null, "dark": "5px" }
   },

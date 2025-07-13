@@ -43,7 +43,7 @@ html[saved-theme="dark"] {
   --color-pink: rgb(211, 134, 155);
   --background-primary: rgb(40, 40, 40);
   --background-primary-alt: rgb(50, 48, 47);
-  --background-secondary: rgb(var(--dark0-hard-x));
+  --background-secondary: rgb(29, 32, 33);
   --background-modifier-border: rgb(60, 56, 54);
   --text-normal: rgb(212, 190, 152);
   --text-faint: rgb(235, 219, 178);
@@ -420,10 +420,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -457,6 +457,7 @@ body {
   --tag-decoration-hover: underline;
   --tag-radius: 0.5em;
   --bold-weight: 600;
+  --checkbox-radius: 0;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -1485,7 +1486,7 @@ body {
           border: none;
           height: 48px;
           border-radius: 0;
-          border-bottom: 1px solid rgb(var(--dark0-hard-x));
+          border-bottom: 1px solid rgb(29, 32, 33);
 
           margin-bottom: 0;
           border-bottom: none;

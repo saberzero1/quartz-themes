@@ -41,21 +41,21 @@
       "dark": null
     },
     "--color-accent-1": {
-      "light": "hsl( calc(var(--accent-h) - 1), calc(var(--accent-s) * 1.01), calc(var(--accent-l) * 1.075) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 1),\n    calc(var(--accent-s) * 1.01),\n    calc(var(--accent-l) * 1.075)\n  )",
       "dark": null
     },
     "--color-accent-2": {
-      "light": "hsl( calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 3),\n    calc(var(--accent-s) * 1.02),\n    calc(var(--accent-l) * 1.15)\n  )",
       "dark": null
     },
     "--background-modifier-box-shadow": { "light": "#000000", "dark": null },
     "--background-modifier-cover": { "light": "#dcdcdc", "dark": null },
     "--input-shadow": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--input-shadow-hover": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--shadow-s": {
@@ -67,9 +67,37 @@
       "dark": null
     },
     "--window-shadow": {
-      "light": "inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey,",
+      "light": "inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey,\n    inset 2px 2px #fff",
       "dark": null
     },
+    "--background-primary": { "light": "#ffffff", "dark": null },
+    "--background-secondary": { "light": "#ececec", "dark": null },
+    "--background-secondary-alt": { "light": "#d4d0c8", "dark": null },
+    "--background-tertiary": { "light": "#c0c0c0", "dark": null },
+    "--titlebar-background": { "light": "#3c8000", "dark": null },
+    "--titlebar-text": { "light": "#ffffff", "dark": null },
+    "--text-normal": { "light": "#000000", "dark": null },
+    "--text-muted": { "light": "#333333", "dark": null },
+    "--text-faint": { "light": "#666666", "dark": null },
+    "--text-accent": { "light": "#008015", "dark": null },
+    "--interactive-normal": { "light": "#d4d0c8", "dark": null },
+    "--interactive-hover": { "light": "#e6e6e6", "dark": null },
+    "--interactive-accent": { "light": "#000080", "dark": null },
+    "--interactive-accent-hover": { "light": "#0000aa", "dark": null },
+    "--button-background": { "light": "#d4d0c8", "dark": null },
+    "--button-text": { "light": "#000000", "dark": null },
+    "--folder-color-1": { "light": "#965d5d", "dark": null },
+    "--folder-color-2": { "light": "#8470a6", "dark": null },
+    "--folder-color-3": { "light": "#507a9e", "dark": null },
+    "--folder-color-4": { "light": "#5a8d76", "dark": null },
+    "--folder-color-5": { "light": "#a19c6c", "dark": null },
+    "--folder-color-6": { "light": "#a67a5b", "dark": null },
+    "--folder-color-7": { "light": "#96707e", "dark": null },
+    "--folder-color-8": { "light": "#5b8b9e", "dark": null },
+    "--folder-color-9": { "light": "#6b8c6b", "dark": null },
+    "--folder-color-10": { "light": "#8b7e6d", "dark": null },
+    "--folder-color-11": { "light": "#8d6b83", "dark": null },
+    "--folder-color-12": { "light": "#6c8299", "dark": null },
     "--canvas-color": { "light": null, "dark": "126, 126, 126" }
   },
   ".notice progress[value]::-webkit-progress-bar": {
@@ -78,32 +106,32 @@
   },
   "button": {
     "box-shadow": {
-      "light": "inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf",
-      "dark": "inset -1px -1px #0a0a0a, inset 1px 1px #666, inset -2px -2px #333, inset 2px 2px #555"
+      "light": "inset -1px -1px #0a0a0a,\n    inset 1px 1px #fff,\n    inset -2px -2px grey,\n    inset 2px 2px #dfdfdf",
+      "dark": "inset -1px -1px #0a0a0a,\n    inset 1px 1px #666,\n    inset -2px -2px #333,\n    inset 2px 2px #555"
     }
   },
   ".clickable-icon": {
     "box-shadow": {
-      "light": "inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf",
-      "dark": "inset -1px -1px #0a0a0a, inset 1px 1px #666, inset -2px -2px #333, inset 2px 2px #555"
+      "light": "inset -1px -1px #0a0a0a,\n    inset 1px 1px #fff,\n    inset -2px -2px grey,\n    inset 2px 2px #dfdfdf",
+      "dark": "inset -1px -1px #0a0a0a,\n    inset 1px 1px #666,\n    inset -2px -2px #333,\n    inset 2px 2px #555"
     }
   },
   "button:active": {
     "box-shadow": {
-      "light": "inset 1px 1px #0a0a0a, inset -1px -1px #fff, inset 2px 2px grey, inset -2px -2px #dfdfdf",
-      "dark": "inset 1px 1px #0a0a0a, inset -1px -1px #666, inset 2px 2px #333, inset -2px -2px #555"
+      "light": "inset 1px 1px #0a0a0a,\n    inset -1px -1px #fff,\n    inset 2px 2px grey,\n    inset -2px -2px #dfdfdf",
+      "dark": "inset 1px 1px #0a0a0a,\n    inset -1px -1px #666,\n    inset 2px 2px #333,\n    inset -2px -2px #555"
     }
   },
   ".clickable-icon:active": {
     "box-shadow": {
-      "light": "inset 1px 1px #0a0a0a, inset -1px -1px #fff, inset 2px 2px grey, inset -2px -2px #dfdfdf",
-      "dark": "inset 1px 1px #0a0a0a, inset -1px -1px #666, inset 2px 2px #333, inset -2px -2px #555"
+      "light": "inset 1px 1px #0a0a0a,\n    inset -1px -1px #fff,\n    inset 2px 2px grey,\n    inset -2px -2px #dfdfdf",
+      "dark": "inset 1px 1px #0a0a0a,\n    inset -1px -1px #666,\n    inset 2px 2px #333,\n    inset -2px -2px #555"
     }
   },
   "button:hover": {
     "box-shadow": {
-      "light": "inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf",
-      "dark": "inset -1px -1px #3a3a3a, inset 1px 1px #888888"
+      "light": "inset -1px -1px #0a0a0a,\n    inset 1px 1px #dfdfdf",
+      "dark": "inset -1px -1px #3a3a3a,\n    inset 1px 1px #888888"
     }
   },
   ".cm-link": {
@@ -116,20 +144,20 @@
   },
   "::-webkit-scrollbar-thumb": {
     "box-shadow": {
-      "light": "inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf",
-      "dark": "inset -1px -1px #0a0a0a, inset 1px 1px #666, inset -2px -2px #333, inset 2px 2px #555"
+      "light": "inset -1px -1px #0a0a0a,\n    inset 1px 1px #fff,\n    inset -2px -2px grey,\n    inset 2px 2px #dfdfdf",
+      "dark": "inset -1px -1px #0a0a0a,\n    inset 1px 1px #666,\n    inset -2px -2px #333,\n    inset 2px 2px #555"
     }
   },
   "::-webkit-scrollbar-button": {
     "box-shadow": {
-      "light": "inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf",
-      "dark": "inset -1px -1px #0a0a0a, inset 1px 1px #666, inset -2px -2px #333, inset 2px 2px #555"
+      "light": "inset -1px -1px #0a0a0a,\n    inset 1px 1px #fff,\n    inset -2px -2px grey,\n    inset 2px 2px #dfdfdf",
+      "dark": "inset -1px -1px #0a0a0a,\n    inset 1px 1px #666,\n    inset -2px -2px #333,\n    inset 2px 2px #555"
     }
   },
   "::-webkit-scrollbar-button:active": {
     "box-shadow": {
-      "light": "inset 1px 1px #0a0a0a, inset -1px -1px #fff, inset 2px 2px grey, inset -2px -2px #dfdfdf",
-      "dark": "inset 1px 1px #0a0a0a, inset -1px -1px #666, inset 2px 2px #333, inset -2px -2px #555"
+      "light": "inset 1px 1px #0a0a0a,\n    inset -1px -1px #fff,\n    inset 2px 2px grey,\n    inset -2px -2px #dfdfdf",
+      "dark": "inset 1px 1px #0a0a0a,\n    inset -1px -1px #666,\n    inset 2px 2px #333,\n    inset -2px -2px #555"
     }
   },
   ".workspace-tab-header": {
@@ -137,16 +165,16 @@
     "color": "var(--text-normal)",
     "border": "1px solid #000",
     "box-shadow": {
-      "light": "inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf",
-      "dark": "inset -1px -1px #0a0a0a, inset 1px 1px #666, inset -2px -2px #333, inset 2px 2px #555"
+      "light": "inset -1px -1px #0a0a0a,\n    inset 1px 1px #fff,\n    inset -2px -2px grey,\n    inset 2px 2px #dfdfdf",
+      "dark": "inset -1px -1px #0a0a0a,\n    inset 1px 1px #666,\n    inset -2px -2px #333,\n    inset 2px 2px #555"
     },
     "border-radius": "5px"
   },
   ".workspace-tab-header.is-active": {
     "background-color": "var(--background-secondary)",
     "box-shadow": {
-      "light": "inset 1px 1px #0a0a0a, inset -1px -1px #fff, inset 2px 2px grey, inset -2px -2px #dfdfdf",
-      "dark": "inset 1px 1px #0a0a0a, inset -1px -1px #666, inset 2px 2px #333, inset -2px -2px #555"
+      "light": "inset 1px 1px #0a0a0a,\n    inset -1px -1px #fff,\n    inset 2px 2px grey,\n    inset -2px -2px #dfdfdf",
+      "dark": "inset 1px 1px #0a0a0a,\n    inset -1px -1px #666,\n    inset 2px 2px #333,\n    inset -2px -2px #555"
     },
     "border-radius": "5px"
   },
@@ -179,12 +207,9 @@
     "background": { "light": "#d4d0c8", "dark": "#3a3a3a" }
   },
   ".table-view-table > tbody > tr > td": {
-    "white-space": "pre-wrap !important",
-    "background-color": {
-      "light": "#ccccff1f !important",
-      "dark": "#33335f !important"
-    },
-    "padding": "10px !important"
+    "white-space": "pre-wrap",
+    "background-color": { "light": "#ccccff1f", "dark": "#33335f" },
+    "padding": "10px"
   },
   ".nav-files-container > div > .nav-folder": {
     "border": { "light": "1px solid #c0c0c0", "dark": "1px solid #555555" },
@@ -194,8 +219,14 @@
   ".dropdown": {
     "background-image": {
       "light": null,
-      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+      "dark": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
     }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  input": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  textarea": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -204,7 +235,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))\n    drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {

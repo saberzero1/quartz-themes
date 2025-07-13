@@ -41,21 +41,21 @@
       "dark": null
     },
     "--color-accent-1": {
-      "light": "hsl( calc(var(--accent-h) - 1), calc(var(--accent-s) * 1.01), calc(var(--accent-l) * 1.075) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 1),\n    calc(var(--accent-s) * 1.01),\n    calc(var(--accent-l) * 1.075)\n  )",
       "dark": null
     },
     "--color-accent-2": {
-      "light": "hsl( calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 3),\n    calc(var(--accent-s) * 1.02),\n    calc(var(--accent-l) * 1.15)\n  )",
       "dark": null
     },
     "--background-modifier-box-shadow": { "light": "#000000", "dark": null },
     "--background-modifier-cover": { "light": "#dcdcdc", "dark": null },
     "--input-shadow": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--input-shadow-hover": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--shadow-s": {
@@ -67,26 +67,56 @@
       "dark": null
     },
     "--background-primary": { "light": "#ededed", "dark": null },
+    "--background-secondary": { "light": "#c4c4c4", "dark": null },
+    "--background-primary-alt": { "light": "#", "dark": null },
+    "--background-secondary-alt": { "light": "#707070", "dark": null },
+    "--text-normal": { "light": "#1a2023", "dark": null },
+    "--text-faint": { "light": "#dedede", "dark": null },
+    "--text-title-h1": { "light": "#d49335", "dark": null },
+    "--text-title-h2": { "light": "#d49335", "dark": null },
+    "--text-title-h3": { "light": "#d49335", "dark": null },
+    "--text-title-h4": { "light": "#d49335", "dark": null },
+    "--text-title-h5": { "light": "#d49335", "dark": null },
+    "--text-link": { "light": "#d49335", "dark": null },
+    "--text-a-hover": { "light": "#d49335", "dark": null },
+    "--text-accent-hover": { "light": "#d49335", "dark": null },
+    "--inline-code": { "light": "#458588", "dark": null },
+    "--pre-code": { "light": "#bebebe", "dark": null },
+    "--interactive-before": { "light": "#a89984", "dark": null },
+    "--background-modifier-border": { "light": "#d49335", "dark": null },
+    "--text-a": { "light": "#961327", "dark": null },
+    "--interactive-accent": { "light": "#f8c537", "dark": null },
+    "--text-accent": { "light": "#961327", "dark": null },
+    "--interactive-accent-rgb": { "light": "#961327", "dark": null },
+    "--vim-cursor": { "light": "#961327", "dark": null },
+    "--text-selection": { "light": "#edc180", "dark": null },
+    "--text-white": { "light": "#ffffff", "dark": null },
     "--canvas-color": { "light": null, "dark": "126, 126, 126" }
   },
   ".notice progress[value]::-webkit-progress-bar": {
     "background-color": { "light": "#262626", "dark": null },
     "box-shadow": { "light": "inset 0px 0px 0px 1px #363636", "dark": null }
   },
-  ".plugin-tab": {
-    ".mod-root.workspace-split.mod-vertical div.workspace-leaf { border-color": {
-      "light": "var(--background-secondary-alt) !important",
+  ".plugin-tabs\n  .mod-root.workspace-split.mod-vertical\n  div.workspace-leaf": {
+    "border-color": {
+      "light": "var(--background-secondary-alt)",
       "dark": null
     },
-    "border-left-width": { "light": "3px !important", "dark": null },
-    "border-bottom-width": { "light": "0px !important", "dark": null },
-    "border-right-width": { "light": "0px !important", "dark": null }
+    "border-left-width": { "light": "3px", "dark": null },
+    "border-bottom-width": { "light": "0px", "dark": null },
+    "border-right-width": { "light": "0px", "dark": null }
   },
   ".dropdown": {
     "background-image": {
       "light": null,
-      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+      "dark": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
     }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  input": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  textarea": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -95,7 +125,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))\n    drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {
@@ -199,5 +229,13 @@
   ".cm-s-obsidian span.obsidian-search-match-highlight": {
     "color": { "light": null, "dark": "var(--text-normal)" },
     "background-color": { "light": null, "dark": "#483699" }
+  },
+  ".plugin-tabs\n  \n  .mod-root.workspace-split.mod-vertical\n  .workspace-split.mod-vertical\n  > div.workspace-leaf.mod-active": {
+    "border": { "light": null, "dark": "0" },
+    "border-radius": { "light": null, "dark": "0px 0px 0px 0px" }
+  },
+  ".plugin-tabs\n  \n  .mod-root.workspace-split.mod-vertical\n  > div.workspace-leaf.mod-active": {
+    "border": { "light": null, "dark": "0" },
+    "border-radius": { "light": null, "dark": "0px 0px 0px 0px" }
   }
 }

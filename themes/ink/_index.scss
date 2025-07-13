@@ -40,6 +40,11 @@ html[saved-theme="light"] {
   --color-base-70: hsl(0, 0%, 30%);
   --color-base-100: hsl(0, 0%, 0%);
   --color-accent-hsl: 0, 0%, 40%;
+  --color-accent-2: hsl(0, 0%, 20%);
+  --background-primary: #000;
+  --background-primary-alt: #212121;
+  --background-secondary: #212121;
+  --text-highlight-bg: hsla(0, 0%, 40%, 0.3);
 }
 
 .darkmode {
@@ -330,10 +335,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;

@@ -352,10 +352,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -378,7 +378,7 @@ body {
     Inter, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Sans JP", "Yu Gothic", "Microsoft YaHei Light",
     sans-serif;
-  --collapse-icon-color-collapsed: #888888 !important;
+  --collapse-icon-color-collapsed: #888888;
   --nav-item-background-hover: #f5f6f8;
   --background-modifier-hover: #f2f3f5;
   --code-background: #f2f3f5;

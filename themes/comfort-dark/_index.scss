@@ -39,8 +39,31 @@ html[saved-theme="dark"] {
   --color-base-50: #666666;
   --color-base-70: #b3b3b3;
   --color-base-100: #dadada;
-  --color-accent-hsl: 258, 50%, 50%;
-  --color-accent-2: hsl(calc(258 - 5), calc(50% * 1.05), calc(50% * 1.29));
+  --color-accent-hsl: 40, 50%, 50%;
+  --color-accent-2: hsl(calc(40 - 5), calc(50% * 1.05), calc(50% * 1.29));
+  --background-primary: #222222;
+  --background-primary-alt: #262626;
+  --background-secondary: #222222;
+  --text-normal: #bbc0c5;
+  --text-faint: #a09b80;
+  --text-accent: #59a2c5;
+  --text-accent-hover: #b3a14b;
+  --code-background: #383838;
+  --code-comment: #6a9955;
+  --code-keyword: #c586c0;
+  --code-function: #dcdcaa;
+  --code-value: #b5cea8;
+  --code-string: #ce9178;
+  --code-tag: #b5cea8;
+  --code-punctuation: #d4d4d4;
+  --code-property: #9cdcfe;
+  --h1-color: #939bd6;
+  --tag-background: #123b2b;
+  --tag-background-hover: #194a37;
+  --tag-color: #bbc0c5;
+  --tag-color-hover: #bbc0c5;
+  --checkbox-border-color: hsl(40, 50%, 50%);
+  --checkbox-color: hsl(40, 50%, 50%);
 }
 
 .darkmode {
@@ -1014,12 +1037,8 @@ body {
   --bold-weight: calc(600 + 200);
   --checkbox-size: 16px;
   --checkbox-marker-color: #222222;
-  --checkbox-color: hsl(258, 50%, 50%);
-  --checkbox-color-hover: hsl(
-    calc(258 - 3),
-    calc(50% * 1.02),
-    calc(50% * 1.15)
-  );
+  --checkbox-color: hsl(40, 50%, 50%);
+  --checkbox-color-hover: hsl(calc(40 - 3), calc(50% * 1.02), calc(50% * 1.15));
   --checkbox-border-color: #a09b80;
   --checkbox-border-color-hover: #b3b3b3;
   --code-background: #262626;
@@ -1046,7 +1065,7 @@ body {
   --hr-color: transparent;
   --hr-thickness: 2px;
   --icon-color: #b3b3b3;
-  --inline-title-color: inherit;
+  --inline-title-color: #939bd6;
   --inline-title-font: inherit;
   --italic-color: inherit;
   --link-color: #59a2c5;
@@ -1064,10 +1083,10 @@ body {
   --tag-color-hover: #59a2c5;
   --tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-background: hsla(258, 50%, 50%, 0.1);
-  --tag-background-hover: hsla(258, 50%, 50%, 0.2);
-  --tag-border-color: hsla(258, 50%, 50%, 0.15);
-  --tag-border-color-hover: hsla(258, 50%, 50%, 0.15);
+  --tag-background: hsla(40, 50%, 50%, 0.1);
+  --tag-background-hover: hsla(40, 50%, 50%, 0.2);
+  --tag-border-color: hsla(40, 50%, 50%, 0.15);
+  --tag-border-color-hover: hsla(40, 50%, 50%, 0.15);
   --tag-border-width: 0px;
   --tag-radius: 2em;
   --tag-weight: inherit;
@@ -1082,21 +1101,24 @@ body {
   --text-muted: #b3b3b3;
   --text-faint: #666666;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
-  --text-accent: hsl(258, 50%, 50%);
-  --text-accent-hover: hsl(calc(258 - 5), calc(50% * 1.05), calc(50% * 1.29));
-  --interactive-accent-hsl: 258, 50%, 50%;
+  --text-accent: hsl(40, 50%, 50%);
+  --text-accent-hover: hsl(calc(40 - 5), calc(50% * 1.05), calc(50% * 1.29));
+  --interactive-accent-hsl: 40, 50%, 50%;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
   --font-monospace:
-    "??", var(--font-monospace-theme), ui-monospace, SFMono-Regular,
-    "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono",
-    Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", var(--font-text-theme), "Arial" !important;
+    "??", "Iosevka Web", "Iosevka", "JetBrains Mono", "Fira Code", Menlo,
+    SFMono-Regular, Consolas, "Roboto Mono", monospace, ui-monospace,
+    SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono",
+    "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text:
+    "??", "??", "Iosevka Web", "Iosevka", "Segoe UI", -apple-system,
+    BlinkMacSystemFont, Roboto, Inter, Ubuntu, sans-serif, "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -1105,7 +1127,15 @@ body {
   text-rendering: optimizeLegibility;
   font-family:
     "??",
-    var(--font-interface-theme),
+    "Iosevka Web",
+    "Iosevka",
+    "Segoe UI",
+    -apple-system,
+    BlinkMacSystemFont,
+    Roboto,
+    Inter,
+    Ubuntu,
+    sans-serif,
     var(--default-font, "??"),
     ui-sans-serif,
     -apple-system,
@@ -1126,6 +1156,7 @@ body {
   user-select: none;
   -webkit-user-select: none;
   caret-color: #59a2c5;
+  --checkbox-radius: 50%;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -1565,9 +1596,9 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 700;
-    color: inherit;
+    color: #939bd6;
     font-family: inherit;
-    font-size: var(--h1-size);
+    font-size: 2rem;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -1659,7 +1690,7 @@ body {
     --font-weight: 600;
     color: #799097;
     font-family: inherit;
-    font-size: var(--h6-size);
+    font-size: 1.3rem;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -1765,9 +1796,10 @@ body {
   code {
     color: #bbc0c5;
     font-family:
-      "??", var(--font-monospace-theme), ui-monospace, SFMono-Regular,
-      "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono",
-      Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+      "??", "Iosevka Web", "Iosevka", "JetBrains Mono", "Fira Code", Menlo,
+      SFMono-Regular, Consolas, "Roboto Mono", monospace, ui-monospace,
+      SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono",
+      "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     background-color: #383838;
     border-radius: 4px;
     font-size: 1em;
@@ -1789,7 +1821,15 @@ body {
     font-size: calc(16px * 0.8);
     font-family:
       "??",
-      var(--font-interface-theme),
+      "Iosevka Web",
+      "Iosevka",
+      "Segoe UI",
+      -apple-system,
+      BlinkMacSystemFont,
+      Roboto,
+      Inter,
+      Ubuntu,
+      sans-serif,
       var(--default-font, "??"),
       ui-sans-serif,
       -apple-system,
@@ -1876,7 +1916,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: hsl(258, 50%, 50%);
+        color: hsl(40, 50%, 50%);
 
         text-overflow: ellipsis;
         position: relative;

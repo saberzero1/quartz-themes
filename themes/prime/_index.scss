@@ -323,7 +323,7 @@ body {
   --hr-color: transparent;
   --hr-thickness: 2px;
   --icon-color: #747474;
-  --inline-title-color: #0d1117 !important;
+  --inline-title-color: #0d1117;
   --inline-title-font: inherit;
   --italic-color: inherit;
   --link-weight: var(--link-weight);
@@ -356,10 +356,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -389,6 +389,24 @@ body {
   user-select: none;
   -webkit-user-select: none;
   caret-color: hsl(calc(177.45 - 3), calc(90% * 1.02), calc(40% * 1.15));
+  --background-primary: #f9fafc;
+  --background-primary-alt: #f9fafc;
+  --background-secondary: #eff1f5;
+  --background-modifier-hover: #e5e8ee;
+  --background-modifier-border-focus: #dadfe8;
+  --text-accent-hover: hsla(177.45, 90%, 40%, 0.9);
+  --h1-color: #8c90f9;
+  --text-accent: #8c90f9;
+  --nav-item-background-hover: hsla(177.45, 90%, 40%, 0.5);
+  --link-color: #8c90f9;
+  --link-external-color: #8c90f9;
+  --link-color-hover: hsla(177.45, 90%, 40%, 0.9);
+  --link-external-color-hover: hsla(177.45, 90%, 40%, 0.9);
+  --checkbox-marker-color: #a0fa9c;
+  --checkbox-color: #d0d6e1;
+  --checkbox-color-hover: #d0d6e1;
+  --tag-radius: 18px;
+  --tag-color: #8d8d8d;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -828,7 +846,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 700;
-    color: #0d1117 !important;
+    color: #0d1117;
     font-family: inherit;
     font-size: 1.802em;
     font-style: normal;
@@ -848,7 +866,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: #0d1117 !important;
+    color: #0d1117;
     font-family: inherit;
     font-size: 1.602em;
     font-style: normal;
@@ -866,7 +884,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: #0d1117 !important;
+    color: #0d1117;
     font-family: inherit;
     font-size: 1.424em;
     font-style: normal;
@@ -884,7 +902,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: #0d1117 !important;
+    color: #0d1117;
     font-family: inherit;
     font-size: 1.266em;
     font-style: normal;
@@ -902,7 +920,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: #0d1117 !important;
+    color: #0d1117;
     font-family: inherit;
     font-size: 1.125em;
     font-style: normal;
@@ -920,7 +938,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: #0d1117 !important;
+    color: #0d1117;
     font-family: inherit;
     font-size: 1em;
     font-style: normal;
@@ -957,7 +975,7 @@ body {
     position: relative;
     padding: 12px 16px;
     min-height: 38px;
-    background-color: var(--color-tokyo-night-light-background);
+    background-color: #d5d6db;
     border-radius: 4px;
     white-space: pre-wrap;
     border: 0px solid transparent;
@@ -1031,7 +1049,7 @@ body {
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
       "Source Code Pro", monospace;
-    background-color: var(--color-tokyo-night-light-background);
+    background-color: #d5d6db;
     border-radius: 4px;
     font-size: 1em;
     padding: 0.15em 0.3em;
@@ -1095,7 +1113,7 @@ body {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
       --font-weight: 600;
-      color: #0d1117 !important;
+      color: #0d1117;
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1124,7 +1142,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: #0d1117 !important;
+      color: #0d1117;
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1260,14 +1278,14 @@ body {
 
   /* TOC */
   .toc {
-    color: #0d1117 !important;
+    color: #0d1117;
 
     button.toc-header {
       h3 {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
         --font-weight: 600;
-        color: #0d1117 !important;
+        color: #0d1117;
         font-family: inherit;
         font-size: 1.424em;
         font-style: normal;
@@ -1279,7 +1297,7 @@ body {
         margin-block: 0;
       }
 
-      color: #0d1117 !important;
+      color: #0d1117;
 
       color: inherit;
     }
@@ -1305,7 +1323,7 @@ body {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
       --font-weight: 600;
-      color: #0d1117 !important;
+      color: #0d1117;
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;

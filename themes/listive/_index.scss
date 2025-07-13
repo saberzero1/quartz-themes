@@ -42,6 +42,11 @@ html[saved-theme="dark"] {
   --color-accent-hsl: 258, 88%, 66%;
   --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
   --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --background-modifier-border: hsl(20, 5%, 33%);
+  --background-primary: hsl(0, 0%, 20%);
+  --background-primary-alt: #1a1a1a;
+  --background-secondary: hsl(300, 5%, 25%);
+  --h1-color: hsl(217, 22%, 90%);
 }
 
 :root[saved-theme="light"],
@@ -78,6 +83,12 @@ html[saved-theme="light"] {
   --color-base-100: #222222;
   --color-accent-hsl: 258, 88%, 66%;
   --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --background-primary: hsl(0, 0%, 92%);
+  --background-secondary: hsl(300, 5%, 80%);
+  --background-modifier-border: #ada7a4;
+  --text-muted: #1a1a1a;
+  --text-faint: #808080;
+  --h1-color: hsl(217, 22%, 30%);
 }
 
 /* latin-ext */
@@ -337,11 +348,11 @@ body {
     calc(88% * 1.02),
     calc(66% * 1.15)
   );
-  --checkbox-border-color: #666666;
+  --checkbox-border-color: #808080;
   --checkbox-border-color-hover: #1a1a1a;
   --code-background: hsl(0, 0%, 8%);
   --code-normal: hsl(0, 0%, 78%);
-  --code-comment: #666666;
+  --code-comment: #808080;
   --code-function: #e0de71;
   --code-important: #e9973f;
   --code-keyword: #fa99cd;
@@ -350,7 +361,7 @@ body {
   --code-string: #44cf6e;
   --code-tag: #fb464c;
   --code-value: #a882ff;
-  --collapse-icon-color: #666666;
+  --collapse-icon-color: #808080;
   --collapse-icon-color-collapsed: hsl(
     calc(258 - 3),
     calc(88% * 1.02),
@@ -359,13 +370,13 @@ body {
   --cursor-link: pointer;
   --font-weight: 400;
   --graph-line: var(--color-base-35, rgba(251, 70, 76, 0.6));
-  --graph-node-unresolved: #666666;
+  --graph-node-unresolved: #808080;
   --graph-node-tag: #44cf6e;
   --h1-color: inherit;
-  --hr-color: transparent;
+  --hr-color: hsl(20, 5%, 33%);
   --hr-thickness: 2px;
   --icon-color: #1a1a1a;
-  --inline-title-color: inherit;
+  --inline-title-color: hsl(217, 22%, 90%);
   --inline-title-font: Courgette;
   --italic-color: inherit;
   --link-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
@@ -413,10 +424,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "Inter", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "Inter", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -446,6 +457,14 @@ body {
   user-select: none;
   -webkit-user-select: none;
   caret-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --h1-font: Courgette;
+  --default-font: "Inter";
+  --h3-line-height: 1.2em;
+  --bold-weight: 700;
+  --bold-color: hsl(217, 22%, 90%);
+  --tag-color: #111;
+  --tag-radius: 0.6em;
+  --tag-color-hover: #eee;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -885,9 +904,9 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: inherit;
+    color: hsl(217, 22%, 90%);
     font-family: Courgette;
-    font-size: var(--h1-size);
+    font-size: 1.6em;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -898,7 +917,7 @@ body {
     border-image-slice: 1;
     border-image-source: linear-gradient(
       to right,
-      color-mix(in lch, inherit 60%, transparent),
+      color-mix(in lch, hsl(217, 22%, 90%) 60%, transparent),
       transparent
     );
 
@@ -910,7 +929,25 @@ body {
   h2.page-title,
   h2.page-title a,
   h2 {
-    margin-top: 0;
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
+    --font-weight: 600;
+    color: hsl(217, 22%, 80%);
+    font-family: Courgette;
+    font-size: 1.48em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: 1.1em;
+    padding-bottom: 0.1rem;
+    border-bottom: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+      to right,
+      color-mix(in lch, hsl(217, 22%, 80%) 60%, transparent),
+      transparent
+    );
 
     font-size: 1.75rem;
   }
@@ -918,7 +955,24 @@ body {
     --link-weight: 600;
   }
   h3 {
-    margin-top: 0;
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
+    --font-weight: 600;
+    color: hsl(217, 22%, 70%);
+    font-family: "Karla", "Inter";
+    font-size: 1.36em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: 1.2em;
+    border-bottom: 0px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+      to right,
+      color-mix(in lch, hsl(217, 22%, 70%) 60%, transparent),
+      transparent
+    );
 
     font-size: 1.6rem;
   }
@@ -926,7 +980,17 @@ body {
     --link-weight: 600;
   }
   h4 {
-    margin-top: 0;
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
+    --font-weight: 600;
+    color: hsl(45, 45%, 85%);
+    font-family: "Karla", "Inter";
+    font-size: 1.12em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: 0.015em;
+    line-height: 1.25em;
 
     font-size: 1.4rem;
   }
@@ -934,7 +998,17 @@ body {
     --link-weight: 600;
   }
   h5 {
-    margin-top: 0;
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
+    --font-weight: 600;
+    color: hsl(45, 45%, 75%);
+    font-family: inherit;
+    font-size: 1em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: 0.015em;
+    line-height: 1.25em;
 
     font-size: 1.2rem;
   }
@@ -945,7 +1019,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: inherit;
+    color: hsl(45, 45%, 65%);
     font-family: inherit;
     font-size: 1em;
     font-style: normal;
@@ -985,7 +1059,7 @@ body {
     background-color: hsl(0, 0%, 8%);
     border-radius: 4px;
     white-space: pre-wrap;
-    border: 0px solid transparent;
+    border: 0px solid hsl(20, 5%, 33%);
     overflow-x: auto;
 
     background-color: var(--code-background);
@@ -1060,7 +1134,7 @@ body {
     border-radius: 4px;
     font-size: 1em;
     padding: 0.15em 0.3em;
-    border: 0px solid transparent;
+    border: 0px solid hsl(20, 5%, 33%);
     -webkit-box-decoration-break: clone;
 
     background-color: var(--code-background);
@@ -1111,13 +1185,30 @@ body {
 
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: #666666;
+    color: #808080;
   }
 
   /* BACKLINKS */
   .backlinks {
     h3 {
-      margin-top: 0;
+      margin-block-end: 0rem;
+      margin-block-start: 0rem;
+      --font-weight: 600;
+      color: hsl(217, 22%, 70%);
+      font-family: "Karla", "Inter";
+      font-size: 1.36em;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 600;
+      letter-spacing: -0.015em;
+      line-height: 1.2em;
+      border-bottom: 0px solid;
+      border-image-slice: 1;
+      border-image-source: linear-gradient(
+        to right,
+        color-mix(in lch, hsl(217, 22%, 70%) 60%, transparent),
+        transparent
+      );
     }
 
     ul li {
@@ -1136,6 +1227,10 @@ body {
         backdrop-filter: blur(8px);
         padding-left: 1rem;
       }
+    }
+    button.explorer-toggle,
+    h2 {
+      color: hsl(217, 22%, 80%);
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1208,7 +1303,7 @@ body {
           var(--nav-item-children-margin-left)
         );
         margin-bottom: 1px;
-        border-inline-start: 1px solid var(--background-modifier-border-active);
+        border-inline-start: 1px solid hsl(20, 5%, 53%);
       }
       ul.explorer-ul li {
         text-overflow: ellipsis;
@@ -1271,12 +1366,33 @@ body {
 
   /* TOC */
   .toc {
+    color: hsl(217, 22%, 70%);
+
     button.toc-header {
       h3 {
-        margin-top: 0;
+        margin-block-end: 0rem;
+        margin-block-start: 0rem;
+        --font-weight: 600;
+        color: hsl(217, 22%, 70%);
+        font-family: "Karla", "Inter";
+        font-size: 1.36em;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 600;
+        letter-spacing: -0.015em;
+        line-height: 1.2em;
+        border-bottom: 0px solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(
+          to right,
+          color-mix(in lch, hsl(217, 22%, 70%) 60%, transparent),
+          transparent
+        );
 
         margin-block: 0;
       }
+
+      color: hsl(217, 22%, 70%);
 
       color: inherit;
     }
@@ -1299,7 +1415,24 @@ body {
   .graph,
   .toc {
     h3 {
-      margin-top: 0;
+      margin-block-end: 0rem;
+      margin-block-start: 0rem;
+      --font-weight: 600;
+      color: hsl(217, 22%, 70%);
+      font-family: "Karla", "Inter";
+      font-size: 1.36em;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 600;
+      letter-spacing: -0.015em;
+      line-height: 1.2em;
+      border-bottom: 0px solid;
+      border-image-slice: 1;
+      border-image-source: linear-gradient(
+        to right,
+        color-mix(in lch, hsl(217, 22%, 70%) 60%, transparent),
+        transparent
+      );
 
       min-height: calc(2 * var(--p-spacing) + var(--h3-line-height));
       margin-block: 0;
@@ -1363,7 +1496,7 @@ body {
 
       -webkit-app-region: no-drag;
       background: #1e1e1e;
-      border: 1px solid transparent;
+      border: 1px solid hsl(20, 5%, 33%);
       border-radius: 5px;
       color: hsl(0, 0%, 78%);
       font-family: inherit;
@@ -1532,7 +1665,7 @@ body {
   /* POPOVER */
   .popover {
     background-color: black;
-    border: 1px solid transparent;
+    border: 1px solid hsl(20, 5%, 33%);
     border-radius: 8px;
     box-shadow:
       0px 1px 2px #000000,
@@ -1549,7 +1682,7 @@ body {
     border: unset;
     background-color: var(--background-primary);
     & .popover-inner {
-      border: 1px solid transparent;
+      border: 1px solid hsl(20, 5%, 33%);
 
       background-color: black;
 

@@ -44,11 +44,11 @@
     },
     "--shadow-color": { "light": "0deg 5% 59%", "dark": null },
     "--input-shadow": {
-      "light": "inset 0 0 0 1px #000000, 0px 0.5px 0.4px hsl(var(--shadow-color) / 0.47), 0px 0.8px 0.7px -1px hsl(var(--shadow-color) / 0.4), 0px 1.9px 1.7px -2px hsl(var(--shadow-color) / 0.32), 0px 4.5px 4px -3px hsl(var(--shadow-color) / 0.25), 0.1px 9.4px 8.4px -4.1px hsl(var(--shadow-color) / 0.18)",
+      "light": "inset 0 0 0 1px #000000, 0px 0.5px 0.4px hsl(var(--shadow-color) / 0.47),\n    0px 0.8px 0.7px -1px hsl(var(--shadow-color) / 0.4),\n    0px 1.9px 1.7px -2px hsl(var(--shadow-color) / 0.32),\n    0px 4.5px 4px -3px hsl(var(--shadow-color) / 0.25),\n    0.1px 9.4px 8.4px -4.1px hsl(var(--shadow-color) / 0.18)",
       "dark": null
     },
     "--input-shadow-hover": {
-      "light": "inset 0 0 0 1px #000000, 0px 0.5px 0.5px hsl(var(--shadow-color) / 0.47), 0px 0.9px 0.8px -1px hsl(var(--shadow-color) / 0.4), 0px 1.9px 1.7px -2px hsl(var(--shadow-color) / 0.33), 0px 4.5px 4.1px -3px hsl(var(--shadow-color) / 0.26), 0.1px 9.4px 8.5px -4px hsl(var(--shadow-color) / 0.19)",
+      "light": "inset 0 0 0 1px #000000, 0px 0.5px 0.5px hsl(var(--shadow-color) / 0.47),\n    0px 0.9px 0.8px -1px hsl(var(--shadow-color) / 0.4),\n    0px 1.9px 1.7px -2px hsl(var(--shadow-color) / 0.33),\n    0px 4.5px 4.1px -3px hsl(var(--shadow-color) / 0.26),\n    0.1px 9.4px 8.5px -4px hsl(var(--shadow-color) / 0.19)",
       "dark": null
     },
     "--background": { "light": "rgb(var(--gray-10))", "dark": null },
@@ -222,6 +222,83 @@
     "background-color": { "light": "#262626", "dark": null },
     "box-shadow": { "light": "inset 0px 0px 0px 1px #363636", "dark": null }
   },
+  ".sanctum-default-light": {
+    "--background": { "light": "rgb(var(--gray-10))", "dark": null },
+    "--background-active": {
+      "light": "rgba(var(--gray-50), 0.32)",
+      "dark": null
+    },
+    "--background-hover": {
+      "light": "rgba(var(--gray-50), 0.12)",
+      "dark": null
+    },
+    "--background-inverse": { "light": "rgb(var(--gray-80))", "dark": null },
+    "--background-inverse-hover": {
+      "light": "rgba(var(--gray-70), 0.5)",
+      "dark": null
+    },
+    "--background-selected": {
+      "light": "rgba(var(--gray-50), 0.2)",
+      "dark": null
+    },
+    "--background-selected-hover": {
+      "light": "rgba(var(--gray-50), 0.32)",
+      "dark": null
+    },
+    "--border-inverse": { "light": "rgb(var(--gray-100))", "dark": null },
+    "--border-strong-1": { "light": "rgb(var(--gray-50))", "dark": null },
+    "--border-strong-2": { "light": "rgb(var(--gray-50))", "dark": null },
+    "--border-subtle-0": { "light": "rgb(var(--gray-20))", "dark": null },
+    "--border-subtle-1": { "light": "rgb(var(--gray-20))", "dark": null },
+    "--border-subtle-2": { "light": "rgb(var(--gray-20))", "dark": null },
+    "--border-subtle-selected-1": {
+      "light": "rgb(var(--gray-30))",
+      "dark": null
+    },
+    "--border-subtle-selected-2": {
+      "light": "rgb(var(--gray-30))",
+      "dark": null
+    },
+    "--color-accent-rgb": {
+      "light": "var(--color-accent-rgb-l)",
+      "dark": null
+    },
+    "--field-1": { "light": "rgb(var(--white))", "dark": null },
+    "--field-hover-1": { "light": "rgb(var(--gray-20))", "dark": null },
+    "--focus": { "light": "var(--cyan-60)", "dark": null },
+    "--focus-inset": { "light": "rgb(var(--white))", "dark": null },
+    "--focus-inverse": { "light": "rgb(var(--white))", "dark": null },
+    "--highlight": {
+      "light": "rgba(var(--color-accent-rgb), 0.7)",
+      "dark": null
+    },
+    "--icon-inverse": { "light": "rgb(var(--white))", "dark": null },
+    "--icon-on-color": { "light": "rgb(var(--white))", "dark": null },
+    "--icon-primary": { "light": "rgb(var(--gray-100))", "dark": null },
+    "--icon-secondary": { "light": "rgb(var(--gray-70))", "dark": null },
+    "--interactive": { "light": "rgb(var(--color-accent-rgb))", "dark": null },
+    "--layer-1": { "light": "rgb(var(--white))", "dark": null },
+    "--layer-2": { "light": "rgb(var(--gray-10))", "dark": null },
+    "--layer-active-1": { "light": "rgb(var(--gray-30))", "dark": null },
+    "--layer-active-2": { "light": "rgb(var(--gray-30))", "dark": null },
+    "--layer-hover-1": { "light": "rgb(var(--gray-10))", "dark": null },
+    "--layer-hover-2": { "light": "rgba(var(--gray-20), 0.5)", "dark": null },
+    "--layer-selected-1": { "light": "rgb(var(--gray-20))", "dark": null },
+    "--layer-selected-2": { "light": "rgb(var(--gray-20))", "dark": null },
+    "--layer-selected-hover-1": {
+      "light": "rgba(var(--gray-30), 0.5)",
+      "dark": null
+    },
+    "--layer-selected-hover-2": {
+      "light": "rgba(var(--gray-30), 0.5)",
+      "dark": null
+    },
+    "--overlay": { "light": "rgba(var(--gray-100), 0.5)", "dark": null },
+    "--text-code": { "light": "var(--pink-60)", "dark": null },
+    "--text-placeholder": { "light": "rgb(var(--gray-40))", "dark": null },
+    "--text-primary": { "light": "rgb(var(--gray-100))", "dark": null },
+    "--text-secondary": { "light": "rgb(var(--gray-70))", "dark": null }
+  },
   ".sanctum-contrast-light": {
     "--background": { "light": "rgb(var(--gray-10))", "dark": null },
     "--background-active": {
@@ -389,8 +466,8 @@
   ".notice": {
     "--shadow-color": { "light": "60deg 5% 59%", "dark": "0deg 0% 1%" },
     "box-shadow": {
-      "light": "inset 0 0 0 1px #000000, 0px 0.5px 0.5px hsl(var(--shadow-color) / 0.43), 0px 1.5px 1.6px -1px hsl(var(--shadow-color) / 0.4), 0px 4px 4.2px -2px hsl(var(--shadow-color) / 0.36), 0px 10.1px 10.6px -3px hsl(var(--shadow-color) / 0.32)",
-      "dark": "inset 0 0.5px 0.5px 0.5px #ffffff, 0px 0.5px 0.5px hsl(var(--shadow-color) / 0.43), 0px 1.5px 1.6px -1px hsl(var(--shadow-color) / 0.4), 0px 4px 4.2px -2px hsl(var(--shadow-color) / 0.36), 0px 10.1px 10.6px -3px hsl(var(--shadow-color) / 0.32)"
+      "light": "inset 0 0 0 1px #000000,\n    0px 0.5px 0.5px hsl(var(--shadow-color) / 0.43),\n    0px 1.5px 1.6px -1px hsl(var(--shadow-color) / 0.4),\n    0px 4px 4.2px -2px hsl(var(--shadow-color) / 0.36),\n    0px 10.1px 10.6px -3px hsl(var(--shadow-color) / 0.32)",
+      "dark": "inset 0 0.5px 0.5px 0.5px #ffffff,\n    0px 0.5px 0.5px hsl(var(--shadow-color) / 0.43),\n    0px 1.5px 1.6px -1px hsl(var(--shadow-color) / 0.4),\n    0px 4px 4.2px -2px hsl(var(--shadow-color) / 0.36),\n    0px 10.1px 10.6px -3px hsl(var(--shadow-color) / 0.32)"
     }
   },
   ".popover": {
@@ -399,17 +476,20 @@
   "body.is-translucent": {
     "--icon-color": { "light": "var(--text-muted)", "dark": null }
   },
+  ".workspace\n  .mod-root\n  .workspace-tabs.mod-stacked\n  .workspace-tab-container\n  .workspace-tab-header": {
+    "--shadow-color": { "light": "60deg 5% 59%", "dark": "0deg 0% 1%" }
+  },
   ".tooltip": {
     "--shadow-color": { "light": "60deg 5% 59%", "dark": "0deg 0% 1%" },
     "box-shadow": {
-      "light": "inset 0 0 0 1px #000000, 0px 0.5px 0.5px hsl(var(--shadow-color) / 0.43), 0px 1.5px 1.6px -1px hsl(var(--shadow-color) / 0.4), 0px 4px 4.2px -2px hsl(var(--shadow-color) / 0.36), 0px 10.1px 10.6px -3px hsl(var(--shadow-color) / 0.32)",
-      "dark": "inset 0 0.5px 0.5px 0.5px #ffffff, 0px 0.5px 0.5px hsl(var(--shadow-color) / 0.43), 0px 1.5px 1.6px -1px hsl(var(--shadow-color) / 0.4), 0px 4px 4.2px -2px hsl(var(--shadow-color) / 0.36), 0px 10.1px 10.6px -3px hsl(var(--shadow-color) / 0.32)"
+      "light": "inset 0 0 0 1px #000000,\n    0px 0.5px 0.5px hsl(var(--shadow-color) / 0.43),\n    0px 1.5px 1.6px -1px hsl(var(--shadow-color) / 0.4),\n    0px 4px 4.2px -2px hsl(var(--shadow-color) / 0.36),\n    0px 10.1px 10.6px -3px hsl(var(--shadow-color) / 0.32)",
+      "dark": "inset 0 0.5px 0.5px 0.5px #ffffff,\n    0px 0.5px 0.5px hsl(var(--shadow-color) / 0.43),\n    0px 1.5px 1.6px -1px hsl(var(--shadow-color) / 0.4),\n    0px 4px 4.2px -2px hsl(var(--shadow-color) / 0.36),\n    0px 10.1px 10.6px -3px hsl(var(--shadow-color) / 0.32)"
     }
   },
   ".dropdown": {
     "background-image": {
-      "light": "url(\"data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='icon' opacity='0.4' x='0px' y='0px' viewBox='0 0 32 32' style='enable-background:new 0 0 32 32, ' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:none, %7D%0A%3C/style%3E%3Cpolygon points='16, 22 6, 12 7.4, 10.6 16, 19.2 24.6, 10.6 26, 12 '/%3E%3Crect id='_x3C_Transparent_Rectangle_x3E_' class='st0' width='32' height='32'/%3E%3C/svg%3E\")",
-      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='icon' fill='white' opacity='0.4' x='0px' y='0px' viewBox='0 0 32 32' style='enable-background:new 0 0 32 32, ' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:none, %7D%0A%3C/style%3E%3Cpolygon points='16, 22 6, 12 7.4, 10.6 16, 19.2 24.6, 10.6 26, 12 '/%3E%3Crect id='_x3C_Transparent_Rectangle_x3E_' class='st0' width='32' height='32'/%3E%3C/svg%3E\")"
+      "light": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='icon' opacity='0.4' x='0px' y='0px' viewBox='0 0 32 32' style='enable-background:new 0 0 32 32,' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:none,%7D%0A%3C/style%3E%3Cpolygon points='16,22 6,12 7.4,10.6 16,19.2 24.6,10.6 26,12 '/%3E%3Crect id='_x3C_Transparent_Rectangle_x3E_' class='st0' width='32' height='32'/%3E%3C/svg%3E\")",
+      "dark": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='icon' fill='white' opacity='0.4' x='0px' y='0px' viewBox='0 0 32 32' style='enable-background:new 0 0 32 32,' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:none,%7D%0A%3C/style%3E%3Cpolygon points='16,22 6,12 7.4,10.6 16,19.2 24.6,10.6 26,12 '/%3E%3Crect id='_x3C_Transparent_Rectangle_x3E_' class='st0' width='32' height='32'/%3E%3C/svg%3E\")"
     }
   },
   ".nord p > code": {
@@ -1196,6 +1276,9 @@
   ".one-dark pre:not(.frontmatter) .token.attr-value": {
     "color": { "light": "hsl(119, 34%, 47%)", "dark": "hsl(95, 38%, 62%)" }
   },
+  ".one-dark\n  pre:not(.frontmatter)\n  .token.attr-value\n  > .token.punctuation": {
+    "color": { "light": "hsl(119, 34%, 47%)", "dark": "hsl(95, 38%, 62%)" }
+  },
   ".one-dark .HyperMD-codeblock .cm-builtin": {
     "color": { "light": "hsl(119, 34%, 47%)", "dark": "hsl(95, 38%, 62%)" }
   },
@@ -1225,6 +1308,9 @@
   },
   ".one-dark .HyperMD-codeblock .token.attr-value": {
     "color": { "light": "hsl(119, 34%, 47%)", "dark": "hsl(95, 38%, 62%)" }
+  },
+  ".one-dark\n  .HyperMD-codeblock\n  .token.attr-value\n  > .token.punctuation": {
+    "color": { "light": "hsl(119, 34%, 47%)", "dark": null }
   },
   ".one-dark p > code .cm-operator": {
     "color": { "light": "hsl(221, 87%, 60%)", "dark": "hsl(207, 82%, 66%)" }
@@ -1307,6 +1393,24 @@
   ".one-dark .HyperMD-codeblock .token.url": {
     "color": { "light": "hsl(198, 99%, 37%)", "dark": "hsl(187, 47%, 55%)" }
   },
+  ".one-dark\n  p\n  > code\n  .token.attr-value\n  > .token.punctuation.attr-equals": {
+    "color": { "light": "hsl(230, 8%, 24%)", "dark": "hsl(220, 14%, 71%)" }
+  },
+  ".one-dark\n  p\n  > code\n  .token.special-attr\n  > .token.attr-value\n  > .token.value.css": {
+    "color": { "light": "hsl(230, 8%, 24%)", "dark": "hsl(220, 14%, 71%)" }
+  },
+  ".one-dark\n  pre:not(.frontmatter)\n  .token.attr-value\n  > .token.punctuation.attr-equals": {
+    "color": { "light": "hsl(230, 8%, 24%)", "dark": "hsl(220, 14%, 71%)" }
+  },
+  ".one-dark\n  pre:not(.frontmatter)\n  .token.special-attr\n  > .token.attr-value\n  > .token.value.css": {
+    "color": { "light": "hsl(230, 8%, 24%)", "dark": "hsl(220, 14%, 71%)" }
+  },
+  ".one-dark\n  .HyperMD-codeblock\n  .token.attr-value\n  > .token.punctuation.attr-equals": {
+    "color": { "light": "hsl(230, 8%, 24%)", "dark": "hsl(220, 14%, 71%)" }
+  },
+  ".one-dark\n  .HyperMD-codeblock\n  .token.special-attr\n  > .token.attr-value\n  > .token.value.css": {
+    "color": { "light": "hsl(230, 8%, 24%)", "dark": "hsl(220, 14%, 71%)" }
+  },
   ".one-dark p > code .language-css .token.selector": {
     "color": { "light": "hsl(5, 74%, 59%)", "dark": "hsl(355, 65%, 65%)" }
   },
@@ -1334,10 +1438,22 @@
   ".one-dark pre:not(.frontmatter) .language-css .token.function": {
     "color": { "light": "hsl(198, 99%, 37%)", "dark": "hsl(187, 47%, 55%)" }
   },
+  ".one-dark\n  pre:not(.frontmatter)\n  .language-css\n  .token.url\n  > .token.function": {
+    "color": { "light": "hsl(198, 99%, 37%)", "dark": "hsl(187, 47%, 55%)" }
+  },
   ".one-dark .HyperMD-codeblock .language-css .token.function": {
     "color": { "light": "hsl(198, 99%, 37%)", "dark": "hsl(187, 47%, 55%)" }
   },
+  ".one-dark\n  .HyperMD-codeblock\n  .language-css\n  .token.url\n  > .token.function": {
+    "color": { "light": "hsl(198, 99%, 37%)", "dark": "hsl(187, 47%, 55%)" }
+  },
   ".one-dark p > code .language-css .token.url > .token.string.url": {
+    "color": { "light": "hsl(119, 34%, 47%)", "dark": "hsl(95, 38%, 62%)" }
+  },
+  ".one-dark\n  pre:not(.frontmatter)\n  .language-css\n  .token.url\n  > .token.string.url": {
+    "color": { "light": "hsl(119, 34%, 47%)", "dark": "hsl(95, 38%, 62%)" }
+  },
+  ".one-dark\n  .HyperMD-codeblock\n  .language-css\n  .token.url\n  > .token.string.url": {
     "color": { "light": "hsl(119, 34%, 47%)", "dark": "hsl(95, 38%, 62%)" }
   },
   ".one-dark p > code .language-css .token.important": {
@@ -1349,14 +1465,32 @@
   ".one-dark pre:not(.frontmatter) .language-css .token.important": {
     "color": { "light": "hsl(301, 63%, 40%)", "dark": "hsl(286, 60%, 67%)" }
   },
+  ".one-dark\n  pre:not(.frontmatter)\n  .language-css\n  .token.atrule\n  .token.rule": {
+    "color": { "light": "hsl(301, 63%, 40%)", "dark": "hsl(286, 60%, 67%)" }
+  },
   ".one-dark .HyperMD-codeblock .language-css .token.important": {
+    "color": { "light": "hsl(301, 63%, 40%)", "dark": "hsl(286, 60%, 67%)" }
+  },
+  ".one-dark\n  .HyperMD-codeblock\n  .language-css\n  .token.atrule\n  .token.rule": {
     "color": { "light": "hsl(301, 63%, 40%)", "dark": "hsl(286, 60%, 67%)" }
   },
   ".one-dark p > code .language-javascript .token.operator": {
     "color": { "light": "hsl(301, 63%, 40%)", "dark": "hsl(286, 60%, 67%)" }
   },
+  ".one-dark\n  pre:not(.frontmatter)\n  .language-javascript\n  .token.operator": {
+    "color": { "light": "hsl(301, 63%, 40%)", "dark": "hsl(286, 60%, 67%)" }
+  },
   ".one-dark .HyperMD-codeblock .language-javascript .token.operator": {
     "color": { "light": "hsl(301, 63%, 40%)", "dark": "hsl(286, 60%, 67%)" }
+  },
+  ".one-dark\n  p\n  > code\n  .language-javascript\n  .token.template-string\n  > .token.interpolation\n  > .token.interpolation-punctuation.punctuation": {
+    "color": { "light": "hsl(344, 84%, 43%)", "dark": "hsl(5, 48%, 51%)" }
+  },
+  ".one-dark\n  pre:not(.frontmatter)\n  .language-javascript\n  .token.template-string\n  > .token.interpolation\n  > .token.interpolation-punctuation.punctuation": {
+    "color": { "light": "hsl(344, 84%, 43%)", "dark": "hsl(5, 48%, 51%)" }
+  },
+  ".one-dark\n  .HyperMD-codeblock\n  .language-javascript\n  .token.template-string\n  > .token.interpolation\n  > .token.interpolation-punctuation.punctuation": {
+    "color": { "light": "hsl(344, 84%, 43%)", "dark": "hsl(5, 48%, 51%)" }
   },
   ".one-dark p > code .language-json .token.operator": {
     "color": { "light": "hsl(230, 8%, 24%)", "dark": "hsl(220, 14%, 71%)" }
@@ -1382,13 +1516,34 @@
   ".one-dark p > code .language-markdown .token.url > .token.operator": {
     "color": { "light": "hsl(230, 8%, 24%)", "dark": "hsl(220, 14%, 71%)" }
   },
+  ".one-dark\n  p\n  > code\n  .language-markdown\n  .token.url-reference.url\n  > .token.string": {
+    "color": { "light": "hsl(230, 8%, 24%)", "dark": "hsl(220, 14%, 71%)" }
+  },
   ".one-dark pre:not(.frontmatter) .language-markdown .token.url": {
+    "color": { "light": "hsl(230, 8%, 24%)", "dark": "hsl(220, 14%, 71%)" }
+  },
+  ".one-dark\n  pre:not(.frontmatter)\n  .language-markdown\n  .token.url\n  > .token.operator": {
+    "color": { "light": "hsl(230, 8%, 24%)", "dark": "hsl(220, 14%, 71%)" }
+  },
+  ".one-dark\n  pre:not(.frontmatter)\n  .language-markdown\n  .token.url-reference.url\n  > .token.string": {
     "color": { "light": "hsl(230, 8%, 24%)", "dark": "hsl(220, 14%, 71%)" }
   },
   ".one-dark .HyperMD-codeblock .language-markdown .token.url": {
     "color": { "light": "hsl(230, 8%, 24%)", "dark": "hsl(220, 14%, 71%)" }
   },
+  ".one-dark\n  .HyperMD-codeblock\n  .language-markdown\n  .token.url\n  > .token.operator": {
+    "color": { "light": "hsl(230, 8%, 24%)", "dark": "hsl(220, 14%, 71%)" }
+  },
+  ".one-dark\n  .HyperMD-codeblock\n  .language-markdown\n  .token.url-reference.url\n  > .token.string": {
+    "color": { "light": "hsl(230, 8%, 24%)", "dark": "hsl(220, 14%, 71%)" }
+  },
   ".one-dark p > code .language-markdown .token.url > .token.content": {
+    "color": { "light": "hsl(221, 87%, 60%)", "dark": "hsl(207, 82%, 66%)" }
+  },
+  ".one-dark\n  pre:not(.frontmatter)\n  .language-markdown\n  .token.url\n  > .token.content": {
+    "color": { "light": "hsl(221, 87%, 60%)", "dark": "hsl(207, 82%, 66%)" }
+  },
+  ".one-dark\n  .HyperMD-codeblock\n  .language-markdown\n  .token.url\n  > .token.content": {
     "color": { "light": "hsl(221, 87%, 60%)", "dark": "hsl(207, 82%, 66%)" }
   },
   ".one-dark p > code .language-markdown .token.url > .token.url": {
@@ -1397,23 +1552,103 @@
   ".one-dark p > code .language-markdown .token.url-reference.url": {
     "color": { "light": "hsl(198, 99%, 37%)", "dark": "hsl(187, 47%, 55%)" }
   },
+  ".one-dark\n  pre:not(.frontmatter)\n  .language-markdown\n  .token.url\n  > .token.url": {
+    "color": { "light": "hsl(198, 99%, 37%)", "dark": "hsl(187, 47%, 55%)" }
+  },
+  ".one-dark\n  pre:not(.frontmatter)\n  .language-markdown\n  .token.url-reference.url": {
+    "color": { "light": "hsl(198, 99%, 37%)", "dark": "hsl(187, 47%, 55%)" }
+  },
+  ".one-dark\n  .HyperMD-codeblock\n  .language-markdown\n  .token.url\n  > .token.url": {
+    "color": { "light": "hsl(198, 99%, 37%)", "dark": "hsl(187, 47%, 55%)" }
+  },
+  ".one-dark\n  .HyperMD-codeblock\n  .language-markdown\n  .token.url-reference.url": {
+    "color": { "light": "hsl(198, 99%, 37%)", "dark": "hsl(187, 47%, 55%)" }
+  },
+  ".one-dark\n  p\n  > code\n  .language-markdown\n  .token.blockquote.punctuation": {
+    "color": { "light": "hsl(230, 4%, 64%)", "dark": null },
+    "font-style": { "light": "italic", "dark": null }
+  },
   ".one-dark p > code .language-markdown .token.hr.punctuation": {
+    "color": { "light": "hsl(230, 4%, 64%)", "dark": "hsl(220, 10%, 40%)" },
+    "font-style": "italic"
+  },
+  ".one-dark\n  pre:not(.frontmatter)\n  .language-markdown\n  .token.blockquote.punctuation": {
+    "color": { "light": "hsl(230, 4%, 64%)", "dark": "hsl(220, 10%, 40%)" },
+    "font-style": "italic"
+  },
+  ".one-dark\n  pre:not(.frontmatter)\n  .language-markdown\n  .token.hr.punctuation": {
+    "color": { "light": "hsl(230, 4%, 64%)", "dark": "hsl(220, 10%, 40%)" },
+    "font-style": "italic"
+  },
+  ".one-dark\n  .HyperMD-codeblock\n  .language-markdown\n  .token.blockquote.punctuation": {
+    "color": { "light": "hsl(230, 4%, 64%)", "dark": "hsl(220, 10%, 40%)" },
+    "font-style": "italic"
+  },
+  ".one-dark\n  .HyperMD-codeblock\n  .language-markdown\n  .token.hr.punctuation": {
     "color": { "light": "hsl(230, 4%, 64%)", "dark": "hsl(220, 10%, 40%)" },
     "font-style": "italic"
   },
   ".one-dark p > code .language-markdown .token.code-snippet": {
     "color": { "light": "hsl(119, 34%, 47%)", "dark": "hsl(95, 38%, 62%)" }
   },
+  ".one-dark\n  pre:not(.frontmatter)\n  .language-markdown\n  .token.code-snippet": {
+    "color": { "light": "hsl(119, 34%, 47%)", "dark": "hsl(95, 38%, 62%)" }
+  },
+  ".one-dark\n  .HyperMD-codeblock\n  .language-markdown\n  .token.code-snippet": {
+    "color": { "light": "hsl(119, 34%, 47%)", "dark": null }
+  },
   ".one-dark p > code .language-markdown .token.bold .token.content": {
+    "color": { "light": "hsl(35, 99%, 36%)", "dark": "hsl(29, 54%, 61%)" }
+  },
+  ".one-dark\n  pre:not(.frontmatter)\n  .language-markdown\n  .token.bold\n  .token.content": {
+    "color": { "light": "hsl(35, 99%, 36%)", "dark": "hsl(29, 54%, 61%)" }
+  },
+  ".one-dark\n  .HyperMD-codeblock\n  .language-markdown\n  .token.bold\n  .token.content": {
     "color": { "light": "hsl(35, 99%, 36%)", "dark": "hsl(29, 54%, 61%)" }
   },
   ".one-dark p > code .language-markdown .token.italic .token.content": {
     "color": { "light": "hsl(301, 63%, 40%)", "dark": "hsl(286, 60%, 67%)" }
   },
+  ".one-dark\n  pre:not(.frontmatter)\n  .language-markdown\n  .token.italic\n  .token.content": {
+    "color": { "light": "hsl(301, 63%, 40%)", "dark": "hsl(286, 60%, 67%)" }
+  },
+  ".one-dark\n  .HyperMD-codeblock\n  .language-markdown\n  .token.italic\n  .token.content": {
+    "color": { "light": "hsl(301, 63%, 40%)", "dark": "hsl(286, 60%, 67%)" }
+  },
   ".one-dark p > code .language-markdown .token.strike .token.content": {
     "color": { "light": "hsl(5, 74%, 59%)", "dark": "hsl(355, 65%, 65%)" }
   },
+  ".one-dark\n  p\n  > code\n  .language-markdown\n  .token.strike\n  .token.punctuation": {
+    "color": { "light": "hsl(5, 74%, 59%)", "dark": "hsl(355, 65%, 65%)" }
+  },
   ".one-dark p > code .language-markdown .token.list.punctuation": {
+    "color": { "light": "hsl(5, 74%, 59%)", "dark": "hsl(355, 65%, 65%)" }
+  },
+  ".one-dark\n  p\n  > code\n  .language-markdown\n  .token.title.important\n  > .token.punctuation": {
+    "color": { "light": "hsl(5, 74%, 59%)", "dark": "hsl(355, 65%, 65%)" }
+  },
+  ".one-dark\n  pre:not(.frontmatter)\n  .language-markdown\n  .token.strike\n  .token.content": {
+    "color": { "light": "hsl(5, 74%, 59%)", "dark": "hsl(355, 65%, 65%)" }
+  },
+  ".one-dark\n  pre:not(.frontmatter)\n  .language-markdown\n  .token.strike\n  .token.punctuation": {
+    "color": { "light": "hsl(5, 74%, 59%)", "dark": "hsl(355, 65%, 65%)" }
+  },
+  ".one-dark\n  pre:not(.frontmatter)\n  .language-markdown\n  .token.list.punctuation": {
+    "color": { "light": "hsl(5, 74%, 59%)", "dark": "hsl(355, 65%, 65%)" }
+  },
+  ".one-dark\n  pre:not(.frontmatter)\n  .language-markdown\n  .token.title.important\n  > .token.punctuation": {
+    "color": { "light": "hsl(5, 74%, 59%)", "dark": "hsl(355, 65%, 65%)" }
+  },
+  ".one-dark\n  .HyperMD-codeblock\n  .language-markdown\n  .token.strike\n  .token.content": {
+    "color": { "light": "hsl(5, 74%, 59%)", "dark": "hsl(355, 65%, 65%)" }
+  },
+  ".one-dark\n  .HyperMD-codeblock\n  .language-markdown\n  .token.strike\n  .token.punctuation": {
+    "color": { "light": "hsl(5, 74%, 59%)", "dark": "hsl(355, 65%, 65%)" }
+  },
+  ".one-dark\n  .HyperMD-codeblock\n  .language-markdown\n  .token.list.punctuation": {
+    "color": { "light": "hsl(5, 74%, 59%)", "dark": "hsl(355, 65%, 65%)" }
+  },
+  ".one-dark\n  .HyperMD-codeblock\n  .language-markdown\n  .token.title.important\n  > .token.punctuation": {
     "color": { "light": "hsl(5, 74%, 59%)", "dark": "hsl(355, 65%, 65%)" }
   },
   ".one-dark p > code .token.bold": { "font-weight": "bold" },
@@ -2932,6 +3167,12 @@
   ".suggestion-container": {
     "--shadow-color": { "light": "60deg 5% 59%", "dark": "0deg 0% 1%" }
   },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  input": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  textarea": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
       "light": null,
@@ -2939,7 +3180,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))\n    drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {

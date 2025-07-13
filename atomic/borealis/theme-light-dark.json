@@ -33,28 +33,90 @@
     "--color-base-70": { "light": "#5c5c5c", "dark": null },
     "--color-base-100": { "light": "#222222", "dark": null },
     "--color-accent-1": {
-      "light": "hsl( calc(var(--accent-h) - 1), calc(var(--accent-s) * 1.01), calc(var(--accent-l) * 1.075) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 1),\n    calc(var(--accent-s) * 1.01),\n    calc(var(--accent-l) * 1.075)\n  )",
       "dark": null
     },
     "--color-accent-2": {
-      "light": "hsl( calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 3),\n    calc(var(--accent-s) * 1.02),\n    calc(var(--accent-l) * 1.15)\n  )",
       "dark": null
     },
     "--background-modifier-box-shadow": { "light": "#000000", "dark": null },
     "--background-modifier-cover": { "light": "#dcdcdc", "dark": null },
     "--input-shadow": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--input-shadow-hover": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--shadow-s": {
       "light": "0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000",
       "dark": null
     },
-    "--shadow-l": { "light": "", "dark": null },
+    "--shadow-l": {
+      "light": "0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000",
+      "dark": null
+    },
+    "--color-primary": { "light": "#21b043", "dark": null },
+    "--rgb-primary": { "light": "34, 176, 67", "dark": null },
+    "--hsl-primary": { "light": "134, 68%, 41%", "dark": null },
+    "--transparent-primary": { "light": "#22b043", "dark": null },
+    "--color-secondary": { "light": "#b0218e", "dark": null },
+    "--rgb-secondary": { "light": "176, 33, 142", "dark": null },
+    "--hsl-secondary": { "light": "314, 68%, 41%", "dark": null },
+    "--transparent-secondary": { "light": "#b0218e", "dark": null },
+    "--color-accent": { "light": "var(--color-primary)", "dark": null },
+    "--color-accent-hsl": { "light": "var(--hsl-primary)", "dark": null },
+    "--accent-h": { "light": "134", "dark": null },
+    "--accent-s": { "light": "68%", "dark": null },
+    "--accent-l": { "light": "41%", "dark": null },
+    "--red": { "light": "#b02146", "dark": null },
+    "--yellow": { "light": "#8eb021", "dark": null },
+    "--background-primary": { "light": "#f6f6f6", "dark": null },
+    "--background-primary-alt": { "light": "#f0f0f0", "dark": null },
+    "--background-secondary": { "light": "#f4f2f2", "dark": null },
+    "--background-secondary-alt": { "light": "#f6f6f6", "dark": null },
+    "--background-modifier-border": { "light": "#f6f6f6", "dark": null },
+    "--background-modifier-form-field": { "light": "#f6f6f6", "dark": null },
+    "--background-table": { "light": "#f8f8f8", "dark": null },
+    "--background-table-hover": { "light": "#fafafa", "dark": null },
+    "--background-titlebar": { "light": "#f0f0f0", "dark": null },
+    "--text-accent": { "light": "var(--color-primary)", "dark": null },
+    "--text-accent-hover": { "light": "var(--color-primary)", "dark": null },
+    "--text-normal": { "light": "#141414", "dark": null },
+    "--text-normal-light": { "light": "#444444", "dark": null },
+    "--text-muted": { "light": "#444444", "dark": null },
+    "--text-muted-rgb": { "light": "#444444", "dark": null },
+    "--text-faint": { "light": "var(--color-primary)", "dark": null },
+    "--text-error": { "light": "#cf6679", "dark": null },
+    "--text-error-hover": { "light": "#ff2f00", "dark": null },
+    "--text-highlight-bg": {
+      "light": "rgba(var(--rgb-primary), 0.4)",
+      "dark": null
+    },
+    "--text-highlight-bg-active": { "light": "#ff2f00", "dark": null },
+    "--text-selection": {
+      "light": "rgba(var(--rgb-primary), 0.25)",
+      "dark": null
+    },
+    "--text-on-accent": { "light": "#f6f6f6", "dark": null },
+    "--text-on-accent-inverted": { "light": "#141414", "dark": null },
+    "--interactive-normal": { "light": "var(--color-primary)", "dark": null },
+    "--interactive-hover": { "light": "var(--color-primary)", "dark": null },
+    "--interactive-accent": { "light": "var(--color-primary)", "dark": null },
+    "--interactive-accent-rgb": {
+      "light": "var(--color-primary)",
+      "dark": null
+    },
+    "--interactive-accent-hover": {
+      "light": "var(--color-primary)",
+      "dark": null
+    },
+    "--interactive-success": { "light": "var(--color-primary)", "dark": null },
+    "--scrollbar-bg": { "light": "#5f5e5e", "dark": null },
+    "--scrollbar-thumb-bg": { "light": "#5f5e5e", "dark": null },
+    "--scrollbar-active-thumb-bg": { "light": "#5f5e5e", "dark": null },
     "--canvas-color": { "light": null, "dark": "126, 126, 126" }
   },
   ".notice progress[value]::-webkit-progress-bar": {
@@ -63,8 +125,8 @@
   },
   ".setting-item-control > .dropdown": {
     "background-image": {
-      "light": "url(\"data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='white' opacity='0.9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' %3E%3Cpath d='m7 15 5 5 5-5'/%3E%3Cpath d='m7 9 5-5 5 5'/%3E%3C/svg%3E\")",
-      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' opacity='0.9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' %3E%3Cpath d='m7 15 5 5 5-5'/%3E%3Cpath d='m7 9 5-5 5 5'/%3E%3C/svg%3E\")"
+      "light": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='white' opacity='0.9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' %3E%3Cpath d='m7 15 5 5 5-5'/%3E%3Cpath d='m7 9 5-5 5 5'/%3E%3C/svg%3E\")",
+      "dark": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' opacity='0.9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' %3E%3Cpath d='m7 15 5 5 5-5'/%3E%3Cpath d='m7 9 5-5 5 5'/%3E%3C/svg%3E\")"
     }
   },
   "div > div.pickr .pcr-button:after": {
@@ -79,8 +141,14 @@
   ".dropdown": {
     "background-image": {
       "light": null,
-      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+      "dark": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
     }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  input": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  textarea": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -89,7 +157,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))\n    drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {

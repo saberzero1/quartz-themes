@@ -278,10 +278,10 @@ body {
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;

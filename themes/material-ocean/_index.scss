@@ -264,27 +264,27 @@ body {
   --bold-weight: calc(600 + 200);
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --checkbox-marker-color: #000;
+  --checkbox-marker-color: #0f111a;
   --checkbox-color: hsl(354, 100%, 64%);
   --checkbox-color-hover: hsl(
     calc(354 - 3),
     calc(100% * 1.02),
     calc(64% * 1.15)
   );
-  --checkbox-border-color: #666666;
-  --checkbox-border-color-hover: #b3b3b3;
-  --code-background: #111;
-  --code-normal: #dadada;
-  --code-comment: #666666;
+  --checkbox-border-color: #697086;
+  --checkbox-border-color-hover: #9093a2;
+  --code-background: #0b0d13;
+  --code-normal: #b6b7be;
+  --code-comment: #697086;
   --code-function: #ffcb6b;
   --code-important: #fde3c0;
   --code-keyword: #ffc0cb;
   --code-property: #89ddff;
-  --code-punctuation: #b3b3b3;
+  --code-punctuation: #9093a2;
   --code-string: rgb(163, 190, 140);
   --code-tag: rgb(255, 71, 90);
   --code-value: #c792ea;
-  --collapse-icon-color: #666666;
+  --collapse-icon-color: #697086;
   --collapse-icon-color-collapsed: hsl(
     calc(354 - 3),
     calc(100% * 1.02),
@@ -293,14 +293,14 @@ body {
   --cursor-link: pointer;
   --font-weight: 400;
   --graph-line: var(--color-base-35, rgba(255, 71, 90, 0.6));
-  --graph-node-unresolved: #666666;
+  --graph-node-unresolved: #697086;
   --graph-node-tag: rgb(163, 190, 140);
   --h1-color: inherit;
   --h1-font: inherit;
   --h3-line-height: 1.3;
   --hr-color: transparent;
   --hr-thickness: 2px;
-  --icon-color: #b3b3b3;
+  --icon-color: #9093a2;
   --inline-title-color: hsl(calc(354 - 3), calc(100% * 1.02), calc(64% * 1.15));
   --inline-title-font: inherit;
   --italic-color: inherit;
@@ -318,11 +318,15 @@ body {
     calc(64% * 1.29)
   );
   --link-external-filter: none;
-  --nav-item-background-hover: #3f3f3f;
+  --nav-item-background-hover: hsl(
+    calc(354 - 3),
+    calc(100% * 1.02),
+    calc(64% * 1.15)
+  );
   --nav-item-children-padding-start: 4px;
   --nav-item-children-margin-start: 12px;
   --p-spacing: 1rem;
-  --search-icon-color: #b3b3b3;
+  --search-icon-color: #9093a2;
   --tag-color: hsl(calc(354 - 3), calc(100% * 1.02), calc(64% * 1.15));
   --tag-color-hover: hsl(calc(354 - 3), calc(100% * 1.02), calc(64% * 1.15));
   --tag-decoration: none;
@@ -334,16 +338,16 @@ body {
   --tag-border-width: 0px;
   --tag-radius: 2em;
   --tag-weight: inherit;
-  --background-primary: #000;
-  --background-primary-alt: #111;
-  --background-secondary: #1e1e1e;
+  --background-primary: #0f111a;
+  --background-primary-alt: #0b0d13;
+  --background-secondary: #090b10;
   --background-modifier-hover: rgba(255, 255, 255, 0.067);
-  --background-modifier-border: #363636;
-  --background-modifier-border-hover: #3f3f3f;
-  --background-modifier-border-focus: #555555;
-  --text-normal: #dadada;
-  --text-muted: #b3b3b3;
-  --text-faint: #666666;
+  --background-modifier-border: #1e2537;
+  --background-modifier-border-hover: #11131e;
+  --background-modifier-border-focus: #1e2537;
+  --text-normal: #b6b7be;
+  --text-muted: #9093a2;
+  --text-faint: #697086;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-accent: hsl(354, 100%, 64%);
   --text-accent-hover: hsl(calc(354 - 5), calc(100% * 1.05), calc(64% * 1.29));
@@ -356,10 +360,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -383,8 +387,8 @@ body {
     sans-serif;
   line-height: 1.3;
   font-size: 16px;
-  background-color: #000;
-  color: #dadada;
+  background-color: #0f111a;
+  color: #b6b7be;
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
@@ -596,7 +600,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
 
-  background-color: #000;
+  background-color: #0f111a;
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -625,13 +629,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: #000;
+      background-color: #0f111a;
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: #000;
+        background-color: #0f111a;
 
         background-color: var(--background-primary);
       }
@@ -640,7 +644,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: #000;
+          background-color: #0f111a;
 
           background-color: var(--background-secondary);
 
@@ -957,7 +961,7 @@ body {
     position: relative;
     padding: 12px 16px;
     min-height: 38px;
-    background-color: #111;
+    background-color: #0b0d13;
     border-radius: 4px;
     white-space: pre-wrap;
     border: 0px solid transparent;
@@ -1026,12 +1030,12 @@ body {
   }
 
   code {
-    color: #dadada;
+    color: #b6b7be;
     font-family:
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
       "Source Code Pro", monospace;
-    background-color: #111;
+    background-color: #0b0d13;
     border-radius: 4px;
     font-size: 1em;
     padding: 0.15em 0.3em;
@@ -1048,7 +1052,7 @@ body {
     height: auto;
     background-color: transparent;
     box-shadow: none;
-    color: #b3b3b3;
+    color: #9093a2;
     font-size: calc(16px * 0.8);
     font-family:
       "??",
@@ -1070,7 +1074,7 @@ body {
     inset-inline-end: 0;
 
     &:hover {
-      background-color: #3f3f3f;
+      background-color: hsl(calc(354 - 3), calc(100% * 1.02), calc(64% * 1.15));
     }
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -1079,14 +1083,14 @@ body {
 
   /* METADATA */
   .content-meta {
-    color: #dadada;
+    color: #b6b7be;
 
     color: var(--text-normal);
   }
 
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: #666666;
+    color: #697086;
   }
 
   /* BACKLINKS */
@@ -1106,7 +1110,7 @@ body {
     }
 
     ul li {
-      color: #dadada;
+      color: #b6b7be;
 
       font-weight: 500;
     }
@@ -1128,7 +1132,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: #000;
+        background-color: #0f111a;
 
         background-color: var(--background-secondary);
 
@@ -1167,8 +1171,12 @@ body {
           width: 100%;
         }
         &:hover {
-          background-color: #3f3f3f;
-          color: #dadada;
+          background-color: hsl(
+            calc(354 - 3),
+            calc(100% * 1.02),
+            calc(64% * 1.15)
+          );
+          color: #b6b7be;
           font-weight: inherit;
 
           font-size: 1rem;
@@ -1206,7 +1214,7 @@ body {
         a {
           padding: 6px 8px 6px 24px;
           border-radius: 4px;
-          color: #dadada;
+          color: #b6b7be;
           cursor: pointer;
           display: flex;
           font-size: 16px;
@@ -1286,7 +1294,7 @@ body {
     ul.toc-content.overflow {
       li,
       li > a {
-        color: #dadada;
+        color: #b6b7be;
 
         font-weight: inherit;
 
@@ -1378,7 +1386,7 @@ body {
       background: transparent;
       border: 1px solid transparent;
       border-radius: 5px;
-      color: #dadada;
+      color: #b6b7be;
       font-family: inherit;
       font-size: calc(16px * 0.937);
       outline: none;
@@ -1393,7 +1401,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: #000;
+        background-color: #0f111a;
 
         border: 0.5pt solid var(--color-base-40, rgba(255, 71, 90, 0.6));
 
@@ -1412,12 +1420,12 @@ body {
           width: 100%;
           padding: 24px;
           padding-inline-end: 48px;
-          background-color: #000;
+          background-color: #0f111a;
           font-size: 16px;
           border: none;
           height: 48px;
           border-radius: 0;
-          border-bottom: 1px solid #1e1e1e;
+          border-bottom: 1px solid #090b10;
 
           margin-bottom: 0;
           border-bottom: none;
@@ -1425,7 +1433,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: #dadada;
+          color: #b6b7be;
 
           background: transparent;
           margin-bottom: 0;
@@ -1468,12 +1476,16 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: #3f3f3f;
+                background-color: hsl(
+                  calc(354 - 3),
+                  calc(100% * 1.02),
+                  calc(64% * 1.15)
+                );
               }
               & > ul > li > p {
                 background-color: transparent;
 
-                color: #dadada;
+                color: #b6b7be;
 
                 &.match-tag {
                   color: hsl(
@@ -1548,7 +1560,7 @@ body {
 
   /* POPOVER */
   .popover {
-    background-color: #000;
+    background-color: #0f111a;
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow:
@@ -1568,7 +1580,7 @@ body {
     & .popover-inner {
       border: 1px solid transparent;
 
-      background-color: #000;
+      background-color: #0f111a;
 
       border-radius: 8px;
 

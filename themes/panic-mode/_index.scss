@@ -44,6 +44,15 @@ html[saved-theme="dark"] {
   --background-modifier-border: #a1a1a1;
   --background-primary: #151e2d;
   --background-primary-alt: #0e141e;
+  --background-secondary: #151e2d;
+  --checkbox-color: #151e2d;
+  --hr-color: hsl(0, 0%, 39%);
+  --text-accent: #46b4d3;
+  --text-accent-hover: #a1a1a1;
+  --text-faint: #a1a1a1;
+  --text-highlight-bg: transparent;
+  --text-muted: #a1a1a1;
+  --text-normal: #e0e2d5;
 }
 
 .darkmode {
@@ -226,10 +235,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -1078,10 +1087,10 @@ body {
           display: flex;
           font-weight: inherit;
           margin-bottom: 2px;
-          border-bottom-left-radius: 0 !important;
-          border-bottom-right-radius: 0 !important;
-          border-top-left-radius: 0 !important;
-          border-top-right-radius: 0 !important;
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
           color: #a1a1a1;
           cursor: pointer;
           font-size: 18px;
@@ -1293,7 +1302,7 @@ body {
           border: none;
           height: 48px;
           border-radius: 0;
-          border-bottom: 1px solid #1e1e1e;
+          border-bottom: 1px solid #151e2d;
 
           margin-bottom: 0;
           border-bottom: none;
@@ -1352,7 +1361,7 @@ body {
                 color: #e0e2d5;
 
                 &.match-tag {
-                  color: #e0e2d5 !important;
+                  color: #e0e2d5;
                 }
               }
             }
@@ -1430,7 +1439,7 @@ body {
     position: absolute;
     z-index: 30;
     border: 1px solid #090b0d;
-    background-color: #1e1e1e;
+    background-color: #151e2d;
 
     display: block;
     position: fixed;
@@ -1440,7 +1449,7 @@ body {
     & .popover-inner {
       border: 1px solid #090b0d;
 
-      background-color: #1e1e1e;
+      background-color: #151e2d;
 
       border-radius: 8px;
 

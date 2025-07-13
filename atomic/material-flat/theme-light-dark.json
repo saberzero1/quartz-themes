@@ -47,8 +47,8 @@
       "dark": "hsl(var(--accent-h), calc(var(--accent-s) * 0.5), 18%)"
     },
     "--on-tertiary-container": {
-      "light": "hsl( var(--accent-h), calc(var(--accent-s) * 0.2), 12% )",
-      "dark": "hsl( var(--accent-h), calc(var(--accent-s) * 0.5), 78% )"
+      "light": "hsl(\n    var(--accent-h),\n    calc(var(--accent-s) * 0.2),\n    12%\n  )",
+      "dark": "hsl(\n    var(--accent-h),\n    calc(var(--accent-s) * 0.5),\n    78%\n  )"
     },
     "--interactive-hover": {
       "light": "hsl(var(--accent-h), 15%, 85%)",
@@ -70,10 +70,7 @@
     "color": { "light": "var(--primary-light)", "dark": "var(--primary-dark)" }
   },
   "body.mod-windows.enable-mica.is-popout-window": {
-    "background": {
-      "light": "var(--surface-variant) !important",
-      "dark": "#202020 !important"
-    }
+    "background": { "light": "var(--surface-variant)", "dark": "#202020" }
   },
   "body .canvas-wrapper": {
     "--shadow-stationary": { "light": "none", "dark": null },
@@ -92,25 +89,25 @@
   },
   "body:not(.vibrant)": {
     "--color-accent": {
-      "light": "hsl( var(--accent-h), calc(var(--accent-s) * 0.8), 75% ) !important",
-      "dark": "hsl( var(--accent-h), calc(var(--accent-s) * 0.6), 70% ) !important"
+      "light": "hsl(\n    var(--accent-h),\n    calc(var(--accent-s) * 0.8),\n    75%\n  )",
+      "dark": "hsl(\n    var(--accent-h),\n    calc(var(--accent-s) * 0.6),\n    70%\n  )"
     },
-    "--color-accent-1": "hsl( var(--accent-h), calc(var(--accent-s) * 0.7), 80% ) !important",
+    "--color-accent-1": "hsl(\n    var(--accent-h),\n    calc(var(--accent-s) * 0.7),\n    80%\n  )",
     "--color-accent-2": {
-      "light": "hsl( var(--accent-h), calc(var(--accent-s) * 0.6), 85% ) !important",
-      "dark": "hsl( var(--accent-h), calc(var(--accent-s) * 0.8), 90% ) !important"
+      "light": "hsl(\n    var(--accent-h),\n    calc(var(--accent-s) * 0.6),\n    85%\n  )",
+      "dark": "hsl(\n    var(--accent-h),\n    calc(var(--accent-s) * 0.8),\n    90%\n  )"
     },
     "--primary": {
-      "light": "hsl(var(--accent-h), calc(var(--accent-s) * 0.86), 73%) !important",
-      "dark": "hsl(var(--accent-h), calc(var(--accent-s) * 0.75), 80%) !important"
+      "light": "hsl(var(--accent-h), calc(var(--accent-s) * 0.86), 73%)",
+      "dark": "hsl(var(--accent-h), calc(var(--accent-s) * 0.75), 80%)"
     },
     "--secondary": {
-      "light": "hsl( var(--accent-h), calc(var(--accent-s) * 0.6), 70% ) !important",
-      "dark": "hsl( var(--accent-h), calc(var(--accent-s) * 0.4), 70% ) !important"
+      "light": "hsl(\n    var(--accent-h),\n    calc(var(--accent-s) * 0.6),\n    70%\n  )",
+      "dark": "hsl(\n    var(--accent-h),\n    calc(var(--accent-s) * 0.4),\n    70%\n  )"
     },
     "--text-accent": {
-      "light": "hsl( var(--accent-h), calc(var(--accent-s) * 0.6), 50% ) !important",
-      "dark": "hsl( var(--accent-h), calc(var(--accent-s) * 0.4), 90% ) !important"
+      "light": "hsl(\n    var(--accent-h),\n    calc(var(--accent-s) * 0.6),\n    50%\n  )",
+      "dark": "hsl(\n    var(--accent-h),\n    calc(var(--accent-s) * 0.4),\n    90%\n  )"
     }
   },
   "body.dim-light-mode": {
@@ -121,14 +118,19 @@
     "--surface": {
       "light": "hsl(var(--accent-h), calc(var(--accent-s) * 0.1), 98%)",
       "dark": null
-    },
-    "}": { "light": "", "dark": null }
+    }
   },
   ".dropdown": {
     "background-image": {
       "light": null,
-      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+      "dark": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
     }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  input": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  textarea": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -137,7 +139,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))\n    drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {
@@ -242,8 +244,11 @@
     "background-color": { "light": null, "dark": "#ffffff" }
   },
   "body.mod-windows.win-menu div.menu": {
-    "background-color": { "light": null, "dark": "#201f21 !important" },
+    "background-color": { "light": null, "dark": "#201f21" },
     "border-color": { "light": null, "dark": "#ffffff" }
+  },
+  "body.mod-windows.win-menu\n  div.menu\n  .menu-item.selected:not(.is-disabled):not(.is-label)": {
+    "background-color": { "light": null, "dark": "#ffffff" }
   },
   "body.mod-windows.win-menu div.menu .menu-separator": {
     "border-color": { "light": null, "dark": "#ffffff" }
@@ -255,6 +260,6 @@
     "fill": { "light": null, "dark": "none" }
   },
   "body.mod-windows.win-menu.enable-mica div.menu": {
-    "background-color": { "light": null, "dark": "#272627 !important" }
+    "background-color": { "light": null, "dark": "#272627" }
   }
 }

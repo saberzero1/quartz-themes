@@ -39,17 +39,10 @@ html[saved-theme="dark"] {
   --color-base-50: #666666;
   --color-base-70: #b3b3b3;
   --color-base-100: #dadada;
-  --color-accent-hsl: var(--accent-h), 80%, var(--accent-l);
-  --color-accent-2: hsl(
-    calc(var(--accent-h) - 5),
-    calc(80% * 1.05),
-    calc(var(--accent-l) * 1.29)
-  );
-  --text-accent: hsl(
-    calc(var(--accent-h) - 3),
-    calc(80% * 1.02),
-    calc(var(--accent-l) * 1.15)
-  );
+  --color-accent-hsl: 254, 80%, 68%;
+  --color-accent-2: hsl(calc(254 - 5), calc(80% * 1.05), calc(68% * 1.29));
+  --text-accent: hsl(calc(254 - 3), calc(80% * 1.02), calc(68% * 1.15));
+  --background-primary-alt: #212121;
 }
 
 :root[saved-theme="light"],
@@ -84,12 +77,22 @@ html[saved-theme="light"] {
   --color-base-50: #ababab;
   --color-base-70: #5c5c5c;
   --color-base-100: #222222;
-  --color-accent-hsl: var(--accent-h), 80%, var(--accent-l);
-  --color-accent-2: hsl(
-    calc(var(--accent-h) - 3),
-    calc(80% * 1.02),
-    calc(var(--accent-l) * 1.15)
-  );
+  --color-accent-hsl: 254, 80%, 68%;
+  --color-accent-2: hsl(calc(254 - 3), calc(80% * 1.02), calc(68% * 1.15));
+  --code-background: #f1f1ff;
+  --code-normal: #f1f1f1;
+  --code-comment: #a3a3a3;
+  --code-function: #00a300;
+  --code-important: #ff7f00;
+  --code-keyword: #c300f1;
+  --code-property: #0048a3;
+  --code-punctuation: #c300f1;
+  --code-string: #0000f1;
+  --code-tag: #c300f1;
+  --code-value: #f18f00;
+  --text-normal: #000;
+  --text-muted: #353535;
+  --background-primary-alt: #e1e1e1;
 }
 
 /* cyrillic-ext */
@@ -218,17 +221,17 @@ body {
   --p-spacing: 1rem;
   --tag-weight: inherit;
   --background-primary-alt: #111;
-  --interactive-accent-hsl: var(--accent-h), 80%, var(--accent-l);
+  --interactive-accent-hsl: 254, 80%, 68%;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
   --font-monospace:
     "??", "??", "JetBrains Mono", Consolas, "Roboto Mono", Menlo, monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -236,18 +239,78 @@ body {
   width: 100%;
   text-rendering: optimizeLegibility;
   font-family: "JetBrains Mono", Consolas, "Roboto Mono", Menlo, monospace;
-  line-height: var(--line-height-tight);
+  line-height: 1.3;
   font-size: 16px;
-  background-color: var(--background-primary);
+  background-color: #000;
   color: #cfcfcf;
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
-  caret-color: hsl(
-    calc(var(--accent-h) - 3),
-    calc(80% * 1.02),
-    calc(var(--accent-l) * 1.15)
-  );
+  caret-color: hsl(calc(254 - 3), calc(80% * 1.02), calc(68% * 1.15));
+  --bold-weight: 700;
+  --bold-color: inherit;
+  --checkbox-radius: 4px;
+  --checkbox-size: 16px;
+  --checkbox-marker-color: #000;
+  --checkbox-color: #00bfff;
+  --checkbox-color-hover: #00cfff;
+  --checkbox-border-color: #0072d3;
+  --checkbox-border-color-hover: #00bfff;
+  --code-background: #000;
+  --code-normal: #f1f1f1;
+  --code-comment: #a3a3a3;
+  --code-function: #48f148;
+  --code-important: #ff7f00;
+  --code-keyword: #d372ff;
+  --code-property: #0088f1;
+  --code-punctuation: #d372ff;
+  --code-string: #00d8ff;
+  --code-tag: #d372ff;
+  --code-value: #ffa300;
+  --collapse-icon-color: #0072d3;
+  --collapse-icon-color-collapsed: #0072d3;
+  --cursor-link: pointer;
+  --graph-line: #007fff;
+  --graph-node-unresolved: #a3a3a3;
+  --graph-node-tag: #20f120;
+  --h1-color: #f1f100;
+  --h1-font:
+    -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto,
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --h3-line-height: 1.3;
+  --hr-color: hsla(254, 80%, 68%, 1);
+  --hr-thickness: 2px;
+  --icon-color: hsla(254, 80%, 68%, 0.7);
+  --italic-color: inherit;
+  --link-color: #d372ff;
+  --link-color-hover: #db8fff;
+  --link-external-color: #00a9dd;
+  --link-external-color-hover: #00c3ff;
+  --link-external-filter: none;
+  --nav-item-background-hover: hsla(254, 80%, 68%, 0.2);
+  --search-icon-color: #007fff;
+  --tag-color: hsl(calc(254 - 3), calc(80% * 1.02), calc(68% * 1.15));
+  --tag-color-hover: hsl(calc(254 - 5), calc(80% * 1.05), calc(68% * 1.29));
+  --tag-decoration: none;
+  --tag-decoration-hover: none;
+  --tag-background: hsla(254, 80%, 68%, 0.1);
+  --tag-background-hover: hsla(254, 80%, 68%, 0.2);
+  --tag-border-color: #0072d33f;
+  --tag-border-color-hover: #00bfff;
+  --tag-border-width: 1px;
+  --background-primary: #000;
+  --background-secondary: #000;
+  --background-modifier-hover: #007fff28;
+  --background-modifier-border: #007fff38;
+  --background-modifier-border-hover: #007fff48;
+  --background-modifier-border-focus: hsla(254, 80%, 68%, 1);
+  --text-normal: #dadada;
+  --text-muted: #b3b3b3;
+  --text-faint: #666666;
+  --text-highlight-bg: #ffff0088;
+  --text-accent: hsl(254, 80%, 68%);
+  --text-accent-hover: hsl(calc(254 - 5), calc(80% * 1.05), calc(68% * 1.29));
+  --tag-radius: calc(1 * 1em);
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -293,7 +356,7 @@ html {
     border-style: solid;
     border-color: rgba(201, 0, 255, 0.25);
     border-width: 0px;
-    border-radius: var(--radius-s);
+    border-radius: 4px;
     margin: 1em 0;
     mix-blend-mode: normal;
     background-color: rgba(201, 0, 255, 0.1);
@@ -424,14 +487,14 @@ html {
     gap: 4px;
     font-size: inherit;
     color: rgb(201, 0, 255);
-    line-height: var(--line-height-tight);
+    line-height: 1.3;
     align-items: flex-start;
 
     /*background: var(--bg);*/
 
     & > .callout-title-inner > p {
       --font-weight: calc(var(--font-weight) + 200);
-      font-weight: var(--h6-weight);
+      font-weight: 800;
       color: inherit;
 
       /*color: var(--color);*/
@@ -439,7 +502,7 @@ html {
 
     .callout-title-inner {
       --font-weight: calc(var(--font-weight) + 200);
-      font-weight: var(--h6-weight);
+      font-weight: 800;
       color: inherit;
     }
   }
@@ -456,7 +519,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
 
-  background-color: var(--background-primary);
+  background-color: #000;
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -485,13 +548,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: var(--background-primary);
+      background-color: #000;
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: var(--background-primary);
+        background-color: #000;
 
         background-color: var(--background-primary);
       }
@@ -500,7 +563,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: var(--background-primary);
+          background-color: #000;
 
           background-color: var(--background-secondary);
 
@@ -693,7 +756,7 @@ body {
     font-size: 2em;
     font-style: normal;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 800;
     letter-spacing: -0.015em;
     line-height: 1.2;
 
@@ -713,7 +776,7 @@ body {
     font-size: 1.5em;
     font-style: normal;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 800;
     letter-spacing: -0.015em;
     line-height: 1.2;
 
@@ -731,7 +794,7 @@ body {
     font-size: 1.17em;
     font-style: normal;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 800;
     letter-spacing: -0.015em;
     line-height: 1.3;
 
@@ -749,7 +812,7 @@ body {
     font-size: 1em;
     font-style: normal;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 800;
     letter-spacing: 0.015em;
     line-height: 1.4;
 
@@ -767,9 +830,9 @@ body {
     font-size: 0.83em;
     font-style: normal;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 800;
     letter-spacing: 0.015em;
-    line-height: var(--line-height-normal);
+    line-height: 1.5;
 
     font-size: 1.2rem;
   }
@@ -779,20 +842,20 @@ body {
   h6 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: var(--h6-weight);
+    --font-weight: 800;
     color: #f1f100;
     font-family: "JetBrains Mono", Consolas, "Roboto Mono", Menlo, monospace;
     font-size: 0.67em;
     font-style: normal;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 800;
     letter-spacing: 0.015em;
-    line-height: var(--line-height-normal);
+    line-height: 1.5;
 
     font-size: 1.1rem;
   }
   h6 a {
-    --link-weight: var(--h6-weight);
+    --link-weight: 800;
   }
   h1,
   h1 a,
@@ -818,9 +881,9 @@ body {
     padding: 12px 16px;
     min-height: 38px;
     background-color: #181818;
-    border-radius: var(--radius-s);
+    border-radius: 4px;
     white-space: pre-wrap;
-    border: 0px solid hsla(var(--accent-h), 80%, var(--accent-l), 0.2);
+    border: 0px solid #282828;
     overflow-x: auto;
 
     background-color: var(--code-background);
@@ -890,10 +953,10 @@ body {
     font-family:
       "??", "??", "JetBrains Mono", Consolas, "Roboto Mono", Menlo, monospace;
     background-color: #181818;
-    border-radius: var(--radius-s);
+    border-radius: 4px;
     font-size: 1em;
     padding: 0.15em 0.3em;
-    border: 0px solid hsla(var(--accent-h), 80%, var(--accent-l), 0.2);
+    border: 0px solid #282828;
     -webkit-box-decoration-break: clone;
 
     background-color: var(--code-background);
@@ -914,7 +977,7 @@ body {
     inset-inline-end: 0;
 
     &:hover {
-      background-color: hsla(var(--accent-h), 80%, var(--accent-l), 0.2);
+      background-color: hsla(254, 80%, 68%, 0.2);
     }
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -944,7 +1007,7 @@ body {
       font-size: 1.17em;
       font-style: normal;
       font-variant: normal;
-      font-weight: var(--h6-weight);
+      font-weight: 800;
       letter-spacing: -0.015em;
       line-height: 1.3;
     }
@@ -972,7 +1035,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: var(--background-primary);
+        background-color: #000;
 
         background-color: var(--background-secondary);
 
@@ -983,7 +1046,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: hsla(var(--accent-h), 80%, var(--accent-l), 0.7);
+        color: hsla(254, 80%, 68%, 0.7);
 
         text-overflow: ellipsis;
         position: relative;
@@ -1011,7 +1074,7 @@ body {
           width: 100%;
         }
         &:hover {
-          background-color: hsla(var(--accent-h), 80%, var(--accent-l), 0.2);
+          background-color: hsla(254, 80%, 68%, 0.2);
           color: #cfcfcf;
           font-weight: inherit;
 
@@ -1049,14 +1112,14 @@ body {
 
         a {
           padding: 6px 8px 6px 24px;
-          border-radius: var(--radius-s);
-          color: #cfcfcf !important;
+          border-radius: 4px;
+          color: #cfcfcf;
           cursor: pointer;
           display: flex;
           font-size: 16px;
           font-weight: inherit;
-          line-height: var(--line-height-tight);
-          margin-bottom: var(--size-2-1);
+          line-height: 1.3;
+          margin-bottom: 2px;
 
           color: inherit;
           font-size: 1rem;
@@ -1117,7 +1180,7 @@ body {
         font-size: 1.17em;
         font-style: normal;
         font-variant: normal;
-        font-weight: var(--h6-weight);
+        font-weight: 800;
         letter-spacing: -0.015em;
         line-height: 1.3;
 
@@ -1131,7 +1194,7 @@ body {
     ul.toc-content.overflow {
       li,
       li > a {
-        color: #cfcfcf !important;
+        color: #cfcfcf;
 
         font-weight: inherit;
 
@@ -1155,7 +1218,7 @@ body {
       font-size: 1.17em;
       font-style: normal;
       font-variant: normal;
-      font-weight: var(--h6-weight);
+      font-weight: 800;
       letter-spacing: -0.015em;
       line-height: 1.3;
 
@@ -1220,8 +1283,8 @@ body {
       color: var(--button-secondary-fg-color);
 
       -webkit-app-region: no-drag;
-      background: hsla(var(--accent-h), 80%, var(--accent-l), 0.2);
-      border: 1px solid hsla(var(--accent-h), 80%, var(--accent-l), 0.2);
+      background: #282828;
+      border: 1px solid #282828;
       border-radius: 5px;
       font-family: inherit;
       font-size: calc(16px * 0.937);
@@ -1239,19 +1302,19 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: var(--background-primary);
+        background-color: #000;
 
         border: 0;
 
         border-radius: 12px;
 
         box-shadow:
-          0 0 0 calc(1 * 1px) hsla(var(--accent-h), 80%, var(--accent-l), 0.2),
-          0 0 0 calc(1 * 1px) hsla(var(--accent-h), 80%, var(--accent-l), 0.2),
-          0 0 0 calc(1 * 1px) hsla(var(--accent-h), 80%, var(--accent-l), 0.2),
+          0 0 0 calc(1 * 1px) hsla(254, 80%, 68%, 0.2),
+          0 0 0 calc(1 * 1px) hsla(254, 80%, 68%, 0.2),
+          0 0 0 calc(1 * 1px) hsla(254, 80%, 68%, 0.2),
           0px 1.8px 7.3px #000000,
           0px 6.3px 24.7px #000000,
-          0px 30px 90px #000000 !important;
+          0px 30px 90px #000000;
 
         color: var(--text-normal);
         background-color: var(--background-secondary);
@@ -1261,12 +1324,12 @@ body {
           width: 100%;
           padding: 24px;
           padding-inline-end: 48px;
-          background-color: var(--background-primary);
+          background-color: #000;
           font-size: 16px;
           border: none;
           height: 48px;
           border-radius: 0;
-          border-bottom: 1px solid var(--background-secondary);
+          border-bottom: 1px solid #000;
 
           margin-bottom: 0;
           border-bottom: none;
@@ -1318,12 +1381,7 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: hsla(
-                  var(--accent-h),
-                  80%,
-                  var(--accent-l),
-                  0.2
-                );
+                background-color: hsla(254, 80%, 68%, 0.2);
               }
               & > ul > li > p {
                 background-color: transparent;
@@ -1331,11 +1389,7 @@ body {
                 color: #cfcfcf;
 
                 &.match-tag {
-                  color: hsl(
-                    calc(var(--accent-h) - 3),
-                    calc(80% * 1.02),
-                    calc(var(--accent-l) * 1.15)
-                  );
+                  color: hsl(calc(254 - 3), calc(80% * 1.02), calc(68% * 1.15));
                 }
               }
             }
@@ -1403,8 +1457,8 @@ body {
 
   /* POPOVER */
   .popover {
-    background-color: var(--background-primary);
-    border: 1px solid hsla(var(--accent-h), 80%, var(--accent-l), 0.2);
+    background-color: #000;
+    border: 1px solid #282828;
     border-radius: 8px;
     box-shadow:
       0px 1px 2px #000000,
@@ -1421,9 +1475,9 @@ body {
     border: unset;
     background-color: var(--background-primary);
     & .popover-inner {
-      border: 1px solid hsla(var(--accent-h), 80%, var(--accent-l), 0.2);
+      border: 1px solid #282828;
 
-      background-color: var(--background-primary);
+      background-color: #000;
 
       border-radius: 8px;
 

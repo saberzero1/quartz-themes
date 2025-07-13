@@ -41,11 +41,11 @@
       "dark": null
     },
     "--color-accent-1": {
-      "light": "hsl( calc(var(--accent-h) - 1), calc(var(--accent-s) * 1.01), calc(var(--accent-l) * 1.075) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 1),\n    calc(var(--accent-s) * 1.01),\n    calc(var(--accent-l) * 1.075)\n  )",
       "dark": null
     },
     "--color-accent-2": {
-      "light": "hsl( calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 3),\n    calc(var(--accent-s) * 1.02),\n    calc(var(--accent-l) * 1.15)\n  )",
       "dark": null
     },
     "--background-secondary-alt": {
@@ -55,11 +55,11 @@
     "--background-modifier-box-shadow": { "light": "#000000", "dark": null },
     "--background-modifier-cover": { "light": "#dcdcdc", "dark": null },
     "--input-shadow": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--input-shadow-hover": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--shadow-s": {
@@ -403,6 +403,24 @@
     "--theme-color": "hsl(245, 75%, 63%)",
     "--text-title-h6": { "light": "#989ba1", "dark": "hsl(222, 10%, 75%)" }
   },
+  "body.secondary-theme-green-blue": {
+    "--quote-color": "#3d9ad8",
+    "--tag-color": "#58a6ff",
+    "--tag-color-hover": "#449bff",
+    "--text-accent": "#51b385",
+    "--text-accent-hover": "hsl(152, 69%, 61%)",
+    "--text-accent1": "#61d29d",
+    "--text-accent2": "#00ddff"
+  },
+  "body.secondary-theme-Nord": {
+    "--quote-color": "#5e81ac",
+    "--tag-color": "#88c0d0",
+    "--tag-color-hover": "#88c0d0",
+    "--text-accent": "#81a1c1",
+    "--text-accent-hover": "#81a1c1",
+    "--text-accent1": "#81a1c1",
+    "--text-accent2": "#88c0d0"
+  },
   "body.code-theme-jetbrains": {
     "--code-function": { "light": "#000000", "dark": "#bcbec4" },
     "--code-punctuation": "var(--text-muted)",
@@ -450,7 +468,25 @@
     "--code-def": "#82aaff",
     "--code-definition": "#82aaff",
     "--code-error-bg": "#ff5370",
-    "--code-header": "#da7dae"
+    "--code-header": "#da7dae",
+    "--code-hr": "#98e342",
+    "--code-keyword": "#c792ea",
+    "--code-link": "#696d70",
+    "--code-matching-bracket": "#ffffff",
+    "--code-meta": "#ffcb6b",
+    "--code-normal": "#d4d4d4",
+    "--code-number": "#ff5370",
+    "--code-operator": "#89ddff",
+    "--code-property": "#c792ea",
+    "--code-qualifier": "#decb6b",
+    "--code-string": "#c3e88d",
+    "--code-string-2": "#f07178",
+    "--code-tag": "#ff5370",
+    "--code-tag-in-comment": "#ff5370",
+    "--code-type": "#decb6b",
+    "--code-variable": "#f07178",
+    "--code-variable-2": "#eeffff",
+    "--code-variable-3": "#f07178"
   },
   "body.code-theme-BlueTopaz-solarized": {
     "--background-code": "#fdf6e3e1",
@@ -466,7 +502,25 @@
     "--code-definition": "#82aaff",
     "--code-error-bg": "#ff5370",
     "--code-function": "#82aaff",
-    "--code-header": "#586e75"
+    "--code-header": "#586e75",
+    "--code-hr": "#98e342",
+    "--code-keyword": "#cb4b16",
+    "--code-link": "#93a1a1",
+    "--code-matching-bracket": "#859900",
+    "--code-meta": "#859900",
+    "--code-normal": "#657b83",
+    "--code-number": "#d33682",
+    "--code-operator": "#6c71c4",
+    "--code-property": "#2aa198",
+    "--code-qualifier": "#b58900",
+    "--code-string": "#859900",
+    "--code-string-2": "#b58900",
+    "--code-tag": "#93a1a1",
+    "--code-tag-in-comment": "#ff5370",
+    "--code-type": "#6c71c4",
+    "--code-variable": "#839496",
+    "--code-variable-2": "#b58900",
+    "--code-variable-3": "#6c71c4"
   },
   "body.code-theme-BlueTopaz-Gruvbox-dark": {
     "--background-code": "#1d2021c6",
@@ -535,17 +589,23 @@
   },
   "span.cm-strong": {
     "color": { "light": "#000", "dark": "#fff" },
-    "font-weight": { "light": "600 !important", "dark": "800 !important" }
+    "font-weight": { "light": "600", "dark": "800" }
   },
   "strong": {
-    "font-weight": { "light": "600 !important", "dark": null },
+    "font-weight": { "light": "600", "dark": null },
     "color": { "light": "#000", "dark": null }
   },
   ".dropdown": {
     "background-image": {
       "light": null,
-      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+      "dark": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
     }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  input": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  textarea": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -554,7 +614,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))\n    drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {

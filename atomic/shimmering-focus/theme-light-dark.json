@@ -179,7 +179,7 @@
   ".cm-s-obsidian .cm-templater-command.cm-templater-execution-tag": {
     "color": { "light": "#97a800", "dark": null }
   },
-  ":is(.vertical-tab-header": {
+  ":is(.vertical-tab-header, .vertical-tab-nav-item)": {
     "background-color": { "light": "var(--bg2)", "dark": "var(--bg1)" }
   },
   ".modal-bg": {
@@ -188,17 +188,14 @@
       "dark": "hsl(var(--bg-hue-dark) 10% 5%)"
     }
   },
-  ":not(.show-sidebar-header-buttons": {
-    "": {
-      "light": "is(.mod-left-split, .mod-right-split) .workspace-tabs:not(.mod-top) .workspace-tab-header-container:not(:hover) { background-color:var(--bg2)",
-      "dark": null
-    }
+  ":not(.show-sidebar-header-buttons)\n  :is(.mod-left-split, .mod-right-split)\n  .workspace-tabs:not(.mod-top)\n  .workspace-tab-header-container:not(:hover)": {
+    "background-color": { "light": "var(--bg2)", "dark": null }
   },
-  ".active-line-backgroun": {
-    ".cm-active.cm-line": {
-      "light": "not(.HyperMD-quote):not(.HyperMD-codeblock) { background-color:var(--bg3)",
-      "dark": "not(.HyperMD-quote):not(.HyperMD-codeblock) { background-color:var(--bg4)"
-    }
+  ".active-line-background\n  .cm-active.cm-line:not(.HyperMD-quote):not(.HyperMD-codeblock)": {
+    "background-color": { "light": "var(--bg3)", "dark": "var(--bg4)" }
+  },
+  ".link-favicon:is([data-host^=\"github\\.com\"], [data-host^=\"raw\\.github\"])": {
+    "filter": { "light": "invert(0.2)", "dark": null }
   },
   ".kanban-plugin__lane-header-wrapper": {
     "background-color": { "light": "var(--bg6)", "dark": null },
@@ -214,8 +211,14 @@
   ".dropdown": {
     "background-image": {
       "light": null,
-      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+      "dark": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
     }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  input": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  textarea": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -224,7 +227,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))\n    drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {
@@ -325,7 +328,13 @@
   ".is-tablet .suggestion-container": {
     "background-color": { "light": null, "dark": "var(--background-secondary)" }
   },
-  ".colorscheme-grubox :is(.nav-file-title": {
+  ".colorscheme-grubox :is(.nav-file-title, .nav-folder-title)": {
     "color": { "light": null, "dark": "var(--color-base-85)" }
+  },
+  ".vertical-tab-header-group:nth-last-child(3)\n  .vertical-tab-header-group-items\n  .vertical-tab-nav-item:is(:nth-child(4), :nth-child(5), :last-child)": {
+    "text-shadow": {
+      "light": null,
+      "dark": "var(--readability-text-shadow-dark)"
+    }
   }
 }

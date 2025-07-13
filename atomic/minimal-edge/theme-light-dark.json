@@ -41,11 +41,11 @@
       "dark": null
     },
     "--color-accent-1": {
-      "light": "hsl( calc(var(--accent-h) - 1), calc(var(--accent-s) * 1.01), calc(var(--accent-l) * 1.075) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 1),\n    calc(var(--accent-s) * 1.01),\n    calc(var(--accent-l) * 1.075)\n  )",
       "dark": null
     },
     "--color-accent-2": {
-      "light": "hsl( calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 3),\n    calc(var(--accent-s) * 1.02),\n    calc(var(--accent-l) * 1.15)\n  )",
       "dark": null
     },
     "--background-secondary-alt": {
@@ -53,11 +53,11 @@
       "dark": null
     },
     "--input-shadow": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--input-shadow-hover": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--shadow-s": {
@@ -113,7 +113,7 @@
     "--interactive-hover": { "light": "#dbdbdc", "dark": null },
     "--interactive-accent-rgb": { "light": "21, 146, 255", "dark": null },
     "--interactive-accent-hover": {
-      "light": "hsl( var(--accent-h), calc(var(--accent-s) - 10%), calc(var(--accent-l) - 4%) )",
+      "light": "hsl(\n    var(--accent-h),\n    calc(var(--accent-s) - 10%),\n    calc(var(--accent-l) - 4%)\n  )",
       "dark": null
     },
     "--scrollbar-active-thumb-bg": { "light": "#000000", "dark": null },
@@ -157,15 +157,8 @@
     "--text-accent": { "light": null, "dark": "#a0662fdf" },
     "--interactive-normal": { "light": null, "dark": "#291f18" }
   },
-  "body.vintage-them": {
-    ".workspace-ribbon .sidebar-toggle-button .clickable-icon { color": {
-      "light": "#534e3d",
-      "dark": null
-    },
-    ".canvas-card-menu .canvas-card-menu-button": {
-      "light": null,
-      "dark": "nth-child(3) { color:#ffad60"
-    }
+  "body.vintage-theme\n  .workspace-ribbon\n  .sidebar-toggle-button\n  .clickable-icon": {
+    "color": { "light": "#534e3d", "dark": "#f2e5bf" }
   },
   "body.vintage-theme .clickable-icon:nth-child(4n + 1)": {
     "color": { "light": "#ec9b4e", "dark": "#ffad60" }
@@ -365,8 +358,14 @@
   ".dropdown": {
     "background-image": {
       "light": null,
-      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+      "dark": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
     }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  input": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  textarea": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -375,7 +374,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))\n    drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {
@@ -475,5 +474,14 @@
   },
   ".is-tablet .suggestion-container": {
     "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  "body.vintage-theme\n  .canvas-card-menu\n  .canvas-card-menu-button:nth-child(1)": {
+    "color": { "light": null, "dark": "#f2e5bf" }
+  },
+  "body.vintage-theme\n  .canvas-card-menu\n  .canvas-card-menu-button:nth-child(2)": {
+    "color": { "light": null, "dark": "#fd8b51" }
+  },
+  "body.vintage-theme\n  .canvas-card-menu\n  .canvas-card-menu-button:nth-child(3)": {
+    "color": { "light": null, "dark": "#ffad60" }
   }
 }

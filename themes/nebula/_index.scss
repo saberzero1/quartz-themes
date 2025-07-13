@@ -46,6 +46,9 @@ html[saved-theme="dark"] {
   --background-primary: #07053500;
   --background-primary-alt: #06094059;
   --background-secondary: #07053500;
+  --text-normal: #ffffffdd;
+  --text-muted: #efd1d1;
+  --text-highlight-bg: #c9e7aba3;
 }
 
 .darkmode {
@@ -172,7 +175,7 @@ body {
   --checkbox-border-color: #666666;
   --checkbox-border-color-hover: #efd1d1;
   --code-background: #06094059;
-  --code-normal: #dadada;
+  --code-normal: #ffffffdd;
   --code-comment: #666666;
   --code-function: #e0de71;
   --code-important: #e9973f;
@@ -250,10 +253,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -267,6 +270,8 @@ body {
   user-select: none;
   -webkit-user-select: none;
   caret-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  color: #ffffffdd;
+  font-family: "Myuppy", "Montserrat", "Roboto", "Segoe Print", sans-serif;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -904,7 +909,7 @@ body {
   }
 
   code {
-    color: #dadada;
+    color: #ffffffdd;
     font-family:
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -957,7 +962,7 @@ body {
 
   /* METADATA */
   .content-meta {
-    color: #dadada;
+    color: #ffffffdd;
 
     color: var(--text-normal);
   }
@@ -984,7 +989,7 @@ body {
     }
 
     ul li {
-      color: #dadada;
+      color: #ffffffdd;
 
       font-weight: 500;
     }
@@ -1046,7 +1051,7 @@ body {
         }
         &:hover {
           background-color: rgba(255, 255, 255, 0.15);
-          color: #dadada;
+          color: #ffffffdd;
           font-weight: inherit;
 
           font-size: 1rem;
@@ -1084,7 +1089,7 @@ body {
         a {
           padding: 6px 8px 6px 24px;
           border-radius: 4px;
-          color: #dadada;
+          color: #ffffffdd;
           cursor: pointer;
           display: flex;
           font-size: 16px;
@@ -1256,7 +1261,7 @@ body {
       background: transparent;
       border: 1px solid transparent;
       border-radius: 5px;
-      color: #dadada;
+      color: #ffffffdd;
       font-family: inherit;
       font-size: calc(16px * 0.937);
       outline: none;
@@ -1303,6 +1308,8 @@ body {
           font-size: 1.1rem;
         }
         & > * {
+          color: #ffffffdd;
+
           background: transparent;
           margin-bottom: 0;
           box-shadow: none;
@@ -1348,6 +1355,8 @@ body {
               }
               & > ul > li > p {
                 background-color: transparent;
+
+                color: #ffffffdd;
 
                 &.match-tag {
                   color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
@@ -1426,7 +1435,7 @@ body {
     max-height: 95vh;
     position: absolute;
     z-index: 30;
-    background-color: #150b55d6 !important;
+    background-color: #150b55d6;
     border: 1px solid #5050c0;
     border-radius: 20px;
 
@@ -1438,7 +1447,7 @@ body {
     & .popover-inner {
       border: 1px solid #5050c0;
 
-      background-color: #150b55d6 !important;
+      background-color: #150b55d6;
 
       border-radius: 20px;
 

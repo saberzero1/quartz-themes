@@ -41,6 +41,28 @@ html[saved-theme="dark"] {
   --color-base-100: #dadada;
   --color-accent-hsl: 258, 88%, 66%;
   --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --background-primary: #1a1b26;
+  --background-secondary: #171722;
+  --link-color: #c23ba8;
+  --link-color-hover: #cc5fb6;
+  --link-external-color: #c23ba8;
+  --link-external-color-hover: #cc5fb6;
+  --text-accent: #c23ba8;
+  --text-accent-hover: #cc5fb6;
+  --text-muted: #999999;
+  --text-faint: #999999;
+  --text-normal: #ffffff;
+  --bold-color: #ff4fdc;
+  --bold-weight: 700;
+  --italic-color: #f93fff;
+  --h1-color: #c23ba8;
+  --inline-title-color: #c23ba8;
+  --code-background: #000000;
+  --code-normal: #ffffff;
+  --code-comment: #ffffff;
+  --graph-node-tag: #5dc1d2;
+  --graph-node-unresolved: #9e8aff;
+  --graph-line: #a54aa8;
 }
 
 .darkmode {
@@ -261,40 +283,36 @@ body {
   --bold-weight: calc(600 + 200);
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --checkbox-marker-color: #000;
+  --checkbox-marker-color: #1a1b26;
   --checkbox-color: #c23ba8;
-  --checkbox-color-hover: hsl(
-    calc(258 - 5),
-    calc(88% * 1.05),
-    calc(66% * 1.29)
-  );
-  --checkbox-border-color: #666666;
-  --checkbox-border-color-hover: #b3b3b3;
+  --checkbox-color-hover: #cc5fb6;
+  --checkbox-border-color: #999999;
+  --checkbox-border-color-hover: #999999;
   --code-background: #111;
-  --code-normal: #dadada;
-  --code-comment: #666666;
+  --code-normal: #ffffff;
+  --code-comment: #999999;
   --code-function: #e0de71;
   --code-important: #e9973f;
   --code-keyword: #fa99cd;
   --code-property: #53dfdd;
-  --code-punctuation: #b3b3b3;
+  --code-punctuation: #999999;
   --code-string: #44cf6e;
   --code-tag: #fb464c;
   --code-value: #a882ff;
-  --collapse-icon-color: #666666;
+  --collapse-icon-color: #999999;
   --collapse-icon-color-collapsed: #c23ba8;
   --cursor-link: pointer;
   --font-weight: 400;
   --graph-line: var(--color-base-35, rgba(251, 70, 76, 0.6));
-  --graph-node-unresolved: #666666;
+  --graph-node-unresolved: #999999;
   --graph-node-tag: #44cf6e;
   --h1-color: inherit;
   --h1-font: inherit;
   --h3-line-height: 1.3;
   --hr-color: transparent;
   --hr-thickness: 2px;
-  --icon-color: #b3b3b3;
-  --inline-title-color: inherit;
+  --icon-color: #999999;
+  --inline-title-color: #c23ba8;
   --inline-title-font: inherit;
   --italic-color: inherit;
   --link-color: #c23ba8;
@@ -307,7 +325,7 @@ body {
   --nav-item-children-padding-start: 4px;
   --nav-item-children-margin-start: 12px;
   --p-spacing: 1rem;
-  --search-icon-color: #b3b3b3;
+  --search-icon-color: #999999;
   --tag-color: #c23ba8;
   --tag-color-hover: #c23ba8;
   --tag-decoration: none;
@@ -341,10 +359,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -368,8 +386,8 @@ body {
     sans-serif;
   line-height: 1.3;
   font-size: 16px;
-  background-color: #000;
-  color: #dadada;
+  background-color: #1a1b26;
+  color: #ffffff;
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
@@ -581,7 +599,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
 
-  background-color: #000;
+  background-color: #1a1b26;
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -610,13 +628,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: #000;
+      background-color: #1a1b26;
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: #000;
+        background-color: #1a1b26;
 
         background-color: var(--background-primary);
       }
@@ -625,7 +643,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: #000;
+          background-color: #1a1b26;
 
           background-color: var(--background-secondary);
 
@@ -813,7 +831,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 700;
-    color: inherit;
+    color: #c23ba8;
     font-family: inherit;
     font-size: 1.802em;
     font-style: normal;
@@ -905,7 +923,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: inherit;
+    color: #e5c8de;
     font-family: inherit;
     font-size: 1em;
     font-style: normal;
@@ -942,7 +960,7 @@ body {
     position: relative;
     padding: 12px 16px;
     min-height: 38px;
-    background-color: #111;
+    background-color: #000000;
     border-radius: 4px;
     white-space: pre-wrap;
     border: 0px solid transparent;
@@ -1016,7 +1034,7 @@ body {
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
       "Source Code Pro", monospace;
-    background-color: #111;
+    background-color: #000000;
     border-radius: 4px;
     font-size: 1em;
     padding: 0.15em 0.3em;
@@ -1033,7 +1051,7 @@ body {
     height: auto;
     background-color: transparent;
     box-shadow: none;
-    color: #b3b3b3;
+    color: #999999;
     font-size: calc(16px * 0.8);
     font-family:
       "??",
@@ -1064,14 +1082,14 @@ body {
 
   /* METADATA */
   .content-meta {
-    color: #dadada;
+    color: #ffffff;
 
     color: var(--text-normal);
   }
 
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: #666666;
+    color: #999999;
   }
 
   /* BACKLINKS */
@@ -1091,7 +1109,7 @@ body {
     }
 
     ul li {
-      color: #dadada;
+      color: #ffffff;
 
       font-weight: 500;
     }
@@ -1113,7 +1131,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: #000;
+        background-color: #1a1b26;
 
         background-color: var(--background-secondary);
 
@@ -1153,7 +1171,7 @@ body {
         }
         &:hover {
           background-color: rgba(255, 255, 255, 0.15);
-          color: #dadada;
+          color: #ffffff;
           font-weight: inherit;
 
           font-size: 1rem;
@@ -1191,7 +1209,7 @@ body {
         a {
           padding: 6px 8px 6px 24px;
           border-radius: 4px;
-          color: #dadada;
+          color: #ffffff;
           cursor: pointer;
           display: flex;
           font-size: 16px;
@@ -1271,7 +1289,7 @@ body {
     ul.toc-content.overflow {
       li,
       li > a {
-        color: #dadada;
+        color: #ffffff;
 
         font-weight: inherit;
 
@@ -1363,7 +1381,7 @@ body {
       background: transparent;
       border: 1px solid transparent;
       border-radius: 5px;
-      color: #dadada;
+      color: #ffffff;
       font-family: inherit;
       font-size: calc(16px * 0.937);
       outline: none;
@@ -1378,7 +1396,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: #000;
+        background-color: #1a1b26;
 
         border: 0.5pt solid var(--color-base-40, rgba(251, 70, 76, 0.6));
 
@@ -1397,7 +1415,7 @@ body {
           width: 100%;
           padding: 24px;
           padding-inline-end: 48px;
-          background-color: #000;
+          background-color: #1a1b26;
           font-size: 16px;
           border: none;
           height: 48px;
@@ -1410,7 +1428,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: #dadada;
+          color: #ffffff;
 
           background: transparent;
           margin-bottom: 0;
@@ -1458,7 +1476,7 @@ body {
               & > ul > li > p {
                 background-color: transparent;
 
-                color: #dadada;
+                color: #ffffff;
 
                 &.match-tag {
                   color: #c23ba8;
@@ -1529,7 +1547,7 @@ body {
 
   /* POPOVER */
   .popover {
-    background-color: #000;
+    background-color: #1a1b26;
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow:
@@ -1549,7 +1567,7 @@ body {
     & .popover-inner {
       border: 1px solid transparent;
 
-      background-color: #000;
+      background-color: #1a1b26;
 
       border-radius: 8px;
 

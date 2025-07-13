@@ -20,7 +20,7 @@ html[saved-theme="dark"] {
     color: var(--shiki-dark);
   }
 
-  --text-accent: hsl(var(--accent-h), 100%, calc(var(--accent-l) - 3.8%));
+  --text-accent: hsl(223, 100%, calc(62% - 3.8%));
   color-scheme: dark;
   --mono-rgb-100: 255, 255, 255;
   --color-red: #fa5252;
@@ -40,8 +40,16 @@ html[saved-theme="dark"] {
   --color-base-50: #dee2e6;
   --color-base-70: #f8f9fa;
   --color-base-100: #fefefe;
-  --color-accent-hsl: var(--accent-h), 100%, var(--accent-l);
-  --color-accent-2: hsl(var(--accent-h), 100%, calc(var(--accent-l) + 3.8%));
+  --color-accent-hsl: 223, 100%, 62%;
+  --color-accent-2: hsl(223, 100%, calc(62% + 3.8%));
+  --background-primary: #111;
+  --background-primary-alt: #646b73;
+  --background-secondary: #1e1e1e;
+  --background-modifier-hover: #ffffff;
+  --background-modifier-border: #ffffff;
+  --background-modifier-border-hover: #979fa7;
+  --background-modifier-border-focus: #495057;
+  --text-highlight-bg: #ffffff;
 }
 
 :root[saved-theme="light"],
@@ -66,6 +74,26 @@ html[saved-theme="light"] {
   --color-cyan: #28adca;
   --color-blue: #3d73ff;
   --color-purple: #7950f2;
+  --color-pink: #f558ad;
+  --color-base-00: #ffffff;
+  --color-base-10: #f8f9fa;
+  --color-base-20: #f1f3f5;
+  --color-base-30: #adb5bd;
+  --color-base-35: #868e96;
+  --color-base-40: #495057;
+  --color-base-50: #343a40;
+  --color-base-70: #15171a;
+  --color-base-100: #0e0e0f;
+  --color-accent-hsl: 223, 100%, 62%;
+  --color-accent-2: hsl(223, 100%, calc(62% + 5%));
+  --background-primary: #262521;
+  --background-primary-alt: #5f5d54;
+  --background-secondary: #4c4a43;
+  --background-modifier-hover: #ffffff;
+  --background-modifier-border: #4c4a43;
+  --background-modifier-border-hover: #979fa7;
+  --background-modifier-border-focus: #727064;
+  --text-highlight-bg: #5f5d54;
 }
 
 @font-face {
@@ -232,6 +260,8 @@ html[saved-theme="light"] {
   --h1-color: var(--text-normal);
 
   --nav-item-background-hover: var(--background-modifier-hover);
+  --default-font: "Inter", sans-serif;
+  --font-monospace: "Source Code Pro", monospace;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -301,10 +331,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -326,14 +356,71 @@ body {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  line-height: var(--line-height-tight);
+  line-height: 1.3;
   font-size: 16px;
-  background-color: #000;
-  color: var(--text-normal);
+  background-color: #111;
+  color: #f1f3f5;
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
-  caret-color: hsl(var(--accent-h), 100%, calc(var(--accent-l) - 3.8%));
+  caret-color: hsl(223, 100%, calc(62% - 3.8%));
+  --bold-weight: 600;
+  --bold-color: inherit;
+  --checkbox-radius: 6px;
+  --checkbox-size: calc(16px * 1.1);
+  --checkbox-marker-color: #111;
+  --checkbox-color: hsl(223, 100%, 62%);
+  --checkbox-color-hover: hsl(223, 100%, calc(62% - 3.8%));
+  --checkbox-border-color: #adb5bd;
+  --checkbox-border-color-hover: #dee2e6;
+  --code-background: #ffffff;
+  --code-normal: #dee2e6;
+  --code-comment: #646b73;
+  --code-function: #ffe452;
+  --code-important: #ff9a67;
+  --code-keyword: #6a94fc;
+  --code-property: #59e8d4;
+  --code-punctuation: #dee2e6;
+  --code-string: #69db7c;
+  --code-tag: #fa5252;
+  --code-value: #d0bfff;
+  --collapse-icon-color: #adb5bd;
+  --collapse-icon-color-collapsed: hsl(223, 100%, calc(62% - 3.8%));
+  --cursor-link: pointer;
+  --graph-line: var(--color-base-35, rgba(250, 82, 82, 0.6));
+  --graph-node-unresolved: #adb5bd;
+  --graph-node-tag: #69db7c;
+  --h1-color: inherit;
+  --h3-line-height: 1.3;
+  --hr-color: transparent;
+  --hr-thickness: 1px;
+  --icon-color: #dee2e6;
+  --inline-title-color: inherit;
+  --inline-title-font: inherit;
+  --italic-color: inherit;
+  --link-color: hsl(223, 100%, calc(62% - 3.8%));
+  --link-color-hover: hsl(223, 100%, calc(62% + 3.8%));
+  --link-external-color: hsl(223, 100%, calc(62% - 3.8%));
+  --link-external-color-hover: hsl(223, 100%, calc(62% + 3.8%));
+  --link-external-filter: none;
+  --nav-item-background-hover: rgba(255, 255, 255, 0.15);
+  --search-icon-color: #dee2e6;
+  --tag-color: hsl(223, 100%, calc(62% - 3.8%));
+  --tag-color-hover: hsl(223, 100%, calc(62% - 3.8%));
+  --tag-decoration: none;
+  --tag-decoration-hover: none;
+  --tag-background: hsla(223, 100%, 62%, 0.1);
+  --tag-background-hover: hsla(223, 100%, 62%, 0.2);
+  --tag-border-color: hsla(223, 100%, 62%, 0.15);
+  --tag-border-color-hover: hsla(223, 100%, 62%, 0.15);
+  --tag-border-width: 0px;
+  --tag-radius: 6px;
+  --text-normal: #f1f3f5;
+  --text-muted: #dee2e6;
+  --text-faint: #adb5bd;
+  --text-accent: hsl(223, 100%, 62%);
+  --text-accent-hover: hsl(223, 100%, calc(62% + 3.8%));
+  --interactive-accent-hsl: 223, 100%, 62%;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -377,15 +464,15 @@ html {
   .callout {
     overflow: hidden;
     border-style: solid;
-    border-color: rgba(var(--callout-quote), 0.2);
-    border-width: var(--callout-border-width);
+    border-color: rgba(158, 158, 158, 0.2);
+    border-width: 0px;
     border-radius: 6px;
     margin: 1em 0;
     mix-blend-mode: normal;
-    background-color: rgba(var(--callout-quote), 0.1);
+    background-color: rgba(158, 158, 158, 0.1);
     padding: 12px 24px 12px 12px;
 
-    background-color: rgba(var(--callout-quote), 0.1);
+    background-color: rgba(158, 158, 158, 0.1);
 
     /*background-color: var(--bg);*/
     border-color: var(--border);
@@ -394,111 +481,111 @@ html {
     overflow-y: hidden;
 
     &[data-callout] {
-      background-color: rgba(var(--callout-quote), 0.1);
+      background-color: rgba(158, 158, 158, 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="abstract"] {
-      background-color: rgba(var(--callout-quote), 0.1);
+      background-color: rgba(158, 158, 158, 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="summary"] {
-      background-color: rgba(var(--callout-quote), 0.1);
+      background-color: rgba(158, 158, 158, 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="tldr"] {
-      background-color: rgba(var(--callout-quote), 0.1);
+      background-color: rgba(158, 158, 158, 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="info"] {
-      background-color: rgba(var(--callout-quote), 0.1);
+      background-color: rgba(158, 158, 158, 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="todo"] {
-      background-color: rgba(var(--callout-quote), 0.1);
+      background-color: rgba(158, 158, 158, 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="important"] {
-      background-color: rgba(var(--callout-quote), 0.1);
+      background-color: rgba(158, 158, 158, 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="tip"] {
-      background-color: rgba(var(--callout-quote), 0.1);
+      background-color: rgba(158, 158, 158, 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="hint"] {
-      background-color: rgba(var(--callout-quote), 0.1);
+      background-color: rgba(158, 158, 158, 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="success"] {
-      background-color: rgba(var(--callout-quote), 0.1);
+      background-color: rgba(158, 158, 158, 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="check"] {
-      background-color: rgba(var(--callout-quote), 0.1);
+      background-color: rgba(158, 158, 158, 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="done"] {
-      background-color: rgba(var(--callout-quote), 0.1);
+      background-color: rgba(158, 158, 158, 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="question"] {
-      background-color: rgba(var(--callout-quote), 0.1);
+      background-color: rgba(158, 158, 158, 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="help"] {
-      background-color: rgba(var(--callout-quote), 0.1);
+      background-color: rgba(158, 158, 158, 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="faq"] {
-      background-color: rgba(var(--callout-quote), 0.1);
+      background-color: rgba(158, 158, 158, 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="warning"] {
-      background-color: rgba(var(--callout-quote), 0.1);
+      background-color: rgba(158, 158, 158, 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="caution"] {
-      background-color: rgba(var(--callout-quote), 0.1);
+      background-color: rgba(158, 158, 158, 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="attention"] {
-      background-color: rgba(var(--callout-quote), 0.1);
+      background-color: rgba(158, 158, 158, 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="failure"] {
-      background-color: rgba(var(--callout-quote), 0.1);
+      background-color: rgba(158, 158, 158, 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="fail"] {
-      background-color: rgba(var(--callout-quote), 0.1);
+      background-color: rgba(158, 158, 158, 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="missing"] {
-      background-color: rgba(var(--callout-quote), 0.1);
+      background-color: rgba(158, 158, 158, 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="danger"] {
-      background-color: rgba(var(--callout-quote), 0.1);
+      background-color: rgba(158, 158, 158, 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="error"] {
-      background-color: rgba(var(--callout-quote), 0.1);
+      background-color: rgba(158, 158, 158, 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="bug"] {
-      background-color: rgba(var(--callout-quote), 0.1);
+      background-color: rgba(158, 158, 158, 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="example"] {
-      background-color: rgba(var(--callout-quote), 0.1);
+      background-color: rgba(158, 158, 158, 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="quote"] {
-      background-color: rgba(var(--callout-quote), 0.1);
+      background-color: rgba(158, 158, 158, 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="cite"] {
-      background-color: rgba(var(--callout-quote), 0.1);
+      background-color: rgba(158, 158, 158, 0.1);
       /*background: var(--bg);*/
     }
   }
@@ -506,8 +593,8 @@ html {
   .callout-title {
     display: flex;
     font-size: 16px;
-    color: rgb(var(--callout-quote));
-    line-height: var(--line-height-tight);
+    color: rgb(158, 158, 158);
+    line-height: 1.3;
     align-items: flex-start;
     gap: 0px;
     padding: 12px 0 12px 0;
@@ -543,7 +630,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
 
-  background-color: #000;
+  background-color: #111;
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -572,13 +659,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: #000;
+      background-color: #111;
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: #000;
+        background-color: #111;
 
         background-color: var(--background-primary);
       }
@@ -587,7 +674,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: #000;
+          background-color: #111;
 
           background-color: var(--background-secondary);
 
@@ -780,7 +867,7 @@ body {
     font-size: 1.375rem;
     font-style: normal;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 600;
     letter-spacing: -0.015em;
     line-height: 1.2;
 
@@ -800,7 +887,7 @@ body {
     font-size: 1.25rem;
     font-style: normal;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 600;
     letter-spacing: -0.015em;
     line-height: 1.2;
 
@@ -818,7 +905,7 @@ body {
     font-size: 1.125rem;
     font-style: normal;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 600;
     letter-spacing: -0.015em;
     line-height: 1.3;
 
@@ -836,7 +923,7 @@ body {
     font-size: 1rem;
     font-style: normal;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 600;
     letter-spacing: 0.015em;
     line-height: 1.4;
 
@@ -854,7 +941,7 @@ body {
     font-size: 0.875rem;
     font-style: small-caps;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 600;
     letter-spacing: 0.015em;
     line-height: 1.5;
 
@@ -866,20 +953,20 @@ body {
   h6 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: var(--h6-weight);
+    --font-weight: 600;
     color: inherit;
     font-family: inherit;
     font-size: 0.813rem;
     font-style: small-caps;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 600;
     letter-spacing: 0.015em;
     line-height: 1.5;
 
     font-size: 1.1rem;
   }
   h6 a {
-    --link-weight: var(--h6-weight);
+    --link-weight: 600;
   }
   h1,
   h1 a,
@@ -905,8 +992,8 @@ body {
     padding: 12px 16px;
     min-height: 38px;
     background-color: #ffffff;
-    border-radius: var(--radius-s);
-    white-space: var(--code-white-space);
+    border-radius: 2px;
+    white-space: pre-wrap;
     border: 0px solid transparent;
     overflow-x: auto;
 
@@ -979,7 +1066,7 @@ body {
     font-size: 1em;
     border: 0px solid transparent;
     -webkit-box-decoration-break: clone;
-    padding: var(--size-2-1) 4px var(--size-2-1) 4px;
+    padding: 2px 4px 2px 4px;
     border-radius: 6px;
 
     background-color: var(--code-background);
@@ -1023,7 +1110,7 @@ body {
 
   /* METADATA */
   .content-meta {
-    color: var(--text-normal);
+    color: #f1f3f5;
 
     color: var(--text-normal);
   }
@@ -1044,13 +1131,13 @@ body {
       font-size: 1.125rem;
       font-style: normal;
       font-variant: normal;
-      font-weight: var(--h6-weight);
+      font-weight: 600;
       letter-spacing: -0.015em;
       line-height: 1.3;
     }
 
     ul li {
-      color: var(--text-normal);
+      color: #f1f3f5;
 
       font-weight: 500;
     }
@@ -1072,7 +1159,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: #000;
+        background-color: #111;
 
         background-color: var(--background-secondary);
 
@@ -1083,7 +1170,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: hsl(var(--accent-h), 100%, var(--accent-l));
+        color: hsl(223, 100%, 62%);
 
         text-overflow: ellipsis;
         position: relative;
@@ -1112,8 +1199,8 @@ body {
         }
         &:hover {
           background-color: rgba(255, 255, 255, 0.15);
-          color: var(--text-normal);
-          font-weight: var(--bold-weight);
+          color: #f1f3f5;
+          font-weight: 600;
 
           font-size: 1rem;
           line-height: 1.5rem;
@@ -1135,8 +1222,7 @@ body {
         padding-inline-start: var(--nav-item-children-padding-start, 8px);
         margin-inline-start: var(--nav-item-children-margin-start, 12px);
         margin-bottom: 1px;
-        border-inline-start: var(--indentation-guide-width) solid
-          rgba(255, 255, 255, 0.1);
+        border-inline-start: 1px solid rgba(255, 255, 255, 0.1);
       }
       ul.explorer-ul li {
         text-overflow: ellipsis;
@@ -1144,13 +1230,13 @@ body {
 
         a {
           padding: 6px 8px 6px 24px;
-          color: var(--text-normal);
+          color: #f1f3f5;
           cursor: pointer;
           display: flex;
           font-size: 16px;
           font-weight: inherit;
-          line-height: var(--line-height-tight);
-          margin-bottom: var(--size-2-1);
+          line-height: 1.3;
+          margin-bottom: 2px;
           border-radius: 6px;
 
           color: inherit;
@@ -1211,7 +1297,7 @@ body {
         font-size: 1.125rem;
         font-style: normal;
         font-variant: normal;
-        font-weight: var(--h6-weight);
+        font-weight: 600;
         letter-spacing: -0.015em;
         line-height: 1.3;
 
@@ -1225,7 +1311,7 @@ body {
     ul.toc-content.overflow {
       li,
       li > a {
-        color: var(--text-normal);
+        color: #f1f3f5;
 
         font-weight: inherit;
 
@@ -1249,7 +1335,7 @@ body {
       font-size: 1.125rem;
       font-style: normal;
       font-variant: normal;
-      font-weight: var(--h6-weight);
+      font-weight: 600;
       letter-spacing: -0.015em;
       line-height: 1.3;
 
@@ -1317,7 +1403,7 @@ body {
       background: transparent;
       border: 1px solid transparent;
       border-radius: 6px;
-      color: var(--text-normal);
+      color: #f1f3f5;
       font-family: inherit;
       font-size: calc(16px * 0.937);
       outline: none;
@@ -1332,7 +1418,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: #000;
+        background-color: #111;
 
         border: 0.5pt solid var(--color-base-40, rgba(250, 82, 82, 0.6));
 
@@ -1351,7 +1437,7 @@ body {
           width: 100%;
           padding: 24px;
           padding-inline-end: 48px;
-          background-color: #000;
+          background-color: #111;
           font-size: 16px;
           border: none;
           height: 48px;
@@ -1364,7 +1450,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: var(--text-normal);
+          color: #f1f3f5;
 
           background: transparent;
           margin-bottom: 0;
@@ -1412,14 +1498,10 @@ body {
               & > ul > li > p {
                 background-color: transparent;
 
-                color: var(--text-normal);
+                color: #f1f3f5;
 
                 &.match-tag {
-                  color: hsl(
-                    var(--accent-h),
-                    100%,
-                    calc(var(--accent-l) - 3.8%)
-                  );
+                  color: hsl(223, 100%, calc(62% - 3.8%));
                 }
               }
             }
@@ -1487,7 +1569,7 @@ body {
 
   /* POPOVER */
   .popover {
-    background-color: #000;
+    background-color: #111;
     border: 1px solid transparent;
     border-radius: 6px;
     box-shadow:
@@ -1507,7 +1589,7 @@ body {
     & .popover-inner {
       border: 1px solid transparent;
 
-      background-color: #000;
+      background-color: #111;
 
       border-radius: 6px;
 

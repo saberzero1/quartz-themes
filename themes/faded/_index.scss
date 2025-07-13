@@ -39,8 +39,36 @@ html[saved-theme="dark"] {
   --color-base-50: #666;
   --color-base-70: #bababa;
   --color-base-100: #dadada;
-  --color-accent-hsl: var(--accent-h), 80%, var(--accent-l);
+  --color-accent-hsl: 254, 80%, 68%;
   --color-accent-2: #ffdd93;
+  --background-primary: #1a1e24;
+  --background-primary-alt: #14171b;
+  --background-secondary: #14171b;
+  --text-highlight-bg: #ffd000;
+  --interactive-accent-hsl: 254, 80%, 68%;
+  --link-color: #dcddde;
+  --link-color-hover: #ffffff;
+  --link-external-color: #d6ba7c;
+  --link-external-color-hover: #ffdd93;
+  --link-external-filter: none;
+  --tag-color: #ad3939;
+  --tag-color-hover: #ffffff;
+  --tag-background: #14171b;
+  --tag-background-hover: #14171b;
+  --tag-border-color: hsla(254, 80%, 68%, 0.15);
+  --tag-border-color-hover: hsla(254, 80%, 68%, 0.15);
+  --h1-color: inherit;
+  --h1-font: inherit;
+  --h3-line-height: 1.3;
+  --checkbox-radius: 4px;
+  --checkbox-size: 15px;
+  --checkbox-marker-color: #d6ba7c;
+  --checkbox-color: #d6ba7c;
+  --checkbox-border-color: #666;
+  --checkbox-border-color-hover: #bababa;
+  --text-normal: #dadada;
+  --text-muted: #bababa;
+  --text-faint: #666;
 }
 
 .darkmode {
@@ -272,24 +300,90 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
-  height: 100%;
   margin: 0;
   overscroll-behavior: none;
   padding: 0;
   width: 100%;
   text-rendering: optimizeLegibility;
-  line-height: var(--line-height-tight);
+  line-height: 1.3;
   font-size: 16px;
-  background-color: var(--background-primary);
-  color: var(--text-normal);
+  background-color: #1a1e24;
+  color: #dadada;
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
   caret-color: #d6ba7c;
+  font-family: "";
+  --bold-weight: 600;
+  --bold-color: inherit;
+  --checkbox-radius: 4px;
+  --checkbox-size: 15px;
+  --checkbox-marker-color: #ffffff;
+  --checkbox-color: #d6ba7c;
+  --checkbox-color-hover: #ffffff;
+  --checkbox-border-color: #666;
+  --checkbox-border-color-hover: #bababa;
+  --code-background: #14171b;
+  --code-normal: #d6ba7c;
+  --code-comment: #666;
+  --code-function: #e0de71;
+  --code-important: #e9973f;
+  --code-keyword: #fa99cd;
+  --code-property: #53dfdd;
+  --code-punctuation: #bababa;
+  --code-string: #44cf6e;
+  --code-tag: #fb464c;
+  --code-value: #a882ff;
+  --collapse-icon-color: #dadada;
+  --collapse-icon-color-collapsed: #ffffff;
+  --cursor-link: pointer;
+  --graph-line: var(--color-base-35, rgba(251, 70, 76, 0.6));
+  --graph-node-unresolved: #666;
+  --graph-node-tag: #44cf6e;
+  --h1-color: inherit;
+  --h1-font: inherit;
+  --h3-line-height: 1.3;
+  --hr-color: #d6ba7c;
+  --hr-thickness: 2px;
+  --icon-color: #bababa;
+  --inline-title-color: inherit;
+  --inline-title-font: inherit;
+  --italic-color: inherit;
+  --link-color: #d6ba7c;
+  --link-color-hover: #ffdd93;
+  --link-external-color: #d6ba7c;
+  --link-external-color-hover: #ffdd93;
+  --link-external-filter: none;
+  --nav-item-background-hover: rgba(255, 255, 255, 0.15);
+  --search-icon-color: #bababa;
+  --tag-color: #d6ba7c;
+  --tag-color-hover: #d6ba7c;
+  --tag-decoration: none;
+  --tag-decoration-hover: none;
+  --tag-background: hsla(254, 80%, 68%, 0.1);
+  --tag-background-hover: hsla(254, 80%, 68%, 0.2);
+  --tag-border-color: hsla(254, 80%, 68%, 0.15);
+  --tag-border-color-hover: hsla(254, 80%, 68%, 0.15);
+  --tag-border-width: 0px;
+  --tag-radius: 4px;
+  --background-primary: #000;
+  --background-primary-alt: #111;
+  --background-secondary: #1e1e1e;
+  --background-modifier-hover: rgba(255, 255, 255, 0.075);
+  --background-modifier-border: #363636;
+  --background-modifier-border-hover: #3f3f3f;
+  --background-modifier-border-focus: #555;
+  --text-normal: #dadada;
+  --text-muted: #bababa;
+  --text-faint: #666;
+  --text-accent: #d6ba7c;
+  --text-accent-hover: #ffdd93;
+  --interactive-accent-hsl: 254, 80%, 68%;
+  contain: initial;
+  height: auto;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -334,15 +428,15 @@ html {
     overflow: hidden;
     border-style: solid;
     border-color: rgba(#d6ba7c, 0.25);
-    border-width: var(--callout-border-width);
-    border-radius: var(--radius-s);
+    border-width: 0px;
+    border-radius: 4px;
     margin: 1em 0;
     mix-blend-mode: normal;
     padding: 12px 24px 12px 12px;
     border: 1px solid black;
-    background-color: var(--custom-callout-background-color);
+    background-color: #171a1f;
 
-    background-color: var(--custom-callout-background-color);
+    background-color: #171a1f;
 
     /*background-color: var(--bg);*/
     border-color: var(--border);
@@ -351,111 +445,111 @@ html {
     overflow-y: hidden;
 
     &[data-callout] {
-      background-color: var(--custom-callout-background-color);
+      background-color: #171a1f;
       /*background: var(--bg);*/
     }
     &[data-callout="abstract"] {
-      background-color: var(--custom-callout-background-color);
+      background-color: #171a1f;
       /*background: var(--bg);*/
     }
     &[data-callout="summary"] {
-      background-color: var(--custom-callout-background-color);
+      background-color: #171a1f;
       /*background: var(--bg);*/
     }
     &[data-callout="tldr"] {
-      background-color: var(--custom-callout-background-color);
+      background-color: #171a1f;
       /*background: var(--bg);*/
     }
     &[data-callout="info"] {
-      background-color: var(--custom-callout-background-color);
+      background-color: #171a1f;
       /*background: var(--bg);*/
     }
     &[data-callout="todo"] {
-      background-color: var(--custom-callout-background-color);
+      background-color: #171a1f;
       /*background: var(--bg);*/
     }
     &[data-callout="important"] {
-      background-color: var(--custom-callout-background-color);
+      background-color: #171a1f;
       /*background: var(--bg);*/
     }
     &[data-callout="tip"] {
-      background-color: var(--custom-callout-background-color);
+      background-color: #171a1f;
       /*background: var(--bg);*/
     }
     &[data-callout="hint"] {
-      background-color: var(--custom-callout-background-color);
+      background-color: #171a1f;
       /*background: var(--bg);*/
     }
     &[data-callout="success"] {
-      background-color: var(--custom-callout-background-color);
+      background-color: #171a1f;
       /*background: var(--bg);*/
     }
     &[data-callout="check"] {
-      background-color: var(--custom-callout-background-color);
+      background-color: #171a1f;
       /*background: var(--bg);*/
     }
     &[data-callout="done"] {
-      background-color: var(--custom-callout-background-color);
+      background-color: #171a1f;
       /*background: var(--bg);*/
     }
     &[data-callout="question"] {
-      background-color: var(--custom-callout-background-color);
+      background-color: #171a1f;
       /*background: var(--bg);*/
     }
     &[data-callout="help"] {
-      background-color: var(--custom-callout-background-color);
+      background-color: #171a1f;
       /*background: var(--bg);*/
     }
     &[data-callout="faq"] {
-      background-color: var(--custom-callout-background-color);
+      background-color: #171a1f;
       /*background: var(--bg);*/
     }
     &[data-callout="warning"] {
-      background-color: var(--custom-callout-background-color);
+      background-color: #171a1f;
       /*background: var(--bg);*/
     }
     &[data-callout="caution"] {
-      background-color: var(--custom-callout-background-color);
+      background-color: #171a1f;
       /*background: var(--bg);*/
     }
     &[data-callout="attention"] {
-      background-color: var(--custom-callout-background-color);
+      background-color: #171a1f;
       /*background: var(--bg);*/
     }
     &[data-callout="failure"] {
-      background-color: var(--custom-callout-background-color);
+      background-color: #171a1f;
       /*background: var(--bg);*/
     }
     &[data-callout="fail"] {
-      background-color: var(--custom-callout-background-color);
+      background-color: #171a1f;
       /*background: var(--bg);*/
     }
     &[data-callout="missing"] {
-      background-color: var(--custom-callout-background-color);
+      background-color: #171a1f;
       /*background: var(--bg);*/
     }
     &[data-callout="danger"] {
-      background-color: var(--custom-callout-background-color);
+      background-color: #171a1f;
       /*background: var(--bg);*/
     }
     &[data-callout="error"] {
-      background-color: var(--custom-callout-background-color);
+      background-color: #171a1f;
       /*background: var(--bg);*/
     }
     &[data-callout="bug"] {
-      background-color: var(--custom-callout-background-color);
+      background-color: #171a1f;
       /*background: var(--bg);*/
     }
     &[data-callout="example"] {
-      background-color: var(--custom-callout-background-color);
+      background-color: #171a1f;
       /*background: var(--bg);*/
     }
     &[data-callout="quote"] {
-      background-color: var(--custom-callout-background-color);
+      background-color: #171a1f;
       /*background: var(--bg);*/
     }
     &[data-callout="cite"] {
-      background-color: var(--custom-callout-background-color);
+      background-color: #171a1f;
       /*background: var(--bg);*/
     }
   }
@@ -465,16 +559,16 @@ html {
     display: flex;
     gap: 4px;
     font-size: inherit;
-    line-height: var(--line-height-tight);
+    line-height: 1.3;
     align-items: flex-start;
-    color: var(--text-normal);
+    color: #dadada;
     filter: drop-shadow(2px 2px 2px black);
 
     /*background: var(--bg);*/
 
     & > .callout-title-inner > p {
       --font-weight: calc(var(--font-weight) + 200);
-      font-weight: var(--h6-weight);
+      font-weight: 700;
       color: inherit;
 
       /*color: var(--color);*/
@@ -482,14 +576,14 @@ html {
 
     .callout-title-inner {
       --font-weight: calc(var(--font-weight) + 200);
-      font-weight: var(--h6-weight);
+      font-weight: 700;
       color: inherit;
     }
   }
 
   & > .callout-content {
     overflow-x: auto;
-    padding: var(--callout-content-padding);
+    padding: 0;
     background-color: transparent;
   }
 }
@@ -499,7 +593,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
 
-  background-color: var(--background-primary);
+  background-color: #1a1e24;
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -528,13 +622,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: var(--background-primary);
+      background-color: #1a1e24;
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: var(--background-primary);
+        background-color: #1a1e24;
 
         background-color: var(--background-primary);
       }
@@ -543,7 +637,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: var(--background-primary);
+          background-color: #1a1e24;
 
           background-color: var(--background-secondary);
 
@@ -730,112 +824,112 @@ body {
   h1 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: var(--h1-weight);
+    --font-weight: 700;
     color: inherit;
     font-family: inherit;
     font-size: 2em;
     font-style: normal;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 700;
     letter-spacing: -0.015em;
     line-height: 1.2;
 
     font-size: 2rem;
   }
   h1 a {
-    --link-weight: var(--h1-weight);
+    --link-weight: 700;
   }
   h2.page-title,
   h2.page-title a,
   h2 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: var(--h2-weight);
+    --font-weight: 700;
     color: inherit;
     font-family: inherit;
     font-size: 1.6em;
     font-style: normal;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 700;
     letter-spacing: -0.015em;
     line-height: 1.2;
 
     font-size: 1.75rem;
   }
   h2 a {
-    --link-weight: var(--h2-weight);
+    --link-weight: 700;
   }
   h3 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: var(--h3-weight);
+    --font-weight: 700;
     color: inherit;
     font-family: inherit;
     font-size: 1.37em;
     font-style: normal;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 700;
     letter-spacing: -0.015em;
     line-height: 1.3;
 
     font-size: 1.6rem;
   }
   h3 a {
-    --link-weight: var(--h3-weight);
+    --link-weight: 700;
   }
   h4 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: var(--h4-weight);
+    --font-weight: 700;
     color: inherit;
     font-family: inherit;
     font-size: 1.25em;
     font-style: normal;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 700;
     letter-spacing: 0.015em;
     line-height: 1.4;
 
     font-size: 1.4rem;
   }
   h4 a {
-    --link-weight: var(--h4-weight);
+    --link-weight: 700;
   }
   h5 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: var(--h5-weight);
+    --font-weight: 700;
     color: inherit;
     font-family: inherit;
     font-size: 1.12em;
     font-style: normal;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 700;
     letter-spacing: 0.015em;
-    line-height: var(--line-height-normal);
+    line-height: 1.5;
 
     font-size: 1.2rem;
   }
   h5 a {
-    --link-weight: var(--h5-weight);
+    --link-weight: 700;
   }
   h6 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: var(--h6-weight);
+    --font-weight: 700;
     color: inherit;
     font-family: inherit;
     font-size: 1.12em;
     font-style: normal;
-    font-variant: var(--h6-variant);
-    font-weight: var(--h6-weight);
+    font-variant: normal;
+    font-weight: 700;
     letter-spacing: 0.015em;
-    line-height: var(--line-height-normal);
+    line-height: 1.5;
 
     font-size: 1.1rem;
   }
   h6 a {
-    --link-weight: var(--h6-weight);
+    --link-weight: 700;
   }
   h1,
   h1 a,
@@ -860,8 +954,8 @@ body {
     position: relative;
     padding: 12px 16px;
     min-height: 38px;
-    background-color: var(--code-background);
-    border-radius: var(--radius-s);
+    background-color: #14171b;
+    border-radius: 4px;
     white-space: pre-wrap;
     border: 0px solid transparent;
     overflow-x: auto;
@@ -929,15 +1023,17 @@ body {
   }
 
   code {
-    color: var(--code-normal);
+    color: #d6ba7c;
     font-family:
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
       "Source Code Pro", monospace;
-    background-color: var(--code-background);
-    border-radius: var(--radius-s);
+    background-color: #14171b;
+    border-radius: 4px;
     font-size: 1em;
     padding: 0.15em 0.3em;
+    -webkit-box-decoration-break: clone;
+    border: 1px solid #d6ba7c;
 
     background-color: var(--code-background);
     color: var(--code-normal);
@@ -978,8 +1074,8 @@ body {
     margin-top: 0px;
 
     &:hover {
-      background-color: rgba(255, 255, 255, 0.15);
       color: #d6ba7c;
+      background-color: rgba(255, 255, 255, 0.15);
     }
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -988,7 +1084,7 @@ body {
 
   /* METADATA */
   .content-meta {
-    color: var(--text-normal);
+    color: #dadada;
 
     color: var(--text-normal);
   }
@@ -1003,19 +1099,19 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: var(--h3-weight);
+      --font-weight: 700;
       color: inherit;
       font-family: inherit;
       font-size: 1.37em;
       font-style: normal;
       font-variant: normal;
-      font-weight: var(--h6-weight);
+      font-weight: 700;
       letter-spacing: -0.015em;
       line-height: 1.3;
     }
 
     ul li {
-      color: var(--text-normal);
+      color: #dadada;
 
       font-weight: 500;
     }
@@ -1037,7 +1133,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: var(--background-primary);
+        background-color: #1a1e24;
 
         background-color: var(--background-secondary);
 
@@ -1077,7 +1173,7 @@ body {
         }
         &:hover {
           background-color: rgba(255, 255, 255, 0.15);
-          color: var(--text-normal);
+          color: #dadada;
           font-weight: inherit;
 
           font-size: 1rem;
@@ -1108,14 +1204,14 @@ body {
 
         a {
           padding: 6px 8px 6px 24px;
-          border-radius: var(--radius-s);
-          color: var(--text-normal);
+          border-radius: 4px;
+          color: #dadada;
           cursor: pointer;
           display: flex;
           font-size: 16px;
           font-weight: inherit;
-          line-height: var(--line-height-tight);
-          margin-bottom: var(--size-2-1);
+          line-height: 1.3;
+          margin-bottom: 2px;
 
           color: inherit;
           font-size: 1rem;
@@ -1169,13 +1265,13 @@ body {
       h3 {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
-        --font-weight: var(--h3-weight);
+        --font-weight: 700;
         color: inherit;
         font-family: inherit;
         font-size: 1.37em;
         font-style: normal;
         font-variant: normal;
-        font-weight: var(--h6-weight);
+        font-weight: 700;
         letter-spacing: -0.015em;
         line-height: 1.3;
 
@@ -1189,7 +1285,7 @@ body {
     ul.toc-content.overflow {
       li,
       li > a {
-        color: var(--text-normal);
+        color: #dadada;
 
         font-weight: inherit;
 
@@ -1207,13 +1303,13 @@ body {
     h3 {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
-      --font-weight: var(--h3-weight);
+      --font-weight: 700;
       color: inherit;
       font-family: inherit;
       font-size: 1.37em;
       font-style: normal;
       font-variant: normal;
-      font-weight: var(--h6-weight);
+      font-weight: 700;
       letter-spacing: -0.015em;
       line-height: 1.3;
 
@@ -1278,12 +1374,22 @@ body {
       color: var(--button-secondary-fg-color);
 
       -webkit-app-region: no-drag;
-      color: var(--text-normal);
+      color: #dadada;
       font-size: calc(16px * 0.937);
       outline: none;
       padding: 4px 8px;
       height: 40px;
       background: #14171b;
+      border: 1px solid #000000;
+      border-image: linear-gradient(
+          225deg,
+          #d6ba7c 0%,
+          #d6ba7c 50%,
+          #ffffff 100%
+        )
+        10;
+      border-radius: 0px;
+      font-family: "Inter", sans-serif;
 
       font-size: 1rem;
       svg {
@@ -1293,7 +1399,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: var(--background-primary);
+        background-color: #1a1e24;
 
         border: 0.5pt solid var(--color-base-40, rgba(251, 70, 76, 0.6));
 
@@ -1312,7 +1418,7 @@ body {
           width: 100%;
           padding: 24px;
           padding-inline-end: 48px;
-          background-color: var(--background-primary);
+          background-color: #1a1e24;
           font-size: 16px;
           border: none;
           height: 48px;
@@ -1325,7 +1431,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: var(--text-normal);
+          color: #dadada;
 
           background: transparent;
           margin-bottom: 0;
@@ -1373,10 +1479,10 @@ body {
               & > ul > li > p {
                 background-color: transparent;
 
-                color: var(--text-normal);
+                color: #dadada;
 
                 &.match-tag {
-                  color: #d6ba7c;
+                  color: #ad3939;
                 }
               }
             }
@@ -1450,11 +1556,11 @@ body {
       0px 1px 2px #000000,
       0px 3.4px 6.7px #000000,
       0px 15px 30px #000000;
-    display: flex;
     max-height: 70vh;
     position: absolute;
     z-index: 30;
-    background-color: var(--background-primary);
+    background-color: #1a1e24;
+    display: none;
 
     display: block;
     position: fixed;
@@ -1464,7 +1570,7 @@ body {
     & .popover-inner {
       border: 1px solid transparent;
 
-      background-color: var(--background-primary);
+      background-color: #1a1e24;
 
       border-radius: 8px;
 

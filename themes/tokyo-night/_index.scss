@@ -29,8 +29,76 @@ html[saved-theme="dark"] {
   --color-base-50: #666666;
   --color-base-70: #b3b3b3;
   --color-base-100: #dadada;
-  --color-accent-hsl: 258, 100%, 75%;
-  --color-accent-2: hsl(calc(258 - 5), calc(100% * 1.05), calc(75% * 1.29));
+  --color-accent-hsl: 202, 100%, 75%;
+  --color-accent-2: hsl(calc(202 - 5), calc(100% * 1.05), calc(75% * 1.29));
+  color-scheme: dark;
+  --bg_dark2_x: 18, 18, 24;
+  --bg_dark2: rgb(var(--bg_dark2_x));
+  --bg_dark_x: 22, 22, 30;
+  --bg_dark: rgb(var(--bg_dark_x));
+  --bg_x: 26, 27, 38;
+  --bg_highlight_x: 41, 46, 66;
+  --bg_highlight: rgb(var(--bg_highlight_x));
+  --bg_highlight_dark_x: 36, 40, 59;
+  --bg_highlight_dark: rgb(var(--bg_highlight_dark_x));
+  --fg_x: 192, 202, 245;
+  --fg_dark_x: 169, 177, 214;
+  --fg_dark: rgb(var(--fg_dark_x));
+  --comment_x: 86, 95, 137;
+  --blue_x: 122, 162, 247;
+  --cyan_x: 125, 207, 255;
+  --magenta_x: 187, 154, 247;
+  --pink_x: 217, 0, 105;
+  --orange_x: 255, 158, 100;
+  --yellow_x: 224, 175, 104;
+  --green_x: 158, 206, 106;
+  --red_x: 255, 117, 127;
+  --link-external-filter: invert(35%) sepia(28%) saturate(681%)
+    hue-rotate(192deg) brightness(94%) contrast(85%);
+  --background-modifier-border: var(--bg_highlight);
+  --background-modifier-border-focus: var(--bg_highlight);
+  --background-modifier-border-hover: var(--bg_highlight);
+  --background-modifier-hover: var(--bg_highlight);
+  --background-primary: rgb(var(--bg_x));
+  --background-primary-alt: rgb(var(--bg_x));
+  --background-secondary: var(--bg_dark);
+  --bold-color: rgb(var(--cyan_x));
+  --checkbox-border-color: rgb(var(--comment_x));
+  --checkbox-border-color-hover: rgb(var(--comment_x));
+  --checkbox-color: rgb(var(--green_x));
+  --checkbox-color-hover: rgb(var(--green_x));
+  --checkbox-marker-color: rgb(var(--bg_x));
+  --checkbox-radius: 12px;
+  --code-background: var(--bg_highlight_dark);
+  --code-normal: rgb(var(--fg_x));
+  --color-blue: rgb(var(--blue_x));
+  --color-cyan: rgb(var(--cyan_x));
+  --color-green: rgb(var(--green_x));
+  --color-orange: rgb(var(--orange_x));
+  --color-pink: rgb(var(--magenta_x));
+  --color-purple: rgb(var(--magenta_x));
+  --color-red: rgb(var(--red_x));
+  --color-yellow: rgb(var(--yellow_x));
+  --graph-line: rgb(var(--comment_x));
+  --graph-node-tag: rgb(var(--orange_x));
+  --h1-color: rgb(var(--red_x));
+  --italic-color: rgb(var(--cyan_x));
+  --link-color: rgb(var(--magenta_x));
+  --link-color-hover: rgb(var(--cyan_x));
+  --link-external-color: rgb(var(--magenta_x));
+  --link-external-color-hover: rgb(var(--cyan_x));
+  --nav-item-background-hover: var(--bg_highlight);
+  --tag-background: rgba(var(--magenta_x), 0.15);
+  --tag-background-hover: rgba(var(--cyan_x), 0.15);
+  --tag-color: rgb(var(--magenta_x));
+  --tag-color-hover: rgb(var(--cyan_x));
+  --text-accent: rgb(var(--magenta_x));
+  --text-accent-hover: rgb(var(--cyan_x));
+  --text-faint: rgb(var(--comment_x));
+  --text-highlight-bg: rgba(var(--orange_x), 0.25);
+  --text-muted: var(--fg_dark);
+  --text-normal: rgb(var(--fg_x));
+  background: var(--bg_dark2);
 }
 
 :root[saved-theme="light"],
@@ -57,8 +125,74 @@ html[saved-theme="light"] {
   --color-base-50: #ababab;
   --color-base-70: #5c5c5c;
   --color-base-100: #222222;
-  --color-accent-hsl: 258, 100%, 75%;
-  --color-accent-2: hsl(calc(258 - 3), calc(100% * 1.02), calc(75% * 1.15));
+  --color-accent-hsl: 202, 100%, 75%;
+  --color-accent-2: hsl(calc(202 - 3), calc(100% * 1.02), calc(75% * 1.15));
+  --bg_dark2_x: 188, 189, 194;
+  --bg_dark2: rgb(var(--bg_dark2_x));
+  --bg_dark_x: 203, 204, 209;
+  --bg_dark: rgb(var(--bg_dark_x));
+  --bg_x: 213, 214, 219;
+  --bg_highlight_x: 220, 222, 226;
+  --bg_highlight: rgb(var(--bg_highlight_x));
+  --bg_highlight_dark_x: 195, 197, 201;
+  --bg_highlight_dark: rgb(var(--bg_highlight_dark_x));
+  --fg_x: 52, 59, 88;
+  --fg_dark_x: 39, 46, 75;
+  --fg_dark: rgb(var(--fg_dark_x));
+  --comment_x: 150, 153, 163;
+  --blue_x: 52, 84, 138;
+  --cyan_x: 15, 75, 110;
+  --magenta_x: 90, 74, 120;
+  --pink_x: 109, 74, 120;
+  --orange_x: 150, 80, 39;
+  --yellow_x: 143, 94, 21;
+  --green_x: 51, 99, 92;
+  --red_x: 140, 67, 81;
+  --link-external-filter: invert(62%) sepia(9%) saturate(266%)
+    hue-rotate(189deg) brightness(97%) contrast(88%);
+  --background-modifier-border: var(--bg_highlight);
+  --background-modifier-border-focus: var(--bg_highlight);
+  --background-modifier-border-hover: var(--bg_highlight);
+  --background-modifier-hover: var(--bg_highlight);
+  --background-primary: rgb(var(--bg_x));
+  --background-primary-alt: rgb(var(--bg_x));
+  --background-secondary: var(--bg_dark);
+  --bold-color: rgb(var(--cyan_x));
+  --checkbox-border-color: rgb(var(--comment_x));
+  --checkbox-border-color-hover: rgb(var(--comment_x));
+  --checkbox-color: rgb(var(--green_x));
+  --checkbox-color-hover: rgb(var(--green_x));
+  --checkbox-marker-color: rgb(var(--bg_x));
+  --checkbox-radius: 12px;
+  --code-normal: rgb(var(--fg_x));
+  --color-blue: rgb(var(--blue_x));
+  --color-cyan: rgb(var(--cyan_x));
+  --color-green: rgb(var(--green_x));
+  --color-orange: rgb(var(--orange_x));
+  --color-pink: rgb(var(--magenta_x));
+  --color-purple: rgb(var(--magenta_x));
+  --color-red: rgb(var(--red_x));
+  --color-yellow: rgb(var(--yellow_x));
+  --graph-line: rgb(var(--comment_x));
+  --graph-node-tag: rgb(var(--orange_x));
+  --h1-color: rgb(var(--red_x));
+  --italic-color: rgb(var(--cyan_x));
+  --link-color: rgb(var(--magenta_x));
+  --link-color-hover: rgb(var(--cyan_x));
+  --link-external-color: rgb(var(--magenta_x));
+  --link-external-color-hover: rgb(var(--cyan_x));
+  --nav-item-background-hover: var(--bg_highlight);
+  --tag-background: rgba(var(--magenta_x), 0.15);
+  --tag-background-hover: rgba(var(--cyan_x), 0.15);
+  --tag-color: rgb(var(--magenta_x));
+  --tag-color-hover: rgb(var(--cyan_x));
+  --text-accent: rgb(var(--magenta_x));
+  --text-accent-hover: rgb(var(--cyan_x));
+  --text-faint: rgb(var(--comment_x));
+  --text-highlight-bg: rgba(var(--orange_x), 0.25);
+  --text-muted: var(--fg_dark);
+  --text-normal: rgb(var(--fg_x));
+  --code-background: rgba(var(--bg_highlight_dark_x), 0.25);
 }
 
 /* cyrillic-ext */
@@ -184,7 +318,7 @@ body {
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
   --checkbox-marker-color: rgb(var(--bg_x));
-  --checkbox-color: hsl(258, 100%, 75%);
+  --checkbox-color: hsl(202, 100%, 75%);
   --checkbox-color-hover: rgb(var(--blue_x));
   --checkbox-border-color: rgb(var(--comment_x));
   --checkbox-border-color-hover: var(--fg_dark);
@@ -230,10 +364,10 @@ body {
   --tag-color-hover: rgb(var(--magenta_x));
   --tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-background: hsla(258, 100%, 75%, 0.1);
-  --tag-background-hover: hsla(258, 100%, 75%, 0.2);
-  --tag-border-color: hsla(258, 100%, 75%, 0.15);
-  --tag-border-color-hover: hsla(258, 100%, 75%, 0.15);
+  --tag-background: hsla(202, 100%, 75%, 0.1);
+  --tag-background-hover: hsla(202, 100%, 75%, 0.2);
+  --tag-border-color: hsla(202, 100%, 75%, 0.15);
+  --tag-border-color-hover: hsla(202, 100%, 75%, 0.15);
   --tag-border-width: 0px;
   --tag-radius: 2em;
   --tag-weight: inherit;
@@ -248,9 +382,9 @@ body {
   --text-muted: #b3b3b3;
   --text-faint: #666666;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
-  --text-accent: hsl(258, 100%, 75%);
-  --text-accent-hover: hsl(calc(258 - 5), calc(100% * 1.05), calc(75% * 1.29));
-  --interactive-accent-hsl: 258, 100%, 75%;
+  --text-accent: hsl(202, 100%, 75%);
+  --text-accent-hover: hsl(calc(202 - 5), calc(100% * 1.05), calc(75% * 1.29));
+  --interactive-accent-hsl: 202, 100%, 75%;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
@@ -259,10 +393,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -1039,7 +1173,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: hsl(258, 100%, 75%);
+        color: hsl(202, 100%, 75%);
 
         text-overflow: ellipsis;
         position: relative;

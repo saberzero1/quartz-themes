@@ -41,15 +41,15 @@
       "dark": null
     },
     "--color-accent-1": {
-      "light": "hsl( calc(var(--accent-h) - 1), calc(var(--accent-s) * 1.01), calc(var(--accent-l) * 1.075) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 1),\n    calc(var(--accent-s) * 1.01),\n    calc(var(--accent-l) * 1.075)\n  )",
       "dark": null
     },
     "--color-accent-2": {
-      "light": "hsl( calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 3),\n    calc(var(--accent-s) * 1.02),\n    calc(var(--accent-l) * 1.15)\n  )",
       "dark": null
     },
     "--input-shadow-hover": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--shadow-s": {
@@ -118,7 +118,161 @@
     "--blockquote-border-color": { "light": "none", "dark": null },
     "--blue": { "light": "hsl(var(--blue-tuple))", "dark": null },
     "--blue-600": { "light": "hsla(var(--blue-tuple), 0.6)", "dark": null },
-    "--blue-secondary-tuple": { "light": "", "dark": null },
+    "--blue-secondary-tuple": {
+      "light": "var(--blue-hue), var(--secondary-sat), var(--secondary-lit)",
+      "dark": null
+    },
+    "--blue-tuple": {
+      "light": "var(--blue-hue), var(--primary-sat), var(--primary-lit)",
+      "dark": null
+    },
+    "--checkbox-color-hover": {
+      "light": "var(--list-marker-color)",
+      "dark": null
+    },
+    "--code-normal": { "light": "var(--purple-pink)", "dark": null },
+    "--code-size": { "light": "1em", "dark": null },
+    "--gradientDegree": { "light": "135deg", "dark": null },
+    "--green": { "light": "hsl(var(--green-tuple))", "dark": null },
+    "--green-200": { "light": "hsla(var(--green-tuple), 0.2)", "dark": null },
+    "--green-secondary-tuple": {
+      "light": "var(--green-hue), var(--secondary-sat), var(--secondary-lit)",
+      "dark": null
+    },
+    "--green-tuple": {
+      "light": "var(--green-hue), var(--primary-sat), var(--primary-lit)",
+      "dark": null
+    },
+    "--greenSecondary": {
+      "light": "hsl(var(--green-secondary-tuple))",
+      "dark": null
+    },
+    "--hr-color": { "light": "var(--orange)", "dark": null },
+    "--indentation-guide": { "light": "var(--layer-4)", "dark": null },
+    "--indentation-guide-opacity": { "light": "10%", "dark": null },
+    "--input-shadow": { "light": "none", "dark": null },
+    "--interactive-accent": { "light": "var(--pink)", "dark": null },
+    "--interactive-accent-hover": { "light": "var(--orange)", "dark": null },
+    "--interactive-hover": { "light": "var(--layer-0)", "dark": null },
+    "--interactive-normal": { "light": "var(--layer-1)", "dark": null },
+    "--interactive-success": { "light": "var(--green)", "dark": null },
+    "--layer-hue-sat": { "light": "235, 15%", "dark": null },
+    "--link-color": { "light": "var(--orange)", "dark": null },
+    "--link-color-hover": { "light": "var(--orangeSecondary)", "dark": null },
+    "--link-external-color": { "light": "var(--green)", "dark": null },
+    "--link-external-color-hover": {
+      "light": "var(--greenSecondary)",
+      "dark": null
+    },
+    "--link-unresolved-color": { "light": "var(--yellow-700)", "dark": null },
+    "--link-unresolved-hover": { "light": "var(--yellow)", "dark": null },
+    "--modal-border-color": { "light": "transparent", "dark": null },
+    "--on-layer": { "light": "hsl(var(--on-layer-tuple))", "dark": null },
+    "--on-layer-400": {
+      "light": "hsla(var(--on-layer-tuple), 0.4)",
+      "dark": null
+    },
+    "--on-layer-600": {
+      "light": "hsla(var(--on-layer-tuple), 0.6)",
+      "dark": null
+    },
+    "--orange": { "light": "hsl(var(--orange-tuple))", "dark": null },
+    "--orange-100": { "light": "hsla(var(--orange-tuple), 0.1)", "dark": null },
+    "--orange-secondary-tuple": {
+      "light": "var(--orange-hue), var(--secondary-sat), var(--secondary-lit)",
+      "dark": null
+    },
+    "--orange-tuple": {
+      "light": "var(--orange-hue), var(--primary-sat), var(--primary-lit)",
+      "dark": null
+    },
+    "--orangeSecondary": {
+      "light": "hsl(var(--orange-secondary-tuple))",
+      "dark": null
+    },
+    "--pink": { "light": "hsl(var(--pink-tuple))", "dark": null },
+    "--pink-100": { "light": "hsla(var(--pink-tuple), 0.1)", "dark": null },
+    "--pink-300": { "light": "hsla(var(--pink-tuple), 0.3)", "dark": null },
+    "--pink-400": { "light": "hsla(var(--pink-tuple), 0.4)", "dark": null },
+    "--pink-secondary-tuple": {
+      "light": "var(--pink-hue), var(--secondary-sat), var(--secondary-lit)",
+      "dark": null
+    },
+    "--pink-tuple": {
+      "light": "var(--pink-hue), var(--primary-sat), var(--primary-lit)",
+      "dark": null
+    },
+    "--pinkSecondary": {
+      "light": "hsl(var(--pink-secondary-tuple))",
+      "dark": null
+    },
+    "--prompt-border-color": { "light": "transparent", "dark": null },
+    "--purple": { "light": "hsl(var(--purple-tuple))", "dark": null },
+    "--purple-200": { "light": "hsla(var(--purple-tuple), 0.2)", "dark": null },
+    "--purple-pink": { "light": "hsl(var(--purple-pink-tuple))", "dark": null },
+    "--purple-pink-secondary-tuple": {
+      "light": "var(--purple-pink-hue), var(--secondary-sat), var(--secondary-lit)",
+      "dark": null
+    },
+    "--purple-pink-tuple": {
+      "light": "var(--purple-pink-hue), var(--primary-sat), var(--primary-lit)",
+      "dark": null
+    },
+    "--purple-secondary-tuple": {
+      "light": "var(--purple-hue), var(--secondary-sat), var(--secondary-lit)",
+      "dark": null
+    },
+    "--purple-tuple": {
+      "light": "var(--purple-hue), var(--primary-sat), var(--primary-lit)",
+      "dark": null
+    },
+    "--red": { "light": "hsl(var(--red-tuple))", "dark": null },
+    "--red-900": { "light": "hsla(var(--red-tuple), 0.9)", "dark": null },
+    "--red-secondary-tuple": {
+      "light": "var(--red-hue), var(--secondary-sat), var(--secondary-lit)",
+      "dark": null
+    },
+    "--red-tuple": {
+      "light": "var(--red-hue), var(--primary-sat), var(--primary-lit)",
+      "dark": null
+    },
+    "--ribbon-background": {
+      "light": "var(--background-secondary-alt)",
+      "dark": null
+    },
+    "--ribbon-background-collapsed": {
+      "light": "var(--background-secondary-alt)",
+      "dark": null
+    },
+    "--scrollbar-active-thumb-bg": { "light": "var(--pink-300)", "dark": null },
+    "--scrollbar-bg": { "light": "var(--layer-2)", "dark": null },
+    "--scrollbar-thumb-bg": { "light": "var(--pink-100)", "dark": null },
+    "--table-header-color": { "light": "var(--layer-2)", "dark": null },
+    "--text-accent": { "light": "var(--pink)", "dark": null },
+    "--text-accent-hover": { "light": "var(--pinkSecondary)", "dark": null },
+    "--text-error": { "light": "var(--red)", "dark": null },
+    "--text-error-hover": { "light": "var(--redSecondary)", "dark": null },
+    "--text-faint": { "light": "var(--on-layer-600)", "dark": null },
+    "--text-highlight-bg": { "light": "var(--yellow-100)", "dark": null },
+    "--text-highlight-bg-active": {
+      "light": "var(--orange-100)",
+      "dark": null
+    },
+    "--text-muted": { "light": "var(--on-layer-600)", "dark": null },
+    "--text-normal": { "light": "var(--on-layer)", "dark": null },
+    "--text-on-accent": { "light": "var(--layer-2)", "dark": null },
+    "--text-selection": { "light": "var(--purple-200)", "dark": null },
+    "--yellow": { "light": "hsl(var(--yellow-tuple))", "dark": null },
+    "--yellow-100": { "light": "hsla(var(--yellow-tuple), 0.1)", "dark": null },
+    "--yellow-700": { "light": "hsla(var(--yellow-tuple), 0.7)", "dark": null },
+    "--yellow-secondary-tuple": {
+      "light": "var(--yellow-hue), var(--secondary-sat), var(--secondary-lit)",
+      "dark": null
+    },
+    "--yellow-tuple": {
+      "light": "var(--yellow-hue), var(--primary-sat), var(--primary-lit)",
+      "dark": null
+    },
     "--canvas-color": { "light": null, "dark": "126, 126, 126" }
   },
   ".notice progress[value]::-webkit-progress-bar": {
@@ -127,9 +281,15 @@
   },
   ".dropdown": {
     "background-image": {
-      "light": "url( data:image/svg + xml, charset=US-ASCII, %3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%22292.4%22%20height=%22292.4%22%3E%3Cpath%20d=%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%20fill=%22hsl( 234, %2014%25, %2015%25 )%22/%3E%3C/svg%3E )",
-      "dark": "url( data:image/svg + xml, charset=US-ASCII, %3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%22292.4%22%20height=%22292.4%22%3E%3Cpath%20d=%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%20fill=%22hsl( 60, %2030%25, %2096.1%25 )%22/%3E%3C/svg%3E )"
+      "light": "url(\n    data:image/svg + xml,\n    charset=US-ASCII,\n    %3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%22292.4%22%20height=%22292.4%22%3E%3Cpath%20d=%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%20fill=%22hsl(\n        234,\n        %2014%25,\n        %2015%25\n      )%22/%3E%3C/svg%3E\n  )",
+      "dark": "url(\n    data:image/svg + xml,\n    charset=US-ASCII,\n    %3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%22292.4%22%20height=%22292.4%22%3E%3Cpath%20d=%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%20fill=%22hsl(\n        60,\n        %2030%25,\n        %2096.1%25\n      )%22/%3E%3C/svg%3E\n  )"
     }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  input": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  textarea": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -138,7 +298,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))\n    drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {

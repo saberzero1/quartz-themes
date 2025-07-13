@@ -237,10 +237,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "My Text font", "New York", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "My Text font", "New York", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -728,7 +728,17 @@ body {
   h2.page-title,
   h2.page-title a,
   h2 {
-    display: none;
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
+    --font-weight: 600;
+    color: inherit;
+    font-family: inherit;
+    font-size: 1.602em;
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: normal;
+    letter-spacing: -0.015em;
+    line-height: 1.2;
 
     font-size: 1.75rem;
   }
@@ -736,7 +746,17 @@ body {
     --link-weight: 600;
   }
   h3 {
-    display: none;
+    margin-block-start: 0rem;
+    --font-weight: bold;
+    color: #d88874;
+    font-family: "My Headings font", "New York Extra Large";
+    font-size: 1.424em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    letter-spacing: -0.015em;
+    line-height: 1.3;
+    margin-block-end: 0;
 
     font-size: 1.6rem;
   }
@@ -744,7 +764,17 @@ body {
     --link-weight: bold;
   }
   h4 {
-    display: none;
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
+    --font-weight: 600;
+    color: #d88874;
+    font-family: inherit;
+    font-size: 1.266em;
+    font-style: italic;
+    font-variant: normal;
+    font-weight: normal;
+    letter-spacing: 0.015em;
+    line-height: 1.4;
 
     font-size: 1.4rem;
   }
@@ -752,7 +782,17 @@ body {
     --link-weight: 600;
   }
   h5 {
-    display: none;
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
+    --font-weight: bold;
+    color: #d88874;
+    font-family: "My Table font", "SF Compact Rounded";
+    font-size: 1.125em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    letter-spacing: 0.015em;
+    line-height: 1.5;
 
     font-size: 1.2rem;
   }
@@ -935,7 +975,17 @@ body {
   /* BACKLINKS */
   .backlinks {
     h3 {
-      display: none;
+      margin-block-start: 0rem;
+      --font-weight: bold;
+      color: #d88874;
+      font-family: "My Headings font", "New York Extra Large";
+      font-size: 1.424em;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: normal;
+      letter-spacing: -0.015em;
+      line-height: 1.3;
+      margin-block-end: 0;
     }
 
     ul li {
@@ -954,6 +1004,10 @@ body {
         backdrop-filter: blur(8px);
         padding-left: 1rem;
       }
+    }
+    button.explorer-toggle,
+    h2 {
+      color: inherit;
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1089,12 +1143,26 @@ body {
 
   /* TOC */
   .toc {
+    color: #d88874;
+
     button.toc-header {
       h3 {
-        display: none;
+        margin-block-start: 0rem;
+        --font-weight: bold;
+        color: #d88874;
+        font-family: "My Headings font", "New York Extra Large";
+        font-size: 1.424em;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        letter-spacing: -0.015em;
+        line-height: 1.3;
+        margin-block-end: 0;
 
         margin-block: 0;
       }
+
+      color: #d88874;
 
       color: inherit;
     }
@@ -1117,7 +1185,17 @@ body {
   .graph,
   .toc {
     h3 {
-      display: none;
+      margin-block-start: 0rem;
+      --font-weight: bold;
+      color: #d88874;
+      font-family: "My Headings font", "New York Extra Large";
+      font-size: 1.424em;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: normal;
+      letter-spacing: -0.015em;
+      line-height: 1.3;
+      margin-block-end: 0;
 
       min-height: calc(2 * var(--p-spacing) + var(--h3-line-height));
       margin-block: 0;

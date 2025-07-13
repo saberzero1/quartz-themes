@@ -41,27 +41,56 @@
       "dark": null
     },
     "--color-accent-1": {
-      "light": "hsl( calc(var(--accent-h) - 1), calc(var(--accent-s) * 1.01), calc(var(--accent-l) * 1.075) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 1),\n    calc(var(--accent-s) * 1.01),\n    calc(var(--accent-l) * 1.075)\n  )",
       "dark": null
     },
     "--color-accent-2": {
-      "light": "hsl( calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 3),\n    calc(var(--accent-s) * 1.02),\n    calc(var(--accent-l) * 1.15)\n  )",
       "dark": null
     },
     "--background-modifier-box-shadow": { "light": "#000000", "dark": null },
     "--input-shadow": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--input-shadow-hover": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--shadow-s": {
       "light": "0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000",
       "dark": null
     },
-    "--shadow-l": { "light": "", "dark": null },
+    "--shadow-l": {
+      "light": "0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000",
+      "dark": null
+    },
+    "--background-primary": { "light": "hsl(0, 0%, 92%)", "dark": null },
+    "--background-secondary": { "light": "hsl(300, 5%, 80%)", "dark": null },
+    "--background-secondary-alt": { "light": "#a6a6a6", "dark": null },
+    "--background-accent": { "light": "#afbfcf", "dark": null },
+    "--background-accent-alt": { "light": "hsl(0, 0%, 88%)", "dark": null },
+    "--background-modifier-border": { "light": "#ada7a4", "dark": null },
+    "--background-modifier-cover": { "light": "hsl(0, 0%, 85%)", "dark": null },
+    "--background-modifier-form-field": { "light": "#e6e6e6", "dark": null },
+    "--interactive-accent-hover": { "light": "#708ca9", "dark": null },
+    "--he-title-bar-active-bg": { "light": "#eaa4a4", "dark": null },
+    "--he-title-bar-inactive-bg": { "light": "#eaa4a4", "dark": null },
+    "--he-title-bar-active-pinned-bg": { "light": "#a7b3a1", "dark": null },
+    "--he-title-bar-inactive-pinned-bg": { "light": "#a7b3a1", "dark": null },
+    "--text-muted": { "light": "#1a1a1a", "dark": null },
+    "--text-faint": { "light": "#808080", "dark": null },
+    "--background-modifier-backlinks": {
+      "light": "hsl(0, 0%, 90%)",
+      "dark": null
+    },
+    "--h1-color": { "light": "hsl(217, 22%, 30%)", "dark": null },
+    "--h2-color": { "light": "hsl(217, 22%, 40%)", "dark": null },
+    "--h3-color": { "light": "hsl(217, 22%, 50%)", "dark": null },
+    "--h4-color": { "light": "hsl(45, 45%, 40%)", "dark": null },
+    "--h5-color": { "light": "hsl(45, 45%, 30%)", "dark": null },
+    "--h6-color": { "light": "hsl(45, 45%, 20%)", "dark": null },
+    "--text-selection": { "light": "DarkGray", "dark": null },
     "--canvas-color": { "light": null, "dark": "126, 126, 126" },
     "--text-highlight-bg": { "light": null, "dark": "#ffd000" }
   },
@@ -69,7 +98,7 @@
     "background-color": { "light": "#262626", "dark": null },
     "box-shadow": { "light": "inset 0px 0px 0px 1px #363636", "dark": null }
   },
-  ")": {
+  "body:is(.theme-dark, )": {
     "--background-active-line": {
       "light": "var(--background-accent-alt)",
       "dark": null
@@ -95,13 +124,13 @@
       "dark": null
     },
     "--tab-outline-width": { "light": "0px", "dark": null },
-    "--tag-background": {
-      "light": null,
-      "dark": "hsla(var(--tag-bg-accent-hsl), 0.7)"
+    "--titlebar-background": {
+      "light": "var(--titlebar-background-focused)",
+      "dark": null
     },
-    "--tag-background-hover": {
-      "light": null,
-      "dark": "hsla(var(--tag-bg-accent-hsl), 0.45)"
+    "--titlebar-background-focused": {
+      "light": "var(--background-modifier-cover)",
+      "dark": null
     }
   },
   ".is-phone .menu": {
@@ -127,9 +156,17 @@
     "--background-accent": {
       "light": "hsl(223, 14%, 90%)",
       "dark": "hsl(223, 7%, 30%)"
+    },
+    "--background-accent-alt": {
+      "light": "hsl(220, 16%, 88%)",
+      "dark": "hsl(220, 8%, 19%)"
+    },
+    "--background-modifier-backlinks": {
+      "light": "hsl(220, 16%, 90%)",
+      "dark": "hsl(220, 8%, 21%)"
     }
   },
-  ".is-mobile):is(": {
+  "body:is(*, .is-mobile):is(, .theme-dark)": {
     "--tag-background": {
       "light": "hsla(var(--tag-bg-accent-hsl), 0.7)",
       "dark": null
@@ -161,8 +198,14 @@
   ".dropdown": {
     "background-image": {
       "light": null,
-      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+      "dark": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
     }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  input": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  textarea": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -171,7 +214,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))\n    drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {
@@ -272,7 +315,7 @@
   ".is-tablet .suggestion-container": {
     "background-color": { "light": null, "dark": "var(--background-secondary)" }
   },
-  "body:is(": {
+  "body:is(, .theme-light)": {
     "--background-active-line": {
       "light": null,
       "dark": "var(--background-accent-alt)"
@@ -297,7 +340,15 @@
       "light": null,
       "dark": "var(--background-modifier-border)"
     },
-    "--tab-outline-width": { "light": null, "dark": "0px" }
+    "--tab-outline-width": { "light": null, "dark": "0px" },
+    "--titlebar-background": {
+      "light": null,
+      "dark": "var(--titlebar-background-focused)"
+    },
+    "--titlebar-background-focused": {
+      "light": null,
+      "dark": "var(--background-modifier-cover)"
+    }
   },
   ".color-scheme-base": {
     "--background-accent": { "light": null, "dark": "hsl(300, 15%, 27%)" },
@@ -305,13 +356,65 @@
     "--background-modifier-backlinks": {
       "light": null,
       "dark": "hsl(0, 0%, 18%)"
-    }
+    },
+    "--background-modifier-border": {
+      "light": null,
+      "dark": "hsl(20, 5%, 33%)"
+    },
+    "--background-modifier-border-active": {
+      "light": null,
+      "dark": "hsl(20, 5%, 53%)"
+    },
+    "--background-modifier-cover": { "light": null, "dark": "hsl(0, 0%, 16%)" },
+    "--background-primary": { "light": null, "dark": "hsl(0, 0%, 20%)" },
+    "--background-primary-alt": { "light": null, "dark": "#1a1a1a" },
+    "--background-secondary": { "light": null, "dark": "hsl(300, 5%, 25%)" },
+    "--background-secondary-alt": {
+      "light": null,
+      "dark": "hsl(300, 5%, 19%)"
+    },
+    "--he-title-bar-active-bg": { "light": null, "dark": "#3d373a" },
+    "--he-title-bar-active-pinned-bg": { "light": null, "dark": "#735050" },
+    "--he-title-bar-inactive-bg": { "light": null, "dark": "#3d373a" },
+    "--he-title-bar-inactive-pinned-bg": { "light": null, "dark": "#735050" }
   },
   ".is-mobile.is-force-oled-black-mobile": {
-    "--background-accent": { "light": null, "dark": "hsl(300, 20%, 15%)" }
+    "--background-accent": { "light": null, "dark": "hsl(300, 20%, 15%)" },
+    "--background-accent-alt": { "light": null, "dark": "hsl(0, 0%, 20%)" },
+    "--background-modifier-backlinks": {
+      "light": null,
+      "dark": "hsl(0, 0%, 12%)"
+    },
+    "--background-modifier-cover": { "light": null, "dark": "#1a1a1a" },
+    "--background-primary": { "light": null, "dark": "black" },
+    "--background-primary-alt": { "light": null, "dark": "hsl(0, 0%, 8%)" },
+    "--background-secondary": { "light": null, "dark": "hsl(0, 0%, 16%)" },
+    "--background-secondary-alt": { "light": null, "dark": "hsl(0, 0%, 12%)" },
+    "--color-base-100": { "light": null, "dark": "hsl(0, 0%, 78%)" }
   },
   ".oled-black": {
-    "--background-accent": { "light": null, "dark": "hsl(300, 20%, 15%)" }
+    "--background-accent": { "light": null, "dark": "hsl(300, 20%, 15%)" },
+    "--background-accent-alt": { "light": null, "dark": "hsl(0, 0%, 20%)" },
+    "--background-modifier-backlinks": {
+      "light": null,
+      "dark": "hsl(0, 0%, 12%)"
+    },
+    "--background-modifier-cover": { "light": null, "dark": "#1a1a1a" },
+    "--background-primary": { "light": null, "dark": "black" },
+    "--background-primary-alt": { "light": null, "dark": "hsl(0, 0%, 8%)" },
+    "--background-secondary": { "light": null, "dark": "hsl(0, 0%, 16%)" },
+    "--background-secondary-alt": { "light": null, "dark": "hsl(0, 0%, 12%)" },
+    "--color-base-100": { "light": null, "dark": "hsl(0, 0%, 78%)" }
+  },
+  "body:is(*, .is-mobile):is(.theme-light, )": {
+    "--tag-background": {
+      "light": null,
+      "dark": "hsla(var(--tag-bg-accent-hsl), 0.7)"
+    },
+    "--tag-background-hover": {
+      "light": null,
+      "dark": "hsla(var(--tag-bg-accent-hsl), 0.45)"
+    }
   },
   ".graph-view.color-fill": { "color": { "light": null, "dark": "DimGray" } },
   ".graph-view.color-line": {

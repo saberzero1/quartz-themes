@@ -377,10 +377,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -410,6 +410,8 @@ body {
   user-select: none;
   -webkit-user-select: none;
   caret-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --collapse-icon-color: #b3b3b3;
+  --collapse-icon-color-collapsed: #b3b3b3;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);

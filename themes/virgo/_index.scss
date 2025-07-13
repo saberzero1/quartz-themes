@@ -388,11 +388,10 @@ body {
     "??", "Code New Roman", romanFont, "LXGW WenKai Mono", ui-monospace,
     SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono",
     "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text:
-    "??", "??", "LXGW WenKai GB Screen R", jinkaiFont, "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "LXGW WenKai GB Screen R", jinkaiFont, "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;

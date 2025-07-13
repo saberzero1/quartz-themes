@@ -21,11 +21,11 @@
       "dark": null
     },
     "--color-accent-1": {
-      "light": "hsl( calc(var(--accent-h) - 1), calc(var(--accent-s) * 1.01), calc(var(--accent-l) * 1.075) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 1),\n    calc(var(--accent-s) * 1.01),\n    calc(var(--accent-l) * 1.075)\n  )",
       "dark": null
     },
     "--color-accent-2": {
-      "light": "hsl( calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 3),\n    calc(var(--accent-s) * 1.02),\n    calc(var(--accent-l) * 1.15)\n  )",
       "dark": null
     },
     "--background-secondary-alt": {
@@ -35,11 +35,11 @@
     "--background-modifier-box-shadow": { "light": "#000000", "dark": null },
     "--background-modifier-cover": { "light": "#dcdcdc", "dark": null },
     "--input-shadow": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--input-shadow-hover": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--shadow-s": {
@@ -120,31 +120,31 @@
       "dark": null
     },
     "--color-base-30": {
-      "light": "color-mix( in srgb, var(--vauxhall-bg) 90%, var(--vauxhall-fg) )",
+      "light": "color-mix(\n    in srgb,\n    var(--vauxhall-bg) 90%,\n    var(--vauxhall-fg)\n  )",
       "dark": null
     },
     "--color-base-35": {
-      "light": "color-mix( in srgb, var(--vauxhall-bg) 95%, var(--vauxhall-fg) )",
+      "light": "color-mix(\n    in srgb,\n    var(--vauxhall-bg) 95%,\n    var(--vauxhall-fg)\n  )",
       "dark": null
     },
     "--color-base-40": {
-      "light": "color-mix( in srgb, var(--vauxhall-bg) 80%, var(--vauxhall-fg) )",
+      "light": "color-mix(\n    in srgb,\n    var(--vauxhall-bg) 80%,\n    var(--vauxhall-fg)\n  )",
       "dark": null
     },
     "--color-base-50": {
-      "light": "color-mix( in srgb, var(--vauxhall-bg) 60%, var(--vauxhall-fg) )",
+      "light": "color-mix(\n    in srgb,\n    var(--vauxhall-bg) 60%,\n    var(--vauxhall-fg)\n  )",
       "dark": null
     },
     "--color-base-60": {
-      "light": "color-mix( in srgb, var(--vauxhall-bg) 60%, var(--vauxhall-fg) )",
+      "light": "color-mix(\n    in srgb,\n    var(--vauxhall-bg) 60%,\n    var(--vauxhall-fg)\n  )",
       "dark": null
     },
     "--color-base-70": {
-      "light": "color-mix( in srgb, var(--vauxhall-bg) 30%, var(--vauxhall-fg) )",
+      "light": "color-mix(\n    in srgb,\n    var(--vauxhall-bg) 30%,\n    var(--vauxhall-fg)\n  )",
       "dark": null
     },
     "--color-base-100": {
-      "light": "color-mix( in srgb, var(--vauxhall-bg) 0%, var(--vauxhall-fg) )",
+      "light": "color-mix(\n    in srgb,\n    var(--vauxhall-bg) 0%,\n    var(--vauxhall-fg)\n  )",
       "dark": null
     },
     "--text-normal": {
@@ -155,6 +155,31 @@
       "light": "var(--color-base-20)",
       "dark": null
     },
+    "--background-modifier-hover": {
+      "light": "var(--color-base-35)",
+      "dark": null
+    },
+    "--nav-indentation-guide-color": {
+      "light": "var(--color-base-30)",
+      "dark": null
+    },
+    "--indentation-guide-color": {
+      "light": "var(--color-base-30)",
+      "dark": null
+    },
+    "--indentation-guide-color-active": {
+      "light": "var(--color-base-35)",
+      "dark": null
+    },
+    "--text-highlight-bg": {
+      "light": "color-mix(in srgb, var(--h1-color) 25%, transparent)",
+      "dark": null
+    },
+    "--text-highlight-bg-active": {
+      "light": "color-mix(\n    in srgb,\n    var(--h1-color) 25%,\n    transparent\n  )",
+      "dark": null
+    },
+    "--code-background": { "light": "var(--color-base-30)", "dark": null },
     "--canvas-color": { "light": null, "dark": "126, 126, 126" }
   },
   ".notice progress[value]::-webkit-progress-bar": {
@@ -196,8 +221,14 @@
   ".dropdown": {
     "background-image": {
       "light": null,
-      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+      "dark": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
     }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  input": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  textarea": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -206,7 +237,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))\n    drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {

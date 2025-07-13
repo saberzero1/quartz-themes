@@ -22,8 +22,8 @@ html[saved-theme="dark"] {
 
   color-scheme: dark;
   --mono-rgb-100: 255, 255, 255;
-  --color-accent-hsl: 215 !important, 79% !important, 50% !important;
-  --text-accent: var(--color-accent-1);
+  --color-accent-hsl: 215, 79%, 50%;
+  --text-accent: hsl(215, 79%, calc(50% + 3.5%));
   --color-blue: #0069e0;
   --color-cyan: #00a351;
   --color-green: #52a300;
@@ -32,6 +32,20 @@ html[saved-theme="dark"] {
   --color-purple: #8c3ff7;
   --color-red: #e82929;
   --color-yellow: #a3a300;
+  --color-accent-2: hsl(calc(215 - 2), 79%, calc(50% - 4%));
+  --color-base-00: #1e1f21;
+  --color-base-10: #242629;
+  --color-base-20: #27282b;
+  --color-base-30: #35383d;
+  --color-base-35: #313539;
+  --color-base-40: #32343c;
+  --color-base-50: #8e949d;
+  --color-base-70: #d0d4d9;
+  --color-base-100: #d8dce3;
+  --background-modifier-border: #dae1ea31;
+  --link-color: hsl(calc(215 + 5), 79%, calc(50% + 15%));
+  --link-external-color: hsl(calc(215 + 20), 79%, calc(50% + 20%));
+  --link-external-color-hover: hsl(calc(215 + 10), 79%, calc(50% + 3%));
 }
 
 :root[saved-theme="light"],
@@ -49,7 +63,7 @@ html[saved-theme="light"] {
 
   color-scheme: light;
   --mono-rgb-100: 0, 0, 0;
-  --color-accent-hsl: 215 !important, 79% !important, 50% !important;
+  --color-accent-hsl: 215, 79%, 50%;
   --color-blue: #0069e0;
   --color-cyan: #00a351;
   --color-green: #52a300;
@@ -58,6 +72,20 @@ html[saved-theme="light"] {
   --color-purple: #8c3ff7;
   --color-red: #e82929;
   --color-yellow: #a3a300;
+  --link-color: hsl(calc(215 + 5), 79%, calc(50% - 5%));
+  --link-external-color: hsl(calc(215 + 20), 79%, calc(50% - 5%));
+  --link-external-color-hover: hsl(calc(215 + 10), 79%, calc(50% + 3%));
+  --color-accent-2: hsl(calc(215 - 2), 79%, calc(50% + 10%));
+  --background-modifier-border: #a2a9b1;
+  --color-base-00: #ffffff;
+  --color-base-10: #fafafa;
+  --color-base-20: #f6f6f6;
+  --color-base-30: #e0e0e0;
+  --color-base-35: #d4d4d4;
+  --color-base-40: #bdbdbd;
+  --color-base-50: #989898;
+  --color-base-70: #5a5a5a;
+  --color-base-100: #222222;
 }
 
 @font-face {
@@ -161,8 +189,8 @@ body {
   --checkbox-radius: 0px;
   --checkbox-size: 16px;
   --checkbox-marker-color: #000;
-  --checkbox-color: hsl(215 !important, 79% !important, 50% !important);
-  --checkbox-color-hover: var(--color-accent-1);
+  --checkbox-color: hsl(215, 79%, 50%);
+  --checkbox-color-hover: hsl(215, 79%, calc(50% + 3.5%));
   --checkbox-border-color: #8e949d;
   --checkbox-border-color-hover: #d0d4d9;
   --code-comment: #8e949d;
@@ -175,7 +203,7 @@ body {
   --code-tag: #e82929;
   --code-value: #8c3ff7;
   --collapse-icon-color: #8e949d;
-  --collapse-icon-color-collapsed: var(--color-accent-1);
+  --collapse-icon-color-collapsed: hsl(215, 79%, calc(50% + 3.5%));
   --cursor-link: pointer;
   --font-weight: 400;
   --graph-line: var(--color-base-35, rgba(232, 51, 51, 0.6));
@@ -189,19 +217,11 @@ body {
   --inline-title-color: inherit;
   --inline-title-font: "Linux Libertine", "Georgia", "Times", serif;
   --italic-color: inherit;
-  --link-color: var(--color-accent-1);
-  --link-color-hover: hsl(
-    calc(215 !important - 2),
-    79% !important,
-    calc(50% !important - 4%)
-  );
+  --link-color: hsl(215, 79%, calc(50% + 3.5%));
+  --link-color-hover: hsl(calc(215 - 2), 79%, calc(50% - 4%));
   --link-weight: var(--link-weight);
-  --link-external-color: var(--color-accent-1);
-  --link-external-color-hover: hsl(
-    calc(215 !important - 2),
-    79% !important,
-    calc(50% !important - 4%)
-  );
+  --link-external-color: hsl(215, 79%, calc(50% + 3.5%));
+  --link-external-color-hover: hsl(calc(215 - 2), 79%, calc(50% - 4%));
   --link-external-filter: none;
   --nav-item-background-hover: rgba(255, 255, 255, 0.15);
   --nav-item-children-padding-start: 4px;
@@ -209,18 +229,8 @@ body {
   --p-spacing: 1rem;
   --search-icon-color: #d0d4d9;
   --tag-decoration: none;
-  --tag-border-color: hsla(
-    215 !important,
-    79% !important,
-    50% !important,
-    0.15
-  );
-  --tag-border-color-hover: hsla(
-    215 !important,
-    79% !important,
-    50% !important,
-    0.15
-  );
+  --tag-border-color: hsla(215, 79%, 50%, 0.15);
+  --tag-border-color-hover: hsla(215, 79%, 50%, 0.15);
   --tag-border-width: 0px;
   --tag-weight: inherit;
   --background-primary: #000;
@@ -234,21 +244,17 @@ body {
   --text-muted: #d0d4d9;
   --text-faint: #8e949d;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
-  --text-accent: hsl(215 !important, 79% !important, 50% !important);
-  --text-accent-hover: hsl(
-    calc(215 !important - 2),
-    79% !important,
-    calc(50% !important - 4%)
-  );
-  --interactive-accent-hsl: 215 !important, 79% !important, 50% !important;
+  --text-accent: hsl(215, 79%, 50%);
+  --text-accent-hover: hsl(calc(215 - 2), 79%, calc(50% - 4%));
+  --interactive-accent-hsl: 215, 79%, 50%;
   --font-monospace:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -265,18 +271,14 @@ body {
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
-  caret-color: var(--color-accent-1);
+  caret-color: hsl(215, 79%, calc(50% + 3.5%));
   --font-default: "Archivo", Arial, "Archivo", sans-serif;
   --h1-font: "Linux Libertine", "Georgia", "Times", serif;
   --tag-background: transparent;
   --tag-background-hover: transparent;
   --tag-radius: 0px;
-  --tag-color: var(--color-accent-1);
-  --tag-color-hover: hsl(
-    calc(215 !important - 2),
-    79% !important,
-    calc(50% !important - 4%)
-  );
+  --tag-color: hsl(calc(215 + 5), 79%, calc(50% + 15%));
+  --tag-color-hover: hsl(calc(215 - 2), 79%, calc(50% - 4%));
   --tag-decoration-hover: underline;
   --code-normal: #d8dce3;
   --code-background: #111;
@@ -1036,7 +1038,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: hsl(215 !important, 79% !important, 50% !important);
+        color: hsl(215, 79%, 50%);
 
         text-overflow: ellipsis;
         position: relative;
@@ -1370,7 +1372,7 @@ body {
                 color: #d8dce3;
 
                 &.match-tag {
-                  color: var(--color-accent-1);
+                  color: hsl(calc(215 + 5), 79%, calc(50% + 15%));
                 }
               }
             }

@@ -11,11 +11,11 @@
     "--background-modifier-box-shadow": { "light": "#000000", "dark": null },
     "--background-modifier-cover": { "light": "#dcdcdc", "dark": null },
     "--input-shadow": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--input-shadow-hover": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--shadow-s": {
@@ -44,6 +44,36 @@
     "--color-pink": { "light": "#a02f6f", "dark": null },
     "--accent-h": { "light": "175", "dark": null },
     "--accent-s": { "light": "57%", "dark": null },
+    "--accent-l": { "light": "33%", "dark": null },
+    "--color-accent-hsl-default": {
+      "light": "var(--accent-h), var(--accent-s), var(--accent-l)",
+      "dark": null
+    },
+    "--color-accent-hsl": {
+      "light": "var(\n    --flexoki-warm-light-theme-accent-override,\n    var(--color-accent-hsl-default)\n  )",
+      "dark": null
+    },
+    "--color-accent": { "light": "hsl(var(--color-accent-hsl))", "dark": null },
+    "--color-accent-1": {
+      "light": "hsl(\n    from var(--color-accent) calc(h - 3) calc(s * 1.02) calc(l * 1.15)\n  )",
+      "dark": null
+    },
+    "--color-accent-2": {
+      "light": "hsl(\n    from var(--color-accent) calc(h - 5) calc(s * 1.05) calc(l * 1.29)\n  )",
+      "dark": null
+    },
+    "--color-base-00": { "light": "#ffffff", "dark": null },
+    "--color-base-05": { "light": "#fcfcfc", "dark": null },
+    "--color-base-10": { "light": "#fafafa", "dark": null },
+    "--color-base-20": { "light": "#fcfaf8", "dark": null },
+    "--color-base-25": { "light": "#e6e4d9", "dark": null },
+    "--color-base-30": { "light": "#e6e4d9", "dark": null },
+    "--color-base-35": { "light": "#dad8ce", "dark": null },
+    "--color-base-40": { "light": "#cecdc3", "dark": null },
+    "--color-base-50": { "light": "#b7b5ac", "dark": null },
+    "--color-base-60": { "light": "#878580", "dark": null },
+    "--color-base-70": { "light": "#6f6e69", "dark": null },
+    "--color-base-100": { "light": "#100f0f", "dark": null },
     "--canvas-color": { "light": null, "dark": "126, 126, 126" }
   },
   ".notice progress[value]::-webkit-progress-bar": {
@@ -53,8 +83,14 @@
   ".dropdown": {
     "background-image": {
       "light": null,
-      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+      "dark": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
     }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  input": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  textarea": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -63,7 +99,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))\n    drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {

@@ -41,6 +41,14 @@ html[saved-theme="dark"] {
   --color-purple: #a882ff;
   --color-red: #fb464c;
   --color-yellow: #e0de71;
+  --mono-rgb-100: 255, 255, 255;
+  --text-accent: hsl(215, 75%, 70%);
+  --text-accent-hover: hsl(215, 75%, calc(70% + 12%));
+  --text-faint: hsl(212, 15%, calc(13% + 30%));
+  --text-highlight-bg: #ffd000;
+  --text-muted: hsl(212, 15%, calc(13% + 65%));
+  color-scheme: dark;
+  text-decoration-color: rgba(236, 166, 99, 0.75);
 }
 
 :root[saved-theme="light"],
@@ -80,8 +88,11 @@ html[saved-theme="light"] {
   --mono-rgb-100: 0, 0, 0;
   --text-accent: hsl(215, 75%, 60%);
   --text-accent-hover: hsl(215, 75%, calc(60% - 10%));
-  --text-faint: hsl(var(--base-h), calc(15% - 5%), calc(97% - 30%));
-  --text-highlight-bg: var(--text-highlight-bg-l);
+  --text-faint: hsl(212, calc(15% - 5%), calc(97% - 30%));
+  --text-highlight-bg: #ffd000;
+  --text-muted: hsl(212, calc(15% - 5%), calc(97% - 60%));
+  color-scheme: light;
+  text-decoration-color: rgba(236, 166, 99, 1);
 }
 
 /* cyrillic-ext */
@@ -343,47 +354,47 @@ body {
   --checkbox-marker-color: #12161c;
   --checkbox-color: hsl(215, 75%, 60%);
   --checkbox-color-hover: hsl(215, 75%, calc(60% - 3.8%));
-  --checkbox-border-color: hsl(var(--base-h), calc(15% - 5%), calc(97% - 30%));
-  --checkbox-border-color-hover: hsl(var(--base-h), 15%, calc(13% + 65%));
+  --checkbox-border-color: hsl(212, 15%, calc(13% + 30%));
+  --checkbox-border-color-hover: hsl(212, 15%, calc(13% + 65%));
   --code-background: #282c34;
   --code-normal: #dadada;
-  --code-comment: hsl(var(--base-h), calc(15% - 5%), calc(97% - 30%));
+  --code-comment: hsl(212, 15%, calc(13% + 30%));
   --code-function: #e0de71;
   --code-important: #e9973f;
   --code-keyword: #fa99cd;
   --code-property: #53dfdd;
-  --code-punctuation: hsl(var(--base-h), 15%, calc(13% + 65%));
+  --code-punctuation: hsl(212, 15%, calc(13% + 65%));
   --code-string: #44cf6e;
   --code-tag: #fb464c;
   --code-value: #a882ff;
-  --collapse-icon-color: hsl(var(--base-h), calc(15% - 5%), calc(97% - 30%));
-  --collapse-icon-color-collapsed: hsl(215, 75%, 60%);
+  --collapse-icon-color: hsl(212, 15%, calc(13% + 30%));
+  --collapse-icon-color-collapsed: hsl(215, 75%, 70%);
   --cursor-link: pointer;
   --font-weight: 400;
   --graph-line: var(--color-base-35, rgba(251, 70, 76, 0.6));
-  --graph-node-unresolved: hsl(var(--base-h), calc(15% - 5%), calc(97% - 30%));
+  --graph-node-unresolved: hsl(212, 15%, calc(13% + 30%));
   --graph-node-tag: #44cf6e;
   --h1-font: inherit;
   --h3-line-height: 1.3;
   --hr-color: transparent;
   --hr-thickness: 2px;
-  --icon-color: hsl(var(--base-h), 15%, calc(13% + 65%));
+  --icon-color: hsl(212, 15%, calc(13% + 65%));
   --inline-title-color: #dadada;
   --inline-title-font: inherit;
   --italic-color: inherit;
-  --link-color: hsl(215, 75%, 60%);
-  --link-color-hover: hsl(215, 75%, calc(60% - 10%));
+  --link-color: hsl(215, 75%, 70%);
+  --link-color-hover: hsl(215, 75%, calc(70% + 12%));
   --link-weight: var(--link-weight);
-  --link-external-color: hsl(215, 75%, 60%);
-  --link-external-color-hover: hsl(215, 75%, calc(60% - 10%));
+  --link-external-color: hsl(215, 75%, 70%);
+  --link-external-color-hover: hsl(215, 75%, calc(70% + 12%));
   --link-external-filter: none;
   --nav-item-background-hover: #12161c;
   --nav-item-children-padding-start: 4px;
   --nav-item-children-margin-start: 12px;
   --p-spacing: 1rem;
-  --search-icon-color: hsl(var(--base-h), 15%, calc(13% + 65%));
-  --tag-color: hsl(215, 75%, 60%);
-  --tag-color-hover: hsl(215, 75%, 60%);
+  --search-icon-color: hsl(212, 15%, calc(13% + 65%));
+  --tag-color: hsl(215, 75%, 70%);
+  --tag-color-hover: hsl(215, 75%, 70%);
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-background: hsla(215, 75%, 60%, 0.1);
@@ -395,7 +406,7 @@ body {
   --background-primary: #1c2127;
   --background-primary-alt: #282c34;
   --background-secondary: #181c20;
-  --background-modifier-hover: rgba(0, 0, 0, 0.067);
+  --background-modifier-hover: rgba(255, 255, 255, 0.067);
   --background-modifier-border: #35393e;
   --background-modifier-border-hover: #3f3f3f;
   --background-modifier-border-focus: #555;
@@ -415,11 +426,6 @@ body {
     "Roboto Mono", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono",
     "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
     "Consolas", "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", var(--font-text-theme), "Arial" !important;
-  height: 100%;
   margin: 0;
   overscroll-behavior: none;
   padding: 0;
@@ -453,7 +459,17 @@ body {
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
-  caret-color: hsl(215, 75%, 60%);
+  caret-color: hsl(215, 75%, 70%);
+  --h1-color: #dadada;
+  --checkbox-radius: 20%;
+  --tag-radius: 5px;
+  contain: initial;
+  height: auto;
+  overflow: auto;
+  padding-top: 0;
+  --font-text:
+    "??", "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter,
+    Ubuntu, sans-serif, "Arial";
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -499,7 +515,7 @@ html {
     border-style: solid;
     border-color: rgba(158, 158, 158, 0.25);
     border-width: 0px;
-    border-radius: var(--radius-s);
+    border-radius: 4px;
     margin: 1em 0;
     mix-blend-mode: normal;
     background-color: rgba(158, 158, 158, 0.1);
@@ -985,9 +1001,9 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: hsl(var(--base-h), 15%, calc(13% + 65%));
+    color: hsl(212, 15%, calc(13% + 65%));
     font-family: inherit;
-    font-size: var(--h6-size);
+    font-size: 0.9rem;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -1023,7 +1039,7 @@ body {
     padding: 12px 16px;
     min-height: 38px;
     background-color: #282c34;
-    border-radius: var(--radius-s);
+    border-radius: 4px;
     white-space: pre-wrap;
     border: 0px solid transparent;
     overflow-x: auto;
@@ -1098,7 +1114,7 @@ body {
       "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
       "Consolas", "Source Code Pro", monospace;
     background-color: #282c34;
-    border-radius: var(--radius-s);
+    border-radius: 4px;
     font-size: 1em;
     padding: 0.15em 0.3em;
     border: 0px solid transparent;
@@ -1114,7 +1130,7 @@ body {
     height: auto;
     background-color: transparent;
     box-shadow: none;
-    color: hsl(var(--base-h), 15%, calc(13% + 65%));
+    color: hsl(212, 15%, calc(13% + 65%));
     font-size: calc(16px * 0.8);
     font-family:
       "??",
@@ -1158,7 +1174,7 @@ body {
 
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: hsl(var(--base-h), calc(15% - 5%), calc(97% - 30%));
+    color: hsl(212, 15%, calc(13% + 30%));
   }
 
   /* BACKLINKS */
@@ -1269,7 +1285,7 @@ body {
           var(--nav-item-children-margin-left)
         );
         margin-bottom: 1px;
-        border-inline-start: 1px solid rgba(0, 0, 0, 0.12);
+        border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
       }
       ul.explorer-ul li {
         text-overflow: ellipsis;
@@ -1277,7 +1293,7 @@ body {
 
         a {
           padding: 6px 8px 6px 24px;
-          border-radius: var(--radius-s);
+          border-radius: 4px;
           color: #dadada;
           cursor: pointer;
           display: flex;
@@ -1548,7 +1564,7 @@ body {
                 color: #dadada;
 
                 &.match-tag {
-                  color: hsl(215, 75%, 60%);
+                  color: hsl(215, 75%, 70%);
                 }
               }
             }
@@ -1623,10 +1639,10 @@ body {
       0px 1px 2px #000000,
       0px 3.4px 6.7px #000000,
       0px 15px 30px #000000;
-    display: flex;
     max-height: 95vh;
     position: absolute;
     z-index: 30;
+    display: none;
 
     display: block;
     position: fixed;

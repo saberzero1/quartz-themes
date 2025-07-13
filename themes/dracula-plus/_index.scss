@@ -38,6 +38,21 @@ html[saved-theme="dark"] {
   --color-base-100: #dadada;
   --color-accent-hsl: 258, 88%, 66%;
   --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --background-primary: #020517;
+  --background-primary-alt: #44475a;
+  --background-secondary: #020517;
+  --checkbox-color: #bd93f9;
+  --code-background: #1d1c39;
+  --color-cyan: #00ffff;
+  --color-pink: #ff22b1;
+  --color-yellow: #e9e90c;
+  --hr-color: white;
+  --text-accent: #ffb86c;
+  --text-accent-hover: #8be9fd;
+  --text-faint: #bd93f9;
+  --text-highlight-bg: #ff5555ce;
+  --text-muted: #f8f8f2;
+  --text-normal: #f8f8f2;
 }
 
 .darkmode {
@@ -197,7 +212,7 @@ body {
   --collapse-icon-color-collapsed: #ffb86c;
   --cursor-link: pointer;
   --font-weight: 400;
-  --graph-line: var(--color-base-35, rgba(251, 70, 76, 0.6));
+  --graph-line: var(--color-base-35, rgba(61, 0, 0, 0.6));
   --graph-node-unresolved: #bd93f9;
   --graph-node-tag: #44cf6e;
   --h1-color: inherit;
@@ -248,13 +263,14 @@ body {
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
   --font-monospace:
-    "??", var(--font-monospace-theme), ui-monospace, SFMono-Regular,
-    "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono",
-    Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+    "??", "JetBrains Mono", "Fira Code", Menlo, SFMono-Regular, Consolas,
+    "Roboto Mono", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono",
+    "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
+    "Consolas", "Source Code Pro", monospace;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -925,9 +941,10 @@ body {
   code {
     color: #f8f8f2;
     font-family:
-      "??", var(--font-monospace-theme), ui-monospace, SFMono-Regular,
-      "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono",
-      Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+      "??", "JetBrains Mono", "Fira Code", Menlo, SFMono-Regular, Consolas,
+      "Roboto Mono", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono",
+      "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
+      "Consolas", "Source Code Pro", monospace;
     background-color: #1d1c39;
     border-radius: 4px;
     font-size: 1em;
@@ -1094,7 +1111,7 @@ body {
           var(--nav-item-children-margin-left)
         );
         margin-bottom: 1px;
-        border-inline-start: 1px solid var(--indentation-guide-color);
+        border-inline-start: 1px solid #ffffff30;
       }
       ul.explorer-ul li {
         text-overflow: ellipsis;
@@ -1110,10 +1127,10 @@ body {
           line-height: 1.3;
           margin-bottom: 2px;
           font-size: 14px;
-          border-bottom-left-radius: 0 !important;
-          border-bottom-right-radius: 0 !important;
-          border-top-left-radius: 0 !important;
-          border-top-right-radius: 0 !important;
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
 
           color: inherit;
           font-size: 1rem;
@@ -1296,7 +1313,7 @@ body {
       & > .search-space {
         background-color: #020517;
 
-        border: 0.5pt solid var(--color-base-40, rgba(251, 70, 76, 0.6));
+        border: 0.5pt solid var(--color-base-40, rgba(61, 0, 0, 0.6));
 
         border-radius: 12px;
 
@@ -1377,7 +1394,7 @@ body {
                 color: #f8f8f2;
 
                 &.match-tag {
-                  color: #8be9fd !important;
+                  color: #8be9fd;
                 }
               }
             }

@@ -23,46 +23,46 @@
     "box-shadow": { "light": "inset 0px 0px 0px 1px #363636", "dark": null }
   },
   ".ctp-accent-light-rosewater": {
-    "--ctp-accent": { "light": "var(--ctp-rosewater) !important", "dark": null }
+    "--ctp-accent": { "light": "var(--ctp-rosewater)", "dark": null }
   },
   ".ctp-accent-light-flamingo": {
-    "--ctp-accent": { "light": "var(--ctp-flamingo) !important", "dark": null }
+    "--ctp-accent": { "light": "var(--ctp-flamingo)", "dark": null }
   },
   ".ctp-accent-light-pink": {
-    "--ctp-accent": { "light": "var(--ctp-pink) !important", "dark": null }
+    "--ctp-accent": { "light": "var(--ctp-pink)", "dark": null }
   },
   ".ctp-accent-light-mauve": {
-    "--ctp-accent": { "light": "var(--ctp-mauve) !important", "dark": null }
+    "--ctp-accent": { "light": "var(--ctp-mauve)", "dark": null }
   },
   ".ctp-accent-light-red": {
-    "--ctp-accent": { "light": "var(--ctp-red) !important", "dark": null }
+    "--ctp-accent": { "light": "var(--ctp-red)", "dark": null }
   },
   ".ctp-accent-light-maroon": {
-    "--ctp-accent": { "light": "var(--ctp-maroon) !important", "dark": null }
+    "--ctp-accent": { "light": "var(--ctp-maroon)", "dark": null }
   },
   ".ctp-accent-light-peach": {
-    "--ctp-accent": { "light": "var(--ctp-peach) !important", "dark": null }
+    "--ctp-accent": { "light": "var(--ctp-peach)", "dark": null }
   },
   ".ctp-accent-light-yellow": {
-    "--ctp-accent": { "light": "var(--ctp-yellow) !important", "dark": null }
+    "--ctp-accent": { "light": "var(--ctp-yellow)", "dark": null }
   },
   ".ctp-accent-light-green": {
-    "--ctp-accent": { "light": "var(--ctp-green) !important", "dark": null }
+    "--ctp-accent": { "light": "var(--ctp-green)", "dark": null }
   },
   ".ctp-accent-light-teal": {
-    "--ctp-accent": { "light": "var(--ctp-teal) !important", "dark": null }
+    "--ctp-accent": { "light": "var(--ctp-teal)", "dark": null }
   },
   ".ctp-accent-light-sky": {
-    "--ctp-accent": { "light": "var(--ctp-sky) !important", "dark": null }
+    "--ctp-accent": { "light": "var(--ctp-sky)", "dark": null }
   },
   ".ctp-accent-light-sapphire": {
-    "--ctp-accent": { "light": "var(--ctp-sapphire) !important", "dark": null }
+    "--ctp-accent": { "light": "var(--ctp-sapphire)", "dark": null }
   },
   ".ctp-accent-light-blue": {
-    "--ctp-accent": { "light": "var(--ctp-blue) !important", "dark": null }
+    "--ctp-accent": { "light": "var(--ctp-blue)", "dark": null }
   },
   ".ctp-accent-light-lavender": {
-    "--ctp-accent": { "light": "var(--ctp-lavender) !important", "dark": null }
+    "--ctp-accent": { "light": "var(--ctp-lavender)", "dark": null }
   },
   ".ctp-latte": {
     "--ctp-base": {
@@ -455,8 +455,14 @@
   ".dropdown": {
     "background-image": {
       "light": null,
-      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+      "dark": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
     }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  input": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  textarea": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -465,7 +471,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))\n    drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {

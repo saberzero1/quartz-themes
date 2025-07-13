@@ -106,7 +106,7 @@ body {
   --bold-weight: calc(600 + 200);
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --checkbox-marker-color: var(--background-primary);
+  --checkbox-marker-color: #000;
   --checkbox-color: hsl(258, 88%, 66%);
   --checkbox-color-hover: hsl(
     calc(258 - 3),
@@ -141,7 +141,7 @@ body {
   --hr-color: transparent;
   --hr-thickness: 2px;
   --icon-color: #b3b3b3;
-  --inline-title-color: var(--h1-color);
+  --inline-title-color: #7aa2f7;
   --inline-title-font: inherit;
   --italic-color: inherit;
   --link-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
@@ -186,10 +186,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -213,12 +213,20 @@ body {
     sans-serif;
   line-height: 1.3;
   font-size: 16px;
-  background-color: var(--background-primary);
+  background-color: #000;
   color: #dadada;
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
   caret-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --background-primary: #000;
+  --background-primary-alt: #000;
+  --background-secondary: #000;
+  --background-modifier-border: #999999;
+  --background-modifier-border-hover: #555555;
+  --background-modifier-border-focus: #555555;
+  --graph-line: var(--color-base-40, rgba(251, 70, 76, 0.6));
+  --h1-color: #7aa2f7;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -426,7 +434,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
 
-  background-color: var(--background-primary);
+  background-color: #000;
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -455,13 +463,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: var(--background-primary);
+      background-color: #000;
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: var(--background-primary);
+        background-color: #000;
 
         background-color: var(--background-primary);
       }
@@ -470,7 +478,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: var(--background-primary);
+          background-color: #000;
 
           background-color: var(--background-secondary);
 
@@ -658,9 +666,9 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 700;
-    color: var(--h1-color);
+    color: #7aa2f7;
     font-family: inherit;
-    font-size: var(--header-size);
+    font-size: 1.25em;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -680,7 +688,7 @@ body {
     --font-weight: 600;
     color: #7aa2f7;
     font-family: inherit;
-    font-size: var(--header-size);
+    font-size: 1.25em;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -698,7 +706,7 @@ body {
     --font-weight: 600;
     color: #7aa2f7;
     font-family: inherit;
-    font-size: var(--header-size);
+    font-size: 1.25em;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -716,7 +724,7 @@ body {
     --font-weight: 600;
     color: #7aa2f7;
     font-family: inherit;
-    font-size: var(--header-size);
+    font-size: 1.25em;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -734,7 +742,7 @@ body {
     --font-weight: 600;
     color: #7aa2f7;
     font-family: inherit;
-    font-size: var(--header-size);
+    font-size: 1.25em;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -752,7 +760,7 @@ body {
     --font-weight: 600;
     color: #7aa2f7;
     font-family: inherit;
-    font-size: var(--h6-size);
+    font-size: 1.25em;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -927,7 +935,7 @@ body {
       --font-weight: 600;
       color: #7aa2f7;
       font-family: inherit;
-      font-size: var(--header-size);
+      font-size: 1.25em;
       font-style: normal;
       font-variant: normal;
       font-weight: 600;
@@ -958,7 +966,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: var(--background-primary);
+        background-color: #000;
 
         background-color: var(--background-secondary);
 
@@ -1099,7 +1107,7 @@ body {
         --font-weight: 600;
         color: #7aa2f7;
         font-family: inherit;
-        font-size: var(--header-size);
+        font-size: 1.25em;
         font-style: normal;
         font-variant: normal;
         font-weight: 600;
@@ -1137,7 +1145,7 @@ body {
       --font-weight: 600;
       color: #7aa2f7;
       font-family: inherit;
-      font-size: var(--header-size);
+      font-size: 1.25em;
       font-style: normal;
       font-variant: normal;
       font-weight: 600;
@@ -1223,7 +1231,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: var(--background-primary);
+        background-color: #000;
 
         border: 0.5pt solid var(--color-base-40, rgba(251, 70, 76, 0.6));
 
@@ -1242,7 +1250,7 @@ body {
           width: 100%;
           padding: 24px;
           padding-inline-end: 48px;
-          background-color: var(--background-primary);
+          background-color: #000;
           font-size: 16px;
           border: none;
           height: 48px;
@@ -1374,7 +1382,7 @@ body {
 
   /* POPOVER */
   .popover {
-    background-color: var(--background-primary);
+    background-color: #000;
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow:
@@ -1394,7 +1402,7 @@ body {
     & .popover-inner {
       border: 1px solid transparent;
 
-      background-color: var(--background-primary);
+      background-color: #000;
 
       border-radius: 8px;
 

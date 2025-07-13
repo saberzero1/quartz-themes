@@ -41,11 +41,11 @@
       "dark": null
     },
     "--color-accent-1": {
-      "light": "hsl( calc(var(--accent-h) - 1), calc(var(--accent-s) * 1.01), calc(var(--accent-l) * 1.075) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 1),\n    calc(var(--accent-s) * 1.01),\n    calc(var(--accent-l) * 1.075)\n  )",
       "dark": null
     },
     "--color-accent-2": {
-      "light": "hsl( calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 3),\n    calc(var(--accent-s) * 1.02),\n    calc(var(--accent-l) * 1.15)\n  )",
       "dark": null
     },
     "--background-secondary-alt": {
@@ -55,11 +55,11 @@
     "--background-modifier-box-shadow": { "light": "#000000", "dark": null },
     "--background-modifier-cover": { "light": "#dcdcdc", "dark": null },
     "--input-shadow": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--input-shadow-hover": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--shadow-s": {
@@ -387,7 +387,7 @@
     "--accent-h": { "light": "266", "dark": null },
     "--accent-s": { "light": "85%", "dark": null },
     "--accent-l": { "light": "58%", "dark": null },
-    "--canvas-color": { "light": "136, 57, 239 !important", "dark": null },
+    "--canvas-color": { "light": "136, 57, 239", "dark": null },
     "--code-important": { "light": "var(--color-yellow)", "dark": null },
     "--code-boolean": { "light": "var(--peach)", "dark": null },
     "--code-builtin": { "light": "var(--peach)", "dark": null },
@@ -415,7 +415,7 @@
     "--bright-purple": "#d3869b",
     "--bright-red": "#fb4934",
     "--bright-yellow": "#fabd2f",
-    "--canvas-color": "152, 151, 26 !important",
+    "--canvas-color": "152, 151, 26",
     "--code-boolean": {
       "light": "var(--faded-purple)",
       "dark": "var(--bright-purple)"
@@ -555,7 +555,7 @@
     "--bright-purple": "#d3869b",
     "--bright-red": "#fb4934",
     "--bright-yellow": "#fabd2f",
-    "--canvas-color": "152, 151, 26 !important",
+    "--canvas-color": "152, 151, 26",
     "--code-boolean": {
       "light": "var(--faded-purple)",
       "dark": "var(--bright-purple)"
@@ -695,7 +695,7 @@
     "--bright-purple": "#d3869b",
     "--bright-red": "#fb4934",
     "--bright-yellow": "#fabd2f",
-    "--canvas-color": "152, 151, 26 !important",
+    "--canvas-color": "152, 151, 26",
     "--code-boolean": {
       "light": "var(--faded-purple)",
       "dark": "var(--bright-purple)"
@@ -864,7 +864,7 @@
     "--accent-h": { "light": "346", "dark": null },
     "--accent-s": { "light": "77%", "dark": null },
     "--accent-l": { "light": "63%", "dark": null },
-    "--canvas-color": { "light": "233, 86, 120 !important", "dark": null },
+    "--canvas-color": { "light": "233, 86, 120", "dark": null },
     "--code-important": { "light": "var(--color-yellow)", "dark": null },
     "--code-boolean": { "light": "var(--crimson)", "dark": null },
     "--code-builtin": { "light": "var(--elm)", "dark": null },
@@ -945,7 +945,7 @@
     "--accent-h": { "light": "196", "dark": null },
     "--accent-s": { "light": "35%", "dark": null },
     "--accent-l": { "light": "47%", "dark": null },
-    "--canvas-color": { "light": "78, 140, 162 !important", "dark": null },
+    "--canvas-color": { "light": "78, 140, 162", "dark": null },
     "--code-important": { "light": "var(--color-yellow)", "dark": null },
     "--code-boolean": { "light": "var(--lotusOrange)", "dark": null },
     "--code-builtin": { "light": "var(--lotusTeal2)", "dark": null },
@@ -1002,7 +1002,7 @@
     "--accent-h": { "light": "3", "dark": null },
     "--accent-s": { "light": "53%", "dark": null },
     "--accent-l": { "light": "67%", "dark": null },
-    "--canvas-color": { "light": "215, 130, 126 !important", "dark": null },
+    "--canvas-color": { "light": "215, 130, 126", "dark": null },
     "--code-important": { "light": "var(--color-yellow)", "dark": null },
     "--code-boolean": { "light": "var(--rose)", "dark": null },
     "--code-builtin": { "light": "var(--love)", "dark": null },
@@ -1072,7 +1072,7 @@
     "--accent-h": { "light": "265", "dark": null },
     "--accent-s": { "light": "47%", "dark": null },
     "--accent-l": { "light": "51%", "dark": null },
-    "--canvas-color": { "light": "120, 71, 189 !important", "dark": null },
+    "--canvas-color": { "light": "120, 71, 189", "dark": null },
     "--code-important": { "light": "var(--color-yellow)", "dark": null },
     "--code-boolean": { "light": "var(--orange)", "dark": null },
     "--code-builtin": { "light": "var(--color-cyan)", "dark": null },
@@ -1095,8 +1095,14 @@
   ".dropdown": {
     "background-image": {
       "light": null,
-      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+      "dark": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
     }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  input": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  textarea": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -1105,7 +1111,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))\n    drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {
@@ -1206,6 +1212,55 @@
   ".is-tablet .suggestion-container": {
     "background-color": { "light": null, "dark": "var(--background-secondary)" }
   },
+  ".color-scheme-atom-one-dark": {
+    "--black": { "light": null, "dark": "#181a1f" },
+    "--darkest-gray": { "light": null, "dark": "#21252b" },
+    "--bg0": { "light": null, "dark": "#282c34" },
+    "--bg1": { "light": null, "dark": "#31353f" },
+    "--bg2": { "light": null, "dark": "#393f4a" },
+    "--bg3": { "light": null, "dark": "#3b3f4c" },
+    "--bg-blue": { "light": null, "dark": "#73b8f1" },
+    "--bg-yellow": { "light": null, "dark": "#ebd09c" },
+    "--foreground": { "light": null, "dark": "#abb2bf" },
+    "--grey": { "light": null, "dark": "#5c6370" },
+    "--light-grey": { "light": null, "dark": "#848b98" },
+    "--color-red": { "light": null, "dark": "#e86671" },
+    "--color-orange": { "light": null, "dark": "#d19a66" },
+    "--color-yellow": { "light": null, "dark": "#e5c07b" },
+    "--color-green": { "light": null, "dark": "#98c379" },
+    "--color-cyan": { "light": null, "dark": "#56b6c2" },
+    "--color-blue": { "light": null, "dark": "#61afef" },
+    "--color-purple": { "light": null, "dark": "#c678dd" },
+    "--color-pink": { "light": null, "dark": "pink" },
+    "--background-primary": { "light": null, "dark": "var(--bg0)" },
+    "--background-secondary": { "light": null, "dark": "var(--darkest-gray)" },
+    "--selection-background-color": { "light": null, "dark": "var(--bg3)" },
+    "--border-color-primary": { "light": null, "dark": "var(--bg2)" },
+    "--border-color-secondary": { "light": null, "dark": "var(--bg1)" },
+    "--text-color": { "light": null, "dark": "var(--foreground)" },
+    "--text-color-accent": { "light": null, "dark": "white" },
+    "--text-color-muted-dark": { "light": null, "dark": "var(--bg2)" },
+    "--text-color-muted-light": { "light": null, "dark": "var(--grey)" },
+    "--accent-color-dark": { "light": null, "dark": "var(--color-blue)" },
+    "--accent-color-light": { "light": null, "dark": "var(--color-cyan)" },
+    "--accent-color-hover": { "light": null, "dark": "var(--bg-blue)" },
+    "--accent-h": { "light": null, "dark": "207" },
+    "--accent-s": { "light": null, "dark": "82%" },
+    "--accent-l": { "light": null, "dark": "66%" },
+    "--canvas-color": { "light": null, "dark": "97, 175, 239" },
+    "--code-important": { "light": null, "dark": "var(--color-yellow)" },
+    "--code-boolean": { "light": null, "dark": "var(--color-orange)" },
+    "--code-builtin": { "light": null, "dark": "var(--color-cyan)" },
+    "--code-comment": { "light": null, "dark": "var(--grey)" },
+    "--code-definition": { "light": null, "dark": "var(--color-blue)" },
+    "--code-keyword": { "light": null, "dark": "var(--color-purple)" },
+    "--code-operator": { "light": null, "dark": "var(--color-cyan)" },
+    "--code-property": { "light": null, "dark": "var(--color-cyan)" },
+    "--code-parentheses": { "light": null, "dark": "var(--light-grey)" },
+    "--code-string": { "light": null, "dark": "var(--color-green)" },
+    "--code-value": { "light": null, "dark": "var(--color-orange)" },
+    "--code-variable": { "light": null, "dark": "var(--text-color)" }
+  },
   ".color-scheme-catppuccin-frappe": {
     "--rosewater": { "light": null, "dark": "#f2d5cf" },
     "--flamingo": { "light": null, "dark": "#eebebe" },
@@ -1259,7 +1314,7 @@
     "--accent-h": { "light": null, "dark": "277" },
     "--accent-s": { "light": null, "dark": "59%" },
     "--accent-l": { "light": null, "dark": "76%" },
-    "--canvas-color": { "light": null, "dark": "202, 158, 230 !important" },
+    "--canvas-color": { "light": null, "dark": "202, 158, 230" },
     "--code-important": { "light": null, "dark": "var(--color-yellow)" },
     "--code-boolean": { "light": null, "dark": "var(--peach)" },
     "--code-builtin": { "light": null, "dark": "var(--peach)" },
@@ -1326,7 +1381,7 @@
     "--accent-h": { "light": null, "dark": "267" },
     "--accent-s": { "light": null, "dark": "83%" },
     "--accent-l": { "light": null, "dark": "80%" },
-    "--canvas-color": { "light": null, "dark": "198, 160, 246 !important" },
+    "--canvas-color": { "light": null, "dark": "198, 160, 246" },
     "--code-important": { "light": null, "dark": "var(--color-yellow)" },
     "--code-boolean": { "light": null, "dark": "var(--peach)" },
     "--code-builtin": { "light": null, "dark": "var(--peach)" },
@@ -1393,7 +1448,7 @@
     "--accent-h": { "light": null, "dark": "267" },
     "--accent-s": { "light": null, "dark": "84%" },
     "--accent-l": { "light": null, "dark": "81%" },
-    "--canvas-color": { "light": null, "dark": "203, 166, 247 !important" },
+    "--canvas-color": { "light": null, "dark": "203, 166, 247" },
     "--code-important": { "light": null, "dark": "var(--color-yellow)" },
     "--code-boolean": { "light": null, "dark": "var(--peach)" },
     "--code-builtin": { "light": null, "dark": "var(--peach)" },
@@ -1459,7 +1514,7 @@
     "--accent-h": { "light": null, "dark": "265" },
     "--accent-s": { "light": null, "dark": "89%" },
     "--accent-l": { "light": null, "dark": "78%" },
-    "--canvas-color": { "light": null, "dark": "189, 147, 249 !important" },
+    "--canvas-color": { "light": null, "dark": "189, 147, 249" },
     "--code-important": { "light": null, "dark": "var(--color-yellow)" },
     "--code-boolean": { "light": null, "dark": "var(--purple)" },
     "--code-builtin": { "light": null, "dark": "var(--green)" },
@@ -1525,7 +1580,7 @@
     "--accent-h": { "light": null, "dark": "262" },
     "--accent-s": { "light": null, "dark": "61%" },
     "--accent-l": { "light": null, "dark": "77%" },
-    "--canvas-color": { "light": null, "dark": "186, 160, 232 !important" },
+    "--canvas-color": { "light": null, "dark": "186, 160, 232" },
     "--code-important": { "light": null, "dark": "var(--color-yellow)" },
     "--code-boolean": { "light": null, "dark": "var(--purple)" },
     "--code-builtin": { "light": null, "dark": "var(--green)" },
@@ -1582,7 +1637,7 @@
     "--accent-h": { "light": null, "dark": "345" },
     "--accent-s": { "light": null, "dark": "77%" },
     "--accent-l": { "light": null, "dark": "62%" },
-    "--canvas-color": { "light": null, "dark": "233, 83, 120 !important" },
+    "--canvas-color": { "light": null, "dark": "233, 83, 120" },
     "--code-important": { "light": null, "dark": "var(--color-yellow)" },
     "--code-boolean": { "light": null, "dark": "var(--apricot)" },
     "--code-builtin": { "light": null, "dark": "var(--turquoise)" },
@@ -1653,7 +1708,7 @@
     "--accent-h": { "light": null, "dark": "220" },
     "--accent-s": { "light": null, "dark": "18%" },
     "--accent-l": { "light": null, "dark": "65%" },
-    "--canvas-color": { "light": null, "dark": "148, 159, 181 !important" },
+    "--canvas-color": { "light": null, "dark": "148, 159, 181" },
     "--code-important": { "light": null, "dark": "var(--color-yellow)" },
     "--code-boolean": { "light": null, "dark": "var(--dragonOrange)" },
     "--code-builtin": { "light": null, "dark": "var(--dragonTeal)" },
@@ -1713,7 +1768,7 @@
     "--accent-h": { "light": null, "dark": "220" },
     "--accent-s": { "light": null, "dark": "54%" },
     "--accent-l": { "light": null, "dark": "67%" },
-    "--canvas-color": { "light": null, "dark": "126, 156, 216 !important" },
+    "--canvas-color": { "light": null, "dark": "126, 156, 216" },
     "--code-important": { "light": null, "dark": "var(--color-yellow)" },
     "--code-boolean": { "light": null, "dark": "var(--surimiOrange)" },
     "--code-builtin": { "light": null, "dark": "var(--crystalBlue)" },
@@ -1771,7 +1826,7 @@
     "--accent-h": { "light": null, "dark": "210" },
     "--accent-s": { "light": null, "dark": "34%" },
     "--accent-l": { "light": null, "dark": "63%" },
-    "--canvas-color": { "light": null, "dark": "129, 161, 193 !important" },
+    "--canvas-color": { "light": null, "dark": "129, 161, 193" },
     "--code-important": { "light": null, "dark": "var(--color-yellow)" },
     "--code-boolean": { "light": null, "dark": "var(--glacier)" },
     "--code-builtin": { "light": null, "dark": "var(--off-blue)" },
@@ -1828,7 +1883,7 @@
     "--accent-h": { "light": null, "dark": "197" },
     "--accent-s": { "light": null, "dark": "49%" },
     "--accent-l": { "light": null, "dark": "38%" },
-    "--canvas-color": { "light": null, "dark": "49, 116, 143 !important" },
+    "--canvas-color": { "light": null, "dark": "49, 116, 143" },
     "--code-important": { "light": null, "dark": "var(--color-yellow)" },
     "--code-boolean": { "light": null, "dark": "var(--rose)" },
     "--code-builtin": { "light": null, "dark": "var(--love)" },
@@ -1885,7 +1940,7 @@
     "--accent-h": { "light": null, "dark": "197" },
     "--accent-s": { "light": null, "dark": "48%" },
     "--accent-l": { "light": null, "dark": "47%" },
-    "--canvas-color": { "light": null, "dark": "62, 143, 176 !important" },
+    "--canvas-color": { "light": null, "dark": "62, 143, 176" },
     "--code-important": { "light": null, "dark": "var(--color-yellow)" },
     "--code-boolean": { "light": null, "dark": "var(--rose)" },
     "--code-builtin": { "light": null, "dark": "var(--love)" },
@@ -1955,7 +2010,7 @@
     "--accent-h": { "light": null, "dark": "261" },
     "--accent-s": { "light": null, "dark": "85%" },
     "--accent-l": { "light": null, "dark": "79%" },
-    "--canvas-color": { "light": null, "dark": "187, 154, 247 !important" },
+    "--canvas-color": { "light": null, "dark": "187, 154, 247" },
     "--code-important": { "light": null, "dark": "var(--color-yellow)" },
     "--code-boolean": { "light": null, "dark": "var(--orange)" },
     "--code-builtin": { "light": null, "dark": "var(--color-cyan)" },
@@ -2025,7 +2080,7 @@
     "--accent-h": { "light": null, "dark": "263" },
     "--accent-s": { "light": null, "dark": "100%" },
     "--accent-l": { "light": null, "dark": "80%" },
-    "--canvas-color": { "light": null, "dark": "192, 153, 255 !important" },
+    "--canvas-color": { "light": null, "dark": "192, 153, 255" },
     "--code-important": { "light": null, "dark": "var(--color-yellow)" },
     "--code-boolean": { "light": null, "dark": "var(--orange)" },
     "--code-builtin": { "light": null, "dark": "var(--color-cyan)" },
@@ -2095,7 +2150,7 @@
     "--accent-h": { "light": null, "dark": "261" },
     "--accent-s": { "light": null, "dark": "85%" },
     "--accent-l": { "light": null, "dark": "79%" },
-    "--canvas-color": { "light": null, "dark": "187, 154, 247 !important" },
+    "--canvas-color": { "light": null, "dark": "187, 154, 247" },
     "--code-important": { "light": null, "dark": "var(--color-yellow)" },
     "--code-boolean": { "light": null, "dark": "var(--orange)" },
     "--code-builtin": { "light": null, "dark": "var(--color-cyan)" },

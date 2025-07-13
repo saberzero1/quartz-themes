@@ -299,10 +299,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -383,14 +383,14 @@ html {
     margin: 1em 0;
     mix-blend-mode: normal;
     padding: 0em;
-    padding-bottom: 0.1em !important;
+    padding-bottom: 0.1em;
     padding-top: 0.1em;
-    margin-top: 0.5em !important;
-    margin-bottom: 0.1em !important;
-    background-color: hsla(258, 88%, 66%, 0.02) !important;
-    box-shadow: inset 0px 0px 0px 0.2em hsla(258, 88%, 66%, 1) !important;
+    margin-top: 0.5em;
+    margin-bottom: 0.1em;
+    background-color: hsla(258, 88%, 66%, 0.02);
+    box-shadow: inset 0px 0px 0px 0.2em hsla(258, 88%, 66%, 1);
 
-    background-color: hsla(258, 88%, 66%, 0.02) !important;
+    background-color: hsla(258, 88%, 66%, 0.02);
 
     /*background-color: var(--bg);*/
     border-color: var(--border);
@@ -399,111 +399,111 @@ html {
     overflow-y: hidden;
 
     &[data-callout] {
-      background-color: hsla(258, 88%, 66%, 0.02) !important;
+      background-color: hsla(258, 88%, 66%, 0.02);
       /*background: var(--bg);*/
     }
     &[data-callout="abstract"] {
-      background-color: hsla(258, 88%, 66%, 0.02) !important;
+      background-color: hsla(258, 88%, 66%, 0.02);
       /*background: var(--bg);*/
     }
     &[data-callout="summary"] {
-      background-color: hsla(258, 88%, 66%, 0.02) !important;
+      background-color: hsla(258, 88%, 66%, 0.02);
       /*background: var(--bg);*/
     }
     &[data-callout="tldr"] {
-      background-color: hsla(258, 88%, 66%, 0.02) !important;
+      background-color: hsla(258, 88%, 66%, 0.02);
       /*background: var(--bg);*/
     }
     &[data-callout="info"] {
-      background-color: hsla(258, 88%, 66%, 0.02) !important;
+      background-color: hsla(258, 88%, 66%, 0.02);
       /*background: var(--bg);*/
     }
     &[data-callout="todo"] {
-      background-color: hsla(258, 88%, 66%, 0.02) !important;
+      background-color: hsla(258, 88%, 66%, 0.02);
       /*background: var(--bg);*/
     }
     &[data-callout="important"] {
-      background-color: hsla(258, 88%, 66%, 0.02) !important;
+      background-color: hsla(258, 88%, 66%, 0.02);
       /*background: var(--bg);*/
     }
     &[data-callout="tip"] {
-      background-color: hsla(258, 88%, 66%, 0.02) !important;
+      background-color: hsla(258, 88%, 66%, 0.02);
       /*background: var(--bg);*/
     }
     &[data-callout="hint"] {
-      background-color: hsla(258, 88%, 66%, 0.02) !important;
+      background-color: hsla(258, 88%, 66%, 0.02);
       /*background: var(--bg);*/
     }
     &[data-callout="success"] {
-      background-color: hsla(258, 88%, 66%, 0.02) !important;
+      background-color: hsla(258, 88%, 66%, 0.02);
       /*background: var(--bg);*/
     }
     &[data-callout="check"] {
-      background-color: hsla(258, 88%, 66%, 0.02) !important;
+      background-color: hsla(258, 88%, 66%, 0.02);
       /*background: var(--bg);*/
     }
     &[data-callout="done"] {
-      background-color: hsla(258, 88%, 66%, 0.02) !important;
+      background-color: hsla(258, 88%, 66%, 0.02);
       /*background: var(--bg);*/
     }
     &[data-callout="question"] {
-      background-color: hsla(258, 88%, 66%, 0.02) !important;
+      background-color: hsla(258, 88%, 66%, 0.02);
       /*background: var(--bg);*/
     }
     &[data-callout="help"] {
-      background-color: hsla(258, 88%, 66%, 0.02) !important;
+      background-color: hsla(258, 88%, 66%, 0.02);
       /*background: var(--bg);*/
     }
     &[data-callout="faq"] {
-      background-color: hsla(258, 88%, 66%, 0.02) !important;
+      background-color: hsla(258, 88%, 66%, 0.02);
       /*background: var(--bg);*/
     }
     &[data-callout="warning"] {
-      background-color: hsla(258, 88%, 66%, 0.02) !important;
+      background-color: hsla(258, 88%, 66%, 0.02);
       /*background: var(--bg);*/
     }
     &[data-callout="caution"] {
-      background-color: hsla(258, 88%, 66%, 0.02) !important;
+      background-color: hsla(258, 88%, 66%, 0.02);
       /*background: var(--bg);*/
     }
     &[data-callout="attention"] {
-      background-color: hsla(258, 88%, 66%, 0.02) !important;
+      background-color: hsla(258, 88%, 66%, 0.02);
       /*background: var(--bg);*/
     }
     &[data-callout="failure"] {
-      background-color: hsla(258, 88%, 66%, 0.02) !important;
+      background-color: hsla(258, 88%, 66%, 0.02);
       /*background: var(--bg);*/
     }
     &[data-callout="fail"] {
-      background-color: hsla(258, 88%, 66%, 0.02) !important;
+      background-color: hsla(258, 88%, 66%, 0.02);
       /*background: var(--bg);*/
     }
     &[data-callout="missing"] {
-      background-color: hsla(258, 88%, 66%, 0.02) !important;
+      background-color: hsla(258, 88%, 66%, 0.02);
       /*background: var(--bg);*/
     }
     &[data-callout="danger"] {
-      background-color: hsla(258, 88%, 66%, 0.02) !important;
+      background-color: hsla(258, 88%, 66%, 0.02);
       /*background: var(--bg);*/
     }
     &[data-callout="error"] {
-      background-color: hsla(258, 88%, 66%, 0.02) !important;
+      background-color: hsla(258, 88%, 66%, 0.02);
       /*background: var(--bg);*/
     }
     &[data-callout="bug"] {
-      background-color: hsla(258, 88%, 66%, 0.02) !important;
+      background-color: hsla(258, 88%, 66%, 0.02);
       /*background: var(--bg);*/
     }
     &[data-callout="example"] {
-      background-color: hsla(258, 88%, 66%, 0.02) !important;
+      background-color: hsla(258, 88%, 66%, 0.02);
       /*background: var(--bg);*/
     }
     &[data-callout="quote"] {
-      background-color: hsla(258, 88%, 66%, 0.02) !important;
+      background-color: hsla(258, 88%, 66%, 0.02);
       /*background: var(--bg);*/
     }
     &[data-callout="cite"] {
-      background-color: hsla(258, 88%, 66%, 0.02) !important;
+      background-color: hsla(258, 88%, 66%, 0.02);
       /*background: var(--bg);*/
     }
   }

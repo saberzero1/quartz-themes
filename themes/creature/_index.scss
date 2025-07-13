@@ -47,8 +47,8 @@ html[saved-theme="dark"] {
   --text-normal: #ffffff;
   --text-faint: #ffffff;
   --text-muted: #ffffff;
-  --text-accent: var(--primary);
-  --text-accent-hover: var(--primary-hover);
+  --text-accent: #2edb6e;
+  --text-accent-hover: #44df7d;
   --text-highlight-bg: #009fff;
   --background-modifier-border: #323232;
 }
@@ -164,6 +164,13 @@ html[saved-theme="dark"] {
   --h1-color: var(--text-normal);
 
   --nav-item-background-hover: var(--background-modifier-hover);
+  --border: #323232;
+  --default-font:
+    -apple-system, blinkmacsystemfont, Segoe UI, roboto, oxygen, ubuntu,
+    cantarell, Open Sans, Helvetica Neue, sans-serif;
+  --font-monospace:
+    "SF Mono", SFMono-Regular, consolas, Liberation Mono, menlo, courier,
+    monospace;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -215,8 +222,8 @@ body {
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
   --checkbox-marker-color: #1e1e1e;
-  --checkbox-color: var(--primary);
-  --checkbox-color-hover: var(--primary-hover);
+  --checkbox-color: #2edb6e;
+  --checkbox-color-hover: #44df7d;
   --checkbox-border-color: #ffffff;
   --checkbox-border-color-hover: #ffffff;
   --code-background: #1e1e1e;
@@ -231,7 +238,7 @@ body {
   --code-tag: #fb464c;
   --code-value: #a882ff;
   --collapse-icon-color: #ffffff;
-  --collapse-icon-color-collapsed: var(--primary);
+  --collapse-icon-color-collapsed: #2edb6e;
   --cursor-link: pointer;
   --font-weight: 400;
   --graph-line: var(--color-base-35, rgba(251, 70, 76, 0.6));
@@ -246,19 +253,19 @@ body {
   --inline-title-color: inherit;
   --inline-title-font: inherit;
   --italic-color: inherit;
-  --link-color: var(--primary);
-  --link-color-hover: var(--primary-hover);
+  --link-color: #2edb6e;
+  --link-color-hover: #44df7d;
   --link-weight: var(--link-weight);
-  --link-external-color: var(--primary);
-  --link-external-color-hover: var(--primary-hover);
+  --link-external-color: #2edb6e;
+  --link-external-color-hover: #44df7d;
   --link-external-filter: none;
   --nav-item-background-hover: rgba(255, 255, 255, 0.15);
   --nav-item-children-padding-start: 4px;
   --nav-item-children-margin-start: 12px;
   --p-spacing: 1rem;
   --search-icon-color: #ffffff;
-  --tag-color: var(--primary);
-  --tag-color-hover: var(--primary);
+  --tag-color: #2edb6e;
+  --tag-color-hover: #2edb6e;
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -290,10 +297,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -306,7 +313,7 @@ body {
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
-  caret-color: var(--primary);
+  caret-color: #2edb6e;
   -webkit-font-smoothing: subpixel-antialiased;
   font-family:
     -apple-system,
@@ -319,7 +326,7 @@ body {
     Open Sans,
     Helvetica Neue,
     sans-serif;
-  font-size: 16px !important;
+  font-size: 16px;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -1109,7 +1116,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: var(--primary);
+        color: #2edb6e;
 
         text-overflow: ellipsis;
         position: relative;
@@ -1139,7 +1146,7 @@ body {
         &:hover {
           color: #ffffff;
           font-weight: inherit;
-          background-color: #35353561 !important;
+          background-color: #35353561;
 
           font-size: 1rem;
           line-height: 1.5rem;

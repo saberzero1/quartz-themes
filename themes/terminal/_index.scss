@@ -50,6 +50,7 @@ html[saved-theme="dark"] {
   --text-normal: #15d00d;
   --text-muted: #15d00d;
   --text-faint: #15d00d;
+  --text-highlight-bg: #ffff00;
 }
 
 .darkmode {
@@ -177,11 +178,7 @@ body {
   --checkbox-size: 16px;
   --checkbox-marker-color: #000000;
   --checkbox-color: #000000;
-  --checkbox-color-hover: hsl(
-    calc(258 - 5),
-    calc(88% * 1.05),
-    calc(66% * 1.29)
-  );
+  --checkbox-color-hover: #000000;
   --checkbox-border-color: #15d00d;
   --checkbox-border-color-hover: #15d00d;
   --code-background: #000000;
@@ -255,9 +252,9 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -287,7 +284,7 @@ body {
   caret-color: #15d00d;
   line-height: 1.3;
   font-size: 14px;
-  padding-top: 0 !important;
+  padding-top: 0;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -1300,6 +1297,8 @@ body {
         background-color: #000000;
 
         border: 0.5pt solid var(--color-base-40, rgba(61, 0, 0, 0.6));
+
+        border-radius: unset;
 
         box-shadow:
           0px 1.8px 7.3px #000000,

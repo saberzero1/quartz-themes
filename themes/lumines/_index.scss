@@ -39,13 +39,14 @@ html[saved-theme="dark"] {
   --color-base-30: #161616;
   --color-base-35: #191919;
   --color-base-40: #1c1c1c;
+  --color-base-45: #3d3d3d;
   --color-base-50: #404040;
   --color-base-70: #dcdcdc;
   --color-base-100: #dcdcdc;
   --background-secondary: #1e1e1e;
   --background-primary: #0a0a0a;
   --background-primary-alt: #1e1e1e;
-  --h1-color: color-mix(in srgb, hsl(258, 88%, 66%) 100%, var(--color-000) 0%);
+  --h1-color: color-mix(in srgb, hsl(258, 88%, 66%) 100%, #ffffff 0%);
 }
 
 :root[saved-theme="light"],
@@ -252,7 +253,14 @@ html[saved-theme="light"] {
   --h1-color: var(--text-normal);
 
   --nav-item-background-hover: var(--background-modifier-hover);
-  --nav-item-background-active: var(--background-modifier-hover);
+  --color-red: #f87171;
+  --color-orange: #fea362;
+  --color-yellow: #ffe066;
+  --color-green: #69db7c;
+  --color-cyan: #66d9e8;
+  --color-blue: #3b82f6;
+  --color-pink: #faa2c1;
+  --color-purple: #8a5cf5;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -299,7 +307,6 @@ body {
   --h1-color: var(--text-normal);
 
   --nav-item-background-hover: var(--background-modifier-hover);
-  --nav-item-background-active: var(--background-modifier-hover);
   --bold-weight: calc(600 + 200);
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
@@ -337,11 +344,7 @@ body {
   --hr-color: transparent;
   --hr-thickness: 2px;
   --icon-color: #dcdcdc;
-  --inline-title-color: color-mix(
-    in srgb,
-    hsl(258, 88%, 66%) 100%,
-    var(--color-000) 0%
-  );
+  --inline-title-color: color-mix(in srgb, hsl(258, 88%, 66%) 100%, #ffffff 0%);
   --inline-title-font: inherit;
   --link-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
   --link-color-hover: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
@@ -390,10 +393,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -423,6 +426,12 @@ body {
   user-select: none;
   -webkit-user-select: none;
   caret-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --graph-node-tag: hsl(258, 88%, 66%);
+  --graph-node-unresolved: #404040;
+  --graph-line: var(--color-base-45, rgba(251, 70, 76, 0.6));
+  --nav-item-background-hover: transparent;
+  --bold-color: hsl(258, 88%, 66%);
+  --italic-color: hsl(258, 88%, 66%);
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -467,8 +476,8 @@ html {
     overflow: hidden;
     border-style: solid;
     border-color: rgba(158, 158, 158, 0.25);
-    border-width: var(--callout-border-width);
-    border-radius: var(--callout-radius);
+    border-width: 1px;
+    border-radius: 8px;
     margin: 1em 0;
     mix-blend-mode: normal;
     background-color: rgba(158, 158, 158, 0.1);
@@ -864,7 +873,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 700;
-    color: color-mix(in srgb, hsl(258, 88%, 66%) 100%, var(--color-000) 0%);
+    color: color-mix(in srgb, hsl(258, 88%, 66%) 100%, #ffffff 0%);
     font-family: inherit;
     font-size: 1.802em;
     font-style: normal;
@@ -884,7 +893,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: color-mix(in srgb, hsl(258, 88%, 66%) 80%, var(--color-000) 20%);
+    color: color-mix(in srgb, hsl(258, 88%, 66%) 80%, #ffffff 20%);
     font-family: inherit;
     font-size: 1.602em;
     font-style: normal;
@@ -902,7 +911,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: color-mix(in srgb, hsl(258, 88%, 66%) 60%, var(--color-000) 40%);
+    color: color-mix(in srgb, hsl(258, 88%, 66%) 60%, #ffffff 40%);
     font-family: inherit;
     font-size: 1.424em;
     font-style: normal;
@@ -920,7 +929,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: color-mix(in srgb, hsl(258, 88%, 66%) 40%, var(--color-000) 60%);
+    color: color-mix(in srgb, hsl(258, 88%, 66%) 40%, #ffffff 60%);
     font-family: inherit;
     font-size: 1.266em;
     font-style: normal;
@@ -938,7 +947,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: color-mix(in srgb, hsl(258, 88%, 66%) 20%, var(--color-000) 80%);
+    color: color-mix(in srgb, hsl(258, 88%, 66%) 20%, #ffffff 80%);
     font-family: inherit;
     font-size: 1.125em;
     font-style: normal;
@@ -1131,7 +1140,7 @@ body {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
       --font-weight: 600;
-      color: color-mix(in srgb, hsl(258, 88%, 66%) 60%, var(--color-000) 40%);
+      color: color-mix(in srgb, hsl(258, 88%, 66%) 60%, #ffffff 40%);
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1160,7 +1169,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: color-mix(in srgb, hsl(258, 88%, 66%) 80%, var(--color-000) 20%);
+      color: color-mix(in srgb, hsl(258, 88%, 66%) 80%, #ffffff 20%);
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1203,7 +1212,7 @@ body {
           width: 100%;
         }
         &:hover {
-          background-color: var(--nav-item-background-active);
+          background-color: transparent;
           color: #dcdcdc;
           font-weight: inherit;
 
@@ -1254,7 +1263,7 @@ body {
           white-space: nowrap;
           text-overflow: ellipsis;
           margin-right: 24px;
-          padding-right: 34px !important;
+          padding-right: 34px;
 
           color: inherit;
           font-size: 1rem;
@@ -1302,14 +1311,14 @@ body {
 
   /* TOC */
   .toc {
-    color: color-mix(in srgb, hsl(258, 88%, 66%) 60%, var(--color-000) 40%);
+    color: color-mix(in srgb, hsl(258, 88%, 66%) 60%, #ffffff 40%);
 
     button.toc-header {
       h3 {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
         --font-weight: 600;
-        color: color-mix(in srgb, hsl(258, 88%, 66%) 60%, var(--color-000) 40%);
+        color: color-mix(in srgb, hsl(258, 88%, 66%) 60%, #ffffff 40%);
         font-family: inherit;
         font-size: 1.424em;
         font-style: normal;
@@ -1321,7 +1330,7 @@ body {
         margin-block: 0;
       }
 
-      color: color-mix(in srgb, hsl(258, 88%, 66%) 60%, var(--color-000) 40%);
+      color: color-mix(in srgb, hsl(258, 88%, 66%) 60%, #ffffff 40%);
 
       color: inherit;
     }
@@ -1347,7 +1356,7 @@ body {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
       --font-weight: 600;
-      color: color-mix(in srgb, hsl(258, 88%, 66%) 60%, var(--color-000) 40%);
+      color: color-mix(in srgb, hsl(258, 88%, 66%) 60%, #ffffff 40%);
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;

@@ -45,11 +45,11 @@
       "dark": null
     },
     "--color-accent-1": {
-      "light": "hsl( var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2.5%) )",
+      "light": "hsl(\n    var(--accent-h),\n    var(--accent-s),\n    calc(var(--accent-l) + 2.5%)\n  )",
       "dark": null
     },
     "--color-accent-2": {
-      "light": "hsl( var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%) )",
+      "light": "hsl(\n    var(--accent-h),\n    var(--accent-s),\n    calc(var(--accent-l) + 5%)\n  )",
       "dark": null
     },
     "--background-secondary-alt": {
@@ -77,6 +77,25 @@
     "--h6-color-theme": { "light": "var(--text-normal)", "dark": null },
     "--background-modifier-hover-alpha": { "light": "0.32", "dark": null },
     "--color-btn-primary-bg": { "light": "#2da44f", "dark": null },
+    "--color-btn-primary-hover-bg": { "light": "#2c964a", "dark": null },
+    "--kanban-background": {
+      "light": "var(--background-primary)",
+      "dark": null
+    },
+    "--kanban-lane-background": {
+      "light": "var(--background-primary-alt)",
+      "dark": null
+    },
+    "--kanban-item-background": {
+      "light": "var(--background-primary)",
+      "dark": null
+    },
+    "--kanban-lane-border": { "light": "#d8dee4", "dark": null },
+    "--kanban-lane-count": { "light": "#aeb8c133", "dark": null },
+    "--kanban-options-btn": {
+      "light": "var(--background-primary-alt)",
+      "dark": null
+    },
     "--canvas-color": { "light": null, "dark": "126, 126, 126" }
   },
   ".notice progress[value]::-webkit-progress-bar": {
@@ -107,8 +126,14 @@
   ".dropdown": {
     "background-image": {
       "light": null,
-      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+      "dark": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
     }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  input": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  textarea": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -117,7 +142,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))\n    drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {

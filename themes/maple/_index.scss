@@ -39,16 +39,18 @@ html[saved-theme="dark"] {
   --color-base-50: #666666;
   --color-base-70: #b3b3b3;
   --color-base-100: #dadada;
-  --color-accent-hsl: 258, 32% !important, 58% !important;
+  --color-accent-hsl:
+    var(--setting-accent-h-dark, 207), var(--setting-accent-s-dark, 32%),
+    var(--setting-accent-l-dark, 58%);
   --color-accent-2: hsl(
-    calc(258 - 5),
-    calc(32% !important * 1.05),
-    calc(58% !important * 1.29)
+    calc(var(--setting-accent-h-dark, 207) - 5),
+    calc(var(--setting-accent-s-dark, 32%) * 1.05),
+    calc(var(--setting-accent-l-dark, 58%) * 1.29)
   );
   --text-accent: hsl(
-    calc(258 - 3),
-    calc(32% !important * 1.02),
-    calc(58% !important * 1.15)
+    calc(var(--setting-accent-h-dark, 207) - 3),
+    calc(var(--setting-accent-s-dark, 32%) * 1.02),
+    calc(var(--setting-accent-l-dark, 58%) * 1.15)
   );
 }
 
@@ -84,11 +86,13 @@ html[saved-theme="light"] {
   --color-base-50: #ababab;
   --color-base-70: #5c5c5c;
   --color-base-100: #222222;
-  --color-accent-hsl: 258, 32% !important, 58% !important;
+  --color-accent-hsl:
+    var(--setting-accent-h-dark, 207), var(--setting-accent-s-dark, 32%),
+    var(--setting-accent-l-dark, 58%);
   --color-accent-2: hsl(
-    calc(258 - 3),
-    calc(32% !important * 1.02),
-    calc(58% !important * 1.15)
+    calc(var(--setting-accent-h-dark, 207) - 3),
+    calc(var(--setting-accent-s-dark, 32%) * 1.02),
+    calc(var(--setting-accent-l-dark, 58%) * 1.15)
   );
 }
 
@@ -171,94 +175,126 @@ body {
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
   --checkbox-marker-color: transparent;
-  --checkbox-color: hsl(258, 32% !important, calc(58% !important - 16%));
+  --checkbox-color: var(
+    --setting-color-active-custom-light,
+    hsl(
+      calc(var(--setting-accent-h-dark, 207) + 60),
+      calc(var(--setting-accent-s-dark, 32%) - 12%),
+      calc(var(--setting-accent-l-dark, 58%) - 12%)
+    )
+  );
   --checkbox-color-hover: hsl(
-    calc(258 - 3),
-    calc(32% !important * 1.02),
-    calc(58% !important * 1.15)
+    calc(var(--setting-accent-h-dark, 207) - 3),
+    calc(var(--setting-accent-s-dark, 32%) * 1.02),
+    calc(var(--setting-accent-l-dark, 58%) * 1.15)
   );
   --checkbox-border-color: #aaa;
   --checkbox-border-color-hover: #b3b3b3;
   --code-background: #111;
-  --code-normal: hsla(258, 50%, 94%, 75%);
+  --code-normal: hsla(var(--setting-accent-h-dark, 207), 50%, 94%, 75%);
   --code-comment: #aaa;
-  --code-function: rgba(238, 207, 160 !important, 0.85) !important;
-  --code-important: rgba(240, 192, 168 !important, 0.85) !important;
+  --code-function: rgba(238, 207, 160, 0.85);
+  --code-important: rgba(240, 192, 168, 0.85);
   --code-keyword: #fa99cd;
-  --code-property: rgba(161, 232, 229 !important, 0.85) !important;
+  --code-property: rgba(161, 232, 229, 0.85);
   --code-punctuation: #b3b3b3;
-  --code-string: rgba(164, 223, 174 !important, 0.85) !important;
-  --code-tag: rgba(241, 167, 167 !important, 0.85) !important;
-  --code-value: rgba(212, 207, 252 !important, 0.85) !important;
+  --code-string: rgba(164, 223, 174, 0.85);
+  --code-tag: rgba(241, 167, 167, 0.85);
+  --code-value: rgba(212, 207, 252, 0.85);
   --collapse-icon-color: #aaa;
   --collapse-icon-color-collapsed: hsl(
-    calc(258 - 3),
-    calc(32% !important * 1.02),
-    calc(58% !important * 1.15)
+    calc(var(--setting-accent-h-dark, 207) - 3),
+    calc(var(--setting-accent-s-dark, 32%) * 1.02),
+    calc(var(--setting-accent-l-dark, 58%) * 1.15)
   );
   --cursor-link: pointer;
   --font-weight: 400;
   --graph-line: var(
     --color-base-35,
-    hsl(258, calc(32% !important + 24%), calc(58% !important - 32%))
+    var(
+      --setting-color-active-custom-dark,
+      hsl(
+        calc(var(--setting-accent-h-dark, 207) + 60),
+        calc(var(--setting-accent-s-dark, 32%) - 12%),
+        calc(var(--setting-accent-l-dark, 58%) - 28%)
+      )
+    )
   );
-  --graph-node-tag: rgba(164, 223, 174 !important, 0.85) !important;
+  --graph-node-tag: rgba(164, 223, 174, 0.85);
   --h1-color: inherit;
-  --hr-color: hsl(258, calc(32% !important + 24%), calc(58% !important - 32%));
+  --hr-color: var(
+    --setting-color-active-custom-dark,
+    hsl(
+      calc(var(--setting-accent-h-dark, 207) + 60),
+      calc(var(--setting-accent-s-dark, 32%) - 12%),
+      calc(var(--setting-accent-l-dark, 58%) - 28%)
+    )
+  );
   --hr-thickness: 2px;
   --icon-color: #b3b3b3;
-  --inline-title-color: var(
-    --setting-h1-color,
-    rgba(241, 167, 167 !important, 0.85) !important
-  );
-  --inline-title-font: var(
-    --setting-h1-font,
-    "??",
-    "??",
-    "??",
-    "Arial" !important
-  );
+  --inline-title-color: var(--setting-h1-color, rgba(241, 167, 167, 0.85));
+  --inline-title-font: var(--setting-h1-font, "??", "??", "??", "Arial");
   --link-color: hsl(
-    calc(258 - 3),
-    calc(32% !important * 1.02),
-    calc(58% !important * 1.15)
+    calc(var(--setting-accent-h-dark, 207) - 3),
+    calc(var(--setting-accent-s-dark, 32%) * 1.02),
+    calc(var(--setting-accent-l-dark, 58%) * 1.15)
   );
   --link-color-hover: hsl(
-    calc(258 - 5),
-    calc(32% !important * 1.05),
-    calc(58% !important * 1.29)
+    calc(var(--setting-accent-h-dark, 207) - 5),
+    calc(var(--setting-accent-s-dark, 32%) * 1.05),
+    calc(var(--setting-accent-l-dark, 58%) * 1.29)
   );
   --link-weight: var(--link-weight);
   --link-external-color: hsl(
-    calc(258 - 3),
-    calc(32% !important * 1.02),
-    calc(58% !important * 1.15)
+    calc(var(--setting-accent-h-dark, 207) - 3),
+    calc(var(--setting-accent-s-dark, 32%) * 1.02),
+    calc(var(--setting-accent-l-dark, 58%) * 1.15)
   );
   --link-external-color-hover: hsl(
-    calc(258 - 5),
-    calc(32% !important * 1.05),
-    calc(58% !important * 1.29)
+    calc(var(--setting-accent-h-dark, 207) - 5),
+    calc(var(--setting-accent-s-dark, 32%) * 1.05),
+    calc(var(--setting-accent-l-dark, 58%) * 1.29)
   );
   --link-external-filter: none;
   --nav-item-background-hover: hsl(
-    calc(258 - 6),
-    calc(32% !important + 12%),
+    calc(var(--setting-accent-h-dark, 207) - 6),
+    calc(var(--setting-accent-s-dark, 32%) + 12%),
     40%
   );
   --nav-item-children-padding-start: 4px;
   --nav-item-children-margin-start: 12px;
   --search-icon-color: #b3b3b3;
   --tag-color-hover: hsl(
-    calc(258 - 3),
-    calc(32% !important * 1.02),
-    calc(58% !important * 1.15)
+    calc(var(--setting-accent-h-dark, 207) - 3),
+    calc(var(--setting-accent-s-dark, 32%) * 1.02),
+    calc(var(--setting-accent-l-dark, 58%) * 1.15)
   );
   --tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-background: hsla(258, 32% !important, 58% !important, 0.1);
-  --tag-background-hover: hsla(258, 32% !important, 58% !important, 0.2);
-  --tag-border-color: hsla(258, 32% !important, 58% !important, 0.15);
-  --tag-border-color-hover: hsla(258, 32% !important, 58% !important, 0.15);
+  --tag-background: hsla(
+    var(--setting-accent-h-dark, 207),
+    var(--setting-accent-s-dark, 32%),
+    var(--setting-accent-l-dark, 58%),
+    0.1
+  );
+  --tag-background-hover: hsla(
+    var(--setting-accent-h-dark, 207),
+    var(--setting-accent-s-dark, 32%),
+    var(--setting-accent-l-dark, 58%),
+    0.2
+  );
+  --tag-border-color: hsla(
+    var(--setting-accent-h-dark, 207),
+    var(--setting-accent-s-dark, 32%),
+    var(--setting-accent-l-dark, 58%),
+    0.15
+  );
+  --tag-border-color-hover: hsla(
+    var(--setting-accent-h-dark, 207),
+    var(--setting-accent-s-dark, 32%),
+    var(--setting-accent-l-dark, 58%),
+    0.15
+  );
   --tag-border-width: 0px;
   --tag-radius: 2em;
   --tag-weight: inherit;
@@ -272,13 +308,19 @@ body {
   --text-normal: #dadada;
   --text-muted: #b3b3b3;
   --text-faint: #666666;
-  --text-accent: hsl(258, 32% !important, 58% !important);
-  --text-accent-hover: hsl(
-    calc(258 - 5),
-    calc(32% !important * 1.05),
-    calc(58% !important * 1.29)
+  --text-accent: hsl(
+    var(--setting-accent-h-dark, 207),
+    var(--setting-accent-s-dark, 32%),
+    var(--setting-accent-l-dark, 58%)
   );
-  --interactive-accent-hsl: 258, 32% !important, 58% !important;
+  --text-accent-hover: hsl(
+    calc(var(--setting-accent-h-dark, 207) - 5),
+    calc(var(--setting-accent-s-dark, 32%) * 1.05),
+    calc(var(--setting-accent-l-dark, 58%) * 1.29)
+  );
+  --interactive-accent-hsl:
+    var(--setting-accent-h-dark, 207), var(--setting-accent-s-dark, 32%),
+    var(--setting-accent-l-dark, 58%);
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
@@ -287,11 +329,6 @@ body {
     "??", "maplemono", ui-monospace, SFMono-Regular, "Cascadia Mono",
     "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
     "Consolas", "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
-  height: 100%;
   margin: 0;
   overscroll-behavior: none;
   padding: 0;
@@ -315,32 +352,38 @@ body {
   line-height: var(--explorer-item-height, 1.6);
   font-size: 16px;
   background-color: transparent;
-  color: hsla(258, 50%, 94%, 75%);
+  color: hsla(var(--setting-accent-h-dark, 207), 50%, 94%, 75%);
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
   caret-color: hsl(
-    calc(258 - 3),
-    calc(32% !important * 1.02),
-    calc(58% !important * 1.15)
+    calc(var(--setting-accent-h-dark, 207) - 3),
+    calc(var(--setting-accent-s-dark, 32%) * 1.02),
+    calc(var(--setting-accent-l-dark, 58%) * 1.15)
   );
   --p-spacing: var(--setting-editor-p-spacing, 4px);
   --text-highlight-bg: var(
     --setting-text-highlight-bg,
-    rgba(238, 207, 160 !important, 0.3)
+    rgba(238, 207, 160, 0.3)
   );
-  --bold-color: var(
-    --setting-text-bold-color,
-    rgba(241, 167, 167 !important, 0.85) !important
-  ) !important;
-  --italic-color: var(
-    --setting-text-italic-color,
-    rgba(241, 167, 167 !important, 0.85) !important
-  ) !important;
-  --tag-color: hsl(258, 32% !important, calc(58% !important - 16%));
+  --bold-color: var(--setting-text-bold-color, rgba(241, 167, 167, 0.85));
+  --italic-color: var(--setting-text-italic-color, rgba(241, 167, 167, 0.85));
+  --tag-color: var(
+    --setting-color-active-custom-light,
+    hsl(
+      calc(var(--setting-accent-h-dark, 207) + 60),
+      calc(var(--setting-accent-s-dark, 32%) - 12%),
+      calc(var(--setting-accent-l-dark, 58%) - 12%)
+    )
+  );
   --h3-line-height: calc(var(--setting-line-height, 1.8) * 16px);
-  --h1-font: var(--setting-h1-font, "??", "??", "??", "Arial" !important);
+  --h1-font: var(--setting-h1-font, "??", "??", "??", "Arial");
   --graph-node-unresolved: var(--setting-graph-node-unresolved, #aaa);
+  contain: initial;
+  height: auto;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -777,8 +820,17 @@ body {
 
   /* HEADINGS */
   h1 {
-    padding-left: 4px;
-    padding-right: 12px;
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
+    --font-weight: 750;
+    color: var(--setting-h1-color, rgba(241, 167, 167, 0.85));
+    font-family: var(--setting-h1-font, "??", "??", "??", "Arial");
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: calc(var(--setting-line-height, 1.8) * 16px * 1.2);
 
     font-size: 2rem;
   }
@@ -788,7 +840,17 @@ body {
   h2.page-title,
   h2.page-title a,
   h2 {
-    margin: 0 !important;
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
+    --font-weight: 700;
+    color: var(--setting-h2-color, rgba(240, 192, 168, 0.85));
+    font-family: var(--setting-h2-font, "??", "??", "??", "Arial");
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: calc(var(--setting-line-height, 1.8) * 16px * 1.2);
 
     font-size: 1.75rem;
   }
@@ -796,7 +858,17 @@ body {
     --link-weight: 700;
   }
   h3 {
-    margin: 0 !important;
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
+    --font-weight: 650;
+    color: var(--setting-h3-color, rgba(164, 223, 174, 0.85));
+    font-family: var(--setting-h3-font, "??", "??", "??", "Arial");
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: calc(var(--setting-line-height, 1.8) * 16px * 1.2);
 
     font-size: 1.6rem;
   }
@@ -804,7 +876,17 @@ body {
     --link-weight: 650;
   }
   h4 {
-    margin: 0 !important;
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
+    --font-weight: 650;
+    color: var(--setting-h4-color, rgba(143, 199, 255, 0.85));
+    font-family: var(--setting-h4-font, "??", "??", "??", "Arial");
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: 0.015em;
+    line-height: calc(var(--setting-line-height, 1.8) * 16px * 1.2);
 
     font-size: 1.4rem;
   }
@@ -812,7 +894,17 @@ body {
     --link-weight: 650;
   }
   h5 {
-    margin: 0 !important;
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
+    --font-weight: 600;
+    color: var(--setting-h5-color, rgba(212, 207, 252, 0.85));
+    font-family: var(--setting-h5-font, "??", "??", "??", "Arial");
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: 0.015em;
+    line-height: calc(var(--setting-line-height, 1.8) * 16px * 1.2);
 
     font-size: 1.2rem;
   }
@@ -823,11 +915,8 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: var(
-      --setting-h6-color,
-      rgba(161, 232, 229 !important, 0.85) !important
-    );
-    font-family: var(--setting-h6-font, "??", "??", "??", "Arial" !important);
+    color: var(--setting-h6-color, rgba(161, 232, 229, 0.85));
+    font-family: var(--setting-h6-font, "??", "??", "??", "Arial");
     font-size: 16px;
     font-style: normal;
     font-variant: normal;
@@ -865,12 +954,23 @@ body {
     min-height: 38px;
     background-color: var(
       --setting-code-bg,
-      var(--setting-md-container-bg, hsl(calc(258 - 4), 18%, 9%))
+      hsl(
+        calc(var(--setting-accent-h-dark, 207) + 8),
+        calc(var(--setting-accent-s-dark, 32%) / 6),
+        calc(var(--setting-accent-l-dark, 58%) / 5)
+      )
     );
     border-radius: 4px;
     white-space: pre-wrap;
     border: 0px solid
-      hsl(258, calc(32% !important + 24%), calc(58% !important - 32%));
+      var(
+        --setting-color-active-custom-dark,
+        hsl(
+          calc(var(--setting-accent-h-dark, 207) + 60),
+          calc(var(--setting-accent-s-dark, 32%) - 12%),
+          calc(var(--setting-accent-l-dark, 58%) - 28%)
+        )
+      );
     overflow-x: auto;
 
     background-color: var(--code-background);
@@ -942,17 +1042,23 @@ body {
       "Consolas", "Source Code Pro", monospace;
     background-color: var(
       --setting-code-bg,
-      var(--setting-md-container-bg, hsl(calc(258 - 4), 18%, 9%))
+      hsl(
+        calc(var(--setting-accent-h-dark, 207) + 8),
+        calc(var(--setting-accent-s-dark, 32%) / 6),
+        calc(var(--setting-accent-l-dark, 58%) / 5)
+      )
     );
     border-radius: 4px;
     font-size: 1em;
     padding: 0.15em 0.3em;
     -webkit-box-decoration-break: clone;
-    color: var(
-      --setting-code-inline,
-      rgba(241, 167, 167 !important, 0.85) !important
-    );
-    border: 2px solid hsl(calc(258 - 6), calc(32% !important + 12%), 40%);
+    color: var(--setting-code-inline, rgba(241, 167, 167, 0.85));
+    border: 2px solid
+      hsl(
+        calc(var(--setting-accent-h-dark, 207) - 6),
+        calc(var(--setting-accent-s-dark, 32%) + 12%),
+        40%
+      );
 
     background-color: var(--code-background);
     color: var(--code-normal);
@@ -986,7 +1092,11 @@ body {
     inset-inline-end: 0;
 
     &:hover {
-      background-color: hsl(calc(258 - 6), calc(32% !important + 12%), 40%);
+      background-color: hsl(
+        calc(var(--setting-accent-h-dark, 207) - 6),
+        calc(var(--setting-accent-s-dark, 32%) + 12%),
+        40%
+      );
     }
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -995,7 +1105,7 @@ body {
 
   /* METADATA */
   .content-meta {
-    color: hsla(258, 50%, 94%, 75%);
+    color: hsla(var(--setting-accent-h-dark, 207), 50%, 94%, 75%);
 
     color: var(--text-normal);
   }
@@ -1008,11 +1118,21 @@ body {
   /* BACKLINKS */
   .backlinks {
     h3 {
-      margin: 0 !important;
+      margin-block-end: 0rem;
+      margin-block-start: 0rem;
+      --font-weight: 650;
+      color: var(--setting-h3-color, rgba(164, 223, 174, 0.85));
+      font-family: var(--setting-h3-font, "??", "??", "??", "Arial");
+      font-size: 16px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 600;
+      letter-spacing: -0.015em;
+      line-height: calc(var(--setting-line-height, 1.8) * 16px * 1.2);
     }
 
     ul li {
-      color: hsla(258, 50%, 94%, 75%);
+      color: hsla(var(--setting-accent-h-dark, 207), 50%, 94%, 75%);
 
       font-weight: 500;
     }
@@ -1028,6 +1148,10 @@ body {
         padding-left: 1rem;
       }
     }
+    button.explorer-toggle,
+    h2 {
+      color: var(--setting-h2-color, rgba(240, 192, 168, 0.85));
+    }
     .explorer-content {
       @media all and ($mobile) {
         background-color: transparent;
@@ -1041,7 +1165,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: hsla(258, 50%, 94%, 75%);
+        color: hsla(var(--setting-accent-h-dark, 207), 50%, 94%, 75%);
 
         text-overflow: ellipsis;
         position: relative;
@@ -1069,8 +1193,8 @@ body {
           width: 100%;
         }
         &:hover {
-          background-color: #eaeaea !important;
-          color: #eaeaea !important;
+          background-color: #eaeaea;
+          color: #eaeaea;
           font-weight: inherit;
 
           font-size: 1rem;
@@ -1096,7 +1220,8 @@ body {
           var(--nav-item-children-margin-left)
         );
         margin-bottom: 1px;
-        border-inline-start: 1.8px solid hsla(258, 20%, 50%, 0.2);
+        border-inline-start: 1.8px solid
+          hsla(var(--setting-accent-h-dark, 207), 20%, 50%, 0.2);
       }
       ul.explorer-ul li {
         text-overflow: ellipsis;
@@ -1105,7 +1230,7 @@ body {
         a {
           padding: 6px 8px 6px 24px;
           border-radius: 4px;
-          color: hsla(258, 50%, 94%, 75%);
+          color: hsla(var(--setting-accent-h-dark, 207), 50%, 94%, 75%);
           cursor: pointer;
           display: flex;
           font-size: 16px;
@@ -1159,19 +1284,33 @@ body {
 
   /* TOC */
   .toc {
+    color: var(--setting-h3-color, rgba(164, 223, 174, 0.85));
+
     button.toc-header {
       h3 {
-        margin: 0 !important;
+        margin-block-end: 0rem;
+        margin-block-start: 0rem;
+        --font-weight: 650;
+        color: var(--setting-h3-color, rgba(164, 223, 174, 0.85));
+        font-family: var(--setting-h3-font, "??", "??", "??", "Arial");
+        font-size: 16px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 600;
+        letter-spacing: -0.015em;
+        line-height: calc(var(--setting-line-height, 1.8) * 16px * 1.2);
 
         margin-block: 0;
       }
+
+      color: var(--setting-h3-color, rgba(164, 223, 174, 0.85));
 
       color: inherit;
     }
     ul.toc-content.overflow {
       li,
       li > a {
-        color: hsla(258, 50%, 94%, 75%);
+        color: hsla(var(--setting-accent-h-dark, 207), 50%, 94%, 75%);
 
         font-weight: inherit;
 
@@ -1187,7 +1326,17 @@ body {
   .graph,
   .toc {
     h3 {
-      margin: 0 !important;
+      margin-block-end: 0rem;
+      margin-block-start: 0rem;
+      --font-weight: 650;
+      color: var(--setting-h3-color, rgba(164, 223, 174, 0.85));
+      font-family: var(--setting-h3-font, "??", "??", "??", "Arial");
+      font-size: 16px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 600;
+      letter-spacing: -0.015em;
+      line-height: calc(var(--setting-line-height, 1.8) * 16px * 1.2);
 
       min-height: calc(2 * var(--p-spacing) + var(--h3-line-height));
       margin-block: 0;
@@ -1250,11 +1399,18 @@ body {
       color: var(--button-secondary-fg-color);
 
       -webkit-app-region: no-drag;
-      background: hsl(258, 5%, 5%);
+      background: hsl(var(--setting-accent-h-dark, 207), 5%, 5%);
       border: 1px solid
-        hsl(258, calc(32% !important + 24%), calc(58% !important - 32%));
+        var(
+          --setting-color-active-custom-dark,
+          hsl(
+            calc(var(--setting-accent-h-dark, 207) + 60),
+            calc(var(--setting-accent-s-dark, 32%) - 12%),
+            calc(var(--setting-accent-l-dark, 58%) - 28%)
+          )
+        );
       border-radius: 5px;
-      color: hsla(258, 50%, 94%, 75%);
+      color: hsla(var(--setting-accent-h-dark, 207), 50%, 94%, 75%);
       font-family: inherit;
       font-size: 14px;
       outline: none;
@@ -1274,7 +1430,14 @@ body {
         border: 0.5pt solid
           var(
             --color-base-40,
-            hsl(258, calc(32% !important + 24%), calc(58% !important - 32%))
+            var(
+              --setting-color-active-custom-dark,
+              hsl(
+                calc(var(--setting-accent-h-dark, 207) + 60),
+                calc(var(--setting-accent-s-dark, 32%) - 12%),
+                calc(var(--setting-accent-l-dark, 58%) - 28%)
+              )
+            )
           );
 
         border-radius: 12px;
@@ -1299,9 +1462,9 @@ body {
           border-radius: 0;
           border-bottom: 1px solid
             hsl(
-              calc(258 + 8),
-              calc(32% !important / 6),
-              calc(58% !important / 5)
+              calc(var(--setting-accent-h-dark, 207) + 8),
+              calc(var(--setting-accent-s-dark, 32%) / 6),
+              calc(var(--setting-accent-l-dark, 58%) / 5)
             );
 
           margin-bottom: 0;
@@ -1310,7 +1473,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: hsla(258, 50%, 94%, 75%);
+          color: hsla(var(--setting-accent-h-dark, 207), 50%, 94%, 75%);
 
           background: transparent;
           margin-bottom: 0;
@@ -1354,18 +1517,18 @@ body {
               &:focus,
               &.focus {
                 background-color: hsl(
-                  calc(258 - 6),
-                  calc(32% !important + 12%),
+                  calc(var(--setting-accent-h-dark, 207) - 6),
+                  calc(var(--setting-accent-s-dark, 32%) + 12%),
                   40%
                 );
               }
               & > ul > li > p {
                 background-color: transparent;
 
-                color: hsla(258, 50%, 94%, 75%);
+                color: hsla(var(--setting-accent-h-dark, 207), 50%, 94%, 75%);
 
                 &.match-tag {
-                  color: #eaeaea !important;
+                  color: #eaeaea;
                 }
               }
             }
@@ -1435,16 +1598,23 @@ body {
   .popover {
     background-color: transparent;
     border: 1px solid
-      hsl(258, calc(32% !important + 24%), calc(58% !important - 32%));
+      var(
+        --setting-color-active-custom-dark,
+        hsl(
+          calc(var(--setting-accent-h-dark, 207) + 60),
+          calc(var(--setting-accent-s-dark, 32%) - 12%),
+          calc(var(--setting-accent-l-dark, 58%) - 28%)
+        )
+      );
     border-radius: 8px;
     box-shadow:
       0px 1px 2px #000000,
       0px 3.4px 6.7px #000000,
       0px 15px 30px #000000;
-    display: flex;
     max-height: 95vh;
     position: absolute;
     z-index: 30;
+    display: none;
 
     display: block;
     position: fixed;
@@ -1453,7 +1623,14 @@ body {
     background-color: var(--background-primary);
     & .popover-inner {
       border: 1px solid
-        hsl(258, calc(32% !important + 24%), calc(58% !important - 32%));
+        var(
+          --setting-color-active-custom-dark,
+          hsl(
+            calc(var(--setting-accent-h-dark, 207) + 60),
+            calc(var(--setting-accent-s-dark, 32%) - 12%),
+            calc(var(--setting-accent-l-dark, 58%) - 28%)
+          )
+        );
 
       background-color: transparent;
 

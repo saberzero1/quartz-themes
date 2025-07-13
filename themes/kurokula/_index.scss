@@ -39,14 +39,14 @@ html[saved-theme="dark"] {
   --color-base-50: #666666;
   --color-base-70: #b3b3b3;
   --color-base-100: #dadada;
-  --color-accent-hsl: var(--accent-h), 18.2222%, 55.8824%;
+  --color-accent-hsl: 260.488, 18.2222%, 55.8824%;
   --color-accent-2: hsl(
-    calc(var(--accent-h) - 5),
+    calc(260.488 - 5),
     calc(18.2222% * 1.05),
     calc(55.8824% * 1.29)
   );
   --text-accent: hsl(
-    calc(var(--accent-h) - 3),
+    calc(260.488 - 3),
     calc(18.2222% * 1.02),
     calc(55.8824% * 1.15)
   );
@@ -151,7 +151,6 @@ html[saved-theme="dark"] {
 
 :root {
   --h1-color: var(--text-normal);
-  --h6-color: var(--text-normal);
 
   --nav-item-background-hover: var(--background-modifier-hover);
 
@@ -169,7 +168,6 @@ html[saved-theme="dark"] {
 
   --button-secondary-bg-color: transparent;
   --button-secondary-fg-color: var(--text-primary-color);
-  --code-radius: var(--radius-s);
   --code-background: var(--background-primary-alt);
   --code-normal: var(--text-normal);
   --code-comment: var(--text-faint);
@@ -199,7 +197,6 @@ html {
 }
 body {
   --h1-color: var(--text-normal);
-  --h6-color: var(--text-normal);
 
   --nav-item-background-hover: var(--background-modifier-hover);
   --font-weight: 400;
@@ -222,13 +219,13 @@ body {
   --background-modifier-border-hover: #3f3f3f;
   --background-modifier-border-focus: #555555;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
-  --text-accent: hsl(var(--accent-h), 18.2222%, 55.8824%);
+  --text-accent: hsl(260.488, 18.2222%, 55.8824%);
   --text-accent-hover: hsl(
-    calc(var(--accent-h) - 5),
+    calc(260.488 - 5),
     calc(18.2222% * 1.05),
     calc(55.8824% * 1.29)
   );
-  --interactive-accent-hsl: var(--accent-h), 18.2222%, 55.8824%;
+  --interactive-accent-hsl: 260.488, 18.2222%, 55.8824%;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
@@ -237,10 +234,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", var(--font-text-theme), "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "Atkinson Hyperlegible", "serif", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -270,11 +267,59 @@ body {
   user-select: none;
   -webkit-user-select: none;
   caret-color: hsl(
-    calc(var(--accent-h) - 3),
+    calc(260.488 - 3),
     calc(18.2222% * 1.02),
     calc(55.8824% * 1.15)
   );
-  --radius-s: 4px;
+  --cursor-link: pointer;
+  --graph-line: var(--color-base-35, rgba(251, 70, 76, 0.6));
+  --graph-node-unresolved: rgba(255, 255, 255, 0.6);
+  --graph-node-tag: #44cf6e;
+  --nav-item-background-hover: rgba(255, 255, 255, 0.15);
+  --tag-border-color: hsla(260.488, 18.2222%, 55.8824%, 0.15);
+  --tag-border-color-hover: hsla(260.488, 18.2222%, 55.8824%, 0.15);
+  --tag-border-width: 0px;
+  --h1-color: #94959b;
+  --tag-color: #ddd0c4;
+  --tag-color-hover: #ffffff;
+  --tag-background: rgba(136, 122, 163, 0.5);
+  --tag-background-hover: rgba(136, 122, 163, 0.8);
+  --tag-weight: 100;
+  --search-icon-color: #887aa3;
+  --collapse-icon-color: #ddd0c4;
+  --collapse-icon-color-collapsed: #94959b;
+  --icon-color: #ddd0c4;
+  --inline-title-color: #94959b;
+  --text-normal: rgba(255, 255, 255, 1);
+  --text-muted: rgba(255, 255, 255, 0.8);
+  --text-faint: rgba(255, 255, 255, 0.6);
+  --hr-color: rgba(148, 149, 155, 0.3);
+  --hr-thickness: 4px;
+  --link-color: #2ab9ff;
+  --link-color-hover: #a1d9ff;
+  --link-external-color: #54ca74;
+  --link-external-color-hover: #c1ffae;
+  --bold-weight: 800;
+  --bold-color: #ffffff;
+  --italic-color: #ffffff;
+  --checkbox-radius: 4px;
+  --checkbox-size: 24px;
+  --checkbox-marker-color: #94959b;
+  --checkbox-color: #515151;
+  --checkbox-color-hover: #85b1a9;
+  --checkbox-border-color: #94959b;
+  --checkbox-border-color-hover: #ffffff;
+  --code-background: #141515;
+  --code-normal: #ffffff;
+  --code-comment: #fcffb8;
+  --code-function: #dbbb43;
+  --code-important: #1ef9f5;
+  --code-keyword: #6890d7;
+  --code-property: #cc83bd;
+  --code-punctuation: #94959b;
+  --code-string: #85b1a9;
+  --code-tag: #2ab9ff;
+  --code-value: #9d5918;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -290,7 +335,6 @@ body {
 
   --button-secondary-bg-color: transparent;
   --button-secondary-fg-color: var(--text-primary-color);
-  --code-radius: var(--radius-s);
   --code-background: var(--background-primary-alt);
   --code-normal: var(--text-normal);
   --code-comment: var(--text-faint);
@@ -718,7 +762,7 @@ body {
     color: #94959b;
     font-family: inherit;
     font-size: 1.802em;
-    font-style: var(--h-font-style);
+    font-style: oblique 10deg;
     font-variant: proportional-nums;
     font-weight: 900;
     letter-spacing: -0.015em;
@@ -738,7 +782,7 @@ body {
     color: #60bebe;
     font-family: inherit;
     font-size: 1.602em;
-    font-style: var(--h-font-style);
+    font-style: oblique 10deg;
     font-variant: proportional-nums;
     font-weight: 900;
     letter-spacing: -0.015em;
@@ -756,7 +800,7 @@ body {
     color: #cc83bd;
     font-family: inherit;
     font-size: 1.424em;
-    font-style: var(--h-font-style);
+    font-style: oblique 10deg;
     font-variant: proportional-nums;
     font-weight: 900;
     letter-spacing: -0.015em;
@@ -774,7 +818,7 @@ body {
     color: #dbbb43;
     font-family: inherit;
     font-size: 1.266em;
-    font-style: var(--h-font-style);
+    font-style: oblique 10deg;
     font-variant: proportional-nums;
     font-weight: 900;
     letter-spacing: 0.015em;
@@ -792,7 +836,7 @@ body {
     color: #b66056;
     font-family: inherit;
     font-size: 1.125em;
-    font-style: var(--h-font-style);
+    font-style: oblique 10deg;
     font-variant: proportional-nums;
     font-weight: 900;
     letter-spacing: 0.015em;
@@ -807,10 +851,10 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 900;
-    color: var(--h6-color);
+    color: #6890d7;
     font-family: inherit;
     font-size: 1em;
-    font-style: var(--h-font-style);
+    font-style: oblique 10deg;
     font-variant: proportional-nums;
     font-weight: 900;
     letter-spacing: 0.015em;
@@ -844,7 +888,7 @@ body {
     position: relative;
     padding: 12px 16px;
     min-height: 38px;
-    border-radius: var(--code-radius);
+    border-radius: 12px;
     white-space: pre-wrap;
     border: 0px solid transparent;
     overflow-x: auto;
@@ -913,13 +957,13 @@ body {
   }
 
   code {
-    border-radius: var(--code-radius);
+    border-radius: 12px;
     font-size: 1em;
     padding: 0.15em 0.3em;
     border: 0px solid transparent;
     -webkit-box-decoration-break: clone;
     background-color: #515151;
-    color: var(--code-inline) !important;
+    color: #dbbb43;
     font-family:
       "JetBrains Mono", "JetBrainsMono Nerd Font", ui-monospace, SFMono-Regular,
       "Cascadia Code", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono",
@@ -976,7 +1020,7 @@ body {
       color: #cc83bd;
       font-family: inherit;
       font-size: 1.424em;
-      font-style: var(--h-font-style);
+      font-style: oblique 10deg;
       font-variant: proportional-nums;
       font-weight: 900;
       letter-spacing: -0.015em;
@@ -1017,7 +1061,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: hsl(var(--accent-h), 18.2222%, 55.8824%);
+        color: hsl(260.488, 18.2222%, 55.8824%);
 
         text-overflow: ellipsis;
         position: relative;
@@ -1148,7 +1192,7 @@ body {
         color: #cc83bd;
         font-family: inherit;
         font-size: 1.424em;
-        font-style: var(--h-font-style);
+        font-style: oblique 10deg;
         font-variant: proportional-nums;
         font-weight: 900;
         letter-spacing: -0.015em;
@@ -1186,7 +1230,7 @@ body {
       color: #cc83bd;
       font-family: inherit;
       font-size: 1.424em;
-      font-style: var(--h-font-style);
+      font-style: oblique 10deg;
       font-variant: proportional-nums;
       font-weight: 900;
       letter-spacing: -0.015em;
@@ -1255,7 +1299,7 @@ body {
       -webkit-app-region: no-drag;
       background: transparent;
       border: 1px solid transparent;
-      border-radius: var(--input-radius);
+      border-radius: 4px;
       color: rgba(255, 255, 255, 1);
       font-family: inherit;
       font-size: calc(16px * 0.937);
@@ -1273,7 +1317,7 @@ body {
       & > .search-space {
         background-color: #141515;
 
-        border: 2px solid var(--prompt-border-color);
+        border: 2px solid #887aa3;
 
         border-radius: 16px;
 

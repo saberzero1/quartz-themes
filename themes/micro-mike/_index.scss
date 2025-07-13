@@ -270,11 +270,11 @@ body {
     calc(88% * 1.02),
     calc(66% * 1.15)
   );
-  --checkbox-border-color: hsl(258, 88%, 66%);
+  --checkbox-border-color: hsl(258, 88%, calc(1 * 30% + 30%));
   --checkbox-border-color-hover: #b3b3b3;
   --code-background: var(--level1_b);
   --code-normal: #a3a5aa;
-  --code-comment: hsl(258, 88%, 66%);
+  --code-comment: hsl(258, 88%, calc(1 * 30% + 30%));
   --code-function: #e0de71;
   --code-important: #e9973f;
   --code-keyword: #fa99cd;
@@ -291,7 +291,7 @@ body {
   --cursor-link: pointer;
   --font-weight: 400;
   --graph-line: var(--color-base-35, var(--level3_a));
-  --graph-node-unresolved: hsl(258, 88%, 66%);
+  --graph-node-unresolved: hsl(258, 88%, calc(1 * 30% + 30%));
   --graph-node-tag: #44cf6e;
   --h1-color: inherit;
   --h1-font: inherit;
@@ -360,10 +360,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -393,7 +393,7 @@ body {
   user-select: none;
   -webkit-user-select: none;
   caret-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --collapse-icon-color: hsl(258, 88%, 66%);
+  --collapse-icon-color: hsl(258, 88%, calc(1 * 30% + 30%));
   --link-color: hsl(258, 88%, 66%);
   --tag-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
   --tag-color-hover: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
@@ -615,6 +615,8 @@ body {
     var(--background-modifier-hover)
   ) !important;
 
+  background-color: var(--level1_a);
+
   background-color: var(--background-primary);
   overflow: initial;
 
@@ -642,10 +644,14 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
+      background-color: var(--level1_a);
+
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
+        background-color: var(--level1_a);
+
         background-color: var(--background-primary);
       }
     }
@@ -653,6 +659,8 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
+          background-color: var(--level1_a);
+
           background-color: var(--background-secondary);
 
           content: " ";
@@ -836,17 +844,17 @@ body {
 
   /* HEADINGS */
   h1 {
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
     --font-weight: 700;
     color: inherit;
     font-family: inherit;
-    font-size: 1.802em;
+    font-size: 1em;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
     letter-spacing: -0.015em;
-    line-height: 1.2;
+    line-height: calc(1em * 1.25);
 
     font-size: 2rem;
   }
@@ -856,11 +864,17 @@ body {
   h2.page-title,
   h2.page-title a,
   h2 {
-    font-size: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    line-height: 26px;
-    background: linear-gradient(90deg, #d3e2ff16 0%, #000000 80%);
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    --font-weight: 600;
+    color: inherit;
+    font-family: inherit;
+    font-size: 1em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: calc(1em * 1.25);
 
     font-size: 1.75rem;
   }
@@ -868,11 +882,17 @@ body {
     --link-weight: 600;
   }
   h3 {
-    font-size: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    line-height: 26px;
-    background: linear-gradient(90deg, #d3e2ff16 0%, #000000 80%);
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    --font-weight: 600;
+    color: inherit;
+    font-family: inherit;
+    font-size: 1em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: calc(1em * 1.25);
 
     font-size: 1.6rem;
   }
@@ -880,11 +900,17 @@ body {
     --link-weight: 600;
   }
   h4 {
-    font-size: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    line-height: 26px;
-    background: linear-gradient(90deg, #d3e2ff16 0%, #000000 80%);
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    --font-weight: 600;
+    color: inherit;
+    font-family: inherit;
+    font-size: 1em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: 0.015em;
+    line-height: calc(1em * 1.25);
 
     font-size: 1.4rem;
   }
@@ -892,11 +918,17 @@ body {
     --link-weight: 600;
   }
   h5 {
-    font-size: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    line-height: 26px;
-    background: linear-gradient(90deg, #d3e2ff16 0%, #000000 80%);
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    --font-weight: 600;
+    color: inherit;
+    font-family: inherit;
+    font-size: 1em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: 0.015em;
+    line-height: calc(1em * 1.25);
 
     font-size: 1.2rem;
   }
@@ -904,11 +936,17 @@ body {
     --link-weight: 600;
   }
   h6 {
-    font-size: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    line-height: 26px;
-    background: linear-gradient(90deg, #d3e2ff16 0%, #000000 80%);
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    --font-weight: 600;
+    color: inherit;
+    font-family: inherit;
+    font-size: 1em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: 0.015em;
+    line-height: calc(1em * 1.25);
 
     font-size: 1.1rem;
   }
@@ -1067,17 +1105,23 @@ body {
 
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: hsl(258, 88%, 66%);
+    color: hsl(258, 88%, calc(1 * 30% + 30%));
   }
 
   /* BACKLINKS */
   .backlinks {
     h3 {
-      font-size: 20px;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      line-height: 26px;
-      background: linear-gradient(90deg, #d3e2ff16 0%, #000000 80%);
+      margin-block-end: 0px;
+      margin-block-start: 0px;
+      --font-weight: 600;
+      color: inherit;
+      font-family: inherit;
+      font-size: 1em;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 600;
+      letter-spacing: -0.015em;
+      line-height: calc(1em * 1.25);
     }
 
     ul li {
@@ -1097,8 +1141,14 @@ body {
         padding-left: 1rem;
       }
     }
+    button.explorer-toggle,
+    h2 {
+      color: inherit;
+    }
     .explorer-content {
       @media all and ($mobile) {
+        background-color: var(--level1_a);
+
         background-color: var(--background-secondary);
 
         left: -1rem;
@@ -1108,7 +1158,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: hsl(258, 88%, 66%);
+        color: hsl(258, 88%, calc(1 * 30% + 30%));
 
         text-overflow: ellipsis;
         position: relative;
@@ -1136,7 +1186,7 @@ body {
           width: 100%;
         }
         &:hover {
-          background-color: rgba(255, 255, 255, 0.15);
+          background-color: #ffffff11;
           color: #a3a5aa;
           font-weight: inherit;
 
@@ -1226,16 +1276,26 @@ body {
 
   /* TOC */
   .toc {
+    color: inherit;
+
     button.toc-header {
       h3 {
-        font-size: 20px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        line-height: 26px;
-        background: linear-gradient(90deg, #d3e2ff16 0%, #000000 80%);
+        margin-block-end: 0px;
+        margin-block-start: 0px;
+        --font-weight: 600;
+        color: inherit;
+        font-family: inherit;
+        font-size: 1em;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 600;
+        letter-spacing: -0.015em;
+        line-height: calc(1em * 1.25);
 
         margin-block: 0;
       }
+
+      color: inherit;
 
       color: inherit;
     }
@@ -1258,11 +1318,17 @@ body {
   .graph,
   .toc {
     h3 {
-      font-size: 20px;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      line-height: 26px;
-      background: linear-gradient(90deg, #d3e2ff16 0%, #000000 80%);
+      margin-block-end: 0px;
+      margin-block-start: 0px;
+      --font-weight: 600;
+      color: inherit;
+      font-family: inherit;
+      font-size: 1em;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 600;
+      letter-spacing: -0.015em;
+      line-height: calc(1em * 1.25);
 
       min-height: calc(2 * var(--p-spacing) + var(--h3-line-height));
       margin-block: 0;

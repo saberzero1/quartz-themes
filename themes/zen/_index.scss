@@ -42,6 +42,12 @@ html[saved-theme="dark"] {
   --color-accent-hsl: 258, 88%, 66%;
   --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
   --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --background-primary: #1c1c1c;
+  --background-secondary: #2a2a2a;
+  --background-modifier-border: #f5f5f5;
+  --background-modifier-hover: #f5f5f5;
+  --hr-color: #f5f5f5;
+  --code-background: #f5f5f5;
 }
 
 :root[saved-theme="light"],
@@ -299,7 +305,7 @@ body {
   --bold-weight: calc(600 + 200);
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --checkbox-marker-color: #f8f8f8;
+  --checkbox-marker-color: #1c1c1c;
   --checkbox-color: hsl(258, 88%, 66%);
   --checkbox-color-hover: hsl(
     calc(258 - 3),
@@ -385,10 +391,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -412,7 +418,7 @@ body {
     sans-serif;
   line-height: 1.3;
   font-size: 16px;
-  background-color: #f8f8f8;
+  background-color: #1c1c1c;
   color: #dadada;
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
@@ -866,7 +872,7 @@ body {
     font-weight: 600;
     letter-spacing: -0.015em;
     line-height: 1.2;
-    color: #e74d47 !important;
+    color: #e74d47;
     font-size: 1.3em;
 
     font-size: 2rem;
@@ -886,7 +892,7 @@ body {
     font-weight: 600;
     letter-spacing: -0.015em;
     line-height: 1.2;
-    color: #d79440 !important;
+    color: #d79440;
     font-size: 1.25em;
 
     font-size: 1.75rem;
@@ -922,7 +928,7 @@ body {
     font-weight: 600;
     letter-spacing: 0.015em;
     line-height: 1.4;
-    color: #a36efb !important;
+    color: #a36efb;
     font-size: 1.15em;
 
     font-size: 1.4rem;
@@ -940,7 +946,7 @@ body {
     font-weight: 600;
     letter-spacing: 0.015em;
     line-height: 1.5;
-    color: #6dd7d7 !important;
+    color: #6dd7d7;
     font-size: 1.1em;
 
     font-size: 1.2rem;
@@ -958,7 +964,7 @@ body {
     font-weight: 600;
     letter-spacing: 0.015em;
     line-height: 1.5;
-    color: #afbf05 !important;
+    color: #afbf05;
     font-size: 1.05em;
 
     font-size: 1.1rem;
@@ -1156,7 +1162,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: #d79440 !important;
+      color: #d79440;
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1426,7 +1432,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: #f8f8f8;
+        background-color: #1c1c1c;
 
         border: 0.5pt solid var(--color-base-40, rgba(251, 70, 76, 0.6));
 
@@ -1445,7 +1451,7 @@ body {
           width: 100%;
           padding: 24px;
           padding-inline-end: 48px;
-          background-color: #f8f8f8;
+          background-color: #1c1c1c;
           font-size: 16px;
           border: none;
           height: 48px;
@@ -1587,7 +1593,7 @@ body {
     max-height: 95vh;
     position: absolute;
     z-index: 30;
-    background-color: #1c1c1c !important;
+    background-color: #1c1c1c;
     backdrop-filter: blur(5px);
 
     display: block;
@@ -1598,7 +1604,7 @@ body {
     & .popover-inner {
       border: 1px solid transparent;
 
-      background-color: #1c1c1c !important;
+      background-color: #1c1c1c;
 
       border-radius: 8px;
 

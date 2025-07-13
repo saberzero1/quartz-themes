@@ -41,6 +41,20 @@ html[saved-theme="dark"] {
   --color-base-100: #dadada;
   --color-accent-hsl: 209, 60%, 55%;
   --color-accent-2: hsl(calc(209 - 5), calc(60% * 1.05), calc(55% * 1.29));
+  --background-modifier-border: #343434;
+  --background-primary: var(--background-primary-bg-4-bt, #202020);
+  --background-primary-alt: var(--background-primary-alt-bg-4-bt, #444444);
+  --background-secondary: var(--background-secondary-bg-4-bt, #151515);
+  --code-normal: #d0d0d0;
+  --graph-line: #8c8c8c;
+  --h1-color: var(--print-h1-color, hsl(78, 62%, 47%));
+  --hr-color: #111;
+  --text-accent: hsla(209, 95%, 62%, 1);
+  --text-accent-hover: hsl(calc(209 - 5), calc(60% * 1.05), calc(55% * 1.29));
+  --text-faint: #797979;
+  --text-highlight-bg: hsla(57, 40%, 38%, 0.541);
+  --text-muted: #8a8a8a;
+  --text-normal: #c6c6c6;
 }
 
 :root[saved-theme="light"],
@@ -5433,6 +5447,11 @@ html[saved-theme="light"] {
 
   --nav-item-background-hover: var(--background-modifier-hover);
   --code-comment: #676e95;
+  --code-keyword: #c792ea;
+  --code-normal: #d4d4d4;
+  --code-property: #c792ea;
+  --code-string: #c3e88d;
+  --code-tag: #ff5370;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -5512,7 +5531,9 @@ body {
   --inline-title-color: var(--print-h1-color, #d4d4d4);
   --inline-title-font:
     "??", "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", "Arial" !important, var(--font-default);
+    "Microsoft YaHei", "Arial", ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   --italic-color: inherit;
   --link-color: hsla(209, 95%, 62%, 1);
   --link-color-hover: hsl(calc(209 - 5), calc(60% * 1.05), calc(55% * 1.29));
@@ -5559,19 +5580,33 @@ body {
     "Microsoft YaHei", "Source Code Pro", monospace, ui-monospace,
     SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono",
     "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
   --font-text:
     "??", "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
-    "Microsoft YaHei", "Arial" !important;
+    "Microsoft YaHei", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
   padding: 0;
   width: 100%;
   text-rendering: optimizeLegibility;
-  font-family: "??", "??", var(--default-font, "??"), var(--font-default);
+  font-family:
+    "??",
+    "??",
+    var(--default-font, "??"),
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Inter",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Microsoft YaHei Light",
+    sans-serif;
   line-height: 1.3;
   font-size: 16px;
   background-color: #000;
@@ -5580,6 +5615,22 @@ body {
   user-select: none;
   -webkit-user-select: none;
   caret-color: hsla(209, 95%, 62%, 1);
+  --font-default:
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Microsoft YaHei Light", sans-serif;
+  --h1-font:
+    "??", "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai",
+    "Microsoft YaHei", "Arial", ui-sans-serif, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --checkbox-size: 0.9rem;
+  --tag-border-width: 1px;
+  --code-background: #272822d9;
+  --code-property: #00a3b9;
+  --code-value: #00ffc7;
+  --code-tag: #b073ff;
+  --code-comment: #1bbc9b;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -5631,9 +5682,9 @@ html {
     mix-blend-mode: normal;
     padding: 0;
     border-left: 4px solid rgba(31, 172, 139, 0.15);
-    background-color: var(--admonition-bg-color);
+    background-color: #11111100;
 
-    background-color: var(--admonition-bg-color);
+    background-color: #11111100;
 
     /*background-color: var(--bg);*/
     border-color: var(--border);
@@ -5644,163 +5695,163 @@ html {
     &[data-callout] {
       --callout-color: 2, 122, 255;
 
-      background-color: var(--admonition-bg-color);
+      background-color: #11111100;
       /*background: var(--bg);*/
     }
     &[data-callout="abstract"] {
       --callout-color: 83, 223, 221;
 
-      background-color: var(--admonition-bg-color);
+      background-color: #11111100;
       /*background: var(--bg);*/
     }
     &[data-callout="summary"] {
       --callout-color: 83, 223, 221;
 
-      background-color: var(--admonition-bg-color);
+      background-color: #11111100;
       /*background: var(--bg);*/
     }
     &[data-callout="tldr"] {
       --callout-color: 83, 223, 221;
 
-      background-color: var(--admonition-bg-color);
+      background-color: #11111100;
       /*background: var(--bg);*/
     }
     &[data-callout="info"] {
       --callout-color: 2, 122, 255;
 
-      background-color: var(--admonition-bg-color);
+      background-color: #11111100;
       /*background: var(--bg);*/
     }
     &[data-callout="todo"] {
       --callout-color: 2, 122, 255;
 
-      background-color: var(--admonition-bg-color);
+      background-color: #11111100;
       /*background: var(--bg);*/
     }
     &[data-callout="important"] {
       --callout-color: 83, 223, 221;
 
-      background-color: var(--admonition-bg-color);
+      background-color: #11111100;
       /*background: var(--bg);*/
     }
     &[data-callout="tip"] {
       --callout-color: 83, 223, 221;
 
-      background-color: var(--admonition-bg-color);
+      background-color: #11111100;
       /*background: var(--bg);*/
     }
     &[data-callout="hint"] {
       --callout-color: 83, 223, 221;
 
-      background-color: var(--admonition-bg-color);
+      background-color: #11111100;
       /*background: var(--bg);*/
     }
     &[data-callout="success"] {
       --callout-color: 68, 207, 110;
 
-      background-color: var(--admonition-bg-color);
+      background-color: #11111100;
       /*background: var(--bg);*/
     }
     &[data-callout="check"] {
       --callout-color: 68, 207, 110;
 
-      background-color: var(--admonition-bg-color);
+      background-color: #11111100;
       /*background: var(--bg);*/
     }
     &[data-callout="done"] {
       --callout-color: 68, 207, 110;
 
-      background-color: var(--admonition-bg-color);
+      background-color: #11111100;
       /*background: var(--bg);*/
     }
     &[data-callout="question"] {
       --callout-color: 233, 151, 63;
 
-      background-color: var(--admonition-bg-color);
+      background-color: #11111100;
       /*background: var(--bg);*/
     }
     &[data-callout="help"] {
       --callout-color: 233, 151, 63;
 
-      background-color: var(--admonition-bg-color);
+      background-color: #11111100;
       /*background: var(--bg);*/
     }
     &[data-callout="faq"] {
       --callout-color: 233, 151, 63;
 
-      background-color: var(--admonition-bg-color);
+      background-color: #11111100;
       /*background: var(--bg);*/
     }
     &[data-callout="warning"] {
       --callout-color: 233, 151, 63;
 
-      background-color: var(--admonition-bg-color);
+      background-color: #11111100;
       /*background: var(--bg);*/
     }
     &[data-callout="caution"] {
       --callout-color: 233, 151, 63;
 
-      background-color: var(--admonition-bg-color);
+      background-color: #11111100;
       /*background: var(--bg);*/
     }
     &[data-callout="attention"] {
       --callout-color: 233, 151, 63;
 
-      background-color: var(--admonition-bg-color);
+      background-color: #11111100;
       /*background: var(--bg);*/
     }
     &[data-callout="failure"] {
       --callout-color: 251, 70, 76;
 
-      background-color: var(--admonition-bg-color);
+      background-color: #11111100;
       /*background: var(--bg);*/
     }
     &[data-callout="fail"] {
       --callout-color: 251, 70, 76;
 
-      background-color: var(--admonition-bg-color);
+      background-color: #11111100;
       /*background: var(--bg);*/
     }
     &[data-callout="missing"] {
       --callout-color: 251, 70, 76;
 
-      background-color: var(--admonition-bg-color);
+      background-color: #11111100;
       /*background: var(--bg);*/
     }
     &[data-callout="danger"] {
       --callout-color: 251, 70, 76;
 
-      background-color: var(--admonition-bg-color);
+      background-color: #11111100;
       /*background: var(--bg);*/
     }
     &[data-callout="error"] {
       --callout-color: 251, 70, 76;
 
-      background-color: var(--admonition-bg-color);
+      background-color: #11111100;
       /*background: var(--bg);*/
     }
     &[data-callout="bug"] {
       --callout-color: 251, 70, 76;
 
-      background-color: var(--admonition-bg-color);
+      background-color: #11111100;
       /*background: var(--bg);*/
     }
     &[data-callout="example"] {
       --callout-color: 168, 130, 255;
 
-      background-color: var(--admonition-bg-color);
+      background-color: #11111100;
       /*background: var(--bg);*/
     }
     &[data-callout="quote"] {
       --callout-color: 158, 158, 158;
 
-      background-color: var(--admonition-bg-color);
+      background-color: #11111100;
       /*background: var(--bg);*/
     }
     &[data-callout="cite"] {
       --callout-color: 158, 158, 158;
 
-      background-color: var(--admonition-bg-color);
+      background-color: #11111100;
       /*background: var(--bg);*/
     }
   }
@@ -6088,8 +6139,18 @@ body {
       "霞鹜文楷 GB",
       "LXGW WenKai",
       "Microsoft YaHei",
-      "Arial" !important,
-      var(--font-default);
+      "Arial",
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      "Inter",
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      "Microsoft YaHei Light",
+      sans-serif;
     font-size: 1.5625em;
     font-style: normal;
     font-variant: normal;
@@ -6105,10 +6166,38 @@ body {
   h2.page-title,
   h2.page-title a,
   h2 {
-    text-align: center;
-    margin: 0;
-    padding: 2px;
-    color: #d4d4d4;
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
+    --font-weight: 600;
+    color: var(--print-h2-color, #d4d4d4);
+    font-family:
+      "??",
+      "??",
+      Bookerly,
+      "Inter",
+      "Segoe UI",
+      "霞鹜文楷 GB",
+      "LXGW WenKai",
+      "Microsoft YaHei",
+      "Arial",
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      "Inter",
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      "Microsoft YaHei Light",
+      sans-serif;
+    font-size: 1.4375em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: 1.2;
+    page-break-after: avoid;
 
     font-size: 1.75rem;
   }
@@ -6116,10 +6205,38 @@ body {
     --link-weight: 600;
   }
   h3 {
-    text-align: center;
-    margin: 0;
-    padding: 2px;
-    color: #d4d4d4;
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
+    --font-weight: 600;
+    color: var(--print-h3-color, #d4d4d4);
+    font-family:
+      "??",
+      "??",
+      Bookerly,
+      "Inter",
+      "Segoe UI",
+      "霞鹜文楷 GB",
+      "LXGW WenKai",
+      "Microsoft YaHei",
+      "Arial",
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      "Inter",
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      "Microsoft YaHei Light",
+      sans-serif;
+    font-size: 1.3125em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: 1.3;
+    page-break-after: avoid;
 
     font-size: 1.6rem;
   }
@@ -6127,10 +6244,38 @@ body {
     --link-weight: 600;
   }
   h4 {
-    text-align: center;
-    margin: 0;
-    padding: 2px;
-    color: #d4d4d4;
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
+    --font-weight: 600;
+    color: var(--print-h4-color, #d4d4d4);
+    font-family:
+      "??",
+      "??",
+      Bookerly,
+      "Inter",
+      "Segoe UI",
+      "霞鹜文楷 GB",
+      "LXGW WenKai",
+      "Microsoft YaHei",
+      "Arial",
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      "Inter",
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      "Microsoft YaHei Light",
+      sans-serif;
+    font-size: 1.1875em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: 0.015em;
+    line-height: 1.4;
+    page-break-after: avoid;
 
     font-size: 1.4rem;
   }
@@ -6138,10 +6283,18 @@ body {
     --link-weight: 600;
   }
   h5 {
-    text-align: center;
-    margin: 0;
-    padding: 2px;
-    color: #d4d4d4;
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
+    --font-weight: 600;
+    color: var(--print-h5-color, #d4d4d4);
+    font-family: inherit;
+    font-size: 1.0625em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: 0.015em;
+    line-height: 1.5;
+    page-break-after: avoid;
 
     font-size: 1.2rem;
   }
@@ -6149,7 +6302,18 @@ body {
     --link-weight: 600;
   }
   h6 {
-    font-weight: bold;
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
+    --font-weight: 600;
+    color: var(--print-h6-color, #d4d4d4);
+    font-family: inherit;
+    font-size: 1em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: 0.015em;
+    line-height: 1.5;
+    page-break-after: avoid;
 
     font-size: 1.1rem;
   }
@@ -6260,7 +6424,7 @@ body {
       "Microsoft YaHei", "Source Code Pro", monospace, ui-monospace,
       SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono",
       "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
-    font-size: 0.825em !important;
+    font-size: 0.825em;
     text-align: start;
 
     background-color: var(--code-background);
@@ -6275,7 +6439,21 @@ body {
     box-shadow: none;
     color: #525252;
     font-size: calc(16px * 0.8);
-    font-family: "??", "??", var(--default-font, "??"), var(--font-default);
+    font-family:
+      "??",
+      "??",
+      var(--default-font, "??"),
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      "Inter",
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      "Microsoft YaHei Light",
+      sans-serif;
     position: absolute;
     top: 0;
     inset-inline-end: 0;
@@ -6303,10 +6481,38 @@ body {
   /* BACKLINKS */
   .backlinks {
     h3 {
-      text-align: center;
-      margin: 0;
-      padding: 2px;
-      color: #d4d4d4;
+      margin-block-end: 0rem;
+      margin-block-start: 0rem;
+      --font-weight: 600;
+      color: var(--print-h3-color, #d4d4d4);
+      font-family:
+        "??",
+        "??",
+        Bookerly,
+        "Inter",
+        "Segoe UI",
+        "霞鹜文楷 GB",
+        "LXGW WenKai",
+        "Microsoft YaHei",
+        "Arial",
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        "Inter",
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Microsoft YaHei Light",
+        sans-serif;
+      font-size: 1.3125em;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 600;
+      letter-spacing: -0.015em;
+      line-height: 1.3;
+      page-break-after: avoid;
     }
 
     ul li {
@@ -6328,7 +6534,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: #d4d4d4;
+      color: var(--print-h2-color, #d4d4d4);
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -6464,19 +6670,47 @@ body {
 
   /* TOC */
   .toc {
-    color: #d4d4d4;
+    color: var(--print-h3-color, #d4d4d4);
 
     button.toc-header {
       h3 {
-        text-align: center;
-        margin: 0;
-        padding: 2px;
-        color: #d4d4d4;
+        margin-block-end: 0rem;
+        margin-block-start: 0rem;
+        --font-weight: 600;
+        color: var(--print-h3-color, #d4d4d4);
+        font-family:
+          "??",
+          "??",
+          Bookerly,
+          "Inter",
+          "Segoe UI",
+          "霞鹜文楷 GB",
+          "LXGW WenKai",
+          "Microsoft YaHei",
+          "Arial",
+          ui-sans-serif,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          "Inter",
+          "Apple Color Emoji",
+          "Segoe UI Emoji",
+          "Segoe UI Symbol",
+          "Microsoft YaHei Light",
+          sans-serif;
+        font-size: 1.3125em;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 600;
+        letter-spacing: -0.015em;
+        line-height: 1.3;
+        page-break-after: avoid;
 
         margin-block: 0;
       }
 
-      color: #d4d4d4;
+      color: var(--print-h3-color, #d4d4d4);
 
       color: inherit;
     }
@@ -6499,10 +6733,38 @@ body {
   .graph,
   .toc {
     h3 {
-      text-align: center;
-      margin: 0;
-      padding: 2px;
-      color: #d4d4d4;
+      margin-block-end: 0rem;
+      margin-block-start: 0rem;
+      --font-weight: 600;
+      color: var(--print-h3-color, #d4d4d4);
+      font-family:
+        "??",
+        "??",
+        Bookerly,
+        "Inter",
+        "Segoe UI",
+        "霞鹜文楷 GB",
+        "LXGW WenKai",
+        "Microsoft YaHei",
+        "Arial",
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        "Inter",
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Microsoft YaHei Light",
+        sans-serif;
+      font-size: 1.3125em;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 600;
+      letter-spacing: -0.015em;
+      line-height: 1.3;
+      page-break-after: avoid;
 
       min-height: calc(2 * var(--p-spacing) + var(--h3-line-height));
       margin-block: 0;

@@ -41,6 +41,19 @@ html[saved-theme="dark"] {
   --color-base-100: #dadada;
   --color-accent-hsl: 258, 88%, 66%;
   --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --link-color: #4d8bf9;
+  --link-color-hover: #0070f3;
+  --link-external-color: #888888;
+  --background-modifier-border: #333333;
+  --background-primary: #000000;
+  --background-primary-alt: #000000;
+  --background-secondary: #000000;
+  --text-accent: var(--text-accent);
+  --text-accent-hover: #0070f3;
+  --text-faint: #888888;
+  --text-highlight-bg: #adc8ff;
+  --text-muted: #888888;
+  --text-normal: #ffffff;
 }
 
 :root[saved-theme="light"],
@@ -77,6 +90,18 @@ html[saved-theme="light"] {
   --color-base-100: #222222;
   --color-accent-hsl: 258, 88%, 66%;
   --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --link-color: #0070f3;
+  --link-color-hover: #0051cc;
+  --background-modifier-border: #333333;
+  --background-primary: #000000;
+  --background-primary-alt: #000000;
+  --background-secondary: #000000;
+  --text-accent: var(--text-accent);
+  --text-accent-hover: #0070f3;
+  --text-faint: #888888;
+  --text-highlight-bg: #adc8ff;
+  --text-muted: #888888;
+  --text-normal: #ffffff;
 }
 
 /* latin-ext */
@@ -183,19 +208,19 @@ body {
   --bold-weight: calc(600 + 200);
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --checkbox-marker-color: #000;
+  --checkbox-marker-color: #000000;
   --checkbox-color: #00b8d9;
   --checkbox-color-hover: #00a3c4;
   --checkbox-border-color: #888888;
-  --checkbox-border-color-hover: #b3b3b3;
-  --code-background: var(--vercel-gray-900);
-  --code-normal: #dadada;
+  --checkbox-border-color-hover: #888888;
+  --code-background: #000000;
+  --code-normal: #ffffff;
   --code-comment: #888888;
   --code-function: #e0de71;
   --code-important: #e9973f;
   --code-keyword: #fa99cd;
   --code-property: #53dfdd;
-  --code-punctuation: #b3b3b3;
+  --code-punctuation: #888888;
   --code-string: #44cf6e;
   --code-tag: #fb464c;
   --code-value: #a882ff;
@@ -211,7 +236,7 @@ body {
   --h3-line-height: 1.3;
   --hr-color: transparent;
   --hr-thickness: 2px;
-  --icon-color: #b3b3b3;
+  --icon-color: #888888;
   --inline-title-color: inherit;
   --inline-title-font: inherit;
   --italic-color: inherit;
@@ -225,7 +250,7 @@ body {
   --nav-item-children-padding-start: 4px;
   --nav-item-children-margin-start: 12px;
   --p-spacing: 1rem;
-  --search-icon-color: #b3b3b3;
+  --search-icon-color: #888888;
   --tag-color: #00b8d9;
   --tag-color-hover: #00b8d9;
   --tag-decoration: none;
@@ -259,10 +284,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -286,13 +311,13 @@ body {
     sans-serif;
   line-height: 1.3;
   font-size: 16px;
-  background-color: #000;
+  background-color: #000000;
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
   caret-color: #00b8d9;
-  background: var(--vercel-gray-900);
-  color: var(--vercel-gray-100);
+  background: #000000;
+  color: #ffffff;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -500,7 +525,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
 
-  background-color: #000;
+  background-color: #000000;
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -529,13 +554,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: #000;
+      background-color: #000000;
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: #000;
+        background-color: #000000;
 
         background-color: var(--background-primary);
       }
@@ -544,7 +569,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: #000;
+          background-color: #000000;
 
           background-color: var(--background-secondary);
 
@@ -861,7 +886,7 @@ body {
     position: relative;
     padding: 12px 16px;
     min-height: 38px;
-    background-color: var(--vercel-gray-900);
+    background-color: #000000;
     border-radius: 4px;
     white-space: pre-wrap;
     border: 0px solid transparent;
@@ -930,12 +955,12 @@ body {
   }
 
   code {
-    color: #dadada;
+    color: #ffffff;
     font-family:
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
       "Source Code Pro", monospace;
-    background-color: var(--vercel-gray-900);
+    background-color: #000000;
     border-radius: 4px;
     font-size: 1em;
     padding: 0.15em 0.3em;
@@ -952,7 +977,7 @@ body {
     height: auto;
     background-color: transparent;
     box-shadow: none;
-    color: #b3b3b3;
+    color: #888888;
     font-size: calc(16px * 0.8);
     font-family:
       "??",
@@ -983,7 +1008,7 @@ body {
 
   /* METADATA */
   .content-meta {
-    color: #dadada;
+    color: #ffffff;
 
     color: var(--text-normal);
   }
@@ -1010,7 +1035,7 @@ body {
     }
 
     ul li {
-      color: #dadada;
+      color: #ffffff;
 
       font-weight: 500;
     }
@@ -1032,7 +1057,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: #000;
+        background-color: #000000;
 
         background-color: var(--background-secondary);
 
@@ -1072,7 +1097,7 @@ body {
         }
         &:hover {
           background-color: rgba(255, 255, 255, 0.15);
-          color: #dadada;
+          color: #ffffff;
           font-weight: inherit;
 
           font-size: 1rem;
@@ -1110,17 +1135,17 @@ body {
         a {
           padding: 6px 8px 6px 24px;
           border-radius: 4px;
-          color: #dadada;
+          color: #ffffff;
           cursor: pointer;
           display: flex;
           font-size: 16px;
           font-weight: inherit;
           line-height: 1.3;
           margin-bottom: 2px;
-          border-bottom-left-radius: 0 !important;
-          border-bottom-right-radius: 0 !important;
-          border-top-left-radius: 0 !important;
-          border-top-right-radius: 0 !important;
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
 
           color: inherit;
           font-size: 1rem;
@@ -1194,7 +1219,7 @@ body {
     ul.toc-content.overflow {
       li,
       li > a {
-        color: #dadada;
+        color: #ffffff;
 
         font-weight: inherit;
 
@@ -1286,7 +1311,7 @@ body {
       background: transparent;
       border: 1px solid transparent;
       border-radius: 5px;
-      color: #dadada;
+      color: #ffffff;
       font-family: inherit;
       font-size: calc(16px * 0.937);
       outline: none;
@@ -1301,7 +1326,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: #000;
+        background-color: #000000;
 
         border: 0.5pt solid var(--color-base-40, rgba(251, 70, 76, 0.6));
 
@@ -1320,12 +1345,12 @@ body {
           width: 100%;
           padding: 24px;
           padding-inline-end: 48px;
-          background-color: #000;
+          background-color: #000000;
           font-size: 16px;
           border: none;
           height: 48px;
           border-radius: 0;
-          border-bottom: 1px solid var(--vercel-gray-900);
+          border-bottom: 1px solid #000000;
 
           margin-bottom: 0;
           border-bottom: none;
@@ -1333,7 +1358,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: var(--vercel-gray-100);
+          color: #ffffff;
 
           background: transparent;
           margin-bottom: 0;
@@ -1381,10 +1406,10 @@ body {
               & > ul > li > p {
                 background-color: transparent;
 
-                color: var(--vercel-gray-100);
+                color: #ffffff;
 
                 &.match-tag {
-                  color: #00a3c4 !important;
+                  color: #00a3c4;
                 }
               }
             }
@@ -1461,8 +1486,8 @@ body {
     max-height: 95vh;
     position: absolute;
     z-index: 30;
-    border: 1px solid var(--border-1);
-    background-color: var(--vercel-gray-900);
+    border: 1px solid #333333;
+    background-color: #000000;
 
     display: block;
     position: fixed;
@@ -1470,9 +1495,9 @@ body {
     border: unset;
     background-color: var(--background-primary);
     & .popover-inner {
-      border: 1px solid var(--border-1);
+      border: 1px solid #333333;
 
-      background-color: var(--vercel-gray-900);
+      background-color: #000000;
 
       border-radius: 8px;
 

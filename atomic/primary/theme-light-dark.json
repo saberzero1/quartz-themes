@@ -94,16 +94,16 @@
       "dark": null
     },
     "--color-accent-1": {
-      "light": "hsl( calc(var(--accent-h) - 1), calc(var(--accent-s) * 1.01), calc(var(--accent-l) * 1.075) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 1),\n    calc(var(--accent-s) * 1.01),\n    calc(var(--accent-l) * 1.075)\n  )",
       "dark": null
     },
     "--color-accent-2": {
-      "light": "hsl( calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.33), calc(var(--accent-l) * 1.19) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 3),\n    calc(var(--accent-s) * 1.33),\n    calc(var(--accent-l) * 1.19)\n  )",
       "dark": null
     },
     "--interactive-normal": { "light": "var(--color-l-gray-30)", "dark": null },
     "--interactive-hover": {
-      "light": "color-mix( in hsl, var(--color-l-gray-10) 50%, var(--interactive-normal) )",
+      "light": "color-mix(\n    in hsl,\n    var(--color-l-gray-10) 50%,\n    var(--interactive-normal)\n  )",
       "dark": null
     },
     "--interactive-accent-hsl": {
@@ -193,11 +193,11 @@
       "dark": null
     },
     "--background-modifier-border-hover": {
-      "light": "color-mix( in hsl, var(--color-l-gray-70) 60%, var(--color-l-gray-60) )",
+      "light": "color-mix(\n    in hsl,\n    var(--color-l-gray-70) 60%,\n    var(--color-l-gray-60)\n  )",
       "dark": null
     },
     "--background-modifier-border-focus": {
-      "light": "color-mix( in hsl, var(--color-l-gray-70) 60%, var(--color-l-gray-60) )",
+      "light": "color-mix(\n    in hsl,\n    var(--color-l-gray-70) 60%,\n    var(--color-l-gray-60)\n  )",
       "dark": null
     },
     "--background-modifier-box-shadow": { "light": "#000000", "dark": null },
@@ -253,11 +253,11 @@
     "--text-accent": { "light": "var(--color-accent)", "dark": null },
     "--text-accent-hover": { "light": "var(--color-accent-2)", "dark": null },
     "--text-selection-theme-text-color": {
-      "light": "color-mix( in srgb, currentColor 70%, black )",
+      "light": "color-mix(\n    in srgb,\n    currentColor 70%,\n    black\n  )",
       "dark": null
     },
     "--text-selection-theme-bg": {
-      "light": "color-mix( in srgb, var(--color-l-gray-70) 30%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--color-l-gray-70) 30%,\n    transparent\n  )",
       "dark": null
     },
     "--icon-color": { "light": "var(--color-l-gray-80)", "dark": null },
@@ -373,7 +373,7 @@
       "dark": null
     },
     "--vault-name-border": {
-      "light": "var(--vault-name-border-width) solid var(--background-modifier-border)",
+      "light": "var(--vault-name-border-width) solid\n    var(--background-modifier-border)",
       "dark": null
     },
     "--disabled-component-opacity": { "light": "0.3", "dark": null },
@@ -387,15 +387,15 @@
       "dark": null
     },
     "--button-shadow-focus": {
-      "light": "inset 0px 1px 0px 0px #ffffff, inset 0px 0px 0px 1px #000000, inset 0px calc(var(--button-inset-shadow-size) * -1) 0px 2px #000000, inset 0px -2px 4px 0px #000000, 0px 4px 4px -5.6px #000000, 0px 2px 4px -2.7px #000000, 0px 2px 4px -1px #000000, 0px 0px 0px 3px var(--color-l-alpha-gray)",
+      "light": "inset 0px 1px 0px 0px #ffffff, inset 0px 0px 0px 1px #000000,\n    inset 0px calc(var(--button-inset-shadow-size) * -1) 0px 2px #000000,\n    inset 0px -2px 4px 0px #000000, 0px 4px 4px -5.6px #000000,\n    0px 2px 4px -2.7px #000000, 0px 2px 4px -1px #000000,\n    0px 0px 0px 3px var(--color-l-alpha-gray)",
       "dark": null
     },
     "--button-accent-shadow": {
-      "light": "inset 0px 1px 0px 0px #ffffff, inset 0px 0px 0px 1px #000000, inset 0px calc(var(--button-inset-shadow-size) * -1) 0px 2px #000000, inset 0px -2px 4px 0px #000000, 0px 4px 4px -5.6px #000000, 0px 2px 4px -2.7px #000000, 0px 2px 4px -1px #000000",
+      "light": "inset 0px 1px 0px 0px #ffffff, inset 0px 0px 0px 1px #000000,\n    inset 0px calc(var(--button-inset-shadow-size) * -1) 0px 2px #000000,\n    inset 0px -2px 4px 0px #000000, 0px 4px 4px -5.6px #000000,\n    0px 2px 4px -2.7px #000000, 0px 2px 4px -1px #000000",
       "dark": null
     },
     "--button-accent-shadow-hover": {
-      "light": "inset 0px 1px 0px 0px #ffffff, inset 0px 0px 0px 1px #000000, inset 0px calc(var(--button-inset-shadow-size) * -1) 0px 2px #000000, inset 0px -2px 4px 0px #000000, 0px 4px 4px -5.6px #000000, 0px 2px 4px -2.7px #000000, 0px 2px 6px -1px #000000",
+      "light": "inset 0px 1px 0px 0px #ffffff, inset 0px 0px 0px 1px #000000,\n    inset 0px calc(var(--button-inset-shadow-size) * -1) 0px 2px #000000,\n    inset 0px -2px 4px 0px #000000, 0px 4px 4px -5.6px #000000,\n    0px 2px 4px -2.7px #000000, 0px 2px 6px -1px #000000",
       "dark": null
     },
     "--button-accent-shadow-active": {
@@ -403,11 +403,11 @@
       "dark": null
     },
     "--button-accent-shadow-focus": {
-      "light": "inset 0px 1px 0px 0px #ffffff, inset 0px 0px 0px 1px #000000, inset 0px calc(var(--button-inset-shadow-size) * -1) 0px 2px #000000, inset 0px -2px 4px 0px #000000, 0px 4px 4px -5.6px #000000, 0px 2px 4px -2.7px #000000, 0px 2px 6px -1px #000000, 0px 0px 0px 3px var(--color-l-alpha-gray)",
+      "light": "inset 0px 1px 0px 0px #ffffff, inset 0px 0px 0px 1px #000000,\n    inset 0px calc(var(--button-inset-shadow-size) * -1) 0px 2px #000000,\n    inset 0px -2px 4px 0px #000000, 0px 4px 4px -5.6px #000000,\n    0px 2px 4px -2.7px #000000, 0px 2px 6px -1px #000000,\n    0px 0px 0px 3px var(--color-l-alpha-gray)",
       "dark": null
     },
     "--empty-state-action-btn-bg": {
-      "light": "color-mix( in srgb, var(--background-primary-alt) 50%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--background-primary-alt) 50%,\n    transparent\n  )",
       "dark": null
     },
     "--copy-code-btn-shadow": {
@@ -453,7 +453,7 @@
       "dark": null
     },
     "--inprogress-chbx-border-color": {
-      "light": "color-mix( in srgb, var(--inprogress-chbx-color) 65%, var(--color-base-60) )",
+      "light": "color-mix(\n    in srgb,\n    var(--inprogress-chbx-color) 65%,\n    var(--color-base-60)\n  )",
       "dark": null
     },
     "--resched-chbx-color": { "light": "hsla(178, 18%, 59%, 1)", "dark": null },
@@ -577,7 +577,7 @@
       "dark": null
     },
     "--community-item-selected-shadow": {
-      "light": "inset 0px 0px 0px 1px #000000, 0px 1px 3px -2.6px #000000, 0px 2px 6px -4.2px #000000, 0px 4px 12px -6px #000000",
+      "light": "inset 0px 0px 0px 1px #000000, 0px 1px 3px -2.6px #000000,\n    0px 2px 6px -4.2px #000000, 0px 4px 12px -6px #000000",
       "dark": null
     },
     "--nav-item-color": { "light": "var(--color-l-gray-110)", "dark": null },
@@ -637,7 +637,7 @@
       "dark": null
     },
     "--nav-file-shadow-active": {
-      "light": "inset 0px 0px 0px 1px #000000, inset 0px calc(var(--button-axis-offset) * -1) 0px var(--button-axis-offset) #000000, 0px 2px 3px 0px #000000",
+      "light": "inset 0px 0px 0px 1px #000000,\n    inset 0px calc(var(--button-axis-offset) * -1) 0px var(--button-axis-offset)\n      #000000,\n    0px 2px 3px 0px #000000",
       "dark": null
     },
     "--nav-file-tag-color": { "light": "var(--color-l-gray-90)", "dark": null },
@@ -669,7 +669,7 @@
     },
     "--notice-color": { "light": "var(--text-on-accent)", "dark": null },
     "--notice-shadow": {
-      "light": "inset 0px 0px 0px 1px #000000, 0px 2px 9px -2.1px #000000, 0px 3px 17px -4.3px #000000, 0px 7px 30px -5.5px #000000",
+      "light": "inset 0px 0px 0px 1px #000000, 0px 2px 9px -2.1px #000000,\n    0px 3px 17px -4.3px #000000, 0px 7px 30px -5.5px #000000",
       "dark": null
     },
     "--pill-color": { "light": "var(--color-l-gray-120)", "dark": null },
@@ -685,11 +685,11 @@
       "dark": null
     },
     "--pill-border-color": {
-      "light": "color-mix( in srgb, var(--background-modifier-border) 50%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--background-modifier-border) 50%,\n    transparent\n  )",
       "dark": null
     },
     "--pill-border-color-hover": {
-      "light": "color-mix( in srgb, var(--background-modifier-border-hover) 50%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--background-modifier-border-hover) 50%,\n    transparent\n  )",
       "dark": null
     },
     "--progress-background": {
@@ -703,7 +703,7 @@
     "--progress-color-3": { "light": "var(--color-l-yellow-20)", "dark": null },
     "--progress-color-4": { "light": "var(--color-l-green-30)", "dark": null },
     "--progress-color-5": {
-      "light": "linear-gradient( 45deg, var(--progress-gradient-1), var(--progress-gradient-2), var(--progress-gradient-3) )",
+      "light": "linear-gradient(\n    45deg,\n    var(--progress-gradient-1),\n    var(--progress-gradient-2),\n    var(--progress-gradient-3)\n  )",
       "dark": null
     },
     "--progress-gradient-1": { "light": "var(--color-l-red-10)", "dark": null },
@@ -728,7 +728,7 @@
       "dark": null
     },
     "--prompt-suggestion-highlight-color": {
-      "light": "color-mix( in srgb, var(--prompt-suggestion-color) 70%, black )",
+      "light": "color-mix(\n    in srgb,\n    var(--prompt-suggestion-color) 70%,\n    black\n  )",
       "dark": null
     },
     "--prompt-suggestion-color-selected": {
@@ -748,7 +748,7 @@
       "dark": null
     },
     "--prompt-instructions-background": {
-      "light": "color-mix( in hsl, var(--background-primary) 60%, var(--background-secondary) )",
+      "light": "color-mix(\n    in hsl,\n    var(--background-primary) 60%,\n    var(--background-secondary)\n  )",
       "dark": null
     },
     "--prompt-separator-border": {
@@ -779,11 +779,11 @@
     "--slider-thumb-bg": { "light": "var(--color-l-gray-10)", "dark": null },
     "--slider-thumb-border-width": { "light": "0px", "dark": null },
     "--slider-thumb-shadow": {
-      "light": "inset 0px 0px 0px 1px #000000, inset 0pc 1px 0px 1px #ffffff, inset 0px -1px 0px 1px #000000, 0px 1px 2px 0px #000000",
+      "light": "inset 0px 0px 0px 1px #000000, inset 0pc 1px 0px 1px #ffffff,\n    inset 0px -1px 0px 1px #000000, 0px 1px 2px 0px #000000",
       "dark": null
     },
     "--slider-thumb-shadow-hover": {
-      "light": "inset 0px 0px 0px 1px #000000, inset 0pc 1px 0px 1px #ffffff, inset 0px -1px 0px 1px #000000, 0px 1px 2px 0px #000000, 0px 0px 0px 6px #000000",
+      "light": "inset 0px 0px 0px 1px #000000, inset 0pc 1px 0px 1px #ffffff,\n    inset 0px -1px 0px 1px #000000, 0px 1px 2px 0px #000000,\n    0px 0px 0px 6px #000000",
       "dark": null
     },
     "--tab-background-active": {
@@ -816,12 +816,12 @@
     "--tab-bg": { "light": "transparent", "dark": null },
     "--tab-active-bg": { "light": "var(--background-primary)", "dark": null },
     "--tab-active-shadow": {
-      "light": "inset 0px 1px 0px 0px #ffffff, inset 0px calc(var(--button-inset-shadow-size) * -1) 0px 1px #000000, 0px 1px 2px -0.1px #000000",
+      "light": "inset 0px 1px 0px 0px #ffffff,\n    inset 0px calc(var(--button-inset-shadow-size) * -1) 0px 1px #000000,\n    0px 1px 2px -0.1px #000000",
       "dark": null
     },
     "--tab-outline-color": { "light": "transparent", "dark": null },
     "--tab-stacked-shadow": {
-      "light": "-2.9px 0 10.5px -6.2px #000000, -6.2px 0 3.6px -5.2px #000000, -9.4px 0 8.4px -4.1px #000000",
+      "light": "-2.9px 0 10.5px -6.2px #000000, -6.2px 0 3.6px -5.2px #000000,\n    -9.4px 0 8.4px -4.1px #000000",
       "dark": null
     },
     "--background-modifier-form-field": {
@@ -829,15 +829,15 @@
       "dark": null
     },
     "--input-shadow": {
-      "light": "inset 0px 1px 0px 0px #ffffff, inset 0px 0px 0px 1px #000000, inset 0px calc(var(--button-inset-shadow-size) * -1) 0px 2px #000000, inset 0px -2px 4px 0px #000000, 0px 4px 4px -5.6px #000000, 0px 2px 4px -2.7px #000000, 0px 2px 4px -1px #000000",
+      "light": "inset 0px 1px 0px 0px #ffffff, inset 0px 0px 0px 1px #000000,\n    inset 0px calc(var(--button-inset-shadow-size) * -1) 0px 2px #000000,\n    inset 0px -2px 4px 0px #000000, 0px 4px 4px -5.6px #000000,\n    0px 2px 4px -2.7px #000000, 0px 2px 4px -1px #000000",
       "dark": null
     },
     "--input-shadow-hover": {
-      "light": "inset 0px 1px 0px 0px #ffffff, inset 0px 0px 0px 1px #000000, inset 0px calc(var(--button-inset-shadow-size) * -1) 0px 2px #000000, inset 0px -2px 4px 0px #000000, 0px 4px 4px -5.6px #000000, 0px 2px 4px -2.7px #000000, 0px 2px 6px -1px #000000",
+      "light": "inset 0px 1px 0px 0px #ffffff, inset 0px 0px 0px 1px #000000,\n    inset 0px calc(var(--button-inset-shadow-size) * -1) 0px 2px #000000,\n    inset 0px -2px 4px 0px #000000, 0px 4px 4px -5.6px #000000,\n    0px 2px 4px -2.7px #000000, 0px 2px 6px -1px #000000",
       "dark": null
     },
     "--input-shadow-active": {
-      "light": "inset 0px 0px 0px 1px #000000, inset 0px 0px 0px calc(1px + var(--button-inset-shadow-size)) #000000, inset 0px 2px 8px 0px #000000, 0px 0px 0px 1px #ffffff",
+      "light": "inset 0px 0px 0px 1px #000000,\n    inset 0px 0px 0px calc(1px + var(--button-inset-shadow-size)) #000000,\n    inset 0px 2px 8px 0px #000000, 0px 0px 0px 1px #ffffff",
       "dark": null
     },
     "--text-input-color": { "light": "var(--color-l-gray-130)", "dark": null },
@@ -846,7 +846,7 @@
       "dark": null
     },
     "--text-input-bg-active": {
-      "light": "color-mix( in hsl, var(--background-modifier-form-field) 40%, var(--color-l-gray-10) )",
+      "light": "color-mix(\n    in hsl,\n    var(--background-modifier-form-field) 40%,\n    var(--color-l-gray-10)\n  )",
       "dark": null
     },
     "--text-input-border-color": {
@@ -854,33 +854,33 @@
       "dark": null
     },
     "--text-input-shadow-active": {
-      "light": "inset 0px 1px 0px 0px #ffffff, inset 0px -1px 0px 0px #000000, 0px 1px 6px 0px #000000",
+      "light": "inset 0px 1px 0px 0px #ffffff, inset 0px -1px 0px 0px #000000,\n    0px 1px 6px 0px #000000",
       "dark": null
     },
     "--toggle-thumb-color": { "light": "var(--color-l-gray-10)", "dark": null },
     "--toggle-bg": {
-      "light": "color-mix( in hsl, var(--color-l-gray-60) 80%, var(--color-l-gray-70) )",
+      "light": "color-mix(\n    in hsl,\n    var(--color-l-gray-60) 80%,\n    var(--color-l-gray-70)\n  )",
       "dark": null
     },
     "--toggle-bg-enabled": { "light": "var(--color-l-green-30)", "dark": null },
     "--toggle-shadow": {
-      "light": "inset 0 4px 10px #000000, inset 0px 0px 0px 1px #000000, inset 0 0 1px #000000",
+      "light": "inset 0 4px 10px #000000, inset 0px 0px 0px 1px #000000,\n    inset 0 0 1px #000000",
       "dark": null
     },
     "--toggle-shadow-hover": {
-      "light": "inset 0 6px 20px #000000, inset 0px 0px 0px 1px #000000, inset 0 0 1px #000000",
+      "light": "inset 0 6px 20px #000000, inset 0px 0px 0px 1px #000000,\n    inset 0 0 1px #000000",
       "dark": null
     },
     "--toggle-shadow-focus": {
-      "light": "inset 0 6px 20px #000000, inset 0px 0px 0px 1px #000000, inset 0 0 1px #000000, 0px 0px 0px 5px #000000",
+      "light": "inset 0 6px 20px #000000, inset 0px 0px 0px 1px #000000,\n    inset 0 0 1px #000000, 0px 0px 0px 5px #000000",
       "dark": null
     },
     "--toggle-thumb-shadow": {
-      "light": "inset 0px 1px 0px 1px #ffffff, inset 0px 0px 0px 1px #000000, 0 2px 2px #000000",
+      "light": "inset 0px 1px 0px 1px #ffffff, inset 0px 0px 0px 1px #000000,\n    0 2px 2px #000000",
       "dark": null
     },
     "--tooltip-shadow": {
-      "light": "inset 0px -1px 0px 0px #000000, 0px 2px 4px -1.4px #000000, 0px 3px 10px -1.7px #000000",
+      "light": "inset 0px -1px 0px 0px #000000, 0px 2px 4px -1.4px #000000,\n    0px 3px 10px -1.7px #000000",
       "dark": null
     },
     "--active-line-bg": { "light": "var(--color-base-00)", "dark": null },
@@ -902,7 +902,7 @@
     "--callout-icon-fold-filter": { "light": "brightness(0.8)", "dark": null },
     "--callout-title-color": { "light": "var(--text-normal)", "dark": null },
     "--callout-content-background": {
-      "light": "color-mix( in srgb, var(--background-primary-alt) 50%, var(--background-primary) )",
+      "light": "color-mix(\n    in srgb,\n    var(--background-primary-alt) 50%,\n    var(--background-primary)\n  )",
       "dark": null
     },
     "--callout-container-shadow": {
@@ -914,7 +914,7 @@
       "dark": null
     },
     "--callout-content-shadow": {
-      "light": "inset 0px 0px 0px 1px #000000, inset 0px calc(var(--callout-shadow-offset) * -1) var(--callout-content-shadow-blur) 0px #646464",
+      "light": "inset 0px 0px 0px 1px #000000,\n    inset 0px calc(var(--callout-shadow-offset) * -1)\n      var(--callout-content-shadow-blur) 0px #646464",
       "dark": null
     },
     "--embed-background": {
@@ -922,7 +922,7 @@
       "dark": null
     },
     "--embed-bg-color-mix": {
-      "light": "color-mix( in srgb, var(--background-primary-alt) 50%, var(--editor-bg-color) )",
+      "light": "color-mix(\n    in srgb,\n    var(--background-primary-alt) 50%,\n    var(--editor-bg-color)\n  )",
       "dark": null
     },
     "--embed-border-top-color": {
@@ -948,11 +948,11 @@
     },
     "--embed-block-shadow-hover": { "light": "none", "dark": null },
     "--embed-edit-btn-bg": {
-      "light": "color-mix( in srgb, var(--color-l-gray-20) 70%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--color-l-gray-20) 70%,\n    transparent\n  )",
       "dark": null
     },
     "--embed-edit-btn-bg-hover": {
-      "light": "color-mix( in srgb, var(--color-l-gray-20) 100%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--color-l-gray-20) 100%,\n    transparent\n  )",
       "dark": null
     },
     "--embed-edit-btn-shadow": {
@@ -960,7 +960,7 @@
       "dark": null
     },
     "--embed-edit-btn-shadow-hover": {
-      "light": "inset 0px 0px 0px 1px #000000, inset 0px -2px 1px 1px #000000, 0px 1px 2px 0px #000000",
+      "light": "inset 0px 0px 0px 1px #000000, inset 0px -2px 1px 1px #000000,\n    0px 1px 2px 0px #000000",
       "dark": null
     },
     "--bold-color": { "light": "var(--color-l-red-30)", "dark": null },
@@ -968,7 +968,7 @@
     "--bold-italic-color": { "light": "var(--color-l-gray-140)", "dark": null },
     "--underline-color": { "light": "var(--text-normal)", "dark": null },
     "--underline-decoration-color": {
-      "light": "color-mix( in srgb, currentColor var(--underline-decoration-opacity), transparent )",
+      "light": "color-mix(\n    in srgb,\n    currentColor var(--underline-decoration-opacity),\n    transparent\n  )",
       "dark": null
     },
     "--strikethrough-color": {
@@ -984,7 +984,7 @@
       "dark": null
     },
     "--file-header-border": {
-      "light": "var(--file-header-border-width) solid var(--file-header-border-color)",
+      "light": "var(--file-header-border-width) solid\n    var(--file-header-border-color)",
       "dark": null
     },
     "--file-header-border-color": {
@@ -1010,19 +1010,19 @@
     },
     "--nav-folder-1-color": { "light": "var(--color-l-red-30)", "dark": null },
     "--nav-folder-1-bg-color": {
-      "light": "color-mix( in srgb, var(--color-l-alpha-red) 60%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--color-l-alpha-red) 60%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-1-bg-color-hover": {
-      "light": "color-mix( in srgb, var(--nav-folder-1-bg-color) 70%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-1-bg-color) 70%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-1-collapse-color": {
-      "light": "color-mix( in srgb, var(--nav-folder-1-color) 50%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-1-color) 50%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-1-indent-color": {
-      "light": "color-mix( in srgb, var(--nav-folder-1-color) 25%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-1-color) 25%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-2-color": {
@@ -1030,19 +1030,19 @@
       "dark": null
     },
     "--nav-folder-2-bg-color": {
-      "light": "color-mix( in srgb, var(--color-l-alpha-orange) 60%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--color-l-alpha-orange) 60%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-2-bg-color-hover": {
-      "light": "color-mix( in srgb, var(--nav-folder-2-bg-color) 70%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-2-bg-color) 70%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-2-collapse-color": {
-      "light": "color-mix( in srgb, var(--nav-folder-2-color) 50%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-2-color) 50%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-2-indent-color": {
-      "light": "color-mix( in srgb, var(--nav-folder-2-color) 25%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-2-color) 25%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-3-color": {
@@ -1050,19 +1050,19 @@
       "dark": null
     },
     "--nav-folder-3-bg-color": {
-      "light": "color-mix( in srgb, var(--color-l-alpha-yellow) 60%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--color-l-alpha-yellow) 60%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-3-bg-color-hover": {
-      "light": "color-mix( in srgb, var(--nav-folder-3-bg-color) 70%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-3-bg-color) 70%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-3-collapse-color": {
-      "light": "color-mix( in srgb, var(--nav-folder-3-color) 50%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-3-color) 50%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-3-indent-color": {
-      "light": "color-mix( in srgb, var(--nav-folder-3-color) 25%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-3-color) 25%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-4-color": {
@@ -1070,36 +1070,36 @@
       "dark": null
     },
     "--nav-folder-4-bg-color": {
-      "light": "color-mix( in srgb, var(--color-l-alpha-green) 60%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--color-l-alpha-green) 60%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-4-bg-color-hover": {
-      "light": "color-mix( in srgb, var(--nav-folder-4-bg-color) 70%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-4-bg-color) 70%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-4-collapse-color": {
-      "light": "color-mix( in srgb, var(--nav-folder-4-color) 50%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-4-color) 50%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-4-indent-color": {
-      "light": "color-mix( in srgb, var(--nav-folder-4-color) 25%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-4-color) 25%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-5-color": { "light": "var(--color-l-blue-30)", "dark": null },
     "--nav-folder-5-bg-color": {
-      "light": "color-mix( in srgb, var(--color-l-alpha-blue) 60%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--color-l-alpha-blue) 60%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-5-bg-color-hover": {
-      "light": "color-mix( in srgb, var(--nav-folder-5-bg-color) 70%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-5-bg-color) 70%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-5-collapse-color": {
-      "light": "color-mix( in srgb, var(--nav-folder-5-color) 50%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-5-color) 50%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-5-indent-color": {
-      "light": "color-mix( in srgb, var(--nav-folder-5-color) 25%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-5-color) 25%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-6-color": {
@@ -1107,36 +1107,36 @@
       "dark": null
     },
     "--nav-folder-6-bg-color": {
-      "light": "color-mix( in srgb, var(--color-l-alpha-purple) 60%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--color-l-alpha-purple) 60%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-6-bg-color-hover": {
-      "light": "color-mix( in srgb, var(--nav-folder-6-bg-color) 70%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-6-bg-color) 70%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-6-collapse-color": {
-      "light": "color-mix( in srgb, var(--nav-folder-6-color) 50%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-6-color) 50%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-6-indent-color": {
-      "light": "color-mix( in srgb, var(--nav-folder-6-color) 25%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-6-color) 25%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-7-color": { "light": "var(--color-l-red-30)", "dark": null },
     "--nav-folder-7-bg-color": {
-      "light": "color-mix( in srgb, var(--color-l-alpha-red) 60%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--color-l-alpha-red) 60%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-7-bg-color-hover": {
-      "light": "color-mix( in srgb, var(--nav-folder-7-bg-color) 70%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-7-bg-color) 70%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-7-collapse-color": {
-      "light": "color-mix( in srgb, var(--nav-folder-7-color) 50%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-7-color) 50%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-7-indent-color": {
-      "light": "color-mix( in srgb, var(--nav-folder-7-color) 25%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-7-color) 25%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-8-color": {
@@ -1144,19 +1144,19 @@
       "dark": null
     },
     "--nav-folder-8-bg-color": {
-      "light": "color-mix( in srgb, var(--color-l-alpha-orange) 60%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--color-l-alpha-orange) 60%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-8-bg-color-hover": {
-      "light": "color-mix( in srgb, var(--nav-folder-8-bg-color) 70%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-8-bg-color) 70%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-8-collapse-color": {
-      "light": "color-mix( in srgb, var(--nav-folder-8-color) 50%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-8-color) 50%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-8-indent-color": {
-      "light": "color-mix( in srgb, var(--nav-folder-8-color) 25%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-8-color) 25%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-9-color": {
@@ -1164,19 +1164,19 @@
       "dark": null
     },
     "--nav-folder-9-bg-color": {
-      "light": "color-mix( in srgb, var(--color-l-alpha-yellow) 60%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--color-l-alpha-yellow) 60%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-9-bg-color-hover": {
-      "light": "color-mix( in srgb, var(--nav-folder-9-bg-color) 70%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-9-bg-color) 70%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-9-collapse-color": {
-      "light": "color-mix( in srgb, var(--nav-folder-9-color) 50%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-9-color) 50%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-9-indent-color": {
-      "light": "color-mix( in srgb, var(--nav-folder-9-color) 25%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-9-color) 25%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-10-color": {
@@ -1184,19 +1184,19 @@
       "dark": null
     },
     "--nav-folder-10-bg-color": {
-      "light": "color-mix( in srgb, var(--color-l-alpha-green) 60%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--color-l-alpha-green) 60%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-10-bg-color-hover": {
-      "light": "color-mix( in srgb, var(--nav-folder-10-bg-color) 70%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-10-bg-color) 70%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-10-collapse-color": {
-      "light": "color-mix( in srgb, var(--nav-folder-10-color) 50%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-10-color) 50%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-10-indent-color": {
-      "light": "color-mix( in srgb, var(--nav-folder-10-color) 25%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-10-color) 25%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-11-color": {
@@ -1204,19 +1204,19 @@
       "dark": null
     },
     "--nav-folder-11-bg-color": {
-      "light": "color-mix( in srgb, var(--color-l-alpha-blue) 60%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--color-l-alpha-blue) 60%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-11-bg-color-hover": {
-      "light": "color-mix( in srgb, var(--nav-folder-11-bg-color) 70%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-11-bg-color) 70%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-11-collapse-color": {
-      "light": "color-mix( in srgb, var(--nav-folder-11-color) 50%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-11-color) 50%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-11-indent-color": {
-      "light": "color-mix( in srgb, var(--nav-folder-11-color) 25%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-11-color) 25%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-12-color": {
@@ -1224,19 +1224,19 @@
       "dark": null
     },
     "--nav-folder-12-bg-color": {
-      "light": "color-mix( in srgb, var(--color-l-alpha-purple) 60%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--color-l-alpha-purple) 60%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-12-bg-color-hover": {
-      "light": "color-mix( in srgb, var(--nav-folder-12-bg-color) 70%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-12-bg-color) 70%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-12-collapse-color": {
-      "light": "color-mix( in srgb, var(--nav-folder-12-color) 50%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-12-color) 50%,\n    transparent\n  )",
       "dark": null
     },
     "--nav-folder-12-indent-color": {
-      "light": "color-mix( in srgb, var(--nav-folder-12-color) 25%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--nav-folder-12-color) 25%,\n    transparent\n  )",
       "dark": null
     },
     "--bookmark-folder-1-color": {
@@ -1480,7 +1480,7 @@
       "dark": null
     },
     "--gutter-color": {
-      "light": "color-mix( in hsl, var(--color-l-gray-60) 40%, var(--color-l-gray-70) )",
+      "light": "color-mix(\n    in hsl,\n    var(--color-l-gray-60) 40%,\n    var(--color-l-gray-70)\n  )",
       "dark": null
     },
     "--gutter-color-active": {
@@ -1633,7 +1633,7 @@
       "dark": null
     },
     "--inline-query-bg": {
-      "light": "color-mix( in srgb, var(--background-secondary) 20%, var(--editor-bg-color) )",
+      "light": "color-mix(\n    in srgb,\n    var(--background-secondary) 20%,\n    var(--editor-bg-color)\n  )",
       "dark": null
     },
     "--inline-query-shadow": {
@@ -1643,7 +1643,7 @@
     "--kbd-color": { "light": "var(--color-l-red-10)", "dark": null },
     "--kbd-background": { "light": "var(--color-l-gray-40)", "dark": null },
     "--kbd-shadow": {
-      "light": "inset 0px 0px 0px 1px #000000, inset 0px calc(var(--button-inset-shadow-size) * -1) 0px 0px #000000",
+      "light": "inset 0px 0px 0px 1px #000000,\n    inset 0px calc(var(--button-inset-shadow-size) * -1) 0px 0px #000000",
       "dark": null
     },
     "--list-marker-color": { "light": "var(--color-l-gray-80)", "dark": null },
@@ -1657,7 +1657,7 @@
     },
     "--link-ahref-color": { "light": "var(--color-l-red-20)", "dark": null },
     "--link-ahref-decoration-color": {
-      "light": "color-mix( in srgb, currentColor var(--link-decoration-opacity), transparent )",
+      "light": "color-mix(\n    in srgb,\n    currentColor var(--link-decoration-opacity),\n    transparent\n  )",
       "dark": null
     },
     "--link-ahref-color-hover": {
@@ -1665,7 +1665,7 @@
       "dark": null
     },
     "--link-ahref-decoration-color-hover": {
-      "light": "color-mix( in srgb, var(--link-ahref-color-hover) var(--link-decoration-opacity), transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--link-ahref-color-hover) var(--link-decoration-opacity),\n    transparent\n  )",
       "dark": null
     },
     "--link-unresolved-color": {
@@ -1673,7 +1673,7 @@
       "dark": null
     },
     "--link-unresolved-decoration-color": {
-      "light": "color-mix( in srgb, var(--link-unresolved-color) var(--link-decoration-opacity), transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--link-unresolved-color) var(--link-decoration-opacity),\n    transparent\n  )",
       "dark": null
     },
     "--link-unresolved-color-hover": {
@@ -1681,17 +1681,17 @@
       "dark": null
     },
     "--link-unresolved-decoration-color-hover": {
-      "light": "color-mix( in srgb, var(--link-unresolved-color-hover) var(--link-decoration-opacity), transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--link-unresolved-color-hover) var(--link-decoration-opacity),\n    transparent\n  )",
       "dark": null
     },
     "--link-color": { "light": "var(--color-l-yellow-30)", "dark": null },
     "--link-decoration-color": {
-      "light": "color-mix( in srgb, var(--link-color) var(--link-decoration-opacity), transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--link-color) var(--link-decoration-opacity),\n    transparent\n  )",
       "dark": null
     },
     "--link-color-hover": { "light": "var(--color-l-yellow-20)", "dark": null },
     "--link-decoration-color-hover": {
-      "light": "color-mix( in srgb, var(--link-color-hover) var(--link-decoration-opacity), transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--link-color-hover) var(--link-decoration-opacity),\n    transparent\n  )",
       "dark": null
     },
     "--link-external-color": {
@@ -1699,7 +1699,7 @@
       "dark": null
     },
     "--link-external-decoration-color": {
-      "light": "color-mix( in srgb, var(--link-external-color) var(--link-decoration-opacity), transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--link-external-color) var(--link-decoration-opacity),\n    transparent\n  )",
       "dark": null
     },
     "--link-external-color-hover": {
@@ -1707,11 +1707,11 @@
       "dark": null
     },
     "--link-external-decoration-color-hover": {
-      "light": "color-mix( in srgb, var(--link-external-color-hover) var(--link-decoration-opacity), transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--link-external-color-hover) var(--link-decoration-opacity),\n    transparent\n  )",
       "dark": null
     },
     "--metadata-background": {
-      "light": "color-mix( in srgb, var(--editor-bg-color) 50%, var(--background-primary-alt) )",
+      "light": "color-mix(\n    in srgb,\n    var(--editor-bg-color) 50%,\n    var(--background-primary-alt)\n  )",
       "dark": null
     },
     "--metadata-tab-background": {
@@ -1746,7 +1746,7 @@
     },
     "--metadata-input-shadow-hover": { "light": "none", "dark": null },
     "--metadata-input-shadow-active": {
-      "light": "inset 0px 0px 0px 1px var(--background-modifier-border), 0px 0px 0px 1px var(--background-modifier-border)",
+      "light": "inset 0px 0px 0px 1px var(--background-modifier-border),\n    0px 0px 0px 1px var(--background-modifier-border)",
       "dark": null
     },
     "--metadata-key-input-color": {
@@ -1838,7 +1838,7 @@
       "dark": null
     },
     "--canvas-menu-bg": {
-      "light": "color-mix( in hsl, var(--color-l-gray-10) 50%, var(--color-l-gray-20) )",
+      "light": "color-mix(\n    in hsl,\n    var(--color-l-gray-10) 50%,\n    var(--color-l-gray-20)\n  )",
       "dark": null
     },
     "--canvas-menu-bg-hover": {
@@ -1850,7 +1850,7 @@
       "dark": null
     },
     "--canvas-menu-shadow": {
-      "light": "0px 1px 2px 1px #000000, 0px 1px 4px -2.1px #000000, 0px 2px 8px -1.2px #000000",
+      "light": "0px 1px 2px 1px #000000, 0px 1px 4px -2.1px #000000,\n    0px 2px 8px -1.2px #000000",
       "dark": null
     },
     "--graph-node": { "light": "var(--color-l-blue-20)", "dark": null },
@@ -1887,7 +1887,7 @@
       "dark": null
     },
     "--search-result-background-hover": {
-      "light": "color-mix( in srgb, var(--color-l-gray-10) 50%, var(--color-l-gray-20) )",
+      "light": "color-mix(\n    in srgb,\n    var(--color-l-gray-10) 50%,\n    var(--color-l-gray-20)\n  )",
       "dark": null
     },
     "--search-result-dest-file-color": {
@@ -1907,15 +1907,15 @@
       "dark": null
     },
     "--search-result-dest-file-bg-hover": {
-      "light": "color-mix( in srgb, var(--color-l-gray-20) 50%, var(--color-l-gray-10) )",
+      "light": "color-mix(\n    in srgb,\n    var(--color-l-gray-20) 50%,\n    var(--color-l-gray-10)\n  )",
       "dark": null
     },
     "--search-result-dest-file-shadow-hover": {
-      "light": "inset 0px 0px 0px 1px #000000, inset 0px -2px 0px 0px #000000, 0px 2px 3px 0px #000000",
+      "light": "inset 0px 0px 0px 1px #000000, inset 0px -2px 0px 0px #000000,\n    0px 2px 3px 0px #000000",
       "dark": null
     },
     "--kanban-lane-bg": {
-      "light": "color-mix( in srgb, var(--background-primary-alt) 50%, var(--editor-bg-color) )",
+      "light": "color-mix(\n    in srgb,\n    var(--background-primary-alt) 50%,\n    var(--editor-bg-color)\n  )",
       "dark": null
     },
     "--kanban-lane-border": {
@@ -1938,12 +1938,12 @@
     "--kanban-item-bg": { "light": "var(--color-l-gray-10)", "dark": null },
     "--kanban-item-border": { "light": "none", "dark": null },
     "--kanban-item-shadow": {
-      "light": "inset 0px 0px 0px 1px #000000, inset 0px 1px 0px 0px #ffffff, inset 0px -1px 0px 1px #000000, 0px 2px 2px 0px #000000",
+      "light": "inset 0px 0px 0px 1px #000000, inset 0px 1px 0px 0px #ffffff,\n    inset 0px -1px 0px 1px #000000, 0px 2px 2px 0px #000000",
       "dark": null
     },
     "--kanban-drag-item-border": { "light": "none", "dark": null },
     "--kanban-drag-item-shadow": {
-      "light": "0px 8.3px 22.8px -9px #000000, 0px 6.2px 10.1px -4.2px #000000, 0px 2.1px 6.8px -3.2px #000000",
+      "light": "0px 8.3px 22.8px -9px #000000, 0px 6.2px 10.1px -4.2px #000000,\n    0px 2.1px 6.8px -3.2px #000000",
       "dark": null
     },
     "--kanban-new-item-color": { "light": "var(--text-faint)", "dark": null },
@@ -1962,7 +1962,7 @@
       "dark": null
     },
     "--style-settings-container-bg": {
-      "light": "color-mix( in srgb, var(--background-primary-alt) 50%, transparent )",
+      "light": "color-mix(\n    in srgb,\n    var(--background-primary-alt) 50%,\n    transparent\n  )",
       "dark": null
     },
     "--pcr-btn-shadow": {
@@ -1979,15 +1979,15 @@
     "--nav-item-color": "var(--text-muted)",
     "--mobile-sidebar-left-shadow": "5px 0px 14px -0.6px #000000, 10px 0px 20px -4.9px #000000",
     "--mobile-sidebar-right-shadow": "-5px 0px 14px -0.6px #000000, -10px 0px 20px -4.9px #000000",
-    "--mobile-sidebar-tablet-shadow": "0px 2px 6px -0.3px #000000, 0px 5px 14px -0.6px #000000, 0px 10px 20px -4.9px #000000",
+    "--mobile-sidebar-tablet-shadow": "0px 2px 6px -0.3px #000000, 0px 5px 14px -0.6px #000000,\n    0px 10px 20px -4.9px #000000",
     "--mobile-toolbar-bg": {
-      "light": "color-mix( in srgb, var(--background-primary) 50%, var(--background-primary-alt) )",
-      "dark": "color-mix( in srgb, var(--editor-bg-color) 50%, var(--background-primary-alt) )"
+      "light": "color-mix(\n    in srgb,\n    var(--background-primary) 50%,\n    var(--background-primary-alt)\n  )",
+      "dark": "color-mix(\n    in srgb,\n    var(--editor-bg-color) 50%,\n    var(--background-primary-alt)\n  )"
     },
     "--navbar-shadow": "0px 4px 20px 0px #000000, 0px 1px 4px 0px #000000",
     "--pull-down-action-shadow": {
-      "light": "inset 0px 0px 0px 1px #000000, 0px 2px 9px -2.1px #000000, 0px 3px 17px -4.3px #000000, 0px 7px 30px -5.5px #000000",
-      "dark": "inset 0px 0px 0px 1px #ffffff, 0px 2px 9px -2.1px #000000, 0px 3px 17px -4.3px #000000, 0px 7px 30px -5.5px #000000"
+      "light": "inset 0px 0px 0px 1px #000000, 0px 2px 9px -2.1px #000000,\n    0px 3px 17px -4.3px #000000, 0px 7px 30px -5.5px #000000",
+      "dark": "inset 0px 0px 0px 1px #ffffff, 0px 2px 9px -2.1px #000000,\n    0px 3px 17px -4.3px #000000, 0px 7px 30px -5.5px #000000"
     },
     "--background-modifier-message": {
       "light": null,
@@ -2087,8 +2087,14 @@
   ".dropdown": {
     "background-image": {
       "light": null,
-      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+      "dark": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
     }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  input": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  textarea": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -2097,7 +2103,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))\n    drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {
@@ -2139,7 +2145,7 @@
     },
     "--interactive-hover": {
       "light": null,
-      "dark": "color-mix( in hsl, var(--color-d-gray-100) 50%, var(--interactive-normal) )"
+      "dark": "color-mix(\n    in hsl,\n    var(--color-d-gray-100) 50%,\n    var(--interactive-normal)\n  )"
     },
     "--modal-background": { "light": null, "dark": "var(--background-primary)" }
   },

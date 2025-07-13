@@ -37,28 +37,161 @@
       "dark": null
     },
     "--color-accent-1": {
-      "light": "hsl( calc(var(--accent-h) - 1), calc(var(--accent-s) * 1.01), calc(var(--accent-l) * 1.075) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 1),\n    calc(var(--accent-s) * 1.01),\n    calc(var(--accent-l) * 1.075)\n  )",
       "dark": null
     },
     "--color-accent-2": {
-      "light": "hsl( calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 3),\n    calc(var(--accent-s) * 1.02),\n    calc(var(--accent-l) * 1.15)\n  )",
       "dark": null
     },
     "--background-modifier-box-shadow": { "light": "#000000", "dark": null },
     "--background-modifier-cover": { "light": "#dcdcdc", "dark": null },
     "--input-shadow": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--input-shadow-hover": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--shadow-s": {
       "light": "0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000",
       "dark": null
     },
-    "--shadow-l": { "light": "", "dark": null },
+    "--shadow-l": {
+      "light": "0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000",
+      "dark": null
+    },
+    "--translucency": { "light": "0.85", "dark": null },
+    "--background-primary": {
+      "light": "hsl(\n    var(--base-h),\n    var(--base-s),\n    calc(var(--base-l) - 5%)\n  )",
+      "dark": null
+    },
+    "--background-primary-alt": {
+      "light": "hsl(\n    var(--base-h),\n    var(--base-s),\n    calc(var(--base-l) - 2%)\n  )",
+      "dark": null
+    },
+    "--background-secondary": {
+      "light": "hsl(\n    var(--base-h),\n    var(--base-s),\n    calc(var(--base-l))\n  )",
+      "dark": null
+    },
+    "--background-secondary-table": {
+      "light": "hsl(\n    var(--base-h),\n    var(--base-s),\n    calc(var(--base-l) - 2%)\n  )",
+      "dark": null
+    },
+    "--background-secondary-alt": {
+      "light": "hsl(var(--base-h), var(--base-s), var(--base-l))",
+      "dark": null
+    },
+    "--background-tertiary": {
+      "light": "hsl(\n    var(--base-h),\n    var(--base-s),\n    calc(var(--base-l) - 12%)\n  )",
+      "dark": null
+    },
+    "--background-modifier-border": {
+      "light": "hsl(\n    var(--base-h),\n    var(--base-s),\n    calc(var(--base-l) - 8%)\n  )",
+      "dark": null
+    },
+    "--background-modifier-border-hover": {
+      "light": "hsl(\n    var(--base-h),\n    var(--base-s),\n    calc(var(--base-l) - 12%)\n  )",
+      "dark": null
+    },
+    "--background-modifier-border-focus": {
+      "light": "hsl(\n    var(--base-h),\n    var(--base-s),\n    calc(var(--base-l) - 20%)\n  )",
+      "dark": null
+    },
+    "--text-normal": {
+      "light": "hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 100%))",
+      "dark": null
+    },
+    "--text-muted": {
+      "light": "hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 55%))",
+      "dark": null
+    },
+    "--text-faint": {
+      "light": "hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 35%))",
+      "dark": null
+    },
+    "--text-selection": {
+      "light": "hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 6%))",
+      "dark": null
+    },
+    "--text-shadow": {
+      "light": "hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 80%))",
+      "dark": null
+    },
+    "--line-shadow": {
+      "light": "hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 70%))",
+      "dark": null
+    },
+    "--background-transparent": {
+      "light": "hsla(\n    var(--base-h),\n    var(--base-s),\n    var(--base-l),\n    0\n  )",
+      "dark": null
+    },
+    "--background-translucent": {
+      "light": "hsla(\n    var(--base-h),\n    var(--base-s),\n    var(--base-l),\n    0.85\n  )",
+      "dark": null
+    },
+    "--background-match-highlight": {
+      "light": "hsla(var(--accent-h), 40%, 62%, 0.2)",
+      "dark": null
+    },
+    "--background-modifier-accent": {
+      "light": "hsl(\n    var(--accent-h),\n    var(--accent-s),\n    calc(var(--accent-l) + 2%)\n  )",
+      "dark": null
+    },
+    "--text-accent": {
+      "light": "hsl(var(--accent-h), var(--accent-s), var(--accent-l))",
+      "dark": null
+    },
+    "--text-accent-hover": {
+      "light": "hsl(\n    var(--accent-h),\n    var(--accent-s),\n    calc(var(--accent-l) - 10%)\n  )",
+      "dark": null
+    },
+    "--interactive-accent": {
+      "light": "hsl(var(--accent-h), var(--accent-s), var(--accent-l))",
+      "dark": null
+    },
+    "--interactive-accent-hover": {
+      "light": "hsl(\n    var(--accent-h),\n    var(--accent-s),\n    calc(var(--accent-l) - 10%)\n  )",
+      "dark": null
+    },
+    "--quote-opening-modifier": {
+      "light": "hsl(\n    var(--base-h),\n    var(--base-s),\n    calc(var(--base-l) - 15%)\n  )",
+      "dark": null
+    },
+    "--interactive-accent-rgb": { "light": "220, 220, 220", "dark": null },
+    "--button-background": {
+      "light": "hsl(\n    var(--base-h),\n    var(--base-s),\n    calc(var(--base-d) + 75%)\n  )",
+      "dark": null
+    },
+    "--button-background-active": {
+      "light": "hsl(\n    var(--base-h),\n    var(--base-s),\n    calc(var(--base-d) + 60%)\n  )",
+      "dark": null
+    },
+    "--icon-bright": { "light": "brightness(20%)", "dark": null },
+    "--icon-normal": { "light": "brightness(100%)", "dark": null },
+    "--icon-dark": { "light": "brightness(120%)", "dark": null },
+    "--color-external": { "light": "#389ebd", "dark": null },
+    "--color-accent": {
+      "light": "hsl(\n    var(--main-accent-h),\n    var(--main-accent-s),\n    var(--main-accent-d)\n  )",
+      "dark": null
+    },
+    "--color-accent-hover": {
+      "light": "hsl(\n    var(--main-accent-h),\n    var(--main-accent-s),\n    calc(var(--main-accent-d) + 4%)\n  )",
+      "dark": null
+    },
+    "--color-accent-shadow": {
+      "light": "hsla(\n    var(--main-accent-h),\n    var(--main-accent-s),\n    calc(var(--main-accent-d) + 10%),\n    0.4\n  )",
+      "dark": null
+    },
+    "--color-accent-hover-invert": {
+      "light": "var(--text-muted)",
+      "dark": null
+    },
+    "--color-accent-bright": {
+      "light": "hsla(\n    var(--main-accent-h),\n    var(--main-accent-s),\n    calc(var(--main-accent-d) + 5%),\n    1.9\n  )",
+      "dark": null
+    },
     "--canvas-color": { "light": null, "dark": "126, 126, 126" }
   },
   ".notice progress[value]::-webkit-progress-bar": {
@@ -72,8 +205,8 @@
     "background-size": "70%",
     "background-repeat": "no-repeat",
     "background-image": {
-      "light": "url(\"data:image/svg+xml, utf8, <svg width='12px' height='10px' viewBox='0 0 12 8' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g transform='translate(-4.000000, -6.000000)' fill='grey'><path d='M8.1043257, 14.0367999 L4.52468714, 10.5420499 C4.32525014, 10.3497722 4.32525014, 10.0368095 4.52468714, 9.8424863 L5.24777413, 9.1439454 C5.44721114, 8.95166768 5.77142411, 8.95166768 5.97086112, 9.1439454 L8.46638057, 11.5903727 L14.0291389, 6.1442083 C14.2285759, 5.95193057 14.5527889, 5.95193057 14.7522259, 6.1442083 L15.4753129, 6.84377194 C15.6747499, 7.03604967 15.6747499, 7.35003511 15.4753129, 7.54129009 L8.82741268, 14.0367999 C8.62797568, 14.2290777 8.3037627, 14.2290777 8.1043257, 14.0367999'></path></g></g></svg>\")",
-      "dark": "url(\"data:image/svg+xml, utf8, <svg width='12px' height='10px' viewBox='0 0 12 8' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g transform='translate(-4.000000, -6.000000)' fill='%23ffffff'><path d='M8.1043257, 14.0367999 L4.52468714, 10.5420499 C4.32525014, 10.3497722 4.32525014, 10.0368095 4.52468714, 9.8424863 L5.24777413, 9.1439454 C5.44721114, 8.95166768 5.77142411, 8.95166768 5.97086112, 9.1439454 L8.46638057, 11.5903727 L14.0291389, 6.1442083 C14.2285759, 5.95193057 14.5527889, 5.95193057 14.7522259, 6.1442083 L15.4753129, 6.84377194 C15.6747499, 7.03604967 15.6747499, 7.35003511 15.4753129, 7.54129009 L8.82741268, 14.0367999 C8.62797568, 14.2290777 8.3037627, 14.2290777 8.1043257, 14.0367999'></path></g></g></svg>\")"
+      "light": "url(\"data:image/svg+xml, utf8, <svg width='12px' height='10px' viewBox='0 0 12 8' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g transform='translate(-4.000000, -6.000000)' fill='grey'><path d='M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999'></path></g></g></svg>\")",
+      "dark": "url(\"data:image/svg+xml, utf8, <svg width='12px' height='10px' viewBox='0 0 12 8' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g transform='translate(-4.000000, -6.000000)' fill='%23ffffff'><path d='M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999'></path></g></g></svg>\")"
     }
   },
   "code[class*=\"language-\"]": {
@@ -86,8 +219,8 @@
   "pre[class*=\"language-\"]": {
     "background": { "light": "transparent", "dark": null },
     "filter": { "light": "opacity(0.8)", "dark": "opacity(0.5)" },
-    "font-size": { "light": "90%", "dark": null },
-    "line-height": { "light": "1", "dark": null },
+    "font-size": "90%",
+    "line-height": "1",
     "background-color": {
       "light": "var(--background-primary-alt)",
       "dark": null
@@ -190,7 +323,9 @@
       "light": "var(--background-primary-alt)",
       "dark": null
     },
-    "filter": { "light": null, "dark": "opacity(0.5)" }
+    "filter": { "light": null, "dark": "opacity(0.5)" },
+    "font-size": { "light": null, "dark": "90%" },
+    "line-height": { "light": null, "dark": "1" }
   },
   "mark": {
     "background-color": { "light": "#fffb6852", "dark": "#fffb680f" },
@@ -208,8 +343,14 @@
   ".dropdown": {
     "background-image": {
       "light": null,
-      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+      "dark": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
     }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  input": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  textarea": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -218,7 +359,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))\n    drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {

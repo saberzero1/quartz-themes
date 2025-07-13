@@ -251,7 +251,7 @@ body {
   --nav-item-background-hover: var(--background-modifier-hover);
   --bold-color: inherit;
   --bold-weight: calc(625 + 200);
-  --checkbox-radius: var(--radius-s);
+  --checkbox-radius: 4px;
   --checkbox-size: 16px;
   --checkbox-marker-color: hsl(250, var(--base-sat, 8%), 5%);
   --checkbox-color: hsl(250, var(--base-sat, 12%), 60%);
@@ -327,10 +327,12 @@ body {
     "Roboto Mono", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono",
     "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
     "Consolas", "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", var(--font-text-theme), "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text:
+    "??", "??", Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif, "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -365,6 +367,10 @@ body {
   user-select: none;
   -webkit-user-select: none;
   caret-color: hsl(250, 75%, 75%);
+  --cursor-link: pointer;
+  --icon-color: hsl(250, var(--base-sat, 12%), 60%);
+  -webkit-font-smoothing: antialiased;
+  --tag-radius: 6px;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -410,7 +416,7 @@ html {
     border-style: solid;
     border-color: rgba(139, 148, 158, 0.25);
     border-width: 1px;
-    border-radius: var(--radius-s);
+    border-radius: 4px;
     margin: 1em 0;
     mix-blend-mode: normal;
     padding: 12px 24px 12px 12px;
@@ -934,7 +940,7 @@ body {
     padding: 12px 16px;
     min-height: 38px;
     background-color: hsl(250, var(--base-sat, 8%), 8%);
-    border-radius: var(--radius-s);
+    border-radius: 4px;
     white-space: pre-wrap;
     border: 0px solid transparent;
     overflow-x: auto;
@@ -1009,7 +1015,7 @@ body {
       "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
       "Consolas", "Source Code Pro", monospace;
     background-color: hsl(250, var(--base-sat, 8%), 8%);
-    border-radius: var(--radius-s);
+    border-radius: 4px;
     font-size: 1em;
     padding: 0.15em 0.3em;
     border: 0px solid transparent;
@@ -1187,7 +1193,7 @@ body {
 
         a {
           padding: 6px 8px 6px 24px;
-          border-radius: var(--radius-s);
+          border-radius: 4px;
           color: hsl(250, var(--base-sat, 12%), 70%);
           cursor: default;
           display: flex;

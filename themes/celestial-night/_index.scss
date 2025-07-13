@@ -20,17 +20,9 @@ html[saved-theme="dark"] {
     color: var(--shiki-dark);
   }
 
-  --color-accent-hsl: 41 !important, 100% !important, 100% !important;
-  --color-accent-2: hsl(
-    calc(41 !important - 5),
-    calc(100% !important * 1.05),
-    calc(100% !important * 1.29)
-  );
-  --text-accent: hsl(
-    calc(41 !important - 3),
-    calc(100% !important * 1.02),
-    calc(100% !important * 1.15)
-  );
+  --color-accent-hsl: 41, 100%, 100%;
+  --color-accent-2: hsl(calc(41 - 5), calc(100% * 1.05), calc(100% * 1.29));
+  --text-accent: hsl(calc(41 - 3), calc(100% * 1.02), calc(100% * 1.15));
   --background-modifier-border: #3b3f56;
   --color-base-00: #2a3141;
   --color-base-10: #222a38;
@@ -51,7 +43,7 @@ html[saved-theme="dark"] {
   --color-yellow: #ffde73;
   --inline-title-font:
     "Hatolie", "??", "??", "Bookerly", "Source Han Serif", "Noto Serif JP",
-    "Arial" !important;
+    "Arial";
   --mono-rgb-100: 255, 255, 255;
   color-scheme: dark;
 }
@@ -269,9 +261,9 @@ body {
   --code-value: #b584c7;
   --collapse-icon-color: #4f5971;
   --collapse-icon-color-collapsed: hsl(
-    calc(41 !important - 3),
-    calc(100% !important * 1.02),
-    calc(100% !important * 1.15)
+    calc(41 - 3),
+    calc(100% * 1.02),
+    calc(100% * 1.15)
   );
   --cursor-link: pointer;
   --font-weight: 400;
@@ -286,26 +278,18 @@ body {
   --inline-title-color: inherit;
   --inline-title-font: "Merienda";
   --italic-color: inherit;
-  --link-color: hsl(
-    calc(41 !important - 3),
-    calc(100% !important * 1.02),
-    calc(100% !important * 1.15)
-  );
-  --link-color-hover: hsl(
-    calc(41 !important - 5),
-    calc(100% !important * 1.05),
-    calc(100% !important * 1.29)
-  );
+  --link-color: hsl(calc(41 - 3), calc(100% * 1.02), calc(100% * 1.15));
+  --link-color-hover: hsl(calc(41 - 5), calc(100% * 1.05), calc(100% * 1.29));
   --link-weight: var(--link-weight);
   --link-external-color: hsl(
-    calc(41 !important - 3),
-    calc(100% !important * 1.02),
-    calc(100% !important * 1.15)
+    calc(41 - 3),
+    calc(100% * 1.02),
+    calc(100% * 1.15)
   );
   --link-external-color-hover: hsl(
-    calc(41 !important - 5),
-    calc(100% !important * 1.05),
-    calc(100% !important * 1.29)
+    calc(41 - 5),
+    calc(100% * 1.05),
+    calc(100% * 1.29)
   );
   --link-external-filter: none;
   --nav-item-background-hover: rgba(255, 255, 255, 0.15);
@@ -313,36 +297,13 @@ body {
   --nav-item-children-margin-start: 12px;
   --p-spacing: 1rem;
   --search-icon-color: #737b94;
-  --tag-color: hsl(
-    calc(41 !important - 3),
-    calc(100% !important * 1.02),
-    calc(100% !important * 1.15)
-  );
-  --tag-color-hover: hsl(
-    calc(41 !important - 3),
-    calc(100% !important * 1.02),
-    calc(100% !important * 1.15)
-  );
+  --tag-color: hsl(calc(41 - 3), calc(100% * 1.02), calc(100% * 1.15));
+  --tag-color-hover: hsl(calc(41 - 3), calc(100% * 1.02), calc(100% * 1.15));
   --tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-background-hover: hsla(
-    41 !important,
-    100% !important,
-    100% !important,
-    0.2
-  );
-  --tag-border-color: hsla(
-    41 !important,
-    100% !important,
-    100% !important,
-    0.15
-  );
-  --tag-border-color-hover: hsla(
-    41 !important,
-    100% !important,
-    100% !important,
-    0.15
-  );
+  --tag-background-hover: hsla(41, 100%, 100%, 0.2);
+  --tag-border-color: hsla(41, 100%, 100%, 0.15);
+  --tag-border-color-hover: hsla(41, 100%, 100%, 0.15);
   --background-primary: #14141e;
   --background-primary-alt: #1d1f2e;
   --background-secondary: #161721;
@@ -354,13 +315,9 @@ body {
   --text-muted: #737b94;
   --text-faint: #4f5971;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
-  --text-accent: hsl(41 !important, 100% !important, 100% !important);
-  --text-accent-hover: hsl(
-    calc(41 !important - 5),
-    calc(100% !important * 1.05),
-    calc(100% !important * 1.29)
-  );
-  --interactive-accent-hsl: 41 !important, 100% !important, 100% !important;
+  --text-accent: hsl(41, 100%, 100%);
+  --text-accent-hover: hsl(calc(41 - 5), calc(100% * 1.05), calc(100% * 1.29));
+  --interactive-accent-hsl: 41, 100%, 100%;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
@@ -369,11 +326,11 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
   --font-text:
-    "??", "??", "Bookerly", "Source Han Serif", "Noto Serif JP", "Arial" !important;
+    "??", "??", "Bookerly", "Source Han Serif", "Noto Serif JP", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -403,11 +360,7 @@ body {
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
-  caret-color: hsl(
-    calc(41 !important - 3),
-    calc(100% !important * 1.02),
-    calc(100% !important * 1.15)
-  );
+  caret-color: hsl(calc(41 - 3), calc(100% * 1.02), calc(100% * 1.15));
   --h1-font: "Merienda";
   --checkbox-color-hover: vaR(--text-normal);
   --checkbox-color: #91aff3;
@@ -1172,7 +1125,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: hsl(41 !important, 100% !important, 100% !important);
+        color: hsl(41, 100%, 100%);
 
         text-overflow: ellipsis;
         position: relative;
@@ -1510,9 +1463,9 @@ body {
 
                 &.match-tag {
                   color: hsl(
-                    calc(41 !important - 3),
-                    calc(100% !important * 1.02),
-                    calc(100% !important * 1.15)
+                    calc(41 - 3),
+                    calc(100% * 1.02),
+                    calc(100% * 1.15)
                   );
                 }
               }

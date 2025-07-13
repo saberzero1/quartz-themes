@@ -21,9 +21,29 @@ html[saved-theme="dark"] {
   }
 
   color-scheme: dark;
-  --color-accent-hsl: 258, 37%, 51%;
-  --color-accent-2: hsl(calc(258 - 5), calc(37% * 1.05), calc(51% * 1.29));
-  --text-accent: hsl(calc(258 - 3), calc(37% * 1.02), calc(51% * 1.15));
+  --color-accent-hsl: 181, 37%, 51%;
+  --color-accent-2: hsl(calc(181 - 5), calc(37% * 1.05), calc(51% * 1.29));
+  --text-accent: hsl(calc(181 - 3), calc(37% * 1.02), calc(51% * 1.15));
+  --mono-rgb-100: 205, 206, 207;
+  --color-base-100: #cdcecf;
+  --color-base-70: #aeafb0;
+  --color-base-50: #5d728e;
+  --color-base-40: #496283;
+  --color-base-35: #39506d;
+  --color-base-30: #29394f;
+  --color-base-20: #212e3f;
+  --color-base-10: #192330;
+  --color-base-00: #131a24;
+  --color-cyan: #63cdcf;
+  --color-pink: #d67ad2;
+  --color-purple: #9d79d6;
+  --color-blue: #719cd6;
+  --color-orange: #f4a261;
+  --color-red: #c94f6d;
+  --color-yellow: #dbc074;
+  --color-green: #81b29a;
+  --graph-node-tag: #4f9c77;
+  --code-comment: #738091;
 }
 
 :root[saved-theme="light"],
@@ -40,8 +60,29 @@ html[saved-theme="light"] {
   }
 
   color-scheme: light;
-  --color-accent-hsl: 258, 37%, 51%;
-  --color-accent-2: hsl(calc(258 - 3), calc(37% * 1.02), calc(51% * 1.15));
+  --color-accent-hsl: 181, 37%, 51%;
+  --color-accent-2: hsl(calc(181 - 3), calc(37% * 1.02), calc(51% * 1.15));
+  --mono-rgb-100: 61, 43, 90;
+  --color-base-100: #3d2b5a;
+  --color-base-70: #643f61;
+  --color-base-50: #99868a;
+  --color-base-40: #9f9496;
+  --color-base-35: #a4a2a1;
+  --color-base-30: #aab0ad;
+  --color-base-20: #dbd1dd;
+  --color-base-10: #f6f2ee;
+  --color-base-00: #e4dcd4;
+  --color-cyan: #287980;
+  --color-pink: #a440b5;
+  --color-purple: #6e33ce;
+  --color-blue: #2848a9;
+  --color-orange: #955f61;
+  --color-red: #a5222f;
+  --color-yellow: #ac5402;
+  --color-green: #396847;
+  --graph-line: #1e1e1e;
+  --graph-node-tag: #19ae5b;
+  --code-comment: #837a72;
 }
 
 @font-face {
@@ -258,9 +299,9 @@ body {
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
   --checkbox-marker-color: #111;
-  --checkbox-color: hsl(258, 37%, 51%);
+  --checkbox-color: hsl(181, 37%, 51%);
   --checkbox-color-hover: hsl(
-    calc(258 - 3),
+    calc(181 - 3),
     calc(37% * 1.02),
     calc(51% * 1.15)
   );
@@ -271,14 +312,14 @@ body {
   --code-function: #dbc074;
   --code-important: #f4a261;
   --code-keyword: #d67ad2;
-  --code-property: var(--color-cyan);
+  --code-property: #63cdcf;
   --code-punctuation: #aeafb0;
   --code-string: #81b29a;
   --code-tag: #c94f6d;
   --code-value: #9d79d6;
   --collapse-icon-color: #5d728e;
   --collapse-icon-color-collapsed: hsl(
-    calc(258 - 3),
+    calc(181 - 3),
     calc(37% * 1.02),
     calc(51% * 1.15)
   );
@@ -294,12 +335,12 @@ body {
   --inline-title-color: #d6d6d7;
   --inline-title-font: inherit;
   --italic-color: inherit;
-  --link-color: hsl(calc(258 - 3), calc(37% * 1.02), calc(51% * 1.15));
-  --link-color-hover: hsl(calc(258 - 5), calc(37% * 1.05), calc(51% * 1.29));
+  --link-color: hsl(calc(181 - 3), calc(37% * 1.02), calc(51% * 1.15));
+  --link-color-hover: hsl(calc(181 - 5), calc(37% * 1.05), calc(51% * 1.29));
   --link-weight: var(--link-weight);
-  --link-external-color: hsl(calc(258 - 3), calc(37% * 1.02), calc(51% * 1.15));
+  --link-external-color: hsl(calc(181 - 3), calc(37% * 1.02), calc(51% * 1.15));
   --link-external-color-hover: hsl(
-    calc(258 - 5),
+    calc(181 - 5),
     calc(37% * 1.05),
     calc(51% * 1.29)
   );
@@ -309,14 +350,14 @@ body {
   --nav-item-children-margin-start: 12px;
   --p-spacing: 1rem;
   --search-icon-color: #aeafb0;
-  --tag-color: hsl(calc(258 - 3), calc(37% * 1.02), calc(51% * 1.15));
-  --tag-color-hover: hsl(calc(258 - 3), calc(37% * 1.02), calc(51% * 1.15));
+  --tag-color: hsl(calc(181 - 3), calc(37% * 1.02), calc(51% * 1.15));
+  --tag-color-hover: hsl(calc(181 - 3), calc(37% * 1.02), calc(51% * 1.15));
   --tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-background: hsla(258, 37%, 51%, 0.1);
-  --tag-background-hover: hsla(258, 37%, 51%, 0.2);
-  --tag-border-color: hsla(258, 37%, 51%, 0.15);
-  --tag-border-color-hover: hsla(258, 37%, 51%, 0.15);
+  --tag-background: hsla(181, 37%, 51%, 0.1);
+  --tag-background-hover: hsla(181, 37%, 51%, 0.2);
+  --tag-border-color: hsla(181, 37%, 51%, 0.15);
+  --tag-border-color-hover: hsla(181, 37%, 51%, 0.15);
   --tag-border-width: 0px;
   --tag-radius: 2em;
   --tag-weight: inherit;
@@ -325,9 +366,9 @@ body {
   --text-muted: #aeafb0;
   --text-faint: #5d728e;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
-  --text-accent: hsl(258, 37%, 51%);
-  --text-accent-hover: hsl(calc(258 - 5), calc(37% * 1.05), calc(51% * 1.29));
-  --interactive-accent-hsl: 258, 37%, 51%;
+  --text-accent: hsl(181, 37%, 51%);
+  --text-accent-hover: hsl(calc(181 - 5), calc(37% * 1.05), calc(51% * 1.29));
+  --interactive-accent-hsl: 181, 37%, 51%;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
@@ -336,10 +377,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -368,7 +409,7 @@ body {
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
-  caret-color: hsl(calc(258 - 3), calc(37% * 1.02), calc(51% * 1.15));
+  caret-color: hsl(calc(181 - 3), calc(37% * 1.02), calc(51% * 1.15));
   --background-primary: #111;
   --background-primary-alt: #151d28;
   --background-secondary: #151d28;
@@ -1129,7 +1170,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: hsl(258, 37%, 51%);
+        color: hsl(181, 37%, 51%);
 
         text-overflow: ellipsis;
         position: relative;
@@ -1466,7 +1507,7 @@ body {
                 color: #cdcecf;
 
                 &.match-tag {
-                  color: hsl(calc(258 - 3), calc(37% * 1.02), calc(51% * 1.15));
+                  color: hsl(calc(181 - 3), calc(37% * 1.02), calc(51% * 1.15));
                 }
               }
             }

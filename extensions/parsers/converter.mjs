@@ -6,6 +6,7 @@ import {
 import { format } from "../formatter.mjs";
 import stripComments from "../packages/strip-css-comments.mjs";
 import createStatic from "../../util/static-custom-properties.mjs";
+import postcss from "postcss";
 
 export function convert(css, fullMode = false) {
   if (fullMode) {
@@ -13,6 +14,7 @@ export function convert(css, fullMode = false) {
     css = preprocessCSS(css);
   }
   // Convert to JSON dictionary format
+  /*
   const jsonDictionary = {};
   css.split("\n\n").forEach((rule) => {
     if (rule.trim()) {
@@ -55,6 +57,9 @@ export function convert(css, fullMode = false) {
       });
     }
   });
+  */
+
+  const jsonDictionary = parseCssWithPostCSS(css);
 
   return jsonDictionary;
 }
@@ -85,4 +90,31 @@ export function preprocessCSS(css, index = 0) {
   }
 
   return preprocessCSS(css, index + 1);
+}
+
+function parseCssWithPostCSS(cssString) {
+  const root = postcss.parse(cssString);
+  const results = {};
+
+  root.walkRules((rule) => {
+    let declarations = [];
+    rule.walkDecls((decl) => {
+      declarations.push({ property: decl.prop, value: decl.value });
+    });
+
+    declarations = declarations.map((decl) => ({
+      property: decl.property.replace(/\s+/gms, " ").trim(),
+      value: decl.value,
+    }));
+
+    rule.selectors.forEach((selector) => {
+      // Use the selector as a key in the results object
+      if (!results[selector]) {
+        results[selector] = [];
+      }
+      results[selector].push(...declarations);
+    });
+  });
+
+  return results;
 }

@@ -41,6 +41,15 @@ html[saved-theme="dark"] {
   --color-base-100: #dadada;
   --color-accent-hsl: 258, 88%, 66%;
   --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --background-primary: #1e1e1e;
+  --background-secondary: #2d2d2d;
+  --text-normal: #e0e0e0;
+  --text-muted: #b0b0b0;
+  --text-faint: #888888;
+  --text-accent: #8cb4ff;
+  --bold-color: #7fc9a0;
+  --italic-color: #7fb0e0;
+  --text-highlight-bg: #5a4820;
 }
 
 :root[saved-theme="light"],
@@ -77,6 +86,12 @@ html[saved-theme="light"] {
   --color-base-100: #222222;
   --color-accent-hsl: 258, 88%, 66%;
   --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --background-primary: #ffffff;
+  --background-secondary: #ececec;
+  --text-normal: #000000;
+  --text-muted: #333333;
+  --text-faint: #666666;
+  --text-accent: #008015;
 }
 
 @font-face {
@@ -292,18 +307,14 @@ body {
   --bold-weight: calc(600 + 200);
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --checkbox-marker-color: #000;
+  --checkbox-marker-color: #1e1e1e;
   --checkbox-color: #4f6fb0;
-  --checkbox-color-hover: hsl(
-    calc(258 - 5),
-    calc(88% * 1.05),
-    calc(66% * 1.29)
-  );
-  --checkbox-border-color: #666666;
+  --checkbox-color-hover: #6989d0;
+  --checkbox-border-color: #888888;
   --checkbox-border-color-hover: #b0b0b0;
   --code-background: #111;
-  --code-normal: #dadada;
-  --code-comment: #666666;
+  --code-normal: #e0e0e0;
+  --code-comment: #888888;
   --code-function: #e0de71;
   --code-important: #e9973f;
   --code-keyword: #fa99cd;
@@ -312,24 +323,24 @@ body {
   --code-string: #44cf6e;
   --code-tag: #fb464c;
   --code-value: #a882ff;
-  --collapse-icon-color: #666666;
-  --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
+  --collapse-icon-color: #888888;
+  --collapse-icon-color-collapsed: #8cb4ff;
   --cursor-link: pointer;
   --font-weight: 400;
   --graph-line: var(--color-base-35, rgba(251, 70, 76, 0.6));
-  --graph-node-unresolved: #666666;
+  --graph-node-unresolved: #888888;
   --graph-node-tag: #44cf6e;
   --h1-font: inherit;
   --h3-line-height: 1.3;
   --hr-color: transparent;
   --hr-thickness: 2px;
   --icon-color: #b0b0b0;
-  --inline-title-color: var(--h1-color);
+  --inline-title-color: #8470a6;
   --inline-title-font: inherit;
-  --link-color: hsl(258, 88%, 66%);
+  --link-color: #8cb4ff;
   --link-color-hover: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
   --link-weight: var(--link-weight);
-  --link-external-color: hsl(258, 88%, 66%);
+  --link-external-color: #8cb4ff;
   --link-external-color-hover: hsl(
     calc(258 - 5),
     calc(88% * 1.05),
@@ -341,8 +352,8 @@ body {
   --nav-item-children-margin-start: 12px;
   --p-spacing: 1rem;
   --search-icon-color: #b0b0b0;
-  --tag-color: hsl(258, 88%, 66%);
-  --tag-color-hover: hsl(258, 88%, 66%);
+  --tag-color: #8cb4ff;
+  --tag-color-hover: #8cb4ff;
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -373,10 +384,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -400,12 +411,16 @@ body {
     sans-serif;
   line-height: 1.3;
   font-size: 16px;
-  background-color: #000;
-  color: #dadada;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
-  caret-color: hsl(258, 88%, 66%);
+  caret-color: #8cb4ff;
+  --h1-color: #8470a6;
+  --bold-color: #61a181;
+  --italic-color: #95c2f0;
+  --text-highlight-bg: #746119;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -613,7 +628,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
 
-  background-color: #000;
+  background-color: #1e1e1e;
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -642,13 +657,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: #000;
+      background-color: #1e1e1e;
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: #000;
+        background-color: #1e1e1e;
 
         background-color: var(--background-primary);
       }
@@ -657,7 +672,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: #000;
+          background-color: #1e1e1e;
 
           background-color: var(--background-secondary);
 
@@ -850,6 +865,9 @@ body {
     font-style: normal;
     font-variant: normal;
     letter-spacing: -0.015em;
+    line-height: 1.2;
+    font-weight: bold;
+    color: #8470a6;
 
     font-size: 2rem;
   }
@@ -867,6 +885,9 @@ body {
     font-style: normal;
     font-variant: normal;
     letter-spacing: -0.015em;
+    line-height: 1.2;
+    font-weight: bold;
+    color: #507a9e;
 
     font-size: 1.75rem;
   }
@@ -882,6 +903,9 @@ body {
     font-style: normal;
     font-variant: normal;
     letter-spacing: -0.015em;
+    line-height: 1.3;
+    font-weight: bold;
+    color: #5a8d76;
 
     font-size: 1.6rem;
   }
@@ -897,6 +921,9 @@ body {
     font-style: normal;
     font-variant: normal;
     letter-spacing: 0.015em;
+    line-height: 1.4;
+    font-weight: bold;
+    color: #a67a5b;
 
     font-size: 1.4rem;
   }
@@ -912,6 +939,9 @@ body {
     font-style: normal;
     font-variant: normal;
     letter-spacing: 0.015em;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #a19c6c;
 
     font-size: 1.2rem;
   }
@@ -927,6 +957,9 @@ body {
     font-style: normal;
     font-variant: normal;
     letter-spacing: 0.015em;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #6c8299;
 
     font-size: 1.1rem;
   }
@@ -1025,7 +1058,7 @@ body {
   }
 
   code {
-    color: #dadada;
+    color: #e0e0e0;
     font-family:
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1078,14 +1111,14 @@ body {
 
   /* METADATA */
   .content-meta {
-    color: #dadada;
+    color: #e0e0e0;
 
     color: var(--text-normal);
   }
 
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: #666666;
+    color: #888888;
   }
 
   /* BACKLINKS */
@@ -1099,10 +1132,13 @@ body {
       font-style: normal;
       font-variant: normal;
       letter-spacing: -0.015em;
+      line-height: 1.3;
+      font-weight: bold;
+      color: #5a8d76;
     }
 
     ul li {
-      color: #dadada;
+      color: #e0e0e0;
 
       font-weight: 500;
     }
@@ -1118,9 +1154,13 @@ body {
         padding-left: 1rem;
       }
     }
+    button.explorer-toggle,
+    h2 {
+      color: #507a9e;
+    }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: #000;
+        background-color: #1e1e1e;
 
         background-color: var(--background-secondary);
 
@@ -1160,7 +1200,7 @@ body {
         }
         &:hover {
           background-color: rgba(255, 255, 255, 0.15);
-          color: #dadada;
+          color: #e0e0e0;
           font-weight: inherit;
 
           font-size: 1rem;
@@ -1198,7 +1238,7 @@ body {
         a {
           padding: 6px 8px 6px 24px;
           border-radius: 4px;
-          color: #dadada;
+          color: #e0e0e0;
           cursor: pointer;
           display: flex;
           font-size: 16px;
@@ -1252,6 +1292,8 @@ body {
 
   /* TOC */
   .toc {
+    color: #5a8d76;
+
     button.toc-header {
       h3 {
         margin-block-end: 0rem;
@@ -1262,16 +1304,21 @@ body {
         font-style: normal;
         font-variant: normal;
         letter-spacing: -0.015em;
+        line-height: 1.3;
+        font-weight: bold;
+        color: #5a8d76;
 
         margin-block: 0;
       }
+
+      color: #5a8d76;
 
       color: inherit;
     }
     ul.toc-content.overflow {
       li,
       li > a {
-        color: #dadada;
+        color: #e0e0e0;
 
         font-weight: inherit;
 
@@ -1295,6 +1342,9 @@ body {
       font-style: normal;
       font-variant: normal;
       letter-spacing: -0.015em;
+      line-height: 1.3;
+      font-weight: bold;
+      color: #5a8d76;
 
       min-height: calc(2 * var(--p-spacing) + var(--h3-line-height));
       margin-block: 0;
@@ -1360,7 +1410,7 @@ body {
       background: transparent;
       border: 1px solid transparent;
       border-radius: 5px;
-      color: #dadada;
+      color: #e0e0e0;
       font-family: inherit;
       font-size: calc(16px * 0.937);
       outline: none;
@@ -1375,7 +1425,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: #000;
+        background-color: #1e1e1e;
 
         border: 0.5pt solid var(--color-base-40, rgba(251, 70, 76, 0.6));
 
@@ -1394,7 +1444,7 @@ body {
           width: 100%;
           padding: 24px;
           padding-inline-end: 48px;
-          background-color: #000;
+          background-color: #1e1e1e;
           font-size: 16px;
           border: none;
           height: 48px;
@@ -1407,7 +1457,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: #dadada;
+          color: #e0e0e0;
 
           background: transparent;
           margin-bottom: 0;
@@ -1455,10 +1505,10 @@ body {
               & > ul > li > p {
                 background-color: transparent;
 
-                color: #dadada;
+                color: #e0e0e0;
 
                 &.match-tag {
-                  color: hsl(258, 88%, 66%);
+                  color: #8cb4ff;
                 }
               }
             }
@@ -1526,7 +1576,7 @@ body {
 
   /* POPOVER */
   .popover {
-    background-color: #000;
+    background-color: #1e1e1e;
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow:
@@ -1546,7 +1596,7 @@ body {
     & .popover-inner {
       border: 1px solid transparent;
 
-      background-color: #000;
+      background-color: #1e1e1e;
 
       border-radius: 8px;
 

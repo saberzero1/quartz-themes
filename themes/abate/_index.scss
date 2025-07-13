@@ -40,6 +40,12 @@ html[saved-theme="light"] {
   --color-cyan: #00bfbc;
   --color-blue: #086ddd;
   --color-purple: #6645cc;
+  --color-pink: #d53984;
+  --background-primary: #fdf6e3;
+  --background-primary-alt: #fdf6e3;
+  --background-secondary: #fdf6e3;
+  --color-accent-hsl: 258, 88%, 66%;
+  --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
 }
 
 .darkmode {
@@ -191,7 +197,7 @@ body {
 
   --nav-item-background-hover: var(--background-modifier-hover);
   --bold-color: inherit;
-  --bold-weight: calc(300 + 200);
+  --bold-weight: calc(300 + 300);
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
   --checkbox-marker-color: #30393f;
@@ -208,7 +214,7 @@ body {
   --code-comment: #666666;
   --code-function: #fffb00;
   --code-important: #e9973f;
-  --code-keyword: var(--color-pink);
+  --code-keyword: #fa99cd;
   --code-property: #53dfdd;
   --code-punctuation: #b3b3b3;
   --code-string: #44cf6e;
@@ -266,7 +272,7 @@ body {
   --text-normal: #dadada;
   --text-muted: #b3b3b3;
   --text-faint: #666666;
-  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-highlight-bg: rgba(230, 227, 74, 0.4);
   --text-accent: hsl(258, 88%, 66%);
   --text-accent-hover: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
   --interactive-accent-hsl: 258, 88%, 66%;
@@ -278,10 +284,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -311,6 +317,10 @@ body {
   user-select: none;
   -webkit-user-select: none;
   caret-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --background-modifier-hover: rgba(255, 255, 255, 0.08);
+  --h1-color: #0f4761;
+  --h3-line-height: 1.5em;
+  --inline-title-color: #000000;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -492,7 +502,7 @@ html {
     /*background: var(--bg);*/
 
     & > .callout-title-inner > p {
-      --font-weight: calc(var(--font-weight) + 200);
+      --font-weight: calc(var(--font-weight) + 300);
       font-weight: 300;
       color: inherit;
 
@@ -500,7 +510,7 @@ html {
     }
 
     .callout-title-inner {
-      --font-weight: calc(var(--font-weight) + 200);
+      --font-weight: calc(var(--font-weight) + 300);
       font-weight: 300;
       color: inherit;
     }
@@ -1119,8 +1129,7 @@ body {
           var(--nav-item-children-margin-left)
         );
         margin-bottom: 1px;
-        border-inline-start: var(--indentation-guide-width) solid
-          rgba(255, 255, 255, 0.12);
+        border-inline-start: 2px solid rgba(255, 255, 255, 0.12);
       }
       ul.explorer-ul li {
         text-overflow: ellipsis;

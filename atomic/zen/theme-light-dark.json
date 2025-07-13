@@ -41,21 +41,21 @@
       "dark": null
     },
     "--color-accent-1": {
-      "light": "hsl( calc(var(--accent-h) - 1), calc(var(--accent-s) * 1.01), calc(var(--accent-l) * 1.075) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 1),\n    calc(var(--accent-s) * 1.01),\n    calc(var(--accent-l) * 1.075)\n  )",
       "dark": null
     },
     "--color-accent-2": {
-      "light": "hsl( calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 3),\n    calc(var(--accent-s) * 1.02),\n    calc(var(--accent-l) * 1.15)\n  )",
       "dark": null
     },
     "--background-modifier-box-shadow": { "light": "#000000", "dark": null },
     "--background-modifier-cover": { "light": "#dcdcdc", "dark": null },
     "--input-shadow": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--input-shadow-hover": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--shadow-s": {
@@ -135,10 +135,7 @@
     "color": { "light": "white", "dark": null }
   },
   "::-webkit-scrollbar-thumb": {
-    "background-color": {
-      "light": "#000000 !important",
-      "dark": "#ffffff !important"
-    }
+    "background-color": { "light": "#000000", "dark": "#ffffff" }
   },
   ".is-translucent td.svelte-egt0yd": {
     "border-right": { "light": "1px solid #696969", "dark": null }
@@ -149,7 +146,7 @@
     "backdrop-filter": { "light": "blur(100px)", "dark": "blur(10px)" }
   },
   ".is-translucent .search-result-file-matches": {
-    "background-color": { "light": "transparent !important", "dark": null }
+    "background-color": { "light": "transparent", "dark": null }
   },
   ".is-translucent .search-result-file-match-destination-file": {
     "background-color": { "light": "#ffffff7b", "dark": "#ffffff" }
@@ -161,8 +158,14 @@
   ".dropdown": {
     "background-image": {
       "light": null,
-      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+      "dark": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
     }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  input": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  textarea": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -171,7 +174,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))\n    drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {
@@ -276,23 +279,23 @@
     "border-bottom": { "light": null, "dark": "#ffffff solid 0.5px" }
   },
   ".search-result-file-matches": {
-    "background-color": { "light": null, "dark": "transparent !important" },
-    "box-shadow": { "light": null, "dark": "0 0 0 1px #c1c1c114 !important" }
+    "background-color": { "light": null, "dark": "transparent" },
+    "box-shadow": { "light": null, "dark": "0 0 0 1px #c1c1c114" }
   },
   ".search-result-file-match": {
-    "border-bottom": { "light": null, "dark": "1px solid #c1c1c114 !important" }
+    "border-bottom": { "light": null, "dark": "1px solid #c1c1c114" }
   },
   ".is-translucent .markdown-source-view.mod-cm6 .cm-editor": {
     "background-color": { "light": null, "dark": "transparent" }
   },
   ".is-translucent .markdown-preview-view": {
-    "background-color": { "light": null, "dark": "transparent !important" }
+    "background-color": { "light": null, "dark": "transparent" }
   },
   "#editingToolbarModalBar button.editingToolbar-Divider-Line": {
-    ".theme-dark #editingToolbarPopoverBar button.editingToolbar-Divider-Line { background-color": {
-      "light": null,
-      "dark": "transparent !important"
-    }
+    "background-color": { "light": null, "dark": "transparent" }
+  },
+  "#editingToolbarPopoverBar button.editingToolbar-Divider-Line": {
+    "background-color": { "light": null, "dark": "transparent" }
   },
   ":not(.markmap-fold).markmap-node > circle": {
     "fill": { "light": null, "dark": "black" }

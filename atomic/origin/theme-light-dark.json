@@ -18,11 +18,11 @@
     "--background-modifier-box-shadow": { "light": "#000000", "dark": null },
     "--background-modifier-cover": { "light": "#dcdcdc", "dark": null },
     "--input-shadow": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--input-shadow-hover": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--shadow-s": {
@@ -34,15 +34,15 @@
       "dark": null
     },
     "--color-accent": {
-      "light": "hsl( calc(var(--accent-h) - 5), calc(var(--accent-s) - 25%), calc(var(--accent-l) - 4%) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 5),\n    calc(var(--accent-s) - 25%),\n    calc(var(--accent-l) - 4%)\n  )",
       "dark": null
     },
     "--color-accent-1": {
-      "light": "hsl( calc(var(--accent-h) - 5), calc(var(--accent-s) - 27%), calc(var(--accent-l) - 6%) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 5),\n    calc(var(--accent-s) - 27%),\n    calc(var(--accent-l) - 6%)\n  )",
       "dark": null
     },
     "--color-accent-2": {
-      "light": "hsl( var(--accent-h), calc(var(--accent-s) - 30%), calc(var(--accent-l) - 8%) )",
+      "light": "hsl(\n    var(--accent-h),\n    calc(var(--accent-s) - 30%),\n    calc(var(--accent-l) - 8%)\n  )",
       "dark": null
     },
     "--color-base-00": { "light": "#ffffff", "dark": null },
@@ -86,16 +86,16 @@
   },
   ".is-mobile": {
     "--color-accent": {
-      "light": "hsl( calc(var(--accent-h) - 5), calc(var(--accent-s) - 25%), calc(var(--accent-l) - 4%) )",
-      "dark": "hsl( calc(var(--accent-h) - 8), calc(var(--accent-s) + 5%), calc(var(--accent-l) + 4%) )"
+      "light": "hsl(\n    calc(var(--accent-h) - 5),\n    calc(var(--accent-s) - 25%),\n    calc(var(--accent-l) - 4%)\n  )",
+      "dark": "hsl(\n    calc(var(--accent-h) - 8),\n    calc(var(--accent-s) + 5%),\n    calc(var(--accent-l) + 4%)\n  )"
     },
     "--color-accent-1": {
-      "light": "hsl( calc(var(--accent-h) - 5), calc(var(--accent-s) - 27%), calc(var(--accent-l) - 6%) )",
-      "dark": "hsl( calc(var(--accent-h) - 5), calc(var(--accent-s) - 30%), calc(var(--accent-l) - 27%) )"
+      "light": "hsl(\n    calc(var(--accent-h) - 5),\n    calc(var(--accent-s) - 27%),\n    calc(var(--accent-l) - 6%)\n  )",
+      "dark": "hsl(\n    calc(var(--accent-h) - 5),\n    calc(var(--accent-s) - 30%),\n    calc(var(--accent-l) - 27%)\n  )"
     },
     "--color-accent-2": {
-      "light": "hsl( var(--accent-h), calc(var(--accent-s) - 30%), calc(var(--accent-l) - 8%) )",
-      "dark": "hsl( calc(var(--accent-h) - 8), calc(var(--accent-s) + 7%), calc(var(--accent-l) + 8%) )"
+      "light": "hsl(\n    var(--accent-h),\n    calc(var(--accent-s) - 30%),\n    calc(var(--accent-l) - 8%)\n  )",
+      "dark": "hsl(\n    calc(var(--accent-h) - 8),\n    calc(var(--accent-s) + 7%),\n    calc(var(--accent-l) + 8%)\n  )"
     },
     "--color-base-00": { "light": "#ffffff", "dark": "#202020" },
     "--color-base-05": { "light": "#e3e5e8", "dark": "#1a1a1a" },
@@ -150,8 +150,14 @@
   ".dropdown": {
     "background-image": {
       "light": null,
-      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+      "dark": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
     }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  input": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  textarea": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -160,7 +166,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))\n    drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {

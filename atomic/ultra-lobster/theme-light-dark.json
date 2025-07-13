@@ -50,11 +50,11 @@
       "dark": null
     },
     "--color-accent-1": {
-      "light": "hsl( var(--accent-h) var(--accent-s) calc(var(--accent-l) + 2.5%) )",
+      "light": "hsl(\n    var(--accent-h) var(--accent-s) calc(var(--accent-l) + 2.5%)\n  )",
       "dark": null
     },
     "--color-accent-2": {
-      "light": "hsl( var(--accent-h) var(--accent-s) calc(var(--accent-l) + 5%) )",
+      "light": "hsl(\n    var(--accent-h) var(--accent-s) calc(var(--accent-l) + 5%)\n  )",
       "dark": null
     },
     "--background-secondary-alt": {
@@ -66,11 +66,11 @@
     "--text-highlight-bg": { "light": "#ffd000", "dark": null },
     "--text-highlight-bg-active": { "light": "#ff8000", "dark": null },
     "--input-shadow": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--input-shadow-hover": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--shadow-s": { "light": "#000000 0px 3px 5px", "dark": null },
@@ -95,17 +95,14 @@
     "--conOp": { "light": "#000000", "dark": null },
     "--text-on-button": { "light": "var(--text-normal)", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #fff 1.62%, #f5f5f5 50.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #fff 1.62%,\n    #f5f5f5 50.72%\n  )",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f3f3f3 1.62%, #e6e6e6 50.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #f3f3f3 1.62%,\n    #e6e6e6 50.72%\n  )",
       "dark": null
     },
-    "--background-modifier-border-alt": {
-      "light": "#fff !important",
-      "dark": null
-    }
+    "--background-modifier-border-alt": { "light": "#fff", "dark": null }
   },
   ".notice progress[value]::-webkit-progress-bar": {
     "background-color": { "light": "#262626", "dark": null },
@@ -158,11 +155,11 @@
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #e6dcd0 1.62%, #e1d4c6 50.72% )",
+      "light": "linear-gradient(\n    135deg,\n    #e6dcd0 1.62%,\n    #e1d4c6 50.72%\n  )",
       "dark": null
     },
     "--gradient-bg-tertiary": {
-      "light": "linear-gradient( 135deg, #e4f1f7 30.62%, #d0e6f1 90.72% )",
+      "light": "linear-gradient(\n    135deg,\n    #e4f1f7 30.62%,\n    #d0e6f1 90.72%\n  )",
       "dark": null
     },
     "--background-modifier-border-alt": { "light": "#fff", "dark": null }
@@ -209,15 +206,15 @@
     "--color-base-60": { "light": "#767676", "dark": null },
     "--color-base-70": { "light": "#657392", "dark": null },
     "--color-base-100": { "light": "#131313", "dark": null },
-    "--color-accent": { "light": "#e1564c !important", "dark": null },
-    "--color-accent-rgb": { "light": "225, 86, 76 !important", "dark": null },
-    "--color-accent-hsl": { "light": "4, 71%, 59% !important", "dark": null },
+    "--color-accent": { "light": "#e1564c", "dark": null },
+    "--color-accent-rgb": { "light": "225, 86, 76", "dark": null },
+    "--color-accent-hsl": { "light": "4, 71%, 59%", "dark": null },
     "--gradient-bg-primary": {
       "light": "linear-gradient(135deg, #f0f4fa 1.62%, #e4ebf6 50.72%)",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #2b2b2b 1.62%, #272727 50.72% )",
+      "light": "linear-gradient(\n    135deg,\n    #2b2b2b 1.62%,\n    #272727 50.72%\n  )",
       "dark": null
     },
     "--background-modifier-border-alt": { "light": "#475276", "dark": null }
@@ -269,20 +266,17 @@
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f9effb 1.62%, #f3e4f7 50.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #f9effb 1.62%,\n    #f3e4f7 50.72%\n  )",
       "dark": null
     },
     "--gradient-bg-tertiary": {
-      "light": "linear-gradient( 135deg, #e4f1f7 30.62%, #d0e6f1 90.72% )",
+      "light": "linear-gradient(\n    135deg,\n    #e4f1f7 30.62%,\n    #d0e6f1 90.72%\n  )",
       "dark": null
     },
     "--background-modifier-border-alt": { "light": "#fff", "dark": null }
   },
-  ".ulu-shark-l.ulu-prop-car": {
-    ".markdown-source-view.is-live-preview.show-properties .metadata-container { background": {
-      "light": "var(--gradient-bg-tertiary)",
-      "dark": null
-    },
+  ".ulu-shark-l.ulu-prop-card\n  .markdown-source-view.is-live-preview.show-properties\n  .metadata-container": {
+    "background": { "light": "var(--gradient-bg-tertiary)", "dark": null },
     "border": {
       "light": "1px solid var(--background-modifier-border-alt)",
       "dark": null
@@ -339,7 +333,7 @@
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f6f6f6 1.62%, #f6f6f6 50.72% )",
+      "light": "linear-gradient(\n    135deg,\n    #f6f6f6 1.62%,\n    #f6f6f6 50.72%\n  )",
       "dark": null
     },
     "--background-modifier-border-alt": { "light": "#fff", "dark": null }
@@ -387,17 +381,14 @@
     "--color-base-70": { "light": "#3e3d39", "dark": null },
     "--color-base-100": { "light": "#433c34", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #fefefe 1.62%, #fdfbf1 50.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #fefefe 1.62%,\n    #fdfbf1 50.72%\n  )",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f6f3ea 1.62%, #f1edde 50.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #f6f3ea 1.62%,\n    #f1edde 50.72%\n  )",
       "dark": null
     },
-    "--background-modifier-border-alt": {
-      "light": "#fff !important",
-      "dark": null
-    }
+    "--background-modifier-border-alt": { "light": "#fff", "dark": null }
   },
   ".ulu-solar-lt": {
     "--accent-h": { "light": "175.5", "dark": null },
@@ -440,17 +431,14 @@
     "--color-base-70": { "light": "#657b83", "dark": null },
     "--color-base-100": { "light": "#586e75", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #fefaf1 1.62%, #fdf6e3 50.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #fefaf1 1.62%,\n    #fdf6e3 50.72%\n  )",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f0ebdb 1.62%, #eee8d5 50.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #f0ebdb 1.62%,\n    #eee8d5 50.72%\n  )",
       "dark": null
     },
-    "--background-modifier-border-alt": {
-      "light": "#e2e1df !important",
-      "dark": null
-    }
+    "--background-modifier-border-alt": { "light": "#e2e1df", "dark": null }
   },
   ".ulu-red-l": {
     "--accent-h": { "light": "13", "dark": null },
@@ -492,17 +480,14 @@
     "--color-base-70": { "light": "#231a1a", "dark": null },
     "--color-base-100": { "light": "#0b0909", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #e5dcdc 1.62%, #dacdcd 50.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #e5dcdc 1.62%,\n    #dacdcd 50.72%\n  )",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #dacdcd 1.62%, #cebdbd 50.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #dacdcd 1.62%,\n    #cebdbd 50.72%\n  )",
       "dark": null
     },
-    "--background-modifier-border-alt": {
-      "light": "#f7dede !important",
-      "dark": null
-    }
+    "--background-modifier-border-alt": { "light": "#f7dede", "dark": null }
   },
   ".ulu-green-l": {
     "color-scheme": { "light": "light", "dark": null },
@@ -547,17 +532,14 @@
     "--color-base-70": { "light": "#1a231f", "dark": null },
     "--color-base-100": { "light": "#090b0a", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #e5e3dc 1.62%, #dad7cd 50.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #e5e3dc 1.62%,\n    #dad7cd 50.72%\n  )",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #d9dacd 1.62%, #cdcebd 50.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #d9dacd 1.62%,\n    #cdcebd 50.72%\n  )",
       "dark": null
     },
-    "--background-modifier-border-alt": {
-      "light": "#a3b18a !important",
-      "dark": null
-    }
+    "--background-modifier-border-alt": { "light": "#a3b18a", "dark": null }
   },
   ".ulu-blue-l": {
     "color-scheme": { "light": "light", "dark": null },
@@ -578,17 +560,14 @@
     "--color-base-70": { "light": "#1a1f23", "dark": null },
     "--color-base-100": { "light": "#090a0b", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #c0d8e8 1.62%, #b7cddc 50.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #c0d8e8 1.62%,\n    #b7cddc 50.72%\n  )",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #c7d5e1 1.62%, #b3c6d6 50.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #c7d5e1 1.62%,\n    #b3c6d6 50.72%\n  )",
       "dark": null
     },
-    "--background-modifier-border-alt": {
-      "light": "#a6d6f2 !important",
-      "dark": null
-    }
+    "--background-modifier-border-alt": { "light": "#a6d6f2", "dark": null }
   },
   ".ulu-purple-l": {
     "color-scheme": { "light": "light", "dark": null },
@@ -608,17 +587,14 @@
     "--color-base-70": { "light": "#231a21", "dark": null },
     "--color-base-100": { "light": "#0b090a", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #e0d3e0 1.62%, #dacdda 50.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #e0d3e0 1.62%,\n    #dacdda 50.72%\n  )",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #dacdda 1.62%, #cebdce 50.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #dacdda 1.62%,\n    #cebdce 50.72%\n  )",
       "dark": null
     },
-    "--background-modifier-border-alt": {
-      "light": "#b18aae !important",
-      "dark": null
-    }
+    "--background-modifier-border-alt": { "light": "#b18aae", "dark": null }
   },
   ".ulu-gruvbox-lt": {
     "--accent-h": { "light": "13", "dark": null },
@@ -660,17 +636,14 @@
     "--color-base-70": { "light": "#3c3836", "dark": null },
     "--color-base-100": { "light": "#282828", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #fdf6de 1.62%, #fbf1c7 50.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #fdf6de 1.62%,\n    #fbf1c7 50.72%\n  )",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f2e8ce 1.62%, #ebdbb2 50.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #f2e8ce 1.62%,\n    #ebdbb2 50.72%\n  )",
       "dark": null
     },
-    "--background-modifier-border-alt": {
-      "light": "#fcf9ed !important",
-      "dark": null
-    }
+    "--background-modifier-border-alt": { "light": "#fcf9ed", "dark": null }
   },
   ".ulu-lobstertime-lt": {
     "--accent-h": { "light": "13", "dark": null },
@@ -712,17 +685,14 @@
     "--color-base-70": { "light": "#1a1f23", "dark": null },
     "--color-base-100": { "light": "#090a0b", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #dce1e5 1.62%, #cdd5da 50.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #dce1e5 1.62%,\n    #cdd5da 50.72%\n  )",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #cad2d8 1.62%, #bdc6ce 50.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #cad2d8 1.62%,\n    #bdc6ce 50.72%\n  )",
       "dark": null
     },
-    "--background-modifier-border-alt": {
-      "light": "#504945 !important",
-      "dark": null
-    }
+    "--background-modifier-border-alt": { "light": "#504945", "dark": null }
   },
   ".ulu-obplus-lt": {
     "color-scheme": { "light": "light", "dark": null },
@@ -769,17 +739,14 @@
     "--color-base-70": { "light": "#343a40", "dark": null },
     "--color-base-100": { "light": "#212529", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #ffffff 1.62%, #f8f9fa 50.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #ffffff 1.62%,\n    #f8f9fa 50.72%\n  )",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f6f7f9 1.62%, #f1f3f5 50.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #f6f7f9 1.62%,\n    #f1f3f5 50.72%\n  )",
       "dark": null
     },
-    "--background-modifier-border-alt": {
-      "light": "#fff !important",
-      "dark": null
-    }
+    "--background-modifier-border-alt": { "light": "#fff", "dark": null }
   },
   ".ulu-red": {
     "--color-accent": "hsl(var(--color-red-hsl))",
@@ -841,161 +808,131 @@
     "--color-base-00": { "light": "#fdfbfb", "dark": null },
     "--color-base-20": { "light": "#f5f2f2", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #fff 20.62%, #fdfbfb 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #fff 20.62%,\n    #fdfbfb 90.72%\n  )",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f8f6f6 20.62%, #f5f2f2 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #f8f6f6 20.62%,\n    #f5f2f2 90.72%\n  )",
       "dark": null
     },
-    "--background-modifier-border-alt": {
-      "light": "#fff !important",
-      "dark": null
-    }
+    "--background-modifier-border-alt": { "light": "#fff", "dark": null }
   },
   ".ulu-accent-bg-l.ulu-green": {
     "--color-base-00": { "light": "#fcfcfc", "dark": null },
     "--color-base-20": { "light": "#f0f5f0", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #fff 20.62%, #fcfcfc 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #fff 20.62%,\n    #fcfcfc 90.72%\n  )",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f8f6f6 20.62%, #f0f5f0 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #f8f6f6 20.62%,\n    #f0f5f0 90.72%\n  )",
       "dark": null
     },
-    "--background-modifier-border-alt": {
-      "light": "#fff !important",
-      "dark": null
-    }
+    "--background-modifier-border-alt": { "light": "#fff", "dark": null }
   },
   ".ulu-accent-bg-l.ulu-orange": {
     "--color-base-00": { "light": "#fcfcfa", "dark": null },
     "--color-base-20": { "light": "#f6f3ed", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #fff 20.62%, #fcfcfa 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #fff 20.62%,\n    #fcfcfa 90.72%\n  )",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f8f6f6 20.62%, #f6f3ed 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #f8f6f6 20.62%,\n    #f6f3ed 90.72%\n  )",
       "dark": null
     },
-    "--background-modifier-border-alt": {
-      "light": "#fff !important",
-      "dark": null
-    }
+    "--background-modifier-border-alt": { "light": "#fff", "dark": null }
   },
   ".ulu-accent-bg-l.ulu-yellow": {
     "--color-base-00": { "light": "#fcfcf8", "dark": null },
     "--color-base-20": { "light": "#f5f4e6", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #fff 20.62%, #fcfcf8 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #fff 20.62%,\n    #fcfcf8 90.72%\n  )",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f8f6f6 20.62%, #f5f4e6 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #f8f6f6 20.62%,\n    #f5f4e6 90.72%\n  )",
       "dark": null
     },
-    "--background-modifier-border-alt": {
-      "light": "#fff !important",
-      "dark": null
-    }
+    "--background-modifier-border-alt": { "light": "#fff", "dark": null }
   },
   ".ulu-accent-bg-l.ulu-cyan": {
     "--color-base-00": { "light": "#f9fcfc", "dark": null },
     "--color-base-20": { "light": "#ecf6f6", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #fff 20.62%, #f9fcfc 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #fff 20.62%,\n    #f9fcfc 90.72%\n  )",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f8f6f6 20.62%, #ecf6f6 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #f8f6f6 20.62%,\n    #ecf6f6 90.72%\n  )",
       "dark": null
     },
-    "--background-modifier-border-alt": {
-      "light": "#fff !important",
-      "dark": null
-    }
+    "--background-modifier-border-alt": { "light": "#fff", "dark": null }
   },
   ".ulu-accent-bg-l.ulu-blue": {
     "--color-base-00": { "light": "#fbfcfc", "dark": null },
     "--color-base-20": { "light": "#f1f5f5", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #fff 20.62%, #fbfcfc 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #fff 20.62%,\n    #fbfcfc 90.72%\n  )",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f8f6f6 20.62%, #f1f5f5 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #f8f6f6 20.62%,\n    #f1f5f5 90.72%\n  )",
       "dark": null
     },
-    "--background-modifier-border-alt": {
-      "light": "#fff !important",
-      "dark": null
-    }
+    "--background-modifier-border-alt": { "light": "#fff", "dark": null }
   },
   ".ulu-accent-bg-l.ulu-purple": {
     "--color-base-00": { "light": "#fcfcfb", "dark": null },
     "--color-base-20": { "light": "#f5f3f2", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #fff 20.62%, #fcfcfb 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #fff 20.62%,\n    #fcfcfb 90.72%\n  )",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f8f6f6 20.62%, #f5f3f2 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #f8f6f6 20.62%,\n    #f5f3f2 90.72%\n  )",
       "dark": null
     },
-    "--background-modifier-border-alt": {
-      "light": "#fff !important",
-      "dark": null
-    }
+    "--background-modifier-border-alt": { "light": "#fff", "dark": null }
   },
   ".ulu-accent-bg-l.ulu-pink": {
     "--color-base-00": { "light": "#fcfcfb", "dark": null },
     "--color-base-20": { "light": "#f5f3f1", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #fff 20.62%, #fcfcfb 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #fff 20.62%,\n    #fcfcfb 90.72%\n  )",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f8f6f6 20.62%, #f5f3f1 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #f8f6f6 20.62%,\n    #f5f3f1 90.72%\n  )",
       "dark": null
     },
-    "--background-modifier-border-alt": {
-      "light": "#fff !important",
-      "dark": null
-    }
+    "--background-modifier-border-alt": { "light": "#fff", "dark": null }
   },
   ".ulu-con-l": {
     "--color-base-00": { "light": "#f3f3f3", "dark": null },
     "--color-base-20": { "light": "#f3f3f3", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #f3f3f3 20.62%, #f3f3f3 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #f3f3f3 20.62%,\n    #f3f3f3 90.72%\n  )",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f3f3f3 20.62%, #f3f3f3 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #f3f3f3 20.62%,\n    #f3f3f3 90.72%\n  )",
       "dark": null
     },
-    "--background-modifier-border-alt": {
-      "light": "#fff !important",
-      "dark": null
-    }
+    "--background-modifier-border-alt": { "light": "#fff", "dark": null }
   },
   ".ulu-super-con-l": {
     "--color-base-00": { "light": "#fff", "dark": null },
     "--color-base-20": { "light": "#fff", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #fff 20.62%, #fff 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #fff 20.62%,\n    #fff 90.72%\n  )",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #fff 20.62%, #fff 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #fff 20.62%,\n    #fff 90.72%\n  )",
       "dark": null
     },
-    "--background-modifier-border-alt": {
-      "light": "#fff !important",
-      "dark": null
-    }
+    "--background-modifier-border-alt": { "light": "#fff", "dark": null }
   },
   ".ulu-custom-l": {
     "--color-base-00": { "light": "var(--custom-primary)", "dark": null },
@@ -1005,27 +942,24 @@
     "--color-base-00": { "light": "#f5f2f2", "dark": null },
     "--color-base-20": { "light": "#f5f2f2", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #f5f2f2 20.62%, #f5f2f2 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #f5f2f2 20.62%,\n    #f5f2f2 90.72%\n  )",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f5f2f2 20.62%, #f5f2f2 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #f5f2f2 20.62%,\n    #f5f2f2 90.72%\n  )",
       "dark": null
     },
-    "--background-modifier-border-alt": {
-      "light": "#fff !important",
-      "dark": null
-    }
+    "--background-modifier-border-alt": { "light": "#fff", "dark": null }
   },
   ".ulu-accent-bg-lowcon-l.ulu-green": {
     "--color-base-00": { "light": "#f0f5f0", "dark": null },
     "--color-base-20": { "light": "#f0f5f0", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #f0f5f0 20.62%, #f0f5f0 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #f0f5f0 20.62%,\n    #f0f5f0 90.72%\n  )",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f0f5f0 20.62%, #f0f5f0 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #f0f5f0 20.62%,\n    #f0f5f0 90.72%\n  )",
       "dark": null
     }
   },
@@ -1033,99 +967,81 @@
     "--color-base-00": { "light": "#f6f3ed", "dark": null },
     "--color-base-20": { "light": "#f6f3ed", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #f6f3ed 20.62%, #f6f3ed 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #f6f3ed 20.62%,\n    #f6f3ed 90.72%\n  )",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f6f3ed 20.62%, #f6f3ed 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #f6f3ed 20.62%,\n    #f6f3ed 90.72%\n  )",
       "dark": null
     },
-    "--background-modifier-border-alt": {
-      "light": "#fff !important",
-      "dark": null
-    }
+    "--background-modifier-border-alt": { "light": "#fff", "dark": null }
   },
   ".ulu-accent-bg-lowcon-l.ulu-yellow": {
     "--color-base-00": { "light": "#f5f4e6", "dark": null },
     "--color-base-20": { "light": "#f5f4e6", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #f5f4e6 20.62%, #f5f4e6 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #f5f4e6 20.62%,\n    #f5f4e6 90.72%\n  )",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f5f4e6 20.62%, #f5f4e6 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #f5f4e6 20.62%,\n    #f5f4e6 90.72%\n  )",
       "dark": null
     },
-    "--background-modifier-border-alt": {
-      "light": "#fff !important",
-      "dark": null
-    }
+    "--background-modifier-border-alt": { "light": "#fff", "dark": null }
   },
   ".ulu-accent-bg-lowcon-l.ulu-cyan": {
     "--color-base-00": { "light": "#ecf6f6", "dark": null },
     "--color-base-20": { "light": "#ecf6f6", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #ecf6f6 20.62%, #ecf6f6 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #ecf6f6 20.62%,\n    #ecf6f6 90.72%\n  )",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #ecf6f6 20.62%, #ecf6f6 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #ecf6f6 20.62%,\n    #ecf6f6 90.72%\n  )",
       "dark": null
     },
-    "--background-modifier-border-alt": {
-      "light": "#fff !important",
-      "dark": null
-    }
+    "--background-modifier-border-alt": { "light": "#fff", "dark": null }
   },
   ".ulu-accent-bg-lowcon-l.ulu-blue": {
     "--color-base-00": { "light": "#f1f5f5", "dark": null },
     "--color-base-20": { "light": "#f1f5f5", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #f1f5f5 20.62%, #f1f5f5 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #f1f5f5 20.62%,\n    #f1f5f5 90.72%\n  )",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f1f5f5 20.62%, #f1f5f5 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #f1f5f5 20.62%,\n    #f1f5f5 90.72%\n  )",
       "dark": null
     },
-    "--background-modifier-border-alt": {
-      "light": "#fff !important",
-      "dark": null
-    }
+    "--background-modifier-border-alt": { "light": "#fff", "dark": null }
   },
   ".ulu-accent-bg-lowcon-l.ulu-purple": {
     "--color-base-00": { "light": "#f5f3f2", "dark": null },
     "--color-base-20": { "light": "#f5f3f2", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #f5f3f2 20.62%, #f5f3f2 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #f5f3f2 20.62%,\n    #f5f3f2 90.72%\n  )",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f5f3f2 20.62%, #f5f3f2 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #f5f3f2 20.62%,\n    #f5f3f2 90.72%\n  )",
       "dark": null
     },
-    "--background-modifier-border-alt": {
-      "light": "#fff !important",
-      "dark": null
-    }
+    "--background-modifier-border-alt": { "light": "#fff", "dark": null }
   },
   ".ulu-accent-bg-lowcon-l.ulu-pink": {
     "--color-base-00": { "light": "#f5f3f1", "dark": null },
     "--color-base-20": { "light": "#f5f3f1", "dark": null },
     "--gradient-bg-primary": {
-      "light": "linear-gradient( 135deg, #f5f3f1 20.62%, #f5f3f1 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #f5f3f1 20.62%,\n    #f5f3f1 90.72%\n  )",
       "dark": null
     },
     "--gradient-bg-secondary": {
-      "light": "linear-gradient( 135deg, #f5f3f1 20.62%, #f5f3f1 90.72% ) !important",
+      "light": "linear-gradient(\n    135deg,\n    #f5f3f1 20.62%,\n    #f5f3f1 90.72%\n  )",
       "dark": null
     },
-    "--background-modifier-border-alt": {
-      "light": "#fff !important",
-      "dark": null
-    }
+    "--background-modifier-border-alt": { "light": "#fff", "dark": null }
   },
-  ".workspace-tab-header": { "color": "var(--text-normal) !important" },
+  ".workspace-tab-header": { "color": "var(--text-normal)" },
   ".ulu-we3-callout": {
     "--color-callout-red": { "light": "#ffe0e0", "dark": "#502626" },
     "--color-callout-blue": { "light": "#def1ff", "dark": "#263850" },
@@ -1146,6 +1062,168 @@
     "--color-callout-text": {
       "light": "var(--text-normal)",
       "dark": "var(--text-on-accent)"
+    }
+  },
+  ".ulu-canvas-fancycolor10\n  .canvas-node.is-themed.mod-canvas-color-1\n  .canvas-node-content": {
+    "background-image": {
+      "light": "linear-gradient(\n    45deg,\n    hsl(0, 87%, 79%) 0%,\n    hsl(360, 87%, 78%) 21%,\n    hsl(360, 87%, 77%) 30%,\n    hsl(359, 87%, 75%) 39%,\n    hsl(359, 87%, 74%) 46%,\n    hsl(359, 87%, 73%) 54%,\n    hsl(359, 86%, 72%) 61%,\n    hsl(358, 86%, 71%) 69%,\n    hsl(358, 86%, 70%) 79%,\n    hsl(358, 85%, 68%) 100%\n  )",
+      "dark": "linear-gradient(\n    45deg,\n    hsl(15, 82%, 54%) 0%,\n    hsl(14, 83%, 54%) 11%,\n    hsl(14, 83%, 53%) 22%,\n    hsl(13, 84%, 53%) 33%,\n    hsl(13, 84%, 53%) 44%,\n    hsl(12, 85%, 53%) 56%,\n    hsl(11, 85%, 53%) 67%,\n    hsl(11, 86%, 52%) 78%,\n    hsl(10, 86%, 52%) 89%,\n    hsl(9, 87%, 52%) 100%\n  )"
+    }
+  },
+  ".ulu-canvas-fancycolor11\n  .canvas-node.is-themed.mod-canvas-color-2\n  .canvas-node-content": {
+    "background-image": {
+      "light": "linear-gradient(\n    135deg,\n    hsl(16, 100%, 76%) 0%,\n    hsl(20, 100%, 76%) 21%,\n    hsl(23, 100%, 76%) 30%,\n    hsl(27, 100%, 77%) 39%,\n    hsl(30, 100%, 77%) 46%,\n    hsl(34, 100%, 77%) 54%,\n    hsl(37, 100%, 78%) 61%,\n    hsl(41, 100%, 79%) 69%,\n    hsl(45, 100%, 80%) 79%,\n    hsl(49, 100%, 81%) 100%\n  )",
+      "dark": "linear-gradient(\n    135deg,\n    hsl(29, 82%, 54%) 0%,\n    hsl(28, 83%, 53%) 11%,\n    hsl(28, 83%, 53%) 22%,\n    hsl(27, 84%, 53%) 33%,\n    hsl(26, 84%, 53%) 44%,\n    hsl(25, 85%, 53%) 56%,\n    hsl(25, 85%, 52%) 67%,\n    hsl(24, 86%, 52%) 78%,\n    hsl(23, 86%, 52%) 89%,\n    hsl(22, 87%, 52%) 100%\n  )"
+    }
+  },
+  ".ulu-canvas-fancycolor12\n  .canvas-node.is-themed.mod-canvas-color-3\n  .canvas-node-content": {
+    "background-image": {
+      "light": "linear-gradient(\n    135deg,\n    hsl(60, 89%, 72%) 0%,\n    hsl(59, 91%, 73%) 21%,\n    hsl(57, 92%, 74%) 30%,\n    hsl(56, 94%, 76%) 39%,\n    hsl(55, 96%, 77%) 46%,\n    hsl(53, 97%, 78%) 54%,\n    hsl(52, 98%, 79%) 61%,\n    hsl(51, 99%, 80%) 69%,\n    hsl(50, 100%, 80%) 79%,\n    hsl(49, 100%, 81%) 100%\n  )",
+      "dark": "linear-gradient(\n    135deg,\n    hsl(44, 82%, 54%) 0%,\n    hsl(44, 83%, 54%) 11%,\n    hsl(45, 83%, 53%) 22%,\n    hsl(45, 84%, 53%) 33%,\n    hsl(46, 84%, 53%) 44%,\n    hsl(46, 85%, 53%) 56%,\n    hsl(47, 85%, 53%) 67%,\n    hsl(47, 86%, 53%) 78%,\n    hsl(48, 86%, 52%) 89%,\n    hsl(48, 87%, 52%) 100%\n  )"
+    }
+  },
+  ".ulu-canvas-fancycolor13\n  .canvas-node.is-themed.mod-canvas-color-4\n  .canvas-node-content": {
+    "background-image": {
+      "light": "linear-gradient(\n    135deg,\n    hsl(99, 75%, 75%) 0%,\n    hsl(103, 75%, 77%) 21%,\n    hsl(108, 75%, 79%) 30%,\n    hsl(113, 76%, 81%) 39%,\n    hsl(119, 76%, 83%) 46%,\n    hsl(124, 77%, 84%) 54%,\n    hsl(129, 79%, 85%) 61%,\n    hsl(133, 80%, 86%) 69%,\n    hsl(137, 81%, 86%) 79%,\n    hsl(141, 81%, 87%) 100%\n  )",
+      "dark": "linear-gradient(\n    135deg,\n    hsl(98, 32%, 45%) 0%,\n    hsl(101, 31%, 44%) 11%,\n    hsl(104, 30%, 43%) 22%,\n    hsl(108, 29%, 41%) 33%,\n    hsl(112, 28%, 40%) 44%,\n    hsl(116, 27%, 39%) 56%,\n    hsl(120, 26%, 37%) 67%,\n    hsl(124, 27%, 35%) 78%,\n    hsl(128, 28%, 33%) 89%,\n    hsl(132, 29%, 31%) 100%\n  )"
+    }
+  },
+  ".ulu-canvas-fancycolor14\n  .canvas-node.is-themed.mod-canvas-color-5\n  .canvas-node-content": {
+    "background-image": {
+      "light": "linear-gradient(\n    135deg,\n    hsl(187, 100%, 89%) 0%,\n    hsl(187, 100%, 87%) 21%,\n    hsl(187, 100%, 85%) 30%,\n    hsl(187, 100%, 83%) 39%,\n    hsl(187, 100%, 81%) 46%,\n    hsl(187, 100%, 79%) 54%,\n    hsl(187, 100%, 77%) 61%,\n    hsl(186, 100%, 75%) 69%,\n    hsl(186, 100%, 72%) 79%,\n    hsl(186, 100%, 69%) 100%\n  )",
+      "dark": "linear-gradient(\n    135deg,\n    hsl(218, 82%, 54%) 0%,\n    hsl(218, 83%, 53%) 11%,\n    hsl(218, 85%, 52%) 22%,\n    hsl(219, 85%, 51%) 33%,\n    hsl(219, 86%, 51%) 44%,\n    hsl(220, 87%, 50%) 56%,\n    hsl(221, 87%, 50%) 67%,\n    hsl(223, 87%, 51%) 78%,\n    hsl(224, 87%, 51%) 89%,\n    hsl(227, 87%, 52%) 100%\n  )"
+    }
+  },
+  ".ulu-canvas-fancycolor15\n  .canvas-node.is-themed.mod-canvas-color-6\n  .canvas-node-content": {
+    "background-image": {
+      "light": "linear-gradient(\n    135deg,\n    hsl(298, 68%, 90%) 0%,\n    hsl(287, 68%, 89%) 21%,\n    hsl(277, 68%, 89%) 30%,\n    hsl(267, 67%, 88%) 39%,\n    hsl(258, 65%, 87%) 46%,\n    hsl(249, 63%, 87%) 54%,\n    hsl(240, 61%, 86%) 61%,\n    hsl(232, 62%, 83%) 69%,\n    hsl(225, 62%, 81%) 79%,\n    hsl(220, 61%, 79%) 100%\n  )",
+      "dark": "linear-gradient(\n    135deg,\n    hsl(308, 33%, 41%) 0%,\n    hsl(308, 35%, 41%) 11%,\n    hsl(308, 37%, 40%) 22%,\n    hsl(308, 40%, 39%) 33%,\n    hsl(308, 42%, 39%) 44%,\n    hsl(308, 45%, 38%) 56%,\n    hsl(308, 47%, 37%) 67%,\n    hsl(308, 51%, 36%) 78%,\n    hsl(308, 54%, 35%) 89%,\n    hsl(308, 58%, 35%) 100%\n  )"
+    }
+  },
+  ".ulu-canvas-fancycolor20\n  .canvas-node.is-themed.mod-canvas-color-1\n  .canvas-node-content": {
+    "background": { "light": "#f0694e", "dark": "#312a3d" }
+  },
+  ".ulu-canvas-fancycolor20\n  .canvas-node.is-themed.mod-canvas-color-1\n  .canvas-node-content\n  .markdown-preview-view\n  .inline-title": {
+    "color": { "light": "#e3dedd", "dark": "#d56242" }
+  },
+  ".ulu-canvas-fancycolor20\n  .canvas-node.is-themed.mod-canvas-color-1\n  .canvas-node-content\n  .markdown-preview-view": {
+    "color": { "light": "#e3dedd", "dark": "#d56242" }
+  },
+  ".ulu-canvas-fancycolor21\n  .canvas-node.is-themed.mod-canvas-color-2\n  .canvas-node-content": {
+    "background": { "light": "#e5c172", "dark": "#253c58" }
+  },
+  ".ulu-canvas-fancycolor21\n  .canvas-node.is-themed.mod-canvas-color-2\n  .canvas-node-content\n  .markdown-preview-view\n  .inline-title": {
+    "color": { "light": "#344445", "dark": "#e46e47" }
+  },
+  ".ulu-canvas-fancycolor21\n  .canvas-node.is-themed.mod-canvas-color-2\n  .canvas-node-content\n  .markdown-preview-view": {
+    "color": { "light": "#344445", "dark": "#e46e47" }
+  },
+  ".ulu-canvas-fancycolor22\n  .canvas-node.is-themed.mod-canvas-color-3\n  .canvas-node-content": {
+    "background": { "light": "#efe377", "dark": "#383d47" }
+  },
+  ".ulu-canvas-fancycolor22\n  .canvas-node.is-themed.mod-canvas-color-3\n  .canvas-node-content\n  .markdown-preview-view\n  .inline-title": {
+    "color": { "light": "#3f1b75", "dark": "#c9ad74" }
+  },
+  ".ulu-canvas-fancycolor22\n  .canvas-node.is-themed.mod-canvas-color-3\n  .canvas-node-content\n  .markdown-preview-view": {
+    "color": { "light": "#3f1b75", "dark": "#c9ad74" }
+  },
+  ".ulu-canvas-fancycolor23\n  .canvas-node.is-themed.mod-canvas-color-4\n  .canvas-node-content": {
+    "background": { "light": "#329f82", "dark": "#2d333e" }
+  },
+  ".ulu-canvas-fancycolor23\n  .canvas-node.is-themed.mod-canvas-color-4\n  .canvas-node-content\n  .markdown-preview-view\n  .inline-title": {
+    "color": { "light": "#e6d070", "dark": "#7da650" }
+  },
+  ".ulu-canvas-fancycolor23\n  .canvas-node.is-themed.mod-canvas-color-4\n  .canvas-node-content\n  .markdown-preview-view": {
+    "color": { "light": "#e6d070", "dark": "#7da650" }
+  },
+  ".ulu-canvas-fancycolor24\n  .canvas-node.is-themed.mod-canvas-color-5\n  .canvas-node-content": {
+    "background": { "light": "#626add", "dark": "#395364" }
+  },
+  ".ulu-canvas-fancycolor24\n  .canvas-node.is-themed.mod-canvas-color-5\n  .canvas-node-content\n  .markdown-preview-view\n  .inline-title": {
+    "color": { "light": "#f0d6ca", "dark": "#81bcfa" }
+  },
+  ".ulu-canvas-fancycolor24\n  .canvas-node.is-themed.mod-canvas-color-5\n  .canvas-node-content\n  .markdown-preview-view": {
+    "color": { "light": "#f0d6ca", "dark": "#81bcfa" }
+  },
+  ".ulu-canvas-fancycolor25\n  .canvas-node.is-themed.mod-canvas-color-6\n  .canvas-node-content": {
+    "background": { "light": "#f9dcc3", "dark": "#37354c" }
+  },
+  ".ulu-canvas-fancycolor25\n  .canvas-node.is-themed.mod-canvas-color-6\n  .canvas-node-content\n  .markdown-preview-view\n  .inline-title": {
+    "color": { "light": "#7b88d0", "dark": "#a7e9d8" }
+  },
+  ".ulu-canvas-fancycolor25\n  .canvas-node.is-themed.mod-canvas-color-6\n  .canvas-node-content\n  .markdown-preview-view": {
+    "color": { "light": "#7b88d0", "dark": "#a7e9d8" }
+  },
+  ".ulu-gummy-canvas1\n  .canvas-node.is-themed.mod-canvas-color-1\n  .canvas-node-content": {
+    "background-image": {
+      "light": "linear-gradient(\n    45deg,\n    hsl(0, 87%, 79%) 0%,\n    hsl(360, 87%, 78%) 21%,\n    hsl(360, 87%, 77%) 30%,\n    hsl(359, 87%, 75%) 39%,\n    hsl(359, 87%, 74%) 46%,\n    hsl(359, 87%, 73%) 54%,\n    hsl(359, 86%, 72%) 61%,\n    hsl(358, 86%, 71%) 69%,\n    hsl(358, 86%, 70%) 79%,\n    hsl(358, 85%, 68%) 100%\n  )",
+      "dark": "linear-gradient(\n    45deg,\n    hsl(15, 82%, 54%) 0%,\n    hsl(14, 83%, 54%) 11%,\n    hsl(14, 83%, 53%) 22%,\n    hsl(13, 84%, 53%) 33%,\n    hsl(13, 84%, 53%) 44%,\n    hsl(12, 85%, 53%) 56%,\n    hsl(11, 85%, 53%) 67%,\n    hsl(11, 86%, 52%) 78%,\n    hsl(10, 86%, 52%) 89%,\n    hsl(9, 87%, 52%) 100%\n  )"
+    }
+  },
+  ".ulu-gummy-canvas2\n  .canvas-node.is-themed.mod-canvas-color-2\n  .canvas-node-content": {
+    "background-image": {
+      "light": "linear-gradient(\n    45deg,\n    hsl(16, 100%, 76%) 0%,\n    hsl(20, 100%, 76%) 21%,\n    hsl(23, 100%, 76%) 30%,\n    hsl(27, 100%, 77%) 39%,\n    hsl(30, 100%, 77%) 46%,\n    hsl(34, 100%, 77%) 54%,\n    hsl(37, 100%, 78%) 61%,\n    hsl(41, 100%, 79%) 69%,\n    hsl(45, 100%, 80%) 79%,\n    hsl(49, 100%, 81%) 100%\n  )",
+      "dark": "linear-gradient(\n    45deg,\n    hsl(29, 82%, 54%) 0%,\n    hsl(28, 83%, 53%) 11%,\n    hsl(28, 83%, 53%) 22%,\n    hsl(27, 84%, 53%) 33%,\n    hsl(26, 84%, 53%) 44%,\n    hsl(25, 85%, 53%) 56%,\n    hsl(25, 85%, 52%) 67%,\n    hsl(24, 86%, 52%) 78%,\n    hsl(23, 86%, 52%) 89%,\n    hsl(22, 87%, 52%) 100%\n  )"
+    }
+  },
+  ".ulu-gummy-canvas3\n  .canvas-node.is-themed.mod-canvas-color-3\n  .canvas-node-content": {
+    "background-image": {
+      "light": "linear-gradient(\n    45deg,\n    hsl(60, 89%, 72%) 0%,\n    hsl(59, 91%, 73%) 21%,\n    hsl(57, 92%, 74%) 30%,\n    hsl(56, 94%, 76%) 39%,\n    hsl(55, 96%, 77%) 46%,\n    hsl(53, 97%, 78%) 54%,\n    hsl(52, 98%, 79%) 61%,\n    hsl(51, 99%, 80%) 69%,\n    hsl(50, 100%, 80%) 79%,\n    hsl(49, 100%, 81%) 100%\n  )",
+      "dark": "linear-gradient(\n    45deg,\n    hsl(44, 82%, 54%) 0%,\n    hsl(44, 83%, 54%) 11%,\n    hsl(45, 83%, 53%) 22%,\n    hsl(45, 84%, 53%) 33%,\n    hsl(46, 84%, 53%) 44%,\n    hsl(46, 85%, 53%) 56%,\n    hsl(47, 85%, 53%) 67%,\n    hsl(47, 86%, 53%) 78%,\n    hsl(48, 86%, 52%) 89%,\n    hsl(48, 87%, 52%) 100%\n  )"
+    }
+  },
+  ".ulu-gummy-canvas4\n  .canvas-node.is-themed.mod-canvas-color-4\n  .canvas-node-content": {
+    "background-image": {
+      "light": "linear-gradient(\n    45deg,\n    hsl(99, 75%, 75%) 0%,\n    hsl(103, 75%, 77%) 21%,\n    hsl(108, 75%, 79%) 30%,\n    hsl(113, 76%, 81%) 39%,\n    hsl(119, 76%, 83%) 46%,\n    hsl(124, 77%, 84%) 54%,\n    hsl(129, 79%, 85%) 61%,\n    hsl(133, 80%, 86%) 69%,\n    hsl(137, 81%, 86%) 79%,\n    hsl(141, 81%, 87%) 100%\n  )",
+      "dark": "linear-gradient(\n    45deg,\n    hsl(98, 32%, 45%) 0%,\n    hsl(101, 31%, 44%) 11%,\n    hsl(104, 30%, 43%) 22%,\n    hsl(108, 29%, 41%) 33%,\n    hsl(112, 28%, 40%) 44%,\n    hsl(116, 27%, 39%) 56%,\n    hsl(120, 26%, 37%) 67%,\n    hsl(124, 27%, 35%) 78%,\n    hsl(128, 28%, 33%) 89%,\n    hsl(132, 29%, 31%) 100%\n  )"
+    }
+  },
+  ".ulu-gummy-canvas5\n  .canvas-node.is-themed.mod-canvas-color-5\n  .canvas-node-content": {
+    "background-image": {
+      "light": "linear-gradient(\n    45deg,\n    hsl(187, 100%, 89%) 0%,\n    hsl(187, 100%, 87%) 21%,\n    hsl(187, 100%, 85%) 30%,\n    hsl(187, 100%, 83%) 39%,\n    hsl(187, 100%, 81%) 46%,\n    hsl(187, 100%, 79%) 54%,\n    hsl(187, 100%, 77%) 61%,\n    hsl(186, 100%, 75%) 69%,\n    hsl(186, 100%, 72%) 79%,\n    hsl(186, 100%, 69%) 100%\n  )",
+      "dark": "linear-gradient(\n    45deg,\n    hsl(218, 82%, 54%) 0%,\n    hsl(218, 83%, 53%) 11%,\n    hsl(218, 85%, 52%) 22%,\n    hsl(219, 85%, 51%) 33%,\n    hsl(219, 86%, 51%) 44%,\n    hsl(220, 87%, 50%) 56%,\n    hsl(221, 87%, 50%) 67%,\n    hsl(223, 87%, 51%) 78%,\n    hsl(224, 87%, 51%) 89%,\n    hsl(227, 87%, 52%) 100%\n  )"
+    }
+  },
+  ".ulu-gummy-canvas6\n  .canvas-node.is-themed.mod-canvas-color-6\n  .canvas-node-content": {
+    "background-image": {
+      "light": "linear-gradient(\n    45deg,\n    hsl(298, 68%, 90%) 0%,\n    hsl(287, 68%, 89%) 21%,\n    hsl(277, 68%, 89%) 30%,\n    hsl(267, 67%, 88%) 39%,\n    hsl(258, 65%, 87%) 46%,\n    hsl(249, 63%, 87%) 54%,\n    hsl(240, 61%, 86%) 61%,\n    hsl(232, 62%, 83%) 69%,\n    hsl(225, 62%, 81%) 79%,\n    hsl(220, 61%, 79%) 100%\n  )",
+      "dark": "linear-gradient(\n    45deg,\n    hsl(308, 33%, 41%) 0%,\n    hsl(308, 35%, 41%) 11%,\n    hsl(308, 37%, 40%) 22%,\n    hsl(308, 40%, 39%) 33%,\n    hsl(308, 42%, 39%) 44%,\n    hsl(308, 45%, 38%) 56%,\n    hsl(308, 47%, 37%) 67%,\n    hsl(308, 51%, 36%) 78%,\n    hsl(308, 54%, 35%) 89%,\n    hsl(308, 58%, 35%) 100%\n  )"
+    }
+  },
+  ".ulu-gradient-canvas1\n  \n  .canvas-node.is-themed.mod-canvas-color-1\n  .canvas-node-content": {
+    "background-image": {
+      "light": "linear-gradient(\n    45deg,\n    hsl(0, 87%, 79%) 0%,\n    hsl(360, 87%, 78%) 21%,\n    hsl(360, 87%, 77%) 30%,\n    hsl(359, 87%, 75%) 39%,\n    hsl(359, 87%, 74%) 46%,\n    hsl(359, 87%, 73%) 54%,\n    hsl(359, 86%, 72%) 61%,\n    hsl(358, 86%, 71%) 69%,\n    hsl(358, 86%, 70%) 79%,\n    hsl(358, 85%, 68%) 100%\n  )",
+      "dark": "linear-gradient(\n    45deg,\n    hsl(18, 88%, 66%) 0%,\n    hsl(17, 88%, 65%) 21%,\n    hsl(16, 87%, 63%) 30%,\n    hsl(15, 86%, 62%) 39%,\n    hsl(14, 85%, 60%) 46%,\n    hsl(13, 85%, 59%) 54%,\n    hsl(11, 84%, 57%) 61%,\n    hsl(10, 83%, 56%) 69%,\n    hsl(8, 82%, 55%) 79%,\n    hsl(6, 81%, 54%) 100%\n  )"
+    }
+  },
+  ".ulu-gradient-canvas2\n  \n  .canvas-node.is-themed.mod-canvas-color-2\n  .canvas-node-content": {
+    "background-image": {
+      "light": "linear-gradient(\n    45deg,\n    hsl(16, 100%, 76%) 0%,\n    hsl(20, 100%, 76%) 21%,\n    hsl(23, 100%, 76%) 30%,\n    hsl(27, 100%, 77%) 39%,\n    hsl(30, 100%, 77%) 46%,\n    hsl(34, 100%, 77%) 54%,\n    hsl(37, 100%, 78%) 61%,\n    hsl(41, 100%, 79%) 69%,\n    hsl(45, 100%, 80%) 79%,\n    hsl(49, 100%, 81%) 100%\n  )",
+      "dark": "linear-gradient(\n    45deg,\n    hsl(23, 92%, 71%) 0%,\n    hsl(21, 93%, 71%) 21%,\n    hsl(18, 93%, 71%) 30%,\n    hsl(16, 93%, 72%) 39%,\n    hsl(14, 93%, 72%) 46%,\n    hsl(11, 93%, 72%) 54%,\n    hsl(9, 92%, 73%) 61%,\n    hsl(6, 91%, 73%) 69%,\n    hsl(3, 89%, 73%) 79%,\n    hsl(0, 87%, 73%) 100%\n  )"
+    }
+  },
+  ".ulu-gradient-canvas3\n  \n  .canvas-node.is-themed.mod-canvas-color-3\n  .canvas-node-content": {
+    "background-image": {
+      "light": "linear-gradient(\n    45deg,\n    hsl(60, 89%, 72%) 0%,\n    hsl(59, 91%, 73%) 21%,\n    hsl(57, 92%, 74%) 30%,\n    hsl(56, 94%, 76%) 39%,\n    hsl(55, 96%, 77%) 46%,\n    hsl(53, 97%, 78%) 54%,\n    hsl(52, 98%, 79%) 61%,\n    hsl(51, 99%, 80%) 69%,\n    hsl(50, 100%, 80%) 79%,\n    hsl(49, 100%, 81%) 100%\n  )",
+      "dark": "linear-gradient(\n    45deg,\n    hsl(46, 95%, 56%) 0%,\n    hsl(44, 95%, 55%) 21%,\n    hsl(43, 94%, 54%) 30%,\n    hsl(41, 94%, 53%) 39%,\n    hsl(39, 93%, 53%) 46%,\n    hsl(37, 92%, 53%) 54%,\n    hsl(35, 91%, 52%) 61%,\n    hsl(34, 89%, 52%) 69%,\n    hsl(32, 88%, 52%) 79%,\n    hsl(29, 86%, 52%) 100%\n  )"
+    }
+  },
+  ".ulu-gradient-canvas4\n  \n  .canvas-node.is-themed.mod-canvas-color-4\n  .canvas-node-content": {
+    "background-image": {
+      "light": "linear-gradient(\n    45deg,\n    hsl(99, 75%, 75%) 0%,\n    hsl(103, 75%, 77%) 21%,\n    hsl(108, 75%, 79%) 30%,\n    hsl(113, 76%, 81%) 39%,\n    hsl(119, 76%, 83%) 46%,\n    hsl(124, 77%, 84%) 54%,\n    hsl(129, 79%, 85%) 61%,\n    hsl(133, 80%, 86%) 69%,\n    hsl(137, 81%, 86%) 79%,\n    hsl(141, 81%, 87%) 100%\n  )",
+      "dark": "linear-gradient(\n    45deg,\n    hsl(145, 84%, 73%) 0%,\n    hsl(145, 78%, 71%) 21%,\n    hsl(146, 74%, 68%) 30%,\n    hsl(146, 70%, 66%) 39%,\n    hsl(146, 67%, 63%) 46%,\n    hsl(147, 64%, 60%) 54%,\n    hsl(148, 61%, 57%) 61%,\n    hsl(148, 60%, 55%) 69%,\n    hsl(149, 58%, 52%) 79%,\n    hsl(150, 61%, 48%) 100%\n  )"
+    }
+  },
+  ".ulu-gradient-canvas5\n  \n  .canvas-node.is-themed.mod-canvas-color-5\n  .canvas-node-content": {
+    "background-image": {
+      "light": "linear-gradient(\n    45deg,\n    hsl(187, 100%, 89%) 0%,\n    hsl(187, 100%, 87%) 21%,\n    hsl(187, 100%, 85%) 30%,\n    hsl(187, 100%, 83%) 39%,\n    hsl(187, 100%, 81%) 46%,\n    hsl(187, 100%, 79%) 54%,\n    hsl(187, 100%, 77%) 61%,\n    hsl(186, 100%, 75%) 69%,\n    hsl(186, 100%, 72%) 79%,\n    hsl(186, 100%, 69%) 100%\n  )",
+      "dark": "linear-gradient(\n    45deg,\n    hsl(210, 90%, 80%) 0%,\n    hsl(211, 91%, 77%) 21%,\n    hsl(212, 92%, 74%) 30%,\n    hsl(212, 93%, 71%) 39%,\n    hsl(213, 93%, 68%) 46%,\n    hsl(213, 93%, 65%) 54%,\n    hsl(213, 92%, 61%) 61%,\n    hsl(213, 91%, 58%) 69%,\n    hsl(213, 90%, 54%) 79%,\n    hsl(212, 93%, 49%) 100%\n  )"
+    }
+  },
+  ".ulu-gradient-canvas6\n  \n  .canvas-node.is-themed.mod-canvas-color-6\n  .canvas-node-content": {
+    "background-image": {
+      "light": "linear-gradient(\n    45deg,\n    hsl(298, 68%, 90%) 0%,\n    hsl(287, 68%, 89%) 21%,\n    hsl(277, 68%, 89%) 30%,\n    hsl(267, 67%, 88%) 39%,\n    hsl(258, 65%, 87%) 46%,\n    hsl(249, 63%, 87%) 54%,\n    hsl(240, 61%, 86%) 61%,\n    hsl(232, 62%, 83%) 69%,\n    hsl(225, 62%, 81%) 79%,\n    hsl(220, 61%, 79%) 100%\n  )",
+      "dark": "linear-gradient(\n    45deg,\n    hsl(276, 91%, 79%) 0%,\n    hsl(274, 88%, 77%) 21%,\n    hsl(272, 85%, 75%) 30%,\n    hsl(270, 83%, 74%) 39%,\n    hsl(267, 81%, 72%) 46%,\n    hsl(265, 79%, 71%) 54%,\n    hsl(262, 78%, 69%) 61%,\n    hsl(260, 76%, 68%) 69%,\n    hsl(257, 75%, 66%) 79%,\n    hsl(254, 74%, 65%) 100%\n  )"
     }
   },
   ".ulu-nt-callouts": {
@@ -1179,12 +1257,9 @@
     "--color-callout-border-purple1": { "light": null, "dark": "#472650" }
   },
   ".clickable-icon[aria-label=\"New note\"]": {
-    "background": {
-      "light": "var(--gradient-bg-primary) !important",
-      "dark": null
-    },
+    "background": { "light": "var(--gradient-bg-primary)", "dark": null },
     "border": {
-      "light": "1px solid var(--background-modifier-border-alt) !important",
+      "light": "1px solid var(--background-modifier-border-alt)",
       "dark": null
     },
     "color": { "light": "var(--text-normal)", "dark": null }
@@ -1192,8 +1267,14 @@
   ".dropdown": {
     "background-image": {
       "light": null,
-      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+      "dark": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
     }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  input": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  textarea": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -1202,7 +1283,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))\n    drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {
@@ -1306,9 +1387,9 @@
   ".ulu-spotlight-d": {
     "color-scheme": { "light": null, "dark": "dark" },
     "--highlight-mix-blend-mode": { "light": null, "dark": "lighten" },
-    "--accent-h": { "light": null, "dark": "14 !important" },
-    "--accent-s": { "light": null, "dark": "100% !important" },
-    "--accent-l": { "light": null, "dark": "73% !important" },
+    "--accent-h": { "light": null, "dark": "14" },
+    "--accent-s": { "light": null, "dark": "100%" },
+    "--accent-l": { "light": null, "dark": "73%" },
     "--mono-rgb-0": { "light": null, "dark": "0, 0, 0" },
     "--mono-rgb-100": { "light": null, "dark": "255, 255, 255" },
     "--color-red-rgb": { "light": null, "dark": "251, 70, 76" },
@@ -1326,7 +1407,74 @@
     "--color-purple-rgb": { "light": null, "dark": "168, 130, 255" },
     "--color-purple": { "light": null, "dark": "#a882ff" },
     "--color-pink-rgb": { "light": null, "dark": "250, 153, 205" },
-    "--color-pink": { "light": null, "dark": "#fa99cd" }
+    "--color-pink": { "light": null, "dark": "#fa99cd" },
+    "--color-base-00": { "light": null, "dark": "#212733" },
+    "--color-base-10": { "light": null, "dark": "#272c36" },
+    "--color-base-20": { "light": null, "dark": "#1a1f28" },
+    "--color-base-25": { "light": null, "dark": "#2c3139" },
+    "--color-base-30": { "light": null, "dark": "#121924" },
+    "--color-base-35": { "light": null, "dark": "#2c3139" },
+    "--color-base-40": { "light": null, "dark": "#2c3139" },
+    "--color-base-50": { "light": null, "dark": "#85adbb" },
+    "--color-base-60": { "light": null, "dark": "#85adbb" },
+    "--color-base-70": { "light": null, "dark": "#e6e6e6" },
+    "--color-base-100": { "light": null, "dark": "#ff9473" },
+    "--color-accent-hsl": {
+      "light": null,
+      "dark": "var(--accent-h), var(--accent-s), var(--accent-l)"
+    },
+    "--color-accent": {
+      "light": null,
+      "dark": "hsl(var(--accent-h), var(--accent-s), var(--accent-l))"
+    },
+    "--color-accent-1": {
+      "light": null,
+      "dark": "hsl(\n    var(--accent-h),\n    var(--accent-s),\n    calc(var(--accent-l) - 3.8%)\n  )"
+    },
+    "--color-accent-2": {
+      "light": null,
+      "dark": "hsl(\n    var(--accent-h),\n    var(--accent-s),\n    calc(var(--accent-l) + 3.8%)\n  )"
+    },
+    "--background-modifier-form-field": {
+      "light": null,
+      "dark": "var(--color-base-25)"
+    },
+    "--background-secondary-alt": {
+      "light": null,
+      "dark": "var(--color-base-30)"
+    },
+    "--interactive-normal": { "light": null, "dark": "var(--color-base-30)" },
+    "--interactive-hover": { "light": null, "dark": "var(--color-base-35)" },
+    "--background-modifier-box-shadow": { "light": null, "dark": "#000000" },
+    "--background-modifier-cover": { "light": null, "dark": "#0a0a0a" },
+    "--text-highlight-bg": { "light": null, "dark": "#ffd000" },
+    "--text-highlight-bg-active": { "light": null, "dark": "#ff8000" },
+    "--text-selection": {
+      "light": null,
+      "dark": "hsla(var(--interactive-accent-hsl), 0.25)"
+    },
+    "--input-shadow": {
+      "light": null,
+      "dark": "inset 0 0.5px 0.5px 0.5px #ffffff, 0 2px 4px 0 #000000,\n    0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent"
+    },
+    "--input-shadow-hover": {
+      "light": null,
+      "dark": "inset 0 0.5px 1px 0.5px #ffffff, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent"
+    },
+    "--shadow-s": { "light": null, "dark": "none" },
+    "--shadow-l": {
+      "light": null,
+      "dark": "0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000"
+    },
+    "--gradient-bg-primary": {
+      "light": null,
+      "dark": "linear-gradient(135deg, #262d3b 1.62%, #212733 50.72%)"
+    },
+    "--gradient-bg-secondary": {
+      "light": null,
+      "dark": "linear-gradient(\n    135deg,\n    #1e242e 1.62%,\n    #1a1f28 50.72%\n  )"
+    },
+    "--background-modifier-border-alt": { "light": null, "dark": "#161f2c" }
   },
   ".ulu-soft-d": {
     "color-scheme": { "light": null, "dark": "dark" },
@@ -1375,7 +1523,7 @@
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #413d3a 1.62%, #393633 50.72% )"
+      "dark": "linear-gradient(\n    135deg,\n    #413d3a 1.62%,\n    #393633 50.72%\n  )"
     },
     "--background-modifier-border-alt": { "light": null, "dark": "#54504a" }
   },
@@ -1468,22 +1616,22 @@
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #332f37 1.62%, #252228 50.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #332f37 1.62%,\n    #252228 50.72%\n  )"
     },
     "--gradient-bg-tertiary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #8e718e 30.62%, #836383 90.72% )"
+      "dark": "linear-gradient(\n    135deg,\n    #8e718e 30.62%,\n    #836383 90.72%\n  )"
     },
     "--background-modifier-border-alt": { "light": null, "dark": "#9c7b9c" }
   },
-  ".ulu-shark-d .modal:not(.is-mobile)": {
-    "border": { "light": null, "dark": "1px solid #3f3a45 !important" }
+  ".ulu-shark-d\n  .mod-root\n  .workspace-tabs\n  .workspace-leaf:not(.is-mobile)": {
+    "border": { "light": null, "dark": "1px solid #3f3a45" }
   },
-  ".ulu-shark-d.ulu-prop-car": {
-    ".markdown-source-view.is-live-preview.show-properties .metadata-container { background": {
-      "light": null,
-      "dark": "var(--gradient-bg-tertiary)"
-    },
+  ".ulu-shark-d .modal:not(.is-mobile)": {
+    "border": { "light": null, "dark": "1px solid #3f3a45" }
+  },
+  ".ulu-shark-d.ulu-prop-card\n  .markdown-source-view.is-live-preview.show-properties\n  .metadata-container": {
+    "background": { "light": null, "dark": "var(--gradient-bg-tertiary)" },
     "border": {
       "light": null,
       "dark": "1px solid var(--background-modifier-border-alt)"
@@ -1568,16 +1716,13 @@
     "--color-base-100": { "light": null, "dark": "#93a1a1" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #08404e 1.62%, #073642 50.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #08404e 1.62%,\n    #073642 50.72%\n  )"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #003947 1.62%, #002b36 50.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #003947 1.62%,\n    #002b36 50.72%\n  )"
     },
-    "--background-modifier-border-alt": {
-      "light": null,
-      "dark": "#375662 !important"
-    }
+    "--background-modifier-border-alt": { "light": null, "dark": "#375662" }
   },
   ".ulu-red-d": {
     "--accent-h": { "light": null, "dark": "75" },
@@ -1619,16 +1764,13 @@
     "--color-base-100": { "light": null, "dark": "#dacdcd" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #221b1b 1.62%, #171212 50.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #221b1b 1.62%,\n    #171212 50.72%\n  )"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #191515 1.62%, #110e0e 50.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #191515 1.62%,\n    #110e0e 50.72%\n  )"
     },
-    "--background-modifier-border-alt": {
-      "light": null,
-      "dark": "#4e3434 !important"
-    }
+    "--background-modifier-border-alt": { "light": null, "dark": "#4e3434" }
   },
   ".ulu-green-d": {
     "color-scheme": { "light": null, "dark": "dark" },
@@ -1673,16 +1815,13 @@
     "--color-base-100": { "light": null, "dark": "#dad7cd" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #1d2522 1.62%, #121715 50.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #1d2522 1.62%,\n    #121715 50.72%\n  )"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #151918 1.62%, #0e1110 50.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #151918 1.62%,\n    #0e1110 50.72%\n  )"
     },
-    "--background-modifier-border-alt": {
-      "light": null,
-      "dark": "#344e41 !important"
-    }
+    "--background-modifier-border-alt": { "light": null, "dark": "#344e41" }
   },
   ".ulu-blue-d": {
     "color-scheme": { "light": null, "dark": "dark" },
@@ -1702,16 +1841,13 @@
     "--color-base-100": { "light": null, "dark": "#cdd0da" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #17242c 1.62%, #121517 50.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #17242c 1.62%,\n    #121517 50.72%\n  )"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #0b1114 1.62%, #0e1011 50.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #0b1114 1.62%,\n    #0e1011 50.72%\n  )"
     },
-    "--background-modifier-border-alt": {
-      "light": null,
-      "dark": "#34464e !important"
-    }
+    "--background-modifier-border-alt": { "light": null, "dark": "#34464e" }
   },
   ".ulu-purple-d": {
     "color-scheme": { "light": null, "dark": "dark" },
@@ -1731,16 +1867,13 @@
     "--color-base-100": { "light": null, "dark": "#d5cdda" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #201d25 1.62%, #141217 50.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #201d25 1.62%,\n    #141217 50.72%\n  )"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #221e24 1.62%, #100e11 50.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #221e24 1.62%,\n    #100e11 50.72%\n  )"
     },
-    "--background-modifier-border-alt": {
-      "light": null,
-      "dark": "#44344e !important"
-    }
+    "--background-modifier-border-alt": { "light": null, "dark": "#44344e" }
   },
   ".ulu-gruvbox-dt": {
     "--accent-h": { "light": null, "dark": "75" },
@@ -1782,16 +1915,13 @@
     "--color-base-100": { "light": null, "dark": "#fbf1c7" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #313131 1.62%, #282828 50.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #313131 1.62%,\n    #282828 50.72%\n  )"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #3c3a39 1.62%, #32302f 50.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #3c3a39 1.62%,\n    #32302f 50.72%\n  )"
     },
-    "--background-modifier-border-alt": {
-      "light": null,
-      "dark": "#504945 !important"
-    }
+    "--background-modifier-border-alt": { "light": null, "dark": "#504945" }
   },
   ".ulu-lobstertime-dt": {
     "--accent-h": { "light": null, "dark": "75" },
@@ -1877,16 +2007,13 @@
     "--color-base-100": { "light": null, "dark": "#c6c6c6" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #121212 1.62%, #050505 50.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #121212 1.62%,\n    #050505 50.72%\n  )"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #0f0f0f 1.62%, #000000 50.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #0f0f0f 1.62%,\n    #000000 50.72%\n  )"
     },
-    "--background-modifier-border-alt": {
-      "light": null,
-      "dark": "#1f1f1f !important"
-    }
+    "--background-modifier-border-alt": { "light": null, "dark": "#1f1f1f" }
   },
   ".ulu-blueprint-d": {
     "color-scheme": { "light": null, "dark": "dark" },
@@ -1931,16 +2058,13 @@
     "--color-base-100": { "light": null, "dark": "#fff" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #0074bd 1.62%, #0069aa 50.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #0074bd 1.62%,\n    #0069aa 50.72%\n  )"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #003f7a 1.62%, #00396d 50.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #003f7a 1.62%,\n    #00396d 50.72%\n  )"
     },
-    "--background-modifier-border-alt": {
-      "light": null,
-      "dark": "#fff !important"
-    }
+    "--background-modifier-border-alt": { "light": null, "dark": "#fff" }
   },
   ".ulu-control-d": {
     "color-scheme": { "light": null, "dark": "dark" },
@@ -1983,25 +2107,19 @@
     "--color-base-60": { "light": null, "dark": "#6277cd" },
     "--color-base-70": { "light": null, "dark": "#d3d1eb" },
     "--color-base-100": { "light": null, "dark": "#fff" },
-    "--color-accent": {
-      "light": null,
-      "dark": "hsl(50, 100%, 55%) !important"
-    },
-    "--color-accent-hsl": { "light": null, "dark": "50, 100%, 55% !important" },
-    "--color-accent-rgb": { "light": null, "dark": "255, 217, 25 !important" },
+    "--color-accent": { "light": null, "dark": "hsl(50, 100%, 55%)" },
+    "--color-accent-hsl": { "light": null, "dark": "50, 100%, 55%" },
+    "--color-accent-rgb": { "light": null, "dark": "255, 217, 25" },
     "--text-on-accent": { "light": null, "dark": "var(--color-base-00)" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #2f343c 1.62%, #262a30 50.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #2f343c 1.62%,\n    #262a30 50.72%\n  )"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #262a31 1.62%, #1e2126 50.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #262a31 1.62%,\n    #1e2126 50.72%\n  )"
     },
-    "--background-modifier-border-alt": {
-      "light": null,
-      "dark": "#353841 !important"
-    }
+    "--background-modifier-border-alt": { "light": null, "dark": "#353841" }
   },
   ".ulu-end-d": {
     "color-scheme": { "light": null, "dark": "dark" },
@@ -2023,16 +2141,13 @@
     "--text-on-accent": { "light": null, "dark": "var(--color-base-00)" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #0d0d0d 1.62%, #0a0a0a 50.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #0d0d0d 1.62%,\n    #0a0a0a 50.72%\n  )"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #141414 1.62%, #080808 50.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #141414 1.62%,\n    #080808 50.72%\n  )"
     },
-    "--background-modifier-border-alt": {
-      "light": null,
-      "dark": "#1a1a1a !important"
-    }
+    "--background-modifier-border-alt": { "light": null, "dark": "#1a1a1a" }
   },
   ".ulu-dracula-dt": {
     "--accent-h": { "light": null, "dark": "1" },
@@ -2075,21 +2190,18 @@
     "--color-base-100": { "light": null, "dark": "#fefefa" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #2e303e 1.62%, #282a36 50.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #2e303e 1.62%,\n    #282a36 50.72%\n  )"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #20252c 1.62%, #1a1e24 50.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #20252c 1.62%,\n    #1a1e24 50.72%\n  )"
     },
-    "--background-modifier-border-alt": {
-      "light": null,
-      "dark": "#44475a !important"
-    }
+    "--background-modifier-border-alt": { "light": null, "dark": "#44475a" }
   },
   ".ulu-lyt-dt": {
-    "--accent-h": { "light": null, "dark": "191 !important" },
-    "--accent-s": { "light": null, "dark": "54% !important" },
-    "--accent-l": { "light": null, "dark": "64% !important" },
+    "--accent-h": { "light": null, "dark": "191" },
+    "--accent-s": { "light": null, "dark": "54%" },
+    "--accent-l": { "light": null, "dark": "64%" },
     "--color-red": { "light": null, "dark": "#e63946" },
     "--color-red-hsl": { "light": null, "dark": "355.5, 77.6%, 56.3%" },
     "--color-red-rgb": { "light": null, "dark": "230, 57, 70" },
@@ -2126,16 +2238,13 @@
     "--color-base-100": { "light": null, "dark": "#e8ecf5" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #2a2b32 1.62%, #23242a 50.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #2a2b32 1.62%,\n    #23242a 50.72%\n  )"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #363a45 1.62%, #2d3039 50.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #363a45 1.62%,\n    #2d3039 50.72%\n  )"
     },
-    "--background-modifier-border-alt": {
-      "light": null,
-      "dark": "#6c7184 !important"
-    }
+    "--background-modifier-border-alt": { "light": null, "dark": "#6c7184" }
   },
   ".ulu-lord-d": {
     "color-scheme": { "light": null, "dark": "dark" },
@@ -2178,25 +2287,19 @@
     "--color-base-60": { "light": null, "dark": "#b7e4c7" },
     "--color-base-70": { "light": null, "dark": "#d8f3dc" },
     "--color-base-100": { "light": null, "dark": "#fff" },
-    "--color-accent": {
-      "light": null,
-      "dark": "hsl(75, 100%, 60%) !important"
-    },
-    "--color-accent-hsl": { "light": null, "dark": "75, 100%, 60% !important" },
-    "--color-accent-rgb": { "light": null, "dark": "204, 255, 51 !important" },
+    "--color-accent": { "light": null, "dark": "hsl(75, 100%, 60%)" },
+    "--color-accent-hsl": { "light": null, "dark": "75, 100%, 60%" },
+    "--color-accent-rgb": { "light": null, "dark": "204, 255, 51" },
     "--text-on-accent": { "light": null, "dark": "var(--color-base-00)" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #0b281e 1.62%, #081c15 50.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #0b281e 1.62%,\n    #081c15 50.72%\n  )"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #1f4d39 1.62%, #1b4332 50.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #1f4d39 1.62%,\n    #1b4332 50.72%\n  )"
     },
-    "--background-modifier-border-alt": {
-      "light": null,
-      "dark": "#40916c !important"
-    }
+    "--background-modifier-border-alt": { "light": null, "dark": "#40916c" }
   },
   ".ulu-gradient-d": {
     "color-scheme": { "light": null, "dark": "dark" },
@@ -2214,35 +2317,26 @@
     "--color-base-60": { "light": null, "dark": "#6277cd" },
     "--color-base-70": { "light": null, "dark": "#d3d1eb" },
     "--color-base-100": { "light": null, "dark": "#fff" },
-    "--color-accent": {
-      "light": null,
-      "dark": "hsl(50, 100%, 55%) !important"
-    },
-    "--color-accent-hsl": { "light": null, "dark": "50, 100%, 55% !important" },
-    "--color-accent-rgb": { "light": null, "dark": "255, 217, 25 !important" },
+    "--color-accent": { "light": null, "dark": "hsl(50, 100%, 55%)" },
+    "--color-accent-hsl": { "light": null, "dark": "50, 100%, 55%" },
+    "--color-accent-rgb": { "light": null, "dark": "255, 217, 25" },
     "--text-on-accent": { "light": null, "dark": "var(--color-base-00)" },
     "--background-primary": {
       "light": null,
-      "dark": "linear-gradient( 0deg, hsl(244, 41%, 8%) 0%, hsl(233, 39%, 12%) 50%, hsl(230, 40%, 14%) 100% )"
+      "dark": "linear-gradient(\n    0deg,\n    hsl(244, 41%, 8%) 0%,\n    hsl(233, 39%, 12%) 50%,\n    hsl(230, 40%, 14%) 100%\n  )"
     },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #090909 20.62%, #000000 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #090909 20.62%,\n    #000000 90.72%\n  )"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #1e5e6c 20.62%, #601e6c 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #1e5e6c 20.62%,\n    #601e6c 90.72%\n  )"
     },
-    "--background-modifier-border-alt": {
-      "light": null,
-      "dark": "#40916c !important"
-    }
+    "--background-modifier-border-alt": { "light": null, "dark": "#40916c" }
   },
   ".ulu-gradient-d .modal:not(.is-mobile)": {
-    "background": {
-      "light": null,
-      "dark": "var(--gradient-bg-secondary) !important"
-    }
+    "background": { "light": null, "dark": "var(--gradient-bg-secondary)" }
   },
   ".ulu-amoled-dt": {
     "--color-base-00": { "light": null, "dark": "#0b0b0b" },
@@ -2258,27 +2352,24 @@
     "--color-base-100": { "light": null, "dark": "#fff" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #060606 20.62%, #000 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #060606 20.62%,\n    #000 90.72%\n  )"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #030303 20.62%, #000 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #030303 20.62%,\n    #000 90.72%\n  )"
     },
-    "--background-modifier-border-alt": {
-      "light": null,
-      "dark": "#131313 !important"
-    }
+    "--background-modifier-border-alt": { "light": null, "dark": "#131313" }
   },
   ".ulu-accent-bg-d.ulu-red": {
     "--color-base-00": { "light": null, "dark": "#050404" },
     "--color-base-20": { "light": null, "dark": "#130f0f" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #262626 20.62%, #050404 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #262626 20.62%,\n    #050404 90.72%\n  )"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #2b2b2b 20.62%, #130f0f 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #2b2b2b 20.62%,\n    #130f0f 90.72%\n  )"
     }
   },
   ".ulu-accent-bg-d.ulu-green": {
@@ -2286,11 +2377,11 @@
     "--color-base-20": { "light": null, "dark": "#101110" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #262626 20.62%, #050505 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #262626 20.62%,\n    #050505 90.72%\n  )"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #2b2b2b 20.62%, #101110 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #2b2b2b 20.62%,\n    #101110 90.72%\n  )"
     }
   },
   ".ulu-accent-bg-d.ulu-orange": {
@@ -2298,11 +2389,11 @@
     "--color-base-20": { "light": null, "dark": "#110f0d" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #262626 20.62%, #050404 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #262626 20.62%,\n    #050404 90.72%\n  )"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #2b2b2b 20.62%, #110f0d 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #2b2b2b 20.62%,\n    #110f0d 90.72%\n  )"
     }
   },
   ".ulu-accent-bg-d.ulu-yellow": {
@@ -2310,11 +2401,11 @@
     "--color-base-20": { "light": null, "dark": "#13110f" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #262626 20.62%, #050404 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #262626 20.62%,\n    #050404 90.72%\n  )"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #2b2b2b 20.62%, #13110f 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #2b2b2b 20.62%,\n    #13110f 90.72%\n  )"
     }
   },
   ".ulu-accent-bg-d.ulu-cyan": {
@@ -2322,11 +2413,11 @@
     "--color-base-20": { "light": null, "dark": "#0f1111" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #262626 20.62%, #060606 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #262626 20.62%,\n    #060606 90.72%\n  )"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #2b2b2b 20.62%, #0f1111 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #2b2b2b 20.62%,\n    #0f1111 90.72%\n  )"
     }
   },
   ".ulu-accent-bg-d.ulu-blue": {
@@ -2334,11 +2425,11 @@
     "--color-base-20": { "light": null, "dark": "#0c0f18" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #262626 20.62%, #040508 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #262626 20.62%,\n    #040508 90.72%\n  )"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #2b2b2b 20.62%, #0c0f18 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #2b2b2b 20.62%,\n    #0c0f18 90.72%\n  )"
     }
   },
   ".ulu-accent-bg-d.ulu-purple": {
@@ -2346,11 +2437,11 @@
     "--color-base-20": { "light": null, "dark": "#111112" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #262626 20.62%, #050505 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #262626 20.62%,\n    #050505 90.72%\n  )"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #2b2b2b 20.62%, #111112 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #2b2b2b 20.62%,\n    #111112 90.72%\n  )"
     }
   },
   ".ulu-accent-bg-d.ulu-pink": {
@@ -2358,11 +2449,11 @@
     "--color-base-20": { "light": null, "dark": "#130e0f" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #262626 20.62%, #060505 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #262626 20.62%,\n    #060505 90.72%\n  )"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #2b2b2b 20.62%, #130e0f 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #2b2b2b 20.62%,\n    #130e0f 90.72%\n  )"
     }
   },
   ".ulu-con-d": {
@@ -2370,11 +2461,11 @@
     "--color-base-20": { "light": null, "dark": "#171717" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #171717 20.62%, #171717 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #171717 20.62%,\n    #171717 90.72%\n  )"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #171717 20.62%, #171717 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #171717 20.62%,\n    #171717 90.72%\n  )"
     }
   },
   ".ulu-super-con-d": {
@@ -2382,11 +2473,11 @@
     "--color-base-20": { "light": null, "dark": "#000" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #000 20.62%, #000 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #000 20.62%,\n    #000 90.72%\n  )"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #000 20.62%, #000 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #000 20.62%,\n    #000 90.72%\n  )"
     }
   },
   ".ulu-custom-d": {
@@ -2398,11 +2489,11 @@
     "--color-base-20": { "light": null, "dark": "#130f0f" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #130f0f 20.62%, #130f0f 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #130f0f 20.62%,\n    #130f0f 90.72%\n  )"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #130f0f 20.62%, #130f0f 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #130f0f 20.62%,\n    #130f0f 90.72%\n  )"
     }
   },
   ".ulu-accent-bg-lowcon-d.ulu-green": {
@@ -2410,11 +2501,11 @@
     "--color-base-20": { "light": null, "dark": "#101110" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #101110 20.62%, #101110 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #101110 20.62%,\n    #101110 90.72%\n  )"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #101110 20.62%, #101110 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #101110 20.62%,\n    #101110 90.72%\n  )"
     }
   },
   ".ulu-accent-bg-lowcon-d.ulu-orange": {
@@ -2422,11 +2513,11 @@
     "--color-base-20": { "light": null, "dark": "#110f0d" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #110f0d 20.62%, #110f0d 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #110f0d 20.62%,\n    #110f0d 90.72%\n  )"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #110f0d 20.62%, #110f0d 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #110f0d 20.62%,\n    #110f0d 90.72%\n  )"
     }
   },
   ".ulu-accent-bg-lowcon-d.ulu-yellow": {
@@ -2434,11 +2525,11 @@
     "--color-base-20": { "light": null, "dark": "#13110f" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #13110f 20.62%, #13110f 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #13110f 20.62%,\n    #13110f 90.72%\n  )"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #13110f 20.62%, #13110f 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #13110f 20.62%,\n    #13110f 90.72%\n  )"
     }
   },
   ".ulu-accent-bg-lowcon-d.ulu-cyan": {
@@ -2446,11 +2537,11 @@
     "--color-base-20": { "light": null, "dark": "#0f1111" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #0f1111 20.62%, #0f1111 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #0f1111 20.62%,\n    #0f1111 90.72%\n  )"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #0f1111 20.62%, #0f1111 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #0f1111 20.62%,\n    #0f1111 90.72%\n  )"
     }
   },
   ".ulu-cono-accent-bg-d.ulu-blue": {
@@ -2458,11 +2549,11 @@
     "--color-base-20": { "light": null, "dark": "#0c0f18" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #0c0f18 20.62%, #0c0f18 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #0c0f18 20.62%,\n    #0c0f18 90.72%\n  )"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #0c0f18 20.62%, #0c0f18 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #0c0f18 20.62%,\n    #0c0f18 90.72%\n  )"
     }
   },
   ".ulu-accent-bg-lowcon-d.ulu-purple": {
@@ -2470,11 +2561,11 @@
     "--color-base-20": { "light": null, "dark": "#111112" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #111112 20.62%, #111112 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #111112 20.62%,\n    #111112 90.72%\n  )"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #111112 20.62%, #111112 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #111112 20.62%,\n    #111112 90.72%\n  )"
     }
   },
   ".ul.ulu-con-accent-bg-d.ulu-pink": {
@@ -2482,12 +2573,66 @@
     "--color-base-20": { "light": null, "dark": "#130e0f" },
     "--gradient-bg-primary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #130e0f 20.62%, #130e0f 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #130e0f 20.62%,\n    #130e0f 90.72%\n  )"
     },
     "--gradient-bg-secondary": {
       "light": null,
-      "dark": "linear-gradient( 135deg, #130e0f 20.62%, #130e0f 90.72% ) !important"
+      "dark": "linear-gradient(\n    135deg,\n    #130e0f 20.62%,\n    #130e0f 90.72%\n  )"
     }
+  },
+  ".ulu-canvas-fancycolor10\n  .canvas-node.is-themed.mod-canvas-color-1\n  .canvas-node-content\n  p": {
+    "color": { "light": null, "dark": "white" }
+  },
+  ".ulu-canvas-fancycolor11\n  .canvas-node.is-themed.mod-canvas-color-2\n  .canvas-node-content\n  p": {
+    "color": { "light": null, "dark": "white" }
+  },
+  ".ulu-canvas-fancycolor12\n  .canvas-node.is-themed.mod-canvas-color-3\n  .canvas-node-content\n  p": {
+    "color": { "light": null, "dark": "white" }
+  },
+  ".ulu-canvas-fancycolor13\n  .canvas-node.is-themed.mod-canvas-color-4\n  .canvas-node-content\n  p": {
+    "color": { "light": null, "dark": "white" }
+  },
+  ".ulu-canvas-fancycolor14\n  .canvas-node.is-themed.mod-canvas-color-5\n  .canvas-node-content\n  p": {
+    "color": { "light": null, "dark": "white" }
+  },
+  ".ulu-canvas-fancycolor15\n  .canvas-node.is-themed.mod-canvas-color-6\n  .canvas-node-content\n  p": {
+    "color": { "light": null, "dark": "white" }
+  },
+  ".ulu-gummy-canvas1\n  .canvas-node.is-themed.mod-canvas-color-1\n  .canvas-node-content\n  p": {
+    "color": { "light": null, "dark": "white" }
+  },
+  ".ulu-gummy-canvas2\n  .canvas-node.is-themed.mod-canvas-color-2\n  .canvas-node-content\n  p": {
+    "color": { "light": null, "dark": "white" }
+  },
+  ".ulu-gummy-canvas3\n  .canvas-node.is-themed.mod-canvas-color-3\n  .canvas-node-content\n  p": {
+    "color": { "light": null, "dark": "white" }
+  },
+  ".ulu-gummy-canvas4\n  .canvas-node.is-themed.mod-canvas-color-4\n  .canvas-node-content\n  p": {
+    "color": { "light": null, "dark": "white" }
+  },
+  ".ulu-gummy-canvas5\n  .canvas-node.is-themed.mod-canvas-color-5\n  .canvas-node-content\n  p": {
+    "color": { "light": null, "dark": "white" }
+  },
+  ".ulu-gummy-canvas6\n  .canvas-node.is-themed.mod-canvas-color-6\n  .canvas-node-content\n  p": {
+    "color": { "light": null, "dark": "white" }
+  },
+  ".ulu-gradient-canvas1\n  \n  .canvas-node.is-themed.mod-canvas-color-1\n  .canvas-node-content\n  p": {
+    "color": { "light": null, "dark": "var(--text-on-accent)" }
+  },
+  ".ulu-gradient-canvas2\n  \n  .canvas-node.is-themed.mod-canvas-color-2\n  .canvas-node-content\n  p": {
+    "color": { "light": null, "dark": "var(--text-on-accent)" }
+  },
+  ".ulu-gradient-canvas3\n  \n  .canvas-node.is-themed.mod-canvas-color-3\n  .canvas-node-content\n  p": {
+    "color": { "light": null, "dark": "var(--text-on-accent)" }
+  },
+  ".ulu-gradient-canvas4\n  \n  .canvas-node.is-themed.mod-canvas-color-4\n  .canvas-node-content\n  p": {
+    "color": { "light": null, "dark": "var(--text-on-accent)" }
+  },
+  ".ulu-gradient-canvas5\n  \n  .canvas-node.is-themed.mod-canvas-color-5\n  .canvas-node-content\n  p": {
+    "color": { "light": null, "dark": "var(--text-on-accent)" }
+  },
+  ".ulu-gradient-canvas6\n  \n  .canvas-node.is-themed.mod-canvas-color-6\n  .canvas-node-content\n  p": {
+    "color": { "light": null, "dark": "var(--text-on-accent)" }
   },
   ".ulu-prop-card .text-icon-button": {
     "color": { "light": null, "dark": "var(--text-normal)" }
@@ -2505,6 +2650,6 @@
     "color": { "light": null, "dark": "var(--text-normal)" }
   },
   ".workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle": {
-    "border": { "light": null, "dark": "0 !important" }
+    "border": { "light": null, "dark": "0" }
   }
 }

@@ -11,20 +11,20 @@
       "dark": null
     },
     "--color-accent-1": {
-      "light": "hsl( calc(var(--accent-h) - 1), calc(var(--accent-s) * 1.01), calc(var(--accent-l) * 1.075) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 1),\n    calc(var(--accent-s) * 1.01),\n    calc(var(--accent-l) * 1.075)\n  )",
       "dark": null
     },
     "--color-accent-2": {
-      "light": "hsl( calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 3),\n    calc(var(--accent-s) * 1.02),\n    calc(var(--accent-l) * 1.15)\n  )",
       "dark": null
     },
     "--background-modifier-box-shadow": { "light": "#000000", "dark": null },
     "--input-shadow": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--input-shadow-hover": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--shadow-s": {
@@ -86,11 +86,11 @@
     "--vicious-indent-8": { "light": "var(--C008)", "dark": null },
     "--vicious-indent-9": { "light": "var(--C009)", "dark": null },
     "--vicious-indent-bg-size": {
-      "light": "calc( var(--vicious-color-count) * var(--vicious-indent-width) ) 1px",
+      "light": "calc(\n      var(--vicious-color-count) * var(--vicious-indent-width)\n    )\n    1px",
       "dark": null
     },
     "--vicious-indent-colorful-bg": {
-      "light": "linear-gradient( to right, var(--vicious-indent-1) 0 var(--vicious-line-width), transparent var(--vicious-line-width) calc(var(--vicious-indent-width) * 1), var(--vicious-indent-2) calc(var(--vicious-indent-width) * 1) calc(var(--vicious-indent-width) * 1 + var(--vicious-line-width)), transparent calc(var(--vicious-indent-width) * 1 + var(--vicious-line-width)) calc(var(--vicious-indent-width) * 2), var(--vicious-indent-3) calc(var(--vicious-indent-width) * 2) calc(var(--vicious-indent-width) * 2 + var(--vicious-line-width)), transparent calc(var(--vicious-indent-width) * 2 + var(--vicious-line-width)) calc(var(--vicious-indent-width) * 3), var(--vicious-indent-4) calc(var(--vicious-indent-width) * 3) calc(var(--vicious-indent-width) * 3 + var(--vicious-line-width)), transparent calc(var(--vicious-indent-width) * 3 + var(--vicious-line-width)) calc(var(--vicious-indent-width) * 4), var(--vicious-indent-5) calc(var(--vicious-indent-width) * 4) calc(var(--vicious-indent-width) * 4 + var(--vicious-line-width)), transparent calc(var(--vicious-indent-width) * 4 + var(--vicious-line-width)) calc(var(--vicious-indent-width) * 5), var(--vicious-indent-6) calc(var(--vicious-indent-width) * 5) calc(var(--vicious-indent-width) * 5 + var(--vicious-line-width)), transparent calc(var(--vicious-indent-width) * 5 + var(--vicious-line-width)) calc(var(--vicious-indent-width) * 6), var(--vicious-indent-7) calc(var(--vicious-indent-width) * 6) calc(var(--vicious-indent-width) * 6 + var(--vicious-line-width)), transparent calc(var(--vicious-indent-width) * 6 + var(--vicious-line-width)) calc(var(--vicious-indent-width) * 7), var(--vicious-indent-8) calc(var(--vicious-indent-width) * 7) calc(var(--vicious-indent-width) * 7 + var(--vicious-line-width)), transparent calc(var(--vicious-indent-width) * 7 + var(--vicious-line-width)) calc(var(--vicious-indent-width) * 8), var(--vicious-indent-9) calc(var(--vicious-indent-width) * 8) calc(var(--vicious-indent-width) * 8 + var(--vicious-line-width)), transparent calc(var(--vicious-indent-width) * 8 + var(--vicious-line-width)) calc(var(--vicious-indent-width) * 9), var(--vicious-indent-10) calc(var(--vicious-indent-width) * 9) calc(var(--vicious-indent-width) * 9 + var(--vicious-line-width)), transparent calc(var(--vicious-indent-width) * 9 + var(--vicious-line-width)) calc(var(--vicious-indent-width) * 10), var(--vicious-indent-11) calc(var(--vicious-indent-width) * 10) calc(var(--vicious-indent-width) * 10 + var(--vicious-line-width)), transparent calc(var(--vicious-indent-width) * 7 + var(--vicious-line-width)) calc(var(--vicious-indent-width) * 8) )",
+      "light": "linear-gradient(\n    to right,\n    var(--vicious-indent-1) 0 var(--vicious-line-width),\n    transparent var(--vicious-line-width) calc(var(--vicious-indent-width) * 1),\n    var(--vicious-indent-2) calc(var(--vicious-indent-width) * 1)\n      calc(var(--vicious-indent-width) * 1 + var(--vicious-line-width)),\n    transparent\n      calc(var(--vicious-indent-width) * 1 + var(--vicious-line-width))\n      calc(var(--vicious-indent-width) * 2),\n    var(--vicious-indent-3) calc(var(--vicious-indent-width) * 2)\n      calc(var(--vicious-indent-width) * 2 + var(--vicious-line-width)),\n    transparent\n      calc(var(--vicious-indent-width) * 2 + var(--vicious-line-width))\n      calc(var(--vicious-indent-width) * 3),\n    var(--vicious-indent-4) calc(var(--vicious-indent-width) * 3)\n      calc(var(--vicious-indent-width) * 3 + var(--vicious-line-width)),\n    transparent\n      calc(var(--vicious-indent-width) * 3 + var(--vicious-line-width))\n      calc(var(--vicious-indent-width) * 4),\n    var(--vicious-indent-5) calc(var(--vicious-indent-width) * 4)\n      calc(var(--vicious-indent-width) * 4 + var(--vicious-line-width)),\n    transparent\n      calc(var(--vicious-indent-width) * 4 + var(--vicious-line-width))\n      calc(var(--vicious-indent-width) * 5),\n    var(--vicious-indent-6) calc(var(--vicious-indent-width) * 5)\n      calc(var(--vicious-indent-width) * 5 + var(--vicious-line-width)),\n    transparent\n      calc(var(--vicious-indent-width) * 5 + var(--vicious-line-width))\n      calc(var(--vicious-indent-width) * 6),\n    var(--vicious-indent-7) calc(var(--vicious-indent-width) * 6)\n      calc(var(--vicious-indent-width) * 6 + var(--vicious-line-width)),\n    transparent\n      calc(var(--vicious-indent-width) * 6 + var(--vicious-line-width))\n      calc(var(--vicious-indent-width) * 7),\n    var(--vicious-indent-8) calc(var(--vicious-indent-width) * 7)\n      calc(var(--vicious-indent-width) * 7 + var(--vicious-line-width)),\n    transparent\n      calc(var(--vicious-indent-width) * 7 + var(--vicious-line-width))\n      calc(var(--vicious-indent-width) * 8),\n    var(--vicious-indent-9) calc(var(--vicious-indent-width) * 8)\n      calc(var(--vicious-indent-width) * 8 + var(--vicious-line-width)),\n    transparent\n      calc(var(--vicious-indent-width) * 8 + var(--vicious-line-width))\n      calc(var(--vicious-indent-width) * 9),\n    var(--vicious-indent-10) calc(var(--vicious-indent-width) * 9)\n      calc(var(--vicious-indent-width) * 9 + var(--vicious-line-width)),\n    transparent\n      calc(var(--vicious-indent-width) * 9 + var(--vicious-line-width))\n      calc(var(--vicious-indent-width) * 10),\n    var(--vicious-indent-11) calc(var(--vicious-indent-width) * 10)\n      calc(var(--vicious-indent-width) * 10 + var(--vicious-line-width)),\n    transparent\n      calc(var(--vicious-indent-width) * 7 + var(--vicious-line-width))\n      calc(var(--vicious-indent-width) * 8)\n  )",
       "dark": null
     },
     "--vicious-indent-font-family": {
@@ -159,10 +159,7 @@
     "--metadata-label-text-color": { "light": "var(--800)", "dark": null },
     "--checklist-textColor": { "light": "var(--800)", "dark": null },
     "--collapse-icon-color-collapsed": { "light": "var(--800)", "dark": null },
-    "--checklist-textColor1": {
-      "light": "var(--800) !important",
-      "dark": null
-    },
+    "--checklist-textColor1": { "light": "var(--800)", "dark": null },
     "--mono-rgb-100": { "light": "var(--800-RGB)", "dark": null },
     "--callout-default": { "light": "var(--800-RGB)", "dark": null },
     "--callout-error": { "light": "var(--C001-RGB)", "dark": null },
@@ -220,11 +217,26 @@
     "background-color": { "light": "#262626", "dark": null },
     "box-shadow": { "light": "inset 0px 0px 0px 1px #363636", "dark": null }
   },
+  "body.vibrant-folders\n  .nav-files-container\n  > div\n  > .nav-folder\n  .nav-folder-children": {
+    "border-color": { "light": "#08090e", "dark": "#fbfcfc" }
+  },
   ".nav-folder.mod-root .nav-folder.nav-folder .nav-folder": {
     "--colorful": "none"
   },
+  ".nav-folder.mod-root\n  > .nav-folder-children\n  > .nav-folder\n  .nav-folder-title": {
+    "color": { "light": "#292a2f", "dark": "rgba(var(--text-color))" }
+  },
+  ".nav-folder.mod-root\n  > .nav-folder-children\n  > .nav-folder\n  .nav-file-title": {
+    "color": { "light": "#292a2f", "dark": "rgba(var(--text-color))" }
+  },
   ".nav-folder.mod-root .collapse-icon svg.svg-icon": {
     "color": { "light": "#292a2f", "dark": "rgba(var(--text-color))" }
+  },
+  ".workspace-leaf-content[data-type=\"file-explorer\"]\n  .tree-item-self\n  .tree-item-icon": {
+    "color": { "light": "#292a2f", "dark": "rgba(var(--text-color))" }
+  },
+  ".tree-item-children\n  .nav-folder-children\n  > .nav-file\n  .nav-file-title[data-path]::before": {
+    "background-color": { "light": "#292a2f", "dark": "#08090e" }
   },
   ".nav-folder.mod-root > .nav-folder-children > .nav-folder": {
     "transition": "background-color 0.4s",
@@ -240,11 +252,20 @@
     "border-radius": "var(--radius-m)",
     "color": { "light": "#292a2f", "dark": "#08090e" }
   },
+  ".workspace-leaf-content[data-type=\"bookmarks\"]\n  .tree-item-self\n  .tree-item-icon": {
+    "color": { "light": "#292a2f", "dark": "#08090e" }
+  },
   ".dropdown": {
     "background-image": {
       "light": null,
-      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+      "dark": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
     }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  input": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  textarea": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -253,7 +274,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))\n    drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {
@@ -380,5 +401,8 @@
   },
   ".cm-s-obsidian pre.HyperMD-codeblock .cm-def": {
     "color": { "light": null, "dark": "#ab8beb" }
+  },
+  ".nav-folder.mod-root\n  > .nav-folder-children\n  > .nav-file\n  > .tree-item-self.is-clickable.nav-file-title\n  > .nav-file-tag": {
+    "color": { "light": null, "dark": "var(--text-muted)" }
   }
 }

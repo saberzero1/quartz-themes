@@ -41,11 +41,11 @@
       "dark": null
     },
     "--color-accent-1": {
-      "light": "hsl( calc(var(--accent-h) - 1), calc(var(--accent-s) * 1.01), calc(var(--accent-l) * 1.075) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 1),\n    calc(var(--accent-s) * 1.01),\n    calc(var(--accent-l) * 1.075)\n  )",
       "dark": null
     },
     "--color-accent-2": {
-      "light": "hsl( calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 3),\n    calc(var(--accent-s) * 1.02),\n    calc(var(--accent-l) * 1.15)\n  )",
       "dark": null
     },
     "--background-modifier-box-shadow": { "light": "#000000", "dark": null },
@@ -66,6 +66,163 @@
       "light": "calc(var(--accent-h) - 60)",
       "dark": null
     },
+    "--accent-plus-120": {
+      "light": "calc(var(--accent-h) + 120)",
+      "dark": null
+    },
+    "--accent-plus-60": { "light": "calc(var(--accent-h) + 60)", "dark": null },
+    "--accent-s-pastel": { "light": "min(var(--accent-s), 50%)", "dark": null },
+    "--background-modifier-border": {
+      "light": "var(--hr-color)",
+      "dark": null
+    },
+    "--bg-l-modifier": { "light": "0%", "dark": null },
+    "--bg-l-modifier-inverted": {
+      "light": "calc(var(--bg-l-modifier) * -1)",
+      "dark": null
+    },
+    "--bg-s-modifier": {
+      "light": "calc(var(--bg-l-modifier) * 0.5)",
+      "dark": null
+    },
+    "--blockquote-border-color": {
+      "light": "var(--interactive-accent)",
+      "dark": null
+    },
+    "--checkbox-color": { "light": "var(--interactive-accent)", "dark": null },
+    "--checkbox-color-hover": {
+      "light": "var(--interactive-accent-hover)",
+      "dark": null
+    },
+    "--divider-color": { "light": "var(--hr-color)", "dark": null },
+    "--divider-color-hover": {
+      "light": "hsl(\n    var(--accent-minus-60),\n    var(--accent-s),\n    var(--accent-l-readable)\n  )",
+      "dark": null
+    },
+    "--input-shadow": { "light": "none", "dark": null },
+    "--input-shadow-hover": { "light": "none", "dark": null },
+    "--interactive-accent": {
+      "light": "hsl(\n    var(--accent-plus-60),\n    var(--accent-s-pastel),\n    var(--accent-l-closer)\n  )",
+      "dark": null
+    },
+    "--interactive-accent-hover": {
+      "light": "hsl(\n    calc(var(--accent-plus-60) - 3),\n    calc(var(--accent-s-pastel) * 1.02),\n    calc(var(--accent-l-closer) * 1.15)\n  )",
+      "dark": null
+    },
+    "--modal-border-color": { "light": "var(--divider-color)", "dark": null },
+    "--nav-item-background-selected": {
+      "light": "hsla(\n    var(--accent-minus-60),\n    var(--accent-s),\n    var(--accent-l-closer),\n    0.17\n  )",
+      "dark": null
+    },
+    "--nav-item-border-color": {
+      "light": "var(--divider-color)",
+      "dark": null
+    },
+    "--pdf-shadow": { "light": "none", "dark": null },
+    "--pdf-thumbnail-shadow": { "light": "none", "dark": null },
+    "--sidebar-left-border-color": {
+      "light": "var(--divider-color)",
+      "dark": null
+    },
+    "--status-bar-border-color": {
+      "light": "var(--divider-color)",
+      "dark": null
+    },
+    "--swatch-shadow": { "light": "none", "dark": null },
+    "--tab-stacked-shadow": { "light": "none", "dark": null },
+    "--table-add-button-border-color": {
+      "light": "var(--text-muted)",
+      "dark": null
+    },
+    "--table-border-color": { "light": "var(--text-muted)", "dark": null },
+    "--table-header-border-color": {
+      "light": "var(--text-muted)",
+      "dark": null
+    },
+    "--table-selection": {
+      "light": "hsla(\n    var(--accent-minus-60),\n    var(--accent-s),\n    var(--accent-l-closer),\n    0.2\n  )",
+      "dark": null
+    },
+    "--table-selection-border-color": {
+      "light": "hsl(\n    var(--accent-minus-60),\n    var(--accent-s),\n    var(--accent-l-readable)\n  )",
+      "dark": null
+    },
+    "--tag-background": {
+      "light": "hsla(\n    var(--accent-minus-60),\n    var(--accent-s),\n    var(--accent-l-closer),\n    0.25\n  )",
+      "dark": null
+    },
+    "--tag-background-hover": {
+      "light": "hsla(\n    var(--accent-minus-60),\n    var(--accent-s),\n    var(--accent-l-closer),\n    0.35\n  )",
+      "dark": null
+    },
+    "--text-accent": {
+      "light": "hsl(\n    var(--accent-minus-60),\n    var(--accent-s),\n    var(--accent-l-readable)\n  )",
+      "dark": null
+    },
+    "--text-highlight-bg": {
+      "light": "hsla(\n    var(--accent-plus-60),\n    var(--accent-s-pastel),\n    var(--accent-l-closer),\n    0.6\n  )",
+      "dark": null
+    },
+    "--text-selection": {
+      "light": "hsla(\n    var(--accent-minus-60),\n    var(--accent-s),\n    var(--accent-l-closer),\n    0.25\n  )",
+      "dark": null
+    },
+    "--titlebar-border-color": {
+      "light": "var(--divider-color)",
+      "dark": null
+    },
+    "--accent-l-readable": {
+      "light": "min(var(--accent-l), 35%)",
+      "dark": null
+    },
+    "--accent-l-closer": { "light": "max(var(--accent-l), 60%)", "dark": null },
+    "--background-primary": {
+      "light": "hsl(\n    var(--accent-h),\n    calc(var(--bg-s-modifier) + 35%),\n    calc(var(--bg-l-modifier) + 75%)\n  )",
+      "dark": null
+    },
+    "--background-primary-alt": {
+      "light": "hsl(\n    var(--accent-h),\n    calc(var(--bg-s-modifier) + 35%),\n    calc(var(--bg-l-modifier) + 70%)\n  )",
+      "dark": null
+    },
+    "--background-secondary": {
+      "light": "hsl(\n    var(--accent-h),\n    calc(var(--bg-s-modifier) + 35%),\n    calc(var(--bg-l-modifier) + 65%)\n  )",
+      "dark": null
+    },
+    "--background-secondary-alt": {
+      "light": "hsl(\n    var(--accent-h),\n    calc(var(--bg-s-modifier) + 35%),\n    calc(var(--bg-l-modifier) + 60%)\n  )",
+      "dark": null
+    },
+    "--background-modifier-hover": {
+      "light": "hsla(\n    var(--accent-h),\n    calc(var(--bg-s-modifier) + 35%),\n    calc(var(--bg-l-modifier) + 50%),\n    0.5\n  )",
+      "dark": null
+    },
+    "--background-modifier-form-field": {
+      "light": "var(--interactive-normal)",
+      "dark": null
+    },
+    "--background-modifier-border-hover": {
+      "light": "hsla(\n    var(--accent-h),\n    calc(var(--bg-s-modifier) + 25%),\n    calc(var(--bg-l-modifier) + 85%)\n  )",
+      "dark": null
+    },
+    "--text-normal": { "light": "hsl(0, 0%, 13%)", "dark": null },
+    "--text-muted": { "light": "hsl(var(--accent-h), 15%, 33%)", "dark": null },
+    "--text-faint": { "light": "hsl(var(--accent-h), 20%, 47%)", "dark": null },
+    "--text-accent-hover": {
+      "light": "hsl(\n    calc(var(--accent-minus-60) - 3),\n    calc(var(--accent-s) * 1.02),\n    calc(var(--accent-l-readable) * 1.15)\n  )",
+      "dark": null
+    },
+    "--interactive-normal": {
+      "light": "hsl(\n    var(--accent-h),\n    calc(var(--bg-s-modifier) + 40%),\n    calc(var(--bg-l-modifier) + 87%)\n  )",
+      "dark": null
+    },
+    "--interactive-hover": {
+      "light": "hsl(\n    var(--accent-h),\n    calc(var(--bg-s-modifier) + 40%),\n    calc(var(--bg-l-modifier) + 90%)\n  )",
+      "dark": null
+    },
+    "--hr-color": {
+      "light": "hsl(\n    var(--accent-h),\n    calc(var(--bg-s-modifier) + 25%),\n    calc(var(--bg-l-modifier) + 90%)\n  )",
+      "dark": null
+    },
     "--canvas-color": { "light": null, "dark": "126, 126, 126" }
   },
   ".notice progress[value]::-webkit-progress-bar": {
@@ -75,8 +232,14 @@
   ".dropdown": {
     "background-image": {
       "light": null,
-      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+      "dark": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
     }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  input": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  textarea": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -85,7 +248,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))\n    drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {

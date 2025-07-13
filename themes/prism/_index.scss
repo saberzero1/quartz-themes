@@ -41,7 +41,7 @@ html[saved-theme="dark"] {
   --color-base-100: #dadada;
   --color-accent-hsl: 258, 88%, 66%;
   --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
-  --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --text-accent: hsl(0, 0%, 41%);
 }
 
 :root[saved-theme="light"],
@@ -275,55 +275,51 @@ body {
   --bold-weight: calc(800 + 200);
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --checkbox-color: hsl(258, 88%, 66%);
-  --checkbox-color-hover: var(--color-grey-tint);
-  --checkbox-border-color: #666666;
-  --code-background: #111;
-  --code-normal: #dadada;
-  --code-function: #e0de71;
-  --code-important: #e9973f;
-  --code-keyword: #fa99cd;
-  --code-property: #53dfdd;
-  --code-punctuation: #b3b3b3;
-  --code-string: #44cf6e;
-  --code-tag: #fb464c;
-  --code-value: #a882ff;
-  --collapse-icon-color: #666666;
+  --checkbox-color: hsl(0, 0%, 41%);
+  --checkbox-color-hover: hsl(0, 0%, 41%);
+  --checkbox-border-color: hsl(2, 48%, 83%);
+  --code-background: hsl(2, 48%, 29%);
+  --code-normal: hsl(2, 48%, 93%);
+  --code-function: hsl(43, 57%, 54%);
+  --code-important: hsl(26, 80%, 63%);
+  --code-keyword: hsl(330, 60%, 74%);
+  --code-property: hsl(195, 64%, 59%);
+  --code-punctuation: hsl(2, 48%, 88%);
+  --code-string: hsl(123, 45%, 55%);
+  --code-tag: hsl(4, 70%, 74%);
+  --code-value: hsl(268, 48%, 75%);
+  --collapse-icon-color: hsl(2, 48%, 83%);
   --cursor-link: pointer;
   --font-weight: 400;
   --graph-line: var(--color-base-35, rgba(251, 70, 76, 0.6));
-  --graph-node-unresolved: #666666;
-  --graph-node-tag: #44cf6e;
+  --graph-node-unresolved: hsl(2, 48%, 83%);
+  --graph-node-tag: hsl(123, 45%, 55%);
   --h1-color: inherit;
   --h1-font: inherit;
   --hr-color: transparent;
   --hr-thickness: 2px;
-  --icon-color: #b3b3b3;
-  --inline-title-color: #dadada;
+  --icon-color: hsl(2, 48%, 88%);
+  --inline-title-color: hsl(2, 48%, 93%);
   --inline-title-font: inherit;
   --italic-color: inherit;
-  --link-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --link-color-hover: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --link-color: hsl(0, 0%, 41%);
+  --link-color-hover: hsl(0, 0%, 41%);
   --link-weight: var(--link-weight);
-  --link-external-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --link-external-color-hover: hsl(
-    calc(258 - 5),
-    calc(88% * 1.05),
-    calc(66% * 1.29)
-  );
+  --link-external-color: hsl(0, 0%, 41%);
+  --link-external-color-hover: hsl(0, 0%, 41%);
   --link-external-filter: none;
-  --nav-item-background-hover: rgba(255, 255, 255, 0.15);
+  --nav-item-background-hover: hsla(0, 0%, 17%, 90%);
   --nav-item-children-padding-start: 4px;
   --nav-item-children-margin-start: 12px;
-  --search-icon-color: #b3b3b3;
-  --tag-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --tag-color-hover: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --search-icon-color: hsl(2, 48%, 88%);
+  --tag-color: hsl(0, 0%, 41%);
+  --tag-color-hover: hsl(0, 0%, 41%);
   --tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-background: hsla(258, 88%, 66%, 0.1);
-  --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-  --tag-border-color: hsla(258, 88%, 66%, 0.15);
-  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
+  --tag-background: hsla(0, 0%, 67%, 0.1);
+  --tag-background-hover: hsla(0, 0%, 67%, 0.2);
+  --tag-border-color: hsla(0, 0%, 67%, 0.15);
+  --tag-border-color-hover: hsla(0, 0%, 67%, 0.15);
   --tag-weight: inherit;
   --background-primary: #000;
   --background-primary-alt: #111;
@@ -333,8 +329,8 @@ body {
   --text-muted: #b3b3b3;
   --text-faint: #666666;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
-  --text-accent-hover: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
-  --interactive-accent-hsl: 258, 88%, 66%;
+  --text-accent-hover: hsl(0, 0%, 17%);
+  --interactive-accent-hsl: 0, 0%, 67%;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
@@ -343,10 +339,10 @@ body {
     "??", "JetBrains Mono", ui-monospace, SFMono-Regular, "Cascadia Mono",
     "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
     "Consolas", "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "Source Sans 3", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "Source Sans 3", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -370,24 +366,24 @@ body {
     sans-serif;
   line-height: 1.3;
   font-size: 16px;
-  background-color: #000;
-  color: #dadada;
+  background-color: hsl(2, 48%, 19%);
+  color: hsl(2, 48%, 93%);
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
-  caret-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  caret-color: hsl(0, 0%, 41%);
   --h3-line-height: 1.35;
   --tag-border-width: 2px;
   --tag-radius: 4px;
   --p-spacing: 0.5em;
-  --text-accent: var(--color-grey-text);
-  --background-modifier-border: #363636;
-  --background-modifier-border-focus: var(--color-grey-base);
-  --background-modifier-border-hover: var(--color-grey-tint);
+  --text-accent: hsl(0, 0%, 67%);
+  --background-modifier-border: hsl(2, 48%, 8%);
+  --background-modifier-border-focus: hsl(0, 0%, 17%);
+  --background-modifier-border-hover: hsl(0, 0%, 41%);
   --checkbox-marker-color: var(--highlight-text-accent-custom-dt);
-  --checkbox-border-color-hover: var(--color-grey-tint);
-  --code-comment: var(--color-grey-text);
-  --collapse-icon-color-collapsed: #dadada;
+  --checkbox-border-color-hover: hsl(0, 0%, 41%);
+  --code-comment: hsl(0, 0%, 67%);
+  --collapse-icon-color-collapsed: hsl(2, 48%, 93%);
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -595,7 +591,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
 
-  background-color: #000;
+  background-color: hsl(2, 48%, 19%);
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -624,13 +620,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: #000;
+      background-color: hsl(2, 48%, 19%);
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: #000;
+        background-color: hsl(2, 48%, 19%);
 
         background-color: var(--background-primary);
       }
@@ -639,7 +635,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: #000;
+          background-color: hsl(2, 48%, 19%);
 
           background-color: var(--background-secondary);
 
@@ -827,7 +823,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 800;
-    color: #dadada;
+    color: hsl(2, 48%, 93%);
     font-family: inherit;
     font-size: 2.2em;
     font-style: normal;
@@ -847,7 +843,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 800;
-    color: #dadada;
+    color: hsl(2, 48%, 93%);
     font-family: inherit;
     font-size: 2em;
     font-style: normal;
@@ -865,7 +861,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 800;
-    color: #dadada;
+    color: hsl(2, 48%, 93%);
     font-family: inherit;
     font-size: 1.8em;
     font-style: normal;
@@ -883,7 +879,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 800;
-    color: #dadada;
+    color: hsl(2, 48%, 93%);
     font-family: inherit;
     font-size: 1.6em;
     font-style: normal;
@@ -901,7 +897,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 800;
-    color: #dadada;
+    color: hsl(2, 48%, 93%);
     font-family: inherit;
     font-size: 1.4em;
     font-style: normal;
@@ -919,7 +915,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 800;
-    color: #dadada;
+    color: hsl(2, 48%, 93%);
     font-family: inherit;
     font-size: 1.2em;
     font-style: normal;
@@ -956,11 +952,11 @@ body {
     position: relative;
     padding: 12px 16px;
     min-height: 38px;
-    background-color: #000;
+    background-color: hsl(2, 48%, 19%);
     border-radius: 4px;
     white-space: pre-wrap;
     overflow-x: auto;
-    border: 1px solid #363636;
+    border: 1px solid hsl(2, 48%, 8%);
 
     background-color: var(--code-background);
     white-space: pre;
@@ -1025,17 +1021,25 @@ body {
   }
 
   code {
-    color: #dadada;
+    color: hsl(2, 48%, 93%);
     font-family:
       "??", "JetBrains Mono", ui-monospace, SFMono-Regular, "Cascadia Mono",
       "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
       "Consolas", "Source Code Pro", monospace;
-    background-color: #000;
+    background-color: hsl(2, 48%, 19%);
     border-radius: 4px;
     font-size: 1em;
     padding: 0.15em 0.3em;
     border: 0px solid transparent;
     -webkit-box-decoration-break: clone;
+    padding: 0 4px;
+    font-family:
+      "??", "JetBrains Mono", ui-monospace, SFMono-Regular, "Cascadia Mono",
+      "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
+      "Consolas", "Source Code Pro", monospace;
+    font-size: 1em;
+    border: 1px solid transparent;
+    border-radius: 4px;
 
     background-color: var(--code-background);
     color: var(--code-normal);
@@ -1045,7 +1049,7 @@ body {
     height: auto;
     background-color: transparent;
     box-shadow: none;
-    color: #b3b3b3;
+    color: hsl(2, 48%, 88%);
     font-size: calc(16px * 0.8);
     font-family:
       "??",
@@ -1069,7 +1073,7 @@ body {
     margin: 4px;
 
     &:hover {
-      background-color: rgba(255, 255, 255, 0.15);
+      background-color: hsla(0, 0%, 17%, 90%);
     }
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -1078,14 +1082,14 @@ body {
 
   /* METADATA */
   .content-meta {
-    color: #dadada;
+    color: hsl(2, 48%, 93%);
 
     color: var(--text-normal);
   }
 
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: #666666;
+    color: hsl(2, 48%, 83%);
   }
 
   /* BACKLINKS */
@@ -1094,7 +1098,7 @@ body {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
       --font-weight: 800;
-      color: #dadada;
+      color: hsl(2, 48%, 93%);
       font-family: inherit;
       font-size: 1.8em;
       font-style: normal;
@@ -1105,6 +1109,8 @@ body {
     }
 
     ul li {
+      color: hsl(2, 48%, 93%);
+
       font-weight: 500;
     }
   }
@@ -1121,11 +1127,11 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: #dadada;
+      color: hsl(2, 48%, 93%);
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: #000;
+        background-color: hsl(2, 48%, 19%);
 
         background-color: var(--background-secondary);
 
@@ -1136,7 +1142,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: hsl(258, 88%, 66%);
+        color: var(--highlight-text-accent-custom-dt);
 
         text-overflow: ellipsis;
         position: relative;
@@ -1164,7 +1170,7 @@ body {
           width: 100%;
         }
         &:hover {
-          background-color: rgba(255, 255, 255, 0.15);
+          background-color: hsla(0, 0%, 17%, 90%);
           font-weight: inherit;
           border: 2px solid;
           box-shadow: unset;
@@ -1193,7 +1199,7 @@ body {
         );
         margin-inline-start: var(--nav-item-children-margin-start, 13px);
         margin-bottom: 1px;
-        border-inline-start: 1px solid hsla(2, 48%, 8%, 75%);
+        border-inline-start: 1px solid hsl(0, 0%, 41%);
       }
       ul.explorer-ul li {
         text-overflow: ellipsis;
@@ -1202,7 +1208,7 @@ body {
         a {
           padding: 6px 8px 6px 24px;
           border-radius: 4px;
-          color: #b3b3b3;
+          color: hsl(2, 48%, 88%);
           cursor: pointer;
           display: flex;
           font-size: 16px;
@@ -1256,14 +1262,14 @@ body {
 
   /* TOC */
   .toc {
-    color: #dadada;
+    color: hsl(2, 48%, 93%);
 
     button.toc-header {
       h3 {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
         --font-weight: 800;
-        color: #dadada;
+        color: hsl(2, 48%, 93%);
         font-family: inherit;
         font-size: 1.8em;
         font-style: normal;
@@ -1275,14 +1281,14 @@ body {
         margin-block: 0;
       }
 
-      color: #dadada;
+      color: hsl(2, 48%, 93%);
 
       color: inherit;
     }
     ul.toc-content.overflow {
       li,
       li > a {
-        color: #b3b3b3;
+        color: hsl(2, 48%, 88%);
 
         font-weight: inherit;
 
@@ -1301,7 +1307,7 @@ body {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
       --font-weight: 800;
-      color: #dadada;
+      color: hsl(2, 48%, 93%);
       font-family: inherit;
       font-size: 1.8em;
       font-style: normal;
@@ -1371,10 +1377,10 @@ body {
       color: var(--button-secondary-fg-color);
 
       -webkit-app-region: no-drag;
-      background: #363636;
+      background: hsl(2, 48%, 8%);
       border: 1px solid transparent;
       border-radius: 4px;
-      color: #dadada;
+      color: hsl(2, 48%, 93%);
       font-family: inherit;
       font-size: calc(16px * 0.937);
       outline: none;
@@ -1389,9 +1395,9 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: #000;
+        background-color: hsl(2, 48%, 19%);
 
-        border: 0.5pt solid #363636;
+        border: 0.5pt solid hsl(2, 48%, 8%);
 
         border-radius: 12px;
 
@@ -1408,12 +1414,12 @@ body {
         & > input {
           width: 100%;
           padding-inline-end: 48px;
-          background-color: #000;
+          background-color: hsl(2, 48%, 19%);
           font-size: 16px;
-          border-bottom: 1px solid #363636;
+          border-bottom: 1px solid hsl(2, 48%, 8%);
           height: 40px;
           padding: 0 16px;
-          border: 1px solid #363636;
+          border: 1px solid hsl(2, 48%, 8%);
           border-radius: 4px;
 
           margin-bottom: 0;
@@ -1422,7 +1428,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: #dadada;
+          color: hsl(2, 48%, 93%);
 
           background: transparent;
           margin-bottom: 0;
@@ -1465,15 +1471,15 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: rgba(255, 255, 255, 0.15);
+                background-color: hsla(0, 0%, 17%, 90%);
               }
               & > ul > li > p {
                 background-color: transparent;
 
-                color: #dadada;
+                color: hsl(2, 48%, 93%);
 
                 &.match-tag {
-                  color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+                  color: hsl(0, 0%, 41%);
                 }
               }
             }
@@ -1541,7 +1547,7 @@ body {
 
   /* POPOVER */
   .popover {
-    background-color: #000;
+    background-color: hsl(2, 48%, 19%);
     border: 1px solid transparent;
     border-radius: 8px;
     display: flex;
@@ -1562,7 +1568,7 @@ body {
     & .popover-inner {
       border: 1px solid transparent;
 
-      background-color: #000;
+      background-color: hsl(2, 48%, 19%);
 
       border-radius: 8px;
 

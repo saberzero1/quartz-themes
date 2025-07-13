@@ -41,6 +41,17 @@ html[saved-theme="dark"] {
   --color-base-100: #dadada;
   --color-accent-hsl: 258, 88%, 66%;
   --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --background-primary: #2f3136;
+  --background-primary-alt: #36393f;
+  --background-secondary: #141414;
+  --text-normal: #e6eee7;
+  --text-faint: #999999;
+  --text-muted: #aaaaaa;
+  --text-accent: #319cb4;
+  --text-a: #d669bc;
+  --text-a-hover: #ec9ad9;
+  --text-highlight-bg: #fcf601;
+  --background-modifier-border: #595959;
 }
 
 .darkmode {
@@ -167,8 +178,8 @@ body {
   --bold-weight: calc(600 + 200);
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --checkbox-marker-color: #000;
-  --checkbox-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --checkbox-marker-color: #2f3136;
+  --checkbox-color: #fcf601;
   --checkbox-color-hover: #9e8aff;
   --checkbox-border-color: #999999;
   --checkbox-border-color-hover: #aaaaaa;
@@ -247,10 +258,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -274,7 +285,7 @@ body {
     sans-serif;
   line-height: 1.3;
   font-size: 16px;
-  background-color: #000;
+  background-color: #2f3136;
   color: #e6eee7;
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
@@ -330,7 +341,7 @@ html {
     mix-blend-mode: normal;
     background-color: rgba(158, 158, 158, 0.1);
     padding: 12px 24px 12px 12px;
-    border: 2px solid var(--glow-color-const-blue);
+    border: 2px solid #6c99bb;
 
     background-color: rgba(158, 158, 158, 0.1);
 
@@ -488,7 +499,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
 
-  background-color: #000;
+  background-color: #2f3136;
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -517,13 +528,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: #000;
+      background-color: #2f3136;
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: #000;
+        background-color: #2f3136;
 
         background-color: var(--background-primary);
       }
@@ -532,7 +543,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: #000;
+          background-color: #2f3136;
 
           background-color: var(--background-secondary);
 
@@ -1020,7 +1031,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: #000;
+        background-color: #2f3136;
 
         background-color: var(--background-secondary);
 
@@ -1031,7 +1042,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+        color: #fcf601;
 
         text-overflow: ellipsis;
         position: relative;
@@ -1286,7 +1297,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: #000;
+        background-color: #2f3136;
 
         border: 0.5pt solid var(--color-base-40, rgba(251, 70, 76, 0.6));
 
@@ -1302,7 +1313,7 @@ body {
           width: 100%;
           padding: 24px;
           padding-inline-end: 48px;
-          background-color: #000;
+          background-color: #2f3136;
           font-size: 16px;
           border: none;
           height: 48px;
@@ -1434,14 +1445,14 @@ body {
 
   /* POPOVER */
   .popover {
-    background-color: #000;
+    background-color: #2f3136;
     border-radius: 8px;
     display: flex;
     max-height: 95vh;
     position: absolute;
     z-index: 30;
     box-shadow: 0 20px 40px #000000;
-    pointer-events: auto !important;
+    pointer-events: auto;
     border: 1px solid transparent;
 
     display: block;
@@ -1452,7 +1463,7 @@ body {
     & .popover-inner {
       border: 1px solid transparent;
 
-      background-color: #000;
+      background-color: #2f3136;
 
       border-radius: 8px;
 

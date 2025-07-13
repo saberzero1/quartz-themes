@@ -49,6 +49,14 @@ html[saved-theme="dark"] {
   --text-highlight-bg: #9400a1;
   --text-a-hover: #83a598;
   --text-accent-hover: #da9fff;
+  --icon-color: #9aff9f;
+  --code-background: #333333;
+  --text-a: #c76cff;
+  --text-accent: #c76cff;
+  --background-modifier-border: #009200;
+  --font-monospace: "Anonymous Pro", "Anonymous-Pro-Regular", monospace;
+  --font-text: "Arimo", sans-serif;
+  --inline-title-font: "Helvetica";
 }
 
 :root[saved-theme="light"],
@@ -86,6 +94,21 @@ html[saved-theme="light"] {
   --color-accent-hsl: 258, 88%, 66%;
   --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
   --background-primary: #e7e7e7;
+  --background-secondary: #991e2a;
+  --background-primary-alt: #707070;
+  --text-normal: #000000;
+  --text-faint: #ff8585;
+  --text-a-hover: #8a8e96;
+  --text-accent-hover: #8e929b;
+  --code-background: #ebd9d9;
+  --icon-color: #bebebe;
+  --text-highlight-bg: #5ea9ff;
+  --background-modifier-border: #af303d;
+  --text-a: #ff3e3e;
+  --text-accent: #ff3e3e;
+  --font-monospace: "Anonymous Pro", "Anonymous-Pro-Regular", monospace;
+  --font-text: "Arimo", sans-serif;
+  --inline-title-font: "Helvetica";
 }
 
 /* cyrillic-ext */
@@ -351,10 +374,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;

@@ -279,7 +279,7 @@ body {
   --code-tag: #fb464c;
   --code-value: #a882ff;
   --collapse-icon-color: #2e88b4;
-  --collapse-icon-color-collapsed: var(--color-bossidian-primary);
+  --collapse-icon-color-collapsed: #2faae6;
   --cursor-link: pointer;
   --font-weight: 400;
   --graph-line: var(--color-base-35, rgba(251, 70, 76, 0.6));
@@ -291,13 +291,13 @@ body {
   --hr-color: transparent;
   --hr-thickness: 2px;
   --icon-color: #b3b3b3;
-  --inline-title-color: var(--color-bossidian-primary);
+  --inline-title-color: #2faae6;
   --inline-title-font: inherit;
   --italic-color: inherit;
-  --link-color: var(--color-bossidian-primary);
+  --link-color: #2faae6;
   --link-color-hover: #ff8800;
   --link-weight: var(--link-weight);
-  --link-external-color: var(--color-bossidian-primary);
+  --link-external-color: #2faae6;
   --link-external-color-hover: #ff8800;
   --link-external-filter: none;
   --nav-item-background-hover: rgba(255, 255, 255, 0.15);
@@ -305,8 +305,8 @@ body {
   --nav-item-children-margin-start: 12px;
   --p-spacing: 1rem;
   --search-icon-color: #b3b3b3;
-  --tag-color: var(--color-bossidian-primary);
-  --tag-color-hover: var(--color-bossidian-primary);
+  --tag-color: #2faae6;
+  --tag-color-hover: #2faae6;
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -338,10 +338,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -370,7 +370,7 @@ body {
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
-  caret-color: var(--color-bossidian-primary);
+  caret-color: #2faae6;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -810,7 +810,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 700;
-    color: var(--color-bossidian-primary);
+    color: #2faae6;
     font-family: inherit;
     font-size: 1.802em;
     font-style: normal;
@@ -830,7 +830,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: var(--color-bossidian-primary);
+    color: #2faae6;
     font-family: inherit;
     font-size: 1.602em;
     font-style: normal;
@@ -848,7 +848,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: var(--color-bossidian-primary);
+    color: #2faae6;
     font-family: inherit;
     font-size: 1.424em;
     font-style: normal;
@@ -866,7 +866,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: var(--color-bossidian-primary);
+    color: #2faae6;
     font-family: inherit;
     font-size: 1.266em;
     font-style: normal;
@@ -884,7 +884,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: var(--color-bossidian-primary);
+    color: #2faae6;
     font-family: inherit;
     font-size: 1.125em;
     font-style: normal;
@@ -902,7 +902,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: var(--color-bossidian-primary);
+    color: #2faae6;
     font-family: inherit;
     font-size: 1em;
     font-style: normal;
@@ -1077,7 +1077,7 @@ body {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
       --font-weight: 600;
-      color: var(--color-bossidian-primary);
+      color: #2faae6;
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1106,7 +1106,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: var(--color-bossidian-primary);
+      color: #2faae6;
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1150,7 +1150,7 @@ body {
         }
         &:hover {
           background-color: rgba(255, 255, 255, 0.15);
-          color: var(--color-bossidian-primary);
+          color: #2faae6;
           font-weight: 800;
 
           font-size: 1rem;
@@ -1242,14 +1242,14 @@ body {
 
   /* TOC */
   .toc {
-    color: var(--color-bossidian-primary);
+    color: #2faae6;
 
     button.toc-header {
       h3 {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
         --font-weight: 600;
-        color: var(--color-bossidian-primary);
+        color: #2faae6;
         font-family: inherit;
         font-size: 1.424em;
         font-style: normal;
@@ -1261,7 +1261,7 @@ body {
         margin-block: 0;
       }
 
-      color: var(--color-bossidian-primary);
+      color: #2faae6;
 
       color: inherit;
     }
@@ -1287,7 +1287,7 @@ body {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
       --font-weight: 600;
-      color: var(--color-bossidian-primary);
+      color: #2faae6;
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1458,7 +1458,7 @@ body {
                 color: #bebebe;
 
                 &.match-tag {
-                  color: var(--color-bossidian-primary);
+                  color: #2faae6;
                 }
               }
             }

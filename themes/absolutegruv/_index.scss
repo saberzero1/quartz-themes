@@ -221,6 +221,7 @@ html[saved-theme="dark"] {
   --h1-color: var(--text-normal);
 
   --nav-item-background-hover: var(--background-modifier-hover);
+  --bg_green: #98971a;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -351,10 +352,10 @@ body {
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -383,6 +384,9 @@ body {
   user-select: none;
   -webkit-user-select: none;
   caret-color: #458588;
+  --font-monospace: "Source Code Pro", "Source Code Pro", "Source Code Pro";
+  -webkit-font-smoothing: auto;
+  font-size: 16px;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -1021,7 +1025,7 @@ body {
 
   code {
     color: #ebdbb2;
-    font-family: var(--font-monospace);
+    font-family: "Source Code Pro", "Source Code Pro", "Source Code Pro";
     background-color: #282828;
     border-radius: 4px;
     font-size: 1em;

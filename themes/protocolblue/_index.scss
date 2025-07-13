@@ -31,13 +31,41 @@ html[saved-theme="dark"] {
   --color-base-50: #666666;
   --color-base-70: #b3b3b3;
   --color-base-100: #dadada;
-  --color-accent-hsl: var(--accent-h), 100%, var(--accent-l);
-  --color-accent-2: hsl(
-    calc(var(--accent-h) - 5),
-    calc(100% * 1.05),
-    calc(var(--accent-l) * 1.29)
-  );
+  --color-accent-hsl: 180, 100%, 30%;
+  --color-accent-2: hsl(calc(180 - 5), calc(100% * 1.05), calc(30% * 1.29));
   --color-cyan: #88c0d0;
+  --color-red: #ff5c5c;
+  --color-orange: #ff9035;
+  --color-yellow: #eeec79;
+  --color-green: #37c991;
+  --color-blue: #63c8da;
+  --color-purple: #d469c1;
+  --color-pink: #eb95db;
+  --background-primary: #242424;
+  --background-primary-alt: #242424;
+  --background-secondary: #242424;
+  --background-modifier-border: #393939;
+  --text-normal: #eceff4;
+  --text-faint: #d8dee9;
+  --text-muted: #e5e9f0;
+  --text-accent: #009999;
+  --text-accent-hover: #ffffff;
+  --bold-color: #ffffff;
+  --italic-color: #ffffff;
+  --h1-color: #009999;
+  --text-highlight-bg: #8fbcbb;
+  --tag-color: #8fbcbb;
+  --tag-background: #242424;
+  --tag-background-hover: #242424;
+  --inline-title-color: #8fbcbb;
+  --checkbox-color: #8fbcbb;
+  --checkbox-color-hover: #ffffff;
+  --checkbox-border-color: #ffffff;
+  --checkbox-border-color-hover: #8fbcbb;
+  --code-normal: #88c0d0;
+  --code-background: #202020;
+  --graph-line: #393939;
+  --graph-node-tag: #007991;
 }
 
 .darkmode {
@@ -256,25 +284,25 @@ body {
   --nav-item-background-hover: var(--background-modifier-hover);
   --bold-color: inherit;
   --checkbox-size: 16px;
-  --checkbox-marker-color: #000;
-  --checkbox-color: hsl(var(--accent-h), 100%, var(--accent-l));
+  --checkbox-marker-color: #242424;
+  --checkbox-color: hsl(180, 100%, 30%);
   --checkbox-color-hover: hsl(
-    calc(var(--accent-h) - 3),
+    calc(180 - 3),
     calc(100% * 1.02),
-    calc(var(--accent-l) * 1.15)
+    calc(30% * 1.15)
   );
   --checkbox-border-color: #d8dee9;
   --checkbox-border-color-hover: #e5e9f0;
-  --code-background: var(--dark0);
-  --code-normal: #dadada;
+  --code-background: #242424;
+  --code-normal: #eceff4;
   --code-comment: #d8dee9;
   --code-function: #eeec79;
   --code-important: #ff9035;
-  --code-keyword: #d53984;
+  --code-keyword: #eb95db;
   --code-property: #88c0d0;
   --code-punctuation: #e5e9f0;
   --code-string: #37c991;
-  --code-tag: #e93147;
+  --code-tag: #ff5c5c;
   --code-value: #d469c1;
   --collapse-icon-color: #d8dee9;
   --collapse-icon-color-collapsed: #009999;
@@ -289,7 +317,7 @@ body {
   --hr-color: transparent;
   --hr-thickness: 2px;
   --icon-color: #e5e9f0;
-  --inline-title-color: inherit;
+  --inline-title-color: #009999;
   --inline-title-font: inherit;
   --italic-color: inherit;
   --link-color: #009999;
@@ -305,10 +333,10 @@ body {
   --search-icon-color: #e5e9f0;
   --tag-color: #009999;
   --tag-color-hover: #009999;
-  --tag-background: hsla(var(--accent-h), 100%, var(--accent-l), 0.1);
-  --tag-background-hover: hsla(var(--accent-h), 100%, var(--accent-l), 0.2);
-  --tag-border-color: hsla(var(--accent-h), 100%, var(--accent-l), 0.15);
-  --tag-border-color-hover: hsla(var(--accent-h), 100%, var(--accent-l), 0.15);
+  --tag-background: hsla(180, 100%, 30%, 0.1);
+  --tag-background-hover: hsla(180, 100%, 30%, 0.2);
+  --tag-border-color: hsla(180, 100%, 30%, 0.15);
+  --tag-border-color-hover: hsla(180, 100%, 30%, 0.15);
   --tag-border-width: 0px;
   --tag-weight: inherit;
   --background-primary: #000;
@@ -322,13 +350,9 @@ body {
   --text-muted: #b3b3b3;
   --text-faint: #666666;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
-  --text-accent: hsl(var(--accent-h), 100%, var(--accent-l));
-  --text-accent-hover: hsl(
-    calc(var(--accent-h) - 5),
-    calc(100% * 1.05),
-    calc(var(--accent-l) * 1.29)
-  );
-  --interactive-accent-hsl: var(--accent-h), 100%, var(--accent-l);
+  --text-accent: hsl(180, 100%, 30%);
+  --text-accent-hover: hsl(calc(180 - 5), calc(100% * 1.05), calc(30% * 1.29));
+  --interactive-accent-hsl: 180, 100%, 30%;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
@@ -337,10 +361,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -364,12 +388,17 @@ body {
     sans-serif;
   line-height: 1.3;
   font-size: 16px;
-  background-color: #000;
-  color: #dadada;
+  background-color: #242424;
+  color: #eceff4;
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
   caret-color: #009999;
+  --tag-decoration: none;
+  --tag-decoration-hover: underline;
+  --tag-radius: 0.5em;
+  --bold-weight: 600;
+  --checkbox-radius: 0;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -577,7 +606,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
 
-  background-color: #000;
+  background-color: #242424;
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -606,13 +635,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: #000;
+      background-color: #242424;
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: #000;
+        background-color: #242424;
 
         background-color: var(--background-primary);
       }
@@ -621,7 +650,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: #000;
+          background-color: #242424;
 
           background-color: var(--background-secondary);
 
@@ -809,7 +838,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 700;
-    color: inherit;
+    color: #009999;
     font-family: inherit;
     font-size: 1.802em;
     font-style: normal;
@@ -883,7 +912,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: var(--teal4);
+    color: #007991;
     font-family: inherit;
     font-size: 1.125em;
     font-style: normal;
@@ -901,7 +930,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: inherit;
+    color: #ffffff;
     font-family: inherit;
     font-size: 1em;
     font-style: normal;
@@ -938,7 +967,7 @@ body {
     position: relative;
     padding: 12px 16px;
     min-height: 38px;
-    background-color: var(--dark0);
+    background-color: #202020;
     border-radius: 4px;
     white-space: pre-wrap;
     border: 0px solid transparent;
@@ -1007,12 +1036,12 @@ body {
   }
 
   code {
-    color: #dadada;
+    color: #88c0d0;
     font-family:
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
       "Source Code Pro", monospace;
-    background-color: var(--dark0);
+    background-color: #202020;
     border-radius: 4px;
     font-size: 1em;
     padding: 0.15em 0.3em;
@@ -1060,7 +1089,7 @@ body {
 
   /* METADATA */
   .content-meta {
-    color: #dadada;
+    color: #eceff4;
 
     color: var(--text-normal);
   }
@@ -1087,7 +1116,7 @@ body {
     }
 
     ul li {
-      color: #dadada;
+      color: #eceff4;
 
       font-weight: 500;
     }
@@ -1109,7 +1138,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: #000;
+        background-color: #242424;
 
         background-color: var(--background-secondary);
 
@@ -1120,7 +1149,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: hsl(var(--accent-h), 100%, var(--accent-l));
+        color: hsl(180, 100%, 30%);
 
         text-overflow: ellipsis;
         position: relative;
@@ -1187,7 +1216,7 @@ body {
         a {
           padding: 6px 8px 6px 24px;
           border-radius: 4px;
-          color: #dadada;
+          color: #eceff4;
           cursor: pointer;
           display: flex;
           font-size: 16px;
@@ -1267,7 +1296,7 @@ body {
     ul.toc-content.overflow {
       li,
       li > a {
-        color: #dadada;
+        color: #eceff4;
 
         font-weight: inherit;
 
@@ -1359,7 +1388,7 @@ body {
       background: transparent;
       border: 1px solid transparent;
       border-radius: 5px;
-      color: #dadada;
+      color: #eceff4;
       font-family: inherit;
       font-size: calc(16px * 0.937);
       outline: none;
@@ -1374,7 +1403,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: #000;
+        background-color: #242424;
 
         border: 0.5pt solid var(--color-base-40, rgba(251, 70, 76, 0.6));
 
@@ -1393,12 +1422,12 @@ body {
           width: 100%;
           padding: 24px;
           padding-inline-end: 48px;
-          background-color: #000;
+          background-color: #242424;
           font-size: 16px;
           border: none;
           height: 48px;
           border-radius: 0;
-          border-bottom: 1px solid var(--dark0);
+          border-bottom: 1px solid #242424;
 
           margin-bottom: 0;
           border-bottom: none;
@@ -1406,7 +1435,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: #dadada;
+          color: #eceff4;
 
           background: transparent;
           margin-bottom: 0;
@@ -1455,10 +1484,10 @@ body {
               & > ul > li > p {
                 background-color: transparent;
 
-                color: #dadada;
+                color: #eceff4;
 
                 &.match-tag {
-                  color: #009999;
+                  color: #8fbcbb;
                 }
               }
             }
@@ -1526,7 +1555,7 @@ body {
 
   /* POPOVER */
   .popover {
-    background-color: #000;
+    background-color: #242424;
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow:
@@ -1546,7 +1575,7 @@ body {
     & .popover-inner {
       border: 1px solid transparent;
 
-      background-color: #000;
+      background-color: #242424;
 
       border-radius: 8px;
 

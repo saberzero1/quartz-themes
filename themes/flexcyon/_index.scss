@@ -266,87 +266,55 @@ body {
   --bold-weight: calc(575 + 200);
   --checkbox-radius: 2px;
   --checkbox-size: 16px;
-  --checkbox-marker-color: #000;
+  --checkbox-marker-color: #191d28;
   --checkbox-color: #92a871;
   --checkbox-color-hover: color-mix(
     in hsl shorter hue,
     #92a871 75%,
     transparent
   );
-  --checkbox-border-color: var(--flexcyon-base-blue-05);
-  --checkbox-border-color-hover: color-mix(
-    in hsl,
-    #6f768599,
-    var(--flexcyon-base-grey-light)
-  );
+  --checkbox-border-color: #6f768599;
+  --checkbox-border-color-hover: color-mix(in hsl, #6f768599, #d3d5d3);
   --code-background: #24262c;
-  --code-normal: var(--flexcyon-base-grey-light);
-  --code-comment: var(--flexcyon-base-blue-05);
+  --code-normal: #d3d5d3;
+  --code-comment: #6f768599;
   --code-function: #c29e42;
   --code-important: #cc8449;
   --code-keyword: #d458a3;
   --code-property: #3cb9c2;
-  --code-punctuation: color-mix(
-    in hsl,
-    #6f768599,
-    var(--flexcyon-base-grey-light)
-  );
+  --code-punctuation: color-mix(in hsl, #6f768599, #d3d5d3);
   --code-string: #a1c05c;
-  --code-tag: #fb464c;
+  --code-tag: #c03a47;
   --code-value: #a461c8;
-  --collapse-icon-color: var(--flexcyon-base-blue-05);
-  --collapse-icon-color-collapsed: hsl(
-    calc(107.5 - 3),
-    calc(74.5% * 1.02),
-    calc(57.5% * 1.15)
-  );
+  --collapse-icon-color: #6f768599;
+  --collapse-icon-color-collapsed: #92a871;
   --cursor-link: pointer;
   --font-weight: 400;
   --graph-line: var(--color-base-35, #4d566b);
-  --graph-node-unresolved: var(--flexcyon-base-blue-05);
+  --graph-node-unresolved: #6f768599;
   --graph-node-tag: #a1c05c;
   --h1-color: inherit;
   --h1-font: inherit;
   --h3-line-height: 1.3;
   --hr-color: color-mix(in hsl, #191d28, #24262c);
   --hr-thickness: 2px;
-  --icon-color: color-mix(in hsl, #6f768599, var(--flexcyon-base-grey-light));
+  --icon-color: color-mix(in hsl, #6f768599, #d3d5d3);
   --inline-title-color: #5a8fcd;
   --inline-title-font: inherit;
   --italic-color: inherit;
-  --link-color: hsl(calc(107.5 - 3), calc(74.5% * 1.02), calc(57.5% * 1.15));
-  --link-color-hover: hsl(
-    calc(107.5 - 5),
-    calc(74.5% * 1.05),
-    calc(57.5% * 1.29)
-  );
+  --link-color: #92a871;
+  --link-color-hover: #c29e42;
   --link-weight: var(--link-weight);
-  --link-external-color: hsl(
-    calc(107.5 - 3),
-    calc(74.5% * 1.02),
-    calc(57.5% * 1.15)
-  );
-  --link-external-color-hover: hsl(
-    calc(107.5 - 5),
-    calc(74.5% * 1.05),
-    calc(57.5% * 1.29)
-  );
+  --link-external-color: #92a871;
+  --link-external-color-hover: #c29e42;
   --link-external-filter: none;
   --nav-item-background-hover: rgba(255, 255, 255, 0.15);
   --nav-item-children-padding-start: 4px;
   --nav-item-children-margin-start: 12px;
   --p-spacing: 1rem;
-  --search-icon-color: color-mix(
-    in hsl,
-    #6f768599,
-    var(--flexcyon-base-grey-light)
-  );
-  --tag-color: hsl(calc(107.5 - 3), calc(74.5% * 1.02), calc(57.5% * 1.15));
-  --tag-color-hover: hsl(
-    calc(107.5 - 3),
-    calc(74.5% * 1.02),
-    calc(57.5% * 1.15)
-  );
+  --search-icon-color: color-mix(in hsl, #6f768599, #d3d5d3);
+  --tag-color: #92a871;
+  --tag-color-hover: #92a871;
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-background: hsla(107.5, 74.5%, 57.5%, 0.1);
@@ -362,18 +330,10 @@ body {
   --background-modifier-hover: rgba(255, 255, 255, 0.067);
   --background-modifier-border: color-mix(in hsl, #24262c, #4d566b);
   --background-modifier-border-hover: #4d566b;
-  --background-modifier-border-focus: color-mix(
-    in hsl,
-    #4d566b,
-    var(--flexcyon-base-blue-05)
-  );
-  --text-normal: var(--flexcyon-base-grey-light);
-  --text-muted: color-mix(
-    in hsl,
-    var(--flexcyon-base-grey-light),
-    var(--flexcyon-base-grey-dark)
-  );
-  --text-faint: var(--flexcyon-base-blue-05);
+  --background-modifier-border-focus: color-mix(in hsl, #4d566b, #6f7685);
+  --text-normal: #d3d5d3;
+  --text-muted: color-mix(in hsl, #d3d5d3, #898c93);
+  --text-faint: #6f7685;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-accent: hsl(107.5, 74.5%, 57.5%);
   --text-accent-hover: hsl(
@@ -390,10 +350,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -417,12 +377,12 @@ body {
     sans-serif;
   line-height: 1.3;
   font-size: 16px;
-  background-color: #000;
-  color: var(--flexcyon-base-grey-light);
+  background-color: #191d28;
+  color: #d3d5d3;
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
-  caret-color: hsl(calc(107.5 - 3), calc(74.5% * 1.02), calc(57.5% * 1.15));
+  caret-color: #92a871;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -630,7 +590,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
 
-  background-color: #000;
+  background-color: #191d28;
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -659,13 +619,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: #000;
+      background-color: #191d28;
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: #000;
+        background-color: #191d28;
 
         background-color: var(--background-primary);
       }
@@ -674,7 +634,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: #000;
+          background-color: #191d28;
 
           background-color: var(--background-secondary);
 
@@ -991,7 +951,7 @@ body {
     position: relative;
     padding: 12px 16px;
     min-height: 38px;
-    background-color: var(--flexcyon-base-blue-01);
+    background-color: #14161c;
     border-radius: 2px;
     white-space: pre-wrap;
     border: 0px solid color-mix(in hsl, #191d28, #24262c);
@@ -1065,7 +1025,7 @@ body {
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
       "Source Code Pro", monospace;
-    background-color: var(--flexcyon-base-blue-01);
+    background-color: #14161c;
     border-radius: 2px;
     font-size: 1em;
     padding: 0.15em 0.3em;
@@ -1082,7 +1042,7 @@ body {
     height: auto;
     background-color: transparent;
     box-shadow: none;
-    color: color-mix(in hsl, #6f768599, var(--flexcyon-base-grey-light));
+    color: color-mix(in hsl, #6f768599, #d3d5d3);
     font-size: calc(16px * 0.8);
     font-family:
       "??",
@@ -1113,14 +1073,14 @@ body {
 
   /* METADATA */
   .content-meta {
-    color: var(--flexcyon-base-grey-light);
+    color: #d3d5d3;
 
     color: var(--text-normal);
   }
 
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: var(--flexcyon-base-blue-05);
+    color: #6f768599;
   }
 
   /* BACKLINKS */
@@ -1140,7 +1100,7 @@ body {
     }
 
     ul li {
-      color: var(--flexcyon-base-grey-light);
+      color: #d3d5d3;
 
       font-weight: 500;
     }
@@ -1162,7 +1122,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: #000;
+        background-color: #191d28;
 
         background-color: var(--background-secondary);
 
@@ -1240,7 +1200,7 @@ body {
         a {
           padding: 6px 8px 6px 24px;
           border-radius: 2px;
-          color: color-mix(in hsl, #6f768599, var(--flexcyon-base-grey-light));
+          color: color-mix(in hsl, #6f768599, #d3d5d3);
           cursor: pointer;
           display: flex;
           font-size: 16px;
@@ -1320,7 +1280,7 @@ body {
     ul.toc-content.overflow {
       li,
       li > a {
-        color: color-mix(in hsl, #6f768599, var(--flexcyon-base-grey-light));
+        color: color-mix(in hsl, #6f768599, #d3d5d3);
 
         font-weight: inherit;
 
@@ -1412,7 +1372,7 @@ body {
       background: color-mix(in hsl, #191d28, #24262c);
       border: 1px solid color-mix(in hsl, #191d28, #24262c);
       border-radius: 0px;
-      color: var(--flexcyon-base-grey-light);
+      color: #d3d5d3;
       font-family: inherit;
       font-size: calc(16px * 0.937);
       outline: none;
@@ -1427,7 +1387,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: #000;
+        background-color: #191d28;
 
         border: 0.5pt solid color-mix(in hsl, #191d28, #24262c);
 
@@ -1446,12 +1406,12 @@ body {
           width: 100%;
           padding: 24px;
           padding-inline-end: 48px;
-          background-color: #000;
+          background-color: #191d28;
           font-size: 16px;
           border: none;
           height: 48px;
           border-radius: 0;
-          border-bottom: 1px solid var(--flexcyon-base-blue-01);
+          border-bottom: 1px solid #14161c;
 
           margin-bottom: 0;
           border-bottom: none;
@@ -1459,7 +1419,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: var(--flexcyon-base-grey-light);
+          color: #d3d5d3;
 
           background: transparent;
           margin-bottom: 0;
@@ -1507,7 +1467,7 @@ body {
               & > ul > li > p {
                 background-color: transparent;
 
-                color: var(--flexcyon-base-grey-light);
+                color: #d3d5d3;
 
                 &.match-tag {
                   color: #3cb9c2;
@@ -1578,7 +1538,7 @@ body {
 
   /* POPOVER */
   .popover {
-    background-color: #000;
+    background-color: #191d28;
     border: 1px solid color-mix(in hsl, #191d28, #24262c);
     border-radius: 4px;
     box-shadow:
@@ -1598,7 +1558,7 @@ body {
     & .popover-inner {
       border: 1px solid color-mix(in hsl, #191d28, #24262c);
 
-      background-color: #000;
+      background-color: #191d28;
 
       border-radius: 4px;
 

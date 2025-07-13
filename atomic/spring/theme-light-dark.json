@@ -41,11 +41,11 @@
       "dark": null
     },
     "--color-accent-1": {
-      "light": "hsl( calc(var(--accent-h) - 1), calc(var(--accent-s) * 1.01), calc(var(--accent-l) * 1.075) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 1),\n    calc(var(--accent-s) * 1.01),\n    calc(var(--accent-l) * 1.075)\n  )",
       "dark": null
     },
     "--color-accent-2": {
-      "light": "hsl( calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 3),\n    calc(var(--accent-s) * 1.02),\n    calc(var(--accent-l) * 1.15)\n  )",
       "dark": null
     },
     "--background-secondary-alt": {
@@ -55,18 +55,65 @@
     "--background-modifier-box-shadow": { "light": "#000000", "dark": null },
     "--background-modifier-cover": { "light": "#dcdcdc", "dark": null },
     "--input-shadow": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--input-shadow-hover": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--shadow-s": {
       "light": "0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000",
       "dark": null
     },
-    "--shadow-l": { "light": "", "dark": null },
+    "--shadow-l": {
+      "light": "0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000",
+      "dark": null
+    },
+    "--background-primary": { "light": "#f0f0f0", "dark": null },
+    "--background-secondary": { "light": "#e6e6fa", "dark": null },
+    "--ribbon-background": { "light": "#f0f0f0", "dark": null },
+    "--nav-item-color": { "light": "#171717", "dark": null },
+    "--nav-item-color-hover": { "light": "var(--dark-green)", "dark": null },
+    "--nav-item-color-active": { "light": "var(--dark-green)", "dark": null },
+    "--nav-item-color-selected": { "light": "var(--dark-green)", "dark": null },
+    "--nav-collapse-icon-color": { "light": "var(--dark-green)", "dark": null },
+    "--tab-text-color": { "light": "var(--dark-green)", "dark": null },
+    "--tab-text-color-active": { "light": "var(--dark-green)", "dark": null },
+    "--tab-text-color-focused-active-current": {
+      "light": "var(--dark-green)",
+      "dark": null
+    },
+    "--code-normal": { "light": "#ff4500", "dark": null },
+    "--code-comment": { "light": "#a9a9a9", "dark": null },
+    "--code-function": { "light": "#228b22", "dark": null },
+    "--code-important": { "light": "#8b008b", "dark": null },
+    "--code-keyword": { "light": "#4682b4", "dark": null },
+    "--code-operator": { "light": "#2f4f4f", "dark": null },
+    "--code-property": { "light": "#696969", "dark": null },
+    "--code-punctuation": { "light": "#696969", "dark": null },
+    "--code-string": { "light": "#8b008b", "dark": null },
+    "--code-tag": { "light": "#228b22", "dark": null },
+    "--code-value": { "light": "#008000", "dark": null },
+    "--h1-color": { "light": "var(--dark-green)", "dark": null },
+    "--h2-color": { "light": "var(--purple)", "dark": null },
+    "--h3-color": { "light": "var(--coral)", "dark": null },
+    "--h4-color": { "light": "var(--pink)", "dark": null },
+    "--h5-color": { "light": "var(--dark-yellow)", "dark": null },
+    "--bold-color": { "light": "var(--dark-yellow)", "dark": null },
+    "--italic-color": { "light": "var(--dark-yellow)", "dark": null },
+    "--text-selection": { "light": "var(--dark-yellow)", "dark": null },
+    "--icon-color-active": { "light": "var(--dark-green)", "dark": null },
+    "--icon-color-focused": { "light": "var(--dark-green)", "dark": null },
+    "--graph-line": { "light": "black", "dark": null },
+    "--graph-node-unresolved": {
+      "light": "var(--background-primary)",
+      "dark": null
+    },
+    "--checkbox-border-color": { "light": "black", "dark": null },
+    "--link-color": { "light": "var(--dark-yellow)", "dark": null },
+    "--link-unresolved-color": { "light": "var(--code-keyword)", "dark": null },
+    "--link-external-color": { "light": "var(--dark-yellow)", "dark": null },
     "--canvas-color": { "light": null, "dark": "126, 126, 126" }
   },
   ".notice progress[value]::-webkit-progress-bar": {
@@ -76,8 +123,14 @@
   ".dropdown": {
     "background-image": {
       "light": null,
-      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+      "dark": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
     }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  input": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  textarea": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -86,7 +139,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))\n    drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {

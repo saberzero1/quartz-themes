@@ -39,9 +39,9 @@ html[saved-theme="dark"] {
   --color-base-50: #666666;
   --color-base-70: #b3b3b3;
   --color-base-100: #dadada;
-  --color-accent-hsl: 0, 80%, 68%;
-  --color-accent-2: hsl(calc(0 - 5), calc(80% * 1.05), calc(68% * 1.29));
-  --text-accent: hsl(0, 80%, 68%);
+  --color-accent-hsl: 254, 80%, 68%;
+  --color-accent-2: hsl(calc(254 - 5), calc(80% * 1.05), calc(68% * 1.29));
+  --text-accent: hsl(254, 80%, 68%);
 }
 
 :root[saved-theme="light"],
@@ -76,8 +76,8 @@ html[saved-theme="light"] {
   --color-base-50: #ababab;
   --color-base-70: #5c5c5c;
   --color-base-100: #222222;
-  --color-accent-hsl: 0, 80%, 68%;
-  --color-accent-2: hsl(calc(0 - 3), calc(80% * 1.02), calc(68% * 1.15));
+  --color-accent-hsl: 254, 80%, 68%;
+  --color-accent-2: hsl(calc(254 - 3), calc(80% * 1.02), calc(68% * 1.15));
 }
 
 /* ia-writer-mono-latin-400-italic */
@@ -2457,8 +2457,8 @@ body {
   --checkbox-radius: 0.125em;
   --checkbox-size: 16px;
   --checkbox-marker-color: #0a0a0a;
-  --checkbox-color: hsl(0, 80%, calc(68% - 10%));
-  --checkbox-color-hover: hsl(0, 80%, calc(68% - 5%));
+  --checkbox-color: hsl(254, 80%, calc(68% - 10%));
+  --checkbox-color-hover: hsl(254, 80%, calc(68% - 5%));
   --checkbox-border-color: #666666;
   --checkbox-border-color-hover: #737373;
   --code-background: #262626;
@@ -2473,7 +2473,7 @@ body {
   --code-tag: #fb464c;
   --code-value: #a882ff;
   --collapse-icon-color: #666666;
-  --collapse-icon-color-collapsed: hsl(0, 80%, 68%);
+  --collapse-icon-color-collapsed: hsl(254, 80%, 68%);
   --cursor-link: pointer;
   --font-weight: 400;
   --graph-line: var(--color-base-35, #404040);
@@ -2485,13 +2485,13 @@ body {
   --hr-color: transparent;
   --hr-thickness: 2px;
   --icon-color: #737373;
-  --inline-title-color: #d4d4d4;
+  --inline-title-color: hsla(254, 80%, 68%, 1);
   --inline-title-font: inherit;
   --italic-color: inherit;
-  --link-color: hsl(0, 80%, 68%);
+  --link-color: hsl(254, 80%, 68%);
   --link-color-hover: #f5f5f5;
   --link-weight: var(--link-weight);
-  --link-external-color: hsl(0, 80%, 68%);
+  --link-external-color: hsl(254, 80%, 68%);
   --link-external-color-hover: #f5f5f5;
   --link-external-filter: none;
   --nav-item-background-hover: rgba(255, 255, 255, 0.15);
@@ -2499,14 +2499,14 @@ body {
   --nav-item-children-margin-start: 12px;
   --p-spacing: 1rem;
   --search-icon-color: #737373;
-  --tag-color: hsl(0, 80%, 68%);
-  --tag-color-hover: hsl(0, 80%, 68%);
+  --tag-color: hsl(254, 80%, 68%);
+  --tag-color-hover: hsl(254, 80%, 68%);
   --tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-background: hsla(0, 80%, 68%, 0.1);
-  --tag-background-hover: hsla(0, 80%, 68%, 0.2);
-  --tag-border-color: hsla(0, 80%, 68%, 0.15);
-  --tag-border-color-hover: hsla(0, 80%, 68%, 0.15);
+  --tag-background: hsla(254, 80%, 68%, 0.1);
+  --tag-background-hover: hsla(254, 80%, 68%, 0.2);
+  --tag-border-color: hsla(254, 80%, 68%, 0.15);
+  --tag-border-color-hover: hsla(254, 80%, 68%, 0.15);
   --tag-border-width: 0px;
   --tag-radius: 2em;
   --tag-weight: inherit;
@@ -2521,9 +2521,9 @@ body {
   --text-muted: #b3b3b3;
   --text-faint: #666666;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
-  --text-accent: hsl(0, 80%, 68%);
-  --text-accent-hover: hsl(calc(0 - 5), calc(80% * 1.05), calc(68% * 1.29));
-  --interactive-accent-hsl: 0, 80%, 68%;
+  --text-accent: hsl(254, 80%, 68%);
+  --text-accent-hover: hsl(calc(254 - 5), calc(80% * 1.05), calc(68% * 1.29));
+  --interactive-accent-hsl: 254, 80%, 68%;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
@@ -2531,10 +2531,10 @@ body {
   --font-monospace:
     "??", "??", "iA Writer Mono", iawriter-mono, Nitti, Menlo, Courier,
     monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -2542,20 +2542,9 @@ body {
   width: 100%;
   text-rendering: optimizeLegibility;
   font-family:
-    "",
-    "??",
-    var(--default-font, "??"),
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
+    "", "??", var(--default-font, "??"), "Noto Sans JP", "Hiragino Sans GB",
+    "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei",
+    "Helvetica", "Arial", sans-serif;
   line-height: 1.3;
   font-size: 16px;
   background-color: #0a0a0a;
@@ -2563,7 +2552,7 @@ body {
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
-  caret-color: hsl(0, 80%, 68%);
+  caret-color: hsl(254, 80%, 68%);
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -3003,7 +2992,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 700;
-    color: #d4d4d4;
+    color: hsla(254, 80%, 68%, 1);
     font-family: inherit;
     font-size: 1.802em;
     font-style: normal;
@@ -3023,7 +3012,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: hsla(0, 80%, 68%, 0.95);
+    color: hsla(254, 80%, 68%, 0.95);
     font-family: inherit;
     font-size: 1.602em;
     font-style: normal;
@@ -3041,7 +3030,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: hsla(0, 80%, 68%, 0.9);
+    color: hsla(254, 80%, 68%, 0.9);
     font-family: inherit;
     font-size: 1.424em;
     font-style: normal;
@@ -3059,7 +3048,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: hsla(0, 80%, 68%, 0.85);
+    color: hsla(254, 80%, 68%, 0.85);
     font-family: inherit;
     font-size: 1.266em;
     font-style: normal;
@@ -3077,7 +3066,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: hsla(0, 80%, 68%, 0.8);
+    color: hsla(254, 80%, 68%, 0.8);
     font-family: inherit;
     font-size: 1.125em;
     font-style: normal;
@@ -3095,7 +3084,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: hsla(0, 80%, 68%, 0.75);
+    color: hsla(254, 80%, 68%, 0.75);
     font-family: inherit;
     font-size: 1em;
     font-style: normal;
@@ -3225,20 +3214,9 @@ body {
     color: #737373;
     font-size: calc(16px * 0.8);
     font-family:
-      "",
-      "??",
-      var(--default-font, "??"),
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      "Inter",
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+      "", "??", var(--default-font, "??"), "Noto Sans JP", "Hiragino Sans GB",
+      "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei",
+      "Helvetica", "Arial", sans-serif;
     position: absolute;
     top: 0;
     inset-inline-end: 0;
@@ -3269,7 +3247,7 @@ body {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
       --font-weight: 600;
-      color: hsla(0, 80%, 68%, 0.9);
+      color: hsla(254, 80%, 68%, 0.9);
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -3298,7 +3276,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: hsla(0, 80%, 68%, 0.95);
+      color: hsla(254, 80%, 68%, 0.95);
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -3313,7 +3291,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: hsl(0, 80%, calc(68% - 10%));
+        color: hsl(254, 80%, calc(68% - 10%));
 
         text-overflow: ellipsis;
         position: relative;
@@ -3434,14 +3412,14 @@ body {
 
   /* TOC */
   .toc {
-    color: hsla(0, 80%, 68%, 0.9);
+    color: hsla(254, 80%, 68%, 0.9);
 
     button.toc-header {
       h3 {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
         --font-weight: 600;
-        color: hsla(0, 80%, 68%, 0.9);
+        color: hsla(254, 80%, 68%, 0.9);
         font-family: inherit;
         font-size: 1.424em;
         font-style: normal;
@@ -3453,7 +3431,7 @@ body {
         margin-block: 0;
       }
 
-      color: hsla(0, 80%, 68%, 0.9);
+      color: hsla(254, 80%, 68%, 0.9);
 
       color: inherit;
     }
@@ -3479,7 +3457,7 @@ body {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
       --font-weight: 600;
-      color: hsla(0, 80%, 68%, 0.9);
+      color: hsla(254, 80%, 68%, 0.9);
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -3570,7 +3548,7 @@ body {
       & > .search-space {
         background-color: #0a0a0a;
 
-        border: 1px solid hsla(0, 80%, 68%, 0.6);
+        border: 1px solid hsla(254, 80%, 68%, 0.6);
 
         border-radius: 0.125em;
 
@@ -3651,7 +3629,7 @@ body {
                 color: #d4d4d4;
 
                 &.match-tag {
-                  color: hsl(0, 80%, 68%);
+                  color: hsl(254, 80%, 68%);
                 }
               }
             }

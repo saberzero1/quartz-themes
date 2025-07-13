@@ -31,20 +31,19 @@ export default function combineThemeCssWithObsidianCss(
   if (!existsSync("./skip-css-regeneration") || regenerateCSS) {
     rmSync("./skip-css-regeneration", { force: true });
 
-    obsidianCSS = splitCombinedRules(
-      format(obsidianCSSRaw, "css")
-        .replace(/\/\*.*?\*\//gms, "")
-        .replace(/^\s*?@font-face.*?\{.*?^\}$/gms, "")
-        .replace(
-          /^\s*?@(?:-moz-|-webkit-)?(?:keyframes|font-face)\s+[\w\-]+\s*?\{.*?^\}$/gms,
-          "",
-        )
-        .replace(
-          /^(\s*?)@\w+?\s*?[\w\-\(\)\:\s\*\<\>\=]*?\s*?\{(.*?)^\1\}$/gms,
-          "$2",
-        )
-        .replace(/\}\n(?!\n)/gms, "}\n\n")
-        .replace(/(?<!\})\n{2,}/gms, "\n"),
+    obsidianCSS = format(
+      splitCombinedRules(
+        format(obsidianCSSRaw, "css").replace(/\/\*.*?\*\//gms, ""),
+        /*.replace(/^\s*?@font-face.*?\{.*?^\}$/gms, "")
+          .replace(
+            /^\s*?@(?:-moz-|-webkit-)?(?:keyframes|font-face)\s+[\w\-]+\s*?\{.*?^\}$/gms,
+            "",
+          )
+          .replace(/^(\s*?)@[^\{$]+?\s*?[^\{$]*?\s*?\{(.*?)^\1\}$/gms, "$2")
+          .replace(/\}\n(?!\n)/gms, "}\n\n")
+          .replace(/(?<!\})\n{2,}/gms, "\n"),*/
+      ),
+      "css",
     );
 
     writeFileSync(
@@ -64,9 +63,9 @@ export default function combineThemeCssWithObsidianCss(
       });
     }
 
-    const themeCSS = readFileSync(
-      `./obsidian/${manifest.name}/theme.css`,
-      "utf-8",
+    const themeCSS = format(
+      readFileSync(`./obsidian/${manifest.name}/theme.css`, "utf-8"),
+      "css",
     );
 
     const start = Date.now();
@@ -81,19 +80,18 @@ export default function combineThemeCssWithObsidianCss(
 
     //const combinedCSS = cleanCSS(obsidianCSS, themeCSS, mode, false);
     let combinedCSS = splitCombinedRules(
-      format(`${obsidianCSS}\n${themeCSS}`, "css")
-        .replace(/\/\*.*?\*\//gms, "")
-        .replace(/^\s*?@font-face.*?\{.*?^\}$/gms, "")
+      format(`${obsidianCSS}\n${themeCSS}`, "css").replace(
+        /\/\*.*?\*\//gms,
+        "",
+      ),
+      /*.replace(/^\s*?@font-face.*?\{.*?^\}$/gms, "")
         .replace(
           /^\s*?@(?:-moz-|-webkit-)?(?:keyframes)\s+[\w\-]+\s*?\{.*?^\}$/gms,
           "",
         )
-        .replace(
-          /^(\s*?)@\w+?\s*?[\w\-\(\)\:\s\*\<\>\=]*?\s*?\{(.*?)^\1\}$/gms,
-          "$2",
-        )
+        .replace(/^(\s*?)@[^\{$]+?\s*?[^\{$]*?\s*?\{(.*?)^\1\}$/gms, "$2")
         .replace(/\}\n(?!\n)/gms, "}\n\n")
-        .replace(/(?<!\})\n{2,}/gms, "\n"),
+        .replace(/(?<!\})\n{2,}/gms, "\n"),*/
     );
     let compareString = "";
     let index = 0;
@@ -242,6 +240,12 @@ function singlePass(combinedCSS) {
       .replace(/^\}$\n(?!\n)/gms, "}\n\n");
   } catch (error) {
     combinedCSS = tempCSS; // Revert to the original CSS if nesting fails
+  }
+  tempCSS = combinedCSS;
+  try {
+    combinedCSS = format(combinedCSS, "css");
+  } catch (error) {
+    combinedCSS = tempCSS; // Revert to the original CSS if formatting fails
   }
 
   return combinedCSS;

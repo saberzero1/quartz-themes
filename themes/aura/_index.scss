@@ -41,6 +41,19 @@ html[saved-theme="dark"] {
   --color-base-100: #dadada;
   --color-accent-hsl: 258, 88%, 66%;
   --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --background-primary: rgb(17, 7, 25);
+  --background-primary-alt: rgb(21, 10, 28);
+  --background-secondary: rgb(12, 3, 19);
+  --background-modifier-border: rgb(44, 25, 49);
+  --background-modifier-border-hover: rgb(44, 25, 49);
+  --background-modifier-hover: rgba(9, 0, 15, 0.7);
+  --text-normal: rgb(226, 122, 255);
+  --text-faint: rgba(226, 122, 255, 0.7);
+  --text-muted: rgba(226, 122, 255, 0.7);
+  --text-accent: rgb(255, 121, 198);
+  --text-accent-hover: rgba(255, 121, 198, 0.7);
+  --bold-color: rgb(255, 85, 85);
+  --italic-color: rgb(125, 164, 247);
 }
 
 :root[saved-theme="light"],
@@ -77,6 +90,19 @@ html[saved-theme="light"] {
   --color-base-100: #222222;
   --color-accent-hsl: 258, 88%, 66%;
   --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --background-primary: rgb(17, 7, 25);
+  --background-primary-alt: rgb(21, 10, 28);
+  --background-secondary: rgb(12, 3, 19);
+  --background-modifier-border: rgb(44, 25, 49);
+  --background-modifier-border-hover: rgb(44, 25, 49);
+  --background-modifier-hover: rgba(9, 0, 15, 0.7);
+  --text-normal: rgb(226, 122, 255);
+  --text-faint: rgba(226, 122, 255, 0.9);
+  --text-muted: rgba(226, 122, 255, 0.9);
+  --text-accent: rgb(255, 121, 198);
+  --text-accent-hover: rgba(255, 121, 198, 0.7);
+  --bold-color: rgb(255, 85, 85);
+  --italic-color: rgb(125, 164, 247);
 }
 
 /* ia-writer-mono-latin-400-italic */
@@ -231,15 +257,11 @@ body {
   --checkbox-size: 16px;
   --checkbox-marker-color: rgba(9, 0, 15, 0.7);
   --checkbox-color: rgb(255, 121, 198);
-  --checkbox-color-hover: hsl(
-    calc(258 - 5),
-    calc(88% * 1.05),
-    calc(66% * 1.29)
-  );
+  --checkbox-color-hover: rgba(255, 121, 198, 0.7);
   --checkbox-border-color: rgba(226, 122, 255, 0.7);
   --checkbox-border-color-hover: rgba(226, 122, 255, 0.7);
   --code-background: rgba(21, 10, 28, 0.7);
-  --code-normal: #dadada;
+  --code-normal: rgb(226, 122, 255);
   --code-comment: rgba(226, 122, 255, 0.7);
   --code-function: #e0de71;
   --code-important: #e9973f;
@@ -299,26 +321,29 @@ body {
   --text-accent: rgb(255, 121, 198);
   --text-accent-hover: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
   --interactive-accent-hsl: 258, 88%, 66%;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
   padding: 0;
   width: 100%;
   text-rendering: optimizeLegibility;
-  font-family:
-    "??", "??", var(--default-font, "??"), "iA Writer Quattro S" !important;
+  font-family: "??", "??", var(--default-font, "??"), "iA Writer Quattro S";
   line-height: 1.3;
   font-size: 16px;
   background-color: rgba(9, 0, 15, 0.7);
-  color: #dadada;
+  color: rgb(226, 122, 255);
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
   caret-color: rgb(255, 121, 198);
+  --h1-font: Rubik;
+  --hr-color: rgb(255, 121, 198);
+  --font-default: "iA Writer Quattro S";
+  --font-monospace: "iA Writer Mono";
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -492,7 +517,7 @@ html {
     padding: 0.7em 0.5em 0.7em 0.7em;
     display: flex;
     gap: 4px;
-    font-size: var(--h6-size);
+    font-size: 1em;
     color: rgb(189, 147, 249);
     line-height: 1.3;
     align-items: flex-start;
@@ -502,7 +527,7 @@ html {
     & > .callout-title-inner > p {
       --font-weight: calc(var(--font-weight) + 200);
       font-weight: 600;
-      color: #dadada;
+      color: rgb(226, 122, 255);
 
       /*color: var(--color);*/
     }
@@ -510,7 +535,7 @@ html {
     .callout-title-inner {
       --font-weight: calc(var(--font-weight) + 200);
       font-weight: 600;
-      color: #dadada;
+      color: rgb(226, 122, 255);
     }
   }
 
@@ -852,7 +877,7 @@ body {
     --font-weight: 600;
     color: rgb(189, 147, 249);
     font-family: "Noto Serif";
-    font-size: var(--h6-size);
+    font-size: 1em;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -956,8 +981,8 @@ body {
   }
 
   code {
-    color: #dadada;
-    font-family: "iA Writer Mono" !important;
+    color: rgb(226, 122, 255);
+    font-family: "iA Writer Mono";
     background-color: rgba(12, 3, 19, 0.5);
     border-radius: 3px;
     font-size: 1em;
@@ -977,8 +1002,7 @@ body {
     box-shadow: none;
     color: rgba(226, 122, 255, 0.7);
     font-size: calc(16px * 0.8);
-    font-family:
-      "??", "??", var(--default-font, "??"), "iA Writer Quattro S" !important;
+    font-family: "??", "??", var(--default-font, "??"), "iA Writer Quattro S";
     position: absolute;
     top: 0;
     inset-inline-end: 0;
@@ -993,7 +1017,7 @@ body {
 
   /* METADATA */
   .content-meta {
-    color: #dadada;
+    color: rgb(226, 122, 255);
 
     color: var(--text-normal);
   }
@@ -1020,7 +1044,7 @@ body {
     }
 
     ul li {
-      color: #dadada;
+      color: rgb(226, 122, 255);
 
       font-weight: 500;
     }
@@ -1053,7 +1077,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: rgb(255, 121, 198);
+        color: rgb(52, 59, 88);
 
         text-overflow: ellipsis;
         position: relative;
@@ -1082,7 +1106,7 @@ body {
         }
         &:hover {
           background-color: rgba(17, 7, 25, 0.5);
-          color: #dadada;
+          color: rgb(226, 122, 255);
           font-weight: inherit;
 
           font-size: 1rem;
@@ -1292,7 +1316,7 @@ body {
       background: transparent;
       border: 1px solid transparent;
       border-radius: 5px;
-      color: #dadada;
+      color: rgb(226, 122, 255);
       font-family: inherit;
       font-size: calc(16px * 0.937);
       outline: none;
@@ -1339,7 +1363,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: #dadada;
+          color: rgb(226, 122, 255);
 
           background: transparent;
           margin-bottom: 0;
@@ -1387,7 +1411,7 @@ body {
               & > ul > li > p {
                 background-color: transparent;
 
-                color: #dadada;
+                color: rgb(226, 122, 255);
 
                 &.match-tag {
                   color: rgb(255, 121, 198);

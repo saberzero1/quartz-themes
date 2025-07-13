@@ -347,10 +347,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -1204,10 +1204,10 @@ body {
           font-weight: inherit;
           line-height: 1.3;
           margin-bottom: 2px;
-          border-bottom-left-radius: 0 !important;
-          border-bottom-right-radius: 0 !important;
-          border-top-left-radius: 0 !important;
-          border-top-right-radius: 0 !important;
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
 
           color: inherit;
           font-size: 1rem;
@@ -1471,7 +1471,7 @@ body {
                 color: #f8f8f2;
 
                 &.match-tag {
-                  color: #8be9fd !important;
+                  color: #8be9fd;
                 }
               }
             }

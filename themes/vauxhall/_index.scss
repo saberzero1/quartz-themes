@@ -46,6 +46,13 @@ html[saved-theme="dark"] {
   --color-base-70: color-mix(in srgb, hsl(228, 30%, 0%) 30%, hsl(220, 0%, 80%));
   --color-base-100: color-mix(in srgb, hsl(228, 30%, 0%) 0%, hsl(220, 0%, 80%));
   --text-normal: color-mix(in srgb, hsl(220, 0%, 80%) 30%, #fff);
+  --background-modifier-hover: color-mix(
+    in srgb,
+    hsl(228, 30%, 0%) 95%,
+    hsl(220, 0%, 80%)
+  );
+  --text-highlight-bg: color-mix(in srgb, hsl(258, 88%, 66%) 25%, transparent);
+  --code-background: color-mix(in srgb, hsl(228, 30%, 0%) 80%, #000);
 }
 
 :root[saved-theme="light"],
@@ -86,6 +93,17 @@ html[saved-theme="light"] {
   --color-base-70: color-mix(in srgb, hsl(228, 30%, 0%) 30%, hsl(220, 0%, 80%));
   --color-base-100: color-mix(in srgb, hsl(228, 30%, 0%) 0%, hsl(220, 0%, 80%));
   --text-normal: color-mix(in srgb, hsl(220, 0%, 80%) 50%, #000);
+  --background-modifier-hover: color-mix(
+    in srgb,
+    hsl(228, 30%, 0%) 95%,
+    hsl(220, 0%, 80%)
+  );
+  --text-highlight-bg: color-mix(in srgb, hsl(258, 88%, 66%) 25%, transparent);
+  --code-background: color-mix(
+    in srgb,
+    hsl(228, 30%, 0%) 90%,
+    hsl(220, 0%, 80%)
+  );
 }
 
 @font-face {
@@ -359,7 +377,7 @@ body {
   --hr-color: color-mix(in srgb, hsl(228, 30%, 0%) 80%, hsl(220, 0%, 80%));
   --hr-thickness: 2px;
   --icon-color: color-mix(in srgb, hsl(228, 30%, 0%) 30%, hsl(220, 0%, 80%));
-  --inline-title-color: hsl(258, 88%, 66%) !important;
+  --inline-title-color: hsl(258, 88%, 66%);
   --inline-title-font: inherit;
   --italic-color: inherit;
   --link-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
@@ -426,10 +444,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -898,7 +916,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 700;
-    color: hsl(258, 88%, 66%) !important;
+    color: hsl(258, 88%, 66%);
     font-family: inherit;
     font-size: 1.802em;
     font-style: normal;
@@ -906,7 +924,7 @@ body {
     font-weight: 600;
     letter-spacing: -0.015em;
     line-height: 1.2;
-    margin-top: 20px !important;
+    margin-top: 20px;
 
     font-size: 2rem;
   }
@@ -1270,7 +1288,8 @@ body {
           var(--nav-item-children-margin-left)
         );
         margin-bottom: 1px;
-        border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+        border-inline-start: 1px solid
+          color-mix(in srgb, hsl(228, 30%, 0%) 90%, hsl(220, 0%, 80%));
       }
       ul.explorer-ul li {
         text-overflow: ellipsis;
@@ -1448,7 +1467,7 @@ body {
       color: var(--button-secondary-fg-color);
 
       -webkit-app-region: no-drag;
-      background: color-mix(in srgb, hsl(228, 30%, 0%) 40%, #000) !important;
+      background: color-mix(in srgb, hsl(228, 30%, 0%) 40%, #000);
       border: 1px solid
         color-mix(in srgb, hsl(228, 30%, 0%) 80%, hsl(220, 0%, 80%));
       border-radius: 5px;
@@ -1491,7 +1510,7 @@ body {
           border: none;
           height: 48px;
           border-radius: 0;
-          border-bottom: 1px solid #000 !important;
+          border-bottom: 1px solid #000;
 
           margin-bottom: 0;
           border-bottom: none;

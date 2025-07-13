@@ -350,10 +350,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -381,11 +381,11 @@ body {
   user-select: none;
   -webkit-user-select: none;
   caret-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  font-size: 14px !important;
-  font-style: normal !important;
-  font-weight: 500 !important;
-  line-height: 21px !important;
-  text-size-adjust: 100% !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  text-size-adjust: 100%;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -903,11 +903,11 @@ body {
     font-family: inherit;
     font-variant: normal;
     letter-spacing: 0.015em;
-    font-size: 14px !important;
-    font-style: normal !important;
-    font-weight: 500 !important;
-    line-height: 21px !important;
-    text-size-adjust: 100% !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px;
+    text-size-adjust: 100%;
 
     font-size: 1.2rem;
   }
@@ -922,11 +922,11 @@ body {
     font-family: inherit;
     font-variant: normal;
     letter-spacing: 0.015em;
-    font-size: 14px !important;
-    font-style: normal !important;
-    font-weight: 500 !important;
-    line-height: 21px !important;
-    text-size-adjust: 100% !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px;
+    text-size-adjust: 100%;
 
     font-size: 1.1rem;
   }

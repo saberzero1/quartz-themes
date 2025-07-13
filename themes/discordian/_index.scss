@@ -112,7 +112,9 @@ html[saved-theme="dark"] {
   --font-monospace:
     Consolas, Andale Mono, Lucida Console, Source Code Pro, iA Writer Mono S,
     Jetbrains Mono, Menlo, SFMono-Regular, Lucida Sans Typewriter,
-    DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L;
+    DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L,
+    Monaco, Courier New, Courier, monospace;
+  --discord-yellow-bg: hsla(38, 96%, 54%, 0.1);
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -243,9 +245,9 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   overscroll-behavior: none;
   padding: 0;
@@ -255,7 +257,7 @@ body {
   user-select: none;
   -webkit-user-select: none;
   caret-color: hsla(265, 66%, 72%, 1);
-  padding-top: 0 !important;
+  padding-top: 0;
   -moz-font-feature-settings: "tnum";
   -moz-font-variant-numeric: tabular-nums;
   -webkit-font-feature-settings: "tnum";
@@ -270,8 +272,8 @@ body {
   font-feature-settings: "tnum";
   font-size: 16px;
   font-variant-numeric: tabular-nums;
-  line-height: 22px !important;
-  margin: 0 !important;
+  line-height: 22px;
+  margin: 0;
   text-rendering: optimizeLegibility;
   vertical-align: baseline;
   word-wrap: break-word;
@@ -482,7 +484,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
 
-  background-color: transparent !important;
+  background-color: transparent;
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -511,13 +513,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: transparent !important;
+      background-color: transparent;
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: transparent !important;
+        background-color: transparent;
 
         background-color: var(--background-primary);
       }
@@ -526,7 +528,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: transparent !important;
+          background-color: transparent;
 
           background-color: var(--background-secondary);
 
@@ -1028,7 +1030,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: transparent !important;
+        background-color: transparent;
 
         background-color: var(--background-secondary);
 
@@ -1124,17 +1126,17 @@ body {
             Helvetica,
             Arial,
             sans-serif;
-          font-variant-numeric: tabular-nums !important;
+          font-variant-numeric: tabular-nums;
           font-size: 0.875rem;
           border-radius: 4px;
-          color: hsla(213, 4%, 57%, 1) !important;
+          color: hsla(213, 4%, 57%, 1);
           background-color: hsla(223, 7%, 20%, 1);
           display: inline-flex;
-          -webkit-font-feature-settings: "tnum" !important;
-          -moz-font-feature-settings: "tnum" !important;
-          font-feature-settings: "tnum" !important;
-          -webkit-font-variant-numeric: tabular-nums !important;
-          -moz-font-variant-numeric: tabular-nums !important;
+          -webkit-font-feature-settings: "tnum";
+          -moz-font-feature-settings: "tnum";
+          font-feature-settings: "tnum";
+          -webkit-font-variant-numeric: tabular-nums;
+          -moz-font-variant-numeric: tabular-nums;
 
           color: inherit;
           font-size: 1rem;
@@ -1302,15 +1304,15 @@ body {
       outline: none;
       padding: 4px 8px;
       height: 40px;
-      border-color: hsla(216, 7%, 14%, 1) !important;
+      border-color: hsla(216, 7%, 14%, 1);
       font-family:
         Catamaran,
         Helvetica Neue,
         Helvetica,
         Arial,
-        sans-serif !important;
+        sans-serif;
       letter-spacing: -0.01rem;
-      background-color: hsla(216, 7%, 14%, 1) !important;
+      background-color: hsla(216, 7%, 14%, 1);
       border-radius: 4px;
       color: hsla(213, 4%, 57%, 1);
       font-size: 0.875rem;
@@ -1354,7 +1356,7 @@ body {
           border: none;
           height: 70px;
           line-height: 70px;
-          background-color: hsla(213, 4%, 57%, 1) !important;
+          background-color: hsla(213, 4%, 57%, 1);
           color: hsla(210, 3%, 87%, 1);
           -webkit-box-shadow: 0 8px 16px hsla(0, 0%, 0%, 0.24);
           box-shadow: 0 8px 16px hsla(0, 0%, 0%, 0.24);
@@ -1383,7 +1385,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            color: hsla(227, 44%, 59%, 1) !important;
+            color: hsla(227, 44%, 59%, 1);
 
             background-color: var(--quartz-text-highlight);
           }

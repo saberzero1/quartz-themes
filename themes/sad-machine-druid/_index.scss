@@ -155,6 +155,7 @@ html[saved-theme="light"] {
   --h1-color: var(--text-normal);
 
   --nav-item-background-hover: var(--background-modifier-hover);
+  --bg_green: #404d44;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -284,10 +285,10 @@ body {
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -316,6 +317,10 @@ body {
   user-select: none;
   -webkit-user-select: none;
   caret-color: #569bad;
+  --font-monospace: "Hack", "Hack Nerd Font", "Source Code Pro", monospace;
+  -webkit-font-smoothing: auto;
+  --h1-color: #3bac68;
+  font-size: 16px;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -793,7 +798,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: var(--dim-purple);
+    color: #a47bb8;
     font-family: inherit;
     font-size: 1.424em;
     font-style: normal;
@@ -954,7 +959,7 @@ body {
 
   code {
     color: #d3c6aa;
-    font-family: var(--font-monospace);
+    font-family: "Hack", "Hack Nerd Font", "Source Code Pro", monospace;
     background-color: #2f383e;
     border-radius: 4px;
     font-size: 1em;
@@ -1019,7 +1024,7 @@ body {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
       --font-weight: 600;
-      color: var(--dim-purple);
+      color: #a47bb8;
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1188,14 +1193,14 @@ body {
 
   /* TOC */
   .toc {
-    color: var(--dim-purple);
+    color: #a47bb8;
 
     button.toc-header {
       h3 {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
         --font-weight: 600;
-        color: var(--dim-purple);
+        color: #a47bb8;
         font-family: inherit;
         font-size: 1.424em;
         font-style: normal;
@@ -1207,7 +1212,7 @@ body {
         margin-block: 0;
       }
 
-      color: var(--dim-purple);
+      color: #a47bb8;
 
       color: inherit;
     }
@@ -1233,7 +1238,7 @@ body {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
       --font-weight: 600;
-      color: var(--dim-purple);
+      color: #a47bb8;
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;

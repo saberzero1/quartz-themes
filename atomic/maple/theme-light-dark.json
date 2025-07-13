@@ -41,11 +41,11 @@
       "dark": null
     },
     "--color-accent-1": {
-      "light": "hsl( calc(var(--accent-h) - 1), calc(var(--accent-s) * 1.01), calc(var(--accent-l) * 1.075) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 1),\n    calc(var(--accent-s) * 1.01),\n    calc(var(--accent-l) * 1.075)\n  )",
       "dark": null
     },
     "--color-accent-2": {
-      "light": "hsl( calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15) )",
+      "light": "hsl(\n    calc(var(--accent-h) - 3),\n    calc(var(--accent-s) * 1.02),\n    calc(var(--accent-l) * 1.15)\n  )",
       "dark": null
     },
     "--background-secondary-alt": {
@@ -55,11 +55,11 @@
     "--background-modifier-box-shadow": { "light": "#000000", "dark": null },
     "--background-modifier-cover": { "light": "#dcdcdc", "dark": null },
     "--input-shadow": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--input-shadow-hover": {
-      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000,\n    0 1px 2px 0 #000000, 0 0 0 0 transparent",
       "dark": null
     },
     "--shadow-s": {
@@ -71,19 +71,19 @@
       "dark": null
     },
     "--active-line": {
-      "light": "var( --setting-line-active-color, hsl(var(--accent-h), 24%, 92%) )",
+      "light": "var(\n    --setting-line-active-color,\n    hsl(var(--accent-h), 24%, 92%)\n  )",
       "dark": null
     },
     "--calendar-weekend-bg": {
-      "light": "hsla( var(--accent-h), var(--accent-s), calc(var(--accent-l) + 24%), 24% )",
+      "light": "hsla(\n    var(--accent-h),\n    var(--accent-s),\n    calc(var(--accent-l) + 24%),\n    24%\n  )",
       "dark": null
     },
     "--select-bg-img": {
-      "light": "url(' data:image/svg+xml, utf8, <svgxmlns=\"http://www.w3.org/2000/svg\"viewBox=\"0 0 24 24\"><pathfill=\"%23222\"d=\"M12 14.975q-.2 0-.387-.075q-.188-.075-.313-.2l-4.6-4.6q-.275-.275-.275-.7q0-.425.275-.7q.275-.275.7-.275q.425 0 .7.275l3.9 3.9l3.9-3.9q.275-.275.7-.275q.425 0 .7.275q.275.275.275.7q0 .425-.275.7l-4.6 4.6q-.15.15-.325.212q-.175.063-.375.063Z\"/></svg> ')",
+      "light": "url('    data:image/svg+xml,utf8,    <svgxmlns=\"http://www.w3.org/2000/svg\"viewBox=\"0 0 24 24\"><pathfill=\"%23222\"d=\"M12 14.975q-.2 0-.387-.075q-.188-.075-.313-.2l-4.6-4.6q-.275-.275-.275-.7q0-.425.275-.7q.275-.275.7-.275q.425 0 .7.275l3.9 3.9l3.9-3.9q.275-.275.7-.275q.425 0 .7.275q.275.275.275.7q0 .425-.275.7l-4.6 4.6q-.15.15-.325.212q-.175.063-.375.063Z\"/></svg> ')",
       "dark": null
     },
     "--ribbon-background": {
-      "light": "hsla( calc(var(--accent-h) + 16), calc(var(--accent-s) / 1.2), calc(100% - (100% - var(--accent-l)) / 4), 60% )",
+      "light": "hsla(\n    calc(var(--accent-h) + 16),\n    calc(var(--accent-s) / 1.2),\n    calc(100% - (100% - var(--accent-l)) / 4),\n    60%\n  )",
       "dark": null
     },
     "--folder-inactive": { "light": "85%", "dark": null },
@@ -96,87 +96,77 @@
   ".themed-color-wrapper >": {
     "background-color": { "light": "#eee", "dark": "#111" }
   },
-  ":is(": {
-    "--color-red": "rgba(var(--color-red-rgb), var(--color-opacity)) !important",
-    "--color-red-rgb": {
-      "light": "189, 81, 81 !important",
-      "dark": "241, 167, 167 !important"
+  ":is(\n  body.color-use-custom.css-settings-manager,\n  body.color-use-custom.css-settings-manager .print\n)": {
+    "--accent-h": {
+      "light": "var(--setting-accent-h-light, 35)",
+      "dark": "var(--setting-accent-h-dark, 207)"
     },
-    "--color-orange": "rgba( var(--color-orange-rgb), var(--color-opacity) ) !important",
-    "--color-orange-rgb": {
-      "light": "217, 133, 38 !important",
-      "dark": "240, 192, 168 !important"
+    "--accent-s": {
+      "light": "var(--setting-accent-s-light, 32%)",
+      "dark": "var(--setting-accent-s-dark, 32%)"
     },
-    "--color-yellow": "rgba( var(--color-yellow-rgb), var(--color-opacity) ) !important",
-    "--color-yellow-rgb": {
-      "light": "200, 154, 4 !important",
-      "dark": "238, 207, 160 !important"
-    },
-    "--color-green": "rgba(var(--color-green-rgb), var(--color-opacity)) !important",
-    "--color-green-rgb": {
-      "light": "85, 170, 24 !important",
-      "dark": "164, 223, 174 !important"
-    },
-    "--color-cyan": "rgba(var(--color-cyan-rgb), var(--color-opacity)) !important",
-    "--color-cyan-rgb": {
-      "light": "21, 147, 97 !important",
-      "dark": "161, 232, 229 !important"
-    },
-    "--color-blue": "rgba(var(--color-blue-rgb), var(--color-opacity)) !important",
-    "--color-blue-rgb": {
-      "light": "6, 149, 188 !important",
-      "dark": "143, 199, 255 !important"
-    },
-    "--color-purple": "rgba( var(--color-purple-rgb), var(--color-opacity) ) !important",
-    "--color-purple-rgb": {
-      "light": "134, 112, 178 !important",
-      "dark": "212, 207, 252 !important"
-    },
+    "--accent-l": {
+      "light": "var(--setting-accent-l-light, 58%)",
+      "dark": "var(--setting-accent-l-dark, 58%)"
+    }
+  },
+  ":is(,  .print)": {
+    "--color-red": "rgba(var(--color-red-rgb), var(--color-opacity))",
+    "--color-red-rgb": { "light": "189, 81, 81", "dark": "241, 167, 167" },
+    "--color-orange": "rgba(\n    var(--color-orange-rgb),\n    var(--color-opacity)\n  )",
+    "--color-orange-rgb": { "light": "217, 133, 38", "dark": "240, 192, 168" },
+    "--color-yellow": "rgba(\n    var(--color-yellow-rgb),\n    var(--color-opacity)\n  )",
+    "--color-yellow-rgb": { "light": "200, 154, 4", "dark": "238, 207, 160" },
+    "--color-green": "rgba(var(--color-green-rgb), var(--color-opacity))",
+    "--color-green-rgb": { "light": "85, 170, 24", "dark": "164, 223, 174" },
+    "--color-cyan": "rgba(var(--color-cyan-rgb), var(--color-opacity))",
+    "--color-cyan-rgb": { "light": "21, 147, 97", "dark": "161, 232, 229" },
+    "--color-blue": "rgba(var(--color-blue-rgb), var(--color-opacity))",
+    "--color-blue-rgb": { "light": "6, 149, 188", "dark": "143, 199, 255" },
+    "--color-purple": "rgba(\n    var(--color-purple-rgb),\n    var(--color-opacity)\n  )",
+    "--color-purple-rgb": { "light": "134, 112, 178", "dark": "212, 207, 252" },
     "--background-primary-hsl": {
       "light": "var(--accent-h), calc(var(--accent-s) - 12%), 97%",
       "dark": "var(--accent-h), 5%, 5%"
     },
     "--background-primary": "hsl(var(--background-primary-hsl))",
     "--background-secondary-hsl": {
-      "light": "calc(var(--accent-h) - 18), calc(var(--accent-s) - 4%), calc(100% - (100% - var(--accent-l)) / 8)",
-      "dark": "calc(var(--accent-h) + 8), calc(var(--accent-s) / 6), calc(var(--accent-l) / 5)"
+      "light": "calc(var(--accent-h) - 18), calc(var(--accent-s) - 4%),\n    calc(100% - (100% - var(--accent-l)) / 8)",
+      "dark": "calc(var(--accent-h) + 8), calc(var(--accent-s) / 6),\n    calc(var(--accent-l) / 5)"
     },
     "--background-secondary": "hsl(var(--background-secondary-hsl))",
     "--background-modifier-hover": {
-      "light": "hsl( var(--accent-h), calc(var(--accent-s) * 1.2), min(var(--accent-l) * 2, 90%) )",
-      "dark": "hsl( var(--accent-h), var(--accent-s), calc(var(--accent-l) / 3) )"
+      "light": "hsl(\n    var(--accent-h),\n    calc(var(--accent-s) * 1.2),\n    min(var(--accent-l) * 2, 90%)\n  )",
+      "dark": "hsl(\n    var(--accent-h),\n    var(--accent-s),\n    calc(var(--accent-l) / 3)\n  )"
     },
     "--accent-active": {
-      "light": "hsl( var(--accent-h), var(--accent-s), calc(var(--accent-l) + 4%) )",
-      "dark": "hsl( var(--accent-h), var(--accent-s), calc(var(--accent-l) - 16%) )"
+      "light": "hsl(\n    var(--accent-h),\n    var(--accent-s),\n    calc(var(--accent-l) + 4%)\n  )",
+      "dark": "hsl(\n    var(--accent-h),\n    var(--accent-s),\n    calc(var(--accent-l) - 16%)\n  )"
     },
     "--accent-inactive": {
-      "light": "hsl( var(--accent-h), calc(var(--accent-s) - 4%), calc(var(--accent-l) + 24%) )",
-      "dark": "hsl( var(--accent-h), calc(var(--accent-s) + 24%), calc(var(--accent-l) - 32%) )"
+      "light": "hsl(\n    var(--accent-h),\n    calc(var(--accent-s) - 4%),\n    calc(var(--accent-l) + 24%)\n  )",
+      "dark": "hsl(\n    var(--accent-h),\n    calc(var(--accent-s) + 24%),\n    calc(var(--accent-l) - 32%)\n  )"
     },
-    "--text-on-accent": {
-      "light": "#fafafa !important",
-      "dark": "#eaeaea !important"
-    },
+    "--text-on-accent": { "light": "#fafafa", "dark": "#eaeaea" },
     "--frame-background-color": {
-      "light": "hsl( var(--accent-h), var(--accent-s), calc(var(--accent-l) + 32%) )",
+      "light": "hsl(\n    var(--accent-h),\n    var(--accent-s),\n    calc(var(--accent-l) + 32%)\n  )",
       "dark": "hsl(var(--accent-h), 12%, 16%)"
     },
     "--frame-outline-color": {
-      "light": "hsl( var(--accent-h), var(--accent-s), calc(var(--accent-l) + 23.5%) )",
-      "dark": "hsl( calc(var(--accent-h) - 24), calc(var(--accent-s) + 6%), 24% )"
+      "light": "hsl(\n    var(--accent-h),\n    var(--accent-s),\n    calc(var(--accent-l) + 23.5%)\n  )",
+      "dark": "hsl(\n    calc(var(--accent-h) - 24),\n    calc(var(--accent-s) + 6%),\n    24%\n  )"
     },
     "--frame-muted-color": {
-      "light": "hsl( var(--accent-h), calc(var(--accent-s) - 20%), calc(var(--accent-l) - 10%) )",
-      "dark": "hsl( var(--accent-h), calc(var(--accent-s) - 20%), calc(var(--accent-l) + 10%) )"
+      "light": "hsl(\n    var(--accent-h),\n    calc(var(--accent-s) - 20%),\n    calc(var(--accent-l) - 10%)\n  )",
+      "dark": "hsl(\n    var(--accent-h),\n    calc(var(--accent-s) - 20%),\n    calc(var(--accent-l) + 10%)\n  )"
     },
     "--md-container-bg": {
-      "light": "var( --setting-md-container-bg, hsla( calc(var(--accent-h) + 8), calc(var(--accent-s) / 1.2), calc(100% - (100% - var(--accent-l)) / 6), 70% ) )",
-      "dark": "var( --setting-md-container-bg, hsl(calc(var(--accent-h) - 4), 18%, 9%) )"
+      "light": "var(\n    --setting-md-container-bg,\n    hsla(\n      calc(var(--accent-h) + 8),\n      calc(var(--accent-s) / 1.2),\n      calc(100% - (100% - var(--accent-l)) / 6),\n      70%\n    )\n  )",
+      "dark": "var(\n    --setting-md-container-bg,\n    hsl(calc(var(--accent-h) - 4), 18%, 9%)\n  )"
     },
     "--color-opacity": { "light": "1", "dark": "0.85" },
     "--code-preview-base": {
-      "light": "hsl( var(--accent-h), var(--accent-s), calc(var(--accent-l) - 30%) )",
+      "light": "hsl(\n    var(--accent-h),\n    var(--accent-s),\n    calc(var(--accent-l) - 30%)\n  )",
       "dark": "hsl(var(--accent-h), var(--accent-s), 85%)"
     },
     "--code-mac-style-header-bg": { "light": "#333", "dark": "#000" },
@@ -185,93 +175,14 @@
       "dark": "hsla(var(--accent-h), 50%, 94%, 75%)"
     }
   },
-  ".print)": {
-    "--color-red": "rgba(var(--color-red-rgb), var(--color-opacity)) !important",
-    "--color-red-rgb": {
-      "light": "189, 81, 81 !important",
-      "dark": "241, 167, 167 !important"
-    },
-    "--color-orange": "rgba( var(--color-orange-rgb), var(--color-opacity) ) !important",
-    "--color-orange-rgb": {
-      "light": "217, 133, 38 !important",
-      "dark": "240, 192, 168 !important"
-    },
-    "--color-yellow": "rgba( var(--color-yellow-rgb), var(--color-opacity) ) !important",
-    "--color-yellow-rgb": {
-      "light": "200, 154, 4 !important",
-      "dark": "238, 207, 160 !important"
-    },
-    "--color-green": "rgba(var(--color-green-rgb), var(--color-opacity)) !important",
-    "--color-green-rgb": {
-      "light": "85, 170, 24 !important",
-      "dark": "164, 223, 174 !important"
-    },
-    "--color-cyan": "rgba(var(--color-cyan-rgb), var(--color-opacity)) !important",
-    "--color-cyan-rgb": {
-      "light": "21, 147, 97 !important",
-      "dark": "161, 232, 229 !important"
-    },
-    "--color-blue": "rgba(var(--color-blue-rgb), var(--color-opacity)) !important",
-    "--color-blue-rgb": {
-      "light": "6, 149, 188 !important",
-      "dark": "143, 199, 255 !important"
-    },
-    "--color-purple": "rgba( var(--color-purple-rgb), var(--color-opacity) ) !important",
-    "--color-purple-rgb": {
-      "light": "134, 112, 178 !important",
-      "dark": "212, 207, 252 !important"
-    },
-    "--background-primary-hsl": {
-      "light": "var(--accent-h), calc(var(--accent-s) - 12%), 97%",
-      "dark": "var(--accent-h), 5%, 5%"
-    },
-    "--background-primary": "hsl(var(--background-primary-hsl))",
-    "--background-secondary-hsl": {
-      "light": "calc(var(--accent-h) - 18), calc(var(--accent-s) - 4%), calc(100% - (100% - var(--accent-l)) / 8)",
-      "dark": "calc(var(--accent-h) + 8), calc(var(--accent-s) / 6), calc(var(--accent-l) / 5)"
-    },
-    "--background-secondary": "hsl(var(--background-secondary-hsl))",
-    "--background-modifier-hover": {
-      "light": "hsl( var(--accent-h), calc(var(--accent-s) * 1.2), min(var(--accent-l) * 2, 90%) )",
-      "dark": "hsl( var(--accent-h), var(--accent-s), calc(var(--accent-l) / 3) )"
-    },
+  ":is(\n  .color-use-custom:not(.color-active-default-light),\n  .color-use-custom:not(.color-active-default-light) .print\n)": {
     "--accent-active": {
-      "light": "hsl( var(--accent-h), var(--accent-s), calc(var(--accent-l) + 4%) )",
-      "dark": "hsl( var(--accent-h), var(--accent-s), calc(var(--accent-l) - 16%) )"
+      "light": "var(\n    --setting-color-active-custom-light,\n    hsl(\n      calc(var(--accent-h) + 60),\n      calc(var(--accent-s) - 12%),\n      calc(var(--accent-l) + 4%)\n    )\n  )",
+      "dark": null
     },
     "--accent-inactive": {
-      "light": "hsl( var(--accent-h), calc(var(--accent-s) - 4%), calc(var(--accent-l) + 24%) )",
-      "dark": "hsl( var(--accent-h), calc(var(--accent-s) + 24%), calc(var(--accent-l) - 32%) )"
-    },
-    "--text-on-accent": {
-      "light": "#fafafa !important",
-      "dark": "#eaeaea !important"
-    },
-    "--frame-background-color": {
-      "light": "hsl( var(--accent-h), var(--accent-s), calc(var(--accent-l) + 32%) )",
-      "dark": "hsl(var(--accent-h), 12%, 16%)"
-    },
-    "--frame-outline-color": {
-      "light": "hsl( var(--accent-h), var(--accent-s), calc(var(--accent-l) + 23.5%) )",
-      "dark": "hsl( calc(var(--accent-h) - 24), calc(var(--accent-s) + 6%), 24% )"
-    },
-    "--frame-muted-color": {
-      "light": "hsl( var(--accent-h), calc(var(--accent-s) - 20%), calc(var(--accent-l) - 10%) )",
-      "dark": "hsl( var(--accent-h), calc(var(--accent-s) - 20%), calc(var(--accent-l) + 10%) )"
-    },
-    "--md-container-bg": {
-      "light": "var( --setting-md-container-bg, hsla( calc(var(--accent-h) + 8), calc(var(--accent-s) / 1.2), calc(100% - (100% - var(--accent-l)) / 6), 70% ) )",
-      "dark": "var( --setting-md-container-bg, hsl(calc(var(--accent-h) - 4), 18%, 9%) )"
-    },
-    "--color-opacity": { "light": "1", "dark": "0.85" },
-    "--code-preview-base": {
-      "light": "hsl( var(--accent-h), var(--accent-s), calc(var(--accent-l) - 30%) )",
-      "dark": "hsl(var(--accent-h), var(--accent-s), 85%)"
-    },
-    "--code-mac-style-header-bg": { "light": "#333", "dark": "#000" },
-    "--text-normal": {
-      "light": null,
-      "dark": "hsla(var(--accent-h), 50%, 94%, 75%)"
+      "light": "var(\n    --setting-color-active-custom-dark,\n    hsl(\n      calc(var(--accent-h) + 60),\n      calc(var(--accent-s) - 12%),\n      calc(var(--accent-l) + 20%)\n    )\n  )",
+      "dark": null
     }
   },
   ".excalidraw:not(.theme--dark)": {
@@ -284,41 +195,47 @@
   },
   ".excalidraw .excalidraw__embeddable__outer": {
     "--background-primary": {
-      "light": "hsla( var(--accent-h), calc(var(--accent-s) - 12%), 97%, var(--bg-opacity) ) !important",
+      "light": "hsla(\n    var(--accent-h),\n    calc(var(--accent-s) - 12%),\n    97%,\n    var(--bg-opacity)\n  )",
       "dark": null
     }
   },
   "body.titlebar-colorful": {
     "--frame-background-color": {
-      "light": "hsl( var(--accent-h), var(--accent-s), calc(var(--accent-l) + 18%) )",
+      "light": "hsl(\n    var(--accent-h),\n    var(--accent-s),\n    calc(var(--accent-l) + 18%)\n  )",
       "dark": "hsl(var(--accent-h), 12%, 38%)"
     },
     "--frame-outline-color": {
-      "light": "hsl( var(--accent-h), var(--accent-s), calc(var(--accent-l) + 23.5%) )",
-      "dark": "hsl( calc(var(--accent-h) - 6), calc(var(--accent-s) + 12%), 40% )"
+      "light": "hsl(\n    var(--accent-h),\n    var(--accent-s),\n    calc(var(--accent-l) + 23.5%)\n  )",
+      "dark": "hsl(\n    calc(var(--accent-h) - 6),\n    calc(var(--accent-s) + 12%),\n    40%\n  )"
     },
     "--frame-muted-color": {
-      "light": "hsl( var(--accent-h), calc(var(--accent-s) - 20%), ar(--accent-l) )",
-      "dark": "hsl( var(--accent-h), calc(var(--accent-s) - 20%), calc(var(--accent-l) + 20%) )"
+      "light": "hsl(\n    var(--accent-h),\n    calc(var(--accent-s) - 20%),\n    ar(--accent-l)\n  )",
+      "dark": "hsl(\n    var(--accent-h),\n    calc(var(--accent-s) - 20%),\n    calc(var(--accent-l) + 20%)\n  )"
     }
   },
   "body .status-bar": {
     "--status-bar-background": {
-      "light": "hsla( var(--accent-h), var(--accent-s), calc(100% - (100% - var(--accent-l)) / 8), var(--stauts-bar-background-opacity) )",
-      "dark": "hsla( var(--accent-h), var(--accent-s), calc(var(--accent-l) / 3), var(--stauts-bar-background-opacity) )"
+      "light": "hsla(\n    var(--accent-h),\n    var(--accent-s),\n    calc(100% - (100% - var(--accent-l)) / 8),\n    var(--stauts-bar-background-opacity)\n  )",
+      "dark": "hsla(\n    var(--accent-h),\n    var(--accent-s),\n    calc(var(--accent-l) / 3),\n    var(--stauts-bar-background-opacity)\n  )"
     }
   },
   "body.message-modify:not(.color-active-default)": {
     "--background-modifier-message": {
-      "light": "hsl( var( --setting-message-bg, calc(var(--accent-h) + 60) calc(var(--accent-s) - 12%) calc(var(--accent-l) + 4%) ) )",
-      "dark": "hsl( var( --setting-message-bg, calc(var(--accent-h) + 60) calc(var(--accent-s) - 12%) calc(var(--accent-l) - 12%) ) )"
+      "light": "hsl(\n    var(\n      --setting-message-bg,\n      calc(var(--accent-h) + 60) calc(var(--accent-s) - 12%)\n        calc(var(--accent-l) + 4%)\n    )\n  )",
+      "dark": "hsl(\n    var(\n      --setting-message-bg,\n      calc(var(--accent-h) + 60) calc(var(--accent-s) - 12%)\n        calc(var(--accent-l) - 12%)\n    )\n  )"
     }
   },
   ".dropdown": {
     "background-image": {
       "light": null,
-      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+      "dark": "url(\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
     }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  input": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
+  },
+  ".pdf-container.mod-themed\n  .annotationLayer\n  .textWidgetAnnotation\n  textarea": {
+    "filter": { "light": null, "dark": "invert(100%) hue-rotate(180deg)" }
   },
   ".pdf-container.mod-themed .popupWrapper > div": {
     "background-color": {
@@ -327,7 +244,7 @@
     },
     "filter": {
       "light": null,
-      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60))\n    drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
     }
   },
   ".pdf-container.mod-themed .popupWrapper > div::after": {
@@ -428,7 +345,21 @@
   ".is-tablet .suggestion-container": {
     "background-color": { "light": null, "dark": "var(--background-secondary)" }
   },
+  ":is(\n  .color-use-custom:not(.color-active-default-dark),\n  .color-use-custom:not(.color-active-default-dark) .print\n)": {
+    "--accent-active": {
+      "light": null,
+      "dark": "var(\n    --setting-color-active-custom-light,\n    hsl(\n      calc(var(--accent-h) + 60),\n      calc(var(--accent-s) - 12%),\n      calc(var(--accent-l) - 12%)\n    )\n  )"
+    },
+    "--accent-inactive": {
+      "light": null,
+      "dark": "var(\n    --setting-color-active-custom-dark,\n    hsl(\n      calc(var(--accent-h) + 60),\n      calc(var(--accent-s) - 12%),\n      calc(var(--accent-l) - 28%)\n    )\n  )"
+    }
+  },
   ".is-flashing": { "--text-faint": { "light": null, "dark": "#aaa" } },
+  ".markdown-preview-view\n  .markdown-preview-section\n  div:has(> pre:not([class*=\"frontmatter\"]))": {
+    "--code-bg-s": { "light": null, "dark": "20%" },
+    "--code-bg-l": { "light": null, "dark": "45%" }
+  },
   "body.image-dark-hover img": {
     "filter": { "light": null, "dark": "brightness(0.7)" },
     "transition": { "light": null, "dark": "var(--animation)" }
@@ -452,8 +383,11 @@
     "--input-bg-color": { "light": null, "dark": "var(--color-base-20)" }
   },
   ".excalidraw .excalidraw-textEditorContainer *": {
-    "color": { "light": null, "dark": "var(--text-on-accent) !important" },
-    "filter": { "light": null, "dark": "none !important" }
+    "color": { "light": null, "dark": "var(--text-on-accent)" },
+    "filter": { "light": null, "dark": "none" }
+  },
+  "body.setting-group-title\n  .modal-container\n  .mod-settings\n  .modal-content\n  .vertical-tab-header-group-title": {
+    "filter": { "light": null, "dark": "brightness(1.4)" }
   },
   "body.tab-float .mod-root .workspace-tab-header.is-active": {
     "box-shadow": { "light": null, "dark": "none" }

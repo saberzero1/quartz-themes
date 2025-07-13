@@ -41,6 +41,8 @@ html[saved-theme="dark"] {
   --text-accent: hsl(198, 63%, calc(57% - 3.8%));
   --color-base-00: #000000;
   --color-base-20: #1e1e1e;
+  --color-accent-hsl: 198, 63%, 57%;
+  --code-background: #1e1e1e;
 }
 
 :root[saved-theme="light"],
@@ -77,6 +79,7 @@ html[saved-theme="light"] {
   --color-base-00: #e6e5e5;
   --color-base-20: #c2c2c2;
   --color-accent-hsl: 198, 63%, 57%;
+  --code-background: #e1e1e1;
 }
 
 /* vietnamese */
@@ -202,7 +205,7 @@ body {
   --nav-item-background-hover: var(--background-modifier-hover);
   --bold-color: inherit;
   --bold-weight: calc(600 + 200);
-  --checkbox-radius: var(--radius-s);
+  --checkbox-radius: 3px;
   --checkbox-size: 16px;
   --checkbox-marker-color: rgba(
     0,
@@ -212,11 +215,11 @@ body {
   );
   --checkbox-color: hsl(198, 63%, 57%);
   --checkbox-color-hover: hsl(198, 63%, calc(57% - 3.8%));
-  --checkbox-border-color: var(--text-faint);
+  --checkbox-border-color: #b3b3b3;
   --checkbox-border-color-hover: #b3b3b3;
   --code-background: #111;
   --code-normal: #dadada;
-  --code-comment: var(--text-faint);
+  --code-comment: #b3b3b3;
   --code-function: #e0de71;
   --code-important: #e9973f;
   --code-keyword: #fa99cd;
@@ -225,12 +228,12 @@ body {
   --code-string: #44cf6e;
   --code-tag: #fb464c;
   --code-value: #a882ff;
-  --collapse-icon-color: var(--text-faint);
+  --collapse-icon-color: #b3b3b3;
   --collapse-icon-color-collapsed: hsl(198, 63%, calc(57% - 3.8%));
   --cursor-link: pointer;
   --font-weight: 400;
   --graph-line: var(--color-base-35, rgba(251, 70, 76, 0.6));
-  --graph-node-unresolved: var(--text-faint);
+  --graph-node-unresolved: #b3b3b3;
   --graph-node-tag: #44cf6e;
   --h1-color: inherit;
   --h1-font: inherit;
@@ -243,7 +246,7 @@ body {
   --link-color-hover: hsl(calc(198 - 5), calc(63% * 1.05), calc(57% * 1.29));
   --link-weight: var(--link-weight);
   --link-external-filter: none;
-  --nav-item-background-hover: rgba(255, 255, 255, 0.15);
+  --nav-item-background-hover: hsla(198, 63%, 57%, 0.15);
   --nav-item-children-padding-start: 4px;
   --nav-item-children-margin-start: 12px;
   --p-spacing: 1rem;
@@ -277,10 +280,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", var(--font-text-theme), "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "OxaniumFira", "Inter", "Rubik", "Segoe UI", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -289,7 +292,10 @@ body {
   text-rendering: optimizeLegibility;
   font-family:
     "??",
-    var(--default-font),
+    "OxaniumFira",
+    "Inter",
+    "Rubik",
+    "Segoe UI",
     var(--default-font, "??"),
     ui-sans-serif,
     -apple-system,
@@ -315,6 +321,15 @@ body {
   user-select: none;
   -webkit-user-select: none;
   caret-color: hsl(198, 63%, calc(57% - 3.8%));
+  --background-modifier-hover: hsla(198, 63%, 57%, 0.15);
+  --background-primary: #000;
+  --background-secondary: #2a2a2a;
+  --default-font: "OxaniumFira", "Inter", "Rubik", "Segoe UI";
+  --icon-color: #b3b3b3;
+  --link-color: #ffa500;
+  --link-external-color: #ffc400;
+  --link-external-color-hover: #ffc400;
+  --text-faint: #b3b3b3;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -360,7 +375,7 @@ html {
     border-style: solid;
     border-color: rgba(102, 187, 106, 0.25);
     border-width: 0px;
-    border-radius: var(--radius-s);
+    border-radius: 3px;
     margin: 1em 0;
     mix-blend-mode: normal;
     background-color: transparent;
@@ -959,8 +974,8 @@ body {
   pre {
     position: relative;
     min-height: 38px;
-    background-color: #111;
-    border-radius: var(--radius-s);
+    background-color: #1e1e1e;
+    border-radius: 3px;
     white-space: pre-wrap;
     border: 0px solid transparent;
     overflow-x: auto;
@@ -969,7 +984,8 @@ body {
     border-image-source: linear-gradient(
       to right,
       transparent,
-      hsl(198, 63%, calc(57% - 3.8%), transparent)
+      hsl(198, 63%, calc(57% - 3.8%)),
+      transparent
     );
     border-top: 1px solid;
     padding: 24px 16px;
@@ -1040,8 +1056,8 @@ body {
 
   code {
     color: #dadada;
-    background-color: #111;
-    border-radius: var(--radius-s);
+    background-color: #1e1e1e;
+    border-radius: 3px;
     font-size: 1em;
     padding: 0.15em 0.3em;
     border: 0px solid transparent;
@@ -1058,7 +1074,10 @@ body {
     font-size: calc(16px * 0.8);
     font-family:
       "??",
-      var(--default-font),
+      "OxaniumFira",
+      "Inter",
+      "Rubik",
+      "Segoe UI",
       var(--default-font, "??"),
       ui-sans-serif,
       -apple-system,
@@ -1078,22 +1097,18 @@ body {
     border-radius: 3px;
     box-shadow: inset 0em 0em 12.5px hsl(198, 63%, calc(57% - 3.8%));
     color: white;
-    display: inline !important;
+    display: inline;
     padding: 2px 6px;
     user-select: none;
 
     &:hover {
       background-color: hsla(198, 63%, 57%, 0.25);
-      border-radius: var(--radius-s);
+      border-radius: 3px;
       color: white;
       animation: 0.3s bighover forwards;
-      box-shadow: 0em 0em 0.8px 1.2px
-        hsl(
-          198,
-          63%,
-          calc(57% - 3.8%),
-          inset 0em 0em 15px hsl(198, 63%, calc(57% - 3.8%))
-        );
+      box-shadow:
+        0em 0em 0.8px 1.2px hsl(198, 63%, calc(57% - 3.8%)),
+        inset 0em 0em 15px hsl(198, 63%, calc(57% - 3.8%));
       transition:
         background-color 0.2s,
         box-shadow 0.2s;
@@ -1179,7 +1194,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: hsl(198, 63%, 57%);
+        color: #b3b3b3;
 
         text-overflow: ellipsis;
         position: relative;
@@ -1207,7 +1222,7 @@ body {
           width: 100%;
         }
         &:hover {
-          background-color: rgba(255, 255, 255, 0.15);
+          background-color: hsla(198, 63%, 57%, 0.15);
           color: #dadada;
           font-weight: inherit;
 
@@ -1237,7 +1252,7 @@ body {
           var(--nav-item-children-margin-left)
         );
         margin-bottom: 1px;
-        border-inline-start: 1px solid var(--bulletlist-color);
+        border-inline-start: 1px solid hsl(198, 63%, calc(57% - 3.8%));
       }
       ul.explorer-ul li {
         text-overflow: ellipsis;
@@ -1245,9 +1260,9 @@ body {
 
         a {
           padding: 6px 8px 6px 24px;
-          border-radius: var(--radius-s);
-          color: var(--nav-item-color);
-          cursor: default;
+          border-radius: 3px;
+          color: #b3b3b3;
+          cursor: pointer;
           display: flex;
           font-size: 16px;
           font-weight: inherit;
@@ -1335,7 +1350,7 @@ body {
     ul.toc-content.overflow {
       li,
       li > a {
-        color: var(--nav-item-color);
+        color: #b3b3b3;
 
         font-weight: inherit;
 
@@ -1447,7 +1462,8 @@ body {
       border-image-source: linear-gradient(
         to right,
         transparent,
-        hsl(198, 63%, calc(57% - 3.8%), transparent)
+        hsl(198, 63%, calc(57% - 3.8%)),
+        transparent
       );
       border-left: 0px solid transparent;
       border-right: 0px solid transparent;
@@ -1500,7 +1516,8 @@ body {
           border-image-source: linear-gradient(
             to right,
             transparent,
-            hsl(198, 63%, calc(57% - 3.8%), transparent)
+            hsl(198, 63%, calc(57% - 3.8%)),
+            transparent
           );
           box-shadow: none;
           background: #4e4b4b;
@@ -1557,7 +1574,7 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: rgba(255, 255, 255, 0.15);
+                background-color: hsla(198, 63%, 57%, 0.15);
               }
               & > ul > li > p {
                 background-color: transparent;
@@ -1640,7 +1657,7 @@ body {
       var(--CG-workspace-background-workspace-slider, 0.45)
     );
     border: 1px solid transparent;
-    border-radius: var(--radius-m);
+    border-radius: 3px;
     box-shadow:
       0px 1px 2px #000000,
       0px 3.4px 6.7px #000000,
@@ -1665,7 +1682,7 @@ body {
         var(--CG-workspace-background-workspace-slider, 0.45)
       );
 
-      border-radius: var(--radius-m);
+      border-radius: 3px;
 
       background-color: var(--background-primary);
     }
