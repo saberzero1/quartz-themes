@@ -1,36 +1,450 @@
 {
   "body": {
-    ".theme-dark { --font-text-theme": {
-      "light": "var(--font-text-override), \"Lexend\", \"Inter\", var(--font-default), sans-serif",
+    "color-scheme": { "light": "light", "dark": null },
+    "--highlight-mix-blend-mode": { "light": "darken", "dark": null },
+    "--mono-rgb-0": { "light": "255, 255, 255", "dark": null },
+    "--mono-rgb-100": { "light": "0, 0, 0", "dark": null },
+    "--color-accent": {
+      "light": "hsl(var(--accent-h), var(--accent-s), var(--accent-l))",
       "dark": null
+    },
+    "--background-modifier-box-shadow": { "light": "#000000", "dark": null },
+    "--background-modifier-cover": { "light": "#dcdcdc", "dark": null },
+    "--input-shadow": {
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "dark": null
+    },
+    "--input-shadow-hover": {
+      "light": "inset 0 0 0 1px #000000, 0 2px 3px 0 #000000, 0 1px 1.5px 0 #000000, 0 1px 2px 0 #000000, 0 0 0 0 transparent",
+      "dark": null
+    },
+    "--shadow-s": {
+      "light": "0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000",
+      "dark": null
+    },
+    "--shadow-l": { "light": "", "dark": null },
+    "--canvas-color": { "light": null, "dark": "126, 126, 126" }
+  },
+  ".notice progress[value]::-webkit-progress-bar": {
+    "background-color": { "light": "#262626", "dark": null },
+    "box-shadow": { "light": "inset 0px 0px 0px 1px #363636", "dark": null }
+  },
+  ".nord-bright": {
+    "--love-rgb": { "light": "191, 97, 106", "dark": null },
+    "--gold-rgb": { "light": "208, 135, 112", "dark": null },
+    "--rose-rgb": { "light": "180, 142, 173", "dark": null },
+    "--pine-rgb": { "light": "129, 161, 193", "dark": null },
+    "--foam-rgb": { "light": "136, 192, 208", "dark": null },
+    "--iris-rgb": { "light": "94, 129, 172", "dark": null },
+    "--base": { "light": "#e5e9f0", "dark": null },
+    "--surface-rgb": { "light": "236, 239, 244", "dark": null },
+    "--overlay": { "light": "#d8dee9", "dark": null },
+    "--muted": { "light": "#4c566a", "dark": null },
+    "--subtle": { "light": "#4c566a", "dark": null },
+    "--text": { "light": "#434c5e", "dark": null },
+    "--highlight-low": { "light": "#e5e9f0", "dark": null },
+    "--highlight-med-rgb": { "light": "216, 222, 233", "dark": null }
+  },
+  ".catppuccin-latte": {
+    "--love-rgb": { "light": "230, 69, 83", "dark": null },
+    "--gold-rgb": { "light": "223, 142, 29", "dark": null },
+    "--rose-rgb": { "light": "221, 120, 120", "dark": null },
+    "--pine-rgb": { "light": "4, 165, 229", "dark": null },
+    "--foam-rgb": { "light": "32, 159, 181", "dark": null },
+    "--iris-rgb": { "light": "114, 135, 253", "dark": null },
+    "--base": { "light": "#e6e9ef", "dark": null },
+    "--surface-rgb": { "light": "239, 241, 245", "dark": null },
+    "--overlay": { "light": "#dce0e8", "dark": null },
+    "--muted": { "light": "#6c6f85", "dark": null },
+    "--subtle": { "light": "#5c5f77", "dark": null },
+    "--text": { "light": "#4c4f69", "dark": null },
+    "--highlight-low": { "light": "#ccd0da", "dark": null },
+    "--highlight-med-rgb": { "light": "188, 192, 204", "dark": null }
+  },
+  ".everforest-light": {
+    "--love-rgb": { "light": "248, 85, 82", "dark": null },
+    "--gold-rgb": { "light": "223, 160, 0", "dark": null },
+    "--rose-rgb": { "light": "245, 125, 38", "dark": null },
+    "--pine-rgb": { "light": "53, 167, 124", "dark": null },
+    "--foam-rgb": { "light": "58, 148, 197", "dark": null },
+    "--iris-rgb": { "light": "223, 105, 186", "dark": null },
+    "--base": { "light": "#efebd4", "dark": null },
+    "--surface-rgb": { "light": "253, 246, 227", "dark": null },
+    "--overlay": { "light": "#eaedc8", "dark": null },
+    "--muted": { "light": "#939f91", "dark": null },
+    "--subtle": { "light": "#829181", "dark": null },
+    "--text": { "light": "#5c6a72", "dark": null },
+    "--highlight-low": { "light": "#efebd4", "dark": null },
+    "--highlight-med-rgb": { "light": "230, 226, 204", "dark": null }
+  },
+  ".gruvbox-light": {
+    "--love-rgb": { "light": "204, 36, 29", "dark": null },
+    "--gold-rgb": { "light": "215, 153, 33", "dark": null },
+    "--rose-rgb": { "light": "152, 151, 26", "dark": null },
+    "--pine-rgb": { "light": "69, 133, 136", "dark": null },
+    "--foam-rgb": { "light": "104, 157, 106", "dark": null },
+    "--iris-rgb": { "light": "177, 98, 134", "dark": null },
+    "--base": { "light": "#ebdbb2", "dark": null },
+    "--surface-rgb": { "light": "251, 241, 199", "dark": null },
+    "--overlay": { "light": "#f2e5bc", "dark": null },
+    "--muted": { "light": "#7c6f54", "dark": null },
+    "--subtle": { "light": "#504945", "dark": null },
+    "--text": { "light": "#3c3836", "dark": null },
+    "--highlight-low": { "light": "#d5c4a1", "dark": null },
+    "--highlight-med-rgb": { "light": "189, 174, 147", "dark": null }
+  },
+  ".obsidian-light": {
+    "--love-rgb": { "light": "233, 49, 71", "dark": null },
+    "--gold-rgb": { "light": "224, 172, 0", "dark": null },
+    "--rose-rgb": { "light": "236, 117, 0", "dark": null },
+    "--pine-rgb": { "light": "8, 109, 221", "dark": null },
+    "--foam-rgb": { "light": "8, 185, 78", "dark": null },
+    "--iris-rgb": { "light": "120, 82, 238", "dark": null },
+    "--base": { "light": "#f6f6f6", "dark": null },
+    "--surface-rgb": { "light": "255, 255, 255", "dark": null },
+    "--overlay": { "light": "#e3e3e3", "dark": null },
+    "--muted": { "light": "#ababab", "dark": null },
+    "--subtle": { "light": "#707070", "dark": null },
+    "--text": { "light": "#222222", "dark": null },
+    "--highlight-low": { "light": "#fafafa", "dark": null },
+    "--highlight-med-rgb": { "light": "224, 224, 224", "dark": null }
+  },
+  ".uw-octopus": {
+    "--love-rgb": { "light": "205, 106, 94", "dark": null },
+    "--gold-rgb": { "light": "230, 161, 73", "dark": null },
+    "--rose-rgb": { "light": "127, 111, 134", "dark": null },
+    "--pine-rgb": { "light": "86, 139, 187", "dark": null },
+    "--foam-rgb": { "light": "106, 168, 149", "dark": null },
+    "--iris-rgb": { "light": "204, 135, 90", "dark": null },
+    "--base": { "light": "#f2edf4", "dark": null },
+    "--surface-rgb": { "light": "252, 251, 250", "dark": null },
+    "--overlay": { "light": "#eee9f0", "dark": null },
+    "--muted": { "light": "#798094", "dark": null },
+    "--subtle": { "light": "#616980", "dark": null },
+    "--text": { "light": "#475669", "dark": null },
+    "--highlight-low": { "light": "#e3e9eb", "dark": null },
+    "--highlight-med-rgb": { "light": "206, 222, 227", "dark": null }
+  },
+  ".uw-coral": {
+    "--love-rgb": { "light": "145, 121, 123", "dark": null },
+    "--gold-rgb": { "light": "242, 154, 99", "dark": null },
+    "--rose-rgb": { "light": "145, 166, 204", "dark": null },
+    "--pine-rgb": { "light": "119, 166, 155", "dark": null },
+    "--foam-rgb": { "light": "138, 182, 189", "dark": null },
+    "--iris-rgb": { "light": "222, 152, 137", "dark": null },
+    "--base": { "light": "#f3e9e2", "dark": null },
+    "--surface-rgb": { "light": "255, 244, 237", "dark": null },
+    "--overlay": { "light": "#fbe1db", "dark": null },
+    "--muted": { "light": "#a79a8c", "dark": null },
+    "--subtle": { "light": "#928577", "dark": null },
+    "--text": { "light": "#6c6156", "dark": null },
+    "--highlight-low": { "light": "#ede2da", "dark": null },
+    "--highlight-med-rgb": { "light": "231, 214, 196", "dark": null }
+  },
+  ".uw-aqua": {
+    "--love-rgb": { "light": "194, 105, 128", "dark": null },
+    "--gold-rgb": { "light": "183, 195, 121", "dark": null },
+    "--rose-rgb": { "light": "215, 131, 116", "dark": null },
+    "--pine-rgb": { "light": "123, 168, 149", "dark": null },
+    "--foam-rgb": { "light": "96, 161, 169", "dark": null },
+    "--iris-rgb": { "light": "128, 127, 152", "dark": null },
+    "--base": { "light": "#f0efec", "dark": null },
+    "--surface-rgb": { "light": "255, 251, 245", "dark": null },
+    "--overlay": { "light": "#e6eeec", "dark": null },
+    "--muted": { "light": "#80766f", "dark": null },
+    "--subtle": { "light": "#7c726b", "dark": null },
+    "--text": { "light": "#4e4c49", "dark": null },
+    "--highlight-low": { "light": "#e9eef0", "dark": null },
+    "--highlight-med-rgb": { "light": "220, 227, 230", "dark": null }
+  },
+  ".uw-oyster": {
+    "--love-rgb": { "light": "64, 45, 48", "dark": null },
+    "--gold-rgb": { "light": "255, 150, 0", "dark": null },
+    "--rose-rgb": { "light": "140, 35, 51", "dark": null },
+    "--pine-rgb": { "light": "50, 111, 144", "dark": null },
+    "--foam-rgb": { "light": "70, 102, 67", "dark": null },
+    "--iris-rgb": { "light": "103, 67, 100", "dark": null },
+    "--base": { "light": "#eee6e5", "dark": null },
+    "--surface-rgb": { "light": "245, 239, 238", "dark": null },
+    "--overlay": { "light": "#e6dad7", "dark": null },
+    "--muted": { "light": "#7f8284", "dark": null },
+    "--subtle": { "light": "#545557", "dark": null },
+    "--text": { "light": "#2c2e2f", "dark": null },
+    "--highlight-low": { "light": "#eae5e0", "dark": null },
+    "--highlight-med-rgb": { "light": "209, 201, 193", "dark": null }
+  },
+  ".dropdown": {
+    "background-image": {
+      "light": null,
+      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+    }
+  },
+  ".pdf-container.mod-themed .popupWrapper > div": {
+    "background-color": {
+      "light": null,
+      "dark": "var(--background-secondary-alt)"
+    },
+    "filter": {
+      "light": null,
+      "dark": "drop-shadow(0px 0px 1px var(--color-base-60)) drop-shadow(0px 1px 2px #000000) drop-shadow(0px 4px 6px #000000)"
+    }
+  },
+  ".pdf-container.mod-themed .popupWrapper > div::after": {
+    "background-color": {
+      "light": null,
+      "dark": "var(--background-secondary-alt)"
+    }
+  },
+  ".pdf-container.mod-themed .popupContent:empty + .popupMeta": {
+    "background-color": {
+      "light": null,
+      "dark": "var(--background-secondary-alt)"
     }
   },
   ".mermaid > svg": {
     "filter": {
       "light": null,
       "dark": "invert(100%) hue-rotate(180deg) saturate(1.25)"
-    },
-    "} .markdown-source-view.mod-cm6 .cm-hmd-codeblock { --indentation-guide-editing-indent": {
+    }
+  },
+  ".canvas-card-menu": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".canvas-card-menu .canvas-card-menu-button svg": {
+    "fill": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".is-mobile": {
+    "--color-base-00": { "light": null, "dark": "#000" },
+    "--color-base-10": { "light": null, "dark": "#111" },
+    "--color-base-20": { "light": null, "dark": "#1e1e1e" },
+    "--tag-background": {
       "light": null,
-      "dark": "0"
+      "dark": "hsla(var(--interactive-accent-hsl), 0.2)"
     },
-    "} .markdown-source-view.mod-cm6 .cm-preview-code-block pre { margin": {
+    "--search-result-background": {
       "light": null,
-      "dark": "0"
+      "dark": "var(--background-secondary)"
     },
-    "} .markdown-source-view.mod-cm6 .code-block-flair { position": {
+    "--background-modifier-form-field": {
       "light": null,
-      "dark": "absolute"
+      "dark": "var(--background-modifier-border)"
     },
-    "right": { "light": null, "dark": "6px" },
-    "top": { "light": null, "dark": "6px" },
-    "z-index": { "light": null, "dark": "1" },
-    "display": { "light": null, "dark": "inline-block" },
-    "padding": { "light": null, "dark": "var(--size-4-1) var(--size-4-2)" },
-    "border-radius": { "light": null, "dark": "var(--code-radius)" },
-    "font-family": { "light": null, "dark": "var(--font-interface)" },
-    "font-size": { "light": null, "dark": "var(--font-ui-smaller)" },
-    "color": { "light": null, "dark": "var(--text-muted)" },
-    "cursor": { "light": null, "dark": "var(--cursor)" }
+    "--background-modifier-cover": { "light": null, "dark": "#000000" },
+    "--background-modifier-hover": {
+      "light": null,
+      "dark": "rgba(var(--mono-rgb-100), 0.15)"
+    },
+    "--settings-home-background": {
+      "light": null,
+      "dark": "var(--background-primary)"
+    },
+    "--mobile-sidebar-background": {
+      "light": null,
+      "dark": "var(--background-secondary)"
+    },
+    "--background-modifier-message": {
+      "light": null,
+      "dark": "var(--background-secondary)"
+    }
+  },
+  ".is-tablet": {
+    "--titlebar-background": {
+      "light": null,
+      "dark": "var(--background-primary)"
+    },
+    "--titlebar-background-focused": {
+      "light": null,
+      "dark": "var(--background-primary)"
+    },
+    "--interactive-normal": {
+      "light": null,
+      "dark": "var(--background-modifier-border)"
+    },
+    "--interactive-hover": {
+      "light": null,
+      "dark": "var(--background-modifier-border-hover)"
+    },
+    "--modal-background": {
+      "light": null,
+      "dark": "var(--background-secondary)"
+    }
+  },
+  ".is-tablet .community-item": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".is-tablet .vertical-tab-content": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".workspace-drawer-inner": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".is-mobile .prompt": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".is-mobile .prompt input.prompt-input": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".is-tablet .suggestion-container": {
+    "background-color": { "light": null, "dark": "var(--background-secondary)" }
+  },
+  ".rose-pine-moon": {
+    "--love-rgb": { "light": null, "dark": "235, 111, 146" },
+    "--gold-rgb": { "light": null, "dark": "246, 193, 119" },
+    "--rose-rgb": { "light": null, "dark": "234, 154, 151" },
+    "--pine-rgb": { "light": null, "dark": "62, 143, 176" },
+    "--foam-rgb": { "light": null, "dark": "156, 207, 216" },
+    "--iris-rgb": { "light": null, "dark": "196, 167, 231" },
+    "--base": { "light": null, "dark": "#232136" },
+    "--surface-rgb": { "light": null, "dark": "42, 39, 63" },
+    "--overlay": { "light": null, "dark": "#393552" },
+    "--muted": { "light": null, "dark": "#6e6a86" },
+    "--subtle": { "light": null, "dark": "#908caa" },
+    "--text": { "light": null, "dark": "#e0def4" },
+    "--highlight-low": { "light": null, "dark": "#2a283e" },
+    "--highlight-med-rgb": { "light": null, "dark": "68, 65, 90" }
+  },
+  ".nord-dark": {
+    "--love-rgb": { "light": null, "dark": "191, 97, 106" },
+    "--gold-rgb": { "light": null, "dark": "235, 203, 139" },
+    "--rose-rgb": { "light": null, "dark": "208, 135, 112" },
+    "--pine-rgb": { "light": null, "dark": "129, 161, 193" },
+    "--foam-rgb": { "light": null, "dark": "143, 188, 187" },
+    "--iris-rgb": { "light": null, "dark": "180, 142, 173" },
+    "--base": { "light": null, "dark": "#3b4252" },
+    "--surface-rgb": { "light": null, "dark": "46, 52, 64" },
+    "--overlay": { "light": null, "dark": "#434c5e" },
+    "--muted": { "light": null, "dark": "#d8dee9" },
+    "--subtle": { "light": null, "dark": "#e5e9f0" },
+    "--text": { "light": null, "dark": "#eceff4" },
+    "--highlight-low": { "light": null, "dark": "#3b4252" },
+    "--highlight-med-rgb": { "light": null, "dark": "67, 76, 94" }
+  },
+  ".catppuccin-mocha": {
+    "--love-rgb": { "light": null, "dark": "250, 179, 135" },
+    "--gold-rgb": { "light": null, "dark": "249, 226, 175" },
+    "--rose-rgb": { "light": null, "dark": "235, 160, 172" },
+    "--foam-rgb": { "light": null, "dark": "137, 180, 250" },
+    "--pine-rgb": { "light": null, "dark": "166, 227, 161" },
+    "--iris-rgb": { "light": null, "dark": "203, 166, 247" },
+    "--base": { "light": null, "dark": "#181825" },
+    "--surface-rgb": { "light": null, "dark": "30, 30, 46" },
+    "--overlay": { "light": null, "dark": "#11111b" },
+    "--muted": { "light": null, "dark": "#a6adc8" },
+    "--subtle": { "light": null, "dark": "#bac2de" },
+    "--text": { "light": null, "dark": "#cdd6f4" },
+    "--highlight-low": { "light": null, "dark": "#313244" },
+    "--highlight-med-rgb": { "light": null, "dark": "69, 71, 90" }
+  },
+  ".everforest-dark": {
+    "--love-rgb": { "light": null, "dark": "230, 126, 128" },
+    "--gold-rgb": { "light": null, "dark": "219, 188, 127" },
+    "--rose-rgb": { "light": null, "dark": "230, 152, 117" },
+    "--pine-rgb": { "light": null, "dark": "131, 192, 146" },
+    "--foam-rgb": { "light": null, "dark": "127, 187, 179" },
+    "--iris-rgb": { "light": null, "dark": "214, 153, 182" },
+    "--base": { "light": null, "dark": "#1e2326" },
+    "--surface-rgb": { "light": null, "dark": "39, 46, 51" },
+    "--overlay": { "light": null, "dark": "#384b55" },
+    "--muted": { "light": null, "dark": "#859289" },
+    "--subtle": { "light": null, "dark": "#9da9a0" },
+    "--text": { "light": null, "dark": "#d3c6aa" },
+    "--highlight-low": { "light": null, "dark": "#374145" },
+    "--highlight-med-rgb": { "light": null, "dark": "65, 75, 80" }
+  },
+  ".biscuit-dark": {
+    "--love-rgb": { "light": null, "dark": "202, 63, 63" },
+    "--gold-rgb": { "light": null, "dark": "227, 156, 69" },
+    "--rose-rgb": { "light": null, "dark": "228, 106, 58" },
+    "--pine-rgb": { "light": null, "dark": "81, 120, 148" },
+    "--foam-rgb": { "light": null, "dark": "98, 147, 134" },
+    "--iris-rgb": { "light": null, "dark": "159, 86, 154" },
+    "--base": { "light": null, "dark": "#181515" },
+    "--surface-rgb": { "light": null, "dark": "34, 30, 30" },
+    "--overlay": { "light": null, "dark": "#423939" },
+    "--muted": { "light": null, "dark": "#978787" },
+    "--subtle": { "light": null, "dark": "#b6a8a5" },
+    "--text": { "light": null, "dark": "#f4e6d2" },
+    "--highlight-low": { "light": null, "dark": "#423939" },
+    "--highlight-med-rgb": { "light": null, "dark": "109, 95, 95" }
+  },
+  ".obsidian-dark": {
+    "--love-rgb": { "light": null, "dark": "251, 70, 76" },
+    "--gold-rgb": { "light": null, "dark": "224, 222, 113" },
+    "--rose-rgb": { "light": null, "dark": "233, 151, 63" },
+    "--pine-rgb": { "light": null, "dark": "2, 122, 255" },
+    "--foam-rgb": { "light": null, "dark": "68, 207, 110" },
+    "--iris-rgb": { "light": null, "dark": "168, 130, 255" },
+    "--base": { "light": null, "dark": "#262626" },
+    "--surface-rgb": { "light": null, "dark": "30, 30, 30" },
+    "--overlay": { "light": null, "dark": "#363636" },
+    "--muted": { "light": null, "dark": "#666666" },
+    "--subtle": { "light": null, "dark": "#bababa" },
+    "--text": { "light": null, "dark": "#dadada" },
+    "--highlight-low": { "light": null, "dark": "#2a2a2a" },
+    "--highlight-med-rgb": { "light": null, "dark": "63, 63, 63" }
+  },
+  ".uw-deep": {
+    "--love-rgb": { "light": null, "dark": "215, 97, 76" },
+    "--gold-rgb": { "light": null, "dark": "217, 209, 89" },
+    "--rose-rgb": { "light": null, "dark": "229, 156, 88" },
+    "--pine-rgb": { "light": null, "dark": "105, 147, 194" },
+    "--foam-rgb": { "light": null, "dark": "159, 195, 135" },
+    "--iris-rgb": { "light": null, "dark": "146, 135, 194" },
+    "--base": { "light": null, "dark": "#11121a" },
+    "--surface-rgb": { "light": null, "dark": "21, 23, 29" },
+    "--overlay": { "light": null, "dark": "#22252f" },
+    "--muted": { "light": null, "dark": "#57626b" },
+    "--subtle": { "light": null, "dark": "#7c8185" },
+    "--text": { "light": null, "dark": "#d5e1e5" },
+    "--highlight-low": { "light": null, "dark": "#272b2f" },
+    "--highlight-med-rgb": { "light": null, "dark": "49, 60, 66" }
+  },
+  ".uw-ocean": {
+    "--love-rgb": { "light": null, "dark": "254, 114, 143" },
+    "--gold-rgb": { "light": null, "dark": "255, 225, 97" },
+    "--rose-rgb": { "light": null, "dark": "232, 177, 146" },
+    "--pine-rgb": { "light": null, "dark": "235, 98, 59" },
+    "--foam-rgb": { "light": null, "dark": "70, 201, 199" },
+    "--iris-rgb": { "light": null, "dark": "115, 104, 182" },
+    "--base": { "light": null, "dark": "#081020" },
+    "--surface-rgb": { "light": null, "dark": "8, 18, 43" },
+    "--overlay": { "light": null, "dark": "#06334d" },
+    "--muted": { "light": null, "dark": "#7585b2" },
+    "--subtle": { "light": null, "dark": "#97a4c9" },
+    "--text": { "light": null, "dark": "#e1e3ff" },
+    "--highlight-low": { "light": null, "dark": "#28344b" },
+    "--highlight-med-rgb": { "light": null, "dark": "40, 56, 82" }
+  },
+  ".uw-seaweed": {
+    "--love-rgb": { "light": null, "dark": "255, 123, 123" },
+    "--gold-rgb": { "light": null, "dark": "242, 225, 95" },
+    "--rose-rgb": { "light": null, "dark": "216, 237, 141" },
+    "--pine-rgb": { "light": null, "dark": "109, 196, 120" },
+    "--foam-rgb": { "light": null, "dark": "191, 229, 222" },
+    "--iris-rgb": { "light": null, "dark": "95, 163, 162" },
+    "--base": { "light": null, "dark": "#193233" },
+    "--surface-rgb": { "light": null, "dark": "25, 57, 58" },
+    "--overlay": { "light": null, "dark": "#214b4c" },
+    "--muted": { "light": null, "dark": "#7cab9b" },
+    "--subtle": { "light": null, "dark": "#a7c9c9" },
+    "--text": { "light": null, "dark": "#dee2b9" },
+    "--highlight-low": { "light": null, "dark": "#1f3533" },
+    "--highlight-med-rgb": { "light": null, "dark": "63, 99, 96" }
+  },
+  ".uw-sand": {
+    "--love-rgb": { "light": null, "dark": "232, 157, 149" },
+    "--gold-rgb": { "light": null, "dark": "246, 173, 119" },
+    "--rose-rgb": { "light": null, "dark": "187, 163, 121" },
+    "--pine-rgb": { "light": null, "dark": "121, 166, 222" },
+    "--foam-rgb": { "light": null, "dark": "195, 230, 148" },
+    "--iris-rgb": { "light": null, "dark": "145, 145, 188" },
+    "--base": { "light": null, "dark": "#151527" },
+    "--surface-rgb": { "light": null, "dark": "25, 25, 46" },
+    "--overlay": { "light": null, "dark": "#212037" },
+    "--muted": { "light": null, "dark": "#a09a79" },
+    "--subtle": { "light": null, "dark": "#b8b28e" },
+    "--text": { "light": null, "dark": "#ced9bf" },
+    "--highlight-low": { "light": null, "dark": "#1a2230" },
+    "--highlight-med-rgb": { "light": null, "dark": "48, 62, 85" }
   }
 }
