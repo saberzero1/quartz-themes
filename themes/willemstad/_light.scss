@@ -16,10 +16,9 @@ html[saved-theme="light"] {
     color: var(--shiki-light);
   }
 
-  .theme-dark { --background-modifier-box-shadow: none;
---input-shadow: none;
---input-shadow-hover: none;
---shadow-s: none;
+  .theme-dark { --col-highlight-0-org: hsl(60, 100%, 50%);
+--col-highlight-1-org: hsl(120, 100%, 50%);
+--col-highlight-2-org: hsl(180, 100%, 50%);
 
 }
 

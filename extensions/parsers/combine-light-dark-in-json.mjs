@@ -5,7 +5,7 @@ import { getTheme, isFullTheme } from "../../util/util.mjs";
 import stripComments from "../packages/strip-css-comments.mjs";
 
 export default function combineLightDarkInJson(manifestCollection) {
-  const appJSON = JSON.parse(readFileSync("./app.json", "utf-8"));
+  const appJSON = JSON.parse(readFileSync("./app_converted.json", "utf-8"));
 
   writeFileSync(
     "./app-light-dark.json",

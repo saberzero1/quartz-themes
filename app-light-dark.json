@@ -1,1 +1,45 @@
-{}
+{
+  "body": { "--canvas-color": { "light": null, "dark": "126, 126, 126" } },
+  ".dropdown": {
+    "background-image": {
+      "light": null,
+      "dark": "url(\"data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23FFF%27 opacity=%270.6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 %3E%3Cpath d=%27m7 15 5 5 5-5%27/%3E%3Cpath d=%27m7 9 5-5 5 5%27/%3E%3C/svg%3E\")"
+    }
+  },
+  ".pdf-container.mod-themed .popupWrapper > div::after": {
+    "background-color": { "light": null, "dark": "#363636" }
+  },
+  ".pdf-container.mod-themed .popupContent:empty + .popupMeta": {
+    "background-color": { "light": null, "dark": "#363636" }
+  },
+  ".mermaid > svg": {
+    "filter": {
+      "light": null,
+      "dark": "invert(100%) hue-rotate(180deg) saturate(1.25)"
+    }
+  },
+  ".canvas-card-menu": {
+    "background-color": { "light": null, "dark": "#1e1e1e" }
+  },
+  ".canvas-card-menu .canvas-card-menu-button svg": {
+    "fill": { "light": null, "dark": "#1e1e1e" }
+  },
+  ".is-tablet .community-item": {
+    "background-color": { "light": null, "dark": "#1e1e1e" }
+  },
+  ".is-tablet .vertical-tab-content": {
+    "background-color": { "light": null, "dark": "#1e1e1e" }
+  },
+  ".workspace-drawer-inner": {
+    "background-color": { "light": null, "dark": "#1e1e1e" }
+  },
+  ".is-mobile .prompt": {
+    "background-color": { "light": null, "dark": "#1e1e1e" }
+  },
+  ".is-mobile .prompt input.prompt-input": {
+    "background-color": { "light": null, "dark": "#1e1e1e" }
+  },
+  ".is-tablet .suggestion-container": {
+    "background-color": { "light": null, "dark": "#1e1e1e" }
+  }
+}

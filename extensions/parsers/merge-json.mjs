@@ -3,7 +3,7 @@ import { format } from "../formatter.mjs";
 import { getTheme } from "../../util/util.mjs";
 
 export default function injectJSON(manifestCollection) {
-  const appJSON = JSON.parse(readFileSync("./app.json", "utf-8"));
+  const appJSON = JSON.parse(readFileSync("./app_converted.json", "utf-8"));
   const appLightDarkJSON = JSON.parse(
     readFileSync("./app-light-dark.json", "utf-8"),
   );

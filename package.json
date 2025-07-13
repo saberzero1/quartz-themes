@@ -2,7 +2,8 @@
   "name": "quartz-themes",
   "version": "1.0.0",
   "description": "Quartz-compatible Obsidian themes",
-  "main": "index.js",
+  "main": "main.js",
+  "type": "module",
   "scripts": {
     "build": "just build",
     "compile": "just compile",
@@ -57,6 +58,7 @@
     "postcss-combine-duplicated-selectors": "^10.0.3",
     "postcss-combine-media-query": "^2.0.0",
     "postcss-custom-properties": "^14.0.6",
+    "postcss-nesting": "^13.0.2",
     "postcss-prune-var": "^1.1.2",
     "postcss-pseudo-is": "^0.3.0",
     "postcss-rgba-hex": "^0.3.7",

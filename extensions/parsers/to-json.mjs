@@ -5,16 +5,17 @@ import { getTheme } from "../../util/util.mjs";
 import stripComments from "../packages/strip-css-comments.mjs";
 
 export default function toJSON(manifestCollection) {
-  const defaultObsidianCSS = format(readFileSync("./app.css", "utf-8"), "css");
-  writeFileSync("./app.css", defaultObsidianCSS);
+  const defaultObsidianCSS = format(
+    readFileSync("./app_converted.css", "utf-8"),
+    "css",
+  );
+  writeFileSync("./app_converted.css", defaultObsidianCSS);
 
-  /*
   const defaultObsidianJSON = convert(defaultObsidianCSS, true);
   writeFileSync(
-    "./app.json",
+    "./app_converted.json",
     format(JSON.stringify(defaultObsidianJSON), "json"),
   );
-  */
 
   manifestCollection.forEach((manifest) => {
     const theme = getTheme(manifest);
