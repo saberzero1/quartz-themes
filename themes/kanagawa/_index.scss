@@ -46,10 +46,10 @@ html[saved-theme="dark"] {
   --background-secondary: #181820;
   --text-normal: #dcd7ba;
   --text-faint: #727169;
-  --text-a: var(--dragonBlue);
+  --text-a: #658594;
   --text-a-hover: #ff5d62;
-  --text-highlight-bg: var(--waveBlue1);
-  --background-modifier-border: var(--dragonBlue);
+  --text-highlight-bg: #223249;
+  --background-modifier-border: #658594;
   --text-accent: #76946a;
   --bold-color: #ebdbb2;
 }
@@ -88,6 +88,17 @@ html[saved-theme="light"] {
   --color-base-100: #222222;
   --color-accent-hsl: 258, 88%, 66%;
   --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --background-primary: #f2efe9;
+  --background-primary-alt: #e7dba0;
+  --background-secondary: #f8f8f8;
+  --text-normal: #545464;
+  --text-faint: #8a8980;
+  --text-a: #4e8ca2;
+  --text-a-hover: #c84053;
+  --text-highlight-bg: #b5cbd2;
+  --background-modifier-border: #9fb5c9;
+  --text-accent: #6f894e;
+  --bold-color: #545464;
 }
 
 /**
@@ -197,7 +208,7 @@ body {
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
   --checkbox-marker-color: #1f1f28;
-  --checkbox-color: var(--dragonBlue);
+  --checkbox-color: #658594;
   --checkbox-color-hover: hsl(
     calc(258 - 3),
     calc(88% * 1.02),
@@ -282,12 +293,12 @@ body {
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
   --font-text:
     "??", "??", -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
-    sans-serif, Apple Color Emoji, Segoe UI Emoji, "Arial" !important;
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -769,7 +780,7 @@ body {
   }
   h1 a {
     --link-weight: 700;
-    color: #cc241d !important;
+    color: #cc241d;
   }
   h2.page-title,
   h2.page-title a,
@@ -790,7 +801,7 @@ body {
   }
   h2 a {
     --link-weight: 600;
-    color: #d65d0e !important;
+    color: #d65d0e;
   }
   h3 {
     margin-block-end: 0rem;
@@ -809,7 +820,7 @@ body {
   }
   h3 a {
     --link-weight: 600;
-    color: #d79921 !important;
+    color: #d79921;
   }
   h4 {
     margin-block-end: 0rem;
@@ -828,7 +839,7 @@ body {
   }
   h4 a {
     --link-weight: 600;
-    color: #98971a !important;
+    color: #98971a;
   }
   h5 {
     margin-block-end: 0rem;
@@ -847,7 +858,7 @@ body {
   }
   h5 a {
     --link-weight: 600;
-    color: #689d6a !important;
+    color: #689d6a;
   }
   h6 {
     margin-block-end: 0rem;
@@ -866,7 +877,7 @@ body {
   }
   h6 a {
     --link-weight: 600;
-    color: #458588 !important;
+    color: #458588;
   }
   h1,
   h1 a,
@@ -1092,7 +1103,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: var(--dragonBlue);
+        color: #658594;
 
         text-overflow: ellipsis;
         position: relative;
@@ -1166,10 +1177,10 @@ body {
           font-weight: inherit;
           line-height: 1.3;
           margin-bottom: 2px;
-          border-bottom-left-radius: 0 !important;
-          border-bottom-right-radius: 0 !important;
-          border-top-left-radius: 0 !important;
-          border-top-right-radius: 0 !important;
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
 
           color: inherit;
           font-size: 1rem;
@@ -1433,7 +1444,7 @@ body {
                 color: #dcd7ba;
 
                 &.match-tag {
-                  color: #938aa9 !important;
+                  color: #938aa9;
                 }
               }
             }

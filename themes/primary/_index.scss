@@ -322,10 +322,10 @@ body {
     "??", "Cascadia Code", ui-monospace, SFMono-Regular, "Cascadia Mono",
     "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
     "Consolas", "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "Inter", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "Inter", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -367,6 +367,11 @@ body {
     "cv11" 1,
     "cv12" 0,
     "cv13" 0;
+  font-weight: 450;
+  --bold-weight: 750;
+  --checkbox-radius: 4px;
+  --hr-thickness: 1px;
+  --tag-radius: 1em;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);

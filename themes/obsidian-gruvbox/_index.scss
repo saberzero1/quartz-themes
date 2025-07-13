@@ -441,10 +441,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -478,6 +478,7 @@ body {
   --tag-decoration-hover: underline;
   --tag-radius: 0.5em;
   --bold-weight: 600;
+  --checkbox-radius: 0;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -521,7 +522,7 @@ html {
   .callout {
     overflow: hidden;
     border-style: solid;
-    border-color: rgba(var(--gray_x), var(--callout-border-opacity));
+    border-color: rgba(var(--gray_x), 0.4);
     border-width: 1px;
     border-radius: 4px;
     margin: 1em 0;

@@ -41,10 +41,10 @@ html[saved-theme="dark"] {
   --color-base-100: #dadada;
   --color-accent-hsl: 258, 88%, 66%;
   --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
-  --background-primary: var(--dark-bg);
+  --background-primary: #2f2a27;
   --background-primary-alt: #38312e;
-  --background-secondary: var(--dark-bg);
-  --background-modifier-hover: var(--dark-bg);
+  --background-secondary: #2f2a27;
+  --background-modifier-hover: #2f2a27;
   --background-modifier-border: #38312e;
   --background-modifier-border-hover: #c43131;
   --background-modifier-border-focus: #c43131;
@@ -55,7 +55,7 @@ html[saved-theme="dark"] {
   --text-accent: #c95454;
   --text-accent-hover: #c43131;
   --text-highlight-bg: #756b13;
-  --nav-item-background-hover: var(--dark-bg);
+  --nav-item-background-hover: #2f2a27;
 }
 
 :root[saved-theme="light"],
@@ -324,7 +324,7 @@ body {
   --bold-weight: calc(600 + 200);
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --checkbox-marker-color: var(--dark-bg);
+  --checkbox-marker-color: #2f2a27;
   --checkbox-color: #c95454;
   --checkbox-color-hover: #c95454;
   --checkbox-border-color: #949494;
@@ -394,9 +394,9 @@ body {
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -419,7 +419,7 @@ body {
     "Segoe UI Symbol",
     sans-serif;
   line-height: 1.3;
-  background-color: var(--dark-bg);
+  background-color: #2f2a27;
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
@@ -429,7 +429,7 @@ body {
   --inline-title-color: #f0eae2;
   --tag-background: rgba(201, 84, 84, 0.1);
   color: #ffffff;
-  font-size: 20px !important;
+  font-size: 20px;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -637,7 +637,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
 
-  background-color: var(--dark-bg);
+  background-color: #2f2a27;
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -666,13 +666,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: var(--dark-bg);
+      background-color: #2f2a27;
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: var(--dark-bg);
+        background-color: #2f2a27;
 
         background-color: var(--background-primary);
       }
@@ -681,7 +681,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: var(--dark-bg);
+          background-color: #2f2a27;
 
           background-color: var(--background-secondary);
 
@@ -1167,7 +1167,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: var(--dark-bg);
+        background-color: #2f2a27;
 
         background-color: var(--background-secondary);
 
@@ -1432,7 +1432,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: var(--dark-bg);
+        background-color: #2f2a27;
 
         border: 0.5pt solid var(--color-base-40, rgba(201, 84, 84, 0.6));
 
@@ -1451,12 +1451,12 @@ body {
           width: 100%;
           padding: 24px;
           padding-inline-end: 48px;
-          background-color: var(--dark-bg);
+          background-color: #2f2a27;
           font-size: 16px;
           border: none;
           height: 48px;
           border-radius: 0;
-          border-bottom: 1px solid var(--dark-bg);
+          border-bottom: 1px solid #2f2a27;
 
           margin-bottom: 0;
           border-bottom: none;
@@ -1583,7 +1583,7 @@ body {
 
   /* POPOVER */
   .popover {
-    background-color: var(--dark-bg);
+    background-color: #2f2a27;
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow:
@@ -1603,7 +1603,7 @@ body {
     & .popover-inner {
       border: 1px solid transparent;
 
-      background-color: var(--dark-bg);
+      background-color: #2f2a27;
 
       border-radius: 8px;
 

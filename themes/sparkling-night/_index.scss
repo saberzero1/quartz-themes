@@ -41,6 +41,15 @@ html[saved-theme="dark"] {
   --color-base-100: #dadada;
   --color-accent-hsl: 258, 88%, 66%;
   --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --background-primary: #121019;
+  --background-secondary: #16141f;
+  --checkbox-border-color: #7c809b;
+  --checkbox-border-color-hover: #5aff15;
+  --checkbox-color-hover: #5aff15;
+  --checkbox-marker-color: #fcfcfc;
+  --h1-color: #8b80f9;
+  --text-accent: #5aff15;
+  --text-normal: #fcfcfc;
 }
 
 :root[saved-theme="light"],
@@ -77,6 +86,15 @@ html[saved-theme="light"] {
   --color-base-100: #222222;
   --color-accent-hsl: 258, 88%, 66%;
   --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --background-primary: #121019;
+  --background-secondary: #16141f;
+  --checkbox-border-color: #7c809b;
+  --checkbox-border-color-hover: #5aff15;
+  --checkbox-color-hover: #5aff15;
+  --checkbox-marker-color: #fcfcfc;
+  --h1-color: #8b80f9;
+  --text-accent: #5aff15;
+  --text-normal: #fcfcfc;
 }
 
 @font-face {
@@ -291,9 +309,9 @@ body {
   --nav-item-background-hover: var(--background-modifier-hover);
   --bold-color: inherit;
   --bold-weight: calc(600 + 200);
-  --checkbox-radius: 4px;
+  --checkbox-radius: 3px;
   --checkbox-size: 16px;
-  --checkbox-marker-color: #000;
+  --checkbox-marker-color: #121019;
   --checkbox-color: #8b80f9;
   --checkbox-color-hover: hsl(
     calc(258 - 3),
@@ -303,7 +321,7 @@ body {
   --checkbox-border-color: #666666;
   --checkbox-border-color-hover: #b3b3b3;
   --code-background: #111;
-  --code-normal: #dadada;
+  --code-normal: #fcfcfc;
   --code-comment: #666666;
   --code-function: #e0de71;
   --code-important: #e9973f;
@@ -377,10 +395,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -404,8 +422,8 @@ body {
     sans-serif;
   line-height: 1.3;
   font-size: 16px;
-  background-color: #000;
-  color: #dadada;
+  background-color: #121019;
+  color: #fcfcfc;
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
@@ -455,7 +473,7 @@ html {
     border-style: solid;
     border-color: rgba(158, 158, 158, 0.25);
     border-width: 0px;
-    border-radius: 4px;
+    border-radius: 3px;
     margin: 1em 0;
     mix-blend-mode: normal;
     background-color: rgba(158, 158, 158, 0.1);
@@ -617,7 +635,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
 
-  background-color: #000;
+  background-color: #121019;
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -646,13 +664,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: #000;
+      background-color: #121019;
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: #000;
+        background-color: #121019;
 
         background-color: var(--background-primary);
       }
@@ -661,7 +679,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: #000;
+          background-color: #121019;
 
           background-color: var(--background-secondary);
 
@@ -866,10 +884,10 @@ body {
     );
     border-image-slice: 1;
     border-radius: 3px;
-    margin-bottom: 0.5em !important;
-    margin-top: 0.3em !important;
-    padding-bottom: 0.2em !important;
-    padding-top: 0.3em !important;
+    margin-bottom: 0.5em;
+    margin-top: 0.3em;
+    padding-bottom: 0.2em;
+    padding-top: 0.3em;
     text-align: center;
     width: 100%;
 
@@ -896,10 +914,10 @@ body {
     border-image: linear-gradient(0.25turn, #8b80f9 0%, transparent 60%);
     border-image-slice: 1;
     border-radius: 3px;
-    margin-bottom: 0.5em !important;
-    margin-top: 0.3em !important;
-    padding-bottom: 0.2em !important;
-    padding-top: 0.3em !important;
+    margin-bottom: 0.5em;
+    margin-top: 0.3em;
+    padding-bottom: 0.2em;
+    padding-top: 0.3em;
     text-align: left;
     width: 100%;
 
@@ -920,9 +938,9 @@ body {
     font-weight: 600;
     letter-spacing: -0.015em;
     line-height: 1.3;
-    margin-bottom: 0.3em !important;
-    margin-top: 0.3em !important;
-    padding-top: 0.3em !important;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+    padding-top: 0.3em;
 
     font-size: 1.6rem;
   }
@@ -969,7 +987,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: inherit;
+    color: #8b80f9;
     font-family: inherit;
     font-size: 1em;
     font-style: normal;
@@ -1006,11 +1024,11 @@ body {
     position: relative;
     padding: 12px 16px;
     min-height: 38px;
-    border-radius: 4px;
+    border-radius: 3px;
     white-space: pre-wrap;
     border: 0px solid transparent;
     overflow-x: auto;
-    background-color: var(--codeblock-background);
+    background-color: #242032;
 
     background-color: var(--code-background);
     white-space: pre;
@@ -1081,6 +1099,11 @@ body {
       "Source Code Pro", monospace;
     border: 0px solid transparent;
     -webkit-box-decoration-break: clone;
+    background-color: #242032;
+    color: #5aff15;
+    font-size: 0.9em;
+    padding: 3px 4px;
+    border-radius: 5px;
 
     background-color: var(--code-background);
     color: var(--code-normal);
@@ -1123,7 +1146,7 @@ body {
 
   /* METADATA */
   .content-meta {
-    color: #dadada;
+    color: #fcfcfc;
 
     color: var(--text-normal);
   }
@@ -1147,13 +1170,13 @@ body {
       font-weight: 600;
       letter-spacing: -0.015em;
       line-height: 1.3;
-      margin-bottom: 0.3em !important;
-      margin-top: 0.3em !important;
-      padding-top: 0.3em !important;
+      margin-bottom: 0.3em;
+      margin-top: 0.3em;
+      padding-top: 0.3em;
     }
 
     ul li {
-      color: #dadada;
+      color: #fcfcfc;
 
       font-weight: 500;
     }
@@ -1175,7 +1198,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: #000;
+        background-color: #121019;
 
         background-color: var(--background-secondary);
 
@@ -1215,7 +1238,7 @@ body {
         }
         &:hover {
           background-color: rgba(255, 255, 255, 0.15);
-          color: #dadada;
+          color: #fcfcfc;
           font-weight: inherit;
 
           font-size: 1rem;
@@ -1252,8 +1275,8 @@ body {
 
         a {
           padding: 6px 8px 6px 24px;
-          border-radius: 4px;
-          color: #dadada;
+          border-radius: 3px;
+          color: #fcfcfc;
           cursor: pointer;
           display: flex;
           font-size: 16px;
@@ -1322,9 +1345,9 @@ body {
         font-weight: 600;
         letter-spacing: -0.015em;
         line-height: 1.3;
-        margin-bottom: 0.3em !important;
-        margin-top: 0.3em !important;
-        padding-top: 0.3em !important;
+        margin-bottom: 0.3em;
+        margin-top: 0.3em;
+        padding-top: 0.3em;
 
         margin-block: 0;
       }
@@ -1336,7 +1359,7 @@ body {
     ul.toc-content.overflow {
       li,
       li > a {
-        color: #dadada;
+        color: #fcfcfc;
 
         font-weight: inherit;
 
@@ -1363,9 +1386,9 @@ body {
       font-weight: 600;
       letter-spacing: -0.015em;
       line-height: 1.3;
-      margin-bottom: 0.3em !important;
-      margin-top: 0.3em !important;
-      padding-top: 0.3em !important;
+      margin-bottom: 0.3em;
+      margin-top: 0.3em;
+      padding-top: 0.3em;
 
       min-height: calc(2 * var(--p-spacing) + var(--h3-line-height));
       margin-block: 0;
@@ -1431,7 +1454,7 @@ body {
       background: transparent;
       border: 1px solid transparent;
       border-radius: 5px;
-      color: #dadada;
+      color: #fcfcfc;
       font-family: inherit;
       font-size: calc(16px * 0.937);
       outline: none;
@@ -1446,7 +1469,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: #000;
+        background-color: #121019;
 
         border: 0.5pt solid var(--color-base-40, rgba(251, 70, 76, 0.6));
 
@@ -1465,12 +1488,12 @@ body {
           width: 100%;
           padding: 24px;
           padding-inline-end: 48px;
-          background-color: #000;
+          background-color: #121019;
           font-size: 16px;
           border: none;
           height: 48px;
           border-radius: 0;
-          border-bottom: 1px solid var(--raisin-black);
+          border-bottom: 1px solid #16141f;
 
           margin-bottom: 0;
           border-bottom: none;
@@ -1478,7 +1501,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: #dadada;
+          color: #fcfcfc;
 
           background: transparent;
           margin-bottom: 0;
@@ -1526,7 +1549,7 @@ body {
               & > ul > li > p {
                 background-color: transparent;
 
-                color: #dadada;
+                color: #fcfcfc;
 
                 &.match-tag {
                   color: #5aff15;
@@ -1597,7 +1620,7 @@ body {
 
   /* POPOVER */
   .popover {
-    background-color: #000;
+    background-color: #121019;
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow:
@@ -1617,7 +1640,7 @@ body {
     & .popover-inner {
       border: 1px solid transparent;
 
-      background-color: #000;
+      background-color: #121019;
 
       border-radius: 8px;
 

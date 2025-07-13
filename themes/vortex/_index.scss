@@ -285,10 +285,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -318,6 +318,26 @@ body {
   user-select: none;
   -webkit-user-select: none;
   caret-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --default-font: Rubik, Segoe UI, Roboto, Arial, sans-serif, sans-serif;
+  --checkbox-marker-color: #111111;
+  --checkbox-color: hsl(258, 88%, 66%);
+  --checkbox-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff);
+  --checkbox-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff);
+  --checkbox-border-color-hover: hsl(258, 88%, 66%);
+  --tag-color: hsl(258, 88%, 66%);
+  --tag-color-hover: color-mix(in srgb, hsl(258, 88%, 66%) 70%, #ffffff);
+  --tag-background: color-mix(in srgb, hsl(258, 88%, 66%) 10%, transparent);
+  --tag-background-hover: color-mix(
+    in srgb,
+    hsl(258, 88%, 66%) 30%,
+    transparent
+  );
+  --tag-radius: 5px;
+  --background-modifier-border: color-mix(
+    in srgb,
+    hsl(258, 88%, 66%) 5%,
+    transparent
+  );
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -763,9 +783,15 @@ body {
     font-variant: normal;
     letter-spacing: -0.015em;
     line-height: 1.2;
-    font-family: var(--default-font);
+    font-family:
+      Rubik,
+      Segoe UI,
+      Roboto,
+      Arial,
+      sans-serif,
+      sans-serif;
     font-weight: 600;
-    text-shadow: 0 0 0.5em var(--text-title-h1);
+    text-shadow: 0 0 0.5em #00e5ff;
 
     font-size: 2rem;
   }
@@ -784,7 +810,13 @@ body {
     font-variant: normal;
     letter-spacing: -0.015em;
     line-height: 1.2;
-    font-family: var(--default-font);
+    font-family:
+      Rubik,
+      Segoe UI,
+      Roboto,
+      Arial,
+      sans-serif,
+      sans-serif;
     font-weight: 600;
     text-shadow: 0 0 0.5em #ffca28;
 
@@ -803,7 +835,13 @@ body {
     font-variant: normal;
     letter-spacing: -0.015em;
     line-height: 1.3;
-    font-family: var(--default-font);
+    font-family:
+      Rubik,
+      Segoe UI,
+      Roboto,
+      Arial,
+      sans-serif,
+      sans-serif;
     font-weight: 600;
     text-shadow: 0 0 0.5em #ff5d68;
 
@@ -822,7 +860,13 @@ body {
     font-variant: normal;
     letter-spacing: 0.015em;
     line-height: 1.4;
-    font-family: var(--default-font);
+    font-family:
+      Rubik,
+      Segoe UI,
+      Roboto,
+      Arial,
+      sans-serif,
+      sans-serif;
     font-weight: 600;
     text-shadow: 0 0 0.5em #d500f9;
 
@@ -841,7 +885,13 @@ body {
     font-variant: normal;
     letter-spacing: 0.015em;
     line-height: 1.5;
-    font-family: var(--default-font);
+    font-family:
+      Rubik,
+      Segoe UI,
+      Roboto,
+      Arial,
+      sans-serif,
+      sans-serif;
     font-weight: 600;
     text-shadow: 0 0 0.5em #2ecc71;
 
@@ -860,7 +910,13 @@ body {
     font-variant: normal;
     letter-spacing: 0.015em;
     line-height: 1.5;
-    font-family: var(--default-font);
+    font-family:
+      Rubik,
+      Segoe UI,
+      Roboto,
+      Arial,
+      sans-serif,
+      sans-serif;
     font-weight: 600;
     text-shadow: 0 0 0.5em #db3eb1;
 
@@ -1036,7 +1092,13 @@ body {
       font-variant: normal;
       letter-spacing: -0.015em;
       line-height: 1.3;
-      font-family: var(--default-font);
+      font-family:
+        Rubik,
+        Segoe UI,
+        Roboto,
+        Arial,
+        sans-serif,
+        sans-serif;
       font-weight: 600;
       text-shadow: 0 0 0.5em #ff5d68;
     }
@@ -1209,7 +1271,13 @@ body {
         font-variant: normal;
         letter-spacing: -0.015em;
         line-height: 1.3;
-        font-family: var(--default-font);
+        font-family:
+          Rubik,
+          Segoe UI,
+          Roboto,
+          Arial,
+          sans-serif,
+          sans-serif;
         font-weight: 600;
         text-shadow: 0 0 0.5em #ff5d68;
 
@@ -1248,7 +1316,13 @@ body {
       font-variant: normal;
       letter-spacing: -0.015em;
       line-height: 1.3;
-      font-family: var(--default-font);
+      font-family:
+        Rubik,
+        Segoe UI,
+        Roboto,
+        Arial,
+        sans-serif,
+        sans-serif;
       font-weight: 600;
       text-shadow: 0 0 0.5em #ff5d68;
 

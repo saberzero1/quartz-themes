@@ -393,10 +393,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "Courier New", monospace, "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "Courier New", monospace, "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -410,6 +410,9 @@ body {
   -webkit-user-select: none;
   caret-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
   --checkbox-radius: 3px;
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  line-height: 1.6;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -860,7 +863,7 @@ body {
     margin: 16px 0 12px;
     padding-bottom: 8px;
     text-transform: uppercase;
-    font-size: var(--font-size-huge);
+    font-size: 24px;
 
     font-size: 2rem;
   }
@@ -1261,8 +1264,8 @@ body {
           border-radius: 4px;
           color: #ff6600;
           font-family: "VT323", "Courier New", monospace;
-          font-size: var(--font-size-small);
-          padding: var(--spacing-xs) 8px;
+          font-size: 12px;
+          padding: 4px 8px;
           transition:
             background-color 0.3s ease,
             color 0.3s ease;

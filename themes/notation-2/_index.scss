@@ -21,17 +21,9 @@ html[saved-theme="dark"] {
   }
   --mono-rgb-100: 255, 255, 255;
   --color-base-100: #dadada;
-  --color-accent-hsl: 210 !important, 77% !important, 51% !important;
-  --color-accent-2: hsl(
-    calc(210 !important - 5),
-    calc(77% !important * 1.05),
-    calc(51% !important * 1.29)
-  );
-  --text-accent: hsl(
-    calc(210 !important - 3),
-    calc(77% !important * 1.02),
-    calc(51% !important * 1.15)
-  );
+  --color-accent-hsl: 210, 77%, 51%;
+  --color-accent-2: hsl(calc(210 - 5), calc(77% * 1.05), calc(51% * 1.29));
+  --text-accent: hsl(calc(210 - 3), calc(77% * 1.02), calc(51% * 1.15));
   color-scheme: dark;
   --background-modifier-border: #323130;
   --color-base-00: #191919;
@@ -67,12 +59,8 @@ html[saved-theme="light"] {
     color: var(--shiki-light);
   }
 
-  --color-accent-hsl: 210 !important, 77% !important, 51% !important;
-  --color-accent-2: hsl(
-    calc(210 !important - 3),
-    calc(77% !important * 1.02),
-    calc(51% !important * 1.15)
-  );
+  --color-accent-hsl: 210, 77%, 51%;
+  --color-accent-2: hsl(calc(210 - 3), calc(77% * 1.02), calc(51% * 1.15));
   color-scheme: light;
   --mono-rgb-100: 0, 0, 0;
   --color-base-00: hsl(0, 0%, 100%);
@@ -223,7 +211,7 @@ body {
   --bold-weight: calc(600 + 200);
   --checkbox-radius: 3px;
   --checkbox-size: 16px;
-  --checkbox-marker-color: hsl(var(--hue), 8%, 20%);
+  --checkbox-marker-color: hsl(203, 8%, 20%);
   --checkbox-color: rgb(46, 170, 220);
   --checkbox-color-hover: rgba(46, 170, 220, 0.8);
   --checkbox-border-color: rgba(255, 255, 255, 0.55);
@@ -265,25 +253,10 @@ body {
   --tag-color-hover: rgba(255, 255, 255, 0.45);
   --tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-background: hsla(210 !important, 77% !important, 51% !important, 0.1);
-  --tag-background-hover: hsla(
-    210 !important,
-    77% !important,
-    51% !important,
-    0.2
-  );
-  --tag-border-color: hsla(
-    210 !important,
-    77% !important,
-    51% !important,
-    0.15
-  );
-  --tag-border-color-hover: hsla(
-    210 !important,
-    77% !important,
-    51% !important,
-    0.15
-  );
+  --tag-background: hsla(210, 77%, 51%, 0.1);
+  --tag-background-hover: hsla(210, 77%, 51%, 0.2);
+  --tag-border-color: hsla(210, 77%, 51%, 0.15);
+  --tag-border-color-hover: hsla(210, 77%, 51%, 0.15);
   --tag-border-width: 0px;
   --tag-weight: inherit;
   --background-primary: #000;
@@ -297,18 +270,14 @@ body {
   --text-muted: #a0a0a0;
   --text-faint: #707070;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
-  --text-accent: hsl(210 !important, 77% !important, 51% !important);
-  --text-accent-hover: hsl(
-    calc(210 !important - 5),
-    calc(77% !important * 1.05),
-    calc(51% !important * 1.29)
-  );
-  --interactive-accent-hsl: 210 !important, 77% !important, 51% !important;
+  --text-accent: hsl(210, 77%, 51%);
+  --text-accent-hover: hsl(calc(210 - 5), calc(77% * 1.05), calc(51% * 1.29));
+  --interactive-accent-hsl: 210, 77%, 51%;
   --font-monospace:
     "??", "??", "iA Writer Duospace", "Nitti", Menlo, Courier, monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -330,7 +299,7 @@ body {
     "Segoe UI Symbol";
   line-height: 1.3;
   font-size: 16px;
-  background-color: hsl(var(--hue), 8%, 20%);
+  background-color: hsl(203, 8%, 20%);
   color: rgba(255, 255, 255, 0.9);
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
@@ -524,7 +493,7 @@ html {
     gap: 4px;
     font-size: inherit;
     align-items: flex-start;
-    color: rgba(255, 255, 255, 0.9) !important;
+    color: rgba(255, 255, 255, 0.9);
     line-height: 1.5em;
     margin: 0px;
 
@@ -562,7 +531,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
 
-  background-color: hsl(var(--hue), 8%, 20%);
+  background-color: hsl(203, 8%, 20%);
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -591,13 +560,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: hsl(var(--hue), 8%, 20%);
+      background-color: hsl(203, 8%, 20%);
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: hsl(var(--hue), 8%, 20%);
+        background-color: hsl(203, 8%, 20%);
 
         background-color: var(--background-primary);
       }
@@ -606,7 +575,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: hsl(var(--hue), 8%, 20%);
+          background-color: hsl(203, 8%, 20%);
 
           background-color: var(--background-secondary);
 
@@ -1090,7 +1059,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: hsl(var(--hue), 8%, 20%);
+        background-color: hsl(203, 8%, 20%);
 
         background-color: var(--background-secondary);
 
@@ -1171,9 +1140,9 @@ body {
           cursor: pointer;
           display: flex;
           line-height: 1.3;
-          color: rgba(255, 255, 255, 0.7) !important;
-          font-size: 16px !important;
-          font-weight: 500 !important;
+          color: rgba(255, 255, 255, 0.7);
+          font-size: 16px;
+          font-weight: 500;
           margin-bottom: 0.4em;
 
           color: inherit;
@@ -1355,7 +1324,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: hsl(var(--hue), 8%, 20%);
+        background-color: hsl(203, 8%, 20%);
 
         border: 0.5pt solid var(--color-base-40, rgba(89, 65, 65, 0.6));
 
@@ -1374,12 +1343,12 @@ body {
           width: 100%;
           padding: 24px;
           padding-inline-end: 48px;
-          background-color: hsl(var(--hue), 8%, 20%);
+          background-color: hsl(203, 8%, 20%);
           font-size: 16px;
           border: none;
           height: 48px;
           border-radius: 0;
-          border-bottom: 1px solid hsl(var(--hue), 8%, 23%);
+          border-bottom: 1px solid hsl(203, 8%, 23%);
 
           margin-bottom: 0;
           border-bottom: none;
@@ -1506,7 +1475,7 @@ body {
 
   /* POPOVER */
   .popover {
-    background-color: hsl(var(--hue), 8%, 20%);
+    background-color: hsl(203, 8%, 20%);
     border: 1px solid rgba(255, 255, 255, 0.14);
     border-radius: 8px;
     box-shadow:
@@ -1526,7 +1495,7 @@ body {
     & .popover-inner {
       border: 1px solid rgba(255, 255, 255, 0.14);
 
-      background-color: hsl(var(--hue), 8%, 20%);
+      background-color: hsl(203, 8%, 20%);
 
       border-radius: 8px;
 

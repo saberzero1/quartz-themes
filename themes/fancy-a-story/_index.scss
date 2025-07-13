@@ -391,7 +391,7 @@ body {
   --hr-color: transparent;
   --hr-thickness: 2px;
   --icon-color: color-mix(in lab, #272b34, #ffffff 70%);
-  --inline-title-font: "Orbitron", Arial, serif;
+  --inline-title-font: "ParkLaneNF", "Limelight", "Impact", "Inter";
   --italic-color: inherit;
   --link-color: hsl(calc(194.8 - 3), calc(83.1% * 1.02), calc(16.3% * 1.15));
   --link-color-hover: hsl(
@@ -456,11 +456,6 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "Noto", "Arial" !important;
-  height: 100%;
   margin: 0;
   overscroll-behavior: none;
   padding: 0;
@@ -468,6 +463,7 @@ body {
   text-rendering: optimizeLegibility;
   font-family:
     "??",
+    "Federo",
     "Poppins",
     var(--default-font, "??"),
     ui-sans-serif,
@@ -490,7 +486,12 @@ body {
   caret-color: hsl(calc(194.8 - 3), calc(83.1% * 1.02), calc(16.3% * 1.15));
   --inline-title-color: black;
   --nav-item-children-margin-start: 12px;
-  background-color: #ffffff;
+  contain: initial;
+  height: auto;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", Semplicita, "Noto", "Arial";
+  background-color: white;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -678,7 +679,7 @@ html {
     /*background: var(--bg);*/
 
     & > .callout-title-inner > p {
-      --font-weight: 400;
+      --font-weight: 500;
       font-weight: 400;
       color: 90, 139, 236;
 
@@ -686,7 +687,7 @@ html {
     }
 
     .callout-title-inner {
-      --font-weight: 400;
+      --font-weight: 500;
       font-weight: 400;
       color: 90, 139, 236;
     }
@@ -936,10 +937,10 @@ body {
   h1 {
     margin-block-end: 0;
     margin-block-start: 0;
-    --font-weight: 600;
+    --font-weight: 500;
     color: hsl(194.8, 83.1%, 16.3%);
-    font-family: "Orbitron", Arial, serif;
-    font-size: 1em;
+    font-family: "ParkLaneNF", "Limelight", "Impact", "Inter";
+    font-size: 3em;
     font-style: italic;
     font-variant: small-caps;
     font-weight: 400;
@@ -949,49 +950,93 @@ body {
     font-size: 2rem;
   }
   h1 a {
-    --link-weight: 600;
+    --link-weight: 500;
   }
   h2.page-title,
   h2.page-title a,
   h2 {
-    break-after: avoid;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    --font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-family: "ParkLaneNF", "Limelight", "Impact", "Inter";
+    font-size: 3em;
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: -0.015em;
+    line-height: 1.2em;
+    text-wrap: balance;
 
     font-size: 1.75rem;
   }
   h2 a {
-    --link-weight: 400;
+    --link-weight: 500;
   }
   h3 {
-    break-after: avoid;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    --font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-family: "ParkLaneNF", "Limelight", "Impact", "Inter";
+    font-size: 3em;
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: -0.015em;
+    line-height: 1.2em;
+    text-wrap: balance;
 
     font-size: 1.6rem;
   }
   h3 a {
-    --link-weight: 400;
+    --link-weight: 500;
   }
   h4 {
-    break-after: avoid;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    --font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-family: "ParkLaneNF", "Limelight", "Impact", "Inter";
+    font-size: 3em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: 0.015em;
+    line-height: 1.2em;
+    text-wrap: balance;
 
     font-size: 1.4rem;
   }
   h4 a {
-    --link-weight: 400;
+    --link-weight: 500;
   }
   h5 {
-    break-after: avoid;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    --font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-family: "ParkLaneNF", "Limelight", "Impact", "Inter";
+    font-size: 3em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: 0.015em;
+    line-height: 1.2em;
+    text-wrap: balance;
 
     font-size: 1.2rem;
   }
   h5 a {
-    --link-weight: 400;
+    --link-weight: 500;
   }
   h6 {
     margin-block-end: 0;
     margin-block-start: 0;
-    --font-weight: var(--font-weight);
-    color: inherit;
-    font-family: "Orbitron", Arial, serif;
-    font-size: 1em;
+    --font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-family: "ParkLaneNF", "Limelight", "Impact", "Inter";
+    font-size: 3em;
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
@@ -1002,7 +1047,7 @@ body {
     font-size: 1.1rem;
   }
   h6 a {
-    --link-weight: 400;
+    --link-weight: 500;
   }
   h1,
   h1 a,
@@ -1123,6 +1168,7 @@ body {
     font-size: 14px;
     font-family:
       "??",
+      "Federo",
       "Poppins",
       var(--default-font, "??"),
       ui-sans-serif,
@@ -1163,7 +1209,18 @@ body {
   /* BACKLINKS */
   .backlinks {
     h3 {
-      break-after: avoid;
+      margin-block-end: 0;
+      margin-block-start: 0;
+      --font-weight: 500;
+      color: rgb(255, 255, 255);
+      font-family: "ParkLaneNF", "Limelight", "Impact", "Inter";
+      font-size: 3em;
+      font-style: italic;
+      font-variant: normal;
+      font-weight: 400;
+      letter-spacing: -0.015em;
+      line-height: 1.2em;
+      text-wrap: balance;
     }
 
     ul li {
@@ -1182,6 +1239,10 @@ body {
         backdrop-filter: blur(8px);
         padding-left: 1rem;
       }
+    }
+    button.explorer-toggle,
+    h2 {
+      color: rgb(255, 255, 255);
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1318,12 +1379,27 @@ body {
 
   /* TOC */
   .toc {
+    color: rgb(255, 255, 255);
+
     button.toc-header {
       h3 {
-        break-after: avoid;
+        margin-block-end: 0;
+        margin-block-start: 0;
+        --font-weight: 500;
+        color: rgb(255, 255, 255);
+        font-family: "ParkLaneNF", "Limelight", "Impact", "Inter";
+        font-size: 3em;
+        font-style: italic;
+        font-variant: normal;
+        font-weight: 400;
+        letter-spacing: -0.015em;
+        line-height: 1.2em;
+        text-wrap: balance;
 
         margin-block: 0;
       }
+
+      color: rgb(255, 255, 255);
 
       color: inherit;
     }
@@ -1346,7 +1422,18 @@ body {
   .graph,
   .toc {
     h3 {
-      break-after: avoid;
+      margin-block-end: 0;
+      margin-block-start: 0;
+      --font-weight: 500;
+      color: rgb(255, 255, 255);
+      font-family: "ParkLaneNF", "Limelight", "Impact", "Inter";
+      font-size: 3em;
+      font-style: italic;
+      font-variant: normal;
+      font-weight: 400;
+      letter-spacing: -0.015em;
+      line-height: 1.2em;
+      text-wrap: balance;
 
       min-height: calc(2 * var(--p-spacing) + var(--h3-line-height));
       margin-block: 0;
@@ -1590,11 +1677,11 @@ body {
       0px 1px 2px #000000,
       0px 3.4px 6.7px #000000,
       0px 15px 30px #000000;
-    display: flex;
     max-height: 95vh;
     position: absolute;
     z-index: 30;
     border-top-width: 20px;
+    display: none;
 
     display: block;
     position: fixed;

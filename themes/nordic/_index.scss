@@ -24,6 +24,30 @@ html[saved-theme="light"] {
   --mono-rgb-100: 0, 0, 0;
   --color-accent-hsl: 210, 34%, 63%;
   --color-accent-2: hsl(calc(210 - 3), calc(34% * 1.02), calc(63% * 1.15));
+  --bold-weight: 700;
+  --color-blue: #6199bf;
+  --color-cyan: #61b1bf;
+  --color-green: #a3be8c;
+  --color-orange: #d08770;
+  --color-pink: #b48ead;
+  --color-purple: #958eb4;
+  --color-red: #bf616a;
+  --color-yellow: #ebcb8b;
+  --h1-color: #81a1c1;
+  --inline-title-color: #81a1c1;
+  --inline-title-font: "Norwester";
+  --text-highlight-bg: #81a1c1;
+  --color-base-00: white;
+  --color-base-10: #eceff4;
+  --color-base-100: #2e3440;
+  --color-base-20: white;
+  --color-base-30: #d8dee9;
+  --color-base-35: #d8dee9;
+  --color-base-40: #d8dee9;
+  --color-base-50: #4c566a;
+  --color-base-70: #3b4252;
+  --text-muted: color-mix(in srgb, #81a1c1, #000 20%);
+  --text-normal: color-mix(in srgb, #81a1c1, #000 45%);
 }
 
 .darkmode {
@@ -243,10 +267,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "Avenir", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "Avenir", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -722,7 +746,7 @@ body {
     --font-weight: 700;
     color: #bf616a;
     font-family: "Norwester";
-    font-size: "??", "??", "Avenir", "Arial" !important;
+    font-size: "??", "??", "Avenir", "Arial";
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -742,7 +766,7 @@ body {
     --font-weight: 600;
     color: #d08770;
     font-family: "Norwester";
-    font-size: "??", "??", "Avenir", "Arial" !important;
+    font-size: "??", "??", "Avenir", "Arial";
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -760,7 +784,7 @@ body {
     --font-weight: 600;
     color: #ebcb8b;
     font-family: "Norwester";
-    font-size: "??", "??", "Avenir", "Arial" !important;
+    font-size: "??", "??", "Avenir", "Arial";
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -778,7 +802,7 @@ body {
     --font-weight: 600;
     color: #a3be8c;
     font-family: "Norwester";
-    font-size: "??", "??", "Avenir", "Arial" !important;
+    font-size: "??", "??", "Avenir", "Arial";
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -796,7 +820,7 @@ body {
     --font-weight: 600;
     color: #61b1bf;
     font-family: "Norwester";
-    font-size: "??", "??", "Avenir", "Arial" !important;
+    font-size: "??", "??", "Avenir", "Arial";
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -814,7 +838,7 @@ body {
     --font-weight: 600;
     color: #6199bf;
     font-family: "Norwester";
-    font-size: "??", "??", "Avenir", "Arial" !important;
+    font-size: "??", "??", "Avenir", "Arial";
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -989,7 +1013,7 @@ body {
       --font-weight: 600;
       color: #ebcb8b;
       font-family: "Norwester";
-      font-size: "??", "??", "Avenir", "Arial" !important;
+      font-size: "??", "??", "Avenir", "Arial";
       font-style: normal;
       font-variant: normal;
       font-weight: 600;
@@ -1161,7 +1185,7 @@ body {
         --font-weight: 600;
         color: #ebcb8b;
         font-family: "Norwester";
-        font-size: "??", "??", "Avenir", "Arial" !important;
+        font-size: "??", "??", "Avenir", "Arial";
         font-style: normal;
         font-variant: normal;
         font-weight: 600;
@@ -1199,7 +1223,7 @@ body {
       --font-weight: 600;
       color: #ebcb8b;
       font-family: "Norwester";
-      font-size: "??", "??", "Avenir", "Arial" !important;
+      font-size: "??", "??", "Avenir", "Arial";
       font-style: normal;
       font-variant: normal;
       font-weight: 600;

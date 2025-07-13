@@ -207,7 +207,7 @@ html[saved-theme="light"] {
   --color-red: #d62c1a;
   --color-yellow: #fcbb42;
   --color-orange: #e9573f;
-  --font-monospace: "courier prime", "courier prime code" !important;
+  --font-monospace: "courier prime", "courier prime code";
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -334,10 +334,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -1475,7 +1475,7 @@ body {
                 color: #f6f6f4;
 
                 &.match-tag {
-                  color: #3f3e3c !important;
+                  color: #3f3e3c;
                 }
               }
             }

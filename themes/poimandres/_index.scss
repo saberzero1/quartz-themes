@@ -39,8 +39,56 @@ html[saved-theme="dark"] {
   --color-base-50: #666666;
   --color-base-70: #b3b3b3;
   --color-base-100: #dadada;
-  --color-accent-hsl: 258, 88%, 66%;
-  --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --color-accent-hsl: 210, 40%, 50%;
+  --color-accent-2: hsl(calc(210 - 5), calc(40% * 1.05), calc(50% * 1.29));
+  --bg_dark2: #14161a;
+  --bg_highlight: #25272e;
+  --bg_highlight_dark: #20232a;
+  --fg_dark: #b8bfc9;
+  --background-primary: #1b1d23;
+  --background-primary-alt: #1b1d23;
+  --background-secondary: var(--bg_dark2);
+  --background-modifier-border: var(--bg_highlight);
+  --background-modifier-border-focus: var(--bg_highlight);
+  --background-modifier-border-hover: var(--bg_highlight);
+  --background-modifier-hover: 40%;
+  --text-normal: #e4e7ea;
+  --text-faint: #7da0b3;
+  --text-muted: var(--fg_dark);
+  --text-accent: #d2a5c4;
+  --text-accent-hover: #84bfcf;
+  --text-highlight-bg: #f2a070;
+  --bold-color: #84bfcf;
+  --italic-color: #84bfcf;
+  --h1-color: #84bfcf;
+  --tag-color: #d2a5c4;
+  --tag-background: #d2a5c4;
+  --tag-color-hover: #84bfcf;
+  --tag-background-hover: #84bfcf;
+  --link-color: var(--fg_dark);
+  --link-color-hover: #84bfcf;
+  --link-external-color: var(--fg_dark);
+  --link-external-color-hover: #84bfcf;
+  --checkbox-radius: 4px;
+  --checkbox-color: #7da0b3;
+  --checkbox-color-hover: #7da0b3;
+  --checkbox-marker-color: #6f9fad;
+  --checkbox-border-color: #7da0b3;
+  --checkbox-border-color-hover: #7da0b3;
+  --code-normal: #e4e7ea;
+  --code-background: var(--bg_highlight_dark);
+  --code-comment: var(--fg_dark);
+  --code-function: #84bfcf;
+  --code-important: #c06075;
+  --code-keyword: #6a998f;
+  --code-property: #e4e7ea;
+  --code-punctuation: #6a998f;
+  --code-string: #7bbfb0;
+  --code-tag: #7bbfb0;
+  --code-value: #7bbfb0;
+  --nav-item-background-hover: var(--bg_highlight);
+  --graph-line: #7da0b3;
+  --graph-node-tag: #f2a070;
 }
 
 .darkmode {
@@ -260,14 +308,14 @@ body {
   --bold-color: inherit;
   --bold-weight: calc(600 + 200);
   --checkbox-size: 16px;
-  --checkbox-marker-color: var(--bg);
-  --checkbox-color: hsl(258, 88%, 66%);
-  --checkbox-color-hover: var(--fg);
-  --checkbox-border-color: var(--comment);
+  --checkbox-marker-color: #1b1d23;
+  --checkbox-color: hsl(210, 40%, 50%);
+  --checkbox-color-hover: #e4e7ea;
+  --checkbox-border-color: #7da0b3;
   --checkbox-border-color-hover: var(--fg_dark);
-  --code-background: var(--bg);
-  --code-normal: var(--fg);
-  --code-comment: var(--comment);
+  --code-background: #1b1d23;
+  --code-normal: #e4e7ea;
+  --code-comment: #7da0b3;
   --code-function: #e0de71;
   --code-important: #e9973f;
   --code-keyword: #fa99cd;
@@ -276,12 +324,12 @@ body {
   --code-string: #44cf6e;
   --code-tag: #fb464c;
   --code-value: #a882ff;
-  --collapse-icon-color: var(--comment);
-  --collapse-icon-color-collapsed: var(--magenta);
+  --collapse-icon-color: #7da0b3;
+  --collapse-icon-color-collapsed: #d2a5c4;
   --cursor-link: pointer;
   --font-weight: 400;
   --graph-line: var(--color-base-35, rgba(251, 70, 76, 0.6));
-  --graph-node-unresolved: var(--comment);
+  --graph-node-unresolved: #7da0b3;
   --graph-node-tag: #44cf6e;
   --h1-color: inherit;
   --h1-font: inherit;
@@ -289,28 +337,28 @@ body {
   --hr-color: transparent;
   --hr-thickness: 2px;
   --icon-color: var(--fg_dark);
-  --inline-title-color: var(--cyan);
+  --inline-title-color: #84bfcf;
   --inline-title-font: inherit;
   --italic-color: inherit;
-  --link-color: var(--magenta);
-  --link-color-hover: var(--cyan);
+  --link-color: #d2a5c4;
+  --link-color-hover: #84bfcf;
   --link-weight: var(--link-weight);
-  --link-external-color: var(--magenta);
-  --link-external-color-hover: var(--cyan);
+  --link-external-color: #d2a5c4;
+  --link-external-color-hover: #84bfcf;
   --link-external-filter: none;
   --nav-item-background-hover: rgba(255, 255, 255, 0.15);
   --nav-item-children-padding-start: 4px;
   --nav-item-children-margin-start: 12px;
   --p-spacing: 1rem;
   --search-icon-color: var(--fg_dark);
-  --tag-color: var(--magenta);
-  --tag-color-hover: var(--magenta);
+  --tag-color: #d2a5c4;
+  --tag-color-hover: #d2a5c4;
   --tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-background: hsla(258, 88%, 66%, 0.1);
-  --tag-background-hover: hsla(258, 88%, 66%, 0.2);
-  --tag-border-color: hsla(258, 88%, 66%, 0.15);
-  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15);
+  --tag-background: hsla(210, 40%, 50%, 0.1);
+  --tag-background-hover: hsla(210, 40%, 50%, 0.2);
+  --tag-border-color: hsla(210, 40%, 50%, 0.15);
+  --tag-border-color-hover: hsla(210, 40%, 50%, 0.15);
   --tag-border-width: 0px;
   --tag-radius: 2em;
   --tag-weight: inherit;
@@ -325,9 +373,9 @@ body {
   --text-muted: #b3b3b3;
   --text-faint: #666666;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
-  --text-accent: hsl(258, 88%, 66%);
-  --text-accent-hover: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
-  --interactive-accent-hsl: 258, 88%, 66%;
+  --text-accent: hsl(210, 40%, 50%);
+  --text-accent-hover: hsl(calc(210 - 5), calc(40% * 1.05), calc(50% * 1.29));
+  --interactive-accent-hsl: 210, 40%, 50%;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
@@ -336,10 +384,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -363,12 +411,12 @@ body {
     sans-serif;
   line-height: 1.3;
   font-size: 16px;
-  background-color: var(--bg);
-  color: var(--fg);
+  background-color: #1b1d23;
+  color: #e4e7ea;
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
-  caret-color: var(--magenta);
+  caret-color: #d2a5c4;
   --checkbox-radius: 4px;
 
   --text-normal: var(--color-base-100);
@@ -411,7 +459,6 @@ body {
 :root,
 html {
   .callout {
-    --callout-color: var(--blue0);
     overflow: hidden;
     border-style: solid;
     border-color: rgba(var(--fg_dark), 0.25);
@@ -431,192 +478,111 @@ html {
     overflow-y: hidden;
 
     &[data-callout] {
-      --callout-color: var(--blue0);
-
       background-color: rgba(var(--fg_dark), 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="abstract"] {
-      --callout-color: var(--cyan);
-
       background-color: rgba(var(--fg_dark), 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="summary"] {
-      --callout-color: var(--cyan);
-
       background-color: rgba(var(--fg_dark), 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="tldr"] {
-      --callout-color: var(--cyan);
-
       background-color: rgba(var(--fg_dark), 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="info"] {
-      --callout-color: var(--blue0);
-
       background-color: rgba(var(--fg_dark), 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="todo"] {
-      --callout-color: var(--cyan);
-
       background-color: rgba(var(--fg_dark), 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="important"] {
-      --callout-color: var(--green);
-
       background-color: rgba(var(--fg_dark), 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="tip"] {
-      --callout-color: var(--cyan);
-
       background-color: rgba(var(--fg_dark), 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="hint"] {
-      --callout-color: var(--cyan);
-
       background-color: rgba(var(--fg_dark), 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="success"] {
-      --callout-color: var(--teal);
-
       background-color: rgba(var(--fg_dark), 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="check"] {
-      --callout-color: var(--teal);
-
       background-color: rgba(var(--fg_dark), 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="done"] {
-      --callout-color: var(--teal);
-
       background-color: rgba(var(--fg_dark), 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="question"] {
-      --callout-color: var(--yellow);
-
       background-color: rgba(var(--fg_dark), 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="help"] {
-      --callout-color: var(--yellow);
-
       background-color: rgba(var(--fg_dark), 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="faq"] {
-      --callout-color: var(--yellow);
-
       background-color: rgba(var(--fg_dark), 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="warning"] {
-      --callout-color: var(--orange);
-
       background-color: rgba(var(--fg_dark), 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="caution"] {
-      --callout-color: var(--orange);
-
       background-color: rgba(var(--fg_dark), 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="attention"] {
-      --callout-color: var(--orange);
-
       background-color: rgba(var(--fg_dark), 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="failure"] {
-      --callout-color: var(--red1);
-
       background-color: rgba(var(--fg_dark), 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="fail"] {
-      --callout-color: var(--red1);
-
       background-color: rgba(var(--fg_dark), 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="missing"] {
-      --callout-color: var(--red1);
-
       background-color: rgba(var(--fg_dark), 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="danger"] {
-      --callout-color: var(--red1);
-
       background-color: rgba(var(--fg_dark), 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="error"] {
-      --callout-color: var(--red1);
-
       background-color: rgba(var(--fg_dark), 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="bug"] {
-      --callout-color: var(--red);
-
       background-color: rgba(var(--fg_dark), 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="example"] {
-      --callout-color: var(--magenta);
-
       background-color: rgba(var(--fg_dark), 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="quote"] {
-      --callout-color: var(--fg_dark);
-
       background-color: rgba(var(--fg_dark), 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="cite"] {
-      --callout-color: var(--fg_dark);
-
       background-color: rgba(var(--fg_dark), 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
   }
@@ -659,7 +625,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
 
-  background-color: var(--bg);
+  background-color: #1b1d23;
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -688,13 +654,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: var(--bg);
+      background-color: #1b1d23;
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: var(--bg);
+        background-color: #1b1d23;
 
         background-color: var(--background-primary);
       }
@@ -703,7 +669,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: var(--bg);
+          background-color: #1b1d23;
 
           background-color: var(--background-secondary);
 
@@ -891,7 +857,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 700;
-    color: var(--cyan);
+    color: #84bfcf;
     font-family: inherit;
     font-size: 1.802em;
     font-style: normal;
@@ -911,7 +877,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: var(--cyan0);
+    color: #6f9fad;
     font-family: inherit;
     font-size: 1.602em;
     font-style: normal;
@@ -929,7 +895,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: var(--unknown);
+    color: #ffffff;
     font-family: inherit;
     font-size: 1.424em;
     font-style: normal;
@@ -947,7 +913,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: var(--magenta);
+    color: #d2a5c4;
     font-family: inherit;
     font-size: 1.266em;
     font-style: normal;
@@ -965,7 +931,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: var(--blue0);
+    color: #c5d0e6;
     font-family: inherit;
     font-size: 1.125em;
     font-style: normal;
@@ -983,7 +949,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: var(--yellow);
+    color: #dcb583;
     font-family: inherit;
     font-size: 1em;
     font-style: normal;
@@ -1089,7 +1055,7 @@ body {
   }
 
   code {
-    color: var(--fg);
+    color: #e4e7ea;
     font-family:
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1142,14 +1108,14 @@ body {
 
   /* METADATA */
   .content-meta {
-    color: var(--fg);
+    color: #e4e7ea;
 
     color: var(--text-normal);
   }
 
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: var(--comment);
+    color: #7da0b3;
   }
 
   /* BACKLINKS */
@@ -1158,7 +1124,7 @@ body {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
       --font-weight: 600;
-      color: var(--unknown);
+      color: #ffffff;
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1169,7 +1135,7 @@ body {
     }
 
     ul li {
-      color: var(--fg);
+      color: #e4e7ea;
 
       font-weight: 500;
     }
@@ -1187,11 +1153,11 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: var(--cyan0);
+      color: #6f9fad;
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: var(--bg);
+        background-color: #1b1d23;
 
         background-color: var(--background-secondary);
 
@@ -1202,7 +1168,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: hsl(258, 88%, 66%);
+        color: hsl(210, 40%, 50%);
 
         text-overflow: ellipsis;
         position: relative;
@@ -1231,7 +1197,7 @@ body {
         }
         &:hover {
           background-color: var(--bg_highlight);
-          color: var(--green);
+          color: #7bbfb0;
           font-weight: inherit;
 
           font-size: 1rem;
@@ -1269,7 +1235,7 @@ body {
         a {
           padding: 6px 8px 6px 24px;
           border-radius: 4px;
-          color: var(--fg);
+          color: #e4e7ea;
           cursor: pointer;
           display: flex;
           font-size: 16px;
@@ -1323,14 +1289,14 @@ body {
 
   /* TOC */
   .toc {
-    color: var(--unknown);
+    color: #ffffff;
 
     button.toc-header {
       h3 {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
         --font-weight: 600;
-        color: var(--unknown);
+        color: #ffffff;
         font-family: inherit;
         font-size: 1.424em;
         font-style: normal;
@@ -1342,14 +1308,14 @@ body {
         margin-block: 0;
       }
 
-      color: var(--unknown);
+      color: #ffffff;
 
       color: inherit;
     }
     ul.toc-content.overflow {
       li,
       li > a {
-        color: var(--fg);
+        color: #e4e7ea;
 
         font-weight: inherit;
 
@@ -1368,7 +1334,7 @@ body {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
       --font-weight: 600;
-      color: var(--unknown);
+      color: #ffffff;
       font-family: inherit;
       font-size: 1.424em;
       font-style: normal;
@@ -1441,7 +1407,7 @@ body {
       background: transparent;
       border: 1px solid transparent;
       border-radius: 4px;
-      color: var(--fg);
+      color: #e4e7ea;
       font-family: inherit;
       font-size: calc(16px * 0.937);
       outline: none;
@@ -1456,7 +1422,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: var(--bg);
+        background-color: #1b1d23;
 
         border: 0.5pt solid var(--bg_highlight);
 
@@ -1475,7 +1441,7 @@ body {
           width: 100%;
           padding: 24px;
           padding-inline-end: 48px;
-          background-color: var(--bg);
+          background-color: #1b1d23;
           font-size: 16px;
           border: none;
           height: 48px;
@@ -1488,7 +1454,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: var(--fg);
+          color: #e4e7ea;
 
           background: transparent;
           margin-bottom: 0;
@@ -1536,10 +1502,10 @@ body {
               & > ul > li > p {
                 background-color: transparent;
 
-                color: var(--fg);
+                color: #e4e7ea;
 
                 &.match-tag {
-                  color: var(--magenta);
+                  color: #d2a5c4;
                 }
               }
             }
@@ -1607,7 +1573,7 @@ body {
 
   /* POPOVER */
   .popover {
-    background-color: var(--bg);
+    background-color: #1b1d23;
     border: 1px solid transparent;
     border-radius: 4px;
     box-shadow:
@@ -1627,7 +1593,7 @@ body {
     & .popover-inner {
       border: 1px solid transparent;
 
-      background-color: var(--bg);
+      background-color: #1b1d23;
 
       border-radius: 4px;
 

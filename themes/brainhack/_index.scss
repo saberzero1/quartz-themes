@@ -288,10 +288,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "Cascadia Mono", Sans-serif, "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "Cascadia Mono", Sans-serif, "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -370,7 +370,7 @@ html {
   .callout {
     overflow: hidden;
     border-style: solid;
-    border-color: rgba(158, 158, 158, 0.8 !important);
+    border-color: rgba(158, 158, 158, 0.8);
     border-width: 0.05rem;
     border-radius: 10px;
     margin: 1em 0;

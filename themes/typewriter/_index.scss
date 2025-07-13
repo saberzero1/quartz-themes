@@ -47,12 +47,12 @@ html[saved-theme="dark"] {
   --background-secondary: hsl(
     calc(0 + 30),
     calc(0% + 11.5%),
-    calc(var(--base-l) - 75.6%)
+    calc(96% - 75.6%)
   );
   --background-modifier-border: #333;
   --background-modifier-border-hover: #5e5e5e;
-  --background-modifier-border-focus: hsl(0, 0%, calc(var(--base-l) - 60%));
-  --text-accent-hover: hsl(var(--theme-accent-h), 31.9%, calc(46.7% - 10%));
+  --background-modifier-border-focus: hsl(0, 0%, calc(96% - 60%));
+  --text-accent-hover: hsl(129, 31.9%, calc(46.7% - 10%));
   --text-normal: #c5b8a1;
   --text-muted: hsl(0, 0%, calc(15% + 45%));
   --text-faint: hsl(0, 0%, calc(15% + 47%));
@@ -93,22 +93,14 @@ html[saved-theme="light"] {
   --color-base-100: #222222;
   --color-accent-hsl: 258, 88%, 66%;
   --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --background-primary: hsl(
-    calc(0 + 44),
-    calc(0% + 79%),
-    calc(var(--base-l) - 2%)
-  );
+  --background-primary: hsl(calc(0 + 44), calc(0% + 79%), calc(96% - 2%));
   --background-primary-alt: #fcf5e4;
-  --background-secondary: hsl(
-    calc(0 + 42),
-    calc(0% + 34%),
-    calc(var(--base-l) - 12%)
-  );
-  --background-modifier-border: hsl(0, 0%, calc(var(--base-l) - 6%));
-  --background-modifier-border-hover: hsl(0, 0%, calc(var(--base-l) - 12%));
-  --background-modifier-border-focus: hsl(0, 0%, calc(var(--base-l) - 20%));
-  --text-accent: hsl(var(--theme-accent-h), 31.9%, 46.7%);
-  --text-accent-hover: hsl(var(--theme-accent-h), 31.9%, calc(46.7% - 10%));
+  --background-secondary: hsl(calc(0 + 42), calc(0% + 34%), calc(96% - 12%));
+  --background-modifier-border: hsl(0, 0%, calc(96% - 6%));
+  --background-modifier-border-hover: hsl(0, 0%, calc(96% - 12%));
+  --background-modifier-border-focus: hsl(0, 0%, calc(96% - 20%));
+  --text-accent: hsl(129, 31.9%, 46.7%);
+  --text-accent-hover: hsl(129, 31.9%, calc(46.7% - 10%));
   --text-normal: hsl(0, 0%, 15%);
   --text-muted: hsl(0, 0%, calc(15% + 20%));
   --text-faint: hsl(0, 0%, calc(15% + 47%));
@@ -298,8 +290,8 @@ body {
   --checkbox-radius: 2px;
   --checkbox-size: 16px;
   --checkbox-marker-color: hsl(0, 0%, 15%);
-  --checkbox-color: hsl(var(--theme-accent-h), 31.9%, calc(46.7% + 10%));
-  --checkbox-color-hover: hsl(var(--theme-accent-h), 31.9%, calc(46.7%));
+  --checkbox-color: hsl(129, 31.9%, calc(46.7% + 10%));
+  --checkbox-color-hover: hsl(129, 31.9%, calc(46.7%));
   --checkbox-border-color: hsl(0, 0%, calc(15% + 47%));
   --checkbox-border-color-hover: hsl(0, 0%, calc(15% + 45%));
   --code-background: #202020;
@@ -332,14 +324,10 @@ body {
   --inline-title-font: inherit;
   --italic-color: inherit;
   --link-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --link-color-hover: hsl(var(--theme-accent-h), 31.9%, calc(46.7% - 10%));
+  --link-color-hover: hsl(129, 31.9%, calc(46.7% - 10%));
   --link-weight: var(--link-weight);
   --link-external-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --link-external-color-hover: hsl(
-    var(--theme-accent-h),
-    31.9%,
-    calc(46.7% - 10%)
-  );
+  --link-external-color-hover: hsl(129, 31.9%, calc(46.7% - 10%));
   --link-external-filter: none;
   --nav-item-background-hover: rgba(255, 255, 255, 0.15);
   --nav-item-children-padding-start: 4px;
@@ -368,7 +356,7 @@ body {
   --text-muted: #b3b3b3;
   --text-faint: #666666;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
-  --text-accent: hsl(var(--theme-accent-h), 31.9%, 46.7%);
+  --text-accent: hsl(129, 31.9%, 46.7%);
   --text-accent-hover: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
   --interactive-accent-hsl: 258, 88%, 66%;
   --font-default:
@@ -379,10 +367,10 @@ body {
     "??", "JetBrains Mono", ui-monospace, SFMono-Regular, "Cascadia Mono",
     "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
     "Consolas", "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "iA Writer Quattro S", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "iA Writer Quattro S", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -411,6 +399,10 @@ body {
   user-select: none;
   -webkit-user-select: none;
   caret-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --code-normal: #6c99bb;
+  --h1-color: #c5b8a1;
+  --bold-weight: 620;
+  line-height: 1.5;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -1161,7 +1153,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: hsl(var(--theme-accent-h), 31.9%, calc(46.7% + 10%));
+        color: hsl(129, 31.9%, calc(46.7% + 10%));
 
         text-overflow: ellipsis;
         position: relative;
@@ -1440,7 +1432,7 @@ body {
           height: 48px;
           border-radius: 0;
           border-bottom: 1px solid
-            hsl(calc(0 + 30), calc(0% + 11.5%), calc(var(--base-l) - 75.6%));
+            hsl(calc(0 + 30), calc(0% + 11.5%), calc(96% - 75.6%));
 
           margin-bottom: 0;
           border-bottom: none;

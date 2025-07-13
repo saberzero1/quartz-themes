@@ -174,7 +174,6 @@ html[saved-theme="light"] {
 
 :root {
   --h1-color: var(--text-normal);
-  --h6-color: var(--text-normal);
 
   --nav-item-background-hover: var(--background-modifier-hover);
 
@@ -221,13 +220,12 @@ html {
 }
 body {
   --h1-color: var(--text-normal);
-  --h6-color: var(--text-normal);
 
   --nav-item-background-hover: var(--background-modifier-hover);
   --bold-weight: calc(600 + 200);
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --checkbox-marker-color: var(--background-primary);
+  --checkbox-marker-color: #111;
   --checkbox-color: hsl(270, 65%, 58.8%);
   --checkbox-color-hover: hsl(
     calc(270 - 3),
@@ -286,13 +284,13 @@ body {
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
   --font-monospace:
-    "??", var(--font-monospace-theme), ui-monospace, SFMono-Regular,
-    "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono",
-    Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", Neucha, "Arial" !important;
+    "??", "Space Mono", ui-monospace, SFMono-Regular, "Cascadia Mono",
+    "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
+    "Consolas", "Source Code Pro", monospace;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", Neucha, "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -301,7 +299,7 @@ body {
   text-rendering: optimizeLegibility;
   font-family:
     "??",
-    var(--font-interface-theme),
+    Neucha,
     var(--default-font, "??"),
     ui-sans-serif,
     -apple-system,
@@ -316,12 +314,35 @@ body {
     sans-serif;
   line-height: 1.3;
   font-size: 16px;
-  background-color: var(--background-primary);
+  background-color: #111;
   color: hsl(270, 10%, 75%);
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
   caret-color: hsl(calc(270 - 3), calc(65% * 1.02), calc(58.8% * 1.15));
+  --background-primary: #111;
+  --background-primary-alt: #1e1e1e;
+  --background-secondary: #111;
+  --background-modifier-hover: rgba(255, 255, 255, 0.075);
+  --background-modifier-border: hsl(37, 100%, 50%);
+  --background-modifier-border-hover: hsl(270, 8%, 50%);
+  --background-modifier-border-focus: hsl(270, 13%, 65%);
+  --text-accent: hsl(270, 65%, 58.8%);
+  --text-accent-hover: hsl(calc(270 - 5), calc(65% * 1.05), calc(58.8% * 1.29));
+  --interactive-accent-hsl: 270, 65%, 58.8%;
+  --h1-font: "Architects Daughter", Neucha;
+  --h1-color: hsl(270, 65%, 58.8%);
+  --link-color: hsl(37, 100%, 50%);
+  --link-color-hover: hsl(37, 100%, 60%);
+  --link-external-color: hsl(175, 100%, 40%);
+  --link-external-color-hover: hsl(175, 100%, 50%);
+  --link-external-filter: none;
+  --bold-color: hsl(12, 65%, 62%);
+  --italic-color: hsl(346, 64%, 57%);
+  --nav-item-background-hover: rgba(255, 255, 255, 0.15);
+  --graph-line: hsl(37, 100%, 40%);
+  --graph-node-unresolved: hsl(270, 13%, 65%);
+  --graph-node-tag: hsl(100, 90%, 33.5%);
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -529,7 +550,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
 
-  background-color: var(--background-primary);
+  background-color: #111;
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -558,13 +579,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: var(--background-primary);
+      background-color: #111;
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: var(--background-primary);
+        background-color: #111;
 
         background-color: var(--background-primary);
       }
@@ -573,7 +594,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: var(--background-primary);
+          background-color: #111;
 
           background-color: var(--background-secondary);
 
@@ -873,7 +894,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: var(--h6-color);
+    color: hsl(190, 100%, 26%);
     font-family: "Architects Daughter", Neucha;
     font-size: 1em;
     font-style: normal;
@@ -985,9 +1006,9 @@ body {
   code {
     color: hsl(270, 10%, 75%);
     font-family:
-      "??", var(--font-monospace-theme), ui-monospace, SFMono-Regular,
-      "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono",
-      Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+      "??", "Space Mono", ui-monospace, SFMono-Regular, "Cascadia Mono",
+      "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
+      "Consolas", "Source Code Pro", monospace;
     background-color: #1e1e1e;
     border-radius: 4px;
     font-size: 1em;
@@ -1009,7 +1030,7 @@ body {
     font-size: calc(16px * 0.8);
     font-family:
       "??",
-      var(--font-interface-theme),
+      Neucha,
       var(--default-font, "??"),
       ui-sans-serif,
       -apple-system,
@@ -1089,7 +1110,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: var(--background-primary);
+        background-color: #111;
 
         background-color: var(--background-secondary);
 
@@ -1362,7 +1383,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: var(--background-primary);
+        background-color: #111;
 
         border: 0.5pt solid var(--color-base-40, rgba(228, 18, 88, 0.6));
 
@@ -1381,7 +1402,7 @@ body {
           width: 100%;
           padding: 24px;
           padding-inline-end: 48px;
-          background-color: var(--background-primary);
+          background-color: #111;
           font-size: 16px;
           border: none;
           height: 48px;
@@ -1517,7 +1538,7 @@ body {
 
   /* POPOVER */
   .popover {
-    background-color: var(--background-primary);
+    background-color: #111;
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow:
@@ -1537,7 +1558,7 @@ body {
     & .popover-inner {
       border: 1px solid transparent;
 
-      background-color: var(--background-primary);
+      background-color: #111;
 
       border-radius: 8px;
 

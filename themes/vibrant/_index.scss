@@ -42,6 +42,9 @@ html[saved-theme="dark"] {
   --color-accent-hsl: 258, 88%, 66%;
   --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
   --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --background-primary: #222222;
+  --background-secondary: #333333;
+  --text-normal: #ffffff;
 }
 
 .darkmode {
@@ -350,10 +353,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -431,7 +434,7 @@ html {
     margin: 1em 0;
     mix-blend-mode: normal;
     padding: 12px 24px 12px 12px;
-    border: 2px solid var(--accent-color-borders);
+    border: 2px solid #ffffff;
     background-color: #ffffff;
     border-color: #000000;
     color: #000000;
@@ -964,7 +967,7 @@ body {
     white-space: pre-wrap;
     border: 0px solid transparent;
     overflow-x: auto;
-    background-color: #444444 !important;
+    background-color: #444444;
     color: #ffffff;
     font-size: 100%;
     font-weight: bolder;
@@ -1040,7 +1043,7 @@ body {
     padding: 0.15em 0.3em;
     border: 0px solid transparent;
     -webkit-box-decoration-break: clone;
-    background-color: #444444 !important;
+    background-color: #444444;
     color: #ffffff;
     font-size: 100%;
     font-weight: bolder;
@@ -1402,7 +1405,7 @@ body {
       & > .search-space {
         background-color: #222222;
 
-        border: 2px solid var(--accent-color-borders);
+        border: 2px solid #ffffff;
 
         border-radius: 12px;
 

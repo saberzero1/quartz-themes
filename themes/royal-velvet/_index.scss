@@ -47,6 +47,19 @@ html[saved-theme="dark"] {
   --background-primary: hsl(235, 15%, 15%);
   --background-primary-alt: hsl(235, 15%, 13%);
   --background-secondary: hsl(235, 15%, 13%);
+  --checkbox-color-hover: hsla(60, 30%, 96%, 0.6);
+  --code-normal: hsl(285, 100%, 75.1%);
+  --hr-color: hsl(35, 100%, 75.1%);
+  --link-color: hsl(35, 100%, 75.1%);
+  --link-color-hover: hsl(35, 100%, 90%);
+  --link-external-color: hsl(115, 100%, 75.1%);
+  --link-external-color-hover: hsl(115, 100%, 90%);
+  --text-accent: hsl(330, 100%, 75.1%);
+  --text-accent-hover: hsl(330, 100%, 90%);
+  --text-faint: hsla(60, 30%, 96%, 0.6);
+  --text-highlight-bg: hsla(60, 100%, 75.1%, 0.1);
+  --text-muted: hsla(60, 30%, 96%, 0.6);
+  --text-normal: hsl(60, 30%, 96%);
 }
 
 :root[saved-theme="light"],
@@ -89,6 +102,19 @@ html[saved-theme="light"] {
   --background-primary: hsl(235, 15%, 15%);
   --background-primary-alt: hsl(235, 15%, 13%);
   --background-secondary: hsl(235, 15%, 13%);
+  --checkbox-color-hover: hsla(60, 30%, 96%, 0.6);
+  --code-normal: hsl(285, 100%, 75.1%);
+  --hr-color: hsl(35, 100%, 75.1%);
+  --link-color: hsl(35, 100%, 75.1%);
+  --link-color-hover: hsl(35, 100%, 90%);
+  --link-external-color: hsl(115, 100%, 75.1%);
+  --link-external-color-hover: hsl(115, 100%, 90%);
+  --text-accent: hsl(330, 100%, 75.1%);
+  --text-accent-hover: hsl(330, 100%, 90%);
+  --text-faint: hsla(60, 30%, 96%, 0.6);
+  --text-highlight-bg: hsla(60, 100%, 75.1%, 0.1);
+  --text-muted: hsla(60, 30%, 96%, 0.6);
+  --text-normal: hsl(60, 30%, 96%);
 }
 
 /* cyrillic-ext */
@@ -284,8 +310,8 @@ body {
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
   --checkbox-marker-color: hsl(235, 15%, 15%);
-  --checkbox-color: hsl(var(--pink-tuple));
-  --checkbox-color-hover: hsl(var(--orange-tuple));
+  --checkbox-color: hsl(330, 100%, 75.1%);
+  --checkbox-color-hover: hsl(35, 100%, 75.1%);
   --checkbox-border-color: hsla(60, 30%, 96%, 0.6);
   --checkbox-border-color-hover: hsla(60, 30%, 96%, 0.6);
   --code-background: hsl(235, 15%, 13%);
@@ -300,7 +326,7 @@ body {
   --code-tag: #fb464c;
   --code-value: #a882ff;
   --collapse-icon-color: hsla(60, 30%, 96%, 0.6);
-  --collapse-icon-color-collapsed: hsl(var(--pink-tuple));
+  --collapse-icon-color-collapsed: hsl(330, 100%, 75.1%);
   --cursor-link: pointer;
   --font-weight: 400;
   --graph-line: var(--color-base-35, rgba(61, 0, 0, 0.6));
@@ -315,19 +341,19 @@ body {
   --inline-title-color: inherit;
   --inline-title-font: inherit;
   --italic-color: inherit;
-  --link-color: hsl(var(--pink-tuple));
-  --link-color-hover: hsl();
+  --link-color: hsl(330, 100%, 75.1%);
+  --link-color-hover: hsl(330, 100%, 90%);
   --link-weight: var(--link-weight);
-  --link-external-color: hsl(var(--pink-tuple));
-  --link-external-color-hover: hsl();
+  --link-external-color: hsl(330, 100%, 75.1%);
+  --link-external-color-hover: hsl(330, 100%, 90%);
   --link-external-filter: none;
   --nav-item-background-hover: rgba(255, 255, 255, 0.15);
   --nav-item-children-padding-start: 4px;
   --nav-item-children-margin-start: 12px;
   --p-spacing: 1rem;
   --search-icon-color: hsla(60, 30%, 96%, 0.6);
-  --tag-color: hsl(var(--pink-tuple));
-  --tag-color-hover: hsl(var(--pink-tuple));
+  --tag-color: hsl(330, 100%, 75.1%);
+  --tag-color-hover: hsl(330, 100%, 75.1%);
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -359,10 +385,10 @@ body {
     "??", "Fira Code", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono",
     "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
     "Consolas", "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "Fira Sans", sans-serif, "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "Fira Sans", sans-serif, "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -392,7 +418,7 @@ body {
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
-  caret-color: hsl(var(--pink-tuple));
+  caret-color: hsl(330, 100%, 75.1%);
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -845,8 +871,8 @@ body {
     background-clip: text;
     background-image: linear-gradient(
       135deg,
-      hsl(var(--pink-tuple)) 0,
-      hsl(var(--orange-tuple)) 100%
+      hsl(330, 100%, 75.1%) 0,
+      hsl(35, 100%, 75.1%) 100%
     );
 
     font-size: 2rem;
@@ -873,8 +899,8 @@ body {
     background-clip: text;
     background-image: linear-gradient(
       135deg,
-      hsl(var(--orange-tuple)) 0,
-      hsl(var(--yellow-tuple)) 100%
+      hsl(35, 100%, 75.1%) 0,
+      hsl(60, 100%, 75.1%) 100%
     );
 
     font-size: 1.75rem;
@@ -899,8 +925,8 @@ body {
     background-clip: text;
     background-image: linear-gradient(
       135deg,
-      hsl(var(--yellow-tuple)) 0,
-      hsl(var(--green-tuple)) 100%
+      hsl(60, 100%, 75.1%) 0,
+      hsl(115, 100%, 75.1%) 100%
     );
 
     font-size: 1.6rem;
@@ -925,8 +951,8 @@ body {
     background-clip: text;
     background-image: linear-gradient(
       135deg,
-      hsl(var(--green-tuple)) 0,
-      hsl(var(--blue-tuple)) 100%
+      hsl(115, 100%, 75.1%) 0,
+      hsl(170, 100%, 75.1%) 100%
     );
 
     font-size: 1.4rem;
@@ -951,8 +977,8 @@ body {
     background-clip: text;
     background-image: linear-gradient(
       135deg,
-      hsl(var(--blue-tuple)) 0,
-      hsl(var(--purple-tuple)) 100%
+      hsl(170, 100%, 75.1%) 0,
+      hsl(250, 100%, 75.1%) 100%
     );
 
     font-size: 1.2rem;
@@ -977,8 +1003,8 @@ body {
     background-clip: text;
     background-image: linear-gradient(
       135deg,
-      hsl(var(--purple-tuple)) 0,
-      hsl(var(--pink-tuple)) 100%
+      hsl(250, 100%, 75.1%) 0,
+      hsl(330, 100%, 75.1%) 100%
     );
 
     font-size: 1.1rem;
@@ -1080,7 +1106,7 @@ body {
   }
 
   code {
-    color: hsl(var(--purple-pink-tuple));
+    color: hsl(285, 100%, 75.1%);
     font-family:
       "??", "Fira Code", monospace, ui-monospace, SFMono-Regular,
       "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono",
@@ -1163,8 +1189,8 @@ body {
       background-clip: text;
       background-image: linear-gradient(
         135deg,
-        hsl(var(--yellow-tuple)) 0,
-        hsl(var(--green-tuple)) 100%
+        hsl(60, 100%, 75.1%) 0,
+        hsl(115, 100%, 75.1%) 100%
       );
     }
 
@@ -1202,7 +1228,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: hsl(var(--pink-tuple));
+        color: hsl(330, 100%, 75.1%);
 
         text-overflow: ellipsis;
         position: relative;
@@ -1230,8 +1256,8 @@ body {
           width: 100%;
         }
         &:hover {
-          background-color: hsla(var(--yellow-tuple), 0.1);
-          color: hsl(var(--yellow-tuple));
+          background-color: hsla(60, 100%, 75.1%, 0.1);
+          color: hsl(60, 100%, 75.1%);
           font-weight: bolder;
 
           font-size: 1rem;
@@ -1343,8 +1369,8 @@ body {
         background-clip: text;
         background-image: linear-gradient(
           135deg,
-          hsl(var(--yellow-tuple)) 0,
-          hsl(var(--green-tuple)) 100%
+          hsl(60, 100%, 75.1%) 0,
+          hsl(115, 100%, 75.1%) 100%
         );
 
         margin-block: 0;
@@ -1389,8 +1415,8 @@ body {
       background-clip: text;
       background-image: linear-gradient(
         135deg,
-        hsl(var(--yellow-tuple)) 0,
-        hsl(var(--green-tuple)) 100%
+        hsl(60, 100%, 75.1%) 0,
+        hsl(115, 100%, 75.1%) 100%
       );
 
       min-height: calc(2 * var(--p-spacing) + var(--h3-line-height));
@@ -1462,6 +1488,8 @@ body {
       font-size: calc(16px * 0.937);
       outline: none;
       padding: 4px 8px;
+      height: 40px;
+      background-color: hsl(235, 15%, 9%);
 
       font-size: 1rem;
       svg {
@@ -1521,7 +1549,7 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            color: hsl(var(--pink-tuple));
+            color: hsl(330, 100%, 75.1%);
 
             background-color: var(--quartz-text-highlight);
           }
@@ -1555,7 +1583,7 @@ body {
                 color: hsl(60, 30%, 96%);
 
                 &.match-tag {
-                  color: hsl(var(--pink-tuple));
+                  color: hsl(330, 100%, 75.1%);
                 }
               }
             }

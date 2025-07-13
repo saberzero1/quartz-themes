@@ -38,13 +38,10 @@ html[saved-theme="dark"] {
   --color-base-50: #666666;
   --color-base-70: #b3b3b3;
   --color-base-100: #dadada;
-  --color-accent-hsl: 318 !important, 97% !important, 35% !important;
-  --color-accent-2: hsl(
-    calc(318 !important - 5),
-    calc(97% !important * 1.05),
-    calc(35% !important * 1.29)
-  );
-  --text-accent: #fd71d3 !important;
+  --color-accent-hsl: 318, 97%, 35%;
+  --color-accent-2: hsl(calc(318 - 5), calc(97% * 1.05), calc(35% * 1.29));
+  --text-accent: #fd71d3;
+  --color-red: #ef5547;
 }
 
 :root[saved-theme="light"],
@@ -79,12 +76,8 @@ html[saved-theme="light"] {
   --color-base-50: #ababab;
   --color-base-70: #5c5c5c;
   --color-base-100: #222222;
-  --color-accent-hsl: 318 !important, 97% !important, 35% !important;
-  --color-accent-2: hsl(
-    calc(318 !important - 3),
-    calc(97% !important * 1.02),
-    calc(35% !important * 1.15)
-  );
+  --color-accent-hsl: 318, 97%, 35%;
+  --color-accent-2: hsl(calc(318 - 3), calc(97% * 1.02), calc(35% * 1.15));
 }
 
 /* cyrillic-ext */
@@ -203,32 +196,22 @@ body {
   --code-value: #a882ff;
   --cursor-link: pointer;
   --font-weight: 400;
-  --graph-node-unresolved: #1a1a1a;
+  --graph-node-unresolved: var(--OT-color-faint-on-accent-1);
   --graph-node-tag: #44cf6e;
   --h1-font: inherit;
   --h3-line-height: 1.3;
   --hr-color: #f2b630;
   --hr-thickness: 2px;
   --italic-color: inherit;
-  --link-color-hover: #170f24 !important;
+  --link-color-hover: ##f2c204;
   --link-weight: var(--link-weight);
   --link-external-filter: none;
   --nav-item-children-padding-start: 4px;
   --nav-item-children-margin-start: 12px;
   --tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-border-color: hsla(
-    318 !important,
-    97% !important,
-    35% !important,
-    0.15
-  );
-  --tag-border-color-hover: hsla(
-    318 !important,
-    97% !important,
-    35% !important,
-    0.15
-  );
+  --tag-border-color: hsla(318, 97%, 35%, 0.15);
+  --tag-border-color-hover: hsla(318, 97%, 35%, 0.15);
   --tag-border-width: 0px;
   --tag-radius: 2em;
   --tag-weight: inherit;
@@ -241,7 +224,7 @@ body {
   --text-muted: #f2c204;
   --text-faint: #9e7f02;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
-  --interactive-accent-hsl: 318 !important, 97% !important, 35% !important;
+  --interactive-accent-hsl: 318, 97%, 35%;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
@@ -250,11 +233,6 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
-  height: 100%;
   margin: 0;
   overscroll-behavior: none;
   padding: 0;
@@ -276,13 +254,55 @@ body {
     "Segoe UI Symbol",
     sans-serif;
   line-height: 1.3;
-  font-size: 1.3em !important !important;
+  font-size: 1.3em;
   background-color: #0d0d0d;
-  color: #2c1cbd !important;
+  color: #2c1cbd;
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
-  caret-color: #fd71d3 !important;
+  caret-color: #fd71d3;
+  --background-modifier-border: #333333;
+  --background-modifier-hover: #fd71d3;
+  --checkbox-color: #2c1cbd;
+  --checkbox-color-hover: #fd71d3;
+  --checkbox-border-color: #2c1cbd;
+  --checkbox-border-color-hover: #fd71d3;
+  --code-background: floralwhite;
+  --code-comment: #9e7f02;
+  --code-normal: #2c1cbd;
+  --code-property: #c8a204;
+  --code-string: silver;
+  --code-tag: #9e7f02;
+  --collapse-icon-color: #9e7f02;
+  --collapse-icon-color-collapsed: #2c1cbd;
+  --graph-line: #f2c204;
+  --h1-color: #2c1cbd;
+  --icon-color: #f2c204;
+  --search-icon-color: #1a1a1a;
+  --inline-title-color: #9e7f02;
+  --link-color: hsl(258, 88%, 66%);
+  --link-external-color: silver;
+  --link-external-color-hover: #fd71d3;
+  --nav-item-background-hover: #fd71d3;
+  --tag-color: #f2c204;
+  --tag-background: #f2c204;
+  --tag-color-hover: ##f2c204;
+  --tag-background-hover: #fd71d3;
+  --text-accent: #c10388;
+  --text-accent-hover: ##f2c204;
+  --color-accent-2: hsl(318, 97%, calc(35%));
+  --checkbox-radius: 0.3rem;
+  --checkbox-size: 0.95rem;
+  --inline-title-font:
+    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace;
+  --p-spacing: 0.5em;
+  contain: initial;
+  height: auto;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -726,7 +746,7 @@ body {
     font-family: inherit;
     font-size: 3.052em;
     font-style: normal;
-    font-variant: var(--h1-variant);
+    font-variant: normal;
     font-weight: 600;
     letter-spacing: -0.015em;
     line-height: 1.2;
@@ -817,7 +837,7 @@ body {
     color: hsl(223, 18%, 68%);
     font-family: inherit;
     font-size: 1em;
-    font-style: var(--h6-style);
+    font-style: italic;
     font-variant: normal;
     font-weight: 600;
     letter-spacing: 0.015em;
@@ -941,7 +961,7 @@ body {
     padding: 6px 8px;
     height: auto;
     box-shadow: none;
-    font-size: calc(1.3em !important !important * 0.8);
+    font-size: calc(1.3em * 0.8);
     font-family:
       "??",
       "??",
@@ -960,12 +980,12 @@ body {
     position: absolute;
     top: 0;
     inset-inline-end: 0;
-    color: #d9f2f0 !important;
-    background-color: #0329c1 !important;
+    color: #d9f2f0;
+    background-color: #7e0259;
 
     &:hover {
-      color: #170f24 !important;
-      background-color: var(--OT-button-background-hover);
+      color: ##f2c204;
+      background-color: #fd71d3;
     }
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -974,14 +994,14 @@ body {
 
   /* METADATA */
   .content-meta {
-    color: #2c1cbd !important;
+    color: #2c1cbd;
 
     color: var(--text-normal);
   }
 
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: #1a1a1a;
+    color: var(--OT-color-faint-on-accent-1);
   }
 
   /* BACKLINKS */
@@ -1001,7 +1021,7 @@ body {
     }
 
     ul li {
-      color: #2c1cbd !important;
+      color: #2c1cbd;
 
       font-weight: 600;
     }
@@ -1034,7 +1054,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: #6c71c4 !important;
+        color: ##f2c204;
 
         text-overflow: ellipsis;
         position: relative;
@@ -1062,8 +1082,8 @@ body {
           width: 100%;
         }
         &:hover {
-          background-color: #c10388 !important;
-          color: #fffae5 !important;
+          background-color: #c10388;
+          color: #fffae5;
           font-weight: inherit;
 
           font-size: 1rem;
@@ -1101,10 +1121,10 @@ body {
         a {
           padding: 6px 8px 6px 24px;
           border-radius: 4px;
-          color: #2c1cbd !important;
+          color: #2c1cbd;
           cursor: pointer;
           display: flex;
-          font-size: 1.3em !important !important;
+          font-size: 1.3em;
           font-weight: inherit;
           line-height: 1.3;
           margin-bottom: 2px;
@@ -1181,11 +1201,11 @@ body {
     ul.toc-content.overflow {
       li,
       li > a {
-        color: #2c1cbd !important;
+        color: #2c1cbd;
 
         font-weight: inherit;
 
-        font-size: 1.3em !important !important;
+        font-size: 1.3em;
 
         color: inherit;
       }
@@ -1270,12 +1290,12 @@ body {
       color: var(--button-secondary-fg-color);
 
       -webkit-app-region: no-drag;
-      background: #005511 !important;
+      background: #005511;
       border: 1px solid #f2b630;
       border-radius: 5px;
-      color: #2c1cbd !important;
+      color: #2c1cbd;
       font-family: inherit;
-      font-size: calc(1.3em !important !important * 0.937);
+      font-size: calc(1.3em * 0.937);
       outline: none;
       padding: 4px 8px;
       height: 40px;
@@ -1290,7 +1310,7 @@ body {
       & > .search-space {
         background-color: #3a2e01;
 
-        border: 0.5pt solid var(--color-base-40, rgba(233, 49, 71, 0.6));
+        border: 0.5pt solid var(--color-base-40, rgba(199, 56, 60, 0.6));
 
         border-radius: 12px;
 
@@ -1308,7 +1328,7 @@ body {
           padding: 24px;
           padding-inline-end: 48px;
           background-color: #0d0d0d;
-          font-size: 1.3em !important !important;
+          font-size: 1.3em;
           border: none;
           height: 48px;
           border-radius: 0;
@@ -1320,7 +1340,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: #2c1cbd !important;
+          color: #2c1cbd;
 
           background: transparent;
           margin-bottom: 0;
@@ -1368,7 +1388,7 @@ body {
               & > ul > li > p {
                 background-color: transparent;
 
-                color: #2c1cbd !important;
+                color: #2c1cbd;
 
                 &.match-tag {
                   color: #f2c204;
@@ -1446,10 +1466,10 @@ body {
       0px 1px 2px #000000,
       0px 3.4px 6.7px #000000,
       0px 15px 30px #000000;
-    display: flex;
     max-height: 70vh;
     position: absolute;
     z-index: 30;
+    display: none;
 
     display: block;
     position: fixed;

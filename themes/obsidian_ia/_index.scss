@@ -41,6 +41,15 @@ html[saved-theme="dark"] {
   --color-base-100: #dadada;
   --color-accent-hsl: 258, 88%, 66%;
   --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --background-primary: #191a19;
+  --background-primary-alt: #191a19;
+  --background-secondary: #141514;
+  --text-accent: #00c1ff;
+  --text-accent-hover: #00b1ef;
+  --text-faint: #8e8f92;
+  --text-highlight-bg: #d77800;
+  --text-muted: #ecebea;
+  --text-normal: #cbcccc;
 }
 
 :root[saved-theme="light"],
@@ -77,6 +86,15 @@ html[saved-theme="light"] {
   --color-base-100: #222222;
   --color-accent-hsl: 258, 88%, 66%;
   --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --background-primary: #f7f7f7;
+  --background-primary-alt: #f7f7f7;
+  --background-secondary: #fcfcfc;
+  --text-accent: #00b1ef;
+  --text-accent-hover: #00c1ff;
+  --text-faint: #9c9c9c;
+  --text-highlight-bg: #ffe400;
+  --text-muted: #101010;
+  --text-normal: #191919;
 }
 
 /* ia-writer-mono-latin-400-italic */
@@ -188,12 +206,12 @@ body {
   --bold-weight: calc(600 + 200);
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --checkbox-marker-color: #000;
+  --checkbox-marker-color: #191a19;
   --checkbox-color: #00c1ff;
   --checkbox-color-hover: #00b1ef;
   --checkbox-border-color: #8e8f92;
   --checkbox-border-color-hover: #ecebea;
-  --code-background: #111;
+  --code-background: #191a19;
   --code-normal: #cbcccc;
   --code-comment: #8e8f92;
   --code-function: #e0de71;
@@ -264,10 +282,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -289,13 +307,13 @@ body {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  background-color: #000;
+  background-color: #191a19;
   color: #cbcccc;
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
   caret-color: #00c1ff;
-  font-size: 1em !important;
+  font-size: 1em;
   line-height: 26px;
 
   --text-normal: var(--color-base-100);
@@ -504,7 +522,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
 
-  background-color: #000;
+  background-color: #191a19;
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -533,13 +551,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: #000;
+      background-color: #191a19;
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: #000;
+        background-color: #191a19;
 
         background-color: var(--background-primary);
       }
@@ -548,7 +566,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: #000;
+          background-color: #191a19;
 
           background-color: var(--background-secondary);
 
@@ -865,7 +883,7 @@ body {
     position: relative;
     padding: 12px 16px;
     min-height: 38px;
-    background-color: #111;
+    background-color: #191a19;
     border-radius: 4px;
     white-space: pre-wrap;
     border: 0px solid transparent;
@@ -936,7 +954,7 @@ body {
   code {
     color: #cbcccc;
     font-family: "iA Writer Mono", "iA Writer Mono V", monospace;
-    background-color: #111;
+    background-color: #191a19;
     border-radius: 4px;
     font-size: 1em;
     padding: 0.15em 0.3em;
@@ -1033,7 +1051,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: #000;
+        background-color: #191a19;
 
         background-color: var(--background-secondary);
 
@@ -1299,7 +1317,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: #000;
+        background-color: #191a19;
 
         border: 0.5pt solid var(--color-base-40, rgba(251, 70, 76, 0.6));
 
@@ -1318,12 +1336,12 @@ body {
           width: 100%;
           padding: 24px;
           padding-inline-end: 48px;
-          background-color: #000;
+          background-color: #191a19;
           font-size: 16px;
           border: none;
           height: 48px;
           border-radius: 0;
-          border-bottom: 1px solid #1e1e1e;
+          border-bottom: 1px solid #141514;
 
           margin-bottom: 0;
           border-bottom: none;
@@ -1374,7 +1392,7 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: var(--menu-selection);
+                background-color: #5f5d5b;
               }
               & > ul > li > p {
                 background-color: transparent;
@@ -1450,7 +1468,7 @@ body {
 
   /* POPOVER */
   .popover {
-    background-color: #000;
+    background-color: #191a19;
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow:
@@ -1470,7 +1488,7 @@ body {
     & .popover-inner {
       border: 1px solid transparent;
 
-      background-color: #000;
+      background-color: #191a19;
 
       border-radius: 8px;
 

@@ -50,6 +50,14 @@ html[saved-theme="dark"] {
   --text-normal: var(--venom_white);
   --text-muted: #bbb;
   --text-highlight-bg: var(--venom_dark_navy);
+  --venom_dark_navy: #0c1520;
+  --venom_navy: #1e303a;
+  --venom_white: #fff;
+  --venom_pink: #b13d4c;
+  --venom_purple: #7f01fe;
+  --font-monospace:
+    "Consolas", "Fira Code", "Source Code Pro", "Droid Sans Mono", "Monoid",
+    "Arial", sans-serif;
 }
 
 .darkmode {
@@ -347,10 +355,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;

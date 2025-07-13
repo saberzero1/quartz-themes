@@ -19,15 +19,11 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --text-accent: hsl(
-    216 !important,
-    25% !important,
-    calc(49% !important - 3.8%)
-  );
+  --text-accent: hsl(216, 25%, calc(49% - 3.8%));
   color-scheme: dark;
-  --text-normal: hsl(216 !important, 24%, 84%);
-  --text-muted: hsl(216 !important, 18%, 72%);
-  --text-faint: hsl(216 !important, 12%, 44%);
+  --text-normal: hsl(216, 24%, 84%);
+  --text-muted: hsl(216, 18%, 72%);
+  --text-faint: hsl(216, 12%, 44%);
   --mono-rgb-100: 255, 255, 255;
   --color-red: rgb(255, 120, 129);
   --color-green: rgb(124, 211, 124);
@@ -46,46 +42,30 @@ html[saved-theme="dark"] {
   --color-base-50: #666;
   --color-base-70: #bababa;
   --color-base-100: #dadada;
-  --color-accent-hsl: 216 !important, 25% !important, 49% !important;
-  --color-accent-2: hsl(
-    216 !important,
-    25% !important,
-    calc(49% !important + 3.8%)
-  );
+  --color-accent-hsl: 216, 25%, 49%;
+  --color-accent-2: hsl(216, 25%, calc(49% + 3.8%));
   --background-modifier-border: hsla(
-    216 !important,
-    calc(25% !important * 0.4),
-    calc(49% !important * 0.9),
+    216,
+    calc(25% * 0.4),
+    calc(49% * 0.9),
     0.2
   );
   --background-modifier-border-hover: hsla(
-    216 !important,
-    calc(25% !important * 0.4),
-    calc(49% !important * 0.9),
+    216,
+    calc(25% * 0.4),
+    calc(49% * 0.9),
     0.25
   );
   --background-modifier-border-focus: hsla(
-    216 !important,
-    calc(25% !important * 0.4),
-    calc(49% !important * 0.9),
+    216,
+    calc(25% * 0.4),
+    calc(49% * 0.9),
     0.3
   );
-  --background-primary: hsl(
-    216 !important,
-    calc(25% !important / 5),
-    calc(49% !important * 1.25 / 4.5)
-  );
-  --background-primary-alt: hsl(
-    216 !important,
-    calc(25% !important / 5),
-    calc(49% !important * 1.25 / 3.9)
-  );
-  --background-secondary: hsl(
-    216 !important,
-    calc(25% !important / 5),
-    calc(49% !important * 1.25 / 4.9)
-  );
-  --background-modifier-hover: hsla(216 !important, 12%, 40%, 0.25);
+  --background-primary: hsl(216, calc(25% / 5), calc(49% * 1.25 / 4.5));
+  --background-primary-alt: hsl(216, calc(25% / 5), calc(49% * 1.25 / 3.9));
+  --background-secondary: hsl(216, calc(25% / 5), calc(49% * 1.25 / 4.9));
+  --background-modifier-hover: hsla(216, 12%, 40%, 0.25);
   --text-highlight-bg: #ffd000;
   --code-background: #282c34;
 }
@@ -305,52 +285,24 @@ body {
 
   --nav-item-background-hover: var(--background-modifier-hover);
   --code-background: #000;
-  --collapse-icon-color: hsla(
-    216 !important,
-    calc(25% !important * 0.4),
-    calc(49% !important * 0.9)
-  );
-  --collapse-icon-color-collapsed: hsl(
-    216 !important,
-    25% !important,
-    calc(49% !important - 3.8%)
-  );
-  --font-weight: var(--font-normal);
+  --collapse-icon-color: hsla(216, calc(25% * 0.4), calc(49% * 0.9));
+  --collapse-icon-color-collapsed: hsl(216, 25%, calc(49% - 3.8%));
+  --font-weight: 400;
   --graph-line: var(--color-base-35, #555);
-  --graph-node-unresolved: hsla(
-    216 !important,
-    calc(25% !important * 0.4),
-    calc(49% !important * 0.9)
-  );
+  --graph-node-unresolved: hsla(216, calc(25% * 0.4), calc(49% * 0.9));
   --graph-node-tag: rgb(124, 211, 124);
   --hr-color: #363636;
   --hr-thickness: 2px;
-  --icon-color: hsla(
-    216 !important,
-    calc(25% !important * 0.4),
-    calc(49% !important * 0.9)
-  );
-  --link-color: hsl(
-    216 !important,
-    25% !important,
-    calc(49% !important - 3.8%)
-  );
-  --link-color-hover: hsl(
-    216 !important,
-    25% !important,
-    calc(49% !important + 3.8%)
-  );
+  --icon-color: hsla(216, calc(25% * 0.4), calc(49% * 0.9));
+  --link-color: hsl(216, 25%, calc(49% - 3.8%));
+  --link-color-hover: hsl(216, 25%, calc(49% + 3.8%));
   --link-weight: var(--link-weight);
   --link-external-filter: none;
   --nav-item-background-hover: rgba(255, 255, 255, 0.025);
   --nav-item-children-padding-start: 4px;
   --nav-item-children-margin-start: 12px;
   --p-spacing: 1rem;
-  --search-icon-color: hsla(
-    216 !important,
-    calc(25% !important * 0.4),
-    calc(49% !important * 0.9)
-  );
+  --search-icon-color: hsla(216, calc(25% * 0.4), calc(49% * 0.9));
   --tag-weight: inherit;
   --background-primary: #000;
   --background-primary-alt: #111;
@@ -364,12 +316,8 @@ body {
   --text-faint: #666;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-accent: #0ba360;
-  --text-accent-hover: hsl(
-    216 !important,
-    25% !important,
-    calc(49% !important + 3.8%)
-  );
-  --interactive-accent-hsl: 216 !important, 25% !important, 49% !important;
+  --text-accent-hover: hsl(216, 25%, calc(49% + 3.8%));
+  --interactive-accent-hsl: 216, 25%, 49%;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
@@ -378,10 +326,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -406,11 +354,50 @@ body {
   line-height: 1.3;
   font-size: 16px;
   background-color: transparent;
-  color: hsl(216 !important, 24%, 84%);
+  color: hsl(216, 24%, 84%);
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
-  caret-color: hsl(216 !important, 25% !important, calc(49% !important - 3.8%));
+  caret-color: hsl(216, 25%, calc(49% - 3.8%));
+  --color-activated-tab-header-dark: hsl(216, 24%, 84%);
+  --inline-title-font: inherit;
+  --h1-color: hsl(59, 81%, 47%);
+  --h1-font: inherit;
+  --h3-line-height: 1.3;
+  --inline-title-color: inherit;
+  --link-external-color: rgb(137, 189, 244);
+  --link-external-color-hover: rgb(137, 189, 244);
+  --tag-color: hsl(216, 25%, calc(49% - 3.8%));
+  --tag-color-hover: hsl(216, 25%, calc(49% - 3.8%));
+  --tag-decoration: none;
+  --tag-decoration-hover: none;
+  --tag-background: hsla(216, 25%, 49%, 0.1);
+  --tag-background-hover: hsla(216, 25%, 49%, 0.2);
+  --tag-border-color: hsla(216, 25%, 49%, 0.15);
+  --tag-border-color-hover: hsla(216, 25%, 49%, 0.15);
+  --tag-border-width: 0px;
+  --tag-radius: 2em;
+  --cursor-link: pointer;
+  --bold-weight: 600;
+  --bold-color: rgb(255, 120, 129);
+  --italic-color: rgb(251, 187, 131);
+  --checkbox-radius: 4px;
+  --checkbox-size: 16px;
+  --checkbox-marker-color: transparent;
+  --checkbox-color: rgb(124, 211, 124);
+  --checkbox-color-hover: rgb(124, 211, 124);
+  --checkbox-border-color: hsla(216, calc(25% * 0.4), calc(49% * 0.9));
+  --checkbox-border-color-hover: hsla(216, calc(25% * 0.4), calc(49% * 0.9));
+  --code-normal: hsla(216, calc(25% * 0.4), calc(49% * 0.9));
+  --code-comment: hsla(216, calc(25% * 0.4), calc(49% * 0.9));
+  --code-function: rgb(255, 232, 139);
+  --code-important: rgb(251, 187, 131);
+  --code-keyword: rgb(242, 182, 222);
+  --code-property: rgb(134, 223, 226);
+  --code-punctuation: hsla(216, calc(25% * 0.4), calc(49% * 0.9));
+  --code-string: rgb(124, 211, 124);
+  --code-tag: rgb(255, 120, 129);
+  --code-value: rgb(203, 158, 255);
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -593,7 +580,7 @@ html {
 
     & > .callout-title-inner > p {
       --font-weight: calc(var(--font-weight) + 200);
-      font-weight: var(--h6-weight);
+      font-weight: 575;
       color: inherit;
 
       /*color: var(--color);*/
@@ -601,7 +588,7 @@ html {
 
     .callout-title-inner {
       --font-weight: calc(var(--font-weight) + 200);
-      font-weight: var(--h6-weight);
+      font-weight: 575;
       color: inherit;
     }
   }
@@ -851,12 +838,12 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 700;
-    color: rgb(255, 120, 129) !important;
+    color: rgb(255, 120, 129);
     font-family: inherit;
     font-size: 1.5em;
     font-style: normal;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 575;
     letter-spacing: -0.015em;
     line-height: 1.2;
     text-transform: unset;
@@ -872,12 +859,12 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 675;
-    color: rgb(251, 187, 131) !important;
+    color: rgb(251, 187, 131);
     font-family: inherit;
     font-size: 1.425em;
     font-style: normal;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 575;
     letter-spacing: -0.015em;
     line-height: 1.2;
     text-transform: unset;
@@ -891,12 +878,12 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 650;
-    color: rgb(255, 232, 139) !important;
+    color: rgb(255, 232, 139);
     font-family: inherit;
     font-size: 1.35em;
     font-style: normal;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 575;
     letter-spacing: -0.015em;
     line-height: 1.3;
     text-transform: unset;
@@ -910,12 +897,12 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 625;
-    color: rgb(124, 211, 124) !important;
+    color: rgb(124, 211, 124);
     font-family: inherit;
     font-size: 1.275em;
     font-style: normal;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 575;
     letter-spacing: 0.015em;
     line-height: 1.4;
     text-transform: unset;
@@ -929,12 +916,12 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: rgb(137, 189, 244) !important;
+    color: rgb(137, 189, 244);
     font-family: inherit;
     font-size: 1.2em;
     font-style: normal;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 575;
     letter-spacing: 0.015em;
     line-height: 1.5;
     text-transform: unset;
@@ -947,21 +934,21 @@ body {
   h6 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: var(--h6-weight);
-    color: rgb(203, 158, 255) !important;
+    --font-weight: 575;
+    color: rgb(203, 158, 255);
     font-family: inherit;
     font-size: 1.125em;
     font-style: normal;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 575;
     letter-spacing: 0.015em;
     line-height: 1.5;
-    text-transform: var(--h6-text-transform);
+    text-transform: unset;
 
     font-size: 1.1rem;
   }
   h6 a {
-    --link-weight: var(--h6-weight);
+    --link-weight: 575;
   }
   h1,
   h1 a,
@@ -988,7 +975,7 @@ body {
     min-height: 38px;
     background-color: #282c34;
     border-radius: 0px;
-    white-space: var(--code-white-space);
+    white-space: pre-wrap;
     overflow-x: auto;
     background: #282c34;
     border: none;
@@ -1100,7 +1087,7 @@ body {
     color: #abb2bf;
 
     &:hover {
-      background-color: #0ba3605c !important;
+      background-color: #0ba3605c;
     }
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -1109,18 +1096,14 @@ body {
 
   /* METADATA */
   .content-meta {
-    color: hsl(216 !important, 24%, 84%);
+    color: hsl(216, 24%, 84%);
 
     color: var(--text-normal);
   }
 
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: hsla(
-      216 !important,
-      calc(25% !important * 0.4),
-      calc(49% !important * 0.9)
-    );
+    color: hsla(216, calc(25% * 0.4), calc(49% * 0.9));
   }
 
   /* BACKLINKS */
@@ -1129,19 +1112,19 @@ body {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
       --font-weight: 650;
-      color: rgb(255, 232, 139) !important;
+      color: rgb(255, 232, 139);
       font-family: inherit;
       font-size: 1.35em;
       font-style: normal;
       font-variant: normal;
-      font-weight: var(--h6-weight);
+      font-weight: 575;
       letter-spacing: -0.015em;
       line-height: 1.3;
       text-transform: unset;
     }
 
     ul li {
-      color: hsl(216 !important, 24%, 84%);
+      color: hsl(216, 24%, 84%);
 
       font-weight: 500;
     }
@@ -1159,7 +1142,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: rgb(251, 187, 131) !important;
+      color: rgb(251, 187, 131);
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1174,7 +1157,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: hsl(216 !important, 24%, 84%);
+        color: hsl(216, 24%, 84%);
 
         text-overflow: ellipsis;
         position: relative;
@@ -1203,7 +1186,7 @@ body {
         }
         &:hover {
           background-color: rgba(255, 255, 255, 0.025);
-          color: var(--color-activated-tab-header-dark) !important;
+          color: var(--color-activated-tab-header-dark);
           font-weight: bold;
 
           font-size: 1rem;
@@ -1241,7 +1224,7 @@ body {
         a {
           padding: 6px 8px 6px 24px;
           border-radius: 0px;
-          color: hsl(216 !important, 24%, 84%);
+          color: hsl(216, 24%, 84%);
           cursor: pointer;
           display: flex;
           font-size: 16px;
@@ -1295,19 +1278,19 @@ body {
 
   /* TOC */
   .toc {
-    color: rgb(255, 232, 139) !important;
+    color: rgb(255, 232, 139);
 
     button.toc-header {
       h3 {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
         --font-weight: 650;
-        color: rgb(255, 232, 139) !important;
+        color: rgb(255, 232, 139);
         font-family: inherit;
         font-size: 1.35em;
         font-style: normal;
         font-variant: normal;
-        font-weight: var(--h6-weight);
+        font-weight: 575;
         letter-spacing: -0.015em;
         line-height: 1.3;
         text-transform: unset;
@@ -1315,14 +1298,14 @@ body {
         margin-block: 0;
       }
 
-      color: rgb(255, 232, 139) !important;
+      color: rgb(255, 232, 139);
 
       color: inherit;
     }
     ul.toc-content.overflow {
       li,
       li > a {
-        color: hsl(216 !important, 24%, 84%);
+        color: hsl(216, 24%, 84%);
 
         font-weight: bold;
 
@@ -1341,12 +1324,12 @@ body {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
       --font-weight: 650;
-      color: rgb(255, 232, 139) !important;
+      color: rgb(255, 232, 139);
       font-family: inherit;
       font-size: 1.35em;
       font-style: normal;
       font-variant: normal;
-      font-weight: var(--h6-weight);
+      font-weight: 575;
       letter-spacing: -0.015em;
       line-height: 1.3;
       text-transform: unset;
@@ -1415,12 +1398,12 @@ body {
       background: transparent;
       border: 1px solid #363636;
       border-radius: 5px;
-      color: hsl(216 !important, 24%, 84%);
+      color: hsl(216, 24%, 84%);
       font-family: inherit;
       outline: none;
       padding: 4px 8px;
       height: 40px;
-      font-size: var(--font-normal);
+      font-size: 400;
 
       font-size: 1rem;
       svg {
@@ -1453,8 +1436,8 @@ body {
           height: 48px;
           border-radius: 0;
           border-bottom: 1px solid rgba(255, 255, 255, 0.025);
-          background-color: transparent !important;
-          font-size: var(--font-normal);
+          background-color: transparent;
+          font-size: 400;
 
           margin-bottom: 0;
           border-bottom: none;
@@ -1462,7 +1445,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: hsl(216 !important, 24%, 84%);
+          color: hsl(216, 24%, 84%);
 
           background: transparent;
           margin-bottom: 0;
@@ -1510,14 +1493,10 @@ body {
               & > ul > li > p {
                 background-color: transparent;
 
-                color: hsl(216 !important, 24%, 84%);
+                color: hsl(216, 24%, 84%);
 
                 &.match-tag {
-                  color: hsl(
-                    216 !important,
-                    25% !important,
-                    calc(49% !important - 3.8%)
-                  );
+                  color: hsl(216, 25%, calc(49% - 3.8%));
                 }
               }
             }

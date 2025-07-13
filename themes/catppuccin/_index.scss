@@ -19,7 +19,7 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --color-accent-hsl: var(--accent-h), 80%, var(--accent-l);
+  --color-accent-hsl: 254, 80%, 68%;
   --background-modifier-border: rgb(49, 50, 68);
   --background-primary: rgb(30, 30, 46);
   --background-primary-alt: rgb(24, 24, 37);
@@ -64,7 +64,7 @@ html[saved-theme="light"] {
   code[data-theme*=" "] span {
     color: var(--shiki-light);
   }
-  --color-accent-hsl: var(--accent-h), 80%, var(--accent-l);
+  --color-accent-hsl: 254, 80%, 68%;
   --background-modifier-border: rgb(49, 50, 68);
   --background-primary: rgb(30, 30, 46);
   --background-primary-alt: rgb(24, 24, 37);
@@ -289,12 +289,12 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
   --font-text:
     "??", "??", "Vollkorn", -apple-system, blinkmacsystemfont, "Segoe UI",
-    "Microsoft YaHei Light", roboto, inter, sans-serif, "Arial" !important;
+    "Microsoft YaHei Light", roboto, inter, sans-serif, "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -323,7 +323,7 @@ body {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  line-height: var(--line-height-tight);
+  line-height: 1.25;
   font-size: 16px;
   background-color: rgb(30, 30, 46);
   color: rgb(24, 24, 37);
@@ -331,6 +331,71 @@ body {
   user-select: none;
   -webkit-user-select: none;
   caret-color: rgb(180, 190, 254);
+  --bold-weight: 600;
+  --bold-color: inherit;
+  --checkbox-radius: 4px;
+  --checkbox-size: 16px;
+  --checkbox-marker-color: rgb(30, 30, 46);
+  --checkbox-color: rgb(203, 166, 247);
+  --checkbox-color-hover: rgb(180, 190, 254);
+  --checkbox-border-color: rgb(69, 71, 90);
+  --checkbox-border-color-hover: rgb(166, 173, 200);
+  --code-background: rgb(24, 24, 37);
+  --code-normal: rgb(166, 173, 200);
+  --code-comment: rgb(69, 71, 90);
+  --code-function: rgb(249, 226, 175);
+  --code-important: rgb(250, 179, 135);
+  --code-keyword: rgb(245, 194, 231);
+  --code-property: rgb(137, 220, 235);
+  --code-punctuation: rgb(166, 173, 200);
+  --code-string: rgb(166, 227, 161);
+  --code-tag: rgb(243, 139, 168);
+  --code-value: rgb(180, 190, 254);
+  --collapse-icon-color: rgb(69, 71, 90);
+  --collapse-icon-color-collapsed: rgb(166, 173, 200);
+  --cursor-link: pointer;
+  --graph-line: var(--color-base-35, rgb(108, 112, 134));
+  --graph-node-unresolved: rgb(69, 71, 90);
+  --graph-node-tag: rgb(166, 227, 161);
+  --h1-color: inherit;
+  --h1-font: inherit;
+  --h3-line-height: 1.5;
+  --hr-color: transparent;
+  --hr-thickness: 2px;
+  --icon-color: rgb(166, 173, 200);
+  --inline-title-color: rgb(var(--ctp-h1, 180, 190, 254));
+  --inline-title-font: inherit;
+  --italic-color: inherit;
+  --link-color: rgb(137, 180, 250);
+  --link-color-hover: rgb(137, 180, 250);
+  --link-external-color: rgb(148, 226, 213);
+  --link-external-color-hover: rgb(148, 226, 213);
+  --link-external-filter: none;
+  --nav-item-background-hover: rgb(180, 190, 254);
+  --search-icon-color: rgb(166, 173, 200);
+  --tag-color: rgb(var(--ctp-tag-pill-color, 180, 190, 254));
+  --tag-color-hover: rgb(var(--ctp-tag-pill-color, 180, 190, 254));
+  --tag-decoration: none;
+  --tag-decoration-hover: underline;
+  --tag-background: transparent;
+  --tag-background-hover: 0;
+  --tag-border-color: hsl(254, 80%, 68%, 10%);
+  --tag-border-color-hover: hsl(254, 80%, 68%, 15%);
+  --tag-border-width: 0;
+  --tag-radius: 0.8em;
+  --background-primary: #000;
+  --background-primary-alt: #111;
+  --background-secondary: #1e1e1e;
+  --background-modifier-hover: rgb(205, 214, 244, 7.5%);
+  --background-modifier-border: rgb(69, 71, 90);
+  --background-modifier-border-hover: rgb(88, 91, 112);
+  --background-modifier-border-focus: rgb(108, 112, 134);
+  --text-normal: rgb(205, 214, 244);
+  --text-muted: rgb(166, 173, 200);
+  --text-faint: rgb(127, 132, 156);
+  --text-accent: rgb(180, 190, 254);
+  --text-accent-hover: rgb(180, 190, 254, 90%);
+  --interactive-accent-hsl: 254, 80%, 68%;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -374,15 +439,15 @@ html {
   .callout {
     overflow: hidden;
     border-style: solid;
-    border-width: var(--callout-border-width);
-    border-radius: var(--radius-s);
+    border-width: 0.25px;
+    border-radius: 4px;
     margin: 1em 0;
     mix-blend-mode: normal;
     padding: 12px 24px 12px 12px;
-    border-color: rgb(var(--callout-quote), 60%);
-    background-color: rgb(var(--callout-quote), 10%);
+    border-color: rgb(158, 158, 158, 60%);
+    background-color: rgb(158, 158, 158, 10%);
 
-    background-color: rgb(var(--callout-quote), 10%);
+    background-color: rgb(158, 158, 158, 10%);
 
     /*background-color: var(--bg);*/
     border-color: var(--border);
@@ -391,111 +456,111 @@ html {
     overflow-y: hidden;
 
     &[data-callout] {
-      background-color: rgb(var(--callout-quote), 10%);
+      background-color: rgb(158, 158, 158, 10%);
       /*background: var(--bg);*/
     }
     &[data-callout="abstract"] {
-      background-color: rgb(var(--callout-quote), 10%);
+      background-color: rgb(158, 158, 158, 10%);
       /*background: var(--bg);*/
     }
     &[data-callout="summary"] {
-      background-color: rgb(var(--callout-quote), 10%);
+      background-color: rgb(158, 158, 158, 10%);
       /*background: var(--bg);*/
     }
     &[data-callout="tldr"] {
-      background-color: rgb(var(--callout-quote), 10%);
+      background-color: rgb(158, 158, 158, 10%);
       /*background: var(--bg);*/
     }
     &[data-callout="info"] {
-      background-color: rgb(var(--callout-quote), 10%);
+      background-color: rgb(158, 158, 158, 10%);
       /*background: var(--bg);*/
     }
     &[data-callout="todo"] {
-      background-color: rgb(var(--callout-quote), 10%);
+      background-color: rgb(158, 158, 158, 10%);
       /*background: var(--bg);*/
     }
     &[data-callout="important"] {
-      background-color: rgb(var(--callout-quote), 10%);
+      background-color: rgb(158, 158, 158, 10%);
       /*background: var(--bg);*/
     }
     &[data-callout="tip"] {
-      background-color: rgb(var(--callout-quote), 10%);
+      background-color: rgb(158, 158, 158, 10%);
       /*background: var(--bg);*/
     }
     &[data-callout="hint"] {
-      background-color: rgb(var(--callout-quote), 10%);
+      background-color: rgb(158, 158, 158, 10%);
       /*background: var(--bg);*/
     }
     &[data-callout="success"] {
-      background-color: rgb(var(--callout-quote), 10%);
+      background-color: rgb(158, 158, 158, 10%);
       /*background: var(--bg);*/
     }
     &[data-callout="check"] {
-      background-color: rgb(var(--callout-quote), 10%);
+      background-color: rgb(158, 158, 158, 10%);
       /*background: var(--bg);*/
     }
     &[data-callout="done"] {
-      background-color: rgb(var(--callout-quote), 10%);
+      background-color: rgb(158, 158, 158, 10%);
       /*background: var(--bg);*/
     }
     &[data-callout="question"] {
-      background-color: rgb(var(--callout-quote), 10%);
+      background-color: rgb(158, 158, 158, 10%);
       /*background: var(--bg);*/
     }
     &[data-callout="help"] {
-      background-color: rgb(var(--callout-quote), 10%);
+      background-color: rgb(158, 158, 158, 10%);
       /*background: var(--bg);*/
     }
     &[data-callout="faq"] {
-      background-color: rgb(var(--callout-quote), 10%);
+      background-color: rgb(158, 158, 158, 10%);
       /*background: var(--bg);*/
     }
     &[data-callout="warning"] {
-      background-color: rgb(var(--callout-quote), 10%);
+      background-color: rgb(158, 158, 158, 10%);
       /*background: var(--bg);*/
     }
     &[data-callout="caution"] {
-      background-color: rgb(var(--callout-quote), 10%);
+      background-color: rgb(158, 158, 158, 10%);
       /*background: var(--bg);*/
     }
     &[data-callout="attention"] {
-      background-color: rgb(var(--callout-quote), 10%);
+      background-color: rgb(158, 158, 158, 10%);
       /*background: var(--bg);*/
     }
     &[data-callout="failure"] {
-      background-color: rgb(var(--callout-quote), 10%);
+      background-color: rgb(158, 158, 158, 10%);
       /*background: var(--bg);*/
     }
     &[data-callout="fail"] {
-      background-color: rgb(var(--callout-quote), 10%);
+      background-color: rgb(158, 158, 158, 10%);
       /*background: var(--bg);*/
     }
     &[data-callout="missing"] {
-      background-color: rgb(var(--callout-quote), 10%);
+      background-color: rgb(158, 158, 158, 10%);
       /*background: var(--bg);*/
     }
     &[data-callout="danger"] {
-      background-color: rgb(var(--callout-quote), 10%);
+      background-color: rgb(158, 158, 158, 10%);
       /*background: var(--bg);*/
     }
     &[data-callout="error"] {
-      background-color: rgb(var(--callout-quote), 10%);
+      background-color: rgb(158, 158, 158, 10%);
       /*background: var(--bg);*/
     }
     &[data-callout="bug"] {
-      background-color: rgb(var(--callout-quote), 10%);
+      background-color: rgb(158, 158, 158, 10%);
       /*background: var(--bg);*/
     }
     &[data-callout="example"] {
-      background-color: rgb(var(--callout-quote), 10%);
+      background-color: rgb(158, 158, 158, 10%);
       /*background: var(--bg);*/
     }
     &[data-callout="quote"] {
-      background-color: rgb(var(--callout-quote), 10%);
+      background-color: rgb(158, 158, 158, 10%);
       /*background: var(--bg);*/
     }
     &[data-callout="cite"] {
-      background-color: rgb(var(--callout-quote), 10%);
+      background-color: rgb(158, 158, 158, 10%);
       /*background: var(--bg);*/
     }
   }
@@ -505,15 +570,15 @@ html {
     display: flex;
     gap: 4px;
     font-size: inherit;
-    color: rgb(var(--callout-quote));
-    line-height: var(--line-height-tight);
+    color: rgb(158, 158, 158);
+    line-height: 1.25;
     align-items: flex-start;
 
     /*background: var(--bg);*/
 
     & > .callout-title-inner > p {
       --font-weight: calc(var(--font-weight) + 200);
-      font-weight: var(--h6-weight);
+      font-weight: 600;
       color: inherit;
 
       /*color: var(--color);*/
@@ -521,7 +586,7 @@ html {
 
     .callout-title-inner {
       --font-weight: calc(var(--font-weight) + 200);
-      font-weight: var(--h6-weight);
+      font-weight: 600;
       color: inherit;
     }
   }
@@ -775,7 +840,7 @@ body {
     font-size: 2em;
     font-style: normal;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 600;
     letter-spacing: -0.015em;
     --h1-color: rgb(var(--ctp-h1, 180, 190, 254));
     line-height: 1.5;
@@ -796,7 +861,7 @@ body {
     font-size: 1.6em;
     font-style: normal;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 600;
     letter-spacing: -0.015em;
     line-height: 1.5;
 
@@ -814,7 +879,7 @@ body {
     font-size: 1.37em;
     font-style: normal;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 600;
     letter-spacing: -0.015em;
     line-height: 1.5;
 
@@ -832,7 +897,7 @@ body {
     font-size: 1.25em;
     font-style: normal;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 600;
     letter-spacing: 0.015em;
     line-height: 1.5;
 
@@ -850,9 +915,9 @@ body {
     font-size: 1.12em;
     font-style: normal;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 600;
     letter-spacing: 0.015em;
-    line-height: var(--line-height-normal);
+    line-height: 1.5;
 
     font-size: 1.2rem;
   }
@@ -862,20 +927,20 @@ body {
   h6 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: var(--h6-weight);
+    --font-weight: 600;
     color: rgb(var(--ctp-h6, 180, 190, 254));
     font-family: inherit;
     font-size: 1.12em;
     font-style: normal;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 600;
     letter-spacing: 0.015em;
-    line-height: var(--line-height-normal);
+    line-height: 1.5;
 
     font-size: 1.1rem;
   }
   h6 a {
-    --link-weight: var(--h6-weight);
+    --link-weight: 600;
   }
   h1,
   h1 a,
@@ -901,8 +966,8 @@ body {
     padding: 12px 16px;
     min-height: 38px;
     background-color: rgb(24, 24, 37);
-    border-radius: var(--radius-s);
-    white-space: var(--code-white-space);
+    border-radius: 4px;
+    white-space: pre-wrap;
     border: 0px solid transparent;
     overflow-x: auto;
 
@@ -975,7 +1040,7 @@ body {
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
       "Source Code Pro", monospace;
     background-color: rgb(24, 24, 37);
-    border-radius: var(--radius-s);
+    border-radius: 4px;
     font-size: 1em;
     padding: 0.15em 0.3em;
     border: 0px solid transparent;
@@ -1050,7 +1115,7 @@ body {
       font-size: 1.37em;
       font-style: normal;
       font-variant: normal;
-      font-weight: var(--h6-weight);
+      font-weight: 600;
       letter-spacing: -0.015em;
       line-height: 1.5;
     }
@@ -1150,14 +1215,14 @@ body {
 
         a {
           padding: 6px 8px 6px 24px;
-          border-radius: var(--radius-s);
+          border-radius: 4px;
           color: rgb(24, 24, 37);
           cursor: pointer;
           display: flex;
           font-size: 16px;
           font-weight: inherit;
-          line-height: var(--line-height-tight);
-          margin-bottom: var(--size-2-1);
+          line-height: 1.25;
+          margin-bottom: 2px;
           transition:
             background-color 0.3s cubic-bezier(0.44, 0.21, 0, 1),
             color 0.3s cubic-bezier(0.44, 0.21, 0, 1);
@@ -1220,7 +1285,7 @@ body {
         font-size: 1.37em;
         font-style: normal;
         font-variant: normal;
-        font-weight: var(--h6-weight);
+        font-weight: 600;
         letter-spacing: -0.015em;
         line-height: 1.5;
 
@@ -1258,7 +1323,7 @@ body {
       font-size: 1.37em;
       font-style: normal;
       font-variant: normal;
-      font-weight: var(--h6-weight);
+      font-weight: 600;
       letter-spacing: -0.015em;
       line-height: 1.5;
 

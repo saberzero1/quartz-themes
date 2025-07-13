@@ -35,6 +35,21 @@ html[saved-theme="dark"] {
   --text-highlight-bg: transparent;
   --text-accent: #95bae8;
   --color-base-00: #292d3e;
+  --color-base-10: #5da6ca;
+  --color-base-20: #1d202c;
+  --color-base-30: #fff;
+  --color-base-35: #b3b6de;
+  --color-base-40: #b3b6de;
+  --color-base-50: #95bae8;
+  --color-base-70: #d295d1;
+  --color-base-100: #e46872;
+  --icon-color: #96bae8;
+  --code-background: #383c4e;
+  --nav-item-background-hover: transparent;
+  --tag-background: transparent;
+  --tag-background-hover: transparent;
+  --tag-color-hover: #714785;
+  --tag-color: #96bae8;
 }
 
 :root[saved-theme="light"],
@@ -65,6 +80,21 @@ html[saved-theme="light"] {
   --text-highlight-bg: transparent;
   --text-accent: #95bae8;
   --color-base-00: #fff;
+  --color-base-10: #71799d;
+  --color-base-20: #e9ecf7;
+  --color-base-30: #fff;
+  --color-base-35: #b3b6de;
+  --color-base-40: #b3b6de;
+  --color-base-50: #95bae8;
+  --color-base-70: #d295d1;
+  --color-base-100: #383c4e;
+  --icon-color: #96bae8;
+  --code-background: #e9ecf7;
+  --nav-item-background-hover: transparent;
+  --tag-background: transparent;
+  --tag-background-hover: transparent;
+  --tag-color-hover: #714785;
+  --tag-color: #96bae8;
 }
 
 @font-face {
@@ -279,7 +309,7 @@ body {
   --nav-item-background-hover: var(--background-modifier-hover);
   --bold-color: inherit;
   --bold-weight: calc(600 + 200);
-  --checkbox-size: 14px !important;
+  --checkbox-size: 14px;
   --checkbox-marker-color: #000;
   --checkbox-color: hsl(258, 88%, 66%);
   --checkbox-color-hover: hsl(
@@ -287,30 +317,30 @@ body {
     calc(88% * 1.02),
     calc(66% * 1.15)
   );
-  --checkbox-border-color: var(--color-base-50);
-  --checkbox-border-color-hover: var(--color-base-70);
+  --checkbox-border-color: #95bae8;
+  --checkbox-border-color-hover: #d295d1;
   --code-background: #111;
-  --code-normal: var(--color-base-100);
-  --code-comment: var(--color-base-50);
+  --code-normal: #e46872;
+  --code-comment: #95bae8;
   --code-function: #e0de71;
   --code-important: #e9973f;
   --code-keyword: #fa99cd;
   --code-property: #53dfdd;
-  --code-punctuation: var(--color-base-70);
+  --code-punctuation: #d295d1;
   --code-string: #44cf6e;
   --code-tag: #fb464c;
   --code-value: #a882ff;
-  --collapse-icon-color: var(--color-base-50);
+  --collapse-icon-color: #95bae8;
   --collapse-icon-color-collapsed: #95bae8;
   --cursor-link: pointer;
   --font-weight: 400;
   --graph-line: var(--color-base-35, rgba(251, 70, 76, 0.6));
-  --graph-node-unresolved: var(--color-base-50);
+  --graph-node-unresolved: #95bae8;
   --graph-node-tag: #44cf6e;
   --h1-color: inherit;
   --h1-font: inherit;
   --h3-line-height: 1.3;
-  --icon-color: var(--color-base-70);
+  --icon-color: #d295d1;
   --italic-color: inherit;
   --link-color: #95bae8;
   --link-color-hover: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
@@ -326,7 +356,7 @@ body {
   --nav-item-children-padding-start: 4px;
   --nav-item-children-margin-start: 12px;
   --p-spacing: 1rem;
-  --search-icon-color: var(--color-base-70);
+  --search-icon-color: #d295d1;
   --tag-color: #95bae8;
   --tag-color-hover: #95bae8;
   --tag-decoration: none;
@@ -345,9 +375,9 @@ body {
   --background-modifier-border: #fff;
   --background-modifier-border-hover: #b3b6de;
   --background-modifier-border-focus: #b3b6de;
-  --text-normal: var(--color-base-100);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-50);
+  --text-normal: #e46872;
+  --text-muted: #d295d1;
+  --text-faint: #95bae8;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
   --text-accent: hsl(258, 88%, 66%);
   --text-accent-hover: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
@@ -360,9 +390,9 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -385,9 +415,9 @@ body {
     "Segoe UI Symbol",
     sans-serif;
   line-height: 1.3;
-  font-size: 14px !important;
+  font-size: 14px;
   background-color: #000;
-  color: var(--color-base-100);
+  color: #e46872;
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
@@ -1038,7 +1068,7 @@ body {
   }
 
   code {
-    color: var(--color-base-100);
+    color: #e46872;
     font-family:
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1060,8 +1090,8 @@ body {
     height: auto;
     background-color: transparent;
     box-shadow: none;
-    color: var(--color-base-70);
-    font-size: calc(14px !important * 0.8);
+    color: #d295d1;
+    font-size: calc(14px * 0.8);
     font-family:
       "??",
       "??",
@@ -1091,14 +1121,14 @@ body {
 
   /* METADATA */
   .content-meta {
-    color: var(--color-base-100);
+    color: #e46872;
 
     color: var(--text-normal);
   }
 
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: var(--color-base-50);
+    color: #95bae8;
   }
 
   /* BACKLINKS */
@@ -1118,7 +1148,7 @@ body {
     }
 
     ul li {
-      color: var(--color-base-100);
+      color: #e46872;
 
       font-weight: 500;
     }
@@ -1151,7 +1181,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: var(--color-base-50);
+        color: #95bae8;
 
         text-overflow: ellipsis;
         position: relative;
@@ -1218,7 +1248,7 @@ body {
         a {
           padding: 6px 8px 6px 24px;
           border-radius: 8px;
-          color: var(--color-base-100);
+          color: #e46872;
           cursor: pointer;
           display: flex;
           font-weight: inherit;
@@ -1299,11 +1329,11 @@ body {
     ul.toc-content.overflow {
       li,
       li > a {
-        color: var(--color-base-100);
+        color: #e46872;
 
         font-weight: inherit;
 
-        font-size: 14px !important;
+        font-size: 14px;
 
         color: inherit;
       }
@@ -1391,9 +1421,9 @@ body {
       background: transparent;
       border: 1px solid transparent;
       border-radius: 8px;
-      color: var(--color-base-100);
+      color: #e46872;
       font-family: inherit;
-      font-size: calc(14px !important * 0.937);
+      font-size: calc(14px * 0.937);
       outline: none;
       padding: 4px 8px;
       height: 40px;
@@ -1426,7 +1456,7 @@ body {
           padding: 24px;
           padding-inline-end: 48px;
           background-color: #000;
-          font-size: 14px !important;
+          font-size: 14px;
           border: none;
           height: 48px;
           border-radius: 0;
@@ -1438,7 +1468,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: var(--color-base-100);
+          color: #e46872;
 
           background: transparent;
           margin-bottom: 0;
@@ -1486,7 +1516,7 @@ body {
               & > ul > li > p {
                 background-color: transparent;
 
-                color: var(--color-base-100);
+                color: #e46872;
 
                 &.match-tag {
                   color: #96bae8;

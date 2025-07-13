@@ -31,12 +31,8 @@ html[saved-theme="dark"] {
   --color-base-50: #666666;
   --color-base-70: #b3b3b3;
   --color-base-100: #dadada;
-  --color-accent-hsl: var(--accent-h), 88%, 66%;
-  --color-accent-2: hsl(
-    calc(var(--accent-h) - 5),
-    calc(88% * 1.05),
-    calc(66% * 1.29)
-  );
+  --color-accent-hsl: 213, 88%, 66%;
+  --color-accent-2: hsl(calc(213 - 5), calc(88% * 1.05), calc(66% * 1.29));
   --background-primary: hsl(220, 3%, 12%);
   --background-primary-alt: hsl(290, 1%, 15%);
   --background-secondary: hsl(0, 0%, 19%);
@@ -49,6 +45,7 @@ html[saved-theme="dark"] {
   --color-cyan: #34aab4;
   --color-blue: #3584e4;
   --color-purple: #9141ac;
+  --color-pink: var(--pink-3);
 }
 
 :root[saved-theme="light"],
@@ -75,12 +72,8 @@ html[saved-theme="light"] {
   --color-base-50: #ababab;
   --color-base-70: #5c5c5c;
   --color-base-100: #222222;
-  --color-accent-hsl: var(--accent-h), 88%, 66%;
-  --color-accent-2: hsl(
-    calc(var(--accent-h) - 3),
-    calc(88% * 1.02),
-    calc(66% * 1.15)
-  );
+  --color-accent-hsl: 213, 88%, 66%;
+  --color-accent-2: hsl(calc(213 - 3), calc(88% * 1.02), calc(66% * 1.15));
   --background-primary: hsl(0, 0%, 98%);
   --background-primary-alt: hsl(0, 0%, 95%);
   --background-secondary: hsl(0, 0%, 92%);
@@ -93,6 +86,7 @@ html[saved-theme="light"] {
   --color-cyan: #34aab4;
   --color-blue: #3584e4;
   --color-purple: #9141ac;
+  --color-pink: var(--pink-3);
 }
 
 @font-face {
@@ -312,7 +306,7 @@ body {
   --checkbox-marker-color: hsl(220, 3%, 12%);
   --checkbox-color: hsla(0, 0%, 100%, 0.067);
   --checkbox-color-hover: hsl(
-    calc(var(--accent-h) - 3),
+    calc(213 - 3),
     calc(88% * 1.02),
     calc(66% * 1.15)
   );
@@ -322,7 +316,7 @@ body {
   --code-comment: #666666;
   --code-function: #f6d32d;
   --code-important: #ff7800;
-  --code-keyword: var(--color-pink);
+  --code-keyword: var(--pink-3);
   --code-property: #34aab4;
   --code-punctuation: #b3b3b3;
   --code-string: #33d17a;
@@ -356,10 +350,10 @@ body {
   --tag-color-hover: #dadada;
   --tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-background: hsla(var(--accent-h), 88%, 66%, 0.1);
-  --tag-background-hover: hsla(var(--accent-h), 88%, 66%, 0.2);
-  --tag-border-color: hsla(var(--accent-h), 88%, 66%, 0.15);
-  --tag-border-color-hover: hsla(var(--accent-h), 88%, 66%, 0.15);
+  --tag-background: hsla(213, 88%, 66%, 0.1);
+  --tag-background-hover: hsla(213, 88%, 66%, 0.2);
+  --tag-border-color: hsla(213, 88%, 66%, 0.15);
+  --tag-border-color-hover: hsla(213, 88%, 66%, 0.15);
   --tag-border-width: 0px;
   --tag-radius: 2em;
   --tag-weight: inherit;
@@ -373,13 +367,9 @@ body {
   --text-muted: #b3b3b3;
   --text-faint: #666666;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
-  --text-accent: hsl(var(--accent-h), 88%, 66%);
-  --text-accent-hover: hsl(
-    calc(var(--accent-h) - 5),
-    calc(88% * 1.05),
-    calc(66% * 1.29)
-  );
-  --interactive-accent-hsl: var(--accent-h), 88%, 66%;
+  --text-accent: hsl(213, 88%, 66%);
+  --text-accent-hover: hsl(calc(213 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --interactive-accent-hsl: 213, 88%, 66%;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
@@ -388,17 +378,17 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
   padding: 0;
   width: 100%;
   text-rendering: optimizeLegibility;
-  font-family: var(--font-interface);
+  font-family: system-ui;
   line-height: 1.3;
   font-size: 16px;
   background-color: hsl(220, 3%, 12%);
@@ -407,6 +397,11 @@ body {
   user-select: none;
   -webkit-user-select: none;
   caret-color: #dadada;
+  --collapse-icon-color: #b3b3b3;
+  --collapse-icon-color-collapsed: #666666;
+  --icon-color: #dadada;
+  --code-background: hsl(0, 0%, 19%);
+  --background-modifier-hover: #8883;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -452,7 +447,7 @@ html {
     border-style: solid;
     border-color: rgba(181, 131, 90, 0.25);
     border-width: 0px;
-    border-radius: var(--rounded-corner-frame);
+    border-radius: 12px;
     margin: 1em 0;
     mix-blend-mode: normal;
     background-color: rgba(181, 131, 90, 0.1);
@@ -861,6 +856,8 @@ body {
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: inherit;
 
     font-size: 2rem;
   }
@@ -879,6 +876,8 @@ body {
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: inherit;
 
     font-size: 1.75rem;
   }
@@ -895,6 +894,8 @@ body {
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: inherit;
 
     font-size: 1.6rem;
   }
@@ -911,6 +912,8 @@ body {
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: inherit;
 
     font-size: 1.4rem;
   }
@@ -927,6 +930,8 @@ body {
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: inherit;
 
     font-size: 1.2rem;
   }
@@ -943,6 +948,8 @@ body {
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: inherit;
 
     font-size: 1.1rem;
   }
@@ -1065,7 +1072,7 @@ body {
     box-shadow: none;
     color: #b3b3b3;
     font-size: calc(16px * 0.8);
-    font-family: var(--font-interface);
+    font-family: system-ui;
     position: absolute;
     top: 0;
     inset-inline-end: 0;
@@ -1102,6 +1109,8 @@ body {
       font-style: normal;
       font-variant: normal;
       font-weight: 600;
+      line-height: 1.3;
+      letter-spacing: inherit;
     }
 
     ul li {
@@ -1272,6 +1281,8 @@ body {
         font-style: normal;
         font-variant: normal;
         font-weight: 600;
+        line-height: 1.3;
+        letter-spacing: inherit;
 
         margin-block: 0;
       }
@@ -1308,6 +1319,8 @@ body {
       font-style: normal;
       font-variant: normal;
       font-weight: 600;
+      line-height: 1.3;
+      letter-spacing: inherit;
 
       min-height: calc(2 * var(--p-spacing) + var(--h3-line-height));
       margin-block: 0;
@@ -1391,8 +1404,7 @@ body {
       & > .search-space {
         background-color: hsl(220, 3%, 12%);
 
-        border: var(--prompt-border-width) solid
-          var(--color-base-40, rgba(224, 27, 36, 0.6));
+        border: 0 solid var(--color-base-40, rgba(224, 27, 36, 0.6));
 
         border-radius: 12px;
 

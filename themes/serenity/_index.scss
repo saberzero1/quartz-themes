@@ -30,8 +30,20 @@ html[saved-theme="dark"] {
   --color-blue: #027aff;
   --color-purple: #a882ff;
   --color-pink: #fa99cd;
-  --color-accent-hsl: 40 !important, 100% !important, 70% !important;
-  --text-accent: #dfbfff !important;
+  --color-accent-hsl: 40, 100%, 70%;
+  --text-accent: #dfbfff;
+  --background-modifier-border: hsl(40, calc(22% + 5%), 50%, 0.18);
+  --color-accent-2: hsl(calc(40 - 4), calc(100% + 4%), calc(70% + 5%));
+  --color-base-00: hsl(223, 22%, 1%);
+  --color-base-10: hsl(223, 22%, calc(1% + 15%));
+  --color-base-100: hsl(40, 20%, 90%);
+  --color-base-20: hsl(223, 22%, calc(1% + 8%));
+  --color-base-30: hsl(223, 22%, calc(1% + 10%));
+  --color-base-35: hsl(223, 25%, calc(1% + 50%));
+  --color-base-40: hsl(223, 25%, calc(1% + 30%));
+  --color-base-50: hsl(223, 20%, calc(1% + 79%));
+  --color-base-70: hsl(40, 20%, calc(1% + 82%));
+  --text-muted: #000000;
 }
 
 :root[saved-theme="light"],
@@ -56,13 +68,19 @@ html[saved-theme="light"] {
   --color-blue: #086ddd;
   --color-purple: #7852ee;
   --color-pink: #d53984;
-  --color-accent-hsl: 40 !important, 100% !important, 70% !important;
-  --color-accent-2: hsl(
-    calc(40 !important - 3),
-    calc(100% !important * 1.02),
-    calc(70% !important * 1.15)
-  );
+  --color-accent-hsl: 40, 100%, 70%;
+  --color-accent-2: hsl(calc(40 - 3), calc(100% * 1.02), calc(70% * 1.15));
   --background-modifier-hover: rgba(255, 255, 255, 0.05);
+  --color-base-00: hsl(40, 20%, 1%);
+  --color-base-10: hsl(40, 25%, calc(1% + 15%));
+  --color-base-20: hsl(223, 25%, calc(1% + 8%));
+  --color-base-30: hsl(40, calc(22% - 5%), calc(1% + 10%));
+  --color-base-35: hsl(40, calc(22% - 5%), calc(1% + 50%));
+  --color-base-40: hsl(40, 22%, calc(1% + 30%));
+  --color-base-50: hsl(223, 22%, calc(1% + 79%));
+  --color-base-70: hsl(223, 22%, calc(1% + 82%));
+  --color-base-100: hsl(223, 22%, 90%);
+  --color-red: #f45757;
 }
 
 /* ia-writer-duo-latin-400-italic */
@@ -204,99 +222,81 @@ body {
   --nav-item-background-hover: var(--background-modifier-hover);
   --bold-color: inherit;
   --bold-weight: calc(600 + 200);
-  --checkbox-size: 17px !important;
-  --checkbox-marker-color: var(--color-base-00);
+  --checkbox-size: 17px;
+  --checkbox-marker-color: #ffffff;
   --checkbox-color: #f4dbd6;
-  --checkbox-color-hover: #dfbfff !important;
-  --checkbox-border-color: #498595 !important;
-  --checkbox-border-color-hover: #5594a5 !important;
-  --code-background: hsl(
-    40,
-    calc(20% / 1.2),
-    calc(var(--base-c-high) - 7%)
-  ) !important;
-  --code-normal: #91bdc0 !important;
-  --code-comment: #498595 !important;
+  --checkbox-color-hover: #dfbfff;
+  --checkbox-border-color: #498595;
+  --checkbox-border-color-hover: #5594a5;
+  --code-background: hsl(40, calc(20% / 1.2), calc(1% + 15%));
+  --code-normal: #91bdc0;
+  --code-comment: #498595;
   --code-function: #ffd173;
   --code-important: #ffad66;
   --code-keyword: #dfbfff;
   --code-property: #95e6cb;
-  --code-punctuation: #5594a5 !important;
+  --code-punctuation: #5594a5;
   --code-string: #d5ff80;
   --code-tag: #f28779;
   --code-value: #80bfff;
-  --collapse-icon-color: #498595 !important;
+  --collapse-icon-color: #498595;
   --collapse-icon-color-collapsed: #d5ff80;
   --cursor-link: pointer;
   --font-weight: 400;
   --graph-line: var(
     --color-base-35,
-    hsl(0, calc(var(--custon-theme-sat-text-d) - 5%), calc(22% - 27%))
-      !important
+    hsl(0, calc(var(--custon-theme-sat-text-d) - 5%), calc(1% + 10%))
   );
-  --graph-node-unresolved: #498595 !important;
+  --graph-node-unresolved: #498595;
   --graph-node-tag: #d5ff80;
   --h1-color: inherit;
   --h3-line-height: 1.3;
-  --icon-color: #5594a5 !important;
+  --icon-color: #5594a5;
   --inline-title-color: #80bfff;
-  --inline-title-font: "iA Writer Duo S" !important;
+  --inline-title-font: "iA Writer Duo S";
   --italic-color: inherit;
-  --link-color-hover: rgba(223, 191, 255, 0.8) !important;
+  --link-color-hover: rgba(223, 191, 255, 0.8);
   --link-weight: var(--link-weight);
   --link-external-color: #d5ff80;
-  --link-external-color-hover: rgba(223, 191, 255, 0.8) !important;
+  --link-external-color-hover: rgba(223, 191, 255, 0.8);
   --link-external-filter: none;
   --nav-item-background-hover: rgba(128, 191, 255, 0.25);
   --nav-item-children-padding-start: 4px;
   --nav-item-children-margin-start: 12px;
   --p-spacing: 1rem;
-  --search-icon-color: #5594a5 !important;
+  --search-icon-color: #5594a5;
   --tag-color: #d5ff80;
   --tag-color-hover: #d5ff80;
   --tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-background: hsla(193, 85%, 50% !important, 0.1);
-  --tag-background-hover: hsla(193, 85%, 50% !important, 0.2);
-  --tag-border-color: hsla(193, 85%, 50% !important, 0.15);
-  --tag-border-color-hover: hsla(193, 85%, 50% !important, 0.15);
+  --tag-background: hsla(193, 85%, 50%, 0.1);
+  --tag-background-hover: hsla(193, 85%, 50%, 0.2);
+  --tag-border-color: hsla(193, 85%, 50%, 0.15);
+  --tag-border-color-hover: hsla(193, 85%, 50%, 0.15);
   --tag-border-width: 0px;
   --tag-weight: inherit;
-  --background-primary: var(--color-base-00);
-  --background-primary-alt: hsl(
-    40,
-    calc(20% / 1.2),
-    calc(var(--base-c-high) - 7%)
-  ) !important;
-  --background-secondary: hsl(
-    223,
-    calc(25% * 1.2),
-    calc(var(--base-c-high) - 7%)
-  );
+  --background-primary: #ffffff;
+  --background-primary-alt: hsl(40, calc(20% / 1.2), calc(1% + 15%));
+  --background-secondary: hsl(223, calc(25% * 1.2), calc(1% + 8%));
   --background-modifier-hover: rgba(255, 255, 255, 0.067);
-  --background-modifier-border: hsl(40, 60%, 75%) !important;
-  --background-modifier-border-hover: hsl(
-    40,
-    calc(22% + 5%),
-    50%,
-    0.18
-  ) !important;
-  --background-modifier-border-focus: hsl(0, 20%, 50%) !important;
-  --text-normal: #000000 !important;
-  --text-muted: #000000 !important;
-  --text-faint: #000000 !important;
+  --background-modifier-border: hsl(40, 60%, 75%);
+  --background-modifier-border-hover: hsl(40, calc(22% + 5%), 50%, 0.18);
+  --background-modifier-border-focus: hsl(0, 20%, 50%);
+  --text-normal: #000000;
+  --text-muted: #000000;
+  --text-faint: #000000;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
-  --text-accent: #dfbfff !important;
-  --text-accent-hover: rgba(223, 191, 255, 0.8) !important;
-  --interactive-accent-hsl: 193, 85%, 50% !important;
+  --text-accent: #dfbfff;
+  --text-accent-hover: rgba(223, 191, 255, 0.8);
+  --interactive-accent-hsl: 193, 85%, 50%;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "iA Writer Quattro S" !important, "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "iA Writer Quattro S", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -305,7 +305,7 @@ body {
   text-rendering: optimizeLegibility;
   font-family:
     "??",
-    "iA Writer Quattro S" !important,
+    "iA Writer Quattro S",
     var(--default-font, "??"),
     ui-sans-serif,
     -apple-system,
@@ -319,9 +319,9 @@ body {
     "Segoe UI Symbol",
     sans-serif;
   line-height: 1.3;
-  font-size: 17px !important;
-  background-color: var(--color-base-00);
-  color: #91bdc0 !important;
+  font-size: 17px;
+  background-color: #ffffff;
+  color: #91bdc0;
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
@@ -329,10 +329,10 @@ body {
   --font-monospace: "iA Writer Mono", "iA Writer Mono S";
   font-weight: 400;
   --hr-thickness: 1px;
-  --hr-color: hsl(0, calc(10% - 5%), calc(22% - 27%)) !important;
+  --hr-color: hsl(0, calc(10% - 5%), calc(1% + 10%));
   --h1-font: inherit;
   letter-spacing: var(--letter-spacing);
-  --link-color: #dfbfff !important;
+  --link-color: #dfbfff;
   --checkbox-radius: 10px;
   --tag-radius: 5px;
 
@@ -385,7 +385,7 @@ html {
     mix-blend-mode: normal;
     padding: 12px 24px 12px 12px;
     background-color: rgba(242, 135, 121, 0.17);
-    border: 1px rgba(242, 135, 121, calc(22% - 27%)) solid;
+    border: 1px rgba(242, 135, 121, calc(1% + 10%)) solid;
 
     background-color: rgba(242, 135, 121, 0.17);
 
@@ -535,12 +535,8 @@ html {
   & > .callout-content {
     overflow-x: auto;
     padding: 10px;
-    background-color: hsl(
-      40,
-      calc(20% / 1.2),
-      calc(var(--base-c-high) - 7%)
-    ) !important;
-    font-family: "iA Writer Duo S" !important;
+    background-color: hsl(40, calc(20% / 1.2), calc(1% + 15%));
+    font-family: "iA Writer Duo S";
     font-size: 0.933em;
     border-radius: 0px 0px 5px 5px;
   }
@@ -551,7 +547,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
 
-  background-color: var(--color-base-00);
+  background-color: #ffffff;
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -580,13 +576,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: var(--color-base-00);
+      background-color: #ffffff;
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: var(--color-base-00);
+        background-color: #ffffff;
 
         background-color: var(--background-primary);
       }
@@ -595,7 +591,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: var(--color-base-00);
+          background-color: #ffffff;
 
           background-color: var(--background-secondary);
 
@@ -784,8 +780,8 @@ body {
     margin-block-start: 0rem;
     --font-weight: 600;
     color: #80bfff;
-    font-family: "iA Writer Duo S" !important;
-    font-size: 17px !important;
+    font-family: "iA Writer Duo S";
+    font-size: 17px;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -804,7 +800,7 @@ body {
     margin-block-start: 0rem;
     --font-weight: 600;
     color: #5ccfe6;
-    font-family: "iA Writer Duo S" !important;
+    font-family: "iA Writer Duo S";
     font-size: 1.51em;
     font-style: normal;
     font-variant: normal;
@@ -822,7 +818,7 @@ body {
     margin-block-start: 0rem;
     --font-weight: 600;
     color: #d5ff80;
-    font-family: "iA Writer Duo S" !important;
+    font-family: "iA Writer Duo S";
     font-size: 1.35em;
     font-style: normal;
     font-variant: normal;
@@ -840,7 +836,7 @@ body {
     margin-block-start: 0rem;
     --font-weight: 600;
     color: #ffd173;
-    font-family: "iA Writer Duo S" !important;
+    font-family: "iA Writer Duo S";
     font-size: 1.19em;
     font-style: normal;
     font-variant: normal;
@@ -858,7 +854,7 @@ body {
     margin-block-start: 0rem;
     --font-weight: 600;
     color: #ffad66;
-    font-family: "iA Writer Duo S" !important;
+    font-family: "iA Writer Duo S";
     font-size: 1.08em;
     font-style: normal;
     font-variant: normal;
@@ -876,7 +872,7 @@ body {
     margin-block-start: 0rem;
     --font-weight: 600;
     color: #f28779;
-    font-family: "iA Writer Duo S" !important;
+    font-family: "iA Writer Duo S";
     font-size: 1em;
     font-style: normal;
     font-variant: normal;
@@ -912,14 +908,10 @@ body {
     position: relative;
     padding: 12px 16px;
     min-height: 38px;
-    background-color: hsl(
-      40,
-      calc(20% / 1.2),
-      calc(var(--base-c-high) - 7%)
-    ) !important;
+    background-color: hsl(40, calc(20% / 1.2), calc(1% + 15%));
     border-radius: 5px;
     white-space: pre-wrap;
-    border: 0px solid hsl(0, 10%, calc(22% - 27%)) !important;
+    border: 0px solid hsl(0, 10%, calc(1% + 10%));
     overflow-x: auto;
 
     background-color: var(--code-background);
@@ -928,7 +920,7 @@ body {
       border: none;
       padding: 0;
       background-color: transparent;
-      color: #91bdc0 !important;
+      color: #91bdc0;
 
       span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
         //color: var(--code-value) !important;
@@ -986,14 +978,10 @@ body {
   }
 
   code {
-    font-family: "iA Writer Mono S" !important;
-    background-color: hsl(
-      40,
-      calc(20% / 1.2),
-      calc(var(--base-c-high) - 7%)
-    ) !important;
+    font-family: "iA Writer Mono S";
+    background-color: hsl(40, calc(20% / 1.2), calc(1% + 15%));
     border-radius: 5px;
-    border: 0px solid hsl(0, 10%, calc(22% - 27%)) !important;
+    border: 0px solid hsl(0, 10%, calc(1% + 10%));
     -webkit-box-decoration-break: clone;
     color: #f28779;
     font-size: 0.875em;
@@ -1009,11 +997,11 @@ body {
     height: auto;
     background-color: transparent;
     box-shadow: none;
-    color: #5594a5 !important;
-    font-size: calc(17px !important * 0.8);
+    color: #5594a5;
+    font-size: calc(17px * 0.8);
     font-family:
       "??",
-      "iA Writer Quattro S" !important,
+      "iA Writer Quattro S",
       var(--default-font, "??"),
       ui-sans-serif,
       -apple-system,
@@ -1040,14 +1028,14 @@ body {
 
   /* METADATA */
   .content-meta {
-    color: #91bdc0 !important;
+    color: #91bdc0;
 
     color: var(--text-normal);
   }
 
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: #498595 !important;
+    color: #498595;
   }
 
   /* BACKLINKS */
@@ -1057,7 +1045,7 @@ body {
       margin-block-start: 0rem;
       --font-weight: 600;
       color: #d5ff80;
-      font-family: "iA Writer Duo S" !important;
+      font-family: "iA Writer Duo S";
       font-size: 1.35em;
       font-style: normal;
       font-variant: normal;
@@ -1067,7 +1055,7 @@ body {
     }
 
     ul li {
-      color: #91bdc0 !important;
+      color: #91bdc0;
 
       font-weight: 500;
     }
@@ -1089,7 +1077,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: var(--color-base-00);
+        background-color: #ffffff;
 
         background-color: var(--background-secondary);
 
@@ -1128,7 +1116,7 @@ body {
           width: 100%;
         }
         &:hover {
-          color: #91bdc0 !important;
+          color: #91bdc0;
           font-weight: inherit;
           background-color: transparent;
 
@@ -1167,10 +1155,10 @@ body {
         a {
           padding: 6px 8px 6px 24px;
           border-radius: 5px;
-          color: #91bdc0 !important;
+          color: #91bdc0;
           cursor: pointer;
           display: flex;
-          font-size: 17px !important;
+          font-size: 17px;
           font-weight: inherit;
           line-height: 1.3;
           margin-bottom: 2px;
@@ -1229,7 +1217,7 @@ body {
         margin-block-start: 0rem;
         --font-weight: 600;
         color: #d5ff80;
-        font-family: "iA Writer Duo S" !important;
+        font-family: "iA Writer Duo S";
         font-size: 1.35em;
         font-style: normal;
         font-variant: normal;
@@ -1247,11 +1235,11 @@ body {
     ul.toc-content.overflow {
       li,
       li > a {
-        color: #91bdc0 !important;
+        color: #91bdc0;
 
         font-weight: inherit;
 
-        font-size: 17px !important;
+        font-size: 17px;
 
         color: inherit;
       }
@@ -1267,7 +1255,7 @@ body {
       margin-block-start: 0rem;
       --font-weight: 600;
       color: #d5ff80;
-      font-family: "iA Writer Duo S" !important;
+      font-family: "iA Writer Duo S";
       font-size: 1.35em;
       font-style: normal;
       font-variant: normal;
@@ -1336,16 +1324,12 @@ body {
       color: var(--button-secondary-fg-color);
 
       -webkit-app-region: no-drag;
-      background: hsl(
-        40,
-        calc(20% / 1.2),
-        calc(var(--base-c-high) - 7%)
-      ) !important;
-      border: 1px solid hsl(0, 10%, calc(22% - 27%)) !important;
+      background: hsl(40, calc(20% / 1.2), calc(1% + 15%));
+      border: 1px solid hsl(0, 10%, calc(1% + 10%));
       border-radius: 24px;
-      color: #91bdc0 !important;
+      color: #91bdc0;
       font-family: inherit;
-      font-size: calc(17px !important * 0.937);
+      font-size: calc(17px * 0.937);
       outline: none;
       padding: 4px 8px;
       height: 40px;
@@ -1358,13 +1342,12 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: var(--color-base-00);
+        background-color: #ffffff;
 
         border: 0.5pt solid
           var(
             --color-base-40,
-            hsl(0, calc(var(--custon-theme-sat-text-d) - 5%), calc(22% - 27%))
-              !important
+            hsl(0, calc(var(--custon-theme-sat-text-d) - 5%), calc(1% + 10%))
           );
 
         border-radius: 18px;
@@ -1382,12 +1365,12 @@ body {
           width: 100%;
           padding: 24px;
           padding-inline-end: 48px;
-          background-color: var(--color-base-00);
-          font-size: 17px !important;
+          background-color: #ffffff;
+          font-size: 17px;
           border: none;
           height: 48px;
           border-radius: 0;
-          border-bottom: 1px solid hsl(223, 25%, calc(var(--base-c-high) - 7%)) !important;
+          border-bottom: 1px solid hsl(223, 25%, calc(1% + 8%));
 
           margin-bottom: 0;
           border-bottom: none;
@@ -1395,7 +1378,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: #91bdc0 !important;
+          color: #91bdc0;
 
           background: transparent;
           margin-bottom: 0;
@@ -1413,10 +1396,10 @@ body {
           }
           & .highlight {
             font-weight: bold;
-            background-color: transparent !important;
-            font-family: "iA Writer Duo S" !important;
+            background-color: transparent;
+            font-family: "iA Writer Duo S";
             text-decoration: underline 2px;
-            text-decoration-color: #d5ff80 !important;
+            text-decoration-color: #d5ff80;
             text-underline-offset: auto;
 
             background-color: var(--quartz-text-highlight);
@@ -1448,7 +1431,7 @@ body {
               & > ul > li > p {
                 background-color: transparent;
 
-                color: #91bdc0 !important;
+                color: #91bdc0;
 
                 &.match-tag {
                   color: #d5ff80;
@@ -1519,8 +1502,8 @@ body {
 
   /* POPOVER */
   .popover {
-    background-color: var(--color-base-00);
-    border: 1px solid hsl(0, 10%, calc(22% - 27%)) !important;
+    background-color: #ffffff;
+    border: 1px solid hsl(0, 10%, calc(1% + 10%));
     border-radius: 12px;
     box-shadow:
       0px 1px 2px #000000,
@@ -1537,9 +1520,9 @@ body {
     border: unset;
     background-color: var(--background-primary);
     & .popover-inner {
-      border: 1px solid hsl(0, 10%, calc(22% - 27%)) !important;
+      border: 1px solid hsl(0, 10%, calc(1% + 10%));
 
-      background-color: var(--color-base-00);
+      background-color: #ffffff;
 
       border-radius: 12px;
 

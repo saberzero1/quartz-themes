@@ -39,17 +39,9 @@ html[saved-theme="dark"] {
   --color-base-50: #666666;
   --color-base-70: #b3b3b3;
   --color-base-100: #dadada;
-  --color-accent-hsl: var(--accent-h), 41%, 60%;
-  --color-accent-2: hsl(
-    calc(var(--accent-h) - 5),
-    calc(41% * 1.05),
-    calc(60% * 1.29)
-  );
-  --text-accent: hsl(
-    calc(var(--accent-h) - 3),
-    calc(41% * 1.02),
-    calc(60% * 1.15)
-  );
+  --color-accent-hsl: 45, 41%, 60%;
+  --color-accent-2: hsl(calc(45 - 5), calc(41% * 1.05), calc(60% * 1.29));
+  --text-accent: hsl(calc(45 - 3), calc(41% * 1.02), calc(60% * 1.15));
   --background-primary: #110f0f;
   --background-secondary: #111111;
 }
@@ -86,12 +78,8 @@ html[saved-theme="light"] {
   --color-base-50: #ababab;
   --color-base-70: #5c5c5c;
   --color-base-100: #222222;
-  --color-accent-hsl: var(--accent-h), 41%, 60%;
-  --color-accent-2: hsl(
-    calc(var(--accent-h) - 3),
-    calc(41% * 1.02),
-    calc(60% * 1.15)
-  );
+  --color-accent-hsl: 45, 41%, 60%;
+  --color-accent-2: hsl(calc(45 - 3), calc(41% * 1.02), calc(60% * 1.15));
   --background-primary: #fefff6;
   --background-secondary: #110f0f;
 }
@@ -275,7 +263,6 @@ html[saved-theme="light"] {
 
   --button-secondary-bg-color: transparent;
   --button-secondary-fg-color: var(--text-primary-color);
-  --code-radius: var(--radius-s);
   --code-background: var(--background-primary-alt);
   --code-normal: var(--text-normal);
   --code-comment: var(--text-faint);
@@ -311,12 +298,8 @@ body {
   --bold-weight: calc(600 + 200);
   --checkbox-size: 16px;
   --checkbox-marker-color: #110f0f;
-  --checkbox-color: hsl(var(--accent-h), 41%, 60%);
-  --checkbox-color-hover: hsl(
-    calc(var(--accent-h) - 3),
-    calc(41% * 1.02),
-    calc(60% * 1.15)
-  );
+  --checkbox-color: hsl(45, 41%, 60%);
+  --checkbox-color-hover: hsl(calc(45 - 3), calc(41% * 1.02), calc(60% * 1.15));
   --checkbox-border-color: #666666;
   --checkbox-border-color-hover: rgb(198 193 135);
   --code-normal: #dadada;
@@ -331,7 +314,7 @@ body {
   --code-value: #a882ff;
   --collapse-icon-color: #666666;
   --collapse-icon-color-collapsed: hsl(
-    calc(var(--accent-h) - 3),
+    calc(45 - 3),
     calc(41% * 1.02),
     calc(60% * 1.15)
   );
@@ -346,24 +329,12 @@ body {
   --hr-thickness: 2px;
   --icon-color: rgb(198 193 135);
   --inline-title-font: inherit;
-  --link-color: hsl(
-    calc(var(--accent-h) - 3),
-    calc(41% * 1.02),
-    calc(60% * 1.15)
-  );
-  --link-color-hover: hsl(
-    calc(var(--accent-h) - 5),
-    calc(41% * 1.05),
-    calc(60% * 1.29)
-  );
+  --link-color: hsl(calc(45 - 3), calc(41% * 1.02), calc(60% * 1.15));
+  --link-color-hover: hsl(calc(45 - 5), calc(41% * 1.05), calc(60% * 1.29));
   --link-weight: var(--link-weight);
-  --link-external-color: hsl(
-    calc(var(--accent-h) - 3),
-    calc(41% * 1.02),
-    calc(60% * 1.15)
-  );
+  --link-external-color: hsl(calc(45 - 3), calc(41% * 1.02), calc(60% * 1.15));
   --link-external-color-hover: hsl(
-    calc(var(--accent-h) - 5),
+    calc(45 - 5),
     calc(41% * 1.05),
     calc(60% * 1.29)
   );
@@ -372,24 +343,15 @@ body {
   --nav-item-children-padding-start: 4px;
   --nav-item-children-margin-start: 12px;
   --p-spacing: 1rem;
-  --radius-s: 4px;
   --search-icon-color: rgb(198 193 135);
-  --tag-color: hsl(
-    calc(var(--accent-h) - 3),
-    calc(41% * 1.02),
-    calc(60% * 1.15)
-  );
-  --tag-color-hover: hsl(
-    calc(var(--accent-h) - 3),
-    calc(41% * 1.02),
-    calc(60% * 1.15)
-  );
+  --tag-color: hsl(calc(45 - 3), calc(41% * 1.02), calc(60% * 1.15));
+  --tag-color-hover: hsl(calc(45 - 3), calc(41% * 1.02), calc(60% * 1.15));
   --tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-background: hsla(var(--accent-h), 41%, 60%, 0.1);
-  --tag-background-hover: hsla(var(--accent-h), 41%, 60%, 0.2);
-  --tag-border-color: hsla(var(--accent-h), 41%, 60%, 0.15);
-  --tag-border-color-hover: hsla(var(--accent-h), 41%, 60%, 0.15);
+  --tag-background: hsla(45, 41%, 60%, 0.1);
+  --tag-background-hover: hsla(45, 41%, 60%, 0.2);
+  --tag-border-color: hsla(45, 41%, 60%, 0.15);
+  --tag-border-color-hover: hsla(45, 41%, 60%, 0.15);
   --tag-border-width: 0px;
   --tag-radius: 2em;
   --tag-weight: inherit;
@@ -403,13 +365,9 @@ body {
   --text-normal: #dadada;
   --text-faint: #666666;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
-  --text-accent: hsl(var(--accent-h), 41%, 60%);
-  --text-accent-hover: hsl(
-    calc(var(--accent-h) - 5),
-    calc(41% * 1.05),
-    calc(60% * 1.29)
-  );
-  --interactive-accent-hsl: var(--accent-h), 41%, 60%;
+  --text-accent: hsl(45, 41%, 60%);
+  --text-accent-hover: hsl(calc(45 - 5), calc(41% * 1.05), calc(60% * 1.29));
+  --interactive-accent-hsl: 45, 41%, 60%;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
@@ -418,10 +376,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -450,11 +408,19 @@ body {
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
-  caret-color: hsl(
-    calc(var(--accent-h) - 3),
-    calc(41% * 1.02),
-    calc(60% * 1.15)
-  );
+  caret-color: hsl(calc(45 - 3), calc(41% * 1.02), calc(60% * 1.15));
+  --inline-title-color: #fb464c;
+  --text-muted: rgb(198 193 135);
+  --italic-color: rgb(172, 99, 99);
+  --checkbox-radius: 16px;
+  --hr-color: rgb(198 193 135 / 10%);
+  --code-background: black;
+  --color-red: rgb(251, 70, 76);
+  --color-blue: rgb(2, 122, 255);
+  --color-cyan: rgb(83, 223, 221);
+  --color-purple: rgb(168, 130, 255);
+  --color-green: rgb(68, 207, 110);
+  --color-accent-2: hsl(45, 41%, calc(60% + 8.8%));
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -470,7 +436,6 @@ body {
 
   --button-secondary-bg-color: transparent;
   --button-secondary-fg-color: var(--text-primary-color);
-  --code-radius: var(--radius-s);
   --code-background: var(--background-primary-alt);
   --code-normal: var(--text-normal);
   --code-comment: var(--text-faint);
@@ -654,8 +619,8 @@ html {
 
   & > .callout-content {
     overflow-x: auto;
-    background-color: #110f0f !important;
-    padding: 8px 16px !important;
+    background-color: #110f0f;
+    padding: 8px 16px;
   }
 }
 body {
@@ -898,7 +863,7 @@ body {
     --font-weight: 700;
     color: inherit;
     font-family: inherit;
-    font-size: var(--h1-size);
+    font-size: 2em;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -990,7 +955,7 @@ body {
     --font-weight: 600;
     color: inherit;
     font-family: inherit;
-    font-size: var(--h6-size);
+    font-size: 1em;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -1025,8 +990,8 @@ body {
     position: relative;
     padding: 12px 16px;
     min-height: 38px;
-    background-color: var(--code-background);
-    border-radius: var(--code-radius);
+    background-color: black;
+    border-radius: 12px;
     white-space: pre-wrap;
     border: 0px solid transparent;
     overflow-x: auto;
@@ -1099,8 +1064,8 @@ body {
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
       "Source Code Pro", monospace;
-    background-color: var(--code-background);
-    border-radius: var(--code-radius);
+    background-color: black;
+    border-radius: 12px;
     font-size: 1em;
     padding: 0.15em 0.3em;
     border: 0px solid transparent;
@@ -1207,7 +1172,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: hsl(var(--accent-h), 41%, 60%);
+        color: hsl(45, 41%, 60%);
 
         text-overflow: ellipsis;
         position: relative;
@@ -1445,7 +1410,7 @@ body {
       -webkit-app-region: no-drag;
       background: transparent;
       border: 1px solid transparent;
-      border-radius: var(--input-radius);
+      border-radius: 8px;
       color: #dadada;
       font-family: inherit;
       font-size: calc(16px * 0.937);

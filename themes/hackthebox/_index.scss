@@ -42,6 +42,10 @@ html[saved-theme="dark"] {
   --color-accent-hsl: 80, 100%, 47%;
   --color-accent-2: hsl(calc(80 - 5), calc(100% * 1.05), calc(47% * 1.29));
   --text-accent: hsl(calc(80 - 3), calc(100% * 1.02), calc(47% * 1.15));
+  color: #a4b1cd;
+  --background-primary: #141d2b;
+  --background-secondary: #1a2331;
+  --htb-lime: #9fef00;
 }
 
 :root:root:root {
@@ -270,7 +274,6 @@ html[saved-theme="dark"] {
 
 :root {
   --h1-color: var(--text-normal);
-  --h6-color: var(--text-normal);
 
   --nav-item-background-hover: var(--background-modifier-hover);
 
@@ -317,13 +320,12 @@ html {
 }
 body {
   --h1-color: var(--text-normal);
-  --h6-color: var(--text-normal);
 
   --nav-item-background-hover: var(--background-modifier-hover);
   --bold-color: inherit;
   --bold-weight: calc(700 + 200);
   --checkbox-size: 16px;
-  --checkbox-marker-color: #000;
+  --checkbox-marker-color: #141d2b;
   --checkbox-color: hsl(80, 100%, 47%);
   --checkbox-color-hover: hsl(
     calc(80 - 3),
@@ -331,7 +333,7 @@ body {
     calc(47% * 1.15)
   );
   --checkbox-border-color: #cad2e2;
-  --checkbox-border-color-hover: var(--htb-text-color);
+  --checkbox-border-color-hover: #a4b1cd;
   --collapse-icon-color: #cad2e2;
   --collapse-icon-color-collapsed: hsl(
     calc(80 - 3),
@@ -377,10 +379,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -389,12 +391,48 @@ body {
   text-rendering: optimizeLegibility;
   line-height: 1.3;
   font-size: 16px;
-  background-color: #000;
+  background-color: #141d2b;
   color: black;
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
   caret-color: hsl(calc(80 - 3), calc(100% * 1.02), calc(47% * 1.15));
+  font-family: Helvetica, Arial, sans-serif;
+  --checkbox-radius: 3px;
+  --code-background: #1a2331;
+  --code-normal: #a4b1cd;
+  --code-comment: #c5d1eb;
+  --code-function: #ffcc5c;
+  --code-important: #ffaf00;
+  --code-keyword: #cf8dfb;
+  --code-property: #a4b1cd;
+  --code-punctuation: #a4b1cd;
+  --code-string: #c5f467;
+  --code-tag: #ffaf00;
+  --code-value: #5cb2ff;
+  --h1-color: #cad2e2;
+  --hr-color: #1a2332;
+  --inline-title-color: #cad2e2;
+  --link-color: #9fef00;
+  --link-color-hover: #9fef00;
+  --link-external-color: #007bff;
+  --link-external-color-hover: #007bff;
+  --background-primary-alt: #1a2331;
+  --background-modifier-border: #4a5466;
+  --background-modifier-border-hover: #4a5466;
+  --background-modifier-border-focus: none;
+  --text-normal: #a4b1cd;
+  --text-muted: #a4b1cd;
+  --text-faint: #cad2e2;
+  --text-on-accent: #141d2b;
+  --text-highlight-bg: #9fef00;
+  --icon-color: #a4b1cd;
+  --graph-line: #4a5466;
+  --graph-node-unresolved: #a4b1cd;
+  --search-icon-color: #a4b1cd;
+  --color-base-40: transparent;
+  --color-base-35: transparent;
+  --color-base-50: #cad2e2;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -603,7 +641,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
 
-  background-color: #000;
+  background-color: #141d2b;
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -632,13 +670,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: #000;
+      background-color: #141d2b;
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: #000;
+        background-color: #141d2b;
 
         background-color: var(--background-primary);
       }
@@ -647,7 +685,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: #000;
+          background-color: #141d2b;
 
           background-color: var(--background-secondary);
 
@@ -834,10 +872,10 @@ body {
   h1 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: var(--h1-weight);
-    color: var(--h1-color);
+    --font-weight: 700;
+    color: #cad2e2;
     font-family: inherit;
-    font-size: var(--h1-size);
+    font-size: 2em;
     font-style: normal;
     font-variant: normal;
     font-weight: 700;
@@ -847,7 +885,7 @@ body {
     font-size: 2rem;
   }
   h1 a {
-    --link-weight: var(--h1-weight);
+    --link-weight: 700;
   }
   h2.page-title,
   h2.page-title a,
@@ -927,9 +965,9 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 700;
-    color: var(--h6-color);
+    color: #cad2e2;
     font-family: inherit;
-    font-size: var(--h6-size);
+    font-size: 1.12em;
     font-style: normal;
     font-variant: normal;
     font-weight: 700;
@@ -964,9 +1002,9 @@ body {
     position: relative;
     padding: 12px 16px;
     min-height: 38px;
-    background-color: var(--code-background);
+    background-color: #1a2331;
     border-radius: 4px;
-    white-space: var(--code-white-space);
+    white-space: pre;
     border: 0px solid transparent;
     overflow-x: auto;
 
@@ -1033,12 +1071,12 @@ body {
   }
 
   code {
-    color: var(--code-normal);
+    color: #a4b1cd;
     font-family:
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
       "Source Code Pro", monospace;
-    background-color: var(--code-background);
+    background-color: #1a2331;
     border-radius: 4px;
     font-size: 1em;
     padding: 0.15em 0.3em;
@@ -1055,7 +1093,7 @@ body {
     height: auto;
     background-color: transparent;
     box-shadow: none;
-    color: var(--htb-text-color);
+    color: #a4b1cd;
     font-size: calc(16px * 0.8);
     font-family:
       "??",
@@ -1135,7 +1173,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: #000;
+        background-color: #141d2b;
 
         background-color: var(--background-secondary);
 
@@ -1400,7 +1438,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: #000;
+        background-color: #141d2b;
 
         border: 0.5pt solid var(--color-base-40, rgba(251, 70, 76, 0.6));
 
@@ -1419,12 +1457,12 @@ body {
           width: 100%;
           padding: 24px;
           padding-inline-end: 48px;
-          background-color: #000;
+          background-color: #141d2b;
           font-size: 16px;
           border: none;
           height: 48px;
           border-radius: 0;
-          border-bottom: 1px solid #141d2b;
+          border-bottom: 1px solid #1a2331;
 
           margin-bottom: 0;
           border-bottom: none;
@@ -1551,7 +1589,7 @@ body {
 
   /* POPOVER */
   .popover {
-    background-color: #000;
+    background-color: #141d2b;
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow:
@@ -1571,7 +1609,7 @@ body {
     & .popover-inner {
       border: 1px solid transparent;
 
-      background-color: #000;
+      background-color: #141d2b;
 
       border-radius: 8px;
 

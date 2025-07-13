@@ -19,18 +19,10 @@ html[saved-theme="dark"] {
   code[data-theme*=" "] span {
     color: var(--shiki-dark);
   }
-  --text-accent: hsl(
-    calc(232 !important - 4),
-    75% !important,
-    calc(70% !important - 2%)
-  );
+  --text-accent: hsl(calc(232 - 4), 75%, calc(70% - 2%));
   --background-modifier-border: #d9dde8;
-  --color-accent-2: hsl(
-    calc(232 !important + 2),
-    calc(75% !important + 5%),
-    calc(70% !important + 4%)
-  );
-  --color-accent-hsl: 232 !important, 75% !important, 70% !important;
+  --color-accent-2: hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%));
+  --color-accent-hsl: 232, 75%, 70%;
   --color-base-00: hsla(216, 16%, 13%, 75%);
   --color-base-10: hsl(216, 17%, 14%);
   --color-base-100: #c8d4e6;
@@ -50,12 +42,7 @@ html[saved-theme="dark"] {
   --color-yellow: #e8c900;
   --mono-rgb-100: 255, 255, 255;
   color-scheme: dark;
-  --text-highlight-bg: hsla(
-    232 !important,
-    75% !important,
-    70% !important,
-    0.475
-  );
+  --text-highlight-bg: hsla(232, 75%, 70%, 0.475);
 }
 
 :root[saved-theme="light"],
@@ -73,12 +60,8 @@ html[saved-theme="light"] {
 
   color-scheme: light;
   --mono-rgb-100: 0, 0, 0;
-  --color-accent-hsl: 232 !important, 75% !important, 70% !important;
-  --color-accent-2: hsl(
-    calc(232 !important + 2),
-    calc(75% !important + 5%),
-    calc(70% !important + 4%)
-  );
+  --color-accent-hsl: 232, 75%, 70%;
+  --color-accent-2: hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%));
   --color-base-00: hsla(0, 0%, 100%, 75%);
   --color-base-10: #fdfdfd;
   --color-base-100: #252525;
@@ -862,11 +845,7 @@ body {
   --bold-color: inherit;
   --bold-weight: calc(700 + 200);
   --checkbox-marker-color: hsla(237, 10%, 97%, 75%);
-  --checkbox-color-hover: hsl(
-    calc(232 !important - 4),
-    75% !important,
-    calc(70% !important - 2%)
-  );
+  --checkbox-color-hover: hsl(calc(232 - 4), 75%, calc(70% - 2%));
   --checkbox-border-color-hover: #6d6b78;
   --code-background: hsl(220, 9%, 95%);
   --code-normal: #3e3a4f;
@@ -880,11 +859,7 @@ body {
   --code-tag: #ff7272;
   --code-value: #b78cda;
   --collapse-icon-color: #787689;
-  --collapse-icon-color-collapsed: hsl(
-    calc(232 !important - 4),
-    75% !important,
-    calc(70% !important - 2%)
-  );
+  --collapse-icon-color-collapsed: hsl(calc(232 - 4), 75%, calc(70% - 2%));
   --cursor-link: pointer;
   --font-weight: 400;
   --graph-line: var(--color-base-35, rgba(255, 114, 114, 0.6));
@@ -899,26 +874,14 @@ body {
     "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
     Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   --italic-color: inherit;
-  --link-color: hsl(
-    calc(232 !important - 4),
-    75% !important,
-    calc(70% !important - 2%)
-  );
-  --link-color-hover: hsl(
-    calc(232 !important + 2),
-    calc(75% !important + 5%),
-    calc(70% !important + 4%)
-  );
+  --link-color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  --link-color-hover: hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%));
   --link-weight: var(--link-weight);
-  --link-external-color: hsl(
-    calc(232 !important - 4),
-    75% !important,
-    calc(70% !important - 2%)
-  );
+  --link-external-color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
   --link-external-color-hover: hsl(
-    calc(232 !important + 2),
-    calc(75% !important + 5%),
-    calc(70% !important + 4%)
+    calc(232 + 2),
+    calc(75% + 5%),
+    calc(70% + 4%)
   );
   --link-external-filter: none;
   --nav-item-background-hover: rgba(255, 255, 255, 0.15);
@@ -926,37 +889,14 @@ body {
   --nav-item-children-margin-start: 12px;
   --p-spacing: 1rem;
   --search-icon-color: #6d6b78;
-  --tag-color: hsl(
-    calc(232 !important - 4),
-    75% !important,
-    calc(70% !important - 2%)
-  );
-  --tag-color-hover: hsl(
-    calc(232 !important - 4),
-    75% !important,
-    calc(70% !important - 2%)
-  );
+  --tag-color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
+  --tag-color-hover: hsl(calc(232 - 4), 75%, calc(70% - 2%));
   --tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-background: hsla(232 !important, 75% !important, 70% !important, 0.1);
-  --tag-background-hover: hsla(
-    232 !important,
-    75% !important,
-    70% !important,
-    0.2
-  );
-  --tag-border-color: hsla(
-    232 !important,
-    75% !important,
-    70% !important,
-    0.15
-  );
-  --tag-border-color-hover: hsla(
-    232 !important,
-    75% !important,
-    70% !important,
-    0.15
-  );
+  --tag-background: hsla(232, 75%, 70%, 0.1);
+  --tag-background-hover: hsla(232, 75%, 70%, 0.2);
+  --tag-border-color: hsla(232, 75%, 70%, 0.15);
+  --tag-border-color-hover: hsla(232, 75%, 70%, 0.15);
   --tag-border-width: 0px;
   --tag-radius: 2em;
   --tag-weight: inherit;
@@ -971,17 +911,13 @@ body {
   --text-muted: #6d6b78;
   --text-faint: #787689;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
-  --text-accent: hsl(232 !important, 75% !important, 70% !important);
-  --text-accent-hover: hsl(
-    calc(232 !important + 2),
-    calc(75% !important + 5%),
-    calc(70% !important + 4%)
-  );
-  --interactive-accent-hsl: 232 !important, 75% !important, 70% !important;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  --text-accent: hsl(232, 75%, 70%);
+  --text-accent-hover: hsl(calc(232 + 2), calc(75% + 5%), calc(70% + 4%));
+  --interactive-accent-hsl: 232, 75%, 70%;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -998,11 +934,7 @@ body {
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
-  caret-color: hsl(
-    calc(232 !important - 4),
-    75% !important,
-    calc(70% !important - 2%)
-  );
+  caret-color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
   --font-default: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   --font-monospace: "DM Mono", monospace;
   --h1-font:
@@ -1065,7 +997,7 @@ html {
     min-width: 320px;
     max-width: 700px;
     background-color: #9496ac66;
-    margin: calc(2em * 0.4) auto !important;
+    margin: calc(2em * 0.4) auto;
 
     background-color: #9496ac66;
 
@@ -1778,7 +1710,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: hsl(232 !important, 75% !important, 70% !important);
+        color: hsl(232, 75%, 70%);
 
         text-overflow: ellipsis;
         position: relative;
@@ -1809,8 +1741,7 @@ body {
           color: #3e3a4f;
           font-weight: inherit;
           background-color: transparent;
-          border-left: 3px hsl(232 !important, 75% !important, 70% !important)
-            solid;
+          border-left: 3px hsl(232, 75%, 70%) solid;
 
           font-size: 1rem;
           line-height: 1.5rem;
@@ -2088,8 +2019,8 @@ body {
             border-top-right-radius: 0;
           }
           & .highlight {
-            background-color: transparent !important;
-            color: hsl(232 !important, 75% !important, 70% !important);
+            background-color: transparent;
+            color: hsl(232, 75%, 70%);
             font-weight: bold;
 
             background-color: var(--quartz-text-highlight);
@@ -2124,11 +2055,7 @@ body {
                 color: #3e3a4f;
 
                 &.match-tag {
-                  color: hsl(
-                    calc(232 !important - 4),
-                    75% !important,
-                    calc(70% !important - 2%)
-                  );
+                  color: hsl(calc(232 - 4), 75%, calc(70% - 2%));
                 }
               }
             }

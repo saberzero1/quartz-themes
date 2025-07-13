@@ -239,12 +239,12 @@ body {
   --bold-weight: calc(600 + 200);
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --checkbox-marker-color: hsl(var(--hue), 8%, 20%);
+  --checkbox-marker-color: hsl(203, 8%, 20%);
   --checkbox-color: rgb(46, 170, 220);
   --checkbox-color-hover: rgba(46, 170, 220, 0.8);
   --checkbox-border-color: rgba(255, 255, 255, 0.25);
   --checkbox-border-color-hover: rgba(255, 255, 255, 0.45);
-  --code-background: hsl(var(--hue), 8%, 23%);
+  --code-background: hsl(203, 8%, 23%);
   --code-normal: rgba(255, 255, 255, 0.9);
   --code-comment: rgba(255, 255, 255, 0.25);
   --code-function: #e0de71;
@@ -311,10 +311,10 @@ body {
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -323,12 +323,19 @@ body {
   text-rendering: optimizeLegibility;
   line-height: 1.3;
   font-size: 16px;
-  background-color: hsl(var(--hue), 8%, 20%);
+  background-color: hsl(203, 8%, 20%);
   color: rgba(255, 255, 255, 0.9);
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
   caret-color: rgba(255, 255, 255, 0.45);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-monospace:
+    "SF Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier,
+    monospace;
+  -webkit-font-smoothing: auto;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -536,7 +543,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
 
-  background-color: hsl(var(--hue), 8%, 20%);
+  background-color: hsl(203, 8%, 20%);
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -565,13 +572,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: hsl(var(--hue), 8%, 20%);
+      background-color: hsl(203, 8%, 20%);
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: hsl(var(--hue), 8%, 20%);
+        background-color: hsl(203, 8%, 20%);
 
         background-color: var(--background-primary);
       }
@@ -580,7 +587,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: hsl(var(--hue), 8%, 20%);
+          background-color: hsl(203, 8%, 20%);
 
           background-color: var(--background-secondary);
 
@@ -897,7 +904,7 @@ body {
     position: relative;
     padding: 12px 16px;
     min-height: 38px;
-    background-color: hsl(var(--hue), 8%, 23%);
+    background-color: hsl(203, 8%, 23%);
     border-radius: 4px;
     white-space: pre-wrap;
     border: 0px solid rgba(255, 255, 255, 0.14);
@@ -970,7 +977,7 @@ body {
     font-family:
       "SF Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier,
       monospace;
-    background-color: hsl(var(--hue), 8%, 23%);
+    background-color: hsl(203, 8%, 23%);
     border-radius: 4px;
     font-size: 1em;
     padding: 0.15em 0.3em;
@@ -1067,7 +1074,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: hsl(var(--hue), 8%, 20%);
+        background-color: hsl(203, 8%, 20%);
 
         background-color: var(--background-secondary);
 
@@ -1332,7 +1339,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: hsl(var(--hue), 8%, 20%);
+        background-color: hsl(203, 8%, 20%);
 
         border: 0.5pt solid var(--color-base-40, rgba(251, 70, 76, 0.6));
 
@@ -1351,12 +1358,12 @@ body {
           width: 100%;
           padding: 24px;
           padding-inline-end: 48px;
-          background-color: hsl(var(--hue), 8%, 20%);
+          background-color: hsl(203, 8%, 20%);
           font-size: 16px;
           border: none;
           height: 48px;
           border-radius: 0;
-          border-bottom: 1px solid hsl(var(--hue), 8%, 23%);
+          border-bottom: 1px solid hsl(203, 8%, 23%);
 
           margin-bottom: 0;
           border-bottom: none;
@@ -1483,7 +1490,7 @@ body {
 
   /* POPOVER */
   .popover {
-    background-color: hsl(var(--hue), 8%, 20%);
+    background-color: hsl(203, 8%, 20%);
     border: 1px solid rgba(255, 255, 255, 0.14);
     border-radius: 8px;
     box-shadow:
@@ -1503,7 +1510,7 @@ body {
     & .popover-inner {
       border: 1px solid rgba(255, 255, 255, 0.14);
 
-      background-color: hsl(var(--hue), 8%, 20%);
+      background-color: hsl(203, 8%, 20%);
 
       border-radius: 8px;
 

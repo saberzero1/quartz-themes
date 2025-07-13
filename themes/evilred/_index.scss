@@ -49,6 +49,9 @@ html[saved-theme="dark"] {
   --text-muted: #e4d1cf;
   --text-a: #ff9cfa;
   --text-a-hover: #81a1c1;
+  --text-highlight-bg: #a3be8c;
+  --background-modifier-border: #3d0404;
+  --text-accent: #f3ad6b;
 }
 
 .darkmode {
@@ -247,12 +250,12 @@ body {
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
   --font-text:
     "??", "??", -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
-    sans-serif, Apple Color Emoji, Segoe UI Emoji, "Arial" !important;
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -734,7 +737,7 @@ body {
   }
   h1 a {
     --link-weight: 700;
-    color: #d63f4e !important;
+    color: #d63f4e;
   }
   h2.page-title,
   h2.page-title a,
@@ -755,7 +758,7 @@ body {
   }
   h2 a {
     --link-weight: 600;
-    color: #f3ad6b !important;
+    color: #f3ad6b;
   }
   h3 {
     margin-block-end: 0rem;
@@ -774,7 +777,7 @@ body {
   }
   h3 a {
     --link-weight: 600;
-    color: #ebcb8b !important;
+    color: #ebcb8b;
   }
   h4 {
     margin-block-end: 0rem;
@@ -793,7 +796,7 @@ body {
   }
   h4 a {
     --link-weight: 600;
-    color: #b0f078 !important;
+    color: #b0f078;
   }
   h5 {
     margin-block-end: 0rem;
@@ -812,7 +815,7 @@ body {
   }
   h5 a {
     --link-weight: 600;
-    color: #f899e7 !important;
+    color: #f899e7;
   }
   h6 {
     margin-block-end: 0rem;
@@ -831,7 +834,7 @@ body {
   }
   h6 a {
     --link-weight: 600;
-    color: #f3ad6b !important;
+    color: #f3ad6b;
   }
   h1,
   h1 a,
@@ -1131,10 +1134,10 @@ body {
           font-weight: inherit;
           line-height: 1.3;
           margin-bottom: 2px;
-          border-bottom-left-radius: 0 !important;
-          border-bottom-right-radius: 0 !important;
-          border-top-left-radius: 0 !important;
-          border-top-right-radius: 0 !important;
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
 
           color: inherit;
           font-size: 1rem;
@@ -1398,7 +1401,7 @@ body {
                 color: #fdf8ec;
 
                 &.match-tag {
-                  color: #b50505 !important;
+                  color: #b50505;
                 }
               }
             }

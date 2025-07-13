@@ -41,6 +41,16 @@ html[saved-theme="dark"] {
   --color-base-100: #dadada;
   --color-accent-hsl: 258, 88%, 66%;
   --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --background-primary: black;
+  --background-primary-alt: #071821;
+  --background-secondary: black;
+  --background-modifier-border: #306850;
+  --text-accent: #44cf6e;
+  --text-accent-hover: #e0f8cf;
+  --text-normal: #44cf6e;
+  --text-muted: #44cf6e;
+  --text-faint: #306850;
+  --text-highlight-bg: #306850;
 }
 
 :root[saved-theme="light"],
@@ -77,6 +87,16 @@ html[saved-theme="light"] {
   --color-base-100: #222222;
   --color-accent-hsl: 258, 88%, 66%;
   --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --background-primary: #e0f8cf;
+  --background-primary-alt: #cfe6be;
+  --background-secondary: #e0f8cf;
+  --background-modifier-border: #071821;
+  --text-accent: #44cf6e;
+  --text-accent-hover: #071821;
+  --text-normal: #071821;
+  --text-muted: #44cf6e;
+  --text-faint: #306850;
+  --text-highlight-bg: #44cf6e;
 }
 
 @font-face {
@@ -293,59 +313,51 @@ body {
   --bold-weight: calc(600 + 200);
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --checkbox-marker-color: #000;
-  --checkbox-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
-  --checkbox-color-hover: hsl(
-    calc(258 - 5),
-    calc(88% * 1.05),
-    calc(66% * 1.29)
-  );
-  --checkbox-border-color: #666666;
-  --checkbox-border-color-hover: #b3b3b3;
-  --code-background: #111;
-  --code-normal: #dadada;
-  --code-comment: #666666;
+  --checkbox-marker-color: black;
+  --checkbox-color: #44cf6e;
+  --checkbox-color-hover: #e0f8cf;
+  --checkbox-border-color: #306850;
+  --checkbox-border-color-hover: #44cf6e;
+  --code-background: #071821;
+  --code-normal: #44cf6e;
+  --code-comment: #306850;
   --code-function: #e0de71;
   --code-important: #e9973f;
   --code-keyword: #fa99cd;
   --code-property: #53dfdd;
-  --code-punctuation: #b3b3b3;
+  --code-punctuation: #44cf6e;
   --code-string: #44cf6e;
   --code-tag: #fb464c;
   --code-value: #a882ff;
-  --collapse-icon-color: #666666;
-  --collapse-icon-color-collapsed: hsl(258, 88%, 66%);
+  --collapse-icon-color: #306850;
+  --collapse-icon-color-collapsed: #44cf6e;
   --cursor-link: pointer;
   --font-weight: 400;
   --graph-line: var(--color-base-35, rgba(251, 70, 76, 0.6));
-  --graph-node-unresolved: #666666;
+  --graph-node-unresolved: #306850;
   --graph-node-tag: #44cf6e;
   --h1-color: inherit;
   --h1-font: inherit;
   --h3-line-height: 1.3;
   --hr-color: transparent;
   --hr-thickness: 2px;
-  --icon-color: #b3b3b3;
+  --icon-color: #44cf6e;
   --inline-title-color: inherit;
   --inline-title-font: inherit;
   --italic-color: inherit;
-  --link-color: hsl(258, 88%, 66%);
-  --link-color-hover: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --link-color: #44cf6e;
+  --link-color-hover: #e0f8cf;
   --link-weight: var(--link-weight);
-  --link-external-color: hsl(258, 88%, 66%);
-  --link-external-color-hover: hsl(
-    calc(258 - 5),
-    calc(88% * 1.05),
-    calc(66% * 1.29)
-  );
+  --link-external-color: #44cf6e;
+  --link-external-color-hover: #e0f8cf;
   --link-external-filter: none;
   --nav-item-background-hover: rgba(255, 255, 255, 0.15);
   --nav-item-children-padding-start: 4px;
   --nav-item-children-margin-start: 12px;
   --p-spacing: 1rem;
-  --search-icon-color: #b3b3b3;
-  --tag-color: hsl(258, 88%, 66%);
-  --tag-color-hover: hsl(258, 88%, 66%);
+  --search-icon-color: #44cf6e;
+  --tag-color: #44cf6e;
+  --tag-color-hover: #44cf6e;
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -369,11 +381,11 @@ body {
   --text-accent: hsl(258, 88%, 66%);
   --text-accent-hover: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
   --interactive-accent-hsl: 258, 88%, 66%;
-  --font-monospace: "??", "??", var(--font-monospace-default);
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  --font-monospace: "??", "??", "Lucida Console", monospace;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -383,13 +395,14 @@ body {
   font-family: "??", "??", var(--default-font, "??"), Courier, monospace;
   line-height: 1.3;
   font-size: 16px;
-  background-color: #000;
-  color: #dadada;
+  background-color: black;
+  color: #44cf6e;
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
-  caret-color: hsl(258, 88%, 66%);
+  caret-color: #44cf6e;
   --font-default: Courier, monospace;
+  --color-green: #86c06c;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -597,7 +610,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
 
-  background-color: #000;
+  background-color: black;
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -626,13 +639,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: #000;
+      background-color: black;
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: #000;
+        background-color: black;
 
         background-color: var(--background-primary);
       }
@@ -641,7 +654,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: #000;
+          background-color: black;
 
           background-color: var(--background-secondary);
 
@@ -958,7 +971,7 @@ body {
     position: relative;
     padding: 12px 16px;
     min-height: 38px;
-    background-color: #111;
+    background-color: #071821;
     border-radius: 4px;
     white-space: pre-wrap;
     border: 0px solid transparent;
@@ -1027,9 +1040,9 @@ body {
   }
 
   code {
-    color: #dadada;
-    font-family: "??", "??", var(--font-monospace-default);
-    background-color: #111;
+    color: #44cf6e;
+    font-family: "??", "??", "Lucida Console", monospace;
+    background-color: #071821;
     border-radius: 4px;
     font-size: 1em;
     padding: 0.15em 0.3em;
@@ -1046,7 +1059,7 @@ body {
     height: auto;
     background-color: transparent;
     box-shadow: none;
-    color: #b3b3b3;
+    color: #44cf6e;
     font-size: calc(16px * 0.8);
     font-family: "??", "??", var(--default-font, "??"), Courier, monospace;
     position: absolute;
@@ -1063,14 +1076,14 @@ body {
 
   /* METADATA */
   .content-meta {
-    color: #dadada;
+    color: #44cf6e;
 
     color: var(--text-normal);
   }
 
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: #666666;
+    color: #306850;
   }
 
   /* BACKLINKS */
@@ -1090,7 +1103,7 @@ body {
     }
 
     ul li {
-      color: #dadada;
+      color: #44cf6e;
 
       font-weight: 500;
     }
@@ -1112,7 +1125,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: #000;
+        background-color: black;
 
         background-color: var(--background-secondary);
 
@@ -1123,7 +1136,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+        color: #44cf6e;
 
         text-overflow: ellipsis;
         position: relative;
@@ -1152,7 +1165,7 @@ body {
         }
         &:hover {
           background-color: rgba(255, 255, 255, 0.15);
-          color: #dadada;
+          color: #44cf6e;
           font-weight: inherit;
 
           font-size: 1rem;
@@ -1190,7 +1203,7 @@ body {
         a {
           padding: 6px 8px 6px 24px;
           border-radius: 4px;
-          color: #dadada;
+          color: #44cf6e;
           cursor: pointer;
           display: flex;
           font-size: 16px;
@@ -1270,7 +1283,7 @@ body {
     ul.toc-content.overflow {
       li,
       li > a {
-        color: #dadada;
+        color: #44cf6e;
 
         font-weight: inherit;
 
@@ -1362,7 +1375,7 @@ body {
       background: transparent;
       border: 1px solid transparent;
       border-radius: 5px;
-      color: #dadada;
+      color: #44cf6e;
       font-family: inherit;
       font-size: calc(16px * 0.937);
       outline: none;
@@ -1377,7 +1390,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: #000;
+        background-color: black;
 
         border: 0.5pt solid var(--color-base-40, rgba(251, 70, 76, 0.6));
 
@@ -1396,12 +1409,12 @@ body {
           width: 100%;
           padding: 24px;
           padding-inline-end: 48px;
-          background-color: #000;
+          background-color: black;
           font-size: 16px;
           border: none;
           height: 48px;
           border-radius: 0;
-          border-bottom: 1px solid #1e1e1e;
+          border-bottom: 1px solid black;
 
           margin-bottom: 0;
           border-bottom: none;
@@ -1409,7 +1422,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: #dadada;
+          color: #44cf6e;
 
           background: transparent;
           margin-bottom: 0;
@@ -1457,10 +1470,10 @@ body {
               & > ul > li > p {
                 background-color: transparent;
 
-                color: #dadada;
+                color: #44cf6e;
 
                 &.match-tag {
-                  color: hsl(258, 88%, 66%);
+                  color: #44cf6e;
                 }
               }
             }
@@ -1528,7 +1541,7 @@ body {
 
   /* POPOVER */
   .popover {
-    background-color: #000;
+    background-color: black;
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow:
@@ -1548,7 +1561,7 @@ body {
     & .popover-inner {
       border: 1px solid transparent;
 
-      background-color: #000;
+      background-color: black;
 
       border-radius: 8px;
 

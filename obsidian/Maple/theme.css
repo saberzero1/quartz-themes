@@ -6984,11 +6984,13 @@ body.modal-blur .modal-bg {
 
 /* #endregion modal */
 /* #region scrollbar */
+/*
 @property --scrollbar-color {
   syntax: "<color>";
   inherits: true;
   initial-value: rgba(0, 0, 0, 0);
 }
+*/
 /* ! `overflow: overlay` is deprecated, Chrome >= 114 (Obsidian 1.4) is equal to `overflow: auto` */
 /* !Chrome >= 121 no longer support `-webkit-scrollbar-*`, no effect currently */
 /* usage of `@property`: https://stackoverflow.com/a/74050413/20058211 */

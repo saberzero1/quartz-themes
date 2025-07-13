@@ -42,6 +42,18 @@ html[saved-theme="dark"] {
   --color-accent-hsl: 258, 88%, 66%;
   --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
   --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --code-background: white;
+  --code-normal: #999999;
+  --code-comment: gray;
+  --code-function: #7ccccf;
+  --code-important: orange;
+  --code-keyword: orange;
+  --code-property: #af8657;
+  --code-punctuation: #999999;
+  --code-string: #d8c07f;
+  --code-tag: #fb464c;
+  --code-value: #d86f42;
+  --graph-line: rgb(128, 128, 128);
 }
 
 :root[saved-theme="light"],
@@ -78,6 +90,18 @@ html[saved-theme="light"] {
   --color-base-100: #222222;
   --color-accent-hsl: 258, 88%, 66%;
   --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --code-background: white;
+  --code-normal: #999999;
+  --code-comment: gray;
+  --code-function: #154371;
+  --code-important: #cb6500;
+  --code-keyword: #cb6500;
+  --code-property: #60090a;
+  --code-punctuation: #999999;
+  --code-string: #17294e;
+  --code-tag: #fb464c;
+  --code-value: #2f74ba;
+  --graph-line: rgb(128, 128, 128);
 }
 
 @font-face {
@@ -244,6 +268,10 @@ html[saved-theme="light"] {
   --h1-color: var(--text-normal);
 
   --nav-item-background-hover: var(--background-modifier-hover);
+  --h1-color: #ff824d;
+  --hr-color: #808080;
+  --link-external-color: navajowhite;
+  --text-highlight-bg: rgba(255, 243, 163, 0.8);
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -295,7 +323,7 @@ body {
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
   --checkbox-marker-color: white;
-  --checkbox-color: hsl(258, 88%, 66%);
+  --checkbox-color: darkorange;
   --checkbox-color-hover: hsl(
     calc(258 - 3),
     calc(88% * 1.02),
@@ -374,10 +402,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -407,6 +435,10 @@ body {
   user-select: none;
   -webkit-user-select: none;
   caret-color: hsl(258, 88%, 66%);
+  --h1-color: #ff824d;
+  --hr-color: #808080;
+  --link-external-color: navajowhite;
+  --text-highlight-bg: rgba(255, 243, 163, 0.8);
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);

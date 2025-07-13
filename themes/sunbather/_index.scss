@@ -45,6 +45,19 @@ html[saved-theme="dark"] {
   font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
     Cantarell;
+  line-height: 1.6;
+  --background-primary: #050505;
+  --background-secondary: #050505;
+  --text-normal: #d6d4d4;
+  --text-faint: #767676;
+  --code-normal: #d6d4d4;
+  --code-value: #d6d4d4;
+  --code-tag: #20bbfc;
+  --code-keyword: #767676;
+  --code-function: #d6d4d4;
+  --code-string: #da5c81;
+  --code-comment: #767676;
+  --code-background: #131313;
 }
 
 :root[saved-theme="light"],
@@ -85,6 +98,19 @@ html[saved-theme="light"] {
   font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
     Cantarell;
+  line-height: 1.6;
+  --background-primary: #ffffff;
+  --background-secondary: #050505;
+  --text-normal: #262626;
+  --text-faint: #767676;
+  --code-normal: #d6d4d4;
+  --code-value: #d6d4d4;
+  --code-tag: #005f87;
+  --code-keyword: #767676;
+  --code-function: #d6d4d4;
+  --code-string: #d75f87;
+  --code-comment: #767676;
+  --code-background: #ecebeb;
 }
 
 /* cyrillic-ext */
@@ -278,8 +304,8 @@ body {
   --bold-weight: calc(600 + 200);
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --checkbox-marker-color: #000;
-  --checkbox-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --checkbox-marker-color: #050505;
+  --checkbox-color: #da5c81;
   --checkbox-color-hover: hsl(
     calc(258 - 3),
     calc(88% * 1.02),
@@ -361,10 +387,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -372,7 +398,7 @@ body {
   width: 100%;
   text-rendering: optimizeLegibility;
   font-size: 16px;
-  background-color: #000;
+  background-color: #050505;
   color: #d6d4d4;
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
@@ -590,7 +616,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
 
-  background-color: #000;
+  background-color: #050505;
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -619,13 +645,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: #000;
+      background-color: #050505;
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: #000;
+        background-color: #050505;
 
         background-color: var(--background-primary);
       }
@@ -634,7 +660,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: #000;
+          background-color: #050505;
 
           background-color: var(--background-secondary);
 
@@ -951,7 +977,7 @@ body {
     position: relative;
     padding: 12px 16px;
     min-height: 38px;
-    background-color: #111;
+    background-color: #131313;
     border-radius: 4px;
     white-space: pre-wrap;
     border: 0px solid transparent;
@@ -1025,7 +1051,7 @@ body {
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
       "Source Code Pro", monospace;
-    background-color: #111;
+    background-color: #131313;
     border-radius: 4px;
     font-size: 1em;
     padding: 0.15em 0.3em;
@@ -1122,7 +1148,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: #000;
+        background-color: #050505;
 
         background-color: var(--background-secondary);
 
@@ -1133,7 +1159,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+        color: #da5c81;
 
         text-overflow: ellipsis;
         position: relative;
@@ -1387,7 +1413,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: #000;
+        background-color: #050505;
 
         border: 0.5pt solid var(--color-base-40, rgba(251, 70, 76, 0.6));
 
@@ -1406,12 +1432,12 @@ body {
           width: 100%;
           padding: 24px;
           padding-inline-end: 48px;
-          background-color: #000;
+          background-color: #050505;
           font-size: 16px;
           border: none;
           height: 48px;
           border-radius: 0;
-          border-bottom: 1px solid #000;
+          border-bottom: 1px solid #050505;
 
           margin-bottom: 0;
           border-bottom: none;
@@ -1538,7 +1564,7 @@ body {
 
   /* POPOVER */
   .popover {
-    background-color: #000;
+    background-color: #050505;
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow:
@@ -1558,7 +1584,7 @@ body {
     & .popover-inner {
       border: 1px solid transparent;
 
-      background-color: #000;
+      background-color: #050505;
 
       border-radius: 8px;
 

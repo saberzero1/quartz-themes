@@ -20,18 +20,10 @@ html[saved-theme="dark"] {
     color: var(--shiki-dark);
   }
 
-  --color-accent-hsl: 210 !important, 77% !important, 51% !important;
-  --color-accent-2: hsl(
-    calc(210 !important - 5),
-    calc(77% !important * 1.05),
-    calc(51% !important * 1.29)
-  );
-  --text-accent: hsl(
-    calc(210 !important - 3),
-    calc(77% !important * 1.02),
-    calc(51% !important * 1.15)
-  );
-  --text-highlight-bg: hsl(210 !important, 77% !important, 51% !important, 0.3);
+  --color-accent-hsl: 210, 77%, 51%;
+  --color-accent-2: hsl(calc(210 - 5), calc(77% * 1.05), calc(51% * 1.29));
+  --text-accent: hsl(calc(210 - 3), calc(77% * 1.02), calc(51% * 1.15));
+  --text-highlight-bg: hsl(210, 77%, 51%, 0.3);
   --color-base-00: #3b3347;
   --color-base-10: #413b4e;
   --color-base-100: #a0a7c4;
@@ -66,13 +58,9 @@ html[saved-theme="light"] {
     color: var(--shiki-light);
   }
 
-  --color-accent-hsl: 210 !important, 77% !important, 51% !important;
-  --color-accent-2: hsl(
-    calc(210 !important - 3),
-    calc(77% !important * 1.02),
-    calc(51% !important * 1.15)
-  );
-  --text-highlight-bg: hsl(210 !important, 77% !important, 51% !important, 0.2);
+  --color-accent-hsl: 210, 77%, 51%;
+  --color-accent-2: hsl(calc(210 - 3), calc(77% * 1.02), calc(51% * 1.15));
+  --text-highlight-bg: hsl(210, 77%, 51%, 0.2);
   --color-base-00: #f8f3f2;
   --color-base-10: #f0e9e4;
   --color-base-100: #594f67;
@@ -439,11 +427,11 @@ body {
   --checkbox-radius: 0px;
   --checkbox-size: 0.9em;
   --checkbox-marker-color: #191919;
-  --checkbox-color: hsl(210 !important, 77% !important, 51% !important);
+  --checkbox-color: hsl(210, 77%, 51%);
   --checkbox-color-hover: hsl(
-    calc(210 !important - 3),
-    calc(77% !important * 1.02),
-    calc(51% !important * 1.15)
+    calc(210 - 3),
+    calc(77% * 1.02),
+    calc(51% * 1.15)
   );
   --checkbox-border-color: #707070;
   --checkbox-border-color-hover: #a0a0a0;
@@ -460,9 +448,9 @@ body {
   --code-value: #9065b0;
   --collapse-icon-color: #707070;
   --collapse-icon-color-collapsed: hsl(
-    calc(210 !important - 3),
-    calc(77% !important * 1.02),
-    calc(51% !important * 1.15)
+    calc(210 - 3),
+    calc(77% * 1.02),
+    calc(51% * 1.15)
   );
   --cursor-link: pointer;
   --font-weight: 400;
@@ -478,26 +466,14 @@ body {
   --inline-title-color: #ffffff;
   --inline-title-font: "Linux Libertine", "Georgia", "Times", serif;
   --italic-color: inherit;
-  --link-color: hsl(
-    calc(210 !important - 3),
-    calc(77% !important * 1.02),
-    calc(51% !important * 1.15)
-  );
-  --link-color-hover: hsl(
-    calc(210 !important - 5),
-    calc(77% !important * 1.05),
-    calc(51% !important * 1.29)
-  );
+  --link-color: hsl(calc(210 - 3), calc(77% * 1.02), calc(51% * 1.15));
+  --link-color-hover: hsl(calc(210 - 5), calc(77% * 1.05), calc(51% * 1.29));
   --link-weight: var(--link-weight);
-  --link-external-color: hsl(
-    calc(210 !important - 3),
-    calc(77% !important * 1.02),
-    calc(51% !important * 1.15)
-  );
+  --link-external-color: hsl(calc(210 - 3), calc(77% * 1.02), calc(51% * 1.15));
   --link-external-color-hover: hsl(
-    calc(210 !important - 5),
-    calc(77% !important * 1.05),
-    calc(51% !important * 1.29)
+    calc(210 - 5),
+    calc(77% * 1.05),
+    calc(51% * 1.29)
   );
   --link-external-filter: none;
   --nav-item-background-hover: rgba(0, 0, 0, 0.15);
@@ -517,21 +493,17 @@ body {
   --text-muted: #a0a0a0;
   --text-faint: #707070;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
-  --text-accent: hsl(210 !important, 77% !important, 51% !important);
-  --text-accent-hover: hsl(
-    calc(210 !important - 5),
-    calc(77% !important * 1.05),
-    calc(51% !important * 1.29)
-  );
-  --interactive-accent-hsl: 210 !important, 77% !important, 51% !important;
+  --text-accent: hsl(210, 77%, 51%);
+  --text-accent-hover: hsl(calc(210 - 5), calc(77% * 1.05), calc(51% * 1.29));
+  --interactive-accent-hsl: 210, 77%, 51%;
   --font-monospace:
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -558,41 +530,14 @@ body {
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
-  caret-color: hsl(
-    calc(210 !important - 3),
-    calc(77% !important * 1.02),
-    calc(51% !important * 1.15)
-  );
-  --tag-background: hsla(210 !important, 77% !important, 51% !important, 0.1);
-  --tag-background-hover: hsla(
-    210 !important,
-    77% !important,
-    51% !important,
-    0.2
-  );
-  --tag-border-color: hsla(
-    210 !important,
-    77% !important,
-    51% !important,
-    0.15
-  );
-  --tag-border-color-hover: hsla(
-    210 !important,
-    77% !important,
-    51% !important,
-    0.15
-  );
+  caret-color: hsl(calc(210 - 3), calc(77% * 1.02), calc(51% * 1.15));
+  --tag-background: hsla(210, 77%, 51%, 0.1);
+  --tag-background-hover: hsla(210, 77%, 51%, 0.2);
+  --tag-border-color: hsla(210, 77%, 51%, 0.15);
+  --tag-border-color-hover: hsla(210, 77%, 51%, 0.15);
   --tag-border-width: 0px;
-  --tag-color: hsl(
-    calc(210 !important - 3),
-    calc(77% !important * 1.02),
-    calc(51% !important * 1.15)
-  );
-  --tag-color-hover: hsl(
-    calc(210 !important - 3),
-    calc(77% !important * 1.02),
-    calc(51% !important * 1.15)
-  );
+  --tag-color: hsl(calc(210 - 3), calc(77% * 1.02), calc(51% * 1.15));
+  --tag-color-hover: hsl(calc(210 - 3), calc(77% * 1.02), calc(51% * 1.15));
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-radius: 2em;
@@ -1348,7 +1293,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: hsl(210 !important, 77% !important, 51% !important);
+        color: hsl(210, 77%, 51%);
 
         text-overflow: ellipsis;
         position: relative;
@@ -1377,7 +1322,7 @@ body {
         }
         &:hover {
           background-color: rgba(0, 0, 0, 0.15);
-          color: hsl(210 !important, 77% !important, 51% !important);
+          color: hsl(210, 77%, 51%);
           font-weight: inherit;
 
           font-size: 1rem;

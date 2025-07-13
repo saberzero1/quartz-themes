@@ -48,6 +48,10 @@ html[saved-theme="dark"] {
   --text-faint: #eeeeee;
   --text-highlight-bg: #640211;
   --text-a-hover: #00ff7d;
+  --text-accent-hover: #26b3d2;
+  --text-a: #ff058d;
+  --text-accent: #ff058d;
+  --background-modifier-border: #ff058d;
 }
 
 .darkmode {
@@ -306,14 +310,10 @@ body {
   --inline-title-font: inherit;
   --italic-color: inherit;
   --link-color: #ff058d;
-  --link-color-hover: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --link-color-hover: #26b3d2;
   --link-weight: var(--link-weight);
   --link-external-color: #ff058d;
-  --link-external-color-hover: hsl(
-    calc(258 - 5),
-    calc(88% * 1.05),
-    calc(66% * 1.29)
-  );
+  --link-external-color-hover: #26b3d2;
   --link-external-filter: none;
   --nav-item-background-hover: rgba(255, 255, 255, 0.15);
   --nav-item-children-padding-start: 4px;
@@ -353,10 +353,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;

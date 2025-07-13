@@ -31,9 +31,62 @@ html[saved-theme="dark"] {
   --color-base-50: #666666;
   --color-base-70: #b3b3b3;
   --color-base-100: #dadada;
-  --color-accent-hsl: 202, 100%, 66%;
-  --color-accent-2: hsl(calc(202 - 5), calc(100% * 1.05), calc(66% * 1.29));
-  --text-accent: hsl(calc(202 - 3), calc(100% * 1.02), calc(66% * 1.15));
+  --color-accent-hsl: 202, 100%, 75%;
+  --color-accent-2: hsl(calc(202 - 5), calc(100% * 1.05), calc(75% * 1.29));
+  --text-accent: hsl(calc(202 - 3), calc(100% * 1.02), calc(75% * 1.15));
+  --bg_dark_x: 36, 40, 59;
+  --bg_dark: rgb(var(--bg_dark_x));
+  --bg_x: 36, 40, 59;
+  --bg_highlight_x: 65, 72, 104;
+  --bg_highlight: rgb(var(--bg_highlight_x));
+  --bg_highlight_dark_x: 35, 35, 55;
+  --bg_highlight_dark: rgb(var(--bg_highlight_dark_x));
+  --fg_x: 192, 202, 245;
+  --fg_dark_x: 169, 177, 214;
+  --fg_dark: rgb(var(--fg_dark_x));
+  --comment_x: 86, 95, 137;
+  --blue_x: 122, 162, 247;
+  --cyan_x: 125, 207, 255;
+  --magenta_x: 187, 154, 247;
+  --purple_x: 157, 124, 21;
+  --orange_x: 255, 158, 100;
+  --yellow_x: 224, 175, 104;
+  --green_x: 158, 206, 106;
+  --red_x: 255, 117, 127;
+  --color-red: rgb(var(--red_x));
+  --color-purple: rgb(var(--purple_x));
+  --color-green: rgb(var(--green_x));
+  --color-cyan: rgb(var(--cyan_x));
+  --color-blue: rgb(var(--blue_x));
+  --color-yellow: rgb(var(--yellow_x));
+  --color-orange: rgb(var(--orange_x));
+  --color-pink: rgb(var(--magenta_x));
+  --background-primary: rgb(var(--bg_x));
+  --background-primary-alt: rgb(var(--bg_x));
+  --background-secondary: var(--bg_dark);
+  --background-modifier-border: var(--bg_highlight);
+  --background-modifier-border-focus: var(--bg_highlight);
+  --background-modifier-border-hover: var(--bg_highlight);
+  --background-modifier-hover: var(--bg_highlight);
+  --text-normal: rgb(var(--fg_x));
+  --text-faint: rgb(var(--comment_x));
+  --text-muted: var(--fg_dark);
+  --h1-color: rgb(var(--red_x));
+  --tag-color: rgb(var(--magenta_x));
+  --tag-background: rgba(var(--magenta_x), 0.15);
+  --inline-title-color: rgb(var(--magenta_x));
+  --text-highlight-bg: rgba(var(--orange_x), 0.4);
+  --bold-color: hsl(202, 100%, 75%);
+  --italic-color: hsl(202, 100%, 75%);
+  --checkbox-color: rgb(var(--comment_x));
+  --checkbox-color-hover: rgb(var(--comment_x));
+  --checkbox-border-color: rgb(var(--comment_x));
+  --checkbox-border-color-hover: rgb(var(--comment_x));
+  --code-normal: rgb(var(--fg_x));
+  --code-background: var(--bg_highlight_dark);
+  --nav-item-background-hover: var(--bg_highlight);
+  --graph-line: rgb(var(--comment_x));
+  --graph-node-tag: rgb(var(--orange_x));
 }
 
 .darkmode {
@@ -207,11 +260,11 @@ body {
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
   --checkbox-marker-color: rgb(var(--bg_x));
-  --checkbox-color: hsl(202, 100%, 66%);
+  --checkbox-color: hsl(202, 100%, 75%);
   --checkbox-color-hover: hsl(
     calc(202 - 3),
     calc(100% * 1.02),
-    calc(66% * 1.15)
+    calc(75% * 1.15)
   );
   --checkbox-border-color: rgb(var(--comment_x));
   --checkbox-border-color-hover: var(--fg_dark);
@@ -230,7 +283,7 @@ body {
   --collapse-icon-color-collapsed: hsl(
     calc(202 - 3),
     calc(100% * 1.02),
-    calc(66% * 1.15)
+    calc(75% * 1.15)
   );
   --cursor-link: pointer;
   --font-weight: 400;
@@ -246,18 +299,18 @@ body {
   --inline-title-color: rgb(var(--red_x));
   --inline-title-font: inherit;
   --italic-color: inherit;
-  --link-color: hsl(calc(202 - 3), calc(100% * 1.02), calc(66% * 1.15));
-  --link-color-hover: hsl(calc(202 - 5), calc(100% * 1.05), calc(66% * 1.29));
+  --link-color: hsl(calc(202 - 3), calc(100% * 1.02), calc(75% * 1.15));
+  --link-color-hover: hsl(calc(202 - 5), calc(100% * 1.05), calc(75% * 1.29));
   --link-weight: var(--link-weight);
   --link-external-color: hsl(
     calc(202 - 3),
     calc(100% * 1.02),
-    calc(66% * 1.15)
+    calc(75% * 1.15)
   );
   --link-external-color-hover: hsl(
     calc(202 - 5),
     calc(100% * 1.05),
-    calc(66% * 1.29)
+    calc(75% * 1.29)
   );
   --link-external-filter: none;
   --nav-item-background-hover: rgba(255, 255, 255, 0.15);
@@ -265,14 +318,14 @@ body {
   --nav-item-children-margin-start: 12px;
   --p-spacing: 1rem;
   --search-icon-color: var(--fg_dark);
-  --tag-color: hsl(calc(202 - 3), calc(100% * 1.02), calc(66% * 1.15));
-  --tag-color-hover: hsl(calc(202 - 3), calc(100% * 1.02), calc(66% * 1.15));
+  --tag-color: hsl(calc(202 - 3), calc(100% * 1.02), calc(75% * 1.15));
+  --tag-color-hover: hsl(calc(202 - 3), calc(100% * 1.02), calc(75% * 1.15));
   --tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-background: hsla(202, 100%, 66%, 0.1);
-  --tag-background-hover: hsla(202, 100%, 66%, 0.2);
-  --tag-border-color: hsla(202, 100%, 66%, 0.15);
-  --tag-border-color-hover: hsla(202, 100%, 66%, 0.15);
+  --tag-background: hsla(202, 100%, 75%, 0.1);
+  --tag-background-hover: hsla(202, 100%, 75%, 0.2);
+  --tag-border-color: hsla(202, 100%, 75%, 0.15);
+  --tag-border-color-hover: hsla(202, 100%, 75%, 0.15);
   --tag-border-width: 0px;
   --tag-radius: 2em;
   --tag-weight: inherit;
@@ -287,9 +340,9 @@ body {
   --text-muted: #b3b3b3;
   --text-faint: #666666;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
-  --text-accent: hsl(202, 100%, 66%);
-  --text-accent-hover: hsl(calc(202 - 5), calc(100% * 1.05), calc(66% * 1.29));
-  --interactive-accent-hsl: 202, 100%, 66%;
+  --text-accent: hsl(202, 100%, 75%);
+  --text-accent-hover: hsl(calc(202 - 5), calc(100% * 1.05), calc(75% * 1.29));
+  --interactive-accent-hsl: 202, 100%, 75%;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
@@ -298,10 +351,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -330,7 +383,7 @@ body {
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
-  caret-color: hsl(calc(202 - 3), calc(100% * 1.02), calc(66% * 1.15));
+  caret-color: hsl(calc(202 - 3), calc(100% * 1.02), calc(75% * 1.15));
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -1078,7 +1131,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: hsl(202, 100%, 66%);
+        color: hsl(202, 100%, 75%);
 
         text-overflow: ellipsis;
         position: relative;

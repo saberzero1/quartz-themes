@@ -42,6 +42,10 @@ html[saved-theme="dark"] {
   --color-accent-hsl: 258, 88%, 66%;
   --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
   --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --background-primary: #161a1d;
+  --background-secondary: #0b0d0f;
+  --code-background: #0b0d0f;
+  --background-modifier-hover: rgba(255, 255, 255, 0.09);
 }
 
 :root[saved-theme="light"],
@@ -294,7 +298,7 @@ body {
   --bold-weight: calc(600 + 200);
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --checkbox-marker-color: #000;
+  --checkbox-marker-color: #161a1d;
   --checkbox-color: hsl(258, 88%, 66%);
   --checkbox-color-hover: hsl(
     calc(258 - 3),
@@ -382,10 +386,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -409,7 +413,7 @@ body {
     sans-serif;
   line-height: 1.3;
   font-size: 16px;
-  background-color: #000;
+  background-color: #161a1d;
   color: #dadada;
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
@@ -622,7 +626,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
 
-  background-color: #000;
+  background-color: #161a1d;
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -651,13 +655,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: #000;
+      background-color: #161a1d;
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: #000;
+        background-color: #161a1d;
 
         background-color: var(--background-primary);
       }
@@ -666,7 +670,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: #000;
+          background-color: #161a1d;
 
           background-color: var(--background-secondary);
 
@@ -1154,7 +1158,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: #000;
+        background-color: #161a1d;
 
         background-color: var(--background-secondary);
 
@@ -1438,7 +1442,7 @@ body {
           width: 100%;
           padding: 24px;
           padding-inline-end: 48px;
-          background-color: #000;
+          background-color: #161a1d;
           font-size: 16px;
           border: none;
           height: 48px;
@@ -1570,7 +1574,7 @@ body {
 
   /* POPOVER */
   .popover {
-    background-color: #000;
+    background-color: #161a1d;
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow:
@@ -1590,7 +1594,7 @@ body {
     & .popover-inner {
       border: 1px solid transparent;
 
-      background-color: #000;
+      background-color: #161a1d;
 
       border-radius: 8px;
 

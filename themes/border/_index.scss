@@ -20,19 +20,11 @@ html[saved-theme="dark"] {
     color: var(--shiki-dark);
   }
   color-scheme: dark;
-  --text-normal: hsl(232 !important, 15%, 85%);
-  --text-muted: hsl(232 !important, 12%, 75%);
-  --text-faint: hsl(232 !important, 9%, 50%);
-  --text-accent: hsl(
-    calc(232 !important - 3),
-    calc(40% !important * 1.02),
-    calc(60% !important * 1.15)
-  );
-  --text-accent-hover: hsl(
-    calc(232 !important - 5),
-    calc(40% !important * 1.05),
-    calc(60% !important * 1.29)
-  );
+  --text-normal: hsl(232, 15%, 85%);
+  --text-muted: hsl(232, 12%, 75%);
+  --text-faint: hsl(232, 9%, 50%);
+  --text-accent: hsl(calc(232 - 3), calc(40% * 1.02), calc(60% * 1.15));
+  --text-accent-hover: hsl(calc(232 - 5), calc(40% * 1.05), calc(60% * 1.29));
   --mono-rgb-100: 255, 255, 255;
   --color-red: rgb(255, 120, 129);
   --color-green: rgb(124, 211, 124);
@@ -51,46 +43,30 @@ html[saved-theme="dark"] {
   --color-base-50: #666;
   --color-base-70: #bababa;
   --color-base-100: #dadada;
-  --color-accent-hsl: 232 !important, 40% !important, 60% !important;
-  --color-accent-2: hsl(
-    calc(232 !important - 5),
-    calc(40% !important * 1.05),
-    calc(60% !important * 1.29)
-  );
+  --color-accent-hsl: 232, 40%, 60%;
+  --color-accent-2: hsl(calc(232 - 5), calc(40% * 1.05), calc(60% * 1.29));
   --background-modifier-border: hsla(
-    232 !important,
-    calc(40% !important * 0.4),
-    calc(60% !important * 0.9),
+    232,
+    calc(40% * 0.4),
+    calc(60% * 0.9),
     0.2
   );
   --background-modifier-border-hover: hsla(
-    232 !important,
-    calc(40% !important * 0.4),
-    calc(60% !important * 0.9),
+    232,
+    calc(40% * 0.4),
+    calc(60% * 0.9),
     0.25
   );
   --background-modifier-border-focus: hsla(
-    232 !important,
-    calc(40% !important * 0.4),
-    calc(60% !important * 0.9),
+    232,
+    calc(40% * 0.4),
+    calc(60% * 0.9),
     0.3
   );
-  --background-primary: hsl(
-    232 !important,
-    calc(40% !important / 5),
-    calc(60% !important * 1.25 / 4.5)
-  );
-  --background-primary-alt: hsl(
-    232 !important,
-    calc(40% !important / 5),
-    calc(60% !important * 1.25 / 3.9)
-  );
-  --background-secondary: hsl(
-    232 !important,
-    calc(40% !important / 5),
-    calc(60% !important * 1.25 / 4.9)
-  );
-  --background-modifier-hover: hsla(232 !important, 12%, 40%, 0.25);
+  --background-primary: hsl(232, calc(40% / 5), calc(60% * 1.25 / 4.5));
+  --background-primary-alt: hsl(232, calc(40% / 5), calc(60% * 1.25 / 3.9));
+  --background-secondary: hsl(232, calc(40% / 5), calc(60% * 1.25 / 4.9));
+  --background-modifier-hover: hsla(232, 12%, 40%, 0.25);
   --text-highlight-bg: #ffd000;
   --code-background: #282c34;
 }
@@ -109,19 +85,11 @@ html[saved-theme="light"] {
   }
 
   color-scheme: light;
-  --text-normal: hsl(232 !important, 6%, 12%);
-  --text-muted: hsl(232 !important, 9%, 36%);
-  --text-faint: hsl(232 !important, 12%, 64%);
-  --text-accent: hsl(
-    calc(232 !important - 3),
-    calc(40% !important * 1.02),
-    calc(60% !important * 1.15)
-  );
-  --text-accent-hover: hsl(
-    calc(232 !important - 5),
-    calc(40% !important * 1.05),
-    calc(60% !important * 1.29)
-  );
+  --text-normal: hsl(232, 6%, 12%);
+  --text-muted: hsl(232, 9%, 36%);
+  --text-faint: hsl(232, 12%, 64%);
+  --text-accent: hsl(calc(232 - 3), calc(40% * 1.02), calc(60% * 1.15));
+  --text-accent-hover: hsl(calc(232 - 5), calc(40% * 1.05), calc(60% * 1.29));
   --mono-rgb-100: 0, 0, 0;
   --color-red: rgb(255, 120, 129);
   --color-green: rgb(124, 211, 124);
@@ -140,38 +108,29 @@ html[saved-theme="light"] {
   --color-base-50: #ababab;
   --color-base-70: #5a5a5a;
   --color-base-100: #222222;
-  --color-accent-hsl: 232 !important, 40% !important, 60% !important;
-  --color-accent-2: hsl(
-    calc(232 !important - 3),
-    calc(40% !important * 1.02),
-    calc(60% !important * 1.15)
-  );
-  --background-modifier-border: hsla(
-    232 !important,
-    calc(40% !important * 0.4),
-    calc(60% !important),
-    0.2
-  );
+  --color-accent-hsl: 232, 40%, 60%;
+  --color-accent-2: hsl(calc(232 - 3), calc(40% * 1.02), calc(60% * 1.15));
+  --background-modifier-border: hsla(232, calc(40% * 0.4), calc(60%), 0.2);
   --background-modifier-border-hover: hsla(
-    232 !important,
-    calc(40% !important * 0.4),
-    calc(60% !important),
+    232,
+    calc(40% * 0.4),
+    calc(60%),
     0.25
   );
   --background-modifier-border-focus: hsla(
-    232 !important,
-    calc(40% !important * 0.4),
-    calc(60% !important),
+    232,
+    calc(40% * 0.4),
+    calc(60%),
     0.3
   );
   --background-primary: #000;
   --background-primary-alt: #111;
   --background-secondary: hsl(
-    232 !important,
-    calc((40% !important) / 6),
-    calc(100% - (100% - 60% !important) / 16)
+    232,
+    calc((40%) / 6),
+    calc(100% - (100% - 60%) / 16)
   );
-  --background-modifier-hover: hsla(232 !important, 6%, 64%, 0.15);
+  --background-modifier-hover: hsla(232, 6%, 64%, 0.15);
   --text-highlight-bg: #ffd000;
   --code-background: #282c34;
 }
@@ -387,52 +346,28 @@ body {
 
   --nav-item-background-hover: var(--background-modifier-hover);
   --code-background: #000;
-  --collapse-icon-color: hsla(
-    232 !important,
-    calc(40% !important * 0.4),
-    calc(60% !important * 0.9)
-  );
+  --collapse-icon-color: hsla(232, calc(40% * 0.4), calc(60% * 0.9));
   --collapse-icon-color-collapsed: hsl(
-    calc(232 !important - 3),
-    calc(40% !important * 1.02),
-    calc(60% !important * 1.15)
+    calc(232 - 3),
+    calc(40% * 1.02),
+    calc(60% * 1.15)
   );
   --font-weight: 400;
   --graph-line: var(--color-base-35, #555);
-  --graph-node-unresolved: hsla(
-    232 !important,
-    calc(40% !important * 0.4),
-    calc(60% !important * 0.9)
-  );
+  --graph-node-unresolved: hsla(232, calc(40% * 0.4), calc(60% * 0.9));
   --graph-node-tag: rgb(124, 211, 124);
   --hr-color: #363636;
   --hr-thickness: 2px;
-  --icon-color: hsla(
-    232 !important,
-    calc(40% !important * 0.4),
-    calc(60% !important * 0.9)
-  );
-  --link-color: hsl(
-    calc(232 !important - 3),
-    calc(40% !important * 1.02),
-    calc(60% !important * 1.15)
-  );
-  --link-color-hover: hsl(
-    calc(232 !important - 5),
-    calc(40% !important * 1.05),
-    calc(60% !important * 1.29)
-  );
+  --icon-color: hsla(232, calc(40% * 0.4), calc(60% * 0.9));
+  --link-color: hsl(calc(232 - 3), calc(40% * 1.02), calc(60% * 1.15));
+  --link-color-hover: hsl(calc(232 - 5), calc(40% * 1.05), calc(60% * 1.29));
   --link-weight: var(--link-weight);
   --link-external-filter: none;
   --nav-item-background-hover: rgba(255, 255, 255, 0.025);
   --nav-item-children-padding-start: 4px;
   --nav-item-children-margin-start: 12px;
   --p-spacing: 1rem;
-  --search-icon-color: hsla(
-    232 !important,
-    calc(40% !important * 0.4),
-    calc(60% !important * 0.9)
-  );
+  --search-icon-color: hsla(232, calc(40% * 0.4), calc(60% * 0.9));
   --tag-weight: inherit;
   --background-primary: #000;
   --background-primary-alt: #111;
@@ -445,13 +380,9 @@ body {
   --text-muted: #bababa;
   --text-faint: #666;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
-  --text-accent: hsl(232 !important, 40% !important, 60% !important);
-  --text-accent-hover: hsl(
-    calc(232 !important - 5),
-    calc(40% !important * 1.05),
-    calc(60% !important * 1.29)
-  );
-  --interactive-accent-hsl: 232 !important, 40% !important, 60% !important;
+  --text-accent: hsl(232, 40%, 60%);
+  --text-accent-hover: hsl(calc(232 - 5), calc(40% * 1.05), calc(60% * 1.29));
+  --interactive-accent-hsl: 232, 40%, 60%;
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
@@ -460,10 +391,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -488,15 +419,50 @@ body {
   line-height: 1.3;
   font-size: 16px;
   background-color: transparent;
-  color: hsl(232 !important, 15%, 85%);
+  color: hsl(232, 15%, 85%);
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
-  caret-color: hsl(
-    calc(232 !important - 3),
-    calc(40% !important * 1.02),
-    calc(60% !important * 1.15)
-  );
+  caret-color: hsl(calc(232 - 3), calc(40% * 1.02), calc(60% * 1.15));
+  --color-activated-tab-header-dark: hsl(232, 15%, 85%);
+  --inline-title-color: rgb(255, 120, 129);
+  --inline-title-font: inherit;
+  --h1-color: inherit;
+  --h1-font: inherit;
+  --h3-line-height: 1.3;
+  --link-external-color: rgb(137, 189, 244);
+  --link-external-color-hover: rgb(137, 189, 244);
+  --tag-color: hsl(calc(232 - 3), calc(40% * 1.02), calc(60% * 1.15));
+  --tag-color-hover: hsl(calc(232 - 3), calc(40% * 1.02), calc(60% * 1.15));
+  --tag-decoration: none;
+  --tag-decoration-hover: none;
+  --tag-background: hsla(232, 40%, 60%, 0.1);
+  --tag-background-hover: hsla(232, 40%, 60%, 0.2);
+  --tag-border-color: hsla(232, 40%, 60%, 0.15);
+  --tag-border-color-hover: hsla(232, 40%, 60%, 0.15);
+  --tag-border-width: 1px;
+  --tag-radius: 2em;
+  --cursor-link: pointer;
+  --bold-weight: 600;
+  --bold-color: rgb(255, 120, 129);
+  --italic-color: rgb(251, 187, 131);
+  --checkbox-radius: 6px;
+  --checkbox-size: 16px;
+  --checkbox-marker-color: transparent;
+  --checkbox-color: rgb(124, 211, 124);
+  --checkbox-color-hover: rgb(124, 211, 124);
+  --checkbox-border-color: hsla(232, calc(40% * 0.4), calc(60% * 0.9));
+  --checkbox-border-color-hover: hsla(232, calc(40% * 0.4), calc(60% * 0.9));
+  --code-normal: hsla(232, calc(40% * 0.4), calc(60% * 0.9));
+  --code-comment: hsla(232, calc(40% * 0.4), calc(60% * 0.9));
+  --code-function: rgb(255, 232, 139);
+  --code-important: rgb(251, 187, 131);
+  --code-keyword: rgb(242, 182, 222);
+  --code-property: rgb(134, 223, 226);
+  --code-punctuation: hsla(232, calc(40% * 0.4), calc(60% * 0.9));
+  --code-string: rgb(124, 211, 124);
+  --code-tag: rgb(255, 120, 129);
+  --code-value: rgb(203, 158, 255);
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -679,7 +645,7 @@ html {
 
     & > .callout-title-inner > p {
       --font-weight: calc(var(--font-weight) + 200);
-      font-weight: var(--h6-weight);
+      font-weight: 575;
       color: inherit;
 
       /*color: var(--color);*/
@@ -687,7 +653,7 @@ html {
 
     .callout-title-inner {
       --font-weight: calc(var(--font-weight) + 200);
-      font-weight: var(--h6-weight);
+      font-weight: 575;
       color: inherit;
     }
   }
@@ -937,12 +903,12 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 700;
-    color: rgb(255, 120, 129) !important;
+    color: rgb(255, 120, 129);
     font-family: inherit;
     font-size: 1.5em;
     font-style: normal;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 575;
     letter-spacing: -0.015em;
     line-height: 1.2;
     text-transform: unset;
@@ -958,12 +924,12 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 675;
-    color: rgb(251, 187, 131) !important;
+    color: rgb(251, 187, 131);
     font-family: inherit;
     font-size: 1.425em;
     font-style: normal;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 575;
     letter-spacing: -0.015em;
     line-height: 1.2;
     text-transform: unset;
@@ -977,12 +943,12 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 650;
-    color: rgb(255, 232, 139) !important;
+    color: rgb(255, 232, 139);
     font-family: inherit;
     font-size: 1.35em;
     font-style: normal;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 575;
     letter-spacing: -0.015em;
     line-height: 1.3;
     text-transform: unset;
@@ -996,12 +962,12 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 625;
-    color: rgb(124, 211, 124) !important;
+    color: rgb(124, 211, 124);
     font-family: inherit;
     font-size: 1.275em;
     font-style: normal;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 575;
     letter-spacing: 0.015em;
     line-height: 1.4;
     text-transform: unset;
@@ -1015,12 +981,12 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: rgb(137, 189, 244) !important;
+    color: rgb(137, 189, 244);
     font-family: inherit;
     font-size: 1.2em;
     font-style: normal;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 575;
     letter-spacing: 0.015em;
     line-height: 1.5;
     text-transform: unset;
@@ -1033,21 +999,21 @@ body {
   h6 {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
-    --font-weight: var(--h6-weight);
-    color: rgb(203, 158, 255) !important;
+    --font-weight: 575;
+    color: rgb(203, 158, 255);
     font-family: inherit;
     font-size: 1.125em;
     font-style: normal;
     font-variant: normal;
-    font-weight: var(--h6-weight);
+    font-weight: 575;
     letter-spacing: 0.015em;
     line-height: 1.5;
-    text-transform: var(--h6-text-transform);
+    text-transform: unset;
 
     font-size: 1.1rem;
   }
   h6 a {
-    --link-weight: var(--h6-weight);
+    --link-weight: 575;
   }
   h1,
   h1 a,
@@ -1074,7 +1040,7 @@ body {
     min-height: 38px;
     background-color: #282c34;
     border-radius: 4px;
-    white-space: var(--code-white-space);
+    white-space: pre-wrap;
     overflow-x: auto;
     background: #282c34;
     border: none;
@@ -1195,18 +1161,14 @@ body {
 
   /* METADATA */
   .content-meta {
-    color: hsl(232 !important, 15%, 85%);
+    color: hsl(232, 15%, 85%);
 
     color: var(--text-normal);
   }
 
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: hsla(
-      232 !important,
-      calc(40% !important * 0.4),
-      calc(60% !important * 0.9)
-    );
+    color: hsla(232, calc(40% * 0.4), calc(60% * 0.9));
   }
 
   /* BACKLINKS */
@@ -1215,19 +1177,19 @@ body {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
       --font-weight: 650;
-      color: rgb(255, 232, 139) !important;
+      color: rgb(255, 232, 139);
       font-family: inherit;
       font-size: 1.35em;
       font-style: normal;
       font-variant: normal;
-      font-weight: var(--h6-weight);
+      font-weight: 575;
       letter-spacing: -0.015em;
       line-height: 1.3;
       text-transform: unset;
     }
 
     ul li {
-      color: hsl(232 !important, 15%, 85%);
+      color: hsl(232, 15%, 85%);
 
       font-weight: 500;
     }
@@ -1245,7 +1207,7 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: rgb(251, 187, 131) !important;
+      color: rgb(251, 187, 131);
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1260,7 +1222,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: hsl(232 !important, 15%, 85%);
+        color: hsl(232, 15%, 85%);
 
         text-overflow: ellipsis;
         position: relative;
@@ -1289,7 +1251,7 @@ body {
         }
         &:hover {
           background-color: rgba(255, 255, 255, 0.025);
-          color: var(--color-activated-tab-header-dark) !important;
+          color: var(--color-activated-tab-header-dark);
           font-weight: bold;
 
           font-size: 1rem;
@@ -1327,7 +1289,7 @@ body {
         a {
           padding: 6px 8px 6px 24px;
           border-radius: 4px;
-          color: hsl(232 !important, 15%, 85%);
+          color: hsl(232, 15%, 85%);
           cursor: pointer;
           display: flex;
           font-size: 16px;
@@ -1381,19 +1343,19 @@ body {
 
   /* TOC */
   .toc {
-    color: rgb(255, 232, 139) !important;
+    color: rgb(255, 232, 139);
 
     button.toc-header {
       h3 {
         margin-block-end: 0rem;
         margin-block-start: 0rem;
         --font-weight: 650;
-        color: rgb(255, 232, 139) !important;
+        color: rgb(255, 232, 139);
         font-family: inherit;
         font-size: 1.35em;
         font-style: normal;
         font-variant: normal;
-        font-weight: var(--h6-weight);
+        font-weight: 575;
         letter-spacing: -0.015em;
         line-height: 1.3;
         text-transform: unset;
@@ -1401,14 +1363,14 @@ body {
         margin-block: 0;
       }
 
-      color: rgb(255, 232, 139) !important;
+      color: rgb(255, 232, 139);
 
       color: inherit;
     }
     ul.toc-content.overflow {
       li,
       li > a {
-        color: hsl(232 !important, 15%, 85%);
+        color: hsl(232, 15%, 85%);
 
         font-weight: bold;
 
@@ -1427,12 +1389,12 @@ body {
       margin-block-end: 0rem;
       margin-block-start: 0rem;
       --font-weight: 650;
-      color: rgb(255, 232, 139) !important;
+      color: rgb(255, 232, 139);
       font-family: inherit;
       font-size: 1.35em;
       font-style: normal;
       font-variant: normal;
-      font-weight: var(--h6-weight);
+      font-weight: 575;
       letter-spacing: -0.015em;
       line-height: 1.3;
       text-transform: unset;
@@ -1501,7 +1463,7 @@ body {
       background: transparent;
       border: 1px solid #363636;
       border-radius: 5px;
-      color: hsl(232 !important, 15%, 85%);
+      color: hsl(232, 15%, 85%);
       font-family: inherit;
       font-size: calc(16px * 0.937);
       outline: none;
@@ -1542,7 +1504,7 @@ body {
           height: 48px;
           border-radius: 0;
           border-bottom: 1px solid rgba(255, 255, 255, 0.025);
-          background-color: transparent !important;
+          background-color: transparent;
 
           margin-bottom: 0;
           border-bottom: none;
@@ -1550,7 +1512,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: hsl(232 !important, 15%, 85%);
+          color: hsl(232, 15%, 85%);
 
           background: transparent;
           margin-bottom: 0;
@@ -1598,14 +1560,10 @@ body {
               & > ul > li > p {
                 background-color: transparent;
 
-                color: hsl(232 !important, 15%, 85%);
+                color: hsl(232, 15%, 85%);
 
                 &.match-tag {
-                  color: hsl(
-                    calc(232 !important - 3),
-                    calc(40% !important * 1.02),
-                    calc(60% !important * 1.15)
-                  );
+                  color: hsl(calc(232 - 3), calc(40% * 1.02), calc(60% * 1.15));
                 }
               }
             }

@@ -20,11 +20,9 @@ html[saved-theme="dark"] {
     color: var(--shiki-dark);
   }
   --color-accent-hsl: 258, 88%, 66%;
-  --color-accent-2: rgb(
-    var(--ctp-ext-lavender, 180, 190, 254) !important !important
-  );
-  --text-accent: rgb(var(--ctp-ext-lavender, 180, 190, 254) !important);
-  --text-accent-hover: rgb(var(--ctp-ext-lavender, 180, 190, 254) !important);
+  --color-accent-2: rgb(var(--ctp-ext-lavender, 180, 190, 254) !important);
+  --text-accent: rgb(var(--ctp-ext-lavender, 180, 190, 254));
+  --text-accent-hover: rgb(var(--ctp-ext-lavender, 180, 190, 254));
   caret-color: rgb(var(--ctp-ext-text, 217, 224, 238));
   --background-modifier-hover: rgba(var(--ctp-ext-text, 217, 224, 238), 0.075);
   --background-primary: rgb(var(--ctp-ext-base, 30, 30, 46));
@@ -52,6 +50,10 @@ html[saved-theme="dark"] {
   --text-highlight-bg: rgba(var(--ctp-ext-yellow, 249, 226, 175), 0.2);
   --text-muted: rgb(var(--ctp-ext-overlay2, 167, 156, 176));
   --text-normal: rgb(var(--ctp-ext-text, 217, 224, 238));
+  color-scheme: dark;
+  --background-modifier-border: rgb(var(--ctp-ext-surface0, 48, 45, 65));
+  --background-modifier-border-hover: rgb(var(--ctp-ext-surface1, 45, 40, 72));
+  --background-modifier-border-focus: rgb(var(--ctp-ext-surface2, 87, 82, 105));
 }
 
 :root[saved-theme="light"],
@@ -67,11 +69,9 @@ html[saved-theme="light"] {
     color: var(--shiki-light);
   }
   --color-accent-hsl: 258, 88%, 66%;
-  --color-accent-2: rgb(
-    var(--ctp-ext-lavender, 180, 190, 254) !important !important
-  );
-  --text-accent: rgb(var(--ctp-ext-lavender, 180, 190, 254) !important);
-  --text-accent-hover: rgb(var(--ctp-ext-lavender, 180, 190, 254) !important);
+  --color-accent-2: rgb(var(--ctp-ext-lavender, 180, 190, 254) !important);
+  --text-accent: rgb(var(--ctp-ext-lavender, 180, 190, 254));
+  --text-accent-hover: rgb(var(--ctp-ext-lavender, 180, 190, 254));
   caret-color: rgb(var(--ctp-ext-text, 217, 224, 238));
   --background-modifier-hover: rgba(var(--ctp-ext-text, 217, 224, 238), 0.075);
   --background-primary: rgb(var(--ctp-ext-base, 30, 30, 46));
@@ -99,6 +99,12 @@ html[saved-theme="light"] {
   --text-highlight-bg: rgba(var(--ctp-ext-yellow, 249, 226, 175), 0.2);
   --text-muted: rgb(var(--ctp-ext-overlay2, 167, 156, 176));
   --text-normal: rgb(var(--ctp-ext-text, 217, 224, 238));
+  color-scheme: light;
+  --background-modifier-border: rgb(var(--ctp-ext-surface1, 45, 40, 72));
+  --background-modifier-border-hover: rgb(var(--ctp-ext-surface2, 87, 82, 105));
+  --background-modifier-border-focus: rgb(
+    var(--ctp-ext-overlay0, 109, 107, 125)
+  );
 }
 
 /* cyrillic-ext */
@@ -238,11 +244,9 @@ body {
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
   --checkbox-marker-color: rgb(var(--ctp-ext-base, 30, 30, 46));
-  --checkbox-color: rgb(
-    var(--ctp-ext-lavender, 180, 190, 254) !important
-  ) !important;
+  --checkbox-color: rgb(var(--ctp-ext-lavender, 180, 190, 254));
   --checkbox-color-hover: rgb(
-    var(--ctp-ext-lavender, 180, 190, 254) !important !important
+    var(--ctp-ext-lavender, 180, 190, 254) !important
   );
   --checkbox-border-color: rgb(var(--ctp-ext-subtext0, 190, 179, 193));
   --checkbox-border-color-hover: rgb(var(--ctp-ext-overlay2, 167, 156, 176));
@@ -256,9 +260,7 @@ body {
   --code-tag: rgb(var(--ctp-ext-red, 243, 139, 168));
   --code-value: rgb(var(--ctp-ext-lavender, 180, 190, 254));
   --collapse-icon-color: rgb(var(--ctp-ext-subtext0, 190, 179, 193));
-  --collapse-icon-color-collapsed: rgb(
-    var(--ctp-ext-lavender, 180, 190, 254) !important
-  );
+  --collapse-icon-color-collapsed: rgb(var(--ctp-ext-lavender, 180, 190, 254));
   --cursor-link: pointer;
   --font-weight: 400;
   --graph-line: var(
@@ -276,21 +278,19 @@ body {
   --inline-title-color: rgb(var(--ctp-ext-red, 243, 139, 168));
   --inline-title-font: inherit;
   --italic-color: inherit;
-  --link-color: rgb(var(--ctp-ext-lavender, 180, 190, 254) !important);
-  --link-color-hover: rgb(var(--ctp-ext-lavender, 180, 190, 254) !important);
+  --link-color: rgb(var(--ctp-ext-lavender, 180, 190, 254));
+  --link-color-hover: rgb(var(--ctp-ext-lavender, 180, 190, 254));
   --link-weight: var(--link-weight);
-  --link-external-color: rgb(var(--ctp-ext-lavender, 180, 190, 254) !important);
-  --link-external-color-hover: rgb(
-    var(--ctp-ext-lavender, 180, 190, 254) !important
-  );
+  --link-external-color: rgb(var(--ctp-ext-lavender, 180, 190, 254));
+  --link-external-color-hover: rgb(var(--ctp-ext-lavender, 180, 190, 254));
   --link-external-filter: none;
   --nav-item-background-hover: rgba(var(--ctp-ext-text, 217, 224, 238), 0.15);
   --nav-item-children-padding-start: 4px;
   --nav-item-children-margin-start: 12px;
   --p-spacing: 1rem;
   --search-icon-color: rgb(var(--ctp-ext-overlay2, 167, 156, 176));
-  --tag-color: rgb(var(--ctp-ext-lavender, 180, 190, 254) !important);
-  --tag-color-hover: rgb(var(--ctp-ext-lavender, 180, 190, 254) !important);
+  --tag-color: rgb(var(--ctp-ext-lavender, 180, 190, 254));
+  --tag-color-hover: rgb(var(--ctp-ext-lavender, 180, 190, 254));
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-background: hsla(258, 88%, 66%, 0.1);
@@ -317,11 +317,6 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
-  height: 100%;
   margin: 0;
   overscroll-behavior: none;
   padding: 0;
@@ -352,11 +347,9 @@ body {
   --background-modifier-border: rgb(var(--ctp-ext-surface0, 48, 45, 65));
   --background-primary: rgb(var(--ctp-ext-base, 30, 30, 46));
   --background-secondary: rgb(var(--ctp-ext-mantle, 26, 24, 38));
-  --color-accent-2: rgb(
-    var(--ctp-ext-lavender, 180, 190, 254) !important !important
-  );
-  --text-accent: rgb(var(--ctp-ext-lavender, 180, 190, 254) !important);
-  --text-accent-hover: rgb(var(--ctp-ext-lavender, 180, 190, 254) !important);
+  --color-accent-2: rgb(var(--ctp-ext-lavender, 180, 190, 254) !important);
+  --text-accent: rgb(var(--ctp-ext-lavender, 180, 190, 254));
+  --text-accent-hover: rgb(var(--ctp-ext-lavender, 180, 190, 254));
   --text-muted: rgb(var(--ctp-ext-overlay2, 167, 156, 176));
   --text-normal: rgb(var(--ctp-ext-text, 217, 224, 238));
   caret-color: rgb(var(--ctp-ext-text, 217, 224, 238));
@@ -368,6 +361,11 @@ body {
     --anp-code-text-color,
     rgb(var(--ctp-ext-text, 217, 224, 238))
   );
+  contain: initial;
+  height: auto;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -1124,9 +1122,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: rgb(
-          var(--ctp-ext-lavender, 180, 190, 254) !important
-        ) !important;
+        color: rgb(var(--ctp-ext-lavender, 180, 190, 254));
 
         text-overflow: ellipsis;
         position: relative;
@@ -1467,7 +1463,7 @@ body {
                 color: rgb(var(--ctp-ext-text, 217, 224, 238));
 
                 &.match-tag {
-                  color: rgb(var(--ctp-ext-lavender, 180, 190, 254) !important);
+                  color: rgb(var(--ctp-ext-lavender, 180, 190, 254));
                 }
               }
             }
@@ -1542,10 +1538,10 @@ body {
       0px 1px 2px rgba(var(--ctp-ext-crust, 22, 19, 32), 0.121),
       0px 3.4px 6.7px rgba(var(--ctp-ext-crust, 22, 19, 32), 0.179),
       0px 15px 30px rgba(var(--ctp-ext-crust, 22, 19, 32), 0.3);
-    display: flex;
     max-height: 95vh;
     position: absolute;
     z-index: 30;
+    display: none;
 
     display: block;
     position: fixed;

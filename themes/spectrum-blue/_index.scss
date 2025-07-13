@@ -328,7 +328,7 @@ body {
   --hr-color: transparent;
   --hr-thickness: 2px;
   --icon-color: #b3b3b3;
-  --inline-title-color: var(--h1-color);
+  --inline-title-color: #62ff74;
   --inline-title-font: inherit;
   --link-weight: var(--link-weight);
   --link-external-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
@@ -374,10 +374,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -407,6 +407,22 @@ body {
   user-select: none;
   -webkit-user-select: none;
   caret-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --default-font: "JetBrains Mono", monospace;
+  --text-normal: #ededed;
+  --p-spacing: 0.25rem;
+  --h1-color: #62ff74;
+  --h3-line-height: 3rem;
+  --link-color: #55a2ff;
+  --link-color-hover: #32e9fd;
+  --bold-color: #0cffae;
+  --italic-color: #54eeff;
+  --graph-line: #2a3d4a;
+  --graph-node-unresolved: #33383b;
+  --checkbox-border-color: #4b94c2;
+  --checkbox-border-color-hover: #8ccbff;
+  --checkbox-color: #4b94c2;
+  --checkbox-color-hover: #8ccbff;
+  --code-normal: #f59883;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -846,7 +862,7 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 700;
-    color: var(--h1-color);
+    color: #62ff74;
     font-family: inherit;
     font-size: 30pt;
     font-style: normal;
@@ -940,7 +956,7 @@ body {
     --font-weight: 600;
     color: #a162ff;
     font-family: inherit;
-    font-size: var(--h6-size);
+    font-size: 12pt;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -1044,7 +1060,7 @@ body {
   }
 
   code {
-    color: var(--code-normal);
+    color: #f59883;
     font-family:
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1186,7 +1202,7 @@ body {
         }
         &:hover {
           background-color: rgba(255, 255, 255, 0.15);
-          color: var(--nav-item-color-active);
+          color: #8ccbff;
           font-weight: 600;
 
           font-size: 1rem;
@@ -1215,7 +1231,7 @@ body {
           var(--nav-item-children-margin-left)
         );
         margin-bottom: 1px;
-        border-inline-start: 1px solid var(--indentation-guide-color);
+        border-inline-start: 1px solid #3d3d3d;
       }
       ul.explorer-ul li {
         text-overflow: ellipsis;

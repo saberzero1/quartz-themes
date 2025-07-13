@@ -43,6 +43,20 @@ html[saved-theme="dark"] {
   --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
   --text-accent: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
   --text-faint: #696969;
+  --border: #f08c3a;
+  --text-a: #939bd5;
+  --text-a-hover: #a18b7f;
+  --background-modifier-border: #f08c3a;
+  --code-background: #161616;
+  --code-normal: #adacac;
+  --code-comment: #696969;
+  --code-function: #939bd5;
+  --code-keyword: #a18b7f;
+  --code-property: #9c797d;
+  --code-punctuation: #adacac;
+  --code-string: #8a968f;
+  --code-tag: #9e5560;
+  --code-value: #8a879c;
 }
 
 .darkmode {
@@ -264,7 +278,7 @@ body {
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
   --checkbox-marker-color: #000;
-  --checkbox-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --checkbox-color: #8bab85;
   --checkbox-color-hover: hsl(
     calc(258 - 3),
     calc(88% * 1.02),
@@ -351,10 +365,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -425,7 +439,6 @@ body {
 :root,
 html {
   .callout {
-    --callout-color: 2, 122, 255;
     overflow: hidden;
     border-style: solid;
     border-color: rgba(158, 158, 158, 0.25);
@@ -447,192 +460,111 @@ html {
     overflow-y: hidden;
 
     &[data-callout] {
-      --callout-color: 2, 122, 255;
-
       background-color: rgba(158, 158, 158, 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="abstract"] {
-      --callout-color: 83, 223, 221;
-
       background-color: rgba(158, 158, 158, 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="summary"] {
-      --callout-color: 83, 223, 221;
-
       background-color: rgba(158, 158, 158, 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="tldr"] {
-      --callout-color: 83, 223, 221;
-
       background-color: rgba(158, 158, 158, 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="info"] {
-      --callout-color: 2, 122, 255;
-
       background-color: rgba(158, 158, 158, 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="todo"] {
-      --callout-color: 2, 122, 255;
-
       background-color: rgba(158, 158, 158, 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="important"] {
-      --callout-color: 83, 223, 221;
-
       background-color: rgba(158, 158, 158, 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="tip"] {
-      --callout-color: 83, 223, 221;
-
       background-color: rgba(158, 158, 158, 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="hint"] {
-      --callout-color: 83, 223, 221;
-
       background-color: rgba(158, 158, 158, 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="success"] {
-      --callout-color: 68, 207, 110;
-
       background-color: rgba(158, 158, 158, 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="check"] {
-      --callout-color: 68, 207, 110;
-
       background-color: rgba(158, 158, 158, 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="done"] {
-      --callout-color: 68, 207, 110;
-
       background-color: rgba(158, 158, 158, 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="question"] {
-      --callout-color: 233, 151, 63;
-
       background-color: rgba(158, 158, 158, 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="help"] {
-      --callout-color: 233, 151, 63;
-
       background-color: rgba(158, 158, 158, 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="faq"] {
-      --callout-color: 233, 151, 63;
-
       background-color: rgba(158, 158, 158, 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="warning"] {
-      --callout-color: 233, 151, 63;
-
       background-color: rgba(158, 158, 158, 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="caution"] {
-      --callout-color: 233, 151, 63;
-
       background-color: rgba(158, 158, 158, 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="attention"] {
-      --callout-color: 233, 151, 63;
-
       background-color: rgba(158, 158, 158, 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="failure"] {
-      --callout-color: 251, 70, 76;
-
       background-color: rgba(158, 158, 158, 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="fail"] {
-      --callout-color: 251, 70, 76;
-
       background-color: rgba(158, 158, 158, 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="missing"] {
-      --callout-color: 251, 70, 76;
-
       background-color: rgba(158, 158, 158, 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="danger"] {
-      --callout-color: 251, 70, 76;
-
       background-color: rgba(158, 158, 158, 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="error"] {
-      --callout-color: 251, 70, 76;
-
       background-color: rgba(158, 158, 158, 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="bug"] {
-      --callout-color: 251, 70, 76;
-
       background-color: rgba(158, 158, 158, 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="example"] {
-      --callout-color: 168, 130, 255;
-
       background-color: rgba(158, 158, 158, 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="quote"] {
-      --callout-color: 158, 158, 158;
-
       background-color: rgba(158, 158, 158, 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
     &[data-callout="cite"] {
-      --callout-color: 158, 158, 158;
-
       background-color: rgba(158, 158, 158, 0.1);
-      --bg: rgba(var(--callout-color), 0.1);
       /*background: var(--bg);*/
     }
   }
@@ -1036,7 +968,7 @@ body {
     position: relative;
     padding: 12px 16px;
     min-height: 38px;
-    background-color: var(--bg);
+    background-color: #161616;
     border-radius: 4px;
     white-space: pre-wrap;
     border: 0px solid transparent;
@@ -1110,7 +1042,7 @@ body {
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
       "Source Code Pro", monospace;
-    background-color: var(--bg);
+    background-color: #161616;
     border-radius: 4px;
     font-size: 1em;
     padding: 0.15em 0.3em;
@@ -1218,7 +1150,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+        color: #8bab85;
 
         text-overflow: ellipsis;
         position: relative;

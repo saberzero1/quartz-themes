@@ -292,9 +292,9 @@ body {
   --nav-item-background-hover: var(--background-modifier-hover);
   --bold-color: inherit;
   --bold-weight: calc(600 + 200);
-  --checkbox-radius: var(--radius-s);
+  --checkbox-radius: 100px;
   --checkbox-size: 16px;
-  --checkbox-marker-color: var(--background-primary);
+  --checkbox-marker-color: hsl(258, 20%, 7%);
   --checkbox-color: hsl(258, 88%, 66%);
   --checkbox-color-hover: hsl(
     calc(258 - 3),
@@ -366,10 +366,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -393,12 +393,24 @@ body {
     sans-serif;
   line-height: 1.3;
   font-size: 16px;
-  background-color: var(--background-primary);
+  background-color: hsl(258, 20%, 7%);
   color: #dadada;
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
   caret-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --background-primary: hsl(258, 20%, 7%);
+  --background-secondary: hsl(258, 30%, 12%);
+  --background-modifier-border: transparent;
+  --nav-item-background-hover: hsl(258, 100%, 10%);
+  --text-highlight-bg: hsl(258, 100%, 20%);
+  --code-background: hsl(258, 100%, 10%);
+  --code-normal: hsl(258, 100%, 80%);
+  --link-external-color: hsl(258, 100%, 80%);
+  --link-external-color-hover: hsl(258, 100%, 80%);
+  --tag-color: hsl(258, 100%, 80%);
+  --tag-background: hsl(258, 100%, 20%);
+  --tag-background-hover: hsl(258, 100%, 20%);
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -444,7 +456,7 @@ html {
     border-style: solid;
     border-color: rgba(158, 158, 158, 0.25);
     border-width: 0px;
-    border-radius: var(--radius-s);
+    border-radius: 100px;
     margin: 1em 0;
     mix-blend-mode: normal;
     background-color: rgba(158, 158, 158, 0.1);
@@ -606,7 +618,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
 
-  background-color: var(--background-primary);
+  background-color: hsl(258, 20%, 7%);
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -635,13 +647,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: var(--background-primary);
+      background-color: hsl(258, 20%, 7%);
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: var(--background-primary);
+        background-color: hsl(258, 20%, 7%);
 
         background-color: var(--background-primary);
       }
@@ -650,7 +662,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: var(--background-primary);
+          background-color: hsl(258, 20%, 7%);
 
           background-color: var(--background-secondary);
 
@@ -967,8 +979,8 @@ body {
     position: relative;
     padding: 12px 16px;
     min-height: 38px;
-    background-color: var(--code-background);
-    border-radius: var(--radius-s);
+    background-color: hsl(258, 100%, 10%);
+    border-radius: 100px;
     white-space: pre-wrap;
     border: 0px solid transparent;
     overflow-x: auto;
@@ -1036,13 +1048,13 @@ body {
   }
 
   code {
-    color: var(--code-normal);
+    color: hsl(258, 100%, 80%);
     font-family:
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
       "Source Code Pro", monospace;
-    background-color: var(--code-background);
-    border-radius: var(--radius-s);
+    background-color: hsl(258, 100%, 10%);
+    border-radius: 100px;
     font-size: 1em;
     padding: 0.15em 0.3em;
     border: 0px solid transparent;
@@ -1138,7 +1150,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: var(--background-primary);
+        background-color: hsl(258, 20%, 7%);
 
         background-color: var(--background-secondary);
 
@@ -1215,7 +1227,7 @@ body {
 
         a {
           padding: 6px 8px 6px 24px;
-          border-radius: var(--radius-s);
+          border-radius: 100px;
           color: #dadada;
           cursor: pointer;
           display: flex;
@@ -1403,7 +1415,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: var(--background-primary);
+        background-color: hsl(258, 20%, 7%);
 
         border: 0.5pt solid var(--color-base-40, rgba(251, 70, 76, 0.6));
 
@@ -1422,12 +1434,12 @@ body {
           width: 100%;
           padding: 24px;
           padding-inline-end: 48px;
-          background-color: var(--background-primary);
+          background-color: hsl(258, 20%, 7%);
           font-size: 16px;
           border: none;
           height: 48px;
           border-radius: 0;
-          border-bottom: 1px solid hsla(258, 88%, 66%, 2%);
+          border-bottom: 1px solid hsl(258, 30%, 12%);
 
           margin-bottom: 0;
           border-bottom: none;
@@ -1486,7 +1498,7 @@ body {
                 color: #dadada;
 
                 &.match-tag {
-                  color: var(--tag-color);
+                  color: hsl(258, 100%, 80%);
                 }
               }
             }
@@ -1554,7 +1566,7 @@ body {
 
   /* POPOVER */
   .popover {
-    background-color: var(--background-primary);
+    background-color: hsl(258, 20%, 7%);
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow:
@@ -1574,7 +1586,7 @@ body {
     & .popover-inner {
       border: 1px solid transparent;
 
-      background-color: var(--background-primary);
+      background-color: hsl(258, 20%, 7%);
 
       border-radius: 8px;
 

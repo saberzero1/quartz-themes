@@ -78,8 +78,8 @@ html[saved-theme="light"] {
   --color-base-100: #222222;
   --color-accent-hsl: 180, 45%, 46%;
   --color-accent-2: hsl(calc(180 - 3), calc(45% * 1.02), calc(46% * 1.15));
-  --text-normal: hsl(180, 45%, calc(46% * 0.4)) !important;
-  --nav-item-background-hover: hsla(180, 45%, 46%, 0.03) !important;
+  --text-normal: hsl(180, 45%, calc(46% * 0.4));
+  --nav-item-background-hover: hsla(180, 45%, 46%, 0.03);
 }
 
 @font-face {
@@ -296,7 +296,7 @@ body {
   --bold-weight: calc(600 + 200);
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --checkbox-marker-color: hsla(180, 45%, 46%, 0.01) !important;
+  --checkbox-marker-color: hsla(180, 45%, 46%, 0.01);
   --checkbox-color: hsl(180, 45%, 46%);
   --checkbox-color-hover: hsl(
     calc(180 - 3),
@@ -306,7 +306,7 @@ body {
   --checkbox-border-color: #666666;
   --checkbox-border-color-hover: #b3b3b3;
   --code-background: #111;
-  --code-normal: hsl(180, 45%, calc(46% * 0.4)) !important;
+  --code-normal: hsl(180, 45%, calc(46% * 0.4));
   --code-comment: #666666;
   --code-function: #e0de71;
   --code-important: #e9973f;
@@ -384,10 +384,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -411,8 +411,8 @@ body {
     sans-serif;
   line-height: 1.3;
   font-size: 16px;
-  background-color: hsla(180, 45%, 46%, 0.01) !important;
-  color: hsl(180, 45%, calc(46% * 0.4)) !important;
+  background-color: hsla(180, 45%, 46%, 0.01);
+  color: hsl(180, 45%, calc(46% * 0.4));
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
@@ -624,7 +624,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
 
-  background-color: hsla(180, 45%, 46%, 0.01) !important;
+  background-color: hsla(180, 45%, 46%, 0.01);
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -653,13 +653,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: hsla(180, 45%, 46%, 0.01) !important;
+      background-color: hsla(180, 45%, 46%, 0.01);
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: hsla(180, 45%, 46%, 0.01) !important;
+        background-color: hsla(180, 45%, 46%, 0.01);
 
         background-color: var(--background-primary);
       }
@@ -668,7 +668,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: hsla(180, 45%, 46%, 0.01) !important;
+          background-color: hsla(180, 45%, 46%, 0.01);
 
           background-color: var(--background-secondary);
 
@@ -862,8 +862,8 @@ body {
     font-variant: normal;
     font-weight: 600;
     line-height: 1.2;
-    font-family: var(--font-title) !important;
-    letter-spacing: var(--letter-spacing-title) !important;
+    font-family: var(--font-title);
+    letter-spacing: var(--letter-spacing-title);
 
     font-size: 2rem;
   }
@@ -882,8 +882,8 @@ body {
     font-variant: normal;
     font-weight: 600;
     line-height: 1.2;
-    font-family: var(--font-title) !important;
-    letter-spacing: var(--letter-spacing-title) !important;
+    font-family: var(--font-title);
+    letter-spacing: var(--letter-spacing-title);
 
     font-size: 1.75rem;
   }
@@ -900,8 +900,8 @@ body {
     font-variant: normal;
     font-weight: 600;
     line-height: 1.3;
-    font-family: var(--font-title) !important;
-    letter-spacing: var(--letter-spacing-title) !important;
+    font-family: var(--font-title);
+    letter-spacing: var(--letter-spacing-title);
 
     font-size: 1.6rem;
   }
@@ -918,8 +918,8 @@ body {
     font-variant: normal;
     font-weight: 600;
     line-height: 1.4;
-    font-family: var(--font-title) !important;
-    letter-spacing: var(--letter-spacing-title) !important;
+    font-family: var(--font-title);
+    letter-spacing: var(--letter-spacing-title);
 
     font-size: 1.4rem;
   }
@@ -936,8 +936,8 @@ body {
     font-variant: normal;
     font-weight: 600;
     line-height: var(--line-height-value);
-    font-family: var(--font-title) !important;
-    letter-spacing: var(--letter-spacing-title) !important;
+    font-family: var(--font-title);
+    letter-spacing: var(--letter-spacing-title);
 
     font-size: 1.2rem;
   }
@@ -954,8 +954,8 @@ body {
     font-variant: normal;
     font-weight: 600;
     line-height: var(--line-height-value);
-    font-family: var(--font-title) !important;
-    letter-spacing: var(--letter-spacing-title) !important;
+    font-family: var(--font-title);
+    letter-spacing: var(--letter-spacing-title);
 
     font-size: 1.1rem;
   }
@@ -1054,7 +1054,7 @@ body {
   }
 
   code {
-    color: hsl(180, 45%, calc(46% * 0.4)) !important;
+    color: hsl(180, 45%, calc(46% * 0.4));
     font-family:
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1107,7 +1107,7 @@ body {
 
   /* METADATA */
   .content-meta {
-    color: hsl(180, 45%, calc(46% * 0.4)) !important;
+    color: hsl(180, 45%, calc(46% * 0.4));
 
     color: var(--text-normal);
   }
@@ -1129,12 +1129,12 @@ body {
       font-variant: normal;
       font-weight: 600;
       line-height: 1.3;
-      font-family: var(--font-title) !important;
-      letter-spacing: var(--letter-spacing-title) !important;
+      font-family: var(--font-title);
+      letter-spacing: var(--letter-spacing-title);
     }
 
     ul li {
-      color: hsl(180, 45%, calc(46% * 0.4)) !important;
+      color: hsl(180, 45%, calc(46% * 0.4));
 
       font-weight: 500;
     }
@@ -1156,7 +1156,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: hsla(180, 45%, 46%, 0.01) !important;
+        background-color: hsla(180, 45%, 46%, 0.01);
 
         background-color: var(--background-secondary);
 
@@ -1196,7 +1196,7 @@ body {
         }
         &:hover {
           background-color: rgba(255, 255, 255, 0.15);
-          color: hsl(180, 45%, calc(46% * 0.4)) !important;
+          color: hsl(180, 45%, calc(46% * 0.4));
           font-weight: inherit;
 
           font-size: 1rem;
@@ -1301,8 +1301,8 @@ body {
         font-variant: normal;
         font-weight: 600;
         line-height: 1.3;
-        font-family: var(--font-title) !important;
-        letter-spacing: var(--letter-spacing-title) !important;
+        font-family: var(--font-title);
+        letter-spacing: var(--letter-spacing-title);
 
         margin-block: 0;
       }
@@ -1339,8 +1339,8 @@ body {
       font-variant: normal;
       font-weight: 600;
       line-height: 1.3;
-      font-family: var(--font-title) !important;
-      letter-spacing: var(--letter-spacing-title) !important;
+      font-family: var(--font-title);
+      letter-spacing: var(--letter-spacing-title);
 
       min-height: calc(2 * var(--p-spacing) + var(--h3-line-height));
       margin-block: 0;
@@ -1405,13 +1405,13 @@ body {
       -webkit-app-region: no-drag;
       border: 1px solid transparent;
       border-radius: 5px;
-      color: hsl(180, 45%, calc(46% * 0.4)) !important;
+      color: hsl(180, 45%, calc(46% * 0.4));
       font-family: inherit;
       font-size: calc(16px * 0.937);
       outline: none;
       padding: 4px 8px;
       height: 40px;
-      background: hsla(180, 45%, 46%, 0.01) !important;
+      background: hsla(180, 45%, 46%, 0.01);
 
       font-size: 1rem;
       svg {
@@ -1421,7 +1421,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: hsla(180, 45%, 46%, 0.01) !important;
+        background-color: hsla(180, 45%, 46%, 0.01);
 
         border: 0.5pt solid var(--color-base-40, rgba(251, 70, 76, 0.6));
 
@@ -1440,12 +1440,12 @@ body {
           width: 100%;
           padding: 24px;
           padding-inline-end: 48px;
-          background-color: hsla(180, 45%, 46%, 0.01) !important;
+          background-color: hsla(180, 45%, 46%, 0.01);
           font-size: 16px;
           border: none;
           height: 48px;
           border-radius: 0;
-          border-bottom: 1px solid #000 !important;
+          border-bottom: 1px solid #000;
 
           margin-bottom: 0;
           border-bottom: none;
@@ -1453,7 +1453,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: hsl(180, 45%, calc(46% * 0.4)) !important;
+          color: hsl(180, 45%, calc(46% * 0.4));
 
           background: transparent;
           margin-bottom: 0;
@@ -1501,7 +1501,7 @@ body {
               & > ul > li > p {
                 background-color: transparent;
 
-                color: hsl(180, 45%, calc(46% * 0.4)) !important;
+                color: hsl(180, 45%, calc(46% * 0.4));
 
                 &.match-tag {
                   color: hsl(calc(180 - 3), calc(45% * 1.02), calc(46% * 1.15));
@@ -1572,7 +1572,7 @@ body {
 
   /* POPOVER */
   .popover {
-    background-color: hsla(180, 45%, 46%, 0.01) !important;
+    background-color: hsla(180, 45%, 46%, 0.01);
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow:
@@ -1592,7 +1592,7 @@ body {
     & .popover-inner {
       border: 1px solid transparent;
 
-      background-color: hsla(180, 45%, 46%, 0.01) !important;
+      background-color: hsla(180, 45%, 46%, 0.01);
 
       border-radius: 8px;
 

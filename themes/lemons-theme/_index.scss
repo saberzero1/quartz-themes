@@ -318,9 +318,9 @@ body {
   --tag-radius: 2em;
   --tag-weight: inherit;
   --text-highlight-bg: rgba(255, 208, 0, 0.4);
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -817,7 +817,17 @@ body {
   h2.page-title,
   h2.page-title a,
   h2 {
-    margin-top: 15px;
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
+    --font-weight: 600;
+    color: inherit;
+    font-family: inherit;
+    font-size: 1.602em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: 1.2;
 
     font-size: 1.75rem;
   }
@@ -825,7 +835,17 @@ body {
     --link-weight: 600;
   }
   h3 {
-    margin-top: 15px;
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
+    --font-weight: 600;
+    color: inherit;
+    font-family: inherit;
+    font-size: 1.424em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: 1.3;
 
     font-size: 1.6rem;
   }
@@ -833,7 +853,17 @@ body {
     --link-weight: 600;
   }
   h4 {
-    margin-top: 15px;
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
+    --font-weight: 600;
+    color: inherit;
+    font-family: inherit;
+    font-size: 1.266em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: 0.015em;
+    line-height: 1.4;
 
     font-size: 1.4rem;
   }
@@ -1021,7 +1051,17 @@ body {
   /* BACKLINKS */
   .backlinks {
     h3 {
-      margin-top: 15px;
+      margin-block-end: 0rem;
+      margin-block-start: 0rem;
+      --font-weight: 600;
+      color: inherit;
+      font-family: inherit;
+      font-size: 1.424em;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 600;
+      letter-spacing: -0.015em;
+      line-height: 1.3;
     }
 
     ul li {
@@ -1040,6 +1080,10 @@ body {
         backdrop-filter: blur(8px);
         padding-left: 1rem;
       }
+    }
+    button.explorer-toggle,
+    h2 {
+      color: inherit;
     }
     .explorer-content {
       @media all and ($mobile) {
@@ -1172,12 +1216,26 @@ body {
 
   /* TOC */
   .toc {
+    color: inherit;
+
     button.toc-header {
       h3 {
-        margin-top: 15px;
+        margin-block-end: 0rem;
+        margin-block-start: 0rem;
+        --font-weight: 600;
+        color: inherit;
+        font-family: inherit;
+        font-size: 1.424em;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 600;
+        letter-spacing: -0.015em;
+        line-height: 1.3;
 
         margin-block: 0;
       }
+
+      color: inherit;
 
       color: inherit;
     }
@@ -1200,7 +1258,17 @@ body {
   .graph,
   .toc {
     h3 {
-      margin-top: 15px;
+      margin-block-end: 0rem;
+      margin-block-start: 0rem;
+      --font-weight: 600;
+      color: inherit;
+      font-family: inherit;
+      font-size: 1.424em;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 600;
+      letter-spacing: -0.015em;
+      line-height: 1.3;
 
       min-height: calc(2 * var(--p-spacing) + var(--h3-line-height));
       margin-block: 0;

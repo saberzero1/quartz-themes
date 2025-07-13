@@ -42,9 +42,9 @@ html[saved-theme="dark"] {
   --tag-color: #ffffff;
   --text-accent: hsl(215, 75%, 70%);
   --text-accent-hover: hsl(215, 75%, calc(70% + 12%));
-  --text-faint: hsl(var(--base-h), 15%, calc(13% + 30%));
+  --text-faint: hsl(212, 15%, calc(13% + 30%));
   --text-highlight-bg: #ffd000;
-  --text-muted: hsl(var(--base-h), 15%, calc(13% + 65%));
+  --text-muted: hsl(212, 15%, calc(13% + 65%));
   color-scheme: dark;
   --color-base-30: #ebedf0;
   --h1-color: black;
@@ -87,8 +87,10 @@ html[saved-theme="light"] {
   --tag-color: #1d694b;
   --text-accent: hsl(215, 75%, 60%);
   --text-accent-hover: hsl(215, 75%, calc(60% - 10%));
-  --text-faint: hsl(var(--base-h), calc(15% - 5%), calc(97% - 30%));
-  --text-highlight-bg: var(--text-highlight-bg-l);
+  --text-faint: hsl(212, calc(15% - 5%), calc(97% - 30%));
+  --text-highlight-bg: #ffd000;
+  --text-muted: hsl(212, calc(15% - 5%), calc(97% - 60%));
+  color-scheme: light;
 }
 
 /* cyrillic-ext */
@@ -350,31 +352,31 @@ body {
   --checkbox-marker-color: black;
   --checkbox-color: hsl(215, 75%, 60%);
   --checkbox-color-hover: hsl(215, 75%, calc(60% - 3.8%));
-  --checkbox-border-color: hsl(var(--base-h), 15%, calc(13% + 30%));
-  --checkbox-border-color-hover: hsl(var(--base-h), 15%, calc(13% + 65%));
+  --checkbox-border-color: hsl(212, 15%, calc(13% + 30%));
+  --checkbox-border-color-hover: hsl(212, 15%, calc(13% + 65%));
   --code-background: #282c34;
   --code-normal: #dadada;
-  --code-comment: hsl(var(--base-h), 15%, calc(13% + 30%));
+  --code-comment: hsl(212, 15%, calc(13% + 30%));
   --code-function: #e0de71;
   --code-important: #e9973f;
   --code-keyword: #fa99cd;
   --code-property: #53dfdd;
-  --code-punctuation: hsl(var(--base-h), 15%, calc(13% + 65%));
+  --code-punctuation: hsl(212, 15%, calc(13% + 65%));
   --code-string: #44cf6e;
   --code-tag: #fb464c;
   --code-value: #a882ff;
-  --collapse-icon-color: hsl(var(--base-h), 15%, calc(13% + 30%));
+  --collapse-icon-color: hsl(212, 15%, calc(13% + 30%));
   --collapse-icon-color-collapsed: hsl(215, 75%, 70%);
   --cursor-link: pointer;
   --font-weight: 400;
   --graph-line: var(--color-base-35, rgba(251, 70, 76, 0.6));
-  --graph-node-unresolved: hsl(var(--base-h), 15%, calc(13% + 30%));
+  --graph-node-unresolved: hsl(212, 15%, calc(13% + 30%));
   --graph-node-tag: #44cf6e;
   --h1-font: inherit;
   --h3-line-height: 1.3;
   --hr-color: transparent;
   --hr-thickness: 2px;
-  --icon-color: hsl(var(--base-h), 15%, calc(13% + 65%));
+  --icon-color: hsl(212, 15%, calc(13% + 65%));
   --inline-title-color: black;
   --inline-title-font: inherit;
   --italic-color: inherit;
@@ -388,7 +390,7 @@ body {
   --nav-item-children-padding-start: 4px;
   --nav-item-children-margin-start: 12px;
   --p-spacing: 1rem;
-  --search-icon-color: hsl(var(--base-h), 15%, calc(13% + 65%));
+  --search-icon-color: hsl(212, 15%, calc(13% + 65%));
   --tag-color: hsl(215, 75%, 70%);
   --tag-color-hover: hsl(215, 75%, 70%);
   --tag-decoration: none;
@@ -423,10 +425,12 @@ body {
     "Roboto Mono", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono",
     "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
     "Consolas", "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", var(--font-text-theme), "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text:
+    "??", "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter,
+    Ubuntu, sans-serif, "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -462,6 +466,8 @@ body {
   user-select: none;
   -webkit-user-select: none;
   caret-color: hsl(215, 75%, 70%);
+  --h1-color: #dadada;
+  --checkbox-radius: 30%;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -507,7 +513,7 @@ html {
     border-style: solid;
     border-color: rgba(158, 158, 158, 0.25);
     border-width: 0px;
-    border-radius: var(--radius-s);
+    border-radius: 4px;
     margin: 1em 0;
     mix-blend-mode: normal;
     background-color: rgba(158, 158, 158, 0.1);
@@ -993,9 +999,9 @@ body {
     margin-block-end: 0rem;
     margin-block-start: 0rem;
     --font-weight: 600;
-    color: hsl(var(--base-h), 15%, calc(13% + 65%));
+    color: hsl(212, 15%, calc(13% + 65%));
     font-family: inherit;
-    font-size: var(--h6-size);
+    font-size: 0.9rem;
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
@@ -1031,7 +1037,7 @@ body {
     padding: 12px 16px;
     min-height: 38px;
     background-color: #282c34;
-    border-radius: var(--radius-s);
+    border-radius: 4px;
     white-space: pre-wrap;
     border: 0px solid transparent;
     overflow-x: auto;
@@ -1106,7 +1112,7 @@ body {
       "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
       "Consolas", "Source Code Pro", monospace;
     background-color: #282c34;
-    border-radius: var(--radius-s);
+    border-radius: 4px;
     font-size: 1em;
     padding: 0.15em 0.3em;
     border: 0px solid transparent;
@@ -1122,7 +1128,7 @@ body {
     height: auto;
     background-color: transparent;
     box-shadow: none;
-    color: hsl(var(--base-h), 15%, calc(13% + 65%));
+    color: hsl(212, 15%, calc(13% + 65%));
     font-size: calc(16px * 0.8);
     font-family:
       "??",
@@ -1166,7 +1172,7 @@ body {
 
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: hsl(var(--base-h), 15%, calc(13% + 30%));
+    color: hsl(212, 15%, calc(13% + 30%));
   }
 
   /* BACKLINKS */
@@ -1285,7 +1291,7 @@ body {
 
         a {
           padding: 6px 8px 6px 24px;
-          border-radius: var(--radius-s);
+          border-radius: 4px;
           color: #dadada;
           cursor: pointer;
           display: flex;

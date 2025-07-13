@@ -129,7 +129,6 @@ html[saved-theme="light"] {
   --h1-color: var(--text-normal);
 
   --nav-item-background-hover: var(--background-modifier-hover);
-  --nav-item-background-active: var(--background-modifier-hover);
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -176,7 +175,6 @@ body {
   --h1-color: var(--text-normal);
 
   --nav-item-background-hover: var(--background-modifier-hover);
-  --nav-item-background-active: var(--background-modifier-hover);
   --bold-color: inherit;
   --bold-weight: calc(600 + 200);
   --checkbox-radius: 4px;
@@ -267,10 +265,10 @@ body {
     "??", "Cascadia Mono", ui-monospace, SFMono-Regular, "Cascadia Mono",
     "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
     "Consolas", "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "CMU Serif", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "CMU Serif", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -300,6 +298,8 @@ body {
   user-select: none;
   -webkit-user-select: none;
   caret-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --background-secondary: #111;
+  --nav-item-background-hover: #222;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -792,7 +792,17 @@ body {
     --link-weight: 600;
   }
   h4 {
-    margin-top: 0;
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
+    --font-weight: 600;
+    color: inherit;
+    font-family: inherit;
+    font-size: 1em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: 0.015em;
+    line-height: 1.8em;
 
     font-size: 1.4rem;
   }
@@ -800,7 +810,17 @@ body {
     --link-weight: 600;
   }
   h5 {
-    margin-top: 0;
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
+    --font-weight: 600;
+    color: inherit;
+    font-family: inherit;
+    font-size: 1em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: 0.015em;
+    line-height: 1.8em;
 
     font-size: 1.2rem;
   }
@@ -1058,8 +1078,8 @@ body {
           width: 100%;
         }
         &:hover {
-          background-color: var(--nav-item-background-active);
-          color: var(--nav-item-color-active);
+          background-color: hsl(258, 88%, 66%);
+          color: #111;
           font-weight: inherit;
 
           font-size: 1rem;
@@ -1088,7 +1108,7 @@ body {
           var(--nav-item-children-margin-left)
         );
         margin-bottom: 1px;
-        border-inline-start: 1px solid var(--nav-indentation-guide-color);
+        border-inline-start: 1px solid transparent;
       }
       ul.explorer-ul li {
         text-overflow: ellipsis;
@@ -1308,7 +1328,7 @@ body {
           border: none;
           height: 48px;
           border-radius: 0;
-          border-bottom: 1px solid var(--background-secondary);
+          border-bottom: 1px solid #111;
 
           margin-bottom: 0;
           border-bottom: none;

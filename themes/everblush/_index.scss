@@ -359,10 +359,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -391,7 +391,7 @@ body {
   user-select: none;
   -webkit-user-select: none;
   caret-color: #9bdead;
-  font-size: 16px !important;
+  font-size: 16px;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -844,7 +844,7 @@ body {
   }
   h1 a {
     --link-weight: 700;
-    color: #e06e6e !important;
+    color: #e06e6e;
   }
   h2.page-title,
   h2.page-title a,
@@ -865,7 +865,7 @@ body {
   }
   h2 a {
     --link-weight: 600;
-    color: var(--blue) !important;
+    color: var(--blue);
   }
   h3 {
     margin-block-end: 0rem;
@@ -884,7 +884,7 @@ body {
   }
   h3 a {
     --link-weight: 600;
-    color: #e5c76b !important;
+    color: #e5c76b;
   }
   h4 {
     margin-block-end: 0rem;
@@ -903,7 +903,7 @@ body {
   }
   h4 a {
     --link-weight: 600;
-    color: #8ccf7e !important;
+    color: #8ccf7e;
   }
   h5 {
     margin-block-end: 0rem;
@@ -922,7 +922,7 @@ body {
   }
   h5 a {
     --link-weight: 600;
-    color: #bab3e5 !important;
+    color: #bab3e5;
   }
   h6 {
     margin-block-end: 0rem;
@@ -941,7 +941,7 @@ body {
   }
   h6 a {
     --link-weight: 600;
-    color: #9bdead !important;
+    color: #9bdead;
   }
   h1,
   h1 a,
@@ -1222,10 +1222,10 @@ body {
           font-weight: inherit;
           line-height: 1.3;
           margin-bottom: 2px;
-          border-bottom-left-radius: 0 !important;
-          border-bottom-right-radius: 0 !important;
-          border-top-left-radius: 0 !important;
-          border-top-right-radius: 0 !important;
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
 
           color: inherit;
           font-size: 1rem;
@@ -1489,7 +1489,7 @@ body {
                 color: #d5d5d5;
 
                 &.match-tag {
-                  color: #9bdead !important;
+                  color: #9bdead;
                 }
               }
             }

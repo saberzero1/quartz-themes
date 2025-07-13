@@ -41,6 +41,22 @@ html[saved-theme="dark"] {
   --color-base-100: #dadada;
   --color-accent-hsl: 258, 88%, 66%;
   --color-accent-2: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --background-primary: #171a23;
+  --background-secondary: #171a23;
+  --background-modifier-border: #53555a;
+  --text-normal: #d7d8d7;
+  --text-muted: #bab3aa;
+  --text-accent: #f03d2f;
+  --text-accent-hover: #8d1a11;
+  --tag-color: #f03d2f;
+  --tag-color-hover: #8d1a11;
+  --tag-background: #53555a;
+  --graph-node-unresolved: #f03d2f;
+  --h1-color: #f03d2f;
+  --code-normal: #908caa;
+  --code-background: #242a36;
+  --link-color: #f03d2f;
+  --bold-color: #bdb2a9;
 }
 
 .darkmode {
@@ -78,6 +94,8 @@ html[saved-theme="dark"] {
   --h1-color: var(--text-normal);
 
   --nav-item-background-hover: var(--background-modifier-hover);
+  --text-highlight-bg: #8d1a11;
+  --italic-color: #bdb2a9;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
@@ -128,7 +146,7 @@ body {
   --bold-weight: calc(600 + 200);
   --checkbox-radius: 4px;
   --checkbox-size: 16px;
-  --checkbox-marker-color: #000;
+  --checkbox-marker-color: #171a23;
   --checkbox-color: hsl(258, 88%, 66%);
   --checkbox-color-hover: hsl(
     calc(258 - 3),
@@ -136,7 +154,7 @@ body {
     calc(66% * 1.15)
   );
   --checkbox-border-color: #666666;
-  --checkbox-border-color-hover: var(--muted);
+  --checkbox-border-color-hover: #bab3aa;
   --code-background: #111;
   --code-normal: #d7d8d7;
   --code-comment: #666666;
@@ -144,7 +162,7 @@ body {
   --code-important: #e9973f;
   --code-keyword: #fa99cd;
   --code-property: #53dfdd;
-  --code-punctuation: var(--muted);
+  --code-punctuation: #bab3aa;
   --code-string: #44cf6e;
   --code-tag: #fb464c;
   --code-value: #a882ff;
@@ -160,7 +178,7 @@ body {
   --h3-line-height: 1.3;
   --hr-color: transparent;
   --hr-thickness: 2px;
-  --icon-color: var(--muted);
+  --icon-color: #bab3aa;
   --inline-title-color: #f03d2f;
   --inline-title-font: inherit;
   --italic-color: inherit;
@@ -174,7 +192,7 @@ body {
   --nav-item-children-padding-start: 4px;
   --nav-item-children-margin-start: 12px;
   --p-spacing: 1rem;
-  --search-icon-color: var(--muted);
+  --search-icon-color: #bab3aa;
   --tag-color: #f03d2f;
   --tag-color-hover: #f03d2f;
   --tag-decoration: none;
@@ -208,10 +226,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "Geist", sans-serif, "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "Geist", sans-serif, "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -235,7 +253,7 @@ body {
     sans-serif;
   line-height: 1.3;
   font-size: 16px;
-  background-color: #000;
+  background-color: #171a23;
   color: #d7d8d7;
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
@@ -448,7 +466,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
 
-  background-color: #000;
+  background-color: #171a23;
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -477,13 +495,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: #000;
+      background-color: #171a23;
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: #000;
+        background-color: #171a23;
 
         background-color: var(--background-primary);
       }
@@ -492,7 +510,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: #000;
+          background-color: #171a23;
 
           background-color: var(--background-secondary);
 
@@ -900,7 +918,7 @@ body {
     height: auto;
     background-color: transparent;
     box-shadow: none;
-    color: var(--muted);
+    color: #bab3aa;
     font-size: calc(16px * 0.8);
     font-family:
       "??",
@@ -980,7 +998,7 @@ body {
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: #000;
+        background-color: #171a23;
 
         background-color: var(--background-secondary);
 
@@ -1245,7 +1263,7 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: #000;
+        background-color: #171a23;
 
         border: 0.5pt solid var(--color-base-40, rgba(251, 70, 76, 0.6));
 
@@ -1264,7 +1282,7 @@ body {
           width: 100%;
           padding: 24px;
           padding-inline-end: 48px;
-          background-color: #000;
+          background-color: #171a23;
           font-size: 16px;
           border: none;
           height: 48px;
@@ -1396,7 +1414,7 @@ body {
 
   /* POPOVER */
   .popover {
-    background-color: #000;
+    background-color: #171a23;
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow:
@@ -1416,7 +1434,7 @@ body {
     & .popover-inner {
       border: 1px solid transparent;
 
-      background-color: #000;
+      background-color: #171a23;
 
       border-radius: 8px;
 

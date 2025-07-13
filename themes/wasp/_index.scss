@@ -48,6 +48,10 @@ html[saved-theme="dark"] {
   --text-faint: #bdae93;
   --text-highlight-bg: #640211;
   --text-a-hover: #83a598;
+  --text-accent-hover: #d49335;
+  --text-a: #f8c537;
+  --text-accent: #f8c537;
+  --background-modifier-border: #f8c537;
 }
 
 :root[saved-theme="light"],
@@ -85,6 +89,15 @@ html[saved-theme="light"] {
   --color-accent-hsl: 258, 88%, 66%;
   --color-accent-2: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
   --background-primary: #ededed;
+  --background-secondary: #c4c4c4;
+  --background-primary-alt: #;
+  --text-normal: #1a2023;
+  --text-faint: #dedede;
+  --text-a-hover: #d49335;
+  --text-accent-hover: #d49335;
+  --background-modifier-border: #d49335;
+  --text-a: #961327;
+  --text-accent: #961327;
 }
 
 @font-face {
@@ -339,14 +352,10 @@ body {
   --inline-title-font: inherit;
   --italic-color: inherit;
   --link-color: #f8c537;
-  --link-color-hover: hsl(calc(258 - 5), calc(88% * 1.05), calc(66% * 1.29));
+  --link-color-hover: #d49335;
   --link-weight: var(--link-weight);
   --link-external-color: #f8c537;
-  --link-external-color-hover: hsl(
-    calc(258 - 5),
-    calc(88% * 1.05),
-    calc(66% * 1.29)
-  );
+  --link-external-color-hover: #d49335;
   --link-external-filter: none;
   --nav-item-background-hover: rgba(255, 255, 255, 0.15);
   --nav-item-children-padding-start: 4px;
@@ -386,10 +395,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;

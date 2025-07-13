@@ -391,10 +391,10 @@ body {
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
   --font-text-size: 16px;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -995,7 +995,7 @@ body {
     position: relative;
     padding: 12px 16px;
     min-height: 38px;
-    background-color: #eee !important;
+    background-color: #eee;
     border-radius: 4px;
     white-space: pre;
     border: 0px solid #3a3b3f;
@@ -1069,7 +1069,7 @@ body {
       "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
       "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
       "Source Code Pro", monospace;
-    background-color: #eee !important;
+    background-color: #eee;
     border-radius: 4px;
     font-size: 1em;
     padding: 0.15em 0.3em;
@@ -1604,7 +1604,7 @@ body {
     max-height: 95vh;
     position: absolute;
     z-index: 30;
-    font-family: "??", "??", "??", "Arial" !important;
+    font-family: "??", "??", "??", "Arial";
 
     display: block;
     position: fixed;

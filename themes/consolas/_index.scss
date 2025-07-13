@@ -224,10 +224,10 @@ body {
     "??", Inconsolata, ui-monospace, SFMono-Regular, "Cascadia Mono",
     "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
     "Consolas", "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", var(--font-text-theme), "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", Inconsolata, "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -257,6 +257,12 @@ body {
   user-select: none;
   -webkit-user-select: none;
   caret-color: hsl(calc(258 - 3), calc(88% * 1.02), calc(66% * 1.15));
+  --font-weight: 450;
+  --inline-title-color: hsl(258, 88%, 66%);
+  --checkbox-border-color-hover: hsl(60, 100%, 50%);
+  --checkbox-marker-color: hsl(48, 100%, 50%);
+  --icon-color: hsl(258, 88%, 66%);
+  --background-modifier-hover: hsl(258, 88%, 66%);
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);

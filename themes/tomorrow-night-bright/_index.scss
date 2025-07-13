@@ -46,6 +46,7 @@ html[saved-theme="dark"] {
   --background-secondary: #000000;
   --text-normal: #eaeaea;
   --text-muted: #7aa6da;
+  --text-accent: #d54e53;
 }
 
 .darkmode {
@@ -350,10 +351,10 @@ body {
     "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
     "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "??", "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "??", "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;

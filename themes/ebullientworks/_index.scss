@@ -400,10 +400,10 @@ body {
     "??", "Fira Code", "Source Code Pro", Jetbrains Mono, ui-monospace,
     SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono",
     "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
-  contain: initial !important;
-  overflow: auto !important;
-  padding-top: 0 !important;
-  --font-text: "??", "??", "IBM Plex Sans", Helvetica Neue, "Arial" !important;
+  contain: initial;
+  overflow: auto;
+  padding-top: 0;
+  --font-text: "??", "??", "IBM Plex Sans", Helvetica Neue, "Arial";
   height: 100%;
   margin: 0;
   overscroll-behavior: none;
@@ -434,6 +434,15 @@ body {
   user-select: none;
   -webkit-user-select: none;
   caret-color: #deaab8;
+  --p-spacing: calc(16px * 1);
+  --h1-font: "Architects Daughter";
+  --h3-line-height: 1.5;
+  --bold-color: #7fa4ca;
+  --italic-color: #deaab8;
+  --link-color: #cdcdcd;
+  --link-color-hover: #74c6c5;
+  --link-external-color: #737373;
+  --link-external-color-hover: #058080;
 
   --text-normal: var(--color-base-100);
   --text-muted: var(--color-base-70);
