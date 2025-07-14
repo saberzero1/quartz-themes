@@ -881,12 +881,16 @@ body {
     text-decoration: none;
     z-index: 1;
 
+    text-decoration-line: none;
+
     &:hover {
       color: var(--text-a-hover, var(--link-color-hover));
 
       text-decoration: none;
       color: var(--link-color-hover);
       text-decoration-line: var(--link-decoration-hover);
+
+      text-decoration-line: none;
     }
     &.internal {
       color: var(--text-a, var(--link-color));

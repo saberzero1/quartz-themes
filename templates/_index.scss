@@ -406,7 +406,8 @@ body {
     }
     @media all and not ($desktop) {
       &.right {
-        //%%.workspace-split.mod-root%background-color%%
+
+        //%%body%background-color%%
 
         /*background-color: var(--background-primary);*/
       }
@@ -467,12 +468,15 @@ body {
 
     //%%a%%
 
+    text-decoration-line: none;
+
     &:hover {
       color: var(--text-a-hover, var(--link-color-hover));
       /* text-decoration-line: var(--link-decoration-hover); */
 
       //%%a:hover%%
 
+      text-decoration-line: none;
     }
     &.internal {
       color: var(--text-a, var(--link-color));
