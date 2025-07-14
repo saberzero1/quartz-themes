@@ -379,7 +379,7 @@ export function getExtras(theme) {
  * @returns {string[]} Array of fixes to install.
  */
 export function getFixes(theme) {
-  return themes[sanitizeFilenamePreservingEmojis(theme)]["fixes"]
+  return themes[sanitizeFilenamePreservingEmojis(theme)]["fixes"] || []
 }
 
 /**

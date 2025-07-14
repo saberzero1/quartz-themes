@@ -18,7 +18,7 @@ import {
 } from "./extensions/directories.mjs";
 import { copyFiles } from "./extensions/files.mjs";
 import replaceBefore from "./extensions/replacers/before.mjs";
-import replaceAfter from "./extensions/replacers/after.mjs";
+import { replaceAfter } from "./extensions/replacers/after.mjs";
 import { convert } from "./extensions/parsers/converter.mjs";
 import toJSON from "./extensions/parsers/to-json.mjs";
 import combineLightDarkInJson from "./extensions/parsers/combine-light-dark-in-json.mjs";
@@ -27,6 +27,7 @@ import replaceStaticProperties from "./extensions/parsers/static.mjs";
 import combineThemeCSSWithObsidianCSS from "./extensions/parsers/combine-theme-css-with-obsidian-css.mjs";
 import flattenTheme from "./extensions/flatten-theme.mjs";
 import updateMiscFiles from "./extensions/update-misc-files.mjs";
+import filterJSONSelectors from "./extensions/filter-json-selectors.mjs";
 
 const manifestCollection = getManifestCollection();
 
@@ -51,7 +52,9 @@ if (fullMode) {
 
   //injectJSON(manifestCollection);
 
-  replaceStaticProperties(manifestCollection);
+  //replaceStaticProperties(manifestCollection);
+
+  filterJSONSelectors(manifestCollection);
 }
 
 replaceAfter(manifestCollection);
