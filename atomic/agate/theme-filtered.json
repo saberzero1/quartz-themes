@@ -1783,6 +1783,18 @@
   "h4 a": [{ "property": "--link-weight", "value": "var(--h4-weight)" }],
   "h5 a": [{ "property": "--link-weight", "value": "var(--h5-weight)" }],
   "h6 a": [{ "property": "--link-weight", "value": "var(--h6-weight)" }],
+  "a": [
+    { "property": "--font-weight", "value": "var(--link-weight)" },
+    { "property": "color", "value": "var(--link-color)" },
+    { "property": "font-weight", "value": "var(--link-weight)" },
+    { "property": "outline", "value": "none" },
+    { "property": "text-decoration-line", "value": "var(--link-decoration)" },
+    { "property": "cursor", "value": "var(--cursor-link)" },
+    { "property": "transition", "value": "opacity 0.15s ease-in-out" },
+    { "property": "text-decoration-thickness", "value": "1px" },
+    { "property": "text-underline-position", "value": "under" },
+    { "property": "text-underline-offset", "value": "1px" }
+  ],
   ".external-link": [
     { "property": "color", "value": "var(--link-external-color)" },
     {
@@ -1868,6 +1880,13 @@
     {
       "property": "background-color",
       "value": "var(--background-modifier-hover)"
+    }
+  ],
+  "a:hover": [
+    { "property": "color", "value": "var(--link-color-hover)" },
+    {
+      "property": "text-decoration-line",
+      "value": "var(--link-decoration-hover)"
     }
   ],
   ".external-link:hover": [

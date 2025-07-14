@@ -78,6 +78,9 @@ html[saved-theme="light"] {
     --hr-color: hsl(0, 0%, 39%);
     --interactive-accent: #000000;
     --interactive-accent-hover: var(--text-selection);
+    --link-bg: transparent;
+    --link-bg-hover: var(--text-accent);
+    --link-text: var(--text-accent);
     --quick-switcher: var(--text-selection);
     --tag-bg: var(--text-normal);
     --tag-text-color: var(--background-primary);
@@ -278,6 +281,7 @@ body {
   --link-color-hover: var(--text-accent-hover);
   --link-decoration: underline;
   --link-decoration-hover: underline;
+  --link-decoration-thickness: auto;
   --link-weight: var(--font-weight);
   --link-external-color: var(--text-accent);
   --link-external-color-hover: var(--text-accent-hover);
@@ -687,8 +691,24 @@ body {
     transition: opacity 0.15s ease-in-out;
     background-position: center right;
     background-repeat: no-repeat;
+
+    --font-weight: var(--link-weight);
+    font-weight: var(--link-weight);
+    outline: none;
+    text-decoration-line: var(--link-decoration);
+    text-decoration-thickness: var(--link-decoration-thickness);
+    cursor: var(--cursor-link);
+    transition: opacity 0.15s ease-in-out;
+    background-color: var(--link-bg);
+    color: var(--link-text);
+    text-decoration: none;
+
     &:hover {
       color: var(--text-a-hover, var(--link-color-hover));
+
+      background-color: var(--link-bg-hover);
+      color: var(--link-color-hover);
+      text-decoration-line: var(--link-decoration-hover);
     }
     &.internal {
       color: var(--text-a, var(--link-color));

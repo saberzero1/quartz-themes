@@ -1869,6 +1869,19 @@
     { "property": "--link-weight", "value": "var(--h6-weight)" },
     { "property": "font-weight", "value": "inherit" }
   ],
+  "a": [
+    { "property": "--font-weight", "value": "var(--link-weight)" },
+    { "property": "font-weight", "value": "var(--link-weight)" },
+    { "property": "transition", "value": "opacity 0.15s ease-in-out" },
+    { "property": "color", "value": "var(--link-color)" },
+    { "property": "outline", "value": "none" },
+    { "property": "text-decoration-line", "value": "var(--link-decoration)" },
+    {
+      "property": "text-decoration-thickness",
+      "value": "var(--link-decoration-thickness)"
+    },
+    { "property": "cursor", "value": "var(--cursor-link)" }
+  ],
   ".external-link": [
     { "property": "padding-inline-end", "value": "0.9em" },
     { "property": "transition", "value": "opacity 0.15s ease-in-out" },
@@ -1955,6 +1968,13 @@
     {
       "property": "background-color",
       "value": "var(--background-secondary-alt)"
+    }
+  ],
+  "a:hover": [
+    { "property": "color", "value": "var(--link-color-hover)" },
+    {
+      "property": "text-decoration-line",
+      "value": "var(--link-decoration-hover)"
     }
   ],
   ".external-link:hover": [

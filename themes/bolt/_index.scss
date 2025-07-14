@@ -424,6 +424,7 @@ body {
   --link-color: var(--primary);
   --link-color-hover: var(--primary);
   --link-external-color: var(--tertiary);
+  --link-decoration-thickness: 1.5px;
   --link-external-decoration: none;
   --nav-indentation-guide-width: 2px;
   --nav-indentation-guide-color: var(--interactive-accent);
@@ -723,8 +724,21 @@ body {
     transition: opacity 0.15s ease-in-out;
     background-position: center right;
     background-repeat: no-repeat;
+
+    --font-weight: var(--link-weight);
+    color: var(--link-color);
+    font-weight: var(--link-weight);
+    outline: none;
+    text-decoration-line: var(--link-decoration);
+    text-decoration-thickness: var(--link-decoration-thickness);
+    cursor: var(--cursor-link);
+    transition: opacity 0.15s ease-in-out;
+
     &:hover {
       color: var(--text-a-hover, var(--link-color-hover));
+
+      color: var(--link-color-hover);
+      text-decoration-line: var(--link-decoration-hover);
     }
     &.internal {
       color: var(--text-a, var(--link-color));

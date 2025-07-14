@@ -79,6 +79,7 @@ html[saved-theme="dark"] {
     --color-green: var(--color-green-700);
     --color-green-700: hsl(151, 72%, 65%);
     --color-highlight-bg: hsla(192, 100%, 92%, 0.596);
+    --color-magenta-700: hsl(334, 100%, 75%);
     --color-purple: var(--color-purple-500);
     --color-purple-500: hsl(255, 100%, 86%);
     --color-slate-700: hsl(223, 18%, 68%);
@@ -98,6 +99,7 @@ html[saved-theme="dark"] {
     --text-highlight-bg: var(--color-highlight-bg);
     --text-muted: var(--color-gray-40);
     --text-normal: var(--color-gray-20);
+    --md-color-link: var(--color-magenta-700);
     --highlight-mix-blend-mode: darken;
   }
 }
@@ -355,6 +357,7 @@ body {
   --link-color-hover: var(--text-accent-hover);
   --link-decoration: underline;
   --link-decoration-hover: underline;
+  --link-decoration-thickness: auto;
   --link-weight: var(--font-weight);
   --link-external-color: var(--text-accent);
   --link-external-color-hover: var(--text-accent-hover);
@@ -762,8 +765,23 @@ body {
     transition: opacity 0.15s ease-in-out;
     background-position: center right;
     background-repeat: no-repeat;
+
+    --font-weight: var(--link-weight);
+    font-weight: var(--link-weight);
+    outline: none;
+    text-decoration-line: var(--link-decoration);
+    text-decoration-thickness: var(--link-decoration-thickness);
+    cursor: var(--cursor-link);
+    transition: opacity 0.15s ease-in-out;
+    color: var(--md-color-link);
+    text-decoration: none;
+
     &:hover {
       color: var(--text-a-hover, var(--link-color-hover));
+
+      text-decoration: none;
+      color: var(--link-color-hover);
+      text-decoration-line: var(--link-decoration-hover);
     }
     &.internal {
       color: var(--text-a, var(--link-color));

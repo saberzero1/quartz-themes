@@ -162,6 +162,8 @@ const mapping = [
   },
   { selector: "a.tag", declaration: "" },
   { selector: "a.tag:hover", declaration: "" },
+  { selector: "a", declaration: "" },
+  { selector: "a:hover", declaration: "" },
 ];
 
 const darkMapping = [

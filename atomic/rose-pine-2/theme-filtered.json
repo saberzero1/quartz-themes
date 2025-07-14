@@ -1902,6 +1902,22 @@
   "h4 a": [{ "property": "--link-weight", "value": "var(--h4-weight)" }],
   "h5 a": [{ "property": "--link-weight", "value": "var(--h5-weight)" }],
   "h6 a": [{ "property": "--link-weight", "value": "var(--h6-weight)" }],
+  "a": [
+    { "property": "--font-weight", "value": "var(--link-weight)" },
+    { "property": "font-weight", "value": "var(--link-weight)" },
+    { "property": "outline", "value": "none" },
+    { "property": "text-decoration-line", "value": "var(--link-decoration)" },
+    {
+      "property": "text-decoration-thickness",
+      "value": "var(--link-decoration-thickness)"
+    },
+    { "property": "cursor", "value": "var(--cursor-link)" },
+    { "property": "transition", "value": "opacity 0.15s ease-in-out" },
+    { "property": "color", "value": "var(--text-sub-accent)" },
+    { "property": "position", "value": "relative" },
+    { "property": "text-decoration", "value": "none" },
+    { "property": "z-index", "value": "1" }
+  ],
   ".external-link": [
     { "property": "color", "value": "var(--link-external-color)" },
     {
@@ -2018,6 +2034,14 @@
     {
       "property": "text-decoration-line",
       "value": "var(--link-external-decoration-hover)"
+    }
+  ],
+  "a:hover": [
+    { "property": "text-decoration", "value": "none" },
+    { "property": "color", "value": "var(--link-color-hover)" },
+    {
+      "property": "text-decoration-line",
+      "value": "var(--link-decoration-hover)"
     }
   ],
   ".markdown-rendered button.copy-code-button:hover": [

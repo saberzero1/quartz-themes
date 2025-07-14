@@ -653,6 +653,7 @@ body {
   --tag-radius: 5px;
   --link-external-decoration: underline;
   --link-decoration: underline;
+  --link-decoration-thickness: 1px;
   --radius-s: 4px;
   --radius-m: 8px;
   --radius-l: 10px;
@@ -946,8 +947,22 @@ body {
     transition: opacity 0.15s ease-in-out;
     background-position: center right;
     background-repeat: no-repeat;
+
+    --font-weight: var(--link-weight);
+    color: var(--link-color);
+    font-weight: var(--link-weight);
+    outline: none;
+    text-decoration-line: var(--link-decoration);
+    text-decoration-thickness: var(--link-decoration-thickness);
+    cursor: var(--cursor-link);
+    transition: opacity 0.15s ease-in-out;
+    text-underline-offset: 2px;
+
     &:hover {
       color: var(--text-a-hover, var(--link-color-hover));
+
+      color: var(--link-color-hover);
+      text-decoration-line: var(--link-decoration-hover);
     }
     &.internal {
       color: var(--text-a, var(--link-color));

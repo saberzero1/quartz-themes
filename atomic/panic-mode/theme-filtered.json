@@ -2025,6 +2025,21 @@
   "h4 a": [{ "property": "--link-weight", "value": "var(--h4-weight)" }],
   "h5 a": [{ "property": "--link-weight", "value": "var(--h5-weight)" }],
   "h6 a": [{ "property": "--link-weight", "value": "var(--h6-weight)" }],
+  "a": [
+    { "property": "--font-weight", "value": "var(--link-weight)" },
+    { "property": "font-weight", "value": "var(--link-weight)" },
+    { "property": "outline", "value": "none" },
+    { "property": "text-decoration-line", "value": "var(--link-decoration)" },
+    {
+      "property": "text-decoration-thickness",
+      "value": "var(--link-decoration-thickness)"
+    },
+    { "property": "cursor", "value": "var(--cursor-link)" },
+    { "property": "transition", "value": "opacity 0.15s ease-in-out" },
+    { "property": "background-color", "value": "var(--link-bg)" },
+    { "property": "color", "value": "var(--link-text)" },
+    { "property": "text-decoration", "value": "none" }
+  ],
   ".external-link": [
     { "property": "color", "value": "var(--link-external-color)" },
     {
@@ -2121,6 +2136,14 @@
     },
     { "property": "color", "value": "var(--nav-item-color-active)" },
     { "property": "font-weight", "value": "var(--nav-item-weight-active)" }
+  ],
+  "a:hover": [
+    { "property": "background-color", "value": "var(--link-bg-hover)" },
+    { "property": "color", "value": "var(--link-color-hover)" },
+    {
+      "property": "text-decoration-line",
+      "value": "var(--link-decoration-hover)"
+    }
   ],
   "a.tag:hover": [
     { "property": "background-color", "value": "var(--tag-background-hover)" },
