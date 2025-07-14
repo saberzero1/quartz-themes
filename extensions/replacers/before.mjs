@@ -8,6 +8,8 @@ import {
   getFixes,
   getValueFromDictionary,
 } from "../../util/util.mjs";
+import { readFileSync, writeFileSync } from "fs";
+import { format } from "../formatter.mjs";
 
 export default function replaceBefore(manifestCollection) {
   manifestCollection.forEach((manifest) => {
@@ -48,6 +50,12 @@ export default function replaceBefore(manifestCollection) {
     mapping.forEach(({ file, target, replacement }) => {
       replaceInFile(file, target, replacement);
     });
+
+    const readmeContent = readFileSync(`./themes/${theme}/README.md`, "utf8");
+    const formattedReadme = format(readmeContent, "markdown");
+    writeFileSync(`./themes/${theme}/README.md`, formattedReadme, "utf8");
+
+    console.log(`Replaced before properties in theme: ${theme}`);
   });
 }
 

@@ -47,7 +47,7 @@ if (fullMode) {
 
   toJSON(manifestCollection);
 
-  combineLightDarkInJson(manifestCollection);
+  //combineLightDarkInJson(manifestCollection);
 
   //injectJSON(manifestCollection);
 

@@ -11,6 +11,10 @@
 html[saved-theme="dark"] {
   color-scheme: dark;
 
+  .callout {
+    --callout-blend-mode: lighten;
+  }
+
   code[data-theme*=" "] {
     color: var(--shiki-dark);
     background-color: var(--shiki-dark-bg);
@@ -21,27 +25,101 @@ html[saved-theme="dark"] {
   }
 
   color-scheme: dark;
+  --mono-rgb-100: 255, 255, 255;
+  --color-red-rgb: 251, 70, 76;
   --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
   --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
   --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
   --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
   --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
   --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
   --color-pink: #fa99cd;
-  --color-accent-hsl: 40, 100%, 70%;
-  --text-accent: #dfbfff;
-  --background-modifier-border: hsl(40, calc(22% + 5%), 50%, 0.18);
-  --color-accent-2: hsl(calc(40 - 4), calc(100% + 4%), calc(70% + 5%));
-  --color-base-100: hsl(40, 20%, 90%);
-  --color-base-30: hsl(223, 22%, calc(1% + 10%));
-  --color-base-35: hsl(223, 25%, calc(1% + 50%));
-  --color-base-40: hsl(223, 25%, calc(1% + 30%));
-  --text-muted: #000000;
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --text-accent: var(--color-accent-1);
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --shadow-s:
+    0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
+  --shadow-l:
+    0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
+  --base-c-m: calc(var(--base-c) - 10%);
+  --c-00: var(--base-c-m);
+  --c-10: calc(var(--base-c-m) + 5%);
+  --c-100: calc(var(--base-c-m) + 68%);
+  --c-20: calc(var(--base-c-m) - 4%);
+  --c-30: calc(var(--base-c-m) + 3%);
+  --c-35: calc(var(--base-c-m) + 19%);
+  --c-40: calc(var(--base-c-m) + 18%);
+  --c-50: calc(var(--base-c-m) + 60%);
+  --c-70: calc(var(--base-c-m) + 66%);
+  --background-modifier-border: var(--color-base-35);
+  --background-modifier-form-field: var(--color-base-10);
+  --color-accent-1: hsl(
+    calc(var(--accent-h) + 4),
+    calc(var(--accent-s) + 4%),
+    calc(var(--accent-l) + 6%)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 4),
+    calc(var(--accent-s) + 4%),
+    calc(var(--accent-l) + 5%)
+  );
+  --color-base-00: hsl(
+    var(--theme-tint-text),
+    var(--theme-sat-text),
+    var(--c-00)
+  );
+  --color-base-10: hsl(
+    var(--theme-tint-text),
+    var(--theme-sat-text),
+    var(--c-10)
+  );
+  --color-base-100: hsl(var(--theme-tint), var(--theme-sat), var(--c-100));
+  --color-base-20: hsl(
+    var(--theme-tint-text),
+    var(--theme-sat-text),
+    var(--c-20)
+  );
+  --color-base-30: hsl(
+    var(--theme-tint-text),
+    var(--theme-sat-text),
+    var(--c-30)
+  );
+  --color-base-35: hsl(
+    var(--theme-tint-secondary),
+    var(--theme-sat-secondary),
+    var(--c-35)
+  );
+  --color-base-40: hsl(
+    var(--theme-tint-secondary),
+    var(--theme-sat-secondary),
+    var(--c-40)
+  );
+  --color-base-50: hsl(var(--theme-tint-text), var(--theme-sat), var(--c-50));
+  --color-base-70: hsl(var(--theme-tint), var(--theme-sat), var(--c-70));
+  --text-muted: var(--color-base-50);
+  --accent-h: 238;
+  --accent-l: 70%;
+  --accent-s: 100%;
+  --base-c: 15%;
 }
 
 :root[saved-theme="light"],
 html[saved-theme="light"] {
   color-scheme: light;
+
+  .callout {
+    --callout-blend-mode: darken;
+  }
 
   code[data-theme*=" "] {
     color: var(--shiki-light);
@@ -53,20 +131,82 @@ html[saved-theme="light"] {
   }
 
   color-scheme: light;
+  --mono-rgb-100: 0, 0, 0;
+  --color-orange-rgb: 236, 117, 0;
   --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
   --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
   --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
   --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
   --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
   --color-pink: #d53984;
-  --color-accent-hsl: 40, 100%, 70%;
-  --color-accent-2: hsl(calc(40 - 3), calc(100% * 1.02), calc(70% * 1.15));
-  --background-modifier-hover: rgba(255, 255, 255, 0.05);
-  --color-base-30: hsl(40, calc(22% - 5%), calc(1% + 10%));
-  --color-base-35: hsl(40, calc(22% - 5%), calc(1% + 50%));
-  --color-base-40: hsl(40, 22%, calc(1% + 30%));
-  --color-base-100: hsl(223, 22%, 90%);
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --color-accent-2: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+  --shadow-s:
+    0px 1px 2px #000000, 0px 3.4px 6.7px #000000, 0px 15px 30px #000000;
+  --shadow-l:
+    0px 1.8px 7.3px #000000, 0px 6.3px 24.7px #000000, 0px 30px 90px #000000;
+  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.05);
+  --interactive-accent: vaR(--color-accent-1);
+  --color-base-00: hsl(var(--theme-tint), var(--theme-sat), var(--c-00));
+  --color-base-10: hsl(
+    var(--theme-tint),
+    var(--theme-sat-secondary),
+    var(--c-10)
+  );
+  --color-base-20: hsl(
+    var(--theme-tint-secondary),
+    var(--theme-sat-secondary),
+    var(--c-20)
+  );
+  --color-base-30: hsl(
+    var(--theme-tint),
+    calc(var(--theme-sat-text) - 5%),
+    var(--c-30)
+  );
+  --color-base-35: hsl(
+    var(--theme-tint),
+    calc(var(--theme-sat-text) - 5%),
+    var(--c-35)
+  );
+  --color-base-40: hsl(var(--theme-tint), var(--theme-sat-text), var(--c-40));
+  --color-base-50: hsl(
+    var(--theme-tint-text),
+    var(--theme-sat-text),
+    var(--c-50)
+  );
+  --color-base-70: hsl(
+    var(--theme-tint-text),
+    var(--theme-sat-text),
+    var(--c-70)
+  );
+  --color-base-100: hsl(
+    var(--theme-tint-text),
+    var(--theme-sat-text),
+    var(--c-100)
+  );
+  --accent-h: 228;
+  --accent-l: 66%;
+  --accent-s: 70%;
+  --base-c: 100%;
   --color-red: #f45757;
+  --color-red-rgb: 244, 87, 87;
 }
 
 /* ia-writer-duo-latin-400-italic */
@@ -165,119 +305,251 @@ html {
   font-family: var(--bodyFont);
 }
 body {
+  --bold-modifier: 200;
   --bold-color: inherit;
-  --bold-weight: calc(600 + 200);
-  --checkbox-size: 17px;
-  --checkbox-marker-color: #ffffff;
-  --checkbox-color: #f4dbd6;
-  --checkbox-color-hover: #dfbfff;
-  --checkbox-border-color: #498595;
-  --checkbox-border-color-hover: #5594a5;
-  --code-background: hsl(40, calc(20% / 1.2), calc(1% + 15%));
-  --code-normal: #91bdc0;
-  --code-comment: #498595;
-  --code-function: #ffd173;
-  --code-important: #ffad66;
-  --code-keyword: #dfbfff;
-  --code-property: #95e6cb;
-  --code-punctuation: #5594a5;
-  --code-string: #d5ff80;
-  --code-tag: #f28779;
-  --code-value: #80bfff;
-  --collapse-icon-color: #498595;
-  --collapse-icon-color-collapsed: #d5ff80;
+  --bold-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --border-width: 1px;
+  --callout-border-width: 0px;
+  --callout-border-opacity: 0.25;
+  --callout-radius: var(--radius-s);
+  --callout-title-color: inherit;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-question: var(--color-orange-rgb);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
+  --callout-quote: 158, 158, 158;
+  --caret-color: var(--text-normal);
+  --checkbox-size: var(--font-text-size);
+  --checkbox-marker-color: var(--background-primary);
+  --checkbox-color: var(--interactive-accent);
+  --checkbox-color-hover: var(--interactive-accent-hover);
+  --checkbox-border-color: var(--text-faint);
+  --checkbox-border-color-hover: var(--text-muted);
+  --code-white-space: pre-wrap;
+  --code-border-width: 0px;
+  --code-border-color: var(--background-modifier-border);
+  --code-radius: var(--radius-s);
+  --code-background: var(--background-primary-alt);
+  --code-normal: var(--text-normal);
+  --code-comment: var(--text-faint);
+  --code-function: var(--color-yellow);
+  --code-important: var(--color-orange);
+  --code-keyword: var(--color-pink);
+  --code-property: var(--color-cyan);
+  --code-punctuation: var(--text-muted);
+  --code-string: var(--color-green);
+  --code-tag: var(--color-red);
+  --code-value: var(--color-purple);
+  --collapse-icon-color: var(--text-faint);
+  --collapse-icon-color-collapsed: var(--text-accent);
+  --cursor: default;
   --cursor-link: pointer;
-  --graph-line: var(
-    --color-base-35,
-    hsl(0, calc(var(--custon-theme-sat-text-d) - 5%), calc(1% + 10%))
-  );
-  --graph-node-unresolved: #498595;
-  --graph-node-tag: #d5ff80;
+  --font-smaller: 0.875em;
+  --font-small: 0.933em;
+  --font-ui-smaller: 12px;
+  --font-ui-small: 13px;
+  --font-ui-medium: 15px;
+  --font-weight: var(--font-normal);
+  --font-normal: 400;
+  --font-medium: 500;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus));
+  --graph-node-unresolved: var(--text-faint);
+  --graph-node-tag: var(--color-green);
   --h1-color: inherit;
+  --h2-color: inherit;
+  --h3-color: inherit;
+  --h4-color: inherit;
+  --h5-color: inherit;
+  --h6-color: inherit;
+  --h1-line-height: 1.2;
+  --h2-line-height: 1.2;
   --h3-line-height: 1.3;
-  --icon-color: #5594a5;
-  --inline-title-color: #80bfff;
-  --inline-title-font: "iA Writer Duo S";
+  --h4-line-height: 1.4;
+  --h5-line-height: var(--line-height-normal);
+  --h6-line-height: var(--line-height-normal);
+  --h1-style: normal;
+  --h2-style: normal;
+  --h3-style: normal;
+  --h4-style: normal;
+  --h5-style: normal;
+  --h6-style: normal;
+  --h1-variant: normal;
+  --h2-variant: normal;
+  --h3-variant: normal;
+  --h4-variant: normal;
+  --h5-variant: normal;
+  --h6-variant: normal;
+  --icon-color: var(--text-muted);
+  --indentation-guide-width: 1px;
+  --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12);
+  --inline-title-color: var(--h1-color);
+  --inline-title-font: var(--h1-font);
+  --input-height: 30px;
+  --input-radius: 5px;
+  --input-border-width: 1px;
   --italic-color: inherit;
-  --link-color-hover: rgba(223, 191, 255, 0.8);
-  --link-weight: var(--link-weight);
-  --link-external-color: #d5ff80;
-  --link-external-color-hover: rgba(223, 191, 255, 0.8);
+  --layer-popover: 30;
+  --line-height-tight: 1.3;
+  --link-color-hover: var(--text-accent-hover);
+  --link-weight: var(--font-weight);
+  --link-external-color: var(--text-accent);
+  --link-external-color-hover: var(--text-accent-hover);
   --link-external-filter: none;
-  --nav-item-background-hover: rgba(128, 191, 255, 0.25);
-  --nav-item-children-padding-start: 4px;
-  --nav-item-children-margin-start: 12px;
+  --nav-item-size: var(--font-ui-small);
+  --nav-item-color: var(--text-muted);
+  --nav-item-color-active: var(--text-normal);
+  --nav-item-background-hover: var(--background-modifier-hover);
+  --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
+    var(--size-4-6);
+  --nav-item-children-padding-start: var(--size-2-2);
+  --nav-item-children-margin-start: var(--size-4-3);
+  --nav-item-weight: inherit;
+  --nav-item-weight-active: inherit;
+  --nav-indentation-guide-width: var(--indentation-guide-width);
+  --nav-indentation-guide-color: var(--indentation-guide-color);
+  --nav-heading-color: var(--text-normal);
+  --nav-heading-weight: var(--font-medium);
+  --metadata-input-text-color: var(--text-normal);
   --p-spacing: 1rem;
-  --search-icon-color: #5594a5;
-  --tag-color: #d5ff80;
-  --tag-color-hover: #d5ff80;
+  --popover-max-height: 95vh;
+  --prompt-input-height: 40px;
+  --prompt-border-width: var(--border-width);
+  --prompt-border-color: var(
+    --color-base-40,
+    var(--background-modifier-border-focus)
+  );
+  --search-icon-color: var(--text-muted);
+  --size-2-1: 2px;
+  --size-2-2: 4px;
+  --size-4-1: 4px;
+  --size-4-2: 8px;
+  --size-4-3: 12px;
+  --size-4-4: 16px;
+  --size-4-6: 24px;
+  --size-4-12: 48px;
+  --tag-color: var(--text-accent);
+  --tag-color-hover: var(--text-accent);
   --tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-background: hsla(193, 85%, 50%, 0.1);
-  --tag-background-hover: hsla(193, 85%, 50%, 0.2);
-  --tag-border-color: hsla(193, 85%, 50%, 0.15);
-  --tag-border-color-hover: hsla(193, 85%, 50%, 0.15);
+  --tag-background: hsla(var(--interactive-accent-hsl), 0.1);
+  --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
+  --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);
+  --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);
   --tag-border-width: 0px;
   --tag-weight: inherit;
-  --background-primary: #ffffff;
-  --background-secondary: hsl(223, calc(25% * 1.2), calc(1% + 8%));
-  --background-modifier-hover: rgba(255, 255, 255, 0.067);
-  --background-modifier-border: hsl(40, 60%, 75%);
-  --background-modifier-border-hover: hsl(40, calc(22% + 5%), 50%, 0.18);
-  --background-modifier-border-focus: hsl(0, 20%, 50%);
-  --text-normal: #000000;
-  --text-muted: #000000;
-  --text-faint: #000000;
-  --text-highlight-bg: rgba(255, 208, 0, 0.4);
-  --text-accent: #dfbfff;
-  --text-accent-hover: rgba(223, 191, 255, 0.8);
-  --interactive-accent-hsl: 193, 85%, 50%;
+  --accent-h: 258;
+  --accent-s: 88%;
+  --accent-l: 66%;
+  --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
+  --background-secondary: var(--color-base-20);
+  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067);
+  --background-modifier-border: var(--color-base-30);
+  --background-modifier-border-hover: var(--color-base-35);
+  --background-modifier-border-focus: var(--color-base-40);
+  --background-modifier-form-field: var(--color-base-00);
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-50);
+  --text-highlight-bg-rgb: 255, 208, 0;
+  --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
+  --text-accent: var(--color-accent);
+  --text-accent-hover: var(--color-accent-2);
+  --interactive-accent-hsl: var(--color-accent-hsl);
+  --interactive-accent: var(--color-accent-1);
+  --interactive-accent-hover: var(--color-accent-2);
   --font-default:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
     Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
+  --font-interface-override: "??";
+  --font-interface:
+    var(--font-interface-override), var(--font-interface-theme),
+    var(--default-font, "??"), var(--font-default);
+  --font-text-override: "??";
+  --font-print-override: "??";
+  --font-print:
+    var(--font-print-override), var(--font-text-override),
+    var(--font-text-theme), "Arial";
+  --font-text-size: 16px;
   margin: 0;
   overscroll-behavior: none;
   padding: 0;
   width: 100%;
   text-rendering: optimizeLegibility;
-  font-family:
-    "??",
-    "iA Writer Quattro S",
-    var(--default-font, "??"),
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    "Inter",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  line-height: 1.3;
-  font-size: 17px;
-  background-color: #ffffff;
-  color: #91bdc0;
+  font-family: var(--font-interface);
+  line-height: var(--line-height-tight);
+  font-size: var(--font-ui-medium);
+  background-color: var(--background-primary);
+  color: var(--text-normal);
   -webkit-tap-highlight-color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
-  caret-color: #d5ff80;
+  caret-color: var(--caret-color);
+  --font-interface-theme: var(--font-text-theme);
   --font-monospace: "iA Writer Mono", "iA Writer Mono S";
-  font-weight: 400;
+  --font-secondary: "iA Writer Duo", "iA Writer Duo S";
+  --font-text-theme:
+    "iA Writer Quattro S", "Nanum Gothic Coding", "MS PGothic", "PingFang SC",
+    "蘋方", "蘋方 SC", "Microsoft YaHei Light", ui-sans-serif, sans-serif;
+  --font-weight-default: 400;
+  font-weight: var(--font-weight-default);
   --hr-thickness: 1px;
-  --hr-color: hsl(0, calc(10% - 5%), calc(1% + 10%));
-  --h1-font: inherit;
+  --hr-color: var(--background-modifier-border-hover);
+  --callout-title-padding: 5px 10px;
+  --callout-content-padding: 10px;
+  --callout-padding: 0px;
+  --callout-content-background: var(--background-primary-alt);
+  --callout-title-size: 0.98em;
+  --callout-bug: var(--color-pink-rgb);
+  --callout-blend-mode: normal;
+  --h1-size: 1.72em;
+  --h2-size: 1.51em;
+  --h3-size: 1.35em;
+  --h4-size: 1.19em;
+  --h5-size: 1.08em;
+  --h6-size: 1em;
+  --h1-font: var(--h-font-s);
+  --h2-font: var(--h-font-s);
+  --h3-font: var(--h-font-s);
+  --h4-font: var(--h-font-s);
+  --h5-font: var(--h-font-s);
+  --h6-font: var(--h-font-s);
+  --h-font-s: inherit;
+  --h-weight-s: 600;
+  --h1-weight: var(--h-weight-s);
+  --h2-weight: var(--h-weight-s);
+  --h3-weight: var(--h-weight-s);
+  --h4-weight: var(--h-weight-s);
+  --h5-weight: var(--h-weight-s);
+  --h6-weight: var(--h-weight-s);
+  --line-height-normal: 1.75;
   letter-spacing: var(--letter-spacing);
-  --link-color: #dfbfff;
+  --link-color: var(--color-accent-1);
   --checkbox-radius: 10px;
-  --tag-radius: 5px;
+  --tag-radius: var(--radius-s);
+  --radius-s: 5px;
+  --radius-m: 12px;
+  --radius-l: 18px;
+  --theme-tint: 0;
+  --theme-sat: 0%;
+  --theme-tint-secondary: 0;
+  --theme-sat-secondary: 0%;
+  --theme-tint-text: 0;
+  --theme-sat-text: 0%;
   contain: initial;
   height: auto;
   overflow: auto;
   padding-top: 0;
-  --font-text: "??", "??", "iA Writer Quattro S", "Arial";
+  --font-text: var(--font-print);
 
   --quartz-themes-title-font-size: 1.75rem;
 }
@@ -287,16 +559,17 @@ html {
   .callout {
     overflow: hidden;
     border-style: solid;
-    border-color: rgba(242, 135, 121, 0.25);
-    border-width: 0px;
-    border-radius: 5px;
+    border-color: rgba(var(--callout-color), var(--callout-border-opacity));
+    border-width: var(--callout-border-width);
+    border-radius: var(--callout-radius);
     margin: 1em 0;
-    mix-blend-mode: normal;
-    padding: 12px 24px 12px 12px;
-    background-color: rgba(242, 135, 121, 0.17);
-    border: 1px rgba(242, 135, 121, calc(1% + 10%)) solid;
+    mix-blend-mode: var(--callout-blend-mode);
+    padding: var(--callout-padding);
+    background-color: rgba(var(--callout-color), 0.17);
+    border: 1px rgba(var(--callout-color), var(--c-30)) solid;
+    --callout-color: var(--callout-default);
 
-    background-color: rgba(242, 135, 121, 0.17);
+    background-color: rgba(var(--callout-color), 0.17);
 
     /*background-color: var(--bg);*/
     border-color: var(--border);
@@ -305,147 +578,203 @@ html {
     overflow-y: hidden;
 
     &[data-callout] {
-      background-color: rgba(242, 135, 121, 0.17);
+      --callout-color: var(--callout-default);
+
+      background-color: rgba(var(--callout-color), 0.17);
       /*background: var(--bg);*/
     }
     &[data-callout="abstract"] {
-      background-color: rgba(242, 135, 121, 0.17);
+      --callout-color: var(--callout-summary);
+
+      background-color: rgba(var(--callout-color), 0.17);
       /*background: var(--bg);*/
     }
     &[data-callout="summary"] {
-      background-color: rgba(242, 135, 121, 0.17);
+      --callout-color: var(--callout-summary);
+
+      background-color: rgba(var(--callout-color), 0.17);
       /*background: var(--bg);*/
     }
     &[data-callout="tldr"] {
-      background-color: rgba(242, 135, 121, 0.17);
+      --callout-color: var(--callout-summary);
+
+      background-color: rgba(var(--callout-color), 0.17);
       /*background: var(--bg);*/
     }
     &[data-callout="info"] {
-      background-color: rgba(242, 135, 121, 0.17);
+      --callout-color: var(--callout-info);
+
+      background-color: rgba(var(--callout-color), 0.17);
       /*background: var(--bg);*/
     }
     &[data-callout="todo"] {
-      background-color: rgba(242, 135, 121, 0.17);
+      --callout-color: var(--callout-todo);
+
+      background-color: rgba(var(--callout-color), 0.17);
       /*background: var(--bg);*/
     }
     &[data-callout="important"] {
-      background-color: rgba(242, 135, 121, 0.17);
+      --callout-color: var(--color-red-rgb);
+
+      background-color: rgba(var(--callout-color), 0.17);
       /*background: var(--bg);*/
     }
     &[data-callout="tip"] {
-      background-color: rgba(242, 135, 121, 0.17);
+      --callout-color: var(--color-yellow-rgb);
+
+      background-color: rgba(var(--callout-color), 0.17);
       /*background: var(--bg);*/
     }
     &[data-callout="hint"] {
-      background-color: rgba(242, 135, 121, 0.17);
+      --callout-color: var(--callout-tip);
+
+      background-color: rgba(var(--callout-color), 0.17);
       /*background: var(--bg);*/
     }
     &[data-callout="success"] {
-      background-color: rgba(242, 135, 121, 0.17);
+      --callout-color: var(--callout-success);
+
+      background-color: rgba(var(--callout-color), 0.17);
       /*background: var(--bg);*/
     }
     &[data-callout="check"] {
-      background-color: rgba(242, 135, 121, 0.17);
+      --callout-color: var(--color-green-rgb);
+
+      background-color: rgba(var(--callout-color), 0.17);
       /*background: var(--bg);*/
     }
     &[data-callout="done"] {
-      background-color: rgba(242, 135, 121, 0.17);
+      --callout-color: var(--callout-success);
+
+      background-color: rgba(var(--callout-color), 0.17);
       /*background: var(--bg);*/
     }
     &[data-callout="question"] {
-      background-color: rgba(242, 135, 121, 0.17);
+      --callout-color: var(--callout-question);
+
+      background-color: rgba(var(--callout-color), 0.17);
       /*background: var(--bg);*/
     }
     &[data-callout="help"] {
-      background-color: rgba(242, 135, 121, 0.17);
+      --callout-color: var(--color-orange-rgb);
+
+      background-color: rgba(var(--callout-color), 0.17);
       /*background: var(--bg);*/
     }
     &[data-callout="faq"] {
-      background-color: rgba(242, 135, 121, 0.17);
+      --callout-color: var(--callout-question);
+
+      background-color: rgba(var(--callout-color), 0.17);
       /*background: var(--bg);*/
     }
     &[data-callout="warning"] {
-      background-color: rgba(242, 135, 121, 0.17);
+      --callout-color: var(--callout-warning);
+
+      background-color: rgba(var(--callout-color), 0.17);
       /*background: var(--bg);*/
     }
     &[data-callout="caution"] {
-      background-color: rgba(242, 135, 121, 0.17);
+      --callout-color: var(--callout-warning);
+
+      background-color: rgba(var(--callout-color), 0.17);
       /*background: var(--bg);*/
     }
     &[data-callout="attention"] {
-      background-color: rgba(242, 135, 121, 0.17);
+      --callout-color: var(--callout-warning);
+
+      background-color: rgba(var(--callout-color), 0.17);
       /*background: var(--bg);*/
     }
     &[data-callout="failure"] {
-      background-color: rgba(242, 135, 121, 0.17);
+      --callout-color: var(--callout-fail);
+
+      background-color: rgba(var(--callout-color), 0.17);
       /*background: var(--bg);*/
     }
     &[data-callout="fail"] {
-      background-color: rgba(242, 135, 121, 0.17);
+      --callout-color: var(--callout-fail);
+
+      background-color: rgba(var(--callout-color), 0.17);
       /*background: var(--bg);*/
     }
     &[data-callout="missing"] {
-      background-color: rgba(242, 135, 121, 0.17);
+      --callout-color: var(--callout-fail);
+
+      background-color: rgba(var(--callout-color), 0.17);
       /*background: var(--bg);*/
     }
     &[data-callout="danger"] {
-      background-color: rgba(242, 135, 121, 0.17);
+      --callout-color: var(--callout-error);
+
+      background-color: rgba(var(--callout-color), 0.17);
       /*background: var(--bg);*/
     }
     &[data-callout="error"] {
-      background-color: rgba(242, 135, 121, 0.17);
+      --callout-color: var(--callout-error);
+
+      background-color: rgba(var(--callout-color), 0.17);
       /*background: var(--bg);*/
     }
     &[data-callout="bug"] {
-      background-color: rgba(242, 135, 121, 0.17);
+      --callout-color: var(--callout-bug);
+
+      background-color: rgba(var(--callout-color), 0.17);
       /*background: var(--bg);*/
     }
     &[data-callout="example"] {
-      background-color: rgba(242, 135, 121, 0.17);
+      --callout-color: var(--callout-example);
+
+      background-color: rgba(var(--callout-color), 0.17);
       /*background: var(--bg);*/
     }
     &[data-callout="quote"] {
-      background-color: rgba(242, 135, 121, 0.17);
+      --callout-color: var(--callout-quote);
+
+      background-color: rgba(var(--callout-color), 0.17);
       /*background: var(--bg);*/
     }
     &[data-callout="cite"] {
-      background-color: rgba(242, 135, 121, 0.17);
+      --callout-color: var(--callout-quote);
+
+      background-color: rgba(var(--callout-color), 0.17);
       /*background: var(--bg);*/
     }
   }
 
   .callout-title {
-    padding: 5px 10px;
+    padding: var(--callout-title-padding);
     display: flex;
-    font-size: 0.98em;
-    color: rgb(242, 135, 121);
-    line-height: 1.3;
+    font-size: var(--callout-title-size);
+    color: rgb(var(--callout-color));
+    line-height: var(--line-height-tight);
     align-items: flex-start;
     gap: 1em;
-    border-radius: 5px 5px 0px 0px;
+    border-radius: var(--callout-radius) var(--callout-radius) 0px 0px;
 
     /*background: var(--bg);*/
 
     & > .callout-title-inner > p {
-      color: inherit;
+      --font-weight: var(--callout-title-weight);
+      color: var(--callout-title-color);
       font-weight: normal;
 
       /*color: var(--color);*/
     }
 
     .callout-title-inner {
-      color: inherit;
+      --font-weight: var(--callout-title-weight);
+      color: var(--callout-title-color);
       font-weight: normal;
     }
   }
 
   & > .callout-content {
     overflow-x: auto;
-    padding: 10px;
-    background-color: hsl(40, calc(20% / 1.2), calc(1% + 15%));
-    font-family: "iA Writer Duo S";
-    font-size: 0.933em;
-    border-radius: 0px 0px 5px 5px;
+    padding: var(--callout-content-padding);
+    background-color: var(--callout-content-background);
+    font-family: var(--font-secondary);
+    font-size: var(--font-small);
+    border-radius: 0px 0px var(--callout-radius) var(--callout-radius);
   }
 }
 body {
@@ -454,7 +783,7 @@ body {
     var(--background-modifier-hover)
   ) !important;
 
-  background-color: #ffffff;
+  background-color: var(--background-primary);
 
   background-color: var(--background-primary);
   overflow: initial;
@@ -483,13 +812,13 @@ body {
     &.left,
     &.left:has(.explorer),
     &.right {
-      background-color: #ffffff;
+      background-color: var(--background-primary);
 
       background-color: var(--background-secondary);
     }
     @media all and not ($desktop) {
       &.right {
-        background-color: #ffffff;
+        background-color: var(--background-primary);
 
         background-color: var(--background-primary);
       }
@@ -498,7 +827,7 @@ body {
       &.left:has(.explorer) {
         :not(.folder-container, a[data-for]):before,
         :after {
-          background-color: #ffffff;
+          background-color: var(--background-primary);
 
           background-color: var(--background-secondary);
 
@@ -536,6 +865,7 @@ body {
   /* LINKS */
   a,
   footer a {
+    --font-weight: var(--link-weight);
     color: var(--text-a, var(--link-color));
     font-weight: var(--link-weight);
     outline: none;
@@ -682,108 +1012,114 @@ body {
 
   /* HEADINGS */
   h1 {
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
-    color: #80bfff;
-    font-family: "iA Writer Duo S";
-    font-size: 17px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 600;
+    margin-block-end: var(--p-spacing);
+    margin-block-start: var(--p-spacing);
+    --font-weight: var(--h1-weight);
+    color: var(--h1-color);
+    font-family: var(--h1-font);
+    font-size: var(--h1-size);
+    font-style: var(--h1-style);
+    font-variant: var(--h1-variant);
+    font-weight: var(--font-weight);
     letter-spacing: -0.015em;
-    line-height: 1.2;
+    line-height: var(--h1-line-height);
 
     font-size: 2rem;
   }
   h1 a {
-    --link-weight: 600;
+    --link-weight: var(--h1-weight);
   }
   h2.page-title,
   h2.page-title a,
   h2 {
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
-    color: #5ccfe6;
-    font-family: "iA Writer Duo S";
-    font-size: 1.51em;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 600;
+    margin-block-end: var(--p-spacing);
+    margin-block-start: var(--p-spacing);
+    --font-weight: var(--h2-weight);
+    color: var(--h2-color);
+    font-family: var(--h2-font);
+    font-size: var(--h2-size);
+    font-style: var(--h2-style);
+    font-variant: var(--h2-variant);
+    font-weight: var(--font-weight);
     letter-spacing: -0.015em;
-    line-height: 1.2;
+    line-height: var(--h2-line-height);
 
     font-size: 1.75rem;
   }
   h2 a {
-    --link-weight: 600;
+    --link-weight: var(--h2-weight);
   }
   h3 {
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
-    color: #d5ff80;
-    font-family: "iA Writer Duo S";
-    font-size: 1.35em;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 600;
+    margin-block-end: var(--p-spacing);
+    margin-block-start: var(--p-spacing);
+    --font-weight: var(--h3-weight);
+    color: var(--h3-color);
+    font-family: var(--h3-font);
+    font-size: var(--h3-size);
+    font-style: var(--h3-style);
+    font-variant: var(--h3-variant);
+    font-weight: var(--font-weight);
     letter-spacing: -0.015em;
-    line-height: 1.3;
+    line-height: var(--h3-line-height);
 
     font-size: 1.6rem;
   }
   h3 a {
-    --link-weight: 600;
+    --link-weight: var(--h3-weight);
   }
   h4 {
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
-    color: #ffd173;
-    font-family: "iA Writer Duo S";
-    font-size: 1.19em;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 600;
+    margin-block-end: var(--p-spacing);
+    margin-block-start: var(--p-spacing);
+    --font-weight: var(--h4-weight);
+    color: var(--h4-color);
+    font-family: var(--h4-font);
+    font-size: var(--h4-size);
+    font-style: var(--h4-style);
+    font-variant: var(--h4-variant);
+    font-weight: var(--font-weight);
     letter-spacing: 0.015em;
-    line-height: 1.4;
+    line-height: var(--h4-line-height);
 
     font-size: 1.4rem;
   }
   h4 a {
-    --link-weight: 600;
+    --link-weight: var(--h4-weight);
   }
   h5 {
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
-    color: #ffad66;
-    font-family: "iA Writer Duo S";
-    font-size: 1.08em;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 600;
+    margin-block-end: var(--p-spacing);
+    margin-block-start: var(--p-spacing);
+    --font-weight: var(--h5-weight);
+    color: var(--h5-color);
+    font-family: var(--h5-font);
+    font-size: var(--h5-size);
+    font-style: var(--h5-style);
+    font-variant: var(--h5-variant);
+    font-weight: var(--font-weight);
     letter-spacing: 0.015em;
-    line-height: 1.75;
+    line-height: var(--h5-line-height);
 
     font-size: 1.2rem;
   }
   h5 a {
-    --link-weight: 600;
+    --link-weight: var(--h5-weight);
   }
   h6 {
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
-    color: #f28779;
-    font-family: "iA Writer Duo S";
-    font-size: 1em;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 600;
+    margin-block-end: var(--p-spacing);
+    margin-block-start: var(--p-spacing);
+    --font-weight: var(--h6-weight);
+    color: var(--h6-color);
+    font-family: var(--h6-font);
+    font-size: var(--h6-size);
+    font-style: var(--h6-style);
+    font-variant: var(--h6-variant);
+    font-weight: var(--font-weight);
     letter-spacing: 0.015em;
-    line-height: 1.75;
+    line-height: var(--h6-line-height);
 
     font-size: 1.1rem;
   }
   h6 a {
-    --link-weight: 600;
+    --link-weight: var(--h6-weight);
   }
   h1,
   h1 a,
@@ -806,12 +1142,12 @@ body {
   figure[data-rehype-pretty-code-figure] pre,
   pre {
     position: relative;
-    padding: 12px 16px;
+    padding: var(--size-4-3) var(--size-4-4);
     min-height: 38px;
-    background-color: hsl(40, calc(20% / 1.2), calc(1% + 15%));
-    border-radius: 5px;
-    white-space: pre-wrap;
-    border: 0px solid hsl(0, 10%, calc(1% + 10%));
+    background-color: var(--code-background);
+    border-radius: var(--code-radius);
+    white-space: var(--code-white-space);
+    border: var(--code-border-width) solid var(--code-border-color);
     overflow-x: auto;
 
     background-color: var(--code-background);
@@ -820,7 +1156,7 @@ body {
       border: none;
       padding: 0;
       background-color: transparent;
-      color: #91bdc0;
+      color: var(--code-normal);
 
       span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
         //color: var(--code-value) !important;
@@ -878,13 +1214,13 @@ body {
   }
 
   code {
-    font-family: "iA Writer Mono S";
-    background-color: hsl(40, calc(20% / 1.2), calc(1% + 15%));
-    border-radius: 5px;
-    border: 0px solid hsl(0, 10%, calc(1% + 10%));
+    font-family: var(--font-monospace);
+    background-color: var(--code-background);
+    border-radius: var(--code-radius);
+    border: var(--code-border-width) solid var(--code-border-color);
     -webkit-box-decoration-break: clone;
-    color: #f28779;
-    font-size: 0.875em;
+    color: var(--color-red);
+    font-size: var(--font-smaller);
     padding: 0px 4px;
 
     background-color: var(--code-background);
@@ -897,29 +1233,15 @@ body {
     height: auto;
     background-color: transparent;
     box-shadow: none;
-    color: #5594a5;
-    font-size: calc(17px * 0.8);
-    font-family:
-      "??",
-      "iA Writer Quattro S",
-      var(--default-font, "??"),
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      "Inter",
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    color: var(--text-muted);
+    font-size: var(--font-ui-smaller);
+    font-family: var(--font-interface);
     position: absolute;
     top: 0;
     inset-inline-end: 0;
 
     &:hover {
-      background-color: rgba(128, 191, 255, 0.25);
+      background-color: var(--background-modifier-hover);
     }
     & > svg {
       fill: var(--search-icon-color, var(--text-muted, var(--darkgray)));
@@ -928,35 +1250,36 @@ body {
 
   /* METADATA */
   .content-meta {
-    color: #91bdc0;
+    color: var(--metadata-input-text-color);
 
     color: var(--text-normal);
   }
 
   /* BREADCRUMBS */
   .breadcrumbs-element p {
-    color: #498595;
+    color: var(--text-faint);
   }
 
   /* BACKLINKS */
   .backlinks {
     h3 {
-      margin-block-end: 0rem;
-      margin-block-start: 0rem;
-      color: #d5ff80;
-      font-family: "iA Writer Duo S";
-      font-size: 1.35em;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 600;
+      margin-block-end: var(--p-spacing);
+      margin-block-start: var(--p-spacing);
+      --font-weight: var(--h3-weight);
+      color: var(--h3-color);
+      font-family: var(--h3-font);
+      font-size: var(--h3-size);
+      font-style: var(--h3-style);
+      font-variant: var(--h3-variant);
+      font-weight: var(--font-weight);
       letter-spacing: -0.015em;
-      line-height: 1.3;
+      line-height: var(--h3-line-height);
     }
 
     ul li {
-      color: #91bdc0;
+      color: var(--nav-heading-color);
 
-      font-weight: 500;
+      font-weight: var(--nav-heading-weight);
     }
   }
 
@@ -972,11 +1295,11 @@ body {
     }
     button.explorer-toggle,
     h2 {
-      color: #5ccfe6;
+      color: var(--h2-color);
     }
     .explorer-content {
       @media all and ($mobile) {
-        background-color: #ffffff;
+        background-color: var(--background-primary);
 
         background-color: var(--background-secondary);
 
@@ -987,7 +1310,7 @@ body {
         --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
         --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
 
-        color: rgba(223, 191, 255, 0.8);
+        color: var(--icon-color);
 
         text-overflow: ellipsis;
         position: relative;
@@ -1015,8 +1338,8 @@ body {
           width: 100%;
         }
         &:hover {
-          color: #91bdc0;
-          font-weight: inherit;
+          color: var(--nav-item-color-active);
+          font-weight: var(--nav-item-weight-active);
           background-color: transparent;
 
           font-size: 1rem;
@@ -1045,22 +1368,23 @@ body {
           var(--nav-item-children-margin-left)
         );
         margin-bottom: 1px;
-        border-inline-start: 1px solid rgba(255, 255, 255, 0.12);
+        border-inline-start: var(--nav-indentation-guide-width) solid
+          var(--nav-indentation-guide-color);
       }
       ul.explorer-ul li {
         text-overflow: ellipsis;
         position: relative;
 
         a {
-          padding: 6px 8px 6px 24px;
-          border-radius: 5px;
-          color: #91bdc0;
-          cursor: pointer;
+          padding: var(--nav-item-padding);
+          border-radius: var(--radius-s);
+          color: var(--nav-item-color);
+          cursor: var(--cursor);
           display: flex;
-          font-size: 17px;
-          font-weight: inherit;
-          line-height: 1.3;
-          margin-bottom: 2px;
+          font-size: var(--nav-item-size);
+          font-weight: var(--nav-item-weight);
+          line-height: var(--line-height-tight);
+          margin-bottom: var(--size-2-1);
 
           color: inherit;
           font-size: 1rem;
@@ -1108,36 +1432,37 @@ body {
 
   /* TOC */
   .toc {
-    color: #d5ff80;
+    color: var(--h3-color);
 
     button.toc-header {
       h3 {
-        margin-block-end: 0rem;
-        margin-block-start: 0rem;
-        color: #d5ff80;
-        font-family: "iA Writer Duo S";
-        font-size: 1.35em;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: 600;
+        margin-block-end: var(--p-spacing);
+        margin-block-start: var(--p-spacing);
+        --font-weight: var(--h3-weight);
+        color: var(--h3-color);
+        font-family: var(--h3-font);
+        font-size: var(--h3-size);
+        font-style: var(--h3-style);
+        font-variant: var(--h3-variant);
+        font-weight: var(--font-weight);
         letter-spacing: -0.015em;
-        line-height: 1.3;
+        line-height: var(--h3-line-height);
 
         margin-block: 0;
       }
 
-      color: #d5ff80;
+      color: var(--h3-color);
 
       color: inherit;
     }
     ul.toc-content.overflow {
       li,
       li > a {
-        color: #91bdc0;
+        color: var(--nav-item-color);
 
-        font-weight: inherit;
+        font-weight: var(--nav-item-weight);
 
-        font-size: 17px;
+        font-size: var(--nav-item-size);
 
         color: inherit;
       }
@@ -1149,16 +1474,17 @@ body {
   .graph,
   .toc {
     h3 {
-      margin-block-end: 0rem;
-      margin-block-start: 0rem;
-      color: #d5ff80;
-      font-family: "iA Writer Duo S";
-      font-size: 1.35em;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 600;
+      margin-block-end: var(--p-spacing);
+      margin-block-start: var(--p-spacing);
+      --font-weight: var(--h3-weight);
+      color: var(--h3-color);
+      font-family: var(--h3-font);
+      font-size: var(--h3-size);
+      font-style: var(--h3-style);
+      font-variant: var(--h3-variant);
+      font-weight: var(--font-weight);
       letter-spacing: -0.015em;
-      line-height: 1.3;
+      line-height: var(--h3-line-height);
 
       min-height: calc(2 * var(--p-spacing) + var(--h3-line-height));
       margin-block: 0;
@@ -1221,15 +1547,15 @@ body {
       color: var(--button-secondary-fg-color);
 
       -webkit-app-region: no-drag;
-      background: hsl(40, calc(20% / 1.2), calc(1% + 15%));
-      border: 1px solid hsl(0, 10%, calc(1% + 10%));
-      border-radius: 24px;
-      color: #91bdc0;
+      background: var(--background-modifier-form-field);
+      border: var(--input-border-width) solid var(--background-modifier-border);
+      border-radius: var(--input-radius);
+      color: var(--text-normal);
       font-family: inherit;
-      font-size: calc(17px * 0.937);
+      font-size: var(--font-ui-small);
       outline: none;
-      padding: 4px 8px;
-      height: 40px;
+      padding: var(--size-4-1) var(--size-4-2);
+      height: var(--input-height);
 
       font-size: 1rem;
       svg {
@@ -1239,20 +1565,13 @@ body {
     }
     & > .search-container {
       & > .search-space {
-        background-color: #ffffff;
+        background-color: var(--background-primary);
 
-        border: 0.5pt solid
-          var(
-            --color-base-40,
-            hsl(0, calc(var(--custon-theme-sat-text-d) - 5%), calc(1% + 10%))
-          );
+        border: var(--prompt-border-width) solid var(--prompt-border-color);
 
-        border-radius: 18px;
+        border-radius: var(--radius-l);
 
-        box-shadow:
-          0px 1.8px 7.3px #000000,
-          0px 6.3px 24.7px #000000,
-          0px 30px 90px #000000;
+        box-shadow: var(--shadow-l);
 
         color: var(--text-normal);
         background-color: var(--background-secondary);
@@ -1260,14 +1579,14 @@ body {
         margin: 12vh auto;
         & > input {
           width: 100%;
-          padding: 24px;
-          padding-inline-end: 48px;
-          background-color: #ffffff;
-          font-size: 17px;
+          padding: var(--size-4-6);
+          padding-inline-end: var(--size-4-12);
+          background-color: var(--background-primary);
+          font-size: var(--font-ui-medium);
           border: none;
-          height: 48px;
+          height: var(--prompt-input-height);
           border-radius: 0;
-          border-bottom: 1px solid hsl(223, 25%, calc(1% + 8%));
+          border-bottom: 1px solid var(--background-secondary);
 
           margin-bottom: 0;
           border-bottom: none;
@@ -1275,7 +1594,7 @@ body {
           font-size: 1.1rem;
         }
         & > * {
-          color: #91bdc0;
+          color: var(--text-normal);
 
           background: transparent;
           margin-bottom: 0;
@@ -1294,9 +1613,9 @@ body {
           & .highlight {
             font-weight: bold;
             background-color: transparent;
-            font-family: "iA Writer Duo S";
+            font-family: var(--font-secondary);
             text-decoration: underline 2px;
-            text-decoration-color: #d5ff80;
+            text-decoration-color: var(--text-accent);
             text-underline-offset: auto;
 
             background-color: var(--quartz-text-highlight);
@@ -1323,15 +1642,15 @@ body {
               &:hover,
               &:focus,
               &.focus {
-                background-color: rgba(128, 191, 255, 0.25);
+                background-color: var(--background-modifier-hover);
               }
               & > ul > li > p {
                 background-color: transparent;
 
-                color: #91bdc0;
+                color: var(--text-normal);
 
                 &.match-tag {
-                  color: #d5ff80;
+                  color: var(--tag-color);
                 }
               }
             }
@@ -1399,16 +1718,13 @@ body {
 
   /* POPOVER */
   .popover {
-    background-color: #ffffff;
-    border: 1px solid hsl(0, 10%, calc(1% + 10%));
-    border-radius: 12px;
-    box-shadow:
-      0px 1px 2px #000000,
-      0px 3.4px 6.7px #000000,
-      0px 15px 30px #000000;
-    max-height: 95vh;
+    background-color: var(--background-primary);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-m);
+    box-shadow: var(--shadow-s);
+    max-height: var(--popover-max-height);
     position: absolute;
-    z-index: 30;
+    z-index: var(--layer-popover);
     display: none;
 
     display: block;
@@ -1417,11 +1733,11 @@ body {
     border: unset;
     background-color: var(--background-primary);
     & .popover-inner {
-      border: 1px solid hsl(0, 10%, calc(1% + 10%));
+      border: 1px solid var(--background-modifier-border);
 
-      background-color: #ffffff;
+      background-color: var(--background-primary);
 
-      border-radius: 12px;
+      border-radius: var(--radius-m);
 
       background-color: var(--background-primary);
     }
