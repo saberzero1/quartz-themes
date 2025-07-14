@@ -464,9 +464,15 @@ body {
     transition: opacity 0.15s ease-in-out;
     background-position: center right;
     background-repeat: no-repeat;
+
+    //%%a%%
+
     &:hover {
       color: var(--text-a-hover, var(--link-color-hover));
       /* text-decoration-line: var(--link-decoration-hover); */
+
+      //%%a:hover%%
+
     }
     &.internal {
       color: var(--text-a, var(--link-color));

@@ -44,6 +44,8 @@ html[saved-theme="dark"] {
     --color-d-gray-120: hsla(29, 16%, 13%, 1);
     --color-d-gray-130: hsla(24, 18%, 11%, 1);
     --color-d-gray-140: hsla(32, 21%, 9%, 1);
+    --color-d-red-10: hsla(5, 94%, 73%, 1);
+    --color-d-red-20: hsla(4, 91%, 67%, 1);
     --color-d-red-30: hsla(4, 88%, 61%, 1);
     --color-d-yellow-10: hsla(43, 69%, 63%, 1);
     --color-d-yellow-20: hsla(42, 79%, 51%, 1);
@@ -206,6 +208,18 @@ html[saved-theme="dark"] {
     --h6-border-bottom-color: var(--background-modifier-border);
     --h6-border-left-color: var(--background-modifier-border);
     --inline-title-color: var(--color-d-gray-10);
+    --link-ahref-color: var(--color-d-red-20);
+    --link-ahref-decoration-color: color-mix(
+      in srgb,
+      currentColor var(--link-decoration-opacity),
+      transparent
+    );
+    --link-ahref-color-hover: var(--color-d-red-10);
+    --link-ahref-decoration-color-hover: color-mix(
+      in srgb,
+      var(--link-ahref-color-hover) var(--link-decoration-opacity),
+      transparent
+    );
     --link-unresolved-color: var(--color-d-gray-50);
     --link-unresolved-decoration-color: color-mix(
       in srgb,
@@ -287,6 +301,7 @@ html[saved-theme="light"] {
     --color-l-gray-120: hsla(36, 32%, 30%, 1);
     --color-l-gray-130: hsla(31, 45%, 24%, 1);
     --color-l-gray-140: hsla(33, 54%, 17%, 1);
+    --color-l-red-10: hsla(4, 59%, 64%, 1);
     --color-l-red-20: hsla(4, 72%, 55%, 1);
     --color-l-red-30: hsla(4, 56%, 48%, 1);
     --color-l-yellow-20: hsla(43, 83%, 57%, 1);
@@ -444,6 +459,18 @@ html[saved-theme="light"] {
     --h6-border-bottom-color: var(--background-modifier-border);
     --h6-border-left-color: var(--background-modifier-border);
     --inline-title-color: var(--color-l-gray-140);
+    --link-ahref-color: var(--color-l-red-20);
+    --link-ahref-decoration-color: color-mix(
+      in srgb,
+      currentColor var(--link-decoration-opacity),
+      transparent
+    );
+    --link-ahref-color-hover: var(--color-l-red-10);
+    --link-ahref-decoration-color-hover: color-mix(
+      in srgb,
+      var(--link-ahref-color-hover) var(--link-decoration-opacity),
+      transparent
+    );
     --link-unresolved-color: var(--color-l-gray-80);
     --link-unresolved-decoration-color: color-mix(
       in srgb,
@@ -791,6 +818,7 @@ body {
   --hr-thickness: 1px;
   --link-unresolved-opacity: 1;
   --link-underline-offset: 2px;
+  --link-decoration-thickness: 1.5px;
   --link-decoration-opacity: 22%;
   --tag-padding-x: 0.6em;
   --tag-padding-y: 0.15em;
@@ -1234,8 +1262,24 @@ body {
     transition: opacity 0.15s ease-in-out;
     background-position: center right;
     background-repeat: no-repeat;
+
+    --font-weight: var(--link-weight);
+    font-weight: var(--link-weight);
+    outline: none;
+    text-decoration-line: var(--link-decoration);
+    text-decoration-thickness: var(--link-decoration-thickness);
+    cursor: var(--cursor-link);
+    transition: opacity 0.15s ease-in-out;
+    color: var(--link-ahref-color);
+    text-underline-offset: var(--link-underline-offset);
+    text-decoration-color: var(--link-ahref-decoration-color);
+
     &:hover {
       color: var(--text-a-hover, var(--link-color-hover));
+
+      text-decoration-color: var(--link-ahref-decoration-color-hover);
+      color: var(--link-color-hover);
+      text-decoration-line: var(--link-decoration-hover);
     }
     &.internal {
       color: var(--text-a, var(--link-color));

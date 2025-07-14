@@ -430,6 +430,7 @@ body {
   --link-color: var(--text-muted);
   --link-color-hover: var(--text-normal);
   --link-decoration-hover: none;
+  --link-decoration-thickness: 13%;
   --link-external-color: var(--color-accent);
   --link-external-color-hover: var(--color-accent-hover);
   --link-external-decoration: none;
@@ -737,8 +738,34 @@ body {
     transition: opacity 0.15s ease-in-out;
     background-position: center right;
     background-repeat: no-repeat;
+
+    --font-weight: var(--link-weight);
+    outline: none;
+    text-decoration-thickness: var(--link-decoration-thickness);
+    cursor: var(--cursor-link);
+    transition: opacity 0.15s ease-in-out;
+    color: var(--text-normal);
+    text-decoration-line: none;
+    background-image: none;
+    font-variation-settings:
+      "wght" 700,
+      "SOFT" 100,
+      "WONK" 1;
+    font-weight: 700;
+
     &:hover {
       color: var(--text-a-hover, var(--link-color-hover));
+
+      font-family: var(--font-header);
+      font-variation-settings:
+        "wght" 700,
+        "SOFT" 100,
+        "WONK" 1;
+      font-weight: 700;
+      text-decoration-color: var(--color-accent);
+      text-decoration-skip-ink: all;
+      color: var(--link-color-hover);
+      text-decoration-line: var(--link-decoration-hover);
     }
     &.internal {
       color: var(--text-a, var(--link-color));

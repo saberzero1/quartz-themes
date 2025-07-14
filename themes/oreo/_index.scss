@@ -101,6 +101,7 @@ html[saved-theme="dark"] {
     --link-color-hover: #4682b4;
     --link-decoration: underline;
     --link-decoration-hover: underline;
+    --link-decoration-thickness: 1px;
     --link-weight: normal;
     --link-unresolved-color: #ff6347;
     --link-unresolved-opacity: 0.7;
@@ -217,6 +218,7 @@ html[saved-theme="light"] {
     --link-color-hover: #1c86ee;
     --link-decoration: underline;
     --link-decoration-hover: underline;
+    --link-decoration-thickness: 1px;
     --link-weight: normal;
     --link-unresolved-color: #ff4500;
     --link-unresolved-opacity: 0.7;
@@ -637,6 +639,7 @@ body {
   --link-color-hover: #1c86ee;
   --link-decoration: underline;
   --link-decoration-hover: underline;
+  --link-decoration-thickness: 1px;
   --link-weight: normal;
   --link-unresolved-color: #ff4500;
   --link-unresolved-opacity: 0.7;
@@ -939,8 +942,21 @@ body {
     transition: opacity 0.15s ease-in-out;
     background-position: center right;
     background-repeat: no-repeat;
+
+    --font-weight: var(--link-weight);
+    color: var(--link-color);
+    font-weight: var(--link-weight);
+    outline: none;
+    text-decoration-line: var(--link-decoration);
+    text-decoration-thickness: var(--link-decoration-thickness);
+    cursor: var(--cursor-link);
+    transition: opacity 0.15s ease-in-out;
+
     &:hover {
       color: var(--text-a-hover, var(--link-color-hover));
+
+      color: var(--link-color-hover);
+      text-decoration-line: var(--link-decoration-hover);
     }
     &.internal {
       color: var(--text-a, var(--link-color));

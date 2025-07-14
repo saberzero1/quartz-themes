@@ -914,8 +914,23 @@ body {
     transition: opacity 0.15s ease-in-out;
     background-position: center right;
     background-repeat: no-repeat;
+
+    --font-weight: var(--link-weight);
+    color: var(--link-color);
+    font-weight: var(--link-weight);
+    outline: none;
+    text-decoration-line: var(--link-decoration);
+    cursor: var(--cursor-link);
+    transition: opacity 0.15s ease-in-out;
+    text-decoration-thickness: 1px;
+    text-underline-position: under;
+    text-underline-offset: 1px;
+
     &:hover {
       color: var(--text-a-hover, var(--link-color-hover));
+
+      color: var(--link-color-hover);
+      text-decoration-line: var(--link-decoration-hover);
     }
     &.internal {
       color: var(--text-a, var(--link-color));

@@ -558,7 +558,11 @@ body {
   --h6-weight: var(--h-weight-s);
   --line-height-normal: 1.75;
   letter-spacing: var(--letter-spacing);
+  --link-decoration-thickness: 0.06em;
+  --link-font: var(--font-secondary);
+  --link-decoration-color: var(--link-color);
   --link-color: var(--color-accent-1);
+  --link-underline-offset: 2px;
   --checkbox-radius: 10px;
   --tag-radius: var(--radius-s);
   --tag-padding-x: 6px;
@@ -867,8 +871,25 @@ body {
     transition: opacity 0.15s ease-in-out;
     background-position: center right;
     background-repeat: no-repeat;
+
+    --font-weight: var(--link-weight);
+    color: var(--link-color);
+    font-weight: var(--link-weight);
+    outline: none;
+    text-decoration-line: var(--link-decoration);
+    text-decoration-thickness: var(--link-decoration-thickness);
+    cursor: var(--cursor-link);
+    transition: opacity 0.15s ease-in-out;
+    font-family: var(--link-font);
+    text-decoration-color: var(--link-decoration-color);
+    text-underline-offset: var(--link-underline-offset);
+
     &:hover {
       color: var(--text-a-hover, var(--link-color-hover));
+
+      text-decoration-color: var(--link-color-hover);
+      color: var(--link-color-hover);
+      text-decoration-line: var(--link-decoration-hover);
     }
     &.internal {
       color: var(--text-a, var(--link-color));
