@@ -212,7 +212,7 @@ body {
   @media all and ($mobile) {
     .page
       > #quartz-body
-      .sidebar.left:has(.explorer)
+      .sidebar.left:has(div.explorer)
       :not(.folder-container, a[data-for]) {
       &:before,
       &:after {
